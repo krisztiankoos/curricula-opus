@@ -70,13 +70,13 @@ All infinitives end in **-ти** (ty). This is how you find verbs in dictionarie
 
 > 📜 **History Bite: The -ти Ending**
 >
-> The infinitive ending -ти comes from Old Church Slavonic. Compare:
-> - Ukrainian: чита**ти**
+> The infinitive ending -ти comes from **Proto-Slavic** (Common Slavic). Compare how different languages evolved it:
+> - Ukrainian: чита**ти** (preserved full form)
 > - Russian: чита**ть** (shortened)
 > - Polish: czyta**ć** (different evolution)
 > - Czech: čís**t** (very short!)
 >
-> Ukrainian preserved the full ancient ending, while other languages shortened it.
+> Ukrainian preserved the full ancient ending, while other Slavic languages shortened it over time.
 
 ### Two Conjugation Classes
 

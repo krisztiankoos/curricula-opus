@@ -128,7 +128,7 @@ Neuter nouns typically end in **-о** or **-е**:
 
 > 💡 **Did You Know?**
 >
-> The word **ім'я** (name) looks feminine (-я ending) but is actually neuter! This is one of a small group of ancient nouns ending in -мя that are neuter: ім'я (name), плем'я (tribe), сім'я (seed - but сім'я meaning "family" is feminine!). These are leftovers from Old Church Slavonic.
+> The word **ім'я** (name) looks feminine (-я ending) but is actually neuter! This is one of a small group of ancient nouns ending in -мя that are neuter: ім'я (name), плем'я (tribe), сім'я (seed - but сім'я meaning "family" is feminine!). These are inherited from **Proto-Slavic** (Common Slavic) - the ancestor of all Slavic languages spoken over 1,000 years ago.
 
 ## practice
 

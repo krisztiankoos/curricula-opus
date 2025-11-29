@@ -502,12 +502,24 @@ function generateVibeJSON(parsed: ParsedModule, langPair: string): any {
 }
 
 // ============================================================================
+// NAVIGATION TYPES
+// ============================================================================
+
+interface NavInfo {
+  prevModule?: { num: number; title: string };
+  nextModule?: { num: number; title: string };
+  level: string;
+  langPair: string;
+}
+
+// ============================================================================
 // HTML GENERATOR
 // ============================================================================
 
-function generateHTML(vibeJSON: any): string {
+function generateHTML(vibeJSON: any, nav: NavInfo): string {
   const { lesson, activities, vocabulary } = vibeJSON;
   const vocab = vocabulary.words;
+  const levelLower = nav.level.toLowerCase();
 
   const matchActivity = activities.find((a: any) => a.type === 'match-up');
   const quizActivity = activities.find((a: any) => a.type === 'quiz');
@@ -524,6 +536,14 @@ function generateHTML(vibeJSON: any): string {
       })
     );
 
+  // Navigation links
+  const prevLink = nav.prevModule
+    ? `<a href="module-${padNumber(nav.prevModule.num)}.html" class="module-nav-link">← Module ${padNumber(nav.prevModule.num)}</a>`
+    : `<span class="module-nav-link disabled">← Prev</span>`;
+  const nextLink = nav.nextModule
+    ? `<a href="module-${padNumber(nav.nextModule.num)}.html" class="module-nav-link">Module ${padNumber(nav.nextModule.num)} →</a>`
+    : `<span class="module-nav-link disabled">Next →</span>`;
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -534,6 +554,13 @@ function generateHTML(vibeJSON: any): string {
     :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
     .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
     .nav h1 { font-size: 1.25rem; }
     .nav-tabs { display: flex; gap: 0.5rem; }
@@ -601,6 +628,14 @@ function generateHTML(vibeJSON: any): string {
   </style>
 </head>
 <body>
+  <div class="top-nav">
+    <a href="../index.html">← ${nav.langPair} Curriculum</a>
+    <div class="module-nav">
+      ${prevLink}
+      <a href="index.html" class="module-nav-link">${nav.level} Index</a>
+      ${nextLink}
+    </div>
+  </div>
   <nav class="nav">
     <h1>Module ${padNumber(lesson.moduleNumber)}: ${lesson.title}</h1>
     <div class="nav-tabs">
@@ -682,8 +717,117 @@ function generateHTML(vibeJSON: any): string {
 }
 
 // ============================================================================
+// INDEX PAGE GENERATORS
+// ============================================================================
+
+function generateLevelIndex(modules: Array<{ num: number; title: string; subtitle?: string; phase: string }>, level: string, langPair: string): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${level} Modules | Ukrainian for English Speakers</title>
+  <style>
+    :root { --primary: #1a5fb4; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.75rem 2rem; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    header { background: var(--primary); color: white; padding: 3rem 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { opacity: 0.9; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .module-list { display: flex; flex-direction: column; gap: 1rem; }
+    .module-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem; text-decoration: none; color: inherit; transition: box-shadow 0.2s, border-color 0.2s; }
+    .module-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: var(--primary); }
+    .module-num { background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem; flex-shrink: 0; }
+    .module-info h3 { color: var(--primary); margin-bottom: 0.25rem; }
+    .module-info p { color: var(--text-muted); font-size: 0.875rem; }
+    .phase-badge { background: #e8f4fd; color: var(--primary); padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← ${langPair} Curriculum</a>
+  </div>
+  <header>
+    <h1>Level ${level}</h1>
+    <p>Ukrainian for English Speakers · ${modules.length} Modules</p>
+  </header>
+  <main>
+    <div class="module-list">
+      ${modules.map(m => `
+      <a href="module-${padNumber(m.num)}.html" class="module-card">
+        <div class="module-num">${padNumber(m.num)}</div>
+        <div class="module-info">
+          <h3>${m.title}<span class="phase-badge">${m.phase}</span></h3>
+          ${m.subtitle ? `<p>${m.subtitle}</p>` : ''}
+        </div>
+      </a>`).join('')}
+    </div>
+  </main>
+  <footer>curricula-opus · ${level}</footer>
+</body>
+</html>`;
+}
+
+function generateCurriculumIndex(levels: Array<{ level: string; moduleCount: number }>, langPair: string): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukrainian for English Speakers | Curriculum</title>
+  <style>
+    :root { --primary: #1a5fb4; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: linear-gradient(135deg, #1a5fb4, #613583); color: white; padding: 4rem 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { opacity: 0.9; font-size: 1.125rem; }
+    main { max-width: 700px; margin: 0 auto; padding: 2rem; }
+    .level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .level-card { background: var(--card-bg); border: 2px solid var(--border); border-radius: 16px; padding: 2rem; text-align: center; text-decoration: none; color: inherit; transition: all 0.2s; }
+    .level-card:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .level-card h2 { font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .level-card p { color: var(--text-muted); }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🇺🇦 Ukrainian</h1>
+    <p>for English Speakers</p>
+  </header>
+  <main>
+    <div class="level-grid">
+      ${levels.map(l => `
+      <a href="${l.level.toLowerCase()}/index.html" class="level-card">
+        <h2>${l.level}</h2>
+        <p>${l.moduleCount} modules</p>
+      </a>`).join('')}
+    </div>
+  </main>
+  <footer>curricula-opus</footer>
+</body>
+</html>`;
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
+
+interface ModuleInfo {
+  num: number;
+  level: string;
+  title: string;
+  subtitle?: string;
+  phase: string;
+  parsed: ParsedModule;
+  vibeJSON: any;
+}
 
 async function main() {
   const args = process.argv.slice(2);
@@ -711,30 +855,92 @@ async function main() {
       .filter(f => f.startsWith('module-') && f.endsWith('.md'))
       .sort();
 
+    // First pass: parse all modules and collect info
+    const modules: ModuleInfo[] = [];
+
     for (const mdFile of mdFiles) {
       const moduleNum = parseInt(mdFile.match(/module-(\d+)/)?.[1] || '0', 10);
       if (targetModule && moduleNum !== targetModule) continue;
 
-      console.log(`\n  📦 Module ${padNumber(moduleNum)}`);
-
       try {
         const mdPath = join(modulesDir, mdFile);
         const mdContent = await readFile(mdPath, 'utf-8');
-
-        // Parse markdown
         const parsed = parseModule(mdContent);
+        const vibeJSON = generateVibeJSON(parsed, langPair);
+
+        modules.push({
+          num: moduleNum,
+          level: parsed.frontmatter.level,
+          title: parsed.frontmatter.title,
+          subtitle: parsed.frontmatter.subtitle,
+          phase: parsed.frontmatter.phase,
+          parsed,
+          vibeJSON,
+        });
+      } catch (error) {
+        console.error(`  ⚠ Error parsing ${mdFile}:`, error);
+      }
+    }
+
+    // Group modules by level
+    const modulesByLevel = new Map<string, ModuleInfo[]>();
+    for (const mod of modules) {
+      const levelMods = modulesByLevel.get(mod.level) || [];
+      levelMods.push(mod);
+      modulesByLevel.set(mod.level, levelMods);
+    }
+
+    // Second pass: generate files with navigation
+    for (const [level, levelModules] of modulesByLevel) {
+      const levelLower = level.toLowerCase();
+      levelModules.sort((a, b) => a.num - b.num);
+
+      console.log(`\n  📁 Level ${level} (${levelModules.length} modules)`);
+
+      for (let i = 0; i < levelModules.length; i++) {
+        const mod = levelModules[i];
+        const prevMod = i > 0 ? levelModules[i - 1] : undefined;
+        const nextMod = i < levelModules.length - 1 ? levelModules[i + 1] : undefined;
+
+        console.log(`    📦 Module ${padNumber(mod.num)}: ${mod.title}`);
 
         // Generate Vibe JSON
-        const vibeJSON = generateVibeJSON(parsed, langPair);
-        await writeJSON(join(OUTPUT_DIR, 'json', langPair, `module-${padNumber(moduleNum)}.json`), vibeJSON);
+        await writeJSON(
+          join(OUTPUT_DIR, 'json', langPair, levelLower, `module-${padNumber(mod.num)}.json`),
+          mod.vibeJSON
+        );
 
-        // Generate HTML
-        const html = generateHTML(vibeJSON);
-        await writeHTML(join(OUTPUT_DIR, 'html', langPair, `module-${padNumber(moduleNum)}`, 'lesson.html'), html);
-
-      } catch (error) {
-        console.error(`  ⚠ Error:`, error);
+        // Generate HTML with navigation
+        const nav: NavInfo = {
+          prevModule: prevMod ? { num: prevMod.num, title: prevMod.title } : undefined,
+          nextModule: nextMod ? { num: nextMod.num, title: nextMod.title } : undefined,
+          level,
+          langPair,
+        };
+        const html = generateHTML(mod.vibeJSON, nav);
+        await writeHTML(
+          join(OUTPUT_DIR, 'html', langPair, levelLower, `module-${padNumber(mod.num)}.html`),
+          html
+        );
       }
+
+      // Generate level index
+      const levelIndex = generateLevelIndex(
+        levelModules.map(m => ({ num: m.num, title: m.title, subtitle: m.subtitle, phase: m.phase })),
+        level,
+        langPair
+      );
+      await writeHTML(join(OUTPUT_DIR, 'html', langPair, levelLower, 'index.html'), levelIndex);
+    }
+
+    // Generate curriculum index
+    const levels = Array.from(modulesByLevel.entries())
+      .map(([level, mods]) => ({ level, moduleCount: mods.length }))
+      .sort((a, b) => a.level.localeCompare(b.level));
+
+    if (levels.length > 0) {
+      const curriculumIndex = generateCurriculumIndex(levels, langPair);
+      await writeHTML(join(OUTPUT_DIR, 'html', langPair, 'index.html'), curriculumIndex);
     }
   }
 

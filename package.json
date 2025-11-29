@@ -9,6 +9,9 @@
   "scripts": {
     "generate": "ts-node scripts/generate.ts",
     "generate:all": "ts-node scripts/generate.ts",
+    "vocab": "python3 scripts/vocab-analysis.py",
+    "vocab:a1": "python3 scripts/vocab-analysis.py l2-uk-en a1",
+    "vocab:a2": "python3 scripts/vocab-analysis.py l2-uk-en a2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

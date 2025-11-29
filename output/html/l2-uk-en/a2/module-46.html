@@ -128,6 +128,14 @@
 <blockquote>
   <p>💡 <strong>Did You Know?</strong></p>
   <p>Ukrainian has two types of conditionals: "real" (things that might happen) and "unreal" (hypothetical/wishes). This module covers real conditionals - things that could actually happen. Module 47 will cover the "would" and "could" of unreal conditionals!</p>
+  <p>📝 <strong>Quick Review: Future Tense</strong></p>
+  <p>Before learning conditionals, remember how to form the future:</p>
+  <ul>
+  <li><strong>Imperfective</strong>: буду + infinitive (Я <strong>буду читати</strong> - I will be reading)</li>
+  <li><strong>Perfective</strong>: conjugated form (Я <strong>прочитаю</strong> - I will read/finish)</li>
+  <li><strong>Synthetic</strong>: infinitive + -му/-меш (Я <strong>читатиму</strong> - I will read)</li>
+  </ul>
+  <p>Conditionals use future tense in the result clause!</p>
 </blockquote></div></div><div class="canvas-note"><h4>### Real Conditionals: The Basics</h4><div class="md-content"><p><strong>Structure: Якщо + condition, result</strong></p>
 <table>
 <thead>
@@ -341,7 +349,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Якщо буде дощ,</div><div class="match-item" data-pair="1">Якщо матиму час,</div><div class="match-item" data-pair="2">Якщо не поспішатимеш,</div><div class="match-item" data-pair="3">Якщо хочеш,</div><div class="match-item" data-pair="4">Якщо він прийде,</div><div class="match-item" data-pair="5">Якщо все буде добре,</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">можемо піти разом</div><div class="match-item" data-pair="0">візьму парасолю</div><div class="match-item" data-pair="2">запізнишся</div><div class="match-item" data-pair="1">зателефоную</div><div class="match-item" data-pair="4">ми почнемо</div><div class="match-item" data-pair="5">приїду в п'ятницю</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">приїду в п'ятницю</div><div class="match-item" data-pair="1">зателефоную</div><div class="match-item" data-pair="2">запізнишся</div><div class="match-item" data-pair="4">ми почнемо</div><div class="match-item" data-pair="3">можемо піти разом</div><div class="match-item" data-pair="0">візьму парасолю</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -379,7 +387,7 @@
     function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
     window.addEventListener('resize',drawLines);
     let quizScore=0,quizAns=0;
-    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': <span class="cyrillic">'+(q.question.match(/[А-ЯІЇЄҐ]+/)?.[0]||'')+'</span></h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
     function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
     function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
     let sortScore=0,dragItem=null;

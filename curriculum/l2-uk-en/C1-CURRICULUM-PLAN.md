@@ -1,15 +1,20 @@
 # C1 Curriculum Plan: Ukrainian for English Speakers
 
+**Status:** 🔲 TO BUILD
+**Modules:** 181-240 (60 modules)
+**Vocabulary Target:** ~2,300 words
+**Cumulative Target:** ~7,500 words
+
+---
+
 ## Prerequisites from B2
 
 Before starting C1, learners have completed:
-- Abstract and nominalized expression
-- All stylistic registers (colloquial to official)
-- Specialized vocabulary in multiple domains
-- Academic and professional writing
-- Complex argumentation and debate
-- Understanding of regional and historical variation
-- ~4700 vocabulary words
+- Participles and passive voice
+- Stylistic register awareness
+- Advanced phraseology
+- Literary language basics
+- ~5,200 vocabulary words (cumulative)
 
 **Proficiency Status:** Upper-intermediate fluency, approaching advanced
 
@@ -21,7 +26,7 @@ Before starting C1, learners have completed:
 > Can understand a wide range of demanding, longer texts, and recognize implicit meaning. Can express ideas fluently and spontaneously without much obvious searching for expressions. Can use language flexibly and effectively for social, academic and professional purposes. Can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organizational patterns, connectors, and cohesive devices.
 
 ### Our C1 Can-Do Checklist
-By module 220, learners can:
+By module 240, learners can:
 
 **Understanding (Listening/Reading)**
 - [ ] Understand extended speech even when not clearly structured
@@ -52,11 +57,10 @@ By module 220, learners can:
 
 | Phase | Modules | Focus | New Words |
 |-------|---------|-------|-----------|
-| C1.1 | 161-180 | Native-like Comprehension | 600 |
-| C1.2 | 181-200 | Sophisticated Production | 450 |
-| C1.3 | 201-210 | Ukrainian History & Geography | 350 |
-| C1.4 | 211-220 | Ukrainian Literature & Arts | 350 |
-| **Total C1** | **60 modules** | | **~1750 words** |
+| C1.1 | 181-200 | Literary & Academic | ~600 |
+| C1.2 | 201-220 | Professional & Discourse | ~600 |
+| C1.3 | 221-240 | Mastery & Specialization | ~1,100 |
+| **Total C1** | **60 modules** | | **~2,300 words** |
 
 **Cumulative A1-C1:** ~6450 words (CEFR C1 target: 5500-8000 ✓)
 

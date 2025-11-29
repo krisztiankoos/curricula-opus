@@ -1,16 +1,22 @@
 # A2 Curriculum Plan: Ukrainian for English Speakers
 
+**Status:** ✅ COMPLETE
+**Modules:** 31-60 (30 modules)
+**Vocabulary:** 366 words (actual), 822 cumulative
+
+---
+
 ## Prerequisites from A1
 
 Before starting A2, learners have completed:
 - Cyrillic alphabet (print + italic awareness)
 - Noun gender system
-- Three cases: Nominative, Accusative, Genitive, Locative
+- Four cases: Nominative, Accusative, Genitive, Locative
 - Present, Past, and Future tense
-- Modal verbs (можу, треба, хочу)
+- Modal verbs (могти, треба, хотіти)
 - Adjective agreement
 - Possessive pronouns
-- ~750 vocabulary words
+- 456 vocabulary words (actual)
 
 ---
 
@@ -20,7 +26,7 @@ Before starting A2, learners have completed:
 > Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. personal and family information, shopping, local geography, employment). Can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.
 
 ### Our A2 Can-Do Checklist
-By module 65, learners can:
+By module 60, learners can:
 
 **Understanding (Listening/Reading)**
 - [ ] Understand short, simple texts on familiar matters
@@ -859,125 +865,16 @@ By module 65, learners can:
 
 ---
 
-## Phase A2.4: Final Integration (Modules 61-65)
+## Vocabulary Summary (366 words actual)
 
-### Learning Goals
-- Integrate all A2 skills
-- Handle complex real-world scenarios
-- Prepare for B1 level
-- Achieve CEFR A2 certification readiness
+### Distribution by Phase
 
-### Grammar Progression
-
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 61 | Review: All cases | A2.1 | Comprehensive use |
-| 62 | Review: Aspect system | A2.2 | Verb mastery |
-| 63 | Review: Complex sentences | A2.3 | Fluent production |
-| 64 | Functional: Travel | All A2 | Real-world scenarios |
-| 65 | A2 FINAL REVIEW | All modules | Certification prep |
-
-### Module Content Specifications A2.4
-
-#### Module 61: Case Mastery
-**Review:** All seven cases in complex contexts
-
-**Focus areas:**
-- Multi-case sentences
-- Preposition + case combinations
-- Case in subordinate clauses
-
-**Vocabulary (25 words):** Review of case-related vocabulary
-
----
-
-#### Module 62: Aspect Mastery
-**Review:** Perfective/Imperfective in all contexts
-
-**Focus areas:**
-- Aspect in narration
-- Aspect in conditionals
-- Aspect in reported speech
-
-**Vocabulary (25 words):** Review of aspect pairs
-
----
-
-#### Module 63: Complex Expression
-**Review:** All complex sentence structures
-
-**Focus areas:**
-- Multi-clause sentences
-- Mixed connectors
-- Formal vs informal register
-
-**Vocabulary (25 words):** Review of connectors
-
----
-
-#### Module 64: Travel Scenarios
-**Functional:** Complete travel situations
-
-**Scenarios:**
-- Booking transportation
-- Hotel check-in/out
-- Airport/train station
-- Tourist information
-- Emergency situations
-
-**Vocabulary (50 words):**
-подорож, поїздка, тур, екскурсія, мандрівка, бронювання, квиток, рейс, пересадка, відправлення, прибуття, затримка, скасування, реєстрація, посадка, багаж, ручна поклажа, митниця, паспортний контроль, віза, готель, номер, бронь, заїзд, виїзд, ключ, сервіс, прибирання, сніданок, рецепція, портьє, турист, гід, екскурсовод, пам'ятка, визначне місце, маршрут, карта, путівник, сувенір, фотографія, враження, спогад, рекомендація, відгук, рейтинг, вартість, включено, додатково, безкоштовно
-
-**Activities:**
-1. Dialogue: Book a trip
-2. Role-play: Hotel check-in
-3. Problem-solving: Travel emergencies
-
----
-
-#### Module 65: A2 Capstone - Ready for B1
-**Final Review:** All A2 content
-
-**Can-do final assessment:**
-1. All 7 cases in context
-2. Aspect in narration
-3. Complex sentence structures
-4. Service interactions (bank, post, doctor)
-5. Shopping with comparisons
-6. Travel scenarios
-7. Express opinions and emotions
-8. Report what others said
-
-**Final tasks:**
-1. Written: My life story (past, present, future)
-2. Oral: Opinion discussion
-3. Listening: Understand announcements
-4. Reading: Simple newspaper article
-5. Interaction: Multi-turn conversation
-
-**Vocabulary (10 words):** Final review selection
-
----
-
-## Vocabulary Master List (1100 words for A2)
-
-### Distribution by Domain
-
-| Domain | Words | Modules |
-|--------|-------|---------|
-| Cases/Grammar | 100 | 31-40 |
-| Aspect verbs | 80 | 41-44 |
-| Comparison | 75 | 45-47 |
-| Connectors | 60 | 51-52, 58 |
-| Speech/Opinion | 60 | 53-55 |
-| Professions | 50 | 36 |
-| Services | 80 | 39 |
-| Shopping | 70 | 49 |
-| Health | 80 | 59 |
-| Travel | 80 | 64 |
-| Emotions | 50 | 55 |
-| Function words | 115 | Various |
-| Review | 200 | 40, 50, 60, 65 |
+| Phase | Modules | Words |
+|-------|---------|-------|
+| A2.1 | 31-40 | 147 |
+| A2.2 | 41-50 | 123 |
+| A2.3 | 51-60 | 96 |
+| **Total** | 30 | **366** |
 
 ---
 
@@ -987,76 +884,38 @@ By module 65, learners can:
 A1 Foundation (M01-30)
   │
   ├── M31-32 Dative
-  │     └── M33 Dative verbs
-  │           └── M39 Services
+  │     └── M33 Instrumental I
+  │           └── M34 Instrumental II
+  │                 └── M35 Vocative
+  │                       └── M36 Prepositions
   │
-  ├── M34-35 Instrumental
-  │     └── M36 Professions
-  │           └── M37 Prepositions
-  │                 └── M38 All cases
+  ├── M37-39 Comparatives/Superlatives
+  │     └── M40 A2.1 Checkpoint
   │
   ├── M41 Aspect intro
-  │     ├── M42 Perfective past
-  │     ├── M43 Perfective future
-  │     └── M44 Aspect pairs
-  │           └── M48 Conditionals
-  │                 └── M62 Aspect mastery
+  │     └── M42 Motion verbs
+  │           └── M43 Motion prefixes
+  │                 └── M44 Future tense
+  │                       └── M45 Adverbs
   │
-  ├── M45 Comparative
-  │     └── M46 Superlative
-  │           └── M47 Preferences
-  │                 └── M49 Shopping
+  ├── M46-47 Conditionals
+  │     └── M48-49 Vocabulary (Shopping, Directions)
+  │           └── M50 A2.2 Checkpoint
   │
-  └── M51 Sequence
-        ├── M52 Because/Although
-        │     └── M54 Opinions
-        │           └── M55 Emotions
-        ├── M53 Reported speech
-        ├── M56 Purpose (щоб)
-        ├── M57 Relative (який)
-        └── M58 Time clauses
-              └── M59 Doctor
-                    └── M63 Complex expression
-                          └── M64 Travel
-                                └── M65 Capstone
+  └── M51 Reflexive verbs
+        ├── M52 Relative clauses
+        ├── M53 Complex conjunctions
+        ├── M54-58 Vocabulary expansion
+        ├── M59 Passive/Impersonal
+        └── M60 A2 Capstone
 ```
 
 ---
 
-## Quality Checklist A2
+## Completion Notes
 
-Before generating any module:
+**A2 Level Complete:** All 30 modules built (31-60)
+**Actual vocabulary:** 366 words (stored in vocabulary.csv)
+**Cumulative vocabulary:** 822 words (A1 + A2)
 
-- [ ] All A1 prerequisites are met
-- [ ] Grammar builds on previous A2 modules
-- [ ] Vocabulary is within domain targets
-- [ ] Can-do statements align with CEFR A2
-- [ ] Aspect is used correctly in examples
-- [ ] Cases are used correctly in examples
-- [ ] Complex sentences are properly formed
-- [ ] No forward references to B1 grammar
-- [ ] Review modules cover all preceding content
-
----
-
-## Transition to B1
-
-After completing A2, learners are ready for:
-- Passive voice constructions
-- Participles and verbal adverbs
-- More complex aspect usage
-- Subjunctive mood
-- Advanced conditionals
-- Formal/informal register switching
-- Abstract vocabulary
-- Extended discourse
-
----
-
-## Next Steps
-
-1. **Validate A2 plan** with user
-2. **Complete A1 module generation** (02-30)
-3. **Create A2 vocabulary database** (all 1100 words)
-4. **Generate A2 modules** (31-65)
-5. **Plan B1 curriculum** (modules 66-110)
+**Next level:** A2+ (modules 61-75) - Bridge level for word formation and vocabulary expansion

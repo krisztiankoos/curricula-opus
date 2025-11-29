@@ -298,6 +298,14 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+  <p>📝 <strong>Note: No Perfective Forms</strong></p>
+  <p>The multidirectional verbs (ходити, їздити) have <strong>no perfective forms</strong> because they describe repeated or non-specific motion. For completed single journeys, use prefixed forms of the unidirectional verbs:</p>
+  <ul>
+  <li>ходити (habitual) → піти (completed single trip)</li>
+  <li>їздити (habitual) → поїхати (completed single trip)</li>
+  </ul>
+</blockquote>
 <p><strong>Examples:</strong></p>
 <ul>
 <li><p>Я <strong>йду</strong> на роботу. (I'm going to work - now, one direction)</p></li>
@@ -572,7 +580,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">відкривати</div><div class="match-item" data-pair="1">закривати</div><div class="match-item" data-pair="2">починати</div><div class="match-item" data-pair="3">питати</div><div class="match-item" data-pair="4">шукати</div><div class="match-item" data-pair="5">бачити</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">запитати</div><div class="match-item" data-pair="0">відкрити</div><div class="match-item" data-pair="1">закрити</div><div class="match-item" data-pair="2">почати</div><div class="match-item" data-pair="5">побачити</div><div class="match-item" data-pair="4">знайти</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">запитати</div><div class="match-item" data-pair="1">закрити</div><div class="match-item" data-pair="4">знайти</div><div class="match-item" data-pair="2">почати</div><div class="match-item" data-pair="0">відкрити</div><div class="match-item" data-pair="5">побачити</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -610,7 +618,7 @@
     function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
     window.addEventListener('resize',drawLines);
     let quizScore=0,quizAns=0;
-    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': <span class="cyrillic">'+(q.question.match(/[А-ЯІЇЄҐ]+/)?.[0]||'')+'</span></h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
     function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
     function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
     let sortScore=0,dragItem=null;

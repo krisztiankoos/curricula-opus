@@ -1,16 +1,21 @@
 # B2 Curriculum Plan: Ukrainian for English Speakers
 
+**Status:** 🔲 TO BUILD
+**Modules:** 126-180 (55 modules)
+**Vocabulary Target:** ~2,000 words
+**Cumulative Target:** ~5,200 words
+
+---
+
 ## Prerequisites from B1
 
 Before starting B2, learners have completed:
-- Passive voice in all tenses
-- Active and passive participles
-- Verbal adverbs (дієприслівники)
-- Advanced conditionals and subjunctive
-- Complex subordination (cause, result, purpose, concession, contrast)
-- Formal/informal register switching
-- Common idioms and colloquial expressions
-- ~3200 vocabulary words
+- Advanced aspect usage and motion verbs
+- Complex sentence structures
+- Reported speech and indirect questions
+- Participle introduction
+- Collocations and synonymy basics
+- ~3,200 vocabulary words (cumulative)
 
 **Transliteration Status:** NONE - fully Cyrillic
 
@@ -22,7 +27,7 @@ Before starting B2, learners have completed:
 > Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in their field of specialization. Can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party. Can produce clear, detailed text on a wide range of subjects and explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.
 
 ### Our B2 Can-Do Checklist
-By module 160, learners can:
+By module 180, learners can:
 
 **Understanding (Listening/Reading)**
 - [ ] Understand extended speech and lectures, follow complex lines of argument
@@ -43,7 +48,7 @@ By module 160, learners can:
 
 ---
 
-## Phase B2.1: Abstract Expression (Modules 111-130)
+## Phase B2.1: Participles & Passive (Modules 126-145)
 
 ### Learning Goals
 - Express abstract and hypothetical concepts

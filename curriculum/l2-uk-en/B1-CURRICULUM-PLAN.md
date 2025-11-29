@@ -1,15 +1,23 @@
 # B1 Curriculum Plan: Ukrainian for English Speakers
 
-## Prerequisites from A2
+**Status:** 🔲 TO BUILD
+**Modules:** 76-125 (50 modules)
+**Vocabulary Target:** ~1,800 words
+**Cumulative Target:** ~3,200 words
+
+---
+
+## Prerequisites from A2+
 
 Before starting B1, learners have completed:
-- All 7 grammatical cases (Nominative, Accusative, Genitive, Dative, Instrumental, Locative, Vocative)
+- All 7 grammatical cases
 - Perfective/Imperfective aspect system
-- Comparative and superlative adjectives
-- Conditional mood (basic)
+- Motion verbs (basic and prefixed)
+- Conditional mood
 - Complex sentences (relative, causal, temporal, purpose clauses)
-- Reported speech basics
-- ~1850 vocabulary words
+- Word formation patterns (prefixes, suffixes, root families)
+- Common collocations
+- ~1,400 vocabulary words (cumulative)
 
 **Transliteration Status:** NONE - B1 learners read Cyrillic independently
 
@@ -21,7 +29,7 @@ Before starting B1, learners have completed:
 > Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. Can deal with most situations likely to arise while traveling in an area where the language is spoken. Can produce simple connected text on topics which are familiar or of personal interest. Can describe experiences and events, dreams, hopes and ambitions, and briefly give reasons and explanations for opinions and plans.
 
 ### Our B1 Can-Do Checklist
-By module 110, learners can:
+By module 125, learners can:
 
 **Understanding (Listening/Reading)**
 - [ ] Understand main points of clear standard speech on familiar matters
@@ -43,7 +51,7 @@ By module 110, learners can:
 
 ---
 
-## Phase B1.1: Passive Voice & Advanced Verbs (Modules 66-80)
+## Phase B1.1: Advanced Aspect & Motion (Modules 76-90)
 
 ### Learning Goals
 - Master passive voice constructions
@@ -56,41 +64,37 @@ By module 110, learners can:
 
 | Module | Grammar Point | Builds On | Enables |
 |--------|--------------|-----------|---------|
-| 66 | Passive voice introduction | A2 aspect | "X was done" |
-| 67 | Passive with agents | M66 | "Done by whom" |
-| 68 | Passive in past/future | M66-67 | Passive narration |
-| 69 | Verbs of motion (unprefixed) | A1-A2 verbs | йти/їхати/ходити |
-| 70 | Verbs of motion (prefixed) | M69 | прийти/вийти/зайти |
-| 71 | Motion + destinations | M69-70, A2 cases | Complex movement |
-| 72 | Reflexive verbs deep dive | A1-A2 reflexives | -ся patterns |
-| 73 | Impersonal constructions | M72 | "One can/must" |
-| 74 | Verbal prefixes system | M70 | Prefix meanings |
-| 75 | Aspect with prefixes | M74, A2 aspect | Advanced aspect |
-| 76 | Necessity/Obligation | M73 | мусити/повинен/слід |
-| 77 | Formal register basics | M73, M76 | Official language |
-| 78 | Functional: Workplace | M66-77 | Professional context |
-| 79 | Media understanding | M66-78 | News/articles |
-| 80 | REVIEW | M66-79 | Consolidation |
+| 76 | Aspect Review | A2+ | Perfective/imperfective mastery |
+| 77 | Aspect in Context I | M76 | Choosing aspect - past |
+| 78 | Aspect in Context II | M76-77 | Choosing aspect - future |
+| 79 | Aspect: Negation | M76-78 | Imperfective in negation |
+| 80 | Aspect: Commands | M79 | Aspect in imperatives |
+| 81 | Verb Pairs Expansion | M76-80 | 50 new verb pairs |
+| 82 | Motion: Arriving | A2+ motion | При- prefix detailed |
+| 83 | Motion: Leaving | M82 | Ви- prefix detailed |
+| 84 | Motion: Entering/Passing | M82-83 | В-/у-, про- prefixes |
+| 85 | Motion: Around & Back | M82-84 | Об-, по-, пере- |
+| 86 | Complex Motion Practice | M82-85 | All prefixed motion |
+| 87 | Conditionals III | A2+ conditionals | Mixed conditionals |
+| 88 | Reflexive Verbs II | A2+ reflexive | Passive -ся, reciprocal |
+| 89 | Word Formation III | A2+ word formation | Root families expansion |
+| 90 | B1.1 Checkpoint | M76-89 | Assessment |
 
-### Vocabulary Plan B1.1 (450 words)
+### Vocabulary Plan B1.1 (~600 words)
 
 | Module | Words | Domain | Key Items |
 |--------|-------|--------|-----------|
-| 66 | 30 | Passive basics | бути + -ний/-тий, створений, написаний... |
-| 67 | 25 | Agents/doers | автор, виконавець, творець... |
-| 68 | 25 | Passive narration | було зроблено, буде завершено... |
-| 69 | 40 | Motion verbs | йти/ходити, їхати/їздити, летіти/літати... |
-| 70 | 40 | Prefixed motion | прийти, вийти, зайти, перейти, обійти... |
-| 71 | 35 | Destinations | напрямок, шлях, пункт призначення... |
-| 72 | 30 | Reflexive verbs | одягатися, умиватися, дивуватися... |
-| 73 | 30 | Impersonal | можна, не можна, потрібно, варто... |
-| 74 | 35 | Prefix meanings | ви-, за-, при-, пере-, роз-... |
-| 75 | 30 | Aspect nuances | завершувати/завершити, повторювати... |
-| 76 | 30 | Obligation | мусити, повинен, зобов'язаний, слід... |
-| 77 | 35 | Formal language | шановний, з повагою, офіційний... |
-| 78 | 40 | Workplace | колектив, проєкт, завдання, термін... |
-| 79 | 35 | Media | стаття, новина, заголовок, репортаж... |
-| 80 | 10 | Review | (consolidation) |
+| 76 | 30 | Aspect mastery | завершувати/завершити, повторювати... |
+| 77 | 35 | Aspect context | вже, ще, завжди, ніколи... |
+| 78 | 30 | Future aspect | збиратися, планувати, мати намір... |
+| 79 | 25 | Negation patterns | не, ні, ніколи, нічого... |
+| 80 | 30 | Commands | накази, прохання, поради... |
+| 81 | 50 | Verb pairs | 50 new aspect pairs |
+| 82-86 | 150 | Motion verbs | All prefixed motion verbs + contexts |
+| 87 | 35 | Conditionals | якби, якщо, умови, наслідки... |
+| 88 | 40 | Reflexive verbs | взаємні, пасивні -ся форми... |
+| 89 | 45 | Word formation | нові кореневі сім'ї... |
+| 90 | 10 | Review | (consolidation) |
 
 ### Module Content Specifications B1.1
 

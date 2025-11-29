@@ -423,8 +423,12 @@
     }
   ],
   "vocabularySummary": {
-    "A1.1": { "modules": "1-10", "newWords": 240, "cumulative": 240 },
-    "A1.2": { "modules": "11-20", "newWords": 250, "cumulative": 490 },
-    "A1.3": { "modules": "21-30", "newWords": 260, "cumulative": 750 }
+    "A1.1": { "modules": "1-10", "newWords": 152, "cumulative": 152 },
+    "A1.2": { "modules": "11-20", "newWords": 152, "cumulative": 304 },
+    "A1.3": { "modules": "21-30", "newWords": 152, "cumulative": 456 }
+  },
+  "actualVocabulary": {
+    "total": 456,
+    "note": "Actual vocabulary built as of 2024-11"
   }
 }

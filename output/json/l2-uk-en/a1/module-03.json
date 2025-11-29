@@ -1,0 +1,552 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A1-03",
+    "moduleId": "mod-uk-A1-03",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A1",
+    "phase": "A1.1",
+    "moduleNumber": 3,
+    "title": "The Gender Code",
+    "subtitle": "Masculine, Feminine, Neuter",
+    "description": "Understand that every Ukrainian noun has grammatical gender",
+    "objectives": [
+      "Understand that every Ukrainian noun has grammatical gender",
+      "Recognize masculine nouns by their endings",
+      "Recognize feminine nouns by their endings",
+      "Recognize neuter nouns by their endings",
+      "Predict gender from word endings with 90%+ accuracy"
+    ],
+    "grammarFocus": [
+      "Grammatical gender (чоловічий, жіночий, середній рід)",
+      "Noun ending patterns for each gender",
+      "Natural gender vs grammatical gender"
+    ],
+    "totalDuration": 40,
+    "transliterationMode": "full",
+    "tags": [
+      "grammar",
+      "nouns",
+      "gender",
+      "basics"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Why Gender Matters\n\nIn Ukrainian, every single noun has a gender: masculine (чоловічий рід), feminine (жіночий рід), or neuter (середній рід). This isn't about biology - it's **grammatical gender**.\n\nWhy does this matter? Because:\n- Adjectives change to match the noun's gender\n- Verbs change in past tense to match the noun's gender\n- \"This/that\" words change to match the noun's gender\n- Getting gender wrong sounds very strange to native speakers\n\nThe good news: **you can predict gender from the word ending about 95% of the time!**\n\n> 🔍 **Myth Buster: \"Grammatical Gender is Sexist\"**\n>\n> Some learners feel uncomfortable with \"masculine\" and \"feminine\" grammar. But here's the thing: grammatical gender has **nothing to do with real-world gender**! A table (стіл) is masculine. A book (книга) is feminine. A window (вікно) is neuter. These are just grammatical categories that determine how other words behave around nouns.\n>\n> Many languages have 2, 3, or even more \"genders\" - German has 3, Swahili has 18 noun classes! It's just a classification system.\n\n> 💡 **Did You Know?**\n>\n> English **used to have** grammatical gender! Until about 1,000 years ago, English nouns were masculine, feminine, or neuter - just like Ukrainian today. Over centuries, English lost this feature (and most case endings too). That's why learning gender feels strange to English speakers - your language forgot it!"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Masculine Nouns (Чоловічий рід)\n\nMasculine nouns typically end in a **consonant** (hard or soft):\n\n| Ending | Examples |\n|--------|----------|\n| Consonant | студент (student), брат (brother), стіл (table) |\n| -ь (soft sign) | день (day), вчитель (teacher), кінь (horse) |\n| -й | край (edge/country), музей (museum), герой (hero) |\n\n**Memory trick:** If it ends in a consonant → probably masculine!\n\n> 📜 **History Bite: The -ь Ending**\n>\n> The soft sign (ь) at the end of masculine nouns comes from Old Church Slavonic. Words like **день** (day) and **гість** (guest) have been softened for over 1,000 years. This \"soft\" quality changes how the consonant sounds - like adding a tiny \"y\" sound. Compare: **брат** (brat) vs **брать** (brat' - softer final T).\n\n> ⚡ **Pro Tip: Natural Gender Override**\n>\n> Living beings often match their natural gender:\n> - **тато** (dad) → masculine (ends in -о but refers to male)\n> - **батько** (father) → masculine (same reason)\n> - **дядько** (uncle) → masculine\n>\n> When natural gender conflicts with the ending, natural gender wins for people!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Feminine Nouns (Жіночий рід)\n\nFeminine nouns typically end in **-а** or **-я**:\n\n| Ending | Examples |\n|--------|----------|\n| -а | мама (mom), сестра (sister), книга (book) |\n| -я | земля (earth/land), сім'я (family), пісня (song) |\n| -ь (some) | ніч (night), річ (thing), подорож (journey) |\n\n**Memory trick:** If it ends in -а/-я → probably feminine!\n\n> 🔗 **Language Link: The -а Ending**\n>\n> The feminine -а ending is common across many languages:\n> - Ukrainian: мама, сестра, школа\n> - Spanish: mama, hermana (sister), escuela (school)\n> - Italian: mamma, sorella, scuola\n> - Russian: мама, сестра, школа\n>\n> This isn't coincidence! Many Indo-European languages share this feminine marker. When you learn Ukrainian gender, you're learning a pattern that helps across multiple languages.\n\n> 🎯 **Fun Fact: The -ь Trap**\n>\n> The soft sign (ь) can appear in BOTH masculine and feminine nouns! How do you know?\n> - **Masculine:** Usually after д, т, н, с, з, л, р (день, вчитель, кінь)\n> - **Feminine:** Usually after ч, ш, щ, ж (ніч, річ, подорож)\n>\n> If it ends in -ч/-ш/-щ/-ж + ь → almost always feminine!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Neuter Nouns (Середній рід)\n\nNeuter nouns typically end in **-о** or **-е**:\n\n| Ending | Examples |\n|--------|----------|\n| -о | вікно (window), молоко (milk), яблуко (apple) |\n| -е | море (sea), серце (heart), сонце (sun) |\n| -я (some) | ім'я (name), теля (calf), курча (chick) |\n| -мя | ім'я, плем'я (tribe), полум'я (flame) |\n\n**Memory trick:** If it ends in -о/-е → neuter!\n\n> 🎭 **Culture Corner: Neuter and Baby Animals**\n>\n> In Ukrainian, baby animals are often neuter:\n> - **теля** (calf) - neuter\n> - **порося** (piglet) - neuter\n> - **курча** (chick) - neuter\n> - **цуценя** (puppy) - neuter\n> - **кошеня** (kitten) - neuter\n>\n> This makes sense - baby animals aren't clearly male or female, so they're grammatically \"neither.\" The -я ending with neuter is a telltale sign of young animals!\n\n> 💡 **Did You Know?**\n>\n> The word **ім'я** (name) looks feminine (-я ending) but is actually neuter! This is one of a small group of ancient nouns ending in -мя that are neuter: ім'я (name), плем'я (tribe), сім'я (seed - but сім'я meaning \"family\" is feminine!). These are leftovers from Old Church Slavonic."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-03-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### The Gender Decision Tree\n\nWhen you see a new Ukrainian noun, ask:\n\n1. **Does it end in a consonant?** → Masculine (студент, стіл, день)\n2. **Does it end in -а or -я?** → Feminine (мама, земля) ... unless it's a baby animal or -мя word!\n3. **Does it end in -о or -е?** → Neuter (вікно, море)\n4. **Is it a person?** → Natural gender may override (тато = masculine despite -о)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Pattern Recognition\n\nStudy these word families:\n\n**Profession pairs (masculine/feminine):**\n- студент / студентка (student m/f)\n- вчитель / вчителька (teacher m/f)\n- лікар / лікарка (doctor m/f)\n\n**Object patterns:**\n- книга (book) - fem → книжка (small book) - fem\n- стіл (table) - masc → столик (small table) - masc\n- вікно (window) - neut → віконце (small window) - neut\n\n> 🌍 **Real World: Gender Consistency**\n>\n> Diminutives (cute/small versions) keep the same gender as the base word:\n> - **кіт** (cat, masc) → **котик** (kitty, masc)\n> - **собака** (dog, fem) → **собачка** (doggy, fem)\n> - **сонце** (sun, neut) → **сонечко** (little sun, neut)\n>\n> The suffixes -ик/-ок (masculine), -ка (feminine), -ко/-це (neuter) add cuteness while preserving gender!"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-03-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-03-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Gender Sorting Challenge\n\nSort these nouns by gender. Look at the endings!\n\n**Masculine:** брат, студент, стіл, день, музей\n**Feminine:** мама, книга, сестра, ніч, земля\n**Neuter:** вікно, молоко, море, сонце, яблуко"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Apply the Rules\n\nNow predict the gender of these new words (you haven't learned them yet, but you can use the endings!):\n\n1. **озеро** (lake) - ends in -о → ?\n2. **дівчина** (girl) - ends in -а → ?\n3. **комп'ютер** (computer) - ends in consonant → ?\n4. **любов** (love) - ends in consonant → ?\n5. **життя** (life) - ends in -я → ?\n\n*(Answers: neuter, feminine, masculine, feminine [exception!], neuter)*\n\n> ⚡ **Pro Tip: The 5% Exceptions**\n>\n> Some nouns don't follow the rules:\n> - **любов** (love) - ends in consonant but FEMININE\n> - **путь** (path) - ends in ь but FEMININE (very archaic)\n> - **тато** (dad), **дядько** (uncle) - end in -о but MASCULINE (natural gender)\n>\n> These exceptions are rare! For 95% of nouns, the ending tells you the gender."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A1-03-matchup",
+      "type": "match-up",
+      "title": "Endings to Genders",
+      "description": "Match each ending type to its typical gender. Remember the patterns!",
+      "content": {
+        "type": "match-up",
+        "instructions": "Match each ending type to its typical gender. Remember the patterns!",
+        "pairs": [
+          {
+            "left": "Consonant ending (т, н, к...)",
+            "right": "Masculine (чоловічий)"
+          },
+          {
+            "left": "-а ending",
+            "right": "Feminine (жіночий)"
+          },
+          {
+            "left": "-я ending (general)",
+            "right": "Feminine (жіночий)"
+          },
+          {
+            "left": "-о ending",
+            "right": "Neuter (середній)"
+          },
+          {
+            "left": "-е ending",
+            "right": "Neuter (середній)"
+          },
+          {
+            "left": "-ь after ч/ш/щ",
+            "right": "Feminine (жіночий)"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "nouns",
+        "gender",
+        "basics"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-03-quiz",
+      "type": "quiz",
+      "title": "Identify the Gender",
+      "description": "Look at each noun's ending and determine its gender!",
+      "content": {
+        "type": "quiz",
+        "instructions": "Look at each noun's ending and determine its gender!",
+        "questions": [
+          {
+            "question": "What gender is СТІЛ (table)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 0,
+            "explanation": "СТІЛ ends in a consonant (Л) → masculine!"
+          },
+          {
+            "question": "What gender is КНИГА (book)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 1,
+            "explanation": "КНИГА ends in -А → feminine!"
+          },
+          {
+            "question": "What gender is ВІКНО (window)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 2,
+            "explanation": "ВІКНО ends in -О → neuter!"
+          },
+          {
+            "question": "What gender is МОРЕ (sea)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 2,
+            "explanation": "МОРЕ ends in -Е → neuter!"
+          },
+          {
+            "question": "What gender is ДЕНЬ (day)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 0,
+            "explanation": "ДЕНЬ ends in -Ь after Н → masculine! (soft masculine)"
+          },
+          {
+            "question": "What gender is НІЧ (night)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 1,
+            "explanation": "НІЧ ends in -Ь after Ч → feminine! (Remember: -ь after ч/ш/щ/ж = feminine)"
+          },
+          {
+            "question": "What gender is СЕСТРА (sister)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 1,
+            "explanation": "СЕСТРА ends in -А → feminine!"
+          },
+          {
+            "question": "What gender is ЯБЛУКО (apple)?",
+            "options": [
+              "Masculine",
+              "Feminine",
+              "Neuter"
+            ],
+            "correctIndex": 2,
+            "explanation": "ЯБЛУКО ends in -О → neuter!"
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "nouns",
+        "gender",
+        "basics"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-03-groupsort",
+      "type": "group-sort",
+      "title": "Sort by Gender",
+      "description": "Drag each noun to its correct gender category based on the ending pattern.",
+      "content": {
+        "type": "group-sort",
+        "instructions": "Drag each noun to its correct gender category based on the ending pattern.",
+        "groups": [
+          {
+            "name": "Masculine (Чоловічий)",
+            "items": [
+              "студент",
+              "брат",
+              "стіл",
+              "день",
+              "музей"
+            ]
+          },
+          {
+            "name": "Feminine (Жіночий)",
+            "items": [
+              "мама",
+              "книга",
+              "сестра",
+              "ніч",
+              "земля"
+            ]
+          },
+          {
+            "name": "Neuter (Середній)",
+            "items": [
+              "вікно",
+              "молоко",
+              "море",
+              "сонце",
+              "яблуко"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "nouns",
+        "gender",
+        "basics"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A1-03",
+    "level": "A1",
+    "phase": "A1.1",
+    "wordCount": 20,
+    "transliterationMode": "full",
+    "words": [
+      {
+        "id": "v-m03-001",
+        "uk": "рід",
+        "translit": "rid",
+        "ipa": "/rʲid/",
+        "en": "gender (grammatical), genus",
+        "pos": "noun",
+        "gender": "m",
+        "note": "чоловічий рід = masculine gender"
+      },
+      {
+        "id": "v-m03-002",
+        "uk": "чоловічий",
+        "translit": "cholovichyi",
+        "ipa": "/tʃɔlɔˈvʲitʃɪj/",
+        "en": "masculine",
+        "pos": "adj",
+        "gender": "m",
+        "note": "Literally \"man-like\""
+      },
+      {
+        "id": "v-m03-003",
+        "uk": "жіночий",
+        "translit": "zhinochyi",
+        "ipa": "/ʒʲiˈnɔtʃɪj/",
+        "en": "feminine",
+        "pos": "adj",
+        "gender": "m",
+        "note": "Literally \"woman-like\""
+      },
+      {
+        "id": "v-m03-004",
+        "uk": "середній",
+        "translit": "serednii",
+        "ipa": "/sɛˈrɛdnʲij/",
+        "en": "middle, neuter",
+        "pos": "adj",
+        "gender": "m",
+        "note": "середній рід = neuter gender"
+      },
+      {
+        "id": "v-m03-005",
+        "uk": "брат",
+        "translit": "brat",
+        "ipa": "/brɑt/",
+        "en": "brother",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Consonant ending = masculine"
+      },
+      {
+        "id": "v-m03-006",
+        "uk": "сестра",
+        "translit": "sestra",
+        "ipa": "/sɛsˈtrɑ/",
+        "en": "sister",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-а ending = feminine"
+      },
+      {
+        "id": "v-m03-007",
+        "uk": "студент",
+        "translit": "student",
+        "ipa": "/stuˈdɛnt/",
+        "en": "student (male)",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Consonant ending"
+      },
+      {
+        "id": "v-m03-008",
+        "uk": "студентка",
+        "translit": "studentka",
+        "ipa": "/stuˈdɛntkɑ/",
+        "en": "student (female)",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-ка feminine suffix"
+      },
+      {
+        "id": "v-m03-009",
+        "uk": "вчитель",
+        "translit": "vchytel",
+        "ipa": "/ˈwtʃɪtɛlʲ/",
+        "en": "teacher (male)",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Soft sign after л"
+      },
+      {
+        "id": "v-m03-010",
+        "uk": "вчителька",
+        "translit": "vchytelka",
+        "ipa": "/wtʃɪˈtɛlʲkɑ/",
+        "en": "teacher (female)",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-ка feminine suffix"
+      },
+      {
+        "id": "v-m03-011",
+        "uk": "стіл",
+        "translit": "stil",
+        "ipa": "/stʲil/",
+        "en": "table",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Consonant = masculine"
+      },
+      {
+        "id": "v-m03-012",
+        "uk": "книга",
+        "translit": "knyha",
+        "ipa": "/ˈknɪɦɑ/",
+        "en": "book",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-а = feminine"
+      },
+      {
+        "id": "v-m03-013",
+        "uk": "вікно",
+        "translit": "vikno",
+        "ipa": "/wʲikˈnɔ/",
+        "en": "window",
+        "pos": "noun",
+        "gender": "n",
+        "note": "-о = neuter"
+      },
+      {
+        "id": "v-m03-014",
+        "uk": "море",
+        "translit": "more",
+        "ipa": "/ˈmɔrɛ/",
+        "en": "sea",
+        "pos": "noun",
+        "gender": "n",
+        "note": "-е = neuter"
+      },
+      {
+        "id": "v-m03-015",
+        "uk": "день",
+        "translit": "den",
+        "ipa": "/dɛnʲ/",
+        "en": "day",
+        "pos": "noun",
+        "gender": "m",
+        "note": "-ь after н = masculine"
+      },
+      {
+        "id": "v-m03-016",
+        "uk": "ніч",
+        "translit": "nich",
+        "ipa": "/nʲitʃ/",
+        "en": "night",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-ь after ч = feminine"
+      },
+      {
+        "id": "v-m03-017",
+        "uk": "земля",
+        "translit": "zemlya",
+        "ipa": "/zɛmˈlʲa/",
+        "en": "earth, land",
+        "pos": "noun",
+        "gender": "f",
+        "note": "-я = feminine"
+      },
+      {
+        "id": "v-m03-018",
+        "uk": "яблуко",
+        "translit": "yabluko",
+        "ipa": "/ˈjablukɔ/",
+        "en": "apple",
+        "pos": "noun",
+        "gender": "n",
+        "note": "-о = neuter"
+      },
+      {
+        "id": "v-m03-019",
+        "uk": "молоко",
+        "translit": "moloko",
+        "ipa": "/mɔlɔˈkɔ/",
+        "en": "milk",
+        "pos": "noun",
+        "gender": "n",
+        "note": "-о = neuter"
+      },
+      {
+        "id": "v-m03-020",
+        "uk": "сонце",
+        "translit": "sontse",
+        "ipa": "/ˈsɔnt͡sɛ/",
+        "en": "sun",
+        "pos": "noun",
+        "gender": "n",
+        "note": "-е = neuter"
+      }
+    ]
+  }
+}

@@ -371,7 +371,7 @@ Try to get: a lower price, negotiate.
 | батарея | /bɑtɑˈrɛjɑ/ | battery | noun | f | |
 | пам'ять | /ˈpɑmjɑtʲ/ | memory | noun | f | |
 | екран | /ɛˈkrɑn/ | screen | noun | m | |
-| навушники | /nɑˈvuʃnɪkɪ/ | headphones | noun | pl | |
+| навушники | /nɑˈvuʃnɪkɪ/ | headphones | noun | m | pl-only |
 | бездротовий | /bɛzdroˈtovɪj/ | wireless | adj | - | |
 | водонепроникний | /vodonɛproˈnɪknɪj/ | waterproof | adj | - | |
 | чохол | /tʃoˈxol/ | case, cover | noun | m | |

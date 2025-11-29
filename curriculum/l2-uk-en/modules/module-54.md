@@ -383,7 +383,7 @@ Imagine you're sick. Describe:
 | кашель | /ˈkɑʃɛlʲ/ | cough | noun | m | |
 | нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m | |
 | застуда | /zɑˈstudɑ/ | cold (illness) | noun | f | |
-| ліки | /ˈlʲikɪ/ | medicine | noun | pl | |
+| ліки | /ˈlʲikɪ/ | medicine | noun | m | pl-only |
 | таблетка | /tɑbˈlɛtkɑ/ | tablet, pill | noun | f | |
 | рецепт | /rɛˈtsɛpt/ | prescription | noun | m | |
 

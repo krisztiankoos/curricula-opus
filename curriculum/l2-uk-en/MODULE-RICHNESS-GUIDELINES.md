@@ -49,6 +49,43 @@ A single curriculum module can generate:
 | Lesson 3 | Interactive activities |
 | Lesson 4 | Production + Review |
 
+### When to Split: Decision Criteria
+
+**Split a module into multiple Vibe lessons when ANY of these apply:**
+
+| Trigger | Threshold | Rationale |
+|---------|-----------|-----------|
+| Duration | > 45 min estimated | Learner fatigue, session limits |
+| Vocabulary | > 25 words | Memory overload |
+| Activities | > 5 activities | Too much in one session |
+| Grammar points | > 2 major concepts | Cognitive overload |
+| Content sections | > 4 distinct topics | Natural breakpoints exist |
+| Engagement boxes | > 6 boxes | Information density |
+
+**How to decide:**
+
+1. **After writing module** - Review against thresholds above
+2. **Natural breakpoints** - Look for clear topic transitions
+3. **Learner testing** - If completion rates drop, consider splitting
+4. **Platform feedback** - Vibe may have session length recommendations
+
+**Splitting approach:**
+
+```
+Module 01 (too long) → Split into:
+├── Lesson 01a: Theory + first activity
+├── Lesson 01b: Vocabulary + practice activities
+└── Lesson 01c: Production + review
+```
+
+**For now:** Start with 1:1 mapping. Mark modules that feel "heavy" with a note:
+```yaml
+split_candidate: true
+split_reason: "25+ vocabulary words, 6 activities"
+```
+
+We'll revisit after testing with real learners.
+
 ### Example Breakdown
 
 **Module 201: Ancient Ukraine**

@@ -37,6 +37,15 @@ Unlike English, Ukrainian often uses future tense in BOTH parts of the sentence!
 >
 > Ukrainian has two types of conditionals: "real" (things that might happen) and "unreal" (hypothetical/wishes). This module covers real conditionals - things that could actually happen. Module 47 will cover the "would" and "could" of unreal conditionals!
 
+> 📝 **Quick Review: Future Tense**
+>
+> Before learning conditionals, remember how to form the future:
+> - **Imperfective**: буду + infinitive (Я **буду читати** - I will be reading)
+> - **Perfective**: conjugated form (Я **прочитаю** - I will read/finish)
+> - **Synthetic**: infinitive + -му/-меш (Я **читатиму** - I will read)
+>
+> Conditionals use future tense in the result clause!
+
 ## presentation
 
 ### Real Conditionals: The Basics

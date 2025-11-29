@@ -107,6 +107,12 @@ Motion verbs have their own aspect system:
 | One direction | їхати | поїхати |
 | Round trip/habitual | їздити | — |
 
+> 📝 **Note: No Perfective Forms**
+>
+> The multidirectional verbs (ходити, їздити) have **no perfective forms** because they describe repeated or non-specific motion. For completed single journeys, use prefixed forms of the unidirectional verbs:
+> - ходити (habitual) → піти (completed single trip)
+> - їздити (habitual) → поїхати (completed single trip)
+
 **Examples:**
 - Я **йду** на роботу. (I'm going to work - now, one direction)
 - Я **ходжу** на роботу щодня. (I go to work daily - habitual)

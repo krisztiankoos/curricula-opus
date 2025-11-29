@@ -113,6 +113,16 @@ Both are past tense, but different aspects!
 - Завтра я **прочитаю** цю книгу. - Tomorrow I'll read (finish) this book.
 - Він **напише** тобі. - He'll write to you. (once, completed)
 
+> ⚡ **Pro Tip: Perfective Future**
+>
+> Perfective verbs form the future by **conjugating directly** (like present tense):
+> - прочитати → я прочитаю, ти прочитаєш, він прочитає
+> - написати → я напишу, ти напишеш, він напише
+>
+> Do NOT use "буду + perfective infinitive" - that's incorrect!
+> - ❌ Я буду прочитати
+> - ✅ Я прочитаю
+
 > 🎭 **Culture Corner: Aspect in Daily Life**
 >
 > Ukrainians use aspect instinctively. When someone asks "Що ти робив?" (imperfective), they want to know about your activities. When they ask "Що ти зробив?" (perfective), they want to know what you accomplished!

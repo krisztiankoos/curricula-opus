@@ -1,0 +1,725 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A2+-76",
+    "moduleId": "mod-uk-A2+-76",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A2+",
+    "phase": "A2+.2",
+    "moduleNumber": 76,
+    "title": "Shopping & Services Vocabulary",
+    "subtitle": "Stores, Banking, and Customer Service",
+    "description": "Learn extended shopping vocabulary",
+    "objectives": [
+      "Learn extended shopping vocabulary",
+      "Master banking and financial terms",
+      "Navigate service appointments",
+      "Handle customer service situations"
+    ],
+    "grammarFocus": [
+      "Service request phrases",
+      "Shopping-related verbs",
+      "Polite request structures"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "vocabulary",
+      "shopping",
+      "services",
+      "banking",
+      "customer-service"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Beyond Basic Shopping\n\nYou know how to buy things. Now let's master services!\n\n**Services:**\n- банк (bank), пошта (post office), хімчистка (dry cleaner)\n\n**Actions:**\n- замовляти (to order), бронювати (to book), скаржитися (to complain)\n\n> 💡 **Why This Matters**\n>\n> Service vocabulary helps you handle everyday situations — banking, appointments, returns, and complaints."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Types of Stores\n\n| Ukrainian | English |\n|-----------|---------|\n| магазин | store, shop |\n| супермаркет | supermarket |\n| гіпермаркет | hypermarket |\n| торговий центр | shopping mall |\n| ринок | market |\n| кіоск | kiosk |\n| бутік | boutique |\n| універмаг | department store |\n| секонд-хенд | secondhand store |\n| інтернет-магазин | online store |\n\n**Examples:**\n- Їду в **супермаркет**. - I'm going to the supermarket.\n- У **торговому центрі** багато магазинів. - The mall has many stores.\n- На **ринку** дешевше. - It's cheaper at the market.\n- Замовляю в **інтернет-магазині**. - I order from an online store.\n- Знайшов у **секонд-хенді**. - I found it at a secondhand store."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Specialized Stores\n\n| Ukrainian | English |\n|-----------|---------|\n| продуктовий магазин | grocery store |\n| булочна | bakery |\n| м'ясний магазин | butcher shop |\n| овочевий магазин | greengrocer |\n| кондитерська | confectionery |\n| господарчий магазин | hardware store |\n| канцтовари | stationery store |\n| зоомагазин | pet store |\n| квітковий магазин | flower shop |\n| ювелірний магазин | jewelry store |\n\n**Examples:**\n- Хліб купую в **булочній**. - I buy bread at the bakery.\n- Корм для кота в **зоомагазині**. - Cat food is at the pet store.\n- Подарунок куплю в **ювелірному**. - I'll buy a gift at the jewelry store.\n- Ручки і зошити — в **канцтоварах**. - Pens and notebooks — at the stationery store."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Banking Services\n\n| Ukrainian | English |\n|-----------|---------|\n| банк | bank |\n| рахунок | account |\n| картка | card |\n| готівка | cash |\n| переказ | transfer |\n| вклад | deposit |\n| кредит | credit, loan |\n| відсоток | interest rate |\n| банкомат | ATM |\n| каса | cashier, teller |\n| валюта | currency |\n| обмін валют | currency exchange |\n\n**Examples:**\n- Відкрити **рахунок** у банку. - To open a bank account.\n- Платити **карткою** чи **готівкою**? - Pay by card or cash?\n- Зробити **переказ** на інший рахунок. - To make a transfer to another account.\n- Який **відсоток** по **вкладу**? - What's the interest rate on the deposit?\n- **Банкомат** не працює. - The ATM doesn't work.\n- Де тут **обмін валют**? - Where's currency exchange here?\n\n> ⚡ **Pro Tip: Card Payments**\n>\n> Ukraine widely uses contactless payments. \"Прикладіть картку\" = Tap your card. \"Введіть пін-код\" = Enter your PIN."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Service Businesses\n\n| Ukrainian | English |\n|-----------|---------|\n| перукарня | hair salon |\n| барбершоп | barbershop |\n| салон краси | beauty salon |\n| хімчистка | dry cleaner |\n| пральня | laundry |\n| майстерня | repair shop |\n| автосервіс | car service |\n| ательє | tailor shop |\n| копіцентр | copy center |\n| туристичне агентство | travel agency |\n\n**Examples:**\n- Записався в **перукарню**. - I made an appointment at the salon.\n- Костюм у **хімчистці**. - The suit is at the dry cleaner.\n- Телефон у **майстерні** на ремонті. - The phone is at the repair shop.\n- Машина в **автосервісі**. - The car is at the service center.\n- Замовив квитки в **туристичному агентстві**. - I booked tickets at the travel agency."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Shopping Verbs\n\n| Imperfective | Perfective | Meaning |\n|--------------|------------|---------|\n| купувати | купити | to buy |\n| продавати | продати | to sell |\n| замовляти | замовити | to order |\n| повертати | повернути | to return |\n| обмінювати | обміняти | to exchange |\n| оплачувати | оплатити | to pay for |\n| бронювати | забронювати | to book |\n| доставляти | доставити | to deliver |\n| рекламувати | - | to advertise |\n| економити | зекономити | to save (money) |\n\n**Examples:**\n- Хочу **повернути** цей товар. - I want to return this item.\n- Можна **обміняти** на інший розмір? - Can I exchange for another size?\n- **Замовив** онлайн з доставкою. - I ordered online with delivery.\n- Треба **забронювати** заздалегідь. - Need to book in advance.\n- Як можна **зекономити**? - How can I save money?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Customer Service Phrases\n\n**Making requests:**\n- Будь ласка, допоможіть мені. - Please help me.\n- Чи можна...? - Is it possible to...?\n- Я хотів/хотіла б... - I would like...\n- Мені потрібно... - I need...\n\n**Complaints:**\n- Я хочу скаржитися. - I want to complain.\n- Це не те, що я замовляв. - This isn't what I ordered.\n- Товар зіпсований. - The product is damaged.\n- Хочу повернути гроші. - I want a refund.\n- Покличте менеджера. - Call the manager.\n\n**Responses:**\n- Вибачте за незручності. - Sorry for the inconvenience.\n- Зараз все виправимо. - We'll fix it right away.\n- Ось ваша здача. - Here's your change.\n- Дякую за покупку! - Thank you for your purchase!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Payment Terms\n\n| Ukrainian | English |\n|-----------|---------|\n| ціна | price |\n| вартість | cost, value |\n| знижка | discount |\n| акція | sale, promotion |\n| розпродаж | sale (clearance) |\n| чек | receipt |\n| здача | change |\n| оплата | payment |\n| передоплата | prepayment |\n| розстрочка | installment plan |\n\n**Examples:**\n- Яка **ціна**? - What's the price?\n- Є **знижка** для студентів? - Is there a student discount?\n- Зараз **акція** — мінус 30%. - There's a sale now — 30% off.\n- Збережіть **чек**. - Keep the receipt.\n- Можна в **розстрочку**? - Can I pay in installments?\n- Ось ваша **здача**. - Here's your change.\n\n> 🎭 **Culture Note: Bargaining**\n>\n> Bargaining is common at markets (ринки) in Ukraine. \"Чи можна дешевше?\" (Can it be cheaper?) is acceptable. Not appropriate in regular stores."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Delivery & Returns\n\n| Ukrainian | English |\n|-----------|---------|\n| доставка | delivery |\n| самовивіз | pickup |\n| повернення | return |\n| гарантія | warranty |\n| термін доставки | delivery time |\n| відстеження | tracking |\n| пакування | packaging |\n| накладений платіж | cash on delivery |\n| безкоштовна доставка | free delivery |\n\n**Examples:**\n- **Доставка** за 2-3 дні. - Delivery in 2-3 days.\n- Оберу **самовивіз** — так швидше. - I'll choose pickup — it's faster.\n- **Гарантія** два роки. - Two-year warranty.\n- Надішліть номер **відстеження**. - Send the tracking number.\n- **Безкоштовна доставка** від 500 гривень. - Free delivery over 500 hryvnia.\n- Платити при отриманні — **накладений платіж**. - Pay on receipt — cash on delivery."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A2+-76-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Match Store to Product\n\n1. булочна → хліб\n2. зоомагазин → корм для тварин\n3. канцтовари → ручки, зошити\n4. ювелірний → прикраси\n5. господарчий → інструменти"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Complete Shopping Dialogue\n\n**Покупець:** Чи можна ___ цей товар? (return)\n→ повернути\n\n**Продавець:** Так, маєте ___? (receipt)\n→ чек\n\n**Покупець:** Ось. Товар ___. (damaged)\n→ зіпсований\n\n**Продавець:** Вибачте. ___ гроші чи обмін? (refund)\n→ Повернути"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Banking Terms\n\nMatch the action:\n1. Зняти гроші → банкомат\n2. Відкрити рахунок → банк\n3. Обміняти долари → обмін валют\n4. Зробити переказ → онлайн-банкінг\n5. Отримати кредит → банк"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate\n\n1. I want to return this. → Я хочу це повернути.\n2. Is there a discount? → Є знижка?\n3. I'll pay by card. → Я оплачу карткою.\n4. Keep the receipt. → Збережіть чек.\n5. Free delivery over 500 UAH. → Безкоштовна доставка від 500 грн."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A2+-76-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A2+-76-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Shopping Problem\n\n**Scenario:** You bought something online but received the wrong item.\n- \"Я замовив..., але отримав...\"\n- \"Хочу повернути і отримати правильний товар.\"\n- \"Як це зробити?\""
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Service Appointment\n\n**Scenario:** Make a salon appointment.\n- \"Хочу записатися на стрижку.\"\n- \"Коли є вільний час?\"\n- \"Скільки це коштує?\""
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Bank Situation\n\n**Scenario:** You need to open a bank account.\n- \"Хочу відкрити рахунок.\"\n- \"Які документи потрібні?\"\n- \"Чи є мобільний додаток?\""
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A2+-76-matchup",
+      "type": "match-up",
+      "title": "Service → Place",
+      "description": "Service → Place",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "стрижка",
+            "right": "перукарня"
+          },
+          {
+            "left": "чистка одягу",
+            "right": "хімчистка"
+          },
+          {
+            "left": "обмін валют",
+            "right": "банк"
+          },
+          {
+            "left": "ремонт авто",
+            "right": "автосервіс"
+          },
+          {
+            "left": "квитки",
+            "right": "туристичне агентство"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2+",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "shopping",
+        "services",
+        "banking",
+        "customer-service"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A2+-76-quiz",
+      "type": "quiz",
+      "title": "Shopping & Services",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "\"Повернути товар\" means ___.",
+            "options": [
+              "to return an item",
+              "to buy an item",
+              "to exchange an item",
+              "to order an item"
+            ],
+            "correctIndex": 0,
+            "explanation": "Повернути = to return."
+          },
+          {
+            "question": "\"Здача\" is ___.",
+            "options": [
+              "change (money back)",
+              "receipt",
+              "discount",
+              "price"
+            ],
+            "correctIndex": 0,
+            "explanation": "Здача = change you get back."
+          },
+          {
+            "question": "\"Накладений платіж\" means ___.",
+            "options": [
+              "cash on delivery",
+              "prepayment",
+              "card payment",
+              "bank transfer"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pay when you receive the item."
+          },
+          {
+            "question": "Where do you exchange currency?",
+            "options": [
+              "обмін валют",
+              "банкомат",
+              "каса",
+              "магазин"
+            ],
+            "correctIndex": 0,
+            "explanation": "Обмін валют = currency exchange."
+          },
+          {
+            "question": "\"Розпродаж\" is ___.",
+            "options": [
+              "clearance sale",
+              "new arrival",
+              "full price",
+              "luxury item"
+            ],
+            "correctIndex": 0,
+            "explanation": "Розпродаж = sale, clearance."
+          },
+          {
+            "question": "\"Самовивіз\" means ___.",
+            "options": [
+              "pickup (collect yourself)",
+              "delivery",
+              "return",
+              "exchange"
+            ],
+            "correctIndex": 0,
+            "explanation": "Самовивіз = self-pickup."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2+",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "shopping",
+        "services",
+        "banking",
+        "customer-service"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A2+-76-groupsort",
+      "type": "group-sort",
+      "title": "By Category",
+      "description": "By Category",
+      "content": {
+        "type": "group-sort",
+        "instructions": "",
+        "groups": [
+          {
+            "name": "Магазини (Stores)",
+            "items": [
+              "супермаркет",
+              "булочна",
+              "ювелірний",
+              "зоомагазин"
+            ]
+          },
+          {
+            "name": "Послуги (Services)",
+            "items": [
+              "перукарня",
+              "хімчистка",
+              "автосервіс",
+              "майстерня"
+            ]
+          },
+          {
+            "name": "Банк (Banking)",
+            "items": [
+              "рахунок",
+              "переказ",
+              "кредит",
+              "банкомат"
+            ]
+          },
+          {
+            "name": "Оплата (Payment)",
+            "items": [
+              "готівка",
+              "картка",
+              "знижка",
+              "здача"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2+",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "shopping",
+        "services",
+        "banking",
+        "customer-service"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A2+-76",
+    "level": "A2+",
+    "phase": "A2+.2",
+    "wordCount": 42,
+    "transliterationMode": "none",
+    "words": [
+      {
+        "id": "v-m76-001",
+        "uk": "супермаркет",
+        "translit": "/supɛrˈmɑrkɛt/",
+        "ipa": "supermarket",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-002",
+        "uk": "торговий центр",
+        "translit": "/torˈɦovɪj tsɛntr/",
+        "ipa": "shopping mall",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-003",
+        "uk": "ринок",
+        "translit": "/ˈrɪnok/",
+        "ipa": "market",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-004",
+        "uk": "універмаг",
+        "translit": "/unʲivɛrˈmɑɦ/",
+        "ipa": "department store",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-005",
+        "uk": "секонд-хенд",
+        "translit": "/sɛˈkond xɛnd/",
+        "ipa": "secondhand store",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-006",
+        "uk": "булочна",
+        "translit": "/buˈlotʃnɑ/",
+        "ipa": "bakery",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-007",
+        "uk": "кондитерська",
+        "translit": "/kondɪˈtɛrskɑ/",
+        "ipa": "confectionery",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-008",
+        "uk": "зоомагазин",
+        "translit": "/zoomɑɦɑˈzɪn/",
+        "ipa": "pet store",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-009",
+        "uk": "ювелірний магазин",
+        "translit": "/juvɛˈlʲirnɪj mɑɦɑˈzɪn/",
+        "ipa": "jewelry store",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-010",
+        "uk": "канцтовари",
+        "translit": "/kɑntstoˈvɑrɪ/",
+        "ipa": "stationery",
+        "en": "noun",
+        "pos": "pl"
+      },
+      {
+        "id": "v-m76-011",
+        "uk": "рахунок",
+        "translit": "/rɑˈxunok/",
+        "ipa": "account",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-012",
+        "uk": "картка",
+        "translit": "/ˈkɑrtkɑ/",
+        "ipa": "card",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-013",
+        "uk": "готівка",
+        "translit": "/ɦoˈtʲivkɑ/",
+        "ipa": "cash",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-014",
+        "uk": "переказ",
+        "translit": "/pɛrɛˈkɑz/",
+        "ipa": "transfer",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-015",
+        "uk": "вклад",
+        "translit": "/vklɑd/",
+        "ipa": "deposit",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-016",
+        "uk": "кредит",
+        "translit": "/krɛˈdɪt/",
+        "ipa": "credit, loan",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-017",
+        "uk": "відсоток",
+        "translit": "/vʲidˈsotok/",
+        "ipa": "interest rate",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-018",
+        "uk": "банкомат",
+        "translit": "/bɑnkoˈmɑt/",
+        "ipa": "ATM",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-019",
+        "uk": "валюта",
+        "translit": "/vɑˈlʲutɑ/",
+        "ipa": "currency",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-020",
+        "uk": "перукарня",
+        "translit": "/pɛruˈkɑrnʲɑ/",
+        "ipa": "hair salon",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-021",
+        "uk": "хімчистка",
+        "translit": "/xʲimˈtʃɪstkɑ/",
+        "ipa": "dry cleaner",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-022",
+        "uk": "майстерня",
+        "translit": "/mɑjˈstɛrnʲɑ/",
+        "ipa": "repair shop",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-023",
+        "uk": "автосервіс",
+        "translit": "/ɑvtosɛrˈvʲis/",
+        "ipa": "car service",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-024",
+        "uk": "ательє",
+        "translit": "/ɑtɛˈlʲjɛ/",
+        "ipa": "tailor shop",
+        "en": "noun",
+        "pos": "n"
+      },
+      {
+        "id": "v-m76-025",
+        "uk": "знижка",
+        "translit": "/ˈznɪʒkɑ/",
+        "ipa": "discount",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-026",
+        "uk": "акція",
+        "translit": "/ˈɑktsʲijɑ/",
+        "ipa": "sale, promotion",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-027",
+        "uk": "розпродаж",
+        "translit": "/rozpˈrodɑʒ/",
+        "ipa": "clearance sale",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-028",
+        "uk": "чек",
+        "translit": "/tʃɛk/",
+        "ipa": "receipt",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-029",
+        "uk": "здача",
+        "translit": "/ˈzdɑtʃɑ/",
+        "ipa": "change",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-030",
+        "uk": "передоплата",
+        "translit": "/pɛrɛdopˈlɑtɑ/",
+        "ipa": "prepayment",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-031",
+        "uk": "розстрочка",
+        "translit": "/rozˈstrotʃkɑ/",
+        "ipa": "installment",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-032",
+        "uk": "доставка",
+        "translit": "/dosˈtɑvkɑ/",
+        "ipa": "delivery",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-033",
+        "uk": "самовивіз",
+        "translit": "/sɑmovɪˈvʲiz/",
+        "ipa": "pickup",
+        "en": "noun",
+        "pos": "m"
+      },
+      {
+        "id": "v-m76-034",
+        "uk": "повернення",
+        "translit": "/povɛrˈnɛnʲːɑ/",
+        "ipa": "return",
+        "en": "noun",
+        "pos": "n"
+      },
+      {
+        "id": "v-m76-035",
+        "uk": "гарантія",
+        "translit": "/ɦɑˈrɑntʲijɑ/",
+        "ipa": "warranty",
+        "en": "noun",
+        "pos": "f"
+      },
+      {
+        "id": "v-m76-036",
+        "uk": "відстеження",
+        "translit": "/vʲidˈstɛʒɛnʲːɑ/",
+        "ipa": "tracking",
+        "en": "noun",
+        "pos": "n"
+      },
+      {
+        "id": "v-m76-037",
+        "uk": "замовляти",
+        "translit": "/zɑmovˈlʲɑtɪ/",
+        "ipa": "to order",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      },
+      {
+        "id": "v-m76-038",
+        "uk": "повертати",
+        "translit": "/povɛrˈtɑtɪ/",
+        "ipa": "to return",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      },
+      {
+        "id": "v-m76-039",
+        "uk": "обмінювати",
+        "translit": "/obmʲiˈnʲuvɑtɪ/",
+        "ipa": "to exchange",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      },
+      {
+        "id": "v-m76-040",
+        "uk": "бронювати",
+        "translit": "/broˈnʲuvɑtɪ/",
+        "ipa": "to book",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      },
+      {
+        "id": "v-m76-041",
+        "uk": "доставляти",
+        "translit": "/dostɑvˈlʲɑtɪ/",
+        "ipa": "to deliver",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      },
+      {
+        "id": "v-m76-042",
+        "uk": "скаржитися",
+        "translit": "/ˈskɑrʒɪtɪsʲɑ/",
+        "ipa": "to complain",
+        "en": "verb",
+        "pos": "-",
+        "gender": "impf"
+      }
+    ]
+  }
+}

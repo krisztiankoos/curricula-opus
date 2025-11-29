@@ -1,464 +1,463 @@
 ---
 module: 75
-title: "Review: Vocabulary Expansion"
-subtitle: "Consolidating Thematic Vocabulary"
+title: "Education & Learning Vocabulary"
+subtitle: "School, University, and Academic Life"
 level: A2+
-phase: A2+.3
+phase: A2+.2
 duration: 45
 transliteration: none
-tags: [review, vocabulary, thematic, consolidation]
+tags: [vocabulary, education, school, university, learning]
 objectives:
-  - Review all A2+ thematic vocabulary
-  - Practice cross-topic communication
-  - Consolidate key expressions
-  - Build confidence in topic discussions
+  - Learn education system vocabulary
+  - Describe academic subjects and activities
+  - Discuss learning and studying
+  - Navigate educational settings
 grammar:
-  - Topic-specific expressions
-  - Vocabulary collocations
-  - Cross-topic integration
+  - Education-related verbs (вчитися, навчатися)
+  - Academic titles and degrees
+  - School subject vocabulary
 ---
 
 # Lesson Content
 
 ## warm-up
 
-### Seven Topics, One Review
+### The World of Education
 
-In Modules 67-73, you expanded your vocabulary across seven life areas:
+You know "школа" and "університет." Let's expand your education vocabulary!
 
-1. 🍳 Food & Cooking
-2. 🏥 Health & Body
-3. 🏠 Home & Furniture
-4. 🌿 Nature & Weather
-5. 😊 Emotions & Personality
-6. 💼 Work & Professions
-7. 📱 Technology & Media
+**Levels:**
+- дитячий садок (kindergarten), школа (school), університет (university)
 
-Let's consolidate and connect them!
+**Activities:**
+- вчитися (to study), складати іспит (to take an exam)
 
-> 💡 **The Goal**
+> 💡 **Why This Matters**
 >
-> Move vocabulary from recognition to active use in real conversations!
+> Education vocabulary helps you discuss your background, support learners, and navigate academic settings.
 
 ## presentation
 
-### Food & Cooking Highlights (Module 67)
+### Education Levels
 
-**Key Vocabulary:**
-- Cooking verbs: варити, смажити, пекти, готувати
-- Taste: смачний, солоний, солодкий, гострий
-- Kitchen: каструля, сковорода, духовка
-- Dishes: борщ, вареники, деруни
+| Ukrainian | English |
+|-----------|---------|
+| дитячий садок | kindergarten |
+| початкова школа | elementary school |
+| середня школа | middle/high school |
+| гімназія | gymnasium (academic school) |
+| ліцей | lyceum |
+| коледж | college |
+| університет | university |
+| інститут | institute |
+| аспірантура | graduate school |
+| курси | courses |
 
-**Essential Phrases:**
-- Що на обід? - What's for lunch?
-- Смачного! - Bon appétit!
-- Смакує? - Does it taste good?
-- Я наївся. - I'm full.
+**Examples:**
+- Дитина ходить у **дитячий садок**. - The child goes to kindergarten.
+- Я закінчив **середню школу** у 2020. - I finished high school in 2020.
+- Він студент **університету**. - He's a university student.
+- Вона вступила до **аспірантури**. - She entered graduate school.
+- Ходжу на **курси** англійської. - I attend English courses.
 
-**Quick Check:** Can you order food, describe tastes, and give a simple recipe?
+> 🎭 **Culture Note: Ukrainian Education**
+>
+> Ukrainian education: 4 years початкова школа, 5 years базова середня, 3 years профільна середня. University is typically 4 years (бакалавр) + 2 years (магістр).
 
-### Health & Body Highlights (Module 68)
+### School Subjects
 
-**Key Vocabulary:**
-- Body parts: серце, легені, коліно, плече
-- Symptoms: температура, кашель, нежить, біль
-- Medical: лікар, аптека, рецепт, ліки
+| Ukrainian | English |
+|-----------|---------|
+| математика | mathematics |
+| українська мова | Ukrainian language |
+| англійська мова | English language |
+| література | literature |
+| історія | history |
+| географія | geography |
+| біологія | biology |
+| фізика | physics |
+| хімія | chemistry |
+| інформатика | computer science |
+| фізкультура | physical education |
+| музика | music |
+| мистецтво | art |
 
-**Essential Phrases:**
-- Болить голова. - I have a headache.
-- У мене температура. - I have a fever.
-- Де аптека? - Where's the pharmacy?
-- На що скаржитесь? - What are your complaints?
+**Examples:**
+- Мій улюблений предмет — **математика**. - My favorite subject is math.
+- **Історія** України цікава. - Ukrainian history is interesting.
+- Я не люблю **фізику**. - I don't like physics.
+- Сьогодні **фізкультура** і **музика**. - Today is PE and music.
+- **Інформатика** зараз важлива. - Computer science is important now.
 
-**Quick Check:** Can you describe symptoms and navigate a doctor visit?
+### University Terms
 
-### Home & Furniture Highlights (Module 69)
+| Ukrainian | English |
+|-----------|---------|
+| факультет | faculty, department |
+| спеціальність | major, specialty |
+| курс | year (of study) |
+| семестр | semester |
+| лекція | lecture |
+| семінар | seminar |
+| практика | internship, practice |
+| диплом | diploma |
+| ступінь | degree |
+| бакалавр | bachelor's |
+| магістр | master's |
+| доктор наук | PhD, doctorate |
 
-**Key Vocabulary:**
-- Furniture: диван, ліжко, шафа, стіл
-- Rooms: вітальня, спальня, кухня, ванна
-- Housing: квартира, поверх, балкон, ліфт
-- Actions: прибирати, пилососити, переїжджати
+**Examples:**
+- Який у тебе **факультет**? - What faculty are you in?
+- Моя **спеціальність** — економіка. - My major is economics.
+- Я на третьому **курсі**. - I'm in my third year.
+- Цей **семестр** складний. - This semester is hard.
+- Він захистив **диплом**. - He defended his diploma.
+- Вона отримала **ступінь** магістра. - She received a master's degree.
 
-**Essential Phrases:**
-- Застели ліжко! - Make the bed!
-- Квартира затишна. - The apartment is cozy.
-- На якому поверсі? - On which floor?
+### People in Education
 
-**Quick Check:** Can you describe your home and discuss housing?
+| Ukrainian | English |
+|-----------|---------|
+| учень / учениця | pupil (m/f) |
+| студент / студентка | student (m/f) |
+| вчитель / вчителька | teacher (m/f) |
+| викладач / викладачка | lecturer (m/f) |
+| професор / професорка | professor (m/f) |
+| декан | dean |
+| ректор | rector (president) |
+| однокласник | classmate (school) |
+| одногрупник | classmate (university) |
+| випускник | graduate |
 
-### Nature & Weather Highlights (Module 70)
+**Examples:**
+- **Учні** пишуть контрольну. - The pupils are writing a test.
+- **Студенти** слухають лекцію. - Students are listening to a lecture.
+- Наш **викладач** дуже суворий. - Our lecturer is very strict.
+- **Декан** факультету проводить збори. - The dean is holding a meeting.
+- Вона моя **однокласниця**. - She's my classmate.
 
-**Key Vocabulary:**
-- Weather: гроза, туман, спека, заметіль
-- Landscapes: гора, озеро, ліс, степ
-- Animals: вовк, лелека, бджола
-- Plants: дуб, береза, соняшник
+### Study Actions
 
-**Essential Phrases:**
-- Йде дощ. - It's raining.
-- Яка погода? - What's the weather?
-- Дме вітер. - The wind is blowing.
+| Imperfective | Perfective | Meaning |
+|--------------|------------|---------|
+| вчитися | навчитися | to study, learn |
+| навчатися | - | to be educated |
+| вивчати | вивчити | to study (subject) |
+| готуватися | підготуватися | to prepare |
+| складати | скласти | to take (exam) |
+| здавати | здати | to pass (exam) |
+| провалювати | провалити | to fail |
+| пропускати | пропустити | to miss (class) |
+| відвідувати | відвідати | to attend |
+| закінчувати | закінчити | to graduate |
 
-**Quick Check:** Can you discuss weather and describe nature?
+**Examples:**
+- Я **вчуся** в університеті. - I study at university.
+- Вона **вивчає** медицину. - She's studying medicine.
+- **Готуюся** до іспиту. - I'm preparing for the exam.
+- Він **склав** усі іспити. - He passed all exams.
+- Не **пропускай** заняття! - Don't miss classes!
+- Коли ти **закінчиш** університет? - When will you graduate?
 
-### Emotions & Personality Highlights (Module 71)
+### Exams & Grades
 
-**Key Vocabulary:**
-- Positive: щасливий, вдячний, задоволений
-- Negative: сумний, злий, розчарований
-- Traits: добрий, чесний, впертий, лінивий
+| Ukrainian | English |
+|-----------|---------|
+| іспит | exam |
+| залік | credit, pass/fail test |
+| контрольна робота | test, quiz |
+| домашнє завдання | homework |
+| оцінка | grade |
+| бал | point, score |
+| сесія | exam period |
+| перескладання | retake |
+| відмінник | excellent student |
+| двійка | failing grade (2) |
 
-**Essential Phrases:**
-- Мені сумно. - I feel sad.
-- Не хвилюйся! - Don't worry!
-- Вона добра людина. - She's a good person.
+**Examples:**
+- Завтра **іспит** з математики. - Tomorrow is the math exam.
+- Треба здати **залік**. - Need to pass the credit.
+- Зробив **домашнє завдання**? - Did you do the homework?
+- Яка твоя **оцінка**? - What's your grade?
+- **Сесія** починається в січні. - The exam period starts in January.
+- Він **відмінник** — завжди п'ятірки. - He's an excellent student — always A's.
 
-**Quick Check:** Can you express emotions and describe personalities?
+> 📝 **Note: Ukrainian Grading**
+>
+> Ukrainian schools use 1-12 scale. Universities often use 1-5 or ECTS (A-F). 12 (школа) or 5 (університет) = excellent.
 
-### Work & Professions Highlights (Module 72)
+### Learning Materials
 
-**Key Vocabulary:**
-- Professions: програміст, юрист, бухгалтер
-- Workplace: офіс, колега, відділ
-- Career: зарплата, співбесіда, резюме
+| Ukrainian | English |
+|-----------|---------|
+| підручник | textbook |
+| зошит | notebook |
+| конспект | notes, summary |
+| словник | dictionary |
+| довідник | reference book |
+| презентація | presentation |
+| реферат | essay, paper |
+| курсова робота | term paper |
+| дипломна робота | thesis |
 
-**Essential Phrases:**
-- Де ви працюєте? - Where do you work?
-- Яка ваша посада? - What's your position?
-- Я шукаю роботу. - I'm looking for a job.
-
-**Quick Check:** Can you discuss work and navigate job situations?
-
-### Technology & Media Highlights (Module 73)
-
-**Key Vocabulary:**
-- Devices: ноутбук, смартфон, навушники
-- Actions: завантажити, надіслати, видалити
-- Problems: не працює, зависло, повільно
-- Social: підписник, лайк, стрічка
-
-**Essential Phrases:**
-- Завантаж цей застосунок. - Download this app.
-- Інтернет не працює. - The internet doesn't work.
-- Надішли посилання. - Send the link.
-
-**Quick Check:** Can you discuss tech and solve basic problems?
+**Examples:**
+- Відкрий **підручник** на сторінці 50. - Open the textbook to page 50.
+- Записуй у **зошит**. - Write in your notebook.
+- Покажи свій **конспект**. - Show me your notes.
+- Перевір у **словнику**. - Check in the dictionary.
+- Треба написати **реферат**. - Need to write an essay.
+- Захистила **дипломну роботу**. - She defended her thesis.
 
 ## practice
 
-### Cross-Topic Connections
+### Match Education Level
 
-Match vocabulary to create natural sentences:
+1. дитячий садок → 3-6 років
+2. початкова школа → 6-10 років
+3. середня школа → 10-17 років
+4. університет → 17+ років
+5. аспірантура → після магістра
 
-1. Я **хворий** (health) + тому **працюю** з дому (work)
-   → Я хворий, тому працюю з дому.
+### Complete Education Dialogue
 
-2. На **кухні** (home) + **готую** борщ (food)
-   → На кухні готую борщ.
+**A:** Де ти ___? (study)
+→ вчишся / навчаєшся
 
-3. **Погода** погана (weather) + **настрій** сумний (emotions)
-   → Погода погана, настрій сумний.
+**B:** В ___ на економічному факультеті. (university)
+→ університеті
 
-4. **Ноутбук** зависло (tech) + не можу **працювати** (work)
-   → Ноутбук зависло, не можу працювати.
+**A:** На якому ___? (year)
+→ курсі
 
-### Topic Switch Challenge
+**B:** На другому. Зараз ___ до іспитів. (preparing)
+→ готуюся
 
-Answer questions from different topics:
+### Subject Preferences
 
-1. **Food:** Яка твоя улюблена страва?
-   → Моя улюблена страва — борщ зі сметаною.
+Match the description:
+1. Числа і формули → математика
+2. Минуле країн → історія
+3. Живі організми → біологія
+4. Комп'ютери → інформатика
+5. Спорт у школі → фізкультура
 
-2. **Health:** Як ти почуваєшся?
-   → Почуваюся добре, дякую.
+### Translate
 
-3. **Home:** Опиши свою квартиру.
-   → Маю затишну однокімнатну квартиру.
-
-4. **Weather:** Яка погода сьогодні?
-   → Сьогодні сонячно і тепло.
-
-5. **Emotions:** Чи ти щасливий?
-   → Загалом так, я задоволений життям.
-
-6. **Work:** Ким ти працюєш?
-   → Я працюю програмістом в IT-компанії.
-
-7. **Tech:** Які соцмережі використовуєш?
-   → Користуюся Телеграмом і Інстаграмом.
-
-### Situational Practice
-
-**Scenario 1: At a new apartment**
-Combine: Home + Tech + Emotions
-- "Квартира простора і світла. Wi-Fi швидкий. Я задоволений!"
-
-**Scenario 2: Sick day**
-Combine: Health + Work + Tech
-- "У мене застуда. Працюю віддалено. Надішли мені документи на email."
-
-**Scenario 3: Weekend plans**
-Combine: Weather + Nature + Food
-- "Якщо буде сонячно, підемо в похід. Візьму бутерброди і чай."
-
-### Vocabulary Categories Review
-
-**Complete the sets:**
-
-**Cooking verbs:** варити, смажити, ___, готувати
-→ пекти
-
-**Body parts:** голова, рука, нога, ___
-→ серце / коліно / плече
-
-**Furniture:** диван, ліжко, шафа, ___
-→ стіл / крісло
-
-**Weather:** дощ, сніг, вітер, ___
-→ гроза / туман
-
-**Emotions:** щасливий, сумний, злий, ___
-→ вдячний / схвильований
-
-**Professions:** лікар, вчитель, програміст, ___
-→ юрист / бухгалтер
-
-**Tech actions:** завантажити, надіслати, ___, видалити
-→ зберегти
-
-### Translate & Use
-
-1. I feel bad, I have a headache.
-   → Мені погано, болить голова.
-
-2. The apartment is cozy but small.
-   → Квартира затишна, але маленька.
-
-3. It's raining, I'm staying home.
-   → Йде дощ, залишаюся вдома.
-
-4. I'm happy with my new job.
-   → Я задоволений новою роботою.
-
-5. Download the app and send me the link.
-   → Завантаж застосунок і надішли мені посилання.
+1. I'm a third-year student. → Я студент третього курсу.
+2. She passed all exams. → Вона склала всі іспити.
+3. What's your major? → Яка твоя спеціальність?
+4. Don't miss classes! → Не пропускай заняття!
+5. I'm preparing for the exam. → Я готуюся до іспиту.
 
 ## production
 
-### A Day in Your Life
+### Describe Your Education
 
-Describe a typical day using ALL seven topics:
+**Example:** "Я закінчив школу у 2018 році. Потім вступив до університету на факультет інформатики. Зараз працюю, але планую магістратуру."
 
-**Example:**
-"Вранці я прокидаюся у своїй **затишній квартирі** (home). На **сніданок їм** вівсянку (food). Перевіряю **погоду** — сьогодні сонячно (weather). Я **почуваюся** добре (health/emotions), **їду на роботу** (work). Там перевіряю **email** і **месенджери** (tech). Увечері готую **вечерю** і дивлюся серіал."
+Describe your educational background.
 
-Your turn!
+### Study Advice
 
-### Problem-Solution Scenarios
+**Scenario:** Give advice to a student:
+- "Не пропускай лекції."
+- "Готуйся до іспитів заздалегідь."
+- "Веди конспекти."
+- "Питай викладача, якщо щось незрозуміло."
 
-Describe problems and solutions using vocabulary:
-
-1. **Tech problem:** Ноутбук не працює.
-   → Спробую перезавантажити. Якщо не допоможе, занесу в ремонт.
-
-2. **Health problem:** Боли горло і є кашель.
-   → Піду до лікаря. Візьму ліки в аптеці.
-
-3. **Home problem:** Кран тече.
-   → Викличу сантехніка. А поки покладу ганчірку.
-
-### Discussion Topics
+### Education Discussion
 
 Discuss these questions:
-
-1. **Food + Health:** Як їжа впливає на здоров'я?
-2. **Work + Tech:** Як технології змінили роботу?
-3. **Weather + Emotions:** Чи погода впливає на настрій?
-4. **Home + Work:** Які плюси і мінуси роботи з дому?
+- Яка освіта краща: онлайн чи офлайн?
+- Який предмет був найскладнішим?
+- Чи важливий диплом у сучасному світі?
 
 ---
 
 # Activities
 
-## match-up: Topic → Key Word
+## match-up: Term → Category
 
 | Left | Right |
 |------|-------|
-| Food | смачний |
-| Health | температура |
-| Home | квартира |
-| Weather | гроза |
-| Emotions | щасливий |
-| Work | зарплата |
-| Tech | завантажити |
+| математика | subject |
+| професор | person |
+| лекція | activity |
+| диплом | document |
+| університет | institution |
 
-## quiz: Vocabulary Review
+## quiz: Education Vocabulary
 
-> Test across all seven topics.
+> Choose the correct answer.
 
-1. "Смажити" relates to ___.
-   - [x] cooking
-   - [ ] health
-   - [ ] technology
-   - [ ] emotions
-   > Смажити = to fry.
+1. "Складати іспит" means ___.
+   - [x] to take an exam
+   - [ ] to pass an exam
+   - [ ] to fail an exam
+   - [ ] to prepare for an exam
+   > Складати = to take. Здати = to pass.
 
-2. "Застуда" is a ___ term.
-   - [x] health
-   - [ ] weather
-   - [ ] food
-   - [ ] work
-   > Застуда = cold (illness).
+2. A "факультет" is ___.
+   - [x] faculty/department
+   - [ ] semester
+   - [ ] lecture
+   - [ ] grade
+   > Факультет = faculty, department at university.
 
-3. "Затишний" describes ___.
-   - [x] a cozy home
-   - [ ] delicious food
-   - [ ] good weather
-   - [ ] a happy person
-   > Затишний = cozy.
+3. "Відмінник" is a student who ___.
+   - [x] gets excellent grades
+   - [ ] fails exams
+   - [ ] misses classes
+   - [ ] teaches others
+   > Відмінник = excellent student.
 
-4. "Гроза" is a ___ phenomenon.
-   - [x] weather
-   - [ ] tech
-   - [ ] health
-   - [ ] emotional
-   > Гроза = thunderstorm.
+4. "Курсова робота" is ___.
+   - [x] term paper
+   - [ ] homework
+   - [ ] final exam
+   - [ ] lecture notes
+   > Курсова робота = term paper.
 
-5. "Щедрий" is a ___ trait.
-   - [x] personality
-   - [ ] health
-   - [ ] weather
-   - [ ] work
-   > Щедрий = generous.
+5. The Ukrainian grading scale in schools is ___.
+   - [x] 1-12
+   - [ ] 1-5
+   - [ ] 1-10
+   - [ ] A-F
+   > Ukrainian schools use 1-12 scale.
 
-6. "Співбесіда" happens at ___.
-   - [x] job interview
-   - [ ] doctor's office
-   - [ ] restaurant
-   - [ ] tech store
-   > Співбесіда = job interview.
+6. "Навчатися" means ___.
+   - [x] to study, be educated
+   - [ ] to teach
+   - [ ] to graduate
+   - [ ] to fail
+   > Навчатися = to study, be in education.
 
-7. "Зависло" describes a ___ problem.
-   - [x] technology
-   - [ ] health
-   - [ ] weather
-   - [ ] home
-   > Зависло = froze (computer).
+## group-sort: By Category
 
-## group-sort: By Topic
+### Предмети (Subjects)
+- математика
+- історія
+- біологія
+- фізика
 
-### Їжа (Food)
-- смачний
-- варити
-- борщ
-- сметана
+### Люди (People)
+- студент
+- викладач
+- декан
+- однокласник
 
-### Здоров'я (Health)
-- температура
-- лікар
-- болить
-- аптека
+### Документи (Documents)
+- диплом
+- конспект
+- підручник
+- реферат
 
-### Природа (Nature)
-- гроза
-- гора
-- лелека
-- соняшник
-
-### Технології (Tech)
-- ноутбук
-- завантажити
-- пароль
-- Wi-Fi
+### Дії (Actions)
+- вчитися
+- складати
+- готуватися
+- закінчувати
 
 ---
 
 # Vocabulary
 
-This module reviews vocabulary from Modules 67-73. Selected highlights:
-
-**Food (Module 67):**
-смачний, солоний, варити, смажити, борщ, сметана
-
-**Health (Module 68):**
-болить, температура, лікар, аптека, застуда, ліки
-
-**Home (Module 69):**
-квартира, диван, затишний, прибирати, переїжджати
-
-**Nature (Module 70):**
-погода, гроза, туман, гора, ліс, соняшник, лелека
-
-**Emotions (Module 71):**
-щасливий, сумний, вдячний, добрий, впертий, хвилюватися
-
-**Work (Module 72):**
-робота, зарплата, колега, співбесіда, звільнитися
-
-**Tech (Module 73):**
-ноутбук, завантажити, надіслати, застосунок, підписник
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| дитячий садок | /dɪˈtʲɑtʃɪj sɑˈdok/ | kindergarten | noun | m | |
+| початкова школа | /potʃɑtˈkovɑ ˈʃkolɑ/ | elementary school | noun | f | |
+| гімназія | /ɦʲimˈnɑzʲijɑ/ | gymnasium | noun | f | |
+| ліцей | /lʲiˈtsɛj/ | lyceum | noun | m | |
+| аспірантура | /ɑspʲirɑnˈturɑ/ | graduate school | noun | f | |
+| математика | /mɑtɛˈmɑtɪkɑ/ | mathematics | noun | f | |
+| література | /lʲitɛrɑˈturɑ/ | literature | noun | f | |
+| історія | /isˈtorʲijɑ/ | history | noun | f | |
+| географія | /ɦɛoˈɦrɑfʲijɑ/ | geography | noun | f | |
+| біологія | /bʲioˈloɦʲijɑ/ | biology | noun | f | |
+| фізика | /ˈfʲizɪkɑ/ | physics | noun | f | |
+| хімія | /ˈxʲimʲijɑ/ | chemistry | noun | f | |
+| інформатика | /informɑˈtɪkɑ/ | computer science | noun | f | |
+| факультет | /fɑkulʲˈtɛt/ | faculty | noun | m | |
+| спеціальність | /spɛtsʲiˈɑlʲnʲistʲ/ | major, specialty | noun | f | |
+| семестр | /sɛˈmɛstr/ | semester | noun | m | |
+| лекція | /ˈlɛktsʲijɑ/ | lecture | noun | f | |
+| семінар | /sɛmʲiˈnɑr/ | seminar | noun | m | |
+| диплом | /dɪpˈlom/ | diploma | noun | m | |
+| ступінь | /ˈstupʲinʲ/ | degree | noun | m | |
+| бакалавр | /bɑkɑˈlɑvr/ | bachelor's | noun | m | |
+| магістр | /mɑˈɦʲistr/ | master's | noun | m | |
+| учень | /uˈtʃɛnʲ/ | pupil | noun | m | |
+| однокласник | /odnoˈklɑsnɪk/ | classmate (school) | noun | m | |
+| одногрупник | /odnoˈɦrupnɪk/ | classmate (uni) | noun | m | |
+| випускник | /ˈvɪpusknɪk/ | graduate | noun | m | |
+| декан | /dɛˈkɑn/ | dean | noun | m | |
+| ректор | /ˈrɛktor/ | rector | noun | m | |
+| іспит | /ˈispɪt/ | exam | noun | m | |
+| залік | /zɑˈlʲik/ | credit test | noun | m | |
+| оцінка | /oˈtsʲinkɑ/ | grade | noun | f | |
+| сесія | /ˈsɛsʲijɑ/ | exam period | noun | f | |
+| відмінник | /vʲidˈmʲinnɪk/ | excellent student | noun | m | |
+| підручник | /pʲidˈrutʃnɪk/ | textbook | noun | m | |
+| зошит | /ˈzoʃɪt/ | notebook | noun | m | |
+| конспект | /konˈspɛkt/ | notes | noun | m | |
+| реферат | /rɛfɛˈrɑt/ | essay | noun | m | |
+| курсова робота | /kurˈsovɑ roˈbotɑ/ | term paper | noun | f | |
+| дипломна робота | /dɪpˈlomnɑ roˈbotɑ/ | thesis | noun | f | |
+| вчитися | /vtʃɪˈtɪsʲɑ/ | to study | verb | - | impf |
+| вивчати | /vɪvˈtʃɑtɪ/ | to study (subj) | verb | - | impf |
+| складати | /sklɑˈdɑtɪ/ | to take (exam) | verb | - | impf |
+| здавати | /zdɑˈvɑtɪ/ | to pass | verb | - | impf |
+| пропускати | /propusˈkɑtɪ/ | to miss | verb | - | impf |
+| закінчувати | /zɑˈkʲintʃuvɑtɪ/ | to graduate | verb | - | impf |
 
 ---
 
 # Summary
 
-## A2+ Vocabulary Achievement
+## Education Levels
 
-**You've learned vocabulary for:**
-
-| Topic | Key Areas |
+| Level | Ukrainian |
 |-------|-----------|
-| Food | Cooking, tastes, recipes |
-| Health | Body, symptoms, medical |
-| Home | Rooms, furniture, housing |
-| Nature | Weather, landscapes, animals |
-| Emotions | Feelings, personality |
-| Work | Professions, career |
-| Tech | Devices, internet, social media |
+| Kindergarten | дитячий садок |
+| Elementary | початкова школа |
+| High school | середня школа |
+| University | університет |
+| Graduate | аспірантура |
 
-## Cross-Topic Skills
+## Key Subjects
 
-**You can now:**
-- Describe daily life activities
-- Discuss health and wellbeing
-- Navigate housing situations
-- Talk about nature and weather
-- Express emotions precisely
-- Discuss work and careers
-- Handle technology topics
+| Subject | Ukrainian |
+|---------|-----------|
+| Math | математика |
+| History | історія |
+| Biology | біологія |
+| Physics | фізика |
+| Computer science | інформатика |
 
-## Self-Assessment
+## Study Verbs
 
-Rate yourself (1-5) on each topic:
+| Action | Verb |
+|--------|------|
+| to study | вчитися |
+| to take exam | складати |
+| to pass | здати |
+| to fail | провалити |
+| to graduate | закінчити |
 
-| Topic | Understand | Speak |
-|-------|------------|-------|
-| Food | ___ | ___ |
-| Health | ___ | ___ |
-| Home | ___ | ___ |
-| Nature | ___ | ___ |
-| Emotions | ___ | ___ |
-| Work | ___ | ___ |
-| Tech | ___ | ___ |
+## University Terms
 
-Focus practice on lower-rated areas!
-
-## A2+ Complete!
-
-**Congratulations!** You've completed A2+.
-
-**Your vocabulary now includes:**
-- ~580 new words from A2+
-- ~1,400 total words (A1 + A2 + A2+)
-
-**Next step:** B1 level for more complex topics and grammar!
+| Term | Ukrainian |
+|------|-----------|
+| faculty | факультет |
+| major | спеціальність |
+| lecture | лекція |
+| semester | семестр |
+| diploma | диплом |
 
 > 💡 **Key Takeaways**
 >
-> - Seven topic areas = well-rounded vocabulary
-> - Connect topics for natural conversation
-> - Practice weakest areas more
-> - Use vocabulary actively, not just recognize it
-> - Ready for B1: more abstract and complex topics!
+> - вчитися = to study (general), вивчати = to study (specific subject)
+> - складати = to take exam, здати = to pass
+> - Ukrainian schools: 1-12 grading scale
+> - бакалавр (4 years) + магістр (2 years)
+> - сесія = exam period (twice a year)

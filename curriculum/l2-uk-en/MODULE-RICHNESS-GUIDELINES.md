@@ -437,8 +437,8 @@ Modules should be versioned:
 
 Track changes in module metadata:
 ```yaml
-version: 1.1
-last_updated: 2024-12-01
+version: 1.2
+last_updated: 2025-11-30
 changelog:
   - Fixed grammar error in example 3
   - Added video comprehension activity

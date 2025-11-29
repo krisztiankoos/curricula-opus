@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 76: Shopping & Services Vocabulary | Ukrainian A2+</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-75.html" class="module-nav-link">← Module 75</a>
+      <a href="index.html" class="module-nav-link">A2+ Index</a>
+      <a href="module-77.html" class="module-nav-link">Module 77 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 76: Shopping & Services Vocabulary</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">A2+ · A2+.2</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Shopping & Services Vocabulary</h2>
+        <p style="color:var(--text-muted)">Stores, Banking, and Customer Service</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### Beyond Basic Shopping</h4><div class="md-content"><p>You know how to buy things. Now let's master services!</p>
+<p><strong>Services:</strong></p>
+<ul>
+<li>банк (bank), пошта (post office), хімчистка (dry cleaner)</li>
+</ul>
+<p><strong>Actions:</strong></p>
+<ul>
+<li>замовляти (to order), бронювати (to book), скаржитися (to complain)</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Why This Matters</strong></p>
+  <p>Service vocabulary helps you handle everyday situations — banking, appointments, returns, and complaints.</p>
+</blockquote></div></div><div class="canvas-note"><h4>### Types of Stores</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>магазин</td>
+<td>store, shop</td>
+</tr>
+<tr>
+<td>супермаркет</td>
+<td>supermarket</td>
+</tr>
+<tr>
+<td>гіпермаркет</td>
+<td>hypermarket</td>
+</tr>
+<tr>
+<td>торговий центр</td>
+<td>shopping mall</td>
+</tr>
+<tr>
+<td>ринок</td>
+<td>market</td>
+</tr>
+<tr>
+<td>кіоск</td>
+<td>kiosk</td>
+</tr>
+<tr>
+<td>бутік</td>
+<td>boutique</td>
+</tr>
+<tr>
+<td>універмаг</td>
+<td>department store</td>
+</tr>
+<tr>
+<td>секонд-хенд</td>
+<td>secondhand store</td>
+</tr>
+<tr>
+<td>інтернет-магазин</td>
+<td>online store</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Їду в <strong>супермаркет</strong>. - I'm going to the supermarket.</li>
+<li>У <strong>торговому центрі</strong> багато магазинів. - The mall has many stores.</li>
+<li>На <strong>ринку</strong> дешевше. - It's cheaper at the market.</li>
+<li>Замовляю в <strong>інтернет-магазині</strong>. - I order from an online store.</li>
+<li>Знайшов у <strong>секонд-хенді</strong>. - I found it at a secondhand store.</li>
+</ul></div></div><div class="canvas-note"><h4>Specialized Stores</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>продуктовий магазин</td>
+<td>grocery store</td>
+</tr>
+<tr>
+<td>булочна</td>
+<td>bakery</td>
+</tr>
+<tr>
+<td>м'ясний магазин</td>
+<td>butcher shop</td>
+</tr>
+<tr>
+<td>овочевий магазин</td>
+<td>greengrocer</td>
+</tr>
+<tr>
+<td>кондитерська</td>
+<td>confectionery</td>
+</tr>
+<tr>
+<td>господарчий магазин</td>
+<td>hardware store</td>
+</tr>
+<tr>
+<td>канцтовари</td>
+<td>stationery store</td>
+</tr>
+<tr>
+<td>зоомагазин</td>
+<td>pet store</td>
+</tr>
+<tr>
+<td>квітковий магазин</td>
+<td>flower shop</td>
+</tr>
+<tr>
+<td>ювелірний магазин</td>
+<td>jewelry store</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Хліб купую в <strong>булочній</strong>. - I buy bread at the bakery.</li>
+<li>Корм для кота в <strong>зоомагазині</strong>. - Cat food is at the pet store.</li>
+<li>Подарунок куплю в <strong>ювелірному</strong>. - I'll buy a gift at the jewelry store.</li>
+<li>Ручки і зошити — в <strong>канцтоварах</strong>. - Pens and notebooks — at the stationery store.</li>
+</ul></div></div><div class="canvas-note"><h4>Banking Services</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>банк</td>
+<td>bank</td>
+</tr>
+<tr>
+<td>рахунок</td>
+<td>account</td>
+</tr>
+<tr>
+<td>картка</td>
+<td>card</td>
+</tr>
+<tr>
+<td>готівка</td>
+<td>cash</td>
+</tr>
+<tr>
+<td>переказ</td>
+<td>transfer</td>
+</tr>
+<tr>
+<td>вклад</td>
+<td>deposit</td>
+</tr>
+<tr>
+<td>кредит</td>
+<td>credit, loan</td>
+</tr>
+<tr>
+<td>відсоток</td>
+<td>interest rate</td>
+</tr>
+<tr>
+<td>банкомат</td>
+<td>ATM</td>
+</tr>
+<tr>
+<td>каса</td>
+<td>cashier, teller</td>
+</tr>
+<tr>
+<td>валюта</td>
+<td>currency</td>
+</tr>
+<tr>
+<td>обмін валют</td>
+<td>currency exchange</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Відкрити <strong>рахунок</strong> у банку. - To open a bank account.</li>
+<li>Платити <strong>карткою</strong> чи <strong>готівкою</strong>? - Pay by card or cash?</li>
+<li>Зробити <strong>переказ</strong> на інший рахунок. - To make a transfer to another account.</li>
+<li>Який <strong>відсоток</strong> по <strong>вкладу</strong>? - What's the interest rate on the deposit?</li>
+<li><strong>Банкомат</strong> не працює. - The ATM doesn't work.</li>
+<li>Де тут <strong>обмін валют</strong>? - Where's currency exchange here?</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Card Payments</strong></p>
+  <p>Ukraine widely uses contactless payments. "Прикладіть картку" = Tap your card. "Введіть пін-код" = Enter your PIN.</p>
+</blockquote></div></div><div class="canvas-note"><h4>Service Businesses</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>перукарня</td>
+<td>hair salon</td>
+</tr>
+<tr>
+<td>барбершоп</td>
+<td>barbershop</td>
+</tr>
+<tr>
+<td>салон краси</td>
+<td>beauty salon</td>
+</tr>
+<tr>
+<td>хімчистка</td>
+<td>dry cleaner</td>
+</tr>
+<tr>
+<td>пральня</td>
+<td>laundry</td>
+</tr>
+<tr>
+<td>майстерня</td>
+<td>repair shop</td>
+</tr>
+<tr>
+<td>автосервіс</td>
+<td>car service</td>
+</tr>
+<tr>
+<td>ательє</td>
+<td>tailor shop</td>
+</tr>
+<tr>
+<td>копіцентр</td>
+<td>copy center</td>
+</tr>
+<tr>
+<td>туристичне агентство</td>
+<td>travel agency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Записався в <strong>перукарню</strong>. - I made an appointment at the salon.</li>
+<li>Костюм у <strong>хімчистці</strong>. - The suit is at the dry cleaner.</li>
+<li>Телефон у <strong>майстерні</strong> на ремонті. - The phone is at the repair shop.</li>
+<li>Машина в <strong>автосервісі</strong>. - The car is at the service center.</li>
+<li>Замовив квитки в <strong>туристичному агентстві</strong>. - I booked tickets at the travel agency.</li>
+</ul></div></div><div class="canvas-note"><h4>Shopping Verbs</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Imperfective</th>
+<th>Perfective</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>купувати</td>
+<td>купити</td>
+<td>to buy</td>
+</tr>
+<tr>
+<td>продавати</td>
+<td>продати</td>
+<td>to sell</td>
+</tr>
+<tr>
+<td>замовляти</td>
+<td>замовити</td>
+<td>to order</td>
+</tr>
+<tr>
+<td>повертати</td>
+<td>повернути</td>
+<td>to return</td>
+</tr>
+<tr>
+<td>обмінювати</td>
+<td>обміняти</td>
+<td>to exchange</td>
+</tr>
+<tr>
+<td>оплачувати</td>
+<td>оплатити</td>
+<td>to pay for</td>
+</tr>
+<tr>
+<td>бронювати</td>
+<td>забронювати</td>
+<td>to book</td>
+</tr>
+<tr>
+<td>доставляти</td>
+<td>доставити</td>
+<td>to deliver</td>
+</tr>
+<tr>
+<td>рекламувати</td>
+<td>-</td>
+<td>to advertise</td>
+</tr>
+<tr>
+<td>економити</td>
+<td>зекономити</td>
+<td>to save (money)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Хочу <strong>повернути</strong> цей товар. - I want to return this item.</li>
+<li>Можна <strong>обміняти</strong> на інший розмір? - Can I exchange for another size?</li>
+<li><strong>Замовив</strong> онлайн з доставкою. - I ordered online with delivery.</li>
+<li>Треба <strong>забронювати</strong> заздалегідь. - Need to book in advance.</li>
+<li>Як можна <strong>зекономити</strong>? - How can I save money?</li>
+</ul></div></div><div class="canvas-note"><h4>Customer Service Phrases</h4><div class="md-content"><p><strong>Making requests:</strong></p>
+<ul>
+<li>Будь ласка, допоможіть мені. - Please help me.</li>
+<li>Чи можна…? - Is it possible to…?</li>
+<li>Я хотів/хотіла б… - I would like…</li>
+<li>Мені потрібно… - I need…</li>
+</ul>
+<p><strong>Complaints:</strong></p>
+<ul>
+<li>Я хочу скаржитися. - I want to complain.</li>
+<li>Це не те, що я замовляв. - This isn't what I ordered.</li>
+<li>Товар зіпсований. - The product is damaged.</li>
+<li>Хочу повернути гроші. - I want a refund.</li>
+<li>Покличте менеджера. - Call the manager.</li>
+</ul>
+<p><strong>Responses:</strong></p>
+<ul>
+<li>Вибачте за незручності. - Sorry for the inconvenience.</li>
+<li>Зараз все виправимо. - We'll fix it right away.</li>
+<li>Ось ваша здача. - Here's your change.</li>
+<li>Дякую за покупку! - Thank you for your purchase!</li>
+</ul></div></div><div class="canvas-note"><h4>Payment Terms</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ціна</td>
+<td>price</td>
+</tr>
+<tr>
+<td>вартість</td>
+<td>cost, value</td>
+</tr>
+<tr>
+<td>знижка</td>
+<td>discount</td>
+</tr>
+<tr>
+<td>акція</td>
+<td>sale, promotion</td>
+</tr>
+<tr>
+<td>розпродаж</td>
+<td>sale (clearance)</td>
+</tr>
+<tr>
+<td>чек</td>
+<td>receipt</td>
+</tr>
+<tr>
+<td>здача</td>
+<td>change</td>
+</tr>
+<tr>
+<td>оплата</td>
+<td>payment</td>
+</tr>
+<tr>
+<td>передоплата</td>
+<td>prepayment</td>
+</tr>
+<tr>
+<td>розстрочка</td>
+<td>installment plan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Яка <strong>ціна</strong>? - What's the price?</li>
+<li>Є <strong>знижка</strong> для студентів? - Is there a student discount?</li>
+<li>Зараз <strong>акція</strong> — мінус 30%. - There's a sale now — 30% off.</li>
+<li>Збережіть <strong>чек</strong>. - Keep the receipt.</li>
+<li>Можна в <strong>розстрочку</strong>? - Can I pay in installments?</li>
+<li>Ось ваша <strong>здача</strong>. - Here's your change.</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Note: Bargaining</strong></p>
+  <p>Bargaining is common at markets (ринки) in Ukraine. "Чи можна дешевше?" (Can it be cheaper?) is acceptable. Not appropriate in regular stores.</p>
+</blockquote></div></div><div class="canvas-note"><h4>Delivery & Returns</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>доставка</td>
+<td>delivery</td>
+</tr>
+<tr>
+<td>самовивіз</td>
+<td>pickup</td>
+</tr>
+<tr>
+<td>повернення</td>
+<td>return</td>
+</tr>
+<tr>
+<td>гарантія</td>
+<td>warranty</td>
+</tr>
+<tr>
+<td>термін доставки</td>
+<td>delivery time</td>
+</tr>
+<tr>
+<td>відстеження</td>
+<td>tracking</td>
+</tr>
+<tr>
+<td>пакування</td>
+<td>packaging</td>
+</tr>
+<tr>
+<td>накладений платіж</td>
+<td>cash on delivery</td>
+</tr>
+<tr>
+<td>безкоштовна доставка</td>
+<td>free delivery</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Доставка</strong> за 2-3 дні. - Delivery in 2-3 days.</li>
+<li>Оберу <strong>самовивіз</strong> — так швидше. - I'll choose pickup — it's faster.</li>
+<li><strong>Гарантія</strong> два роки. - Two-year warranty.</li>
+<li>Надішліть номер <strong>відстеження</strong>. - Send the tracking number.</li>
+<li><strong>Безкоштовна доставка</strong> від 500 гривень. - Free delivery over 500 hryvnia.</li>
+<li>Платити при отриманні — <strong>накладений платіж</strong>. - Pay on receipt — cash on delivery.</li>
+</ul></div></div><div class="canvas-note"><h4>### Match Store to Product</h4><div class="md-content"><ol>
+<li>булочна → хліб</li>
+<li>зоомагазин → корм для тварин</li>
+<li>канцтовари → ручки, зошити</li>
+<li>ювелірний → прикраси</li>
+<li>господарчий → інструменти</li>
+</ol></div></div><div class="canvas-note"><h4>Complete Shopping Dialogue</h4><div class="md-content"><p><strong>Покупець:</strong> Чи можна ___ цей товар? (return)<br />
+→ повернути</p>
+<p><strong>Продавець:</strong> Так, маєте ___? (receipt)<br />
+→ чек</p>
+<p><strong>Покупець:</strong> Ось. Товар ___. (damaged)<br />
+→ зіпсований</p>
+<p><strong>Продавець:</strong> Вибачте. ___ гроші чи обмін? (refund)<br />
+→ Повернути</p></div></div><div class="canvas-note"><h4>Banking Terms</h4><div class="md-content"><p>Match the action:</p>
+<ol>
+<li>Зняти гроші → банкомат</li>
+<li>Відкрити рахунок → банк</li>
+<li>Обміняти долари → обмін валют</li>
+<li>Зробити переказ → онлайн-банкінг</li>
+<li>Отримати кредит → банк</li>
+</ol></div></div><div class="canvas-note"><h4>Translate</h4><div class="md-content"><ol>
+<li>I want to return this. → Я хочу це повернути.</li>
+<li>Is there a discount? → Є знижка?</li>
+<li>I'll pay by card. → Я оплачу карткою.</li>
+<li>Keep the receipt. → Збережіть чек.</li>
+<li>Free delivery over 500 UAH. → Безкоштовна доставка від 500 грн.</li>
+</ol></div></div><div class="canvas-note"><h4>### Shopping Problem</h4><div class="md-content"><p><strong>Scenario:</strong> You bought something online but received the wrong item.</p>
+<ul>
+<li>"Я замовив…, але отримав…"</li>
+<li>"Хочу повернути і отримати правильний товар."</li>
+<li>"Як це зробити?"</li>
+</ul></div></div><div class="canvas-note"><h4>Service Appointment</h4><div class="md-content"><p><strong>Scenario:</strong> Make a salon appointment.</p>
+<ul>
+<li>"Хочу записатися на стрижку."</li>
+<li>"Коли є вільний час?"</li>
+<li>"Скільки це коштує?"</li>
+</ul></div></div><div class="canvas-note"><h4>Bank Situation</h4><div class="md-content"><p><strong>Scenario:</strong> You need to open a bank account.</p>
+<ul>
+<li>"Хочу відкрити рахунок."</li>
+<li>"Які документи потрібні?"</li>
+<li>"Чи є мобільний додаток?"</li>
+</ul></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Service → Place</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">стрижка</div><div class="match-item" data-pair="1">чистка одягу</div><div class="match-item" data-pair="2">обмін валют</div><div class="match-item" data-pair="3">ремонт авто</div><div class="match-item" data-pair="4">квитки</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">хімчистка</div><div class="match-item" data-pair="3">автосервіс</div><div class="match-item" data-pair="4">туристичне агентство</div><div class="match-item" data-pair="0">перукарня</div><div class="match-item" data-pair="2">банк</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Shopping & Services</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>By Category</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/16</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Магазини</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Послуги</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Банк</h4><div class="sort-items"></div></div><div class="sort-group undefined" data-group="undefined"><h4>Оплата</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (42)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 76 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"стрижка","right":"перукарня"},{"left":"чистка одягу","right":"хімчистка"},{"left":"обмін валют","right":"банк"},{"left":"ремонт авто","right":"автосервіс"},{"left":"квитки","right":"туристичне агентство"}];
+    const quizData=[{"question":"\"Повернути товар\" means ___.","options":["to return an item","to buy an item","to exchange an item","to order an item"],"correctIndex":0,"explanation":"Повернути = to return."},{"question":"\"Здача\" is ___.","options":["change (money back)","receipt","discount","price"],"correctIndex":0,"explanation":"Здача = change you get back."},{"question":"\"Накладений платіж\" means ___.","options":["cash on delivery","prepayment","card payment","bank transfer"],"correctIndex":0,"explanation":"Pay when you receive the item."},{"question":"Where do you exchange currency?","options":["обмін валют","банкомат","каса","магазин"],"correctIndex":0,"explanation":"Обмін валют = currency exchange."},{"question":"\"Розпродаж\" is ___.","options":["clearance sale","new arrival","full price","luxury item"],"correctIndex":0,"explanation":"Розпродаж = sale, clearance."},{"question":"\"Самовивіз\" means ___.","options":["pickup (collect yourself)","delivery","return","exchange"],"correctIndex":0,"explanation":"Самовивіз = self-pickup."}];
+    const sortData={"true-friends":["супермаркет","булочна","ювелірний","зоомагазин"],"false-friends":["перукарня","хімчистка","автосервіс","майстерня"],"new-letters":["рахунок","переказ","кредит","банкомат"],"undefined":["готівка","картка","знижка","здача"]};
+    const vocabData=[{"uk":"супермаркет","translit":"/supɛrˈmɑrkɛt/","en":"noun","note":""},{"uk":"торговий центр","translit":"/torˈɦovɪj tsɛntr/","en":"noun","note":""},{"uk":"ринок","translit":"/ˈrɪnok/","en":"noun","note":""},{"uk":"універмаг","translit":"/unʲivɛrˈmɑɦ/","en":"noun","note":""},{"uk":"секонд-хенд","translit":"/sɛˈkond xɛnd/","en":"noun","note":""},{"uk":"булочна","translit":"/buˈlotʃnɑ/","en":"noun","note":""},{"uk":"кондитерська","translit":"/kondɪˈtɛrskɑ/","en":"noun","note":""},{"uk":"зоомагазин","translit":"/zoomɑɦɑˈzɪn/","en":"noun","note":""},{"uk":"ювелірний магазин","translit":"/juvɛˈlʲirnɪj mɑɦɑˈzɪn/","en":"noun","note":""},{"uk":"канцтовари","translit":"/kɑntstoˈvɑrɪ/","en":"noun","note":""},{"uk":"рахунок","translit":"/rɑˈxunok/","en":"noun","note":""},{"uk":"картка","translit":"/ˈkɑrtkɑ/","en":"noun","note":""},{"uk":"готівка","translit":"/ɦoˈtʲivkɑ/","en":"noun","note":""},{"uk":"переказ","translit":"/pɛrɛˈkɑz/","en":"noun","note":""},{"uk":"вклад","translit":"/vklɑd/","en":"noun","note":""},{"uk":"кредит","translit":"/krɛˈdɪt/","en":"noun","note":""},{"uk":"відсоток","translit":"/vʲidˈsotok/","en":"noun","note":""},{"uk":"банкомат","translit":"/bɑnkoˈmɑt/","en":"noun","note":""},{"uk":"валюта","translit":"/vɑˈlʲutɑ/","en":"noun","note":""},{"uk":"перукарня","translit":"/pɛruˈkɑrnʲɑ/","en":"noun","note":""},{"uk":"хімчистка","translit":"/xʲimˈtʃɪstkɑ/","en":"noun","note":""},{"uk":"майстерня","translit":"/mɑjˈstɛrnʲɑ/","en":"noun","note":""},{"uk":"автосервіс","translit":"/ɑvtosɛrˈvʲis/","en":"noun","note":""},{"uk":"ательє","translit":"/ɑtɛˈlʲjɛ/","en":"noun","note":""},{"uk":"знижка","translit":"/ˈznɪʒkɑ/","en":"noun","note":""},{"uk":"акція","translit":"/ˈɑktsʲijɑ/","en":"noun","note":""},{"uk":"розпродаж","translit":"/rozpˈrodɑʒ/","en":"noun","note":""},{"uk":"чек","translit":"/tʃɛk/","en":"noun","note":""},{"uk":"здача","translit":"/ˈzdɑtʃɑ/","en":"noun","note":""},{"uk":"передоплата","translit":"/pɛrɛdopˈlɑtɑ/","en":"noun","note":""},{"uk":"розстрочка","translit":"/rozˈstrotʃkɑ/","en":"noun","note":""},{"uk":"доставка","translit":"/dosˈtɑvkɑ/","en":"noun","note":""},{"uk":"самовивіз","translit":"/sɑmovɪˈvʲiz/","en":"noun","note":""},{"uk":"повернення","translit":"/povɛrˈnɛnʲːɑ/","en":"noun","note":""},{"uk":"гарантія","translit":"/ɦɑˈrɑntʲijɑ/","en":"noun","note":""},{"uk":"відстеження","translit":"/vʲidˈstɛʒɛnʲːɑ/","en":"noun","note":""},{"uk":"замовляти","translit":"/zɑmovˈlʲɑtɪ/","en":"verb","note":""},{"uk":"повертати","translit":"/povɛrˈtɑtɪ/","en":"verb","note":""},{"uk":"обмінювати","translit":"/obmʲiˈnʲuvɑtɪ/","en":"verb","note":""},{"uk":"бронювати","translit":"/broˈnʲuvɑtɪ/","en":"verb","note":""},{"uk":"доставляти","translit":"/dostɑvˈlʲɑtɪ/","en":"verb","note":""},{"uk":"скаржитися","translit":"/ˈskɑrʒɪtɪsʲɑ/","en":"verb","note":""}];
+    const totalSort=16;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

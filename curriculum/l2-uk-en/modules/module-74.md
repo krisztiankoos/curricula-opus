@@ -1,391 +1,468 @@
 ---
 module: 74
-title: "Review: Word Formation"
-subtitle: "Consolidating Prefixes, Suffixes, and Root Families"
+title: "Hobbies & Leisure Vocabulary"
+subtitle: "Free Time Activities and Entertainment"
 level: A2+
-phase: A2+.3
+phase: A2+.2
 duration: 45
 transliteration: none
-tags: [review, word-formation, prefixes, suffixes, roots]
+tags: [vocabulary, hobbies, leisure, entertainment, free-time]
 objectives:
-  - Review all A2+ word formation patterns
-  - Practice prefix identification and meaning
-  - Consolidate suffix knowledge
-  - Apply root family understanding
+  - Learn hobby and leisure vocabulary
+  - Describe free time activities
+  - Discuss entertainment preferences
+  - Talk about games and pastimes
 grammar:
-  - Motion and action prefixes
-  - Noun and adjective suffixes
-  - Root families and derivation
+  - Hobby-related verbs (займатися, захоплюватися)
+  - Frequency expressions with hobbies
+  - Preference structures
 ---
 
 # Lesson Content
 
 ## warm-up
 
-### Word Formation Master Review
+### What Do You Do for Fun?
 
-You've learned powerful tools for building Ukrainian vocabulary. Let's consolidate!
+You know basic activities. Now let's talk about hobbies and leisure!
 
-**Three key skills:**
-1. **Prefixes** change meaning (direction, completion, etc.)
-2. **Suffixes** change word type (verb → noun, noun → adjective)
-3. **Roots** connect word families (one root = many words)
+**Hobbies:**
+- хобі (hobby), захоплення (passion), дозвілля (leisure)
 
-> 💡 **The Goal**
+**Activities:**
+- грати в ігри (to play games), збирати (to collect), майструвати (to craft)
+
+> 💡 **Why This Matters**
 >
-> By recognizing word parts, you can understand new words without a dictionary!
+> Talking about hobbies helps you connect with people and share what you love!
 
 ## presentation
 
-### Prefix Review (Modules 61-62)
+### Types of Hobbies
 
-**Motion Prefixes:**
+| Ukrainian | English |
+|-----------|---------|
+| хобі | hobby |
+| захоплення | passion, enthusiasm |
+| дозвілля | leisure |
+| вільний час | free time |
+| розвага | entertainment |
+| відпочинок | rest, relaxation |
 
-| Prefix | Meaning | Example |
-|--------|---------|---------|
-| при- | arrival | приходити (to arrive) |
-| ви- | exit, out | виходити (to exit) |
-| в-/у- | entry, in | входити (to enter) |
-| за- | behind, start | заходити (to drop by) |
-| пере- | across | переходити (to cross) |
-| від- | away from | відходити (to depart) |
-| до- | up to | доходити (to reach) |
-| об- | around | обходити (to go around) |
+**Examples:**
+- Яке твоє **хобі**? - What's your hobby?
+- У **вільний час** я читаю. - In my free time I read.
+- Це моє головне **захоплення**. - This is my main passion.
+- Потрібен **відпочинок**! - I need rest!
 
-**Action Prefixes:**
+### Creative Hobbies
 
-| Prefix | Meaning | Example |
-|--------|---------|---------|
-| на- | onto, accumulation | написати (to write) |
-| по- | beginning, brief | почитати (to read a bit) |
-| з-/с- | completion, together | зробити (to make/do) |
-| про- | through | прочитати (to read through) |
-| роз- | apart, spreading | розказати (to tell) |
+| Ukrainian | English |
+|-----------|---------|
+| малювання | drawing, painting |
+| фотографія | photography |
+| в'язання | knitting |
+| шиття | sewing |
+| вишивання | embroidery |
+| ліплення | sculpting, modeling |
+| рукоділля | handicrafts |
+| кулінарія | cooking (as hobby) |
+| садівництво | gardening |
+| флористика | floristry |
 
-**Quick Test:**
-- при- + йти = прийти (to come, arrive)
-- ви- + йти = вийти (to go out)
-- пере- + йти = перейти (to cross)
+**Examples:**
+- Я захоплююся **малюванням**. - I'm passionate about drawing.
+- **Фотографія** — це мистецтво. - Photography is an art.
+- Бабуся вміє **в'язати**. - Grandma can knit.
+- **Вишивання** — українська традиція. - Embroidery is a Ukrainian tradition.
+- Люблю **садівництво** влітку. - I love gardening in summer.
 
-### Suffix Review (Modules 63-64)
+> 🎭 **Culture Note: Вишивання**
+>
+> Ukrainian embroidery (вишивка) is a UNESCO-recognized cultural heritage. Traditional patterns have regional meanings.
 
-**Noun Suffixes:**
+### Collecting Hobbies
 
-| Suffix | Creates | Example |
-|--------|---------|---------|
-| -ння/-ття | verbal noun | читання (reading) |
-| -ість | abstract quality | можливість (possibility) |
-| -ство/-цтво | state, realm | мистецтво (art) |
-| -ач/-ник | agent (person) | читач (reader), робітник (worker) |
-| -ок/-ець | result, object | початок (beginning) |
+| Ukrainian | English |
+|-----------|---------|
+| колекціонування | collecting |
+| колекція | collection |
+| марки | stamps |
+| монети | coins |
+| антикваріат | antiques |
+| вінілові платівки | vinyl records |
+| комікси | comics |
+| фігурки | figurines |
+| листівки | postcards |
 
-**Adjective Suffixes:**
+**Examples:**
+- Він **колекціонує** марки. - He collects stamps.
+- Моя **колекція** монет велика. - My coin collection is large.
+- Шукаю рідкісні **вінілові платівки**. - I'm looking for rare vinyl records.
+- Це цінний **антикваріат**. - This is valuable antique.
 
-| Suffix | Creates | Example |
-|--------|---------|---------|
-| -ний/-ній | general relation | річний (annual) |
-| -ський | belonging, origin | міський (urban) |
-| -овий | type, material | книжковий (book-related) |
-| -ливий | tendency | щасливий (happy) |
-| -истий | abundance | кам'янистий (rocky) |
-| -ів/-ин | possessive | батьків (father's) |
+### Games & Puzzles
 
-**Quick Test:**
-- читати → читання (verbal noun)
-- місто → міський (adjective)
-- щастя → щасливий (adjective)
+| Ukrainian | English |
+|-----------|---------|
+| гра | game |
+| настільна гра | board game |
+| відеогра | video game |
+| карти | cards |
+| шахи | chess |
+| шашки | checkers |
+| пазл | puzzle |
+| кросворд | crossword |
+| судоку | sudoku |
+| головоломка | brain teaser |
 
-### Root Family Review (Modules 65-66)
+**Examples:**
+- Граємо в **настільну гру**? - Shall we play a board game?
+- Я граю в **шахи** онлайн. - I play chess online.
+- **Відеоігри** — це не тільки для дітей. - Video games aren't just for kids.
+- Люблю розгадувати **кросворди**. - I love solving crosswords.
+- Цей **пазл** на 1000 деталей. - This puzzle has 1000 pieces.
 
-**Ten Key Roots:**
+> ⚡ **Pro Tip: Грати в / на**
+>
+> Грати в + accusative for games: грати в шахи, грати в футбол. Грати на + locative for instruments: грати на гітарі.
 
-| Root | Meaning | Words |
-|------|---------|-------|
-| -уч-/-вч- | learning | учень, вчитель, наука |
-| -роб- | work | робота, виробництво |
-| -пис- | writing | писати, підпис |
-| -чит- | reading | читати, читач |
-| -говор-/-мов- | speech | мова, розмова |
-| -ход-/-хід- | walking | вхід, вихід, похід |
-| -їзд- | riding | поїзд, поїздка |
-| -бач- | seeing | бачити, побачення |
-| -слух- | hearing | слухати, слухняний |
-| -знат-/-знай- | knowing | знання, знайомий |
+### Outdoor Activities
 
-**Quick Test:**
-- вхід contains root -хід- (going)
-- поїздка contains root -їзд- (riding)
-- побачення contains root -бач- (seeing)
+| Ukrainian | English |
+|-----------|---------|
+| похід | hike, trip |
+| кемпінг | camping |
+| риболовля | fishing |
+| полювання | hunting |
+| альпінізм | mountaineering |
+| велопрогулянка | bike ride |
+| пікнік | picnic |
+| спостереження за птахами | birdwatching |
+| збирання грибів | mushroom picking |
 
-### Combining All Skills
+**Examples:**
+- Ідемо в **похід** у Карпати. - We're going hiking in the Carpathians.
+- **Риболовля** — це релакс. - Fishing is relaxing.
+- Люблю **велопрогулянки** вихідними. - I love bike rides on weekends.
+- Восени збираємо **гриби**. - In autumn we pick mushrooms.
+- Організуємо **пікнік** у парку. - Let's organize a picnic in the park.
 
-**Analyzing complex words:**
+> 🎭 **Culture Note: Збирання грибів**
+>
+> Mushroom picking is a beloved Ukrainian tradition. Families go to forests in autumn to collect їстівні гриби (edible mushrooms).
 
-**приїзд** (arrival by vehicle)
-- при- = arrival
-- -їзд- = riding
-- = arrival (by vehicle)
+### Entertainment
 
-**навчання** (education)
-- на- = onto, towards
-- -вч- = learning
-- -ання = verbal noun suffix
-- = education, learning process
+| Ukrainian | English |
+|-----------|---------|
+| кіно | cinema |
+| концерт | concert |
+| театр | theater |
+| виставка | exhibition |
+| фестиваль | festival |
+| караоке | karaoke |
+| боулінг | bowling |
+| більярд | billiards |
+| квест | escape room, quest |
+| парк розваг | amusement park |
 
-**міський** (urban)
-- міст- = city (from місто)
-- -ський = belonging to
-- = belonging to city, urban
+**Examples:**
+- Підемо в **кіно** ввечері? - Shall we go to the cinema tonight?
+- Купив квитки на **концерт**. - I bought concert tickets.
+- Цікава **виставка** в музеї. - There's an interesting exhibition at the museum.
+- Любиш **караоке**? - Do you like karaoke?
+- **Квести** зараз популярні. - Escape rooms are popular now.
 
-**книжковий** (book-related)
-- книжк- = book (from книга)
-- -овий = type/material
-- = book-related
+### Hobby Verbs
+
+| Imperfective | Perfective | Meaning |
+|--------------|------------|---------|
+| займатися | зайнятися | to do, engage in |
+| захоплюватися | захопитися | to be passionate about |
+| грати | пограти / зіграти | to play |
+| збирати | зібрати | to collect |
+| малювати | намалювати | to draw, paint |
+| в'язати | зв'язати | to knit |
+| шити | пошити | to sew |
+| майструвати | змайструвати | to craft |
+| фотографувати | сфотографувати | to photograph |
+
+**Examples:**
+- Чим ти **займаєшся** у вільний час? - What do you do in your free time?
+- Я **захоплююся** фотографією. - I'm passionate about photography.
+- Діти **грають** у настільні ігри. - The kids are playing board games.
+- Вона **збирає** старі листівки. - She collects old postcards.
+- Він **майструє** меблі. - He crafts furniture.
+
+### Talking About Hobbies
+
+**Asking:**
+- Яке у тебе хобі? - What's your hobby?
+- Чим захоплюєшся? - What are you into?
+- Що робиш у вільний час? - What do you do in your free time?
+- Ти граєш у...? - Do you play...?
+
+**Answering:**
+- Моє хобі — це... - My hobby is...
+- Я захоплююся... - I'm passionate about...
+- Люблю... - I love...
+- У вільний час я... - In my free time I...
+
+**Frequency:**
+- щодня (every day), часто (often), іноді (sometimes)
+- рідко (rarely), ніколи (never)
+- раз на тиждень (once a week)
 
 ## practice
 
-### Prefix Identification
+### Match Hobby to Category
 
-Identify the prefix and its meaning:
+1. малювання → творчі (creative)
+2. шахи → ігри (games)
+3. риболовля → активний відпочинок (outdoor)
+4. колекціонування марок → збирання (collecting)
+5. караоке → розваги (entertainment)
 
-1. **приїхати** → при- (arrival) + їхати = to arrive (by vehicle)
-2. **вийти** → ви- (out) + йти = to exit
-3. **переробити** → пере- (re-) + робити = to remake
-4. **написати** → на- (completion) + писати = to write (completed)
-5. **розказати** → роз- (out, spreading) + казати = to tell
+### Complete Hobby Dialogue
 
-### Suffix Identification
+**A:** Яке у тебе ___? (hobby)
+→ хобі
 
-Identify the suffix and what it creates:
+**B:** Я захоплююся ___. (photography)
+→ фотографією
 
-1. **читання** → чита- + -ння (verbal noun) = reading
-2. **можливість** → можлив- + -ість (abstract quality) = possibility
-3. **письменник** → письмен- + -ник (agent) = writer
-4. **міський** → міськ- + -ий (adjective) = urban
-5. **щасливий** → щас- + -ливий (tendency) = happy
+**A:** Як часто ___? (do you photograph)
+→ фотографуєш
 
-### Root Identification
+**B:** Майже ___. (every day)
+→ щодня
 
-Identify the root and meaning:
+**A:** Покажеш свої ___? (photos)
+→ фото / фотографії
 
-1. **виробництво** → -роб- (work) = production
-2. **прочитати** → -чит- (read) = to read through
-3. **розмова** → -мов- (speech) = conversation
-4. **перехід** → -хід- (going) = crossing
-5. **дізнатися** → -знат- (know) = to find out
+### Form Sentences
 
-### Build Words
+1. Я / захоплюватися / малювання
+   → Я захоплююся малюванням.
 
-Create words using these parts:
+2. Вони / грати / шахи / щовечора
+   → Вони грають у шахи щовечора.
 
-1. за- + -роб- + -ляти = **заробляти** (to earn)
-2. пере- + -пис- + -увати = **переписувати** (to rewrite)
-3. на- + -вч- + -ання = **навчання** (education)
-4. ви- + -хід- = **вихід** (exit)
-5. до- + -мов- + -итися = **домовитися** (to agree)
+3. Ми / піти / похід / наступний тиждень
+   → Ми підемо в похід наступного тижня.
 
-### Analyze Complex Words
+4. Вона / збирати / марки / з дитинства
+   → Вона збирає марки з дитинства.
 
-Break down these words:
+### Translate
 
-1. **відповідальність**
-   - від-повід-аль-н-ість
-   - від- = from + response + -ність = quality
-   - = responsibility
-
-2. **виробництво**
-   - ви-роб-ниц-тво
-   - ви- = out + work + -ство = state
-   - = production
-
-3. **передбачення**
-   - перед-бач-ення
-   - перед- = before + see + -ення = noun
-   - = prediction
-
-### Translate Using Word Formation
-
-1. To earn money → заробляти гроші (за- + роб-)
-2. The entrance is here → вхід тут (в- + хід-)
-3. I found out the truth → Я дізнався правду (ді- + знат-)
-4. Reading is useful → Читання корисне (-чит- + -ання)
-5. Urban transport → Міський транспорт (-ськ- from місто)
+1. What do you do in your free time? → Що ти робиш у вільний час?
+2. I'm passionate about gardening. → Я захоплююся садівництвом.
+3. Let's play a board game. → Давай пограємо в настільну гру.
+4. She collects old coins. → Вона колекціонує старі монети.
+5. Do you like hiking? → Ти любиш походи?
 
 ## production
 
-### Word Family Challenge
+### Describe Your Hobbies
 
-Choose a root and create as many words as possible:
+**Example:** "Моє головне хобі — фотографія. Я фотографую природу і міста. Також люблю настільні ігри — граю з друзями щотижня."
 
-**Root -пис- (write):**
-- писати (to write)
-- писання (writing)
-- підпис (signature)
-- переписати (to rewrite)
-- письменник (writer)
-- записка (note)
-- описати (to describe)
+Describe your hobbies and how often you do them.
 
-### Explain Word Meanings
+### Hobby Recommendation
 
-Explain these words using their parts:
+**Scenario:** A friend is bored and asks for hobby suggestions.
+- "Спробуй малювання — це дуже релаксує."
+- "Може, почнеш колекціонувати щось?"
+- "Походи в гори — це здорово!"
 
-1. **відходити** - "від-" (away) + "-ход-" (go) = to depart, walk away
-2. **неслухняний** - "не-" (not) + "-слух-" (listen) + "-няний" = not listening, disobedient
-3. **книжковий** - "книжк-" (book) + "-овий" (type) = related to books
+### Weekend Plans
 
-### Create Sentences
-
-Use word formation knowledge to complete:
-
-1. Де ___ (entrance)? А де ___ (exit)?
-   → вхід, вихід
-
-2. Він ___ (writer), вона ___ (reader).
-   → письменник, читачка
-
-3. ___ (urban) життя дуже ___ (busy).
-   → міське, зайняте
+Describe your ideal weekend activities:
+- "У суботу піду на виставку."
+- "Увечері граємо в настільні ігри."
+- "У неділю — похід за місто."
 
 ---
 
 # Activities
 
-## match-up: Prefix → Meaning
+## match-up: Hobby → Type
 
 | Left | Right |
 |------|-------|
-| при- | arrival |
-| ви- | exit, out |
-| пере- | across |
-| роз- | apart |
-| за- | behind, start |
+| в'язання | creative |
+| шахи | game |
+| кемпінг | outdoor |
+| марки | collecting |
+| концерт | entertainment |
 
-## quiz: Word Formation Review
+## quiz: Hobbies & Leisure
 
-> Test your word formation knowledge.
+> Choose the correct answer.
 
-1. The prefix in "виходити" means ___.
-   - [x] out, exit
-   - [ ] in, enter
-   - [ ] across
-   - [ ] arrival
-   > Ви- = out, exit.
+1. "Захоплюватися" means ___.
+   - [x] to be passionate about
+   - [ ] to collect
+   - [ ] to play
+   - [ ] to rest
+   > Захоплюватися = to be passionate about.
 
-2. The suffix "-ість" creates ___.
-   - [x] abstract quality nouns
-   - [ ] verbs
-   - [ ] agent nouns
-   - [ ] adjectives
-   > -ість creates feminine abstract nouns.
+2. "Настільна гра" is ___.
+   - [x] board game
+   - [ ] video game
+   - [ ] card game
+   - [ ] puzzle
+   > Настільна гра = board game.
 
-3. Words with root "-роб-" relate to ___.
-   - [x] work
-   - [ ] reading
-   - [ ] speaking
-   - [ ] walking
-   > -роб- = work (робота, робити).
+3. Traditional Ukrainian handicraft is ___.
+   - [x] вишивання
+   - [ ] в'язання
+   - [ ] шиття
+   - [ ] ліплення
+   > Вишивання (embroidery) is Ukrainian cultural heritage.
 
-4. "Читач" uses the suffix ___.
-   - [x] -ач (agent)
-   - [ ] -ість (quality)
-   - [ ] -ння (verbal noun)
-   - [ ] -ський (belonging)
-   > -ач creates agent nouns.
+4. "Збирання грибів" means ___.
+   - [x] mushroom picking
+   - [ ] berry picking
+   - [ ] flower picking
+   - [ ] wood gathering
+   > Збирання грибів = mushroom picking.
 
-5. "Міський" comes from ___.
-   - [x] місто (city)
-   - [ ] місяць (month)
-   - [ ] місце (place)
-   - [ ] місія (mission)
-   > Місто → міський.
+5. "Квест" in modern usage is ___.
+   - [x] escape room
+   - [ ] video game
+   - [ ] board game
+   - [ ] puzzle
+   > Квест = escape room (quest game).
 
-6. The root in "навчання" is ___.
-   - [x] -вч-/-уч- (learning)
-   - [ ] -ння (suffix)
-   - [ ] на- (prefix)
-   - [ ] -ан- (connector)
-   > Root -вч- means learning.
+6. "Чим захоплюєшся?" asks about ___.
+   - [x] your hobbies/interests
+   - [ ] your job
+   - [ ] your family
+   - [ ] your plans
+   > It asks what you're passionate about.
 
-## group-sort: By Pattern
+## group-sort: By Category
 
-### Motion Prefixes
-- при- (arrival)
-- ви- (exit)
-- пере- (across)
-- в- (enter)
+### Творчі (Creative)
+- малювання
+- фотографія
+- в'язання
+- вишивання
 
-### Noun Suffixes
-- -ння/-ття
-- -ість
-- -ство
-- -ач/-ник
+### Ігри (Games)
+- шахи
+- настільні ігри
+- відеоігри
+- пазли
 
-### Adjective Suffixes
-- -ний/-ній
-- -ський
-- -овий
-- -ливий
+### Активний відпочинок (Outdoor)
+- похід
+- риболовля
+- велопрогулянка
+- кемпінг
+
+### Збирання (Collecting)
+- марки
+- монети
+- вінілові платівки
+- антикваріат
 
 ---
 
 # Vocabulary
 
-This module reviews vocabulary from Modules 61-66. Key items:
-
-| Word | IPA | English | Components |
-|------|-----|---------|------------|
-| приходити | /prɪˈxodɪtɪ/ | to arrive | при- + ход- |
-| виходити | /vɪˈxodɪtɪ/ | to exit | ви- + ход- |
-| переходити | /pɛrɛˈxodɪtɪ/ | to cross | пере- + ход- |
-| читання | /tʃɪˈtɑnʲːɑ/ | reading | чит- + -ання |
-| можливість | /moʒˈlɪvʲistʲ/ | possibility | можлив- + -ість |
-| письменник | /pɪsʲˈmɛnːɪk/ | writer | письм- + -енник |
-| міський | /ˈmʲiskɪj/ | urban | міст- + -ський |
-| книжковий | /knɪʒˈkovɪj/ | book (adj) | книжк- + -овий |
-| навчання | /nɑvˈtʃɑnʲːɑ/ | education | на- + вч- + -ання |
-| робітник | /roˈbʲitnɪk/ | worker | робіт- + -ник |
-| розмова | /rozˈmovɑ/ | conversation | роз- + мов- |
-| поїздка | /poˈjizdkɑ/ | trip | по- + їзд- + -ка |
-| побачення | /pobɑˈtʃɛnʲːɑ/ | meeting | по- + бач- + -ення |
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| хобі | /ˈxobʲi/ | hobby | noun | n | indecl |
+| захоплення | /zɑˈxoplɛnʲːɑ/ | passion, enthusiasm | noun | n | |
+| дозвілля | /doˈzvʲilʲːɑ/ | leisure | noun | n | |
+| розвага | /rozˈvɑɦɑ/ | entertainment | noun | f | |
+| відпочинок | /vʲidpoˈtʃɪnok/ | rest, relaxation | noun | m | |
+| малювання | /mɑlʲuˈvɑnʲːɑ/ | drawing, painting | noun | n | |
+| фотографія | /fotoɦrɑˈfʲijɑ/ | photography | noun | f | |
+| в'язання | /vʲjɑˈzɑnʲːɑ/ | knitting | noun | n | |
+| шиття | /ʃɪtʲˈtʲɑ/ | sewing | noun | n | |
+| вишивання | /vɪʃɪˈvɑnʲːɑ/ | embroidery | noun | n | |
+| рукоділля | /rukodʲiˈlʲːɑ/ | handicrafts | noun | n | |
+| садівництво | /sɑdʲivˈnɪtstvo/ | gardening | noun | n | |
+| колекціонування | /kolɛktsʲionuˈvɑnʲːɑ/ | collecting | noun | n | |
+| колекція | /koˈlɛktsʲijɑ/ | collection | noun | f | |
+| марка | /ˈmɑrkɑ/ | stamp | noun | f | |
+| монета | /moˈnɛtɑ/ | coin | noun | f | |
+| антикваріат | /ɑntɪkvɑrʲiˈɑt/ | antiques | noun | m | |
+| настільна гра | /nɑˈstʲilʲnɑ ɦrɑ/ | board game | noun | f | |
+| відеогра | /vʲidɛoˈɦrɑ/ | video game | noun | f | |
+| шахи | /ˈʃɑxɪ/ | chess | noun | pl | |
+| шашки | /ˈʃɑʃkɪ/ | checkers | noun | pl | |
+| пазл | /pɑzl/ | puzzle | noun | m | |
+| кросворд | /krosˈvord/ | crossword | noun | m | |
+| головоломка | /ɦolovoˈlomkɑ/ | brain teaser | noun | f | |
+| похід | /poˈxʲid/ | hike, trip | noun | m | |
+| кемпінг | /ˈkɛmpʲinɦ/ | camping | noun | m | |
+| риболовля | /rɪboˈlovlʲɑ/ | fishing | noun | f | |
+| велопрогулянка | /vɛloproɦuˈlʲɑnkɑ/ | bike ride | noun | f | |
+| пікнік | /pʲikˈnʲik/ | picnic | noun | m | |
+| концерт | /konˈtsɛrt/ | concert | noun | m | |
+| виставка | /ˈvɪstɑvkɑ/ | exhibition | noun | f | |
+| фестиваль | /fɛstɪˈvɑlʲ/ | festival | noun | m | |
+| караоке | /kɑrɑˈokɛ/ | karaoke | noun | n | indecl |
+| квест | /kvɛst/ | escape room | noun | m | |
+| займатися | /zɑjˈmɑtɪsʲɑ/ | to engage in | verb | - | impf |
+| захоплюватися | /zɑxopˈlʲuvɑtɪsʲɑ/ | to be passionate | verb | - | impf |
+| збирати | /zbɪˈrɑtɪ/ | to collect | verb | - | impf |
+| малювати | /mɑlʲuˈvɑtɪ/ | to draw, paint | verb | - | impf |
+| в'язати | /vʲjɑˈzɑtɪ/ | to knit | verb | - | impf |
+| майструвати | /mɑjstruˈvɑtɪ/ | to craft | verb | - | impf |
+| фотографувати | /fotoɦrɑfuˈvɑtɪ/ | to photograph | verb | - | impf |
 
 ---
 
 # Summary
 
-## Word Formation Strategy
+## Hobby Categories
 
-**When you see an unknown word:**
+| Category | Examples |
+|----------|----------|
+| Creative | малювання, фотографія, в'язання |
+| Games | шахи, настільні ігри, пазли |
+| Outdoor | походи, риболовля, кемпінг |
+| Collecting | марки, монети, антикваріат |
+| Entertainment | кіно, концерти, квести |
 
-1. **Find the root** - What's the core meaning?
-2. **Identify prefixes** - What direction/modification?
-3. **Identify suffixes** - What type of word (noun/adj/verb)?
-4. **Combine meanings** - Build the full meaning!
+## Key Verbs
 
-## Key Patterns
+| Action | Verb |
+|--------|------|
+| to do (hobby) | займатися |
+| to be into | захоплюватися |
+| to play | грати |
+| to collect | збирати / колекціонувати |
+| to craft | майструвати |
 
-**Prefixes change meaning:**
-- при-/ви-/пере- + ходити = arrive/exit/cross
+## Asking About Hobbies
 
-**Suffixes change word type:**
-- читати → читання (verb → noun)
-- місто → міський (noun → adjective)
+| Question | Ukrainian |
+|----------|-----------|
+| What's your hobby? | Яке у тебе хобі? |
+| What are you into? | Чим захоплюєшся? |
+| What do you do for fun? | Що робиш у вільний час? |
 
-**Roots connect families:**
-- -роб-: робота, робити, виробництво, заробляти
+## Cultural Hobbies
 
-## Self-Check Questions
-
-Can you:
-- ✓ Identify prefixes and their meanings?
-- ✓ Recognize what suffixes create?
-- ✓ Connect words through common roots?
-- ✓ Analyze unfamiliar words using their parts?
+| Hobby | Ukrainian |
+|-------|-----------|
+| embroidery | вишивання |
+| mushroom picking | збирання грибів |
+| folk crafts | рукоділля |
 
 > 💡 **Key Takeaways**
 >
-> - Word formation is your vocabulary multiplier
-> - Prefixes: direction & modification
-> - Suffixes: word type & meaning shift
-> - Roots: word family connections
-> - One root = 10+ related words!
+> - займатися + instrumental for activities
+> - захоплюватися + instrumental for passions
+> - грати в + acc (games), грати на + loc (instruments)
+> - вишивання = traditional Ukrainian embroidery
+> - квест = escape room (modern usage)

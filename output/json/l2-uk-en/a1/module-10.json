@@ -1,0 +1,418 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A1-10",
+    "moduleId": "mod-uk-A1-10",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A1",
+    "phase": "A1.2",
+    "moduleNumber": 10,
+    "title": "Checkpoint: First Contact",
+    "subtitle": "A1.1 Review",
+    "description": "Review all A1.1 content (Modules 1-9)",
+    "objectives": [
+      "Review all A1.1 content (Modules 1-9)",
+      "Assess alphabet reading skills",
+      "Test verb conjugation knowledge",
+      "Practice integrated skills"
+    ],
+    "grammarFocus": [
+      "Review: Cyrillic alphabet",
+      "Review: Noun gender",
+      "Review: Verb conjugation (Class I & II)",
+      "Review: Questions & negation",
+      "Review: Numbers 0-100"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "full",
+    "tags": [
+      "review",
+      "assessment",
+      "checkpoint"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### How Far You've Come!\n\nCongratulations! You've completed A1.1 - the first phase of your Ukrainian journey. Let's review everything you've learned in Modules 1-9:\n\n✅ **The Cyrillic Code** - All 33 letters\n✅ **Noun Gender** - Masculine, feminine, neuter\n✅ **Pronouns** - Я, ти, він, вона, воно, ми, ви, вони\n✅ **Demonstratives** - Цей, ця, це, ці\n✅ **Verbs** - Class I and Class II conjugation\n✅ **Questions** - Чи, що, хто, де, куди, коли, чому, як\n✅ **Negation** - Не, ніхто, ніщо, ніколи\n✅ **Numbers** - 0-100\n\n> 💡 **Did You Know?**\n>\n> By completing A1.1, you can already:\n> - Read any Ukrainian word (even if you don't know what it means)\n> - Introduce yourself\n> - Ask and answer basic questions\n> - Count and talk about prices\n> - Form basic sentences in present tense\n>\n> That's real progress!"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Alphabet Review\n\n**True Friends (same look & sound):** А Е І О К М Т\n\n**False Friends (look Latin, different sound):** В=V, Н=N, Р=R, С=S, У=U, Х=KH\n\n**Unique Letters:** Г=H, Ґ=G, Ж=ZH, Ш=SH, Щ=SHCH, Ч=CH, Ц=TS\n\n**Iotated Vowels:** Є=YE, Ї=YI, Ю=YU, Я=YA\n\n**Special:** И=short i, Й=Y consonant, Ь=soft sign (no sound)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Gender Quick Check\n\n| Ending | Gender | Example |\n|--------|--------|---------|\n| Consonant | Masculine | стіл, студент |\n| -а, -я | Feminine | книга, земля |\n| -о, -е | Neuter | вікно, море |\n| -ь after ч/ш/щ | Feminine | ніч, річ |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Verb Patterns\n\n**Class I (-ати/-яти):** читаю, чита**є**ш, чита**є**, чита**є**мо, чита**є**те, читають\n\n**Class II (-ити/-іти):** говорю, говор**и**ш, говор**и**ть, говор**и**мо, говор**и**те, говорять\n\n**Key difference:** -є- (Class I) vs -и- (Class II)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Question Formation\n\n**Yes/No:** Чи ти читаєш? / Ти читаєш? ↗\n\n**Wh-questions:** Що? Хто? Де? Куди? Коли? Чому? Як? Скільки?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Negation\n\n- Simple: Я **не** знаю.\n- Double: Я **ні**чого **не** знаю.\n- Negative words: ніхто, ніщо, ніде, ніколи"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Numbers\n\n- 1-10: один, два, три, чотири, п'ять, шість, сім, вісім, дев'ять, десять\n- Teens: одинадцять... дев'ятнадцять\n- Tens: двадцять, тридцять, **сорок**, п'ятдесят... **дев'яносто**, сто\n\n> 🎯 **Self-Assessment Checklist**\n>\n> Can you...\n> - [ ] Read Cyrillic without hesitation?\n> - [ ] Identify noun genders by endings?\n> - [ ] Conjugate -ати and -ити verbs?\n> - [ ] Form questions with Чи and question words?\n> - [ ] Use double negatives correctly?\n> - [ ] Count from 0 to 100?\n> - [ ] Say basic prices in гривні?"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-10-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Integrated Reading\n\nRead and translate:\n1. Це моя книга. Вона нова.\n2. Чи ти говориш українською?\n3. Я нічого не знаю про це.\n4. Скільки коштує ця сумка?\n5. Двадцять п'ять гривень."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Quick Conjugation\n\nComplete:\n- читати: я ___, ти ___, він ___\n- говорити: я ___, ти ___, вона ___\n- робити: я ___, ми ___, вони ___"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Gender Sorting\n\nClassify: стіл, книга, вікно, ніч, море, день, земля, молоко"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-10-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-10-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Self-Introduction\n\nWrite/say about yourself:\n- Привіт! Я ___ (name).\n- Я з ___ (country).\n- Я ___ (profession/student).\n- Я говорю ___ (languages).\n- Мені ___ років. (age)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Mini Dialogue\n\nPractice:\nA: Привіт! Як тебе звати?\nB: Привіт! Мене звати ___. А тебе?\nA: Мене звати ___. Ти студент?\nB: Так / Ні, я ___."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A1-10-quiz",
+      "type": "quiz",
+      "title": "Comprehensive A1.1 Review",
+      "description": "Test your knowledge of Modules 1-9.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Test your knowledge of Modules 1-9.",
+        "questions": [
+          {
+            "question": "1. What sound does the letter В make?",
+            "options": [
+              "V (as in \"van\")",
+              "B (as in \"boy\")",
+              "W (as in \"water\")",
+              "F (as in \"fan\")"
+            ],
+            "correctIndex": 0,
+            "explanation": "В is a \"False Friend\" - looks like B but sounds like V."
+          },
+          {
+            "question": "What gender is \"вікно\" (window)?",
+            "options": [
+              "Neuter",
+              "Masculine",
+              "Feminine",
+              "Plural"
+            ],
+            "correctIndex": 0,
+            "explanation": "Вікно ends in -о, which indicates neuter gender."
+          },
+          {
+            "question": "How do you conjugate \"читати\" for \"ми\"?",
+            "options": [
+              "читаємо",
+              "читаємо",
+              "читаєте",
+              "читають"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ми + Class I verb = -ємо ending."
+          },
+          {
+            "question": "How do you conjugate \"говорити\" for \"вони\"?",
+            "options": [
+              "говорять",
+              "говорють",
+              "говорять",
+              "говорить"
+            ],
+            "correctIndex": 0,
+            "explanation": "Вони + Class II verb = -ять ending."
+          },
+          {
+            "question": "How do you say \"I don't understand anything\"?",
+            "options": [
+              "Я нічого не розумію.",
+              "Я не розумію нічого.",
+              "Я не розумію.",
+              "Я нічого розумію."
+            ],
+            "correctIndex": 0,
+            "explanation": "Double negative required: нічого + не розумію."
+          },
+          {
+            "question": "What is 43 in Ukrainian?",
+            "options": [
+              "сорок три",
+              "чотиридесят три",
+              "чотири три",
+              "сороки три"
+            ],
+            "correctIndex": 0,
+            "explanation": "40 = сорок (irregular), 3 = три."
+          },
+          {
+            "question": "Which form is correct: \"5 books\"?",
+            "options": [
+              "п'ять книг",
+              "п'ять книги",
+              "п'ять книга",
+              "п'яти книг"
+            ],
+            "correctIndex": 0,
+            "explanation": "5+ requires genitive plural: книг."
+          },
+          {
+            "question": "How do you ask \"Where are you going?\"",
+            "options": [
+              "Куди ти йдеш?",
+              "Де ти йдеш?",
+              "Як ти йдеш?",
+              "Що ти йдеш?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Куди = where to (direction)."
+          },
+          {
+            "question": "What is the unique Ukrainian letter that exists in no other language?",
+            "options": [
+              "Ї",
+              "Й",
+              "Щ",
+              "Ь"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ї (yi) exists only in Ukrainian."
+          },
+          {
+            "question": "How do you say \"This is my book\" (книга = feminine)?",
+            "options": [
+              "Це моя книга.",
+              "Це мій книга.",
+              "Це моє книга.",
+              "Це мої книга."
+            ],
+            "correctIndex": 0,
+            "explanation": "Книга is feminine, so мій → моя."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "review",
+        "assessment",
+        "checkpoint"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-10-matchup",
+      "type": "match-up",
+      "title": "Core Vocabulary",
+      "description": "Match Ukrainian to English.",
+      "content": {
+        "type": "match-up",
+        "instructions": "Match Ukrainian to English.",
+        "pairs": [
+          {
+            "left": "книга",
+            "right": "book"
+          },
+          {
+            "left": "вікно",
+            "right": "window"
+          },
+          {
+            "left": "говорити",
+            "right": "to speak"
+          },
+          {
+            "left": "читати",
+            "right": "to read"
+          },
+          {
+            "left": "знати",
+            "right": "to know"
+          },
+          {
+            "left": "скільки",
+            "right": "how much"
+          },
+          {
+            "left": "чому",
+            "right": "why"
+          },
+          {
+            "left": "завжди",
+            "right": "always"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "review",
+        "assessment",
+        "checkpoint"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-10-groupsort",
+      "type": "group-sort",
+      "title": "Grammar Categories",
+      "description": "Sort these items into their correct categories.",
+      "content": {
+        "type": "group-sort",
+        "instructions": "Sort these items into their correct categories.",
+        "groups": [
+          {
+            "name": "Class I Verbs",
+            "items": [
+              "читати",
+              "писати",
+              "знати",
+              "працювати"
+            ]
+          },
+          {
+            "name": "Class II Verbs",
+            "items": [
+              "говорити",
+              "робити",
+              "бачити",
+              "любити"
+            ]
+          },
+          {
+            "name": "Masculine Nouns",
+            "items": [
+              "стіл",
+              "студент",
+              "день"
+            ]
+          },
+          {
+            "name": "Feminine Nouns",
+            "items": [
+              "книга",
+              "ніч",
+              "земля"
+            ]
+          },
+          {
+            "name": "Neuter Nouns",
+            "items": [
+              "вікно",
+              "море",
+              "молоко"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "review",
+        "assessment",
+        "checkpoint"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A1-10",
+    "level": "A1",
+    "phase": "A1.2",
+    "wordCount": 0,
+    "transliterationMode": "full",
+    "words": []
+  }
+}

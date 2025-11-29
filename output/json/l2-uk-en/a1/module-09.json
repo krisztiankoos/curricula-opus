@@ -1,0 +1,629 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A1-09",
+    "moduleId": "mod-uk-A1-09",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A1",
+    "phase": "A1.2",
+    "moduleNumber": 9,
+    "title": "Numbers & Money",
+    "subtitle": "Counting & Currency",
+    "description": "Count from 0 to 100 in Ukrainian",
+    "objectives": [
+      "Count from 0 to 100 in Ukrainian",
+      "Understand Ukrainian currency (гривня)",
+      "Learn how numbers affect noun endings",
+      "Handle basic shopping transactions"
+    ],
+    "grammarFocus": [
+      "Cardinal numbers 0-100",
+      "Number-noun agreement (1, 2-4, 5+)",
+      "Gender agreement with один/одна/одне"
+    ],
+    "totalDuration": 50,
+    "transliterationMode": "full",
+    "tags": [
+      "vocabulary",
+      "numbers",
+      "money",
+      "practical"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Numbers Are Everywhere\n\nShopping, telling time, giving your phone number, ordering \"two coffees\" - numbers are essential! Ukrainian numbers have some twists English speakers need to know:\n\n1. **Один** (one) changes for gender: один, одна, одне\n2. Numbers 2-4 take a different noun form than 5+\n3. Some numbers have tricky pronunciation\n\n> 💡 **Did You Know?**\n>\n> Ukrainian uses a \"long scale\" thinking for large numbers, like most of Europe. But for everyday A1 purposes, we'll focus on 0-100 - enough for prices, time, ages, and phone numbers!"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Numbers 0-10\n\n| Number | Ukrainian | Transliteration |\n|--------|-----------|-----------------|\n| 0 | нуль | nul' |\n| 1 | один/одна/одне | odyn/odna/odne |\n| 2 | два/дві | dva/dvi |\n| 3 | три | try |\n| 4 | чотири | chotyry |\n| 5 | п'ять | pyat' |\n| 6 | шість | shist' |\n| 7 | сім | sim |\n| 8 | вісім | visim |\n| 9 | дев'ять | devyat' |\n| 10 | десять | desyat' |\n\n> ⚡ **Pro Tip: Gender of \"One\" and \"Two\"**\n>\n> **Один** changes for gender:\n> - один студент (one male student)\n> - одна книга (one book - feminine)\n> - одне вікно (one window - neuter)\n>\n> **Два/дві** changes only for feminine:\n> - два студенти, два вікна (masc/neut)\n> - дві книги, дві жінки (feminine)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Numbers 11-19\n\n| Number | Ukrainian | Pattern |\n|--------|-----------|---------|\n| 11 | одинадцять | один + на + дцять |\n| 12 | дванадцять | два + на + дцять |\n| 13 | тринадцять | три + на + дцять |\n| 14 | чотирнадцять | чотир + на + дцять |\n| 15 | п'ятнадцять | п'ят + на + дцять |\n| 16 | шістнадцять | шіст + на + дцять |\n| 17 | сімнадцять | сім + на + дцять |\n| 18 | вісімнадцять | вісім + на + дцять |\n| 19 | дев'ятнадцять | дев'ят + на + дцять |\n\n> 📜 **History Bite: The -надцять Pattern**\n>\n> The suffix **-надцять** comes from \"на десять\" (on ten). So \"одинадцять\" literally means \"one on ten\" = eleven. This pattern exists in most Slavic languages and even has a distant cousin in English: \"eleven\" comes from \"one left (over ten).\""
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Numbers 20-100\n\n| Number | Ukrainian | Transliteration |\n|--------|-----------|-----------------|\n| 20 | двадцять | dvadtsyat' |\n| 30 | тридцять | trydtsyat' |\n| 40 | сорок | sorok |\n| 50 | п'ятдесят | pyatdesyat |\n| 60 | шістдесят | shistdesyat |\n| 70 | сімдесят | simdesyat |\n| 80 | вісімдесят | visimdesyat |\n| 90 | дев'яносто | devyanosto |\n| 100 | сто | sto |\n\n**Compound numbers:** 21 = двадцять один, 35 = тридцять п'ять, 99 = дев'яносто дев'ять\n\n> 🎯 **Fun Fact: Why Is 40 Different?**\n>\n> Notice **сорок** (40) doesn't follow the pattern? This word comes from an old word for a bundle of 40 sable pelts - a standard trade unit in medieval times! It replaced the regular form \"четиридесят\" centuries ago. Similar quirks exist in French (quatre-vingts = 4×20) and Danish."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Number + Noun Agreement\n\nThis is crucial! The noun form changes based on the number:\n\n| Number | Noun Form | Example |\n|--------|-----------|---------|\n| 1 | Nominative singular | одна книга (one book) |\n| 2, 3, 4 | Nominative plural | дві книги (two books) |\n| 5-20 | Genitive plural | п'ять книг (five books) |\n| 21 | Nominative singular | двадцять одна книга |\n| 22-24 | Nominative plural | двадцять дві книги |\n| 25-30 | Genitive plural | двадцять п'ять книг |\n\n> 🔗 **Language Link: The 5+ Rule**\n>\n> Why genitive plural after 5+? In Old Slavic, numbers 5-10 were nouns meaning \"a fiver, a sixer\" etc. So \"п'ять книг\" originally meant \"a fiver of books\" - hence genitive (possession). This ancient grammar fossilized into modern Ukrainian!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Ukrainian Currency: Гривня\n\n| Currency | Ukrainian | Transliteration |\n|----------|-----------|-----------------|\n| hryvnia | гривня | hryvnya |\n| kopeck | копійка | kopiyka |\n\n**Price patterns:**\n- 1 гривня, 2-4 гривні, 5+ гривень\n- 1 копійка, 2-4 копійки, 5+ копійок\n\n> 🎭 **Culture Corner: The Гривня**\n>\n> The **гривня** (₴) has been Ukraine's currency since 1996. The name comes from a medieval unit of weight/currency - a silver neckpiece worn by Kyivan Rus' nobility. The word is related to \"грива\" (mane) - the neckpiece resembled a horse's mane! Current banknotes feature famous Ukrainians like Taras Shevchenko (100₴) and Bohdan Khmelnytsky (5₴)."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-09-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Number Dictation\n\nRead these numbers:\n- 15 → п'ятнадцять\n- 27 → двадцять сім\n- 43 → сорок три\n- 68 → шістдесят вісім\n- 91 → дев'яносто один"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Prices\n\nSay these prices:\n- 5₴ → п'ять гривень\n- 12₴ → дванадцять гривень\n- 24₴ → двадцять чотири гривні\n- 51₴ → п'ятдесят одна гривня\n- 100₴ → сто гривень\n\n> 🌍 **Real World: Shopping Phrases**\n>\n> Essential phrases for shopping:\n> - **Скільки коштує?** - How much does it cost?\n> - **Це коштує 50 гривень.** - This costs 50 hryvnias.\n> - **Дорого!** - Expensive!\n> - **Дешево!** - Cheap!\n> - **Є знижка?** - Is there a discount?\n> - **Готівкою чи карткою?** - Cash or card?\n> - **Решта - ваша.** - Keep the change."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-09-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-09-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Count and Calculate\n\n1. 10 + 5 = ___ (п'ятнадцять)\n2. 20 + 3 = ___ (двадцять три)\n3. 50 - 10 = ___ (сорок)\n4. 100 - 1 = ___ (дев'яносто дев'ять)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Shopping Scenario\n\nPractice: You're buying items. Say the price:\n- Кава: 35₴ → Кава коштує тридцять п'ять гривень.\n- Книга: 120₴ → Книга коштує сто двадцять гривень.\n- Хліб: 18₴ → Хліб коштує вісімнадцять гривень."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A1-09-matchup",
+      "type": "match-up",
+      "title": "Numbers 1-10",
+      "description": "Match the number to its Ukrainian word.",
+      "content": {
+        "type": "match-up",
+        "instructions": "Match the number to its Ukrainian word.",
+        "pairs": [
+          {
+            "left": "1",
+            "right": "один"
+          },
+          {
+            "left": "2",
+            "right": "два"
+          },
+          {
+            "left": "3",
+            "right": "три"
+          },
+          {
+            "left": "4",
+            "right": "чотири"
+          },
+          {
+            "left": "5",
+            "right": "п'ять"
+          },
+          {
+            "left": "6",
+            "right": "шість"
+          },
+          {
+            "left": "7",
+            "right": "сім"
+          },
+          {
+            "left": "8",
+            "right": "вісім"
+          },
+          {
+            "left": "9",
+            "right": "дев'ять"
+          },
+          {
+            "left": "10",
+            "right": "десять"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "numbers",
+        "money",
+        "practical"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-09-quiz",
+      "type": "quiz",
+      "title": "Numbers & Noun Agreement",
+      "description": "Choose the correct form.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct form.",
+        "questions": [
+          {
+            "question": "How do you say \"one book\" (книга = feminine)?",
+            "options": [
+              "одна книга",
+              "один книга",
+              "одне книга",
+              "одні книга"
+            ],
+            "correctIndex": 0,
+            "explanation": "Книга is feminine, so один → одна."
+          },
+          {
+            "question": "How do you say \"two books\"?",
+            "options": [
+              "дві книги",
+              "два книги",
+              "два книг",
+              "дві книг"
+            ],
+            "correctIndex": 0,
+            "explanation": "Книга is feminine (дві), and 2-4 takes nominative plural (книги)."
+          },
+          {
+            "question": "How do you say \"five books\"?",
+            "options": [
+              "п'ять книг",
+              "п'ять книги",
+              "п'ять книга",
+              "п'яти книг"
+            ],
+            "correctIndex": 0,
+            "explanation": "5+ takes genitive plural: книг."
+          },
+          {
+            "question": "How do you say \"21 hryvnias\"?",
+            "options": [
+              "двадцять одна гривня",
+              "двадцять один гривень",
+              "двадцять одна гривні",
+              "двадцять одна гривень"
+            ],
+            "correctIndex": 0,
+            "explanation": "21 ends in 1, so nominative singular: гривня."
+          },
+          {
+            "question": "What is 47 in Ukrainian?",
+            "options": [
+              "сорок сім",
+              "чотиридесят сім",
+              "сорок семь",
+              "четвертий сім"
+            ],
+            "correctIndex": 0,
+            "explanation": "40 = сорок (irregular), 7 = сім."
+          },
+          {
+            "question": "How do you say \"12 students\" (студент = masculine)?",
+            "options": [
+              "дванадцять студентів",
+              "дванадцять студенти",
+              "дванадцять студента",
+              "дванадцять студент"
+            ],
+            "correctIndex": 0,
+            "explanation": "12 (5+) takes genitive plural: студентів."
+          },
+          {
+            "question": "How do you say \"3 windows\" (вікно = neuter)?",
+            "options": [
+              "три вікна",
+              "три вікон",
+              "три вікно",
+              "троє вікон"
+            ],
+            "correctIndex": 0,
+            "explanation": "3 (2-4) takes nominative plural: вікна."
+          },
+          {
+            "question": "How do you ask \"How much does this cost?\"",
+            "options": [
+              "Скільки це коштує?",
+              "Що це коштує?",
+              "Як це коштує?",
+              "Коли це коштує?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Скільки = how much."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "numbers",
+        "money",
+        "practical"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-09-groupsort",
+      "type": "group-sort",
+      "title": "Number Agreement Categories",
+      "description": "Sort these number phrases by which noun form they require.",
+      "content": {
+        "type": "group-sort",
+        "instructions": "Sort these number phrases by which noun form they require.",
+        "groups": [
+          {
+            "name": "Takes Nominative Singular (1, 21, 31...)",
+            "items": [
+              "одна гривня",
+              "двадцять один студент",
+              "сорок одна книга"
+            ]
+          },
+          {
+            "name": "Takes Nominative Plural (2-4, 22-24...)",
+            "items": [
+              "дві книги",
+              "три студенти",
+              "двадцять чотири гривні"
+            ]
+          },
+          {
+            "name": "Takes Genitive Plural (5-20, 25-30...)",
+            "items": [
+              "п'ять книг",
+              "десять студентів",
+              "двадцять п'ять гривень"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "numbers",
+        "money",
+        "practical"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A1-09",
+    "level": "A1",
+    "phase": "A1.2",
+    "wordCount": 27,
+    "transliterationMode": "full",
+    "words": [
+      {
+        "id": "v-m09-001",
+        "uk": "нуль",
+        "translit": "nul",
+        "ipa": "/nulʲ/",
+        "en": "zero",
+        "pos": "num",
+        "gender": "m"
+      },
+      {
+        "id": "v-m09-002",
+        "uk": "один",
+        "translit": "odyn",
+        "ipa": "/ɔˈdɪn/",
+        "en": "one (m)",
+        "pos": "num",
+        "gender": "m",
+        "note": "одна (f), одне (n)"
+      },
+      {
+        "id": "v-m09-003",
+        "uk": "два",
+        "translit": "dva",
+        "ipa": "/dvɑ/",
+        "en": "two (m/n)",
+        "pos": "num",
+        "gender": "-",
+        "note": "дві (f)"
+      },
+      {
+        "id": "v-m09-004",
+        "uk": "три",
+        "translit": "try",
+        "ipa": "/trɪ/",
+        "en": "three",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-005",
+        "uk": "чотири",
+        "translit": "chotyry",
+        "ipa": "/tʃɔˈtɪrɪ/",
+        "en": "four",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-006",
+        "uk": "п'ять",
+        "translit": "pyat",
+        "ipa": "/pjɑtʲ/",
+        "en": "five",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-007",
+        "uk": "шість",
+        "translit": "shist",
+        "ipa": "/ʃʲistʲ/",
+        "en": "six",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-008",
+        "uk": "сім",
+        "translit": "sim",
+        "ipa": "/sʲim/",
+        "en": "seven",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-009",
+        "uk": "вісім",
+        "translit": "visim",
+        "ipa": "/ˈvʲisʲim/",
+        "en": "eight",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-010",
+        "uk": "дев'ять",
+        "translit": "devyat",
+        "ipa": "/ˈdɛvjɑtʲ/",
+        "en": "nine",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-011",
+        "uk": "десять",
+        "translit": "desyat",
+        "ipa": "/ˈdɛsʲɑtʲ/",
+        "en": "ten",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-012",
+        "uk": "двадцять",
+        "translit": "dvadtsyat",
+        "ipa": "/ˈdvɑd͡tsʲɑtʲ/",
+        "en": "twenty",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-013",
+        "uk": "тридцять",
+        "translit": "trydtsyat",
+        "ipa": "/ˈtrɪd͡tsʲɑtʲ/",
+        "en": "thirty",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-014",
+        "uk": "сорок",
+        "translit": "sorok",
+        "ipa": "/ˈsɔrɔk/",
+        "en": "forty",
+        "pos": "num",
+        "gender": "-",
+        "note": "Irregular!"
+      },
+      {
+        "id": "v-m09-015",
+        "uk": "п'ятдесят",
+        "translit": "pyatdesyat",
+        "ipa": "/pjɑtdɛˈsʲɑt/",
+        "en": "fifty",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-016",
+        "uk": "сто",
+        "translit": "sto",
+        "ipa": "/stɔ/",
+        "en": "hundred",
+        "pos": "num",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-017",
+        "uk": "гривня",
+        "translit": "hryvnya",
+        "ipa": "/ˈɦrɪvnʲɑ/",
+        "en": "hryvnia (₴)",
+        "pos": "noun",
+        "gender": "f",
+        "note": "2-4: гривні, 5+: гривень"
+      },
+      {
+        "id": "v-m09-018",
+        "uk": "копійка",
+        "translit": "kopiyka",
+        "ipa": "/kɔˈpʲijkɑ/",
+        "en": "kopeck",
+        "pos": "noun",
+        "gender": "f",
+        "note": "2-4: копійки, 5+: копійок"
+      },
+      {
+        "id": "v-m09-019",
+        "uk": "ціна",
+        "translit": "tsina",
+        "ipa": "/t͡sʲiˈnɑ/",
+        "en": "price",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m09-020",
+        "uk": "коштувати",
+        "translit": "koshtuvaty",
+        "ipa": "/kɔʃtuˈvɑtɪ/",
+        "en": "to cost",
+        "pos": "verb",
+        "gender": "-",
+        "note": "коштує (it costs)"
+      },
+      {
+        "id": "v-m09-021",
+        "uk": "скільки",
+        "translit": "skilky",
+        "ipa": "/ˈskʲilʲkɪ/",
+        "en": "how much/many",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-022",
+        "uk": "дорого",
+        "translit": "doroho",
+        "ipa": "/ˈdɔrɔɦɔ/",
+        "en": "expensive",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-023",
+        "uk": "дешево",
+        "translit": "deshevo",
+        "ipa": "/ˈdɛʃɛvɔ/",
+        "en": "cheap",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m09-024",
+        "uk": "знижка",
+        "translit": "znyzhka",
+        "ipa": "/ˈznɪʒkɑ/",
+        "en": "discount",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m09-025",
+        "uk": "решта",
+        "translit": "reshta",
+        "ipa": "/ˈrɛʃtɑ/",
+        "en": "change (money)",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m09-026",
+        "uk": "готівка",
+        "translit": "hotivka",
+        "ipa": "/ɦɔˈtʲivkɑ/",
+        "en": "cash",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m09-027",
+        "uk": "картка",
+        "translit": "kartka",
+        "ipa": "/ˈkɑrtkɑ/",
+        "en": "card",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Bank card"
+      }
+    ]
+  }
+}

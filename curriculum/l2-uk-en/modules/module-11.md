@@ -1,0 +1,356 @@
+---
+module: 11
+title: "The Accusative I"
+subtitle: "Direct Objects - Things"
+level: A1
+phase: A1.2
+duration: 50
+transliteration: full
+tags: [grammar, cases, accusative, objects]
+objectives:
+  - Understand what cases are and why they matter
+  - Learn accusative case for inanimate nouns
+  - Form direct object sentences (I see X, I want X)
+  - Practice accusative endings for all genders
+grammar:
+  - Case system introduction
+  - Accusative case (Знахідний відмінок)
+  - Inanimate accusative = nominative (masc/neut)
+  - Feminine -а → -у, -я → -ю
+---
+
+# Lesson Content
+
+## warm-up
+
+### Welcome to Cases!
+
+This is one of the most important modules in your Ukrainian journey. You're about to learn **cases** - the grammatical feature that changes noun endings based on their function in a sentence.
+
+In English, word order tells us who does what:
+- "The dog bites the man" ≠ "The man bites the dog"
+
+In Ukrainian, **endings** tell us who does what:
+- Собака кусає чоловіка (The dog bites the man)
+- Чоловік кусає собаку (The man bites the dog)
+
+The endings -а and -у mark "who gets bitten" (the direct object).
+
+> 🔍 **Myth Buster: "Cases Are Impossible"**
+>
+> English speakers often fear cases. But consider:
+> - English has case remnants: I/me, he/him, she/her, who/whom
+> - "I see him" not "I see he" - that's accusative!
+>
+> Ukrainian just applies this more consistently. Once you see the patterns, it becomes natural.
+
+> 💡 **Did You Know?**
+>
+> Ukrainian has **7 cases**, but don't panic! At A1, you'll learn just 3:
+> - **Nominative** (subject) - already know this!
+> - **Accusative** (direct object) - this module!
+> - **Locative** (location) - Module 13
+> - **Genitive** (possession, absence) - Module 16
+>
+> The others (Dative, Instrumental, Vocative) come in A2.
+
+## presentation
+
+### What Is Accusative?
+
+The **accusative case** marks the **direct object** - the thing receiving the action:
+
+| English | Ukrainian | What's in Accusative |
+|---------|-----------|---------------------|
+| I see **the book**. | Я бачу **книгу**. | книгу (book) |
+| She reads **a letter**. | Вона читає **листа**. | листа (letter) |
+| We want **water**. | Ми хочемо **воду**. | воду (water) |
+
+**Verbs that take accusative objects:**
+- бачити (to see)
+- чути (to hear)
+- читати (to read)
+- писати (to write)
+- мати (to have)
+- хотіти (to want)
+- любити (to love)
+- брати (to take)
+- давати (to give)
+
+### Accusative Endings: Inanimate Nouns
+
+For **inanimate** (non-living) nouns:
+
+| Gender | Nominative | Accusative | Change |
+|--------|------------|------------|--------|
+| Masculine | стіл | стіл | **No change!** |
+| Neuter | вікно | вікно | **No change!** |
+| Feminine -а | книга | книг**у** | -а → -у |
+| Feminine -я | земля | земл**ю** | -я → -ю |
+
+> ⚡ **Pro Tip: The Easy Part**
+>
+> Masculine and neuter inanimate nouns **don't change** in accusative!
+> - Я бачу стіл. (I see the table.) - same as nominative
+> - Я бачу вікно. (I see the window.) - same as nominative
+>
+> Only feminine nouns change: -а → -у, -я → -ю
+
+> 📜 **History Bite: Why Feminine Changes**
+>
+> In Proto-Slavic, the accusative originally had distinct endings for all genders. Over time, masculine and neuter inanimate forms merged with nominative for simplicity. Feminine kept its distinct accusative because the -а/-у distinction was very clear and useful. Languages evolve toward efficiency!
+
+### Examples by Gender
+
+**Masculine (no change):**
+- Я бачу **стіл**. (I see the table.)
+- Вона читає **журнал**. (She reads the magazine.)
+- Ми хочемо **хліб**. (We want bread.)
+
+**Neuter (no change):**
+- Я бачу **вікно**. (I see the window.)
+- Він п'є **молоко**. (He drinks milk.)
+- Вони хочуть **яблуко**. (They want an apple.)
+
+**Feminine (-а → -у):**
+- Я бачу **книгу**. (I see the book.) ← книга
+- Вона читає **газету**. (She reads the newspaper.) ← газета
+- Ми хочемо **воду**. (We want water.) ← вода
+
+**Feminine (-я → -ю):**
+- Я бачу **землю**. (I see the land.) ← земля
+- Він любить **Україну**. (He loves Ukraine.) ← Україна... wait!
+
+> 🎯 **Fun Fact: Україна in Accusative**
+>
+> "Україна" ends in -а, so:
+> - Nominative: **Україна** прекрасна. (Ukraine is beautiful.)
+> - Accusative: Я люблю **Україну**. (I love Ukraine.)
+>
+> This is why you'll see "Я люблю Україну!" on signs and shirts - it's grammatically correct accusative!
+
+### Common Patterns
+
+**"I see..." sentences:**
+- Я бачу будинок. (I see a building.)
+- Я бачу машину. (I see a car.) ← машина
+- Я бачу місто. (I see a city.)
+
+**"I want..." sentences:**
+- Я хочу каву. (I want coffee.) ← кава
+- Я хочу чай. (I want tea.)
+- Я хочу сік. (I want juice.)
+
+> 🎭 **Culture Corner: Ordering Drinks**
+>
+> In cafés, you'll use accusative constantly:
+> - Я хочу **каву**. (I want coffee.)
+> - Можна **воду**? (Can I have water?)
+> - Дайте, будь ласка, **чай**. (Give me tea, please.)
+>
+> Notice: каву, воду (feminine) vs чай, сік (masculine - no change).
+
+## practice
+
+### Transform to Accusative
+
+Change nominative to accusative:
+1. книга → книг__ (книгу)
+2. стіл → ст__ (стіл - no change!)
+3. вода → вод__ (воду)
+4. вікно → вікн__ (вікно - no change!)
+5. газета → газет__ (газету)
+
+### Build Sentences
+
+Combine subject + verb + object:
+- Я + бачити + книга = Я бачу книгу.
+- Вона + читати + газета = Вона читає газету.
+- Ми + хотіти + кава = Ми хочемо каву.
+
+> 🌍 **Real World: Daily Accusative**
+>
+> You use accusative constantly without realizing:
+> - Ordering: **Каву**, будь ласка! (Coffee, please!)
+> - Shopping: Я хочу **цю сумку**. (I want this bag.)
+> - Describing: Я люблю **музику**. (I love music.)
+>
+> Every direct object = accusative!
+
+## production
+
+### Describe What You See
+
+Look around and describe using "Я бачу...":
+1. Я бачу _______ (table) → стіл
+2. Я бачу _______ (book) → книгу
+3. Я бачу _______ (window) → вікно
+4. Я бачу _______ (lamp) → лампу
+
+### Express Wants
+
+Say what you want:
+1. Я хочу _______ (coffee) → каву
+2. Я хочу _______ (tea) → чай
+3. Я хочу _______ (water) → воду
+4. Я хочу _______ (bread) → хліб
+
+---
+
+# Activities
+
+## match-up: Nominative to Accusative
+
+> Match the nominative form to its accusative form.
+
+| Left (Nominative) | Right (Accusative) |
+|-------------------|-------------------|
+| книга | книгу |
+| вода | воду |
+| газета | газету |
+| кава | каву |
+| стіл | стіл |
+| вікно | вікно |
+
+## quiz: Accusative Forms
+
+> Choose the correct accusative form.
+
+1. "I see the book" - Я бачу ___.
+   - [x] книгу
+   - [ ] книга
+   - [ ] книги
+   - [ ] книгою
+   > Книга (f, -а) → книгу in accusative.
+
+2. "I see the table" - Я бачу ___.
+   - [x] стіл
+   - [ ] столу
+   - [ ] стола
+   - [ ] столом
+   > Стіл (m, inanimate) - no change in accusative.
+
+3. "She wants coffee" - Вона хоче ___.
+   - [x] каву
+   - [ ] кава
+   - [ ] кави
+   - [ ] кавою
+   > Кава (f, -а) → каву in accusative.
+
+4. "We see the window" - Ми бачимо ___.
+   - [x] вікно
+   - [ ] вікну
+   - [ ] вікна
+   - [ ] вікном
+   > Вікно (n, inanimate) - no change in accusative.
+
+5. "He reads the newspaper" - Він читає ___.
+   - [x] газету
+   - [ ] газета
+   - [ ] газети
+   - [ ] газетою
+   > Газета (f, -а) → газету in accusative.
+
+6. "They want water" - Вони хочуть ___.
+   - [x] воду
+   - [ ] вода
+   - [ ] води
+   - [ ] водою
+   > Вода (f, -а) → воду in accusative.
+
+7. "I love Ukraine" - Я люблю ___.
+   - [x] Україну
+   - [ ] Україна
+   - [ ] України
+   - [ ] Україною
+   > Україна (f, -а) → Україну in accusative.
+
+8. "She drinks milk" - Вона п'є ___.
+   - [x] молоко
+   - [ ] молоку
+   - [ ] молока
+   - [ ] молоком
+   > Молоко (n, inanimate) - no change in accusative.
+
+## group-sort: Changes vs No Change
+
+> Sort nouns by whether they change in accusative.
+
+### Changes in Accusative (Feminine -а/-я)
+- книга → книгу
+- вода → воду
+- кава → каву
+- газета → газету
+- земля → землю
+
+### No Change in Accusative (Masc/Neut Inanimate)
+- стіл → стіл
+- вікно → вікно
+- журнал → журнал
+- молоко → молоко
+- хліб → хліб
+
+---
+
+# Vocabulary
+
+| uk | translit | ipa | en | pos | gender | note |
+|----|----------|-----|-----|-----|--------|------|
+| бачити | bachyty | /ˈbɑtʃɪtɪ/ | to see | verb | - | бачу, бачиш + Acc |
+| чути | chuty | /ˈtʃutɪ/ | to hear | verb | - | чую, чуєш + Acc |
+| брати | braty | /ˈbrɑtɪ/ | to take | verb | - | беру, береш + Acc |
+| давати | davaty | /dɑˈvɑtɪ/ | to give | verb | - | даю, даєш + Acc |
+| мати | maty | /ˈmɑtɪ/ | to have | verb | - | маю, маєш + Acc |
+| нести | nesty | /ˈnɛstɪ/ | to carry | verb | - | несу, несеш + Acc |
+| класти | klasty | /ˈklɑstɪ/ | to put | verb | - | кладу, кладеш + Acc |
+| відкривати | vidkryvaty | /vʲidkrɪˈvɑtɪ/ | to open | verb | - | відкриваю + Acc |
+| закривати | zakryvaty | /zɑkrɪˈvɑtɪ/ | to close | verb | - | закриваю + Acc |
+| газета | hazeta | /ɦɑˈzɛtɑ/ | newspaper | noun | f | газету in Acc |
+| журнал | zhurnal | /ʒurˈnɑl/ | magazine | noun | m | No change in Acc |
+| лист | lyst | /lɪst/ | letter | noun | m | No change (inan.) |
+| конверт | konvert | /kɔnˈvɛrt/ | envelope | noun | m | No change |
+| посилка | posylka | /pɔˈsɪlkɑ/ | package | noun | f | посилку in Acc |
+| подарунок | podarunok | /pɔdɑˈrunɔk/ | gift | noun | m | No change |
+| квиток | kvytok | /kvɪˈtɔk/ | ticket | noun | m | No change |
+| паспорт | pasport | /ˈpɑspɔrt/ | passport | noun | m | No change |
+| документ | dokument | /dɔkuˈmɛnt/ | document | noun | m | No change |
+| валіза | valiza | /vɑˈlʲizɑ/ | suitcase | noun | f | валізу in Acc |
+| коробка | korobka | /kɔˈrɔbkɑ/ | box | noun | f | коробку in Acc |
+
+---
+
+# Case Summary
+
+## Accusative (Знахідний відмінок)
+
+**Question:** Кого? Що? (Whom? What?)
+
+**Function:** Direct object of verbs
+
+**Endings (Inanimate):**
+
+| Gender | Nominative | Accusative | Example |
+|--------|------------|------------|---------|
+| Masculine | -consonant | = Nom | стіл → стіл |
+| Neuter | -о/-е | = Nom | вікно → вікно |
+| Feminine | -а | -у | книга → книгу |
+| Feminine | -я | -ю | земля → землю |
+
+---
+
+# Summary
+
+> 💡 **What You Learned Today**
+>
+> - Ukrainian uses **cases** to show grammatical function
+> - **Accusative case** marks the direct object
+> - Masculine and neuter inanimate = **no change**
+> - Feminine: **-а → -у**, **-я → -ю**
+> - Common verbs + accusative: бачити, читати, хотіти, любити, мати
+
+> 🎯 **Coming Next**
+>
+> In Module 12, you'll learn accusative for **animate** nouns (people and animals):
+> - Я бачу студент**а**. (I see the student.)
+> - Animate masculine = Genitive form!
+> - This affects people, animals, and personified things.

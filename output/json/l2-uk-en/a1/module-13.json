@@ -1,0 +1,530 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A1-13",
+    "moduleId": "mod-uk-A1-13",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A1",
+    "phase": "A1.2",
+    "moduleNumber": 13,
+    "title": "The Locative Case",
+    "subtitle": "Where Things Are",
+    "description": "Learn the locative case for expressing location",
+    "objectives": [
+      "Learn the locative case for expressing location",
+      "Master prepositions в/у and на",
+      "Form locative endings for all genders",
+      "Describe where things and people are"
+    ],
+    "grammarFocus": [
+      "Locative case (Місцевий відмінок)",
+      "Prepositions в/у (in) and на (on/at)",
+      "Locative endings by gender"
+    ],
+    "totalDuration": 50,
+    "transliterationMode": "full",
+    "tags": [
+      "grammar",
+      "cases",
+      "locative",
+      "prepositions"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Your Second Case!\n\nYou've mastered accusative (direct objects). Now meet the **locative case** - used to say WHERE something is located!\n\nEnglish uses prepositions alone: \"in the room,\" \"on the table.\"\nUkrainian uses preposition + noun ending change: \"в кімнаті,\" \"на столі.\"\n\n- Nominative: кімната (room)\n- Locative: в кімнат**і** (in the room)\n\n> 💡 **Did You Know?**\n>\n> The locative case is sometimes called the \"prepositional case\" because it ALWAYS appears with a preposition (в, на, у, по, при). It never stands alone! This makes it easier - when you see в or на, you know locative is coming."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### The Two Main Prepositions\n\n**В / У (in, at)** - used for enclosed spaces:\n- в кімнаті (in the room)\n- в школі (in school)\n- в магазині (in the store)\n\n**На (on, at)** - used for surfaces and open places:\n- на столі (on the table)\n- на вулиці (on the street)\n- на концерті (at the concert)\n\n> ⚡ **Pro Tip: В vs У**\n>\n> These are the same preposition! Use **у** when the previous word ends in a consonant, **в** when it ends in a vowel:\n> - Я **в** офісі. (after vowel я)\n> - Він **у** школі. (after consonant він)\n>\n> In practice, many Ukrainians use them interchangeably. Don't stress about this rule!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Locative Endings\n\n| Gender | Nominative | Locative | Example |\n|--------|------------|----------|---------|\n| Masculine | -consonant | -і/-у | стіл → на стол**і** |\n| Masculine | -й | -ї | край → на кра**ї** |\n| Feminine | -а | -і | кімната → в кімнат**і** |\n| Feminine | -я | -і | земля → на земл**і** |\n| Neuter | -о | -і | вікно → на вікн**і** |\n| Neuter | -е | -і | море → на мор**і** |\n\n> 📜 **History Bite: Why -і?**\n>\n> The locative ending -і comes from an ancient suffix that indicated \"place.\" This suffix is incredibly old - it's related to Latin locative forms and has cognates across Indo-European languages. When you say \"на столі,\" you're using a grammatical structure that's been around for 5,000+ years!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Common Consonant Changes\n\nBefore -і, some consonants change:\n\n| Original | Changes To | Example |\n|----------|------------|---------|\n| г | з | книга → у книз**і** |\n| к | ц | рука → в руц**і** |\n| х | с | вухо → у вус**і** |\n\n**Examples:**\n- нога (leg) → на ноз**і**\n- ріка (river) → на ріц**і**\n- школа → but: у школ**і** (no change - л doesn't trigger)\n\n> 🎯 **Fun Fact: The Consonant Dance**\n>\n> These г→з, к→ц, х→с changes are called \"palatalization\" - the consonants move forward in the mouth before the front vowel -і. This same pattern appears in Russian, Polish, and other Slavic languages. It's a living fossil from Proto-Slavic phonology!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Masculine -у/-ю Exceptions\n\nSome masculine nouns take -у or -ю instead of -і:\n\n**Common -у nouns:**\n- дім → в/у дом**у** (at home)\n- сад → у сад**у** (in the garden)\n- ліс → у ліс**і** / в ліс**у** (in the forest) - both ok!\n\n> 🔗 **Language Link: В vs На - Location Logic**\n>\n> General rule:\n> - **В/У** = inside enclosed spaces (buildings, rooms, containers)\n> - **На** = on surfaces, at events, open areas\n>\n> But many are idiomatic:\n> - в Україні (in Ukraine) - but на Кубі (in Cuba)\n> - на вулиці (on/in the street)\n> - на роботі (at work) - not inside work!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Location Vocabulary\n\n| Nominative | Locative | English |\n|------------|----------|---------|\n| дім | вдома / в домі | home / in the house |\n| кімната | в кімнаті | in the room |\n| офіс | в офісі | in the office |\n| школа | у школі | at school |\n| університет | в університеті | at university |\n| магазин | у магазині | in the store |\n| ресторан | у ресторані | in the restaurant |\n| вулиця | на вулиці | on the street |\n| площа | на площі | on the square |\n| станція | на станції | at the station |\n\n> 🎭 **Culture Corner: Where Ukrainians Hang Out**\n>\n> - **Майдан** - the central square (на Майдані)\n> - **Кав'ярня** - coffee shop (у кав'ярні)\n> - **Парк** - park (у парку)\n> - **Кіно** - cinema (у кіно) - doesn't decline!\n>\n> Київ's famous Майдан Незалежності (Independence Square) is simply called \"Майдан\" - you'll hear \"на Майдані\" constantly!"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-13-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Transform to Locative\n\nChange to locative with в/на:\n1. кімната → в кімнат__ (кімнаті)\n2. стіл → на стол__ (столі)\n3. школа → у школ__ (школі)\n4. книга → у книз__ (книзі) - г→з!\n5. вулиця → на вулиц__ (вулиці)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Complete Sentences\n\n1. Книга ___ столі. (на) → на столі\n2. Я ___ школі. (у) → у школі\n3. Вони ___ ресторані. (в) → в ресторані\n4. Кіт ___ кімнаті. (в) → в кімнаті\n\n> 🌍 **Real World: Asking \"Where?\"**\n>\n> - **Де ти?** - Where are you?\n> - **Я в офісі.** - I'm at the office.\n> - **Де книга?** - Where is the book?\n> - **На столі.** - On the table.\n> - **Де ви живете?** - Where do you live?\n> - **Я живу в Києві.** - I live in Kyiv."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-13-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-13-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Describe Locations\n\nWhere are these things/people?\n1. Студент / університет → Студент в університеті.\n2. Кава / стіл → Кава на столі.\n3. Я / дім → Я вдома. (or: Я в домі.)\n4. Вони / робота → Вони на роботі."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A1-13-matchup",
+      "type": "match-up",
+      "title": "Nominative to Locative",
+      "description": "Match the nominative form to its locative form.",
+      "content": {
+        "type": "match-up",
+        "instructions": "Match the nominative form to its locative form.",
+        "pairs": [
+          {
+            "left": "кімната",
+            "right": "у кімнаті"
+          },
+          {
+            "left": "стіл",
+            "right": "на столі"
+          },
+          {
+            "left": "школа",
+            "right": "у школі"
+          },
+          {
+            "left": "книга",
+            "right": "у книзі"
+          },
+          {
+            "left": "вулиця",
+            "right": "на вулиці"
+          },
+          {
+            "left": "дім",
+            "right": "вдома"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "cases",
+        "locative",
+        "prepositions"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-13-quiz",
+      "type": "quiz",
+      "title": "Locative Forms",
+      "description": "Choose the correct locative form.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct locative form.",
+        "questions": [
+          {
+            "question": "\"The book is on the table\" - Книга на ___.",
+            "options": [
+              "столі",
+              "стіл",
+              "стола",
+              "столом"
+            ],
+            "correctIndex": 0,
+            "explanation": "Стіл (m) → столі in locative."
+          },
+          {
+            "question": "\"I'm in the room\" - Я в ___.",
+            "options": [
+              "кімнаті",
+              "кімната",
+              "кімнату",
+              "кімнатою"
+            ],
+            "correctIndex": 0,
+            "explanation": "Кімната (f, -а) → кімнаті in locative."
+          },
+          {
+            "question": "\"She's at school\" - Вона у ___.",
+            "options": [
+              "школі",
+              "школа",
+              "школу",
+              "школою"
+            ],
+            "correctIndex": 0,
+            "explanation": "Школа (f, -а) → школі in locative."
+          },
+          {
+            "question": "\"They're in the restaurant\" - Вони в ___.",
+            "options": [
+              "ресторані",
+              "ресторан",
+              "ресторана",
+              "рестораном"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ресторан (m) → ресторані in locative."
+          },
+          {
+            "question": "\"The cat is in the book\" - Кіт у ___.",
+            "options": [
+              "книзі",
+              "книгі",
+              "книга",
+              "книгою"
+            ],
+            "correctIndex": 0,
+            "explanation": "Книга has г→з change: книзі."
+          },
+          {
+            "question": "\"He lives in Kyiv\" - Він живе в ___.",
+            "options": [
+              "Києві",
+              "Київ",
+              "Києва",
+              "Києвом"
+            ],
+            "correctIndex": 0,
+            "explanation": "Київ (m) → Києві in locative."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "cases",
+        "locative",
+        "prepositions"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-13-groupsort",
+      "type": "group-sort",
+      "title": "В/У vs На",
+      "description": "Sort these location phrases by preposition.",
+      "content": {
+        "type": "group-sort",
+        "instructions": "Sort these location phrases by preposition.",
+        "groups": [
+          {
+            "name": "В/У (in, inside)",
+            "items": [
+              "у школі",
+              "в офісі",
+              "у магазині",
+              "в кімнаті",
+              "в Україні"
+            ]
+          },
+          {
+            "name": "На (on, at)",
+            "items": [
+              "на столі",
+              "на вулиці",
+              "на роботі",
+              "на концерті",
+              "на площі"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "cases",
+        "locative",
+        "prepositions"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A1-13",
+    "level": "A1",
+    "phase": "A1.2",
+    "wordCount": 20,
+    "transliterationMode": "full",
+    "words": [
+      {
+        "id": "v-m13-001",
+        "uk": "в / у",
+        "translit": "v / u",
+        "ipa": "/v/ /u/",
+        "en": "in, at",
+        "pos": "prep",
+        "gender": "-",
+        "note": "В after vowels, У after consonants"
+      },
+      {
+        "id": "v-m13-002",
+        "uk": "на",
+        "translit": "na",
+        "ipa": "/nɑ/",
+        "en": "on, at",
+        "pos": "prep",
+        "gender": "-",
+        "note": "Surfaces, events, open areas"
+      },
+      {
+        "id": "v-m13-003",
+        "uk": "де",
+        "translit": "de",
+        "ipa": "/dɛ/",
+        "en": "where",
+        "pos": "adv",
+        "gender": "-",
+        "note": "Де ти?"
+      },
+      {
+        "id": "v-m13-004",
+        "uk": "тут",
+        "translit": "tut",
+        "ipa": "/tut/",
+        "en": "here",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m13-005",
+        "uk": "там",
+        "translit": "tam",
+        "ipa": "/tɑm/",
+        "en": "there",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m13-006",
+        "uk": "кімната",
+        "translit": "kimnata",
+        "ipa": "/kʲimˈnɑtɑ/",
+        "en": "room",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Loc: кімнаті"
+      },
+      {
+        "id": "v-m13-007",
+        "uk": "офіс",
+        "translit": "ofis",
+        "ipa": "/ˈɔfʲis/",
+        "en": "office",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: офісі"
+      },
+      {
+        "id": "v-m13-008",
+        "uk": "школа",
+        "translit": "shkola",
+        "ipa": "/ˈʃkɔlɑ/",
+        "en": "school",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Loc: школі"
+      },
+      {
+        "id": "v-m13-009",
+        "uk": "університет",
+        "translit": "universytet",
+        "ipa": "/unʲivɛrsɪˈtɛt/",
+        "en": "university",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: університеті"
+      },
+      {
+        "id": "v-m13-010",
+        "uk": "магазин",
+        "translit": "mahazyn",
+        "ipa": "/mɑɦɑˈzɪn/",
+        "en": "store",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: магазині"
+      },
+      {
+        "id": "v-m13-011",
+        "uk": "ресторан",
+        "translit": "restoran",
+        "ipa": "/rɛstɔˈrɑn/",
+        "en": "restaurant",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: ресторані"
+      },
+      {
+        "id": "v-m13-012",
+        "uk": "кафе",
+        "translit": "kafe",
+        "ipa": "/kɑˈfɛ/",
+        "en": "café",
+        "pos": "noun",
+        "gender": "n",
+        "note": "Indeclinable!"
+      },
+      {
+        "id": "v-m13-013",
+        "uk": "вулиця",
+        "translit": "vulytsya",
+        "ipa": "/ˈvulɪt͡sʲɑ/",
+        "en": "street",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Loc: вулиці"
+      },
+      {
+        "id": "v-m13-014",
+        "uk": "площа",
+        "translit": "ploshcha",
+        "ipa": "/ˈplɔʃt͡ʃɑ/",
+        "en": "square",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Loc: площі"
+      },
+      {
+        "id": "v-m13-015",
+        "uk": "парк",
+        "translit": "park",
+        "ipa": "/pɑrk/",
+        "en": "park",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: парку"
+      },
+      {
+        "id": "v-m13-016",
+        "uk": "центр",
+        "translit": "tsentr",
+        "ipa": "/t͡sɛntr/",
+        "en": "center",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: центрі"
+      },
+      {
+        "id": "v-m13-017",
+        "uk": "станція",
+        "translit": "stantsiya",
+        "ipa": "/ˈstɑnt͡sʲijɑ/",
+        "en": "station",
+        "pos": "noun",
+        "gender": "f",
+        "note": "Loc: станції"
+      },
+      {
+        "id": "v-m13-018",
+        "uk": "аеропорт",
+        "translit": "aeroport",
+        "ipa": "/ɑɛrɔˈpɔrt/",
+        "en": "airport",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: аеропорту"
+      },
+      {
+        "id": "v-m13-019",
+        "uk": "готель",
+        "translit": "hotel",
+        "ipa": "/ɦɔˈtɛlʲ/",
+        "en": "hotel",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: готелі"
+      },
+      {
+        "id": "v-m13-020",
+        "uk": "Київ",
+        "translit": "Kyiv",
+        "ipa": "/ˈkɪjiu̯/",
+        "en": "Kyiv",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Loc: Києві"
+      }
+    ]
+  }
+}

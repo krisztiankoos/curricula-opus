@@ -1,0 +1,563 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A1-19",
+    "moduleId": "mod-uk-A1-19",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A1",
+    "phase": "A1.3",
+    "moduleNumber": 19,
+    "title": "Shopping",
+    "subtitle": "At the Store & Market",
+    "description": "Navigate stores and markets confidently",
+    "objectives": [
+      "Navigate stores and markets confidently",
+      "Ask about prices, sizes, and colors",
+      "Make purchases and returns",
+      "Compare products and make decisions"
+    ],
+    "grammarFocus": [
+      "Comparatives (більший, менший)",
+      "Можна + infinitive for permissions",
+      "This/that with accusative"
+    ],
+    "totalDuration": 50,
+    "transliterationMode": "full",
+    "tags": [
+      "vocabulary",
+      "practical",
+      "shopping",
+      "conversation"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-29T00:00:00Z",
+    "modifiedAt": "2025-11-29T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Shopping in Ukraine\n\nFrom modern shopping malls to traditional markets (ринки), Ukraine offers diverse shopping experiences. Markets are especially vibrant - the Bessarabsky Market in Kyiv and local bazaars everywhere are full of fresh produce, clothing, and household goods.\n\nEssential phrases:\n- **Скільки коштує?** - How much does it cost?\n- **Можна подивитися?** - May I look?\n- **Я просто дивлюся.** - I'm just looking.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian markets (ринки) are a cultural institution. Prices are often negotiable, especially for clothing and household items. It's expected to haggle politely! Fresh food prices are usually fixed, but you might get a discount if you buy more."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Store Types\n\n| Ukrainian | Transliteration | English |\n|-----------|-----------------|---------|\n| магазин | mahazyn | store/shop |\n| супермаркет | supermarket | supermarket |\n| ринок | rynok | market |\n| торговий центр | torhovyi tsentr | shopping mall |\n| аптека | apteka | pharmacy |\n| крамниця | kramnytsa | shop (older word) |\n| кіоск | kiosk | kiosk |\n| бутік | butik | boutique |\n\n**Specialized stores:**\n- книгарня (bookstore)\n- взуттєвий магазин (shoe store)\n- продуктовий магазин (grocery store)\n- магазин одягу (clothing store)\n- ювелірний магазин (jewelry store)\n\n> 🎭 **Culture Corner: Market Culture**\n>\n> At a Ukrainian ринок:\n> - Sellers might call out \"Пробуйте!\" (Try it!)\n> - Taste samples are common at food stalls\n> - Cash is king - many stalls don't take cards\n> - Bags often cost extra - bring your own!\n> - \"Поступитесь?\" means \"Will you lower the price?\""
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Basic Shopping Phrases\n\n| Ukrainian | English |\n|-----------|---------|\n| Скільки коштує? | How much does it cost? |\n| Скільки це коштує? | How much is this? |\n| Дорого! | Expensive! |\n| Дешево! | Cheap! |\n| Є знижка? | Is there a discount? |\n| Це в продажу? | Is this on sale? |\n| Я візьму це. | I'll take this. |\n| Мені не підходить. | It doesn't suit me. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Asking for Help\n\n| Ukrainian | Transliteration | English |\n|-----------|-----------------|---------|\n| Вибачте, ви можете допомогти? | Vybachte, vy mozhete dopomohty? | Excuse me, can you help? |\n| Де знаходиться...? | De znakhodytsia...? | Where is...? |\n| Чи є...? | Chy ye...? | Do you have...? |\n| Можна подивитися? | Mozhna podyvytysia? | May I look? |\n| Можна приміряти? | Mozhna prymiryaty? | May I try this on? |\n| Де примірочна? | De primirochna? | Where is the fitting room? |\n\n> ⚡ **Pro Tip: \"Чи є...?\"**\n>\n> \"Чи є...?\" is the standard way to ask if something is available:\n> - Чи є це в іншому кольорі? (Is this available in another color?)\n> - Чи є менший розмір? (Is there a smaller size?)\n> - Чи є чорне? (Is there black?)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Sizes & Fit\n\n| Ukrainian | English |\n|-----------|---------|\n| розмір | size |\n| великий | big, large |\n| маленький | small |\n| більший | bigger |\n| менший | smaller |\n| занадто великий | too big |\n| занадто малий | too small |\n| якраз / пасує | fits perfectly |\n\n**Clothing sizes:**\n- S = малий (small)\n- M = середній (medium)\n- L = великий (large)\n- XL = дуже великий (extra large)\n\n> 📜 **History Bite: European vs US Sizes**\n>\n> Ukraine uses European sizing systems. Shoe sizes follow EU standards (36-46+). Clothing may use S/M/L or EU numbers. Don't assume your American size translates directly - always try on or check conversion charts!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Colors (Кольори)\n\n| Ukrainian | Transliteration | English |\n|-----------|-----------------|---------|\n| білий | bilyi | white |\n| чорний | chornyi | black |\n| червоний | chervonyi | red |\n| синій | synii | blue (dark) |\n| блакитний | blakytnyi | blue (light) |\n| зелений | zelenyi | green |\n| жовтий | zhovtyi | yellow |\n| помаранчевий | pomaranchevyi | orange |\n| рожевий | rozhevyi | pink |\n| сірий | siryi | gray |\n| коричневий | korychnevi | brown |\n\n> 🔗 **Language Link: Two Blues!**\n>\n> Like Russian, Ukrainian has TWO words for blue:\n> - **синій** = dark blue (like the sea)\n> - **блакитний** = light blue (like the sky)\n>\n> This isn't unusual - ancient Greek and many other languages also distinguish light and dark blue as separate colors!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Paying\n\n| Ukrainian | English |\n|-----------|---------|\n| Де каса? | Where is the cash register? |\n| Готівкою чи карткою? | Cash or card? |\n| Можна карткою? | Can I pay by card? |\n| Чек потрібен? | Do you need a receipt? |\n| Так, будь ласка. | Yes, please. |\n| Ні, дякую. | No, thank you. |\n| Пакет потрібен? | Do you need a bag? |\n\n> 🌍 **Real World: Returns**\n>\n> Returning items (повернення):\n> - **Можна повернути?** - Can I return this?\n> - **Є чек?** - Do you have the receipt?\n> - **Протягом 14 днів** - Within 14 days\n>\n> Ukrainian consumer law allows returns within 14 days for most items if unused with receipt."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-19-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Price Negotiation\n\nPractice this dialogue:\nA: Скільки коштує ця сумка?\nB: Триста гривень.\nA: Дорого! Поступитесь?\nB: Двісті п'ятдесят.\nA: Добре, я візьму."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Ask About Products\n\nForm questions:\n1. Is there a bigger size? → Чи є більший розмір?\n2. Is this available in black? → Чи є це в чорному?\n3. Can I try this on? → Можна приміряти?\n4. Where is the fitting room? → Де примірочна?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Describe What You Want\n\n1. I want a red dress. → Я хочу червону сукню.\n2. I'm looking for black shoes. → Я шукаю чорне взуття.\n3. Do you have this in medium? → Чи є це в середньому розмірі?"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-19-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-A1-19-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Shopping Scenario\n\nRole-play buying:\n1. A shirt in your size\n2. A gift for someone\n3. Food at the market\n\nUse: Скільки коштує? Чи є...? Можна...? Я візьму..."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-A1-19-matchup",
+      "type": "match-up",
+      "title": "Shopping Vocabulary",
+      "description": "Match Ukrainian to English.",
+      "content": {
+        "type": "match-up",
+        "instructions": "Match Ukrainian to English.",
+        "pairs": [
+          {
+            "left": "розмір",
+            "right": "size"
+          },
+          {
+            "left": "знижка",
+            "right": "discount"
+          },
+          {
+            "left": "примірочна",
+            "right": "fitting room"
+          },
+          {
+            "left": "каса",
+            "right": "cash register"
+          },
+          {
+            "left": "чек",
+            "right": "receipt"
+          },
+          {
+            "left": "пакет",
+            "right": "bag"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "practical",
+        "shopping",
+        "conversation"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-19-quiz",
+      "type": "quiz",
+      "title": "Shopping Language",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "How do you ask \"How much does this cost?\"",
+            "options": [
+              "Скільки це коштує?",
+              "Що це коштує?",
+              "Як це коштує?",
+              "Коли це коштує?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Скільки = how much."
+          },
+          {
+            "question": "How do you say \"too big\"?",
+            "options": [
+              "занадто великий",
+              "дуже великий",
+              "більший",
+              "великий дуже"
+            ],
+            "correctIndex": 0,
+            "explanation": "Занадто = too (excess)."
+          },
+          {
+            "question": "What is \"блакитний\"?",
+            "options": [
+              "light blue",
+              "dark blue",
+              "green",
+              "purple"
+            ],
+            "correctIndex": 0,
+            "explanation": "Блакитний = light/sky blue."
+          },
+          {
+            "question": "\"Можна приміряти?\" means:",
+            "options": [
+              "May I try this on?",
+              "May I pay?",
+              "May I return this?",
+              "May I look?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Приміряти = to try on."
+          },
+          {
+            "question": "\"Поступитесь?\" means:",
+            "options": [
+              "Will you lower the price?",
+              "Will you help?",
+              "Will you wrap it?",
+              "Will you hold it?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Поступитися = to give way/discount."
+          },
+          {
+            "question": "How do you ask for a smaller size?",
+            "options": [
+              "Чи є менший розмір?",
+              "Чи є більший розмір?",
+              "Чи є маленький розмір?",
+              "Чи є малий розмір?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Менший = smaller (comparative)."
+          },
+          {
+            "question": "\"Це в продажу?\" means:",
+            "options": [
+              "Is this on sale?",
+              "Is this for sale?",
+              "Is this selling?",
+              "Is this sold?"
+            ],
+            "correctIndex": 0,
+            "explanation": "В продажу = on sale (discounted)."
+          },
+          {
+            "question": "What color is \"коричневий\"?",
+            "options": [
+              "brown",
+              "orange",
+              "purple",
+              "gray"
+            ],
+            "correctIndex": 0,
+            "explanation": "Коричневий = brown."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "practical",
+        "shopping",
+        "conversation"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    },
+    {
+      "id": "act-uk-A1-19-groupsort",
+      "type": "group-sort",
+      "title": "Shopping Places",
+      "description": "Sort these items by where you'd buy them.",
+      "content": {
+        "type": "group-sort",
+        "instructions": "Sort these items by where you'd buy them.",
+        "groups": [
+          {
+            "name": "Продуктовий магазин (Grocery)",
+            "items": [
+              "хліб",
+              "молоко",
+              "м'ясо",
+              "овочі",
+              "фрукти"
+            ]
+          },
+          {
+            "name": "Магазин одягу (Clothing)",
+            "items": [
+              "сукня",
+              "сорочка",
+              "штани",
+              "взуття",
+              "куртка"
+            ]
+          },
+          {
+            "name": "Аптека (Pharmacy)",
+            "items": [
+              "ліки",
+              "вітаміни",
+              "пластир",
+              "шампунь",
+              "крем"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "practical",
+        "shopping",
+        "conversation"
+      ],
+      "createdAt": "2025-11-29T00:00:00Z",
+      "modifiedAt": "2025-11-29T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A1-19",
+    "level": "A1",
+    "phase": "A1.3",
+    "wordCount": 20,
+    "transliterationMode": "full",
+    "words": [
+      {
+        "id": "v-m19-001",
+        "uk": "магазин",
+        "translit": "mahazyn",
+        "ipa": "/mɑɦɑˈzɪn/",
+        "en": "store",
+        "pos": "noun",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-002",
+        "uk": "ринок",
+        "translit": "rynok",
+        "ipa": "/ˈrɪnɔk/",
+        "en": "market",
+        "pos": "noun",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-003",
+        "uk": "коштувати",
+        "translit": "koshtuvaty",
+        "ipa": "/kɔʃtuˈvɑtɪ/",
+        "en": "to cost",
+        "pos": "verb",
+        "gender": "-",
+        "note": "коштує (3rd sg)"
+      },
+      {
+        "id": "v-m19-004",
+        "uk": "купувати",
+        "translit": "kupuvaty",
+        "ipa": "/kupuˈvɑtɪ/",
+        "en": "to buy",
+        "pos": "verb",
+        "gender": "-",
+        "note": "купую, купуєш"
+      },
+      {
+        "id": "v-m19-005",
+        "uk": "продавати",
+        "translit": "prodavaty",
+        "ipa": "/prɔdɑˈvɑtɪ/",
+        "en": "to sell",
+        "pos": "verb",
+        "gender": "-",
+        "note": "продаю, продаєш"
+      },
+      {
+        "id": "v-m19-006",
+        "uk": "приміряти",
+        "translit": "prymiryaty",
+        "ipa": "/prɪmʲirʲˈɑtɪ/",
+        "en": "to try on",
+        "pos": "verb",
+        "gender": "-"
+      },
+      {
+        "id": "v-m19-007",
+        "uk": "розмір",
+        "translit": "rozmir",
+        "ipa": "/ˈrɔzmʲir/",
+        "en": "size",
+        "pos": "noun",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-008",
+        "uk": "великий",
+        "translit": "velykyi",
+        "ipa": "/vɛˈlɪkɪj/",
+        "en": "big, large",
+        "pos": "adj",
+        "gender": "m",
+        "note": "велика (f), велике (n)"
+      },
+      {
+        "id": "v-m19-009",
+        "uk": "маленький",
+        "translit": "malenkyi",
+        "ipa": "/mɑˈlɛnʲkɪj/",
+        "en": "small",
+        "pos": "adj",
+        "gender": "m",
+        "note": "маленька (f)"
+      },
+      {
+        "id": "v-m19-010",
+        "uk": "більший",
+        "translit": "bilshyi",
+        "ipa": "/ˈbʲilʲʃɪj/",
+        "en": "bigger",
+        "pos": "adj",
+        "gender": "m",
+        "note": "Comparative"
+      },
+      {
+        "id": "v-m19-011",
+        "uk": "менший",
+        "translit": "menshyi",
+        "ipa": "/ˈmɛnʃɪj/",
+        "en": "smaller",
+        "pos": "adj",
+        "gender": "m",
+        "note": "Comparative"
+      },
+      {
+        "id": "v-m19-012",
+        "uk": "занадто",
+        "translit": "zanadto",
+        "ipa": "/zɑˈnɑdtɔ/",
+        "en": "too (excessive)",
+        "pos": "adv",
+        "gender": "-"
+      },
+      {
+        "id": "v-m19-013",
+        "uk": "колір",
+        "translit": "kolir",
+        "ipa": "/ˈkɔlʲir/",
+        "en": "color",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Gen: кольору"
+      },
+      {
+        "id": "v-m19-014",
+        "uk": "білий",
+        "translit": "bilyi",
+        "ipa": "/ˈbʲilɪj/",
+        "en": "white",
+        "pos": "adj",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-015",
+        "uk": "чорний",
+        "translit": "chornyi",
+        "ipa": "/ˈtʃɔrnɪj/",
+        "en": "black",
+        "pos": "adj",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-016",
+        "uk": "знижка",
+        "translit": "znyzhka",
+        "ipa": "/ˈznɪʒkɑ/",
+        "en": "discount",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m19-017",
+        "uk": "каса",
+        "translit": "kasa",
+        "ipa": "/ˈkɑsɑ/",
+        "en": "cash register",
+        "pos": "noun",
+        "gender": "f"
+      },
+      {
+        "id": "v-m19-018",
+        "uk": "чек",
+        "translit": "chek",
+        "ipa": "/tʃɛk/",
+        "en": "receipt",
+        "pos": "noun",
+        "gender": "m"
+      },
+      {
+        "id": "v-m19-019",
+        "uk": "пакет",
+        "translit": "paket",
+        "ipa": "/pɑˈkɛt/",
+        "en": "bag",
+        "pos": "noun",
+        "gender": "m",
+        "note": "Plastic bag"
+      },
+      {
+        "id": "v-m19-020",
+        "uk": "примірочна",
+        "translit": "primirochna",
+        "ipa": "/prɪˈmʲirɔtʃnɑ/",
+        "en": "fitting room",
+        "pos": "noun",
+        "gender": "f"
+      }
+    ]
+  }
+}

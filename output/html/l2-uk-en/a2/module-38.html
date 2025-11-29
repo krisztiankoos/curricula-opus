@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 38: Case Integration | Ukrainian A2</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-37.html" class="module-nav-link">← Module 37</a>
+      <a href="index.html" class="module-nav-link">A2 Index</a>
+      <span class="module-nav-link disabled">Next →</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 38: Case Integration</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">A2 · A2.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Case Integration</h2>
+        <p style="color:var(--text-muted)">All 7 Cases Together</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### The Complete System</h4><div class="md-content"><p>Congratulations! You now know all 7 Ukrainian cases. Let's see them working together:</p>
+<p><strong>One sentence, multiple cases:</strong></p>
+<blockquote>
+  <p>Я дав книгу братові біля столу вчора.<br />
+  (I gave a book to my brother near the table yesterday.)</p>
+</blockquote>
+<ul>
+<li><strong>Я</strong> - nominative (subject)</li>
+<li><strong>книгу</strong> - accusative (direct object)</li>
+<li><strong>братові</strong> - dative (to whom)</li>
+<li><strong>столу</strong> - genitive (біля + gen)</li>
+</ul>
+<p>Cases work together to create precise meaning. Today we practice using them all!</p>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Most Ukrainian sentences use 2-3 different cases. Native speakers don't think about cases consciously - they just "sound right." With practice, you'll develop this intuition too!</p>
+</blockquote></div></div><div class="canvas-note"><h4>### The 7 Cases: Complete Review</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Question</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nominative</td>
+<td>Хто? Що?</td>
+<td>Subject</td>
+<td><strong>Брат</strong> читає.</td>
+</tr>
+<tr>
+<td>Genitive</td>
+<td>Кого? Чого?</td>
+<td>Possession, absence, quantities</td>
+<td>Книга <strong>брата</strong>.</td>
+</tr>
+<tr>
+<td>Dative</td>
+<td>Кому? Чому?</td>
+<td>To/for whom</td>
+<td>Даю <strong>братові</strong>.</td>
+</tr>
+<tr>
+<td>Accusative</td>
+<td>Кого? Що?</td>
+<td>Direct object</td>
+<td>Бачу <strong>брата</strong>.</td>
+</tr>
+<tr>
+<td>Instrumental</td>
+<td>Ким? Чим?</td>
+<td>With/by means</td>
+<td>Йду з <strong>братом</strong>.</td>
+</tr>
+<tr>
+<td>Locative</td>
+<td>На/у кому/чому?</td>
+<td>Location</td>
+<td>Думаю про <strong>брата</strong>.</td>
+</tr>
+<tr>
+<td>Vocative</td>
+<td>-</td>
+<td>Direct address</td>
+<td><strong>Брате</strong>!</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Case Recognition</strong></p>
+  <p>To identify a case in a sentence:</p>
+  <ol>
+  <li>Find the verb</li>
+  <li>Ask what question the noun answers</li>
+  <li>Check for prepositions (they determine case)</li>
+  <li>Look at the ending</li>
+  </ol>
+</blockquote></div></div><div class="canvas-note"><h4>Multi-Case Sentences</h4><div class="md-content"><p><strong>Simple (2 cases):</strong></p>
+<ul>
+<li><strong>Мама</strong> (nom) готує <strong>вечерю</strong> (acc). - Mom is preparing dinner.</li>
+<li><strong>Я</strong> (nom) йду до <strong>магазину</strong> (gen). - I'm going to the store.</li>
+</ul>
+<p><strong>Medium (3 cases):</strong></p>
+<ul>
+<li><strong>Я</strong> (nom) даю <strong>подарунок</strong> (acc) <strong>сестрі</strong> (dat). - I give a gift to sister.</li>
+<li><strong>Ми</strong> (nom) живемо біля <strong>річки</strong> (gen) з <strong>батьками</strong> (instr). - We live near the river with parents.</li>
+</ul>
+<p><strong>Complex (4+ cases):</strong></p>
+<ul>
+<li><strong>Я</strong> (nom) написав <strong>листа</strong> (acc) <strong>другові</strong> (dat) про <strong>подорож</strong> (acc after про).</li>
+<li>I wrote a letter to a friend about the trip.</li>
+<li><strong>Учитель</strong> (nom) пояснює <strong>учням</strong> (dat) правила <strong>граматики</strong> (gen) <strong>олівцем</strong> (instr).</li>
+<li>The teacher explains grammar rules to students with a pencil.</li>
+</ul>
+<blockquote>
+  <p>📜 <strong>History Bite: Case-Rich Languages</strong></p>
+  <p>Ukrainian's 7 cases come from Proto-Slavic, which had even more! Finnish has 15 cases, Hungarian has 18. Ukrainian strikes a balance - enough cases to be precise, not so many as to be overwhelming.</p>
+</blockquote></div></div><div class="canvas-note"><h4>Case Chains: Following the Logic</h4><div class="md-content"><p><strong>Nominative starts the chain:</strong><br />
+Брат читає книгу сестрі.</p>
+<ul>
+<li>Хто читає? → Брат (nom)</li>
+<li>Що читає? → Книгу (acc)</li>
+<li>Кому читає? → Сестрі (dat)</li>
+</ul>
+<p><strong>Genitive for possession/origin:</strong><br />
+Книга брата лежить на столі.</p>
+<ul>
+<li>Що лежить? → Книга (nom)</li>
+<li>Чия книга? → Брата (gen)</li>
+<li>Де лежить? → На столі (loc)</li>
+</ul>
+<p><strong>Instrumental for means/company:</strong><br />
+Я їду з братом автобусом до Львова.</p>
+<ul>
+<li>Хто їде? → Я (nom)</li>
+<li>З ким? → З братом (instr)</li>
+<li>Чим? → Автобусом (instr)</li>
+<li>Куди? → До Львова (gen)</li>
+</ul></div></div><div class="canvas-note"><h4>Common Multi-Case Patterns</h4><div class="md-content"><p><strong>Pattern 1: Subject + Action + Object + Recipient</strong><br />
+NOM + verb + ACC + DAT</p>
+<ul>
+<li>Батько дав гроші синові.</li>
+<li>Вчителька показала карту студентам.</li>
+</ul>
+<p><strong>Pattern 2: Subject + Action + Object + Location</strong><br />
+NOM + verb + ACC + у/на + LOC</p>
+<ul>
+<li>Я поклав книгу на полицю.</li>
+<li>Вона поставила вазу у кімнаті.</li>
+</ul>
+<p><strong>Pattern 3: Subject + Action + Companion + Means</strong><br />
+NOM + verb + з + INSTR + INSTR (means)</p>
+<ul>
+<li>Ми їдемо з друзями поїздом.</li>
+<li>Вона йде з сестрою пішки.</li>
+</ul>
+<p><strong>Pattern 4: Subject + Action + Destination + Purpose</strong><br />
+NOM + verb + до + GEN + за + ACC</p>
+<ul>
+<li>Він пішов до магазину за хлібом.</li>
+<li>Я біжу до лікаря за допомогою.</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner: Formal Requests</strong></p>
+  <p>In formal Ukrainian, multi-case sentences show politeness:</p>
+  <ul>
+  <li>"Прошу Вас передати цю інформацію директорові компанії."</li>
+  <li>(I ask you to pass this information to the company director.)</li>
+  </ul>
+  <p>The more precise, the more polite!</p>
+</blockquote></div></div><div class="canvas-note"><h4>Case Conflicts: Choosing Right</h4><div class="md-content"><p><strong>Same verb, different cases by meaning:</strong></p>
+<p>писати:</p>
+<ul>
+<li>Я пишу <strong>листа</strong> (acc). - I write a letter. (what)</li>
+<li>Я пишу <strong>другові</strong> (dat). - I write to a friend. (to whom)</li>
+<li>Я пишу <strong>ручкою</strong> (instr). - I write with a pen. (by what means)</li>
+</ul>
+<p>дивитися:</p>
+<ul>
+<li>Я дивлюся <strong>фільм</strong> (acc). - I watch a film. (what)</li>
+<li>Я дивлюся <strong>на тебе</strong> (acc). - I look at you. (direction)</li>
+<li>Я дивлюся <strong>з цікавістю</strong> (instr). - I look with interest. (manner)</li>
+</ul>
+<p>думати:</p>
+<ul>
+<li>Я думаю <strong>про тебе</strong> (acc). - I think about you.</li>
+<li>Я думаю <strong>над проблемою</strong> (instr). - I think over a problem.</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: When in Doubt</strong></p>
+  <ol>
+  <li>Check the preposition - it usually determines case</li>
+  <li>Ask the case question (кого? кому? ким? etc.)</li>
+  <li>Think about the FUNCTION (object? recipient? means?)</li>
+  </ol>
+</blockquote></div></div><div class="canvas-note"><h4>Reading Multi-Case Sentences</h4><div class="md-content"><p><strong>Practice parsing:</strong></p>
+<p><strong>Sentence 1:</strong></p>
+<blockquote>
+  <p>Маленька дівчинка дала красивий малюнок своїй бабусі.</p>
+</blockquote>
+<p>Parse:</p>
+<ul>
+<li>Хто? → маленька дівчинка (nom) - subject</li>
+<li>Що дала? → красивий малюнок (acc) - direct object</li>
+<li>Кому? → своїй бабусі (dat) - recipient</li>
+</ul>
+<p><strong>Sentence 2:</strong></p>
+<blockquote>
+  <p>Студенти з різних країн зустрілися біля університету перед лекцією.</p>
+</blockquote>
+<p>Parse:</p>
+<ul>
+<li>Хто? → студенти (nom) - subject</li>
+<li>З яких країн? → з різних країн (gen) - origin</li>
+<li>Де? → біля університету (gen) - location</li>
+<li>Коли? → перед лекцією (instr) - time</li>
+</ul>
+<p><strong>Sentence 3:</strong></p>
+<blockquote>
+  <p>Мій друг, Іване, передай, будь ласка, цю книгу Марії від мене!</p>
+</blockquote>
+<p>Parse:</p>
+<ul>
+<li>Іване (voc) - direct address</li>
+<li>Що передай? → цю книгу (acc) - object</li>
+<li>Кому? → Марії (dat) - recipient</li>
+<li>Від кого? → від мене (gen) - source</li>
+</ul></div></div><div class="canvas-note"><h4>### Identify All Cases</h4><div class="md-content"><p>Find and label each case in the sentences:</p>
+<ol>
+<li>Мама готує смачний обід для сім'ї.</li>
+</ol>
+<ul>
+<li>Мама (nom), обід (acc), сім'ї (gen)</li>
+</ul>
+<ol>
+<li>Я розповів другові про свою подорож.</li>
+</ol>
+<ul>
+<li>Я (nom), другові (dat), подорож (acc)</li>
+</ul>
+<ol>
+<li>Студентка пише листа батькам ручкою.</li>
+</ol>
+<ul>
+<li>Студентка (nom), листа (acc), батькам (dat), ручкою (instr)</li>
+</ul>
+<ol>
+<li>Брате, дай мені книгу зі столу!</li>
+</ol>
+<ul>
+<li>Брате (voc), мені (dat), книгу (acc), столу (gen)</li>
+</ul></div></div><div class="canvas-note"><h4>Complete Multi-Case Sentences</h4><div class="md-content"><p>Fill in ALL blanks:</p>
+<ol>
+<li><p>___ (я) даю ___ (книга) ___ (сестра).<br />
+→ Я даю книгу сестрі.</p></li>
+<li><p>___ (вчитель) пояснює ___ (правило) ___ (студенти).<br />
+→ Вчитель пояснює правило студентам.</p></li>
+<li><p>___ (ми) йдемо з ___ (друзі) до ___ (парк).<br />
+→ Ми йдемо з друзями до парку.</p></li>
+<li><p>___ (дідусь), розкажи ___ (я) про ___ (війна).<br />
+→ Дідусю, розкажи мені про війну.</p></li>
+</ol></div></div><div class="canvas-note"><h4>Build Complex Sentences</h4><div class="md-content"><p>Create sentences using all given elements:</p>
+<ol>
+<li><p>[я / писати / лист / друг / ручка]<br />
+→ Я пишу листа другові ручкою.</p></li>
+<li><p>[батько / купити / подарунок / мама / магазин]<br />
+→ Батько купив подарунок мамі в магазині.</p></li>
+<li><p>[ми / зустрітися / колеги / кафе / після / робота]<br />
+→ Ми зустрілися з колегами в кафе після роботи.</p></li>
+</ol></div></div><div class="canvas-note"><h4>### Real Situations</h4><div class="md-content"><p><strong>Scenario 1: Telling a story</strong></p>
+<ul>
+<li>Вчора я пішов до парку з друзями.</li>
+<li>Ми сиділи біля озера і розмовляли про життя.</li>
+<li>Потім мій друг дав мені цікаву книгу.</li>
+<li>Тепер я читаю її з великим задоволенням.</li>
+</ul>
+<p><strong>Scenario 2: Giving instructions</strong></p>
+<ul>
+<li>Візьми документи зі столу в кабінеті.</li>
+<li>Передай їх секретарці на другому поверсі.</li>
+<li>Скажи їй, що це від директора для бухгалтерії.</li>
+<li>Після цього повернися до мене.</li>
+</ul>
+<p><strong>Scenario 3: Describing a day</strong></p>
+<ul>
+<li>Зранку я їду автобусом на роботу.</li>
+<li>Протягом дня я працюю з клієнтами.</li>
+<li>Після обіду я пишу листи партнерам.</li>
+<li>Увечері зустрічаюся з друзями біля кінотеатру.</li>
+</ul></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Case Functions</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/7</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Nominative</div><div class="match-item" data-pair="1">Genitive</div><div class="match-item" data-pair="2">Dative</div><div class="match-item" data-pair="3">Accusative</div><div class="match-item" data-pair="4">Instrumental</div><div class="match-item" data-pair="5">Locative</div><div class="match-item" data-pair="6">Vocative</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">means/company</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="3">direct object</div><div class="match-item" data-pair="1">possession</div><div class="match-item" data-pair="5">location</div><div class="match-item" data-pair="6">direct address</div><div class="match-item" data-pair="2">recipient</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Case Integration</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>Multi-Case Analysis</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/7</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Present in this sentence</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Not present in this sentence</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (12)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 38 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"Nominative","right":"subject"},{"left":"Genitive","right":"possession"},{"left":"Dative","right":"recipient"},{"left":"Accusative","right":"direct object"},{"left":"Instrumental","right":"means/company"},{"left":"Locative","right":"location"},{"left":"Vocative","right":"direct address"}];
+    const quizData=[{"question":"\"I give a book to my brother\" - Я даю книгу **братові**.","options":["Dative","Genitive","Accusative","Instrumental"],"correctIndex":0,"explanation":"Кому? → братові (dative)."},{"question":"\"I'm going with a friend\" - Я йду **з другом**.","options":["Instrumental","Genitive","Dative","Accusative"],"correctIndex":0,"explanation":"З ким? → з другом (instrumental)."},{"question":"\"The book is near the window\" - Книга біля **вікна**.","options":["Genitive","Locative","Accusative","Instrumental"],"correctIndex":0,"explanation":"Біля + genitive: вікна."},{"question":"\"I see my sister\" - Я бачу **сестру**.","options":["Accusative","Nominative","Dative","Genitive"],"correctIndex":0,"explanation":"Кого бачу? → сестру (accusative)."},{"question":"\"Dear friend!\" - **Друже**!","options":["Vocative","Nominative","Genitive","Dative"],"correctIndex":0,"explanation":"Direct address = vocative."},{"question":"\"The book is on the table\" - Книга на **столі**.","options":["Locative","Genitive","Instrumental","Accusative"],"correctIndex":0,"explanation":"На (location) + locative."},{"question":"\"This is my brother's book\" - Це книга **брата**.","options":["Genitive","Nominative","Accusative","Dative"],"correctIndex":0,"explanation":"Чия? → брата (genitive, possession)."},{"question":"\"The teacher explains the rule\" - **Вчитель** пояснює правило.","options":["Nominative","Accusative","Genitive","Vocative"],"correctIndex":0,"explanation":"Хто пояснює? → Вчитель (nominative, subject)."}];
+    const sortData={"true-friends":["Nominative (батько)","Dative (синові)","Accusative (книгу, Україну)"],"false-friends":["Genitive","Instrumental","Locative","Vocative"]};
+    const vocabData=[{"uk":"правило","translit":"/prɑˈvɪlo/","en":"noun","note":""},{"uk":"полиця","translit":"/poˈlɪtsʲɑ/","en":"noun","note":""},{"uk":"ваза","translit":"/ˈvɑzɑ/","en":"noun","note":""},{"uk":"поверх","translit":"/ˈpovɛrx/","en":"noun","note":""},{"uk":"кабінет","translit":"/kɑbʲiˈnɛt/","en":"noun","note":""},{"uk":"секретарка","translit":"/sɛkrɛˈtɑrkɑ/","en":"noun","note":""},{"uk":"бухгалтерія","translit":"/buxɦɑlˈtɛrʲijɑ/","en":"noun","note":""},{"uk":"партнер","translit":"/pɑrtˈnɛr/","en":"noun","note":""},{"uk":"малюнок","translit":"/mɑˈlʲunok/","en":"noun","note":""},{"uk":"лекція","translit":"/ˈlɛktsʲijɑ/","en":"noun","note":""},{"uk":"задоволення","translit":"/zɑdoˈvolɛnʲːɑ/","en":"noun","note":""},{"uk":"протягом","translit":"/proˈtʲɑɦom/","en":"prep","note":""}];
+    const totalSort=7;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': <span class="cyrillic">'+(q.question.match(/[А-ЯІЇЄҐ]+/)?.[0]||'')+'</span></h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

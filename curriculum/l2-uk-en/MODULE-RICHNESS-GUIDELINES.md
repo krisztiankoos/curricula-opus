@@ -225,6 +225,77 @@ When adapting authentic materials:
 
 ---
 
+## Interesting Context & Engagement Boxes
+
+### Required: Every Module Must Include At Least One
+
+Modules should include **contextual boxes** that make learning memorable and engaging:
+
+| Box Type | Icon | Purpose | Example |
+|----------|------|---------|---------|
+| Did You Know? | 💡 | Fascinating facts | "Ukrainian has 7 cases, but English lost them 500 years ago!" |
+| Myth Buster | 🔍 | Correct misconceptions | "Cyrillic isn't Russian - it was created in Bulgaria!" |
+| Pro Tip | ⚡ | Practical advice | "Ukrainians rarely use the formal 'Ви' with family" |
+| Culture Corner | 🎭 | Traditions, customs | "Why Ukrainians say 'на Україні' is controversial" |
+| History Bite | 📜 | Historical context | "The letter Ї exists only in Ukrainian - no other Slavic language has it" |
+| Fun Fact | 🎯 | Memorable tidbits | "The word 'Козак' (Cossack) means 'free man'" |
+| Language Link | 🔗 | Connections to English | "'Borsch' entered English from Ukrainian, not Russian" |
+| Real World | 🌍 | Modern relevance | "These words appear daily in Ukrainian news" |
+
+### Box Format in Markdown
+
+```markdown
+> 💡 **Did You Know?**
+>
+> The Cyrillic alphabet was NOT invented by Russians! It was created in the
+> 9th century in Bulgaria by followers of Saints Cyril and Methodius. Russia
+> adopted it centuries later. Ukrainian Cyrillic has unique letters (Ї, Є, Ґ)
+> that don't exist in Russian!
+```
+
+### Placement Guidelines
+
+- **At least 1-2 boxes** per module section
+- Place after introducing new concepts (reinforcement)
+- Use to break up dense grammar explanations
+- Connect abstract grammar to real cultural context
+- Make learners want to share what they learned!
+
+### Box Content Principles
+
+1. **Surprising** - Challenge assumptions
+2. **Memorable** - Stick in the mind
+3. **Accurate** - Verified facts only
+4. **Relevant** - Connected to the lesson content
+5. **Shareable** - "I didn't know that!" factor
+
+### Examples by Level
+
+**A1 (Alphabet/Basics):**
+- Origin of Cyrillic alphabet
+- Ukrainian unique letters
+- Why Ukrainian sounds different from Russian
+- Famous Ukrainian words in English (steppe, borsch)
+
+**A2 (Grammar Expansion):**
+- How Ukrainian cases compare to Latin/German
+- Why aspect is "the soul of Slavic languages"
+- Historical reasons for grammatical features
+
+**B1-B2 (Intermediate):**
+- Language politics and identity
+- Regional dialects and their history
+- Ukrainian literary tradition
+- Famous polyglots who learned Ukrainian
+
+**C1+ (Advanced):**
+- Linguistic research about Ukrainian
+- Evolution of Ukrainian over centuries
+- Influence of other languages
+- Debates in modern Ukrainian linguistics
+
+---
+
 ## Cultural Content
 
 ### Every Module Should Include

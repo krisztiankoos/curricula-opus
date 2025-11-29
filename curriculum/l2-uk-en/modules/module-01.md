@@ -27,6 +27,19 @@ Ukrainian uses the Cyrillic alphabet - 33 letters total. Good news: many look fa
 
 The key insight: some letters LOOK like English but make DIFFERENT sounds. We call these "False Friends" - they'll trick you if you're not careful!
 
+> 🔍 **Myth Buster: "Cyrillic is Russian"**
+>
+> Many people think Cyrillic = Russian. **Wrong!** The Cyrillic alphabet was created in the **9th century in Bulgaria** by disciples of Saints Cyril and Methodius. It spread throughout the Slavic world - Russia adopted it centuries later. Today, Cyrillic is used by dozens of languages including Ukrainian, Bulgarian, Serbian, Mongolian, and many others. Russian doesn't own it!
+
+> 💡 **Did You Know?**
+>
+> Ukrainian Cyrillic has **unique letters** that don't exist in Russian:
+> - **Ї** (yi) - only Ukrainian has this!
+> - **Є** (ye) - Ukrainian form
+> - **Ґ** (hard g) - restored after independence
+>
+> When you see these letters, you know it's Ukrainian, not Russian!
+
 ## presentation
 
 ### Group 1: True Friends (7 letters)
@@ -45,6 +58,10 @@ These letters look AND sound like their Latin equivalents:
 
 Trust these! They work exactly as you'd expect.
 
+> 📜 **History Bite: The Greek Connection**
+>
+> Both the Latin alphabet (which English uses) and Cyrillic come from the **Greek alphabet**. That's why letters like A, E, K, M, O, and T look the same - they share Greek ancestors! When you see these "True Friends," you're seeing evidence of how alphabets evolved from ancient Greece to modern times.
+
 ### Group 2: False Friends (6 letters)
 
 DANGER! These look Latin but sound completely different:
@@ -60,7 +77,23 @@ DANGER! These look Latin but sound completely different:
 
 Memorize these! They cause the most confusion for beginners.
 
-### Group 3: New But Easy (5 letters)
+> ⚡ **Pro Tip: The False Friends Song**
+>
+> Remember this phrase: **"Very Nice Russian Students Use Kharkiv"**
+> - **V**ery = В (V, not B)
+> - **N**ice = Н (N, not H)
+> - **R**ussian = Р (R, not P)
+> - **S**tudents = С (S, not C)
+> - **U**se = У (U, not Y)
+> - **Kh**arkiv = Х (KH, not X)
+>
+> This mnemonic will save you from the most common beginner mistakes!
+
+> 🎯 **Fun Fact: Why the Confusion?**
+>
+> The "False Friends" exist because Cyrillic and Latin alphabets evolved separately from Greek. The Greek letter **Ρ** (rho) became **R** in Latin but **Р** in Cyrillic - same origin, different evolution! Similarly, Greek **Ν** (nu) became **N** in Latin but looks like **Н** in Cyrillic.
+
+### Group 3: New But Easy (6 letters)
 
 These don't exist in Latin but are straightforward:
 
@@ -72,6 +105,10 @@ These don't exist in Latin but are straightforward:
 | Л л | L | Like a tent |
 | П п | P | Like a doorway/portal |
 | Ф ф | F | Like a person with arms out |
+
+> 🔗 **Language Link: B and V**
+>
+> Notice that Ukrainian has **two** letters for B-sounds: **Б** (true B) and **В** (V sound). English only has one! This is why some Ukrainian words borrowed into English seem to swap B and V. For example, the name "Volodymyr" (Володимир) is sometimes written "Vladimir" because Russian В sounds like V to English ears.
 
 ## practice
 
@@ -91,6 +128,16 @@ Sound out each word. Most are international words you'll recognize:
 ПАРК → P-A-R-K → park
 МЕТРО → M-E-T-R-O → metro
 КАФЕ → K-A-F-E → café
+
+> 🌍 **Real World: Cognates Everywhere**
+>
+> Ukrainian (like all languages) borrows international words. When you visit Ukraine, you'll see signs you can read immediately:
+> - **БАНК** (bank)
+> - **РЕСТОРАН** (restaurant)
+> - **ГОТЕЛЬ** (hotel)
+> - **АПТЕКА** (pharmacy - from Greek "apotheke"!)
+>
+> About 10-15% of everyday Ukrainian words are recognizable cognates. You already know more Ukrainian than you think!
 
 ## production
 
@@ -112,6 +159,15 @@ Read these tricky words:
 - СУПЕРМАРКЕТ (supermarket)
 - РЕСТОРАН (restaurant)
 - ПАСПОРТ (passport)
+
+> 🎭 **Culture Corner: Names in Cyrillic**
+>
+> Ukrainian names follow Cyrillic spelling, which sometimes surprises English speakers:
+> - **Харків** (Kharkiv) - the Х makes a "kh" sound
+> - **Володимир** (Volodymyr) - В is V, not B
+> - **Степан** (Stepan) - С is S, not "St"
+>
+> When you see Ukrainian names transliterated to English, you're seeing someone's attempt to represent Cyrillic sounds in Latin letters!
 
 ---
 
@@ -258,3 +314,23 @@ Read these tricky words:
 
 ## New Letters
 Б Д З Л П Ф
+
+---
+
+# Summary
+
+> 💡 **What You Learned Today**
+>
+> - The Cyrillic alphabet comes from Bulgaria, not Russia
+> - Ukrainian has 33 letters (you learned 18 today!)
+> - **True Friends** (7): Look and sound like Latin
+> - **False Friends** (6): Look Latin but sound different - the tricky ones!
+> - **New Letters** (6): Unique shapes but easy sounds
+> - Many international words are readable with these 18 letters
+
+> 🎯 **Coming Next**
+>
+> In Module 02, you'll learn the remaining 15 letters including:
+> - The unique Ukrainian letters Ї, Є, and Ґ
+> - The "soft sign" Ь that changes how letters sound
+> - Cursive/italic forms (some look VERY different!)

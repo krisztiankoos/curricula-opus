@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 39: At the Post Office & Bank | Ukrainian A2</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-38.html" class="module-nav-link">← Module 38</a>
+      <a href="index.html" class="module-nav-link">A2 Index</a>
+      <a href="module-40.html" class="module-nav-link">Module 40 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 39: At the Post Office & Bank</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">A2 · A2.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">At the Post Office & Bank</h2>
+        <p style="color:var(--text-muted)">Service Interactions</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### Real-World Ukrainian</h4><div class="md-content"><p>You've mastered the case system. Now let's use it in real service situations: the post office (пошта) and the bank (банк).</p>
+<p><strong>Common needs:</strong></p>
+<ul>
+<li>Sending letters and packages</li>
+<li>Exchanging currency</li>
+<li>Paying bills</li>
+<li>Asking about services</li>
+</ul>
+<p>These situations combine everything you've learned - cases, prepositions, polite requests!</p>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>"Укрпошта" (Ukrposhta) is Ukraine's national postal service, founded in 1994. Despite the digital age, Ukrainians still value sending postcards (листівки) and packages (посилки), especially for holidays. The phrase "Надіслати з любов'ю" (sent with love) captures this tradition!</p>
+</blockquote></div></div><div class="canvas-note"><h4>### At the Post Office: Key Phrases</h4><div class="md-content"><p><strong>Entering and asking:</strong></p>
+<ul>
+<li>Добрий день! Я хочу надіслати листа. - Hello! I want to send a letter.</li>
+<li>Мені потрібно відправити посилку. - I need to send a package.</li>
+<li>Скільки коштує марка до Англії? - How much is a stamp to England?</li>
+<li>Де можна купити конверт? - Where can I buy an envelope?</li>
+</ul>
+<p><strong>Specifying destination:</strong></p>
+<ul>
+<li>До Америки. - To America. (до + gen)</li>
+<li>У Німеччину. - To Germany. (у + acc for countries)</li>
+<li>На адресу… - To the address… (на + acc)</li>
+</ul>
+<p><strong>Package details:</strong></p>
+<ul>
+<li>Посилка важить два кілограми. - The package weighs two kilograms.</li>
+<li>Що всередині? - What's inside?</li>
+<li>Там книги і одяг. - There are books and clothes.</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Sending Mail</strong></p>
+  <p>Key verbs for mail:</p>
+  <ul>
+  <li><strong>надіслати</strong> / <strong>відправити</strong> (to send) + acc (what) + dat (to whom)</li>
+  <li><strong>отримати</strong> (to receive) + acc (what) + від + gen (from whom)</li>
+  <li><strong>забрати</strong> (to pick up) + acc (what)</li>
+  </ul>
+</blockquote></div></div><div class="canvas-note"><h4>Post Office Vocabulary</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>Case notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>лист</td>
+<td>letter</td>
+<td>надіслати листа (acc)</td>
+</tr>
+<tr>
+<td>листівка</td>
+<td>postcard</td>
+<td>написати листівку (acc)</td>
+</tr>
+<tr>
+<td>посилка</td>
+<td>package</td>
+<td>відправити посилку (acc)</td>
+</tr>
+<tr>
+<td>бандероль</td>
+<td>small parcel</td>
+<td></td>
+</tr>
+<tr>
+<td>марка</td>
+<td>stamp</td>
+<td>купити марку (acc)</td>
+</tr>
+<tr>
+<td>конверт</td>
+<td>envelope</td>
+<td></td>
+</tr>
+<tr>
+<td>адреса</td>
+<td>address</td>
+<td>на адресу (acc)</td>
+</tr>
+<tr>
+<td>відправник</td>
+<td>sender</td>
+<td>від відправника (gen)</td>
+</tr>
+<tr>
+<td>одержувач</td>
+<td>recipient</td>
+<td>одержувачу (dat)</td>
+</tr>
+<tr>
+<td>індекс</td>
+<td>postal code</td>
+<td></td>
+</tr>
+<tr>
+<td>квитанція</td>
+<td>receipt</td>
+<td></td>
+</tr>
+<tr>
+<td>вага</td>
+<td>weight</td>
+<td></td>
+</tr>
+<tr>
+<td>доставка</td>
+<td>delivery</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example dialogue:</strong></p>
+<ul>
+<li>Я хочу надіслати посилку до Канади.</li>
+<li>Що в посилці?</li>
+<li>Книги і солодощі.</li>
+<li>Поставте посилку на ваги. Два кілограми. Це коштує 350 гривень.</li>
+<li>Добре. Ось гроші.</li>
+<li>Ваша квитанція. Доставка - 10-14 днів.</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner: Ukrainian Mail Traditions</strong></p>
+  <p>Ukrainians love sending greeting cards for holidays, especially:</p>
+  <ul>
+  <li>Новий рік (New Year) - the biggest holiday</li>
+  <li>Великдень (Easter) - with traditional "писанки" designs</li>
+  <li>День народження (Birthday)</li>
+  </ul>
+  <p>Receiving a handwritten card is special - it shows someone took time for you!</p>
+</blockquote></div></div><div class="canvas-note"><h4>At the Bank: Key Phrases</h4><div class="md-content"><p><strong>Basic requests:</strong></p>
+<ul>
+<li>Я хочу обміняти долари на гривні. - I want to exchange dollars for hryvnias.</li>
+<li>Який курс обміну? - What's the exchange rate?</li>
+<li>Можна зняти готівку? - Can I withdraw cash?</li>
+<li>Я хочу відкрити рахунок. - I want to open an account.</li>
+<li>Мені потрібна виписка з рахунку. - I need an account statement.</li>
+</ul>
+<p><strong>Card and ATM:</strong></p>
+<ul>
+<li>Де найближчий банкомат? - Where's the nearest ATM?</li>
+<li>Моя картка не працює. - My card doesn't work.</li>
+<li>Можна оплатити карткою? - Can I pay by card?</li>
+<li>Введіть пін-код. - Enter your PIN.</li>
+</ul>
+<p><strong>Transfers:</strong></p>
+<ul>
+<li>Я хочу зробити переказ. - I want to make a transfer.</li>
+<li>На який рахунок? - To which account?</li>
+<li>Яка комісія? - What's the commission?</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Money Talk</strong></p>
+  <p>Currency phrases:</p>
+  <ul>
+  <li>обміняти X <strong>на</strong> Y - exchange X <strong>for</strong> Y</li>
+  <li>зняти гроші <strong>з</strong> рахунку - withdraw money <strong>from</strong> account</li>
+  <li>покласти гроші <strong>на</strong> рахунок - deposit money <strong>to</strong> account</li>
+  <li>переказати гроші <strong>кому</strong> - transfer money <strong>to someone</strong> (dat)</li>
+  </ul>
+</blockquote></div></div><div class="canvas-note"><h4>Bank Vocabulary</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>Case notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>рахунок</td>
+<td>account</td>
+<td>на рахунок (acc), з рахунку (gen)</td>
+</tr>
+<tr>
+<td>картка</td>
+<td>card</td>
+<td>карткою (instr)</td>
+</tr>
+<tr>
+<td>готівка</td>
+<td>cash</td>
+<td>готівкою (instr)</td>
+</tr>
+<tr>
+<td>переказ</td>
+<td>transfer</td>
+<td>зробити переказ (acc)</td>
+</tr>
+<tr>
+<td>обмін валют</td>
+<td>currency exchange</td>
+<td></td>
+</tr>
+<tr>
+<td>курс</td>
+<td>exchange rate</td>
+<td></td>
+</tr>
+<tr>
+<td>долар</td>
+<td>dollar</td>
+<td></td>
+</tr>
+<tr>
+<td>євро</td>
+<td>euro</td>
+<td></td>
+</tr>
+<tr>
+<td>гривня</td>
+<td>hryvnia</td>
+<td></td>
+</tr>
+<tr>
+<td>депозит</td>
+<td>deposit</td>
+<td></td>
+</tr>
+<tr>
+<td>кредит</td>
+<td>loan/credit</td>
+<td></td>
+</tr>
+<tr>
+<td>відсоток</td>
+<td>interest, percent</td>
+<td></td>
+</tr>
+<tr>
+<td>банкомат</td>
+<td>ATM</td>
+<td>біля банкомату (gen)</td>
+</tr>
+<tr>
+<td>каса</td>
+<td>cash desk</td>
+<td>у касі (loc)</td>
+</tr>
+<tr>
+<td>комісія</td>
+<td>commission, fee</td>
+<td></td>
+</tr>
+<tr>
+<td>підпис</td>
+<td>signature</td>
+<td></td>
+</tr>
+<tr>
+<td>форма</td>
+<td>form</td>
+<td>заповнити форму (acc)</td>
+</tr>
+<tr>
+<td>документ</td>
+<td>document</td>
+<td></td>
+</tr>
+<tr>
+<td>посвідчення</td>
+<td>ID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example dialogue:</strong></p>
+<ul>
+<li>Добрий день! Я хочу обміняти євро.</li>
+<li>Скільки?</li>
+<li>200 євро. Який сьогодні курс?</li>
+<li>40 гривень за євро. Це буде 8000 гривень.</li>
+<li>Добре. Ось паспорт.</li>
+<li>Дякую. Розпишіться тут, будь ласка.</li>
+<li>(підписує)</li>
+<li>Ось ваші гривні. Перерахуйте, будь ласка.</li>
+</ul>
+<blockquote>
+  <p>📜 <strong>History Bite: The Hryvnia</strong></p>
+  <p>The гривня (hryvnia, ₴) became Ukraine's currency in 1996, replacing the карбованець. The name comes from a medieval unit of weight for silver - "гривна." On banknotes, you'll see famous Ukrainian figures: Taras Shevchenko (100₴), Lesya Ukrainka (200₴), and others.</p>
+</blockquote></div></div><div class="canvas-note"><h4>Polite Service Phrases</h4><div class="md-content"><p><strong>Requests:</strong></p>
+<ul>
+<li>Будь ласка, … - Please, …</li>
+<li>Чи можна…? - Is it possible to…?</li>
+<li>Я хотів би / хотіла б… - I would like…</li>
+<li>Мені потрібно… - I need…</li>
+<li>Чи не могли б ви…? - Could you…? (formal)</li>
+</ul>
+<p><strong>Responses:</strong></p>
+<ul>
+<li>Звичайно. - Of course.</li>
+<li>Одну хвилинку. - One moment.</li>
+<li>На жаль, це неможливо. - Unfortunately, that's not possible.</li>
+<li>Вам потрібно… - You need to…</li>
+<li>Будь ласка, зачекайте. - Please wait.</li>
+</ul>
+<p><strong>Problems:</strong></p>
+<ul>
+<li>Вибачте, я не розумію. - Sorry, I don't understand.</li>
+<li>Повторіть, будь ласка. - Please repeat.</li>
+<li>Чи можете говорити повільніше? - Can you speak slower?</li>
+<li>Де я можу…? - Where can I…?</li>
+</ul></div></div><div class="canvas-note"><h4>Numbers and Amounts Review</h4><div class="md-content"><p><strong>For transactions:</strong></p>
+<ul>
+<li>сто гривень (100₴)</li>
+<li>двісті долар<strong>ів</strong> (200$) - genitive plural</li>
+<li>триста євро (300€) - євро doesn't change</li>
+<li>п'ятсот гривень (500₴)</li>
+<li>тисяча гривень (1000₴)</li>
+</ul>
+<p><strong>Weights and measures:</strong></p>
+<ul>
+<li>один кілограм</li>
+<li>два кілограм<strong>и</strong></li>
+<li>п'ять кілограм<strong>ів</strong></li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Number Agreement</strong></p>
+  <p>Remember from A1:</p>
+  <ul>
+  <li>1 + nominative singular: одна гривня</li>
+  <li>2-4 + genitive singular: дві гривні</li>
+  <li>5+ + genitive plural: п'ять гривень</li>
+  </ul>
+</blockquote></div></div><div class="canvas-note"><h4>### Complete the Dialogues</h4><div class="md-content"><p><strong>At the post office:</strong></p>
+<ol>
+<li>- Я хочу надіслати ___ (посилка) до Польщі.<br />
+→ посилку (acc)</li>
+<li>- Скільки коштує ___ (марка)?<br />
+→ марка (nom, asking price)</li>
+<li>- Напишіть адресу ___ (одержувач).<br />
+→ одержувача (gen)</li>
+</ol>
+<p><strong>At the bank:</strong></p>
+<ol>
+<li>- Я хочу обміняти долари на ___ (гривні).<br />
+→ гривні (acc)</li>
+<li>- Де найближчий ___ (банкомат)?<br />
+→ банкомат (nom)</li>
+<li>- Можна зняти гроші з ___ (рахунок)?<br />
+→ рахунку (gen)</li>
+</ol></div></div><div class="canvas-note"><h4>Build Requests</h4><div class="md-content"><p>Create polite requests:</p>
+<ol>
+<li>send / letter / friend → Я хочу надіслати листа другові.</li>
+<li>exchange / 100 euros / hryvnias → Я хочу обміняти 100 євро на гривні.</li>
+<li>withdraw / money / account → Я хочу зняти гроші з рахунку.</li>
+<li>buy / stamps / postcards → Мені потрібно купити марки для листівок.</li>
+</ol></div></div><div class="canvas-note"><h4>Role Play Scenarios</h4><div class="md-content"><p><strong>Scenario 1: Sending a package</strong></p>
+<ul>
+<li>Добрий день!</li>
+<li>Добрий день! Чим можу допомогти?</li>
+<li>Я хочу відправити посилку до США.</li>
+<li>Що в посилці?</li>
+<li>Подарунки для сім'ї.</li>
+<li>Поставте на ваги… 3 кілограми. 420 гривень.</li>
+<li>Ось, будь ласка.</li>
+<li>Дякую! Ось квитанція.</li>
+</ul>
+<p><strong>Scenario 2: Currency exchange</strong></p>
+<ul>
+<li>Добрий день! Який курс долара?</li>
+<li>37 гривень за долар.</li>
+<li>Я хочу обміняти 500 доларів.</li>
+<li>Ваш паспорт, будь ласка.</li>
+<li>Ось.</li>
+<li>Дякую. 18,500 гривень. Перерахуйте.</li>
+</ul></div></div><div class="canvas-note"><h4>### Real Situations</h4><div class="md-content"><p><strong>Scenario 1: Lost package</strong></p>
+<ul>
+<li>Вибачте, я відправляв посилку тиждень тому, але вона не прийшла.</li>
+<li>Ваша квитанція?</li>
+<li>Ось.</li>
+<li>Зачекайте… Посилка в дорозі. Буде через 3 дні.</li>
+<li>Дякую!</li>
+</ul>
+<p><strong>Scenario 2: Bank problem</strong></p>
+<ul>
+<li>Моя картка не працює в банкоматі.</li>
+<li>Ви правильно вводите пін-код?</li>
+<li>Так, я впевнений.</li>
+<li>Можливо, потрібно замінити картку. Заповніть цю форму.</li>
+<li>Скільки це коштує?</li>
+<li>Безкоштовно.</li>
+</ul>
+<p><strong>Scenario 3: Sending money</strong></p>
+<ul>
+<li>Я хочу переказати гроші родині в Україну.</li>
+<li>На який рахунок?</li>
+<li>Ось номер рахунку.</li>
+<li>Скільки переказуєте?</li>
+<li>200 євро.</li>
+<li>Комісія 3 євро. Загалом 203 євро.</li>
+</ul></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Service Vocabulary</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">посилка</div><div class="match-item" data-pair="1">марка</div><div class="match-item" data-pair="2">курс обміну</div><div class="match-item" data-pair="3">банкомат</div><div class="match-item" data-pair="4">квитанція</div><div class="match-item" data-pair="5">переказ</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">exchange rate</div><div class="match-item" data-pair="0">package</div><div class="match-item" data-pair="5">transfer</div><div class="match-item" data-pair="4">receipt</div><div class="match-item" data-pair="1">stamp</div><div class="match-item" data-pair="3">ATM</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Service Situations</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>Post Office vs Bank</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/10</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Post Office</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Bank</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (27)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 39 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"посилка","right":"package"},{"left":"марка","right":"stamp"},{"left":"курс обміну","right":"exchange rate"},{"left":"банкомат","right":"ATM"},{"left":"квитанція","right":"receipt"},{"left":"переказ","right":"transfer"}];
+    const quizData=[{"question":"\"I want to send a letter\" - Я хочу надіслати ___.","options":["листа","лист","листу","листом"],"correctIndex":0,"explanation":"Надіслати + accusative: листа."},{"question":"\"How much is a stamp to Germany?\" - Скільки коштує марка ___ Німеччини?","options":["до","у","на","з"],"correctIndex":0,"explanation":"До + genitive for destinations."},{"question":"\"I want to exchange euros for hryvnias\" - Я хочу обміняти євро ___ гривні.","options":["на","до","з","у"],"correctIndex":0,"explanation":"Обміняти X на Y."},{"question":"\"Where's the nearest ATM?\" - Де найближчий ___?","options":["банкомат","банкомату","банкоматом","банкоматі"],"correctIndex":0,"explanation":"Subject = nominative."},{"question":"\"I want to withdraw money from the account\" - зняти гроші ___ рахунку.","options":["з","на","до","у"],"correctIndex":0,"explanation":"З + genitive = from."},{"question":"\"Please sign here\" - Розпишіться ___, будь ласка.","options":["тут","там","де","куди"],"correctIndex":0,"explanation":"Тут = here."},{"question":"\"What's the commission?\" - Яка ___?","options":["комісія","комісію","комісії","комісією"],"correctIndex":0,"explanation":"Subject = nominative."},{"question":"\"Fill out this form\" - Заповніть цю ___.","options":["форму","форма","форми","формі"],"correctIndex":0,"explanation":"Заповнити + accusative: форму."}];
+    const sortData={"true-friends":["марка","конверт","посилка","листівка","бандероль"],"false-friends":["рахунок","банкомат","курс","переказ","депозит"]};
+    const vocabData=[{"uk":"листівка","translit":"/lɪsˈtʲifkɑ/","en":"noun","note":""},{"uk":"бандероль","translit":"/bɑndɛˈrolʲ/","en":"noun","note":""},{"uk":"марка","translit":"/ˈmɑrkɑ/","en":"noun","note":""},{"uk":"відправник","translit":"/vʲidprɑvˈnɪk/","en":"noun","note":""},{"uk":"одержувач","translit":"/odɛrˈʒuvɑtʃ/","en":"noun","note":""},{"uk":"індекс","translit":"/ˈindɛks/","en":"noun","note":""},{"uk":"квитанція","translit":"/kvɪˈtɑntsʲijɑ/","en":"noun","note":""},{"uk":"доставка","translit":"/dosˈtɑfkɑ/","en":"noun","note":""},{"uk":"вага","translit":"/vɑˈɦɑ/","en":"noun","note":""},{"uk":"переказ","translit":"/pɛrɛˈkɑz/","en":"noun","note":""},{"uk":"обмін","translit":"/obˈmʲin/","en":"noun","note":""},{"uk":"курс","translit":"/kurs/","en":"noun","note":""},{"uk":"депозит","translit":"/dɛpoˈzɪt/","en":"noun","note":""},{"uk":"кредит","translit":"/krɛˈdɪt/","en":"noun","note":""},{"uk":"відсоток","translit":"/vʲidˈsotok/","en":"noun","note":""},{"uk":"банкомат","translit":"/bɑnkoˈmɑt/","en":"noun","note":""},{"uk":"комісія","translit":"/koˈmʲisʲijɑ/","en":"noun","note":""},{"uk":"підпис","translit":"/ˈpʲidpɪs/","en":"noun","note":""},{"uk":"виписка","translit":"/ˈvɪpɪskɑ/","en":"noun","note":""},{"uk":"надіслати","translit":"/nɑdʲisˈlɑtɪ/","en":"verb","note":""},{"uk":"відправити","translit":"/vʲidprɑˈvɪtɪ/","en":"verb","note":""},{"uk":"обміняти","translit":"/obmʲiˈnʲɑtɪ/","en":"verb","note":""},{"uk":"зняти","translit":"/znʲɑˈtɪ/","en":"verb","note":""},{"uk":"переказати","translit":"/pɛrɛkɑˈzɑtɪ/","en":"verb","note":""},{"uk":"заповнити","translit":"/zɑˈpovnɪtɪ/","en":"verb","note":""},{"uk":"розписатися","translit":"/rozpɪˈsɑtɪsʲɑ/","en":"verb","note":""},{"uk":"перерахувати","translit":"/pɛrɛrɑxuˈvɑtɪ/","en":"verb","note":""}];
+    const totalSort=10;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': <span class="cyrillic">'+(q.question.match(/[А-ЯІЇЄҐ]+/)?.[0]||'')+'</span></h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

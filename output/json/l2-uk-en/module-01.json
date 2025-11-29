@@ -18,12 +18,12 @@
     "objectives": [
       "Recognize Cyrillic letters that look like Latin letters",
       "Identify 'False Friend' letters that look Latin but sound different",
-      "Read 20 international words in Cyrillic",
-      "Understand the phonetic logic behind Cyrillic"
+      "Read international words using learned letters",
+      "Begin building phonetic reading skills"
     ],
     "grammarFocus": [
-      "Cyrillic alphabet groups 1-3",
-      "Phonetic basics"
+      "Cyrillic alphabet groups 1-3 (18 letters)",
+      "Phonetic reading basics"
     ],
     "totalDuration": 45,
     "transliterationMode": "full",
@@ -45,7 +45,7 @@
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "### Why Cyrillic Isn't Scary\n\nCyrillic was designed for Slavic sounds. Many letters come from Greek, which is why some look familiar. The key: don't trust your eyes—trust the logic."
+            "teacherNotes": "### Why Learn Cyrillic?\n\nUkrainian uses the Cyrillic alphabet - 33 letters total. Good news: many look familiar! This module covers 18 letters you can learn quickly.\n\nThe key insight: some letters LOOK like English but make DIFFERENT sounds. We call these \"False Friends\" - they'll trick you if you're not careful!"
           }
         ]
       },
@@ -57,17 +57,17 @@
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "### Group 1: True Friends\n\nThese letters look AND sound like their Latin equivalents:\n\n• А а = A (as in 'father')\n• Е е = E (as in 'bet')\n• І і = I (as in 'machine')\n• О о = O (as in 'hot')\n• К к = K\n• М м = M\n• Т т = T"
+            "teacherNotes": "### Group 1: True Friends (7 letters)\n\nThese letters look AND sound like their Latin equivalents:\n\n| Letter | Sound | Example |\n|--------|-------|---------|\n| А а | A (as in \"father\") | мАмА |\n| Е е | E (as in \"bet\") | мЕтро |\n| І і | I (as in \"machine\") | таксІ |\n| О о | O (as in \"hot\") | фОтО |\n| К к | K | Кафе |\n| М м | M | Мама |\n| Т т | T | Тато |\n\nTrust these! They work exactly as you'd expect."
           },
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "Group 2: False Friends (DANGER!)\n\nThese letters LOOK Latin but sound DIFFERENT:\n\n• В в = V (not B!)\n• Н н = N (not H!)\n• Р р = R (not P!) - trilled\n• С с = S (not C!)\n• У у = U (not Y!)\n• Х х = KH (not X!) - like 'Bach'"
+            "teacherNotes": "Group 2: False Friends (6 letters)\n\nDANGER! These look Latin but sound completely different:\n\n| Letter | Looks like | Actually sounds like |\n|--------|------------|---------------------|\n| В в | B | V (as in \"van\") |\n| Н н | H | N (as in \"no\") |\n| Р р | P | R (rolled, as in Spanish) |\n| С с | C | S (as in \"sun\") |\n| У у | Y | U (as in \"flute\") |\n| Х х | X | KH (as in German \"Bach\") |\n\nMemorize these! They cause the most confusion for beginners."
           },
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "Group 3: New but Easy\n\nLetters that don't exist in Latin but are straightforward:\n\n• Б б = B (like a belly with a hat)\n• Д д = D\n• З з = Z\n• Л л = L\n• П п = P (like a doorway/portal)\n• Ф ф = F"
+            "teacherNotes": "Group 3: New But Easy (5 letters)\n\nThese don't exist in Latin but are straightforward:\n\n| Letter | Sound | Memory tip |\n|--------|-------|------------|\n| Б б | B | Belly with a belt |\n| Д д | D | Like a house |\n| З з | Z | Like the number 3 |\n| Л л | L | Like a tent |\n| П п | P | Like a doorway/portal |\n| Ф ф | F | Like a person with arms out |"
           },
           {
             "type": "activity",
@@ -83,7 +83,12 @@
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "### Reading Practice\n\nLet's read international words. Sound out each letter using what you've learned."
+            "teacherNotes": "### Reading Strategy\n\nWhen you see a Cyrillic word:\n1. Go letter by letter\n2. Watch for False Friends (В=V, Н=N, Р=R, С=S, У=U, Х=KH)\n3. Sound it out slowly\n4. Many words are cognates - they'll sound familiar!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Try These Words\n\nSound out each word. Most are international words you'll recognize:\n\nБАНК → B-A-N-K → bank\nПАРК → P-A-R-K → park\nМЕТРО → M-E-T-R-O → metro\nКАФЕ → K-A-F-E → café"
           },
           {
             "type": "activity",
@@ -103,17 +108,12 @@
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "### Real-World Reading\n\nTry reading these words without looking at the transliteration first:\n\n1. БАНК\n2. ПАРК\n3. МЕТРО\n4. ПІЦА\n5. СТУДЕНТ"
+            "teacherNotes": "### Reading Challenge\n\nRead these words without looking at transliteration:\n\n1. МАМА\n2. ТАТО\n3. СТУДЕНТ\n4. ФУТБОЛ\n5. МУЗИКА"
           },
           {
             "type": "canvas",
             "canvasData": "{}",
-            "teacherNotes": "Remember\n\nП = P, Р = R, В = V, Н = N, С = S, Х = KH"
-          },
-          {
-            "type": "canvas",
-            "canvasData": "{}",
-            "teacherNotes": "Italic Warning\n\nCyrillic italic/cursive looks VERY different from print!\n\nDangerous letters:\n• т → looks like \"m\" in italic\n• п → looks like \"n\" in italic\n• д → looks like \"g\" in italic\n• и → looks like \"u\" in italic\n• л → looks like \"л\" with a hook\n• г → looks like \"∂\" in italic\n\nWe'll cover this in Module 02!"
+            "teacherNotes": "False Friend Drill\n\nRemember: П = P, Р = R, В = V, Н = N, С = S, Х = KH\n\nRead these tricky words:\n- СУПЕРМАРКЕТ (supermarket)\n- РЕСТОРАН (restaurant)\n- ПАСПОРТ (passport)"
           }
         ]
       }
@@ -123,35 +123,35 @@
     {
       "id": "act-uk-A1-01-matchup",
       "type": "match-up",
-      "title": "False Friends: The Trap Letters",
-      "description": "These letters look like English but sound completely different! Match each Cyrillic letter to its actual sound.",
+      "title": "False Friends Letter Sounds",
+      "description": "Match each Cyrillic \"False Friend\" letter to its actual sound. Don't be fooled by appearances!",
       "content": {
         "type": "match-up",
-        "instructions": "These letters look like English but sound completely different! Match each Cyrillic letter to its actual sound.",
+        "instructions": "Match each Cyrillic \"False Friend\" letter to its actual sound. Don't be fooled by appearances!",
         "pairs": [
           {
-            "left": "Р р",
-            "right": "R sound (not P!)"
+            "left": "В в",
+            "right": "V sound (not B!)"
           },
           {
             "left": "Н н",
             "right": "N sound (not H!)"
           },
           {
+            "left": "Р р",
+            "right": "R sound (not P!)"
+          },
+          {
             "left": "С с",
             "right": "S sound (not C!)"
           },
           {
-            "left": "Х х",
-            "right": "KH sound (not X!)"
-          },
-          {
-            "left": "В в",
-            "right": "V sound (not B!)"
-          },
-          {
             "left": "У у",
             "right": "U sound (not Y!)"
+          },
+          {
+            "left": "Х х",
+            "right": "KH sound (not X!)"
           }
         ],
         "shuffleRight": true
@@ -174,77 +174,44 @@
     {
       "id": "act-uk-A1-01-quiz",
       "type": "quiz",
-      "title": "Decipher International Words",
-      "description": "Choose the correct English meaning for each Cyrillic word.",
+      "title": "Read International Words",
+      "description": "Choose the correct English meaning for each Cyrillic word. Sound out each letter!",
       "content": {
         "type": "quiz",
-        "instructions": "Choose the correct English meaning for each Cyrillic word.",
+        "instructions": "Choose the correct English meaning for each Cyrillic word. Sound out each letter!",
         "questions": [
-          {
-            "question": "What does ТАКСІ mean?",
-            "options": [
-              "Taxi",
-              "Task",
-              "Text",
-              "Talk"
-            ],
-            "correctIndex": 0,
-            "explanation": "ТАКСІ (taksi) = Taxi. Remember: Т=T, А=A, К=K, С=S, І=I"
-          },
           {
             "question": "What does БАНК mean?",
             "options": [
               "Bank",
+              "Bunk",
               "Back",
-              "Book",
-              "Bunch"
+              "Bonk"
             ],
             "correctIndex": 0,
-            "explanation": "БАНК (bank) = Bank. Б=B (not В!), А=A, Н=N (not H!), К=K"
-          },
-          {
-            "question": "What does МЕТРО mean?",
-            "options": [
-              "Metro",
-              "Meter",
-              "Mother",
-              "Metal"
-            ],
-            "correctIndex": 0,
-            "explanation": "МЕТРО (metro) = Metro/Subway. М=M, Е=E, Т=T, Р=R (not P!), О=O"
+            "explanation": "БАНК = B-A-N-K. Remember: Б=B, А=A, Н=N (not H!), К=K"
           },
           {
             "question": "What does ПАРК mean?",
             "options": [
               "Park",
               "Pork",
-              "Part",
+              "Peak",
               "Pack"
             ],
             "correctIndex": 0,
-            "explanation": "ПАРК (park) = Park. П=P, А=A, Р=R (not P!), К=K"
+            "explanation": "ПАРК = P-A-R-K. Remember: П=P, А=A, Р=R (not P!), К=K"
           },
           {
-            "question": "What does ПІЦА mean?",
+            "question": "What does МЕТРО mean?",
             "options": [
-              "Pizza",
-              "Peace",
-              "Piece",
-              "Price"
+              "Metro/Subway",
+              "Meter",
+              "Metro",
+              "Mother"
             ],
             "correctIndex": 0,
-            "explanation": "ПІЦА (pitsa) = Pizza. П=P, І=I, Ц=TS, А=A"
-          },
-          {
-            "question": "What does СТУДЕНТ mean?",
-            "options": [
-              "Student",
-              "Stadium",
-              "Study",
-              "Street"
-            ],
-            "correctIndex": 0,
-            "explanation": "СТУДЕНТ (student) = Student. С=S (not C!), Т=T, У=U, Д=D, Е=E, Н=N (not H!)"
+            "explanation": "МЕТРО = M-E-T-R-O. All True Friends except Р=R"
           },
           {
             "question": "What does КАФЕ mean?",
@@ -255,18 +222,51 @@
               "Calf"
             ],
             "correctIndex": 0,
-            "explanation": "КАФЕ (kafe) = Café. К=K, А=A, Ф=F, Е=E"
+            "explanation": "КАФЕ = K-A-F-E. К=K, А=A, Ф=F, Е=E"
+          },
+          {
+            "question": "What does ТАКСІ mean?",
+            "options": [
+              "Taxi",
+              "Task",
+              "Tax",
+              "Tuxedo"
+            ],
+            "correctIndex": 0,
+            "explanation": "ТАКСІ = T-A-K-S-I. Remember: С=S (not C!), І=I"
+          },
+          {
+            "question": "What does СТУДЕНТ mean?",
+            "options": [
+              "Student",
+              "Stadium",
+              "Study",
+              "Stupid"
+            ],
+            "correctIndex": 0,
+            "explanation": "СТУДЕНТ = S-T-U-D-E-N-T. С=S, У=U, Н=N"
+          },
+          {
+            "question": "What does ФУТБОЛ mean?",
+            "options": [
+              "Football",
+              "Footstool",
+              "Fútbol",
+              "Futon"
+            ],
+            "correctIndex": 0,
+            "explanation": "ФУТБОЛ = F-U-T-B-O-L. Ф=F, У=U, Б=B, Л=L"
           },
           {
             "question": "What does РАДІО mean?",
             "options": [
               "Radio",
               "Ready",
-              "Radar",
+              "Rodeo",
               "Ratio"
             ],
             "correctIndex": 0,
-            "explanation": "РАДІО (radio) = Radio. Р=R (not P!), А=A, Д=D, І=I, О=O"
+            "explanation": "РАДІО = R-A-D-I-O. Remember: Р=R (not P!)"
           }
         ],
         "shuffleQuestions": true,
@@ -292,10 +292,10 @@
       "id": "act-uk-A1-01-groupsort",
       "type": "group-sort",
       "title": "Sort the Letters",
-      "description": "Drag each letter to the correct category.",
+      "description": "Drag each letter to the correct category based on how it relates to the Latin alphabet.",
       "content": {
         "type": "group-sort",
-        "instructions": "Drag each letter to the correct category.",
+        "instructions": "Drag each letter to the correct category based on how it relates to the Latin alphabet.",
         "groups": [
           {
             "name": "True Friends (Look & Sound Same)",
@@ -321,16 +321,14 @@
             ]
           },
           {
-            "name": "New Letters (Unique to Cyrillic)",
+            "name": "New Letters (Not in Latin)",
             "items": [
               "Б",
               "Д",
               "З",
               "Л",
               "П",
-              "Ф",
-              "Ц",
-              "Й"
+              "Ф"
             ]
           }
         ],
@@ -380,12 +378,9 @@
         "Б",
         "Д",
         "З",
-        "И",
-        "Й",
         "Л",
         "П",
-        "Ф",
-        "Ц"
+        "Ф"
       ]
     },
     "words": [
@@ -397,7 +392,7 @@
         "en": "mom",
         "pos": "noun",
         "gender": "f",
-        "note": "True Friend: М=M, А=A"
+        "note": "True Friends only: М-А-М-А"
       },
       {
         "id": "v-m01-002",
@@ -407,7 +402,7 @@
         "en": "dad",
         "pos": "noun",
         "gender": "m",
-        "note": "True Friend: Т=T, О=O"
+        "note": "True Friends: Т-А-Т-О"
       },
       {
         "id": "v-m01-003",
@@ -417,7 +412,7 @@
         "en": "bank",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate. Б=B (not В)"
+        "note": "Б=B (new), Н=N (false friend)"
       },
       {
         "id": "v-m01-004",
@@ -427,7 +422,7 @@
         "en": "park",
         "pos": "noun",
         "gender": "m",
-        "note": "False Friend: П=P (not Р), Р=R"
+        "note": "П=P (new), Р=R (false friend)"
       },
       {
         "id": "v-m01-005",
@@ -437,7 +432,7 @@
         "en": "café",
         "pos": "noun",
         "gender": "n",
-        "note": "Cognate. К=K, Ф=F, Е=E"
+        "note": "All True Friends + Ф (new)"
       },
       {
         "id": "v-m01-006",
@@ -447,7 +442,7 @@
         "en": "metro",
         "pos": "noun",
         "gender": "n",
-        "note": "Cognate. Е=E"
+        "note": "Р=R (false friend)"
       },
       {
         "id": "v-m01-007",
@@ -457,7 +452,7 @@
         "en": "taxi",
         "pos": "noun",
         "gender": "n",
-        "note": "Cognate. І=I (dotted)"
+        "note": "С=S (false friend), І=I"
       },
       {
         "id": "v-m01-008",
@@ -467,7 +462,7 @@
         "en": "radio",
         "pos": "noun",
         "gender": "n",
-        "note": "False Friend: Р=R (not P)"
+        "note": "Р=R (false friend), Д=D (new)"
       },
       {
         "id": "v-m01-009",
@@ -477,7 +472,7 @@
         "en": "pizza",
         "pos": "noun",
         "gender": "f",
-        "note": "Cognate. Ц=TS sound"
+        "note": "П=P (new), Ц=TS (preview)"
       },
       {
         "id": "v-m01-010",
@@ -487,7 +482,7 @@
         "en": "soup",
         "pos": "noun",
         "gender": "m",
-        "note": "False Friend: С=S (not C), У=U"
+        "note": "С=S, У=U (false friends)"
       },
       {
         "id": "v-m01-011",
@@ -497,7 +492,7 @@
         "en": "salad",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate. Л=L"
+        "note": "С=S (false friend), Л=L (new)"
       },
       {
         "id": "v-m01-012",
@@ -507,7 +502,7 @@
         "en": "lemon",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate. И=Y sound (hard I)"
+        "note": "Л=L (new), Н=N (false friend)"
       },
       {
         "id": "v-m01-013",
@@ -517,7 +512,7 @@
         "en": "banana",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate"
+        "note": "Б=B (new), Н=N (false friend)"
       },
       {
         "id": "v-m01-014",
@@ -527,7 +522,7 @@
         "en": "hockey",
         "pos": "noun",
         "gender": "m",
-        "note": "False Friend: Х=KH/H sound (not X). Й=Y"
+        "note": "Х=KH (false friend)"
       },
       {
         "id": "v-m01-015",
@@ -537,7 +532,7 @@
         "en": "football",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate"
+        "note": "Ф=F (new), У=U, Б=B, Л=L"
       },
       {
         "id": "v-m01-016",
@@ -547,7 +542,7 @@
         "en": "student",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate. Full word recognition"
+        "note": "С=S, У=U, Н=N (false friends)"
       },
       {
         "id": "v-m01-017",
@@ -557,7 +552,7 @@
         "en": "tourist",
         "pos": "noun",
         "gender": "m",
-        "note": "Cognate"
+        "note": "У=U, Р=R, С=S (false friends)"
       },
       {
         "id": "v-m01-018",
@@ -567,7 +562,7 @@
         "en": "music",
         "pos": "noun",
         "gender": "f",
-        "note": "Cognate. З=Z"
+        "note": "У=U (false friend), З=Z (new)"
       },
       {
         "id": "v-m01-019",
@@ -577,17 +572,17 @@
         "en": "photo",
         "pos": "noun",
         "gender": "n",
-        "note": "Cognate"
+        "note": "Ф=F (new), rest True Friends"
       },
       {
         "id": "v-m01-020",
         "uk": "відео",
         "translit": "video",
-        "ipa": "/ˈwidʲɛɔ/",
+        "ipa": "/ˈwideɔ/",
         "en": "video",
         "pos": "noun",
         "gender": "n",
-        "note": "False Friend: В=V (not B)"
+        "note": "В=V (false friend), Д=D (new)"
       }
     ]
   }

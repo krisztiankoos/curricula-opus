@@ -1,290 +1,358 @@
-# B2 Curriculum Plan: Ukrainian for English Speakers
+# B2 Draft Plan - Ukrainian
 
-**Status:** 🔲 TO BUILD
-**Modules:** 126-180 (55 modules)
-**Vocabulary Target:** ~2,000 words
-**Cumulative Target:** ~5,200 words
+**Based on CEFR requirements + Ukrainian language specifics**
 
----
+## Overview
 
-## Prerequisites from B1
-
-Before starting B2, learners have completed:
-- Advanced aspect usage and motion verbs
-- Complex sentence structures
-- Reported speech and indirect questions
-- Participle introduction
-- Collocations and synonymy basics
-- ~3,200 vocabulary words (cumulative)
-
-**Transliteration Status:** NONE - fully Cyrillic
+- **Modules:** 141-220 (80 modules)
+- **Target vocabulary:** ~2,000-2,400 new words (~25-30/module)
+- **Cumulative vocabulary:** ~5,000-5,400 words
+- **Focus:** Register awareness, passive mastery, phraseology, literature intro, nuanced expression
 
 ---
 
-## CEFR B2 Can-Do Alignment
+## B2 CEFR Can-Do Statements
 
-### CEFR B2 Descriptor (Council of Europe)
-> Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in their field of specialization. Can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party. Can produce clear, detailed text on a wide range of subjects and explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.
-
-### Our B2 Can-Do Checklist
-By module 180, learners can:
-
-**Understanding (Listening/Reading)**
-- [ ] Understand extended speech and lectures, follow complex lines of argument
-- [ ] Understand most TV news and current affairs programs
-- [ ] Understand contemporary literary prose
-- [ ] Read articles on contemporary problems with particular attitudes or viewpoints
-
-**Speaking (Production/Interaction)**
-- [ ] Present clear, detailed descriptions on a wide range of subjects
-- [ ] Explain a viewpoint with advantages and disadvantages
-- [ ] Take active part in discussion in familiar contexts
-- [ ] Speak spontaneously with good grammatical control
-
-**Writing**
-- [ ] Write clear, detailed text on a variety of subjects
-- [ ] Write essays or reports conveying information or giving reasons for/against
-- [ ] Write letters highlighting personal significance of events and experiences
+At B2, learners can:
+- Understand main ideas of complex text on concrete and abstract topics
+- Interact with fluency and spontaneity with native speakers
+- Produce clear, detailed text on wide range of subjects
+- Explain viewpoint on topical issues with advantages/disadvantages
+- Function in academic and professional environments
 
 ---
 
-## Phase B2.1: Participles & Passive (Modules 126-145)
+## B2 Grammar Topics (Ukrainian-specific)
 
-### Learning Goals
-- Express abstract and hypothetical concepts
-- Master nominalization for formal discourse
-- Use advanced aspect distinctions
-- Handle specialized vocabulary domains
-- Develop sophisticated argumentation
+### Must Cover (Core B2)
 
-### Grammar Progression
+1. **Passive Voice Mastery** (10-12 modules)
+   - Past passive participles review (-ний/-тий)
+   - Impersonal -но/-то constructions (Книгу написано)
+   - Reflexive -ся passive (Будинок будується)
+   - 3rd person plural passive (Йому сказали)
+   - Choosing the right passive form
+   - Agent expression (instrumental case)
+   - Passive in different registers
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 111 | Nominalization | B1 participles | Abstract nouns |
-| 112 | Abstract vocabulary | M111 | Conceptual expression |
-| 113 | Impersonal passive | B1 passive | "It is said that" |
-| 114 | Advanced aspect nuances | B1 aspect | Aspect mastery |
-| 115 | Modal particles | B1 modals | Nuance: же, ж, бо |
-| 116 | Emphatic constructions | M115 | Emphasis patterns |
-| 117 | Complex negation | A2-B1 negation | Multiple negatives |
-| 118 | Word order for emphasis | M116 | Information structure |
-| 119 | Quotation integration | B1 reported | Academic citation |
-| 120 | Functional: Academic | M111-119 | University context |
-| 121 | Specialized: Technology | M111-120 | IT/Tech vocabulary |
-| 122 | Specialized: Business | M111-120 | Commerce vocabulary |
-| 123 | Specialized: Law/Politics | M111-120 | Legal/political vocab |
-| 124 | Specialized: Science | M111-120 | Scientific vocabulary |
-| 125 | Specialized: Arts/Culture | M111-120 | Cultural vocabulary |
-| 126 | Text coherence | M118-119 | Cohesive devices |
-| 127 | Discourse markers | M126 | Text organization |
-| 128 | Summary writing | M126-127 | Condensing texts |
-| 129 | Critical reading | M128 | Analysis skills |
-| 130 | REVIEW | M111-129 | Consolidation |
+2. **Active Participles** (4-6 modules)
+   - Present active (-учий/-ючий) - recognition
+   - Past active (-лий) - recognition
+   - Why Ukrainian prefers relative clauses
+   - Literary vs spoken language differences
+   - Reading comprehension focus
 
-### Vocabulary Plan B2.1 (600 words)
+3. **Adverbial Participles Advanced** (3-4 modules)
+   - Complex constructions
+   - Stylistic usage
+   - Formal writing patterns
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 111 | 40 | Nominalization | розвиток, дослідження, здійснення... |
-| 112 | 45 | Abstract concepts | сутність, значення, вплив, тенденція... |
-| 113 | 30 | Impersonal passive | вважається, стверджується... |
-| 114 | 30 | Aspect nuances | почати vs започаткувати... |
-| 115 | 25 | Particles | же, ж, бо, таки, хіба, невже... |
-| 116 | 30 | Emphasis | саме, якраз, власне, аж, ще й... |
-| 117 | 25 | Complex negation | ніщо, ніхто, ніколи, нізащо... |
-| 118 | 25 | Word order | focus, theme, rheme... |
-| 119 | 35 | Academic citation | за даними, на думку, як зазначає... |
-| 120 | 45 | Academic | дослідження, гіпотеза, методологія... |
-| 121 | 50 | Technology | програмування, база даних, алгоритм... |
-| 122 | 50 | Business | маркетинг, інвестиція, прибуток... |
-| 123 | 50 | Law/Politics | законодавство, демократія, права... |
-| 124 | 50 | Science | експеримент, теорія, формула... |
-| 125 | 50 | Arts/Culture | мистецтво, література, спадщина... |
-| 126 | 30 | Cohesion | при цьому, водночас, тим не менш... |
-| 127 | 30 | Discourse | по-перше, з іншого боку, підсумовуючи... |
-| 128 | 25 | Summary | узагальнити, скоротити, виділити... |
-| 129 | 25 | Critical | проаналізувати, оцінити, критикувати... |
-| 130 | 10 | Review | (consolidation) |
+4. **Register & Style** (12-15 modules)
+   - Formal vs informal overview
+   - Ти/Ви usage in depth
+   - Official/administrative language (офіційно-діловий стиль)
+   - Academic style (науковий стиль)
+   - Media/journalistic style (публіцистичний стиль)
+   - Literary style (художній стиль)
+   - Colloquial style (розмовний стиль)
+   - Slang and informal expressions
+   - Code-switching and appropriateness
+
+5. **Advanced Sentence Structures** (6-8 modules)
+   - Multi-clause sentences
+   - Embedded clauses
+   - Parenthetical expressions (до речі, між іншим)
+   - Emphatic constructions
+   - Inversion for emphasis
+
+### Should Cover (Important for B2)
+
+6. **Word Formation Advanced** (4-5 modules)
+   - Compound words (складні слова)
+   - Abbreviations and acronyms
+   - Neologisms
+   - Borrowings and their adaptation
+
+7. **Punctuation & Written Style** (3-4 modules)
+   - Ukrainian punctuation rules
+   - Comma usage (differs from English!)
+   - Direct speech punctuation
+   - Academic writing conventions
 
 ---
 
-## Phase B2.2: Stylistic Mastery (Modules 131-145)
+## B2 Vocabulary Topics
 
-### Learning Goals
-- Distinguish stylistic registers precisely
-- Use figurative language effectively
-- Master Ukrainian punctuation rules
-- Handle irony and understatement
-- Develop personal writing voice
+### Phraseology (20-25 modules)
 
-### Grammar Progression
+1. **Idioms (Фразеологізми) I-IV** - Body parts
+   - Очі: очі на лоб полізли, хоч в око стрель
+   - Руки: рукою подати, як рукою зняло
+   - Голова: морочити голову, втрачати голову
+   - Серце: брати до серця, з чистим серцем
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 131 | Stylistic registers | B1 register | Precise style choice |
-| 132 | Journalistic style | M131 | News writing |
-| 133 | Official style | M131 | Document language |
-| 134 | Literary style | M131 | Artistic expression |
-| 135 | Colloquial deep dive | B1 colloquial | Natural speech |
-| 136 | Figurative language | M134 | Metaphor, idiom |
-| 137 | Irony and humor | M136 | Subtle meaning |
-| 138 | Punctuation mastery | All | Ukrainian rules |
-| 139 | Regional variation | M135 | Dialects awareness |
-| 140 | Historical influences | M139 | Language evolution |
-| 141 | Ukrainian vs Russian | M140 | False friends, surzhyk |
-| 142 | Functional: Debate | M131-137 | Argumentation |
-| 143 | Functional: Presentation | M142 | Public speaking |
-| 144 | Essay writing | M142-143 | Extended argument |
-| 145 | REVIEW | M131-144 | Consolidation |
+2. **Idioms V-VIII** - Animals
+   - Вовк: про вовка промовка, вовком дивитися
+   - Птахи: біла ворона, вбити двох зайців
+   - Риба/вода: як риба у воді, ні риба ні м'ясо
+   - Mixed: купити кота в мішку, показати де раки зимують
 
-### Vocabulary Plan B2.2 (450 words)
+3. **Proverbs (Прислів'я) I-IV**
+   - Work & effort: під лежачий камінь вода не тече
+   - Wisdom: сім разів відміряй, один раз відріж
+   - Family: яблуко від яблуні недалеко падає
+   - Character: не все те золото, що блищить
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 131 | 35 | Style markers | книжний, розмовний, урочистий... |
-| 132 | 35 | Journalism | репортаж, редакція, тираж... |
-| 133 | 35 | Official | постанова, указ, протокол... |
-| 134 | 40 | Literary | метафора, символ, образ... |
-| 135 | 40 | Colloquial deep | сленг, жаргон, просторіччя... |
-| 136 | 40 | Figurative | порівняння, алегорія, гіпербола... |
-| 137 | 30 | Irony/Humor | сарказм, іронія, гумор, дотеп... |
-| 138 | 25 | Punctuation | кома, крапка з комою, тире... |
-| 139 | 35 | Regional | говірка, діалект, наріччя... |
-| 140 | 35 | Historical | церковнослов'янський, запозичення... |
-| 141 | 40 | Uk vs Ru | суржик, калька, русизм... |
-| 142 | 35 | Debate | аргумент, контраргумент, спростування... |
-| 143 | 30 | Presentation | слайд, виступ, аудиторія... |
-| 144 | 30 | Essay | теза, антитеза, синтез... |
-| 145 | 10 | Review | (consolidation) |
+4. **Set Expressions I-IV**
+   - Agreement/disagreement formal
+   - Hedging and softening
+   - Emphasis and intensifiers
+   - Transition and discourse
 
----
+### Near-Synonyms Deep Dive (10-12 modules)
 
-## Phase B2.3: Professional & Academic Excellence (Modules 146-160)
+5. **Verbs of Communication**
+   - казати/говорити/розповідати/повідомляти/сповіщати
+   - питати/запитувати/цікавитися/розпитувати
+   - відповідати/реагувати/заперечувати
 
-### Learning Goals
-- Function in professional Ukrainian environments
-- Write academic papers and reports
-- Handle job interviews and negotiations
-- Understand bureaucratic procedures
-- Achieve near-fluent communication
+6. **Verbs of Cognition**
+   - знати/розуміти/усвідомлювати/осягати
+   - пам'ятати/згадувати/нагадувати
+   - забувати/випускати з голови
 
-### Grammar Progression
+7. **Verbs of Emotion**
+   - любити/кохати/подобатися/захоплюватися
+   - ненавидіти/не терпіти/не зносити
+   - боятися/лякатися/побоюватися/остерігатися
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 146 | Professional correspondence | M133 | Business emails |
-| 147 | Meeting language | M146 | Conference skills |
-| 148 | Negotiation language | M147 | Deal-making |
-| 149 | CV and cover letter | M146 | Job applications |
-| 150 | Interview skills | M149 | Hiring process |
-| 151 | Academic writing I | M120, M144 | Research papers |
-| 152 | Academic writing II | M151 | Thesis structure |
-| 153 | Bureaucratic Ukrainian | M133 | Government docs |
-| 154 | Legal documents | M123, M153 | Contracts, forms |
-| 155 | Medical communication | M153 | Healthcare context |
-| 156 | Error correction | All | Self-editing |
-| 157 | Style improvement | M156 | Polish writing |
-| 158 | B2 Integration I | All B2 | Comprehensive use |
-| 159 | B2 Integration II | M158 | Advanced scenarios |
-| 160 | B2 FINAL REVIEW | All modules | Certification prep |
+8. **Adjectives of Quality**
+   - великий/величезний/здоровенний/чималий
+   - малий/маленький/крихітний/мізерний
+   - гарний/красивий/вродливий/чудовий/прекрасний
 
-### Vocabulary Plan B2.3 (450 words)
+9. **Adjectives of Character**
+   - розумний/мудрий/кмітливий/тямущий
+   - дурний/нерозумний/безглуздий
+   - добрий/щедрий/милосердний/лагідний
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 146 | 40 | Correspondence | звернення, вкладення, копія... |
-| 147 | 35 | Meetings | порядок денний, протокол, ухвала... |
-| 148 | 35 | Negotiation | умови, компроміс, поступка... |
-| 149 | 30 | CV/Cover | кваліфікація, досвід, рекомендація... |
-| 150 | 35 | Interview | співбесіда, кандидат, очікування... |
-| 151 | 40 | Academic I | джерело, посилання, цитування... |
-| 152 | 35 | Academic II | вступ, огляд літератури, висновки... |
-| 153 | 40 | Bureaucratic | заява, довідка, посвідчення... |
-| 154 | 40 | Legal | договір, стаття, пункт, зобов'язання... |
-| 155 | 40 | Medical | діагноз, лікування, рецепт... |
-| 156 | 25 | Errors | помилка, описка, неточність... |
-| 157 | 25 | Style | редагування, вичитка, корекція... |
-| 158 | 30 | Integration | (comprehensive review) |
-| 159 | 25 | Integration | (advanced scenarios) |
-| 160 | 10 | Review | (final consolidation) |
+### Thematic Vocabulary (15-20 modules)
+
+10. **Academic & Education Advanced**
+    - Research, thesis, methodology, hypothesis
+    - Academic verbs: досліджувати, аналізувати, синтезувати
+
+11. **Media & Journalism**
+    - Headlines, articles, editorials, op-eds
+    - Bias, objectivity, sources
+
+12. **Politics & Government**
+    - Democracy, elections, parliament, legislation
+    - Parties, coalitions, opposition
+
+13. **Law & Justice**
+    - Court, trial, judge, lawyer, verdict
+    - Rights, obligations, contracts
+
+14. **Economics & Business**
+    - Market, inflation, investment, profit
+    - Negotiations, agreements, partnerships
+
+15. **Medicine & Health Advanced**
+    - Diagnosis, treatment, surgery, recovery
+    - Mental health vocabulary
+
+16. **Technology Advanced**
+    - Software, hardware, AI, data
+    - Cybersecurity, privacy
+
+17. **Environment & Ecology**
+    - Climate change, sustainability, conservation
+    - Pollution, renewable energy
+
+18. **Philosophy & Abstract Thought**
+    - Existence, consciousness, morality
+    - Arguments, logic, reasoning
 
 ---
 
-## Vocabulary Master List (1500 words for B2)
+## Literature Introduction (8-10 modules)
 
-### Distribution by Domain
+### Foundations
+1. **Introduction to Ukrainian Literature**
+   - Overview of literary history
+   - Key periods and movements
 
-| Domain | Words | Modules |
-|--------|-------|---------|
-| Abstract/Academic | 200 | 111-112, 120, 151-152 |
-| Grammar/Style | 150 | 113-118, 131, 156-157 |
-| Citation/Discourse | 100 | 119, 126-129 |
-| Specialized domains | 250 | 121-125 |
-| Registers | 200 | 131-135, 139-141 |
-| Figurative/Literary | 110 | 134, 136-137 |
-| Professional | 200 | 146-150 |
-| Bureaucratic/Legal | 120 | 153-155 |
-| Debate/Presentation | 70 | 142-144 |
-| Review | 100 | Various |
+2. **Котляревський: Енеїда**
+   - The birth of modern Ukrainian literature (1798)
+   - Burlesque style, vernacular language
+   - Excerpts and cultural significance
 
-**Total B2:** ~1500 words
-**Cumulative A1-B2:** ~4700 words
+### Poetry
+3. **Taras Shevchenko I**
+   - Biography, significance as national poet
+   - Simple poems from Kobzar
 
----
+4. **Taras Shevchenko II**
+   - More complex works
+   - Historical and political context
 
-## Cross-Module Dependencies B2
+5. **Lesya Ukrainka I**
+   - Biography, significance
+   - Selected poems
 
-```
-B1 Foundation (M66-110)
-  │
-  ├── M111-112 Nominalization/Abstract
-  │     └── M120 Academic foundation
-  │           ├── M121-125 Specialized domains
-  │           └── M151-152 Academic writing
-  │
-  ├── M113-118 Advanced structures
-  │     └── M126-129 Text skills
-  │           └── M144 Essay writing
-  │
-  ├── M131-135 Stylistic registers
-  │     ├── M132-133 Journalistic/Official
-  │     │     └── M146-150 Professional
-  │     │           └── M153-155 Specialized professional
-  │     └── M134-137 Literary/Figurative
-  │           └── M142-143 Debate/Presentation
-  │
-  └── M139-141 Variation/History
-        └── M156-157 Error/Style
-              └── M158-160 Integration
-```
+6. **Lesya Ukrainka II**
+   - "Лісова пісня" excerpts
+   - Dramatic poetry
+
+### Prose
+7. **Ivan Franko**
+   - Short stories
+   - Social themes
+
+8. **Modern Ukrainian Literature**
+   - 20th century overview
+   - Contemporary authors intro
+
+9. **Reading Strategies**
+   - Literary analysis basics
+   - Unknown word strategies
 
 ---
 
-## Quality Checklist B2
+## Proposed Module Structure
 
-Before generating any module:
+### B2.1: Passive Voice & Register (Modules 141-165)
 
-- [ ] All B1 prerequisites are met
-- [ ] Grammar builds on previous modules
-- [ ] Vocabulary appropriate for B2 CEFR level
-- [ ] Multiple registers represented in materials
-- [ ] Academic and professional contexts included
-- [ ] Complex texts used for comprehension
-- [ ] Extended production tasks required
-- [ ] Stylistic variation expected
-- [ ] Review modules cover all preceding content
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 141 | Passive Voice Overview | Grammar | All Ukrainian passive forms |
+| 142 | Past Passive Participles Review | Grammar | -ний/-тий formation & use |
+| 143 | Impersonal -но/-то | Grammar | Книгу написано, роботу зроблено |
+| 144 | Reflexive Passive -ся | Grammar | Будинок будується |
+| 145 | 3rd Person Plural Passive | Grammar | Йому сказали, мене запитали |
+| 146 | Choosing Passive Forms | Grammar | When to use which |
+| 147 | Passive in Context | Practice | All forms integrated |
+| 148 | Register: Introduction | Grammar | Five styles overview |
+| 149 | Register: Formal vs Informal | Grammar | Ти/Ви, word choice |
+| 150 | Register: Official Style | Grammar | Documents, applications |
+| 151 | Register: Academic Style | Grammar | Essays, research |
+| 152 | Register: Media Style | Grammar | News, journalism |
+| 153 | Register: Literary Style | Grammar | Fiction, poetry |
+| 154 | Register: Colloquial Style | Grammar | Informal speech, slang |
+| 155 | Register Practice | Practice | Rewriting across registers |
+| 156 | Active Participles I | Grammar | -учий/-ючий recognition |
+| 157 | Active Participles II | Grammar | -лий recognition |
+| 158 | Participles vs Clauses | Grammar | Literary vs spoken |
+| 159 | Advanced Adverbial Participles | Grammar | Complex constructions |
+| 160 | Politics & Government | Vocabulary | Democracy, parliament |
+| 161 | Law & Justice | Vocabulary | Courts, rights |
+| 162 | Economics & Business | Vocabulary | Markets, negotiations |
+| 163 | B2.1 Review I | Review | Passive voice |
+| 164 | B2.1 Review II | Review | Register |
+| 165 | B2.1 Checkpoint | Review | Assessment |
+
+### B2.2: Phraseology (Modules 166-190)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 166 | Idioms: Body I | Vocabulary | Очі, вуха |
+| 167 | Idioms: Body II | Vocabulary | Руки, ноги |
+| 168 | Idioms: Body III | Vocabulary | Голова, серце |
+| 169 | Idioms: Animals I | Vocabulary | Вовк, собака |
+| 170 | Idioms: Animals II | Vocabulary | Птахи, риба |
+| 171 | Idioms: Nature | Vocabulary | Вода, камінь, дерево |
+| 172 | Idioms: Daily Life | Vocabulary | Food, home, work |
+| 173 | Proverbs: Work & Effort | Vocabulary | Під лежачий камінь... |
+| 174 | Proverbs: Wisdom | Vocabulary | Сім разів відміряй... |
+| 175 | Proverbs: Character | Vocabulary | Не все те золото... |
+| 176 | Proverbs: Relationships | Vocabulary | Family, friends |
+| 177 | Set Expressions: Formal | Vocabulary | Business, official |
+| 178 | Set Expressions: Hedging | Vocabulary | Softening, politeness |
+| 179 | Set Expressions: Emphasis | Vocabulary | Intensifiers |
+| 180 | Set Expressions: Discourse | Vocabulary | Transitions, connectors |
+| 181 | Phraseology in Context I | Practice | Reading with idioms |
+| 182 | Phraseology in Context II | Practice | Using idioms naturally |
+| 183 | Medicine & Health Advanced | Vocabulary | Diagnosis, treatment |
+| 184 | Technology Advanced | Vocabulary | Software, AI, data |
+| 185 | Environment & Ecology | Vocabulary | Climate, sustainability |
+| 186 | Philosophy & Abstract | Vocabulary | Existence, morality |
+| 187 | B2.2 Review I | Review | Idioms |
+| 188 | B2.2 Review II | Review | Proverbs & expressions |
+| 189 | B2.2 Checkpoint | Review | Assessment |
+| 190 | Phraseology Integration | Practice | All phraseology |
+
+### B2.3: Synonymy & Nuance (Modules 191-210)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 191 | Synonyms: Speaking I | Vocabulary | казати/говорити/розповідати |
+| 192 | Synonyms: Speaking II | Vocabulary | повідомляти/сповіщати/заявляти |
+| 193 | Synonyms: Asking | Vocabulary | питати/запитувати/цікавитися |
+| 194 | Synonyms: Thinking I | Vocabulary | думати/гадати/вважати |
+| 195 | Synonyms: Thinking II | Vocabulary | розуміти/усвідомлювати/осягати |
+| 196 | Synonyms: Memory | Vocabulary | пам'ятати/згадувати/нагадувати |
+| 197 | Synonyms: Emotion I | Vocabulary | любити/кохати/подобатися |
+| 198 | Synonyms: Emotion II | Vocabulary | боятися/лякатися/побоюватися |
+| 199 | Synonyms: Size | Vocabulary | великий/величезний/здоровенний |
+| 200 | Synonyms: Quality | Vocabulary | гарний/красивий/чудовий |
+| 201 | Synonyms: Character | Vocabulary | розумний/мудрий/кмітливий |
+| 202 | Synonyms: Movement | Vocabulary | швидко/хутко/стрімко |
+| 203 | Word Formation Advanced I | Grammar | Compound words |
+| 204 | Word Formation Advanced II | Grammar | Abbreviations, neologisms |
+| 205 | Advanced Sentences I | Grammar | Multi-clause structures |
+| 206 | Advanced Sentences II | Grammar | Emphasis, inversion |
+| 207 | Punctuation Ukrainian | Grammar | Comma rules, direct speech |
+| 208 | B2.3 Review I | Review | Synonyms |
+| 209 | B2.3 Review II | Review | Advanced grammar |
+| 210 | B2.3 Checkpoint | Review | Assessment |
+
+### B2.4: Literature & Integration (Modules 211-220)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 211 | Ukrainian Literature Intro | Literature | History, periods, movements |
+| 212 | Котляревський: Енеїда | Literature | Birth of modern Ukrainian (1798) |
+| 213 | Taras Shevchenko I | Literature | Biography, simple poems |
+| 214 | Taras Shevchenko II | Literature | Kobzar selections |
+| 215 | Lesya Ukrainka I | Literature | Biography, poems |
+| 216 | Lesya Ukrainka II | Literature | Лісова пісня excerpts |
+| 217 | Ivan Franko | Literature | Short stories |
+| 218 | Modern Literature | Literature | 20th century, contemporary |
+| 219 | B2 Integration | Practice | All B2 skills |
+| 220 | B2 Capstone | Review | Comprehensive assessment |
 
 ---
 
-## Transition to C1
+## Summary
 
-After completing B2, learners are ready for:
-- Near-native grammatical sophistication
-- Implicit and nuanced meaning
-- Extended professional specialization
-- Literary and cultural deep study
-- Academic research and publishing
-- Simultaneous interpretation skills foundation
-- Advanced regional/historical variation
-- Native-like fluency in most contexts
+- **Total B2 modules:** 80 (141-220)
+- **Grammar modules:** ~30
+- **Vocabulary/Phraseology modules:** ~35
+- **Literature modules:** ~8
+- **Review/checkpoint modules:** ~7
+- **Target new words:** ~2,000-2,400 (~25-30/module)
+- **Cumulative after B2:** ~5,000-5,400 words
+
+---
+
+## Notes
+
+1. **Phraseology is heavily emphasized** - Ukrainian has extremely rich idiomatic expressions. This is where "fluency" comes from.
+
+2. **Register awareness** is crucial for B2 - knowing WHEN to use formal vs informal Ukrainian.
+
+3. **Active participles** are taught for RECOGNITION only - they appear in literary texts but aren't used in speech.
+
+4. **Literature** is introduced gently - focus on cultural literacy, not deep analysis (that's C1).
+
+5. **Synonymy** modules address the richness of Ukrainian vocabulary - multiple words for same concept with subtle differences.
+
+---
+
+## Sources
+
+- [Ukrainian Lessons - 20 Ukrainian Idioms](https://www.ukrainianlessons.com/20-ukrainian-idioms-proverbs-and-expressions/)
+- [SpeakUA - 25 Ukrainian Sayings](https://speakua.com/blog/25-ukrainian-famous-sayings-proverbs-and-idioms-to-get-your-head-around_1)
+- [ukrainianlanguage.org.uk - Participles](https://www.ukrainianlanguage.org.uk/read/unit17/page17-7.htm)
+- [ukrainianlanguage.org.uk - Register](https://www.ukrainianlanguage.org.uk/read/unit20/page20-6.htm)

@@ -1,366 +1,369 @@
-# C1 Curriculum Plan: Ukrainian for English Speakers
+# C1 Draft Plan - Ukrainian
 
-**Status:** 🔲 TO BUILD
-**Modules:** 181-240 (60 modules)
-**Vocabulary Target:** ~2,300 words
-**Cumulative Target:** ~7,500 words
+**Based on CEFR requirements + Ukrainian language specifics**
 
----
+## Overview
 
-## Prerequisites from B2
-
-Before starting C1, learners have completed:
-- Participles and passive voice
-- Stylistic register awareness
-- Advanced phraseology
-- Literary language basics
-- ~5,200 vocabulary words (cumulative)
-
-**Proficiency Status:** Upper-intermediate fluency, approaching advanced
+- **Modules:** 221-320 (100 modules)
+- **Target vocabulary:** ~2,500-3,000 new words (~25-30/module)
+- **Cumulative vocabulary:** ~7,700-8,200 words
+- **Focus:** Literary mastery, academic writing, professional fields, sociolinguistics, nuanced expression
 
 ---
 
-## CEFR C1 Can-Do Alignment
+## C1 CEFR Can-Do Statements
 
-### CEFR C1 Descriptor (Council of Europe)
-> Can understand a wide range of demanding, longer texts, and recognize implicit meaning. Can express ideas fluently and spontaneously without much obvious searching for expressions. Can use language flexibly and effectively for social, academic and professional purposes. Can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organizational patterns, connectors, and cohesive devices.
-
-### Our C1 Can-Do Checklist
-By module 240, learners can:
-
-**Understanding (Listening/Reading)**
-- [ ] Understand extended speech even when not clearly structured
-- [ ] Understand television programs and films without much effort
-- [ ] Understand long complex factual and literary texts
-- [ ] Appreciate distinctions of style and implicit meaning
-- [ ] Follow academic lectures and professional presentations
-- [ ] Understand Ukrainian literature from various periods
-
-**Speaking (Production/Interaction)**
-- [ ] Express ideas fluently and spontaneously
-- [ ] Use language flexibly for social and professional purposes
-- [ ] Formulate ideas precisely and relate contributions skillfully
-- [ ] Present clear, detailed descriptions of complex subjects
-- [ ] Discuss Ukrainian history, culture, and current events confidently
-- [ ] Engage in debates on complex topics
-
-**Writing**
-- [ ] Express self in clear, well-structured text
-- [ ] Write about complex subjects in letters, essays, reports
-- [ ] Select appropriate style for the reader in mind
-- [ ] Write professional and academic texts at a high standard
-- [ ] Produce creative writing with stylistic awareness
+At C1, learners can:
+- Understand wide range of demanding, longer texts and recognize implicit meaning
+- Express ideas fluently and spontaneously without obvious searching for expressions
+- Use language flexibly and effectively for social, academic, and professional purposes
+- Produce clear, well-structured, detailed text on complex subjects
+- Show controlled use of organizational patterns, connectors, and cohesive devices
 
 ---
 
-## C1 Structure Overview
+## C1 Major Topics
 
-| Phase | Modules | Focus | New Words |
-|-------|---------|-------|-----------|
-| C1.1 | 181-200 | Literary & Academic | ~600 |
-| C1.2 | 201-220 | Professional & Discourse | ~600 |
-| C1.3 | 221-240 | Mastery & Specialization | ~1,100 |
-| **Total C1** | **60 modules** | | **~2,300 words** |
+### 1. Literary Ukrainian (25-30 modules)
 
-**Cumulative A1-C1:** ~6450 words (CEFR C1 target: 5500-8000 ✓)
+**Classic Literature Deep Dive**
+- Kotliarevsky: Енеїда in depth
+- Shevchenko: Кобзар comprehensive study
+- Ivan Franko: Poetry and prose
+- Lesya Ukrainka: Драматичні поеми
+- Marko Vovchok: Early prose
+- Panas Myrny: Realistic prose
+- Mykhailo Kotsiubynsky: Тіні забутих предків
 
----
+**20th Century Literature**
+- Executed Renaissance (Розстріляне відродження)
+- Павло Тичина, Максим Рильський
+- Олександр Довженко
+- Ліна Костенко
+- Василь Стус
+- Dissidents and emigré literature
 
-## Phase C1.1: Native-like Comprehension (Modules 161-180)
+**Contemporary Literature**
+- Сергій Жадан
+- Юрій Андрухович
+- Оксана Забужко
+- Contemporary poetry
+- War literature (post-2014)
 
-### Learning Goals
-- Understand implicit and subtle meaning
-- Process rapid native speech
-- Comprehend literary and cultural texts
-- Handle ambiguity and inference
-- Recognize all stylistic nuances
+**Literary Analysis Skills**
+- Analyzing poetry (meter, rhyme, imagery)
+- Prose analysis (narrative, characterization)
+- Drama analysis
+- Literary criticism vocabulary
+- Historical context
 
-### Grammar Progression
+### 2. Academic Ukrainian (15-20 modules)
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 161 | Implicit meaning | B2 style | Reading between lines |
-| 162 | Inferential comprehension | M161 | Understanding unstated |
-| 163 | Ambiguity handling | M162 | Multiple interpretations |
-| 164 | Rapid speech processing | B2 listening | Native-speed comprehension |
-| 165 | Reduced speech forms | M164 | Contractions, elisions |
-| 166 | Literary Ukrainian introduction | B2 literary | Classic/modern lit |
-| 167 | Poetry and verse | M166 | Poetic language |
-| 168 | Drama and dialogue | M166-167 | Theatrical Ukrainian |
-| 169 | Film and media | M164-165 | Cinema comprehension |
-| 170 | News deep dive | B2 journalism | Full news understanding |
-| 171 | Academic lectures | B2 academic | University study |
-| 172 | Cultural references | M166-170 | Allusions, intertextuality |
-| 173 | Historical texts | B2 historical | Archaic forms |
-| 174 | Regional deep dive | B2 regional | Dialect comprehension |
-| 175 | Ukrainian humor | B1 humor, M172 | Comedy, satire |
-| 176 | Proverbs and sayings | M172, M175 | Folk wisdom |
-| 177 | Songs and music | M167, M176 | Musical Ukrainian |
-| 178 | Comprehension integration | M161-177 | All sources |
-| 179 | Advanced listening | M178 | Challenging audio |
-| 180 | REVIEW | M161-179 | Consolidation |
+**Research & Writing**
+- Academic essay structure
+- Thesis statements and arguments
+- Literature review writing
+- Research methodology vocabulary
+- Citation and referencing
+- Academic integrity
 
-### Vocabulary Plan C1.1 (600 words)
+**Academic Discourse**
+- Presenting arguments
+- Counterarguments and rebuttals
+- Hedging language (можливо, ймовірно, схоже на те)
+- Qualifications and limitations
+- Summarizing and paraphrasing
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 161 | 35 | Implicit meaning | натяк, підтекст, алюзія... |
-| 162 | 30 | Inference | припускати, виводити, здогадуватися... |
-| 163 | 30 | Ambiguity | двозначність, багатозначність... |
-| 164 | 35 | Rapid speech | редукція, асиміляція... |
-| 165 | 30 | Reduced forms | еліпсис, скорочення... |
-| 166 | 45 | Literature | проза, романтизм, модернізм... |
-| 167 | 40 | Poetry | вірш, рима, строфа, метафора... |
-| 168 | 35 | Drama | п'єса, монолог, діалог, сцена... |
-| 169 | 40 | Film/Media | кадр, монтаж, саундтрек... |
-| 170 | 35 | News advanced | аналітика, розслідування... |
-| 171 | 40 | Academic | семінар, конференція, публікація... |
-| 172 | 40 | Cultural | традиція, символіка, архетип... |
-| 173 | 35 | Historical | давньоукраїнський, козацький... |
-| 174 | 35 | Regional | лемківський, галицький, полтавський... |
-| 175 | 35 | Humor | жарт, анекдот, сатира, пародія... |
-| 176 | 40 | Proverbs | приказка, прислів'я, побажання... |
-| 177 | 35 | Music | пісня, мелодія, текст, виконавець... |
-| 178 | 25 | Integration | (comprehension skills) |
-| 179 | 25 | Listening | (advanced audio) |
-| 180 | 10 | Review | (consolidation) |
+**Academic Genres**
+- Наукова стаття (research article)
+- Реферат (abstract/summary)
+- Курсова робота (term paper)
+- Дипломна робота (thesis)
+- Рецензія (review)
 
----
+### 3. Professional Fields (20-25 modules)
 
-## Phase C1.2: Sophisticated Production (Modules 181-200)
+**Business & Economics**
+- Corporate language
+- Negotiations vocabulary
+- Contracts and agreements
+- Financial terminology
+- Marketing and advertising
 
-### Learning Goals
-- Produce fluent, spontaneous speech
-- Write at professional/academic standards
-- Master rhetorical devices
-- Handle simultaneous interpretation basics
-- Achieve native-like accuracy
+**Legal**
+- Court proceedings
+- Contracts and legal documents
+- Constitutional vocabulary
+- Criminal vs civil law
+- Legal terminology
 
-### Grammar Progression
+**Medical**
+- Advanced anatomy
+- Diseases and conditions
+- Medical procedures
+- Patient communication
+- Medical documentation
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 181 | Spontaneous production | All B2 | Natural fluency |
-| 182 | Self-correction strategies | M181 | On-the-fly fixes |
-| 183 | Circumlocution | M181-182 | Working around gaps |
-| 184 | Rhetorical devices | B2 argumentation | Persuasion |
-| 185 | Oratory skills | M184 | Public speaking |
-| 186 | Academic presentation | M185 | Conference talks |
-| 187 | Professional writing | B2 professional | High-level business |
-| 188 | Creative writing | B2 literary | Fiction, poetry |
-| 189 | Translation principles | All | Uk↔En basics |
-| 190 | Interpretation basics | M189 | Consecutive interp |
-| 191 | Register mastery | B2 registers | Seamless switching |
-| 192 | Idiomatic fluency | B1-B2 idioms | Native-like expression |
-| 193 | Emotional nuance | M192 | Subtle tone |
-| 194 | Debate and argumentation | M184, M191 | Formal debate |
-| 195 | Negotiation language | M194 | Complex discussions |
-| 196 | Professional mastery | All B2-C1 | Top-level function |
-| 197 | Cultural competence | C1.1 cultural | Full integration |
-| 198 | Production integration I | M181-197 | Comprehensive use |
-| 199 | Production integration II | M198 | Advanced scenarios |
-| 200 | REVIEW | M181-199 | Consolidation |
+**Technology & IT**
+- Software development
+- Data science vocabulary
+- Cybersecurity
+- Tech industry jargon
+- Technical documentation
 
-### Vocabulary Plan C1.2 (450 words)
+**Journalism & Media**
+- Editorial writing
+- Investigative journalism vocabulary
+- Media ethics
+- Propaganda analysis
+- Press releases
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 181 | 30 | Fluency | плавність, швидкість, природність... |
-| 182 | 25 | Self-correction | виправлення, уточнення, перефразування... |
-| 183 | 25 | Circumlocution | описово, іншими словами... |
-| 184 | 35 | Rhetoric | риторика, переконання, маніпуляція... |
-| 185 | 35 | Oratory | промова, виступ, красномовство... |
-| 186 | 35 | Academic pres | доповідь, презентація, тези... |
-| 187 | 40 | Prof writing | меморандум, звіт, пропозиція... |
-| 188 | 40 | Creative | оповідання, нарис, есе... |
-| 189 | 35 | Translation | переклад, еквівалент, адаптація... |
-| 190 | 35 | Interpretation | тлумачення, усний переклад... |
-| 191 | 25 | Register | формальний, неформальний, нейтральний... |
-| 192 | 30 | Idiomatic | фразеологізм, усталений вираз... |
-| 193 | 25 | Emotional | відтінок, настрій, тональність... |
-| 194 | 30 | Debate | дебати, полеміка, опонент... |
-| 195 | 25 | Negotiation | компроміс, поступка, ультиматум... |
-| 196 | 30 | Professional | експертиза, консультація, аналіз... |
-| 197 | 30 | Cultural | ментальність, ідентичність, спадщина... |
-| 198 | 20 | Integration | (comprehensive review) |
-| 199 | 20 | Integration | (advanced scenarios) |
-| 200 | 10 | Review | (consolidation) |
+**Political & Diplomatic**
+- International relations
+- Diplomacy vocabulary
+- Political systems
+- EU/NATO terminology
+- Historical political vocabulary
 
----
+### 4. Sociolinguistics (15-20 modules)
 
-## Phase C1.3: Ukrainian History & Geography (Modules 201-210)
+**Ukrainian Dialects**
+- Northern (Polissian) dialects
+- Southwestern dialects (Hutsul, Boiko, Lemko)
+- Southeastern dialects (basis for standard)
+- Dialectal vocabulary
+- Regional expressions
+- Listening comprehension of dialects
 
-### Learning Goals
-- Understand Ukrainian history from ancient times to present
-- Discuss historical events with appropriate vocabulary
-- Read historical documents and texts
-- Understand geographical and demographic context
-- Connect history to contemporary Ukraine
+**Language Contact & Borrowings**
+- Historical borrowings (Polish, German, Turkish, Tatar)
+- Modern borrowings and adaptation
+- Anglicisms in contemporary Ukrainian
+- Maintaining linguistic identity
 
-### Content Progression
+**Language History**
+- Old Ukrainian features
+- Middle Ukrainian period
+- Development of modern standard
+- Spelling reforms
+- Loan words through history (Polish, German, Turkish, etc.)
 
-| Module | Topic | Period/Focus | Key Content |
-|--------|-------|--------------|-------------|
-| 201 | Ancient Ukraine | Prehistory - Kyivan Rus' | Trypillian culture, Scythians, founding of Kyiv |
-| 202 | Kyivan Rus' | 9th-13th century | Volodymyr, Yaroslav, Christianity, Mongol invasion |
-| 203 | Cossack Era I | 14th-16th century | Lithuanian-Polish period, Cossack origins |
-| 204 | Cossack Era II | 17th century | Khmelnytsky, Hetmanate, Pereyaslav |
-| 205 | Imperial Period | 18th-19th century | Russian/Austrian rule, national awakening |
-| 206 | 20th Century I | 1900-1945 | Revolution, UNR, Soviet period, Holodomor, WWII |
-| 207 | 20th Century II | 1945-1991 | Soviet Ukraine, dissidents, Chornobyl, independence |
-| 208 | Independent Ukraine | 1991-present | Orange Revolution, Euromaidan, current events |
-| 209 | Geography & Regions | Physical/human | Oblasts, cities, landscapes, demographics |
-| 210 | REVIEW | All history | Integration and discussion |
+**Language Policy**
+- Language laws in Ukraine
+- Education policy
+- Media language
+- Language in independent Ukraine
+- Decolonization and derussification
 
-### Vocabulary Plan C1.3 (350 words)
+### 5. Advanced Stylistics (10-15 modules)
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 201 | 40 | Ancient | плем'я, князь, городище, слов'яни... |
-| 202 | 40 | Kyivan Rus' | хрещення, літопис, віче, дружина... |
-| 203 | 35 | Early Cossacks | козак, Січ, гетьман, шляхта... |
-| 204 | 35 | Hetmanate | повстання, договір, автономія... |
-| 205 | 35 | Imperial | імперія, кріпацтво, відродження... |
-| 206 | 40 | 20th cent I | революція, голодомор, репресії, окупація... |
-| 207 | 35 | 20th cent II | дисидент, застій, перебудова, незалежність... |
-| 208 | 35 | Modern | демократія, євроінтеграція, реформа... |
-| 209 | 40 | Geography | область, регіон, ландшафт, населення... |
-| 210 | 15 | Review | (consolidation) |
+**Rhetorical Devices**
+- Metaphor and simile
+- Irony and sarcasm
+- Hyperbole and litotes
+- Euphemisms
+- Rhetorical questions
 
-### Media Requirements C1.3
-- Historical maps and timelines
-- Documentary clips (permission required)
-- Primary source excerpts
-- Museum and monument imagery
+**Nuanced Communication**
+- Degrees of certainty
+- Hedging and softening
+- Politeness strategies
+- Face-saving expressions
+- Indirect communication
+
+**Humor & Wordplay**
+- Ukrainian humor traditions
+- Puns and wordplay
+- Anecdotes
+- Satirical language
+
+**Formal vs Informal Mastery**
+- High formal (official documents)
+- Academic formal
+- Business formal
+- Casual formal
+- Intimate informal
+- Slang and taboo language
+
+### 6. Advanced Grammar (5-8 modules)
+
+**Archaic & Literary Forms**
+- Old verb forms
+- Literary participle usage
+- Church Slavonic influences
+- Poetic inversions
+
+**Complex Constructions**
+- Multi-level embedding
+- Gerund constructions
+- Absolute constructions
+- Stylistic variations
 
 ---
 
-## Phase C1.4: Ukrainian Literature & Arts (Modules 211-220)
+## Proposed Module Structure
 
-### Learning Goals
-- Read and analyze Ukrainian literature
-- Understand literary movements and periods
-- Appreciate Ukrainian visual arts, music, cinema
-- Discuss artistic works with sophisticated vocabulary
-- Connect arts to cultural identity
+### C1.1: Literary Ukrainian I - Classics (Modules 221-245)
 
-### Content Progression
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 221 | Ukrainian Literary History | Literature | Overview: Old to Modern |
+| 222 | Котляревський: Енеїда I | Literature | Structure, language, context |
+| 223 | Котляревський: Енеїда II | Literature | Analysis, vocabulary |
+| 224 | Shevchenko: Life & Significance | Literature | Biography, national poet |
+| 225 | Shevchenko: Кобзар I | Literature | Early poems |
+| 226 | Shevchenko: Кобзар II | Literature | "Заповіт", "Катерина" |
+| 227 | Shevchenko: Кобзар III | Literature | Historical poems |
+| 228 | Shevchenko: Кобзар IV | Literature | Late works |
+| 229 | Poetry Analysis Skills | Skills | Meter, rhyme, imagery |
+| 230 | Ivan Franko: Life & Works | Literature | Biography, significance |
+| 231 | Ivan Franko: Poetry | Literature | "Каменярі", lyric poetry |
+| 232 | Ivan Franko: Prose | Literature | Short stories |
+| 233 | Lesya Ukrainka: Life & Works | Literature | Biography, significance |
+| 234 | Lesya Ukrainka: Poetry | Literature | Lyric poetry |
+| 235 | Lesya Ukrainka: Драми I | Literature | "Лісова пісня" |
+| 236 | Lesya Ukrainka: Драми II | Literature | Other dramatic works |
+| 237 | 19th Century Prose | Literature | Marko Vovchok, Myrny |
+| 238 | Kotsiubynsky | Literature | "Тіні забутих предків" |
+| 239 | Literary Vocabulary I | Vocabulary | Classic literature terms |
+| 240 | Literary Vocabulary II | Vocabulary | Analysis vocabulary |
+| 241 | C1.1 Practice I | Practice | Reading comprehension |
+| 242 | C1.1 Practice II | Practice | Literary analysis |
+| 243 | C1.1 Review I | Review | Classics overview |
+| 244 | C1.1 Review II | Review | Analysis skills |
+| 245 | C1.1 Checkpoint | Review | Assessment |
 
-| Module | Topic | Focus | Key Figures/Works |
-|--------|-------|-------|-------------------|
-| 211 | Classical Literature | 19th century | Shevchenko, Franko, Ukrainka |
-| 212 | Modernist Literature | Early 20th century | Executed Renaissance, avant-garde |
-| 213 | Soviet & Diaspora | Mid-20th century | Stus, Kostenko, diaspora writers |
-| 214 | Contemporary Literature | 1991-present | Zhadan, Andrukhovych, Zabuzhko |
-| 215 | Folk Arts | Traditional | Vyshyvanka, pysanky, petrykivka |
-| 216 | Classical Arts | Fine arts | Repin (Ukrainian works), Boychuk, Archipenko |
-| 217 | Music Heritage | Folk to classical | Kobzari, Lysenko, Skoryk |
-| 218 | Contemporary Arts | Modern | Rock, art scene, galleries |
-| 219 | Ukrainian Cinema | Film history | Dovzhenko to present |
-| 220 | REVIEW & Integration | All C1 | Final consolidation |
+### C1.2: Literary Ukrainian II - 20th Century & Contemporary (Modules 246-270)
 
-### Vocabulary Plan C1.4 (350 words)
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 246 | Early 20th Century | Literature | Modernism, symbolism |
+| 247 | Розстріляне відродження I | Literature | Context, significance |
+| 248 | Розстріляне відродження II | Literature | Key authors |
+| 249 | Павло Тичина | Literature | Poetry analysis |
+| 250 | Максим Рильський | Literature | Poetry analysis |
+| 251 | Soviet Period Literature | Literature | Official vs underground |
+| 252 | Шістдесятники I | Literature | Dissident movement |
+| 253 | Шістдесятники II | Literature | Ліна Костенко |
+| 254 | Василь Стус | Literature | Poetry, life, significance |
+| 255 | Diaspora Literature | Literature | Emigré writers |
+| 256 | Late Soviet / Early Independent | Literature | Transition period |
+| 257 | Contemporary: Жадан I | Literature | Poetry |
+| 258 | Contemporary: Жадан II | Literature | Prose |
+| 259 | Contemporary: Андрухович | Literature | Postmodernism |
+| 260 | Contemporary: Забужко | Literature | Feminist perspective |
+| 261 | Contemporary Poetry | Literature | 21st century |
+| 262 | War Literature | Literature | Post-2014 writing |
+| 263 | Literary Criticism | Skills | How to analyze |
+| 264 | C1.2 Practice I | Practice | 20th century texts |
+| 265 | C1.2 Practice II | Practice | Contemporary texts |
+| 266 | C1.2 Practice III | Practice | Critical writing |
+| 267 | C1.2 Review I | Review | 20th century |
+| 268 | C1.2 Review II | Review | Contemporary |
+| 269 | C1.2 Checkpoint | Review | Assessment |
+| 270 | Literature Integration | Practice | All periods |
 
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 211 | 40 | Classical lit | романтизм, кобзар, поема, народництво... |
-| 212 | 35 | Modernism | авангард, футуризм, розстріляне відродження... |
-| 213 | 35 | Soviet/Diaspora | соцреалізм, шістдесятники, самвидав... |
-| 214 | 35 | Contemporary | постмодернізм, станіславський феномен... |
-| 215 | 35 | Folk arts | вишиванка, писанка, орнамент, оберіг... |
-| 216 | 35 | Fine arts | живопис, скульптура, графіка, бойчукізм... |
-| 217 | 35 | Music | кобза, бандура, опера, симфонія... |
-| 218 | 30 | Contemporary | рок, хіп-хоп, інсталяція, перформанс... |
-| 219 | 35 | Cinema | поетичне кіно, режисер, кінематограф... |
-| 220 | 15 | Review | (final consolidation) |
+### C1.3: Academic Ukrainian (Modules 271-290)
 
-### Media Requirements C1.4
-- Literature excerpts and audio readings
-- Art reproductions (museum permissions)
-- Music samples (licensing required)
-- Film clips (rights clearance needed)
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 271 | Academic Writing Overview | Skills | Ukrainian academic norms |
+| 272 | Essay Structure | Skills | Intro, body, conclusion |
+| 273 | Thesis & Arguments | Skills | Building arguments |
+| 274 | Evidence & Citation | Skills | Referencing standards |
+| 275 | Academic Vocabulary I | Vocabulary | Research verbs |
+| 276 | Academic Vocabulary II | Vocabulary | Analysis vocabulary |
+| 277 | Academic Vocabulary III | Vocabulary | Transition words |
+| 278 | Hedging Language | Grammar | Possibility, probability |
+| 279 | Counterarguments | Skills | Presenting opposition |
+| 280 | Summarizing & Paraphrasing | Skills | Avoiding plagiarism |
+| 281 | Research Article Structure | Genre | Науковастаття |
+| 282 | Abstract Writing | Genre | Реферат |
+| 283 | Literature Review | Genre | Огляд літератури |
+| 284 | Presentation Skills | Skills | Academic Ukrainian oral |
+| 285 | C1.3 Practice I | Practice | Essay writing |
+| 286 | C1.3 Practice II | Practice | Article analysis |
+| 287 | C1.3 Practice III | Practice | Research writing |
+| 288 | C1.3 Review | Review | Academic skills |
+| 289 | C1.3 Checkpoint | Review | Assessment |
+| 290 | Academic Integration | Practice | Full academic project |
+
+### C1.4: Professional Fields (Modules 291-310)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 291 | Business Ukrainian I | Vocabulary | Corporate, negotiations |
+| 292 | Business Ukrainian II | Vocabulary | Finance, marketing |
+| 293 | Legal Ukrainian I | Vocabulary | Court, criminal law |
+| 294 | Legal Ukrainian II | Vocabulary | Civil, contracts |
+| 295 | Medical Ukrainian I | Vocabulary | Anatomy, conditions |
+| 296 | Medical Ukrainian II | Vocabulary | Procedures, documentation |
+| 297 | IT & Technology | Vocabulary | Software, data, cyber |
+| 298 | Journalism & Media | Vocabulary | Editorial, investigative |
+| 299 | Political & Diplomatic | Vocabulary | International, policy |
+| 300 | Scientific Ukrainian | Vocabulary | Research fields |
+| 301 | Professional Writing | Skills | Reports, proposals |
+| 302 | Professional Speaking | Skills | Presentations, meetings |
+| 303 | C1.4 Practice I | Practice | Business scenarios |
+| 304 | C1.4 Practice II | Practice | Professional documents |
+| 305 | C1.4 Review | Review | Professional fields |
+| 306 | C1.4 Checkpoint | Review | Assessment |
+
+### C1.5: Sociolinguistics & Dialects (Modules 307-315)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 307 | Dialects Overview | Sociolinguistics | Three dialect groups |
+| 308 | Northern Dialects | Sociolinguistics | Polissian features |
+| 309 | Southwestern Dialects | Sociolinguistics | Hutsul, Boiko, Lemko |
+| 310 | Southeastern & Standard | Sociolinguistics | Basis for standard |
+| 311 | Historical Borrowings | Sociolinguistics | Polish, German, Turkish influences |
+| 312 | Language History | Sociolinguistics | Development of Ukrainian |
+| 313 | Language Policy | Sociolinguistics | Laws, education, media |
+| 314 | Dialectal Listening | Skills | Understanding varieties |
+| 315 | Sociolinguistics Review | Review | All topics |
+
+### C1.6: Mastery & Integration (Modules 316-320)
+
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 316 | Advanced Stylistics | Grammar | Rhetorical devices |
+| 317 | Nuanced Communication | Skills | Hedging, politeness |
+| 318 | C1 Integration I | Practice | All skills combined |
+| 319 | C1 Integration II | Practice | Complex tasks |
+| 320 | C1 Capstone | Review | Comprehensive assessment |
 
 ---
 
-## CEFR Word Count Summary (Revised)
+## Summary
 
-| Level | New Words | Cumulative | CEFR Target |
-|-------|-----------|------------|-------------|
-| A1 | 750 | 750 | 500-750 ✓ |
-| A2 | 1,100 | 1,850 | 1,500-2,000 ✓ |
-| B1 | 1,350 | 3,200 | 2,500-3,500 ✓ |
-| B2 | 1,500 | 4,700 | 4,000-5,000 ✓ |
-| C1 | 1,750 | 6,450 | 5,500-8,000 ✓ |
-
----
-
-## Transliteration Summary
-
-| Level | Transliteration Mode | Rationale |
-|-------|---------------------|-----------|
-| A1.1 (M01-10) | Full | Learning alphabet |
-| A1.2 (M11-20) | Vocab-only | Reinforcing reading |
-| A1.3 (M21-30) | First-occurrence | Building independence |
-| A2+ (M31+) | None | Full Cyrillic immersion |
+- **Total C1 modules:** 100 (221-320)
+- **Literature modules:** ~50
+- **Academic modules:** ~20
+- **Professional modules:** ~16
+- **Sociolinguistics modules:** ~9
+- **Integration/Review:** ~5
+- **Target new words:** ~2,500-3,000 (~25-30/module)
+- **Cumulative after C1:** ~7,700-8,200 words
 
 ---
 
-## Cross-Module Dependencies C1
+## Notes
 
-```
-B2 Foundation (M111-160)
-  │
-  ├── M161-165 Implicit/Rapid comprehension
-  │     └── M164-165 Rapid/Reduced speech
-  │           └── M179 Advanced listening
-  │
-  ├── M166-168 Literary Ukrainian
-  │     ├── M188 Creative writing
-  │     └── M211-214 Literature deep dive
-  │
-  ├── M169-177 Media/Culture
-  │     ├── M172 Cultural references
-  │     │     └── M197 Cultural competence
-  │     └── M215-219 Arts modules
-  │
-  ├── M181-186 Production skills
-  │     └── M185-186 Oratory/Academic
-  │           └── M196 Professional mastery
-  │
-  ├── M189-195 Advanced production
-  │     └── M191-192 Register/Idiom
-  │           └── M198-200 Integration
-  │
-  └── M201-210 History
-        └── M211-220 Literature/Arts
-              └── Specialization Tracks (221+)
-```
+1. **Literature is heavily emphasized** - C1 is where literary Ukrainian becomes essential. Understanding Shevchenko is cultural literacy.
+
+2. **Розстріляне відродження** (Executed Renaissance) - the generation of Ukrainian writers killed by Stalin in the 1930s. Essential cultural knowledge.
+
+3. **Dialects** are for recognition/comprehension, not production. Learners should understand speakers from different regions.
+
+4. **Professional fields** - not all learners need all fields. These could be optional/elective tracks in implementation.
+
+5. **Historical borrowings** - Ukrainian has absorbed words from many languages throughout history (Polish, German, Turkish, Tatar), showing its rich history of cultural contact.
 
 ---
 
-## Quality Checklist C1
+## Sources
 
-Before generating any module:
-
-- [ ] All B2 prerequisites are met
-- [ ] Grammar builds on previous modules
-- [ ] Native-level input materials used
-- [ ] Implicit meaning comprehension required
-- [ ] Spontaneous production expected
-- [ ] Professional and academic contexts
-- [ ] Literary and cultural elements
-- [ ] Historical accuracy verified
-- [ ] Near-native accuracy standard
-- [ ] Media sources documented and permissions tracked
-- [ ] Review modules cover all preceding content
-
----
-
-## Transition to Specialization Tracks
-
-After completing C1 Core (220 modules), learners may continue with:
-- Specialization tracks for specific domains
-- C2 mastery content (if developed)
-- Immersive practice and maintenance
-
-See: **SPECIALIZATION-TRACKS.md** for available tracks and expansion framework.
+- [Ukrainian Lessons - Ukrainian Dialects](https://www.ukrainianlessons.com/ukrainian-dialects/)
+- [Wikipedia - Ukrainian Dialects](https://en.wikipedia.org/wiki/Ukrainian_dialects)
+- [Encyclopedia of Ukraine - Dialects](https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CD%5CI%5CDialects.htm)

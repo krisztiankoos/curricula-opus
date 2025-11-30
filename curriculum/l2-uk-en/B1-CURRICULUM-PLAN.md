@@ -1,716 +1,209 @@
-# B1 Curriculum Plan: Ukrainian for English Speakers
+# B1 Draft Plan - Ukrainian
 
-**Status:** 🔲 TO BUILD
-**Modules:** 76-125 (50 modules)
-**Vocabulary Target:** ~1,800 words
-**Cumulative Target:** ~3,200 words
+**Based on CEFR requirements + Ukrainian language specifics**
 
----
+## Overview
 
-## Prerequisites from A2+
-
-Before starting B1, learners have completed:
-- All 7 grammatical cases
-- Perfective/Imperfective aspect system
-- Motion verbs (basic and prefixed)
-- Conditional mood
-- Complex sentences (relative, causal, temporal, purpose clauses)
-- Word formation patterns (prefixes, suffixes, root families)
-- Common collocations
-- ~1,400 vocabulary words (cumulative)
-
-**Transliteration Status:** NONE - B1 learners read Cyrillic independently
+- **Modules:** 81-140 (60 modules)
+- **Target vocabulary:** ~1,500-1,800 new words (~25-30/module)
+- **Cumulative vocabulary:** ~2,900-3,200 words
+- **Focus:** Grammar depth, aspect mastery, complex sentences, intermediate vocabulary
 
 ---
 
-## CEFR B1 Can-Do Alignment
+## B1 Grammar Topics (Ukrainian-specific)
 
-### CEFR B1 Descriptor (Council of Europe)
-> Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. Can deal with most situations likely to arise while traveling in an area where the language is spoken. Can produce simple connected text on topics which are familiar or of personal interest. Can describe experiences and events, dreams, hopes and ambitions, and briefly give reasons and explanations for opinions and plans.
+### Must Cover (Core B1)
 
-### Our B1 Can-Do Checklist
-By module 125, learners can:
+1. **Aspect Mastery** (8-10 modules)
+   - Aspect in past tense context
+   - Aspect in future tense context
+   - Aspect in negation (imperfective preference)
+   - Aspect in imperatives
+   - Aspect with infinitives (after modals)
+   - Common aspect pairs expansion
 
-**Understanding (Listening/Reading)**
-- [ ] Understand main points of clear standard speech on familiar matters
-- [ ] Understand texts with high-frequency everyday or job-related language
-- [ ] Understand description of events, feelings, wishes in personal letters
-- [ ] Follow clearly structured lectures/presentations on familiar topics
+2. **Verbs of Motion** (8-10 modules)
+   - Unidirectional vs multidirectional review
+   - All motion verb pairs: іти/ходити, їхати/їздити, бігти/бігати, летіти/літати, плисти/плавати, нести/носити, везти/возити, вести/водити
+   - Prefix mastery: при-, ви-, в-/у-, за-, пере-, від-, до-, об-, про-, роз-, з-/с-
+   - Figurative uses (виходить, що...)
 
-**Speaking (Production/Interaction)**
-- [ ] Connect phrases in a simple way to describe experiences and events
-- [ ] Briefly give reasons and explanations for opinions and plans
-- [ ] Narrate a story or relate a plot of a book/film
-- [ ] Handle most situations likely to arise while traveling
-- [ ] Enter unprepared into conversation on familiar topics
+3. **Complex Sentences** (8-10 modules)
+   - Relative clauses: який/яка/яке, що, де, коли, куди
+   - Purpose clauses: щоб + infinitive, щоб + past
+   - Conditional: якщо (real), якби (unreal), mixed
+   - Concessive: хоча, незважаючи на те, що
+   - Causal: тому що, через те що, завдяки тому що
+   - Temporal: коли, після того як, перед тим як, поки
 
-**Writing**
-- [ ] Write simple connected text on familiar topics
-- [ ] Write personal letters describing experiences and impressions
-- [ ] Write short reports providing factual information
+4. **Reported Speech** (4-5 modules)
+   - Statements (що)
+   - Questions (чи, interrogative words)
+   - Commands (щоб)
+   - Tense shifts
 
----
+5. **Past Passive Participles** (3-4 modules)
+   - Formation (-ний/-тий)
+   - Usage in passive sentences
+   - Short form (-но/-то)
+   - NOTE: Only passive participles are productive in modern Ukrainian!
 
-## Phase B1.1: Advanced Aspect & Motion (Modules 76-90)
+6. **Adverbial Participles** (2-3 modules)
+   - Imperfective (читаючи, йдучи)
+   - Perfective (прочитавши, прийшовши)
+   - Common patterns and usage
 
-### Learning Goals
-- Master passive voice constructions
-- Understand verbs of motion in depth
-- Use reflexive verbs systematically
-- Handle verbal prefixes productively
-- Express necessity and obligation formally
+### Should Cover (Important for B1)
 
-### Grammar Progression
+7. **Diminutives & Augmentatives** (2-3 modules)
+   - Diminutive suffixes: -ик, -ок, -очок, -ечок, -оньк-, -еньк-
+   - Emotional/expressive usage
+   - Augmentatives: -ище
 
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 76 | Aspect Review | A2+ | Perfective/imperfective mastery |
-| 77 | Aspect in Context I | M76 | Choosing aspect - past |
-| 78 | Aspect in Context II | M76-77 | Choosing aspect - future |
-| 79 | Aspect: Negation | M76-78 | Imperfective in negation |
-| 80 | Aspect: Commands | M79 | Aspect in imperatives |
-| 81 | Verb Pairs Expansion | M76-80 | 50 new verb pairs |
-| 82 | Motion: Arriving | A2+ motion | При- prefix detailed |
-| 83 | Motion: Leaving | M82 | Ви- prefix detailed |
-| 84 | Motion: Entering/Passing | M82-83 | В-/у-, про- prefixes |
-| 85 | Motion: Around & Back | M82-84 | Об-, по-, пере- |
-| 86 | Complex Motion Practice | M82-85 | All prefixed motion |
-| 87 | Conditionals III | A2+ conditionals | Mixed conditionals |
-| 88 | Reflexive Verbs II | A2+ reflexive | Passive -ся, reciprocal |
-| 89 | Word Formation III | A2+ word formation | Root families expansion |
-| 90 | B1.1 Checkpoint | M76-89 | Assessment |
-
-### Vocabulary Plan B1.1 (~600 words)
-
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 76 | 30 | Aspect mastery | завершувати/завершити, повторювати... |
-| 77 | 35 | Aspect context | вже, ще, завжди, ніколи... |
-| 78 | 30 | Future aspect | збиратися, планувати, мати намір... |
-| 79 | 25 | Negation patterns | не, ні, ніколи, нічого... |
-| 80 | 30 | Commands | накази, прохання, поради... |
-| 81 | 50 | Verb pairs | 50 new aspect pairs |
-| 82-86 | 150 | Motion verbs | All prefixed motion verbs + contexts |
-| 87 | 35 | Conditionals | якби, якщо, умови, наслідки... |
-| 88 | 40 | Reflexive verbs | взаємні, пасивні -ся форми... |
-| 89 | 45 | Word formation | нові кореневі сім'ї... |
-| 90 | 10 | Review | (consolidation) |
-
-### Module Content Specifications B1.1
-
-#### Module 66: The Passive Voice I
-**Grammar:** Passive voice formation
-
-**Formation:**
-- бути + passive participle (-ний/-тий)
-- Книга написана. (The book is written.)
-- Робота зроблена. (The work is done.)
-
-**Key patterns:**
-- Цей текст перекладений українською. (This text is translated into Ukrainian.)
-- Музей відкритий щодня. (The museum is open every day.)
-- Лист вже надісланий. (The letter is already sent.)
-
-**Vocabulary (30 words):**
-написаний, прочитаний, зроблений, виконаний, створений, побудований, відкритий, закритий, завершений, розпочатий, перекладений, опублікований, надрукований, надісланий, отриманий, знайдений, загублений, знищений, відновлений, змінений, покращений, погіршений, збережений, видалений, встановлений, підключений, налаштований, оновлений, перевірений, підтверджений
-
-**Activities:**
-1. Transform: Active → Passive
-2. Gap-fill: Choose correct passive form
-3. Quiz: What was done?
+8. **Numerals in Context** (2-3 modules)
+   - Collective numerals (двоє, троє)
+   - Ordinals in dates
+   - Fractions, decimals
+   - Approximation (близько, приблизно)
 
 ---
 
-#### Module 67: By Whom?
-**Grammar:** Passive with agent (Instrumental)
+## B1 Vocabulary Topics
 
-**Agent expression:**
-- Passive + Instrumental (by whom/what)
-- Книга написана автором. (The book was written by the author.)
-- Картина намальована художником. (The painting was painted by the artist.)
+### Thematic Vocabulary (~40-50 words each)
 
-**Key patterns:**
-- Цей закон прийнятий парламентом. (This law was passed by parliament.)
-- Рішення прийняте керівництвом. (The decision was made by management.)
-- Стаття опублікована відомим журналом. (The article was published by a famous magazine.)
+1. **Media & News** - newspaper, article, journalist, to publish, headline, report
+2. **Society & Politics** - government, election, law, citizen, democracy
+3. **Environment** - pollution, climate, to protect, resources, recycling
+4. **Abstract Concepts I** - idea, opinion, decision, problem, solution, reason
+5. **Abstract Concepts II** - experience, situation, opportunity, responsibility
+6. **Emotions Deep Dive** - to worry, to be disappointed, frustration, relief
+7. **Relationships** - friendship, trust, conflict, to forgive, to support
+8. **Health & Wellness** - stress, diet, exercise, mental health, to recover
+9. **Travel & Geography** - border, visa, customs, destination, to explore
+10. **Business Basics** - company, client, meeting, contract, to negotiate
 
-**Vocabulary (25 words):**
-автор, письменник, художник, композитор, режисер, архітектор, інженер, програміст, вчений, дослідник, винахідник, засновник, творець, виконавець, організатор, керівник, уряд, парламент, компанія, організація, команда, група, комітет, комісія, спільнота
+### Functional Vocabulary
 
-**Activities:**
-1. Gap-fill: Add agent in Instrumental
-2. Transform: "X did Y" → "Y was done by X"
-3. Quiz: Who did what?
-
----
-
-#### Module 68: Passive Through Time
-**Grammar:** Passive in past and future
-
-**Past passive:**
-- Лист був написаний учора. (The letter was written yesterday.)
-- Робота була завершена. (The work was completed.)
-
-**Future passive:**
-- Проєкт буде завершений завтра. (The project will be completed tomorrow.)
-- Рішення буде прийняте. (The decision will be made.)
-
-**Key patterns:**
-- Ця книга була видана в 2020 році. (This book was published in 2020.)
-- Новий закон буде прийнятий наступного місяця. (The new law will be passed next month.)
-
-**Vocabulary (25 words):**
-було, буде, був, була, були, раніше, пізніше, донедавна, згодом, невдовзі, нещодавно, віддавна, здавна, споконвіку, назавжди, тимчасово, постійно, періодично, регулярно, систематично, остаточно, повністю, частково, приблизно, точно
-
-**Activities:**
-1. Transform: Present passive → Past passive
-2. Gap-fill: When was it done?
-3. Timeline: Sequence of events
+11. **Expressing Opinions** - я вважаю, на мою думку, з одного боку... з іншого
+12. **Agreement/Disagreement** - погоджуюся, не згоден, це правда, але...
+13. **Describing Changes** - покращитися, погіршитися, зрости, зменшитися
+14. **Time Expressions** - meanwhile, eventually, recently, formerly
+15. **Discourse Markers** - however, therefore, moreover, in conclusion
 
 ---
 
-#### Module 69: Coming and Going I
-**Grammar:** Unprefixed verbs of motion
+## Proposed Module Structure
 
-**Motion pairs (determinate/indeterminate):**
-| Determinate (one direction) | Indeterminate (round trip/habitual) |
-|----------------------------|-------------------------------------|
-| йти (go on foot) | ходити (go repeatedly) |
-| їхати (go by transport) | їздити (travel repeatedly) |
-| бігти (run) | бігати (run around) |
-| летіти (fly) | літати (fly around) |
-| пливти (swim/sail) | плавати (swim around) |
-| нести (carry on foot) | носити (carry repeatedly) |
-| везти (carry by transport) | возити (transport repeatedly) |
+### B1.1: Aspect & Motion Mastery (Modules 81-100)
 
-**Key patterns:**
-- Я йду на роботу. (I'm going to work - now)
-- Я ходжу на роботу щодня. (I go to work every day)
-- Він їде до Києва. (He's going to Kyiv - now)
-- Він їздить до Києва щомісяця. (He goes to Kyiv monthly)
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 81 | Aspect Review: The Big Picture | Grammar | When perfective vs imperfective |
+| 82 | Aspect in Past: Single vs Repeated | Grammar | Одного разу vs щодня |
+| 83 | Aspect in Past: Result vs Process | Grammar | Completed vs ongoing |
+| 84 | Aspect in Future: Will Do vs Will Be Doing | Grammar | Зроблю vs робитиму |
+| 85 | Aspect in Negation | Grammar | Imperfective preference with не |
+| 86 | Aspect in Imperatives | Grammar | Читай! vs Прочитай! |
+| 87 | Aspect Pairs Expansion I | Vocabulary | 30 new verb pairs |
+| 88 | Aspect Pairs Expansion II | Vocabulary | 30 more verb pairs |
+| 89 | Motion Verbs: Full System | Grammar | All 14 pairs review |
+| 90 | Motion: Coming & Going | Grammar | при-, ви-, в-/у- detailed |
+| 91 | Motion: Passing & Crossing | Grammar | пере-, про-, об- |
+| 92 | Motion: Starting & Returning | Grammar | по-, за-, роз- |
+| 93 | Motion: Figurative Uses | Grammar | Виходить, що...; доходити до... |
+| 94 | Motion Practice & Integration | Practice | All motion verbs |
+| 95 | Abstract Concepts I | Vocabulary | Ideas, problems, solutions |
+| 96 | Abstract Concepts II | Vocabulary | Experience, responsibility |
+| 97 | Expressing Opinions | Vocabulary | Я вважаю, на мою думку |
+| 98 | Agreement & Disagreement | Vocabulary | Погоджуюся, не згоден |
+| 99 | B1.1 Review | Review | Aspect & motion consolidation |
+| 100 | B1.1 Checkpoint | Review | Assessment |
 
-**Vocabulary (40 words):**
-йти, ходити, їхати, їздити, бігти, бігати, летіти, літати, пливти, плавати, нести, носити, везти, возити, вести, водити, лізти, лазити, котитися, качатися, повзти, повзати, тягти, тягати, пішки, швидко, повільно, прямо, напряму, навпростець, обхідним шляхом, туди, сюди, звідси, звідти, назустріч, навздогін, слідом, поспіхом, поволі
+### B1.2: Complex Sentences (Modules 101-115)
 
-**Activities:**
-1. Choose: Determinate vs indeterminate
-2. Gap-fill: Daily vs current motion
-3. Quiz: How do you get there?
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 101 | Relative Clauses: який | Grammar | Людина, яка... |
+| 102 | Relative Clauses: де, куди, коли | Grammar | Місце, де...; Час, коли... |
+| 103 | Purpose: щоб + infinitive | Grammar | Я прийшов, щоб допомогти |
+| 104 | Purpose: щоб + past | Grammar | Я хочу, щоб ти прийшов |
+| 105 | Conditionals: Real (якщо) | Grammar | Якщо матиму час... |
+| 106 | Conditionals: Unreal (якби) | Grammar | Якби я був... |
+| 107 | Conditionals: Mixed & Complex | Grammar | Various combinations |
+| 108 | Concessive Clauses | Grammar | Хоча, незважаючи на |
+| 109 | Causal & Result Clauses | Grammar | Тому що, через те що |
+| 110 | Temporal Clauses | Grammar | Коли, після того як, поки |
+| 111 | Media & News Vocabulary | Vocabulary | Newspaper, journalist, report |
+| 112 | Society & Politics | Vocabulary | Government, election, law |
+| 113 | Environment | Vocabulary | Climate, pollution, protect |
+| 114 | B1.2 Review | Review | Complex sentences |
+| 115 | B1.2 Checkpoint | Review | Assessment |
 
----
+### B1.3: Reported Speech & Participles (Modules 116-125)
 
-#### Module 70: Coming and Going II
-**Grammar:** Prefixed verbs of motion
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 116 | Reported Statements | Grammar | Він сказав, що... |
+| 117 | Reported Questions | Grammar | Він запитав, чи/що... |
+| 118 | Reported Commands | Grammar | Він попросив, щоб... |
+| 119 | Past Passive Participles I | Grammar | Formation -ний/-тий |
+| 120 | Past Passive Participles II | Grammar | Usage, short forms -но/-то |
+| 121 | Adverbial Participles | Grammar | Читаючи, прочитавши |
+| 122 | Emotions & Relationships | Vocabulary | Trust, conflict, support |
+| 123 | Health & Wellness | Vocabulary | Stress, recovery, diet |
+| 124 | B1.3 Review | Review | Reported speech, participles |
+| 125 | B1.3 Checkpoint | Review | Assessment |
 
-**Common prefixes with motion verbs:**
-| Prefix | Meaning | Example |
-|--------|---------|---------|
-| при- | arrive | прийти (arrive on foot) |
-| ви- | exit | вийти (go out) |
-| за- | drop by | зайти (stop by) |
-| у-/в- | enter | увійти (enter) |
-| пере- | cross | перейти (cross) |
-| об- | go around | обійти (go around) |
-| від- | leave from | відійти (walk away) |
-| під- | approach | підійти (approach) |
-| роз- | disperse | розійтися (disperse) |
+### B1.4: Expansion & Integration (Modules 126-140)
 
-**Key patterns:**
-- Вона прийшла о дев'ятій. (She arrived at nine.)
-- Вийди з кімнати! (Leave the room!)
-- Зайдіть, будь ласка. (Please come in.)
-- Ми перейшли через дорогу. (We crossed the road.)
-
-**Vocabulary (40 words):**
-прийти, приїхати, прибути, вийти, виїхати, зайти, заїхати, увійти, в'їхати, перейти, переїхати, обійти, об'їхати, відійти, від'їхати, підійти, під'їхати, розійтися, роз'їхатися, дійти, доїхати, пройти, проїхати, вбігти, вибігти, забігти, перебігти, прилетіти, вилетіти, приплисти, відплисти
-
-**Activities:**
-1. Match-up: Prefix → Meaning
-2. Gap-fill: Choose correct prefixed verb
-3. Quiz: Describe the movement
-
----
-
-#### Module 71: Where Are You Going?
-**Grammar:** Motion verbs with destinations
-
-**Direction cases:**
-- Accusative: куди? (where to?) - в/у, на
-- Genitive: до + Gen (to, towards)
-- Locative: де? (where at?) - в/у, на
-
-**Key patterns:**
-- Я йду в магазин. (I'm going to the store - Acc)
-- Я йду до друга. (I'm going to a friend's - Gen)
-- Я в магазині. (I'm at the store - Loc)
-- Я повертаюся з магазину. (I'm returning from the store - Gen)
-
-**Motion idioms:**
-- піти пішки (go on foot)
-- поїхати за кордон (go abroad)
-- повернутися додому (return home)
-
-**Vocabulary (35 words):**
-напрямок, шлях, маршрут, дорога, стежка, пункт призначення, мета, кінцева зупинка, відправлення, прибуття, додому, звідти, туди, сюди, кудись, нікуди, деінде, скрізь, всюди, ніде, за кордон, з-за кордону, на батьківщину, за межі, в межах, через, повз, вздовж, навколо, назустріч, навпроти, далі, ближче, праворуч, ліворуч
-
-**Activities:**
-1. Gap-fill: Direction or location?
-2. Quiz: Where are they going?
-3. Map: Follow the directions
+| # | Title | Type | Focus |
+|---|-------|------|-------|
+| 126 | Diminutives | Grammar | -ик, -ок, -очок, -еньк- |
+| 127 | Numerals: Collectives & Fractions | Grammar | Двоє, троє; половина |
+| 128 | Business Basics | Vocabulary | Company, meeting, contract |
+| 129 | Travel & Geography | Vocabulary | Border, visa, destination |
+| 130 | Discourse Markers | Vocabulary | However, therefore, moreover |
+| 131 | Describing Changes | Vocabulary | Improve, worsen, increase |
+| 132 | Synonymy I: Thinking | Vocabulary | думати/гадати/вважати/міркувати |
+| 133 | Synonymy II: Speaking | Vocabulary | казати/говорити/розповідати/повідомляти |
+| 134 | Synonymy III: Seeing/Knowing | Vocabulary | бачити/дивитися; знати/розуміти |
+| 135 | Idioms & Set Phrases I | Vocabulary | Common expressions |
+| 136 | Idioms & Set Phrases II | Vocabulary | More expressions |
+| 137 | Collocations Review | Vocabulary | Verb+noun, adj+noun patterns |
+| 138 | B1 Integration I | Practice | Grammar skills |
+| 139 | B1 Integration II | Practice | Vocabulary & communication |
+| 140 | B1 Capstone | Review | Comprehensive B1 assessment |
 
 ---
 
-#### Module 72: Reflexive Verbs Mastery
-**Grammar:** Reflexive verb system (-ся/-сь)
+## Summary
 
-**Reflexive categories:**
-1. True reflexive: дія на себе (одягатися - dress oneself)
-2. Reciprocal: взаємна дія (зустрічатися - meet each other)
-3. Passive meaning: (називатися - be called)
-4. Impersonal: (хочеться - one feels like)
-
-**Key patterns:**
-- Я одягаюся. (I'm getting dressed.)
-- Ми зустрічаємося щотижня. (We meet every week.)
-- Це називається "борщ". (This is called "borscht".)
-- Мені не хочеться. (I don't feel like it.)
-
-**Vocabulary (30 words):**
-одягатися, роздягатися, умиватися, голитися, зачісуватися, готуватися, збиратися, дивуватися, радіти, сумувати, боятися, соромитися, сміятися, усміхатися, зустрічатися, прощатися, вітатися, обійматися, цілуватися, сваритися, миритися, називатися, здаватися, виявлятися, траплятися, ставатися, починатися, закінчуватися, хочеться, здається
-
-**Activities:**
-1. Categorize: Type of reflexive
-2. Gap-fill: Choose correct -ся verb
-3. Transform: Make it reflexive
+- **Total B1 modules:** 60 (81-140)
+- **Grammar modules:** ~35
+- **Vocabulary modules:** ~20
+- **Review/checkpoint modules:** ~5
+- **Target new words:** ~1,500-1,800 (~25-30/module average)
+- **Cumulative after B1:** ~2,900-3,200 words
 
 ---
 
-#### Module 73: One Can, One Must
-**Grammar:** Impersonal constructions
+## Notes
 
-**Impersonal patterns:**
-- можна (one can, it's allowed)
-- не можна (one can't, forbidden)
-- потрібно/треба (one needs to)
-- варто (it's worth)
-- слід (one should)
-- доводиться (one has to)
+1. **Active participles (працюючий)** are NOT taught as productive - they're not used in modern spoken Ukrainian. Instead, relative clauses are used.
 
-**Key patterns:**
-- Тут можна курити? (Is smoking allowed here?)
-- Не можна паркуватися. (Parking is forbidden.)
-- Потрібно зачекати. (One needs to wait.)
-- Варто подивитися цей фільм. (It's worth watching this film.)
+2. **Aspect** is given heavy weight because it's the hardest part of Ukrainian for English speakers and requires extensive practice.
 
-**With dative person:**
-- Мені потрібно йти. (I need to go.)
-- Вам слід відпочити. (You should rest.)
-- Їй доводиться працювати. (She has to work.)
+3. **Verbs of motion** with prefixes are essential for B1 and often undertaught.
 
-**Vocabulary (30 words):**
-можна, не можна, потрібно, треба, необхідно, варто, слід, доводиться, доцільно, бажано, рекомендовано, заборонено, дозволено, обов'язково, неодмінно, конче, нагально, терміново, негайно, безумовно, вочевидь, очевидно, зрозуміло, природно, логічно, зрештою, насамперед, передусім, головне, найголовніше
-
-**Activities:**
-1. Gap-fill: Choose impersonal expression
-2. Transform: Personal → Impersonal
-3. Quiz: What's allowed/forbidden?
+4. **Vocabulary** focuses on abstract concepts and functional language (opinions, discourse) because concrete vocabulary was covered in A2+.
 
 ---
 
-#### Module 74: The Power of Prefixes
-**Grammar:** Systematic verbal prefixes
-
-**Prefix meanings:**
-| Prefix | Core meaning | Example |
-|--------|-------------|---------|
-| ви- | out, completely | виписати (write out) |
-| за- | begin, behind | заспівати (start singing) |
-| при- | arrival, addition | приписати (add in writing) |
-| пере- | across, re-do | переписати (rewrite) |
-| роз- | apart, spreading | розписати (describe in detail) |
-| від- | away, response | відписати (reply in writing) |
-| до- | completion | дописати (finish writing) |
-| на- | accumulation | написати (write - perfective) |
-| по- | brief action | пописати (write for a bit) |
-| під- | under, secretly | підписати (sign) |
-
-**Key patterns:**
-- Я написав листа. (I wrote a letter - completed)
-- Треба переписати текст. (Need to rewrite the text)
-- Він підписав документ. (He signed the document)
-
-**Vocabulary (35 words):**
-ви-, за-, при-, пере-, роз-, від-, до-, на-, по-, під-, з-/с-, об-/о-, у-/в-, видавати, завантажувати, приєднувати, перевіряти, розповідати, відповідати, додавати, повідомляти, підтримувати, збирати, об'єднувати, вмикати, вивчати, завершувати, приймати, передавати, розуміти, відправляти, доводити, помічати, підписувати
-
-**Activities:**
-1. Match-up: Prefix → Core meaning
-2. Word building: Root + prefixes
-3. Quiz: What does the prefix add?
-
----
-
-#### Module 75: Advanced Aspect
-**Grammar:** Aspect with prefixed verbs
-
-**Aspect pairs with prefixes:**
-- робити/зробити (do)
-- переробляти/переробити (redo)
-- виробляти/виробити (produce)
-
-**Secondary imperfectives:**
-- Many perfective verbs form secondary imperfectives:
-- записати (pf) → записувати (ipf) - to record
-- відкрити (pf) → відкривати (ipf) - to open
-
-**Aspect choice nuances:**
-- Repeated action: imperfective (Він часто записував)
-- Single completed: perfective (Він записав адресу)
-- Process focus: imperfective (Він записував, коли я прийшов)
-- Result focus: perfective (Він уже записав)
-
-**Vocabulary (30 words):**
-записувати/записати, відкривати/відкрити, закривати/закрити, відправляти/відправити, отримувати/отримати, продавати/продати, купувати/купити, вирішувати/вирішити, пояснювати/пояснити, перевіряти/перевірити, виправляти/виправити, доповнювати/доповнити, змінювати/змінити, покращувати/покращити, погіршувати/погіршити
-
-**Activities:**
-1. Choose: Aspect in context
-2. Transform: Perfective ↔ Imperfective
-3. Narration: Use both aspects
-
----
-
-#### Module 76: Must, Should, Have To
-**Grammar:** Obligation and necessity expressions
-
-**Strong obligation:**
-- мусити (must - formal)
-- повинен/повинна/повинні (should, ought to)
-- зобов'язаний (obliged)
-
-**Weaker obligation:**
-- слід (should)
-- варто (ought to, worth)
-- бажано (desirable)
-
-**External necessity:**
-- доводиться/довелося (have to, forced to)
-- змушений (forced to)
-
-**Key patterns:**
-- Я мушу йти. (I must go.)
-- Ви повинні це зробити. (You should do this.)
-- Мені довелося чекати. (I had to wait.)
-- Він змушений працювати. (He's forced to work.)
-
-**Vocabulary (30 words):**
-мусити, повинен, зобов'язаний, слід, варто, бажано, доводитися, змушений, необхідний, обов'язковий, примусовий, добровільний, вимушений, свідомий, відповідальний, обов'язок, відповідальність, вимога, правило, норма, закон, інструкція, наказ, рекомендація, порада, заборона, дозвіл, право, свобода, можливість
-
-**Activities:**
-1. Gap-fill: Level of obligation
-2. Transform: "Must" → "Had to"
-3. Quiz: Rules and requirements
-
----
-
-#### Module 77: Speaking Formally
-**Grammar:** Formal register introduction
-
-**Formal vs informal:**
-| Informal | Formal |
-|----------|--------|
-| Привіт | Доброго дня |
-| Дякую | Дякую Вам |
-| Бувай | До побачення |
-| Скажи | Скажіть, будь ласка |
-| Можеш | Чи не могли б Ви |
-
-**Formal letter elements:**
-- Шановний пане/пані... (Dear Mr./Ms....)
-- Звертаюся до Вас... (I am writing to you...)
-- З повагою... (Respectfully...)
-
-**Key patterns:**
-- Чи не могли б Ви допомогти? (Could you possibly help?)
-- Дозвольте запитати... (Allow me to ask...)
-- Прошу вибачити за турботу. (Please excuse the trouble.)
-
-**Vocabulary (35 words):**
-шановний, вельмишановний, повага, з повагою, щиро, щиросердно, офіційний, неофіційний, формальний, неформальний, ввічливий, чемний, коректний, ділова переписка, звернення, запит, прохання, скарга, подяка, вибачення, пан, пані, добродій, добродійка, представник, керівник, адміністрація, секретаріат, канцелярія, відділ, департамент, міністерство, установа, організація, інституція
-
-**Activities:**
-1. Transform: Informal → Formal
-2. Gap-fill: Formal letter
-3. Role-play: Formal request
-
----
-
-#### Module 78: At the Workplace
-**Grammar:** Functional integration - professional context
-
-**Workplace phrases:**
-- Який у вас графік роботи? (What's your work schedule?)
-- Я працюю над проєктом. (I'm working on a project.)
-- Термін здачі - наступний понеділок. (The deadline is next Monday.)
-- Нам потрібно провести нараду. (We need to hold a meeting.)
-
-**Professional communication:**
-- Надсилаю вам документи... (I'm sending you the documents...)
-- Чекаю на вашу відповідь. (Awaiting your response.)
-- Дякую за співпрацю. (Thank you for the cooperation.)
-
-**Vocabulary (40 words):**
-робота, праця, працівник, роботодавець, колектив, команда, проєкт, завдання, термін, дедлайн, графік, розклад, нарада, зустріч, переговори, співбесіда, контракт, договір, угода, зарплата, оклад, премія, відпустка, лікарняний, відрядження, кар'єра, підвищення, звільнення, резюме, вакансія, посада, обов'язки, відповідальність, досвід, кваліфікація, навички, досягнення, результат, ефективність, продуктивність
-
-**Activities:**
-1. Dialogue: Job interview
-2. Email: Professional request
-3. Quiz: Workplace vocabulary
-
----
-
-#### Module 79: Understanding Media
-**Grammar:** Reading news and articles
-
-**News vocabulary:**
-- заголовок (headline)
-- стаття (article)
-- репортаж (report)
-- кореспондент (correspondent)
-
-**News structures:**
-- За повідомленнями... (According to reports...)
-- Як стало відомо... (As became known...)
-- За словами експертів... (According to experts...)
-
-**Passive in news:**
-- Було оголошено, що... (It was announced that...)
-- Рішення було прийняте... (The decision was made...)
-
-**Vocabulary (35 words):**
-новина, новини, стаття, заголовок, репортаж, повідомлення, огляд, аналіз, коментар, інтерв'ю, прес-конференція, джерело, кореспондент, журналіст, редактор, газета, журнал, видання, випуск, рубрика, тема, проблема, питання, подія, факт, думка, позиція, точка зору, експерт, фахівець, спеціаліст, аналітик, оглядач, дослідник, автор
-
-**Activities:**
-1. Read: News headline analysis
-2. Gap-fill: News vocabulary
-3. Summary: Article main points
-
----
-
-#### Module 80: Checkpoint B1.1
-**Review of:** Modules 66-79
-
-**Assessment areas:**
-1. Passive voice (all tenses)
-2. Verbs of motion (prefixed/unprefixed)
-3. Reflexive verbs
-4. Impersonal constructions
-5. Verbal prefixes
-6. Obligation expressions
-7. Formal register
-8. Professional and media contexts
-
-**Vocabulary (10 words):** Review selection from B1.1
-
----
-
-## Phase B1.2: Participles & Advanced Syntax (Modules 81-95)
-
-### Learning Goals
-- Master active and passive participles
-- Use verbal adverbs (дієприслівники)
-- Handle complex subordination
-- Express conditions precisely
-- Develop argumentative language
-
-### Grammar Progression
-
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 81 | Active participles (present) | M66-75 | "doing, reading" |
-| 82 | Active participles (past) | M81 | "having done" |
-| 83 | Passive participles (review) | M66-68 | "done, written" |
-| 84 | Verbal adverbs (present) | M81 | "while doing" |
-| 85 | Verbal adverbs (past) | M82, M84 | "having done" |
-| 86 | Conditionals advanced | A2 conditionals | Real/unreal nuance |
-| 87 | Concession (хоч, дарма що) | A2 although | "even though" |
-| 88 | Cause/Result (тому/через) | A2 because | Formal causation |
-| 89 | Purpose (для того щоб) | A2 purpose | Formal purpose |
-| 90 | Contrast (на відміну від) | M87 | "unlike, whereas" |
-| 91 | Argumentation language | M87-90 | Building arguments |
-| 92 | Functional: Education | M81-91 | Academic context |
-| 93 | Functional: Current events | M79, M91 | Discussions |
-| 94 | Extended writing | M81-93 | Coherent texts |
-| 95 | REVIEW | M81-94 | Consolidation |
-
-### Vocabulary Plan B1.2 (450 words)
-
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 81 | 30 | Active participles | читаючий, працюючий, знаючий... |
-| 82 | 25 | Past participles | прочитавший, що прочитав... |
-| 83 | 25 | Passive review | написаний, зроблений, відкритий... |
-| 84 | 30 | Verbal adverbs | читаючи, працюючи, говорячи... |
-| 85 | 25 | Past adverbs | прочитавши, зробивши, прийшовши... |
-| 86 | 35 | Conditionals | якби, якщо б, за умови, у разі... |
-| 87 | 30 | Concession | хоча, дарма що, попри, незважаючи... |
-| 88 | 30 | Cause/Result | через, завдяки, внаслідок, отже... |
-| 89 | 25 | Purpose | для того щоб, з метою, задля... |
-| 90 | 30 | Contrast | на відміну від, порівняно з, натомість... |
-| 91 | 35 | Argumentation | по-перше, крім того, отже, висновок... |
-| 92 | 40 | Education | університет, лекція, іспит, оцінка... |
-| 93 | 40 | Current events | політика, економіка, суспільство... |
-| 94 | 30 | Writing | вступ, основна частина, висновок... |
-| 95 | 10 | Review | (consolidation) |
-
----
-
-## Phase B1.3: Register & Style (Modules 96-110)
-
-### Learning Goals
-- Switch between formal/informal registers
-- Understand colloquial expressions
-- Use hedging and softening language
-- Handle indirect communication
-- Achieve fluent everyday communication
-
-### Grammar Progression
-
-| Module | Grammar Point | Builds On | Enables |
-|--------|--------------|-----------|---------|
-| 96 | Register awareness | M77 | Style switching |
-| 97 | Colloquial Ukrainian | M96 | Everyday speech |
-| 98 | Hedging language | M73, M91 | Softening statements |
-| 99 | Indirect requests | M77, M98 | Polite asking |
-| 100 | Reported speech advanced | A2 reported | Complex reporting |
-| 101 | Subjunctive mood | A2 conditionals | Wishes, hypotheticals |
-| 102 | Expressing probability | M98 | Likelihood |
-| 103 | Functional: Social situations | M96-102 | Invitations, etc |
-| 104 | Functional: Problems/complaints | M99 | Handling issues |
-| 105 | Ukrainian idioms I | M97 | Common expressions |
-| 106 | Ukrainian idioms II | M105 | More expressions |
-| 107 | Cultural communication | M96-106 | Ukrainian norms |
-| 108 | Storytelling | M84-85, M100 | Extended narrative |
-| 109 | B1 Integration | All B1 | Comprehensive use |
-| 110 | B1 FINAL REVIEW | All modules | Certification prep |
-
-### Vocabulary Plan B1.3 (450 words)
-
-| Module | Words | Domain | Key Items |
-|--------|-------|--------|-----------|
-| 96 | 35 | Register | розмовний, офіційний, нейтральний... |
-| 97 | 40 | Colloquial | класно, супер, файно, кльово... |
-| 98 | 30 | Hedging | мабуть, напевно, можливо, здається... |
-| 99 | 30 | Indirect | чи не могли б, чи не можна... |
-| 100 | 25 | Reported speech | стверджувати, заявляти, наголошувати... |
-| 101 | 30 | Subjunctive | хай, нехай, якби, аби... |
-| 102 | 30 | Probability | імовірно, скоріше за все, навряд... |
-| 103 | 35 | Social | запрошення, привітання, побажання... |
-| 104 | 35 | Complaints | скарга, претензія, незадоволення... |
-| 105 | 40 | Idioms I | як кіт наплакав, руки не доходять... |
-| 106 | 40 | Idioms II | сім п'ятниць на тиждень, на всі сто... |
-| 107 | 30 | Culture | традиція, звичай, менталітет... |
-| 108 | 30 | Narrative | оповідання, сюжет, герой, події... |
-| 109 | 30 | Integration | (review and integration) |
-| 110 | 10 | Review | (final consolidation) |
-
----
-
-## Vocabulary Master List (1350 words for B1)
-
-### Distribution by Domain
-
-| Domain | Words | Modules |
-|--------|-------|---------|
-| Passive/Participles | 130 | 66-68, 81-85 |
-| Motion verbs | 115 | 69-71 |
-| Reflexive/Impersonal | 60 | 72-73 |
-| Prefixes/Aspect | 65 | 74-75 |
-| Obligation | 30 | 76 |
-| Formal register | 70 | 77, 96 |
-| Workplace | 75 | 78 |
-| Media/News | 75 | 79, 93 |
-| Connectors/Argument | 130 | 86-91 |
-| Education | 40 | 92 |
-| Writing | 30 | 94 |
-| Colloquial/Idioms | 120 | 97, 105-106 |
-| Social/Culture | 100 | 103-104, 107 |
-| Hedging/Indirect | 90 | 98-102 |
-| Narrative | 30 | 108 |
-| Review | 90 | Various |
-
-**Total B1:** ~1350 words
-**Cumulative A1+A2+B1:** ~3200 words
-
----
-
-## Transliteration Policy: B1
-
-**NO TRANSLITERATION** in B1 materials.
-
-By B1, learners:
-- Read Cyrillic fluently
-- Have 65 modules of practice
-- Should not rely on Latin script support
-
-All module content, activities, and vocabulary presented in Cyrillic only.
-
----
-
-## Cross-Module Dependencies B1
-
-```
-A2 Foundation (M31-65)
-  │
-  ├── M66-68 Passive Voice
-  │     └── M81-83 Participles
-  │           └── M84-85 Verbal Adverbs
-  │                 └── M108 Storytelling
-  │
-  ├── M69-71 Motion Verbs
-  │     └── M74-75 Prefixes/Aspect
-  │
-  ├── M72-73 Reflexive/Impersonal
-  │     └── M98 Hedging
-  │           └── M99 Indirect Requests
-  │
-  ├── M76-77 Obligation/Formal
-  │     └── M96 Register
-  │           └── M97 Colloquial
-  │                 └── M105-106 Idioms
-  │
-  └── M86-91 Advanced Connectors
-        └── M91 Argumentation
-              └── M92-93 Academic/Current Events
-                    └── M94 Extended Writing
-                          └── M109 Integration
-                                └── M110 Capstone
-```
-
----
-
-## Quality Checklist B1
-
-Before generating any module:
-
-- [ ] All A2 prerequisites are met
-- [ ] Grammar builds on previous modules
-- [ ] NO transliteration in any materials
-- [ ] Register is appropriate for B1 level
-- [ ] Vocabulary is within CEFR B1 targets
-- [ ] Can-do statements align with CEFR B1
-- [ ] Complex sentences are properly formed
-- [ ] Passive and participles used correctly
-- [ ] Review modules cover all preceding content
-
----
-
-## Transition to B2
-
-After completing B1, learners are ready for:
-- Advanced passive constructions
-- Perfect aspect forms
-- Abstract and specialized vocabulary
-- Extended academic discourse
-- Stylistic sophistication
-- Regional and dialectal awareness
-- Literary language exposure
-- Professional domain specialization
+## Open Questions
+
+1. Are there specific expressions/idioms that should be prioritized?
+2. What topics are missing from your B1-B2 experience?
+3. Should B2 focus more on register (formal/informal) or literature?
+4. How much C1 should cover professional/academic Ukrainian?

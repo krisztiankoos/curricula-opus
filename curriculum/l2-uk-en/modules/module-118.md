@@ -176,7 +176,7 @@ Both are correct, but **щоб + past** is more common in formal speech.
    → **Вона попросила, щоб я почекав.**
 
 2. The teacher told us to be quiet.
-   → **Вчитель сказав, щоб ми були тихо.**
+   → **Вчитель сказав, щоб ми мовчали.**
 
 3. The doctor advised him not to smoke.
    → **Лікар порадив, щоб він не палив.**

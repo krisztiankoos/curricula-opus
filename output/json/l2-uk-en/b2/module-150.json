@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B2-150",
+    "moduleId": "mod-uk-B2-150",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B2",
+    "phase": "B2.1",
+    "moduleNumber": 150,
+    "title": "Register: Media Style",
+    "subtitle": "Публіцистичний стиль",
+    "description": "Розуміти характеристики публіцистичного стилю",
+    "objectives": [
+      "Розуміти характеристики публіцистичного стилю",
+      "Аналізувати новинні тексти",
+      "Розпізнавати засоби впливу",
+      "Писати у публіцистичному стилі"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "register",
+      "media",
+      "news",
+      "journalism"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [],
+  "vocabulary": {
+    "moduleId": "mod-uk-B2-150",
+    "level": "B2",
+    "phase": "B2.1",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B2-151",
+    "moduleId": "mod-uk-B2-151",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B2",
+    "phase": "B2.1",
+    "moduleNumber": 151,
+    "title": "Register: Colloquial Style",
+    "subtitle": "Розмовний стиль",
+    "description": "Розуміти характеристики розмовного стилю",
+    "objectives": [
+      "Розуміти характеристики розмовного стилю",
+      "Розпізнавати просторіччя та сленг",
+      "Розрізняти розмовний та неграмотний мовлення",
+      "Використовувати розмовний стиль адекватно"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "register",
+      "colloquial",
+      "slang",
+      "spoken"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [],
+  "vocabulary": {
+    "moduleId": "mod-uk-B2-151",
+    "level": "B2",
+    "phase": "B2.1",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

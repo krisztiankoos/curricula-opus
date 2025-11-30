@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B2-157",
+    "moduleId": "mod-uk-B2-157",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B2",
+    "phase": "B2.1",
+    "moduleNumber": 157,
+    "title": "Multi-clause Sentences",
+    "subtitle": "Багатокомпонентні речення",
+    "description": "Розуміти структуру складних речень",
+    "objectives": [
+      "Розуміти структуру складних речень",
+      "Будувати речення з кількома підрядними",
+      "Правильно вживати сполучники",
+      "Дотримуватися пунктуації"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 50,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "syntax",
+      "complex sentences",
+      "clauses"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [],
+  "vocabulary": {
+    "moduleId": "mod-uk-B2-157",
+    "level": "B2",
+    "phase": "B2.1",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

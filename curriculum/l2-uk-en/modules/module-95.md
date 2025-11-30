@@ -14,22 +14,26 @@ objectives:
   - Use abstract nouns in context
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### Beyond the Concrete
+### Абстрактне мислення | Beyond the Concrete
+
+На рівні A2 ви вивчили конкретну лексику: їжу, місця, предмети.
 
 At A2, you learned concrete vocabulary: food, places, objects.
 
+На рівні B1 потрібна **абстрактна лексика** — слова для речей, яких не можна торкнутися:
+
 At B1, you need **abstract vocabulary** — words for things you can't touch:
-- Ideas and thoughts
-- Problems and solutions
-- Reasons and results
+- Ідеї та думки | Ideas and thoughts
+- Проблеми та рішення | Problems and solutions
+- Причини та результати | Reasons and results
 
-## presentation
+## presentation | Презентація
 
-### Ideas and Thoughts
+### Ідеї та думки | Ideas and Thoughts
 
 | Ukrainian | IPA | English | Example |
 |-----------|-----|---------|---------|
@@ -50,7 +54,7 @@ At B1, you need **abstract vocabulary** — words for things you can't touch:
 - З **моєї точки зору**, це неправильно. - From my point of view, this is wrong.
 - Ми **прийшли до висновку**, що... - We came to the conclusion that...
 
-### Problems and Difficulties
+### Проблеми та труднощі | Problems and Difficulties
 
 | Ukrainian | IPA | English | Example |
 |-----------|-----|---------|---------|
@@ -71,7 +75,7 @@ At B1, you need **abstract vocabulary** — words for things you can't touch:
 - Головна **перешкода** — брак часу. - The main obstacle is lack of time.
 - У цьому плані є один **недолік**. - This plan has one shortcoming.
 
-### Solutions and Results
+### Рішення та результати | Solutions and Results
 
 | Ukrainian | IPA | English | Example |
 |-----------|-----|---------|---------|
@@ -92,7 +96,7 @@ At B1, you need **abstract vocabulary** — words for things you can't touch:
 - **Результат** перевершив очікування. - The result exceeded expectations.
 - Це **наслідок** недбалості. - This is a consequence of negligence.
 
-### Reasons and Causes
+### Причини | Reasons and Causes
 
 | Ukrainian | IPA | English | Example |
 |-----------|-----|---------|---------|
@@ -111,7 +115,7 @@ At B1, you need **abstract vocabulary** — words for things you can't touch:
 - У цьому немає **сенсу**. - There's no point in this.
 - Це не має **значення**. - It doesn't matter.
 
-### Verbs for Abstract Thinking
+### Дієслова абстрактного мислення | Verbs for Abstract Thinking
 
 | Ukrainian | IPA | English | Aspect |
 |-----------|-----|---------|--------|
@@ -131,9 +135,9 @@ At B1, you need **abstract vocabulary** — words for things you can't touch:
 - **Припускаю**, що він спізниться. - I assume he'll be late.
 - Я **сумніваюся** в цьому. - I doubt this.
 
-## practice
+## practice | Практика
 
-### Categorize Words
+### Розподіліть слова | Categorize Words
 
 Sort these words into categories:
 
@@ -145,7 +149,7 @@ Sort these words into categories:
 | труднощі | результат | висновок |
 | | | причина, мета |
 
-### Complete Sentences
+### Доповніть речення | Complete Sentences
 
 1. Яка головна ___ цієї проблеми? (reason) → **причина**
 2. Ми знайшли ___ проблеми. (solution) → **вирішення/рішення**
@@ -154,7 +158,7 @@ Sort these words into categories:
 5. У мене немає ___, що робити. (idea) → **уявлення**
 6. Яка твоя ___ з цього приводу? (opinion) → **думка**
 
-### Form Sentences
+### Складіть речення | Form Sentences
 
 Create sentences using:
 
@@ -164,7 +168,7 @@ Create sentences using:
 4. **мета** — Моя мета — вивчити українську.
 5. **висновок** — Який твій висновок?
 
-### Discussion: Problem-Solving
+### Дискусія: Вирішення проблем | Discussion: Problem-Solving
 
 Discuss using abstract vocabulary:
 
@@ -175,9 +179,9 @@ Discuss using abstract vocabulary:
 - Яке **рішення** ви знайшли?
 - Який ваш **прогрес**?
 
-## production
+## production | Продукція
 
-### Describe a Problem
+### Опишіть проблему | Describe a Problem
 
 Describe a problem you faced using:
 - проблема, причина, труднощі, рішення, результат
@@ -185,7 +189,7 @@ Describe a problem you faced using:
 **Example:**
 Минулого року я мав **проблему** з роботою. **Причина** була в тому, що компанія закрилася. Я мав **труднощі** з пошуком нової роботи. Але я знайшов **рішення** — почав вивчати нові навички. **Результат** — я знайшов кращу роботу.
 
-### Express Your Ideas
+### Висловіть свої думки | Express Your Ideas
 
 Use abstract vocabulary to discuss:
 - Ваша **точка зору** на вивчення мов

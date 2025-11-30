@@ -51,6 +51,31 @@ Ukrainian motion verbs are famous for being difficult. But they follow logical p
 
 At A2, you learned іти/ходити and їхати/їздити. Now: the complete system.
 
+---
+
+> **⭐ MOTION PREFIX PRIORITY GUIDE**
+>
+> **Master these in order of frequency:**
+>
+> | Priority | Prefix | Meaning | Example | Frequency |
+> |----------|--------|---------|---------|-----------|
+> | 1 | при- | arrival | прийти (to come) | ★★★★★ |
+> | 2 | ви- | exit, out | вийти (to go out) | ★★★★★ |
+> | 3 | в-/у- | entry, in | увійти (to enter) | ★★★★★ |
+> | 4 | пере- | across | перейти (to cross) | ★★★★☆ |
+> | 5 | за- | drop by, begin | зайти (to stop by) | ★★★★☆ |
+> | 6 | від- | away from | відійти (to walk away) | ★★★☆☆ |
+> | 7 | до- | reach, up to | дійти (to reach) | ★★★☆☆ |
+> | 8 | по- | begin, set off | піти (to leave) | ★★★☆☆ |
+> | 9 | про- | through, past | пройти (to pass) | ★★★☆☆ |
+> | 10 | роз- | disperse | розійтися (to disperse) | ★★☆☆☆ |
+> | 11 | об- | around | обійти (to go around) | ★★☆☆☆ |
+> | 12 | з-/с- | down from | зійти (to descend) | ★☆☆☆☆ |
+>
+> **Study tip:** Focus on prefixes 1-5 first — they cover 80% of everyday speech!
+
+---
+
 ## presentation
 
 ### The Two Types of Motion

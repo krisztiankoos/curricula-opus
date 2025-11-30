@@ -14,19 +14,21 @@ objectives:
   - Use abstract nouns in real contexts
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### Life Vocabulary
+### Життєва лексика | Life Vocabulary
+
+У модулі 95 ми вивчили ідеї та проблеми. Тепер: лексика для обговорення **життєвого досвіду**.
 
 Module 95 covered ideas and problems. Now: vocabulary for discussing **life experiences**.
 
-- What experiences have you had?
-- What opportunities do you have?
-- What responsibilities do you carry?
+- Який досвід ви маєте? | What experiences have you had?
+- Які можливості у вас є? | What opportunities do you have?
+- Яку відповідальність ви несете? | What responsibilities do you carry?
 
-## presentation
+## presentation | Презентація
 
 ### Experience and Knowledge
 
@@ -136,7 +138,7 @@ Module 95 covered ideas and problems. Now: vocabulary for discussing **life expe
 | покращувати / покращити | to improve | impf/pf |
 | розвивати / розвинути | to develop | impf/pf |
 
-## practice
+## practice | Практика
 
 ### Complete with Correct Word
 
@@ -175,7 +177,7 @@ Answer using abstract vocabulary:
 4. Under these circumstances... → **За таких обставин...**
 5. I need stability. → **Мені потрібна стабільність.**
 
-## production
+## production | Продукція
 
 ### Describe Your Experience
 

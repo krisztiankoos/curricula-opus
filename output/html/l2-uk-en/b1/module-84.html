@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 84: Aspect in Future: Will Do vs Will Be Doing | Ukrainian B1</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-83.html" class="module-nav-link">← Module 83</a>
+      <a href="index.html" class="module-nav-link">B1 Index</a>
+      <a href="module-85.html" class="module-nav-link">Module 85 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 84: Aspect in Future: Will Do vs Will Be Doing</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">B1 · B1.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Aspect in Future: Will Do vs Will Be Doing</h2>
+        <p style="color:var(--text-muted)">Зроблю vs Буду робити</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### Two Futures</h4><div class="md-content"><p>Ukrainian has two ways to express future:</p>
+<ol>
+<li><strong>Perfective future:</strong> Single word (напишу, зроблю, прочитаю)</li>
+<li><strong>Imperfective future:</strong> Буду + infinitive (буду писати, буду робити)</li>
+</ol>
+<p>Both mean "will," but they express different perspectives on the future action.</p></div></div><div class="canvas-note"><h4>### Perfective Future: Single Completed Action</h4><div class="md-content"><p>Form: Conjugate perfective verb in "present" forms.</p>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>зробити</th>
+<th>написати</th>
+<th>прочитати</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>зроблю</td>
+<td>напишу</td>
+<td>прочитаю</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>зробиш</td>
+<td>напишеш</td>
+<td>прочитаєш</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>зробить</td>
+<td>напише</td>
+<td>прочитає</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>зробимо</td>
+<td>напишемо</td>
+<td>прочитаємо</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>зробите</td>
+<td>напишете</td>
+<td>прочитаєте</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>зроблять</td>
+<td>напишуть</td>
+<td>прочитають</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Meaning:</strong> Single completed action in future, focus on result.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Завтра я <strong>напишу</strong> листа. - Tomorrow I will write a letter (complete it).</li>
+<li>Вона <strong>прочитає</strong> книгу. - She will read the book (finish it).</li>
+<li>Ми <strong>зробимо</strong> це. - We will do it (get it done).</li>
+<li>Він <strong>подзвонить</strong> тобі. - He will call you (the call will happen).</li>
+<li>Я <strong>вивчу</strong> українську! - I will learn Ukrainian (master it)!</li>
+</ul></div></div><div class="canvas-note"><h4>Imperfective Future: Ongoing or Repeated</h4><div class="md-content"><p>Form: Буду/будеш/буде… + imperfective infinitive.</p>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>буду + робити</th>
+<th>буду + писати</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>буду робити</td>
+<td>буду писати</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>будеш робити</td>
+<td>будеш писати</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>буде робити</td>
+<td>буде писати</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>будемо робити</td>
+<td>будемо писати</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>будете робити</td>
+<td>будете писати</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>будуть робити</td>
+<td>будуть писати</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Meaning:</strong> Process, duration, or repetition in future.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Завтра я <strong>буду писати</strong> статтю. - Tomorrow I will be writing an article.</li>
+<li>Вона <strong>буде читати</strong> цю книгу тиждень. - She will be reading this book for a week.</li>
+<li>Ми <strong>будемо чекати</strong> на тебе. - We will be waiting for you.</li>
+<li>Він <strong>буде працювати</strong> весь день. - He will be working all day.</li>
+<li>Я <strong>буду вчити</strong> українську щодня. - I will study Ukrainian every day.</li>
+</ul></div></div><div class="canvas-note"><h4>Alternative Imperfective Future: -му/-меш</h4><div class="md-content"><p>Some imperfective verbs also have a synthetic form (less common in speech):</p>
+<ul>
+<li>писатиму = буду писати</li>
+<li>робитиму = буду робити</li>
+<li>читатиму = буду читати</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>писати</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>писатиму</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>писатимеш</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>писатиме</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>писатимемо</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>писатимете</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>писатимуть</td>
+</tr>
+</tbody>
+</table>
+<p>This form is more common in western Ukraine and in writing. Both forms are correct.</p></div></div><div class="canvas-note"><h4>Compare: Same Action, Different Aspect</h4><div class="md-content"><table>
+<thead>
+<tr>
+<th>Imperfective Future</th>
+<th>Perfective Future</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я <strong>буду читати</strong> книгу.</td>
+<td>Я <strong>прочитаю</strong> книгу.</td>
+</tr>
+<tr>
+<td>I will be reading the book.</td>
+<td>I will read the book (finish it).</td>
+</tr>
+<tr>
+<td>Вона <strong>буде писати</strong> листа.</td>
+<td>Вона <strong>напише</strong> листа.</td>
+</tr>
+<tr>
+<td>She will be writing a letter.</td>
+<td>She will write the letter (complete it).</td>
+</tr>
+<tr>
+<td>Ми <strong>будемо робити</strong> це.</td>
+<td>Ми <strong>зробимо</strong> це.</td>
+</tr>
+<tr>
+<td>We will be doing this.</td>
+<td>We will do this (get it done).</td>
+</tr>
+</tbody>
+</table></div></div><div class="canvas-note"><h4>When to Use Each Future</h4><div class="md-content"><p><strong>Use PERFECTIVE future when:</strong></p>
+<ol>
+<li><strong>Promise or commitment:</strong> Я зроблю це! - I'll do it!</li>
+<li><strong>Definite single action:</strong> Він прийде завтра. - He will come tomorrow.</li>
+<li><strong>Sequence of events:</strong> Спочатку поснідаю, потім пішу. - First I'll have breakfast, then I'll go.</li>
+<li><strong>Result expected:</strong> Вона напише статтю до понеділка. - She'll write the article by Monday.</li>
+</ol>
+<p><strong>Use IMPERFECTIVE future when:</strong></p>
+<ol>
+<li><strong>Duration:</strong> Я буду працювати весь день. - I'll be working all day.</li>
+<li><strong>Process description:</strong> Що ти будеш робити? - What will you be doing?</li>
+<li><strong>Repeated future action:</strong> Я буду ходити в спортзал щодня. - I'll go to the gym every day.</li>
+<li><strong>Ongoing activity:</strong> Вона буде чекати біля входу. - She'll be waiting by the entrance.</li>
+</ol></div></div><div class="canvas-note"><h4>Time Expressions and Future Aspect</h4><div class="md-content"><p><strong>With perfective (single event):</strong></p>
+<ul>
+<li>завтра - tomorrow (single)</li>
+<li>післязавтра - day after tomorrow</li>
+<li>наступного тижня - next week</li>
+<li>о п'ятій годині - at five o'clock</li>
+<li>за годину - in an hour</li>
+</ul>
+<p><strong>With imperfective (duration/repetition):</strong></p>
+<ul>
+<li>весь день - all day</li>
+<li>цілий тиждень - the whole week</li>
+<li>щодня - every day</li>
+<li>завжди - always</li>
+<li>поки - while</li>
+</ul></div></div><div class="canvas-note"><h4>Questions in Future</h4><div class="md-content"><p><strong>Process questions (imperfective):</strong></p>
+<ul>
+<li>Що ти будеш робити завтра? - What will you be doing tomorrow?</li>
+<li>Де ви будете жити? - Where will you be living?</li>
+<li>Скільки часу це буде тривати? - How long will this last?</li>
+</ul>
+<p><strong>Result questions (perfective):</strong></p>
+<ul>
+<li>Коли ти це зробиш? - When will you do/finish it?</li>
+<li>Ти прийдеш? - Will you come?</li>
+<li>Вона напише? - Will she write (it)?</li>
+</ul></div></div><div class="canvas-note"><h4>Negation in Future</h4><div class="md-content"><p><strong>Imperfective negative</strong> (general, no specific action):</p>
+<ul>
+<li>Я <strong>не буду</strong> це <strong>робити</strong>. - I won't be doing this / I won't do this (general refusal).</li>
+</ul>
+<p><strong>Perfective negative</strong> (specific action won't happen):</p>
+<ul>
+<li>Я цього <strong>не зроблю</strong>. - I won't do this (this specific thing won't get done).</li>
+</ul>
+<p>Compare:</p>
+<ul>
+<li>Я не буду їсти м'ясо. - I won't eat meat. (general principle)</li>
+<li>Я не з'їм це. - I won't eat this. (this specific thing)</li>
+</ul></div></div><div class="canvas-note"><h4>### Choose the Correct Future</h4><div class="md-content"><ol>
+<li>Завтра я ___ (буду писати/напишу) тобі листа. → <strong>напишу</strong> (promise, single)</li>
+<li>Я ___ (буду працювати/попрацюю) весь день. → <strong>буду працювати</strong> (all day)</li>
+<li>Коли ти ___ (будеш закінчувати/закінчиш) проєкт? → <strong>закінчиш</strong> (result question)</li>
+<li>Вона ___ (буде чекати/зачекає) на нас біля метро. → <strong>буде чекати</strong> (ongoing)</li>
+<li>Ми ___ (будемо ходити/підемо) в спортзал щотижня. → <strong>будемо ходити</strong> (repeated)</li>
+<li>Він ___ (буде приходити/прийде) завтра о третій. → <strong>прийде</strong> (single scheduled event)</li>
+</ol></div></div><div class="canvas-note"><h4>Transform: Imperfective to Perfective</h4><div class="md-content"><p>Change to perfective future (focus on result):</p>
+<ol>
+<li>Я буду читати книгу. → Я <strong>прочитаю</strong> книгу.</li>
+<li>Вона буде писати статтю. → Вона <strong>напише</strong> статтю.</li>
+<li>Ми будемо робити домашнє. → Ми <strong>зробимо</strong> домашнє.</li>
+<li>Вони будуть вчити нові слова. → Вони <strong>вивчать</strong> нові слова.</li>
+</ol></div></div><div class="canvas-note"><h4>Transform: Perfective to Imperfective</h4><div class="md-content"><p>Change to imperfective future (focus on process):</p>
+<ol>
+<li>Завтра я прочитаю цю книгу. → Завтра я <strong>буду читати</strong> цю книгу.</li>
+<li>Вона приготує вечерю. → Вона <strong>буде готувати</strong> вечерю.</li>
+<li>Він подзвонить тобі. → Він <strong>буде телефонувати</strong> тобі.</li>
+<li>Ми напишемо звіт. → Ми <strong>будемо писати</strong> звіт.</li>
+</ol></div></div><div class="canvas-note"><h4>Complete the Dialogues</h4><div class="md-content"><p><strong>Dialogue 1:</strong></p>
+<ul>
+<li>A: Що ти ___ (робитимеш) завтра?</li>
+<li>B: Я ___ (працюватиму) з дому.</li>
+<li>A: А коли ти ___ (закінчиш)?</li>
+<li>B: Думаю, ___ (закінчу) о шостій.</li>
+</ul>
+<p><strong>Answers:</strong> робитимеш/будеш робити (process), працюватиму/буду працювати (process), закінчиш (result), закінчу (result)</p>
+<p><strong>Dialogue 2:</strong></p>
+<ul>
+<li>A: Ти ___ (підеш) на вечірку?</li>
+<li>B: Так, обов'язково ___ (прийду).</li>
+<li>A: Що ти там ___ (будеш робити)?</li>
+<li>B: ___ (Буду танцювати) і ___ (буду спілкуватися) з друзями.</li>
+</ul>
+<p><strong>Answers:</strong> підеш (single), прийду (promise), будеш робити (process), буду танцювати/буду спілкуватися (process)</p></div></div><div class="canvas-note"><h4>### Plan Your Week</h4><div class="md-content"><p>Describe your plans using both aspects:</p>
+<p><strong>Single events (perfective):</strong><br />
+У понеділок я напишу звіт. У вівторок зустрінуся з клієнтом. У середу здам проєкт.</p>
+<p><strong>Ongoing activities (imperfective):</strong><br />
+Цілий тиждень я буду працювати над новим проєктом. Щовечора буду ходити в спортзал.</p></div></div><div class="canvas-note"><h4>Make Promises</h4><div class="md-content"><p>Use perfective to make promises:</p>
+<ul>
+<li>Я <strong>зроблю</strong> це до завтра!</li>
+<li>Я <strong>подзвоню</strong> тобі ввечері.</li>
+<li>Ми <strong>приїдемо</strong> вчасно.</li>
+<li>Я обіцяю, що <strong>закінчу</strong> роботу.</li>
+</ul></div></div><div class="canvas-note"><h4>Describe Your Daily Routine (Future)</h4><div class="md-content"><p>Use imperfective for repeated activities:</p>
+<p>Наступного тижня я буду вставати о сьомій. Щоранку буду бігати. Буду працювати з дев'ятої до п'ятої…</p></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Future Forms</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">буду читати</div><div class="match-item" data-pair="1">буду писати</div><div class="match-item" data-pair="2">буду робити</div><div class="match-item" data-pair="3">буду вчити</div><div class="match-item" data-pair="4">буду готувати</div><div class="match-item" data-pair="5">буду чекати</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">зачекаю</div><div class="match-item" data-pair="4">приготую</div><div class="match-item" data-pair="0">прочитаю</div><div class="match-item" data-pair="1">напишу</div><div class="match-item" data-pair="3">вивчу</div><div class="match-item" data-pair="2">зроблю</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Future Aspect</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>When to Use</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/8</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Perfective Future</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Imperfective Future</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 84 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"буду читати","right":"прочитаю"},{"left":"буду писати","right":"напишу"},{"left":"буду робити","right":"зроблю"},{"left":"буду вчити","right":"вивчу"},{"left":"буду готувати","right":"приготую"},{"left":"буду чекати","right":"зачекаю"}];
+    const quizData=[{"question":"Завтра я ___ їй про все.","options":["буду розповідати","розповім"],"correctIndex":1,"explanation":"Single future action = perfective"},{"question":"Ми ___ на тебе біля входу.","options":["будемо чекати","зачекаємо"],"correctIndex":0,"explanation":"Waiting = ongoing process = imperfective"},{"question":"Скільки часу ви ___ там?","options":["будете жити","проживете"],"correctIndex":0,"explanation":"Duration question = imperfective"},{"question":"Обіцяю, я ___ це!","options":["буду робити","зроблю"],"correctIndex":1,"explanation":"Promise = perfective"},{"question":"Він ___ в цій компанії три роки.","options":["буде працювати","попрацює"],"correctIndex":0,"explanation":"Duration (три роки) = imperfective"},{"question":"Вона ___ завтра о третій.","options":["буде приходити","прийде"],"correctIndex":1,"explanation":"Scheduled single event = perfective"}];
+    const sortData={"true-friends":["promises","single scheduled events","sequences of events","result expected"],"false-friends":["duration (весь день)","ongoing activity","repeated future action","general plans"]};
+    const vocabData=[];
+    const totalSort=8;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

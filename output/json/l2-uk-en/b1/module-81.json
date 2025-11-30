@@ -1,0 +1,452 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-81",
+    "moduleId": "mod-uk-B1-81",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.1",
+    "moduleNumber": 81,
+    "title": "Aspect Review: The Big Picture",
+    "subtitle": "Mastering When to Use Perfective vs Imperfective",
+    "description": "Understand the fundamental difference between aspects",
+    "objectives": [
+      "Understand the fundamental difference between aspects",
+      "Review aspect usage in all tenses",
+      "Master aspect selection in context",
+      "Recognize common aspect patterns"
+    ],
+    "grammarFocus": [
+      "Perfective vs imperfective distinction",
+      "Aspect in past, present, future",
+      "Aspect selection rules"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "aspect",
+      "grammar",
+      "verbs",
+      "perfective",
+      "imperfective"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Welcome to B1!\n\nYou've completed A2 and A2+. You know Ukrainian cases, basic verb forms, and hundreds of words. Now it's time for **mastery**.\n\n**The B1 challenge:**\nAt A2, you learned WHAT aspect is. At B1, you'll master WHEN to use each aspect naturally.\n\n> 💡 **The Key Insight**\n>\n> Aspect is not about grammar rules—it's about **how you see the action**. Same event, different perspectives:\n> - Що ти робив учора? (What were you doing?) — process\n> - Що ти зробив учора? (What did you get done?) — result"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Aspect: The Core Distinction\n\n**Imperfective (недоконаний вид):**\n- Process, duration, repetition\n- No focus on completion\n- \"What was happening?\"\n\n**Perfective (доконаний вид):**\n- Single completed action\n- Result achieved\n- \"What happened? What got done?\"\n\n| Imperfective | Perfective | The Difference |\n|--------------|------------|----------------|\n| читати | прочитати | reading vs finished reading |\n| писати | написати | writing vs wrote (completed) |\n| робити | зробити | doing vs done |\n| вчити | вивчити | learning vs learned (mastered) |\n| їсти | з'їсти | eating vs ate (finished) |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Aspect in Past Tense\n\n**Imperfective past = process, duration, repetition:**\n\n- Я **читав** книгу весь вечір. - I was reading a book all evening.\n- Вона **працювала** в банку три роки. - She worked at a bank for three years.\n- Ми **ходили** в кіно щотижня. - We went to the cinema every week.\n\n**Perfective past = single completed action, result:**\n\n- Я **прочитав** книгу. - I read (finished) the book.\n- Вона **написала** листа. - She wrote (completed) the letter.\n- Ми **подивилися** фільм. - We watched (saw) the film.\n\n> ⚡ **Key Pattern**\n>\n> Time expressions often signal aspect:\n> - **Imperfective:** весь день, три години, щодня, завжди, часто\n> - **Perfective:** раптом, нарешті, вже, одного разу"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Aspect in Future Tense\n\n**Imperfective future (буду + infinitive) = process, ongoing:**\n\n- Я **буду читати** завтра. - I will be reading tomorrow.\n- Вона **буде працювати** весь день. - She will be working all day.\n- Ми **будемо чекати** на тебе. - We will be waiting for you.\n\n**Perfective future (one word) = completed action:**\n\n- Я **прочитаю** цю книгу. - I will read (finish) this book.\n- Вона **напише** листа. - She will write (complete) the letter.\n- Ми **подивимося** фільм. - We will watch (see) the film.\n\n| Imperfective Future | Perfective Future |\n|--------------------|-------------------|\n| буду робити | зроблю |\n| буду писати | напишу |\n| буду читати | прочитаю |\n| буду вчити | вивчу |\n| буду готувати | приготую |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Aspect in Present Tense\n\n**Only imperfective verbs have present tense!**\n\nWhy? The present tense describes ongoing actions—by definition, they're not completed.\n\n- Я **читаю** книгу. - I am reading a book. (ongoing)\n- Вона **пише** листа. - She is writing a letter. (ongoing)\n- Ми **готуємо** вечерю. - We are preparing dinner. (ongoing)\n\n**Perfective verbs in \"present\" form = future meaning:**\n\n- Я **прочитаю** = I will read (not \"I am reading\")\n- Вона **напише** = She will write (not \"She is writing\")\n\n> 🎯 **Remember**\n>\n> If a verb is perfective and conjugated in \"present tense\" forms, it means **future**!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "The Big Decision: Which Aspect?\n\n**Use IMPERFECTIVE when:**\n\n1. **Process matters:** Я довго шукав ключі. (I was looking for keys for a long time.)\n2. **Repeated action:** Він завжди запізнювався. (He was always late.)\n3. **Ongoing state:** Вона працювала вчителькою. (She worked as a teacher.)\n4. **No result focus:** Що ти робив? (What were you doing?)\n\n**Use PERFECTIVE when:**\n\n1. **Result matters:** Я знайшов ключі! (I found the keys!)\n2. **Single event:** Він запізнився на зустріч. (He was late to the meeting.)\n3. **Completed action:** Вона закінчила університет. (She graduated from university.)\n4. **Sequence of events:** Він прийшов, сів і почав читати. (He arrived, sat down, and started reading.)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Common Aspect Pairs\n\n| Imperfective | Perfective | English |\n|--------------|------------|---------|\n| робити | зробити | to do/make |\n| писати | написати | to write |\n| читати | прочитати | to read |\n| говорити | сказати | to say/speak |\n| брати | взяти | to take |\n| давати | дати | to give |\n| бачити | побачити | to see |\n| чути | почути | to hear |\n| купувати | купити | to buy |\n| відкривати | відкрити | to open |\n| закривати | закрити | to close |\n| починати | почати | to begin |\n| закінчувати | закінчити | to finish |"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-81-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Choose the Correct Aspect\n\nSelect imperfective or perfective:\n\n1. Я ___ (читав/прочитав) цю книгу три дні. → **читав** (duration)\n2. Нарешті я ___ (читав/прочитав) цю книгу! → **прочитав** (completed)\n3. Вона завжди ___ (готувала/приготувала) смачну їжу. → **готувала** (repeated)\n4. Вчора вона ___ (готувала/приготувала) борщ. → **приготувала** (single completed action)\n5. Що ти ___ (робив/зробив) весь день? → **робив** (process)\n6. Що ти ___ (робив/зробив) вчора? → **зробив** (result focus)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Transform Sentences\n\nChange from imperfective to perfective (or vice versa):\n\n1. Він писав листа годину. → Він **написав** листа.\n2. Вона прочитала статтю. → Вона **читала** статтю.\n3. Ми дивилися фільм весь вечір. → Ми **подивилися** фільм.\n4. Я вивчив нові слова. → Я **вчив** нові слова."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Narrate a Sequence\n\nUse perfective for completed actions in sequence:\n\n**Example:** Він прокинувся, встав, умився, поснідав і пішов на роботу.\n\nNow describe your morning using perfective verbs:\n- прокинутися (to wake up)\n- встати (to get up)\n- умитися (to wash up)\n- одягнутися (to get dressed)\n- поснідати (to have breakfast)\n- вийти (to leave)"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-81-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-81-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Contrast Dialogues\n\nCreate dialogues contrasting aspect:\n\n**Example:**\n- A: Що ти робив учора ввечері? (What were you doing?)\n- B: Читав книгу. (I was reading.)\n- A: Прочитав? (Did you finish it?)\n- B: Ні, ще читаю. (No, still reading.)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Describe Your Week\n\nUse both aspects to describe:\n1. What you did (completed) — perfective\n2. How you spent time (process) — imperfective\n\n**Example:**\nЦього тижня я **прочитав** дві статті (completed). Увечері я зазвичай **дивився** серіал (repeated). У середу я **написав** важливого листа (completed). Весь четвер я **працював** над проєктом (duration)."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-81-matchup",
+      "type": "match-up",
+      "title": "Aspect Pairs",
+      "description": "Aspect Pairs",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "читати",
+            "right": "прочитати"
+          },
+          {
+            "left": "писати",
+            "right": "написати"
+          },
+          {
+            "left": "робити",
+            "right": "зробити"
+          },
+          {
+            "left": "брати",
+            "right": "взяти"
+          },
+          {
+            "left": "говорити",
+            "right": "сказати"
+          },
+          {
+            "left": "бачити",
+            "right": "побачити"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "perfective",
+        "imperfective"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-81-quiz",
+      "type": "quiz",
+      "title": "Aspect Selection",
+      "description": "Choose the correct aspect based on context.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct aspect based on context.",
+        "questions": [
+          {
+            "question": "Я ___ книгу весь вечір. (process)",
+            "options": [
+              "читав",
+              "прочитав"
+            ],
+            "correctIndex": 0,
+            "explanation": "Duration = imperfective"
+          },
+          {
+            "question": "Нарешті вона ___ цю задачу! (completed)",
+            "options": [
+              "розв'язувала",
+              "розв'язала"
+            ],
+            "correctIndex": 1,
+            "explanation": "Result achieved = perfective"
+          },
+          {
+            "question": "Він завжди ___ на роботу о дев'ятій. (repeated)",
+            "options": [
+              "приходив",
+              "прийшов"
+            ],
+            "correctIndex": 0,
+            "explanation": "Habitual = imperfective"
+          },
+          {
+            "question": "Вчора я ___ новий телефон. (single action)",
+            "options": [
+              "купував",
+              "купив"
+            ],
+            "correctIndex": 1,
+            "explanation": "Single completed action = perfective"
+          },
+          {
+            "question": "Що ти ___ зараз? (ongoing)",
+            "options": [
+              "робиш",
+              "зробиш"
+            ],
+            "correctIndex": 0,
+            "explanation": "Present = imperfective only"
+          },
+          {
+            "question": "Завтра я ___ цю роботу. (will complete)",
+            "options": [
+              "буду робити",
+              "зроблю"
+            ],
+            "correctIndex": 1,
+            "explanation": "Focus on completion = perfective future"
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "perfective",
+        "imperfective"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-81-groupsort",
+      "type": "group-sort",
+      "title": "Time Expressions",
+      "description": "Time Expressions",
+      "content": {
+        "type": "group-sort",
+        "instructions": "",
+        "groups": [
+          {
+            "name": "Signal Imperfective",
+            "items": [
+              "весь день",
+              "три години",
+              "завжди",
+              "часто",
+              "зазвичай",
+              "довго"
+            ]
+          },
+          {
+            "name": "Signal Perfective",
+            "items": [
+              "раптом",
+              "нарешті",
+              "вже",
+              "одного разу",
+              "за годину"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "perfective",
+        "imperfective"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-81",
+    "level": "B1",
+    "phase": "B1.1",
+    "wordCount": 14,
+    "transliterationMode": "none",
+    "words": [
+      {
+        "id": "v-m81-001",
+        "uk": "доконаний",
+        "translit": "/dokoˈnɑnɪj/",
+        "ipa": "perfective",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-002",
+        "uk": "недоконаний",
+        "translit": "/nɛdokoˈnɑnɪj/",
+        "ipa": "imperfective",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-003",
+        "uk": "вид",
+        "translit": "/wɪd/",
+        "ipa": "aspect (gram.)",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-004",
+        "uk": "тривалість",
+        "translit": "/trɪˈvɑlʲistʲ/",
+        "ipa": "duration",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-005",
+        "uk": "результат",
+        "translit": "/rɛzulʲˈtɑt/",
+        "ipa": "result",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-006",
+        "uk": "процес",
+        "translit": "/proˈt͡sɛs/",
+        "ipa": "process",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-007",
+        "uk": "повторення",
+        "translit": "/povtoˈrɛnʲːɑ/",
+        "ipa": "repetition",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-008",
+        "uk": "завершення",
+        "translit": "/zɑvɛrˈʃɛnʲːɑ/",
+        "ipa": "completion",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-009",
+        "uk": "раптом",
+        "translit": "/ˈrɑptom/",
+        "ipa": "suddenly",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-010",
+        "uk": "нарешті",
+        "translit": "/nɑˈrɛʃtʲi/",
+        "ipa": "finally",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-011",
+        "uk": "зазвичай",
+        "translit": "/zɑˈzvɪt͡ʃɑj/",
+        "ipa": "usually",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-012",
+        "uk": "одного разу",
+        "translit": "/odnoˈɦo ˈrɑzu/",
+        "ipa": "once (upon a time)",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-013",
+        "uk": "весь час",
+        "translit": "/wɛsʲ t͡ʃɑs/",
+        "ipa": "all the time",
+        "en": "-",
+        "pos": "-"
+      },
+      {
+        "id": "v-m81-014",
+        "uk": "за годину",
+        "translit": "/zɑ ɦoˈdɪnu/",
+        "ipa": "in an hour",
+        "en": "-",
+        "pos": "-"
+      }
+    ]
+  }
+}

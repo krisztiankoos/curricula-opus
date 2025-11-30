@@ -1,0 +1,313 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-82",
+    "moduleId": "mod-uk-B1-82",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.1",
+    "moduleNumber": 82,
+    "title": "Aspect in Past: Single vs Repeated",
+    "subtitle": "Одного разу vs Щодня",
+    "description": "Distinguish single events from repeated actions in past",
+    "objectives": [
+      "Distinguish single events from repeated actions in past",
+      "Use perfective for one-time events",
+      "Use imperfective for habitual/repeated actions",
+      "Master time expressions that signal each aspect"
+    ],
+    "grammarFocus": [
+      "Perfective past for single events",
+      "Imperfective past for repeated/habitual actions",
+      "Time expression + aspect correlation"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "aspect",
+      "grammar",
+      "verbs",
+      "past-tense",
+      "repetition"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Quick Review\n\nFrom Module 81, remember:\n- **Imperfective** = process, duration, repetition\n- **Perfective** = single completed action, result\n\nToday's focus: **How many times did it happen?**\n\n> The same event can be described with different aspects depending on whether it happened once or repeatedly."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Single Event = Perfective\n\nWhen something happened **once**, use perfective:\n\n**Time markers for single events:**\n- одного разу - once, one time\n- вчора - yesterday\n- минулого тижня - last week\n- в понеділок - on Monday\n- раптом - suddenly\n- нарешті - finally\n\n**Examples:**\n\n- Одного разу я **зустрів** цікаву людину. - Once I met an interesting person.\n- Вчора вона **подзвонила** мені. - Yesterday she called me.\n- Минулого тижня ми **купили** нову машину. - Last week we bought a new car.\n- Раптом він **закричав**. - Suddenly he shouted.\n- Нарешті я **зрозумів**! - Finally I understood!"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Repeated Action = Imperfective\n\nWhen something happened **multiple times**, use imperfective:\n\n**Time markers for repetition:**\n- завжди - always\n- ніколи - never\n- часто - often\n- рідко - rarely\n- щодня - every day\n- щотижня - every week\n- щоразу - every time\n- зазвичай - usually\n- іноді - sometimes\n- кожного разу - each time\n\n**Examples:**\n\n- Я завжди **вставав** рано. - I always got up early.\n- Вона часто **телефонувала** мені. - She often called me.\n- Ми щодня **ходили** на пляж. - We went to the beach every day.\n- Він ніколи не **запізнювався**. - He never was late.\n- Зазвичай я **снідав** о восьмій. - I usually had breakfast at eight."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Compare: Same Verb, Different Meaning\n\n| Imperfective (repeated) | Perfective (single) |\n|------------------------|---------------------|\n| Він **приходив** щодня. | Він **прийшов** вчора. |\n| He came every day. | He came yesterday. |\n| Вона **писала** листи щотижня. | Вона **написала** листа. |\n| She wrote letters every week. | She wrote a letter. |\n| Я **читав** цю книгу багато разів. | Я **прочитав** цю книгу. |\n| I read this book many times. | I read (finished) this book. |\n\n> **Key Insight**\n>\n> Even \"багато разів\" (many times) uses imperfective because it's **repeated** action. Perfective would mean you finished the book in one go."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "The \"Used to\" Meaning\n\nImperfective past often translates as \"used to\":\n\n- Раніше я **курив**. - I used to smoke.\n- У дитинстві ми **жили** в селі. - In childhood we used to live in a village.\n- Вона **працювала** вчителькою. - She used to work as a teacher.\n- Ми **бачилися** щодня. - We used to see each other every day."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Narrative Sequences: A Special Case\n\nIn stories, **sequences of single events** use perfective:\n\n- Він **прокинувся**, **встав**, **умився**, **поснідав** і **пішов** на роботу.\n- He woke up, got up, washed, had breakfast, and went to work.\n\nEach action happened once, in sequence, so each verb is perfective.\n\nBut **background description** in stories uses imperfective:\n\n- Був теплий день. Сонце **світило**, птахи **співали**. Раптом він **почув** дивний звук.\n- It was a warm day. The sun was shining, birds were singing. Suddenly he heard a strange sound.\n\nBackground (continuous) = imperfective. Event (sudden) = perfective."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Common Aspect Pairs: Single vs Repeated\n\n| Imperfective | Perfective | Single Example | Repeated Example |\n|--------------|------------|----------------|------------------|\n| телефонувати | зателефонувати | Він зателефонував вчора. | Він телефонував щодня. |\n| запитувати | запитати | Вона запитала один раз. | Вона завжди запитувала. |\n| відповідати | відповісти | Я відповів на листа. | Я відповідав на всі листи. |\n| відвідувати | відвідати | Ми відвідали музей. | Ми відвідували музей щороку. |\n| зустрічати | зустріти | Я зустрів її вчора. | Ми зустрічалися щотижня. |"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Choose the Correct Aspect\n\n1. Він ___ (приходив/прийшов) вчора о п'ятій. → **прийшов** (single event)\n2. Вона завжди ___ (готувала/приготувала) смачно. → **готувала** (always = repeated)\n3. Одного разу ми ___ (бачили/побачили) ведмедя в лісі. → **побачили** (once)\n4. Раніше він часто ___ (хворів/захворів). → **хворів** (often = repeated)\n5. Минулого року вона ___ (закінчувала/закінчила) університет. → **закінчила** (single)\n6. Кожного ранку він ___ (бігав/побігав). → **бігав** (every morning = repeated)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Transform: Single to Repeated\n\nChange from perfective (single) to imperfective (repeated):\n\n1. Він подзвонив мені вчора. → Він **телефонував** мені щодня.\n2. Вона приготувала вечерю. → Вона завжди **готувала** вечерю.\n3. Я відповів на запитання. → Я **відповідав** на всі запитання.\n4. Ми купили хліб. → Ми **купували** хліб щодня."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Transform: Repeated to Single\n\nChange from imperfective (repeated) to perfective (single):\n\n1. Він завжди приходив рано. → Вчора він **прийшов** рано.\n2. Вона часто писала листи. → Вона **написала** один лист.\n3. Ми зустрічалися щотижня. → Ми **зустрілися** в понеділок.\n4. Я читав цю книгу. → Я **прочитав** цю книгу."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Story Analysis\n\nRead the text and identify why each aspect was used:\n\n> Коли я був студентом, я **жив** у гуртожитку. Щодня я **ходив** на лекції. Я часто **займався** в бібліотеці. Одного разу я **познайомився** з дівчиною. Ми **почали** зустрічатися. Через рік ми **одружилися**.\n\n- **жив** - imperfective (ongoing state)\n- **ходив** - imperfective (every day = repeated)\n- **займався** - imperfective (often = repeated)\n- **познайомився** - perfective (one time event)\n- **почали** - perfective (beginning = single moment)\n- **одружилися** - perfective (single completed action)"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-82-quiz"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-82-groupsort"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Tell Your Story\n\nDescribe your typical day **last year** (use imperfective for habits):\n\n**Example:**\nМинулого року я зазвичай вставав о сьомій. Щоранку я снідав і йшов на роботу. Після роботи я часто ходив у спортзал.\n\nNow describe **one special day** (use perfective for events):\n\n**Example:**\nОдного разу я запізнився на роботу. Я забув документи. Начальник подзвонив мені і запитав, де я."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Interview Your Partner\n\nAsk questions using different aspects:\n\n- Що ти **робив** на канікулах? (general, process)\n- Що ти **зробив** учора? (result focus)\n- Куди ти часто **ходив** у дитинстві? (repeated)\n- Куди ти **пішов** після школи? (single event)"
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-82-quiz",
+      "type": "quiz",
+      "title": "Single or Repeated?",
+      "description": "Choose the correct aspect based on the time expression.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct aspect based on the time expression.",
+        "questions": [
+          {
+            "question": "Вона ___ мені щодня.",
+            "options": [
+              "телефонувала",
+              "зателефонувала"
+            ],
+            "correctIndex": 0,
+            "explanation": "Щодня = repeated action = imperfective"
+          },
+          {
+            "question": "Одного разу він ___ дуже смішний жарт.",
+            "options": [
+              "розповідав",
+              "розповів"
+            ],
+            "correctIndex": 1,
+            "explanation": "Одного разу = single event = perfective"
+          },
+          {
+            "question": "Ми завжди ___ разом.",
+            "options": [
+              "обідали",
+              "пообідали"
+            ],
+            "correctIndex": 0,
+            "explanation": "Завжди = repeated = imperfective"
+          },
+          {
+            "question": "Минулого тижня я ___ цікавий фільм.",
+            "options": [
+              "дивився",
+              "подивився"
+            ],
+            "correctIndex": 1,
+            "explanation": "Минулого тижня + single film = perfective"
+          },
+          {
+            "question": "Раніше він часто ___ у цьому кафе.",
+            "options": [
+              "снідав",
+              "поснідав"
+            ],
+            "correctIndex": 0,
+            "explanation": "Часто = repeated = imperfective"
+          },
+          {
+            "question": "Раптом вона ___ і вийшла.",
+            "options": [
+              "вставала",
+              "встала"
+            ],
+            "correctIndex": 1,
+            "explanation": "Раптом = sudden single action = perfective"
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "past-tense",
+        "repetition"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-82-groupsort",
+      "type": "group-sort",
+      "title": "Time Expressions",
+      "description": "Time Expressions",
+      "content": {
+        "type": "group-sort",
+        "instructions": "",
+        "groups": [
+          {
+            "name": "Signal Single Event (Perfective)",
+            "items": [
+              "одного разу",
+              "раптом",
+              "вчора",
+              "нарешті",
+              "минулого тижня"
+            ]
+          },
+          {
+            "name": "Signal Repeated Action (Imperfective)",
+            "items": [
+              "завжди",
+              "часто",
+              "щодня",
+              "зазвичай",
+              "кожного разу",
+              "іноді"
+            ]
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "past-tense",
+        "repetition"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-82-fillin",
+      "type": "fill-in",
+      "title": "Complete the Story",
+      "description": "Коли я ___ (жив/прожив) у Києві, я ___ (ходив/пішов) на роботу пішки щодня. Зазвичай я ___ (купував/купив) каву по дорозі. Одного ранку я ___ (зустрічав/зустрів) старого друга. Ми ___ (говорили/поговорили) годину і я ___ (запізнювався/запізнився) на роботу.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Коли я ___ (жив/прожив) у Києві, я ___ (ходив/пішов) на роботу пішки щодня. Зазвичай я ___ (купував/купив) каву по дорозі. Одного ранку я ___ (зустрічав/зустрів) старого друга. Ми ___ (говорили/поговорили) годину і я ___ (запізнювався/запізнився) на роботу."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "aspect",
+        "grammar",
+        "verbs",
+        "past-tense",
+        "repetition"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-82",
+    "level": "B1",
+    "phase": "B1.1",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

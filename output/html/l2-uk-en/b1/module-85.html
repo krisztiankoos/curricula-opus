@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 85: Aspect in Negation | Ukrainian B1</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-84.html" class="module-nav-link">← Module 84</a>
+      <a href="index.html" class="module-nav-link">B1 Index</a>
+      <a href="module-86.html" class="module-nav-link">Module 86 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 85: Aspect in Negation</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">B1 · B1.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Aspect in Negation</h2>
+        <p style="color:var(--text-muted)">The Imperfective Preference with Не</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### A Common Pattern</h4><div class="md-content"><p>Compare these sentences:</p>
+<ul>
+<li>Ти <strong>прочитав</strong> книгу? - Did you read the book?</li>
+<li>Ні, я <strong>не читав</strong> її. - No, I didn't read it.</li>
+</ul>
+<p>Notice: The question uses perfective, but the negative answer uses imperfective!</p>
+<p>This is a fundamental pattern in Ukrainian: <strong>negation prefers imperfective</strong>.</p></div></div><div class="canvas-note"><h4>### The General Rule</h4><div class="md-content"><p><strong>In negative sentences, Ukrainian strongly prefers imperfective verbs.</strong></p>
+<p>Why? When you deny an action, you're usually saying "the action didn't happen at all" — there was no process, so there's no result to talk about.</p>
+<p><strong>Positive (perfective):</strong> Я <strong>прочитав</strong> книгу. - I read the book.<br />
+<strong>Negative (imperfective):</strong> Я <strong>не читав</strong> цю книгу. - I didn't read this book.</p>
+<p><strong>Positive (perfective):</strong> Він <strong>написав</strong> листа. - He wrote the letter.<br />
+<strong>Negative (imperfective):</strong> Він <strong>не писав</strong> листа. - He didn't write a letter.</p></div></div><div class="canvas-note"><h4>Why Imperfective?</h4><div class="md-content"><p>Think of it this way:</p>
+<ul>
+<li><strong>Perfective</strong> asserts a result: "The book got read."</li>
+<li><strong>Imperfective</strong> describes process: "Reading was happening."</li>
+<li><strong>Negative imperfective</strong> says: "No reading process ever occurred."</li>
+</ul>
+<p>If no process happened, how could there be a result? So imperfective is more logical.</p></div></div><div class="canvas-note"><h4>Common Negation Patterns</h4><div class="md-content"><p><strong>"Didn't do" (general negation):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Positive (perfective)</th>
+<th>Negative (imperfective)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я <strong>зробив</strong> це.</td>
+<td>Я <strong>не робив</strong> цього.</td>
+</tr>
+<tr>
+<td>Вона <strong>написала</strong> листа.</td>
+<td>Вона <strong>не писала</strong> листа.</td>
+</tr>
+<tr>
+<td>Ми <strong>купили</strong> хліб.</td>
+<td>Ми <strong>не купували</strong> хліба.</td>
+</tr>
+<tr>
+<td>Він <strong>сказав</strong> правду.</td>
+<td>Він <strong>не говорив</strong> правди.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>Note: Objects often shift to genitive case in negative sentences.</p>
+</blockquote></div></div><div class="canvas-note"><h4>Questions and Negative Answers</h4><div class="md-content"><p><strong>Question (often perfective):</strong> Ти зробив домашнє? - Did you do your homework?<br />
+<strong>Negative (imperfective):</strong> Ні, не робив. - No, I didn't.</p>
+<p><strong>Question:</strong> Ви купили квитки? - Did you buy tickets?<br />
+<strong>Negative:</strong> Ні, ми не купували. - No, we didn't.</p>
+<p><strong>Question:</strong> Вона подзвонила? - Did she call?<br />
+<strong>Negative:</strong> Ні, не телефонувала. - No, she didn't.</p></div></div><div class="canvas-note"><h4>When Perfective Negation IS Used</h4><div class="md-content"><p>There are specific cases where perfective is used in negation:</p>
+<p><strong>1. Specific expected result didn't happen:</strong></p>
+<ul>
+<li>Я <strong>не знайшов</strong> ключів. - I didn't find the keys. (I searched, but no result)</li>
+<li>Вона <strong>не встигла</strong> на потяг. - She didn't catch the train. (She tried, but failed)</li>
+<li>Ми <strong>не зрозуміли</strong> його. - We didn't understand him. (Specific failure)</li>
+</ul>
+<p><strong>2. Warning that something won't happen:</strong></p>
+<ul>
+<li>Обережно, <strong>не впади</strong>! - Careful, don't fall!</li>
+<li><strong>Не забудь</strong> ключі! - Don't forget the keys!</li>
+<li><strong>Не запізнись</strong>! - Don't be late!</li>
+</ul>
+<p><strong>3. Emphatic denial of specific action:</strong></p>
+<ul>
+<li>Я цього <strong>не сказав</strong>! - I didn't say that! (denying specific statement)</li>
+<li>Він цього <strong>не зробив</strong>! - He didn't do that! (denying specific deed)</li>
+</ul></div></div><div class="canvas-note"><h4>Prohibition: Don't Do This!</h4><div class="md-content"><p><strong>General prohibition (imperfective):</strong> Don't do this type of action.</p>
+<ul>
+<li><strong>Не кури</strong>! - Don't smoke! (in general)</li>
+<li><strong>Не бійся</strong>! - Don't be afraid!</li>
+<li><strong>Не хвилюйся</strong>! - Don't worry!</li>
+<li><strong>Тут не можна паркуватися</strong>. - Parking is not allowed here.</li>
+</ul>
+<p><strong>Specific warning (perfective):</strong> Don't do this one thing!</p>
+<ul>
+<li><strong>Не впусти</strong> тарілку! - Don't drop the plate!</li>
+<li><strong>Не забудь</strong> зателефонувати! - Don't forget to call!</li>
+<li><strong>Не відкривай</strong> двері! - Don't open the door! (this specific time)</li>
+</ul></div></div><div class="canvas-note"><h4>"Never" - Always Imperfective</h4><div class="md-content"><p>With <strong>ніколи</strong> (never), always use imperfective:</p>
+<ul>
+<li>Я <strong>ніколи не курив</strong>. - I have never smoked.</li>
+<li>Вона <strong>ніколи не бачила</strong> моря. - She has never seen the sea.</li>
+<li>Ми <strong>ніколи не ходили</strong> туди. - We have never been there.</li>
+<li>Він <strong>ніколи не запізнювався</strong>. - He was never late.</li>
+</ul>
+<p><strong>NOT:</strong> <del>Я ніколи не покурив.</del> (Incorrect)</p></div></div><div class="canvas-note"><h4>"Not yet" - Usually Perfective</h4><div class="md-content"><p>With <strong>ще не</strong> (not yet), use perfective (result expected but not achieved):</p>
+<ul>
+<li>Я <strong>ще не прочитав</strong> книгу. - I haven't read the book yet.</li>
+<li>Вона <strong>ще не приїхала</strong>. - She hasn't arrived yet.</li>
+<li>Ми <strong>ще не вирішили</strong>. - We haven't decided yet.</li>
+<li>Він <strong>ще не закінчив</strong>. - He hasn't finished yet.</li>
+</ul></div></div><div class="canvas-note"><h4>Future Negation</h4><div class="md-content"><p><strong>General refusal (imperfective):</strong></p>
+<ul>
+<li>Я <strong>не буду</strong> це <strong>робити</strong>. - I won't do this.</li>
+<li>Вона <strong>не буде</strong> з ним <strong>розмовляти</strong>. - She won't talk to him.</li>
+</ul>
+<p><strong>Specific action won't happen (perfective):</strong></p>
+<ul>
+<li>Я цього <strong>не зроблю</strong>. - I won't do this (specific thing).</li>
+<li>Вона йому <strong>не скаже</strong>. - She won't tell him.</li>
+</ul></div></div><div class="canvas-note"><h4>Genitive Case in Negative Sentences</h4><div class="md-content"><p>Objects often shift to genitive in negation:</p>
+<table>
+<thead>
+<tr>
+<th>Positive (accusative)</th>
+<th>Negative (genitive)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я <strong>бачив</strong> його (<strong>acc</strong>).</td>
+<td>Я <strong>не бачив</strong> його (<strong>gen</strong>).</td>
+</tr>
+<tr>
+<td>Вона <strong>купила</strong> хліб (<strong>acc</strong>).</td>
+<td>Вона <strong>не купувала</strong> хліба (<strong>gen</strong>).</td>
+</tr>
+<tr>
+<td>Ми <strong>пили</strong> каву (<strong>acc</strong>).</td>
+<td>Ми <strong>не пили</strong> кави (<strong>gen</strong>).</td>
+</tr>
+</tbody>
+</table>
+<p>This is called the "genitive of negation" — another A2+ topic reinforced here.</p></div></div><div class="canvas-note"><h4>### Convert to Negative</h4><div class="md-content"><p>Change to negative form (use imperfective):</p>
+<ol>
+<li>Він прочитав книгу. → Він <strong>не читав</strong> книги.</li>
+<li>Вона написала листа. → Вона <strong>не писала</strong> листа.</li>
+<li>Ми купили квитки. → Ми <strong>не купували</strong> квитків.</li>
+<li>Я зробив домашнє. → Я <strong>не робив</strong> домашнього.</li>
+<li>Вони подивилися фільм. → Вони <strong>не дивилися</strong> фільму.</li>
+</ol></div></div><div class="canvas-note"><h4>Choose Correct Aspect in Negation</h4><div class="md-content"><ol>
+<li>Я ніколи ___ (не курив/не покурив). → <strong>не курив</strong> (ніколи = imperfective)</li>
+<li>Обережно, ___ (не падай/не впади)! → <strong>не впади</strong> (warning = perfective)</li>
+<li>Вона ще ___ (не приїжджала/не приїхала). → <strong>не приїхала</strong> (ще не = perfective)</li>
+<li>Я ___ (не буду робити/не зроблю) це (general refusal). → <strong>не буду робити</strong></li>
+<li>___ (Не забувай/Не забудь) взяти парасольку! → <strong>Не забудь</strong> (warning)</li>
+<li>Ми ___ (не говорили/не сказали) йому про це. → <strong>не говорили</strong> (general negation)</li>
+</ol></div></div><div class="canvas-note"><h4>Question and Answer</h4><div class="md-content"><p>Answer negatively using imperfective:</p>
+<p><strong>Q:</strong> Ти подзвонив мамі?<br />
+<strong>A:</strong> Ні, я ще <strong>не телефонував</strong>.</p>
+<p><strong>Q:</strong> Ви купили квитки?<br />
+<strong>A:</strong> Ні, ми <strong>не купували</strong>.</p>
+<p><strong>Q:</strong> Вона написала звіт?<br />
+<strong>A:</strong> Ні, вона <strong>не писала</strong> звіту.</p>
+<p><strong>Q:</strong> Він прийшов?<br />
+<strong>A:</strong> Ні, він <strong>не приходив</strong>.</p></div></div><div class="canvas-note"><h4>Prohibition Practice</h4><div class="md-content"><p>Choose the right form for prohibition:</p>
+<ol>
+<li>(General rule) Тут ___ (не палити/не запалити)! → <strong>не палити</strong></li>
+<li>(Specific warning) ___ (Не торкайся/Не торкнись) цього! → <strong>Не торкайся</strong> OR <strong>Не торкнись</strong></li>
+<li>(General advice) ___ (Не хвилюйся/Не захвилюйся)! → <strong>Не хвилюйся</strong></li>
+<li>(Specific moment) ___ (Не відкривай/Не відкрий) двері! → <strong>Не відкривай</strong></li>
+</ol></div></div><div class="canvas-note"><h4>### Denial Practice</h4><div class="md-content"><p>Practice denying things you didn't do:</p>
+<ul>
+<li>Я не робив цього!</li>
+<li>Я ніколи не казав такого!</li>
+<li>Ми не брали ваших речей!</li>
+</ul></div></div><div class="canvas-note"><h4>Prohibition Signs</h4><div class="md-content"><p>Create prohibition signs:</p>
+<ul>
+<li>Не палити! (No smoking)</li>
+<li>Не паркуватися! (No parking)</li>
+<li>Не входити! (No entry)</li>
+<li>Не торкатися! (Do not touch)</li>
+</ul></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Positive to Negative</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Він прочитав</div><div class="match-item" data-pair="1">Вона написала</div><div class="match-item" data-pair="2">Ми купили</div><div class="match-item" data-pair="3">Я зробив</div><div class="match-item" data-pair="4">Вони сказали</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Я не робив</div><div class="match-item" data-pair="0">Він не читав</div><div class="match-item" data-pair="4">Вони не говорили</div><div class="match-item" data-pair="1">Вона не писала</div><div class="match-item" data-pair="2">Ми не купували</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Negation Aspect</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>Negation Patterns</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/8</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Use Imperfective</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Use Perfective</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 85 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"Він прочитав","right":"Він не читав"},{"left":"Вона написала","right":"Вона не писала"},{"left":"Ми купили","right":"Ми не купували"},{"left":"Я зробив","right":"Я не робив"},{"left":"Вони сказали","right":"Вони не говорили"}];
+    const quizData=[{"question":"Я ___ цю книгу.","options":["не читав","не прочитав"],"correctIndex":0,"explanation":"General negation = imperfective"},{"question":"Обережно, ___ !","options":["не падай","не впади"],"correctIndex":1,"explanation":"Specific warning = perfective"},{"question":"Вона ніколи ___ морозива.","options":["не їла","не з'їла"],"correctIndex":0,"explanation":"Ніколи = imperfective"},{"question":"Я ще ___ цей фільм.","options":["не дивився","не подивився"],"correctIndex":1,"explanation":"Ще не = perfective"},{"question":"___ ключі!","options":["Не забувай","Не забудь"],"correctIndex":1,"explanation":"Specific warning = perfective"},{"question":"Ми ___ йому про це.","options":["не говорили","не сказали"],"correctIndex":0,"explanation":"General negation = imperfective"}];
+    const sortData={"true-friends":["general negation (Я не робив)","ніколи (never)","general prohibition (Не палити!)","not used to (Він не курив)"],"false-friends":["ще не (not yet)","specific warning (Не впади!)","specific denial (Я цього не сказав!)","expected result failed (Не знайшов)"]};
+    const vocabData=[];
+    const totalSort=8;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

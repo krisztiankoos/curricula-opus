@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 89: Motion Verbs: The Full System | Ukrainian B1</title>
+  <style>
+    :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+    .top-nav a { color: white; text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .module-nav { display: flex; gap: 1rem; align-items: center; }
+    .module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+    .module-nav-link:hover { color: white; }
+    .module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+    .nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav h1 { font-size: 1.25rem; }
+    .nav-tabs { display: flex; gap: 0.5rem; }
+    .nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+    .nav-tab.active { background: white; color: var(--primary); }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .section { display: none; } .section.active { display: block; }
+    .lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+    .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+    .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+    .md-content { line-height: 1.7; }
+    .md-content p { margin: 0.75rem 0; }
+    .md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    .md-content li { margin: 0.25rem 0; }
+    .md-content strong { color: var(--primary); }
+    .md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .md-content blockquote p { margin: 0.25rem 0; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    .md-content th { background: #f5f5f5; font-weight: 600; }
+    .md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+    .letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+    .letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+    .letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+    .letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+    .match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+    .match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+    .match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+    .match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+    .match-item.matched { border-color: var(--success); background: #e8f8f0; }
+    .match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    .quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+    .quiz-question.answered { pointer-events: none; }
+    .quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+    .quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+    .quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+    .quiz-option.correct { border-color: var(--success); background: #d4edda; }
+    .quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+    .quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+    .quiz-explanation.show { display: block; }
+    .sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+    .sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+    .sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+    .sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+    .sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+    .sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+    .sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+    .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+    .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+    .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+    .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+    .vocab-card .translit { color: var(--text-muted); font-style: italic; }
+    .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+    .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    .btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-outline { background: transparent; border: 2px solid var(--border); }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+    .score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+    .score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+    .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+    .completion-message.show { display: block; }
+    footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-88.html" class="module-nav-link">← Module 88</a>
+      <a href="index.html" class="module-nav-link">B1 Index</a>
+      <a href="module-90.html" class="module-nav-link">Module 90 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 89: Motion Verbs: The Full System</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="match">Match</button>
+      <button class="nav-tab" data-section="quiz">Quiz</button>
+      <button class="nav-tab" data-section="sort">Sort</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">B1 · B1.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Motion Verbs: The Full System</h2>
+        <p style="color:var(--text-muted)">All 14 Pairs of Ukrainian Motion Verbs</p>
+      </div>
+      
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>### The Motion Verb Challenge</h4><div class="md-content"><p>Ukrainian motion verbs are famous for being difficult. But they follow logical patterns!</p>
+<p><strong>The core distinction:</strong></p>
+<ul>
+<li><strong>Unidirectional:</strong> One direction, one trip, right now</li>
+<li><strong>Multidirectional:</strong> Multiple directions, round trips, habitual</li>
+</ul>
+<p>At A2, you learned іти/ходити and їхати/їздити. Now: the complete system.</p></div></div><div class="canvas-note"><h4>### The Two Types of Motion</h4><div class="md-content"><p><strong>Unidirectional (односпрямовані):</strong></p>
+<ul>
+<li>Movement in ONE direction</li>
+<li>ONE specific trip</li>
+<li>Happening NOW or a specific moment</li>
+<li>Linear, goal-oriented</li>
+</ul>
+<p><strong>Multidirectional (різноспрямовані):</strong></p>
+<ul>
+<li>Movement in MULTIPLE directions</li>
+<li>Round trips (there and back)</li>
+<li>Habitual, repeated motion</li>
+<li>General ability to move</li>
+</ul></div></div><div class="canvas-note"><h4>The 14 Motion Verb Pairs</h4><div class="md-content"><h4 id="onfoot">On Foot</h4>
+<table>
+<thead>
+<tr>
+<th>Unidirectional</th>
+<th>Multidirectional</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>іти</td>
+<td>ходити</td>
+<td>to go (on foot)</td>
+</tr>
+<tr>
+<td>бігти</td>
+<td>бігати</td>
+<td>to run</td>
+</tr>
+<tr>
+<td>брести</td>
+<td>бродити</td>
+<td>to wander, wade</td>
+</tr>
+<tr>
+<td>лізти</td>
+<td>лазити</td>
+<td>to climb</td>
+</tr>
+<tr>
+<td>повзти</td>
+<td>повзати</td>
+<td>to crawl</td>
+</tr>
+</tbody>
+</table>
+<h4 id="byvehicleairwater">By Vehicle/Air/Water</h4>
+<table>
+<thead>
+<tr>
+<th>Unidirectional</th>
+<th>Multidirectional</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>їхати</td>
+<td>їздити</td>
+<td>to go (by vehicle)</td>
+</tr>
+<tr>
+<td>летіти</td>
+<td>літати</td>
+<td>to fly</td>
+</tr>
+<tr>
+<td>плисти</td>
+<td>плавати</td>
+<td>to swim, sail</td>
+</tr>
+<tr>
+<td>котитися</td>
+<td>кочатися</td>
+<td>to roll</td>
+</tr>
+</tbody>
+</table>
+<h4 id="carryingleading">Carrying/Leading</h4>
+<table>
+<thead>
+<tr>
+<th>Unidirectional</th>
+<th>Multidirectional</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>нести</td>
+<td>носити</td>
+<td>to carry (on foot)</td>
+</tr>
+<tr>
+<td>везти</td>
+<td>возити</td>
+<td>to carry (by vehicle)</td>
+</tr>
+<tr>
+<td>вести</td>
+<td>водити</td>
+<td>to lead</td>
+</tr>
+<tr>
+<td>гнати</td>
+<td>ганяти</td>
+<td>to chase, drive</td>
+</tr>
+<tr>
+<td>тягти</td>
+<td>тягати</td>
+<td>to pull, drag</td>
+</tr>
+</tbody>
+</table></div></div><div class="canvas-note"><h4>Core 8 Pairs for B1</h4><div class="md-content"><p>Focus on these 8 most common pairs:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Uni</th>
+<th>Multi</th>
+<th>English</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>іти</td>
+<td>ходити</td>
+<td>go (foot)</td>
+<td>Я йду в магазин. / Я ходжу в магазин щодня.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>їхати</td>
+<td>їздити</td>
+<td>go (vehicle)</td>
+<td>Я їду на роботу. / Я їжджу на роботу щодня.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>бігти</td>
+<td>бігати</td>
+<td>run</td>
+<td>Він біжить. / Він бігає щоранку.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>летіти</td>
+<td>літати</td>
+<td>fly</td>
+<td>Літак летить. / Птахи літають.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>плисти</td>
+<td>плавати</td>
+<td>swim</td>
+<td>Він пливе. / Він плаває добре.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>нести</td>
+<td>носити</td>
+<td>carry</td>
+<td>Він несе сумку. / Він носить окуляри.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>везти</td>
+<td>возити</td>
+<td>transport</td>
+<td>Таксі везе мене. / Він возить товари.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>вести</td>
+<td>водити</td>
+<td>lead</td>
+<td>Він веде дитину. / Він водить машину.</td>
+</tr>
+</tbody>
+</table></div></div><div class="canvas-note"><h4>When to Use Unidirectional</h4><div class="md-content"><p><strong>1. Right now, one direction:</strong></p>
+<ul>
+<li>Куди ти <strong>йдеш</strong>? - Where are you going (right now)?</li>
+<li>Я <strong>йду</strong> додому. - I'm going home.</li>
+<li>Дивись, літак <strong>летить</strong>! - Look, a plane is flying!</li>
+</ul>
+<p><strong>2. Single trip in past (narrative):</strong></p>
+<ul>
+<li>Учора я <strong>йшов</strong> додому і зустрів друга. - Yesterday I was going home and met a friend.</li>
+<li>Коли ми <strong>їхали</strong> в Київ, ми бачили красиві краєвиди. - When we were going to Kyiv, we saw beautiful scenery.</li>
+</ul>
+<p><strong>3. Future single trip:</strong></p>
+<ul>
+<li>Завтра я <strong>йду</strong> на концерт. - Tomorrow I'm going to a concert.</li>
+<li>Ми <strong>їдемо</strong> у відпустку. - We're going on vacation.</li>
+</ul></div></div><div class="canvas-note"><h4>When to Use Multidirectional</h4><div class="md-content"><p><strong>1. Round trip (there and back):</strong></p>
+<ul>
+<li>Учора я <strong>ходив</strong> у магазин. - Yesterday I went to the store (and came back).</li>
+<li>Вона <strong>їздила</strong> в Одесу. - She went to Odesa (and returned).</li>
+</ul>
+<p><strong>2. Habitual motion:</strong></p>
+<ul>
+<li>Я <strong>ходжу</strong> на роботу пішки. - I walk to work (regularly).</li>
+<li>Він <strong>їздить</strong> на метро. - He takes the metro (regularly).</li>
+<li>Вона <strong>бігає</strong> щоранку. - She runs every morning.</li>
+</ul>
+<p><strong>3. General ability:</strong></p>
+<ul>
+<li>Риби <strong>плавають</strong>. - Fish swim (can swim).</li>
+<li>Птахи <strong>літають</strong>. - Birds fly (can fly).</li>
+<li>Діти вже <strong>ходять</strong>. - The children already walk (can walk).</li>
+</ul>
+<p><strong>4. Motion in various directions:</strong></p>
+<ul>
+<li>Діти <strong>бігають</strong> по кімнаті. - Children are running around the room.</li>
+<li>Він <strong>ходить</strong> туди-сюди. - He's walking back and forth.</li>
+</ul></div></div><div class="canvas-note"><h4>Past Tense: Key Difference</h4><div class="md-content"><p><strong>Unidirectional past = in the process of going:</strong></p>
+<ul>
+<li>Я <strong>йшов</strong> додому, коли почався дощ. - I was going home when it started to rain.</li>
+</ul>
+<p><strong>Multidirectional past = completed round trip:</strong></p>
+<ul>
+<li>Я <strong>ходив</strong> у магазин. - I went to the store (and came back).</li>
+</ul>
+<p>Compare:</p>
+<ul>
+<li>Де ти був? — Я <strong>ходив</strong> у бібліотеку. (completed trip)</li>
+<li>Що ти робив? — Я <strong>йшов</strong> по вулиці. (process)</li>
+</ul></div></div><div class="canvas-note"><h4>Conjugation Review</h4><div class="md-content"><p><strong>Іти (unidirectional):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>Present</th>
+<th>Past</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>йду</td>
+<td>йшов/йшла</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>йдеш</td>
+<td>йшов/йшла</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>йде</td>
+<td>йшов/йшла</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>йдемо</td>
+<td>йшли</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>йдете</td>
+<td>йшли</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>йдуть</td>
+<td>йшли</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ходити (multidirectional):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>Present</th>
+<th>Past</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>ходжу</td>
+<td>ходив/ходила</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>ходиш</td>
+<td>ходив/ходила</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>ходить</td>
+<td>ходив/ходила</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>ходимо</td>
+<td>ходили</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>ходите</td>
+<td>ходили</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>ходять</td>
+<td>ходили</td>
+</tr>
+</tbody>
+</table></div></div><div class="canvas-note"><h4>### Choose Uni or Multi</h4><div class="md-content"><ol>
+<li>Куди ти ___ (йдеш/ходиш) зараз? → <strong>йдеш</strong> (right now)</li>
+<li>Вона ___ (їде/їздить) на роботу автобусом щодня. → <strong>їздить</strong> (every day)</li>
+<li>Дивись, птах ___ (летить/літає)! → <strong>летить</strong> (right now, one direction)</li>
+<li>Учора я ___ (йшов/ходив) у кіно. → <strong>ходив</strong> (round trip)</li>
+<li>Риби добре ___ (пливуть/плавають). → <strong>плавають</strong> (ability)</li>
+<li>Він зараз ___ (несе/носить) важку сумку. → <strong>несе</strong> (right now)</li>
+<li>Вона завжди ___ (несе/носить) парасольку. → <strong>носить</strong> (always)</li>
+<li>Коли я ___ (їхав/їздив) на роботу, я бачив аварію. → <strong>їхав</strong> (in process of going)</li>
+</ol></div></div><div class="canvas-note"><h4>Complete the Dialogues</h4><div class="md-content"><p><strong>Dialogue 1:</strong></p>
+<ul>
+<li>А: Куди ти ___? (йти)</li>
+<li>Б: Я ___ в магазин. (йти)</li>
+<li>А: Ти часто туди ___? (ходити)</li>
+<li>Б: Так, я ___ туди щодня. (ходити)</li>
+</ul>
+<p><strong>Answers:</strong> йдеш, йду, ходиш, ходжу</p>
+<p><strong>Dialogue 2:</strong></p>
+<ul>
+<li>А: Ти вчора ___ на роботу на машині? (їздити)</li>
+<li>Б: Ні, я ___ пішки, бо машина зламалась. (ходити)</li>
+<li>А: А як ти зараз ___ на роботу? (їхати)</li>
+<li>Б: Я ___ автобусом. (їхати)</li>
+</ul>
+<p><strong>Answers:</strong> їздив, ходив, їдеш, їду</p></div></div><div class="canvas-note"><h4>Describe Movement</h4><div class="md-content"><p>Use the correct verb:</p>
+<ol>
+<li>Літак ___ над містом. (right now) → <strong>летить</strong></li>
+<li>Він добре ___. (ability to swim) → <strong>плаває</strong></li>
+<li>Діти ___ по двору. (multiple directions) → <strong>бігають</strong></li>
+<li>Машина ___ швидко. (right now, one direction) → <strong>їде</strong></li>
+<li>Вона ___ машину. (ability/regular) → <strong>водить</strong></li>
+</ol></div></div><div class="canvas-note"><h4>### Describe Your Commute</h4><div class="md-content"><p>Use both types of motion verbs:</p>
+<p><strong>Example:</strong><br />
+Щодня я <strong>їжджу</strong> на роботу метро. Зранку я <strong>йду</strong> до станції пішки. Коли я <strong>їду</strong> в метро, я читаю книгу. Увечері я <strong>йду</strong> додому тією самою дорогою.</p></div></div><div class="canvas-note"><h4>Tell About a Trip</h4><div class="md-content"><p>Use multidirectional for completed trips:</p>
+<p><strong>Example:</strong><br />
+Минулого тижня я <strong>їздив</strong> у Львів. Там я багато <strong>ходив</strong> по місту. Ми <strong>плавали</strong> у басейні в готелі.</p></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
+    </section>
+    <section id="match" class="section"><div class="card"><h3>Motion Pairs</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
+      <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">іти</div><div class="match-item" data-pair="1">їхати</div><div class="match-item" data-pair="2">бігти</div><div class="match-item" data-pair="3">летіти</div><div class="match-item" data-pair="4">плисти</div><div class="match-item" data-pair="5">нести</div><div class="match-item" data-pair="6">везти</div><div class="match-item" data-pair="7">вести</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="6">возити</div><div class="match-item" data-pair="0">ходити</div><div class="match-item" data-pair="7">водити</div><div class="match-item" data-pair="2">бігати</div><div class="match-item" data-pair="4">плавати</div><div class="match-item" data-pair="3">літати</div><div class="match-item" data-pair="1">їздити</div><div class="match-item" data-pair="5">носити</div></div>
+      </div>
+      <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
+    </div></section>
+    <section id="quiz" class="section"><div class="card"><h3>Motion Verb Selection</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+    </div></section>
+    <section id="sort" class="section"><div class="card"><h3>When to Use</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/8</span></div>
+      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Unidirectional</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Multidirectional</h4><div class="sort-items"></div></div></div>
+      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+    </div></section>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    </section>
+  </main>
+  <footer>Module 89 · curricula-opus</footer>
+  <script>
+    const matchPairs=[{"left":"іти","right":"ходити"},{"left":"їхати","right":"їздити"},{"left":"бігти","right":"бігати"},{"left":"летіти","right":"літати"},{"left":"плисти","right":"плавати"},{"left":"нести","right":"носити"},{"left":"везти","right":"возити"},{"left":"вести","right":"водити"}];
+    const quizData=[{"question":"Куди ти ___ зараз?","options":["йдеш","ходиш"],"correctIndex":0,"explanation":"Right now = unidirectional"},{"question":"Вона ___ на роботу щодня.","options":["їде","їздить"],"correctIndex":1,"explanation":"Щодня = multidirectional"},{"question":"Учора я ___ у театр.","options":["йшов","ходив"],"correctIndex":1,"explanation":"Round trip = multidirectional"},{"question":"Дивись, собака ___ !","options":["біжить","бігає"],"correctIndex":0,"explanation":"Right now = unidirectional"},{"question":"Птахи ___ на південь восени.","options":["летять","літають"],"correctIndex":0,"explanation":"One direction (migration) = unidirectional"},{"question":"Діти вже ___ .","options":["йдуть","ходять"],"correctIndex":1,"explanation":"Ability = multidirectional"}];
+    const sortData={"true-friends":["right now, one direction","single trip in narrative","future single trip","linear movement"],"false-friends":["round trip (there and back)","habitual motion","general ability","movement in various directions"]};
+    const vocabData=[];
+    const totalSort=8;
+    function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
+    document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));
+    let matchSel=null,matchScore=0,matchPairsArr=[];
+    document.querySelectorAll('#match-left .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched'))return;document.querySelectorAll('#match-left .match-item').forEach(i=>i.classList.remove('selected'));item.classList.add('selected');matchSel={el:item,pair:item.dataset.pair};});});
+    document.querySelectorAll('#match-right .match-item').forEach(item=>{item.addEventListener('click',()=>{if(item.classList.contains('matched')||!matchSel)return;if(matchSel.pair===item.dataset.pair){matchSel.el.classList.remove('selected');matchSel.el.classList.add('matched');item.classList.add('matched');matchPairsArr.push({left:matchSel.el,right:item});matchScore++;document.getElementById('match-score').textContent=matchScore;drawLines();if(matchScore===matchPairs.length)document.getElementById('match-complete').classList.add('show');}else{item.classList.add('wrong');setTimeout(()=>item.classList.remove('wrong'),300);}matchSel=null;});});
+    function drawLines(){const svg=document.getElementById('match-lines'),c=document.getElementById('match-container');if(!svg||!c)return;const r=c.getBoundingClientRect();svg.innerHTML='';svg.setAttribute('viewBox','0 0 '+r.width+' '+r.height);matchPairsArr.forEach(p=>{const lr=p.left.getBoundingClientRect(),rr=p.right.getBoundingClientRect();const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',lr.right-r.left);line.setAttribute('y1',lr.top+lr.height/2-r.top);line.setAttribute('x2',rr.left-r.left);line.setAttribute('y2',rr.top+rr.height/2-r.top);line.setAttribute('stroke','#26a269');line.setAttribute('stroke-width','2');svg.appendChild(line);});}
+    function resetMatch(){matchSel=null;matchScore=0;matchPairsArr=[];document.getElementById('match-score').textContent='0';document.getElementById('match-complete')?.classList.remove('show');document.getElementById('match-lines').innerHTML='';document.querySelectorAll('#match-container .match-item').forEach(i=>i.classList.remove('matched','selected','wrong'));}
+    window.addEventListener('resize',drawLines);
+    let quizScore=0,quizAns=0;
+    function initQuiz(){const c=document.getElementById('quiz-container');if(!c||!quizData.length)return;c.innerHTML='';quizData.forEach((q,i)=>{const sh=[...q.options].sort(()=>Math.random()-0.5);const cor=sh.indexOf(q.options[q.correctIndex]);const div=document.createElement('div');div.className='quiz-question';div.innerHTML='<h4>Q'+(i+1)+': '+q.question+'</h4><div class="quiz-options">'+sh.map((o,j)=>'<div class="quiz-option" data-c="'+(j===cor)+'" data-q="'+i+'">'+o+'</div>').join('')+'</div><div class="quiz-explanation" id="exp-'+i+'">'+q.explanation+'</div>';c.appendChild(div);});document.querySelectorAll('.quiz-option').forEach(o=>o.addEventListener('click',handleQuiz));}
+    function handleQuiz(e){const opt=e.target,q=opt.closest('.quiz-question');if(q.classList.contains('answered'))return;q.classList.add('answered');if(opt.dataset.c==='true'){opt.classList.add('correct');quizScore++;}else{opt.classList.add('wrong');q.querySelector('[data-c="true"]').classList.add('correct');}document.getElementById('exp-'+opt.dataset.q).classList.add('show');document.getElementById('quiz-score').textContent=quizScore;quizAns++;if(quizAns===quizData.length)document.getElementById('quiz-complete').classList.add('show');}
+    function resetQuiz(){quizScore=0;quizAns=0;document.getElementById('quiz-score').textContent='0';document.getElementById('quiz-complete')?.classList.remove('show');initQuiz();}
+    let sortScore=0,dragItem=null;
+    function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
+    function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
+    function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
+    document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
+  </script>
+</body>
+</html>

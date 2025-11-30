@@ -1,0 +1,322 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-93",
+    "moduleId": "mod-uk-B1-93",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "methodology": "ppp",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.1",
+    "moduleNumber": 93,
+    "title": "Motion Verbs: Figurative Uses",
+    "subtitle": "Виходить, що...; Доходити до...",
+    "description": "Learn common figurative uses of motion verbs",
+    "objectives": [
+      "Learn common figurative uses of motion verbs",
+      "Understand idiomatic expressions with motion verbs",
+      "Use abstract motion expressions naturally",
+      "Expand vocabulary with fixed expressions"
+    ],
+    "grammarFocus": [
+      "Figurative motion expressions",
+      "Impersonal constructions",
+      "Fixed expressions and collocations"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "verbs",
+      "motion",
+      "idioms",
+      "figurative-language"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Beyond Physical Motion\n\nMotion verbs don't just describe physical movement. They create powerful expressions for abstract ideas!\n\n**Compare:**\n\nPhysical: Він **виходить** з кімнати. - He is going out of the room.\nAbstract: **Виходить**, що він мав рацію. - It turns out that he was right.\n\nToday: the most useful figurative uses of motion verbs."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Виходити / Вийти - Abstract Uses\n\n**1. Виходить, що... = It turns out that...**\n\n- **Виходить**, що ти був правий. - It turns out you were right.\n- **Виходить**, що ми помилилися. - It turns out we were wrong.\n- Як **виходить**, він не знав про це. - As it turns out, he didn't know about it.\n\n**2. Виходити (з чогось) = To result from, come from**\n\n- Що з цього **вийде**? - What will come of this?\n- Нічого доброго з цього не **вийде**. - Nothing good will come of this.\n- У нього все **виходить**. - Everything works out for him.\n\n**3. Виходити заміж / Одружуватися = To get married**\n\n- Вона **виходить заміж** у червні. - She's getting married in June.\n- Вона **вийшла заміж** за лікаря. - She married a doctor."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Доходити / Дійти - Abstract Uses\n\n**1. Доходити до (чогось) = To reach, get to (a point)**\n\n- Справа **дійшла** до суду. - The matter went to court.\n- Справа **не дійшла** до бійки. - It didn't come to a fight.\n- У нас **дійшли** до третього розділу. - We've gotten to the third chapter.\n\n**2. Доходити (до кого) = To get through (understand)**\n\n- До нього не **доходить**. - It doesn't get through to him. (He doesn't get it.)\n- Нарешті до мене **дійшло**! - It finally dawned on me!\n- Чи **дійшло** до тебе? - Did you get it?\n\n**3. Дохід = Income (that which \"comes to\" you)**\n\n- Місячний **дохід** - monthly income"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Приходити / Прийти - Abstract Uses\n\n**1. Приходити до (висновку) = To come to (a conclusion)**\n\n- Ми **прийшли до висновку**, що... - We came to the conclusion that...\n- Вони **прийшли до згоди**. - They came to an agreement.\n- Він **прийшов до думки**, що... - He came to think that...\n\n**2. Приходити в себе = To come to one's senses**\n\n- Він нарешті **прийшов до тями**. - He finally came to his senses.\n- Вона **прийшла в себе** після операції. - She came to after the surgery.\n\n**3. Приходити на думку = To come to mind**\n\n- Мені **прийшла на думку** ідея. - An idea came to mind.\n- Що тобі **приходить на думку**? - What comes to your mind?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Переходити / Перейти - Abstract Uses\n\n**1. Переходити до (справи) = To get down to (business)**\n\n- Давайте **перейдемо до справи**. - Let's get down to business.\n- **Перейдемо до** наступного питання. - Let's move on to the next question.\n\n**2. Переходити (межу) = To cross (a line)**\n\n- Він **перейшов** межу. - He crossed the line.\n- Це **переходить** усі межі! - This is beyond all limits!\n\n**3. Переходити на (мову) = To switch to (a language)**\n\n- Давай **перейдемо на** українську. - Let's switch to Ukrainian.\n- Вона **перейшла на** шепіт. - She switched to a whisper."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Проходити / Пройти - Abstract Uses\n\n**1. Проходити (курс, тест) = To take, pass (a course, test)**\n\n- Я **пройшов** курс з програмування. - I took a programming course.\n- Вона **пройшла** співбесіду. - She passed the interview.\n- Він не **пройшов** тест. - He didn't pass the test.\n\n**2. Проходити (про час) = To pass (time)**\n\n- Час **пройшов** швидко. - Time passed quickly.\n- Три роки **пройшли**. - Three years have passed.\n- Біль **пройде**. - The pain will pass.\n\n**3. Це не пройде = That won't work / fly**\n\n- Така відмовка не **пройде**. - That excuse won't fly."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Заходити / Зайти - Abstract Uses\n\n**1. Розмова зайшла про... = The conversation turned to...**\n\n- **Розмова зайшла** про політику. - The conversation turned to politics.\n\n**2. Справа зайшла далеко = Things have gone far**\n\n- **Справа зайшла** занадто далеко. - Things have gone too far.\n\n**3. Заходити в глухий кут = To reach a dead end**\n\n- Переговори **зайшли в глухий кут**. - The negotiations reached a dead end."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Відходити / Відійти - Abstract Uses\n\n**1. Відійти від теми = To go off topic**\n\n- Не **відходьте від** теми! - Don't go off topic!\n- Він **відійшов від** справи. - He got off track.\n\n**2. Відійти від справ = To retire**\n\n- Він **відійшов від справ**. - He retired from business."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Common Fixed Expressions\n\n| Expression | Literal | Meaning |\n|------------|---------|---------|\n| Виходить, що... | It goes out that | It turns out that |\n| Не дійшло | Didn't reach | Didn't understand |\n| Прийшов до висновку | Came to conclusion | Concluded |\n| Перейти до справи | Cross to business | Get down to business |\n| Пройшов тест | Passed through test | Passed the test |\n| Час летить | Time flies | Time flies |\n| Зайшов у глухий кут | Went into dead corner | Reached dead end |"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-93-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Complete with Figurative Meaning\n\n1. ___, що ми зробили помилку. (It turns out) → **Виходить**\n2. Давайте ___ до справи. (get down to) → **перейдемо**\n3. Мені ___ гарна ідея. (came to mind) → **прийшла на думку**\n4. Справа ___ до суду. (went to) → **дійшла**\n5. Він ___ курс з маркетингу. (took) → **пройшов**\n6. Три роки ___. (passed) → **пройшли/минули**\n7. Вона ___ заміж. (got married) → **вийшла**\n8. До нього не ___. (doesn't get it) → **доходить**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate to Ukrainian\n\n1. It turns out he was right. → **Виходить, що він мав рацію.**\n2. Let's get down to business. → **Давайте перейдемо до справи.**\n3. She came to a conclusion. → **Вона прийшла до висновку.**\n4. Time passes quickly. → **Час проходить/минає швидко.**\n5. It finally dawned on me. → **Нарешті до мене дійшло.**\n6. The negotiations reached a dead end. → **Переговори зайшли в глухий кут.**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Match Expression with Meaning\n\n| Expression | Meaning |\n|------------|---------|\n| Виходить, що... | It turns out |\n| Перейти на українську | Switch to Ukrainian |\n| Прийти до згоди | Come to an agreement |\n| Не доходить до нього | He doesn't get it |\n| Час летить | Time flies |\n| Пройти співбесіду | Pass an interview |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Use in Sentences\n\nCreate sentences using:\n\n1. **виходить, що** — Виходить, що я помилився.\n2. **перейти до** — Давайте перейдемо до питань.\n3. **прийти на думку** — Мені прийшла на думку думка.\n4. **пройти (курс)** — Я пройшов онлайн-курс.\n5. **дійти до** — Справа дійшла до скандалу."
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-93-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Discussion Phrases\n\nUse these in conversation:\n\n**Starting a new topic:**\n- Давайте перейдемо до наступного питання.\n- Повернемося до головної теми.\n\n**Making conclusions:**\n- Отже, виходить, що...\n- Ми прийшли до висновку, що...\n\n**Talking about progress:**\n- Ми дійшли до другого розділу.\n- Справа не рухається вперед."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Create a Dialogue\n\nUse at least 3 figurative motion expressions:\n\n**Example:**\nA: Давайте **перейдемо до справи**. Що з проєктом?\nB: **Виходить**, що у нас проблема з бюджетом.\nA: До мене **не дійшло**. Поясни детальніше.\nB: Ми **зайшли в глухий кут** з фінансуванням.\nA: Треба **прийти до** якогось рішення."
+          }
+        ]
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-93-quiz",
+      "type": "quiz",
+      "title": "Figurative Motion",
+      "description": "Match the expression with its meaning.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Match the expression with its meaning.",
+        "questions": [
+          {
+            "question": "Виходить, що він мав рацію.",
+            "options": [
+              "It turns out he was right.",
+              "He went out and was right."
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "До нього не доходить.",
+            "options": [
+              "He can't walk there.",
+              "He doesn't understand."
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "Вона прийшла до висновку.",
+            "options": [
+              "She came to a conclusion.",
+              "She came to the entrance."
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Перейдемо до справи.",
+            "options": [
+              "Let's get down to business.",
+              "Let's cross to business."
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Час летить.",
+            "options": [
+              "Time flies.",
+              "Time is flying (plane)."
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Справа зайшла далеко.",
+            "options": [
+              "Things have gone far.",
+              "The business went far away."
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "verbs",
+        "motion",
+        "idioms",
+        "figurative-language"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-93-matchup",
+      "type": "match-up",
+      "title": "Figurative Expressions",
+      "description": "Figurative Expressions",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "виходить, що",
+            "right": "it turns out"
+          },
+          {
+            "left": "доходить до",
+            "right": "gets through to"
+          },
+          {
+            "left": "приходить на думку",
+            "right": "comes to mind"
+          },
+          {
+            "left": "переходить до",
+            "right": "moves on to"
+          },
+          {
+            "left": "проходить (час)",
+            "right": "passes (time)"
+          },
+          {
+            "left": "заходить в глухий кут",
+            "right": "reaches dead end"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "verbs",
+        "motion",
+        "idioms",
+        "figurative-language"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-93-fillin",
+      "type": "fill-in",
+      "title": "Complete Expressions",
+      "description": "Complete with the correct verb.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Complete with the correct verb."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "verbs",
+        "motion",
+        "idioms",
+        "figurative-language"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-93",
+    "level": "B1",
+    "phase": "B1.1",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

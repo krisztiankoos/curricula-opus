@@ -76,7 +76,7 @@ A participle is a word that combines properties of a verb and an adjective:
 | поча**ти** | поча- | поча**тий** |
 | забу**ти** | забу- | забу**тий** |
 | одягну**ти** | одягну- | одягну**тий** |
-| прочита**ти** | прочита- | прочита**ний** |
+| розпоча**ти** | розпоча- | розпоча**тий** |
 
 **Pattern:** -ти verbs with vowel before -ти usually get **-тий**
 
@@ -278,7 +278,7 @@ Describe completed actions using participles:
 | запрошений | /zɑˈproʃɛnɪj/ | invited | participle |
 | збудований | /zbuˈdovɑnɪj/ | built | participle |
 | організований | /orɦɑnʲiˈzovɑnɪj/ | organized | participle |
-| втрачений | /ˈftrɑt͡ʃɛnɪj/ | lost | participle |
+| втрачений | /vˈtrɑt͡ʃɛnɪj/ | lost | participle |
 
 ---
 

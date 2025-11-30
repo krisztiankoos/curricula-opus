@@ -68,7 +68,7 @@ Compare:
 | Full Form | Short Form | Meaning |
 |-----------|------------|---------|
 | Робота зроблена | Роботу **зроблено** | The work is done |
-| Книгу прочитана | Книгу **прочитано** | The book is read |
+| Книга прочитана | Книгу **прочитано** | The book is read |
 | Вікно відкрите | Вікно **відкрито** | The window is open |
 
 **Key differences:**
@@ -93,9 +93,9 @@ Compare:
 
 | Full Form | Short Form | Style |
 |-----------|------------|-------|
-| Лист написаний. | Лист написано. | Formal |
-| Роботу закінчено. | Роботу закінчено. | Official |
-| Рішення прийнято. | Рішення прийнято. | News |
+| Лист написаний. | Листа написано. | Formal |
+| Робота закінчена. | Роботу закінчено. | Official |
+| Рішення прийняте. | Рішення прийнято. | News |
 
 **Short forms are preferred in:**
 - Official documents

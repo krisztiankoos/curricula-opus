@@ -170,6 +170,6 @@ Unlike previous levels, B2 modules are **interleaved** to maintain engagement. I
 | Phase | Modules | Status |
 |-------|---------|--------|
 | B2.1 | 141-165 | ✅ Complete |
-| B2.2 | 166-190 | ⏳ Planned |
+| B2.2 | 166-190 | ✅ Complete |
 | B2.3 | 191-215 | ⏳ Planned |
 | B2.4 | 216-240 | ⏳ Planned |

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B2-186",
+    "moduleId": "mod-uk-B2-186",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "vocabulary-expansion",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B2",
+    "phase": "B2.2",
+    "moduleNumber": 186,
+    "title": "Medicine Advanced",
+    "subtitle": "Медицина: Діагностика та лікування",
+    "description": "Опанувати медичну термінологію",
+    "objectives": [
+      "Опанувати медичну термінологію",
+      "Розуміти медичні тексти",
+      "Описувати симптоми та лікування",
+      "Спілкуватися з лікарями"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "vocabulary",
+      "medicine",
+      "health",
+      "diagnosis",
+      "treatment"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [],
+  "vocabulary": {
+    "moduleId": "mod-uk-B2-186",
+    "level": "B2",
+    "phase": "B2.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

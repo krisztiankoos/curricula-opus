@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B2-190",
+    "moduleId": "mod-uk-B2-190",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "revision",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B2",
+    "phase": "B2.2",
+    "moduleNumber": 190,
+    "title": "B2.2 Checkpoint",
+    "subtitle": "Контрольна робота B2.2",
+    "description": "Перевірити знання історії",
+    "objectives": [
+      "Перевірити знання історії",
+      "Оцінити володіння фразеологізмами",
+      "Протестувати вживання синонімів",
+      "Визначити готовність до B2.3"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 60,
+    "transliterationMode": "none",
+    "tags": [
+      "assessment",
+      "checkpoint",
+      "history",
+      "idioms",
+      "synonyms"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [],
+  "vocabulary": {
+    "moduleId": "mod-uk-B2-190",
+    "level": "B2",
+    "phase": "B2.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

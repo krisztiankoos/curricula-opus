@@ -34,15 +34,300 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Технологічні новини\n\nПрочитайте:\n«Український стартап розробив застосунок на основі штучного інтелекту для аналізу медичних зображень. Алгоритм машинного навчання показує точність 95%.»\n\nЧи розумієте терміни?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Програмне забезпечення\n\n#### Базові терміни\n\n| Термін | Переклад |\n|--------|----------|\n| програмне забезпечення | software |\n| застосунок (додаток) | application, app |\n| операційна система | operating system |\n| браузер | browser |\n| база даних | database |\n| код | code |\n| програмування | programming |\n| розробка | development |\n| тестування | testing |\n| оновлення | update |\n\n#### Типи програм\n\n| Термін | Переклад |\n|--------|----------|\n| текстовий редактор | text editor |\n| табличний процесор | spreadsheet |\n| антивірус | antivirus |\n| месенджер | messenger |\n| хмарний сервіс | cloud service |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Штучний інтелект\n\n#### Основні поняття\n\n| Термін | Переклад |\n|--------|----------|\n| штучний інтелект (ШІ) | artificial intelligence (AI) |\n| машинне навчання | machine learning |\n| нейронна мережа | neural network |\n| глибинне навчання | deep learning |\n| алгоритм | algorithm |\n| модель | model |\n| великі мовні моделі (ВММ) | large language models (LLM) |\n| генеративний ШІ | generative AI |\n\n#### Застосування ШІ\n\n| Термін | Переклад |\n|--------|----------|\n| розпізнавання образів | image recognition |\n| розпізнавання мовлення | speech recognition |\n| обробка природної мови | natural language processing |\n| чат-бот | chatbot |\n| рекомендаційна система | recommendation system |\n| автоматизація | automation |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дані та аналітика\n\n| Термін | Переклад |\n|--------|----------|\n| дані | data |\n| великі дані (Big Data) | big data |\n| аналітика | analytics |\n| обробка даних | data processing |\n| збір даних | data collection |\n| візуалізація даних | data visualization |\n| конфіденційність | privacy |\n| захист даних | data protection |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Кібербезпека\n\n| Термін | Переклад |\n|--------|----------|\n| кібербезпека | cybersecurity |\n| хакер | hacker |\n| вірус | virus |\n| шкідливе ПЗ | malware |\n| фішинг | phishing |\n| шифрування | encryption |\n| пароль | password |\n| двофакторна автентифікація | two-factor authentication |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Інтернет та мережі\n\n| Термін | Переклад |\n|--------|----------|\n| мережа | network |\n| сервер | server |\n| хостинг | hosting |\n| домен | domain |\n| IP-адреса | IP address |\n| Wi-Fi | Wi-Fi |\n| VPN | VPN |\n| пропускна здатність | bandwidth |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дієслова IT-сфери\n\n| Дієслово | Значення | Приклад |\n|----------|----------|---------|\n| розробляти | to develop | Розробляємо застосунок. |\n| програмувати | to program | Програмую на Python. |\n| тестувати | to test | Тестуємо нову версію. |\n| оновлювати | to update | Оновіть програму. |\n| завантажувати | to download/upload | Завантажте файл. |\n| зберігати | to save | Збережіть документ. |\n| шифрувати | to encrypt | Дані зашифровано. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Приклад тексту\n\n**IT-новина:**\n«Українська компанія представила нову платформу для аналізу великих даних. Система використовує алгоритми машинного навчання для виявлення закономірностей. За словами розробників, продукт дозволяє обробляти терабайти інформації за лічені хвилини. Платформу вже тестують декілька міжнародних компаній.»"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Сучасний контекст\n\n**IT-індустрія України:**\n\n| Факт | Деталі |\n|------|--------|\n| Обсяг | Понад $7 млрд експорту (2021) |\n| Працівники | 300,000+ IT-спеціалістів |\n| Місце | Один з найбільших IT-секторів Європи |\n| Спеціалізація | Аутсорсинг, продуктові компанії |\n\n**Українські IT-компанії:**\n- EPAM, SoftServe, GlobalLogic\n- Grammarly, MacPaw, Readdle\n- Ajax Systems, Preply\n\n**Українські інновації:**\n- Мобільний банкінг (monobank)\n- Дрони та оборонні технології\n- EdTech платформи"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Заповніть пропуски\n\n1. Компанія ___ (розробляти) нову версію застосунку.\n   → **розробляє**\n\n2. Система використовує ___ для аналізу даних.\n   → **алгоритми / ШІ / машинне навчання**\n\n3. Файл ___ (зашифрувати) для безпеки.\n   → **зашифровано**\n\n4. ___ допомагає захистити акаунт.\n   → **Двофакторна автентифікація**\n\n5. Дані ___ (зберігати) в хмарі.\n   → **зберігаються**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Визначте термін\n\n1. Програма, яка імітує розумну поведінку → **ШІ / штучний інтелект**\n2. Захист комп'ютерних систем від атак → **кібербезпека**\n3. Місце зберігання даних в інтернеті → **хмара / хмарний сервіс**\n4. Перетворення даних у нечитабельний формат → **шифрування**\n5. Процес виявлення помилок у програмі → **тестування**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Перекладіть\n\n1. The company developed an AI-based application.\n   → **Компанія розробила застосунок на основі ШІ.**\n\n2. Data is encrypted for security.\n   → **Дані зашифровано для безпеки.**\n\n3. Update the software to the latest version.\n   → **Оновіть програмне забезпечення до останньої версії.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B2-187-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Обговоріть\n\n1. Які технології ви використовуєте щодня?\n2. Як ШІ змінює різні індустрії?\n3. Які переваги та ризики великих даних?"
+          }
+        ]
+      }
+    ]
   },
-  "activities": [],
+  "activities": [
+    {
+      "id": "act-uk-B2-187-quiz",
+      "type": "quiz",
+      "title": "Технології",
+      "description": "Виберіть правильну відповідь.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Виберіть правильну відповідь.",
+        "questions": [
+          {
+            "question": "«ШІ» означає:",
+            "options": [
+              "штучний інтелект",
+              "широкий інтернет"
+            ],
+            "correctIndex": 0,
+            "explanation": "Artificial intelligence."
+          },
+          {
+            "question": "«Машинне навчання» — це:",
+            "options": [
+              "тип ШІ",
+              "навчання машиністів"
+            ],
+            "correctIndex": 0,
+            "explanation": "Machine learning."
+          },
+          {
+            "question": "«Шифрування» означає:",
+            "options": [
+              "захист даних кодуванням",
+              "видалення даних"
+            ],
+            "correctIndex": 0,
+            "explanation": "Encryption."
+          },
+          {
+            "question": "«Фішинг» — це:",
+            "options": [
+              "шахрайство для отримання даних",
+              "тип риболовлі"
+            ],
+            "correctIndex": 0,
+            "explanation": "Online scam."
+          },
+          {
+            "question": "«Хмарний сервіс» — це:",
+            "options": [
+              "зберігання даних в інтернеті",
+              "прогноз погоди"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cloud service."
+          },
+          {
+            "question": "**[Інтеграція: пасив]** Технічний звіт: «Систему ___ для підвищення безпеки.»",
+            "options": [
+              "оновлено",
+              "оновили",
+              "оновлюється"
+            ],
+            "correctIndex": 0,
+            "explanation": "Офіційний стиль → -но/-то."
+          },
+          {
+            "question": "**[Інтеграція: регістр]** Розмова: «___ нову версію застосунку.»",
+            "options": [
+              "Випущено",
+              "Випустили",
+              "Випускається"
+            ],
+            "correctIndex": 1,
+            "explanation": "Розмовний стиль → 3-я особа мн."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B2",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "technology",
+        "software",
+        "AI",
+        "data"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
   "vocabulary": {
     "moduleId": "mod-uk-B2-187",
     "level": "B2",
     "phase": "B2.2",
-    "wordCount": 0,
+    "wordCount": 10,
     "transliterationMode": "none",
-    "words": []
+    "words": [
+      {
+        "id": "v-m187-001",
+        "uk": "штучний інтелект",
+        "translit": "",
+        "ipa": "/ˈʃtutʃnɪj ʲintɛˈlɛkt/",
+        "en": "artificial intelligence",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m187-002",
+        "uk": "машинне навчання",
+        "translit": "",
+        "ipa": "/mɑˈʃɪnːɛ nɑwˈtʃɑnʲːɑ/",
+        "en": "machine learning",
+        "pos": "",
+        "note": "n"
+      },
+      {
+        "id": "v-m187-003",
+        "uk": "алгоритм",
+        "translit": "",
+        "ipa": "/ɑlɦɔˈrɪtm/",
+        "en": "algorithm",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m187-004",
+        "uk": "застосунок",
+        "translit": "",
+        "ipa": "/zɑstɔˈsunɔk/",
+        "en": "application",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m187-005",
+        "uk": "база даних",
+        "translit": "",
+        "ipa": "/ˈbɑzɑ ˈdɑnɪx/",
+        "en": "database",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m187-006",
+        "uk": "шифрування",
+        "translit": "",
+        "ipa": "/ʃɪfruˈwɑnʲːɑ/",
+        "en": "encryption",
+        "pos": "",
+        "note": "n"
+      },
+      {
+        "id": "v-m187-007",
+        "uk": "кібербезпека",
+        "translit": "",
+        "ipa": "/kʲibɛrbɛzˈpɛkɑ/",
+        "en": "cybersecurity",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m187-008",
+        "uk": "хмарний",
+        "translit": "",
+        "ipa": "/ˈxmɑrnɪj/",
+        "en": "cloud (adj.)",
+        "pos": "",
+        "note": "adj"
+      },
+      {
+        "id": "v-m187-009",
+        "uk": "розробка",
+        "translit": "",
+        "ipa": "/rɔzˈrɔbkɑ/",
+        "en": "development",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m187-010",
+        "uk": "оновлення",
+        "translit": "",
+        "ipa": "/ɔnɔwˈlɛnʲːɑ/",
+        "en": "update",
+        "pos": "",
+        "note": "n"
+      }
+    ]
   }
 }

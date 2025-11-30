@@ -250,6 +250,14 @@ function parseFrontmatter(content: string): { frontmatter: ModuleFrontmatter; bo
 function parsePhases(body: string, moduleNum: number): { phases: LessonPhase[]; restBody: string } {
   const phases: LessonPhase[] = [];
   const phaseNames = ['warm-up', 'presentation', 'practice', 'production'];
+  // Map Ukrainian phase names to English
+  const ukPhaseMap: Record<string, string> = {
+    'вступ': 'warm-up',
+    'розминка': 'warm-up',
+    'презентація': 'presentation',
+    'практика': 'practice',
+    'продукція': 'production',
+  };
   const durations: Record<string, number> = {
     'warm-up': 5,
     'presentation': 15,
@@ -257,8 +265,9 @@ function parsePhases(body: string, moduleNum: number): { phases: LessonPhase[]; 
     'production': 10,
   };
 
-  // Find "# Lesson Content" section (supports bilingual headers like "# Зміст уроку | Lesson Content")
-  const lessonMatch = body.match(/# (?:Зміст уроку \| )?Lesson Content\n([\s\S]*?)(?=\n---|\n# Activities|$)/);
+  // Find "# Lesson Content" section (supports bilingual and Ukrainian-only headers)
+  // Patterns: "# Lesson Content", "# Зміст уроку | Lesson Content", "# Зміст уроку"
+  const lessonMatch = body.match(/# (?:Зміст уроку(?: \| Lesson Content)?|Lesson Content)\n([\s\S]*?)(?=\n---|\n# (?:Activities|Вправи)|$)/);
   if (!lessonMatch) return { phases: [], restBody: body };
 
   const lessonContent = lessonMatch[1];
@@ -270,7 +279,17 @@ function parsePhases(body: string, moduleNum: number): { phases: LessonPhase[]; 
   for (const section of sections) {
     const lines = section.trim().split('\n');
     const headerLine = lines[0].toLowerCase();
-    const phaseName = phaseNames.find(p => headerLine.startsWith(p));
+    // Check for English phase names first, then Ukrainian
+    let phaseName = phaseNames.find(p => headerLine.startsWith(p));
+    if (!phaseName) {
+      // Check Ukrainian phase names
+      for (const [ukName, enName] of Object.entries(ukPhaseMap)) {
+        if (headerLine.startsWith(ukName)) {
+          phaseName = enName;
+          break;
+        }
+      }
+    }
 
     if (phaseName) {
       const content = lines.slice(1).join('\n').trim();
@@ -317,8 +336,8 @@ function parsePhases(body: string, moduleNum: number): { phases: LessonPhase[]; 
 function parseActivities(body: string, level: string, moduleNum: number): { activities: Activity[]; restBody: string } {
   const activities: Activity[] = [];
 
-  // Find "# Activities" section
-  const activitiesMatch = body.match(/# Activities\n([\s\S]*?)(?=\n---|\n# Vocabulary|$)/);
+  // Find "# Activities" or "# Вправи" section
+  const activitiesMatch = body.match(/# (?:Activities|Вправи)\n([\s\S]*?)(?=\n---|\n# (?:Vocabulary|Словник)|$)/);
   if (!activitiesMatch) return { activities: [], restBody: body };
 
   const activitiesContent = activitiesMatch[1];
@@ -424,32 +443,52 @@ function parseActivities(body: string, level: string, moduleNum: number): { acti
 function parseVocabulary(body: string, moduleNum: number): { vocabulary: VocabWord[]; restBody: string } {
   const vocabulary: VocabWord[] = [];
 
-  // Find "# Vocabulary" section
-  const vocabMatch = body.match(/# Vocabulary\n([\s\S]*?)(?=\n---|\n# Letter Groups|$)/);
+  // Find "# Vocabulary" or "# Словник" section
+  const vocabMatch = body.match(/# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок)|$)/);
   if (!vocabMatch) return { vocabulary: [], restBody: body };
 
   const vocabContent = vocabMatch[1];
   let restBody = body.replace(vocabMatch[0], '');
 
-  // Parse table
+  // Parse table - supports both old format (uk|translit|ipa|en|pos) and B2+ format (Слово|Вимова|Переклад|Примітки)
   const tableMatch = vocabContent.match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|$)/);
   if (tableMatch) {
     const rows = tableMatch[1].trim().split('\n');
     let wordIndex = 1;
 
+    // Check header to determine format
+    const headerMatch = vocabContent.match(/\|([^\n]+)\|/);
+    const headerCells = headerMatch ? headerMatch[1].split('|').map(c => c.trim().toLowerCase()) : [];
+    const isB2Format = headerCells.some(h => h === 'слово' || h === 'вимова');
+
     for (const row of rows) {
       const cells = row.split('|').map(c => c.trim()).filter(Boolean);
-      if (cells.length >= 5) {
-        vocabulary.push({
-          id: `v-m${padNumber(moduleNum)}-${padNumber(wordIndex, 3)}`,
-          uk: cells[0] || '',
-          translit: cells[1] || '',
-          ipa: cells[2] || '',
-          en: cells[3] || '',
-          pos: cells[4] || '',
-          gender: cells[5] || undefined,
-          note: cells[6] || undefined,
-        });
+      if (cells.length >= 3) {
+        if (isB2Format) {
+          // B2+ format: Слово | Вимова | Переклад | Примітки
+          vocabulary.push({
+            id: `v-m${padNumber(moduleNum)}-${padNumber(wordIndex, 3)}`,
+            uk: cells[0] || '',
+            translit: '', // B2 doesn't use transliteration
+            ipa: cells[1] || '',
+            en: cells[2] || '',
+            pos: '',
+            gender: undefined,
+            note: cells[3] || undefined,
+          });
+        } else if (cells.length >= 5) {
+          // Old format: uk | translit | ipa | en | pos | gender | note
+          vocabulary.push({
+            id: `v-m${padNumber(moduleNum)}-${padNumber(wordIndex, 3)}`,
+            uk: cells[0] || '',
+            translit: cells[1] || '',
+            ipa: cells[2] || '',
+            en: cells[3] || '',
+            pos: cells[4] || '',
+            gender: cells[5] || undefined,
+            note: cells[6] || undefined,
+          });
+        }
         wordIndex++;
       }
     }
@@ -799,19 +838,37 @@ function generateHTML(vibeJSON: any, nav: NavInfo): string {
 function generateLevelIndex(modules: Array<{ num: number; title: string; subtitle?: string; phase: string; duration?: number; tags?: string[] }>, level: string, langPair: string): string {
   // Define phase colors
   const phaseColors: Record<string, { bg: string; accent: string; light: string }> = {
+    // A1: Greens → Teals
     'A1.1': { bg: '#059669', accent: '#10b981', light: '#d1fae5' },
     'A1.2': { bg: '#0891b2', accent: '#06b6d4', light: '#cffafe' },
     'A1.3': { bg: '#0284c7', accent: '#0ea5e9', light: '#e0f2fe' },
+    // A2: Blues → Purples
     'A2.1': { bg: '#2563eb', accent: '#3b82f6', light: '#dbeafe' },
     'A2.2': { bg: '#7c3aed', accent: '#8b5cf6', light: '#ede9fe' },
     'A2.3': { bg: '#9333ea', accent: '#a855f7', light: '#f3e8ff' },
+    // A2+: Pinks
     'A2+.1': { bg: '#be185d', accent: '#ec4899', light: '#fce7f3' },
     'A2+.2': { bg: '#9d174d', accent: '#f472b6', light: '#fce7f3' },
     'A2+.3': { bg: '#831843', accent: '#fb7185', light: '#ffe4e6' },
+    // B1: Magentas → Reds
     'B1.1': { bg: '#c026d3', accent: '#d946ef', light: '#fae8ff' },
     'B1.2': { bg: '#db2777', accent: '#ec4899', light: '#fce7f3' },
     'B1.3': { bg: '#e11d48', accent: '#f43f5e', light: '#ffe4e6' },
     'B1.4': { bg: '#dc2626', accent: '#ef4444', light: '#fee2e2' },
+    // B2: Oranges → Ambers
+    'B2.1': { bg: '#ea580c', accent: '#f97316', light: '#ffedd5' },
+    'B2.2': { bg: '#d97706', accent: '#f59e0b', light: '#fef3c7' },
+    'B2.3': { bg: '#ca8a04', accent: '#eab308', light: '#fef9c3' },
+    'B2.4': { bg: '#a16207', accent: '#ca8a04', light: '#fef08a' },
+    // C1: Limes → Greens
+    'C1.1': { bg: '#65a30d', accent: '#84cc16', light: '#ecfccb' },
+    'C1.2': { bg: '#4d7c0f', accent: '#65a30d', light: '#d9f99d' },
+    'C1.3': { bg: '#3f6212', accent: '#4d7c0f', light: '#bef264' },
+    'C1.4': { bg: '#365314', accent: '#3f6212', light: '#a3e635' },
+    // C2: Dark Greens → Teals
+    'C2.1': { bg: '#115e59', accent: '#0d9488', light: '#ccfbf1' },
+    'C2.2': { bg: '#134e4a', accent: '#14b8a6', light: '#99f6e4' },
+    'C2.3': { bg: '#0f766e', accent: '#2dd4bf', light: '#5eead4' },
   };
   const defaultColor = { bg: '#6b7280', accent: '#9ca3af', light: '#f3f4f6' };
 

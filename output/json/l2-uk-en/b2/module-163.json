@@ -33,15 +33,327 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Економічні новини\n\nПрочитайте:\n«Курс гривні зміцнився на тлі позитивних очікувань інвесторів. ВВП зріс на 3% у порівнянні з минулим кварталом.»\n\nЧи розумієте терміни?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Макроекономіка\n\n| Термін | Переклад |\n|--------|----------|\n| економіка | economy |\n| ВВП (валовий внутрішній продукт) | GDP |\n| інфляція | inflation |\n| дефляція | deflation |\n| безробіття | unemployment |\n| зростання | growth |\n| спад | recession |\n| криза | crisis |\n| бюджет | budget |\n| дефіцит | deficit |\n| профіцит | surplus |\n| державний борг | national debt |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Фінанси та банки\n\n| Термін | Переклад |\n|--------|----------|\n| банк | bank |\n| Національний банк | National Bank |\n| відсоткова ставка | interest rate |\n| кредит | loan, credit |\n| депозит | deposit |\n| валюта | currency |\n| обмінний курс | exchange rate |\n| гривня | hryvnia |\n| долар | dollar |\n| євро | euro |\n| інвестиція | investment |\n| акція | stock, share |\n| облігація | bond |\n| біржа | stock exchange |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дієслова фінансової сфери\n\n| Дієслово | Значення | Приклад |\n|----------|----------|---------|\n| інвестувати | to invest | інвестувати в бізнес |\n| кредитувати | to lend | банк кредитує підприємства |\n| позичати | to borrow | позичати гроші в банку |\n| заробляти | to earn | заробляти гроші |\n| витрачати | to spend | витрачати на рекламу |\n| економити | to save | економити ресурси |\n| зростати | to grow | економіка зростає |\n| падати | to fall | курс падає |\n| стабілізуватися | to stabilize | ситуація стабілізувалася |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Бізнес\n\n| Термін | Переклад |\n|--------|----------|\n| підприємство | enterprise |\n| компанія | company |\n| фірма | firm |\n| корпорація | corporation |\n| стартап | startup |\n| підприємець | entrepreneur |\n| власник | owner |\n| партнер | partner |\n| конкурент | competitor |\n| клієнт | client |\n| постачальник | supplier |\n| споживач | consumer |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Види бізнесу\n\n| Термін | Переклад |\n|--------|----------|\n| малий бізнес | small business |\n| середній бізнес | medium business |\n| великий бізнес | big business |\n| ФОП (фізична особа-підприємець) | sole proprietor |\n| ТОВ (товариство з обмеженою відповідальністю) | LLC |\n| АТ (акціонерне товариство) | joint-stock company |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Торгівля\n\n| Термін | Переклад |\n|--------|----------|\n| ринок | market |\n| торгівля | trade |\n| імпорт | import |\n| експорт | export |\n| товар | goods, product |\n| послуга | service |\n| ціна | price |\n| вартість | cost, value |\n| знижка | discount |\n| прибуток | profit |\n| збиток | loss |\n| оборот | turnover |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Переговори\n\n| Термін | Переклад |\n|--------|----------|\n| переговори | negotiations |\n| контракт | contract |\n| угода | deal, agreement |\n| умови | terms |\n| компроміс | compromise |\n| пропозиція | proposal, offer |\n| домовленість | agreement |\n| підписання | signing |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Фрази для переговорів\n\n| Функція | Фраза |\n|---------|-------|\n| Пропозиція | Ми пропонуємо... |\n| Умова | За умови, що... |\n| Згода | Ми згодні на... |\n| Незгода | На жаль, ми не можемо... |\n| Компроміс | Давайте знайдемо компроміс. |\n| Уточнення | Чи могли б ви уточнити...? |\n| Підсумок | Отже, ми домовилися про... |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Приклад тексту\n\n**Бізнес-новина:**\n«Українська IT-компанія залучила 10 мільйонів доларів інвестицій від міжнародного фонду. За словами засновника, кошти буде спрямовано на розширення команди та вихід на нові ринки. Компанія планує подвоїти оборот протягом наступного року.»"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Сучасний контекст\n\n**Економіка України:**\n\n| Факт | Дані |\n|------|------|\n| Валюта | Гривня (₴, UAH), введена 1996 року |\n| НБУ | Національний банк України — центральний банк |\n| IT-сектор | Один із найбільших в Європі |\n| Аграрний сектор | Україна — один із найбільших експортерів зерна |\n\n**Історія гривні:**\n- 1996: Введення гривні замість купоно-карбованця\n- 2014-2015: Девальвація через кризу\n- 2022+: Фіксований курс під час війни\n\n**Приклади сучасних новин:**\n\n1. «НБУ **зберіг** облікову ставку на рівні 25%.»\n\n2. «Експорт зерна через «зерновий коридор» **відновлено**.»\n\n3. «IT-сектор **залишається** одним із найбільших платників податків.»\n\n4. «Міжнародні партнери **виділили** Україні черговий транш фінансової допомоги.»\n\n5. «Уряд **запровадив** нові податкові пільги для бізнесу в умовах воєнного стану.»\n\n**Ключові економічні терміни воєнного часу:**\n\n| Термін | Переклад |\n|--------|----------|\n| воєнний стан | martial law |\n| санкції | sanctions |\n| відбудова | reconstruction |\n| міжнародна допомога | international aid |\n| репарації | reparations |"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Заповніть пропуски\n\n1. Курс гривні ___ (зростати/падати) на 2%.\n   → **зріс / впав**\n\n2. Компанія ___ (залучити) інвестиції.\n   → **залучила**\n\n3. Банк ___ (кредитувати) малий бізнес.\n   → **кредитує**\n\n4. Сторони ___ (підписати) контракт.\n   → **підписали**\n\n5. Економіка ___ (зростати) третій квартал поспіль.\n   → **зростає**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Визначте термін\n\n1. Загальна вартість усіх товарів та послуг країни → **ВВП**\n2. Зростання цін → **інфляція**\n3. Гроші, позичені в банку → **кредит**\n4. Частка власності компанії → **акція**\n5. Різниця між доходами та витратами (позитивна) → **прибуток**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Перекладіть\n\n1. The exchange rate fell by 5%.\n   → **Обмінний курс впав на 5%.**\n\n2. The company made a profit.\n   → **Компанія отримала прибуток.**\n\n3. We agreed on the terms.\n   → **Ми домовилися про умови.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B2-163-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Рольова гра: Переговори\n\nПроведіть переговори про партнерство:\n\n**Сторона A:** IT-компанія, шукає інвестора\n**Сторона B:** Інвестиційний фонд\n\n**Питання для обговорення:**\n- Сума інвестиції\n- Частка в компанії\n- Умови співпраці"
+          }
+        ]
+      }
+    ]
   },
-  "activities": [],
+  "activities": [
+    {
+      "id": "act-uk-B2-163-quiz",
+      "type": "quiz",
+      "title": "Економіка та бізнес",
+      "description": "Виберіть правильну відповідь.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Виберіть правильну відповідь.",
+        "questions": [
+          {
+            "question": "«ВВП» означає:",
+            "options": [
+              "валовий внутрішній продукт",
+              "валютний внутрішній продукт"
+            ],
+            "correctIndex": 0,
+            "explanation": "GDP = Gross Domestic Product."
+          },
+          {
+            "question": "«Інфляція» — це:",
+            "options": [
+              "зростання цін",
+              "падіння цін"
+            ],
+            "correctIndex": 0,
+            "explanation": "Інфляція = зростання цін."
+          },
+          {
+            "question": "«Акція» — це:",
+            "options": [
+              "частка власності компанії",
+              "банківський рахунок"
+            ],
+            "correctIndex": 0,
+            "explanation": "Акція = stock, share."
+          },
+          {
+            "question": "«Залучити інвестиції» означає:",
+            "options": [
+              "отримати гроші від інвесторів",
+              "інвестувати гроші"
+            ],
+            "correctIndex": 0,
+            "explanation": "Залучити = to attract, raise."
+          },
+          {
+            "question": "ТОВ — це:",
+            "options": [
+              "товариство з обмеженою відповідальністю",
+              "товариство оптової торгівлі"
+            ],
+            "correctIndex": 0,
+            "explanation": "LLC = Limited Liability Company."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Офіційний звіт НБУ: «Облікову ставку ___»",
+            "options": [
+              "збережено",
+              "зберегли",
+              "зберігається"
+            ],
+            "correctIndex": 0,
+            "explanation": "Офіційний документ → -но/-то форма."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Розмова з колегою: «Мені ___, що компанія збанкрутувала.»",
+            "options": [
+              "повідомлено",
+              "сказали",
+              "говориться"
+            ],
+            "correctIndex": 1,
+            "explanation": "Розмовний стиль → 3-я особа множини."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B2",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "economics",
+        "business",
+        "finance"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
   "vocabulary": {
     "moduleId": "mod-uk-B2-163",
     "level": "B2",
     "phase": "B2.1",
-    "wordCount": 0,
+    "wordCount": 12,
     "transliterationMode": "none",
-    "words": []
+    "words": [
+      {
+        "id": "v-m163-001",
+        "uk": "економіка",
+        "translit": "",
+        "ipa": "/ɛkɔˈnɔmʲikɑ/",
+        "en": "economy",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m163-002",
+        "uk": "інфляція",
+        "translit": "",
+        "ipa": "/ʲinˈflʲat͡sʲijɑ/",
+        "en": "inflation",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m163-003",
+        "uk": "інвестиція",
+        "translit": "",
+        "ipa": "/ʲinwɛsˈtɪt͡sʲijɑ/",
+        "en": "investment",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m163-004",
+        "uk": "кредит",
+        "translit": "",
+        "ipa": "/krɛˈdɪt/",
+        "en": "loan, credit",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m163-005",
+        "uk": "акція",
+        "translit": "",
+        "ipa": "/ˈɑkt͡sʲijɑ/",
+        "en": "stock, share",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m163-006",
+        "uk": "біржа",
+        "translit": "",
+        "ipa": "/ˈbʲirʒɑ/",
+        "en": "stock exchange",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m163-007",
+        "uk": "прибуток",
+        "translit": "",
+        "ipa": "/prɪˈbutɔk/",
+        "en": "profit",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m163-008",
+        "uk": "збиток",
+        "translit": "",
+        "ipa": "/ˈzbɪtɔk/",
+        "en": "loss",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m163-009",
+        "uk": "підприємець",
+        "translit": "",
+        "ipa": "/pʲidprɪˈjɛmɛt͡sʲ/",
+        "en": "entrepreneur",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m163-010",
+        "uk": "постачальник",
+        "translit": "",
+        "ipa": "/pɔstɑˈtʃɑlʲnɪk/",
+        "en": "supplier",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m163-011",
+        "uk": "переговори",
+        "translit": "",
+        "ipa": "/pɛrɛɦɔˈwɔrɪ/",
+        "en": "negotiations",
+        "pos": "",
+        "note": "pl"
+      },
+      {
+        "id": "v-m163-012",
+        "uk": "угода",
+        "translit": "",
+        "ipa": "/uˈɦɔdɑ/",
+        "en": "deal, agreement",
+        "pos": "",
+        "note": "f"
+      }
+    ]
   }
 }

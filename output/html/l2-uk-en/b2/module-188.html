@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -118,22 +118,32 @@
         <p style="color:var(--text-muted)">Інтеграція B2.2: Історичний текст</p>
       </div>
       
-      <div class="card"><h3>Theory</h3></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="card"><h3>Theory</h3><div class="canvas-note"><h4>У цьому модулі ми застосуємо знання з B2.2:</h4><div class="md-content"><ul>
+<li>Історія (Трипілля → Польща)</li>
+<li>Ідіоми (тіло, тварини, природа)</li>
+<li>Синоніми (мовлення, мислення, пам'ять)</li>
+<li>Складні сполучники</li>
+</ul></div></div></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
+    <section id="quiz" class="section"><div class="card"><h3>Інтеграція B2.2</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/7</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
-    
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
+    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (8)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
     </section>
   </main>
   <footer>Module 188 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Канути у воду» означає:","options":["зникнути безслідно","потонути"],"correctIndex":0,"explanation":"Ідіома = зникнути."},{"question":"«Оскільки» виражає:","options":["причину","допустовість"],"correctIndex":0,"explanation":"Причиновий сполучник."},{"question":"У реченні «Корону покладено» використано:","options":["пасив -но/-то","активний стан"],"correctIndex":0,"explanation":"Офіційний пасив."},{"question":"«Усвідомлювати» порівняно з «розуміти»:","options":["глибше","поверхневіше"],"correctIndex":0,"explanation":"Глибше розуміння."},{"question":"«Незважаючи на» виражає:","options":["допустовість","причину"],"correctIndex":0,"explanation":"Despite."},{"question":"«Данило не опускав руки» означає:","options":["не здавався","тримав руки вгорі"],"correctIndex":0,"explanation":"Ідіома = не здаватися."},{"question":"«Після того як» — це сполучник:","options":["часовий","умовний"],"correctIndex":0,"explanation":"Часова послідовність."}];
     const sortData={};
-    const vocabData=[];
+    const vocabData=[{"uk":"король","translit":"","en":"m","note":""},{"uk":"корона","translit":"","en":"f","note":""},{"uk":"коронувати","translit":"","en":"pf/ipf","note":""},{"uk":"союзник","translit":"","en":"m","note":""},{"uk":"загрожувати","translit":"","en":"ipf","note":""},{"uk":"дипломатичний","translit":"","en":"adj","note":""},{"uk":"унія","translit":"","en":"f","note":""},{"uk":"нащадок","translit":"","en":"m","note":""}];
     const totalSort=0;
     function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById(id)?.classList.add('active');document.querySelector('[data-section="'+id+'"]')?.classList.add('active');}
     document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>showSection(t.dataset.section)));

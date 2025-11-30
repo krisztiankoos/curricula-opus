@@ -33,15 +33,322 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Політичні новини\n\nПрочитайте заголовок:\n«Верховна Рада ухвалила законопроєкт більшістю голосів»\n\nЧи розумієте всі слова?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Структура влади\n\n**Три гілки влади:**\n\n| Гілка | Орган | Функція |\n|-------|-------|---------|\n| Законодавча | Верховна Рада | Приймає закони |\n| Виконавча | Кабінет Міністрів | Виконує закони |\n| Судова | Суди | Тлумачить закони |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Верховна Рада\n\n| Термін | Переклад |\n|--------|----------|\n| Верховна Рада | Parliament (Supreme Council) |\n| народний депутат | member of parliament (MP) |\n| спікер | speaker |\n| фракція | faction, parliamentary group |\n| коаліція | coalition |\n| опозиція | opposition |\n| голосування | voting |\n| законопроєкт | bill, draft law |\n| закон | law |\n| ухвалити | to adopt, pass |\n| відхилити | to reject |\n| скликати | to convene |\n| розпустити | to dissolve |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Виконавча влада\n\n| Термін | Переклад |\n|--------|----------|\n| Президент | President |\n| Кабінет Міністрів | Cabinet of Ministers |\n| Прем'єр-міністр | Prime Minister |\n| міністр | minister |\n| міністерство | ministry |\n| уряд | government |\n| указ | decree |\n| постанова | resolution |\n| розпорядження | order |\n| призначати | to appoint |\n| звільняти | to dismiss |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Вибори\n\n| Термін | Переклад |\n|--------|----------|\n| вибори | elections |\n| виборець | voter |\n| виборча дільниця | polling station |\n| бюлетень | ballot |\n| голосувати | to vote |\n| обирати | to elect |\n| кандидат | candidate |\n| передвиборча кампанія | election campaign |\n| рейтинг | rating |\n| явка | turnout |\n| перший/другий тур | first/second round |\n| абсолютна більшість | absolute majority |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Політичні поняття\n\n| Термін | Переклад |\n|--------|----------|\n| демократія | democracy |\n| республіка | republic |\n| конституція | constitution |\n| права людини | human rights |\n| свобода слова | freedom of speech |\n| свобода зібрань | freedom of assembly |\n| верховенство права | rule of law |\n| громадянське суспільство | civil society |\n| корупція | corruption |\n| реформа | reform |\n| політична воля | political will |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дієслова політичної сфери\n\n| Дієслово | Значення | Приклад |\n|----------|----------|---------|\n| ухвалити | to adopt | ухвалити закон |\n| відхилити | to reject | відхилити законопроєкт |\n| накласти вето | to veto | Президент наклав вето |\n| підписати | to sign | підписати указ |\n| призначити | to appoint | призначити міністра |\n| звільнити | to dismiss | звільнити з посади |\n| обрати | to elect | обрати депутата |\n| проголосувати | to vote | проголосувати за закон |\n| виступити | to speak, address | виступити в парламенті |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Політичні посади\n\n| Посада | Переклад |\n|--------|----------|\n| Президент України | President of Ukraine |\n| Голова Верховної Ради | Speaker of Parliament |\n| Прем'єр-міністр | Prime Minister |\n| віцепрем'єр | Deputy Prime Minister |\n| міністр закордонних справ | Minister of Foreign Affairs |\n| міністр оборони | Minister of Defense |\n| міністр внутрішніх справ | Minister of Internal Affairs |\n| міністр фінансів | Minister of Finance |\n| голова ОДА | head of regional administration |\n| мер | mayor |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Приклад тексту\n\n**Новина:**\n«Верховна Рада України у другому читанні ухвалила законопроєкт про реформу судової системи. За документ проголосували 278 народних депутатів. Опозиція критикувала окремі положення закону, проте голосувала «за». Президент очікується підписати закон протягом тижня.»"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Сучасний контекст\n\n**Ключові реформи України:**\n\n| Реформа | Рік | Суть |\n|---------|-----|------|\n| Децентралізація | 2014+ | Передача повноважень громадам |\n| Судова реформа | 2016+ | Оновлення судової системи |\n| Медична реформа | 2017+ | Нова система охорони здоров'я |\n| Земельна реформа | 2021 | Відкриття ринку землі |\n| Євроінтеграція | 2022+ | Статус кандидата в ЄС |\n\n**Приклади сучасних новин:**\n\n1. «Україна **отримала** статус кандидата на членство в ЄС у червні 2022 року.»\n\n2. «Верховна Рада **ухвалила** закон про мобілізацію після тривалих дебатів.»\n\n3. «Уряд **запровадив** нові правила перетину кордону для чоловіків призовного віку.»\n\n4. «Президент **підписав** указ про продовження воєнного стану.»"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Заповніть пропуски\n\n1. Верховна Рада ___ (ухвалити) новий закон.\n   → **ухвалила**\n\n2. На виборах громадяни ___ (голосувати) за кандидатів.\n   → **голосують**\n\n3. Президент ___ (призначити) нового міністра.\n   → **призначив**\n\n4. Опозиція ___ (критикувати) рішення уряду.\n   → **критикує / критикувала**\n\n5. Законопроєкт ___ (відхилити) у першому читанні.\n   → **відхилили / було відхилено**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Визначте термін\n\n1. Орган, що приймає закони → **Верховна Рада**\n2. Голова уряду → **Прем'єр-міністр**\n3. Місце, де голосують → **виборча дільниця**\n4. Документ, за який голосують → **законопроєкт**\n5. Група депутатів однієї партії → **фракція**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Перекладіть\n\n1. The parliament passed the law.\n   → **Парламент (Верховна Рада) ухвалив закон.**\n\n2. The president vetoed the bill.\n   → **Президент наклав вето на законопроєкт.**\n\n3. Voter turnout was 65%.\n   → **Явка виборців склала 65%.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B2-161-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Обговоріть\n\nДайте відповіді на питання:\n\n1. Яка структура влади у вашій країні?\n2. Які політичні реформи потрібні Україні?\n3. Чому важлива свобода слова?"
+          }
+        ]
+      }
+    ]
   },
-  "activities": [],
+  "activities": [
+    {
+      "id": "act-uk-B2-161-quiz",
+      "type": "quiz",
+      "title": "Політика та державне управління",
+      "description": "Виберіть правильну відповідь.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Виберіть правильну відповідь.",
+        "questions": [
+          {
+            "question": "Верховна Рада — це орган:",
+            "options": [
+              "законодавчої влади",
+              "виконавчої влади"
+            ],
+            "correctIndex": 0,
+            "explanation": "Парламент приймає закони."
+          },
+          {
+            "question": "«Ухвалити закон» означає:",
+            "options": [
+              "прийняти закон",
+              "відхилити закон"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ухвалити = to adopt, pass."
+          },
+          {
+            "question": "Хто очолює Кабінет Міністрів?",
+            "options": [
+              "Президент",
+              "Прем'єр-міністр"
+            ],
+            "correctIndex": 1,
+            "explanation": "Прем'єр — голова уряду."
+          },
+          {
+            "question": "«Фракція» — це:",
+            "options": [
+              "група депутатів однієї партії",
+              "виборча дільниця"
+            ],
+            "correctIndex": 0,
+            "explanation": "Фракція = faction."
+          },
+          {
+            "question": "«Накласти вето» означає:",
+            "options": [
+              "заблокувати закон",
+              "підписати закон"
+            ],
+            "correctIndex": 0,
+            "explanation": "Вето = блокування."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Офіційне повідомлення: «Закон ___»",
+            "options": [
+              "ухвалено",
+              "ухвалили",
+              "ухвалюється"
+            ],
+            "correctIndex": 0,
+            "explanation": "Офіційний стиль → -но/-то форма."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Розмова з другом: «Мені ___, що закон прийняли.»",
+            "options": [
+              "повідомлено",
+              "сказали",
+              "говориться"
+            ],
+            "correctIndex": 1,
+            "explanation": "Розмовний стиль → 3-я особа множини."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B2",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "politics",
+        "government",
+        "democracy"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
   "vocabulary": {
     "moduleId": "mod-uk-B2-161",
     "level": "B2",
     "phase": "B2.1",
-    "wordCount": 0,
+    "wordCount": 12,
     "transliterationMode": "none",
-    "words": []
+    "words": [
+      {
+        "id": "v-m161-001",
+        "uk": "Верховна Рада",
+        "translit": "",
+        "ipa": "/wɛrˈxɔwnɑ ˈrɑdɑ/",
+        "en": "Parliament",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m161-002",
+        "uk": "законопроєкт",
+        "translit": "",
+        "ipa": "/zɑkɔnɔprɔˈjɛkt/",
+        "en": "bill, draft law",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m161-003",
+        "uk": "ухвалити",
+        "translit": "",
+        "ipa": "/uxˈwɑlɪtɪ/",
+        "en": "to adopt, pass",
+        "pos": "",
+        "note": "pf"
+      },
+      {
+        "id": "v-m161-004",
+        "uk": "відхилити",
+        "translit": "",
+        "ipa": "/wʲidxɪˈlɪtɪ/",
+        "en": "to reject",
+        "pos": "",
+        "note": "pf"
+      },
+      {
+        "id": "v-m161-005",
+        "uk": "голосування",
+        "translit": "",
+        "ipa": "/ɦɔlɔsuˈwɑnʲːɑ/",
+        "en": "voting",
+        "pos": "",
+        "note": "n"
+      },
+      {
+        "id": "v-m161-006",
+        "uk": "виборець",
+        "translit": "",
+        "ipa": "/wɪˈbɔrɛt͡sʲ/",
+        "en": "voter",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m161-007",
+        "uk": "фракція",
+        "translit": "",
+        "ipa": "/ˈfrɑkt͡sʲijɑ/",
+        "en": "faction",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m161-008",
+        "uk": "коаліція",
+        "translit": "",
+        "ipa": "/kɔɑˈlʲit͡sʲijɑ/",
+        "en": "coalition",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m161-009",
+        "uk": "опозиція",
+        "translit": "",
+        "ipa": "/ɔpɔˈzɪt͡sʲijɑ/",
+        "en": "opposition",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m161-010",
+        "uk": "вето",
+        "translit": "",
+        "ipa": "/ˈwɛtɔ/",
+        "en": "veto",
+        "pos": "",
+        "note": "n"
+      },
+      {
+        "id": "v-m161-011",
+        "uk": "указ",
+        "translit": "",
+        "ipa": "/uˈkɑz/",
+        "en": "decree",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m161-012",
+        "uk": "постанова",
+        "translit": "",
+        "ipa": "/pɔstɑˈnɔwɑ/",
+        "en": "resolution",
+        "pos": "",
+        "note": "f"
+      }
+    ]
   }
 }

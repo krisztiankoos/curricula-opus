@@ -33,15 +33,186 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "У цьому модулі ми застосуємо знання з B2.2:\n\n- Історія (Трипілля → Польща)\n- Ідіоми (тіло, тварини, природа)\n- Синоніми (мовлення, мислення, пам'ять)\n- Складні сполучники"
+          }
+        ]
+      }
+    ]
   },
-  "activities": [],
+  "activities": [
+    {
+      "id": "act-uk-B2-188-quiz",
+      "type": "quiz",
+      "title": "Інтеграція B2.2",
+      "description": "Виберіть правильну відповідь.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Виберіть правильну відповідь.",
+        "questions": [
+          {
+            "question": "«Канути у воду» означає:",
+            "options": [
+              "зникнути безслідно",
+              "потонути"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ідіома = зникнути."
+          },
+          {
+            "question": "«Оскільки» виражає:",
+            "options": [
+              "причину",
+              "допустовість"
+            ],
+            "correctIndex": 0,
+            "explanation": "Причиновий сполучник."
+          },
+          {
+            "question": "У реченні «Корону покладено» використано:",
+            "options": [
+              "пасив -но/-то",
+              "активний стан"
+            ],
+            "correctIndex": 0,
+            "explanation": "Офіційний пасив."
+          },
+          {
+            "question": "«Усвідомлювати» порівняно з «розуміти»:",
+            "options": [
+              "глибше",
+              "поверхневіше"
+            ],
+            "correctIndex": 0,
+            "explanation": "Глибше розуміння."
+          },
+          {
+            "question": "«Незважаючи на» виражає:",
+            "options": [
+              "допустовість",
+              "причину"
+            ],
+            "correctIndex": 0,
+            "explanation": "Despite."
+          },
+          {
+            "question": "«Данило не опускав руки» означає:",
+            "options": [
+              "не здавався",
+              "тримав руки вгорі"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ідіома = не здаватися."
+          },
+          {
+            "question": "«Після того як» — це сполучник:",
+            "options": [
+              "часовий",
+              "умовний"
+            ],
+            "correctIndex": 0,
+            "explanation": "Часова послідовність."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B2",
+      "duration": 5,
+      "tags": [
+        "practice",
+        "integration",
+        "reading",
+        "history"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
   "vocabulary": {
     "moduleId": "mod-uk-B2-188",
     "level": "B2",
     "phase": "B2.2",
-    "wordCount": 0,
+    "wordCount": 8,
     "transliterationMode": "none",
-    "words": []
+    "words": [
+      {
+        "id": "v-m188-001",
+        "uk": "король",
+        "translit": "",
+        "ipa": "king",
+        "en": "m",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-002",
+        "uk": "корона",
+        "translit": "",
+        "ipa": "crown",
+        "en": "f",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-003",
+        "uk": "коронувати",
+        "translit": "",
+        "ipa": "to crown",
+        "en": "pf/ipf",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-004",
+        "uk": "союзник",
+        "translit": "",
+        "ipa": "ally",
+        "en": "m",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-005",
+        "uk": "загрожувати",
+        "translit": "",
+        "ipa": "to threaten",
+        "en": "ipf",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-006",
+        "uk": "дипломатичний",
+        "translit": "",
+        "ipa": "diplomatic",
+        "en": "adj",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-007",
+        "uk": "унія",
+        "translit": "",
+        "ipa": "union",
+        "en": "f",
+        "pos": ""
+      },
+      {
+        "id": "v-m188-008",
+        "uk": "нащадок",
+        "translit": "",
+        "ipa": "descendant",
+        "en": "m",
+        "pos": ""
+      }
+    ]
   }
 }

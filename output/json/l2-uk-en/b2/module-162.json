@@ -34,15 +34,328 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Юридичний текст\n\nПрочитайте:\n«Суд виніс вирок у справі про шахрайство. Підсудного визнано винним і засуджено до 5 років позбавлення волі.»\n\nЧи розумієте всі терміни?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Судова система\n\n| Рівень | Суд |\n|--------|-----|\n| Найвищий | Верховний Суд |\n| Апеляційний | Апеляційні суди |\n| Першої інстанції | Місцеві суди |\n| Спеціалізований | Конституційний Суд |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Учасники судового процесу\n\n| Термін | Переклад |\n|--------|----------|\n| суддя | judge |\n| присяжний | juror |\n| прокурор | prosecutor |\n| адвокат | lawyer, attorney |\n| захисник | defense attorney |\n| позивач | plaintiff |\n| відповідач | defendant (civil) |\n| підсудний | defendant (criminal) |\n| обвинувачений | the accused |\n| свідок | witness |\n| потерпілий | victim |\n| підозрюваний | suspect |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Види судочинства\n\n| Вид | Справи |\n|-----|--------|\n| Кримінальне | Злочини |\n| Цивільне | Спори між особами |\n| Адміністративне | Спори з органами влади |\n| Господарське | Комерційні спори |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Кримінальне право\n\n| Термін | Переклад |\n|--------|----------|\n| злочин | crime |\n| правопорушення | offense |\n| кримінальна справа | criminal case |\n| обвинувачення | accusation, charge |\n| вирок | verdict, sentence |\n| покарання | punishment |\n| позбавлення волі | imprisonment |\n| умовний термін | suspended sentence |\n| штраф | fine |\n| конфіскація | confiscation |\n| виправдання | acquittal |\n| апеляція | appeal |\n| касація | cassation |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дії в суді\n\n| Дієслово | Значення | Приклад |\n|----------|----------|---------|\n| порушити справу | to open a case | порушити кримінальну справу |\n| подати позов | to file a lawsuit | подати позов до суду |\n| пред'явити обвинувачення | to bring charges | пред'явити обвинувачення |\n| винести вирок | to pass sentence | суд виніс вирок |\n| визнати винним | to find guilty | підсудного визнали винним |\n| виправдати | to acquit | підсудного виправдали |\n| засудити | to convict, sentence | засудити до 5 років |\n| оскаржити | to appeal | оскаржити рішення |\n| помилувати | to pardon | Президент помилував |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Цивільне право\n\n| Термін | Переклад |\n|--------|----------|\n| позов | lawsuit |\n| цивільна справа | civil case |\n| спір | dispute |\n| договір | contract |\n| угода | agreement |\n| відшкодування | compensation |\n| збитки | damages |\n| позовна давність | statute of limitations |\n| право власності | property rights |\n| спадщина | inheritance |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Права людини\n\n| Термін | Переклад |\n|--------|----------|\n| права людини | human rights |\n| конституційні права | constitutional rights |\n| право на життя | right to life |\n| право на свободу | right to liberty |\n| право на справедливий суд | right to fair trial |\n| презумпція невинуватості | presumption of innocence |\n| право на захист | right to defense |\n| право на адвоката | right to counsel |\n| заборона катувань | prohibition of torture |\n| свобода слова | freedom of speech |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Юридичні документи\n\n| Документ | Призначення |\n|----------|-------------|\n| конституція | основний закон |\n| кодекс | систематизований закон |\n| закон | нормативний акт |\n| постанова | рішення уряду |\n| договір | угода між сторонами |\n| довіреність | power of attorney |\n| свідоцтво | certificate |\n| протокол | official record |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Приклад тексту\n\n**Судова новина:**\n«Апеляційний суд залишив без змін вирок місцевого суду у справі колишнього посадовця. Захист планує подати касаційну скаргу до Верховного Суду. За словами адвоката, є підстави для перегляду справи. Прокуратура наполягає на законності вироку.»"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Сучасний контекст\n\n**Судова реформа в Україні:**\n\n| Етап | Зміни |\n|------|-------|\n| 2016 | Створення нового Верховного Суду |\n| 2017 | Конкурсний відбір суддів |\n| 2019 | Антикорупційний суд (ВАКС) |\n| 2022+ | Відбір суддів за участі міжнародних експертів |\n\n**Ключові інституції:**\n\n| Орган | Функція |\n|-------|---------|\n| НАБУ | Національне антикорупційне бюро |\n| САП | Спеціалізована антикорупційна прокуратура |\n| ВАКС | Вищий антикорупційний суд |\n| НАЗК | Національне агентство з питань запобігання корупції |\n\n**Приклади сучасних справ:**\n\n1. «НАБУ **повідомило** про підозру колишньому високопосадовцю.»\n\n2. «Справу **передано** до Вищого антикорупційного суду.»\n\n3. «Підозрюваного **затримано** при спробі перетнути кордон.»\n\n4. «Суд **арештував** майно на суму 50 мільйонів гривень.»"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Заповніть пропуски\n\n1. Суд ___ (винести) вирок у справі.\n   → **виніс**\n\n2. Адвокат планує ___ (оскаржити) рішення.\n   → **оскаржити**\n\n3. Підсудного ___ (визнати) винним.\n   → **визнали**\n\n4. Прокурор ___ (пред'явити) обвинувачення.\n   → **пред'явив**\n\n5. Потерпілий ___ (подати) позов.\n   → **подав**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Визначте термін\n\n1. Людина, проти якої порушено справу → **підсудний / обвинувачений**\n2. Юрист, що захищає в суді → **адвокат / захисник**\n3. Рішення суду про покарання → **вирок**\n4. Оскарження рішення суду → **апеляція**\n5. Невизнання винним → **виправдання**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Перекладіть\n\n1. The court found him guilty.\n   → **Суд визнав його винним.**\n\n2. The lawyer filed an appeal.\n   → **Адвокат подав апеляцію.**\n\n3. He was sentenced to 3 years in prison.\n   → **Його засудили до 3 років позбавлення волі.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B2-162-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Обговоріть\n\nДайте відповіді на питання:\n\n1. Чому важлива незалежність суду?\n2. Що таке презумпція невинуватості?\n3. Які права має підозрюваний?"
+          }
+        ]
+      }
+    ]
   },
-  "activities": [],
+  "activities": [
+    {
+      "id": "act-uk-B2-162-quiz",
+      "type": "quiz",
+      "title": "Право та правосуддя",
+      "description": "Виберіть правильну відповідь.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Виберіть правильну відповідь.",
+        "questions": [
+          {
+            "question": "«Підсудний» — це:",
+            "options": [
+              "обвинувачений у кримінальній справі",
+              "суддя"
+            ],
+            "correctIndex": 0,
+            "explanation": "Підсудний = defendant."
+          },
+          {
+            "question": "«Винести вирок» означає:",
+            "options": [
+              "оголосити рішення суду",
+              "подати позов"
+            ],
+            "correctIndex": 0,
+            "explanation": "Вирок = verdict, sentence."
+          },
+          {
+            "question": "«Апеляція» — це:",
+            "options": [
+              "оскарження рішення суду",
+              "перше засідання"
+            ],
+            "correctIndex": 0,
+            "explanation": "Апеляція = appeal."
+          },
+          {
+            "question": "Хто захищає підсудного в суді?",
+            "options": [
+              "адвокат",
+              "прокурор"
+            ],
+            "correctIndex": 0,
+            "explanation": "Адвокат = defense lawyer."
+          },
+          {
+            "question": "«Презумпція невинуватості» означає:",
+            "options": [
+              "людина невинна, поки не доведено інше",
+              "людина завжди винна"
+            ],
+            "correctIndex": 0,
+            "explanation": "Presumption of innocence."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Офіційний протокол: «Вирок ___»",
+            "options": [
+              "винесено",
+              "винесли",
+              "виноситься"
+            ],
+            "correctIndex": 0,
+            "explanation": "Офіційний документ → -но/-то форма."
+          },
+          {
+            "question": "**[Інтеграція: пасив + регістр]** Наукова стаття: «Проблема корупції ___ у багатьох дослідженнях.»",
+            "options": [
+              "досліджено",
+              "досліджували",
+              "досліджується"
+            ],
+            "correctIndex": 2,
+            "explanation": "Науковий стиль, процес → -ся форма."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B2",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "law",
+        "justice",
+        "courts",
+        "rights"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
   "vocabulary": {
     "moduleId": "mod-uk-B2-162",
     "level": "B2",
     "phase": "B2.1",
-    "wordCount": 0,
+    "wordCount": 12,
     "transliterationMode": "none",
-    "words": []
+    "words": [
+      {
+        "id": "v-m162-001",
+        "uk": "суд",
+        "translit": "",
+        "ipa": "/sud/",
+        "en": "court",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-002",
+        "uk": "суддя",
+        "translit": "",
+        "ipa": "/ˈsudʲːɑ/",
+        "en": "judge",
+        "pos": "",
+        "note": "m/f"
+      },
+      {
+        "id": "v-m162-003",
+        "uk": "вирок",
+        "translit": "",
+        "ipa": "/ˈwɪrɔk/",
+        "en": "verdict, sentence",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-004",
+        "uk": "позов",
+        "translit": "",
+        "ipa": "/ˈpɔzɔw/",
+        "en": "lawsuit",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-005",
+        "uk": "адвокат",
+        "translit": "",
+        "ipa": "/ɑdwɔˈkɑt/",
+        "en": "lawyer",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-006",
+        "uk": "прокурор",
+        "translit": "",
+        "ipa": "/prɔkuˈrɔr/",
+        "en": "prosecutor",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-007",
+        "uk": "підсудний",
+        "translit": "",
+        "ipa": "/pʲidˈsudnɪj/",
+        "en": "defendant",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-008",
+        "uk": "свідок",
+        "translit": "",
+        "ipa": "/ˈswʲidɔk/",
+        "en": "witness",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-009",
+        "uk": "злочин",
+        "translit": "",
+        "ipa": "/zlɔˈtʃɪn/",
+        "en": "crime",
+        "pos": "",
+        "note": "m"
+      },
+      {
+        "id": "v-m162-010",
+        "uk": "покарання",
+        "translit": "",
+        "ipa": "/pɔkɑˈrɑnʲːɑ/",
+        "en": "punishment",
+        "pos": "",
+        "note": "n"
+      },
+      {
+        "id": "v-m162-011",
+        "uk": "апеляція",
+        "translit": "",
+        "ipa": "/ɑpɛˈlʲat͡sʲijɑ/",
+        "en": "appeal",
+        "pos": "",
+        "note": "f"
+      },
+      {
+        "id": "v-m162-012",
+        "uk": "виправдати",
+        "translit": "",
+        "ipa": "/wɪˈprɑwdɑtɪ/",
+        "en": "to acquit",
+        "pos": "",
+        "note": "pf"
+      }
+    ]
   }
 }

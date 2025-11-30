@@ -1,0 +1,152 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-101",
+    "moduleId": "mod-uk-B1-101",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 101,
+    "title": "Relative Clauses I",
+    "subtitle": "Який, яка, яке, які",
+    "description": "Understand relative clause structure in Ukrainian",
+    "objectives": [
+      "Understand relative clause structure in Ukrainian",
+      "Use який/яка/яке/які to connect clauses",
+      "Match relative pronoun gender and case",
+      "Build complex sentences with relative clauses"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "relative-clauses",
+      "complex-sentences"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-101-quiz",
+      "type": "quiz",
+      "title": "Relative Pronoun Forms",
+      "description": "Choose the correct relative pronoun.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct relative pronoun.",
+        "questions": [
+          {
+            "question": "Людина, ___ мені допомогла, була дуже добра.",
+            "options": [
+              "яка",
+              "яку"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Яка\" is nominative because it's the subject of \"допомогла.\""
+          },
+          {
+            "question": "Місто, в ___ я живу, невелике.",
+            "options": [
+              "якому",
+              "яке"
+            ],
+            "correctIndex": 0,
+            "explanation": "Locative case after \"в\" for location."
+          },
+          {
+            "question": "Книги, ___ я прочитав, були цікаві.",
+            "options": [
+              "які",
+              "яких"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Які\" is accusative (inanimate plural = nominative form) as object of \"прочитав.\""
+          },
+          {
+            "question": "Чоловік, ___ ми чекаємо, запізнюється.",
+            "options": [
+              "який",
+              "якого"
+            ],
+            "correctIndex": 1,
+            "explanation": "Genitive case: \"чекати\" + genitive for people."
+          },
+          {
+            "question": "Друзі, з ___ я працюю, дуже професійні.",
+            "options": [
+              "якими",
+              "яких"
+            ],
+            "correctIndex": 0,
+            "explanation": "Instrumental case after \"з\" (with)."
+          },
+          {
+            "question": "Питання, на ___ я відповів, було складним.",
+            "options": [
+              "яке",
+              "якому"
+            ],
+            "correctIndex": 0,
+            "explanation": "Accusative case: \"відповідати на\" + accusative."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "relative-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-101-fillin",
+      "type": "fill-in",
+      "title": "Complete with Relative Clauses",
+      "description": "Це моя подруга Оксана, (1)___ працює вчителькою. Школа, в (2)___ вона працює, знаходиться в центрі міста. Учні, (3)___ вона вчить, дуже люблять її. Предмети, (4)___ вона викладає, — математика і фізика.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Це моя подруга Оксана, (1)___ працює вчителькою. Школа, в (2)___ вона працює, знаходиться в центрі міста. Учні, (3)___ вона вчить, дуже люблять її. Предмети, (4)___ вона викладає, — математика і фізика."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "relative-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-101",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

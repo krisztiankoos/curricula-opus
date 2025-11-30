@@ -1,0 +1,170 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-111",
+    "moduleId": "mod-uk-B1-111",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "vocabulary-expansion",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 111,
+    "title": "Media & News Vocabulary",
+    "subtitle": "Newspapers, Journalism, and Digital Media",
+    "description": "Learn vocabulary for news and media",
+    "objectives": [
+      "Learn vocabulary for news and media",
+      "Discuss newspapers and journalism",
+      "Talk about digital media and social networks",
+      "Express opinions about news topics"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "vocabulary",
+      "media",
+      "news",
+      "journalism"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-111-quiz",
+      "type": "quiz",
+      "title": "Media Vocabulary",
+      "description": "Choose the correct word.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct word.",
+        "questions": [
+          {
+            "question": "Він працює ___ на телеканалі.",
+            "options": [
+              "журналістом",
+              "газетою"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Я читаю ___ щоранку.",
+            "options": [
+              "новини",
+              "новина"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Яка ваша улюблена ___?",
+            "options": [
+              "передача",
+              "передачу"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Ця ___ дуже цікава.",
+            "options": [
+              "стаття",
+              "статтю"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Скільки у вас ___?",
+            "options": [
+              "підписників",
+              "підписники"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Я поставив ___ під фото.",
+            "options": [
+              "лайк",
+              "лайком"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "media",
+        "news",
+        "journalism"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-111-matchup",
+      "type": "match-up",
+      "title": "Media Categories",
+      "description": "Media Categories",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "газета",
+            "right": "телебачення"
+          },
+          {
+            "left": "журнал",
+            "right": "радіо"
+          },
+          {
+            "left": "стаття",
+            "right": "передача"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "media",
+        "news",
+        "journalism"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-111",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

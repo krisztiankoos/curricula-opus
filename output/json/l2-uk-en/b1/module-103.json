@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-103",
+    "moduleId": "mod-uk-B1-103",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 103,
+    "title": "Purpose Clauses I",
+    "subtitle": "Щоб + Infinitive (Same Subject)",
+    "description": "Understand purpose clause structure with щоб",
+    "objectives": [
+      "Understand purpose clause structure with щоб",
+      "Use щоб + infinitive when subjects are the same",
+      "Express goals and intentions",
+      "Distinguish purpose from result"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "purpose-clauses",
+      "complex-sentences",
+      "щоб"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-103-quiz",
+      "type": "quiz",
+      "title": "Purpose Clauses",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "Я пішов у магазин, щоб ___ хліб.",
+            "options": [
+              "купити",
+              "купив"
+            ],
+            "correctIndex": 0,
+            "explanation": "After \"щоб\" with same subject, use infinitive."
+          },
+          {
+            "question": "Вона вчиться, щоб ___ іспит.",
+            "options": [
+              "скласти",
+              "складала"
+            ],
+            "correctIndex": 0,
+            "explanation": "Infinitive follows \"щоб.\""
+          },
+          {
+            "question": "Він говорить тихо, щоб ___ розбудити дитину.",
+            "options": [
+              "не",
+              "ні"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Щоб не\" = \"so as not to.\""
+          },
+          {
+            "question": "___ вивчити мову, треба практикуватися.",
+            "options": [
+              "Щоб",
+              "Що"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Щоб\" can start a sentence for emphasis."
+          },
+          {
+            "question": "Я зателефонував, ___ запитати про роботу.",
+            "options": [
+              "щоб",
+              "що"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Щоб\" introduces purpose."
+          },
+          {
+            "question": "Вона поїхала до Києва, щоб ___ виставку.",
+            "options": [
+              "відвідати",
+              "відвідає"
+            ],
+            "correctIndex": 0,
+            "explanation": "Infinitive (perfective) after \"щоб.\""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "purpose-clauses",
+        "complex-sentences",
+        "щоб"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-103-fillin",
+      "type": "fill-in",
+      "title": "Complete with Purpose Clauses",
+      "description": "Учора я рано встав, (1)___ не запізнитися на роботу. Я випив каву, (2)___ прокинутися. Потім я поїхав на роботу, (3)___ почати день вчасно. Увечері я пішов у спортзал, (4)___ потренуватися.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Учора я рано встав, (1)___ не запізнитися на роботу. Я випив каву, (2)___ прокинутися. Потім я поїхав на роботу, (3)___ почати день вчасно. Увечері я пішов у спортзал, (4)___ потренуватися."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "purpose-clauses",
+        "complex-sentences",
+        "щоб"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-103",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

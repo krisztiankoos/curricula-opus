@@ -1,0 +1,152 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-102",
+    "moduleId": "mod-uk-B1-102",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 102,
+    "title": "Relative Clauses II",
+    "subtitle": "Де, куди, звідки, коли",
+    "description": "Use де for location relative clauses",
+    "objectives": [
+      "Use де for location relative clauses",
+      "Use куди for direction (to) relative clauses",
+      "Use звідки for origin (from) relative clauses",
+      "Use коли for time relative clauses"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "relative-clauses",
+      "complex-sentences"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-102-quiz",
+      "type": "quiz",
+      "title": "Location and Time Relatives",
+      "description": "Choose the correct relative word.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct relative word.",
+        "questions": [
+          {
+            "question": "Місто, ___ я народився, — Харків.",
+            "options": [
+              "де",
+              "куди"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Де\" for static location (where I was born)."
+          },
+          {
+            "question": "Країна, ___ вони переїхали, — Польща.",
+            "options": [
+              "де",
+              "куди"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Куди\" for direction/destination (where they moved to)."
+          },
+          {
+            "question": "Рік, ___ я закінчив університет, — 2019.",
+            "options": [
+              "де",
+              "коли"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Коли\" for time expressions."
+          },
+          {
+            "question": "Місто, ___ він родом, — Одеса.",
+            "options": [
+              "куди",
+              "звідки"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Звідки\" for origin (where from)."
+          },
+          {
+            "question": "Офіс, ___ я працюю, на третьому поверсі.",
+            "options": [
+              "де",
+              "куди"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Де\" for location of work."
+          },
+          {
+            "question": "Все, ___ я знаю, — правда.",
+            "options": [
+              "яке",
+              "що"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Що\" after indefinite pronouns like \"все.\""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "relative-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-102-fillin",
+      "type": "fill-in",
+      "title": "Complete the Story",
+      "description": "Я народився в місті, (1)___ живуть мої батьки. Село, (2)___ родом моя бабуся, знаходиться недалеко. Університет, (3)___ я вступив, один з найкращих. Рік, (4)___ я закінчив навчання, — 2020.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Я народився в місті, (1)___ живуть мої батьки. Село, (2)___ родом моя бабуся, знаходиться недалеко. Університет, (3)___ я вступив, один з найкращих. Рік, (4)___ я закінчив навчання, — 2020."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "relative-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-102",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

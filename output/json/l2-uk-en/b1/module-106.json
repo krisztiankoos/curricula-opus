@@ -1,0 +1,158 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-106",
+    "moduleId": "mod-uk-B1-106",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 106,
+    "title": "Conditionals II",
+    "subtitle": "Unreal Conditions with Якби",
+    "description": "Understand unreal conditional structure",
+    "objectives": [
+      "Understand unreal conditional structure",
+      "Use якби for hypothetical conditions",
+      "Form present and past unreal conditionals",
+      "Express wishes and hypothetical situations"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "conditionals",
+      "complex-sentences",
+      "якби",
+      "subjunctive"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-106-quiz",
+      "type": "quiz",
+      "title": "Unreal Conditionals",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "___ я знав, я б сказав.",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 1,
+            "explanation": "Unreal/hypothetical requires \"якби.\""
+          },
+          {
+            "question": "Якби вона мала час, вона ___ прийшла.",
+            "options": [
+              "б",
+              "-"
+            ],
+            "correctIndex": 0,
+            "explanation": "The particle \"б\" marks the result clause."
+          },
+          {
+            "question": "Якби я ___ багатим, я б подорожував.",
+            "options": [
+              "був",
+              "буду"
+            ],
+            "correctIndex": 0,
+            "explanation": "Past tense form with \"якби.\""
+          },
+          {
+            "question": "___ він зателефонує завтра, передай йому. (possible)",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 0,
+            "explanation": "Real possibility uses \"якщо.\""
+          },
+          {
+            "question": "Якби я був на твоєму ___ , я б відпочив.",
+            "options": [
+              "місці",
+              "місце"
+            ],
+            "correctIndex": 0,
+            "explanation": "Fixed expression \"на твоєму місці\" (in your place)."
+          },
+          {
+            "question": "___ я міг літати!",
+            "options": [
+              "Якби",
+              "Якщо"
+            ],
+            "correctIndex": 0,
+            "explanation": "Wish expression uses \"якби.\""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "якби",
+        "subjunctive"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-106-fillin",
+      "type": "fill-in",
+      "title": "What Would You Do?",
+      "description": "Якби я (1)___ мільйон доларів, я (2)___ купив великий будинок. Якби я (3)___ біля моря, я (4)___ плавав кожен день. Якби у мене (5)___ більше часу, я (6)___ читав більше книг.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Якби я (1)___ мільйон доларів, я (2)___ купив великий будинок. Якби я (3)___ біля моря, я (4)___ плавав кожен день. Якби у мене (5)___ більше часу, я (6)___ читав більше книг."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "якби",
+        "subjunctive"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-106",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

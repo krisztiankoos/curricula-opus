@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-105",
+    "moduleId": "mod-uk-B1-105",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 105,
+    "title": "Conditionals I",
+    "subtitle": "Real Conditions with Якщо",
+    "description": "Understand real conditional structure",
+    "objectives": [
+      "Understand real conditional structure",
+      "Use якщо for possible conditions",
+      "Form conditionals in present, past, and future",
+      "Express conditions and consequences"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "conditionals",
+      "complex-sentences",
+      "якщо"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-105-quiz",
+      "type": "quiz",
+      "title": "Real Conditionals",
+      "description": "Choose the correct form.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct form.",
+        "questions": [
+          {
+            "question": "Якщо він ___ , ми підемо в кіно.",
+            "options": [
+              "прийде",
+              "приходить"
+            ],
+            "correctIndex": 0,
+            "explanation": "Future condition requires future tense."
+          },
+          {
+            "question": "Якщо ___ дощ, візьми парасольку.",
+            "options": [
+              "піде",
+              "йде"
+            ],
+            "correctIndex": 0,
+            "explanation": "Future possible condition."
+          },
+          {
+            "question": "Якщо ти не ___ , запізнишся.",
+            "options": [
+              "поспішиш",
+              "поспішаєш"
+            ],
+            "correctIndex": 0,
+            "explanation": "Future warning."
+          },
+          {
+            "question": "___ матиму час, зателефоную.",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Якщо\" for real conditions, \"якби\" for unreal."
+          },
+          {
+            "question": "Якщо хочеш, я ___ .",
+            "options": [
+              "допоможу",
+              "допомагаю"
+            ],
+            "correctIndex": 0,
+            "explanation": "Offer in the future."
+          },
+          {
+            "question": "Якщо вона не ___ , ми почнемо без неї.",
+            "options": [
+              "прийде",
+              "приходить"
+            ],
+            "correctIndex": 0,
+            "explanation": "Future condition."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "якщо"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-105-fillin",
+      "type": "fill-in",
+      "title": "Complete the Story",
+      "description": "Завтра буде гарний день. (1)___ буде сонячно, я піду на прогулянку. (2)___ зустріну друзів, ми підемо в кафе. (3)___ буде час, я також відвідаю музей. А (4)___ буде дощ, залишуся вдома і читатиму книгу.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Завтра буде гарний день. (1)___ буде сонячно, я піду на прогулянку. (2)___ зустріну друзів, ми підемо в кафе. (3)___ буде час, я також відвідаю музей. А (4)___ буде дощ, залишуся вдома і читатиму книгу."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "якщо"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-105",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

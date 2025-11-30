@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-109",
+    "moduleId": "mod-uk-B1-109",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 109,
+    "title": "Causal and Result Clauses",
+    "subtitle": "Because, Due to, Therefore",
+    "description": "Express reasons with тому що, оскільки, бо",
+    "objectives": [
+      "Express reasons with тому що, оскільки, бо",
+      "Use через те, що and завдяки тому, що",
+      "Express results with тому, отже, так що",
+      "Distinguish cause from result expressions"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "causal-clauses",
+      "result-clauses",
+      "complex-sentences"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-109-quiz",
+      "type": "quiz",
+      "title": "Causal and Result Clauses",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "Він не прийшов, ___ захворів.",
+            "options": [
+              "тому що",
+              "тому"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Тому що\" introduces cause (reason)."
+          },
+          {
+            "question": "Вона досягла успіху ___ наполегливості.",
+            "options": [
+              "завдяки",
+              "через"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Завдяки\" + dative for positive cause."
+          },
+          {
+            "question": "___ поганої погоди, захід скасували.",
+            "options": [
+              "Через",
+              "Завдяки"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Через\" + accusative for negative cause."
+          },
+          {
+            "question": "Йшов дощ, ___ ми не пішли.",
+            "options": [
+              "бо",
+              "тому"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Тому\" introduces result."
+          },
+          {
+            "question": "___ він не готовий, перенесемо зустріч.",
+            "options": [
+              "Оскільки",
+              "Тому що"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Оскільки\" at the start is more formal."
+          },
+          {
+            "question": "Він працював багато, ___ втомився.",
+            "options": [
+              "так що",
+              "бо"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Так що\" introduces result."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "causal-clauses",
+        "result-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-109-fillin",
+      "type": "fill-in",
+      "title": "Complete the Explanation",
+      "description": "Я не зміг приїхати на зустріч (1)___ несподіваних обставин. Мій поїзд затримався (2)___ того, що була аварія на дорозі. (3)___ я спізнився на зустріч. Але (4)___ вашому розумінню все закінчилося добре.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Я не зміг приїхати на зустріч (1)___ несподіваних обставин. Мій поїзд затримався (2)___ того, що була аварія на дорозі. (3)___ я спізнився на зустріч. Але (4)___ вашому розумінню все закінчилося добре."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "causal-clauses",
+        "result-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-109",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

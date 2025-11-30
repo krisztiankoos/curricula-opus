@@ -1,0 +1,158 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-104",
+    "moduleId": "mod-uk-B1-104",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 104,
+    "title": "Purpose Clauses II",
+    "subtitle": "Щоб + Past Tense (Different Subjects)",
+    "description": "Use щоб + past tense when subjects differ",
+    "objectives": [
+      "Use щоб + past tense when subjects differ",
+      "Express wishes and requests about others",
+      "Form the Ukrainian subjunctive mood",
+      "Distinguish same-subject from different-subject constructions"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "purpose-clauses",
+      "complex-sentences",
+      "щоб",
+      "subjunctive"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-104-quiz",
+      "type": "quiz",
+      "title": "Different Subject Constructions",
+      "description": "Choose the correct form.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct form.",
+        "questions": [
+          {
+            "question": "Я хочу, щоб вона ___ .",
+            "options": [
+              "прийшла",
+              "прийти"
+            ],
+            "correctIndex": 0,
+            "explanation": "Past tense form with different subject."
+          },
+          {
+            "question": "Він просить, щоб я йому ___ .",
+            "options": [
+              "допоміг",
+              "допомогти"
+            ],
+            "correctIndex": 0,
+            "explanation": "Different subjects require past tense form."
+          },
+          {
+            "question": "Важливо, щоб всі ___ правила.",
+            "options": [
+              "знали",
+              "знати"
+            ],
+            "correctIndex": 0,
+            "explanation": "Impersonal expression + different subject = past form."
+          },
+          {
+            "question": "Вона хоче ___ відпочити. (same subject)",
+            "options": [
+              "щоб вона",
+              "- (just infinitive)"
+            ],
+            "correctIndex": 1,
+            "explanation": "Same subject = just infinitive, no щоб needed."
+          },
+          {
+            "question": "Лікар радить, щоб він ___ ліки.",
+            "options": [
+              "приймав",
+              "приймати"
+            ],
+            "correctIndex": 0,
+            "explanation": "Different subject (doctor ≠ he)."
+          },
+          {
+            "question": "Ми сподіваємося, щоб погода ___ гарна.",
+            "options": [
+              "була",
+              "бути"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Погода\" is a different subject."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "purpose-clauses",
+        "complex-sentences",
+        "щоб",
+        "subjunctive"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-104-fillin",
+      "type": "fill-in",
+      "title": "Complete the Requests",
+      "description": "Мій керівник хоче, (1)___ я закінчив звіт до понеділка. Він також просить, (2)___ всі працівники були на зустрічі. Важливо, (3)___ ми підготували презентацію. Я сподіваюся, (4)___ все пройшло добре.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Мій керівник хоче, (1)___ я закінчив звіт до понеділка. Він також просить, (2)___ всі працівники були на зустрічі. Важливо, (3)___ ми підготували презентацію. Я сподіваюся, (4)___ все пройшло добре."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "purpose-clauses",
+        "complex-sentences",
+        "щоб",
+        "subjunctive"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-104",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

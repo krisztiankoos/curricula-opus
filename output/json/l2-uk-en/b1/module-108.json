@@ -1,0 +1,152 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-108",
+    "moduleId": "mod-uk-B1-108",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 108,
+    "title": "Concessive Clauses",
+    "subtitle": "Although, Despite, Even Though",
+    "description": "Express contrast with хоча and хоч",
+    "objectives": [
+      "Express contrast with хоча and хоч",
+      "Use незважаючи на for \"despite\"",
+      "Form complex sentences with concession",
+      "Distinguish different concessive structures"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "concessive-clauses",
+      "complex-sentences"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-108-quiz",
+      "type": "quiz",
+      "title": "Concessive Clauses",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "___ я втомився, я продовжу працювати.",
+            "options": [
+              "Хоча",
+              "Тому що"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Хоча\" introduces concession (despite being tired)."
+          },
+          {
+            "question": "___ погану погоду, ми пішли гуляти.",
+            "options": [
+              "Незважаючи на",
+              "Хоча"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Незважаючи на\" + noun (accusative)."
+          },
+          {
+            "question": "Вона працює, ___ хвора.",
+            "options": [
+              "хоча",
+              "тому що"
+            ],
+            "correctIndex": 0,
+            "explanation": "Unexpected result: working despite being sick."
+          },
+          {
+            "question": "Він не здався, ___ всі труднощі.",
+            "options": [
+              "попри",
+              "хоча"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Попри\" + noun for \"despite.\""
+          },
+          {
+            "question": "Було холодно. ___ ми вийшли на прогулянку.",
+            "options": [
+              "Хоча",
+              "Проте"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Проте\" is a coordinating conjunction after period."
+          },
+          {
+            "question": "___ те, що йшов дощ, ми пішли в парк.",
+            "options": [
+              "Незважаючи на",
+              "Попри"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Незважаючи на те, що\" + clause."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "concessive-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-108-fillin",
+      "type": "fill-in",
+      "title": "Complete with Concessives",
+      "description": "(1)___ важкий рік, компанія досягла успіху. (2)___ всі говорили, що це неможливо, команда продовжувала працювати. (3)___ труднощі, вони не здалися. В кінці року, (4)___ складну ситуацію, компанія отримала прибуток.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "(1)___ важкий рік, компанія досягла успіху. (2)___ всі говорили, що це неможливо, команда продовжувала працювати. (3)___ труднощі, вони не здалися. В кінці року, (4)___ складну ситуацію, компанія отримала прибуток."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "concessive-clauses",
+        "complex-sentences"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-108",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

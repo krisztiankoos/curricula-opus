@@ -1,0 +1,152 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-114",
+    "moduleId": "mod-uk-B1-114",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "revision",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 114,
+    "title": "B1.2 Review",
+    "subtitle": "Complex Sentences and B1.2 Vocabulary",
+    "description": "Review all complex sentence structures",
+    "objectives": [
+      "Review all complex sentence structures",
+      "Consolidate B1.2 vocabulary",
+      "Practice combining grammar with vocabulary",
+      "Prepare for B1.2 checkpoint"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "review",
+      "complex-sentences",
+      "vocabulary"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-114-quiz",
+      "type": "quiz",
+      "title": "B1.2 Comprehensive Review",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "Людина, ___ тут працює, моя сестра.",
+            "options": [
+              "яка",
+              "яку"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Я прийшов, ___ допомогти.",
+            "options": [
+              "щоб",
+              "що"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ він прийде, ми почнемо.",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Він не прийшов ___ хвороби.",
+            "options": [
+              "через",
+              "завдяки"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Чекай, ___ я не зателефоную.",
+            "options": [
+              "поки",
+              "після"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ було холодно, вони вийшли.",
+            "options": [
+              "Хоча",
+              "Тому що"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "review",
+        "complex-sentences",
+        "vocabulary"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-114-fillin",
+      "type": "fill-in",
+      "title": "Complete the Story",
+      "description": "Я читаю новини на сайті, (1)___ оновлюється щогодини. Вчора я прочитав статтю про зміну клімату. (2)___ всі говорять про цю проблему, мало хто діє. Я хочу, (3)___ люди більше думали про довкілля. (4)___ ми не почнемо діяти зараз, буде пізно. Я намагаюся робити все, (5)___ допомогти планеті.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Я читаю новини на сайті, (1)___ оновлюється щогодини. Вчора я прочитав статтю про зміну клімату. (2)___ всі говорять про цю проблему, мало хто діє. Я хочу, (3)___ люди більше думали про довкілля. (4)___ ми не почнемо діяти зараз, буде пізно. Я намагаюся робити все, (5)___ допомогти планеті."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "review",
+        "complex-sentences",
+        "vocabulary"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-114",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-115",
+    "moduleId": "mod-uk-B1-115",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "revision",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 115,
+    "title": "B1.2 Checkpoint",
+    "subtitle": "Assessment of Complex Sentences and Vocabulary",
+    "description": "Assess complex sentence mastery",
+    "objectives": [
+      "Assess complex sentence mastery",
+      "Assess vocabulary knowledge",
+      "Assess integrated communication skills",
+      "Identify areas for improvement"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "assessment",
+      "checkpoint",
+      "review"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-115-quiz",
+      "type": "quiz",
+      "title": "Final B1.2 Assessment",
+      "description": "This quiz tests all B1.2 skills.",
+      "content": {
+        "type": "quiz",
+        "instructions": "This quiz tests all B1.2 skills.",
+        "questions": [
+          {
+            "question": "Людина, ___ мені допомогла, дуже добра.",
+            "options": [
+              "яка",
+              "яку"
+            ],
+            "correctIndex": 0,
+            "explanation": "Subject of \"допомогла\" = nominative."
+          },
+          {
+            "question": "Я хочу, щоб він ___ .",
+            "options": [
+              "прийшов",
+              "прийти"
+            ],
+            "correctIndex": 0,
+            "explanation": "Different subjects = past tense after щоб."
+          },
+          {
+            "question": "___ буде час, зателефоную.",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 0,
+            "explanation": "Real future condition."
+          },
+          {
+            "question": "Він не прийшов ___ хвороби.",
+            "options": [
+              "через",
+              "завдяки"
+            ],
+            "correctIndex": 0,
+            "explanation": "Negative cause = через."
+          },
+          {
+            "question": "Чекай, ___ він не зателефонує.",
+            "options": [
+              "поки",
+              "коли"
+            ],
+            "correctIndex": 0,
+            "explanation": "Until = поки не."
+          },
+          {
+            "question": "___ погода була погана, ми пішли.",
+            "options": [
+              "Хоча",
+              "Тому що"
+            ],
+            "correctIndex": 0,
+            "explanation": "Concessive = although."
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "assessment",
+        "checkpoint",
+        "review"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-115-fillin",
+      "type": "fill-in",
+      "title": "Comprehensive Test",
+      "description": "Учора я читав (1)___ (article) про зміну клімату. (2)___ (Although) ця тема складна, вона дуже важлива. Автор, (3)___ написав статтю, — відомий журналіст. Він хоче, (4)___ люди зрозуміли серйозність проблеми. (5)___ ми не почнемо діяти, буде пізно. Я вирішив більше думати про довкілля, (6)___ допомогти планеті.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "Учора я читав (1)___ (article) про зміну клімату. (2)___ (Although) ця тема складна, вона дуже важлива. Автор, (3)___ написав статтю, — відомий журналіст. Він хоче, (4)___ люди зрозуміли серйозність проблеми. (5)___ ми не почнемо діяти, буде пізно. Я вирішив більше думати про довкілля, (6)___ допомогти планеті."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "assessment",
+        "checkpoint",
+        "review"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-115",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

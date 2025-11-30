@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-107",
+    "moduleId": "mod-uk-B1-107",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "grammar-introduction",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 107,
+    "title": "Conditionals III",
+    "subtitle": "Mixed and Complex Conditionals",
+    "description": "Understand mixed conditional structures",
+    "objectives": [
+      "Understand mixed conditional structures",
+      "Use complex conditional chains",
+      "Express regrets and their current effects",
+      "Master conditional nuances"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "grammar",
+      "conditionals",
+      "complex-sentences",
+      "mixed-conditionals"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-107-quiz",
+      "type": "quiz",
+      "title": "Complex Conditionals",
+      "description": "Choose the correct answer.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "question": "___ буде гарна погода, ми поїдемо на пікнік. (real)",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 0,
+            "explanation": "Real future condition."
+          },
+          {
+            "question": "___ я був багатим, я б не працював.",
+            "options": [
+              "Якщо",
+              "Якби"
+            ],
+            "correctIndex": 1,
+            "explanation": "Unreal hypothetical."
+          },
+          {
+            "question": "Я прийду, ___ не захворію.",
+            "options": [
+              "якщо",
+              "якби"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Unless\" = \"якщо не\" with real condition."
+          },
+          {
+            "question": "___ якщо він не прийде?",
+            "options": [
+              "А",
+              "І"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"What if\" = \"А якщо\""
+          },
+          {
+            "question": "Візьми гроші ___ випадок, якщо треба буде.",
+            "options": [
+              "на",
+              "у"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"In case\" = \"на випадок, якщо\""
+          },
+          {
+            "question": "___ якби він попросив, я б не погодився.",
+            "options": [
+              "Навіть",
+              "Тільки"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Even if (unreal)\" = \"Навіть якби\""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "mixed-conditionals"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-107-fillin",
+      "type": "fill-in",
+      "title": "Complete the Scenarios",
+      "description": "(1)___ я знав раніше, я б прийшов на зустріч. Тепер (2)___, що я не був там. (3)___ якщо буде ще одна зустріч, я піду. (4)___ він запросить мене, (5)___ якщо матиму багато роботи.",
+      "content": {
+        "type": "fill-in",
+        "instructions": "(1)___ я знав раніше, я б прийшов на зустріч. Тепер (2)___, що я не був там. (3)___ якщо буде ще одна зустріч, я піду. (4)___ він запросить мене, (5)___ якщо матиму багато роботи."
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "grammar",
+        "conditionals",
+        "complex-sentences",
+        "mixed-conditionals"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-107",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

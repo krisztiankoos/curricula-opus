@@ -1,0 +1,178 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-113",
+    "moduleId": "mod-uk-B1-113",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "vocabulary-expansion",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 113,
+    "title": "Environment Vocabulary",
+    "subtitle": "Climate, Pollution, and Sustainability",
+    "description": "Learn vocabulary for environmental topics",
+    "objectives": [
+      "Learn vocabulary for environmental topics",
+      "Discuss climate change and pollution",
+      "Talk about sustainability and protection",
+      "Express opinions on environmental issues"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "vocabulary",
+      "environment",
+      "ecology",
+      "climate"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-113-quiz",
+      "type": "quiz",
+      "title": "Environment Vocabulary",
+      "description": "Choose the correct word.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct word.",
+        "questions": [
+          {
+            "question": "___ — глобальна проблема.",
+            "options": [
+              "Зміна клімату",
+              "Клімат зміни"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Заводи ___ річки.",
+            "options": [
+              "забруднюють",
+              "забруднення"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Треба ___ пластик.",
+            "options": [
+              "переробляти",
+              "переробка"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Ми повинні ___ природу.",
+            "options": [
+              "захищати",
+              "захист"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ повітря шкодить здоров'ю.",
+            "options": [
+              "Забруднення",
+              "Забруднювати"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ енергія — чиста.",
+            "options": [
+              "Сонячна",
+              "Сонце"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "environment",
+        "ecology",
+        "climate"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-113-matchup",
+      "type": "match-up",
+      "title": "Environmental Terms",
+      "description": "Environmental Terms",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "забруднення",
+            "right": "pollution"
+          },
+          {
+            "left": "посуха",
+            "right": "climate"
+          },
+          {
+            "left": "вирубка лісів",
+            "right": "deforestation"
+          },
+          {
+            "left": "викиди CO₂",
+            "right": "emissions"
+          },
+          {
+            "left": "відходи",
+            "right": "waste"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "environment",
+        "ecology",
+        "climate"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-113",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

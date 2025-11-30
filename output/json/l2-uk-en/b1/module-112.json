@@ -1,0 +1,178 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-B1-112",
+    "moduleId": "mod-uk-B1-112",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "lessonType": "vocabulary-expansion",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "B1",
+    "phase": "B1.2",
+    "moduleNumber": 112,
+    "title": "Society & Politics Vocabulary",
+    "subtitle": "Government, Elections, and Civic Life",
+    "description": "Learn vocabulary for government and politics",
+    "objectives": [
+      "Learn vocabulary for government and politics",
+      "Discuss elections and democracy",
+      "Talk about social issues",
+      "Express opinions on civic topics"
+    ],
+    "grammarFocus": [],
+    "totalDuration": 45,
+    "transliterationMode": "none",
+    "tags": [
+      "vocabulary",
+      "society",
+      "politics",
+      "government"
+    ],
+    "version": 1,
+    "createdAt": "2025-11-30T00:00:00Z",
+    "modifiedAt": "2025-11-30T00:00:00Z",
+    "phases": []
+  },
+  "activities": [
+    {
+      "id": "act-uk-B1-112-quiz",
+      "type": "quiz",
+      "title": "Politics Vocabulary",
+      "description": "Choose the correct word.",
+      "content": {
+        "type": "quiz",
+        "instructions": "Choose the correct word.",
+        "questions": [
+          {
+            "question": "Він працює ___ у парламенті.",
+            "options": [
+              "депутатом",
+              "депутат"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ відбудуться восени.",
+            "options": [
+              "Вибори",
+              "Голосування"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "___ прийняв новий закон.",
+            "options": [
+              "Уряд",
+              "Влади"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Вона ___ України.",
+            "options": [
+              "громадянка",
+              "громадянство"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Свобода слова — це ___ .",
+            "options": [
+              "право",
+              "закон"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Вони ___ проти корупції.",
+            "options": [
+              "борються",
+              "боротися"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "society",
+        "politics",
+        "government"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    },
+    {
+      "id": "act-uk-B1-112-matchup",
+      "type": "match-up",
+      "title": "Government Structure",
+      "description": "Government Structure",
+      "content": {
+        "type": "match-up",
+        "instructions": "",
+        "pairs": [
+          {
+            "left": "президент",
+            "right": "глава держави"
+          },
+          {
+            "left": "прем'єр-міністр",
+            "right": "глава уряду"
+          },
+          {
+            "left": "депутат",
+            "right": "член парламенту"
+          },
+          {
+            "left": "мер",
+            "right": "глава міста"
+          },
+          {
+            "left": "міністр",
+            "right": "керівник міністерства"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "B1",
+      "duration": 5,
+      "tags": [
+        "vocabulary",
+        "society",
+        "politics",
+        "government"
+      ],
+      "createdAt": "2025-11-30T00:00:00Z",
+      "modifiedAt": "2025-11-30T00:00:00Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-B1-112",
+    "level": "B1",
+    "phase": "B1.2",
+    "wordCount": 0,
+    "transliterationMode": "none",
+    "words": []
+  }
+}

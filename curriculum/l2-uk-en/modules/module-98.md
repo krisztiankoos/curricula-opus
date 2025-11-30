@@ -14,17 +14,19 @@ objectives:
   - Handle disagreements constructively
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### The Art of Disagreeing
+### Мистецтво незгоди | The Art of Disagreeing
+
+В українській культурі пряма незгода може здаватися неввічливою. Сьогодні ви навчитеся:
 
 In Ukrainian culture, direct disagreement can seem rude. Today you'll learn:
-- How to agree enthusiastically
-- How to disagree politely
-- How to partially agree
-- How to soften criticism
+- Як погоджуватися з ентузіазмом | How to agree enthusiastically
+- Як ввічливо не погоджуватися | How to disagree politely
+- Як частково погоджуватися | How to partially agree
+- Як пом'якшувати критику | How to soften criticism
 
 ## presentation
 

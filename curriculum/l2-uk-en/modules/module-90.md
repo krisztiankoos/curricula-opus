@@ -29,6 +29,26 @@ When you add a prefix to a motion verb:
 2. It gains specific **directional meaning**
 3. It creates a new **aspect pair**
 
+---
+
+> **🔑 KEY RULE: PREFIXED MOTION VERBS ARE PERFECTIVE**
+>
+> When you add ANY prefix to a motion verb, it becomes **PERFECTIVE** (доконаний вид).
+>
+> **No exceptions. No memorization needed.**
+>
+> | Base (imperfective) | + Prefix | = Perfective |
+> |---------------------|----------|--------------|
+> | іти (to go) | при- | **прийти** (to come/arrive) ✓ pf |
+> | іти (to go) | ви- | **вийти** (to exit) ✓ pf |
+> | іти (to go) | в-/у- | **увійти** (to enter) ✓ pf |
+>
+> A new imperfective is then formed FROM the prefixed perfective:
+>
+> прийти (pf) → **приходити** (impf)
+
+---
+
 Today: три ключові префікси для руху — при-, ви-, в-/у-
 
 ## presentation
@@ -219,6 +239,39 @@ Describe your morning using these verbs:
 
 **Example:**
 Я встаю о сьомій. **Виходжу** з дому о восьмій. **Входжу** в офіс о дев'ятій. Колеги **приходять** пізніше.
+
+---
+
+### 🎭 ROLE-PLAY: Giving Directions
+
+**Situation:** A tourist asks you for directions in a Ukrainian city.
+
+**Partner A (Tourist):** Ask how to get to places:
+- Як дістатися до музею?
+- Де знаходиться метро?
+
+**Partner B (Local):** Give directions using при-, ви-, в-/у-:
+
+**Example dialogue:**
+```
+A: Вибачте, як дійти до центрального музею?
+B: Вийдіть з цього будинку і поверніть праворуч.
+A: А далі?
+B: Перейдіть вулицю і увійдіть у парк.
+A: Скільки йти?
+B: Пройдіть через парк — це п'ять хвилин. Музей буде праворуч.
+A: А на метро можна доїхати?
+B: Так! Увійдіть у станцію "Майдан", виїдьте на станції "Арсенальна".
+A: Дякую!
+B: Прошу! Приїжджайте ще!
+```
+
+**Required structures:**
+- ✅ ви- (exit): Вийдіть з будинку
+- ✅ в-/у- (entry): Увійдіть у парк, у станцію
+- ✅ при- (arrival): Приїжджайте ще!
+
+**Switch roles and ask for directions to different places!**
 
 ---
 

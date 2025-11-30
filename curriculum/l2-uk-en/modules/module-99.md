@@ -14,11 +14,11 @@ objectives:
   - Prepare for B1.1 checkpoint
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### What You've Learned in B1.1
+### Що ви вивчили в B1.1 | What You've Learned in B1.1
 
 **Modules 81-88: Aspect**
 - Perfective vs imperfective selection

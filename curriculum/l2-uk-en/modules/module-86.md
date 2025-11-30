@@ -29,6 +29,21 @@ grammar:
 
 Both are commands to read, but they give different instructions.
 
+---
+
+> **🔑 KEY RULE: IMPERATIVE ASPECT = YOUR INTENTION**
+>
+> | Aspect | Meaning | Example |
+> |--------|---------|---------|
+> | **Imperfective** | Invitation, general suggestion | **Читай!** = Go ahead and read |
+> | **Perfective** | Specific instruction, get it done | **Прочитай!** = Read this (and finish it) |
+>
+> **For negative commands:** Almost always **imperfective**
+> - **Не чіпай!** = Don't touch! (general prohibition)
+> - **Не забудь!** = Don't forget! (exception - specific warning)
+
+---
+
 ## presentation
 
 ### Imperative Formation Review
@@ -248,13 +263,38 @@ Create a sequence of commands for:
 **Cooking:**
 Візьми яйця, розбий їх, додай сіль, перемішай і смаж!
 
-### Role Play: Host and Guest
+### 🎭 ROLE-PLAY: Cooking Show
 
-**Host (using inviting imperfective):**
-- Заходь! Сідай! Роздягайся! Їж!
+**Situation:** You're hosting a cooking show. Give instructions to your assistant.
 
-**Giving specific instructions:**
-- Сядь біля вікна. Візьми цю чашку. Покуштуй цей пиріг.
+**Partner A (Chef):** Give cooking instructions:
+- Invitations (imperfective): Спробуй! Мішай! Готуй!
+- Instructions (perfective): Наріж! Поклади! Додай!
+- Warnings (imperfective): Не торкайся! Не відкривай!
+
+**Partner B (Assistant):** Follow and confirm:
+
+**Example dialogue:**
+```
+A: Добре, починаємо! Візьми овочі з холодильника.
+B: Взяв! Що далі?
+A: Тепер наріж моркву тонкими шматочками.
+B: Добре, ріжу...
+A: Мішай соус, поки я готую м'ясо.
+B: Мішаю!
+A: Обережно, не торкайся гарячої сковороди!
+B: Зрозуміло!
+A: Тепер додай спеції. Спробуй на смак!
+B: Смакує чудово!
+A: Поклади все на тарілку. Готово!
+```
+
+**Required structures:**
+- ✅ Imperfective for invitations/ongoing: Мішай! Готуй! Спробуй!
+- ✅ Perfective for specific instructions: Наріж! Візьми! Поклади!
+- ✅ Imperfective for prohibitions: Не торкайся! Не забувай!
+
+**Switch roles and cook a different dish!**
 
 ---
 

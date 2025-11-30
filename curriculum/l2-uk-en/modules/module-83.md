@@ -86,6 +86,21 @@ When you care about the **activity itself** or **how time was spent**, use imper
 
 > **Notice:** The same real-world situation can be described with either aspect. The choice depends on what you want to emphasize.
 
+---
+
+> **🔑 KEY RULE: DURATION vs COMPLETION TIME**
+>
+> | Question | Aspect | Time Expression | Example |
+> |----------|--------|-----------------|---------|
+> | "How long?" | **Imperfective** | весь день, годинами | Я **читав** книгу тиждень. |
+> | "In how much time?" | **Perfective** | за годину, за день | Я **прочитав** книгу за тиждень. |
+>
+> **Listen for triggers:**
+> - Duration words (весь, цілий, довго) → **imperfective**
+> - "за + time" (completion) → **perfective**
+
+---
+
 ### Duration Words Demand Imperfective
 
 Expressions of duration require imperfective:
@@ -238,6 +253,35 @@ Ask your partner:
 2. Що ти зробив цього тижня? (result)
 3. Над чим ти працював останнім часом? (process)
 4. Що ти вже закінчив? (result)
+
+---
+
+### 🎭 ROLE-PLAY: Job Interview
+
+**Situation:** You're in a job interview. The interviewer asks about your past work.
+
+**Partner A (Interviewer):** Ask about:
+- Completed projects (result → perfective): Що ви **зробили** на попередній роботі?
+- Ongoing responsibilities (process → imperfective): Над чим ви **працювали**?
+- Duration questions (process → imperfective): Скільки років ви там **працювали**?
+
+**Partner B (Candidate):** Answer using correct aspects:
+
+**Example dialogue:**
+```
+A: Розкажіть про вашу попередню роботу. Що ви там робили?
+B: Я працював маркетологом три роки. Я готував рекламні кампанії.
+A: Які проєкти ви завершили?
+B: Я запустив новий вебсайт компанії. Ми збільшили продажі на 30%.
+A: Як довго ви працювали над цим проєктом?
+B: Я працював над ним шість місяців. Закінчив у грудні.
+```
+
+**Required structures:**
+- ✅ Perfective for results: зробив, закінчив, запустив
+- ✅ Imperfective for duration/process: працював, готував, займався
+
+**Switch roles and repeat!**
 
 ---
 

@@ -33,6 +33,25 @@ Notice: The question uses perfective, but the negative answer uses imperfective!
 
 This is a fundamental pattern in Ukrainian: **negation prefers imperfective**.
 
+---
+
+> **🔑 KEY RULE: NEGATION PREFERS IMPERFECTIVE**
+>
+> When you negate an action, use **IMPERFECTIVE** by default.
+>
+> **Why?** If there's no action, there's no result.
+>
+> | Positive (perfective) | Negative (imperfective) |
+> |----------------------|------------------------|
+> | Я **прочитав** книгу. | Я **не читав** цю книгу. |
+> | I read the book. | I didn't read this book. |
+>
+> **Exceptions:**
+> - "ще не" (not yet) → perfective: Я **ще не прочитав**.
+> - Warnings → perfective: **Не забудь!** (Don't forget!)
+
+---
+
 ## presentation
 
 ### The General Rule
@@ -225,6 +244,38 @@ Create prohibition signs:
 - Не паркуватися! (No parking)
 - Не входити! (No entry)
 - Не торкатися! (Do not touch)
+
+---
+
+### 🎭 ROLE-PLAY: The Excuse Expert
+
+**Situation:** You're the boss. Your employee didn't complete tasks. They make excuses.
+
+**Partner A (Boss):** Ask why tasks weren't done:
+- Чому ви не зробили звіт?
+- Ви написали листа клієнту?
+- Ви подзвонили партнерам?
+
+**Partner B (Employee):** Make excuses using imperfective negation:
+
+**Example dialogue:**
+```
+A: Чому ви не зробили звіт?
+B: Я не робив звіту, тому що не мав даних.
+A: А ви запитали дані в колег?
+B: Ні, я не питав. Я не знав, кому телефонувати.
+A: Ви хоча б почали працювати над цим?
+B: Я ще не починав, але завтра обов'язково зроблю!
+A: Не забудьте цього разу!
+B: Не забуду, обіцяю!
+```
+
+**Required structures:**
+- ✅ Imperfective for general negation: не робив, не писав, не знав
+- ✅ Perfective for "not yet": ще не зробив, ще не почав
+- ✅ Perfective for warnings: Не забудьте! Не запізніться!
+
+**Switch roles and repeat!**
 
 ---
 

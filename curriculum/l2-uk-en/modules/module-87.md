@@ -31,6 +31,44 @@ At A2, you learned basic aspect pairs like:
 
 Now it's time to expand systematically. Understanding patterns helps you predict aspect pairs for new verbs.
 
+---
+
+> **⭐ TOP 20 ESSENTIAL ASPECT PAIRS**
+>
+> Master these first - they're used in almost every conversation:
+>
+> **Level 1: Daily Essentials (Top 10)**
+> | # | Imperfective | Perfective | English |
+> |---|--------------|------------|---------|
+> | 1 | робити | зробити | to do/make |
+> | 2 | говорити | сказати | to speak/say |
+> | 3 | брати | взяти | to take |
+> | 4 | давати | дати | to give |
+> | 5 | писати | написати | to write |
+> | 6 | читати | прочитати | to read |
+> | 7 | їсти | з'їсти | to eat |
+> | 8 | пити | випити | to drink |
+> | 9 | бачити | побачити | to see |
+> | 10 | чути | почути | to hear |
+>
+> **Level 2: High Frequency (Top 11-20)**
+> | # | Imperfective | Perfective | English |
+> |---|--------------|------------|---------|
+> | 11 | купувати | купити | to buy |
+> | 12 | відкривати | відкрити | to open |
+> | 13 | закривати | закрити | to close |
+> | 14 | починати | почати | to begin |
+> | 15 | закінчувати | закінчити | to finish |
+> | 16 | питати | запитати | to ask |
+> | 17 | відповідати | відповісти | to answer |
+> | 18 | вчити | вивчити | to learn |
+> | 19 | забувати | забути | to forget |
+> | 20 | знаходити | знайти | to find |
+>
+> **Study tip:** If short on time, focus on starred (⭐) pairs first!
+
+---
+
 ## presentation
 
 ### Pattern 1: Prefix Creates Perfective

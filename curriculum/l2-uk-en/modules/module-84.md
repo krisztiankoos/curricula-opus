@@ -243,6 +243,35 @@ Use imperfective for repeated activities:
 
 ---
 
+### 🎭 ROLE-PLAY: Planning a Trip Together
+
+**Situation:** You and a friend are planning a weekend trip.
+
+**Partner A & B:** Discuss your plans using:
+- Definite single actions (perfective): Ми **поїдемо**... Ми **приїдемо**...
+- Ongoing activities (imperfective): Будемо **гуляти**... Будемо **відпочивати**...
+- Negotiations/suggestions: Може, **підемо**...? А якщо **поїдемо**...?
+
+**Example dialogue:**
+```
+A: Куди поїдемо на вихідні?
+B: Давай поїдемо до Львова! Виїдемо в суботу вранці.
+A: Добре. А що там будемо робити?
+B: Будемо гуляти по місту, дивитися архітектуру.
+A: А ввечері?
+B: Підемо в ресторан, замовимо каву і десерт.
+A: Коли повернемося?
+B: Повернемося в неділю ввечері.
+```
+
+**Required structures:**
+- ✅ Perfective for definite plans: поїдемо, приїдемо, замовимо
+- ✅ Imperfective for activities: будемо гуляти, будемо відпочивати
+
+**Switch roles and plan a different trip!**
+
+---
+
 # Activities
 
 ## quiz: Future Aspect

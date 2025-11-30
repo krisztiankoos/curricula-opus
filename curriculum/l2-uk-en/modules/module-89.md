@@ -30,6 +30,25 @@ Ukrainian motion verbs are famous for being difficult. But they follow logical p
 - **Unidirectional:** One direction, one trip, right now
 - **Multidirectional:** Multiple directions, round trips, habitual
 
+---
+
+> **🔑 KEY RULE: MOTION VERB CHOICE**
+>
+> Ask yourself: **Is this ONE trip in ONE direction?**
+>
+> | Answer | Verb Type | Example |
+> |--------|-----------|---------|
+> | **YES** | Unidirectional | Я **йду** на роботу. (right now, one way) |
+> | **NO** | Multidirectional | Я **ходжу** на роботу. (regularly, round trip) |
+>
+> **Round trip = Multidirectional**
+> - Я ходив до магазину. (I went to the store and came back)
+>
+> **Happening now = Unidirectional**
+> - Куди ти йдеш? (Where are you going right now?)
+
+---
+
 At A2, you learned іти/ходити and їхати/їздити. Now: the complete system.
 
 ## presentation
@@ -339,6 +358,35 @@ Use multidirectional for completed trips:
 | Habitual/regular | Multidirectional |
 | Ability | Multidirectional |
 | Narrative (in process) | Unidirectional past |
+
+---
+
+## Coming Next: Motion Prefixes
+
+In the next modules, you'll learn to add prefixes to motion verbs. Here's a preview of what's most important:
+
+> **📊 MOTION PREFIX PRIORITY PYRAMID**
+>
+> ```
+>                  ┌─────────────┐
+>                  │  роз-  об-  │  Tier 3: Useful
+>                  └─────────────┘
+>            ┌────────────────────────┐
+>            │  про-  від-  по-  за-  │  Tier 2: Important
+>            └────────────────────────┘
+>      ┌─────────────────────────────────────┐
+>      │         при-    ви-    в-/у-        │  Tier 1: ESSENTIAL
+>      │         ━━━━━━━━━━━━━━━━━━━━        │  (Master these first!)
+>      └─────────────────────────────────────┘
+> ```
+>
+> | Tier | Prefixes | Meaning | Priority |
+> |------|----------|---------|----------|
+> | 1 ⭐ | при-, ви-, в-/у- | arrive, exit, enter | Master first! |
+> | 2 | пере-, про-, по-, за- | cross, through, leave, stop by | High frequency |
+> | 3 | від-, об-, роз- | away, around, apart | Know these too |
+
+---
 
 > **Key Takeaways**
 >

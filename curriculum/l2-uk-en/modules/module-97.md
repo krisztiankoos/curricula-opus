@@ -14,18 +14,20 @@ objectives:
   - Participate in discussions confidently
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### Speaking Your Mind
+### Висловлюємо свою думку | Speaking Your Mind
+
+На рівні B1 потрібно вміти брати участь у дискусіях. Це означає:
 
 At B1, you need to participate in discussions. That means:
-- Stating your opinion clearly
-- Supporting your position
-- Responding to others' views
+- Чітко висловлювати свою думку | Stating your opinion clearly
+- Обґрунтовувати свою позицію | Supporting your position
+- Реагувати на думки інших | Responding to others' views
 
-Today: the essential expressions for expressing opinions in Ukrainian.
+**Сьогодні:** основні вирази для висловлення думок українською мовою.
 
 ## presentation
 
@@ -159,9 +161,11 @@ Today: the essential expressions for expressing opinions in Ukrainian.
 - **Загалом**, я задоволений. - In general, I'm satisfied.
 - **Підсумовуючи**, це був успіх. - Summarizing, it was a success.
 
-## practice
+## practice | Практика
 
-### Complete the Expressions
+### Доповніть вирази | Complete the Expressions
+
+*Виберіть правильне слово. Choose the correct word.*
 
 1. ___ думку, це правильно. (In my) → **На мою**
 2. Я ___, що він має рацію. (think/believe) → **вважаю/думаю**
@@ -180,9 +184,9 @@ Rank these from most to least certain:
 4. Можливо, ... → **5 (least certain)**
 5. Напевно, ... → **3**
 
-### Respond to Questions
+### Дайте відповідь | Respond to Questions
 
-Give your opinion using appropriate expressions:
+*Висловіть свою думку, використовуючи відповідні вирази:*
 
 **Q:** Чи важливо вивчати іноземні мови?
 **A:** На мою думку, це дуже важливо, тому що...
@@ -206,11 +210,11 @@ Make these stronger/more certain:
 1. Можливо, це правильно. → **Я впевнений, що це правильно.**
 2. Мабуть, він знає. → **Безперечно, він знає.**
 
-## production
+## production | Продукція
 
-### Discussion Topics
+### Теми для дискусії | Discussion Topics
 
-Express your opinion on:
+*Висловіть свою думку на такі теми:*
 
 1. **Дистанційна робота**
    - Це добре чи погано? Чому?

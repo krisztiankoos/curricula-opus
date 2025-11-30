@@ -195,6 +195,35 @@ Ask questions using different aspects:
 
 ---
 
+### 🎭 ROLE-PLAY: Catching Up with an Old Friend
+
+**Situation:** You haven't seen your friend in a year. You meet at a café.
+
+**Partner A (You):** Ask about:
+- What they did last summer (single events → perfective)
+- What they used to do as a child (repeated → imperfective)
+- One special moment (single event → perfective)
+
+**Partner B (Friend):** Answer using correct aspects:
+
+**Example dialogue:**
+```
+A: Привіт! Як давно не бачилися! Де ти був минулого літа?
+B: Я їздив до Італії. Там я відвідав багато музеїв.
+A: Класно! А що ти робив у дитинстві влітку?
+B: Я завжди їздив до бабусі в село. Ми щодня купалися в річці.
+A: Що найбільше запам'яталося?
+B: Одного разу я впіймав величезну рибу! Бабуся її приготувала.
+```
+
+**Required structures:**
+- ✅ Imperfective for "used to / always / every day" (ходив, робив, грався)
+- ✅ Perfective for "once / one time" (пішов, зробив, познайомився)
+
+**Switch roles and repeat!**
+
+---
+
 # Activities
 
 ## quiz: Single or Repeated?

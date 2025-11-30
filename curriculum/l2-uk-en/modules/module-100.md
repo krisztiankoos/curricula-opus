@@ -14,11 +14,13 @@ objectives:
   - Identify areas for improvement
 ---
 
-# Lesson Content
+# Зміст уроку | Lesson Content
 
-## warm-up
+## warm-up | Розминка
 
-### Checkpoint Overview
+### Огляд контрольної роботи | Checkpoint Overview
+
+Ця контрольна робота перевіряє ваші навички B1.1:
 
 This checkpoint tests your B1.1 skills:
 

@@ -33,7 +33,119 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### ЗМІ в нашому житті | Media in Our Lives\n\nЯкі засоби масової інформації ви використовуєте?\n\nWhat mass media do you use?\n\n- Де ви дізнаєтеся новини? | Where do you get news?\n- Чи читаєте газети? | Do you read newspapers?\n- Які соціальні мережі ви використовуєте? | What social networks do you use?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Засоби масової інформації | Mass Media\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| ЗМІ (засоби масової інформації) | /zɛ ɛm ˈi/ | mass media | Українські ЗМІ |\n| мас-медіа | /mɑs mɛˈdʲiɑ/ | mass media | Працювати в мас-медіа |\n| засіб | /ˈzɑsʲib/ | means, medium | Засіб комунікації |\n| медіа | /mɛˈdʲiɑ/ | media | Соціальні медіа |\n| преса | /ˈprɛsɑ/ | press | Свобода преси |\n| журналістика | /ʒurnɑˈlʲistɪkɑ/ | journalism | Вивчати журналістику |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Друковані ЗМІ | Print Media\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| газета | /ɦɑˈzɛtɑ/ | newspaper | Читати газету |\n| журнал | /ʒurˈnɑl/ | magazine | Модний журнал |\n| стаття | /stɑˈtʲːɑ/ | article | Цікава стаття |\n| заголовок | /zɑˈɦolovok/ | headline, title | Гучний заголовок |\n| рубрика | /rubˈrɪkɑ/ | column, section | Спортивна рубрика |\n| випуск | /ˈvɪpusk/ | issue, edition | Останній випуск |\n| видання | /vɪˈdɑnʲːɑ/ | publication | Онлайн-видання |\n| редакція | /rɛˈdɑkt͡sʲijɑ/ | editorial office | Редакція газети |\n\n**Usage:**\n- Ви читали сьогоднішню **газету**? - Did you read today's newspaper?\n- Це **стаття** про економіку. - This is an article about economics.\n- Який **заголовок** у цієї статті? - What's the headline of this article?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Журналістика | Journalism\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| журналіст | /ʒurnɑˈlʲist/ | journalist (m) | Відомий журналіст |\n| журналістка | /ʒurnɑˈlʲistkɑ/ | journalist (f) | Вона журналістка |\n| репортер | /rɛˈportɛr/ | reporter | Репортер з місця подій |\n| кореспондент | /korɛsponˈdɛnt/ | correspondent | Воєнний кореспондент |\n| редактор | /rɛˈdɑktor/ | editor | Головний редактор |\n| автор | /ˈɑvtor/ | author | Автор статті |\n| оглядач | /oɦlʲɑˈdɑt͡ʃ/ | commentator, reviewer | Політичний оглядач |\n\n**Usage:**\n- Хто **автор** цієї статті? - Who is the author of this article?\n- Він працює **кореспондентом** за кордоном. - He works as a correspondent abroad.\n- **Редактор** перевіряє всі матеріали. - The editor checks all materials."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Телебачення та радіо | Television and Radio\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| телебачення | /tɛlɛˈbɑt͡ʃɛnʲːɑ/ | television | Дивитися телебачення |\n| телеканал | /tɛlɛkɑˈnɑl/ | TV channel | Новинний телеканал |\n| радіо | /ˈrɑdʲio/ | radio | Слухати радіо |\n| новини | /noˈvɪnɪ/ | news | Останні новини |\n| випуск новин | /ˈvɪpusk noˈvɪn/ | news broadcast | Вечірній випуск новин |\n| передача | /pɛrɛˈdɑt͡ʃɑ/ | program, broadcast | Цікава передача |\n| ведучий | /vɛˈdut͡ʃɪj/ | host, presenter (m) | Ведучий програми |\n| ведуча | /vɛˈdut͡ʃɑ/ | host, presenter (f) | Вона ведуча новин |\n| інтерв'ю | /intɛrvˈju/ | interview | Брати інтерв'ю |\n\n**Usage:**\n- Ви дивилися **випуск новин**? - Did you watch the news broadcast?\n- Яка ваша улюблена **передача**? - What's your favorite program?\n- Він дав **інтерв'ю** цьому журналісту. - He gave an interview to this journalist."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Інтернет та цифрові медіа | Internet and Digital Media\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| інтернет | /intɛrˈnɛt/ | internet | Шукати в інтернеті |\n| вебсайт | /vɛbˈsɑjt/ | website | Новинний вебсайт |\n| сторінка | /stoˈrʲinkɑ/ | page | Вебсторінка |\n| блог | /bloɦ/ | blog | Вести блог |\n| блогер | /ˈbloɦɛr/ | blogger | Популярний блогер |\n| пост | /post/ | post | Написати пост |\n| публікація | /publʲiˈkɑt͡sʲijɑ/ | publication, post | Нова публікація |\n| підписник | /pʲidˈpɪsnɪk/ | subscriber, follower | Мільйон підписників |\n| підписатися | /pʲidpɪˈsɑtɪsʲɑ/ | to subscribe | Підписатися на канал |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Соціальні мережі | Social Networks\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| соціальна мережа | /sot͡sʲiˈɑlʲnɑ mɛˈrɛʒɑ/ | social network | Популярна соціальна мережа |\n| акаунт | /ɑˈkɑunt/ | account | Створити акаунт |\n| профіль | /proˈfʲilʲ/ | profile | Оновити профіль |\n| стрічка | /strʲit͡ʃˈkɑ/ | feed | Новинна стрічка |\n| лайк | /lɑjk/ | like | Поставити лайк |\n| коментар | /komɛnˈtɑr/ | comment | Залишити коментар |\n| поширювати | /poʃɪˈrʲuvɑtɪ/ | to share | Поширювати інформацію |\n| репост | /ˈrɛpost/ | repost | Зробити репост |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Типи новин | Types of News\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| політичні новини | - | political news |\n| економічні новини | - | economic news |\n| світові новини | - | world news |\n| місцеві новини | - | local news |\n| спортивні новини | - | sports news |\n| культурні новини | - | cultural news |\n| кримінальні новини | - | crime news |\n| погода | - | weather |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дії з новинами | Actions with News\n\n| Ukrainian | English | Aspect |\n|-----------|---------|--------|\n| читати / прочитати | to read | impf/pf |\n| дивитися / подивитися | to watch | impf/pf |\n| слухати / послухати | to listen | impf/pf |\n| публікувати / опублікувати | to publish | impf/pf |\n| повідомляти / повідомити | to report, inform | impf/pf |\n| писати / написати | to write | impf/pf |\n| коментувати / прокоментувати | to comment | impf/pf |\n| поширювати / поширити | to spread, share | impf/pf |"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-111-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Complete with Correct Word\n\n1. Я кожен день читаю ___ (newspaper). → **газету**\n2. Він працює ___ (journalist) на телеканалі. → **журналістом**\n3. Яка ваша улюблена ___ (TV program)? → **передача**\n4. Ви читали цю ___ (article)? → **статтю**\n5. Скільки у вас ___ (followers)? → **підписників**\n6. Я завжди дивлюся вечірній ___ (news broadcast). → **випуск новин**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Match Media Type with Action\n\n| Media | Action |\n|-------|--------|\n| газета | читати |\n| радіо | слухати |\n| телебачення | дивитися |\n| соціальні мережі | гортати, лайкати |\n| блог | вести, читати |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Discussion Questions\n\n1. Де ви зазвичай дізнаєтеся **новини**?\n2. Чи довіряєте ви **ЗМІ**?\n3. Які **соціальні мережі** ви використовуєте?\n4. Чи читаєте ви **статті** онлайн?\n5. Яка ваша улюблена **передача** на телебаченні?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate to Ukrainian\n\n1. I read the news every morning.\n   → **Я читаю новини щоранку.**\n\n2. This article is about politics.\n   → **Ця стаття про політику.**\n\n3. She works as a journalist.\n   → **Вона працює журналісткою.**\n\n4. How many subscribers does this channel have?\n   → **Скільки підписників має цей канал?**\n\n5. I shared this post on social media.\n   → **Я поширив цей пост у соціальних мережах.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-111-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Describe Your Media Habits\n\nTalk about:\n- Які **ЗМІ** ви використовуєте щодня?\n- Як часто ви читаєте **новини**?\n- Чи є у вас улюблені **журналісти** або **блогери**?\n\n**Example:**\nЯ рідко читаю **газети**, але щодня переглядаю **новини** в інтернеті. У мене є акаунти в кількох **соціальних мережах**. Я **підписаний** на кілька новинних каналів."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Discuss Media and Society\n\n- Чи важлива **свобода преси**?\n- Як **соціальні мережі** впливають на суспільство?\n- Чи можна довіряти всім **новинам** в інтернеті?"
+          }
+        ]
+      }
+    ]
   },
   "activities": [
     {

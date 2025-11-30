@@ -32,7 +32,120 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Допустові речення | Concessive Clauses\n\nConcessive clauses show that something happens **despite** an obstacle:\n\n| English | Ukrainian |\n|---------|-----------|\n| **Although** it's raining, I'll go. | **Хоча** йде дощ, я піду. |\n| **Despite** the rain, I'll go. | **Незважаючи на** дощ, я піду. |\n\nThe result is **unexpected** given the circumstance."
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Хоча / Хоч — Although, Though\n\n**Хоча** (formal) and **хоч** (informal) introduce concessive clauses:\n\n| Ukrainian | English |\n|-----------|---------|\n| **Хоча** я втомився, я продовжу. | Although I'm tired, I'll continue. |\n| **Хоч** він хворий, він прийшов. | Though he's sick, he came. |\n| Вона пішла, **хоча** я її просив залишитися. | She left, although I asked her to stay. |\n\n**Word order:** The \"хоча\" clause can come first or second.\n\n> **⭐ ХОЧА VS. ХОЧ**\n>\n> - **Хоча** — standard, neutral, written and spoken\n> - **Хоч** — more colloquial, shorter, informal\n>\n> Both mean the same thing; use \"хоча\" for formal contexts."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Tense with Хоча\n\n**Хоча** works with any tense:\n\n| Tense | Example |\n|-------|---------|\n| Present | **Хоча** я втомлений, я працюю. |\n| Past | **Хоча** вона запізнилася, ми почекали. |\n| Future | **Хоча** буде дощ, ми підемо. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Незважаючи на те, що — Despite the fact that\n\nA more formal/emphatic concessive:\n\n| Ukrainian | English |\n|-----------|---------|\n| **Незважаючи на те, що** він хворий, він прийшов. | Despite the fact that he's sick, he came. |\n| Вона працює, **незважаючи на те, що** втомилася. | She works, despite the fact that she's tired. |\n\n**Shorter form:** **Незважаючи на те що** (without comma)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Незважаючи на + Noun — Despite + Noun\n\nWhen followed by a noun (not a clause), use **незважаючи на** + accusative:\n\n| Ukrainian | English |\n|-----------|---------|\n| **Незважаючи на** дощ, ми пішли. | Despite the rain, we went. |\n| **Незважаючи на** труднощі, він досяг успіху. | Despite difficulties, he achieved success. |\n| **Незважаючи на** поганий настрій, вона посміхалася. | Despite her bad mood, she smiled. |\n\n**Pattern:** Незважаючи на + accusative noun"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Попри + Noun — Despite + Noun (Alternative)\n\n**Попри** is a more literary/formal alternative to \"незважаючи на\":\n\n| Ukrainian | English |\n|-----------|---------|\n| **Попри** всі труднощі, він продовжував. | Despite all difficulties, he continued. |\n| **Попри** холод, ми вийшли. | Despite the cold, we went out. |\n| **Попри** все, він не здався. | Despite everything, he didn't give up. |\n\n**Pattern:** Попри + accusative noun"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Дарма що — Even though (Colloquial)\n\n**Дарма що** is a colloquial/dialectal expression:\n\n| Ukrainian | English |\n|-----------|---------|\n| Він прийшов, **дарма що** був хворий. | He came even though he was sick. |\n| **Дарма що** холодно, вона не одягла куртку. | Even though it's cold, she didn't put on a jacket. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "All Concessive Options Summary\n\n| Expression | Followed by | Formality | Example |\n|------------|-------------|-----------|---------|\n| хоча | clause | neutral | Хоча йде дощ... |\n| хоч | clause | informal | Хоч йде дощ... |\n| незважаючи на те, що | clause | formal | Незважаючи на те, що йде дощ... |\n| незважаючи на | noun (acc) | formal | Незважаючи на дощ... |\n| попри | noun (acc) | literary | Попри дощ... |\n| дарма що | clause | colloquial | Дарма що йде дощ... |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Але, Проте, Однак — But, However\n\nThese show contrast but aren't strictly concessive:\n\n| Ukrainian | English |\n|-----------|---------|\n| Йде дощ, **але** я піду. | It's raining, **but** I'll go. |\n| Він втомився. **Проте** він продовжив. | He got tired. **However**, he continued. |\n| Було холодно, **однак** ми вийшли. | It was cold, **yet** we went out. |\n\n**Difference:**\n- **Хоча/незважаючи** = concessive (subordinate clause)\n- **Але/проте/однак** = contrast (coordinating)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Word Order and Comma Usage\n\n| Pattern | Example |\n|---------|---------|\n| Concessive first | **Хоча** йде дощ**,** я піду. |\n| Concessive second | Я піду**,** **хоча** йде дощ. |\n| With \"незважаючи на\" | **Незважаючи на** дощ**,** ми пішли. |\n\n**Rule:** Use a comma to separate clauses."
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Choose the Correct Concessive\n\n1. ___ він багатий, він живе скромно.\n   - a) Але\n   - b) Хоча ✓\n   - c) Тому що\n\n2. ___ всі труднощі, вона досягла успіху.\n   - a) Незважаючи на ✓\n   - b) Хоча\n   - c) Тому що\n\n3. Вона пішла, ___ я попросив залишитися.\n   - a) хоча ✓\n   - b) тому що\n   - c) якщо\n\n4. ___ погану погоду, ми поїхали на пікнік.\n   - a) Попри ✓\n   - b) Хоч\n   - c) Через\n\n5. Він втомився. ___ він продовжив працювати.\n   - a) Хоча\n   - b) Проте ✓\n   - c) Тому що"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Transform Using Different Structures\n\n**Example:** Йде дощ. Я піду.\n→ Хоча йде дощ, я піду.\n→ Незважаючи на дощ, я піду.\n\n1. Він хворий. Він прийшов на роботу.\n   → **Хоча** він хворий, він прийшов на роботу.\n   → **Незважаючи на** хворобу, він прийшов на роботу.\n\n2. Я втомився. Я закінчу роботу.\n   → **Хоча** я втомився, я закінчу роботу.\n   → **Незважаючи на** втому, я закінчу роботу.\n\n3. Було пізно. Вона не поспішала.\n   → **Хоча** було пізно, вона не поспішала.\n   → **Попри** пізній час, вона не поспішала."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Combine with Хоча\n\n1. Вона не має досвіду. Вона добре працює.\n   → **Хоча** вона не має досвіду, вона добре працює.\n\n2. Він знає правду. Він мовчить.\n   → **Хоча** він знає правду, він мовчить.\n\n3. Погода була погана. Ми добре відпочили.\n   → **Хоча** погода була погана, ми добре відпочили."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate to Ukrainian\n\n1. Although it's expensive, I'll buy it.\n   → **Хоча це дорого, я куплю це.**\n\n2. Despite the difficulties, we succeeded.\n   → **Незважаючи на труднощі, ми досягли успіху.**\n\n3. She came even though she was sick.\n   → **Вона прийшла, хоча вона була хвора.**\n\n4. Despite everything, he didn't give up.\n   → **Попри все, він не здався.**\n\n5. It was cold, but we went outside.\n   → **Було холодно, але ми вийшли.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-108-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Describe Achievements Despite Obstacles\n\nTalk about things you achieved despite difficulties:\n\n**Template:**\nХоча [obstacle], я [achievement].\nНезважаючи на [noun], я зміг/змогла [result].\n\n**Example:**\nХоча я не мав багато часу, я вивчив українську мову. Незважаючи на труднощі, я закінчив університет."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Describe Surprising Situations\n\nDescribe situations where the result was unexpected:\n\n1. Хоча він молодий...\n2. Незважаючи на брак досвіду...\n3. Попри всі перешкоди..."
+          }
+        ]
+      }
+    ]
   },
   "activities": [
     {

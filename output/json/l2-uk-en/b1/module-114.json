@@ -32,7 +32,105 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Огляд B1.2 | B1.2 Overview\n\nB1.2 introduced **complex sentences** and **thematic vocabulary**:\n\n**Grammar (Modules 101-110):**\n- Relative clauses (який, де, куди, коли)\n- Purpose clauses (щоб)\n- Conditionals (якщо, якби)\n- Concessive clauses (хоча, незважаючи на)\n- Causal clauses (тому що, через)\n- Temporal clauses (коли, після того як, поки)\n\n**Vocabulary (Modules 111-113):**\n- Media & News\n- Society & Politics\n- Environment"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Complex Sentence Summary\n\n| Type | Conjunction | Example |\n|------|-------------|---------|\n| **Relative** | який, яка | Людина, яка тут працює... |\n| **Relative** | де, куди, коли | Місто, де я живу... |\n| **Purpose (same subj)** | щоб + inf | Я прийшов, щоб допомогти. |\n| **Purpose (diff subj)** | щоб + past | Я хочу, щоб ти прийшов. |\n| **Real conditional** | якщо | Якщо матиму час, прийду. |\n| **Unreal conditional** | якби...б | Якби мав час, прийшов би. |\n| **Concessive** | хоча | Хоча йде дощ, я піду. |\n| **Concessive** | незважаючи на | Незважаючи на дощ... |\n| **Causal** | тому що, бо | ...тому що захворів. |\n| **Causal** | через + noun | ...через хворобу. |\n| **Result** | тому, отже | ...тому не прийшов. |\n| **Temporal** | коли | Коли він прийшов... |\n| **Temporal** | після того як | Після того як закінчив... |\n| **Temporal** | поки (не) | Чекай, поки він не прийде. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Relative Clauses Review\n\n**Який declines for gender/number/case:**\n\n| Function | Example |\n|----------|---------|\n| Subject | Людина, **яка** прийшла... |\n| Direct object | Книга, **яку** я читаю... |\n| Possession | Друг, **якого** батько... |\n| After preposition | Місто, в **якому** я живу... |\n\n**Alternatives:**\n- де = в якому/якій (location)\n- куди = до якого (direction)\n- коли = у який (time)"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Purpose Clauses Review\n\n| Structure | When | Example |\n|-----------|------|---------|\n| **щоб + infinitive** | Same subject | Я прийшов, щоб допомогти. |\n| **щоб + past** | Different subjects | Я хочу, щоб ти допоміг. |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Conditionals Review\n\n| Type | Structure | Example |\n|------|-----------|---------|\n| **Real** | якщо + future | Якщо прийдеш, поговоримо. |\n| **Unreal** | якби + past + б | Якби прийшов, поговорили б. |\n| **Unless** | якщо не | Прийду, якщо не захворію. |\n| **Even if** | навіть якщо/якби | Навіть якщо піде дощ... |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Other Clause Types Review\n\n**Concessive (although):**\n- хоча + clause: Хоча йде дощ, я піду.\n- незважаючи на + noun: Незважаючи на дощ...\n\n**Causal (because):**\n- тому що: ...тому що захворів.\n- через + acc (negative): ...через хворобу.\n- завдяки + dat (positive): ...завдяки допомозі.\n\n**Temporal (when):**\n- коли: Коли він прийшов...\n- після того як: Після того як закінчив...\n- перед тим як: Перед тим як піти...\n- поки не (until): Поки він не прийде..."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "B1.2 Vocabulary Themes\n\n**Media & News:**\nгазета, стаття, журналіст, новини, телебачення, соціальні мережі, підписник, коментар\n\n**Society & Politics:**\nуряд, демократія, вибори, голосувати, закон, право, громадянин, свобода, реформа\n\n**Environment:**\nдовкілля, забруднення, клімат, переробка, захист, енергія, ресурси, сталий розвиток"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Combine Using Correct Conjunction\n\n**Choose:** який/яка, тому що, якщо, хоча, щоб, після того як\n\n1. Це людина. Людина допомогла мені.\n   → Це людина, **яка** допомогла мені.\n\n2. Я не прийшов. Я захворів.\n   → Я не прийшов, **тому що** захворів.\n\n3. Він матиме час. Він зателефонує.\n   → **Якщо** він матиме час, він зателефонує.\n\n4. Йде дощ. Я піду на прогулянку.\n   → **Хоча** йде дощ, я піду на прогулянку.\n\n5. Я прийшов. Я хотів допомогти.\n   → Я прийшов, **щоб** допомогти.\n\n6. Я закінчу роботу. Я відпочину.\n   → **Після того як** закінчу роботу, я відпочину."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Complete with Vocabulary\n\n1. ___ (Elections) відбудуться наступного року.\n   → **Вибори** відбудуться наступного року.\n\n2. Заводи ___ (pollute) повітря.\n   → Заводи **забруднюють** повітря.\n\n3. Я читаю ___ (articles) в інтернеті.\n   → Я читаю **статті** в інтернеті.\n\n4. Кожен ___ (citizen) має право голосувати.\n   → Кожен **громадянин** має право голосувати.\n\n5. ___ (Recycling) допомагає довкіллю.\n   → **Переробка** допомагає довкіллю.\n\n6. ___ (Climate change) — глобальна проблема.\n   → **Зміна клімату** — глобальна проблема."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Mixed Grammar Practice\n\nChoose the correct form:\n\n1. Місто, ___ я живу, велике.\n   - a) де ✓\n   - b) яке\n   - c) куди\n\n2. Я хочу, ___ ти допоміг.\n   - a) щоб ти допоможеш\n   - b) щоб ти допоміг ✓\n   - c) щоб допомогти\n\n3. ___ він прийде, ми поговоримо.\n   - a) Якби\n   - b) Якщо ✓\n   - c) Коли б\n\n4. Він не прийшов ___ хвороби.\n   - a) тому що\n   - b) через ✓\n   - c) завдяки\n\n5. Чекай, ___ він не прийде.\n   - a) коли\n   - b) після того як\n   - c) поки ✓\n\n6. ___ йде дощ, ми підемо.\n   - a) Тому що\n   - b) Хоча ✓\n   - c) Після того як"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate to Ukrainian\n\n1. If I had time, I would read more.\n   → **Якби я мав час, я б читав більше.**\n\n2. I came to ask you a question.\n   → **Я прийшов, щоб запитати тебе.**\n\n3. Although he is sick, he came to work.\n   → **Хоча він хворий, він прийшов на роботу.**\n\n4. The city where I was born is beautiful.\n   → **Місто, де я народився, гарне.**\n\n5. I didn't come because I was busy.\n   → **Я не прийшов, тому що був зайнятий.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-114-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Write a Complex Paragraph\n\nWrite about one of these topics using multiple complex sentence types:\n\n**Topic 1: Media**\nUse: який/яка, тому що, якщо\n\n**Topic 2: Environment**\nUse: хоча, щоб, після того як\n\n**Topic 3: Politics**\nUse: де, незважаючи на, коли\n\n**Example (Media):**\nЯ читаю новини на вебсайті, **який** оновлюється щогодини, **тому що** хочу бути інформованим. **Якщо** бачу цікаву статтю, я ділюся нею в соціальних мережах."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Discussion\n\nDiscuss using B1.2 grammar and vocabulary:\n\n1. Що ви робите для **довкілля**?\n2. Як ви дізнаєтеся **новини**?\n3. Чи важлива **демократія**?\n\nUse complex sentences in your answers!"
+          }
+        ]
+      }
+    ]
   },
   "activities": [
     {

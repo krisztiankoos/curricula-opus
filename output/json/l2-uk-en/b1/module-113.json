@@ -33,7 +33,114 @@
     "version": 1,
     "createdAt": "2025-11-30T00:00:00Z",
     "modifiedAt": "2025-11-30T00:00:00Z",
-    "phases": []
+    "phases": [
+      {
+        "id": "phase-warm-up",
+        "name": "warm-up",
+        "duration": 5,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Довкілля | The Environment\n\nЕкологічні питання важливі для всіх:\n\nEnvironmental issues are important for everyone:\n\n- Які **екологічні проблеми** ви знаєте? | What environmental problems do you know?\n- Що ви робите для **захисту довкілля**? | What do you do to protect the environment?\n- Чи хвилює вас **зміна клімату**? | Are you worried about climate change?"
+          }
+        ]
+      },
+      {
+        "id": "phase-presentation",
+        "name": "presentation",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Довкілля та природа | Environment and Nature\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| довкілля | /dovˈkʲilʲːɑ/ | environment | Захист довкілля |\n| навколишнє середовище | - | environment | Вплив на середовище |\n| природа | /prɪˈrodɑ/ | nature | Берегти природу |\n| екологія | /ɛkoˈloɦʲijɑ/ | ecology | Проблеми екології |\n| екосистема | /ɛkosɪsˈtɛmɑ/ | ecosystem | Морська екосистема |\n| біорізноманіття | /bʲioriznoˈmɑnʲitʲːɑ/ | biodiversity | Втрата біорізноманіття |\n\n**Usage:**\n- Ми повинні захищати **довкілля**. - We must protect the environment.\n- **Природа** потребує нашої допомоги. - Nature needs our help.\n- **Екологія** — важлива наука. - Ecology is an important science."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Клімат | Climate\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| клімат | /klʲiˈmɑt/ | climate | Зміна клімату |\n| зміна клімату | - | climate change | Наслідки зміни клімату |\n| глобальне потепління | - | global warming | Боротьба з потеплінням |\n| парниковий ефект | - | greenhouse effect | Парникові гази |\n| температура | /tɛmpɛrɑˈturɑ/ | temperature | Підвищення температури |\n| посуха | /poˈsuxɑ/ | drought | Тривала посуха |\n| повінь | /poˈvʲinʲ/ | flood | Сильна повінь |\n| стихійне лихо | - | natural disaster | Стихійні лиха |\n\n**Usage:**\n- **Зміна клімату** — глобальна проблема. - Climate change is a global problem.\n- Через **посуху** врожай знищено. - The harvest was destroyed due to drought.\n- **Глобальне потепління** впливає на всю планету. - Global warming affects the entire planet."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Забруднення | Pollution\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| забруднення | /zɑˈbrudnɛnʲːɑ/ | pollution | Забруднення повітря |\n| забруднювати | /zɑbrudˈnʲuvɑtɪ/ | to pollute | Забруднювати воду |\n| сміття | /smʲiˈtʲːɑ/ | garbage, waste | Викидати сміття |\n| відходи | /vʲidˈxodɪ/ | waste | Промислові відходи |\n| викиди | /ˈvɪkɪdɪ/ | emissions | Викиди CO₂ |\n| пластик | /plɑsˈtɪk/ | plastic | Пластикові відходи |\n| токсичний | /tokˈsɪt͡ʃnɪj/ | toxic | Токсичні речовини |\n| шкідливий | /ʃkʲidˈlɪvɪj/ | harmful | Шкідливий вплив |\n\n**Types of pollution:**\n\n| Ukrainian | English |\n|-----------|---------|\n| забруднення повітря | air pollution |\n| забруднення води | water pollution |\n| забруднення ґрунту | soil pollution |\n| шумове забруднення | noise pollution |\n| світлове забруднення | light pollution |\n\n**Usage:**\n- **Забруднення повітря** шкодить здоров'ю. - Air pollution harms health.\n- Заводи **забруднюють** річки. - Factories pollute rivers.\n- Потрібно зменшити **викиди** CO₂. - We need to reduce CO₂ emissions."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Ресурси та енергія | Resources and Energy\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| ресурси | /rɛˈsursɪ/ | resources | Природні ресурси |\n| енергія | /ɛˈnɛrɦʲijɑ/ | energy | Відновлювана енергія |\n| електроенергія | /ɛlɛktroɛˈnɛrɦʲijɑ/ | electricity | Економити електроенергію |\n| паливо | /ˈpɑlɪvo/ | fuel | Викопне паливо |\n| нафта | /ˈnɑftɑ/ | oil | Видобуток нафти |\n| газ | /ɦɑz/ | gas | Природний газ |\n| вугілля | /vuˈɦʲilʲːɑ/ | coal | Спалювати вугілля |\n| сонячна енергія | - | solar energy | Сонячні панелі |\n| вітрова енергія | - | wind energy | Вітрові турбіни |\n\n**Usage:**\n- **Природні ресурси** обмежені. - Natural resources are limited.\n- Треба переходити на **відновлювану енергію**. - We need to switch to renewable energy.\n- **Сонячна енергія** — чиста і безпечна. - Solar energy is clean and safe."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Захист довкілля | Environmental Protection\n\n| Ukrainian | IPA | English | Example |\n|-----------|-----|---------|---------|\n| захист | /ˈzɑxɪst/ | protection | Захист природи |\n| захищати / захистити | - | to protect | Захищати ліси |\n| охорона | /oxoˈronɑ/ | conservation | Охорона природи |\n| заповідник | /zɑpoˈvʲidnɪk/ | nature reserve | Національний заповідник |\n| переробка | /pɛrɛˈrobkɑ/ | recycling | Переробка відходів |\n| переробляти | /pɛrɛrobˈlʲɑtɪ/ | to recycle | Переробляти пластик |\n| сортування | /sortuˈvɑnʲːɑ/ | sorting | Сортування сміття |\n| стійкість | /stʲijˈkʲistʲ/ | sustainability | Сталий розвиток |\n\n**Usage:**\n- Ми повинні **захищати** ліси. - We must protect forests.\n- **Переробка** сміття важлива. - Recycling waste is important.\n- **Заповідники** зберігають рідкісних тварин. - Reserves preserve rare animals."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Екологічні дії | Environmental Actions\n\n| Ukrainian | English | Aspect |\n|-----------|---------|--------|\n| захищати / захистити | to protect | impf/pf |\n| забруднювати / забруднити | to pollute | impf/pf |\n| переробляти / переробити | to recycle | impf/pf |\n| сортувати / посортувати | to sort | impf/pf |\n| економити / зекономити | to save, conserve | impf/pf |\n| споживати / спожити | to consume | impf/pf |\n| зменшувати / зменшити | to reduce | impf/pf |\n| відновлювати / відновити | to restore, renew | impf/pf |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Екологічні вирази | Environmental Expressions\n\n| Ukrainian | English |\n|-----------|---------|\n| берегти природу | to preserve nature |\n| економити воду/електроенергію | to save water/electricity |\n| зменшити споживання | to reduce consumption |\n| використовувати повторно | to reuse |\n| перейти на зелену енергію | to switch to green energy |\n| залишати вуглецевий слід | to leave a carbon footprint |\n| сталий розвиток | sustainable development |"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-113-matchup"
+          }
+        ]
+      },
+      {
+        "id": "phase-practice",
+        "name": "practice",
+        "duration": 15,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Complete with Correct Word\n\n1. ___ (Climate change) — глобальна проблема. → **Зміна клімату**\n2. Заводи ___ (pollute) річки. → **забруднюють**\n3. Треба ___ (to recycle) пластик. → **переробляти**\n4. ___ (Air pollution) шкодить здоров'ю. → **Забруднення повітря**\n5. Ми повинні ___ (to protect) природу. → **захищати**\n6. ___ (Solar energy) — чиста енергія. → **Сонячна енергія**"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Match Problem with Solution\n\n| Problem | Solution |\n|---------|----------|\n| забруднення пластиком | переробка, зменшення використання |\n| зміна клімату | зменшення викидів CO₂ |\n| вирубка лісів | посадка дерев, заповідники |\n| забруднення повітря | перехід на електромобілі |\n| втрата біорізноманіття | охорона природних територій |"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Discussion Questions\n\n1. Що ви робите для **захисту довкілля**?\n2. Чи **сортуєте** ви сміття?\n3. Які **екологічні проблеми** є у вашому місті?\n4. Чи хвилює вас **зміна клімату**?\n5. Що може зробити кожна людина для **природи**?"
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Translate to Ukrainian\n\n1. Climate change is a serious problem.\n   → **Зміна клімату — серйозна проблема.**\n\n2. We need to reduce pollution.\n   → **Ми повинні зменшити забруднення.**\n\n3. Recycling is important for the environment.\n   → **Переробка важлива для довкілля.**\n\n4. Renewable energy is the future.\n   → **Відновлювана енергія — це майбутнє.**\n\n5. Everyone should protect nature.\n   → **Кожен повинен захищати природу.**"
+          },
+          {
+            "type": "activity",
+            "activityId": "act-uk-B1-113-quiz"
+          }
+        ]
+      },
+      {
+        "id": "phase-production",
+        "name": "production",
+        "duration": 10,
+        "items": [
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "### Describe Environmental Actions\n\nTalk about what you do for the environment:\n\n- Чи ви **сортуєте** сміття?\n- Чи ви **економите** воду та електроенергію?\n- Чи ви **використовуєте** еко-сумки?\n\n**Example:**\nЯ намагаюся **захищати довкілля**. Я **сортую** сміття і **переробляю** пластик. Я **економлю** воду і вимикаю світло, коли виходжу з кімнати. Я намагаюся менше їздити на машині."
+          },
+          {
+            "type": "canvas",
+            "canvasData": "{}",
+            "teacherNotes": "Discuss Environmental Issues\n\nDiscuss using vocabulary from this module:\n\n- Яка **екологічна проблема** найсерйозніша?\n- Як можна боротися із **забрудненням**?\n- Чи потрібно переходити на **відновлювану енергію**?"
+          }
+        ]
+      }
+    ]
   },
   "activities": [
     {

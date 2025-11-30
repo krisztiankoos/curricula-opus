@@ -257,8 +257,8 @@ function parsePhases(body: string, moduleNum: number): { phases: LessonPhase[]; 
     'production': 10,
   };
 
-  // Find "# Lesson Content" section
-  const lessonMatch = body.match(/# Lesson Content\n([\s\S]*?)(?=\n---|\n# Activities|$)/);
+  // Find "# Lesson Content" section (supports bilingual headers like "# Зміст уроку | Lesson Content")
+  const lessonMatch = body.match(/# (?:Зміст уроку \| )?Lesson Content\n([\s\S]*?)(?=\n---|\n# Activities|$)/);
   if (!lessonMatch) return { phases: [], restBody: body };
 
   const lessonContent = lessonMatch[1];

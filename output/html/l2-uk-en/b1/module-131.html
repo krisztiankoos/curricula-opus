@@ -88,25 +88,7 @@
     .completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
     .completion-message.show { display: block; }
     footer { text-align: center; padding: 2rem; color: var(--text-muted); }
-    /* Immersive module styles */
-    .toc { background: #f8fafc; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
-    .toc h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.75rem; }
-    .toc-list { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .toc-item { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.875rem; cursor: pointer; transition: all 0.2s; }
-    .toc-item:hover { border-color: var(--primary); background: #e8f4fd; }
-    .toc-item.active { background: var(--primary); color: white; border-color: var(--primary); }
-    .section-card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 1.5rem; overflow: hidden; scroll-margin-top: 80px; }
-    .section-header { padding: 1rem 1.5rem; background: linear-gradient(135deg, #f0f7ff, #f8f0ff); border-bottom: 1px solid var(--border); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-    .section-header h3 { font-size: 1.125rem; color: var(--text); margin: 0; }
-    .section-header .section-type { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.5rem; border-radius: 4px; background: white; color: var(--text-muted); }
-    .section-header .section-type.intro { background: #dbeafe; color: #1e40af; }
-    .section-header .section-type.topic { background: #f3e8ff; color: #7c3aed; }
-    .section-header .section-type.practice { background: #dcfce7; color: #166534; }
-    .section-header .section-type.vocabulary { background: #fef3c7; color: #92400e; }
-    .section-header .section-type.summary { background: #fee2e2; color: #991b1b; }
-    .section-body { padding: 1.5rem; }
-    .section-body.collapsed { display: none; }
-    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } .toc-list { flex-direction: column; } }
+    @media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -137,19 +119,10 @@
       </div>
       
       
-      <div class="toc">
-        <h4>Contents</h4>
-        <ul class="toc-list">
-          <li class="toc-item active" data-target="section-0">Зміст уроку | Lesson Content</li><li class="toc-item" data-target="section-1">Activities</li><li class="toc-item" data-target="section-2">Vocabulary</li><li class="toc-item" data-target="section-3">Summary</li>
-        </ul>
-      </div>
       
-      <div class="section-card" id="section-0">
-        <div class="section-header" onclick="toggleSection(0)">
-          <h3>Зміст уроку | Lesson Content</h3>
-          <span class="section-type topic">topic</span>
-        </div>
-        <div class="section-body md-content"><h2 id="warmup">warm-up | Розминка</h2>
+      <div class="card">
+        <h3>Зміст уроку | Lesson Content</h3>
+        <div class="md-content"><h2 id="warmup">warm-up | Розминка</h2>
 <h3 id="aworldofchanges">Світ змін | A World of Changes</h3>
 <p>Світ постійно змінюється. Як описати ці зміни?</p>
 <p>The world constantly changes. How do we describe these changes?</p>
@@ -580,12 +553,9 @@
 </ul>
 <hr /></div>
       </div>
-      <div class="section-card" id="section-1">
-        <div class="section-header" onclick="toggleSection(1)">
-          <h3>Activities</h3>
-          <span class="section-type topic">topic</span>
-        </div>
-        <div class="section-body md-content"><h2 id="quizdescribingchanges">quiz: Describing Changes</h2>
+      <div class="card">
+        <h3>Activities</h3>
+        <div class="md-content"><h2 id="quizdescribingchanges">quiz: Describing Changes</h2>
 <blockquote>
   <p>Choose the correct word.</p>
 </blockquote>
@@ -665,12 +635,9 @@
 </ol>
 <hr /></div>
       </div>
-      <div class="section-card" id="section-2">
-        <div class="section-header" onclick="toggleSection(2)">
-          <h3>Vocabulary</h3>
-          <span class="section-type vocabulary">vocabulary</span>
-        </div>
-        <div class="section-body md-content"><table>
+      <div class="card">
+        <h3>Vocabulary</h3>
+        <div class="md-content"><table>
 <thead>
 <tr>
 <th>Word</th>
@@ -774,12 +741,9 @@
 </table>
 <hr /></div>
       </div>
-      <div class="section-card" id="section-3">
-        <div class="section-header" onclick="toggleSection(3)">
-          <h3>Summary</h3>
-          <span class="section-type summary">summary</span>
-        </div>
-        <div class="section-body md-content"><h2 id="describingchangeskeypoints">Describing Changes: Key Points</h2>
+      <div class="card">
+        <h3>Summary</h3>
+        <div class="md-content"><h2 id="describingchangeskeypoints">Describing Changes: Key Points</h2>
 <h3 id="increase">Increase</h3>
 <p>зростати, підвищуватися, збільшуватися</p>
 <h3 id="decrease">Decrease</h3>
@@ -839,10 +803,6 @@
     function initSort(){const pool=document.getElementById('sort-items');if(!pool||!Object.keys(sortData).length)return;const all=Object.values(sortData).flat().sort(()=>Math.random()-0.5);pool.innerHTML='';all.forEach(letter=>{const group=Object.keys(sortData).find(g=>sortData[g].includes(letter));const item=document.createElement('div');item.className='sort-item';item.textContent=letter;item.draggable=true;item.dataset.group=group;item.addEventListener('dragstart',e=>{dragItem=item;item.classList.add('dragging');});item.addEventListener('dragend',()=>{item.classList.remove('dragging');dragItem=null;});pool.appendChild(item);});document.querySelectorAll('.sort-group').forEach(g=>{g.addEventListener('dragover',e=>{e.preventDefault();g.classList.add('drag-over');});g.addEventListener('dragleave',()=>g.classList.remove('drag-over'));g.addEventListener('drop',e=>{e.preventDefault();g.classList.remove('drag-over');if(!dragItem)return;if(g.dataset.group===dragItem.dataset.group){dragItem.classList.add('correct');g.querySelector('.sort-items').appendChild(dragItem);dragItem.draggable=false;sortScore++;document.getElementById('sort-score').textContent=sortScore;if(sortScore===totalSort)document.getElementById('sort-complete').classList.add('show');}else{dragItem.classList.add('wrong');setTimeout(()=>dragItem.classList.remove('wrong'),300);}});});}
     function resetSort(){sortScore=0;document.getElementById('sort-score').textContent='0';document.getElementById('sort-complete')?.classList.remove('show');document.querySelectorAll('.sort-group .sort-items').forEach(g=>g.innerHTML='');initSort();}
     function initVocab(){const grid=document.getElementById('vocab-grid');if(!grid)return;grid.innerHTML='';vocabData.forEach(v=>{const card=document.createElement('div');card.className='vocab-card';card.innerHTML='<div class="uk">'+v.uk+'</div><div class="translit">'+v.translit+'</div><div class="en">'+v.en+'</div>'+(v.note?'<div class="note">'+v.note+'</div>':'');grid.appendChild(card);});}
-    // Immersive module section toggle and TOC navigation
-    function toggleSection(idx){const body=document.querySelector('#section-'+idx+' .section-body');if(body)body.classList.toggle('collapsed');}
-    function scrollToSection(idx){const el=document.getElementById('section-'+idx);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});document.querySelectorAll('.toc-item').forEach(t=>t.classList.remove('active'));document.querySelector('[data-target="section-'+idx+'"]')?.classList.add('active');}}
-    document.querySelectorAll('.toc-item').forEach(item=>item.addEventListener('click',()=>scrollToSection(parseInt(item.dataset.target.replace('section-','')))));
     document.addEventListener('DOMContentLoaded',()=>{initQuiz();initSort();initVocab();});
   </script>
 </body>

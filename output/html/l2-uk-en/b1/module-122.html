@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up | Розминка</h3>
         <div class="md-content"><h3 id="emotionsandrelationships">Емоції та стосунки | Emotions and Relationships</h3>
 <p>На рівні B1 ми говоримо про складніші емоції та стосунки:</p>
@@ -131,7 +136,7 @@
 <li>Як ви справляєтеся з <strong>конфліктами</strong>? | How do you deal with conflicts?</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation | Презентація</h3>
         <div class="md-content"><h3 id="coreemotions">Основні емоції | Core Emotions</h3>
 <table>
@@ -530,7 +535,7 @@
 </tbody>
 </table></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice | Практика</h3>
         <div class="md-content"><h3 id="matchemotiontosituation">Match Emotion to Situation</h3>
 <ol>
@@ -585,7 +590,7 @@
 → <strong>Він не може подолати свою ревність.</strong></p></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production | Продукція</h3>
         <div class="md-content"><h3 id="describeyourrelationships">Describe Your Relationships</h3>
 <p>Talk about important relationships:</p>
@@ -603,6 +608,28 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="keyemotionvocabulary">Key Emotion Vocabulary</h2>
+<h3 id="basicemotions">Basic Emotions</h3>
+<p>радість, сум, гнів, страх, здивування</p>
+<h3 id="complexemotions">Complex Emotions</h3>
+<p>тривога, розчарування, полегшення, сором, провина, вдячність</p>
+<h3 id="relationshipwords">Relationship Words</h3>
+<p>дружба, кохання, довіра, підтримка, конфлікт, примирення, зрада</p>
+<h3 id="keyverbs">Key Verbs</h3>
+<p>довіряти, підтримувати, пробачити, миритися, сваритися, зраджувати</p>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>B1 adds complex emotions beyond basic happy/sad</li>
+  <li>Relationship vocabulary is essential for discussions</li>
+  <li>Many emotion verbs have aspectual pairs</li>
+  <li>Expressions add color to emotional descriptions</li>
+  <li>Context determines appropriate emotion word choice</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -610,7 +637,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">радість</div><div class="match-item" data-pair="1">довіра</div><div class="match-item" data-pair="2">любов</div><div class="match-item" data-pair="3">гордість</div><div class="match-item" data-pair="4">полегшення</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">тривога</div><div class="match-item" data-pair="2">ненависть</div><div class="match-item" data-pair="1">недовіра</div><div class="match-item" data-pair="3">сором</div><div class="match-item" data-pair="0">сум</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">ненависть</div><div class="match-item" data-pair="0">сум</div><div class="match-item" data-pair="3">сором</div><div class="match-item" data-pair="1">недовіра</div><div class="match-item" data-pair="4">тривога</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

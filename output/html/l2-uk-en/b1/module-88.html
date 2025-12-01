@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="reviewaspectselection">Review: Aspect Selection</h3>
 <p>Quick check from Module 87:</p>
@@ -132,7 +137,7 @@
 </ul>
 <p>Today: 30 more essential pairs for everyday communication.</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="verbsofchange">Verbs of Change</h3>
 <table>
@@ -489,7 +494,7 @@
 <li><strong>Поверни</strong> мені книгу! - Return my book!</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="aspectpairdrills">Aspect Pair Drills</h3>
 <p>Fill in the perfective form:</p>
@@ -539,7 +544,7 @@
 <li>Your language skills</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="tellastoryusingemotionverbs">Tell a Story Using Emotion Verbs</h3>
 <p>Create a short story using at least 5 emotion verbs:</p>
@@ -554,6 +559,60 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="30pairsfromthismodule">30 Pairs from This Module</h2>
+<h3 id="change">Change</h3>
+<ol>
+<li>змінювати / змінити</li>
+<li>покращувати / покращити</li>
+<li>погіршувати / погіршити</li>
+<li>збільшувати / збільшити</li>
+<li>зменшувати / зменшити</li>
+</ol>
+<h3 id="emotion">Emotion</h3>
+<ol start="6">
+<li>радіти / зрадіти</li>
+<li>хвилюватися / захвилюватися</li>
+<li>дивуватися / здивуватися</li>
+<li>боятися / злякатися</li>
+<li>заспокоюватися / заспокоїтися</li>
+</ol>
+<h3 id="dailyroutine">Daily Routine</h3>
+<ol start="11">
+<li>прокидатися / прокинутися</li>
+<li>засинати / заснути</li>
+<li>одягатися / одягнутися</li>
+<li>вмиватися / вмитися</li>
+<li>голитися / поголитися</li>
+</ol>
+<h3 id="startingfinishing">Starting/Finishing</h3>
+<ol start="16">
+<li>починати / почати</li>
+<li>закінчувати / закінчити</li>
+<li>продовжувати / продовжити</li>
+<li>припиняти / припинити</li>
+</ol>
+<h3 id="communication">Communication</h3>
+<ol start="20">
+<li>телефонувати / зателефонувати</li>
+<li>надсилати / надіслати</li>
+<li>отримувати / отримати</li>
+</ol>
+<p>…and more from the lesson!</p>
+<h2 id="totalb11aspectpairs">Total B1.1 Aspect Pairs</h2>
+<p>After modules 87-88: <strong>~60 new aspect pairs</strong></p>
+<p>Combined with A2 knowledge: <strong>100+ aspect pairs</strong></p>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Learn verbs in pairs, not individually</li>
+  <li>Daily routine verbs form sequences (perfective)</li>
+  <li>Emotion verbs often use з-/за- prefix for perfective</li>
+  <li>Change verbs (-увати/-ити pattern) are very productive</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -561,7 +620,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">прокидатися</div><div class="match-item" data-pair="1">засинати</div><div class="match-item" data-pair="2">починати</div><div class="match-item" data-pair="3">хвилюватися</div><div class="match-item" data-pair="4">змінювати</div><div class="match-item" data-pair="5">створювати</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">прокинутися</div><div class="match-item" data-pair="3">захвилюватися</div><div class="match-item" data-pair="5">створити</div><div class="match-item" data-pair="1">заснути</div><div class="match-item" data-pair="4">змінити</div><div class="match-item" data-pair="2">почати</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">прокинутися</div><div class="match-item" data-pair="5">створити</div><div class="match-item" data-pair="4">змінити</div><div class="match-item" data-pair="2">почати</div><div class="match-item" data-pair="3">захвилюватися</div><div class="match-item" data-pair="1">заснути</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="acommonpattern">A Common Pattern</h3>
 <p>Compare these sentences:</p>
@@ -161,7 +166,7 @@
 </blockquote>
 <hr /></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="thegeneralrule">The General Rule</h3>
 <p><strong>In negative sentences, Ukrainian strongly prefers imperfective verbs.</strong></p>
@@ -303,7 +308,7 @@
 </table>
 <p>This is called the "genitive of negation" — another A2+ topic reinforced here.</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="converttonegative">Convert to Negative</h3>
 <p>Change to negative form (use imperfective):</p>
@@ -342,7 +347,7 @@
 <li>(Specific moment) ___ (Не відкривай/Не відкрий) двері! → <strong>Не відкривай</strong></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="denialpractice">Denial Practice</h3>
 <p>Practice denying things you didn't do:</p>
@@ -388,6 +393,78 @@ B: Не забуду, обіцяю!
 <p><strong>Switch roles and repeat!</strong></p>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="thecorerule">The Core Rule</h2>
+<p><strong>Negation prefers imperfective.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Positive</th>
+<th>Negative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я прочитав книгу.</td>
+<td>Я не читав книги.</td>
+</tr>
+<tr>
+<td>Вона написала.</td>
+<td>Вона не писала.</td>
+</tr>
+<tr>
+<td>Ми купили.</td>
+<td>Ми не купували.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exceptionsuseperfective">Exceptions (Use Perfective)</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Not yet" (ще не)</td>
+<td>Я ще не прочитав.</td>
+</tr>
+<tr>
+<td>Specific warning</td>
+<td>Не впади! Не забудь!</td>
+</tr>
+<tr>
+<td>Expected result failed</td>
+<td>Я не знайшов ключів.</td>
+</tr>
+<tr>
+<td>Emphatic denial</td>
+<td>Я цього не сказав!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="keypatterns">Key Patterns</h2>
+<ol>
+<li><strong>Ніколи</strong> (never) → always imperfective</li>
+<li><strong>Ще не</strong> (not yet) → perfective</li>
+<li><strong>General prohibition</strong> → imperfective (Не палити!)</li>
+<li><strong>Specific warning</strong> → perfective (Не впади!)</li>
+</ol>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Default to imperfective in negative sentences</li>
+  <li>"Ніколи" (never) demands imperfective</li>
+  <li>"Ще не" (not yet) uses perfective</li>
+  <li>Warnings about specific events use perfective</li>
+  <li>Objects often shift to genitive in negation</li>
+  <li><strong>Note:</strong> Some prohibitions accept BOTH aspects with different nuances!</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -395,7 +472,7 @@ B: Не забуду, обіцяю!
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Він прочитав</div><div class="match-item" data-pair="1">Вона написала</div><div class="match-item" data-pair="2">Ми купили</div><div class="match-item" data-pair="3">Я зробив</div><div class="match-item" data-pair="4">Вони сказали</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">Він не читав</div><div class="match-item" data-pair="3">Я не робив</div><div class="match-item" data-pair="4">Вони не говорили</div><div class="match-item" data-pair="1">Вона не писала</div><div class="match-item" data-pair="2">Ми не купували</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Я не робив</div><div class="match-item" data-pair="1">Вона не писала</div><div class="match-item" data-pair="4">Вони не говорили</div><div class="match-item" data-pair="0">Він не читав</div><div class="match-item" data-pair="2">Ми не купували</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

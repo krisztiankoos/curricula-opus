@@ -943,9 +943,10 @@ function generateHTML(vibeJSON: any, nav: NavInfo): string {
     : '';
 
   // For immersive modules: convert each section to HTML
-  // Exclude vocabulary/activities/summary - they're shown in separate tabs
+  // Exclude vocabulary/activities - they're shown in separate tabs
+  // Keep summary - it shows at the end of lesson
   const sectionCards = immersiveSections
-    .filter((section: any) => !['vocabulary', 'activities', 'summary'].includes(section.type))
+    .filter((section: any) => !['vocabulary', 'activities'].includes(section.type))
     .map((section: any) => ({
       id: section.id,
       title: section.title,
@@ -989,6 +990,11 @@ function generateHTML(vibeJSON: any, nav: NavInfo): string {
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -1087,8 +1093,8 @@ function generateHTML(vibeJSON: any, nav: NavInfo): string {
       </div></div>` : ''}
       ${isImmersive && sectionCards.length > 0 ? `
       ${sectionCards.map((s: any) => `
-      <div class="card">
-        <h3>${s.title}</h3>
+      <div class="card section-${s.type}">
+        <h3>${s.type === 'intro' ? '📖 ' : s.type === 'summary' ? '📋 ' : ''}${s.title}</h3>
         <div class="md-content">${s.html}</div>
       </div>`).join('')}
       ` : `<div class="card"><h3>Theory</h3>${theoryContent.length > 0

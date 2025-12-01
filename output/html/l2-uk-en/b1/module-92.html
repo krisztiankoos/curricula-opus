@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="reviewsixprefixessofar">Review: Six Prefixes So Far</h3>
 <table>
@@ -166,7 +171,7 @@
 </table>
 <p>Today: <strong>по-</strong>, <strong>за-</strong>, <strong>роз-</strong>, <strong>від-</strong> — the final set!</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="prefixstartingmotionbriefaction">Prefix по- (Starting Motion, Brief Action)</h3>
 <p><strong>Two main meanings:</strong></p>
@@ -486,7 +491,7 @@
 </tbody>
 </table></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="choosethecorrectprefix">Choose the Correct Prefix</h3>
 <ol>
@@ -523,7 +528,7 @@
 </blockquote>
 <p><strong>Answers:</strong> пішов/вийшов, зайшов, перейшов, увійшов, розійшлися, пройшов, прийшов</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="describeavisit">Describe a Visit</h3>
 <p>Use за- verbs to describe stopping by places:</p>
@@ -535,6 +540,70 @@
 Вечірка закінчилася о півночі. Спочатку <strong>пішли</strong> друзі, які жили близько. Потім таксі <strong>від'їхали</strong> одне за одним. Нарешті всі <strong>розійшлися</strong>.</p>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="fourfinalprefixes">Four Final Prefixes</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>по-</td>
+<td>start/leave</td>
+<td>піти (to leave)</td>
+</tr>
+<tr>
+<td>за-</td>
+<td>stop by, behind</td>
+<td>зайти (to drop by)</td>
+</tr>
+<tr>
+<td>роз-</td>
+<td>disperse</td>
+<td>розійтися (to scatter)</td>
+</tr>
+<tr>
+<td>від-</td>
+<td>away from</td>
+<td>відійти (to step away)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="all10motionprefixes">All 10 Motion Prefixes</h2>
+<ol>
+<li><strong>при-</strong> = TO, arrival</li>
+<li><strong>в-/у-</strong> = INTO</li>
+<li><strong>ви-</strong> = OUT</li>
+<li><strong>по-</strong> = start/leave</li>
+<li><strong>за-</strong> = stop by</li>
+<li><strong>пере-</strong> = across</li>
+<li><strong>про-</strong> = through/past</li>
+<li><strong>об-</strong> = around</li>
+<li><strong>роз-</strong> = disperse</li>
+<li><strong>від-</strong> = away from</li>
+</ol>
+<h2 id="keydistinctions">Key Distinctions</h2>
+<ul>
+<li><strong>піти</strong> = leave, go away</li>
+<li><strong>прийти</strong> = arrive, come</li>
+<li><strong>зайти</strong> = drop by briefly</li>
+<li><strong>відійти</strong> = step away, depart</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>по- with motion verbs = starting motion, leaving</li>
+  <li>за- = stopping by briefly OR going behind</li>
+  <li>роз- = movement in different directions</li>
+  <li>від- = movement away from something</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -542,7 +611,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">при-</div><div class="match-item" data-pair="1">ви-</div><div class="match-item" data-pair="2">в-/у-</div><div class="match-item" data-pair="3">по-</div><div class="match-item" data-pair="4">за-</div><div class="match-item" data-pair="5">пере-</div><div class="match-item" data-pair="6">про-</div><div class="match-item" data-pair="7">об-</div><div class="match-item" data-pair="8">роз-</div><div class="match-item" data-pair="9">від-</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">across</div><div class="match-item" data-pair="4">stop by, behind</div><div class="match-item" data-pair="9">away from</div><div class="match-item" data-pair="7">around</div><div class="match-item" data-pair="8">disperse</div><div class="match-item" data-pair="0">arrival, TO</div><div class="match-item" data-pair="3">start/away</div><div class="match-item" data-pair="1">exit, OUT</div><div class="match-item" data-pair="6">through, past</div><div class="match-item" data-pair="2">entry, INTO</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">arrival, TO</div><div class="match-item" data-pair="5">across</div><div class="match-item" data-pair="8">disperse</div><div class="match-item" data-pair="1">exit, OUT</div><div class="match-item" data-pair="2">entry, INTO</div><div class="match-item" data-pair="6">through, past</div><div class="match-item" data-pair="3">start/away</div><div class="match-item" data-pair="7">around</div><div class="match-item" data-pair="9">away from</div><div class="match-item" data-pair="4">stop by, behind</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

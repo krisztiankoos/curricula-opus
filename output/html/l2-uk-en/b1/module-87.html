@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="buildingyourverbarsenal">Building Your Verb Arsenal</h3>
 <p>At A2, you learned basic aspect pairs like:</p>
@@ -284,7 +289,7 @@
 </blockquote>
 <hr /></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="pattern1prefixcreatesperfective">Pattern 1: Prefix Creates Perfective</h3>
 <p>Most common pattern: Add prefix to imperfective → perfective.</p>
@@ -642,7 +647,7 @@
 </tbody>
 </table></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="matchthepairs">Match the Pairs</h3>
 <p>Connect imperfective with perfective:</p>
@@ -714,7 +719,7 @@
 <li>Я вирішив задачу. → Я <strong>вирішував</strong> задачу годину.</li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="narrateyourday">Narrate Your Day</h3>
 <p>Use these aspect pairs to describe:</p>
@@ -735,6 +740,51 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="aspectformationpatterns">Aspect Formation Patterns</h2>
+<h3 id="pattern1prefix">Pattern 1: Prefix</h3>
+<ul>
+<li>готувати → <strong>при</strong>готувати</li>
+<li>снідати → <strong>по</strong>снідати</li>
+<li>будувати → <strong>по</strong>будувати</li>
+</ul>
+<h3 id="pattern2suffixchange">Pattern 2: Suffix Change</h3>
+<ul>
+<li>вирішувати → вирішити</li>
+<li>показувати → показати</li>
+<li>відповідати → відповісти</li>
+</ul>
+<h3 id="pattern3differentroots">Pattern 3: Different Roots</h3>
+<ul>
+<li>брати / взяти</li>
+<li>говорити / сказати</li>
+<li>шукати / знайти</li>
+</ul>
+<h2 id="30pairsfromthismodule">30 Pairs from This Module</h2>
+<ol>
+<li>будувати / побудувати</li>
+<li>готувати / приготувати</li>
+<li>снідати / поснідати</li>
+<li>вирішувати / вирішити</li>
+<li>відповідати / відповісти</li>
+<li>показувати / показати</li>
+<li>запрошувати / запросити</li>
+<li>пояснювати / пояснити</li>
+<li>домовлятися / домовитися</li>
+<li>забувати / забути<br />
+… (and 20 more from the lesson)</li>
+</ol>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Most aspect pairs use prefix addition (по-, при-, з-)</li>
+  <li>Some switch suffix: -увати → -ити</li>
+  <li>A few use completely different roots</li>
+  <li>Learn pairs together, not separately</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -742,7 +792,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">будувати</div><div class="match-item" data-pair="1">вирішувати</div><div class="match-item" data-pair="2">відповідати</div><div class="match-item" data-pair="3">забувати</div><div class="match-item" data-pair="4">показувати</div><div class="match-item" data-pair="5">запрошувати</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">показати</div><div class="match-item" data-pair="1">вирішити</div><div class="match-item" data-pair="2">відповісти</div><div class="match-item" data-pair="5">запросити</div><div class="match-item" data-pair="3">забути</div><div class="match-item" data-pair="0">побудувати</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">запросити</div><div class="match-item" data-pair="1">вирішити</div><div class="match-item" data-pair="0">побудувати</div><div class="match-item" data-pair="2">відповісти</div><div class="match-item" data-pair="4">показати</div><div class="match-item" data-pair="3">забути</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

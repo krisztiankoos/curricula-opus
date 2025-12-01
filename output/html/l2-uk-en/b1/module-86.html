@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="twowaystosayread">Two Ways to Say "Read!"</h3>
 <ul>
@@ -160,7 +165,7 @@
 </blockquote>
 <hr /></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="imperativeformationreview">Imperative Formation Review</h3>
 <p><strong>Imperfective imperatives:</strong></p>
@@ -468,7 +473,7 @@
 <li>Давайте <strong>почнемо</strong>! - Let's begin!</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="choosethecorrectaspect">Choose the Correct Aspect</h3>
 <ol>
@@ -504,7 +509,7 @@
 <li>___ (Не кури/Не покури) тут! (general rule) → <strong>Не кури</strong></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="giveinstructions">Give Instructions</h3>
 <p>Create a sequence of commands for:</p>
@@ -543,6 +548,101 @@ A: Поклади все на тарілку. Готово!
 <p><strong>Switch roles and cook a different dish!</strong></p>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="aspectincommands">Aspect in Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Use</th>
+<th>Aspect</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Invitation</td>
+<td>Imperfective</td>
+<td>Заходь! Сідай!</td>
+</tr>
+<tr>
+<td>Specific task</td>
+<td>Perfective</td>
+<td>Прочитай це!</td>
+</tr>
+<tr>
+<td>Prohibition</td>
+<td>Imperfective</td>
+<td>Не роби цього!</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td>Perfective</td>
+<td>Не впади!</td>
+</tr>
+<tr>
+<td>Sequence</td>
+<td>Perfective</td>
+<td>Встань, умийся, йди!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quickdecisionguide">Quick Decision Guide</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Choose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Feel free to…"</td>
+<td>Imperfective</td>
+<td>Бери! Їж!</td>
+</tr>
+<tr>
+<td>"Do this specific thing"</td>
+<td>Perfective</td>
+<td>Візьми парасольку!</td>
+</tr>
+<tr>
+<td>"Don't do this"</td>
+<td>Imperfective</td>
+<td>Не роби!</td>
+</tr>
+<tr>
+<td>"Be careful not to…"</td>
+<td>Perfective</td>
+<td>Не забудь!</td>
+</tr>
+<tr>
+<td>"Keep doing…"</td>
+<td>Imperfective</td>
+<td>Продовжуй!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remember">Remember</h2>
+<ul>
+<li>Imperfective = process, invitation, general</li>
+<li>Perfective = result, specific action, urgent</li>
+<li>Negative commands prefer imperfective</li>
+<li>Warnings use perfective (Не впади!)</li>
+<li>"Давай" + infinitive = "Let's…"</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Invitations use imperfective (Заходь! Сідай!)</li>
+  <li>Specific instructions use perfective (Візьми це!)</li>
+  <li>Prohibitions use imperfective (Не роби!)</li>
+  <li>Warnings use perfective (Не забудь! Не впади!)</li>
+  <li>Command sequences use perfective</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -550,7 +650,7 @@ A: Поклади все на тарілку. Готово!
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">читай</div><div class="match-item" data-pair="1">пиши</div><div class="match-item" data-pair="2">бери</div><div class="match-item" data-pair="3">сідай</div><div class="match-item" data-pair="4">вставай</div><div class="match-item" data-pair="5">кажи</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">візьми</div><div class="match-item" data-pair="0">прочитай</div><div class="match-item" data-pair="3">сядь</div><div class="match-item" data-pair="4">встань</div><div class="match-item" data-pair="1">напиши</div><div class="match-item" data-pair="5">скажи</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">прочитай</div><div class="match-item" data-pair="3">сядь</div><div class="match-item" data-pair="1">напиши</div><div class="match-item" data-pair="2">візьми</div><div class="match-item" data-pair="4">встань</div><div class="match-item" data-pair="5">скажи</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

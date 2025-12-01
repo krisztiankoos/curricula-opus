@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up | Розминка</h3>
         <div class="md-content"><h3 id="societyandpolitics">Суспільство і політика | Society and Politics</h3>
 <p>Ці теми важливі для B1 рівня:</p>
@@ -131,7 +136,7 @@
 <li>Як проходять <strong>вибори</strong>? | How do elections work?</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation | Презентація</h3>
         <div class="md-content"><h3 id="stateandgovernment">Держава та уряд | State and Government</h3>
 <table>
@@ -557,7 +562,7 @@
 <li>Вони <strong>протестують</strong> проти корупції. - They are protesting against corruption.</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice | Практика</h3>
         <div class="md-content"><h3 id="completewithcorrectword">Complete with Correct Word</h3>
 <ol>
@@ -621,7 +626,7 @@
 → <strong>Свобода слова — це право людини.</strong></p></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production | Продукція</h3>
         <div class="md-content"><h3 id="describepoliticalsystem">Describe Political System</h3>
 <p>Describe the political system of your country:</p>
@@ -641,6 +646,41 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="keypoliticalvocabulary">Key Political Vocabulary</h2>
+<h3 id="government">Government</h3>
+<p>держава, уряд, влада, парламент, президент, міністр</p>
+<h3 id="elections">Elections</h3>
+<p>вибори, голосування, кандидат, партія, депутат, виборець</p>
+<h3 id="law">Law</h3>
+<p>закон, право, конституція, суд, правосуддя</p>
+<h3 id="citizenship">Citizenship</h3>
+<p>громадянин, громадянство, суспільство, народ</p>
+<h3 id="socialissues">Social Issues</h3>
+<p>безробіття, бідність, нерівність, корупція, реформа</p>
+<h3 id="values">Values</h3>
+<p>демократія, свобода, рівність, права людини</p>
+<h2 id="usefulexpressions">Useful Expressions</h2>
+<ul>
+<li>Прийти до влади - To come to power</li>
+<li>Прийняти закон - To adopt a law</li>
+<li>Права людини - Human rights</li>
+<li>Свобода слова - Freedom of speech</li>
+<li>Боротися з корупцією - To fight corruption</li>
+<li>Провести реформи - To carry out reforms</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>уряд (government) vs влада (power/authorities)</li>
+  <li>громадянин (m) / громадянка (f) = citizen</li>
+  <li>право = right (also: law as a field)</li>
+  <li>закон = law (specific law)</li>
+  <li>вибори is always plural</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -648,7 +688,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">президент</div><div class="match-item" data-pair="1">прем'єр-міністр</div><div class="match-item" data-pair="2">депутат</div><div class="match-item" data-pair="3">мер</div><div class="match-item" data-pair="4">міністр</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">глава міста</div><div class="match-item" data-pair="1">глава уряду</div><div class="match-item" data-pair="0">глава держави</div><div class="match-item" data-pair="4">керівник міністерства</div><div class="match-item" data-pair="2">член парламенту</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">глава держави</div><div class="match-item" data-pair="2">член парламенту</div><div class="match-item" data-pair="3">глава міста</div><div class="match-item" data-pair="1">глава уряду</div><div class="match-item" data-pair="4">керівник міністерства</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="thecompletesystem">The Complete System</h3>
 <p>You now know:</p>
@@ -131,7 +136,7 @@
 </ul>
 <p>Time to put it all together!</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="quickreferencemotionpairs">Quick Reference: Motion Pairs</h3>
 <table>
@@ -393,7 +398,7 @@
 <li>✅ Він завжди приходить. Він прийде завтра. (Consistent)</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="scenario1morningroutine">Scenario 1: Morning Routine</h3>
 <p>Fill in with correct motion verb:</p>
@@ -444,7 +449,7 @@
 <li>The guests scattered. → <strong>Гості розійшлися.</strong></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="storytellingmyjourney">Story Telling: My Journey</h3>
 <p>Create a narrative using at least 10 motion verbs:</p>
@@ -456,6 +461,39 @@
 <p>Use: пройти, перейти, зайти, обійти, увійти, повернути</p>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="motionverbsystemcomplete">Motion Verb System Complete</h2>
+<h3 id="8basepairs">8 Base Pairs</h3>
+<p>іти/ходити, їхати/їздити, бігти/бігати, летіти/літати, плисти/плавати, нести/носити, везти/возити, вести/водити</p>
+<h3 id="10prefixes">10 Prefixes</h3>
+<p>при-, в-/у-, ви-, по-, за-, пере-, про-, об-, роз-, від-</p>
+<h3 id="keypatterns">Key Patterns</h3>
+<ol>
+<li><strong>Uni</strong> = one direction, now</li>
+<li><strong>Multi</strong> = round trip, habitual, ability</li>
+<li><strong>Prefix</strong> = direction + perfectivizes</li>
+<li><strong>Figurative</strong> = abstract meanings</li>
+</ol>
+<h2 id="whatyoucannowexpress">What You Can Now Express</h2>
+<ul>
+<li>Daily routines and commutes</li>
+<li>Past trips and journeys</li>
+<li>Giving directions</li>
+<li>Abstract concepts (conclusions, understanding)</li>
+<li>Complex narratives with movement</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Motion verbs are a complete system — learn it as a whole</li>
+  <li>Prefix choice depends on direction of movement</li>
+  <li>Uni vs multi depends on whether trip is one-way or habitual</li>
+  <li>Figurative uses make your Ukrainian sound native</li>
+  <li>Practice in real contexts to build fluency</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -463,7 +501,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">приходити</div><div class="match-item" data-pair="1">виходити</div><div class="match-item" data-pair="2">переходити</div><div class="match-item" data-pair="3">проходити</div><div class="match-item" data-pair="4">заходити</div><div class="match-item" data-pair="5">обходити</div><div class="match-item" data-pair="6">розходитися</div><div class="match-item" data-pair="7">відходити</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">cross (habitual)</div><div class="match-item" data-pair="1">exit (habitual)</div><div class="match-item" data-pair="7">depart</div><div class="match-item" data-pair="6">disperse</div><div class="match-item" data-pair="4">stop by</div><div class="match-item" data-pair="5">go around</div><div class="match-item" data-pair="0">arrive (habitual)</div><div class="match-item" data-pair="3">pass through</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">pass through</div><div class="match-item" data-pair="7">depart</div><div class="match-item" data-pair="4">stop by</div><div class="match-item" data-pair="0">arrive (habitual)</div><div class="match-item" data-pair="1">exit (habitual)</div><div class="match-item" data-pair="5">go around</div><div class="match-item" data-pair="2">cross (habitual)</div><div class="match-item" data-pair="6">disperse</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

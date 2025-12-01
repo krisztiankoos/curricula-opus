@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up</h3>
         <div class="md-content"><h3 id="prefixeschangeeverything">Prefixes Change Everything</h3>
 <p>When you add a prefix to a motion verb:</p>
@@ -166,7 +171,7 @@
 <hr />
 <p>Today: три ключові префікси для руху — при-, ви-, в-/у-</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation</h3>
         <div class="md-content"><h3 id="prefixarrival">Prefix при- (Arrival)</h3>
 <p><strong>Meaning:</strong> Movement TO a destination, arrival</p>
@@ -530,7 +535,7 @@
 </table>
 <p><strong>Note:</strong> The new imperfective is formed from the perfective, often with suffix change (-ити → -джати/-ходити).</p></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice</h3>
         <div class="md-content"><h3 id="choosethecorrectprefix">Choose the Correct Prefix</h3>
 <ol>
@@ -571,7 +576,7 @@
 <li>Він ___ з машини і пішов. (get out, pf) → <strong>вийшов</strong></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production</h3>
         <div class="md-content"><h3 id="describearrivalsanddepartures">Describe Arrivals and Departures</h3>
 <p>Use при-, ви-, в-/у- to describe:</p>
@@ -617,6 +622,89 @@ B: Прошу! Приїжджайте ще!
 <p><strong>Switch roles and ask for directions to different places!</strong></p>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="threekeyprefixes">Three Key Prefixes</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>при-</td>
+<td>arrival, TO</td>
+<td>прийти (to come)</td>
+</tr>
+<tr>
+<td>ви-</td>
+<td>exit, OUT</td>
+<td>вийти (to go out)</td>
+</tr>
+<tr>
+<td>в-/у-</td>
+<td>entry, IN</td>
+<td>увійти (to enter)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="newaspectpairs">New Aspect Pairs</h2>
+<p>Adding prefix creates:</p>
+<ol>
+<li><strong>Perfective</strong> (при- + іти = прийти)</li>
+<li><strong>New imperfective</strong> from that (приходити)</li>
+</ol>
+<h2 id="keyverbstomaster">Key Verbs to Master</h2>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Perfective</th>
+<th>Imperfective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to come</td>
+<td>прийти</td>
+<td>приходити</td>
+</tr>
+<tr>
+<td>to arrive (vehicle)</td>
+<td>приїхати</td>
+<td>приїжджати</td>
+</tr>
+<tr>
+<td>to bring</td>
+<td>принести</td>
+<td>приносити</td>
+</tr>
+<tr>
+<td>to go out</td>
+<td>вийти</td>
+<td>виходити</td>
+</tr>
+<tr>
+<td>to enter</td>
+<td>увійти</td>
+<td>входити</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>при- = arrival (прийти = to come)</li>
+  <li>ви- = exit (вийти = to go out)</li>
+  <li>в-/у- = entry (увійти = to enter)</li>
+  <li>Prefix + unidirectional = perfective</li>
+  <li>New imperfective formed from prefixed perfective</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -624,7 +712,7 @@ B: Прошу! Приїжджайте ще!
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">прийти</div><div class="match-item" data-pair="1">вийти</div><div class="match-item" data-pair="2">увійти</div><div class="match-item" data-pair="3">приїхати</div><div class="match-item" data-pair="4">виїхати</div><div class="match-item" data-pair="5">принести</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">приносити</div><div class="match-item" data-pair="4">виїжджати</div><div class="match-item" data-pair="1">виходити</div><div class="match-item" data-pair="3">приїжджати</div><div class="match-item" data-pair="0">приходити</div><div class="match-item" data-pair="2">входити</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">приходити</div><div class="match-item" data-pair="4">виїжджати</div><div class="match-item" data-pair="1">виходити</div><div class="match-item" data-pair="2">входити</div><div class="match-item" data-pair="3">приїжджати</div><div class="match-item" data-pair="5">приносити</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

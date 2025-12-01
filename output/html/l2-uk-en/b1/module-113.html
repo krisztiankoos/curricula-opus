@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up | Розминка</h3>
         <div class="md-content"><h3 id="theenvironment">Довкілля | The Environment</h3>
 <p>Екологічні питання важливі для всіх:</p>
@@ -131,7 +136,7 @@
 <li>Чи хвилює вас <strong>зміна клімату</strong>? | Are you worried about climate change?</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation | Презентація</h3>
         <div class="md-content"><h3 id="environmentandnature">Довкілля та природа | Environment and Nature</h3>
 <table>
@@ -585,7 +590,7 @@
 </tbody>
 </table></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice | Практика</h3>
         <div class="md-content"><h3 id="completewithcorrectword">Complete with Correct Word</h3>
 <ol>
@@ -649,7 +654,7 @@
 → <strong>Кожен повинен захищати природу.</strong></p></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production | Продукція</h3>
         <div class="md-content"><h3 id="describeenvironmentalactions">Describe Environmental Actions</h3>
 <p>Talk about what you do for the environment:</p>
@@ -669,6 +674,39 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="keyenvironmentalvocabulary">Key Environmental Vocabulary</h2>
+<h3 id="environment">Environment</h3>
+<p>довкілля, природа, екологія, екосистема, біорізноманіття</p>
+<h3 id="climate">Climate</h3>
+<p>клімат, зміна клімату, глобальне потепління, посуха, повінь</p>
+<h3 id="pollution">Pollution</h3>
+<p>забруднення, сміття, відходи, викиди, токсичний</p>
+<h3 id="resourcesenergy">Resources &amp; Energy</h3>
+<p>ресурси, енергія, паливо, сонячна/вітрова енергія</p>
+<h3 id="protection">Protection</h3>
+<p>захист, охорона, переробка, сортування, заповідник</p>
+<h2 id="usefulexpressions">Useful Expressions</h2>
+<ul>
+<li>Зміна клімату - Climate change</li>
+<li>Забруднення повітря/води - Air/water pollution</li>
+<li>Відновлювана енергія - Renewable energy</li>
+<li>Захист довкілля - Environmental protection</li>
+<li>Переробка відходів - Waste recycling</li>
+<li>Сталий розвиток - Sustainable development</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>довкілля = environment (more common than навколишнє середовище)</li>
+  <li>забруднення (noun) vs забруднювати (verb)</li>
+  <li>переробка (recycling) vs сортування (sorting)</li>
+  <li>Many environmental terms are compounds: зміна клімату, захист природи</li>
+  <li>Verbs follow aspect patterns: захищати/захистити</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -676,7 +714,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">забруднення</div><div class="match-item" data-pair="1">посуха</div><div class="match-item" data-pair="2">вирубка лісів</div><div class="match-item" data-pair="3">викиди CO₂</div><div class="match-item" data-pair="4">відходи</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">climate</div><div class="match-item" data-pair="2">deforestation</div><div class="match-item" data-pair="0">pollution</div><div class="match-item" data-pair="4">waste</div><div class="match-item" data-pair="3">emissions</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">emissions</div><div class="match-item" data-pair="1">climate</div><div class="match-item" data-pair="0">pollution</div><div class="match-item" data-pair="4">waste</div><div class="match-item" data-pair="2">deforestation</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

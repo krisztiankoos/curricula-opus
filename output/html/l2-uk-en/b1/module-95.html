@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up | Розминка</h3>
         <div class="md-content"><h3 id="beyondtheconcrete">Абстрактне мислення | Beyond the Concrete</h3>
 <p>На рівні A2 ви вивчили конкретну лексику: їжу, місця, предмети.</p>
@@ -133,7 +138,7 @@
 <li>Причини та результати | Reasons and results</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation | Презентація</h3>
         <div class="md-content"><h3 id="ideasandthoughts">Ідеї та думки | Ideas and Thoughts</h3>
 <table>
@@ -473,7 +478,7 @@
 <li>Я <strong>сумніваюся</strong> в цьому. - I doubt this.</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice | Практика</h3>
         <div class="md-content"><h3 id="categorizewords">Розподіліть слова | Categorize Words</h3>
 <p>Sort these words into categories:</p>
@@ -532,7 +537,7 @@
 <li>Який ваш <strong>прогрес</strong>?</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production | Продукція</h3>
         <div class="md-content"><h3 id="describeaproblem">Опишіть проблему | Describe a Problem</h3>
 <p>Describe a problem you faced using:</p>
@@ -550,6 +555,35 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="keyabstractvocabulary">Key Abstract Vocabulary</h2>
+<h3 id="ideasthoughts">Ideas &amp; Thoughts</h3>
+<p>ідея, думка, поняття, уявлення, погляд, точка зору</p>
+<h3 id="problems">Problems</h3>
+<p>проблема, питання, труднощі, перешкода, складність, недолік</p>
+<h3 id="solutions">Solutions</h3>
+<p>рішення, вирішення, вихід, результат, успіх, досягнення</p>
+<h3 id="reasons">Reasons</h3>
+<p>причина, підстава, мотив, мета, сенс, значення</p>
+<h2 id="usefulexpressions">Useful Expressions</h2>
+<ul>
+<li>Яка твоя думка? - What do you think?</li>
+<li>З моєї точки зору… - From my point of view…</li>
+<li>У мене немає уявлення. - I have no idea.</li>
+<li>Завжди є вихід. - There's always a way out.</li>
+<li>Це не має значення. - It doesn't matter.</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Abstract vocabulary is essential for B1</li>
+  <li>These words let you discuss ideas, problems, solutions</li>
+  <li>Many abstract nouns are neuter (поняття, питання, рішення)</li>
+  <li>Practice using these in complex sentences</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -557,7 +591,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/4</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">проблема</div><div class="match-item" data-pair="1">труднощі</div><div class="match-item" data-pair="2">перешкода</div><div class="match-item" data-pair="3">недолік</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">рішення</div><div class="match-item" data-pair="2">вихід</div><div class="match-item" data-pair="3">успіх</div><div class="match-item" data-pair="1">вирішення</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">вихід</div><div class="match-item" data-pair="1">вирішення</div><div class="match-item" data-pair="0">рішення</div><div class="match-item" data-pair="3">успіх</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

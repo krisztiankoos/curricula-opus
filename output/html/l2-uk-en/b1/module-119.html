@@ -26,6 +26,11 @@
     .level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
     .card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
     .card h3 { color: var(--primary); margin-bottom: 1rem; }
+    .section-intro { border-left: 4px solid var(--primary); }
+    .section-intro h3 { color: var(--primary); }
+    .section-topic { border-left: 4px solid var(--border); }
+    .section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+    .section-summary h3 { color: var(--success); }
     .canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
     .canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
     .md-content { line-height: 1.7; }
@@ -120,7 +125,7 @@
       
       
       
-      <div class="card">
+      <div class="card section-topic">
         <h3>warm-up | Розминка</h3>
         <div class="md-content"><h3 id="whatisaparticiple">Що таке дієприкметник? | What is a Participle?</h3>
 <p>Дієприкметник — це слово, яке поєднує властивості дієслова та прикметника:</p>
@@ -131,7 +136,7 @@
 <li><strong>Зроблена</strong> робота - <strong>Done</strong> work (participle from "зробити")</li>
 </ul></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>presentation | Презентація</h3>
         <div class="md-content"><h3 id="passiveparticiples">Пасивні дієприкметники | Passive Participles</h3>
 <p><strong>Passive participles</strong> describe a state resulting from an action done TO something:</p>
@@ -471,7 +476,7 @@
 </tbody>
 </table></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>practice | Практика</h3>
         <div class="md-content"><h3 id="formparticiples">Form Participles</h3>
 <ol>
@@ -542,7 +547,7 @@
 → <strong>Приготовлена їжа</strong></p></li>
 </ol></div>
       </div>
-      <div class="card">
+      <div class="card section-topic">
         <h3>production | Продукція</h3>
         <div class="md-content"><h3 id="describeyourroom">Describe Your Room</h3>
 <p>Use participles to describe objects:</p>
@@ -560,6 +565,80 @@
 </ul>
 <hr /></div>
       </div>
+      <div class="card section-summary">
+        <h3>📋 Summary</h3>
+        <div class="md-content"><h2 id="pastpassiveparticipleformation">Past Passive Participle Formation</h2>
+<h3 id="twomainsuffixes">Two Main Suffixes</h3>
+<table>
+<thead>
+<tr>
+<th>Suffix</th>
+<th>When</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>-ний/-ений/-аний</strong></td>
+<td>Most verbs</td>
+<td>зроблений, написаний</td>
+</tr>
+<tr>
+<td><strong>-тий</strong></td>
+<td>Vowel stems</td>
+<td>відкритий, забутий</td>
+</tr>
+</tbody>
+</table>
+<h3 id="commonpatterns">Common Patterns</h3>
+<table>
+<thead>
+<tr>
+<th>Verb Type</th>
+<th>Participle</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-ити</td>
+<td>-ений</td>
+<td>зробити → зроблений</td>
+</tr>
+<tr>
+<td>-ати</td>
+<td>-аний</td>
+<td>написати → написаний</td>
+</tr>
+<tr>
+<td>-увати</td>
+<td>-ований</td>
+<td>намалювати → намальований</td>
+</tr>
+<tr>
+<td>-ти (vowel)</td>
+<td>-тий</td>
+<td>відкрити → відкритий</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage">Usage</h3>
+<ul>
+<li>Participles decline like adjectives</li>
+<li>Can be used before or after nouns</li>
+<li>Agree in gender, number, case</li>
+</ul>
+<blockquote>
+  <p><strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Passive participles = verb meaning + adjective form</li>
+  <li>Two main suffixes: -ний and -тий</li>
+  <li>Decline exactly like adjectives</li>
+  <li>Formed from perfective verbs</li>
+  <li>Very common in written Ukrainian</li>
+  </ul>
+</blockquote></div>
+      </div>
       
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('match')">Start →</button></div>
     </section>
@@ -567,7 +646,7 @@
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">купити</div><div class="match-item" data-pair="1">відкрити</div><div class="match-item" data-pair="2">приготувати</div><div class="match-item" data-pair="3">знайти</div><div class="match-item" data-pair="4">запросити</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">куплений</div><div class="match-item" data-pair="1">відкритий</div><div class="match-item" data-pair="2">приготовлений</div><div class="match-item" data-pair="4">запрошений</div><div class="match-item" data-pair="3">знайдений</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">відкритий</div><div class="match-item" data-pair="0">куплений</div><div class="match-item" data-pair="3">знайдений</div><div class="match-item" data-pair="2">приготовлений</div><div class="match-item" data-pair="4">запрошений</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>

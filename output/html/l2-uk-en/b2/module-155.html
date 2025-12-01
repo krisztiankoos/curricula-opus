@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -580,10 +580,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Виберіть кращу форму</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/3</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (10)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -592,7 +597,7 @@
   <footer>Module 155 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"**Розмовний стиль:** Як краще сказати?","options":["Документ, підписаний директором...","Документ, який підписав директор..."],"correctIndex":1,"explanation":"Розмова → підрядне речення (природніше)"},{"question":"**Офіційний стиль:** Як краще написати?","options":["Документ, підписаний директором...","Документ, який підписав директор..."],"correctIndex":0,"explanation":"Офіційний текст → дієприкметник (стисліше)"},{"question":"**Науковий стиль:** Як краще?","options":["Дані, що аналізуються в роботі...","Дані, які аналізують у роботі..."],"correctIndex":0,"explanation":"Науковий стиль → -ся форми"}];
     const sortData={};
     const vocabData=[{"uk":"підрядне речення","translit":"","en":"subordinate clause","note":"основний спосіб"},{"uk":"дієприслівник","translit":"","en":"adverbial participle","note":"широко вживаний"},{"uk":"трансформація","translit":"","en":"transformation","note":"перетворення"},{"uk":"стислість","translit":"","en":"conciseness","note":"коротка форма"},{"uk":"природність","translit":"","en":"naturalness","note":"відповідність мові"},{"uk":"книжний","translit":"","en":"bookish","note":"офіційний, штучний"},{"uk":"нейтральний","translit":"","en":"neutral","note":"звичайний стиль"},{"uk":"допустимий","translit":"","en":"permissible","note":"можна вживати"},{"uk":"редакція","translit":"","en":"editing","note":"виправлення"},{"uk":"калька","translit":"","en":"calque","note":"дослівний переклад"}];
     const totalSort=0;

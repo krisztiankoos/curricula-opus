@@ -152,7 +152,7 @@
         "id": "activities",
         "title": "Activities",
         "content": "## match-up: Aspect Pairs\n\n| Left | Right |\n|------|-------|\n| читати | прочитати |\n| писати | написати |\n| робити | зробити |\n| брати | взяти |\n| говорити | сказати |\n| бачити | побачити |\n\n## quiz: Aspect Selection\n\n> Choose the correct aspect based on context.\n\n1. Я ___ книгу весь вечір. (process)\n   - [x] читав\n   - [ ] прочитав\n   > Duration = imperfective\n\n2. Нарешті вона ___ цю задачу! (completed)\n   - [ ] розв'язувала\n   - [x] розв'язала\n   > Result achieved = perfective\n\n3. Він завжди ___ на роботу о дев'ятій. (repeated)\n   - [x] приходив\n   - [ ] прийшов\n   > Habitual = imperfective\n\n4. Вчора я ___ новий телефон. (single action)\n   - [ ] купував\n   - [x] купив\n   > Single completed action = perfective\n\n5. Що ти ___ зараз? (ongoing)\n   - [x] робиш\n   - [ ] зробиш\n   > Present = imperfective only\n\n6. Завтра я ___ цю роботу. (will complete)\n   - [ ] буду робити\n   - [x] зроблю\n   > Focus on completion = perfective future\n\n## group-sort: Time Expressions\n\n### Signal Imperfective\n- весь день\n- три години\n- завжди\n- часто\n- зазвичай\n- довго\n\n### Signal Perfective\n- раптом\n- нарешті\n- вже\n- одного разу\n- за годину\n\n---",
-        "type": "topic"
+        "type": "activities"
       },
       {
         "id": "vocabulary",

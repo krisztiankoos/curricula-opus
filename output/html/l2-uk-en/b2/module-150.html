@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -588,10 +588,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Типи заголовків</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/4</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (9)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -600,7 +605,7 @@
   <footer>Module 150 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Парламент ухвалив бюджет» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":0,"explanation":"Просто факт без оцінки → інформативний"},{"question":"«Чи готова Україна до ЄС?» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":1,"explanation":"Запитання → питальний тип (інтрига)"},{"question":"«Час діяти!» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":2,"explanation":"Заклик до дії → закличний тип"},{"question":"«Президент: \"Це історичний день\"» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":3,"explanation":"Цитата в заголовку → цитатний тип"}];
     const sortData={};
     const vocabData=[{"uk":"публіцистика","translit":"","en":"journalism, media writing","note":"стиль ЗМІ"},{"uk":"заголовок","translit":"","en":"headline","note":"назва статті"},{"uk":"лід","translit":"","en":"lead","note":"початок новини"},{"uk":"репортаж","translit":"","en":"report","note":"жанр"},{"uk":"оцінність","translit":"","en":"evaluativeness","note":"суб'єктивність"},{"uk":"риторичний","translit":"","en":"rhetorical","note":"для впливу"},{"uk":"коаліція","translit":"","en":"coalition","note":"об'єднання"},{"uk":"опозиція","translit":"","en":"opposition","note":"політична сила"},{"uk":"фреймування","translit":"","en":"framing","note":"обрамлення реальності"}];
     const totalSort=0;

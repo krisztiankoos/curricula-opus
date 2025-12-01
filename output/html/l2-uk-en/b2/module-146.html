@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -417,10 +417,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Визначте стиль і форму</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/4</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (10)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -429,7 +434,7 @@
   <footer>Module 146 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Засідання відкрито о 10:00.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":1,"explanation":"Офіційний стиль, протокол → -но/-то"},{"question":"«Будинок будується вже два роки.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":2,"explanation":"Процес триває → -ся пасив"},{"question":"«Мені сказали цікаву новину.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":3,"explanation":"Розмовний стиль → 3-я ос. мн."},{"question":"«Книга написана відомим автором.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":0,"explanation":"Опис, нейтральний стиль → дієприкметник"}];
     const sortData={};
     const vocabData=[{"uk":"контекст","translit":"","en":"context","note":"визначає вибір форми"},{"uk":"стиль","translit":"","en":"style","note":"офіційний, розмовний..."},{"uk":"трансформація","translit":"","en":"transformation","note":"перетворення стилю"},{"uk":"доречний","translit":"","en":"appropriate","note":"відповідний контексту"},{"uk":"змішування","translit":"","en":"mixing","note":"поєднання різних форм"},{"uk":"конвенція","translit":"","en":"convention","note":"неписане правило"},{"uk":"репортаж","translit":"","en":"report","note":"новинний жанр"},{"uk":"пресслужба","translit":"","en":"press service","note":"інформаційний відділ"},{"uk":"констатація","translit":"","en":"statement","note":"офіційне твердження"},{"uk":"функціональний","translit":"","en":"functional","note":"пов'язаний із функцією"}];
     const totalSort=0;

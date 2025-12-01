@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -568,10 +568,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Типи підпорядкування</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/3</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (12)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -580,7 +585,7 @@
   <footer>Module 157 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Я знаю, що він прийде, коли закінчить роботу.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":0,"explanation":"Друге підрядне залежить від першого → послідовне"},{"question":"«Я знаю, що він прийде і куди він піде.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":1,"explanation":"Обидва підрядні залежать від головного → паралельне"},{"question":"«Я знаю, що він розумний, що він чесний.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":2,"explanation":"Однотипні підрядні з тим самим сполучником → однорідне"}];
     const sortData={};
     const vocabData=[{"uk":"підрядне речення","translit":"","en":"subordinate clause","note":"залежне від головного"},{"uk":"головне речення","translit":"","en":"main clause","note":"незалежне"},{"uk":"сполучник","translit":"","en":"conjunction","note":"що, якщо, коли"},{"uk":"сполучне слово","translit":"","en":"relative pronoun","note":"який, де, куди"},{"uk":"підпорядкування","translit":"","en":"subordination","note":"залежність"},{"uk":"послідовний","translit":"","en":"sequential","note":"один за одним"},{"uk":"паралельний","translit":"","en":"parallel","note":"на одному рівні"},{"uk":"однорідний","translit":"","en":"homogeneous","note":"однотипний"},{"uk":"означальний","translit":"","en":"attributive","note":"який? котрий?"},{"uk":"з'ясувальний","translit":"","en":"object (clause)","note":"що? про що?"},{"uk":"стик","translit":"","en":"junction","note":"місце з'єднання"},{"uk":"зміщення","translit":"","en":"shift","note":"зміна порядку"}];
     const totalSort=0;

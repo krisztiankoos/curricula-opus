@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -414,10 +414,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Визначте стиль</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/5</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (10)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -426,7 +431,7 @@
   <footer>Module 147 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Рішення про затвердження бюджету прийнято одноголосно.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":0,"explanation":"Кліше, пасив -но → офіційно-діловий"},{"question":"«Ну, я не знаю... Може, завтра?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":1,"explanation":"Частка «ну», неповнота → розмовний"},{"question":"«Дослідження показує статистично значущу кореляцію.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":2,"explanation":"Терміни, безособовість → науковий"},{"question":"«Срібний місяць виплив із-за хмар.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":3,"explanation":"Епітет «срібний», образність → художній"},{"question":"«Чи готова Україна до нових викликів?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":3,"explanation":"Риторичне питання → публіцистичний"}];
     const sortData={};
     const vocabData=[{"uk":"регістр","translit":"","en":"register","note":"рівень формальності"},{"uk":"функціональний стиль","translit":"","en":"functional style","note":"п'ять стилів"},{"uk":"розмовний","translit":"","en":"colloquial","note":"побутовий"},{"uk":"художній","translit":"","en":"literary, artistic","note":"для літератури"},{"uk":"публіцистичний","translit":"","en":"journalistic","note":"для ЗМІ"},{"uk":"науковий","translit":"","en":"scientific, academic","note":"для науки"},{"uk":"офіційно-діловий","translit":"","en":"official, formal","note":"для документів"},{"uk":"кліше","translit":"","en":"cliché","note":"стандартний вираз"},{"uk":"канцеляризм","translit":"","en":"bureaucratese","note":"офіційний штамп"},{"uk":"маркер","translit":"","en":"marker","note":"ознака стилю"}];
     const totalSort=0;

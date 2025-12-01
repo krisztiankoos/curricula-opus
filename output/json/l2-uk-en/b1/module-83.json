@@ -91,7 +91,7 @@
         "id": "activities",
         "title": "Activities",
         "content": "## quiz: Process or Result?\n\n> Choose based on the context.\n\n1. Я ___ книгу дві години.\n   - [x] читав\n   - [ ] прочитав\n   > Duration = process = imperfective\n\n2. Нарешті я ___ цю задачу!\n   - [ ] розв'язував\n   - [x] розв'язав\n   > Нарешті = result = perfective\n\n3. Вона ___ листа, коли я прийшов.\n   - [x] писала\n   - [ ] написала\n   > Interrupted action = imperfective\n\n4. Він вже ___ снідати.\n   - [ ] снідав\n   - [x] поснідав\n   > Вже = result = perfective\n\n5. Ми ___ про це весь вечір.\n   - [x] говорили\n   - [ ] поговорили\n   > \"Весь вечір\" emphasizes duration, making imperfective more natural here\n\n6. Вона ___ статтю за три дні.\n   - [ ] писала\n   - [x] написала\n   > За три дні = completed within = perfective\n\n## match-up: Duration vs Completion\n\n| Expression | Aspect Signal |\n|------------|---------------|\n| весь день | imperfective |\n| за годину | perfective |\n| три години | imperfective |\n| вже | perfective |\n| довго | imperfective |\n| нарешті | perfective |\n\n## group-sort: Signals\n\n### Process Focus (Imperfective)\n- весь день\n- три години\n- довго\n- весь час\n- цілий тиждень\n\n### Result Focus (Perfective)\n- вже\n- нарешті\n- за годину\n- швидко\n- раптом\n\n---",
-        "type": "topic"
+        "type": "activities"
       },
       {
         "id": "vocabulary",

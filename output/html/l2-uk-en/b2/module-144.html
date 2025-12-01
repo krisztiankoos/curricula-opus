@@ -105,7 +105,7 @@
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      
+      <button class="nav-tab" data-section="quiz">Quiz</button>
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -769,10 +769,15 @@
 </blockquote></div>
       </div>
       
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('vocab')">Start →</button></div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('quiz')">Start →</button></div>
     </section>
     
-    
+    <section id="quiz" class="section"><div class="card"><h3>Утворення -ся пасиву</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/3</span></div>
+      <div id="quiz-container"></div>
+      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section"><div class="card"><h3>Vocabulary (10)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
@@ -781,7 +786,7 @@
   <footer>Module 144 · curricula-opus</footer>
   <script>
     const matchPairs=[];
-    const quizData=[];
+    const quizData=[{"question":"«Товари ___ на заводі.» (виробляти)","options":["виробляються","виробляють","вироблено"],"correctIndex":0,"explanation":"-ся пасив для процесу"},{"question":"«Квитки ___ онлайн.» (продавати)","options":["продаються","продають","продано"],"correctIndex":0,"explanation":"-ся пасив для загального твердження"},{"question":"«Метод ___ в медицині.» (використовувати)","options":["використовується","використовують","використовано"],"correctIndex":0,"explanation":"-ся пасив для опису"}];
     const sortData={};
     const vocabData=[{"uk":"зворотний","translit":"","en":"reflexive","note":"граматичний термін"},{"uk":"постфікс","translit":"","en":"postfix","note":"частина слова після кореня"},{"uk":"процес","translit":"","en":"process","note":"тривала дія"},{"uk":"вироблятися","translit":"","en":"to be produced","note":"-ся пасив"},{"uk":"застосовуватися","translit":"","en":"to be applied","note":"-ся пасив"},{"uk":"досліджуватися","translit":"","en":"to be researched","note":"-ся пасив"},{"uk":"публікуватися","translit":"","en":"to be published","note":"-ся пасив"},{"uk":"розглядатися","translit":"","en":"to be considered","note":"-ся пасив"},{"uk":"аналізуватися","translit":"","en":"to be analyzed","note":"-ся пасив"},{"uk":"оновлюватися","translit":"","en":"to be updated","note":"-ся пасив"}];
     const totalSort=0;

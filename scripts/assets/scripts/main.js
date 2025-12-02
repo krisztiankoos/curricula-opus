@@ -30,5 +30,7 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });

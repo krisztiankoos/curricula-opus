@@ -36,6 +36,8 @@ export class HtmlTemplate {
       'quiz.js',
       'match.js',
       'sort.js',
+      'fill.js',
+      'order.js',
       'vocab.js',
     ]);
 
@@ -114,6 +116,8 @@ export interface NavOptions {
   hasMatch?: boolean;
   hasQuiz?: boolean;
   hasSort?: boolean;
+  hasFill?: boolean;
+  hasOrder?: boolean;
 }
 
 /**
@@ -144,7 +148,7 @@ export function renderTopNav(options: NavOptions): string {
  * Generate main navigation with tabs
  */
 export function renderMainNav(options: NavOptions): string {
-  const { moduleNum, moduleTitle, hasMatch, hasQuiz, hasSort } = options;
+  const { moduleNum, moduleTitle, hasMatch, hasQuiz, hasSort, hasFill, hasOrder } = options;
 
   return `
   <nav class="nav">
@@ -154,6 +158,8 @@ export function renderMainNav(options: NavOptions): string {
       ${hasMatch ? '<button class="nav-tab" data-section="match">Match</button>' : ''}
       ${hasQuiz ? '<button class="nav-tab" data-section="quiz">Quiz</button>' : ''}
       ${hasSort ? '<button class="nav-tab" data-section="sort">Sort</button>' : ''}
+      ${hasFill ? '<button class="nav-tab" data-section="fill">Fill</button>' : ''}
+      ${hasOrder ? '<button class="nav-tab" data-section="order">Order</button>' : ''}
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>`;

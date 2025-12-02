@@ -281,7 +281,7 @@ Talk about:
 | простий | /prosˈtɪj/ | simple | adj |
 | з'єднувати | /zjedˈnuvɑtɪ/ | to connect | impf |
 | з'єднати | /zjedˈnɑtɪ/ | to connect | pf |
-| відноситися | /vʲidnoˈsɪtɪsʲɑ/ | to relate to | impf |
+| стосуватися | /stosʊˈvɑtɪsʲɑ/ | to relate to, concern | impf |
 
 ---
 

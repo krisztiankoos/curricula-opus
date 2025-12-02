@@ -66,7 +66,7 @@ Before starting A2+, learners have completed:
 
 **Module 63-64: Suffix Formation**
 - **-ння/-ття** (verbal nouns): читати → читання
-- **-ість** (abstract): новий → новість
+- **-ість** (abstract): важливий → важливість
 - **-ний/-ський** (adjectives): місто → міський
 
 **Module 65-66: Root Families**

@@ -2,51 +2,46 @@
 
 ## Project Overview
 
-**Curricula Opus** is a language content factory generating educational curricula for multiple language pairs and contexts.
+**Curricula Opus** (CO) is a language content factory generating Ukrainian language learning curricula.
 
-**Supported curriculum types:**
-- **L2 (Second Language)**: For learners acquiring a new language
-  - `l2-uk-en`: Ukrainian for English speakers
-  - `l2-uk-es`: Ukrainian for Spanish speakers (future)
-  - `l2-en-uk`: English for Ukrainian speakers (future)
-- **L1 (First Language)**: For native speakers (literacy, literature, advanced study)
-  - `l1-uk`: Ukrainian for native Ukrainian speakers (future)
+**Source of truth**: Markdown files in `curriculum/l2-uk-en/modules/`
 
 **Output formats:**
-- JSON (for Vibe app import)
-- Markdown (human-readable textbooks)
-- HTML (web-based viewing)
+- **HTML** (book-style) - Readable lessons for web viewing
+- **JSON** (v2) - Structured data for Vibe app import
+
+**Documentation:**
+- `docs/ARCHITECTURE.md` - Full system architecture
+- `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec
+- `docs/VIBE-IMPORT-INSTRUCTIONS.md` - JSON import guide
 
 ## Directory Structure
 
 ```
 curricula-opus/
-├── curriculum/                 # Source of truth (per language pair)
-│   ├── l2-uk-en/              # Ukrainian L2 for English speakers
-│   │   ├── master-plan.json   # CEFR structure, methodology
-│   │   ├── modules-a1.json    # A1 module definitions
-│   │   ├── modules-a2.json    # A2 module definitions
-│   │   ├── modules-b1.json    # B1 module definitions
-│   │   ├── modules-b2.json    # B2 module definitions
-│   │   └── modules-c1.json    # C1 module definitions
-│   ├── l2-uk-es/              # Ukrainian L2 for Spanish speakers (future)
-│   └── l1-uk/                 # Ukrainian L1 (future)
-├── vocabulary/                 # Vocabulary databases (per language pair)
-│   ├── l2-uk-en/
-│   │   ├── vocab-a1.json
-│   │   ├── vocab-a2.json
-│   │   └── ...
-│   └── l1-uk/
-├── schemas/                    # JSON schemas (shared)
-│   └── vibe-schema.json
-├── output/                     # Generated content
-│   ├── json/
-│   │   └── l2-uk-en/
-│   ├── markdown/
-│   │   └── l2-uk-en/
-│   └── html/
-│       └── l2-uk-en/
-└── scripts/                    # Generation scripts
+├── curriculum/                    # SOURCE OF TRUTH
+│   └── l2-uk-en/
+│       ├── modules/               # 190 markdown module files
+│       │   ├── module-01.md       # A1: The Cyrillic Code I
+│       │   ├── module-168.md      # B2: History: Kyivan Rus II
+│       │   └── ...
+│       └── vocabulary.csv         # Master vocabulary database
+│
+├── scripts/                       # GENERATOR CODE
+│   ├── generate.ts                # Main entry point
+│   └── lib/
+│       ├── parsers/               # Markdown parsing
+│       ├── renderers/             # HTML + JSON generation
+│       └── utils/                 # Utilities
+│
+├── output/                        # GENERATED OUTPUT
+│   ├── html/l2-uk-en/             # Web-viewable lessons (book)
+│   └── json/l2-uk-en/             # Vibe import data
+│
+└── docs/                          # DOCUMENTATION
+    ├── ARCHITECTURE.md
+    ├── MARKDOWN-FORMAT.md
+    └── VIBE-IMPORT-INSTRUCTIONS.md
 ```
 
 ## Language Pair Naming Convention
@@ -61,39 +56,37 @@ Format: `{type}-{target}-{source}`
 | `l1-uk` | L1 | Ukrainian | - | Ukrainian for native speakers |
 | `l1-en` | L1 | English | - | English for native speakers |
 
-## JSON Schema Types
+## JSON Schema (v2)
 
-### 1. Lesson (`lesson.json`)
 ```json
 {
-  "id": "lesson-uk-A1-01",
-  "moduleId": "mod-uk-A1-01",
-  "title": "The Cyrillic Code I",
-  "titleUk": "Кирилиця I",           // Ukrainian title (B1+)
-  "level": "A1",
-  "objectives": [...],
-  "phases": [...]                     // PPP structure
+  "lesson": {
+    "id": "lesson-uk-B2-168",
+    "moduleNumber": 168,
+    "moduleType": "history",          // grammar, vocabulary, history, etc.
+    "immersionLevel": 0.85,           // 0.0-1.0 (% Ukrainian)
+    "title": "History: Kyivan Rus II",
+    "level": "B2",
+    "sections": [                     // Raw markdown sections
+      { "name": "Вступ", "type": "intro", "content": "..." }
+    ],
+    "rawMarkdown": "..."              // Full source
+  },
+  "activities": [...],
+  "vocabulary": {...}
 }
 ```
 
-### 2. Vocabulary (`vocabulary.json`)
-```json
-{
-  "id": "v-stіl",
-  "uk": "стіл",
-  "uk_translit": "stil",              // Only in A1.1
-  "ipa": "/stil/",
-  "en": "table",
-  "gender": "m",
-  "pos": "noun",
-  "declension": "2",
-  "forms": { "gen_sg": "стола", ... },
-  "level": "A1"
-}
-```
-
-### 3. Activity (`activity-*.json`)
-Types: `flash-cards`, `match-up`, `gap-fill`, `group-sort`, `unjumble`, `quiz`, `true-false`
+### Module Types
+| Type | Tags | Description |
+|------|------|-------------|
+| `grammar` | grammar, cases, verbs, aspect | Grammar lessons |
+| `vocabulary` | vocabulary, vocab | Word-building |
+| `checkpoint` | review, checkpoint | Assessment |
+| `history` | history | Ukrainian history |
+| `biography` | biography | Famous Ukrainians |
+| `idioms` | idioms, phraseology | Expressions |
+| `literature` | literature, poetry | Text analysis |
 
 ## Key Rules
 
@@ -103,12 +96,15 @@ Types: `flash-cards`, `match-up`, `gap-fill`, `group-sort`, `unjumble`, `quiz`, 
 - **Modules 21-30 (A1.3)**: First occurrence only
 - **Modules 31+ (A2+)**: No transliteration
 
-### Immersion Strategy
-- **A1**: 95% English / 5% Ukrainian
-- **A2**: 70% English / 30% Ukrainian
-- **B1**: 40% English / 60% Ukrainian (instructions in Ukrainian)
-- **B2**: 15% English / 85% Ukrainian
-- **C1**: 5% English / 95% Ukrainian
+### Immersion Strategy (immersionLevel field)
+| Level | Ukrainian % | English % | immersionLevel |
+|-------|-------------|-----------|----------------|
+| A1 | 30% | 70% | 0.30 |
+| A2 | 40% | 60% | 0.40 |
+| A2+ | 50% | 50% | 0.50 |
+| B1 | 60% | 40% | 0.60 |
+| B2 | 85% | 15% | 0.85 |
+| C1 | 95% | 5% | 0.95 |
 
 ### Vocabulary Targets
 | Level | New Words | Cumulative |
@@ -128,41 +124,44 @@ Types: `flash-cards`, `match-up`, `gap-fill`, `group-sort`, `unjumble`, `quiz`, 
 ## Generation Commands
 
 ```bash
-# Generate ALL output (JSON + HTML) for all language pairs
+# Generate ALL output (JSON + HTML)
 npx ts-node scripts/generate.ts
 
-# Generate only for a specific language pair
+# Generate specific language pair
 npx ts-node scripts/generate.ts l2-uk-en
 
-# Generate only a specific module
-npx ts-node scripts/generate.ts l2-uk-en 1
+# Generate single module
+npx ts-node scripts/generate.ts l2-uk-en 168
 ```
 
-The generator script (`scripts/generate.ts`) reads from:
-- `curriculum/{lang-pair}/master-plan.json`
-- `curriculum/{lang-pair}/modules-*.json`
+**Reads from:** `curriculum/l2-uk-en/modules/module-*.md`
 
-And outputs to:
-- `output/json/{lang-pair}/module-XX/` (vocab.json, lesson.json, activities.json)
-- `output/html/{lang-pair}/module-XX/` (lesson.html with interactive activities)
-
-### Adding New Modules
-
-1. Add module data to `MODULE_DATA` in `scripts/generate.ts`
-2. Run the generator: `npx ts-node scripts/generate.ts`
+**Outputs to:**
+- `output/json/l2-uk-en/{level}/module-XX.json`
+- `output/html/l2-uk-en/{level}/module-XX.html`
 
 ## Workflow
 
-1. Edit module definitions in `curriculum/modules-*.json`
-2. Edit vocabulary in `vocabulary/vocab-*.json`
-3. Run generation scripts
-4. Output appears in `output/` directory
+1. Edit markdown files in `curriculum/l2-uk-en/modules/`
+2. Run generator: `npx ts-node scripts/generate.ts l2-uk-en`
+3. Output appears in `output/`
+4. Vibe imports JSON from `output/json/`
 
-## Quality Checks
+## Markdown Format
 
-When generating content, verify:
-- [ ] Vocabulary count matches module target
-- [ ] All vocabulary IDs exist in vocab-*.json
-- [ ] Activity content uses correct schema
-- [ ] Transliteration mode matches module phase
-- [ ] Ukrainian instructions only appear at correct levels (B1+)
+See `docs/MARKDOWN-FORMAT.md` for full spec. Key patterns:
+
+```markdown
+# Answer syntax (hidden, toggleable)
+> [!answer] **відповідь**
+
+# Activity blocks
+## quiz: Title
+## match-up: Title
+## group-sort: Title
+
+# Section headers
+# Вступ / # Introduction
+# Практика / # Practice
+# Словник / # Vocabulary
+```

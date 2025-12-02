@@ -3,7 +3,7 @@ module: 8
 title: "The Living Verb II"
 subtitle: "Class II Conjugation"
 level: A1
-phase: A1.2
+phase: A1.1
 duration: 45
 transliteration: full
 tags: [grammar, verbs, conjugation, present-tense]
@@ -157,6 +157,15 @@ Some very common verbs don't follow either pattern perfectly:
 | ви | п'єте |
 | вони | п'ють |
 
+> ⚡ **Pro Tip: The -увати Trick (Class I)**
+>
+> Verbs ending in **-увати** (like купувати, дякувати) are actually **Class I**, but they have a trick!
+> The **-ва-** drops out and becomes **-у-**:
+> - **купувати** (to buy) → я куп**ую**, ти куп**уєш**, вони куп**ують**
+> - **дякувати** (to thank) → я дяк**ую**, ти дяк**уєш**, вони дяк**ують**
+>
+> If you see -увати, conjugate it like -ую/-уєш!
+
 > 📜 **History Bite: Ancient Irregulars**
 >
 > The most common verbs in any language tend to be irregular because they're used so often they resist regularization. **Їсти** (eat) and **пити** (drink) have been irregular since Proto-Slavic times - humans have been conjugating these verbs "wrong" for over 2,000 years!
@@ -206,191 +215,228 @@ Describe what you/others do using Class II verbs:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Class I vs Class II Endings
+## fill-in: Complete the Sentences
 
-> Match each ending to its verb class.
+> Choose the correct verb form to complete each sentence.
+
+1. Я ___ каву. (I love coffee.)
+   > [!answer] люблю
+   > [!options] люблю | любиш | любить | люблять
+
+2. Він ___ українською. (He speaks Ukrainian.)
+   > [!answer] говорить
+   > [!options] говорю | говориш | говорить | говорять
+
+3. Вона ___ це. (She sees this.)
+   > [!answer] бачить
+   > [!options] бачу | бачиш | бачить | бачать
+
+4. Ми ___ домашнє завдання. (We do homework.)
+   > [!answer] робимо
+   > [!options] роблю | робиш | робимо | роблять
+
+5. Вони ___ музику. (They love music.)
+   > [!answer] люблять
+   > [!options] люблю | любиш | любить | люблять
+
+6. Ти ___ до школи? (Do you go to school?)
+   > [!answer] ходиш
+   > [!options] ходжу | ходиш | ходить | ходять
+
+7. Я ___ воду. (I drink water.)
+   > [!answer] п'ю
+   > [!options] п'ю | п'єш | п'є | п'ють
+
+8. Вона ___ яблуко. (She eats an apple.)
+   > [!answer] їсть
+   > [!options] їм | їси | їсть | їдять
+
+9. Він ___ тут. (He sits here.)
+   > [!answer] сидить
+   > [!options] сиджу | сидиш | сидить | сидять
+
+10. Я ___ у Києві. (I live in Kyiv.)
+   > [!answer] живу
+   > [!options] живу | живеш | живе | живуть
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. каву / люблю / Я
+   > [!answer] Я люблю каву.
+   > (I love coffee.)
+
+2. говорить / Він / українською
+   > [!answer] Він говорить українською.
+   > (He speaks Ukrainian.)
+
+3. бачить / Вона / це
+   > [!answer] Вона бачить це.
+   > (She sees this.)
+
+4. робимо / Ми / це
+   > [!answer] Ми робимо це.
+   > (We do this.)
+
+5. ходжу / до школи / Я
+   > [!answer] Я ходжу до школи.
+   > (I go to school.)
+
+6. п'є / чай / Він
+   > [!answer] Він п'є чай.
+   > (He drinks tea.)
+
+7. їсть / Вона / яблуко
+   > [!answer] Вона їсть яблуко.
+   > (She eats an apple.)
+
+8. живу / у Києві / Я
+   > [!answer] Я живу у Києві.
+   > (I live in Kyiv.)
+
+9. сидить / тут / Він
+   > [!answer] Він сидить тут.
+   > (He sits here.)
+
+10. люблять / музику / Вони
+   > [!answer] Вони люблять музику.
+   > (They love music.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian verbs to their English meanings.
 
 | Left | Right |
 |------|-------|
-| -єш | Class I |
-| -иш | Class II |
-| -є | Class I |
-| -ить | Class II |
-| -ємо | Class I |
-| -имо | Class II |
-| -ють | Class I |
-| -ять | Class II |
-
-## quiz: Conjugate Class II Verbs
-
-> Choose the correct verb form.
-
-1. How do you say "I speak" (говорити)?
-   - [x] Я говорю.
-   - [ ] Я говорю.
-   - [ ] Я говоришу.
-   - [ ] Я говоріть.
-   > First person singular of говорити is говорю.
-
-2. How do you say "She does/makes" (робити)?
-   - [x] Вона робить.
-   - [ ] Вона робе.
-   - [ ] Вона роблять.
-   - [ ] Вона робиш.
-   > Third person singular of робити is робить.
-
-3. How do you say "I do/make" (робити)?
-   - [x] Я роблю.
-   - [ ] Я робю.
-   - [ ] Я робить.
-   - [ ] Я робу.
-   > б→бл change in я form: роблю.
-
-4. How do you say "They love" (любити)?
-   - [x] Вони люблять.
-   - [ ] Вони любять.
-   - [ ] Вони любить.
-   - [ ] Вони любю.
-   > б→бл change in вони form: люблять.
-
-5. How do you say "I see" (бачити)?
-   - [x] Я бачу.
-   - [ ] Я бачю.
-   - [ ] Я бачиш.
-   - [ ] Я бачлю.
-   > Бачити has no consonant change: бачу.
-
-6. How do you say "He wants" (хотіти)?
-   - [x] Він хоче.
-   - [ ] Він хотить.
-   - [ ] Він хотіє.
-   - [ ] Він хочить.
-   > Хотіти is irregular: хоче.
-
-7. How do you say "I eat" (їсти)?
-   - [x] Я їм.
-   - [ ] Я їсю.
-   - [ ] Я їсти.
-   - [ ] Я їду.
-   > Їсти is irregular: їм.
-
-8. How do you say "They drink" (пити)?
-   - [x] Вони п'ють.
-   - [ ] Вони пиють.
-   - [ ] Вони п'ять.
-   - [ ] Вони пють.
-   > Пити is irregular: п'ють.
-
-## group-sort: Class I vs Class II Verbs
-
-> Sort these verbs by their conjugation class.
-
-### Class I (-ати/-яти)
-- читати
-- писати
-- знати
-- працювати
-- слухати
-
-### Class II (-ити/-іти)
-- говорити
-- робити
-- бачити
-- любити
-- ходити
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Class ___ (-ати)
-   > [!answer] I
-
-2. робити ___ do/make)
-   > [!answer] (to
-
-3. хотіти ___ want)
-   > [!answer] (to
-
-4. їсти ___ eat)
-   > [!answer] (to
-
-5. пити ___ drink)
-   > [!answer] (to
-
-
+| любити | to love |
+| бачити | to see |
+| говорити | to speak |
+| робити | to do/make |
+| ходити | to walk/go |
+| їсти | to eat |
+| пити | to drink |
+| жити | to live |
+| сидіти | to sit |
+| спати | to sleep |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "телефонувати" mean?
-   - [ ] to carry, wear
-   - [ ] to teach/learn
-   - [x] to call (phone)
-   - [ ] to sleep
-   > "телефонувати" means "to call (phone)"
+1. What is the я-form of "любити"?
+   - [x] люблю
+   - [ ] любиш
+   - [ ] любить
+   - [ ] люблять
+   > "Я люблю" - I love (б→бл change)
 
-2. What does "вчити" mean?
-   - [x] to teach/learn
-   - [ ] to call (phone)
-   - [ ] to sleep
-   - [ ] to carry, wear
-   > "вчити" means "to teach/learn"
+2. What is the він/вона-form of "говорити"?
+   - [ ] говорю
+   - [ ] говориш
+   - [x] говорить
+   - [ ] говорять
+   > "Він/Вона говорить" - He/She speaks
 
-3. What does "спати" mean?
-   - [x] to sleep
-   - [ ] to call (phone)
-   - [ ] to teach/learn
-   - [ ] to carry, wear
-   > "спати" means "to sleep"
+3. What is the я-form of "ходити"?
+   - [x] ходжу
+   - [ ] ходиш
+   - [ ] ходить
+   - [ ] ходять
+   > "Я ходжу" - I walk (д→дж change)
 
-4. What does "носити" mean?
-   - [ ] to call (phone)
-   - [ ] to sleep
-   - [x] to carry, wear
-   - [ ] to teach/learn
-   > "носити" means "to carry, wear"
+4. What is the ти-form of "їсти"?
+   - [ ] їм
+   - [x] їси
+   - [ ] їсть
+   - [ ] їдять
+   > "Ти їси" - You eat (irregular verb)
 
-5. What does "ходити" mean?
-   - [ ] to call (phone)
-   - [x] to walk, go
-   - [ ] to teach/learn
-   - [ ] to sleep
-   > "ходити" means "to walk, go"
+5. What is the вони-form of "робити"?
+   - [ ] роблю
+   - [ ] робиш
+   - [ ] робить
+   - [x] роблять
+   > "Вони роблять" - They do (б→бл change)
 
-6. What does "вчитися" mean?
-   - [ ] to call (phone)
-   - [ ] to teach/learn
-   - [ ] to sleep
-   - [x] to study, learn
-   > "вчитися" means "to study, learn"
+6. What does "бачити" mean?
+   - [x] to see
+   - [ ] to hear
+   - [ ] to speak
+   - [ ] to think
+   > "бачити" means "to see"
 
+7. What does "жити" mean?
+   - [ ] to eat
+   - [ ] to drink
+   - [x] to live
+   - [ ] to work
+   > "жити" means "to live"
 
+8. What is the я-form of "пити"?
+   - [x] п'ю
+   - [ ] п'єш
+   - [ ] п'є
+   - [ ] п'ють
+   > "Я п'ю" - I drink (irregular verb)
 
-## unjumble: Word Order
+9. What does "сидіти" mean?
+   - [ ] to stand
+   - [x] to sit
+   - [ ] to lie down
+   - [ ] to walk
+   > "сидіти" means "to sit"
 
-> Put the words in the correct order to form a sentence.
+10. What is the main difference between Class I and Class II verbs?
+   - [ ] Class I ends in -ити
+   - [x] Class II has -и- in endings (говориш), Class I has -є- (читаєш)
+   - [ ] Class I is irregular
+   - [ ] There is no difference
+   > Class II uses -и- pattern (говориш, говорить), Class I uses -є- pattern (читаєш, читає)
 
-1. I / Class / (-ати)
-   > [!answer] Class I (-ати)
-   > (Class II (-ити))
+## true-false: True or False?
 
-2. do/make) / робити / (to
-   > [!answer] робити (to do/make)
-   > (with б→бл change)
+> Determine if each statement is true or false.
 
-3. want) / (to / хотіти
-   > [!answer] хотіти (to want)
-   > (mixed pattern)
+- [x] "Я люблю" has a consonant change (б→бл)
+   > Correct!
 
-4. їсти / (to / eat)
-   > [!answer] їсти (to eat)
-   > (irregular)
+- [x] "Я ходжу" has a consonant change (д→дж)
+   > Correct!
 
+- [ ] "їсти" is a regular Class II verb
+   > Incorrect. "їсти" (to eat) is irregular
+
+- [x] "пити" is an irregular verb
+   > Correct! п'ю, п'єш, п'є...
+
+- [x] Class II verbs end in -ити or -іти
+   > Correct!
+
+- [ ] "Він говорить" uses Class I pattern
+   > Incorrect. "говорить" uses Class II pattern (-ить ending)
+
+- [x] "Вони роблять" has б→бл change
+   > Correct!
+
+- [x] "бачити" means "to see"
+   > Correct!
+
+- [ ] "сидіти" means "to stand"
+   > Incorrect. "сидіти" means "to sit", "стояти" means "to stand"
+
+- [x] "жити" means "to live"
+   > Correct!
 
 ---
 

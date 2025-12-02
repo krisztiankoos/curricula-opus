@@ -3,7 +3,7 @@ module: 20
 title: "Checkpoint: Navigating Life"
 subtitle: "A1.2 Review"
 level: A1
-phase: A1.3
+phase: A1.2
 duration: 50
 transliteration: full
 tags: [review, assessment, checkpoint]
@@ -180,160 +180,224 @@ You're a tourist in Kyiv. Practice:
 
 ---
 
+---
+
+---
+
 # Activities
 
-## quiz: Comprehensive A1.2 Review
+## fill-in: A1.2 Comprehensive Review
 
-> Test your knowledge of Modules 11-19.
+> Choose the correct form for each case.
 
-1. "I see the student (male)" - Я бачу ___.
-   - [x] студента
-   - [ ] студент
-   - [ ] студенту
-   - [ ] студентом
-   > M. animate accusative: студент → студента.
+1. Я бачу ___. (книга - accusative)
+   > [!answer] книгу
+   > [!options] книга | книгу | книги | книзі
 
-2. "The book is on the table" - Книга на ___.
-   - [x] столі
-   - [ ] стіл
-   - [ ] стола
-   - [ ] столом
-   > Locative: стіл → столі.
+2. Він бачить ___. (студент - animate accusative)
+   > [!answer] студента
+   > [!options] студент | студента | студенту | студенті
 
-3. "There is no time" - Немає ___.
-   - [x] часу
-   - [ ] час
-   - [ ] часом
-   - [ ] часі
-   > Genitive: час → часу.
+3. Книга на ___. (стіл - locative)
+   > [!answer] столі
+   > [!options] стіл | стола | столі | столом
 
-4. "My book" (книга = f)
-   - [x] моя книга
-   - [ ] мій книга
-   - [ ] моє книга
-   - [ ] мої книга
-   > F. possessive: моя.
+4. Я в ___. (школа - locative)
+   > [!answer] школі
+   > [!options] школа | школу | школі | школою
 
-5. "His phone" (телефон = m)
-   - [x] його телефон
-   - [ ] йому телефон
-   - [ ] його телефона
-   - [ ] йом телефон
-   > Його never changes.
+5. Немає ___. (час - genitive)
+   > [!answer] часу
+   > [!options] час | часу | часі | часом
 
-6. "I'm in the office" - Я в ___.
-   - [x] офісі
-   - [ ] офіс
-   - [ ] офіса
-   - [ ] офісом
-   > Locative: офіс → офісі.
+6. Кава без ___. (цукор - genitive)
+   > [!answer] цукру
+   > [!options] цукор | цукру | цукрі | цукром
 
-7. "Coffee without sugar" - кава без ___.
-   - [x] цукру
-   - [ ] цукор
-   - [ ] цукром
-   - [ ] цукрі
-   > Без + genitive: цукор → цукру.
+7. Це ___ книга. (my, feminine)
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
 
-8. How do you say "Turn left"?
-   - [x] Поверніть ліворуч.
-   - [ ] Поверніть праворуч.
-   - [ ] Йдіть ліворуч.
-   - [ ] Прямо ліворуч.
-   > Поверніть = turn (imperative).
+8. ___ брат студент. (her - doesn't change)
+   > [!answer] Її
+   > [!options] Її | Його | Їхній | Моя
 
-9. How do you ask "May I have the menu?"
-   - [x] Можна меню?
-   - [ ] Дайте меню!
-   - [ ] Меню є?
-   - [ ] Хочу меню.
-   > Можна = may I.
+9. Йдіть ___! (straight)
+   > [!answer] прямо
+   > [!options] праворуч | ліворуч | прямо | назад
 
-10. "How much does this cost?" - ___ це коштує?
-    - [x] Скільки
-    - [ ] Що
-    - [ ] Як
-    - [ ] Де
-    > Скільки = how much.
+10. ___ меню, будь ласка? (May I have)
+   > [!answer] Можна
+   > [!options] Де | Можна | Що | Чи
 
-11. What color is "блакитний"?
-    - [x] light blue
-    - [ ] dark blue
-    - [ ] green
-    - [ ] purple
-    > Блакитний = sky blue.
+## unjumble: Build the Sentence
 
-12. "Do you have a smaller size?" - Чи є ___ розмір?
-    - [x] менший
-    - [ ] маленький
-    - [ ] малий
-    - [ ] малого
-    > Менший = smaller (comparative).
+> Arrange the words in the correct order.
 
-## match-up: Cases & Uses
+1. книгу / бачу / Я
+   > [!answer] Я бачу книгу.
+   > (I see the book. - Accusative)
 
-> Match each phrase to its case.
+2. студента / бачить / Вона
+   > [!answer] Вона бачить студента.
+   > (She sees the student. - Animate Accusative)
+
+3. офісі / Він / в
+   > [!answer] Він в офісі.
+   > (He's in the office. - Locative)
+
+4. часу / Немає
+   > [!answer] Немає часу.
+   > (There's no time. - Genitive)
+
+5. книга / моя / Це
+   > [!answer] Це моя книга.
+   > (This is my book. - Possessive)
+
+6. прямо / Йдіть
+   > [!answer] Йдіть прямо.
+   > (Go straight. - Direction)
+
+7. каву / люблю / Я
+   > [!answer] Я люблю каву.
+   > (I love coffee. - Food/Accusative)
+
+8. ласка / будь / меню / Можна
+   > [!answer] Можна меню, будь ласка?
+   > (May I have the menu? - Café)
+
+9. коштує / Скільки / це
+   > [!answer] Скільки це коштує?
+   > (How much does this cost? - Shopping)
+
+10. цукру / без / Кава
+   > [!answer] Кава без цукру.
+   > (Coffee without sugar. - Genitive)
+
+## match-up: Match the Cases
+
+> Match the sentence to its grammatical case.
 
 | Left | Right |
 |------|-------|
-| Я бачу книгу | Accusative |
-| Книга на столі | Locative |
-| Немає часу | Genitive |
-| Я люблю каву | Accusative |
-| У школі | Locative |
-| Для друга | Genitive |
+| Я бачу книгу. | Accusative |
+| Він в офісі. | Locative |
+| Немає часу. | Genitive |
+| Це моя книга. | Possessive |
+| Йдіть прямо! | Imperative |
+| Можна меню? | Café phrase |
+| Скільки коштує? | Shopping phrase |
+| без цукру | Genitive after без |
+| на столі | Locative after на |
+| для друга | Genitive after для |
 
-## group-sort: Vocabulary Categories
+## quiz: A1.2 Grammar Review
 
-> Sort these words by category.
+> Choose the correct answer.
 
-### Місто (City)
-- метро
-- вулиця
-- станція
-- площа
-- зупинка
+1. What case does "бачити" (to see) require?
+   - [x] Accusative
+   - [ ] Locative
+   - [ ] Genitive
+   - [ ] Nominative
+   > Direct objects take accusative
 
-### Їжа (Food)
-- хліб
-- м'ясо
-- овочі
-- борщ
-- кава
+2. What ending does feminine accusative take?
+   - [ ] -а → -а
+   - [x] -а → -у
+   - [ ] -а → -и
+   - [ ] -а → -і
+   > Feminine -а becomes -у in accusative
 
-### Магазин (Shopping)
-- ціна
-- розмір
-- колір
-- знижка
-- каса
+3. How do animate masculine nouns change in accusative?
+   - [ ] No change
+   - [x] Add -а/-я (like genitive)
+   - [ ] Add -у/-ю
+   - [ ] Add -і
+   > Animate masculine = genitive form
 
+4. Which prepositions take locative case?
+   - [x] в/у, на
+   - [ ] без, для
+   - [ ] до, від
+   - [ ] з, із
+   > в/у and на + locative for location
 
-## fill-in: Fill in the Blank
+5. Which prepositions take genitive case?
+   - [ ] в/у, на
+   - [x] без, для, до, від
+   - [ ] з + instrumental
+   - [ ] None of these
+   > без, для, до, від, після, біля + genitive
 
-> Fill in the blanks with the correct word.
+6. Which possessives NEVER change for gender?
+   - [ ] мій, твій
+   - [ ] наш, ваш
+   - [x] його, її
+   - [ ] їхній, свій
+   > його and її are frozen forms
 
-1. Я ___ книгу
-   > [!answer] бачу
+7. How do you ask "Where is the metro?"
+   - [x] Де метро?
+   - [ ] Що метро?
+   - [ ] Як метро?
+   - [ ] Куди метро?
+   > "Де" = where
 
+8. How do you say "There is no time" (genitive)?
+   - [ ] Немає час.
+   - [x] Немає часу.
+   - [ ] Немає часі.
+   - [ ] Є часу.
+   > Немає + genitive
 
+9. What does "Можна меню?" mean?
+   - [x] May I have the menu?
+   - [ ] Where is the menu?
+   - [ ] What's on the menu?
+   - [ ] Is there a menu?
+   > "Можна" for polite requests
 
-## unjumble: Word Order
+10. What case does "без" (without) require?
+   - [ ] Accusative
+   - [ ] Locative
+   - [x] Genitive
+   - [ ] Nominative
+   > без + genitive
 
-> Put the words in the correct order to form a sentence.
+## true-false: True or False?
 
-1. книгу / Я / бачу
-   > [!answer] Я бачу книгу
-   > (Accusative)
+> Determine if each statement is true or false.
 
-2. Книга / на / столі
-   > [!answer] Книга на столі
-   > (Locative)
+- [x] Feminine accusative changes -а to -у
+   > Correct! книга → книгу
 
-3. Я / каву / люблю
-   > [!answer] Я люблю каву
-   > (Accusative)
+- [x] Animate masculine accusative = genitive form
+   > Correct! студент → студента
 
+- [ ] "Він в офіс" is correct for "He's in the office"
+   > Incorrect. Need locative: "Він в офісі"
+
+- [x] "Немає" always requires genitive case
+   > Correct!
+
+- [x] "його" and "її" never change for noun gender
+   > Correct! They're frozen genitive forms
+
+- [ ] "книга студент" is correct for "student's book"
+   > Incorrect. Need genitive: "книга студента"
+
+- [x] "Йдіть прямо" means "Go straight"
+   > Correct!
+
+- [x] "без цукру" uses genitive case
+   > Correct! без + genitive
+
+- [ ] Locative case is used without prepositions
+   > Incorrect. Locative always uses prepositions (в, на, у)
+
+- [x] "Можна" is used for polite requests
+   > Correct!
 
 ---
 

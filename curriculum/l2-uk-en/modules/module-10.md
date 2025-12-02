@@ -3,7 +3,7 @@ module: 10
 title: "Checkpoint: First Contact"
 subtitle: "A1.1 Review"
 level: A1
-phase: A1.2
+phase: A1.1
 duration: 45
 transliteration: full
 tags: [review, assessment, checkpoint]
@@ -151,127 +151,228 @@ B: Так / Ні, я ___.
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## quiz: Comprehensive A1.1 Review
+## fill-in: Complete the Sentences
 
-> Test your knowledge of Modules 1-9.
+> Review: Choose the correct word to complete each sentence.
 
-1. What sound does the letter В make?
-   - [x] V (as in "van")
-   - [ ] B (as in "boy")
-   - [ ] W (as in "water")
-   - [ ] F (as in "fan")
-   > В is a "False Friend" - looks like B but sounds like V.
+1. Я ___ книгу. (I read a book.)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
 
-2. What gender is "вікно" (window)?
-   - [x] Neuter
-   - [ ] Masculine
-   - [ ] Feminine
-   - [ ] Plural
-   > Вікно ends in -о, which indicates neuter gender.
+2. Це ___ стіл. (This is my table.) [masculine]
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
 
-3. How do you conjugate "читати" for "ми"?
-   - [x] читаємо
-   - [ ] читаємо
-   - [ ] читаєте
-   - [ ] читають
-   > Ми + Class I verb = -ємо ending.
+3. ___ це? (What is this?)
+   > [!answer] Що
+   > [!options] Що | Хто | Де | Як
 
-4. How do you conjugate "говорити" for "вони"?
-   - [x] говорять
-   - [ ] говорють
-   - [ ] говорять
-   - [ ] говорить
-   > Вони + Class II verb = -ять ending.
+4. Вона ___ українською. (She speaks Ukrainian.)
+   > [!answer] говорить
+   > [!options] говорю | говориш | говорить | говорять
 
-5. How do you say "I don't understand anything"?
-   - [x] Я нічого не розумію.
-   - [ ] Я не розумію нічого.
-   - [ ] Я не розумію.
-   - [ ] Я нічого розумію.
-   > Double negative required: нічого + не розумію.
+5. Я ___ не знаю. (I don't know anything.)
+   > [!answer] нічого
+   > [!options] ніхто | нічого | ніде | ніколи
 
-6. What is 43 in Ukrainian?
-   - [x] сорок три
-   - [ ] чотиридесят три
-   - [ ] чотири три
-   - [ ] сороки три
-   > 40 = сорок (irregular), 3 = три.
+6. Це коштує ___ гривень. (This costs 5 hryvnias.)
+   > [!answer] п'ять
+   > [!options] один | три | п'ять | десять
 
-7. Which form is correct: "5 books"?
-   - [x] п'ять книг
-   - [ ] п'ять книги
-   - [ ] п'ять книга
-   - [ ] п'яти книг
-   > 5+ requires genitive plural: книг.
+7. ___ ти? (Where are you from?)
+   > [!answer] Звідки
+   > [!options] Де | Куди | Звідки | Коли
 
-8. How do you ask "Where are you going?"
-   - [x] Куди ти йдеш?
-   - [ ] Де ти йдеш?
-   - [ ] Як ти йдеш?
-   - [ ] Що ти йдеш?
-   > Куди = where to (direction).
+8. Я ___ каву. (I love coffee.)
+   > [!answer] люблю
+   > [!options] люблю | любиш | любить | люблять
 
-9. What is the unique Ukrainian letter that exists in no other language?
-   - [x] Ї
-   - [ ] Й
-   - [ ] Щ
-   - [ ] Ь
-   > Ї (yi) exists only in Ukrainian.
+9. ___ книга. (This book.) [feminine]
+   > [!answer] Ця
+   > [!options] Цей | Ця | Це | Ці
 
-10. How do you say "This is my book" (книга = feminine)?
-    - [x] Це моя книга.
-    - [ ] Це мій книга.
-    - [ ] Це моє книга.
-    - [ ] Це мої книга.
-    > Книга is feminine, so мій → моя.
+10. Він ___ студент. (He is a student.)
+   > [!answer] —
+   > [!options] є | — | був | буде
 
-## match-up: Core Vocabulary
+## unjumble: Build the Sentence
 
-> Match Ukrainian to English.
+> Review: Arrange the words in the correct order.
+
+1. читаю / Я / книгу
+   > [!answer] Я читаю книгу.
+   > (I read a book.)
+
+2. мій / Це / стіл
+   > [!answer] Це мій стіл.
+   > (This is my table.)
+
+3. це / Що
+   > [!answer] Що це?
+   > (What is this?)
+
+4. говорить / українською / Вона
+   > [!answer] Вона говорить українською.
+   > (She speaks Ukrainian.)
+
+5. не / знаю / Я
+   > [!answer] Я не знаю.
+   > (I don't know.)
+
+6. коштує / Скільки / це
+   > [!answer] Скільки це коштує?
+   > (How much does this cost?)
+
+7. ти / Звідки
+   > [!answer] Звідки ти?
+   > (Where are you from?)
+
+8. каву / люблю / Я
+   > [!answer] Я люблю каву.
+   > (I love coffee.)
+
+9. книга / моя / Ця
+   > [!answer] Ця книга моя.
+   > (This book is mine.)
+
+10. студент / Він
+   > [!answer] Він студент.
+   > (He is a student.)
+
+## match-up: Match the Pairs
+
+> Review: Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| книга | book |
-| вікно | window |
-| говорити | to speak |
 | читати | to read |
+| говорити | to speak |
 | знати | to know |
-| скільки | how much |
-| чому | why |
-| завжди | always |
+| любити | to love |
+| де | where |
+| що | what |
+| гривня | hryvnia |
+| мій | my (masculine) |
+| ніхто | nobody |
+| п'ять | five |
 
-## group-sort: Grammar Categories
+## quiz: Meaning Check
 
-> Sort these items into their correct categories.
+> Review: Choose the correct answer.
 
-### Class I Verbs
-- читати
-- писати
-- знати
-- працювати
+1. What is the correct verb form: "Я ___" (читати)?
+   - [x] читаю
+   - [ ] читаєш
+   - [ ] читає
+   - [ ] читають
+   > "Я читаю" - Class I verb conjugation
 
-### Class II Verbs
-- говорити
-- робити
-- бачити
-- любити
+2. What is the correct possessive: "Це ___ книга" (my, feminine)?
+   - [ ] мій
+   - [x] моя
+   - [ ] моє
+   - [ ] мої
+   > "моя" agrees with feminine nouns
 
-### Masculine Nouns
-- стіл
-- студент
-- день
+3. What does "Де ти?" mean?
+   - [x] Where are you?
+   - [ ] Who are you?
+   - [ ] What are you?
+   - [ ] How are you?
+   > "Де" means "where"
 
-### Feminine Nouns
-- книга
-- ніч
-- земля
+4. How do you form a double negative in Ukrainian?
+   - [x] Я нічого не знаю
+   - [ ] Я не знаю нічого
+   - [ ] Я знаю не нічого
+   - [ ] Не я знаю нічого
+   > Ukrainian requires negative word + не + verb
 
-### Neuter Nouns
-- вікно
-- море
-- молоко
+5. What is the correct verb form: "Він ___" (говорити)?
+   - [ ] говорю
+   - [ ] говориш
+   - [x] говорить
+   - [ ] говорять
+   > "Він говорить" - Class II verb conjugation
+
+6. What does "скільки коштує" mean?
+   - [x] how much does it cost
+   - [ ] where is it
+   - [ ] what is it
+   - [ ] who has it
+   > "скільки коштує" is used for asking prices
+
+7. What is the gender of "стіл" (table)?
+   - [x] masculine
+   - [ ] feminine
+   - [ ] neuter
+   - [ ] plural
+   > "стіл" ends in a consonant = masculine
+
+8. What is "п'ять + десять"?
+   - [ ] десять
+   - [x] п'ятнадцять
+   - [ ] двадцять
+   - [ ] п'ятдесят
+   > 5 + 10 = 15 (п'ятнадцять)
+
+9. Which demonstrative is correct: "___ вікно" (this window)?
+   - [ ] цей
+   - [ ] ця
+   - [x] це
+   - [ ] ці
+   > "це" is used with neuter nouns
+
+10. What does "Я українець" mean?
+   - [x] I am Ukrainian (male)
+   - [ ] I speak Ukrainian
+   - [ ] I love Ukraine
+   - [ ] I live in Ukraine
+   > "українець" = Ukrainian man (zero copula - no "am")
+
+## true-false: True or False?
+
+> Review: Determine if each statement is true or false.
+
+- [x] Ukrainian doesn't use "is/am/are" in present tense (zero copula)
+   > Correct! "Він студент" not "Він є студент"
+
+- [x] Class I verbs have -є- in conjugation (читаєш, читає)
+   > Correct!
+
+- [x] Class II verbs have -и- in conjugation (говориш, говорить)
+   > Correct!
+
+- [x] Double negatives are required in Ukrainian
+   > Correct! "Я нічого не знаю"
+
+- [ ] "де" and "куди" mean the same thing
+   > Incorrect. "де" = where (location), "куди" = where to (direction)
+
+- [x] Numbers 5+ take genitive plural (п'ять гривень)
+   > Correct!
+
+- [ ] "мій" is used with all genders
+   > Incorrect. "мій" is masculine, "моя" is feminine, "моє" is neuter
+
+- [x] "цей" is used with masculine nouns
+   > Correct!
+
+- [x] All infinitives end in -ти
+   > Correct!
+
+- [ ] "не" comes after the verb
+   > Incorrect. "не" comes before the verb: "Я не знаю"
 
 ---
 

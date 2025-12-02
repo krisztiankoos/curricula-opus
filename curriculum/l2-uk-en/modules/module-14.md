@@ -201,188 +201,228 @@ Describe using possessives:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Possessive Forms
-
-> Match the personal pronoun to its possessive.
-
-| Left | Right |
-|------|-------|
-| я | мій/моя/моє |
-| ти | твій/твоя/твоє |
-| він | його |
-| вона | її |
-| ми | наш/наша/наше |
-| ви | ваш/ваша/ваше |
-| вони | їхній/їхня/їхнє |
-
-## quiz: Possessive Agreement
+## fill-in: Possessive Pronouns
 
 > Choose the correct possessive form.
 
-1. "My brother" (брат = masculine)
-   - [x] мій брат
-   - [ ] моя брат
-   - [ ] моє брат
-   - [ ] мої брат
-   > Брат is masculine, so мій.
+1. Це ___ брат. (my - masculine noun)
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
 
-2. "Your book" (книга = feminine, informal)
-   - [x] твоя книга
-   - [ ] твій книга
-   - [ ] твоє книга
-   - [ ] твої книга
-   > Книга is feminine, so твоя.
+2. Це ___ книга. (my - feminine noun)
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
 
-3. "Her name" (ім'я = neuter)
-   - [x] її ім'я
-   - [ ] її ім'я
-   - [ ] її ім'ї
-   - [ ] їй ім'я
-   > Її never changes regardless of gender.
+3. Це ___ вікно. (my - neuter noun)
+   > [!answer] моє
+   > [!options] мій | моя | моє | мої
 
-4. "Our friends" (друзі = plural)
-   - [x] наші друзі
-   - [ ] наш друзі
-   - [ ] наша друзі
-   - [ ] наше друзі
-   > Друзі is plural, so наші.
+4. Це ___ друзі. (my - plural)
+   > [!answer] мої
+   > [!options] мій | моя | моє | мої
 
-5. "His phone" (телефон = masculine)
-   - [x] його телефон
-   - [ ] йому телефон
-   - [ ] він телефон
-   - [ ] йо телефон
-   > Його never changes.
+5. Де ___ телефон? (your informal - masculine)
+   > [!answer] твій
+   > [!options] твій | твоя | твоє | твої
 
-6. "Their house" (дім = masculine)
-   - [x] їхній дім
-   - [ ] їхня дім
-   - [ ] їхнє дім
-   - [ ] їхні дім
-   > Дім is masculine, so їхній.
+6. ___ машина нова. (our - feminine)
+   > [!answer] Наша
+   > [!options] Наш | Наша | Наше | Наші
 
-7. "Your (formal) documents" (документи = plural)
-   - [x] ваші документи
-   - [ ] ваш документи
-   - [ ] ваша документи
-   - [ ] ваше документи
-   > Документи is plural, so ваші.
+7. Це ___ дім. (their - masculine)
+   > [!answer] їхній
+   > [!options] їхній | їхня | їхнє | їхні
 
-8. "I read my own book" (reflexive)
-   - [x] Я читаю свою книгу.
-   - [ ] Я читаю мою книгу.
-   - [ ] Я читаю її книгу.
-   - [ ] Я читаю моя книгу.
-   > Свою (reflexive) refers back to the subject я.
+8. ___ брат студент. (her - doesn't change!)
+   > [!answer] Її
+   > [!options] Її | Його | Їхній | Свій
 
-## group-sort: Changing vs Non-Changing
+9. ___ книга цікава. (his - doesn't change!)
+   > [!answer] Його
+   > [!options] Її | Його | Їхній | Свій
 
-> Sort possessives by whether they change for gender.
+10. Він читає ___ книгу. (his own - reflexive, feminine)
+   > [!answer] свою
+   > [!options] свій | своя | свою | своє
 
-### Change for Gender/Number
-- мій/моя/моє/мої
-- твій/твоя/твоє/твої
-- наш/наша/наше/наші
-- ваш/ваша/ваше/ваші
-- їхній/їхня/їхнє/їхні
-- свій/своя/своє/свої
+## unjumble: Build the Sentence
 
-### Never Change
-- його
-- її
+> Arrange the words in the correct order.
 
+1. брат / мій / Це
+   > [!answer] Це мій брат.
+   > (This is my brother.)
 
-## fill-in: Fill in the Blank
+2. книга / моя / Це
+   > [!answer] Це моя книга.
+   > (This is my book.)
 
-> Fill in the blanks with the correct word.
+3. телефон / твій / Де
+   > [!answer] Де твій телефон?
+   > (Where is your phone?)
 
-1. Його (his/its) ___ NEVER changes!
-   > [!answer] -
+4. машина / Наша / нова
+   > [!answer] Наша машина нова.
+   > (Our car is new.)
 
-2. Її (her) ___ NEVER changes!
-   > [!answer] -
+5. дім / їхній / великий
+   > [!answer] Їхній дім великий.
+   > (Their house is big.)
 
-3. Чий ___ телефон?
-   > [!answer] це
+6. родина / Це / моя
+   > [!answer] Це моя родина.
+   > (This is my family.)
 
-4. Це ___ сумка?
-   > [!answer] твоя
+7. паспорт / ваш / Де
+   > [!answer] Де ваш паспорт?
+   > (Where is your passport?)
 
-5. Ні, це ___ сумка.
-   > [!answer] її
+8. книгу / свою / читає / Він
+   > [!answer] Він читає свою книгу.
+   > (He reads his own book.)
 
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "родина" mean?
-   - [x] family
-   - [ ] one's own (m)
-   - [ ] thing
-   - [ ] whose (m)
-   > "родина" means "family"
-
-2. What does "річ" mean?
-   - [ ] one's own (m)
-   - [ ] family
-   - [ ] whose (m)
-   - [x] thing
-   > "річ" means "thing"
-
-3. What does "чий" mean?
-   - [ ] family
-   - [x] whose (m)
-   - [ ] thing
-   - [ ] one's own (m)
-   > "чий" means "whose (m)"
-
-4. What does "свій" mean?
-   - [x] one's own (m)
-   - [ ] whose (m)
-   - [ ] family
-   - [ ] thing
-   > "свій" means "one's own (m)"
-
-5. What does "машина" mean?
-   - [ ] thing
-   - [ ] whose (m)
-   - [ ] family
-   - [x] car
-   > "машина" means "car"
-
-6. What does "їхній" mean?
-   - [x] their (m)
-   - [ ] family
-   - [ ] thing
-   - [ ] whose (m)
-   > "їхній" means "their (m)"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. (his/its) / NEVER / Його / changes / -
-   > [!answer] Його (his/its) - NEVER changes!
-   > (його брат (his brother))
-
-2. changes / NEVER / Її / (her) / -
-   > [!answer] Її (her) - NEVER changes!
-   > (її брат (her brother))
-
-3. це / телефон / Чий
+9. це / Чий / телефон
    > [!answer] Чий це телефон?
    > (Whose phone is this?)
 
-4. Це / твоя / сумка
-   > [!answer] Це твоя сумка?
-   > (Is this your bag?)
+10. друзі / наші / Це
+   > [!answer] Це наші друзі.
+   > (These are our friends.)
 
+## match-up: Match the Pairs
+
+> Match possessive pronouns to their meanings.
+
+| Left | Right |
+|------|-------|
+| мій | my (masculine) |
+| моя | my (feminine) |
+| моє | my (neuter) |
+| твій | your (informal, m) |
+| наш | our (masculine) |
+| ваш | your (formal, m) |
+| його | his/its |
+| її | her |
+| їхній | their (masculine) |
+| свій | one's own (m) |
+
+## quiz: Possessive Rules
+
+> Choose the correct answer.
+
+1. Which possessive agrees with a masculine noun?
+   - [x] мій
+   - [ ] моя
+   - [ ] моє
+   - [ ] мої
+   > мій for masculine nouns
+
+2. Which possessives NEVER change for gender?
+   - [ ] мій, твій
+   - [ ] наш, ваш
+   - [x] його, її
+   - [ ] їхній, свій
+   > його and її never change
+
+3. What is the feminine form of "наш"?
+   - [ ] наш
+   - [x] наша
+   - [ ] наше
+   - [ ] наші
+   > наша for feminine nouns
+
+4. What does "свій" mean?
+   - [ ] his (someone else's)
+   - [x] one's own (reflexive)
+   - [ ] their
+   - [ ] your
+   > свій refers back to the subject
+
+5. "Він бере свій телефон" vs "Він бере його телефон" - what's the difference?
+   - [x] свій = his own, його = someone else's
+   - [ ] No difference
+   - [ ] свій = formal, його = informal
+   - [ ] Both mean his own
+   > свій is reflexive (refers to subject)
+
+6. Which is correct: "Це ___ книга" (her)?
+   - [ ] її's
+   - [x] її
+   - [ ] їхня
+   - [ ] своя
+   > її never changes
+
+7. What is "чий" used for?
+   - [x] Asking "whose?" (masculine)
+   - [ ] Saying "my"
+   - [ ] Saying "their"
+   - [ ] Saying "one's own"
+   > чий = whose (question word)
+
+8. What is the neuter form of "твій"?
+   - [ ] твій
+   - [ ] твоя
+   - [x] твоє
+   - [ ] твої
+   > твоє for neuter nouns
+
+9. "Де ваші документи?" - what is "ваші"?
+   - [ ] your (singular noun)
+   - [x] your (plural noun, formal)
+   - [ ] our (plural)
+   - [ ] their (plural)
+   > ваші = formal "your" for plural nouns
+
+10. Which sentence is correct?
+   - [x] Це моя сестра.
+   - [ ] Це мій сестра.
+   - [ ] Це моє сестра.
+   - [ ] Це мої сестра.
+   > сестра is feminine → моя
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] Possessives agree with the noun's gender, not the owner's
+   > Correct! "мій брат" even for a female speaker
+
+- [x] "Його" and "її" never change for gender
+   > Correct! They're frozen genitive forms
+
+- [ ] "Це мій книга" is correct
+   > Incorrect. книга is feminine → "Це моя книга"
+
+- [x] "Свій" means "one's own" and refers to the subject
+   > Correct!
+
+- [ ] "Наш" can be used with feminine nouns
+   > Incorrect. Use "наша" for feminine nouns
+
+- [x] "Чий це телефон?" means "Whose phone is this?"
+   > Correct!
+
+- [x] "Ваш" is the formal/plural form of "твій"
+   > Correct!
+
+- [ ] "Її брат" means "their brother"
+   > Incorrect. "Її брат" means "her brother"
+
+- [x] "Їхній дім" means "their house"
+   > Correct!
+
+- [x] Possessive patterns: -ій (m), -я (f), -є (n), -і (pl)
+   > Correct!
 
 ---
 

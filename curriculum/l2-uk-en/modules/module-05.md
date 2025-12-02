@@ -250,199 +250,256 @@ Change "this" to "that" and "my" to "your":
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Demonstratives by Gender
+## fill-in: Complete the Sentences
 
-> Match each demonstrative form to its gender/number category.
+> Choose the correct demonstrative or possessive to complete each sentence.
+
+1. ___ стіл. (This table.) [masculine]
+   > [!answer] Цей
+   > [!options] Цей | Ця | Це | Ці
+
+2. ___ книга. (This book.) [feminine]
+   > [!answer] Ця
+   > [!options] Цей | Ця | Це | Ці
+
+3. ___ вікно. (This window.) [neuter]
+   > [!answer] Це
+   > [!options] Цей | Ця | Це | Ці
+
+4. Це ___ ключ. (This is my key.) [masculine]
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
+
+5. Це ___ сумка. (This is my bag.) [feminine]
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
+
+6. Це ___ ліжко. (This is my bed.) [neuter]
+   > [!answer] моє
+   > [!options] мій | моя | моє | мої
+
+7. ___ телефон. (That phone.) [masculine]
+   > [!answer] Той
+   > [!options] Той | Та | Те | Ті
+
+8. ___ лампа. (That lamp.) [feminine]
+   > [!answer] Та
+   > [!options] Той | Та | Те | Ті
+
+9. Це ___ ручка? (Is this your pen?) [feminine]
+   > [!answer] твоя
+   > [!options] твій | твоя | твоє | твої
+
+10. Це ___ гаманець? (Is this your wallet?) [masculine]
+   > [!answer] твій
+   > [!options] твій | твоя | твоє | твої
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. стіл / Цей / мій
+   > [!answer] Цей стіл мій.
+   > (This table is mine.)
+
+2. книга / Ця / моя
+   > [!answer] Ця книга моя.
+   > (This book is mine.)
+
+3. вікно / моє / Це
+   > [!answer] Це вікно моє.
+   > (This window is mine.)
+
+4. ключ / Де / мій
+   > [!answer] Де мій ключ?
+   > (Where is my key?)
+
+5. твоя / Це / сумка
+   > [!answer] Це твоя сумка.
+   > (This is your bag.)
+
+6. телефон / Той / твій
+   > [!answer] Той телефон твій.
+   > (That phone is yours.)
+
+7. ліжко / Це / моє
+   > [!answer] Це моє ліжко.
+   > (This is my bed.)
+
+8. лампа / Ця / моя
+   > [!answer] Ця лампа моя.
+   > (This lamp is mine.)
+
+9. стілець / Цей / твій
+   > [!answer] Цей стілець твій.
+   > (This chair is yours.)
+
+10. ручка / Де / твоя
+   > [!answer] Де твоя ручка?
+   > (Where is your pen?)
+
+## group-sort: Sort by Gender
+
+> Sort the demonstratives and possessives into gender categories.
+
+### Masculine (Чоловічий рід)
+- цей
+- той
+- мій
+- твій
+
+### Feminine (Жіночий рід)
+- ця
+- та
+- моя
+- твоя
+
+### Neuter (Середній рід)
+- це
+- те
+- моє
+- твоє
+
+### Plural (Множина)
+- ці
+- ті
+- мої
+- твої
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| цей | Masculine singular |
-| ця | Feminine singular |
-| це | Neuter singular |
-| ці | Plural (all genders) |
-| той | Masculine singular |
-| та | Feminine singular |
-| те | Neuter singular |
-| ті | Plural (all genders) |
-
-## quiz: Gender Agreement
-
-> Choose the correct form that matches the noun's gender.
-
-1. How do you say "this table" (стіл = masculine)?
-   - [x] цей стіл
-   - [ ] ця стіл
-   - [ ] це стіл
-   - [ ] ці стіл
-   > Стіл is masculine (ends in consonant) → цей стіл
-
-2. How do you say "my book" (книга = feminine)?
-   - [x] моя книга
-   - [ ] мій книга
-   - [ ] моє книга
-   - [ ] мої книга
-   > Книга is feminine (-а ending) → моя книга
-
-3. How do you say "this window" (вікно = neuter)?
-   - [x] це вікно
-   - [ ] цей вікно
-   - [ ] ця вікно
-   - [ ] ці вікно
-   > Вікно is neuter (-о ending) → це вікно
-
-4. How do you say "your (informal) phone" (телефон = masculine)?
-   - [x] твій телефон
-   - [ ] твоя телефон
-   - [ ] твоє телефон
-   - [ ] твої телефон
-   > Телефон is masculine (consonant ending) → твій телефон
-
-5. How do you say "that woman" (жінка = feminine)?
-   - [x] та жінка
-   - [ ] той жінка
-   - [ ] те жінка
-   - [ ] ті жінка
-   > Жінка is feminine (-а ending) → та жінка
-
-6. How do you say "my friends" (друзі = plural)?
-   - [x] мої друзі
-   - [ ] мій друзі
-   - [ ] моя друзі
-   - [ ] моє друзі
-   > Друзі is plural → мої друзі
-
-7. How do you say "this apple" (яблуко = neuter)?
-   - [x] це яблуко
-   - [ ] цей яблуко
-   - [ ] ця яблуко
-   - [ ] ці яблуко
-   > Яблуко is neuter (-о ending) → це яблуко
-
-8. How do you say "those books" (книги = plural)?
-   - [x] ті книги
-   - [ ] той книги
-   - [ ] та книги
-   - [ ] те книги
-   > Книги is plural → ті книги
-
-## group-sort: Sort by Gender Form
-
-> Sort these phrases by which gender/number form they use.
-
-### Masculine (цей/мій/твій)
-- цей стіл
-- мій брат
-- твій телефон
-- цей ключ
-- той студент
-
-### Feminine (ця/моя/твоя)
-- ця книга
-- моя сестра
-- твоя сумка
-- ця лампа
-- та жінка
-
-### Neuter (це/моє/твоє)
-- це вікно
-- моє яблуко
-- твоє ліжко
-- це молоко
-- те море
-
-### Plural (ці/мої/твої)
-- ці люди
-- мої друзі
-- твої книги
-- ці ключі
-- ті студенти
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Це ___ сумка?
-   > [!answer] твоя
-
-2. Це ___ паспорт.
-   > [!answer] мій
-
-3. Чий ___ телефон?
-   > [!answer] це
-
-
+| цей | this (masculine) |
+| ця | this (feminine) |
+| це | this (neuter) |
+| той | that (masculine) |
+| та | that (feminine) |
+| мій | my (masculine) |
+| моя | my (feminine) |
+| твій | your (masculine) |
+| його | his, its |
+| її | her, hers |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "гаманець" mean?
-   - [ ] my (neuter)
+1. What does "цей" mean?
+   - [x] this (masculine)
+   - [ ] this (feminine)
+   - [ ] that (masculine)
+   - [ ] my (masculine)
+   > "цей" means "this (masculine)"
+
+2. What does "ця" mean?
+   - [ ] this (masculine)
+   - [x] this (feminine)
+   - [ ] that (feminine)
+   - [ ] my (feminine)
+   > "ця" means "this (feminine)"
+
+3. What does "той" mean?
+   - [ ] this (masculine)
+   - [ ] this (neuter)
+   - [x] that (masculine)
+   - [ ] my (masculine)
+   > "той" means "that (masculine)"
+
+4. What does "та" mean?
+   - [ ] this (feminine)
+   - [x] that (feminine)
+   - [ ] my (feminine)
+   - [ ] your (feminine)
+   > "та" means "that (feminine)"
+
+5. What does "моє" mean?
+   - [ ] my (masculine)
+   - [ ] my (feminine)
+   - [x] my (neuter)
    - [ ] my (plural)
+   > "моє" means "my (neuter)"
+
+6. What does "твої" mean?
+   - [ ] your (masculine)
+   - [ ] your (feminine)
+   - [ ] your (neuter)
+   - [x] your (plural)
+   > "твої" means "your (plural)"
+
+7. What does "його" mean?
+   - [ ] my (masculine)
+   - [x] his, its
+   - [ ] her, hers
+   - [ ] their
+   > "його" means "his, its"
+
+8. What does "її" mean?
+   - [ ] my (feminine)
+   - [ ] his, its
+   - [x] her, hers
+   - [ ] their
+   > "її" means "her, hers"
+
+9. What does "ліжко" mean?
+   - [ ] lamp
+   - [x] bed
+   - [ ] chair
+   - [ ] key
+   > "ліжко" means "bed"
+
+10. What does "гаманець" mean?
+   - [ ] phone
+   - [ ] bag
    - [x] wallet
    - [ ] key
    > "гаманець" means "wallet"
 
-2. What does "мої" mean?
-   - [x] my (plural)
-   - [ ] key
-   - [ ] wallet
-   - [ ] my (neuter)
-   > "мої" means "my (plural)"
+## true-false: True or False?
 
-3. What does "ключ" mean?
-   - [ ] wallet
-   - [ ] my (neuter)
-   - [x] key
-   - [ ] my (plural)
-   > "ключ" means "key"
+> Determine if each statement is true or false.
 
-4. What does "моє" mean?
-   - [ ] key
-   - [ ] my (plural)
-   - [ ] wallet
-   - [x] my (neuter)
-   > "моє" means "my (neuter)"
+- [x] "цей" means "this (masculine)"
+   > Correct!
 
-5. What does "ручка" mean?
-   - [ ] my (plural)
-   - [ ] key
-   - [x] pen
-   - [ ] wallet
-   > "ручка" means "pen"
+- [x] "ця" means "this (feminine)"
+   > Correct!
 
-6. What does "ті" mean?
-   - [x] those
-   - [ ] my (plural)
-   - [ ] wallet
-   - [ ] key
-   > "ті" means "those"
+- [ ] "це" means "that (neuter)"
+   > Incorrect. "це" means "this (neuter)" - "те" means "that (neuter)"
 
+- [x] "мій" means "my (masculine)"
+   > Correct!
 
+- [ ] "моя" means "your (feminine)"
+   > Incorrect. "моя" means "my (feminine)"
 
-## unjumble: Word Order
+- [x] "його" means "his, its"
+   > Correct!
 
-> Put the words in the correct order to form a sentence.
+- [ ] "її" means "his, its"
+   > Incorrect. "її" means "her, hers"
 
-1. Це / твоя / сумка
-   > [!answer] Це твоя сумка?
-   > (Is this your bag?)
+- [x] "ключ" means "key"
+   > Correct!
 
-2. Це / паспорт / мій
-   > [!answer] Це мій паспорт.
-   > (This is my passport.)
+- [x] "сумка" means "bag"
+   > Correct!
 
-3. Чий / це / телефон
-   > [!answer] Чий це телефон?
-   > (Whose phone is this?)
-
-4. моя / Де / ручка
-   > [!answer] Де моя ручка?
-   > (Where is my pen?)
-
+- [ ] "ручка" means "wallet"
+   > Incorrect. "ручка" means "pen"
 
 ---
 

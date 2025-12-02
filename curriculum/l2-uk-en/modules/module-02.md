@@ -190,187 +190,220 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: New Letter Sounds
+## fill-in: What Does It Mean?
 
-> Match each new letter to its sound. Focus on the unique consonants and iotated vowels!
+> Choose the correct English meaning.
+
+1. What does "так" mean?
+   > [!answer] yes
+   > [!options] yes | no | okay | please
+
+2. What does "ні" mean?
+   > [!answer] no
+   > [!options] yes | no | thank you | sorry
+
+3. What does "добре" mean?
+   > [!answer] good, okay
+   > [!options] yes | no | good, okay | please
+
+4. What does "дякую" mean?
+   > [!answer] thank you
+   > [!options] please | sorry | hello | thank you
+
+5. What does "привіт" mean?
+   > [!answer] hi, hello
+   > [!options] goodbye | hi, hello | thank you | please
+
+6. What does "кава" mean?
+   > [!answer] coffee
+   > [!options] tea | coffee | soup | water
+
+7. What does "борщ" mean?
+   > [!answer] borscht
+   > [!options] bread | borscht | salad | meat
+
+8. What does "школа" mean?
+   > [!answer] school
+   > [!options] center | city | school | bank
+
+9. What does "жінка" mean?
+   > [!answer] woman
+   > [!options] man | woman | child | student
+
+10. What does "чоловік" mean?
+    > [!answer] man/husband
+    > [!options] man/husband | woman | tourist | doctor
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. моє / слово / Це
+   > [!answer] Це моє слово.
+   > (This is my word.)
+
+2. моя / сім'я / Це
+   > [!answer] Це моя сім'я.
+   > (This is my family.)
+
+3. мова / українська / Це
+   > [!answer] Це українська мова.
+   > (This is the Ukrainian language.)
+
+4. місто / моє / Це
+   > [!answer] Це моє місто.
+   > (This is my city.)
+
+5. це / Що
+   > [!answer] Що це?
+   > (What is this?)
+
+6. це / Хто
+   > [!answer] Хто це?
+   > (Who is this?)
+
+7. ти / Як
+   > [!answer] Як ти?
+   > (How are you?)
+
+8. центр / Там / є
+   > [!answer] Там є центр.
+   > (There is a center.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| Г г | H sound (soft, breathy) |
-| Ґ ґ | G sound (hard, like "go") |
-| Ж ж | ZH sound (like "vision") |
-| Ш ш | SH sound (like "ship") |
-| Щ щ | SHCH sound (fresh cheese) |
-| Ч ч | CH sound (like "church") |
-| Ц ц | TS sound (like "cats") |
-| Є є | YE sound (like "yes") |
-| Ї ї | YI sound (unique to Ukrainian!) |
-| Ю ю | YU sound (like "universe") |
-| Я я | YA sound (like "yard") |
-
-## quiz: Read Complete Words
-
-> Now that you know all 33 letters, read these Ukrainian words!
-
-1. What does ШКОЛА mean?
-   - [x] School
-   - [ ] Skull
-   - [ ] Scholar
-   - [ ] Scale
-   > ШКОЛА = SH-K-O-L-A. Ш=SH, remember!
-
-2. What does ДЯКУЮ mean?
-   - [x] Thank you
-   - [ ] Duke
-   - [ ] December
-   - [ ] Doctor
-   > ДЯКУЮ = D-YA-K-U-YU. Я=YA, Ю=YU (iotated vowels)
-
-3. What does УКРАЇНА mean?
-   - [x] Ukraine
-   - [ ] Uranium
-   - [ ] Urban
-   - [ ] Unit
-   > УКРАЇНА = U-K-R-A-YI-N-A. Note the Ї (unique Ukrainian letter!)
-
-4. What does ЛЮДИНА mean?
-   - [x] Person/Human
-   - [ ] Loud
-   - [ ] Lunch
-   - [ ] Lucky
-   > ЛЮДИНА = L-YU-D-Y-N-A. Ю=YU, И=short Y sound
-
-5. What does ЦЕНТР mean?
-   - [x] Center
-   - [ ] Century
-   - [ ] Census
-   - [ ] Cement
-   > ЦЕНТР = TS-E-N-T-R. Ц=TS!
-
-6. What does ЩАСТЯ mean?
-   - [x] Happiness
-   - [ ] Shadow
-   - [ ] Sheep
-   - [ ] Shopping
-   > ЩАСТЯ = SHCH-A-S-T-YA. Щ is the "freshcheese" sound!
-
-7. What does ЇЖА mean?
-   - [x] Food
-   - [ ] Year
-   - [ ] Yellow
-   - [ ] Yoga
-   > ЇЖА = YI-ZH-A. Starts with Ї (Ukrainian signature letter!)
-
-8. What does НІCH mean?
-   - [x] Night
-   - [ ] Nice
-   - [ ] Niche
-   - [ ] Nick
-   > НІЧ = N-I-CH. Ч=CH, І=ee sound
-
-## match-up: Print to Cursive
-
-> Match the print letter to its cursive/italic form. Watch out for the traps!
-
-| Left (Print) | Right (Cursive description) |
-|--------------|----------------------------|
-| т | Looks like Latin "m" |
-| п | Looks like Latin "n" |
-| д | Looks like Latin "g" |
-| и | Looks like Latin "u" |
-| г | Has a descending loop |
-| л | Connected hook shape |
-
-## group-sort: Categorize All Letters
-
-> Sort all the new letters into their categories.
-
-### Unique Consonants
-- Г
-- Ґ
-- Ж
-- Ш
-- Щ
-- Ч
-- Ц
-
-### Iotated Vowels
-- Є
-- Ї
-- Ю
-- Я
-
-### Special Letters
-- И
-- Й
-- Ь
-
-
-## true-false: True or False?
-
-> Determine if each statement is true or false.
-
-- [x] "буква" is feminine.
-   > Correct! буква is feminine.
-
-- [x] "слово" is neuter.
-   > Correct! слово is neuter.
-
-- [x] "алфавіт" is masculine.
-   > Correct! алфавіт is masculine.
-
-- [x] "мова" is feminine.
-   > Correct! мова is feminine.
-
+| чай | tea |
+| кава | coffee |
+| школа | school |
+| місто | city |
+| добре | good, okay |
+| дякую | thank you |
+| привіт | hi, hello |
+| мова | language |
+| буква | letter (alphabet) |
+| слово | word |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "вибачте" mean?
-   - [ ] please/you're welcome
-   - [ ] welcome
+1. What does "слово" mean?
+   - [ ] where
+   - [ ] letter
    - [ ] language
-   - [x] excuse me, sorry
-   > "вибачте" means "excuse me, sorry"
+   - [x] word
+   > "слово" means "word"
 
-2. What does "прошу" mean?
-   - [ ] language
-   - [ ] welcome
-   - [x] please/you're welcome
-   - [ ] excuse me, sorry
-   > "прошу" means "please/you're welcome"
+2. What does "де" mean?
+   - [ ] what
+   - [ ] who
+   - [x] where
+   - [ ] how
+   > "де" means "where"
 
-3. What does "мова" mean?
-   - [ ] please/you're welcome
-   - [ ] excuse me, sorry
+3. What does "як" mean?
+   - [ ] what
+   - [ ] who
+   - [ ] where
+   - [x] how
+   > "як" means "how"
+
+4. What does "ні" mean?
+   - [ ] yes
+   - [x] no
+   - [ ] okay
+   - [ ] thank you
+   > "ні" means "no"
+
+5. What does "мова" mean?
    - [x] language
-   - [ ] welcome
+   - [ ] letter
+   - [ ] word
+   - [ ] alphabet
    > "мова" means "language"
 
-4. What does "ласкаво просимо" mean?
-   - [ ] please/you're welcome
-   - [x] welcome
-   - [ ] language
-   - [ ] excuse me, sorry
-   > "ласкаво просимо" means "welcome"
+6. What does "сім'я" mean?
+   - [ ] woman
+   - [ ] man
+   - [x] family
+   - [ ] name
+   > "сім'я" means "family"
 
-5. What does "алфавіт" mean?
-   - [ ] language
-   - [ ] please/you're welcome
-   - [ ] excuse me, sorry
-   - [x] alphabet
-   > "алфавіт" means "alphabet"
+7. What does "ім'я" mean?
+   - [ ] family
+   - [ ] city
+   - [ ] center
+   - [x] name
+   > "ім'я" means "name"
 
-6. What does "англійська" mean?
-   - [ ] excuse me, sorry
-   - [x] English (adj)
-   - [ ] please/you're welcome
-   - [ ] language
-   > "англійська" means "English (adj)"
+8. What does "так" mean?
+   - [ ] no
+   - [x] yes
+   - [ ] okay
+   - [ ] thank you
+   > "так" means "yes"
 
+9. What does "дякую" mean?
+   - [ ] please
+   - [ ] sorry
+   - [ ] hello
+   - [x] thank you
+   > "дякую" means "thank you"
+
+10. What does "що" mean?
+   - [x] what
+   - [ ] who
+   - [ ] where
+   - [ ] how
+   > "що" means "what"
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [ ] "чай" means "coffee"
+   > Incorrect. "чай" means "tea"
+
+- [x] "хто" means "who"
+   > Correct!
+
+- [x] "борщ" means "borscht"
+   > Correct!
+
+- [x] "як" means "how"
+   > Correct!
+
+- [x] "що" means "what"
+   > Correct!
+
+- [x] "ні" means "no"
+   > Correct!
+
+- [ ] "мова" means "letter"
+   > Incorrect. "мова" means "language"
+
+- [x] "дякую" means "thank you"
+   > Correct!
+
+- [ ] "алфавіт" means "word"
+   > Incorrect. "алфавіт" means "alphabet"
+
+- [x] "привіт" means "hi, hello"
+   > Correct!
 
 ---
 
@@ -398,6 +431,16 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 | як | /jɑk/ | how | adv | - | Я = YA |
 | де | /dɛ/ | where | adv | - | Simple question word |
 | хто | /xtɔ/ | who | pron | - | Х = KH |
+| чай | /tʃɑj/ | tea | noun | m | Ч = CH, Й = Y |
+| кава | /ˈkɑvɑ/ | coffee | noun | f | Basic word |
+| борщ | /bɔrʃtʃ/ | borscht | noun | m | Щ = SHCH |
+| школа | /ˈʃkɔlɑ/ | school | noun | f | Ш = SH |
+| центр | /t͡sɛntr/ | center | noun | m | Ц = TS |
+| місто | /ˈmʲistɔ/ | city | noun | n | Basic word |
+| сім'я | /sʲiˈmjuɑ/ | family | noun | f | ' = apostrophe, Я = YA |
+| ім'я | /iˈmjuɑ/ | name | noun | n | ' = apostrophe, Я = YA |
+| жінка | /ˈʒinkɑ/ | woman | noun | f | Ж = ZH |
+| чоловік | /tʃɔlɔˈvʲik/ | man/husband | noun | m | Ч = CH |
 ---
 
 # Letter Groups Summary
@@ -431,7 +474,8 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 
 > 🎯 **Coming Next**
 >
-> In Module 03, you'll learn how Ukrainian nouns work:
-> - Every noun has a gender (masculine, feminine, neuter)
-> - How to predict gender from word endings
-> - The foundation for case endings later!
+> In Module 03, you'll dive deeper into **Noun Grammar**:
+> - Grouping nouns into **4 Declensions** (Families)
+> - Why "ending rules" aren't enough for fluent speech
+> - Connecting Gender to these Declension Groups
+> - Preparing for Case endings!

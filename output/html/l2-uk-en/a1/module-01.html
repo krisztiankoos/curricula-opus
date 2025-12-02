@@ -322,15 +322,18 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
-/* Fill-in Activity */
-.fill-container { display: flex; flex-direction: column; gap: 1rem; }
-.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-.fill-question.answered .fill-check { display: none; }
-.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
-.fill-input:focus { border-color: var(--primary); outline: none; }
-.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
-.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
-.fill-check { margin-left: 0.5rem; }
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
 .fill-feedback { margin-top: 0.5rem; font-weight: 500; }
 .fill-feedback .correct-text { color: var(--success); }
 .fill-feedback .wrong-text { color: var(--danger); }
@@ -347,6 +350,32 @@ footer {
 .order-handle { color: var(--text-muted); font-size: 1.25rem; }
 .order-text { font-size: 1.1rem; }
 
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -356,7 +385,7 @@ footer {
     <div class="module-nav">
       <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-02.html" class="module-nav-link">Module 02 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -365,9 +394,9 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
-      <button class="nav-tab" data-section="sort">Sort</button>
       
-      
+      <button class="nav-tab" data-section="fill">Fill</button>
+      <button class="nav-tab" data-section="order">Order</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -558,6 +587,59 @@ footer {
   <p>🔗 <strong>Language Link: B and V</strong></p>
   <p>Notice that Ukrainian has <strong>two</strong> letters for B-sounds: <strong>Б</strong> (true B) and <strong>В</strong> (V sound). English only has one! This is why some Ukrainian words borrowed into English seem to swap B and V. For example, the name "Volodymyr" (Володимир) is sometimes written "Vladimir" because Russian В sounds like V to English ears.</p>
 </blockquote>
+<h2 id="grammar">grammar</h2>
+<h3 id="introductiontonounsgender">Introduction to Nouns &amp; Gender</h3>
+<p>In Ukrainian, every noun has a <strong>gender</strong>. It's not about biology (mostly) - it's about the <strong>ending</strong> of the word.</p>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Ending</th>
+<th>Example</th>
+<th>My (M/F/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Masculine</strong></td>
+<td>Consonant</td>
+<td>парк, брат</td>
+<td><strong>мій</strong> парк</td>
+</tr>
+<tr>
+<td><strong>Feminine</strong></td>
+<td>-а / -я</td>
+<td>мама, віза</td>
+<td><strong>моя</strong> мама</td>
+</tr>
+<tr>
+<td><strong>Neuter</strong></td>
+<td>-о / -е</td>
+<td>метро, фото</td>
+<td><strong>моє</strong> фото</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🧠 <strong>Pattern Recognition</strong></p>
+  <ul>
+  <li>If it ends in a <strong>Consonant</strong> (K, T, R, N…), it's usually <strong>Masculine</strong>.</li>
+  <li>If it ends in <strong>-A</strong>, it's usually <strong>Feminine</strong>.</li>
+  <li>If it ends in <strong>-O</strong>, it's usually <strong>Neuter</strong>.</li>
+  </ul>
+</blockquote>
+<h3 id="thisis">"This is…" (Це)</h3>
+<p>To say "This is…", you just say <strong>Це</strong> (Tse). No "is" verb needed!</p>
+<ul>
+<li><strong>Це</strong> парк. (This is a park.)</li>
+<li><strong>Це</strong> мама. (This is mom.)</li>
+</ul>
+<p>Combine it with "my":</p>
+<ul>
+<li><strong>Це мій</strong> телефон. (This is my telephone.) - <em>Masculine (consonant)</em></li>
+<li><strong>Це моя</strong> лампа. (This is my lamp.) - <em>Feminine (-a)</em></li>
+<li><strong>Це моє</strong> радіо. (This is my radio.) - <em>Neuter (-o)</em></li>
+</ul>
 <h2 id="practice">practice</h2>
 <h3 id="readingstrategy">Reading Strategy</h3>
 <p>When you see a Cyrillic word:</p>
@@ -614,6 +696,10 @@ footer {
 </blockquote>
 <hr />
 <hr />
+<hr />
+<hr />
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -623,36 +709,41 @@ footer {
     </section>
   
     
-    <section id="match" class="section"><div class="card"><h3>False Friends Letter Sounds</h3>
-      <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
+    <section id="match" class="section"><div class="card"><h3>Match the Pairs</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
-        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">В в</div><div class="match-item" data-pair="1">Н н</div><div class="match-item" data-pair="2">Р р</div><div class="match-item" data-pair="3">С с</div><div class="match-item" data-pair="4">У у</div><div class="match-item" data-pair="5">Х х</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">S sound (not C!)</div><div class="match-item" data-pair="5">KH sound (not X!)</div><div class="match-item" data-pair="2">R sound (not P!)</div><div class="match-item" data-pair="0">V sound (not B!)</div><div class="match-item" data-pair="1">N sound (not H!)</div><div class="match-item" data-pair="4">U sound (not Y!)</div></div>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">театр</div><div class="match-item" data-pair="1">телефон</div><div class="match-item" data-pair="2">доктор</div><div class="match-item" data-pair="3">лампа</div><div class="match-item" data-pair="4">зебра</div><div class="match-item" data-pair="5">клас</div><div class="match-item" data-pair="6">план</div><div class="match-item" data-pair="7">спорт</div><div class="match-item" data-pair="8">старт</div><div class="match-item" data-pair="9">стоп</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="8">start</div><div class="match-item" data-pair="0">theater</div><div class="match-item" data-pair="7">sport</div><div class="match-item" data-pair="1">telephone</div><div class="match-item" data-pair="9">stop</div><div class="match-item" data-pair="5">class</div><div class="match-item" data-pair="6">plan</div><div class="match-item" data-pair="2">doctor</div><div class="match-item" data-pair="3">lamp</div><div class="match-item" data-pair="4">zebra</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Read International Words</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+    <section id="quiz" class="section"><div class="card"><h3>Meaning Check</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/10</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
-    </div></section>
-    
-    <section id="sort" class="section"><div class="card"><h3>Sort the Letters</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/19</span></div>
-      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>True Friends</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>False Friends</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>New Letters</h4><div class="sort-items"></div></div></div>
-      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
     </div></section>
     
     
+    <section id="fill" class="section"><div class="card"><h3>What Does It Mean?</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/10</span></div>
+      <div id="fill-container" class="fill-container"></div>
+      <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('order')">Next →</button></div>
+    </div></section>
+    
+    <section id="order" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="order-score">0</span>/10</span></div>
+      <div id="order-container" class="order-container"></div>
+      <div class="completion-message" id="order-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetOrder()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (20)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -662,7 +753,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">мама</td><td class="vocab-ipa">/ˈmɑmɑ/</td><td class="vocab-en">mom</td><td class="vocab-note">True Friends only: М-А-М-А</td></tr><tr><td class="vocab-uk">тато</td><td class="vocab-ipa">/ˈtɑtɔ/</td><td class="vocab-en">dad</td><td class="vocab-note">True Friends: Т-А-Т-О</td></tr><tr><td class="vocab-uk">банк</td><td class="vocab-ipa">/bɑnk/</td><td class="vocab-en">bank</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">парк</td><td class="vocab-ipa">/pɑrk/</td><td class="vocab-en">park</td><td class="vocab-note">П=P (new), Р=R (false friend)</td></tr><tr><td class="vocab-uk">кафе</td><td class="vocab-ipa">/kɑˈfɛ/</td><td class="vocab-en">café</td><td class="vocab-note">All True Friends + Ф (new)</td></tr><tr><td class="vocab-uk">метро</td><td class="vocab-ipa">/mɛˈtrɔ/</td><td class="vocab-en">metro</td><td class="vocab-note">Р=R (false friend)</td></tr><tr><td class="vocab-uk">таксі</td><td class="vocab-ipa">/tɑkˈsi/</td><td class="vocab-en">taxi</td><td class="vocab-note">С=S (false friend), І=I</td></tr><tr><td class="vocab-uk">радіо</td><td class="vocab-ipa">/ˈrɑdʲiɔ/</td><td class="vocab-en">radio</td><td class="vocab-note">Р=R (false friend), Д=D (new)</td></tr><tr><td class="vocab-uk">піца</td><td class="vocab-ipa">/ˈpitsɑ/</td><td class="vocab-en">pizza</td><td class="vocab-note">П=P (new), Ц=TS (preview)</td></tr><tr><td class="vocab-uk">суп</td><td class="vocab-ipa">/sup/</td><td class="vocab-en">soup</td><td class="vocab-note">С=S, У=U (false friends)</td></tr><tr><td class="vocab-uk">салат</td><td class="vocab-ipa">/sɑˈlɑt/</td><td class="vocab-en">salad</td><td class="vocab-note">С=S (false friend), Л=L (new)</td></tr><tr><td class="vocab-uk">лимон</td><td class="vocab-ipa">/lɪˈmɔn/</td><td class="vocab-en">lemon</td><td class="vocab-note">Л=L (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">банан</td><td class="vocab-ipa">/bɑˈnɑn/</td><td class="vocab-en">banana</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">хокей</td><td class="vocab-ipa">/xɔˈkɛj/</td><td class="vocab-en">hockey</td><td class="vocab-note">Х=KH (false friend)</td></tr><tr><td class="vocab-uk">футбол</td><td class="vocab-ipa">/fudˈbɔl/</td><td class="vocab-en">football</td><td class="vocab-note">Ф=F (new), У=U, Б=B, Л=L</td></tr><tr><td class="vocab-uk">студент</td><td class="vocab-ipa">/stuˈdɛnt/</td><td class="vocab-en">student</td><td class="vocab-note">С=S, У=U, Н=N (false friends)</td></tr><tr><td class="vocab-uk">турист</td><td class="vocab-ipa">/tuˈrɪst/</td><td class="vocab-en">tourist</td><td class="vocab-note">У=U, Р=R, С=S (false friends)</td></tr><tr><td class="vocab-uk">музика</td><td class="vocab-ipa">/ˈmuzɪkɑ/</td><td class="vocab-en">music</td><td class="vocab-note">У=U (false friend), З=Z (new)</td></tr><tr><td class="vocab-uk">фото</td><td class="vocab-ipa">/ˈfɔtɔ/</td><td class="vocab-en">photo</td><td class="vocab-note">Ф=F (new), rest True Friends</td></tr><tr><td class="vocab-uk">відео</td><td class="vocab-ipa">/ˈwideɔ/</td><td class="vocab-en">video</td><td class="vocab-note">В=V (false friend), Д=D (new)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">мама</td><td class="vocab-ipa">/ˈmɑmɑ/</td><td class="vocab-en">mom</td><td class="vocab-note">True Friends only: М-А-М-А</td></tr><tr><td class="vocab-uk">тато</td><td class="vocab-ipa">/ˈtɑtɔ/</td><td class="vocab-en">dad</td><td class="vocab-note">True Friends: Т-А-Т-О</td></tr><tr><td class="vocab-uk">банк</td><td class="vocab-ipa">/bɑnk/</td><td class="vocab-en">bank</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">парк</td><td class="vocab-ipa">/pɑrk/</td><td class="vocab-en">park</td><td class="vocab-note">П=P (new), Р=R (false friend)</td></tr><tr><td class="vocab-uk">кафе</td><td class="vocab-ipa">/kɑˈfɛ/</td><td class="vocab-en">café</td><td class="vocab-note">All True Friends + Ф (new)</td></tr><tr><td class="vocab-uk">метро</td><td class="vocab-ipa">/mɛˈtrɔ/</td><td class="vocab-en">metro</td><td class="vocab-note">Р=R (false friend)</td></tr><tr><td class="vocab-uk">таксі</td><td class="vocab-ipa">/tɑkˈsi/</td><td class="vocab-en">taxi</td><td class="vocab-note">С=S (false friend), І=I</td></tr><tr><td class="vocab-uk">радіо</td><td class="vocab-ipa">/ˈrɑdʲiɔ/</td><td class="vocab-en">radio</td><td class="vocab-note">Р=R (false friend), Д=D (new)</td></tr><tr><td class="vocab-uk">піца</td><td class="vocab-ipa">/ˈpitsɑ/</td><td class="vocab-en">pizza</td><td class="vocab-note">П=P (new), Ц=TS (preview)</td></tr><tr><td class="vocab-uk">суп</td><td class="vocab-ipa">/sup/</td><td class="vocab-en">soup</td><td class="vocab-note">С=S, У=U (false friends)</td></tr><tr><td class="vocab-uk">салат</td><td class="vocab-ipa">/sɑˈlɑt/</td><td class="vocab-en">salad</td><td class="vocab-note">С=S (false friend), Л=L (new)</td></tr><tr><td class="vocab-uk">лимон</td><td class="vocab-ipa">/lɪˈmɔn/</td><td class="vocab-en">lemon</td><td class="vocab-note">Л=L (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">банан</td><td class="vocab-ipa">/bɑˈnɑn/</td><td class="vocab-en">banana</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">хокей</td><td class="vocab-ipa">/xɔˈkɛj/</td><td class="vocab-en">hockey</td><td class="vocab-note">Х=KH (false friend)</td></tr><tr><td class="vocab-uk">футбол</td><td class="vocab-ipa">/futˈbɔl/</td><td class="vocab-en">football</td><td class="vocab-note">Ф=F (new), У=U, Б=B, Л=L</td></tr><tr><td class="vocab-uk">студент</td><td class="vocab-ipa">/stuˈdɛnt/</td><td class="vocab-en">student</td><td class="vocab-note">С=S, У=U, Н=N (false friends)</td></tr><tr><td class="vocab-uk">турист</td><td class="vocab-ipa">/tuˈrɪst/</td><td class="vocab-en">tourist</td><td class="vocab-note">У=U, Р=R, С=S (false friends)</td></tr><tr><td class="vocab-uk">музика</td><td class="vocab-ipa">/ˈmuzɪkɑ/</td><td class="vocab-en">music</td><td class="vocab-note">У=U (false friend), З=Z (new)</td></tr><tr><td class="vocab-uk">фото</td><td class="vocab-ipa">/ˈfɔtɔ/</td><td class="vocab-en">photo</td><td class="vocab-note">Ф=F (new), rest True Friends</td></tr><tr><td class="vocab-uk">відео</td><td class="vocab-ipa">/ˈwideɔ/</td><td class="vocab-en">video</td><td class="vocab-note">В=V (false friend), Д=D (new)</td></tr><tr><td class="vocab-uk">театр</td><td class="vocab-ipa">/tɛˈɑtr/</td><td class="vocab-en">theater</td><td class="vocab-note">All True Friends + Р=R</td></tr><tr><td class="vocab-uk">телефон</td><td class="vocab-ipa">/tɛlɛˈfɔn/</td><td class="vocab-en">telephone</td><td class="vocab-note">Ф=F (new), Л=L (new)</td></tr><tr><td class="vocab-uk">доктор</td><td class="vocab-ipa">/ˈdɔktɔr/</td><td class="vocab-en">doctor</td><td class="vocab-note">Д=D (new), К=K, Р=R</td></tr><tr><td class="vocab-uk">лампа</td><td class="vocab-ipa">/ˈlɑmpɑ/</td><td class="vocab-en">lamp</td><td class="vocab-note">Л=L (new), П=P (new)</td></tr><tr><td class="vocab-uk">зебра</td><td class="vocab-ipa">/ˈzɛbrɑ/</td><td class="vocab-en">zebra</td><td class="vocab-note">З=Z (new), Б=B (new)</td></tr><tr><td class="vocab-uk">клас</td><td class="vocab-ipa">/klɑs/</td><td class="vocab-en">class</td><td class="vocab-note">К=K, Л=L (new), С=S</td></tr><tr><td class="vocab-uk">план</td><td class="vocab-ipa">/plɑn/</td><td class="vocab-en">plan</td><td class="vocab-note">П=P (new), Л=L (new)</td></tr><tr><td class="vocab-uk">спорт</td><td class="vocab-ipa">/spɔrt/</td><td class="vocab-en">sport</td><td class="vocab-note">С=S, П=P (new), Р=R</td></tr><tr><td class="vocab-uk">старт</td><td class="vocab-ipa">/stɑrt/</td><td class="vocab-en">start</td><td class="vocab-note">С=S, Р=R, Т=T</td></tr><tr><td class="vocab-uk">стоп</td><td class="vocab-ipa">/stɔp/</td><td class="vocab-en">stop</td><td class="vocab-note">С=S, Т=T, П=P (new)</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -674,13 +765,13 @@ footer {
   </main><footer>Module 01 · curricula-opus</footer>
   <script>
 
-    const matchPairs = [{"left":"В в","right":"V sound (not B!)"},{"left":"Н н","right":"N sound (not H!)"},{"left":"Р р","right":"R sound (not P!)"},{"left":"С с","right":"S sound (not C!)"},{"left":"У у","right":"U sound (not Y!)"},{"left":"Х х","right":"KH sound (not X!)"}];
-    const quizData = [{"question":"What does БАНК mean?","options":["Bank","Bunk","Back","Bonk"],"correctIndex":0,"explanation":"БАНК = B-A-N-K. Remember: Б=B, А=A, Н=N (not H!), К=K"},{"question":"What does ПАРК mean?","options":["Park","Pork","Peak","Pack"],"correctIndex":0,"explanation":"ПАРК = P-A-R-K. Remember: П=P, А=A, Р=R (not P!), К=K"},{"question":"What does МЕТРО mean?","options":["Metro/Subway","Meter","Metro","Mother"],"correctIndex":0,"explanation":"МЕТРО = M-E-T-R-O. All True Friends except Р=R"},{"question":"What does КАФЕ mean?","options":["Café","Coffee","Cave","Calf"],"correctIndex":0,"explanation":"КАФЕ = K-A-F-E. К=K, А=A, Ф=F, Е=E"},{"question":"What does ТАКСІ mean?","options":["Taxi","Task","Tax","Tuxedo"],"correctIndex":0,"explanation":"ТАКСІ = T-A-K-S-I. Remember: С=S (not C!), І=I"},{"question":"What does СТУДЕНТ mean?","options":["Student","Stadium","Study","Stupid"],"correctIndex":0,"explanation":"СТУДЕНТ = S-T-U-D-E-N-T. С=S, У=U, Н=N"},{"question":"What does ФУТБОЛ mean?","options":["Football","Footstool","Fútbol","Futon"],"correctIndex":0,"explanation":"ФУТБОЛ = F-U-T-B-O-L. Ф=F, У=U, Б=B, Л=L"},{"question":"What does РАДІО mean?","options":["Radio","Ready","Rodeo","Ratio"],"correctIndex":0,"explanation":"РАДІО = R-A-D-I-O. Remember: Р=R (not P!)"}];
-    const sortData = {"true-friends":["А","Е","І","О","К","М","Т"],"false-friends":["В","Н","Р","С","У","Х"],"new-letters":["Б","Д","З","Л","П","Ф"]};
-    const fillData = {"items":[],"text":"","answers":[]};
-    const orderData = {"items":[],"correctOrder":[]};
-    const vocabData = [{"uk":"мама","translit":"","en":"mom","note":"True Friends only: М-А-М-А"},{"uk":"тато","translit":"","en":"dad","note":"True Friends: Т-А-Т-О"},{"uk":"банк","translit":"","en":"bank","note":"Б=B (new), Н=N (false friend)"},{"uk":"парк","translit":"","en":"park","note":"П=P (new), Р=R (false friend)"},{"uk":"кафе","translit":"","en":"café","note":"All True Friends + Ф (new)"},{"uk":"метро","translit":"","en":"metro","note":"Р=R (false friend)"},{"uk":"таксі","translit":"","en":"taxi","note":"С=S (false friend), І=I"},{"uk":"радіо","translit":"","en":"radio","note":"Р=R (false friend), Д=D (new)"},{"uk":"піца","translit":"","en":"pizza","note":"П=P (new), Ц=TS (preview)"},{"uk":"суп","translit":"","en":"soup","note":"С=S, У=U (false friends)"},{"uk":"салат","translit":"","en":"salad","note":"С=S (false friend), Л=L (new)"},{"uk":"лимон","translit":"","en":"lemon","note":"Л=L (new), Н=N (false friend)"},{"uk":"банан","translit":"","en":"banana","note":"Б=B (new), Н=N (false friend)"},{"uk":"хокей","translit":"","en":"hockey","note":"Х=KH (false friend)"},{"uk":"футбол","translit":"","en":"football","note":"Ф=F (new), У=U, Б=B, Л=L"},{"uk":"студент","translit":"","en":"student","note":"С=S, У=U, Н=N (false friends)"},{"uk":"турист","translit":"","en":"tourist","note":"У=U, Р=R, С=S (false friends)"},{"uk":"музика","translit":"","en":"music","note":"У=U (false friend), З=Z (new)"},{"uk":"фото","translit":"","en":"photo","note":"Ф=F (new), rest True Friends"},{"uk":"відео","translit":"","en":"video","note":"В=V (false friend), Д=D (new)"}];
-    const totalSort = 19;
+    const matchPairs = [{"left":"театр","right":"theater"},{"left":"телефон","right":"telephone"},{"left":"доктор","right":"doctor"},{"left":"лампа","right":"lamp"},{"left":"зебра","right":"zebra"},{"left":"клас","right":"class"},{"left":"план","right":"plan"},{"left":"спорт","right":"sport"},{"left":"старт","right":"start"},{"left":"стоп","right":"stop"}];
+    const quizData = [{"question":"What does \"піца\" mean?","options":["park","lemon","pizza","soup"],"correctIndex":2,"explanation":"\"піца\" means \"pizza\""},{"question":"What does \"тато\" mean?","options":["radio","soup","dad","music"],"correctIndex":2,"explanation":"\"тато\" means \"dad\""},{"question":"What does \"таксі\" mean?","options":["football","soup","taxi","hockey"],"correctIndex":2,"explanation":"\"таксі\" means \"taxi\""},{"question":"What does \"лимон\" mean?","options":["lemon","café","football","music"],"correctIndex":0,"explanation":"\"лимон\" means \"lemon\""},{"question":"What does \"хокей\" mean?","options":["pizza","hockey","mom","banana"],"correctIndex":1,"explanation":"\"хокей\" means \"hockey\""},{"question":"What does \"суп\" mean?","options":["soup","pizza","lemon","hockey"],"correctIndex":0,"explanation":"\"суп\" means \"soup\""},{"question":"What does \"музика\" mean?","options":["student","music","park","photo"],"correctIndex":1,"explanation":"\"музика\" means \"music\""},{"question":"What does \"банан\" mean?","options":["lemon","banana","dad","taxi"],"correctIndex":1,"explanation":"\"банан\" means \"banana\""},{"question":"What does \"кафе\" mean?","options":["taxi","café","photo","banana"],"correctIndex":1,"explanation":"\"кафе\" means \"café\""},{"question":"What does \"турист\" mean?","options":["café","mom","soup","tourist"],"correctIndex":3,"explanation":"\"турист\" means \"tourist\""}];
+    const sortData = {};
+    const fillData = {"items":[{"prompt":"What does \"театр\" mean?","answer":"theater","options":["theater","metro","music","taxi"]},{"prompt":"What does \"телефон\" mean?","answer":"telephone","options":["telephone","tourist","student","park"]},{"prompt":"What does \"доктор\" mean?","answer":"doctor","options":["dad","doctor","actor","dentist"]},{"prompt":"What does \"лампа\" mean?","answer":"lamp","options":["lemon","lamp","map","soup"]},{"prompt":"What does \"зебра\" mean?","answer":"zebra","options":["cobra","zero","zebra","zoo"]},{"prompt":"What does \"клас\" mean?","answer":"class","options":["glass","class","club","pass"]},{"prompt":"What does \"план\" mean?","answer":"plan","options":["plane","plan","pan","man"]},{"prompt":"What does \"спорт\" mean?","answer":"sport","options":["port","sort","sport","start"]},{"prompt":"What does \"старт\" mean?","answer":"start","options":["star","tart","start","smart"]},{"prompt":"What does \"стоп\" mean?","answer":"stop","options":["step","stop","top","shop"]}],"text":"","answers":[]};
+    const orderData = {"items":[{"words":["доктор","Це","мій"],"answer":"Це мій доктор.","translation":"This is my doctor."},{"words":["мама","Це","моя"],"answer":"Це моя мама.","translation":"This is my mom."},{"words":["фото","Це","моє"],"answer":"Це моє фото.","translation":"This is my photo."},{"words":["є","Тут","театр"],"answer":"Тут є театр.","translation":"Here is a theater."},{"words":["парк","є","Там"],"answer":"Там є парк.","translation":"There is a park."},{"words":["Це","тато","мій"],"answer":"Це мій тато.","translation":"This is my dad."},{"words":["таксі","моє","Це"],"answer":"Це моє таксі.","translation":"This is my taxi."},{"words":["клас","є","Тут"],"answer":"Тут є клас.","translation":"Here is a class."},{"words":["моя","музика","Це"],"answer":"Це моя музика.","translation":"This is my music."},{"words":["банк","Там","є"],"answer":"Там є банк.","translation":"There is a bank."}],"isUnjumble":true};
+    const vocabData = [{"uk":"мама","translit":"","en":"mom","note":"True Friends only: М-А-М-А"},{"uk":"тато","translit":"","en":"dad","note":"True Friends: Т-А-Т-О"},{"uk":"банк","translit":"","en":"bank","note":"Б=B (new), Н=N (false friend)"},{"uk":"парк","translit":"","en":"park","note":"П=P (new), Р=R (false friend)"},{"uk":"кафе","translit":"","en":"café","note":"All True Friends + Ф (new)"},{"uk":"метро","translit":"","en":"metro","note":"Р=R (false friend)"},{"uk":"таксі","translit":"","en":"taxi","note":"С=S (false friend), І=I"},{"uk":"радіо","translit":"","en":"radio","note":"Р=R (false friend), Д=D (new)"},{"uk":"піца","translit":"","en":"pizza","note":"П=P (new), Ц=TS (preview)"},{"uk":"суп","translit":"","en":"soup","note":"С=S, У=U (false friends)"},{"uk":"салат","translit":"","en":"salad","note":"С=S (false friend), Л=L (new)"},{"uk":"лимон","translit":"","en":"lemon","note":"Л=L (new), Н=N (false friend)"},{"uk":"банан","translit":"","en":"banana","note":"Б=B (new), Н=N (false friend)"},{"uk":"хокей","translit":"","en":"hockey","note":"Х=KH (false friend)"},{"uk":"футбол","translit":"","en":"football","note":"Ф=F (new), У=U, Б=B, Л=L"},{"uk":"студент","translit":"","en":"student","note":"С=S, У=U, Н=N (false friends)"},{"uk":"турист","translit":"","en":"tourist","note":"У=U, Р=R, С=S (false friends)"},{"uk":"музика","translit":"","en":"music","note":"У=U (false friend), З=Z (new)"},{"uk":"фото","translit":"","en":"photo","note":"Ф=F (new), rest True Friends"},{"uk":"відео","translit":"","en":"video","note":"В=V (false friend), Д=D (new)"},{"uk":"театр","translit":"","en":"theater","note":"All True Friends + Р=R"},{"uk":"телефон","translit":"","en":"telephone","note":"Ф=F (new), Л=L (new)"},{"uk":"доктор","translit":"","en":"doctor","note":"Д=D (new), К=K, Р=R"},{"uk":"лампа","translit":"","en":"lamp","note":"Л=L (new), П=P (new)"},{"uk":"зебра","translit":"","en":"zebra","note":"З=Z (new), Б=B (new)"},{"uk":"клас","translit":"","en":"class","note":"К=K, Л=L (new), С=S"},{"uk":"план","translit":"","en":"plan","note":"П=P (new), Л=L (new)"},{"uk":"спорт","translit":"","en":"sport","note":"С=S, П=P (new), Р=R"},{"uk":"старт","translit":"","en":"start","note":"С=S, Р=R, Т=T"},{"uk":"стоп","translit":"","en":"stop","note":"С=S, Т=T, П=P (new)"}];
+    const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -887,7 +978,7 @@ function resetSort() {
 }
 
 
-// Fill-in Activity
+// Fill-in Activity - Dropdown in sentence
 let fillScore = 0, fillAns = 0;
 
 function initFill() {
@@ -898,45 +989,82 @@ function initFill() {
   fillData.items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'fill-question';
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = fillData.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
     div.innerHTML = `
-      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
-      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
-      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
       <div class="fill-feedback" id="fill-fb-${i}"></div>
     `;
     c.appendChild(div);
   });
 
-  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
-  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
-  }));
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
 }
 
-function handleFill(e) {
-  const idx = e.target.dataset.idx;
-  const q = e.target.closest('.fill-question');
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
   if (q.classList.contains('answered')) return;
 
-  const input = q.querySelector('.fill-input');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = input.dataset.answer.toLowerCase();
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
   const fb = document.getElementById('fill-fb-' + idx);
 
   q.classList.add('answered');
+  dropdown.disabled = true;
 
   if (userAnswer === correctAnswer) {
-    input.classList.add('correct');
-    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
     fillScore++;
   } else {
-    input.classList.add('wrong');
-    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
   }
 
   document.getElementById('fill-score').textContent = fillScore;
   fillAns++;
-  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+  if (fillAns === fillData.items.length) {
+    document.getElementById('fill-complete').classList.add('show');
+  }
 }
 
 function resetFill() {
@@ -956,9 +1084,217 @@ function initOrder() {
   if (!c || !orderData.items.length) return;
   c.innerHTML = '';
 
+  if (orderData.isUnjumble) {
+    initUnjumble(c);
+  } else {
+    initClassicOrder(c);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(container) {
   orderTotal = orderData.items.length;
 
-  // Shuffle items for display
+  orderData.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    orderScore++;
+    document.getElementById('order-score').textContent = orderScore;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (orderScore === orderTotal) {
+      document.getElementById('order-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(container) {
+  orderTotal = orderData.items.length;
+
   const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
   shuffled.sort(() => Math.random() - 0.5);
 
@@ -970,15 +1306,14 @@ function initOrder() {
       <span class="order-text">${item.text}</span>
     </div>
   `).join('');
-  c.appendChild(div);
+  container.appendChild(div);
 
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn btn-outline';
   checkBtn.textContent = 'Check Order';
   checkBtn.onclick = checkOrder;
-  c.appendChild(checkBtn);
+  container.appendChild(checkBtn);
 
-  // Enable drag and drop
   initDragDrop();
 }
 
@@ -1016,7 +1351,6 @@ function checkOrder() {
   const items = document.querySelectorAll('.order-item');
   const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
 
-  // Check if order is correct (0, 1, 2, 3, ...)
   let correct = true;
   currentOrder.forEach((val, idx) => {
     const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;

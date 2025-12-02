@@ -211,186 +211,228 @@ Write or speak about your typical day:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Daily Activities
+## fill-in: Daily Routine Verbs
 
-> Match Ukrainian to English.
+> Choose the correct reflexive verb form.
+
+1. Я ___ о сьомій годині. (to wake up)
+   > [!answer] прокидаюся
+   > [!options] прокидаюся | прокидаєшся | прокидається | прокидаються
+
+2. Потім я ___ і чищу зуби. (to wash - reflexive)
+   > [!answer] вмиваюся
+   > [!options] вмиваюся | вмиваєшся | вмивається | вмиваються
+
+3. Вона ___ швидко. (to get dressed)
+   > [!answer] одягається
+   > [!options] одягаюся | одягаєшся | одягається | одягаються
+
+4. О восьмій я ___. (to have breakfast)
+   > [!answer] снідаю
+   > [!options] снідаю | снідаєш | снідає | снідають
+
+5. Він ___ з роботи о шостій. (to return)
+   > [!answer] повертається
+   > [!options] повертаюся | повертаєшся | повертається | повертаються
+
+6. Ввечері ми ___. (to have dinner)
+   > [!answer] вечеряємо
+   > [!options] вечеряю | вечеряєш | вечеряє | вечеряємо
+
+7. Вони ___ спати о одинадцятій. (to go to bed)
+   > [!answer] лягають
+   > [!options] лягаю | лягаєш | лягає | лягають
+
+8. Я ___ зуби двічі на день. (to brush)
+   > [!answer] чищу
+   > [!options] чищу | чистиш | чистить | чистять
+
+9. Він ___ щоранку. (to shave)
+   > [!answer] голиться
+   > [!options] голюся | голишся | голиться | голяться
+
+10. Вона ___ швидко. (to fall asleep)
+   > [!answer] засинає
+   > [!options] засинаю | засинаєш | засинає | засинають
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. прокидаюся / о / Я / сьомій
+   > [!answer] Я прокидаюся о сьомій.
+   > (I wake up at 7.)
+
+2. вмивається / Він / потім
+   > [!answer] Потім він вмивається.
+   > (Then he washes up.)
+
+3. снідає / восьмій / Вона / о
+   > [!answer] Вона снідає о восьмій.
+   > (She has breakfast at 8.)
+
+4. з / до / працюю / дев'ятої / п'ятої / Я
+   > [!answer] Я працюю з дев'ятої до п'ятої.
+   > (I work from 9 to 5.)
+
+5. повертаємося / додому / Ми / ввечері
+   > [!answer] Ми повертаємося додому ввечері.
+   > (We return home in the evening.)
+
+6. лягають / Вони / спати / о / одинадцятій
+   > [!answer] Вони лягають спати о одинадцятій.
+   > (They go to bed at 11.)
+
+7. вранці / чищу / Я / зуби
+   > [!answer] Я чищу зуби вранці.
+   > (I brush my teeth in the morning.)
+
+8. одягаюся / Спочатку / я
+   > [!answer] Спочатку я одягаюся.
+   > (First I get dressed.)
+
+9. швидко / засинає / Він
+   > [!answer] Він засинає швидко.
+   > (He falls asleep quickly.)
+
+10. щодня / снідаю / Я
+   > [!answer] Я снідаю щодня.
+   > (I have breakfast every day.)
+
+## match-up: Daily Routine Vocabulary
+
+> Match Ukrainian daily routine words to their English meanings.
 
 | Left | Right |
 |------|-------|
 | прокидатися | to wake up |
+| вставати | to get up |
+| вмиватися | to wash (face) |
+| одягатися | to get dressed |
 | снідати | to have breakfast |
-| працювати | to work |
+| обідати | to have lunch |
 | вечеряти | to have dinner |
+| повертатися | to return |
 | лягати спати | to go to bed |
 | засинати | to fall asleep |
 
-## quiz: Daily Routine
+## quiz: Daily Routine Grammar
 
 > Choose the correct answer.
 
-1. "I wake up at 7" - Я прокидаюся ___ сьомій.
-   - [x] о
-   - [ ] в
-   - [ ] на
-   - [ ] у
-   > О + locative for telling time.
+1. What does -ся at the end of verbs indicate?
+   - [x] reflexive action (done to oneself)
+   - [ ] past tense
+   - [ ] future tense
+   - [ ] negative
+   > -ся means "oneself" (from себе)
 
-2. How do you say "to get dressed"?
-   - [x] одягатися
-   - [ ] вдягати
-   - [ ] одягнути
-   - [ ] вдягатися
-   > Одягатися = reflexive (dress oneself).
+2. What is "я прокидаюся" in English?
+   - [x] I wake up
+   - [ ] I get dressed
+   - [ ] I wash
+   - [ ] I return
+   > прокидатися = to wake up
 
-3. "I work from 9 to 5" - Я працюю ___ дев'ятої ___ п'ятої.
-   - [x] з ... до
-   - [ ] від ... до
-   - [ ] о ... о
-   - [ ] від ... о
-   > З ... до = from ... to.
+3. How do you say "at 7 o'clock"?
+   - [x] о сьомій
+   - [ ] у сім
+   - [ ] на сьомій
+   - [ ] до сьомої
+   > о + ordinal number in locative
 
-4. What does "вмиватися" mean?
-   - [x] to wash oneself
-   - [ ] to swim
-   - [ ] to bathe
-   - [ ] to shower
-   > Вмиватися = to wash one's face/hands.
+4. What does "щодня" mean?
+   - [x] every day
+   - [ ] sometimes
+   - [ ] never
+   - [ ] always
+   > щодня = every day
 
-5. "Usually" in Ukrainian:
-   - [x] зазвичай
-   - [ ] завжди
-   - [ ] іноді
-   - [ ] ніколи
-   > Зазвичай = usually.
+5. What is "спочатку" in English?
+   - [x] first, at first
+   - [ ] then
+   - [ ] finally
+   - [ ] later
+   > спочатку = first
 
-6. "First, then..." in Ukrainian:
-   - [x] спочатку ... потім
-   - [ ] потім ... спочатку
-   - [ ] перед ... після
-   - [ ] до ... після
-   > Спочатку = first, потім = then.
+6. How do you say "I brush my teeth"?
+   - [x] Я чищу зуби
+   - [ ] Я вмиваю зуби
+   - [ ] Я голю зуби
+   - [ ] Я миваю зуби
+   > чистити зуби = to brush teeth
 
-7. How do you conjugate "вмиватися" for ти?
-   - [x] вмиваєшся
-   - [ ] вмиваєш
-   - [ ] вмиваєсь
-   - [ ] вмиватися
-   > Reflexive: вмиваєшся (informal: вмиваєшся/вмиваєсся).
-
-8. "To go to bed" in Ukrainian:
-   - [x] лягати спати
-   - [ ] йти спати
-   - [ ] лежати спати
-   - [ ] іти на сон
-   > Лягати спати = to lie down to sleep.
-
-## group-sort: Time of Day
-
-> Sort activities by when they typically happen.
-
-### Вранці (Morning)
-- прокидатися
-- вмиватися
-- снідати
-- одягатися
-
-### Вдень (Daytime)
-- працювати
-- обідати
-- їздити на роботу
-
-### Ввечері (Evening)
-- вечеряти
-- дивитися телевізор
-- приймати душ
-- лягати спати
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. о ___ locative
-   > [!answer] +
-
-2. Як проходить ___ день?
-   > [!answer] твій
-
-3. Що ти ___ вранці?
-   > [!answer] робиш
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "засинати" mean?
-   - [x] to fall asleep
-   - [ ] shower
-   - [ ] teeth
-   - [ ] to wake up
-   > "засинати" means "to fall asleep"
-
-2. What does "прокидатися" mean?
-   - [ ] shower
-   - [ ] teeth
-   - [x] to wake up
-   - [ ] to fall asleep
-   > "прокидатися" means "to wake up"
-
-3. What does "душ" mean?
-   - [x] shower
-   - [ ] to fall asleep
-   - [ ] to wake up
-   - [ ] teeth
-   > "душ" means "shower"
-
-4. What does "зуби" mean?
-   - [x] teeth
-   - [ ] to wake up
-   - [ ] shower
-   - [ ] to fall asleep
-   > "зуби" means "teeth"
-
-5. What does "зазвичай" mean?
-   - [ ] to wake up
-   - [ ] shower
-   - [ ] to fall asleep
+7. What does "зазвичай" mean?
    - [x] usually
-   > "зазвичай" means "usually"
+   - [ ] always
+   - [ ] never
+   - [ ] sometimes
+   > зазвичай = usually
 
-6. What does "роздягатися" mean?
-   - [x] to undress
+8. How do you say "I work from 9 to 5"?
+   - [x] Я працюю з дев'ятої до п'ятої
+   - [ ] Я працюю о дев'ятій о п'ятій
+   - [ ] Я працюю у дев'ять до п'ять
+   - [ ] Я працюю від 9 до 5
+   > з... до... + genitive of ordinal numbers
+
+9. What is "лягати спати"?
+   - [x] to go to bed
    - [ ] to wake up
-   - [ ] shower
    - [ ] to fall asleep
-   > "роздягатися" means "to undress"
+   - [ ] to get up
+   > лягати спати = to lie down to sleep
 
+10. What does "ввечері" mean?
+   - [x] in the evening
+   - [ ] in the morning
+   - [ ] at night
+   - [ ] during the day
+   > ввечері = in the evening
 
+## true-false: True or False?
 
-## unjumble: Word Order
+> Determine if each statement is true or false.
 
-> Put the words in the correct order to form a sentence.
+- [x] Reflexive verbs end in -ся
+   > Correct!
 
-1. о / locative / +
-   > [!answer] о + locative
-   > (at (time))
+- [x] "Прокидатися" means "to wake up"
+   > Correct!
 
-2. о / + / Loc
-   > [!answer] о + Loc.
-   > (о сьомій (at 7))
+- [ ] "Вставати" and "прокидатися" mean the same thing
+   > Incorrect. вставати = to get up, прокидатися = to wake up
 
-3. проходить / твій / день / Як
-   > [!answer] Як проходить твій день?
-   > (How does your day go?)
+- [x] "Чистити зуби" means "to brush teeth"
+   > Correct!
 
-4. ти / вранці / робиш / Що
-   > [!answer] Що ти робиш вранці?
-   > (What do you do in the morning?)
+- [x] "Щодня" means "every day"
+   > Correct!
 
+- [ ] "Вмиватися" means "to shower"
+   > Incorrect. вмиватися = to wash (face), приймати душ = to shower
+
+- [x] "Спочатку" means "first"
+   > Correct!
+
+- [x] "Засинати" means "to fall asleep"
+   > Correct!
+
+- [ ] "Ввечері" means "in the morning"
+   > Incorrect. ввечері = in the evening, вранці = in the morning
+
+- [x] Time expressions use "о" + locative case
+   > Correct!
 
 ---
 

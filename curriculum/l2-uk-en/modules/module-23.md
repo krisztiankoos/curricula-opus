@@ -225,11 +225,107 @@ A: Добре, домовились!
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Days of the Week
+## fill-in: Time Expressions
 
-> Match Ukrainian to English.
+> Choose the correct word or form to complete each sentence.
+
+1. Сьогодні ___. (Monday)
+   > [!answer] понеділок
+   > [!options] понеділок | вівторок | середа | четвер
+
+2. Я працюю ___ понеділок. (on Monday)
+   > [!answer] у
+   > [!options] в | у | на | до
+
+3. Мій день народження ___ липні. (in July)
+   > [!answer] у
+   > [!options] в | у | на | до
+
+4. ___ година? (What time is it?)
+   > [!answer] Котра
+   > [!options] Яка | Котра | Де | Що
+
+5. Зараз ___ година. (5 o'clock)
+   > [!answer] п'ята
+   > [!options] п'ять | п'ята | п'яти | п'ятий
+
+6. Зустріч ___ дев'ятій. (at 9)
+   > [!answer] о
+   > [!options] у | на | о | до
+
+7. ___ тепло. (In spring)
+   > [!answer] Навесні
+   > [!options] Весна | Навесні | У весні | Весною
+
+8. ___ холодно. (In winter)
+   > [!answer] Взимку
+   > [!options] Зима | Взимку | У зимі | Зимою
+
+9. Який сьогодні ___? (day)
+   > [!answer] день
+   > [!options] день | година | місяць | рік
+
+10. ___ числа твій день народження? (What date)
+   > [!answer] Якого
+   > [!options] Який | Яка | Якого | Яке
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. понеділок / Сьогодні
+   > [!answer] Сьогодні понеділок.
+   > (Today is Monday.)
+
+2. у / працюю / Я / середу
+   > [!answer] Я працюю у середу.
+   > (I work on Wednesday.)
+
+3. година / Котра
+   > [!answer] Котра година?
+   > (What time is it?)
+
+4. п'ята / Зараз / година
+   > [!answer] Зараз п'ята година.
+   > (It's 5 o'clock now.)
+
+5. о / Зустріч / дев'ятій
+   > [!answer] Зустріч о дев'ятій.
+   > (The meeting is at 9.)
+
+6. тепло / Навесні
+   > [!answer] Навесні тепло.
+   > (It's warm in spring.)
+
+7. холодно / Взимку
+   > [!answer] Взимку холодно.
+   > (It's cold in winter.)
+
+8. народження / день / Мій / у / липні
+   > [!answer] Мій день народження у липні.
+   > (My birthday is in July.)
+
+9. неділя / день / тижня / який
+   > [!answer] Неділя - який день тижня?
+   > (Sunday - which day of the week?)
+
+10. вівторок / після / понеділка / Йде
+   > [!answer] Вівторок йде після понеділка.
+   > (Tuesday comes after Monday.)
+
+## match-up: Days and Months
+
+> Match Ukrainian time words to their English meanings.
 
 | Left | Right |
 |------|-------|
@@ -240,189 +336,117 @@ A: Добре, домовились!
 | п'ятниця | Friday |
 | субота | Saturday |
 | неділя | Sunday |
+| січень | January |
+| лютий | February |
+| березень | March |
 
-## quiz: Time Expressions
+## quiz: Time Vocabulary
 
 > Choose the correct answer.
 
-1. "On Monday" in Ukrainian:
-   - [x] у понеділок
-   - [ ] в понеділку
-   - [ ] на понеділок
-   - [ ] понеділком
-   > У + accusative for days.
+1. What does "понеділок" mean?
+   - [x] Monday
+   - [ ] Tuesday
+   - [ ] Wednesday
+   - [ ] Thursday
+   > понеділок = Monday
 
-2. "In January" in Ukrainian:
-   - [x] у січні
-   - [ ] у січень
-   - [ ] в січню
-   - [ ] на січень
-   > У + locative for months.
+2. What does "середа" literally mean?
+   - [ ] first
+   - [x] middle
+   - [ ] third
+   - [ ] last
+   > середа = middle (of the week)
 
-3. Which month means "leaf fall"?
-   - [x] листопад
-   - [ ] жовтень
-   - [ ] вересень
-   - [ ] грудень
-   > Листопад = листя (leaves) + падати (to fall).
+3. Which months are named after nature in Ukrainian?
+   - [ ] None
+   - [ ] Only winter months
+   - [ ] Only summer months
+   - [x] All months
+   > Ukrainian months describe nature (квітень=flowers, листопад=leaf fall)
 
-4. "What time is it?" in Ukrainian:
+4. How do you ask "What time is it?"
    - [x] Котра година?
    - [ ] Яка година?
-   - [ ] Скільки час?
-   - [ ] Коли година?
-   > Котра година? is the standard question.
+   - [ ] Де година?
+   - [ ] Що година?
+   > Котра година? is the standard form
 
-5. "At 5 o'clock" in Ukrainian:
-   - [x] о п'ятій
-   - [ ] о п'ять
+5. How do you say "at 5 o'clock"?
    - [ ] у п'ять
-   - [ ] на п'яту
-   > О + locative ordinal.
+   - [x] о п'ятій
+   - [ ] на п'ять
+   - [ ] до п'яти
+   > о + ordinal number in locative
 
-6. "In summer" as an adverb:
+6. What preposition is used with days of the week?
+   - [x] у + accusative
+   - [ ] на + locative
+   - [ ] в + genitive
+   - [ ] о + accusative
+   > у понеділок, у середу (accusative)
+
+7. What preposition is used with months?
+   - [ ] на + accusative
+   - [x] у + locative
+   - [ ] в + genitive
+   - [ ] о + locative
+   > у січні, у лютому (locative)
+
+8. What does "листопад" mean?
+   - [x] November
+   - [ ] October
+   - [ ] December
+   - [ ] September
+   > листопад = leaf fall = November
+
+9. What is the adverb form for "in summer"?
+   - [ ] у літі
    - [x] влітку
-   - [ ] у літо
-   - [ ] в літі
    - [ ] літом
-   > Влітку is the adverb form.
+   - [ ] на літо
+   > влітку = in summer
 
-7. What day is "середа"?
-   - [x] Wednesday
-   - [ ] Thursday
-   - [ ] Tuesday
-   - [ ] Friday
-   > Середа = middle (of the week).
-
-8. "In the morning" in Ukrainian:
-   - [x] вранці
-   - [ ] ранком
-   - [ ] уранці
-   - [ ] на ранку
-   > Вранці = in the morning.
-
-## group-sort: Seasons & Months
-
-> Sort months into seasons.
-
-### Весна (Spring)
-- березень
-- квітень
-- травень
-
-### Літо (Summer)
-- червень
-- липень
-- серпень
-
-### Осінь (Autumn)
-- вересень
-- жовтень
-- листопад
-
-### Зима (Winter)
-- грудень
-- січень
-- лютий
-
+10. What does "година" mean?
+   - [x] hour
+   - [ ] day
+   - [ ] week
+   - [ ] month
+   > година = hour
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "тиждень" is masculine.
-   > Correct! тиждень is masculine.
+- [x] "Понеділок" comes from "after Sunday"
+   > Correct! По-неділя-ок
 
-- [x] "місяць" is masculine.
-   > Correct! місяць is masculine.
+- [x] Ukrainian months are named after nature
+   > Correct! (квітень=flowers, грудень=frozen ground)
 
-- [x] "рік" is masculine.
-   > Correct! рік is masculine.
+- [ ] "У понеділок" uses locative case
+   > Incorrect. Days use accusative: у понеділок
 
-- [x] "година" is feminine.
-   > Correct! година is feminine.
+- [x] "У січні" uses locative case
+   > Correct! Months use locative
 
-- [ ] "хвилина" is masculine.
-   > Incorrect. хвилина is feminine.
+- [x] "Котра година?" asks about time
+   > Correct!
 
-- [ ] "понеділок" is feminine.
-   > Incorrect. понеділок is masculine.
+- [ ] "Влітку" means "in spring"
+   > Incorrect. Влітку = in summer
 
+- [x] "Навесні" means "in spring"
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [x] "Неділя" means "Sunday" (no work day)
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [ ] Time uses cardinal numbers (один, два)
+   > Incorrect. Time uses ordinal numbers (перша, друга)
 
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "середа" mean?
-   - [ ] hour
-   - [x] Wednesday
-   - [ ] year
-   - [ ] week
-   > "середа" means "Wednesday"
-
-2. What does "година" mean?
-   - [ ] Wednesday
-   - [x] hour
-   - [ ] year
-   - [ ] week
-   > "година" means "hour"
-
-3. What does "тиждень" mean?
-   - [x] week
-   - [ ] year
-   - [ ] Wednesday
-   - [ ] hour
-   > "тиждень" means "week"
-
-4. What does "рік" mean?
-   - [ ] week
-   - [x] year
-   - [ ] hour
-   - [ ] Wednesday
-   > "рік" means "year"
-
-5. What does "січень" mean?
-   - [ ] week
-   - [x] January
-   - [ ] hour
-   - [ ] Wednesday
-   > "січень" means "January"
-
-6. What does "четвер" mean?
-   - [ ] week
-   - [ ] hour
-   - [ ] Wednesday
-   - [x] Thursday
-   > "четвер" means "Thursday"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. сьогодні / Який / день
-   > [!answer] Який сьогодні день?
-   > (What day is it today?)
-
-2. Зараз / година / третя
-   > [!answer] Зараз третя година.
-   > (It's 3 o'clock now.)
-
-3. О / котрій / годині
-   > [!answer] О котрій годині?
-   > (At what time?)
-
-4. ми / Коли / зустрінемося
-   > [!answer] Коли ми зустрінемося?
-   > (When will we meet?)
-
+- [x] "О п'ятій" means "at 5 o'clock"
+   > Correct!
 
 ---
 

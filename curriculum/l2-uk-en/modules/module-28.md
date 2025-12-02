@@ -203,207 +203,228 @@ Describe the weather for:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
+
+## fill-in: Weather Expressions
+
+> Choose the correct word or form.
+
+1. Сьогодні ___. (cold - impersonal)
+   > [!answer] холодно
+   > [!options] холодний | холодна | холодне | холодно
+
+2. Вчора було ___. (warm - past)
+   > [!answer] тепло
+   > [!options] тепло | теплий | тепла | тепле
+
+3. Завтра буде ___. (hot - future)
+   > [!answer] жарко
+   > [!options] жарко | жаркий | жарка | жарке
+
+4. Йде ___. (rain)
+   > [!answer] дощ
+   > [!options] дощ | дощовий | дощова | дощі
+
+5. Йде ___. (snow)
+   > [!answer] сніг
+   > [!options] сніг | сніжний | снігова | сніги
+
+6. Світить ___. (sun)
+   > [!answer] сонце
+   > [!options] сонце | сонячний | сонячна | сонячно
+
+7. Дме ___. (wind)
+   > [!answer] вітер
+   > [!options] вітер | вітряний | вітряна | вітряно
+
+8. Погода сьогодні ___. (sunny - feminine)
+   > [!answer] сонячна
+   > [!options] сонячний | сонячна | сонячне | сонячні
+
+9. Небо ___. (cloudy - neuter)
+   > [!answer] хмарне
+   > [!options] хмарний | хмарна | хмарне | хмарні
+
+10. Скільки сьогодні ___? (degrees)
+   > [!answer] градусів
+   > [!options] градус | градуси | градусів | градусом
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. холодно / Сьогодні
+   > [!answer] Сьогодні холодно.
+   > (Today it's cold.)
+
+2. тепло / Вчора / було
+   > [!answer] Вчора було тепло.
+   > (Yesterday it was warm.)
+
+3. буде / жарко / Завтра
+   > [!answer] Завтра буде жарко.
+   > (Tomorrow it will be hot.)
+
+4. дощ / Йде
+   > [!answer] Йде дощ.
+   > (It's raining.)
+
+5. сніг / Йде
+   > [!answer] Йде сніг.
+   > (It's snowing.)
+
+6. сонце / Світить
+   > [!answer] Світить сонце.
+   > (The sun is shining.)
+
+7. вітер / Дме
+   > [!answer] Дме вітер.
+   > (The wind is blowing.)
+
+8. погода / Яка / сьогодні
+   > [!answer] Яка сьогодні погода?
+   > (What's the weather today?)
+
+9. дощ / Здається / буде
+   > [!answer] Здається, буде дощ.
+   > (It looks like rain.)
+
+10. парасольку / Візьми
+   > [!answer] Візьми парасольку!
+   > (Take an umbrella!)
 
 ## match-up: Weather Vocabulary
 
-> Match Ukrainian to English.
+> Match Ukrainian weather words to their English meanings.
 
 | Left | Right |
 |------|-------|
+| погода | weather |
 | сонце | sun |
+| хмара | cloud |
 | дощ | rain |
 | сніг | snow |
 | вітер | wind |
-| хмара | cloud |
+| туман | fog |
 | гроза | thunderstorm |
+| мороз | frost |
+| веселка | rainbow |
 
-## quiz: Weather Expressions
+## quiz: Weather Grammar
 
 > Choose the correct answer.
 
-1. "It's cold" in Ukrainian:
-   - [x] Холодно.
-   - [ ] Холодний.
-   - [ ] Холодна.
-   - [ ] Холодне.
-   > Impersonal: холодно.
+1. How do you say "It's cold" (impersonal)?
+   - [x] Холодно
+   - [ ] Холодний
+   - [ ] Холодна
+   - [ ] Холодне
+   > Impersonal weather: adverb form
 
-2. "It's raining" - Йде ___.
-   - [x] дощ
-   - [ ] дощовий
-   - [ ] дощем
-   - [ ] дощі
-   > Йде дощ = rain goes.
+2. How do you say "It's raining"?
+   - [x] Йде дощ
+   - [ ] Дощить
+   - [ ] Є дощ
+   - [ ] Робить дощ
+   > Literally "rain goes"
 
-3. "Sunny weather" in Ukrainian:
-   - [x] сонячна погода
-   - [ ] сонце погода
-   - [ ] сонячний погода
-   - [ ] сонячне погода
-   > Погода (f): сонячна.
+3. How do you change to past tense: "It was warm"?
+   - [ ] Тепло
+   - [x] Було тепло
+   - [ ] Теплий було
+   - [ ] Тепла було
+   > Add "було" before the adverb
 
-4. "It was warm yesterday" - Вчора ___ тепло.
-   - [x] було
-   - [ ] був
-   - [ ] була
-   - [ ] є
-   > Past impersonal: було.
+4. How do you change to future: "It will be hot"?
+   - [ ] Жарко
+   - [x] Буде жарко
+   - [ ] Жаркий буде
+   - [ ] Жарка буде
+   > Add "буде" before the adverb
 
-5. What is "веселка"?
+5. What does "Яка сьогодні погода?" mean?
+   - [x] What's the weather today?
+   - [ ] Where is the weather?
+   - [ ] Is it raining?
+   - [ ] How is the rain?
+   > Standard weather question
+
+6. What does "веселка" mean?
    - [x] rainbow
-   - [ ] sun
    - [ ] cloud
-   - [ ] storm
-   > Веселка = rainbow (from "cheerful").
+   - [ ] sun
+   - [ ] wind
+   > веселка = rainbow (from веселий=cheerful)
 
-6. "The wind is blowing" - ___ вітер.
-   - [x] Дме
-   - [ ] Йде
-   - [ ] Світить
-   - [ ] Буде
-   > Дме вітер = wind blows.
+7. What verb is used with "сонце"?
+   - [x] світить (shines)
+   - [ ] йде (goes)
+   - [ ] дме (blows)
+   - [ ] падає (falls)
+   > Світить сонце (The sun shines)
 
-7. "It will be snowing" - Буде йти ___.
-   - [x] сніг
-   - [ ] сніговий
-   - [ ] снігом
-   - [ ] сніги
-   > Буде йти сніг.
+8. What verb is used with "вітер"?
+   - [ ] світить
+   - [ ] йде
+   - [x] дме (blows)
+   - [ ] падає
+   > Дме вітер (The wind blows)
 
-8. Which season is "жарко"?
-   - [x] літо
-   - [ ] зима
-   - [ ] весна
-   - [ ] осінь
-   > Літо = summer (hot).
+9. How do you say "sunny weather"?
+   - [ ] сонячний погода
+   - [x] сонячна погода
+   - [ ] сонячне погода
+   - [ ] сонячно погода
+   > погода is feminine
 
-## group-sort: Weather Types
-
-> Sort weather words by type.
-
-### Precipitation
-- дощ
-- сніг
-- град
-- туман
-
-### Temperature
-- тепло
-- холодно
-- жарко
-- прохолодно
-
-### Sky Conditions
-- сонячно
-- хмарно
-- ясно
-- похмуро
-
+10. What does "мороз" mean?
+   - [x] frost
+   - [ ] fog
+   - [ ] rain
+   - [ ] snow
+   > мороз = frost (winter cold)
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "погода" is feminine.
-   > Correct! погода is feminine.
+- [x] Weather expressions are impersonal (no subject)
+   > Correct! холодно, тепло, жарко
 
-- [x] "хмара" is feminine.
-   > Correct! хмара is feminine.
+- [x] "Йде дощ" literally means "rain goes"
+   > Correct!
 
-- [x] "дощ" is masculine.
-   > Correct! дощ is masculine.
+- [ ] Past tense weather: "Холодний було"
+   > Incorrect. "Було холодно"
 
-- [x] "сніг" is masculine.
-   > Correct! сніг is masculine.
+- [x] "Світить сонце" means "The sun is shining"
+   > Correct!
 
-- [ ] "вітер" is feminine.
-   > Incorrect. вітер is masculine.
+- [x] "Дме вітер" means "The wind is blowing"
+   > Correct!
 
-- [ ] "гроза" is masculine.
-   > Incorrect. гроза is feminine.
+- [ ] "Погода" is masculine
+   > Incorrect. погода is feminine
 
+- [x] "Веселка" means "rainbow"
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [x] Ukraine uses Celsius for temperature
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [ ] "Сонячний погода" is correct
+   > Incorrect. погода is feminine: "сонячна погода"
 
-1. Яка ___ погода?
-   > [!answer] сьогодні
-
-2. Завтра ___ дощ.
-   > [!answer] буде
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "хмара" mean?
-   - [ ] temperature
-   - [x] cloud
-   - [ ] cold (adv)
-   - [ ] wind
-   > "хмара" means "cloud"
-
-2. What does "температура" mean?
-   - [ ] cloud
-   - [x] temperature
-   - [ ] cold (adv)
-   - [ ] wind
-   > "температура" means "temperature"
-
-3. What does "вітер" mean?
-   - [ ] cold (adv)
-   - [x] wind
-   - [ ] cloud
-   - [ ] temperature
-   > "вітер" means "wind"
-
-4. What does "холодно" mean?
-   - [x] cold (adv)
-   - [ ] cloud
-   - [ ] temperature
-   - [ ] wind
-   > "холодно" means "cold (adv)"
-
-5. What does "сніг" mean?
-   - [ ] cloud
-   - [x] snow
-   - [ ] wind
-   - [ ] temperature
-   > "сніг" means "snow"
-
-6. What does "хмарний" mean?
-   - [ ] wind
-   - [ ] cloud
-   - [ ] temperature
-   - [x] cloudy
-   > "хмарний" means "cloudy"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. сьогодні / Яка / погода
-   > [!answer] Яка сьогодні погода?
-   > (What's the weather today?)
-
-2. буде / Завтра / дощ
-   > [!answer] Завтра буде дощ.
-   > (Tomorrow there will be rain.)
-
-3. сьогодні / Яка / погода
-   > [!answer] Яка сьогодні погода?
-   > (What's the weather today?)
-
-4. Яка / погода / жахлива
-   > [!answer] Яка жахлива погода!
-   > (What terrible weather!)
-
+- [x] "Мороз" means "frost"
+   > Correct!
 
 ---
 

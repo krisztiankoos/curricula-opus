@@ -211,179 +211,228 @@ Say what you want:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Nominative to Accusative
-
-> Match the nominative form to its accusative form.
-
-| Left (Nominative) | Right (Accusative) |
-|-------------------|-------------------|
-| книга | книгу |
-| вода | воду |
-| газета | газету |
-| кава | каву |
-| стіл | стіл |
-| вікно | вікно |
-
-## quiz: Accusative Forms
+## fill-in: Accusative Case
 
 > Choose the correct accusative form.
 
-1. "I see the book" - Я бачу ___.
-   - [x] книгу
-   - [ ] книга
-   - [ ] книги
-   - [ ] книгою
-   > Книга (f, -а) → книгу in accusative.
+1. Я бачу ___. (книга)
+   > [!answer] книгу
+   > [!options] книга | книгу | книзі | книги
 
-2. "I see the table" - Я бачу ___.
-   - [x] стіл
-   - [ ] столу
-   - [ ] стола
-   - [ ] столом
-   > Стіл (m, inanimate) - no change in accusative.
+2. Вона читає ___. (газета)
+   > [!answer] газету
+   > [!options] газета | газету | газеті | газети
 
-3. "She wants coffee" - Вона хоче ___.
-   - [x] каву
-   - [ ] кава
-   - [ ] кави
-   - [ ] кавою
-   > Кава (f, -а) → каву in accusative.
+3. Ми хочемо ___. (вода)
+   > [!answer] воду
+   > [!options] вода | воду | воді | води
 
-4. "We see the window" - Ми бачимо ___.
-   - [x] вікно
-   - [ ] вікну
-   - [ ] вікна
-   - [ ] вікном
-   > Вікно (n, inanimate) - no change in accusative.
+4. Я бачу ___. (стіл) [no change - masculine inanimate]
+   > [!answer] стіл
+   > [!options] стіл | стола | столі | столу
 
-5. "He reads the newspaper" - Він читає ___.
-   - [x] газету
-   - [ ] газета
-   - [ ] газети
-   - [ ] газетою
-   > Газета (f, -а) → газету in accusative.
+5. Він має ___. (паспорт) [no change - masculine inanimate]
+   > [!answer] паспорт
+   > [!options] паспорт | паспорта | паспорті | паспорту
 
-6. "They want water" - Вони хочуть ___.
-   - [x] воду
-   - [ ] вода
-   - [ ] води
-   - [ ] водою
-   > Вода (f, -а) → воду in accusative.
+6. Вона п'є ___. (кава)
+   > [!answer] каву
+   > [!options] кава | каву | каві | кави
 
-7. "I love Ukraine" - Я люблю ___.
-   - [x] Україну
-   - [ ] Україна
-   - [ ] України
-   - [ ] Україною
-   > Україна (f, -а) → Україну in accusative.
+7. Я бачу ___. (вікно) [no change - neuter]
+   > [!answer] вікно
+   > [!options] вікно | вікна | вікні | вікну
 
-8. "She drinks milk" - Вона п'є ___.
-   - [x] молоко
-   - [ ] молоку
-   - [ ] молока
-   - [ ] молоком
-   > Молоко (n, inanimate) - no change in accusative.
+8. Ми хочемо ___. (піца)
+   > [!answer] піцу
+   > [!options] піца | піцу | піці | піци
 
-## group-sort: Changes vs No Change
+9. Він бере ___. (валіза)
+   > [!answer] валізу
+   > [!options] валіза | валізу | валізі | валізи
 
-> Sort nouns by whether they change in accusative.
+10. Вони читають ___. (журнал) [no change - masculine inanimate]
+   > [!answer] журнал
+   > [!options] журнал | журнала | журналі | журналу
 
-### Changes in Accusative (Feminine -а/-я)
-- книга → книгу
-- вода → воду
-- кава → каву
-- газета → газету
-- земля → землю
+## unjumble: Build the Sentence
 
-### No Change in Accusative (Masc/Neut Inanimate)
-- стіл → стіл
-- вікно → вікно
-- журнал → журнал
-- молоко → молоко
-- хліб → хліб
+> Arrange the words in the correct order.
 
+1. книгу / Я / бачу
+   > [!answer] Я бачу книгу.
+   > (I see a book.)
 
-## fill-in: Fill in the Blank
+2. газету / читає / Вона
+   > [!answer] Вона читає газету.
+   > (She reads a newspaper.)
 
-> Fill in the blanks with the correct word.
+3. воду / хочемо / Ми
+   > [!answer] Ми хочемо воду.
+   > (We want water.)
 
-1. Я ___ книгу.
-   > [!answer] бачу
+4. бачу / стіл / Я
+   > [!answer] Я бачу стіл.
+   > (I see a table.)
 
-2. Вона ___ листа.
-   > [!answer] читає
+5. каву / Він / п'є
+   > [!answer] Він п'є каву.
+   > (He drinks coffee.)
 
-3. Ми ___ воду.
-   > [!answer] хочемо
+6. хліб / Ми / хочемо
+   > [!answer] Ми хочемо хліб.
+   > (We want bread.)
 
+7. валізу / бере / Вона
+   > [!answer] Вона бере валізу.
+   > (She takes a suitcase.)
 
+8. журнал / читає / Він
+   > [!answer] Він читає журнал.
+   > (He reads a magazine.)
 
-## quiz: Meaning Check
+9. паспорт / мій / Де
+   > [!answer] Де мій паспорт?
+   > (Where is my passport?)
+
+10. документ / має / Він
+   > [!answer] Він має документ.
+   > (He has a document.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
+
+| Left | Right |
+|------|-------|
+| бачити | to see |
+| читати | to read |
+| хотіти | to want |
+| брати | to take |
+| газета | newspaper |
+| журнал | magazine |
+| паспорт | passport |
+| квиток | ticket |
+| валіза | suitcase |
+| документ | document |
+
+## quiz: Accusative Rules
 
 > Choose the correct answer.
 
-1. What does "чути" mean?
-   - [ ] to take
-   - [ ] ticket
-   - [x] to hear
-   - [ ] passport
-   > "чути" means "to hear"
+1. What is the accusative of "книга"?
+   - [ ] книга
+   - [x] книгу
+   - [ ] книзі
+   - [ ] книги
+   > Feminine -а → -у in accusative
 
-2. What does "квиток" mean?
-   - [ ] to hear
-   - [x] ticket
-   - [ ] passport
-   - [ ] to take
-   > "квиток" means "ticket"
+2. What is the accusative of "стіл" (inanimate)?
+   - [x] стіл
+   - [ ] стола
+   - [ ] столі
+   - [ ] столу
+   > Masculine inanimate = no change
 
-3. What does "паспорт" mean?
-   - [x] passport
-   - [ ] to take
-   - [ ] to hear
-   - [ ] ticket
-   > "паспорт" means "passport"
+3. What is the accusative of "вікно" (inanimate)?
+   - [x] вікно
+   - [ ] вікна
+   - [ ] вікні
+   - [ ] вікну
+   > Neuter inanimate = no change
 
-4. What does "брати" mean?
-   - [ ] ticket
-   - [ ] to hear
-   - [ ] passport
+4. Which gender changes in accusative for inanimate nouns?
+   - [ ] masculine
+   - [x] feminine
+   - [ ] neuter
+   - [ ] all genders
+   > Only feminine (-а → -у, -я → -ю)
+
+5. What does "Я бачу книгу" mean?
+   - [x] I see a book
+   - [ ] I have a book
+   - [ ] I want a book
+   - [ ] I read a book
+   > "бачити" = to see
+
+6. What does "Вона хоче воду" mean?
+   - [ ] She sees water
+   - [ ] She has water
+   - [x] She wants water
+   - [ ] She drinks water
+   > "хотіти" = to want
+
+7. What is the accusative of "вода"?
+   - [ ] вода
+   - [x] воду
+   - [ ] воді
+   - [ ] води
+   > Feminine -а → -у
+
+8. What is the accusative of "кава"?
+   - [ ] кава
+   - [x] каву
+   - [ ] каві
+   - [ ] кави
+   > Feminine -а → -у
+
+9. What does "брати" mean?
+   - [ ] to see
+   - [ ] to read
    - [x] to take
-   > "брати" means "to take"
+   - [ ] to want
+   > "брати" = to take
 
-5. What does "давати" mean?
-   - [ ] ticket
-   - [ ] passport
-   - [x] to give
-   - [ ] to hear
-   > "давати" means "to give"
+10. Which verb does NOT take accusative?
+   - [ ] бачити (to see)
+   - [ ] читати (to read)
+   - [ ] хотіти (to want)
+   - [x] бути (to be)
+   > "бути" doesn't take direct objects
 
-6. What does "мати" mean?
-   - [x] to have
-   - [ ] ticket
-   - [ ] to hear
-   - [ ] passport
-   > "мати" means "to have"
+## true-false: True or False?
 
+> Determine if each statement is true or false.
 
+- [x] Feminine nouns change in accusative: -а → -у
+   > Correct!
 
-## unjumble: Word Order
+- [x] Masculine inanimate nouns don't change in accusative
+   > Correct!
 
-> Put the words in the correct order to form a sentence.
+- [x] Neuter inanimate nouns don't change in accusative
+   > Correct!
 
-1. бачу / книгу / Я
-   > [!answer] Я бачу книгу.
-   > (книгу (book))
+- [ ] "Я бачу стола" is correct
+   > Incorrect. Masculine inanimate = no change: "Я бачу стіл"
 
-2. Вона / листа / читає
-   > [!answer] Вона читає листа.
-   > (листа (letter))
+- [x] "Вона читає газету" is correct
+   > Correct! газета → газету
 
-3. Ми / хочемо / воду
-   > [!answer] Ми хочемо воду.
-   > (воду (water))
+- [ ] "Він хоче кава" is correct
+   > Incorrect. Should be "Він хоче каву"
 
+- [x] "бачити" takes accusative
+   > Correct!
+
+- [x] "читати" takes accusative
+   > Correct!
+
+- [ ] "журнал" becomes "журналу" in accusative
+   > Incorrect. Masculine inanimate = no change
+
+- [x] "валіза" becomes "валізу" in accusative
+   > Correct!
 
 ---
 

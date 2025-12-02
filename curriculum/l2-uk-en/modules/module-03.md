@@ -4,18 +4,20 @@ title: "The Gender Code"
 subtitle: "Gender & The 4 Declensions"
 level: A1
 phase: A1.1
-duration: 45
+duration: 60
 transliteration: full
-tags: [grammar, nouns, gender, declensions, basics]
+tags: [grammar, nouns, gender, declensions, basics, pronouns]
 objectives:
   - Understand that every Ukrainian noun has grammatical gender
   - Learn the 4 Declension Groups (Відміни)
   - Classify nouns into Declensions based on endings
   - Predict gender from Declension group
+  - Use Personal Pronouns (I, You, He, She, We, They) correctly
 grammar:
   - Grammatical gender (чоловічий, жіночий, середній рід)
   - The 4 Noun Declensions (I, II, III, IV)
   - Noun ending patterns
+  - Personal Pronouns (Я, Ти, Він, Вона, Воно...)
 ---
 
 # Lesson Content
@@ -44,6 +46,27 @@ Think of them as "teams" that follow the same rules.
 > Learn the Team, and you'll know exactly how to change the word later!
 
 ## presentation
+
+### Personal Pronouns (Subject)
+
+Before we analyze nouns, we need the words to replace them!
+
+| English | Ukrainian | Pronunciation |
+|---------|-----------|---------------|
+| **I** | **Я** | /ya/ |
+| **You** (informal) | **Ти** | /tɪ/ |
+| **He** | **Він** | /vin/ |
+| **She** | **Вона** | /vɔˈnɑ/ |
+| **It** | **Воно** | /vɔˈnɔ/ |
+| **We** | **Ми** | /mɪ/ |
+| **You** (formal/plural) | **Ви** | /vɪ/ |
+| **They** | **Вони** | /vɔˈnɪ/ |
+
+> ⚡ **Pro Tip: Ти vs Ви**
+>
+> - **Ти** is for friends, family, children, and pets.
+> - **Ви** is for strangers, elders, bosses, and groups of people (plural).
+> When in doubt, use **Ви** to be polite!
 
 ### Group I: The "-A/-YA" Team (First Declension)
 
@@ -199,181 +222,290 @@ Look at these words and determine: **Group** and **Gender**.
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Words to Groups
+## fill-in: What Does It Mean?
 
-> Match the word to its Declension Group.
+> Choose the correct English meaning.
+
+1. What does "стіл" mean?
+   > [!answer] table
+   > [!options] table | book | window | family
+
+2. What does "книга" mean?
+   > [!answer] book
+   > [!options] day | book | sea | table
+
+3. What does "вікно" mean?
+   > [!answer] window
+   > [!options] earth | day | window | group
+
+4. What does "сім'я" mean?
+   > [!answer] family
+   > [!options] sun | family | table | day
+
+5. What does "море" mean?
+   > [!answer] sea
+   > [!options] night | group | sea | book
+
+6. What does "день" mean?
+   > [!answer] day
+   > [!options] day | earth | window | salt
+
+7. What does "ніч" mean?
+   > [!answer] night
+   > [!options] sea | group | calf | night
+
+8. What does "сонце" mean?
+   > [!answer] sun
+   > [!options] book | night | sun | day
+
+9. What does "радість" mean?
+   > [!answer] joy
+   > [!options] joy | table | sea | day
+
+10. What does "земля" mean?
+   > [!answer] earth
+   > [!options] group | family | calf | earth
+
+## select: He, She, or It?
+
+> Replace the noun with the correct pronoun (Він, Вона, Воно).
+
+1. **Мама** (Mom) is...
+   > [!answer] Вона
+   > [!options] Він | Вона | Воно
+
+2. **Тато** (Dad) is...
+   > [!answer] Він
+   > [!options] Він | Вона | Воно
+
+3. **Стіл** (Table) is...
+   > [!answer] Він
+   > [!options] Він | Вона | Воно
+   > (Masculine noun)
+
+4. **Вікно** (Window) is...
+   > [!answer] Воно
+   > [!options] Він | Вона | Воно
+   > (Neuter noun)
+
+5. **Книга** (Book) is...
+   > [!answer] Вона
+   > [!options] Він | Вона | Воно
+
+6. **Сонце** (Sun) is...
+   > [!answer] Воно
+   > [!options] Він | Вона | Воно
+
+7. **День** (Day) is...
+   > [!answer] Він
+   > [!options] Він | Вона | Воно
+
+8. **Ніч** (Night) is...
+   > [!answer] Вона
+   > [!options] Він | Вона | Воно
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. стіл / мій / Це
+   > [!answer] Це мій стіл.
+   > (This is my table.)
+
+2. книга / моя / Це
+   > [!answer] Це моя книга.
+   > (This is my book.)
+
+3. вікно / Це / моє
+   > [!answer] Це моє вікно.
+   > (This is my window.)
+
+4. сім'я / Це / моя
+   > [!answer] Це моя сім'я.
+   > (This is my family.)
+
+5. море / моє / Це
+   > [!answer] Це моє море.
+   > (This is my sea.)
+
+6. мій / день / Це
+   > [!answer] Це мій день.
+   > (This is my day.)
+
+7. земля / Це / моя
+   > [!answer] Це моя земля.
+   > (This is my land.)
+
+8. сонце / моє / Це
+   > [!answer] Це моє сонце.
+   > (This is my sun.)
+
+9. Тут / стіл / є
+   > [!answer] Тут є стіл.
+   > (Here is a table.)
+
+10. є / вікно / Там
+   > [!answer] Там є вікно.
+   > (There is a window.)
+
+## group-sort: Sort by Gender
+
+> Sort the nouns into gender categories.
+
+### Masculine (Чоловічий рід)
+- стіл
+- день
+
+### Feminine (Жіночий рід)
+- книга
+- земля
+- група
+- сім'я
+- ніч
+- сіль
+- радість
+
+### Neuter (Середній рід)
+- вікно
+- море
+- сонце
+- теля
+- кошеня
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| Мама (-а) | Group I |
-| Стіл (cons) | Group II (Masc) |
-| Вікно (-о) | Group II (Neut) |
-| Радість (-ість) | Group III |
-| Теля (baby) | Group IV |
-
-## quiz: Identify Group & Gender
-
-> Analyze the word and choose the correct classification.
-
-1. **Газета** (Newspaper)
-   - [x] Group I (Feminine)
-   - [ ] Group II (Masculine)
-   - [ ] Group II (Neuter)
-   - [ ] Group III (Feminine)
-   > Ends in -а → Group I.
-
-2. **Телефон** (Phone)
-   - [ ] Group I (Feminine)
-   - [x] Group II (Masculine)
-   - [ ] Group III (Feminine)
-   - [ ] Group IV (Neuter)
-   > Ends in consonant → Group II Masculine.
-
-3. **Море** (Sea)
-   - [ ] Group I (Feminine)
-   - [ ] Group II (Masculine)
-   - [x] Group II (Neuter)
-   - [ ] Group IV (Neuter)
-   > Ends in -е → Group II Neuter.
-
-4. **Ніч** (Night)
-   - [ ] Group I (Feminine)
-   - [ ] Group II (Masculine)
-   - [x] Group III (Feminine)
-   - [ ] Group IV (Neuter)
-   > Ends in -ч (soft context), implies Group III.
-
-5. **Цуценя** (Puppy)
-   - [ ] Group I (Feminine)
-   - [ ] Group II (Neuter)
-   - [ ] Group III (Feminine)
-   - [x] Group IV (Neuter)
-   > Baby animal in -я → Group IV.
-
-6. **Сіль** (Salt)
-   - [ ] Group I (Feminine)
-   - [ ] Group II (Masculine)
-   - [x] Group III (Feminine)
-   - [ ] Group IV (Neuter)
-   > Common Group III word (Feminine).
-
-7. **Музей** (Museum)
-   - [ ] Group I (Feminine)
-   - [x] Group II (Masculine)
-   - [ ] Group III (Feminine)
-   - [ ] Group IV (Neuter)
-   > Ends in -й → Group II Masculine.
-
-## group-sort: Declension Families
-
-> Sort words into their Declension Groups.
-
-### Group I (-a/-ya)
-- мама
-- книга
-- земля
-- сестра
-- пісня
-
-### Group II (Consonant/-o/-e)
-- стіл
-- вікно
-- день
-- музей
-- сонце
-
-### Group III (-ь Feminine)
-- ніч
-- радість
-- любов
-- сіль
-- осінь
-
-### Group IV (Baby Animals)
-- теля
-- кошеня
-- цуценя
-- курча
-- дівча
-
-
-## true-false: True or False?
-
-> Determine if each statement is true or false.
-
-- [x] "відміна" is feminine.
-   > Correct! відміна is feminine.
-
-- [x] "група" is feminine.
-   > Correct! група is feminine.
-
-- [x] "стіл" is masculine.
-   > Correct! стіл is masculine.
-
-- [x] "вікно" is neuter.
-   > Correct! вікно is neuter.
-
-- [ ] "книга" is masculine.
-   > Incorrect. книга is feminine.
-
-- [ ] "ніч" is masculine.
-   > Incorrect. ніч is feminine.
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-
+| стіл | table |
+| книга | book |
+| вікно | window |
+| сім'я | family |
+| море | sea |
+| день | day |
+| ніч | night |
+| земля | earth |
+| сонце | sun |
+| радість | joy |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "сім'я" mean?
-   - [ ] declension
-   - [x] family
-   - [ ] group
-   - [ ] window
-   > "сім'я" means "family"
-
-2. What does "вікно" mean?
-   - [ ] family
-   - [ ] declension
-   - [ ] group
+1. What does "вікно" mean?
+   - [ ] book
    - [x] window
+   - [ ] family
+   - [ ] day
    > "вікно" means "window"
 
-3. What does "група" mean?
-   - [ ] declension
-   - [ ] window
-   - [ ] family
-   - [x] group
-   > "група" means "group"
+2. What does "сіль" mean?
+   - [x] salt
+   - [ ] earth
+   - [ ] night
+   - [ ] sea
+   > "сіль" means "salt"
 
-4. What does "відміна" mean?
-   - [x] declension
-   - [ ] family
-   - [ ] window
-   - [ ] group
-   > "відміна" means "declension"
-
-5. What does "стіл" mean?
+3. What does "стіл" mean?
+   - [ ] salt
+   - [ ] night
+   - [ ] sun
    - [x] table
-   - [ ] window
-   - [ ] group
-   - [ ] family
    > "стіл" means "table"
 
-6. What does "день" mean?
-   - [ ] group
-   - [x] day
-   - [ ] window
+4. What does "сонце" mean?
+   - [ ] sea
    - [ ] family
-   > "день" means "day"
+   - [x] sun
+   - [ ] book
+   > "сонце" means "sun"
 
+5. What does "ніч" mean?
+   - [ ] day
+   - [x] night
+   - [ ] book
+   - [ ] table
+   > "ніч" means "night"
+
+6. What does "книга" mean?
+   - [ ] window
+   - [ ] salt
+   - [ ] sea
+   - [x] book
+   > "книга" means "book"
+
+7. What does "теля" mean?
+   - [ ] kitten
+   - [ ] family
+   - [ ] group
+   - [x] calf
+   > "теля" means "calf"
+
+8. What does "група" mean?
+   - [ ] day
+   - [ ] earth
+   - [x] group
+   - [ ] joy
+   > "група" means "group"
+
+9. What does "море" mean?
+   - [ ] sun
+   - [ ] night
+   - [ ] book
+   - [x] sea
+   > "море" means "sea"
+
+10. What does "земля" mean?
+   - [ ] family
+   - [x] earth
+   - [ ] window
+   - [ ] table
+   > "земля" means "earth"
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "радість" means "joy"
+   > Correct!
+
+- [ ] "стіл" means "salt"
+   > Incorrect. "стіл" means "table"
+
+- [ ] "ніч" means "day"
+   > Incorrect. "ніч" means "night"
+
+- [x] "книга" means "book"
+   > Correct!
+
+- [ ] "море" means "group"
+   > Incorrect. "море" means "sea"
+
+- [x] "відміна" means "declension"
+   > Correct!
+
+- [x] "сім'я" means "family"
+   > Correct!
+
+- [ ] "день" means "night"
+   > Incorrect. "день" means "day"
+
+- [ ] "сонце" means "table"
+   > Incorrect. "сонце" means "sun"
+
+- [x] "земля" means "earth"
+   > Correct!
 
 ---
 
@@ -396,6 +528,14 @@ Look at these words and determine: **Group** and **Gender**.
 | море | /ˈmɔrɛ/ | sea | noun | n | Group II (soft) |
 | земля | /zɛmˈlʲa/ | earth | noun | f | Group I (soft) |
 | сім'я | /sʲiˈmjuɑ/ | family | noun | f | Group I (soft) |
+| я | /jɑ/ | I | pron | - | Subject |
+| ти | /tɪ/ | you (informal) | pron | - | Singular |
+| він | /vʲin/ | he | pron | m | Subject |
+| вона | /vɔˈnɑ/ | she | pron | f | Subject |
+| воно | /vɔˈnɔ/ | it | pron | n | Subject |
+| ми | /mɪ/ | we | pron | - | Plural |
+| ви | /vɪ/ | you (formal/plural) | pron | - | Plural |
+| вони | /vɔˈnɪ/ | they | pron | - | Plural |
 
 ---
 
@@ -420,16 +560,18 @@ Knowing the group now saves you headaches later!
 
 > 💡 **What You Learned Today**
 >
-> - Nouns belong to **4 Declension Groups (Families)**
+> - **Personal Pronouns:** Я, Ти, Він, Вона, Ми, Ви, Вони
+> - **Nouns belong to 4 Declension Groups (Families)**
 > - **Group I:** -а/-я nouns (mostly Feminine)
 > - **Group II:** Consonant nouns (Masculine) + -о/-е nouns (Neuter)
 > - **Group III:** -ь nouns (Feminine)
 > - **Group IV:** Baby animals (Neuter)
 > - Identifying the Group helps you predict the Gender
+> - **Gender Match:** Він = Masculine nouns, Вона = Feminine nouns, Воно = Neuter nouns
 
 > 🎯 **Coming Next**
 >
-> In Module 04, we'll use these nouns to make sentences:
-> - **Це** стіл. (Group II)
-> - **Це** мама. (Group I)
-> - We will learn the pronoun "Це" (This is).
+> In Module 04, we will bring these nouns to life with **Verbs**:
+> - How to conjugate verbs (I do, You do, He does)
+> - The two Conjugation Groups (Type 1 vs Type 2)
+> - Building full sentences like "I see the table" (Wait, that requires cases! We'll start with "I read" and "I speak").

@@ -222,153 +222,228 @@ Say what you don't have:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Nominative to Genitive
-
-> Match nominative forms to their genitive forms.
-
-| Left (Nominative) | Right (Genitive) |
-|-------------------|------------------|
-| студент | студента |
-| книга | книги |
-| вікно | вікна |
-| день | дня |
-| вода | води |
-| час | часу |
-
-## quiz: Genitive Forms
+## fill-in: Genitive Case
 
 > Choose the correct genitive form.
 
-1. "The student's book" - книга ___.
-   - [x] студента
-   - [ ] студент
-   - [ ] студенту
-   - [ ] студентом
-   > Masculine genitive: студент → студента.
+1. Немає ___. (час - time)
+   > [!answer] часу
+   > [!options] час | часу | часі | часом
 
-2. "There is no time" - Немає ___.
-   - [x] часу
-   - [ ] час
-   - [ ] часом
-   - [ ] часі
-   > Час (m) → часу in genitive.
+2. Книга ___. (студент - student's book)
+   > [!answer] студента
+   > [!options] студент | студента | студенту | студенті
 
-3. "A cup of coffee" - чашка ___.
-   - [x] кави
-   - [ ] кава
-   - [ ] каву
-   - [ ] кавою
-   > Кава (f, -а) → кави in genitive.
+3. Немає ___. (вода - no water)
+   > [!answer] води
+   > [!options] вода | води | воді | водою
 
-4. "Coffee without sugar" - кава без ___.
-   - [x] цукру
-   - [ ] цукор
-   - [ ] цукром
-   - [ ] цукрі
-   > Без takes genitive: цукор → цукру.
+4. Кава без ___. (цукор - without sugar)
+   > [!answer] цукру
+   > [!options] цукор | цукра | цукру | цукрі
 
-5. "From Ukraine" - з ___.
-   - [x] України
-   - [ ] Україна
-   - [ ] Україну
-   - [ ] Україною
-   > З takes genitive: Україна → України.
+5. Чашка ___. (кава - cup of coffee)
+   > [!answer] кави
+   > [!options] кава | кави | каві | кавою
 
-6. "End of the day" - кінець ___.
-   - [x] дня
-   - [ ] день
-   - [ ] дню
-   - [ ] днем
-   > День (m, -ь) → дня in genitive.
+6. Немає ___. (хліб - no bread)
+   > [!answer] хліба
+   > [!options] хліб | хліба | хлібу | хлібі
 
-7. "Five books" - п'ять ___.
-   - [x] книг
-   - [ ] книги
-   - [ ] книга
-   - [ ] книгами
-   > 5+ takes genitive plural: книг.
+7. Для ___. (друг - for a friend)
+   > [!answer] друга
+   > [!options] друг | друга | другу | друзі
 
-8. "Near the metro" - біля ___.
-   - [x] метро
-   - [ ] метра
-   - [ ] метрі
-   - [ ] метром
-   > Метро is indeclinable - stays метро!
+8. Кінець ___. (день - end of day)
+   > [!answer] дня
+   > [!options] день | дня | дню | дні
 
-## group-sort: Genitive Prepositions
+9. Після ___. (робота - after work)
+   > [!answer] роботи
+   > [!options] робота | роботи | роботі | роботою
 
-> Sort these prepositions by what case they take.
+10. Пляшка ___. (вода - bottle of water)
+   > [!answer] води
+   > [!options] вода | води | воді | водою
 
-### Take Genitive
-- без (without)
-- для (for)
-- до (to)
-- з/із (from)
-- біля (near)
-- після (after)
-- від (from)
+## unjumble: Build the Sentence
 
-### Take Accusative
-- в/у (into - motion)
-- на (onto - motion)
-- про (about)
-- через (through)
+> Arrange the words in the correct order.
 
+1. часу / Немає
+   > [!answer] Немає часу.
+   > (There is no time.)
 
-## fill-in: Fill in the Blank
+2. студента / книга / Це
+   > [!answer] Це книга студента.
+   > (This is the student's book.)
 
-> Fill in the blanks with the correct word.
+3. води / Немає
+   > [!answer] Немає води.
+   > (There is no water.)
 
+4. цукру / без / Кава
+   > [!answer] Кава без цукру.
+   > (Coffee without sugar.)
 
+5. кави / чашка / Це
+   > [!answer] Це чашка кави.
+   > (This is a cup of coffee.)
 
-## quiz: Meaning Check
+6. друга / для / подарунок / Це
+   > [!answer] Це подарунок для друга.
+   > (This is a gift for a friend.)
+
+7. роботи / після
+   > [!answer] Після роботи.
+   > (After work.)
+
+8. грошей / немає / У мене
+   > [!answer] У мене немає грошей.
+   > (I don't have money.)
+
+9. дня / кінець / Це
+   > [!answer] Це кінець дня.
+   > (This is the end of the day.)
+
+10. хліба / Немає
+   > [!answer] Немає хліба.
+   > (There is no bread.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian prepositions to their meanings and case requirements.
+
+| Left | Right |
+|------|-------|
+| без | without |
+| для | for |
+| до | to, toward |
+| від | from |
+| після | after |
+| біля | near, by |
+| немає | there is no |
+| з/із | from, out of |
+| чашка | cup |
+| пляшка | bottle |
+
+## quiz: Genitive Rules
 
 > Choose the correct answer.
 
-1. What does "час" mean?
-   - [x] time
-   - [ ] bottle
-   - [ ] money
-   - [ ] kilogram
-   > "час" means "time"
+1. What is the genitive of "студент"?
+   - [ ] студент
+   - [x] студента
+   - [ ] студенту
+   - [ ] студенті
+   > Masculine: add -а
 
-2. What does "пляшка" mean?
-   - [x] bottle
-   - [ ] money
-   - [ ] time
-   - [ ] kilogram
-   > "пляшка" means "bottle"
+2. What is the genitive of "книга"?
+   - [ ] книга
+   - [ ] книгу
+   - [x] книги
+   - [ ] книзі
+   > Feminine -а → -и
 
-3. What does "кілограм" mean?
-   - [x] kilogram
-   - [ ] bottle
-   - [ ] time
-   - [ ] money
-   > "кілограм" means "kilogram"
+3. How do you say "There is no time"?
+   - [ ] Є час.
+   - [x] Немає часу.
+   - [ ] Немає час.
+   - [ ] Немає часі.
+   > Немає + genitive
 
-4. What does "гроші" mean?
-   - [ ] bottle
-   - [x] money
-   - [ ] kilogram
-   - [ ] time
-   > "гроші" means "money"
+4. What is the pattern for masculine genitive?
+   - [x] Add -а or -я
+   - [ ] Add -у or -ю
+   - [ ] Add -и or -і
+   - [ ] No change
+   > Masculine adds -а/-я in genitive
 
-5. What does "кінець" mean?
-   - [ ] bottle
-   - [ ] time
-   - [ ] kilogram
-   - [x] end
-   > "кінець" means "end"
+5. How do you say "coffee without sugar"?
+   - [ ] кава без цукор
+   - [x] кава без цукру
+   - [ ] кава без цукрі
+   - [ ] кава без цукра
+   > "без" + genitive (цукру)
 
-6. What does "після" mean?
-   - [x] after
-   - [ ] time
-   - [ ] bottle
-   - [ ] kilogram
-   > "після" means "after"
+6. What does "книга студента" mean?
+   - [x] the student's book
+   - [ ] a book for the student
+   - [ ] a book about the student
+   - [ ] the book and the student
+   > Genitive expresses possession
 
+7. Which preposition means "after"?
+   - [ ] для
+   - [ ] без
+   - [x] після
+   - [ ] від
+   > "після" = after
+
+8. What is the genitive of "вода"?
+   - [ ] вода
+   - [ ] воду
+   - [x] води
+   - [ ] воді
+   > Feminine -а → -и
+
+9. How do you say "I don't have money"?
+   - [ ] Я не маю гроші.
+   - [x] У мене немає грошей.
+   - [ ] Я немає гроші.
+   - [ ] У мене немає гроші.
+   > "У мене немає" + genitive
+
+10. What case do all these prepositions require: без, для, до, після?
+   - [ ] Accusative
+   - [ ] Locative
+   - [x] Genitive
+   - [ ] Nominative
+   > These prepositions all take genitive
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "Немає" always requires the genitive case
+   > Correct!
+
+- [x] Masculine genitive singular ends in -а or -я
+   > Correct!
+
+- [ ] "книга студент" is correct for "student's book"
+   > Incorrect. Should be "книга студента" (genitive)
+
+- [x] "без" (without) takes the genitive case
+   > Correct!
+
+- [ ] Feminine genitive is the same as nominative
+   > Incorrect. Feminine -а → -и, -я → -і
+
+- [x] "Немає часу" means "There is no time"
+   > Correct!
+
+- [x] "для друга" means "for a friend"
+   > Correct!
+
+- [ ] "кава без цукор" is grammatically correct
+   > Incorrect. Should be "кава без цукру"
+
+- [x] The genitive case expresses possession in Ukrainian
+   > Correct!
+
+- [x] "після роботи" means "after work"
+   > Correct!
 
 ---
 

@@ -3,7 +3,7 @@ module: 9
 title: "Numbers & Money"
 subtitle: "Counting & Currency"
 level: A1
-phase: A1.2
+phase: A1.1
 duration: 50
 transliteration: full
 tags: [vocabulary, numbers, money, practical]
@@ -182,184 +182,228 @@ Practice: You're buying items. Say the price:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Numbers 1-10
+## fill-in: Complete the Sentences
 
-> Match the number to its Ukrainian word.
+> Choose the correct number or word.
+
+1. Це коштує ___ гривень. (This costs 5 hryvnias.)
+   > [!answer] п'ять
+   > [!options] один | два | п'ять | десять
+
+2. Я маю ___ гривні. (I have 2 hryvnias.)
+   > [!answer] дві
+   > [!options] один | дві | п'ять | сто
+
+3. Ось ___ гривня. (Here is 1 hryvnia.)
+   > [!answer] одна
+   > [!options] одна | дві | три | п'ять
+
+4. Ціна — ___ гривень. (The price is 10 hryvnias.)
+   > [!answer] десять
+   > [!options] один | три | десять | сто
+
+5. Це ___! (This is expensive!)
+   > [!answer] дорого
+   > [!options] дорого | дешево | добре | багато
+
+6. Є ___? (Is there a discount?)
+   > [!answer] знижка
+   > [!options] гривня | копійка | знижка | картка
+
+7. Готівкою чи ___? (Cash or card?)
+   > [!answer] карткою
+   > [!options] готівкою | карткою | грошима | рештою
+
+8. Тут є ___. (Here is the change.)
+   > [!answer] решта
+   > [!options] решта | ціна | знижка | гривня
+
+9. Скільки це ___? (How much does it cost?)
+   > [!answer] коштує
+   > [!options] коштує | має | знає | бачить
+
+10. Це коштує ___ гривень. (This costs 100 hryvnias.)
+   > [!answer] сто
+   > [!options] десять | двадцять | п'ятдесят | сто
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. коштує / Скільки / це
+   > [!answer] Скільки це коштує?
+   > (How much does this cost?)
+
+2. п'ять / Це / гривень / коштує
+   > [!answer] Це коштує п'ять гривень.
+   > (This costs 5 hryvnias.)
+
+3. гривні / Ось / дві
+   > [!answer] Ось дві гривні.
+   > (Here are 2 hryvnias.)
+
+4. одна / Це / гривня
+   > [!answer] Це одна гривня.
+   > (This is one hryvnia.)
+
+5. дорого / Це
+   > [!answer] Це дорого!
+   > (This is expensive!)
+
+6. дешево / Це
+   > [!answer] Це дешево!
+   > (This is cheap!)
+
+7. знижка / Є
+   > [!answer] Є знижка?
+   > (Is there a discount?)
+
+8. карткою / чи / Готівкою
+   > [!answer] Готівкою чи карткою?
+   > (Cash or card?)
+
+9. ваша / Решта
+   > [!answer] Решта ваша.
+   > (Keep the change.)
+
+10. гривень / сто / Це / коштує
+   > [!answer] Це коштує сто гривень.
+   > (This costs 100 hryvnias.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| 1 | один |
-| 2 | два |
-| 3 | три |
-| 4 | чотири |
-| 5 | п'ять |
-| 6 | шість |
-| 7 | сім |
-| 8 | вісім |
-| 9 | дев'ять |
-| 10 | десять |
-
-## quiz: Numbers & Noun Agreement
-
-> Choose the correct form.
-
-1. How do you say "one book" (книга = feminine)?
-   - [x] одна книга
-   - [ ] один книга
-   - [ ] одне книга
-   - [ ] одні книга
-   > Книга is feminine, so один → одна.
-
-2. How do you say "two books"?
-   - [x] дві книги
-   - [ ] два книги
-   - [ ] два книг
-   - [ ] дві книг
-   > Книга is feminine (дві), and 2-4 takes nominative plural (книги).
-
-3. How do you say "five books"?
-   - [x] п'ять книг
-   - [ ] п'ять книги
-   - [ ] п'ять книга
-   - [ ] п'яти книг
-   > 5+ takes genitive plural: книг.
-
-4. How do you say "21 hryvnias"?
-   - [x] двадцять одна гривня
-   - [ ] двадцять один гривень
-   - [ ] двадцять одна гривні
-   - [ ] двадцять одна гривень
-   > 21 ends in 1, so nominative singular: гривня.
-
-5. What is 47 in Ukrainian?
-   - [x] сорок сім
-   - [ ] чотиридесят сім
-   - [ ] сорок семь
-   - [ ] четвертий сім
-   > 40 = сорок (irregular), 7 = сім.
-
-6. How do you say "12 students" (студент = masculine)?
-   - [x] дванадцять студентів
-   - [ ] дванадцять студенти
-   - [ ] дванадцять студента
-   - [ ] дванадцять студент
-   > 12 (5+) takes genitive plural: студентів.
-
-7. How do you say "3 windows" (вікно = neuter)?
-   - [x] три вікна
-   - [ ] три вікон
-   - [ ] три вікно
-   - [ ] троє вікон
-   > 3 (2-4) takes nominative plural: вікна.
-
-8. How do you ask "How much does this cost?"
-   - [x] Скільки це коштує?
-   - [ ] Що це коштує?
-   - [ ] Як це коштує?
-   - [ ] Коли це коштує?
-   > Скільки = how much.
-
-## group-sort: Number Agreement Categories
-
-> Sort these number phrases by which noun form they require.
-
-### Takes Nominative Singular (1, 21, 31...)
-- одна гривня
-- двадцять один студент
-- сорок одна книга
-
-### Takes Nominative Plural (2-4, 22-24...)
-- дві книги
-- три студенти
-- двадцять чотири гривні
-
-### Takes Genitive Plural (5-20, 25-30...)
-- п'ять книг
-- десять студентів
-- двадцять п'ять гривень
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Це коштує ___ гривень.
-   > [!answer] 50
-
-2. Готівкою ___ карткою?
-   > [!answer] чи
-
-3. Решта ___ ваша.
-   > [!answer] -
-
-
+| один | one |
+| два | two |
+| три | three |
+| п'ять | five |
+| десять | ten |
+| двадцять | twenty |
+| сто | hundred |
+| гривня | hryvnia |
+| дорого | expensive |
+| дешево | cheap |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "коштувати" mean?
-   - [ ] six
-   - [ ] hryvnia (₴)
-   - [x] to cost
-   - [ ] cash
-   > "коштувати" means "to cost"
+1. What does "один" mean?
+   - [x] one
+   - [ ] two
+   - [ ] three
+   - [ ] five
+   > "один" means "one"
 
-2. What does "шість" mean?
-   - [ ] to cost
-   - [x] six
-   - [ ] hryvnia (₴)
-   - [ ] cash
-   > "шість" means "six"
+2. What does "дві" mean?
+   - [ ] one
+   - [x] two (feminine)
+   - [ ] three
+   - [ ] four
+   > "дві" is the feminine form of "two"
 
-3. What does "готівка" mean?
+3. What does "п'ять" mean?
+   - [ ] three
+   - [ ] four
+   - [x] five
    - [ ] six
-   - [ ] hryvnia (₴)
-   - [ ] to cost
-   - [x] cash
-   > "готівка" means "cash"
+   > "п'ять" means "five"
 
-4. What does "гривня" mean?
-   - [x] hryvnia (₴)
-   - [ ] to cost
-   - [ ] cash
-   - [ ] six
-   > "гривня" means "hryvnia (₴)"
-
-5. What does "десять" mean?
-   - [ ] six
-   - [ ] to cost
+4. What does "десять" mean?
+   - [ ] five
    - [x] ten
-   - [ ] cash
+   - [ ] twenty
+   - [ ] hundred
    > "десять" means "ten"
 
-6. What does "копійка" mean?
-   - [ ] to cost
-   - [ ] six
-   - [ ] cash
-   - [x] kopeck
-   > "копійка" means "kopeck"
+5. What does "сорок" mean?
+   - [ ] thirty
+   - [x] forty
+   - [ ] fifty
+   - [ ] sixty
+   > "сорок" means "forty" (irregular!)
 
+6. What does "гривня" mean?
+   - [x] hryvnia (Ukrainian currency)
+   - [ ] kopeck
+   - [ ] dollar
+   - [ ] euro
+   > "гривня" is the Ukrainian currency
 
+7. What does "дорого" mean?
+   - [x] expensive
+   - [ ] cheap
+   - [ ] good
+   - [ ] bad
+   > "дорого" means "expensive"
 
-## unjumble: Word Order
+8. What does "дешево" mean?
+   - [ ] expensive
+   - [x] cheap
+   - [ ] good
+   - [ ] bad
+   > "дешево" means "cheap"
 
-> Put the words in the correct order to form a sentence.
+9. What does "скільки коштує" mean?
+   - [x] how much does it cost
+   - [ ] where is it
+   - [ ] what is it
+   - [ ] who has it
+   > "скільки коштує" means "how much does it cost"
 
-1. гривень / Це / 50 / коштує
-   > [!answer] Це коштує 50 гривень.
-   > (This costs 50 hryvnias.)
+10. What does "знижка" mean?
+   - [ ] price
+   - [ ] change
+   - [x] discount
+   - [ ] card
+   > "знижка" means "discount"
 
-2. карткою / чи / Готівкою
-   > [!answer] Готівкою чи карткою?
-   > (Cash or card?)
+## true-false: True or False?
 
-3. ваша / Решта / -
-   > [!answer] Решта - ваша.
-   > (Keep the change.)
+> Determine if each statement is true or false.
 
+- [x] "один" means "one"
+   > Correct!
+
+- [x] After 5+, nouns take genitive plural (п'ять гривень)
+   > Correct!
+
+- [ ] "дві книги" uses feminine form of "two"
+   > Correct! "дві" is used with feminine nouns
+
+- [x] "сорок" (40) is an irregular number
+   > Correct! It doesn't follow the pattern of other tens
+
+- [ ] "два гривні" is correct
+   > Incorrect. "гривня" is feminine, so it should be "дві гривні"
+
+- [x] "дорого" means "expensive"
+   > Correct!
+
+- [x] "дешево" means "cheap"
+   > Correct!
+
+- [x] "гривня" is the Ukrainian currency
+   > Correct!
+
+- [ ] Numbers 1-4 take genitive plural
+   > Incorrect. Numbers 2-4 take nominative plural, 5+ takes genitive plural
+
+- [x] "копійка" is the smallest Ukrainian currency unit
+   > Correct!
 
 ---
 

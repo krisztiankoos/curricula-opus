@@ -3,7 +3,7 @@ module: 6
 title: "The Living Verb I"
 subtitle: "Present Tense Basics"
 level: A1
-phase: A1.2
+phase: A1.1
 duration: 50
 transliteration: full
 tags: [grammar, verbs, conjugation, present-tense]
@@ -190,9 +190,9 @@ To make a verb negative, add **не** (not) before it:
 
 ### Conjugation Drill
 
-Complete these conjugations:
+**Observe the Class II Pattern (Preview)**
 
-**робити (to do/make)** - This is Class II, but practice the pattern:
+**робити (to do/make)** - This is Class II. Notice how it differs from Class I:
 - я роб**лю** (I do)
 - ти роб**иш** (you do)
 - він/вона роб**ить** (he/she does)
@@ -265,185 +265,228 @@ Practice asking questions:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Pronouns to Verb Endings
+## fill-in: Complete the Sentences
 
-> Match each pronoun to its Class I verb ending.
+> Choose the correct verb form to complete each sentence.
+
+1. Я ___ книгу. (I read a book.)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
+
+2. Ти ___ українською? (Do you speak Ukrainian?)
+   > [!answer] говориш
+   > [!options] говорю | говориш | говорить | говорять
+
+3. Вона ___ добре. (She knows well.)
+   > [!answer] знає
+   > [!options] знаю | знаєш | знає | знають
+
+4. Ми ___ листа. (We write a letter.)
+   > [!answer] пишемо
+   > [!options] пишу | пишеш | пишемо | пишуть
+
+5. Вони ___ музику. (They listen to music.)
+   > [!answer] слухають
+   > [!options] слухаю | слухаєш | слухає | слухають
+
+6. Він ___ кожен день. (He works every day.)
+   > [!answer] працює
+   > [!options] працюю | працюєш | працює | працюють
+
+7. Ви ___ це? (Do you understand this?)
+   > [!answer] розумієте
+   > [!options] розумію | розумієш | розумієте | розуміють
+
+8. Я не ___. (I don't know.)
+   > [!answer] знаю
+   > [!options] знаю | знаєш | знає | знають
+
+9. Вона ___ телевізор. (She watches TV.)
+   > [!answer] дивиться
+   > [!options] дивлюся | дивишся | дивиться | дивляться
+
+10. Ми ___ українську мову. (We study Ukrainian.)
+   > [!answer] вчимо
+   > [!options] вчу | вчиш | вчимо | вчать
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. читаю / Я / книгу
+   > [!answer] Я читаю книгу.
+   > (I read a book.)
+
+2. українською / говориш / Ти
+   > [!answer] Ти говориш українською.
+   > (You speak Ukrainian.)
+
+3. знає / Вона / це
+   > [!answer] Вона знає це.
+   > (She knows this.)
+
+4. пишемо / листа / Ми
+   > [!answer] Ми пишемо листа.
+   > (We write a letter.)
+
+5. не / Я / знаю
+   > [!answer] Я не знаю.
+   > (I don't know.)
+
+6. працює / Він / тут
+   > [!answer] Він працює тут.
+   > (He works here.)
+
+7. слухають / музику / Вони
+   > [!answer] Вони слухають музику.
+   > (They listen to music.)
+
+8. сьогодні / читаєш / Ти / що
+   > [!answer] Що ти читаєш сьогодні?
+   > (What are you reading today?)
+
+9. завтра / працюємо / Ми
+   > [!answer] Ми працюємо завтра.
+   > (We work tomorrow.)
+
+10. знаю / не / Я / нічого
+   > [!answer] Я нічого не знаю.
+   > (I don't know anything.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian verbs to their English meanings.
 
 | Left | Right |
 |------|-------|
-| я | -ю (читаю) |
-| ти | -єш (читаєш) |
-| він/вона | -є (читає) |
-| ми | -ємо (читаємо) |
-| ви | -єте (читаєте) |
-| вони | -ють (читають) |
-
-## quiz: Conjugate Class I Verbs
-
-> Choose the correct verb form for each sentence.
-
-1. How do you say "I know" (знати, я)?
-   - [x] Я знаю.
-   - [ ] Я знаєш.
-   - [ ] Я знає.
-   - [ ] Я знаємо.
-   > First person singular (я) uses -ю ending: знаю.
-
-2. How do you say "She reads" (читати, вона)?
-   - [x] Вона читає.
-   - [ ] Вона читаю.
-   - [ ] Вона читаєш.
-   - [ ] Вона читають.
-   > Third person singular (він/вона) uses -є ending: читає.
-
-3. How do you say "We write" (писати, ми)?
-   - [x] Ми пишемо.
-   - [ ] Ми пишу.
-   - [ ] Ми пишуть.
-   - [ ] Ми писаємо.
-   > First person plural (ми) uses -емо ending. Note consonant change: с→ш!
-
-4. How do you say "They know" (знати, вони)?
-   - [x] Вони знають.
-   - [ ] Вони знаю.
-   - [ ] Вони знає.
-   - [ ] Вони знаємо.
-   > Third person plural (вони) uses -ють ending: знають.
-
-5. How do you say "You (formal) read" (читати, ви)?
-   - [x] Ви читаєте.
-   - [ ] Ви читаєш.
-   - [ ] Ви читаю.
-   - [ ] Ви читає.
-   > Second person plural/formal (ви) uses -єте ending: читаєте.
-
-6. How do you say "You (informal) write" (писати, ти)?
-   - [x] Ти пишеш.
-   - [ ] Ти пишу.
-   - [ ] Ти пише.
-   - [ ] Ти пишемо.
-   > Second person singular (ти) uses -еш ending (with consonant change): пишеш.
-
-7. How do you say "I don't know" (не знати)?
-   - [x] Я не знаю.
-   - [ ] Я знаю не.
-   - [ ] Не я знаю.
-   - [ ] Знаю не я.
-   > Negation: не comes directly before the verb: не знаю.
-
-8. How do you say "He writes" (писати, він)?
-   - [x] Він пише.
-   - [ ] Він пишу.
-   - [ ] Він пишеш.
-   - [ ] Він пишуть.
-   > Third person singular (він) uses -е ending: пише.
-
-## group-sort: Class I Endings by Person
-
-> Sort the endings by grammatical person.
-
-### Singular (One Person)
-- -ю (я)
-- -єш (ти)
-- -є (він/вона/воно)
-
-### Plural (Multiple People)
-- -ємо (ми)
-- -єте (ви)
-- -ють (вони)
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. знати ___ I)
-   > [!answer] (Class
-
-2. Ти знаєш. ___ know.)
-   > [!answer] (You
-
-3. Вона читає. ___ reads.)
-   > [!answer] (She
-
-4. Вони пишуть. ___ write.)
-   > [!answer] (They
-
-5. робити ___ do/make)
-   > [!answer] (to
-
-
+| читати | to read |
+| писати | to write |
+| знати | to know |
+| говорити | to speak |
+| слухати | to listen |
+| працювати | to work |
+| розуміти | to understand |
+| дивитися | to watch |
+| думати | to think |
+| хотіти | to want |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "кожен день" mean?
-   - [ ] to think
-   - [x] every day
-   - [ ] to write
-   - [ ] to know
-   > "кожен день" means "every day"
+1. What is the correct form of "читати" for "я"?
+   - [x] читаю
+   - [ ] читаєш
+   - [ ] читає
+   - [ ] читають
+   > "Я читаю" - I read
 
-2. What does "знати" mean?
-   - [ ] every day
-   - [ ] to think
-   - [ ] to write
-   - [x] to know
-   > "знати" means "to know"
+2. What is the correct form of "знати" for "вона"?
+   - [ ] знаю
+   - [ ] знаєш
+   - [x] знає
+   - [ ] знають
+   > "Вона знає" - She knows
 
 3. What does "писати" mean?
-   - [ ] every day
-   - [ ] to think
-   - [ ] to know
+   - [ ] to read
    - [x] to write
+   - [ ] to speak
+   - [ ] to listen
    > "писати" means "to write"
 
-4. What does "думати" mean?
-   - [x] to think
+4. What is the correct form of "говорити" for "ми"?
+   - [ ] говорю
+   - [ ] говориш
+   - [x] говоримо
+   - [ ] говорять
+   > "Ми говоримо" - We speak
+
+5. What does "сьогодні" mean?
+   - [ ] tomorrow
+   - [x] today
+   - [ ] yesterday
+   - [ ] always
+   > "сьогодні" means "today"
+
+6. What does "завтра" mean?
+   - [x] tomorrow
+   - [ ] today
+   - [ ] yesterday
+   - [ ] never
+   > "завтра" means "tomorrow"
+
+7. How do you say "I don't know" in Ukrainian?
+   - [x] Я не знаю
+   - [ ] Я знаю не
+   - [ ] Не я знаю
+   - [ ] Знаю не я
+   > "Я не знаю" - I don't know
+
+8. What is the correct form of "працювати" for "вони"?
+   - [ ] працюю
+   - [ ] працюєш
+   - [ ] працює
+   - [x] працюють
+   > "Вони працюють" - They work
+
+9. What does "слухати" mean?
+   - [ ] to watch
+   - [ ] to read
+   - [x] to listen
    - [ ] to write
-   - [ ] every day
-   - [ ] to know
-   > "думати" means "to think"
+   > "слухати" means "to listen"
 
-5. What does "читати" mean?
-   - [ ] to know
-   - [ ] to write
-   - [x] to read
-   - [ ] every day
-   > "читати" means "to read"
+10. What does "кожен день" mean?
+   - [ ] sometimes
+   - [x] every day
+   - [ ] tomorrow
+   - [ ] never
+   > "кожен день" means "every day"
 
-6. What does "хотіти" mean?
-   - [ ] to write
-   - [ ] every day
-   - [x] to want
-   - [ ] to know
-   > "хотіти" means "to want"
+## true-false: True or False?
 
+> Determine if each statement is true or false.
 
+- [x] "Я читаю" means "I read"
+   > Correct!
 
-## unjumble: Word Order
+- [x] "Вона знає" means "She knows"
+   > Correct!
 
-> Put the words in the correct order to form a sentence.
+- [ ] "Ми говоримо" means "They speak"
+   > Incorrect. "Ми говоримо" means "We speak"
 
-1. знати / (Class / I)
-   > [!answer] знати (Class I)
-   > (робити (Class II))
+- [x] "писати" means "to write"
+   > Correct!
 
-2. know) / (You / знаєш / Ти
-   > [!answer] Ти знаєш. (You know.)
-   > (Ти знаєш? (Do you know?))
+- [ ] "не" goes after the verb
+   > Incorrect. "не" goes before the verb
 
-3. читає / Вона / (She / reads)
-   > [!answer] Вона читає. (She reads.)
-   > (Вона читає? (Is she reading?))
+- [x] "Я не знаю" means "I don't know"
+   > Correct!
 
-4. пишуть / (They / Вони / write)
-   > [!answer] Вони пишуть. (They write.)
-   > (Вони пишуть? (Are they writing?))
+- [x] "сьогодні" means "today"
+   > Correct!
 
+- [ ] "завтра" means "yesterday"
+   > Incorrect. "завтра" means "tomorrow"
+
+- [x] "слухати" means "to listen"
+   > Correct!
+
+- [ ] "Вони працює" is correct
+   > Incorrect. The correct form is "Вони працюють"
 
 ---
 
@@ -511,7 +554,7 @@ Practice asking questions:
 
 > 🎯 **Coming Next**
 >
-> In Module 07, you'll learn Class II verbs:
-> - говорити (to speak) - говорю, говориш, говорить...
-> - робити (to do) - роблю, робиш, робить...
-> - Different endings, same logic!
+> In Module 07, you'll learn how to ask and answer:
+> - **Yes/No Questions:** Чи ти знаєш?
+> - **Wh-Questions:** Що, де, коли, хто?
+> - **Negation:** Using "не" and double negatives correctly.

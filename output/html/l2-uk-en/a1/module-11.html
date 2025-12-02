@@ -322,15 +322,18 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
-/* Fill-in Activity */
-.fill-container { display: flex; flex-direction: column; gap: 1rem; }
-.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-.fill-question.answered .fill-check { display: none; }
-.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
-.fill-input:focus { border-color: var(--primary); outline: none; }
-.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
-.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
-.fill-check { margin-left: 0.5rem; }
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
 .fill-feedback { margin-top: 0.5rem; font-weight: 500; }
 .fill-feedback .correct-text { color: var(--success); }
 .fill-feedback .wrong-text { color: var(--danger); }
@@ -347,6 +350,32 @@ footer {
 .order-handle { color: var(--text-muted); font-size: 1.25rem; }
 .order-text { font-size: 1.1rem; }
 
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -354,9 +383,9 @@ footer {
   <div class="top-nav">
     <a href="../index.html">← l2-uk-en Curriculum</a>
     <div class="module-nav">
-      <a href="module-10.html" class="module-nav-link">← Module 10</a>
+      <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-12.html" class="module-nav-link">Module 12 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -365,7 +394,7 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
-      <button class="nav-tab" data-section="sort">Sort</button>
+      
       <button class="nav-tab" data-section="fill">Fill</button>
       <button class="nav-tab" data-section="order">Order</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
@@ -639,6 +668,10 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">хліб</div></div>
 <hr />
 <hr />
+<hr />
+<hr />
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -714,40 +747,33 @@ footer {
     </section>
   
     
-    <section id="match" class="section"><div class="card"><h3>Nominative to Accusative</h3>
-      <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
+    <section id="match" class="section"><div class="card"><h3>Match the Pairs</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
-        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">книга</div><div class="match-item" data-pair="1">вода</div><div class="match-item" data-pair="2">газета</div><div class="match-item" data-pair="3">кава</div><div class="match-item" data-pair="4">стіл</div><div class="match-item" data-pair="5">вікно</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">каву</div><div class="match-item" data-pair="1">воду</div><div class="match-item" data-pair="4">стіл</div><div class="match-item" data-pair="0">книгу</div><div class="match-item" data-pair="2">газету</div><div class="match-item" data-pair="5">вікно</div></div>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">бачити</div><div class="match-item" data-pair="1">читати</div><div class="match-item" data-pair="2">хотіти</div><div class="match-item" data-pair="3">брати</div><div class="match-item" data-pair="4">газета</div><div class="match-item" data-pair="5">журнал</div><div class="match-item" data-pair="6">паспорт</div><div class="match-item" data-pair="7">квиток</div><div class="match-item" data-pair="8">валіза</div><div class="match-item" data-pair="9">документ</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">to see</div><div class="match-item" data-pair="1">to read</div><div class="match-item" data-pair="2">to want</div><div class="match-item" data-pair="3">to take</div><div class="match-item" data-pair="9">document</div><div class="match-item" data-pair="4">newspaper</div><div class="match-item" data-pair="5">magazine</div><div class="match-item" data-pair="6">passport</div><div class="match-item" data-pair="7">ticket</div><div class="match-item" data-pair="8">suitcase</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Accusative Forms</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+    <section id="quiz" class="section"><div class="card"><h3>Accusative Rules</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/10</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
     </div></section>
     
-    <section id="sort" class="section"><div class="card"><h3>Changes vs No Change</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/10</span></div>
-      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Changes in Accusative</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>No Change in Accusative</h4><div class="sort-items"></div></div></div>
-      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
-    </div></section>
     
-    <section id="fill" class="section"><div class="card"><h3>Fill in the Blank</h3>
-      <div class="score-display"><span class="score"><span id="fill-score">0</span>/0</span></div>
+    <section id="fill" class="section"><div class="card"><h3>Accusative Case</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/10</span></div>
       <div id="fill-container" class="fill-container"></div>
       <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('order')">Next →</button></div>
     </div></section>
     
-    <section id="order" class="section"><div class="card"><h3>Word Order</h3>
-      <div class="score-display"><span class="score"><span id="order-score">0</span>/3</span></div>
+    <section id="order" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="order-score">0</span>/10</span></div>
       <div id="order-container" class="order-container"></div>
       <div class="completion-message" id="order-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetOrder()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
@@ -777,13 +803,13 @@ footer {
   </main><footer>Module 11 · curricula-opus</footer>
   <script>
 
-    const matchPairs = [{"left":"книга","right":"книгу"},{"left":"вода","right":"воду"},{"left":"газета","right":"газету"},{"left":"кава","right":"каву"},{"left":"стіл","right":"стіл"},{"left":"вікно","right":"вікно"}];
-    const quizData = [{"question":"\"I see the book\" - Я бачу ___.","options":["книгу","книга","книги","книгою"],"correctIndex":0,"explanation":"Книга (f, -а) → книгу in accusative."},{"question":"\"I see the table\" - Я бачу ___.","options":["стіл","столу","стола","столом"],"correctIndex":0,"explanation":"Стіл (m, inanimate) - no change in accusative."},{"question":"\"She wants coffee\" - Вона хоче ___.","options":["каву","кава","кави","кавою"],"correctIndex":0,"explanation":"Кава (f, -а) → каву in accusative."},{"question":"\"We see the window\" - Ми бачимо ___.","options":["вікно","вікну","вікна","вікном"],"correctIndex":0,"explanation":"Вікно (n, inanimate) - no change in accusative."},{"question":"\"He reads the newspaper\" - Він читає ___.","options":["газету","газета","газети","газетою"],"correctIndex":0,"explanation":"Газета (f, -а) → газету in accusative."},{"question":"\"They want water\" - Вони хочуть ___.","options":["воду","вода","води","водою"],"correctIndex":0,"explanation":"Вода (f, -а) → воду in accusative."},{"question":"\"I love Ukraine\" - Я люблю ___.","options":["Україну","Україна","України","Україною"],"correctIndex":0,"explanation":"Україна (f, -а) → Україну in accusative."},{"question":"\"She drinks milk\" - Вона п'є ___.","options":["молоко","молоку","молока","молоком"],"correctIndex":0,"explanation":"Молоко (n, inanimate) - no change in accusative."}];
-    const sortData = {"true-friends":["книга → книгу","вода → воду","кава → каву","газета → газету","земля → землю"],"false-friends":["стіл → стіл","вікно → вікно","журнал → журнал","молоко → молоко","хліб → хліб"]};
-    const fillData = {"items":[],"text":"Fill in the blanks with the correct word.","answers":[]};
-    const orderData = {"items":["бачу / книгу / Я","Вона / листа / читає","Ми / хочемо / воду"],"correctOrder":[0,1,2]};
+    const matchPairs = [{"left":"бачити","right":"to see"},{"left":"читати","right":"to read"},{"left":"хотіти","right":"to want"},{"left":"брати","right":"to take"},{"left":"газета","right":"newspaper"},{"left":"журнал","right":"magazine"},{"left":"паспорт","right":"passport"},{"left":"квиток","right":"ticket"},{"left":"валіза","right":"suitcase"},{"left":"документ","right":"document"}];
+    const quizData = [{"question":"What is the accusative of \"книга\"?","options":["книга","книгу","книзі","книги"],"correctIndex":1,"explanation":"Feminine -а → -у in accusative"},{"question":"What is the accusative of \"стіл\" (inanimate)?","options":["стіл","стола","столі","столу"],"correctIndex":0,"explanation":"Masculine inanimate = no change"},{"question":"What is the accusative of \"вікно\" (inanimate)?","options":["вікно","вікна","вікні","вікну"],"correctIndex":0,"explanation":"Neuter inanimate = no change"},{"question":"Which gender changes in accusative for inanimate nouns?","options":["masculine","feminine","neuter","all genders"],"correctIndex":1,"explanation":"Only feminine (-а → -у, -я → -ю)"},{"question":"What does \"Я бачу книгу\" mean?","options":["I see a book","I have a book","I want a book","I read a book"],"correctIndex":0,"explanation":"\"бачити\" = to see"},{"question":"What does \"Вона хоче воду\" mean?","options":["She sees water","She has water","She wants water","She drinks water"],"correctIndex":2,"explanation":"\"хотіти\" = to want"},{"question":"What is the accusative of \"вода\"?","options":["вода","воду","воді","води"],"correctIndex":1,"explanation":"Feminine -а → -у"},{"question":"What is the accusative of \"кава\"?","options":["кава","каву","каві","кави"],"correctIndex":1,"explanation":"Feminine -а → -у"},{"question":"What does \"брати\" mean?","options":["to see","to read","to take","to want"],"correctIndex":2,"explanation":"\"брати\" = to take"},{"question":"Which verb does NOT take accusative?","options":["бачити (to see)","читати (to read)","хотіти (to want)","бути (to be)"],"correctIndex":3,"explanation":"\"бути\" doesn't take direct objects"}];
+    const sortData = {};
+    const fillData = {"items":[{"prompt":"Я бачу ___. (книга)","answer":"книгу","options":["книга","книгу","книзі","книги"]},{"prompt":"Вона читає ___. (газета)","answer":"газету","options":["газета","газету","газеті","газети"]},{"prompt":"Ми хочемо ___. (вода)","answer":"воду","options":["вода","воду","воді","води"]},{"prompt":"Я бачу ___. (стіл) [no change - masculine inanimate]","answer":"стіл","options":["стіл","стола","столі","столу"]},{"prompt":"Він має ___. (паспорт) [no change - masculine inanimate]","answer":"паспорт","options":["паспорт","паспорта","паспорті","паспорту"]},{"prompt":"Вона п'є ___. (кава)","answer":"каву","options":["кава","каву","каві","кави"]},{"prompt":"Я бачу ___. (вікно) [no change - neuter]","answer":"вікно","options":["вікно","вікна","вікні","вікну"]},{"prompt":"Ми хочемо ___. (піца)","answer":"піцу","options":["піца","піцу","піці","піци"]},{"prompt":"Він бере ___. (валіза)","answer":"валізу","options":["валіза","валізу","валізі","валізи"]},{"prompt":"Вони читають ___. (журнал) [no change - masculine inanimate]","answer":"журнал","options":["журнал","журнала","журналі","журналу"]}],"text":"","answers":[]};
+    const orderData = {"items":[{"words":["книгу","Я","бачу"],"answer":"Я бачу книгу.","translation":"I see a book."},{"words":["газету","читає","Вона"],"answer":"Вона читає газету.","translation":"She reads a newspaper."},{"words":["воду","хочемо","Ми"],"answer":"Ми хочемо воду.","translation":"We want water."},{"words":["бачу","стіл","Я"],"answer":"Я бачу стіл.","translation":"I see a table."},{"words":["каву","Він","п'є"],"answer":"Він п'є каву.","translation":"He drinks coffee."},{"words":["хліб","Ми","хочемо"],"answer":"Ми хочемо хліб.","translation":"We want bread."},{"words":["валізу","бере","Вона"],"answer":"Вона бере валізу.","translation":"She takes a suitcase."},{"words":["журнал","читає","Він"],"answer":"Він читає журнал.","translation":"He reads a magazine."},{"words":["паспорт","мій","Де"],"answer":"Де мій паспорт?","translation":"Where is my passport?"},{"words":["документ","має","Він"],"answer":"Він має документ.","translation":"He has a document."}],"isUnjumble":true};
     const vocabData = [{"uk":"чути","translit":"","en":"to hear","note":"чую, чуєш + Acc"},{"uk":"брати","translit":"","en":"to take","note":"беру, береш + Acc"},{"uk":"давати","translit":"","en":"to give","note":"даю, даєш + Acc"},{"uk":"мати","translit":"","en":"to have","note":"маю, маєш + Acc"},{"uk":"нести","translit":"","en":"to carry","note":"несу, несеш + Acc"},{"uk":"класти","translit":"","en":"to put","note":"кладу, кладеш + Acc"},{"uk":"відкривати","translit":"","en":"to open","note":"відкриваю + Acc"},{"uk":"закривати","translit":"","en":"to close","note":"закриваю + Acc"},{"uk":"газета","translit":"","en":"newspaper","note":"газету in Acc"},{"uk":"журнал","translit":"","en":"magazine","note":"No change in Acc"},{"uk":"конверт","translit":"","en":"envelope","note":"No change"},{"uk":"посилка","translit":"","en":"package","note":"посилку in Acc"},{"uk":"подарунок","translit":"","en":"gift","note":"No change"},{"uk":"квиток","translit":"","en":"ticket","note":"No change"},{"uk":"паспорт","translit":"","en":"passport","note":"No change"},{"uk":"документ","translit":"","en":"document","note":"No change"},{"uk":"валіза","translit":"","en":"suitcase","note":"валізу in Acc"},{"uk":"коробка","translit":"","en":"box","note":"коробку in Acc"}];
-    const totalSort = 10;
+    const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -990,7 +1016,7 @@ function resetSort() {
 }
 
 
-// Fill-in Activity
+// Fill-in Activity - Dropdown in sentence
 let fillScore = 0, fillAns = 0;
 
 function initFill() {
@@ -1001,45 +1027,82 @@ function initFill() {
   fillData.items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'fill-question';
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = fillData.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
     div.innerHTML = `
-      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
-      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
-      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
       <div class="fill-feedback" id="fill-fb-${i}"></div>
     `;
     c.appendChild(div);
   });
 
-  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
-  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
-  }));
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
 }
 
-function handleFill(e) {
-  const idx = e.target.dataset.idx;
-  const q = e.target.closest('.fill-question');
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
   if (q.classList.contains('answered')) return;
 
-  const input = q.querySelector('.fill-input');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = input.dataset.answer.toLowerCase();
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
   const fb = document.getElementById('fill-fb-' + idx);
 
   q.classList.add('answered');
+  dropdown.disabled = true;
 
   if (userAnswer === correctAnswer) {
-    input.classList.add('correct');
-    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
     fillScore++;
   } else {
-    input.classList.add('wrong');
-    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
   }
 
   document.getElementById('fill-score').textContent = fillScore;
   fillAns++;
-  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+  if (fillAns === fillData.items.length) {
+    document.getElementById('fill-complete').classList.add('show');
+  }
 }
 
 function resetFill() {
@@ -1059,9 +1122,217 @@ function initOrder() {
   if (!c || !orderData.items.length) return;
   c.innerHTML = '';
 
+  if (orderData.isUnjumble) {
+    initUnjumble(c);
+  } else {
+    initClassicOrder(c);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(container) {
   orderTotal = orderData.items.length;
 
-  // Shuffle items for display
+  orderData.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    orderScore++;
+    document.getElementById('order-score').textContent = orderScore;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (orderScore === orderTotal) {
+      document.getElementById('order-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(container) {
+  orderTotal = orderData.items.length;
+
   const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
   shuffled.sort(() => Math.random() - 0.5);
 
@@ -1073,15 +1344,14 @@ function initOrder() {
       <span class="order-text">${item.text}</span>
     </div>
   `).join('');
-  c.appendChild(div);
+  container.appendChild(div);
 
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn btn-outline';
   checkBtn.textContent = 'Check Order';
   checkBtn.onclick = checkOrder;
-  c.appendChild(checkBtn);
+  container.appendChild(checkBtn);
 
-  // Enable drag and drop
   initDragDrop();
 }
 
@@ -1119,7 +1389,6 @@ function checkOrder() {
   const items = document.querySelectorAll('.order-item');
   const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
 
-  // Check if order is correct (0, 1, 2, 3, ...)
   let correct = true;
   currentOrder.forEach((val, idx) => {
     const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;

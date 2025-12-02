@@ -183,128 +183,6 @@ Write or speak about yourself covering:
 
 ---
 
-# Activities
-
-## quiz: Comprehensive A1 Final
-
-> Test your complete A1 knowledge!
-
-1. How do you say "I see the student (m)"?
-   - [x] Я бачу студента.
-   - [ ] Я бачу студент.
-   - [ ] Я бачу студенту.
-   - [ ] Я бачу студенти.
-   > M. animate accusative: студент → студента.
-
-2. "There is no time" - Немає ___.
-   - [x] часу
-   - [ ] час
-   - [ ] часі
-   - [ ] часом
-   > Genitive after немає.
-
-3. "I was at school" - Я ___ у школі. (f)
-   - [x] була
-   - [ ] був
-   - [ ] були
-   - [ ] буде
-   > Feminine past: була.
-
-4. "It's cold" in Ukrainian:
-   - [x] Холодно.
-   - [ ] Холодний.
-   - [ ] Холодна.
-   - [ ] Холодне.
-   > Impersonal expression.
-
-5. What is Monday in Ukrainian?
-   - [x] понеділок
-   - [ ] вівторок
-   - [ ] середа
-   - [ ] неділя
-   > Понеділок = Monday.
-
-6. "My beautiful book" (книга = f) - ___ ___ книга.
-   - [x] моя гарна
-   - [ ] мій гарний
-   - [ ] моє гарне
-   - [ ] мої гарні
-   > Feminine: моя гарна.
-
-7. How do you ask for the bill at a café?
-   - [x] Рахунок, будь ласка!
-   - [ ] Меню, будь ласка!
-   - [ ] Гроші, будь ласка!
-   - [ ] Каву, будь ласка!
-   > Рахунок = bill.
-
-8. "I can speak Ukrainian" - Я ___ говорити українською.
-   - [x] можу
-   - [ ] можеш
-   - [ ] може
-   - [ ] можемо
-   > Я → можу.
-
-9. What is "children" in Ukrainian?
-   - [x] діти
-   - [ ] дитини
-   - [ ] дитинки
-   - [ ] дитяти
-   > Irregular: дитина → діти.
-
-10. "We will work tomorrow" - Завтра ми ___ працювати.
-    - [x] будемо
-    - [ ] буду
-    - [ ] будете
-    - [ ] будуть
-    > Ми → будемо.
-
-11. How do you say "Turn left"?
-    - [x] Поверніть ліворуч.
-    - [ ] Йдіть ліворуч.
-    - [ ] Ліворуч повернути.
-    - [ ] Поворот ліворуч.
-    > Imperative: поверніть.
-
-12. "In January" - ___ січні.
-    - [x] у
-    - [ ] в
-    - [ ] на
-    - [ ] до
-    > У + locative for months.
-
-## match-up: Core Skills
-
-> Match skills to examples.
-
-| Left (Skill) | Right (Example) |
-|--------------|-----------------|
-| Greeting | Привіт! Як справи? |
-| Ordering | Каву, будь ласка. |
-| Describing | Велике гарне місто. |
-| Asking location | Де знаходиться метро? |
-| Talking about past | Вчора я був удома. |
-| Expressing ability | Я можу допомогти. |
-
-## group-sort: Grammar Categories
-
-> Sort these into correct categories.
-
-### Accusative Forms
-- книгу (книга)
-- студента (студент)
-- каву (кава)
-
-### Locative Forms
-- у школі (школа)
-- в офісі (офіс)
-- на столі (стіл)
-
-### Genitive Forms
-- часу (час)
-- книги (книга)
-- друга (друг)
-
 ---
 
 # A1 Achievement Summary
@@ -383,3 +261,221 @@ Write or speak about yourself covering:
 > - 500+ new words
 >
 > До зустрічі на A2! See you at A2!
+
+
+# Activities
+
+## fill-in: A1 Grammar Review
+
+> Choose the correct form to complete each sentence.
+
+1. Я ___ книгу. (read - present)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
+
+2. Вона ___ українською. (spoke - past, feminine)
+   > [!answer] говорила
+   > [!options] говорив | говорила | говорило | говорили
+
+3. Ми ___ працювати завтра. (will - future)
+   > [!answer] будемо
+   > [!options] буду | будеш | буде | будемо
+
+4. Я живу в ___. (Kyiv - locative)
+   > [!answer] Києві
+   > [!options] Київ | Києва | Києві | Києвом
+
+5. У мене немає ___. (time - genitive)
+   > [!answer] часу
+   > [!options] час | часу | часі | часом
+
+6. Це ___ дім. (big - masculine)
+   > [!answer] великий
+   > [!options] великий | велика | велике | великі
+
+7. Вона носить ___ сукню. (new - feminine accusative)
+   > [!answer] нову
+   > [!options] новий | нова | нову | нове
+
+8. Сьогодні ___. (cold - impersonal)
+   > [!answer] холодно
+   > [!options] холодний | холодна | холодне | холодно
+
+9. Я ___ говорити українською. (can)
+   > [!answer] можу
+   > [!options] можу | можеш | може | можуть
+
+10. ___ мене є брат. (I have)
+   > [!answer] У
+   > [!options] Я | У | На | Мій
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. читаю / Я / книгу
+   > [!answer] Я читаю книгу.
+   > (I am reading a book.)
+
+2. Вона / вчора / працювала
+   > [!answer] Вона вчора працювала.
+   > (She worked yesterday.)
+
+3. буду / Завтра / я / вдома
+   > [!answer] Завтра я буду вдома.
+   > (Tomorrow I will be at home.)
+
+4. Києві / Я / живу / в
+   > [!answer] Я живу в Києві.
+   > (I live in Kyiv.)
+
+5. часу / немає / У / мене
+   > [!answer] У мене немає часу.
+   > (I don't have time.)
+
+6. велика / Це / родина
+   > [!answer] Це велика родина.
+   > (This is a big family.)
+
+7. дощ / Йде
+   > [!answer] Йде дощ.
+   > (It's raining.)
+
+8. каву / Я / люблю
+   > [!answer] Я люблю каву.
+   > (I love coffee.)
+
+9. українською / говорити / Я / можу
+   > [!answer] Я можу говорити українською.
+   > (I can speak Ukrainian.)
+
+10. Мене / Олена / звати
+   > [!answer] Мене звати Олена.
+   > (My name is Olena.)
+
+## match-up: A1 Vocabulary Review
+
+> Match Ukrainian words to their English meanings.
+
+| Left | Right |
+|------|-------|
+| привіт | hello |
+| дякую | thank you |
+| будь ласка | please |
+| сьогодні | today |
+| завтра | tomorrow |
+| вчора | yesterday |
+| добрий | good |
+| великий | big |
+| новий | new |
+| гарний | beautiful |
+
+## quiz: A1 Comprehensive Review
+
+> Choose the correct answer.
+
+1. How do you form past tense for feminine subjects?
+   - [ ] stem + -в
+   - [x] stem + -ла
+   - [ ] stem + -ло
+   - [ ] stem + -ли
+   > Feminine past: -ла (він читав, вона читала)
+
+2. What case is used after "в" for location?
+   - [ ] Nominative
+   - [ ] Accusative
+   - [x] Locative
+   - [ ] Genitive
+   > В/У + locative for "where"
+
+3. What case follows "немає"?
+   - [ ] Nominative
+   - [ ] Accusative
+   - [ ] Locative
+   - [x] Genitive
+   > немає + genitive for absence
+
+4. How do you form compound future tense?
+   - [x] буду/будеш/буде + infinitive
+   - [ ] past + буде
+   - [ ] present + буду
+   - [ ] infinitive only
+   > Я буду читати
+
+5. What endings do masculine adjectives have?
+   - [x] -ий/-ій
+   - [ ] -а/-я
+   - [ ] -е/-є
+   - [ ] -і
+   > новий (hard), синій (soft)
+
+6. How do you say impersonal "it's cold"?
+   - [ ] Він холодний
+   - [ ] Вона холодна
+   - [x] Холодно
+   - [ ] Холоди
+   > Adverb form for weather
+
+7. What is the locative of "місто"?
+   - [ ] місто
+   - [ ] міста
+   - [x] місті
+   - [ ] містом
+   > в місті (in the city)
+
+8. How do you express "I have"?
+   - [x] У мене є
+   - [ ] Я є
+   - [ ] Мій є
+   - [ ] Маю є
+   > У + genitive + є + nominative
+
+9. What is accusative of animate masculine "брат"?
+   - [ ] брат
+   - [x] брата
+   - [ ] брату
+   - [ ] братом
+   > Animate masculine accusative = genitive
+
+10. How do you say "It's raining"?
+   - [x] Йде дощ
+   - [ ] Дощить
+   - [ ] Є дощ
+   - [ ] Робить дощ
+   > Literally "rain goes"
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] Nominative is used for sentence subjects
+   > Correct! Студент читає.
+
+- [x] Locative is always used with a preposition
+   > Correct! в школі, на роботі
+
+- [ ] Accusative for feminine is the same as nominative
+   > Incorrect. Feminine: -а → -у (книга → книгу)
+
+- [x] Past tense agrees with subject gender
+   > Correct! він читав, вона читала
+
+- [x] "Холодно" is impersonal weather expression
+   > Correct!
+
+- [ ] "Моя брат" is correct
+   > Incorrect. брат is masculine: мій брат
+
+- [x] Genitive is used after "немає"
+   > Correct! У мене немає часу.
+
+- [x] Future: буду + infinitive
+   > Correct! Я буду читати.
+
+- [ ] All adjectives end in -ий
+   > Incorrect. Soft adjectives end in -ій (синій)
+
+- [x] "У мене є" means "I have"
+   > Correct!
+
+---

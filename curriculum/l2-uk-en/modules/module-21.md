@@ -204,179 +204,228 @@ Describe what you did yesterday using past tense:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Infinitive to Past
-
-> Match infinitives to their masculine past forms.
-
-| Left | Right |
-|------|-------|
-| читати | читав |
-| робити | робив |
-| їсти | їв |
-| пити | пив |
-| йти | ішов |
-| бути | був |
-
-## quiz: Past Tense Forms
+## fill-in: Past Tense Formation
 
 > Choose the correct past tense form.
 
-1. Він ___ книгу. (читати)
-   - [x] читав
-   - [ ] читала
-   - [ ] читало
-   - [ ] читали
-   > Він = masculine, so читав.
+1. Він ___ книгу. (читати - to read)
+   > [!answer] читав
+   > [!options] читав | читала | читало | читали
 
-2. Вона ___ в школі. (бути)
-   - [x] була
-   - [ ] був
-   - [ ] було
-   - [ ] були
-   > Вона = feminine, so була.
+2. Вона ___ у школі. (бути - to be)
+   > [!answer] була
+   > [!options] був | була | було | були
 
-3. Ми ___ фільм. (дивитися)
-   - [x] дивилися
-   - [ ] дивився
-   - [ ] дивилася
-   - [ ] дивилось
-   > Ми = plural, reflexive -ся stays.
+3. Вони ___ фільм. (дивитися - to watch)
+   > [!answer] дивилися
+   > [!options] дивився | дивилася | дивилося | дивилися
 
-4. Вони ___ вчора. (працювати)
-   - [x] працювали
-   - [ ] працював
-   - [ ] працювала
-   - [ ] працювало
-   > Вони = plural, so працювали.
+4. Я (f) ___ вчора. (працювати - to work)
+   > [!answer] працювала
+   > [!options] працював | працювала | працювало | працювали
 
-5. Я (female speaker) ___ каву. (пити)
-   - [x] пила
-   - [ ] пив
-   - [ ] пило
-   - [ ] пили
-   > Female я = feminine ending -ла.
+5. Ми ___ піцу. (їсти - to eat)
+   > [!answer] їли
+   > [!options] їв | їла | їло | їли
 
-6. Він ___ на роботу. (йти)
-   - [x] ішов
-   - [ ] йшов
-   - [ ] йшла
-   - [ ] ходив
-   > Йти irregular past: ішов.
+6. Він ___ додому. (йти - to go)
+   > [!answer] ішов
+   > [!options] ішов | ішла | ішло | ішли
 
-7. Вона ___ обід. (їсти)
-   - [x] їла
-   - [ ] їв
-   - [ ] їло
-   - [ ] їли
-   > Їсти feminine past: їла.
+7. Все ___ добре. (бути - neuter)
+   > [!answer] було
+   > [!options] був | була | було | були
 
-8. Все ___ добре. (бути)
-   - [x] було
-   - [ ] був
-   - [ ] була
-   - [ ] були
-   > Все = neuter, so було.
+8. Вона ___ каву. (пити - to drink)
+   > [!answer] пила
+   > [!options] пив | пила | пило | пили
 
-## group-sort: Regular vs Irregular Past
+9. Ти (m) де ___? (бути)
+   > [!answer] був
+   > [!options] був | була | було | були
 
-> Sort verbs by whether they have regular past tense.
-
-### Regular Past
-- читати → читав
-- робити → робив
-- знати → знав
-- працювати → працював
-- любити → любив
-
-### Irregular Past
-- їсти → їв
-- пити → пив
-- йти → ішов
-- могти → міг
-- нести → ніс
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Що ти ___ учора?
-   > [!answer] робив
-
-2. Де ви ___ минулого тижня?
+10. Вони ___ разом. (бути)
    > [!answer] були
+   > [!options] був | була | було | були
 
-3. Ми були ___ Львові.
-   > [!answer] у
+## unjumble: Build the Sentence
 
+> Arrange the words in the correct order.
 
+1. читав / книгу / Він
+   > [!answer] Він читав книгу.
+   > (He read a book.)
 
-## quiz: Meaning Check
+2. була / Вона / школі / в
+   > [!answer] Вона була в школі.
+   > (She was at school.)
+
+3. фільм / дивилися / Ми
+   > [!answer] Ми дивилися фільм.
+   > (We watched a movie.)
+
+4. вчора / працювала / Я
+   > [!answer] Я працювала вчора.
+   > (I worked yesterday.)
+
+5. їли / Вони / піцу
+   > [!answer] Вони їли піцу.
+   > (They ate pizza.)
+
+6. ішов / Він / додому
+   > [!answer] Він ішов додому.
+   > (He went home.)
+
+7. добре / Все / було
+   > [!answer] Все було добре.
+   > (Everything was fine.)
+
+8. де / ти / Де / був
+   > [!answer] Де ти був?
+   > (Where were you? - to male)
+
+9. давно / Це / було
+   > [!answer] Це було давно.
+   > (That was long ago.)
+
+10. вчора / Що / робив / ти
+   > [!answer] Що ти робив вчора?
+   > (What did you do yesterday?)
+
+## match-up: Past Tense Forms
+
+> Match the subject to the correct past tense of бути.
+
+| Left | Right |
+|------|-------|
+| він | був |
+| вона | була |
+| воно | було |
+| вони | були |
+| я (m) | був |
+| я (f) | була |
+| ми | були |
+| ви | були |
+| ти (m) | був |
+| ти (f) | була |
+
+## quiz: Past Tense Grammar
 
 > Choose the correct answer.
 
-1. What does "вчора" mean?
+1. How do you form past tense for masculine singular?
+   - [x] Remove -ти, add -в
+   - [ ] Remove -ти, add -ла
+   - [ ] Remove -ти, add -ло
+   - [ ] Remove -ти, add -ли
+   > Masculine past ends in -в
+
+2. What is the past tense of "бути" for вона?
+   - [ ] був
+   - [x] була
+   - [ ] було
+   - [ ] були
+   > Feminine past of бути = була
+
+3. What determines the past tense ending in Ukrainian?
+   - [ ] The object
+   - [x] The gender of the subject
+   - [ ] The time of day
+   - [ ] The verb type
+   > Past tense agrees with subject gender
+
+4. What is the past tense of "йти" for він?
+   - [x] ішов
+   - [ ] йшов
+   - [ ] ійшов
+   - [ ] йдев
+   > Irregular: йти → ішов/ішла/ішли
+
+5. What ending do all plural subjects use in past tense?
+   - [ ] -в
+   - [ ] -ла
+   - [ ] -ло
+   - [x] -ли
+   > All plurals (ми, ви, вони) use -ли
+
+6. What does "вчора" mean?
    - [x] yesterday
-   - [ ] day before yesterday
-   - [ ] went (m)
-   - [ ] was (f)
-   > "вчора" means "yesterday"
+   - [ ] tomorrow
+   - [ ] today
+   - [ ] last week
+   > вчора = yesterday
 
-2. What does "ішов" mean?
-   - [ ] was (f)
-   - [x] went (m)
-   - [ ] day before yesterday
-   - [ ] yesterday
-   > "ішов" means "went (m)"
+7. How do you say "I was" if you're female?
+   - [ ] Я був
+   - [x] Я була
+   - [ ] Я було
+   - [ ] Я були
+   > Female speakers use feminine form
 
-3. What does "позавчора" mean?
-   - [ ] yesterday
-   - [ ] was (f)
-   - [ ] went (m)
-   - [x] day before yesterday
-   > "позавчора" means "day before yesterday"
+8. What is "давно" in English?
+   - [ ] recently
+   - [x] long ago
+   - [ ] tomorrow
+   - [ ] soon
+   > давно = long ago
 
-4. What does "була" mean?
-   - [ ] day before yesterday
-   - [ ] yesterday
-   - [ ] went (m)
-   - [x] was (f)
-   > "була" means "was (f)"
+9. What is the past of "їсти" for він?
+   - [x] їв
+   - [ ] їла
+   - [ ] їв
+   - [ ] їсв
+   > Irregular: їсти → їв/їла/їли
 
-5. What does "було" mean?
-   - [ ] yesterday
-   - [x] was (n)
-   - [ ] day before yesterday
-   - [ ] went (m)
-   > "було" means "was (n)"
+10. What does "недавно" mean?
+   - [x] recently
+   - [ ] long ago
+   - [ ] never
+   - [ ] always
+   > недавно = recently
 
-6. What does "раніше" mean?
-   - [ ] went (m)
-   - [ ] yesterday
-   - [x] earlier, before
-   - [ ] day before yesterday
-   > "раніше" means "earlier, before"
+## true-false: True or False?
 
+> Determine if each statement is true or false.
 
+- [x] Past tense verbs must agree with the subject's gender
+   > Correct!
 
-## unjumble: Word Order
+- [x] "Він читав" is correct for "He read"
+   > Correct!
 
-> Put the words in the correct order to form a sentence.
+- [ ] "Вона був" is correct for "She was"
+   > Incorrect. Feminine needs "була"
 
-1. Що / робив / ти / учора
-   > [!answer] Що ти робив учора?
-   > (What did you do yesterday?)
+- [x] "Ми читали" uses the plural ending -ли
+   > Correct!
 
-2. Де / ви / минулого / тижня / були
-   > [!answer] Де ви були минулого тижня?
-   > (Where were you last week?)
+- [ ] "Я був" can be said by a female speaker
+   > Incorrect. Female speakers say "Я була"
 
-3. у / були / Ми / Львові
-   > [!answer] Ми були у Львові.
-   > (We were in Lviv.)
+- [x] "Йти" has irregular past: ішов/ішла/ішли
+   > Correct!
 
+- [x] "Вчора" means "yesterday"
+   > Correct!
+
+- [ ] Past tense of "пити" for він is "питив"
+   > Incorrect. It's "пив"
+
+- [x] "Все було добре" means "Everything was fine"
+   > Correct!
+
+- [x] "Давно" means "long ago"
+   > Correct!
 
 ---
 

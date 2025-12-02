@@ -203,11 +203,107 @@ Tell about your family:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Family Relations
+## fill-in: Family and Possessives
 
-> Match Ukrainian to English.
+> Choose the correct word or form.
+
+1. ___ мене є брат. (I have)
+   > [!answer] У
+   > [!options] У | На | З | Від
+
+2. Це ___ мама. (my - feminine)
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
+
+3. Це ___ батько. (my - masculine)
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
+
+4. У неї п'ять ___. (children - genitive plural)
+   > [!answer] дітей
+   > [!options] діти | дитина | дітей | дитини
+
+5. У мене немає ___. (sister - genitive)
+   > [!answer] сестри
+   > [!options] сестра | сестру | сестри | сестрою
+
+6. Я бачу ___. (brother - accusative animate)
+   > [!answer] брата
+   > [!options] брат | брата | брату | братом
+
+7. Я люблю ___. (mom - accusative)
+   > [!answer] маму
+   > [!options] мама | маму | мами | мамою
+
+8. Він ___. (married - masculine)
+   > [!answer] одружений
+   > [!options] одружений | одружена | одружене | одружені
+
+9. Вона ___. (married - feminine)
+   > [!answer] одружена
+   > [!options] одружений | одружена | одружене | одружені
+
+10. Це ___ діти. (our - plural)
+   > [!answer] наші
+   > [!options] наш | наша | наше | наші
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. є / мене / брат / У
+   > [!answer] У мене є брат.
+   > (I have a brother.)
+
+2. моя / Це / сестра
+   > [!answer] Це моя сестра.
+   > (This is my sister.)
+
+3. мій / Де / батько
+   > [!answer] Де мій батько?
+   > (Where is my father?)
+
+4. мама / Моя / лікарка
+   > [!answer] Моя мама лікарка.
+   > (My mom is a doctor.)
+
+5. діти / у / Скільки / вас
+   > [!answer] Скільки у вас діти?
+   > (How many children do you have?)
+
+6. немає / мене / сестри / У
+   > [!answer] У мене немає сестри.
+   > (I don't have a sister.)
+
+7. батьки / Мої / Києві / живуть / у
+   > [!answer] Мої батьки живуть у Києві.
+   > (My parents live in Kyiv.)
+
+8. брата / Мого / Андрій / звати
+   > [!answer] Мого брата звати Андрій.
+   > (My brother's name is Andriy.)
+
+9. велика / У / родина / мене
+   > [!answer] У мене велика родина.
+   > (I have a big family.)
+
+10. дітей / п'ять / неї / У
+   > [!answer] У неї п'ять дітей.
+   > (She has five children.)
+
+## match-up: Family Vocabulary
+
+> Match Ukrainian family words to their English meanings.
 
 | Left | Right |
 |------|-------|
@@ -215,198 +311,120 @@ Tell about your family:
 | тато | dad |
 | брат | brother |
 | сестра | sister |
-| дідусь | grandfather |
-| бабуся | grandmother |
+| батьки | parents |
+| дитина | child |
+| дідусь | grandpa |
+| бабуся | grandma |
+| чоловік | husband |
+| дружина | wife |
 
-## quiz: Family Vocabulary
+## quiz: Family Grammar
 
 > Choose the correct answer.
 
-1. "I have a brother" - У мене є ___.
-   - [x] брат
-   - [ ] брата
+1. How do you say "I have a brother"?
+   - [x] У мене є брат
+   - [ ] Я є брат
+   - [ ] Мій є брат
+   - [ ] Я маю брат
+   > Structure: У мене є + nominative
+
+2. What is the genitive of "сестра"?
+   - [x] сестри
+   - [ ] сестра
+   - [ ] сестру
+   - [ ] сестрою
+   > Feminine genitive: -а → -и
+
+3. What is the accusative of "брат" (animate)?
+   - [x] брата
+   - [ ] брат
+   - [ ] брату
    - [ ] братом
-   - [ ] браті
-   > У мене є + nominative.
+   > Animate masculine accusative = genitive
 
-2. What is "children" in Ukrainian?
-   - [x] діти
-   - [ ] дитини
-   - [ ] дитинки
-   - [ ] дитяти
-   > Irregular plural: дитина → діти.
+4. How do you say "I don't have children"?
+   - [x] У мене немає дітей
+   - [ ] У мене немає діти
+   - [ ] Я немає діти
+   - [ ] Мої немає дітей
+   > немає + genitive plural
 
-3. "My sister" (сестра = f) - ___ сестра.
-   - [x] моя
-   - [ ] мій
-   - [ ] моє
-   - [ ] мої
-   > Feminine: моя.
+5. What is "дитина → діти"?
+   - [x] irregular plural
+   - [ ] regular plural
+   - [ ] genitive form
+   - [ ] accusative form
+   > дитина has irregular plural: діти
 
-4. What does "одружений" mean?
-   - [x] married (m)
+6. What does "одружений" mean?
+   - [x] married (masculine)
+   - [ ] married (feminine)
    - [ ] divorced
    - [ ] single
-   - [ ] engaged
-   > Одружений = married (masculine).
+   > одружена is feminine
 
-5. "Mother-in-law" (husband's mother):
-   - [x] свекруха
-   - [ ] теща
-   - [ ] тітка
-   - [ ] невістка
-   > Свекруха = husband's mother.
+7. How do you say "my sister" (possessive)?
+   - [ ] мій сестра
+   - [x] моя сестра
+   - [ ] моє сестра
+   - [ ] мої сестра
+   > сестра is feminine, so моя
 
-6. How do you ask "Do you have siblings?"
+8. What does "свекруха" mean?
+   - [x] mother-in-law (husband's mother)
+   - [ ] mother-in-law (wife's mother)
+   - [ ] aunt
+   - [ ] grandmother
+   > Different words for each in-law
+
+9. How do you ask "Do you have siblings?"
    - [x] У тебе є брати чи сестри?
-   - [ ] Ти маєш брат чи сестра?
-   - [ ] Чи є брати сестри?
-   - [ ] У тебе брати сестри є?
-   > У тебе є + nominative.
+   - [ ] Ти є брати і сестри?
+   - [ ] Маєш брати і сестри?
+   - [ ] Твої брати і сестри?
+   > У + genitive + є + nominative
 
-7. "Their children" - ___ діти.
-   - [x] їхні
-   - [ ] їхній
-   - [ ] їх
-   - [ ] вони
-   > Діти (plural): їхні.
-
-8. What is "daughter" in Ukrainian?
-   - [x] дочка
-   - [ ] дівчина
-   - [ ] донька
-   - [ ] дитина
-   > Дочка = daughter (донька is also used).
-
-## group-sort: Family by Generation
-
-> Sort family members by generation.
-
-### Старше покоління (Older)
-- дідусь
-- бабуся
-- мама
-- тато
-
-### Моє покоління (My Generation)
-- брат
-- сестра
-- чоловік
-- дружина
-
-### Молодше покоління (Younger)
-- син
-- дочка
-- онук
-- онука
-
+10. What is "grandchildren" in Ukrainian?
+   - [ ] дідусі
+   - [x] онуки
+   - [ ] дітей
+   - [ ] батьки
+   > онук (m), онука (f) → онуки (pl)
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "батько" is masculine.
-   > Correct! батько is masculine.
+- [x] "Батько" means "father"
+   > Correct!
 
-- [x] "батьки" is neuter.
-   > Correct! батьки is neuter.
+- [x] "Дитина → діти" is an irregular plural
+   > Correct! Not дитини
 
-- [x] "син" is masculine.
-   > Correct! син is masculine.
+- [ ] "У мене є брат" means "My brother is"
+   > Incorrect. It means "I have a brother"
 
-- [x] "дочка" is feminine.
-   > Correct! дочка is feminine.
+- [x] "Чоловік" can mean "husband" or "man"
+   > Correct!
 
-- [ ] "дитина" is masculine.
-   > Incorrect. дитина is feminine.
+- [x] "Одружена" is feminine form of "married"
+   > Correct!
 
-- [ ] "дідусь" is feminine.
-   > Incorrect. дідусь is masculine.
+- [ ] "Мій сестра" is correct
+   > Incorrect. сестра is feminine: "моя сестра"
 
+- [x] "Бабуся" means "grandma"
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [x] "У мене немає" + genitive expresses absence
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [ ] "Брати" is singular
+   > Incorrect. брати is plural of брат
 
-1. У мене ___ родина.
-   > [!answer] велика
-
-2. Моя ___ лікарка.
-   > [!answer] мама
-
-3. Мого брата ___ Андрій.
-   > [!answer] звати
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "батько" mean?
-   - [x] father
-   - [ ] parents
-   - [ ] grandpa
-   - [ ] relative
-   > "батько" means "father"
-
-2. What does "батьки" mean?
-   - [ ] relative
-   - [ ] father
-   - [ ] grandpa
-   - [x] parents
-   > "батьки" means "parents"
-
-3. What does "дідусь" mean?
-   - [ ] relative
-   - [ ] father
-   - [x] grandpa
-   - [ ] parents
-   > "дідусь" means "grandpa"
-
-4. What does "родич" mean?
-   - [ ] parents
-   - [x] relative
-   - [ ] father
-   - [ ] grandpa
-   > "родич" means "relative"
-
-5. What does "дружина" mean?
-   - [ ] grandpa
-   - [ ] parents
-   - [x] wife
-   - [ ] father
-   > "дружина" means "wife"
-
-6. What does "чоловік" mean?
-   - [ ] father
-   - [ ] parents
-   - [ ] grandpa
-   - [x] husband
-   > "чоловік" means "husband"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. родина / У / мене / велика
-   > [!answer] У мене велика родина.
-   > (I have a big family.)
-
-2. Моя / мама / лікарка
-   > [!answer] Моя мама лікарка.
-   > (My mom is a doctor.)
-
-3. звати / Андрій / брата / Мого
-   > [!answer] Мого брата звати Андрій.
-   > (My brother's name is Andriy.)
-
-4. Розкажи / родину / про / свою
-   > [!answer] Розкажи про свою родину.
-   > (Tell me about your family.)
-
+- [x] "Дружина" means "wife"
+   > Correct!
 
 ---
 

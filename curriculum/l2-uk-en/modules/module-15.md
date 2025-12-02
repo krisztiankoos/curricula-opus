@@ -216,158 +216,228 @@ Example:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Direction Words
+## fill-in: Directions and Location
 
-> Match Ukrainian to English.
+> Choose the correct word to complete each direction or location phrase.
+
+1. ___ метро? (Where is the metro?)
+   > [!answer] Де
+   > [!options] Де | Що | Хто | Як
+
+2. Йдіть ___. (Go straight.)
+   > [!answer] прямо
+   > [!options] праворуч | ліворуч | прямо | назад
+
+3. Поверніть ___. (Turn right.)
+   > [!answer] праворуч
+   > [!options] прямо | праворуч | назад | далеко
+
+4. Банк ___ метро. (The bank is near the metro.)
+   > [!answer] біля
+   > [!options] на | в | біля | за
+
+5. ___ вулицю. (Cross the street.)
+   > [!answer] Перейдіть
+   > [!options] Йдіть | Поверніть | Перейдіть | Пройдіть
+
+6. Аптека ___ готелю. (The pharmacy is opposite the hotel.)
+   > [!answer] навпроти
+   > [!options] біля | навпроти | за | до
+
+7. ___ найближча аптека? (Where is the nearest pharmacy?)
+   > [!answer] Де
+   > [!options] Хто | Що | Де | Як
+
+8. Йдіть ___ станції. (Go to the station.)
+   > [!answer] до
+   > [!options] на | в | біля | до
+
+9. Це ___ рогом. (It's around the corner.)
+   > [!answer] за
+   > [!options] біля | на | за | до
+
+10. Метро ___ далеко. (The metro is not far.)
+   > [!answer] не
+   > [!options] не | так | тут | там
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. метро / Де / найближче
+   > [!answer] Де найближче метро?
+   > (Where is the nearest metro?)
+
+2. прямо / Йдіть
+   > [!answer] Йдіть прямо.
+   > (Go straight.)
+
+3. праворуч / Поверніть
+   > [!answer] Поверніть праворуч.
+   > (Turn right.)
+
+4. вулицю / Перейдіть
+   > [!answer] Перейдіть вулицю.
+   > (Cross the street.)
+
+5. метро / біля / Банк
+   > [!answer] Банк біля метро.
+   > (The bank is near the metro.)
+
+6. рогом / за / Це
+   > [!answer] Це за рогом.
+   > (It's around the corner.)
+
+7. ласка / будь / де / Скажіть / аптека
+   > [!answer] Скажіть, будь ласка, де аптека?
+   > (Tell me please, where is the pharmacy?)
+
+8. ліворуч / потім / Йдіть / прямо / поверніть
+   > [!answer] Йдіть прямо, потім поверніть ліворуч.
+   > (Go straight, then turn left.)
+
+9. Де / банк / тут
+   > [!answer] Де тут банк?
+   > (Where is a bank here?)
+
+10. квартали / два / Пройдіть
+   > [!answer] Пройдіть два квартали.
+   > (Go two blocks.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
 | прямо | straight |
-| праворуч | right |
-| ліворуч | left |
-| назад | back |
-| близько | near |
-| далеко | far |
-| біля | next to |
+| праворуч | to the right |
+| ліворуч | to the left |
+| біля | near, by |
 | навпроти | opposite |
+| до | to, toward |
+| за | behind |
+| вхід | entrance |
+| вихід | exit |
+| зупинка | stop |
 
 ## quiz: City Navigation
 
 > Choose the correct answer.
 
-1. How do you ask "Where is the metro?"
+1. What is the correct question for "Where is the metro?"
    - [x] Де метро?
    - [ ] Що метро?
+   - [ ] Хто метро?
    - [ ] Як метро?
-   - [ ] Куди метро?
-   > Де = where (location).
+   > "Де" means "where"
 
-2. How do you say "Go straight"?
-   - [x] Йдіть прямо.
-   - [ ] Йди прямо.
-   - [ ] Йдуть прямо.
-   - [ ] Йде прямо.
-   > Йдіть = imperative (formal/plural).
+2. What does "Йдіть прямо" mean?
+   - [x] Go straight
+   - [ ] Turn right
+   - [ ] Turn left
+   - [ ] Go back
+   > "прямо" = straight, "йдіть" = go
 
-3. How do you say "Turn left"?
-   - [x] Поверніть ліворуч.
-   - [ ] Поверніть праворуч.
-   - [ ] Поверніть назад.
-   - [ ] Поверніть прямо.
-   > Ліворуч = to the left.
-
-4. "The bank is near the metro" - Банк ___ метро.
-   - [x] біля
+3. What preposition means "near, by"?
    - [ ] на
+   - [x] біля
    - [ ] в
    - [ ] до
-   > Біля = near, next to.
+   > "біля" means near, by
 
-5. How do you politely ask for directions?
-   - [x] Вибачте, де аптека?
-   - [ ] Аптека де?
-   - [ ] Де аптека, ти!
-   - [ ] Аптека!
-   > Вибачте = excuse me (polite opener).
+4. How do you say "Turn left"?
+   - [ ] Поверніть прямо
+   - [ ] Поверніть праворуч
+   - [x] Поверніть ліворуч
+   - [ ] Поверніть назад
+   > "ліворуч" = to the left
 
-6. How do you say "behind the corner" / "around the corner"?
-   - [x] за рогом
-   - [ ] на рогу
-   - [ ] в рогу
-   - [ ] біля рога
-   > За рогом = behind/around the corner.
+5. What does "Перейдіть вулицю" mean?
+   - [ ] Go to the street
+   - [x] Cross the street
+   - [ ] Find the street
+   - [ ] Turn on the street
+   > "перейти" = to cross
 
-7. What is "зупинка"?
-   - [x] bus/tram stop
-   - [ ] metro station
-   - [ ] taxi stand
-   - [ ] parking lot
-   > Зупинка = stop (from зупинитися = to stop).
+6. How do you politely start asking for directions?
+   - [ ] Йдіть!
+   - [ ] Де!
+   - [x] Вибачте
+   - [ ] Так!
+   > "Вибачте" = Excuse me (polite opener)
 
-8. "Cross the street" in Ukrainian:
-   - [x] Перейдіть вулицю.
-   - [ ] Йдіть вулицю.
-   - [ ] Поверніть вулицю.
-   - [ ] Пройдіть вулицю.
-   > Перейти = to cross (пере- = across).
+7. What does "Це за рогом" mean?
+   - [x] It's around the corner
+   - [ ] It's near the corner
+   - [ ] It's opposite the corner
+   - [ ] It's at the corner
+   > "за рогом" = around/behind the corner
 
-## group-sort: Places by Category
+8. Which word means "exit"?
+   - [ ] вхід
+   - [x] вихід
+   - [ ] зупинка
+   - [ ] станція
+   > "вихід" = exit, "вхід" = entrance
 
-> Sort these places by category.
+9. How do you say "Go to the station"?
+   - [ ] Йдіть на станції
+   - [x] Йдіть до станції
+   - [ ] Йдіть в станції
+   - [ ] Йдіть біля станції
+   > "до" + genitive for destination
 
-### Transportation
-- метро
-- станція
-- зупинка
-- аеропорт
+10. What does "найближча аптека" mean?
+   - [x] nearest pharmacy
+   - [ ] big pharmacy
+   - [ ] good pharmacy
+   - [ ] new pharmacy
+   > "найближча" = nearest
 
-### Services
-- банк
-- аптека
-- пошта
-- лікарня
+## true-false: True or False?
 
-### Streets & Areas
-- вулиця
-- площа
-- квартал
-- перехрестя
+> Determine if each statement is true or false.
 
+- [x] "праворуч" means "to the right"
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [x] "біля" is used to say "near, by" something
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [ ] "Йдіть прямо" means "Turn around"
+   > Incorrect. It means "Go straight"
 
+- [x] "Де найближче метро?" asks for the nearest metro
+   > Correct!
 
+- [ ] "вхід" and "вихід" mean the same thing
+   > Incorrect. "вхід" = entrance, "вихід" = exit
 
-## quiz: Meaning Check
+- [x] "Вибачте" is a polite way to start asking directions
+   > Correct!
 
-> Choose the correct answer.
+- [ ] "ліворуч" means "to the right"
+   > Incorrect. "ліворуч" means "to the left"
 
-1. What does "далеко" mean?
-   - [ ] to cross
-   - [ ] hospital
-   - [ ] pharmacy
-   - [x] far
-   > "далеко" means "far"
+- [x] "зупинка" means "stop" (bus/tram stop)
+   > Correct!
 
-2. What does "лікарня" mean?
-   - [ ] far
-   - [ ] to cross
-   - [x] hospital
-   - [ ] pharmacy
-   > "лікарня" means "hospital"
+- [x] "Перейдіть вулицю" means "Cross the street"
+   > Correct!
 
-3. What does "перейти" mean?
-   - [ ] far
-   - [x] to cross
-   - [ ] hospital
-   - [ ] pharmacy
-   > "перейти" means "to cross"
-
-4. What does "аптека" mean?
-   - [ ] to cross
-   - [ ] far
-   - [x] pharmacy
-   - [ ] hospital
-   > "аптека" means "pharmacy"
-
-5. What does "ріг" mean?
-   - [x] corner
-   - [ ] to cross
-   - [ ] far
-   - [ ] hospital
-   > "ріг" means "corner"
-
-6. What does "назад" mean?
-   - [ ] hospital
-   - [ ] to cross
-   - [ ] far
-   - [x] back
-   > "назад" means "back"
-
+- [ ] "до" and "біля" have the same meaning
+   > Incorrect. "до" = to/toward, "біля" = near/by
 
 ---
 

@@ -322,15 +322,18 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
-/* Fill-in Activity */
-.fill-container { display: flex; flex-direction: column; gap: 1rem; }
-.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-.fill-question.answered .fill-check { display: none; }
-.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
-.fill-input:focus { border-color: var(--primary); outline: none; }
-.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
-.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
-.fill-check { margin-left: 0.5rem; }
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
 .fill-feedback { margin-top: 0.5rem; font-weight: 500; }
 .fill-feedback .correct-text { color: var(--success); }
 .fill-feedback .wrong-text { color: var(--danger); }
@@ -347,6 +350,32 @@ footer {
 .order-handle { color: var(--text-muted); font-size: 1.25rem; }
 .order-text { font-size: 1.1rem; }
 
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -354,9 +383,9 @@ footer {
   <div class="top-nav">
     <a href="../index.html">← l2-uk-en Curriculum</a>
     <div class="module-nav">
-      <a href="module-27.html" class="module-nav-link">← Module 27</a>
+      <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-29.html" class="module-nav-link">Module 29 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -365,7 +394,7 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
-      <button class="nav-tab" data-section="sort">Sort</button>
+      
       <button class="nav-tab" data-section="fill">Fill</button>
       <button class="nav-tab" data-section="order">Order</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
@@ -741,6 +770,10 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
+<hr />
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -831,39 +864,32 @@ footer {
   
     
     <section id="match" class="section"><div class="card"><h3>Weather Vocabulary</h3>
-      <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
-        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">сонце</div><div class="match-item" data-pair="1">дощ</div><div class="match-item" data-pair="2">сніг</div><div class="match-item" data-pair="3">вітер</div><div class="match-item" data-pair="4">хмара</div><div class="match-item" data-pair="5">гроза</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">wind</div><div class="match-item" data-pair="1">rain</div><div class="match-item" data-pair="5">thunderstorm</div><div class="match-item" data-pair="4">cloud</div><div class="match-item" data-pair="2">snow</div><div class="match-item" data-pair="0">sun</div></div>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">погода</div><div class="match-item" data-pair="1">сонце</div><div class="match-item" data-pair="2">хмара</div><div class="match-item" data-pair="3">дощ</div><div class="match-item" data-pair="4">сніг</div><div class="match-item" data-pair="5">вітер</div><div class="match-item" data-pair="6">туман</div><div class="match-item" data-pair="7">гроза</div><div class="match-item" data-pair="8">мороз</div><div class="match-item" data-pair="9">веселка</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="6">fog</div><div class="match-item" data-pair="2">cloud</div><div class="match-item" data-pair="3">rain</div><div class="match-item" data-pair="5">wind</div><div class="match-item" data-pair="4">snow</div><div class="match-item" data-pair="8">frost</div><div class="match-item" data-pair="1">sun</div><div class="match-item" data-pair="7">thunderstorm</div><div class="match-item" data-pair="9">rainbow</div><div class="match-item" data-pair="0">weather</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Weather Expressions</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+    <section id="quiz" class="section"><div class="card"><h3>Weather Grammar</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/10</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
     </div></section>
     
-    <section id="sort" class="section"><div class="card"><h3>Weather Types</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/12</span></div>
-      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Precipitation</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Temperature</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Sky Conditions</h4><div class="sort-items"></div></div></div>
-      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
-    </div></section>
     
-    <section id="fill" class="section"><div class="card"><h3>Fill in the Blank</h3>
-      <div class="score-display"><span class="score"><span id="fill-score">0</span>/0</span></div>
+    <section id="fill" class="section"><div class="card"><h3>Weather Expressions</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/10</span></div>
       <div id="fill-container" class="fill-container"></div>
       <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('order')">Next →</button></div>
     </div></section>
     
-    <section id="order" class="section"><div class="card"><h3>Word Order</h3>
-      <div class="score-display"><span class="score"><span id="order-score">0</span>/4</span></div>
+    <section id="order" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="order-score">0</span>/10</span></div>
       <div id="order-container" class="order-container"></div>
       <div class="completion-message" id="order-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetOrder()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
@@ -893,13 +919,13 @@ footer {
   </main><footer>Module 28 · curricula-opus</footer>
   <script>
 
-    const matchPairs = [{"left":"сонце","right":"sun"},{"left":"дощ","right":"rain"},{"left":"сніг","right":"snow"},{"left":"вітер","right":"wind"},{"left":"хмара","right":"cloud"},{"left":"гроза","right":"thunderstorm"}];
-    const quizData = [{"question":"\"It's cold\" in Ukrainian:","options":["Холодно.","Холодний.","Холодна.","Холодне."],"correctIndex":0,"explanation":"Impersonal: холодно."},{"question":"\"It's raining\" - Йде ___.","options":["дощ","дощовий","дощем","дощі"],"correctIndex":0,"explanation":"Йде дощ = rain goes."},{"question":"\"Sunny weather\" in Ukrainian:","options":["сонячна погода","сонце погода","сонячний погода","сонячне погода"],"correctIndex":0,"explanation":"Погода (f): сонячна."},{"question":"\"It was warm yesterday\" - Вчора ___ тепло.","options":["було","був","була","є"],"correctIndex":0,"explanation":"Past impersonal: було."},{"question":"What is \"веселка\"?","options":["rainbow","sun","cloud","storm"],"correctIndex":0,"explanation":"Веселка = rainbow (from \"cheerful\")."},{"question":"\"The wind is blowing\" - ___ вітер.","options":["Дме","Йде","Світить","Буде"],"correctIndex":0,"explanation":"Дме вітер = wind blows."},{"question":"\"It will be snowing\" - Буде йти ___.","options":["сніг","сніговий","снігом","сніги"],"correctIndex":0,"explanation":"Буде йти сніг."},{"question":"Which season is \"жарко\"?","options":["літо","зима","весна","осінь"],"correctIndex":0,"explanation":"Літо = summer (hot)."}];
-    const sortData = {"true-friends":["дощ","сніг","град","туман"],"false-friends":["тепло","холодно","жарко","прохолодно"],"new-letters":["сонячно","хмарно","ясно","похмуро"]};
-    const fillData = {"items":[],"text":"Fill in the blanks with the correct word.","answers":[]};
-    const orderData = {"items":["сьогодні / Яка / погода","буде / Завтра / дощ","сьогодні / Яка / погода","Яка / погода / жахлива"],"correctOrder":[0,1,2,3]};
+    const matchPairs = [{"left":"погода","right":"weather"},{"left":"сонце","right":"sun"},{"left":"хмара","right":"cloud"},{"left":"дощ","right":"rain"},{"left":"сніг","right":"snow"},{"left":"вітер","right":"wind"},{"left":"туман","right":"fog"},{"left":"гроза","right":"thunderstorm"},{"left":"мороз","right":"frost"},{"left":"веселка","right":"rainbow"}];
+    const quizData = [{"question":"How do you say \"It's cold\" (impersonal)?","options":["Холодно","Холодний","Холодна","Холодне"],"correctIndex":0,"explanation":"Impersonal weather: adverb form"},{"question":"How do you say \"It's raining\"?","options":["Йде дощ","Дощить","Є дощ","Робить дощ"],"correctIndex":0,"explanation":"Literally \"rain goes\""},{"question":"How do you change to past tense: \"It was warm\"?","options":["Тепло","Було тепло","Теплий було","Тепла було"],"correctIndex":1,"explanation":"Add \"було\" before the adverb"},{"question":"How do you change to future: \"It will be hot\"?","options":["Жарко","Буде жарко","Жаркий буде","Жарка буде"],"correctIndex":1,"explanation":"Add \"буде\" before the adverb"},{"question":"What does \"Яка сьогодні погода?\" mean?","options":["What's the weather today?","Where is the weather?","Is it raining?","How is the rain?"],"correctIndex":0,"explanation":"Standard weather question"},{"question":"What does \"веселка\" mean?","options":["rainbow","cloud","sun","wind"],"correctIndex":0,"explanation":"веселка = rainbow (from веселий=cheerful)"},{"question":"What verb is used with \"сонце\"?","options":["світить (shines)","йде (goes)","дме (blows)","падає (falls)"],"correctIndex":0,"explanation":"Світить сонце (The sun shines)"},{"question":"What verb is used with \"вітер\"?","options":["світить","йде","дме (blows)","падає"],"correctIndex":2,"explanation":"Дме вітер (The wind blows)"},{"question":"How do you say \"sunny weather\"?","options":["сонячний погода","сонячна погода","сонячне погода","сонячно погода"],"correctIndex":1,"explanation":"погода is feminine"},{"question":"What does \"мороз\" mean?","options":["frost","fog","rain","snow"],"correctIndex":0,"explanation":"мороз = frost (winter cold)"}];
+    const sortData = {};
+    const fillData = {"items":[{"prompt":"Сьогодні ___. (cold - impersonal)","answer":"холодно","options":["холодний","холодна","холодне","холодно"]},{"prompt":"Вчора було ___. (warm - past)","answer":"тепло","options":["тепло","теплий","тепла","тепле"]},{"prompt":"Завтра буде ___. (hot - future)","answer":"жарко","options":["жарко","жаркий","жарка","жарке"]},{"prompt":"Йде ___. (rain)","answer":"дощ","options":["дощ","дощовий","дощова","дощі"]},{"prompt":"Йде ___. (snow)","answer":"сніг","options":["сніг","сніжний","снігова","сніги"]},{"prompt":"Світить ___. (sun)","answer":"сонце","options":["сонце","сонячний","сонячна","сонячно"]},{"prompt":"Дме ___. (wind)","answer":"вітер","options":["вітер","вітряний","вітряна","вітряно"]},{"prompt":"Погода сьогодні ___. (sunny - feminine)","answer":"сонячна","options":["сонячний","сонячна","сонячне","сонячні"]},{"prompt":"Небо ___. (cloudy - neuter)","answer":"хмарне","options":["хмарний","хмарна","хмарне","хмарні"]},{"prompt":"Скільки сьогодні ___? (degrees)","answer":"градусів","options":["градус","градуси","градусів","градусом"]}],"text":"","answers":[]};
+    const orderData = {"items":[{"words":["холодно","Сьогодні"],"answer":"Сьогодні холодно.","translation":"Today it's cold."},{"words":["тепло","Вчора","було"],"answer":"Вчора було тепло.","translation":"Yesterday it was warm."},{"words":["буде","жарко","Завтра"],"answer":"Завтра буде жарко.","translation":"Tomorrow it will be hot."},{"words":["дощ","Йде"],"answer":"Йде дощ.","translation":"It's raining."},{"words":["сніг","Йде"],"answer":"Йде сніг.","translation":"It's snowing."},{"words":["сонце","Світить"],"answer":"Світить сонце.","translation":"The sun is shining."},{"words":["вітер","Дме"],"answer":"Дме вітер.","translation":"The wind is blowing."},{"words":["погода","Яка","сьогодні"],"answer":"Яка сьогодні погода?","translation":"What's the weather today?"},{"words":["дощ","Здається","буде"],"answer":"Здається, буде дощ.","translation":"It looks like rain."},{"words":["парасольку","Візьми"],"answer":"Візьми парасольку!","translation":"Take an umbrella!"}],"isUnjumble":true};
     const vocabData = [{"uk":"погода","translit":"","en":"weather","note":""},{"uk":"хмара","translit":"","en":"cloud","note":""},{"uk":"дощ","translit":"","en":"rain","note":"Йде дощ"},{"uk":"сніг","translit":"","en":"snow","note":"Йде сніг"},{"uk":"вітер","translit":"","en":"wind","note":"Дме вітер"},{"uk":"гроза","translit":"","en":"thunderstorm","note":""},{"uk":"туман","translit":"","en":"fog","note":""},{"uk":"мороз","translit":"","en":"frost","note":""},{"uk":"веселка","translit":"","en":"rainbow","note":""},{"uk":"тепло","translit":"","en":"warm (adv)","note":"Impersonal"},{"uk":"холодно","translit":"","en":"cold (adv)","note":"Impersonal"},{"uk":"жарко","translit":"","en":"hot (adv)","note":"Impersonal"},{"uk":"сонячний","translit":"","en":"sunny","note":""},{"uk":"хмарний","translit":"","en":"cloudy","note":""},{"uk":"температура","translit":"","en":"temperature","note":""},{"uk":"градус","translit":"","en":"degree","note":""},{"uk":"парасолька","translit":"","en":"umbrella","note":""}];
-    const totalSort = 12;
+    const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1106,7 +1132,7 @@ function resetSort() {
 }
 
 
-// Fill-in Activity
+// Fill-in Activity - Dropdown in sentence
 let fillScore = 0, fillAns = 0;
 
 function initFill() {
@@ -1117,45 +1143,82 @@ function initFill() {
   fillData.items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'fill-question';
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = fillData.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
     div.innerHTML = `
-      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
-      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
-      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
       <div class="fill-feedback" id="fill-fb-${i}"></div>
     `;
     c.appendChild(div);
   });
 
-  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
-  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
-  }));
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
 }
 
-function handleFill(e) {
-  const idx = e.target.dataset.idx;
-  const q = e.target.closest('.fill-question');
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
   if (q.classList.contains('answered')) return;
 
-  const input = q.querySelector('.fill-input');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = input.dataset.answer.toLowerCase();
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
   const fb = document.getElementById('fill-fb-' + idx);
 
   q.classList.add('answered');
+  dropdown.disabled = true;
 
   if (userAnswer === correctAnswer) {
-    input.classList.add('correct');
-    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
     fillScore++;
   } else {
-    input.classList.add('wrong');
-    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
   }
 
   document.getElementById('fill-score').textContent = fillScore;
   fillAns++;
-  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+  if (fillAns === fillData.items.length) {
+    document.getElementById('fill-complete').classList.add('show');
+  }
 }
 
 function resetFill() {
@@ -1175,9 +1238,217 @@ function initOrder() {
   if (!c || !orderData.items.length) return;
   c.innerHTML = '';
 
+  if (orderData.isUnjumble) {
+    initUnjumble(c);
+  } else {
+    initClassicOrder(c);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(container) {
   orderTotal = orderData.items.length;
 
-  // Shuffle items for display
+  orderData.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    orderScore++;
+    document.getElementById('order-score').textContent = orderScore;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (orderScore === orderTotal) {
+      document.getElementById('order-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(container) {
+  orderTotal = orderData.items.length;
+
   const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
   shuffled.sort(() => Math.random() - 0.5);
 
@@ -1189,15 +1460,14 @@ function initOrder() {
       <span class="order-text">${item.text}</span>
     </div>
   `).join('');
-  c.appendChild(div);
+  container.appendChild(div);
 
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn btn-outline';
   checkBtn.textContent = 'Check Order';
   checkBtn.onclick = checkOrder;
-  c.appendChild(checkBtn);
+  container.appendChild(checkBtn);
 
-  // Enable drag and drop
   initDragDrop();
 }
 
@@ -1235,7 +1505,6 @@ function checkOrder() {
   const items = document.querySelectorAll('.order-item');
   const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
 
-  // Check if order is correct (0, 1, 2, 3, ...)
   let correct = true;
   currentOrder.forEach((val, idx) => {
     const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;

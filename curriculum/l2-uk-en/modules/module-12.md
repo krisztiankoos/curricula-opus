@@ -160,195 +160,228 @@ Practice with real people:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Animate Accusative
+## fill-in: Animate Accusative
 
-> Match nominative to accusative for animate nouns.
+> Choose the correct accusative form for animate nouns (people).
 
-| Left (Nominative) | Right (Accusative) |
-|-------------------|-------------------|
-| студент | студента |
-| друг | друга |
-| лікар | лікаря |
-| чоловік | чоловіка |
-| студентка | студентку |
-| жінка | жінку |
+1. Я бачу ___. (студент - male student)
+   > [!answer] студента
+   > [!options] студент | студента | студенті | студенту
 
-## quiz: Animate vs Inanimate Accusative
+2. Вона знає ___. (лікар - male doctor)
+   > [!answer] лікаря
+   > [!options] лікар | лікаря | лікарі | лікару
 
-> Choose the correct accusative form.
+3. Я бачу ___. (студентка - female student)
+   > [!answer] студентку
+   > [!options] студентка | студентку | студентці | студенткою
 
-1. "I see the student (male)" - Я бачу ___.
-   - [x] студента
+4. Він чекає на ___. (друг - male friend)
+   > [!answer] друга
+   > [!options] друг | друга | друзі | другу
+
+5. Ми знаємо ___. (вчитель - male teacher)
+   > [!answer] вчителя
+   > [!options] вчитель | вчителя | вчителі | вчителю
+
+6. Вона бачить ___. (жінка - woman)
+   > [!answer] жінку
+   > [!options] жінка | жінку | жінці | жінкою
+
+7. Я знаю ___. (чоловік - man)
+   > [!answer] чоловіка
+   > [!options] чоловік | чоловіка | чоловіці | чоловіку
+
+8. Він чекає на ___. (подруга - female friend)
+   > [!answer] подругу
+   > [!options] подруга | подругу | подрузі | подругою
+
+9. Ми бачимо ___. (директор)
+   > [!answer] директора
+   > [!options] директор | директора | директорі | директору
+
+10. Я знаю ___. (сусідка - female neighbor)
+   > [!answer] сусідку
+   > [!options] сусідка | сусідку | сусідці | сусідкою
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. студента / бачу / Я
+   > [!answer] Я бачу студента.
+   > (I see a student.)
+
+2. лікаря / знає / Вона
+   > [!answer] Вона знає лікаря.
+   > (She knows the doctor.)
+
+3. подругу / бачить / Він
+   > [!answer] Він бачить подругу.
+   > (He sees a friend.)
+
+4. на / чекаю / друга / Я
+   > [!answer] Я чекаю на друга.
+   > (I'm waiting for a friend.)
+
+5. студентку / знаємо / Ми
+   > [!answer] Ми знаємо студентку.
+   > (We know the student.)
+
+6. вчителя / бачать / Вони
+   > [!answer] Вони бачать вчителя.
+   > (They see the teacher.)
+
+7. жінку / Він / бачить
+   > [!answer] Він бачить жінку.
+   > (He sees the woman.)
+
+8. на / чекає / лікаря / Вона
+   > [!answer] Вона чекає на лікаря.
+   > (She's waiting for the doctor.)
+
+9. чоловіка / знаю / Я
+   > [!answer] Я знаю чоловіка.
+   > (I know the man.)
+
+10. директора / бачимо / Ми
+   > [!answer] Ми бачимо директора.
+   > (We see the director.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
+
+| Left | Right |
+|------|-------|
+| студент | student (m) |
+| студентка | student (f) |
+| лікар | doctor (m) |
+| лікарка | doctor (f) |
+| вчитель | teacher (m) |
+| чоловік | man, husband |
+| жінка | woman, wife |
+| друг | friend (m) |
+| подруга | friend (f) |
+| сусід | neighbor (m) |
+
+## quiz: Animate Accusative Rules
+
+> Choose the correct answer.
+
+1. What is the accusative of "студент" (animate masculine)?
    - [ ] студент
+   - [x] студента
+   - [ ] студенті
    - [ ] студенту
-   - [ ] студенти
-   > Masculine animate: студент → студента.
+   > Animate masculine: add -а
 
-2. "I see the table" - Я бачу ___.
-   - [x] стіл
-   - [ ] стола
-   - [ ] столу
-   - [ ] столи
-   > Masculine inanimate: no change.
+2. What is the accusative of "вчитель" (animate masculine)?
+   - [ ] вчитель
+   - [x] вчителя
+   - [ ] вчителі
+   - [ ] вчителю
+   > Animate masculine -ь: add -я
 
-3. "She knows the doctor (male)" - Вона знає ___.
-   - [x] лікаря
-   - [ ] лікар
-   - [ ] лікарю
-   - [ ] лікарі
-   > Masculine animate: лікар → лікаря.
+3. What is the accusative of "студентка" (animate feminine)?
+   - [ ] студентка
+   - [x] студентку
+   - [ ] студентці
+   - [ ] студенткою
+   > Feminine -а → -у (same as inanimate)
 
-4. "I see the woman" - Я бачу ___.
-   - [x] жінку
-   - [ ] жінка
-   - [ ] жінки
-   - [ ] жінкою
-   > Feminine (animate or not): -а → -у.
+4. Why do animate masculine nouns change differently?
+   - [ ] They are special words
+   - [x] To distinguish subject from object
+   - [ ] It's random
+   - [ ] They don't change
+   > Animate endings help clarify who does what
 
-5. "We're waiting for a friend (male)" - Ми чекаємо на ___.
-   - [x] друга
+5. What does "Я чекаю на друга" mean?
+   - [ ] I see a friend
+   - [x] I'm waiting for a friend
+   - [ ] I know a friend
+   - [ ] I have a friend
+   > "чекати на" + accusative = wait for
+
+6. What is the accusative of "друг"?
    - [ ] друг
+   - [x] друга
    - [ ] другу
-   - [ ] други
-   > Masculine animate: друг → друга.
+   - [ ] друзі
+   > Animate masculine: add -а
 
-6. "He loves his dad" - Він любить ___.
-   - [x] тата
-   - [ ] тато
-   - [ ] тату
-   - [ ] таті
-   > Masculine animate ending in -о: тато → тата.
+7. What is the accusative of "жінка"?
+   - [ ] жінка
+   - [x] жінку
+   - [ ] жінці
+   - [ ] жінкою
+   > Feminine -а → -у
 
-## group-sort: Animate vs Inanimate
+8. What is the pattern for animate masculine accusative?
+   - [x] Same as genitive (add -а/-я)
+   - [ ] Same as nominative
+   - [ ] Same as locative
+   - [ ] Add -у
+   > Animate masculine accusative = genitive form
 
-> Sort these nouns by animacy.
+9. Which is correct: "Я бачу лікар" or "Я бачу лікаря"?
+   - [ ] Я бачу лікар
+   - [x] Я бачу лікаря
+   - [ ] Both are correct
+   - [ ] Neither is correct
+   > Animate masculine needs -а ending
 
-### Animate (Accusative changes for masculine)
-- студент
-- лікар
-- друг
-- собака
-- кіт
-
-### Inanimate (No accusative change for masculine)
-- стіл
-- телефон
-- комп'ютер
-- журнал
-- вікно
-
+10. Does feminine animate differ from feminine inanimate in accusative?
+   - [ ] Yes, completely different
+   - [x] No, both use -а → -у
+   - [ ] Animate doesn't change
+   - [ ] Inanimate doesn't change
+   > Feminine is the same: -а → -у for both
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "колега" is neuter.
-   > Correct! колега is neuter.
+- [x] Animate masculine accusative = genitive-like (-а/-я)
+   > Correct!
 
-- [x] "сусід" is masculine.
-   > Correct! сусід is masculine.
+- [x] Feminine animate accusative is the same as inanimate (-а → -у)
+   > Correct!
 
-- [x] "сусідка" is feminine.
-   > Correct! сусідка is feminine.
+- [ ] "Я бачу студент" is correct
+   > Incorrect. Should be "Я бачу студента"
 
-- [x] "лікар" is masculine.
-   > Correct! лікар is masculine.
+- [x] "Вона знає лікаря" is correct
+   > Correct! Animate masculine in accusative
 
-- [ ] "лікарка" is masculine.
-   > Incorrect. лікарка is feminine.
+- [ ] "Він бачить жінка" is correct
+   > Incorrect. Should be "Він бачить жінку"
 
-- [ ] "офіціант" is feminine.
-   > Incorrect. офіціант is masculine.
+- [x] "чекати на" takes accusative
+   > Correct!
 
+- [x] "друг" becomes "друга" in accusative
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [ ] "студентка" doesn't change in accusative
+   > Incorrect. It becomes "студентку"
 
-> Fill in the blanks with the correct word.
+- [x] Dead people are still grammatically animate
+   > Correct! Historical figures use animate forms
 
-1. Я знаю ___ чоловіка.
-   > [!answer] цього
-
-2. Ти бачиш ___ жінку?
-   > [!answer] ту
-
-3. Ми чекаємо ___ лікаря.
-   > [!answer] на
-
-4. Я люблю ___ маму.
-   > [!answer] свою
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "офіціантка" mean?
-   - [ ] director
-   - [ ] neighbor (m)
-   - [ ] colleague
-   - [x] waitress
-   > "офіціантка" means "waitress"
-
-2. What does "колега" mean?
-   - [ ] waitress
-   - [ ] director
-   - [x] colleague
-   - [ ] neighbor (m)
-   > "колега" means "colleague"
-
-3. What does "сусід" mean?
-   - [x] neighbor (m)
-   - [ ] director
-   - [ ] colleague
-   - [ ] waitress
-   > "сусід" means "neighbor (m)"
-
-4. What does "директор" mean?
-   - [ ] neighbor (m)
-   - [ ] waitress
-   - [x] director
-   - [ ] colleague
-   > "директор" means "director"
-
-5. What does "сусідка" mean?
-   - [ ] colleague
-   - [ ] neighbor (m)
-   - [ ] waitress
-   - [x] neighbor (f)
-   > "сусідка" means "neighbor (f)"
-
-6. What does "лікар" mean?
-   - [x] doctor (m)
-   - [ ] colleague
-   - [ ] waitress
-   - [ ] neighbor (m)
-   > "лікар" means "doctor (m)"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. Я / знаю / чоловіка / цього
-   > [!answer] Я знаю цього чоловіка.
-   > (I know this man.)
-
-2. жінку / бачиш / Ти / ту
-   > [!answer] Ти бачиш ту жінку?
-   > (Do you see that woman?)
-
-3. Ми / лікаря / чекаємо / на
-   > [!answer] Ми чекаємо на лікаря.
-   > (We're waiting for the doctor.)
-
-4. Я / маму / люблю / свою
-   > [!answer] Я люблю свою маму.
-   > (I love my mom.)
-
+- [x] "вчитель" becomes "вчителя" in accusative
+   > Correct! -ь masculines add -я
 
 ---
 

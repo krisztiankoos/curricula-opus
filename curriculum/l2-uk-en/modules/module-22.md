@@ -200,179 +200,228 @@ Describe your plans for the coming days:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Бути Future Forms
+## fill-in: Future Tense Formation
 
-> Match subject to future form of бути.
+> Choose the correct form of бути to complete the future tense.
+
+1. Я ___ читати книгу. (I will read)
+   > [!answer] буду
+   > [!options] буду | будеш | буде | будуть
+
+2. Вона ___ працювати завтра. (She will work)
+   > [!answer] буде
+   > [!options] буду | будеш | буде | будуть
+
+3. Ми ___ вивчати українську. (We will study)
+   > [!answer] будемо
+   > [!options] буду | будемо | будете | будуть
+
+4. Ти ___ вдома? (Will you be at home?)
+   > [!answer] будеш
+   > [!options] буду | будеш | буде | будуть
+
+5. Вони ___ дивитися фільм. (They will watch)
+   > [!answer] будуть
+   > [!options] буде | будемо | будете | будуть
+
+6. Ви ___ їсти? (Will you eat?)
+   > [!answer] будете
+   > [!options] буду | будемо | будете | будуть
+
+7. Він ___ там о п'ятій. (He will be there)
+   > [!answer] буде
+   > [!options] буду | будеш | буде | будуть
+
+8. Завтра я ___ готувати. (Tomorrow I will cook)
+   > [!answer] буду
+   > [!options] буду | будеш | буде | будемо
+
+9. Ми ___ разом. (We will be together)
+   > [!answer] будемо
+   > [!options] буду | буде | будемо | будуть
+
+10. Вони ___ щасливі. (They will be happy)
+   > [!answer] будуть
+   > [!options] буде | будемо | будете | будуть
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. буду / Я / читати
+   > [!answer] Я буду читати.
+   > (I will read.)
+
+2. працювати / буде / Вона
+   > [!answer] Вона буде працювати.
+   > (She will work.)
+
+3. будемо / українську / вивчати / Ми
+   > [!answer] Ми будемо вивчати українську.
+   > (We will study Ukrainian.)
+
+4. будеш / Ти / де / завтра
+   > [!answer] Де ти будеш завтра?
+   > (Where will you be tomorrow?)
+
+5. будуть / фільм / Вони / дивитися
+   > [!answer] Вони будуть дивитися фільм.
+   > (They will watch a movie.)
+
+6. робити / будеш / Що / ти
+   > [!answer] Що ти будеш робити?
+   > (What will you do?)
+
+7. скоро / буде / Це
+   > [!answer] Це буде скоро.
+   > (It will be soon.)
+
+8. будемо / вдома / Ми
+   > [!answer] Ми будемо вдома.
+   > (We will be at home.)
+
+9. пізніше / Я / зателефоную
+   > [!answer] Я зателефоную пізніше.
+   > (I will call later.)
+
+10. завтра / працювати / буду / Я
+   > [!answer] Я буду працювати завтра.
+   > (I will work tomorrow.)
+
+## match-up: Future Forms of Бути
+
+> Match the pronoun to the correct future form of бути.
 
 | Left | Right |
 |------|-------|
 | я | буду |
 | ти | будеш |
-| він | буде |
+| він/вона | буде |
 | ми | будемо |
 | ви | будете |
 | вони | будуть |
+| завтра | tomorrow |
+| скоро | soon |
+| пізніше | later |
+| наступного тижня | next week |
 
-## quiz: Future Tense
+## quiz: Future Tense Grammar
 
-> Choose the correct future form.
+> Choose the correct answer.
 
-1. Завтра я ___ працювати.
+1. How do you form compound future in Ukrainian?
+   - [x] буду/будеш/буде... + infinitive
+   - [ ] past tense + infinitive
+   - [ ] present tense + infinitive
+   - [ ] infinitive only
+   > Compound future = бути (future) + infinitive
+
+2. What is the future of бути for "я"?
    - [x] буду
    - [ ] будеш
    - [ ] буде
    - [ ] будуть
-   > Я → буду.
+   > я буду
 
-2. Вона ___ вдома ввечері.
-   - [x] буде
-   - [ ] буду
-   - [ ] будуть
-   - [ ] будемо
-   > Вона → буде.
+3. What does "завтра" mean?
+   - [x] tomorrow
+   - [ ] yesterday
+   - [ ] today
+   - [ ] last week
+   > завтра = tomorrow
 
-3. Ми ___ вивчати українську.
-   - [x] будемо
-   - [ ] буду
+4. How do you say "She will work"?
+   - [ ] Вона буду працювати
+   - [x] Вона буде працювати
+   - [ ] Вона будуть працювати
+   - [ ] Вона будемо працювати
+   > вона буде + infinitive
+
+5. What is the future of бути for "вони"?
    - [ ] буде
+   - [ ] будемо
    - [ ] будете
-   > Ми → будемо.
-
-4. Вони ___ дивитися фільм.
    - [x] будуть
-   - [ ] буде
-   - [ ] будемо
-   - [ ] будете
-   > Вони → будуть.
+   > вони будуть
 
-5. "Tomorrow" in Ukrainian:
-   - [x] завтра
-   - [ ] вчора
-   - [ ] сьогодні
-   - [ ] зараз
-   > Завтра = tomorrow.
+6. What does "скоро" mean?
+   - [x] soon
+   - [ ] slowly
+   - [ ] already
+   - [ ] never
+   > скоро = soon
 
-6. "Next week" in Ukrainian:
-   - [x] наступного тижня
-   - [ ] минулого тижня
-   - [ ] цього тижня
-   - [ ] кожного тижня
-   > Наступного тижня = next week.
-
-7. Ти ___ готовий?
-   - [x] будеш
-   - [ ] буду
-   - [ ] буде
-   - [ ] будемо
-   > Ти → будеш.
-
-8. What is the perfective of "читати"?
-   - [x] прочитати
-   - [ ] почитати
-   - [ ] дочитати
-   - [ ] вичитати
-   > Прочитати = to read (completely).
-
-## group-sort: Time Expressions
-
-> Sort these expressions by tense.
-
-### Past
-- вчора
-- минулого тижня
-- давно
-- позавчора
-
-### Present
-- сьогодні
-- зараз
-- цього тижня
-
-### Future
-- завтра
-- наступного тижня
-- скоро
-- пізніше
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Що плануєш ___ вихідні?
-   > [!answer] на
-
-2. Я ___ відпочивати.
-   > [!answer] буду
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "будемо" mean?
-   - [x] we will be
-   - [ ] will be
-   - [ ] next
-   - [ ] day after tomorrow
-   > "будемо" means "we will be"
-
-2. What does "післязавтра" mean?
-   - [ ] will be
-   - [ ] we will be
-   - [ ] next
-   - [x] day after tomorrow
-   > "післязавтра" means "day after tomorrow"
-
-3. What does "буде" mean?
-   - [ ] next
-   - [ ] we will be
-   - [x] will be
-   - [ ] day after tomorrow
-   > "буде" means "will be"
-
-4. What does "наступний" mean?
-   - [ ] will be
-   - [ ] day after tomorrow
-   - [ ] we will be
+7. What does "наступний" mean?
    - [x] next
-   > "наступний" means "next"
+   - [ ] last
+   - [ ] first
+   - [ ] previous
+   > наступний = next
 
-5. What does "будете" mean?
-   - [ ] day after tomorrow
-   - [ ] we will be
-   - [x] you will be
-   - [ ] will be
-   > "будете" means "you will be"
+8. What does "пізніше" mean?
+   - [ ] earlier
+   - [x] later
+   - [ ] now
+   - [ ] always
+   > пізніше = later
 
-6. What does "збиратися" mean?
-   - [x] to be going to
-   - [ ] we will be
-   - [ ] day after tomorrow
-   - [ ] will be
-   > "збиратися" means "to be going to"
+9. What does "післязавтра" mean?
+   - [ ] yesterday
+   - [ ] the day before yesterday
+   - [x] the day after tomorrow
+   - [ ] next week
+   > післязавтра = day after tomorrow
 
+10. Which is correct for "We will be together"?
+   - [ ] Ми буде разом
+   - [x] Ми будемо разом
+   - [ ] Ми будуть разом
+   - [ ] Ми буду разом
+   > ми будемо
 
+## true-false: True or False?
 
-## unjumble: Word Order
+> Determine if each statement is true or false.
 
-> Put the words in the correct order to form a sentence.
+- [x] Compound future uses буду/будеш/буде + infinitive
+   > Correct!
 
-1. плануєш / Що / на / вихідні
-   > [!answer] Що плануєш на вихідні?
-   > (What are you planning for the weekend?)
+- [x] "Я буду читати" means "I will read"
+   > Correct!
 
-2. буду / Я / відпочивати
-   > [!answer] Я буду відпочивати.
-   > (I will rest.)
+- [ ] "Вона буду працювати" is correct
+   > Incorrect. Should be "Вона буде працювати"
 
-3. котрій / Так / добре / О
-   > [!answer] Так, добре! О котрій?
-   > (Yes, okay! At what time?)
+- [x] "Завтра" means "tomorrow"
+   > Correct!
 
+- [x] "Вони будуть" is the future of бути for "they"
+   > Correct!
+
+- [ ] "Скоро" means "slowly"
+   > Incorrect. "Скоро" means "soon"
+
+- [x] "Наступний" means "next"
+   > Correct!
+
+- [x] "Ми будемо" is correct for "we will be"
+   > Correct!
+
+- [ ] "Пізніше" means "earlier"
+   > Incorrect. "Пізніше" means "later"
+
+- [x] "Післязавтра" means "day after tomorrow"
+   > Correct!
 
 ---
 

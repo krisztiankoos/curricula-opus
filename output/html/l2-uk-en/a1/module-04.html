@@ -322,15 +322,18 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
-/* Fill-in Activity */
-.fill-container { display: flex; flex-direction: column; gap: 1rem; }
-.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-.fill-question.answered .fill-check { display: none; }
-.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
-.fill-input:focus { border-color: var(--primary); outline: none; }
-.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
-.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
-.fill-check { margin-left: 0.5rem; }
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
 .fill-feedback { margin-top: 0.5rem; font-weight: 500; }
 .fill-feedback .correct-text { color: var(--success); }
 .fill-feedback .wrong-text { color: var(--danger); }
@@ -347,6 +350,32 @@ footer {
 .order-handle { color: var(--text-muted); font-size: 1.25rem; }
 .order-text { font-size: 1.1rem; }
 
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -354,9 +383,9 @@ footer {
   <div class="top-nav">
     <a href="../index.html">← l2-uk-en Curriculum</a>
     <div class="module-nav">
-      <a href="module-03.html" class="module-nav-link">← Module 03</a>
+      <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-05.html" class="module-nav-link">Module 05 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -365,7 +394,7 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
-      <button class="nav-tab" data-section="sort">Sort</button>
+      
       <button class="nav-tab" data-section="fill">Fill</button>
       <button class="nav-tab" data-section="order">Order</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
@@ -377,7 +406,7 @@ footer {
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.1</span>
         <h2 style="font-size:2rem;margin:0.5rem 0">This Is / I Am</h2>
-        <p style="color:var(--text-muted)">Zero Copula &amp; Personal Pronouns</p>
+        <p style="color:var(--text-muted)">Zero Copula &amp; Professions</p>
       </div>
       
     <div class="card section-intro">
@@ -468,85 +497,135 @@ footer {
   </ul>
   <p>This is common in Slavic languages. Russian, Polish, Czech - none have articles!</p>
 </blockquote>
-<h3 id="personalpronouns">Personal Pronouns</h3>
-<p>Here are all the personal pronouns you need:</p>
+<h3 id="pronounreview">Pronoun Review</h3>
+<p>Recall the pronouns from Module 03. We use them as the <strong>Subject</strong> of our sentences:</p>
 <table>
 <thead>
 <tr>
-<th>Person</th>
-<th>Ukrainian</th>
-<th>Transliteration</th>
-<th>Notes</th>
+<th>Subject</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><strong>Я</strong></td>
 <td>I</td>
-<td>я</td>
-<td>ya</td>
-<td>Always lowercase unless starting sentence</td>
 </tr>
 <tr>
-<td>you (informal)</td>
-<td>ти</td>
-<td>ty</td>
-<td>Use with friends, family, children</td>
+<td><strong>Ти</strong></td>
+<td>You (friend)</td>
 </tr>
 <tr>
-<td>he</td>
-<td>він</td>
-<td>vin</td>
-<td>Matches masculine nouns</td>
+<td><strong>Він</strong></td>
+<td>He</td>
 </tr>
 <tr>
-<td>she</td>
-<td>вона</td>
-<td>vona</td>
-<td>Matches feminine nouns</td>
+<td><strong>Вона</strong></td>
+<td>She</td>
 </tr>
 <tr>
-<td>it</td>
-<td>воно</td>
-<td>vono</td>
-<td>Matches neuter nouns</td>
+<td><strong>Ми</strong></td>
+<td>We</td>
 </tr>
 <tr>
-<td>we</td>
-<td>ми</td>
-<td>my</td>
-<td></td>
+<td><strong>Ви</strong></td>
+<td>You (formal)</td>
 </tr>
 <tr>
-<td>you (formal/plural)</td>
-<td>ви</td>
-<td>vy</td>
-<td>Polite "you" OR plural "you all"</td>
+<td><strong>Вони</strong></td>
+<td>They</td>
+</tr>
+</tbody>
+</table>
+<h3 id="genderedidentities">Gendered Identities</h3>
+<p>In English, "student" or "American" works for everyone.<br />
+In Ukrainian, nouns for people often change gender!</p>
+<h4 id="1nationalities">1. Nationalities</h4>
+<table>
+<thead>
+<tr>
+<th>Masculine (He)</th>
+<th>Feminine (She)</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>українець</td>
+<td>українка</td>
+<td>Ukrainian</td>
 </tr>
 <tr>
-<td>they</td>
-<td>вони</td>
-<td>vony</td>
-<td>All genders</td>
+<td>американець</td>
+<td>американка</td>
+<td>American</td>
+</tr>
+<tr>
+<td>канадець</td>
+<td>канадка</td>
+<td>Canadian</td>
+</tr>
+<tr>
+<td>англієць</td>
+<td>англійка</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2professions">2. Professions</h4>
+<p>Some professions have distinct female forms, others use the masculine form for official titles.</p>
+<table>
+<thead>
+<tr>
+<th>Masculine</th>
+<th>Feminine</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>студент</td>
+<td>студентка</td>
+<td>student</td>
+</tr>
+<tr>
+<td>вчитель</td>
+<td>вчителька</td>
+<td>teacher</td>
+</tr>
+<tr>
+<td>лікар</td>
+<td>лікарка</td>
+<td>doctor</td>
+</tr>
+<tr>
+<td>програміст</td>
+<td>(програміст)</td>
+<td>programmer</td>
+</tr>
+<tr>
+<td>менеджер</td>
+<td>(менеджер)</td>
+<td>manager</td>
+</tr>
+<tr>
+<td>дизайнер</td>
+<td>(дизайнер)</td>
+<td>designer</td>
+</tr>
+<tr>
+<td>інженер</td>
+<td>(інженер)</td>
+<td>engineer</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>📜 <strong>History Bite: The Ви/ти Split</strong></p>
-  <p>Like French (vous/tu) and German (Sie/du), Ukrainian has formal and informal "you":</p>
-  <ul>
-  <li><strong>ти</strong> = informal, intimate, for friends/family</li>
-  <li><strong>Ви</strong> = formal, respectful, for strangers/elders</li>
-  </ul>
-  <p>This distinction came to Slavic languages from Western European court culture in the 17th-18th centuries. It's not ancient - Old Ukrainian just had "ты" for everyone!</p>
-  <p>🎭 <strong>Culture Corner: When to Use Ви</strong></p>
-  <p>Use <strong>Ви</strong> (formal you) with:</p>
-  <ul>
-  <li>Strangers, until they say "давай на ти" (let's use ти)</li>
-  <li>Older people (especially those 15+ years older)</li>
-  <li>Bosses and authority figures</li>
-  <li>Official/business situations</li>
-  </ul>
-  <p>But! Modern Ukraine is becoming more casual. Young people often skip straight to ти with peers. When in doubt, start with Ви - they'll tell you if it's too formal!</p>
+  <p>⚡ <strong>Pro Tip: Modern Feminitives</strong></p>
+  <p>Historically, official titles used the masculine form (Вона — лікар).<br />
+  However, modern Ukrainian is bringing back <strong>feminitives</strong> (female forms).<br />
+  You will hear both "Вона лікар" (formal) and "Вона лікарка" (distinct).<br />
+  "Студентка" and "Вчителька" are standard.</p>
 </blockquote>
 <h3 id="makingsentences">Making Sentences</h3>
 <p>Without "is," sentence structure is simple:</p>
@@ -688,6 +767,10 @@ footer {
 </blockquote>
 <hr />
 <hr />
+<hr />
+<hr />
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -783,40 +866,33 @@ footer {
     </section>
   
     
-    <section id="match" class="section"><div class="card"><h3>Pronouns to English</h3>
-      <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
+    <section id="match" class="section"><div class="card"><h3>Match the Pairs</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
-        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">я</div><div class="match-item" data-pair="1">ти</div><div class="match-item" data-pair="2">він</div><div class="match-item" data-pair="3">вона</div><div class="match-item" data-pair="4">воно</div><div class="match-item" data-pair="5">ми</div><div class="match-item" data-pair="6">ви</div><div class="match-item" data-pair="7">вони</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">we</div><div class="match-item" data-pair="3">she</div><div class="match-item" data-pair="2">he</div><div class="match-item" data-pair="1">you (informal)</div><div class="match-item" data-pair="7">they</div><div class="match-item" data-pair="4">it</div><div class="match-item" data-pair="6">you (formal/plural)</div><div class="match-item" data-pair="0">I</div></div>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">вчитель</div><div class="match-item" data-pair="1">лікарка</div><div class="match-item" data-pair="2">інженер</div><div class="match-item" data-pair="3">дизайнер</div><div class="match-item" data-pair="4">американець</div><div class="match-item" data-pair="5">канадка</div><div class="match-item" data-pair="6">англієць</div><div class="match-item" data-pair="7">програміст</div><div class="match-item" data-pair="8">друг</div><div class="match-item" data-pair="9">подруга</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="6">English (male)</div><div class="match-item" data-pair="2">engineer</div><div class="match-item" data-pair="8">friend (male)</div><div class="match-item" data-pair="1">doctor (female)</div><div class="match-item" data-pair="9">friend (female)</div><div class="match-item" data-pair="5">Canadian (female)</div><div class="match-item" data-pair="3">designer</div><div class="match-item" data-pair="4">American (male)</div><div class="match-item" data-pair="7">programmer</div><div class="match-item" data-pair="0">teacher (male)</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Zero Copula Sentences</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/8</span></div>
+    <section id="quiz" class="section"><div class="card"><h3>Meaning Check</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/10</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
     </div></section>
     
-    <section id="sort" class="section"><div class="card"><h3>Pronoun Categories</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/8</span></div>
-      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>First Person</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Second Person</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Third Person</h4><div class="sort-items"></div></div></div>
-      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
-    </div></section>
     
-    <section id="fill" class="section"><div class="card"><h3>Fill in the Blank</h3>
-      <div class="score-display"><span class="score"><span id="fill-score">0</span>/0</span></div>
+    <section id="fill" class="section"><div class="card"><h3>Complete the Sentences</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/8</span></div>
       <div id="fill-container" class="fill-container"></div>
       <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('order')">Next →</button></div>
     </div></section>
     
-    <section id="order" class="section"><div class="card"><h3>Word Order</h3>
-      <div class="score-display"><span class="score"><span id="order-score">0</span>/3</span></div>
+    <section id="order" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="order-score">0</span>/10</span></div>
       <div id="order-container" class="order-container"></div>
       <div class="completion-message" id="order-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetOrder()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
@@ -824,7 +900,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (21)</h3>
+        <h3>Словник (27)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -834,7 +910,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">це</td><td class="vocab-ipa">/t͡sɛ/</td><td class="vocab-en">this, this is</td><td class="vocab-note">Invariable - never changes</td></tr><tr><td class="vocab-uk">то</td><td class="vocab-ipa">/tɔ/</td><td class="vocab-en">that</td><td class="vocab-note">Less common than це</td></tr><tr><td class="vocab-uk">я</td><td class="vocab-ipa">/jɑ/</td><td class="vocab-en">I</td><td class="vocab-note">First person singular</td></tr><tr><td class="vocab-uk">ти</td><td class="vocab-ipa">/tɪ/</td><td class="vocab-en">you (informal)</td><td class="vocab-note">For friends/family</td></tr><tr><td class="vocab-uk">він</td><td class="vocab-ipa">/wʲin/</td><td class="vocab-en">he</td><td class="vocab-note">Third person masculine</td></tr><tr><td class="vocab-uk">вона</td><td class="vocab-ipa">/wɔˈnɑ/</td><td class="vocab-en">she</td><td class="vocab-note">Third person feminine</td></tr><tr><td class="vocab-uk">воно</td><td class="vocab-ipa">/wɔˈnɔ/</td><td class="vocab-en">it</td><td class="vocab-note">Third person neuter</td></tr><tr><td class="vocab-uk">ми</td><td class="vocab-ipa">/mɪ/</td><td class="vocab-en">we</td><td class="vocab-note">First person plural</td></tr><tr><td class="vocab-uk">ви</td><td class="vocab-ipa">/vɪ/</td><td class="vocab-en">you (formal/plural)</td><td class="vocab-note">Formal or plural</td></tr><tr><td class="vocab-uk">вони</td><td class="vocab-ipa">/wɔˈnɪ/</td><td class="vocab-en">they</td><td class="vocab-note">Third person plural</td></tr><tr><td class="vocab-uk">друг</td><td class="vocab-ipa">/druɦ/</td><td class="vocab-en">friend (male)</td><td class="vocab-note">Plural: друзі</td></tr><tr><td class="vocab-uk">подруга</td><td class="vocab-ipa">/pɔˈdruɦɑ/</td><td class="vocab-en">friend (female)</td><td class="vocab-note">Female friend</td></tr><tr><td class="vocab-uk">українець</td><td class="vocab-ipa">/ukrɑˈjinɛt͡sʲ/</td><td class="vocab-en">Ukrainian (male)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">українка</td><td class="vocab-ipa">/ukrɑˈjinkɑ/</td><td class="vocab-en">Ukrainian (female)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">з</td><td class="vocab-ipa">/z/</td><td class="vocab-en">from</td><td class="vocab-note">Я з України = I&#039;m from Ukraine</td></tr><tr><td class="vocab-uk">тут</td><td class="vocab-ipa">/tut/</td><td class="vocab-en">here</td><td class="vocab-note">Location</td></tr><tr><td class="vocab-uk">там</td><td class="vocab-ipa">/tɑm/</td><td class="vocab-en">there</td><td class="vocab-note">Location</td></tr><tr><td class="vocab-uk">мій</td><td class="vocab-ipa">/mʲij/</td><td class="vocab-en">my (masculine)</td><td class="vocab-note">Possessive pronoun</td></tr><tr><td class="vocab-uk">моя</td><td class="vocab-ipa">/mɔˈjɑ/</td><td class="vocab-en">my (feminine)</td><td class="vocab-note">Possessive pronoun</td></tr><tr><td class="vocab-uk">твій</td><td class="vocab-ipa">/tvʲij/</td><td class="vocab-en">your (masc, informal)</td><td class="vocab-note">Informal possessive</td></tr><tr><td class="vocab-uk">твоя</td><td class="vocab-ipa">/tvɔˈjɑ/</td><td class="vocab-en">your (fem, informal)</td><td class="vocab-note">Informal possessive</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">це</td><td class="vocab-ipa">/t͡sɛ/</td><td class="vocab-en">this, this is</td><td class="vocab-note">Invariable - never changes</td></tr><tr><td class="vocab-uk">то</td><td class="vocab-ipa">/tɔ/</td><td class="vocab-en">that</td><td class="vocab-note">Less common than це</td></tr><tr><td class="vocab-uk">дизайнер</td><td class="vocab-ipa">/dɪˈzɑjnɛr/</td><td class="vocab-en">designer</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">інженер</td><td class="vocab-ipa">/inʒɛˈnɛr/</td><td class="vocab-en">engineer</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">менеджер</td><td class="vocab-ipa">/ˈmɛnɛdʒɛr/</td><td class="vocab-en">manager</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">програміст</td><td class="vocab-ipa">/prɔɦrɑˈmʲist/</td><td class="vocab-en">programmer</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">вчитель</td><td class="vocab-ipa">/ˈwtʃɪtɛlʲ/</td><td class="vocab-en">teacher (male)</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">вчителька</td><td class="vocab-ipa">/ˈwtʃɪtɛlʲkɑ/</td><td class="vocab-en">teacher (female)</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">лікар</td><td class="vocab-ipa">/ˈlʲikɑr/</td><td class="vocab-en">doctor</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">лікарка</td><td class="vocab-ipa">/ˈlʲikɑrkɑ/</td><td class="vocab-en">doctor (female)</td><td class="vocab-note">Profession</td></tr><tr><td class="vocab-uk">американець</td><td class="vocab-ipa">/ɑmɛrɪˈkɑnɛt͡sʲ/</td><td class="vocab-en">American (male)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">американка</td><td class="vocab-ipa">/ɑmɛrɪˈkɑnkɑ/</td><td class="vocab-en">American (female)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">канадець</td><td class="vocab-ipa">/kɑˈnɑdɛt͡sʲ/</td><td class="vocab-en">Canadian (male)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">канадка</td><td class="vocab-ipa">/kɑˈnɑdkɑ/</td><td class="vocab-en">Canadian (female)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">англієць</td><td class="vocab-ipa">/ɑnˈɦlʲijɛt͡sʲ/</td><td class="vocab-en">English (male)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">англійка</td><td class="vocab-ipa">/ɑnˈɦlʲijkɑ/</td><td class="vocab-en">English (female)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">українець</td><td class="vocab-ipa">/ukrɑˈjinɛt͡sʲ/</td><td class="vocab-en">Ukrainian (male)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">українка</td><td class="vocab-ipa">/ukrɑˈjinkɑ/</td><td class="vocab-en">Ukrainian (female)</td><td class="vocab-note">Nationality</td></tr><tr><td class="vocab-uk">друг</td><td class="vocab-ipa">/druɦ/</td><td class="vocab-en">friend (male)</td><td class="vocab-note">Plural: друзі</td></tr><tr><td class="vocab-uk">подруга</td><td class="vocab-ipa">/pɔˈdruɦɑ/</td><td class="vocab-en">friend (female)</td><td class="vocab-note">Female friend</td></tr><tr><td class="vocab-uk">з</td><td class="vocab-ipa">/z/</td><td class="vocab-en">from</td><td class="vocab-note">Я з України = I&#039;m from Ukraine</td></tr><tr><td class="vocab-uk">тут</td><td class="vocab-ipa">/tut/</td><td class="vocab-en">here</td><td class="vocab-note">Location</td></tr><tr><td class="vocab-uk">там</td><td class="vocab-ipa">/tɑm/</td><td class="vocab-en">there</td><td class="vocab-note">Location</td></tr><tr><td class="vocab-uk">мій</td><td class="vocab-ipa">/mʲij/</td><td class="vocab-en">my (masculine)</td><td class="vocab-note">Possessive pronoun</td></tr><tr><td class="vocab-uk">моя</td><td class="vocab-ipa">/mɔˈjɑ/</td><td class="vocab-en">my (feminine)</td><td class="vocab-note">Possessive pronoun</td></tr><tr><td class="vocab-uk">твій</td><td class="vocab-ipa">/tvʲij/</td><td class="vocab-en">your (masc, informal)</td><td class="vocab-note">Informal possessive</td></tr><tr><td class="vocab-uk">твоя</td><td class="vocab-ipa">/tvɔˈjɑ/</td><td class="vocab-en">your (fem, informal)</td><td class="vocab-note">Informal possessive</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -846,13 +922,13 @@ footer {
   </main><footer>Module 04 · curricula-opus</footer>
   <script>
 
-    const matchPairs = [{"left":"я","right":"I"},{"left":"ти","right":"you (informal)"},{"left":"він","right":"he"},{"left":"вона","right":"she"},{"left":"воно","right":"it"},{"left":"ми","right":"we"},{"left":"ви","right":"you (formal/plural)"},{"left":"вони","right":"they"}];
-    const quizData = [{"question":"How do you say \"This is a book\" in Ukrainian?","options":["Це книга.","Це є книга.","Це книга є.","Книга це є."],"correctIndex":0,"explanation":"In Ukrainian, \"is\" is omitted: Це книга. (This — book.)"},{"question":"How do you say \"I am a student\" (male) in Ukrainian?","options":["Я студент.","Я є студент.","Я студент є.","Є я студент."],"correctIndex":0,"explanation":"No \"am\" needed: Я студент. (I — student.)"},{"question":"How do you say \"She is a teacher\" in Ukrainian?","options":["Вона вчителька.","Вона є вчителька.","Вона вчителька є.","Є вона вчителька."],"correctIndex":0,"explanation":"Just: Вона вчителька. (She — teacher.)"},{"question":"How do you ask \"Is this your book?\" in Ukrainian?","options":["Це твоя книга?","Є це твоя книга?","Це є твоя книга?","Твоя книга це є?"],"correctIndex":0,"explanation":"Just add a question mark and change intonation: Це твоя книга?"},{"question":"What does \"Він мій брат\" mean?","options":["He is my brother.","He has my brother.","He sees my brother.","He with my brother."],"correctIndex":0,"explanation":"Він мій брат = He (is) my brother. No verb needed!"},{"question":"What does \"Вони студенти\" mean?","options":["They are students.","They have students.","They see students.","They and students."],"correctIndex":0,"explanation":"Вони студенти = They (are) students. Zero copula!"},{"question":"How do you say \"We are friends\" in Ukrainian?","options":["Ми друзі.","Ми є друзі.","Є ми друзі.","Друзі ми є."],"correctIndex":0,"explanation":"Simple: Ми друзі. (We — friends.)"},{"question":"How do you say \"What is this?\" in Ukrainian?","options":["Що це?","Що є це?","Що це є?","Є що це?"],"correctIndex":0,"explanation":"Що це? - Що (what) + це (this), no verb needed."}];
-    const sortData = {"true-friends":["я","ми"],"false-friends":["ти","ви"],"new-letters":["він","вона","воно","вони"]};
-    const fillData = {"items":[],"text":"Fill in the blanks with the correct word.","answers":[]};
-    const orderData = {"items":["ручка / Це / твоя","Я / є / українець","є / Він / громадянин"],"correctOrder":[0,1,2]};
-    const vocabData = [{"uk":"це","translit":"","en":"this, this is","note":"Invariable - never changes"},{"uk":"то","translit":"","en":"that","note":"Less common than це"},{"uk":"я","translit":"","en":"I","note":"First person singular"},{"uk":"ти","translit":"","en":"you (informal)","note":"For friends/family"},{"uk":"він","translit":"","en":"he","note":"Third person masculine"},{"uk":"вона","translit":"","en":"she","note":"Third person feminine"},{"uk":"воно","translit":"","en":"it","note":"Third person neuter"},{"uk":"ми","translit":"","en":"we","note":"First person plural"},{"uk":"ви","translit":"","en":"you (formal/plural)","note":"Formal or plural"},{"uk":"вони","translit":"","en":"they","note":"Third person plural"},{"uk":"друг","translit":"","en":"friend (male)","note":"Plural: друзі"},{"uk":"подруга","translit":"","en":"friend (female)","note":"Female friend"},{"uk":"українець","translit":"","en":"Ukrainian (male)","note":"Nationality"},{"uk":"українка","translit":"","en":"Ukrainian (female)","note":"Nationality"},{"uk":"з","translit":"","en":"from","note":"Я з України = I'm from Ukraine"},{"uk":"тут","translit":"","en":"here","note":"Location"},{"uk":"там","translit":"","en":"there","note":"Location"},{"uk":"мій","translit":"","en":"my (masculine)","note":"Possessive pronoun"},{"uk":"моя","translit":"","en":"my (feminine)","note":"Possessive pronoun"},{"uk":"твій","translit":"","en":"your (masc, informal)","note":"Informal possessive"},{"uk":"твоя","translit":"","en":"your (fem, informal)","note":"Informal possessive"}];
-    const totalSort = 8;
+    const matchPairs = [{"left":"вчитель","right":"teacher (male)"},{"left":"лікарка","right":"doctor (female)"},{"left":"інженер","right":"engineer"},{"left":"дизайнер","right":"designer"},{"left":"американець","right":"American (male)"},{"left":"канадка","right":"Canadian (female)"},{"left":"англієць","right":"English (male)"},{"left":"програміст","right":"programmer"},{"left":"друг","right":"friend (male)"},{"left":"подруга","right":"friend (female)"}];
+    const quizData = [{"question":"What does \"вчителька\" mean?","options":["teacher (male)","teacher (female)","doctor (female)","student (female)"],"correctIndex":1,"explanation":"\"вчителька\" means \"teacher (female)\""},{"question":"What does \"лікар\" mean?","options":["doctor (female)","doctor (male)","teacher (male)","engineer"],"correctIndex":1,"explanation":"\"лікар\" means \"doctor (male)\""},{"question":"What does \"американець\" mean?","options":["American (female)","American (male)","English (male)","Canadian (male)"],"correctIndex":1,"explanation":"\"американець\" means \"American (male)\""},{"question":"What does \"канадка\" mean?","options":["Canadian (male)","American (female)","Canadian (female)","Ukrainian (female)"],"correctIndex":2,"explanation":"\"канадка\" means \"Canadian (female)\""},{"question":"What does \"дизайнер\" mean?","options":["doctor","teacher","designer","manager"],"correctIndex":2,"explanation":"\"дизайнер\" means \"designer\""},{"question":"What does \"інженер\" mean?","options":["programmer","engineer","teacher","doctor"],"correctIndex":1,"explanation":"\"інженер\" means \"engineer\""},{"question":"What does \"програміст\" mean?","options":["programmer","manager","designer","student"],"correctIndex":0,"explanation":"\"програміст\" means \"programmer\""},{"question":"What does \"англієць\" mean?","options":["American (male)","Canadian (male)","English (male)","Ukrainian (male)"],"correctIndex":2,"explanation":"\"англієць\" means \"English (male)\""},{"question":"What does \"менеджер\" mean?","options":["mother","manager","man","my"],"correctIndex":1,"explanation":"\"менеджер\" means \"manager\""},{"question":"What does \"це\" mean?","options":["this is","that is","here","there"],"correctIndex":0,"explanation":"\"це\" means \"this is\""}];
+    const sortData = {};
+    const fillData = {"items":[{"prompt":"Він — ___. (He is an engineer.)","answer":"інженер","options":["інженер","лікарка","студентка","вчителька"]},{"prompt":"Вона — ___. (She is a teacher.)","answer":"вчителька","options":["вчитель","вчителька","програміст","канадець"]},{"prompt":"Я — ___. (I am a designer.) [masculine context]","answer":"дизайнер","options":["дизайнер","лікарка","американка","подруга"]},{"prompt":"Ми — ___. (We are students.)","answer":"студенти","options":["студент","студентка","студенти","інженер"]},{"prompt":"Ти — ___? (Are you American?) [to a female]","answer":"американка","options":["американець","американка","англієць","канадець"]},{"prompt":"Вони — ___. (They are doctors.)","answer":"лікарі","options":["лікар","лікарка","лікарі","вчитель"]},{"prompt":"Це ___ друг. (This is my friend.) [masculine]","answer":"мій","options":["мій","моя","моє","мої"]},{"prompt":"Це ___ подруга. (This is your friend.) [feminine]","answer":"твоя","options":["твій","твоя","твоє","твої"]}],"text":"","answers":[]};
+    const orderData = {"items":[{"words":["вчитель","Він"],"answer":"Він вчитель.","translation":"He is a teacher."},{"words":["лікарка","Вона"],"answer":"Вона лікарка.","translation":"She is a doctor."},{"words":["канадець","Ти"],"answer":"Ти канадець?","translation":"Are you Canadian?"},{"words":["подруга","Це","моя"],"answer":"Це моя подруга.","translation":"This is my friend."},{"words":["Я","тут","не"],"answer":"Я не тут.","translation":"I am not here."},{"words":["там","Ти"],"answer":"Ти там.","translation":"You are there."},{"words":["українці","Ми"],"answer":"Ми українці.","translation":"We are Ukrainians."},{"words":["дизайнер","Я"],"answer":"Я дизайнер.","translation":"I am a designer."},{"words":["менеджер","Він"],"answer":"Він менеджер.","translation":"He is a manager."},{"words":["програміст","Вона"],"answer":"Вона програміст.","translation":"She is a programmer."}],"isUnjumble":true};
+    const vocabData = [{"uk":"це","translit":"","en":"this, this is","note":"Invariable - never changes"},{"uk":"то","translit":"","en":"that","note":"Less common than це"},{"uk":"дизайнер","translit":"","en":"designer","note":"Profession"},{"uk":"інженер","translit":"","en":"engineer","note":"Profession"},{"uk":"менеджер","translit":"","en":"manager","note":"Profession"},{"uk":"програміст","translit":"","en":"programmer","note":"Profession"},{"uk":"вчитель","translit":"","en":"teacher (male)","note":"Profession"},{"uk":"вчителька","translit":"","en":"teacher (female)","note":"Profession"},{"uk":"лікар","translit":"","en":"doctor","note":"Profession"},{"uk":"лікарка","translit":"","en":"doctor (female)","note":"Profession"},{"uk":"американець","translit":"","en":"American (male)","note":"Nationality"},{"uk":"американка","translit":"","en":"American (female)","note":"Nationality"},{"uk":"канадець","translit":"","en":"Canadian (male)","note":"Nationality"},{"uk":"канадка","translit":"","en":"Canadian (female)","note":"Nationality"},{"uk":"англієць","translit":"","en":"English (male)","note":"Nationality"},{"uk":"англійка","translit":"","en":"English (female)","note":"Nationality"},{"uk":"українець","translit":"","en":"Ukrainian (male)","note":"Nationality"},{"uk":"українка","translit":"","en":"Ukrainian (female)","note":"Nationality"},{"uk":"друг","translit":"","en":"friend (male)","note":"Plural: друзі"},{"uk":"подруга","translit":"","en":"friend (female)","note":"Female friend"},{"uk":"з","translit":"","en":"from","note":"Я з України = I'm from Ukraine"},{"uk":"тут","translit":"","en":"here","note":"Location"},{"uk":"там","translit":"","en":"there","note":"Location"},{"uk":"мій","translit":"","en":"my (masculine)","note":"Possessive pronoun"},{"uk":"моя","translit":"","en":"my (feminine)","note":"Possessive pronoun"},{"uk":"твій","translit":"","en":"your (masc, informal)","note":"Informal possessive"},{"uk":"твоя","translit":"","en":"your (fem, informal)","note":"Informal possessive"}];
+    const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1059,7 +1135,7 @@ function resetSort() {
 }
 
 
-// Fill-in Activity
+// Fill-in Activity - Dropdown in sentence
 let fillScore = 0, fillAns = 0;
 
 function initFill() {
@@ -1070,45 +1146,82 @@ function initFill() {
   fillData.items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'fill-question';
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = fillData.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
     div.innerHTML = `
-      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
-      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
-      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
       <div class="fill-feedback" id="fill-fb-${i}"></div>
     `;
     c.appendChild(div);
   });
 
-  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
-  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
-  }));
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
 }
 
-function handleFill(e) {
-  const idx = e.target.dataset.idx;
-  const q = e.target.closest('.fill-question');
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
   if (q.classList.contains('answered')) return;
 
-  const input = q.querySelector('.fill-input');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = input.dataset.answer.toLowerCase();
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
   const fb = document.getElementById('fill-fb-' + idx);
 
   q.classList.add('answered');
+  dropdown.disabled = true;
 
   if (userAnswer === correctAnswer) {
-    input.classList.add('correct');
-    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
     fillScore++;
   } else {
-    input.classList.add('wrong');
-    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
   }
 
   document.getElementById('fill-score').textContent = fillScore;
   fillAns++;
-  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+  if (fillAns === fillData.items.length) {
+    document.getElementById('fill-complete').classList.add('show');
+  }
 }
 
 function resetFill() {
@@ -1128,9 +1241,217 @@ function initOrder() {
   if (!c || !orderData.items.length) return;
   c.innerHTML = '';
 
+  if (orderData.isUnjumble) {
+    initUnjumble(c);
+  } else {
+    initClassicOrder(c);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(container) {
   orderTotal = orderData.items.length;
 
-  // Shuffle items for display
+  orderData.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    orderScore++;
+    document.getElementById('order-score').textContent = orderScore;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (orderScore === orderTotal) {
+      document.getElementById('order-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(container) {
+  orderTotal = orderData.items.length;
+
   const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
   shuffled.sort(() => Math.random() - 0.5);
 
@@ -1142,15 +1463,14 @@ function initOrder() {
       <span class="order-text">${item.text}</span>
     </div>
   `).join('');
-  c.appendChild(div);
+  container.appendChild(div);
 
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn btn-outline';
   checkBtn.textContent = 'Check Order';
   checkBtn.onclick = checkOrder;
-  c.appendChild(checkBtn);
+  container.appendChild(checkBtn);
 
-  // Enable drag and drop
   initDragDrop();
 }
 
@@ -1188,7 +1508,6 @@ function checkOrder() {
   const items = document.querySelectorAll('.order-item');
   const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
 
-  // Check if order is correct (0, 1, 2, 3, ...)
   let correct = true;
   currentOrder.forEach((val, idx) => {
     const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;

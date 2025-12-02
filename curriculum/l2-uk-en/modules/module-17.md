@@ -3,7 +3,7 @@ module: 17
 title: "Food & Drinks"
 subtitle: "What's on the Menu?"
 level: A1
-phase: A1.3
+phase: A1.2
 duration: 50
 transliteration: full
 tags: [vocabulary, food, drinks, practical]
@@ -218,220 +218,228 @@ Answer these questions:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Food Categories
+## fill-in: Food Vocabulary and Grammar
 
-> Match foods to their categories.
+> Choose the correct form to complete each sentence.
+
+1. Я люблю ___. (кава - coffee, accusative)
+   > [!answer] каву
+   > [!options] кава | каву | кави | каві
+
+2. Вона їсть ___. (піца - pizza, accusative)
+   > [!answer] піцу
+   > [!options] піца | піцу | піци | піці
+
+3. Ми п'ємо ___. (чай - tea, accusative)
+   > [!answer] чай
+   > [!options] чай | чаю | чаї | чаєм
+
+4. Він любить ___. (борщ - borscht, accusative)
+   > [!answer] борщ
+   > [!options] борщ | борщу | борщі | борщем
+
+5. Вони їдять ___. (вареники - dumplings, accusative)
+   > [!answer] вареники
+   > [!options] вареники | варениками | вареників | варениках
+
+6. Що ти їси на ___? (сніданок - breakfast)
+   > [!answer] сніданок
+   > [!options] сніданок | сніданку | сніданком | сніданці
+
+7. Чашка ___. (кава - cup of coffee, genitive)
+   > [!answer] кави
+   > [!options] кава | каву | кави | каві
+
+8. Пляшка ___. (вода - bottle of water, genitive)
+   > [!answer] води
+   > [!options] вода | воду | води | воді
+
+9. Кілограм ___. (яблуко - kilo of apples, genitive plural)
+   > [!answer] яблук
+   > [!options] яблуко | яблука | яблук | яблукі
+
+10. Це дуже ___! (смачний - tasty, neuter)
+   > [!answer] смачне
+   > [!options] смачний | смачна | смачне | смачні
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. каву / люблю / Я
+   > [!answer] Я люблю каву.
+   > (I love coffee.)
+
+2. сніданок / на / їси / Що / ти
+   > [!answer] Що ти їси на сніданок?
+   > (What do you eat for breakfast?)
+
+3. борщ / люблять / Вони
+   > [!answer] Вони люблять борщ.
+   > (They love borscht.)
+
+4. кави / чашка / Це
+   > [!answer] Це чашка кави.
+   > (This is a cup of coffee.)
+
+5. вечерю / на / Що
+   > [!answer] Що на вечерю?
+   > (What's for dinner?)
+
+6. кашу / Я / їм
+   > [!answer] Я їм кашу.
+   > (I eat porridge.)
+
+7. п'є / Він / молоко
+   > [!answer] Він п'є молоко.
+   > (He drinks milk.)
+
+8. смачно / Дуже
+   > [!answer] Дуже смачно!
+   > (Very tasty!)
+
+9. вареники / любить / Вона
+   > [!answer] Вона любить вареники.
+   > (She loves dumplings.)
+
+10. Смачного
+   > [!answer] Смачного!
+   > (Bon appétit!)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| яблуко | фрукт |
-| картопля | овоч |
-| курка | м'ясо |
-| молоко | напій |
-| хліб | випічка |
-| борщ | суп |
+| сніданок | breakfast |
+| обід | lunch |
+| вечеря | dinner |
+| борщ | borscht |
+| вареники | dumplings |
+| м'ясо | meat |
+| риба | fish |
+| курка | chicken |
+| картопля | potato |
+| смачного | bon appétit |
 
-## quiz: Food Vocabulary
+## quiz: Food and Meals
 
 > Choose the correct answer.
 
-1. What is "breakfast" in Ukrainian?
-   - [x] сніданок
-   - [ ] обід
-   - [ ] вечеря
-   - [ ] перекус
-   > Сніданок = breakfast (from снідати = to have breakfast).
+1. How do you say "I love coffee" (accusative)?
+   - [ ] Я люблю кава.
+   - [x] Я люблю каву.
+   - [ ] Я люблю кави.
+   - [ ] Я люблю каві.
+   > Feminine -а → -у in accusative
 
-2. What is "картопля"?
-   - [x] potato
-   - [ ] carrot
-   - [ ] onion
-   - [ ] cabbage
-   > Картопля = potato.
+2. What is "чашка кави"?
+   - [x] a cup of coffee
+   - [ ] a cup for coffee
+   - [ ] a big coffee
+   - [ ] coffee cup broken
+   > Genitive after quantity words
 
-3. "Я люблю ___" - I love coffee. (accusative)
-   - [x] каву
-   - [ ] кава
-   - [ ] кави
-   - [ ] кавою
-   > Любити takes accusative: кава → каву.
+3. Which meal is "сніданок"?
+   - [x] breakfast
+   - [ ] lunch
+   - [ ] dinner
+   - [ ] snack
+   > "сніданок" = breakfast
 
-4. What is Ukraine's most famous soup?
-   - [x] борщ
-   - [ ] суп
-   - [ ] бульйон
-   - [ ] капусняк
-   > Борщ = borscht (beet soup).
-
-5. "A cup of tea" - чашка ___.
-   - [x] чаю
-   - [ ] чай
-   - [ ] чаї
-   - [ ] чаєм
-   > Quantities take genitive: чай → чаю.
-
-6. What are "вареники"?
-   - [x] dumplings
-   - [ ] pancakes
-   - [ ] rolls
-   - [ ] cookies
-   > Вареники = dumplings (filled with potato, cheese, etc.).
-
-7. What is "сало"?
-   - [x] cured pork fat
-   - [ ] bacon
-   - [ ] ham
-   - [ ] sausage
-   > Сало = cured pork fat, a Ukrainian delicacy.
-
-8. "Смачного!" means:
-   - [x] Bon appétit!
-   - [ ] Cheers!
+4. What does "Смачного!" mean?
    - [ ] Thank you!
+   - [x] Bon appétit!
    - [ ] Hello!
-   > Смачного = Enjoy your meal! (from смачний = tasty).
+   - [ ] Goodbye!
+   > Said before eating
 
-## group-sort: Food Groups
+5. How do you say "She eats pizza" (accusative)?
+   - [ ] Вона їсть піца.
+   - [x] Вона їсть піцу.
+   - [ ] Вона їсть піци.
+   - [ ] Вона їсть піці.
+   > Feminine -а → -у in accusative
 
-> Sort these foods into categories.
+6. What is "борщ"?
+   - [ ] dumplings
+   - [x] beet soup
+   - [ ] porridge
+   - [ ] bread
+   > Traditional Ukrainian beet soup
 
-### Фрукти (Fruits)
-- яблуко
-- банан
-- полуниця
-- кавун
-- груша
+7. What is "кілограм яблук"?
+   - [ ] apple kilogram
+   - [x] a kilogram of apples
+   - [ ] kilo with apples
+   - [ ] apple kilo price
+   > Genitive plural after 5+
 
-### Овочі (Vegetables)
-- картопля
-- морква
-- цибуля
-- помідор
-- огірок
+8. Which adjective means "fresh"?
+   - [ ] смачний
+   - [x] свіжий
+   - [ ] гарячий
+   - [ ] холодний
+   > "свіжий" = fresh
 
-### М'ясо (Meat)
-- курка
-- свинина
-- яловичина
-- ковбаса
-- риба
+9. What is the accusative of "молоко" (neuter)?
+   - [x] молоко
+   - [ ] молока
+   - [ ] молоку
+   - [ ] молоці
+   > Neuter nouns don't change in accusative
 
-### Напої (Drinks)
-- кава
-- чай
-- сік
-- вода
-- молоко
-
+10. What are "вареники"?
+   - [ ] beet soup
+   - [ ] bread
+   - [x] dumplings
+   - [ ] sausage
+   > Traditional Ukrainian dumplings
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "їжа" is feminine.
-   > Correct! їжа is feminine.
+- [x] "Я люблю каву" is correct for "I love coffee"
+   > Correct! Feminine accusative -а → -у
 
-- [x] "сніданок" is masculine.
-   > Correct! сніданок is masculine.
+- [ ] "Я люблю кава" is grammatically correct
+   > Incorrect. Need accusative: "Я люблю каву"
 
-- [x] "обід" is masculine.
-   > Correct! обід is masculine.
+- [x] "Чашка кави" means "a cup of coffee"
+   > Correct! Genitive after quantity
 
-- [x] "вечеря" is feminine.
-   > Correct! вечеря is feminine.
+- [x] "Смачного!" is said before eating
+   > Correct!
 
-- [ ] "картопля" is masculine.
-   > Incorrect. картопля is feminine.
+- [ ] "сніданок" means "dinner"
+   > Incorrect. "сніданок" = breakfast, "вечеря" = dinner
 
-- [ ] "помідор" is feminine.
-   > Incorrect. помідор is masculine.
+- [x] "борщ" is traditional Ukrainian beet soup
+   > Correct!
 
+- [x] Neuter nouns don't change in accusative
+   > Correct! молоко → молоко
 
-## fill-in: Fill in the Blank
+- [ ] "вареники" means "borscht"
+   > Incorrect. "вареники" = dumplings
 
-> Fill in the blanks with the correct word.
+- [x] "свіжий" means "fresh"
+   > Correct!
 
-1. Що ___ порекомендуєте?
-   > [!answer] ви
-
-2. Дайте, ___ ласка...
-   > [!answer] будь
-
-3. Я ___ люблю...
-   > [!answer] не
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "борщ" mean?
-   - [ ] fish
-   - [ ] lunch
-   - [x] borscht
-   - [ ] dumplings
-   > "борщ" means "borscht"
-
-2. What does "риба" mean?
-   - [ ] borscht
-   - [x] fish
-   - [ ] dumplings
-   - [ ] lunch
-   > "риба" means "fish"
-
-3. What does "вареники" mean?
-   - [x] dumplings
-   - [ ] borscht
-   - [ ] fish
-   - [ ] lunch
-   > "вареники" means "dumplings"
-
-4. What does "обід" mean?
-   - [ ] borscht
-   - [ ] dumplings
-   - [x] lunch
-   - [ ] fish
-   > "обід" means "lunch"
-
-5. What does "огірок" mean?
-   - [x] cucumber
-   - [ ] borscht
-   - [ ] fish
-   - [ ] dumplings
-   > "огірок" means "cucumber"
-
-6. What does "сніданок" mean?
-   - [ ] borscht
-   - [ ] dumplings
-   - [x] breakfast
-   - [ ] fish
-   > "сніданок" means "breakfast"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. порекомендуєте / Що / ви
-   > [!answer] Що ви порекомендуєте?
-   > (What do you recommend?)
-
-2. Дайте / ласка / будь
-   > [!answer] Дайте, будь ласка...
-   > (Give me, please...)
-
-3. не / люблю / Я
-   > [!answer] Я не люблю...
-   > (I don't like...)
-
-4. улюблена / - / Моя /  / їжа
-   > [!answer] Моя улюблена їжа - ...
-   > (My favorite food is...)
-
+- [x] "Що на вечерю?" asks "What's for dinner?"
+   > Correct!
 
 ---
 

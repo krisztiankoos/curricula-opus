@@ -120,6 +120,25 @@ Whether shopping or describing someone, clothing vocabulary is essential. Let's 
 - **На мені** джинси. (I'm wearing jeans [right now].)
 - Я **ношу** джинси на роботу. (I wear jeans to work [habitually].)
 
+### Adjectives in Accusative (Describing Clothes)
+
+When you say "I wear a **white** shirt," the clothing is the direct object (Accusative case).
+The adjective must change too!
+
+| Gender | Change | Example |
+|--------|--------|---------|
+| **Feminine** | **-а → -у** | біл**а** → Я ношу біл**у** сорочку. |
+| Masculine | No change | чорн**ий** → Я ношу чорн**ий** светр. |
+| Neuter | No change | тепл**е** → Я ношу тепл**е** пальто. |
+| Plural | No change | син**і** → Я ношу син**і** джинси. |
+
+> ⚡ **Pro Tip: The Feminine Rule**
+>
+> Just like nouns, only **feminine** adjectives change in the Accusative (for things).
+> - сорочк**а** → сорочк**у**
+> - біл**а** → біл**у**
+> - Я ношу біл**у** сорочк**у**.
+
 ### Describing Appearance
 
 **Physical features:**
@@ -202,213 +221,228 @@ Describe yourself or a friend:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
+
+## fill-in: Clothes and Appearance
+
+> Choose the correct word or form.
+
+1. Я ношу ___ сорочку. (white - feminine accusative)
+   > [!answer] білу
+   > [!options] білий | біла | білу | біле
+
+2. Вона носить ___ сукню. (red - feminine accusative)
+   > [!answer] червону
+   > [!options] червоний | червона | червону | червоне
+
+3. Він носить ___ штани. (black - plural accusative)
+   > [!answer] чорні
+   > [!options] чорний | чорна | чорне | чорні
+
+4. На мені ___ джинси. (blue - plural)
+   > [!answer] сині
+   > [!options] синій | синя | синє | сині
+
+5. У неї ___ волосся. (long - neuter)
+   > [!answer] довге
+   > [!options] довгий | довга | довге | довгі
+
+6. У нього ___ очі. (brown - plural)
+   > [!answer] карі
+   > [!options] карий | кара | каре | карі
+
+7. Він ___. (tall - masculine)
+   > [!answer] високий
+   > [!options] високий | висока | високе | високі
+
+8. Вона ___. (thin - feminine)
+   > [!answer] худа
+   > [!options] худий | худа | худе | худі
+
+9. Я ___ джинси на роботу. (wear - habitual)
+   > [!answer] ношу
+   > [!options] ношу | носиш | носить | носять
+
+10. Що ти ___? (wearing)
+   > [!answer] носиш
+   > [!options] ношу | носиш | носить | носять
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. ношу / Я / джинси
+   > [!answer] Я ношу джинси.
+   > (I wear jeans.)
+
+2. сукню / носить / Вона / червону
+   > [!answer] Вона носить червону сукню.
+   > (She wears a red dress.)
+
+3. На / білу / мені / сорочку
+   > [!answer] На мені білу сорочку.
+   > (I'm wearing a white shirt.)
+
+4. волосся / У / довге / неї
+   > [!answer] У неї довге волосся.
+   > (She has long hair.)
+
+5. очі / нього / карі / У
+   > [!answer] У нього карі очі.
+   > (He has brown eyes.)
+
+6. високий / Він
+   > [!answer] Він високий.
+   > (He is tall.)
+
+7. окуляри / Вона / носить
+   > [!answer] Вона носить окуляри.
+   > (She wears glasses.)
+
+8. Де / куртка / моя
+   > [!answer] Де моя куртка?
+   > (Where is my jacket?)
+
+9. черевики / чорні / Це
+   > [!answer] Це чорні черевики.
+   > (These are black shoes.)
+
+10. носиш / Що / ти
+   > [!answer] Що ти носиш?
+   > (What are you wearing?)
 
 ## match-up: Clothing Vocabulary
 
-> Match Ukrainian to English.
+> Match Ukrainian clothing words to their English meanings.
 
 | Left | Right |
 |------|-------|
 | сорочка | shirt |
-| штани | pants |
+| футболка | t-shirt |
+| светр | sweater |
+| куртка | jacket |
+| пальто | coat |
 | сукня | dress |
+| спідниця | skirt |
+| штани | pants |
+| джинси | jeans |
 | черевики | shoes |
-| капелюх | hat |
-| окуляри | glasses |
 
-## quiz: Clothes & Appearance
+## quiz: Clothes and Appearance Grammar
 
 > Choose the correct answer.
 
-1. "I wear jeans" - Я ___ джинси.
-   - [x] ношу
-   - [ ] носиш
-   - [ ] носить
-   - [ ] носять
-   > Я → ношу.
+1. How do you say "I wear jeans"?
+   - [x] Я ношу джинси
+   - [ ] Я ношу джинси
+   - [ ] Я носить джинси
+   - [ ] Я носять джинси
+   > я ношу + accusative
 
-2. How do you say "dress" (clothing)?
-   - [x] сукня / плаття
-   - [ ] спідниця
-   - [ ] сорочка
-   - [ ] куртка
-   > Сукня/плаття = dress.
+2. What is "На мені" used for?
+   - [x] what you're wearing right now
+   - [ ] what you wear habitually
+   - [ ] what you bought
+   - [ ] what you want
+   > На мені = on me (right now)
 
-3. "She has blue eyes" - У неї ___ очі.
-   - [x] блакитні
-   - [ ] блакитне
-   - [ ] блакитна
-   - [ ] блакитний
-   > Очі (plural): блакитні.
+3. How do you describe hair in Ukrainian?
+   - [ ] волосся is plural
+   - [x] волосся is singular (collective)
+   - [ ] волосся changes for number
+   - [ ] волосся is masculine
+   > волосся is neuter singular
 
-4. "Long hair" in Ukrainian:
-   - [x] довге волосся
-   - [ ] довгі волосся
-   - [ ] довга волосся
-   - [ ] довгий волосся
-   > Волосся is neuter: довге.
+4. What is "У неї карі очі"?
+   - [x] She has brown eyes
+   - [ ] She has blue eyes
+   - [ ] He has brown eyes
+   - [ ] She has green eyes
+   > карі очі = brown eyes
 
-5. What is "вишиванка"?
+5. How do you say "red dress"?
+   - [ ] червоний сукня
+   - [x] червона сукня
+   - [ ] червоне сукня
+   - [ ] червоні сукня
+   > сукня is feminine
+
+6. What does "вишиванка" mean?
    - [x] traditional embroidered shirt
-   - [ ] winter coat
-   - [ ] formal suit
-   - [ ] sports uniform
-   > Вишиванка = Ukrainian embroidered shirt.
+   - [ ] sweater
+   - [ ] jacket
+   - [ ] t-shirt
+   > вишиванка = traditional Ukrainian embroidered shirt
 
-6. "What are you wearing (now)?" - Що ___?
-   - [x] на тобі
-   - [ ] ти носиш
-   - [ ] тобі є
-   - [ ] ти маєш
-   > На тобі = on you (right now).
+7. What is "високий" in feminine?
+   - [x] висока
+   - [ ] високий
+   - [ ] високе
+   - [ ] високі
+   > високий → висока
 
-7. "Black pants" in Ukrainian:
-   - [x] чорні штани
-   - [ ] чорний штани
-   - [ ] чорне штани
-   - [ ] чорна штани
-   > Штани (plural): чорні.
+8. Which clothes are always plural in Ukrainian?
+   - [x] штани, джинси, шорти
+   - [ ] сукня, сорочка
+   - [ ] куртка, пальто
+   - [ ] светр, футболка
+   > Like English "pants"
 
-8. What are "кросівки"?
-   - [x] sneakers
-   - [ ] boots
-   - [ ] sandals
-   - [ ] dress shoes
-   > Кросівки = sneakers (from "cross-country").
+9. How do you say "She is thin"?
+   - [ ] Вона худий
+   - [x] Вона худа
+   - [ ] Вона худе
+   - [ ] Вона худі
+   > вона = feminine, so худа
 
-## group-sort: Clothing Categories
-
-> Sort items by category.
-
-### Верхній одяг (Outerwear)
-- куртка
-- пальто
-- светр
-- шарф
-
-### Повсякденний одяг (Everyday)
-- футболка
-- джинси
-- сорочка
-- штани
-
-### Взуття (Footwear)
-- черевики
-- кросівки
-- туфлі
-- чоботи
-
+10. What does "носити" mean?
+   - [x] to wear (habitually)
+   - [ ] to buy
+   - [ ] to see
+   - [ ] to have
+   > носити = to wear
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "одяг" is masculine.
-   > Correct! одяг is masculine.
+- [x] "Носити" means "to wear"
+   > Correct!
 
-- [x] "сорочка" is feminine.
-   > Correct! сорочка is feminine.
+- [x] "На мені" describes what you're wearing now
+   > Correct!
 
-- [x] "футболка" is feminine.
-   > Correct! футболка is feminine.
+- [ ] "Волосся" is plural
+   > Incorrect. волосся is singular (collective noun)
 
-- [x] "светр" is masculine.
-   > Correct! светр is masculine.
+- [x] "Штани" and "джинси" are always plural
+   > Correct!
 
-- [ ] "куртка" is masculine.
-   > Incorrect. куртка is feminine.
+- [x] "Вишиванка" is a traditional Ukrainian shirt
+   > Correct!
 
-- [ ] "пальто" is masculine.
-   > Incorrect. пальто is neuter.
+- [ ] "Червоний сукня" is correct
+   > Incorrect. сукня is feminine: "червона сукня"
 
+- [x] "Карі очі" means "brown eyes"
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [x] "Високий" describes a tall man
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [ ] Hair is described with masculine adjectives
+   > Incorrect. волосся is neuter: "довге волосся"
 
-1. Що ___ носиш?
-   > [!answer] ти
-
-2. Я ношу ___ і футболку.
-   > [!answer] джинси
-
-3. Як ___ виглядає?
-   > [!answer] він
-
-4. Він високий ___ темним волоссям.
-   > [!answer] з
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "светр" mean?
-   - [x] sweater
-   - [ ] coat
-   - [ ] clothes
-   - [ ] jacket
-   > "светр" means "sweater"
-
-2. What does "одяг" mean?
-   - [ ] coat
-   - [ ] sweater
-   - [x] clothes
-   - [ ] jacket
-   > "одяг" means "clothes"
-
-3. What does "пальто" mean?
-   - [x] coat
-   - [ ] sweater
-   - [ ] clothes
-   - [ ] jacket
-   > "пальто" means "coat"
-
-4. What does "куртка" mean?
-   - [ ] sweater
-   - [x] jacket
-   - [ ] clothes
-   - [ ] coat
-   > "куртка" means "jacket"
-
-5. What does "сорочка" mean?
-   - [ ] coat
-   - [ ] clothes
-   - [x] shirt
-   - [ ] sweater
-   > "сорочка" means "shirt"
-
-6. What does "кросівки" mean?
-   - [x] sneakers
-   - [ ] clothes
-   - [ ] sweater
-   - [ ] coat
-   > "кросівки" means "sneakers"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. Що / ти / носиш
-   > [!answer] Що ти носиш?
-   > (What are you wearing?)
-
-2. Я / і / футболку / ношу / джинси
-   > [!answer] Я ношу джинси і футболку.
-   > (I'm wearing jeans and a t-shirt.)
-
-3. він / виглядає / Як
-   > [!answer] Як він виглядає?
-   > (What does he look like?)
-
-4. темним / з / волоссям / Він / високий
-   > [!answer] Він високий з темним волоссям.
-   > (He's tall with dark hair.)
-
+- [x] "Черевики" means "shoes"
+   > Correct!
 
 ---
 

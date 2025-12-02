@@ -3,7 +3,7 @@ module: 18
 title: "At the Café"
 subtitle: "Ordering Food & Drinks"
 level: A1
-phase: A1.3
+phase: A1.2
 duration: 45
 transliteration: full
 tags: [vocabulary, practical, conversation, café]
@@ -210,201 +210,228 @@ Practice the complete café experience:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Café Phrases
+## fill-in: Café Ordering
 
-> Match Ukrainian phrases to English.
+> Choose the correct word to complete each café phrase.
+
+1. ___ меню, будь ласка? (May I have...?)
+   > [!answer] Можна
+   > [!options] Де | Можна | Що | Як
+
+2. Мені ___, будь ласка. (coffee, accusative)
+   > [!answer] каву
+   > [!options] кава | каву | кави | каві
+
+3. Каву ___ молоком. (with)
+   > [!answer] з
+   > [!options] з | без | на | в
+
+4. Каву ___ цукру. (without)
+   > [!answer] без
+   > [!options] з | без | на | до
+
+5. ___, будь ласка, воду. (Bring)
+   > [!answer] Принесіть
+   > [!options] Йдіть | Принесіть | Покажіть | Поверніть
+
+6. ___, будь ласка! (The bill)
+   > [!answer] Рахунок
+   > [!options] Меню | Столик | Рахунок | Місце
+
+7. Я ___ круасан. (I'll take)
+   > [!answer] візьму
+   > [!options] беру | візьму | маю | люблю
+
+8. Скільки ___ мене? (from)
+   > [!answer] з
+   > [!options] від | до | з | для
+
+9. Можна ___? (by card)
+   > [!answer] карткою
+   > [!options] карткою | картка | картки | картку
+
+10. Все було дуже ___! (tasty)
+   > [!answer] смачно
+   > [!options] смачний | смачна | смачно | смачні
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. меню / Можна
+   > [!answer] Можна меню?
+   > (May I have the menu?)
+
+2. ласка / будь / каву / Мені
+   > [!answer] Мені каву, будь ласка.
+   > (Coffee for me, please.)
+
+3. цукру / без / Каву
+   > [!answer] Каву без цукру.
+   > (Coffee without sugar.)
+
+4. воду / будь ласка / Принесіть
+   > [!answer] Принесіть воду, будь ласка.
+   > (Bring water, please.)
+
+5. ласка / будь / Рахунок
+   > [!answer] Рахунок, будь ласка!
+   > (The bill, please!)
+
+6. мене / Скільки / з
+   > [!answer] Скільки з мене?
+   > (How much do I owe?)
+
+7. карткою / Можна
+   > [!answer] Можна карткою?
+   > (Can I pay by card?)
+
+8. ваша / Решта
+   > [!answer] Решта - ваша.
+   > (Keep the change.)
+
+9. замовити / хочемо / Ми
+   > [!answer] Ми хочемо замовити.
+   > (We'd like to order.)
+
+10. смачно / було / дуже / Все
+   > [!answer] Все було дуже смачно!
+   > (Everything was very tasty!)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian café phrases to their meanings.
 
 | Left | Right |
 |------|-------|
 | Можна меню? | May I have the menu? |
-| Рахунок, будь ласка! | The bill, please! |
-| Скільки з мене? | How much do I owe? |
-| Що порекомендуєте? | What do you recommend? |
-| Без цукру. | Without sugar. |
-| Решта - ваша. | Keep the change. |
+| Рахунок | bill, check |
+| чайові | tip |
+| замовляти | to order |
+| принести | to bring |
+| столик | table (small) |
+| гарячий | hot |
+| холодний | cold |
+| склянка | glass |
+| на виніс | to go |
 
 ## quiz: Café Language
 
 > Choose the correct answer.
 
 1. How do you politely ask for the menu?
+   - [ ] Де меню?
    - [x] Можна меню?
-   - [ ] Дати меню!
-   - [ ] Меню є?
-   - [ ] Хочу меню.
-   > Можна + noun = May I have...?
+   - [ ] Меню тут?
+   - [ ] Що меню?
+   > "Можна" = May I have
 
-2. How do you say "coffee with milk"?
-   - [x] кава з молоком
-   - [ ] кава і молоко
-   - [ ] кава молоко
-   - [ ] кава на молоці
-   > З + instrumental = with.
+2. How do you say "Coffee for me, please"?
+   - [ ] Мені кава, будь ласка.
+   - [x] Мені каву, будь ласка.
+   - [ ] Мені кави, будь ласка.
+   - [ ] Мені каві, будь ласка.
+   > Accusative after indirect object
 
-3. How do you ask for the bill?
+3. What does "Каву без цукру" mean?
+   - [x] Coffee without sugar
+   - [ ] Coffee with sugar
+   - [ ] Coffee and sugar
+   - [ ] Sugar coffee
+   > "без" + genitive = without
+
+4. How do you ask for the bill?
    - [x] Рахунок, будь ласка!
-   - [ ] Гроші, будь ласка!
-   - [ ] Платити, будь ласка!
-   - [ ] Чек, будь ласка!
-   > Рахунок = bill/check.
+   - [ ] Меню, будь ласка!
+   - [ ] Столик, будь ласка!
+   - [ ] Чайові, будь ласка!
+   > "рахунок" = bill
 
-4. "Без цукру" means:
-   - [x] without sugar
-   - [ ] with sugar
-   - [ ] more sugar
-   - [ ] less sugar
-   > Без + genitive = without.
+5. What does "Скільки з мене?" mean?
+   - [x] How much do I owe?
+   - [ ] How much for me?
+   - [ ] How many with me?
+   - [ ] How much from you?
+   > Standard phrase when paying
 
-5. How do you say "I'll take cappuccino"?
-   - [x] Я візьму капучино.
-   - [ ] Я хочу капучино.
-   - [ ] Мені капучино.
-   - [ ] Дайте капучино.
-   > All are correct, but "візьму" = I'll take.
+6. How do you say "Can I pay by card?"
+   - [ ] Можна картка?
+   - [x] Можна карткою?
+   - [ ] Можна картки?
+   - [ ] Можна картку?
+   > Instrumental case with "pay by"
 
-6. "Тут чи на виніс?" means:
-   - [x] For here or to go?
-   - [ ] Cash or card?
-   - [ ] Large or small?
-   - [ ] Hot or cold?
-   > Тут = here, на виніс = to go.
+7. What does "Решта - ваша" mean?
+   - [ ] Give me change
+   - [x] Keep the change
+   - [ ] I need change
+   - [ ] Where's my change?
+   > Polite way to tip
 
-7. How do you say "Keep the change"?
-   - [x] Решта - ваша.
-   - [ ] Дякую за решту.
-   - [ ] Немає решти.
-   - [ ] Ваші гроші.
-   > Решта - ваша literally "The change is yours."
+8. What are "чайові"?
+   - [ ] tea
+   - [x] tip
+   - [ ] cookies
+   - [ ] bill
+   > Literally "for tea"
 
-8. "Принесіть" is:
-   - [x] an imperative (Bring!)
-   - [ ] an infinitive (to bring)
-   - [ ] past tense (brought)
-   - [ ] future tense (will bring)
-   > Принесіть = formal imperative of принести.
+9. How do you say "Bring water, please"?
+   - [ ] Дайте воду, будь ласка.
+   - [x] Принесіть воду, будь ласка.
+   - [ ] Можна воду, будь ласка.
+   - [ ] Воду, будь ласка.
+   > "Принесіть" = bring (formal imperative)
 
-## group-sort: Requests by Type
-
-> Sort these phrases by what they're asking for.
-
-### Ordering
-- Мені каву, будь ласка.
-- Я візьму салат.
-- І ще воду.
-- Це все.
-
-### Asking for Information
-- Що порекомендуєте?
-- Скільки коштує?
-- Є вегетаріанське меню?
-- Яка страва дня?
-
-### Paying
-- Рахунок, будь ласка!
-- Скільки з мене?
-- Можна карткою?
-- Решта - ваша.
-
+10. What does "на виніс" mean?
+   - [x] to go (takeaway)
+   - [ ] for here
+   - [ ] for later
+   - [ ] to bring
+   > Opposite of "тут" (for here)
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "меню" is neuter.
-   > Correct! меню is neuter.
+- [x] "Можна меню?" is the polite way to ask for the menu
+   > Correct!
 
-- [x] "рахунок" is masculine.
-   > Correct! рахунок is masculine.
+- [ ] "Мені кава, будь ласка" is grammatically correct
+   > Incorrect. Need accusative: "Мені каву, будь ласка"
 
-- [x] "столик" is masculine.
-   > Correct! столик is masculine.
+- [x] "без цукру" uses the genitive case
+   > Correct! "без" + genitive
 
-- [ ] "місце" is masculine.
-   > Incorrect. місце is neuter.
+- [x] "Рахунок" means "bill"
+   > Correct!
 
+- [ ] "чайові" means "tea"
+   > Incorrect. "чайові" = tip (literally "for tea")
 
-## fill-in: Fill in the Blank
+- [x] "Принесіть" is the formal imperative of "to bring"
+   > Correct!
 
-> Fill in the blanks with the correct word.
+- [x] "Скільки з мене?" asks how much you owe
+   > Correct!
 
-1. Без цукру, ___ ласка.
-   > [!answer] будь
+- [ ] "на виніс" means "for here"
+   > Incorrect. "на виніс" = to go, "тут" = for here
 
-2. Гаряче ___ холодне.
-   > [!answer] /
+- [x] "Решта - ваша" means "Keep the change"
+   > Correct!
 
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "холодний" mean?
-   - [x] cold
-   - [ ] to go
-   - [ ] to take
-   - [ ] may, can
-   > "холодний" means "cold"
-
-2. What does "взяти" mean?
-   - [ ] may, can
-   - [ ] cold
-   - [x] to take
-   - [ ] to go
-   > "взяти" means "to take"
-
-3. What does "на виніс" mean?
-   - [ ] to take
-   - [ ] may, can
-   - [x] to go
-   - [ ] cold
-   > "на виніс" means "to go"
-
-4. What does "можна" mean?
-   - [x] may, can
-   - [ ] cold
-   - [ ] to take
-   - [ ] to go
-   > "можна" means "may, can"
-
-5. What does "чайові" mean?
-   - [ ] to take
-   - [x] tip
-   - [ ] cold
-   - [ ] to go
-   > "чайові" means "tip"
-
-6. What does "замовляти" mean?
-   - [x] to order
-   - [ ] cold
-   - [ ] to go
-   - [ ] to take
-   > "замовляти" means "to order"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. Без / ласка / цукру / будь
-   > [!answer] Без цукру, будь ласка.
-   > (Without sugar, please.)
-
-2. холодне / / / Гаряче
-   > [!answer] Гаряче / холодне.
-   > (Hot / cold.)
-
-3. мене / на / алергія / У
-   > [!answer] У мене алергія на...
-   > (I'm allergic to...)
-
-4. Рахунок / будь / ласка
-   > [!answer] Рахунок, будь ласка!
-   > (The bill, please!)
-
+- [x] Using "будь ласка" makes requests polite
+   > Correct!
 
 ---
 

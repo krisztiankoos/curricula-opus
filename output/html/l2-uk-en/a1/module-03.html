@@ -322,15 +322,18 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
-/* Fill-in Activity */
-.fill-container { display: flex; flex-direction: column; gap: 1rem; }
-.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-.fill-question.answered .fill-check { display: none; }
-.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
-.fill-input:focus { border-color: var(--primary); outline: none; }
-.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
-.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
-.fill-check { margin-left: 0.5rem; }
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
 .fill-feedback { margin-top: 0.5rem; font-weight: 500; }
 .fill-feedback .correct-text { color: var(--success); }
 .fill-feedback .wrong-text { color: var(--danger); }
@@ -347,6 +350,32 @@ footer {
 .order-handle { color: var(--text-muted); font-size: 1.25rem; }
 .order-text { font-size: 1.1rem; }
 
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -354,9 +383,9 @@ footer {
   <div class="top-nav">
     <a href="../index.html">← l2-uk-en Curriculum</a>
     <div class="module-nav">
-      <a href="module-02.html" class="module-nav-link">← Module 02</a>
+      <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-04.html" class="module-nav-link">Module 04 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -367,7 +396,7 @@ footer {
       <button class="nav-tab" data-section="quiz">Quiz</button>
       <button class="nav-tab" data-section="sort">Sort</button>
       <button class="nav-tab" data-section="fill">Fill</button>
-      
+      <button class="nav-tab" data-section="order">Order</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -402,6 +431,67 @@ Think of them as "teams" that follow the same rules.</p>
   <p>Learn the Team, and you'll know exactly how to change the word later!</p>
 </blockquote>
 <h2 id="presentation">presentation</h2>
+<h3 id="personalpronounssubject">Personal Pronouns (Subject)</h3>
+<p>Before we analyze nouns, we need the words to replace them!</p>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Ukrainian</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>Я</strong></td>
+<td>/ya/</td>
+</tr>
+<tr>
+<td><strong>You</strong> (informal)</td>
+<td><strong>Ти</strong></td>
+<td>/tɪ/</td>
+</tr>
+<tr>
+<td><strong>He</strong></td>
+<td><strong>Він</strong></td>
+<td>/vin/</td>
+</tr>
+<tr>
+<td><strong>She</strong></td>
+<td><strong>Вона</strong></td>
+<td>/vɔˈnɑ/</td>
+</tr>
+<tr>
+<td><strong>It</strong></td>
+<td><strong>Воно</strong></td>
+<td>/vɔˈnɔ/</td>
+</tr>
+<tr>
+<td><strong>We</strong></td>
+<td><strong>Ми</strong></td>
+<td>/mɪ/</td>
+</tr>
+<tr>
+<td><strong>You</strong> (formal/plural)</td>
+<td><strong>Ви</strong></td>
+<td>/vɪ/</td>
+</tr>
+<tr>
+<td><strong>They</strong></td>
+<td><strong>Вони</strong></td>
+<td>/vɔˈnɪ/</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Ти vs Ви</strong></p>
+  <ul>
+  <li><strong>Ти</strong> is for friends, family, children, and pets.</li>
+  <li><strong>Ви</strong> is for strangers, elders, bosses, and groups of people (plural).<br />
+  When in doubt, use <strong>Ви</strong> to be polite!</li>
+  </ul>
+</blockquote>
 <h3 id="groupitheayateamfirstdeclension">Group I: The "-A/-YA" Team (First Declension)</h3>
 <p><strong>Members:</strong> Mostly <strong>Feminine</strong>, some <strong>Masculine</strong>.<br />
 <strong>Identifier:</strong> Ends in <strong>-а</strong> or <strong>-я</strong>.</p>
@@ -677,6 +767,10 @@ Most common Group I words are Feminine.</p>
 </ul>
 <hr />
 <hr />
+<hr />
+<hr />
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -719,19 +813,21 @@ Most common Group I words are Feminine.</p>
       <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
-  <li>Nouns belong to <strong>4 Declension Groups (Families)</strong></li>
+  <li><strong>Personal Pronouns:</strong> Я, Ти, Він, Вона, Ми, Ви, Вони</li>
+  <li><strong>Nouns belong to 4 Declension Groups (Families)</strong></li>
   <li><strong>Group I:</strong> -а/-я nouns (mostly Feminine)</li>
   <li><strong>Group II:</strong> Consonant nouns (Masculine) + -о/-е nouns (Neuter)</li>
   <li><strong>Group III:</strong> -ь nouns (Feminine)</li>
   <li><strong>Group IV:</strong> Baby animals (Neuter)</li>
   <li>Identifying the Group helps you predict the Gender</li>
+  <li><strong>Gender Match:</strong> Він = Masculine nouns, Вона = Feminine nouns, Воно = Neuter nouns</li>
   </ul>
   <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 04, we'll use these nouns to make sentences:</p>
+  <p>In Module 04, we will bring these nouns to life with <strong>Verbs</strong>:</p>
   <ul>
-  <li><strong>Це</strong> стіл. (Group II)</li>
-  <li><strong>Це</strong> мама. (Group I)</li>
-  <li>We will learn the pronoun "Це" (This is).</li>
+  <li>How to conjugate verbs (I do, You do, He does)</li>
+  <li>The two Conjugation Groups (Type 1 vs Type 2)</li>
+  <li>Building full sentences like "I see the table" (Wait, that requires cases! We'll start with "I read" and "I speak").</li>
   </ul>
 </blockquote></div>
     </div>
@@ -742,42 +838,48 @@ Most common Group I words are Feminine.</p>
     </section>
   
     
-    <section id="match" class="section"><div class="card"><h3>Words to Groups</h3>
-      <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
+    <section id="match" class="section"><div class="card"><h3>Match the Pairs</h3>
+      <div class="score-display"><span class="score"><span id="match-score">0</span>/10</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
-        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Мама (-а)</div><div class="match-item" data-pair="1">Стіл (cons)</div><div class="match-item" data-pair="2">Вікно (-о)</div><div class="match-item" data-pair="3">Радість (-ість)</div><div class="match-item" data-pair="4">Теля (baby)</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">Group II (Masc)</div><div class="match-item" data-pair="0">Group I</div><div class="match-item" data-pair="2">Group II (Neut)</div><div class="match-item" data-pair="4">Group IV</div><div class="match-item" data-pair="3">Group III</div></div>
+        <div class="match-column" id="match-left"><div class="match-item" data-pair="0">стіл</div><div class="match-item" data-pair="1">книга</div><div class="match-item" data-pair="2">вікно</div><div class="match-item" data-pair="3">сім'я</div><div class="match-item" data-pair="4">море</div><div class="match-item" data-pair="5">день</div><div class="match-item" data-pair="6">ніч</div><div class="match-item" data-pair="7">земля</div><div class="match-item" data-pair="8">сонце</div><div class="match-item" data-pair="9">радість</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">window</div><div class="match-item" data-pair="6">night</div><div class="match-item" data-pair="7">earth</div><div class="match-item" data-pair="0">table</div><div class="match-item" data-pair="5">day</div><div class="match-item" data-pair="3">family</div><div class="match-item" data-pair="8">sun</div><div class="match-item" data-pair="9">joy</div><div class="match-item" data-pair="4">sea</div><div class="match-item" data-pair="1">book</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Identify Group &amp; Gender</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/7</span></div>
+    <section id="quiz" class="section"><div class="card"><h3>Meaning Check</h3>
+      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/10</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
     </div></section>
     
-    <section id="sort" class="section"><div class="card"><h3>Declension Families</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/20</span></div>
+    <section id="sort" class="section"><div class="card"><h3>Sort by Gender</h3>
+      <div class="score-display"><span class="score"><span id="sort-score">0</span>/14</span></div>
       <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Group I</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Group II</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Group III</h4><div class="sort-items"></div></div><div class="sort-group " data-group="group-3"><h4>Group IV</h4><div class="sort-items"></div></div></div>
+      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Masculine</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Feminine</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Neuter</h4><div class="sort-items"></div></div></div>
       <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
     </div></section>
     
-    <section id="fill" class="section"><div class="card"><h3>Fill in the Blank</h3>
-      <div class="score-display"><span class="score"><span id="fill-score">0</span>/0</span></div>
+    <section id="fill" class="section"><div class="card"><h3>What Does It Mean?</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/10</span></div>
       <div id="fill-container" class="fill-container"></div>
       <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('order')">Next →</button></div>
     </div></section>
     
+    <section id="order" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="order-score">0</span>/10</span></div>
+      <div id="order-container" class="order-container"></div>
+      <div class="completion-message" id="order-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetOrder()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (15)</h3>
+        <h3>Словник (23)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -787,7 +889,7 @@ Most common Group I words are Feminine.</p>
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">відміна</td><td class="vocab-ipa">/vʲidˈmʲinɑ/</td><td class="vocab-en">declension</td><td class="vocab-note">Group I</td></tr><tr><td class="vocab-uk">група</td><td class="vocab-ipa">/ˈhrupɑ/</td><td class="vocab-en">group</td><td class="vocab-note">Group I</td></tr><tr><td class="vocab-uk">стіл</td><td class="vocab-ipa">/stʲil/</td><td class="vocab-en">table</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">вікно</td><td class="vocab-ipa">/wʲikˈnɔ/</td><td class="vocab-en">window</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">книга</td><td class="vocab-ipa">/ˈknɪɦɑ/</td><td class="vocab-en">book</td><td class="vocab-note">Group I (hard)</td></tr><tr><td class="vocab-uk">ніч</td><td class="vocab-ipa">/nʲitʃ/</td><td class="vocab-en">night</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">теля</td><td class="vocab-ipa">/tɛˈlʲa/</td><td class="vocab-en">calf</td><td class="vocab-note">Group IV</td></tr><tr><td class="vocab-uk">кошеня</td><td class="vocab-ipa">/kɔʃɛˈnʲa/</td><td class="vocab-en">kitten</td><td class="vocab-note">Group IV</td></tr><tr><td class="vocab-uk">радість</td><td class="vocab-ipa">/ˈrɑdʲistʲ/</td><td class="vocab-en">joy</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">сіль</td><td class="vocab-ipa">/sʲilʲ/</td><td class="vocab-en">salt</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">день</td><td class="vocab-ipa">/dɛnʲ/</td><td class="vocab-en">day</td><td class="vocab-note">Group II (soft)</td></tr><tr><td class="vocab-uk">сонце</td><td class="vocab-ipa">/ˈsɔnt͡sɛ/</td><td class="vocab-en">sun</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">море</td><td class="vocab-ipa">/ˈmɔrɛ/</td><td class="vocab-en">sea</td><td class="vocab-note">Group II (soft)</td></tr><tr><td class="vocab-uk">земля</td><td class="vocab-ipa">/zɛmˈlʲa/</td><td class="vocab-en">earth</td><td class="vocab-note">Group I (soft)</td></tr><tr><td class="vocab-uk">сім&#039;я</td><td class="vocab-ipa">/sʲiˈmjuɑ/</td><td class="vocab-en">family</td><td class="vocab-note">Group I (soft)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">відміна</td><td class="vocab-ipa">/vʲidˈmʲinɑ/</td><td class="vocab-en">declension</td><td class="vocab-note">Group I</td></tr><tr><td class="vocab-uk">група</td><td class="vocab-ipa">/ˈhrupɑ/</td><td class="vocab-en">group</td><td class="vocab-note">Group I</td></tr><tr><td class="vocab-uk">стіл</td><td class="vocab-ipa">/stʲil/</td><td class="vocab-en">table</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">вікно</td><td class="vocab-ipa">/wʲikˈnɔ/</td><td class="vocab-en">window</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">книга</td><td class="vocab-ipa">/ˈknɪɦɑ/</td><td class="vocab-en">book</td><td class="vocab-note">Group I (hard)</td></tr><tr><td class="vocab-uk">ніч</td><td class="vocab-ipa">/nʲitʃ/</td><td class="vocab-en">night</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">теля</td><td class="vocab-ipa">/tɛˈlʲa/</td><td class="vocab-en">calf</td><td class="vocab-note">Group IV</td></tr><tr><td class="vocab-uk">кошеня</td><td class="vocab-ipa">/kɔʃɛˈnʲa/</td><td class="vocab-en">kitten</td><td class="vocab-note">Group IV</td></tr><tr><td class="vocab-uk">радість</td><td class="vocab-ipa">/ˈrɑdʲistʲ/</td><td class="vocab-en">joy</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">сіль</td><td class="vocab-ipa">/sʲilʲ/</td><td class="vocab-en">salt</td><td class="vocab-note">Group III</td></tr><tr><td class="vocab-uk">день</td><td class="vocab-ipa">/dɛnʲ/</td><td class="vocab-en">day</td><td class="vocab-note">Group II (soft)</td></tr><tr><td class="vocab-uk">сонце</td><td class="vocab-ipa">/ˈsɔnt͡sɛ/</td><td class="vocab-en">sun</td><td class="vocab-note">Group II (hard)</td></tr><tr><td class="vocab-uk">море</td><td class="vocab-ipa">/ˈmɔrɛ/</td><td class="vocab-en">sea</td><td class="vocab-note">Group II (soft)</td></tr><tr><td class="vocab-uk">земля</td><td class="vocab-ipa">/zɛmˈlʲa/</td><td class="vocab-en">earth</td><td class="vocab-note">Group I (soft)</td></tr><tr><td class="vocab-uk">сім&#039;я</td><td class="vocab-ipa">/sʲiˈmjuɑ/</td><td class="vocab-en">family</td><td class="vocab-note">Group I (soft)</td></tr><tr><td class="vocab-uk">я</td><td class="vocab-ipa">/jɑ/</td><td class="vocab-en">I</td><td class="vocab-note">Subject</td></tr><tr><td class="vocab-uk">ти</td><td class="vocab-ipa">/tɪ/</td><td class="vocab-en">you (informal)</td><td class="vocab-note">Singular</td></tr><tr><td class="vocab-uk">він</td><td class="vocab-ipa">/vʲin/</td><td class="vocab-en">he</td><td class="vocab-note">Subject</td></tr><tr><td class="vocab-uk">вона</td><td class="vocab-ipa">/vɔˈnɑ/</td><td class="vocab-en">she</td><td class="vocab-note">Subject</td></tr><tr><td class="vocab-uk">воно</td><td class="vocab-ipa">/vɔˈnɔ/</td><td class="vocab-en">it</td><td class="vocab-note">Subject</td></tr><tr><td class="vocab-uk">ми</td><td class="vocab-ipa">/mɪ/</td><td class="vocab-en">we</td><td class="vocab-note">Plural</td></tr><tr><td class="vocab-uk">ви</td><td class="vocab-ipa">/vɪ/</td><td class="vocab-en">you (formal/plural)</td><td class="vocab-note">Plural</td></tr><tr><td class="vocab-uk">вони</td><td class="vocab-ipa">/vɔˈnɪ/</td><td class="vocab-en">they</td><td class="vocab-note">Plural</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -799,13 +901,13 @@ Most common Group I words are Feminine.</p>
   </main><footer>Module 03 · curricula-opus</footer>
   <script>
 
-    const matchPairs = [{"left":"Мама (-а)","right":"Group I"},{"left":"Стіл (cons)","right":"Group II (Masc)"},{"left":"Вікно (-о)","right":"Group II (Neut)"},{"left":"Радість (-ість)","right":"Group III"},{"left":"Теля (baby)","right":"Group IV"}];
-    const quizData = [{"question":"**Газета** (Newspaper)","options":["Group I (Feminine)","Group II (Masculine)","Group II (Neuter)","Group III (Feminine)"],"correctIndex":0,"explanation":"Ends in -а → Group I."},{"question":"**Телефон** (Phone)","options":["Group I (Feminine)","Group II (Masculine)","Group III (Feminine)","Group IV (Neuter)"],"correctIndex":1,"explanation":"Ends in consonant → Group II Masculine."},{"question":"**Море** (Sea)","options":["Group I (Feminine)","Group II (Masculine)","Group II (Neuter)","Group IV (Neuter)"],"correctIndex":2,"explanation":"Ends in -е → Group II Neuter."},{"question":"**Ніч** (Night)","options":["Group I (Feminine)","Group II (Masculine)","Group III (Feminine)","Group IV (Neuter)"],"correctIndex":2,"explanation":"Ends in -ч (soft context), implies Group III."},{"question":"**Цуценя** (Puppy)","options":["Group I (Feminine)","Group II (Neuter)","Group III (Feminine)","Group IV (Neuter)"],"correctIndex":3,"explanation":"Baby animal in -я → Group IV."},{"question":"**Сіль** (Salt)","options":["Group I (Feminine)","Group II (Masculine)","Group III (Feminine)","Group IV (Neuter)"],"correctIndex":2,"explanation":"Common Group III word (Feminine)."},{"question":"**Музей** (Museum)","options":["Group I (Feminine)","Group II (Masculine)","Group III (Feminine)","Group IV (Neuter)"],"correctIndex":1,"explanation":"Ends in -й → Group II Masculine."}];
-    const sortData = {"true-friends":["мама","книга","земля","сестра","пісня"],"false-friends":["стіл","вікно","день","музей","сонце"],"new-letters":["ніч","радість","любов","сіль","осінь"],"group-3":["теля","кошеня","цуценя","курча","дівча"]};
-    const fillData = {"items":[],"text":"Fill in the blanks with the correct word.","answers":[]};
-    const orderData = {"items":[],"correctOrder":[]};
-    const vocabData = [{"uk":"відміна","translit":"","en":"declension","note":"Group I"},{"uk":"група","translit":"","en":"group","note":"Group I"},{"uk":"стіл","translit":"","en":"table","note":"Group II (hard)"},{"uk":"вікно","translit":"","en":"window","note":"Group II (hard)"},{"uk":"книга","translit":"","en":"book","note":"Group I (hard)"},{"uk":"ніч","translit":"","en":"night","note":"Group III"},{"uk":"теля","translit":"","en":"calf","note":"Group IV"},{"uk":"кошеня","translit":"","en":"kitten","note":"Group IV"},{"uk":"радість","translit":"","en":"joy","note":"Group III"},{"uk":"сіль","translit":"","en":"salt","note":"Group III"},{"uk":"день","translit":"","en":"day","note":"Group II (soft)"},{"uk":"сонце","translit":"","en":"sun","note":"Group II (hard)"},{"uk":"море","translit":"","en":"sea","note":"Group II (soft)"},{"uk":"земля","translit":"","en":"earth","note":"Group I (soft)"},{"uk":"сім'я","translit":"","en":"family","note":"Group I (soft)"}];
-    const totalSort = 20;
+    const matchPairs = [{"left":"стіл","right":"table"},{"left":"книга","right":"book"},{"left":"вікно","right":"window"},{"left":"сім'я","right":"family"},{"left":"море","right":"sea"},{"left":"день","right":"day"},{"left":"ніч","right":"night"},{"left":"земля","right":"earth"},{"left":"сонце","right":"sun"},{"left":"радість","right":"joy"}];
+    const quizData = [{"question":"What does \"вікно\" mean?","options":["book","window","family","day"],"correctIndex":1,"explanation":"\"вікно\" means \"window\""},{"question":"What does \"сіль\" mean?","options":["salt","earth","night","sea"],"correctIndex":0,"explanation":"\"сіль\" means \"salt\""},{"question":"What does \"стіл\" mean?","options":["salt","night","sun","table"],"correctIndex":3,"explanation":"\"стіл\" means \"table\""},{"question":"What does \"сонце\" mean?","options":["sea","family","sun","book"],"correctIndex":2,"explanation":"\"сонце\" means \"sun\""},{"question":"What does \"ніч\" mean?","options":["day","night","book","table"],"correctIndex":1,"explanation":"\"ніч\" means \"night\""},{"question":"What does \"книга\" mean?","options":["window","salt","sea","book"],"correctIndex":3,"explanation":"\"книга\" means \"book\""},{"question":"What does \"теля\" mean?","options":["kitten","family","group","calf"],"correctIndex":3,"explanation":"\"теля\" means \"calf\""},{"question":"What does \"група\" mean?","options":["day","earth","group","joy"],"correctIndex":2,"explanation":"\"група\" means \"group\""},{"question":"What does \"море\" mean?","options":["sun","night","book","sea"],"correctIndex":3,"explanation":"\"море\" means \"sea\""},{"question":"What does \"земля\" mean?","options":["family","earth","window","table"],"correctIndex":1,"explanation":"\"земля\" means \"earth\""}];
+    const sortData = {"true-friends":["стіл","день"],"false-friends":["книга","земля","група","сім'я","ніч","сіль","радість"],"new-letters":["вікно","море","сонце","теля","кошеня"]};
+    const fillData = {"items":[{"prompt":"What does \"стіл\" mean?","answer":"table","options":["table","book","window","family"]},{"prompt":"What does \"книга\" mean?","answer":"book","options":["day","book","sea","table"]},{"prompt":"What does \"вікно\" mean?","answer":"window","options":["earth","day","window","group"]},{"prompt":"What does \"сім'я\" mean?","answer":"family","options":["sun","family","table","day"]},{"prompt":"What does \"море\" mean?","answer":"sea","options":["night","group","sea","book"]},{"prompt":"What does \"день\" mean?","answer":"day","options":["day","earth","window","salt"]},{"prompt":"What does \"ніч\" mean?","answer":"night","options":["sea","group","calf","night"]},{"prompt":"What does \"сонце\" mean?","answer":"sun","options":["book","night","sun","day"]},{"prompt":"What does \"радість\" mean?","answer":"joy","options":["joy","table","sea","day"]},{"prompt":"What does \"земля\" mean?","answer":"earth","options":["group","family","calf","earth"]}],"text":"","answers":[]};
+    const orderData = {"items":[{"words":["стіл","мій","Це"],"answer":"Це мій стіл.","translation":"This is my table."},{"words":["книга","моя","Це"],"answer":"Це моя книга.","translation":"This is my book."},{"words":["вікно","Це","моє"],"answer":"Це моє вікно.","translation":"This is my window."},{"words":["сім'я","Це","моя"],"answer":"Це моя сім'я.","translation":"This is my family."},{"words":["море","моє","Це"],"answer":"Це моє море.","translation":"This is my sea."},{"words":["мій","день","Це"],"answer":"Це мій день.","translation":"This is my day."},{"words":["земля","Це","моя"],"answer":"Це моя земля.","translation":"This is my land."},{"words":["сонце","моє","Це"],"answer":"Це моє сонце.","translation":"This is my sun."},{"words":["Тут","стіл","є"],"answer":"Тут є стіл.","translation":"Here is a table."},{"words":["є","вікно","Там"],"answer":"Там є вікно.","translation":"There is a window."}],"isUnjumble":true};
+    const vocabData = [{"uk":"відміна","translit":"","en":"declension","note":"Group I"},{"uk":"група","translit":"","en":"group","note":"Group I"},{"uk":"стіл","translit":"","en":"table","note":"Group II (hard)"},{"uk":"вікно","translit":"","en":"window","note":"Group II (hard)"},{"uk":"книга","translit":"","en":"book","note":"Group I (hard)"},{"uk":"ніч","translit":"","en":"night","note":"Group III"},{"uk":"теля","translit":"","en":"calf","note":"Group IV"},{"uk":"кошеня","translit":"","en":"kitten","note":"Group IV"},{"uk":"радість","translit":"","en":"joy","note":"Group III"},{"uk":"сіль","translit":"","en":"salt","note":"Group III"},{"uk":"день","translit":"","en":"day","note":"Group II (soft)"},{"uk":"сонце","translit":"","en":"sun","note":"Group II (hard)"},{"uk":"море","translit":"","en":"sea","note":"Group II (soft)"},{"uk":"земля","translit":"","en":"earth","note":"Group I (soft)"},{"uk":"сім'я","translit":"","en":"family","note":"Group I (soft)"},{"uk":"я","translit":"","en":"I","note":"Subject"},{"uk":"ти","translit":"","en":"you (informal)","note":"Singular"},{"uk":"він","translit":"","en":"he","note":"Subject"},{"uk":"вона","translit":"","en":"she","note":"Subject"},{"uk":"воно","translit":"","en":"it","note":"Subject"},{"uk":"ми","translit":"","en":"we","note":"Plural"},{"uk":"ви","translit":"","en":"you (formal/plural)","note":"Plural"},{"uk":"вони","translit":"","en":"they","note":"Plural"}];
+    const totalSort = 14;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1012,7 +1114,7 @@ function resetSort() {
 }
 
 
-// Fill-in Activity
+// Fill-in Activity - Dropdown in sentence
 let fillScore = 0, fillAns = 0;
 
 function initFill() {
@@ -1023,45 +1125,82 @@ function initFill() {
   fillData.items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'fill-question';
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = fillData.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
     div.innerHTML = `
-      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
-      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
-      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
       <div class="fill-feedback" id="fill-fb-${i}"></div>
     `;
     c.appendChild(div);
   });
 
-  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
-  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
-  }));
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
 }
 
-function handleFill(e) {
-  const idx = e.target.dataset.idx;
-  const q = e.target.closest('.fill-question');
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
   if (q.classList.contains('answered')) return;
 
-  const input = q.querySelector('.fill-input');
-  const userAnswer = input.value.trim().toLowerCase();
-  const correctAnswer = input.dataset.answer.toLowerCase();
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
   const fb = document.getElementById('fill-fb-' + idx);
 
   q.classList.add('answered');
+  dropdown.disabled = true;
 
   if (userAnswer === correctAnswer) {
-    input.classList.add('correct');
-    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
     fillScore++;
   } else {
-    input.classList.add('wrong');
-    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
   }
 
   document.getElementById('fill-score').textContent = fillScore;
   fillAns++;
-  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+  if (fillAns === fillData.items.length) {
+    document.getElementById('fill-complete').classList.add('show');
+  }
 }
 
 function resetFill() {
@@ -1081,9 +1220,217 @@ function initOrder() {
   if (!c || !orderData.items.length) return;
   c.innerHTML = '';
 
+  if (orderData.isUnjumble) {
+    initUnjumble(c);
+  } else {
+    initClassicOrder(c);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(container) {
   orderTotal = orderData.items.length;
 
-  // Shuffle items for display
+  orderData.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    orderScore++;
+    document.getElementById('order-score').textContent = orderScore;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (orderScore === orderTotal) {
+      document.getElementById('order-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(idx) {
+  const item = orderData.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(container) {
+  orderTotal = orderData.items.length;
+
   const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
   shuffled.sort(() => Math.random() - 0.5);
 
@@ -1095,15 +1442,14 @@ function initOrder() {
       <span class="order-text">${item.text}</span>
     </div>
   `).join('');
-  c.appendChild(div);
+  container.appendChild(div);
 
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn btn-outline';
   checkBtn.textContent = 'Check Order';
   checkBtn.onclick = checkOrder;
-  c.appendChild(checkBtn);
+  container.appendChild(checkBtn);
 
-  // Enable drag and drop
   initDragDrop();
 }
 
@@ -1141,7 +1487,6 @@ function checkOrder() {
   const items = document.querySelectorAll('.order-item');
   const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
 
-  // Check if order is correct (0, 1, 2, 3, ...)
   let correct = true;
   currentOrder.forEach((val, idx) => {
     const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;

@@ -1,22 +1,22 @@
 ---
 module: 4
 title: "This Is / I Am"
-subtitle: "Zero Copula & Personal Pronouns"
+subtitle: "Zero Copula & Professions"
 level: A1
 phase: A1.1
-duration: 40
+duration: 60
 transliteration: full
-tags: [grammar, pronouns, sentences, basics]
+tags: [grammar, sentences, basics, professions, zero-copula]
 objectives:
-  - Understand why Ukrainian doesn't use "is" in present tense
-  - Use "Це" (this is) to identify things
-  - Learn all personal pronouns (I, you, he, she, it, we, they)
-  - Form basic "X is Y" sentences without a verb
+  - Understand why Ukrainian doesn't use "is" in present tense (Zero Copula)
+  - Form "X is Y" sentences describing identity and profession
+  - Differentiate gendered nouns for professions and nationalities
+  - Ask "Who is this?" and "What is this?"
 grammar:
   - Zero copula (no "is" in present tense)
-  - Demonstrative pronoun Це (this)
-  - Personal pronouns (я, ти, він, вона, воно, ми, ви, вони)
-  - Basic sentence structure (Subject + Predicate)
+  - Gendered Professions (вчитель vs вчителька)
+  - Nationality Nouns (українець vs українка)
+  - Review: Personal Pronouns & "Це"
 ---
 
 # Lesson Content
@@ -89,38 +89,52 @@ The word **Це** (tse) means "this" or "this is":
 >
 > This is common in Slavic languages. Russian, Polish, Czech - none have articles!
 
-### Personal Pronouns
+### Pronoun Review
 
-Here are all the personal pronouns you need:
+Recall the pronouns from Module 03. We use them as the **Subject** of our sentences:
 
-| Person | Ukrainian | Transliteration | Notes |
-|--------|-----------|-----------------|-------|
-| I | я | ya | Always lowercase unless starting sentence |
-| you (informal) | ти | ty | Use with friends, family, children |
-| he | він | vin | Matches masculine nouns |
-| she | вона | vona | Matches feminine nouns |
-| it | воно | vono | Matches neuter nouns |
-| we | ми | my | |
-| you (formal/plural) | ви | vy | Polite "you" OR plural "you all" |
-| they | вони | vony | All genders |
+| Subject | Meaning |
+|---------|---------|
+| **Я** | I |
+| **Ти** | You (friend) |
+| **Він** | He |
+| **Вона** | She |
+| **Ми** | We |
+| **Ви** | You (formal) |
+| **Вони** | They |
 
-> 📜 **History Bite: The Ви/ти Split**
->
-> Like French (vous/tu) and German (Sie/du), Ukrainian has formal and informal "you":
-> - **ти** = informal, intimate, for friends/family
-> - **Ви** = formal, respectful, for strangers/elders
->
-> This distinction came to Slavic languages from Western European court culture in the 17th-18th centuries. It's not ancient - Old Ukrainian just had "ты" for everyone!
+### Gendered Identities
 
-> 🎭 **Culture Corner: When to Use Ви**
+In English, "student" or "American" works for everyone.
+In Ukrainian, nouns for people often change gender!
+
+#### 1. Nationalities
+| Masculine (He) | Feminine (She) | English |
+|----------------|----------------|---------|
+| українець | українка | Ukrainian |
+| американець | американка | American |
+| канадець | канадка | Canadian |
+| англієць | англійка | English |
+
+#### 2. Professions
+Some professions have distinct female forms, others use the masculine form for official titles.
+
+| Masculine | Feminine | English |
+|-----------|----------|---------|
+| студент | студентка | student |
+| вчитель | вчителька | teacher |
+| лікар | лікарка | doctor |
+| програміст | (програміст) | programmer |
+| менеджер | (менеджер) | manager |
+| дизайнер | (дизайнер) | designer |
+| інженер | (інженер) | engineer |
+
+> ⚡ **Pro Tip: Modern Feminitives**
 >
-> Use **Ви** (formal you) with:
-> - Strangers, until they say "давай на ти" (let's use ти)
-> - Older people (especially those 15+ years older)
-> - Bosses and authority figures
-> - Official/business situations
->
-> But! Modern Ukraine is becoming more casual. Young people often skip straight to ти with peers. When in doubt, start with Ви - they'll tell you if it's too formal!
+> Historically, official titles used the masculine form (Вона — лікар).
+> However, modern Ukrainian is bringing back **feminitives** (female forms).
+> You will hear both "Вона лікар" (formal) and "Вона лікарка" (distinct).
+> "Студентка" and "Вчителька" are standard.
 
 ### Making Sentences
 
@@ -231,172 +245,220 @@ Turn these statements into questions (just add ?):
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Pronouns to English
+## fill-in: Complete the Sentences
 
-> Match each Ukrainian pronoun to its English meaning.
+> Choose the correct word to complete each sentence.
+
+1. Він — ___. (He is an engineer.)
+   > [!answer] інженер
+   > [!options] інженер | лікарка | студентка | вчителька
+
+2. Вона — ___. (She is a teacher.)
+   > [!answer] вчителька
+   > [!options] вчитель | вчителька | програміст | канадець
+
+3. Я — ___. (I am a designer.) [masculine context]
+   > [!answer] дизайнер
+   > [!options] дизайнер | лікарка | американка | подруга
+
+4. Ми — ___. (We are students.)
+   > [!answer] студенти
+   > [!options] студент | студентка | студенти | інженер
+
+5. Ти — ___? (Are you American?) [to a female]
+   > [!answer] американка
+   > [!options] американець | американка | англієць | канадець
+
+6. Вони — ___. (They are doctors.)
+   > [!answer] лікарі
+   > [!options] лікар | лікарка | лікарі | вчитель
+
+7. Це ___ друг. (This is my friend.) [masculine]
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
+
+8. Це ___ подруга. (This is your friend.) [feminine]
+   > [!answer] твоя
+   > [!options] твій | твоя | твоє | твої
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. вчитель / Він
+   > [!answer] Він вчитель.
+   > (He is a teacher.)
+
+2. лікарка / Вона
+   > [!answer] Вона лікарка.
+   > (She is a doctor.)
+
+3. канадець / Ти
+   > [!answer] Ти канадець?
+   > (Are you Canadian?)
+
+4. подруга / Це / моя
+   > [!answer] Це моя подруга.
+   > (This is my friend.)
+
+5. Я / тут / не
+   > [!answer] Я не тут.
+   > (I am not here.)
+
+6. там / Ти
+   > [!answer] Ти там.
+   > (You are there.)
+
+7. українці / Ми
+   > [!answer] Ми українці.
+   > (We are Ukrainians.)
+
+8. дизайнер / Я
+   > [!answer] Я дизайнер.
+   > (I am a designer.)
+
+9. менеджер / Він
+   > [!answer] Він менеджер.
+   > (He is a manager.)
+
+10. програміст / Вона
+    > [!answer] Вона програміст.
+    > (She is a programmer.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| я | I |
-| ти | you (informal) |
-| він | he |
-| вона | she |
-| воно | it |
-| ми | we |
-| ви | you (formal/plural) |
-| вони | they |
-
-## quiz: Zero Copula Sentences
-
-> Choose the correct Ukrainian translation. Remember: no "is" needed!
-
-1. How do you say "This is a book" in Ukrainian?
-   - [x] Це книга.
-   - [ ] Це є книга.
-   - [ ] Це книга є.
-   - [ ] Книга це є.
-   > In Ukrainian, "is" is omitted: Це книга. (This — book.)
-
-2. How do you say "I am a student" (male) in Ukrainian?
-   - [x] Я студент.
-   - [ ] Я є студент.
-   - [ ] Я студент є.
-   - [ ] Є я студент.
-   > No "am" needed: Я студент. (I — student.)
-
-3. How do you say "She is a teacher" in Ukrainian?
-   - [x] Вона вчителька.
-   - [ ] Вона є вчителька.
-   - [ ] Вона вчителька є.
-   - [ ] Є вона вчителька.
-   > Just: Вона вчителька. (She — teacher.)
-
-4. How do you ask "Is this your book?" in Ukrainian?
-   - [x] Це твоя книга?
-   - [ ] Є це твоя книга?
-   - [ ] Це є твоя книга?
-   - [ ] Твоя книга це є?
-   > Just add a question mark and change intonation: Це твоя книга?
-
-5. What does "Він мій брат" mean?
-   - [x] He is my brother.
-   - [ ] He has my brother.
-   - [ ] He sees my brother.
-   - [ ] He with my brother.
-   > Він мій брат = He (is) my brother. No verb needed!
-
-6. What does "Вони студенти" mean?
-   - [x] They are students.
-   - [ ] They have students.
-   - [ ] They see students.
-   - [ ] They and students.
-   > Вони студенти = They (are) students. Zero copula!
-
-7. How do you say "We are friends" in Ukrainian?
-   - [x] Ми друзі.
-   - [ ] Ми є друзі.
-   - [ ] Є ми друзі.
-   - [ ] Друзі ми є.
-   > Simple: Ми друзі. (We — friends.)
-
-8. How do you say "What is this?" in Ukrainian?
-   - [x] Що це?
-   - [ ] Що є це?
-   - [ ] Що це є?
-   - [ ] Є що це?
-   > Що це? - Що (what) + це (this), no verb needed.
-
-## group-sort: Pronoun Categories
-
-> Sort the pronouns by their grammatical person.
-
-### First Person (I, We)
-- я
-- ми
-
-### Second Person (You)
-- ти
-- ви
-
-### Third Person (He, She, It, They)
-- він
-- вона
-- воно
-- вони
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-
+| вчитель | teacher (male) |
+| лікарка | doctor (female) |
+| інженер | engineer |
+| дизайнер | designer |
+| американець | American (male) |
+| канадка | Canadian (female) |
+| англієць | English (male) |
+| програміст | programmer |
+| друг | friend (male) |
+| подруга | friend (female) |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "це" mean?
-   - [ ] it
-   - [ ] I
-   - [x] this, this is
-   - [ ] she
-   > "це" means "this, this is"
+1. What does "вчителька" mean?
+   - [ ] teacher (male)
+   - [x] teacher (female)
+   - [ ] doctor (female)
+   - [ ] student (female)
+   > "вчителька" means "teacher (female)"
 
-2. What does "я" mean?
-   - [x] I
-   - [ ] she
-   - [ ] it
-   - [ ] this, this is
-   > "я" means "I"
+2. What does "лікар" mean?
+   - [ ] doctor (female)
+   - [x] doctor (male)
+   - [ ] teacher (male)
+   - [ ] engineer
+   > "лікар" means "doctor (male)"
 
-3. What does "вона" mean?
-   - [ ] this, this is
-   - [ ] I
-   - [ ] it
-   - [x] she
-   > "вона" means "she"
+3. What does "американець" mean?
+   - [ ] American (female)
+   - [x] American (male)
+   - [ ] English (male)
+   - [ ] Canadian (male)
+   > "американець" means "American (male)"
 
-4. What does "воно" mean?
-   - [ ] she
-   - [x] it
-   - [ ] this, this is
-   - [ ] I
-   > "воно" means "it"
+4. What does "канадка" mean?
+   - [ ] Canadian (male)
+   - [ ] American (female)
+   - [x] Canadian (female)
+   - [ ] Ukrainian (female)
+   > "канадка" means "Canadian (female)"
 
-5. What does "ви" mean?
-   - [ ] she
-   - [x] you (formal/plural)
-   - [ ] I
-   - [ ] this, this is
-   > "ви" means "you (formal/plural)"
+5. What does "дизайнер" mean?
+   - [ ] doctor
+   - [ ] teacher
+   - [x] designer
+   - [ ] manager
+   > "дизайнер" means "designer"
 
-6. What does "подруга" mean?
-   - [ ] this, this is
-   - [x] friend (female)
-   - [ ] I
-   - [ ] she
-   > "подруга" means "friend (female)"
+6. What does "інженер" mean?
+   - [ ] programmer
+   - [x] engineer
+   - [ ] teacher
+   - [ ] doctor
+   > "інженер" means "engineer"
 
+7. What does "програміст" mean?
+   - [x] programmer
+   - [ ] manager
+   - [ ] designer
+   - [ ] student
+   > "програміст" means "programmer"
 
+8. What does "англієць" mean?
+   - [ ] American (male)
+   - [ ] Canadian (male)
+   - [x] English (male)
+   - [ ] Ukrainian (male)
+   > "англієць" means "English (male)"
 
-## unjumble: Word Order
+9. What does "менеджер" mean?
+   - [ ] mother
+   - [x] manager
+   - [ ] man
+   - [ ] my
+   > "менеджер" means "manager"
 
-> Put the words in the correct order to form a sentence.
+10. What does "це" mean?
+    - [x] this is
+    - [ ] that is
+    - [ ] here
+    - [ ] there
+    > "це" means "this is"
 
-1. ручка / Це / твоя
-   > [!answer] Це твоя ручка?
-   > (This — your pen?)
+## true-false: True or False?
 
-2. Я / є / українець
-   > [!answer] Я є українець!
-   > (I AM Ukrainian!)
+> Determine if each statement is true or false.
 
-3. є / Він / громадянин
-   > [!answer] Він є громадянин...
-   > (He is a citizen...)
+- [x] "лікарка" means "doctor (female)"
+   > Correct!
 
+- [x] "вчитель" means "teacher (male)"
+   > Correct!
+
+- [ ] "інженер" means "designer"
+   > Incorrect. "інженер" means "engineer"
+
+- [x] "американка" means "American (female)"
+   > Correct!
+
+- [ ] "канадка" means "Canadian (male)"
+   > Incorrect. "канадка" means "Canadian (female)"
+
+- [x] "програміст" means "programmer"
+   > Correct!
+
+- [ ] "менеджер" means "manager (female only)"
+   > Incorrect. "менеджер" is used for both.
+
+- [x] "англієць" means "English (male)"
+   > Correct!
+
+- [ ] "тут" means "there"
+   > Incorrect. "тут" means "here"
+
+- [x] "там" means "there"
+   > Correct!
 
 ---
 
@@ -406,18 +468,24 @@ Turn these statements into questions (just add ?):
 |------|-----|---------|-----|--------|------|
 | це | /t͡sɛ/ | this, this is | pron | - | Invariable - never changes |
 | то | /tɔ/ | that | pron | - | Less common than це |
-| я | /jɑ/ | I | pron | - | First person singular |
-| ти | /tɪ/ | you (informal) | pron | - | For friends/family |
-| він | /wʲin/ | he | pron | m | Third person masculine |
-| вона | /wɔˈnɑ/ | she | pron | f | Third person feminine |
-| воно | /wɔˈnɔ/ | it | pron | n | Third person neuter |
-| ми | /mɪ/ | we | pron | - | First person plural |
-| ви | /vɪ/ | you (formal/plural) | pron | - | Formal or plural |
-| вони | /wɔˈnɪ/ | they | pron | - | Third person plural |
-| друг | /druɦ/ | friend (male) | noun | m | Plural: друзі |
-| подруга | /pɔˈdruɦɑ/ | friend (female) | noun | f | Female friend |
+| дизайнер | /dɪˈzɑjnɛr/ | designer | noun | m | Profession |
+| інженер | /inʒɛˈnɛr/ | engineer | noun | m | Profession |
+| менеджер | /ˈmɛnɛdʒɛr/ | manager | noun | m | Profession |
+| програміст | /prɔɦrɑˈmʲist/ | programmer | noun | m | Profession |
+| вчитель | /ˈwtʃɪtɛlʲ/ | teacher (male) | noun | m | Profession |
+| вчителька | /ˈwtʃɪtɛlʲkɑ/ | teacher (female) | noun | f | Profession |
+| лікар | /ˈlʲikɑr/ | doctor | noun | m | Profession |
+| лікарка | /ˈlʲikɑrkɑ/ | doctor (female) | noun | f | Profession |
+| американець | /ɑmɛrɪˈkɑnɛt͡sʲ/ | American (male) | noun | m | Nationality |
+| американка | /ɑmɛrɪˈkɑnkɑ/ | American (female) | noun | f | Nationality |
+| канадець | /kɑˈnɑdɛt͡sʲ/ | Canadian (male) | noun | m | Nationality |
+| канадка | /kɑˈnɑdkɑ/ | Canadian (female) | noun | f | Nationality |
+| англієць | /ɑnˈɦlʲijɛt͡sʲ/ | English (male) | noun | m | Nationality |
+| англійка | /ɑnˈɦlʲijkɑ/ | English (female) | noun | f | Nationality |
 | українець | /ukrɑˈjinɛt͡sʲ/ | Ukrainian (male) | noun | m | Nationality |
 | українка | /ukrɑˈjinkɑ/ | Ukrainian (female) | noun | f | Nationality |
+| друг | /druɦ/ | friend (male) | noun | m | Plural: друзі |
+| подруга | /pɔˈdruɦɑ/ | friend (female) | noun | f | Female friend |
 | з | /z/ | from | prep | - | Я з України = I'm from Ukraine |
 | тут | /tut/ | here | adv | - | Location |
 | там | /tɑm/ | there | adv | - | Location |

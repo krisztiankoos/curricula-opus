@@ -4,17 +4,20 @@ title: "The Cyrillic Code I"
 subtitle: "True Friends & False Friends"
 level: A1
 phase: A1.1
-duration: 45
+duration: 60
 transliteration: full
-tags: [alphabet, basics, cyrillic, cognates]
+tags: [alphabet, basics, cyrillic, cognates, gender]
 objectives:
   - Recognize Cyrillic letters that look like Latin letters
   - Identify 'False Friend' letters that look Latin but sound different
   - Read international words using learned letters
-  - Begin building phonetic reading skills
+  - Understand basic Noun Gender (Masculine, Feminine, Neuter)
+  - Form simple sentences using "This is" and "My"
 grammar:
   - Cyrillic alphabet groups 1-3 (18 letters)
-  - Phonetic reading basics
+  - Noun Gender Basics (ending patterns)
+  - Demonstrative pronoun "Це" (This is)
+  - Possessive pronouns "Мій/Моя/Моє" (My)
 ---
 
 # Lesson Content
@@ -110,6 +113,35 @@ These don't exist in Latin but are straightforward:
 >
 > Notice that Ukrainian has **two** letters for B-sounds: **Б** (true B) and **В** (V sound). English only has one! This is why some Ukrainian words borrowed into English seem to swap B and V. For example, the name "Volodymyr" (Володимир) is sometimes written "Vladimir" because Russian В sounds like V to English ears.
 
+## grammar
+
+### Introduction to Nouns & Gender
+
+In Ukrainian, every noun has a **gender**. It's not about biology (mostly) - it's about the **ending** of the word.
+
+| Gender | Ending | Example | My (M/F/N) |
+|--------|--------|---------|------------|
+| **Masculine** | Consonant | парк, брат | **мій** парк |
+| **Feminine** | -а / -я | мама, віза | **моя** мама |
+| **Neuter** | -о / -е | метро, фото | **моє** фото |
+
+> 🧠 **Pattern Recognition**
+> - If it ends in a **Consonant** (K, T, R, N...), it's usually **Masculine**.
+> - If it ends in **-A**, it's usually **Feminine**.
+> - If it ends in **-O**, it's usually **Neuter**.
+
+### "This is..." (Це)
+
+To say "This is...", you just say **Це** (Tse). No "is" verb needed!
+
+- **Це** парк. (This is a park.)
+- **Це** мама. (This is mom.)
+
+Combine it with "my":
+- **Це мій** телефон. (This is my telephone.) - *Masculine (consonant)*
+- **Це моя** лампа. (This is my lamp.) - *Feminine (-a)*
+- **Це моє** радіо. (This is my radio.) - *Neuter (-o)*
+
 ## practice
 
 ### Reading Strategy
@@ -171,180 +203,264 @@ Read these tricky words:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: False Friends Letter Sounds
+## fill-in: What Does It Mean?
 
-> Match each Cyrillic "False Friend" letter to its actual sound. Don't be fooled by appearances!
+> Choose the correct English meaning.
+
+1. What does "театр" mean?
+   > [!answer] theater
+   > [!options] theater | metro | music | taxi
+
+2. What does "телефон" mean?
+   > [!answer] telephone
+   > [!options] telephone | tourist | student | park
+
+3. What does "доктор" mean?
+   > [!answer] doctor
+   > [!options] dad | doctor | actor | dentist
+
+4. What does "лампа" mean?
+   > [!answer] lamp
+   > [!options] lemon | lamp | map | soup
+
+5. What does "зебра" mean?
+   > [!answer] zebra
+   > [!options] cobra | zero | zebra | zoo
+
+6. What does "клас" mean?
+   > [!answer] class
+   > [!options] glass | class | club | pass
+
+7. What does "план" mean?
+   > [!answer] plan
+   > [!options] plane | plan | pan | man
+
+8. What does "спорт" mean?
+   > [!answer] sport
+   > [!options] port | sort | sport | start
+
+9. What does "старт" mean?
+   > [!answer] start
+   > [!options] star | tart | start | smart
+
+10. What does "стоп" mean?
+    > [!answer] stop
+    > [!options] step | stop | top | shop
+
+## select: Miy, Moya, or Moye?
+
+> Choose the correct possessive pronoun based on the gender.
+
+1. Це ___ мама. (Mom - feminine)
+   > [!answer] моя
+   > [!options] мій | моя | моє
+
+2. Це ___ тато. (Dad - masculine)
+   > [!answer] мій
+   > [!options] мій | моя | моє
+
+3. Це ___ фото. (Photo - neuter)
+   > [!answer] моє
+   > [!options] мій | моя | моє
+
+4. Це ___ телефон. (Telephone - masculine)
+   > [!answer] мій
+   > [!options] мій | моя | моє
+
+5. Це ___ лампа. (Lamp - feminine)
+   > [!answer] моя
+   > [!options] мій | моя | моє
+
+6. Це ___ радіо. (Radio - neuter)
+   > [!answer] моє
+   > [!options] мій | моя | моє
+
+7. Це ___ доктор. (Doctor - masculine)
+   > [!answer] мій
+   > [!options] мій | моя | моє
+
+8. Це ___ зебра. (Zebra - feminine)
+   > [!answer] моя
+   > [!options] мій | моя | моє
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. доктор / Це / мій
+   > [!answer] Це мій доктор.
+   > (This is my doctor.)
+
+2. мама / Це / моя
+   > [!answer] Це моя мама.
+   > (This is my mom.)
+
+3. фото / Це / моє
+   > [!answer] Це моє фото.
+   > (This is my photo.)
+
+4. є / Тут / театр
+   > [!answer] Тут є театр.
+   > (Here is a theater.)
+
+5. парк / є / Там
+   > [!answer] Там є парк.
+   > (There is a park.)
+
+6. Це / тато / мій
+   > [!answer] Це мій тато.
+   > (This is my dad.)
+
+7. таксі / моє / Це
+   > [!answer] Це моє таксі.
+   > (This is my taxi.)
+
+8. клас / є / Тут
+   > [!answer] Тут є клас.
+   > (Here is a class.)
+
+9. моя / музика / Це
+   > [!answer] Це моя музика.
+   > (This is my music.)
+
+10. банк / Там / є
+    > [!answer] Там є банк.
+    > (There is a bank.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
-| В в | V sound (not B!) |
-| Н н | N sound (not H!) |
-| Р р | R sound (not P!) |
-| С с | S sound (not C!) |
-| У у | U sound (not Y!) |
-| Х х | KH sound (not X!) |
-
-## quiz: Read International Words
-
-> Choose the correct English meaning for each Cyrillic word. Sound out each letter!
-
-1. What does БАНК mean?
-   - [x] Bank
-   - [ ] Bunk
-   - [ ] Back
-   - [ ] Bonk
-   > БАНК = B-A-N-K. Remember: Б=B, А=A, Н=N (not H!), К=K
-
-2. What does ПАРК mean?
-   - [x] Park
-   - [ ] Pork
-   - [ ] Peak
-   - [ ] Pack
-   > ПАРК = P-A-R-K. Remember: П=P, А=A, Р=R (not P!), К=K
-
-3. What does МЕТРО mean?
-   - [x] Metro/Subway
-   - [ ] Meter
-   - [ ] Metro
-   - [ ] Mother
-   > МЕТРО = M-E-T-R-O. All True Friends except Р=R
-
-4. What does КАФЕ mean?
-   - [x] Café
-   - [ ] Coffee
-   - [ ] Cave
-   - [ ] Calf
-   > КАФЕ = K-A-F-E. К=K, А=A, Ф=F, Е=E
-
-5. What does ТАКСІ mean?
-   - [x] Taxi
-   - [ ] Task
-   - [ ] Tax
-   - [ ] Tuxedo
-   > ТАКСІ = T-A-K-S-I. Remember: С=S (not C!), І=I
-
-6. What does СТУДЕНТ mean?
-   - [x] Student
-   - [ ] Stadium
-   - [ ] Study
-   - [ ] Stupid
-   > СТУДЕНТ = S-T-U-D-E-N-T. С=S, У=U, Н=N
-
-7. What does ФУТБОЛ mean?
-   - [x] Football
-   - [ ] Footstool
-   - [ ] Fútbol
-   - [ ] Futon
-   > ФУТБОЛ = F-U-T-B-O-L. Ф=F, У=U, Б=B, Л=L
-
-8. What does РАДІО mean?
-   - [x] Radio
-   - [ ] Ready
-   - [ ] Rodeo
-   - [ ] Ratio
-   > РАДІО = R-A-D-I-O. Remember: Р=R (not P!)
-
-## group-sort: Sort the Letters
-
-> Drag each letter to the correct category based on how it relates to the Latin alphabet.
-
-### True Friends (Look & Sound Same)
-- А
-- Е
-- І
-- О
-- К
-- М
-- Т
-
-### False Friends (Look Latin, Sound Different)
-- В
-- Н
-- Р
-- С
-- У
-- Х
-
-### New Letters (Not in Latin)
-- Б
-- Д
-- З
-- Л
-- П
-- Ф
-
-
-## true-false: True or False?
-
-> Determine if each statement is true or false.
-
-- [x] "мама" is feminine.
-   > Correct! мама is feminine.
-
-- [x] "тато" is masculine.
-   > Correct! тато is masculine.
-
-- [x] "банк" is masculine.
-   > Correct! банк is masculine.
-
-- [x] "парк" is masculine.
-   > Correct! парк is masculine.
-
-- [ ] "кафе" is masculine.
-   > Incorrect. кафе is neuter.
-
-- [ ] "метро" is masculine.
-   > Incorrect. метро is neuter.
-
+| театр | theater |
+| телефон | telephone |
+| доктор | doctor |
+| лампа | lamp |
+| зебра | zebra |
+| клас | class |
+| план | plan |
+| спорт | sport |
+| старт | start |
+| стоп | stop |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "парк" mean?
-   - [ ] mom
-   - [ ] music
-   - [ ] hockey
-   - [x] park
-   > "парк" means "park"
-
-2. What does "хокей" mean?
-   - [x] hockey
-   - [ ] music
-   - [ ] mom
+1. What does "піца" mean?
    - [ ] park
+   - [ ] lemon
+   - [x] pizza
+   - [ ] soup
+   > "піца" means "pizza"
+
+2. What does "тато" mean?
+   - [ ] radio
+   - [ ] soup
+   - [x] dad
+   - [ ] music
+   > "тато" means "dad"
+
+3. What does "таксі" mean?
+   - [ ] football
+   - [ ] soup
+   - [x] taxi
+   - [ ] hockey
+   > "таксі" means "taxi"
+
+4. What does "лимон" mean?
+   - [x] lemon
+   - [ ] café
+   - [ ] football
+   - [ ] music
+   > "лимон" means "lemon"
+
+5. What does "хокей" mean?
+   - [ ] pizza
+   - [x] hockey
+   - [ ] mom
+   - [ ] banana
    > "хокей" means "hockey"
 
-3. What does "мама" mean?
+6. What does "суп" mean?
+   - [x] soup
+   - [ ] pizza
+   - [ ] lemon
    - [ ] hockey
-   - [x] mom
-   - [ ] park
-   - [ ] music
-   > "мама" means "mom"
+   > "суп" means "soup"
 
-4. What does "музика" mean?
-   - [ ] mom
-   - [ ] hockey
+7. What does "музика" mean?
+   - [ ] student
    - [x] music
    - [ ] park
+   - [ ] photo
    > "музика" means "music"
 
-5. What does "футбол" mean?
-   - [ ] park
-   - [x] football
-   - [ ] hockey
-   - [ ] mom
-   > "футбол" means "football"
+8. What does "банан" mean?
+   - [ ] lemon
+   - [x] banana
+   - [ ] dad
+   - [ ] taxi
+   > "банан" means "banana"
 
-6. What does "кафе" mean?
+9. What does "кафе" mean?
+   - [ ] taxi
    - [x] café
-   - [ ] park
-   - [ ] mom
-   - [ ] hockey
+   - [ ] photo
+   - [ ] banana
    > "кафе" means "café"
 
+10. What does "турист" mean?
+   - [ ] café
+   - [ ] mom
+   - [ ] soup
+   - [x] tourist
+   > "турист" means "tourist"
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "таксі" means "taxi"
+   > Correct!
+
+- [x] "радіо" means "radio"
+   > Correct!
+
+- [x] "банк" means "bank"
+   > Correct!
+
+- [ ] "музика" means "dad"
+   > Incorrect. "музика" means "music"
+
+- [x] "мама" means "mom"
+   > Correct!
+
+- [x] "парк" means "park"
+   > Correct!
+
+- [ ] "турист" means "banana"
+   > Incorrect. "турист" means "tourist"
+
+- [ ] "лимон" means "student"
+   > Incorrect. "лимон" means "lemon"
+
+- [x] "суп" means "soup"
+   > Correct!
+
+- [ ] "банан" means "music"
+   > Incorrect. "банан" means "banana"
 
 ---
 
@@ -366,12 +482,22 @@ Read these tricky words:
 | лимон | /lɪˈmɔn/ | lemon | noun | m | Л=L (new), Н=N (false friend) |
 | банан | /bɑˈnɑn/ | banana | noun | m | Б=B (new), Н=N (false friend) |
 | хокей | /xɔˈkɛj/ | hockey | noun | m | Х=KH (false friend) |
-| футбол | /fudˈbɔl/ | football | noun | m | Ф=F (new), У=U, Б=B, Л=L |
+| футбол | /futˈbɔl/ | football | noun | m | Ф=F (new), У=U, Б=B, Л=L |
 | студент | /stuˈdɛnt/ | student | noun | m | С=S, У=U, Н=N (false friends) |
 | турист | /tuˈrɪst/ | tourist | noun | m | У=U, Р=R, С=S (false friends) |
 | музика | /ˈmuzɪkɑ/ | music | noun | f | У=U (false friend), З=Z (new) |
 | фото | /ˈfɔtɔ/ | photo | noun | n | Ф=F (new), rest True Friends |
 | відео | /ˈwideɔ/ | video | noun | n | В=V (false friend), Д=D (new) |
+| театр | /tɛˈɑtr/ | theater | noun | m | All True Friends + Р=R |
+| телефон | /tɛlɛˈfɔn/ | telephone | noun | m | Ф=F (new), Л=L (new) |
+| доктор | /ˈdɔktɔr/ | doctor | noun | m | Д=D (new), К=K, Р=R |
+| лампа | /ˈlɑmpɑ/ | lamp | noun | f | Л=L (new), П=P (new) |
+| зебра | /ˈzɛbrɑ/ | zebra | noun | f | З=Z (new), Б=B (new) |
+| клас | /klɑs/ | class | noun | m | К=K, Л=L (new), С=S |
+| план | /plɑn/ | plan | noun | m | П=P (new), Л=L (new) |
+| спорт | /spɔrt/ | sport | noun | m | С=S, П=P (new), Р=R |
+| старт | /stɑrt/ | start | noun | m | С=S, Р=R, Т=T |
+| стоп | /stɔp/ | stop | noun | m | С=S, Т=T, П=P (new) |
 ---
 
 # Letter Groups

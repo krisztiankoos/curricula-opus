@@ -204,187 +204,228 @@ Answer:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Modal Translations
+## fill-in: Modal Verb Conjugation
 
-> Match Ukrainian to English.
+> Choose the correct form of the modal verb.
+
+1. Я ___ говорити українською. (can)
+   > [!answer] можу
+   > [!options] можу | можеш | може | можуть
+
+2. Ти ___ мені допомогти? (can)
+   > [!answer] можеш
+   > [!options] можу | можеш | може | можуть
+
+3. Вона ___ працювати завтра. (must)
+   > [!answer] мусить
+   > [!options] мушу | мусиш | мусить | мусять
+
+4. Ми ___ поспішати! (must)
+   > [!answer] мусимо
+   > [!options] мушу | мусимо | мусите | мусять
+
+5. Він ___ допомогти. (should - masculine)
+   > [!answer] повинен
+   > [!options] повинен | повинна | повинне | повинні
+
+6. Вона ___ прийти. (should - feminine)
+   > [!answer] повинна
+   > [!options] повинен | повинна | повинне | повинні
+
+7. ___ треба йти. (I need)
+   > [!answer] Мені
+   > [!options] Я | Мені | Моє | Мій
+
+8. ___ потрібно відпочити. (You need)
+   > [!answer] Тобі
+   > [!options] Ти | Тобі | Твій | Твоє
+
+9. Вони ___ приїхати. (can)
+   > [!answer] можуть
+   > [!options] можу | можемо | можете | можуть
+
+10. Ви ___ почекати? (can)
+   > [!answer] можете
+   > [!options] можу | можемо | можете | можуть
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. можу / Я / допомогти
+   > [!answer] Я можу допомогти.
+   > (I can help.)
+
+2. мусить / Вона / працювати
+   > [!answer] Вона мусить працювати.
+   > (She must work.)
+
+3. повинні / Ми / вчитися
+   > [!answer] Ми повинні вчитися.
+   > (We should study.)
+
+4. треба / Мені / йти
+   > [!answer] Мені треба йти.
+   > (I need to go.)
+
+5. хочуть / Вони / їсти
+   > [!answer] Вони хочуть їсти.
+   > (They want to eat.)
+
+6. не / зрозуміти / можу / Я
+   > [!answer] Я не можу зрозуміти.
+   > (I can't understand.)
+
+7. поспішати / треба / Не
+   > [!answer] Не треба поспішати.
+   > (No need to hurry.)
+
+8. хоче / Він / відпочити
+   > [!answer] Він хоче відпочити.
+   > (He wants to rest.)
+
+9. допомогти / можеш / Ти
+   > [!answer] Ти можеш допомогти?
+   > (Can you help?)
+
+10. закінчити / мусить / Він / роботу
+   > [!answer] Він мусить закінчити роботу.
+   > (He must finish work.)
+
+## match-up: Modal Verbs
+
+> Match the modal verb forms to their meanings.
 
 | Left | Right |
 |------|-------|
-| Я можу | I can |
-| Я мушу | I must |
-| Я повинен | I should |
-| Мені треба | I need to |
-| Я хочу | I want |
-| Я не можу | I can't |
+| можу | I can |
+| можеш | you can |
+| може | he/she can |
+| мушу | I must |
+| мусить | he/she must |
+| повинен | should (m) |
+| повинна | should (f) |
+| повинні | should (pl) |
+| треба | it's necessary |
+| потрібно | it's needed |
 
-## quiz: Modal Verbs
-
-> Choose the correct form.
-
-1. "I can speak Ukrainian" - Я ___ говорити українською.
-   - [x] можу
-   - [ ] можеш
-   - [ ] може
-   - [ ] можемо
-   > Я → можу.
-
-2. "She must work" - Вона ___ працювати.
-   - [x] мусить
-   - [ ] мушу
-   - [ ] мусимо
-   - [ ] мусять
-   > Вона → мусить.
-
-3. "I (female) should study" - Я ___ вчитися.
-   - [x] повинна
-   - [ ] повинен
-   - [ ] повинні
-   - [ ] повинне
-   > Female я → повинна.
-
-4. "We need to go" - ___ треба йти.
-   - [x] Нам
-   - [ ] Ми
-   - [ ] Нас
-   - [ ] Нами
-   > Dative: нам треба.
-
-5. "They want to help" - Вони ___ допомогти.
-   - [x] хочуть
-   - [ ] хоче
-   - [ ] хочемо
-   - [ ] хочу
-   > Вони → хочуть.
-
-6. "Can you (formal) help?" - Ви ___ допомогти?
-   - [x] можете
-   - [ ] можемо
-   - [ ] можуть
-   - [ ] можеш
-   > Ви → можете.
-
-7. "No need to hurry" - ___ поспішати.
-   - [x] Не треба
-   - [ ] Не потрібно
-   - [ ] Не мусити
-   - [ ] Не можна
-   > Не треба = no need.
-
-8. "I would like coffee" (male speaker):
-   - [x] Я хотів би каву.
-   - [ ] Я хотіла б каву.
-   - [ ] Я хочу би каву.
-   - [ ] Я хотіти би каву.
-   > Male: хотів би.
-
-## group-sort: Types of Modals
-
-> Sort expressions by meaning.
-
-### Ability (Can)
-- можу
-- можеш
-- можемо
-- не можу
-
-### Obligation (Must)
-- мушу
-- повинен
-- треба
-- потрібно
-
-### Desire (Want)
-- хочу
-- хочеш
-- хотів би
-- хочуть
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Не ___ хвилюватися.
-   > [!answer] треба
-
-2. Чи можете ___ допомогти?
-   > [!answer] ви
-
-3. Чи можна ___ сісти?
-   > [!answer] тут
-
-
-
-## quiz: Meaning Check
+## quiz: Modal Verb Grammar
 
 > Choose the correct answer.
 
-1. What does "треба" mean?
-   - [ ] must, have to
-   - [x] it's necessary
-   - [ ] to pay
-   - [ ] can, to be able
-   > "треба" means "it's necessary"
+1. How do you say "I can help"?
+   - [x] Я можу допомогти
+   - [ ] Я можеш допомогти
+   - [ ] Я може допомогти
+   - [ ] Я можуть допомогти
+   > я можу + infinitive
 
-2. What does "могти" mean?
-   - [ ] to pay
-   - [ ] must, have to
-   - [x] can, to be able
-   - [ ] it's necessary
-   > "могти" means "can, to be able"
+2. What form of повинен do you use with "вона"?
+   - [ ] повинен
+   - [x] повинна
+   - [ ] повинне
+   - [ ] повинні
+   > Feminine singular = повинна
 
-3. What does "платити" mean?
-   - [x] to pay
-   - [ ] can, to be able
-   - [ ] must, have to
-   - [ ] it's necessary
-   > "платити" means "to pay"
+3. How do you express "I need to" impersonally?
+   - [ ] Я треба
+   - [x] Мені треба
+   - [ ] Мій треба
+   - [ ] Моє треба
+   > треба + dative (мені)
 
-4. What does "мусити" mean?
-   - [ ] it's necessary
-   - [ ] can, to be able
-   - [ ] to pay
-   - [x] must, have to
-   > "мусити" means "must, have to"
+4. What is the difference between мусити and повинен?
+   - [x] мусити = have to, повинен = should/ought to
+   - [ ] They mean the same thing
+   - [ ] мусити = want, повинен = can
+   - [ ] мусити = can, повинен = want
+   > мусити is external obligation, повинен is moral duty
 
-5. What does "відпочити" mean?
-   - [x] to rest
-   - [ ] to pay
-   - [ ] it's necessary
-   - [ ] can, to be able
-   > "відпочити" means "to rest"
+5. What form is "можуть"?
+   - [ ] я
+   - [ ] ти
+   - [ ] він/вона
+   - [x] вони
+   > вони можуть
 
-6. What does "повинен" mean?
-   - [x] should, ought to (m)
-   - [ ] it's necessary
-   - [ ] can, to be able
-   - [ ] to pay
-   > "повинен" means "should, ought to (m)"
+6. How do you say "No need to worry"?
+   - [x] Не треба хвилюватися
+   - [ ] Не можна хвилюватися
+   - [ ] Не хочу хвилюватися
+   - [ ] Не мушу хвилюватися
+   > Не треба + infinitive
 
+7. What does "потрібно" mean?
+   - [x] it's necessary/needed
+   - [ ] it's possible
+   - [ ] it's forbidden
+   - [ ] it's good
+   > потрібно = it's needed (= треба)
 
+8. How do you conjugate мусити for "ми"?
+   - [ ] мушу
+   - [ ] мусиш
+   - [x] мусимо
+   - [ ] мусять
+   > ми мусимо
 
-## unjumble: Word Order
+9. What follows modal verbs?
+   - [x] infinitive
+   - [ ] past tense
+   - [ ] future tense
+   - [ ] noun
+   > modal + infinitive
 
-> Put the words in the correct order to form a sentence.
+10. How do you say "She can't come"?
+   - [ ] Вона не можу прийти
+   - [x] Вона не може прийти
+   - [ ] Вона не можуть прийти
+   - [ ] Вона не можемо прийти
+   > вона не може + infinitive
 
-1. хвилюватися / Не / треба
-   > [!answer] Не треба хвилюватися.
-   > (Don't worry. / No need to worry.)
+## true-false: True or False?
 
-2. не / Я / можу
-   > [!answer] Я не можу
-   > (I can't)
+> Determine if each statement is true or false.
 
-3. можете / Чи / ви / допомогти
-   > [!answer] Чи можете ви допомогти?
-   > (Can you help?)
+- [x] Modal verbs are followed by an infinitive
+   > Correct!
 
-4. Чи / можна / сісти / тут
-   > [!answer] Чи можна тут сісти?
-   > (May I sit here?)
+- [x] "Я можу" means "I can"
+   > Correct!
 
+- [ ] "Повинен" is the same for all genders
+   > Incorrect. повинен (m), повинна (f), повинне (n), повинні (pl)
+
+- [x] "Мені треба" means "I need to"
+   > Correct!
+
+- [x] "Мусити" came from German through Polish
+   > Correct!
+
+- [ ] "Треба" requires a subject pronoun
+   > Incorrect. Треба is impersonal
+
+- [x] "Не треба" is a polite way to decline
+   > Correct!
+
+- [x] "Я хотів би" is a polite form for "I would like"
+   > Correct!
+
+- [ ] "Можу" and "можуть" mean the same thing
+   > Incorrect. можу = I can, можуть = they can
+
+- [x] "Потрібно" is a synonym of "треба"
+   > Correct!
 
 ---
 

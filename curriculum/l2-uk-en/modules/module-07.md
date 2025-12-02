@@ -3,7 +3,7 @@ module: 7
 title: "Questions & Negation"
 subtitle: "Asking and Denying"
 level: A1
-phase: A1.2
+phase: A1.1
 duration: 45
 transliteration: full
 tags: [grammar, questions, negation, conversation]
@@ -200,191 +200,228 @@ Turn positive to negative:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Question Words
+## fill-in: Complete the Sentences
 
-> Match each question word to its English meaning.
+> Choose the correct question word or negative word.
+
+1. ___ це? (What is this?)
+   > [!answer] Що
+   > [!options] Що | Хто | Де | Коли
+
+2. ___ ти? (Where are you?)
+   > [!answer] Де
+   > [!options] Що | Хто | Де | Куди
+
+3. ___ ти йдеш? (Where are you going?)
+   > [!answer] Куди
+   > [!options] Де | Куди | Звідки | Коли
+
+4. ___ ти? (Where are you from?)
+   > [!answer] Звідки
+   > [!options] Де | Куди | Звідки | Як
+
+5. ___ ти не прийшов? (Why didn't you come?)
+   > [!answer] Чому
+   > [!options] Що | Хто | Чому | Коли
+
+6. ___ коштує? (How much does it cost?)
+   > [!answer] Скільки
+   > [!options] Що | Як | Скільки | Чому
+
+7. Я ___ не знаю. (I don't know anything.)
+   > [!answer] нічого
+   > [!options] ніхто | нічого | ніде | ніколи
+
+8. ___ не знає. (Nobody knows.)
+   > [!answer] Ніхто
+   > [!options] Ніхто | Нічого | Ніде | Ніколи
+
+9. Я ___ не працюю. (I never work.)
+   > [!answer] ніколи
+   > [!options] ніхто | нічого | ніде | ніколи
+
+10. ___ ти говориш українською? (Do you speak Ukrainian?)
+   > [!answer] Чи
+   > [!options] Що | Чи | Як | Де
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. це / Що
+   > [!answer] Що це?
+   > (What is this?)
+
+2. ти / Де
+   > [!answer] Де ти?
+   > (Where are you?)
+
+3. йдеш / Куди / ти
+   > [!answer] Куди ти йдеш?
+   > (Where are you going?)
+
+4. ти / Звідки
+   > [!answer] Звідки ти?
+   > (Where are you from?)
+
+5. коштує / Скільки / це
+   > [!answer] Скільки це коштує?
+   > (How much does it cost?)
+
+6. знаю / не / Я
+   > [!answer] Я не знаю.
+   > (I don't know.)
+
+7. не / Ніхто / знає
+   > [!answer] Ніхто не знає.
+   > (Nobody knows.)
+
+8. не / нічого / Я / знаю
+   > [!answer] Я нічого не знаю.
+   > (I don't know anything.)
+
+9. не / Вона / ніколи / читає
+   > [!answer] Вона ніколи не читає.
+   > (She never reads.)
+
+10. говориш / Чи / українською / ти
+   > [!answer] Чи ти говориш українською?
+   > (Do you speak Ukrainian?)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
 
 | Left | Right |
 |------|-------|
 | що | what |
 | хто | who |
 | де | where (location) |
-| куди | where (direction) |
+| куди | where to (direction) |
+| звідки | where from |
 | коли | when |
 | чому | why |
-| як | how |
-| скільки | how much/many |
-
-## quiz: Form Questions
-
-> Choose the correct question form.
-
-1. How do you ask "Do you read?" formally?
-   - [x] Чи ти читаєш?
-   - [ ] Ти чи читаєш?
-   - [ ] Читаєш ти чи?
-   - [ ] Чи читаєш ти?
-   > Чи goes at the beginning of yes/no questions.
-
-2. How do you ask "What is this?"
-   - [x] Що це?
-   - [ ] Це що?
-   - [ ] Який це?
-   - [ ] Чи це?
-   > Що = what. Що це? is the standard form.
-
-3. How do you ask "Where are you going?"
-   - [x] Куди ти йдеш?
-   - [ ] Де ти йдеш?
-   - [ ] Звідки ти йдеш?
-   - [ ] Як ти йдеш?
-   > Куди = where to (direction). Де = where (location).
-
-4. How do you say "I don't know anything"?
-   - [x] Я нічого не знаю.
-   - [ ] Я не знаю нічого.
-   - [ ] Я не знаю.
-   - [ ] Я нічого знаю.
-   > Double negative required: нічого + не знаю.
-
-5. How do you say "Nobody knows"?
-   - [x] Ніхто не знає.
-   - [ ] Ніхто знає.
-   - [ ] Не ніхто знає.
-   - [ ] Хто не знає.
-   > Ніхто (nobody) + не знає (doesn't know) = double negative.
-
-6. How do you ask "Why?"
-   - [x] Чому?
-   - [ ] Що?
-   - [ ] Як?
-   - [ ] Коли?
-   > Чому = why.
-
-7. How do you ask "How much does it cost?"
-   - [x] Скільки це коштує?
-   - [ ] Що це коштує?
-   - [ ] Як це коштує?
-   - [ ] Чому це коштує?
-   > Скільки = how much/many.
-
-8. What's the difference between де and куди?
-   - [x] Де = location, куди = direction
-   - [ ] Де = direction, куди = location
-   - [ ] They mean the same thing
-   - [ ] Де is formal, куди is informal
-   > Де ти? (Where are you?) vs Куди ти йдеш? (Where are you going?)
-
-## group-sort: Positive vs Negative Words
-
-> Sort these words into positive and negative categories.
-
-### Positive/Neutral Words
-- хтось (someone)
-- щось (something)
-- десь (somewhere)
-- колись (sometime)
-- завжди (always)
-
-### Negative Words
-- ніхто (nobody)
-- ніщо (nothing)
-- ніде (nowhere)
-- ніколи (never)
-- не (not)
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Ти читаєш. ___ read.)
-   > [!answer] (You
-
-2. Вона студентка. ___ a student.)
-   > [!answer] (She's
-
-3. Він знає. ___ knows.)
-   > [!answer] (He
-
-4. Я знаю. ___ know.)
-   > [!answer] (I
-
-5. Вона читає. ___ reads.)
-   > [!answer] (She
-
-
+| ніхто | nobody |
+| нічого | nothing |
+| ніколи | never |
 
 ## quiz: Meaning Check
 
 > Choose the correct answer.
 
-1. What does "звідки" mean?
-   - [ ] nowhere
+1. What does "що" mean?
+   - [x] what
+   - [ ] who
+   - [ ] where
    - [ ] when
+   > "що" means "what"
+
+2. What does "де" mean?
+   - [ ] what
+   - [ ] who
+   - [x] where (location)
+   - [ ] where to
+   > "де" means "where (location)"
+
+3. What does "куди" mean?
+   - [ ] where (location)
+   - [x] where to (direction)
+   - [ ] where from
+   - [ ] when
+   > "куди" means "where to (direction)"
+
+4. What does "звідки" mean?
+   - [ ] where (location)
+   - [ ] where to
    - [x] where from
-   - [ ] which/what kind (f)
+   - [ ] why
    > "звідки" means "where from"
 
-2. What does "ніде" mean?
-   - [x] nowhere
-   - [ ] where from
-   - [ ] which/what kind (f)
+5. What does "чому" mean?
+   - [ ] what
+   - [ ] how
    - [ ] when
-   > "ніде" means "nowhere"
+   - [x] why
+   > "чому" means "why"
 
-3. What does "яка" mean?
+6. What does "ніхто" mean?
+   - [x] nobody
+   - [ ] nothing
+   - [ ] never
    - [ ] nowhere
-   - [x] which/what kind (f)
-   - [ ] where from
-   - [ ] when
-   > "яка" means "which/what kind (f)"
+   > "ніхто" means "nobody"
 
-4. What does "коли" mean?
-   - [ ] where from
-   - [ ] which/what kind (f)
-   - [x] when
+7. What does "нічого" mean?
+   - [ ] nobody
+   - [x] nothing
+   - [ ] never
    - [ ] nowhere
-   > "коли" means "when"
+   > "нічого" means "nothing"
 
-5. What does "іноді" mean?
-   - [ ] where from
-   - [ ] which/what kind (f)
+8. What does "ніколи" mean?
+   - [ ] nobody
+   - [ ] nothing
+   - [x] never
    - [ ] nowhere
-   - [x] sometimes
-   > "іноді" means "sometimes"
+   > "ніколи" means "never"
 
-6. What does "завжди" mean?
-   - [x] always
-   - [ ] nowhere
-   - [ ] where from
-   - [ ] which/what kind (f)
-   > "завжди" means "always"
+9. What does "чи" mean?
+   - [x] whether (question particle)
+   - [ ] what
+   - [ ] why
+   - [ ] who
+   > "чи" is used to start yes/no questions
 
+10. What does "скільки" mean?
+   - [ ] what
+   - [ ] why
+   - [x] how much/many
+   - [ ] where
+   > "скільки" means "how much/many"
 
+## true-false: True or False?
 
-## unjumble: Word Order
+> Determine if each statement is true or false.
 
-> Put the words in the correct order to form a sentence.
+- [x] "Що це?" means "What is this?"
+   > Correct!
 
-1. Ти / читаєш / read) / (You
-   > [!answer] Ти читаєш. (You read.)
-   > (Чи ти читаєш? (Do you read?))
+- [x] "Де ти?" means "Where are you?"
+   > Correct!
 
-2. студентка / Вона / (She's / a / student)
-   > [!answer] Вона студентка. (She's a student.)
-   > (Чи вона студентка? (Is she a student?))
+- [ ] "куди" means the same as "де"
+   > Incorrect. "куди" means "where to" (direction), "де" means "where" (location)
 
-3. Він / (He / knows) / знає
-   > [!answer] Він знає. (He knows.)
-   > (Чи він знає? (Does he know?))
+- [x] "Ніхто не знає" means "Nobody knows"
+   > Correct!
 
-4. (I / Я / знаю / know)
-   > [!answer] Я знаю. (I know.)
-   > (Я не знаю. (I don't know.))
+- [x] Ukrainian requires double negatives
+   > Correct! "Я нічого не знаю" - literally "I nothing not know"
 
+- [ ] "чому" means "how"
+   > Incorrect. "чому" means "why", "як" means "how"
+
+- [x] "звідки" means "where from"
+   > Correct!
+
+- [ ] "Я не знаю нічого" is correct word order
+   > Incorrect. The correct order is "Я нічого не знаю"
+
+- [x] "скільки коштує" means "how much does it cost"
+   > Correct!
+
+- [x] "ніколи" means "never"
+   > Correct!
 
 ---
 
@@ -410,6 +447,8 @@ Turn positive to negative:
 | часто | /ˈtʃɑstɔ/ | often | adv | - | Frequency |
 | іноді | /iˈnɔdʲi/ | sometimes | adv | - | Frequency |
 | рідко | /ˈrʲidkɔ/ | rarely | adv | - | Frequency |
+| йти | /jtɪ/ | to go (on foot) | verb | - | Motion: іду, йдеш, йде... |
+| коштувати | /kɔʃtuˈvɑtɪ/ | to cost | verb | - | Class I: коштує (it costs) |
 ---
 
 # Question Patterns

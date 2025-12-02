@@ -3,7 +3,7 @@ module: 19
 title: "Shopping"
 subtitle: "At the Store & Market"
 level: A1
-phase: A1.3
+phase: A1.2
 duration: 50
 transliteration: full
 tags: [vocabulary, practical, shopping, conversation]
@@ -210,20 +210,120 @@ Use: Скільки коштує? Чи є...? Можна...? Я візьму...
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Shopping Vocabulary
+## fill-in: Shopping Vocabulary
 
-> Match Ukrainian to English.
+> Choose the correct word to complete each shopping phrase.
+
+1. ___ коштує? (How much does it cost?)
+   > [!answer] Скільки
+   > [!options] Де | Скільки | Що | Який
+
+2. Чи є ___ розмір? (bigger)
+   > [!answer] більший
+   > [!options] менший | більший | великий | малий
+
+3. Можна ___? (try on)
+   > [!answer] приміряти
+   > [!options] приміряти | подивитися | купити | продати
+
+4. Де ___? (fitting room)
+   > [!answer] примірочна
+   > [!options] каса | примірочна | магазин | ринок
+
+5. Це ___ дорого. (too)
+   > [!answer] занадто
+   > [!options] дуже | занадто | трохи | не
+
+6. Чи є це в ___ кольорі? (another)
+   > [!answer] іншому
+   > [!options] цьому | іншому | тому | якому
+
+7. Я ___ це. (I'll take)
+   > [!answer] візьму
+   > [!options] візьму | беру | маю | хочу
+
+8. ___ чи карткою? (Cash)
+   > [!answer] Готівкою
+   > [!options] Грошима | Готівкою | Чеком | Рахунком
+
+9. Чек ___? (needed)
+   > [!answer] потрібен
+   > [!options] потрібен | потрібна | потрібне | потрібні
+
+10. Пакет ___? (needed)
+   > [!answer] потрібен
+   > [!options] потрібен | потрібна | потрібне | потрібні
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. коштує / Скільки / це
+   > [!answer] Скільки це коштує?
+   > (How much does this cost?)
+
+2. більший / є / Чи / розмір
+   > [!answer] Чи є більший розмір?
+   > (Is there a bigger size?)
+
+3. приміряти / Можна
+   > [!answer] Можна приміряти?
+   > (May I try this on?)
+
+4. примірочна / Де
+   > [!answer] Де примірочна?
+   > (Where is the fitting room?)
+
+5. візьму / Я / це
+   > [!answer] Я візьму це.
+   > (I'll take this.)
+
+6. дорого / Занадто
+   > [!answer] Занадто дорого!
+   > (Too expensive!)
+
+7. знижка / Є
+   > [!answer] Є знижка?
+   > (Is there a discount?)
+
+8. чорному / в / є / Чи / це
+   > [!answer] Чи є це в чорному?
+   > (Is this available in black?)
+
+9. карткою / Можна
+   > [!answer] Можна карткою?
+   > (Can I pay by card?)
+
+10. подумаю / Я
+   > [!answer] Я подумаю.
+   > (I'll think about it.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian shopping words to their meanings.
 
 | Left | Right |
 |------|-------|
 | розмір | size |
-| знижка | discount |
+| більший | bigger |
+| менший | smaller |
 | примірочна | fitting room |
 | каса | cash register |
 | чек | receipt |
-| пакет | bag |
+| знижка | discount |
+| білий | white |
+| чорний | black |
+| занадто | too (excessive) |
 
 ## quiz: Shopping Language
 
@@ -232,171 +332,106 @@ Use: Скільки коштує? Чи є...? Можна...? Я візьму...
 1. How do you ask "How much does this cost?"
    - [x] Скільки це коштує?
    - [ ] Що це коштує?
+   - [ ] Де це коштує?
    - [ ] Як це коштує?
-   - [ ] Коли це коштує?
-   > Скільки = how much.
+   > "Скільки" = how much
 
-2. How do you say "too big"?
-   - [x] занадто великий
-   - [ ] дуже великий
-   - [ ] більший
-   - [ ] великий дуже
-   > Занадто = too (excess).
-
-3. What is "блакитний"?
-   - [x] light blue
-   - [ ] dark blue
-   - [ ] green
-   - [ ] purple
-   > Блакитний = light/sky blue.
-
-4. "Можна приміряти?" means:
-   - [x] May I try this on?
-   - [ ] May I pay?
-   - [ ] May I return this?
-   - [ ] May I look?
-   > Приміряти = to try on.
-
-5. "Поступитесь?" means:
-   - [x] Will you lower the price?
-   - [ ] Will you help?
-   - [ ] Will you wrap it?
-   - [ ] Will you hold it?
-   > Поступитися = to give way/discount.
-
-6. How do you ask for a smaller size?
-   - [x] Чи є менший розмір?
-   - [ ] Чи є більший розмір?
-   - [ ] Чи є маленький розмір?
+2. How do you ask for a bigger size?
+   - [ ] Чи є великий розмір?
+   - [x] Чи є більший розмір?
    - [ ] Чи є малий розмір?
-   > Менший = smaller (comparative).
+   - [ ] Чи є менший розмір?
+   > "більший" = bigger (comparative)
 
-7. "Це в продажу?" means:
-   - [x] Is this on sale?
-   - [ ] Is this for sale?
-   - [ ] Is this selling?
-   - [ ] Is this sold?
-   > В продажу = on sale (discounted).
+3. How do you ask to try something on?
+   - [x] Можна приміряти?
+   - [ ] Можна купити?
+   - [ ] Можна подивитися?
+   - [ ] Можна взяти?
+   > "приміряти" = to try on
 
-8. What color is "коричневий"?
-   - [x] brown
-   - [ ] orange
-   - [ ] purple
-   - [ ] gray
-   > Коричневий = brown.
+4. What does "занадто дорого" mean?
+   - [x] too expensive
+   - [ ] very expensive
+   - [ ] not expensive
+   - [ ] a little expensive
+   > "занадто" = too (excessive)
 
-## group-sort: Shopping Places
-
-> Sort these items by where you'd buy them.
-
-### Продуктовий магазин (Grocery)
-- хліб
-- молоко
-- м'ясо
-- овочі
-- фрукти
-
-### Магазин одягу (Clothing)
-- сукня
-- сорочка
-- штани
-- взуття
-- куртка
-
-### Аптека (Pharmacy)
-- ліки
-- вітаміни
-- пластир
-- шампунь
-- крем
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-1. Скільки ___ коштує?
-   > [!answer] це
-
-2. Це ___ продажу?
-   > [!answer] в
-
-3. Я ___ це.
-   > [!answer] візьму
-
-4. Мені ___ підходить.
-   > [!answer] не
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "продавати" mean?
-   - [ ] white
-   - [x] to sell
-   - [ ] small
-   - [ ] bigger
-   > "продавати" means "to sell"
-
-2. What does "маленький" mean?
-   - [ ] to sell
-   - [x] small
-   - [ ] white
-   - [ ] bigger
-   > "маленький" means "small"
-
-3. What does "більший" mean?
-   - [ ] small
-   - [ ] to sell
-   - [ ] white
-   - [x] bigger
-   > "більший" means "bigger"
-
-4. What does "білий" mean?
-   - [ ] bigger
-   - [ ] to sell
-   - [ ] small
-   - [x] white
-   > "білий" means "white"
-
-5. What does "примірочна" mean?
+5. What is "примірочна"?
+   - [ ] cash register
    - [x] fitting room
-   - [ ] small
-   - [ ] bigger
-   - [ ] to sell
-   > "примірочна" means "fitting room"
+   - [ ] store
+   - [ ] market
+   > Place to try on clothes
 
-6. What does "великий" mean?
-   - [ ] small
-   - [x] big, large
-   - [ ] to sell
-   - [ ] bigger
-   > "великий" means "big, large"
+6. How do you say "I'll take this"?
+   - [ ] Я беру це.
+   - [x] Я візьму це.
+   - [ ] Я маю це.
+   - [ ] Я хочу це.
+   > "візьму" = I'll take (future)
 
+7. What does "Є знижка?" ask?
+   - [x] Is there a discount?
+   - [ ] Is there a size?
+   - [ ] Is there a color?
+   - [ ] Is there a bag?
+   > "знижка" = discount
 
+8. How do you ask to pay by card?
+   - [ ] Можна картка?
+   - [x] Можна карткою?
+   - [ ] Можна картки?
+   - [ ] Можна картку?
+   > Instrumental case for "by means of"
 
-## unjumble: Word Order
+9. What is "каса"?
+   - [ ] fitting room
+   - [x] cash register
+   - [ ] receipt
+   - [ ] bag
+   > Where you pay
 
-> Put the words in the correct order to form a sentence.
+10. What does "Я подумаю" mean?
+   - [ ] I'll buy it
+   - [ ] I don't want it
+   - [x] I'll think about it
+   - [ ] I'll take it
+   > Polite way to decline
 
-1. це / Скільки / коштує
-   > [!answer] Скільки це коштує?
-   > (How much is this?)
+## true-false: True or False?
 
-2. продажу / Це / в
-   > [!answer] Це в продажу?
-   > (Is this on sale?)
+> Determine if each statement is true or false.
 
-3. Я / візьму / це
-   > [!answer] Я візьму це.
-   > (I'll take this.)
+- [x] "Скільки коштує?" asks about price
+   > Correct!
 
-4. підходить / не / Мені
-   > [!answer] Мені не підходить.
-   > (It doesn't suit me.)
+- [x] "більший" means "bigger" (comparative)
+   > Correct!
 
+- [ ] "занадто" means "very"
+   > Incorrect. "занадто" = too (excessive), "дуже" = very
+
+- [x] "примірочна" is the fitting room
+   > Correct!
+
+- [ ] "менший" means "bigger"
+   > Incorrect. "менший" = smaller, "більший" = bigger
+
+- [x] "Можна приміряти?" asks to try something on
+   > Correct!
+
+- [x] "чек" means "receipt"
+   > Correct!
+
+- [ ] "каса" means "fitting room"
+   > Incorrect. "каса" = cash register
+
+- [x] Ukrainian has two words for blue: синій and блакитний
+   > Correct! Dark and light blue
+
+- [x] "Я візьму це" means "I'll take this"
+   > Correct!
 
 ---
 

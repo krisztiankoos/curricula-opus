@@ -204,159 +204,228 @@ Use adjectives to describe:
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
+
+## fill-in: Adjective Agreement
+
+> Choose the correct adjective form to match the noun's gender.
+
+1. Це ___ дім. (new - masculine)
+   > [!answer] новий
+   > [!options] новий | нова | нове | нові
+
+2. Це ___ книга. (new - feminine)
+   > [!answer] нова
+   > [!options] новий | нова | нове | нові
+
+3. Це ___ вікно. (new - neuter)
+   > [!answer] нове
+   > [!options] новий | нова | нове | нові
+
+4. Це ___ друзі. (new - plural)
+   > [!answer] нові
+   > [!options] новий | нова | нове | нові
+
+5. Вона ___ жінка. (smart - feminine)
+   > [!answer] розумна
+   > [!options] розумний | розумна | розумне | розумні
+
+6. Він ___ чоловік. (young - masculine)
+   > [!answer] молодий
+   > [!options] молодий | молода | молоде | молоді
+
+7. Вони ___ люди. (happy - plural)
+   > [!answer] щасливі
+   > [!options] щасливий | щаслива | щасливе | щасливі
+
+8. Це ___ місто. (old - neuter)
+   > [!answer] старе
+   > [!options] старий | стара | старе | старі
+
+9. Ця робота ___. (interesting - feminine)
+   > [!answer] цікава
+   > [!options] цікавий | цікава | цікаве | цікаві
+
+10. Погода сьогодні ___. (bad - feminine)
+   > [!answer] погана
+   > [!options] поганий | погана | погане | погані
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. дім / великий / Це
+   > [!answer] Це великий дім.
+   > (This is a big house.)
+
+2. книга / цікава / Це
+   > [!answer] Це цікава книга.
+   > (This is an interesting book.)
+
+3. нове / Це / вікно
+   > [!answer] Це нове вікно.
+   > (This is a new window.)
+
+4. добрі / друзі / Вони
+   > [!answer] Вони добрі друзі.
+   > (They are good friends.)
+
+5. розумна / Вона / жінка
+   > [!answer] Вона розумна жінка.
+   > (She is a smart woman.)
+
+6. молодий / чоловік / Він
+   > [!answer] Він молодий чоловік.
+   > (He is a young man.)
+
+7. щасливі / люди / Вони
+   > [!answer] Вони щасливі люди.
+   > (They are happy people.)
+
+8. старе / місто / Це
+   > [!answer] Це старе місто.
+   > (This is an old city.)
+
+9. погода / гарна / сьогодні
+   > [!answer] Сьогодні гарна погода.
+   > (Today is nice weather.)
+
+10. важка / робота / Це
+   > [!answer] Це важка робота.
+   > (This is hard work.)
 
 ## match-up: Adjective Forms
 
-> Match masculine to feminine forms.
+> Match the masculine adjective to its feminine form.
 
-| Left (Masculine) | Right (Feminine) |
-|------------------|------------------|
+| Left | Right |
+|------|-------|
 | новий | нова |
+| старий | стара |
 | великий | велика |
+| маленький | маленька |
 | гарний | гарна |
-| синій | синя |
+| добрий | добра |
 | молодий | молода |
+| розумний | розумна |
 | щасливий | щаслива |
+| цікавий | цікава |
 
-## quiz: Adjective Agreement
-
-> Choose the correct form.
-
-1. "Big house" (дім = masculine)
-   - [x] великий дім
-   - [ ] велика дім
-   - [ ] велике дім
-   - [ ] великі дім
-   > Дім is masculine: великий.
-
-2. "New book" (книга = feminine)
-   - [x] нова книга
-   - [ ] новий книга
-   - [ ] нове книга
-   - [ ] нові книга
-   > Книга is feminine: нова.
-
-3. "Old city" (місто = neuter)
-   - [x] старе місто
-   - [ ] старий місто
-   - [ ] стара місто
-   - [ ] старі місто
-   > Місто is neuter: старе.
-
-4. "Good friends" (друзі = plural)
-   - [x] добрі друзі
-   - [ ] добрий друзі
-   - [ ] добра друзі
-   - [ ] добре друзі
-   > Друзі is plural: добрі.
-
-5. "Blue sky" (небо = neuter, soft adj)
-   - [x] синє небо
-   - [ ] синій небо
-   - [ ] синя небо
-   - [ ] сине небо
-   > Soft neuter: синє.
-
-6. "Beautiful woman" (жінка = feminine)
-   - [x] красива жінка
-   - [ ] красивий жінка
-   - [ ] красиве жінка
-   - [ ] красиві жінка
-   > Жінка is feminine: красива.
-
-7. "Hot coffee" (кава = feminine)
-   - [x] гаряча кава
-   - [ ] гарячий кава
-   - [ ] гаряче кава
-   - [ ] гарячі кава
-   > Кава is feminine: гаряча.
-
-8. "Young man" (чоловік = masculine)
-   - [x] молодий чоловік
-   - [ ] молода чоловік
-   - [ ] молоде чоловік
-   - [ ] молоді чоловік
-   > Чоловік is masculine: молодий.
-
-## group-sort: Adjective Categories
-
-> Sort adjectives by category.
-
-### Size
-- великий
-- маленький
-- довгий
-- короткий
-- високий
-
-### Quality
-- гарний
-- поганий
-- новий
-- старий
-- чистий
-
-### Feeling/State
-- щасливий
-- сумний
-- веселий
-- злий
-- втомлений
-
-
-## fill-in: Fill in the Blank
-
-> Fill in the blanks with the correct word.
-
-
-
-## quiz: Meaning Check
+## quiz: Adjective Grammar
 
 > Choose the correct answer.
 
-1. What does "добрий" mean?
-   - [x] good, kind
-   - [ ] easy, light
-   - [ ] smart
-   - [ ] clean
-   > "добрий" means "good, kind"
+1. What ending do masculine adjectives typically have?
+   - [x] -ий
+   - [ ] -а
+   - [ ] -е
+   - [ ] -і
+   > Hard masculine adjectives end in -ий
 
-2. What does "розумний" mean?
-   - [ ] good, kind
-   - [x] smart
-   - [ ] clean
-   - [ ] easy, light
-   > "розумний" means "smart"
+2. What ending do feminine adjectives have?
+   - [ ] -ий
+   - [x] -а
+   - [ ] -е
+   - [ ] -і
+   > Feminine adjectives end in -а
 
-3. What does "чистий" mean?
-   - [ ] easy, light
-   - [ ] smart
-   - [x] clean
-   - [ ] good, kind
-   > "чистий" means "clean"
+3. What ending do neuter adjectives have?
+   - [ ] -ий
+   - [ ] -а
+   - [x] -е
+   - [ ] -і
+   > Neuter adjectives end in -е
 
-4. What does "легкий" mean?
-   - [ ] smart
-   - [x] easy, light
-   - [ ] clean
-   - [ ] good, kind
-   > "легкий" means "easy, light"
+4. What ending do plural adjectives have?
+   - [ ] -ий
+   - [ ] -а
+   - [ ] -е
+   - [x] -і
+   > All plural adjectives end in -і
 
-5. What does "новий" mean?
-   - [x] new
-   - [ ] smart
-   - [ ] good, kind
-   - [ ] clean
-   > "новий" means "new"
+5. How do you say "new book" (feminine)?
+   - [ ] новий книга
+   - [x] нова книга
+   - [ ] нове книга
+   - [ ] нові книга
+   > Feminine noun needs feminine adjective
 
-6. What does "важкий" mean?
-   - [ ] clean
-   - [x] hard, heavy
-   - [ ] good, kind
-   - [ ] smart
-   > "важкий" means "hard, heavy"
+6. Which is correct for "old city" (neuter)?
+   - [ ] старий місто
+   - [ ] стара місто
+   - [x] старе місто
+   - [ ] старі місто
+   > Neuter noun needs neuter adjective
 
+7. What does "гарний" mean?
+   - [x] beautiful, nice
+   - [ ] bad
+   - [ ] big
+   - [ ] small
+   > гарний = beautiful, nice
+
+8. What is the opposite of "великий"?
+   - [x] маленький
+   - [ ] старий
+   - [ ] новий
+   - [ ] добрий
+   > великий (big) ↔ маленький (small)
+
+9. What is the feminine form of "щасливий"?
+   - [ ] щасливий
+   - [x] щаслива
+   - [ ] щасливе
+   - [ ] щасливі
+   > Feminine -а ending
+
+10. Where do adjectives usually go in Ukrainian?
+   - [x] Before the noun
+   - [ ] After the noun
+   - [ ] At the end of sentence
+   - [ ] Anywhere
+   > Usually before: великий дім
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] Adjectives must agree with noun gender
+   > Correct!
+
+- [x] Masculine adjectives end in -ий
+   > Correct!
+
+- [ ] "Нове книга" is correct
+   > Incorrect. книга is feminine, so "нова книга"
+
+- [x] Plural adjectives always end in -і
+   > Correct!
+
+- [x] "Гарний" means "beautiful" or "nice"
+   > Correct!
+
+- [ ] "Велика дім" is correct
+   > Incorrect. дім is masculine, so "великий дім"
+
+- [x] "Старе місто" is correct for "old city"
+   > Correct! місто is neuter
+
+- [x] "Щаслива жінка" means "happy woman"
+   > Correct!
+
+- [ ] Adjectives always come after the noun
+   > Incorrect. Usually before: великий дім
+
+- [x] "Добрий" and "добра" are masculine and feminine forms
+   > Correct!
 
 ---
 

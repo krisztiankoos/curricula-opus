@@ -188,192 +188,228 @@ Where are these things/people?
 
 ---
 
+---
+
+---
+
+---
+
+---
+
 # Activities
 
-## match-up: Nominative to Locative
+## fill-in: Locative Case
 
-> Match the nominative form to its locative form.
+> Choose the correct locative form with preposition.
 
-| Left (Nominative) | Right (Locative) |
-|-------------------|------------------|
-| кімната | у кімнаті |
-| стіл | на столі |
-| школа | у школі |
-| книга | у книзі |
-| вулиця | на вулиці |
-| дім | вдома |
+1. Книга ___ столі. (on the table)
+   > [!answer] на
+   > [!options] в | на | у | до
 
-## quiz: Locative Forms
+2. Я ___ школі. (at school)
+   > [!answer] у
+   > [!options] в | на | у | до
 
-> Choose the correct locative form.
+3. Він ___ офісі. (in the office)
+   > [!answer] в
+   > [!options] в | на | у | до
 
-1. "The book is on the table" - Книга на ___.
-   - [x] столі
+4. Вона ___ ресторані. (in the restaurant)
+   > [!answer] в
+   > [!options] в | на | у | до
+
+5. Ми ___ вулиці. (on the street)
+   > [!answer] на
+   > [!options] в | на | у | до
+
+6. Студент ___ університеті. (at university)
+   > [!answer] в
+   > [!options] в | на | у | до
+
+7. Кава ___ столі. (on the table)
+   > [!answer] на
+   > [!options] в | на | у | до
+
+8. Я живу ___ Києві. (in Kyiv)
+   > [!answer] в
+   > [!options] в | на | у | до
+
+9. Вони ___ концерті. (at the concert)
+   > [!answer] на
+   > [!options] в | на | у | до
+
+10. Книга ___ кімнаті. (in the room)
+   > [!answer] в
+   > [!options] в | на | у | до
+
+## unjumble: Build the Sentence
+
+> Arrange the words in the correct order.
+
+1. столі / на / Книга
+   > [!answer] Книга на столі.
+   > (The book is on the table.)
+
+2. школі / Я / у
+   > [!answer] Я у школі.
+   > (I'm at school.)
+
+3. в / Він / офісі
+   > [!answer] Він в офісі.
+   > (He's in the office.)
+
+4. кімнаті / в / Вона
+   > [!answer] Вона в кімнаті.
+   > (She's in the room.)
+
+5. вулиці / Ми / на
+   > [!answer] Ми на вулиці.
+   > (We're on the street.)
+
+6. університеті / в / Студент
+   > [!answer] Студент в університеті.
+   > (The student is at university.)
+
+7. Києві / живу / в / Я
+   > [!answer] Я живу в Києві.
+   > (I live in Kyiv.)
+
+8. ресторані / Вони / в
+   > [!answer] Вони в ресторані.
+   > (They're in the restaurant.)
+
+9. роботі / на / Він
+   > [!answer] Він на роботі.
+   > (He's at work.)
+
+10. магазині / Вона / в
+   > [!answer] Вона в магазині.
+   > (She's in the store.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
+
+| Left | Right |
+|------|-------|
+| кімната | room |
+| офіс | office |
+| школа | school |
+| університет | university |
+| магазин | store |
+| ресторан | restaurant |
+| вулиця | street |
+| площа | square |
+| готель | hotel |
+| Київ | Kyiv |
+
+## quiz: Locative Rules
+
+> Choose the correct answer.
+
+1. Which preposition means "in" for enclosed spaces?
+   - [x] в / у
+   - [ ] на
+   - [ ] до
+   - [ ] з
+   > в/у = in, inside
+
+2. Which preposition means "on" or "at" for surfaces/events?
+   - [ ] в / у
+   - [x] на
+   - [ ] до
+   - [ ] з
+   > на = on, at (surfaces, events)
+
+3. What is the locative ending for most nouns?
+   - [ ] -а
+   - [ ] -у
+   - [x] -і
+   - [ ] -ю
+   > Most nouns take -і in locative
+
+4. What is the locative of "стіл" (table)?
    - [ ] стіл
    - [ ] стола
-   - [ ] столом
-   > Стіл (m) → столі in locative.
+   - [x] столі
+   - [ ] столу
+   > на столі
 
-2. "I'm in the room" - Я в ___.
-   - [x] кімнаті
-   - [ ] кімната
-   - [ ] кімнату
-   - [ ] кімнатою
-   > Кімната (f, -а) → кімнаті in locative.
-
-3. "She's at school" - Вона у ___.
-   - [x] школі
+5. What is the locative of "школа" (school)?
    - [ ] школа
    - [ ] школу
+   - [x] школі
    - [ ] школою
-   > Школа (f, -а) → школі in locative.
+   > у школі
 
-4. "They're in the restaurant" - Вони в ___.
-   - [x] ресторані
-   - [ ] ресторан
-   - [ ] ресторана
-   - [ ] рестораном
-   > Ресторан (m) → ресторані in locative.
+6. When do we use "у" instead of "в"?
+   - [ ] Always
+   - [x] After consonants
+   - [ ] After vowels
+   - [ ] Never
+   > в after vowels, у after consonants
 
-5. "The cat is in the book" - Кіт у ___.
-   - [x] книзі
-   - [ ] книгі
-   - [ ] книга
-   - [ ] книгою
-   > Книга has г→з change: книзі.
+7. What does "Де ти?" mean?
+   - [x] Where are you?
+   - [ ] Who are you?
+   - [ ] What are you doing?
+   - [ ] How are you?
+   > "Де" = where
 
-6. "He lives in Kyiv" - Він живе в ___.
-   - [x] Києві
-   - [ ] Київ
-   - [ ] Києва
-   - [ ] Києвом
-   > Київ (m) → Києві in locative.
+8. What is the locative of "кімната" (room)?
+   - [ ] кімната
+   - [ ] кімнату
+   - [x] кімнаті
+   - [ ] кімнатою
+   > в кімнаті
 
-## group-sort: В/У vs На
+9. Which consonant changes: книга → книз...?
+   - [x] г → з
+   - [ ] к → ц
+   - [ ] х → с
+   - [ ] No change
+   > г → з before -і
 
-> Sort these location phrases by preposition.
-
-### В/У (in, inside)
-- у школі
-- в офісі
-- у магазині
-- в кімнаті
-- в Україні
-
-### На (on, at)
-- на столі
-- на вулиці
-- на роботі
-- на концерті
-- на площі
-
+10. What does "Я в офісі" mean?
+   - [x] I'm in the office
+   - [ ] I see the office
+   - [ ] I want the office
+   - [ ] I have an office
+   > Locative indicates location
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] "кімната" is feminine.
-   > Correct! кімната is feminine.
+- [x] Locative always uses a preposition (в, на, у)
+   > Correct!
 
-- [x] "офіс" is masculine.
-   > Correct! офіс is masculine.
+- [x] The main locative ending is -і
+   > Correct!
 
-- [ ] "школа" is masculine.
-   > Incorrect. школа is feminine.
+- [ ] "Книга на стіл" is correct
+   > Incorrect. Should be "Книга на столі" (locative)
 
-- [ ] "університет" is feminine.
-   > Incorrect. університет is masculine.
+- [x] "Я у школі" is correct
+   > Correct!
 
-- [ ] "магазин" is feminine.
-   > Incorrect. магазин is masculine.
+- [ ] "в" and "у" have different meanings
+   > Incorrect. They mean the same; usage depends on preceding sound
 
-- [ ] "ресторан" is feminine.
-   > Incorrect. ресторан is masculine.
+- [x] "на" is used for surfaces and events
+   > Correct!
 
+- [x] "в/у" is used for enclosed spaces
+   > Correct!
 
-## fill-in: Fill in the Blank
+- [ ] "Він в офіс" is correct for "He's in the office"
+   > Incorrect. Should be "Він в офісі"
 
-> Fill in the blanks with the correct word.
+- [x] Consonant changes: г→з, к→ц, х→с before -і
+   > Correct!
 
-1. вдома / ___ домі
-   > [!answer] в
-
-2. В / ___ (in, at)
-   > [!answer] У
-
-3. На ___ at)
-   > [!answer] (on
-
-
-
-## quiz: Meaning Check
-
-> Choose the correct answer.
-
-1. What does "ресторан" mean?
-   - [ ] office
-   - [ ] school
-   - [x] restaurant
-   - [ ] store
-   > "ресторан" means "restaurant"
-
-2. What does "школа" mean?
-   - [x] school
-   - [ ] restaurant
-   - [ ] office
-   - [ ] store
-   > "школа" means "school"
-
-3. What does "магазин" mean?
-   - [x] store
-   - [ ] office
-   - [ ] restaurant
-   - [ ] school
-   > "магазин" means "store"
-
-4. What does "офіс" mean?
-   - [ ] restaurant
-   - [ ] store
-   - [x] office
-   - [ ] school
-   > "офіс" means "office"
-
-5. What does "вулиця" mean?
-   - [ ] store
-   - [x] street
-   - [ ] restaurant
-   - [ ] school
-   > "вулиця" means "street"
-
-6. What does "станція" mean?
-   - [ ] restaurant
-   - [ ] store
-   - [ ] school
-   - [x] station
-   > "станція" means "station"
-
-
-
-## unjumble: Word Order
-
-> Put the words in the correct order to form a sentence.
-
-1. / / вдома / домі / в
-   > [!answer] вдома / в домі
-   > (home / in the house)
-
-2. (in / В / У / at) / /
-   > [!answer] В / У (in, at)
-   > (used for enclosed spaces:)
-
-3. at) / На / (on
-   > [!answer] На (on, at)
-   > (used for surfaces and open places:)
-
-4. nouns: / -у / Common
-   > [!answer] Common -у nouns:
-   > (дім → в/у дом**у** (at home))
-
+- [x] "Я живу в Києві" is correct
+   > Correct!
 
 ---
 

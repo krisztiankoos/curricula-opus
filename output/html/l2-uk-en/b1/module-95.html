@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -341,6 +366,8 @@ footer {
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
       
+      <button class="nav-tab" data-section="fill">Fill</button>
+      
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -350,29 +377,32 @@ footer {
       <div class="lesson-header">
         <span class="level-badge">B1 · B1.1</span>
         <h2 style="font-size:2rem;margin:0.5rem 0">Abstract Concepts I</h2>
-        <p style="color:var(--text-muted)">Ideas, Problems, and Solutions</p>
+        <p style="color:var(--text-muted)">Ідеї, проблеми та рішення</p>
       </div>
       
-    <div class="card section-content">
-      <h3>Зміст уроку | Lesson Content</h3>
-      <div class="md-content"><h2 id="warmup">warm-up | Розминка</h2>
-<h3 id="beyondtheconcrete">Абстрактне мислення | Beyond the Concrete</h3>
-<p>На рівні A2 ви вивчили конкретну лексику: їжу, місця, предмети.</p>
-<p>At A2, you learned concrete vocabulary: food, places, objects.</p>
-<p>На рівні B1 потрібна <strong>абстрактна лексика</strong> — слова для речей, яких не можна торкнутися:</p>
-<p>At B1, you need <strong>abstract vocabulary</strong> — words for things you can't touch:</p>
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">Warm-up</h2>
+<h3 id="beyondtheconcrete">Beyond the Concrete</h3>
+<p>At A2 level, you learned concrete vocabulary: food, places, objects. Now it's time for words you can't see or touch — <strong>abstract vocabulary</strong>.</p>
+<p>Without abstract words, it's impossible to:</p>
 <ul>
-<li>Ідеї та думки | Ideas and thoughts</li>
-<li>Проблеми та рішення | Problems and solutions</li>
-<li>Причини та результати | Reasons and results</li>
+<li>Discuss <strong>ideas</strong> and <strong>thoughts</strong></li>
+<li>Analyze <strong>problems</strong> and <strong>solutions</strong></li>
+<li>Explain <strong>causes</strong> and <strong>consequences</strong></li>
 </ul>
-<h2 id="presentation">presentation | Презентація</h2>
-<h3 id="ideasandthoughts">Ідеї та думки | Ideas and Thoughts</h3>
+<p>This is the language of thinking. And this is what distinguishes B1 level from A2.</p>
+<blockquote>
+  <p><strong>Did you know?</strong></p>
+  <p>Most abstract nouns in Ukrainian are <strong>feminine</strong> with the suffix <strong>-ість</strong> (відповідальність, можливість, складність) or <strong>neuter</strong> with the suffix <strong>-ння/-ття</strong> (рішення, поняття, питання). This isn't coincidental: these suffixes specialize in creating abstract concepts from adjectives and verbs.</p>
+</blockquote>
+<hr />
+<h2 id="presentation">Presentation</h2>
+<h3 id="ideasandthoughts">Ideas and Thoughts</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>IPA</th>
 <th>English</th>
 <th>Example</th>
 </tr>
@@ -380,68 +410,64 @@ footer {
 <tbody>
 <tr>
 <td>ідея</td>
-<td>/iˈdɛjɑ/</td>
 <td>idea</td>
-<td>У мене є ідея.</td>
+<td>У мене є ідея. — I have an idea.</td>
 </tr>
 <tr>
 <td>думка</td>
-<td>/ˈdumkɑ/</td>
 <td>thought, opinion</td>
-<td>Яка твоя думка?</td>
+<td>Яка твоя думка? — What's your opinion?</td>
 </tr>
 <tr>
 <td>поняття</td>
-<td>/poˈnʲɑtʲːɑ/</td>
 <td>concept, notion</td>
-<td>Це складне поняття.</td>
+<td>Це складне поняття. — This is a complex concept.</td>
 </tr>
 <tr>
 <td>уявлення</td>
-<td>/ujɑvˈlɛnʲːɑ/</td>
 <td>idea, imagination</td>
-<td>Не маю уявлення.</td>
+<td>Не маю уявлення. — I have no idea.</td>
 </tr>
 <tr>
 <td>погляд</td>
-<td>/ˈpoɦlʲɑd/</td>
 <td>view, outlook</td>
-<td>Сучасний погляд на проблему.</td>
+<td>Сучасний погляд на проблему. — A modern view on the problem.</td>
 </tr>
 <tr>
 <td>точка зору</td>
-<td>/ˈtot͡ʃkɑ ˈzoru/</td>
 <td>point of view</td>
-<td>З моєї точки зору…</td>
+<td>З моєї точки зору… — From my point of view…</td>
 </tr>
 <tr>
 <td>припущення</td>
-<td>/prɪpuˈʃt͡ʃɛnʲːɑ/</td>
 <td>assumption</td>
-<td>Це лише припущення.</td>
+<td>Це лише припущення. — That's just an assumption.</td>
 </tr>
 <tr>
 <td>висновок</td>
-<td>/ˈvɪsnovok/</td>
 <td>conclusion</td>
-<td>Який твій висновок?</td>
+<td>Який твій висновок? — What's your conclusion?</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Usage examples:</strong></p>
 <ul>
-<li>У мене є <strong>ідея</strong>, як це зробити. - I have an idea how to do this.</li>
-<li>Яка твоя <strong>думка</strong> з цього приводу? - What's your opinion on this?</li>
-<li>Я не маю <strong>уявлення</strong>, що робити. - I have no idea what to do.</li>
-<li>З <strong>моєї точки зору</strong>, це неправильно. - From my point of view, this is wrong.</li>
-<li>Ми <strong>прийшли до висновку</strong>, що… - We came to the conclusion that…</li>
+<li>У мене є <strong>ідея</strong>, як це зробити. — I have an idea how to do this.</li>
+<li>Яка твоя <strong>думка</strong> з цього приводу? — What's your opinion on this?</li>
+<li>Я не маю <strong>уявлення</strong>, що робити. — I have no idea what to do.</li>
+<li>З <strong>моєї точки зору</strong>, це неправильно. — From my point of view, this is wrong.</li>
+<li>Ми <strong>прийшли до висновку</strong>, що… — We came to the conclusion that…</li>
 </ul>
-<h3 id="problemsanddifficulties">Проблеми та труднощі | Problems and Difficulties</h3>
+<blockquote>
+  <p><strong>Myth vs Fact</strong></p>
+  <p><strong>Myth:</strong> "'Думка' and 'ідея' are synonyms."</p>
+  <p><strong>Fact:</strong> These words have different nuances. <strong>Думка</strong> is your <strong>position</strong> or <strong>impression</strong> (Яка твоя думка? = What's your opinion?). <strong>Ідея</strong> is a <strong>proposal</strong> or <strong>concept</strong> (У мене є ідея! = I have an idea/plan!). In Ukrainian, this difference is more important than in English.</p>
+</blockquote>
+<h3 id="problemsanddifficulties">Problems and Difficulties</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>IPA</th>
 <th>English</th>
 <th>Example</th>
 </tr>
@@ -449,68 +475,63 @@ footer {
 <tbody>
 <tr>
 <td>проблема</td>
-<td>/probˈlɛmɑ/</td>
 <td>problem</td>
-<td>Це серйозна проблема.</td>
+<td>Це серйозна проблема. — This is a serious problem.</td>
 </tr>
 <tr>
 <td>питання</td>
-<td>/pɪˈtɑnʲːɑ/</td>
 <td>question, issue</td>
-<td>Це важливе питання.</td>
+<td>Це важливе питання. — This is an important issue.</td>
 </tr>
 <tr>
 <td>труднощі</td>
-<td>/trudˈnoʃt͡ʃʲi/</td>
 <td>difficulties</td>
-<td>Я маю труднощі з цим.</td>
+<td>Я маю труднощі з цим. — I have difficulties with this.</td>
 </tr>
 <tr>
 <td>перешкода</td>
-<td>/pɛrɛˈʃkodɑ/</td>
 <td>obstacle</td>
-<td>Яка головна перешкода?</td>
+<td>Яка головна перешкода? — What's the main obstacle?</td>
 </tr>
 <tr>
 <td>складність</td>
-<td>/sklɑdˈnʲistʲ/</td>
 <td>complexity</td>
-<td>У чому складність?</td>
+<td>У чому складність? — What's the complexity?</td>
 </tr>
 <tr>
 <td>недолік</td>
-<td>/nɛdoˈlʲik/</td>
 <td>shortcoming</td>
-<td>Це єдиний недолік.</td>
+<td>Це єдиний недолік. — This is the only shortcoming.</td>
 </tr>
 <tr>
 <td>помилка</td>
-<td>/poˈmɪlkɑ/</td>
 <td>mistake, error</td>
-<td>Я зробив помилку.</td>
+<td>Я зробив помилку. — I made a mistake.</td>
 </tr>
 <tr>
 <td>невдача</td>
-<td>/nɛvˈdɑt͡ʃɑ/</td>
 <td>failure</td>
-<td>Невдача — це урок.</td>
+<td>Невдача — це урок. — Failure is a lesson.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Usage examples:</strong></p>
 <ul>
-<li>Яка <strong>проблема</strong>? - What's the problem?</li>
-<li>Це не <strong>питання</strong> грошей. - It's not a question of money.</li>
-<li>Ми зіткнулися з <strong>труднощами</strong>. - We encountered difficulties.</li>
-<li>Головна <strong>перешкода</strong> — брак часу. - The main obstacle is lack of time.</li>
-<li>У цьому плані є один <strong>недолік</strong>. - This plan has one shortcoming.</li>
+<li>Яка <strong>проблема</strong>? — What's the problem?</li>
+<li>Це не <strong>питання</strong> грошей. — It's not a question of money.</li>
+<li>Ми зіткнулися з <strong>труднощами</strong>. — We encountered difficulties.</li>
+<li>Головна <strong>перешкода</strong> — брак часу. — The main obstacle is lack of time.</li>
+<li>У цьому плані є один <strong>недолік</strong>. — This plan has one shortcoming.</li>
 </ul>
-<h3 id="solutionsandresults">Рішення та результати | Solutions and Results</h3>
+<blockquote>
+  <p><strong>Did you know?</strong></p>
+  <p>The word <strong>"питання"</strong> in Ukrainian has a broader meaning than English "question." It can mean both "question" and "matter, issue" (питання безпеки = security issue). This is a calque from German "Frage" and Latin "quaestio," which have the same dual meaning.</p>
+</blockquote>
+<h3 id="solutionsandresults">Solutions and Results</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>IPA</th>
 <th>English</th>
 <th>Example</th>
 </tr>
@@ -518,68 +539,59 @@ footer {
 <tbody>
 <tr>
 <td>рішення</td>
-<td>/rʲiˈʃɛnʲːɑ/</td>
 <td>decision, solution</td>
-<td>Це правильне рішення.</td>
+<td>Це правильне рішення. — This is the right decision.</td>
 </tr>
 <tr>
 <td>вирішення</td>
-<td>/vɪrʲiˈʃɛnʲːɑ/</td>
 <td>solving, resolution</td>
-<td>Вирішення проблеми.</td>
+<td>Вирішення проблеми. — Solving the problem.</td>
 </tr>
 <tr>
 <td>вихід</td>
-<td>/ˈvɪxʲid/</td>
 <td>way out, exit</td>
-<td>Завжди є вихід.</td>
+<td>Завжди є вихід. — There's always a way out.</td>
 </tr>
 <tr>
 <td>результат</td>
-<td>/rɛzulʲˈtɑt/</td>
 <td>result</td>
-<td>Який результат?</td>
+<td>Який результат? — What's the result?</td>
 </tr>
 <tr>
 <td>наслідок</td>
-<td>/ˈnɑslʲidok/</td>
 <td>consequence</td>
-<td>Це наслідок помилки.</td>
+<td>Це наслідок помилки. — This is a consequence of the mistake.</td>
 </tr>
 <tr>
 <td>успіх</td>
-<td>/uˈspʲix/</td>
 <td>success</td>
-<td>Бажаю успіху!</td>
+<td>Бажаю успіху! — I wish you success!</td>
 </tr>
 <tr>
 <td>досягнення</td>
-<td>/dosʲɑɦˈnɛnʲːɑ/</td>
 <td>achievement</td>
-<td>Це велике досягнення.</td>
+<td>Це велике досягнення. — This is a great achievement.</td>
 </tr>
 <tr>
 <td>прогрес</td>
-<td>/proɦˈrɛs/</td>
 <td>progress</td>
-<td>Є прогрес.</td>
+<td>Є прогрес. — There's progress.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Usage examples:</strong></p>
 <ul>
-<li>Ми знайшли <strong>рішення</strong>. - We found a solution.</li>
-<li><strong>Вирішення</strong> цієї проблеми займе час. - Solving this problem will take time.</li>
-<li>Завжди є <strong>вихід</strong>. - There's always a way out.</li>
-<li><strong>Результат</strong> перевершив очікування. - The result exceeded expectations.</li>
-<li>Це <strong>наслідок</strong> недбалості. - This is a consequence of negligence.</li>
+<li>Ми знайшли <strong>рішення</strong>. — We found a solution.</li>
+<li><strong>Вирішення</strong> цієї проблеми займе час. — Solving this problem will take time.</li>
+<li>Завжди є <strong>вихід</strong>. — There's always a way out.</li>
+<li><strong>Результат</strong> перевершив очікування. — The result exceeded expectations.</li>
+<li>Це <strong>наслідок</strong> недбалості. — This is a consequence of negligence.</li>
 </ul>
-<h3 id="reasonsandcauses">Причини | Reasons and Causes</h3>
+<h3 id="reasonsandcauses">Reasons and Causes</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>IPA</th>
 <th>English</th>
 <th>Example</th>
 </tr>
@@ -587,56 +599,53 @@ footer {
 <tbody>
 <tr>
 <td>причина</td>
-<td>/prɪˈt͡ʃɪnɑ/</td>
 <td>reason, cause</td>
-<td>Яка причина?</td>
+<td>Яка причина? — What's the reason?</td>
 </tr>
 <tr>
 <td>підстава</td>
-<td>/pʲidˈstɑvɑ/</td>
 <td>basis, grounds</td>
-<td>На якій підставі?</td>
+<td>На якій підставі? — On what grounds?</td>
 </tr>
 <tr>
 <td>мотив</td>
-<td>/moˈtɪv/</td>
 <td>motive</td>
-<td>Який його мотив?</td>
+<td>Який його мотив? — What's his motive?</td>
 </tr>
 <tr>
 <td>мета</td>
-<td>/mɛˈtɑ/</td>
 <td>goal, purpose</td>
-<td>Яка твоя мета?</td>
+<td>Яка твоя мета? — What's your goal?</td>
 </tr>
 <tr>
 <td>сенс</td>
-<td>/sɛns/</td>
 <td>sense, meaning</td>
-<td>У цьому немає сенсу.</td>
+<td>У цьому немає сенсу. — There's no point in this.</td>
 </tr>
 <tr>
 <td>значення</td>
-<td>/znɑˈt͡ʃɛnʲːɑ/</td>
 <td>meaning, importance</td>
-<td>Це не має значення.</td>
+<td>Це не має значення. — It doesn't matter.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Usage examples:</strong></p>
 <ul>
-<li><strong>Причина</strong> проблеми — недосвідченість. - The reason for the problem is inexperience.</li>
-<li>На якій <strong>підставі</strong> ви це стверджуєте? - On what grounds do you claim this?</li>
-<li>Яка <strong>мета</strong> цього проєкту? - What's the goal of this project?</li>
-<li>У цьому немає <strong>сенсу</strong>. - There's no point in this.</li>
-<li>Це не має <strong>значення</strong>. - It doesn't matter.</li>
+<li><strong>Причина</strong> проблеми — недосвідченість. — The reason for the problem is inexperience.</li>
+<li>На якій <strong>підставі</strong> ви це стверджуєте? — On what grounds do you claim this?</li>
+<li>Яка <strong>мета</strong> цього проєкту? — What's the goal of this project?</li>
+<li>У цьому немає <strong>сенсу</strong>. — There's no point in this.</li>
+<li>Це не має <strong>значення</strong>. — It doesn't matter.</li>
 </ul>
-<h3 id="verbsforabstractthinking">Дієслова абстрактного мислення | Verbs for Abstract Thinking</h3>
+<blockquote>
+  <p><strong>Did you know?</strong></p>
+  <p>The expression "це не має значення" is a literal calque from German "das hat keine Bedeutung." Interestingly, Ukrainian, Russian, and German all have the same way of expressing "it doesn't matter" through "to have/not have meaning." English uses the simpler "it matters/doesn't matter."</p>
+</blockquote>
+<h3 id="verbsofabstractthinking">Verbs of Abstract Thinking</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>IPA</th>
 <th>English</th>
 <th>Aspect</th>
 </tr>
@@ -644,55 +653,31 @@ footer {
 <tbody>
 <tr>
 <td>думати</td>
-<td>/ˈdumɑtɪ/</td>
 <td>to think</td>
 <td>impf</td>
 </tr>
 <tr>
 <td>вважати</td>
-<td>/vvɑˈʒɑtɪ/</td>
 <td>to consider, think</td>
 <td>impf</td>
 </tr>
 <tr>
-<td>припускати</td>
-<td>/prɪpusˈkɑtɪ/</td>
+<td>припускати / припустити</td>
 <td>to assume</td>
-<td>impf</td>
+<td>impf/pf</td>
 </tr>
 <tr>
-<td>припустити</td>
-<td>/prɪpusˈtɪtɪ/</td>
-<td>to assume</td>
-<td>pf</td>
-</tr>
-<tr>
-<td>робити висновок</td>
-<td>-</td>
+<td>робити / зробити висновок</td>
 <td>to conclude</td>
-<td>impf</td>
+<td>impf/pf</td>
 </tr>
 <tr>
-<td>зробити висновок</td>
-<td>-</td>
-<td>to conclude</td>
-<td>pf</td>
-</tr>
-<tr>
-<td>вирішувати</td>
-<td>/vɪrʲiˈʃuvɑtɪ/</td>
+<td>вирішувати / вирішити</td>
 <td>to solve, decide</td>
-<td>impf</td>
-</tr>
-<tr>
-<td>вирішити</td>
-<td>/vɪˈrʲiʃɪtɪ/</td>
-<td>to solve, decide</td>
-<td>pf</td>
+<td>impf/pf</td>
 </tr>
 <tr>
 <td>сумніватися</td>
-<td>/sumnʲiˈvɑtɪsʲɑ/</td>
 <td>to doubt</td>
 <td>impf</td>
 </tr>
@@ -700,13 +685,13 @@ footer {
 </table>
 <p><strong>Usage examples:</strong></p>
 <ul>
-<li>Я <strong>вважаю</strong>, що це правильно. - I think/consider this is right.</li>
-<li><strong>Припускаю</strong>, що він спізниться. - I assume he'll be late.</li>
-<li>Я <strong>сумніваюся</strong> в цьому. - I doubt this.</li>
+<li>Я <strong>вважаю</strong>, що це правильно. — I think/consider this is right.</li>
+<li><strong>Припускаю</strong>, що він спізниться. — I assume he'll be late.</li>
+<li>Я <strong>сумніваюся</strong> в цьому. — I doubt this.</li>
 </ul>
-<h2 id="practice">practice | Практика</h2>
-<h3 id="categorizewords">Розподіліть слова | Categorize Words</h3>
-<p>Sort these words into categories:</p>
+<hr />
+<h2 id="practice">Practice</h2>
+<h3 id="sortwordsbycategories">Sort Words by Categories</h3>
 <p><strong>Words:</strong> проблема, рішення, ідея, причина, результат, труднощі, висновок, мета</p>
 <table>
 <thead>
@@ -734,7 +719,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h3 id="completesentences">Доповніть речення | Complete Sentences</h3>
+<h3 id="completethesentences">Complete the Sentences</h3>
 <ol>
 <li><p>Яка головна ___ цієї проблеми? (reason)</p></li>
 </ol>
@@ -759,40 +744,40 @@ footer {
 <li><p>Яка твоя ___ з цього приводу? (opinion)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer"><strong>думка</strong></div></div>
-<h3 id="formsentences">Складіть речення | Form Sentences</h3>
+<h3 id="formsentences">Form Sentences</h3>
 <p>Create sentences using:</p>
 <ol>
-<li><strong>причина</strong> — Причина моєї відсутності — хвороба.</li>
-<li><strong>рішення</strong> — Це важке рішення.</li>
-<li><strong>труднощі</strong> — Ми зіткнулися з труднощами.</li>
-<li><strong>мета</strong> — Моя мета — вивчити українську.</li>
-<li><strong>висновок</strong> — Який твій висновок?</li>
+<li><strong>причина</strong> — Причина моєї відсутності — хвороба. (The reason for my absence is illness.)</li>
+<li><strong>рішення</strong> — Це важке рішення. (This is a difficult decision.)</li>
+<li><strong>труднощі</strong> — Ми зіткнулися з труднощами. (We encountered difficulties.)</li>
+<li><strong>мета</strong> — Моя мета — вивчити українську. (My goal is to learn Ukrainian.)</li>
+<li><strong>висновок</strong> — Який твій висновок? (What's your conclusion?)</li>
 </ol>
-<h3 id="discussionproblemsolving">Дискусія: Вирішення проблем | Discussion: Problem-Solving</h3>
+<h3 id="discussionproblemsolving">Discussion: Problem Solving</h3>
 <p>Discuss using abstract vocabulary:</p>
 <p><strong>Topic:</strong> Learning a new language</p>
 <ul>
-<li>Яка головна <strong>проблема</strong>?</li>
-<li>Які <strong>труднощі</strong> ви маєте?</li>
-<li>Яке <strong>рішення</strong> ви знайшли?</li>
-<li>Який ваш <strong>прогрес</strong>?</li>
+<li>Яка головна <strong>проблема</strong>? — What's the main problem?</li>
+<li>Які <strong>труднощі</strong> ви маєте? — What difficulties do you have?</li>
+<li>Яке <strong>рішення</strong> ви знайшли? — What solution did you find?</li>
+<li>Який ваш <strong>прогрес</strong>? — What's your progress?</li>
 </ul>
-<h2 id="production">production | Продукція</h2>
-<h3 id="describeaproblem">Опишіть проблему | Describe a Problem</h3>
-<p>Describe a problem you faced using:</p>
+<hr />
+<h2 id="production">Production</h2>
+<h3 id="describeaproblem">Describe a Problem</h3>
+<p>Describe a problem you've encountered using:</p>
 <ul>
 <li>проблема, причина, труднощі, рішення, результат</li>
 </ul>
 <p><strong>Example:</strong><br />
-Минулого року я мав <strong>проблему</strong> з роботою. <strong>Причина</strong> була в тому, що компанія закрилася. Я мав <strong>труднощі</strong> з пошуком нової роботи. Але я знайшов <strong>рішення</strong> — почав вивчати нові навички. <strong>Результат</strong> — я знайшов кращу роботу.</p>
-<h3 id="expressyourideas">Висловіть свої думки | Express Your Ideas</h3>
+Минулого року я мав <strong>проблему</strong> з роботою. — Last year I had a problem with work. <strong>Причина</strong> була в тому, що компанія закрилася. — The reason was that the company closed. Я мав <strong>труднощі</strong> з пошуком нової роботи. — I had difficulties finding a new job. Але я знайшов <strong>рішення</strong> — почав вивчати нові навички. — But I found a solution — I started learning new skills. <strong>Результат</strong> — я знайшов кращу роботу. — The result — I found a better job.</p>
+<h3 id="expressyourthoughts">Express Your Thoughts</h3>
 <p>Use abstract vocabulary to discuss:</p>
 <ul>
-<li>Ваша <strong>точка зору</strong> на вивчення мов</li>
-<li>Ваші <strong>досягнення</strong> в українській</li>
-<li>Ваша <strong>мета</strong> на цей рік</li>
+<li>Ваша <strong>точка зору</strong> на вивчення мов — Your point of view on learning languages</li>
+<li>Ваші <strong>досягнення</strong> в українській — Your achievements in Ukrainian</li>
+<li>Ваша <strong>мета</strong> на цей рік — Your goal for this year</li>
 </ul>
-<hr />
 <hr />
 <hr />
 <hr /></div>
@@ -801,30 +786,25 @@ footer {
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><h2 id="keyabstractvocabulary">Key Abstract Vocabulary</h2>
-<h3 id="ideasthoughts">Ideas &amp; Thoughts</h3>
+<h3 id="ideasandthoughts">Ideas and Thoughts</h3>
 <p>ідея, думка, поняття, уявлення, погляд, точка зору</p>
 <h3 id="problems">Problems</h3>
 <p>проблема, питання, труднощі, перешкода, складність, недолік</p>
 <h3 id="solutions">Solutions</h3>
 <p>рішення, вирішення, вихід, результат, успіх, досягнення</p>
-<h3 id="reasons">Reasons</h3>
+<h3 id="causes">Causes</h3>
 <p>причина, підстава, мотив, мета, сенс, значення</p>
 <h2 id="usefulexpressions">Useful Expressions</h2>
 <ul>
-<li>Яка твоя думка? - What do you think?</li>
-<li>З моєї точки зору… - From my point of view…</li>
-<li>У мене немає уявлення. - I have no idea.</li>
-<li>Завжди є вихід. - There's always a way out.</li>
-<li>Це не має значення. - It doesn't matter.</li>
+<li>Яка твоя думка? — What do you think?</li>
+<li>З моєї точки зору… — From my point of view…</li>
+<li>У мене немає уявлення. — I have no idea.</li>
+<li>Завжди є вихід. — There's always a way out.</li>
+<li>Це не має значення. — It doesn't matter.</li>
 </ul>
 <blockquote>
-  <p><strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Abstract vocabulary is essential for B1</li>
-  <li>These words let you discuss ideas, problems, solutions</li>
-  <li>Many abstract nouns are neuter (поняття, питання, рішення)</li>
-  <li>Practice using these in complex sentences</li>
-  </ul>
+  <p><strong>Key Point</strong></p>
+  <p>Abstract vocabulary is the foundation of B1 level. These words allow you to discuss <strong>ideas</strong>, <strong>problems</strong>, and <strong>solutions</strong>. Most abstract nouns are neuter (поняття, питання, рішення) or feminine with the suffix -ість. Practice them in complex sentences — this is the path to fluent speech!</p>
 </blockquote></div>
     </div>
   
@@ -838,7 +818,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/4</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">проблема</div><div class="match-item" data-pair="1">труднощі</div><div class="match-item" data-pair="2">перешкода</div><div class="match-item" data-pair="3">недолік</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">успіх</div><div class="match-item" data-pair="1">вирішення</div><div class="match-item" data-pair="0">рішення</div><div class="match-item" data-pair="2">вихід</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">рішення</div><div class="match-item" data-pair="1">вирішення</div><div class="match-item" data-pair="2">вихід</div><div class="match-item" data-pair="3">успіх</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -848,13 +828,21 @@ footer {
       <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('fill')">Next →</button></div>
+    </div></section>
+    
+    
+    <section id="fill" class="section"><div class="card"><h3>Complete the Story</h3>
+      <div class="score-display"><span class="score"><span id="fill-score">0</span>/6</span></div>
+      <div id="fill-container" class="fill-container"></div>
+      <div class="completion-message" id="fill-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetFill()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Нові слова (13)</h3>
+        <h3>Словник (57)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -864,21 +852,11 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">ідея</td><td class="vocab-ipa">/iˈdɛjɑ/</td><td class="vocab-en">idea</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">поняття</td><td class="vocab-ipa">/poˈnʲɑtʲːɑ/</td><td class="vocab-en">concept</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">уявлення</td><td class="vocab-ipa">/ujɑvˈlɛnʲːɑ/</td><td class="vocab-en">imagination, idea</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-ipa">/ˈpoɦlʲɑd/</td><td class="vocab-en">view</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">точка зору</td><td class="vocab-ipa">/ˈtot͡ʃkɑ ˈzoru/</td><td class="vocab-en">point of view</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">проблема</td><td class="vocab-ipa">/probˈlɛmɑ/</td><td class="vocab-en">problem</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">труднощі</td><td class="vocab-ipa">/trudˈnoʃt͡ʃʲi/</td><td class="vocab-en">difficulties</td><td class="vocab-note">pl</td></tr><tr><td class="vocab-uk">перешкода</td><td class="vocab-ipa">/pɛrɛˈʃkodɑ/</td><td class="vocab-en">obstacle</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">рішення</td><td class="vocab-ipa">/rʲiˈʃɛnʲːɑ/</td><td class="vocab-en">decision, solution</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">наслідок</td><td class="vocab-ipa">/ˈnɑslʲidok/</td><td class="vocab-en">consequence</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">причина</td><td class="vocab-ipa">/prɪˈt͡ʃɪnɑ/</td><td class="vocab-en">reason, cause</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">мета</td><td class="vocab-ipa">/mɛˈtɑ/</td><td class="vocab-en">goal, purpose</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">сенс</td><td class="vocab-ipa">/sɛns/</td><td class="vocab-en">sense, meaning</td><td class="vocab-note">m</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">ідея</td><td class="vocab-ipa">/iˈdɛjɑ/</td><td class="vocab-en">idea</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">думка</td><td class="vocab-ipa">/ˈdumkɑ/</td><td class="vocab-en">thought, opinion</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">поняття</td><td class="vocab-ipa">/poˈnʲɑtʲːɑ/</td><td class="vocab-en">concept, notion</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">уявлення</td><td class="vocab-ipa">/ujɑvˈlɛnʲːɑ/</td><td class="vocab-en">imagination, idea</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-ipa">/ˈpoɦlʲɑd/</td><td class="vocab-en">view, outlook</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">точка зору</td><td class="vocab-ipa">/ˈtot͡ʃkɑ ˈzoru/</td><td class="vocab-en">point of view</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">припущення</td><td class="vocab-ipa">/prɪpuˈʃt͡ʃɛnʲɑ/</td><td class="vocab-en">assumption</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">висновок</td><td class="vocab-ipa">/ˈvɪsnovok/</td><td class="vocab-en">conclusion</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">проблема</td><td class="vocab-ipa">/probˈlɛmɑ/</td><td class="vocab-en">problem</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">питання</td><td class="vocab-ipa">/pɪˈtɑnʲːɑ/</td><td class="vocab-en">question, issue</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">труднощі</td><td class="vocab-ipa">/trudˈnoʃt͡ʃʲi/</td><td class="vocab-en">difficulties</td><td class="vocab-note">pl</td></tr><tr><td class="vocab-uk">перешкода</td><td class="vocab-ipa">/pɛrɛˈʃkodɑ/</td><td class="vocab-en">obstacle</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">складність</td><td class="vocab-ipa">/sklɑdˈnʲistʲ/</td><td class="vocab-en">complexity</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">недолік</td><td class="vocab-ipa">/nɛdoˈlʲik/</td><td class="vocab-en">shortcoming</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">помилка</td><td class="vocab-ipa">/poˈmɪlkɑ/</td><td class="vocab-en">mistake, error</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">невдача</td><td class="vocab-ipa">/nɛvˈdɑt͡ʃɑ/</td><td class="vocab-en">failure</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">рішення</td><td class="vocab-ipa">/rʲiˈʃɛnʲːɑ/</td><td class="vocab-en">decision, solution</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">вирішення</td><td class="vocab-ipa">/vɪrʲiˈʃɛnʲːɑ/</td><td class="vocab-en">solving, resolution</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">вихід</td><td class="vocab-ipa">/ˈvɪxʲid/</td><td class="vocab-en">way out, exit</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">наслідок</td><td class="vocab-ipa">/ˈnɑslʲidok/</td><td class="vocab-en">consequence</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">успіх</td><td class="vocab-ipa">/uˈspʲix/</td><td class="vocab-en">success</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">досягнення</td><td class="vocab-ipa">/dosʲɑɦˈnɛnʲːɑ/</td><td class="vocab-en">achievement</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">прогрес</td><td class="vocab-ipa">/proɦˈrɛs/</td><td class="vocab-en">progress</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">причина</td><td class="vocab-ipa">/prɪˈt͡ʃɪnɑ/</td><td class="vocab-en">reason, cause</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">підстава</td><td class="vocab-ipa">/pʲidˈstɑvɑ/</td><td class="vocab-en">basis, grounds</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">мотив</td><td class="vocab-ipa">/moˈtɪv/</td><td class="vocab-en">motive</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">мета</td><td class="vocab-ipa">/mɛˈtɑ/</td><td class="vocab-en">goal, purpose</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">сенс</td><td class="vocab-ipa">/sɛns/</td><td class="vocab-en">sense, meaning</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">значення</td><td class="vocab-ipa">/znɑˈt͡ʃɛnʲːɑ/</td><td class="vocab-en">meaning, importance</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">думати</td><td class="vocab-ipa">/ˈdumɑtɪ/</td><td class="vocab-en">to think</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-ipa">/vvɑˈʒɑtɪ/</td><td class="vocab-en">to consider, think</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">припускати</td><td class="vocab-ipa">/prɪpusˈkɑtɪ/</td><td class="vocab-en">to assume</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">припустити</td><td class="vocab-ipa">/prɪpusˈtɪtɪ/</td><td class="vocab-en">to assume</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вирішувати</td><td class="vocab-ipa">/vɪrʲiˈʃuvɑtɪ/</td><td class="vocab-en">to solve, decide</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вирішити</td><td class="vocab-ipa">/vɪˈrʲiʃɪtɪ/</td><td class="vocab-en">to solve, decide</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">сумніватися</td><td class="vocab-ipa">/sumnʲiˈvɑtɪsʲɑ/</td><td class="vocab-en">to doubt</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">робити висновок</td><td class="vocab-ipa">/roˈbɪtɪ ˈvɪsnovok/</td><td class="vocab-en">to conclude</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">зробити висновок</td><td class="vocab-ipa">/zroˈbɪtɪ ˈvɪsnovok/</td><td class="vocab-en">to conclude</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">прийти до висновку</td><td class="vocab-ipa">/prɪjˈtɪ do ˈvɪsnovku/</td><td class="vocab-en">to come to a conclusion</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">зіткнутися з</td><td class="vocab-ipa">/zʲitkˈnutɪsʲɑ z/</td><td class="vocab-en">to encounter</td><td class="vocab-note">pf, + instr</td></tr><tr><td class="vocab-uk">стверджувати</td><td class="vocab-ipa">/stvɛrˈdʒuvɑtɪ/</td><td class="vocab-en">to claim, assert</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">перевершити</td><td class="vocab-ipa">/pɛrɛvɛrˈʃɪtɪ/</td><td class="vocab-en">to exceed</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">очікування</td><td class="vocab-ipa">/ot͡ʃʲikuˈvɑnʲːɑ/</td><td class="vocab-en">expectations</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">недбалість</td><td class="vocab-ipa">/nɛdˈbɑlʲistʲ/</td><td class="vocab-en">negligence</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">недосвідченість</td><td class="vocab-ipa">/nɛdosvʲidˈt͡ʃɛnʲistʲ/</td><td class="vocab-en">inexperience</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">відсутність</td><td class="vocab-ipa">/vʲidˈsutnʲistʲ/</td><td class="vocab-en">absence</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">брак</td><td class="vocab-ipa">/brɑk/</td><td class="vocab-en">lack</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">завдання</td><td class="vocab-ipa">/zɑvˈdɑnʲːɑ/</td><td class="vocab-en">task</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">навички</td><td class="vocab-ipa">/nɑˈvɪt͡ʃkɪ/</td><td class="vocab-en">skills</td><td class="vocab-note">pl</td></tr><tr><td class="vocab-uk">з цього приводу</td><td class="vocab-ipa">/z ˈt͡sʲoɦo ˈprɪvodu/</td><td class="vocab-en">on this matter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">серйозний</td><td class="vocab-ipa">/sɛrˈjoznɪj/</td><td class="vocab-en">serious</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">важливий</td><td class="vocab-ipa">/vɑʒˈlɪvɪj/</td><td class="vocab-en">important</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">головний</td><td class="vocab-ipa">/ɦolovˈnɪj/</td><td class="vocab-en">main</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сучасний</td><td class="vocab-ipa">/sut͡ʃɑsˈnɪj/</td><td class="vocab-en">modern, contemporary</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">абстрактний</td><td class="vocab-ipa">/ɑbstrɑktˈnɪj/</td><td class="vocab-en">abstract</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">конкретний</td><td class="vocab-ipa">/konkrɛtˈnɪj/</td><td class="vocab-en">concrete</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
       
-      <div class="card review-vocab">
-        <h3>Повторення (3)</h3>
-        <p class="review-note">Words from earlier modules for review</p>
-        <div class="vocab-table-container">
-          <table class="vocab-table">
-            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
-            <tbody><tr><td class="vocab-uk">думка</td><td class="vocab-module">Module 58</td></tr><tr><td class="vocab-uk">питання</td><td class="vocab-module">Module 63</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-module">Module 46</td></tr></tbody>
-          </table>
-        </div>
-      </div>
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -889,7 +867,9 @@ footer {
     const matchPairs = [{"left":"проблема","right":"рішення"},{"left":"труднощі","right":"вирішення"},{"left":"перешкода","right":"вихід"},{"left":"недолік","right":"успіх"}];
     const quizData = [{"question":"проблема","options":["problem","solution"],"correctIndex":0,"explanation":""},{"question":"рішення","options":["solution","reason"],"correctIndex":0,"explanation":""},{"question":"причина","options":["result","reason"],"correctIndex":1,"explanation":""},{"question":"висновок","options":["conclusion","question"],"correctIndex":0,"explanation":""},{"question":"мета","options":["meaning","goal"],"correctIndex":1,"explanation":""},{"question":"труднощі","options":["difficulties","achievements"],"correctIndex":0,"explanation":""}];
     const sortData = {};
-    const vocabData = [{"uk":"ідея","translit":"","en":"idea","note":"f"},{"uk":"поняття","translit":"","en":"concept","note":"n"},{"uk":"уявлення","translit":"","en":"imagination, idea","note":"n"},{"uk":"погляд","translit":"","en":"view","note":"m"},{"uk":"точка зору","translit":"","en":"point of view","note":"f"},{"uk":"проблема","translit":"","en":"problem","note":"f"},{"uk":"труднощі","translit":"","en":"difficulties","note":"pl"},{"uk":"перешкода","translit":"","en":"obstacle","note":"f"},{"uk":"рішення","translit":"","en":"decision, solution","note":"n"},{"uk":"наслідок","translit":"","en":"consequence","note":"m"},{"uk":"причина","translit":"","en":"reason, cause","note":"f"},{"uk":"мета","translit":"","en":"goal, purpose","note":"f"},{"uk":"сенс","translit":"","en":"sense, meaning","note":"m"}];
+    const fillData = {"items":[],"text":"Ми почали новий проєкт. Спочатку ми визначили ___ (goal). Потім виникли ___ (difficulties). Головна ___ (problem) — брак часу. ___ (Reason) — занадто багато завдань. Але ми знайшли ___ (solution). ___ (Result) перевершив очікування!","answers":["мету","труднощі","проблема","причина","рішення/вихід","результат"]};
+    const orderData = {"items":[],"correctOrder":[]};
+    const vocabData = [{"uk":"ідея","translit":"","en":"idea","note":"f"},{"uk":"думка","translit":"","en":"thought, opinion","note":"f"},{"uk":"поняття","translit":"","en":"concept, notion","note":"n"},{"uk":"уявлення","translit":"","en":"imagination, idea","note":"n"},{"uk":"погляд","translit":"","en":"view, outlook","note":"m"},{"uk":"точка зору","translit":"","en":"point of view","note":"f"},{"uk":"припущення","translit":"","en":"assumption","note":"n"},{"uk":"висновок","translit":"","en":"conclusion","note":"m"},{"uk":"проблема","translit":"","en":"problem","note":"f"},{"uk":"питання","translit":"","en":"question, issue","note":"n"},{"uk":"труднощі","translit":"","en":"difficulties","note":"pl"},{"uk":"перешкода","translit":"","en":"obstacle","note":"f"},{"uk":"складність","translit":"","en":"complexity","note":"f"},{"uk":"недолік","translit":"","en":"shortcoming","note":"m"},{"uk":"помилка","translit":"","en":"mistake, error","note":"f"},{"uk":"невдача","translit":"","en":"failure","note":"f"},{"uk":"рішення","translit":"","en":"decision, solution","note":"n"},{"uk":"вирішення","translit":"","en":"solving, resolution","note":"n"},{"uk":"вихід","translit":"","en":"way out, exit","note":"m"},{"uk":"результат","translit":"","en":"result","note":"m"},{"uk":"наслідок","translit":"","en":"consequence","note":"m"},{"uk":"успіх","translit":"","en":"success","note":"m"},{"uk":"досягнення","translit":"","en":"achievement","note":"n"},{"uk":"прогрес","translit":"","en":"progress","note":"m"},{"uk":"причина","translit":"","en":"reason, cause","note":"f"},{"uk":"підстава","translit":"","en":"basis, grounds","note":"f"},{"uk":"мотив","translit":"","en":"motive","note":"m"},{"uk":"мета","translit":"","en":"goal, purpose","note":"f"},{"uk":"сенс","translit":"","en":"sense, meaning","note":"m"},{"uk":"значення","translit":"","en":"meaning, importance","note":"n"},{"uk":"думати","translit":"","en":"to think","note":"impf"},{"uk":"вважати","translit":"","en":"to consider, think","note":"impf"},{"uk":"припускати","translit":"","en":"to assume","note":"impf"},{"uk":"припустити","translit":"","en":"to assume","note":"pf"},{"uk":"вирішувати","translit":"","en":"to solve, decide","note":"impf"},{"uk":"вирішити","translit":"","en":"to solve, decide","note":"pf"},{"uk":"сумніватися","translit":"","en":"to doubt","note":"impf"},{"uk":"робити висновок","translit":"","en":"to conclude","note":"impf"},{"uk":"зробити висновок","translit":"","en":"to conclude","note":"pf"},{"uk":"прийти до висновку","translit":"","en":"to come to a conclusion","note":"pf"},{"uk":"зіткнутися з","translit":"","en":"to encounter","note":"pf, + instr"},{"uk":"стверджувати","translit":"","en":"to claim, assert","note":"impf"},{"uk":"перевершити","translit":"","en":"to exceed","note":"pf"},{"uk":"очікування","translit":"","en":"expectations","note":"n"},{"uk":"недбалість","translit":"","en":"negligence","note":"f"},{"uk":"недосвідченість","translit":"","en":"inexperience","note":"f"},{"uk":"відсутність","translit":"","en":"absence","note":"f"},{"uk":"брак","translit":"","en":"lack","note":"m"},{"uk":"завдання","translit":"","en":"task","note":"n"},{"uk":"навички","translit":"","en":"skills","note":"pl"},{"uk":"з цього приводу","translit":"","en":"on this matter","note":""},{"uk":"серйозний","translit":"","en":"serious","note":""},{"uk":"важливий","translit":"","en":"important","note":""},{"uk":"головний","translit":"","en":"main","note":""},{"uk":"сучасний","translit":"","en":"modern, contemporary","note":""},{"uk":"абстрактний","translit":"","en":"abstract","note":""},{"uk":"конкретний","translit":"","en":"concrete","note":""}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -924,6 +904,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -1092,6 +1074,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -341,6 +366,8 @@ footer {
       <button class="nav-tab" data-section="match">Match</button>
       <button class="nav-tab" data-section="quiz">Quiz</button>
       <button class="nav-tab" data-section="sort">Sort</button>
+      
+      
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -355,73 +382,52 @@ footer {
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
+      <div class="md-content"><h2 id="warmup">Warm-up</h2>
 <h3 id="twowaystosayread">Two Ways to Say "Read!"</h3>
+<p>Imagine: you're giving a book to a friend.</p>
+<p><strong>Option 1:</strong> "<strong>Читай</strong>!" — Read! / Go ahead and read!<br />
+<strong>Option 2:</strong> "<strong>Прочитай</strong>!" — Read it! / Finish reading it!</p>
+<p>Both are commands to read. But they convey different things:</p>
 <ul>
-<li><strong>Читай!</strong> (imperfective) - Read! / Keep reading! / Start reading!</li>
-<li><strong>Прочитай!</strong> (perfective) - Read it! / Finish reading it!</li>
+<li><strong>Читай</strong> — invitation, process: "Here's a book, feel free to read"</li>
+<li><strong>Прочитай</strong> — instruction, result: "Read this book to the end"</li>
 </ul>
-<p>Both are commands to read, but they give different instructions.</p>
-<hr />
+<p>It's like the difference between "Help yourself to some food" and "Eat this specific dish!"</p>
 <blockquote>
-  <p><strong>🔑 KEY RULE: IMPERATIVE ASPECT = YOUR INTENTION</strong></p>
-  <table>
-  <thead>
-  <tr>
-  <th>Aspect</th>
-  <th>Meaning</th>
-  <th>Example</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><strong>Imperfective</strong></td>
-  <td>Invitation, general suggestion</td>
-  <td><strong>Читай!</strong> = Go ahead and read</td>
-  </tr>
-  <tr>
-  <td><strong>Perfective</strong></td>
-  <td>Specific instruction, get it done</td>
-  <td><strong>Прочитай!</strong> = Read this (and finish it)</td>
-  </tr>
-  </tbody>
-  </table>
-  <p><strong>For negative commands:</strong> Almost always <strong>imperfective</strong></p>
-  <ul>
-  <li><strong>Не чіпай!</strong> = Don't touch! (general prohibition)</li>
-  <li><strong>Не забудь!</strong> = Don't forget! (exception - specific warning)</li>
-  </ul>
+  <p><strong>Did you know?</strong></p>
+  <p>In English, the command "Read!" is neutral — context determines whether it's an invitation or instruction. In Ukrainian, <strong>the verb form itself</strong> shows your intention. "Читай" sounds warmer, more hospitable. "Прочитай" — more specific, businesslike. Native Ukrainian speakers feel this difference intuitively.</p>
 </blockquote>
 <hr />
-<h2 id="presentation">presentation</h2>
-<h3 id="imperativeformationreview">Imperative Formation Review</h3>
+<h2 id="presentation">Presentation</h2>
+<h3 id="imperativeformation">Imperative Formation</h3>
+<p>The <strong>imperative mood</strong> (in Ukrainian: <strong>наказовий спосіб</strong>) is how you give commands.</p>
 <p><strong>Imperfective imperatives:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Infinitive</th>
-<th>Ти</th>
-<th>Ви</th>
+<th>Ти (you informal)</th>
+<th>Ви (you formal/plural)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>читати</td>
+<td>читати (to read)</td>
 <td>читай</td>
 <td>читайте</td>
 </tr>
 <tr>
-<td>писати</td>
+<td>писати (to write)</td>
 <td>пиши</td>
 <td>пишіть</td>
 </tr>
 <tr>
-<td>робити</td>
+<td>робити (to do)</td>
 <td>роби</td>
 <td>робіть</td>
 </tr>
 <tr>
-<td>говорити</td>
+<td>говорити (to speak)</td>
 <td>говори</td>
 <td>говоріть</td>
 </tr>
@@ -432,28 +438,28 @@ footer {
 <thead>
 <tr>
 <th>Infinitive</th>
-<th>Ти</th>
-<th>Ви</th>
+<th>Ти (you informal)</th>
+<th>Ви (you formal/plural)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>прочитати</td>
+<td>прочитати (to read/finish)</td>
 <td>прочитай</td>
 <td>прочитайте</td>
 </tr>
 <tr>
-<td>написати</td>
+<td>написати (to write/complete)</td>
 <td>напиши</td>
 <td>напишіть</td>
 </tr>
 <tr>
-<td>зробити</td>
+<td>зробити (to do/complete)</td>
 <td>зроби</td>
 <td>зробіть</td>
 </tr>
 <tr>
-<td>сказати</td>
+<td>сказати (to say)</td>
 <td>скажи</td>
 <td>скажіть</td>
 </tr>
@@ -462,20 +468,25 @@ footer {
 <h3 id="whentouseeachaspect">When to Use Each Aspect</h3>
 <p><strong>Imperfective imperative:</strong></p>
 <ol>
-<li><strong>General invitation/suggestion:</strong> Заходь! (Come in! / Feel free to enter)</li>
-<li><strong>Start doing:</strong> Починай! (Start! / Begin!)</li>
-<li><strong>Continue doing:</strong> Читай далі! (Keep reading!)</li>
-<li><strong>Repeated action:</strong> Телефонуй мені щодня! (Call me every day!)</li>
-<li><strong>Process focus:</strong> Слухай уважно! (Listen carefully!)</li>
+<li><strong>Invitation:</strong> Заходь! — Come in! (Feel free to enter)</li>
+<li><strong>Starting an action:</strong> Починай! — Start! / Begin!</li>
+<li><strong>Continuation:</strong> Читай далі! — Keep reading!</li>
+<li><strong>Repetition:</strong> Телефонуй мені щодня! — Call me every day!</li>
+<li><strong>Focus on process:</strong> Слухай уважно! — Listen carefully!</li>
 </ol>
 <p><strong>Perfective imperative:</strong></p>
 <ol>
-<li><strong>Complete this specific action:</strong> Прочитай цю книгу! (Read this book!)</li>
-<li><strong>One-time instruction:</strong> Напиши листа! (Write a letter!)</li>
-<li><strong>Result expected:</strong> Зроби це до завтра! (Do this by tomorrow!)</li>
-<li><strong>Urgent single action:</strong> Подзвони мені! (Call me!)</li>
+<li><strong>Complete a specific action:</strong> Прочитай цю книгу! — Read this book (finish it)!</li>
+<li><strong>One-time instruction:</strong> Напиши листа! — Write a letter!</li>
+<li><strong>Expected result:</strong> Зроби це до завтра! — Do this by tomorrow!</li>
+<li><strong>Urgent action:</strong> Подзвони мені! — Call me (now)!</li>
 </ol>
-<h3 id="comparesameverbdifferentmeaning">Compare: Same Verb, Different Meaning</h3>
+<blockquote>
+  <p><strong>Myth vs Fact</strong></p>
+  <p><strong>Myth:</strong> "Perfective imperative is ruder, imperfective is more polite."</p>
+  <p><strong>Fact:</strong> Not always! "Заходь" and "Зайди" — both can be polite. The difference is in <strong>meaning</strong>, not politeness: "Заходь" — general invitation, "Зайди до мене завтра" — specific arrangement. Politeness is added by "будь ласка" or intonation.</p>
+</blockquote>
+<h3 id="comparisonsameverbdifferentmeaning">Comparison: Same Verb, Different Meaning</h3>
 <table>
 <thead>
 <tr>
@@ -486,53 +497,28 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td><strong>Читай!</strong></td>
-<td><strong>Прочитай!</strong></td>
+<td><strong>Читай!</strong> (Read! - go ahead)</td>
+<td><strong>Прочитай!</strong> (Read it! - finish)</td>
+<td>process vs result</td>
+</tr>
+<tr>
+<td><strong>Пиши!</strong> (Write! - general)</td>
+<td><strong>Напиши!</strong> (Write! - this thing)</td>
 <td></td>
 </tr>
 <tr>
-<td>Read! (start/keep reading)</td>
-<td>Read it! (finish it)</td>
+<td><strong>Сідай!</strong> (Sit down! - invitation)</td>
+<td><strong>Сядь!</strong> (Sit! - instruction)</td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Пиши!</strong></td>
-<td><strong>Напиши!</strong></td>
+<td><strong>Їж!</strong> (Eat! - go ahead)</td>
+<td><strong>З'їж!</strong> (Eat it up! - finish)</td>
 <td></td>
 </tr>
 <tr>
-<td>Write! (general)</td>
-<td>Write! (this specific thing)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Сідай!</strong></td>
-<td><strong>Сядь!</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Sit down! (invitation)</td>
-<td>Sit down! (instruction)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Їж!</strong></td>
-<td><strong>З'їж!</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Eat! (go ahead, eat)</td>
-<td>Eat it up! (finish it)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Бери!</strong></td>
-<td><strong>Візьми!</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>Take! (feel free)</td>
-<td>Take it! (specific item)</td>
+<td><strong>Бери!</strong> (Take! - feel free)</td>
+<td><strong>Візьми!</strong> (Take it! - specific)</td>
 <td></td>
 </tr>
 </tbody>
@@ -540,166 +526,89 @@ footer {
 <h3 id="invitationvsinstruction">Invitation vs Instruction</h3>
 <p><strong>Imperfective = warm invitation:</strong></p>
 <ul>
-<li><strong>Заходь!</strong> - Come in! (You're welcome to enter)</li>
-<li><strong>Сідай!</strong> - Sit down! (Make yourself comfortable)</li>
-<li><strong>Їж!</strong> - Eat! (Please, have some food)</li>
-<li><strong>Бери!</strong> - Take! (Help yourself)</li>
+<li><strong>Заходь!</strong> — Come in! (You're welcome)</li>
+<li><strong>Сідай!</strong> — Sit down! (Make yourself comfortable)</li>
+<li><strong>Їж!</strong> — Eat! (Please, have some)</li>
+<li><strong>Бери!</strong> — Take! (Help yourself)</li>
 </ul>
-<p>These are welcoming, suggesting the listener is free to do the action.</p>
-<p><strong>Perfective = direct instruction:</strong></p>
+<p>These commands are hospitable, creating an atmosphere of free choice.</p>
+<p><strong>Perfective = specific instruction:</strong></p>
 <ul>
-<li><strong>Зайди</strong> до мене завтра! - Stop by my place tomorrow!</li>
-<li><strong>Сядь</strong> на це місце! - Sit in this seat!</li>
-<li><strong>З'їж</strong> це!** - Eat this up!</li>
-<li><strong>Візьми</strong> парасольку! - Take an umbrella!</li>
+<li><strong>Зайди</strong> до мене завтра! — Stop by tomorrow!</li>
+<li><strong>Сядь</strong> на це місце! — Sit in this seat!</li>
+<li><strong>З'їж</strong> це! — Eat this up!</li>
+<li><strong>Візьми</strong> парасольку! — Take an umbrella!</li>
 </ul>
-<p>These are specific instructions about what exactly to do.</p>
-<h3 id="negativeimperativesimportantpattern">Negative Imperatives: Important Pattern!</h3>
-<p><strong>Negative commands usually use IMPERFECTIVE:</strong></p>
+<p>These commands are about a specific action that should happen.</p>
+<blockquote>
+  <p><strong>Did you know?</strong></p>
+  <p>The Ukrainian hospitable "<strong>Сідай! Їж!</strong>" (imperfective) sounds warmer than "Сядь! З'їж!" (perfective). This is because imperfective focuses on the <strong>process</strong> — "enjoy the food," while perfective focuses on the <strong>result</strong> — "eat this up." At guests' homes, you'll hear imperfective forms.</p>
+</blockquote>
+<h3 id="negativecommandsanimportantpattern">Negative Commands: An Important Pattern!</h3>
+<p><strong>Prohibitions usually use IMPERFECTIVE:</strong></p>
 <ul>
-<li><strong>Не читай</strong> це! - Don't read this!</li>
-<li><strong>Не роби</strong> цього! - Don't do this!</li>
-<li><strong>Не кури</strong>! - Don't smoke!</li>
-<li><strong>Не хвилюйся</strong>! - Don't worry!</li>
-<li><strong>Не запізнюйся</strong>! - Don't be late!</li>
+<li><strong>Не читай</strong> це! — Don't read this!</li>
+<li><strong>Не роби</strong> цього! — Don't do this!</li>
+<li><strong>Не кури</strong>! — Don't smoke!</li>
+<li><strong>Не хвилюйся</strong>! — Don't worry!</li>
+<li><strong>Не запізнюйся</strong>! — Don't be late!</li>
 </ul>
-<p><strong>Perfective negative = warning about specific risk:</strong></p>
+<p><strong>Perfective negation = warning about a specific risk:</strong></p>
 <ul>
-<li><strong>Не впади</strong>! - Don't fall! (Careful!)</li>
-<li><strong>Не забудь</strong>! - Don't forget!</li>
-<li><strong>Не загуби</strong> ключі! - Don't lose the keys!</li>
-<li><strong>Не зламай</strong> це! - Don't break this!</li>
+<li><strong>Не впади</strong>! — Don't fall! (Careful!)</li>
+<li><strong>Не забудь</strong>! — Don't forget!</li>
+<li><strong>Не загуби</strong> ключі! — Don't lose the keys!</li>
+<li><strong>Не зламай</strong> це! — Don't break this!</li>
 </ul>
-<h3 id="politenessandsoftening">Politeness and Softening</h3>
-<p><strong>More polite forms:</strong></p>
-<p>Using <strong>будь ласка</strong> (please):</p>
-<ul>
-<li>Прочитай, <strong>будь ласка</strong>. - Read it, please.</li>
-<li>Зроби це, <strong>будь ласка</strong>. - Do this, please.</li>
-</ul>
-<p>Using <strong>Ви</strong> form for formal:</p>
-<ul>
-<li><strong>Прочитайте</strong>, будь ласка. - Please read (formal).</li>
-<li><strong>Зробіть</strong> це. - Do this (formal).</li>
-</ul>
-<p>Using imperfective for softer tone:</p>
-<ul>
-<li><strong>Читай</strong> собі. - Just read. (Relaxed, no pressure)</li>
-<li><strong>Сідай</strong>, не стій. - Sit down, don't stand. (Friendly)</li>
-</ul>
-<h3 id="sequentialcommandsperfective">Sequential Commands = Perfective</h3>
+<blockquote>
+  <p><strong>Did you know?</strong></p>
+  <p>"Не впади!" (perfective) and "Не падай!" (imperfective) — both are correct, but convey different things. "Не впади!" — warning about a <strong>specific moment</strong> (careful, it's slippery!). "Не падай!" — general advice (stay on your feet). Native speakers feel this difference instantly.</p>
+</blockquote>
+<h3 id="sequenceofcommandsperfective">Sequence of Commands = Perfective</h3>
 <p>When giving a sequence of actions, use perfective:</p>
 <ul>
 <li><p><strong>Встань</strong>, <strong>умийся</strong>, <strong>одягнися</strong> і <strong>йди</strong> на роботу!</p></li>
-<li><p>Get up, wash up, get dressed, and go to work!</p></li>
+<li><p>Get up, wash, get dressed, and go to work!</p></li>
 <li><p><strong>Прийди</strong>, <strong>сядь</strong>, <strong>почекай</strong> хвилину.</p></li>
 <li><p>Come, sit down, wait a minute.</p></li>
 <li><p>Спочатку <strong>прочитай</strong> текст, потім <strong>напиши</strong> відповіді.</p></li>
 <li><p>First read the text, then write the answers.</p></li>
 </ul>
-<h3 id="encouragingandurgentcommands">Encouraging and Urgent Commands</h3>
+<p>Each action is a separate "step" with an expected result.</p>
+<h3 id="encouragementandurgency">Encouragement and Urgency</h3>
 <p><strong>Encouragement (often imperfective):</strong></p>
 <ul>
-<li><strong>Не здавайся</strong>! - Don't give up!</li>
-<li><strong>Тримайся</strong>! - Hang in there!</li>
-<li><strong>Старайся</strong>! - Try hard!</li>
-<li><strong>Продовжуй</strong>! - Keep going!</li>
+<li><strong>Не здавайся</strong>! — Don't give up!</li>
+<li><strong>Тримайся</strong>! — Hang in there!</li>
+<li><strong>Старайся</strong>! — Try hard!</li>
+<li><strong>Продовжуй</strong>! — Keep going!</li>
 </ul>
 <p><strong>Urgency (often perfective):</strong></p>
 <ul>
-<li><strong>Швидше зроби</strong> це! - Do it faster!</li>
-<li><strong>Негайно зателефонуй</strong>! - Call immediately!</li>
-<li><strong>Терміново напиши</strong> йому! - Write to him urgently!</li>
+<li><strong>Швидше зроби</strong> це! — Do it faster!</li>
+<li><strong>Негайно зателефонуй</strong>! — Call immediately!</li>
+<li><strong>Терміново напиши</strong> йому! — Write to him urgently!</li>
 </ul>
-<h3 id="commonimperativepairs">Common Imperative Pairs</h3>
-<table>
-<thead>
-<tr>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Context</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>читай</td>
-<td>прочитай</td>
-<td>general vs complete</td>
-</tr>
-<tr>
-<td>пиши</td>
-<td>напиши</td>
-<td>general vs complete</td>
-</tr>
-<tr>
-<td>роби</td>
-<td>зроби</td>
-<td>general vs complete</td>
-</tr>
-<tr>
-<td>кажи</td>
-<td>скажи</td>
-<td>tell (ongoing) vs tell (once)</td>
-</tr>
-<tr>
-<td>давай</td>
-<td>дай</td>
-<td>give (offer) vs give (this item)</td>
-</tr>
-<tr>
-<td>бери</td>
-<td>візьми</td>
-<td>take (feel free) vs take (specific)</td>
-</tr>
-<tr>
-<td>сідай</td>
-<td>сядь</td>
-<td>sit (invitation) vs sit (instruction)</td>
-</tr>
-<tr>
-<td>вставай</td>
-<td>встань</td>
-<td>get up (general) vs get up (now)</td>
-</tr>
-<tr>
-<td>одягайся</td>
-<td>одягнися</td>
-<td>get dressed (general) vs get dressed (now)</td>
-</tr>
-<tr>
-<td>чекай</td>
-<td>почекай</td>
-<td>wait (general) vs wait (a moment)</td>
-</tr>
-<tr>
-<td>дивись</td>
-<td>подивись</td>
-<td>look (general) vs look (at this)</td>
-</tr>
-<tr>
-<td>слухай</td>
-<td>послухай</td>
-<td>listen (ongoing) vs listen (to this)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="letsinfinitive">"Let's" = Давай/Давайте + Infinitive</h3>
-<p><strong>Imperfective infinitive (process):</strong></p>
+<h3 id="lets">"Давай/Давайте" = Let's</h3>
+<p><strong>With imperfective infinitive (process):</strong></p>
 <ul>
-<li>Давай <strong>читати</strong>! - Let's read!</li>
-<li>Давайте <strong>говорити</strong> українською! - Let's speak Ukrainian!</li>
+<li>Давай <strong>читати</strong>! — Let's read!</li>
+<li>Давайте <strong>говорити</strong> українською! — Let's speak Ukrainian!</li>
 </ul>
-<p><strong>Perfective infinitive (specific action):</strong></p>
+<p><strong>With perfective form (specific action):</strong></p>
 <ul>
-<li>Давай <strong>прочитаємо</strong> це! - Let's read this!</li>
-<li>Давайте <strong>зробимо</strong> перерву! - Let's take a break!</li>
+<li>Давай <strong>прочитаємо</strong> це! — Let's read this!</li>
+<li>Давайте <strong>зробимо</strong> перерву! — Let's take a break!</li>
+<li>Давай <strong>підемо</strong>! — Let's go!</li>
+<li>Давайте <strong>почнемо</strong>! — Let's begin!</li>
 </ul>
-<p>Also: Давай(те) + ми form (perfective):</p>
-<ul>
-<li>Давай <strong>підемо</strong>! - Let's go!</li>
-<li>Давайте <strong>почнемо</strong>! - Let's begin!</li>
-</ul>
-<h2 id="practice">practice</h2>
+<blockquote>
+  <p><strong>Myth vs Fact</strong></p>
+  <p><strong>Myth:</strong> "'Давай + infinitive' and 'давай + we-form' are the same."</p>
+  <p><strong>Fact:</strong> There's a difference! "Давай читати" (infinitive) — general suggestion of a process. "Давай прочитаємо" (we-form) — specific action with a result. "Давай говорити українською" = in general. "Давай поговоримо" = now, a specific conversation.</p>
+</blockquote>
+<hr />
+<h2 id="practice">Practice</h2>
 <h3 id="choosethecorrectaspect">Choose the Correct Aspect</h3>
 <ol>
 <li><p>___ (Заходь/Зайди), у мене тепло! (invitation)</p></li>
@@ -714,11 +623,11 @@ footer {
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer"><strong>Не читай</strong></div></div>
 <ol start="4">
-<li><p>___ (Вставай/Встань), вже пізно! (urgent now)</p></li>
+<li><p>___ (Вставай/Встань), вже пізно! (urgent)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer"><strong>Встань</strong></div></div>
 <ol start="5">
-<li><p>___ (Бери/Візьми) цю парасольку! (specific item)</p></li>
+<li><p>___ (Бери/Візьми) цю парасольку! (specific thing)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer"><strong>Візьми</strong></div></div>
 <ol start="6">
@@ -726,15 +635,15 @@ footer {
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer"><strong>Не хвилюйся</strong></div></div>
 <ol start="7">
-<li><p>___ (Їж/З'їж) усе! (finish everything)</p></li>
+<li><p>___ (Їж/З'їж) усе! (finish it)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer"><strong>З'їж</strong></div></div>
 <ol start="8">
-<li><p>___ (Дивись/Подивись) на це! (look at specific thing)</p></li>
+<li><p>___ (Дивись/Подивись) на це! (specific thing)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer"><strong>Подивись</strong></div></div>
-<h3 id="transforminvitationtoinstruction">Transform: Invitation to Instruction</h3>
-<p>Change from imperfective (invitation) to perfective (instruction):</p>
+<h3 id="transformationinvitationinstruction">Transformation: Invitation → Instruction</h3>
+<p>Change imperfective (invitation) to perfective (instruction):</p>
 <ol>
 <li><p>Сідай!</p></li>
 </ol>
@@ -751,8 +660,8 @@ footer {
 <li><p>Їж!</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer"><strong>З'їж</strong> це яблуко!</div></div>
-<h3 id="createcommandsequences">Create Command Sequences</h3>
-<p>Put these actions in imperative perfective sequence:</p>
+<h3 id="createasequenceofcommands">Create a Sequence of Commands</h3>
+<p>Put the actions in perfective imperative:</p>
 <p><em>встати, умитися, поснідати, піти</em></p>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer"><strong>Встань, умийся, поснідай і піди!</strong></div></div>
 <p><em>прийти, сісти, почекати</em></p>
@@ -775,42 +684,24 @@ footer {
 <li><p>___ (Не кури/Не покури) тут! (general rule)</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer"><strong>Не кури</strong></div></div>
-<h2 id="production">production</h2>
+<hr />
+<h2 id="production">Production</h2>
 <h3 id="giveinstructions">Give Instructions</h3>
 <p>Create a sequence of commands for:</p>
 <p><strong>Morning routine:</strong><br />
-Встань, умийся, почисти зуби, одягнися, поснідай і йди!</p>
+Встань, умийся, почисти зуби, одягнися, поснідай і йди!<br />
+(Get up, wash, brush your teeth, get dressed, have breakfast and go!)</p>
 <p><strong>Cooking:</strong><br />
-Візьми яйця, розбий їх, додай сіль, перемішай і смаж!</p>
-<h3 id="roleplaycookingshow">🎭 ROLE-PLAY: Cooking Show</h3>
-<p><strong>Situation:</strong> You're hosting a cooking show. Give instructions to your assistant.</p>
-<p><strong>Partner A (Chef):</strong> Give cooking instructions:</p>
+Візьми яйця, розбий їх, додай сіль, перемішай і смаж!<br />
+(Take eggs, break them, add salt, mix and fry!)</p>
+<h3 id="hospitality">Hospitality</h3>
+<p>Practice invitations (imperfective):</p>
 <ul>
-<li>Invitations (imperfective): Спробуй! Мішай! Готуй!</li>
-<li>Instructions (perfective): Наріж! Поклади! Додай!</li>
-<li>Warnings (imperfective): Не торкайся! Не відкривай!</li>
+<li>Заходь, заходь! — Come in, come in!</li>
+<li>Сідай, будь ласка! — Sit down, please!</li>
+<li>Їж, не соромся! — Eat, don't be shy!</li>
+<li>Бери ще! — Take more!</li>
 </ul>
-<p><strong>Partner B (Assistant):</strong> Follow and confirm:</p>
-<p><strong>Example dialogue:</strong></p>
-<pre><code>A: Добре, починаємо! Візьми овочі з холодильника.
-B: Взяв! Що далі?
-A: Тепер наріж моркву тонкими шматочками.
-B: Добре, ріжу...
-A: Мішай соус, поки я готую м'ясо.
-B: Мішаю!
-A: Обережно, не торкайся гарячої сковороди!
-B: Зрозуміло!
-A: Тепер додай спеції. Спробуй на смак!
-B: Смакує чудово!
-A: Поклади все на тарілку. Готово!
-</code></pre>
-<p><strong>Required structures:</strong></p>
-<ul>
-<li>✅ Imperfective for invitations/ongoing: Мішай! Готуй! Спробуй!</li>
-<li>✅ Perfective for specific instructions: Наріж! Візьми! Поклади!</li>
-<li>✅ Imperfective for prohibitions: Не торкайся! Не забувай!</li>
-</ul>
-<p><strong>Switch roles and cook a different dish!</strong></p>
 <hr />
 <hr />
 <hr />
@@ -823,7 +714,7 @@ A: Поклади все на тарілку. Готово!
 <table>
 <thead>
 <tr>
-<th>Use</th>
+<th>Usage</th>
 <th>Aspect</th>
 <th>Example</th>
 </tr>
@@ -832,64 +723,64 @@ A: Поклади все на тарілку. Готово!
 <tr>
 <td>Invitation</td>
 <td>Imperfective</td>
-<td>Заходь! Сідай!</td>
+<td>Заходь! Сідай! (Come in! Sit down!)</td>
 </tr>
 <tr>
 <td>Specific task</td>
 <td>Perfective</td>
-<td>Прочитай це!</td>
+<td>Прочитай це! (Read this!)</td>
 </tr>
 <tr>
 <td>Prohibition</td>
 <td>Imperfective</td>
-<td>Не роби цього!</td>
+<td>Не роби цього! (Don't do this!)</td>
 </tr>
 <tr>
 <td>Warning</td>
 <td>Perfective</td>
-<td>Не впади!</td>
+<td>Не впади! (Don't fall!)</td>
 </tr>
 <tr>
 <td>Sequence</td>
 <td>Perfective</td>
-<td>Встань, умийся, йди!</td>
+<td>Встань, умийся, йди! (Get up, wash, go!)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="quickdecisionguide">Quick Decision Guide</h2>
+<h2 id="quickselection">Quick Selection</h2>
 <table>
 <thead>
 <tr>
 <th>Context</th>
-<th>Choose</th>
+<th>Aspect</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>"Feel free to…"</td>
+<td>"You may…"</td>
 <td>Imperfective</td>
-<td>Бери! Їж!</td>
+<td>Бери! Їж! (Take! Eat!)</td>
 </tr>
 <tr>
 <td>"Do this specific thing"</td>
 <td>Perfective</td>
-<td>Візьми парасольку!</td>
+<td>Візьми парасольку! (Take the umbrella!)</td>
 </tr>
 <tr>
-<td>"Don't do this"</td>
+<td>"Don't do" (general)</td>
 <td>Imperfective</td>
-<td>Не роби!</td>
+<td>Не роби! (Don't do!)</td>
 </tr>
 <tr>
-<td>"Be careful not to…"</td>
+<td>"Careful, don't…"</td>
 <td>Perfective</td>
-<td>Не забудь!</td>
+<td>Не забудь! (Don't forget!)</td>
 </tr>
 <tr>
 <td>"Keep doing…"</td>
 <td>Imperfective</td>
-<td>Продовжуй!</td>
+<td>Продовжуй! (Keep going!)</td>
 </tr>
 </tbody>
 </table>
@@ -897,19 +788,13 @@ A: Поклади все на тарілку. Готово!
 <ul>
 <li>Imperfective = process, invitation, general</li>
 <li>Perfective = result, specific action, urgent</li>
-<li>Negative commands prefer imperfective</li>
+<li>Prohibitions prefer imperfective</li>
 <li>Warnings use perfective (Не впади!)</li>
 <li>"Давай" + infinitive = "Let's…"</li>
 </ul>
 <blockquote>
-  <p><strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Invitations use imperfective (Заходь! Сідай!)</li>
-  <li>Specific instructions use perfective (Візьми це!)</li>
-  <li>Prohibitions use imperfective (Не роби!)</li>
-  <li>Warnings use perfective (Не забудь! Не впади!)</li>
-  <li>Command sequences use perfective</li>
-  </ul>
+  <p><strong>Key Takeaway</strong></p>
+  <p>Invitations — <strong>imperfective</strong> (Заходь! Сідай! Їж!). Specific instructions — <strong>perfective</strong> (Візьми! Прочитай! Зроби!). Prohibitions — <strong>imperfective</strong> (Не роби!). Warnings — <strong>perfective</strong> (Не впади! Не забудь!). The choice of aspect in imperatives shows how you see the action: as a <strong>process</strong> or as a <strong>result</strong>.</p>
 </blockquote></div>
     </div>
   
@@ -919,17 +804,17 @@ A: Поклади все на тарілку. Готово!
     </section>
   
     
-    <section id="match" class="section"><div class="card"><h3>Imperative Pairs</h3>
+    <section id="match" class="section"><div class="card"><h3>Aspect Pairs of Imperatives</h3>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">читай</div><div class="match-item" data-pair="1">пиши</div><div class="match-item" data-pair="2">бери</div><div class="match-item" data-pair="3">сідай</div><div class="match-item" data-pair="4">вставай</div><div class="match-item" data-pair="5">кажи</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">скажи</div><div class="match-item" data-pair="0">прочитай</div><div class="match-item" data-pair="3">сядь</div><div class="match-item" data-pair="2">візьми</div><div class="match-item" data-pair="4">встань</div><div class="match-item" data-pair="1">напиши</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">скажи</div><div class="match-item" data-pair="3">сядь</div><div class="match-item" data-pair="4">встань</div><div class="match-item" data-pair="0">прочитай</div><div class="match-item" data-pair="1">напиши</div><div class="match-item" data-pair="2">візьми</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
     </div></section>
     
-    <section id="quiz" class="section"><div class="card"><h3>Imperative Aspect</h3>
+    <section id="quiz" class="section"><div class="card"><h3>Aspect in Imperatives</h3>
       <div class="score-display"><span class="score"><span id="quiz-score">0</span>/6</span></div>
       <div id="quiz-container"></div>
       <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
@@ -941,12 +826,14 @@ A: Поклади все на тарілку. Готово!
       <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
       <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Imperfective Imperative</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Perfective Imperative</h4><div class="sort-items"></div></div></div>
       <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
+    
+    
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Нові слова (7)</h3>
+        <h3>Нові слова (15)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -956,18 +843,18 @@ A: Поклади все на тарілку. Готово!
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">негайно</td><td class="vocab-ipa">/nɛˈɦɑjno/</td><td class="vocab-en">immediately</td><td class="vocab-note">urgency</td></tr><tr><td class="vocab-uk">терміново</td><td class="vocab-ipa">/tɛrmʲiˈnovo/</td><td class="vocab-en">urgently</td><td class="vocab-note">urgency</td></tr><tr><td class="vocab-uk">не здаватися</td><td class="vocab-ipa">/nɛ zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to not give up</td><td class="vocab-note">encouragement</td></tr><tr><td class="vocab-uk">триматися</td><td class="vocab-ipa">/trɪˈmɑtɪsʲɑ/</td><td class="vocab-en">to hold on</td><td class="vocab-note">encouragement</td></tr><tr><td class="vocab-uk">старатися</td><td class="vocab-ipa">/stɑˈrɑtɪsʲɑ/</td><td class="vocab-en">to try hard</td><td class="vocab-note">encouragement</td></tr><tr><td class="vocab-uk">давай</td><td class="vocab-ipa">/dɑˈvɑj/</td><td class="vocab-en">let&#039;s (informal)</td><td class="vocab-note">+ infinitive</td></tr><tr><td class="vocab-uk">давайте</td><td class="vocab-ipa">/dɑˈvɑjtɛ/</td><td class="vocab-en">let&#039;s (formal)</td><td class="vocab-note">+ infinitive</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">наказовий</td><td class="vocab-ipa">/nɑkɑˈzovɪj/</td><td class="vocab-en">imperative</td><td class="vocab-note">наказовий спосіб</td></tr><tr><td class="vocab-uk">спосіб</td><td class="vocab-ipa">/ˈsposʲib/</td><td class="vocab-en">way, mood (grammar)</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">імператив</td><td class="vocab-ipa">/ʲimpɛrɑˈtɪw/</td><td class="vocab-en">imperative</td><td class="vocab-note">m, grammar term</td></tr><tr><td class="vocab-uk">команда</td><td class="vocab-ipa">/koˈmɑndɑ/</td><td class="vocab-en">command</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">запрошення</td><td class="vocab-ipa">/zɑproˈʃɛnʲːɑ/</td><td class="vocab-en">invitation</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">інструкція</td><td class="vocab-ipa">/ʲinˈstrukt͡sʲijɑ/</td><td class="vocab-en">instruction</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">давай</td><td class="vocab-ipa">/dɑˈvɑj/</td><td class="vocab-en">let&#039;s (informal)</td><td class="vocab-note">+ infinitive/we-form</td></tr><tr><td class="vocab-uk">давайте</td><td class="vocab-ipa">/dɑˈvɑjtɛ/</td><td class="vocab-en">let&#039;s (formal)</td><td class="vocab-note">+ infinitive/we-form</td></tr><tr><td class="vocab-uk">не здаватися</td><td class="vocab-ipa">/nɛ zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to not give up</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">здатися</td><td class="vocab-ipa">/ˈzdɑtɪsʲɑ/</td><td class="vocab-en">to give up</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">негайно</td><td class="vocab-ipa">/nɛˈɦɑjno/</td><td class="vocab-en">immediately</td><td class="vocab-note">urgency</td></tr><tr><td class="vocab-uk">старатися</td><td class="vocab-ipa">/stɑˈrɑtɪsʲɑ/</td><td class="vocab-en">to try hard</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">терміново</td><td class="vocab-ipa">/tɛrmʲiˈnovo/</td><td class="vocab-en">urgently</td><td class="vocab-note">urgency</td></tr><tr><td class="vocab-uk">триматися</td><td class="vocab-ipa">/trɪˈmɑtɪsʲɑ/</td><td class="vocab-en">to hold on</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">послідовність</td><td class="vocab-ipa">/posʲlʲiˈdovnʲistʲ/</td><td class="vocab-en">sequence</td><td class="vocab-note">f</td></tr></tbody>
           </table>
         </div>
       </div>
       
       <div class="card review-vocab">
-        <h3>Повторення (5)</h3>
+        <h3>Повторення (7)</h3>
         <p class="review-note">Words from earlier modules for review</p>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
-            <tbody><tr><td class="vocab-uk">швидше</td><td class="vocab-module">Module 44</td></tr><tr><td class="vocab-uk">спочатку</td><td class="vocab-module">Module 25</td></tr><tr><td class="vocab-uk">потім</td><td class="vocab-module">Module 21</td></tr><tr><td class="vocab-uk">продовжувати</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">обережно</td><td class="vocab-module">Module 85</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">швидше</td><td class="vocab-module">Module 44</td></tr><tr><td class="vocab-uk">спочатку</td><td class="vocab-module">Module 25</td></tr><tr><td class="vocab-uk">потім</td><td class="vocab-module">Module 21</td></tr><tr><td class="vocab-uk">продовжувати</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">обережно</td><td class="vocab-module">Module 85</td></tr><tr><td class="vocab-uk">попередження</td><td class="vocab-module">Module 85</td></tr><tr><td class="vocab-uk">заборона</td><td class="vocab-module">Module 85</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -980,8 +867,10 @@ A: Поклади все на тарілку. Готово!
 
     const matchPairs = [{"left":"читай","right":"прочитай"},{"left":"пиши","right":"напиши"},{"left":"бери","right":"візьми"},{"left":"сідай","right":"сядь"},{"left":"вставай","right":"встань"},{"left":"кажи","right":"скажи"}];
     const quizData = [{"question":"___ , будь ласка! (invitation to sit)","options":["Сідай","Сядь"],"correctIndex":0,"explanation":"Invitation = imperfective"},{"question":"___ цю статтю до завтра!","options":["Читай","Прочитай"],"correctIndex":1,"explanation":"Deadline = perfective"},{"question":"___ цього!","options":["Не роби","Не зроби"],"correctIndex":0,"explanation":"General prohibition = imperfective"},{"question":"___ , мама чекає!","options":["Одягайся","Одягнися"],"correctIndex":1,"explanation":"Urgent = perfective"},{"question":"___ ключі!","options":["Не губи","Не загуби"],"correctIndex":1,"explanation":"Warning = perfective"},{"question":"___ уважно!","options":["Слухай","Послухай"],"correctIndex":0,"explanation":"Process = imperfective"}];
-    const sortData = {"true-friends":["warm invitation (Заходь!)","general prohibition (Не роби!)","ongoing process (Слухай уважно!)","encouragement (Не здавайся!)"],"false-friends":["specific instruction (Візьми парасольку!)","complete action (Прочитай книгу!)","sequence (Встань, умийся, йди!)","warning (Не впади!)"]};
-    const vocabData = [{"uk":"негайно","translit":"","en":"immediately","note":"urgency"},{"uk":"терміново","translit":"","en":"urgently","note":"urgency"},{"uk":"не здаватися","translit":"","en":"to not give up","note":"encouragement"},{"uk":"триматися","translit":"","en":"to hold on","note":"encouragement"},{"uk":"старатися","translit":"","en":"to try hard","note":"encouragement"},{"uk":"давай","translit":"","en":"let's (informal)","note":"+ infinitive"},{"uk":"давайте","translit":"","en":"let's (formal)","note":"+ infinitive"}];
+    const sortData = {"true-friends":["warm invitation (Заходь!)","general prohibition (Не роби!)","ongoing process (Слухай уважно!)","encouragement (Не здавайся!)"],"false-friends":["specific instruction (Візьми парасольку!)","completed action (Прочитай книгу!)","sequence (Встань, умийся, йди!)","warning (Не впади!)"]};
+    const fillData = {"items":[],"text":"","answers":[]};
+    const orderData = {"items":[],"correctOrder":[]};
+    const vocabData = [{"uk":"наказовий","translit":"","en":"imperative","note":"наказовий спосіб"},{"uk":"спосіб","translit":"","en":"way, mood (grammar)","note":"m"},{"uk":"імператив","translit":"","en":"imperative","note":"m, grammar term"},{"uk":"команда","translit":"","en":"command","note":"f"},{"uk":"запрошення","translit":"","en":"invitation","note":"n"},{"uk":"інструкція","translit":"","en":"instruction","note":"f"},{"uk":"давай","translit":"","en":"let's (informal)","note":"+ infinitive/we-form"},{"uk":"давайте","translit":"","en":"let's (formal)","note":"+ infinitive/we-form"},{"uk":"не здаватися","translit":"","en":"to not give up","note":"impf"},{"uk":"здатися","translit":"","en":"to give up","note":"pf"},{"uk":"негайно","translit":"","en":"immediately","note":"urgency"},{"uk":"старатися","translit":"","en":"to try hard","note":"impf"},{"uk":"терміново","translit":"","en":"urgently","note":"urgency"},{"uk":"триматися","translit":"","en":"to hold on","note":"impf"},{"uk":"послідовність","translit":"","en":"sequence","note":"f"}];
     const totalSort = 8;
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -1016,6 +905,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -1184,6 +1075,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

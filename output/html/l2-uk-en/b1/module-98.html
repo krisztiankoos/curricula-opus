@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -339,8 +364,10 @@ footer {
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
-      <button class="nav-tab" data-section="quiz">Quiz</button>
-      <button class="nav-tab" data-section="sort">Sort</button>
+      
+      
+      
+      
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -353,20 +380,26 @@ footer {
         <p style="color:var(--text-muted)">Погоджуюся, Не згоден...</p>
       </div>
       
-    <div class="card section-content">
-      <h3>Зміст уроку | Lesson Content</h3>
-      <div class="md-content"><h2 id="warmup">warm-up | Розминка</h2>
-<h3 id="theartofdisagreeing">Мистецтво незгоди | The Art of Disagreeing</h3>
-<p>В українській культурі пряма незгода може здаватися неввічливою. Сьогодні ви навчитеся:</p>
-<p>In Ukrainian culture, direct disagreement can seem rude. Today you'll learn:</p>
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">Warm-up</h2>
+<h3 id="theartofdisagreement">The art of disagreement</h3>
+<p>In Module 97 you learned to express your opinion. But what do you do when someone expresses an opinion you <strong>don't agree with</strong>?</p>
+<p>A direct "Ні, ви помиляєтесь!" (No, you're wrong!) — may be honest, but it's hardly diplomatic. In Ukrainian culture, as in many others, direct disagreement can seem <strong>impolite</strong> or even <strong>aggressive</strong>.</p>
+<p>Today you'll learn three key skills:</p>
 <ul>
-<li>Як погоджуватися з ентузіазмом | How to agree enthusiastically</li>
-<li>Як ввічливо не погоджуватися | How to disagree politely</li>
-<li>Як частково погоджуватися | How to partially agree</li>
-<li>Як пом'якшувати критику | How to soften criticism</li>
+<li>Agreeing with enthusiasm</li>
+<li>Partially agreeing</li>
+<li>Disagreeing without causing offense</li>
 </ul>
-<h2 id="presentation">presentation</h2>
-<h3 id="strongagreement">Strong Agreement</h3>
+<blockquote>
+  <p>💡 <strong>Did you know?</strong></p>
+  <p>Ukrainian has an interesting asymmetry: there are many ways to <strong>agree</strong>, but even more ways to <strong>disagree politely</strong>. This reflects the cultural value of harmony in communication. Even when Ukrainians categorically disagree, they often start with "Так, але…" (Yes, but…) — acknowledging the other person's position before objecting.</p>
+</blockquote>
+<hr />
+<h2 id="presentation">Presentation</h2>
+<h3 id="strongagreement">Strong agreement</h3>
+<p>When you strongly agree with someone, use these enthusiastic expressions:</p>
 <table>
 <thead>
 <tr>
@@ -389,12 +422,12 @@ footer {
 <tr>
 <td>Точно!</td>
 <td>Exactly!</td>
-<td>confirming</td>
+<td>confirmation</td>
 </tr>
 <tr>
 <td>Саме так!</td>
 <td>Exactly so!</td>
-<td>confirming</td>
+<td>confirmation</td>
 </tr>
 <tr>
 <td>Безперечно!</td>
@@ -415,10 +448,16 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>A: Україна — красива країна.</li>
-<li>B: <strong>Абсолютно!</strong> / <strong>Точно так!</strong></li>
+<li>A: Україна — красива країна. — Ukraine is a beautiful country.</li>
+<li>B: <strong>Абсолютно!</strong> / <strong>Точно так!</strong> — Absolutely! / Exactly!</li>
 </ul>
-<h3 id="standardagreement">Standard Agreement</h3>
+<blockquote>
+  <p>🔍 <strong>Myth vs Fact</strong></p>
+  <p>❌ <strong>Myth:</strong> "Точно and саме так are the same."</p>
+  <p>✅ <strong>Fact:</strong> There's a nuance! <strong>Точно!</strong> is short, emotional, often spontaneous ("Точно! Я теж так думаю!" — Exactly! I think so too!). <strong>Саме так!</strong> is more considered, emphasizing that the speaker hit the nail on the head ("Саме так! Це головна проблема" — Exactly! That's the main problem). In writing, "саме так" sounds more formal.</p>
+</blockquote>
+<h3 id="regularagreement">Regular agreement</h3>
+<p>For neutral agreement, use these expressions:</p>
 <table>
 <thead>
 <tr>
@@ -463,12 +502,17 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><p>A: Вивчати мови корисно.</p></li>
-<li><p>B: <strong>Я погоджуюся.</strong> Це дуже корисно.</p></li>
-<li><p>A: Ми повинні почати раніше.</p></li>
-<li><p>B: <strong>Ви маєте рацію.</strong> Давайте почнемо о восьмій.</p></li>
+<li><p>A: Вивчати мови корисно. — Learning languages is useful.</p></li>
+<li><p>B: <strong>Я погоджуюся.</strong> Це дуже корисно. — I agree. It's very useful.</p></li>
+<li><p>A: Ми повинні почати раніше. — We should start earlier.</p></li>
+<li><p>B: <strong>Ви маєте рацію.</strong> Давайте почнемо о восьмій. — You're right. Let's start at eight.</p></li>
 </ul>
-<h3 id="partialagreement">Partial Agreement</h3>
+<blockquote>
+  <p>💡 <strong>Did you know?</strong></p>
+  <p>The expression <strong>мати рацію</strong> is interesting. The word "рація" (from Latin ratio — reason, calculation) means "rightness, correctness." "Ви маєте рацію" = literally "you have rightness." It shares a root with "раціональний" (rational). And "не мати рації" means to be wrong. Note: рація (rightness) is spelled differently from рація (radio)!</p>
+</blockquote>
+<h3 id="partialagreement">Partial agreement</h3>
+<p>When you agree with some aspects but not all, use these expressions:</p>
 <table>
 <thead>
 <tr>
@@ -505,12 +549,13 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><p>A: Дистанційна робота краща.</p></li>
-<li><p>B: <strong>Почасти я згоден</strong>, але іноді важливо бути в офісі.</p></li>
-<li><p>A: Потрібно більше грошей на проєкт.</p></li>
-<li><p>B: <strong>Це правда</strong>, <strong>проте</strong> бюджет обмежений.</p></li>
+<li><p>A: Дистанційна робота краща. — Remote work is better.</p></li>
+<li><p>B: <strong>Почасти я згоден</strong>, але іноді важливо бути в офісі. — I partly agree, but sometimes it's important to be in the office.</p></li>
+<li><p>A: Потрібно більше грошей на проєкт. — We need more money for the project.</p></li>
+<li><p>B: <strong>Це правда</strong>, <strong>проте</strong> бюджет обмежений. — That's true, but the budget is limited.</p></li>
 </ul>
-<h3 id="politedisagreement">Polite Disagreement</h3>
+<h3 id="politedisagreement">Polite disagreement</h3>
+<p>These expressions allow you to disagree gently:</p>
 <table>
 <thead>
 <tr>
@@ -554,12 +599,17 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><p>A: Це найкращий варіант.</p></li>
-<li><p>B: <strong>Я не зовсім згоден.</strong> Можливо, є кращі.</p></li>
-<li><p>A: Ми повинні скасувати проєкт.</p></li>
-<li><p>B: <strong>Боюся, що не можу погодитися.</strong> Давайте обговоримо.</p></li>
+<li><p>A: Це найкращий варіант. — This is the best option.</p></li>
+<li><p>B: <strong>Я не зовсім згоден.</strong> Можливо, є кращі. — I don't quite agree. Maybe there are better ones.</p></li>
+<li><p>A: Ми повинні скасувати проєкт. — We should cancel the project.</p></li>
+<li><p>B: <strong>Боюся, що не можу погодитися.</strong> Давайте обговоримо. — I'm afraid I can't agree. Let's discuss.</p></li>
 </ul>
-<h3 id="strongerdisagreement">Stronger Disagreement</h3>
+<blockquote>
+  <p>💡 <strong>Did you know?</strong></p>
+  <p>The phrase <strong>боюся, що…</strong> has nothing to do with fear! It's a <strong>diplomatic marker</strong> that softens disagreement. English has "I'm afraid…" with the same function. This expression signals: "I don't like to say this, but…" Use it in formal situations — with your boss, a client, a stranger.</p>
+</blockquote>
+<h3 id="strongdisagreement">Strong disagreement</h3>
+<p>Use these expressions cautiously — they are direct and may sound confrontational:</p>
 <table>
 <thead>
 <tr>
@@ -601,13 +651,14 @@ footer {
 </tr>
 </tbody>
 </table>
-<p><strong>Use with caution</strong> — these are direct and can sound confrontational.</p>
+<p><strong>Use carefully</strong> — these expressions are direct and can sound confrontational.</p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>A: Всі згодні з цим планом.</li>
-<li>B: <strong>Ні, я не згоден.</strong> Є серйозні проблеми.</li>
+<li>A: Всі згодні з цим планом. — Everyone agrees with this plan.</li>
+<li>B: <strong>Ні, я не згоден.</strong> Є серйозні проблеми. — No, I disagree. There are serious problems.</li>
 </ul>
-<h3 id="questioningwithoutdirectdisagreement">Questioning Without Direct Disagreement</h3>
+<h3 id="questionsinsteadofdirectdisagreement">Questions instead of direct disagreement</h3>
+<p>A diplomatic way to express doubt without openly disagreeing:</p>
 <table>
 <thead>
 <tr>
@@ -640,10 +691,11 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>A: Ми повинні це зробити сьогодні.</li>
-<li>B: <strong>А ви впевнені?</strong> Може, краще завтра?</li>
+<li>A: Ми повинні це зробити сьогодні. — We must do this today.</li>
+<li>B: <strong>А ви впевнені?</strong> Може, краще завтра? — Are you sure? Maybe tomorrow would be better?</li>
 </ul>
-<h3 id="offeringalternatives">Offering Alternatives</h3>
+<h3 id="suggestingalternatives">Suggesting alternatives</h3>
+<p>Another way to disagree constructively is to propose alternatives:</p>
 <table>
 <thead>
 <tr>
@@ -676,11 +728,12 @@ footer {
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><strong>Я б запропонувала</strong> інший підхід.</li>
-<li><strong>Як варіант</strong>, ми можемо почекати.</li>
-<li><strong>А може краще</strong> обговорити це з командою?</li>
+<li><strong>Я б запропонувала</strong> інший підхід. — I would suggest a different approach.</li>
+<li><strong>Як варіант</strong>, ми можемо почекати. — As an option, we could wait.</li>
+<li><strong>А може краще</strong> обговорити це з командою? — Maybe it would be better to discuss this with the team?</li>
 </ul>
-<h3 id="diplomaticphrases">Diplomatic Phrases</h3>
+<h3 id="diplomaticphrases">Diplomatic phrases</h3>
+<p>These expressions acknowledge the other person's perspective while expressing disagreement:</p>
 <table>
 <thead>
 <tr>
@@ -709,103 +762,182 @@ footer {
 </table>
 <p><strong>Example dialogue:</strong></p>
 <ul>
-<li>A: Ми повинні звільнити половину команди.</li>
-<li>B: <strong>Я розумію вашу точку зору</strong>, але <strong>не можу погодитися</strong>. <strong>А чи не краще</strong> спочатку скоротити інші витрати?</li>
+<li>A: Ми повинні звільнити половину команди. — We should fire half the team.</li>
+<li>B: <strong>Я розумію вашу точку зору</strong>, але <strong>не можу погодитися</strong>. <strong>А чи не краще</strong> спочатку скоротити інші витрати? — I understand your point of view, but I can't agree. Wouldn't it be better to cut other expenses first?</li>
 </ul>
-<h2 id="practice">practice</h2>
-<h3 id="matchlevelsofagreement">Match Levels of Agreement</h3>
+<hr />
+<h2 id="practice">Practice</h2>
+<h3 id="identifythelevelofagreement">Identify the level of agreement</h3>
 <p>Categorize these expressions:</p>
-<p><strong>Strong agree / Agree / Partial / Soft disagree / Strong disagree</strong></p>
+<p><strong>Strong agreement / Agreement / Partial / Soft disagreement / Strong disagreement</strong></p>
 <ol>
-<li><p>Абсолютно!</p></li>
+<li><p>Абсолютно! — Absolutely!</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer"><strong>Strong agree</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer"><strong>Strong agreement</strong></div></div>
 <ol start="2">
-<li><p>Я не зовсім згоден</p></li>
+<li><p>Я не зовсім згоден — I don't quite agree</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer"><strong>Soft disagree</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer"><strong>Soft disagreement</strong></div></div>
 <ol start="3">
-<li><p>Почасти так, але…</p></li>
+<li><p>Почасти так, але… — Partly yes, but…</p></li>
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer"><strong>Partial</strong></div></div>
 <ol start="4">
-<li><p>Я категорично проти</p></li>
+<li><p>Я категорично проти — I'm categorically against</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer"><strong>Strong disagree</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer"><strong>Strong disagreement</strong></div></div>
 <ol start="5">
-<li><p>Ви маєте рацію</p></li>
+<li><p>Ви маєте рацію — You're right</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer"><strong>Agree</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer"><strong>Agreement</strong></div></div>
 <ol start="6">
-<li><p>Цікава думка, проте…</p></li>
+<li><p>Цікава думка, проте… — Interesting thought, however…</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer"><strong>Soft disagree</strong></div></div>
-<h3 id="respondtostatements">Respond to Statements</h3>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer"><strong>Soft disagreement</strong></div></div>
+<h3 id="reacttostatements">React to statements</h3>
 <p>Agree or disagree politely:</p>
-<p><strong>Statement:</strong> Всі повинні вивчати англійську.</p>
+<p><strong>Statement:</strong> Всі повинні вивчати англійську. — Everyone should learn English.</p>
 <ul>
-<li><strong>Agree:</strong> Я погоджуюся. Англійська — міжнародна мова.</li>
-<li><strong>Partial:</strong> Почасти так, але інші мови теж важливі.</li>
-<li><strong>Disagree:</strong> Я не зовсім згоден. Залежить від потреб людини.</li>
+<li><strong>Agreement:</strong> Я погоджуюся. Англійська — міжнародна мова. — I agree. English is an international language.</li>
+<li><strong>Partial:</strong> Почасти так, але інші мови теж важливі. — Partly yes, but other languages are important too.</li>
+<li><strong>Disagreement:</strong> Я не зовсім згоден. Залежить від потреб людини. — I don't quite agree. It depends on the person's needs.</li>
 </ul>
-<p><strong>Statement:</strong> Робота важливіша за сім'ю.</p>
-<ul>
-<li>Your response: ___</li>
-</ul>
-<p><strong>Statement:</strong> Технології роблять нас щасливішими.</p>
+<p><strong>Statement:</strong> Робота важливіша за сім'ю. — Work is more important than family.</p>
 <ul>
 <li>Your response: ___</li>
 </ul>
-<h3 id="makethesemorepolite">Make These More Polite</h3>
+<p><strong>Statement:</strong> Технології роблять нас щасливішими. — Technology makes us happier.</p>
+<ul>
+<li>Your response: ___</li>
+</ul>
+<h3 id="makeitmorepolite">Make it more polite</h3>
 <p>Transform direct disagreement into polite disagreement:</p>
 <ol>
-<li><p>Ні, ви помиляєтесь.</p></li>
+<li><p>Ні, ви помиляєтесь. — No, you're wrong.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer"><strong>Я не зовсім згоден. Мені здається, тут є неточність.</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer"><strong>Я не зовсім згоден. Мені здається, тут є неточність.</strong> (I don't quite agree. It seems to me there's an inaccuracy here.)</div></div>
 <ol start="2">
-<li><p>Це погана ідея.</p></li>
+<li><p>Це погана ідея. — It's a bad idea.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer"><strong>Цікава думка, проте я б запропонував інший підхід.</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer"><strong>Цікава думка, проте я б запропонував інший підхід.</strong> (Interesting thought, but I would suggest a different approach.)</div></div>
 <ol start="3">
-<li><p>Ні.</p></li>
+<li><p>Ні. — No.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer"><strong>Боюся, що не можу погодитися.</strong></div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer"><strong>Боюся, що не можу погодитися.</strong> (I'm afraid I can't agree.)</div></div>
 <ol start="4">
-<li><p>Ви не праві.</p></li>
+<li><p>Ви не праві. — You're not right.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer"><strong>Не впевнений, що це так. А ви враховували...?</strong></div></div>
-<h3 id="roleplaydiscussion">Role Play: Discussion</h3>
-<p>Practice agreeing and disagreeing:</p>
-<p><strong>Topic:</strong> Чи повинні студенти працювати під час навчання?</p>
-<p><strong>Person A:</strong> За (agrees that students should work)<br />
-<strong>Person B:</strong> Проти (disagrees)</p>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer"><strong>Не впевнений, що це так. А ви враховували...?</strong> (Not sure that's so. Did you consider...?)</div></div>
+<h3 id="roleplaydiscussion">Role play: Discussion</h3>
+<p>Practice agreement and disagreement:</p>
+<p><strong>Topic:</strong> Чи повинні студенти працювати під час навчання? — Should students work while studying?</p>
+<p><strong>Person A:</strong> For (believes students should work)<br />
+<strong>Person B:</strong> Against (disagrees)</p>
 <p>Use: Я вважаю, Я погоджуюся, Я не зовсім згоден, Проте, А чи не краще…</p>
-<h2 id="production">production</h2>
-<h3 id="debatepractice">Debate Practice</h3>
+<hr />
+<h2 id="production">Production</h2>
+<h3 id="debatepractice">Debate practice</h3>
 <p>Choose a topic and practice both sides:</p>
 <p><strong>Topics:</strong></p>
 <ol>
-<li>Соціальні мережі корисні для суспільства.</li>
-<li>Потрібно заборонити автомобілі в центрах міст.</li>
-<li>Домашніх тварин не варто тримати в квартирах.</li>
+<li>Соціальні мережі корисні для суспільства. — Social media is good for society.</li>
+<li>Потрібно заборонити автомобілі в центрах міст. — Cars should be banned from city centers.</li>
+<li>Домашніх тварин не варто тримати в квартирах. — Pets shouldn't be kept in apartments.</li>
 </ol>
 <p>For each topic:</p>
 <ul>
-<li>State your opinion</li>
-<li>Have partner disagree politely</li>
-<li>Find compromise using partial agreement</li>
+<li>Express your opinion</li>
+<li>Your partner politely disagrees</li>
+<li>Find a compromise through partial agreement</li>
 </ul>
-<h3 id="reallifescenarios">Real-Life Scenarios</h3>
+<h3 id="reallifescenarios">Real-life scenarios</h3>
 <p>How would you respond?</p>
 <ol>
-<li><p><strong>Колега:</strong> Ми повинні працювати у вихідні.<br />
+<li><p><strong>Colleague:</strong> Ми повинні працювати у вихідні. — We should work on weekends.<br />
 Your polite disagreement: ___</p></li>
-<li><p><strong>Друг:</strong> Цей фільм — найкращий цього року!<br />
+<li><p><strong>Friend:</strong> Цей фільм — найкращий цього року! — This movie is the best of the year!<br />
 Your partial agreement: ___</p></li>
-<li><p><strong>Начальник:</strong> Проєкт потрібно закінчити завтра.<br />
+<li><p><strong>Boss:</strong> Проєкт потрібно закінчити завтра. — The project needs to be finished tomorrow.<br />
 Your diplomatic response: ___</p></li>
 </ol>
-<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Exercises</h3>
+      <div class="md-content"><h2 id="quizagreementdisagreement">quiz: Agreement/Disagreement</h2>
+<blockquote>
+  <p>Match the situation with the appropriate response.</p>
+</blockquote>
+<ol>
+<li>Someone says something absolutely correct:</li>
+</ol>
+<ul>
+<li>[x] Абсолютно!</li>
+<li>[ ] Я не зовсім згоден.</li>
+</ul>
+<ol>
+<li>You partially agree with your boss:</li>
+</ol>
+<ul>
+<li>[x] Це правда, проте…</li>
+<li>[ ] Ні, це не так.</li>
+</ul>
+<ol>
+<li>Polite disagreement:</li>
+</ol>
+<ul>
+<li>[x] Боюся, що не можу погодитися.</li>
+<li>[ ] Аж ніяк!</li>
+</ul>
+<ol>
+<li>You're suggesting an alternative:</li>
+</ol>
+<ul>
+<li>[x] А може краще…?</li>
+<li>[ ] Ви помиляєтесь.</li>
+</ul>
+<ol>
+<li>Strong agreement:</li>
+</ol>
+<ul>
+<li>[x] Цілком згоден!</li>
+<li>[ ] Можливо, ви маєте рацію.</li>
+</ul>
+<h2 id="groupsortlevelsofagreement">group-sort: Levels of agreement</h2>
+<h3 id="strongagreement">Strong agreement</h3>
+<ul>
+<li>Абсолютно!</li>
+<li>Цілком згоден!</li>
+<li>Безперечно!</li>
+</ul>
+<h3 id="agreement">Agreement</h3>
+<ul>
+<li>Я погоджуюся</li>
+<li>Ви маєте рацію</li>
+<li>Це так</li>
+</ul>
+<h3 id="partialagreement">Partial agreement</h3>
+<ul>
+<li>Почасти так, але…</li>
+<li>Загалом так, хоча…</li>
+<li>Це правда, проте…</li>
+</ul>
+<h3 id="politedisagreement">Polite disagreement</h3>
+<ul>
+<li>Я не зовсім згоден</li>
+<li>Боюся, не можу погодитися</li>
+<li>Дозвольте не погодитися</li>
+</ul>
+<h2 id="fillindialogue">fill-in: Dialogue</h2>
+<blockquote>
+  <p>A: Я думаю, що всім потрібно вчитися до 30 років. — I think everyone should study until 30.<br />
+  B: ___ (Interesting thought), ___ (however) не всі мають таку можливість. — Not everyone has that opportunity.<br />
+  A: ___ (You're right). Але освіта важлива! — But education is important!<br />
+  B: ___ (I agree). Проте форми освіти різні. — But forms of education vary.<br />
+  A: ___ (Exactly)!</p>
+</blockquote>
+<p><strong>Answers:</strong> Цікава думка, проте, Ви маєте рацію, Я погоджуюся, Саме так</p>
 <hr />
 <hr />
 <hr /></div>
@@ -813,7 +945,7 @@ Your diplomatic response: ___</p></li>
   
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="agreementspectrum">Agreement Spectrum</h2>
+      <div class="md-content"><h2 id="agreementspectrum">Agreement spectrum</h2>
 <table>
 <thead>
 <tr>
@@ -823,11 +955,11 @@ Your diplomatic response: ___</p></li>
 </thead>
 <tbody>
 <tr>
-<td>Strong agree</td>
+<td>Strong agreement</td>
 <td>Абсолютно! Безперечно! Цілком згоден!</td>
 </tr>
 <tr>
-<td>Agree</td>
+<td>Agreement</td>
 <td>Я погоджуюся. Ви маєте рацію.</td>
 </tr>
 <tr>
@@ -835,65 +967,48 @@ Your diplomatic response: ___</p></li>
 <td>Почасти так, але… Це правда, проте…</td>
 </tr>
 <tr>
-<td>Soft disagree</td>
+<td>Soft disagreement</td>
 <td>Я не зовсім згоден. Не впевнений…</td>
 </tr>
 <tr>
-<td>Strong disagree</td>
+<td>Strong disagreement</td>
 <td>Я категорично проти. Зовсім ні!</td>
 </tr>
 </tbody>
 </table>
-<h2 id="diplomaticstrategies">Diplomatic Strategies</h2>
+<h2 id="diplomaticstrategies">Diplomatic strategies</h2>
 <ol>
-<li><strong>Acknowledge first:</strong> Я розумію вашу точку зору…</li>
-<li><strong>Soften:</strong> Не впевнений… / Боюся…</li>
-<li><strong>Question:</strong> А ви впевнені? / А чи не краще…?</li>
-<li><strong>Offer alternative:</strong> Я б запропонував…</li>
+<li><strong>First acknowledge:</strong> Я розумію вашу точку зору… — I understand your point of view…</li>
+<li><strong>Soften:</strong> Не впевнений… / Боюся… — Not sure… / I'm afraid…</li>
+<li><strong>Ask:</strong> А ви впевнені? / А чи не краще…? — Are you sure? / Wouldn't it be better…?</li>
+<li><strong>Suggest an alternative:</strong> Я б запропонував… — I would suggest…</li>
 </ol>
-<h2 id="keypatterns">Key Patterns</h2>
+<h2 id="keypatterns">Key patterns</h2>
 <ul>
-<li><strong>Partial agreement:</strong> X, але/проте Y</li>
-<li><strong>Polite disagreement:</strong> Боюся, що… / Не впевнений, що…</li>
-<li><strong>Diplomatic alternative:</strong> А може краще…?</li>
+<li><strong>Partial agreement:</strong> X, але/проте Y — X, but Y</li>
+<li><strong>Polite disagreement:</strong> Боюся, що… / Не впевнений, що… — I'm afraid… / Not sure that…</li>
+<li><strong>Diplomatic alternative:</strong> А може краще…? — Maybe it would be better…?</li>
 </ul>
 <blockquote>
-  <p><strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Direct disagreement can seem rude in Ukrainian</li>
-  <li>Use softening phrases for polite disagreement</li>
-  <li>Partial agreement is a useful compromise</li>
-  <li>Always consider offering alternatives</li>
-  <li>Match formality to the situation and relationship</li>
-  </ul>
+  <p>💡 <strong>Key takeaway</strong></p>
+  <p>In Ukrainian culture, direct disagreement can seem rude. Use <strong>softening</strong>: "Я не зовсім згоден" (I don't quite agree) instead of "Ні" (No). <strong>Partial agreement</strong> is a great compromise: "Це правда, проте…" (That's true, but…). The most elegant way to disagree is to <strong>ask a question</strong>: "А ви впевнені?" (Are you sure?) or <strong>suggest an alternative</strong>: "А може краще…?" (Maybe it would be better…?). Diplomacy isn't deception — it's respect for your conversation partner!</p>
 </blockquote></div>
     </div>
   
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('quiz')">Activities →</button>
+        <button class="btn btn-primary" onclick="showSection('vocab')">Activities →</button>
       </div>
     </section>
   
     
     
-    <section id="quiz" class="section"><div class="card"><h3>Agreement/Disagreement</h3>
-      <div class="score-display"><span class="score"><span id="quiz-score">0</span>/5</span></div>
-      <div id="quiz-container"></div>
-      <div class="completion-message" id="quiz-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetQuiz()">Reset</button><button class="btn btn-primary" onclick="showSection('sort')">Next →</button></div>
-    </div></section>
     
-    <section id="sort" class="section"><div class="card"><h3>Level of Agreement</h3>
-      <div class="score-display"><span class="score"><span id="sort-score">0</span>/12</span></div>
-      <div class="sort-pool" id="sort-pool"><div class="sort-items" id="sort-items"></div></div>
-      <div class="sort-groups"><div class="sort-group true-friends" data-group="true-friends"><h4>Strong Agreement</h4><div class="sort-items"></div></div><div class="sort-group false-friends" data-group="false-friends"><h4>Agreement</h4><div class="sort-items"></div></div><div class="sort-group new-letters" data-group="new-letters"><h4>Partial Agreement</h4><div class="sort-items"></div></div><div class="sort-group " data-group="group-3"><h4>Polite Disagreement</h4><div class="sort-items"></div></div></div>
-      <div class="completion-message" id="sort-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
-    </div></section>
+    
+    
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Нові слова (10)</h3>
+        <h3>Нові слова (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -903,7 +1018,7 @@ Your diplomatic response: ___</p></li>
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">погодитися</td><td class="vocab-ipa">/poɦoˈdɪtɪsʲɑ/</td><td class="vocab-en">to agree</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">сперечатися</td><td class="vocab-ipa">/spɛrɛˈt͡ʃɑtɪsʲɑ/</td><td class="vocab-en">to argue</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">заперечувати</td><td class="vocab-ipa">/zɑpɛrɛˈt͡ʃuvɑtɪ/</td><td class="vocab-en">to object</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">заперечити</td><td class="vocab-ipa">/zɑpɛˈrɛt͡ʃɪtɪ/</td><td class="vocab-en">to object</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">натомість</td><td class="vocab-ipa">/nɑˈtomʲistʲ/</td><td class="vocab-en">instead</td><td class="vocab-note">adv</td></tr><tr><td class="vocab-uk">почасти</td><td class="vocab-ipa">/poˈt͡ʃɑstɪ/</td><td class="vocab-en">partly</td><td class="vocab-note">adv</td></tr><tr><td class="vocab-uk">враховувати</td><td class="vocab-ipa">/vrɑxoˈvuvɑtɪ/</td><td class="vocab-en">to consider, take into account</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">врахувати</td><td class="vocab-ipa">/vrɑxuˈvɑtɪ/</td><td class="vocab-en">to consider</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-ipa">/zɑproponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-ipa">/proponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td><td class="vocab-note">impf</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">враховувати</td><td class="vocab-ipa">/vrɑxoˈvuvɑtɪ/</td><td class="vocab-en">to consider, take into account</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">врахувати</td><td class="vocab-ipa">/vrɑxuˈvɑtɪ/</td><td class="vocab-en">to consider</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">заперечувати</td><td class="vocab-ipa">/zɑpɛrɛˈt͡ʃuvɑtɪ/</td><td class="vocab-en">to object</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">заперечити</td><td class="vocab-ipa">/zɑpɛˈrɛt͡ʃɪtɪ/</td><td class="vocab-en">to object</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-ipa">/proponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-ipa">/zɑproponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">погодитися</td><td class="vocab-ipa">/poɦoˈdɪtɪsʲɑ/</td><td class="vocab-en">to agree</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">сперечатися</td><td class="vocab-ipa">/spɛrɛˈt͡ʃɑtɪsʲɑ/</td><td class="vocab-en">to argue</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">почасти</td><td class="vocab-ipa">/poˈt͡ʃɑstɪ/</td><td class="vocab-en">partly</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">натомість</td><td class="vocab-ipa">/nɑˈtomʲistʲ/</td><td class="vocab-en">instead</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дипломатичний</td><td class="vocab-ipa">/dɪplomɑˈtɪt͡ʃnɪj/</td><td class="vocab-en">diplomatic</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">конфронтаційний</td><td class="vocab-ipa">/konfrontɑˈt͡sʲijnɪj/</td><td class="vocab-en">confrontational</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">асиметрія</td><td class="vocab-ipa">/ɑsɪmɛˈtrʲijɑ/</td><td class="vocab-en">asymmetry</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">неввічливий</td><td class="vocab-ipa">/nɛvˈvʲit͡ʃlɪvɪj/</td><td class="vocab-en">impolite</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">агресивний</td><td class="vocab-ipa">/ɑɦrɛˈsɪvnɪj/</td><td class="vocab-en">aggressive</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">емфатичний</td><td class="vocab-ipa">/ɛmfɑˈtɪt͡ʃnɪj/</td><td class="vocab-en">emphatic</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">компроміс</td><td class="vocab-ipa">/komproˈmʲis/</td><td class="vocab-en">compromise</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">варіант</td><td class="vocab-ipa">/vɑrʲiˈɑnt/</td><td class="vocab-en">option, variant</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">сенс</td><td class="vocab-ipa">/sɛns/</td><td class="vocab-en">sense, meaning</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">співрозмовник</td><td class="vocab-ipa">/spʲivrozmovˈnɪk/</td><td class="vocab-en">interlocutor</td><td class="vocab-note">m</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -926,10 +1041,12 @@ Your diplomatic response: ___</p></li>
   <script>
 
     const matchPairs = [];
-    const quizData = [{"question":"Someone says something completely true:","options":["Абсолютно!","Я не зовсім згоден."],"correctIndex":0,"explanation":""},{"question":"You partially agree with boss:","options":["Це правда, проте...","Ні, це не так."],"correctIndex":0,"explanation":""},{"question":"Polite disagreement:","options":["Боюся, що не можу погодитися.","Аж ніяк!"],"correctIndex":0,"explanation":""},{"question":"Suggesting alternative:","options":["А може краще...?","Ви помиляєтесь."],"correctIndex":0,"explanation":""},{"question":"Strong agreement:","options":["Цілком згоден!","Можливо, ви маєте рацію."],"correctIndex":0,"explanation":""}];
-    const sortData = {"true-friends":["Абсолютно!","Цілком згоден!","Безперечно!"],"false-friends":["Я погоджуюся","Ви маєте рацію","Це так"],"new-letters":["Почасти так, але...","Загалом так, хоча...","Це правда, проте..."],"group-3":["Я не зовсім згоден","Боюся, не можу погодитися","Дозвольте не погодитися"]};
-    const vocabData = [{"uk":"погодитися","translit":"","en":"to agree","note":"pf"},{"uk":"сперечатися","translit":"","en":"to argue","note":"impf"},{"uk":"заперечувати","translit":"","en":"to object","note":"impf"},{"uk":"заперечити","translit":"","en":"to object","note":"pf"},{"uk":"натомість","translit":"","en":"instead","note":"adv"},{"uk":"почасти","translit":"","en":"partly","note":"adv"},{"uk":"враховувати","translit":"","en":"to consider, take into account","note":"impf"},{"uk":"врахувати","translit":"","en":"to consider","note":"pf"},{"uk":"запропонувати","translit":"","en":"to suggest","note":"pf"},{"uk":"пропонувати","translit":"","en":"to suggest","note":"impf"}];
-    const totalSort = 12;
+    const quizData = [];
+    const sortData = {};
+    const fillData = {"items":[],"text":"","answers":[]};
+    const orderData = {"items":[],"correctOrder":[]};
+    const vocabData = [{"uk":"враховувати","translit":"","en":"to consider, take into account","note":"impf"},{"uk":"врахувати","translit":"","en":"to consider","note":"pf"},{"uk":"заперечувати","translit":"","en":"to object","note":"impf"},{"uk":"заперечити","translit":"","en":"to object","note":"pf"},{"uk":"пропонувати","translit":"","en":"to suggest","note":"impf"},{"uk":"запропонувати","translit":"","en":"to suggest","note":"pf"},{"uk":"погодитися","translit":"","en":"to agree","note":"pf"},{"uk":"сперечатися","translit":"","en":"to argue","note":"impf"},{"uk":"почасти","translit":"","en":"partly","note":""},{"uk":"натомість","translit":"","en":"instead","note":""},{"uk":"дипломатичний","translit":"","en":"diplomatic","note":""},{"uk":"конфронтаційний","translit":"","en":"confrontational","note":""},{"uk":"асиметрія","translit":"","en":"asymmetry","note":"f"},{"uk":"неввічливий","translit":"","en":"impolite","note":""},{"uk":"агресивний","translit":"","en":"aggressive","note":""},{"uk":"емфатичний","translit":"","en":"emphatic","note":""},{"uk":"компроміс","translit":"","en":"compromise","note":"m"},{"uk":"варіант","translit":"","en":"option, variant","note":"m"},{"uk":"сенс","translit":"","en":"sense, meaning","note":"m"},{"uk":"співрозмовник","translit":"","en":"interlocutor","note":"m"}];
+    const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -963,6 +1080,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -1131,6 +1250,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

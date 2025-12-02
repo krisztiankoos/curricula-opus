@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -340,6 +365,8 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
       <button class="nav-tab" data-section="quiz">Quiz</button>
+      
+      
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -919,6 +946,8 @@ footer {
     </div></section>
     
     
+    
+    
     <section id="vocab" class="section">
       <div class="card">
         <h3>Нові слова (12)</h3>
@@ -956,6 +985,8 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«зів'ялий» — чи існує ця форма?","options":["Так, це правильна форма","Ні, це русизм"],"correctIndex":0,"explanation":"Від неперехідного дієслова зміни стану → існує"},{"question":"«прочиталий» — чи існує ця форма?","options":["Так, це правильна форма","Ні, така форма не вживається"],"correctIndex":1,"explanation":"Від перехідного дієслова → не існує"},{"question":"«минулий» — це...","options":["Прикметник (правильно)","Русизм"],"correctIndex":0,"explanation":"«Минулий» — усталений прикметник"},{"question":"«минувший» — це...","options":["Правильна українська форма","Русизм"],"correctIndex":1,"explanation":"«Минувший» — русизм, правильно: «минулий»"}];
     const sortData = {};
+    const fillData = {"items":[],"text":"","answers":[]};
+    const orderData = {"items":[],"correctOrder":[]};
     const vocabData = [{"uk":"зів'ялий","translit":"","en":"wilted","note":"adj, від зів'янути"},{"uk":"посивілий","translit":"","en":"gray-haired","note":"adj, від посивіти"},{"uk":"змарнілий","translit":"","en":"emaciated","note":"adj, від змарніти"},{"uk":"застарілий","translit":"","en":"outdated","note":"adj, від застаріти"},{"uk":"похилий","translit":"","en":"tilted; elderly","note":"adj, «похилого віку»"},{"uk":"колишній","translit":"","en":"former","note":"adj, не «бувший»!"},{"uk":"бувалий","translit":"","en":"experienced","note":"adj"},{"uk":"зрілий","translit":"","en":"mature, ripe","note":"adj"},{"uk":"спілий","translit":"","en":"ripe","note":"adj"},{"uk":"запеклий","translit":"","en":"fierce","note":"adj"},{"uk":"перехідний","translit":"","en":"transitive","note":"про дієслова"},{"uk":"неперехідний","translit":"","en":"intransitive","note":"про дієслова"}];
     const totalSort = 0;
   
@@ -991,6 +1022,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -1159,6 +1192,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

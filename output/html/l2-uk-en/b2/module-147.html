@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -340,6 +365,8 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
       <button class="nav-tab" data-section="quiz">Quiz</button>
+      
+      
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -624,6 +651,73 @@ footer {
 <hr /></div>
     </div>
   
+    <div class="card section-content">
+      <h3>Сучасні медіа-приклади</h3>
+      <div class="md-content"><h2 id="">Де знайти кожен стиль</h2>
+<table>
+<thead>
+<tr>
+<th>Стиль</th>
+<th>Сучасні джерела</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Розмовний</strong></td>
+<td>Twitter/X, YouTube-коментарі, форуми</td>
+<td>«Ого, бачили що сьогодні було?»</td>
+</tr>
+<tr>
+<td><strong>Художній</strong></td>
+<td>Сучасна проза (Жадан, Андрухович)</td>
+<td>«Місто пахло димом і надією»</td>
+</tr>
+<tr>
+<td><strong>Публіцистичний</strong></td>
+<td>Українська правда, Укрінформ, Радіо Свобода</td>
+<td>«Парламент ухвалив законопроєкт»</td>
+</tr>
+<tr>
+<td><strong>Науковий</strong></td>
+<td>Наукові журнали, дисертації (NBUV)</td>
+<td>«Гіпотеза підтверджується даними»</td>
+</tr>
+<tr>
+<td><strong>Офіційно-діловий</strong></td>
+<td>Урядовий портал, Верховна Рада</td>
+<td>«Відповідно до чинного законодавства»</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-1">Приклади з реальних джерел</h2>
+<p><strong>Публіцистичний</strong> (Укрінформ):</p>
+<blockquote>
+  <p>«Україна отримала черговий пакет військової допомоги від партнерів. Про це повідомив Міністр оборони під час брифінгу.»</p>
+</blockquote>
+<p><strong>Офіційно-діловий</strong> (Урядовий портал):</p>
+<blockquote>
+  <p>«Кабінет Міністрів України постановляє затвердити Порядок надання державної підтримки відповідно до статті 7 Закону України.»</p>
+</blockquote>
+<p><strong>Науковий</strong> (академічний журнал):</p>
+<blockquote>
+  <p>«Результати експерименту свідчать про статистично значущий вплив (p &lt; 0.05) досліджуваного фактору на залежну змінну.»</p>
+</blockquote>
+<p><strong>Розмовний</strong> (Twitter/X):</p>
+<blockquote>
+  <p>«Народ, хто був на концерті вчора? Як воно взагалі? Варто йти?»</p>
+  <p>🌍 <strong>Де практикувати</strong></p>
+  <ul>
+  <li><strong>YouTube:</strong> Радіо Свобода, Ukraїner, Суспільне</li>
+  <li><strong>Подкасти:</strong> «Все буде добре», «Тут і зараз»</li>
+  <li><strong>Twitter/X:</strong> українські журналісти та медіа</li>
+  <li><strong>Література:</strong> Сергій Жадан, Юрій Андрухович</li>
+  <li><strong>Офіційні сайти:</strong> rada.gov.ua, kmu.gov.ua</li>
+  </ul>
+</blockquote>
+<hr /></div>
+    </div>
+  
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><h2 id="">П'ять стилів української мови</h2>
@@ -688,9 +782,11 @@ footer {
     </div></section>
     
     
+    
+    
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Нові слова (9)</h3>
+        <h3>Нові слова (8)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -700,18 +796,18 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">регістр</td><td class="vocab-en">register</td><td class="vocab-note">рівень формальності</td></tr><tr><td class="vocab-uk">функціональний стиль</td><td class="vocab-en">functional style</td><td class="vocab-note">п&#039;ять стилів</td></tr><tr><td class="vocab-uk">розмовний</td><td class="vocab-en">colloquial</td><td class="vocab-note">побутовий</td></tr><tr><td class="vocab-uk">художній</td><td class="vocab-en">literary, artistic</td><td class="vocab-note">для літератури</td></tr><tr><td class="vocab-uk">публіцистичний</td><td class="vocab-en">journalistic</td><td class="vocab-note">для ЗМІ</td></tr><tr><td class="vocab-uk">офіційно-діловий</td><td class="vocab-en">official, formal</td><td class="vocab-note">для документів</td></tr><tr><td class="vocab-uk">кліше</td><td class="vocab-en">cliché</td><td class="vocab-note">стандартний вираз</td></tr><tr><td class="vocab-uk">канцеляризм</td><td class="vocab-en">bureaucratese</td><td class="vocab-note">офіційний штамп</td></tr><tr><td class="vocab-uk">маркер</td><td class="vocab-en">marker</td><td class="vocab-note">ознака стилю</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">регістр</td><td class="vocab-en">register</td><td class="vocab-note">рівень формальності</td></tr><tr><td class="vocab-uk">функціональний стиль</td><td class="vocab-en">functional style</td><td class="vocab-note">п&#039;ять стилів</td></tr><tr><td class="vocab-uk">розмовний</td><td class="vocab-en">colloquial</td><td class="vocab-note">побутовий</td></tr><tr><td class="vocab-uk">художній</td><td class="vocab-en">literary, artistic</td><td class="vocab-note">для літератури</td></tr><tr><td class="vocab-uk">публіцистичний</td><td class="vocab-en">journalistic</td><td class="vocab-note">для ЗМІ</td></tr><tr><td class="vocab-uk">офіційно-діловий</td><td class="vocab-en">official, formal</td><td class="vocab-note">для документів</td></tr><tr><td class="vocab-uk">кліше</td><td class="vocab-en">cliché</td><td class="vocab-note">стандартний вираз</td></tr><tr><td class="vocab-uk">канцеляризм</td><td class="vocab-en">bureaucratese</td><td class="vocab-note">офіційний штамп</td></tr></tbody>
           </table>
         </div>
       </div>
       
       <div class="card review-vocab">
-        <h3>Повторення (1)</h3>
+        <h3>Повторення (2)</h3>
         <p class="review-note">Words from earlier modules for review</p>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
-            <tbody><tr><td class="vocab-uk">науковий</td><td class="vocab-module">Module 65</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">маркер</td><td class="vocab-module">Module 82</td></tr><tr><td class="vocab-uk">науковий</td><td class="vocab-module">Module 65</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -725,7 +821,9 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Рішення про затвердження бюджету прийнято одноголосно.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":0,"explanation":"Кліше, пасив -но → офіційно-діловий"},{"question":"«Ну, я не знаю... Може, завтра?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":1,"explanation":"Частка «ну», неповнота → розмовний"},{"question":"«Дослідження показує статистично значущу кореляцію.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":2,"explanation":"Терміни, безособовість → науковий"},{"question":"«Срібний місяць виплив із-за хмар.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":3,"explanation":"Епітет «срібний», образність → художній"},{"question":"«Чи готова Україна до нових викликів?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":3,"explanation":"Риторичне питання → публіцистичний"}];
     const sortData = {};
-    const vocabData = [{"uk":"регістр","translit":"","en":"register","note":"рівень формальності"},{"uk":"функціональний стиль","translit":"","en":"functional style","note":"п'ять стилів"},{"uk":"розмовний","translit":"","en":"colloquial","note":"побутовий"},{"uk":"художній","translit":"","en":"literary, artistic","note":"для літератури"},{"uk":"публіцистичний","translit":"","en":"journalistic","note":"для ЗМІ"},{"uk":"офіційно-діловий","translit":"","en":"official, formal","note":"для документів"},{"uk":"кліше","translit":"","en":"cliché","note":"стандартний вираз"},{"uk":"канцеляризм","translit":"","en":"bureaucratese","note":"офіційний штамп"},{"uk":"маркер","translit":"","en":"marker","note":"ознака стилю"}];
+    const fillData = {"items":[],"text":"","answers":[]};
+    const orderData = {"items":[],"correctOrder":[]};
+    const vocabData = [{"uk":"регістр","translit":"","en":"register","note":"рівень формальності"},{"uk":"функціональний стиль","translit":"","en":"functional style","note":"п'ять стилів"},{"uk":"розмовний","translit":"","en":"colloquial","note":"побутовий"},{"uk":"художній","translit":"","en":"literary, artistic","note":"для літератури"},{"uk":"публіцистичний","translit":"","en":"journalistic","note":"для ЗМІ"},{"uk":"офіційно-діловий","translit":"","en":"official, formal","note":"для документів"},{"uk":"кліше","translit":"","en":"cliché","note":"стандартний вираз"},{"uk":"канцеляризм","translit":"","en":"bureaucratese","note":"офіційний штамп"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -760,6 +858,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -928,6 +1028,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

@@ -322,6 +322,31 @@ footer {
 .show-answer-btn:hover { background: #e5e5e5; }
 .show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
 
+/* Fill-in Activity */
+.fill-container { display: flex; flex-direction: column; gap: 1rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.fill-question.answered .fill-check { display: none; }
+.fill-input { width: 100%; max-width: 300px; padding: 0.75rem 1rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; margin: 0.5rem 0; }
+.fill-input:focus { border-color: var(--primary); outline: none; }
+.fill-input.correct { border-color: var(--success); background: #e8f8f0; }
+.fill-input.wrong { border-color: var(--danger); background: #fde8e8; }
+.fill-check { margin-left: 0.5rem; }
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
   </style>
 </head>
 <body>
@@ -340,6 +365,8 @@ footer {
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       
       <button class="nav-tab" data-section="quiz">Quiz</button>
+      
+      
       
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -361,6 +388,145 @@ footer {
 <blockquote>
   <p><strong>Чи знали ви?</strong></p>
   <p>Форма -но/-то розвинулася в українській мові приблизно в <strong>XIV-XV століттях</strong>. Вона виникла з давніх безособових конструкцій і стала характерною рисою саме української (а не російської чи білоруської) ділової мови. Коли козацькі писарі складали універсали, вони вживали саме цю форму: «Оголошено всьому війську…»</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Вимова: -но/-то vs дієприкметник</h3>
+      <div class="md-content"><h2 id="">Порівняння звучання</h2>
+<p>Головна фонетична різниця — у закінченні:</p>
+<table>
+<thead>
+<tr>
+<th>Форма</th>
+<th>Закінчення</th>
+<th>IPA</th>
+<th>Звучання</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Дієприкметник (ч.р.)</td>
+<td>-ий</td>
+<td>/ɪj/</td>
+<td>довгий дифтонг</td>
+</tr>
+<tr>
+<td>Дієприкметник (ж.р.)</td>
+<td>-а</td>
+<td>/ɑ/</td>
+<td>відкритий голосний</td>
+</tr>
+<tr>
+<td>Безособовий</td>
+<td>-о</td>
+<td>/o/</td>
+<td>закритий, короткий</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-1">Мінімальні пари для практики</h2>
+<p>Вимовляйте вголос, звертаючи увагу на закінчення:</p>
+<table>
+<thead>
+<tr>
+<th>Дієприкметник</th>
+<th>IPA</th>
+<th>Безособовий</th>
+<th>IPA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>підпис<strong>а́ний</strong></td>
+<td>/pɪdˈpɪsanɪj/</td>
+<td>підпис<strong>а́но</strong></td>
+<td>/pɪdˈpɪsano/</td>
+</tr>
+<tr>
+<td>викон<strong>а́ний</strong></td>
+<td>/ˈwɪkonanɪj/</td>
+<td>викон<strong>а́но</strong></td>
+<td>/ˈwɪkonano/</td>
+</tr>
+<tr>
+<td>ухв<strong>а́лений</strong></td>
+<td>/uxˈwalenɪj/</td>
+<td>ухв<strong>а́лено</strong></td>
+<td>/uxˈwaleno/</td>
+</tr>
+<tr>
+<td>затв<strong>е́рджений</strong></td>
+<td>/zatˈwerd͡ʒenɪj/</td>
+<td>затв<strong>е́рджено</strong></td>
+<td>/zatˈwerd͡ʒeno/</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-2">Наголос у -но/-то формах</h2>
+<p>Наголос <strong>не змінюється</strong> при переході від дієприкметника до -но/-то:</p>
+<table>
+<thead>
+<tr>
+<th>Дієприкметник</th>
+<th>-но/-то</th>
+<th>Наголос</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>напи́саний</td>
+<td>напи́сано</td>
+<td>на -са-</td>
+</tr>
+<tr>
+<td>зро́блений</td>
+<td>зро́блено</td>
+<td>на зро-</td>
+</tr>
+<tr>
+<td>прийня́тий</td>
+<td>прийня́то</td>
+<td>на -ня-</td>
+</tr>
+<tr>
+<td>відкри́тий</td>
+<td>відкри́то</td>
+<td>на -кри-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-3">Інтонаційні контури</h2>
+<table>
+<thead>
+<tr>
+<th>Стиль</th>
+<th>Контур</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Нейтральний</td>
+<td>→ ↘</td>
+<td>Угоду підпи́сано.</td>
+</tr>
+<tr>
+<td>Офіційний (новини)</td>
+<td>↗ ↘</td>
+<td>Уго́ду ↗ підпи́сано. ↘</td>
+</tr>
+<tr>
+<td>Наголошення факту</td>
+<td>↘</td>
+<td>Підпи́сано! ↘</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><strong>Порада для вимови:</strong></p>
+  <p>-но/-то форми звучать <strong>коротше й чіткіше</strong>, ніж дієприкметники. Це відповідає їхній функції — констатувати факт, а не описувати стан. Практикуйте: «Зроблено!» має звучати як штамп, а не як опис.</p>
 </blockquote>
 <hr /></div>
     </div>
@@ -809,6 +975,123 @@ footer {
 <hr /></div>
     </div>
   
+    <div class="card section-content">
+      <h3>Типові помилки / Common Errors</h3>
+      <div class="md-content"><h2 id="">Відмінок</h2>
+<table>
+<thead>
+<tr>
+<th>❌ Неправильно</th>
+<th>✅ Правильно</th>
+<th>Пояснення</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*Книга написано.</td>
+<td>Книгу написано.</td>
+<td>Знахідний, не називний!</td>
+</tr>
+<tr>
+<td>*Роботи виконано.</td>
+<td>Роботу виконано.</td>
+<td>Знахідний однина, не родовий</td>
+</tr>
+<tr>
+<td>*Рішень прийнято.</td>
+<td>Рішення прийнято.</td>
+<td>Знахідний = називний для с.р.</td>
+</tr>
+<tr>
+<td>*Закону ухвалено.</td>
+<td>Закон ухвалено.</td>
+<td>Знахідний = називний для неживого ч.р.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-1">Змішування форм</h2>
+<table>
+<thead>
+<tr>
+<th>❌ Неправильно</th>
+<th>✅ Правильно</th>
+<th>Пояснення</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*Книгу написана.</td>
+<td>Книгу написано.</td>
+<td>-но, не дієприкметник!</td>
+</tr>
+<tr>
+<td>*Роботу зроблений.</td>
+<td>Роботу зроблено.</td>
+<td>-но, не дієприкметник!</td>
+</tr>
+<tr>
+<td>*Документ підписана.</td>
+<td>Документ підписано.</td>
+<td>-но форма незмінна</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-2">Порядок слів</h2>
+<table>
+<thead>
+<tr>
+<th>❌ Неправильно</th>
+<th>✅ Правильно</th>
+<th>Пояснення</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*Написано книгу вчора.</td>
+<td>Книгу написано вчора.</td>
+<td>Додаток зазвичай спочатку</td>
+</tr>
+<tr>
+<td>*Директором підписано наказ.</td>
+<td>Наказ підписано директором.</td>
+<td>Діяч наприкінці</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-3">Стильова невідповідність</h2>
+<table>
+<thead>
+<tr>
+<th>❌ Занадто офіційно</th>
+<th>✅ Розмовно</th>
+<th>Контекст</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Борщ зварено!</td>
+<td>Борщ зварили!</td>
+<td>Домашня кухня</td>
+</tr>
+<tr>
+<td>Привітання отримано.</td>
+<td>Дякую за привітання!</td>
+<td>SMS другу</td>
+</tr>
+<tr>
+<td>Вас запрошено.</td>
+<td>Тебе запрошують.</td>
+<td>Неформальне запрошення</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><strong>Порада:</strong></p>
+  <p>-но/-то форми звучать офіційно. У розмовній мові вони можуть сприйматися як сарказм або надмірна формальність. Якщо друг каже «Тебе запрошено на вечірку» — це або жарт, або дуже офіційна вечірка!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
     <div class="card section-practice">
       <h3>Practice</h3>
       <div class="md-content"><h2 id="">Трансформуйте</h2>
@@ -868,6 +1151,65 @@ footer {
 «Засідання комісії <strong>відкрито</strong> 15 березня 2024 року о 14:00. Присутні: голова комісії та 5 членів. <strong>Розглянуто</strong> питання про проведення конференції. <strong>Заслухано</strong> пропозицію оргкомітету. <strong>Ухвалено</strong> рішення про проведення конференції 20 квітня. <strong>Доручено</strong> секретарю розіслати запрошення. Засідання <strong>закрито</strong> о 15:30.»</p>
 <hr />
 <hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Інтеграція з іншими модулями</h3>
+      <div class="md-content"><h2 id="147152">Зв'язок з регістром (→ Модулі 147-152)</h2>
+<p>Вибір між -но/-то та іншими пасивними формами залежить від <strong>регістру</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Регістр</th>
+<th>Форма</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Офіційний</td>
+<td>-но/-то</td>
+<td>Рішення ухвалено.</td>
+</tr>
+<tr>
+<td>Нейтральний</td>
+<td>дієприкметник</td>
+<td>Рішення ухвалене.</td>
+</tr>
+<tr>
+<td>Розмовний</td>
+<td>3-я ос. мн.</td>
+<td>Рішення ухвалили.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>Детальніше про регістри — у <strong>Модулях 147-152</strong>.</p>
+</blockquote>
+<h2 id="142">Зв'язок з дієприкметниками (→ Модуль 142)</h2>
+<p>Форми -но/-то утворюються від дієприкметників:</p>
+<pre><code>написаний → написано
+зроблений → зроблено
+</code></pre>
+<blockquote>
+  <p>Повторіть утворення дієприкметників у <strong>Модулі 142</strong>.</p>
+</blockquote>
+<h2 id="">Практичне завдання: Інтеграція</h2>
+<p>Перепишіть речення у трьох регістрах:</p>
+<p><strong>Документи підготовлені.</strong></p>
+<ol>
+<li><p>Офіційний: ___</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Документи підготовлено.</div></div>
+<ol start="2">
+<li><p>Нейтральний: ___</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Документи підготовлені / є підготовленими.</div></div>
+<ol start="3">
+<li><p>Розмовний: ___</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">Документи підготували.</div></div>
 <hr /></div>
     </div>
   
@@ -941,6 +1283,8 @@ footer {
     </div></section>
     
     
+    
+    
     <section id="vocab" class="section">
       <div class="card">
         <h3>Нові слова (10)</h3>
@@ -978,6 +1322,8 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Книга написана.» — як буде з -но/-то?","options":["Книга написано.","Книгу написано.","Книги написано."],"correctIndex":1,"explanation":"Підмет → знахідний відмінок: книга → книгу"},{"question":"«Робота виконана.» — як буде з -но/-то?","options":["Роботу виконано.","Роботи виконано.","Робота виконано."],"correctIndex":0,"explanation":"робота → роботу (знахідний)"},{"question":"«Договір підписаний.» — як буде з -но/-то?","options":["Договору підписано.","Договір підписано.","Договори підписано."],"correctIndex":1,"explanation":"договір → договір (знахідний = називний для чол. роду неживого)"}];
     const sortData = {};
+    const fillData = {"items":[],"text":"","answers":[]};
+    const orderData = {"items":[],"correctOrder":[]};
     const vocabData = [{"uk":"безособовий","translit":"","en":"impersonal","note":"граматичний термін"},{"uk":"затверджено","translit":"","en":"approved","note":"офіційна формула"},{"uk":"погоджено","translit":"","en":"agreed","note":"офіційна формула"},{"uk":"відхилено","translit":"","en":"rejected","note":"офіційна формула"},{"uk":"розглянуто","translit":"","en":"considered","note":"офіційна формула"},{"uk":"доручено","translit":"","en":"entrusted, assigned","note":"для завдань"},{"uk":"заслухано","translit":"","en":"heard (report)","note":"для доповідей"},{"uk":"протокол","translit":"","en":"minutes, protocol","note":"документ"},{"uk":"порядок денний","translit":"","en":"agenda","note":"список питань"},{"uk":"засідання","translit":"","en":"meeting, session","note":"збори"}];
     const totalSort = 0;
   
@@ -1013,6 +1359,8 @@ document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', (
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
   initSort();
+  if (typeof initFill === 'function') initFill();
+  if (typeof initOrder === 'function') initOrder();
   initVocab();
 });
 
@@ -1181,6 +1529,168 @@ function resetSort() {
   document.getElementById('sort-complete')?.classList.remove('show');
   document.querySelectorAll('.sort-group .sort-items').forEach(g => g.innerHTML = '');
   initSort();
+}
+
+
+// Fill-in Activity
+let fillScore = 0, fillAns = 0;
+
+function initFill() {
+  const c = document.getElementById('fill-container');
+  if (!c || !fillData.items.length) return;
+  c.innerHTML = '';
+
+  fillData.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.innerHTML = `
+      <h4>Q${i + 1}: ${item.prompt || item.sentence || ''}</h4>
+      <input type="text" class="fill-input" data-idx="${i}" data-answer="${item.answer || ''}" placeholder="Type your answer...">
+      <button class="btn btn-outline btn-sm fill-check" data-idx="${i}">Check</button>
+      <div class="fill-feedback" id="fill-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  document.querySelectorAll('.fill-check').forEach(b => b.addEventListener('click', handleFill));
+  document.querySelectorAll('.fill-input').forEach(i => i.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleFill({ target: e.target.nextElementSibling });
+  }));
+}
+
+function handleFill(e) {
+  const idx = e.target.dataset.idx;
+  const q = e.target.closest('.fill-question');
+  if (q.classList.contains('answered')) return;
+
+  const input = q.querySelector('.fill-input');
+  const userAnswer = input.value.trim().toLowerCase();
+  const correctAnswer = input.dataset.answer.toLowerCase();
+  const fb = document.getElementById('fill-fb-' + idx);
+
+  q.classList.add('answered');
+
+  if (userAnswer === correctAnswer) {
+    input.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">Correct!</span>';
+    fillScore++;
+  } else {
+    input.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">Answer: ${input.dataset.answer}</span>`;
+  }
+
+  document.getElementById('fill-score').textContent = fillScore;
+  fillAns++;
+  if (fillAns === fillData.items.length) document.getElementById('fill-complete').classList.add('show');
+}
+
+function resetFill() {
+  fillScore = 0;
+  fillAns = 0;
+  document.getElementById('fill-score').textContent = '0';
+  document.getElementById('fill-complete')?.classList.remove('show');
+  initFill();
+}
+
+
+// Order/Unjumble Activity
+let orderScore = 0, orderTotal = 0;
+
+function initOrder() {
+  const c = document.getElementById('order-container');
+  if (!c || !orderData.items.length) return;
+  c.innerHTML = '';
+
+  orderTotal = orderData.items.length;
+
+  // Shuffle items for display
+  const shuffled = [...orderData.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  shuffled.sort(() => Math.random() - 0.5);
+
+  const div = document.createElement('div');
+  div.className = 'order-items';
+  div.innerHTML = shuffled.map((item, i) => `
+    <div class="order-item" draggable="true" data-orig="${item.origIdx}">
+      <span class="order-handle">☰</span>
+      <span class="order-text">${item.text}</span>
+    </div>
+  `).join('');
+  c.appendChild(div);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn btn-outline';
+  checkBtn.textContent = 'Check Order';
+  checkBtn.onclick = checkOrder;
+  c.appendChild(checkBtn);
+
+  // Enable drag and drop
+  initDragDrop();
+}
+
+function initDragDrop() {
+  const items = document.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const container = item.parentNode;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder() {
+  const items = document.querySelectorAll('.order-item');
+  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+
+  // Check if order is correct (0, 1, 2, 3, ...)
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = orderData.correctOrder.length ? orderData.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    orderScore = orderTotal;
+    document.getElementById('order-score').textContent = orderScore;
+    document.getElementById('order-complete').classList.add('show');
+  }
+}
+
+function resetOrder() {
+  orderScore = 0;
+  document.getElementById('order-score').textContent = '0';
+  document.getElementById('order-complete')?.classList.remove('show');
+  initOrder();
 }
 
 

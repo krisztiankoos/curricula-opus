@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">City Navigation</h2>
         <p style="color:var(--text-muted)">Finding Your Way</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="lostinkyiv">Lost in Kyiv?</h3>
 <p>You've landed in Kyiv. You need to find your hotel, a café, the metro… How do you ask for directions?</p>
 <p>Key phrases you'll learn:</p>
@@ -740,8 +755,13 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
 <li>Дякую!</li>
 </ul>
 <hr />
-<h1 id="directionpatterns">Direction Patterns</h1>
-<h2 id="askingfordirections">Asking for Directions</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Direction Patterns</h3>
+      <div class="md-content"><h2 id="askingfordirections">Asking for Directions</h2>
 <table>
 <thead>
 <tr>
@@ -803,9 +823,12 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li><strong>Де…?</strong> for asking location</li>
@@ -822,9 +845,11 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
   <li>Absence: немає <strong>часу</strong> (no time)</li>
   <li>After numbers 5+: п'ять <strong>книг</strong> (five books)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -833,7 +858,7 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
       <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">прямо</div><div class="match-item" data-pair="1">праворуч</div><div class="match-item" data-pair="2">ліворуч</div><div class="match-item" data-pair="3">назад</div><div class="match-item" data-pair="4">близько</div><div class="match-item" data-pair="5">далеко</div><div class="match-item" data-pair="6">біля</div><div class="match-item" data-pair="7">навпроти</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">left</div><div class="match-item" data-pair="5">far</div><div class="match-item" data-pair="1">right</div><div class="match-item" data-pair="0">straight</div><div class="match-item" data-pair="6">next to</div><div class="match-item" data-pair="4">near</div><div class="match-item" data-pair="7">opposite</div><div class="match-item" data-pair="3">back</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="6">next to</div><div class="match-item" data-pair="2">left</div><div class="match-item" data-pair="1">right</div><div class="match-item" data-pair="5">far</div><div class="match-item" data-pair="7">opposite</div><div class="match-item" data-pair="4">near</div><div class="match-item" data-pair="3">back</div><div class="match-item" data-pair="0">straight</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -854,8 +879,25 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (22)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (22)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">прямо</td><td class="vocab-ipa">/ˈprʲɑmɔ/</td><td class="vocab-en">straight</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">праворуч</td><td class="vocab-ipa">/prɑˈvɔrutʃ/</td><td class="vocab-en">to the right</td><td class="vocab-note">право = right</td></tr><tr><td class="vocab-uk">ліворуч</td><td class="vocab-ipa">/lʲiˈvɔrutʃ/</td><td class="vocab-en">to the left</td><td class="vocab-note">ліво = left</td></tr><tr><td class="vocab-uk">назад</td><td class="vocab-ipa">/nɑˈzɑd/</td><td class="vocab-en">back</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">близько</td><td class="vocab-ipa">/ˈblɪzʲkɔ/</td><td class="vocab-en">near, close</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">далеко</td><td class="vocab-ipa">/dɑˈlɛkɔ/</td><td class="vocab-en">far</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">біля</td><td class="vocab-ipa">/ˈbʲilʲɑ/</td><td class="vocab-en">near, by</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-ipa">/dɔ/</td><td class="vocab-en">to, toward</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">навпроти</td><td class="vocab-ipa">/nɑuˈprɔtɪ/</td><td class="vocab-en">opposite</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">за</td><td class="vocab-ipa">/zɑ/</td><td class="vocab-en">behind</td><td class="vocab-note">+ instrumental</td></tr><tr><td class="vocab-uk">зупинка</td><td class="vocab-ipa">/zuˈpɪnkɑ/</td><td class="vocab-en">stop</td><td class="vocab-note">Bus, tram stop</td></tr><tr><td class="vocab-uk">квартал</td><td class="vocab-ipa">/kvɑrˈtɑl/</td><td class="vocab-en">block</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ріг</td><td class="vocab-ipa">/rʲiɦ/</td><td class="vocab-en">corner</td><td class="vocab-note">За рогом</td></tr><tr><td class="vocab-uk">вхід</td><td class="vocab-ipa">/vxʲid/</td><td class="vocab-en">entrance</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вихід</td><td class="vocab-ipa">/ˈvɪxʲid/</td><td class="vocab-en">exit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">аптека</td><td class="vocab-ipa">/ɑpˈtɛkɑ/</td><td class="vocab-en">pharmacy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лікарня</td><td class="vocab-ipa">/lʲiˈkɑrnʲɑ/</td><td class="vocab-en">hospital</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пошта</td><td class="vocab-ipa">/ˈpɔʃtɑ/</td><td class="vocab-en">post office</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ринок</td><td class="vocab-ipa">/ˈrɪnɔk/</td><td class="vocab-en">market</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">йти</td><td class="vocab-ipa">/jtɪ/</td><td class="vocab-en">to go (on foot)</td><td class="vocab-note">Imp: йди, йдіть</td></tr><tr><td class="vocab-uk">повернути</td><td class="vocab-ipa">/pɔvɛrˈnutɪ/</td><td class="vocab-en">to turn</td><td class="vocab-note">Imp: поверни, поверніть</td></tr><tr><td class="vocab-uk">перейти</td><td class="vocab-ipa">/pɛrɛjˈtɪ/</td><td class="vocab-en">to cross</td><td class="vocab-note">Imp: перейди, перейдіть</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 15 · curricula-opus</footer>
   <script>

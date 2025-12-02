@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Past Tense</h2>
         <p style="color:var(--text-muted)">What Happened Yesterday</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="yesterdaylastweeklongago">Yesterday, Last Week, Long Ago…</h3>
 <p>So far, you've only spoken about NOW (present tense). Time to unlock the past!</p>
 <p>Ukrainian past tense is beautifully simple - just ONE past tense form (unlike English with its "I did," "I was doing," "I had done," etc.). But there's a twist: the verb must match the GENDER of the subject!</p>
@@ -782,8 +797,13 @@ footer {
 <li>Увечері я дивився/дивилася фільм.</li>
 </ul>
 <hr />
-<h1 id="pasttensesummary">Past Tense Summary</h1>
-<h2 id="formation">Formation</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Past Tense Summary</h3>
+      <div class="md-content"><h2 id="formation">Formation</h2>
 <p><strong>Stem + ending:</strong></p>
 <ul>
 <li>Remove -ти from infinitive</li>
@@ -858,9 +878,12 @@ footer {
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li>Past tense endings: -в (m), -ла (f), -ло (n), -ли (pl)</li>
@@ -876,9 +899,11 @@ footer {
   <li>Він прочитає книгу. (He will read the book.)</li>
   <li>Two ways to express future!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -887,7 +912,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">читати</div><div class="match-item" data-pair="1">робити</div><div class="match-item" data-pair="2">їсти</div><div class="match-item" data-pair="3">пити</div><div class="match-item" data-pair="4">йти</div><div class="match-item" data-pair="5">бути</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">робив</div><div class="match-item" data-pair="3">пив</div><div class="match-item" data-pair="0">читав</div><div class="match-item" data-pair="2">їв</div><div class="match-item" data-pair="4">ішов</div><div class="match-item" data-pair="5">був</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">їв</div><div class="match-item" data-pair="1">робив</div><div class="match-item" data-pair="5">був</div><div class="match-item" data-pair="3">пив</div><div class="match-item" data-pair="4">ішов</div><div class="match-item" data-pair="0">читав</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -908,8 +933,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (16)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (16)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">вчора</td><td class="vocab-ipa">/ˈwtʃɔrɑ/</td><td class="vocab-en">yesterday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">позавчора</td><td class="vocab-ipa">/pɔzɑˈwtʃɔrɑ/</td><td class="vocab-en">day before yesterday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">минулий</td><td class="vocab-ipa">/mɪˈnulɪj/</td><td class="vocab-en">last, past</td><td class="vocab-note">минулого тижня</td></tr><tr><td class="vocab-uk">давно</td><td class="vocab-ipa">/ˈdɑvnɔ/</td><td class="vocab-en">long ago</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">недавно</td><td class="vocab-ipa">/nɛˈdɑvnɔ/</td><td class="vocab-en">recently</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">раніше</td><td class="vocab-ipa">/ˈrɑnʲiʃɛ/</td><td class="vocab-en">earlier, before</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">тоді</td><td class="vocab-ipa">/tɔˈdʲi/</td><td class="vocab-en">then</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">потім</td><td class="vocab-ipa">/pɔˈtʲim/</td><td class="vocab-en">then, later</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вже</td><td class="vocab-ipa">/vʒɛ/</td><td class="vocab-en">already</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ще не</td><td class="vocab-ipa">/ʃtʃɛ nɛ/</td><td class="vocab-en">not yet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">був</td><td class="vocab-ipa">/buv/</td><td class="vocab-en">was (m)</td><td class="vocab-note">Past of бути</td></tr><tr><td class="vocab-uk">була</td><td class="vocab-ipa">/buˈlɑ/</td><td class="vocab-en">was (f)</td><td class="vocab-note">Past of бути</td></tr><tr><td class="vocab-uk">було</td><td class="vocab-ipa">/ˈbulɔ/</td><td class="vocab-en">was (n)</td><td class="vocab-note">Past of бути</td></tr><tr><td class="vocab-uk">були</td><td class="vocab-ipa">/buˈlɪ/</td><td class="vocab-en">were</td><td class="vocab-note">Past of бути</td></tr><tr><td class="vocab-uk">ішов</td><td class="vocab-ipa">/iˈʃɔv/</td><td class="vocab-en">went (m)</td><td class="vocab-note">Past of йти</td></tr><tr><td class="vocab-uk">ішла</td><td class="vocab-ipa">/iʃˈlɑ/</td><td class="vocab-en">went (f)</td><td class="vocab-note">Past of йти</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 21 · curricula-opus</footer>
   <script>

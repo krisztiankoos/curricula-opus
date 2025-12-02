@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Cyrillic Code I</h2>
         <p style="color:var(--text-muted)">True Friends &amp; False Friends</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="whylearncyrillic">Why Learn Cyrillic?</h3>
 <p>Ukrainian uses the Cyrillic alphabet - 33 letters total. Good news: many look familiar! This module covers 18 letters you can learn quickly.</p>
 <p>The key insight: some letters LOOK like English but make DIFFERENT sounds. We call these "False Friends" - they'll trick you if you're not careful!</p>
@@ -571,35 +586,12 @@ footer {
   <p>When you see Ukrainian names transliterated to English, you're seeing someone's attempt to represent Cyrillic sounds in Latin letters!</p>
 </blockquote>
 <hr />
-<h1 id="lettergroups">Letter Groups</h1>
-<h2 id="truefriends">True Friends</h2>
-<p>А Е І О К М Т</p>
-<h2 id="falsefriends">False Friends</h2>
-<p>В Н Р С У Х</p>
-<h2 id="newletters">New Letters</h2>
-<p>Б Д З Л П Ф</p>
 <hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
-  <p>💡 <strong>What You Learned Today</strong></p>
-  <ul>
-  <li>The Cyrillic alphabet comes from Bulgaria, not Russia</li>
-  <li>Ukrainian has 33 letters (you learned 18 today!)</li>
-  <li><strong>True Friends</strong> (7): Look and sound like Latin</li>
-  <li><strong>False Friends</strong> (6): Look Latin but sound different - the tricky ones!</li>
-  <li><strong>New Letters</strong> (6): Unique shapes but easy sounds</li>
-  <li>Many international words are readable with these 18 letters</li>
-  </ul>
-  <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 02, you'll learn the remaining 15 letters including:</p>
-  <ul>
-  <li>The unique Ukrainian letters Ї, Є, and Ґ</li>
-  <li>The "soft sign" Ь that changes how letters sound</li>
-  <li>Cursive/italic forms (some look VERY different!)</li>
-  </ul>
-</blockquote></div></div>
+<hr /></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -608,7 +600,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">В в</div><div class="match-item" data-pair="1">Н н</div><div class="match-item" data-pair="2">Р р</div><div class="match-item" data-pair="3">С с</div><div class="match-item" data-pair="4">У у</div><div class="match-item" data-pair="5">Х х</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">V sound (not B!)</div><div class="match-item" data-pair="1">N sound (not H!)</div><div class="match-item" data-pair="5">KH sound (not X!)</div><div class="match-item" data-pair="3">S sound (not C!)</div><div class="match-item" data-pair="2">R sound (not P!)</div><div class="match-item" data-pair="4">U sound (not Y!)</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">U sound (not Y!)</div><div class="match-item" data-pair="3">S sound (not C!)</div><div class="match-item" data-pair="0">V sound (not B!)</div><div class="match-item" data-pair="2">R sound (not P!)</div><div class="match-item" data-pair="1">N sound (not H!)</div><div class="match-item" data-pair="5">KH sound (not X!)</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -629,8 +621,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (20)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (20)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">мама</td><td class="vocab-ipa">/ˈmɑmɑ/</td><td class="vocab-en">mom</td><td class="vocab-note">True Friends only: М-А-М-А</td></tr><tr><td class="vocab-uk">тато</td><td class="vocab-ipa">/ˈtɑtɔ/</td><td class="vocab-en">dad</td><td class="vocab-note">True Friends: Т-А-Т-О</td></tr><tr><td class="vocab-uk">банк</td><td class="vocab-ipa">/bɑnk/</td><td class="vocab-en">bank</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">парк</td><td class="vocab-ipa">/pɑrk/</td><td class="vocab-en">park</td><td class="vocab-note">П=P (new), Р=R (false friend)</td></tr><tr><td class="vocab-uk">кафе</td><td class="vocab-ipa">/kɑˈfɛ/</td><td class="vocab-en">café</td><td class="vocab-note">All True Friends + Ф (new)</td></tr><tr><td class="vocab-uk">метро</td><td class="vocab-ipa">/mɛˈtrɔ/</td><td class="vocab-en">metro</td><td class="vocab-note">Р=R (false friend)</td></tr><tr><td class="vocab-uk">таксі</td><td class="vocab-ipa">/tɑkˈsi/</td><td class="vocab-en">taxi</td><td class="vocab-note">С=S (false friend), І=I</td></tr><tr><td class="vocab-uk">радіо</td><td class="vocab-ipa">/ˈrɑdʲiɔ/</td><td class="vocab-en">radio</td><td class="vocab-note">Р=R (false friend), Д=D (new)</td></tr><tr><td class="vocab-uk">піца</td><td class="vocab-ipa">/ˈpitsɑ/</td><td class="vocab-en">pizza</td><td class="vocab-note">П=P (new), Ц=TS (preview)</td></tr><tr><td class="vocab-uk">суп</td><td class="vocab-ipa">/sup/</td><td class="vocab-en">soup</td><td class="vocab-note">С=S, У=U (false friends)</td></tr><tr><td class="vocab-uk">салат</td><td class="vocab-ipa">/sɑˈlɑt/</td><td class="vocab-en">salad</td><td class="vocab-note">С=S (false friend), Л=L (new)</td></tr><tr><td class="vocab-uk">лимон</td><td class="vocab-ipa">/lɪˈmɔn/</td><td class="vocab-en">lemon</td><td class="vocab-note">Л=L (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">банан</td><td class="vocab-ipa">/bɑˈnɑn/</td><td class="vocab-en">banana</td><td class="vocab-note">Б=B (new), Н=N (false friend)</td></tr><tr><td class="vocab-uk">хокей</td><td class="vocab-ipa">/xɔˈkɛj/</td><td class="vocab-en">hockey</td><td class="vocab-note">Х=KH (false friend)</td></tr><tr><td class="vocab-uk">футбол</td><td class="vocab-ipa">/fudˈbɔl/</td><td class="vocab-en">football</td><td class="vocab-note">Ф=F (new), У=U, Б=B, Л=L</td></tr><tr><td class="vocab-uk">студент</td><td class="vocab-ipa">/stuˈdɛnt/</td><td class="vocab-en">student</td><td class="vocab-note">С=S, У=U, Н=N (false friends)</td></tr><tr><td class="vocab-uk">турист</td><td class="vocab-ipa">/tuˈrɪst/</td><td class="vocab-en">tourist</td><td class="vocab-note">У=U, Р=R, С=S (false friends)</td></tr><tr><td class="vocab-uk">музика</td><td class="vocab-ipa">/ˈmuzɪkɑ/</td><td class="vocab-en">music</td><td class="vocab-note">У=U (false friend), З=Z (new)</td></tr><tr><td class="vocab-uk">фото</td><td class="vocab-ipa">/ˈfɔtɔ/</td><td class="vocab-en">photo</td><td class="vocab-note">Ф=F (new), rest True Friends</td></tr><tr><td class="vocab-uk">відео</td><td class="vocab-ipa">/ˈwideɔ/</td><td class="vocab-en">video</td><td class="vocab-note">В=V (false friend), Д=D (new)</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 01 · curricula-opus</footer>
   <script>

@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -779,7 +792,7 @@ footer {
     </div>
   
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('quiz')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('quiz')">Activities →</button>
       </div>
     </section>
   
@@ -793,8 +806,25 @@ footer {
     </div></section>
     
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (15)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (15)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">хрещення</td><td class="vocab-ipa">/xrɛˈʃt͡ʃɛnʲːɑ/</td><td class="vocab-en">baptism</td></tr><tr><td class="vocab-uk">собор</td><td class="vocab-ipa">/sɔˈbɔr/</td><td class="vocab-en">cathedral</td></tr><tr><td class="vocab-uk">монастир</td><td class="vocab-ipa">/mɔnɑsˈtɪr/</td><td class="vocab-en">monastery</td></tr><tr><td class="vocab-uk">літопис</td><td class="vocab-ipa">/ˈlʲitɔpɪs/</td><td class="vocab-en">chronicle</td></tr><tr><td class="vocab-uk">звід законів</td><td class="vocab-ipa">/zwʲid zɑˈkɔnʲiw/</td><td class="vocab-en">code of laws</td></tr><tr><td class="vocab-uk">усобиці</td><td class="vocab-ipa">/uˈsɔbɪt͡sʲi/</td><td class="vocab-en">internecine wars</td></tr><tr><td class="vocab-uk">роздробленість</td><td class="vocab-ipa">/rɔzdrɔbˈlɛnʲistʲ/</td><td class="vocab-en">fragmentation</td></tr><tr><td class="vocab-uk">навала</td><td class="vocab-ipa">/nɑˈwɑlɑ/</td><td class="vocab-en">invasion</td></tr><tr><td class="vocab-uk">занепад</td><td class="vocab-ipa">/zɑnɛˈpɑd/</td><td class="vocab-en">decline</td></tr><tr><td class="vocab-uk">спадщина</td><td class="vocab-ipa">/ˈspɑdʃt͡ʃɪnɑ/</td><td class="vocab-en">heritage</td></tr><tr><td class="vocab-uk">охрестити</td><td class="vocab-ipa">/ɔxrɛsˈtɪtɪ/</td><td class="vocab-en">to baptize (pf)</td></tr><tr><td class="vocab-uk">збудувати</td><td class="vocab-ipa">/zbuduˈwɑtɪ/</td><td class="vocab-en">to build (pf)</td></tr><tr><td class="vocab-uk">панувати</td><td class="vocab-ipa">/pɑnuˈwɑtɪ/</td><td class="vocab-en">to reign (impf)</td></tr><tr><td class="vocab-uk">занепасти</td><td class="vocab-ipa">/zɑnɛˈpɑstɪ/</td><td class="vocab-en">to decline (pf)</td></tr><tr><td class="vocab-uk">зруйнувати</td><td class="vocab-ipa">/zrujnuˈwɑtɪ/</td><td class="vocab-en">to destroy (pf)</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 168 · curricula-opus</footer>
   <script>

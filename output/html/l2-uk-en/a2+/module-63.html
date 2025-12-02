@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Suffixes I: Nouns</h2>
         <p style="color:var(--text-muted)">Building Nouns from Verbs and Adjectives</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="fromactionstothings">From Actions to Things</h3>
 <p>You know verbs. Now let's turn them into nouns!</p>
 <p><strong>The magic of suffixes:</strong></p>
@@ -869,8 +884,13 @@ footer {
 <li>Моє <strong>життя</strong> змінилося.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="nounformingsuffixes">Noun-Forming Suffixes</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="nounformingsuffixes">Noun-Forming Suffixes</h2>
 <table>
 <thead>
 <tr>
@@ -973,9 +993,11 @@ footer {
   <li>-ок/-ець = result or object (beginning, gift)</li>
   <li>Gender is determined by suffix!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -984,7 +1006,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">-ння/-ття</div><div class="match-item" data-pair="1">-ість</div><div class="match-item" data-pair="2">-ство/-цтво</div><div class="match-item" data-pair="3">-ач/-ник</div><div class="match-item" data-pair="4">-ок/-ець</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">action, process</div><div class="match-item" data-pair="3">person (agent)</div><div class="match-item" data-pair="1">abstract quality</div><div class="match-item" data-pair="4">result, object</div><div class="match-item" data-pair="2">state, realm</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">abstract quality</div><div class="match-item" data-pair="0">action, process</div><div class="match-item" data-pair="3">person (agent)</div><div class="match-item" data-pair="4">result, object</div><div class="match-item" data-pair="2">state, realm</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1005,8 +1027,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (39)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (39)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">читання</td><td class="vocab-ipa">/tʃɪˈtɑnʲːɑ/</td><td class="vocab-en">reading</td></tr><tr><td class="vocab-uk">писання</td><td class="vocab-ipa">/pɪˈsɑnʲːɑ/</td><td class="vocab-en">writing</td></tr><tr><td class="vocab-uk">навчання</td><td class="vocab-ipa">/nɑvˈtʃɑnʲːɑ/</td><td class="vocab-en">learning, education</td></tr><tr><td class="vocab-uk">слухання</td><td class="vocab-ipa">/sluˈxɑnʲːɑ/</td><td class="vocab-en">listening</td></tr><tr><td class="vocab-uk">говоріння</td><td class="vocab-ipa">/ɦovoˈrʲinʲːɑ/</td><td class="vocab-en">speaking</td></tr><tr><td class="vocab-uk">життя</td><td class="vocab-ipa">/ʒɪtʲˈtʲɑ/</td><td class="vocab-en">life</td></tr><tr><td class="vocab-uk">буття</td><td class="vocab-ipa">/butʲˈtʲɑ/</td><td class="vocab-en">being, existence</td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-ipa">/ˈznɑnʲːɑ/</td><td class="vocab-en">knowledge</td></tr><tr><td class="vocab-uk">питання</td><td class="vocab-ipa">/pɪˈtɑnʲːɑ/</td><td class="vocab-en">question</td></tr><tr><td class="vocab-uk">завдання</td><td class="vocab-ipa">/zɑvˈdɑnʲːɑ/</td><td class="vocab-en">task, assignment</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/moʒˈlɪvʲistʲ/</td><td class="vocab-en">possibility</td></tr><tr><td class="vocab-uk">новість</td><td class="vocab-ipa">/ˈnovʲistʲ/</td><td class="vocab-en">news</td></tr><tr><td class="vocab-uk">радість</td><td class="vocab-ipa">/ˈrɑdʲistʲ/</td><td class="vocab-en">joy</td></tr><tr><td class="vocab-uk">молодість</td><td class="vocab-ipa">/ˈmolodʲistʲ/</td><td class="vocab-en">youth</td></tr><tr><td class="vocab-uk">старість</td><td class="vocab-ipa">/ˈstɑrʲistʲ/</td><td class="vocab-en">old age</td></tr><tr><td class="vocab-uk">відповідальність</td><td class="vocab-ipa">/vʲidpovʲiˈdɑlʲnʲistʲ/</td><td class="vocab-en">responsibility</td></tr><tr><td class="vocab-uk">особливість</td><td class="vocab-ipa">/osobˈlɪvʲistʲ/</td><td class="vocab-en">peculiarity</td></tr><tr><td class="vocab-uk">вільність</td><td class="vocab-ipa">/ˈvʲilʲnʲistʲ/</td><td class="vocab-en">freedom</td></tr><tr><td class="vocab-uk">людство</td><td class="vocab-ipa">/ˈlʲudstvo/</td><td class="vocab-en">humanity</td></tr><tr><td class="vocab-uk">братство</td><td class="vocab-ipa">/ˈbrɑtstvo/</td><td class="vocab-en">brotherhood</td></tr><tr><td class="vocab-uk">багатство</td><td class="vocab-ipa">/bɑˈɦɑtstvo/</td><td class="vocab-en">wealth</td></tr><tr><td class="vocab-uk">мистецтво</td><td class="vocab-ipa">/mɪsˈtɛtstvo/</td><td class="vocab-en">art</td></tr><tr><td class="vocab-uk">суспільство</td><td class="vocab-ipa">/susˈpʲilʲstvo/</td><td class="vocab-en">society</td></tr><tr><td class="vocab-uk">виробництво</td><td class="vocab-ipa">/vɪrobˈnɪtstvo/</td><td class="vocab-en">production</td></tr><tr><td class="vocab-uk">господарство</td><td class="vocab-ipa">/ɦospoˈdɑrstvo/</td><td class="vocab-en">economy, farm</td></tr><tr><td class="vocab-uk">читач</td><td class="vocab-ipa">/tʃɪˈtɑtʃ/</td><td class="vocab-en">reader</td></tr><tr><td class="vocab-uk">слухач</td><td class="vocab-ipa">/sluˈxɑtʃ/</td><td class="vocab-en">listener</td></tr><tr><td class="vocab-uk">глядач</td><td class="vocab-ipa">/ɦlʲɑˈdɑtʃ/</td><td class="vocab-en">viewer</td></tr><tr><td class="vocab-uk">письменник</td><td class="vocab-ipa">/pɪsʲˈmɛnːɪk/</td><td class="vocab-en">writer</td></tr><tr><td class="vocab-uk">робітник</td><td class="vocab-ipa">/roˈbʲitnɪk/</td><td class="vocab-en">worker</td></tr><tr><td class="vocab-uk">працівник</td><td class="vocab-ipa">/prɑˈtsʲivnɪk/</td><td class="vocab-en">employee</td></tr><tr><td class="vocab-uk">мешканець</td><td class="vocab-ipa">/mɛʃˈkɑnɛtsʲ/</td><td class="vocab-en">resident</td></tr><tr><td class="vocab-uk">початок</td><td class="vocab-ipa">/poˈtʃɑtok/</td><td class="vocab-en">beginning</td></tr><tr><td class="vocab-uk">кінець</td><td class="vocab-ipa">/kʲiˈnɛtsʲ/</td><td class="vocab-en">end</td></tr><tr><td class="vocab-uk">подарунок</td><td class="vocab-ipa">/podɑˈrunok/</td><td class="vocab-en">gift</td></tr><tr><td class="vocab-uk">малюнок</td><td class="vocab-ipa">/mɑˈlʲunok/</td><td class="vocab-en">drawing</td></tr><tr><td class="vocab-uk">будинок</td><td class="vocab-ipa">/buˈdɪnok/</td><td class="vocab-en">building, house</td></tr><tr><td class="vocab-uk">записник</td><td class="vocab-ipa">/zɑˈpɪsnɪk/</td><td class="vocab-en">notebook</td></tr><tr><td class="vocab-uk">молодець</td><td class="vocab-ipa">/moloˈdɛtsʲ/</td><td class="vocab-en">well done! fine fellow</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 63 · curricula-opus</footer>
   <script>

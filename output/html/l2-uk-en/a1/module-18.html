@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">At the Café</h2>
         <p style="color:var(--text-muted)">Ordering Food &amp; Drinks</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="ukrainiancafculture">Ukrainian Café Culture</h3>
 <p>Ukrainians love their кав'ярні (coffee houses)! From trendy Kyiv spots to cozy Lviv cafés, coffee culture runs deep. Lviv, in particular, is famous for its coffee traditions.</p>
 <p>Key phrases you'll master:</p>
@@ -717,8 +732,13 @@ B: Ні, дякую. Це все.</p>
 <li>Pay and thank</li>
 </ol>
 <hr />
-<h1 id="cafdialoguetemplate">Café Dialogue Template</h1>
-<h2 id="completecafscript">Complete Café Script</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Café Dialogue Template</h3>
+      <div class="md-content"><h2 id="completecafscript">Complete Café Script</h2>
 <p><strong>Entering:</strong></p>
 <ul>
 <li>Ви: Добрий день! Столик на двох, будь ласка.</li>
@@ -739,9 +759,12 @@ B: Ні, дякую. Це все.</p>
 <li>Офіціант: Так, звичайно.</li>
 <li>Ви: Дякую! Все було дуже смачно!</li>
 </ul>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li><strong>Можна…?</strong> for polite requests</li>
@@ -758,9 +781,11 @@ B: Ні, дякую. Це все.</p>
   <li>Можна приміряти? (Can I try this on?)</li>
   <li>Є менший/більший розмір? (Is there a smaller/bigger size?)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -769,7 +794,7 @@ B: Ні, дякую. Це все.</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Можна меню?</div><div class="match-item" data-pair="1">Рахунок, будь ласка!</div><div class="match-item" data-pair="2">Скільки з мене?</div><div class="match-item" data-pair="3">Що порекомендуєте?</div><div class="match-item" data-pair="4">Без цукру.</div><div class="match-item" data-pair="5">Решта - ваша.</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">What do you recommend?</div><div class="match-item" data-pair="1">The bill, please!</div><div class="match-item" data-pair="5">Keep the change.</div><div class="match-item" data-pair="0">May I have the menu?</div><div class="match-item" data-pair="4">Without sugar.</div><div class="match-item" data-pair="2">How much do I owe?</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">Without sugar.</div><div class="match-item" data-pair="0">May I have the menu?</div><div class="match-item" data-pair="5">Keep the change.</div><div class="match-item" data-pair="3">What do you recommend?</div><div class="match-item" data-pair="1">The bill, please!</div><div class="match-item" data-pair="2">How much do I owe?</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -790,8 +815,25 @@ B: Ні, дякую. Це все.</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (14)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (14)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">меню</td><td class="vocab-ipa">/mɛˈnʲu/</td><td class="vocab-en">menu</td><td class="vocab-note">Indeclinable</td></tr><tr><td class="vocab-uk">замовляти</td><td class="vocab-ipa">/zɑmɔvˈlʲɑtɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">замовляю, замовляєш</td></tr><tr><td class="vocab-uk">рахунок</td><td class="vocab-ipa">/rɑˈxunɔk/</td><td class="vocab-en">bill, check</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">столик</td><td class="vocab-ipa">/ˈstɔlɪk/</td><td class="vocab-en">table (small)</td><td class="vocab-note">Diminutive of стіл</td></tr><tr><td class="vocab-uk">місце</td><td class="vocab-ipa">/ˈmʲist͡sɛ/</td><td class="vocab-en">seat, place</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">принести</td><td class="vocab-ipa">/prɪnɛsˈtɪ/</td><td class="vocab-en">to bring</td><td class="vocab-note">Imp: принеси, принесіть</td></tr><tr><td class="vocab-uk">взяти</td><td class="vocab-ipa">/ˈvzʲɑtɪ/</td><td class="vocab-en">to take</td><td class="vocab-note">Я візьму (I&#039;ll take)</td></tr><tr><td class="vocab-uk">можна</td><td class="vocab-ipa">/ˈmɔʒnɑ/</td><td class="vocab-en">may, can</td><td class="vocab-note">Permission</td></tr><tr><td class="vocab-uk">склянка</td><td class="vocab-ipa">/ˈsklʲɑnkɑ/</td><td class="vocab-en">glass</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">на виніс</td><td class="vocab-ipa">/nɑ ˈvɪnʲis/</td><td class="vocab-en">to go</td><td class="vocab-note">Takeaway</td></tr><tr><td class="vocab-uk">гарячий</td><td class="vocab-ipa">/ɦɑˈrʲɑtʃɪj/</td><td class="vocab-en">hot</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">холодний</td><td class="vocab-ipa">/xɔˈlɔdnɪj/</td><td class="vocab-en">cold</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">страва</td><td class="vocab-ipa">/ˈstrɑvɑ/</td><td class="vocab-en">dish, course</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">чайові</td><td class="vocab-ipa">/tʃɑjɔˈvʲi/</td><td class="vocab-en">tip</td><td class="vocab-note">Literally &quot;for tea&quot;</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 18 · curricula-opus</footer>
   <script>

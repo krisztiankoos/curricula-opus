@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Checkpoint: All Cases</h2>
         <p style="color:var(--text-muted)">A2.1 Review</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="a21complete">A2.1 Complete!</h3>
 <p>Congratulations! You've completed Phase A2.1. Let's review everything:</p>
 <p><strong>What you've learned (Modules 31-39):</strong></p>
@@ -858,8 +873,13 @@ Create sentences using: працювати + instr, з + instr</p>
 <li>0-4 checks: Review Modules 31-39 before continuing</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="a21grammarachievements">A2.1 Grammar Achievements</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="a21grammarachievements">A2.1 Grammar Achievements</h2>
 <table>
 <thead>
 <tr>
@@ -1007,9 +1027,11 @@ Create sentences using: працювати + instr, з + instr</p>
 <blockquote>
   <p>💡 <strong>Congratulations!</strong></p>
   <p>You've completed A2.1 - the toughest part of A2! You now have a complete case system. The remaining A2 phases will add complexity but won't introduce new cases. Well done!</p>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1018,7 +1040,7 @@ Create sentences using: працювати + instr, з + instr</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/7</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Nominative</div><div class="match-item" data-pair="1">Genitive</div><div class="match-item" data-pair="2">Dative</div><div class="match-item" data-pair="3">Accusative</div><div class="match-item" data-pair="4">Instrumental</div><div class="match-item" data-pair="5">Locative</div><div class="match-item" data-pair="6">Vocative</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">possession, "of"</div><div class="match-item" data-pair="3">direct object</div><div class="match-item" data-pair="6">calling someone</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="2">to/for whom</div><div class="match-item" data-pair="5">location</div><div class="match-item" data-pair="4">with/by means</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">direct object</div><div class="match-item" data-pair="2">to/for whom</div><div class="match-item" data-pair="1">possession, "of"</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="4">with/by means</div><div class="match-item" data-pair="5">location</div><div class="match-item" data-pair="6">calling someone</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1039,8 +1061,25 @@ Create sentences using: працювати + instr, з + instr</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (0)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 40 · curricula-opus</footer>
   <script>

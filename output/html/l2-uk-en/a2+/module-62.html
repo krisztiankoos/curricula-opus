@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Prefixes II: Action Verbs</h2>
         <p style="color:var(--text-muted)">Transforming Everyday Verbs</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="beyondmotionverbs">Beyond Motion Verbs</h3>
 <p>In Module 61, you learned prefixes with motion verbs. Now let's see how the <strong>same prefixes</strong> work with everyday action verbs!</p>
 <p><strong>The pattern continues:</strong></p>
@@ -916,8 +931,13 @@ With за-: Я <strong>забув</strong> номер телефону.<br />
 With ви-: Вона <strong>виграла</strong> гру.<br />
 With про-: Ми <strong>прожили</strong> там два роки.</p>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="actionverbprefixes">Action Verb Prefixes</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="actionverbprefixes">Action Verb Prefixes</h2>
 <table>
 <thead>
 <tr>
@@ -1017,9 +1037,11 @@ With про-: Ми <strong>прожили</strong> там два роки.</p>
   <li>Learning prefixes = exponential vocabulary growth</li>
   <li>на- (onto), по- (brief), з- (complete), про- (through), роз- (apart)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1028,7 +1050,7 @@ With про-: Ми <strong>прожили</strong> там два роки.</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">на-</div><div class="match-item" data-pair="1">по-</div><div class="match-item" data-pair="2">з-/с-</div><div class="match-item" data-pair="3">про-</div><div class="match-item" data-pair="4">роз-</div><div class="match-item" data-pair="5">від-</div><div class="match-item" data-pair="6">ви-</div><div class="match-item" data-pair="7">за-</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">brief action, result</div><div class="match-item" data-pair="6">result, mastery</div><div class="match-item" data-pair="5">response, back</div><div class="match-item" data-pair="2">completion, together</div><div class="match-item" data-pair="0">accumulation, onto</div><div class="match-item" data-pair="3">through, fully</div><div class="match-item" data-pair="7">beginning, close</div><div class="match-item" data-pair="4">apart, distribute</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="7">beginning, close</div><div class="match-item" data-pair="5">response, back</div><div class="match-item" data-pair="4">apart, distribute</div><div class="match-item" data-pair="0">accumulation, onto</div><div class="match-item" data-pair="2">completion, together</div><div class="match-item" data-pair="1">brief action, result</div><div class="match-item" data-pair="3">through, fully</div><div class="match-item" data-pair="6">result, mastery</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1049,8 +1071,25 @@ With про-: Ми <strong>прожили</strong> там два роки.</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (45)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (45)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">написати</td><td class="vocab-ipa">/nɑpɪˈsɑtɪ/</td><td class="vocab-en">to write (complete)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">намалювати</td><td class="vocab-ipa">/nɑmɑlʲuˈvɑtɪ/</td><td class="vocab-en">to draw/paint</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">навчити</td><td class="vocab-ipa">/nɑvˈtʃɪtɪ/</td><td class="vocab-en">to teach</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">налити</td><td class="vocab-ipa">/nɑˈlɪtɪ/</td><td class="vocab-en">to pour</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">нарізати</td><td class="vocab-ipa">/nɑˈrʲizɑtɪ/</td><td class="vocab-en">to slice</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">побачити</td><td class="vocab-ipa">/poˈbɑtʃɪtɪ/</td><td class="vocab-en">to see</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">почути</td><td class="vocab-ipa">/poˈtʃutɪ/</td><td class="vocab-en">to hear</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">почитати</td><td class="vocab-ipa">/potʃɪˈtɑtɪ/</td><td class="vocab-en">to read (a while)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">подумати</td><td class="vocab-ipa">/poˈdumɑtɪ/</td><td class="vocab-en">to think over</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">подякувати</td><td class="vocab-ipa">/podʲɑkuˈvɑtɪ/</td><td class="vocab-en">to thank</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">поснідати</td><td class="vocab-ipa">/posnʲiˈdɑtɪ/</td><td class="vocab-en">to have breakfast</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">пообідати</td><td class="vocab-ipa">/pooˈbʲidɑtɪ/</td><td class="vocab-en">to have lunch</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">зробити</td><td class="vocab-ipa">/zroˈbɪtɪ/</td><td class="vocab-en">to do, make</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">з&#039;їсти</td><td class="vocab-ipa">/ˈzjistɪ/</td><td class="vocab-en">to eat up</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">зварити</td><td class="vocab-ipa">/zvɑˈrɪtɪ/</td><td class="vocab-en">to cook</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">збудувати</td><td class="vocab-ipa">/zbuduˈvɑtɪ/</td><td class="vocab-en">to build</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">зібрати</td><td class="vocab-ipa">/zʲiˈbrɑtɪ/</td><td class="vocab-en">to gather</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">сфотографувати</td><td class="vocab-ipa">/sfotoɦrɑfuˈvɑtɪ/</td><td class="vocab-en">to photograph</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">спитати</td><td class="vocab-ipa">/spɪˈtɑtɪ/</td><td class="vocab-en">to ask</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">прочитати</td><td class="vocab-ipa">/protʃɪˈtɑtɪ/</td><td class="vocab-en">to read (finish)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">прослухати</td><td class="vocab-ipa">/prosˈluxɑtɪ/</td><td class="vocab-en">to listen through</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">прожити</td><td class="vocab-ipa">/proˈʒɪtɪ/</td><td class="vocab-en">to live (period)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">проспати</td><td class="vocab-ipa">/prosˈpɑtɪ/</td><td class="vocab-en">to oversleep</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">розказати</td><td class="vocab-ipa">/rozkɑˈzɑtɪ/</td><td class="vocab-en">to tell, narrate</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">роздати</td><td class="vocab-ipa">/rozˈdɑtɪ/</td><td class="vocab-en">to distribute</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">розбити</td><td class="vocab-ipa">/rozˈbɪtɪ/</td><td class="vocab-en">to break</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">розрізати</td><td class="vocab-ipa">/rozˈrʲizɑtɪ/</td><td class="vocab-en">to cut apart</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">відповісти</td><td class="vocab-ipa">/vʲidpoˈvʲistɪ/</td><td class="vocab-en">to answer</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">віддати</td><td class="vocab-ipa">/vʲiˈdːɑtɪ/</td><td class="vocab-en">to give back</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">відкрити</td><td class="vocab-ipa">/vʲidˈkrɪtɪ/</td><td class="vocab-en">to open</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">відпустити</td><td class="vocab-ipa">/vʲidpusˈtɪtɪ/</td><td class="vocab-en">to release, let go</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вивчити</td><td class="vocab-ipa">/ˈvɪvtʃɪtɪ/</td><td class="vocab-en">to learn (master)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вирішити</td><td class="vocab-ipa">/vɪˈrʲiʃɪtɪ/</td><td class="vocab-en">to decide, solve</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">випити</td><td class="vocab-ipa">/ˈvɪpɪtɪ/</td><td class="vocab-en">to drink up</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">виграти</td><td class="vocab-ipa">/ˈvɪɦrɑtɪ/</td><td class="vocab-en">to win</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">витратити</td><td class="vocab-ipa">/ˈvɪtrɑtɪtɪ/</td><td class="vocab-en">to spend</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">закрити</td><td class="vocab-ipa">/zɑˈkrɪtɪ/</td><td class="vocab-en">to close</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">закінчити</td><td class="vocab-ipa">/zɑˈkʲintʃɪtɪ/</td><td class="vocab-en">to finish</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">записати</td><td class="vocab-ipa">/zɑpɪˈsɑtɪ/</td><td class="vocab-en">to write down</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">замовити</td><td class="vocab-ipa">/zɑˈmovɪtɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">запитати</td><td class="vocab-ipa">/zɑpɪˈtɑtɪ/</td><td class="vocab-en">to ask</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">забути</td><td class="vocab-ipa">/zɑˈbutɪ/</td><td class="vocab-en">to forget</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">історія</td><td class="vocab-ipa">/isˈtorʲijɑ/</td><td class="vocab-en">story, history</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">подарунок</td><td class="vocab-ipa">/podɑˈrunok/</td><td class="vocab-en">gift</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">помилка</td><td class="vocab-ipa">/poˈmɪlkɑ/</td><td class="vocab-en">mistake</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 62 · curricula-opus</footer>
   <script>

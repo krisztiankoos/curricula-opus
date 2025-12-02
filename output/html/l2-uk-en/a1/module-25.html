@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Daily Routine</h2>
         <p style="color:var(--text-muted)">A Day in Your Life</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="whatsyourroutine">What's Your Routine?</h3>
 <p>Every day we follow patterns: wake up, eat, work, sleep. Let's learn to describe YOUR typical day in Ukrainian!</p>
 <p>Many daily activities use <strong>reflexive verbs</strong> (-ся ending):</p>
@@ -717,8 +732,13 @@ footer {
 <li>О котрій ви лягаєте спати?</li>
 </ul>
 <hr />
-<h1 id="dailyroutinesummary">Daily Routine Summary</h1>
-<h2 id="reflexiveverbs">Reflexive Verbs (-ся)</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Daily Routine Summary</h3>
+      <div class="md-content"><h2 id="reflexiveverbs">Reflexive Verbs (-ся)</h2>
 <table>
 <thead>
 <tr>
@@ -749,7 +769,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h2 id="timeexpressions-1">Time Expressions</h2>
+<h2 id="timeexpressions">Time Expressions</h2>
 <table>
 <thead>
 <tr>
@@ -780,9 +800,12 @@ footer {
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li>Reflexive verbs: прокидатися, вмиватися, одягатися</li>
@@ -798,9 +821,11 @@ footer {
   <li>Agreement with gender</li>
   <li>Common descriptive adjectives</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -809,7 +834,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">прокидатися</div><div class="match-item" data-pair="1">снідати</div><div class="match-item" data-pair="2">працювати</div><div class="match-item" data-pair="3">вечеряти</div><div class="match-item" data-pair="4">лягати спати</div><div class="match-item" data-pair="5">засинати</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">to wake up</div><div class="match-item" data-pair="5">to fall asleep</div><div class="match-item" data-pair="3">to have dinner</div><div class="match-item" data-pair="2">to work</div><div class="match-item" data-pair="1">to have breakfast</div><div class="match-item" data-pair="4">to go to bed</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">to go to bed</div><div class="match-item" data-pair="3">to have dinner</div><div class="match-item" data-pair="5">to fall asleep</div><div class="match-item" data-pair="0">to wake up</div><div class="match-item" data-pair="2">to work</div><div class="match-item" data-pair="1">to have breakfast</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -830,8 +855,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (19)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (19)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">прокидатися</td><td class="vocab-ipa">/prɔkɪˈdɑtɪsʲɑ/</td><td class="vocab-en">to wake up</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">вставати</td><td class="vocab-ipa">/vstɑˈvɑtɪ/</td><td class="vocab-en">to get up</td><td class="vocab-note">встаю, встаєш</td></tr><tr><td class="vocab-uk">вмиватися</td><td class="vocab-ipa">/vmɪˈvɑtɪsʲɑ/</td><td class="vocab-en">to wash (face)</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">одягатися</td><td class="vocab-ipa">/ɔˈdʲɑɦɑtɪsʲɑ/</td><td class="vocab-en">to get dressed</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">роздягатися</td><td class="vocab-ipa">/rɔzˈdʲɑɦɑtɪsʲɑ/</td><td class="vocab-en">to undress</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">снідати</td><td class="vocab-ipa">/snʲiˈdɑtɪ/</td><td class="vocab-en">to have breakfast</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обідати</td><td class="vocab-ipa">/ɔˈbʲidɑtɪ/</td><td class="vocab-en">to have lunch</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вечеряти</td><td class="vocab-ipa">/vɛtʃɛˈrʲɑtɪ/</td><td class="vocab-en">to have dinner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">виходити</td><td class="vocab-ipa">/vɪxɔˈdɪtɪ/</td><td class="vocab-en">to go out, leave</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повертатися</td><td class="vocab-ipa">/pɔvɛrˈtɑtɪsʲɑ/</td><td class="vocab-en">to return</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">лягати</td><td class="vocab-ipa">/lʲɑˈɦɑtɪ/</td><td class="vocab-en">to lie down</td><td class="vocab-note">лягати спати</td></tr><tr><td class="vocab-uk">засинати</td><td class="vocab-ipa">/zɑsɪˈnɑtɪ/</td><td class="vocab-en">to fall asleep</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">голитися</td><td class="vocab-ipa">/ɦɔˈlɪtɪsʲɑ/</td><td class="vocab-en">to shave</td><td class="vocab-note">Reflexive</td></tr><tr><td class="vocab-uk">чистити</td><td class="vocab-ipa">/ˈtʃɪstɪtɪ/</td><td class="vocab-en">to clean, brush</td><td class="vocab-note">чистити зуби</td></tr><tr><td class="vocab-uk">душ</td><td class="vocab-ipa">/duʃ/</td><td class="vocab-en">shower</td><td class="vocab-note">приймати душ</td></tr><tr><td class="vocab-uk">зуби</td><td class="vocab-ipa">/ˈzubɪ/</td><td class="vocab-en">teeth</td><td class="vocab-note">Singular: зуб</td></tr><tr><td class="vocab-uk">спочатку</td><td class="vocab-ipa">/spɔˈtʃɑtku/</td><td class="vocab-en">first, at first</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зазвичай</td><td class="vocab-ipa">/zɑˈzvɪtʃɑj/</td><td class="vocab-en">usually</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">щодня</td><td class="vocab-ipa">/ʃtʃɔˈdnʲɑ/</td><td class="vocab-en">every day</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 25 · curricula-opus</footer>
   <script>

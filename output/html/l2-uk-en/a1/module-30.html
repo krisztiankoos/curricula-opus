@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">A1 Capstone</h2>
         <p style="color:var(--text-muted)">Your Ukrainian Foundation</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="congratulationsyoumadeit">Congratulations - You Made It!</h3>
 <p>You've completed A1 - the foundation of your Ukrainian journey! Let's celebrate what you've achieved:</p>
 <p><strong>What you can now do:</strong><br />
@@ -455,9 +470,13 @@ footer {
 </tr>
 </tbody>
 </table>
-<h1 id="">#</h1>
-<h1 id="a1achievementsummary">A1 Achievement Summary</h1>
-<h2 id="casesmastered">Cases Mastered</h2>
+<h2 id="">##</h2>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>A1 Achievement Summary</h3>
+      <div class="md-content"><h2 id="casesmastered">Cases Mastered</h2>
 <table>
 <thead>
 <tr>
@@ -555,9 +574,12 @@ footer {
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="certification">Certification</h1>
-<h2 id="a1completion">A1 Completion</h2>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Certification</h3>
+      <div class="md-content"><h2 id="a1completion">A1 Completion</h2>
 <blockquote>
   <p>🎓 <strong>Congratulations!</strong></p>
   <p>You have completed the <strong>A1 Ukrainian Language Course</strong>!</p>
@@ -571,9 +593,12 @@ footer {
   </ul>
   <p><strong>You are ready for A2!</strong></p>
 </blockquote>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You've Accomplished</strong></p>
   <ul>
   <li><strong>30 modules</strong> of structured learning</li>
@@ -594,9 +619,11 @@ footer {
   <li>500+ new words</li>
   </ul>
   <p>До зустрічі на A2! See you at A2!</p>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -605,7 +632,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Greeting</div><div class="match-item" data-pair="1">Ordering</div><div class="match-item" data-pair="2">Describing</div><div class="match-item" data-pair="3">Asking location</div><div class="match-item" data-pair="4">Talking about past</div><div class="match-item" data-pair="5">Expressing ability</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Де знаходиться метро?</div><div class="match-item" data-pair="1">Каву, будь ласка.</div><div class="match-item" data-pair="0">Привіт! Як справи?</div><div class="match-item" data-pair="4">Вчора я був удома.</div><div class="match-item" data-pair="2">Велике гарне місто.</div><div class="match-item" data-pair="5">Я можу допомогти.</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Де знаходиться метро?</div><div class="match-item" data-pair="0">Привіт! Як справи?</div><div class="match-item" data-pair="1">Каву, будь ласка.</div><div class="match-item" data-pair="4">Вчора я був удома.</div><div class="match-item" data-pair="5">Я можу допомогти.</div><div class="match-item" data-pair="2">Велике гарне місто.</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -626,8 +653,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (0)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 30 · curricula-opus</footer>
   <script>

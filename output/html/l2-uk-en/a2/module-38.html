@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Case Integration</h2>
         <p style="color:var(--text-muted)">All 7 Cases Together</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="thecompletesystem">The Complete System</h3>
 <p>Congratulations! You now know all 7 Ukrainian cases. Let's see them working together:</p>
 <p><strong>One sentence, multiple cases:</strong></p>
@@ -648,8 +663,13 @@ NOM + verb + до + GEN + за + ACC</p>
 <li>Увечері зустрічаюся з друзями біля кінотеатру.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="the7casesataglance">The 7 Cases at a Glance</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="the7casesataglance">The 7 Cases at a Glance</h2>
 <table>
 <thead>
 <tr>
@@ -743,9 +763,11 @@ NOM + verb + до + GEN + за + ACC</p>
   <li>The question words (хто, кого, кому, ким) match case questions</li>
   <li>Context helps when endings are similar</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -754,7 +776,7 @@ NOM + verb + до + GEN + за + ACC</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/7</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Nominative</div><div class="match-item" data-pair="1">Genitive</div><div class="match-item" data-pair="2">Dative</div><div class="match-item" data-pair="3">Accusative</div><div class="match-item" data-pair="4">Instrumental</div><div class="match-item" data-pair="5">Locative</div><div class="match-item" data-pair="6">Vocative</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">location</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="2">recipient</div><div class="match-item" data-pair="4">means/company</div><div class="match-item" data-pair="6">direct address</div><div class="match-item" data-pair="1">possession</div><div class="match-item" data-pair="3">direct object</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="6">direct address</div><div class="match-item" data-pair="1">possession</div><div class="match-item" data-pair="4">means/company</div><div class="match-item" data-pair="3">direct object</div><div class="match-item" data-pair="2">recipient</div><div class="match-item" data-pair="5">location</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -775,8 +797,25 @@ NOM + verb + до + GEN + за + ACC</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (12)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (12)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">правило</td><td class="vocab-ipa">/prɑˈvɪlo/</td><td class="vocab-en">rule</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">полиця</td><td class="vocab-ipa">/poˈlɪtsʲɑ/</td><td class="vocab-en">shelf</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ваза</td><td class="vocab-ipa">/ˈvɑzɑ/</td><td class="vocab-en">vase</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поверх</td><td class="vocab-ipa">/ˈpovɛrx/</td><td class="vocab-en">floor (of building)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кабінет</td><td class="vocab-ipa">/kɑbʲiˈnɛt/</td><td class="vocab-en">office, study</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">секретарка</td><td class="vocab-ipa">/sɛkrɛˈtɑrkɑ/</td><td class="vocab-en">secretary (f)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бухгалтерія</td><td class="vocab-ipa">/buxɦɑlˈtɛrʲijɑ/</td><td class="vocab-en">accounting dept</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">партнер</td><td class="vocab-ipa">/pɑrtˈnɛr/</td><td class="vocab-en">partner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">малюнок</td><td class="vocab-ipa">/mɑˈlʲunok/</td><td class="vocab-en">drawing, picture</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лекція</td><td class="vocab-ipa">/ˈlɛktsʲijɑ/</td><td class="vocab-en">lecture</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">задоволення</td><td class="vocab-ipa">/zɑdoˈvolɛnʲːɑ/</td><td class="vocab-en">pleasure, satisfaction</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">протягом</td><td class="vocab-ipa">/proˈtʲɑɦom/</td><td class="vocab-en">during, throughout</td><td class="vocab-note">+ gen</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 38 · curricula-opus</footer>
   <script>

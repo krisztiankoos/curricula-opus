@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -926,7 +939,7 @@ footer {
     </div>
   
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('quiz')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('quiz')">Activities →</button>
       </div>
     </section>
   
@@ -940,8 +953,25 @@ footer {
     </div></section>
     
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (13)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (13)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/koˈlɪ/</td><td class="vocab-en">when</td></tr><tr><td class="vocab-uk">перед тим як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">до того як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">перш ніж</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">після того як</td><td class="vocab-ipa"></td><td class="vocab-en">after</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-ipa">/do/</td><td class="vocab-en">before, until</td></tr><tr><td class="vocab-uk">після</td><td class="vocab-ipa">/ˈpʲislʲɑ/</td><td class="vocab-en">after</td></tr><tr><td class="vocab-uk">поки</td><td class="vocab-ipa">/poˈkɪ/</td><td class="vocab-en">while, until</td></tr><tr><td class="vocab-uk">доки</td><td class="vocab-ipa">/doˈkɪ/</td><td class="vocab-en">while, until</td></tr><tr><td class="vocab-uk">щойно</td><td class="vocab-ipa">/ˈʃt͡ʃojno/</td><td class="vocab-en">as soon as, just</td></tr><tr><td class="vocab-uk">як тільки</td><td class="vocab-ipa">/jɑk ˈtʲilʲkɪ/</td><td class="vocab-en">as soon as</td></tr><tr><td class="vocab-uk">ледве</td><td class="vocab-ipa">/ˈlɛdvɛ/</td><td class="vocab-en">hardly, barely</td></tr><tr><td class="vocab-uk">тим часом</td><td class="vocab-ipa">/tɪm ˈt͡ʃɑsom/</td><td class="vocab-en">meanwhile</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 110 · curricula-opus</footer>
   <script>

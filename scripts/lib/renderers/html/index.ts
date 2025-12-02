@@ -127,25 +127,19 @@ function renderMainContent(options: ContentOptions): string {
 
 function renderLessonSection(parsed: ParsedModule, nextSection: string): string {
   const { frontmatter, sections, rawMarkdown } = parsed;
-  const isImmersive = isImmersiveLevel(frontmatter.level);
 
-  // Render sections or raw markdown
+  // Book-style: render all sections faithfully in order (except Activities and Vocabulary tabs)
+  // Sections shown in Lesson tab: intro, content, practice, summary
+  // Sections shown separately: activities, vocabulary
+  const lessonSections = sections.filter(s => !['activities', 'vocabulary'].includes(s.type));
+
   let contentHtml = '';
-  if (isImmersive && sections.length > 0) {
-    // Include all sections except activities, vocabulary, and summary (shown separately)
-    contentHtml = sections
-      .filter(s => !['activities', 'vocabulary', 'summary'].includes(s.type))
-      .map(s => renderSectionCard(s))
-      .join('');
-    // Add summary at end
-    const summarySection = sections.find(s => s.type === 'summary');
-    if (summarySection) {
-      contentHtml += renderSectionCard(summarySection);
-    }
+  if (lessonSections.length > 0) {
+    contentHtml = lessonSections.map(s => renderSectionCard(s)).join('');
   } else {
-    // Convert raw markdown (excluding activities and vocab sections)
+    // Fallback: convert raw markdown (excluding activities and vocab)
     const cleanedMarkdown = cleanMarkdownForLesson(rawMarkdown);
-    contentHtml = `<div class="card"><h3>Theory</h3><div class="md-content">${markdownToHtml(cleanedMarkdown)}</div></div>`;
+    contentHtml = `<div class="card"><div class="md-content">${markdownToHtml(cleanedMarkdown)}</div></div>`;
   }
 
   return `
@@ -157,7 +151,7 @@ function renderLessonSection(parsed: ParsedModule, nextSection: string): string 
       </div>
       ${contentHtml}
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('${nextSection}')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('${nextSection}')">Activities →</button>
       </div>
     </section>
   `;
@@ -226,9 +220,43 @@ function renderSortSection(activity: Activity): string {
 }
 
 function renderVocabSection(vocabulary: VocabWord[]): string {
+  // Render vocabulary as a styled table (book-style)
+  const hasTranslit = vocabulary.some(v => v.translit);
+  const hasIpa = vocabulary.some(v => v.ipa);
+  const hasNote = vocabulary.some(v => v.note);
+
+  const tableRows = vocabulary.map(v => {
+    let row = `<tr><td class="vocab-uk">${escapeHtml(v.uk)}</td>`;
+    if (hasTranslit) row += `<td class="vocab-translit">${escapeHtml(v.translit || '')}</td>`;
+    if (hasIpa) row += `<td class="vocab-ipa">${escapeHtml(v.ipa || '')}</td>`;
+    row += `<td class="vocab-en">${escapeHtml(v.en)}</td>`;
+    if (hasNote) row += `<td class="vocab-note">${escapeHtml(v.note || '')}</td>`;
+    row += '</tr>';
+    return row;
+  }).join('');
+
+  const headerRow = `<tr>
+    <th>Слово</th>
+    ${hasTranslit ? '<th>Вимова</th>' : ''}
+    ${hasIpa ? '<th>IPA</th>' : ''}
+    <th>Переклад</th>
+    ${hasNote ? '<th>Примітка</th>' : ''}
+  </tr>`;
+
   return `
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (${vocabulary.length})</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (${vocabulary.length})</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead>${headerRow}</thead>
+            <tbody>${tableRows}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>`;
 }
 

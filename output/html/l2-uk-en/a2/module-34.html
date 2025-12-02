@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Instrumental I</h2>
         <p style="color:var(--text-muted)">With Whom</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="theseventhcase">The Seventh Case!</h3>
 <p>You've learned six cases: Nominative, Accusative, Genitive, Dative, Locative, and Vocative. Now for the last one: the <strong>Instrumental case</strong> (Орудний відмінок).</p>
 <p><strong>The key question:</strong> З ким? (With whom?) / З чим? (With what?)</p>
@@ -890,8 +905,13 @@ footer {
 <li>Зазвичай з сім'єю, іноді з друзями.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="instrumentalendings">Instrumental Endings</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="instrumentalendings">Instrumental Endings</h2>
 <table>
 <thead>
 <tr>
@@ -940,7 +960,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h2 id="instrumentalpronouns-1">Instrumental Pronouns</h2>
+<h2 id="instrumentalpronouns">Instrumental Pronouns</h2>
 <table>
 <thead>
 <tr>
@@ -1016,9 +1036,11 @@ footer {
   <li>Use зі before consonant clusters: зі мною, зі студентом</li>
   <li>Many social verbs use з + instrumental: зустрічатися, знайомитися</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1027,7 +1049,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">друг</div><div class="match-item" data-pair="1">сестра</div><div class="match-item" data-pair="2">вчитель</div><div class="match-item" data-pair="3">Марія</div><div class="match-item" data-pair="4">батьки</div><div class="match-item" data-pair="5">подруга</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Марією</div><div class="match-item" data-pair="0">другом</div><div class="match-item" data-pair="1">сестрою</div><div class="match-item" data-pair="4">батьками</div><div class="match-item" data-pair="5">подругою</div><div class="match-item" data-pair="2">вчителем</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">другом</div><div class="match-item" data-pair="2">вчителем</div><div class="match-item" data-pair="4">батьками</div><div class="match-item" data-pair="5">подругою</div><div class="match-item" data-pair="1">сестрою</div><div class="match-item" data-pair="3">Марією</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1048,8 +1070,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (16)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (16)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">з/із/зі</td><td class="vocab-ipa">/z/, /iz/, /zʲi/</td><td class="vocab-en">with</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">разом</td><td class="vocab-ipa">/ˈrɑzom/</td><td class="vocab-en">together</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">удвох</td><td class="vocab-ipa">/udˈvox/</td><td class="vocab-en">the two (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">утрьох</td><td class="vocab-ipa">/uˈtrʲox/</td><td class="vocab-en">the three (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зустрічатися</td><td class="vocab-ipa">/zustriˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to meet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">вітатися</td><td class="vocab-ipa">/viˈtɑtɪsʲɑ/</td><td class="vocab-en">to greet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">прощатися</td><td class="vocab-ipa">/proʃˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to say goodbye</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">знайомитися</td><td class="vocab-ipa">/znɑˈjomɪtɪsʲɑ/</td><td class="vocab-en">to get acquainted</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">мною</td><td class="vocab-ipa">/mnoju/</td><td class="vocab-en">(with) me</td><td class="vocab-note">Instr. of я</td></tr><tr><td class="vocab-uk">тобою</td><td class="vocab-ipa">/toˈboju/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ти</td></tr><tr><td class="vocab-uk">ним</td><td class="vocab-ipa">/nɪm/</td><td class="vocab-en">(with) him/it</td><td class="vocab-note">Instr. of він/воно</td></tr><tr><td class="vocab-uk">нею</td><td class="vocab-ipa">/ˈnɛju/</td><td class="vocab-en">(with) her</td><td class="vocab-note">Instr. of вона</td></tr><tr><td class="vocab-uk">нами</td><td class="vocab-ipa">/ˈnɑmɪ/</td><td class="vocab-en">(with) us</td><td class="vocab-note">Instr. of ми</td></tr><tr><td class="vocab-uk">вами</td><td class="vocab-ipa">/ˈvɑmɪ/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ви</td></tr><tr><td class="vocab-uk">ними</td><td class="vocab-ipa">/ˈnɪmɪ/</td><td class="vocab-en">(with) them</td><td class="vocab-note">Instr. of вони</td></tr><tr><td class="vocab-uk">компанія</td><td class="vocab-ipa">/kompɑˈnʲijɑ/</td><td class="vocab-en">company, group</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 34 · curricula-opus</footer>
   <script>

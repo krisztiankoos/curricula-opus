@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Food &amp; Cooking Vocabulary</h2>
         <p style="color:var(--text-muted)">Kitchen Actions, Ingredients, and Meals</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="beyondbasicfood">Beyond Basic Food</h3>
 <p>You know "хліб" (bread) and "молоко" (milk). Now let's learn to <strong>cook</strong>!</p>
 <p><strong>Kitchen actions:</strong></p>
@@ -869,8 +884,13 @@ footer {
 <li>"Змішай все і смаж на сковороді."</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="cookingverbs-1">Cooking Verbs</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="cookingverbs">Cooking Verbs</h2>
 <table>
 <thead>
 <tr>
@@ -996,9 +1016,11 @@ footer {
   <li>Tastes: солоний (salty), солодкий (sweet), кислий (sour), гострий (spicy)</li>
   <li>"Смакує?" = Does it taste good? "Смачного!" = Bon appétit!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1007,7 +1029,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">ніж</div><div class="match-item" data-pair="1">сковорода</div><div class="match-item" data-pair="2">духовка</div><div class="match-item" data-pair="3">каструля</div><div class="match-item" data-pair="4">терка</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">смажити</div><div class="match-item" data-pair="3">варити</div><div class="match-item" data-pair="4">терти</div><div class="match-item" data-pair="0">різати</div><div class="match-item" data-pair="2">пекти</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">різати</div><div class="match-item" data-pair="2">пекти</div><div class="match-item" data-pair="3">варити</div><div class="match-item" data-pair="1">смажити</div><div class="match-item" data-pair="4">терти</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1028,8 +1050,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (43)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (43)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">варити</td><td class="vocab-ipa">/vɑˈrɪtɪ/</td><td class="vocab-en">to boil, cook</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">смажити</td><td class="vocab-ipa">/ˈsmɑʒɪtɪ/</td><td class="vocab-en">to fry</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">пекти</td><td class="vocab-ipa">/ˈpɛktɪ/</td><td class="vocab-en">to bake</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">готувати</td><td class="vocab-ipa">/ɦotuˈvɑtɪ/</td><td class="vocab-en">to prepare, cook</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">різати</td><td class="vocab-ipa">/ˈrʲizɑtɪ/</td><td class="vocab-en">to cut</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">чистити</td><td class="vocab-ipa">/ˈtʃɪstɪtɪ/</td><td class="vocab-en">to peel, clean</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">мішати</td><td class="vocab-ipa">/mʲiˈʃɑtɪ/</td><td class="vocab-en">to mix, stir</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">додавати</td><td class="vocab-ipa">/dodɑˈvɑtɪ/</td><td class="vocab-en">to add</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">каструля</td><td class="vocab-ipa">/kɑsˈtrulʲɑ/</td><td class="vocab-en">pot</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сковорода</td><td class="vocab-ipa">/skovoroˈdɑ/</td><td class="vocab-en">frying pan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">духовка</td><td class="vocab-ipa">/duˈxovkɑ/</td><td class="vocab-en">oven</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">терка</td><td class="vocab-ipa">/ˈtɛrkɑ/</td><td class="vocab-en">grater</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дошка</td><td class="vocab-ipa">/ˈdoʃkɑ/</td><td class="vocab-en">cutting board</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">курятина</td><td class="vocab-ipa">/kurʲɑˈtɪnɑ/</td><td class="vocab-en">chicken (meat)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">свинина</td><td class="vocab-ipa">/svɪˈnɪnɑ/</td><td class="vocab-en">pork</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яловичина</td><td class="vocab-ipa">/jɑloˈvɪtʃɪnɑ/</td><td class="vocab-en">beef</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">фарш</td><td class="vocab-ipa">/fɑrʃ/</td><td class="vocab-en">ground meat</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">цибуля</td><td class="vocab-ipa">/tsɪˈbulʲɑ/</td><td class="vocab-en">onion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">часник</td><td class="vocab-ipa">/tʃɑsˈnɪk/</td><td class="vocab-en">garlic</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">морква</td><td class="vocab-ipa">/ˈmorkvɑ/</td><td class="vocab-en">carrot</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">капуста</td><td class="vocab-ipa">/kɑˈpustɑ/</td><td class="vocab-en">cabbage</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">буряк</td><td class="vocab-ipa">/burʲˈɑk/</td><td class="vocab-en">beet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гречка</td><td class="vocab-ipa">/ˈɦrɛtʃkɑ/</td><td class="vocab-en">buckwheat</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сметана</td><td class="vocab-ipa">/smɛˈtɑnɑ/</td><td class="vocab-en">sour cream</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вершки</td><td class="vocab-ipa">/vɛrˈʃkɪ/</td><td class="vocab-en">cream</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">смачний</td><td class="vocab-ipa">/ˈsmɑtʃnɪj/</td><td class="vocab-en">delicious</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">солоний</td><td class="vocab-ipa">/soˈlonɪj/</td><td class="vocab-en">salty</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">солодкий</td><td class="vocab-ipa">/soˈlodkɪj/</td><td class="vocab-en">sweet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кислий</td><td class="vocab-ipa">/ˈkɪslɪj/</td><td class="vocab-en">sour</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гіркий</td><td class="vocab-ipa">/ˈɦʲirkɪj/</td><td class="vocab-en">bitter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гострий</td><td class="vocab-ipa">/ˈɦostrɪj/</td><td class="vocab-en">spicy, sharp</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">свіжий</td><td class="vocab-ipa">/ˈsvʲiʒɪj/</td><td class="vocab-en">fresh</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">соковитий</td><td class="vocab-ipa">/sokoˈvɪtɪj/</td><td class="vocab-en">juicy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">страва</td><td class="vocab-ipa">/ˈstrɑvɑ/</td><td class="vocab-en">dish</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рецепт</td><td class="vocab-ipa">/rɛˈtsɛpt/</td><td class="vocab-en">recipe</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">порція</td><td class="vocab-ipa">/ˈportsʲijɑ/</td><td class="vocab-en">portion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">смакувати</td><td class="vocab-ipa">/smɑkuˈvɑtɪ/</td><td class="vocab-en">to taste (enjoy)</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">наїстися</td><td class="vocab-ipa">/nɑˈjistɪsʲɑ/</td><td class="vocab-en">to eat one&#039;s fill</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">борщ</td><td class="vocab-ipa">/borʃtʃ/</td><td class="vocab-en">borscht</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вареники</td><td class="vocab-ipa">/vɑˈrɛnɪkɪ/</td><td class="vocab-en">dumplings</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">деруни</td><td class="vocab-ipa">/dɛˈrunɪ/</td><td class="vocab-en">potato pancakes</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">голубці</td><td class="vocab-ipa">/ɦoluˈptsʲi/</td><td class="vocab-en">stuffed cabbage</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сирники</td><td class="vocab-ipa">/sɪrˈnɪkɪ/</td><td class="vocab-en">cottage cheese pancakes</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 67 · curricula-opus</footer>
   <script>

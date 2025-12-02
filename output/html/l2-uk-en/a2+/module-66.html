@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Root Families II: Motion &amp; Perception</h2>
         <p style="color:var(--text-muted)">Roots for Movement, Seeing, and Knowing</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="morerootfamilies">More Root Families</h3>
 <p>In Module 65, you learned roots for learning, work, reading, writing, and speech. Now let's explore roots for <strong>motion</strong> and <strong>perception</strong>!</p>
 <p><strong>Motion roots:</strong></p>
@@ -864,8 +879,13 @@ footer {
 <li>Її <strong>визнали</strong> переможницею.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="fivemotionperceptionroots">Five Motion &amp; Perception Roots</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="fivemotionperceptionroots">Five Motion &amp; Perception Roots</h2>
 <table>
 <thead>
 <tr>
@@ -957,9 +977,11 @@ footer {
   <li>-знай- = knowing (знайомий = someone you know)</li>
   <li>Ten root families now = hundreds of words!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -968,7 +990,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">-ход-/-хід-</div><div class="match-item" data-pair="1">-їзд-</div><div class="match-item" data-pair="2">-бач-</div><div class="match-item" data-pair="3">-слух-</div><div class="match-item" data-pair="4">-знат-/-знай-</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">knowing</div><div class="match-item" data-pair="0">walking, going</div><div class="match-item" data-pair="1">riding, driving</div><div class="match-item" data-pair="2">seeing</div><div class="match-item" data-pair="3">hearing</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">riding, driving</div><div class="match-item" data-pair="0">walking, going</div><div class="match-item" data-pair="4">knowing</div><div class="match-item" data-pair="3">hearing</div><div class="match-item" data-pair="2">seeing</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -989,8 +1011,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (35)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (35)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">вхід</td><td class="vocab-ipa">/vxʲid/</td><td class="vocab-en">entrance</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вихід</td><td class="vocab-ipa">/ˈvɪxʲid/</td><td class="vocab-en">exit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">прихід</td><td class="vocab-ipa">/ˈprɪxʲid/</td><td class="vocab-en">arrival</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відхід</td><td class="vocab-ipa">/ˈvʲidxʲid/</td><td class="vocab-en">departure</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перехід</td><td class="vocab-ipa">/ˈpɛrɛxʲid/</td><td class="vocab-en">crossing</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">похід</td><td class="vocab-ipa">/ˈpoxʲid/</td><td class="vocab-en">hike, campaign</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підхід</td><td class="vocab-ipa">/ˈpʲidxʲid/</td><td class="vocab-en">approach</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дохід</td><td class="vocab-ipa">/ˈdoxʲid/</td><td class="vocab-en">income</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поїздка</td><td class="vocab-ipa">/poˈjizdkɑ/</td><td class="vocab-en">trip</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поїзд</td><td class="vocab-ipa">/ˈpojizd/</td><td class="vocab-en">train</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">виїзд</td><td class="vocab-ipa">/ˈvɪjizd/</td><td class="vocab-en">exit (vehicles)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">в&#039;їзд</td><td class="vocab-ipa">/vjizd/</td><td class="vocab-en">entrance (vehicles)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">приїзд</td><td class="vocab-ipa">/ˈprɪjizd/</td><td class="vocab-en">arrival (vehicles)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">від&#039;їзд</td><td class="vocab-ipa">/ˈvʲidjizd/</td><td class="vocab-en">departure (vehicles)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">переїзд</td><td class="vocab-ipa">/ˈpɛrɛjizd/</td><td class="vocab-en">move; crossing</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">проїзд</td><td class="vocab-ipa">/ˈprojizd/</td><td class="vocab-en">passage; fare</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">побачити</td><td class="vocab-ipa">/poˈbɑtʃɪtɪ/</td><td class="vocab-en">to see</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">побачення</td><td class="vocab-ipa">/pobɑˈtʃɛnʲːɑ/</td><td class="vocab-en">meeting, date</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">передбачати</td><td class="vocab-ipa">/pɛrɛdˈbɑtʃɑtɪ/</td><td class="vocab-en">to foresee</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">передбачення</td><td class="vocab-ipa">/pɛrɛdbɑˈtʃɛnʲːɑ/</td><td class="vocab-en">prediction</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибачати</td><td class="vocab-ipa">/vɪbɑˈtʃɑtɪ/</td><td class="vocab-en">to forgive</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вибачення</td><td class="vocab-ipa">/vɪbɑˈtʃɛnʲːɑ/</td><td class="vocab-en">apology</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">слух</td><td class="vocab-ipa">/slux/</td><td class="vocab-en">hearing; rumor</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">слухач</td><td class="vocab-ipa">/sluˈxɑtʃ/</td><td class="vocab-en">listener</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вислухати</td><td class="vocab-ipa">/ˈvɪsluxɑtɪ/</td><td class="vocab-en">to hear out</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">підслухати</td><td class="vocab-ipa">/pʲidsluˈxɑtɪ/</td><td class="vocab-en">to eavesdrop</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">слухняний</td><td class="vocab-ipa">/sluxˈnʲɑnɪj/</td><td class="vocab-en">obedient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">неслухняний</td><td class="vocab-ipa">/nɛsluxˈnʲɑnɪj/</td><td class="vocab-en">disobedient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знайомий</td><td class="vocab-ipa">/znɑˈjomɪj/</td><td class="vocab-en">acquaintance</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знайомитися</td><td class="vocab-ipa">/znɑˈjomɪtɪsʲɑ/</td><td class="vocab-en">to get acquainted</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">познайомитися</td><td class="vocab-ipa">/poznɑˈjomɪtɪsʲɑ/</td><td class="vocab-en">to meet</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">дізнатися</td><td class="vocab-ipa">/dʲizˈnɑtɪsʲɑ/</td><td class="vocab-en">to find out</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">пізнавати</td><td class="vocab-ipa">/pʲiznɑˈvɑtɪ/</td><td class="vocab-en">to learn, cognize</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">визнавати</td><td class="vocab-ipa">/vɪznɑˈvɑtɪ/</td><td class="vocab-en">to admit</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">визнання</td><td class="vocab-ipa">/vɪzˈnɑnʲːɑ/</td><td class="vocab-en">recognition</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 66 · curricula-opus</footer>
   <script>

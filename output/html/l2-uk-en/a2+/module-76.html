@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Shopping &amp; Services Vocabulary</h2>
         <p style="color:var(--text-muted)">Stores, Banking, and Customer Service</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="beyondbasicshopping">Beyond Basic Shopping</h3>
 <p>You know how to buy things. Now let's master services!</p>
 <p><strong>Services:</strong></p>
@@ -914,8 +929,13 @@ footer {
 <li>"Чи є мобільний додаток?"</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="storetypes">Store Types</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="storetypes">Store Types</h2>
 <table>
 <thead>
 <tr>
@@ -942,7 +962,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h2 id="bankingterms-1">Banking Terms</h2>
+<h2 id="bankingterms">Banking Terms</h2>
 <table>
 <thead>
 <tr>
@@ -1044,9 +1064,11 @@ footer {
   <li>самовивіз = pickup, доставка = delivery</li>
   <li>Збережіть чек! = Keep the receipt!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1055,7 +1077,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">стрижка</div><div class="match-item" data-pair="1">чистка одягу</div><div class="match-item" data-pair="2">обмін валют</div><div class="match-item" data-pair="3">ремонт авто</div><div class="match-item" data-pair="4">квитки</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">автосервіс</div><div class="match-item" data-pair="1">хімчистка</div><div class="match-item" data-pair="0">перукарня</div><div class="match-item" data-pair="4">туристичне агентство</div><div class="match-item" data-pair="2">банк</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">банк</div><div class="match-item" data-pair="1">хімчистка</div><div class="match-item" data-pair="3">автосервіс</div><div class="match-item" data-pair="0">перукарня</div><div class="match-item" data-pair="4">туристичне агентство</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1076,8 +1098,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (42)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (42)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">супермаркет</td><td class="vocab-ipa">/supɛrˈmɑrkɛt/</td><td class="vocab-en">supermarket</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">торговий центр</td><td class="vocab-ipa">/torˈɦovɪj tsɛntr/</td><td class="vocab-en">shopping mall</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ринок</td><td class="vocab-ipa">/ˈrɪnok/</td><td class="vocab-en">market</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">універмаг</td><td class="vocab-ipa">/unʲivɛrˈmɑɦ/</td><td class="vocab-en">department store</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">секонд-хенд</td><td class="vocab-ipa">/sɛˈkond xɛnd/</td><td class="vocab-en">secondhand store</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">булочна</td><td class="vocab-ipa">/buˈlotʃnɑ/</td><td class="vocab-en">bakery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кондитерська</td><td class="vocab-ipa">/kondɪˈtɛrskɑ/</td><td class="vocab-en">confectionery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зоомагазин</td><td class="vocab-ipa">/zoomɑɦɑˈzɪn/</td><td class="vocab-en">pet store</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ювелірний магазин</td><td class="vocab-ipa">/juvɛˈlʲirnɪj mɑɦɑˈzɪn/</td><td class="vocab-en">jewelry store</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">канцтовари</td><td class="vocab-ipa">/kɑntstoˈvɑrɪ/</td><td class="vocab-en">stationery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рахунок</td><td class="vocab-ipa">/rɑˈxunok/</td><td class="vocab-en">account</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">картка</td><td class="vocab-ipa">/ˈkɑrtkɑ/</td><td class="vocab-en">card</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">готівка</td><td class="vocab-ipa">/ɦoˈtʲivkɑ/</td><td class="vocab-en">cash</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">переказ</td><td class="vocab-ipa">/pɛrɛˈkɑz/</td><td class="vocab-en">transfer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вклад</td><td class="vocab-ipa">/vklɑd/</td><td class="vocab-en">deposit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кредит</td><td class="vocab-ipa">/krɛˈdɪt/</td><td class="vocab-en">credit, loan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відсоток</td><td class="vocab-ipa">/vʲidˈsotok/</td><td class="vocab-en">interest rate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">банкомат</td><td class="vocab-ipa">/bɑnkoˈmɑt/</td><td class="vocab-en">ATM</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">валюта</td><td class="vocab-ipa">/vɑˈlʲutɑ/</td><td class="vocab-en">currency</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перукарня</td><td class="vocab-ipa">/pɛruˈkɑrnʲɑ/</td><td class="vocab-en">hair salon</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">хімчистка</td><td class="vocab-ipa">/xʲimˈtʃɪstkɑ/</td><td class="vocab-en">dry cleaner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">майстерня</td><td class="vocab-ipa">/mɑjˈstɛrnʲɑ/</td><td class="vocab-en">repair shop</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">автосервіс</td><td class="vocab-ipa">/ɑvtosɛrˈvʲis/</td><td class="vocab-en">car service</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ательє</td><td class="vocab-ipa">/ɑtɛˈlʲjɛ/</td><td class="vocab-en">tailor shop</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знижка</td><td class="vocab-ipa">/ˈznɪʒkɑ/</td><td class="vocab-en">discount</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">акція</td><td class="vocab-ipa">/ˈɑktsʲijɑ/</td><td class="vocab-en">sale, promotion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розпродаж</td><td class="vocab-ipa">/rozpˈrodɑʒ/</td><td class="vocab-en">clearance sale</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">чек</td><td class="vocab-ipa">/tʃɛk/</td><td class="vocab-en">receipt</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">здача</td><td class="vocab-ipa">/ˈzdɑtʃɑ/</td><td class="vocab-en">change</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">передоплата</td><td class="vocab-ipa">/pɛrɛdopˈlɑtɑ/</td><td class="vocab-en">prepayment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розстрочка</td><td class="vocab-ipa">/rozˈstrotʃkɑ/</td><td class="vocab-en">installment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">доставка</td><td class="vocab-ipa">/dosˈtɑvkɑ/</td><td class="vocab-en">delivery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">самовивіз</td><td class="vocab-ipa">/sɑmovɪˈvʲiz/</td><td class="vocab-en">pickup</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повернення</td><td class="vocab-ipa">/povɛrˈnɛnʲːɑ/</td><td class="vocab-en">return</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гарантія</td><td class="vocab-ipa">/ɦɑˈrɑntʲijɑ/</td><td class="vocab-en">warranty</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відстеження</td><td class="vocab-ipa">/vʲidˈstɛʒɛnʲːɑ/</td><td class="vocab-en">tracking</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">замовляти</td><td class="vocab-ipa">/zɑmovˈlʲɑtɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">повертати</td><td class="vocab-ipa">/povɛrˈtɑtɪ/</td><td class="vocab-en">to return</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">обмінювати</td><td class="vocab-ipa">/obmʲiˈnʲuvɑtɪ/</td><td class="vocab-en">to exchange</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">бронювати</td><td class="vocab-ipa">/broˈnʲuvɑtɪ/</td><td class="vocab-en">to book</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">доставляти</td><td class="vocab-ipa">/dostɑvˈlʲɑtɪ/</td><td class="vocab-en">to deliver</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">скаржитися</td><td class="vocab-ipa">/ˈskɑrʒɪtɪsʲɑ/</td><td class="vocab-en">to complain</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 76 · curricula-opus</footer>
   <script>

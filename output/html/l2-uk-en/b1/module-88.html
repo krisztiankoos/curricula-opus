@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -876,7 +889,7 @@ footer {
     </div>
   
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -885,7 +898,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">прокидатися</div><div class="match-item" data-pair="1">засинати</div><div class="match-item" data-pair="2">починати</div><div class="match-item" data-pair="3">хвилюватися</div><div class="match-item" data-pair="4">змінювати</div><div class="match-item" data-pair="5">створювати</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">заснути</div><div class="match-item" data-pair="3">захвилюватися</div><div class="match-item" data-pair="0">прокинутися</div><div class="match-item" data-pair="2">почати</div><div class="match-item" data-pair="4">змінити</div><div class="match-item" data-pair="5">створити</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">змінити</div><div class="match-item" data-pair="2">почати</div><div class="match-item" data-pair="1">заснути</div><div class="match-item" data-pair="0">прокинутися</div><div class="match-item" data-pair="5">створити</div><div class="match-item" data-pair="3">захвилюватися</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -906,8 +919,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (14)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (14)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">прокидатися</td><td class="vocab-ipa">/prokɪˈdɑtɪsʲɑ/</td><td class="vocab-en">to wake up</td></tr><tr><td class="vocab-uk">прокинутися</td><td class="vocab-ipa">/prokɪˈnutɪsʲɑ/</td><td class="vocab-en">to wake up (pf)</td></tr><tr><td class="vocab-uk">засинати</td><td class="vocab-ipa">/zɑsɪˈnɑtɪ/</td><td class="vocab-en">to fall asleep</td></tr><tr><td class="vocab-uk">заснути</td><td class="vocab-ipa">/zɑsˈnutɪ/</td><td class="vocab-en">to fall asleep (pf)</td></tr><tr><td class="vocab-uk">хвилюватися</td><td class="vocab-ipa">/xvɪlʲuˈvɑtɪsʲɑ/</td><td class="vocab-en">to worry</td></tr><tr><td class="vocab-uk">захвилюватися</td><td class="vocab-ipa">/zɑxvɪlʲuˈvɑtɪsʲɑ/</td><td class="vocab-en">to worry (pf)</td></tr><tr><td class="vocab-uk">змінювати</td><td class="vocab-ipa">/zmʲiˈnʲuvɑtɪ/</td><td class="vocab-en">to change</td></tr><tr><td class="vocab-uk">змінити</td><td class="vocab-ipa">/zmʲiˈnɪtɪ/</td><td class="vocab-en">to change (pf)</td></tr><tr><td class="vocab-uk">покращувати</td><td class="vocab-ipa">/pokrɑˈʃuvɑtɪ/</td><td class="vocab-en">to improve</td></tr><tr><td class="vocab-uk">покращити</td><td class="vocab-ipa">/pokrɑˈʃɪtɪ/</td><td class="vocab-en">to improve (pf)</td></tr><tr><td class="vocab-uk">створювати</td><td class="vocab-ipa">/stvoˈrʲuvɑtɪ/</td><td class="vocab-en">to create</td></tr><tr><td class="vocab-uk">створити</td><td class="vocab-ipa">/stvoˈrɪtɪ/</td><td class="vocab-en">to create (pf)</td></tr><tr><td class="vocab-uk">телефонувати</td><td class="vocab-ipa">/tɛlɛfonuˈvɑtɪ/</td><td class="vocab-en">to call</td></tr><tr><td class="vocab-uk">зателефонувати</td><td class="vocab-ipa">/zɑtɛlɛfonuˈvɑtɪ/</td><td class="vocab-en">to call (pf)</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 88 · curricula-opus</footer>
   <script>

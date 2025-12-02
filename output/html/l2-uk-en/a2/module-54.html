@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Health &amp; Body</h2>
         <p style="color:var(--text-muted)">At the Doctor&#039;s</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="stayinghealthy">Staying Healthy</h3>
 <p>Nobody likes being sick, but knowing how to describe your symptoms in Ukrainian is essential!</p>
 <p><strong>Key phrases:</strong></p>
@@ -833,8 +848,13 @@ footer {
 <li>Prescribe treatment</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="bodyparts-1">Body Parts</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="bodyparts">Body Parts</h2>
 <table>
 <thead>
 <tr>
@@ -903,7 +923,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h2 id="atthepharmacy-1">At the Pharmacy</h2>
+<h2 id="atthepharmacy">At the Pharmacy</h2>
 <table>
 <thead>
 <tr>
@@ -931,9 +951,11 @@ footer {
   <li>Common: застуда, температура, кашель</li>
   <li>Аптека = pharmacy, рецепт = prescription</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -942,7 +964,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">голова</div><div class="match-item" data-pair="1">рука</div><div class="match-item" data-pair="2">горло</div><div class="match-item" data-pair="3">живіт</div><div class="match-item" data-pair="4">спина</div><div class="match-item" data-pair="5">нога</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">stomach</div><div class="match-item" data-pair="0">head</div><div class="match-item" data-pair="1">arm/hand</div><div class="match-item" data-pair="4">back</div><div class="match-item" data-pair="2">throat</div><div class="match-item" data-pair="5">leg/foot</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">throat</div><div class="match-item" data-pair="4">back</div><div class="match-item" data-pair="5">leg/foot</div><div class="match-item" data-pair="1">arm/hand</div><div class="match-item" data-pair="3">stomach</div><div class="match-item" data-pair="0">head</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -963,8 +985,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (11)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (11)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">голова</td><td class="vocab-ipa">/ɦoloˈvɑ/</td><td class="vocab-en">head</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">горло</td><td class="vocab-ipa">/ˈɦorlo/</td><td class="vocab-en">throat</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">живіт</td><td class="vocab-ipa">/ʒɪˈvʲit/</td><td class="vocab-en">stomach, belly</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спина</td><td class="vocab-ipa">/spɪˈnɑ/</td><td class="vocab-en">back</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">боліти</td><td class="vocab-ipa">/boˈlʲitɪ/</td><td class="vocab-en">to hurt, ache</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кашель</td><td class="vocab-ipa">/ˈkɑʃɛlʲ/</td><td class="vocab-en">cough</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">нежить</td><td class="vocab-ipa">/ˈnɛʒɪtʲ/</td><td class="vocab-en">runny nose</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">застуда</td><td class="vocab-ipa">/zɑˈstudɑ/</td><td class="vocab-en">cold (illness)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ліки</td><td class="vocab-ipa">/ˈlʲikɪ/</td><td class="vocab-en">medicine</td><td class="vocab-note">pl-only</td></tr><tr><td class="vocab-uk">таблетка</td><td class="vocab-ipa">/tɑbˈlɛtkɑ/</td><td class="vocab-en">tablet, pill</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рецепт</td><td class="vocab-ipa">/rɛˈtsɛpt/</td><td class="vocab-en">prescription</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 54 · curricula-opus</footer>
   <script>

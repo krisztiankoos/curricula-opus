@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Locative Case</h2>
         <p style="color:var(--text-muted)">Where Things Are</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="yoursecondcase">Your Second Case!</h3>
 <p>You've mastered accusative (direct objects). Now meet the <strong>locative case</strong> - used to say WHERE something is located!</p>
 <p>English uses prepositions alone: "in the room," "on the table."<br />
@@ -632,8 +647,13 @@ Ukrainian uses preposition + noun ending change: "в кімнаті," "на ст
 </ol>
 <button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Вони на роботі.</div></div>
 <hr />
-<h1 id="locativesummary">Locative Summary</h1>
-<h2 id="endingsbygender">Endings by Gender</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Locative Summary</h3>
+      <div class="md-content"><h2 id="endingsbygender">Endings by Gender</h2>
 <table>
 <thead>
 <tr>
@@ -697,9 +717,12 @@ Ukrainian uses preposition + noun ending change: "в кімнаті," "на ст
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li><strong>Locative case</strong> = used with prepositions for location</li>
@@ -716,9 +739,11 @@ Ukrainian uses preposition + noun ending change: "в кімнаті," "на ст
   <li>Де <strong>твій</strong> телефон? (Where is your phone?)</li>
   <li>Possessives match gender and number!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -727,7 +752,7 @@ Ukrainian uses preposition + noun ending change: "в кімнаті," "на ст
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">кімната</div><div class="match-item" data-pair="1">стіл</div><div class="match-item" data-pair="2">школа</div><div class="match-item" data-pair="3">книга</div><div class="match-item" data-pair="4">вулиця</div><div class="match-item" data-pair="5">дім</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">у книзі</div><div class="match-item" data-pair="5">вдома</div><div class="match-item" data-pair="1">на столі</div><div class="match-item" data-pair="4">на вулиці</div><div class="match-item" data-pair="0">у кімнаті</div><div class="match-item" data-pair="2">у школі</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">вдома</div><div class="match-item" data-pair="2">у школі</div><div class="match-item" data-pair="3">у книзі</div><div class="match-item" data-pair="4">на вулиці</div><div class="match-item" data-pair="0">у кімнаті</div><div class="match-item" data-pair="1">на столі</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -748,8 +773,25 @@ Ukrainian uses preposition + noun ending change: "в кімнаті," "на ст
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (15)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (15)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">в / у</td><td class="vocab-ipa">/v/ /u/</td><td class="vocab-en">in, at</td><td class="vocab-note">В after vowels, У after consonants</td></tr><tr><td class="vocab-uk">на</td><td class="vocab-ipa">/nɑ/</td><td class="vocab-en">on, at</td><td class="vocab-note">Surfaces, events, open areas</td></tr><tr><td class="vocab-uk">кімната</td><td class="vocab-ipa">/kʲimˈnɑtɑ/</td><td class="vocab-en">room</td><td class="vocab-note">Loc: кімнаті</td></tr><tr><td class="vocab-uk">офіс</td><td class="vocab-ipa">/ˈɔfʲis/</td><td class="vocab-en">office</td><td class="vocab-note">Loc: офісі</td></tr><tr><td class="vocab-uk">школа</td><td class="vocab-ipa">/ˈʃkɔlɑ/</td><td class="vocab-en">school</td><td class="vocab-note">Loc: школі</td></tr><tr><td class="vocab-uk">університет</td><td class="vocab-ipa">/unʲivɛrsɪˈtɛt/</td><td class="vocab-en">university</td><td class="vocab-note">Loc: університеті</td></tr><tr><td class="vocab-uk">магазин</td><td class="vocab-ipa">/mɑɦɑˈzɪn/</td><td class="vocab-en">store</td><td class="vocab-note">Loc: магазині</td></tr><tr><td class="vocab-uk">ресторан</td><td class="vocab-ipa">/rɛstɔˈrɑn/</td><td class="vocab-en">restaurant</td><td class="vocab-note">Loc: ресторані</td></tr><tr><td class="vocab-uk">вулиця</td><td class="vocab-ipa">/ˈvulɪt͡sʲɑ/</td><td class="vocab-en">street</td><td class="vocab-note">Loc: вулиці</td></tr><tr><td class="vocab-uk">площа</td><td class="vocab-ipa">/ˈplɔʃt͡ʃɑ/</td><td class="vocab-en">square</td><td class="vocab-note">Loc: площі</td></tr><tr><td class="vocab-uk">центр</td><td class="vocab-ipa">/t͡sɛntr/</td><td class="vocab-en">center</td><td class="vocab-note">Loc: центрі</td></tr><tr><td class="vocab-uk">станція</td><td class="vocab-ipa">/ˈstɑnt͡sʲijɑ/</td><td class="vocab-en">station</td><td class="vocab-note">Loc: станції</td></tr><tr><td class="vocab-uk">аеропорт</td><td class="vocab-ipa">/ɑɛrɔˈpɔrt/</td><td class="vocab-en">airport</td><td class="vocab-note">Loc: аеропорту</td></tr><tr><td class="vocab-uk">готель</td><td class="vocab-ipa">/ɦɔˈtɛlʲ/</td><td class="vocab-en">hotel</td><td class="vocab-note">Loc: готелі</td></tr><tr><td class="vocab-uk">Київ</td><td class="vocab-ipa">/ˈkɪjiu̯/</td><td class="vocab-en">Kyiv</td><td class="vocab-note">Loc: Києві</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 13 · curricula-opus</footer>
   <script>

@@ -2,6 +2,7 @@
  * JSON Renderer
  *
  * Generates Vibe-format JSON from parsed modules
+ * Simplified output: sections with raw markdown, Vibe handles extraction
  */
 
 import {
@@ -9,11 +10,12 @@ import {
   VibeModule,
   VibeLesson,
   VibeActivity,
+  VibeSection,
   VocabularySection,
   Activity,
   RenderContext,
+  ModuleType,
 } from '../types';
-import { parsePhases } from '../parsers/sections';
 import { buildVocabularySection } from '../parsers/vocabulary';
 
 // =============================================================================
@@ -57,13 +59,14 @@ function buildVibeLesson(parsed: ParsedModule, ctx: RenderContext): VibeLesson {
   const { frontmatter, sections, rawMarkdown } = parsed;
   const now = new Date().toISOString();
 
-  // Parse PPP phases from markdown
-  const { phases } = parsePhases(rawMarkdown, frontmatter.duration);
+  // Infer moduleType from tags
+  const moduleType = inferModuleType(frontmatter.tags);
 
-  // Build immersive sections for B1+ content
-  const immersiveSections = sections.filter(s =>
-    s.type === 'intro' || s.type === 'content' || s.type === 'summary'
-  );
+  // Calculate immersion level based on CEFR level
+  const immersionLevel = getImmersionLevel(frontmatter.level);
+
+  // Build simplified sections (name + raw markdown content)
+  const vibeSections = buildVibeSections(sections);
 
   const lesson: VibeLesson = {
     id: `lesson-uk-${frontmatter.level}-${padNumber(frontmatter.module)}`,
@@ -76,6 +79,8 @@ function buildVibeLesson(parsed: ParsedModule, ctx: RenderContext): VibeLesson {
     targetLevel: frontmatter.level,
     phase: frontmatter.phase,
     moduleNumber: frontmatter.module,
+    moduleType,
+    immersionLevel,
     title: frontmatter.title,
     subtitle: frontmatter.subtitle,
     description: frontmatter.objectives[0] || frontmatter.title,
@@ -84,10 +89,11 @@ function buildVibeLesson(parsed: ParsedModule, ctx: RenderContext): VibeLesson {
     tags: frontmatter.tags,
     totalDuration: frontmatter.duration,
     transliterationMode: frontmatter.transliteration,
-    phases: phases.length > 0 ? phases : [],
+    sections: vibeSections,
+    rawMarkdown,
     createdAt: now,
     modifiedAt: now,
-    version: 1,
+    version: 2,
   };
 
   // Add Ukrainian title if present
@@ -101,13 +107,82 @@ function buildVibeLesson(parsed: ParsedModule, ctx: RenderContext): VibeLesson {
     lesson.objectivesUk = frontmatter.objectivesUk;
   }
 
-  // Add immersive sections for B1+ content
-  if (immersiveSections.length > 0 && isImmersiveLevel(frontmatter.level)) {
-    lesson.immersiveSections = immersiveSections;
-    lesson.rawMarkdown = rawMarkdown;
+  return lesson;
+}
+
+// =============================================================================
+// Module Type Inference
+// =============================================================================
+
+function inferModuleType(tags: string[]): ModuleType {
+  const tagSet = new Set(tags.map(t => t.toLowerCase()));
+
+  // Check for specific module types (order matters - more specific first)
+  if (tagSet.has('checkpoint') || tagSet.has('review') || tagSet.has('assessment')) {
+    return 'checkpoint';
+  }
+  if (tagSet.has('history')) {
+    return 'history';
+  }
+  if (tagSet.has('biography')) {
+    return 'biography';
+  }
+  if (tagSet.has('idioms') || tagSet.has('phraseology')) {
+    return 'idioms';
+  }
+  if (tagSet.has('literature') || tagSet.has('poetry') || tagSet.has('prose')) {
+    return 'literature';
+  }
+  if (tagSet.has('culture') || tagSet.has('regions') || tagSet.has('music')) {
+    return 'culture';
+  }
+  if (tagSet.has('skills') || tagSet.has('academic') || tagSet.has('writing')) {
+    return 'skills';
+  }
+  if (tagSet.has('functional') || tagSet.has('dialogue') || tagSet.has('role-play')) {
+    return 'functional';
+  }
+  if (tagSet.has('vocabulary') || tagSet.has('vocab')) {
+    return 'vocabulary';
+  }
+  if (tagSet.has('grammar') || tagSet.has('cases') || tagSet.has('verbs') || tagSet.has('aspect')) {
+    return 'grammar';
   }
 
-  return lesson;
+  // Default based on tag patterns
+  return 'grammar';
+}
+
+// =============================================================================
+// Immersion Level
+// =============================================================================
+
+function getImmersionLevel(level: string): number {
+  // Returns percentage of Ukrainian content (0.0 = all English, 1.0 = all Ukrainian)
+  const levels: Record<string, number> = {
+    'A1': 0.30,   // 70% EN / 30% UK
+    'A2': 0.40,   // 60% EN / 40% UK
+    'A2+': 0.50,  // 50% EN / 50% UK
+    'B1': 0.60,   // 40% EN / 60% UK
+    'B2': 0.85,   // 15% EN / 85% UK
+    'C1': 0.95,   // 5% EN / 95% UK
+    'C2': 0.98,   // 2% EN / 98% UK
+  };
+  return levels[level] ?? 0.50;
+}
+
+// =============================================================================
+// Section Builder
+// =============================================================================
+
+function buildVibeSections(sections: { id: string; type: string; title: string; titleUk?: string; content: string }[]): VibeSection[] {
+  return sections.map(s => ({
+    id: s.id,
+    name: s.titleUk || s.title,
+    nameEn: s.titleUk ? s.title : undefined,
+    type: s.type,
+    content: s.content,
+  }));
 }
 
 // =============================================================================
@@ -142,10 +217,6 @@ function buildVibeActivity(activity: Activity, level: string): VibeActivity {
 
 function padNumber(num: number): string {
   return num.toString().padStart(2, '0');
-}
-
-function isImmersiveLevel(level: string): boolean {
-  return ['B1', 'B2', 'C1', 'C2'].includes(level);
 }
 
 // =============================================================================

@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -820,7 +833,7 @@ footer {
     </div>
   
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('quiz')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('quiz')">Activities →</button>
       </div>
     </section>
   
@@ -841,8 +854,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (16)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (16)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">думка</td><td class="vocab-ipa">/ˈdumkɑ/</td><td class="vocab-en">opinion, thought</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-ipa">/ˈpoɦlʲɑd/</td><td class="vocab-en">view</td></tr><tr><td class="vocab-uk">точка зору</td><td class="vocab-ipa">/ˈtot͡ʃkɑ ˈzoru/</td><td class="vocab-en">point of view</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-ipa">/vvɑˈʒɑtɪ/</td><td class="vocab-en">to consider, believe</td></tr><tr><td class="vocab-uk">гадати</td><td class="vocab-ipa">/ɦɑˈdɑtɪ/</td><td class="vocab-en">to think, suppose</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-ipa">/zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to seem</td></tr><tr><td class="vocab-uk">впевнений</td><td class="vocab-ipa">/vpɛvˈnɛnɪj/</td><td class="vocab-en">sure, confident</td></tr><tr><td class="vocab-uk">переконаний</td><td class="vocab-ipa">/pɛrɛˈkonɑnɪj/</td><td class="vocab-en">convinced</td></tr><tr><td class="vocab-uk">безперечно</td><td class="vocab-ipa">/bɛzpɛˈrɛt͡ʃno/</td><td class="vocab-en">undoubtedly</td></tr><tr><td class="vocab-uk">можливо</td><td class="vocab-ipa">/moʒˈlɪvo/</td><td class="vocab-en">perhaps, possibly</td></tr><tr><td class="vocab-uk">мабуть</td><td class="vocab-ipa">/mɑˈbutʲ/</td><td class="vocab-en">probably</td></tr><tr><td class="vocab-uk">ймовірно</td><td class="vocab-ipa">/jmoˈvʲirno/</td><td class="vocab-en">probably, likely</td></tr><tr><td class="vocab-uk">проте</td><td class="vocab-ipa">/proˈtɛ/</td><td class="vocab-en">however</td></tr><tr><td class="vocab-uk">однак</td><td class="vocab-ipa">/odˈnɑk/</td><td class="vocab-en">however</td></tr><tr><td class="vocab-uk">загалом</td><td class="vocab-ipa">/zɑˈɦɑlom/</td><td class="vocab-en">in general</td></tr><tr><td class="vocab-uk">отже</td><td class="vocab-ipa">/ˈotʒɛ/</td><td class="vocab-en">so, therefore</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 97 · curricula-opus</footer>
   <script>

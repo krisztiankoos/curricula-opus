@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Dative I</h2>
         <p style="color:var(--text-muted)">To Me, To You</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="welcometoa2">Welcome to A2!</h3>
 <p>Congratulations on completing A1! You've mastered the foundation - now let's build on it.</p>
 <p>In A1, you learned 4 cases. At A2, you'll complete all 7. Today: the <strong>Dative case</strong> - answering "to whom?"</p>
@@ -666,8 +681,13 @@ footer {
 <li>Скажи їм, що я буду пізніше.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="dativepronouns">Dative Pronouns</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="dativepronouns">Dative Pronouns</h2>
 <table>
 <thead>
 <tr>
@@ -750,9 +770,11 @@ footer {
   <li>Expressions: мені потрібно, мені подобається, мені холодно</li>
   <li>Age uses dative: Скільки тобі років?</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -761,7 +783,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/7</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">я</div><div class="match-item" data-pair="1">ти</div><div class="match-item" data-pair="2">він</div><div class="match-item" data-pair="3">вона</div><div class="match-item" data-pair="4">ми</div><div class="match-item" data-pair="5">ви</div><div class="match-item" data-pair="6">вони</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">мені</div><div class="match-item" data-pair="1">тобі</div><div class="match-item" data-pair="6">їм</div><div class="match-item" data-pair="3">їй</div><div class="match-item" data-pair="2">йому</div><div class="match-item" data-pair="5">вам</div><div class="match-item" data-pair="4">нам</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">йому</div><div class="match-item" data-pair="6">їм</div><div class="match-item" data-pair="3">їй</div><div class="match-item" data-pair="5">вам</div><div class="match-item" data-pair="4">нам</div><div class="match-item" data-pair="0">мені</div><div class="match-item" data-pair="1">тобі</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -782,8 +804,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (21)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (21)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">мені</td><td class="vocab-ipa">/meˈnʲi/</td><td class="vocab-en">to me</td><td class="vocab-note">Dat. of я</td></tr><tr><td class="vocab-uk">тобі</td><td class="vocab-ipa">/toˈbʲi/</td><td class="vocab-en">to you</td><td class="vocab-note">Dat. of ти</td></tr><tr><td class="vocab-uk">йому</td><td class="vocab-ipa">/joˈmu/</td><td class="vocab-en">to him/it</td><td class="vocab-note">Dat. of він/воно</td></tr><tr><td class="vocab-uk">їй</td><td class="vocab-ipa">/jij/</td><td class="vocab-en">to her</td><td class="vocab-note">Dat. of вона</td></tr><tr><td class="vocab-uk">нам</td><td class="vocab-ipa">/nɑm/</td><td class="vocab-en">to us</td><td class="vocab-note">Dat. of ми</td></tr><tr><td class="vocab-uk">вам</td><td class="vocab-ipa">/vɑm/</td><td class="vocab-en">to you</td><td class="vocab-note">Dat. of ви</td></tr><tr><td class="vocab-uk">їм</td><td class="vocab-ipa">/jim/</td><td class="vocab-en">to them</td><td class="vocab-note">Dat. of вони</td></tr><tr><td class="vocab-uk">кому</td><td class="vocab-ipa">/koˈmu/</td><td class="vocab-en">to whom</td><td class="vocab-note">Dat. question</td></tr><tr><td class="vocab-uk">дати</td><td class="vocab-ipa">/ˈdɑtɪ/</td><td class="vocab-en">to give (pf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">казати</td><td class="vocab-ipa">/kɑˈzɑtɪ/</td><td class="vocab-en">to tell (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">сказати</td><td class="vocab-ipa">/skɑˈzɑtɪ/</td><td class="vocab-en">to tell (pf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">показувати</td><td class="vocab-ipa">/pokɑˈzuvɑtɪ/</td><td class="vocab-en">to show (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">показати</td><td class="vocab-ipa">/pokɑˈzɑtɪ/</td><td class="vocab-en">to show (pf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">допомагати</td><td class="vocab-ipa">/dopoˈmɑɦɑtɪ/</td><td class="vocab-en">to help (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дзвонити</td><td class="vocab-ipa">/dzvoˈnɪtɪ/</td><td class="vocab-en">to call (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">подзвонити</td><td class="vocab-ipa">/podzvonɪtɪ/</td><td class="vocab-en">to call (pf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">потрібний</td><td class="vocab-ipa">/poˈtrʲibnɪj/</td><td class="vocab-en">needed</td><td class="vocab-note">+ dat for person</td></tr><tr><td class="vocab-uk">подобатися</td><td class="vocab-ipa">/podoˈbɑtɪsʲɑ/</td><td class="vocab-en">to please, like</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-ipa">/zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to seem</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дарувати</td><td class="vocab-ipa">/dɑruˈvɑtɪ/</td><td class="vocab-en">to gift (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">подарувати</td><td class="vocab-ipa">/podɑruˈvɑtɪ/</td><td class="vocab-en">to gift (pf)</td><td class="vocab-note">+ dat</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 31 · curricula-opus</footer>
   <script>

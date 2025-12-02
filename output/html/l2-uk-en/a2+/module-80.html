@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Review: Vocabulary Expansion</h2>
         <p style="color:var(--text-muted)">Consolidating Thematic Vocabulary</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="twelvetopicsonereview">Twelve Topics, One Review</h3>
 <p>In Modules 67-78, you expanded your vocabulary across twelve life areas:</p>
 <ol>
@@ -596,36 +611,13 @@ Combine: Education + Work + Tech</p>
 <ul>
 <li>"Вчуся в університеті, підробляю онлайн. Все роблю на ноутбуці."</li>
 </ul>
-<h1 id="">#</h1>
-<h1 id="vocabulary">Vocabulary</h1>
-<p>This module reviews vocabulary from Modules 67-78. Selected highlights:</p>
-<p><strong>Food (Module 67):</strong><br />
-смачний, солоний, варити, смажити, борщ, сметана</p>
-<p><strong>Health (Module 68):</strong><br />
-болить, температура, лікар, аптека, застуда, ліки</p>
-<p><strong>Home (Module 69):</strong><br />
-квартира, диван, затишний, прибирати, переїжджати</p>
-<p><strong>Nature (Module 70):</strong><br />
-погода, гроза, туман, гора, ліс, соняшник, лелека</p>
-<p><strong>Emotions (Module 71):</strong><br />
-щасливий, сумний, вдячний, добрий, впертий, хвилюватися</p>
-<p><strong>Work (Module 72):</strong><br />
-робота, зарплата, колега, співбесіда, звільнитися</p>
-<p><strong>Tech (Module 73):</strong><br />
-ноутбук, завантажити, надіслати, застосунок, підписник</p>
-<p><strong>Hobbies (Module 74):</strong><br />
-хобі, захоплення, малювання, шахи, похід, колекція</p>
-<p><strong>Education (Module 75):</strong><br />
-університет, факультет, іспит, оцінка, диплом, вчитися</p>
-<p><strong>Shopping (Module 76):</strong><br />
-магазин, знижка, чек, повернути, доставка, рахунок</p>
-<p><strong>Sports (Module 77):</strong><br />
-тренування, команда, перемога, медаль, розминка</p>
-<p><strong>Arts (Module 78):</strong><br />
-музика, концерт, фільм, виставка, вишиванка, традиція</p>
-<hr />
-<h1 id="summary">Summary</h1>
-<h2 id="a2vocabularyachievement">A2+ Vocabulary Achievement</h2>
+<h2 id="">##</h2>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="a2vocabularyachievement">A2+ Vocabulary Achievement</h2>
 <p><strong>You've learned vocabulary for:</strong></p>
 <table>
 <thead>
@@ -792,9 +784,11 @@ Combine: Education + Work + Tech</p>
   <li>Use vocabulary actively, not just recognize it</li>
   <li>Ready for B1: more abstract and complex topics!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -803,7 +797,7 @@ Combine: Education + Work + Tech</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/8</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Food</div><div class="match-item" data-pair="1">Health</div><div class="match-item" data-pair="2">Home</div><div class="match-item" data-pair="3">Hobbies</div><div class="match-item" data-pair="4">Education</div><div class="match-item" data-pair="5">Shopping</div><div class="match-item" data-pair="6">Sports</div><div class="match-item" data-pair="7">Arts</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">смачний</div><div class="match-item" data-pair="1">температура</div><div class="match-item" data-pair="2">квартира</div><div class="match-item" data-pair="6">тренування</div><div class="match-item" data-pair="7">концерт</div><div class="match-item" data-pair="3">захоплення</div><div class="match-item" data-pair="5">знижка</div><div class="match-item" data-pair="4">університет</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">смачний</div><div class="match-item" data-pair="2">квартира</div><div class="match-item" data-pair="1">температура</div><div class="match-item" data-pair="7">концерт</div><div class="match-item" data-pair="6">тренування</div><div class="match-item" data-pair="4">університет</div><div class="match-item" data-pair="5">знижка</div><div class="match-item" data-pair="3">захоплення</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -824,8 +818,25 @@ Combine: Education + Work + Tech</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (0)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (0)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 80 · curricula-opus</footer>
   <script>

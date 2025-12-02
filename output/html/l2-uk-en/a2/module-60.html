@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">A2 Capstone</h2>
         <p style="color:var(--text-muted)">Comprehensive Review</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="a2complete">A2 Complete!</h3>
 <p>Congratulations! You've completed the A2 level! Let's review everything you've learned and prepare for B1.</p>
 <p><strong>Your A2 achievements:</strong></p>
@@ -568,89 +583,13 @@ footer {
 </tr>
 </tbody>
 </table>
-<h1 id="">#</h1>
-<h1 id="vocabulary">Vocabulary</h1>
-<table>
-<thead>
-<tr>
-<th>Word</th>
-<th>IPA</th>
-<th>English</th>
-<th>POS</th>
-<th>Gender</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>досягнення</td>
-<td>/dosʲɑɦˈnɛnʲɑ/</td>
-<td>achievement</td>
-<td>noun</td>
-<td>n</td>
-<td></td>
-</tr>
-<tr>
-<td>мета</td>
-<td>/mɛˈtɑ/</td>
-<td>goal</td>
-<td>noun</td>
-<td>f</td>
-<td></td>
-</tr>
-<tr>
-<td>якість</td>
-<td>/ˈjɑkʲistʲ/</td>
-<td>quality</td>
-<td>noun</td>
-<td>f</td>
-<td></td>
-</tr>
-<tr>
-<td>подорож</td>
-<td>/ˈpodoroʒ/</td>
-<td>journey, trip</td>
-<td>noun</td>
-<td>f</td>
-<td></td>
-</tr>
-<tr>
-<td>спогад</td>
-<td>/ˈspoɦɑd/</td>
-<td>memory</td>
-<td>noun</td>
-<td>m</td>
-<td></td>
-</tr>
-<tr>
-<td>враження</td>
-<td>/vrɑˈʒɛnʲɑ/</td>
-<td>impression</td>
-<td>noun</td>
-<td>n</td>
-<td></td>
-</tr>
-<tr>
-<td>здібність</td>
-<td>/zdʲibˈnʲistʲ/</td>
-<td>ability</td>
-<td>noun</td>
-<td>f</td>
-<td></td>
-</tr>
-<tr>
-<td>успіх</td>
-<td>/uˈspʲix/</td>
-<td>success</td>
-<td>noun</td>
-<td>m</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h1 id="summary">Summary</h1>
-<h2 id="a2levelcomplete">A2 Level Complete!</h2>
+<h2 id="">##</h2>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="a2levelcomplete">A2 Level Complete!</h2>
 <h3 id="grammarmastered">Grammar Mastered</h3>
 <table>
 <thead>
@@ -769,9 +708,11 @@ footer {
   <p><strong>Next stop: B1 - Intermediate!</strong><br />
   Далі: рівень B1 - Середній!</p>
   <p>Слава Україні! 🇺🇦</p>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -780,7 +721,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Як ви почуваєтеся?</div><div class="match-item" data-pair="1">О котрій відправлення?</div><div class="match-item" data-pair="2">Ким ви працюєте?</div><div class="match-item" data-pair="3">Я думаю, що...</div><div class="match-item" data-pair="4">Якби я мав час...</div><div class="match-item" data-pair="5">Все, що ти сказав</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">What do you do for work?</div><div class="match-item" data-pair="0">How do you feel?</div><div class="match-item" data-pair="4">If I had time...</div><div class="match-item" data-pair="1">What time is departure?</div><div class="match-item" data-pair="3">I think that...</div><div class="match-item" data-pair="5">Everything you said</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">What time is departure?</div><div class="match-item" data-pair="0">How do you feel?</div><div class="match-item" data-pair="5">Everything you said</div><div class="match-item" data-pair="3">I think that...</div><div class="match-item" data-pair="2">What do you do for work?</div><div class="match-item" data-pair="4">If I had time...</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -801,8 +742,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (10)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (10)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">Use all 6 cases correctly</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Choose between perf/impf aspect</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Form comparatives and superlatives</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Make conditional sentences</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Use reflexive verbs</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Build relative clauses</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Discuss health problems</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Book travel tickets</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Talk about work</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr><tr><td class="vocab-uk">Express opinions</td><td class="vocab-ipa">☐</td><td class="vocab-en">☐</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 60 · curricula-opus</footer>
   <script>

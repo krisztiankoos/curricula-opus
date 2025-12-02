@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">The Living Verb I</h2>
         <p style="color:var(--text-muted)">Present Tense Basics</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="verbscomealive">Verbs Come Alive</h3>
 <p>Until now, you've made sentences without verbs using zero copula: "Я студент." (I am a student.) Now it's time to add <strong>action</strong> to your Ukrainian!</p>
 <p>Ukrainian verbs change their endings based on <strong>who</strong> is doing the action:</p>
@@ -726,8 +741,13 @@ footer {
   <p>Context words like "завтра" (tomorrow) make the meaning clear!</p>
 </blockquote>
 <hr />
-<h1 id="conjugationsummary">Conjugation Summary</h1>
-<h2 id="classipattern">Class I Pattern (-ати/-яти)</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Conjugation Summary</h3>
+      <div class="md-content"><h2 id="classipattern">Class I Pattern (-ати/-яти)</h2>
 <table>
 <thead>
 <tr>
@@ -813,9 +833,12 @@ footer {
 <ul>
 <li>читаю, читає<strong>ш</strong>, читає, читаємо, читаєте, читають</li>
 </ul>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li>Ukrainian verbs change endings based on who does the action</li>
@@ -832,9 +855,11 @@ footer {
   <li>робити (to do) - роблю, робиш, робить…</li>
   <li>Different endings, same logic!</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -843,7 +868,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">я</div><div class="match-item" data-pair="1">ти</div><div class="match-item" data-pair="2">він/вона</div><div class="match-item" data-pair="3">ми</div><div class="match-item" data-pair="4">ви</div><div class="match-item" data-pair="5">вони</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">-ємо (читаємо)</div><div class="match-item" data-pair="5">-ють (читають)</div><div class="match-item" data-pair="1">-єш (читаєш)</div><div class="match-item" data-pair="4">-єте (читаєте)</div><div class="match-item" data-pair="0">-ю (читаю)</div><div class="match-item" data-pair="2">-є (читає)</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">-ємо (читаємо)</div><div class="match-item" data-pair="4">-єте (читаєте)</div><div class="match-item" data-pair="2">-є (читає)</div><div class="match-item" data-pair="1">-єш (читаєш)</div><div class="match-item" data-pair="0">-ю (читаю)</div><div class="match-item" data-pair="5">-ють (читають)</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -864,8 +889,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (16)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (16)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">читати</td><td class="vocab-ipa">/tʃɪˈtɑtɪ/</td><td class="vocab-en">to read</td><td class="vocab-note">Class I: читаю, читаєш...</td></tr><tr><td class="vocab-uk">писати</td><td class="vocab-ipa">/pɪˈsɑtɪ/</td><td class="vocab-en">to write</td><td class="vocab-note">Class I with с→ш: пишу, пишеш...</td></tr><tr><td class="vocab-uk">знати</td><td class="vocab-ipa">/ˈznɑtɪ/</td><td class="vocab-en">to know</td><td class="vocab-note">Class I: знаю, знаєш...</td></tr><tr><td class="vocab-uk">працювати</td><td class="vocab-ipa">/prɑt͡sʲuˈvɑtɪ/</td><td class="vocab-en">to work</td><td class="vocab-note">Class I: працюю, працюєш...</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦɔvɔˈrɪtɪ/</td><td class="vocab-en">to speak</td><td class="vocab-note">Class II: говорю, говориш...</td></tr><tr><td class="vocab-uk">робити</td><td class="vocab-ipa">/rɔˈbɪtɪ/</td><td class="vocab-en">to do, to make</td><td class="vocab-note">Class II: роблю, робиш...</td></tr><tr><td class="vocab-uk">дивитися</td><td class="vocab-ipa">/dɪvɪˈtɪsʲɑ/</td><td class="vocab-en">to watch, look</td><td class="vocab-note">Reflexive Class II</td></tr><tr><td class="vocab-uk">слухати</td><td class="vocab-ipa">/ˈsluxɑtɪ/</td><td class="vocab-en">to listen</td><td class="vocab-note">Class I: слухаю, слухаєш...</td></tr><tr><td class="vocab-uk">розуміти</td><td class="vocab-ipa">/rɔzuˈmʲitɪ/</td><td class="vocab-en">to understand</td><td class="vocab-note">Class II: розумію, розумієш...</td></tr><tr><td class="vocab-uk">думати</td><td class="vocab-ipa">/ˈdumɑtɪ/</td><td class="vocab-en">to think</td><td class="vocab-note">Class I: думаю, думаєш...</td></tr><tr><td class="vocab-uk">хотіти</td><td class="vocab-ipa">/xɔˈtʲitɪ/</td><td class="vocab-en">to want</td><td class="vocab-note">Irregular: хочу, хочеш...</td></tr><tr><td class="vocab-uk">не</td><td class="vocab-ipa">/nɛ/</td><td class="vocab-en">not</td><td class="vocab-note">Goes before verb</td></tr><tr><td class="vocab-uk">лист</td><td class="vocab-ipa">/lɪst/</td><td class="vocab-en">letter</td><td class="vocab-note">Object of писати</td></tr><tr><td class="vocab-uk">кожен день</td><td class="vocab-ipa">/ˈkɔʒɛn dɛnʲ/</td><td class="vocab-en">every day</td><td class="vocab-note">Time expression</td></tr><tr><td class="vocab-uk">завтра</td><td class="vocab-ipa">/ˈzɑvtrɑ/</td><td class="vocab-en">tomorrow</td><td class="vocab-note">Time word</td></tr><tr><td class="vocab-uk">сьогодні</td><td class="vocab-ipa">/sʲɔˈɦɔdnʲi/</td><td class="vocab-en">today</td><td class="vocab-note">Time word</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 06 · curricula-opus</footer>
   <script>

@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">At the Post Office &amp; Bank</h2>
         <p style="color:var(--text-muted)">Service Interactions</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="realworldukrainian">Real-World Ukrainian</h3>
 <p>You've mastered the case system. Now let's use it in real service situations: the post office (пошта) and the bank (банк).</p>
 <p><strong>Common needs:</strong></p>
@@ -785,8 +800,13 @@ footer {
 <li>Комісія 3 євро. Загалом 203 євро.</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="postofficeessentials">Post Office Essentials</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="postofficeessentials">Post Office Essentials</h2>
 <table>
 <thead>
 <tr>
@@ -886,9 +906,11 @@ footer {
   <li>Квитанція (receipt) is important - keep it!</li>
   <li>Currency: гривня (UAH), долар (USD), євро (EUR)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -897,7 +919,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">посилка</div><div class="match-item" data-pair="1">марка</div><div class="match-item" data-pair="2">курс обміну</div><div class="match-item" data-pair="3">банкомат</div><div class="match-item" data-pair="4">квитанція</div><div class="match-item" data-pair="5">переказ</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">stamp</div><div class="match-item" data-pair="3">ATM</div><div class="match-item" data-pair="5">transfer</div><div class="match-item" data-pair="2">exchange rate</div><div class="match-item" data-pair="0">package</div><div class="match-item" data-pair="4">receipt</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">stamp</div><div class="match-item" data-pair="2">exchange rate</div><div class="match-item" data-pair="4">receipt</div><div class="match-item" data-pair="0">package</div><div class="match-item" data-pair="3">ATM</div><div class="match-item" data-pair="5">transfer</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -918,8 +940,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (27)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (27)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">листівка</td><td class="vocab-ipa">/lɪsˈtʲifkɑ/</td><td class="vocab-en">postcard</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бандероль</td><td class="vocab-ipa">/bɑndɛˈrolʲ/</td><td class="vocab-en">small parcel</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">марка</td><td class="vocab-ipa">/ˈmɑrkɑ/</td><td class="vocab-en">stamp</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відправник</td><td class="vocab-ipa">/vʲidprɑvˈnɪk/</td><td class="vocab-en">sender</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">одержувач</td><td class="vocab-ipa">/odɛrˈʒuvɑtʃ/</td><td class="vocab-en">recipient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">індекс</td><td class="vocab-ipa">/ˈindɛks/</td><td class="vocab-en">postal code</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">квитанція</td><td class="vocab-ipa">/kvɪˈtɑntsʲijɑ/</td><td class="vocab-en">receipt</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">доставка</td><td class="vocab-ipa">/dosˈtɑfkɑ/</td><td class="vocab-en">delivery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вага</td><td class="vocab-ipa">/vɑˈɦɑ/</td><td class="vocab-en">weight</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">переказ</td><td class="vocab-ipa">/pɛrɛˈkɑz/</td><td class="vocab-en">transfer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обмін</td><td class="vocab-ipa">/obˈmʲin/</td><td class="vocab-en">exchange</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">курс</td><td class="vocab-ipa">/kurs/</td><td class="vocab-en">rate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">депозит</td><td class="vocab-ipa">/dɛpoˈzɪt/</td><td class="vocab-en">deposit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кредит</td><td class="vocab-ipa">/krɛˈdɪt/</td><td class="vocab-en">credit, loan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відсоток</td><td class="vocab-ipa">/vʲidˈsotok/</td><td class="vocab-en">percent, interest</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">банкомат</td><td class="vocab-ipa">/bɑnkoˈmɑt/</td><td class="vocab-en">ATM</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">комісія</td><td class="vocab-ipa">/koˈmʲisʲijɑ/</td><td class="vocab-en">commission</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підпис</td><td class="vocab-ipa">/ˈpʲidpɪs/</td><td class="vocab-en">signature</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">виписка</td><td class="vocab-ipa">/ˈvɪpɪskɑ/</td><td class="vocab-en">statement</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">надіслати</td><td class="vocab-ipa">/nɑdʲisˈlɑtɪ/</td><td class="vocab-en">to send</td><td class="vocab-note">+ acc + dat</td></tr><tr><td class="vocab-uk">відправити</td><td class="vocab-ipa">/vʲidprɑˈvɪtɪ/</td><td class="vocab-en">to send, dispatch</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">обміняти</td><td class="vocab-ipa">/obmʲiˈnʲɑtɪ/</td><td class="vocab-en">to exchange</td><td class="vocab-note">+ acc + на + acc</td></tr><tr><td class="vocab-uk">зняти</td><td class="vocab-ipa">/znʲɑˈtɪ/</td><td class="vocab-en">to withdraw</td><td class="vocab-note">+ acc + з + gen</td></tr><tr><td class="vocab-uk">переказати</td><td class="vocab-ipa">/pɛrɛkɑˈzɑtɪ/</td><td class="vocab-en">to transfer</td><td class="vocab-note">+ acc + dat</td></tr><tr><td class="vocab-uk">заповнити</td><td class="vocab-ipa">/zɑˈpovnɪtɪ/</td><td class="vocab-en">to fill out</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">розписатися</td><td class="vocab-ipa">/rozpɪˈsɑtɪsʲɑ/</td><td class="vocab-en">to sign</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перерахувати</td><td class="vocab-ipa">/pɛrɛrɑxuˈvɑtɪ/</td><td class="vocab-en">to count, recount</td><td class="vocab-note">+ acc</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 39 · curricula-opus</footer>
   <script>

@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Time Expressions</h2>
         <p style="color:var(--text-muted)">Days, Months &amp; Hours</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="timeiseverything">Time Is Everything</h3>
 <p>To make plans, set meetings, or just talk about your schedule, you need time vocabulary. Let's master days, months, and telling time in Ukrainian!</p>
 <p>Key questions:</p>
@@ -780,8 +795,13 @@ A: О котрій годині?<br />
 B: О сьомій.<br />
 A: Добре, домовились!</p>
 <hr />
-<h1 id="timesummary">Time Summary</h1>
-<h2 id="dayswithaccusative">Days with У + Accusative</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Time Summary</h3>
+      <div class="md-content"><h2 id="dayswithaccusative">Days with У + Accusative</h2>
 <table>
 <thead>
 <tr>
@@ -839,7 +859,7 @@ A: Добре, домовились!</p>
 </tr>
 </tbody>
 </table>
-<h2 id="tellingtime-1">Telling Time</h2>
+<h2 id="tellingtime">Telling Time</h2>
 <table>
 <thead>
 <tr>
@@ -866,9 +886,12 @@ A: Добре, домовились!</p>
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="summary">Summary</h1>
-<blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><blockquote>
   <p>💡 <strong>What You Learned Today</strong></p>
   <ul>
   <li>Days: понеділок through неділя</li>
@@ -885,9 +908,11 @@ A: Добре, домовились!</p>
   <li>Я мушу/повинен… (I must…)</li>
   <li>Я хочу… (I want to…)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -896,7 +921,7 @@ A: Добре, домовились!</p>
       <div class="score-display"><span class="score"><span id="match-score">0</span>/7</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">понеділок</div><div class="match-item" data-pair="1">вівторок</div><div class="match-item" data-pair="2">середа</div><div class="match-item" data-pair="3">четвер</div><div class="match-item" data-pair="4">п'ятниця</div><div class="match-item" data-pair="5">субота</div><div class="match-item" data-pair="6">неділя</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">Wednesday</div><div class="match-item" data-pair="3">Thursday</div><div class="match-item" data-pair="5">Saturday</div><div class="match-item" data-pair="4">Friday</div><div class="match-item" data-pair="0">Monday</div><div class="match-item" data-pair="1">Tuesday</div><div class="match-item" data-pair="6">Sunday</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">Saturday</div><div class="match-item" data-pair="3">Thursday</div><div class="match-item" data-pair="0">Monday</div><div class="match-item" data-pair="6">Sunday</div><div class="match-item" data-pair="2">Wednesday</div><div class="match-item" data-pair="4">Friday</div><div class="match-item" data-pair="1">Tuesday</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -917,8 +942,25 @@ A: Добре, домовились!</p>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (18)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (18)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">тиждень</td><td class="vocab-ipa">/ˈtɪʒdɛnʲ/</td><td class="vocab-en">week</td><td class="vocab-note">Gen: тижня</td></tr><tr><td class="vocab-uk">місяць</td><td class="vocab-ipa">/ˈmʲisʲɑt͡sʲ/</td><td class="vocab-en">month</td><td class="vocab-note">Gen: місяця</td></tr><tr><td class="vocab-uk">рік</td><td class="vocab-ipa">/rʲik/</td><td class="vocab-en">year</td><td class="vocab-note">Gen: року</td></tr><tr><td class="vocab-uk">година</td><td class="vocab-ipa">/ɦɔˈdɪnɑ/</td><td class="vocab-en">hour</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">хвилина</td><td class="vocab-ipa">/xvɪˈlɪnɑ/</td><td class="vocab-en">minute</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">понеділок</td><td class="vocab-ipa">/pɔnɛˈdʲilɔk/</td><td class="vocab-en">Monday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вівторок</td><td class="vocab-ipa">/vʲivˈtɔrɔk/</td><td class="vocab-en">Tuesday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">середа</td><td class="vocab-ipa">/sɛˈrɛdɑ/</td><td class="vocab-en">Wednesday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">четвер</td><td class="vocab-ipa">/ˈtʃɛtvɛr/</td><td class="vocab-en">Thursday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">п&#039;ятниця</td><td class="vocab-ipa">/ˈpjɑtnɪt͡sʲɑ/</td><td class="vocab-en">Friday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">субота</td><td class="vocab-ipa">/suˈbɔtɑ/</td><td class="vocab-en">Saturday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">неділя</td><td class="vocab-ipa">/nɛˈdʲilʲɑ/</td><td class="vocab-en">Sunday</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">січень</td><td class="vocab-ipa">/ˈsʲitʃɛnʲ/</td><td class="vocab-en">January</td><td class="vocab-note">Loc: у січні</td></tr><tr><td class="vocab-uk">лютий</td><td class="vocab-ipa">/ˈlʲutɪj/</td><td class="vocab-en">February</td><td class="vocab-note">Loc: у лютому</td></tr><tr><td class="vocab-uk">весна</td><td class="vocab-ipa">/vɛsˈnɑ/</td><td class="vocab-en">spring</td><td class="vocab-note">Adv: навесні</td></tr><tr><td class="vocab-uk">літо</td><td class="vocab-ipa">/ˈlʲitɔ/</td><td class="vocab-en">summer</td><td class="vocab-note">Adv: влітку</td></tr><tr><td class="vocab-uk">осінь</td><td class="vocab-ipa">/ˈɔsʲinʲ/</td><td class="vocab-en">autumn</td><td class="vocab-note">Adv: восени</td></tr><tr><td class="vocab-uk">зима</td><td class="vocab-ipa">/zɪˈmɑ/</td><td class="vocab-en">winter</td><td class="vocab-note">Adv: взимку</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 23 · curricula-opus</footer>
   <script>

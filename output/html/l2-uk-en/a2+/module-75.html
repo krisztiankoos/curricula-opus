@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Education &amp; Learning Vocabulary</h2>
         <p style="color:var(--text-muted)">School, University, and Academic Life</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="theworldofeducation">The World of Education</h3>
 <p>You know "школа" and "університет." Let's expand your education vocabulary!</p>
 <p><strong>Levels:</strong></p>
@@ -902,8 +917,13 @@ footer {
 <li>Чи важливий диплом у сучасному світі?</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="educationlevels-1">Education Levels</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="educationlevels">Education Levels</h2>
 <table>
 <thead>
 <tr>
@@ -996,7 +1016,7 @@ footer {
 </tr>
 </tbody>
 </table>
-<h2 id="universityterms-1">University Terms</h2>
+<h2 id="universityterms">University Terms</h2>
 <table>
 <thead>
 <tr>
@@ -1036,9 +1056,11 @@ footer {
   <li>бакалавр (4 years) + магістр (2 years)</li>
   <li>сесія = exam period (twice a year)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1047,7 +1069,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">математика</div><div class="match-item" data-pair="1">професор</div><div class="match-item" data-pair="2">лекція</div><div class="match-item" data-pair="3">диплом</div><div class="match-item" data-pair="4">університет</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">institution</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="3">document</div><div class="match-item" data-pair="2">activity</div><div class="match-item" data-pair="1">person</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">document</div><div class="match-item" data-pair="2">activity</div><div class="match-item" data-pair="1">person</div><div class="match-item" data-pair="0">subject</div><div class="match-item" data-pair="4">institution</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1068,8 +1090,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (45)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (45)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">дитячий садок</td><td class="vocab-ipa">/dɪˈtʲɑtʃɪj sɑˈdok/</td><td class="vocab-en">kindergarten</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">початкова школа</td><td class="vocab-ipa">/potʃɑtˈkovɑ ˈʃkolɑ/</td><td class="vocab-en">elementary school</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гімназія</td><td class="vocab-ipa">/ɦʲimˈnɑzʲijɑ/</td><td class="vocab-en">gymnasium</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ліцей</td><td class="vocab-ipa">/lʲiˈtsɛj/</td><td class="vocab-en">lyceum</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">аспірантура</td><td class="vocab-ipa">/ɑspʲirɑnˈturɑ/</td><td class="vocab-en">graduate school</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">математика</td><td class="vocab-ipa">/mɑtɛˈmɑtɪkɑ/</td><td class="vocab-en">mathematics</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">література</td><td class="vocab-ipa">/lʲitɛrɑˈturɑ/</td><td class="vocab-en">literature</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">історія</td><td class="vocab-ipa">/isˈtorʲijɑ/</td><td class="vocab-en">history</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">географія</td><td class="vocab-ipa">/ɦɛoˈɦrɑfʲijɑ/</td><td class="vocab-en">geography</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">біологія</td><td class="vocab-ipa">/bʲioˈloɦʲijɑ/</td><td class="vocab-en">biology</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">фізика</td><td class="vocab-ipa">/ˈfʲizɪkɑ/</td><td class="vocab-en">physics</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">хімія</td><td class="vocab-ipa">/ˈxʲimʲijɑ/</td><td class="vocab-en">chemistry</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">інформатика</td><td class="vocab-ipa">/informɑˈtɪkɑ/</td><td class="vocab-en">computer science</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">факультет</td><td class="vocab-ipa">/fɑkulʲˈtɛt/</td><td class="vocab-en">faculty</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спеціальність</td><td class="vocab-ipa">/spɛtsʲiˈɑlʲnʲistʲ/</td><td class="vocab-en">major, specialty</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">семестр</td><td class="vocab-ipa">/sɛˈmɛstr/</td><td class="vocab-en">semester</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лекція</td><td class="vocab-ipa">/ˈlɛktsʲijɑ/</td><td class="vocab-en">lecture</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">семінар</td><td class="vocab-ipa">/sɛmʲiˈnɑr/</td><td class="vocab-en">seminar</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">диплом</td><td class="vocab-ipa">/dɪpˈlom/</td><td class="vocab-en">diploma</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ступінь</td><td class="vocab-ipa">/ˈstupʲinʲ/</td><td class="vocab-en">degree</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бакалавр</td><td class="vocab-ipa">/bɑkɑˈlɑvr/</td><td class="vocab-en">bachelor&#039;s</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">магістр</td><td class="vocab-ipa">/mɑˈɦʲistr/</td><td class="vocab-en">master&#039;s</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">учень</td><td class="vocab-ipa">/uˈtʃɛnʲ/</td><td class="vocab-en">pupil</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">однокласник</td><td class="vocab-ipa">/odnoˈklɑsnɪk/</td><td class="vocab-en">classmate (school)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">одногрупник</td><td class="vocab-ipa">/odnoˈɦrupnɪk/</td><td class="vocab-en">classmate (uni)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">випускник</td><td class="vocab-ipa">/ˈvɪpusknɪk/</td><td class="vocab-en">graduate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">декан</td><td class="vocab-ipa">/dɛˈkɑn/</td><td class="vocab-en">dean</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ректор</td><td class="vocab-ipa">/ˈrɛktor/</td><td class="vocab-en">rector</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">іспит</td><td class="vocab-ipa">/ˈispɪt/</td><td class="vocab-en">exam</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">залік</td><td class="vocab-ipa">/zɑˈlʲik/</td><td class="vocab-en">credit test</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">оцінка</td><td class="vocab-ipa">/oˈtsʲinkɑ/</td><td class="vocab-en">grade</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сесія</td><td class="vocab-ipa">/ˈsɛsʲijɑ/</td><td class="vocab-en">exam period</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відмінник</td><td class="vocab-ipa">/vʲidˈmʲinnɪk/</td><td class="vocab-en">excellent student</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підручник</td><td class="vocab-ipa">/pʲidˈrutʃnɪk/</td><td class="vocab-en">textbook</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зошит</td><td class="vocab-ipa">/ˈzoʃɪt/</td><td class="vocab-en">notebook</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">конспект</td><td class="vocab-ipa">/konˈspɛkt/</td><td class="vocab-en">notes</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">реферат</td><td class="vocab-ipa">/rɛfɛˈrɑt/</td><td class="vocab-en">essay</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">курсова робота</td><td class="vocab-ipa">/kurˈsovɑ roˈbotɑ/</td><td class="vocab-en">term paper</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дипломна робота</td><td class="vocab-ipa">/dɪpˈlomnɑ roˈbotɑ/</td><td class="vocab-en">thesis</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вчитися</td><td class="vocab-ipa">/vtʃɪˈtɪsʲɑ/</td><td class="vocab-en">to study</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вивчати</td><td class="vocab-ipa">/vɪvˈtʃɑtɪ/</td><td class="vocab-en">to study (subj)</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">складати</td><td class="vocab-ipa">/sklɑˈdɑtɪ/</td><td class="vocab-en">to take (exam)</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">здавати</td><td class="vocab-ipa">/zdɑˈvɑtɪ/</td><td class="vocab-en">to pass</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">пропускати</td><td class="vocab-ipa">/propusˈkɑtɪ/</td><td class="vocab-en">to miss</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">закінчувати</td><td class="vocab-ipa">/zɑˈkʲintʃuvɑtɪ/</td><td class="vocab-en">to graduate</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 75 · curricula-opus</footer>
   <script>

@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Technology &amp; Media Vocabulary</h2>
         <p style="color:var(--text-muted)">Computers, Internet, and Digital Communication</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="thedigitalworldinukrainian">The Digital World in Ukrainian</h3>
 <p>You use technology daily. Now let's talk about it in Ukrainian!</p>
 <p><strong>Devices:</strong></p>
@@ -975,8 +990,13 @@ footer {
 <li>"Не люблю ТікТок, бо…"</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="essentialdevices">Essential Devices</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="essentialdevices">Essential Devices</h2>
 <table>
 <thead>
 <tr>
@@ -1120,9 +1140,11 @@ footer {
   <li>підписник = follower, стрічка = feed</li>
   <li>перезавантажити = restart (first fix to try!)</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1131,7 +1153,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">завантажити</div><div class="match-item" data-pair="1">видалити</div><div class="match-item" data-pair="2">зберегти</div><div class="match-item" data-pair="3">надіслати</div><div class="match-item" data-pair="4">увімкнути</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">file saved</div><div class="match-item" data-pair="1">file gone</div><div class="match-item" data-pair="0">file appears</div><div class="match-item" data-pair="3">message sent</div><div class="match-item" data-pair="4">device turns on</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="4">device turns on</div><div class="match-item" data-pair="0">file appears</div><div class="match-item" data-pair="1">file gone</div><div class="match-item" data-pair="3">message sent</div><div class="match-item" data-pair="2">file saved</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1152,8 +1174,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (35)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (35)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">комп&#039;ютер</td><td class="vocab-ipa">/kompˈjutɛr/</td><td class="vocab-en">computer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ноутбук</td><td class="vocab-ipa">/noˈutbuk/</td><td class="vocab-en">laptop</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">смартфон</td><td class="vocab-ipa">/smɑrtˈfon/</td><td class="vocab-en">smartphone</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">планшет</td><td class="vocab-ipa">/plɑnˈʃɛt/</td><td class="vocab-en">tablet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">екран</td><td class="vocab-ipa">/ɛkˈrɑn/</td><td class="vocab-en">screen</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">клавіатура</td><td class="vocab-ipa">/klɑvʲiɑˈturɑ/</td><td class="vocab-en">keyboard</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">навушники</td><td class="vocab-ipa">/nɑˈvuʃnɪkɪ/</td><td class="vocab-en">headphones</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зарядка</td><td class="vocab-ipa">/zɑˈrʲɑdkɑ/</td><td class="vocab-en">charger</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">акумулятор</td><td class="vocab-ipa">/ɑkumuˈlʲɑtor/</td><td class="vocab-en">battery</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">файл</td><td class="vocab-ipa">/fɑjl/</td><td class="vocab-en">file</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">папка</td><td class="vocab-ipa">/ˈpɑpkɑ/</td><td class="vocab-en">folder</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">застосунок</td><td class="vocab-ipa">/zɑstoˈsunok/</td><td class="vocab-en">application, app</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пароль</td><td class="vocab-ipa">/pɑˈrolʲ/</td><td class="vocab-en">password</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">налаштування</td><td class="vocab-ipa">/nɑlɑʃtuˈvɑnʲːɑ/</td><td class="vocab-en">settings</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">оновлення</td><td class="vocab-ipa">/onovˈlɛnʲːɑ/</td><td class="vocab-en">update</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">резервна копія</td><td class="vocab-ipa">/rɛˈzɛrvnɑ ˈkopʲijɑ/</td><td class="vocab-en">backup</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сайт</td><td class="vocab-ipa">/sɑjt/</td><td class="vocab-en">website</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посилання</td><td class="vocab-ipa">/posɪˈlɑnʲːɑ/</td><td class="vocab-en">link</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пошук</td><td class="vocab-ipa">/ˈpoʃuk/</td><td class="vocab-en">search</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вірус</td><td class="vocab-ipa">/ˈvʲirus/</td><td class="vocab-en">virus</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">завантажувати</td><td class="vocab-ipa">/zɑvɑntɑˈʒuvɑtɪ/</td><td class="vocab-en">to download</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вивантажувати</td><td class="vocab-ipa">/vɪvɑntɑˈʒuvɑtɪ/</td><td class="vocab-en">to upload</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">надсилати</td><td class="vocab-ipa">/nɑdsɪˈlɑtɪ/</td><td class="vocab-en">to send</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">зберігати</td><td class="vocab-ipa">/zbɛrʲiˈɦɑtɪ/</td><td class="vocab-en">to save</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">видаляти</td><td class="vocab-ipa">/vɪdɑˈlʲɑtɪ/</td><td class="vocab-en">to delete</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вмикати</td><td class="vocab-ipa">/vmɪˈkɑtɪ/</td><td class="vocab-en">to turn on</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">вимикати</td><td class="vocab-ipa">/vɪmɪˈkɑtɪ/</td><td class="vocab-en">to turn off</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">перезавантажувати</td><td class="vocab-ipa">/pɛrɛzɑvɑntɑˈʒuvɑtɪ/</td><td class="vocab-en">to restart</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">встановлювати</td><td class="vocab-ipa">/vstɑˈnovlʲuvɑtɪ/</td><td class="vocab-en">to install</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">підписник</td><td class="vocab-ipa">/pʲidˈpɪsnɪk/</td><td class="vocab-en">follower</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лайк</td><td class="vocab-ipa">/lɑjk/</td><td class="vocab-en">like</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">коментар</td><td class="vocab-ipa">/komɛnˈtɑr/</td><td class="vocab-en">comment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">стрічка</td><td class="vocab-ipa">/ˈstrʲitʃkɑ/</td><td class="vocab-en">feed</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повідомлення</td><td class="vocab-ipa">/povʲiˈdomlɛnʲːɑ/</td><td class="vocab-en">message</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відеодзвінок</td><td class="vocab-ipa">/vʲidɛoˈdzvʲinok/</td><td class="vocab-en">video call</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 73 · curricula-opus</footer>
   <script>

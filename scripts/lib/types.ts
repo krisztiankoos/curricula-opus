@@ -263,6 +263,18 @@ export interface VibeModule {
   vocabulary: VocabularySection;
 }
 
+export type ModuleType =
+  | 'grammar'
+  | 'vocabulary'
+  | 'checkpoint'
+  | 'history'
+  | 'biography'
+  | 'idioms'
+  | 'skills'
+  | 'literature'
+  | 'culture'
+  | 'functional';
+
 export interface VibeLesson {
   id: string;
   moduleId: string;
@@ -274,6 +286,8 @@ export interface VibeLesson {
   targetLevel: string;
   phase: string;
   moduleNumber: number;
+  moduleType: ModuleType;
+  immersionLevel: number;
   title: string;
   titleUk?: string;
   subtitle?: string;
@@ -285,12 +299,19 @@ export interface VibeLesson {
   tags: string[];
   totalDuration: number;
   transliterationMode: string;
-  phases: VibePhase[];
-  rawMarkdown?: string;
-  immersiveSections?: Section[];
+  sections: VibeSection[];
+  rawMarkdown: string;
   createdAt: string;
   modifiedAt: string;
   version: number;
+}
+
+export interface VibeSection {
+  id: string;
+  name: string;
+  nameEn?: string;
+  type: string;
+  content: string;
 }
 
 export interface VibePhase {

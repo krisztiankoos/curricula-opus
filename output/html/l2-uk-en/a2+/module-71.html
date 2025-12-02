@@ -288,13 +288,26 @@ footer {
 .sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
 .sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
 
-/* Vocabulary */
+/* Vocabulary Grid (legacy) */
 .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
 .vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
 .vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
 .vocab-card .translit { color: var(--text-muted); font-style: italic; }
 .vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
 .vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
 
 /* Answer Callout Blocks */
 .callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
@@ -339,8 +352,10 @@ footer {
         <h2 style="font-size:2rem;margin:0.5rem 0">Emotions &amp; Personality Vocabulary</h2>
         <p style="color:var(--text-muted)">Describing Feelings and Character Traits</p>
       </div>
-      <div class="card"><h3>Theory</h3><div class="md-content"><h1 id="lessoncontent">Lesson Content</h1>
-<h2 id="warmup">warm-up</h2>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
 <h3 id="beyondhappyandsad">Beyond Happy and Sad</h3>
 <p>You know "щасливий" and "сумний." Let's expand your emotional vocabulary!</p>
 <p><strong>Nuanced emotions:</strong></p>
@@ -884,8 +899,13 @@ footer {
 <li>Поїзд запізнюється → "Як дратівливо! Я роздратований."</li>
 </ul>
 <hr />
-<h1 id="summary">Summary</h1>
-<h2 id="emotionstructures">Emotion Structures</h2>
+<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="emotionstructures">Emotion Structures</h2>
 <table>
 <thead>
 <tr>
@@ -1003,9 +1023,11 @@ footer {
   <li>вдячний = grateful, заздрісний = jealous</li>
   <li>Positive pairs: добрий/злий, чесний/брехливий</li>
   </ul>
-</blockquote></div></div>
+</blockquote></div>
+    </div>
+  
       <div class="btn-group">
-        <button class="btn btn-primary" onclick="showSection('match')">Start →</button>
+        <button class="btn btn-primary" onclick="showSection('match')">Activities →</button>
       </div>
     </section>
   
@@ -1014,7 +1036,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">радісний</div><div class="match-item" data-pair="1">розчарований</div><div class="match-item" data-pair="2">стривожений</div><div class="match-item" data-pair="3">вдячний</div><div class="match-item" data-pair="4">заздрісний</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="2">bad news coming</div><div class="match-item" data-pair="0">good news</div><div class="match-item" data-pair="3">received help</div><div class="match-item" data-pair="1">failed expectation</div><div class="match-item" data-pair="4">someone has more</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="1">failed expectation</div><div class="match-item" data-pair="0">good news</div><div class="match-item" data-pair="3">received help</div><div class="match-item" data-pair="4">someone has more</div><div class="match-item" data-pair="2">bad news coming</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -1035,8 +1057,25 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetSort()">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Vocab →</button></div>
     </div></section>
     
-    <section id="vocab" class="section"><div class="card"><h3>Vocabulary (38)</h3><div class="vocab-grid" id="vocab-grid"></div></div>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('lesson')">← Back</button></div>
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (38)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">щасливий</td><td class="vocab-ipa">/ʃtʃɑsˈlɪvɪj/</td><td class="vocab-en">happy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">радісний</td><td class="vocab-ipa">/ˈrɑdʲisnɪj/</td><td class="vocab-en">joyful</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">задоволений</td><td class="vocab-ipa">/zɑdoˈvolɛnɪj/</td><td class="vocab-en">satisfied</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вдячний</td><td class="vocab-ipa">/ˈvdʲɑtʃnɪj/</td><td class="vocab-en">grateful</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">схвильований</td><td class="vocab-ipa">/sxvɪlʲoˈvɑnɪj/</td><td class="vocab-en">excited, anxious</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">захоплений</td><td class="vocab-ipa">/zɑˈxoplɛnɪj/</td><td class="vocab-en">delighted</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">натхненний</td><td class="vocab-ipa">/nɑtxˈnɛnːɪj/</td><td class="vocab-en">inspired</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">впевнений</td><td class="vocab-ipa">/vpɛvˈnɛnɪj/</td><td class="vocab-en">confident</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гордий</td><td class="vocab-ipa">/ˈɦordɪj/</td><td class="vocab-en">proud</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закоханий</td><td class="vocab-ipa">/zɑkoˈxɑnɪj/</td><td class="vocab-en">in love</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сумний</td><td class="vocab-ipa">/ˈsumnɪj/</td><td class="vocab-en">sad</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">засмучений</td><td class="vocab-ipa">/zɑsˈmutʃɛnɪj/</td><td class="vocab-en">upset</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розчарований</td><td class="vocab-ipa">/rostʃɑˈrovɑnɪj/</td><td class="vocab-en">disappointed</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">злий</td><td class="vocab-ipa">/zlɪj/</td><td class="vocab-en">angry</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">роздратований</td><td class="vocab-ipa">/rozdrɑˈtovɑnɪj/</td><td class="vocab-en">irritated</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знервований</td><td class="vocab-ipa">/znɛrˈvovɑnɪj/</td><td class="vocab-en">nervous</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">стривожений</td><td class="vocab-ipa">/strɪˈvoʒɛnɪj/</td><td class="vocab-en">anxious</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">заздрісний</td><td class="vocab-ipa">/ˈzɑzdrʲisnɪj/</td><td class="vocab-en">jealous</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">самотній</td><td class="vocab-ipa">/sɑˈmotnʲij/</td><td class="vocab-en">lonely</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">втомлений</td><td class="vocab-ipa">/ˈvtomlɛnɪj/</td><td class="vocab-en">tired</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">добрий</td><td class="vocab-ipa">/ˈdobrɪj/</td><td class="vocab-en">kind</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">щедрий</td><td class="vocab-ipa">/ˈʃtʃɛdrɪj/</td><td class="vocab-en">generous</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">чесний</td><td class="vocab-ipa">/ˈtʃɛsnɪj/</td><td class="vocab-en">honest</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">терплячий</td><td class="vocab-ipa">/tɛrpˈlʲɑtʃɪj/</td><td class="vocab-en">patient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">надійний</td><td class="vocab-ipa">/nɑˈdʲijnɪj/</td><td class="vocab-en">reliable</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сміливий</td><td class="vocab-ipa">/smʲiˈlɪvɪj/</td><td class="vocab-en">brave</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">працьовитий</td><td class="vocab-ipa">/prɑtsʲoˈvɪtɪj/</td><td class="vocab-en">hardworking</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">жадібний</td><td class="vocab-ipa">/ʒɑˈdʲibnɪj/</td><td class="vocab-en">greedy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">впертий</td><td class="vocab-ipa">/ˈvpɛrtɪj/</td><td class="vocab-en">stubborn</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лінивий</td><td class="vocab-ipa">/lʲiˈnɪvɪj/</td><td class="vocab-en">lazy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">грубий</td><td class="vocab-ipa">/ˈɦrubɪj/</td><td class="vocab-en">rude</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зарозумілий</td><td class="vocab-ipa">/zɑrozuˈmʲilɪj/</td><td class="vocab-en">arrogant</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">хвилюватися</td><td class="vocab-ipa">/xvɪlʲuˈvɑtɪsʲɑ/</td><td class="vocab-en">to worry</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">боятися</td><td class="vocab-ipa">/boˈjɑtɪsʲɑ/</td><td class="vocab-en">to be afraid</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">сміятися</td><td class="vocab-ipa">/smʲiˈjɑtɪsʲɑ/</td><td class="vocab-en">to laugh</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">плакати</td><td class="vocab-ipa">/ˈplɑkɑtɪ/</td><td class="vocab-en">to cry</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">радіти</td><td class="vocab-ipa">/ˈrɑdʲitɪ/</td><td class="vocab-en">to rejoice</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">заздрити</td><td class="vocab-ipa">/ˈzɑzdrɪtɪ/</td><td class="vocab-en">to envy</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
     </section>
   </main><footer>Module 71 · curricula-opus</footer>
   <script>

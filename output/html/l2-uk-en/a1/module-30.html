@@ -632,7 +632,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">Greeting</div><div class="match-item" data-pair="1">Ordering</div><div class="match-item" data-pair="2">Describing</div><div class="match-item" data-pair="3">Asking location</div><div class="match-item" data-pair="4">Talking about past</div><div class="match-item" data-pair="5">Expressing ability</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">Де знаходиться метро?</div><div class="match-item" data-pair="0">Привіт! Як справи?</div><div class="match-item" data-pair="1">Каву, будь ласка.</div><div class="match-item" data-pair="4">Вчора я був удома.</div><div class="match-item" data-pair="5">Я можу допомогти.</div><div class="match-item" data-pair="2">Велике гарне місто.</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="0">Привіт! Як справи?</div><div class="match-item" data-pair="1">Каву, будь ласка.</div><div class="match-item" data-pair="2">Велике гарне місто.</div><div class="match-item" data-pair="4">Вчора я був удома.</div><div class="match-item" data-pair="5">Я можу допомогти.</div><div class="match-item" data-pair="3">Де знаходиться метро?</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -655,7 +655,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (8)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -665,10 +665,11 @@ footer {
     <th>Переклад</th>
     
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">Introduce yourself</td><td class="vocab-en">Привіт! Мене звати...</td></tr><tr><td class="vocab-uk">Ask questions</td><td class="vocab-en">Як справи? Де ти живеш?</td></tr><tr><td class="vocab-uk">Express preferences</td><td class="vocab-en">Я люблю каву.</td></tr><tr><td class="vocab-uk">Describe things</td><td class="vocab-en">Це великий будинок.</td></tr><tr><td class="vocab-uk">Talk about time</td><td class="vocab-en">Я встаю о сьомій.</td></tr><tr><td class="vocab-uk">Make requests</td><td class="vocab-en">Можна каву, будь ласка?</td></tr><tr><td class="vocab-uk">Give directions</td><td class="vocab-en">Йдіть прямо, потім праворуч.</td></tr><tr><td class="vocab-uk">Talk about family</td><td class="vocab-en">У мене є брат.</td></tr></tbody>
           </table>
         </div>
       </div>
+      
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -679,7 +680,7 @@ footer {
     const matchPairs = [{"left":"Greeting","right":"Привіт! Як справи?"},{"left":"Ordering","right":"Каву, будь ласка."},{"left":"Describing","right":"Велике гарне місто."},{"left":"Asking location","right":"Де знаходиться метро?"},{"left":"Talking about past","right":"Вчора я був удома."},{"left":"Expressing ability","right":"Я можу допомогти."}];
     const quizData = [{"question":"How do you say \"I see the student (m)\"?","options":["Я бачу студента.","Я бачу студент.","Я бачу студенту.","Я бачу студенти."],"correctIndex":0,"explanation":"M. animate accusative: студент → студента."},{"question":"\"There is no time\" - Немає ___.","options":["часу","час","часі","часом"],"correctIndex":0,"explanation":"Genitive after немає."},{"question":"\"I was at school\" - Я ___ у школі. (f)","options":["була","був","були","буде"],"correctIndex":0,"explanation":"Feminine past: була."},{"question":"\"It's cold\" in Ukrainian:","options":["Холодно.","Холодний.","Холодна.","Холодне."],"correctIndex":0,"explanation":"Impersonal expression."},{"question":"What is Monday in Ukrainian?","options":["понеділок","вівторок","середа","неділя"],"correctIndex":0,"explanation":"Понеділок = Monday."},{"question":"\"My beautiful book\" (книга = f) - ___ ___ книга.","options":["моя гарна","мій гарний","моє гарне","мої гарні"],"correctIndex":0,"explanation":"Feminine: моя гарна."},{"question":"How do you ask for the bill at a café?","options":["Рахунок, будь ласка!","Меню, будь ласка!","Гроші, будь ласка!","Каву, будь ласка!"],"correctIndex":0,"explanation":"Рахунок = bill."},{"question":"\"I can speak Ukrainian\" - Я ___ говорити українською.","options":["можу","можеш","може","можемо"],"correctIndex":0,"explanation":"Я → можу."},{"question":"What is \"children\" in Ukrainian?","options":["діти","дитини","дитинки","дитяти"],"correctIndex":0,"explanation":"Irregular: дитина → діти."},{"question":"\"We will work tomorrow\" - Завтра ми ___ працювати.","options":["будемо","буду","будете","будуть"],"correctIndex":0,"explanation":"Ми → будемо."},{"question":"How do you say \"Turn left\"?","options":["Поверніть ліворуч.","Йдіть ліворуч.","Ліворуч повернути.","Поворот ліворуч."],"correctIndex":0,"explanation":"Imperative: поверніть."},{"question":"\"In January\" - ___ січні.","options":["у","в","на","до"],"correctIndex":0,"explanation":"У + locative for months."}];
     const sortData = {"true-friends":["книгу (книга)","студента (студент)","каву (кава)"],"false-friends":["у школі (школа)","в офісі (офіс)","на столі (стіл)"],"new-letters":["часу (час)","книги (книга)","друга (друг)"]};
-    const vocabData = [];
+    const vocabData = [{"uk":"Introduce yourself","translit":"","en":"Привіт! Мене звати...","note":""},{"uk":"Ask questions","translit":"","en":"Як справи? Де ти живеш?","note":""},{"uk":"Express preferences","translit":"","en":"Я люблю каву.","note":""},{"uk":"Describe things","translit":"","en":"Це великий будинок.","note":""},{"uk":"Talk about time","translit":"","en":"Я встаю о сьомій.","note":""},{"uk":"Make requests","translit":"","en":"Можна каву, будь ласка?","note":""},{"uk":"Give directions","translit":"","en":"Йдіть прямо, потім праворуч.","note":""},{"uk":"Talk about family","translit":"","en":"У мене є брат.","note":""}];
     const totalSort = 9;
   
 // Answer callout toggle (for new > [!answer] syntax)

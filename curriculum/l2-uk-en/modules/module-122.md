@@ -251,7 +251,6 @@ Describe a time when you felt:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| радість | /ˈrɑdʲistʲ/ | joy | f |
 | сум | /sum/ | sadness | m |
 | гнів | /ɦnʲiv/ | anger | m |
 | тривога | /trɪˈvoɦɑ/ | anxiety | f |
@@ -262,10 +261,18 @@ Describe a time when you felt:
 | вдячність | /ˈwdʲɑt͡ʃnʲistʲ/ | gratitude | f |
 | дружба | /ˈdruʒbɑ/ | friendship | f |
 | довіра | /doˈvʲirɑ/ | trust | f |
-| підтримка | /pʲidˈtrɪmkɑ/ | support | f |
 | конфлікт | /konˈflʲikt/ | conflict | m |
 | примирення | /prɪmɪˈrɛnʲːɑ/ | reconciliation | n |
 | зрада | /ˈzrɑdɑ/ | betrayal | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| радість | 3 |
+| підтримка | 32 |
 
 ---
 

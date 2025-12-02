@@ -334,21 +334,22 @@ A: Добре, домовились!
 | тиждень | /ˈtɪʒdɛnʲ/ | week | noun | m | Gen: тижня |
 | місяць | /ˈmʲisʲɑt͡sʲ/ | month | noun | m | Gen: місяця |
 | рік | /rʲik/ | year | noun | m | Gen: року |
-| година | /ɦɔˈdɪnɑ/ | hour | noun | f |  |
-| хвилина | /xvɪˈlɪnɑ/ | minute | noun | f |  |
-| понеділок | /pɔnɛˈdʲilɔk/ | Monday | noun | m |  |
-| вівторок | /vʲivˈtɔrɔk/ | Tuesday | noun | m |  |
-| середа | /sɛˈrɛdɑ/ | Wednesday | noun | f |  |
-| четвер | /ˈtʃɛtvɛr/ | Thursday | noun | m |  |
-| п'ятниця | /ˈpjɑtnɪt͡sʲɑ/ | Friday | noun | f |  |
-| субота | /suˈbɔtɑ/ | Saturday | noun | f |  |
-| неділя | /nɛˈdʲilʲɑ/ | Sunday | noun | f |  |
+| година | /ɦɔˈdɪnɑ/ | hour | noun | f |
+| хвилина | /xvɪˈlɪnɑ/ | minute | noun | f |
+| понеділок | /pɔnɛˈdʲilɔk/ | Monday | noun | m |
+| вівторок | /vʲivˈtɔrɔk/ | Tuesday | noun | m |
+| середа | /sɛˈrɛdɑ/ | Wednesday | noun | f |
+| четвер | /ˈtʃɛtvɛr/ | Thursday | noun | m |
+| п'ятниця | /ˈpjɑtnɪt͡sʲɑ/ | Friday | noun | f |
+| субота | /suˈbɔtɑ/ | Saturday | noun | f |
+| неділя | /nɛˈdʲilʲɑ/ | Sunday | noun | f |
 | січень | /ˈsʲitʃɛnʲ/ | January | noun | m | Loc: у січні |
 | лютий | /ˈlʲutɪj/ | February | noun | m | Loc: у лютому |
 | весна | /vɛsˈnɑ/ | spring | noun | f | Adv: навесні |
 | літо | /ˈlʲitɔ/ | summer | noun | n | Adv: влітку |
 | осінь | /ˈɔsʲinʲ/ | autumn | noun | f | Adv: восени |
 | зима | /zɪˈmɑ/ | winter | noun | f | Adv: взимку |
+
 ---
 
 # Time Summary

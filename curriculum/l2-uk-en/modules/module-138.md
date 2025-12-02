@@ -249,13 +249,20 @@ Include:
 |------|-----|---------|-------|
 | інтеграція | /ʲintɛɦrɑˈt͡sʲijɑ/ | integration | f |
 | вид дієслова | - | verb aspect | m |
-| доконаний | - | perfective | adj |
-| недоконаний | - | imperfective | adj |
 | сполучник | /spoˈlut͡ʃnɪk/ | conjunction | m |
 | підрядне речення | - | subordinate clause | n |
-| непряма мова | - | reported speech | f |
-| дієприкметник | /dʲijɛprɪˈkmɛtnɪk/ | participle | m |
-| дієприслівник | /dʲijɛprɪˈslʲivnɪk/ | adverbial participle | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| доконаний | 41 |
+| недоконаний | 41 |
+| непряма мова | 116 |
+| дієприкметник | 119 |
+| дієприслівник | 121 |
 
 ---
 

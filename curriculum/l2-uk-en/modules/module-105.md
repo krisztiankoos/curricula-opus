@@ -300,16 +300,23 @@ Discuss using conditionals:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| якщо | /jɑkˈʃt͡ʃo/ | if | conj |
-| як | /jɑk/ | if (informal), as, how | conj |
-| тоді | /toˈdʲi/ | then | adv |
-| умова | /uˈmovɑ/ | condition | f |
-| наслідок | /ˈnɑslʲidok/ | consequence | m |
-| результат | /rɛzulʲˈtɑt/ | result | m |
-| можливо | /moʒˈlɪvo/ | possibly | adv |
 | імовірно | /imoˈvʲirno/ | probably | adv |
 | у разі | /u ˈrɑzʲi/ | in case | prep |
 | за умови | /zɑ uˈmovɪ/ | provided that | prep |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| якщо | 46 |
+| як | 2 |
+| тоді | 21 |
+| умова | 46 |
+| наслідок | 95 |
+| результат | 46 |
+| можливо | 46 |
 
 ---
 

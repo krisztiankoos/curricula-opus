@@ -850,6 +850,7 @@ footer {
 <div class="callout callout-explanation" data-callout="explanation">допоміжне дієслово</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -936,7 +937,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (9)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -944,9 +945,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">вставний</td><td class="vocab-en">parenthetical</td><td class="vocab-note">не член речення</td></tr><tr><td class="vocab-uk">напевно</td><td class="vocab-en">surely, probably</td><td class="vocab-note">вища впевненість</td></tr><tr><td class="vocab-uk">безумовно</td><td class="vocab-en">undoubtedly</td><td class="vocab-note">повна впевненість</td></tr><tr><td class="vocab-uk">між іншим</td><td class="vocab-en">by the way</td><td class="vocab-note">додаткова думка</td></tr><tr><td class="vocab-uk">на щастя</td><td class="vocab-en">fortunately</td><td class="vocab-note">радість</td></tr><tr><td class="vocab-uk">словом</td><td class="vocab-en">in a word</td><td class="vocab-note">підсумок</td></tr><tr><td class="vocab-uk">інакше кажучи</td><td class="vocab-en">in other words</td><td class="vocab-note">пояснення</td></tr><tr><td class="vocab-uk">за словами</td><td class="vocab-en">according to</td><td class="vocab-note">джерело</td></tr><tr><td class="vocab-uk">на думку</td><td class="vocab-en">in the opinion of</td><td class="vocab-note">джерело</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (5)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">мабуть</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">до речі</td><td class="vocab-module">Module 136</td></tr><tr><td class="vocab-uk">на жаль</td><td class="vocab-module">Module 47</td></tr><tr><td class="vocab-uk">по-перше</td><td class="vocab-module">Module 130</td></tr><tr><td class="vocab-uk">отже</td><td class="vocab-module">Module 58</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -960,7 +972,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«На жаль, ми не встигли.» — це функція...","options":["Впевненості","Емоційної оцінки","Джерела інформації","Порядку думок"],"correctIndex":1,"explanation":"«На жаль» → сум, емоційна оцінка"},{"question":"«Мабуть, він запізниться.» — це функція...","options":["Ступеня впевненості","Емоційної оцінки","Джерела інформації","Порядку думок"],"correctIndex":0,"explanation":"«Мабуть» → припущення, ступінь впевненості"},{"question":"«По-перше, це неправильно.» — це функція...","options":["Впевненості","Емоційної оцінки","Джерела інформації","Порядку думок"],"correctIndex":3,"explanation":"«По-перше» → порядок, структура тексту"},{"question":"«Кажуть, буде холодно.» — це функція...","options":["Впевненості","Емоційної оцінки","Джерела інформації","Порядку думок"],"correctIndex":2,"explanation":"«Кажуть» → невизначене джерело інформації"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"вставний","translit":"","en":"parenthetical","note":"не член речення"},{"uk":"напевно","translit":"","en":"surely, probably","note":"вища впевненість"},{"uk":"безумовно","translit":"","en":"undoubtedly","note":"повна впевненість"},{"uk":"між іншим","translit":"","en":"by the way","note":"додаткова думка"},{"uk":"на щастя","translit":"","en":"fortunately","note":"радість"},{"uk":"словом","translit":"","en":"in a word","note":"підсумок"},{"uk":"інакше кажучи","translit":"","en":"in other words","note":"пояснення"},{"uk":"за словами","translit":"","en":"according to","note":"джерело"},{"uk":"на думку","translit":"","en":"in the opinion of","note":"джерело"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

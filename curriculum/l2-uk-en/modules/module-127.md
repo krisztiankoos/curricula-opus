@@ -316,11 +316,18 @@ Discuss using fractions and percentages:
 | третина | /trɛˈtɪnɑ/ | third | f |
 | чверть | /t͡ʃwɛrtʲ/ | quarter | f |
 | дріб | /drʲib/ | fraction | m |
-| відсоток | /vʲidˈsotok/ | percent | m |
-| близько | /ˈblɪzʲko/ | approximately | adv |
 | приблизно | /prɪˈblɪzno/ | approximately | adv |
 | понад | /poˈnɑd/ | over, more than | prep |
 | кілька | /ˈkʲilʲkɑ/ | several | num |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| відсоток | 39 |
+| близько | 15 |
 
 ---
 

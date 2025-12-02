@@ -9,12 +9,13 @@
   "scripts": {
     "generate": "ts-node scripts/generate.ts",
     "generate:all": "ts-node scripts/generate.ts",
-    "vocab": "python3 scripts/vocab-analysis.py",
-    "vocab:a1": "python3 scripts/vocab-analysis.py l2-uk-en a1",
-    "vocab:a2": "python3 scripts/vocab-analysis.py l2-uk-en a2",
-    "vocab:build": "python3 scripts/vocab-manager.py build l2-uk-en",
-    "vocab:stats": "python3 scripts/vocab-manager.py stats l2-uk-en",
-    "vocab:duplicates": "python3 scripts/vocab-manager.py duplicates l2-uk-en",
+    "vocab:init": "ts-node scripts/vocab-init.ts",
+    "vocab:init:force": "ts-node scripts/vocab-init.ts l2-uk-en --force",
+    "vocab:scan": "ts-node scripts/vocab-scan.ts",
+    "vocab:enrich": "ts-node scripts/vocab-enrich.ts",
+    "vocab:enrich:dry": "ts-node scripts/vocab-enrich.ts l2-uk-en --dry-run",
+    "vocab:enrich:force": "ts-node scripts/vocab-enrich.ts l2-uk-en --force",
+    "vocab:rebuild": "npm run vocab:init:force && npm run vocab:scan",
     "test": "ts-node scripts/test-html.ts",
     "test:html": "ts-node scripts/test-html.ts"
   },
@@ -31,12 +32,14 @@
   },
   "homepage": "https://github.com/krisztiankoos/curricula-opus#readme",
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^24.10.1",
     "@types/showdown": "^2.0.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "better-sqlite3": "^12.5.0",
     "showdown": "^2.1.0"
   }
 }

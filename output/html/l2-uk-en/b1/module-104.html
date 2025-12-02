@@ -856,6 +856,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -954,7 +955,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (12)</h3>
+        <h3>Нові слова (6)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -962,9 +963,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">хотіти</td><td class="vocab-ipa">/xoˈtʲitɪ/</td><td class="vocab-en">to want</td></tr><tr><td class="vocab-uk">бажати</td><td class="vocab-ipa">/bɑˈʒɑtɪ/</td><td class="vocab-en">to wish</td></tr><tr><td class="vocab-uk">просити</td><td class="vocab-ipa">/proˈsɪtɪ/</td><td class="vocab-en">to ask, request</td></tr><tr><td class="vocab-uk">попросити</td><td class="vocab-ipa">/poproˈsɪtɪ/</td><td class="vocab-en">to ask, request</td></tr><tr><td class="vocab-uk">наказувати</td><td class="vocab-ipa">/nɑˈkɑzuvɑtɪ/</td><td class="vocab-en">to order</td></tr><tr><td class="vocab-uk">наказати</td><td class="vocab-ipa">/nɑkɑˈzɑtɪ/</td><td class="vocab-en">to order</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-ipa">/ˈrɑdɪtɪ/</td><td class="vocab-en">to advise</td></tr><tr><td class="vocab-uk">порадити</td><td class="vocab-ipa">/porɑˈdɪtɪ/</td><td class="vocab-en">to advise</td></tr><tr><td class="vocab-uk">сподіватися</td><td class="vocab-ipa">/spodʲiˈvɑtɪsʲɑ/</td><td class="vocab-en">to hope</td></tr><tr><td class="vocab-uk">вимагати</td><td class="vocab-ipa">/vɪmɑˈɦɑtɪ/</td><td class="vocab-en">to demand</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-ipa">/proponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-ipa">/zɑproponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">бажати</td><td class="vocab-ipa">/bɑˈʒɑtɪ/</td><td class="vocab-en">to wish</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">попросити</td><td class="vocab-ipa">/poproˈsɪtɪ/</td><td class="vocab-en">to ask, request</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">наказувати</td><td class="vocab-ipa">/nɑˈkɑzuvɑtɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">наказати</td><td class="vocab-ipa">/nɑkɑˈzɑtɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">порадити</td><td class="vocab-ipa">/porɑˈdɪtɪ/</td><td class="vocab-en">to advise</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вимагати</td><td class="vocab-ipa">/vɪmɑˈɦɑtɪ/</td><td class="vocab-en">to demand</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">хотіти</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">просити</td><td class="vocab-module">Module 8</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-module">Module 33</td></tr><tr><td class="vocab-uk">сподіватися</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-module">Module 98</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-module">Module 98</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -978,7 +990,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Я хочу, щоб вона ___ .","options":["прийшла","прийти"],"correctIndex":0,"explanation":"Past tense form with different subject."},{"question":"Він просить, щоб я йому ___ .","options":["допоміг","допомогти"],"correctIndex":0,"explanation":"Different subjects require past tense form."},{"question":"Важливо, щоб всі ___ правила.","options":["знали","знати"],"correctIndex":0,"explanation":"Impersonal expression + different subject = past form."},{"question":"Вона хоче ___ відпочити. (same subject)","options":["щоб вона","- (just infinitive)"],"correctIndex":1,"explanation":"Same subject = just infinitive, no щоб needed."},{"question":"Лікар радить, щоб він ___ ліки.","options":["приймав","приймати"],"correctIndex":0,"explanation":"Different subject (doctor ≠ he)."},{"question":"Ми сподіваємося, щоб погода ___ гарна.","options":["була","бути"],"correctIndex":0,"explanation":"\"Погода\" is a different subject."}];
     const sortData = {};
-    const vocabData = [{"uk":"хотіти","translit":"","en":"to want","note":""},{"uk":"бажати","translit":"","en":"to wish","note":""},{"uk":"просити","translit":"","en":"to ask, request","note":""},{"uk":"попросити","translit":"","en":"to ask, request","note":""},{"uk":"наказувати","translit":"","en":"to order","note":""},{"uk":"наказати","translit":"","en":"to order","note":""},{"uk":"радити","translit":"","en":"to advise","note":""},{"uk":"порадити","translit":"","en":"to advise","note":""},{"uk":"сподіватися","translit":"","en":"to hope","note":""},{"uk":"вимагати","translit":"","en":"to demand","note":""},{"uk":"пропонувати","translit":"","en":"to suggest","note":""},{"uk":"запропонувати","translit":"","en":"to suggest","note":""}];
+    const vocabData = [{"uk":"бажати","translit":"","en":"to wish","note":"impf"},{"uk":"попросити","translit":"","en":"to ask, request","note":"pf"},{"uk":"наказувати","translit":"","en":"to order","note":"impf"},{"uk":"наказати","translit":"","en":"to order","note":"pf"},{"uk":"порадити","translit":"","en":"to advise","note":"pf"},{"uk":"вимагати","translit":"","en":"to demand","note":"impf"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

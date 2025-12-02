@@ -396,9 +396,9 @@ Create sentences: Subject + verb + з + instrumental
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | з/із/зі | /z/, /iz/, /zʲi/ | with | prep | - | + instr |
-| разом | /ˈrɑzom/ | together | adv | - | |
-| удвох | /udˈvox/ | the two (together) | adv | - | |
-| утрьох | /uˈtrʲox/ | the three (together) | adv | - | |
+| разом | /ˈrɑzom/ | together | adv | - |
+| удвох | /udˈvox/ | the two (together) | adv | - |
+| утрьох | /uˈtrʲox/ | the three (together) | adv | - |
 | зустрічатися | /zustriˈtʃɑtɪsʲɑ/ | to meet | verb | - | з + instr |
 | вітатися | /viˈtɑtɪsʲɑ/ | to greet | verb | - | з + instr |
 | прощатися | /proʃˈtʃɑtɪsʲɑ/ | to say goodbye | verb | - | з + instr |
@@ -410,7 +410,7 @@ Create sentences: Subject + verb + з + instrumental
 | нами | /ˈnɑmɪ/ | (with) us | pron | - | Instr. of ми |
 | вами | /ˈvɑmɪ/ | (with) you | pron | - | Instr. of ви |
 | ними | /ˈnɪmɪ/ | (with) them | pron | - | Instr. of вони |
-| компанія | /kompɑˈnʲijɑ/ | company, group | noun | f | |
+| компанія | /kompɑˈnʲijɑ/ | company, group | noun | f |
 
 ---
 

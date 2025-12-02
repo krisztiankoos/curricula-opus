@@ -372,16 +372,23 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| повідомляти | /pɔwʲidɔmˈlʲatɪ/ | to inform | ipf, нейтральне |
 | сповіщати | /spɔwʲiˈʃt͡ʃɑtɪ/ | to notify | ipf, юридичне |
-| оголошувати | /ɔɦɔˈlɔʃuwɑtɪ/ | to announce | ipf, публічне |
-| заявляти | /zɑjɑwˈlʲatɪ/ | to declare | ipf, позиція |
 | підтверджувати | /pʲidtwɛrˈdʒuwɑtɪ/ | to confirm | ipf |
-| заперечувати | /zɑpɛˈrɛtʃuwɑtɪ/ | to deny | ipf |
 | спростовувати | /sprɔsˈtɔwuwɑtɪ/ | to refute | ipf |
 | уточнювати | /utɔˈtʃnʲuwɑtɪ/ | to clarify | ipf |
 | наголошувати | /nɑɦɔˈlɔʃuwɑtɪ/ | to emphasize | ipf |
-| за словами | /zɑ slɔˈwɑmɪ/ | according to | prep |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| повідомляти | 33 |
+| оголошувати | 172 |
+| заявляти | 133 |
+| заперечувати | 98 |
+| за словами | 158 |
 
 ---
 

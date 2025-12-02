@@ -282,7 +282,6 @@ Write short messages using diminutives:
 | пестливий | /pɛstˈlɪvɪj/ | affectionate, tender | adj |
 | ласкавий | /lɑsˈkɑvɪj/ | kind, gentle | adj |
 | суфікс | /ˈsufʲiks/ | suffix | m |
-| столик | /ˈstolɪk/ | small table | m, dim |
 | котик | /ˈkotɪk/ | kitty | m, dim |
 | мамочка | /ˈmɑmot͡ʃkɑ/ | mommy | f, dim |
 | бабусенька | /bɑbuˈsɛnʲkɑ/ | dear grandma | f, dim |
@@ -292,7 +291,15 @@ Write short messages using diminutives:
 | сонечко | /ˈsonɛt͡ʃko/ | sun (dear) | n, dim |
 | зірочка | /ˈzʲirot͡ʃkɑ/ | little star | f, dim |
 | хвилиночка | /xvɪlɪˈnot͡ʃkɑ/ | just a moment | f, dim |
-| маленький | /mɑˈlɛnʲkɪj/ | small, little | adj, dim |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| столик | 18 |
+| маленький | 19 |
 
 ---
 

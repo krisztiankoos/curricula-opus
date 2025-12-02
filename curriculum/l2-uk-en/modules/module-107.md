@@ -308,11 +308,18 @@ Use "на випадок, якщо" to discuss backup plans:
 | хіба що | /xʲiˈbɑ ʃt͡ʃo/ | unless | conj |
 | на випадок | /nɑ ˈvɪpɑdok/ | in case | prep |
 | а якщо | /ɑ jɑkˈʃt͡ʃo/ | what if | phrase |
-| шкода | /ˈʃkodɑ/ | it's a pity | pred |
 | жаль | /ʒɑlʲ/ | it's a pity, regret | m |
 | жалкувати | /ʒɑlkuˈvɑtɪ/ | to regret | impf |
-| інакше | /iˈnɑkʃɛ/ | otherwise, differently | adv |
-| раніше | /rɑˈnʲiʃɛ/ | earlier | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| шкода | 47 |
+| інакше | 46 |
+| раніше | 21 |
 
 ---
 

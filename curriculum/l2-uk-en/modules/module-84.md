@@ -355,17 +355,24 @@ B: Повернемося в неділю ввечері.
 |------|-----|---------|-------|
 | обіцяти | /oˈbʲit͡sʲɑtɪ/ | to promise | imperfective |
 | пообіцяти | /poobʲiˈt͡sʲɑtɪ/ | to promise (pf) | perfective |
-| планувати | /plɑnuˈvɑtɪ/ | to plan | imperfective |
 | запланувати | /zɑplɑnuˈvɑtɪ/ | to plan (pf) | perfective |
-| збиратися | /zbɪˈrɑtɪsʲɑ/ | to be going to | + infinitive |
 | мати намір | /ˈmɑtɪ nɑˈmʲir/ | to intend | + infinitive |
-| сподіватися | /spodʲiˈvɑtɪsʲɑ/ | to hope | imperfective |
-| спочатку | /spoˈt͡ʃɑtku/ | first, at first | in sequences |
-| потім | /poˈtʲim/ | then, afterwards | in sequences |
 | наступного тижня | /nɑˈstupnoɦo ˈtɪʒnʲɑ/ | next week | - |
-| післязавтра | /pʲisʲlʲɑˈzɑvtrɑ/ | day after tomorrow | - |
 | найближчим часом | /nɑjblɪʒˈt͡ʃɪm ˈt͡ʃɑsom/ | in the near future | - |
 | до понеділка | /do ponɛˈdʲilkɑ/ | by Monday | deadline |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| планувати | 22 |
+| збиратися | 22 |
+| сподіватися | 46 |
+| спочатку | 25 |
+| потім | 21 |
+| післязавтра | 22 |
 
 ---
 

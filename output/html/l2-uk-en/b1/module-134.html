@@ -799,6 +799,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -895,7 +896,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (12)</h3>
+        <h3>Нові слова (4)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -903,9 +904,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">бачити</td><td class="vocab-ipa">/ˈbɑt͡ʃɪtɪ/</td><td class="vocab-en">to see</td></tr><tr><td class="vocab-uk">дивитися</td><td class="vocab-ipa">/dɪˈvɪtɪsʲɑ/</td><td class="vocab-en">to look, watch</td></tr><tr><td class="vocab-uk">оглядати</td><td class="vocab-ipa">/oɦlʲɑˈdɑtɪ/</td><td class="vocab-en">to examine</td></tr><tr><td class="vocab-uk">спостерігати</td><td class="vocab-ipa">/spostɛrʲiˈɦɑtɪ/</td><td class="vocab-en">to observe</td></tr><tr><td class="vocab-uk">помічати</td><td class="vocab-ipa">/pomʲiˈt͡ʃɑtɪ/</td><td class="vocab-en">to notice</td></tr><tr><td class="vocab-uk">знати</td><td class="vocab-ipa">/ˈznɑtɪ/</td><td class="vocab-en">to know</td></tr><tr><td class="vocab-uk">розуміти</td><td class="vocab-ipa">/rozuˈmʲitɪ/</td><td class="vocab-en">to understand</td></tr><tr><td class="vocab-uk">усвідомлювати</td><td class="vocab-ipa">/usvʲiˈdomlʲuvɑtɪ/</td><td class="vocab-en">to realize</td></tr><tr><td class="vocab-uk">визнавати</td><td class="vocab-ipa">/vɪznɑˈvɑtɪ/</td><td class="vocab-en">to acknowledge</td></tr><tr><td class="vocab-uk">пізнавати</td><td class="vocab-ipa">/pʲiznɑˈvɑtɪ/</td><td class="vocab-en">to get to know</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-ipa">/ˈpoɦlʲɑd/</td><td class="vocab-en">glance, look</td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-ipa">/ˈznɑnʲːɑ/</td><td class="vocab-en">knowledge</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">оглядати</td><td class="vocab-ipa">/oɦlʲɑˈdɑtɪ/</td><td class="vocab-en">to examine</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">спостерігати</td><td class="vocab-ipa">/spostɛrʲiˈɦɑtɪ/</td><td class="vocab-en">to observe</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">помічати</td><td class="vocab-ipa">/pomʲiˈt͡ʃɑtɪ/</td><td class="vocab-en">to notice</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">усвідомлювати</td><td class="vocab-ipa">/usvʲiˈdomlʲuvɑtɪ/</td><td class="vocab-en">to realize</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (8)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">бачити</td><td class="vocab-module">Module 8</td></tr><tr><td class="vocab-uk">дивитися</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">знати</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">розуміти</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">визнавати</td><td class="vocab-module">Module 66</td></tr><tr><td class="vocab-uk">пізнавати</td><td class="vocab-module">Module 66</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-module">Module 95</td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-module">Module 63</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -919,7 +931,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Пасивне сприйняття очима:","options":["бачити","дивитися"],"correctIndex":0,"explanation":"Passive seeing."},{"question":"Активний погляд:","options":["дивитися","бачити"],"correctIndex":0,"explanation":"Active looking."},{"question":"Мати інформацію:","options":["знати","розуміти"],"correctIndex":0,"explanation":"Have information."},{"question":"Осягати сенс:","options":["розуміти","знати"],"correctIndex":0,"explanation":"Comprehend meaning."},{"question":"«Я ___ фільм» — дивитися:","options":["дивлюся","бачу"],"correctIndex":0,"explanation":"Watching a movie."},{"question":"«Усвідомити» означає:","options":["to realize","to know"],"correctIndex":0,"explanation":"Realize importance."}];
     const sortData = {};
-    const vocabData = [{"uk":"бачити","translit":"","en":"to see","note":""},{"uk":"дивитися","translit":"","en":"to look, watch","note":""},{"uk":"оглядати","translit":"","en":"to examine","note":""},{"uk":"спостерігати","translit":"","en":"to observe","note":""},{"uk":"помічати","translit":"","en":"to notice","note":""},{"uk":"знати","translit":"","en":"to know","note":""},{"uk":"розуміти","translit":"","en":"to understand","note":""},{"uk":"усвідомлювати","translit":"","en":"to realize","note":""},{"uk":"визнавати","translit":"","en":"to acknowledge","note":""},{"uk":"пізнавати","translit":"","en":"to get to know","note":""},{"uk":"погляд","translit":"","en":"glance, look","note":""},{"uk":"знання","translit":"","en":"knowledge","note":""}];
+    const vocabData = [{"uk":"оглядати","translit":"","en":"to examine","note":"impf"},{"uk":"спостерігати","translit":"","en":"to observe","note":"impf"},{"uk":"помічати","translit":"","en":"to notice","note":"impf"},{"uk":"усвідомлювати","translit":"","en":"to realize","note":"impf"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

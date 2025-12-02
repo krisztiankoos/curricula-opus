@@ -443,53 +443,60 @@ Discuss:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| пісня | /ˈpʲisnʲɑ/ | song | noun | f | |
-| мелодія | /mɛˈlodʲijɑ/ | melody | noun | f | |
-| альбом | /ɑlʲˈbom/ | album | noun | m | |
-| гурт | /ɦurt/ | band | noun | m | |
-| співак | /spʲiˈvɑk/ | singer | noun | m | |
-| композитор | /kompozɪˈtor/ | composer | noun | m | |
-| оркестр | /orˈkɛstr/ | orchestra | noun | m | |
-| джаз | /dʒɑz/ | jazz | noun | m | |
-| народна музика | /nɑˈrodnɑ ˈmuzɪkɑ/ | folk music | noun | f | |
-| гітара | /ɦʲiˈtɑrɑ/ | guitar | noun | f | |
-| піаніно | /pʲiɑˈnʲino/ | piano | noun | n | |
-| скрипка | /ˈskrɪpkɑ/ | violin | noun | f | |
-| бандура | /bɑnˈdurɑ/ | bandura | noun | f | |
-| кінотеатр | /kʲinotɛˈɑtr/ | movie theater | noun | m | |
-| режисер | /rɛʒɪˈsɛr/ | director | noun | m | |
-| акторка | /ɑkˈtorkɑ/ | actress | noun | f | |
-| сценарій | /stsɛˈnɑrʲij/ | screenplay | noun | m | |
-| прем'єра | /prɛmˈjɛrɑ/ | premiere | noun | f | |
-| субтитри | /subˈtɪtrɪ/ | subtitles | noun | pl | |
-| комедія | /koˈmɛdʲijɑ/ | comedy | noun | f | |
-| драма | /ˈdrɑmɑ/ | drama | noun | f | |
-| бойовик | /bojoˈvɪk/ | action film | noun | m | |
-| жахи | /ˈʒɑxɪ/ | horror | noun | pl | |
-| мультфільм | /mulʲtˈfʲilʲm/ | cartoon | noun | m | |
-| роман | /roˈmɑn/ | novel | noun | m | |
-| поезія | /poˈɛzʲijɑ/ | poetry | noun | f | |
-| вірш | /vʲirʃ/ | poem | noun | m | |
-| поет | /poˈɛt/ | poet | noun | m | |
-| бестселер | /bɛstsɛˈlɛr/ | bestseller | noun | m | |
-| живопис | /ʒɪˈvopɪs/ | painting | noun | m | |
-| скульптура | /skulʲpˈturɑ/ | sculpture | noun | f | |
-| галерея | /ɦɑlɛˈrɛjɑ/ | gallery | noun | f | |
-| художник | /xuˈdoʒnɪk/ | artist | noun | m | |
-| картина | /kɑrˈtɪnɑ/ | painting (work) | noun | f | |
-| вистава | /ˈvɪstɑvɑ/ | performance | noun | f | |
-| опера | /ˈopɛrɑ/ | opera | noun | f | |
-| балет | /bɑˈlɛt/ | ballet | noun | m | |
-| аплодисменти | /ɑplodɪsˈmɛntɪ/ | applause | noun | pl | |
-| антракт | /ɑnˈtrɑkt/ | intermission | noun | m | |
-| традиція | /trɑˈdɪtsʲijɑ/ | tradition | noun | f | |
-| свято | /ˈsvʲɑto/ | holiday | noun | n | |
-| вишиванка | /vɪʃɪˈvɑnkɑ/ | embroidered shirt | noun | f | |
-| писанка | /ˈpɪsɑnkɑ/ | Easter egg | noun | f | |
-| колядка | /koˈlʲɑdkɑ/ | Christmas carol | noun | f | |
-| рушник | /ruʃˈnɪk/ | ritual towel | noun | m | |
-| вінок | /vʲiˈnok/ | wreath | noun | m | |
-| фестиваль | /fɛstɪˈvɑlʲ/ | festival | noun | m | |
+| пісня | /ˈpʲisnʲɑ/ | song | noun | f |
+| мелодія | /mɛˈlodʲijɑ/ | melody | noun | f |
+| альбом | /ɑlʲˈbom/ | album | noun | m |
+| гурт | /ɦurt/ | band | noun | m |
+| співак | /spʲiˈvɑk/ | singer | noun | m |
+| композитор | /kompozɪˈtor/ | composer | noun | m |
+| оркестр | /orˈkɛstr/ | orchestra | noun | m |
+| джаз | /dʒɑz/ | jazz | noun | m |
+| народна музика | /nɑˈrodnɑ ˈmuzɪkɑ/ | folk music | noun | f |
+| гітара | /ɦʲiˈtɑrɑ/ | guitar | noun | f |
+| піаніно | /pʲiɑˈnʲino/ | piano | noun | n |
+| скрипка | /ˈskrɪpkɑ/ | violin | noun | f |
+| бандура | /bɑnˈdurɑ/ | bandura | noun | f |
+| кінотеатр | /kʲinotɛˈɑtr/ | movie theater | noun | m |
+| режисер | /rɛʒɪˈsɛr/ | director | noun | m |
+| акторка | /ɑkˈtorkɑ/ | actress | noun | f |
+| сценарій | /stsɛˈnɑrʲij/ | screenplay | noun | m |
+| прем'єра | /prɛmˈjɛrɑ/ | premiere | noun | f |
+| субтитри | /subˈtɪtrɪ/ | subtitles | noun | pl |
+| комедія | /koˈmɛdʲijɑ/ | comedy | noun | f |
+| драма | /ˈdrɑmɑ/ | drama | noun | f |
+| бойовик | /bojoˈvɪk/ | action film | noun | m |
+| жахи | /ˈʒɑxɪ/ | horror | noun | pl |
+| мультфільм | /mulʲtˈfʲilʲm/ | cartoon | noun | m |
+| роман | /roˈmɑn/ | novel | noun | m |
+| поезія | /poˈɛzʲijɑ/ | poetry | noun | f |
+| вірш | /vʲirʃ/ | poem | noun | m |
+| поет | /poˈɛt/ | poet | noun | m |
+| бестселер | /bɛstsɛˈlɛr/ | bestseller | noun | m |
+| живопис | /ʒɪˈvopɪs/ | painting | noun | m |
+| скульптура | /skulʲpˈturɑ/ | sculpture | noun | f |
+| галерея | /ɦɑlɛˈrɛjɑ/ | gallery | noun | f |
+| картина | /kɑrˈtɪnɑ/ | painting (work) | noun | f |
+| вистава | /ˈvɪstɑvɑ/ | performance | noun | f |
+| опера | /ˈopɛrɑ/ | opera | noun | f |
+| балет | /bɑˈlɛt/ | ballet | noun | m |
+| аплодисменти | /ɑplodɪsˈmɛntɪ/ | applause | noun | pl |
+| антракт | /ɑnˈtrɑkt/ | intermission | noun | m |
+| традиція | /trɑˈdɪtsʲijɑ/ | tradition | noun | f |
+| свято | /ˈsvʲɑto/ | holiday | noun | n |
+| писанка | /ˈpɪsɑnkɑ/ | Easter egg | noun | f |
+| колядка | /koˈlʲɑdkɑ/ | Christmas carol | noun | f |
+| вінок | /vʲiˈnok/ | wreath | noun | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| художник | 36 |
+| вишиванка | 27 |
+| рушник | 69 |
+| фестиваль | 74 |
 
 ---
 

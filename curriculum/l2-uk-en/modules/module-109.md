@@ -313,19 +313,26 @@ Discuss causes and results:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| тому що | /toˈmu ʃt͡ʃo/ | because | conj |
-| бо | /bo/ | because (informal) | conj |
 | оскільки | /osˈkʲilʲkɪ/ | since, because | conj (formal) |
-| через | /t͡ʃɛˈrɛz/ | because of, due to | prep + acc |
-| через те, що | - | due to the fact that | conj |
+| через те, що | /ˈtʃɛrɛz tɛ ʃt͡ʃɔ/ | due to the fact that | conj |
 | завдяки | /zɑvˈdʲɑkɪ/ | thanks to | prep + dat |
-| завдяки тому, що | - | thanks to the fact that | conj |
+| завдяки тому, що | /zɑwˈdʲakɪ tɔˈmu/ | thanks to the fact that | conj |
 | тому | /toˈmu/ | therefore, that's why | adv |
-| отже | /ˈotʒɛ/ | therefore, thus | adv (formal) |
 | тож | /toʒ/ | so, therefore | adv (informal) |
 | так що | /tɑk ʃt͡ʃo/ | so that, so | conj |
-| причина | /prɪˈt͡ʃɪnɑ/ | reason, cause | f |
-| наслідок | /ˈnɑslʲidok/ | consequence, result | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| тому що | 53 |
+| бо | 53 |
+| через | 94 |
+| отже | 58 |
+| причина | 95 |
+| наслідок | 95 |
 
 ---
 

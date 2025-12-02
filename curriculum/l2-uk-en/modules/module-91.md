@@ -303,22 +303,29 @@ Use these verbs to give directions:
 
 | Word | IPA | English | Aspect |
 |------|-----|---------|--------|
-| перейти | /pɛrɛjˈtɪ/ | to cross | pf |
-| переходити | /pɛrɛxoˈdɪtɪ/ | to cross | impf |
-| переїхати | /pɛrɛˈjixɑtɪ/ | to move, drive across | pf |
-| переїжджати | /pɛrɛjizˈdʒɑtɪ/ | to move | impf |
-| перенести | /pɛrɛnɛsˈtɪ/ | to transfer, reschedule | pf |
 | переносити | /pɛrɛnoˈsɪtɪ/ | to transfer | impf |
 | пройти | /projˈtɪ/ | to pass through | pf |
 | проходити | /proxoˈdɪtɪ/ | to pass | impf |
 | проїхати | /proˈjixɑtɪ/ | to drive through | pf |
 | проїжджати | /projizˈdʒɑtɪ/ | to drive through | impf |
-| обійти | /obijˈtɪ/ | to go around | pf |
 | обходити | /obxoˈdɪtɪ/ | to go around | impf |
-| об'їхати | /objˈixɑtɪ/ | to drive around | pf |
 | об'їжджати | /objizˈdʒɑtɪ/ | to drive around | impf |
 | обігнати | /obʲiɦˈnɑtɪ/ | to overtake | pf |
 | обганяти | /obɦɑˈnʲɑtɪ/ | to overtake | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| перейти | 15 |
+| переходити | 61 |
+| переїхати | 61 |
+| переїжджати | 69 |
+| перенести | 49 |
+| обійти | 61 |
+| об'їхати | 61 |
 
 ---
 

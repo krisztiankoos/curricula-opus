@@ -368,7 +368,6 @@ objectives:
 |--------|--------|----------|----------|
 | багато води утекло | /bɑˈɦɑtɔ wɔˈdɪ utɛkˈlɔ/ | минуло часу | water under the bridge |
 | вийти сухим з води | /ˈwɪjtɪ suˈxɪm z wɔˈdɪ/ | уникнути покарання | scot-free |
-| камінь на серці | /ˈkɑmʲinʲ nɑ ˈsɛrt͡sʲi/ | тривога, провина | weight on heart |
 | під лежачий камінь | /pʲid lɛˈʒɑtʃɪj ˈkɑmʲinʲ/ | треба діяти | унікальне |
 | пустити коріння | /pusˈtɪtɪ kɔˈrʲinʲːɑ/ | укоренитися | put down roots |
 | що посієш | /ʃt͡ʃɔ pɔˈsʲijɛʃ/ | карма | as you sow |
@@ -376,6 +375,14 @@ objectives:
 | крапля в морі | /ˈkrɑplʲɑ w ˈmɔrʲi/ | дуже мало | drop in ocean |
 | після дощу в четвер | /ˈpʲislʲɑ dɔʃˈt͡ʃu w t͡ʃɛtˈwɛr/ | ніколи | when pigs fly |
 | тиха вода | /ˈtɪxɑ wɔˈdɑ/ | спокійний зовні | still waters |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| камінь на серці | 171 |
 
 ---
 

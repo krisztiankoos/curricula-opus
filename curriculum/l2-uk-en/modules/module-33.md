@@ -359,7 +359,7 @@ Create sentences with impersonal + dative:
 | важко | /ˈvɑʒko/ | hard, difficult | adv | - | + dat |
 | весело | /ˈvɛsɛlo/ | fun, merry | adv | - | + dat |
 | сумно | /ˈsumno/ | sad | adv | - | + dat |
-| досвід | /ˈdosvʲid/ | experience | noun | m | |
+| досвід | /ˈdosvʲid/ | experience | noun | m |
 
 ---
 

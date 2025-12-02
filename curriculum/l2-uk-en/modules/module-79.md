@@ -352,23 +352,27 @@ Use word formation knowledge to complete:
 
 # Vocabulary
 
-This module reviews vocabulary from Modules 61-66. Key items:
+*No new vocabulary in this module.*
 
-| Word | IPA | English | Components |
-|------|-----|---------|------------|
-| приходити | /prɪˈxodɪtɪ/ | to arrive | при- + ход- |
-| виходити | /vɪˈxodɪtɪ/ | to exit | ви- + ход- |
-| переходити | /pɛrɛˈxodɪtɪ/ | to cross | пере- + ход- |
-| читання | /tʃɪˈtɑnʲːɑ/ | reading | чит- + -ання |
-| можливість | /moʒˈlɪvʲistʲ/ | possibility | можлив- + -ість |
-| письменник | /pɪsʲˈmɛnːɪk/ | writer | письм- + -енник |
-| міський | /ˈmʲiskɪj/ | urban | міст- + -ський |
-| книжковий | /knɪʒˈkovɪj/ | book (adj) | книжк- + -овий |
-| навчання | /nɑvˈtʃɑnʲːɑ/ | education | на- + вч- + -ання |
-| робітник | /roˈbʲitnɪk/ | worker | робіт- + -ник |
-| розмова | /rozˈmovɑ/ | conversation | роз- + мов- |
-| поїздка | /poˈjizdkɑ/ | trip | по- + їзд- + -ка |
-| побачення | /pobɑˈtʃɛnʲːɑ/ | meeting | по- + бач- + -ення |
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| приходити | 61 |
+| виходити | 25 |
+| переходити | 61 |
+| читання | 63 |
+| можливість | 47 |
+| письменник | 36 |
+| міський | 64 |
+| книжковий | 64 |
+| навчання | 63 |
+| робітник | 63 |
+| розмова | 65 |
+| поїздка | 66 |
+| побачення | 66 |
 
 ---
 

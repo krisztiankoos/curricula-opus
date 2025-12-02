@@ -271,20 +271,27 @@ Discuss using vocabulary from this module:
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
 | довкілля | /dovˈkʲilʲːɑ/ | environment | n |
-| природа | /prɪˈrodɑ/ | nature | f |
 | клімат | /klʲiˈmɑt/ | climate | m |
-| забруднення | /zɑˈbrudnɛnʲːɑ/ | pollution | n |
 | сміття | /smʲiˈtʲːɑ/ | garbage | n |
 | відходи | /vʲidˈxodɪ/ | waste | pl |
 | ресурси | /rɛˈsursɪ/ | resources | pl |
 | енергія | /ɛˈnɛrɦʲijɑ/ | energy | f |
-| переробка | /pɛrɛˈrobkɑ/ | recycling | f |
 | захист | /ˈzɑxɪst/ | protection | m |
-| заповідник | /zɑpoˈvʲidnɪk/ | nature reserve | m |
 | стійкість | /stʲijˈkʲistʲ/ | sustainability | f |
 | посуха | /poˈsuxɑ/ | drought | f |
 | повінь | /poˈvʲinʲ/ | flood | f |
 | викиди | /ˈvɪkɪdɪ/ | emissions | pl |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| природа | 70 |
+| забруднення | 70 |
+| переробка | 70 |
+| заповідник | 70 |
 
 ---
 

@@ -286,32 +286,33 @@ Practice: You're buying items. Say the price:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| нуль | /nulʲ/ | zero | num | m |  |
+| нуль | /nulʲ/ | zero | num | m |
 | один | /ɔˈdɪn/ | one (m) | num | m | одна (f), одне (n) |
 | два | /dvɑ/ | two (m/n) | num | - | дві (f) |
-| три | /trɪ/ | three | num | - |  |
-| чотири | /tʃɔˈtɪrɪ/ | four | num | - |  |
-| п'ять | /pjɑtʲ/ | five | num | - |  |
-| шість | /ʃʲistʲ/ | six | num | - |  |
-| сім | /sʲim/ | seven | num | - |  |
-| вісім | /ˈvʲisʲim/ | eight | num | - |  |
-| дев'ять | /ˈdɛvjɑtʲ/ | nine | num | - |  |
-| десять | /ˈdɛsʲɑtʲ/ | ten | num | - |  |
-| двадцять | /ˈdvɑd͡tsʲɑtʲ/ | twenty | num | - |  |
-| тридцять | /ˈtrɪd͡tsʲɑtʲ/ | thirty | num | - |  |
+| три | /trɪ/ | three | num | - |
+| чотири | /tʃɔˈtɪrɪ/ | four | num | - |
+| п'ять | /pjɑtʲ/ | five | num | - |
+| шість | /ʃʲistʲ/ | six | num | - |
+| сім | /sʲim/ | seven | num | - |
+| вісім | /ˈvʲisʲim/ | eight | num | - |
+| дев'ять | /ˈdɛvjɑtʲ/ | nine | num | - |
+| десять | /ˈdɛsʲɑtʲ/ | ten | num | - |
+| двадцять | /ˈdvɑd͡tsʲɑtʲ/ | twenty | num | - |
+| тридцять | /ˈtrɪd͡tsʲɑtʲ/ | thirty | num | - |
 | сорок | /ˈsɔrɔk/ | forty | num | - | Irregular! |
-| п'ятдесят | /pjɑtdɛˈsʲɑt/ | fifty | num | - |  |
-| сто | /stɔ/ | hundred | num | - |  |
+| п'ятдесят | /pjɑtdɛˈsʲɑt/ | fifty | num | - |
+| сто | /stɔ/ | hundred | num | - |
 | гривня | /ˈɦrɪvnʲɑ/ | hryvnia (₴) | noun | f | 2-4: гривні, 5+: гривень |
 | копійка | /kɔˈpʲijkɑ/ | kopeck | noun | f | 2-4: копійки, 5+: копійок |
-| ціна | /t͡sʲiˈnɑ/ | price | noun | f |  |
+| ціна | /t͡sʲiˈnɑ/ | price | noun | f |
 | коштувати | /kɔʃtuˈvɑtɪ/ | to cost | verb | - | коштує (it costs) |
-| дорого | /ˈdɔrɔɦɔ/ | expensive | adv | - |  |
-| дешево | /ˈdɛʃɛvɔ/ | cheap | adv | - |  |
-| знижка | /ˈznɪʒkɑ/ | discount | noun | f |  |
-| решта | /ˈrɛʃtɑ/ | change (money) | noun | f |  |
-| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |  |
+| дорого | /ˈdɔrɔɦɔ/ | expensive | adv | - |
+| дешево | /ˈdɛʃɛvɔ/ | cheap | adv | - |
+| знижка | /ˈznɪʒkɑ/ | discount | noun | f |
+| решта | /ˈrɛʃtɑ/ | change (money) | noun | f |
+| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |
 | картка | /ˈkɑrtkɑ/ | card | noun | f | Bank card |
+
 ---
 
 # Number Patterns

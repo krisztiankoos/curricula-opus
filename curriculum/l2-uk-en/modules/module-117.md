@@ -276,21 +276,28 @@ Report questions you were asked today:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| запитати | /zɑpɪˈtɑtɪ/ | to ask | pf |
 | питати | /pɪˈtɑtɪ/ | to ask | impf |
-| цікавитися | /t͡sʲikɑˈvɪtɪsʲɑ/ | to wonder, be interested | impf |
 | поцікавитися | /pot͡sʲikɑˈvɪtɪsʲɑ/ | to inquire | pf |
-| чи | /t͡ʃɪ/ | if, whether | conjunction |
-| хто | /xto/ | who | pronoun |
-| що | /ʃt͡ʃo/ | what | pronoun |
-| де | /dɛ/ | where | adv |
-| коли | /koˈlɪ/ | when | adv |
-| чому | /t͡ʃoˈmu/ | why | adv |
-| як | /jɑk/ | how | adv |
-| скільки | /ˈskʲilʲkɪ/ | how much/many | adv |
-| який | /jɑˈkɪj/ | which, what kind | adj |
-| куди | /kuˈdɪ/ | where to | adv |
-| звідки | /ˈzvʲidkɪ/ | where from | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| запитати | 42 |
+| цікавитися | 35 |
+| чи | 7 |
+| хто | 2 |
+| що | 2 |
+| де | 2 |
+| коли | 7 |
+| чому | 7 |
+| як | 2 |
+| скільки | 7 |
+| який | 7 |
+| куди | 7 |
+| звідки | 7 |
 
 ---
 

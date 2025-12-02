@@ -251,11 +251,18 @@ objectives:
 | розмовний | colloquial | побутовий |
 | художній | literary, artistic | для літератури |
 | публіцистичний | journalistic | для ЗМІ |
-| науковий | scientific, academic | для науки |
 | офіційно-діловий | official, formal | для документів |
 | кліше | cliché | стандартний вираз |
 | канцеляризм | bureaucratese | офіційний штамп |
 | маркер | marker | ознака стилю |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| науковий | 65 |
 
 ---
 

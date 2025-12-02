@@ -349,19 +349,19 @@ Advice:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| якщо | /jɑkˈʃtʃo/ | if | conj | - | |
-| умова | /uˈmovɑ/ | condition | noun | f | |
-| результат | /rɛzulʲˈtɑt/ | result | noun | m | |
-| інакше | /ˈinɑkʃɛ/ | otherwise | adv | - | |
-| можливо | /moʒˈlɪvo/ | possibly, maybe | adv | - | |
-| обов'язково | /obovjɑzˈkovo/ | definitely, certainly | adv | - | |
-| залишитися | /zɑlɪˈʃɪtɪsʲɑ/ | to stay (perf) | verb | - | |
-| запізнюватися | /zɑpʲizˈnʲuvɑtɪsʲɑ/ | to be late (impf) | verb | - | |
-| запізнитися | /zɑpʲizˈnɪtɪsʲɑ/ | to be late (perf) | verb | - | |
-| помилятися | /pomɪˈlʲɑtɪsʲɑ/ | to be mistaken | verb | - | |
-| сподіватися | /spodʲiˈvɑtɪsʲɑ/ | to hope | verb | - | |
-| домовлятися | /domovˈlʲɑtɪsʲɑ/ | to agree, arrange | verb | - | |
-| домовитися | /domoˈvɪtɪsʲɑ/ | to agree (perf) | verb | - | |
+| якщо | /jɑkˈʃtʃo/ | if | conj | - |
+| умова | /uˈmovɑ/ | condition | noun | f |
+| результат | /rɛzulʲˈtɑt/ | result | noun | m |
+| інакше | /ˈinɑkʃɛ/ | otherwise | adv | - |
+| можливо | /moʒˈlɪvo/ | possibly, maybe | adv | - |
+| обов'язково | /obovjɑzˈkovo/ | definitely, certainly | adv | - |
+| залишитися | /zɑlɪˈʃɪtɪsʲɑ/ | to stay (perf) | verb | - |
+| запізнюватися | /zɑpʲizˈnʲuvɑtɪsʲɑ/ | to be late (impf) | verb | - |
+| запізнитися | /zɑpʲizˈnɪtɪsʲɑ/ | to be late (perf) | verb | - |
+| помилятися | /pomɪˈlʲɑtɪsʲɑ/ | to be mistaken | verb | - |
+| сподіватися | /spodʲiˈvɑtɪsʲɑ/ | to hope | verb | - |
+| домовлятися | /domovˈlʲɑtɪsʲɑ/ | to agree, arrange | verb | - |
+| домовитися | /domoˈvɪtɪsʲɑ/ | to agree (perf) | verb | - |
 
 ---
 

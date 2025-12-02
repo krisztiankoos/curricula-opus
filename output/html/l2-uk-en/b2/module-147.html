@@ -620,6 +620,7 @@ footer {
 «Шановний пане Петренко! Маю честь запросити Вас на зустріч, яка відбудеться завтра, 15 березня 2024 року, о 15:00 у конференц-залі. Просимо підтвердити Вашу присутність.»</p>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -689,7 +690,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (9)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -697,9 +698,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">регістр</td><td class="vocab-en">register</td><td class="vocab-note">рівень формальності</td></tr><tr><td class="vocab-uk">функціональний стиль</td><td class="vocab-en">functional style</td><td class="vocab-note">п&#039;ять стилів</td></tr><tr><td class="vocab-uk">розмовний</td><td class="vocab-en">colloquial</td><td class="vocab-note">побутовий</td></tr><tr><td class="vocab-uk">художній</td><td class="vocab-en">literary, artistic</td><td class="vocab-note">для літератури</td></tr><tr><td class="vocab-uk">публіцистичний</td><td class="vocab-en">journalistic</td><td class="vocab-note">для ЗМІ</td></tr><tr><td class="vocab-uk">офіційно-діловий</td><td class="vocab-en">official, formal</td><td class="vocab-note">для документів</td></tr><tr><td class="vocab-uk">кліше</td><td class="vocab-en">cliché</td><td class="vocab-note">стандартний вираз</td></tr><tr><td class="vocab-uk">канцеляризм</td><td class="vocab-en">bureaucratese</td><td class="vocab-note">офіційний штамп</td></tr><tr><td class="vocab-uk">маркер</td><td class="vocab-en">marker</td><td class="vocab-note">ознака стилю</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (1)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">науковий</td><td class="vocab-module">Module 65</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -713,7 +725,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Рішення про затвердження бюджету прийнято одноголосно.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":0,"explanation":"Кліше, пасив -но → офіційно-діловий"},{"question":"«Ну, я не знаю... Може, завтра?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":1,"explanation":"Частка «ну», неповнота → розмовний"},{"question":"«Дослідження показує статистично значущу кореляцію.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":2,"explanation":"Терміни, безособовість → науковий"},{"question":"«Срібний місяць виплив із-за хмар.»","options":["Офіційно-діловий","Розмовний","Науковий","Художній"],"correctIndex":3,"explanation":"Епітет «срібний», образність → художній"},{"question":"«Чи готова Україна до нових викликів?»","options":["Офіційно-діловий","Розмовний","Науковий","Публіцистичний"],"correctIndex":3,"explanation":"Риторичне питання → публіцистичний"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"регістр","translit":"","en":"register","note":"рівень формальності"},{"uk":"функціональний стиль","translit":"","en":"functional style","note":"п'ять стилів"},{"uk":"розмовний","translit":"","en":"colloquial","note":"побутовий"},{"uk":"художній","translit":"","en":"literary, artistic","note":"для літератури"},{"uk":"публіцистичний","translit":"","en":"journalistic","note":"для ЗМІ"},{"uk":"офіційно-діловий","translit":"","en":"official, formal","note":"для документів"},{"uk":"кліше","translit":"","en":"cliché","note":"стандартний вираз"},{"uk":"канцеляризм","translit":"","en":"bureaucratese","note":"офіційний штамп"},{"uk":"маркер","translit":"","en":"marker","note":"ознака стилю"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

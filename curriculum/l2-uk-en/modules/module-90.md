@@ -372,20 +372,27 @@ B: Прошу! Приїжджайте ще!
 
 | Word | IPA | English | Aspect |
 |------|-----|---------|--------|
-| прийти | /prɪjˈtɪ/ | to come, arrive | pf |
-| приходити | /prɪxoˈdɪtɪ/ | to come | impf |
-| приїхати | /prɪˈjixɑtɪ/ | to arrive (vehicle) | pf |
 | приїжджати | /prɪjizˈdʒɑtɪ/ | to arrive | impf |
-| принести | /prɪnɛsˈtɪ/ | to bring | pf |
 | приносити | /prɪnoˈsɪtɪ/ | to bring | impf |
-| вийти | /ˈvɪjtɪ/ | to go out | pf |
-| виходити | /vɪxoˈdɪtɪ/ | to go out | impf |
-| виїхати | /vɪˈjixɑtɪ/ | to drive out | pf |
 | виїжджати | /vɪjizˈdʒɑtɪ/ | to drive out | impf |
-| увійти | /uvijˈtɪ/ | to enter | pf |
-| входити | /vxoˈdɪtɪ/ | to enter | impf |
-| в'їхати | /vˈjixɑtɪ/ | to drive in | pf |
 | в'їжджати | /vjizˈdʒɑtɪ/ | to drive in | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| прийти | 42 |
+| приходити | 61 |
+| приїхати | 42 |
+| принести | 18 |
+| вийти | 42 |
+| виходити | 25 |
+| виїхати | 61 |
+| увійти | 61 |
+| входити | 61 |
+| в'їхати | 61 |
 
 ---
 

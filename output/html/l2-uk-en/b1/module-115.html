@@ -680,6 +680,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -753,17 +754,28 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (7)</h3>
+        <h3>Нові слова (1)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    <th>IPA</th>
-    <th>Переклад</th>
     
+    <th>Переклад</th>
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-ipa"></td><td class="vocab-en">test, assessment</td></tr><tr><td class="vocab-uk">оцінювання</td><td class="vocab-ipa">/ot͡sʲiˈnʲuvɑnʲːɑ/</td><td class="vocab-en">assessment</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-ipa">/bɑl/</td><td class="vocab-en">point, score</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td></tr><tr><td class="vocab-uk">відповідь</td><td class="vocab-ipa">/vʲidˈpovʲidʲ/</td><td class="vocab-en">answer</td></tr><tr><td class="vocab-uk">перевірити</td><td class="vocab-ipa">/pɛrɛˈvʲirɪtɪ/</td><td class="vocab-en">to check</td></tr><tr><td class="vocab-uk">покращити</td><td class="vocab-ipa">/pokrɑˈʃɪtɪ/</td><td class="vocab-en">to improve</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-en">test, assessment</td><td class="vocab-note">f</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">оцінювання</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">відповідь</td><td class="vocab-module">Module 32</td></tr><tr><td class="vocab-uk">перевірити</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">покращити</td><td class="vocab-module">Module 88</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -777,7 +789,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Людина, ___ мені допомогла, дуже добра.","options":["яка","яку"],"correctIndex":0,"explanation":"Subject of \"допомогла\" = nominative."},{"question":"Я хочу, щоб він ___ .","options":["прийшов","прийти"],"correctIndex":0,"explanation":"Different subjects = past tense after щоб."},{"question":"___ буде час, зателефоную.","options":["Якщо","Якби"],"correctIndex":0,"explanation":"Real future condition."},{"question":"Він не прийшов ___ хвороби.","options":["через","завдяки"],"correctIndex":0,"explanation":"Negative cause = через."},{"question":"Чекай, ___ він не зателефонує.","options":["поки","коли"],"correctIndex":0,"explanation":"Until = поки не."},{"question":"___ погода була погана, ми пішли.","options":["Хоча","Тому що"],"correctIndex":0,"explanation":"Concessive = although."}];
     const sortData = {};
-    const vocabData = [{"uk":"контрольна робота","translit":"","en":"test, assessment","note":""},{"uk":"оцінювання","translit":"","en":"assessment","note":""},{"uk":"бал","translit":"","en":"point, score","note":""},{"uk":"результат","translit":"","en":"result","note":""},{"uk":"відповідь","translit":"","en":"answer","note":""},{"uk":"перевірити","translit":"","en":"to check","note":""},{"uk":"покращити","translit":"","en":"to improve","note":""}];
+    const vocabData = [{"uk":"контрольна робота","translit":"","en":"test, assessment","note":"f"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -32,7 +32,7 @@ export async function renderHtml(
   ctx: RenderContext
 ): Promise<string> {
   const template = await getTemplate();
-  const { frontmatter, sections, activities, vocabulary } = parsed;
+  const { frontmatter, sections, activities, vocabulary, reviewVocabulary } = parsed;
 
   // Find specific activity types
   const matchActivity = activities.find(a => a.type === 'match-up');
@@ -59,6 +59,7 @@ export async function renderHtml(
     quizActivity,
     sortActivity,
     vocabulary,
+    reviewVocabulary,
     sections,
   });
 
@@ -91,11 +92,12 @@ interface ContentOptions {
   quizActivity?: Activity;
   sortActivity?: Activity;
   vocabulary: VocabWord[];
+  reviewVocabulary: VocabWord[];
   sections: Section[];
 }
 
 function renderMainContent(options: ContentOptions): string {
-  const { parsed, matchActivity, quizActivity, sortActivity, vocabulary, sections } = options;
+  const { parsed, matchActivity, quizActivity, sortActivity, vocabulary, reviewVocabulary, sections } = options;
   const { frontmatter } = parsed;
 
   // Determine first activity for navigation
@@ -109,8 +111,8 @@ function renderMainContent(options: ContentOptions): string {
   const quizSection = quizActivity ? renderQuizSection(quizActivity, sortActivity ? 'sort' : 'vocab') : '';
   const sortSection = sortActivity ? renderSortSection(sortActivity) : '';
 
-  // Render vocabulary section
-  const vocabSection = renderVocabSection(vocabulary);
+  // Render vocabulary section (includes both new and review)
+  const vocabSection = renderVocabSection(vocabulary, reviewVocabulary);
 
   return `
     ${lessonSection}
@@ -219,7 +221,7 @@ function renderSortSection(activity: Activity): string {
     </div></section>`;
 }
 
-function renderVocabSection(vocabulary: VocabWord[]): string {
+function renderVocabSection(vocabulary: VocabWord[], reviewVocabulary: VocabWord[] = []): string {
   // Render vocabulary as a styled table (book-style)
   const hasTranslit = vocabulary.some(v => v.translit);
   const hasIpa = vocabulary.some(v => v.ipa);
@@ -243,10 +245,33 @@ function renderVocabSection(vocabulary: VocabWord[]): string {
     ${hasNote ? '<th>Примітка</th>' : ''}
   </tr>`;
 
+  // Render review vocabulary section if there are review words
+  let reviewSection = '';
+  if (reviewVocabulary.length > 0) {
+    const reviewRows = reviewVocabulary.map(v => {
+      return `<tr><td class="vocab-uk">${escapeHtml(v.uk)}</td><td class="vocab-module">Module ${v.firstModule || '?'}</td></tr>`;
+    }).join('');
+
+    reviewSection = `
+      <div class="card review-vocab">
+        <h3>Повторення (${reviewVocabulary.length})</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody>${reviewRows}</tbody>
+          </table>
+        </div>
+      </div>`;
+  }
+
+  const totalWords = vocabulary.length + reviewVocabulary.length;
+  const newLabel = reviewVocabulary.length > 0 ? 'Нові слова' : 'Словник';
+
   return `
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (${vocabulary.length})</h3>
+        <h3>${newLabel} (${vocabulary.length})</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead>${headerRow}</thead>
@@ -254,6 +279,7 @@ function renderVocabSection(vocabulary: VocabWord[]): string {
           </table>
         </div>
       </div>
+      ${reviewSection}
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>

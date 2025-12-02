@@ -262,21 +262,28 @@ Conduct a short meeting:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| компанія | /kompɑˈnʲijɑ/ | company | f |
-| офіс | /ˈofʲis/ | office | m |
-| відділ | /vʲidˈdʲil/ | department | m |
 | філія | /fʲiˈlʲijɑ/ | branch | f |
-| директор | /dɪˈrɛktor/ | director | m |
-| менеджер | /ˈmɛnɛd͡ʒɛr/ | manager | m |
-| колега | /koˈlɛɦɑ/ | colleague | m/f |
-| зустріч | /ˈzustrʲit͡ʃ/ | meeting | f |
-| нарада | /nɑˈrɑdɑ/ | meeting, conference | f |
 | переговори | /pɛrɛɦoˈvorɪ/ | negotiations | pl |
 | контракт | /konˈtrɑkt/ | contract | m |
-| договір | /doɦoˈvʲir/ | agreement | m |
-| звіт | /zvʲit/ | report | m |
 | прибуток | /prɪˈbutok/ | profit | m |
-| зарплата | /zɑrˈplɑtɑ/ | salary | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| компанія | 34 |
+| офіс | 13 |
+| відділ | 72 |
+| директор | 12 |
+| менеджер | 12 |
+| колега | 12 |
+| зустріч | 49 |
+| нарада | 72 |
+| договір | 65 |
+| звіт | 72 |
+| зарплата | 57 |
 
 ---
 

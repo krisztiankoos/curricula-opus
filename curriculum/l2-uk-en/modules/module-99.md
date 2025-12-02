@@ -262,15 +262,22 @@ Include:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| повторення | /povtoˈrɛnʲːɑ/ | review, repetition | n |
 | перевірка | /pɛrɛˈvʲirkɑ/ | check, test | f |
 | засвоєння | /zɑsvoˈjɛnʲːɑ/ | mastery, acquisition | n |
 | практика | /prɑkˈtɪkɑ/ | practice | f |
-| вправа | /ˈvprɑvɑ/ | exercise | f |
-| завдання | /zɑvˈdɑnʲːɑ/ | task, assignment | n |
-| помилка | /poˈmɪlkɑ/ | mistake | f |
 | правильний | /prɑˈvɪlʲnɪj/ | correct | adj |
 | неправильний | /nɛprɑˈvɪlʲnɪj/ | incorrect | adj |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| повторення | 77 |
+| вправа | 77 |
+| завдання | 63 |
+| помилка | 62 |
 
 ---
 

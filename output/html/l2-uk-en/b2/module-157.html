@@ -764,6 +764,7 @@ footer {
 </blockquote>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -846,7 +847,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (10)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -854,9 +855,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">головне речення</td><td class="vocab-en">main clause</td><td class="vocab-note">незалежне</td></tr><tr><td class="vocab-uk">сполучне слово</td><td class="vocab-en">relative pronoun</td><td class="vocab-note">який, де, куди</td></tr><tr><td class="vocab-uk">підпорядкування</td><td class="vocab-en">subordination</td><td class="vocab-note">залежність</td></tr><tr><td class="vocab-uk">послідовний</td><td class="vocab-en">sequential</td><td class="vocab-note">один за одним</td></tr><tr><td class="vocab-uk">паралельний</td><td class="vocab-en">parallel</td><td class="vocab-note">на одному рівні</td></tr><tr><td class="vocab-uk">однорідний</td><td class="vocab-en">homogeneous</td><td class="vocab-note">однотипний</td></tr><tr><td class="vocab-uk">означальний</td><td class="vocab-en">attributive</td><td class="vocab-note">який? котрий?</td></tr><tr><td class="vocab-uk">з&#039;ясувальний</td><td class="vocab-en">object (clause)</td><td class="vocab-note">що? про що?</td></tr><tr><td class="vocab-uk">стик</td><td class="vocab-en">junction</td><td class="vocab-note">місце з&#039;єднання</td></tr><tr><td class="vocab-uk">зміщення</td><td class="vocab-en">shift</td><td class="vocab-note">зміна порядку</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (2)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">підрядне речення</td><td class="vocab-module">Module 138</td></tr><tr><td class="vocab-uk">сполучник</td><td class="vocab-module">Module 138</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -870,7 +882,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Я знаю, що він прийде, коли закінчить роботу.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":0,"explanation":"Друге підрядне залежить від першого → послідовне"},{"question":"«Я знаю, що він прийде і куди він піде.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":1,"explanation":"Обидва підрядні залежать від головного → паралельне"},{"question":"«Я знаю, що він розумний, що він чесний.»","options":["Послідовне","Паралельне","Однорідне"],"correctIndex":2,"explanation":"Однотипні підрядні з тим самим сполучником → однорідне"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"головне речення","translit":"","en":"main clause","note":"незалежне"},{"uk":"сполучне слово","translit":"","en":"relative pronoun","note":"який, де, куди"},{"uk":"підпорядкування","translit":"","en":"subordination","note":"залежність"},{"uk":"послідовний","translit":"","en":"sequential","note":"один за одним"},{"uk":"паралельний","translit":"","en":"parallel","note":"на одному рівні"},{"uk":"однорідний","translit":"","en":"homogeneous","note":"однотипний"},{"uk":"означальний","translit":"","en":"attributive","note":"який? котрий?"},{"uk":"з'ясувальний","translit":"","en":"object (clause)","note":"що? про що?"},{"uk":"стик","translit":"","en":"junction","note":"місце з'єднання"},{"uk":"зміщення","translit":"","en":"shift","note":"зміна порядку"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

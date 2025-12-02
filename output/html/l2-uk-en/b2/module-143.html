@@ -867,6 +867,7 @@ footer {
 <p><strong>Приклад:</strong><br />
 «Засідання комісії <strong>відкрито</strong> 15 березня 2024 року о 14:00. Присутні: голова комісії та 5 членів. <strong>Розглянуто</strong> питання про проведення конференції. <strong>Заслухано</strong> пропозицію оргкомітету. <strong>Ухвалено</strong> рішення про проведення конференції 20 квітня. <strong>Доручено</strong> секретарю розіслати запрошення. Засідання <strong>закрито</strong> о 15:30.»</p>
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -942,7 +943,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (10)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -950,9 +951,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">безособовий</td><td class="vocab-en">impersonal</td><td class="vocab-note">граматичний термін</td></tr><tr><td class="vocab-uk">затверджено</td><td class="vocab-en">approved</td><td class="vocab-note">офіційна формула</td></tr><tr><td class="vocab-uk">погоджено</td><td class="vocab-en">agreed</td><td class="vocab-note">офіційна формула</td></tr><tr><td class="vocab-uk">відхилено</td><td class="vocab-en">rejected</td><td class="vocab-note">офіційна формула</td></tr><tr><td class="vocab-uk">розглянуто</td><td class="vocab-en">considered</td><td class="vocab-note">офіційна формула</td></tr><tr><td class="vocab-uk">доручено</td><td class="vocab-en">entrusted, assigned</td><td class="vocab-note">для завдань</td></tr><tr><td class="vocab-uk">заслухано</td><td class="vocab-en">heard (report)</td><td class="vocab-note">для доповідей</td></tr><tr><td class="vocab-uk">протокол</td><td class="vocab-en">minutes, protocol</td><td class="vocab-note">документ</td></tr><tr><td class="vocab-uk">порядок денний</td><td class="vocab-en">agenda</td><td class="vocab-note">список питань</td></tr><tr><td class="vocab-uk">засідання</td><td class="vocab-en">meeting, session</td><td class="vocab-note">збори</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (2)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">виконано</td><td class="vocab-module">Module 120</td></tr><tr><td class="vocab-uk">ухвалено</td><td class="vocab-module">Module 120</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -966,7 +978,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Книга написана.» — як буде з -но/-то?","options":["Книга написано.","Книгу написано.","Книги написано."],"correctIndex":1,"explanation":"Підмет → знахідний відмінок: книга → книгу"},{"question":"«Робота виконана.» — як буде з -но/-то?","options":["Роботу виконано.","Роботи виконано.","Робота виконано."],"correctIndex":0,"explanation":"робота → роботу (знахідний)"},{"question":"«Договір підписаний.» — як буде з -но/-то?","options":["Договору підписано.","Договір підписано.","Договори підписано."],"correctIndex":1,"explanation":"договір → договір (знахідний = називний для чол. роду неживого)"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"безособовий","translit":"","en":"impersonal","note":"граматичний термін"},{"uk":"затверджено","translit":"","en":"approved","note":"офіційна формула"},{"uk":"погоджено","translit":"","en":"agreed","note":"офіційна формула"},{"uk":"відхилено","translit":"","en":"rejected","note":"офіційна формула"},{"uk":"розглянуто","translit":"","en":"considered","note":"офіційна формула"},{"uk":"доручено","translit":"","en":"entrusted, assigned","note":"для завдань"},{"uk":"заслухано","translit":"","en":"heard (report)","note":"для доповідей"},{"uk":"протокол","translit":"","en":"minutes, protocol","note":"документ"},{"uk":"порядок денний","translit":"","en":"agenda","note":"список питань"},{"uk":"засідання","translit":"","en":"meeting, session","note":"збори"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

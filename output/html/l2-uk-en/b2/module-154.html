@@ -830,6 +830,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer"><strong>бувалий</strong></div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -920,7 +921,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (12)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -928,9 +929,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">зів&#039;ялий</td><td class="vocab-en">wilted</td><td class="vocab-note">adj, від зів&#039;янути</td></tr><tr><td class="vocab-uk">посивілий</td><td class="vocab-en">gray-haired</td><td class="vocab-note">adj, від посивіти</td></tr><tr><td class="vocab-uk">змарнілий</td><td class="vocab-en">emaciated</td><td class="vocab-note">adj, від змарніти</td></tr><tr><td class="vocab-uk">застарілий</td><td class="vocab-en">outdated</td><td class="vocab-note">adj, від застаріти</td></tr><tr><td class="vocab-uk">похилий</td><td class="vocab-en">tilted; elderly</td><td class="vocab-note">adj, «похилого віку»</td></tr><tr><td class="vocab-uk">колишній</td><td class="vocab-en">former</td><td class="vocab-note">adj, не «бувший»!</td></tr><tr><td class="vocab-uk">бувалий</td><td class="vocab-en">experienced</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">зрілий</td><td class="vocab-en">mature, ripe</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">спілий</td><td class="vocab-en">ripe</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">запеклий</td><td class="vocab-en">fierce</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">перехідний</td><td class="vocab-en">transitive</td><td class="vocab-note">про дієслова</td></tr><tr><td class="vocab-uk">неперехідний</td><td class="vocab-en">intransitive</td><td class="vocab-note">про дієслова</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (1)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">минулий</td><td class="vocab-module">Module 21</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -944,7 +956,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«зів'ялий» — чи існує ця форма?","options":["Так, це правильна форма","Ні, це русизм"],"correctIndex":0,"explanation":"Від неперехідного дієслова зміни стану → існує"},{"question":"«прочиталий» — чи існує ця форма?","options":["Так, це правильна форма","Ні, така форма не вживається"],"correctIndex":1,"explanation":"Від перехідного дієслова → не існує"},{"question":"«минулий» — це...","options":["Прикметник (правильно)","Русизм"],"correctIndex":0,"explanation":"«Минулий» — усталений прикметник"},{"question":"«минувший» — це...","options":["Правильна українська форма","Русизм"],"correctIndex":1,"explanation":"«Минувший» — русизм, правильно: «минулий»"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"зів'ялий","translit":"","en":"wilted","note":"adj, від зів'янути"},{"uk":"посивілий","translit":"","en":"gray-haired","note":"adj, від посивіти"},{"uk":"змарнілий","translit":"","en":"emaciated","note":"adj, від змарніти"},{"uk":"застарілий","translit":"","en":"outdated","note":"adj, від застаріти"},{"uk":"похилий","translit":"","en":"tilted; elderly","note":"adj, «похилого віку»"},{"uk":"колишній","translit":"","en":"former","note":"adj, не «бувший»!"},{"uk":"бувалий","translit":"","en":"experienced","note":"adj"},{"uk":"зрілий","translit":"","en":"mature, ripe","note":"adj"},{"uk":"спілий","translit":"","en":"ripe","note":"adj"},{"uk":"запеклий","translit":"","en":"fierce","note":"adj"},{"uk":"перехідний","translit":"","en":"transitive","note":"про дієслова"},{"uk":"неперехідний","translit":"","en":"intransitive","note":"про дієслова"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -333,18 +333,25 @@ Use по-, від-, роз- to describe departures:
 |------|-----|---------|--------|
 | піти | /pʲiˈtɪ/ | to go, leave | pf |
 | поїхати | /poˈjixɑtɪ/ | to leave (vehicle) | pf |
-| зайти | /zɑjˈtɪ/ | to drop by | pf |
-| заходити | /zɑxoˈdɪtɪ/ | to drop by | impf |
-| заїхати | /zɑˈjixɑtɪ/ | to drive by | pf |
 | заїжджати | /zɑjizˈdʒɑtɪ/ | to drive by | impf |
 | розійтися | /rozijˈtɪsʲɑ/ | to disperse | pf |
 | розходитися | /rozxoˈdɪtɪsʲɑ/ | to disperse | impf |
 | роз'їхатися | /rozˈjixɑtɪsʲɑ/ | to drive apart | pf |
-| відійти | /vʲidijˈtɪ/ | to step away | pf |
-| відходити | /vʲidxoˈdɪtɪ/ | to depart | impf |
-| від'їхати | /vʲidˈjixɑtɪ/ | to drive away | pf |
 | від'їжджати | /vʲidjizˈdʒɑtɪ/ | to drive away | impf |
 | віднести | /vʲidnɛsˈtɪ/ | to take back | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| зайти | 61 |
+| заходити | 61 |
+| заїхати | 61 |
+| відійти | 61 |
+| відходити | 61 |
+| від'їхати | 61 |
 
 ---
 

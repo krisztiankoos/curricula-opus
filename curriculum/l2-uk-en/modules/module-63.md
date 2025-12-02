@@ -362,45 +362,52 @@ Use -ння/-ття nouns:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| читання | /tʃɪˈtɑnʲːɑ/ | reading | noun | n | |
-| писання | /pɪˈsɑnʲːɑ/ | writing | noun | n | |
-| навчання | /nɑvˈtʃɑnʲːɑ/ | learning, education | noun | n | |
-| слухання | /sluˈxɑnʲːɑ/ | listening | noun | n | |
-| говоріння | /ɦovoˈrʲinʲːɑ/ | speaking | noun | n | |
-| життя | /ʒɪtʲˈtʲɑ/ | life | noun | n | |
-| буття | /butʲˈtʲɑ/ | being, existence | noun | n | |
-| знання | /ˈznɑnʲːɑ/ | knowledge | noun | n | |
-| питання | /pɪˈtɑnʲːɑ/ | question | noun | n | |
-| завдання | /zɑvˈdɑnʲːɑ/ | task, assignment | noun | n | |
-| можливість | /moʒˈlɪvʲistʲ/ | possibility | noun | f | |
-| новість | /ˈnovʲistʲ/ | news | noun | f | |
-| радість | /ˈrɑdʲistʲ/ | joy | noun | f | |
-| молодість | /ˈmolodʲistʲ/ | youth | noun | f | |
-| старість | /ˈstɑrʲistʲ/ | old age | noun | f | |
-| відповідальність | /vʲidpovʲiˈdɑlʲnʲistʲ/ | responsibility | noun | f | |
-| особливість | /osobˈlɪvʲistʲ/ | peculiarity | noun | f | |
-| вільність | /ˈvʲilʲnʲistʲ/ | freedom | noun | f | |
-| людство | /ˈlʲudstvo/ | humanity | noun | n | |
-| братство | /ˈbrɑtstvo/ | brotherhood | noun | n | |
-| багатство | /bɑˈɦɑtstvo/ | wealth | noun | n | |
-| мистецтво | /mɪsˈtɛtstvo/ | art | noun | n | |
-| суспільство | /susˈpʲilʲstvo/ | society | noun | n | |
-| виробництво | /vɪrobˈnɪtstvo/ | production | noun | n | |
-| господарство | /ɦospoˈdɑrstvo/ | economy, farm | noun | n | |
-| читач | /tʃɪˈtɑtʃ/ | reader | noun | m | |
-| слухач | /sluˈxɑtʃ/ | listener | noun | m | |
-| глядач | /ɦlʲɑˈdɑtʃ/ | viewer | noun | m | |
-| письменник | /pɪsʲˈmɛnːɪk/ | writer | noun | m | |
-| робітник | /roˈbʲitnɪk/ | worker | noun | m | |
-| працівник | /prɑˈtsʲivnɪk/ | employee | noun | m | |
-| мешканець | /mɛʃˈkɑnɛtsʲ/ | resident | noun | m | |
-| початок | /poˈtʃɑtok/ | beginning | noun | m | |
-| кінець | /kʲiˈnɛtsʲ/ | end | noun | m | |
-| подарунок | /podɑˈrunok/ | gift | noun | m | |
-| малюнок | /mɑˈlʲunok/ | drawing | noun | m | |
-| будинок | /buˈdɪnok/ | building, house | noun | m | |
-| записник | /zɑˈpɪsnɪk/ | notebook | noun | m | |
-| молодець | /moloˈdɛtsʲ/ | well done! fine fellow | noun | m | |
+| читання | /tʃɪˈtɑnʲːɑ/ | reading | noun | n |
+| писання | /pɪˈsɑnʲːɑ/ | writing | noun | n |
+| навчання | /nɑvˈtʃɑnʲːɑ/ | learning, education | noun | n |
+| слухання | /sluˈxɑnʲːɑ/ | listening | noun | n |
+| говоріння | /ɦovoˈrʲinʲːɑ/ | speaking | noun | n |
+| життя | /ʒɪtʲˈtʲɑ/ | life | noun | n |
+| буття | /butʲˈtʲɑ/ | being, existence | noun | n |
+| знання | /ˈznɑnʲːɑ/ | knowledge | noun | n |
+| питання | /pɪˈtɑnʲːɑ/ | question | noun | n |
+| завдання | /zɑvˈdɑnʲːɑ/ | task, assignment | noun | n |
+| новість | /ˈnovʲistʲ/ | news | noun | f |
+| молодість | /ˈmolodʲistʲ/ | youth | noun | f |
+| старість | /ˈstɑrʲistʲ/ | old age | noun | f |
+| відповідальність | /vʲidpovʲiˈdɑlʲnʲistʲ/ | responsibility | noun | f |
+| особливість | /osobˈlɪvʲistʲ/ | peculiarity | noun | f |
+| вільність | /ˈvʲilʲnʲistʲ/ | freedom | noun | f |
+| людство | /ˈlʲudstvo/ | humanity | noun | n |
+| братство | /ˈbrɑtstvo/ | brotherhood | noun | n |
+| багатство | /bɑˈɦɑtstvo/ | wealth | noun | n |
+| мистецтво | /mɪsˈtɛtstvo/ | art | noun | n |
+| суспільство | /susˈpʲilʲstvo/ | society | noun | n |
+| виробництво | /vɪrobˈnɪtstvo/ | production | noun | n |
+| господарство | /ɦospoˈdɑrstvo/ | economy, farm | noun | n |
+| читач | /tʃɪˈtɑtʃ/ | reader | noun | m |
+| слухач | /sluˈxɑtʃ/ | listener | noun | m |
+| глядач | /ɦlʲɑˈdɑtʃ/ | viewer | noun | m |
+| робітник | /roˈbʲitnɪk/ | worker | noun | m |
+| працівник | /prɑˈtsʲivnɪk/ | employee | noun | m |
+| мешканець | /mɛʃˈkɑnɛtsʲ/ | resident | noun | m |
+| будинок | /buˈdɪnok/ | building, house | noun | m |
+| записник | /zɑˈpɪsnɪk/ | notebook | noun | m |
+| молодець | /moloˈdɛtsʲ/ | well done! fine fellow | noun | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| можливість | 47 |
+| радість | 3 |
+| письменник | 36 |
+| початок | 16 |
+| кінець | 16 |
+| подарунок | 11 |
+| малюнок | 38 |
 
 ---
 

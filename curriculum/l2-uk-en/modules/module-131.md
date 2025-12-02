@@ -253,9 +253,16 @@ Describe trends using vocabulary:
 | зменшення | /zmɛnˈʃɛnʲːɑ/ | decrease | n |
 | різко | /ˈrʲizko/ | sharply | adv |
 | поступово | /postuˈpovo/ | gradually | adv |
-| значно | /ˈznɑt͡ʃno/ | significantly | adv |
 | удвічі | /udˈvʲit͡ʃi/ | twice | adv |
 | порівняно з | - | compared to | prep |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| значно | 44 |
 
 ---
 

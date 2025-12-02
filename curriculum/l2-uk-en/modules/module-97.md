@@ -322,22 +322,29 @@ Practice stating opinions for and against:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| думка | /ˈdumkɑ/ | opinion, thought | - |
-| погляд | /ˈpoɦlʲɑd/ | view | - |
-| точка зору | /ˈtot͡ʃkɑ ˈzoru/ | point of view | - |
-| вважати | /vvɑˈʒɑtɪ/ | to consider, believe | impf |
 | гадати | /ɦɑˈdɑtɪ/ | to think, suppose | impf |
-| здаватися | /zdɑˈvɑtɪsʲɑ/ | to seem | impf |
-| впевнений | /vpɛvˈnɛnɪj/ | sure, confident | adj |
-| переконаний | /pɛrɛˈkonɑnɪj/ | convinced | adj |
 | безперечно | /bɛzpɛˈrɛt͡ʃno/ | undoubtedly | adv |
-| можливо | /moʒˈlɪvo/ | perhaps, possibly | adv |
 | мабуть | /mɑˈbutʲ/ | probably | adv |
 | ймовірно | /jmoˈvʲirno/ | probably, likely | adv |
 | проте | /proˈtɛ/ | however | conj |
 | однак | /odˈnɑk/ | however | conj |
-| загалом | /zɑˈɦɑlom/ | in general | adv |
-| отже | /ˈotʒɛ/ | so, therefore | conj |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| думка | 58 |
+| погляд | 95 |
+| точка зору | 95 |
+| вважати | 58 |
+| здаватися | 31 |
+| впевнений | 58 |
+| переконаний | 58 |
+| можливо | 46 |
+| загалом | 58 |
+| отже | 58 |
 
 ---
 

@@ -373,23 +373,23 @@ Transform to polite requests:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| якби | /jɑkˈbɪ/ | if (unreal) | conj | - | |
-| б | /b/ | would (after vowel) | part | - | |
-| би | /bɪ/ | would (after consonant) | part | - | |
-| хотів би | /xoˈtʲiv bɪ/ | would like (m) | phrase | - | |
-| хотіла б | /xoˈtʲilɑ b/ | would like (f) | phrase | - | |
-| могли б | /moɦˈlɪ b/ | could (pl/formal) | phrase | - | |
-| мав би | /mɑv bɪ/ | should (m) | phrase | - | |
-| було б | /buˈlo b/ | would be | phrase | - | |
-| гіпотетичний | /ɦʲipotɛˈtɪtʃnɪj/ | hypothetical | adj | - | |
-| уявний | /ujɑvˈnɪj/ | imaginary, hypothetical | adj | - | |
-| можливість | /moʒˈlɪvʲistʲ/ | possibility | noun | f | |
-| мрія | /ˈmrʲijɑ/ | dream | noun | f | |
-| мріяти | /mrʲiˈjɑtɪ/ | to dream | verb | - | |
-| уявляти | /ujɑvˈlʲɑtɪ/ | to imagine (impf) | verb | - | |
-| уявити | /ujɑˈvɪtɪ/ | to imagine (perf) | verb | - | |
-| шкода | /ˈʃkodɑ/ | pity, shame | noun | f | |
-| на жаль | /nɑ ʒɑlʲ/ | unfortunately | phrase | - | |
+| якби | /jɑkˈbɪ/ | if (unreal) | conj | - |
+| б | /b/ | would (after vowel) | part | - |
+| би | /bɪ/ | would (after consonant) | part | - |
+| хотів би | /xoˈtʲiv bɪ/ | would like (m) | phrase | - |
+| хотіла б | /xoˈtʲilɑ b/ | would like (f) | phrase | - |
+| могли б | /moɦˈlɪ b/ | could (pl/formal) | phrase | - |
+| мав би | /mɑv bɪ/ | should (m) | phrase | - |
+| було б | /buˈlo b/ | would be | phrase | - |
+| гіпотетичний | /ɦʲipotɛˈtɪtʃnɪj/ | hypothetical | adj | - |
+| уявний | /ujɑvˈnɪj/ | imaginary, hypothetical | adj | - |
+| можливість | /moʒˈlɪvʲistʲ/ | possibility | noun | f |
+| мрія | /ˈmrʲijɑ/ | dream | noun | f |
+| мріяти | /mrʲiˈjɑtɪ/ | to dream | verb | - |
+| уявляти | /ujɑvˈlʲɑtɪ/ | to imagine (impf) | verb | - |
+| уявити | /ujɑˈvɪtɪ/ | to imagine (perf) | verb | - |
+| шкода | /ˈʃkodɑ/ | pity, shame | noun | f |
+| на жаль | /nɑ ʒɑlʲ/ | unfortunately | phrase | - |
 
 ---
 

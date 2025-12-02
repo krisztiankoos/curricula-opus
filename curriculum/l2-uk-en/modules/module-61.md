@@ -413,24 +413,18 @@ Practice giving directions using prefixed verbs:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| прийти | /prɪjˈtɪ/ | to arrive (on foot) | verb | - | pf |
-| приїхати | /prɪˈjixɑtɪ/ | to arrive (by transport) | verb | - | pf |
 | прилетіти | /prɪlɛˈtʲitɪ/ | to arrive (by plane) | verb | - | pf |
-| принести | /prɪnɛsˈtɪ/ | to bring (carrying) | verb | - | pf |
 | привезти | /prɪvɛzˈtɪ/ | to bring (by transport) | verb | - | pf |
 | приходити | /prɪxoˈdɪtɪ/ | to come (habitually) | verb | - | impf |
-| вийти | /ˈvɪjtɪ/ | to go out, exit | verb | - | pf |
 | виїхати | /ˈvɪjixɑtɪ/ | to drive out, leave | verb | - | pf |
 | вилетіти | /vɪlɛˈtʲitɪ/ | to fly out, depart | verb | - | pf |
 | винести | /vɪnɛsˈtɪ/ | to carry out | verb | - | pf |
-| виходити | /vɪxoˈdɪtɪ/ | to exit (habitually) | verb | - | impf |
 | увійти | /uˈvʲijtɪ/ | to enter | verb | - | pf |
 | в'їхати | /ˈvjixɑtɪ/ | to drive into | verb | - | pf |
 | входити | /vxoˈdɪtɪ/ | to enter (habitually) | verb | - | impf |
 | зайти | /zɑjˈtɪ/ | to drop by | verb | - | pf |
 | заїхати | /zɑˈjixɑtɪ/ | to stop by (driving) | verb | - | pf |
 | заходити | /zɑxoˈdɪtɪ/ | to drop by (habitually) | verb | - | impf |
-| перейти | /pɛrɛjˈtɪ/ | to cross (on foot) | verb | - | pf |
 | переїхати | /pɛrɛˈjixɑtɪ/ | to move (residence) | verb | - | pf |
 | переходити | /pɛrɛxoˈdɪtɪ/ | to cross (habitually) | verb | - | impf |
 | відійти | /vʲidʲijˈtɪ/ | to step away, leave | verb | - | pf |
@@ -440,21 +434,34 @@ Practice giving directions using prefixed verbs:
 | доїхати | /doˈjixɑtɪ/ | to reach (by transport) | verb | - | pf |
 | обійти | /obʲijˈtɪ/ | to go around | verb | - | pf |
 | об'їхати | /obˈjixɑtɪ/ | to drive around | verb | - | pf |
-| вхід | /vxʲid/ | entrance | noun | m | |
-| вихід | /ˈvɪxʲid/ | exit | noun | m | |
-| прихід | /ˈprɪxʲid/ | arrival, coming | noun | m | |
-| відхід | /ˈvʲidxʲid/ | departure | noun | m | |
-| перехід | /ˈpɛrɛxʲid/ | crossing, transition | noun | m | |
-| прибуття | /prɪˈbutʲːɑ/ | arrival | noun | n | formal |
+| прихід | /ˈprɪxʲid/ | arrival, coming | noun | m |
+| відхід | /ˈvʲidxʲid/ | departure | noun | m |
+| перехід | /ˈpɛrɛxʲid/ | crossing, transition | noun | m |
 | відбуття | /vʲidˈbutʲːɑ/ | departure | noun | n | formal |
-| переїзд | /pɛrɛˈjizd/ | move (relocation) | noun | m | |
-| заїзд | /ˈzɑjizd/ | entrance (for vehicles) | noun | m | |
-| виїзд | /ˈvɪjizd/ | exit (for vehicles) | noun | m | |
-| напрямок | /nɑˈprʲɑmok/ | direction | noun | m | |
-| затор | /zɑˈtor/ | traffic jam | noun | m | |
-| світлофор | /svʲitloˈfor/ | traffic light | noun | m | |
-| перехрестя | /pɛrɛˈxrɛstʲɑ/ | intersection | noun | n | |
-| калюжа | /kɑˈlʲuʒɑ/ | puddle | noun | f | |
+| переїзд | /pɛrɛˈjizd/ | move (relocation) | noun | m |
+| заїзд | /ˈzɑjizd/ | entrance (for vehicles) | noun | m |
+| виїзд | /ˈvɪjizd/ | exit (for vehicles) | noun | m |
+| напрямок | /nɑˈprʲɑmok/ | direction | noun | m |
+| затор | /zɑˈtor/ | traffic jam | noun | m |
+| світлофор | /svʲitloˈfor/ | traffic light | noun | m |
+| перехрестя | /pɛrɛˈxrɛstʲɑ/ | intersection | noun | n |
+| калюжа | /kɑˈlʲuʒɑ/ | puddle | noun | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| прийти | 42 |
+| приїхати | 42 |
+| принести | 18 |
+| вийти | 42 |
+| виходити | 25 |
+| перейти | 15 |
+| вхід | 15 |
+| вихід | 15 |
+| прибуття | 55 |
 
 ---
 

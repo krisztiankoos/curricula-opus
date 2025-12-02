@@ -689,6 +689,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -766,7 +767,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (8)</h3>
+        <h3>Нові слова (4)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -774,9 +775,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-ipa"></td><td class="vocab-en">test, assessment</td></tr><tr><td class="vocab-uk">оцінка</td><td class="vocab-ipa">/oˈt͡sʲinkɑ/</td><td class="vocab-en">grade, assessment</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-ipa">/bɑl/</td><td class="vocab-en">point</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td></tr><tr><td class="vocab-uk">рівень</td><td class="vocab-ipa">/ˈrʲivɛnʲ/</td><td class="vocab-en">level</td></tr><tr><td class="vocab-uk">компетенція</td><td class="vocab-ipa">/kompɛˈtɛnt͡sʲijɑ/</td><td class="vocab-en">competency</td></tr><tr><td class="vocab-uk">готовність</td><td class="vocab-ipa">/ɦoˈtownʲistʲ/</td><td class="vocab-en">readiness</td></tr><tr><td class="vocab-uk">досягнення</td><td class="vocab-ipa">/dosʲɑɦˈnɛnʲːɑ/</td><td class="vocab-en">achievement</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">рівень</td><td class="vocab-ipa">/ˈrʲivɛnʲ/</td><td class="vocab-en">level</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">компетенція</td><td class="vocab-ipa">/kompɛˈtɛnt͡sʲijɑ/</td><td class="vocab-en">competency</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">готовність</td><td class="vocab-ipa">/ɦoˈtownʲistʲ/</td><td class="vocab-en">readiness</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">досягнення</td><td class="vocab-ipa">/dosʲɑɦˈnɛnʲːɑ/</td><td class="vocab-en">achievement</td><td class="vocab-note">n</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (4)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-module">Module 115</td></tr><tr><td class="vocab-uk">оцінка</td><td class="vocab-module">Module 75</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-module">Module 46</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -790,7 +802,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Вчора я читав книгу» — вид:","options":["недоконаний","доконаний"],"correctIndex":0,"explanation":"Process, no completion stated."},{"question":"«Він прийшов» — значення:","options":["arrived on foot","arrived by vehicle"],"correctIndex":0,"explanation":"прийти = arrive on foot."},{"question":"«Щоб» вводить:","options":["мету або прохання","твердження"],"correctIndex":0,"explanation":"Purpose or command clause."},{"question":"«Він сказав, що...» — це:","options":["непряме твердження","непряме питання"],"correctIndex":0,"explanation":"Statement in reported speech."},{"question":"«Написано» — це:","options":["коротка форма","повна форма"],"correctIndex":0,"explanation":"Short passive form."},{"question":"«Приймати рішення» — правильно?","options":["так","ні"],"correctIndex":0,"explanation":"Correct collocation."}];
     const sortData = {};
-    const vocabData = [{"uk":"контрольна робота","translit":"","en":"test, assessment","note":""},{"uk":"оцінка","translit":"","en":"grade, assessment","note":""},{"uk":"бал","translit":"","en":"point","note":""},{"uk":"результат","translit":"","en":"result","note":""},{"uk":"рівень","translit":"","en":"level","note":""},{"uk":"компетенція","translit":"","en":"competency","note":""},{"uk":"готовність","translit":"","en":"readiness","note":""},{"uk":"досягнення","translit":"","en":"achievement","note":""}];
+    const vocabData = [{"uk":"рівень","translit":"","en":"level","note":"m"},{"uk":"компетенція","translit":"","en":"competency","note":"f"},{"uk":"готовність","translit":"","en":"readiness","note":"f"},{"uk":"досягнення","translit":"","en":"achievement","note":"n"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -291,20 +291,27 @@ Use both aspects to describe:
 
 | Word | IPA | English | Aspect | Pair |
 |------|-----|---------|--------|------|
-| доконаний | /dokoˈnɑnɪj/ | perfective | - | - |
-| недоконаний | /nɛdokoˈnɑnɪj/ | imperfective | - | - |
-| вид | /wɪd/ | aspect (gram.) | - | - |
 | тривалість | /trɪˈvɑlʲistʲ/ | duration | - | - |
-| результат | /rɛzulʲˈtɑt/ | result | - | - |
 | процес | /proˈt͡sɛs/ | process | - | - |
-| повторення | /povtoˈrɛnʲːɑ/ | repetition | - | - |
 | завершення | /zɑvɛrˈʃɛnʲːɑ/ | completion | - | - |
-| раптом | /ˈrɑptom/ | suddenly | - | - |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | - | - |
-| зазвичай | /zɑˈzvɪt͡ʃɑj/ | usually | - | - |
 | одного разу | /odnoˈɦo ˈrɑzu/ | once (upon a time) | - | - |
 | весь час | /wɛsʲ t͡ʃɑs/ | all the time | - | - |
 | за годину | /zɑ ɦoˈdɪnu/ | in an hour | - | - |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| доконаний | 41 |
+| недоконаний | 41 |
+| вид | 41 |
+| результат | 46 |
+| повторення | 77 |
+| раптом | 43 |
+| нарешті | 43 |
+| зазвичай | 25 |
 
 ---
 

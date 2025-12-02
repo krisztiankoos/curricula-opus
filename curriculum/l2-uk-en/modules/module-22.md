@@ -308,15 +308,16 @@ Describe your plans for the coming days:
 | будемо | /ˈbudɛmɔ/ | we will be | verb | - | ми form |
 | будете | /ˈbudɛtɛ/ | you will be | verb | - | ви form |
 | будуть | /ˈbudutʲ/ | they will be | verb | - | вони form |
-| післязавтра | /pʲislʲɑˈzɑvtrɑ/ | day after tomorrow | adv | - |  |
+| післязавтра | /pʲislʲɑˈzɑvtrɑ/ | day after tomorrow | adv | - |
 | наступний | /nɑˈstupnɪj/ | next | adj | m | наступного тижня |
-| скоро | /ˈskɔrɔ/ | soon | adv | - |  |
-| пізніше | /ˈpʲizʲnʲiʃɛ/ | later | adv | - |  |
+| скоро | /ˈskɔrɔ/ | soon | adv | - |
+| пізніше | /ˈpʲizʲnʲiʃɛ/ | later | adv | - |
 | планувати | /plɑnuˈvɑtɪ/ | to plan | verb | - | планую |
 | збиратися | /zbɪˈrɑtɪsʲɑ/ | to be going to | verb | - | збираюся |
 | прочитати | /prɔtʃɪˈtɑtɪ/ | to read (perf) | verb | - | Simple future: прочитаю |
 | написати | /nɑpɪˈsɑtɪ/ | to write (perf) | verb | - | Simple future: напишу |
 | зробити | /zrɔˈbɪtɪ/ | to do (perf) | verb | - | Simple future: зроблю |
+
 ---
 
 # Future Tense Summary

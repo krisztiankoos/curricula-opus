@@ -839,6 +839,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -896,7 +897,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (15)</h3>
+        <h3>Нові слова (4)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -904,9 +905,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">компанія</td><td class="vocab-ipa">/kompɑˈnʲijɑ/</td><td class="vocab-en">company</td></tr><tr><td class="vocab-uk">офіс</td><td class="vocab-ipa">/ˈofʲis/</td><td class="vocab-en">office</td></tr><tr><td class="vocab-uk">відділ</td><td class="vocab-ipa">/vʲidˈdʲil/</td><td class="vocab-en">department</td></tr><tr><td class="vocab-uk">філія</td><td class="vocab-ipa">/fʲiˈlʲijɑ/</td><td class="vocab-en">branch</td></tr><tr><td class="vocab-uk">директор</td><td class="vocab-ipa">/dɪˈrɛktor/</td><td class="vocab-en">director</td></tr><tr><td class="vocab-uk">менеджер</td><td class="vocab-ipa">/ˈmɛnɛd͡ʒɛr/</td><td class="vocab-en">manager</td></tr><tr><td class="vocab-uk">колега</td><td class="vocab-ipa">/koˈlɛɦɑ/</td><td class="vocab-en">colleague</td></tr><tr><td class="vocab-uk">зустріч</td><td class="vocab-ipa">/ˈzustrʲit͡ʃ/</td><td class="vocab-en">meeting</td></tr><tr><td class="vocab-uk">нарада</td><td class="vocab-ipa">/nɑˈrɑdɑ/</td><td class="vocab-en">meeting, conference</td></tr><tr><td class="vocab-uk">переговори</td><td class="vocab-ipa">/pɛrɛɦoˈvorɪ/</td><td class="vocab-en">negotiations</td></tr><tr><td class="vocab-uk">контракт</td><td class="vocab-ipa">/konˈtrɑkt/</td><td class="vocab-en">contract</td></tr><tr><td class="vocab-uk">договір</td><td class="vocab-ipa">/doɦoˈvʲir/</td><td class="vocab-en">agreement</td></tr><tr><td class="vocab-uk">звіт</td><td class="vocab-ipa">/zvʲit/</td><td class="vocab-en">report</td></tr><tr><td class="vocab-uk">прибуток</td><td class="vocab-ipa">/prɪˈbutok/</td><td class="vocab-en">profit</td></tr><tr><td class="vocab-uk">зарплата</td><td class="vocab-ipa">/zɑrˈplɑtɑ/</td><td class="vocab-en">salary</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">філія</td><td class="vocab-ipa">/fʲiˈlʲijɑ/</td><td class="vocab-en">branch</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">переговори</td><td class="vocab-ipa">/pɛrɛɦoˈvorɪ/</td><td class="vocab-en">negotiations</td><td class="vocab-note">pl</td></tr><tr><td class="vocab-uk">контракт</td><td class="vocab-ipa">/konˈtrɑkt/</td><td class="vocab-en">contract</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">прибуток</td><td class="vocab-ipa">/prɪˈbutok/</td><td class="vocab-en">profit</td><td class="vocab-note">m</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (11)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">компанія</td><td class="vocab-module">Module 34</td></tr><tr><td class="vocab-uk">офіс</td><td class="vocab-module">Module 13</td></tr><tr><td class="vocab-uk">відділ</td><td class="vocab-module">Module 72</td></tr><tr><td class="vocab-uk">директор</td><td class="vocab-module">Module 12</td></tr><tr><td class="vocab-uk">менеджер</td><td class="vocab-module">Module 12</td></tr><tr><td class="vocab-uk">колега</td><td class="vocab-module">Module 12</td></tr><tr><td class="vocab-uk">зустріч</td><td class="vocab-module">Module 49</td></tr><tr><td class="vocab-uk">нарада</td><td class="vocab-module">Module 72</td></tr><tr><td class="vocab-uk">договір</td><td class="vocab-module">Module 65</td></tr><tr><td class="vocab-uk">звіт</td><td class="vocab-module">Module 72</td></tr><tr><td class="vocab-uk">зарплата</td><td class="vocab-module">Module 57</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -920,7 +932,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Місце, де працюють:","options":["офіс","контракт"],"correctIndex":0,"explanation":"Office is the workplace."},{"question":"Документ про співпрацю:","options":["договір","звіт"],"correctIndex":0,"explanation":"Agreement/contract for cooperation."},{"question":"Гроші, які платять за роботу:","options":["зарплата","прибуток"],"correctIndex":0,"explanation":"Salary is payment for work."},{"question":"Зустріч для обговорення:","options":["нарада","контракт"],"correctIndex":0,"explanation":"Meeting for discussion."},{"question":"Дохід мінус витрати:","options":["прибуток","податок"],"correctIndex":0,"explanation":"Profit = revenue - expenses."},{"question":"Закінчити до певної дати:","options":["дотримуватися дедлайну","подати звіт"],"correctIndex":0,"explanation":"Meeting a deadline."}];
     const sortData = {};
-    const vocabData = [{"uk":"компанія","translit":"","en":"company","note":""},{"uk":"офіс","translit":"","en":"office","note":""},{"uk":"відділ","translit":"","en":"department","note":""},{"uk":"філія","translit":"","en":"branch","note":""},{"uk":"директор","translit":"","en":"director","note":""},{"uk":"менеджер","translit":"","en":"manager","note":""},{"uk":"колега","translit":"","en":"colleague","note":""},{"uk":"зустріч","translit":"","en":"meeting","note":""},{"uk":"нарада","translit":"","en":"meeting, conference","note":""},{"uk":"переговори","translit":"","en":"negotiations","note":""},{"uk":"контракт","translit":"","en":"contract","note":""},{"uk":"договір","translit":"","en":"agreement","note":""},{"uk":"звіт","translit":"","en":"report","note":""},{"uk":"прибуток","translit":"","en":"profit","note":""},{"uk":"зарплата","translit":"","en":"salary","note":""}];
+    const vocabData = [{"uk":"філія","translit":"","en":"branch","note":"f"},{"uk":"переговори","translit":"","en":"negotiations","note":"pl"},{"uk":"контракт","translit":"","en":"contract","note":"m"},{"uk":"прибуток","translit":"","en":"profit","note":"m"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

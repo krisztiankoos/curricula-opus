@@ -367,19 +367,19 @@ Create mini-dialogues:
 | виявитися | /vɪjɑˈvɪtɪsʲɑ/ | to turn out | verb | - | + instr |
 | вважатися | /vvɑˈʒɑtɪsʲɑ/ | to be considered | verb | - | + instr |
 | служити | /sluˈʒɪtɪ/ | to serve | verb | - | + instr |
-| інженер | /inʒɛˈnɛr/ | engineer | noun | m | |
-| програміст | /proɦrɑˈmʲist/ | programmer | noun | m | |
-| журналіст | /ʒurnɑˈlʲist/ | journalist | noun | m | |
-| юрист | /juˈrɪst/ | lawyer | noun | m | |
-| бухгалтер | /buxˈɦɑltɛr/ | accountant | noun | m | |
-| пілот | /pʲiˈlot/ | pilot | noun | m | |
-| музикант | /muzɪˈkɑnt/ | musician | noun | m | |
-| художник | /xuˈdoʒnɪk/ | artist | noun | m | |
-| письменник | /pɪsʲˈmɛnnɪk/ | writer | noun | m | |
-| підприємець | /pʲidprɪˈjɛmɛtsʲ/ | entrepreneur | noun | m | |
-| спеціаліст | /spɛtsʲiɑˈlʲist/ | specialist | noun | m | |
-| експерт | /ɛksˈpɛrt/ | expert | noun | m | |
-| професіонал | /profɛsʲioˈnɑl/ | professional | noun | m | |
+| інженер | /inʒɛˈnɛr/ | engineer | noun | m |
+| програміст | /proɦrɑˈmʲist/ | programmer | noun | m |
+| журналіст | /ʒurnɑˈlʲist/ | journalist | noun | m |
+| юрист | /juˈrɪst/ | lawyer | noun | m |
+| бухгалтер | /buxˈɦɑltɛr/ | accountant | noun | m |
+| пілот | /pʲiˈlot/ | pilot | noun | m |
+| музикант | /muzɪˈkɑnt/ | musician | noun | m |
+| художник | /xuˈdoʒnɪk/ | artist | noun | m |
+| письменник | /pɪsʲˈmɛnnɪk/ | writer | noun | m |
+| підприємець | /pʲidprɪˈjɛmɛtsʲ/ | entrepreneur | noun | m |
+| спеціаліст | /spɛtsʲiɑˈlʲist/ | specialist | noun | m |
+| експерт | /ɛksˈpɛrt/ | expert | noun | m |
+| професіонал | /profɛsʲioˈnɑl/ | professional | noun | m |
 
 ---
 

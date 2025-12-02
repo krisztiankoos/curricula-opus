@@ -383,45 +383,52 @@ Discuss environmental issues:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| прогноз погоди | /proɦˈnoz poˈɦodɪ/ | weather forecast | noun | m | |
-| злива | /ˈzlɪvɑ/ | downpour | noun | f | |
-| гроза | /ɦroˈzɑ/ | thunderstorm | noun | f | |
-| блискавка | /blɪsˈkɑvkɑ/ | lightning | noun | f | |
-| грім | /ɦrʲim/ | thunder | noun | m | |
-| град | /ɦrɑd/ | hail | noun | m | |
-| заметіль | /zɑmɛˈtʲilʲ/ | snowstorm | noun | f | |
-| туман | /tuˈmɑn/ | fog | noun | m | |
-| мряка | /ˈmrʲɑkɑ/ | drizzle | noun | f | |
-| буря | /ˈburʲɑ/ | storm | noun | f | |
-| мороз | /moˈroz/ | frost | noun | m | |
-| спека | /ˈspɛkɑ/ | heat | noun | f | |
-| гора | /ɦoˈrɑ/ | mountain | noun | f | |
-| долина | /doˈlɪnɑ/ | valley | noun | f | |
-| рівнина | /rʲivˈnɪnɑ/ | plain | noun | f | |
-| степ | /stɛp/ | steppe | noun | m | |
-| узбережжя | /uzˈbɛrɛʒːɑ/ | coast | noun | n | |
-| острів | /ˈostrʲiv/ | island | noun | m | |
-| озеро | /ˈozɛro/ | lake | noun | n | |
-| болото | /boˈloto/ | swamp | noun | n | |
-| водоспад | /vodosˈpɑd/ | waterfall | noun | m | |
-| дуб | /dub/ | oak | noun | m | |
-| сосна | /sosˈnɑ/ | pine | noun | f | |
-| береза | /bɛˈrɛzɑ/ | birch | noun | f | |
-| соняшник | /soˈnʲɑʃnɪk/ | sunflower | noun | m | |
-| троянда | /troˈjɑndɑ/ | rose | noun | f | |
-| вовк | /vovk/ | wolf | noun | m | |
-| ведмідь | /vɛdˈmʲidʲ/ | bear | noun | m | |
-| лисиця | /lɪˈsɪtsʲɑ/ | fox | noun | f | |
-| білка | /ˈbʲilkɑ/ | squirrel | noun | f | |
-| їжак | /jiˈʒɑk/ | hedgehog | noun | m | |
-| лелека | /lɛˈlɛkɑ/ | stork | noun | m | |
-| сова | /soˈvɑ/ | owl | noun | f | |
-| метелик | /mɛˈtɛlɪk/ | butterfly | noun | m | |
-| бджола | /bdʒoˈlɑ/ | bee | noun | f | |
-| природа | /prɪˈrodɑ/ | nature | noun | f | |
-| забруднення | /zɑbrudˈnɛnʲːɑ/ | pollution | noun | n | |
-| переробка | /pɛrɛˈrobkɑ/ | recycling | noun | f | |
-| заповідник | /zɑpoˈvʲidnɪk/ | nature reserve | noun | m | |
+| прогноз погоди | /proɦˈnoz poˈɦodɪ/ | weather forecast | noun | m |
+| злива | /ˈzlɪvɑ/ | downpour | noun | f |
+| блискавка | /blɪsˈkɑvkɑ/ | lightning | noun | f |
+| грім | /ɦrʲim/ | thunder | noun | m |
+| град | /ɦrɑd/ | hail | noun | m |
+| заметіль | /zɑmɛˈtʲilʲ/ | snowstorm | noun | f |
+| мряка | /ˈmrʲɑkɑ/ | drizzle | noun | f |
+| буря | /ˈburʲɑ/ | storm | noun | f |
+| спека | /ˈspɛkɑ/ | heat | noun | f |
+| гора | /ɦoˈrɑ/ | mountain | noun | f |
+| долина | /doˈlɪnɑ/ | valley | noun | f |
+| рівнина | /rʲivˈnɪnɑ/ | plain | noun | f |
+| степ | /stɛp/ | steppe | noun | m |
+| узбережжя | /uzˈbɛrɛʒːɑ/ | coast | noun | n |
+| острів | /ˈostrʲiv/ | island | noun | m |
+| озеро | /ˈozɛro/ | lake | noun | n |
+| болото | /boˈloto/ | swamp | noun | n |
+| водоспад | /vodosˈpɑd/ | waterfall | noun | m |
+| дуб | /dub/ | oak | noun | m |
+| сосна | /sosˈnɑ/ | pine | noun | f |
+| береза | /bɛˈrɛzɑ/ | birch | noun | f |
+| соняшник | /soˈnʲɑʃnɪk/ | sunflower | noun | m |
+| троянда | /troˈjɑndɑ/ | rose | noun | f |
+| вовк | /vovk/ | wolf | noun | m |
+| ведмідь | /vɛdˈmʲidʲ/ | bear | noun | m |
+| лисиця | /lɪˈsɪtsʲɑ/ | fox | noun | f |
+| білка | /ˈbʲilkɑ/ | squirrel | noun | f |
+| їжак | /jiˈʒɑk/ | hedgehog | noun | m |
+| лелека | /lɛˈlɛkɑ/ | stork | noun | m |
+| сова | /soˈvɑ/ | owl | noun | f |
+| метелик | /mɛˈtɛlɪk/ | butterfly | noun | m |
+| бджола | /bdʒoˈlɑ/ | bee | noun | f |
+| природа | /prɪˈrodɑ/ | nature | noun | f |
+| забруднення | /zɑbrudˈnɛnʲːɑ/ | pollution | noun | n |
+| переробка | /pɛrɛˈrobkɑ/ | recycling | noun | f |
+| заповідник | /zɑpoˈvʲidnɪk/ | nature reserve | noun | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| гроза | 28 |
+| туман | 28 |
+| мороз | 28 |
 
 ---
 

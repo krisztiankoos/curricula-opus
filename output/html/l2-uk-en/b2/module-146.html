@@ -686,7 +686,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (10)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -694,12 +694,13 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">контекст</td><td class="vocab-en">context</td><td class="vocab-note">визначає вибір форми</td></tr><tr><td class="vocab-uk">стиль</td><td class="vocab-en">style</td><td class="vocab-note">офіційний, розмовний...</td></tr><tr><td class="vocab-uk">трансформація</td><td class="vocab-en">transformation</td><td class="vocab-note">перетворення стилю</td></tr><tr><td class="vocab-uk">доречний</td><td class="vocab-en">appropriate</td><td class="vocab-note">відповідний контексту</td></tr><tr><td class="vocab-uk">змішування</td><td class="vocab-en">mixing</td><td class="vocab-note">поєднання різних форм</td></tr><tr><td class="vocab-uk">конвенція</td><td class="vocab-en">convention</td><td class="vocab-note">неписане правило</td></tr><tr><td class="vocab-uk">репортаж</td><td class="vocab-en">report</td><td class="vocab-note">новинний жанр</td></tr><tr><td class="vocab-uk">пресслужба</td><td class="vocab-en">press service</td><td class="vocab-note">інформаційний відділ</td></tr><tr><td class="vocab-uk">констатація</td><td class="vocab-en">statement</td><td class="vocab-note">офіційне твердження</td></tr><tr><td class="vocab-uk">функціональний</td><td class="vocab-en">functional</td><td class="vocab-note">пов&#039;язаний із функцією</td></tr></tbody>
           </table>
         </div>
       </div>
+      
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -710,7 +711,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Засідання відкрито о 10:00.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":1,"explanation":"Офіційний стиль, протокол → -но/-то"},{"question":"«Будинок будується вже два роки.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":2,"explanation":"Процес триває → -ся пасив"},{"question":"«Мені сказали цікаву новину.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":3,"explanation":"Розмовний стиль → 3-я ос. мн."},{"question":"«Книга написана відомим автором.» — яка форма?","options":["Дієприкметник","-но/-то","-ся пасив","3-я особа множини"],"correctIndex":0,"explanation":"Опис, нейтральний стиль → дієприкметник"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"контекст","translit":"","en":"context","note":"визначає вибір форми"},{"uk":"стиль","translit":"","en":"style","note":"офіційний, розмовний..."},{"uk":"трансформація","translit":"","en":"transformation","note":"перетворення стилю"},{"uk":"доречний","translit":"","en":"appropriate","note":"відповідний контексту"},{"uk":"змішування","translit":"","en":"mixing","note":"поєднання різних форм"},{"uk":"конвенція","translit":"","en":"convention","note":"неписане правило"},{"uk":"репортаж","translit":"","en":"report","note":"новинний жанр"},{"uk":"пресслужба","translit":"","en":"press service","note":"інформаційний відділ"},{"uk":"констатація","translit":"","en":"statement","note":"офіційне твердження"},{"uk":"функціональний","translit":"","en":"functional","note":"пов'язаний із функцією"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

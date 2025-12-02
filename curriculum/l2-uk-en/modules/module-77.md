@@ -400,49 +400,56 @@ Give workout advice:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| футбол | /futˈbol/ | football | noun | m | |
-| баскетбол | /bɑskɛtˈbol/ | basketball | noun | m | |
-| волейбол | /volɛjˈbol/ | volleyball | noun | m | |
-| плавання | /ˈplɑvɑnʲːɑ/ | swimming | noun | n | |
-| біг | /bʲiɦ/ | running | noun | m | |
-| бокс | /boks/ | boxing | noun | m | |
-| гімнастика | /ɦʲimˈnɑstɪkɑ/ | gymnastics | noun | f | |
-| команда | /koˈmɑndɑ/ | team | noun | f | |
-| гравець | /ɦrɑˈvɛtsʲ/ | player | noun | m | |
-| тренер | /ˈtrɛnɛr/ | coach | noun | m | |
-| матч | /mɑtʃ/ | match | noun | m | |
-| чемпіонат | /tʃɛmpʲioˈnɑt/ | championship | noun | m | |
-| турнір | /turˈnʲir/ | tournament | noun | m | |
-| спортзал | /sportˈzɑl/ | gym | noun | m | |
-| тренування | /trɛnuˈvɑnʲːɑ/ | training | noun | n | |
-| вправа | /ˈvprɑvɑ/ | exercise | noun | f | |
-| підхід | /pʲidˈxʲid/ | set | noun | m | |
-| повторення | /povtoˈrɛnʲːɑ/ | repetition | noun | n | |
-| розминка | /rozˈmɪnkɑ/ | warm-up | noun | f | |
-| розтяжка | /rozˈtʲɑʒkɑ/ | stretching | noun | f | |
-| гантелі | /ɦɑnˈtɛlʲi/ | dumbbells | noun | pl | |
-| штанга | /ˈʃtɑnɦɑ/ | barbell | noun | f | |
-| килимок | /kɪˈlɪmok/ | mat | noun | m | |
-| йога | /ˈjoɦɑ/ | yoga | noun | f | |
-| кросфіт | /krosˈfʲit/ | crossfit | noun | m | |
+| баскетбол | /bɑskɛtˈbol/ | basketball | noun | m |
+| волейбол | /volɛjˈbol/ | volleyball | noun | m |
+| плавання | /ˈplɑvɑnʲːɑ/ | swimming | noun | n |
+| біг | /bʲiɦ/ | running | noun | m |
+| бокс | /boks/ | boxing | noun | m |
+| гімнастика | /ɦʲimˈnɑstɪkɑ/ | gymnastics | noun | f |
+| команда | /koˈmɑndɑ/ | team | noun | f |
+| гравець | /ɦrɑˈvɛtsʲ/ | player | noun | m |
+| тренер | /ˈtrɛnɛr/ | coach | noun | m |
+| матч | /mɑtʃ/ | match | noun | m |
+| чемпіонат | /tʃɛmpʲioˈnɑt/ | championship | noun | m |
+| турнір | /turˈnʲir/ | tournament | noun | m |
+| спортзал | /sportˈzɑl/ | gym | noun | m |
+| тренування | /trɛnuˈvɑnʲːɑ/ | training | noun | n |
+| вправа | /ˈvprɑvɑ/ | exercise | noun | f |
+| повторення | /povtoˈrɛnʲːɑ/ | repetition | noun | n |
+| розминка | /rozˈmɪnkɑ/ | warm-up | noun | f |
+| розтяжка | /rozˈtʲɑʒkɑ/ | stretching | noun | f |
+| гантелі | /ɦɑnˈtɛlʲi/ | dumbbells | noun | pl |
+| штанга | /ˈʃtɑnɦɑ/ | barbell | noun | f |
+| килимок | /kɪˈlɪmok/ | mat | noun | m |
+| йога | /ˈjoɦɑ/ | yoga | noun | f |
+| кросфіт | /krosˈfʲit/ | crossfit | noun | m |
 | карате | /kɑrɑˈtɛ/ | karate | noun | n | indecl |
-| перемога | /pɛrɛˈmoɦɑ/ | victory | noun | f | |
-| поразка | /poˈrɑzkɑ/ | defeat | noun | f | |
-| рахунок | /rɑˈxunok/ | score | noun | m | |
-| гол | /ɦol/ | goal | noun | m | |
-| медаль | /mɛˈdɑlʲ/ | medal | noun | f | |
-| рекорд | /rɛˈkord/ | record | noun | m | |
-| чемпіон | /tʃɛmpʲiˈon/ | champion | noun | m | |
-| фінал | /fʲiˈnɑl/ | final | noun | m | |
-| витривалість | /vɪtrɪˈvɑlʲistʲ/ | endurance | noun | f | |
-| сила | /ˈsɪlɑ/ | strength | noun | f | |
-| гнучкість | /ɦnutʃˈkʲistʲ/ | flexibility | noun | f | |
+| перемога | /pɛrɛˈmoɦɑ/ | victory | noun | f |
+| поразка | /poˈrɑzkɑ/ | defeat | noun | f |
+| гол | /ɦol/ | goal | noun | m |
+| медаль | /mɛˈdɑlʲ/ | medal | noun | f |
+| рекорд | /rɛˈkord/ | record | noun | m |
+| чемпіон | /tʃɛmpʲiˈon/ | champion | noun | m |
+| фінал | /fʲiˈnɑl/ | final | noun | m |
+| витривалість | /vɪtrɪˈvɑlʲistʲ/ | endurance | noun | f |
+| сила | /ˈsɪlɑ/ | strength | noun | f |
+| гнучкість | /ɦnutʃˈkʲistʲ/ | flexibility | noun | f |
 | тренуватися | /trɛnuˈvɑtɪsʲɑ/ | to train | verb | - | impf |
 | перемагати | /pɛrɛmɑˈɦɑtɪ/ | to win | verb | - | impf |
 | програвати | /proɦrɑˈvɑtɪ/ | to lose | verb | - | impf |
 | змагатися | /zmɑˈɦɑtɪsʲɑ/ | to compete | verb | - | impf |
 | бігати | /ˈbʲiɦɑtɪ/ | to run | verb | - | impf |
 | плавати | /ˈplɑvɑtɪ/ | to swim | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| футбол | 1 |
+| підхід | 66 |
+| рахунок | 18 |
 
 ---
 

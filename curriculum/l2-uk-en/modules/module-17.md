@@ -331,16 +331,16 @@ Answer these questions:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| їжа | /ˈjizʲɑ/ | food | noun | f |  |
-| сніданок | /snʲiˈdɑnɔk/ | breakfast | noun | m |  |
-| обід | /ɔˈbʲid/ | lunch | noun | m |  |
-| вечеря | /vɛˈtʃɛrʲɑ/ | dinner | noun | f |  |
+| їжа | /ˈjizʲɑ/ | food | noun | f |
+| сніданок | /snʲiˈdɑnɔk/ | breakfast | noun | m |
+| обід | /ɔˈbʲid/ | lunch | noun | m |
+| вечеря | /vɛˈtʃɛrʲɑ/ | dinner | noun | f |
 | картопля | /kɑrˈtɔplʲɑ/ | potato | noun | f | Collective, no plural |
-| помідор | /pɔmʲiˈdɔr/ | tomato | noun | m |  |
-| огірок | /ɔˈɦʲirɔk/ | cucumber | noun | m |  |
-| курка | /ˈkurkɑ/ | chicken | noun | f |  |
-| м'ясо | /ˈmjɑsɔ/ | meat | noun | n |  |
-| риба | /ˈrɪbɑ/ | fish | noun | f |  |
+| помідор | /pɔmʲiˈdɔr/ | tomato | noun | m |
+| огірок | /ɔˈɦʲirɔk/ | cucumber | noun | m |
+| курка | /ˈkurkɑ/ | chicken | noun | f |
+| м'ясо | /ˈmjɑsɔ/ | meat | noun | n |
+| риба | /ˈrɪbɑ/ | fish | noun | f |
 | борщ | /bɔrʃtʃ/ | borscht | noun | m | Beet soup |
 | вареники | /vɑˈrɛnɪkɪ/ | dumplings | noun | pl | Singular: вареник |
 | сало | /ˈsɑlɔ/ | pork fat | noun | n | Cured, sliced thin |
@@ -348,6 +348,7 @@ Answer these questions:
 | смачний | /ˈsmɑtʃnɪj/ | tasty | adj | m | смачна (f), смачне (n) |
 | свіжий | /ˈsvʲiʒɪj/ | fresh | adj | m | свіжа (f), свіже (n) |
 | смачного | /smɑtʃˈnɔɦɔ/ | bon appétit | phrase | - | Literally "of tasty" |
+
 ---
 
 # Food Phrases

@@ -709,6 +709,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -798,7 +799,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Нові слова (6)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -806,9 +807,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">який</td><td class="vocab-ipa">/jɑˈkɪj/</td><td class="vocab-en">which, who, that (m)</td></tr><tr><td class="vocab-uk">яка</td><td class="vocab-ipa">/jɑˈkɑ/</td><td class="vocab-en">which, who, that (f)</td></tr><tr><td class="vocab-uk">яке</td><td class="vocab-ipa">/jɑˈkɛ/</td><td class="vocab-en">which, who, that (n)</td></tr><tr><td class="vocab-uk">які</td><td class="vocab-ipa">/jɑˈkʲi/</td><td class="vocab-en">which, who, that (pl)</td></tr><tr><td class="vocab-uk">речення</td><td class="vocab-ipa">/ˈrɛt͡ʃɛnʲːɑ/</td><td class="vocab-en">sentence</td></tr><tr><td class="vocab-uk">складний</td><td class="vocab-ipa">/sklɑdˈnɪj/</td><td class="vocab-en">complex, difficult</td></tr><tr><td class="vocab-uk">простий</td><td class="vocab-ipa">/prosˈtɪj/</td><td class="vocab-en">simple</td></tr><tr><td class="vocab-uk">з&#039;єднувати</td><td class="vocab-ipa">/zjedˈnuvɑtɪ/</td><td class="vocab-en">to connect</td></tr><tr><td class="vocab-uk">з&#039;єднати</td><td class="vocab-ipa">/zjedˈnɑtɪ/</td><td class="vocab-en">to connect</td></tr><tr><td class="vocab-uk">відноситися</td><td class="vocab-ipa">/vʲidnoˈsɪtɪsʲɑ/</td><td class="vocab-en">to relate to</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">речення</td><td class="vocab-ipa">/ˈrɛt͡ʃɛnʲːɑ/</td><td class="vocab-en">sentence</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">складний</td><td class="vocab-ipa">/sklɑdˈnɪj/</td><td class="vocab-en">complex, difficult</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">простий</td><td class="vocab-ipa">/prosˈtɪj/</td><td class="vocab-en">simple</td><td class="vocab-note">adj</td></tr><tr><td class="vocab-uk">з&#039;єднувати</td><td class="vocab-ipa">/zjedˈnuvɑtɪ/</td><td class="vocab-en">to connect</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">з&#039;єднати</td><td class="vocab-ipa">/zjedˈnɑtɪ/</td><td class="vocab-en">to connect</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">відноситися</td><td class="vocab-ipa">/vʲidnoˈsɪtɪsʲɑ/</td><td class="vocab-en">to relate to</td><td class="vocab-note">impf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (4)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">який</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">яка</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">яке</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">які</td><td class="vocab-module">Module 52</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -822,7 +834,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Людина, ___ мені допомогла, була дуже добра.","options":["яка","яку"],"correctIndex":0,"explanation":"\"Яка\" is nominative because it's the subject of \"допомогла.\""},{"question":"Місто, в ___ я живу, невелике.","options":["якому","яке"],"correctIndex":0,"explanation":"Locative case after \"в\" for location."},{"question":"Книги, ___ я прочитав, були цікаві.","options":["які","яких"],"correctIndex":0,"explanation":"\"Які\" is accusative (inanimate plural = nominative form) as object of \"прочитав.\""},{"question":"Чоловік, ___ ми чекаємо, запізнюється.","options":["який","якого"],"correctIndex":1,"explanation":"Genitive case: \"чекати\" + genitive for people."},{"question":"Друзі, з ___ я працюю, дуже професійні.","options":["якими","яких"],"correctIndex":0,"explanation":"Instrumental case after \"з\" (with)."},{"question":"Питання, на ___ я відповів, було складним.","options":["яке","якому"],"correctIndex":0,"explanation":"Accusative case: \"відповідати на\" + accusative."}];
     const sortData = {};
-    const vocabData = [{"uk":"який","translit":"","en":"which, who, that (m)","note":""},{"uk":"яка","translit":"","en":"which, who, that (f)","note":""},{"uk":"яке","translit":"","en":"which, who, that (n)","note":""},{"uk":"які","translit":"","en":"which, who, that (pl)","note":""},{"uk":"речення","translit":"","en":"sentence","note":""},{"uk":"складний","translit":"","en":"complex, difficult","note":""},{"uk":"простий","translit":"","en":"simple","note":""},{"uk":"з'єднувати","translit":"","en":"to connect","note":""},{"uk":"з'єднати","translit":"","en":"to connect","note":""},{"uk":"відноситися","translit":"","en":"to relate to","note":""}];
+    const vocabData = [{"uk":"речення","translit":"","en":"sentence","note":"n"},{"uk":"складний","translit":"","en":"complex, difficult","note":"adj"},{"uk":"простий","translit":"","en":"simple","note":"adj"},{"uk":"з'єднувати","translit":"","en":"to connect","note":"impf"},{"uk":"з'єднати","translit":"","en":"to connect","note":"pf"},{"uk":"відноситися","translit":"","en":"to relate to","note":"impf"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -276,16 +276,23 @@ Talk about:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| який | /jɑˈkɪj/ | which, who, that (m) | m |
-| яка | /jɑˈkɑ/ | which, who, that (f) | f |
-| яке | /jɑˈkɛ/ | which, who, that (n) | n |
-| які | /jɑˈkʲi/ | which, who, that (pl) | pl |
 | речення | /ˈrɛt͡ʃɛnʲːɑ/ | sentence | n |
 | складний | /sklɑdˈnɪj/ | complex, difficult | adj |
 | простий | /prosˈtɪj/ | simple | adj |
 | з'єднувати | /zjedˈnuvɑtɪ/ | to connect | impf |
 | з'єднати | /zjedˈnɑtɪ/ | to connect | pf |
 | відноситися | /vʲidnoˈsɪtɪsʲɑ/ | to relate to | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| який | 7 |
+| яка | 7 |
+| яке | 7 |
+| які | 52 |
 
 ---
 

@@ -291,16 +291,23 @@ Use "якби я був на твоєму місці":
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| якби | /jɑkˈbɪ/ | if (unreal) | conj |
 | б / би | /b/ /bɪ/ | would (conditional particle) | part |
 | нереальний | /nɛrɛˈɑlʲnɪj/ | unreal | adj |
-| гіпотетичний | /ɦʲipotɛˈtɪt͡ʃnɪj/ | hypothetical | adj |
-| уявити | /ujɑˈvɪtɪ/ | to imagine | pf |
-| уявляти | /ujɑvˈlʲɑtɪ/ | to imagine | impf |
-| мріяти | /mrʲiˈjɑtɪ/ | to dream | impf |
 | на твоєму місці | - | in your place | phrase |
-| можливо | /moʒˈlɪvo/ | possibly | adv |
 | неможливо | /nɛmoʒˈlɪvo/ | impossible | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| якби | 47 |
+| гіпотетичний | 47 |
+| уявити | 47 |
+| уявляти | 47 |
+| мріяти | 47 |
+| можливо | 46 |
 
 ---
 

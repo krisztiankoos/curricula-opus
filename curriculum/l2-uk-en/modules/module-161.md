@@ -364,26 +364,33 @@ XVI століття. Запорозька Січ. Десятки тисяч к�
 | Верховна Рада | /wɛrˈxɔwnɑ ˈrɑdɑ/ | Parliament | f |
 | народний депутат | /nɑˈrɔdnɪj dɛpuˈtɑt/ | MP | m |
 | законопроєкт | /zɑkɔnɔprɔˈjɛkt/ | bill, draft law | m |
-| закон | /zɑˈkɔn/ | law | m |
 | ухвалити | /uxˈwɑlɪtɪ/ | to adopt, pass | pf |
 | відхилити | /wʲidxɪˈlɪtɪ/ | to reject | pf |
 | голосування | /ɦɔlɔsuˈwɑnʲːɑ/ | voting | n |
-| голосувати | /ɦɔlɔsuˈwɑtɪ/ | to vote | impf |
 | виборець | /wɪˈbɔrɛt͡sʲ/ | voter | m |
-| вибори | /ˈwɪbɔrɪ/ | elections | pl |
 | фракція | /ˈfrɑkt͡sʲijɑ/ | faction | f |
-| коаліція | /kɔɑˈlʲit͡sʲijɑ/ | coalition | f |
-| опозиція | /ɔpɔˈzɪt͡sʲijɑ/ | opposition | f |
 | накласти вето | /nɑˈklɑstɪ ˈwɛtɔ/ | to veto | pf |
 | указ | /uˈkɑz/ | decree | m |
 | постанова | /pɔstɑˈnɔwɑ/ | resolution | f |
-| призначити | /prɪzˈnɑtʃɪtɪ/ | to appoint | pf |
 | звільнити | /zwʲilʲˈnɪtɪ/ | to dismiss | pf |
 | передвиборча кампанія | /pɛrɛdwɪˈbɔrtʃɑ kɑmˈpɑnʲijɑ/ | election campaign | f |
 | явка | /ˈjɑwkɑ/ | turnout | f |
 | балотуватися | /bɑlɔtuˈwɑtɪsʲɑ/ | to run for office | impf |
-| реформа | /rɛˈfɔrmɑ/ | reform | f |
 | євроінтеграція | /jewrɔintɛˈɦrɑt͡sʲijɑ/ | European integration | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| закон | 112 |
+| голосувати | 112 |
+| вибори | 112 |
+| коаліція | 150 |
+| опозиція | 150 |
+| призначити | 49 |
+| реформа | 112 |
 
 ---
 

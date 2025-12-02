@@ -246,18 +246,25 @@ Report something you heard recently:
 |------|-----|---------|-------|
 | непряма мова | /nɛˈprʲɑmɑ ˈmovɑ/ | reported speech | f |
 | пряма мова | /prʲɑˈmɑ ˈmovɑ/ | direct speech | f |
-| сказати | /skɑˈzɑtɪ/ | to say | pf |
-| казати | /kɑˈzɑtɪ/ | to say | impf |
 | повідомити | /povʲiˈdomɪtɪ/ | to inform, report | pf |
 | стверджувати | /stvɛˈrd͡ʒuvɑtɪ/ | to claim, assert | impf |
 | заявити | /zɑjɑˈvɪtɪ/ | to declare, announce | pf |
-| пояснити | /pojɑsˈnɪtɪ/ | to explain | pf |
 | додати | /doˈdɑtɪ/ | to add | pf |
 | визнати | /vɪˈznɑtɪ/ | to admit | pf |
 | напередодні | /nɑpɛrɛˈdodnʲi/ | the day before | adv |
 | наступного дня | - | the next day | - |
 | того дня | - | that day | - |
-| тоді | /toˈdʲi/ | then | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| сказати | 31 |
+| казати | 31 |
+| пояснити | 42 |
+| тоді | 21 |
 
 ---
 

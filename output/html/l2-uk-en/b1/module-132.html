@@ -736,6 +736,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -808,7 +809,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (12)</h3>
+        <h3>Нові слова (6)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -816,9 +817,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">думати</td><td class="vocab-ipa">/ˈdumɑtɪ/</td><td class="vocab-en">to think</td></tr><tr><td class="vocab-uk">гадати</td><td class="vocab-ipa">/ɦɑˈdɑtɪ/</td><td class="vocab-en">to suppose, think</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-ipa">/vvɑˈʒɑtɪ/</td><td class="vocab-en">to consider, believe</td></tr><tr><td class="vocab-uk">міркувати</td><td class="vocab-ipa">/mʲirkuˈvɑtɪ/</td><td class="vocab-en">to ponder, reflect</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-ipa">/zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to seem</td></tr><tr><td class="vocab-uk">роздумувати</td><td class="vocab-ipa">/rozduˈmuvɑtɪ/</td><td class="vocab-en">to deliberate</td></tr><tr><td class="vocab-uk">припускати</td><td class="vocab-ipa">/prɪpusˈkɑtɪ/</td><td class="vocab-en">to suppose, assume</td></tr><tr><td class="vocab-uk">переконання</td><td class="vocab-ipa">/pɛrɛkoˈnɑnʲːɑ/</td><td class="vocab-en">belief, conviction</td></tr><tr><td class="vocab-uk">думка</td><td class="vocab-ipa">/ˈdumkɑ/</td><td class="vocab-en">thought, opinion</td></tr><tr><td class="vocab-uk">враження</td><td class="vocab-ipa">/vrɑˈʒɛnʲːɑ/</td><td class="vocab-en">impression</td></tr><tr><td class="vocab-uk">роздум</td><td class="vocab-ipa">/ˈrozdum/</td><td class="vocab-en">reflection, thought</td></tr><tr><td class="vocab-uk">помилятися</td><td class="vocab-ipa">/pomɪˈlʲɑtɪsʲɑ/</td><td class="vocab-en">to be mistaken</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">міркувати</td><td class="vocab-ipa">/mʲirkuˈvɑtɪ/</td><td class="vocab-en">to ponder, reflect</td><td class="vocab-note">impf, deep</td></tr><tr><td class="vocab-uk">роздумувати</td><td class="vocab-ipa">/rozduˈmuvɑtɪ/</td><td class="vocab-en">to deliberate</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">припускати</td><td class="vocab-ipa">/prɪpusˈkɑtɪ/</td><td class="vocab-en">to suppose, assume</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">переконання</td><td class="vocab-ipa">/pɛrɛkoˈnɑnʲːɑ/</td><td class="vocab-en">belief, conviction</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">враження</td><td class="vocab-ipa">/vrɑˈʒɛnʲːɑ/</td><td class="vocab-en">impression</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">роздум</td><td class="vocab-ipa">/ˈrozdum/</td><td class="vocab-en">reflection, thought</td><td class="vocab-note">m</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">думати</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">гадати</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-module">Module 58</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-module">Module 31</td></tr><tr><td class="vocab-uk">думка</td><td class="vocab-module">Module 58</td></tr><tr><td class="vocab-uk">помилятися</td><td class="vocab-module">Module 46</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -832,7 +844,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Тверде переконання:","options":["вважати","гадати"],"correctIndex":0,"explanation":"Strong opinion/belief."},{"question":"Невпевнене припущення:","options":["гадати","вважати"],"correctIndex":0,"explanation":"Uncertain supposition."},{"question":"Глибокий роздум:","options":["міркувати","думати"],"correctIndex":0,"explanation":"Deep pondering."},{"question":"Суб'єктивне враження:","options":["здаватися","вважати"],"correctIndex":0,"explanation":"Subjective impression."},{"question":"«Мені здається» means:","options":["it seems to me","I firmly believe"],"correctIndex":0,"explanation":"Subjective feeling."},{"question":"Найзагальніше дієслово:","options":["думати","міркувати"],"correctIndex":0,"explanation":"Most general verb."}];
     const sortData = {};
-    const vocabData = [{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"гадати","translit":"","en":"to suppose, think","note":""},{"uk":"вважати","translit":"","en":"to consider, believe","note":""},{"uk":"міркувати","translit":"","en":"to ponder, reflect","note":""},{"uk":"здаватися","translit":"","en":"to seem","note":""},{"uk":"роздумувати","translit":"","en":"to deliberate","note":""},{"uk":"припускати","translit":"","en":"to suppose, assume","note":""},{"uk":"переконання","translit":"","en":"belief, conviction","note":""},{"uk":"думка","translit":"","en":"thought, opinion","note":""},{"uk":"враження","translit":"","en":"impression","note":""},{"uk":"роздум","translit":"","en":"reflection, thought","note":""},{"uk":"помилятися","translit":"","en":"to be mistaken","note":""}];
+    const vocabData = [{"uk":"міркувати","translit":"","en":"to ponder, reflect","note":"impf, deep"},{"uk":"роздумувати","translit":"","en":"to deliberate","note":"impf"},{"uk":"припускати","translit":"","en":"to suppose, assume","note":"impf"},{"uk":"переконання","translit":"","en":"belief, conviction","note":"n"},{"uk":"враження","translit":"","en":"impression","note":"n"},{"uk":"роздум","translit":"","en":"reflection, thought","note":"m"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

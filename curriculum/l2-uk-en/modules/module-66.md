@@ -359,41 +359,48 @@ Use -знат- words:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| вхід | /vxʲid/ | entrance | noun | m | |
-| вихід | /ˈvɪxʲid/ | exit | noun | m | |
-| прихід | /ˈprɪxʲid/ | arrival | noun | m | |
-| відхід | /ˈvʲidxʲid/ | departure | noun | m | |
-| перехід | /ˈpɛrɛxʲid/ | crossing | noun | m | |
-| похід | /ˈpoxʲid/ | hike, campaign | noun | m | |
-| підхід | /ˈpʲidxʲid/ | approach | noun | m | |
-| дохід | /ˈdoxʲid/ | income | noun | m | |
-| поїздка | /poˈjizdkɑ/ | trip | noun | f | |
-| поїзд | /ˈpojizd/ | train | noun | m | |
-| виїзд | /ˈvɪjizd/ | exit (vehicles) | noun | m | |
-| в'їзд | /vjizd/ | entrance (vehicles) | noun | m | |
-| приїзд | /ˈprɪjizd/ | arrival (vehicles) | noun | m | |
-| від'їзд | /ˈvʲidjizd/ | departure (vehicles) | noun | m | |
-| переїзд | /ˈpɛrɛjizd/ | move; crossing | noun | m | |
-| проїзд | /ˈprojizd/ | passage; fare | noun | m | |
-| побачити | /poˈbɑtʃɪtɪ/ | to see | verb | - | pf |
-| побачення | /pobɑˈtʃɛnʲːɑ/ | meeting, date | noun | n | |
+| похід | /ˈpoxʲid/ | hike, campaign | noun | m |
+| підхід | /ˈpʲidxʲid/ | approach | noun | m |
+| дохід | /ˈdoxʲid/ | income | noun | m |
+| поїздка | /poˈjizdkɑ/ | trip | noun | f |
+| в'їзд | /vjizd/ | entrance (vehicles) | noun | m |
+| приїзд | /ˈprɪjizd/ | arrival (vehicles) | noun | m |
+| від'їзд | /ˈvʲidjizd/ | departure (vehicles) | noun | m |
+| проїзд | /ˈprojizd/ | passage; fare | noun | m |
+| побачення | /pobɑˈtʃɛnʲːɑ/ | meeting, date | noun | n |
 | передбачати | /pɛrɛdˈbɑtʃɑtɪ/ | to foresee | verb | - | impf |
-| передбачення | /pɛrɛdbɑˈtʃɛnʲːɑ/ | prediction | noun | n | |
+| передбачення | /pɛrɛdbɑˈtʃɛnʲːɑ/ | prediction | noun | n |
 | вибачати | /vɪbɑˈtʃɑtɪ/ | to forgive | verb | - | impf |
-| вибачення | /vɪbɑˈtʃɛnʲːɑ/ | apology | noun | n | |
-| слух | /slux/ | hearing; rumor | noun | m | |
-| слухач | /sluˈxɑtʃ/ | listener | noun | m | |
+| вибачення | /vɪbɑˈtʃɛnʲːɑ/ | apology | noun | n |
+| слух | /slux/ | hearing; rumor | noun | m |
 | вислухати | /ˈvɪsluxɑtɪ/ | to hear out | verb | - | pf |
 | підслухати | /pʲidsluˈxɑtɪ/ | to eavesdrop | verb | - | pf |
-| слухняний | /sluxˈnʲɑnɪj/ | obedient | adj | - | |
-| неслухняний | /nɛsluxˈnʲɑnɪj/ | disobedient | adj | - | |
-| знайомий | /znɑˈjomɪj/ | acquaintance | noun | m | |
-| знайомитися | /znɑˈjomɪtɪsʲɑ/ | to get acquainted | verb | - | impf |
+| слухняний | /sluxˈnʲɑnɪj/ | obedient | adj | - |
+| неслухняний | /nɛsluxˈnʲɑnɪj/ | disobedient | adj | - |
+| знайомий | /znɑˈjomɪj/ | acquaintance | noun | m |
 | познайомитися | /poznɑˈjomɪtɪsʲɑ/ | to meet | verb | - | pf |
 | дізнатися | /dʲizˈnɑtɪsʲɑ/ | to find out | verb | - | pf |
 | пізнавати | /pʲiznɑˈvɑtɪ/ | to learn, cognize | verb | - | impf |
 | визнавати | /vɪznɑˈvɑtɪ/ | to admit | verb | - | impf |
-| визнання | /vɪzˈnɑnʲːɑ/ | recognition | noun | n | |
+| визнання | /vɪzˈnɑnʲːɑ/ | recognition | noun | n |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| вхід | 15 |
+| вихід | 15 |
+| прихід | 61 |
+| відхід | 61 |
+| перехід | 61 |
+| поїзд | 35 |
+| виїзд | 61 |
+| переїзд | 61 |
+| побачити | 42 |
+| слухач | 63 |
+| знайомитися | 34 |
 
 ---
 

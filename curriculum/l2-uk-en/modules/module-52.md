@@ -337,13 +337,13 @@ Use все/те/щось + що:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| які | /jɑˈkʲi/ | which, that, who (pl) | pron | pl | |
+| які | /jɑˈkʲi/ | which, that, who (pl) | pron | pl |
 | котрий | /koˈtrɪj/ | which (formal) | pron | m | formal |
-| усе | /uˈsɛ/ | everything | pron | n | |
-| щось | /ʃtʃosʲ/ | something | pron | n | |
-| нічого | /nʲiˈtʃoɦo/ | nothing | pron | - | |
-| згадувати | /zɦɑˈduvɑtɪ/ | to mention (impf) | verb | - | |
-| підписувати | /pʲidpɪˈsuvɑtɪ/ | to sign (impf) | verb | - | |
+| усе | /uˈsɛ/ | everything | pron | n |
+| щось | /ʃtʃosʲ/ | something | pron | n |
+| нічого | /nʲiˈtʃoɦo/ | nothing | pron | - |
+| згадувати | /zɦɑˈduvɑtɪ/ | to mention (impf) | verb | - |
+| підписувати | /pʲidpɪˈsuvɑtɪ/ | to sign (impf) | verb | - |
 
 ---
 

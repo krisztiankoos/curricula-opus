@@ -349,15 +349,15 @@ Use тому що/бо:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| щоб | /ʃtʃob/ | in order to, so that | conj | - | |
-| хоча | /xoˈtʃɑ/ | although | conj | - | |
-| хоч | /xotʃ/ | although (casual) | conj | - | |
-| тому що | /toˈmu ʃtʃo/ | because | conj | - | |
-| бо | /bo/ | because (casual) | conj | - | |
-| неохоче | /nɛˈoxotʃɛ/ | reluctantly | adv | - | |
-| продовжувати | /prodovˈʒuvɑtɪ/ | to continue (impf) | verb | - | |
-| змокнути | /zˈmoknʊtɪ/ | to get wet (perf) | verb | - | |
-| розбудити | /rozbuˈdɪtɪ/ | to wake up (sb) (perf) | verb | - | |
+| щоб | /ʃtʃob/ | in order to, so that | conj | - |
+| хоча | /xoˈtʃɑ/ | although | conj | - |
+| хоч | /xotʃ/ | although (casual) | conj | - |
+| тому що | /toˈmu ʃtʃo/ | because | conj | - |
+| бо | /bo/ | because (casual) | conj | - |
+| неохоче | /nɛˈoxotʃɛ/ | reluctantly | adv | - |
+| продовжувати | /prodovˈʒuvɑtɪ/ | to continue (impf) | verb | - |
+| змокнути | /zˈmoknʊtɪ/ | to get wet (perf) | verb | - |
+| розбудити | /rozbuˈdɪtɪ/ | to wake up (sb) (perf) | verb | - |
 
 ---
 

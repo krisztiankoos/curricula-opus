@@ -407,15 +407,15 @@ Describe yourself for a social media bio:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| дзвінок | /dzvʲiˈnok/ | call | noun | m | |
-| отримати | /otrɪˈmɑtɪ/ | to receive (perf) | verb | - | |
-| переслати | /pɛrɛˈslɑtɪ/ | to forward (perf) | verb | - | |
-| вкладення | /vklɑˈdɛnʲɑ/ | attachment | noun | n | |
-| посилання | /posɪˈlɑnʲɑ/ | link | noun | n | |
-| пароль | /pɑˈrolʲ/ | password | noun | m | |
-| підписатися | /pʲidpɪˈsɑtɪsʲɑ/ | to subscribe, follow | verb | - | |
-| поділитися | /podʲiˈlɪtɪsʲɑ/ | to share | verb | - | |
-| завантажити | /zɑvɑnˈtɑʒɪtɪ/ | to download (perf) | verb | - | |
+| дзвінок | /dzvʲiˈnok/ | call | noun | m |
+| отримати | /otrɪˈmɑtɪ/ | to receive (perf) | verb | - |
+| переслати | /pɛrɛˈslɑtɪ/ | to forward (perf) | verb | - |
+| вкладення | /vklɑˈdɛnʲɑ/ | attachment | noun | n |
+| посилання | /posɪˈlɑnʲɑ/ | link | noun | n |
+| пароль | /pɑˈrolʲ/ | password | noun | m |
+| підписатися | /pʲidpɪˈsɑtɪsʲɑ/ | to subscribe, follow | verb | - |
+| поділитися | /podʲiˈlɪtɪsʲɑ/ | to share | verb | - |
+| завантажити | /zɑvɑnˈtɑʒɪtɪ/ | to download (perf) | verb | - |
 
 ---
 

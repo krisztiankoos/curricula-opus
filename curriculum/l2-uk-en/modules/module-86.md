@@ -381,16 +381,23 @@ A: Поклади все на тарілку. Готово!
 |------|-----|---------|-------|
 | негайно | /nɛˈɦɑjno/ | immediately | urgency |
 | терміново | /tɛrmʲiˈnovo/ | urgently | urgency |
-| швидше | /ˈʃvɪdʃɛ/ | faster, quicker | with perfective |
-| спочатку | /spoˈt͡ʃɑtku/ | first, at first | sequences |
-| потім | /poˈtʲim/ | then, afterwards | sequences |
 | не здаватися | /nɛ zdɑˈvɑtɪsʲɑ/ | to not give up | encouragement |
 | триматися | /trɪˈmɑtɪsʲɑ/ | to hold on | encouragement |
 | старатися | /stɑˈrɑtɪsʲɑ/ | to try hard | encouragement |
-| продовжувати | /prodovˈʒuvɑtɪ/ | to continue | encouragement |
-| обережно | /obɛˈrɛʒno/ | carefully | warnings |
 | давай | /dɑˈvɑj/ | let's (informal) | + infinitive |
 | давайте | /dɑˈvɑjtɛ/ | let's (formal) | + infinitive |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| швидше | 44 |
+| спочатку | 25 |
+| потім | 21 |
+| продовжувати | 53 |
+| обережно | 85 |
 
 ---
 

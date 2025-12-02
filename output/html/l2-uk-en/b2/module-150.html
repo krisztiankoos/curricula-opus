@@ -795,6 +795,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -861,7 +862,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (7)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -869,9 +870,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">публіцистика</td><td class="vocab-en">journalism, media writing</td><td class="vocab-note">стиль ЗМІ</td></tr><tr><td class="vocab-uk">лід</td><td class="vocab-en">lead</td><td class="vocab-note">початок новини</td></tr><tr><td class="vocab-uk">оцінність</td><td class="vocab-en">evaluativeness</td><td class="vocab-note">суб&#039;єктивність</td></tr><tr><td class="vocab-uk">риторичний</td><td class="vocab-en">rhetorical</td><td class="vocab-note">для впливу</td></tr><tr><td class="vocab-uk">коаліція</td><td class="vocab-en">coalition</td><td class="vocab-note">об&#039;єднання</td></tr><tr><td class="vocab-uk">опозиція</td><td class="vocab-en">opposition</td><td class="vocab-note">політична сила</td></tr><tr><td class="vocab-uk">фреймування</td><td class="vocab-en">framing</td><td class="vocab-note">обрамлення реальності</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (2)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">заголовок</td><td class="vocab-module">Module 111</td></tr><tr><td class="vocab-uk">репортаж</td><td class="vocab-module">Module 146</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -885,7 +897,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Парламент ухвалив бюджет» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":0,"explanation":"Просто факт без оцінки → інформативний"},{"question":"«Чи готова Україна до ЄС?» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":1,"explanation":"Запитання → питальний тип (інтрига)"},{"question":"«Час діяти!» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":2,"explanation":"Заклик до дії → закличний тип"},{"question":"«Президент: \"Це історичний день\"» — який це тип?","options":["Інформативний","Питальний","Закличний","Цитатний"],"correctIndex":3,"explanation":"Цитата в заголовку → цитатний тип"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"публіцистика","translit":"","en":"journalism, media writing","note":"стиль ЗМІ"},{"uk":"лід","translit":"","en":"lead","note":"початок новини"},{"uk":"оцінність","translit":"","en":"evaluativeness","note":"суб'єктивність"},{"uk":"риторичний","translit":"","en":"rhetorical","note":"для впливу"},{"uk":"коаліція","translit":"","en":"coalition","note":"об'єднання"},{"uk":"опозиція","translit":"","en":"opposition","note":"політична сила"},{"uk":"фреймування","translit":"","en":"framing","note":"обрамлення реальності"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

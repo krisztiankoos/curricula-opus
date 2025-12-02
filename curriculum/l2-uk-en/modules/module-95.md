@@ -256,21 +256,28 @@ Use abstract vocabulary to discuss:
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
 | ідея | /iˈdɛjɑ/ | idea | f |
-| думка | /ˈdumkɑ/ | thought, opinion | f |
 | поняття | /poˈnʲɑtʲːɑ/ | concept | n |
 | уявлення | /ujɑvˈlɛnʲːɑ/ | imagination, idea | n |
 | погляд | /ˈpoɦlʲɑd/ | view | m |
 | точка зору | /ˈtot͡ʃkɑ ˈzoru/ | point of view | f |
 | проблема | /probˈlɛmɑ/ | problem | f |
-| питання | /pɪˈtɑnʲːɑ/ | question, issue | n |
 | труднощі | /trudˈnoʃt͡ʃʲi/ | difficulties | pl |
 | перешкода | /pɛrɛˈʃkodɑ/ | obstacle | f |
 | рішення | /rʲiˈʃɛnʲːɑ/ | decision, solution | n |
-| результат | /rɛzulʲˈtɑt/ | result | m |
 | наслідок | /ˈnɑslʲidok/ | consequence | m |
 | причина | /prɪˈt͡ʃɪnɑ/ | reason, cause | f |
 | мета | /mɛˈtɑ/ | goal, purpose | f |
 | сенс | /sɛns/ | sense, meaning | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| думка | 58 |
+| питання | 63 |
+| результат | 46 |
 
 ---
 

@@ -374,48 +374,55 @@ Give advice to someone who's sick:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| серце | /ˈsɛrtsɛ/ | heart | noun | n | |
-| легені | /lɛˈɦɛnʲi/ | lungs | noun | pl | |
-| шлунок | /ˈʃlunok/ | stomach | noun | m | |
-| печінка | /pɛˈtʃʲinkɑ/ | liver | noun | f | |
-| нирки | /ˈnɪrkɪ/ | kidneys | noun | pl | |
-| м'яз | /mjɑz/ | muscle | noun | m | |
-| кістка | /ˈkʲistkɑ/ | bone | noun | f | |
-| суглоб | /ˈsuɦlob/ | joint | noun | m | |
-| шкіра | /ˈʃkʲirɑ/ | skin | noun | f | |
-| кров | /krov/ | blood | noun | f | |
-| коліно | /koˈlʲino/ | knee | noun | n | |
-| плече | /plɛˈtʃɛ/ | shoulder | noun | n | |
-| лікоть | /ˈlʲikotʲ/ | elbow | noun | m | |
-| щиколотка | /ʃtʃɪˈkolotkɑ/ | ankle | noun | f | |
+| серце | /ˈsɛrtsɛ/ | heart | noun | n |
+| легені | /lɛˈɦɛnʲi/ | lungs | noun | pl |
+| шлунок | /ˈʃlunok/ | stomach | noun | m |
+| печінка | /pɛˈtʃʲinkɑ/ | liver | noun | f |
+| нирки | /ˈnɪrkɪ/ | kidneys | noun | pl |
+| м'яз | /mjɑz/ | muscle | noun | m |
+| кістка | /ˈkʲistkɑ/ | bone | noun | f |
+| суглоб | /ˈsuɦlob/ | joint | noun | m |
+| шкіра | /ˈʃkʲirɑ/ | skin | noun | f |
+| кров | /krov/ | blood | noun | f |
+| коліно | /koˈlʲino/ | knee | noun | n |
+| плече | /plɛˈtʃɛ/ | shoulder | noun | n |
+| лікоть | /ˈlʲikotʲ/ | elbow | noun | m |
+| щиколотка | /ʃtʃɪˈkolotkɑ/ | ankle | noun | f |
 | болить | /boˈlɪtʲ/ | hurts | verb | - | 3sg |
-| боляче | /boˈlʲɑtʃɛ/ | painful, it hurts | adv | - | |
-| температура | /tɛmpɛrɑˈturɑ/ | fever, temperature | noun | f | |
-| кашель | /ˈkɑʃɛlʲ/ | cough | noun | m | |
-| нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m | |
-| запаморочення | /zɑpɑmoˈrotʃɛnʲːɑ/ | dizziness | noun | n | |
-| нудота | /nuˈdotɑ/ | nausea | noun | f | |
-| набряк | /ˈnɑbrʲɑk/ | swelling | noun | m | |
-| слабкість | /ˈslɑbkʲistʲ/ | weakness | noun | f | |
-| втома | /ˈvtomɑ/ | fatigue | noun | f | |
-| застуда | /zɑsˈtudɑ/ | cold | noun | f | |
-| грип | /ɦrɪp/ | flu | noun | m | |
-| алергія | /ɑˈlɛrɦʲijɑ/ | allergy | noun | f | |
-| інфекція | /inˈfɛktsʲijɑ/ | infection | noun | f | |
-| травма | /ˈtrɑvmɑ/ | injury | noun | f | |
-| лікар | /ˈlʲikɑr/ | doctor | noun | m | |
-| пацієнт | /pɑtsʲiˈjɛnt/ | patient | noun | m | |
-| діагноз | /dʲiɑɦˈnoz/ | diagnosis | noun | m | |
-| рецепт | /rɛˈtsɛpt/ | prescription | noun | m | |
-| ліки | /ˈlʲikɪ/ | medicine | noun | pl | |
-| таблетка | /tɑbˈlɛtkɑ/ | pill, tablet | noun | f | |
-| аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f | |
-| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | noun | f | |
-| швидка допомога | /ˈʃvɪdkɑ doˈpomoɦɑ/ | ambulance | noun | f | |
-| здоров'я | /zdoˈrovj'ɑ/ | health | noun | n | |
-| хворий | /xvoˈrɪj/ | sick | adj | - | |
+| боляче | /boˈlʲɑtʃɛ/ | painful, it hurts | adv | - |
+| запаморочення | /zɑpɑmoˈrotʃɛnʲːɑ/ | dizziness | noun | n |
+| нудота | /nuˈdotɑ/ | nausea | noun | f |
+| набряк | /ˈnɑbrʲɑk/ | swelling | noun | m |
+| слабкість | /ˈslɑbkʲistʲ/ | weakness | noun | f |
+| втома | /ˈvtomɑ/ | fatigue | noun | f |
+| грип | /ɦrɪp/ | flu | noun | m |
+| алергія | /ɑˈlɛrɦʲijɑ/ | allergy | noun | f |
+| інфекція | /inˈfɛktsʲijɑ/ | infection | noun | f |
+| травма | /ˈtrɑvmɑ/ | injury | noun | f |
+| пацієнт | /pɑtsʲiˈjɛnt/ | patient | noun | m |
+| діагноз | /dʲiɑɦˈnoz/ | diagnosis | noun | m |
+| швидка допомога | /ˈʃvɪdkɑ doˈpomoɦɑ/ | ambulance | noun | f |
+| здоров'я | /zdoˈrovj'ɑ/ | health | noun | n |
+| хворий | /xvoˈrɪj/ | sick | adj | - |
 | одужати | /oduˈʒɑtɪ/ | to recover | verb | - | pf |
 | почуватися | /potʃuˈvɑtɪsʲɑ/ | to feel | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| температура | 28 |
+| кашель | 54 |
+| нежить | 54 |
+| застуда | 54 |
+| лікар | 12 |
+| рецепт | 54 |
+| ліки | 54 |
+| таблетка | 54 |
+| аптека | 15 |
+| лікарня | 15 |
 
 ---
 

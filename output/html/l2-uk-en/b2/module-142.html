@@ -890,6 +890,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer"><strong>Ухвалений парламентом</strong> закон набув чинності.</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -985,7 +986,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (8)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -993,9 +994,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">чергування</td><td class="vocab-en">alternation</td><td class="vocab-note">фонетичне явище</td></tr><tr><td class="vocab-uk">приголосний</td><td class="vocab-en">consonant</td><td class="vocab-note">тип звука</td></tr><tr><td class="vocab-uk">зворот</td><td class="vocab-en">phrase, construction</td><td class="vocab-note">синтаксична одиниця</td></tr><tr><td class="vocab-uk">книжний стиль</td><td class="vocab-en">bookish style</td><td class="vocab-note">письмова мова</td></tr><tr><td class="vocab-uk">освічений</td><td class="vocab-en">educated</td><td class="vocab-note">прикметник</td></tr><tr><td class="vocab-uk">вихований</td><td class="vocab-en">well-mannered</td><td class="vocab-note">прикметник</td></tr><tr><td class="vocab-uk">визнаний</td><td class="vocab-en">recognized</td><td class="vocab-note">дієприкметник</td></tr><tr><td class="vocab-uk">збережений</td><td class="vocab-en">preserved</td><td class="vocab-note">дієприкметник</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (2)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">суфікс</td><td class="vocab-module">Module 126</td></tr><tr><td class="vocab-uk">підрядне речення</td><td class="vocab-module">Module 138</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1009,7 +1021,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Як утворити дієприкметник від «прочитати»?","options":["прочитаний","прочитений","прочитуваний"],"correctIndex":0,"explanation":"-ати → -аний"},{"question":"Як утворити дієприкметник від «зробити»?","options":["зробитий","зроблений","зробуваний"],"correctIndex":1,"explanation":"-ити → -ений, б → бл (чергування)"},{"question":"Як утворити дієприкметник від «відкрити»?","options":["відкритий","відкрений","відкриваний"],"correctIndex":0,"explanation":"голосна + -ти → -тий"},{"question":"Як утворити дієприкметник від «заплатити»?","options":["заплатений","заплачений","заплативший"],"correctIndex":1,"explanation":"т → ч (чергування)"},{"question":"Як утворити дієприкметник від «спекти»?","options":["спектий","спечений","спеклий"],"correctIndex":1,"explanation":"к → ч (чергування)"},{"question":"Як утворити дієприкметник від «зберегти»?","options":["збереглий","зберегтий","збережений"],"correctIndex":2,"explanation":"г → ж (чергування)"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"чергування","translit":"","en":"alternation","note":"фонетичне явище"},{"uk":"приголосний","translit":"","en":"consonant","note":"тип звука"},{"uk":"зворот","translit":"","en":"phrase, construction","note":"синтаксична одиниця"},{"uk":"книжний стиль","translit":"","en":"bookish style","note":"письмова мова"},{"uk":"освічений","translit":"","en":"educated","note":"прикметник"},{"uk":"вихований","translit":"","en":"well-mannered","note":"прикметник"},{"uk":"визнаний","translit":"","en":"recognized","note":"дієприкметник"},{"uk":"збережений","translit":"","en":"preserved","note":"дієприкметник"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -303,22 +303,23 @@ Describe what you did yesterday using past tense:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| вчора | /ˈwtʃɔrɑ/ | yesterday | adv | - |  |
-| позавчора | /pɔzɑˈwtʃɔrɑ/ | day before yesterday | adv | - |  |
+| вчора | /ˈwtʃɔrɑ/ | yesterday | adv | - |
+| позавчора | /pɔzɑˈwtʃɔrɑ/ | day before yesterday | adv | - |
 | минулий | /mɪˈnulɪj/ | last, past | adj | m | минулого тижня |
-| давно | /ˈdɑvnɔ/ | long ago | adv | - |  |
-| недавно | /nɛˈdɑvnɔ/ | recently | adv | - |  |
-| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - |  |
-| тоді | /tɔˈdʲi/ | then | adv | - |  |
-| потім | /pɔˈtʲim/ | then, later | adv | - |  |
-| вже | /vʒɛ/ | already | adv | - |  |
-| ще не | /ʃtʃɛ nɛ/ | not yet | phrase | - |  |
+| давно | /ˈdɑvnɔ/ | long ago | adv | - |
+| недавно | /nɛˈdɑvnɔ/ | recently | adv | - |
+| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - |
+| тоді | /tɔˈdʲi/ | then | adv | - |
+| потім | /pɔˈtʲim/ | then, later | adv | - |
+| вже | /vʒɛ/ | already | adv | - |
+| ще не | /ʃtʃɛ nɛ/ | not yet | phrase | - |
 | був | /buv/ | was (m) | verb | m | Past of бути |
 | була | /buˈlɑ/ | was (f) | verb | f | Past of бути |
 | було | /ˈbulɔ/ | was (n) | verb | n | Past of бути |
 | були | /buˈlɪ/ | were | verb | pl | Past of бути |
 | ішов | /iˈʃɔv/ | went (m) | verb | m | Past of йти |
 | ішла | /iʃˈlɑ/ | went (f) | verb | f | Past of йти |
+
 ---
 
 # Past Tense Summary

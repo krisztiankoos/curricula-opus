@@ -44,6 +44,7 @@ export interface ParsedModule {
   sections: Section[];
   activities: Activity[];
   vocabulary: VocabWord[];
+  reviewVocabulary: VocabWord[];
   rawMarkdown: string;
 }
 
@@ -70,6 +71,8 @@ export interface VocabWord {
   note?: string;
   audio?: string;
   image?: string;
+  isNew?: boolean;        // true if first appears in this module
+  firstModule?: number;   // module where word was first introduced
 }
 
 export interface VocabularySection {
@@ -77,8 +80,11 @@ export interface VocabularySection {
   level: string;
   phase: string;
   wordCount: number;
+  newWordCount: number;
+  reviewWordCount: number;
   transliterationMode: string;
   words: VocabWord[];
+  reviewWords?: VocabWord[];
   letterGroups?: LetterGroup[];
 }
 

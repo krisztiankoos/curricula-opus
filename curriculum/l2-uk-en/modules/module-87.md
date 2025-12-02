@@ -338,17 +338,24 @@ Use at least 5 aspect pairs in a dialogue:
 | будувати | /buduˈvɑtɪ/ | to build | impf | побудувати |
 | побудувати | /pobuduˈvɑtɪ/ | to build (pf) | pf | будувати |
 | вирішувати | /vɪrʲiˈʃuvɑtɪ/ | to decide, solve | impf | вирішити |
-| вирішити | /vɪˈrʲiʃɪtɪ/ | to decide (pf) | pf | вирішувати |
-| відповідати | /vʲidpoˈvʲidɑtɪ/ | to answer | impf | відповісти |
-| відповісти | /vʲidpoˈvʲistɪ/ | to answer (pf) | pf | відповідати |
-| показувати | /pokɑˈzuvɑtɪ/ | to show | impf | показати |
-| показати | /pokɑˈzɑtɪ/ | to show (pf) | pf | показувати |
-| запрошувати | /zɑproˈʃuvɑtɪ/ | to invite | impf | запросити |
-| запросити | /zɑproˈsɪtɪ/ | to invite (pf) | pf | запрошувати |
 | пояснювати | /pojɑsʲˈnʲuvɑtɪ/ | to explain | impf | пояснити |
-| пояснити | /pojɑsʲˈnɪtɪ/ | to explain (pf) | pf | пояснювати |
-| домовлятися | /domovˈlʲɑtɪsʲɑ/ | to agree | impf | домовитися |
-| домовитися | /domovˈɪtɪsʲɑ/ | to agree (pf) | pf | домовлятися |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| вирішити | 62 |
+| відповідати | 33 |
+| відповісти | 42 |
+| показувати | 31 |
+| показати | 31 |
+| запрошувати | 49 |
+| запросити | 42 |
+| пояснити | 42 |
+| домовлятися | 46 |
+| домовитися | 46 |
 
 ---
 

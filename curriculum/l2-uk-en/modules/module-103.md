@@ -300,15 +300,22 @@ Discuss using purpose clauses:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| щоб | /ʃt͡ʃob/ | in order to, so that | conj |
-| мета | /mɛˈtɑ/ | goal, purpose | f |
 | намір | /ˈnɑmʲir/ | intention | m |
 | ціль | /t͡sʲilʲ/ | aim, target | f |
 | задля | /ˈzɑdlʲɑ/ | for the sake of | prep |
 | для того щоб | - | in order to | conj |
 | навіщо | /nɑˈvʲiʃt͡ʃo/ | why (for what purpose) | adv |
-| досягти | /doˈsʲɑɦtɪ/ | to achieve | pf |
-| досягати | /dosʲɑˈɦɑtɪ/ | to achieve | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| щоб | 53 |
+| мета | 95 |
+| досягти | 83 |
+| досягати | 83 |
 
 ---
 

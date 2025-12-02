@@ -414,16 +414,23 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| питати | /pɪˈtɑtɪ/ | to ask (colloq.) | ipf, розмовне |
 | запитувати | /zɑˈpɪtuwɑtɪ/ | to ask | ipf, нейтральне |
-| цікавитися | /t͡sʲikɑˈwɪtɪsʲɑ/ | to be interested / inquire | ipf, + орудн. |
 | довідуватися | /dɔwʲiˈduwɑtɪsʲɑ/ | to find out, inquire | ipf |
-| просити | /prɔˈsɪtɪ/ | to ask, request | ipf |
-| вимагати | /wɪmɑˈɦɑtɪ/ | to demand | ipf, + родовий! |
 | наполягати | /nɑpɔˈlʲaɦɑtɪ/ | to insist | ipf, + на + місц. |
 | звертатися | /zwɛrˈtɑtɪsʲɑ/ | to address, appeal | ipf |
 | клопотати | /klɔpɔˈtɑtɪ/ | to petition | ipf, юридичне |
-| благати | /blɑˈɦɑtɪ/ | to beg, implore | ipf, емоційне |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| питати | 117 |
+| цікавитися | 35 |
+| просити | 8 |
+| вимагати | 104 |
+| благати | 118 |
 
 ---
 

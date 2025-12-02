@@ -402,26 +402,21 @@ Discuss social media habits:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| комп'ютер | /kompˈjutɛr/ | computer | noun | m | |
-| ноутбук | /noˈutbuk/ | laptop | noun | m | |
-| смартфон | /smɑrtˈfon/ | smartphone | noun | m | |
-| планшет | /plɑnˈʃɛt/ | tablet | noun | m | |
-| екран | /ɛkˈrɑn/ | screen | noun | m | |
-| клавіатура | /klɑvʲiɑˈturɑ/ | keyboard | noun | f | |
-| навушники | /nɑˈvuʃnɪkɪ/ | headphones | noun | pl | |
-| зарядка | /zɑˈrʲɑdkɑ/ | charger | noun | f | |
-| акумулятор | /ɑkumuˈlʲɑtor/ | battery | noun | m | |
-| файл | /fɑjl/ | file | noun | m | |
-| папка | /ˈpɑpkɑ/ | folder | noun | f | |
-| застосунок | /zɑstoˈsunok/ | application, app | noun | m | |
-| пароль | /pɑˈrolʲ/ | password | noun | m | |
-| налаштування | /nɑlɑʃtuˈvɑnʲːɑ/ | settings | noun | n | |
-| оновлення | /onovˈlɛnʲːɑ/ | update | noun | n | |
-| резервна копія | /rɛˈzɛrvnɑ ˈkopʲijɑ/ | backup | noun | f | |
-| сайт | /sɑjt/ | website | noun | m | |
-| посилання | /posɪˈlɑnʲːɑ/ | link | noun | n | |
-| пошук | /ˈpoʃuk/ | search | noun | m | |
-| вірус | /ˈvʲirus/ | virus | noun | m | |
+| комп'ютер | /kompˈjutɛr/ | computer | noun | m |
+| ноутбук | /noˈutbuk/ | laptop | noun | m |
+| смартфон | /smɑrtˈfon/ | smartphone | noun | m |
+| планшет | /plɑnˈʃɛt/ | tablet | noun | m |
+| клавіатура | /klɑvʲiɑˈturɑ/ | keyboard | noun | f |
+| акумулятор | /ɑkumuˈlʲɑtor/ | battery | noun | m |
+| файл | /fɑjl/ | file | noun | m |
+| папка | /ˈpɑpkɑ/ | folder | noun | f |
+| застосунок | /zɑstoˈsunok/ | application, app | noun | m |
+| налаштування | /nɑlɑʃtuˈvɑnʲːɑ/ | settings | noun | n |
+| оновлення | /onovˈlɛnʲːɑ/ | update | noun | n |
+| резервна копія | /rɛˈzɛrvnɑ ˈkopʲijɑ/ | backup | noun | f |
+| сайт | /sɑjt/ | website | noun | m |
+| пошук | /ˈpoʃuk/ | search | noun | m |
+| вірус | /ˈvʲirus/ | virus | noun | m |
 | завантажувати | /zɑvɑntɑˈʒuvɑtɪ/ | to download | verb | - | impf |
 | вивантажувати | /vɪvɑntɑˈʒuvɑtɪ/ | to upload | verb | - | impf |
 | надсилати | /nɑdsɪˈlɑtɪ/ | to send | verb | - | impf |
@@ -431,12 +426,24 @@ Discuss social media habits:
 | вимикати | /vɪmɪˈkɑtɪ/ | to turn off | verb | - | impf |
 | перезавантажувати | /pɛrɛzɑvɑntɑˈʒuvɑtɪ/ | to restart | verb | - | impf |
 | встановлювати | /vstɑˈnovlʲuvɑtɪ/ | to install | verb | - | impf |
-| підписник | /pʲidˈpɪsnɪk/ | follower | noun | m | |
-| лайк | /lɑjk/ | like | noun | m | |
-| коментар | /komɛnˈtɑr/ | comment | noun | m | |
-| стрічка | /ˈstrʲitʃkɑ/ | feed | noun | f | |
-| повідомлення | /povʲiˈdomlɛnʲːɑ/ | message | noun | n | |
-| відеодзвінок | /vʲidɛoˈdzvʲinok/ | video call | noun | m | |
+| підписник | /pʲidˈpɪsnɪk/ | follower | noun | m |
+| лайк | /lɑjk/ | like | noun | m |
+| коментар | /komɛnˈtɑr/ | comment | noun | m |
+| стрічка | /ˈstrʲitʃkɑ/ | feed | noun | f |
+| відеодзвінок | /vʲidɛoˈdzvʲinok/ | video call | noun | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| екран | 48 |
+| навушники | 48 |
+| зарядка | 48 |
+| пароль | 56 |
+| посилання | 56 |
+| повідомлення | 32 |
 
 ---
 

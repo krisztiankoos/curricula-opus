@@ -407,43 +407,50 @@ Give advice to someone looking for work:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| юрист | /juˈrɪst/ | lawyer | noun | m | |
-| адвокат | /ɑdvoˈkɑt/ | attorney | noun | m | |
-| бухгалтер | /buxˈɦɑltɛr/ | accountant | noun | m | |
-| програміст | /proɦrɑˈmʲist/ | programmer | noun | m | |
-| інженер | /inʒɛˈnɛr/ | engineer | noun | m | |
-| менеджер | /ˈmɛnɛdʒɛr/ | manager | noun | m | |
-| підприємець | /pʲidprɪˈjɛmɛtsʲ/ | entrepreneur | noun | m | |
-| викладач | /vɪklɑˈdɑtʃ/ | lecturer | noun | m | |
-| науковець | /nɑuˈkovɛtsʲ/ | scientist | noun | m | |
-| хірург | /xʲiˈrurɦ/ | surgeon | noun | m | |
-| стоматолог | /stomɑˈtoloɦ/ | dentist | noun | m | |
-| перукар | /pɛruˈkɑr/ | hairdresser | noun | m | |
-| офіс | /ˈofʲis/ | office | noun | m | |
-| відділ | /vʲidˈdʲil/ | department | noun | m | |
-| начальник | /nɑˈtʃɑlʲnɪk/ | boss | noun | m | |
-| колега | /koˈlɛɦɑ/ | colleague | noun | m/f | |
-| співробітник | /spʲivroˈbʲitnɪk/ | coworker | noun | m | |
-| посада | /poˈsɑdɑ/ | position | noun | f | |
-| кар'єра | /kɑrˈjɛrɑ/ | career | noun | f | |
-| досвід | /ˈdosvʲid/ | experience | noun | m | |
-| резюме | /rɛzʲuˈmɛ/ | resume, CV | noun | n | |
-| співбесіда | /spʲivˈbɛsʲidɑ/ | interview | noun | f | |
-| вакансія | /vɑˈkɑnsʲijɑ/ | vacancy | noun | f | |
-| зарплата | /zɑrˈplɑtɑ/ | salary | noun | f | |
-| премія | /ˈprɛmʲijɑ/ | bonus | noun | f | |
-| відпустка | /vʲidˈpustkɑ/ | vacation | noun | f | |
-| обов'язки | /oboˈvjɑzkɪ/ | duties | noun | pl | |
-| завдання | /zɑvˈdɑnʲːɑ/ | task | noun | n | |
-| звіт | /zvʲit/ | report | noun | m | |
-| нарада | /nɑˈrɑdɑ/ | meeting | noun | f | |
-| дедлайн | /ˈdɛdlɑjn/ | deadline | noun | m | |
-| відрядження | /vʲidrʲɑˈdʒɛnʲːɑ/ | business trip | noun | n | |
+| адвокат | /ɑdvoˈkɑt/ | attorney | noun | m |
+| викладач | /vɪklɑˈdɑtʃ/ | lecturer | noun | m |
+| науковець | /nɑuˈkovɛtsʲ/ | scientist | noun | m |
+| хірург | /xʲiˈrurɦ/ | surgeon | noun | m |
+| стоматолог | /stomɑˈtoloɦ/ | dentist | noun | m |
+| перукар | /pɛruˈkɑr/ | hairdresser | noun | m |
+| відділ | /vʲidˈdʲil/ | department | noun | m |
+| начальник | /nɑˈtʃɑlʲnɪk/ | boss | noun | m |
+| співробітник | /spʲivroˈbʲitnɪk/ | coworker | noun | m |
+| посада | /poˈsɑdɑ/ | position | noun | f |
+| кар'єра | /kɑrˈjɛrɑ/ | career | noun | f |
+| премія | /ˈprɛmʲijɑ/ | bonus | noun | f |
+| обов'язки | /oboˈvjɑzkɪ/ | duties | noun | pl |
+| звіт | /zvʲit/ | report | noun | m |
+| нарада | /nɑˈrɑdɑ/ | meeting | noun | f |
+| дедлайн | /ˈdɛdlɑjn/ | deadline | noun | m |
+| відрядження | /vʲidrʲɑˈdʒɛnʲːɑ/ | business trip | noun | n |
 | наймати | /nɑjˈmɑtɪ/ | to hire | verb | - | impf |
 | звільняти | /zvʲilʲˈnʲɑtɪ/ | to fire | verb | - | impf |
 | звільнятися | /zvʲilʲˈnʲɑtɪsʲɑ/ | to quit | verb | - | impf |
 | підвищувати | /pʲidvɪˈʃʃuvɑtɪ/ | to promote | verb | - | impf |
-| керувати | /kɛruˈvɑtɪ/ | to manage | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| юрист | 36 |
+| бухгалтер | 36 |
+| програміст | 36 |
+| інженер | 36 |
+| менеджер | 12 |
+| підприємець | 36 |
+| офіс | 13 |
+| колега | 12 |
+| досвід | 33 |
+| резюме | 57 |
+| співбесіда | 57 |
+| вакансія | 57 |
+| зарплата | 57 |
+| відпустка | 57 |
+| завдання | 63 |
+| керувати | 35 |
 
 ---
 

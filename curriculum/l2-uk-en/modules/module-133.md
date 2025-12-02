@@ -284,18 +284,25 @@ Practice being a news anchor:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| казати | /kɑˈzɑtɪ/ | to say | impf |
-| сказати | /skɑˈzɑtɪ/ | to say | pf |
-| говорити | /ɦovoˈrɪtɪ/ | to speak, talk | impf |
 | розповідати | /rospovʲiˈdɑtɪ/ | to tell, narrate | impf |
-| розповісти | /rospoˈvʲistɪ/ | to tell | pf |
-| повідомляти | /povʲidomˈlʲɑtɪ/ | to inform, report | impf |
-| повідомити | /povʲiˈdomɪtɪ/ | to inform | pf |
 | заявляти | /zɑjɑvˈlʲɑtɪ/ | to declare | impf |
-| заявити | /zɑˈjɑvɪtɪ/ | to declare | pf |
-| стверджувати | /stˈvɛrd͡ʒuvɑtɪ/ | to claim, assert | impf |
 | оповідати | /opovʲiˈdɑtɪ/ | to narrate | impf, literary |
-| мова | /ˈmovɑ/ | language, speech | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| казати | 31 |
+| сказати | 31 |
+| говорити | 6 |
+| розповісти | 42 |
+| повідомляти | 33 |
+| повідомити | 116 |
+| заявити | 116 |
+| стверджувати | 116 |
+| мова | 2 |
 
 ---
 

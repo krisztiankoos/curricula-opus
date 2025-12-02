@@ -315,11 +315,7 @@ Ask your partner about their routine:
 
 | Word | IPA | English | Aspect | Pair |
 |------|-----|---------|--------|------|
-| прокидатися | /prokɪˈdɑtɪsʲɑ/ | to wake up | impf | прокинутися |
-| прокинутися | /prokɪˈnutɪsʲɑ/ | to wake up (pf) | pf | прокидатися |
-| засинати | /zɑsɪˈnɑtɪ/ | to fall asleep | impf | заснути |
 | заснути | /zɑsˈnutɪ/ | to fall asleep (pf) | pf | засинати |
-| хвилюватися | /xvɪlʲuˈvɑtɪsʲɑ/ | to worry | impf | захвилюватися |
 | захвилюватися | /zɑxvɪlʲuˈvɑtɪsʲɑ/ | to worry (pf) | pf | хвилюватися |
 | змінювати | /zmʲiˈnʲuvɑtɪ/ | to change | impf | змінити |
 | змінити | /zmʲiˈnɪtɪ/ | to change (pf) | pf | змінювати |
@@ -327,8 +323,19 @@ Ask your partner about their routine:
 | покращити | /pokrɑˈʃɪtɪ/ | to improve (pf) | pf | покращувати |
 | створювати | /stvoˈrʲuvɑtɪ/ | to create | impf | створити |
 | створити | /stvoˈrɪtɪ/ | to create (pf) | pf | створювати |
-| телефонувати | /tɛlɛfonuˈvɑtɪ/ | to call | impf | зателефонувати |
 | зателефонувати | /zɑtɛlɛfonuˈvɑtɪ/ | to call (pf) | pf | телефонувати |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| прокидатися | 25 |
+| прокинутися | 43 |
+| засинати | 25 |
+| хвилюватися | 71 |
+| телефонувати | 8 |
 
 ---
 

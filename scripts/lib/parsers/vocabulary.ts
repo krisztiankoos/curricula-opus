@@ -3,10 +3,12 @@
  *
  * Parses vocabulary tables from module markdown.
  *
- * Table format:
- * | Ukrainian | Transliteration | IPA | English | POS | Gender | Notes |
- * |-----------|-----------------|-----|---------|-----|--------|-------|
- * | слово     | slovo           | /ˈslɔwɔ/ | word | noun | n | - |
+ * Supported table formats:
+ *
+ * 3 columns (B2+): Слово | Переклад | Примітки
+ * 4 columns (B2):  Слово | Вимова | Переклад | Приклад
+ * 6 columns:       Word | IPA | English | POS | Gender | Note
+ * 7 columns (A1):  Word | Translit | IPA | English | POS | Gender | Note
  *
  * Also handles letter groups for alphabet modules:
  * # Letter Groups
@@ -23,49 +25,97 @@ import { VocabWord, VocabularySection, LetterGroup } from '../types';
 
 /**
  * Parse vocabulary section from markdown body
+ * Handles both # Vocabulary (new words) and # Review Vocabulary sections
  */
 export function parseVocabulary(body: string, moduleNum: number): {
   vocabulary: VocabWord[];
+  reviewVocabulary: VocabWord[];
   restBody: string;
 } {
   const vocabulary: VocabWord[] = [];
+  const reviewVocabulary: VocabWord[] = [];
+  let restBody = body;
 
-  // Find vocabulary section
+  // Find main vocabulary section (new words)
   const vocabMatch = body.match(
-    /# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок|Summary)|$)/
+    /# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок|Summary|Review Vocabulary)|$)/
   );
 
-  if (!vocabMatch) {
-    return { vocabulary: [], restBody: body };
-  }
+  if (vocabMatch) {
+    const vocabContent = vocabMatch[1];
+    restBody = restBody.replace(vocabMatch[0], '');
 
-  const vocabContent = vocabMatch[1];
-  const restBody = body.replace(vocabMatch[0], '');
+    // Find table in vocab content
+    const tableMatch = vocabContent.match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|$)/);
 
-  // Find table in vocab content
-  const tableMatch = vocabContent.match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|$)/);
+    if (tableMatch) {
+      const rows = tableMatch[1].trim().split('\n');
 
-  if (tableMatch) {
-    const rows = tableMatch[1].trim().split('\n');
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const cells = row.split('|').filter(c => c.trim());
 
-    for (let i = 0; i < rows.length; i++) {
-      const row = rows[i];
-      const cells = row.split('|').filter(c => c.trim());
-
-      if (cells.length >= 4) {
-        const word = parseVocabRow(cells, moduleNum, i);
-        vocabulary.push(word);
+        // Need at least 2 columns (word + translation)
+        if (cells.length >= 2) {
+          const word = parseVocabRow(cells, moduleNum, i);
+          word.isNew = true;
+          word.firstModule = moduleNum;
+          vocabulary.push(word);
+        }
       }
     }
   }
 
-  return { vocabulary, restBody };
+  // Find review vocabulary section (words from earlier modules)
+  const reviewMatch = restBody.match(
+    /# Review Vocabulary\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок|Summary|Вправи|Activities)|$)/
+  );
+
+  if (reviewMatch) {
+    const reviewContent = reviewMatch[1];
+    restBody = restBody.replace(reviewMatch[0], '');
+
+    // Find table in review content
+    // Review table format: | Word | First Module |
+    const tableMatch = reviewContent.match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|$)/);
+
+    if (tableMatch) {
+      const rows = tableMatch[1].trim().split('\n');
+
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const cells = row.split('|').filter(c => c.trim());
+
+        // Review table: Word | First Module
+        if (cells.length >= 2) {
+          const uk = cells[0]?.trim() || '';
+          const firstModuleStr = cells[1]?.trim() || '';
+          const firstModule = parseInt(firstModuleStr) || 0;
+
+          const word: VocabWord = {
+            id: generateVocabId(uk, moduleNum, i + 1000), // Offset ID to avoid collision
+            uk,
+            en: '', // Not stored in review table
+            pos: 'noun',
+            isNew: false,
+            firstModule,
+          };
+
+          reviewVocabulary.push(word);
+        }
+      }
+    }
+  }
+
+  return { vocabulary, reviewVocabulary, restBody };
 }
 
 /**
  * Parse a single vocabulary row into VocabWord
  *
- * Supports two table formats:
+ * Supports multiple table formats:
+ * - 3 columns: Word | Translation | Notes (B2+ simplified)
+ * - 4 columns: Word | IPA | Translation | Example (B2 with pronunciation)
  * - 6 columns: Word | IPA | English | POS | Gender | Note
  * - 7 columns: Word | Translit | IPA | English | POS | Gender | Note
  */
@@ -82,7 +132,7 @@ function parseVocabRow(cells: string[], moduleNum: number, index: number): Vocab
     pos = cells[4]?.trim() || 'noun';
     gender = parseGender(cells[5]?.trim());
     note = cells[6]?.trim() || undefined;
-  } else {
+  } else if (cells.length === 6) {
     // 6 columns: Word | IPA | English | POS | Gender | Note
     uk = cells[0]?.trim() || '';
     translit = undefined;
@@ -91,6 +141,34 @@ function parseVocabRow(cells: string[], moduleNum: number, index: number): Vocab
     pos = cells[3]?.trim() || 'noun';
     gender = parseGender(cells[4]?.trim());
     note = cells[5]?.trim() || undefined;
+  } else if (cells.length === 4) {
+    // 4 columns: Word | IPA | Translation | Example
+    // IPA starts with /
+    uk = cells[0]?.trim() || '';
+    translit = undefined;
+    ipa = cells[1]?.trim() || undefined;
+    en = cells[2]?.trim() || '';
+    pos = 'noun'; // Not specified in this format
+    gender = undefined;
+    note = cells[3]?.trim() || undefined; // Example as note
+  } else if (cells.length === 3) {
+    // 3 columns: Word | Translation | Notes (simplified B2+ format)
+    uk = cells[0]?.trim() || '';
+    translit = undefined;
+    ipa = undefined;
+    en = cells[1]?.trim() || '';
+    pos = 'noun'; // Not specified in this format
+    gender = undefined;
+    note = cells[2]?.trim() || undefined;
+  } else {
+    // 2 columns: Word | Translation (minimum)
+    uk = cells[0]?.trim() || '';
+    translit = undefined;
+    ipa = undefined;
+    en = cells[1]?.trim() || '';
+    pos = 'noun';
+    gender = undefined;
+    note = undefined;
   }
 
   // Generate ID from Ukrainian word
@@ -205,16 +283,26 @@ export function buildVocabularySection(
   level: string,
   phase: string,
   transliterationMode: string,
-  letterGroups?: LetterGroup[]
+  letterGroups?: LetterGroup[],
+  reviewVocabulary?: VocabWord[]
 ): VocabularySection {
+  const newWordCount = vocabulary.length;
+  const reviewWordCount = reviewVocabulary?.length || 0;
+
   const section: VocabularySection = {
     moduleId: `mod-uk-${level}-${moduleNum}`,
     level,
     phase,
-    wordCount: vocabulary.length,
+    wordCount: newWordCount + reviewWordCount, // Total words in module
+    newWordCount,
+    reviewWordCount,
     transliterationMode,
     words: vocabulary,
   };
+
+  if (reviewVocabulary && reviewVocabulary.length > 0) {
+    section.reviewWords = reviewVocabulary;
+  }
 
   if (letterGroups && letterGroups.length > 0) {
     section.letterGroups = letterGroups;

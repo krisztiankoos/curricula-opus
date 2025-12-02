@@ -376,17 +376,17 @@ Describe your travel plans:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| потяг | /ˈpotʲɑɦ/ | train | noun | m | |
-| вокзал | /vokˈzɑl/ | train station | noun | m | |
-| платформа | /plɑtˈformɑ/ | platform | noun | f | |
-| відправлення | /vʲidprɑvˈlɛnʲɑ/ | departure | noun | n | |
-| прибуття | /prɪˈbutʲɑ/ | arrival | noun | n | |
-| затримка | /zɑˈtrɪmkɑ/ | delay | noun | f | |
-| багаж | /bɑˈɦɑʒ/ | luggage | noun | m | |
-| посадковий талон | /posɑdˈkovɪj tɑˈlon/ | boarding pass | noun | m | |
-| рейс | /rɛjs/ | flight | noun | m | |
+| потяг | /ˈpotʲɑɦ/ | train | noun | m |
+| вокзал | /vokˈzɑl/ | train station | noun | m |
+| платформа | /plɑtˈformɑ/ | platform | noun | f |
+| відправлення | /vʲidprɑvˈlɛnʲɑ/ | departure | noun | n |
+| прибуття | /prɪˈbutʲɑ/ | arrival | noun | n |
+| затримка | /zɑˈtrɪmkɑ/ | delay | noun | f |
+| багаж | /bɑˈɦɑʒ/ | luggage | noun | m |
+| посадковий талон | /posɑdˈkovɪj tɑˈlon/ | boarding pass | noun | m |
+| рейс | /rɛjs/ | flight | noun | m |
 | купе | /kuˈpɛ/ | compartment | noun | n | indecl |
-| провідник | /provʲidˈnɪk/ | conductor | noun | m | |
+| провідник | /provʲidˈnɪk/ | conductor | noun | m |
 
 ---
 

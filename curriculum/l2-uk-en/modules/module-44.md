@@ -393,8 +393,8 @@ Make comparatives from these adjectives:
 | менше | /ˈmɛnʃɛ/ | less | adv | - | comp of мало |
 | краще | /ˈkrɑʃtʃɛ/ | better | adv | - | comp of добре |
 | гірше | /ˈɦʲirʃɛ/ | worse | adv | - | comp of погано |
-| набагато | /nɑbɑˈɦɑto/ | much (intensifier) | adv | - | |
-| значно | /ˈznɑtʃno/ | significantly | adv | - | |
+| набагато | /nɑbɑˈɦɑto/ | much (intensifier) | adv | - |
+| значно | /ˈznɑtʃno/ | significantly | adv | - |
 
 ---
 

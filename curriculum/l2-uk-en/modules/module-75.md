@@ -379,51 +379,58 @@ Discuss these questions:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| дитячий садок | /dɪˈtʲɑtʃɪj sɑˈdok/ | kindergarten | noun | m | |
-| початкова школа | /potʃɑtˈkovɑ ˈʃkolɑ/ | elementary school | noun | f | |
-| гімназія | /ɦʲimˈnɑzʲijɑ/ | gymnasium | noun | f | |
-| ліцей | /lʲiˈtsɛj/ | lyceum | noun | m | |
-| аспірантура | /ɑspʲirɑnˈturɑ/ | graduate school | noun | f | |
-| математика | /mɑtɛˈmɑtɪkɑ/ | mathematics | noun | f | |
-| література | /lʲitɛrɑˈturɑ/ | literature | noun | f | |
-| історія | /isˈtorʲijɑ/ | history | noun | f | |
-| географія | /ɦɛoˈɦrɑfʲijɑ/ | geography | noun | f | |
-| біологія | /bʲioˈloɦʲijɑ/ | biology | noun | f | |
-| фізика | /ˈfʲizɪkɑ/ | physics | noun | f | |
-| хімія | /ˈxʲimʲijɑ/ | chemistry | noun | f | |
-| інформатика | /informɑˈtɪkɑ/ | computer science | noun | f | |
-| факультет | /fɑkulʲˈtɛt/ | faculty | noun | m | |
-| спеціальність | /spɛtsʲiˈɑlʲnʲistʲ/ | major, specialty | noun | f | |
-| семестр | /sɛˈmɛstr/ | semester | noun | m | |
-| лекція | /ˈlɛktsʲijɑ/ | lecture | noun | f | |
-| семінар | /sɛmʲiˈnɑr/ | seminar | noun | m | |
-| диплом | /dɪpˈlom/ | diploma | noun | m | |
-| ступінь | /ˈstupʲinʲ/ | degree | noun | m | |
-| бакалавр | /bɑkɑˈlɑvr/ | bachelor's | noun | m | |
-| магістр | /mɑˈɦʲistr/ | master's | noun | m | |
-| учень | /uˈtʃɛnʲ/ | pupil | noun | m | |
-| однокласник | /odnoˈklɑsnɪk/ | classmate (school) | noun | m | |
-| одногрупник | /odnoˈɦrupnɪk/ | classmate (uni) | noun | m | |
-| випускник | /ˈvɪpusknɪk/ | graduate | noun | m | |
-| декан | /dɛˈkɑn/ | dean | noun | m | |
-| ректор | /ˈrɛktor/ | rector | noun | m | |
-| іспит | /ˈispɪt/ | exam | noun | m | |
-| залік | /zɑˈlʲik/ | credit test | noun | m | |
-| оцінка | /oˈtsʲinkɑ/ | grade | noun | f | |
-| сесія | /ˈsɛsʲijɑ/ | exam period | noun | f | |
-| відмінник | /vʲidˈmʲinnɪk/ | excellent student | noun | m | |
-| підручник | /pʲidˈrutʃnɪk/ | textbook | noun | m | |
-| зошит | /ˈzoʃɪt/ | notebook | noun | m | |
-| конспект | /konˈspɛkt/ | notes | noun | m | |
-| реферат | /rɛfɛˈrɑt/ | essay | noun | m | |
-| курсова робота | /kurˈsovɑ roˈbotɑ/ | term paper | noun | f | |
-| дипломна робота | /dɪpˈlomnɑ roˈbotɑ/ | thesis | noun | f | |
-| вчитися | /vtʃɪˈtɪsʲɑ/ | to study | verb | - | impf |
+| дитячий садок | /dɪˈtʲɑtʃɪj sɑˈdok/ | kindergarten | noun | m |
+| початкова школа | /potʃɑtˈkovɑ ˈʃkolɑ/ | elementary school | noun | f |
+| гімназія | /ɦʲimˈnɑzʲijɑ/ | gymnasium | noun | f |
+| ліцей | /lʲiˈtsɛj/ | lyceum | noun | m |
+| аспірантура | /ɑspʲirɑnˈturɑ/ | graduate school | noun | f |
+| математика | /mɑtɛˈmɑtɪkɑ/ | mathematics | noun | f |
+| література | /lʲitɛrɑˈturɑ/ | literature | noun | f |
+| географія | /ɦɛoˈɦrɑfʲijɑ/ | geography | noun | f |
+| біологія | /bʲioˈloɦʲijɑ/ | biology | noun | f |
+| фізика | /ˈfʲizɪkɑ/ | physics | noun | f |
+| хімія | /ˈxʲimʲijɑ/ | chemistry | noun | f |
+| інформатика | /informɑˈtɪkɑ/ | computer science | noun | f |
+| факультет | /fɑkulʲˈtɛt/ | faculty | noun | m |
+| спеціальність | /spɛtsʲiˈɑlʲnʲistʲ/ | major, specialty | noun | f |
+| семестр | /sɛˈmɛstr/ | semester | noun | m |
+| семінар | /sɛmʲiˈnɑr/ | seminar | noun | m |
+| диплом | /dɪpˈlom/ | diploma | noun | m |
+| ступінь | /ˈstupʲinʲ/ | degree | noun | m |
+| бакалавр | /bɑkɑˈlɑvr/ | bachelor's | noun | m |
+| магістр | /mɑˈɦʲistr/ | master's | noun | m |
+| однокласник | /odnoˈklɑsnɪk/ | classmate (school) | noun | m |
+| одногрупник | /odnoˈɦrupnɪk/ | classmate (uni) | noun | m |
+| випускник | /ˈvɪpusknɪk/ | graduate | noun | m |
+| декан | /dɛˈkɑn/ | dean | noun | m |
+| ректор | /ˈrɛktor/ | rector | noun | m |
+| іспит | /ˈispɪt/ | exam | noun | m |
+| залік | /zɑˈlʲik/ | credit test | noun | m |
+| оцінка | /oˈtsʲinkɑ/ | grade | noun | f |
+| сесія | /ˈsɛsʲijɑ/ | exam period | noun | f |
+| відмінник | /vʲidˈmʲinnɪk/ | excellent student | noun | m |
+| підручник | /pʲidˈrutʃnɪk/ | textbook | noun | m |
+| зошит | /ˈzoʃɪt/ | notebook | noun | m |
+| конспект | /konˈspɛkt/ | notes | noun | m |
+| реферат | /rɛfɛˈrɑt/ | essay | noun | m |
+| курсова робота | /kurˈsovɑ roˈbotɑ/ | term paper | noun | f |
+| дипломна робота | /dɪpˈlomnɑ roˈbotɑ/ | thesis | noun | f |
 | вивчати | /vɪvˈtʃɑtɪ/ | to study (subj) | verb | - | impf |
 | складати | /sklɑˈdɑtɪ/ | to take (exam) | verb | - | impf |
 | здавати | /zdɑˈvɑtɪ/ | to pass | verb | - | impf |
 | пропускати | /propusˈkɑtɪ/ | to miss | verb | - | impf |
 | закінчувати | /zɑˈkʲintʃuvɑtɪ/ | to graduate | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| історія | 62 |
+| лекція | 38 |
+| учень | 65 |
+| вчитися | 8 |
 
 ---
 

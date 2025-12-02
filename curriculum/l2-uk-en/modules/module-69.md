@@ -400,44 +400,51 @@ Describe your weekly routine:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| диван | /dɪˈvɑn/ | sofa | noun | m | |
-| крісло | /ˈkrʲislo/ | armchair | noun | n | |
-| журнальний столик | /ʒurnɑlʲnɪj ˈstolɪk/ | coffee table | noun | m | |
-| килим | /kɪˈlɪm/ | carpet, rug | noun | m | |
-| штори | /ˈʃtorɪ/ | curtains | noun | pl | |
-| ліжко | /ˈlʲiʒko/ | bed | noun | n | |
-| матрац | /mɑˈtrɑts/ | mattress | noun | m | |
-| подушка | /poˈduʃkɑ/ | pillow | noun | f | |
-| ковдра | /ˈkovdrɑ/ | blanket | noun | f | |
-| простирадло | /prostɪˈrɑdlo/ | sheet | noun | n | |
-| тумбочка | /tumˈbotʃkɑ/ | nightstand | noun | f | |
-| шафа | /ˈʃɑfɑ/ | wardrobe | noun | f | |
-| комод | /koˈmod/ | dresser | noun | m | |
-| дзеркало | /ˈdzɛrkɑlo/ | mirror | noun | n | |
-| мийка | /ˈmɪjkɑ/ | sink | noun | f | |
-| посуд | /ˈposud/ | dishes | noun | m | |
-| ванна | /ˈvɑnːɑ/ | bathtub | noun | f | |
-| душ | /duʃ/ | shower | noun | m | |
-| умивальник | /umɪˈvɑlʲnɪk/ | sink (bathroom) | noun | m | |
-| рушник | /ruʃˈnɪk/ | towel | noun | m | |
-| мило | /ˈmɪlo/ | soap | noun | n | |
-| пральна машина | /ˈprɑlʲnɑ mɑˈʃɪnɑ/ | washing machine | noun | f | |
-| письмовий стіл | /pɪsʲˈmovɪj stʲil/ | desk | noun | m | |
-| шухляда | /ʃuxˈlʲɑdɑ/ | drawer | noun | f | |
-| квартира | /kvɑrˈtɪrɑ/ | apartment | noun | f | |
-| поверх | /ˈpovɛrx/ | floor (level) | noun | m | |
-| балкон | /bɑlˈkon/ | balcony | noun | m | |
-| ліфт | /lʲift/ | elevator | noun | m | |
-| сходи | /ˈsxodɪ/ | stairs | noun | pl | |
+| диван | /dɪˈvɑn/ | sofa | noun | m |
+| крісло | /ˈkrʲislo/ | armchair | noun | n |
+| журнальний столик | /ʒurnɑlʲnɪj ˈstolɪk/ | coffee table | noun | m |
+| килим | /kɪˈlɪm/ | carpet, rug | noun | m |
+| штори | /ˈʃtorɪ/ | curtains | noun | pl |
+| матрац | /mɑˈtrɑts/ | mattress | noun | m |
+| подушка | /poˈduʃkɑ/ | pillow | noun | f |
+| ковдра | /ˈkovdrɑ/ | blanket | noun | f |
+| простирадло | /prostɪˈrɑdlo/ | sheet | noun | n |
+| тумбочка | /tumˈbotʃkɑ/ | nightstand | noun | f |
+| шафа | /ˈʃɑfɑ/ | wardrobe | noun | f |
+| комод | /koˈmod/ | dresser | noun | m |
+| дзеркало | /ˈdzɛrkɑlo/ | mirror | noun | n |
+| мийка | /ˈmɪjkɑ/ | sink | noun | f |
+| посуд | /ˈposud/ | dishes | noun | m |
+| ванна | /ˈvɑnːɑ/ | bathtub | noun | f |
+| умивальник | /umɪˈvɑlʲnɪk/ | sink (bathroom) | noun | m |
+| рушник | /ruʃˈnɪk/ | towel | noun | m |
+| мило | /ˈmɪlo/ | soap | noun | n |
+| пральна машина | /ˈprɑlʲnɑ mɑˈʃɪnɑ/ | washing machine | noun | f |
+| письмовий стіл | /pɪsʲˈmovɪj stʲil/ | desk | noun | m |
+| шухляда | /ʃuxˈlʲɑdɑ/ | drawer | noun | f |
+| квартира | /kvɑrˈtɪrɑ/ | apartment | noun | f |
+| балкон | /bɑlˈkon/ | balcony | noun | m |
+| ліфт | /lʲift/ | elevator | noun | m |
+| сходи | /ˈsxodɪ/ | stairs | noun | pl |
 | орендувати | /orɛnduˈvɑtɪ/ | to rent | verb | - | impf |
 | переїжджати | /pɛrɛˈjiʒdʒɑtɪ/ | to move | verb | - | impf |
 | прибирати | /prɪbɪˈrɑtɪ/ | to clean | verb | - | impf |
 | пилососити | /pɪloˈsosɪtɪ/ | to vacuum | verb | - | impf |
-| просторий | /prosˈtorɪj/ | spacious | adj | - | |
-| затишний | /zɑˈtɪʃnɪj/ | cozy | adj | - | |
-| світлий | /ˈsvʲitlɪj/ | bright | adj | - | |
-| сучасний | /sutʃɑsˈnɪj/ | modern | adj | - | |
-| обладнаний | /oblɑdˈnɑnɪj/ | furnished | adj | - | |
+| просторий | /prosˈtorɪj/ | spacious | adj | - |
+| затишний | /zɑˈtɪʃnɪj/ | cozy | adj | - |
+| світлий | /ˈsvʲitlɪj/ | bright | adj | - |
+| сучасний | /sutʃɑsˈnɪj/ | modern | adj | - |
+| обладнаний | /oblɑdˈnɑnɪj/ | furnished | adj | - |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| ліжко | 5 |
+| душ | 25 |
+| поверх | 38 |
 
 ---
 

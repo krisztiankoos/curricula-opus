@@ -263,21 +263,28 @@ Report what these people typically say:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| попросити | /poprosɪˈtɪ/ | to ask, request | pf |
-| просити | /proˈsɪtɪ/ | to ask, request | impf |
-| наказати | /nɑkɑˈzɑtɪ/ | to order | pf |
-| вимагати | /vɪmɑˈɦɑtɪ/ | to demand | impf |
-| порадити | /porɑˈdɪtɪ/ | to advise | pf |
-| радити | /ˈrɑdɪtɪ/ | to advise | impf |
-| запропонувати | /zɑproponuˈvɑtɪ/ | to suggest | pf |
 | заборонити | /zɑboroˈnɪtɪ/ | to forbid | pf |
 | дозволити | /dozvoˈlɪtɪ/ | to allow, permit | pf |
 | благати | /blɑˈɦɑtɪ/ | to beg | impf |
 | наказ | /nɑˈkɑz/ | order, command | m |
 | прохання | /proˈxɑnʲːɑ/ | request | n |
-| порада | /poˈrɑdɑ/ | advice | f |
 | заборона | /zɑboˈronɑ/ | prohibition | f |
 | дозвіл | /ˈdozʲvʲil/ | permission | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| попросити | 104 |
+| просити | 8 |
+| наказати | 104 |
+| вимагати | 104 |
+| порадити | 104 |
+| радити | 33 |
+| запропонувати | 98 |
+| порада | 32 |
 
 ---
 

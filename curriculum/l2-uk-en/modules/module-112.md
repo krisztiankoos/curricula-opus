@@ -269,11 +269,18 @@ Discuss using vocabulary from this module:
 | закон | /zɑˈkon/ | law | m |
 | право | /ˈprɑvo/ | right | n |
 | громадянин | /ɦromɑdʲɑˈnɪn/ | citizen | m |
-| суспільство | /susˈpʲilʲstvo/ | society | n |
 | свобода | /svoˈbodɑ/ | freedom | f |
 | рівність | /rʲivˈnʲistʲ/ | equality | f |
 | реформа | /rɛˈformɑ/ | reform | f |
 | корупція | /koˈrupt͡sʲijɑ/ | corruption | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| суспільство | 63 |
 
 ---
 

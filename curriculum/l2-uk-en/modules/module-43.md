@@ -371,16 +371,16 @@ Notice:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| поки | /poˈkɪ/ | while | conj | - | |
+| поки | /poˈkɪ/ | while | conj | - |
 | перш ніж | /pɛrʃ nʲiʒ/ | before | conj | - | + perfective |
 | після того як | /ˈpʲislʲɑ toˈɦo jɑk/ | after | conj | - | + perfective |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | adv | - | |
-| раптом | /ˈrɑptom/ | suddenly | adv | - | |
-| прокинутися | /proˈkɪnutɪsʲɑ/ | to wake up (perf) | verb | - | |
-| повернутися | /povɛrˈnutɪsʲɑ/ | to return (perf) | verb | - | |
-| збирати | /zbɪˈrɑtɪ/ | to gather (impf) | verb | - | |
-| зібрати | /zʲiˈbrɑtɪ/ | to gather (perf) | verb | - | |
-| відпочивати | /vʲidpotʃɪˈvɑtɪ/ | to rest (impf) | verb | - | |
+| нарешті | /nɑˈrɛʃtʲi/ | finally | adv | - |
+| раптом | /ˈrɑptom/ | suddenly | adv | - |
+| прокинутися | /proˈkɪnutɪsʲɑ/ | to wake up (perf) | verb | - |
+| повернутися | /povɛrˈnutɪsʲɑ/ | to return (perf) | verb | - |
+| збирати | /zbɪˈrɑtɪ/ | to gather (impf) | verb | - |
+| зібрати | /zʲiˈbrɑtɪ/ | to gather (perf) | verb | - |
+| відпочивати | /vʲidpotʃɪˈvɑtɪ/ | to rest (impf) | verb | - |
 
 ---
 

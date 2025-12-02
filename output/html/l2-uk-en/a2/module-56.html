@@ -945,7 +945,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/6</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">дзвінок</div><div class="match-item" data-pair="1">повідомлення</div><div class="match-item" data-pair="2">електронна пошта</div><div class="match-item" data-pair="3">пароль</div><div class="match-item" data-pair="4">підписатися</div><div class="match-item" data-pair="5">поділитися</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">to share</div><div class="match-item" data-pair="3">password</div><div class="match-item" data-pair="2">email</div><div class="match-item" data-pair="1">message</div><div class="match-item" data-pair="0">call</div><div class="match-item" data-pair="4">to follow</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="5">to share</div><div class="match-item" data-pair="1">message</div><div class="match-item" data-pair="3">password</div><div class="match-item" data-pair="0">call</div><div class="match-item" data-pair="2">email</div><div class="match-item" data-pair="4">to follow</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -974,14 +974,15 @@ footer {
             <thead><tr>
     <th>Слово</th>
     
-    <th>IPA</th>
+    
     <th>Переклад</th>
     
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">дзвінок</td><td class="vocab-ipa">/dzvʲiˈnok/</td><td class="vocab-en">call</td></tr><tr><td class="vocab-uk">отримати</td><td class="vocab-ipa">/otrɪˈmɑtɪ/</td><td class="vocab-en">to receive (perf)</td></tr><tr><td class="vocab-uk">переслати</td><td class="vocab-ipa">/pɛrɛˈslɑtɪ/</td><td class="vocab-en">to forward (perf)</td></tr><tr><td class="vocab-uk">вкладення</td><td class="vocab-ipa">/vklɑˈdɛnʲɑ/</td><td class="vocab-en">attachment</td></tr><tr><td class="vocab-uk">посилання</td><td class="vocab-ipa">/posɪˈlɑnʲɑ/</td><td class="vocab-en">link</td></tr><tr><td class="vocab-uk">пароль</td><td class="vocab-ipa">/pɑˈrolʲ/</td><td class="vocab-en">password</td></tr><tr><td class="vocab-uk">підписатися</td><td class="vocab-ipa">/pʲidpɪˈsɑtɪsʲɑ/</td><td class="vocab-en">to subscribe, follow</td></tr><tr><td class="vocab-uk">поділитися</td><td class="vocab-ipa">/podʲiˈlɪtɪsʲɑ/</td><td class="vocab-en">to share</td></tr><tr><td class="vocab-uk">завантажити</td><td class="vocab-ipa">/zɑvɑnˈtɑʒɪtɪ/</td><td class="vocab-en">to download (perf)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">дзвінок</td><td class="vocab-en">/dzvʲiˈnok/</td></tr><tr><td class="vocab-uk">отримати</td><td class="vocab-en">/otrɪˈmɑtɪ/</td></tr><tr><td class="vocab-uk">переслати</td><td class="vocab-en">/pɛrɛˈslɑtɪ/</td></tr><tr><td class="vocab-uk">вкладення</td><td class="vocab-en">/vklɑˈdɛnʲɑ/</td></tr><tr><td class="vocab-uk">посилання</td><td class="vocab-en">/posɪˈlɑnʲɑ/</td></tr><tr><td class="vocab-uk">пароль</td><td class="vocab-en">/pɑˈrolʲ/</td></tr><tr><td class="vocab-uk">підписатися</td><td class="vocab-en">/pʲidpɪˈsɑtɪsʲɑ/</td></tr><tr><td class="vocab-uk">поділитися</td><td class="vocab-en">/podʲiˈlɪtɪsʲɑ/</td></tr><tr><td class="vocab-uk">завантажити</td><td class="vocab-en">/zɑvɑnˈtɑʒɪtɪ/</td></tr></tbody>
           </table>
         </div>
       </div>
+      
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -992,7 +993,7 @@ footer {
     const matchPairs = [{"left":"дзвінок","right":"call"},{"left":"повідомлення","right":"message"},{"left":"електронна пошта","right":"email"},{"left":"пароль","right":"password"},{"left":"підписатися","right":"to follow"},{"left":"поділитися","right":"to share"}];
     const quizData = [{"question":"\"Hello?\" (phone) - ___?","options":["Алло","Привіт","Добрий день","Здрастуйте"],"correctIndex":0,"explanation":"Phone greeting = Алло."},{"question":"\"Please wait\" - ___, будь ласка.","options":["Зачекайте","Чекайте","Чекати","Почекавши"],"correctIndex":0,"explanation":"Imperative = зачекайте."},{"question":"\"Who's calling?\" - Хто ___?","options":["дзвонить","дзвонив","дзвонити","дзвінок"],"correctIndex":0,"explanation":"Present tense = дзвонить."},{"question":"\"Best regards\" - З ___.","options":["повагою","повага","повазі","поваги"],"correctIndex":0,"explanation":"Fixed expression = з повагою."},{"question":"\"Send me a link\" - ___ мені посилання.","options":["Надішли","Надіслати","Надіславши","Надсилаєш"],"correctIndex":0,"explanation":"Imperative = надішли."},{"question":"\"Follow me!\" - ___ на мене!","options":["Підпишись","Підписуйся","Підписатися","Підписка"],"correctIndex":0,"explanation":"Imperative = підпишись."}];
     const sortData = {"true-friends":["Шановний пане...","З повагою","Чи можу я поговорити з...","Пишу вам з приводу...","Дякую за ваш час"],"false-friends":["Привіт!","До зв'язку!","Скинь посилання","Як справи?","Напиши мені"]};
-    const vocabData = [{"uk":"дзвінок","translit":"","en":"call","note":""},{"uk":"отримати","translit":"","en":"to receive (perf)","note":""},{"uk":"переслати","translit":"","en":"to forward (perf)","note":""},{"uk":"вкладення","translit":"","en":"attachment","note":""},{"uk":"посилання","translit":"","en":"link","note":""},{"uk":"пароль","translit":"","en":"password","note":""},{"uk":"підписатися","translit":"","en":"to subscribe, follow","note":""},{"uk":"поділитися","translit":"","en":"to share","note":""},{"uk":"завантажити","translit":"","en":"to download (perf)","note":""}];
+    const vocabData = [{"uk":"дзвінок","translit":"","en":"/dzvʲiˈnok/","note":""},{"uk":"отримати","translit":"","en":"/otrɪˈmɑtɪ/","note":""},{"uk":"переслати","translit":"","en":"/pɛrɛˈslɑtɪ/","note":""},{"uk":"вкладення","translit":"","en":"/vklɑˈdɛnʲɑ/","note":""},{"uk":"посилання","translit":"","en":"/posɪˈlɑnʲɑ/","note":""},{"uk":"пароль","translit":"","en":"/pɑˈrolʲ/","note":""},{"uk":"підписатися","translit":"","en":"/pʲidpɪˈsɑtɪsʲɑ/","note":""},{"uk":"поділитися","translit":"","en":"/podʲiˈlɪtɪsʲɑ/","note":""},{"uk":"завантажити","translit":"","en":"/zɑvɑnˈtɑʒɪtɪ/","note":""}];
     const totalSort = 10;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -849,7 +849,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (12)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -857,12 +857,13 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">інверсія</td><td class="vocab-en">inversion</td><td class="vocab-note">зміна порядку</td></tr><tr><td class="vocab-uk">емфаза</td><td class="vocab-en">emphasis</td><td class="vocab-note">підсилення</td></tr><tr><td class="vocab-uk">порядок слів</td><td class="vocab-en">word order</td><td class="vocab-note">синтаксис</td></tr><tr><td class="vocab-uk">тема</td><td class="vocab-en">theme (given)</td><td class="vocab-note">відоме</td></tr><tr><td class="vocab-uk">рема</td><td class="vocab-en">rheme (new)</td><td class="vocab-note">нове</td></tr><tr><td class="vocab-uk">підсилення</td><td class="vocab-en">intensification</td><td class="vocab-note">акцент</td></tr><tr><td class="vocab-uk">саме</td><td class="vocab-en">exactly, particularly</td><td class="vocab-note">найсильніший засіб</td></tr><tr><td class="vocab-uk">навіть</td><td class="vocab-en">even</td><td class="vocab-note">несподіванка</td></tr><tr><td class="vocab-uk">лише</td><td class="vocab-en">only</td><td class="vocab-note">обмеження</td></tr><tr><td class="vocab-uk">справді</td><td class="vocab-en">really, truly</td><td class="vocab-note">підтвердження</td></tr><tr><td class="vocab-uk">аж</td><td class="vocab-en">even, as much as</td><td class="vocab-note">інтенсивність</td></tr><tr><td class="vocab-uk">ж/же</td><td class="vocab-en">(emphatic particle)</td><td class="vocab-note">очевидність</td></tr></tbody>
           </table>
         </div>
       </div>
+      
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -873,7 +874,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Книгу Петро купив.» — що виділено?","options":["Книгу (на незвичній позиції)","Петро","Купив"],"correctIndex":0,"explanation":"Книгу на початку → виділення об'єкта"},{"question":"«Саме він це зробив.» — що виділено?","options":["Він (підмет)","Зробив","Це"],"correctIndex":0,"explanation":"«Саме» + підмет → виділення того, хто зробив"},{"question":"«Прийшла весна.» — який ефект створює інверсія?","options":["Офіційність","Поетичність","Розмовність"],"correctIndex":1,"explanation":"Присудок перед підметом → художній стиль"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"інверсія","translit":"","en":"inversion","note":"зміна порядку"},{"uk":"емфаза","translit":"","en":"emphasis","note":"підсилення"},{"uk":"порядок слів","translit":"","en":"word order","note":"синтаксис"},{"uk":"тема","translit":"","en":"theme (given)","note":"відоме"},{"uk":"рема","translit":"","en":"rheme (new)","note":"нове"},{"uk":"підсилення","translit":"","en":"intensification","note":"акцент"},{"uk":"саме","translit":"","en":"exactly, particularly","note":"найсильніший засіб"},{"uk":"навіть","translit":"","en":"even","note":"несподіванка"},{"uk":"лише","translit":"","en":"only","note":"обмеження"},{"uk":"справді","translit":"","en":"really, truly","note":"підтвердження"},{"uk":"аж","translit":"","en":"even, as much as","note":"інтенсивність"},{"uk":"ж/же","translit":"","en":"(emphatic particle)","note":"очевидність"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

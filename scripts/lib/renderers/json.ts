@@ -26,7 +26,7 @@ import { buildVocabularySection } from '../parsers/vocabulary';
  * Generate complete Vibe JSON module
  */
 export function renderVibeJson(parsed: ParsedModule, ctx: RenderContext): VibeModule {
-  const { frontmatter, sections, activities, vocabulary, rawMarkdown } = parsed;
+  const { frontmatter, sections, activities, vocabulary, reviewVocabulary, rawMarkdown } = parsed;
 
   // Build lesson object
   const lesson = buildVibeLesson(parsed, ctx);
@@ -34,13 +34,15 @@ export function renderVibeJson(parsed: ParsedModule, ctx: RenderContext): VibeMo
   // Build activity objects
   const vibeActivities = activities.map(a => buildVibeActivity(a, frontmatter.level));
 
-  // Build vocabulary section
+  // Build vocabulary section (includes both new and review words)
   const vocabSection = buildVocabularySection(
     vocabulary,
     frontmatter.module,
     frontmatter.level,
     frontmatter.phase,
-    frontmatter.transliteration
+    frontmatter.transliteration,
+    undefined, // letterGroups
+    reviewVocabulary
   );
 
   return {

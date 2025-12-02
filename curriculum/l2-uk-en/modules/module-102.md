@@ -290,18 +290,25 @@ Discuss using relative clauses:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| де | /dɛ/ | where (location) | adv |
-| куди | /kuˈdɪ/ | where (to), whither | adv |
-| звідки | /ˈzvʲidkɪ/ | from where, whence | adv |
-| коли | /koˈlɪ/ | when | adv |
-| що | /ʃt͡ʃo/ | that, which, what | pron |
-| місце | /ˈmʲist͡sɛ/ | place | n |
-| час | /t͡ʃɑs/ | time | m |
 | момент | /moˈmɛnt/ | moment | m |
-| рік | /rʲik/ | year | m |
-| день | /dɛnʲ/ | day | m |
 | родом | /ˈrodom/ | originally from | adv |
-| переїхати | /pɛrɛˈjixɑtɪ/ | to move (residence) | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| де | 2 |
+| куди | 7 |
+| звідки | 7 |
+| коли | 7 |
+| що | 2 |
+| місце | 18 |
+| час | 16 |
+| рік | 23 |
+| день | 3 |
+| переїхати | 61 |
 
 ---
 

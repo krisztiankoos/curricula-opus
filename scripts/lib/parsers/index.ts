@@ -36,7 +36,7 @@ export function parseModule(markdown: string, options: ParseOptions = {}): Parse
   };
 
   // Parse vocabulary (do this early to populate imageMap if needed)
-  const { vocabulary, restBody: bodyAfterVocab } = parseVocabulary(body, ctx.moduleNum);
+  const { vocabulary, reviewVocabulary, restBody: bodyAfterVocab } = parseVocabulary(body, ctx.moduleNum);
 
   // Parse letter groups (for alphabet modules)
   const { letterGroups, restBody: bodyAfterLetters } = parseLetterGroups(bodyAfterVocab);
@@ -52,6 +52,7 @@ export function parseModule(markdown: string, options: ParseOptions = {}): Parse
     sections,
     activities,
     vocabulary,
+    reviewVocabulary,
     rawMarkdown: markdown,
   };
 }

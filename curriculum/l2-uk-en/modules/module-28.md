@@ -306,23 +306,24 @@ Describe the weather for:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| погода | /pɔˈɦɔdɑ/ | weather | noun | f |  |
-| хмара | /ˈxmɑrɑ/ | cloud | noun | f |  |
+| погода | /pɔˈɦɔdɑ/ | weather | noun | f |
+| хмара | /ˈxmɑrɑ/ | cloud | noun | f |
 | дощ | /dɔʃtʃ/ | rain | noun | m | Йде дощ |
 | сніг | /snʲiɦ/ | snow | noun | m | Йде сніг |
 | вітер | /ˈvʲitɛr/ | wind | noun | m | Дме вітер |
-| гроза | /ɦrɔˈzɑ/ | thunderstorm | noun | f |  |
-| туман | /tuˈmɑn/ | fog | noun | m |  |
-| мороз | /mɔˈrɔz/ | frost | noun | m |  |
-| веселка | /vɛˈsɛlkɑ/ | rainbow | noun | f |  |
+| гроза | /ɦrɔˈzɑ/ | thunderstorm | noun | f |
+| туман | /tuˈmɑn/ | fog | noun | m |
+| мороз | /mɔˈrɔz/ | frost | noun | m |
+| веселка | /vɛˈsɛlkɑ/ | rainbow | noun | f |
 | тепло | /ˈtɛplɔ/ | warm (adv) | adv | - | Impersonal |
 | холодно | /ˈxɔlɔdnɔ/ | cold (adv) | adv | - | Impersonal |
 | жарко | /ˈʒɑrkɔ/ | hot (adv) | adv | - | Impersonal |
-| сонячний | /sɔˈnʲɑtʃnɪj/ | sunny | adj | m |  |
-| хмарний | /ˈxmɑrnɪj/ | cloudy | adj | m |  |
-| температура | /tɛmpɛrɑˈturɑ/ | temperature | noun | f |  |
-| градус | /ˈɦrɑdus/ | degree | noun | m |  |
-| парасолька | /pɑrɑˈsɔlʲkɑ/ | umbrella | noun | f |  |
+| сонячний | /sɔˈnʲɑtʃnɪj/ | sunny | adj | m |
+| хмарний | /ˈxmɑrnɪj/ | cloudy | adj | m |
+| температура | /tɛmpɛrɑˈturɑ/ | temperature | noun | f |
+| градус | /ˈɦrɑdus/ | degree | noun | m |
+| парасолька | /pɑrɑˈsɔlʲkɑ/ | umbrella | noun | f |
+
 ---
 
 # Weather Summary

@@ -809,6 +809,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-23', this)">Показати відповідь</button><div class="answer-block" id="ans-23"><div class="callout callout-answer" data-callout="answer">міське, зайняте</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -866,7 +867,7 @@ footer {
       <div class="score-display"><span class="score"><span id="match-score">0</span>/5</span></div>
       <div class="match-container" id="match-container"><svg class="match-lines" id="match-lines"></svg>
         <div class="match-column" id="match-left"><div class="match-item" data-pair="0">при-</div><div class="match-item" data-pair="1">ви-</div><div class="match-item" data-pair="2">пере-</div><div class="match-item" data-pair="3">роз-</div><div class="match-item" data-pair="4">за-</div></div>
-        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">apart</div><div class="match-item" data-pair="0">arrival</div><div class="match-item" data-pair="4">behind, start</div><div class="match-item" data-pair="1">exit, out</div><div class="match-item" data-pair="2">across</div></div>
+        <div class="match-column" id="match-right"><div class="match-item" data-pair="3">apart</div><div class="match-item" data-pair="1">exit, out</div><div class="match-item" data-pair="4">behind, start</div><div class="match-item" data-pair="0">arrival</div><div class="match-item" data-pair="2">across</div></div>
       </div>
       <div class="completion-message" id="match-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetMatch()">Reset</button><button class="btn btn-primary" onclick="showSection('quiz')">Next →</button></div>
@@ -889,17 +890,28 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (13)</h3>
+        <h3>Нові слова (0)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    <th>IPA</th>
+    
     <th>Переклад</th>
     
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">приходити</td><td class="vocab-ipa">/prɪˈxodɪtɪ/</td><td class="vocab-en">to arrive</td></tr><tr><td class="vocab-uk">виходити</td><td class="vocab-ipa">/vɪˈxodɪtɪ/</td><td class="vocab-en">to exit</td></tr><tr><td class="vocab-uk">переходити</td><td class="vocab-ipa">/pɛrɛˈxodɪtɪ/</td><td class="vocab-en">to cross</td></tr><tr><td class="vocab-uk">читання</td><td class="vocab-ipa">/tʃɪˈtɑnʲːɑ/</td><td class="vocab-en">reading</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/moʒˈlɪvʲistʲ/</td><td class="vocab-en">possibility</td></tr><tr><td class="vocab-uk">письменник</td><td class="vocab-ipa">/pɪsʲˈmɛnːɪk/</td><td class="vocab-en">writer</td></tr><tr><td class="vocab-uk">міський</td><td class="vocab-ipa">/ˈmʲiskɪj/</td><td class="vocab-en">urban</td></tr><tr><td class="vocab-uk">книжковий</td><td class="vocab-ipa">/knɪʒˈkovɪj/</td><td class="vocab-en">book (adj)</td></tr><tr><td class="vocab-uk">навчання</td><td class="vocab-ipa">/nɑvˈtʃɑnʲːɑ/</td><td class="vocab-en">education</td></tr><tr><td class="vocab-uk">робітник</td><td class="vocab-ipa">/roˈbʲitnɪk/</td><td class="vocab-en">worker</td></tr><tr><td class="vocab-uk">розмова</td><td class="vocab-ipa">/rozˈmovɑ/</td><td class="vocab-en">conversation</td></tr><tr><td class="vocab-uk">поїздка</td><td class="vocab-ipa">/poˈjizdkɑ/</td><td class="vocab-en">trip</td></tr><tr><td class="vocab-uk">побачення</td><td class="vocab-ipa">/pobɑˈtʃɛnʲːɑ/</td><td class="vocab-en">meeting</td></tr></tbody>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (13)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">приходити</td><td class="vocab-module">Module 61</td></tr><tr><td class="vocab-uk">виходити</td><td class="vocab-module">Module 25</td></tr><tr><td class="vocab-uk">переходити</td><td class="vocab-module">Module 61</td></tr><tr><td class="vocab-uk">читання</td><td class="vocab-module">Module 63</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-module">Module 47</td></tr><tr><td class="vocab-uk">письменник</td><td class="vocab-module">Module 36</td></tr><tr><td class="vocab-uk">міський</td><td class="vocab-module">Module 64</td></tr><tr><td class="vocab-uk">книжковий</td><td class="vocab-module">Module 64</td></tr><tr><td class="vocab-uk">навчання</td><td class="vocab-module">Module 63</td></tr><tr><td class="vocab-uk">робітник</td><td class="vocab-module">Module 63</td></tr><tr><td class="vocab-uk">розмова</td><td class="vocab-module">Module 65</td></tr><tr><td class="vocab-uk">поїздка</td><td class="vocab-module">Module 66</td></tr><tr><td class="vocab-uk">побачення</td><td class="vocab-module">Module 66</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -913,7 +925,7 @@ footer {
     const matchPairs = [{"left":"при-","right":"arrival"},{"left":"ви-","right":"exit, out"},{"left":"пере-","right":"across"},{"left":"роз-","right":"apart"},{"left":"за-","right":"behind, start"}];
     const quizData = [{"question":"The prefix in \"виходити\" means ___.","options":["out, exit","in, enter","across","arrival"],"correctIndex":0,"explanation":"Ви- = out, exit."},{"question":"The suffix \"-ість\" creates ___.","options":["abstract quality nouns","verbs","agent nouns","adjectives"],"correctIndex":0,"explanation":"-ість creates feminine abstract nouns."},{"question":"Words with root \"-роб-\" relate to ___.","options":["work","reading","speaking","walking"],"correctIndex":0,"explanation":"-роб- = work (робота, робити)."},{"question":"\"Читач\" uses the suffix ___.","options":["-ач (agent)","-ість (quality)","-ння (verbal noun)","-ський (belonging)"],"correctIndex":0,"explanation":"-ач creates agent nouns."},{"question":"\"Міський\" comes from ___.","options":["місто (city)","місяць (month)","місце (place)","місія (mission)"],"correctIndex":0,"explanation":"Місто → міський."},{"question":"The root in \"навчання\" is ___.","options":["-вч-/-уч- (learning)","-ння (suffix)","на- (prefix)","-ан- (connector)"],"correctIndex":0,"explanation":"Root -вч- means learning."}];
     const sortData = {"true-friends":["при- (arrival)","ви- (exit)","пере- (across)","в- (enter)"],"false-friends":["-ння/-ття","-ість","-ство","-ач/-ник"],"new-letters":["-ний/-ній","-ський","-овий","-ливий"]};
-    const vocabData = [{"uk":"приходити","translit":"","en":"to arrive","note":""},{"uk":"виходити","translit":"","en":"to exit","note":""},{"uk":"переходити","translit":"","en":"to cross","note":""},{"uk":"читання","translit":"","en":"reading","note":""},{"uk":"можливість","translit":"","en":"possibility","note":""},{"uk":"письменник","translit":"","en":"writer","note":""},{"uk":"міський","translit":"","en":"urban","note":""},{"uk":"книжковий","translit":"","en":"book (adj)","note":""},{"uk":"навчання","translit":"","en":"education","note":""},{"uk":"робітник","translit":"","en":"worker","note":""},{"uk":"розмова","translit":"","en":"conversation","note":""},{"uk":"поїздка","translit":"","en":"trip","note":""},{"uk":"побачення","translit":"","en":"meeting","note":""}];
+    const vocabData = [];
     const totalSort = 12;
   
 // Answer callout toggle (for new > [!answer] syntax)

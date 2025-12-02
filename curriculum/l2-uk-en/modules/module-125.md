@@ -344,13 +344,20 @@ After completing the checkpoint, assess yourself:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| контрольна робота | - | test, checkpoint | f |
-| оцінювання | /ot͡sʲiˈnʲuvɑnʲːɑ/ | assessment | n |
-| бал | /bɑl/ | point, score | m |
-| результат | /rɛzulʲˈtɑt/ | result | m |
-| перевірити | /pɛrɛˈvʲirɪtɪ/ | to check | pf |
-| покращити | /pokrɑˈʃɪtɪ/ | to improve | pf |
 | повторити | /powtorˈɪtɪ/ | to review, repeat | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| контрольна робота | 115 |
+| оцінювання | 100 |
+| бал | 100 |
+| результат | 46 |
+| перевірити | 100 |
+| покращити | 88 |
 
 ---
 

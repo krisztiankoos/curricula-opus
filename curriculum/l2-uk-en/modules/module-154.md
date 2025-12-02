@@ -309,7 +309,6 @@ objectives:
 | змарнілий | emaciated | adj, від змарніти |
 | застарілий | outdated | adj, від застаріти |
 | похилий | tilted; elderly | adj, «похилого віку» |
-| минулий | past | adj, не «минувший»! |
 | колишній | former | adj, не «бувший»! |
 | бувалий | experienced | adj |
 | зрілий | mature, ripe | adj |
@@ -317,6 +316,14 @@ objectives:
 | запеклий | fierce | adj |
 | перехідний | transitive | про дієслова |
 | неперехідний | intransitive | про дієслова |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| минулий | 21 |
 
 ---
 

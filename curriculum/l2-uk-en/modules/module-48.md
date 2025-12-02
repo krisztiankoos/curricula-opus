@@ -371,18 +371,18 @@ Try to get: a lower price, negotiate.
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| ремінь | /rɛˈmʲinʲ/ | belt | noun | m | |
-| акція | /ˈɑktsʲijɑ/ | promotion, sale | noun | f | |
-| розпродаж | /rozpˈrodɑʒ/ | sale (clearance) | noun | m | |
-| батарея | /bɑtɑˈrɛjɑ/ | battery | noun | f | |
-| пам'ять | /ˈpɑmjɑtʲ/ | memory | noun | f | |
-| екран | /ɛˈkrɑn/ | screen | noun | m | |
+| ремінь | /rɛˈmʲinʲ/ | belt | noun | m |
+| акція | /ˈɑktsʲijɑ/ | promotion, sale | noun | f |
+| розпродаж | /rozpˈrodɑʒ/ | sale (clearance) | noun | m |
+| батарея | /bɑtɑˈrɛjɑ/ | battery | noun | f |
+| пам'ять | /ˈpɑmjɑtʲ/ | memory | noun | f |
+| екран | /ɛˈkrɑn/ | screen | noun | m |
 | навушники | /nɑˈvuʃnɪkɪ/ | headphones | noun | m | pl-only |
-| бездротовий | /bɛzdroˈtovɪj/ | wireless | adj | - | |
-| водонепроникний | /vodonɛproˈnɪknɪj/ | waterproof | adj | - | |
-| чохол | /tʃoˈxol/ | case, cover | noun | m | |
-| зарядка | /zɑˈrʲɑdkɑ/ | charger | noun | f | |
-| дефект | /dɛˈfɛkt/ | defect | noun | m | |
+| бездротовий | /bɛzdroˈtovɪj/ | wireless | adj | - |
+| водонепроникний | /vodonɛproˈnɪknɪj/ | waterproof | adj | - |
+| чохол | /tʃoˈxol/ | case, cover | noun | m |
+| зарядка | /zɑˈrʲɑdkɑ/ | charger | noun | f |
+| дефект | /dɛˈfɛkt/ | defect | noun | m |
 
 ---
 

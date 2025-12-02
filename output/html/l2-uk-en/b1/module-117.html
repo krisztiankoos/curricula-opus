@@ -675,6 +675,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -733,7 +734,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (15)</h3>
+        <h3>Нові слова (2)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -741,9 +742,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">запитати</td><td class="vocab-ipa">/zɑpɪˈtɑtɪ/</td><td class="vocab-en">to ask</td></tr><tr><td class="vocab-uk">питати</td><td class="vocab-ipa">/pɪˈtɑtɪ/</td><td class="vocab-en">to ask</td></tr><tr><td class="vocab-uk">цікавитися</td><td class="vocab-ipa">/t͡sʲikɑˈvɪtɪsʲɑ/</td><td class="vocab-en">to wonder, be interested</td></tr><tr><td class="vocab-uk">поцікавитися</td><td class="vocab-ipa">/pot͡sʲikɑˈvɪtɪsʲɑ/</td><td class="vocab-en">to inquire</td></tr><tr><td class="vocab-uk">чи</td><td class="vocab-ipa">/t͡ʃɪ/</td><td class="vocab-en">if, whether</td></tr><tr><td class="vocab-uk">хто</td><td class="vocab-ipa">/xto/</td><td class="vocab-en">who</td></tr><tr><td class="vocab-uk">що</td><td class="vocab-ipa">/ʃt͡ʃo/</td><td class="vocab-en">what</td></tr><tr><td class="vocab-uk">де</td><td class="vocab-ipa">/dɛ/</td><td class="vocab-en">where</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/koˈlɪ/</td><td class="vocab-en">when</td></tr><tr><td class="vocab-uk">чому</td><td class="vocab-ipa">/t͡ʃoˈmu/</td><td class="vocab-en">why</td></tr><tr><td class="vocab-uk">як</td><td class="vocab-ipa">/jɑk/</td><td class="vocab-en">how</td></tr><tr><td class="vocab-uk">скільки</td><td class="vocab-ipa">/ˈskʲilʲkɪ/</td><td class="vocab-en">how much/many</td></tr><tr><td class="vocab-uk">який</td><td class="vocab-ipa">/jɑˈkɪj/</td><td class="vocab-en">which, what kind</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-ipa">/kuˈdɪ/</td><td class="vocab-en">where to</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-ipa">/ˈzvʲidkɪ/</td><td class="vocab-en">where from</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">питати</td><td class="vocab-ipa">/pɪˈtɑtɪ/</td><td class="vocab-en">to ask</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">поцікавитися</td><td class="vocab-ipa">/pot͡sʲikɑˈvɪtɪsʲɑ/</td><td class="vocab-en">to inquire</td><td class="vocab-note">pf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (13)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">запитати</td><td class="vocab-module">Module 42</td></tr><tr><td class="vocab-uk">цікавитися</td><td class="vocab-module">Module 35</td></tr><tr><td class="vocab-uk">чи</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">хто</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">що</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">де</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">чому</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">як</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">скільки</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">який</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-module">Module 7</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -757,7 +769,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Він запитав, ___ я прийду.","options":["чи","що"],"correctIndex":0,"explanation":"чи for yes/no questions."},{"question":"Вона запитала, ___ я живу.","options":["де","чи"],"correctIndex":0,"explanation":"де for \"where\" questions."},{"question":"Мене цікавить, ___ це коштує.","options":["скільки","чи"],"correctIndex":0,"explanation":"скільки for \"how much\" questions."},{"question":"Вони запитали, ___ приїде потяг.","options":["коли","що"],"correctIndex":0,"explanation":"коли for \"when\" questions."},{"question":"Він хотів знати, ___ вона не прийшла.","options":["чому","чи"],"correctIndex":0,"explanation":"чому for \"why\" questions."},{"question":"«Ти вдома?»","options":["чи","де"],"correctIndex":0,"explanation":"Yes/no question uses чи."}];
     const sortData = {};
-    const vocabData = [{"uk":"запитати","translit":"","en":"to ask","note":""},{"uk":"питати","translit":"","en":"to ask","note":""},{"uk":"цікавитися","translit":"","en":"to wonder, be interested","note":""},{"uk":"поцікавитися","translit":"","en":"to inquire","note":""},{"uk":"чи","translit":"","en":"if, whether","note":""},{"uk":"хто","translit":"","en":"who","note":""},{"uk":"що","translit":"","en":"what","note":""},{"uk":"де","translit":"","en":"where","note":""},{"uk":"коли","translit":"","en":"when","note":""},{"uk":"чому","translit":"","en":"why","note":""},{"uk":"як","translit":"","en":"how","note":""},{"uk":"скільки","translit":"","en":"how much/many","note":""},{"uk":"який","translit":"","en":"which, what kind","note":""},{"uk":"куди","translit":"","en":"where to","note":""},{"uk":"звідки","translit":"","en":"where from","note":""}];
+    const vocabData = [{"uk":"питати","translit":"","en":"to ask","note":"impf"},{"uk":"поцікавитися","translit":"","en":"to inquire","note":"pf"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

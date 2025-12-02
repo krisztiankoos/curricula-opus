@@ -401,26 +401,19 @@ With про-: Ми **прожили** там два роки.
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| написати | /nɑpɪˈsɑtɪ/ | to write (complete) | verb | - | pf |
 | намалювати | /nɑmɑlʲuˈvɑtɪ/ | to draw/paint | verb | - | pf |
 | навчити | /nɑvˈtʃɪtɪ/ | to teach | verb | - | pf |
 | налити | /nɑˈlɪtɪ/ | to pour | verb | - | pf |
 | нарізати | /nɑˈrʲizɑtɪ/ | to slice | verb | - | pf |
-| побачити | /poˈbɑtʃɪtɪ/ | to see | verb | - | pf |
-| почути | /poˈtʃutɪ/ | to hear | verb | - | pf |
 | почитати | /potʃɪˈtɑtɪ/ | to read (a while) | verb | - | pf |
 | подумати | /poˈdumɑtɪ/ | to think over | verb | - | pf |
 | подякувати | /podʲɑkuˈvɑtɪ/ | to thank | verb | - | pf |
 | поснідати | /posnʲiˈdɑtɪ/ | to have breakfast | verb | - | pf |
 | пообідати | /pooˈbʲidɑtɪ/ | to have lunch | verb | - | pf |
-| зробити | /zroˈbɪtɪ/ | to do, make | verb | - | pf |
-| з'їсти | /ˈzjistɪ/ | to eat up | verb | - | pf |
 | зварити | /zvɑˈrɪtɪ/ | to cook | verb | - | pf |
 | збудувати | /zbuduˈvɑtɪ/ | to build | verb | - | pf |
-| зібрати | /zʲiˈbrɑtɪ/ | to gather | verb | - | pf |
 | сфотографувати | /sfotoɦrɑfuˈvɑtɪ/ | to photograph | verb | - | pf |
 | спитати | /spɪˈtɑtɪ/ | to ask | verb | - | pf |
-| прочитати | /protʃɪˈtɑtɪ/ | to read (finish) | verb | - | pf |
 | прослухати | /prosˈluxɑtɪ/ | to listen through | verb | - | pf |
 | прожити | /proˈʒɪtɪ/ | to live (period) | verb | - | pf |
 | проспати | /prosˈpɑtɪ/ | to oversleep | verb | - | pf |
@@ -428,24 +421,38 @@ With про-: Ми **прожили** там два роки.
 | роздати | /rozˈdɑtɪ/ | to distribute | verb | - | pf |
 | розбити | /rozˈbɪtɪ/ | to break | verb | - | pf |
 | розрізати | /rozˈrʲizɑtɪ/ | to cut apart | verb | - | pf |
-| відповісти | /vʲidpoˈvʲistɪ/ | to answer | verb | - | pf |
 | віддати | /vʲiˈdːɑtɪ/ | to give back | verb | - | pf |
-| відкрити | /vʲidˈkrɪtɪ/ | to open | verb | - | pf |
 | відпустити | /vʲidpusˈtɪtɪ/ | to release, let go | verb | - | pf |
-| вивчити | /ˈvɪvtʃɪtɪ/ | to learn (master) | verb | - | pf |
 | вирішити | /vɪˈrʲiʃɪtɪ/ | to decide, solve | verb | - | pf |
-| випити | /ˈvɪpɪtɪ/ | to drink up | verb | - | pf |
 | виграти | /ˈvɪɦrɑtɪ/ | to win | verb | - | pf |
 | витратити | /ˈvɪtrɑtɪtɪ/ | to spend | verb | - | pf |
-| закрити | /zɑˈkrɪtɪ/ | to close | verb | - | pf |
-| закінчити | /zɑˈkʲintʃɪtɪ/ | to finish | verb | - | pf |
 | записати | /zɑpɪˈsɑtɪ/ | to write down | verb | - | pf |
 | замовити | /zɑˈmovɪtɪ/ | to order | verb | - | pf |
-| запитати | /zɑpɪˈtɑtɪ/ | to ask | verb | - | pf |
 | забути | /zɑˈbutɪ/ | to forget | verb | - | pf |
-| історія | /isˈtorʲijɑ/ | story, history | noun | f | |
-| подарунок | /podɑˈrunok/ | gift | noun | m | |
-| помилка | /poˈmɪlkɑ/ | mistake | noun | f | |
+| історія | /isˈtorʲijɑ/ | story, history | noun | f |
+| помилка | /poˈmɪlkɑ/ | mistake | noun | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| написати | 22 |
+| побачити | 42 |
+| почути | 42 |
+| зробити | 22 |
+| з'їсти | 41 |
+| зібрати | 43 |
+| прочитати | 22 |
+| відповісти | 42 |
+| відкрити | 42 |
+| вивчити | 41 |
+| випити | 41 |
+| закрити | 42 |
+| закінчити | 24 |
+| запитати | 42 |
+| подарунок | 11 |
 
 ---
 

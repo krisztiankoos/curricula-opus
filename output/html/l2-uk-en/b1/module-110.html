@@ -842,6 +842,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -955,7 +956,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (13)</h3>
+        <h3>Нові слова (7)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -963,9 +964,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/koˈlɪ/</td><td class="vocab-en">when</td></tr><tr><td class="vocab-uk">перед тим як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">до того як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">перш ніж</td><td class="vocab-ipa"></td><td class="vocab-en">before</td></tr><tr><td class="vocab-uk">після того як</td><td class="vocab-ipa"></td><td class="vocab-en">after</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-ipa">/do/</td><td class="vocab-en">before, until</td></tr><tr><td class="vocab-uk">після</td><td class="vocab-ipa">/ˈpʲislʲɑ/</td><td class="vocab-en">after</td></tr><tr><td class="vocab-uk">поки</td><td class="vocab-ipa">/poˈkɪ/</td><td class="vocab-en">while, until</td></tr><tr><td class="vocab-uk">доки</td><td class="vocab-ipa">/doˈkɪ/</td><td class="vocab-en">while, until</td></tr><tr><td class="vocab-uk">щойно</td><td class="vocab-ipa">/ˈʃt͡ʃojno/</td><td class="vocab-en">as soon as, just</td></tr><tr><td class="vocab-uk">як тільки</td><td class="vocab-ipa">/jɑk ˈtʲilʲkɪ/</td><td class="vocab-en">as soon as</td></tr><tr><td class="vocab-uk">ледве</td><td class="vocab-ipa">/ˈlɛdvɛ/</td><td class="vocab-en">hardly, barely</td></tr><tr><td class="vocab-uk">тим часом</td><td class="vocab-ipa">/tɪm ˈt͡ʃɑsom/</td><td class="vocab-en">meanwhile</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">перед тим як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td><td class="vocab-note">conj</td></tr><tr><td class="vocab-uk">до того як</td><td class="vocab-ipa"></td><td class="vocab-en">before</td><td class="vocab-note">conj (formal)</td></tr><tr><td class="vocab-uk">доки</td><td class="vocab-ipa">/doˈkɪ/</td><td class="vocab-en">while, until</td><td class="vocab-note">conj</td></tr><tr><td class="vocab-uk">щойно</td><td class="vocab-ipa">/ˈʃt͡ʃojno/</td><td class="vocab-en">as soon as, just</td><td class="vocab-note">adv/conj</td></tr><tr><td class="vocab-uk">як тільки</td><td class="vocab-ipa">/jɑk ˈtʲilʲkɪ/</td><td class="vocab-en">as soon as</td><td class="vocab-note">conj</td></tr><tr><td class="vocab-uk">ледве</td><td class="vocab-ipa">/ˈlɛdvɛ/</td><td class="vocab-en">hardly, barely</td><td class="vocab-note">adv</td></tr><tr><td class="vocab-uk">тим часом</td><td class="vocab-ipa">/tɪm ˈt͡ʃɑsom/</td><td class="vocab-en">meanwhile</td><td class="vocab-note">adv</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">коли</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">перш ніж</td><td class="vocab-module">Module 43</td></tr><tr><td class="vocab-uk">після того як</td><td class="vocab-module">Module 43</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-module">Module 15</td></tr><tr><td class="vocab-uk">після</td><td class="vocab-module">Module 16</td></tr><tr><td class="vocab-uk">поки</td><td class="vocab-module">Module 43</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -979,7 +991,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"___ він прийшов, ми вже вечеряли.","options":["Коли","Поки"],"correctIndex":0,"explanation":"\"Коли\" for \"when.\""},{"question":"Подумай ___ тим як говорити.","options":["перед","після"],"correctIndex":0,"explanation":"\"Before\" = \"перед тим як.\""},{"question":"Чекай, ___ він не прийде.","options":["поки","після того як"],"correctIndex":0,"explanation":"\"Until\" requires \"поки...не.\""},{"question":"___ закінчу, відпочину.","options":["Перед тим як","Після того як"],"correctIndex":1,"explanation":"\"After\" I finish, I'll rest."},{"question":"___ я дізнаюся, скажу.","options":["Як тільки","Поки"],"correctIndex":0,"explanation":"\"As soon as\" = \"як тільки.\""},{"question":"___ роботи я йду додому.","options":["Після","Після того як"],"correctIndex":0,"explanation":"With noun, use \"після + gen.\""}];
     const sortData = {};
-    const vocabData = [{"uk":"коли","translit":"","en":"when","note":""},{"uk":"перед тим як","translit":"","en":"before","note":""},{"uk":"до того як","translit":"","en":"before","note":""},{"uk":"перш ніж","translit":"","en":"before","note":""},{"uk":"після того як","translit":"","en":"after","note":""},{"uk":"до","translit":"","en":"before, until","note":""},{"uk":"після","translit":"","en":"after","note":""},{"uk":"поки","translit":"","en":"while, until","note":""},{"uk":"доки","translit":"","en":"while, until","note":""},{"uk":"щойно","translit":"","en":"as soon as, just","note":""},{"uk":"як тільки","translit":"","en":"as soon as","note":""},{"uk":"ледве","translit":"","en":"hardly, barely","note":""},{"uk":"тим часом","translit":"","en":"meanwhile","note":""}];
+    const vocabData = [{"uk":"перед тим як","translit":"","en":"before","note":"conj"},{"uk":"до того як","translit":"","en":"before","note":"conj (formal)"},{"uk":"доки","translit":"","en":"while, until","note":"conj"},{"uk":"щойно","translit":"","en":"as soon as, just","note":"adv/conj"},{"uk":"як тільки","translit":"","en":"as soon as","note":"conj"},{"uk":"ледве","translit":"","en":"hardly, barely","note":"adv"},{"uk":"тим часом","translit":"","en":"meanwhile","note":"adv"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -290,18 +290,25 @@ Discuss using knowing verbs:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| бачити | /ˈbɑt͡ʃɪtɪ/ | to see | impf, passive |
-| дивитися | /dɪˈvɪtɪsʲɑ/ | to look, watch | impf, active |
 | оглядати | /oɦlʲɑˈdɑtɪ/ | to examine | impf |
 | спостерігати | /spostɛrʲiˈɦɑtɪ/ | to observe | impf |
 | помічати | /pomʲiˈt͡ʃɑtɪ/ | to notice | impf |
-| знати | /ˈznɑtɪ/ | to know | impf |
-| розуміти | /rozuˈmʲitɪ/ | to understand | impf |
 | усвідомлювати | /usvʲiˈdomlʲuvɑtɪ/ | to realize | impf |
-| визнавати | /vɪznɑˈvɑtɪ/ | to acknowledge | impf |
-| пізнавати | /pʲiznɑˈvɑtɪ/ | to get to know | impf |
-| погляд | /ˈpoɦlʲɑd/ | glance, look | m |
-| знання | /ˈznɑnʲːɑ/ | knowledge | n |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| бачити | 8 |
+| дивитися | 6 |
+| знати | 6 |
+| розуміти | 6 |
+| визнавати | 66 |
+| пізнавати | 66 |
+| погляд | 95 |
+| знання | 63 |
 
 ---
 

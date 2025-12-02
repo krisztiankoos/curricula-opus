@@ -375,11 +375,11 @@ Sometimes you want to say "extremely" without comparing:
 | найшвидше | /nɑjˈʃvɪdʃɛ/ | fastest | adv | - | sup of швидко |
 | найкраще | /nɑjˈkrɑʃtʃɛ/ | best (adv) | adv | - | sup of добре |
 | найбільше | /nɑjˈbʲilʲʃɛ/ | most (adv) | adv | - | sup of багато |
-| щонайменше | /ʃtʃonɑjˈmɛnʃɛ/ | at least | adv | - | |
-| щонайбільше | /ʃtʃonɑjˈbʲilʲʃɛ/ | at most | adv | - | |
-| найголовніший | /nɑjɦolovˈnʲiʃɪj/ | most main/important | adj | - | |
-| надзвичайно | /nɑdzvɪˈtʃɑjno/ | extraordinarily | adv | - | |
-| неймовірно | /nɛjmoˈvʲirno/ | incredibly | adv | - | |
+| щонайменше | /ʃtʃonɑjˈmɛnʃɛ/ | at least | adv | - |
+| щонайбільше | /ʃtʃonɑjˈbʲilʲʃɛ/ | at most | adv | - |
+| найголовніший | /nɑjɦolovˈnʲiʃɪj/ | most main/important | adj | - |
+| надзвичайно | /nɑdzvɪˈtʃɑjno/ | extraordinarily | adv | - |
+| неймовірно | /nɛjmoˈvʲirno/ | incredibly | adv | - |
 
 ---
 

@@ -364,44 +364,51 @@ Give emotional reactions:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| щасливий | /ʃtʃɑsˈlɪvɪj/ | happy | adj | - | |
-| радісний | /ˈrɑdʲisnɪj/ | joyful | adj | - | |
-| задоволений | /zɑdoˈvolɛnɪj/ | satisfied | adj | - | |
-| вдячний | /ˈvdʲɑtʃnɪj/ | grateful | adj | - | |
-| схвильований | /sxvɪlʲoˈvɑnɪj/ | excited, anxious | adj | - | |
-| захоплений | /zɑˈxoplɛnɪj/ | delighted | adj | - | |
-| натхненний | /nɑtxˈnɛnːɪj/ | inspired | adj | - | |
-| впевнений | /vpɛvˈnɛnɪj/ | confident | adj | - | |
-| гордий | /ˈɦordɪj/ | proud | adj | - | |
-| закоханий | /zɑkoˈxɑnɪj/ | in love | adj | - | |
-| сумний | /ˈsumnɪj/ | sad | adj | - | |
-| засмучений | /zɑsˈmutʃɛnɪj/ | upset | adj | - | |
-| розчарований | /rostʃɑˈrovɑnɪj/ | disappointed | adj | - | |
-| злий | /zlɪj/ | angry | adj | - | |
-| роздратований | /rozdrɑˈtovɑnɪj/ | irritated | adj | - | |
-| знервований | /znɛrˈvovɑnɪj/ | nervous | adj | - | |
-| стривожений | /strɪˈvoʒɛnɪj/ | anxious | adj | - | |
-| заздрісний | /ˈzɑzdrʲisnɪj/ | jealous | adj | - | |
-| самотній | /sɑˈmotnʲij/ | lonely | adj | - | |
-| втомлений | /ˈvtomlɛnɪj/ | tired | adj | - | |
-| добрий | /ˈdobrɪj/ | kind | adj | - | |
-| щедрий | /ˈʃtʃɛdrɪj/ | generous | adj | - | |
-| чесний | /ˈtʃɛsnɪj/ | honest | adj | - | |
-| терплячий | /tɛrpˈlʲɑtʃɪj/ | patient | adj | - | |
-| надійний | /nɑˈdʲijnɪj/ | reliable | adj | - | |
-| сміливий | /smʲiˈlɪvɪj/ | brave | adj | - | |
-| працьовитий | /prɑtsʲoˈvɪtɪj/ | hardworking | adj | - | |
-| жадібний | /ʒɑˈdʲibnɪj/ | greedy | adj | - | |
-| впертий | /ˈvpɛrtɪj/ | stubborn | adj | - | |
-| лінивий | /lʲiˈnɪvɪj/ | lazy | adj | - | |
-| грубий | /ˈɦrubɪj/ | rude | adj | - | |
-| зарозумілий | /zɑrozuˈmʲilɪj/ | arrogant | adj | - | |
+| радісний | /ˈrɑdʲisnɪj/ | joyful | adj | - |
+| задоволений | /zɑdoˈvolɛnɪj/ | satisfied | adj | - |
+| вдячний | /ˈvdʲɑtʃnɪj/ | grateful | adj | - |
+| схвильований | /sxvɪlʲoˈvɑnɪj/ | excited, anxious | adj | - |
+| захоплений | /zɑˈxoplɛnɪj/ | delighted | adj | - |
+| натхненний | /nɑtxˈnɛnːɪj/ | inspired | adj | - |
+| гордий | /ˈɦordɪj/ | proud | adj | - |
+| закоханий | /zɑkoˈxɑnɪj/ | in love | adj | - |
+| засмучений | /zɑsˈmutʃɛnɪj/ | upset | adj | - |
+| розчарований | /rostʃɑˈrovɑnɪj/ | disappointed | adj | - |
+| злий | /zlɪj/ | angry | adj | - |
+| роздратований | /rozdrɑˈtovɑnɪj/ | irritated | adj | - |
+| знервований | /znɛrˈvovɑnɪj/ | nervous | adj | - |
+| стривожений | /strɪˈvoʒɛnɪj/ | anxious | adj | - |
+| заздрісний | /ˈzɑzdrʲisnɪj/ | jealous | adj | - |
+| самотній | /sɑˈmotnʲij/ | lonely | adj | - |
+| втомлений | /ˈvtomlɛnɪj/ | tired | adj | - |
+| щедрий | /ˈʃtʃɛdrɪj/ | generous | adj | - |
+| чесний | /ˈtʃɛsnɪj/ | honest | adj | - |
+| терплячий | /tɛrpˈlʲɑtʃɪj/ | patient | adj | - |
+| надійний | /nɑˈdʲijnɪj/ | reliable | adj | - |
+| сміливий | /smʲiˈlɪvɪj/ | brave | adj | - |
+| працьовитий | /prɑtsʲoˈvɪtɪj/ | hardworking | adj | - |
+| жадібний | /ʒɑˈdʲibnɪj/ | greedy | adj | - |
+| впертий | /ˈvpɛrtɪj/ | stubborn | adj | - |
+| лінивий | /lʲiˈnɪvɪj/ | lazy | adj | - |
+| грубий | /ˈɦrubɪj/ | rude | adj | - |
+| зарозумілий | /zɑrozuˈmʲilɪj/ | arrogant | adj | - |
 | хвилюватися | /xvɪlʲuˈvɑtɪsʲɑ/ | to worry | verb | - | impf |
-| боятися | /boˈjɑtɪsʲɑ/ | to be afraid | verb | - | impf |
-| сміятися | /smʲiˈjɑtɪsʲɑ/ | to laugh | verb | - | impf |
 | плакати | /ˈplɑkɑtɪ/ | to cry | verb | - | impf |
 | радіти | /ˈrɑdʲitɪ/ | to rejoice | verb | - | impf |
 | заздрити | /ˈzɑzdrɪtɪ/ | to envy | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| щасливий | 26 |
+| впевнений | 58 |
+| сумний | 26 |
+| добрий | 26 |
+| боятися | 51 |
+| сміятися | 51 |
 
 ---
 

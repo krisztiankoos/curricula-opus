@@ -254,19 +254,26 @@ Write about your favorite city using:
 |------|-----|---------|-------|
 | також | /tɑˈkoʒ/ | also | adv |
 | крім того | - | besides, moreover | phrase |
-| але | /ɑˈlɛ/ | but | conj |
-| проте | /proˈtɛ/ | however | conj |
-| однак | /odˈnɑk/ | however, yet | conj |
-| тому | /toˈmu/ | therefore, so | adv |
-| тому що | - | because | conj |
-| отже | /ˈotʒɛ/ | therefore, thus | adv |
 | по-перше | - | firstly | adv |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | adv |
 | наприклад | /nɑprɪˈklɑd/ | for example | adv |
 | підсумовуючи | - | to sum up | adv part |
-| загалом | /zɑˈɦɑlom/ | in general | adv |
 | на мою думку | - | in my opinion | phrase |
 | тобто | /tobˈto/ | that is | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| але | 108 |
+| проте | 97 |
+| однак | 97 |
+| тому | 109 |
+| тому що | 53 |
+| отже | 58 |
+| нарешті | 43 |
+| загалом | 58 |
 
 ---
 

@@ -317,20 +317,21 @@ Use: Скільки коштує? Чи є...? Можна...? Я візьму...
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | продавати | /prɔdɑˈvɑtɪ/ | to sell | verb | - | продаю, продаєш |
-| приміряти | /prɪmʲirʲˈɑtɪ/ | to try on | verb | - |  |
-| розмір | /ˈrɔzmʲir/ | size | noun | m |  |
+| приміряти | /prɪmʲirʲˈɑtɪ/ | to try on | verb | - |
+| розмір | /ˈrɔzmʲir/ | size | noun | m |
 | великий | /vɛˈlɪkɪj/ | big, large | adj | m | велика (f), велике (n) |
 | маленький | /mɑˈlɛnʲkɪj/ | small | adj | m | маленька (f) |
 | більший | /ˈbʲilʲʃɪj/ | bigger | adj | m | Comparative |
 | менший | /ˈmɛnʃɪj/ | smaller | adj | m | Comparative |
-| занадто | /zɑˈnɑdtɔ/ | too (excessive) | adv | - |  |
+| занадто | /zɑˈnɑdtɔ/ | too (excessive) | adv | - |
 | колір | /ˈkɔlʲir/ | color | noun | m | Gen: кольору |
-| білий | /ˈbʲilɪj/ | white | adj | m |  |
-| чорний | /ˈtʃɔrnɪj/ | black | adj | m |  |
-| каса | /ˈkɑsɑ/ | cash register | noun | f |  |
-| чек | /tʃɛk/ | receipt | noun | m |  |
+| білий | /ˈbʲilɪj/ | white | adj | m |
+| чорний | /ˈtʃɔrnɪj/ | black | adj | m |
+| каса | /ˈkɑsɑ/ | cash register | noun | f |
+| чек | /tʃɛk/ | receipt | noun | m |
 | пакет | /pɑˈkɛt/ | bag | noun | m | Plastic bag |
-| примірочна | /prɪˈmʲirɔtʃnɑ/ | fitting room | noun | f |  |
+| примірочна | /prɪˈmʲirɔtʃnɑ/ | fitting room | noun | f |
+
 ---
 
 # Shopping Phrases Summary

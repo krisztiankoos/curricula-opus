@@ -360,19 +360,26 @@ B: Не забуду, обіцяю!
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| ніколи | /nʲiˈkolɪ/ | never | + imperfective |
-| ще не | /ʃt͡ʃɛ nɛ/ | not yet | + perfective |
 | більше не | /ˈbʲilʲʃɛ nɛ/ | no longer | + imperfective |
 | ні... ні | /nʲi nʲi/ | neither... nor | - |
-| нічого | /nʲiˈt͡ʃoɦo/ | nothing | genitive |
 | нікого | /nʲiˈkoɦo/ | nobody | genitive |
-| ніде | /nʲiˈdɛ/ | nowhere | - |
 | обережно | /obɛˈrɛʒno/ | carefully, caution | - |
-| заборонено | /zɑboroˈnɛno/ | forbidden | - |
 | не можна | /nɛ ˈmoʒnɑ/ | not allowed | - |
 | не варто | /nɛ ˈvɑrto/ | not worth it | - |
 | не слід | /nɛ slʲid/ | should not | - |
 | даремно | /dɑˈrɛmno/ | in vain | - |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| ніколи | 7 |
+| ще не | 21 |
+| нічого | 52 |
+| ніде | 7 |
+| заборонено | 59 |
 
 ---
 

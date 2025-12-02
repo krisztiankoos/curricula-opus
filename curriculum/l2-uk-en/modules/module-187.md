@@ -357,18 +357,25 @@ objectives:
 | штучний інтелект | /ˈʃtutʃnɪj ʲintɛˈlɛkt/ | artificial intelligence | m |
 | машинне навчання | /mɑˈʃɪnːɛ nɑwˈtʃɑnʲːɑ/ | machine learning | n |
 | алгоритм | /ɑlɦɔˈrɪtm/ | algorithm | m |
-| застосунок | /zɑstɔˈsunɔk/ | application | m, офіц. |
 | апка | /ˈɑpkɑ/ | app | f, розм. |
 | база даних | /ˈbɑzɑ ˈdɑnɪx/ | database | f |
 | шифрування | /ʃɪfruˈwɑnʲːɑ/ | encryption | n |
 | кібербезпека | /kʲibɛrbɛzˈpɛkɑ/ | cybersecurity | f |
-| хмарний | /ˈxmɑrnɪj/ | cloud (adj.) | adj |
 | розробка | /rɔzˈrɔbkɑ/ | development | f |
-| оновлення | /ɔnɔwˈlɛnʲːɑ/ | update | n |
 | фішинг | /ˈfʲiʃɪnɦ/ | phishing | m |
 | двофакторна автентифікація | /dwɔˈfɑktɔrnɑ ɑwtɛntɪfʲiˈkɑt͡sʲijɑ/ | 2FA | f |
 | великі дані | /wɛˈlɪkʲi ˈdɑnʲi/ | big data | pl |
 | хакер | /ˈxɑkɛr/ | hacker | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| застосунок | 73 |
+| хмарний | 28 |
+| оновлення | 73 |
 
 ---
 

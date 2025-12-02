@@ -290,16 +290,23 @@ Use: пройти, перейти, зайти, обійти, увійти, по�
 |------|-----|---------|-------|
 | односпрямований | /ˌodnospʲrʲɑmoˈvɑnɪj/ | unidirectional | grammar term |
 | різноспрямований | /ˌrʲiznospʲrʲɑmoˈvɑnɪj/ | multidirectional | grammar term |
-| напрямок | /nɑˈprʲɑmok/ | direction | - |
 | туди | /tuˈdɪ/ | there (direction) | - |
 | сюди | /sʲuˈdɪ/ | here (direction) | - |
 | звідти | /zvʲidˈtɪ/ | from there | - |
 | звідси | /zvʲidˈsɪ/ | from here | - |
 | повз | /povz/ | past, by | preposition |
 | через | /ˈt͡ʃɛrɛz/ | through, across | preposition |
-| навколо | /nɑvˈkolo/ | around | preposition |
-| вздовж | /vzdovʒ/ | along | preposition |
 | назустріч | /nɑˈzustrʲit͡ʃ/ | towards, to meet | preposition |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| напрямок | 61 |
+| навколо | 37 |
+| вздовж | 37 |
 
 ---
 

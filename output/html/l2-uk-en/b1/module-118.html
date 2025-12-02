@@ -682,6 +682,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Лікарі радять, щоб пацієнти...</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -765,7 +766,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (15)</h3>
+        <h3>Нові слова (7)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -773,9 +774,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">попросити</td><td class="vocab-ipa">/poprosɪˈtɪ/</td><td class="vocab-en">to ask, request</td></tr><tr><td class="vocab-uk">просити</td><td class="vocab-ipa">/proˈsɪtɪ/</td><td class="vocab-en">to ask, request</td></tr><tr><td class="vocab-uk">наказати</td><td class="vocab-ipa">/nɑkɑˈzɑtɪ/</td><td class="vocab-en">to order</td></tr><tr><td class="vocab-uk">вимагати</td><td class="vocab-ipa">/vɪmɑˈɦɑtɪ/</td><td class="vocab-en">to demand</td></tr><tr><td class="vocab-uk">порадити</td><td class="vocab-ipa">/porɑˈdɪtɪ/</td><td class="vocab-en">to advise</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-ipa">/ˈrɑdɪtɪ/</td><td class="vocab-en">to advise</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-ipa">/zɑproponuˈvɑtɪ/</td><td class="vocab-en">to suggest</td></tr><tr><td class="vocab-uk">заборонити</td><td class="vocab-ipa">/zɑboroˈnɪtɪ/</td><td class="vocab-en">to forbid</td></tr><tr><td class="vocab-uk">дозволити</td><td class="vocab-ipa">/dozvoˈlɪtɪ/</td><td class="vocab-en">to allow, permit</td></tr><tr><td class="vocab-uk">благати</td><td class="vocab-ipa">/blɑˈɦɑtɪ/</td><td class="vocab-en">to beg</td></tr><tr><td class="vocab-uk">наказ</td><td class="vocab-ipa">/nɑˈkɑz/</td><td class="vocab-en">order, command</td></tr><tr><td class="vocab-uk">прохання</td><td class="vocab-ipa">/proˈxɑnʲːɑ/</td><td class="vocab-en">request</td></tr><tr><td class="vocab-uk">порада</td><td class="vocab-ipa">/poˈrɑdɑ/</td><td class="vocab-en">advice</td></tr><tr><td class="vocab-uk">заборона</td><td class="vocab-ipa">/zɑboˈronɑ/</td><td class="vocab-en">prohibition</td></tr><tr><td class="vocab-uk">дозвіл</td><td class="vocab-ipa">/ˈdozʲvʲil/</td><td class="vocab-en">permission</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">заборонити</td><td class="vocab-ipa">/zɑboroˈnɪtɪ/</td><td class="vocab-en">to forbid</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">дозволити</td><td class="vocab-ipa">/dozvoˈlɪtɪ/</td><td class="vocab-en">to allow, permit</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">благати</td><td class="vocab-ipa">/blɑˈɦɑtɪ/</td><td class="vocab-en">to beg</td><td class="vocab-note">impf</td></tr><tr><td class="vocab-uk">наказ</td><td class="vocab-ipa">/nɑˈkɑz/</td><td class="vocab-en">order, command</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">прохання</td><td class="vocab-ipa">/proˈxɑnʲːɑ/</td><td class="vocab-en">request</td><td class="vocab-note">n</td></tr><tr><td class="vocab-uk">заборона</td><td class="vocab-ipa">/zɑboˈronɑ/</td><td class="vocab-en">prohibition</td><td class="vocab-note">f</td></tr><tr><td class="vocab-uk">дозвіл</td><td class="vocab-ipa">/ˈdozʲvʲil/</td><td class="vocab-en">permission</td><td class="vocab-note">m</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (8)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">попросити</td><td class="vocab-module">Module 104</td></tr><tr><td class="vocab-uk">просити</td><td class="vocab-module">Module 8</td></tr><tr><td class="vocab-uk">наказати</td><td class="vocab-module">Module 104</td></tr><tr><td class="vocab-uk">вимагати</td><td class="vocab-module">Module 104</td></tr><tr><td class="vocab-uk">порадити</td><td class="vocab-module">Module 104</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-module">Module 33</td></tr><tr><td class="vocab-uk">запропонувати</td><td class="vocab-module">Module 98</td></tr><tr><td class="vocab-uk">порада</td><td class="vocab-module">Module 32</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -789,7 +801,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Він попросив, ___ я допоміг.","options":["щоб","що"],"correctIndex":0,"explanation":"щоб for commands and requests."},{"question":"Вона попросила, щоб він ___ раніше.","options":["прийшов","прийти"],"correctIndex":0,"explanation":"Past tense after щоб."},{"question":"Лікар ___, щоб пацієнт відпочивав.","options":["порадив","запитав"],"correctIndex":0,"explanation":"порадив for advice."},{"question":"Він сказав, щоб ми не ___.","options":["хвилювалися","хвилюватися"],"correctIndex":0,"explanation":"Past tense plural after ми."},{"question":"Батьки ___, щоб діти не грали пізно.","options":["заборонили","дозволили"],"correctIndex":0,"explanation":"заборонили for prohibitions."},{"question":"Начальник ___, щоб всі залишились.","options":["наказав","попросив"],"correctIndex":0,"explanation":"наказав for strong orders."}];
     const sortData = {};
-    const vocabData = [{"uk":"попросити","translit":"","en":"to ask, request","note":""},{"uk":"просити","translit":"","en":"to ask, request","note":""},{"uk":"наказати","translit":"","en":"to order","note":""},{"uk":"вимагати","translit":"","en":"to demand","note":""},{"uk":"порадити","translit":"","en":"to advise","note":""},{"uk":"радити","translit":"","en":"to advise","note":""},{"uk":"запропонувати","translit":"","en":"to suggest","note":""},{"uk":"заборонити","translit":"","en":"to forbid","note":""},{"uk":"дозволити","translit":"","en":"to allow, permit","note":""},{"uk":"благати","translit":"","en":"to beg","note":""},{"uk":"наказ","translit":"","en":"order, command","note":""},{"uk":"прохання","translit":"","en":"request","note":""},{"uk":"порада","translit":"","en":"advice","note":""},{"uk":"заборона","translit":"","en":"prohibition","note":""},{"uk":"дозвіл","translit":"","en":"permission","note":""}];
+    const vocabData = [{"uk":"заборонити","translit":"","en":"to forbid","note":"pf"},{"uk":"дозволити","translit":"","en":"to allow, permit","note":"pf"},{"uk":"благати","translit":"","en":"to beg","note":"impf"},{"uk":"наказ","translit":"","en":"order, command","note":"m"},{"uk":"прохання","translit":"","en":"request","note":"n"},{"uk":"заборона","translit":"","en":"prohibition","note":"f"},{"uk":"дозвіл","translit":"","en":"permission","note":"m"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

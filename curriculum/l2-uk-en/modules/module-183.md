@@ -367,12 +367,9 @@ objectives:
 |-------|--------|----------|----------|
 | пам'ятати | /pɑmˈjɑtɑtɪ/ | to remember | ipf, стан |
 | запам'ятати | /zɑpɑmˈjɑtɑtɪ/ | to memorize | pf |
-| згадувати | /zɦɑˈduwɑtɪ/ | to recall | ipf, дія |
 | згадати | /zɦɑˈdɑtɪ/ | to recall | pf |
 | нагадувати | /nɑɦɑˈduwɑtɪ/ | to remind | ipf |
-| нагадати | /nɑɦɑˈdɑtɪ/ | to remind | pf |
 | забувати | /zɑbuˈwɑtɪ/ | to forget | ipf |
-| забути | /zɑˈbutɪ/ | to forget | pf |
 | запам'ятовувати | /zɑpɑmˈjɑtɔwuwɑtɪ/ | to memorize | ipf |
 | заучувати | /zɑuˈtʃuwɑtɪ/ | to learn by heart | ipf |
 | зазубрювати | /zɑzubˈrʲuwɑtɪ/ | to cram | ipf, негативне |
@@ -380,6 +377,16 @@ objectives:
 | напам'ять | /nɑˈpɑmjɑtʲ/ | by heart | adv |
 | на пам'ять | /nɑ ˈpɑmjɑtʲ/ | as a keepsake | phrase |
 | врізатися в пам'ять | /wrʲiˈzɑtɪsʲɑ w ˈpɑmjɑtʲ/ | to be etched in memory | idiom |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| згадувати | 52 |
+| нагадати | 49 |
+| забути | 62 |
 
 ---
 

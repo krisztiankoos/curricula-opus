@@ -771,6 +771,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -855,7 +856,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (12)</h3>
+        <h3>Нові слова (2)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -863,9 +864,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">де</td><td class="vocab-ipa">/dɛ/</td><td class="vocab-en">where (location)</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-ipa">/kuˈdɪ/</td><td class="vocab-en">where (to), whither</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-ipa">/ˈzvʲidkɪ/</td><td class="vocab-en">from where, whence</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/koˈlɪ/</td><td class="vocab-en">when</td></tr><tr><td class="vocab-uk">що</td><td class="vocab-ipa">/ʃt͡ʃo/</td><td class="vocab-en">that, which, what</td></tr><tr><td class="vocab-uk">місце</td><td class="vocab-ipa">/ˈmʲist͡sɛ/</td><td class="vocab-en">place</td></tr><tr><td class="vocab-uk">час</td><td class="vocab-ipa">/t͡ʃɑs/</td><td class="vocab-en">time</td></tr><tr><td class="vocab-uk">момент</td><td class="vocab-ipa">/moˈmɛnt/</td><td class="vocab-en">moment</td></tr><tr><td class="vocab-uk">рік</td><td class="vocab-ipa">/rʲik/</td><td class="vocab-en">year</td></tr><tr><td class="vocab-uk">день</td><td class="vocab-ipa">/dɛnʲ/</td><td class="vocab-en">day</td></tr><tr><td class="vocab-uk">родом</td><td class="vocab-ipa">/ˈrodom/</td><td class="vocab-en">originally from</td></tr><tr><td class="vocab-uk">переїхати</td><td class="vocab-ipa">/pɛrɛˈjixɑtɪ/</td><td class="vocab-en">to move (residence)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">момент</td><td class="vocab-ipa">/moˈmɛnt/</td><td class="vocab-en">moment</td><td class="vocab-note">m</td></tr><tr><td class="vocab-uk">родом</td><td class="vocab-ipa">/ˈrodom/</td><td class="vocab-en">originally from</td><td class="vocab-note">adv</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (10)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">де</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-module">Module 7</td></tr><tr><td class="vocab-uk">що</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">місце</td><td class="vocab-module">Module 18</td></tr><tr><td class="vocab-uk">час</td><td class="vocab-module">Module 16</td></tr><tr><td class="vocab-uk">рік</td><td class="vocab-module">Module 23</td></tr><tr><td class="vocab-uk">день</td><td class="vocab-module">Module 3</td></tr><tr><td class="vocab-uk">переїхати</td><td class="vocab-module">Module 61</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -879,7 +891,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Місто, ___ я народився, — Харків.","options":["де","куди"],"correctIndex":0,"explanation":"\"Де\" for static location (where I was born)."},{"question":"Країна, ___ вони переїхали, — Польща.","options":["де","куди"],"correctIndex":1,"explanation":"\"Куди\" for direction/destination (where they moved to)."},{"question":"Рік, ___ я закінчив університет, — 2019.","options":["де","коли"],"correctIndex":1,"explanation":"\"Коли\" for time expressions."},{"question":"Місто, ___ він родом, — Одеса.","options":["куди","звідки"],"correctIndex":1,"explanation":"\"Звідки\" for origin (where from)."},{"question":"Офіс, ___ я працюю, на третьому поверсі.","options":["де","куди"],"correctIndex":0,"explanation":"\"Де\" for location of work."},{"question":"Все, ___ я знаю, — правда.","options":["яке","що"],"correctIndex":1,"explanation":"\"Що\" after indefinite pronouns like \"все.\""}];
     const sortData = {};
-    const vocabData = [{"uk":"де","translit":"","en":"where (location)","note":""},{"uk":"куди","translit":"","en":"where (to), whither","note":""},{"uk":"звідки","translit":"","en":"from where, whence","note":""},{"uk":"коли","translit":"","en":"when","note":""},{"uk":"що","translit":"","en":"that, which, what","note":""},{"uk":"місце","translit":"","en":"place","note":""},{"uk":"час","translit":"","en":"time","note":""},{"uk":"момент","translit":"","en":"moment","note":""},{"uk":"рік","translit":"","en":"year","note":""},{"uk":"день","translit":"","en":"day","note":""},{"uk":"родом","translit":"","en":"originally from","note":""},{"uk":"переїхати","translit":"","en":"to move (residence)","note":""}];
+    const vocabData = [{"uk":"момент","translit":"","en":"moment","note":"m"},{"uk":"родом","translit":"","en":"originally from","note":"adv"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -307,16 +307,17 @@ Tell about your family:
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | батько | /ˈbɑtʲkɔ/ | father | noun | m | Formal |
-| батьки | /ˈbɑtʲkɪ/ | parents | noun | pl |  |
+| батьки | /ˈbɑtʲkɪ/ | parents | noun | pl |
 | син | /sɪn/ | son | noun | m | Pl: сини |
 | дочка | /ˈdɔtʃkɑ/ | daughter | noun | f | Pl: дочки |
 | дитина | /dɪˈtɪnɑ/ | child | noun | f | Pl: діти! |
-| дідусь | /dʲiˈdusʲ/ | grandpa | noun | m |  |
-| бабуся | /bɑˈbusʲɑ/ | grandma | noun | f |  |
+| дідусь | /dʲiˈdusʲ/ | grandpa | noun | m |
+| бабуся | /bɑˈbusʲɑ/ | grandma | noun | f |
 | чоловік | /tʃɔlɔˈvʲik/ | husband | noun | m | Also: man |
-| дружина | /druˈʒɪnɑ/ | wife | noun | f |  |
+| дружина | /druˈʒɪnɑ/ | wife | noun | f |
 | одружений | /ɔˈdruʒɛnɪj/ | married (m) | adj | m | одружена (f) |
 | родич | /ˈrɔdɪtʃ/ | relative | noun | m | Pl: родичі |
+
 ---
 
 # Family Summary

@@ -843,6 +843,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Формальний: «Добрий день! Чи могли б Ви мені допомогти з...»</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -933,7 +934,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (9)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -941,9 +942,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">звертання</td><td class="vocab-en">form of address</td><td class="vocab-note">як називаємо людину</td></tr><tr><td class="vocab-uk">шановний</td><td class="vocab-en">dear, respected</td><td class="vocab-note">офіційне звертання</td></tr><tr><td class="vocab-uk">вельмишановний</td><td class="vocab-en">highly respected</td><td class="vocab-note">дуже офіційне</td></tr><tr><td class="vocab-uk">з повагою</td><td class="vocab-en">respectfully</td><td class="vocab-note">формула в листах</td></tr><tr><td class="vocab-uk">перепрошую</td><td class="vocab-en">I apologize</td><td class="vocab-note">формальне вибачення</td></tr><tr><td class="vocab-uk">залюбки</td><td class="vocab-en">gladly</td><td class="vocab-note">погодження</td></tr><tr><td class="vocab-uk">по батькові</td><td class="vocab-en">patronymic</td><td class="vocab-note">Петрович, Петрівна</td></tr><tr><td class="vocab-uk">етикет</td><td class="vocab-en">etiquette</td><td class="vocab-note">правила поведінки</td></tr><tr><td class="vocab-uk">ровесник</td><td class="vocab-en">peer (same age)</td><td class="vocab-note">однолітки</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (1)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">вдячний</td><td class="vocab-module">Module 71</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -957,7 +969,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Ви зустріли друга дитинства. Як привітатися?","options":["Привіт! Як справи?","Добрий день! Як Ваші справи?","Шановний пане!","Вітаю Вас!"],"correctIndex":0,"explanation":"Друзі → неформальне «ти»"},{"question":"Ви пишете листа викладачу. Як звернутися?","options":["Привіт!","Гей!","Шановний пане професоре!","Слухай!"],"correctIndex":2,"explanation":"Викладач → формальне «Ви» + звертання"},{"question":"Ви телефонуєте в банк. Як попросити допомогу?","options":["Допоможи мені!","Ну, слухай, треба допомогти.","Чи могли б Ви мені допомогти?","Дай інформацію!"],"correctIndex":2,"explanation":"Офіційна ситуація → формальне прохання"},{"question":"Хто пропонує перейти на «ти»?","options":["Молодший — старшому","Старший — молодшому","Будь-хто","Тільки чоловіки"],"correctIndex":1,"explanation":"Етикет: старший пропонує молодшому"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"звертання","translit":"","en":"form of address","note":"як називаємо людину"},{"uk":"шановний","translit":"","en":"dear, respected","note":"офіційне звертання"},{"uk":"вельмишановний","translit":"","en":"highly respected","note":"дуже офіційне"},{"uk":"з повагою","translit":"","en":"respectfully","note":"формула в листах"},{"uk":"перепрошую","translit":"","en":"I apologize","note":"формальне вибачення"},{"uk":"залюбки","translit":"","en":"gladly","note":"погодження"},{"uk":"по батькові","translit":"","en":"patronymic","note":"Петрович, Петрівна"},{"uk":"етикет","translit":"","en":"etiquette","note":"правила поведінки"},{"uk":"ровесник","translit":"","en":"peer (same age)","note":"однолітки"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

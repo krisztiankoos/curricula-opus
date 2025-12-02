@@ -305,20 +305,27 @@ Fill in with correct aspect:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| одного разу | /odnoˈɦo ˈrɑzu/ | once, one time | signals perfective |
-| раптом | /ˈrɑptom/ | suddenly | signals perfective |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | signals perfective |
 | минулого тижня | /mɪnuˈloɦo ˈtɪʒnʲɑ/ | last week | often with perfective |
-| завжди | /ˈzɑvʒdɪ/ | always | signals imperfective |
-| ніколи | /nʲiˈkolɪ/ | never | signals imperfective |
-| часто | /ˈt͡ʃɑsto/ | often | signals imperfective |
-| рідко | /ˈrʲidko/ | rarely | signals imperfective |
-| щодня | /ʃt͡ʃoˈdnʲɑ/ | every day | signals imperfective |
 | щотижня | /ʃt͡ʃoˈtɪʒnʲɑ/ | every week | signals imperfective |
-| зазвичай | /zɑˈzvɪt͡ʃɑj/ | usually | signals imperfective |
-| іноді | /iˈnodʲi/ | sometimes | signals imperfective |
 | кожного разу | /ˈkoʒnoɦo ˈrɑzu/ | each time, every time | signals imperfective |
-| раніше | /rɑˈnʲiʃɛ/ | earlier, formerly | often with imperfective |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| одного разу | 81 |
+| раптом | 43 |
+| нарешті | 43 |
+| завжди | 7 |
+| ніколи | 7 |
+| часто | 7 |
+| рідко | 7 |
+| щодня | 25 |
+| зазвичай | 25 |
+| іноді | 7 |
+| раніше | 21 |
 
 ---
 

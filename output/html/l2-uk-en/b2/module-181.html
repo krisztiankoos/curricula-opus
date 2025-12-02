@@ -880,6 +880,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -997,7 +998,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Нові слова (3)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1005,9 +1006,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">думати</td><td class="vocab-ipa">/ˈdumɑtɪ/</td><td class="vocab-en">to think</td></tr><tr><td class="vocab-uk">гадати</td><td class="vocab-ipa">/ɦɑˈdɑtɪ/</td><td class="vocab-en">to suppose</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-ipa">/wwɑˈʒɑtɪ/</td><td class="vocab-en">to consider, believe</td></tr><tr><td class="vocab-uk">міркувати</td><td class="vocab-ipa">/mʲirkuˈwɑtɪ/</td><td class="vocab-en">to contemplate</td></tr><tr><td class="vocab-uk">розмірковувати</td><td class="vocab-ipa">/rɔzmʲirkɔˈwuwɑtɪ/</td><td class="vocab-en">to reflect, ponder</td></tr><tr><td class="vocab-uk">роздумувати</td><td class="vocab-ipa">/rɔzˈdumuwɑtɪ/</td><td class="vocab-en">to hesitate</td></tr><tr><td class="vocab-uk">роздумати</td><td class="vocab-ipa">/rɔzˈdumɑtɪ/</td><td class="vocab-en">to change one&#039;s mind</td></tr><tr><td class="vocab-uk">припускати</td><td class="vocab-ipa">/prɪpusˈkɑtɪ/</td><td class="vocab-en">to assume</td></tr><tr><td class="vocab-uk">здогадуватися</td><td class="vocab-ipa">/zdɔɦɑˈduwɑtɪsʲɑ/</td><td class="vocab-en">to guess</td></tr><tr><td class="vocab-uk">передбачати</td><td class="vocab-ipa">/pɛrɛdbɑˈtʃɑtɪ/</td><td class="vocab-en">to foresee, predict</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">розмірковувати</td><td class="vocab-ipa">/rɔzmʲirkɔˈwuwɑtɪ/</td><td class="vocab-en">to reflect, ponder</td><td class="vocab-note">ipf, філософське</td></tr><tr><td class="vocab-uk">роздумати</td><td class="vocab-ipa">/rɔzˈdumɑtɪ/</td><td class="vocab-en">to change one&#039;s mind</td><td class="vocab-note">pf, передумати!</td></tr><tr><td class="vocab-uk">здогадуватися</td><td class="vocab-ipa">/zdɔɦɑˈduwɑtɪsʲɑ/</td><td class="vocab-en">to guess</td><td class="vocab-note">ipf, інтуїтивне</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (7)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">думати</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">гадати</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">вважати</td><td class="vocab-module">Module 58</td></tr><tr><td class="vocab-uk">міркувати</td><td class="vocab-module">Module 132</td></tr><tr><td class="vocab-uk">роздумувати</td><td class="vocab-module">Module 132</td></tr><tr><td class="vocab-uk">припускати</td><td class="vocab-module">Module 132</td></tr><tr><td class="vocab-uk">передбачати</td><td class="vocab-module">Module 66</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1021,7 +1033,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Гадати» виражає:","options":["невпевненість, припущення","впевненість"],"correctIndex":0,"explanation":"Гадати = I suppose (uncertain)."},{"question":"«Вважати» виражає:","options":["невпевненість","впевнену позицію"],"correctIndex":1,"explanation":"Вважати = I believe/consider (confident)."},{"question":"«Міркувати» означає:","options":["глибоко думати, аналізувати","швидко вирішувати"],"correctIndex":0,"explanation":"Серйозний аналіз."},{"question":"«Роздумати» означає:","options":["передумати, змінити рішення","почати думати глибше"],"correctIndex":0,"explanation":"Він роздумав = він передумав."},{"question":"«Думати над чимось» керує:","options":["орудним відмінком (чим?)","знахідним"],"correctIndex":0,"explanation":"Думати **над чим?** — над проблемою."},{"question":"«Вважати щось чимось» — яке керування?","options":["подвійний знахідний + орудний","лише знахідний"],"correctIndex":0,"explanation":"Вважаю **це** (що?) **помилкою** (чим?)."},{"question":"**[Інтеграція: пасив]** Офіційний звіт: «Ситуацію ___ критичною.»","options":["визнано","вважали","думається"],"correctIndex":0,"explanation":"Офіційний стиль → -но/-то форма."},{"question":"**[Інтеграція: регістр]** Науковий стиль: «Автор ___, що гіпотеза підтверджена.»","options":["гадає","вважає","думає"],"correctIndex":1,"explanation":"Науковий стиль → впевнене дієслово."},{"question":"«Здогадуватися» відрізняється від «припускати»:","options":["здогадуватися — інтуїція, припускати — логіка","однакові"],"correctIndex":0,"explanation":"Guess vs assume."},{"question":"«Мислити» — це стиль:","options":["книжний, філософський","розмовний"],"correctIndex":0,"explanation":"Cogito ergo sum = Мислю, отже існую."}];
     const sortData = {};
-    const vocabData = [{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"гадати","translit":"","en":"to suppose","note":""},{"uk":"вважати","translit":"","en":"to consider, believe","note":""},{"uk":"міркувати","translit":"","en":"to contemplate","note":""},{"uk":"розмірковувати","translit":"","en":"to reflect, ponder","note":""},{"uk":"роздумувати","translit":"","en":"to hesitate","note":""},{"uk":"роздумати","translit":"","en":"to change one's mind","note":""},{"uk":"припускати","translit":"","en":"to assume","note":""},{"uk":"здогадуватися","translit":"","en":"to guess","note":""},{"uk":"передбачати","translit":"","en":"to foresee, predict","note":""}];
+    const vocabData = [{"uk":"розмірковувати","translit":"","en":"to reflect, ponder","note":"ipf, філософське"},{"uk":"роздумати","translit":"","en":"to change one's mind","note":"pf, передумати!"},{"uk":"здогадуватися","translit":"","en":"to guess","note":"ipf, інтуїтивне"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

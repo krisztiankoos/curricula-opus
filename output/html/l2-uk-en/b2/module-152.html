@@ -705,6 +705,7 @@ footer {
 <p>«Шановний пане директоре! На жаль, у зв'язку з непередбаченими обставинами не маю змоги бути присутнім(-ою) на сьогоднішній зустрічі. Прошу перенести зустріч на завтра. Перепрошую за незручності.»</p>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -770,7 +771,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (5)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -778,9 +779,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">перемикання</td><td class="vocab-en">code-switching</td><td class="vocab-note">зміна регістру</td></tr><tr><td class="vocab-uk">адекватний</td><td class="vocab-en">appropriate</td><td class="vocab-note">доречний</td></tr><tr><td class="vocab-uk">троп</td><td class="vocab-en">trope</td><td class="vocab-note">образний засіб</td></tr><tr><td class="vocab-uk">комплексний</td><td class="vocab-en">complex</td><td class="vocab-note">багатоаспектний</td></tr><tr><td class="vocab-uk">непередбачений</td><td class="vocab-en">unforeseen</td><td class="vocab-note">несподіваний</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (3)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">трансформація</td><td class="vocab-module">Module 146</td></tr><tr><td class="vocab-uk">маркер</td><td class="vocab-module">Module 147</td></tr><tr><td class="vocab-uk">змішування</td><td class="vocab-module">Module 146</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -794,7 +806,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Прошу розглянути питання щодо надання відпустки.»","options":["Офіційно-діловий","Розмовний","Публіцистичний","Науковий"],"correctIndex":0,"explanation":"Кліше «прошу розглянути», «щодо надання» → офіційний"},{"question":"«Ну от, я й думаю — може, підемо?»","options":["Офіційно-діловий","Розмовний","Публіцистичний","Науковий"],"correctIndex":1,"explanation":"Частки «ну», «от», неповнота → розмовний"},{"question":"«Хвиля протестів охопила країну.»","options":["Офіційно-діловий","Розмовний","Публіцистичний","Науковий"],"correctIndex":2,"explanation":"Метафора «хвиля», оцінність → публіцистичний"},{"question":"«У статті аналізуються фактори впливу на процес.»","options":["Офіційно-діловий","Розмовний","Публіцистичний","Науковий"],"correctIndex":3,"explanation":"Терміни, -ся пасив для процесу → науковий"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"перемикання","translit":"","en":"code-switching","note":"зміна регістру"},{"uk":"адекватний","translit":"","en":"appropriate","note":"доречний"},{"uk":"троп","translit":"","en":"trope","note":"образний засіб"},{"uk":"комплексний","translit":"","en":"complex","note":"багатоаспектний"},{"uk":"непередбачений","translit":"","en":"unforeseen","note":"несподіваний"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

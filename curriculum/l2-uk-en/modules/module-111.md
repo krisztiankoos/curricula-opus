@@ -259,22 +259,29 @@ Talk about:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| газета | /ɦɑˈzɛtɑ/ | newspaper | f |
-| журнал | /ʒurˈnɑl/ | magazine | m |
 | стаття | /stɑˈtʲːɑ/ | article | f |
 | заголовок | /zɑˈɦolovok/ | headline | m |
-| журналіст | /ʒurnɑˈlʲist/ | journalist | m |
 | редактор | /rɛˈdɑktor/ | editor | m |
 | новини | /noˈvɪnɪ/ | news | pl |
 | телебачення | /tɛlɛˈbɑt͡ʃɛnʲːɑ/ | television | n |
-| радіо | /ˈrɑdʲio/ | radio | n |
 | передача | /pɛrɛˈdɑt͡ʃɑ/ | program | f |
 | інтернет | /intɛrˈnɛt/ | internet | m |
 | вебсайт | /vɛbˈsɑjt/ | website | m |
 | блог | /bloɦ/ | blog | m |
 | соціальна мережа | - | social network | f |
-| підписник | /pʲidˈpɪsnɪk/ | subscriber | m |
-| коментар | /komɛnˈtɑr/ | comment | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| газета | 11 |
+| журнал | 11 |
+| журналіст | 36 |
+| радіо | 1 |
+| підписник | 73 |
+| коментар | 73 |
 
 ---
 

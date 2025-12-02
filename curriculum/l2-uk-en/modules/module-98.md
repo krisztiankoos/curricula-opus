@@ -324,21 +324,28 @@ How would you respond?
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| згоден | /ˈzɦodɛn/ | agree (m) | adj |
-| згодна | /ˈzɦodnɑ/ | agree (f) | adj |
-| погоджуватися | /poɦoˈdʒuvɑtɪsʲɑ/ | to agree | impf |
 | погодитися | /poɦoˈdɪtɪsʲɑ/ | to agree | pf |
-| рація | /ˈrɑt͡sʲijɑ/ | right (as in "you're right") | f |
 | сперечатися | /spɛrɛˈt͡ʃɑtɪsʲɑ/ | to argue | impf |
 | заперечувати | /zɑpɛrɛˈt͡ʃuvɑtɪ/ | to object | impf |
 | заперечити | /zɑpɛˈrɛt͡ʃɪtɪ/ | to object | pf |
-| навпаки | /nɑvˈpɑkɪ/ | on the contrary | adv |
 | натомість | /nɑˈtomʲistʲ/ | instead | adv |
 | почасти | /poˈt͡ʃɑstɪ/ | partly | adv |
 | враховувати | /vrɑxoˈvuvɑtɪ/ | to consider, take into account | impf |
 | врахувати | /vrɑxuˈvɑtɪ/ | to consider | pf |
 | запропонувати | /zɑproponuˈvɑtɪ/ | to suggest | pf |
 | пропонувати | /proponuˈvɑtɪ/ | to suggest | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| згоден | 58 |
+| згодна | 58 |
+| погоджуватися | 58 |
+| рація | 58 |
+| навпаки | 58 |
 
 ---
 

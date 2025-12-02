@@ -307,16 +307,23 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| король | /kɔˈrɔlʲ/ | king | m |
 | корона | /kɔˈrɔnɑ/ | crown | f |
 | коронувати | /kɔrɔnuˈwɑtɪ/ | to crown | pf/ipf |
 | союзник | /sɔˈjuznɪk/ | ally | m |
 | загрожувати | /zɑɦrɔˈʒuwɑtɪ/ | to threaten | ipf |
-| унія | /ˈunʲijɑ/ | union | f |
 | нащадок | /nɑˈʃt͡ʃɑdɔk/ | descendant | m |
-| князівство | /knʲɑˈzʲiwstwɔ/ | principality | n |
 | орда | /ɔrˈdɑ/ | horde | f |
 | хрестоносці | /xrɛstɔˈnɔsʲt͡sʲi/ | crusaders | pl |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| король | 175 |
+| унія | 175 |
+| князівство | 175 |
 
 ---
 

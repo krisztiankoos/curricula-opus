@@ -370,20 +370,27 @@ B: Я працював над ним шість місяців. Закінчив
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| результат | /rɛzulʲˈtɑt/ | result | perfective focus |
-| процес | /proˈt͡sɛs/ | process | imperfective focus |
 | завершити | /zɑvɛrˈʃɪtɪ/ | to complete | perfective |
-| закінчити | /zɑkʲinˈt͡ʃɪtɪ/ | to finish | perfective |
-| закінчувати | /zɑkʲinˈt͡ʃuvɑtɪ/ | to be finishing | imperfective |
 | досягти | /doˈsʲɑɦtɪ/ | to achieve | perfective |
 | досягати | /dosʲɑˈɦɑtɪ/ | to be achieving | imperfective |
 | тривати | /trɪˈvɑtɪ/ | to last, to continue | imperfective only |
-| продовжувати | /prodovˈʒuvɑtɪ/ | to continue | imperfective |
 | продовжити | /prodovˈʒɪtɪ/ | to continue (one step) | perfective |
 | перервати | /pɛrɛrˈvɑtɪ/ | to interrupt | perfective |
 | переривати | /pɛrɛrɪˈvɑtɪ/ | to be interrupting | imperfective |
-| за годину | /zɑ ɦoˈdɪnu/ | in an hour (completion) | signals perfective |
 | цілий | /ˈt͡sʲilɪj/ | whole, entire | with imperfective |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| результат | 46 |
+| процес | 81 |
+| закінчити | 24 |
+| закінчувати | 75 |
+| продовжувати | 53 |
+| за годину | 81 |
 
 ---
 

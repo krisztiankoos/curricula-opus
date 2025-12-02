@@ -349,21 +349,28 @@ Use multidirectional for completed trips:
 | Word | IPA | English | Type |
 |------|-----|---------|------|
 | іти | /iˈtɪ/ | to go (on foot) | uni |
-| ходити | /xoˈdɪtɪ/ | to go (on foot) | multi |
 | їхати | /ˈjixɑtɪ/ | to go (by vehicle) | uni |
 | їздити | /ˈjizdɪtɪ/ | to go (by vehicle) | multi |
 | бігти | /ˈbʲiɦtɪ/ | to run | uni |
-| бігати | /ˈbʲiɦɑtɪ/ | to run | multi |
 | летіти | /lɛˈtʲitɪ/ | to fly | uni |
 | літати | /lʲiˈtɑtɪ/ | to fly | multi |
 | плисти | /plɪsˈtɪ/ | to swim | uni |
-| плавати | /ˈplɑvɑtɪ/ | to swim | multi |
-| нести | /nɛsˈtɪ/ | to carry | uni |
-| носити | /noˈsɪtɪ/ | to carry, wear | multi |
 | везти | /vɛzˈtɪ/ | to transport | uni |
 | возити | /voˈzɪtɪ/ | to transport | multi |
 | вести | /vɛsˈtɪ/ | to lead | uni |
 | водити | /voˈdɪtɪ/ | to lead, drive | multi |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| ходити | 8 |
+| бігати | 77 |
+| плавати | 77 |
+| нести | 11 |
+| носити | 8 |
 
 ---
 

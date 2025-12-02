@@ -395,48 +395,55 @@ Match the action:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| супермаркет | /supɛrˈmɑrkɛt/ | supermarket | noun | m | |
-| торговий центр | /torˈɦovɪj tsɛntr/ | shopping mall | noun | m | |
-| ринок | /ˈrɪnok/ | market | noun | m | |
-| універмаг | /unʲivɛrˈmɑɦ/ | department store | noun | m | |
-| секонд-хенд | /sɛˈkond xɛnd/ | secondhand store | noun | m | |
-| булочна | /buˈlotʃnɑ/ | bakery | noun | f | |
-| кондитерська | /kondɪˈtɛrskɑ/ | confectionery | noun | f | |
-| зоомагазин | /zoomɑɦɑˈzɪn/ | pet store | noun | m | |
-| ювелірний магазин | /juvɛˈlʲirnɪj mɑɦɑˈzɪn/ | jewelry store | noun | m | |
-| канцтовари | /kɑntstoˈvɑrɪ/ | stationery | noun | pl | |
-| рахунок | /rɑˈxunok/ | account | noun | m | |
-| картка | /ˈkɑrtkɑ/ | card | noun | f | |
-| готівка | /ɦoˈtʲivkɑ/ | cash | noun | f | |
-| переказ | /pɛrɛˈkɑz/ | transfer | noun | m | |
-| вклад | /vklɑd/ | deposit | noun | m | |
-| кредит | /krɛˈdɪt/ | credit, loan | noun | m | |
-| відсоток | /vʲidˈsotok/ | interest rate | noun | m | |
-| банкомат | /bɑnkoˈmɑt/ | ATM | noun | m | |
-| валюта | /vɑˈlʲutɑ/ | currency | noun | f | |
-| перукарня | /pɛruˈkɑrnʲɑ/ | hair salon | noun | f | |
-| хімчистка | /xʲimˈtʃɪstkɑ/ | dry cleaner | noun | f | |
-| майстерня | /mɑjˈstɛrnʲɑ/ | repair shop | noun | f | |
-| автосервіс | /ɑvtosɛrˈvʲis/ | car service | noun | m | |
-| ательє | /ɑtɛˈlʲjɛ/ | tailor shop | noun | n | |
-| знижка | /ˈznɪʒkɑ/ | discount | noun | f | |
-| акція | /ˈɑktsʲijɑ/ | sale, promotion | noun | f | |
-| розпродаж | /rozpˈrodɑʒ/ | clearance sale | noun | m | |
-| чек | /tʃɛk/ | receipt | noun | m | |
-| здача | /ˈzdɑtʃɑ/ | change | noun | f | |
-| передоплата | /pɛrɛdopˈlɑtɑ/ | prepayment | noun | f | |
-| розстрочка | /rozˈstrotʃkɑ/ | installment | noun | f | |
-| доставка | /dosˈtɑvkɑ/ | delivery | noun | f | |
-| самовивіз | /sɑmovɪˈvʲiz/ | pickup | noun | m | |
-| повернення | /povɛrˈnɛnʲːɑ/ | return | noun | n | |
-| гарантія | /ɦɑˈrɑntʲijɑ/ | warranty | noun | f | |
-| відстеження | /vʲidˈstɛʒɛnʲːɑ/ | tracking | noun | n | |
-| замовляти | /zɑmovˈlʲɑtɪ/ | to order | verb | - | impf |
+| супермаркет | /supɛrˈmɑrkɛt/ | supermarket | noun | m |
+| торговий центр | /torˈɦovɪj tsɛntr/ | shopping mall | noun | m |
+| універмаг | /unʲivɛrˈmɑɦ/ | department store | noun | m |
+| секонд-хенд | /sɛˈkond xɛnd/ | secondhand store | noun | m |
+| булочна | /buˈlotʃnɑ/ | bakery | noun | f |
+| кондитерська | /kondɪˈtɛrskɑ/ | confectionery | noun | f |
+| зоомагазин | /zoomɑɦɑˈzɪn/ | pet store | noun | m |
+| ювелірний магазин | /juvɛˈlʲirnɪj mɑɦɑˈzɪn/ | jewelry store | noun | m |
+| канцтовари | /kɑntstoˈvɑrɪ/ | stationery | noun | pl |
+| вклад | /vklɑd/ | deposit | noun | m |
+| валюта | /vɑˈlʲutɑ/ | currency | noun | f |
+| перукарня | /pɛruˈkɑrnʲɑ/ | hair salon | noun | f |
+| хімчистка | /xʲimˈtʃɪstkɑ/ | dry cleaner | noun | f |
+| майстерня | /mɑjˈstɛrnʲɑ/ | repair shop | noun | f |
+| автосервіс | /ɑvtosɛrˈvʲis/ | car service | noun | m |
+| ательє | /ɑtɛˈlʲjɛ/ | tailor shop | noun | n |
+| здача | /ˈzdɑtʃɑ/ | change | noun | f |
+| передоплата | /pɛrɛdopˈlɑtɑ/ | prepayment | noun | f |
+| розстрочка | /rozˈstrotʃkɑ/ | installment | noun | f |
+| самовивіз | /sɑmovɪˈvʲiz/ | pickup | noun | m |
+| повернення | /povɛrˈnɛnʲːɑ/ | return | noun | n |
+| гарантія | /ɦɑˈrɑntʲijɑ/ | warranty | noun | f |
+| відстеження | /vʲidˈstɛʒɛnʲːɑ/ | tracking | noun | n |
 | повертати | /povɛrˈtɑtɪ/ | to return | verb | - | impf |
 | обмінювати | /obmʲiˈnʲuvɑtɪ/ | to exchange | verb | - | impf |
 | бронювати | /broˈnʲuvɑtɪ/ | to book | verb | - | impf |
 | доставляти | /dostɑvˈlʲɑtɪ/ | to deliver | verb | - | impf |
 | скаржитися | /ˈskɑrʒɪtɪsʲɑ/ | to complain | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| ринок | 15 |
+| рахунок | 18 |
+| картка | 9 |
+| готівка | 9 |
+| переказ | 39 |
+| кредит | 39 |
+| відсоток | 39 |
+| банкомат | 39 |
+| знижка | 9 |
+| акція | 48 |
+| розпродаж | 48 |
+| чек | 19 |
+| доставка | 39 |
+| замовляти | 18 |
 
 ---
 

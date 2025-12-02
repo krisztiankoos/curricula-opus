@@ -253,21 +253,28 @@ A friend is stressed and tired. What do you advise?
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| здоров'я | /zdoˈrowjɑ/ | health | n |
 | самопочуття | /sɑmopoˈt͡ʃutʲːɑ/ | well-being | n |
 | стрес | /strɛs/ | stress | m |
-| втома | /ˈftomɑ/ | fatigue | f |
 | вигорання | /vɪɦoˈrɑnʲːɑ/ | burnout | n |
 | депресія | /dɛˈprɛsʲijɑ/ | depression | f |
 | харчування | /xɑrt͡ʃuˈvɑnʲːɑ/ | nutrition | n |
 | дієта | /dʲiˈjɛtɑ/ | diet | f |
-| тренування | /trɛnuˈvɑnʲːɑ/ | workout | n |
-| вправа | /ˈwprɑvɑ/ | exercise | f |
 | сон | /son/ | sleep | m |
 | безсоння | /bɛzˈsonʲːɑ/ | insomnia | n |
-| відпочинок | /vʲidpoˈt͡ʃɪnok/ | rest | m |
 | імунітет | /imuˈnʲitɛt/ | immunity | m |
 | одужання | /oduˈʒɑnʲːɑ/ | recovery | n |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| здоров'я | 68 |
+| втома | 68 |
+| тренування | 77 |
+| вправа | 77 |
+| відпочинок | 74 |
 
 ---
 

@@ -744,6 +744,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -809,7 +810,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (11)</h3>
+        <h3>Нові слова (5)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -817,9 +818,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">бо</td><td class="vocab-ipa">/bɔ/</td><td class="vocab-en">причина</td></tr><tr><td class="vocab-uk">тому що</td><td class="vocab-ipa">/tɔˈmu ʃt͡ʃɔ/</td><td class="vocab-en">причина</td></tr><tr><td class="vocab-uk">оскільки</td><td class="vocab-ipa">/ɔsˈkʲilʲkɪ/</td><td class="vocab-en">причина</td></tr><tr><td class="vocab-uk">через те що</td><td class="vocab-ipa">/ˈtʃɛrɛz tɛ ʃt͡ʃɔ/</td><td class="vocab-en">причина (−)</td></tr><tr><td class="vocab-uk">завдяки тому що</td><td class="vocab-ipa">/zɑwˈdʲakɪ tɔˈmu/</td><td class="vocab-en">причина (+)</td></tr><tr><td class="vocab-uk">у зв&#039;язку з тим що</td><td class="vocab-ipa">/u ˈzwjɑzku z tɪm/</td><td class="vocab-en">причина</td></tr><tr><td class="vocab-uk">хоча</td><td class="vocab-ipa">/xɔˈtʃɑ/</td><td class="vocab-en">допустовість</td></tr><tr><td class="vocab-uk">хоч</td><td class="vocab-ipa">/xɔtʃ/</td><td class="vocab-en">допустовість</td></tr><tr><td class="vocab-uk">незважаючи на те що</td><td class="vocab-ipa">/nɛzwɑˈʒɑjutʃɪ/</td><td class="vocab-en">допустовість</td></tr><tr><td class="vocab-uk">попри те що</td><td class="vocab-ipa">/pɔˈprɪ tɛ/</td><td class="vocab-en">допустовість</td></tr><tr><td class="vocab-uk">дарма що</td><td class="vocab-ipa">/ˈdɑrmɑ ʃt͡ʃɔ/</td><td class="vocab-en">допустовість (−)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">через те що</td><td class="vocab-ipa">/ˈtʃɛrɛz tɛ ʃt͡ʃɔ/</td><td class="vocab-en">причина (−)</td><td class="vocab-note">офіційний</td></tr><tr><td class="vocab-uk">завдяки тому що</td><td class="vocab-ipa">/zɑwˈdʲakɪ tɔˈmu/</td><td class="vocab-en">причина (+)</td><td class="vocab-note">офіційний</td></tr><tr><td class="vocab-uk">у зв&#039;язку з тим що</td><td class="vocab-ipa">/u ˈzwjɑzku z tɪm/</td><td class="vocab-en">причина</td><td class="vocab-note">дуже офіц.</td></tr><tr><td class="vocab-uk">незважаючи на те що</td><td class="vocab-ipa">/nɛzwɑˈʒɑjutʃɪ/</td><td class="vocab-en">допустовість</td><td class="vocab-note">офіційний</td></tr><tr><td class="vocab-uk">попри те що</td><td class="vocab-ipa">/pɔˈprɪ tɛ/</td><td class="vocab-en">допустовість</td><td class="vocab-note">книжний</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">бо</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">тому що</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">оскільки</td><td class="vocab-module">Module 109</td></tr><tr><td class="vocab-uk">хоча</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">хоч</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">дарма що</td><td class="vocab-module">Module 108</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -833,7 +845,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Бо» — це стиль:","options":["розмовний","офіційний"],"correctIndex":0,"explanation":"Найрозмовніший причиновий сполучник."},{"question":"«Завдяки» використовується для:","options":["позитивних причин","негативних причин"],"correctIndex":0,"explanation":"«Завдяки вашій допомозі» — позитивно!"},{"question":"«Попри» — це:","options":["суто українське слово","запозичення з російської"],"correctIndex":0,"explanation":"Немає прямого відповідника в російській!"},{"question":"«Хоча» виражає:","options":["допустовість (протиріччя)","причину"],"correctIndex":0,"explanation":"Although = незважаючи на те що."},{"question":"«Оскільки» може стояти:","options":["і на початку, і в середині речення","лише після головного речення"],"correctIndex":0,"explanation":"Гнучка позиція."},{"question":"«Незважаючи на те що» скорочується до:","options":["«Незважаючи на + іменник»","«Бо + дієслово»"],"correctIndex":0,"explanation":"Незважаючи на труднощі = незважаючи на те що були труднощі."},{"question":"**[Інтеграція: пасив]** «___ звіт не готовий, засідання перенесено.»","options":["У зв'язку з тим що","Бо"],"correctIndex":0,"explanation":"Офіційний стиль + пасив → офіційний сполучник."},{"question":"**[Інтеграція: регістр]** Розмова: «Не прийшов, ___ захворів.»","options":["бо","у зв'язку з тим що"],"correctIndex":0,"explanation":"Розмовний стиль → бо."},{"question":"«Дарма що» має відтінок:","options":["розчарування","радості"],"correctIndex":0,"explanation":"«Дарма що обіцяв — не зробив!»"},{"question":"Правильно: «___ аварії він запізнився.»","options":["Через","Завдяки"],"correctIndex":0,"explanation":"Аварія — негативна причина!"}];
     const sortData = {};
-    const vocabData = [{"uk":"бо","translit":"","en":"причина","note":""},{"uk":"тому що","translit":"","en":"причина","note":""},{"uk":"оскільки","translit":"","en":"причина","note":""},{"uk":"через те що","translit":"","en":"причина (−)","note":""},{"uk":"завдяки тому що","translit":"","en":"причина (+)","note":""},{"uk":"у зв'язку з тим що","translit":"","en":"причина","note":""},{"uk":"хоча","translit":"","en":"допустовість","note":""},{"uk":"хоч","translit":"","en":"допустовість","note":""},{"uk":"незважаючи на те що","translit":"","en":"допустовість","note":""},{"uk":"попри те що","translit":"","en":"допустовість","note":""},{"uk":"дарма що","translit":"","en":"допустовість (−)","note":""}];
+    const vocabData = [{"uk":"через те що","translit":"","en":"причина (−)","note":"офіційний"},{"uk":"завдяки тому що","translit":"","en":"причина (+)","note":"офіційний"},{"uk":"у зв'язку з тим що","translit":"","en":"причина","note":"дуже офіц."},{"uk":"незважаючи на те що","translit":"","en":"допустовість","note":"офіційний"},{"uk":"попри те що","translit":"","en":"допустовість","note":"книжний"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

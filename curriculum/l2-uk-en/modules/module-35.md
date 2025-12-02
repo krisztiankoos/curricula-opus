@@ -390,18 +390,18 @@ Create sentences using instrumental for means:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| автобус | /ɑfˈtobus/ | bus | noun | m | |
-| тролейбус | /troˈlɛjbus/ | trolleybus | noun | m | |
-| трамвай | /trɑmˈvɑj/ | tram | noun | m | |
-| поїзд | /ˈpojizd/ | train | noun | m | |
-| літак | /lʲiˈtɑk/ | airplane | noun | m | |
-| велосипед | /vɛlosɪˈpɛd/ | bicycle | noun | m | |
-| олівець | /oliˈvɛtsʲ/ | pencil | noun | m | |
-| ніж | /nʲiʒ/ | knife | noun | m | |
-| виделка | /vɪˈdɛlkɑ/ | fork | noun | f | |
-| ложка | /ˈloʒkɑ/ | spoon | noun | f | |
-| голос | /ˈɦolos/ | voice | noun | m | |
-| шепіт | /ˈʃɛpʲit/ | whisper | noun | m | |
+| автобус | /ɑfˈtobus/ | bus | noun | m |
+| тролейбус | /troˈlɛjbus/ | trolleybus | noun | m |
+| трамвай | /trɑmˈvɑj/ | tram | noun | m |
+| поїзд | /ˈpojizd/ | train | noun | m |
+| літак | /lʲiˈtɑk/ | airplane | noun | m |
+| велосипед | /vɛlosɪˈpɛd/ | bicycle | noun | m |
+| олівець | /oliˈvɛtsʲ/ | pencil | noun | m |
+| ніж | /nʲiʒ/ | knife | noun | m |
+| виделка | /vɪˈdɛlkɑ/ | fork | noun | f |
+| ложка | /ˈloʒkɑ/ | spoon | noun | f |
+| голос | /ˈɦolos/ | voice | noun | m |
+| шепіт | /ˈʃɛpʲit/ | whisper | noun | m |
 | керувати | /kɛruˈvɑtɪ/ | to drive, manage | verb | - | + instr |
 | володіти | /voloˈdʲitɪ/ | to master, own | verb | - | + instr |
 | захоплюватися | /zɑxoplʲuˈvɑtɪsʲɑ/ | to be fascinated | verb | - | + instr |

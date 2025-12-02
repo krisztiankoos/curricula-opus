@@ -376,44 +376,51 @@ Share a simple recipe:
 | пекти | /ˈpɛktɪ/ | to bake | verb | - | impf |
 | готувати | /ɦotuˈvɑtɪ/ | to prepare, cook | verb | - | impf |
 | різати | /ˈrʲizɑtɪ/ | to cut | verb | - | impf |
-| чистити | /ˈtʃɪstɪtɪ/ | to peel, clean | verb | - | impf |
 | мішати | /mʲiˈʃɑtɪ/ | to mix, stir | verb | - | impf |
 | додавати | /dodɑˈvɑtɪ/ | to add | verb | - | impf |
-| каструля | /kɑsˈtrulʲɑ/ | pot | noun | f | |
-| сковорода | /skovoroˈdɑ/ | frying pan | noun | f | |
-| духовка | /duˈxovkɑ/ | oven | noun | f | |
-| терка | /ˈtɛrkɑ/ | grater | noun | f | |
-| дошка | /ˈdoʃkɑ/ | cutting board | noun | f | |
-| курятина | /kurʲɑˈtɪnɑ/ | chicken (meat) | noun | f | |
-| свинина | /svɪˈnɪnɑ/ | pork | noun | f | |
-| яловичина | /jɑloˈvɪtʃɪnɑ/ | beef | noun | f | |
-| фарш | /fɑrʃ/ | ground meat | noun | m | |
-| цибуля | /tsɪˈbulʲɑ/ | onion | noun | f | |
-| часник | /tʃɑsˈnɪk/ | garlic | noun | m | |
-| морква | /ˈmorkvɑ/ | carrot | noun | f | |
-| капуста | /kɑˈpustɑ/ | cabbage | noun | f | |
-| буряк | /burʲˈɑk/ | beet | noun | m | |
-| гречка | /ˈɦrɛtʃkɑ/ | buckwheat | noun | f | |
-| сметана | /smɛˈtɑnɑ/ | sour cream | noun | f | |
-| вершки | /vɛrˈʃkɪ/ | cream | noun | pl | |
-| смачний | /ˈsmɑtʃnɪj/ | delicious | adj | - | |
-| солоний | /soˈlonɪj/ | salty | adj | - | |
-| солодкий | /soˈlodkɪj/ | sweet | adj | - | |
-| кислий | /ˈkɪslɪj/ | sour | adj | - | |
-| гіркий | /ˈɦʲirkɪj/ | bitter | adj | - | |
-| гострий | /ˈɦostrɪj/ | spicy, sharp | adj | - | |
-| свіжий | /ˈsvʲiʒɪj/ | fresh | adj | - | |
-| соковитий | /sokoˈvɪtɪj/ | juicy | adj | - | |
-| страва | /ˈstrɑvɑ/ | dish | noun | f | |
-| рецепт | /rɛˈtsɛpt/ | recipe | noun | m | |
-| порція | /ˈportsʲijɑ/ | portion | noun | f | |
+| каструля | /kɑsˈtrulʲɑ/ | pot | noun | f |
+| сковорода | /skovoroˈdɑ/ | frying pan | noun | f |
+| духовка | /duˈxovkɑ/ | oven | noun | f |
+| терка | /ˈtɛrkɑ/ | grater | noun | f |
+| дошка | /ˈdoʃkɑ/ | cutting board | noun | f |
+| курятина | /kurʲɑˈtɪnɑ/ | chicken (meat) | noun | f |
+| свинина | /svɪˈnɪnɑ/ | pork | noun | f |
+| яловичина | /jɑloˈvɪtʃɪnɑ/ | beef | noun | f |
+| фарш | /fɑrʃ/ | ground meat | noun | m |
+| цибуля | /tsɪˈbulʲɑ/ | onion | noun | f |
+| часник | /tʃɑsˈnɪk/ | garlic | noun | m |
+| морква | /ˈmorkvɑ/ | carrot | noun | f |
+| капуста | /kɑˈpustɑ/ | cabbage | noun | f |
+| буряк | /burʲˈɑk/ | beet | noun | m |
+| гречка | /ˈɦrɛtʃkɑ/ | buckwheat | noun | f |
+| сметана | /smɛˈtɑnɑ/ | sour cream | noun | f |
+| вершки | /vɛrˈʃkɪ/ | cream | noun | pl |
+| солоний | /soˈlonɪj/ | salty | adj | - |
+| солодкий | /soˈlodkɪj/ | sweet | adj | - |
+| кислий | /ˈkɪslɪj/ | sour | adj | - |
+| гіркий | /ˈɦʲirkɪj/ | bitter | adj | - |
+| гострий | /ˈɦostrɪj/ | spicy, sharp | adj | - |
+| соковитий | /sokoˈvɪtɪj/ | juicy | adj | - |
+| порція | /ˈportsʲijɑ/ | portion | noun | f |
 | смакувати | /smɑkuˈvɑtɪ/ | to taste (enjoy) | verb | - | impf |
 | наїстися | /nɑˈjistɪsʲɑ/ | to eat one's fill | verb | - | pf |
-| борщ | /borʃtʃ/ | borscht | noun | m | |
-| вареники | /vɑˈrɛnɪkɪ/ | dumplings | noun | pl | |
-| деруни | /dɛˈrunɪ/ | potato pancakes | noun | pl | |
-| голубці | /ɦoluˈptsʲi/ | stuffed cabbage | noun | pl | |
-| сирники | /sɪrˈnɪkɪ/ | cottage cheese pancakes | noun | pl | |
+| деруни | /dɛˈrunɪ/ | potato pancakes | noun | pl |
+| голубці | /ɦoluˈptsʲi/ | stuffed cabbage | noun | pl |
+| сирники | /sɪrˈnɪkɪ/ | cottage cheese pancakes | noun | pl |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| чистити | 25 |
+| смачний | 17 |
+| свіжий | 17 |
+| страва | 18 |
+| рецепт | 54 |
+| борщ | 17 |
+| вареники | 17 |
 
 ---
 

@@ -259,22 +259,29 @@ Talk about:
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| досвід | /ˈdosvʲid/ | experience | m |
 | переживання | /pɛrɛʒɪˈvɑnʲːɑ/ | experience (emotional) | n |
-| знання | /znɑnʲˈːɑ/ | knowledge | n (usually pl) |
 | навичка | /nɑˈvɪt͡ʃkɑ/ | skill | f |
 | вміння | /vˈmʲinʲːɑ/ | ability | n |
-| можливість | /moʒˈlɪvʲistʲ/ | opportunity | f |
 | шанс | /ʃɑns/ | chance | m |
 | вибір | /ˈvɪbʲir/ | choice | m |
 | варіант | /vɑrʲiˈɑnt/ | option | m |
-| відповідальність | /vʲidpovʲidɑlʲˈnʲistʲ/ | responsibility | f |
-| обов'язок | /oboˈvjɑzok/ | duty | m |
 | ситуація | /sɪtuˈɑt͡sʲijɑ/ | situation | f |
 | умови | /uˈmovɪ/ | conditions | pl |
 | зміна | /ˈzmʲinɑ/ | change | f |
 | стабільність | /stɑˈbʲilʲnʲistʲ/ | stability | f |
 | ризик | /ˈrɪzɪk/ | risk | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| досвід | 33 |
+| знання | 63 |
+| можливість | 47 |
+| відповідальність | 63 |
+| обов'язок | 57 |
 
 ---
 

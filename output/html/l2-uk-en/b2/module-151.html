@@ -901,7 +901,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (9)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -909,12 +909,13 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">просторіччя</td><td class="vocab-en">colloquialism</td><td class="vocab-note">розмовна лексика</td></tr><tr><td class="vocab-uk">сленг</td><td class="vocab-en">slang</td><td class="vocab-note">молодіжна лексика</td></tr><tr><td class="vocab-uk">частка</td><td class="vocab-en">particle</td><td class="vocab-note">ну, от, та, ж</td></tr><tr><td class="vocab-uk">вигук</td><td class="vocab-en">interjection</td><td class="vocab-note">ого, ой, ех</td></tr><tr><td class="vocab-uk">редукція</td><td class="vocab-en">reduction</td><td class="vocab-note">скорочення звуків</td></tr><tr><td class="vocab-uk">гаразд</td><td class="vocab-en">okay, alright</td><td class="vocab-note">розмовне «добре»</td></tr><tr><td class="vocab-uk">русизм</td><td class="vocab-en">Russianism</td><td class="vocab-note">запозичення з російської</td></tr><tr><td class="vocab-uk">суржик</td><td class="vocab-en">surzhyk</td><td class="vocab-note">мішанина мов</td></tr><tr><td class="vocab-uk">демінутив</td><td class="vocab-en">diminutive</td><td class="vocab-note">зменшувальна форма</td></tr></tbody>
           </table>
         </div>
       </div>
+      
       <div class="btn-group">
         <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
       </div>
@@ -925,7 +926,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Куди?» замість «Куди ти йдеш?» — це...","options":["Неповне речення","Канцеляризм","Помилка","Термін"],"correctIndex":0,"explanation":"Пропуск слів, зрозумілих з контексту → неповнота"},{"question":"«Ну от, я й думаю...» — що тут маркер розмовності?","options":["Слово «я»","Частки «ну» і «от»","Слово «думаю»","Крапки"],"correctIndex":1,"explanation":"Частки «ну», «от», «та», «ж» — маркери розмовності"},{"question":"«Ого! Оце так!» — це...","options":["Канцеляризми","Терміни","Вигуки","Русизми"],"correctIndex":2,"explanation":"Емоційні слова-реакції → вигуки"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"просторіччя","translit":"","en":"colloquialism","note":"розмовна лексика"},{"uk":"сленг","translit":"","en":"slang","note":"молодіжна лексика"},{"uk":"частка","translit":"","en":"particle","note":"ну, от, та, ж"},{"uk":"вигук","translit":"","en":"interjection","note":"ого, ой, ех"},{"uk":"редукція","translit":"","en":"reduction","note":"скорочення звуків"},{"uk":"гаразд","translit":"","en":"okay, alright","note":"розмовне «добре»"},{"uk":"русизм","translit":"","en":"Russianism","note":"запозичення з російської"},{"uk":"суржик","translit":"","en":"surzhyk","note":"мішанина мов"},{"uk":"демінутив","translit":"","en":"diminutive","note":"зменшувальна форма"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

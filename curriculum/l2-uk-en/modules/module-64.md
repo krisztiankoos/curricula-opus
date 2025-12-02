@@ -372,43 +372,50 @@ Use -ливий adjectives:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| річний | /ˈrʲitʃnɪj/ | annual | adj | - | |
-| денний | /ˈdɛnːɪj/ | daily, daytime | adj | - | |
-| нічний | /ˈnʲitʃnɪj/ | night | adj | - | |
-| літній | /ˈlʲitnʲij/ | summer | adj | - | |
-| зимовий | /zɪˈmovɪj/ | winter | adj | - | |
-| весняний | /vɛsˈnʲɑnɪj/ | spring | adj | - | |
-| осінній | /oˈsʲinʲːij/ | autumn | adj | - | |
-| сонячний | /ˈsonʲɑtʃnɪj/ | sunny | adj | - | |
-| морський | /ˈmorskɪj/ | sea, marine | adj | - | |
-| український | /ukrɑˈjinsʲkɪj/ | Ukrainian | adj | - | |
-| міський | /ˈmʲiskɪj/ | city, urban | adj | - | |
-| сільський | /ˈsʲilʲsʲkɪj/ | village, rural | adj | - | |
-| студентський | /stuˈdɛntsʲkɪj/ | student | adj | - | |
-| людський | /ˈlʲudsʲkɪj/ | human | adj | - | |
-| дитячий | /dɪˈtʲɑtʃɪj/ | children's | adj | - | |
-| жіночий | /ʒʲiˈnotʃɪj/ | women's | adj | - | |
-| чоловічий | /tʃoloˈvʲitʃɪj/ | men's | adj | - | |
-| київський | /ˈkɪjivskɪj/ | Kyivan | adj | - | |
-| книжковий | /knɪʒˈkovɪj/ | book | adj | - | |
-| фруктовий | /frukˈtovɪj/ | fruit | adj | - | |
-| овочевий | /ovoˈtʃɛvɪj/ | vegetable | adj | - | |
-| спортивний | /sporˈtɪvnɪj/ | sports | adj | - | |
-| музичний | /muˈzɪtʃnɪj/ | musical | adj | - | |
-| театральний | /tɛɑˈtrɑlʲnɪj/ | theater | adj | - | |
-| щасливий | /ʃtʃɑsˈlɪvɪj/ | happy | adj | - | |
-| талановитий | /tɑlɑnoˈvɪtɪj/ | talented | adj | - | |
-| корисний | /koˈrɪsnɪj/ | useful | adj | - | |
-| дбайливий | /ˈdbɑjlɪvɪj/ | caring | adj | - | |
-| кам'янистий | /kɑmjɑˈnɪstɪj/ | rocky | adj | - | |
-| хмарний | /ˈxmɑrnɪj/ | cloudy | adj | - | |
-| зоряний | /ˈzorʲɑnɪj/ | starry | adj | - | |
-| гірський | /ˈɦʲirskɪj/ | mountain | adj | - | |
-| лісовий | /lʲisoˈvɪj/ | forest | adj | - | |
-| батьків | /ˈbɑtʲkʲiv/ | father's | adj | - | |
-| мамин | /ˈmɑmɪn/ | mother's | adj | - | |
-| сестрин | /sɛsˈtrɪn/ | sister's | adj | - | |
-| бабусин | /bɑˈbusɪn/ | grandmother's | adj | - | |
+| річний | /ˈrʲitʃnɪj/ | annual | adj | - |
+| денний | /ˈdɛnːɪj/ | daily, daytime | adj | - |
+| нічний | /ˈnʲitʃnɪj/ | night | adj | - |
+| літній | /ˈlʲitnʲij/ | summer | adj | - |
+| зимовий | /zɪˈmovɪj/ | winter | adj | - |
+| весняний | /vɛsˈnʲɑnɪj/ | spring | adj | - |
+| осінній | /oˈsʲinʲːij/ | autumn | adj | - |
+| морський | /ˈmorskɪj/ | sea, marine | adj | - |
+| український | /ukrɑˈjinsʲkɪj/ | Ukrainian | adj | - |
+| міський | /ˈmʲiskɪj/ | city, urban | adj | - |
+| сільський | /ˈsʲilʲsʲkɪj/ | village, rural | adj | - |
+| студентський | /stuˈdɛntsʲkɪj/ | student | adj | - |
+| людський | /ˈlʲudsʲkɪj/ | human | adj | - |
+| дитячий | /dɪˈtʲɑtʃɪj/ | children's | adj | - |
+| київський | /ˈkɪjivskɪj/ | Kyivan | adj | - |
+| книжковий | /knɪʒˈkovɪj/ | book | adj | - |
+| фруктовий | /frukˈtovɪj/ | fruit | adj | - |
+| овочевий | /ovoˈtʃɛvɪj/ | vegetable | adj | - |
+| спортивний | /sporˈtɪvnɪj/ | sports | adj | - |
+| музичний | /muˈzɪtʃnɪj/ | musical | adj | - |
+| театральний | /tɛɑˈtrɑlʲnɪj/ | theater | adj | - |
+| талановитий | /tɑlɑnoˈvɪtɪj/ | talented | adj | - |
+| корисний | /koˈrɪsnɪj/ | useful | adj | - |
+| дбайливий | /ˈdbɑjlɪvɪj/ | caring | adj | - |
+| кам'янистий | /kɑmjɑˈnɪstɪj/ | rocky | adj | - |
+| зоряний | /ˈzorʲɑnɪj/ | starry | adj | - |
+| гірський | /ˈɦʲirskɪj/ | mountain | adj | - |
+| лісовий | /lʲisoˈvɪj/ | forest | adj | - |
+| батьків | /ˈbɑtʲkʲiv/ | father's | adj | - |
+| мамин | /ˈmɑmɪn/ | mother's | adj | - |
+| сестрин | /sɛsˈtrɪn/ | sister's | adj | - |
+| бабусин | /bɑˈbusɪn/ | grandmother's | adj | - |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| сонячний | 28 |
+| жіночий | 10 |
+| чоловічий | 10 |
+| щасливий | 26 |
+| хмарний | 28 |
 
 ---
 

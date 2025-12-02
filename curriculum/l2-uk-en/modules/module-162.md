@@ -351,7 +351,6 @@ objectives:
 | суддя | /ˈsudʲːɑ/ | judge | m/f |
 | вирок | /ˈwɪrɔk/ | verdict, sentence | m |
 | позов | /ˈpɔzɔw/ | lawsuit | m |
-| адвокат | /ɑdwɔˈkɑt/ | lawyer, attorney | m |
 | прокурор | /prɔkuˈrɔr/ | prosecutor | m |
 | підсудний | /pʲidˈsudnɪj/ | defendant (criminal) | m |
 | свідок | /ˈswʲidɔk/ | witness | m |
@@ -365,6 +364,14 @@ objectives:
 | презумпція | /prɛˈzumpt͡sʲijɑ/ | presumption | f |
 | хабарництво | /xɑˈbɑrnɪt͡stwo/ | bribery | n |
 | конфіскація | /kɔnfʲisˈkɑt͡sʲijɑ/ | confiscation | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| адвокат | 72 |
 
 ---
 

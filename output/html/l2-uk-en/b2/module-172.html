@@ -905,6 +905,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -994,7 +995,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Нові слова (4)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1002,9 +1003,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">казати</td><td class="vocab-ipa">/kɑˈzɑtɪ/</td><td class="vocab-en">to say</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦɔwɔˈrɪtɪ/</td><td class="vocab-en">to speak, talk</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-ipa">/rɔspɔwʲiˈdɑtɪ/</td><td class="vocab-en">to tell, narrate</td></tr><tr><td class="vocab-uk">мовити</td><td class="vocab-ipa">/ˈmɔwɪtɪ/</td><td class="vocab-en">to say (literary)</td></tr><tr><td class="vocab-uk">повідомляти</td><td class="vocab-ipa">/pɔwʲidɔmˈlʲatɪ/</td><td class="vocab-en">to inform</td></tr><tr><td class="vocab-uk">оголошувати</td><td class="vocab-ipa">/ɔɦɔˈlɔʃuwɑtɪ/</td><td class="vocab-en">to announce</td></tr><tr><td class="vocab-uk">заявляти</td><td class="vocab-ipa">/zɑjɑwˈlʲatɪ/</td><td class="vocab-en">to declare</td></tr><tr><td class="vocab-uk">стверджувати</td><td class="vocab-ipa">/stwɛrˈdʒuwɑtɪ/</td><td class="vocab-en">to assert</td></tr><tr><td class="vocab-uk">балакати</td><td class="vocab-ipa">/bɑˈlɑkɑtɪ/</td><td class="vocab-en">to chat (colloq.)</td></tr><tr><td class="vocab-uk">теревенити</td><td class="vocab-ipa">/tɛrɛˈwɛnɪtɪ/</td><td class="vocab-en">to gossip, chatter</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">мовити</td><td class="vocab-ipa">/ˈmɔwɪtɪ/</td><td class="vocab-en">to say (literary)</td><td class="vocab-note">ipf, книжне</td></tr><tr><td class="vocab-uk">оголошувати</td><td class="vocab-ipa">/ɔɦɔˈlɔʃuwɑtɪ/</td><td class="vocab-en">to announce</td><td class="vocab-note">ipf, публічне</td></tr><tr><td class="vocab-uk">балакати</td><td class="vocab-ipa">/bɑˈlɑkɑtɪ/</td><td class="vocab-en">to chat (colloq.)</td><td class="vocab-note">ipf, розмовне</td></tr><tr><td class="vocab-uk">теревенити</td><td class="vocab-ipa">/tɛrɛˈwɛnɪtɪ/</td><td class="vocab-en">to gossip, chatter</td><td class="vocab-note">ipf, негативне</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">казати</td><td class="vocab-module">Module 31</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-module">Module 6</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-module">Module 133</td></tr><tr><td class="vocab-uk">повідомляти</td><td class="vocab-module">Module 33</td></tr><tr><td class="vocab-uk">заявляти</td><td class="vocab-module">Module 133</td></tr><tr><td class="vocab-uk">стверджувати</td><td class="vocab-module">Module 116</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1018,7 +1030,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Для тривалої розмови вживаємо:","options":["казати","говорити","сказати"],"correctIndex":1,"explanation":"Говорити = процес, тривалість."},{"question":"Для історії чи оповідання вживаємо:","options":["казати","говорити","розповідати"],"correctIndex":2,"explanation":"Розповідати = наратив, деталі."},{"question":"«Мовити» — це стиль:","options":["розмовний","художній, піднесений","науковий"],"correctIndex":1,"explanation":"Книжне, урочисте дієслово."},{"question":"«Базікати» має конотацію:","options":["негативну / легковажну","позитивну","нейтральну"],"correctIndex":0,"explanation":"Говорити несерйозно, дурниці."},{"question":"«Стверджувати» означає:","options":["to assert (впевнено декларувати)","to ask","to deny"],"correctIndex":0,"explanation":"Впевнена заява."},{"question":"«Говорити українською» — правильно, а «казати українською» — ні, бо:","options":["«говорити» вживається з мовами, «казати» — ні","це однакові дієслова"],"correctIndex":0,"explanation":"Говорити = процес, мова."},{"question":"**[Інтеграція: пасив]** «На засіданні ___ про нові правила.»","options":["повідомлено","повідомили","повідомляється"],"correctIndex":0,"explanation":"Офіційний звіт → -но/-то форма."},{"question":"**[Інтеграція: регістр]** Новини: «Прес-секретар ___, що переговори тривають.»","options":["сказав","заявив","балакав"],"correctIndex":1,"explanation":"Публіцистичний стиль → офіційне дієслово."},{"question":"«Теревенити» означає:","options":["пліткувати, говорити порожнє","говорити серйозно"],"correctIndex":0,"explanation":"Розмовне, про порожні розмови."},{"question":"Яке дієслово для наукового стилю?","options":["казати","балакати","зазначати"],"correctIndex":2,"explanation":"Науковий стиль → зазначити, констатувати."}];
     const sortData = {};
-    const vocabData = [{"uk":"казати","translit":"","en":"to say","note":""},{"uk":"говорити","translit":"","en":"to speak, talk","note":""},{"uk":"розповідати","translit":"","en":"to tell, narrate","note":""},{"uk":"мовити","translit":"","en":"to say (literary)","note":""},{"uk":"повідомляти","translit":"","en":"to inform","note":""},{"uk":"оголошувати","translit":"","en":"to announce","note":""},{"uk":"заявляти","translit":"","en":"to declare","note":""},{"uk":"стверджувати","translit":"","en":"to assert","note":""},{"uk":"балакати","translit":"","en":"to chat (colloq.)","note":""},{"uk":"теревенити","translit":"","en":"to gossip, chatter","note":""}];
+    const vocabData = [{"uk":"мовити","translit":"","en":"to say (literary)","note":"ipf, книжне"},{"uk":"оголошувати","translit":"","en":"to announce","note":"ipf, публічне"},{"uk":"балакати","translit":"","en":"to chat (colloq.)","note":"ipf, розмовне"},{"uk":"теревенити","translit":"","en":"to gossip, chatter","note":"ipf, негативне"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

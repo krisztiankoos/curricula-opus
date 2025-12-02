@@ -389,21 +389,28 @@ objectives:
 | економіка | /ɛkɔˈnɔmʲikɑ/ | economy | f |
 | інфляція | /ʲinˈflʲat͡sʲijɑ/ | inflation | f |
 | ВВП | /wɛ wɛ pɛ/ | GDP | m |
-| кредит | /krɛˈdɪt/ | loan, credit | m |
-| депозит | /dɛpɔˈzɪt/ | deposit | m |
 | інвестиція | /ʲinwɛsˈtɪt͡sʲijɑ/ | investment | f |
-| акція | /ˈɑkt͡sʲijɑ/ | stock, share | f |
 | біржа | /ˈbʲirʒɑ/ | stock exchange | f |
-| прибуток | /prɪˈbutɔk/ | profit | m |
 | збиток | /ˈzbɪtɔk/ | loss | m |
-| підприємець | /pʲidprɪˈjɛmɛt͡sʲ/ | entrepreneur | m |
 | постачальник | /pɔstɑˈtʃɑlʲnɪk/ | supplier | m |
-| переговори | /pɛrɛɦɔˈwɔrɪ/ | negotiations | pl |
 | угода | /uˈɦɔdɑ/ | deal, agreement | f |
-| контракт | /kɔnˈtrɑkt/ | contract | m |
 | експорт | /ˈɛkspɔrt/ | export | m |
 | імпорт | /ˈimpɔrt/ | import | m |
 | облікова ставка | /ɔbˈlʲikɔwɑ ˈstɑwkɑ/ | discount rate | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| кредит | 39 |
+| депозит | 39 |
+| акція | 48 |
+| прибуток | 128 |
+| підприємець | 36 |
+| переговори | 128 |
+| контракт | 128 |
 
 ---
 

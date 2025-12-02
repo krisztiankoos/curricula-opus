@@ -773,6 +773,7 @@ footer {
 <p>Зверніть увагу, як <strong>різні сполучники</strong> створюють <strong>логічний потік</strong> тексту!</p>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -860,7 +861,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (5)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -868,9 +869,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">втім</td><td class="vocab-en">however, though</td><td class="vocab-note">застереження</td></tr><tr><td class="vocab-uk">зате</td><td class="vocab-en">but (in exchange)</td><td class="vocab-note">компенсація</td></tr><tr><td class="vocab-uk">до того ж</td><td class="vocab-en">moreover</td><td class="vocab-note">додавання</td></tr><tr><td class="vocab-uk">більше того</td><td class="vocab-en">what&#039;s more</td><td class="vocab-note">підсилення</td></tr><tr><td class="vocab-uk">відтак</td><td class="vocab-en">consequently</td><td class="vocab-note">наслідок</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (8)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">проте</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">однак</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">крім того</td><td class="vocab-module">Module 130</td></tr><tr><td class="vocab-uk">тобто</td><td class="vocab-module">Module 130</td></tr><tr><td class="vocab-uk">отже</td><td class="vocab-module">Module 58</td></tr><tr><td class="vocab-uk">тож</td><td class="vocab-module">Module 109</td></tr><tr><td class="vocab-uk">попри</td><td class="vocab-module">Module 108</td></tr><tr><td class="vocab-uk">дарма що</td><td class="vocab-module">Module 108</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -884,7 +896,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Він не красивий, ___ розумний.» (компенсація)","options":["але","проте","зате","втім"],"correctIndex":2,"explanation":"«Зате» — компенсація (негатив → позитив)"},{"question":"«Ми чекали на сонце. ___ почався дощ.» (несподіванка)","options":["але","зате","втім","однак"],"correctIndex":3,"explanation":"«Однак» — суперечить очікуванням"},{"question":"«Він добрий. ___ іноді буває різким.» (застереження)","options":["але","зате","втім","однак"],"correctIndex":2,"explanation":"«Втім» — застереження, уточнення"},{"question":"Який сполучник найформальніший?","options":["але","проте","зате","та"],"correctIndex":1,"explanation":"«Проте» — книжний, офіційний стиль"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"втім","translit":"","en":"however, though","note":"застереження"},{"uk":"зате","translit":"","en":"but (in exchange)","note":"компенсація"},{"uk":"до того ж","translit":"","en":"moreover","note":"додавання"},{"uk":"більше того","translit":"","en":"what's more","note":"підсилення"},{"uk":"відтак","translit":"","en":"consequently","note":"наслідок"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

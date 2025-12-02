@@ -375,16 +375,23 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| думати | /ˈdumɑtɪ/ | to think | ipf, нейтральне |
-| гадати | /ɦɑˈdɑtɪ/ | to suppose | ipf, невпевнене |
-| вважати | /wwɑˈʒɑtɪ/ | to consider, believe | ipf, впевнене |
-| міркувати | /mʲirkuˈwɑtɪ/ | to contemplate | ipf, глибоке |
 | розмірковувати | /rɔzmʲirkɔˈwuwɑtɪ/ | to reflect, ponder | ipf, філософське |
-| роздумувати | /rɔzˈdumuwɑtɪ/ | to hesitate | ipf, вагатися |
 | роздумати | /rɔzˈdumɑtɪ/ | to change one's mind | pf, передумати! |
-| припускати | /prɪpusˈkɑtɪ/ | to assume | ipf, логічне |
 | здогадуватися | /zdɔɦɑˈduwɑtɪsʲɑ/ | to guess | ipf, інтуїтивне |
-| передбачати | /pɛrɛdbɑˈtʃɑtɪ/ | to foresee, predict | ipf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| думати | 6 |
+| гадати | 97 |
+| вважати | 58 |
+| міркувати | 132 |
+| роздумувати | 132 |
+| припускати | 132 |
+| передбачати | 66 |
 
 ---
 

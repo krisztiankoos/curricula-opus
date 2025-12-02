@@ -265,21 +265,28 @@ Talk about a memorable journey:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| паспорт | /ˈpɑsport/ | passport | m |
 | віза | /ˈvʲizɑ/ | visa | f |
 | кордон | /korˈdon/ | border | m |
 | митниця | /ˈmɪtnɪt͡sʲɑ/ | customs | f |
 | країна | /krɑˈjinɑ/ | country | f |
 | столиця | /stoˈlɪt͡sʲɑ/ | capital | f |
-| аеропорт | /ɑɛroˈport/ | airport | m |
-| вокзал | /wokˈzɑl/ | train station | m |
-| готель | /ɦoˈtɛlʲ/ | hotel | m |
-| бронювати | /bronʲuˈvɑtɪ/ | to book | impf |
 | подорожувати | /podoroʒuˈvɑtɪ/ | to travel | impf |
 | відвідувати | /vʲidvʲiˈduvɑtɪ/ | to visit | impf |
 | прибувати | /prɪbuˈvɑtɪ/ | to arrive | impf |
 | відправлятися | /vʲidprɑvˈlʲɑtɪsʲɑ/ | to depart | impf |
 | пункт призначення | - | destination | m |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| паспорт | 11 |
+| аеропорт | 13 |
+| вокзал | 55 |
+| готель | 13 |
+| бронювати | 76 |
 
 ---
 

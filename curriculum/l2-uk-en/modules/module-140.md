@@ -317,14 +317,21 @@ Calculate your score:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| контрольна робота | - | test, assessment | f |
-| оцінка | /oˈt͡sʲinkɑ/ | grade, assessment | f |
-| бал | /bɑl/ | point | m |
-| результат | /rɛzulʲˈtɑt/ | result | m |
 | рівень | /ˈrʲivɛnʲ/ | level | m |
 | компетенція | /kompɛˈtɛnt͡sʲijɑ/ | competency | f |
 | готовність | /ɦoˈtownʲistʲ/ | readiness | f |
 | досягнення | /dosʲɑɦˈnɛnʲːɑ/ | achievement | n |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| контрольна робота | 115 |
+| оцінка | 75 |
+| бал | 100 |
+| результат | 46 |
 
 ---
 

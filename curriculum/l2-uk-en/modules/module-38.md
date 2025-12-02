@@ -356,17 +356,17 @@ Create sentences using all given elements:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| правило | /prɑˈvɪlo/ | rule | noun | n | |
-| полиця | /poˈlɪtsʲɑ/ | shelf | noun | f | |
-| ваза | /ˈvɑzɑ/ | vase | noun | f | |
-| поверх | /ˈpovɛrx/ | floor (of building) | noun | m | |
-| кабінет | /kɑbʲiˈnɛt/ | office, study | noun | m | |
-| секретарка | /sɛkrɛˈtɑrkɑ/ | secretary (f) | noun | f | |
-| бухгалтерія | /buxɦɑlˈtɛrʲijɑ/ | accounting dept | noun | f | |
-| партнер | /pɑrtˈnɛr/ | partner | noun | m | |
-| малюнок | /mɑˈlʲunok/ | drawing, picture | noun | m | |
-| лекція | /ˈlɛktsʲijɑ/ | lecture | noun | f | |
-| задоволення | /zɑdoˈvolɛnʲːɑ/ | pleasure, satisfaction | noun | n | |
+| правило | /prɑˈvɪlo/ | rule | noun | n |
+| полиця | /poˈlɪtsʲɑ/ | shelf | noun | f |
+| ваза | /ˈvɑzɑ/ | vase | noun | f |
+| поверх | /ˈpovɛrx/ | floor (of building) | noun | m |
+| кабінет | /kɑbʲiˈnɛt/ | office, study | noun | m |
+| секретарка | /sɛkrɛˈtɑrkɑ/ | secretary (f) | noun | f |
+| бухгалтерія | /buxɦɑlˈtɛrʲijɑ/ | accounting dept | noun | f |
+| партнер | /pɑrtˈnɛr/ | partner | noun | m |
+| малюнок | /mɑˈlʲunok/ | drawing, picture | noun | m |
+| лекція | /ˈlɛktsʲijɑ/ | lecture | noun | f |
+| задоволення | /zɑdoˈvolɛnʲːɑ/ | pleasure, satisfaction | noun | n |
 | протягом | /proˈtʲɑɦom/ | during, throughout | prep | - | + gen |
 
 ---

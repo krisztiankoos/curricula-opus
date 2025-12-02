@@ -276,13 +276,20 @@ Use participles to describe what has been done:
 | прийнято | /prɪjˈnʲɑto/ | accepted, adopted | short form |
 | ухвалено | /uxˈvɑlɛno/ | passed (law) | short form |
 | підписано | /pʲidˈpɪsɑno/ | signed | short form |
-| відкрито | /vʲidˈkrɪto/ | opened | short form |
-| закрито | /zɑˈkrɪto/ | closed | short form |
 | завершено | /zɑvɛrˈʃɛno/ | completed | short form |
 | затримано | /zɑˈtrɪmɑno/ | detained | short form |
-| заборонено | /zɑboroˈnɛno/ | forbidden | short form |
-| дозволено | /dozˈvolɛno/ | allowed | short form |
 | виконано | /vɪˈkonɑno/ | performed, done | short form |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| відкрито | 59 |
+| закрито | 59 |
+| заборонено | 59 |
+| дозволено | 59 |
 
 ---
 

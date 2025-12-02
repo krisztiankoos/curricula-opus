@@ -268,14 +268,21 @@ After completing the checkpoint, assess yourself:
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
 | оцінювання | /ot͡sʲiˈnʲuvɑnʲːɑ/ | assessment | n |
-| результат | /rɛzulʲˈtɑt/ | result | m |
 | бал | /bɑl/ | point, score | m |
-| відповідь | /vʲidˈpovʲidʲ/ | answer | f |
 | правильна відповідь | - | correct answer | - |
 | неправильна відповідь | - | wrong answer | - |
 | перевірити | /pɛrɛˈvʲirɪtɪ/ | to check | pf |
 | виправити | /vɪˈprɑvɪtɪ/ | to correct | pf |
-| покращити | /pokrɑˈʃɪtɪ/ | to improve | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| результат | 46 |
+| відповідь | 32 |
+| покращити | 88 |
 
 ---
 

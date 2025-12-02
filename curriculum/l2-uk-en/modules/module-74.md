@@ -388,46 +388,53 @@ Describe your ideal weekend activities:
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | хобі | /ˈxobʲi/ | hobby | noun | n | indecl |
-| захоплення | /zɑˈxoplɛnʲːɑ/ | passion, enthusiasm | noun | n | |
-| дозвілля | /doˈzvʲilʲːɑ/ | leisure | noun | n | |
-| розвага | /rozˈvɑɦɑ/ | entertainment | noun | f | |
-| відпочинок | /vʲidpoˈtʃɪnok/ | rest, relaxation | noun | m | |
-| малювання | /mɑlʲuˈvɑnʲːɑ/ | drawing, painting | noun | n | |
-| фотографія | /fotoɦrɑˈfʲijɑ/ | photography | noun | f | |
-| в'язання | /vʲjɑˈzɑnʲːɑ/ | knitting | noun | n | |
-| шиття | /ʃɪtʲˈtʲɑ/ | sewing | noun | n | |
-| вишивання | /vɪʃɪˈvɑnʲːɑ/ | embroidery | noun | n | |
-| рукоділля | /rukodʲiˈlʲːɑ/ | handicrafts | noun | n | |
-| садівництво | /sɑdʲivˈnɪtstvo/ | gardening | noun | n | |
-| колекціонування | /kolɛktsʲionuˈvɑnʲːɑ/ | collecting | noun | n | |
-| колекція | /koˈlɛktsʲijɑ/ | collection | noun | f | |
-| марка | /ˈmɑrkɑ/ | stamp | noun | f | |
-| монета | /moˈnɛtɑ/ | coin | noun | f | |
-| антикваріат | /ɑntɪkvɑrʲiˈɑt/ | antiques | noun | m | |
-| настільна гра | /nɑˈstʲilʲnɑ ɦrɑ/ | board game | noun | f | |
-| відеогра | /vʲidɛoˈɦrɑ/ | video game | noun | f | |
-| шахи | /ˈʃɑxɪ/ | chess | noun | pl | |
-| шашки | /ˈʃɑʃkɪ/ | checkers | noun | pl | |
-| пазл | /pɑzl/ | puzzle | noun | m | |
-| кросворд | /krosˈvord/ | crossword | noun | m | |
-| головоломка | /ɦolovoˈlomkɑ/ | brain teaser | noun | f | |
-| похід | /poˈxʲid/ | hike, trip | noun | m | |
-| кемпінг | /ˈkɛmpʲinɦ/ | camping | noun | m | |
-| риболовля | /rɪboˈlovlʲɑ/ | fishing | noun | f | |
-| велопрогулянка | /vɛloproɦuˈlʲɑnkɑ/ | bike ride | noun | f | |
-| пікнік | /pʲikˈnʲik/ | picnic | noun | m | |
-| концерт | /konˈtsɛrt/ | concert | noun | m | |
-| виставка | /ˈvɪstɑvkɑ/ | exhibition | noun | f | |
-| фестиваль | /fɛstɪˈvɑlʲ/ | festival | noun | m | |
+| захоплення | /zɑˈxoplɛnʲːɑ/ | passion, enthusiasm | noun | n |
+| дозвілля | /doˈzvʲilʲːɑ/ | leisure | noun | n |
+| розвага | /rozˈvɑɦɑ/ | entertainment | noun | f |
+| відпочинок | /vʲidpoˈtʃɪnok/ | rest, relaxation | noun | m |
+| малювання | /mɑlʲuˈvɑnʲːɑ/ | drawing, painting | noun | n |
+| фотографія | /fotoɦrɑˈfʲijɑ/ | photography | noun | f |
+| в'язання | /vʲjɑˈzɑnʲːɑ/ | knitting | noun | n |
+| шиття | /ʃɪtʲˈtʲɑ/ | sewing | noun | n |
+| вишивання | /vɪʃɪˈvɑnʲːɑ/ | embroidery | noun | n |
+| рукоділля | /rukodʲiˈlʲːɑ/ | handicrafts | noun | n |
+| садівництво | /sɑdʲivˈnɪtstvo/ | gardening | noun | n |
+| колекціонування | /kolɛktsʲionuˈvɑnʲːɑ/ | collecting | noun | n |
+| колекція | /koˈlɛktsʲijɑ/ | collection | noun | f |
+| монета | /moˈnɛtɑ/ | coin | noun | f |
+| антикваріат | /ɑntɪkvɑrʲiˈɑt/ | antiques | noun | m |
+| настільна гра | /nɑˈstʲilʲnɑ ɦrɑ/ | board game | noun | f |
+| відеогра | /vʲidɛoˈɦrɑ/ | video game | noun | f |
+| шахи | /ˈʃɑxɪ/ | chess | noun | pl |
+| шашки | /ˈʃɑʃkɪ/ | checkers | noun | pl |
+| пазл | /pɑzl/ | puzzle | noun | m |
+| кросворд | /krosˈvord/ | crossword | noun | m |
+| головоломка | /ɦolovoˈlomkɑ/ | brain teaser | noun | f |
+| кемпінг | /ˈkɛmpʲinɦ/ | camping | noun | m |
+| риболовля | /rɪboˈlovlʲɑ/ | fishing | noun | f |
+| велопрогулянка | /vɛloproɦuˈlʲɑnkɑ/ | bike ride | noun | f |
+| пікнік | /pʲikˈnʲik/ | picnic | noun | m |
+| концерт | /konˈtsɛrt/ | concert | noun | m |
+| виставка | /ˈvɪstɑvkɑ/ | exhibition | noun | f |
+| фестиваль | /fɛstɪˈvɑlʲ/ | festival | noun | m |
 | караоке | /kɑrɑˈokɛ/ | karaoke | noun | n | indecl |
-| квест | /kvɛst/ | escape room | noun | m | |
-| займатися | /zɑjˈmɑtɪsʲɑ/ | to engage in | verb | - | impf |
-| захоплюватися | /zɑxopˈlʲuvɑtɪsʲɑ/ | to be passionate | verb | - | impf |
-| збирати | /zbɪˈrɑtɪ/ | to collect | verb | - | impf |
+| квест | /kvɛst/ | escape room | noun | m |
 | малювати | /mɑlʲuˈvɑtɪ/ | to draw, paint | verb | - | impf |
 | в'язати | /vʲjɑˈzɑtɪ/ | to knit | verb | - | impf |
 | майструвати | /mɑjstruˈvɑtɪ/ | to craft | verb | - | impf |
 | фотографувати | /fotoɦrɑfuˈvɑtɪ/ | to photograph | verb | - | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| марка | 39 |
+| похід | 66 |
+| займатися | 35 |
+| захоплюватися | 35 |
+| збирати | 43 |
 
 ---
 

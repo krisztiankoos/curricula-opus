@@ -392,7 +392,7 @@ Generally (imperfective for habits):
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| вид | /vɪd/ | aspect (grammatical) | noun | m | |
+| вид | /vɪd/ | aspect (grammatical) | noun | m |
 | недоконаний | /nɛdoˈkonɑnɪj/ | imperfective | adj | - | lit. "unfinished" |
 | доконаний | /doˈkonɑnɪj/ | perfective | adj | - | lit. "finished" |
 | з'їсти | /ˈzjistɪ/ | to eat (perf) | verb | - | pf of їсти |

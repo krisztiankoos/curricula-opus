@@ -394,32 +394,32 @@ Create polite requests:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| листівка | /lɪsˈtʲifkɑ/ | postcard | noun | f | |
-| бандероль | /bɑndɛˈrolʲ/ | small parcel | noun | f | |
-| марка | /ˈmɑrkɑ/ | stamp | noun | f | |
-| відправник | /vʲidprɑvˈnɪk/ | sender | noun | m | |
-| одержувач | /odɛrˈʒuvɑtʃ/ | recipient | noun | m | |
-| індекс | /ˈindɛks/ | postal code | noun | m | |
-| квитанція | /kvɪˈtɑntsʲijɑ/ | receipt | noun | f | |
-| доставка | /dosˈtɑfkɑ/ | delivery | noun | f | |
-| вага | /vɑˈɦɑ/ | weight | noun | f | |
-| переказ | /pɛrɛˈkɑz/ | transfer | noun | m | |
-| обмін | /obˈmʲin/ | exchange | noun | m | |
-| курс | /kurs/ | rate | noun | m | |
-| депозит | /dɛpoˈzɪt/ | deposit | noun | m | |
-| кредит | /krɛˈdɪt/ | credit, loan | noun | m | |
-| відсоток | /vʲidˈsotok/ | percent, interest | noun | m | |
-| банкомат | /bɑnkoˈmɑt/ | ATM | noun | m | |
-| комісія | /koˈmʲisʲijɑ/ | commission | noun | f | |
-| підпис | /ˈpʲidpɪs/ | signature | noun | m | |
-| виписка | /ˈvɪpɪskɑ/ | statement | noun | f | |
+| листівка | /lɪsˈtʲifkɑ/ | postcard | noun | f |
+| бандероль | /bɑndɛˈrolʲ/ | small parcel | noun | f |
+| марка | /ˈmɑrkɑ/ | stamp | noun | f |
+| відправник | /vʲidprɑvˈnɪk/ | sender | noun | m |
+| одержувач | /odɛrˈʒuvɑtʃ/ | recipient | noun | m |
+| індекс | /ˈindɛks/ | postal code | noun | m |
+| квитанція | /kvɪˈtɑntsʲijɑ/ | receipt | noun | f |
+| доставка | /dosˈtɑfkɑ/ | delivery | noun | f |
+| вага | /vɑˈɦɑ/ | weight | noun | f |
+| переказ | /pɛrɛˈkɑz/ | transfer | noun | m |
+| обмін | /obˈmʲin/ | exchange | noun | m |
+| курс | /kurs/ | rate | noun | m |
+| депозит | /dɛpoˈzɪt/ | deposit | noun | m |
+| кредит | /krɛˈdɪt/ | credit, loan | noun | m |
+| відсоток | /vʲidˈsotok/ | percent, interest | noun | m |
+| банкомат | /bɑnkoˈmɑt/ | ATM | noun | m |
+| комісія | /koˈmʲisʲijɑ/ | commission | noun | f |
+| підпис | /ˈpʲidpɪs/ | signature | noun | m |
+| виписка | /ˈvɪpɪskɑ/ | statement | noun | f |
 | надіслати | /nɑdʲisˈlɑtɪ/ | to send | verb | - | + acc + dat |
 | відправити | /vʲidprɑˈvɪtɪ/ | to send, dispatch | verb | - | + acc |
 | обміняти | /obmʲiˈnʲɑtɪ/ | to exchange | verb | - | + acc + на + acc |
 | зняти | /znʲɑˈtɪ/ | to withdraw | verb | - | + acc + з + gen |
 | переказати | /pɛrɛkɑˈzɑtɪ/ | to transfer | verb | - | + acc + dat |
 | заповнити | /zɑˈpovnɪtɪ/ | to fill out | verb | - | + acc |
-| розписатися | /rozpɪˈsɑtɪsʲɑ/ | to sign | verb | - | |
+| розписатися | /rozpɪˈsɑtɪsʲɑ/ | to sign | verb | - |
 | перерахувати | /pɛrɛrɑxuˈvɑtɪ/ | to count, recount | verb | - | + acc |
 
 ---

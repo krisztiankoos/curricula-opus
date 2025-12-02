@@ -318,20 +318,21 @@ Write or speak about your typical day:
 | вмиватися | /vmɪˈvɑtɪsʲɑ/ | to wash (face) | verb | - | Reflexive |
 | одягатися | /ɔˈdʲɑɦɑtɪsʲɑ/ | to get dressed | verb | - | Reflexive |
 | роздягатися | /rɔzˈdʲɑɦɑtɪsʲɑ/ | to undress | verb | - | Reflexive |
-| снідати | /snʲiˈdɑtɪ/ | to have breakfast | verb | - |  |
-| обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - |  |
-| вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - |  |
-| виходити | /vɪxɔˈdɪtɪ/ | to go out, leave | verb | - |  |
+| снідати | /snʲiˈdɑtɪ/ | to have breakfast | verb | - |
+| обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - |
+| вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - |
+| виходити | /vɪxɔˈdɪtɪ/ | to go out, leave | verb | - |
 | повертатися | /pɔvɛrˈtɑtɪsʲɑ/ | to return | verb | - | Reflexive |
 | лягати | /lʲɑˈɦɑtɪ/ | to lie down | verb | - | лягати спати |
-| засинати | /zɑsɪˈnɑtɪ/ | to fall asleep | verb | - |  |
+| засинати | /zɑsɪˈnɑtɪ/ | to fall asleep | verb | - |
 | голитися | /ɦɔˈlɪtɪsʲɑ/ | to shave | verb | - | Reflexive |
 | чистити | /ˈtʃɪstɪtɪ/ | to clean, brush | verb | - | чистити зуби |
 | душ | /duʃ/ | shower | noun | m | приймати душ |
 | зуби | /ˈzubɪ/ | teeth | noun | pl | Singular: зуб |
-| спочатку | /spɔˈtʃɑtku/ | first, at first | adv | - |  |
-| зазвичай | /zɑˈzvɪtʃɑj/ | usually | adv | - |  |
-| щодня | /ʃtʃɔˈdnʲɑ/ | every day | adv | - |  |
+| спочатку | /spɔˈtʃɑtku/ | first, at first | adv | - |
+| зазвичай | /zɑˈzvɪtʃɑj/ | usually | adv | - |
+| щодня | /ʃtʃɔˈdnʲɑ/ | every day | adv | - |
+
 ---
 
 # Daily Routine Summary

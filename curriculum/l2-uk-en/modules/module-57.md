@@ -381,17 +381,17 @@ Talk about your work:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| професія | /proˈfɛsʲijɑ/ | profession | noun | f | |
-| робота | /roˈbotɑ/ | work, job | noun | f | |
-| вакансія | /vɑˈkɑnsʲijɑ/ | vacancy, job opening | noun | f | |
+| професія | /proˈfɛsʲijɑ/ | profession | noun | f |
+| робота | /roˈbotɑ/ | work, job | noun | f |
+| вакансія | /vɑˈkɑnsʲijɑ/ | vacancy, job opening | noun | f |
 | резюме | /rɛzʲuˈmɛ/ | resume, CV | noun | n | indecl |
-| співбесіда | /spʲivˈbɛsʲidɑ/ | interview | noun | f | |
-| зарплата | /zɑrˈplɑtɑ/ | salary | noun | f | |
-| підвищення | /pʲidˈvɪʃtʃɛnʲɑ/ | promotion | noun | n | |
-| відпустка | /vʲidˈpustkɑ/ | vacation | noun | f | |
-| обов'язок | /oboˈvjɑzok/ | duty, responsibility | noun | m | |
-| графік | /ˈɦrɑfʲik/ | schedule | noun | m | |
-| віддалено | /vʲidɑˈlɛno/ | remotely | adv | - | |
+| співбесіда | /spʲivˈbɛsʲidɑ/ | interview | noun | f |
+| зарплата | /zɑrˈplɑtɑ/ | salary | noun | f |
+| підвищення | /pʲidˈvɪʃtʃɛnʲɑ/ | promotion | noun | n |
+| відпустка | /vʲidˈpustkɑ/ | vacation | noun | f |
+| обов'язок | /oboˈvjɑzok/ | duty, responsibility | noun | m |
+| графік | /ˈɦrɑfʲik/ | schedule | noun | m |
+| віддалено | /vʲidɑˈlɛno/ | remotely | adv | - |
 
 ---
 

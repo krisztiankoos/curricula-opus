@@ -312,13 +312,14 @@ Answer:
 | повинен | /pɔˈvɪnɛn/ | should, ought to (m) | adj | m | повинна (f), повинні (pl) |
 | треба | /ˈtrɛbɑ/ | it's necessary | adv | - | + dative + infinitive |
 | потрібно | /pɔˈtrʲibnɔ/ | it's needed | adv | - | = треба |
-| допомогти | /dɔpɔmɔɦˈtɪ/ | to help (perf) | verb | - |  |
-| зрозуміти | /zrɔzuˈmʲitɪ/ | to understand (perf) | verb | - |  |
-| поспішати | /pɔspʲiˈʃɑtɪ/ | to hurry | verb | - |  |
-| закінчити | /zɑˈkʲintʃɪtɪ/ | to finish | verb | - |  |
-| почекати | /pɔtʃɛˈkɑtɪ/ | to wait (perf) | verb | - |  |
-| відпочити | /vʲidpɔˈtʃɪtɪ/ | to rest | verb | - |  |
-| платити | /plɑˈtɪtɪ/ | to pay | verb | - |  |
+| допомогти | /dɔpɔmɔɦˈtɪ/ | to help (perf) | verb | - |
+| зрозуміти | /zrɔzuˈmʲitɪ/ | to understand (perf) | verb | - |
+| поспішати | /pɔspʲiˈʃɑtɪ/ | to hurry | verb | - |
+| закінчити | /zɑˈkʲintʃɪtɪ/ | to finish | verb | - |
+| почекати | /pɔtʃɛˈkɑtɪ/ | to wait (perf) | verb | - |
+| відпочити | /vʲidpɔˈtʃɪtɪ/ | to rest | verb | - |
+| платити | /plɑˈtɪtɪ/ | to pay | verb | - |
+
 ---
 
 # Modal Summary

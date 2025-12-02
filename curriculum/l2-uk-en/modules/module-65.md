@@ -349,40 +349,47 @@ Use -чит-/-пис- words:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| учень | /uˈtʃɛnʲ/ | student, pupil | noun | m | |
-| учениця | /utʃɛˈnɪtsʲɑ/ | female student | noun | f | |
-| вчитель | /vtʃɪˈtɛlʲ/ | teacher (m) | noun | m | |
-| вчителька | /vtʃɪˈtɛlʲkɑ/ | teacher (f) | noun | f | |
-| вчений | /ˈvtʃɛnɪj/ | scientist | noun | m | |
-| наука | /nɑˈukɑ/ | science | noun | f | |
-| науковий | /nɑuˈkovɪj/ | scientific | adj | - | |
-| навчатися | /nɑvˈtʃɑtɪsʲɑ/ | to study | verb | - | |
-| робота | /roˈbotɑ/ | work, job | noun | f | |
-| робітник | /roˈbʲitnɪk/ | worker | noun | m | |
-| робочий | /roˈbotʃɪj/ | working | adj | - | |
+| учень | /uˈtʃɛnʲ/ | student, pupil | noun | m |
+| учениця | /utʃɛˈnɪtsʲɑ/ | female student | noun | f |
+| вчитель | /vtʃɪˈtɛlʲ/ | teacher (m) | noun | m |
+| вчителька | /vtʃɪˈtɛlʲkɑ/ | teacher (f) | noun | f |
+| вчений | /ˈvtʃɛnɪj/ | scientist | noun | m |
+| наука | /nɑˈukɑ/ | science | noun | f |
+| науковий | /nɑuˈkovɪj/ | scientific | adj | - |
+| навчатися | /nɑvˈtʃɑtɪsʲɑ/ | to study | verb | - |
+| робочий | /roˈbotʃɪj/ | working | adj | - |
 | виробляти | /vɪrobˈlʲɑtɪ/ | to produce | verb | - | impf |
-| виробництво | /vɪrobˈnɪtstvo/ | production | noun | n | |
-| виріб | /ˈvɪrʲib/ | product | noun | m | |
+| виріб | /ˈvɪrʲib/ | product | noun | m |
 | заробляти | /zɑrobˈlʲɑtɪ/ | to earn | verb | - | impf |
-| заробіток | /zɑˈrobʲitok/ | earnings | noun | m | |
-| підпис | /ˈpʲidpɪs/ | signature | noun | m | |
-| опис | /ˈopɪs/ | description | noun | m | |
-| запис | /ˈzɑpɪs/ | record, entry | noun | m | |
-| записка | /zɑˈpɪskɑ/ | note | noun | f | |
+| заробіток | /zɑˈrobʲitok/ | earnings | noun | m |
+| опис | /ˈopɪs/ | description | noun | m |
+| запис | /ˈzɑpɪs/ | record, entry | noun | m |
+| записка | /zɑˈpɪskɑ/ | note | noun | f |
 | переписувати | /pɛrɛpɪˈsuvɑtɪ/ | to rewrite | verb | - | impf |
-| читач | /tʃɪˈtɑtʃ/ | reader | noun | m | |
-| читальня | /tʃɪˈtɑlʲnʲɑ/ | reading room | noun | f | |
-| прочитати | /protʃɪˈtɑtɪ/ | to read (through) | verb | - | pf |
+| читальня | /tʃɪˈtɑlʲnʲɑ/ | reading room | noun | f |
 | перечитати | /pɛrɛtʃɪˈtɑtɪ/ | to reread | verb | - | pf |
-| начитаний | /nɑtʃɪˈtɑnɪj/ | well-read | adj | - | |
-| розмова | /rozˈmovɑ/ | conversation | noun | f | |
+| начитаний | /nɑtʃɪˈtɑnɪj/ | well-read | adj | - |
+| розмова | /rozˈmovɑ/ | conversation | noun | f |
 | розмовляти | /rozmovˈlʲɑtɪ/ | to converse | verb | - | impf |
-| мовлення | /movˈlɛnʲːɑ/ | speech | noun | n | |
+| мовлення | /movˈlɛnʲːɑ/ | speech | noun | n |
 | мовчати | /movˈtʃɑtɪ/ | to be silent | verb | - | impf |
-| домовитися | /domovˈɪtɪsʲɑ/ | to agree | verb | - | pf |
-| договір | /doɦoˈvʲir/ | contract | noun | m | |
-| перемовини | /pɛrɛˈmovɪnɪ/ | negotiations | noun | pl | |
-| промова | /proˈmovɑ/ | speech, address | noun | f | |
+| договір | /doɦoˈvʲir/ | contract | noun | m |
+| перемовини | /pɛrɛˈmovɪnɪ/ | negotiations | noun | pl |
+| промова | /proˈmovɑ/ | speech, address | noun | f |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| робота | 57 |
+| робітник | 63 |
+| виробництво | 63 |
+| підпис | 39 |
+| читач | 63 |
+| прочитати | 22 |
+| домовитися | 46 |
 
 ---
 

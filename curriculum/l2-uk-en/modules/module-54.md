@@ -387,17 +387,17 @@ Imagine you're sick. Describe:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| голова | /ɦoloˈvɑ/ | head | noun | f | |
-| горло | /ˈɦorlo/ | throat | noun | n | |
-| живіт | /ʒɪˈvʲit/ | stomach, belly | noun | m | |
-| спина | /spɪˈnɑ/ | back | noun | f | |
-| боліти | /boˈlʲitɪ/ | to hurt, ache | verb | - | |
-| кашель | /ˈkɑʃɛlʲ/ | cough | noun | m | |
-| нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m | |
-| застуда | /zɑˈstudɑ/ | cold (illness) | noun | f | |
+| голова | /ɦoloˈvɑ/ | head | noun | f |
+| горло | /ˈɦorlo/ | throat | noun | n |
+| живіт | /ʒɪˈvʲit/ | stomach, belly | noun | m |
+| спина | /spɪˈnɑ/ | back | noun | f |
+| боліти | /boˈlʲitɪ/ | to hurt, ache | verb | - |
+| кашель | /ˈkɑʃɛlʲ/ | cough | noun | m |
+| нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m |
+| застуда | /zɑˈstudɑ/ | cold (illness) | noun | f |
 | ліки | /ˈlʲikɪ/ | medicine | noun | m | pl-only |
-| таблетка | /tɑbˈlɛtkɑ/ | tablet, pill | noun | f | |
-| рецепт | /rɛˈtsɛpt/ | prescription | noun | m | |
+| таблетка | /tɑbˈlɛtkɑ/ | tablet, pill | noun | f |
+| рецепт | /rɛˈtsɛpt/ | prescription | noun | m |
 
 ---
 

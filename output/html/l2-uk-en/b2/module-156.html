@@ -833,6 +833,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer"><strong>Оскільки не знав дороги, він заблукав.</strong></div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -920,7 +921,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (10)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -928,9 +929,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">допуст</td><td class="vocab-en">concession</td><td class="vocab-note">хоча, незважаючи на</td></tr><tr><td class="vocab-uk">супровід</td><td class="vocab-en">accompaniment</td><td class="vocab-note">одночасно</td></tr><tr><td class="vocab-uk">жестикулювати</td><td class="vocab-en">to gesticulate</td><td class="vocab-note">рухати руками</td></tr><tr><td class="vocab-uk">насвистувати</td><td class="vocab-en">to whistle</td><td class="vocab-note">свистіти мелодію</td></tr><tr><td class="vocab-uk">заблукати</td><td class="vocab-en">to get lost</td><td class="vocab-note">загубити дорогу</td></tr><tr><td class="vocab-uk">відверто</td><td class="vocab-en">frankly</td><td class="vocab-note">чесно</td></tr><tr><td class="vocab-uk">зважаючи</td><td class="vocab-en">considering</td><td class="vocab-note">враховуючи</td></tr><tr><td class="vocab-uk">виходячи</td><td class="vocab-en">based on</td><td class="vocab-note">спираючись на</td></tr><tr><td class="vocab-uk">ланцюжок</td><td class="vocab-en">chain</td><td class="vocab-note">кілька поспіль</td></tr><tr><td class="vocab-uk">двозначний</td><td class="vocab-en">ambiguous</td><td class="vocab-note">неясний</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (1)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">зворот</td><td class="vocab-module">Module 142</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -944,7 +956,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"«Почувши новину, він зрадів.» — це відношення...","options":["Часу (коли почув)","Причини","Умови","Способу"],"correctIndex":0,"explanation":"Коли почув → час"},{"question":"«Знаючи правду, він мовчав.» — це відношення...","options":["Часу","Причини","Допусту (хоча знав)","Способу"],"correctIndex":2,"explanation":"Хоча знав → допуст"},{"question":"«Працюючи старанно, ти досягнеш успіху.» — це...","options":["Часу","Причини","Умови (якщо працюватимеш)","Способу"],"correctIndex":2,"explanation":"Якщо працюватимеш → умова"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"допуст","translit":"","en":"concession","note":"хоча, незважаючи на"},{"uk":"супровід","translit":"","en":"accompaniment","note":"одночасно"},{"uk":"жестикулювати","translit":"","en":"to gesticulate","note":"рухати руками"},{"uk":"насвистувати","translit":"","en":"to whistle","note":"свистіти мелодію"},{"uk":"заблукати","translit":"","en":"to get lost","note":"загубити дорогу"},{"uk":"відверто","translit":"","en":"frankly","note":"чесно"},{"uk":"зважаючи","translit":"","en":"considering","note":"враховуючи"},{"uk":"виходячи","translit":"","en":"based on","note":"спираючись на"},{"uk":"ланцюжок","translit":"","en":"chain","note":"кілька поспіль"},{"uk":"двозначний","translit":"","en":"ambiguous","note":"неясний"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

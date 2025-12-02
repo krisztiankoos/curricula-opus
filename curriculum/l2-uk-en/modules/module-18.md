@@ -315,18 +315,19 @@ Practice the complete café experience:
 |------|-----|---------|-----|--------|------|
 | меню | /mɛˈnʲu/ | menu | noun | n | Indeclinable |
 | замовляти | /zɑmɔvˈlʲɑtɪ/ | to order | verb | - | замовляю, замовляєш |
-| рахунок | /rɑˈxunɔk/ | bill, check | noun | m |  |
+| рахунок | /rɑˈxunɔk/ | bill, check | noun | m |
 | столик | /ˈstɔlɪk/ | table (small) | noun | m | Diminutive of стіл |
-| місце | /ˈmʲist͡sɛ/ | seat, place | noun | n |  |
+| місце | /ˈmʲist͡sɛ/ | seat, place | noun | n |
 | принести | /prɪnɛsˈtɪ/ | to bring | verb | - | Imp: принеси, принесіть |
 | взяти | /ˈvzʲɑtɪ/ | to take | verb | - | Я візьму (I'll take) |
 | можна | /ˈmɔʒnɑ/ | may, can | adv | - | Permission |
-| склянка | /ˈsklʲɑnkɑ/ | glass | noun | f |  |
+| склянка | /ˈsklʲɑnkɑ/ | glass | noun | f |
 | на виніс | /nɑ ˈvɪnʲis/ | to go | phrase | - | Takeaway |
-| гарячий | /ɦɑˈrʲɑtʃɪj/ | hot | adj | m |  |
-| холодний | /xɔˈlɔdnɪj/ | cold | adj | m |  |
-| страва | /ˈstrɑvɑ/ | dish, course | noun | f |  |
+| гарячий | /ɦɑˈrʲɑtʃɪj/ | hot | adj | m |
+| холодний | /xɔˈlɔdnɪj/ | cold | adj | m |
+| страва | /ˈstrɑvɑ/ | dish, course | noun | f |
 | чайові | /tʃɑjɔˈvʲi/ | tip | noun | pl | Literally "for tea" |
+
 ---
 
 # Café Dialogue Template

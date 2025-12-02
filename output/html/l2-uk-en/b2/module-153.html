@@ -704,6 +704,7 @@ footer {
 <button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">Діти, <strong>які грають</strong> на подвір'ї...</div></div>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -764,7 +765,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (9)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -772,9 +773,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">активний дієприкметник</td><td class="vocab-en">active participle</td><td class="vocab-note">книжна форма</td></tr><tr><td class="vocab-uk">книжний</td><td class="vocab-en">bookish, literary</td><td class="vocab-note">офіційний стиль</td></tr><tr><td class="vocab-uk">субстантивований</td><td class="vocab-en">substantivized</td><td class="vocab-note">перехід у іменник</td></tr><tr><td class="vocab-uk">усталений</td><td class="vocab-en">established, set</td><td class="vocab-note">фіксований вираз</td></tr><tr><td class="vocab-uk">чинний</td><td class="vocab-en">current, valid</td><td class="vocab-note">про закони</td></tr><tr><td class="vocab-uk">існуючий</td><td class="vocab-en">existing</td><td class="vocab-note">про проблеми</td></tr><tr><td class="vocab-uk">зростаючий</td><td class="vocab-en">growing</td><td class="vocab-note">про попит</td></tr><tr><td class="vocab-uk">пануючий</td><td class="vocab-en">prevailing</td><td class="vocab-note">про думку</td></tr><tr><td class="vocab-uk">завідувач</td><td class="vocab-en">manager (correct)</td><td class="vocab-note">не «завідуючий»!</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (1)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">підрядне речення</td><td class="vocab-module">Module 138</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -788,7 +800,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"працювати","options":["працюючий","працювавший","працюваний"],"correctIndex":0,"explanation":"працю-ють → працюючий (-ючий)"},{"question":"говорити","options":["говорячий","говорюючий","говоривший"],"correctIndex":0,"explanation":"говор-ять → говорячий (-ячий)"},{"question":"спати","options":["сплячий","спаючий","спавший"],"correctIndex":0,"explanation":"спл-ять → сплячий (-ячий)"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"активний дієприкметник","translit":"","en":"active participle","note":"книжна форма"},{"uk":"книжний","translit":"","en":"bookish, literary","note":"офіційний стиль"},{"uk":"субстантивований","translit":"","en":"substantivized","note":"перехід у іменник"},{"uk":"усталений","translit":"","en":"established, set","note":"фіксований вираз"},{"uk":"чинний","translit":"","en":"current, valid","note":"про закони"},{"uk":"існуючий","translit":"","en":"existing","note":"про проблеми"},{"uk":"зростаючий","translit":"","en":"growing","note":"про попит"},{"uk":"пануючий","translit":"","en":"prevailing","note":"про думку"},{"uk":"завідувач","translit":"","en":"manager (correct)","note":"не «завідуючий»!"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

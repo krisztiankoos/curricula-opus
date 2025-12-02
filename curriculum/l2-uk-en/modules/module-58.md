@@ -338,18 +338,18 @@ Present both sides:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| думка | /ˈdumkɑ/ | opinion, thought | noun | f | |
-| вважати | /vvɑˈʒɑtɪ/ | to believe, consider | verb | - | |
-| погоджуватися | /poɦoˈdʒuvɑtɪsʲɑ/ | to agree (impf) | verb | - | |
+| думка | /ˈdumkɑ/ | opinion, thought | noun | f |
+| вважати | /vvɑˈʒɑtɪ/ | to believe, consider | verb | - |
+| погоджуватися | /poɦoˈdʒuvɑtɪsʲɑ/ | to agree (impf) | verb | - |
 | згоден | /ˈzɦodɛn/ | agree (m) | adj | m | short form |
 | згодна | /ˈzɦodnɑ/ | agree (f) | adj | f | short form |
 | рація | /ˈrɑtsʲijɑ/ | rightness | noun | f | мати рацію |
-| переконаний | /pɛrɛˈkonɑnɪj/ | convinced | adj | m | |
-| сумніватися | /sumnʲiˈvɑtɪsʲɑ/ | to doubt | verb | - | |
-| впевнений | /vˈpɛvnɛnɪj/ | sure, certain | adj | m | |
-| навпаки | /nɑvˈpɑkɪ/ | on the contrary | adv | - | |
-| загалом | /zɑˈɦɑlom/ | in general | adv | - | |
-| отже | /ˈotʒɛ/ | so, therefore | conj | - | |
+| переконаний | /pɛrɛˈkonɑnɪj/ | convinced | adj | m |
+| сумніватися | /sumnʲiˈvɑtɪsʲɑ/ | to doubt | verb | - |
+| впевнений | /vˈpɛvnɛnɪj/ | sure, certain | adj | m |
+| навпаки | /nɑvˈpɑkɪ/ | on the contrary | adv | - |
+| загалом | /zɑˈɦɑlom/ | in general | adv | - |
+| отже | /ˈotʒɛ/ | so, therefore | conj | - |
 
 ---
 

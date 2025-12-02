@@ -366,8 +366,6 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| розуміти | /rɔzuˈmʲitɪ/ | to understand | ipf, нейтральне |
-| усвідомлювати | /uswʲidɔmˈlʲuwɑtɪ/ | to realize | ipf, глибоке |
 | осягати | /ɔsʲɑˈɦɑtɪ/ | to comprehend | ipf, філософське |
 | збагнути | /zbɑɦˈnutɪ/ | to fathom | pf, повне |
 | схоплювати | /sxɔpˈlʲuwɑtɪ/ | to grasp quickly | ipf |
@@ -375,6 +373,15 @@ objectives:
 | тямити | /ˈtʲamɪtɪ/ | to understand (colloq.) | ipf, розмовне |
 | губитися | /ɦuˈbɪtɪsʲɑ/ | to get confused | ipf |
 | допетрати | /dɔpɛˈtrɑtɪ/ | to figure out (slang) | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| розуміти | 6 |
+| усвідомлювати | 134 |
 
 ---
 

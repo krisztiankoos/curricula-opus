@@ -277,26 +277,31 @@ B: Так / Ні, я ___.
 
 # Vocabulary
 
-This module reviews vocabulary from Modules 1-9. Key words for active recall:
-
 | uk | translit | en | Module |
 |----|----------|-----|--------|
-| буква | bukva | letter | 02 |
-| слово | slovo | word | 02 |
 | чоловічий | cholovichyi | masculine | 03 |
 | жіночий | zhinochyi | feminine | 03 |
 | середній | serednii | neuter | 03 |
 | я, ти, він, вона | ya, ty, vin, vona | I, you, he, she | 04 |
 | цей, ця, це, ці | tsei, tsya, tse, tsi | this (m/f/n/pl) | 05 |
-| читати | chytaty | to read | 06 |
-| знати | znaty | to know | 06 |
-| говорити | hovoryty | to speak | 08 |
-| робити | robyty | to do/make | 08 |
 | що, хто, де | shcho, khto, de | what, who, where | 07 |
 | не, ніхто, ніколи | ne, nikhto, nikoly | not, nobody, never | 07 |
 | один, два, три | odyn, dva, try | one, two, three | 09 |
-| гривня | hryvnya | hryvnia | 09 |
 | скільки коштує | skilky koshtuye | how much does it cost | 09 |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| буква | 2 |
+| слово | 2 |
+| читати | 6 |
+| знати | 6 |
+| говорити | 6 |
+| робити | 6 |
+| гривня | 9 |
 
 ---
 

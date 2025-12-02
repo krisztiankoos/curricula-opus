@@ -663,6 +663,7 @@ footer {
 </ul>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -729,7 +730,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (7)</h3>
+        <h3>Нові слова (1)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -737,9 +738,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-ipa"></td><td class="vocab-en">test, checkpoint</td></tr><tr><td class="vocab-uk">оцінювання</td><td class="vocab-ipa">/ot͡sʲiˈnʲuvɑnʲːɑ/</td><td class="vocab-en">assessment</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-ipa">/bɑl/</td><td class="vocab-en">point, score</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td></tr><tr><td class="vocab-uk">перевірити</td><td class="vocab-ipa">/pɛrɛˈvʲirɪtɪ/</td><td class="vocab-en">to check</td></tr><tr><td class="vocab-uk">покращити</td><td class="vocab-ipa">/pokrɑˈʃɪtɪ/</td><td class="vocab-en">to improve</td></tr><tr><td class="vocab-uk">повторити</td><td class="vocab-ipa">/powtorˈɪtɪ/</td><td class="vocab-en">to review, repeat</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">повторити</td><td class="vocab-ipa">/powtorˈɪtɪ/</td><td class="vocab-en">to review, repeat</td><td class="vocab-note">pf</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (6)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">контрольна робота</td><td class="vocab-module">Module 115</td></tr><tr><td class="vocab-uk">оцінювання</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">бал</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">перевірити</td><td class="vocab-module">Module 100</td></tr><tr><td class="vocab-uk">покращити</td><td class="vocab-module">Module 88</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -753,7 +765,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Він сказав, ___ він працює.","options":["що","чи"],"correctIndex":0,"explanation":"що for statements."},{"question":"Вона запитала, ___ я прийду.","options":["чи","що"],"correctIndex":0,"explanation":"чи for yes/no questions."},{"question":"Він попросив, щоб я ___.","options":["допоміг","допомогти"],"correctIndex":0,"explanation":"Past tense after щоб."},{"question":"Verb: закрити","options":["закритий","закрений"],"correctIndex":0,"explanation":"-тий after vowel."},{"question":"Роботу ___.","options":["зроблено","зроблена"],"correctIndex":0,"explanation":"Short form is invariable."},{"question":"___ книгу, він заснув.","options":["Прочитавши","Читаючи"],"correctIndex":0,"explanation":"Completed action before main verb."}];
     const sortData = {};
-    const vocabData = [{"uk":"контрольна робота","translit":"","en":"test, checkpoint","note":""},{"uk":"оцінювання","translit":"","en":"assessment","note":""},{"uk":"бал","translit":"","en":"point, score","note":""},{"uk":"результат","translit":"","en":"result","note":""},{"uk":"перевірити","translit":"","en":"to check","note":""},{"uk":"покращити","translit":"","en":"to improve","note":""},{"uk":"повторити","translit":"","en":"to review, repeat","note":""}];
+    const vocabData = [{"uk":"повторити","translit":"","en":"to review, repeat","note":"pf"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -912,6 +912,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -993,7 +994,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Нові слова (1)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1001,9 +1002,20 @@ footer {
     
     
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">пасив</td><td class="vocab-en">passive voice</td><td class="vocab-note">Модулі 141-146</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (5)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">регістр</td><td class="vocab-module">Module 147</td></tr><tr><td class="vocab-uk">дієприкметник</td><td class="vocab-module">Module 119</td></tr><tr><td class="vocab-uk">дієприслівник</td><td class="vocab-module">Module 121</td></tr><tr><td class="vocab-uk">вставний</td><td class="vocab-module">Module 158</td></tr><tr><td class="vocab-uk">сполучник</td><td class="vocab-module">Module 138</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1017,7 +1029,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Протокол засідання: «Рішення ___»","options":["прийняте","прийнято","приймається","прийняли"],"correctIndex":1,"explanation":"Офіційний документ → -но/-то"},{"question":"Розмова з другом: «Мені ___ про це.»","options":["повідомлено","повідомляється","сказали","сказано"],"correctIndex":2,"explanation":"Розмовний стиль → 3-я ос. мн."},{"question":"Наукова стаття: «Проблема ___ у дослідженні.»","options":["розглянута","розглянуто","розглядається","розглянули"],"correctIndex":2,"explanation":"Науковий стиль (процес) → -ся"},{"question":"Опис кімнати: «Вікно ___»","options":["відкрите","відкрито","відкривається","відкрили"],"correctIndex":0,"explanation":"Опис стану → дієприкметник"}];
     const sortData = {};
-    const vocabData = [];
+    const vocabData = [{"uk":"пасив","translit":"","en":"passive voice","note":"Модулі 141-146"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

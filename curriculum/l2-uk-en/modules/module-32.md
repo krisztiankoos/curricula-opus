@@ -361,14 +361,15 @@ Create sentences using: Subject + дати/показати/сказати + Obj
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | клієнт | /klʲiˈjɛnt/ | client | noun | m | Dat: клієнтові |
-| повідомлення | /poʋʲiˈdomlɛnʲːɑ/ | message | noun | n |  |
-| запрошення | /zɑproˈʃɛnʲːɑ/ | invitation | noun | n |  |
-| відповідь | /ʋʲidpoˈʋʲidʲ/ | answer | noun | f |  |
-| допомога | /dopoˈmoɦɑ/ | help | noun | f |  |
-| порада | /poˈrɑdɑ/ | advice | noun | f |  |
-| підтримка | /pʲidˈtrɪmkɑ/ | support | noun | f |  |
-| отримувач | /otrɪˈmuvɑtʃ/ | recipient | noun | m |  |
-| адресат | /ɑdrɛˈsɑt/ | addressee | noun | m |  |
+| повідомлення | /poʋʲiˈdomlɛnʲːɑ/ | message | noun | n |
+| запрошення | /zɑproˈʃɛnʲːɑ/ | invitation | noun | n |
+| відповідь | /ʋʲidpoˈʋʲidʲ/ | answer | noun | f |
+| допомога | /dopoˈmoɦɑ/ | help | noun | f |
+| порада | /poˈrɑdɑ/ | advice | noun | f |
+| підтримка | /pʲidˈtrɪmkɑ/ | support | noun | f |
+| отримувач | /otrɪˈmuvɑtʃ/ | recipient | noun | m |
+| адресат | /ɑdrɛˈsɑt/ | addressee | noun | m |
+
 ---
 
 # Summary

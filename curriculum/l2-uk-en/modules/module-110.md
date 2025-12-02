@@ -309,19 +309,26 @@ Use temporal clauses to talk about past events:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| коли | /koˈlɪ/ | when | conj |
 | перед тим як | - | before | conj |
 | до того як | - | before | conj (formal) |
-| перш ніж | - | before | conj (literary) |
-| після того як | - | after | conj |
-| до | /do/ | before, until | prep + gen |
-| після | /ˈpʲislʲɑ/ | after | prep + gen |
-| поки | /poˈkɪ/ | while, until | conj |
 | доки | /doˈkɪ/ | while, until | conj |
 | щойно | /ˈʃt͡ʃojno/ | as soon as, just | adv/conj |
 | як тільки | /jɑk ˈtʲilʲkɪ/ | as soon as | conj |
 | ледве | /ˈlɛdvɛ/ | hardly, barely | adv |
 | тим часом | /tɪm ˈt͡ʃɑsom/ | meanwhile | adv |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| коли | 7 |
+| перш ніж | 43 |
+| після того як | 43 |
+| до | 15 |
+| після | 16 |
+| поки | 43 |
 
 ---
 

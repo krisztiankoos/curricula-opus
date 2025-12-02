@@ -783,6 +783,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -900,7 +901,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Нові слова (3)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -908,9 +909,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">якщо</td><td class="vocab-ipa">/jɑkˈʃt͡ʃo/</td><td class="vocab-en">if</td></tr><tr><td class="vocab-uk">як</td><td class="vocab-ipa">/jɑk/</td><td class="vocab-en">if (informal), as, how</td></tr><tr><td class="vocab-uk">тоді</td><td class="vocab-ipa">/toˈdʲi/</td><td class="vocab-en">then</td></tr><tr><td class="vocab-uk">умова</td><td class="vocab-ipa">/uˈmovɑ/</td><td class="vocab-en">condition</td></tr><tr><td class="vocab-uk">наслідок</td><td class="vocab-ipa">/ˈnɑslʲidok/</td><td class="vocab-en">consequence</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td></tr><tr><td class="vocab-uk">можливо</td><td class="vocab-ipa">/moʒˈlɪvo/</td><td class="vocab-en">possibly</td></tr><tr><td class="vocab-uk">імовірно</td><td class="vocab-ipa">/imoˈvʲirno/</td><td class="vocab-en">probably</td></tr><tr><td class="vocab-uk">у разі</td><td class="vocab-ipa">/u ˈrɑzʲi/</td><td class="vocab-en">in case</td></tr><tr><td class="vocab-uk">за умови</td><td class="vocab-ipa">/zɑ uˈmovɪ/</td><td class="vocab-en">provided that</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">імовірно</td><td class="vocab-ipa">/imoˈvʲirno/</td><td class="vocab-en">probably</td><td class="vocab-note">adv</td></tr><tr><td class="vocab-uk">у разі</td><td class="vocab-ipa">/u ˈrɑzʲi/</td><td class="vocab-en">in case</td><td class="vocab-note">prep</td></tr><tr><td class="vocab-uk">за умови</td><td class="vocab-ipa">/zɑ uˈmovɪ/</td><td class="vocab-en">provided that</td><td class="vocab-note">prep</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (7)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">якщо</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">як</td><td class="vocab-module">Module 2</td></tr><tr><td class="vocab-uk">тоді</td><td class="vocab-module">Module 21</td></tr><tr><td class="vocab-uk">умова</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">наслідок</td><td class="vocab-module">Module 95</td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-module">Module 46</td></tr><tr><td class="vocab-uk">можливо</td><td class="vocab-module">Module 46</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -924,7 +936,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"Якщо він ___ , ми підемо в кіно.","options":["прийде","приходить"],"correctIndex":0,"explanation":"Future condition requires future tense."},{"question":"Якщо ___ дощ, візьми парасольку.","options":["піде","йде"],"correctIndex":0,"explanation":"Future possible condition."},{"question":"Якщо ти не ___ , запізнишся.","options":["поспішиш","поспішаєш"],"correctIndex":0,"explanation":"Future warning."},{"question":"___ матиму час, зателефоную.","options":["Якщо","Якби"],"correctIndex":0,"explanation":"\"Якщо\" for real conditions, \"якби\" for unreal."},{"question":"Якщо хочеш, я ___ .","options":["допоможу","допомагаю"],"correctIndex":0,"explanation":"Offer in the future."},{"question":"Якщо вона не ___ , ми почнемо без неї.","options":["прийде","приходить"],"correctIndex":0,"explanation":"Future condition."}];
     const sortData = {};
-    const vocabData = [{"uk":"якщо","translit":"","en":"if","note":""},{"uk":"як","translit":"","en":"if (informal), as, how","note":""},{"uk":"тоді","translit":"","en":"then","note":""},{"uk":"умова","translit":"","en":"condition","note":""},{"uk":"наслідок","translit":"","en":"consequence","note":""},{"uk":"результат","translit":"","en":"result","note":""},{"uk":"можливо","translit":"","en":"possibly","note":""},{"uk":"імовірно","translit":"","en":"probably","note":""},{"uk":"у разі","translit":"","en":"in case","note":""},{"uk":"за умови","translit":"","en":"provided that","note":""}];
+    const vocabData = [{"uk":"імовірно","translit":"","en":"probably","note":"adv"},{"uk":"у разі","translit":"","en":"in case","note":"prep"},{"uk":"за умови","translit":"","en":"provided that","note":"prep"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

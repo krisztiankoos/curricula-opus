@@ -740,6 +740,7 @@ footer {
 </ol>
 <hr />
 <hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -846,7 +847,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Нові слова (6)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -854,9 +855,20 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">хоча</td><td class="vocab-ipa">/xoˈt͡ʃɑ/</td><td class="vocab-en">although, though</td></tr><tr><td class="vocab-uk">хоч</td><td class="vocab-ipa">/xot͡ʃ/</td><td class="vocab-en">though (informal)</td></tr><tr><td class="vocab-uk">незважаючи на</td><td class="vocab-ipa">/nɛzvɑˈʒɑjut͡ʃɪ nɑ/</td><td class="vocab-en">despite</td></tr><tr><td class="vocab-uk">незважаючи на те, що</td><td class="vocab-ipa"></td><td class="vocab-en">despite the fact that</td></tr><tr><td class="vocab-uk">попри</td><td class="vocab-ipa">/ˈpoprɪ/</td><td class="vocab-en">despite (literary)</td></tr><tr><td class="vocab-uk">дарма що</td><td class="vocab-ipa">/dɑrˈmɑ ʃt͡ʃo/</td><td class="vocab-en">even though</td></tr><tr><td class="vocab-uk">але</td><td class="vocab-ipa">/ɑˈlɛ/</td><td class="vocab-en">but</td></tr><tr><td class="vocab-uk">проте</td><td class="vocab-ipa">/proˈtɛ/</td><td class="vocab-en">however</td></tr><tr><td class="vocab-uk">однак</td><td class="vocab-ipa">/odˈnɑk/</td><td class="vocab-en">yet, however</td></tr><tr><td class="vocab-uk">усупереч</td><td class="vocab-ipa">/usuˈpɛrɛt͡ʃ/</td><td class="vocab-en">contrary to</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">незважаючи на</td><td class="vocab-ipa">/nɛzvɑˈʒɑjut͡ʃɪ nɑ/</td><td class="vocab-en">despite</td><td class="vocab-note">prep + acc</td></tr><tr><td class="vocab-uk">незважаючи на те, що</td><td class="vocab-ipa">/nɛzwɑˈʒɑjutʃɪ/</td><td class="vocab-en">despite the fact that</td><td class="vocab-note">conj</td></tr><tr><td class="vocab-uk">попри</td><td class="vocab-ipa">/ˈpoprɪ/</td><td class="vocab-en">despite (literary)</td><td class="vocab-note">prep + acc</td></tr><tr><td class="vocab-uk">дарма що</td><td class="vocab-ipa">/dɑrˈmɑ ʃt͡ʃo/</td><td class="vocab-en">even though</td><td class="vocab-note">conj (colloq)</td></tr><tr><td class="vocab-uk">але</td><td class="vocab-ipa">/ɑˈlɛ/</td><td class="vocab-en">but</td><td class="vocab-note">conj</td></tr><tr><td class="vocab-uk">усупереч</td><td class="vocab-ipa">/usuˈpɛrɛt͡ʃ/</td><td class="vocab-en">contrary to</td><td class="vocab-note">prep + dat</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card review-vocab">
+        <h3>Повторення (4)</h3>
+        <p class="review-note">Words from earlier modules for review</p>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr><th>Слово</th><th>First Module</th></tr></thead>
+            <tbody><tr><td class="vocab-uk">хоча</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">хоч</td><td class="vocab-module">Module 53</td></tr><tr><td class="vocab-uk">проте</td><td class="vocab-module">Module 97</td></tr><tr><td class="vocab-uk">однак</td><td class="vocab-module">Module 97</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -870,7 +882,7 @@ footer {
     const matchPairs = [];
     const quizData = [{"question":"___ я втомився, я продовжу працювати.","options":["Хоча","Тому що"],"correctIndex":0,"explanation":"\"Хоча\" introduces concession (despite being tired)."},{"question":"___ погану погоду, ми пішли гуляти.","options":["Незважаючи на","Хоча"],"correctIndex":0,"explanation":"\"Незважаючи на\" + noun (accusative)."},{"question":"Вона працює, ___ хвора.","options":["хоча","тому що"],"correctIndex":0,"explanation":"Unexpected result: working despite being sick."},{"question":"Він не здався, ___ всі труднощі.","options":["попри","хоча"],"correctIndex":0,"explanation":"\"Попри\" + noun for \"despite.\""},{"question":"Було холодно. ___ ми вийшли на прогулянку.","options":["Хоча","Проте"],"correctIndex":1,"explanation":"\"Проте\" is a coordinating conjunction after period."},{"question":"___ те, що йшов дощ, ми пішли в парк.","options":["Незважаючи на","Попри"],"correctIndex":0,"explanation":"\"Незважаючи на те, що\" + clause."}];
     const sortData = {};
-    const vocabData = [{"uk":"хоча","translit":"","en":"although, though","note":""},{"uk":"хоч","translit":"","en":"though (informal)","note":""},{"uk":"незважаючи на","translit":"","en":"despite","note":""},{"uk":"незважаючи на те, що","translit":"","en":"despite the fact that","note":""},{"uk":"попри","translit":"","en":"despite (literary)","note":""},{"uk":"дарма що","translit":"","en":"even though","note":""},{"uk":"але","translit":"","en":"but","note":""},{"uk":"проте","translit":"","en":"however","note":""},{"uk":"однак","translit":"","en":"yet, however","note":""},{"uk":"усупереч","translit":"","en":"contrary to","note":""}];
+    const vocabData = [{"uk":"незважаючи на","translit":"","en":"despite","note":"prep + acc"},{"uk":"незважаючи на те, що","translit":"","en":"despite the fact that","note":"conj"},{"uk":"попри","translit":"","en":"despite (literary)","note":"prep + acc"},{"uk":"дарма що","translit":"","en":"even though","note":"conj (colloq)"},{"uk":"але","translit":"","en":"but","note":"conj"},{"uk":"усупереч","translit":"","en":"contrary to","note":"prep + dat"}];
     const totalSort = 0;
   
 // Answer callout toggle (for new > [!answer] syntax)

@@ -348,14 +348,14 @@ Use reflexive verbs for introductions:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| митися | /ˈmɪtɪsʲɑ/ | to wash oneself | verb | - | |
-| зачісуватися | /zɑtʃʲisuˈvɑtɪsʲɑ/ | to comb one's hair | verb | - | |
+| митися | /ˈmɪtɪsʲɑ/ | to wash oneself | verb | - |
+| зачісуватися | /zɑtʃʲisuˈvɑtɪsʲɑ/ | to comb one's hair | verb | - |
 | сміятися | /smʲiˈjɑtɪsʲɑ/ | to laugh | verb | - | always refl |
 | боятися | /boˈjɑtɪsʲɑ/ | to be afraid | verb | - | always refl |
 | намагатися | /nɑmɑˈɦɑtɪsʲɑ/ | to try | verb | - | always refl |
-| себе | /sɛˈbɛ/ | oneself (acc/gen) | pron | - | |
-| собі | /soˈbʲi/ | oneself (dat/loc) | pron | - | |
-| собою | /soˈboju/ | oneself (inst) | pron | - | |
+| себе | /sɛˈbɛ/ | oneself (acc/gen) | pron | - |
+| собі | /soˈbʲi/ | oneself (dat/loc) | pron | - |
+| собою | /soˈboju/ | oneself (inst) | pron | - |
 
 ---
 

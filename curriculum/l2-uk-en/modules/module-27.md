@@ -306,22 +306,23 @@ Describe yourself or a friend:
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | одяг | /ˈɔdʲɑɦ/ | clothes | noun | m | Collective |
-| сорочка | /sɔˈrɔtʃkɑ/ | shirt | noun | f |  |
-| футболка | /futˈbɔlkɑ/ | t-shirt | noun | f |  |
-| светр | /svɛtr/ | sweater | noun | m |  |
-| куртка | /ˈkurtkɑ/ | jacket | noun | f |  |
+| сорочка | /sɔˈrɔtʃkɑ/ | shirt | noun | f |
+| футболка | /futˈbɔlkɑ/ | t-shirt | noun | f |
+| светр | /svɛtr/ | sweater | noun | m |
+| куртка | /ˈkurtkɑ/ | jacket | noun | f |
 | пальто | /pɑlʲˈtɔ/ | coat | noun | n | Indeclinable |
 | сукня | /ˈsuknʲɑ/ | dress | noun | f | Also: плаття |
-| спідниця | /spʲidˈnɪt͡sʲɑ/ | skirt | noun | f |  |
+| спідниця | /spʲidˈnɪt͡sʲɑ/ | skirt | noun | f |
 | штани | /ʃtɑˈnɪ/ | pants | noun | pl | Always plural |
 | джинси | /ˈd͡ʒɪnsɪ/ | jeans | noun | pl | Always plural |
-| черевики | /tʃɛrɛˈvɪkɪ/ | shoes | noun | pl |  |
-| кросівки | /krɔˈsʲivkɪ/ | sneakers | noun | pl |  |
+| черевики | /tʃɛrɛˈvɪkɪ/ | shoes | noun | pl |
+| кросівки | /krɔˈsʲivkɪ/ | sneakers | noun | pl |
 | вишиванка | /vɪʃɪˈvɑnkɑ/ | embroidered shirt | noun | f | Traditional |
 | волосся | /vɔˈlɔsʲːɑ/ | hair | noun | n | Collective, singular |
 | очі | /ˈɔtʃʲi/ | eyes | noun | pl | Singular: око |
-| високий | /vɪˈsɔkɪj/ | tall | adj | m |  |
-| худий | /xuˈdɪj/ | thin | adj | m |  |
+| високий | /vɪˈsɔkɪj/ | tall | adj | m |
+| худий | /xuˈdɪj/ | thin | adj | m |
+
 ---
 
 # Appearance Summary

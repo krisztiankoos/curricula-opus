@@ -259,18 +259,25 @@ Choose a topic and discuss using variety:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| думати | /ˈdumɑtɪ/ | to think | impf, general |
-| гадати | /ɦɑˈdɑtɪ/ | to suppose, think | impf, uncertain |
-| вважати | /vvɑˈʒɑtɪ/ | to consider, believe | impf, firm |
 | міркувати | /mʲirkuˈvɑtɪ/ | to ponder, reflect | impf, deep |
-| здаватися | /zdɑˈvɑtɪsʲɑ/ | to seem | impf |
 | роздумувати | /rozduˈmuvɑtɪ/ | to deliberate | impf |
 | припускати | /prɪpusˈkɑtɪ/ | to suppose, assume | impf |
 | переконання | /pɛrɛkoˈnɑnʲːɑ/ | belief, conviction | n |
-| думка | /ˈdumkɑ/ | thought, opinion | f |
 | враження | /vrɑˈʒɛnʲːɑ/ | impression | n |
 | роздум | /ˈrozdum/ | reflection, thought | m |
-| помилятися | /pomɪˈlʲɑtɪsʲɑ/ | to be mistaken | impf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| думати | 6 |
+| гадати | 97 |
+| вважати | 58 |
+| здаватися | 31 |
+| думка | 58 |
+| помилятися | 46 |
 
 ---
 

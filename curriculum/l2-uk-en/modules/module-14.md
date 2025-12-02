@@ -305,8 +305,9 @@ Describe using possessives:
 | свій | /svʲij/ | one's own (m) | pron | m | своя (f), своє (n), свої (pl) |
 | чий | /tʃɪj/ | whose (m) | pron | m | чия (f), чиє (n), чиї (pl) |
 | річ | /rʲitʃ/ | thing | noun | f | Plural: речі |
-| родина | /rɔˈdɪnɑ/ | family | noun | f |  |
-| машина | /mɑˈʃɪnɑ/ | car | noun | f |  |
+| родина | /rɔˈdɪnɑ/ | family | noun | f |
+| машина | /mɑˈʃɪnɑ/ | car | noun | f |
+
 ---
 
 # Possessive Summary

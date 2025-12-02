@@ -371,20 +371,20 @@ Next month:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| план | /plɑn/ | plan | noun | m | |
-| запрошувати | /zɑproˈʃuvɑtɪ/ | to invite (impf) | verb | - | |
-| призначити | /prɪznɑˈtʃɪtɪ/ | to schedule (perf) | verb | - | |
-| зустріч | /ˈzustrʲitʃ/ | meeting | noun | f | |
-| перенести | /pɛrɛˈnɛstɪ/ | to reschedule (perf) | verb | - | |
-| скасувати | /skɑsuˈvɑtɪ/ | to cancel (perf) | verb | - | |
-| зручний | /zrutʃˈnɪj/ | convenient | adj | - | |
-| зайнятий | /zɑjˈnʲɑtɪj/ | busy | adj | - | |
-| вільний | /ˈvʲilʲnɪj/ | free, available | adj | - | |
-| пропозиція | /propoˈzɪtsʲijɑ/ | suggestion, proposal | noun | f | |
-| підтвердити | /pʲidˈtvɛrdɪtɪ/ | to confirm (perf) | verb | - | |
-| нагадати | /nɑɦɑˈdɑtɪ/ | to remind (perf) | verb | - | |
-| опівдні | /oˈpʲivdnʲi/ | at noon | adv | - | |
-| чекатиму | /tʃɛˈkɑtɪmu/ | I will wait | verb | - | |
+| план | /plɑn/ | plan | noun | m |
+| запрошувати | /zɑproˈʃuvɑtɪ/ | to invite (impf) | verb | - |
+| призначити | /prɪznɑˈtʃɪtɪ/ | to schedule (perf) | verb | - |
+| зустріч | /ˈzustrʲitʃ/ | meeting | noun | f |
+| перенести | /pɛrɛˈnɛstɪ/ | to reschedule (perf) | verb | - |
+| скасувати | /skɑsuˈvɑtɪ/ | to cancel (perf) | verb | - |
+| зручний | /zrutʃˈnɪj/ | convenient | adj | - |
+| зайнятий | /zɑjˈnʲɑtɪj/ | busy | adj | - |
+| вільний | /ˈvʲilʲnɪj/ | free, available | adj | - |
+| пропозиція | /propoˈzɪtsʲijɑ/ | suggestion, proposal | noun | f |
+| підтвердити | /pʲidˈtvɛrdɪtɪ/ | to confirm (perf) | verb | - |
+| нагадати | /nɑɦɑˈdɑtɪ/ | to remind (perf) | verb | - |
+| опівдні | /oˈpʲivdnʲi/ | at noon | adv | - |
+| чекатиму | /tʃɛˈkɑtɪmu/ | I will wait | verb | - |
 
 ---
 

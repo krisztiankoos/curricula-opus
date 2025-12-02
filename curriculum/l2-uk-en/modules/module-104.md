@@ -319,18 +319,25 @@ Practice making requests using "щоб":
 
 | Word | IPA | English | Gender |
 |------|-----|---------|--------|
-| хотіти | /xoˈtʲitɪ/ | to want | impf |
 | бажати | /bɑˈʒɑtɪ/ | to wish | impf |
-| просити | /proˈsɪtɪ/ | to ask, request | impf |
 | попросити | /poproˈsɪtɪ/ | to ask, request | pf |
 | наказувати | /nɑˈkɑzuvɑtɪ/ | to order | impf |
 | наказати | /nɑkɑˈzɑtɪ/ | to order | pf |
-| радити | /ˈrɑdɪtɪ/ | to advise | impf |
 | порадити | /porɑˈdɪtɪ/ | to advise | pf |
-| сподіватися | /spodʲiˈvɑtɪsʲɑ/ | to hope | impf |
 | вимагати | /vɪmɑˈɦɑtɪ/ | to demand | impf |
-| пропонувати | /proponuˈvɑtɪ/ | to suggest | impf |
-| запропонувати | /zɑproponuˈvɑtɪ/ | to suggest | pf |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| хотіти | 6 |
+| просити | 8 |
+| радити | 33 |
+| сподіватися | 46 |
+| пропонувати | 98 |
+| запропонувати | 98 |
 
 ---
 

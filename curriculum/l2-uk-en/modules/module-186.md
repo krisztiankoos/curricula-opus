@@ -356,12 +356,10 @@ objectives:
 
 | Слово | Вимова | Переклад | Примітки |
 |-------|--------|----------|----------|
-| діагноз | /dʲiɑɦˈnɔz/ | diagnosis | m |
 | симптом | /sɪmpˈtɔm/ | symptom | m |
 | лікування | /lʲikuˈwɑnʲːɑ/ | treatment | n |
 | призначати | /prɪznɑˈtʃɑtɪ/ | to prescribe | ipf |
 | госпіталізувати | /ɦɔspʲitɑlʲizuˈwɑtɪ/ | to hospitalize | pf/ipf |
-| рецепт | /rɛˈt͡sɛpt/ | prescription | m |
 | побічна дія | /pɔˈbʲitʃnɑ ˈdʲijɑ/ | side effect | f |
 | обстеження | /ɔbstɛˈʒɛnʲːɑ/ | examination | n |
 | антибіотик | /ɑntɪbʲiˈɔtɪk/ | antibiotic | m |
@@ -371,6 +369,15 @@ objectives:
 | терапевт | /tɛrɑˈpɛwt/ | GP (NOT therapist!) | m |
 | укол | /uˈkɔl/ | shot, injection | m, розм. |
 | жарознижувальне | /ʒɑrɔznɪˈʒuwɑlʲnɛ/ | antipyretic | n |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| діагноз | 68 |
+| рецепт | 54 |
 
 ---
 

@@ -391,19 +391,19 @@ This morning (perfective):
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| відкрити | /vʲidˈkrɪtɪ/ | to open (perf) | verb | - | |
-| закрити | /zɑˈkrɪtɪ/ | to close (perf) | verb | - | |
-| починати | /potʃɪˈnɑtɪ/ | to begin (impf) | verb | - | |
-| почати | /poˈtʃɑtɪ/ | to begin (perf) | verb | - | |
-| кінчати | /kʲinˈtʃɑtɪ/ | to finish (impf) | verb | - | |
+| відкрити | /vʲidˈkrɪtɪ/ | to open (perf) | verb | - |
+| закрити | /zɑˈkrɪtɪ/ | to close (perf) | verb | - |
+| починати | /potʃɪˈnɑtɪ/ | to begin (impf) | verb | - |
+| почати | /poˈtʃɑtɪ/ | to begin (perf) | verb | - |
+| кінчати | /kʲinˈtʃɑtɪ/ | to finish (impf) | verb | - |
 | запитати | /zɑpɪˈtɑtɪ/ | to ask (perf) | verb | - | pf of питати |
 | відповісти | /vʲidpoˈvʲistɪ/ | to answer (perf) | verb | - | pf of відповідати |
-| пояснити | /pojɑsˈnɪtɪ/ | to explain (perf) | verb | - | |
-| розповісти | /rɔzpoˈvʲistɪ/ | to tell (perf) | verb | - | |
-| запросити | /zɑproˈsɪtɪ/ | to invite (perf) | verb | - | |
+| пояснити | /pojɑsˈnɪtɪ/ | to explain (perf) | verb | - |
+| розповісти | /rɔzpoˈvʲistɪ/ | to tell (perf) | verb | - |
+| запросити | /zɑproˈsɪtɪ/ | to invite (perf) | verb | - |
 | прийти | /prɪjˈtɪ/ | to arrive (on foot) | verb | - | pf of йти |
 | приїхати | /prɪˈjixɑtɪ/ | to arrive (by transport) | verb | - | pf of їхати |
-| вийти | /ˈvɪjtɪ/ | to go out | verb | - | |
+| вийти | /ˈvɪjtɪ/ | to go out | verb | - |
 | побачити | /poˈbɑtʃɪtɪ/ | to see (perf) | verb | - | pf of бачити |
 | почути | /poˈtʃutɪ/ | to hear (perf) | verb | - | pf of чути |
 | знайти | /znɑjˈtɪ/ | to find (perf) | verb | - | pf of шукати |

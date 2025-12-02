@@ -280,16 +280,23 @@ Describe situations where the result was unexpected:
 
 | Word | IPA | English | Notes |
 |------|-----|---------|-------|
-| хоча | /xoˈt͡ʃɑ/ | although, though | conj |
-| хоч | /xot͡ʃ/ | though (informal) | conj |
 | незважаючи на | /nɛzvɑˈʒɑjut͡ʃɪ nɑ/ | despite | prep + acc |
-| незважаючи на те, що | - | despite the fact that | conj |
+| незважаючи на те, що | /nɛzwɑˈʒɑjutʃɪ/ | despite the fact that | conj |
 | попри | /ˈpoprɪ/ | despite (literary) | prep + acc |
 | дарма що | /dɑrˈmɑ ʃt͡ʃo/ | even though | conj (colloq) |
 | але | /ɑˈlɛ/ | but | conj |
-| проте | /proˈtɛ/ | however | conj |
-| однак | /odˈnɑk/ | yet, however | conj |
 | усупереч | /usuˈpɛrɛt͡ʃ/ | contrary to | prep + dat |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| хоча | 53 |
+| хоч | 53 |
+| проте | 97 |
+| однак | 97 |
 
 ---
 

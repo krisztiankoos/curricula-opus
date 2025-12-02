@@ -343,6 +343,54 @@ Use тому що/бо:
 - хоча втомився
 - хоча не хотів
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "тому що" mean?
+   - [ ] although
+   - [ ] although (casual)
+   - [ ] to wake up (sb) (perf)
+   - [x] because
+   > "тому що" means "because"
+
+2. What does "хоч" mean?
+   - [ ] to wake up (sb) (perf)
+   - [ ] although
+   - [ ] because
+   - [x] although (casual)
+   > "хоч" means "although (casual)"
+
+3. What does "хоча" mean?
+   - [ ] although (casual)
+   - [ ] because
+   - [ ] to wake up (sb) (perf)
+   - [x] although
+   > "хоча" means "although"
+
+4. What does "розбудити" mean?
+   - [ ] although
+   - [ ] because
+   - [ ] although (casual)
+   - [x] to wake up (sb) (perf)
+   > "розбудити" means "to wake up (sb) (perf)"
+
+5. What does "продовжувати" mean?
+   - [x] to continue (impf)
+   - [ ] although (casual)
+   - [ ] although
+   - [ ] because
+   > "продовжувати" means "to continue (impf)"
+
+6. What does "щоб" mean?
+   - [ ] although
+   - [ ] because
+   - [x] in order to, so that
+   - [ ] although (casual)
+   > "щоб" means "in order to, so that"
+
+
 ---
 
 # Vocabulary

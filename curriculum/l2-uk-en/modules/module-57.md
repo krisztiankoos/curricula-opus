@@ -375,6 +375,105 @@ Talk about your work:
 - перукар
 - водій
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "професія" is feminine.
+   > Correct! професія is feminine.
+
+- [x] "робота" is feminine.
+   > Correct! робота is feminine.
+
+- [x] "вакансія" is feminine.
+   > Correct! вакансія is feminine.
+
+- [x] "резюме" is neuter.
+   > Correct! резюме is neuter.
+
+- [ ] "співбесіда" is masculine.
+   > Incorrect. співбесіда is feminine.
+
+- [ ] "зарплата" is masculine.
+   > Incorrect. зарплата is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "резюме" mean?
+   - [ ] interview
+   - [x] resume, CV
+   - [ ] remotely
+   - [ ] salary
+   > "резюме" means "resume, CV"
+
+2. What does "віддалено" mean?
+   - [ ] resume, CV
+   - [ ] salary
+   - [x] remotely
+   - [ ] interview
+   > "віддалено" means "remotely"
+
+3. What does "співбесіда" mean?
+   - [x] interview
+   - [ ] salary
+   - [ ] remotely
+   - [ ] resume, CV
+   > "співбесіда" means "interview"
+
+4. What does "зарплата" mean?
+   - [x] salary
+   - [ ] resume, CV
+   - [ ] interview
+   - [ ] remotely
+   > "зарплата" means "salary"
+
+5. What does "професія" mean?
+   - [x] profession
+   - [ ] resume, CV
+   - [ ] remotely
+   - [ ] interview
+   > "професія" means "profession"
+
+6. What does "обов'язок" mean?
+   - [ ] resume, CV
+   - [ ] interview
+   - [ ] remotely
+   - [x] duty, responsibility
+   > "обов'язок" means "duty, responsibility"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. працюєте / Ким / ви
+   > [!answer] Ким ви працюєте?
+   > (Я працюю + Instrumental)
+
+2. Де / ви / працюєте
+   > [!answer] Де ви працюєте?
+   > (Я працюю в/на + Locative)
+
+3. повну / на / ставку
+   > [!answer] на повну ставку
+   > (full-time)
+
+4. часткову / на / ставку
+   > [!answer] на часткову ставку
+   > (part-time)
+
+
 ---
 
 # Vocabulary

@@ -307,6 +307,91 @@ Write or speak about your typical day:
 - приймати душ
 - лягати спати
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. о ___ locative
+   > [!answer] +
+
+2. Як проходить ___ день?
+   > [!answer] твій
+
+3. Що ти ___ вранці?
+   > [!answer] робиш
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "засинати" mean?
+   - [x] to fall asleep
+   - [ ] shower
+   - [ ] teeth
+   - [ ] to wake up
+   > "засинати" means "to fall asleep"
+
+2. What does "прокидатися" mean?
+   - [ ] shower
+   - [ ] teeth
+   - [x] to wake up
+   - [ ] to fall asleep
+   > "прокидатися" means "to wake up"
+
+3. What does "душ" mean?
+   - [x] shower
+   - [ ] to fall asleep
+   - [ ] to wake up
+   - [ ] teeth
+   > "душ" means "shower"
+
+4. What does "зуби" mean?
+   - [x] teeth
+   - [ ] to wake up
+   - [ ] shower
+   - [ ] to fall asleep
+   > "зуби" means "teeth"
+
+5. What does "зазвичай" mean?
+   - [ ] to wake up
+   - [ ] shower
+   - [ ] to fall asleep
+   - [x] usually
+   > "зазвичай" means "usually"
+
+6. What does "роздягатися" mean?
+   - [x] to undress
+   - [ ] to wake up
+   - [ ] shower
+   - [ ] to fall asleep
+   > "роздягатися" means "to undress"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. о / locative / +
+   > [!answer] о + locative
+   > (at (time))
+
+2. о / + / Loc
+   > [!answer] о + Loc.
+   > (о сьомій (at 7))
+
+3. проходить / твій / день / Як
+   > [!answer] Як проходить твій день?
+   > (How does your day go?)
+
+4. ти / вранці / робиш / Що
+   > [!answer] Що ти робиш вранці?
+   > (What do you do in the morning?)
+
+
 ---
 
 # Vocabulary

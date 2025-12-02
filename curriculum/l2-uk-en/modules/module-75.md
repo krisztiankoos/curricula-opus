@@ -373,6 +373,105 @@ Discuss these questions:
 - готуватися
 - закінчувати
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "дитячий садок" is masculine.
+   > Correct! дитячий садок is masculine.
+
+- [x] "початкова школа" is feminine.
+   > Correct! початкова школа is feminine.
+
+- [x] "гімназія" is feminine.
+   > Correct! гімназія is feminine.
+
+- [x] "ліцей" is masculine.
+   > Correct! ліцей is masculine.
+
+- [ ] "аспірантура" is masculine.
+   > Incorrect. аспірантура is feminine.
+
+- [ ] "математика" is masculine.
+   > Incorrect. математика is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "дитячий садок" mean?
+   - [ ] diploma
+   - [x] kindergarten
+   - [ ] lyceum
+   - [ ] computer science
+   > "дитячий садок" means "kindergarten"
+
+2. What does "ліцей" mean?
+   - [ ] kindergarten
+   - [x] lyceum
+   - [ ] diploma
+   - [ ] computer science
+   > "ліцей" means "lyceum"
+
+3. What does "інформатика" mean?
+   - [ ] lyceum
+   - [ ] diploma
+   - [x] computer science
+   - [ ] kindergarten
+   > "інформатика" means "computer science"
+
+4. What does "диплом" mean?
+   - [x] diploma
+   - [ ] kindergarten
+   - [ ] computer science
+   - [ ] lyceum
+   > "диплом" means "diploma"
+
+5. What does "зошит" mean?
+   - [ ] lyceum
+   - [x] notebook
+   - [ ] computer science
+   - [ ] kindergarten
+   > "зошит" means "notebook"
+
+6. What does "однокласник" mean?
+   - [ ] kindergarten
+   - [x] classmate (school)
+   - [ ] lyceum
+   - [ ] computer science
+   > "однокласник" means "classmate (school)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. / / учениця / учень
+   > [!answer] учень / учениця
+   > (pupil (m/f))
+
+2. студентка / студент / /
+   > [!answer] студент / студентка
+   > (student (m/f))
+
+3. / / вчитель / вчителька
+   > [!answer] вчитель / вчителька
+   > (teacher (m/f))
+
+4. викладач / викладачка / /
+   > [!answer] викладач / викладачка
+   > (lecturer (m/f))
+
+
 ---
 
 # Vocabulary

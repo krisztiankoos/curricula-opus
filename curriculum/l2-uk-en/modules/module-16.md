@@ -316,6 +316,60 @@ Say what you don't have:
 - про (about)
 - через (through)
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "час" mean?
+   - [x] time
+   - [ ] bottle
+   - [ ] money
+   - [ ] kilogram
+   > "час" means "time"
+
+2. What does "пляшка" mean?
+   - [x] bottle
+   - [ ] money
+   - [ ] time
+   - [ ] kilogram
+   > "пляшка" means "bottle"
+
+3. What does "кілограм" mean?
+   - [x] kilogram
+   - [ ] bottle
+   - [ ] time
+   - [ ] money
+   > "кілограм" means "kilogram"
+
+4. What does "гроші" mean?
+   - [ ] bottle
+   - [x] money
+   - [ ] kilogram
+   - [ ] time
+   > "гроші" means "money"
+
+5. What does "кінець" mean?
+   - [ ] bottle
+   - [ ] time
+   - [ ] kilogram
+   - [x] end
+   > "кінець" means "end"
+
+6. What does "після" mean?
+   - [x] after
+   - [ ] time
+   - [ ] bottle
+   - [ ] kilogram
+   > "після" means "after"
+
+
 ---
 
 # Vocabulary

@@ -394,6 +394,83 @@ Give workout advice:
 - кросфіт
 - аеробіка
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "баскетбол" is masculine.
+   > Correct! баскетбол is masculine.
+
+- [x] "волейбол" is masculine.
+   > Correct! волейбол is masculine.
+
+- [x] "плавання" is neuter.
+   > Correct! плавання is neuter.
+
+- [x] "біг" is masculine.
+   > Correct! біг is masculine.
+
+- [ ] "бокс" is feminine.
+   > Incorrect. бокс is masculine.
+
+- [ ] "гімнастика" is masculine.
+   > Incorrect. гімнастика is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "фінал" mean?
+   - [ ] tournament
+   - [ ] dumbbells
+   - [ ] championship
+   - [x] final
+   > "фінал" means "final"
+
+2. What does "гантелі" mean?
+   - [x] dumbbells
+   - [ ] final
+   - [ ] championship
+   - [ ] tournament
+   > "гантелі" means "dumbbells"
+
+3. What does "чемпіонат" mean?
+   - [x] championship
+   - [ ] dumbbells
+   - [ ] tournament
+   - [ ] final
+   > "чемпіонат" means "championship"
+
+4. What does "турнір" mean?
+   - [x] tournament
+   - [ ] championship
+   - [ ] final
+   - [ ] dumbbells
+   > "турнір" means "tournament"
+
+5. What does "змагатися" mean?
+   - [ ] final
+   - [ ] championship
+   - [x] to compete
+   - [ ] dumbbells
+   > "змагатися" means "to compete"
+
+6. What does "гімнастика" mean?
+   - [ ] dumbbells
+   - [ ] championship
+   - [x] gymnastics
+   - [ ] final
+   > "гімнастика" means "gymnastics"
+
+
 ---
 
 # Vocabulary

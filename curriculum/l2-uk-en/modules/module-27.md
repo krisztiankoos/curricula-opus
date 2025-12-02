@@ -299,6 +299,117 @@ Describe yourself or a friend:
 - туфлі
 - чоботи
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "одяг" is masculine.
+   > Correct! одяг is masculine.
+
+- [x] "сорочка" is feminine.
+   > Correct! сорочка is feminine.
+
+- [x] "футболка" is feminine.
+   > Correct! футболка is feminine.
+
+- [x] "светр" is masculine.
+   > Correct! светр is masculine.
+
+- [ ] "куртка" is masculine.
+   > Incorrect. куртка is feminine.
+
+- [ ] "пальто" is masculine.
+   > Incorrect. пальто is neuter.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Що ___ носиш?
+   > [!answer] ти
+
+2. Я ношу ___ і футболку.
+   > [!answer] джинси
+
+3. Як ___ виглядає?
+   > [!answer] він
+
+4. Він високий ___ темним волоссям.
+   > [!answer] з
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "светр" mean?
+   - [x] sweater
+   - [ ] coat
+   - [ ] clothes
+   - [ ] jacket
+   > "светр" means "sweater"
+
+2. What does "одяг" mean?
+   - [ ] coat
+   - [ ] sweater
+   - [x] clothes
+   - [ ] jacket
+   > "одяг" means "clothes"
+
+3. What does "пальто" mean?
+   - [x] coat
+   - [ ] sweater
+   - [ ] clothes
+   - [ ] jacket
+   > "пальто" means "coat"
+
+4. What does "куртка" mean?
+   - [ ] sweater
+   - [x] jacket
+   - [ ] clothes
+   - [ ] coat
+   > "куртка" means "jacket"
+
+5. What does "сорочка" mean?
+   - [ ] coat
+   - [ ] clothes
+   - [x] shirt
+   - [ ] sweater
+   > "сорочка" means "shirt"
+
+6. What does "кросівки" mean?
+   - [x] sneakers
+   - [ ] clothes
+   - [ ] sweater
+   - [ ] coat
+   > "кросівки" means "sneakers"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Що / ти / носиш
+   > [!answer] Що ти носиш?
+   > (What are you wearing?)
+
+2. Я / і / футболку / ношу / джинси
+   > [!answer] Я ношу джинси і футболку.
+   > (I'm wearing jeans and a t-shirt.)
+
+3. він / виглядає / Як
+   > [!answer] Як він виглядає?
+   > (What does he look like?)
+
+4. темним / з / волоссям / Він / високий
+   > [!answer] Він високий з темним волоссям.
+   > (He's tall with dark hair.)
+
+
 ---
 
 # Vocabulary

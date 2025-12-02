@@ -239,6 +239,117 @@ Practice with real people:
 - журнал
 - вікно
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "колега" is neuter.
+   > Correct! колега is neuter.
+
+- [x] "сусід" is masculine.
+   > Correct! сусід is masculine.
+
+- [x] "сусідка" is feminine.
+   > Correct! сусідка is feminine.
+
+- [x] "лікар" is masculine.
+   > Correct! лікар is masculine.
+
+- [ ] "лікарка" is masculine.
+   > Incorrect. лікарка is feminine.
+
+- [ ] "офіціант" is feminine.
+   > Incorrect. офіціант is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Я знаю ___ чоловіка.
+   > [!answer] цього
+
+2. Ти бачиш ___ жінку?
+   > [!answer] ту
+
+3. Ми чекаємо ___ лікаря.
+   > [!answer] на
+
+4. Я люблю ___ маму.
+   > [!answer] свою
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "офіціантка" mean?
+   - [ ] director
+   - [ ] neighbor (m)
+   - [ ] colleague
+   - [x] waitress
+   > "офіціантка" means "waitress"
+
+2. What does "колега" mean?
+   - [ ] waitress
+   - [ ] director
+   - [x] colleague
+   - [ ] neighbor (m)
+   > "колега" means "colleague"
+
+3. What does "сусід" mean?
+   - [x] neighbor (m)
+   - [ ] director
+   - [ ] colleague
+   - [ ] waitress
+   > "сусід" means "neighbor (m)"
+
+4. What does "директор" mean?
+   - [ ] neighbor (m)
+   - [ ] waitress
+   - [x] director
+   - [ ] colleague
+   > "директор" means "director"
+
+5. What does "сусідка" mean?
+   - [ ] colleague
+   - [ ] neighbor (m)
+   - [ ] waitress
+   - [x] neighbor (f)
+   > "сусідка" means "neighbor (f)"
+
+6. What does "лікар" mean?
+   - [x] doctor (m)
+   - [ ] colleague
+   - [ ] waitress
+   - [ ] neighbor (m)
+   > "лікар" means "doctor (m)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Я / знаю / чоловіка / цього
+   > [!answer] Я знаю цього чоловіка.
+   > (I know this man.)
+
+2. жінку / бачиш / Ти / ту
+   > [!answer] Ти бачиш ту жінку?
+   > (Do you see that woman?)
+
+3. Ми / лікаря / чекаємо / на
+   > [!answer] Ми чекаємо на лікаря.
+   > (We're waiting for the doctor.)
+
+4. Я / маму / люблю / свою
+   > [!answer] Я люблю свою маму.
+   > (I love my mom.)
+
+
 ---
 
 # Vocabulary

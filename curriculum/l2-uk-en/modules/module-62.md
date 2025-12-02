@@ -395,6 +395,60 @@ With про-: Ми **прожили** там два роки.
 - прожити
 - проспати
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "подякувати" mean?
+   - [x] to thank
+   - [ ] to live (period)
+   - [ ] to have breakfast
+   - [ ] to write down
+   > "подякувати" means "to thank"
+
+2. What does "поснідати" mean?
+   - [ ] to live (period)
+   - [ ] to thank
+   - [ ] to write down
+   - [x] to have breakfast
+   > "поснідати" means "to have breakfast"
+
+3. What does "записати" mean?
+   - [ ] to have breakfast
+   - [x] to write down
+   - [ ] to live (period)
+   - [ ] to thank
+   > "записати" means "to write down"
+
+4. What does "прожити" mean?
+   - [ ] to thank
+   - [x] to live (period)
+   - [ ] to write down
+   - [ ] to have breakfast
+   > "прожити" means "to live (period)"
+
+5. What does "спитати" mean?
+   - [ ] to thank
+   - [x] to ask
+   - [ ] to have breakfast
+   - [ ] to write down
+   > "спитати" means "to ask"
+
+6. What does "відпустити" mean?
+   - [ ] to write down
+   - [x] to release, let go
+   - [ ] to have breakfast
+   - [ ] to thank
+   > "відпустити" means "to release, let go"
+
+
 ---
 
 # Vocabulary

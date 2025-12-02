@@ -267,6 +267,114 @@ Where are these things/people?
 - на концерті
 - на площі
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "кімната" is feminine.
+   > Correct! кімната is feminine.
+
+- [x] "офіс" is masculine.
+   > Correct! офіс is masculine.
+
+- [ ] "школа" is masculine.
+   > Incorrect. школа is feminine.
+
+- [ ] "університет" is feminine.
+   > Incorrect. університет is masculine.
+
+- [ ] "магазин" is feminine.
+   > Incorrect. магазин is masculine.
+
+- [ ] "ресторан" is feminine.
+   > Incorrect. ресторан is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. вдома / ___ домі
+   > [!answer] в
+
+2. В / ___ (in, at)
+   > [!answer] У
+
+3. На ___ at)
+   > [!answer] (on
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "ресторан" mean?
+   - [ ] office
+   - [ ] school
+   - [x] restaurant
+   - [ ] store
+   > "ресторан" means "restaurant"
+
+2. What does "школа" mean?
+   - [x] school
+   - [ ] restaurant
+   - [ ] office
+   - [ ] store
+   > "школа" means "school"
+
+3. What does "магазин" mean?
+   - [x] store
+   - [ ] office
+   - [ ] restaurant
+   - [ ] school
+   > "магазин" means "store"
+
+4. What does "офіс" mean?
+   - [ ] restaurant
+   - [ ] store
+   - [x] office
+   - [ ] school
+   > "офіс" means "office"
+
+5. What does "вулиця" mean?
+   - [ ] store
+   - [x] street
+   - [ ] restaurant
+   - [ ] school
+   > "вулиця" means "street"
+
+6. What does "станція" mean?
+   - [ ] restaurant
+   - [ ] store
+   - [ ] school
+   - [x] station
+   > "станція" means "station"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. / / вдома / домі / в
+   > [!answer] вдома / в домі
+   > (home / in the house)
+
+2. (in / В / У / at) / /
+   > [!answer] В / У (in, at)
+   > (used for enclosed spaces:)
+
+3. at) / На / (on
+   > [!answer] На (on, at)
+   > (used for surfaces and open places:)
+
+4. nouns: / -у / Common
+   > [!answer] Common -у nouns:
+   > (дім → в/у дом**у** (at home))
+
+
 ---
 
 # Vocabulary

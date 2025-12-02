@@ -301,6 +301,97 @@ Describe what you/others do using Class II verbs:
 - любити
 - ходити
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Class ___ (-ати)
+   > [!answer] I
+
+2. робити ___ do/make)
+   > [!answer] (to
+
+3. хотіти ___ want)
+   > [!answer] (to
+
+4. їсти ___ eat)
+   > [!answer] (to
+
+5. пити ___ drink)
+   > [!answer] (to
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "телефонувати" mean?
+   - [ ] to carry, wear
+   - [ ] to teach/learn
+   - [x] to call (phone)
+   - [ ] to sleep
+   > "телефонувати" means "to call (phone)"
+
+2. What does "вчити" mean?
+   - [x] to teach/learn
+   - [ ] to call (phone)
+   - [ ] to sleep
+   - [ ] to carry, wear
+   > "вчити" means "to teach/learn"
+
+3. What does "спати" mean?
+   - [x] to sleep
+   - [ ] to call (phone)
+   - [ ] to teach/learn
+   - [ ] to carry, wear
+   > "спати" means "to sleep"
+
+4. What does "носити" mean?
+   - [ ] to call (phone)
+   - [ ] to sleep
+   - [x] to carry, wear
+   - [ ] to teach/learn
+   > "носити" means "to carry, wear"
+
+5. What does "ходити" mean?
+   - [ ] to call (phone)
+   - [x] to walk, go
+   - [ ] to teach/learn
+   - [ ] to sleep
+   > "ходити" means "to walk, go"
+
+6. What does "вчитися" mean?
+   - [ ] to call (phone)
+   - [ ] to teach/learn
+   - [ ] to sleep
+   - [x] to study, learn
+   > "вчитися" means "to study, learn"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. I / Class / (-ати)
+   > [!answer] Class I (-ати)
+   > (Class II (-ити))
+
+2. do/make) / робити / (to
+   > [!answer] робити (to do/make)
+   > (with б→бл change)
+
+3. want) / (to / хотіти
+   > [!answer] хотіти (to want)
+   > (mixed pattern)
+
+4. їсти / (to / eat)
+   > [!answer] їсти (to eat)
+   > (irregular)
+
+
 ---
 
 # Vocabulary

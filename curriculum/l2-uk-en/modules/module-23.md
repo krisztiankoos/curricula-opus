@@ -325,6 +325,105 @@ A: Добре, домовились!
 - січень
 - лютий
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "тиждень" is masculine.
+   > Correct! тиждень is masculine.
+
+- [x] "місяць" is masculine.
+   > Correct! місяць is masculine.
+
+- [x] "рік" is masculine.
+   > Correct! рік is masculine.
+
+- [x] "година" is feminine.
+   > Correct! година is feminine.
+
+- [ ] "хвилина" is masculine.
+   > Incorrect. хвилина is feminine.
+
+- [ ] "понеділок" is feminine.
+   > Incorrect. понеділок is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "середа" mean?
+   - [ ] hour
+   - [x] Wednesday
+   - [ ] year
+   - [ ] week
+   > "середа" means "Wednesday"
+
+2. What does "година" mean?
+   - [ ] Wednesday
+   - [x] hour
+   - [ ] year
+   - [ ] week
+   > "година" means "hour"
+
+3. What does "тиждень" mean?
+   - [x] week
+   - [ ] year
+   - [ ] Wednesday
+   - [ ] hour
+   > "тиждень" means "week"
+
+4. What does "рік" mean?
+   - [ ] week
+   - [x] year
+   - [ ] hour
+   - [ ] Wednesday
+   > "рік" means "year"
+
+5. What does "січень" mean?
+   - [ ] week
+   - [x] January
+   - [ ] hour
+   - [ ] Wednesday
+   > "січень" means "January"
+
+6. What does "четвер" mean?
+   - [ ] week
+   - [ ] hour
+   - [ ] Wednesday
+   - [x] Thursday
+   > "четвер" means "Thursday"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. сьогодні / Який / день
+   > [!answer] Який сьогодні день?
+   > (What day is it today?)
+
+2. Зараз / година / третя
+   > [!answer] Зараз третя година.
+   > (It's 3 o'clock now.)
+
+3. О / котрій / годині
+   > [!answer] О котрій годині?
+   > (At what time?)
+
+4. ми / Коли / зустрінемося
+   > [!answer] Коли ми зустрінемося?
+   > (When will we meet?)
+
+
 ---
 
 # Vocabulary

@@ -357,6 +357,87 @@ Sometimes you want to say "extremely" without comparing:
 - найдорожчий
 - найшвидше
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. найкраще ___ infinitive
+   > [!answer] +
+
+2. When to ___ найбільш:
+   > [!answer] use
+
+3. Prefix ___ (archaic/emphatic):
+   > [!answer] пре-
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "найбільший" mean?
+   - [x] biggest
+   - [ ] cheapest
+   - [ ] at most
+   - [ ] at least
+   > "найбільший" means "biggest"
+
+2. What does "найдешевший" mean?
+   - [ ] at least
+   - [ ] at most
+   - [x] cheapest
+   - [ ] biggest
+   > "найдешевший" means "cheapest"
+
+3. What does "щонайбільше" mean?
+   - [ ] at least
+   - [ ] biggest
+   - [ ] cheapest
+   - [x] at most
+   > "щонайбільше" means "at most"
+
+4. What does "щонайменше" mean?
+   - [ ] cheapest
+   - [x] at least
+   - [ ] biggest
+   - [ ] at most
+   > "щонайменше" means "at least"
+
+5. What does "неймовірно" mean?
+   - [ ] biggest
+   - [ ] at most
+   - [x] incredibly
+   - [ ] cheapest
+   > "неймовірно" means "incredibly"
+
+6. What does "найбільше" mean?
+   - [ ] at most
+   - [ ] cheapest
+   - [x] most (adv)
+   - [ ] biggest
+   > "найбільше" means "most (adv)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. + / найкраще / infinitive
+   > [!answer] найкраще + infinitive
+   > (it's best to...)
+
+2. to / найбільш: / When / use
+   > [!answer] When to use найбільш:
+   > (With compound adjectives)
+
+3. пре- / (archaic/emphatic): / Prefix
+   > [!answer] Prefix пре- (archaic/emphatic):
+   > (**пре**красний - most beautiful (poetic))
+
+
 ---
 
 # Vocabulary

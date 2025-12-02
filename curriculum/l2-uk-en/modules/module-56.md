@@ -401,6 +401,102 @@ Describe yourself for a social media bio:
 - Як справи?
 - Напиши мені
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "дзвінок" is masculine.
+   > Correct! дзвінок is masculine.
+
+- [x] "вкладення" is neuter.
+   > Correct! вкладення is neuter.
+
+- [ ] "посилання" is masculine.
+   > Incorrect. посилання is neuter.
+
+- [ ] "пароль" is feminine.
+   > Incorrect. пароль is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. телефонувати ___ дзвонити
+   > [!answer] /
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "дзвінок" mean?
+   - [ ] to download (perf)
+   - [ ] password
+   - [ ] to forward (perf)
+   - [x] call
+   > "дзвінок" means "call"
+
+2. What does "пароль" mean?
+   - [ ] call
+   - [ ] to download (perf)
+   - [ ] to forward (perf)
+   - [x] password
+   > "пароль" means "password"
+
+3. What does "переслати" mean?
+   - [x] to forward (perf)
+   - [ ] call
+   - [ ] to download (perf)
+   - [ ] password
+   > "переслати" means "to forward (perf)"
+
+4. What does "завантажити" mean?
+   - [x] to download (perf)
+   - [ ] to forward (perf)
+   - [ ] call
+   - [ ] password
+   > "завантажити" means "to download (perf)"
+
+5. What does "поділитися" mean?
+   - [ ] call
+   - [x] to share
+   - [ ] password
+   - [ ] to forward (perf)
+   > "поділитися" means "to share"
+
+6. What does "вкладення" mean?
+   - [ ] call
+   - [x] attachment
+   - [ ] password
+   - [ ] to forward (perf)
+   > "вкладення" means "attachment"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. дзвонити / / / телефонувати
+   > [!answer] телефонувати / дзвонити
+   > (to call)
+
+2. електронна / пошта / / / імейл
+   > [!answer] електронна пошта / імейл
+   > (email)
+
+3. Так / вас / слухаю
+   > [!answer] Так, слухаю вас.
+   > (Yes, I'm listening.)
+
+4. Не / в / мережі
+   > [!answer] Не в мережі
+   > (offline)
+
+
 ---
 
 # Vocabulary

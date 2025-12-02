@@ -304,6 +304,60 @@ Use adjectives to describe:
 - злий
 - втомлений
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "добрий" mean?
+   - [x] good, kind
+   - [ ] easy, light
+   - [ ] smart
+   - [ ] clean
+   > "добрий" means "good, kind"
+
+2. What does "розумний" mean?
+   - [ ] good, kind
+   - [x] smart
+   - [ ] clean
+   - [ ] easy, light
+   > "розумний" means "smart"
+
+3. What does "чистий" mean?
+   - [ ] easy, light
+   - [ ] smart
+   - [x] clean
+   - [ ] good, kind
+   > "чистий" means "clean"
+
+4. What does "легкий" mean?
+   - [ ] smart
+   - [x] easy, light
+   - [ ] clean
+   - [ ] good, kind
+   > "легкий" means "easy, light"
+
+5. What does "новий" mean?
+   - [x] new
+   - [ ] smart
+   - [ ] good, kind
+   - [ ] clean
+   > "новий" means "new"
+
+6. What does "важкий" mean?
+   - [ ] clean
+   - [x] hard, heavy
+   - [ ] good, kind
+   - [ ] smart
+   > "важкий" means "hard, heavy"
+
+
 ---
 
 # Vocabulary

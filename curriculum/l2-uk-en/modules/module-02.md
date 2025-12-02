@@ -307,6 +307,71 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 - Й
 - Ь
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "буква" is feminine.
+   > Correct! буква is feminine.
+
+- [x] "слово" is neuter.
+   > Correct! слово is neuter.
+
+- [x] "алфавіт" is masculine.
+   > Correct! алфавіт is masculine.
+
+- [x] "мова" is feminine.
+   > Correct! мова is feminine.
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "вибачте" mean?
+   - [ ] please/you're welcome
+   - [ ] welcome
+   - [ ] language
+   - [x] excuse me, sorry
+   > "вибачте" means "excuse me, sorry"
+
+2. What does "прошу" mean?
+   - [ ] language
+   - [ ] welcome
+   - [x] please/you're welcome
+   - [ ] excuse me, sorry
+   > "прошу" means "please/you're welcome"
+
+3. What does "мова" mean?
+   - [ ] please/you're welcome
+   - [ ] excuse me, sorry
+   - [x] language
+   - [ ] welcome
+   > "мова" means "language"
+
+4. What does "ласкаво просимо" mean?
+   - [ ] please/you're welcome
+   - [x] welcome
+   - [ ] language
+   - [ ] excuse me, sorry
+   > "ласкаво просимо" means "welcome"
+
+5. What does "алфавіт" mean?
+   - [ ] language
+   - [ ] please/you're welcome
+   - [ ] excuse me, sorry
+   - [x] alphabet
+   > "алфавіт" means "alphabet"
+
+6. What does "англійська" mean?
+   - [ ] excuse me, sorry
+   - [x] English (adj)
+   - [ ] please/you're welcome
+   - [ ] language
+   > "англійська" means "English (adj)"
+
+
 ---
 
 # Vocabulary

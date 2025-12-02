@@ -366,6 +366,60 @@ Use -ливий adjectives:
 - корисний
 - дбайливий
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "корисний" mean?
+   - [ ] summer
+   - [ ] Ukrainian
+   - [ ] rocky
+   - [x] useful
+   > "корисний" means "useful"
+
+2. What does "літній" mean?
+   - [ ] Ukrainian
+   - [x] summer
+   - [ ] rocky
+   - [ ] useful
+   > "літній" means "summer"
+
+3. What does "кам'янистий" mean?
+   - [ ] Ukrainian
+   - [x] rocky
+   - [ ] useful
+   - [ ] summer
+   > "кам'янистий" means "rocky"
+
+4. What does "український" mean?
+   - [x] Ukrainian
+   - [ ] rocky
+   - [ ] summer
+   - [ ] useful
+   > "український" means "Ukrainian"
+
+5. What does "батьків" mean?
+   - [ ] rocky
+   - [x] father's
+   - [ ] useful
+   - [ ] summer
+   > "батьків" means "father's"
+
+6. What does "музичний" mean?
+   - [ ] useful
+   - [x] musical
+   - [ ] summer
+   - [ ] rocky
+   > "музичний" means "musical"
+
+
 ---
 
 # Vocabulary

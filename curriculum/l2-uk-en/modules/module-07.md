@@ -295,6 +295,97 @@ Turn positive to negative:
 - ніколи (never)
 - не (not)
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Ти читаєш. ___ read.)
+   > [!answer] (You
+
+2. Вона студентка. ___ a student.)
+   > [!answer] (She's
+
+3. Він знає. ___ knows.)
+   > [!answer] (He
+
+4. Я знаю. ___ know.)
+   > [!answer] (I
+
+5. Вона читає. ___ reads.)
+   > [!answer] (She
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "звідки" mean?
+   - [ ] nowhere
+   - [ ] when
+   - [x] where from
+   - [ ] which/what kind (f)
+   > "звідки" means "where from"
+
+2. What does "ніде" mean?
+   - [x] nowhere
+   - [ ] where from
+   - [ ] which/what kind (f)
+   - [ ] when
+   > "ніде" means "nowhere"
+
+3. What does "яка" mean?
+   - [ ] nowhere
+   - [x] which/what kind (f)
+   - [ ] where from
+   - [ ] when
+   > "яка" means "which/what kind (f)"
+
+4. What does "коли" mean?
+   - [ ] where from
+   - [ ] which/what kind (f)
+   - [x] when
+   - [ ] nowhere
+   > "коли" means "when"
+
+5. What does "іноді" mean?
+   - [ ] where from
+   - [ ] which/what kind (f)
+   - [ ] nowhere
+   - [x] sometimes
+   > "іноді" means "sometimes"
+
+6. What does "завжди" mean?
+   - [x] always
+   - [ ] nowhere
+   - [ ] where from
+   - [ ] which/what kind (f)
+   > "завжди" means "always"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Ти / читаєш / read) / (You
+   > [!answer] Ти читаєш. (You read.)
+   > (Чи ти читаєш? (Do you read?))
+
+2. студентка / Вона / (She's / a / student)
+   > [!answer] Вона студентка. (She's a student.)
+   > (Чи вона студентка? (Is she a student?))
+
+3. Він / (He / knows) / знає
+   > [!answer] Він знає. (He knows.)
+   > (Чи він знає? (Does he know?))
+
+4. (I / Я / знаю / know)
+   > [!answer] Я знаю. (I know.)
+   > (Я не знаю. (I don't know.))
+
+
 ---
 
 # Vocabulary

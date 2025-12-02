@@ -386,6 +386,97 @@ Generally (imperfective for habits):
 - сказати
 - вивчити
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Я читав. ___ was reading)
+   > [!answer] (I
+
+2. Вона писала. ___ was writing)
+   > [!answer] (She
+
+3. Я читаю. ___ reading)
+   > [!answer] (I'm
+
+4. Вона пише. ___ writing)
+   > [!answer] (She's
+
+5. Я буду читати. ___ will be reading)
+   > [!answer] (I
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "з'їсти" mean?
+   - [ ] to drink (perf)
+   - [x] to eat (perf)
+   - [ ] to learn (perf)
+   - [ ] to buy (perf)
+   > "з'їсти" means "to eat (perf)"
+
+2. What does "випити" mean?
+   - [x] to drink (perf)
+   - [ ] to buy (perf)
+   - [ ] to learn (perf)
+   - [ ] to eat (perf)
+   > "випити" means "to drink (perf)"
+
+3. What does "купити" mean?
+   - [ ] to learn (perf)
+   - [ ] to drink (perf)
+   - [ ] to eat (perf)
+   - [x] to buy (perf)
+   > "купити" means "to buy (perf)"
+
+4. What does "вивчити" mean?
+   - [x] to learn (perf)
+   - [ ] to eat (perf)
+   - [ ] to drink (perf)
+   - [ ] to buy (perf)
+   > "вивчити" means "to learn (perf)"
+
+5. What does "недоконаний" mean?
+   - [ ] to buy (perf)
+   - [ ] to eat (perf)
+   - [ ] to drink (perf)
+   - [x] imperfective
+   > "недоконаний" means "imperfective"
+
+6. What does "вид" mean?
+   - [ ] to eat (perf)
+   - [ ] to buy (perf)
+   - [x] aspect (grammatical)
+   - [ ] to drink (perf)
+   > "вид" means "aspect (grammatical)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. was / (I / читав / Я / reading)
+   > [!answer] Я читав. (I was reading)
+   > (Я прочитав. (I read/finished))
+
+2. (She / писала / writing) / Вона / was
+   > [!answer] Вона писала. (She was writing)
+   > (Вона написала. (She wrote/finished))
+
+3. (I'm / reading) / Я / читаю
+   > [!answer] Я читаю. (I'm reading)
+   > (❌ (no present form))
+
+4. пише / Вона / (She's / writing)
+   > [!answer] Вона пише. (She's writing)
+   > (❌ (no present form))
+
+
 ---
 
 # Vocabulary

@@ -340,6 +340,60 @@ Create sentences with impersonal + dative:
 - Знаю вас.
 - Чую тебе.
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "заважати" mean?
+   - [x] to disturb
+   - [ ] to answer
+   - [ ] hard, difficult
+   - [ ] experience
+   > "заважати" means "to disturb"
+
+2. What does "відповідати" mean?
+   - [ ] experience
+   - [x] to answer
+   - [ ] hard, difficult
+   - [ ] to disturb
+   > "відповідати" means "to answer"
+
+3. What does "досвід" mean?
+   - [x] experience
+   - [ ] to answer
+   - [ ] to disturb
+   - [ ] hard, difficult
+   > "досвід" means "experience"
+
+4. What does "важко" mean?
+   - [ ] experience
+   - [ ] to disturb
+   - [ ] to answer
+   - [x] hard, difficult
+   > "важко" means "hard, difficult"
+
+5. What does "повідомляти" mean?
+   - [x] to inform
+   - [ ] to disturb
+   - [ ] experience
+   - [ ] to answer
+   > "повідомляти" means "to inform"
+
+6. What does "належати" mean?
+   - [ ] to disturb
+   - [ ] experience
+   - [x] to belong
+   - [ ] to answer
+   > "належати" means "to belong"
+
+
 ---
 
 # Vocabulary

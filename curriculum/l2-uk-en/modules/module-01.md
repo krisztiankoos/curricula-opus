@@ -275,6 +275,77 @@ Read these tricky words:
 - П
 - Ф
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "мама" is feminine.
+   > Correct! мама is feminine.
+
+- [x] "тато" is masculine.
+   > Correct! тато is masculine.
+
+- [x] "банк" is masculine.
+   > Correct! банк is masculine.
+
+- [x] "парк" is masculine.
+   > Correct! парк is masculine.
+
+- [ ] "кафе" is masculine.
+   > Incorrect. кафе is neuter.
+
+- [ ] "метро" is masculine.
+   > Incorrect. метро is neuter.
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "парк" mean?
+   - [ ] mom
+   - [ ] music
+   - [ ] hockey
+   - [x] park
+   > "парк" means "park"
+
+2. What does "хокей" mean?
+   - [x] hockey
+   - [ ] music
+   - [ ] mom
+   - [ ] park
+   > "хокей" means "hockey"
+
+3. What does "мама" mean?
+   - [ ] hockey
+   - [x] mom
+   - [ ] park
+   - [ ] music
+   > "мама" means "mom"
+
+4. What does "музика" mean?
+   - [ ] mom
+   - [ ] hockey
+   - [x] music
+   - [ ] park
+   > "музика" means "music"
+
+5. What does "футбол" mean?
+   - [ ] park
+   - [x] football
+   - [ ] hockey
+   - [ ] mom
+   > "футбол" means "football"
+
+6. What does "кафе" mean?
+   - [x] café
+   - [ ] park
+   - [ ] mom
+   - [ ] hockey
+   > "кафе" means "café"
+
+
 ---
 
 # Vocabulary

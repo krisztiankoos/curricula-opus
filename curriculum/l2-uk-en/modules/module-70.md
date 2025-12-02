@@ -377,6 +377,104 @@ Discuss environmental issues:
 - бджола
 - їжак
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "прогноз погоди" is masculine.
+   > Correct! прогноз погоди is masculine.
+
+- [x] "злива" is feminine.
+   > Correct! злива is feminine.
+
+- [x] "блискавка" is feminine.
+   > Correct! блискавка is feminine.
+
+- [x] "грім" is masculine.
+   > Correct! грім is masculine.
+
+- [ ] "град" is feminine.
+   > Incorrect. град is masculine.
+
+- [ ] "заметіль" is masculine.
+   > Incorrect. заметіль is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. йти ___ сніг)
+   > [!answer] (дощ
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "заповідник" mean?
+   - [ ] storm
+   - [ ] thunder
+   - [x] nature reserve
+   - [ ] wolf
+   > "заповідник" means "nature reserve"
+
+2. What does "вовк" mean?
+   - [ ] storm
+   - [ ] thunder
+   - [x] wolf
+   - [ ] nature reserve
+   > "вовк" means "wolf"
+
+3. What does "грім" mean?
+   - [x] thunder
+   - [ ] storm
+   - [ ] nature reserve
+   - [ ] wolf
+   > "грім" means "thunder"
+
+4. What does "буря" mean?
+   - [ ] wolf
+   - [ ] thunder
+   - [x] storm
+   - [ ] nature reserve
+   > "буря" means "storm"
+
+5. What does "блискавка" mean?
+   - [x] lightning
+   - [ ] wolf
+   - [ ] nature reserve
+   - [ ] thunder
+   > "блискавка" means "lightning"
+
+6. What does "сосна" mean?
+   - [ ] wolf
+   - [ ] thunder
+   - [x] pine
+   - [ ] nature reserve
+   > "сосна" means "pine"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. сніг) / йти / (дощ
+   > [!answer] йти (дощ, сніг)
+   > (to rain, snow)
+
+2. дме / дути / /
+   > [!answer] дути / дме
+   > (to blow (wind))
+
+3. луг / луки / /
+   > [!answer] луг / луки
+   > (meadow)
+
+
 ---
 
 # Vocabulary

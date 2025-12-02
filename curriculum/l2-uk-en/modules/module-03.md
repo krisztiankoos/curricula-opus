@@ -298,6 +298,83 @@ Look at these words and determine: **Group** and **Gender**.
 - курча
 - дівча
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "відміна" is feminine.
+   > Correct! відміна is feminine.
+
+- [x] "група" is feminine.
+   > Correct! група is feminine.
+
+- [x] "стіл" is masculine.
+   > Correct! стіл is masculine.
+
+- [x] "вікно" is neuter.
+   > Correct! вікно is neuter.
+
+- [ ] "книга" is masculine.
+   > Incorrect. книга is feminine.
+
+- [ ] "ніч" is masculine.
+   > Incorrect. ніч is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "сім'я" mean?
+   - [ ] declension
+   - [x] family
+   - [ ] group
+   - [ ] window
+   > "сім'я" means "family"
+
+2. What does "вікно" mean?
+   - [ ] family
+   - [ ] declension
+   - [ ] group
+   - [x] window
+   > "вікно" means "window"
+
+3. What does "група" mean?
+   - [ ] declension
+   - [ ] window
+   - [ ] family
+   - [x] group
+   > "група" means "group"
+
+4. What does "відміна" mean?
+   - [x] declension
+   - [ ] family
+   - [ ] window
+   - [ ] group
+   > "відміна" means "declension"
+
+5. What does "стіл" mean?
+   - [x] table
+   - [ ] window
+   - [ ] group
+   - [ ] family
+   > "стіл" means "table"
+
+6. What does "день" mean?
+   - [ ] group
+   - [x] day
+   - [ ] window
+   - [ ] family
+   > "день" means "day"
+
+
 ---
 
 # Vocabulary

@@ -381,6 +381,94 @@ Use the correct preposition + case:
 - під
 - за
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. ✓ Я ___ до парку.
+   > [!answer] йду
+
+2. ✓ Він ___ столу.
+   > [!answer] біля
+
+3. ✓ Ми ___ другом.
+   > [!answer] з
+
+4. ✓ ___ уроку.
+   > [!answer] Після
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "посеред" mean?
+   - [x] in the middle
+   - [ ] behind
+   - [ ] among
+   - [ ] under
+   > "посеред" means "in the middle"
+
+2. What does "під" mean?
+   - [x] under
+   - [ ] in the middle
+   - [ ] among
+   - [ ] behind
+   > "під" means "under"
+
+3. What does "позаду" mean?
+   - [ ] in the middle
+   - [ ] among
+   - [ ] under
+   - [x] behind
+   > "позаду" means "behind"
+
+4. What does "серед" mean?
+   - [ ] in the middle
+   - [x] among
+   - [ ] under
+   - [ ] behind
+   > "серед" means "among"
+
+5. What does "над" mean?
+   - [ ] behind
+   - [x] above
+   - [ ] in the middle
+   - [ ] under
+   > "над" means "above"
+
+6. What does "попереду" mean?
+   - [ ] in the middle
+   - [x] in front, ahead
+   - [ ] under
+   - [ ] behind
+   > "попереду" means "in front, ahead"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. до / Я / ✓ / парку / йду
+   > [!answer] ✓ Я йду до парку.
+   > (до + genitive)
+
+2. біля / ✓ / столу / Він
+   > [!answer] ✓ Він біля столу.
+   > (біля + genitive)
+
+3. ✓ / Ми / другом / з
+   > [!answer] ✓ Ми з другом.
+   > (з (with) + instrumental)
+
+4. ✓ / уроку / Після
+   > [!answer] ✓ Після уроку.
+   > (після + genitive)
+
+
 ---
 
 # Vocabulary

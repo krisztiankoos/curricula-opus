@@ -296,6 +296,84 @@ Describe your plans for the coming days:
 - скоро
 - пізніше
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Що плануєш ___ вихідні?
+   > [!answer] на
+
+2. Я ___ відпочивати.
+   > [!answer] буду
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "будемо" mean?
+   - [x] we will be
+   - [ ] will be
+   - [ ] next
+   - [ ] day after tomorrow
+   > "будемо" means "we will be"
+
+2. What does "післязавтра" mean?
+   - [ ] will be
+   - [ ] we will be
+   - [ ] next
+   - [x] day after tomorrow
+   > "післязавтра" means "day after tomorrow"
+
+3. What does "буде" mean?
+   - [ ] next
+   - [ ] we will be
+   - [x] will be
+   - [ ] day after tomorrow
+   > "буде" means "will be"
+
+4. What does "наступний" mean?
+   - [ ] will be
+   - [ ] day after tomorrow
+   - [ ] we will be
+   - [x] next
+   > "наступний" means "next"
+
+5. What does "будете" mean?
+   - [ ] day after tomorrow
+   - [ ] we will be
+   - [x] you will be
+   - [ ] will be
+   > "будете" means "you will be"
+
+6. What does "збиратися" mean?
+   - [x] to be going to
+   - [ ] we will be
+   - [ ] day after tomorrow
+   - [ ] will be
+   > "збиратися" means "to be going to"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. плануєш / Що / на / вихідні
+   > [!answer] Що плануєш на вихідні?
+   > (What are you planning for the weekend?)
+
+2. буду / Я / відпочивати
+   > [!answer] Я буду відпочивати.
+   > (I will rest.)
+
+3. котрій / Так / добре / О
+   > [!answer] Так, добре! О котрій?
+   > (Yes, okay! At what time?)
+
+
 ---
 
 # Vocabulary

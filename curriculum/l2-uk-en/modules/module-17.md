@@ -325,6 +325,114 @@ Answer these questions:
 - вода
 - молоко
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "їжа" is feminine.
+   > Correct! їжа is feminine.
+
+- [x] "сніданок" is masculine.
+   > Correct! сніданок is masculine.
+
+- [x] "обід" is masculine.
+   > Correct! обід is masculine.
+
+- [x] "вечеря" is feminine.
+   > Correct! вечеря is feminine.
+
+- [ ] "картопля" is masculine.
+   > Incorrect. картопля is feminine.
+
+- [ ] "помідор" is feminine.
+   > Incorrect. помідор is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Що ___ порекомендуєте?
+   > [!answer] ви
+
+2. Дайте, ___ ласка...
+   > [!answer] будь
+
+3. Я ___ люблю...
+   > [!answer] не
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "борщ" mean?
+   - [ ] fish
+   - [ ] lunch
+   - [x] borscht
+   - [ ] dumplings
+   > "борщ" means "borscht"
+
+2. What does "риба" mean?
+   - [ ] borscht
+   - [x] fish
+   - [ ] dumplings
+   - [ ] lunch
+   > "риба" means "fish"
+
+3. What does "вареники" mean?
+   - [x] dumplings
+   - [ ] borscht
+   - [ ] fish
+   - [ ] lunch
+   > "вареники" means "dumplings"
+
+4. What does "обід" mean?
+   - [ ] borscht
+   - [ ] dumplings
+   - [x] lunch
+   - [ ] fish
+   > "обід" means "lunch"
+
+5. What does "огірок" mean?
+   - [x] cucumber
+   - [ ] borscht
+   - [ ] fish
+   - [ ] dumplings
+   > "огірок" means "cucumber"
+
+6. What does "сніданок" mean?
+   - [ ] borscht
+   - [ ] dumplings
+   - [x] breakfast
+   - [ ] fish
+   > "сніданок" means "breakfast"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. порекомендуєте / Що / ви
+   > [!answer] Що ви порекомендуєте?
+   > (What do you recommend?)
+
+2. Дайте / ласка / будь
+   > [!answer] Дайте, будь ласка...
+   > (Give me, please...)
+
+3. не / люблю / Я
+   > [!answer] Я не люблю...
+   > (I don't like...)
+
+4. улюблена / - / Моя /  / їжа
+   > [!answer] Моя улюблена їжа - ...
+   > (My favorite food is...)
+
+
 ---
 
 # Vocabulary

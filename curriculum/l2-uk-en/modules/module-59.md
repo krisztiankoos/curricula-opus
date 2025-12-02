@@ -350,6 +350,60 @@ Create sentences about news:
 - називається
 - готується
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "закрито" mean?
+   - [ ] to be sold
+   - [ ] done, made
+   - [ ] allowed
+   - [x] closed
+   > "закрито" means "closed"
+
+2. What does "зроблено" mean?
+   - [x] done, made
+   - [ ] closed
+   - [ ] to be sold
+   - [ ] allowed
+   > "зроблено" means "done, made"
+
+3. What does "дозволено" mean?
+   - [x] allowed
+   - [ ] to be sold
+   - [ ] done, made
+   - [ ] closed
+   > "дозволено" means "allowed"
+
+4. What does "продаватися" mean?
+   - [x] to be sold
+   - [ ] allowed
+   - [ ] closed
+   - [ ] done, made
+   > "продаватися" means "to be sold"
+
+5. What does "слід" mean?
+   - [x] one should
+   - [ ] closed
+   - [ ] done, made
+   - [ ] allowed
+   > "слід" means "one should"
+
+6. What does "називатися" mean?
+   - [ ] closed
+   - [ ] allowed
+   - [x] to be called
+   - [ ] done, made
+   > "називатися" means "to be called"
+
+
 ---
 
 # Vocabulary

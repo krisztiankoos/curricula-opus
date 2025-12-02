@@ -373,6 +373,63 @@ Make comparatives from these adjectives:
 - поганий → гірший
 - високий → вищий
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Чим більше, ___ краще
+   > [!answer] тим
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "кращий" mean?
+   - [ ] worse
+   - [x] better
+   - [ ] faster
+   - [ ] younger
+   > "кращий" means "better"
+
+2. What does "гірший" mean?
+   - [x] worse
+   - [ ] faster
+   - [ ] better
+   - [ ] younger
+   > "гірший" means "worse"
+
+3. What does "молодший" mean?
+   - [ ] faster
+   - [ ] worse
+   - [ ] better
+   - [x] younger
+   > "молодший" means "younger"
+
+4. What does "швидше" mean?
+   - [ ] better
+   - [x] faster
+   - [ ] younger
+   - [ ] worse
+   > "швидше" means "faster"
+
+5. What does "більше" mean?
+   - [x] more
+   - [ ] better
+   - [ ] worse
+   - [ ] younger
+   > "більше" means "more"
+
+6. What does "менше" mean?
+   - [x] less
+   - [ ] younger
+   - [ ] better
+   - [ ] worse
+   > "менше" means "less"
+
+
 ---
 
 # Vocabulary

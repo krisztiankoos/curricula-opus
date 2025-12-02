@@ -389,6 +389,83 @@ Match the action:
 - знижка
 - здача
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "супермаркет" is masculine.
+   > Correct! супермаркет is masculine.
+
+- [x] "торговий центр" is masculine.
+   > Correct! торговий центр is masculine.
+
+- [x] "універмаг" is masculine.
+   > Correct! універмаг is masculine.
+
+- [x] "секонд-хенд" is masculine.
+   > Correct! секонд-хенд is masculine.
+
+- [ ] "булочна" is masculine.
+   > Incorrect. булочна is feminine.
+
+- [ ] "кондитерська" is masculine.
+   > Incorrect. кондитерська is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "майстерня" mean?
+   - [ ] pet store
+   - [ ] to exchange
+   - [x] repair shop
+   - [ ] hair salon
+   > "майстерня" means "repair shop"
+
+2. What does "перукарня" mean?
+   - [x] hair salon
+   - [ ] repair shop
+   - [ ] to exchange
+   - [ ] pet store
+   > "перукарня" means "hair salon"
+
+3. What does "зоомагазин" mean?
+   - [x] pet store
+   - [ ] repair shop
+   - [ ] to exchange
+   - [ ] hair salon
+   > "зоомагазин" means "pet store"
+
+4. What does "обмінювати" mean?
+   - [ ] pet store
+   - [x] to exchange
+   - [ ] repair shop
+   - [ ] hair salon
+   > "обмінювати" means "to exchange"
+
+5. What does "кондитерська" mean?
+   - [ ] repair shop
+   - [ ] hair salon
+   - [x] confectionery
+   - [ ] pet store
+   > "кондитерська" means "confectionery"
+
+6. What does "автосервіс" mean?
+   - [x] car service
+   - [ ] repair shop
+   - [ ] hair salon
+   - [ ] pet store
+   > "автосервіс" means "car service"
+
+
 ---
 
 # Vocabulary

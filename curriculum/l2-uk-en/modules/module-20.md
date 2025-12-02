@@ -308,6 +308,33 @@ You're a tourist in Kyiv. Practice:
 - знижка
 - каса
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Я ___ книгу
+   > [!answer] бачу
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. книгу / Я / бачу
+   > [!answer] Я бачу книгу
+   > (Accusative)
+
+2. Книга / на / столі
+   > [!answer] Книга на столі
+   > (Locative)
+
+3. Я / каву / люблю
+   > [!answer] Я люблю каву
+   > (Accusative)
+
+
 ---
 
 # Vocabulary Review

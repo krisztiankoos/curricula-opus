@@ -370,6 +370,105 @@ Describe your travel plans:
 - митниця
 - ручна поклажа
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "потяг" is masculine.
+   > Correct! потяг is masculine.
+
+- [x] "вокзал" is masculine.
+   > Correct! вокзал is masculine.
+
+- [x] "платформа" is feminine.
+   > Correct! платформа is feminine.
+
+- [x] "відправлення" is neuter.
+   > Correct! відправлення is neuter.
+
+- [ ] "прибуття" is masculine.
+   > Incorrect. прибуття is neuter.
+
+- [ ] "затримка" is masculine.
+   > Incorrect. затримка is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "потяг" mean?
+   - [ ] departure
+   - [ ] arrival
+   - [ ] compartment
+   - [x] train
+   > "потяг" means "train"
+
+2. What does "прибуття" mean?
+   - [x] arrival
+   - [ ] departure
+   - [ ] train
+   - [ ] compartment
+   > "прибуття" means "arrival"
+
+3. What does "відправлення" mean?
+   - [x] departure
+   - [ ] arrival
+   - [ ] compartment
+   - [ ] train
+   > "відправлення" means "departure"
+
+4. What does "купе" mean?
+   - [ ] departure
+   - [ ] train
+   - [x] compartment
+   - [ ] arrival
+   > "купе" means "compartment"
+
+5. What does "вокзал" mean?
+   - [ ] departure
+   - [x] train station
+   - [ ] train
+   - [ ] arrival
+   > "вокзал" means "train station"
+
+6. What does "провідник" mean?
+   - [x] conductor
+   - [ ] arrival
+   - [ ] departure
+   - [ ] train
+   > "провідник" means "conductor"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. (на / посадку) / вихід
+   > [!answer] вихід (на посадку)
+   > (gate)
+
+2. один / В / бік
+   > [!answer] В один бік
+   > (One way)
+
+3. і / Туди / назад
+   > [!answer] Туди і назад
+   > (Round trip)
+
+4. котрій / О / відправлення
+   > [!answer] О котрій відправлення?
+   > (What time departure?)
+
+
 ---
 
 # Vocabulary

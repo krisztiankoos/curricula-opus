@@ -356,6 +356,60 @@ Create mini-dialogues:
 - медсестрою
 - актрисою
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "художник" mean?
+   - [x] artist
+   - [ ] entrepreneur
+   - [ ] specialist
+   - [ ] to turn out
+   > "художник" means "artist"
+
+2. What does "підприємець" mean?
+   - [ ] specialist
+   - [ ] artist
+   - [x] entrepreneur
+   - [ ] to turn out
+   > "підприємець" means "entrepreneur"
+
+3. What does "виявитися" mean?
+   - [ ] artist
+   - [ ] specialist
+   - [ ] entrepreneur
+   - [x] to turn out
+   > "виявитися" means "to turn out"
+
+4. What does "спеціаліст" mean?
+   - [ ] to turn out
+   - [ ] entrepreneur
+   - [x] specialist
+   - [ ] artist
+   > "спеціаліст" means "specialist"
+
+5. What does "професіонал" mean?
+   - [ ] entrepreneur
+   - [x] professional
+   - [ ] artist
+   - [ ] to turn out
+   > "професіонал" means "professional"
+
+6. What does "програміст" mean?
+   - [x] programmer
+   - [ ] entrepreneur
+   - [ ] artist
+   - [ ] to turn out
+   > "програміст" means "programmer"
+
+
 ---
 
 # Vocabulary

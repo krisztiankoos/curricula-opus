@@ -315,6 +315,60 @@ Example:
 - квартал
 - перехрестя
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "далеко" mean?
+   - [ ] to cross
+   - [ ] hospital
+   - [ ] pharmacy
+   - [x] far
+   > "далеко" means "far"
+
+2. What does "лікарня" mean?
+   - [ ] far
+   - [ ] to cross
+   - [x] hospital
+   - [ ] pharmacy
+   > "лікарня" means "hospital"
+
+3. What does "перейти" mean?
+   - [ ] far
+   - [x] to cross
+   - [ ] hospital
+   - [ ] pharmacy
+   > "перейти" means "to cross"
+
+4. What does "аптека" mean?
+   - [ ] to cross
+   - [ ] far
+   - [x] pharmacy
+   - [ ] hospital
+   > "аптека" means "pharmacy"
+
+5. What does "ріг" mean?
+   - [x] corner
+   - [ ] to cross
+   - [ ] far
+   - [ ] hospital
+   > "ріг" means "corner"
+
+6. What does "назад" mean?
+   - [ ] hospital
+   - [ ] to cross
+   - [ ] far
+   - [x] back
+   > "назад" means "back"
+
+
 ---
 
 # Vocabulary

@@ -407,6 +407,54 @@ Practice giving directions using prefixed verbs:
 - перенести
 - перебігти
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "обійти" mean?
+   - [x] to go around
+   - [ ] to reach (on foot)
+   - [ ] to drive into
+   - [ ] to come (habitually)
+   > "обійти" means "to go around"
+
+2. What does "дійти" mean?
+   - [ ] to go around
+   - [x] to reach (on foot)
+   - [ ] to come (habitually)
+   - [ ] to drive into
+   > "дійти" means "to reach (on foot)"
+
+3. What does "в'їхати" mean?
+   - [ ] to go around
+   - [ ] to come (habitually)
+   - [x] to drive into
+   - [ ] to reach (on foot)
+   > "в'їхати" means "to drive into"
+
+4. What does "приходити" mean?
+   - [ ] to drive into
+   - [x] to come (habitually)
+   - [ ] to go around
+   - [ ] to reach (on foot)
+   > "приходити" means "to come (habitually)"
+
+5. What does "світлофор" mean?
+   - [x] traffic light
+   - [ ] to go around
+   - [ ] to reach (on foot)
+   - [ ] to drive into
+   > "світлофор" means "traffic light"
+
+6. What does "напрямок" mean?
+   - [ ] to go around
+   - [ ] to reach (on foot)
+   - [x] direction
+   - [ ] to drive into
+   > "напрямок" means "direction"
+
+
 ---
 
 # Vocabulary

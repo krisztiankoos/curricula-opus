@@ -342,6 +342,82 @@ Use reflexive verbs for introductions:
 - зустрічатися (зустрічати)
 - знайомитися (знайомити)
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "митися" mean?
+   - [x] to wash oneself
+   - [ ] to comb one's hair
+   - [ ] to laugh
+   - [ ] to try
+   > "митися" means "to wash oneself"
+
+2. What does "зачісуватися" mean?
+   - [ ] to try
+   - [x] to comb one's hair
+   - [ ] to laugh
+   - [ ] to wash oneself
+   > "зачісуватися" means "to comb one's hair"
+
+3. What does "сміятися" mean?
+   - [x] to laugh
+   - [ ] to try
+   - [ ] to wash oneself
+   - [ ] to comb one's hair
+   > "сміятися" means "to laugh"
+
+4. What does "намагатися" mean?
+   - [ ] to laugh
+   - [x] to try
+   - [ ] to wash oneself
+   - [ ] to comb one's hair
+   > "намагатися" means "to try"
+
+5. What does "собі" mean?
+   - [ ] to comb one's hair
+   - [ ] to wash oneself
+   - [ ] to laugh
+   - [x] oneself (dat/loc)
+   > "собі" means "oneself (dat/loc)"
+
+6. What does "боятися" mean?
+   - [ ] to wash oneself
+   - [x] to be afraid
+   - [ ] to comb one's hair
+   - [ ] to laugh
+   > "боятися" means "to be afraid"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. в / не / собі
+   > [!answer] не в собі
+   > (not oneself (upset))
+
+2. до / себе / прийти
+   > [!answer] прийти до себе
+   > (to come to one's senses)
+
+3. consonants: / -ся / After
+   > [!answer] After consonants: -ся
+   > (митися (to wash oneself) → я **миюся**)
+
+4. After / -сь / vowels:
+   > [!answer] After vowels: -сь
+   > (миюся → ми **миємось** (colloquial: миємося))
+
+
 ---
 
 # Vocabulary

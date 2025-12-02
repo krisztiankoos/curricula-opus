@@ -401,6 +401,83 @@ Give advice to someone looking for work:
 - суддя
 - поліцейський
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "адвокат" is masculine.
+   > Correct! адвокат is masculine.
+
+- [x] "викладач" is masculine.
+   > Correct! викладач is masculine.
+
+- [x] "науковець" is masculine.
+   > Correct! науковець is masculine.
+
+- [x] "хірург" is masculine.
+   > Correct! хірург is masculine.
+
+- [ ] "стоматолог" is feminine.
+   > Incorrect. стоматолог is masculine.
+
+- [ ] "перукар" is feminine.
+   > Incorrect. перукар is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "нарада" mean?
+   - [ ] attorney
+   - [ ] report
+   - [ ] to hire
+   - [x] meeting
+   > "нарада" means "meeting"
+
+2. What does "звіт" mean?
+   - [ ] to hire
+   - [x] report
+   - [ ] attorney
+   - [ ] meeting
+   > "звіт" means "report"
+
+3. What does "наймати" mean?
+   - [x] to hire
+   - [ ] meeting
+   - [ ] attorney
+   - [ ] report
+   > "наймати" means "to hire"
+
+4. What does "адвокат" mean?
+   - [x] attorney
+   - [ ] meeting
+   - [ ] to hire
+   - [ ] report
+   > "адвокат" means "attorney"
+
+5. What does "науковець" mean?
+   - [ ] meeting
+   - [x] scientist
+   - [ ] report
+   - [ ] to hire
+   > "науковець" means "scientist"
+
+6. What does "перукар" mean?
+   - [x] hairdresser
+   - [ ] meeting
+   - [ ] report
+   - [ ] to hire
+   > "перукар" means "hairdresser"
+
+
 ---
 
 # Vocabulary

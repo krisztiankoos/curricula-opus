@@ -303,6 +303,54 @@ Practice these dialogues:
 - Вона любить мене.
 - Вони знають нас.
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "сказати" mean?
+   - [ ] to me
+   - [x] to tell (pf)
+   - [ ] to gift (pf)
+   - [ ] to you
+   > "сказати" means "to tell (pf)"
+
+2. What does "мені" mean?
+   - [ ] to tell (pf)
+   - [x] to me
+   - [ ] to gift (pf)
+   - [ ] to you
+   > "мені" means "to me"
+
+3. What does "подарувати" mean?
+   - [ ] to tell (pf)
+   - [ ] to me
+   - [ ] to you
+   - [x] to gift (pf)
+   > "подарувати" means "to gift (pf)"
+
+4. What does "тобі" mean?
+   - [ ] to tell (pf)
+   - [ ] to gift (pf)
+   - [x] to you
+   - [ ] to me
+   > "тобі" means "to you"
+
+5. What does "їй" mean?
+   - [ ] to gift (pf)
+   - [ ] to tell (pf)
+   - [x] to her
+   - [ ] to me
+   > "їй" means "to her"
+
+6. What does "їм" mean?
+   - [ ] to tell (pf)
+   - [x] to them
+   - [ ] to me
+   - [ ] to gift (pf)
+   > "їм" means "to them"
+
+
 ---
 
 # Vocabulary

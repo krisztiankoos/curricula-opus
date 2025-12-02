@@ -365,6 +365,104 @@ Try to get: a lower price, negotiate.
 - ноутбук
 - зарядка
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "ремінь" is masculine.
+   > Correct! ремінь is masculine.
+
+- [x] "акція" is feminine.
+   > Correct! акція is feminine.
+
+- [x] "розпродаж" is masculine.
+   > Correct! розпродаж is masculine.
+
+- [x] "батарея" is feminine.
+   > Correct! батарея is feminine.
+
+- [ ] "пам'ять" is masculine.
+   > Incorrect. пам'ять is feminine.
+
+- [ ] "екран" is feminine.
+   > Incorrect. екран is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Чи ___ знижки?
+   > [!answer] є
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "водонепроникний" mean?
+   - [x] waterproof
+   - [ ] charger
+   - [ ] wireless
+   - [ ] defect
+   > "водонепроникний" means "waterproof"
+
+2. What does "дефект" mean?
+   - [x] defect
+   - [ ] wireless
+   - [ ] waterproof
+   - [ ] charger
+   > "дефект" means "defect"
+
+3. What does "зарядка" mean?
+   - [ ] wireless
+   - [ ] defect
+   - [x] charger
+   - [ ] waterproof
+   > "зарядка" means "charger"
+
+4. What does "бездротовий" mean?
+   - [ ] waterproof
+   - [x] wireless
+   - [ ] charger
+   - [ ] defect
+   > "бездротовий" means "wireless"
+
+5. What does "розпродаж" mean?
+   - [ ] waterproof
+   - [x] sale (clearance)
+   - [ ] charger
+   - [ ] defect
+   > "розпродаж" means "sale (clearance)"
+
+6. What does "навушники" mean?
+   - [ ] defect
+   - [ ] waterproof
+   - [ ] charger
+   - [x] headphones
+   > "навушники" means "headphones"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. є / знижки / Чи
+   > [!answer] Чи є знижки?
+   > (Any discounts?)
+
+2. дешевше / можна / Чи
+   > [!answer] Чи можна дешевше?
+   > (Can it be cheaper?)
+
+3. батарея / тримає / Скільки
+   > [!answer] Скільки тримає батарея?
+   > (How long does battery last?)
+
+
 ---
 
 # Vocabulary

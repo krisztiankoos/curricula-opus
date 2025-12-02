@@ -332,6 +332,88 @@ Present both sides:
 - Навпаки
 - Я не можу погодитися
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. тому що ___ бо
+   > [!answer] /
+
+2. справа в ___ що
+   > [!answer] тому
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "отже" mean?
+   - [ ] to doubt
+   - [ ] sure, certain
+   - [x] so, therefore
+   - [ ] in general
+   > "отже" means "so, therefore"
+
+2. What does "впевнений" mean?
+   - [ ] to doubt
+   - [x] sure, certain
+   - [ ] so, therefore
+   - [ ] in general
+   > "впевнений" means "sure, certain"
+
+3. What does "загалом" mean?
+   - [ ] so, therefore
+   - [x] in general
+   - [ ] to doubt
+   - [ ] sure, certain
+   > "загалом" means "in general"
+
+4. What does "сумніватися" mean?
+   - [ ] so, therefore
+   - [ ] in general
+   - [x] to doubt
+   - [ ] sure, certain
+   > "сумніватися" means "to doubt"
+
+5. What does "переконаний" mean?
+   - [x] convinced
+   - [ ] so, therefore
+   - [ ] in general
+   - [ ] sure, certain
+   > "переконаний" means "convinced"
+
+6. What does "згодна" mean?
+   - [x] agree (f)
+   - [ ] in general
+   - [ ] so, therefore
+   - [ ] sure, certain
+   > "згодна" means "agree (f)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. бо / що / тому / /
+   > [!answer] тому що / бо
+   > (because)
+
+2. що / тому / в / справа
+   > [!answer] справа в тому, що
+   > (the thing is that)
+
+3. думаю / що / Я
+   > [!answer] Я думаю, що
+   > (I think that)
+
+4. На / думку / мою
+   > [!answer] На мою думку
+   > (In my opinion)
+
+
 ---
 
 # Vocabulary

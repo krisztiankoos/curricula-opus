@@ -307,6 +307,105 @@ Practice the complete café experience:
 - Можна карткою?
 - Решта - ваша.
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "меню" is neuter.
+   > Correct! меню is neuter.
+
+- [x] "рахунок" is masculine.
+   > Correct! рахунок is masculine.
+
+- [x] "столик" is masculine.
+   > Correct! столик is masculine.
+
+- [ ] "місце" is masculine.
+   > Incorrect. місце is neuter.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Без цукру, ___ ласка.
+   > [!answer] будь
+
+2. Гаряче ___ холодне.
+   > [!answer] /
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "холодний" mean?
+   - [x] cold
+   - [ ] to go
+   - [ ] to take
+   - [ ] may, can
+   > "холодний" means "cold"
+
+2. What does "взяти" mean?
+   - [ ] may, can
+   - [ ] cold
+   - [x] to take
+   - [ ] to go
+   > "взяти" means "to take"
+
+3. What does "на виніс" mean?
+   - [ ] to take
+   - [ ] may, can
+   - [x] to go
+   - [ ] cold
+   > "на виніс" means "to go"
+
+4. What does "можна" mean?
+   - [x] may, can
+   - [ ] cold
+   - [ ] to take
+   - [ ] to go
+   > "можна" means "may, can"
+
+5. What does "чайові" mean?
+   - [ ] to take
+   - [x] tip
+   - [ ] cold
+   - [ ] to go
+   > "чайові" means "tip"
+
+6. What does "замовляти" mean?
+   - [x] to order
+   - [ ] cold
+   - [ ] to go
+   - [ ] to take
+   > "замовляти" means "to order"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Без / ласка / цукру / будь
+   > [!answer] Без цукру, будь ласка.
+   > (Without sugar, please.)
+
+2. холодне / / / Гаряче
+   > [!answer] Гаряче / холодне.
+   > (Hot / cold.)
+
+3. мене / на / алергія / У
+   > [!answer] У мене алергія на...
+   > (I'm allergic to...)
+
+4. Рахунок / будь / ласка
+   > [!answer] Рахунок, будь ласка!
+   > (The bill, please!)
+
+
 ---
 
 # Vocabulary

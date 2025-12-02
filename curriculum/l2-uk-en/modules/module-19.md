@@ -310,6 +310,94 @@ Use: Скільки коштує? Чи є...? Можна...? Я візьму...
 - шампунь
 - крем
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Скільки ___ коштує?
+   > [!answer] це
+
+2. Це ___ продажу?
+   > [!answer] в
+
+3. Я ___ це.
+   > [!answer] візьму
+
+4. Мені ___ підходить.
+   > [!answer] не
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "продавати" mean?
+   - [ ] white
+   - [x] to sell
+   - [ ] small
+   - [ ] bigger
+   > "продавати" means "to sell"
+
+2. What does "маленький" mean?
+   - [ ] to sell
+   - [x] small
+   - [ ] white
+   - [ ] bigger
+   > "маленький" means "small"
+
+3. What does "більший" mean?
+   - [ ] small
+   - [ ] to sell
+   - [ ] white
+   - [x] bigger
+   > "більший" means "bigger"
+
+4. What does "білий" mean?
+   - [ ] bigger
+   - [ ] to sell
+   - [ ] small
+   - [x] white
+   > "білий" means "white"
+
+5. What does "примірочна" mean?
+   - [x] fitting room
+   - [ ] small
+   - [ ] bigger
+   - [ ] to sell
+   > "примірочна" means "fitting room"
+
+6. What does "великий" mean?
+   - [ ] small
+   - [x] big, large
+   - [ ] to sell
+   - [ ] bigger
+   > "великий" means "big, large"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. це / Скільки / коштує
+   > [!answer] Скільки це коштує?
+   > (How much is this?)
+
+2. продажу / Це / в
+   > [!answer] Це в продажу?
+   > (Is this on sale?)
+
+3. Я / візьму / це
+   > [!answer] Я візьму це.
+   > (I'll take this.)
+
+4. підходить / не / Мені
+   > [!answer] Мені не підходить.
+   > (It doesn't suit me.)
+
+
 ---
 
 # Vocabulary

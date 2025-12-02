@@ -367,6 +367,97 @@ Transform to polite requests:
 - Якби він прийшов, почали б.
 - Якби хотіла, допомогла б.
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Якщо ___ час
+   > [!answer] матиму
+
+2. Якби ___ час
+   > [!answer] мав
+
+3. Якщо ___ прийде
+   > [!answer] він
+
+4. Якби ___ прийшов
+   > [!answer] він
+
+5. Якщо ___ буде
+   > [!answer] погода
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "можливість" mean?
+   - [ ] unfortunately
+   - [x] possibility
+   - [ ] to imagine (impf)
+   - [ ] would like (f)
+   > "можливість" means "possibility"
+
+2. What does "уявляти" mean?
+   - [ ] possibility
+   - [ ] unfortunately
+   - [x] to imagine (impf)
+   - [ ] would like (f)
+   > "уявляти" means "to imagine (impf)"
+
+3. What does "хотіла б" mean?
+   - [ ] possibility
+   - [ ] unfortunately
+   - [x] would like (f)
+   - [ ] to imagine (impf)
+   > "хотіла б" means "would like (f)"
+
+4. What does "на жаль" mean?
+   - [ ] possibility
+   - [ ] would like (f)
+   - [ ] to imagine (impf)
+   - [x] unfortunately
+   > "на жаль" means "unfortunately"
+
+5. What does "якби" mean?
+   - [x] if (unreal)
+   - [ ] would like (f)
+   - [ ] possibility
+   - [ ] to imagine (impf)
+   > "якби" means "if (unreal)"
+
+6. What does "уявний" mean?
+   - [x] imaginary, hypothetical
+   - [ ] possibility
+   - [ ] would like (f)
+   - [ ] to imagine (impf)
+   > "уявний" means "imaginary, hypothetical"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. матиму / Якщо / час
+   > [!answer] Якщо матиму час
+   > (real (possible))
+
+2. час / Якби / мав
+   > [!answer] Якби мав час
+   > (unreal (hypothetical))
+
+3. він / Якщо / прийде
+   > [!answer] Якщо він прийде
+   > (real)
+
+4. прийшов / він / Якби
+   > [!answer] Якби він прийшов
+   > (unreal)
+
+
 ---
 
 # Vocabulary

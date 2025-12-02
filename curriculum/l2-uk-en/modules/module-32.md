@@ -354,6 +354,95 @@ Create sentences using: Subject + дати/показати/сказати + Obj
 - студентам
 - колегам
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "клієнт" is masculine.
+   > Correct! клієнт is masculine.
+
+- [x] "повідомлення" is neuter.
+   > Correct! повідомлення is neuter.
+
+- [x] "запрошення" is neuter.
+   > Correct! запрошення is neuter.
+
+- [x] "відповідь" is feminine.
+   > Correct! відповідь is feminine.
+
+- [ ] "допомога" is masculine.
+   > Incorrect. допомога is feminine.
+
+- [ ] "порада" is masculine.
+   > Incorrect. порада is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Consonant changes ___ -і:
+   > [!answer] before
+
+2. > > The -ові ending developed in Ukrainian during the medieval period (12th-14th centuries) and became a distinctive marker of the language. While Russian uses only -у, ___ proudly maintains both. After Ukraine's independence, using -ові became associated with conscious Ukrainian language use - it's grammar with identity! ### Feminine Dative: -і Feminine nouns change
+   > [!answer] Ukrainian
+
+3. здоров'я! (Wish grandma health!) > > This is extremely common ___ everyday Ukrainian conversations! ### Neuter Dative: -у/-ові Neuter nouns take
+   > [!answer] in
+
+4. (baby), or abstract concepts like "місту потрібні дороги" (the city needs ___ ### Plural Dative: -ам/-ям All genders form plural dative with
+   > [!answer] roads)
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "повідомлення" mean?
+   - [ ] support
+   - [ ] advice
+   - [ ] client
+   - [x] message
+   > "повідомлення" means "message"
+
+2. What does "клієнт" mean?
+   - [ ] message
+   - [x] client
+   - [ ] advice
+   - [ ] support
+   > "клієнт" means "client"
+
+3. What does "підтримка" mean?
+   - [x] support
+   - [ ] message
+   - [ ] advice
+   - [ ] client
+   > "підтримка" means "support"
+
+4. What does "порада" mean?
+   - [ ] message
+   - [x] advice
+   - [ ] client
+   - [ ] support
+   > "порада" means "advice"
+
+5. What does "запрошення" mean?
+   - [ ] message
+   - [ ] support
+   - [x] invitation
+   - [ ] client
+   > "запрошення" means "invitation"
+
+6. What does "отримувач" mean?
+   - [ ] message
+   - [ ] support
+   - [x] recipient
+   - [ ] client
+   > "отримувач" means "recipient"
+
+
 ---
 
 # Vocabulary

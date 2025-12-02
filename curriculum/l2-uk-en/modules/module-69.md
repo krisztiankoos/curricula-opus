@@ -394,6 +394,83 @@ Describe your weekly routine:
 - мило
 - пральна машина
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "диван" is masculine.
+   > Correct! диван is masculine.
+
+- [x] "крісло" is neuter.
+   > Correct! крісло is neuter.
+
+- [x] "журнальний столик" is masculine.
+   > Correct! журнальний столик is masculine.
+
+- [x] "килим" is masculine.
+   > Correct! килим is masculine.
+
+- [ ] "штори" is masculine.
+   > Incorrect. штори is undefined.
+
+- [ ] "матрац" is feminine.
+   > Incorrect. матрац is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "прибирати" mean?
+   - [x] to clean
+   - [ ] mirror
+   - [ ] to move
+   - [ ] blanket
+   > "прибирати" means "to clean"
+
+2. What does "переїжджати" mean?
+   - [x] to move
+   - [ ] to clean
+   - [ ] blanket
+   - [ ] mirror
+   > "переїжджати" means "to move"
+
+3. What does "ковдра" mean?
+   - [x] blanket
+   - [ ] to clean
+   - [ ] to move
+   - [ ] mirror
+   > "ковдра" means "blanket"
+
+4. What does "дзеркало" mean?
+   - [ ] to clean
+   - [x] mirror
+   - [ ] to move
+   - [ ] blanket
+   > "дзеркало" means "mirror"
+
+5. What does "обладнаний" mean?
+   - [ ] to clean
+   - [ ] blanket
+   - [x] furnished
+   - [ ] to move
+   > "обладнаний" means "furnished"
+
+6. What does "шухляда" mean?
+   - [ ] blanket
+   - [x] drawer
+   - [ ] to move
+   - [ ] to clean
+   > "шухляда" means "drawer"
+
+
 ---
 
 # Vocabulary

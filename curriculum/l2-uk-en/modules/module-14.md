@@ -293,6 +293,97 @@ Describe using possessives:
 - його
 - її
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Його (his/its) ___ NEVER changes!
+   > [!answer] -
+
+2. Її (her) ___ NEVER changes!
+   > [!answer] -
+
+3. Чий ___ телефон?
+   > [!answer] це
+
+4. Це ___ сумка?
+   > [!answer] твоя
+
+5. Ні, це ___ сумка.
+   > [!answer] її
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "родина" mean?
+   - [x] family
+   - [ ] one's own (m)
+   - [ ] thing
+   - [ ] whose (m)
+   > "родина" means "family"
+
+2. What does "річ" mean?
+   - [ ] one's own (m)
+   - [ ] family
+   - [ ] whose (m)
+   - [x] thing
+   > "річ" means "thing"
+
+3. What does "чий" mean?
+   - [ ] family
+   - [x] whose (m)
+   - [ ] thing
+   - [ ] one's own (m)
+   > "чий" means "whose (m)"
+
+4. What does "свій" mean?
+   - [x] one's own (m)
+   - [ ] whose (m)
+   - [ ] family
+   - [ ] thing
+   > "свій" means "one's own (m)"
+
+5. What does "машина" mean?
+   - [ ] thing
+   - [ ] whose (m)
+   - [ ] family
+   - [x] car
+   > "машина" means "car"
+
+6. What does "їхній" mean?
+   - [x] their (m)
+   - [ ] family
+   - [ ] thing
+   - [ ] whose (m)
+   > "їхній" means "their (m)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. (his/its) / NEVER / Його / changes / -
+   > [!answer] Його (his/its) - NEVER changes!
+   > (його брат (his brother))
+
+2. changes / NEVER / Її / (her) / -
+   > [!answer] Її (her) - NEVER changes!
+   > (її брат (her brother))
+
+3. це / телефон / Чий
+   > [!answer] Чий це телефон?
+   > (Whose phone is this?)
+
+4. Це / твоя / сумка
+   > [!answer] Це твоя сумка?
+   > (Is this your bag?)
+
+
 ---
 
 # Vocabulary

@@ -365,6 +365,54 @@ Notice:
 - "ще не" (not yet)
 - sequence of events
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "збирати" mean?
+   - [ ] after
+   - [x] to gather (impf)
+   - [ ] before
+   - [ ] suddenly
+   > "збирати" means "to gather (impf)"
+
+2. What does "після того як" mean?
+   - [x] after
+   - [ ] suddenly
+   - [ ] to gather (impf)
+   - [ ] before
+   > "після того як" means "after"
+
+3. What does "перш ніж" mean?
+   - [ ] suddenly
+   - [ ] to gather (impf)
+   - [x] before
+   - [ ] after
+   > "перш ніж" means "before"
+
+4. What does "раптом" mean?
+   - [ ] before
+   - [ ] to gather (impf)
+   - [x] suddenly
+   - [ ] after
+   > "раптом" means "suddenly"
+
+5. What does "зібрати" mean?
+   - [ ] before
+   - [ ] to gather (impf)
+   - [x] to gather (perf)
+   - [ ] after
+   > "зібрати" means "to gather (perf)"
+
+6. What does "поки" mean?
+   - [ ] after
+   - [ ] to gather (impf)
+   - [x] while
+   - [ ] before
+   > "поки" means "while"
+
+
 ---
 
 # Vocabulary

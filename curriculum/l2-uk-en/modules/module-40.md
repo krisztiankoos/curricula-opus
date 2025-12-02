@@ -386,6 +386,46 @@ Example:
 - цікавитися
 - займатися
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. у ___ (loc)
+   > [!answer] парку
+
+2. на ___ (loc)
+   > [!answer] столі
+
+3. під ___ (instr)
+   > [!answer] столом
+
+4. за ___ (instr)
+   > [!answer] будинком
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. (loc) / у / парку
+   > [!answer] у парку (loc)
+   > (у парк (acc))
+
+2. столі / на / (loc)
+   > [!answer] на столі (loc)
+   > (на стіл (acc))
+
+3. столом / під / (instr)
+   > [!answer] під столом (instr)
+   > (під стіл (acc))
+
+4. будинком / за / (instr)
+   > [!answer] за будинком (instr)
+   > (за будинок (acc))
+
+
 ---
 
 # Vocabulary

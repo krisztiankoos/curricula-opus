@@ -297,6 +297,87 @@ Describe what you did yesterday using past tense:
 - могти → міг
 - нести → ніс
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Що ти ___ учора?
+   > [!answer] робив
+
+2. Де ви ___ минулого тижня?
+   > [!answer] були
+
+3. Ми були ___ Львові.
+   > [!answer] у
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "вчора" mean?
+   - [x] yesterday
+   - [ ] day before yesterday
+   - [ ] went (m)
+   - [ ] was (f)
+   > "вчора" means "yesterday"
+
+2. What does "ішов" mean?
+   - [ ] was (f)
+   - [x] went (m)
+   - [ ] day before yesterday
+   - [ ] yesterday
+   > "ішов" means "went (m)"
+
+3. What does "позавчора" mean?
+   - [ ] yesterday
+   - [ ] was (f)
+   - [ ] went (m)
+   - [x] day before yesterday
+   > "позавчора" means "day before yesterday"
+
+4. What does "була" mean?
+   - [ ] day before yesterday
+   - [ ] yesterday
+   - [ ] went (m)
+   - [x] was (f)
+   > "була" means "was (f)"
+
+5. What does "було" mean?
+   - [ ] yesterday
+   - [x] was (n)
+   - [ ] day before yesterday
+   - [ ] went (m)
+   > "було" means "was (n)"
+
+6. What does "раніше" mean?
+   - [ ] went (m)
+   - [ ] yesterday
+   - [x] earlier, before
+   - [ ] day before yesterday
+   > "раніше" means "earlier, before"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Що / робив / ти / учора
+   > [!answer] Що ти робив учора?
+   > (What did you do yesterday?)
+
+2. Де / ви / минулого / тижня / були
+   > [!answer] Де ви були минулого тижня?
+   > (Where were you last week?)
+
+3. у / були / Ми / Львові
+   > [!answer] Ми були у Львові.
+   > (We were in Lviv.)
+
+
 ---
 
 # Vocabulary

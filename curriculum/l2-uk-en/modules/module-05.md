@@ -359,6 +359,91 @@ Change "this" to "that" and "my" to "your":
 - ці ключі
 - ті студенти
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Це ___ сумка?
+   > [!answer] твоя
+
+2. Це ___ паспорт.
+   > [!answer] мій
+
+3. Чий ___ телефон?
+   > [!answer] це
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "гаманець" mean?
+   - [ ] my (neuter)
+   - [ ] my (plural)
+   - [x] wallet
+   - [ ] key
+   > "гаманець" means "wallet"
+
+2. What does "мої" mean?
+   - [x] my (plural)
+   - [ ] key
+   - [ ] wallet
+   - [ ] my (neuter)
+   > "мої" means "my (plural)"
+
+3. What does "ключ" mean?
+   - [ ] wallet
+   - [ ] my (neuter)
+   - [x] key
+   - [ ] my (plural)
+   > "ключ" means "key"
+
+4. What does "моє" mean?
+   - [ ] key
+   - [ ] my (plural)
+   - [ ] wallet
+   - [x] my (neuter)
+   > "моє" means "my (neuter)"
+
+5. What does "ручка" mean?
+   - [ ] my (plural)
+   - [ ] key
+   - [x] pen
+   - [ ] wallet
+   > "ручка" means "pen"
+
+6. What does "ті" mean?
+   - [x] those
+   - [ ] my (plural)
+   - [ ] wallet
+   - [ ] key
+   > "ті" means "those"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Це / твоя / сумка
+   > [!answer] Це твоя сумка?
+   > (Is this your bag?)
+
+2. Це / паспорт / мій
+   > [!answer] Це мій паспорт.
+   > (This is my passport.)
+
+3. Чий / це / телефон
+   > [!answer] Чий це телефон?
+   > (Whose phone is this?)
+
+4. моя / Де / ручка
+   > [!answer] Де моя ручка?
+   > (Where is my pen?)
+
+
 ---
 
 # Vocabulary

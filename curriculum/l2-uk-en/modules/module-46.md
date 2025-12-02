@@ -343,6 +343,94 @@ Advice:
 - Коли він повернеться...
 - Коли настане літо...
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Якщо ___ помиляюся
+   > [!answer] не
+
+2. Що ___ якщо...?
+   > [!answer] буде
+
+3. Що ___ якщо...?
+   > [!answer] робити
+
+4. Що буде, якщо...? ___ will happen if...?):
+   > [!answer] (What
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "залишитися" mean?
+   - [x] to stay (perf)
+   - [ ] result
+   - [ ] to be late (perf)
+   - [ ] to be late (impf)
+   > "залишитися" means "to stay (perf)"
+
+2. What does "результат" mean?
+   - [ ] to stay (perf)
+   - [ ] to be late (perf)
+   - [ ] to be late (impf)
+   - [x] result
+   > "результат" means "result"
+
+3. What does "запізнюватися" mean?
+   - [ ] to stay (perf)
+   - [ ] to be late (perf)
+   - [ ] result
+   - [x] to be late (impf)
+   > "запізнюватися" means "to be late (impf)"
+
+4. What does "запізнитися" mean?
+   - [ ] to stay (perf)
+   - [x] to be late (perf)
+   - [ ] to be late (impf)
+   - [ ] result
+   > "запізнитися" means "to be late (perf)"
+
+5. What does "домовитися" mean?
+   - [ ] to stay (perf)
+   - [ ] to be late (impf)
+   - [x] to agree (perf)
+   - [ ] result
+   > "домовитися" means "to agree (perf)"
+
+6. What does "помилятися" mean?
+   - [ ] result
+   - [ ] to stay (perf)
+   - [x] to be mistaken
+   - [ ] to be late (impf)
+   > "помилятися" means "to be mistaken"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. Якщо / не / помиляюся
+   > [!answer] Якщо не помиляюся
+   > (If I'm not mistaken)
+
+2. Що / якщо / буде
+   > [!answer] Що буде, якщо...?
+   > (What will happen if...?)
+
+3. якщо / робити / Що
+   > [!answer] Що робити, якщо...?
+   > (What to do if...?)
+
+4. буде / will / if): / Що / (What / happen / якщо
+   > [!answer] Що буде, якщо...? (What will happen if...?):
+   > (**Що буде**, **якщо** він не прийде? - What happens if he doesn't come?)
+
+
 ---
 
 # Vocabulary

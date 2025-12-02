@@ -365,6 +365,81 @@ Next month:
 - Шкода, але в мене плани
 - Сьогодні не виходить
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. А ___ щодо...?
+   > [!answer] як
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "запрошувати" mean?
+   - [x] to invite (impf)
+   - [ ] busy
+   - [ ] plan
+   - [ ] convenient
+   > "запрошувати" means "to invite (impf)"
+
+2. What does "план" mean?
+   - [ ] to invite (impf)
+   - [ ] busy
+   - [x] plan
+   - [ ] convenient
+   > "план" means "plan"
+
+3. What does "зручний" mean?
+   - [ ] busy
+   - [x] convenient
+   - [ ] to invite (impf)
+   - [ ] plan
+   > "зручний" means "convenient"
+
+4. What does "зайнятий" mean?
+   - [x] busy
+   - [ ] to invite (impf)
+   - [ ] plan
+   - [ ] convenient
+   > "зайнятий" means "busy"
+
+5. What does "чекатиму" mean?
+   - [x] I will wait
+   - [ ] to invite (impf)
+   - [ ] plan
+   - [ ] convenient
+   > "чекатиму" means "I will wait"
+
+6. What does "пропозиція" mean?
+   - [ ] plan
+   - [ ] to invite (impf)
+   - [ ] convenient
+   - [x] suggestion, proposal
+   > "пропозиція" means "suggestion, proposal"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. А / як / щодо
+   > [!answer] А як щодо...?
+   > (How about...?)
+
+2. about): / (How / як / А / щодо
+   > [!answer] А як щодо...? (How about...?):
+   > (**А як щодо** суботи? - How about Saturday?)
+
+3. на / місяць / двічі
+   > [!answer] двічі на місяць
+   > (twice a month)
+
+
 ---
 
 # Vocabulary

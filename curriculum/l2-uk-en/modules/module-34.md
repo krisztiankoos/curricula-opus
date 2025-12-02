@@ -389,6 +389,54 @@ Create sentences: Subject + verb + з + instrumental
 - сестрами
 - колегами
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "прощатися" mean?
+   - [x] to say goodbye
+   - [ ] together
+   - [ ] (with) you
+   - [ ] the three (together)
+   > "прощатися" means "to say goodbye"
+
+2. What does "утрьох" mean?
+   - [x] the three (together)
+   - [ ] to say goodbye
+   - [ ] (with) you
+   - [ ] together
+   > "утрьох" means "the three (together)"
+
+3. What does "вами" mean?
+   - [ ] the three (together)
+   - [x] (with) you
+   - [ ] together
+   - [ ] to say goodbye
+   > "вами" means "(with) you"
+
+4. What does "разом" mean?
+   - [ ] to say goodbye
+   - [x] together
+   - [ ] the three (together)
+   - [ ] (with) you
+   > "разом" means "together"
+
+5. What does "компанія" mean?
+   - [ ] (with) you
+   - [x] company, group
+   - [ ] to say goodbye
+   - [ ] the three (together)
+   > "компанія" means "company, group"
+
+6. What does "мною" mean?
+   - [ ] the three (together)
+   - [ ] to say goodbye
+   - [x] (with) me
+   - [ ] (with) you
+   > "мною" means "(with) me"
+
+
 ---
 
 # Vocabulary

@@ -381,6 +381,101 @@ Imagine you're sick. Describe:
 - запаморочення
 - слабкість
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "голова" is feminine.
+   > Correct! голова is feminine.
+
+- [x] "горло" is neuter.
+   > Correct! горло is neuter.
+
+- [x] "живіт" is masculine.
+   > Correct! живіт is masculine.
+
+- [x] "спина" is feminine.
+   > Correct! спина is feminine.
+
+- [ ] "кашель" is feminine.
+   > Incorrect. кашель is masculine.
+
+- [ ] "нежить" is feminine.
+   > Incorrect. нежить is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "голова" mean?
+   - [ ] stomach, belly
+   - [ ] cold (illness)
+   - [x] head
+   - [ ] medicine
+   > "голова" means "head"
+
+2. What does "живіт" mean?
+   - [ ] head
+   - [ ] medicine
+   - [x] stomach, belly
+   - [ ] cold (illness)
+   > "живіт" means "stomach, belly"
+
+3. What does "застуда" mean?
+   - [ ] head
+   - [x] cold (illness)
+   - [ ] stomach, belly
+   - [ ] medicine
+   > "застуда" means "cold (illness)"
+
+4. What does "ліки" mean?
+   - [ ] stomach, belly
+   - [ ] cold (illness)
+   - [x] medicine
+   - [ ] head
+   > "ліки" means "medicine"
+
+5. What does "спина" mean?
+   - [x] back
+   - [ ] cold (illness)
+   - [ ] head
+   - [ ] stomach, belly
+   > "спина" means "back"
+
+6. What does "нежить" mean?
+   - [ ] head
+   - [x] runny nose
+   - [ ] cold (illness)
+   - [ ] stomach, belly
+   > "нежить" means "runny nose"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. На / що / скаржитесь
+   > [!answer] На що скаржитесь?
+   > (What are your complaints?)
+
+2. вас / Що / турбує
+   > [!answer] Що вас турбує?
+   > (What's bothering you?)
+
+3. Як / давно / це / почалося
+   > [!answer] Як давно це почалося?
+   > (How long has this been going on?)
+
+
 ---
 
 # Vocabulary

@@ -385,6 +385,54 @@ This morning (perfective):
 - заплакати
 - закричати
 
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "запросити" mean?
+   - [x] to invite (perf)
+   - [ ] to finish (impf)
+   - [ ] to see (perf)
+   - [ ] to begin (impf)
+   > "запросити" means "to invite (perf)"
+
+2. What does "кінчати" mean?
+   - [ ] to begin (impf)
+   - [x] to finish (impf)
+   - [ ] to see (perf)
+   - [ ] to invite (perf)
+   > "кінчати" means "to finish (impf)"
+
+3. What does "побачити" mean?
+   - [ ] to begin (impf)
+   - [x] to see (perf)
+   - [ ] to finish (impf)
+   - [ ] to invite (perf)
+   > "побачити" means "to see (perf)"
+
+4. What does "починати" mean?
+   - [ ] to invite (perf)
+   - [x] to begin (impf)
+   - [ ] to finish (impf)
+   - [ ] to see (perf)
+   > "починати" means "to begin (impf)"
+
+5. What does "відповісти" mean?
+   - [x] to answer (perf)
+   - [ ] to see (perf)
+   - [ ] to invite (perf)
+   - [ ] to finish (impf)
+   > "відповісти" means "to answer (perf)"
+
+6. What does "почати" mean?
+   - [x] to begin (perf)
+   - [ ] to finish (impf)
+   - [ ] to invite (perf)
+   - [ ] to see (perf)
+   > "почати" means "to begin (perf)"
+
+
 ---
 
 # Vocabulary

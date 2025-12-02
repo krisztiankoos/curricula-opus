@@ -343,6 +343,120 @@ Use -чит-/-пис- words:
 - прочитати
 - читальня
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "учень" is masculine.
+   > Correct! учень is masculine.
+
+- [x] "учениця" is feminine.
+   > Correct! учениця is feminine.
+
+- [x] "вчитель" is masculine.
+   > Correct! вчитель is masculine.
+
+- [x] "вчителька" is feminine.
+   > Correct! вчителька is feminine.
+
+- [ ] "вчений" is feminine.
+   > Incorrect. вчений is masculine.
+
+- [ ] "наука" is masculine.
+   > Incorrect. наука is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. учен- ___ -иця
+   > [!answer] +
+
+2. вч- ___ -итель
+   > [!answer] +
+
+3. вчитель- ___ -ка
+   > [!answer] +
+
+4. на- + ___ + -ання
+   > [!answer] вч-
+
+5. на- + ___ + -атися
+   > [!answer] вч-
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "записка" mean?
+   - [ ] product
+   - [ ] student, pupil
+   - [x] note
+   - [ ] scientific
+   > "записка" means "note"
+
+2. What does "учень" mean?
+   - [ ] note
+   - [ ] scientific
+   - [x] student, pupil
+   - [ ] product
+   > "учень" means "student, pupil"
+
+3. What does "виріб" mean?
+   - [ ] note
+   - [ ] scientific
+   - [ ] student, pupil
+   - [x] product
+   > "виріб" means "product"
+
+4. What does "науковий" mean?
+   - [x] scientific
+   - [ ] product
+   - [ ] note
+   - [ ] student, pupil
+   > "науковий" means "scientific"
+
+5. What does "учениця" mean?
+   - [x] female student
+   - [ ] student, pupil
+   - [ ] product
+   - [ ] note
+   > "учениця" means "female student"
+
+6. What does "розмовляти" mean?
+   - [ ] note
+   - [ ] product
+   - [x] to converse
+   - [ ] student, pupil
+   > "розмовляти" means "to converse"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. -ити / + / вч-
+   > [!answer] вч- + -ити
+   > (to teach/learn)
+
+2. + / -ень / уч-
+   > [!answer] уч- + -ень
+   > (student, pupil)
+
+3. -иця / учен- / +
+   > [!answer] учен- + -иця
+   > (female student)
+
+4. вч- / + / -итель
+   > [!answer] вч- + -итель
+   > (teacher (m))
+
+
 ---
 
 # Vocabulary

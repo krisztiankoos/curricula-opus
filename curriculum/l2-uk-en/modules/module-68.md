@@ -368,6 +368,83 @@ Give advice to someone who's sick:
 - запаморочення
 - втома
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "серце" is neuter.
+   > Correct! серце is neuter.
+
+- [x] "легені" is neuter.
+   > Correct! легені is neuter.
+
+- [x] "шлунок" is masculine.
+   > Correct! шлунок is masculine.
+
+- [x] "печінка" is feminine.
+   > Correct! печінка is feminine.
+
+- [ ] "нирки" is masculine.
+   > Incorrect. нирки is undefined.
+
+- [ ] "м'яз" is feminine.
+   > Incorrect. м'яз is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "плече" mean?
+   - [x] shoulder
+   - [ ] joint
+   - [ ] injury
+   - [ ] patient
+   > "плече" means "shoulder"
+
+2. What does "суглоб" mean?
+   - [ ] injury
+   - [ ] shoulder
+   - [x] joint
+   - [ ] patient
+   > "суглоб" means "joint"
+
+3. What does "травма" mean?
+   - [ ] shoulder
+   - [ ] patient
+   - [ ] joint
+   - [x] injury
+   > "травма" means "injury"
+
+4. What does "пацієнт" mean?
+   - [x] patient
+   - [ ] joint
+   - [ ] injury
+   - [ ] shoulder
+   > "пацієнт" means "patient"
+
+5. What does "почуватися" mean?
+   - [ ] shoulder
+   - [x] to feel
+   - [ ] joint
+   - [ ] injury
+   > "почуватися" means "to feel"
+
+6. What does "втома" mean?
+   - [ ] joint
+   - [ ] shoulder
+   - [ ] injury
+   - [x] fatigue
+   > "втома" means "fatigue"
+
+
 ---
 
 # Vocabulary

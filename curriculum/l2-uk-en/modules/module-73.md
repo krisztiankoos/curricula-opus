@@ -396,6 +396,83 @@ Discuss social media habits:
 - коментар
 - стрічка
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "комп'ютер" is masculine.
+   > Correct! комп'ютер is masculine.
+
+- [x] "ноутбук" is masculine.
+   > Correct! ноутбук is masculine.
+
+- [x] "смартфон" is masculine.
+   > Correct! смартфон is masculine.
+
+- [x] "планшет" is masculine.
+   > Correct! планшет is masculine.
+
+- [ ] "клавіатура" is masculine.
+   > Incorrect. клавіатура is feminine.
+
+- [ ] "акумулятор" is feminine.
+   > Incorrect. акумулятор is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "вірус" mean?
+   - [ ] to turn off
+   - [ ] to restart
+   - [x] virus
+   - [ ] video call
+   > "вірус" means "virus"
+
+2. What does "вимикати" mean?
+   - [ ] to restart
+   - [ ] video call
+   - [ ] virus
+   - [x] to turn off
+   > "вимикати" means "to turn off"
+
+3. What does "відеодзвінок" mean?
+   - [ ] to restart
+   - [x] video call
+   - [ ] to turn off
+   - [ ] virus
+   > "відеодзвінок" means "video call"
+
+4. What does "перезавантажувати" mean?
+   - [ ] virus
+   - [x] to restart
+   - [ ] to turn off
+   - [ ] video call
+   > "перезавантажувати" means "to restart"
+
+5. What does "акумулятор" mean?
+   - [x] battery
+   - [ ] video call
+   - [ ] virus
+   - [ ] to turn off
+   > "акумулятор" means "battery"
+
+6. What does "лайк" mean?
+   - [ ] to turn off
+   - [x] like
+   - [ ] virus
+   - [ ] video call
+   > "лайк" means "like"
+
+
 ---
 
 # Vocabulary

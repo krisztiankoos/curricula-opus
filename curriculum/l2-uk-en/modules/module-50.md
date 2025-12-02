@@ -373,6 +373,46 @@ Describe what you did yesterday using appropriate aspects:
 - відкрити
 - знайти
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Чи не ___ б ви...?
+   > [!answer] могли
+
+2. Було ___ добре
+   > [!answer] б
+
+3. Real ___ (якщо):
+   > [!answer] conditionals
+
+4. Unreal conditionals ___ + б/би):
+   > [!answer] (якби
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. би / хотів / Я
+   > [!answer] Я хотів би
+   > (I would like)
+
+2. ви / Чи / могли / б / не
+   > [!answer] Чи не могли б ви...?
+   > (Could you possibly...?)
+
+3. б / добре / Було
+   > [!answer] Було б добре
+   > (It would be good)
+
+4. (якщо): / Real / conditionals
+   > [!answer] Real conditionals (якщо):
+   > (Якщо + future/present, future)
+
+
 ---
 
 # Vocabulary

@@ -384,6 +384,105 @@ Create sentences using instrumental for means:
 - українською (in Ukrainian)
 - ножем (with a knife)
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "автобус" is masculine.
+   > Correct! автобус is masculine.
+
+- [x] "тролейбус" is masculine.
+   > Correct! тролейбус is masculine.
+
+- [x] "трамвай" is masculine.
+   > Correct! трамвай is masculine.
+
+- [x] "поїзд" is masculine.
+   > Correct! поїзд is masculine.
+
+- [ ] "літак" is feminine.
+   > Incorrect. літак is masculine.
+
+- [ ] "велосипед" is feminine.
+   > Incorrect. велосипед is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "трамвай" mean?
+   - [ ] knife
+   - [ ] spoon
+   - [x] tram
+   - [ ] whisper
+   > "трамвай" means "tram"
+
+2. What does "ніж" mean?
+   - [ ] spoon
+   - [ ] tram
+   - [ ] whisper
+   - [x] knife
+   > "ніж" means "knife"
+
+3. What does "шепіт" mean?
+   - [ ] tram
+   - [ ] spoon
+   - [ ] knife
+   - [x] whisper
+   > "шепіт" means "whisper"
+
+4. What does "ложка" mean?
+   - [ ] knife
+   - [ ] whisper
+   - [ ] tram
+   - [x] spoon
+   > "ложка" means "spoon"
+
+5. What does "цікавитися" mean?
+   - [ ] knife
+   - [ ] tram
+   - [ ] whisper
+   - [x] to be interested
+   > "цікавитися" means "to be interested"
+
+6. What does "автобус" mean?
+   - [ ] knife
+   - [ ] tram
+   - [x] bus
+   - [ ] whisper
+   > "автобус" means "bus"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. з / + / Instrumental
+   > [!answer] з + Instrumental
+   > (Instrumental alone)
+
+2. з / (with / другом / friend)
+   > [!answer] з другом (with friend)
+   > (автобусом (by bus))
+
+3. sister) / сестрою / (with / з
+   > [!answer] з сестрою (with sister)
+   > (ручкою (with pen))
+
+4. parents) / батьками / з / (with
+   > [!answer] з батьками (with parents)
+   > (українською (in Ukrainian))
+
+
 ---
 
 # Vocabulary

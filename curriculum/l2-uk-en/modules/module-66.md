@@ -353,6 +353,120 @@ Use -знат- words:
 - вислухати
 - слухняний
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "похід" is masculine.
+   > Correct! похід is masculine.
+
+- [x] "підхід" is masculine.
+   > Correct! підхід is masculine.
+
+- [x] "дохід" is masculine.
+   > Correct! дохід is masculine.
+
+- [x] "поїздка" is feminine.
+   > Correct! поїздка is feminine.
+
+- [ ] "в'їзд" is feminine.
+   > Incorrect. в'їзд is masculine.
+
+- [ ] "приїзд" is feminine.
+   > Incorrect. приїзд is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. ход- ___ -ити
+   > [!answer] +
+
+2. пере- ___ хід
+   > [!answer] +
+
+3. ви- ___ трат/дат
+   > [!answer] +
+
+4. їзд- ___ -ити
+   > [!answer] +
+
+5. по- + ___ + -ка
+   > [!answer] їзд-
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "слух" mean?
+   - [ ] hike, campaign
+   - [ ] acquaintance
+   - [ ] departure (vehicles)
+   - [x] hearing; rumor
+   > "слух" means "hearing; rumor"
+
+2. What does "від'їзд" mean?
+   - [x] departure (vehicles)
+   - [ ] acquaintance
+   - [ ] hike, campaign
+   - [ ] hearing; rumor
+   > "від'їзд" means "departure (vehicles)"
+
+3. What does "знайомий" mean?
+   - [ ] hearing; rumor
+   - [x] acquaintance
+   - [ ] departure (vehicles)
+   - [ ] hike, campaign
+   > "знайомий" means "acquaintance"
+
+4. What does "похід" mean?
+   - [ ] acquaintance
+   - [x] hike, campaign
+   - [ ] departure (vehicles)
+   - [ ] hearing; rumor
+   > "похід" means "hike, campaign"
+
+5. What does "визнання" mean?
+   - [ ] departure (vehicles)
+   - [ ] hearing; rumor
+   - [x] recognition
+   - [ ] acquaintance
+   > "визнання" means "recognition"
+
+6. What does "вибачати" mean?
+   - [ ] acquaintance
+   - [ ] hearing; rumor
+   - [x] to forgive
+   - [ ] departure (vehicles)
+   > "вибачати" means "to forgive"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. ход- / + / -ити
+   > [!answer] ход- + -ити
+   > (to walk, to go)
+
+2. хід / в- / +
+   > [!answer] в- + хід
+   > (entrance)
+
+3. хід / ви- / +
+   > [!answer] ви- + хід
+   > (exit)
+
+4. хід / + / при-
+   > [!answer] при- + хід
+   > (arrival, coming)
+
+
 ---
 
 # Vocabulary

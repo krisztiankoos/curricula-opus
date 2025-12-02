@@ -326,6 +326,78 @@ Turn these statements into questions (just add ?):
 - воно
 - вони
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "це" mean?
+   - [ ] it
+   - [ ] I
+   - [x] this, this is
+   - [ ] she
+   > "це" means "this, this is"
+
+2. What does "я" mean?
+   - [x] I
+   - [ ] she
+   - [ ] it
+   - [ ] this, this is
+   > "я" means "I"
+
+3. What does "вона" mean?
+   - [ ] this, this is
+   - [ ] I
+   - [ ] it
+   - [x] she
+   > "вона" means "she"
+
+4. What does "воно" mean?
+   - [ ] she
+   - [x] it
+   - [ ] this, this is
+   - [ ] I
+   > "воно" means "it"
+
+5. What does "ви" mean?
+   - [ ] she
+   - [x] you (formal/plural)
+   - [ ] I
+   - [ ] this, this is
+   > "ви" means "you (formal/plural)"
+
+6. What does "подруга" mean?
+   - [ ] this, this is
+   - [x] friend (female)
+   - [ ] I
+   - [ ] she
+   > "подруга" means "friend (female)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. ручка / Це / твоя
+   > [!answer] Це твоя ручка?
+   > (This — your pen?)
+
+2. Я / є / українець
+   > [!answer] Я є українець!
+   > (I AM Ukrainian!)
+
+3. є / Він / громадянин
+   > [!answer] Він є громадянин...
+   > (He is a citizen...)
+
+
 ---
 
 # Vocabulary

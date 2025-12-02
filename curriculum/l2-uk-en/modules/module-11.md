@@ -304,6 +304,87 @@ Say what you want:
 - молоко → молоко
 - хліб → хліб
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Я ___ книгу.
+   > [!answer] бачу
+
+2. Вона ___ листа.
+   > [!answer] читає
+
+3. Ми ___ воду.
+   > [!answer] хочемо
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "чути" mean?
+   - [ ] to take
+   - [ ] ticket
+   - [x] to hear
+   - [ ] passport
+   > "чути" means "to hear"
+
+2. What does "квиток" mean?
+   - [ ] to hear
+   - [x] ticket
+   - [ ] passport
+   - [ ] to take
+   > "квиток" means "ticket"
+
+3. What does "паспорт" mean?
+   - [x] passport
+   - [ ] to take
+   - [ ] to hear
+   - [ ] ticket
+   > "паспорт" means "passport"
+
+4. What does "брати" mean?
+   - [ ] ticket
+   - [ ] to hear
+   - [ ] passport
+   - [x] to take
+   > "брати" means "to take"
+
+5. What does "давати" mean?
+   - [ ] ticket
+   - [ ] passport
+   - [x] to give
+   - [ ] to hear
+   > "давати" means "to give"
+
+6. What does "мати" mean?
+   - [x] to have
+   - [ ] ticket
+   - [ ] to hear
+   - [ ] passport
+   > "мати" means "to have"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. бачу / книгу / Я
+   > [!answer] Я бачу книгу.
+   > (книгу (book))
+
+2. Вона / листа / читає
+   > [!answer] Вона читає листа.
+   > (листа (letter))
+
+3. Ми / хочемо / воду
+   > [!answer] Ми хочемо воду.
+   > (воду (water))
+
+
 ---
 
 # Vocabulary

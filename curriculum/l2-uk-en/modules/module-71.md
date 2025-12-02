@@ -358,6 +358,60 @@ Give emotional reactions:
 - лінивий
 - грубий
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "втомлений" mean?
+   - [ ] anxious
+   - [x] tired
+   - [ ] brave
+   - [ ] to worry
+   > "втомлений" means "tired"
+
+2. What does "стривожений" mean?
+   - [x] anxious
+   - [ ] tired
+   - [ ] brave
+   - [ ] to worry
+   > "стривожений" means "anxious"
+
+3. What does "хвилюватися" mean?
+   - [ ] brave
+   - [ ] tired
+   - [x] to worry
+   - [ ] anxious
+   > "хвилюватися" means "to worry"
+
+4. What does "сміливий" mean?
+   - [x] brave
+   - [ ] to worry
+   - [ ] anxious
+   - [ ] tired
+   > "сміливий" means "brave"
+
+5. What does "грубий" mean?
+   - [ ] tired
+   - [ ] to worry
+   - [ ] anxious
+   - [x] rude
+   > "грубий" means "rude"
+
+6. What does "самотній" mean?
+   - [ ] anxious
+   - [x] lonely
+   - [ ] tired
+   - [ ] to worry
+   > "самотній" means "lonely"
+
+
 ---
 
 # Vocabulary

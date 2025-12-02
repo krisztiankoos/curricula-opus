@@ -350,6 +350,77 @@ Create sentences using all given elements:
 - Locative
 - Vocative
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "правило" is neuter.
+   > Correct! правило is neuter.
+
+- [x] "полиця" is feminine.
+   > Correct! полиця is feminine.
+
+- [x] "ваза" is feminine.
+   > Correct! ваза is feminine.
+
+- [x] "поверх" is masculine.
+   > Correct! поверх is masculine.
+
+- [ ] "кабінет" is feminine.
+   > Incorrect. кабінет is masculine.
+
+- [ ] "секретарка" is masculine.
+   > Incorrect. секретарка is feminine.
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "ваза" mean?
+   - [x] vase
+   - [ ] during, throughout
+   - [ ] rule
+   - [ ] shelf
+   > "ваза" means "vase"
+
+2. What does "полиця" mean?
+   - [ ] rule
+   - [x] shelf
+   - [ ] vase
+   - [ ] during, throughout
+   > "полиця" means "shelf"
+
+3. What does "протягом" mean?
+   - [ ] vase
+   - [ ] rule
+   - [x] during, throughout
+   - [ ] shelf
+   > "протягом" means "during, throughout"
+
+4. What does "правило" mean?
+   - [ ] vase
+   - [ ] during, throughout
+   - [x] rule
+   - [ ] shelf
+   > "правило" means "rule"
+
+5. What does "поверх" mean?
+   - [ ] vase
+   - [ ] during, throughout
+   - [x] floor (of building)
+   - [ ] shelf
+   > "поверх" means "floor (of building)"
+
+6. What does "бухгалтерія" mean?
+   - [ ] during, throughout
+   - [x] accounting dept
+   - [ ] vase
+   - [ ] shelf
+   > "бухгалтерія" means "accounting dept"
+
+
 ---
 
 # Vocabulary

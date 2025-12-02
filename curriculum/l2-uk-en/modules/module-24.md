@@ -301,6 +301,91 @@ Answer:
 - хотів би
 - хочуть
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Не ___ хвилюватися.
+   > [!answer] треба
+
+2. Чи можете ___ допомогти?
+   > [!answer] ви
+
+3. Чи можна ___ сісти?
+   > [!answer] тут
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "треба" mean?
+   - [ ] must, have to
+   - [x] it's necessary
+   - [ ] to pay
+   - [ ] can, to be able
+   > "треба" means "it's necessary"
+
+2. What does "могти" mean?
+   - [ ] to pay
+   - [ ] must, have to
+   - [x] can, to be able
+   - [ ] it's necessary
+   > "могти" means "can, to be able"
+
+3. What does "платити" mean?
+   - [x] to pay
+   - [ ] can, to be able
+   - [ ] must, have to
+   - [ ] it's necessary
+   > "платити" means "to pay"
+
+4. What does "мусити" mean?
+   - [ ] it's necessary
+   - [ ] can, to be able
+   - [ ] to pay
+   - [x] must, have to
+   > "мусити" means "must, have to"
+
+5. What does "відпочити" mean?
+   - [x] to rest
+   - [ ] to pay
+   - [ ] it's necessary
+   - [ ] can, to be able
+   > "відпочити" means "to rest"
+
+6. What does "повинен" mean?
+   - [x] should, ought to (m)
+   - [ ] it's necessary
+   - [ ] can, to be able
+   - [ ] to pay
+   > "повинен" means "should, ought to (m)"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. хвилюватися / Не / треба
+   > [!answer] Не треба хвилюватися.
+   > (Don't worry. / No need to worry.)
+
+2. не / Я / можу
+   > [!answer] Я не можу
+   > (I can't)
+
+3. можете / Чи / ви / допомогти
+   > [!answer] Чи можете ви допомогти?
+   > (Can you help?)
+
+4. Чи / можна / сісти / тут
+   > [!answer] Чи можна тут сісти?
+   > (May I sit here?)
+
+
 ---
 
 # Vocabulary

@@ -354,6 +354,97 @@ Practice asking questions:
 - -єте (ви)
 - -ють (вони)
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. знати ___ I)
+   > [!answer] (Class
+
+2. Ти знаєш. ___ know.)
+   > [!answer] (You
+
+3. Вона читає. ___ reads.)
+   > [!answer] (She
+
+4. Вони пишуть. ___ write.)
+   > [!answer] (They
+
+5. робити ___ do/make)
+   > [!answer] (to
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "кожен день" mean?
+   - [ ] to think
+   - [x] every day
+   - [ ] to write
+   - [ ] to know
+   > "кожен день" means "every day"
+
+2. What does "знати" mean?
+   - [ ] every day
+   - [ ] to think
+   - [ ] to write
+   - [x] to know
+   > "знати" means "to know"
+
+3. What does "писати" mean?
+   - [ ] every day
+   - [ ] to think
+   - [ ] to know
+   - [x] to write
+   > "писати" means "to write"
+
+4. What does "думати" mean?
+   - [x] to think
+   - [ ] to write
+   - [ ] every day
+   - [ ] to know
+   > "думати" means "to think"
+
+5. What does "читати" mean?
+   - [ ] to know
+   - [ ] to write
+   - [x] to read
+   - [ ] every day
+   > "читати" means "to read"
+
+6. What does "хотіти" mean?
+   - [ ] to write
+   - [ ] every day
+   - [x] to want
+   - [ ] to know
+   > "хотіти" means "to want"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. знати / (Class / I)
+   > [!answer] знати (Class I)
+   > (робити (Class II))
+
+2. know) / (You / знаєш / Ти
+   > [!answer] Ти знаєш. (You know.)
+   > (Ти знаєш? (Do you know?))
+
+3. читає / Вона / (She / reads)
+   > [!answer] Вона читає. (She reads.)
+   > (Вона читає? (Is she reading?))
+
+4. пишуть / (They / Вони / write)
+   > [!answer] Вони пишуть. (They write.)
+   > (Вони пишуть? (Are they writing?))
+
+
 ---
 
 # Vocabulary

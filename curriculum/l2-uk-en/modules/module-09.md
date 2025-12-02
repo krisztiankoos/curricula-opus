@@ -280,6 +280,87 @@ Practice: You're buying items. Say the price:
 - десять студентів
 - двадцять п'ять гривень
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Це коштує ___ гривень.
+   > [!answer] 50
+
+2. Готівкою ___ карткою?
+   > [!answer] чи
+
+3. Решта ___ ваша.
+   > [!answer] -
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "коштувати" mean?
+   - [ ] six
+   - [ ] hryvnia (₴)
+   - [x] to cost
+   - [ ] cash
+   > "коштувати" means "to cost"
+
+2. What does "шість" mean?
+   - [ ] to cost
+   - [x] six
+   - [ ] hryvnia (₴)
+   - [ ] cash
+   > "шість" means "six"
+
+3. What does "готівка" mean?
+   - [ ] six
+   - [ ] hryvnia (₴)
+   - [ ] to cost
+   - [x] cash
+   > "готівка" means "cash"
+
+4. What does "гривня" mean?
+   - [x] hryvnia (₴)
+   - [ ] to cost
+   - [ ] cash
+   - [ ] six
+   > "гривня" means "hryvnia (₴)"
+
+5. What does "десять" mean?
+   - [ ] six
+   - [ ] to cost
+   - [x] ten
+   - [ ] cash
+   > "десять" means "ten"
+
+6. What does "копійка" mean?
+   - [ ] to cost
+   - [ ] six
+   - [ ] cash
+   - [x] kopeck
+   > "копійка" means "kopeck"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. гривень / Це / 50 / коштує
+   > [!answer] Це коштує 50 гривень.
+   > (This costs 50 hryvnias.)
+
+2. карткою / чи / Готівкою
+   > [!answer] Готівкою чи карткою?
+   > (Cash or card?)
+
+3. ваша / Решта / -
+   > [!answer] Решта - ваша.
+   > (Keep the change.)
+
+
 ---
 
 # Vocabulary

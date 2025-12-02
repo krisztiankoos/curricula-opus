@@ -300,6 +300,114 @@ Tell about your family:
 - онук
 - онука
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "батько" is masculine.
+   > Correct! батько is masculine.
+
+- [x] "батьки" is neuter.
+   > Correct! батьки is neuter.
+
+- [x] "син" is masculine.
+   > Correct! син is masculine.
+
+- [x] "дочка" is feminine.
+   > Correct! дочка is feminine.
+
+- [ ] "дитина" is masculine.
+   > Incorrect. дитина is feminine.
+
+- [ ] "дідусь" is feminine.
+   > Incorrect. дідусь is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. У мене ___ родина.
+   > [!answer] велика
+
+2. Моя ___ лікарка.
+   > [!answer] мама
+
+3. Мого брата ___ Андрій.
+   > [!answer] звати
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "батько" mean?
+   - [x] father
+   - [ ] parents
+   - [ ] grandpa
+   - [ ] relative
+   > "батько" means "father"
+
+2. What does "батьки" mean?
+   - [ ] relative
+   - [ ] father
+   - [ ] grandpa
+   - [x] parents
+   > "батьки" means "parents"
+
+3. What does "дідусь" mean?
+   - [ ] relative
+   - [ ] father
+   - [x] grandpa
+   - [ ] parents
+   > "дідусь" means "grandpa"
+
+4. What does "родич" mean?
+   - [ ] parents
+   - [x] relative
+   - [ ] father
+   - [ ] grandpa
+   > "родич" means "relative"
+
+5. What does "дружина" mean?
+   - [ ] grandpa
+   - [ ] parents
+   - [x] wife
+   - [ ] father
+   > "дружина" means "wife"
+
+6. What does "чоловік" mean?
+   - [ ] father
+   - [ ] parents
+   - [ ] grandpa
+   - [x] husband
+   > "чоловік" means "husband"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. родина / У / мене / велика
+   > [!answer] У мене велика родина.
+   > (I have a big family.)
+
+2. Моя / мама / лікарка
+   > [!answer] Моя мама лікарка.
+   > (My mom is a doctor.)
+
+3. звати / Андрій / брата / Мого
+   > [!answer] Мого брата звати Андрій.
+   > (My brother's name is Andriy.)
+
+4. Розкажи / родину / про / свою
+   > [!answer] Розкажи про свою родину.
+   > (Tell me about your family.)
+
+
 ---
 
 # Vocabulary

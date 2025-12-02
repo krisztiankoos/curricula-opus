@@ -437,6 +437,107 @@ Discuss:
 - колядка
 - рушник
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "пісня" is feminine.
+   > Correct! пісня is feminine.
+
+- [x] "мелодія" is feminine.
+   > Correct! мелодія is feminine.
+
+- [x] "альбом" is masculine.
+   > Correct! альбом is masculine.
+
+- [x] "гурт" is masculine.
+   > Correct! гурт is masculine.
+
+- [ ] "співак" is feminine.
+   > Incorrect. співак is masculine.
+
+- [ ] "композитор" is feminine.
+   > Incorrect. композитор is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. співак ___ співачка
+   > [!answer] /
+
+2. піаніно ___ фортепіано
+   > [!answer] /
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "альбом" mean?
+   - [ ] bestseller
+   - [x] album
+   - [ ] painting (work)
+   - [ ] drama
+   > "альбом" means "album"
+
+2. What does "бестселер" mean?
+   - [x] bestseller
+   - [ ] album
+   - [ ] painting (work)
+   - [ ] drama
+   > "бестселер" means "bestseller"
+
+3. What does "драма" mean?
+   - [x] drama
+   - [ ] painting (work)
+   - [ ] bestseller
+   - [ ] album
+   > "драма" means "drama"
+
+4. What does "картина" mean?
+   - [ ] album
+   - [x] painting (work)
+   - [ ] drama
+   - [ ] bestseller
+   > "картина" means "painting (work)"
+
+5. What does "кінотеатр" mean?
+   - [ ] album
+   - [ ] bestseller
+   - [x] movie theater
+   - [ ] drama
+   > "кінотеатр" means "movie theater"
+
+6. What does "комедія" mean?
+   - [x] comedy
+   - [ ] album
+   - [ ] drama
+   - [ ] bestseller
+   > "комедія" means "comedy"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. співачка / співак / /
+   > [!answer] співак / співачка
+   > (singer (m/f))
+
+2. фортепіано / / / піаніно
+   > [!answer] піаніно / фортепіано
+   > (piano)
+
+3. акторка / / / актор
+   > [!answer] актор / акторка
+   > (actor (m/f))
+
+
 ---
 
 # Vocabulary

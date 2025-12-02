@@ -370,6 +370,120 @@ Write a short text (100-150 words) about your ideal job:
 - Хоча холодно... (concessive)
 - Щоб знати... (purpose)
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "досягнення" is neuter.
+   > Correct! досягнення is neuter.
+
+- [x] "мета" is feminine.
+   > Correct! мета is feminine.
+
+- [x] "якість" is feminine.
+   > Correct! якість is feminine.
+
+- [x] "подорож" is feminine.
+   > Correct! подорож is feminine.
+
+- [ ] "спогад" is feminine.
+   > Incorrect. спогад is masculine.
+
+- [ ] "враження" is masculine.
+   > Incorrect. враження is neuter.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Як ___ почуваєтеся?
+   > [!answer] ви
+
+2. О ___ відправлення?
+   > [!answer] котрій
+
+3. Ким ___ працюєте?
+   > [!answer] ви
+
+4. Я ___ що...
+   > [!answer] думаю
+
+5. Якби я ___ час...
+   > [!answer] мав
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "успіх" mean?
+   - [ ] memory
+   - [x] success
+   - [ ] goal
+   - [ ] achievement
+   > "успіх" means "success"
+
+2. What does "спогад" mean?
+   - [x] memory
+   - [ ] goal
+   - [ ] achievement
+   - [ ] success
+   > "спогад" means "memory"
+
+3. What does "досягнення" mean?
+   - [ ] success
+   - [ ] memory
+   - [ ] goal
+   - [x] achievement
+   > "досягнення" means "achievement"
+
+4. What does "мета" mean?
+   - [ ] success
+   - [ ] memory
+   - [ ] achievement
+   - [x] goal
+   > "мета" means "goal"
+
+5. What does "здібність" mean?
+   - [ ] success
+   - [ ] memory
+   - [ ] achievement
+   - [x] ability
+   > "здібність" means "ability"
+
+6. What does "подорож" mean?
+   - [ ] success
+   - [x] journey, trip
+   - [ ] memory
+   - [ ] achievement
+   > "подорож" means "journey, trip"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. ви / Як / почуваєтеся
+   > [!answer] Як ви почуваєтеся?
+   > (How do you feel?)
+
+2. О / відправлення / котрій
+   > [!answer] О котрій відправлення?
+   > (What time is departure?)
+
+3. Ким / ви / працюєте
+   > [!answer] Ким ви працюєте?
+   > (What do you do for work?)
+
+4. що / думаю / Я
+   > [!answer] Я думаю, що...
+   > (I think that...)
+
+
 ---
 
 # Vocabulary

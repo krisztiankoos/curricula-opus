@@ -381,6 +381,83 @@ Describe your ideal weekend activities:
 - вінілові платівки
 - антикваріат
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "хобі" is neuter.
+   > Correct! хобі is neuter.
+
+- [x] "захоплення" is neuter.
+   > Correct! захоплення is neuter.
+
+- [x] "дозвілля" is neuter.
+   > Correct! дозвілля is neuter.
+
+- [x] "розвага" is feminine.
+   > Correct! розвага is feminine.
+
+- [ ] "відпочинок" is feminine.
+   > Incorrect. відпочинок is masculine.
+
+- [ ] "малювання" is masculine.
+   > Incorrect. малювання is neuter.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "садівництво" mean?
+   - [x] gardening
+   - [ ] puzzle
+   - [ ] leisure
+   - [ ] escape room
+   > "садівництво" means "gardening"
+
+2. What does "пазл" mean?
+   - [ ] leisure
+   - [x] puzzle
+   - [ ] escape room
+   - [ ] gardening
+   > "пазл" means "puzzle"
+
+3. What does "квест" mean?
+   - [x] escape room
+   - [ ] gardening
+   - [ ] puzzle
+   - [ ] leisure
+   > "квест" means "escape room"
+
+4. What does "дозвілля" mean?
+   - [ ] puzzle
+   - [ ] gardening
+   - [ ] escape room
+   - [x] leisure
+   > "дозвілля" means "leisure"
+
+5. What does "монета" mean?
+   - [ ] gardening
+   - [x] coin
+   - [ ] puzzle
+   - [ ] escape room
+   > "монета" means "coin"
+
+6. What does "малювання" mean?
+   - [x] drawing, painting
+   - [ ] escape room
+   - [ ] puzzle
+   - [ ] gardening
+   > "малювання" means "drawing, painting"
+
+
 ---
 
 # Vocabulary

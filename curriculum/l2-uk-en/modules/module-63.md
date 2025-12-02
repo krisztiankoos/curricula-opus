@@ -82,7 +82,7 @@ Suffixes attach to the **end** of words and change their meaning and part of spe
 | Adjective | Noun | Meaning |
 |-----------|------|---------|
 | можливий | можливість | possibility |
-| новий | новість | news, novelty |
+| важливий | важливість | importance |
 | радісний | радість | joy |
 | молодий | молодість | youth |
 | старий | старість | old age |
@@ -96,7 +96,7 @@ Suffixes attach to the **end** of words and change their meaning and part of spe
 
 **Examples:**
 - Є **можливість** поїхати. - There's a possibility to go.
-- Я чув цікаву **новість**. - I heard interesting news.
+- Це має велику **важливість**. - This has great importance.
 - Яка **радість**! - What joy!
 - **Молодість** минає швидко. - Youth passes quickly.
 - Це його **відповідальність**. - This is his responsibility.
@@ -212,8 +212,8 @@ Suffixes attach to the **end** of words and change their meaning and part of spe
 
 1. можливий
    > [!answer] можливість (possibility)
-2. новий
-   > [!answer] новість (news)
+2. важливий
+   > [!answer] важливість (importance)
 3. відповідальний
    > [!answer] відповідальність (responsibility)
 4. особливий
@@ -238,8 +238,8 @@ Suffixes attach to the **end** of words and change their meaning and part of spe
 
 1. Reading is useful.
    > [!answer] Читання корисне.
-2. I heard news.
-   > [!answer] Я почув новість.
+2. This has great importance.
+   > [!answer] Це має велику важливість.
 3. She's a writer.
    > [!answer] Вона письменниця.
 4. This is the beginning.
@@ -348,13 +348,93 @@ Use -ння/-ття nouns:
 - можливість
 - радість
 - відповідальність
-- новість
+- важливість
 
 ### -ач/-ник (people)
 - читач
 - письменник
 - працівник
 - слухач
+
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "читання" is neuter.
+   > Correct! читання is neuter.
+
+- [x] "писання" is neuter.
+   > Correct! писання is neuter.
+
+- [x] "навчання" is neuter.
+   > Correct! навчання is neuter.
+
+- [x] "слухання" is neuter.
+   > Correct! слухання is neuter.
+
+- [ ] "говоріння" is masculine.
+   > Incorrect. говоріння is neuter.
+
+- [ ] "життя" is masculine.
+   > Incorrect. життя is neuter.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. вільність ___ воля
+   > [!answer] /
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "читання" mean?
+   - [ ] learning, education
+   - [ ] reader
+   - [x] reading
+   - [ ] knowledge
+   > "читання" means "reading"
+
+2. What does "знання" mean?
+   - [ ] reader
+   - [x] knowledge
+   - [ ] reading
+   - [ ] learning, education
+   > "знання" means "knowledge"
+
+3. What does "читач" mean?
+   - [ ] learning, education
+   - [ ] reading
+   - [ ] knowledge
+   - [x] reader
+   > "читач" means "reader"
+
+4. What does "навчання" mean?
+   - [x] learning, education
+   - [ ] reading
+   - [ ] knowledge
+   - [ ] reader
+   > "навчання" means "learning, education"
+
+5. What does "питання" mean?
+   - [ ] reading
+   - [x] question
+   - [ ] reader
+   - [ ] knowledge
+   > "питання" means "question"
+
+6. What does "мистецтво" mean?
+   - [ ] knowledge
+   - [x] art
+   - [ ] reading
+   - [ ] reader
+   > "мистецтво" means "art"
+
 
 ---
 
@@ -372,7 +452,7 @@ Use -ння/-ття nouns:
 | знання | /ˈznɑnʲːɑ/ | knowledge | noun | n |
 | питання | /pɪˈtɑnʲːɑ/ | question | noun | n |
 | завдання | /zɑvˈdɑnʲːɑ/ | task, assignment | noun | n |
-| новість | /ˈnovʲistʲ/ | news | noun | f |
+| важливість | /vɑʒˈlɪvʲistʲ/ | importance | noun | f |
 | молодість | /ˈmolodʲistʲ/ | youth | noun | f |
 | старість | /ˈstɑrʲistʲ/ | old age | noun | f |
 | відповідальність | /vʲidpovʲiˈdɑlʲnʲistʲ/ | responsibility | noun | f |

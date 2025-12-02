@@ -365,6 +365,60 @@ Share a simple recipe:
 - кислий
 - гострий
 
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "варити" mean?
+   - [x] to boil, cook
+   - [ ] buckwheat
+   - [ ] sweet
+   - [ ] to eat one's fill
+   > "варити" means "to boil, cook"
+
+2. What does "солодкий" mean?
+   - [ ] to boil, cook
+   - [ ] buckwheat
+   - [x] sweet
+   - [ ] to eat one's fill
+   > "солодкий" means "sweet"
+
+3. What does "наїстися" mean?
+   - [ ] sweet
+   - [ ] to boil, cook
+   - [ ] buckwheat
+   - [x] to eat one's fill
+   > "наїстися" means "to eat one's fill"
+
+4. What does "гречка" mean?
+   - [ ] sweet
+   - [x] buckwheat
+   - [ ] to boil, cook
+   - [ ] to eat one's fill
+   > "гречка" means "buckwheat"
+
+5. What does "голубці" mean?
+   - [ ] to eat one's fill
+   - [ ] sweet
+   - [x] stuffed cabbage
+   - [ ] to boil, cook
+   > "голубці" means "stuffed cabbage"
+
+6. What does "фарш" mean?
+   - [x] ground meat
+   - [ ] to eat one's fill
+   - [ ] sweet
+   - [ ] to boil, cook
+   > "фарш" means "ground meat"
+
+
 ---
 
 # Vocabulary

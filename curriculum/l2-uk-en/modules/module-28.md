@@ -300,6 +300,111 @@ Describe the weather for:
 - ясно
 - похмуро
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "погода" is feminine.
+   > Correct! погода is feminine.
+
+- [x] "хмара" is feminine.
+   > Correct! хмара is feminine.
+
+- [x] "дощ" is masculine.
+   > Correct! дощ is masculine.
+
+- [x] "сніг" is masculine.
+   > Correct! сніг is masculine.
+
+- [ ] "вітер" is feminine.
+   > Incorrect. вітер is masculine.
+
+- [ ] "гроза" is masculine.
+   > Incorrect. гроза is feminine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+1. Яка ___ погода?
+   > [!answer] сьогодні
+
+2. Завтра ___ дощ.
+   > [!answer] буде
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "хмара" mean?
+   - [ ] temperature
+   - [x] cloud
+   - [ ] cold (adv)
+   - [ ] wind
+   > "хмара" means "cloud"
+
+2. What does "температура" mean?
+   - [ ] cloud
+   - [x] temperature
+   - [ ] cold (adv)
+   - [ ] wind
+   > "температура" means "temperature"
+
+3. What does "вітер" mean?
+   - [ ] cold (adv)
+   - [x] wind
+   - [ ] cloud
+   - [ ] temperature
+   > "вітер" means "wind"
+
+4. What does "холодно" mean?
+   - [x] cold (adv)
+   - [ ] cloud
+   - [ ] temperature
+   - [ ] wind
+   > "холодно" means "cold (adv)"
+
+5. What does "сніг" mean?
+   - [ ] cloud
+   - [x] snow
+   - [ ] wind
+   - [ ] temperature
+   > "сніг" means "snow"
+
+6. What does "хмарний" mean?
+   - [ ] wind
+   - [ ] cloud
+   - [ ] temperature
+   - [x] cloudy
+   > "хмарний" means "cloudy"
+
+
+
+## unjumble: Word Order
+
+> Put the words in the correct order to form a sentence.
+
+1. сьогодні / Яка / погода
+   > [!answer] Яка сьогодні погода?
+   > (What's the weather today?)
+
+2. буде / Завтра / дощ
+   > [!answer] Завтра буде дощ.
+   > (Tomorrow there will be rain.)
+
+3. сьогодні / Яка / погода
+   > [!answer] Яка сьогодні погода?
+   > (What's the weather today?)
+
+4. Яка / погода / жахлива
+   > [!answer] Яка жахлива погода!
+   > (What terrible weather!)
+
+
 ---
 
 # Vocabulary

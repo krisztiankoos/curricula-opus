@@ -388,6 +388,83 @@ Create polite requests:
 - переказ
 - депозит
 
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [x] "листівка" is feminine.
+   > Correct! листівка is feminine.
+
+- [x] "бандероль" is feminine.
+   > Correct! бандероль is feminine.
+
+- [x] "марка" is feminine.
+   > Correct! марка is feminine.
+
+- [x] "відправник" is masculine.
+   > Correct! відправник is masculine.
+
+- [ ] "одержувач" is feminine.
+   > Incorrect. одержувач is masculine.
+
+- [ ] "індекс" is feminine.
+   > Incorrect. індекс is masculine.
+
+
+## fill-in: Fill in the Blank
+
+> Fill in the blanks with the correct word.
+
+
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "відправник" mean?
+   - [ ] to exchange
+   - [ ] stamp
+   - [ ] percent, interest
+   - [x] sender
+   > "відправник" means "sender"
+
+2. What does "обміняти" mean?
+   - [x] to exchange
+   - [ ] percent, interest
+   - [ ] sender
+   - [ ] stamp
+   > "обміняти" means "to exchange"
+
+3. What does "марка" mean?
+   - [x] stamp
+   - [ ] percent, interest
+   - [ ] sender
+   - [ ] to exchange
+   > "марка" means "stamp"
+
+4. What does "відсоток" mean?
+   - [x] percent, interest
+   - [ ] sender
+   - [ ] to exchange
+   - [ ] stamp
+   > "відсоток" means "percent, interest"
+
+5. What does "індекс" mean?
+   - [ ] to exchange
+   - [x] postal code
+   - [ ] stamp
+   - [ ] sender
+   > "індекс" means "postal code"
+
+6. What does "курс" mean?
+   - [ ] sender
+   - [x] rate
+   - [ ] to exchange
+   - [ ] stamp
+   > "курс" means "rate"
+
+
 ---
 
 # Vocabulary

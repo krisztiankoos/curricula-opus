@@ -670,7 +670,7 @@ Create sentences using instrumental for means:
     - [x] кивати
     - [ ] думати
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 
@@ -725,13 +725,33 @@ Create sentences using instrumental for means:
 | трамвай | /trɑmˈvɑj/ | tram | noun | m |
 | поїзд | /ˈpojizd/ | train | noun | m |
 | літак | /lʲiˈtɑk/ | airplane | noun | m |
+| машина | /mɑˈʃɪnɑ/ | car | noun | f |
+| таксі | /tɑkˈsʲi/ | taxi | noun | n | Indeclinable |
 | велосипед | /vɛlosɪˈpɛd/ | bicycle | noun | m |
+| пішки | /ˈpʲiʃkɪ/ | on foot | adv | - |
 | олівець | /oliˈvɛtsʲ/ | pencil | noun | m |
+| ручка | /ˈrutʃkɑ/ | pen | noun | f |
+| фломастер | /flɔˈmɑstɛr/ | marker | noun | m |
+| крейда | /ˈkrɛjdɑ/ | chalk | noun | f |
+| комп'ютер | /kɔmˈpjutɛr/ | computer | noun | m |
+| телефон | /tɛlɛˈfɔn/ | phone | noun | m |
+| факс | /fɑks/ | fax | noun | m |
+| електронна пошта | /ɛlɛkˈtrɔnːɑ ˈpɔʃtɑ/ | email | noun | f |
+| повідомлення | /pɔvʲidɔmˈlʲɛnʲːɑ/ | message | noun | n |
+| мова | /ˈmɔvɑ/ | language | noun | f |
+| англійська | /ɑnˈɦlʲijsʲkɑ/ | English | adj | f |
+| українська | /ukrɑˈjinʲsʲkɑ/ | Ukrainian | adj | f |
+| спосіб | /ˈspɔsʲib/ | way, method | noun | m |
+| метод | /ˈmɛtɔd/ | method | noun | m |
+| засіб | /ˈzɑsʲib/ | means, remedy | noun | m |
+| шлях | /ʃlʲɑx/ | way, path | noun | m |
 | ніж | /nʲiʒ/ | knife | noun | m |
 | виделка | /vɪˈdɛlkɑ/ | fork | noun | f |
 | ложка | /ˈloʒkɑ/ | spoon | noun | f |
 | голос | /ˈɦolos/ | voice | noun | m |
 | шепіт | /ˈʃɛpʲit/ | whisper | noun | m |
+| крик | /krɪk/ | scream, shout | noun | m |
+| жест | /ʒɛst/ | gesture | noun | m |
 | керувати | /kɛruˈvɑtɪ/ | to drive, manage | verb | - | + instr |
 | володіти | /voloˈdʲitɪ/ | to master, own | verb | - | + instr |
 | захоплюватися | /zɑxoplʲuˈvɑtɪsʲɑ/ | to be fascinated | verb | - | + instr |

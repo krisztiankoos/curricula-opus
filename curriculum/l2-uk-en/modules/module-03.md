@@ -76,22 +76,18 @@ Before we analyze nouns, we need the words to replace them!
 | Word | Gender | Meaning |
 |------|--------|---------|
 | мам**а** | Feminine | mom |
-| кних**а** | Feminine | book |
+| книг**а** | Feminine | book |
 | земл**я** | Feminine | earth |
-| тат**о** → (Wait!) | Masculine | dad |
-
-*Note on "Тато":* Wait, `тато` ends in -o? Actually, `тато` acts like a Group II noun in singular but has mixed behaviors.
-Actually, let's look at standard Group I Masculines: **суддя** (judge), **Микола** (Mykola - name).
-Most common Group I words are Feminine.
+| тат**о** | Masculine | dad |
 
 **Rule:** If it ends in **-а** or **-я**, it's usually **Group I**.
 
 > ⚡ **Pro Tip: Natural Gender Overrides**
 >
 > Words like **тато** (dad) refer to men, so they are **Masculine** gender.
-> However, structurally, most textbooks put -a/-ya nouns here.
-> *Correction:* `тато` ends in -o, so it looks like Group II, but strictly it declines like Group I in some dialects? No, `тато` is usually Group II (hard) in singular. Let's stick to clear examples.
-> **Clear Group I Masculine:** суддя (judge), староста (elder).
+> While structurally it ends in -o, it is treated as a masculine person.
+>
+> **Clear Group I Masculine examples:** суддя (judge), староста (elder).
 
 ### Group II: The "Main" Team (Second Declension)
 
@@ -237,82 +233,88 @@ Look at these words and determine: **Group** and **Gender**.
 > Test your understanding of noun gender and declension groups.
 
 1. The noun "книга" (book) ends in **-а**, so it belongs to Declension ___.
-   > [!answer] Group I (the -а/-я team)
-   > [!options] Group I (the -а/-я team) | Group II (consonant/о/е team) | Group III (soft feminine) | Group IV (baby animals)
+   > [!answer] Group I
+   > [!options] Group I | Group II | Group III | Group IV
 
-2. The noun "стіл" (table) ends in a **consonant**, so its gender is ___.
+2. The noun "хліб" (bread) ends in a **consonant**, so its gender is ___.
    > [!answer] Masculine
    > [!options] Masculine | Feminine | Neuter | Can't tell
 
-3. The noun "вікно" (window) ends in **-о**, so its gender is ___.
+3. The noun "село" (village) ends in **-о**, so its gender is ___.
    > [!answer] Neuter
    > [!options] Masculine | Feminine | Neuter | Can't tell
 
-4. The noun "ніч" (night) ends in **-ч** (soft consonant) and is Declension III, meaning it's ___.
-   > [!answer] Feminine (exception!)
-   > [!options] Masculine | Feminine (exception!) | Neuter | Plural only
+4. The noun "сіль" (salt) ends in **-ь** and is Declension III, meaning it's ___.
+   > [!answer] Feminine
+   > [!options] Masculine | Feminine | Neuter | Plural only
 
 5. Nouns ending in **-о** or **-е** typically belong to Declension ___.
    > [!answer] Group II
    > [!options] Group I | Group II | Group III | Group IV
 
 6. The noun "радість" (joy) ends in **-ість**, which indicates Declension ___.
-   > [!answer] Group III (abstract feminine)
-   > [!options] Group I | Group II | Group III (abstract feminine) | Group IV
+   > [!answer] Group III
+   > [!options] Group I | Group II | Group III | Group IV
 
 7. Words like "теля" (calf) and "кошеня" (kitten) belong to Declension ___.
-   > [!answer] Group IV (baby animals)
-   > [!options] Group I | Group II | Group III | Group IV (baby animals)
+   > [!answer] Group IV
+   > [!options] Group I | Group II | Group III | Group IV
 
 8. The word "тато" (dad) ends in **-о** but is ___ gender.
-   > [!answer] Masculine (exception - refers to male person)
-   > [!options] Masculine (exception - refers to male person) | Feminine | Neuter | Depends on context
+   > [!answer] Masculine
+   > [!options] Masculine | Feminine | Neuter | Depends on context
 
 9. To determine how a noun changes (declines), you need to know its ___.
    > [!answer] Declension group
    > [!options] English translation | Declension group | Stress position | First letter
 
 10. Abstract nouns ending in **-ь** (like "любов" - love) are typically ___.
-    > [!answer] Feminine, Declension III
-    > [!options] Masculine, Declension II | Feminine, Declension III | Neuter, Declension II | Masculine, Declension III
+    > [!answer] Feminine
+    > [!options] Masculine | Feminine | Neuter | Can't tell
 
 ## fill-in: He, She, or It?
 
 > Replace the noun with the correct pronoun (Він, Вона, Воно).
 
-1. **Мама** (Mom) is...
+1. Мама (Mom) is replaced by ___.
    > [!answer] Вона
    > [!options] Він | Вона | Воно
 
-2. **Тато** (Dad) is...
+2. Тато (Dad) is replaced by ___.
    > [!answer] Він
    > [!options] Він | Вона | Воно
 
-3. **Стіл** (Table) is...
+3. Хліб (Bread) is replaced by ___.
    > [!answer] Він
    > [!options] Він | Вона | Воно
-   > (Masculine noun)
 
-4. **Вікно** (Window) is...
-   > [!answer] Воно
-   > [!options] Він | Вона | Воно
-   > (Neuter noun)
-
-5. **Книга** (Book) is...
-   > [!answer] Вона
-   > [!options] Він | Вона | Воно
-
-6. **Сонце** (Sun) is...
+4. Молоко (Milk) is replaced by ___.
    > [!answer] Воно
    > [!options] Він | Вона | Воно
 
-7. **День** (Day) is...
+5. Річка (River) is replaced by ___.
+   > [!answer] Вона
+   > [!options] Він | Вона | Воно
+
+6. Сонце (Sun) is replaced by ___.
+   > [!answer] Воно
+   > [!options] Він | Вона | Воно
+
+7. День (Day) is replaced by ___.
    > [!answer] Він
    > [!options] Він | Вона | Воно
 
-8. **Ніч** (Night) is...
+8. Ніч (Night) is replaced by ___.
    > [!answer] Вона
    > [!options] Він | Вона | Воно
+
+9. Село (Village) is replaced by ___.
+   > [!answer] Воно
+   > [!options] Він | Вона | Воно
+
+10. Вода (Water) is replaced by ___.
+    > [!answer] Вона
+    > [!options] Він | Вона | Воно
 
 ## unjumble: Build the Sentence
 
@@ -322,9 +324,9 @@ Look at these words and determine: **Group** and **Gender**.
    > [!answer] Це мій стіл.
    > (This is my table.)
 
-2. книга / моя / Це
-   > [!answer] Це моя книга.
-   > (This is my book.)
+2. річка / моя / Це
+   > [!answer] Це моя річка.
+   > (This is my river.)
 
 3. вікно / Це / моє
    > [!answer] Це моє вікно.
@@ -338,9 +340,9 @@ Look at these words and determine: **Group** and **Gender**.
    > [!answer] Це моє море.
    > (This is my sea.)
 
-6. мій / день / Це
-   > [!answer] Це мій день.
-   > (This is my day.)
+6. мій / хліб / Це
+   > [!answer] Це мій хліб.
+   > (This is my bread.)
 
 7. земля / Це / моя
    > [!answer] Це моя земля.
@@ -350,13 +352,13 @@ Look at these words and determine: **Group** and **Gender**.
    > [!answer] Це моє сонце.
    > (This is my sun.)
 
-9. Тут / стіл / є
-   > [!answer] Тут є стіл.
-   > (Here is a table.)
+9. Тут / село / є
+   > [!answer] Тут є село.
+   > (Here is a village.)
 
-10. є / вікно / Там
-   > [!answer] Там є вікно.
-   > (There is a window.)
+10. є / вода / Там
+    > [!answer] Там є вода.
+    > (There is water.)
 
 ## group-sort: Sort by Gender
 
@@ -365,15 +367,24 @@ Look at these words and determine: **Group** and **Gender**.
 ### Masculine (Чоловічий рід)
 - стіл
 - день
+- хліб
+- чай
+- сік
+- помідор
+- огірок
 
 ### Feminine (Жіночий рід)
 - книга
 - земля
-- група
+- річка
 - сім'я
 - ніч
 - сіль
 - радість
+- вода
+- риба
+- картопля
+- цибуля
 
 ### Neuter (Середній рід)
 - вікно
@@ -381,6 +392,10 @@ Look at these words and determine: **Group** and **Gender**.
 - сонце
 - теля
 - кошеня
+- село
+- молоко
+- м'ясо
+- яблуко
 
 ## match-up: Match the Pairs
 
@@ -395,9 +410,11 @@ Look at these words and determine: **Group** and **Gender**.
 | море | sea |
 | день | day |
 | ніч | night |
-| земля | earth |
-| сонце | sun |
-| радість | joy |
+| річка | river |
+| село | village |
+| хліб | bread |
+| молоко | milk |
+| овочі | vegetables |
 
 ## quiz: Declension & Gender Rules
 
@@ -410,7 +427,7 @@ Look at these words and determine: **Group** and **Gender**.
    - [ ] Declension Group IV (Baby Animals)
    > Group I = the "-а/-я team" - mostly feminine nouns
 
-2. The noun "стіл" (table) ends in a consonant. What is its gender?
+2. The noun "хліб" (bread) ends in a consonant. What is its gender?
    - [x] Masculine
    - [ ] Feminine
    - [ ] Neuter
@@ -445,12 +462,12 @@ Look at these words and determine: **Group** and **Gender**.
    - [ ] -я after soft consonants is neuter
    > Baby animals (-а/-я) = Group IV Neuter: теля, кошеня, курча
 
-7. Which pronoun replaces "вікно" (window)?
+7. Which pronoun replaces "молоко" (milk)?
    - [ ] Він (he)
    - [ ] Вона (she)
    - [x] Воно (it)
    - [ ] Вони (they)
-   > Вікно is Neuter (-о ending) → Воно
+   > Молоко is Neuter (-о ending) → Воно
 
 8. The word "тато" (dad) ends in -о but is Masculine because:
    - [ ] -о is always masculine
@@ -506,7 +523,6 @@ Look at these words and determine: **Group** and **Gender**.
 
 - [x] Group II contains both Masculine (consonant) and Neuter (-о/-е) nouns.
    > Correct! It's the biggest "mixed" group.
-
 ---
 
 # Vocabulary
@@ -527,7 +543,25 @@ Look at these words and determine: **Group** and **Gender**.
 | сонце | /ˈsɔnt͡sɛ/ | sun | noun | n | Group II (hard) |
 | море | /ˈmɔrɛ/ | sea | noun | n | Group II (soft) |
 | земля | /zɛmˈlʲa/ | earth | noun | f | Group I (soft) |
-| сім'я | /sʲiˈmjuɑ/ | family | noun | f | Group I (soft) |
+| сім'я | /sʲiˈmjɑ/ | family | noun | f | Group I (soft) |
+| дім | /dʲim/ | house, home | noun | m | Group II |
+| село | /sɛˈlɔ/ | village | noun | n | Group II |
+| річка | /ˈrʲitʃkɑ/ | river | noun | f | Group I |
+| хліб | /xlʲib/ | bread | noun | m | Group II |
+| вода | /vɔˈdɑ/ | water | noun | f | Group I |
+| молоко | /mɔlɔˈkɔ/ | milk | noun | n | Group II |
+| чай | /tʃɑj/ | tea | noun | m | Group II |
+| сік | /sʲik/ | juice | noun | m | Group II |
+| м'ясо | /ˈmjɑsɔ/ | meat | noun | n | Group II |
+| риба | /ˈrɪbɑ/ | fish | noun | f | Group I |
+| овочі | /ˈɔvɔtʃi/ | vegetables | noun | pl | Plural only |
+| фрукти | /ˈfruktɪ/ | fruit | noun | pl | Plural usually |
+| яблуко | /ˈjɑblukɔ/ | apple | noun | n | Group II |
+| апельсин | /ɑpɛlʲˈsɪn/ | orange | noun | m | Group II |
+| картопля | /kɑrˈtɔplʲɑ/ | potato | noun | f | Group I (soft) |
+| помідор | /pɔmʲiˈdɔr/ | tomato | noun | m | Group II |
+| огірок | /ɔɦʲiˈrɔk/ | cucumber | noun | m | Group II |
+| цибуля | /t͡sɪˈbulʲɑ/ | onion | noun | f | Group I (soft) |
 | я | /jɑ/ | I | pron | - | Subject |
 | ти | /tɪ/ | you (informal) | pron | - | Singular |
 | він | /vʲin/ | he | pron | m | Subject |

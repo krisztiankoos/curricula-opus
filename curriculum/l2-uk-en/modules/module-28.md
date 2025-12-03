@@ -455,6 +455,7 @@ Describe the weather for:
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | погода | /pɔˈɦɔdɑ/ | weather | noun | f |
+| сонце | /ˈsɔnt͡sɛ/ | sun | noun | f |
 | хмара | /ˈxmɑrɑ/ | cloud | noun | f |
 | дощ | /dɔʃtʃ/ | rain | noun | m | Йде дощ |
 | сніг | /snʲiɦ/ | snow | noun | m | Йде сніг |
@@ -466,10 +467,19 @@ Describe the weather for:
 | тепло | /ˈtɛplɔ/ | warm (adv) | adv | - | Impersonal |
 | холодно | /ˈxɔlɔdnɔ/ | cold (adv) | adv | - | Impersonal |
 | жарко | /ˈʒɑrkɔ/ | hot (adv) | adv | - | Impersonal |
-| сонячний | /sɔˈnʲɑtʃnɪj/ | sunny | adj | m |
-| хмарний | /ˈxmɑrnɪj/ | cloudy | adj | m |
+| прохолодно | /prɔxɔˈlɔdnɔ/ | cool (adv) | adv | - | Impersonal |
+| сонячний | /sɔˈnʲɑtʃnɪj/ | sunny | adj | m | сонячна (f), сонячне (n) |
+| хмарний | /ˈxmɑrnɪj/ | cloudy | adj | m | хмарна (f), хмарне (n) |
+| дощовий | /dɔʃˈtʃɔvɪj/ | rainy | adj | m | дощова (f), дощове (n) |
+| сніжний | /ˈsnʲiʒnɪj/ | snowy | adj | m | сніжна (f), сніжне (n) |
+| вітряний | /vʲitrʲɑˈnɪj/ | windy | adj | m | вітряна (f), вітряне (n) |
+| туманний | /tuˈmɑnːɪj/ | foggy | adj | m | туманна (f), туманне (n) |
 | температура | /tɛmpɛrɑˈturɑ/ | temperature | noun | f |
 | градус | /ˈɦrɑdus/ | degree | noun | m |
+| плюс | /plʲus/ | plus | noun | m |
+| мінус | /ˈmʲinus/ | minus | noun | m |
+| прогноз | /prɔˈɦnɔz/ | forecast | noun | m |
+| сезон | /sɛˈzɔn/ | season | noun | m |
 | парасолька | /pɑrɑˈsɔlʲkɑ/ | umbrella | noun | f |
 
 ---

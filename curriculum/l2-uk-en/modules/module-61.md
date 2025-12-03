@@ -660,7 +660,7 @@ Practice giving directions using prefixed verbs:
     - [ ] перейшли
     > "зайшли" means "dropped by"
 
-## order: Порядок дій у дорозі
+## unjumble: Порядок дій у дорозі
 
 > Розставте речення в логічному порядку, щоб розповісти історію.
 

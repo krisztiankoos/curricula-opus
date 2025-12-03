@@ -556,7 +556,7 @@ Transform to polite requests:
     - [ ] Було б шкода, що ти не прийдеш!
     > Use шкода що for regret: "Шкода, що ти не можеш прийти!"
 
-## order: Hypothetical Story
+## unjumble: Hypothetical Story
 
 > Put these hypothetical statements in logical order.
 

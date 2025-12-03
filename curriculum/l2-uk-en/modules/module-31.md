@@ -534,8 +534,6 @@ Practice these dialogues:
 
 ---
 
-# Vocabulary
-
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | мені | /meˈnʲi/ | to me | pron | - | Dat. of я |
@@ -547,19 +545,32 @@ Practice these dialogues:
 | їм | /jim/ | to them | pron | - | Dat. of вони |
 | кому | /koˈmu/ | to whom | pron | - | Dat. question |
 | дати | /ˈdɑtɪ/ | to give (pf) | verb | - | + dat |
+| давати | /dɑˈvɑtɪ/ | to give (impf) | verb | - | + dat |
 | казати | /kɑˈzɑtɪ/ | to tell (impf) | verb | - | + dat |
 | сказати | /skɑˈzɑtɪ/ | to tell (pf) | verb | - | + dat |
 | показувати | /pokɑˈzuvɑtɪ/ | to show (impf) | verb | - | + dat |
 | показати | /pokɑˈzɑtɪ/ | to show (pf) | verb | - | + dat |
 | допомагати | /dopoˈmɑɦɑtɪ/ | to help (impf) | verb | - | + dat |
+| допомогти | /dopomoɦˈtɪ/ | to help (pf) | verb | - | + dat |
 | дзвонити | /dzvoˈnɪtɪ/ | to call (impf) | verb | - | + dat |
 | подзвонити | /podzvonɪtɪ/ | to call (pf) | verb | - | + dat |
-| потрібний | /poˈtrʲibnɪj/ | needed | adj | m | + dat for person |
-| подобатися | /podoˈbɑtɪsʲɑ/ | to please, like | verb | - | + dat |
-| здаватися | /zdɑˈvɑtɪsʲɑ/ | to seem | verb | - | + dat |
-| дарувати | /dɑruˈvɑtɪ/ | to gift (impf) | verb | - | + dat |
+| писати | /pɪˈsɑtɪ/ | to write (impf) | verb | - | + dat |
+| написати | /nɑpɪˈsɑtɪ/ | to write (pf) | verb | - | + dat |
+| розповісти | /rozpɔvʲisˈtɪ/ | to tell a story (pf) | verb | - | + dat |
+| пояснити | /pojasˈnɪtɪ/ | to explain (pf) | verb | - | + dat |
+| запропонувати | /zɑpropɔnuˈvɑtɪ/ | to offer (pf) | verb | - | + dat |
+| принести | /prɪnɛsˈtɪ/ | to bring (pf) | verb | - | + dat |
+| послати | /pɔsˈlɑtɪ/ | to send (pf) | verb | - | + dat |
+| надіслати | /nɑdʲiˈslɑtɪ/ | to send (pf) | verb | - | + dat |
+| купити | /kuˈpɪtɪ/ | to buy (pf) | verb | - | + dat |
 | подарувати | /podɑruˈvɑtɪ/ | to gift (pf) | verb | - | + dat |
----
+| потрібний | /poˈtrʲibnɪj/ | needed (m) | adj | m | потрібна (f), потрібне (n) |
+| необхідний | /nɛɔbˈxʲidnɪj/ | necessary (m) | adj | m | необхідна (f), необхідне (n) |
+| цікавий | /tsʲiˈkɑvɪj/ | interesting (m) | adj | m | цікава (f), цікаве (n) |
+| приємний | /prɪˈjɛmnɪj/ | pleasant (m) | adj | m | приємна (f), приємне (n) |
+| важливий | /vɑʒˈlɪvɪj/ | important (m) | adj | m | важлива (f), важливе (n) |
+| корисний | /koˈrɪsnɪj/ | useful (m) | adj | m | корисна (f), корисне (n) |
+
 
 # Summary
 

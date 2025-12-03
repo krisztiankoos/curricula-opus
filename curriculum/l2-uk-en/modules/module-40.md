@@ -660,7 +660,7 @@ Example:
     - [ ] Partitive - part of whole
     - [ ]Essive - being something
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 

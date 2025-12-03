@@ -463,18 +463,30 @@ Practice the complete café experience:
 |------|-----|---------|-----|--------|------|
 | меню | /mɛˈnʲu/ | menu | noun | n | Indeclinable |
 | замовляти | /zɑmɔvˈlʲɑtɪ/ | to order | verb | - | замовляю, замовляєш |
-| рахунок | /rɑˈxunɔk/ | bill, check | noun | m |
 | столик | /ˈstɔlɪk/ | table (small) | noun | m | Diminutive of стіл |
 | місце | /ˈmʲist͡sɛ/ | seat, place | noun | n |
+| візьму | /ˈvʲizʲmu/ | I'll take | verb | - | Future of взяти |
 | принести | /prɪnɛsˈtɪ/ | to bring | verb | - | Imp: принеси, принесіть |
-| взяти | /ˈvzʲɑtɪ/ | to take | verb | - | Я візьму (I'll take) |
-| можна | /ˈmɔʒnɑ/ | may, can | adv | - | Permission |
-| склянка | /ˈsklʲɑnkɑ/ | glass | noun | f |
-| на виніс | /nɑ ˈvɪnʲis/ | to go | phrase | - | Takeaway |
-| гарячий | /ɦɑˈrʲɑtʃɪj/ | hot | adj | m |
-| холодний | /xɔˈlɔdnɪj/ | cold | adj | m |
-| страва | /ˈstrɑvɑ/ | dish, course | noun | f |
+| дати | /ˈdɑtɪ/ | to give | verb | - | Imp: дай, дайте |
+| показати | /pɔkɑˈzɑtɪ/ | to show | verb | - | Imp: покажи, покажіть |
+| повторити | /pɔvtɔrɪˈtɪ/ | to repeat | verb | - | Imp: повтори, повторіть |
+| попросити | /pɔprɔˈsɪtɪ/ | to ask (for) | verb | - | Imp: попроси, попросіть |
+| холодний | /xɔˈlɔdnɪj/ | cold | adj | m | холодна (f), холодне (n) |
+| гарячий | /ɦɑˈrʲɑtʃɪj/ | hot | adj | m | гаряча (f), гаряче (n) |
+| свіжий | /ˈsvʲiʒɪj/ | fresh | adj | m | свіжа (f), свіже (n) |
+| солодкий | /sɔˈlɔdkɪj/ | sweet | adj | m | солодка (f), солодке (n) |
+| рахунок | /rɑˈxunɔk/ | bill, check | noun | m |
 | чайові | /tʃɑjɔˈvʲi/ | tip | noun | pl | Literally "for tea" |
+| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |
+| картка | /ˈkɑrtkɑ/ | card | noun | f | Bank card |
+| решта | /ˈrɛʃtɑ/ | change (money) | noun | f |
+| достатньо | /dɔsˈtɑtʲnʲɔ/ | enough | adv | - |
+| все | /vsɛ/ | all, everything | pron | - |
+| разом | /ˈrɑzɔm/ | together | adv | - |
+| окремо | /ɔˈkrɛmɔ/ | separately | adv | - |
+| ще | /ʃtʃɛ/ | still, yet, more | adv | - |
+| спробувати | /ˈsprɔbuvɑtɪ/ | to try (perf) | verb | - | спробую |
+| порекомендувати | /pɔrɛkɔmɛnduˈvɑtɪ/ | to recommend (perf) | verb | - | порекомендую |
 
 ---
 

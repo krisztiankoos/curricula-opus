@@ -717,7 +717,7 @@ Give advice to someone looking for work:
     - [ ] поліцейський
     > Correct: "суддя" (judge)
 
-## order: Кар'єрний шлях
+## unjumble: Кар'єрний шлях
 
 > Розташуйте кроки кар'єри у правильному порядку.
 

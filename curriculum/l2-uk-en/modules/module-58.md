@@ -524,7 +524,7 @@ Present both sides:
     - [ ] Навпаки
     > Therefore/so: "Отже"
 
-## order: Put Words in Order
+## unjumble: Put Words in Order
 
 > Arrange the words to form correct sentences expressing opinions.
 

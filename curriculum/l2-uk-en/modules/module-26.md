@@ -458,16 +458,41 @@ Use adjectives to describe:
 | новий | /nɔˈvɪj/ | new | adj | m | нова (f), нове (n) |
 | старий | /stɑˈrɪj/ | old | adj | m | стара (f), старе (n) |
 | гарний | /ˈɦɑrnɪj/ | beautiful, nice | adj | m | гарна (f), гарне (n) |
+| красивий | /krɑˈsɪvɪj/ | beautiful | adj | m | красива (f), красиве (n) |
 | добрий | /ˈdɔbrɪj/ | good, kind | adj | m | добра (f), добре (n) |
 | поганий | /pɔˈɦɑnɪj/ | bad | adj | m | погана (f), погане (n) |
+| злий | /zlɪj/ | angry, evil | adj | m | зла (f), зле (n) |
 | молодий | /mɔˈlɔdɪj/ | young | adj | m | молода (f), молоде (n) |
 | розумний | /rɔˈzumnɪj/ | smart | adj | m | розумна (f), розумне (n) |
+| дурний | /durˈnɪj/ | stupid | adj | m | дурна (f), дурне (n) |
 | щасливий | /ʃtʃɑsˈlɪvɪj/ | happy | adj | m | щаслива (f), щасливе (n) |
 | сумний | /ˈsumnɪj/ | sad | adj | m | сумна (f), сумне (n) |
 | легкий | /ˈlɛɦkɪj/ | easy, light | adj | m | легка (f), легке (n) |
 | важкий | /vɑʒˈkɪj/ | hard, heavy | adj | m | важка (f), важке (n) |
 | чистий | /ˈtʃɪstɪj/ | clean | adj | m | чиста (f), чисте (n) |
 | цікавий | /t͡sʲiˈkɑvɪj/ | interesting | adj | m | цікава (f), цікаве (n) |
+| нудний | /nudˈnɪj/ | boring | adj | m | нудна (f), нудне (n) |
+| великий | /vɛˈlɪkɪj/ | big | adj | m | велика (f), велике (n) |
+| маленький | /mɑˈlɛnʲkɪj/ | small | adj | m | маленька (f), маленьке (n) |
+| високий | /vɪˈsɔkɪj/ | tall, high | adj | m | висока (f), високе (n) |
+| низький | /nɪzʲˈkɪj/ | short, low | adj | m | низька (f), низьке (n) |
+| довгий | /ˈdɔvɦɪj/ | long | adj | m | довга (f), довге (n) |
+| короткий | /kɔˈrɔtkɪj/ | short | adj | m | коротка (f), коротке (n) |
+| широкий | /ʃɪˈrɔkɪj/ | wide | adj | m | широка (f), широке (n) |
+| вузький | /vuzʲˈkɪj/ | narrow | adj | m | вузька (f), вузьке (n) |
+| сильний | /ˈsɪlʲnɪj/ | strong | adj | m | сильна (f), сильне (n) |
+| слабкий | /slɑbˈkɪj/ | weak | adj | m | слабка (f), слабке (n) |
+| швидкий | /ʃvɪdˈkɪj/ | fast | adj | m | швидка (f), швидке (n) |
+| повільний | /pɔˈvʲilʲnɪj/ | slow | adj | m | повільна (f), повільне (n) |
+| дорогий | /dɔrɔˈɦɪj/ | expensive, dear | adj | m | дорога (f), дороге (n) |
+| дешевий | /dɛˈʃɛvɪj/ | cheap | adj | m | дешева (f), дешеве (n) |
+| простий | /prɔsˈtɪj/ | simple | adj | m | проста (f), просте (n) |
+| складний | /sklɑdˈnɪj/ | difficult, complex | adj | m | складна (f), складне (n) |
+| важливий | /vɑʒˈlɪvɪj/ | important | adj | m | важлива (f), важливе (n) |
+| головний | /ɦɔlɔvˈnɪj/ | main | adj | m | головна (f), головне (n) |
+| різний | /ˈrʲiznɪj/ | different | adj | m | різна (f), різне (n) |
+| однаковий | /ɔdˈnɑkɔvɪj/ | same | adj | m | однакова (f), однакове (n) |
+| особливий | /ɔsɔˈblɪvɪj/ | special | adj | m | особлива (f), особливе (n) |
 ---
 
 # Adjective Summary

@@ -256,25 +256,25 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
    > [!answer] Це моя велика сім'я.
    > (This is my big family.) [4 words]
 
-3. нове / слово / українське / Це / моє
-   > [!answer] Це моє нове українське слово.
-   > (This is my new Ukrainian word.) [5 words]
+3. смачний / борщ / Це / український
+   > [!answer] Це смачний український борщ.
+   > (This is tasty Ukrainian borscht.) [4 words]
 
 4. місто / є / Київ / гарне
    > [!answer] Київ є гарне місто.
    > (Kyiv is a nice city.) [4 words]
 
-5. це / Що / таке
-   > [!answer] Що це таке?
-   > (What is this?) [3 words]
+5. жінка / українська / Це / красива
+   > [!answer] Це красива українська жінка.
+   > (This is a beautiful Ukrainian woman.) [4 words]
 
-6. це / Хто / там
-   > [!answer] Хто це там?
-   > (Who is that there?) [3 words]
+6. чоловік / мій / Це
+   > [!answer] Це мій чоловік.
+   > (This is my husband/man.) [3 words]
 
-7. ти / Як / сьогодні
-   > [!answer] Як ти сьогодні?
-   > (How are you today?) [3 words]
+7. чай / гарячий / Це
+   > [!answer] Це гарячий чай.
+   > (This is hot tea.) [3 words]
 
 8. центр / Там / є / великий / міста
    > [!answer] Там є великий центр міста.
@@ -296,14 +296,16 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 |------|-------|
 | чай | tea |
 | кава | coffee |
+| борщ | borscht |
 | школа | school |
 | місто | city |
-| добре | good, okay |
+| сім'я | family |
+| жінка | woman |
+| чоловік | man |
 | дякую | thank you |
 | привіт | hi, hello |
 | мова | language |
-| буква | letter (alphabet) |
-| слово | word |
+| ім'я | name |
 
 ## group-sort: Letter Sound Categories
 
@@ -469,8 +471,8 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 | школа | /ˈʃkɔlɑ/ | school | noun | f | Ш = SH |
 | центр | /t͡sɛntr/ | center | noun | m | Ц = TS |
 | місто | /ˈmʲistɔ/ | city | noun | n | Basic word |
-| сім'я | /sʲiˈmjuɑ/ | family | noun | f | ' = apostrophe, Я = YA |
-| ім'я | /iˈmjuɑ/ | name | noun | n | ' = apostrophe, Я = YA |
+| сім'я | /sʲiˈmjɑ/ | family | noun | f | ' = apostrophe, Я = YA |
+| ім'я | /iˈmjɑ/ | name | noun | n | ' = apostrophe, Я = YA |
 | жінка | /ˈʒinkɑ/ | woman | noun | f | Ж = ZH |
 | чоловік | /tʃɔlɔˈvʲik/ | man/husband | noun | m | Ч = CH |
 ---

@@ -482,13 +482,31 @@ Describe yourself or a friend:
 | спідниця | /spʲidˈnɪt͡sʲɑ/ | skirt | noun | f |
 | штани | /ʃtɑˈnɪ/ | pants | noun | pl | Always plural |
 | джинси | /ˈd͡ʒɪnsɪ/ | jeans | noun | pl | Always plural |
+| шорти | /ˈʃɔrtɪ/ | shorts | noun | pl | Always plural |
 | черевики | /tʃɛrɛˈvɪkɪ/ | shoes | noun | pl |
 | кросівки | /krɔˈsʲivkɪ/ | sneakers | noun | pl |
+| капелюх | /kɑpɛˈlʲux/ | hat | noun | m |
+| шарф | /ʃɑrf/ | scarf | noun | m |
 | вишиванка | /vɪʃɪˈvɑnkɑ/ | embroidered shirt | noun | f | Traditional |
 | волосся | /vɔˈlɔsʲːɑ/ | hair | noun | n | Collective, singular |
 | очі | /ˈɔtʃʲi/ | eyes | noun | pl | Singular: око |
 | високий | /vɪˈsɔkɪj/ | tall | adj | m |
 | худий | /xuˈdɪj/ | thin | adj | m |
+| білий | /ˈbʲilɪj/ | white | adj | m | біла (f) |
+| чорний | /ˈtʃɔrnɪj/ | black | adj | m | чорна (f) |
+| сірий | /ˈsʲirɪj/ | gray | adj | m | сіра (f) |
+| червоний | /tʃɛrˈvɔnɪj/ | red | adj | m | червона (f) |
+| помаранчевий | /pɔmɑˈrɑntʃɛvɪj/ | orange | adj | m | помаранчева (f) |
+| жовтий | /ˈʒɔvtɪj/ | yellow | adj | m | жовта (f) |
+| зелений | /zɛˈlɛnɪj/ | green | adj | m | зелена (f) |
+| синій | /ˈsɪnʲij/ | blue (dark) | adj | m | синя (f) |
+| блакитний | /blɑˈkɪtnɪj/ | blue (light) | adj | m | блакитна (f) |
+| фіолетовий | /fʲiɔˈlɛtɔvɪj/ | purple | adj | m | фіолетова (f) |
+| рожевий | /rɔˈʒɛvɪj/ | pink | adj | m | рожева (f) |
+| коричневий | /kɔˈrɪtʃnɛvɪj/ | brown | adj | m | коричнева (f) |
+| світлий | /ˈsvʲitlɪj/ | light | adj | m | світла (f) |
+| темний | /ˈtɛmnɪj/ | dark | adj | m | темна (f) |
+| яскравий | /jɑsˈkrɑvɪj/ | bright | adj | m | яскрава (f) |
 
 ---
 

@@ -216,108 +216,108 @@ Describe what you did yesterday using past tense:
 
 ## fill-in: Past Tense Formation
 
-> Choose the correct past tense form.
+> Choose the correct past tense form. Sentences focus on new past tense verbs.
 
-1. Він вчора весь день ___ цікаву українську книгу. (читати - to read)
-   > [!answer] читав
-   > [!options] читав | читала | читало | читали
+1. Він вчора ___ дуже важливу справу. (зробити - to do/make)
+   > [!answer] зробив
+   > [!options] зробив | зробила | зробило | зробили
 
-2. Вона минулого тижня ___ в нашій новій школі. (бути - to be)
-   > [!answer] була
-   > [!options] був | була | було | були
+2. Вона минулого місяця ___ свого давнього друга. (зустріти - to meet)
+   > [!answer] зустріла
+   > [!options] зустрів | зустріла | зустріло | зустріли
 
-3. Вони разом ___ цікавий український фільм увечері. (дивитися - to watch)
-   > [!answer] дивилися
-   > [!options] дивився | дивилася | дивилося | дивилися
+3. Я (m) ___ побачити цей фільм. (хотіти - to want)
+   > [!answer] хотів
+   > [!options] хотів | хотіла | хотіло | хотіли
 
-4. Я (f) ___ весь день вчора у великому офісі. (працювати - to work)
-   > [!answer] працювала
-   > [!options] працював | працювала | працювало | працювали
+4. Вони ___ все, що їм казали. (забути - to forget)
+   > [!answer] забули
+   > [!options] забув | забула | забуло | забули
 
-5. Ми вчора ввечері разом ___ смачну гарячу піцу. (їсти - to eat)
-   > [!answer] їли
-   > [!options] їв | їла | їло | їли
+5. Ми вчора ___ новий цікавий фільм. (побачити - to see)
+   > [!answer] побачили
+   > [!options] побачив | побачила | побачило | побачили
 
-6. Він пізно ввечері швидко ___ додому з роботи. (йти - to go)
-   > [!answer] ішов
-   > [!options] ішов | ішла | ішло | ішли
+6. Він дуже голосно ___ про цю проблему. (сказати - to say)
+   > [!answer] сказав
+   > [!options] сказав | сказала | сказало | сказали
 
-7. Вчора все у нас ___ дуже добре! (бути - neuter)
-   > [!answer] було
-   > [!options] був | була | було | були
+7. Я (f) ___ працювати рано вранці. (почати - to start)
+   > [!answer] почала
+   > [!options] почав | почала | почало | почали
 
-8. Вона вранці ___ гарячу смачну каву з молоком. (пити - to drink)
-   > [!answer] пила
-   > [!options] пив | пила | пило | пили
+8. Вони ___ свою роботу вчасно. (закінчити - to finish)
+   > [!answer] закінчили
+   > [!options] закінчив | закінчила | закінчило | закінчили
 
-9. Ти (m) де вчора увечері ___? (бути)
-   > [!answer] був
-   > [!options] був | була | було | були
+9. Ти (f) ___ про це? (почути - to hear)
+   > [!answer] почула
+   > [!options] почув | почула | почуло | почули
 
-10. Вони всі давно ___ разом у нашому місті. (бути)
-   > [!answer] були
-   > [!options] був | була | було | були
+10. Вчора все у них ___ дуже добре. (бути - neuter)
+    > [!answer] було
+    > [!options] був | була | було | були
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order.
+> Arrange the words in the correct order. Sentences range from 6-9 words.
 
-1. цікаву / читав / книгу / Він / вчора / весь / день / українську
-   > [!answer] Він вчора весь день читав цікаву українську книгу.
-   > (Yesterday he read an interesting Ukrainian book all day.) [8 words]
+1. важливу / Він / зробив / вчора / дуже / справу
+   > [!answer] Він вчора зробив дуже важливу справу.
+   > (Yesterday he did a very important thing.) [6 words]
 
-2. була / Вона / великій / школі / в / нашій / минулого / тижня
-   > [!answer] Вона минулого тижня була в нашій великій школі.
-   > (She was at our big school last week.) [8 words]
+2. зустріла / Вона / давнього / подругу / свою / минулого / тижня
+   > [!answer] Вона минулого тижня зустріла свою давню подругу.
+   > (She met her old friend last week.) [7 words]
 
-3. фільм / дивилися / увечері / Ми / цікавий / разом / український
-   > [!answer] Ми увечері разом дивилися цікавий український фільм.
-   > (In the evening we watched an interesting Ukrainian movie together.) [7 words]
+3. побачили / Ми / новий / український / фільм / увечері / цікавий
+   > [!answer] Ми увечері побачили новий цікавий український фільм.
+   > (We saw a new interesting Ukrainian film in the evening.) [7 words]
 
-4. вчора / весь / день / працювала / Я / великому / у / офісі
-   > [!answer] Я вчора працювала весь день у великому офісі.
-   > (Yesterday I worked all day in a big office.) [8 words]
+4. забула / Я / сказати / тобі / про / це / важливе
+   > [!answer] Я забула сказати тобі про це важливе.
+   > (I forgot to tell you about this important thing.) [7 words]
 
-5. їли / Вони / піцу / смачну / разом / гарячу / ввечері
-   > [!answer] Вони разом ввечері їли смачну гарячу піцу.
-   > (They ate delicious hot pizza together in the evening.) [7 words]
+5. почала / Вона / працювати / рано / вранці / і / закінчила / пізно
+   > [!answer] Вона почала працювати рано вранці і закінчила пізно.
+   > (She started working early in the morning and finished late.) [9 words]
 
-6. ішов / Він / швидко / додому / пізно / з / роботи / ввечері
-   > [!answer] Він пізно ввечері швидко ішов додому з роботи.
-   > (He went home quickly from work late in the evening.) [8 words]
+6. сказав / Він / правду / свою / вчора / мені / всю
+   > [!answer] Він вчора сказав мені всю свою правду.
+   > (He told me all his truth yesterday.) [7 words]
 
-7. добре / Все / було / дуже / там / нас / у / вчора
-   > [!answer] Вчора там у нас все було дуже добре.
-   > (Yesterday everything was very good there for us.) [8 words]
+7. почули / Вони / новину / цікаву / недавно / дуже
+   > [!answer] Вони недавно почули дуже цікаву новину.
+   > (They recently heard very interesting news.) [6 words]
 
-8. вчора / ти / Де / був / увечері / так / пізно
-   > [!answer] Де ти був вчора так пізно увечері?
-   > (Where were you yesterday so late in the evening?) [7 words]
+8. давно / був / Він / у / Львові / минулого / року
+   > [!!answer] Він був у Львові минулого року давно.
+   > (He was in Lviv last year a long time ago.) [8 words]
 
-9. давно / дуже / Це / було / все / нашому / у / місті
-   > [!answer] Це все було дуже давно у нашому місті.
-   > (This all was very long ago in our city.) [8 words]
+9. зустріли / друзі / Ми / багато / нових / під час / подорожі
+   > [!answer] Ми зустріли багато нових друзів під час подорожі.
+   > (We met many new friends during the trip.) [9 words]
 
-10. вчора / Що / робив / ти / вранці / рано / так
-    > [!answer] Що ти так рано робив вчора вранці?
-    > (What were you doing so early yesterday morning?) [7 words]
+10. Я (f) / вчора / пізно / працювала / в / бібліотеці / до / ночі
+    > [!answer] Я вчора працювала в бібліотеці до пізньої ночі.
+    > (Yesterday I worked in the library until late night.) [8 words]
 
-## match-up: Past Tense Forms
+## match-up: Past Tense Verbs
 
-> Match the subject to the correct past tense of бути.
+> Match the infinitive to its masculine past tense form.
 
 | Left | Right |
 |------|-------|
-| він | був |
-| вона | була |
-| воно | було |
-| вони | були |
-| я (m) | був |
-| я (f) | була |
-| ми | були |
-| ви | були |
-| ти (m) | був |
-| ти (f) | була |
+| зробити | зробив |
+| зустріти | зустрів |
+| побачити | побачив |
+| почути | почув |
+| забути | забув |
+| почати | почав |
+| закінчити | закінчив |
+| сказати | сказав |
+| бути | був |
+| йти | ішов |
 
 ## quiz: Past Tense Grammar
 
@@ -358,59 +358,59 @@ Describe what you did yesterday using past tense:
    - [x] -ли
    > All plurals (ми, ви, вони) use -ли
 
-6. What ending does the masculine singular past tense use?
-   - [x] -в
-   - [ ] -ла
-   - [ ] -ло
-   - [ ] -ли
-   > Masculine singular past ends in -в
+6. Which verb indicates a completed action in the past?
+   - [x] зробив
+   - [ ] робив
+   - [ ] робити
+   - [ ] роблю
+   > "зробив" is the perfective past form (completed action)
 
-7. How do you say "I was" if you're female?
-   - [ ] Я був
-   - [x] Я була
-   - [ ] Я було
-   - [ ] Я були
+7. How do you say "I forgot" if you're female?
+   - [ ] Я забув
+   - [x] Я забула
+   - [ ] Я забуло
+   - [ ] Я забули
    > Female speakers use feminine form
 
-8. Which form is correct for "She went" (йти)?
-   - [ ] йшла
-   - [x] ішла
-   - [ ] ійшла
-   - [ ] йдела
-   > Irregular past: йти → ішла for feminine
+8. Which form is correct for "She heard" (почути)?
+   - [ ] почувив
+   - [x] почула
+   - [ ] почуло
+   - [ ] почули
+   > Feminine past: почула
 
-9. What is the past of "їсти" for він?
-   - [x] їв
-   - [ ] їла
-   - [ ] їв
-   - [ ] їсв
-   > Irregular: їсти → їв/їла/їли
+9. What is the past of "зустріти" for вони?
+   - [ ] зустрів
+   - [ ] зустріла
+   - [ ] зустріло
+   - [x] зустріли
+   > Plural past: зустріли
 
-10. Why does past tense change for "я"?
-    - [ ] It doesn't change
-    - [x] It matches the speaker's gender
-    - [ ] It matches the object's gender
-    - [ ] It's always masculine
-    > Past tense agrees with the subject's gender
+10. What determines the form of "був/була/було/були"?
+    - [x] The gender and number of the subject
+    - [ ] The verb tense
+    - [ ] The time expression
+    - [ ] The object of the sentence
+    > "Бути" in the past agrees with the subject's gender and number
 
-## true-false: True or False?
+## true-false: Past Tense Rules
 
 > Determine if each statement is true or false.
 
 - [x] Past tense verbs must agree with the subject's gender
    > Correct!
 
-- [x] "Він читав" is correct for "He read"
+- [x] "Він зробив" is correct for "He did"
    > Correct!
 
 - [ ] "Вона був" is correct for "She was"
    > Incorrect. Feminine needs "була"
 
-- [x] "Ми читали" uses the plural ending -ли
+- [x] "Ми закінчили" uses the plural ending -ли
    > Correct!
 
-- [ ] "Я був" can be said by a female speaker
-   > Incorrect. Female speakers say "Я була"
+- [ ] "Я побачив" can be said by a female speaker
+   > Incorrect. Female speakers say "Я побачила"
 
 - [x] "Йти" has irregular past: ішов/ішла/ішли
    > Correct!
@@ -434,20 +434,29 @@ Describe what you did yesterday using past tense:
 ### Masculine (-в)
 - читав (read)
 - був (was)
-- працював (worked)
+- зробив (did)
 - ішов (went)
+- сказав (said)
 
 ### Feminine (-ла)
 - читала (read)
 - була (was)
-- працювала (worked)
+- зробила (did)
 - ішла (went)
+- сказала (said)
+
+### Neuter (-ло)
+- читало (read)
+- було (was)
+- зробило (did)
+- почуло (heard)
 
 ### Plural (-ли)
 - читали (read)
 - були (were)
-- працювали (worked)
+- зробили (did)
 - ішли (went)
+- сказали (said)
 
 ---
 
@@ -455,22 +464,30 @@ Describe what you did yesterday using past tense:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| вчора | /ˈwtʃɔrɑ/ | yesterday | adv | - |
-| позавчора | /pɔzɑˈwtʃɔrɑ/ | day before yesterday | adv | - |
+| вчора | /ˈwtʃɔrɑ/ | yesterday | adv | - | |
+| позавчора | /pɔzɑˈwtʃɔrɑ/ | day before yesterday | adv | - | |
 | минулий | /mɪˈnulɪj/ | last, past | adj | m | минулого тижня |
-| давно | /ˈdɑvnɔ/ | long ago | adv | - |
-| недавно | /nɛˈdɑvnɔ/ | recently | adv | - |
-| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - |
-| тоді | /tɔˈdʲi/ | then | adv | - |
-| потім | /pɔˈtʲim/ | then, later | adv | - |
-| вже | /vʒɛ/ | already | adv | - |
-| ще не | /ʃtʃɛ nɛ/ | not yet | phrase | - |
+| давно | /ˈdɑvnɔ/ | long ago | adv | - | |
+| недавно | /nɛˈdɑvnɔ/ | recently | adv | - | |
+| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - | |
+| тоді | /tɔˈdʲi/ | then | adv | - | |
+| потім | /pɔˈtʲim/ | then, later | adv | - | |
+| вже | /vʒɛ/ | already | adv | - | |
+| ще не | /ʃtʃɛ nɛ/ | not yet | phrase | - | |
 | був | /buv/ | was (m) | verb | m | Past of бути |
 | була | /buˈlɑ/ | was (f) | verb | f | Past of бути |
 | було | /ˈbulɔ/ | was (n) | verb | n | Past of бути |
 | були | /buˈlɪ/ | were | verb | pl | Past of бути |
 | ішов | /iˈʃɔv/ | went (m) | verb | m | Past of йти |
 | ішла | /iʃˈlɑ/ | went (f) | verb | f | Past of йти |
+| зробив | /zrɔˈbɪv/ | did, made | verb | m | completed |
+| сказав | /skɑˈzɑv/ | said, told | verb | m | completed |
+| почав | /pɔˈtʃɑv/ | started | verb | m | completed |
+| закінчив | /zɑˈkʲinʲtʃɪv/ | finished | verb | m | completed |
+| побачив | /pɔˈbɑtʃɪv/ | saw | verb | m | completed |
+| почув | /pɔˈtʃuv/ | heard | verb | m | completed |
+| забув | /zɑˈbuv/ | forgot | verb | m | completed |
+| зустрів | /zusˈtrʲiv/ | met | verb | m | completed |
 
 ---
 

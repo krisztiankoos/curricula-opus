@@ -285,11 +285,11 @@ Read these tricky words:
    > [!answer] моє
    > [!options] мій | моя | моє
 
-7. Це ___ доктор. (Doctor - masculine)
+7. Це ___ банан. (Banana - masculine)
    > [!answer] мій
    > [!options] мій | моя | моє
 
-8. Це ___ зебра. (Zebra - feminine)
+8. Це ___ піца. (Pizza - feminine)
    > [!answer] моя
    > [!options] мій | моя | моє
 
@@ -313,29 +313,29 @@ Read these tricky words:
    > [!answer] Це мій новий телефон.
    > (This is my new phone.) [4 words]
 
-5. Там / банк / і / є / парк
-   > [!answer] Там є банк і парк.
-   > (There is a bank and park.) [5 words]
+5. там / банк / і / є / кафе
+   > [!answer] Там є банк і кафе.
+   > (There is a bank and a café.) [5 words]
 
 6. моє / фото / старе / Це
    > [!answer] Це моє старе фото.
    > (This is my old photo.) [4 words]
 
-7. театр / Тут / є / великий
-   > [!answer] Тут є великий театр.
-   > (Here is a big theater.) [4 words]
+7. салат / Тут / є / смачний
+   > [!answer] Тут є смачний салат.
+   > (Here is a tasty salad.) [4 words]
 
 8. таксі / там / Моє / є
    > [!answer] Моє таксі є там.
    > (My taxi is there.) [4 words]
 
-9. і / тато / мама / Це / моя / мій
-   > [!answer] Це мій тато і моя мама.
-   > (This is my dad and my mom.) [6 words]
+9. і / піца / суп / Це / моя / мій
+   > [!answer] Це моя піца і мій суп.
+   > (This is my pizza and my soup.) [6 words]
 
-10. лампа / Моя / і / тут / фото
-    > [!answer] Моя лампа і фото тут.
-    > (My lamp and photo are here.) [5 words]
+10. музика / Моя / і / тут / відео
+    > [!answer] Моя музика і відео тут.
+    > (My music and video are here.) [5 words]
 
 ## match-up: Match the Pairs
 
@@ -343,16 +343,16 @@ Read these tricky words:
 
 | Left | Right |
 |------|-------|
-| театр | theater |
-| телефон | telephone |
-| доктор | doctor |
-| лампа | lamp |
+| піца | pizza |
+| суп | soup |
+| салат | salad |
+| хокей | hockey |
+| футбол | football |
+| лимон | lemon |
+| банан | banana |
+| турист | tourist |
+| студент | student |
 | зебра | zebra |
-| клас | class |
-| план | plan |
-| спорт | sport |
-| старт | start |
-| стоп | stop |
 
 ## group-sort: Letter Classification
 

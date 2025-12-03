@@ -473,19 +473,92 @@ Answer these questions:
 | сніданок | /snʲiˈdɑnɔk/ | breakfast | noun | m |
 | обід | /ɔˈbʲid/ | lunch | noun | m |
 | вечеря | /vɛˈtʃɛrʲɑ/ | dinner | noun | f |
+| перекус | /pɛrɛˈkus/ | snack | noun | m |
+| фрукти | /ˈfruktɪ/ | fruits | noun | pl |
+| яблуко | /ˈjɑblukɔ/ | apple | noun | n |
+| банан | /bɑˈnɑn/ | banana | noun | m |
+| апельсин | /ɑpɛlʲˈsɪn/ | orange | noun | m |
+| лимон | /lɪˈmɔn/ | lemon | noun | m |
+| груша | /ˈɦruʃɑ/ | pear | noun | f |
+| виноград | /vɪnɔˈɦrɑd/ | grapes | noun | m |
+| полуниця | /pɔluˈnɪt͡sʲɑ/ | strawberry | noun | f |
+| кавун | /kɑˈwun/ | watermelon | noun | m |
+| персик | /ˈpɛrsɪk/ | peach | noun | m |
+| слива | /ˈslɪvɑ/ | plum | noun | f |
+| овочі | /ˈɔvɔtʃi/ | vegetables | noun | pl |
 | картопля | /kɑrˈtɔplʲɑ/ | potato | noun | f | Collective, no plural |
+| морква | /ˈmɔrkvɑ/ | carrot | noun | f |
+| цибуля | /t͡sɪˈbulʲɑ/ | onion | noun | f |
+| часник | /t͡ʃɑsˈnɪk/ | garlic | noun | m |
 | помідор | /pɔmʲiˈdɔr/ | tomato | noun | m |
-| огірок | /ɔˈɦʲirɔk/ | cucumber | noun | m |
-| курка | /ˈkurkɑ/ | chicken | noun | f |
+| огірок | /ɔɦʲiˈrɔk/ | cucumber | noun | m |
+| капуста | /kɑˈpustɑ/ | cabbage | noun | f |
+| буряк | /buˈrʲɑk/ | beet | noun | m |
+| перець | /ˈpɛrɛt͡sʲ/ | pepper | noun | m |
+| гриби | /ɦrɪˈbɪ/ | mushrooms | noun | pl |
 | м'ясо | /ˈmjɑsɔ/ | meat | noun | n |
+| курка | /ˈkurkɑ/ | chicken | noun | f |
+| свинина | /svɪˈnɪnɑ/ | pork | noun | f |
+| яловичина | /jɑlɔvɪˈtʃɪnɑ/ | beef | noun | f |
 | риба | /ˈrɪbɑ/ | fish | noun | f |
+| яйце | /jɑjˈt͡sɛ/ | egg | noun | n |
+| ковбаса | /kɔu̯bɑˈsɑ/ | sausage | noun | f |
+| шинка | /ˈʃɪnkɑ/ | ham | noun | f |
+| сало | /ˈsɑlɔ/ | pork fat | noun | n | Cured, sliced thin |
+| молоко | /mɔlɔˈkɔ/ | milk | noun | n |
+| сир | /sɪr/ | cheese/cottage cheese | noun | m |
+| сметана | /smɛˈtɑnɑ/ | sour cream | noun | f |
+| масло | /ˈmɑslɔ/ | butter | noun | n |
+| йогурт | /ˈjɔɦurt/ | yogurt | noun | m |
+| кефір | /kɛˈfʲir/ | kefir | noun | m |
+| вершки | /ˈvɛrʃkɪ/ | cream | noun | pl |
+| вода | /ˈvɔdɑ/ | water | noun | f |
+| кава | /ˈkɑvɑ/ | coffee | noun | f |
+| чай | /tʃɑj/ | tea | noun | m |
+| сік | /sʲik/ | juice | noun | m |
+| пиво | /ˈpɪvɔ/ | beer | noun | n |
+| вино | /vɪˈnɔ/ | wine | noun | n |
+| компот | /kɔmˈpɔt/ | fruit drink | noun | m |
+| узвар | /uzˈvɑr/ | dried fruit drink | noun | m |
+| хліб | /xlʲib/ | bread | noun | m |
+| рис | /rɪs/ | rice | noun | m |
+| макарони | /mɑkɑˈrɔnɪ/ | pasta | noun | pl |
+| каша | /ˈkɑʃɑ/ | porridge | noun | f | Buckwheat, oats, etc. |
+| суп | /sup/ | soup | noun | m |
 | борщ | /bɔrʃtʃ/ | borscht | noun | m | Beet soup |
 | вареники | /vɑˈrɛnɪkɪ/ | dumplings | noun | pl | Singular: вареник |
-| сало | /ˈsɑlɔ/ | pork fat | noun | n | Cured, sliced thin |
-| каша | /ˈkɑʃɑ/ | porridge | noun | f | Buckwheat, oats, etc. |
+| салат | /sɑˈlɑt/ | salad | noun | m |
+| піца | /ˈpitsɑ/ | pizza | noun | f |
+| бутерброд | /butɛrˈbrɔd/ | sandwich | noun | m |
 | смачний | /ˈsmɑtʃnɪj/ | tasty | adj | m | смачна (f), смачне (n) |
 | свіжий | /ˈsvʲiʒɪj/ | fresh | adj | m | свіжа (f), свіже (n) |
 | смачного | /smɑtʃˈnɔɦɔ/ | bon appétit | phrase | - | Literally "of tasty" |
+| меню | /mɛˈnʲu/ | menu | noun | n | Indeclinable |
+| страва | /ˈstrɑvɑ/ | dish, course | noun | f |
+| закуска | /zɑˈkuskɑ/ | appetizer | noun | f |
+| головна страва | /ɦɔˈlɔvnɑ ˈstrɑvɑ/ | main course | phrase | f |
+| десерт | /dɛˈsɛrt/ | dessert | noun | m |
+| напій | /ˈnɑpij/ | drink | noun | m |
+| смажений | /ˈsmɑʒɛnɪj/ | fried | adj | m |
+| варений | /vɑˈrɛnɪj/ | boiled | adj | m |
+| печений | /ˈpɛtʃɛnɪj/ | baked | adj | m |
+| гарячий | /ɦɑˈrʲɑtʃɪj/ | hot | adj | m |
+| холодний | /xɔˈlɔdnɪj/ | cold | adj | m |
+| солодкий | /sɔˈlɔdkɪj/ | sweet | adj | m |
+| солоний | /sɔˈlɔnɪj/ | salty | adj | m |
+| гострий | /ˈɦɔstrɪj/ | spicy | adj | m |
+| порція | /ˈpɔrt͡sʲijɑ/ | portion | noun | f |
+| тарілка | /tɑˈrʲilkɑ/ | plate | noun | f |
+| склянка | /ˈsklʲɑnkɑ/ | glass | noun | f |
+| пляшка | /ˈplʲɑʃkɑ/ | bottle | noun | f |
+| офіціант | /ɔfʲit͡sʲiˈɑnt/ | waiter | noun | m |
+| замовлення | /zɑmɔvˈlʲɛnʲːɑ/ | order (food) | noun | n |
+| рахунок | /rɑˈxunɔk/ | bill, check | noun | m |
+| чайові | /tʃɑjɔˈvʲi/ | tip | noun | pl |
+| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |
+| картка | /ˈkɑrtkɑ/ | card | noun | f |
+| долар | /ˈdɔlɑr/ | dollar | noun | m |
+| євро | /ˈjɛvrɔ/ | euro | noun | n |
 
 ---
 

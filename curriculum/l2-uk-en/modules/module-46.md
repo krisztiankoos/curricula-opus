@@ -537,7 +537,7 @@ Advice:
     - [ ] Якщо можливо, давай зустрічаємося.
     > Use perfective for single meeting: "Якщо можливо, давай зустрінемось завтра."
 
-## order: Conditional Logic
+## unjumble: Conditional Logic
 
 > Put these conditional sentences in logical order to form a plan.
 

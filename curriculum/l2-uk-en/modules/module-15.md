@@ -469,17 +469,35 @@ Example:
 |------|-----|---------|-----|--------|------|
 | прямо | /ˈprʲɑmɔ/ | straight | adv | - |
 | праворуч | /prɑˈvɔrutʃ/ | to the right | adv | - | право = right |
+| направо | /nɑˈprɑvɔ/ | to the right | adv | - | Synonym |
 | ліворуч | /lʲiˈvɔrutʃ/ | to the left | adv | - | ліво = left |
+| наліво | /nɑˈlʲivɔ/ | to the left | adv | - | Synonym |
 | назад | /nɑˈzɑd/ | back | adv | - |
 | близько | /ˈblɪzʲkɔ/ | near, close | adv | - |
 | далеко | /dɑˈlɛkɔ/ | far | adv | - |
+| поруч | /ˈpɔrutʃ/ | nearby, next to | adv | - |
 | біля | /ˈbʲilʲɑ/ | near, by | prep | - | + genitive |
 | до | /dɔ/ | to, toward | prep | - | + genitive |
+| від | /vʲid/ | from | prep | - | + genitive |
 | навпроти | /nɑuˈprɔtɪ/ | opposite | prep | - | + genitive |
 | за | /zɑ/ | behind | prep | - | + instrumental |
+| перед | /ˈpɛrɛd/ | in front of | prep | - | + instrumental |
+| між | /mʲiʒ/ | between | prep | - | + instrumental |
+| через | /ˈtʃɛrɛz/ | through, across | prep | - | + accusative |
+| вздовж | /vzdɔvʒ/ | along | prep | - | + genitive |
+| туди | /tuˈdɪ/ | (to) there | adv | - | Direction |
+| сюди | /sʲuˈdɪ/ | (to) here | adv | - | Direction |
+| звідти | /ˈzvʲidtɪ/ | from there | adv | - | Direction |
 | зупинка | /zuˈpɪnkɑ/ | stop | noun | f | Bus, tram stop |
 | квартал | /kvɑrˈtɑl/ | block | noun | m |
 | ріг | /rʲiɦ/ | corner | noun | m | За рогом |
+| перехрестя | /pɛrɛˈxrɛsʲtʲɑ/ | intersection | noun | n |
+| світлофор | /svʲitlɔˈfɔr/ | traffic light | noun | m |
+| міст | /mʲist/ | bridge | noun | m |
+| набережна | /nɑbɛˈrɛʒnɑ/ | embankment | noun | f |
+| проспект | /prɔˈspɛkt/ | avenue | noun | m |
+| бульвар | /bulʲˈvɑr/ | boulevard | noun | m |
+| провулок | /prɔˈvulɔk/ | lane | noun | m |
 | вхід | /vxʲid/ | entrance | noun | m |
 | вихід | /ˈvɪxʲid/ | exit | noun | m |
 | аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f |
@@ -487,8 +505,16 @@ Example:
 | пошта | /ˈpɔʃtɑ/ | post office | noun | f |
 | ринок | /ˈrɪnɔk/ | market | noun | m |
 | йти | /jtɪ/ | to go (on foot) | verb | - | Imp: йди, йдіть |
+| пішки | /ˈpʲiʃkɪ/ | on foot | adv | - |
 | повернути | /pɔvɛrˈnutɪ/ | to turn | verb | - | Imp: поверни, поверніть |
 | перейти | /pɛrɛjˈtɪ/ | to cross | verb | - | Imp: перейди, перейдіть |
+| їхати | /ˈjixɑtɪ/ | to go (vehicle) | verb | - | Imp: їдь, їдьте |
+| автобус | /ɑu̯ˈtɔbus/ | bus | noun | m |
+| трамвай | /trɑmˈvɑj/ | tram | noun | m |
+| тролейбус | /trɔˈlɛjbus/ | trolleybus | noun | m |
+| таксі | /tɑkˈsʲi/ | taxi | noun | n |
+| машина | /mɑˈʃɪnɑ/ | car | noun | f |
+| велосипед | /vɛlɔsɪˈpɛd/ | bicycle | noun | m |
 
 ---
 

@@ -466,6 +466,10 @@ Say what you want:
 | класти | /ˈklɑstɪ/ | to put | verb | - | кладу, кладеш + Acc |
 | відкривати | /vʲidkrɪˈvɑtɪ/ | to open | verb | - | відкриваю + Acc |
 | закривати | /zɑkrɪˈvɑtɪ/ | to close | verb | - | закриваю + Acc |
+| вмикати | /vmɪˈkɑtɪ/ | to turn on | verb | - | вмикаю + Acc |
+| вимикати | /vɪmɪˈkɑtɪ/ | to turn off | verb | - | вимикаю + Acc |
+| показувати | /pɔˈkɑzuvɑtɪ/ | to show | verb | - | показую + Acc |
+| ховати | /xɔˈvɑtɪ/ | to hide | verb | - | ховаю + Acc |
 | газета | /ɦɑˈzɛtɑ/ | newspaper | noun | f | газету in Acc |
 | журнал | /ʒurˈnɑl/ | magazine | noun | m | No change in Acc |
 | конверт | /kɔnˈvɛrt/ | envelope | noun | m | No change |

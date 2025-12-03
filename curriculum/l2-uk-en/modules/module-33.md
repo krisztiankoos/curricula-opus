@@ -247,12 +247,6 @@ Create sentences with impersonal + dative:
 
 ---
 
----
-
----
-
----
-
 # Activities
 
 ## fill-in: Dative Verbs
@@ -357,9 +351,9 @@ Create sentences with impersonal + dative:
 | належати | to belong |
 | відповідати | to answer |
 | заважати | to disturb |
-| для | for |
+| бракувати | to lack |
 | сумно | sad |
-| щасливий | happy |
+| потрібно | necessary/needed |
 | важко | hard, difficult |
 
 ## quiz: Meaning Check
@@ -603,13 +597,28 @@ Create sentences with impersonal + dative:
 | відповідати | /vidpoviˈdɑtɪ/ | to answer | verb | - | + dat |
 | заважати | /zɑvɑˈʒɑtɪ/ | to disturb | verb | - | + dat |
 | радити | /ˈrɑdɪtɪ/ | to advise | verb | - | + dat |
-| належати | /nɑlɛˈʒɑtɪ/ | to belong | verb | - | + dat |
+| належати | /nɑˈlɛʒɑtɪ/ | to belong | verb | - | + dat |
 | вдаватися | /vdɑˈvɑtɪsʲɑ/ | to succeed | verb | - | + dat |
 | щастити | /ʃtʃɑˈstɪtɪ/ | to be lucky | verb | - | + dat |
 | снитися | /snɪˈtɪsʲɑ/ | to appear in dream | verb | - | + dat |
-| личити | /lɪˈtʃɪtɪ/ | to suit/become | verb | - | + dat |
+| личити | /ˈlɪtʃɪtɪ/ | to suit/become | verb | - | + dat |
 | бракувати | /brɑkuˈvɑtɪ/ | to lack | verb | - | + dat + gen |
-| повідомляти | /poviˈdomlʲɑtɪ/ | to inform | verb | - | + dat |
+| повідомляти | /povidomˈlʲɑtɪ/ | to inform | verb | - | + dat |
+| давати | /dɑˈvɑtɪ/ | to give (impf) | verb | - | + dat |
+| казати | /kɑˈzɑtɪ/ | to tell (impf) | verb | - | + dat |
+| говорити | /ɦɔvɔˈrɪtɪ/ | to speak (impf) | verb | - | + dat |
+| розповідати | /rɔzpɔvʲiˈdɑtɪ/ | to tell a story (impf) | verb | - | + dat |
+| пояснювати | /pɔˈjɑsnʲuvɑtɪ/ | to explain (impf) | verb | - | + dat |
+| допомагати | /dɔpɔmɑˈɦɑtɪ/ | to help (impf) | verb | - | + dat |
+| пропонувати | /prɔpɔnuˈvɑtɪ/ | to offer (impf) | verb | - | + dat |
+| дзвонити | /dzvɔˈnɪtɪ/ | to call (impf) | verb | - | + dat |
+| писати | /pɪˈsɑtɪ/ | to write (impf) | verb | - | + dat |
+| дякувати | /ˈdʲɑkuvɑtɪ/ | to thank (impf) | verb | - | + dat |
+| вибачатися | /vɪbɑˈtʃɑtɪsʲɑ/ | to apologize | verb | - | перед + instr (usually) |
+| шкодити | /ˈʃkɔdɪtɪ/ | to harm | verb | - | + dat |
+| подобатися | /pɔˈdɔbɑtɪsʲɑ/ | to like | verb | - | + dat |
+| вистачати | /vɪstɑˈtʃɑtɪ/ | to be enough | verb | - | + dat + gen |
+| здаватися | /zdɑˈvɑtɪsʲɑ/ | to seem | verb | - | + dat |
 | важко | /ˈvɑʒko/ | hard, difficult | adv | - | + dat |
 | весело | /ˈvɛsɛlo/ | fun, merry | adv | - | + dat |
 | сумно | /ˈsumno/ | sad | adv | - | + dat |

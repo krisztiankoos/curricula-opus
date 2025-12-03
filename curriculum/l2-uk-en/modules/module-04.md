@@ -271,9 +271,9 @@ Turn these statements into questions (just add ?):
    > [!answer] дизайнер
    > [!options] дизайнер | лікарка | американка | подруга
 
-4. Ми — ___. (We are students.)
-   > [!answer] студенти
-   > [!options] студент | студентка | студенти | інженер
+4. Цей ___ - мій друг. (This guy is my friend.)
+   > [!answer] хлопець
+   > [!options] хлопець | дівчина | людина | чоловік
 
 5. Ти — ___? (Are you American?) [to a female]
    > [!answer] американка
@@ -283,13 +283,23 @@ Turn these statements into questions (just add ?):
    > [!answer] лікарі
    > [!options] лікар | лікарка | лікарі | вчитель
 
-7. Це ___ друг. (This is my friend.) [masculine]
-   > [!answer] мій
-   > [!options] мій | моя | моє | мої
+7. Це ___ людина. (This is a good person.)
+   > [!answer] добра
+   > [!options] добра | добрий | добре | добрі
 
-8. Це ___ подруга. (This is your friend.) [feminine]
-   > [!answer] твоя
-   > [!options] твій | твоя | твоє | твої
+8. Ця ___ - моя сестра. (This girl is my sister.)
+   > [!answer] дівчина
+   > [!options] дівчина | хлопець | чоловік | студент
+
+9. Вона — ___. (She is a programmer.)
+   > [!answer] програміст
+   > [!options] програміст | програмістка | інженер | менеджер
+   > (Profession nouns like "програміст" use same form for both genders)
+
+10. Це ___ книга. (This is my book.)
+    > [!answer] моя
+    > [!options] мій | моя | моє | мої
+    > (книга is feminine, so моя is required)
 
 ## unjumble: Build the Sentence
 
@@ -307,17 +317,17 @@ Turn these statements into questions (just add ?):
    > [!answer] Ти канадець чи американець?
    > (Are you Canadian or American?) [4 words]
 
-4. подруга / Це / моя / найкраща
-   > [!answer] Це моя найкраща подруга.
-   > (This is my best friend.) [4 words]
+4. людина / Він / дуже / добра
+   > [!answer] Він дуже добра людина.
+   > (He is a very good person.) [4 words]
 
 5. Я / тут / не / сьогодні
    > [!answer] Я сьогодні не тут.
    > (I am not here today.) [4 words]
 
-6. друг / там / твій / Де
-   > [!answer] Де там твій друг?
-   > (Where is your friend there?) [4 words]
+6. хлопець / там / той / Де
+   > [!answer] Де той хлопець там?
+   > (Where is that guy there?) [4 words]
 
 7. українці / Ми / всі / тут
    > [!answer] Ми всі тут українці.
@@ -327,13 +337,13 @@ Turn these statements into questions (just add ?):
    > [!answer] Я дизайнер, а вона лікарка.
    > (I'm a designer, and she's a doctor.) [5 words]
 
-9. менеджер / Він / новий / наш
-   > [!answer] Він наш новий менеджер.
-   > (He is our new manager.) [4 words]
+9. чоловік / Це / твій / чи / брат
+   > [!answer] Це твій чоловік чи брат?
+   > (Is this your husband or brother?) [5 words]
 
-10. програміст / Вона / чи / інженер
-    > [!answer] Вона програміст чи інженер?
-    > (Is she a programmer or engineer?) [4 words]
+10. дівчина / Вона / красива / дуже
+    > [!answer] Вона дуже красива дівчина.
+    > (She is a very beautiful girl.) [4 words]
 
 ## match-up: Match the Pairs
 
@@ -343,14 +353,14 @@ Turn these statements into questions (just add ?):
 |------|-------|
 | вчитель | teacher (male) |
 | лікарка | doctor (female) |
-| інженер | engineer |
-| дизайнер | designer |
-| американець | American (male) |
-| канадка | Canadian (female) |
-| англієць | English (male) |
-| програміст | programmer |
+| людина | person, human |
+| чоловік | man, husband |
+| жінка | woman, wife |
+| хлопець | boy, guy |
+| дівчина | girl |
 | друг | friend (male) |
 | подруга | friend (female) |
+| інженер | engineer |
 
 ## group-sort: Profession Gender Forms
 
@@ -491,6 +501,12 @@ Turn these statements into questions (just add ?):
 |------|-----|---------|-----|--------|------|
 | це | /t͡sɛ/ | this, this is | pron | - | Invariable - never changes |
 | то | /tɔ/ | that | pron | - | Less common than це |
+| ось | /ɔsʲ/ | here is, look | part | - | Pointing out |
+| людина | /lʲuˈdɪnɑ/ | person, human | noun | f | Plural: люди |
+| чоловік | /tʃɔlɔˈvʲik/ | man, husband | noun | m |
+| жінка | /ˈʒinkɑ/ | woman, wife | noun | f |
+| хлопець | /ˈxlɔpɛt͡sʲ/ | boy, boyfriend | noun | m |
+| дівчина | /ˈdʲivtʃɪnɑ/ | girl, girlfriend | noun | f |
 | дизайнер | /dɪˈzɑjnɛr/ | designer | noun | m | Profession |
 | інженер | /inʒɛˈnɛr/ | engineer | noun | m | Profession |
 | менеджер | /ˈmɛnɛdʒɛr/ | manager | noun | m | Profession |

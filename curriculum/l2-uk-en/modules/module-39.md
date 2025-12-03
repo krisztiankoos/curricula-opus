@@ -676,7 +676,7 @@ Create polite requests:
     - [x] рахунок
     - [ ] доставка
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 
@@ -726,33 +726,52 @@ Create polite requests:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
+| пошта | /ˈpɔʃtɑ/ | post office | noun | f |
+| поштове відділення | /pɔˈʃtɔvɛ vʲidˈdʲilɛnʲːɑ/ | post office branch | phrase | n |
+| лист | /lɪst/ | letter | noun | m |
 | листівка | /lɪsˈtʲifkɑ/ | postcard | noun | f |
+| посилка | /pɔˈsɪlkɑ/ | package | noun | f |
 | бандероль | /bɑndɛˈrolʲ/ | small parcel | noun | f |
 | марка | /ˈmɑrkɑ/ | stamp | noun | f |
+| конверт | /kɔnˈvɛrt/ | envelope | noun | m |
+| адреса | /ɑˈdrɛsɑ/ | address | noun | f |
 | відправник | /vʲidprɑvˈnɪk/ | sender | noun | m |
-| одержувач | /odɛrˈʒuvɑtʃ/ | recipient | noun | m |
-| індекс | /ˈindɛks/ | postal code | noun | m |
-| квитанція | /kvɪˈtɑntsʲijɑ/ | receipt | noun | f |
-| доставка | /dosˈtɑfkɑ/ | delivery | noun | f |
-| вага | /vɑˈɦɑ/ | weight | noun | f |
+| одержувач | /ɔdɛrˈʒuvɑtʃ/ | recipient | noun | m |
+| банк | /bɑnk/ | bank | noun | m |
+| рахунок | /rɑˈxunɔk/ | account, bill | noun | m |
+| картка | /ˈkɑrtkɑ/ | card | noun | f |
+| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |
 | переказ | /pɛrɛˈkɑz/ | transfer | noun | m |
-| обмін | /obˈmʲin/ | exchange | noun | m |
+| обмін валют | /ɔbˈmʲin vɑˈlʲut/ | currency exchange | phrase | m |
 | курс | /kurs/ | rate | noun | m |
-| депозит | /dɛpoˈzɪt/ | deposit | noun | m |
+| долар | /ˈdɔlɑr/ | dollar | noun | m |
+| євро | /ˈjɛvrɔ/ | euro | noun | n |
+| гривня | /ˈɦrɪvnʲɑ/ | hryvnia | noun | f |
+| депозит | /dɛpɔˈzɪt/ | deposit | noun | m |
 | кредит | /krɛˈdɪt/ | credit, loan | noun | m |
-| відсоток | /vʲidˈsotok/ | percent, interest | noun | m |
-| банкомат | /bɑnkoˈmɑt/ | ATM | noun | m |
-| комісія | /koˈmʲisʲijɑ/ | commission | noun | f |
+| позика | /pɔˈzɪkɑ/ | loan | noun | f |
+| відсоток | /vʲidˈsɔtɔk/ | percent, interest | noun | m |
+| банкомат | /bɑnkɔˈmɑt/ | ATM | noun | m |
+| каса | /ˈkɑsɑ/ | cash desk | noun | f |
+| касир | /kɑˈsɪr/ | cashier | noun | m |
+| черга | /ˈtʃɛrɦɑ/ | queue, line | noun | f |
+| квитанція | /kvɪˈtɑntsʲijɑ/ | receipt | noun | f |
+| чек | /tʃɛk/ | receipt, check | noun | m |
 | підпис | /ˈpʲidpɪs/ | signature | noun | m |
-| виписка | /ˈvɪpɪskɑ/ | statement | noun | f |
+| форма | /ˈfɔrmɑ/ | form | noun | f |
+| документ | /dɔkuˈmɛnt/ | document | noun | m |
+| паспорт | /ˈpɑspɔrt/ | passport | noun | m |
+| посвідчення | /pɔsˈvʲidtʃɛnʲːɑ/ | ID, certificate | noun | n |
+| комісія | /kɔˈmʲisʲijɑ/ | commission | noun | f |
+| термін | /ˈtɛrmʲin/ | term, deadline | noun | m |
+| безкоштовно | /bɛzkɔˈʃtɔvnɔ/ | free of charge | adv | - |
+| платний | /ˈplɑtnɪj/ | paid | adj | m |
 | надіслати | /nɑdʲisˈlɑtɪ/ | to send | verb | - | + acc + dat |
 | відправити | /vʲidprɑˈvɪtɪ/ | to send, dispatch | verb | - | + acc |
 | обміняти | /obmʲiˈnʲɑtɪ/ | to exchange | verb | - | + acc + на + acc |
 | зняти | /znʲɑˈtɪ/ | to withdraw | verb | - | + acc + з + gen |
 | переказати | /pɛrɛkɑˈzɑtɪ/ | to transfer | verb | - | + acc + dat |
 | заповнити | /zɑˈpovnɪtɪ/ | to fill out | verb | - | + acc |
-| розписатися | /rozpɪˈsɑtɪsʲɑ/ | to sign | verb | - |
-| перерахувати | /pɛrɛrɑxuˈvɑtɪ/ | to count, recount | verb | - | + acc |
 
 ---
 

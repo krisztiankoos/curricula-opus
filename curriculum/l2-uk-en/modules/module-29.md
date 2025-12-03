@@ -461,10 +461,30 @@ Tell about your family:
 | дитина | /dɪˈtɪnɑ/ | child | noun | f | Pl: діти! |
 | дідусь | /dʲiˈdusʲ/ | grandpa | noun | m |
 | бабуся | /bɑˈbusʲɑ/ | grandma | noun | f |
+| онук | /ɔˈnuk/ | grandson | noun | m |
+| онука | /ɔˈnukɑ/ | granddaughter | noun | f |
+| дядько | /ˈdʲɑdʲkɔ/ | uncle (father's/mother's brother) | noun | m |
+| тітка | /ˈtʲitkɑ/ | aunt (father's/mother's sister) | noun | f |
 | чоловік | /tʃɔlɔˈvʲik/ | husband | noun | m | Also: man |
 | дружина | /druˈʒɪnɑ/ | wife | noun | f |
+| наречений | /nɑrɛˈtʃɛnɪj/ | fiancé | noun | m |
+| наречена | /nɑrɛˈtʃɛnɑ/ | fiancée | noun | f |
 | одружений | /ɔˈdruʒɛnɪj/ | married (m) | adj | m | одружена (f) |
+| неодружений | /nɛɔˈdruʒɛnɪj/ | unmarried (m) | adj | m | неодружена (f) |
+| розлучений | /rɔzˈlutʃɛnɪj/ | divorced (m) | adj | m | розлучена (f) |
+| вдівець | /ˈvdʲivɛt͡sʲ/ | widower | noun | m |
+| вдова | /ˈvdɔvɑ/ | widow | noun | f |
+| старший | /ˈstɑrʃɪj/ | older (m) | adj | m | старша (f), старше (n) |
+| молодший | /ˈmɔlɔdʃɪj/ | younger (m) | adj | m | молодша (f), молодше (n) |
+| середній | /sɛˈrɛdnʲij/ | middle (m) | adj | m | середня (f), середнє (n) |
+| єдиний | /jɛˈdɪnɪj/ | sole, only (m) | adj | m | єдина (f), єдине (n) |
 | родич | /ˈrɔdɪtʃ/ | relative | noun | m | Pl: родичі |
+| сім'я | /sʲiˈmjɑ/ | family | noun | f |
+| родина | /rɔˈdɪnɑ/ | family (broader) | noun | f |
+| мама | /ˈmɑmɑ/ | mom | noun | f |
+| тато | /ˈtɑtɔ/ | dad | noun | m |
+| брат | /brɑt/ | brother | noun | m |
+| сестра | /sɛˈstrɑ/ | sister | noun | f |
 
 ---
 

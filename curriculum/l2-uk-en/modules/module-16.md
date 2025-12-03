@@ -475,11 +475,30 @@ Say what you don't have:
 | немає | /nɛˈmɑjɛ/ | there is no | verb | - | + genitive |
 | без | /bɛz/ | without | prep | - | + genitive |
 | для | /dlʲɑ/ | for | prep | - | + genitive |
+| крім | /krʲim/ | except for | prep | - | + genitive |
 | з / із | /z/ /iz/ | from, out of | prep | - | + genitive |
 | після | /ˈpʲislʲɑ/ | after | prep | - | + genitive |
 | від | /vʲid/ | from | prep | - | + genitive |
+| у / в | /u/ /v/ | at, near (possession) | prep | - | + genitive (e.g. у мене) |
 | час | /tʃɑs/ | time | noun | m | Gen: часу |
 | гроші | /ˈɦrɔʃʲi/ | money | noun | pl | Gen: грошей |
+| ідея | /iˈdɛjɑ/ | idea | noun | f | Gen: ідеї |
+| проблема | /prɔˈblɛmɑ/ | problem | noun | f | Gen: проблеми |
+| можливість | /mɔʒˈlɪvʲisʲtʲ/ | opportunity | noun | f | Gen: можливості |
+| причина | /prɪˈtʃɪnɑ/ | reason | noun | f | Gen: причини |
+| сенс | /sɛns/ | sense, meaning | noun | m | Gen: сенсу |
+| користь | /ˈkɔrɪstʲ/ | benefit | noun | f | Gen: користі |
+| значення | /ˈznɑtʃɛnʲːɑ/ | meaning, significance | noun | n | Gen: значення |
+| різниця | /ˈrʲiznɪt͡sʲɑ/ | difference | noun | f | Gen: різниці |
+| вибір | /ˈvɪbʲir/ | choice | noun | m | Gen: вибору |
+| досвід | /ˈdɔsvʲid/ | experience | noun | m | Gen: досвіду |
+| знання | /znɑnˈnʲɑ/ | knowledge | noun | pl | Gen: знань |
+| інформація | /infɔrˈmɑt͡sʲijɑ/ | information | noun | f | Gen: інформації |
+| допомога | /dɔpɔˈmɔɦɑ/ | help | noun | f | Gen: допомоги |
+| підтримка | /pʲidˈtrɪmkɑ/ | support | noun | f | Gen: підтримки |
+| увага | /uˈvɑɦɑ/ | attention | noun | f | Gen: уваги |
+| терпіння | /tɛrˈpʲinʲːɑ/ | patience | noun | n | Gen: терпіння |
+| сила | /ˈsɪlɑ/ | strength, power | noun | f | Gen: сили |
 | хліб | /xlʲib/ | bread | noun | m | Gen: хліба |
 | цукор | /ˈt͡sukɔr/ | sugar | noun | m | Gen: цукру |
 | чашка | /ˈtʃɑʃkɑ/ | cup | noun | f | Gen: чашки |

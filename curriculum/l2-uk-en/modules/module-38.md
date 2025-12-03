@@ -641,7 +641,7 @@ Create sentences using all given elements:
     - [x] між деревами
     - [x] автобусом (transport)
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 

@@ -445,12 +445,21 @@ Describe using possessives:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
+| мій | /mʲij/ | my (masculine) | pron | m | моя (f), моє (n), мої (pl) |
+| твій | /tvʲij/ | your (masc, informal) | pron | m | твоя (f), твоє (n), твої (pl) |
+| його | /jɔˈɦɔ/ | his, its | pron | - | Invariable |
+| її | /jiˈji/ | her, hers | pron | - | Invariable |
 | наш | /nɑʃ/ | our (m) | pron | m | наша (f), наше (n), наші (pl) |
 | ваш | /vɑʃ/ | your (m, formal) | pron | m | ваша (f), ваше (n), ваші (pl) |
 | їхній | /ˈjixnʲij/ | their (m) | pron | m | їхня (f), їхнє (n), їхні (pl) |
 | свій | /svʲij/ | one's own (m) | pron | m | своя (f), своє (n), свої (pl) |
 | чий | /tʃɪj/ | whose (m) | pron | m | чия (f), чиє (n), чиї (pl) |
 | річ | /rʲitʃ/ | thing | noun | f | Plural: речі |
+| власний | /ˈvlɑsnɪj/ | own, personal | adj | m |
+| чужий | /tʃuˈʒɪj/ | someone else's | adj | m | foreign/alien |
+| спільний | /ˈsʲpʲilʲnɪj/ | common, shared | adj | m |
+| разом | /ˈrɑzɔm/ | together | adv | - |
+| окремо | /ɔˈkrɛmɔ/ | separately | adv | - |
 | родина | /rɔˈdɪnɑ/ | family | noun | f |
 | машина | /mɑˈʃɪnɑ/ | car | noun | f |
 

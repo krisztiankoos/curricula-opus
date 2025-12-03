@@ -387,13 +387,13 @@ Answer:
    > modal + infinitive
 
 10. How do you say "She can't come"?
-   - [ ] Вона не можу прийти
-   - [x] Вона не може прийти
-   - [ ] Вона не можуть прийти
-   - [ ] Вона не можемо прийти
-   > вона не може + infinitive
+    - [ ] Вона не можу прийти
+    - [x] Вона не може прийти
+    - [ ] Вона не можуть прийти
+    - [ ] Вона не можемо прийти
+    > вона не може + infinitive
 
-## true-false: True or False?
+## true-false: Modal Rules
 
 > Determine if each statement is true or false.
 
@@ -421,7 +421,7 @@ Answer:
 - [x] "Я хотів би" is a polite form for "I would like"
    > Correct!
 
-- [ ] "Можу" and "можуть" mean the same thing
+- [ ] "Можу" and "можуть" mean exactly the same thing
    > Incorrect. можу = I can, можуть = they can
 
 - [x] "Потрібно" is a synonym of "треба"
@@ -431,98 +431,19 @@ Answer:
 
 > Sort these expressions by their function.
 
-### Ability (Can)
+### Ability/Skill
 - можу (I can)
-- можеш (you can)
-- може (he/she can)
-- можуть (they can)
+- вмію (I know how)
+- здатний (capable)
 
-### Obligation (Must)
+### Obligation/Necessity
 - мушу (I must)
-- мусить (he/she must)
-- повинен (should - m)
-- повинна (should - f)
+- повинен (should)
+- треба (necessary)
+- необхідно (necessary)
 
-### Necessity (Need)
-- треба (it's necessary)
-- потрібно (it's needed)
-- мені треба (I need)
-- тобі треба (you need)
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| могти | /mɔɦˈtɪ/ | can, to be able | verb | - | можу, можеш, може |
-| мусити | /muˈsɪtɪ/ | must, have to | verb | - | мушу, мусиш, мусить |
-| повинен | /pɔˈvɪnɛn/ | should, ought to (m) | adj | m | повинна (f), повинні (pl) |
-| треба | /ˈtrɛbɑ/ | it's necessary | adv | - | + dative + infinitive |
-| потрібно | /pɔˈtrʲibnɔ/ | it's needed | adv | - | = треба |
-| допомогти | /dɔpɔmɔɦˈtɪ/ | to help (perf) | verb | - |
-| зрозуміти | /zrɔzuˈmʲitɪ/ | to understand (perf) | verb | - |
-| поспішати | /pɔspʲiˈʃɑtɪ/ | to hurry | verb | - |
-| закінчити | /zɑˈkʲintʃɪtɪ/ | to finish | verb | - |
-| почекати | /pɔtʃɛˈkɑtɪ/ | to wait (perf) | verb | - |
-| відпочити | /vʲidpɔˈtʃɪtɪ/ | to rest | verb | - |
-| платити | /plɑˈtɪtɪ/ | to pay | verb | - |
-
----
-
-# Modal Summary
-
-## Ability: Могти
-
-| Person | Form |
-|--------|------|
-| я | можу |
-| ти | можеш |
-| він/вона | може |
-| ми | можемо |
-| ви | можете |
-| вони | можуть |
-
-## Obligation: Мусити
-
-| Person | Form |
-|--------|------|
-| я | мушу |
-| ти | мусиш |
-| він/вона | мусить |
-| ми | мусимо |
-| ви | мусите |
-| вони | мусять |
-
-## Should: Повинен
-
-| Form | Used with |
-|------|-----------|
-| повинен | masculine singular |
-| повинна | feminine singular |
-| повинне | neuter singular |
-| повинні | plural |
-
-## Impersonal: Треба + Dative
-
-Мені треба / Тобі треба / Нам треба + infinitive
-
----
-
-# Summary
-
-> 💡 **What You Learned Today**
->
-> - **Могти** (can): можу, можеш, може...
-> - **Мусити** (must): мушу, мусиш, мусить...
-> - **Повинен** (should): agrees with gender!
-> - **Треба/потрібно** + dative for impersonal necessity
-> - All modals take an infinitive after them
-> - Polite: Я хотів/хотіла би...
-
-> 🎯 **Coming Next**
->
-> In Module 25, you'll learn about **daily routines**:
-> - Я прокидаюся о сьомій. (I wake up at 7.)
-> - Reflexive verbs for daily activities
-> - Describing your typical day
+### Permission/Prohibition
+- можна (allowed)
+- дозволено (allowed)
+- не можна (forbidden)
+- заборонено (forbidden)

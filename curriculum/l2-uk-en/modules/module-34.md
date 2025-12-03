@@ -670,6 +670,21 @@ Create sentences: Subject + verb + з + instrumental
 | вами | /ˈvɑmɪ/ | (with) you | pron | - | Instr. of ви |
 | ними | /ˈnɪmɪ/ | (with) them | pron | - | Instr. of вони |
 | компанія | /kompɑˈnʲijɑ/ | company, group | noun | f |
+| група | /ˈhrupɑ/ | group | noun | f |
+| команда | /kɔˈmɑndɑ/ | team | noun | f |
+| пара | /ˈpɑrɑ/ | couple, pair | noun | f |
+| родина | /rɔˈdɪnɑ/ | family | noun | f |
+| сім'я | /sʲiˈmjɑ/ | family | noun | f |
+| колега | /kɔˈlɛɦɑ/ | colleague (m/f) | noun | m/f | Instr: колегою |
+| сусіди | /suˈsʲidɪ/ | neighbors | noun | pl |
+| знайомі | /znɑˈjɔmʲi/ | acquaintances | noun | pl |
+| партнер | /pɑrtˈnɛr/ | partner | noun | m |
+| напарник | /nɑˈpɑrnɪk/ | partner, teammate | noun | m |
+| супутник | /suˈputnɪk/ | companion | noun | m |
+| товариш | /tɔˈvɑrɪʃ/ | comrade, friend | noun | m |
+| приятель | /prɪˈjɑtɛlʲ/ | buddy, pal | noun | m |
+| ворог | /ˈvɔrɔɦ/ | enemy | noun | m |
+| натовп | /ˈnɑtɔu̯p/ | crowd | noun | m |
 
 ---
 

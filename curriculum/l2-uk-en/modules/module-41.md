@@ -581,7 +581,7 @@ Generally (imperfective for habits):
     - [ ] Він буде купувати машину.
     > Use perfective for completed single action: "Він купив нову машину минулого місяця."
 
-## order: Aspect Story Sequence
+## unjumble: Aspect Story Sequence
 
 > Put these perfective actions in logical order to tell a story.
 

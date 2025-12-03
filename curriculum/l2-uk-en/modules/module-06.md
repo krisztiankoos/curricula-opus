@@ -528,6 +528,24 @@ Practice asking questions:
 | розуміти | /rɔzuˈmʲitɪ/ | to understand | verb | - | Class II: розумію, розумієш... |
 | думати | /ˈdumɑtɪ/ | to think | verb | - | Class I: думаю, думаєш... |
 | хотіти | /xɔˈtʲitɪ/ | to want | verb | - | Irregular: хочу, хочеш... |
+| чекати | /tʃɛˈkɑtɪ/ | to wait | verb | - | Class I: чекаю |
+| питати | /pɪˈtɑtɪ/ | to ask | verb | - | Class I: питаю |
+| відповідати | /vʲidpɔvʲiˈdɑtɪ/ | to answer | verb | - | Class I: відповідаю |
+| відпочивати | /vʲidpɔtʃɪˈvɑtɪ/ | to rest | verb | - | Class I: відпочиваю |
+| снідати | /sʲnʲiˈdɑtɪ/ | to have breakfast | verb | - | Class I: снідаю |
+| обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - | Class I: обідаю |
+| вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - | Class I: вечеряю |
+| гуляти | /ɦuˈlʲɑtɪ/ | to walk, stroll | verb | - | Class I: гуляю |
+| грати | /ˈɦrɑtɪ/ | to play | verb | - | Class I: граю |
+| співати | /sʲpʲiˈvɑtɪ/ | to sing | verb | - | Class I: співаю |
+| танцювати | /tɑnt͡sʲuˈvɑtɪ/ | to dance | verb | - | Class I: танцюю |
+| малювати | /mɑlʲuˈvɑtɪ/ | to draw, paint | verb | - | Class I: малюю |
+| мріяти | /ˈmrʲijɑtɪ/ | to dream | verb | - | Class I: мрію |
+| починати | /pɔtʃɪˈnɑtɪ/ | to start | verb | - | Class I: починаю |
+| закінчувати | /zɑˈkʲintʃuˈvɑtɪ/ | to finish | verb | - | Class I: закінчую |
+| шукати | /ʃuˈkɑtɪ/ | to search, look for | verb | - | Class I: шукаю |
+| знаходити | /znɑˈxɔdɪtɪ/ | to find | verb | - | Class II: знаходжу |
+| називати | /nɑzɪˈvɑtɪ/ | to name, call | verb | - | Class I: називаю |
 | не | /nɛ/ | not | part | - | Goes before verb |
 | лист | /lɪst/ | letter | noun | m | Object of писати |
 | кожен день | /ˈkɔʒɛn dɛnʲ/ | every day | phrase | - | Time expression |

@@ -566,7 +566,7 @@ Make comparatives from these adjectives:
     - [ ] Цей телефон менше ніж мій.
     > Use masculine comparative: "Цей телефон дешевший ніж мій."
 
-## order: Size Comparison
+## unjumble: Size Comparison
 
 > Order these items from smallest to largest.
 

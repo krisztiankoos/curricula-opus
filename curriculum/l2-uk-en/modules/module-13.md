@@ -438,17 +438,37 @@ Where are these things/people?
 | в / у | /v/ /u/ | in, at | prep | - | В after vowels, У after consonants |
 | на | /nɑ/ | on, at | prep | - | Surfaces, events, open areas |
 | кімната | /kʲimˈnɑtɑ/ | room | noun | f | Loc: кімнаті |
+| кухня | /ˈkuxnʲɑ/ | kitchen | noun | f | Loc: кухні |
+| ванна | /ˈvɑnːɑ/ | bathroom | noun | f | Loc: ванні |
+| спальня | /ˈspɑlʲnʲɑ/ | bedroom | noun | f | Loc: спальні |
+| вітальня | /vʲiˈtɑlʲnʲɑ/ | living room | noun | f | Loc: вітальні |
+| коридор | /kɔrɪˈdɔr/ | hallway | noun | m | Loc: коридорі |
+| балкон | /bɑlˈkɔn/ | balcony | noun | m | Loc: балконі |
+| поверх | /ˈpɔvɛrx/ | floor (level) | noun | m | Loc: поверсі |
+| будинок | /buˈdɪnɔk/ | building, house | noun | m | Loc: будинку |
+| квартира | /kvɑrˈtɪrɑ/ | apartment | noun | f | Loc: квартирі |
 | офіс | /ˈɔfʲis/ | office | noun | m | Loc: офісі |
+| робота | /rɔˈbɔtɑ/ | work | noun | f | Loc: роботі |
 | школа | /ˈʃkɔlɑ/ | school | noun | f | Loc: школі |
 | університет | /unʲivɛrsɪˈtɛt/ | university | noun | m | Loc: університеті |
+| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | noun | f | Loc: лікарні |
 | магазин | /mɑɦɑˈzɪn/ | store | noun | m | Loc: магазині |
+| аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f | Loc: аптеці |
+| ринок | /ˈrɪnɔk/ | market | noun | m | Loc: ринку |
+| центр | /t͡sɛntr/ | center | noun | m | Loc: центрі |
 | ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | Loc: ресторані |
+| готель | /ɦɔˈtɛlʲ/ | hotel | noun | m | Loc: готелі |
+| парк | /pɑrk/ | park | noun | m | Loc: парку |
+| пляж | /plʲɑʒ/ | beach | noun | m | Loc: пляжі |
+| музей | /muˈzɛj/ | museum | noun | m | Loc: музеї |
+| театр | /tɛˈɑtr/ | theater | noun | m | Loc: театрі |
+| кінотеатр | /kʲinɔtɛˈɑtr/ | cinema | noun | m | Loc: кінотеатрі |
+| стадіон | /stɑdʲiˈɔn/ | stadium | noun | m | Loc: стадіоні |
+| церква | /ˈt͡sɛrkvɑ/ | church | noun | f | Loc: церкві |
 | вулиця | /ˈvulɪt͡sʲɑ/ | street | noun | f | Loc: вулиці |
 | площа | /ˈplɔʃt͡ʃɑ/ | square | noun | f | Loc: площі |
-| центр | /t͡sɛntr/ | center | noun | m | Loc: центрі |
 | станція | /ˈstɑnt͡sʲijɑ/ | station | noun | f | Loc: станції |
 | аеропорт | /ɑɛrɔˈpɔrt/ | airport | noun | m | Loc: аеропорту |
-| готель | /ɦɔˈtɛlʲ/ | hotel | noun | m | Loc: готелі |
 | Київ | /ˈkɪjiu̯/ | Kyiv | noun | m | Loc: Києві |
 ---
 

@@ -521,7 +521,7 @@ Create sentences about news:
     - [ ] Заборонено
     > Worth watching: "Варто"
 
-## order: Put Words in Order
+## unjumble: Put Words in Order
 
 > Arrange the words to form correct passive/impersonal sentences.
 

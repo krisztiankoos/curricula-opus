@@ -221,93 +221,93 @@ Write or speak about your typical day:
 
 # Activities
 
-## fill-in: Daily Routine Verbs
+## fill-in: Daily Routine Verbs and Adverbs
 
-> Choose the correct reflexive verb form. (A1: 3-5 words)
+> Choose the correct word or form to complete the routine description.
 
-1. Я ___ о сьомій. (wake up)
-   > [!answer] прокидаюся
-   > [!options] прокидаюся | прокидаєшся | прокидається
+1. Я ___ (usually) прокидаюся о сьомій годині ранку.
+   > [!answer] зазвичай
+   > [!options] зазвичай | ніколи | рідко | іноді
 
-2. Він ___ у ванній. (wash)
-   > [!answer] вмивається
-   > [!options] вмиваюся | вмивається | вмиваються
+2. Він спочатку вмивається, а ___ (then) снідає.
+   > [!answer] потім
+   > [!options] потім | спочатку | нарешті | завжди
 
-3. Вона ___ швидко вранці. (get dressed)
-   > [!answer] одягається
-   > [!options] одягаюся | одягається | одягаються
+3. Вона ___ (always) чистить зуби після сніданку.
+   > [!answer] завжди
+   > [!options] завжди | ніколи | вчора | завтра
 
-4. Я ___ о восьмій. (have breakfast)
-   > [!answer] снідаю
-   > [!options] снідаю | снідаєш | снідає
+4. Ми ___ (finally) закінчили роботу о дев'ятій вечора.
+   > [!answer] нарешті
+   > [!options] нарешті | спочатку | зазвичай | іноді
 
-5. Він ___ з роботи. (return)
-   > [!answer] повертається
-   > [!options] повертаюся | повертається | повертаються
+5. У мене є корисна ___ (habit) робити зарядку вранці.
+   > [!answer] звичка
+   > [!options] звичка | розпорядок | робота | вечір
 
-6. Ми ___ разом вдома. (have dinner)
-   > [!answer] вечеряємо
-   > [!options] вечеряю | вечеряємо | вечеряють
+6. Мій денний ___ (schedule) дуже напружений сьогодні.
+   > [!answer] розпорядок
+   > [!options] розпорядок | звичка | сніданок | душ
 
-7. Вони ___ о десятій. (go to bed)
-   > [!answer] лягають
-   > [!options] лягаю | лягаєш | лягають
+7. ___ (First) я приймаю душ, а потім одягаюся.
+   > [!answer] Спочатку
+   > [!options] Спочатку | Потім | Нарешті | Завжди
 
-8. Я ___ зуби щодня. (brush)
-   > [!answer] чищу
-   > [!options] чищу | чистиш | чистить
+8. Він ___ (never) не спізнюється на роботу.
+   > [!answer] ніколи
+   > [!options] ніколи | завжди | часто | іноді
 
-9. Вона ___ о першій. (have lunch)
-   > [!answer] обідає
-   > [!options] обідаю | обідає | обідаємо
+9. Я ___ (sometimes) читаю книгу перед сном.
+   > [!answer] іноді
+   > [!options] іноді | ніколи | спочатку | потім
 
-10. Ти ___ о шостій? (get up)
-    > [!answer] встаєш
-    > [!options] встаю | встаєш | встає
+10. ___ (After that) як я повечеряв, я дивлюся телевізор.
+    > [!answer] Після того
+    > [!options] Після того | Перед тим | Спочатку | Нарешті
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. (A1: 4-6 words)
+> Arrange the words in the correct order. Sentences include sequence words and frequency.
 
-1. о / прокидаюся / Я / сьомій
-   > [!answer] Я прокидаюся о сьомій.
-   > (I wake up at seven.) [4 words]
+1. прокидаюся / Я / зазвичай / рано / дуже / вранці
+   > [!answer] Я зазвичай прокидаюся дуже рано вранці.
+   > (I usually wake up very early in the morning.) [7 words]
 
-2. швидко / Він / вмивається / вранці
-   > [!answer] Він швидко вмивається вранці.
-   > (He washes quickly in the morning.) [4 words]
+2. потім / Спочатку / я / вмиваюся / а / снідаю
+   > [!answer] Спочатку я вмиваюся, а потім снідаю.
+   > (First I wash myself, and then I eat breakfast.) [7 words]
 
-3. снідає / Вона / о / восьмій
-   > [!answer] Вона снідає о восьмій.
-   > (She has breakfast at eight.) [4 words]
+3. зуби / Вона / чистить / завжди / ввечері / перед / сном
+   > [!answer] Вона завжди чистить зуби ввечері перед сном.
+   > (She always brushes her teeth in the evening before sleep.) [8 words]
 
-4. з / повертається / Він / роботи
-   > [!answer] Він повертається з роботи.
-   > (He returns from work.) [4 words]
+4. роботу / з / повертається / Він / пізно / додому
+   > [!answer] Він пізно повертається з роботи додому.
+   > (He returns home from work late.) [6 words]
 
-5. вдома / Ми / вечеряємо / разом
-   > [!answer] Ми вечеряємо разом вдома.
-   > (We have dinner together at home.) [4 words]
+5. разом / Ми / вечеряємо / вдома / часто / сім'єю
+   > [!answer] Ми часто вечеряємо вдома разом з сім'єю.
+   > (We often have dinner at home together with family.) [7 words]
 
-6. спати / о / лягають / Вони / десятій
-   > [!answer] Вони лягають спати о десятій.
-   > (They go to bed at ten.) [5 words]
+6. лягають / спати / Вони / о / ніколи / десятій / не
+   > [!answer] Вони ніколи не лягають спати о десятій.
+   > (They never go to bed at ten.) [8 words]
 
-7. зуби / Я / чищу / вранці
-   > [!answer] Я чищу зуби вранці.
-   > (I brush my teeth in the morning.) [4 words]
+7. душ / Я / приймаю / щодня / вранці / гарячий
+   > [!answer] Я щодня приймаю гарячий душ вранці.
+   > (I take a hot shower every morning.) [7 words]
 
-8. о / встає / Вона / шостій
-   > [!answer] Вона встає о шостій.
-   > (She gets up at six.) [4 words]
+8. швидко / одягається / Вона / і / виходить / з / дому
+   > [!answer] Вона швидко одягається і виходить з дому.
+   > (She dresses quickly and leaves the house.) [8 words]
 
-9. одягається / Він / швидко / завжди
-   > [!answer] Він завжди одягається швидко.
-   > (He always gets dressed quickly.) [4 words]
+9. обідає / Він / о / зазвичай / першій / годині / дня
+   > [!answer] Він зазвичай обідає о першій годині дня.
+   > (He usually has lunch at one o'clock in the afternoon.) [8 words]
 
-10. о / обідаємо / Ми / першій
-    > [!answer] Ми обідаємо о першій.
-    > (We have lunch at one.) [4 words]
+10. того / Після / як / я / прийшов / відпочиваю / я
+    > [!answer] Після того, як я прийшов, я відпочиваю.
+    > (After I arrived, I rest.) [8 words]
 
 ## match-up: Daily Routine Vocabulary
 
@@ -316,33 +316,33 @@ Write or speak about your typical day:
 | Left | Right |
 |------|-------|
 | прокидатися | to wake up |
-| вставати | to get up |
 | вмиватися | to wash (face) |
 | одягатися | to get dressed |
 | снідати | to have breakfast |
-| обідати | to have lunch |
-| вечеряти | to have dinner |
-| повертатися | to return |
-| лягати спати | to go to bed |
-| засинати | to fall asleep |
+| спочатку | first, at first |
+| потім | then, after that |
+| нарешті | finally |
+| зазвичай | usually |
+| щодня | every day |
+| ніколи | never |
 
 ## quiz: Daily Routine Grammar
 
 > Choose the correct answer.
 
-1. What does -ся at the end of verbs indicate?
-   - [x] reflexive action (done to oneself)
-   - [ ] past tense
-   - [ ] future tense
-   - [ ] negative
-   > -ся means "oneself" (from себе)
+1. What does "зазвичай" mean?
+   - [x] usually
+   - [ ] never
+   - [ ] always
+   - [ ] sometimes
+   > "зазвичай" indicates habit
 
-2. What is "я прокидаюся" in English?
-   - [x] I wake up
-   - [ ] I get dressed
-   - [ ] I wash
-   - [ ] I return
-   > прокидатися = to wake up
+2. What implies a sequence?
+   - [ ] щодня
+   - [x] потім
+   - [ ] рідко
+   - [ ] завжди
+   > "потім" means "then" or "after that"
 
 3. How do you say "at 7 o'clock"?
    - [x] о сьомій
@@ -372,12 +372,12 @@ Write or speak about your typical day:
    - [ ] Я миваю зуби
    > чистити зуби = to brush teeth
 
-7. What does "зазвичай" mean?
-   - [x] usually
-   - [ ] always
-   - [ ] never
-   - [ ] sometimes
-   > зазвичай = usually
+7. What is "звичка"?
+   - [ ] breakfast
+   - [x] habit
+   - [ ] shower
+   - [ ] dinner
+   > "звичка" means "habit"
 
 8. How do you say "I work from 9 to 5"?
    - [x] Я працюю з дев'ятої до п'ятої
@@ -393,25 +393,25 @@ Write or speak about your typical day:
    - [ ] to get up
    > лягати спати = to lie down to sleep
 
-10. What does "ввечері" mean?
-   - [x] in the evening
-   - [ ] in the morning
-   - [ ] at night
-   - [ ] during the day
-   > ввечері = in the evening
+10. What does "нарешті" mean?
+    - [x] finally
+    - [ ] at first
+    - [ ] usually
+    - [ ] never
+    > "нарешті" implies the end of a sequence
 
 ## true-false: True or False?
 
 > Determine if each statement is true or false.
 
-- [x] Reflexive verbs end in -ся
+- [x] "Спочатку" introduces the first action in a sequence.
    > Correct!
 
-- [x] "Прокидатися" means "to wake up"
+- [x] "Потім" is used to link subsequent actions.
    > Correct!
 
-- [ ] "Вставати" and "прокидатися" mean the same thing
-   > Incorrect. вставати = to get up, прокидатися = to wake up
+- [ ] "Ніколи" means "always".
+   > Incorrect. "Ніколи" means "never".
 
 - [x] "Чистити зуби" means "to brush teeth"
    > Correct!
@@ -422,14 +422,14 @@ Write or speak about your typical day:
 - [ ] "Вмиватися" means "to shower"
    > Incorrect. вмиватися = to wash (face), приймати душ = to shower
 
-- [x] "Спочатку" means "first"
+- [x] "Нарешті" implies a conclusion or relief.
    > Correct!
 
 - [x] "Засинати" means "to fall asleep"
    > Correct!
 
-- [ ] "Ввечері" means "in the morning"
-   > Incorrect. ввечері = in the evening, вранці = in the morning
+- [ ] "Завжди" means "sometimes".
+   > Incorrect. "Завжди" means "always".
 
 - [x] Time expressions use "о" + locative case
    > Correct!
@@ -466,10 +466,12 @@ Write or speak about your typical day:
 | вмиватися | /vmɪˈvɑtɪsʲɑ/ | to wash (face) | verb | - | Reflexive |
 | одягатися | /ɔˈdʲɑɦɑtɪsʲɑ/ | to get dressed | verb | - | Reflexive |
 | роздягатися | /rɔzˈdʲɑɦɑtɪsʲɑ/ | to undress | verb | - | Reflexive |
+| збиратися | /zbɪˈrɑtɪsʲɑ/ | to get ready | verb | - | Also: to plan |
 | снідати | /snʲiˈdɑtɪ/ | to have breakfast | verb | - |
 | обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - |
 | вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - |
 | виходити | /vɪxɔˈdɪtɪ/ | to go out, leave | verb | - |
+| приходити | /prɪˈxɔdɪtɪ/ | to arrive, come | verb | - |
 | повертатися | /pɔvɛrˈtɑtɪsʲɑ/ | to return | verb | - | Reflexive |
 | лягати | /lʲɑˈɦɑtɪ/ | to lie down | verb | - | лягати спати |
 | засинати | /zɑsɪˈnɑtɪ/ | to fall asleep | verb | - |
@@ -477,9 +479,17 @@ Write or speak about your typical day:
 | чистити | /ˈtʃɪstɪtɪ/ | to clean, brush | verb | - | чистити зуби |
 | душ | /duʃ/ | shower | noun | m | приймати душ |
 | зуби | /ˈzubɪ/ | teeth | noun | pl | Singular: зуб |
+| розпорядок | /rɔzpɔˈrʲɑdɔk/ | schedule, routine | noun | m |
+| звичка | /ˈzvɪtʃkɑ/ | habit | noun | f |
 | спочатку | /spɔˈtʃɑtku/ | first, at first | adv | - |
+| потім | /ˈpɔtʲim/ | then, later | adv | - |
+| після того | /ˈpʲislʲɑ ˈtɔɦɔ/ | after that | phrase | - |
+| нарешті | /nɑˈrɛʃtʲi/ | finally | adv | - |
 | зазвичай | /zɑˈzvɪtʃɑj/ | usually | adv | - |
 | щодня | /ʃtʃɔˈdnʲɑ/ | every day | adv | - |
+| завжди | /ˈzɑvʒdɪ/ | always | adv | - |
+| ніколи | /nʲiˈkɔlɪ/ | never | adv | - |
+| іноді | /ˈinɔdʲi/ | sometimes | adv | - |
 
 ---
 

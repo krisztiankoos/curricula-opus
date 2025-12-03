@@ -23,121 +23,168 @@ grammar:
 
 ## warm-up
 
-### Halfway Through A1!
+### A Tourist's Tale: One Week in Kyiv
 
-You've completed A1.2 - the navigation phase! Let's see what you've mastered:
+**Ліам** (26, Irish, Dublin) arrived in Kyiv exactly seven days ago. Yesterday evening, at his hostel near Контрактова площа, he wrote this in his journal:
 
-✅ **Accusative** - Direct objects (Я бачу книгу)
-✅ **Locative** - Locations (Я в офісі)
-✅ **Genitive** - Possession & absence (немає часу)
-✅ **Possessives** - My, your, his, her (мій, твій, його, її)
-✅ **City vocabulary** - Metro, directions, places
-✅ **Food vocabulary** - Meals, ingredients, ordering
-✅ **Shopping** - Prices, sizes, colors
+> *"Day 7 in Kyiv. I can't believe how much I've learned. On Monday, I couldn't order coffee. Today, I navigated the metro alone, bargained at Бессарабський ринок, and had a full conversation with my Airbnb host. The cases still confuse me sometimes - is it 'у Київі' or 'до Києва'? - but I'm starting to feel the patterns. Tomorrow I take the A1.2 checkpoint. Nervous but ready."*
+
+This module is your checkpoint moment - just like Ліам's. Let's prove how far you've come!
 
 > 💡 **Did You Know?**
 >
-> With these three cases, you can:
-> - Say what you see, want, and love (accusative)
-> - Say where you are and where things are (locative)
-> - Say what belongs to whom and what's missing (genitive)
->
-> That covers about 70% of everyday case usage!
+> With just three cases (Accusative, Locative, Genitive), you can handle about 70% of everyday situations. Add possessives, and you're truly navigating Ukrainian life. That's the power of A1.2!
 
 ## presentation
 
-### Case Review
+### Ліам's Week: Case by Case
 
-**Accusative (Знахідний)** - Direct Object
+Follow Ліам through his week to review each case in context:
 
-| Type | Nominative → Accusative | Example |
-|------|-------------------------|---------|
-| M. inanimate | no change | бачу стіл |
-| M. animate | → -а/-я | бачу студента |
-| F. -а | → -у | бачу книгу |
-| F. -я | → -ю | бачу землю |
-| N. | no change | бачу вікно |
+**Day 1-2: Accusative (Знахідний)** - What Ліам saw and wanted
 
-**Locative (Місцевий)** - Location
+| Ліам's journal | English |
+|----------------|---------|
+| Я бачу собор. (bâchu sobor) | I see a cathedral. |
+| Я бачу студента. (bâchu studénta) | I see a student. |
+| Я хочу каву. (khóchu kâvu) | I want coffee. |
+| Я читаю книгу. (chytáyu knýhu) | I'm reading a book. |
 
-| Type | Nominative → Locative | Example |
-|------|----------------------|---------|
-| M. | → -і/-ові/-у | в офісі |
-| F. -а | → -і | в школі |
-| F. -я | → -і | на станції |
-| N. | → -і | на морі |
+**Case endings quick reference:**
 
-**Genitive (Родовий)** - Possession/Absence
+| Type | Nom. → Acc. | Ліам's example |
+|------|-------------|----------------|
+| M. inanimate | no change | бачу **стіл** |
+| M. animate | → -а/-я | бачу **студента** |
+| F. -а | → -у | бачу **книгу** |
+| F. -я | → -ю | бачу **землю** |
+| N. | no change | бачу **вікно** |
 
-| Type | Nominative → Genitive | Example |
-|------|----------------------|---------|
-| M. | → -а/-я | немає часу |
-| F. -а | → -и | немає книги |
-| F. -я | → -і | кінець землі |
-| N. | → -а/-я | немає вікна |
+---
 
-### Possessive Review
+**Day 3-4: Locative (Місцевий)** - Where Ліам was
+
+| Ліам's journal | English |
+|----------------|---------|
+| Я в готелі. (ya v hotéli) | I'm in the hotel. |
+| Кава на столі. (kâva na stolí) | The coffee is on the table. |
+| Я був у музеї. (ya buv u muzéyi) | I was in the museum. |
+| Ми на станції. (my na stántsii) | We're at the station. |
+
+**Case endings quick reference:**
+
+| Type | Nom. → Loc. | Ліам's example |
+|------|-------------|----------------|
+| M. | → -і/-ові/-у | в **офісі**, на **ринку** |
+| F. -а | → -і | в **школі** |
+| F. -я | → -і | на **станції** |
+| N. | → -і | на **морі** |
+
+---
+
+**Day 5-6: Genitive (Родовий)** - What Ліам didn't have / needed
+
+| Ліам's journal | English |
+|----------------|---------|
+| Немає часу. (nemáye chásu) | There's no time. |
+| Кава без цукру. (kâva bez tsúkru) | Coffee without sugar. |
+| Для друга. (dlya drúha) | For a friend. |
+| До станції. (do stántsii) | To the station. |
+
+**Case endings quick reference:**
+
+| Type | Nom. → Gen. | Ліам's example |
+|------|-------------|----------------|
+| M. | → -а/-я | немає **часу** |
+| F. -а | → -и | немає **книги** |
+| F. -я | → -і | кінець **землі** |
+| N. | → -а/-я | немає **вікна** |
+
+---
+
+### Day 7: Putting It All Together
+
+**A conversation at a Kyiv café:**
+
+| Speaker | Ukrainian | English |
+|---------|-----------|---------|
+| Ліам | Добрий день! Можна меню? | Hello! May I have a menu? |
+| Офіціант | Так, прошу. Що замовите? | Yes, here you go. What will you order? |
+| Ліам | Мені каву без цукру, будь ласка. | Coffee without sugar, please. |
+| Офіціант | З молоком? | With milk? |
+| Ліам | Ні, дякую. Чорну. | No, thanks. Black. |
+| Офіціант | Щось ще? | Anything else? |
+| Ліам | Чи є круасан? | Do you have a croissant? |
+| Офіціант | Так, є! | Yes, we do! |
+| Ліам | Добре, я візьму один. Скільки коштує? | Good, I'll take one. How much is it? |
+| Офіціант | Вісімдесят п'ять гривень. | Eighty-five hryvnias. |
+| Ліам | Ось, будь ласка. | Here you go. |
+| Офіціант | Дякую! Приємного апетиту! | Thank you! Enjoy your meal! |
+
+> 🎭 **Culture Corner: Café Etiquette**
+>
+> Ліам learned quickly: In Ukrainian cafés, you don't rush. Ukrainians love to sit and talk over coffee. Nobody will hurry you to leave. "Рахунок, будь ласка" (the bill, please) when you're ready - they won't bring it automatically.
+
+---
+
+### Possessives: Ліам's Things
+
+When Ліам lost his phone, he had to describe whose things were whose at the police station:
 
 | Person | M | F | N | Pl |
 |--------|---|---|---|-----|
-| я | мій | моя | моє | мої |
-| ти | твій | твоя | твоє | твої |
-| він/воно | його | його | його | його |
-| вона | її | її | її | її |
-| ми | наш | наша | наше | наші |
-| ви | ваш | ваша | ваше | ваші |
-| вони | їхній | їхня | їхнє | їхні |
+| я | мій телефон | моя сумка | моє фото | мої речі |
+| ти | твій телефон | твоя сумка | твоє фото | твої речі |
+| він/воно | його телефон | його сумка | його фото | його речі |
+| вона | її телефон | її сумка | її фото | її речі |
+| ми | наш телефон | наша сумка | наше фото | наші речі |
+| ви | ваш телефон | ваша сумка | ваше фото | ваші речі |
+| вони | їхній телефон | їхня сумка | їхнє фото | їхні речі |
 
-**Remember:** його and її never change!
+**Remember:** *його* and *її* NEVER change! Ліам kept making this mistake until Day 5.
 
-### Key Prepositions
+---
 
-| Preposition | Case | Meaning | Example |
-|-------------|------|---------|---------|
-| в/у | Loc. | in | в офісі |
-| на | Loc. | on/at | на столі |
-| до | Gen. | to | до станції |
-| без | Gen. | without | без цукру |
-| для | Gen. | for | для друга |
-| біля | Gen. | near | біля метро |
+### Key Prepositions Ліам Mastered
 
-### Direction Commands
+| Preposition | Case | Meaning | Ліам's example |
+|-------------|------|---------|----------------|
+| в/у | Loc. | in | Я **в** готелі. |
+| на | Loc. | on/at | Кава **на** столі. |
+| до | Gen. | to | Йду **до** станції. |
+| без | Gen. | without | Кава **без** цукру. |
+| для | Gen. | for | Подарунок **для** друга. |
+| біля | Gen. | near | Кафе **біля** метро. |
 
-| Command | Meaning |
-|---------|---------|
-| Йдіть прямо! | Go straight! |
-| Поверніть праворуч! | Turn right! |
-| Поверніть ліворуч! | Turn left! |
-| Перейдіть вулицю! | Cross the street! |
+---
 
-### Café & Shopping Essentials
+### Direction Commands Ліам Used Daily
 
-**At the café:**
-- Можна меню?
-- Мені каву, будь ласка.
-- Рахунок, будь ласка!
+| Command | Meaning | When Ліам used it |
+|---------|---------|-------------------|
+| Йдіть прямо! | Go straight! | Finding his hostel |
+| Поверніть праворуч! | Turn right! | To the Maidan |
+| Поверніть ліворуч! | Turn left! | To the market |
+| Перейдіть вулицю! | Cross the street! | At Khreshchatyk |
 
-**Shopping:**
-- Скільки коштує?
-- Чи є більший розмір?
-- Я візьму це.
+---
 
-> 🎯 **Self-Assessment Checklist**
->
-> Can you...
-> - [ ] Form accusative for animate and inanimate nouns?
-> - [ ] Say where you are using locative?
-> - [ ] Express possession and absence with genitive?
-> - [ ] Use possessive pronouns correctly?
-> - [ ] Ask for and understand directions?
-> - [ ] Order at a café?
-> - [ ] Shop and ask about prices, sizes, colors?
+### Testimonies: Other Learners at A1.2 Checkpoint
+
+> *"I kept mixing up 'у Києві' (in Kyiv - where you ARE) and 'до Києва' (to Kyiv - where you're GOING). Drawing arrows on flashcards helped. Location = Locative. Direction = Genitive with до."* — **Марія** (29, Spanish, Barcelona)
+
+> *"The accusative animate rule confused me until I thought of it this way: you 'catch' people differently than things. Я бачу стіл (the table just sits there), but Я бачу студента (the student could run away!). Silly, but it worked."* — **Такеші** (32, Japanese, Tokyo)
+
+> *"Shopping was my breakthrough. When I asked 'Чи є більший розмір?' and the seller understood me perfectly - that was the moment I felt like a real speaker."* — **Сара** (28, American, Chicago)
 
 ## practice
 
-### Integrated Case Practice
+### Ліам's Daily Challenges
 
-Fill in the correct case:
+**Challenge 1: Case Selection**
+
+Help Ліам fill in the correct forms:
+
 1. Я бачу ___ (студент).
    > [!answer] студента (Acc. animate)
 2. Книга на ___ (стіл).
@@ -149,7 +196,9 @@ Fill in the correct case:
 5. Кава без ___ (цукор).
    > [!answer] цукру (Gen.)
 
-### Dialogue Reconstruction
+---
+
+**Challenge 2: Reconstruct Ліам's Café Dialogue**
 
 Put in order:
 - Добрий день! Можна меню?
@@ -160,23 +209,28 @@ Put in order:
 - Сорок п'ять гривень.
 - Ось, прошу. Дякую!
 
-### Direction Practice
+---
 
-Give directions from A to B:
+**Challenge 3: Give Ліам Directions**
+
+Guide him:
 - From metro to pharmacy: Йдіть прямо, потім поверніть праворуч. Аптека біля банку.
-- From your location to café: Йдіть два квартали, кав'ярня навпроти станції.
+- From his location to café: Йдіть два квартали, кав'ярня навпроти станції.
 
 ## production
 
-### Integrated Scenario
+### Your A1.2 Final Scenario
 
-You're a tourist in Kyiv. Practice:
+You're Ліам's friend who just arrived in Kyiv. Practice:
+
 1. Ask where the metro is
 2. Get directions
 3. At a café, order coffee and food
 4. Pay and leave
 5. Go shopping, ask about a product
 6. Buy something
+
+Use everything you've learned: cases, possessives, prepositions, directions!
 
 ---
 
@@ -186,255 +240,237 @@ You're a tourist in Kyiv. Practice:
 
 # Activities
 
-## fill-in: A1.2 Comprehensive Review
+## fill-in: Ліам's Case Challenge
 
-> Choose the correct form for each case.
+> Help Ліам complete his journal entries with correct word forms. Choose from the options provided.
 
-1. Я сьогодні бачу цікаву нову ___. (книга - accusative)
-   > [!answer] книгу
-   > [!options] книга | книгу | книги | книзі
+1. Я хочу надіслати ___ (посилка) ___ (мама).
+   > [!answer] посилку / мамі
+   > [!options] посилка / мама | посилку / мамі | посилці / маму | посилкою / мамою
 
-2. Вона бачить молодого українського ___. (студент - animate accusative)
-   > [!answer] студента
-   > [!options] студент | студента | студенту | студенті
+2. Ми живемо біля ___ (парк) і часто гуляємо там з ___ (собака).
+   > [!answer] парку / собакою
+   > [!options] парку / собакою | парк / собака | парком / собаки | парку / собаці
 
-3. Нова велика книга лежить на моєму ___. (стіл - locative)
-   > [!answer] столі
-   > [!options] стіл | стола | столі | столом
+3. Дайте мені, будь ласка, ___ (чашка) гарячої ___ (кава).
+   > [!answer] чашку / кави
+   > [!options] чашка / кава | чашку / кави | чашці / каву | чашкою / кавою
 
-4. Мій брат сьогодні вчиться в нашій ___. (школа - locative)
-   > [!answer] школі
-   > [!options] школа | школу | школі | школою
+4. Вона працює ___ (лікар) у великій ___ (лікарня).
+   > [!answer] лікарем / лікарні
+   > [!options] лікар / лікарня | лікаря / лікарню | лікарем / лікарні | лікарі / лікарнею
 
-5. У мене зараз зовсім немає вільного ___. (час - genitive)
-   > [!answer] часу
-   > [!options] час | часу | часі | часом
+5. У мене немає ___ (час) говорити про ___ (робота).
+   > [!answer] часу / роботу
+   > [!options] час / робота | часу / роботу | часом / роботі | часі / роботою
 
-6. Я хочу гарячу каву без солодкого ___. (цукор - genitive)
-   > [!answer] цукру
-   > [!options] цукор | цукру | цукрі | цукром
+6. Ми їдемо до ___ (Львів) ___ (поїзд).
+   > [!answer] Львова / поїздом
+   > [!options] Львів / поїзд | Львова / поїздом | Львові / поїзда | Львовом / поїзді
 
-7. Це ___ улюблена українська книга. (my, feminine)
-   > [!answer] моя
-   > [!options] мій | моя | моє | мої
+7. Скажи ___ (брат), що я чекаю його біля ___ (метро).
+   > [!answer] братові / метро
+   > [!options] брат / метро | брата / метром | братові / метро | братом / метрі
 
-8. ___ молодший брат зараз студент. (her - doesn't change)
-   > [!answer] Її
-   > [!options] Її | Його | Їхній | Моя
+8. Я пишу ___ (лист) своєю улюбленою ___ (ручка).
+   > [!answer] листа / ручкою
+   > [!options] лист / ручка | листа / ручкою | листом / ручки | листі / ручці
 
-9. Йдіть ___ два квартали і поверніть праворуч! (straight)
-   > [!answer] прямо
-   > [!options] праворуч | ліворуч | прямо | назад
+9. Вона не любить ___ (м'ясо), вона їсть тільки ___ (овочі).
+   > [!answer] м'яса / овочі
+   > [!options] м'ясо / овочів | м'яса / овочі | м'ясом / овочами | м'ясу / овочах
 
-10. ___ нам отримати меню, будь ласка? (May I have)
-   > [!answer] Можна
-   > [!options] Де | Можна | Що | Чи
+10. ___ (Андрій), дай мені ___ (твоя ручка)!
+    > [!answer] Андрію / твою ручку
+    > [!options] Андрій / твоя ручка | Андрію / твою ручку | Андрія / твоєю ручкою | Андрієм / твоїй ручці
 
-## unjumble: Build the Sentence
+## unjumble: Ліам's Complex Sentences
 
-> Arrange the words in the correct order. (A1: 4-6 words)
+> Help Ліам reconstruct these sentences from his notes.
 
-1. книгу / бачу / Я / цікаву
-   > [!answer] Я бачу цікаву книгу.
-   > (I see an interesting book.) [4 words]
+1. подарунок / Я / купив / гарний / для / сестри / моєї
+   > [!answer] Я купив гарний подарунок для моєї сестри.
+   > (I bought a nice gift for my sister.)
 
-2. студента / бачить / Вона / нового
-   > [!answer] Вона бачить нового студента.
-   > (She sees a new student.) [4 words]
+2. з / Ми / друзями / піцу / їмо / кафе / у / смачну
+   > [!answer] Ми їмо смачну піцу з друзями у кафе.
+   > (We are eating tasty pizza with friends at a cafe.)
 
-3. офісі / Він / в / працює
-   > [!answer] Він працює в офісі.
-   > (He works in the office.) [4 words]
+3. автобусом / їде / Вона / на / роботу / щоранку / до / офісу
+   > [!answer] Вона їде автобусом на роботу до офісу щоранку.
+   > (She goes to the office by bus every morning.)
 
-4. часу / Немає / у / мене
-   > [!answer] У мене немає часу.
-   > (I don't have time.) [4 words]
+4. не / цукру / Я / п'ю / і / каву / без / молока / ніколи
+   > [!answer] Я ніколи не п'ю каву без цукру і молока.
+   > (I never drink coffee without sugar and milk.)
 
-5. книга / Це / моя / улюблена
-   > [!answer] Це моя улюблена книга.
-   > (This is my favorite book.) [4 words]
+5. столом / Кіт / сидить / під / і / дивиться / на / мене
+   > [!answer] Кіт сидить під столом і дивиться на мене.
+   > (The cat sits under the table and looks at me.)
 
-6. прямо / Йдіть / і / праворуч
-   > [!answer] Йдіть прямо і праворуч.
-   > (Go straight and right.) [4 words]
+6. листівку / Хочу / надіслати / цю / бабусі / в / Україну
+   > [!answer] Хочу надіслати цю листівку бабусі в Україну.
+   > (I want to send this postcard to grandma in Ukraine.)
 
-7. цукру / без / каву / Я / хочу
-   > [!answer] Я хочу каву без цукру.
-   > (I want coffee without sugar.) [5 words]
+7. вчителем / Мій / працює / батько / у / школі / старій
+   > [!answer] Мій батько працює вчителем у старій школі.
+   > (My father works as a teacher in an old school.)
 
-8. столі / на / Книга / лежить
-   > [!answer] Книга лежить на столі.
-   > (The book is on the table.) [4 words]
+8. грошей / немає / У / мене / на / дорогий / такий / телефон
+   > [!answer] У мене немає грошей на такий дорогий телефон.
+   > (I don't have money for such an expensive phone.)
 
-9. метро / Де / тут / найближче
-   > [!answer] Де тут найближче метро?
-   > (Where is the nearest metro here?) [4 words]
+9. тобою / Я / хочу / поговорити / про / плани / з / наші
+   > [!answer] Я хочу поговорити з тобою про наші плани.
+   > (I want to talk with you about our plans.)
 
-10. друга / Це / книга / мого
-    > [!answer] Це книга мого друга.
-    > (This is my friend's book.) [4 words]
+10. магазину / Йдіть / до / прямо / потім / ліворуч / поверніть
+    > [!answer] Йдіть прямо до магазину, потім поверніть ліворуч.
+    > (Go straight to the store, then turn left.)
 
-## match-up: Match the Cases
+## match-up: Grammar Detective
 
-> Match the sentence to its grammatical case.
+> Match the grammar term to the example word in the sentence: "Я (1) даю (2) книгу (3) братові (4)."
 
-| Left | Right |
-|------|-------|
-| Я бачу книгу. | Accusative |
-| Він в офісі. | Locative |
-| Немає часу. | Genitive |
-| Це моя книга. | Possessive |
-| Йдіть прямо! | Imperative |
-| Можна меню? | Café phrase |
-| Скільки коштує? | Shopping phrase |
-| без цукру | Genitive after без |
-| на столі | Locative after на |
-| для друга | Genitive after для |
+| Term | Example |
+|------|---------|
+| Nominative (Subject) | Я |
+| Verb | даю |
+| Accusative (Direct Object) | книгу |
+| Dative (Indirect Object) | братові |
+| Genitive (Possession) | (книга) студента |
+| Instrumental (Means) | (писати) ручкою |
+| Locative (Location) | (у) кімнаті |
+| Vocative (Address) | Мамо! |
+| Preposition + Genitive | до школи |
+| Preposition + Accusative | в парк |
 
-## quiz: A1.2 Grammar Review
+## quiz: Ліам's Case Test
 
-> Choose the correct answer.
+> Help Ліам identify the case of each CAPITALIZED word.
 
-1. What case does "бачити" (to see) require?
+1. Я бачу **ТЕБЕ**.
    - [x] Accusative
+   - [ ] Genitive
+   - [ ] Dative
+
+2. Ми йдемо з **ДРУГОМ**.
    - [ ] Locative
+   - [x] Instrumental
+   - [ ] Nominative
+
+3. Книга лежить на **СТОЛІ**.
+   - [ ] Dative
+   - [x] Locative
+   - [ ] Accusative
+
+4. У мене немає **ЧАСУ**.
+   - [x] Genitive
+   - [ ] Accusative
+   - [ ] Instrumental
+
+5. Скажи **ЙОМУ** правду.
    - [ ] Genitive
    - [ ] Nominative
-   > Direct objects take accusative
+   - [x] Dative
 
-2. What ending does feminine accusative take?
-   - [ ] -а → -а
-   - [x] -а → -у
-   - [ ] -а → -и
-   - [ ] -а → -і
-   > Feminine -а becomes -у in accusative
-
-3. How do animate masculine nouns change in accusative?
-   - [ ] No change
-   - [x] Add -а/-я (like genitive)
-   - [ ] Add -у/-ю
-   - [ ] Add -і
-   > Animate masculine = genitive form
-
-4. Which prepositions take locative case?
-   - [x] в/у, на
-   - [ ] без, для
-   - [ ] до, від
-   - [ ] з, із
-   > в/у and на + locative for location
-
-5. Which prepositions take genitive case?
-   - [ ] в/у, на
-   - [x] без, для, до, від
-   - [ ] з + instrumental
-   - [ ] None of these
-   > без, для, до, від, після, біля + genitive
-
-6. Which possessives NEVER change for gender?
-   - [ ] мій, твій
-   - [ ] наш, ваш
-   - [x] його, її
-   - [ ] їхній, свій
-   > його and її are frozen forms
-
-7. How do you ask "Where is the metro?"
-   - [x] Де метро?
-   - [ ] Що метро?
-   - [ ] Як метро?
-   - [ ] Куди метро?
-   > "Де" = where
-
-8. How do you say "There is no time" (genitive)?
-   - [ ] Немає час.
-   - [x] Немає часу.
-   - [ ] Немає часі.
-   - [ ] Є часу.
-   > Немає + genitive
-
-9. What does "Можна меню?" mean?
-   - [x] May I have the menu?
-   - [ ] Where is the menu?
-   - [ ] What's on the menu?
-   - [ ] Is there a menu?
-   > "Можна" for polite requests
-
-10. What case does "без" (without) require?
+6. **СТУДЕНТ** читає.
+   - [x] Nominative
+   - [ ] Vocative
    - [ ] Accusative
+
+7. Я хочу стати **ЛІКАРЕМ**.
+   - [ ] Dative
+   - [x] Instrumental
    - [ ] Locative
-   - [x] Genitive
-   - [ ] Nominative
-   > без + genitive
 
-## true-false: True or False?
+8. Я йду в **ПАРК**.
+   - [ ] Locative
+   - [x] Accusative
+   - [ ] Genitive
 
-> Determine if each statement is true or false.
+9. Він живе в **УКРАЇНІ**.
+   - [ ] Accusative
+   - [x] Locative
+   - [ ] Genitive
 
-- [x] Feminine accusative changes -а to -у
-   > Correct! книга → книгу
+10. **ДІТИ** грають у парку.
+    - [x] Nominative
+    - [ ] Accusative
+    - [ ] Dative
 
-- [x] Animate masculine accusative = genitive form
-   > Correct! студент → студента
+## true-false: Grammar Master Challenge
 
-- [ ] "Він в офіс" is correct for "He's in the office"
-   > Incorrect. Need locative: "Він в офісі"
+> Ліам made some notes. Are they correct?
 
-- [x] "Немає" always requires genitive case
-   > Correct!
+- [x] "До" (to) always takes the Genitive case.
+  > Correct! До + Genitive is always required.
 
-- [x] "його" and "її" never change for noun gender
-   > Correct! They're frozen genitive forms
+- [ ] "З" always takes the Instrumental case.
+  > Incorrect! "З" can mean "with" (Instrumental) or "from" (Genitive).
 
-- [ ] "книга студент" is correct for "student's book"
-   > Incorrect. Need genitive: "книга студента"
+- [x] Animate masculine nouns in Accusative look like Genitive nouns.
+  > Correct! Я бачу студента (not студент).
 
-- [x] "Йдіть прямо" means "Go straight"
-   > Correct!
+- [ ] Neuter nouns change their ending in Accusative.
+  > Incorrect! Neuter nouns keep the same form: вікно → вікно.
 
-- [x] "без цукру" uses genitive case
-   > Correct! без + genitive
+- [x] "На" can take Locative (location) or Accusative (motion).
+  > Correct! На столі (on the table) vs на стіл (onto the table).
 
-- [ ] Locative case is used without prepositions
-   > Incorrect. Locative always uses prepositions (в, на, у)
+- [x] You must use Dative with the verb "допомагати" (to help).
+  > Correct! Я допомагаю братові (not брата).
 
-- [x] "Можна" is used for polite requests
-   > Correct!
+- [ ] All feminine nouns end in -а or -я.
+  > Incorrect! Some end in soft sign: ніч, сіль, любов.
 
-## group-sort: A1.2 Grammar Categories
+- [x] The preposition "без" (without) requires Genitive case.
+  > Correct! Без води, без грошей.
 
-> Sort these words by the grammatical case they trigger.
+- [x] Ukrainian has 7 grammatical cases.
+  > Correct! Nominative, Accusative, Genitive, Dative, Instrumental, Locative, Vocative.
 
-### Accusative Case
-- бачити (to see)
-- читати (to read)
-- любити (to love)
-- мати (to have)
+- [ ] Locative case is used for motion toward a place.
+  > Incorrect! Locative is for static location. Accusative is for motion.
 
-### Locative Case
-- в/у (in)
-- на (on/at)
+## group-sort: Preposition Master
 
-### Genitive Case
+> Ліам needs to sort these prepositions by the case they take.
+
+### Genitive
+- до (to)
+- від (from)
 - без (without)
 - для (for)
-- до (to/until)
-- немає (there is no)
+- біля (near)
+
+### Instrumental
+- з (with)
+- над (above)
+- перед (in front of)
+- між (between)
+
+### Locative
+- на (on - location)
+- у/в (in - location)
+- по (along/around)
 
 ---
 
 # Vocabulary Review
 
-## Key Words from A1.2
+## Key Words from A1.2: Ліам's Journey
 
-| Module | Key Vocabulary |
-|--------|---------------|
-| 11-12 | Accusative: бачити, читати, любити |
-| 13 | Locative: в, на, де, тут, там |
-| 14 | Possessives: мій, твій, його, її, наш, ваш |
-| 15 | City: метро, вулиця, праворуч, ліворуч |
-| 16 | Genitive: немає, без, для, до |
-| 17 | Food: сніданок, обід, вечеря, борщ |
-| 18 | Café: меню, замовити, рахунок |
-| 19 | Shopping: розмір, колір, ціна, знижка |
+| Module | Topic | Key Vocabulary |
+|--------|-------|---------------|
+| 11-12 | Accusative | бачити, читати, любити, хотіти |
+| 13 | Locative | в, на, де, тут, там, готель |
+| 14 | Possessives | мій, твій, його, її, наш, ваш |
+| 15 | City | метро, вулиця, праворуч, ліворуч |
+| 16 | Genitive | немає, без, для, до, біля |
+| 17 | Food | сніданок, обід, вечеря, борщ |
+| 18 | Café | меню, замовити, рахунок, офіціант |
+| 19 | Shopping | розмір, колір, ціна, знижка |
 
 ---
 
@@ -442,25 +478,38 @@ You're a tourist in Kyiv. Practice:
 
 ## A1.2 Competencies Achieved
 
-| Skill | Status |
-|-------|--------|
-| Accusative case (things) | ✅ Complete |
-| Accusative case (people) | ✅ Complete |
-| Locative case | ✅ Complete |
-| Genitive case | ✅ Complete |
-| Possessive pronouns | ✅ Complete |
-| City navigation | ✅ Complete |
-| Food vocabulary | ✅ Complete |
-| Café ordering | ✅ Complete |
-| Shopping | ✅ Complete |
+| Skill | Ліам's Status | Your Status |
+|-------|--------------|-------------|
+| Accusative case (things) | ✅ Mastered | ☐ Check |
+| Accusative case (people) | ✅ Mastered | ☐ Check |
+| Locative case | ✅ Mastered | ☐ Check |
+| Genitive case | ✅ Mastered | ☐ Check |
+| Possessive pronouns | ✅ Mastered | ☐ Check |
+| City navigation | ✅ Mastered | ☐ Check |
+| Food vocabulary | ✅ Mastered | ☐ Check |
+| Café ordering | ✅ Mastered | ☐ Check |
+| Shopping | ✅ Mastered | ☐ Check |
+
+> 🎯 **Self-Assessment**
+>
+> Can you...
+> - [ ] Form accusative for animate and inanimate nouns?
+> - [ ] Say where you are using locative?
+> - [ ] Express possession and absence with genitive?
+> - [ ] Use possessive pronouns correctly?
+> - [ ] Ask for and understand directions?
+> - [ ] Order at a café?
+> - [ ] Shop and ask about prices, sizes, colors?
 
 ## Ready for A1.3!
 
-You're now prepared to learn:
+Ліам passed his checkpoint. Now he's ready for:
 - **Past tense** - Talking about yesterday
 - **Future tense** - Making plans
 - **Time expressions** - Days, months, hours
-- **Daily routines** - Describing your day
+- **Daily routines** - Describing his day
+
+You're ready too!
 
 ---
 
@@ -468,6 +517,7 @@ You're now prepared to learn:
 
 > 💡 **What You Reviewed Today**
 >
+> Following Ліam's week in Kyiv:
 > - **Three cases:** Accusative, Locative, Genitive
 > - **Possessives:** мій/моя/моє, твій/твоя/твоє, etc.
 > - **Prepositions:** в/на (Loc.), без/для/до (Gen.)

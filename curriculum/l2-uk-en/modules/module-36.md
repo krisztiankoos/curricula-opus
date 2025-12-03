@@ -638,7 +638,7 @@ Create mini-dialogues:
     - [ ] шукати роботу
     - [ ] мати диплом
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 
@@ -688,11 +688,15 @@ Create mini-dialogues:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
+| бути | /ˈbutɪ/ | to be | verb | - | + instr |
 | стати | /ˈstɑtɪ/ | to become | verb | - | + instr |
+| ставати | /stɑˈvɑtɪ/ | to become (impf) | verb | - | + instr |
+| працювати | /prɑtsʲuˈvɑtɪ/ | to work | verb | - | + instr |
+| служити | /sluˈʒɪtɪ/ | to serve | verb | - | + instr |
 | залишатися | /zɑlɪˈʃɑtɪsʲɑ/ | to remain | verb | - | + instr |
 | виявитися | /vɪjɑˈvɪtɪsʲɑ/ | to turn out | verb | - | + instr |
 | вважатися | /vvɑˈʒɑtɪsʲɑ/ | to be considered | verb | - | + instr |
-| служити | /sluˈʒɪtɪ/ | to serve | verb | - | + instr |
+| називатися | /nɑzɪˈvɑtɪsʲɑ/ | to be called | verb | - | + instr |
 | інженер | /inʒɛˈnɛr/ | engineer | noun | m |
 | програміст | /proɦrɑˈmʲist/ | programmer | noun | m |
 | журналіст | /ʒurnɑˈlʲist/ | journalist | noun | m |
@@ -702,7 +706,21 @@ Create mini-dialogues:
 | музикант | /muzɪˈkɑnt/ | musician | noun | m |
 | художник | /xuˈdoʒnɪk/ | artist | noun | m |
 | письменник | /pɪsʲˈmɛnnɪk/ | writer | noun | m |
+| перекладач | /pɛrɛklɑˈdɑtʃ/ | translator | noun | m |
+| керівник | /kɛrʲivˈnɪk/ | manager, head | noun | m |
+| директор | /dɪˈrɛktor/ | director | noun | m |
+| менеджер | /mɛnɛd͡ʒɛr/ | manager | noun | m |
 | підприємець | /pʲidprɪˈjɛmɛtsʲ/ | entrepreneur | noun | m |
+| офіціант | /ofʲitsʲiˈɑnt/ | waiter | noun | m |
+| продавець | /prodɑˈvɛtsʲ/ | seller | noun | m |
+| водій | /voˈdʲij/ | driver | noun | m |
+| поліцейський | /polʲiˈt͡sɛjsʲkɪj/ | police officer | noun | m |
+| військовий | /vʲijˈsʲkovɪj/ | military person | noun | m |
+| спортсмен | /sportˈsmɛn/ | athlete | noun | m |
+| студент | /stuˈdɛnt/ | student | noun | m |
+| пенсіонер | /pɛnsʲioˈnɛr/ | pensioner | noun | m |
+| безробітний | /bɛzroˈbʲitnɪj/ | unemployed | noun | m |
+| актор | /ɑkˈtɔr/ | actor | noun | m |
 | спеціаліст | /spɛtsʲiɑˈlʲist/ | specialist | noun | m |
 | експерт | /ɛksˈpɛrt/ | expert | noun | m |
 | професіонал | /profɛsʲioˈnɑl/ | professional | noun | m |

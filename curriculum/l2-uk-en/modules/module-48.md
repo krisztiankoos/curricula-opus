@@ -557,7 +557,7 @@ Try to get: a lower price, negotiate.
     - [ ] Цього вихідного великий розпродаж.
     > Use genitive plural for "this weekend": "Цих вихідних великий розпродаж."
 
-## order: Shopping Trip Sequence
+## unjumble: Shopping Trip Sequence
 
 > Put these shopping actions in logical order.
 

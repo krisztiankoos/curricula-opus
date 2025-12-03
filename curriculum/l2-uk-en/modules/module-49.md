@@ -557,7 +557,7 @@ Next month:
     - [ ] На жаль, я скасував плани.
     > Use скасувати for canceling: "На жаль, я мушу скасувати наші плани."
 
-## order: Planning a Weekend Trip
+## unjumble: Planning a Weekend Trip
 
 > Put these planning steps in logical order.
 

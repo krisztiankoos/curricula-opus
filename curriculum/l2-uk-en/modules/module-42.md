@@ -616,7 +616,7 @@ This morning (perfective):
     - [ ] Ми приїхали на пляж.
     > Use unidirectional for motion in progress: "Ми їдемо на пляж зараз."
 
-## order: Communication Sequence
+## unjumble: Communication Sequence
 
 > Put these communication actions in logical order.
 

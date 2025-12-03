@@ -473,6 +473,9 @@ Describe what you/others do using Class II verbs:
 | бачити | /ˈbɑtʃɪtɪ/ | to see | verb | - | бачу, бачиш, бачить |
 | любити | /lʲuˈbɪtɪ/ | to love | verb | - | люблю (б→бл), любиш, любить |
 | ходити | /xɔˈdɪtɪ/ | to walk, go | verb | - | ходжу (д→дж), ходиш, ходить |
+| їздити | /ˈjizdɪtɪ/ | to go (vehicle) | verb | - | їжджу, їздиш |
+| летіти | /lɛˈtʲitɪ/ | to fly | verb | - | лечу, летиш |
+| бігти | /ˈbʲiɦtɪ/ | to run | verb | - | біжу, біжиш, біжать |
 | носити | /nɔˈsɪtɪ/ | to carry, wear | verb | - | ношу (с→ш), носиш, носить |
 | просити | /prɔˈsɪtɪ/ | to ask, request | verb | - | прошу (с→ш), просиш, просить |
 | сидіти | /sɪˈdʲitɪ/ | to sit | verb | - | сиджу (д→дж), сидиш, сидить |
@@ -484,6 +487,9 @@ Describe what you/others do using Class II verbs:
 | жити | /ˈʒɪtɪ/ | to live | verb | - | живу, живеш, живе |
 | вчити | /ˈwtʃɪtɪ/ | to teach/learn | verb | - | вчу, вчиш, вчить |
 | вчитися | /ˈwtʃɪtɪsʲɑ/ | to study, learn | verb | - | Reflexive: вчуся, вчишся |
+| пам'ятати | /pɑmjɑˈtɑtɪ/ | to remember | verb | - | Class I: пам'ятаю |
+| забувати | /zɑbuˈvɑtɪ/ | to forget | verb | - | Class I: забуваю |
+| вітати | /vʲiˈtɑtɪ/ | to greet | verb | - | Class I: вітаю |
 | купувати | /kupuˈvɑtɪ/ | to buy | verb | - | Class I: купую, купуєш |
 | телефонувати | /tɛlɛfɔnuˈvɑtɪ/ | to call (phone) | verb | - | Class I: телефоную |
 | дякувати | /dʲɑkuˈvɑtɪ/ | to thank | verb | - | Class I: дякую, дякуєш |

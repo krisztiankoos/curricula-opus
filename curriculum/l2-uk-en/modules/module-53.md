@@ -496,7 +496,7 @@ Use тому що/бо:
     - [ ] коли
     > Necessity with different subject requires "щоб"
 
-## order: Put Words in Order
+## unjumble: Put Words in Order
 
 > Arrange the words to form correct complex sentences.
 

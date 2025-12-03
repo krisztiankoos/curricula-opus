@@ -276,35 +276,32 @@ Congratulations! You've reached the B1 final checkpoint. This test covers all B1
 
 > Поєднайте терміни з перекладами.
 
-pairs:
-  - left: "співбесіда"
-    right: "job interview"
-  - left: "вакансія"
-    right: "job opening"
-  - left: "знижка"
-    right: "discount"
-  - left: "довкілля"
-    right: "environment"
-  - left: "вишиванка"
-    right: "embroidered shirt"
+| Left | Right |
+|------|-------|
+| співбесіда | job interview |
+| вакансія | job opening |
+| знижка | discount |
+| довкілля | environment |
+| вишиванка | embroidered shirt |
 
 ## group-sort: Тематичні категорії
 
 > Розподіліть слова за темами.
 
-groups:
-  Граматика:
-    - "відмінок"
-    - "дієслівний вид"
-    - "умовний спосіб"
-  Робота:
-    - "вакансія"
-    - "резюме"
-    - "співбесіда"
-  Культура:
-    - "вишиванка"
-    - "борщ"
-    - "Шевченко"
+### Граматика
+- відмінок
+- дієслівний вид
+- умовний спосіб
+
+### Робота
+- вакансія
+- резюме
+- співбесіда
+
+### Культура
+- вишиванка
+- борщ
+- Шевченко
 
 ---
 

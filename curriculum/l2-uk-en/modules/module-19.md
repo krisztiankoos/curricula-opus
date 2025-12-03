@@ -220,240 +220,204 @@ Use: Скільки коштує? Чи є...? Можна...? Я візьму...
 
 # Activities
 
-## fill-in: Shopping Vocabulary
+## fill-in: Shopping Dialogue
 
-> Choose the correct word to complete each shopping phrase.
+> Complete the conversation with the correct words.
 
-1. ___ коштує ця гарна червона сукня? (How much does it cost?)
-   > [!answer] Скільки
-   > [!options] Де | Скільки | Що | Який
+1. Добрий день! Скільки ___ ця сукня?
+   > [!answer] коштує
 
-2. Чи є ___ розмір цієї білої сорочки? (bigger)
-   > [!answer] більший
-   > [!options] менший | більший | великий | малий
+2. Ця сукня коштує 1200 гривень. — Це трохи ___.
+   > [!answer] дорого
 
-3. Можна ___ ці нові чорні туфлі? (try on)
-   > [!answer] приміряти
-   > [!options] приміряти | подивитися | купити | продати
+3. Чи є у вас ___?
+   > [!answer] знижка
 
-4. Де тут знаходиться ваша ___? (fitting room)
+4. А чи є ___ розмір? Цей занадто великий.
+   > [!answer] менший
+
+5. Де ___? Я хочу приміряти.
    > [!answer] примірочна
-   > [!options] каса | примірочна | магазин | ринок
 
-5. На жаль, це ___ дорого для мене. (too)
-   > [!answer] занадто
-   > [!options] дуже | занадто | трохи | не
+6. Можна розрахуватися ___?
+   > [!answer] карткою
 
-6. Чи є ця сукня в ___ кольорі? (another)
-   > [!answer] іншому
-   > [!options] цьому | іншому | тому | якому
+7. Вам потрібен ___?
+   > [!answer] чек
 
-7. Мені все подобається, я ___ це все. (I'll take)
+8. Я ___ цю куртку.
    > [!answer] візьму
-   > [!options] візьму | беру | маю | хочу
 
-8. ___ чи карткою ви хочете платити? (Cash)
-   > [!answer] Готівкою
-   > [!options] Грошима | Готівкою | Чеком | Рахунком
+9. Чи є це в іншому ___?
+   > [!answer] кольорі
 
-9. Вам чек ___, чи ні? (needed)
-   > [!answer] потрібен
-   > [!options] потрібен | потрібна | потрібне | потрібні
+10. Мені потрібен ___ пакет.
+    > [!answer] великий
 
-10. Вам пакет ___ для ваших покупок? (needed)
-   > [!answer] потрібен
-   > [!options] потрібен | потрібна | потрібне | потрібні
+## unjumble: Shopping Sentences
 
-## unjumble: Build the Sentence
+> Arrange the words to form correct sentences.
 
-> Arrange the words in the correct order.
+1. коштує / Скільки / ця / червона / куртка
+   > [!answer] Скільки коштує ця червона куртка?
+   > (How much does this red jacket cost?)
 
-1. коштує / Скільки / ця / разом / гарна / сукня
-   > [!answer] Скільки коштує ця гарна сукня разом?
-   > (How much does this nice dress cost in total?) [6 words]
+2. карткою / Можна / тут / розрахуватися / чи / готівкою
+   > [!answer] Можна тут розрахуватися карткою чи готівкою?
+   > (Can I pay by card or cash here?)
 
-2. більший / є / Чи / розмір / цієї / білої / сорочки
-   > [!answer] Чи є більший розмір цієї білої сорочки?
-   > (Is there a bigger size of this white shirt?) [7 words]
+3. більший / Чи / є / у / вас / розмір
+   > [!answer] Чи є у вас більший розмір?
+   > (Do you have a bigger size?)
 
-3. приміряти / Можна / цю / сукню / червону / нову
-   > [!answer] Можна приміряти цю нову червону сукню?
-   > (May I try on this new red dress?) [6 words]
+4. приміряти / де / Можна / ці / джинси
+   > [!answer] Де можна приміряти ці джинси?
+   > (Where can I try on these jeans?)
 
-4. примірочна / Де / тут / знаходиться / ваша / будь ласка
-   > [!answer] Де тут знаходиться ваша примірочна, будь ласка?
-   > (Where is your fitting room here, please?) [6 words]
+5. чек / Будь ласка / дайте / мені
+   > [!answer] Будь ласка, дайте мені чек.
+   > (Please give me the receipt.)
 
-5. візьму / Я / це / все / сьогодні / собі
-   > [!answer] Я сьогодні візьму все це собі.
-   > (I'll take all of this for myself today.) [6 words]
+6. занадто / Це / для / мене / дорого
+   > [!answer] Це занадто дорого для мене.
+   > (This is too expensive for me.)
 
-6. дорого / Занадто / для / мене / на жаль / це
-   > [!answer] На жаль, це занадто дорого для мене.
-   > (Unfortunately, this is too expensive for me.) [6 words]
+7. пакет / Вам / потрібен / великий
+   > [!answer] Вам потрібен великий пакет?
+   > (Do you need a big bag?)
 
-7. знижка / Є / на / це / сьогодні / яка-небудь
-   > [!answer] Чи є яка-небудь знижка на це сьогодні?
-   > (Is there any discount on this today?) [6 words]
+8. іншому / кольорі / є / Чи / це / в
+   > [!answer] Чи є це в іншому кольорі?
+   > (Is this available in another color?)
 
-8. чорному / в / є / Чи / це / кольорі / може
-   > [!answer] Чи може це є в чорному кольорі?
-   > (Could this be available in black color?) [7 words]
+9. шукаю / Я / подарунок / для / мами
+   > [!answer] Я шукаю подарунок для мами.
+   > (I am looking for a gift for mom.)
 
-9. карткою / Можна / тут / платити / чи / готівкою / тільки
-   > [!answer] Можна тут платити карткою чи тільки готівкою?
-   > (Can I pay by card here or only cash?) [7 words]
+10. візьму / Добре / я / це
+    > [!answer] Добре, я візьму це.
+    > (Okay, I'll take this.)
 
-10. подумаю / Я / ще / трохи / потім / повернусь / і
-    > [!answer] Я ще трохи подумаю і потім повернусь.
-    > (I'll think a bit more and then come back.) [7 words]
+## match-up: Shopping Vocabulary
 
-## match-up: Match the Pairs
+> Match the Ukrainian word to its definition.
 
-> Match Ukrainian shopping words to their meanings.
-
-| Left | Right |
-|------|-------|
-| розмір | size |
-| більший | bigger |
-| менший | smaller |
-| примірочна | fitting room |
-| каса | cash register |
-| чек | receipt |
+| Ukrainian | English |
+|-----------|---------|
 | знижка | discount |
-| білий | white |
-| чорний | black |
-| занадто | too (excessive) |
+| примірочна | place to try on clothes |
+| готівка | paper money and coins |
+| чек | paper proof of purchase |
+| розмір | S, M, L, XL |
+| дорого | high price |
+| дешево | low price |
+| каса | place to pay |
+| продавець | person who sells |
+| покупець | person who buys |
 
-## quiz: Shopping Language
+## quiz: Smart Shopper
 
-> Choose the correct answer.
+> Choose the best phrase for each situation.
 
-1. How do you ask "How much does this cost?"
+1. You want to know the price.
    - [x] Скільки це коштує?
-   - [ ] Що це коштує?
-   - [ ] Де це коштує?
-   - [ ] Як це коштує?
-   > "Скільки" = how much
+   - [ ] Де тут каса?
+   - [ ] Яка погода?
 
-2. How do you ask for a bigger size?
-   - [ ] Чи є великий розмір?
-   - [x] Чи є більший розмір?
-   - [ ] Чи є малий розмір?
-   - [ ] Чи є менший розмір?
-   > "більший" = bigger (comparative)
+2. The shirt is too big. You want a smaller one.
+   - [x] Чи є менший розмір?
+   - [ ] Чи є більший розмір?
+   - [ ] Чи є інший колір?
 
-3. How do you ask to try something on?
-   - [x] Можна приміряти?
-   - [ ] Можна купити?
-   - [ ] Можна подивитися?
-   - [ ] Можна взяти?
-   > "приміряти" = to try on
-
-4. What does "занадто дорого" mean?
-   - [x] too expensive
-   - [ ] very expensive
-   - [ ] not expensive
-   - [ ] a little expensive
-   > "занадто" = too (excessive)
-
-5. What is "примірочна"?
-   - [ ] cash register
-   - [x] fitting room
-   - [ ] store
-   - [ ] market
-   > Place to try on clothes
-
-6. How do you say "I'll take this"?
-   - [ ] Я беру це.
-   - [x] Я візьму це.
-   - [ ] Я маю це.
-   - [ ] Я хочу це.
-   > "візьму" = I'll take (future)
-
-7. What does "Є знижка?" ask?
-   - [x] Is there a discount?
-   - [ ] Is there a size?
-   - [ ] Is there a color?
-   - [ ] Is there a bag?
-   > "знижка" = discount
-
-8. How do you ask to pay by card?
-   - [ ] Можна картка?
+3. You want to pay with a credit card.
+   - [ ] Можна готівкою?
    - [x] Можна карткою?
-   - [ ] Можна картки?
-   - [ ] Можна картку?
-   > Instrumental case for "by means of"
+   - [ ] Де банкомат?
 
-9. What is "каса"?
-   - [ ] fitting room
-   - [x] cash register
-   - [ ] receipt
-   - [ ] bag
-   > Where you pay
+4. You enter a shop. What do you say?
+   - [ ] До побачення!
+   - [x] Добрий день!
+   - [ ] Смачного!
 
-10. What does "Я подумаю" mean?
-   - [ ] I'll buy it
-   - [ ] I don't want it
-   - [x] I'll think about it
-   - [ ] I'll take it
-   > Polite way to decline
+5. The seller asks if you need a bag. You say yes.
+   - [x] Так, пакет потрібен.
+   - [ ] Ні, чек не потрібен.
+   - [ ] Знижка є?
 
-## true-false: True or False?
+6. You want to see if jeans fit you.
+   - [ ] Можна купити?
+   - [x] Можна приміряти?
+   - [ ] Можна подивитися?
 
-> Determine if each statement is true or false.
+7. You decided to buy the item.
+   - [x] Я візьму це.
+   - [ ] Я не хочу.
+   - [ ] Це дорого.
 
-- [x] "Скільки коштує?" asks about price
-   > Correct!
+8. The price is very high.
+   - [ ] Це дешево!
+   - [x] Це занадто дорого!
+   - [ ] Це смачно!
 
-- [x] "більший" means "bigger" (comparative)
-   > Correct!
+9. You want to ask if there's a discount.
+   - [ ] Де тут каса?
+   - [x] Чи є знижка?
+   - [ ] Яка ціна?
 
-- [ ] "занадто" means "very"
-   > Incorrect. "занадто" = too (excessive), "дуже" = very
+10. You finished shopping and leave the store.
+    - [ ] Добрий день!
+    - [x] До побачення! Дякую!
+    - [ ] Скільки це коштує?
 
-- [x] "примірочна" is the fitting room
-   > Correct!
+## true-false: Shopping Culture
 
-- [ ] "менший" means "bigger"
-   > Incorrect. "менший" = smaller, "більший" = bigger
+> True or False?
 
-- [x] "Можна приміряти?" asks to try something on
-   > Correct!
+- [x] In a market (ринок), you can often bargain (ask for a lower price).
+  > Correct! Bargaining is common at Ukrainian markets.
 
-- [x] "чек" means "receipt"
-   > Correct!
+- [ ] In a supermarket, you usually bargain at the checkout.
+  > Incorrect. Supermarkets have fixed prices. Bargaining is for markets.
 
-- [ ] "каса" means "fitting room"
-   > Incorrect. "каса" = cash register
+- [x] "Готівка" means cash.
+  > Correct! Готівка = cash, картка = card.
 
-- [x] Ukrainian has two words for blue: синій and блакитний
-   > Correct! Dark and light blue
+- [ ] "Примірочна" is where you pay for your items.
+  > Incorrect. Примірочна is a fitting room. Каса is where you pay.
 
-- [x] "Я візьму це" means "I'll take this"
-   > Correct!
+- [x] You should ask "Скільки коштує?" to find out the price.
+  > Correct! This is the standard question for price.
 
-## group-sort: Shopping Vocabulary Categories
+- [x] "Каса" is the word for checkout/cash register.
+  > Correct! Каса = checkout, cash register.
 
-> Sort these shopping words into categories.
+- [ ] You can try on clothes anywhere in the store.
+  > Incorrect. You should use the примірочна (fitting room).
 
-### Store Types
-- магазин (store)
-- супермаркет (supermarket)
-- ринок (market)
-- аптека (pharmacy)
+- [x] "Візок" is a shopping cart and "кошик" is a basket.
+  > Correct! Use візок for big shopping, кошик for small purchases.
 
-### Size & Fit Words
-- розмір (size)
-- більший (bigger)
-- менший (smaller)
-- занадто (too/excessive)
+- [x] It's polite to say "Дякую" when receiving your change.
+  > Correct! Politeness is valued in Ukrainian shopping culture.
 
-### Payment Words
-- каса (cash register)
-- чек (receipt)
-- готівка (cash)
-- картка (card)
+- [ ] "Чек" means discount.
+  > Incorrect. Чек means receipt. Знижка means discount.
+
+## group-sort: Market vs Supermarket
+
+> Where would you typically use these phrases/items?
+
+### Ринок (Market)
+- Можна спробувати? (Can I taste?)
+- Поступіться ціною! (Lower the price!)
+- Свіжі овочі від бабусі
+- Тільки готівка (often)
+
+### Супермаркет (Supermarket)
+- Візок (cart)
+- Каса самообслуговування (self-checkout)
+- Чек (receipt)
+- Пакет на касі
 
 ---
 

@@ -661,7 +661,7 @@ Use the correct preposition + case:
     - [ ] перед
     - [ ] між
 
-## order: Arrange Words into Sentences
+## unjumble: Arrange Words into Sentences
 
 > Put the words in the correct order to form grammatically correct sentences.
 
@@ -711,18 +711,36 @@ Use the correct preposition + case:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
+| у / в | /u/ /v/ | in, at, into | prep | - | Loc/Acc |
+| на | /nɑ/ | on, at, onto | prep | - | Loc/Acc |
+| з / із / зі | /z/ /iz/ /zʲi/ | from, with | prep | - | Gen/Instr |
+| до | /dɔ/ | to, until | prep | - | + gen |
+| від | /vʲid/ | from | prep | - | + gen |
+| для | /dlʲɑ/ | for | prep | - | + gen |
+| без | /bɛz/ | without | prep | - | + gen |
+| під | /pʲid/ | under | prep | - | Acc/Instr |
 | над | /nɑd/ | above | prep | - | + instr |
-| під | /pʲid/ | under | prep | - | + acc/instr |
 | перед | /ˈpɛrɛd/ | in front of | prep | - | + instr |
+| за | /zɑ/ | behind, for | prep | - | Acc/Instr |
 | між | /mʲiʒ/ | between | prep | - | + instr |
-| поруч | /ˈporutʃ/ | next to | adv | - | з + instr |
-| вздовж | /vzdoʋʒ/ | along | prep | - | + gen |
-| навколо | /nɑfˈkolo/ | around | prep | - | + gen |
-| посеред | /poˈsɛrɛd/ | in the middle | prep | - | + gen |
-| позаду | /poˈzɑdu/ | behind | prep | - | + gen |
-| попереду | /popɛˈrɛdu/ | in front, ahead | prep | - | + gen |
+| біля | /ˈbʲilʲɑ/ | near, by | prep | - | + gen |
+| коло | /ˈkɔlɔ/ | near, around | prep | - | + gen |
+| поруч | /ˈpɔrutʃ/ | next to | adv | - | з + instr |
+| навпроти | /nɑuˈprɔtɪ/ | opposite | prep | - | + gen |
+| позаду | /pɔˈzɑdu/ | behind | prep | - | + gen |
+| попереду | /pɔpɛˈrɛdu/ | in front, ahead | prep | - | + gen |
+| посеред | /pɔˈsɛrɛd/ | in the middle | prep | - | + gen |
 | серед | /sɛˈrɛd/ | among | prep | - | + gen |
-| замість | /zɑˈmʲistʲ/ | instead of | prep | - | + gen |
+| вздовж | /vzdɔvʒ/ | along | prep | - | + gen |
+| упоперек | /upɔˈpɛrɛk/ | across | prep | - | + gen |
+| через | /ˈtʃɛrɛz/ | through, across | prep | - | + acc |
+| крізь | /krʲizʲ/ | through | prep | - | + acc |
+| навколо | /nɑuˈkɔlɔ/ | around | prep | - | + gen |
+| довкола | /dɔuˈkɔlɑ/ | around | prep | - | + gen |
+| замість | /ˈzɑmʲisʲtʲ/ | instead of | prep | - | + gen |
+| окрім | /ɔˈkrʲim/ | except | prep | - | + gen |
+| крім | /krʲim/ | besides | prep | - | + gen |
+| проти | /ˈprɔtɪ/ | against | prep | - | + gen |
 
 ---
 

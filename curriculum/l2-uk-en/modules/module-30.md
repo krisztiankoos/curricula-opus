@@ -23,113 +23,171 @@ grammar:
 
 ## warm-up
 
-### Congratulations - You Made It!
+### Graduation Day: Emma's Story
 
-You've completed A1 - the foundation of your Ukrainian journey! Let's celebrate what you've achieved:
+**Емма** (34, Australian, Melbourne) sits in her favorite Kyiv café. It's her last day in Ukraine - she arrived 30 days ago knowing zero Ukrainian. Tonight, she flies home. In her journal, she writes:
 
-**What you can now do:**
-✅ Read and write Cyrillic
-✅ Understand noun genders and cases
-✅ Conjugate verbs in present, past, and future
-✅ Ask questions and understand answers
-✅ Navigate cities, order food, shop
-✅ Describe people, weather, and daily life
-✅ Talk about your family and routine
+> *"Day 30. I did it. Thirty days ago, I couldn't tell А from Д. I thought Cyrillic was impossible. Today, I read a Ukrainian newspaper headline. I ordered борщ without pointing. I gave directions to a lost tourist. I told a shop assistant that I needed a smaller size - in Ukrainian! When I asked a babusya at the ринок 'Скільки коштує?' and she answered back, I actually understood.*
+>
+> *The cases still make my head spin sometimes. Was it 'у Києві' or 'до Києва'? But now I hear the patterns. I feel the logic. I'm not just memorizing - I'm starting to think in Ukrainian.*
+>
+> *To anyone starting this journey: it's possible. It's hard, but it's possible. And it's worth every confusing moment."*
+
+This is your graduation too. Let's prove what you've learned.
 
 > 💡 **Did You Know?**
 >
-> At A1 level, you can:
+> At CEFR A1, you can:
 > - Understand and use familiar everyday expressions
 > - Introduce yourself and others
 > - Ask and answer simple personal questions
 > - Interact in a simple way if the other person speaks slowly
 >
-> You're now a CEFR A1 Ukrainian speaker!
+> You're now officially a CEFR A1 Ukrainian speaker!
 
 ## presentation
 
-### Grammar Review
+### Emma's Journey: The Complete A1 Review
 
-**Cases You've Learned:**
+**Phase 1: The Alphabet (Modules 1-10)**
 
-| Case | Use | Example |
-|------|-----|---------|
-| Nominative | Subject | **Студент** читає. |
-| Accusative | Direct object | Я бачу **студента**. |
-| Locative | Location | Я в **школі**. |
-| Genitive | Possession/absence | Немає **часу**. |
+Emma remembers her first week:
+
+| What she learned | Her breakthrough moment |
+|-----------------|------------------------|
+| Cyrillic letters А-Я | Reading her first Ukrainian word: МАМА |
+| Similar letters (А, К, М, О, Т) | Recognizing "кава" on a café sign |
+| False friends (В, Н, Р, С) | Not reading "ресторан" as "pectopah" |
+| Unique letters (Ї, Є, Ь) | Pronouncing "їжа" correctly |
+| Basic greetings | Saying "Привіт!" to her host |
+
+---
+
+**Phase 2: Navigation (Modules 11-20)**
+
+The cases Emma conquered:
+
+| Case | Question | Emma's real-world use |
+|------|----------|----------------------|
+| Nominative | Хто? Що? | **Студент** сидить там. (Describing who's there) |
+| Accusative | Кого? Що? | Я бачу **студента**. (Pointing out people) |
+| Locative | Де? | Я в **школі**. (Saying where she was) |
+| Genitive | Кого? Чого? | Немає **часу**. (Explaining why she couldn't stay) |
+
+**Emma's case tip:**
+
+> *"I made flashcards with arrows. Nominative = start position (WHO does something). Accusative = target (WHAT you see/want). Locative = where you ARE. Genitive = what's MISSING or WHOSE. The arrows helped me visualize the logic."*
+
+---
+
+**Phase 3: Time & Action (Modules 21-30)**
+
+Tenses Emma mastered:
+
+| Tense | Pattern | Emma's diary entries |
+|-------|---------|---------------------|
+| Present | читаю, читаєш, читає | Я **читаю** меню. (Now) |
+| Past | читав/читала | Вчора я **читала** книгу. (Yesterday) |
+| Future | буду + infinitive | Завтра я **буду** літати. (Tomorrow) |
+
+---
+
+### Complete Grammar Summary
+
+**Cases at a Glance:**
+
+| Case | Masculine | Feminine | Neuter | Example |
+|------|-----------|----------|--------|---------|
+| Nominative | студент | книга | вікно | Студент читає. |
+| Accusative (inan.) | стіл | книгу | вікно | Я бачу стіл. |
+| Accusative (anim.) | студента | - | - | Я бачу студента. |
+| Locative | студенті | книзі | вікні | У школі. |
+| Genitive | студента | книги | вікна | Немає книги. |
 
 **Verb Tenses:**
 
 | Tense | Formation | Example |
 |-------|-----------|---------|
-| Present | Stem + endings | Я читаю. |
-| Past | Stem + в/ла/ло/ли | Я читав/читала. |
-| Future | буду + infinitive | Я буду читати. |
+| Present | Stem + endings | Я читаю, ти читаєш, він/вона читає |
+| Past | Stem + gender ending | Я читав (m), читала (f), воно читало (n), ми читали (pl) |
+| Future | буду/будеш/буде + infinitive | Я буду читати, ти будеш працювати |
 
 **Adjective Agreement:**
 
-| Gender | Ending | Example |
-|--------|--------|---------|
-| Masculine | -ий/-ій | новий дім |
-| Feminine | -а/-я | нова книга |
-| Neuter | -е/-є | нове вікно |
-| Plural | -і | нові друзі |
+| Gender | Ending | Emma's example |
+|--------|--------|----------------|
+| Masculine | -ий/-ій | новий ресторан, синій светр |
+| Feminine | -а/-я | нова книга, синя сукня |
+| Neuter | -е/-є | нове місто, синє небо |
+| Plural | -і | нові друзі, сині очі |
 
-### Vocabulary Domains
+---
 
-**A1 Core Vocabulary Areas:**
-1. **Personal:** ім'я, вік, національність, професія
-2. **Numbers:** 0-100, гроші, час
-3. **Family:** родина, батьки, діти
-4. **Home:** кімната, меблі, техніка
-5. **City:** вулиця, транспорт, магазини
-6. **Food:** їжа, напої, ресторан
-7. **Clothes:** одяг, кольори, розмір
-8. **Weather:** погода, сезони
-9. **Time:** дні, місяці, години
-10. **Actions:** повсякденні дії
+### Vocabulary: Emma's 10 Domains
 
-### Communication Skills
+| Domain | Key Words | Emma's usage |
+|--------|-----------|--------------|
+| **Personal** | ім'я, вік, професія | Мене звати Емма. |
+| **Numbers** | 1-100, гроші | Скільки коштує? |
+| **Family** | родина, мама, тато | У мене є брат. |
+| **Home** | кімната, кухня | Я живу в квартирі. |
+| **City** | метро, вулиця | Де станція метро? |
+| **Food** | їжа, борщ, кава | Мені борщ, будь ласка. |
+| **Clothes** | одяг, розмір, колір | Чи є менший розмір? |
+| **Weather** | погода, холодно, дощ | Сьогодні холодно. |
+| **Time** | дні, години | О котрій годині? |
+| **Actions** | йти, їсти, спати | Я йду додому. |
 
-**What you can do:**
+---
 
-| Skill | Example |
-|-------|---------|
-| Introduce yourself | Привіт! Мене звати... |
-| Ask questions | Як справи? Де ти живеш? |
-| Express preferences | Я люблю каву. |
-| Describe things | Це великий будинок. |
-| Talk about time | Я встаю о сьомій. |
-| Make requests | Можна каву, будь ласка? |
-| Give directions | Йдіть прямо, потім праворуч. |
-| Talk about family | У мене є брат. |
+### Communication Skills: What Emma Can Do
 
-> 🎯 **Achievement Unlocked!**
->
-> From not knowing the alphabet to reading, speaking, and understanding Ukrainian - that's incredible progress! Every conversation, every word you recognize, every sentence you form is a victory. Keep going!
+| Skill | Ukrainian | English |
+|-------|-----------|---------|
+| Introduce herself | Привіт! Мене звати Емма. | Hello! My name is Emma. |
+| Ask questions | Як справи? Де ти живеш? | How are you? Where do you live? |
+| Express preferences | Я люблю каву. Я не люблю м'ясо. | I love coffee. I don't like meat. |
+| Describe things | Це великий будинок. | This is a big house. |
+| Talk about time | Я встаю о сьомій. | I wake up at seven. |
+| Make requests | Можна каву, будь ласка? | May I have coffee, please? |
+| Give directions | Йдіть прямо, потім праворуч. | Go straight, then right. |
+| Discuss family | У мене є брат і сестра. | I have a brother and sister. |
 
-### Ready for A2?
+---
 
-**What comes next at A2:**
+### Testimonies: Fellow A1 Graduates
 
-| Topic | What You'll Learn |
+> *"I was terrified of cases. Then I realized: English has them too! 'He' vs 'him' vs 'his' - that's nominative, accusative, genitive. Ukrainian just does it more. Once I saw the pattern, everything clicked."* — **Марк** (35, British, London)
+
+> *"The past tense was my favorite discovery. Masculine -в, feminine -ла - it's so logical! Now I eavesdrop on conversations and think 'that was past tense, she's talking about yesterday!' It's like a superpower."* — **Юкі** (24, Japanese, Tokyo)
+
+> *"My advice? Use it every day. Even if it's just thinking 'Де мої ключі?' when you lose your keys. The more you use it in real life, the faster it sticks."* — **Ганна** (42, German, Munich)
+
+> *"Completing A1 felt impossible at first. Now I'm starting A2 next week. If you told me 30 days ago I'd be reading Ukrainian menus without Google Translate, I'd have laughed. But here I am."* — **Сара** (28, American, Chicago)
+
+---
+
+### What's Next: A2 Preview
+
+Emma's already signed up for A2. Here's what awaits:
+
+| Topic | What You'll Unlock |
 |-------|-------------------|
-| Cases | Dative, Instrumental, Vocative |
-| Verbs | Aspect (imperfective/perfective) |
-| Complex | Conditional, reported speech |
-| Vocabulary | 1500+ words |
-| Skills | Reading texts, extended conversations |
+| Cases | Dative (to whom), Instrumental (with what), Vocative (calling someone) |
+| Verbs | Aspect - perfective vs imperfective |
+| Complex structures | Conditional mood, reported speech |
+| Vocabulary | 500+ new words |
+| Skills | Reading longer texts, extended conversations |
 
-> 📜 **History Bite: Your Journey**
+> 📜 **History Bite: Your Achievement**
 >
-> You've learned a language spoken by 40+ million people, with a 1000+ year written history. You can read Cyrillic - an alphabet created by Byzantine missionaries Cyril and Methodius. You understand cases - grammar that proto-Slavic speakers used 1500 years ago. You're connected to a rich linguistic and cultural heritage!
+> You've learned a language spoken by 40+ million people, with over 1000 years of written history. You can read Cyrillic - an alphabet created by Byzantine missionaries Saints Cyril and Methodius in the 9th century. You understand grammatical cases - a feature that has existed in Slavic languages for over 1500 years. You're now connected to a rich linguistic and cultural heritage!
 
 ## practice
 
-### Integrated Reading
+### Emma's Final Reading Challenge
 
-Read and understand:
+Emma found this text in a Ukrainian magazine. Can you read it?
 
 > Привіт! Мене звати Олена. Я з Києва. Мені 25 років. Я працюю лікаркою в лікарні. У мене є брат Андрій і сестра Марія. Мій брат студент, він вивчає інформатику. Моя сестра вже працює - вона вчителька.
 >
@@ -139,11 +197,17 @@ Read and understand:
 
 **Comprehension questions:**
 1. Хто Олена за професією?
+   > [!answer] Лікарка (She's a doctor)
 2. Скільки братів і сестер у Олени?
+   > [!answer] Один брат і одна сестра (One brother and one sister)
 3. Коли Олена прокидається?
+   > [!answer] О шостій (At six o'clock)
 4. Яка зараз пора року?
+   > [!answer] Зима (Winter)
 
-### Grammar Integration
+---
+
+### Grammar Integration Challenge
 
 Complete with correct forms:
 1. Вчора я ___ (читати - past, f) цікаву книгу.
@@ -157,35 +221,64 @@ Complete with correct forms:
 5. Це ___ (мій) сестра.
    > [!answer] моя
 
-### Conversation Practice
+---
 
-Practice this dialogue:
-A: Привіт! Як справи?
-B: Добре, дякую! А в тебе?
-A: Теж добре. Що плануєш на вихідні?
-B: Думаю поїхати до Львова. Ти був там?
-A: Так, був минулого року. Львів дуже гарне місто!
-B: Що там найцікавіше?
-A: Старе місто і кав'ярні. Кава там найкраща!
+### Emma's Last Ukrainian Conversation
+
+Practice this dialogue - Emma's final café conversation:
+
+| Speaker | Ukrainian | English |
+|---------|-----------|---------|
+| Емма | Привіт! Як справи? | Hi! How are you? |
+| Офіціант | Добре, дякую! А в вас? | Good, thanks! And you? |
+| Емма | Теж добре. Це мій останній день у Києві. | Also good. This is my last day in Kyiv. |
+| Офіціант | О, шкода! Сподобалося вам тут? | Oh, what a pity! Did you like it here? |
+| Емма | Так, дуже! Київ прекрасне місто. | Yes, very much! Kyiv is a beautiful city. |
+| Офіціант | Куди ви їдете далі? | Where are you going next? |
+| Емма | Додому, в Австралію. Але я повернуся! | Home, to Australia. But I'll return! |
+| Офіціант | Чудово! Що замовите на прощання? | Wonderful! What will you order as a farewell? |
+| Емма | Мою улюблену каву і медівник, будь ласка. | My favorite coffee and honey cake, please. |
+| Офіціант | Звичайно. Щасливої дороги! | Of course. Safe travels! |
+| Емма | Дякую! До побачення! | Thank you! Goodbye! |
 
 ## production
 
-### Final Challenge: About Me
+### Your Final Challenge: Tell Your Story
 
-Write or speak about yourself covering:
-1. Ім'я, вік, звідки ви
-2. Ваша родина
-3. Де ви живете
-4. Що ви робите (робота/навчання)
-5. Ваш типовий день
-6. Що ви любите робити
-7. Ваші плани на майбутнє
+Like Emma, write or speak about yourself covering:
+
+1. **Ім'я і вік** - Your name and age
+2. **Звідки ви** - Where you're from
+3. **Ваша родина** - Your family
+4. **Де ви живете** - Where you live
+5. **Що ви робите** - What you do (work/study)
+6. **Ваш типовий день** - Your typical day
+7. **Що ви любите робити** - What you love to do
+8. **Чому ви вчите українську** - Why you're learning Ukrainian
+9. **Ваші плани** - Your plans
+
+Use all three tenses! Past (what you did), present (what you do), future (what you will do).
 
 ---
 
 ---
 
 # A1 Achievement Summary
+
+## Emma's Completed Checklist
+
+| Skill | Emma | You |
+|-------|------|-----|
+| Read and write Cyrillic | ✅ | ☐ |
+| Use 4 cases correctly | ✅ | ☐ |
+| Conjugate verbs (present) | ✅ | ☐ |
+| Use past tense with gender | ✅ | ☐ |
+| Form compound future | ✅ | ☐ |
+| Navigate a city | ✅ | ☐ |
+| Order at restaurants | ✅ | ☐ |
+| Shop and negotiate | ✅ | ☐ |
+| Describe weather | ✅ | ☐ |
+| Talk about time and routine | ✅ | ☐ |
 
 ## Cases Mastered
 
@@ -238,36 +331,11 @@ Write or speak about yourself covering:
 
 ---
 
-# Summary
-
-> 💡 **What You've Accomplished**
->
-> - **30 modules** of structured learning
-> - **Cyrillic mastery** - all 33 letters
-> - **4 cases** - Nominative, Accusative, Locative, Genitive
-> - **3 tenses** - Present, Past, Future
-> - **Core vocabulary** - 250+ words
-> - **Practical skills** - Ordering, shopping, directions, descriptions
->
-> Вітаємо! Congratulations!
-
-> 🎯 **Your Next Journey: A2**
->
-> In A2, you'll unlock:
-> - Remaining 3 cases (Dative, Instrumental, Vocative)
-> - Verbal aspect (imperfective/perfective)
-> - Conditional mood
-> - More complex sentence structures
-> - 500+ new words
->
-> До зустрічі на A2! See you at A2!
-
-
 # Activities
 
-## fill-in: A1 Grammar Review
+## fill-in: Emma's Grammar Final
 
-> Choose the correct form to complete each sentence. Sentences are 5-7 words.
+> Emma's journal has some gaps. Help her complete these sentences with the correct forms.
 
 1. Я зараз ___ дуже цікаву книгу. (read - present)
    > [!answer] читаю
@@ -309,56 +377,56 @@ Write or speak about yourself covering:
    > [!answer] У
    > [!options] Я | У | На | Мій
 
-## unjumble: Build the Sentence
+## unjumble: Emma's Last Sentences
 
-> Arrange the words in the correct order. Sentences range from 6-8 words.
+> Emma scrambled these sentences in her notes. Arrange them correctly.
 
 1. цікаву / читаю / Я / книгу / зараз / українську / нову
    > [!answer] Я зараз читаю нову цікаву українську книгу.
-   > (I am now reading a new interesting Ukrainian book.) [7 words]
+   > (I am now reading a new interesting Ukrainian book.)
 
 2. Вона / вчора / довго / працювала / весь / день / в / офісі
    > [!answer] Вона вчора весь день довго працювала в офісі.
-   > (She worked a long time in the office all day yesterday.) [8 words]
+   > (She worked a long time in the office all day yesterday.)
 
 3. буду / Завтра / я / вдома / весь / день / увечері
    > [!answer] Завтра увечері я буду весь день вдома.
-   > (Tomorrow evening I will be at home all day.) [7 words]
+   > (Tomorrow evening I will be at home all day.)
 
 4. Києві / Я / живу / в / давно / вже / красивому
    > [!answer] Я вже давно живу в красивому Києві.
-   > (I have been living in beautiful Kyiv for a long time.) [7 words]
+   > (I have been living in beautiful Kyiv for a long time.)
 
 5. часу / немає / У / мене / на / жаль / зовсім
    > [!answer] На жаль, у мене зовсім немає часу.
-   > (Unfortunately, I have no time at all.) [7 words]
+   > (Unfortunately, I have no time at all.)
 
 6. велика / Це / дружна / моя / родина / і / щаслива
    > [!answer] Це моя велика дружна і щаслива родина.
-   > (This is my big close-knit and happy family.) [7 words]
+   > (This is my big close-knit and happy family.)
 
 7. сильний / дощ / Сьогодні / йде / холодний / надворі / осінній
    > [!answer] Сьогодні надворі йде сильний холодний осінній дощ.
-   > (Today a strong cold autumn rain is falling outside.) [7 words]
+   > (Today a strong cold autumn rain is falling outside.)
 
 8. гарячу / каву / Я / дуже / люблю / з / молоком
    > [!answer] Я дуже люблю гарячу каву з молоком.
-   > (I really love hot coffee with milk.) [7 words]
+   > (I really love hot coffee with milk.)
 
 9. українською / говорити / Я / можу / вже / добре / мовою
    > [!answer] Я вже можу добре говорити українською мовою.
-   > (I can already speak Ukrainian language well.) [7 words]
+   > (I can already speak Ukrainian language well.)
 
 10. Мене / Олена / з / звати / Києва / і / я / студентка
    > [!answer] Мене звати Олена, я студентка з Києва.
-   > (My name is Olena, I'm a student from Kyiv.) [8 words]
+   > (My name is Olena, I'm a student from Kyiv.)
 
-## match-up: A1 Vocabulary Review
+## match-up: A1 Vocabulary Final
 
 > Match Ukrainian words to their English meanings.
 
-| Left | Right |
-|------|-------|
+| Ukrainian | English |
+|-----------|---------|
 | привіт | hello |
 | дякую | thank you |
 | будь ласка | please |
@@ -370,9 +438,9 @@ Write or speak about yourself covering:
 | новий | new |
 | гарний | beautiful |
 
-## quiz: A1 Comprehensive Review
+## quiz: Emma's Comprehensive Review
 
-> Choose the correct answer.
+> Help Emma ace her final quiz!
 
 1. How do you form past tense for feminine subjects?
    - [ ] stem + -в
@@ -444,41 +512,41 @@ Write or speak about yourself covering:
    - [ ] Робить дощ
    > Literally "rain goes"
 
-## true-false: True or False?
+## true-false: Grammar Truth or Myth?
 
-> Determine if each statement is true or false.
+> Emma wrote some grammar rules. Are they correct?
 
-- [x] Nominative is used for sentence subjects
-   > Correct! Студент читає.
+- [x] Nominative is used for sentence subjects.
+  > Correct! Студент читає.
 
-- [x] Locative is always used with a preposition
-   > Correct! в школі, на роботі
+- [x] Locative is always used with a preposition.
+  > Correct! в школі, на роботі
 
-- [ ] Accusative for feminine is the same as nominative
-   > Incorrect. Feminine: -а → -у (книга → книгу)
+- [ ] Accusative for feminine is the same as nominative.
+  > Incorrect. Feminine: -а → -у (книга → книгу)
 
-- [x] Past tense agrees with subject gender
-   > Correct! він читав, вона читала
+- [x] Past tense agrees with subject gender.
+  > Correct! він читав, вона читала
 
-- [x] "Холодно" is impersonal weather expression
-   > Correct!
+- [x] "Холодно" is impersonal weather expression.
+  > Correct!
 
-- [ ] "Моя брат" is correct
-   > Incorrect. брат is masculine: мій брат
+- [ ] "Моя брат" is correct.
+  > Incorrect. брат is masculine: мій брат
 
-- [x] Genitive is used after "немає"
-   > Correct! У мене немає часу.
+- [x] Genitive is used after "немає".
+  > Correct! У мене немає часу.
 
-- [x] Future: буду + infinitive
-   > Correct! Я буду читати.
+- [x] Future: буду + infinitive.
+  > Correct! Я буду читати.
 
-- [ ] All adjectives end in -ий
-   > Incorrect. Soft adjectives end in -ій (синій)
+- [ ] All adjectives end in -ий.
+  > Incorrect. Soft adjectives end in -ій (синій)
 
-- [x] "У мене є" means "I have"
-   > Correct!
+- [x] "У мене є" means "I have".
+  > Correct!
 
-## group-sort: A1 Grammar Review
+## group-sort: A1 Grammar Categories
 
 > Sort these grammatical elements into the correct category.
 
@@ -501,3 +569,28 @@ Write or speak about yourself covering:
 - Pronouns (я, ти, він, вона)
 
 ---
+
+# Summary
+
+> 💡 **What You've Accomplished**
+>
+> Following Emma's 30-day journey:
+> - **30 modules** of structured learning
+> - **Cyrillic mastery** - all 33 letters
+> - **4 cases** - Nominative, Accusative, Locative, Genitive
+> - **3 tenses** - Present, Past, Future
+> - **Core vocabulary** - 250+ words
+> - **Practical skills** - Ordering, shopping, directions, descriptions
+>
+> Вітаємо! Congratulations!
+
+> 🎯 **Your Next Journey: A2**
+>
+> Like Emma, you're ready to unlock:
+> - Remaining 3 cases (Dative, Instrumental, Vocative)
+> - Verbal aspect (imperfective/perfective)
+> - Conditional mood
+> - More complex sentence structures
+> - 500+ new words
+>
+> До зустрічі на A2! See you at A2!

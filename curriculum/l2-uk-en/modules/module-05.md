@@ -268,7 +268,7 @@ Change "this" to "that" and "my" to "your":
    > [!answer] Цей
    > [!options] Цей | Ця | Це | Ці
 
-2. ___ книга. (This book.) [feminine]
+2. ___ чашка. (This cup.) [feminine]
    > [!answer] Ця
    > [!options] Цей | Ця | Це | Ці
 
@@ -280,7 +280,7 @@ Change "this" to "that" and "my" to "your":
    > [!answer] мій
    > [!options] мій | моя | моє | мої
 
-5. Це ___ сумка. (This is my bag.) [feminine]
+5. Це ___ шафа. (This is my wardrobe.) [feminine]
    > [!answer] моя
    > [!options] мій | моя | моє | мої
 
@@ -308,21 +308,21 @@ Change "this" to "that" and "my" to "your":
 
 > Arrange the words in the correct order. Sentences range from 4-6 words.
 
-1. стіл / Цей / мій / великий / новий
-   > [!answer] Цей великий стіл мій новий.
-   > (This big table is my new one.) [5 words]
+1. холодильник / Цей / мій / великий / новий
+   > [!answer] Цей великий холодильник мій новий.
+   > (This big fridge is my new one.) [5 words]
 
-2. книга / Ця / моя / українська
-   > [!answer] Ця українська книга моя.
-   > (This Ukrainian book is mine.) [4 words]
+2. праска / Ця / моя / нова
+   > [!answer] Ця нова праска моя.
+   > (This new iron is mine.) [4 words]
 
 3. вікно / моє / Це / чи / твоє
    > [!answer] Це вікно моє чи твоє?
    > (Is this window mine or yours?) [5 words]
 
-4. ключ / Де / мій / від / дому
-   > [!answer] Де мій ключ від дому?
-   > (Where is my key to the house?) [5 words]
+4. ключ / Де / мій / від / квартири
+   > [!answer] Де мій ключ від квартири?
+   > (Where is my key to the apartment?) [5 words]
 
 5. твоя / Це / нова / сумка / чи
    > [!answer] Чи це твоя нова сумка?
@@ -332,13 +332,13 @@ Change "this" to "that" and "my" to "your":
    > [!answer] Той старий телефон там твій.
    > (That old phone there is yours.) [5 words]
 
-7. ліжко / Це / моє / а / те / твоє
-   > [!answer] Це ліжко моє, а те твоє.
-   > (This bed is mine, and that one is yours.) [6 words]
+7. диван / Це / мій / а / той / твій
+   > [!answer] Це диван мій, а той твій.
+   > (This sofa is mine, and that one is yours.) [6 words]
 
-8. лампа / Ця / моя / нова / красива
-   > [!answer] Ця красива нова лампа моя.
-   > (This beautiful new lamp is mine.) [5 words]
+8. ложка / Ця / моя / срібна / красива
+   > [!answer] Ця красива срібна ложка моя.
+   > (This beautiful silver spoon is mine.) [5 words]
 
 9. стілець / Цей / твій / чи / мій
    > [!answer] Цей стілець твій чи мій?
@@ -350,31 +350,41 @@ Change "this" to "that" and "my" to "your":
 
 ## group-sort: Sort by Gender
 
-> Sort the demonstratives and possessives into gender categories.
+> Sort the nouns into gender categories.
 
 ### Masculine (Чоловічий рід)
-- цей
-- той
-- мій
-- твій
+- стіл
+- стілець
+- диван
+- холодильник
+- комп'ютер
+- телефон
+- ключ
+- гаманець
+- рюкзак
+- пилосос
 
 ### Feminine (Жіночий рід)
-- ця
-- та
-- моя
-- твоя
+- шафа
+- лампа
+- плита
+- праска
+- чашка
+- ложка
+- виделка
+- тарілка
+- пляшка
+- сумка
+- ручка
 
 ### Neuter (Середній рід)
-- це
-- те
-- моє
-- твоє
+- ліжко
+- дзеркало
+- крісло
+- вікно
 
 ### Plural (Множина)
-- ці
-- ті
-- мої
-- твої
+- двері
 
 ## match-up: Match the Pairs
 
@@ -382,26 +392,26 @@ Change "this" to "that" and "my" to "your":
 
 | Left | Right |
 |------|-------|
-| цей | this (masculine) |
-| ця | this (feminine) |
-| це | this (neuter) |
-| той | that (masculine) |
-| та | that (feminine) |
-| мій | my (masculine) |
-| моя | my (feminine) |
-| твій | your (masculine) |
-| його | his, its |
-| її | her, hers |
+| холодильник | fridge |
+| праска | iron |
+| пилосос | vacuum cleaner |
+| плита | stove |
+| мікрохвильовка | microwave |
+| шафа | wardrobe |
+| диван | sofa |
+| крісло | armchair |
+| ліжко | bed |
+| стілець | chair |
 
 ## quiz: Gender Agreement Rules
 
 > Test your understanding of demonstrative and possessive agreement.
 
-1. "Книга" ends in -а. Which demonstrative is correct?
-   - [ ] цей книга
-   - [x] ця книга
-   - [ ] це книга
-   - [ ] ці книга
+1. "Шафа" ends in -а. Which demonstrative is correct?
+   - [ ] цей шафа
+   - [x] ця шафа
+   - [ ] це шафа
+   - [ ] ці шафа
    > Feminine nouns (-а ending) take "ця"
 
 2. "Стіл" ends in a consonant. Which possessive is correct?
@@ -411,11 +421,11 @@ Change "this" to "that" and "my" to "your":
    - [ ] мої стіл
    > Masculine nouns (consonant ending) take "мій"
 
-3. "Вікно" ends in -о. Which demonstrative is correct?
-   - [ ] цей вікно
-   - [ ] ця вікно
-   - [x] це вікно
-   - [ ] ці вікно
+3. "Крісло" ends in -о. Which demonstrative is correct?
+   - [ ] цей крісло
+   - [ ] ця крісло
+   - [x] це крісло
+   - [ ] ці крісло
    > Neuter nouns (-о ending) take "це"
 
 4. Why doesn't "його" change form like "мій"?
@@ -425,11 +435,11 @@ Change "this" to "that" and "my" to "your":
    - [ ] It's plural only
    > "його" and "її" never change - they're invariable
 
-5. Which is correct for "that table" (masculine)?
-   - [x] той стіл
-   - [ ] та стіл
-   - [ ] те стіл
-   - [ ] ті стіл
+5. Which is correct for "that computer" (masculine)?
+   - [x] той комп'ютер
+   - [ ] та комп'ютер
+   - [ ] те комп'ютер
+   - [ ] ті комп'ютер
    > Masculine nouns take "той" for "that"
 
 6. How do you say "my bed" (ліжко = neuter)?
@@ -453,7 +463,7 @@ Change "this" to "that" and "my" to "your":
    - [ ] це (m), ця (f), цей (n), ці (pl)
    > The pattern is: -ей (m), -я (f), -е (n), -і (pl)
 
-9. "Її книга, її стіл, її вікно" - what's special about "її"?
+9. "Її шафа, її стіл, її вікно" - what's special about "її"?
    - [ ] It changes for each gender
    - [x] It stays the same for all genders
    - [ ] It's only for feminine nouns
@@ -474,8 +484,8 @@ Change "this" to "that" and "my" to "your":
 - [x] Demonstratives must agree with noun gender: цей/ця/це.
    > Correct! Masc=цей, Fem=ця, Neut=це (this); той/та/те (that).
 
-- [ ] "Мій книга" is correct because "мій" means "my".
-   > Incorrect. "книга" is feminine → requires "моя книга".
+- [ ] "Мій шафа" is correct because "мій" means "my".
+   > Incorrect. "шафа" is feminine → requires "моя шафа".
 
 - [x] Possessives change form based on the noun's gender, not the owner's.
    > Correct! "мій стіл" (my table), "моя книга" (my book) - noun gender matters.
@@ -520,6 +530,29 @@ Change "this" to "that" and "my" to "your":
 | твої | /tvɔˈji/ | your (pl, informal) | pron | pl | Informal possessive |
 | його | /jɔˈɦɔ/ | his, its | pron | - | Invariable - never changes |
 | її | /jiˈji/ | her, hers | pron | - | Invariable - never changes |
+| чашка | /ˈtʃɑʃkɑ/ | cup | noun | f |
+| ложка | /ˈlɔʒkɑ/ | spoon | noun | f |
+| виделка | /vɪˈdɛlkɑ/ | fork | noun | f |
+| ніж | /nʲiʒ/ | knife | noun | m |
+| тарілка | /tɑˈrʲilkɑ/ | plate | noun | f |
+| склянка | /ˈsklʲɑnkɑ/ | glass | noun | f |
+| пляшка | /ˈplʲɑʃkɑ/ | bottle | noun | f |
+| рюкзак | /rʲukˈzɑk/ | backpack | noun | m |
+| комп'ютер | /kɔmˈpjutɛr/ | computer | noun | m |
+| стіна | /sʲtʲiˈnɑ/ | wall | noun | f |
+| підлога | /pidˈlɔɦɑ/ | floor | noun | f |
+| стеля | /ˈstɛlʲɑ/ | ceiling | noun | f |
+| годинник | /ɦɔˈdɪnːɪk/ | clock, watch | noun | m |
+| дзеркало | /ˈdzɛrkɑlɔ/ | mirror | noun | n |
+| картина | /kɑrˈtɪnɑ/ | picture, painting | noun | f |
+| крісло | /ˈkrʲislɔ/ | armchair | noun | n |
+| диван | /dɪˈvɑn/ | sofa | noun | m |
+| шафа | /ˈʃɑfɑ/ | wardrobe | noun | f |
+| холодильник | /xɔlɔˈdɪlʲnɪk/ | fridge | noun | m |
+| плита | /plɪˈtɑ/ | stove | noun | f |
+| мікрохвильовка | /mʲikrɔxvɪˈlʲɔvkɑ/ | microwave | noun | f |
+| праска | /ˈprɑskɑ/ | iron | noun | f |
+| пилосос | /pɪlɔˈsɔs/ | vacuum cleaner | noun | m |
 | стілець | /ˈstʲilɛt͡sʲ/ | chair | noun | m | Furniture |
 | ліжко | /ˈlʲiʒkɔ/ | bed | noun | n | Furniture |
 | лампа | /ˈlɑmpɑ/ | lamp | noun | f | Cognate with English |

@@ -1,9 +1,9 @@
-# Ukrainian L2 Curriculum Plan v4
+# Ukrainian L2 Curriculum Plan v5
 
 ## Overview
 
-- **Total Modules:** 232 (A1-B2) + 120 C1 = 352 total
-- **Total Vocabulary Target:** ~8,500 words (A1-C1)
+- **Total Modules:** 310 (A1-B2) + 90 C1 = 400 total
+- **Total Vocabulary Target:** ~10,000 words (A1-C1)
 - **Levels:** A1 → A2 → A2+ → B1 → B2 → C1
 
 ## Summary
@@ -13,9 +13,9 @@
 | A1 | 1-30 | 30 | 456 | 456 | ✅ COMPLETE | A1-CURRICULUM-PLAN.md |
 | A2 | 31-60 | 30 | 519 | 975 | ✅ COMPLETE | A2-CURRICULUM-PLAN.md |
 | A2+ | 61-80 | 20 | 433 | 1,408 | ✅ COMPLETE | A2+-CURRICULUM-PLAN.md |
-| B1 | 81-160 | **80** | ~2,000 | ~3,400 | 🔄 EXPANDING | B1-CURRICULUM-PLAN.md |
-| B2 | 161-232 | **72** | ~2,000 | ~5,400 | 🔄 EXPANDING | B2-CURRICULUM-PLAN.md |
-| C1 | 233-352 | 120 | ~3,000 | ~8,500 | 📝 PLANNED | C1-CURRICULUM-PLAN.md |
+| B1 | 81-160 | 80 | ~2,000 | ~3,400 | ✅ COMPLETE | B1-CURRICULUM-PLAN.md |
+| B2 | 161-310 | **150** | ~3,500 | ~7,000 | 🔄 EXPANDING | B2-CURRICULUM-PLAN.md |
+| C1 | 311-400 | 90 | ~3,000 | ~10,000 | 📝 PLANNED | C1-CURRICULUM-PLAN.md |
 
 ## Immersion Progression
 
@@ -46,42 +46,39 @@ Gradual transition from English to Ukrainian:
 | **B1.5** | **141-150** | **Contemporary Ukraine (media)** | **30% EN** |
 | **B1.6** | **151-160** | **Authentic texts** | **20% EN** |
 
-## B2 Structure (72 modules)
+## B2 Structure (150 modules)
 
-| Phase | Modules | Focus |
-|-------|---------|-------|
-| B2.1 | 161-185 | Passive, register, advanced grammar |
-| B2.2 | 186-210 | History (pre-Slavic to Polish era), idioms, synonyms |
-| **B2.3** | **211-225** | **Видатні українки (15 women)** |
-| **B2.4** | **226-232** | **Видатні українці (7 men)** |
+| Phase | Modules | Count | Focus |
+|-------|---------|-------|-------|
+| B2.1 | 161-190 | 30 | Grammar & Register (passive, participles, 8 registers) |
+| B2.2 | 191-220 | 30 | Phraseology & Synonymy (proverbs, idioms, 12 synonym sets) |
+| B2.3 | 221-245 | 25 | Ukrainian History (25 periods, Kyivan Rus to present) |
+| B2.4 | 246-270 | 25 | Biographies (13 women + 11 men = 24 icons) |
+| **B2.5** | **271-295** | **25** | **Folk Culture & Arts (music, dance, crafts, regions)** |
+| B2.6 | 296-310 | 15 | Skills & Capstone (vocab, skills, final exam) |
 
-### Famous Ukrainians (22 modules)
+### Key Content Areas
 
-**Видатні українки (211-225):**
-1. Роксолана (1502-1558) — Sultana
-2. Ганна Барвінок (1828-1911) — First female writer
-3. Леся Українка (1871-1913) — Poet, playwright
-4. Соломія Крушельницька (1872-1952) — Opera legend
-5. Софія Окуневська (1865-1926) — Doctor, "святa лікарка"
-6. Христина Алчевська (1882-1931) — Education pioneer
-7. Ольга Басараб (1889-1924) — Spy, fighter
-8. Берта Рапопорт (1891-1979) — First female ship captain
-9. Олена Степанів (1892-1963) — First female officer
-10. Віра Холодна (1893-1919) — Silent film queen
-11. Катерина Білокур (1900-1961) — Folk artist
-12. Софія Яблонська (1907-1971) — Traveler, writer
-13. Марія Примаченко (1909-1997) — Folk artist
-14. Квітка Цісик (1953-1998) — Singer
-15. Ліна Костенко (1930-) — Poet (living legend)
+**History (221-245):** 25 modules covering all periods
+- Kyivan Rus, Mongol invasion, Grand Duchy of Lithuania
+- Polish-Lithuanian Commonwealth, Cossack Era, Pereiaslav MYTHS
+- Imperial rule, Austrian Galicia, National Revival
+- UNR, Holodomor, WWII, Soviet period, Dissidents
+- Chornobyl, Independence, Orange Revolution, Euromaidan, War
 
-**Видатні українці (226-232):**
-1. Тарас Шевченко (1814-1861) — Poet, national icon
-2. Іван Франко (1856-1916) — Writer, scholar
-3. Михайло Грушевський (1866-1934) — Historian, first president
-4. Богдан Хмельницький (1595-1657) — Hetman
-5. Іван Мазепа (1639-1709) — Hetman
-6. Григорій Сковорода (1722-1794) — Philosopher
-7. Василь Вишиваний (1895-1948) — Habsburg prince → Ukrainian patriot
+**Phraseology (191-204):** Restored from original plan
+- 4 proverb modules, 4 set expression modules, 6 idiom modules
+
+**Folk Culture (271-295):** NEW comprehensive coverage
+- Folk music (kobzari, bandura, ritual songs, lullabies)
+- Folk dance (hopak, kozachok, regional styles)
+- Folk crafts (pysanky, vyshyvanka patterns, pottery)
+- Folk beliefs (mythology, superstitions)
+- Folk tales (heroes, magic stories)
+- Calendar & life rituals
+- Regional identities (Galicia, Slobozhanshchyna, Polissia, Podillia)
+- Music (classical composers, modern rock/pop)
+- Cinema, Sports heroes
 
 ## Implementation Status
 
@@ -90,11 +87,15 @@ Gradual transition from English to Ukrainian:
 | A1 | ✅ Complete | 30 modules |
 | A2 | ✅ Complete | 30 modules |
 | A2+ | ✅ Complete | 20 modules |
-| B1.1-B1.4 | ✅ Implemented | Needs quality rewrite (issue #56) |
-| B1.5-B1.6 | ⏳ Planned | NEW: 20 modules |
-| B2.1-B2.2 | ✅ Complete | Rewritten with quality standards |
-| B2.3-B2.4 | ⏳ Planned | NEW: 22 modules (famous Ukrainians) |
-| C1 | 📝 Planned | 120 modules (233-352) |
+| B1.1-B1.4 | ✅ Complete | 60 modules (needs quality polish) |
+| B1.5-B1.6 | ✅ Complete | 20 modules (Contemporary Ukraine, Authentic texts) |
+| B2.1 | ⏳ In Progress | 30 modules (Grammar & Register) — some exist |
+| B2.2 | ⏳ Planned | 30 modules (Phraseology & Synonymy) |
+| B2.3 | ⏳ Planned | 25 modules (Ukrainian History) |
+| B2.4 | ⏳ Planned | 25 modules (Biographies) |
+| B2.5 | ⏳ Planned | 25 modules (Folk Culture & Arts) — NEW |
+| B2.6 | ⏳ Planned | 15 modules (Skills & Capstone) |
+| C1 | 📝 Planned | 90 modules (311-400) |
 
 ## Quality Standards
 
@@ -122,3 +123,6 @@ All B1+ modules must follow established quality standards:
 ## Related GitHub Issues
 
 - #56: Phase 3: B1 quality improvement + B1.5/B1.6 + B2 expansion
+- #65: B1/B2 Module Restructuring (B1.5-B1.6 ✅ COMPLETE)
+- #71: Implement New B2 Curriculum (150 modules, 161-310)
+- #70: B2 Activity & Vocab Enrichment

@@ -12,15 +12,14 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 
 ### Minimum Content Requirements
 
-| Level | Min Duration | Min Vocabulary | Activity Count | Items per Activity | Depth Expectation |
-|-------|--------------|----------------|----------------|-------------------|-------------------|
-| A1 | 30 min | 15 words | 6 | 10 | Foundation building |
-| A2 | 35 min | 20 words | 8 | 10 | Skill expansion |
-| A2+ | 40 min | 22 words | 10 | 15 | Transition to B1 |
-| B1 | 40 min | 25 words | 12 | 20 | Complex integration |
-| B2 | 45 min | 30 words | 14 | 20 | Professional depth |
-| C1 | 50 min | 30 words | 14 | 20 | Near-native richness |
-| Tracks | 45-60 min | 35 words | 14 | 20 | Domain expertise |
+| Level | Modules | Reading Time | Practice Time | Total Time | New Words / Mod | Activity Count | Items / Activity |
+|-------|---------|--------------|---------------|------------|-----------------|----------------|------------------|
+| A1 | 1-30 | 15 min | 45 min | **1h** | 15-20 | 6 | 10 |
+| A2 | 31-60 | 20 min | 45 min | **1h+** | 20-25 | 8 | 10 |
+| A2+ | 61-80 | 25 min | 60 min | **1.5h** | 35-40 | 10 | 15 |
+| B1 | 81-160 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
+| B2 | 161-310 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
+| C1 | 311-430 | 45 min | 90 min | **2h+** | 30-35 | 14 | 20 |
 
 ### Activity Type Priority
 
@@ -118,7 +117,7 @@ A single curriculum module can generate:
 
 | Trigger | Threshold | Rationale |
 |---------|-----------|-----------|
-| Duration | > 45 min estimated | Learner fatigue, session limits |
+| Duration | > 60 min estimated (Total Time) | Learner fatigue, session limits; most modules A2+ and higher will split into multiple Vibe lessons |
 | Vocabulary | > 25 words | Memory overload |
 | Activities | > 5 activities | Too much in one session |
 | Grammar points | > 2 major concepts | Cognitive overload |
@@ -396,7 +395,7 @@ Modules should include **contextual boxes** that make learning memorable and eng
 
 ---
 
-## Pronunciation Guidance (B2+ Grammar Modules)
+## Pronunciation Guidance (Advanced Modules: B2-C1)
 
 ### When Required
 

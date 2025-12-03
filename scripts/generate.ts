@@ -378,16 +378,32 @@ async function main() {
       console.log(`  📷 Loaded ${imageMap.size} image URLs from vocabulary.csv`);
     }
 
-    // First pass: parse all modules
+    // First pass: parse all modules (or just frontmatter for nav when targeting single module)
     const modules: ModuleInfo[] = [];
+    const navInfo: Map<number, { level: string; title: string }> = new Map();
 
     for (const mdFile of mdFiles) {
       const moduleNum = parseInt(mdFile.match(/module-(\d+)/)?.[1] || '0', 10);
-      if (targetModule && moduleNum !== targetModule) continue;
 
       try {
         const mdPath = join(modulesDir, mdFile);
         const mdContent = await readFile(mdPath, 'utf-8');
+
+        // If targeting a single module, only fully parse that one
+        // but extract frontmatter from all for navigation
+        if (targetModule && moduleNum !== targetModule) {
+          // Quick frontmatter extraction for navigation
+          const fmMatch = mdContent.match(/^---\n([\s\S]*?)\n---/);
+          if (fmMatch) {
+            const levelMatch = fmMatch[1].match(/^level:\s*(.+)$/m);
+            const titleMatch = fmMatch[1].match(/^title:\s*["']?(.+?)["']?\s*$/m);
+            if (levelMatch && titleMatch) {
+              navInfo.set(moduleNum, { level: levelMatch[1].trim(), title: titleMatch[1] });
+            }
+          }
+          continue;
+        }
+
         const parsed = parseModule(mdContent, { languagePair: langPair, imageMap });
         const vibeCtx: RenderContext = {
           moduleNum: moduleNum,
@@ -406,6 +422,9 @@ async function main() {
           parsed,
           vibeJSON,
         });
+
+        // Also add to navInfo
+        navInfo.set(moduleNum, { level: parsed.frontmatter.level, title: parsed.frontmatter.title });
       } catch (error) {
         console.error(`  ⚠ Error parsing ${mdFile}:`, error);
       }
@@ -419,6 +438,23 @@ async function main() {
       modulesByLevel.set(mod.level, levelMods);
     }
 
+    // Build sorted list of modules in same level for navigation
+    const getNavNeighbors = (moduleNum: number, level: string) => {
+      // Get all modules in the same level, sorted by number
+      const sameLevel = Array.from(navInfo.entries())
+        .filter(([_, info]) => info.level === level)
+        .sort((a, b) => a[0] - b[0]);
+
+      const idx = sameLevel.findIndex(([num]) => num === moduleNum);
+      const prevEntry = idx > 0 ? sameLevel[idx - 1] : undefined;
+      const nextEntry = idx < sameLevel.length - 1 ? sameLevel[idx + 1] : undefined;
+
+      return {
+        prev: prevEntry ? { num: prevEntry[0], title: prevEntry[1].title } : undefined,
+        next: nextEntry ? { num: nextEntry[0], title: nextEntry[1].title } : undefined,
+      };
+    };
+
     // Second pass: generate files with navigation
     for (const [level, levelModules] of modulesByLevel) {
       const levelLower = level.toLowerCase();
@@ -428,8 +464,7 @@ async function main() {
 
       for (let i = 0; i < levelModules.length; i++) {
         const mod = levelModules[i];
-        const prevMod = i > 0 ? levelModules[i - 1] : undefined;
-        const nextMod = i < levelModules.length - 1 ? levelModules[i + 1] : undefined;
+        const { prev: prevMod, next: nextMod } = getNavNeighbors(mod.num, level);
 
         console.log(`    📦 Module ${padNumber(mod.num)}: ${mod.title}`);
 

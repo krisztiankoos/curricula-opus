@@ -353,9 +353,9 @@ Create sentences using: Subject + дати/показати/сказати + Obj
     > [!answer] Я даю гарний подарунок своїй молодшій сестрі на день народження.
     > (I give a nice gift to my younger sister for her birthday.) [10 words]
 
-## select: Choose the Dative Noun Form
+## fill-in: Choose the Dative Noun Form
 
-> Select the correct dative noun form. (A2: 10 items)
+> Choose the correct dative noun form. (A2: 10 items)
 
 1. друг → ___
    > [!answer] другові / другу
@@ -548,46 +548,46 @@ Create sentences using: Subject + дати/показати/сказати + Obj
 - студентам
 - дітям
 
-## order: Dative Sentence Building
+## unjumble: Dative Sentence Building
 
 > Arrange the sentence elements in the correct order.
 
-1. [Я] → [даю] → [подарунок] → [сестрі]
+1. Я / даю / подарунок / сестрі
    > [!answer] Я даю подарунок сестрі.
    > (I give a gift to my sister.)
 
-2. [Вона] → [пише] → [листа] → [другові]
+2. Вона / пише / листа / другові
    > [!answer] Вона пише листа другові.
    > (She writes a letter to a friend.)
 
-3. [Ми] → [показуємо] → [фото] → [батькам]
+3. Ми / показуємо / фото / батькам
    > [!answer] Ми показуємо фото батькам.
    > (We show photos to our parents.)
 
-4. [Він] → [допомагає] → [бабусі] → [на кухні]
+4. Він / допомагає / бабусі / на кухні
    > [!answer] Він допомагає бабусі на кухні.
    > (He helps grandma in the kitchen.)
 
-5. [Вони] → [дзвонять] → [друзям] → [щодня]
+5. Вони / дзвонять / друзям / щодня
    > [!answer] Вони дзвонять друзям щодня.
    > (They call friends every day.)
 
-6. [Я] → [кажу] → [правду] → [вчителеві]
+6. Я / кажу / правду / вчителеві
    > [!answer] Я кажу правду вчителеві.
    > (I tell the truth to the teacher.)
 
-7. [Вона] → [надсилає] → [листа] → [колезі]
+7. Вона / надсилає / листа / колезі
    > [!answer] Вона надсилає листа колезі.
    > (She sends a letter to a colleague.)
 
-8. [Ми] → [даємо] → [книгу] → [студентові]
+8. Ми / даємо / книгу / студентові
    > [!answer] Ми даємо книгу студентові.
    > (We give a book to the student.)
 
-9. [Він] → [розповідає] → [історію] → [дітям]
+9. Він / розповідає / історію / дітям
    > [!answer] Він розповідає історію дітям.
    > (He tells a story to the children.)
 
-10. [Я] → [купую] → [квіти] → [мамі]
+10. Я / купую / квіти / мамі
     > [!answer] Я купую квіти мамі.
     > (I buy flowers for mom.)

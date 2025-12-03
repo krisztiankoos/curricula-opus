@@ -484,9 +484,9 @@ Create sentences with impersonal + dative:
 - [x] "весело" means "fun, merry"
    > Correct!
 
-## select: Choose the Correct Dative Form
+## fill-in: Choose the Correct Dative Form
 
-> Select the correct dative pronoun or noun for each sentence.
+> Choose the correct dative pronoun or noun for each sentence.
 
 1. Я допомагаю ___ з домашнім завданням. (him)
    > [!answer] йому
@@ -550,47 +550,47 @@ Create sentences with impersonal + dative:
 - знати (to know)
 - чути (to hear)
 
-## order: Dative Sentence Building
+## unjumble: Dative Sentence Building
 
 > Arrange the sentence elements in the correct order.
 
-1. [Я] → [допомагаю] → [братові] → [з роботою]
+1. Я / допомагаю / братові / з роботою
    > [!answer] Я допомагаю братові з роботою.
    > (I help my brother with work.)
 
-2. [Вона] → [дякує] → [вам] → [за допомогу]
+2. Вона / дякує / вам / за допомогу
    > [!answer] Вона дякує вам за допомогу.
    > (She thanks you for help.)
 
-3. [Мені] → [потрібно] → [купити] → [молоко]
+3. Мені / потрібно / купити / молоко
    > [!answer] Мені потрібно купити молоко.
    > (I need to buy milk.)
 
-4. [Не] → [заважай] → [мені] → [працювати]
+4. Не / заважай / мені / працювати
    > [!answer] Не заважай мені працювати!
    > (Don't disturb me working!)
 
-5. [Їй] → [подобається] → [ця] → [музика]
+5. Їй / подобається / ця / музика
    > [!answer] Їй подобається ця музика.
    > (She likes this music.)
 
-6. [Він] → [відповідає] → [вчителеві] → [чітко]
+6. Він / відповідає / вчителеві / чітко
    > [!answer] Він відповідає вчителеві чітко.
    > (He answers the teacher clearly.)
 
-7. [Нам] → [холодно] → [у] → [кімнаті]
+7. Нам / холодно / у / кімнаті
    > [!answer] Нам холодно у кімнаті.
    > (We are cold in the room.)
 
-8. [Я] → [раджу] → [тобі] → [відпочити]
+8. Я / раджу / тобі / відпочити
    > [!answer] Я раджу тобі відпочити.
    > (I advise you to rest.)
 
-9. [Цей] → [годинник] → [належить] → [батькові]
+9. Цей / годинник / належить / батькові
    > [!answer] Цей годинник належить батькові.
    > (This watch belongs to father.)
 
-10. [Їм] → [важко] → [зрозуміти] → [це]
+10. Їм / важко / зрозуміти / це
     > [!answer] Їм важко зрозуміти це.
     > (It's hard for them to understand this.)
 

@@ -132,6 +132,35 @@
 .unjumble-feedback .wrong-text { color: var(--danger); }
 .unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Order Sentence Activity - Sentence reordering with unjumble-style UI */
+.order-sequence { display: flex; flex-direction: column; align-items: stretch; }
+.order-sentence-row { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0.5rem; min-height: auto; padding: 0.5rem; flex: none; width: 100%; }
+.order-sentence-item { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-item:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-item:active { cursor: grabbing; }
+.order-sentence-item.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-item.correct { background: var(--success); }
+.order-sentence-item.wrong { background: var(--danger); }
+.order-sentence-item.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); max-width: 90vw; }
+.order-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-sentence-text { flex: 1; }
+.order-feedback { width: 100%; padding: 0.5rem 0; display: none; }
+.order-feedback.show { display: block; }
+.order-feedback .correct-text { color: var(--success); font-weight: 600; }
+.order-feedback .wrong-text { color: var(--danger); }
+
+/* Order Card Activity - New class names for classic order */
+.order-items-wrapper { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-sentence-card { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-card:active { cursor: grabbing; }
+.order-sentence-card.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-card.correct { background: var(--success); }
+.order-sentence-card.wrong { background: var(--danger); }
+.order-card-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-card-text { flex: 1; }
+.order-buttons { margin-top: 0.5rem; }
+
 /* Select Activity - Multi-choice checkboxes */
 .select-container { display: flex; flex-direction: column; gap: 1rem; }
 .select-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; display: flex; gap: 0.75rem; }

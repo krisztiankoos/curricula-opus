@@ -529,9 +529,9 @@ Create sentences: Subject + verb + з + instrumental
 - [x] "ним" means "(with) him/it"
    > Correct!
 
-## select: Choose the Correct Instrumental Form
+## fill-in: Choose the Correct Instrumental Form
 
-> Select the correct instrumental form of the pronoun or noun.
+> Choose the correct instrumental form of the pronoun or noun.
 
 1. Я йду в кіно з ___ . (he)
    > [!answer] ним
@@ -604,47 +604,47 @@ Create sentences: Subject + verb + з + instrumental
 - студентами
 - сестрами
 
-## order: Instrumental Sentence Building
+## unjumble: Instrumental Sentence Building
 
 > Arrange the sentence elements in the correct order.
 
-1. [Я] → [йду] → [в кіно] → [з другом]
+1. Я / йду / в кіно / з другом
    > [!answer] Я йду в кіно з другом.
    > (I go to the cinema with a friend.)
 
-2. [Вона] → [зустрічається] → [з подругою] → [в кафе]
+2. Вона / зустрічається / з подругою / в кафе
    > [!answer] Вона зустрічається з подругою в кафе.
    > (She meets with a friend at a cafe.)
 
-3. [Ми] → [живемо] → [разом] → [з батьками]
+3. Ми / живемо / разом / з батьками
    > [!answer] Ми живемо разом з батьками.
    > (We live together with our parents.)
 
-4. [Він] → [працює] → [з колегами] → [в офісі]
+4. Він / працює / з колегами / в офісі
    > [!answer] Він працює з колегами в офісі.
    > (He works with colleagues in the office.)
 
-5. [Я] → [вітаюся] → [з вами] → [щодня]
+5. Я / вітаюся / з вами / щодня
    > [!answer] Я вітаюся з вами щодня.
    > (I greet you every day.)
 
-6. [Вона] → [обідає] → [з сестрою] → [вдома]
+6. Вона / обідає / з сестрою / вдома
    > [!answer] Вона обідає з сестрою вдома.
    > (She has lunch with her sister at home.)
 
-7. [Ми] → [прощаємося] → [з друзями] → [ввечері]
+7. Ми / прощаємося / з друзями / ввечері
    > [!answer] Ми прощаємося з друзями ввечері.
    > (We say goodbye to friends in the evening.)
 
-8. [Він] → [знайомиться] → [з нею] → [на вечірці]
+8. Він / знайомиться / з нею / на вечірці
    > [!answer] Він знайомиться з нею на вечірці.
    > (He gets acquainted with her at a party.)
 
-9. [Я] → [гуляю] → [з ними] → [у парку]
+9. Я / гуляю / з ними / у парку
    > [!answer] Я гуляю з ними у парку.
    > (I walk with them in the park.)
 
-10. [Вона] → [розмовляє] → [з мамою] → [по телефону]
+10. Вона / розмовляє / з мамою / по телефону
     > [!answer] Вона розмовляє з мамою по телефону.
     > (She talks with mom on the phone.)
 

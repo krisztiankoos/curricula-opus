@@ -388,6 +388,35 @@ footer {
 .unjumble-feedback .wrong-text { color: var(--danger); }
 .unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Order Sentence Activity - Sentence reordering with unjumble-style UI */
+.order-sequence { display: flex; flex-direction: column; align-items: stretch; }
+.order-sentence-row { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0.5rem; min-height: auto; padding: 0.5rem; flex: none; width: 100%; }
+.order-sentence-item { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-item:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-item:active { cursor: grabbing; }
+.order-sentence-item.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-item.correct { background: var(--success); }
+.order-sentence-item.wrong { background: var(--danger); }
+.order-sentence-item.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); max-width: 90vw; }
+.order-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-sentence-text { flex: 1; }
+.order-feedback { width: 100%; padding: 0.5rem 0; display: none; }
+.order-feedback.show { display: block; }
+.order-feedback .correct-text { color: var(--success); font-weight: 600; }
+.order-feedback .wrong-text { color: var(--danger); }
+
+/* Order Card Activity - New class names for classic order */
+.order-items-wrapper { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-sentence-card { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-card:active { cursor: grabbing; }
+.order-sentence-card.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-card.correct { background: var(--success); }
+.order-sentence-card.wrong { background: var(--danger); }
+.order-card-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-card-text { flex: 1; }
+.order-buttons { margin-top: 0.5rem; }
+
 /* Select Activity - Multi-choice checkboxes */
 .select-container { display: flex; flex-direction: column; gap: 1rem; }
 .select-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; display: flex; gap: 0.75rem; }
@@ -419,7 +448,7 @@ footer {
     <div class="module-nav">
       <span class="module-nav-link disabled">← Prev</span>
       <a href="index.html" class="module-nav-link">A2+ Index</a>
-      <a href="module-62.html" class="module-nav-link">Module 62 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
@@ -1243,7 +1272,7 @@ footer {
     </div></section>
 
     <section id="activity-7" class="section"><div class="card"><h3>Порядок дій у дорозі</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/0</span></div>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
       <div id="activity-7-container" class="order-container"></div>
       <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
@@ -1257,7 +1286,7 @@ footer {
     </div></section>
 
     <section id="activity-9" class="section"><div class="card"><h3>Протилежні префікси</h3>
-      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/0</span></div>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/15</span></div>
       <div class="match-container" id="activity-9-container"><svg class="match-lines" id="activity-9-lines"></svg>
         <div class="match-column" id="activity-9-left"></div>
         <div class="match-column" id="activity-9-right"></div>
@@ -1300,7 +1329,7 @@ footer {
   </main><footer>Module 61 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Motion Verb Prefixes","data":{"type":"fill-blank","items":[{"prompt":"Він ___ (прийшов / вийшов) о восьмій годині. (arrived)","answer":"прийшов","hints":["прийшов / вийшов"]},{"prompt":"Вона ___ (увійшла / вийшла) з магазину з покупками. (exited)","answer":"вийшла","hints":["увійшла / вийшла"]},{"prompt":"Ми ___ (перейшли / зайшли) вулицю на світлофорі. (crossed)","answer":"перейшли","hints":["перейшли / зайшли"]},{"prompt":"___ (Зайди / Дійди) до мене після роботи. (Drop by)","answer":"Зайди","hints":["Зайди / Дійди"]},{"prompt":"Як ___ (дійти / зайти) до центру міста? (reach, get to)","answer":"дійти","hints":["дійти / зайти"]}]}},{"id":"activity-1","type":"unjumble","title":"Motion Verb Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["о","восьмій","Він","прийшов","додому","годині"],"answer":"Він прийшов додому о восьмій годині.","translation":"He arrived home at eight o'clock."},{"words":["вулицю","Перейдіть","на","світлофорі"],"answer":"Перейдіть вулицю на світлофорі.","translation":"Cross the street at the traffic light."},{"words":["кімнати","вийшла","з","Вона"],"answer":"Вона вийшла з кімнати.","translation":"She exited the room."},{"words":["до","Зайди","мене","ввечері"],"answer":"Зайди до мене ввечері.","translation":"Drop by my place in the evening."},{"words":["дійти","до","Як","станції","метро"],"answer":"Як дійти до станції метро?","translation":"How do I get to the metro station?"}]}},{"id":"activity-2","type":"match-up","title":"Знайдіть пари","data":{"type":"match-up","pairs":[{"left":"приходити","right":"to come (habitually)"},{"left":"найдешевший","right":"cheapest"},{"left":"англійська","right":"English (adj)"},{"left":"світлофор","right":"traffic light"},{"left":"відбуття","right":"departure"},{"left":"фото","right":"photo"},{"left":"привезти","right":"to bring (by transport)"},{"left":"прихід","right":"arrival, coming"},{"left":"напрямок","right":"direction"},{"left":"хокей","right":"hockey"},{"left":"прилетіти","right":"to arrive (by plane)"},{"left":"перехрестя","right":"intersection"},{"left":"прошу","right":"please/you're welcome"},{"left":"об'їхати","right":"to drive around"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Перевірка значень","data":{"type":"quiz","questions":[{"question":"Що означає \"об'їхати\"?","options":["to meet","(with) you","wireless","to drive around"],"correctIndex":3,"explanation":"\"об'їхати\" means \"to drive around\""},{"question":"Що означає \"відходити\"?","options":["what","to eat (perf)","to depart (habitually)","to drive, manage"],"correctIndex":2,"explanation":"\"відходити\" means \"to depart (habitually)\""},{"question":"Що означає \"переїзд\"?","options":["nowhere","often","smallest","move (relocation)"],"correctIndex":3,"explanation":"\"переїзд\" means \"move (relocation)\""},{"question":"Що означає \"світлофор\"?","options":["no","convinced","traffic light","reluctantly"],"correctIndex":2,"explanation":"\"світлофор\" means \"traffic light\""},{"question":"Що означає \"доїхати\"?","options":["to reach (by transport)","to write","thin","passport"],"correctIndex":0,"explanation":"\"доїхати\" means \"to reach (by transport)\""},{"question":"Що означає \"калюжа\"?","options":["to help (impf)","fish","signature","puddle"],"correctIndex":3,"explanation":"\"калюжа\" means \"puddle\""},{"question":"Що означає \"заходити\"?","options":["to drop by (habitually)","borscht","while","to return"],"correctIndex":0,"explanation":"\"заходити\" means \"to drop by (habitually)\""},{"question":"Що означає \"увійти\"?","options":["to remain","train","to enter","platform"],"correctIndex":2,"explanation":"\"увійти\" means \"to enter\""},{"question":"Що означає \"від'їхати\"?","options":["to drive away","to become","on the contrary","puddle"],"correctIndex":0,"explanation":"\"від'їхати\" means \"to drive away\""},{"question":"Що означає \"привезти\"?","options":["password","to hurt, ache","to bring (by transport)","for"],"correctIndex":2,"explanation":"\"привезти\" means \"to bring (by transport)\""},{"question":"Що означає \"прилетіти\"?","options":["train","to arrive (by plane)","more slowly","declension"],"correctIndex":1,"explanation":"\"прилетіти\" means \"to arrive (by plane)\""},{"question":"Що означає \"заїхати\"?","options":["cucumber","that (neuter)","biggest","to drive by"],"correctIndex":3,"explanation":"\"заїхати\" means \"to drive by\""},{"question":"Що означає \"відійти\"?","options":["bottle","change (money)","entrance","to step away"],"correctIndex":3,"explanation":"\"відійти\" means \"to step away\""},{"question":"Що означає \"перехрестя\"?","options":["imaginary, hypothetical","there","intersection","this, this is"],"correctIndex":2,"explanation":"\"перехрестя\" means \"intersection\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи ні?","data":{"type":"true-false","statements":[{"statement":"\"заїхати\" means \"to drive by\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"винести\" means \"if\"","isTrue":false,"explanation":"Incorrect. \"винести\" means \"to carry out\""},{"statement":"\"виїзд\" means \"would (after vowel)\"","isTrue":false,"explanation":"Incorrect. \"виїзд\" means \"exit (for vehicles)\""},{"statement":"\"прилетіти\" means \"to continue (ongoing)\"","isTrue":false,"explanation":"Incorrect. \"прилетіти\" means \"to arrive (by plane)\""},{"statement":"\"дійти\" means \"to reach (on foot)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"вилетіти\" means \"to fly out, depart\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"в'їхати\" means \"to drive in\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"обійти\" means \"to go around\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"калюжа\" means \"in order to, so that\"","isTrue":false,"explanation":"Incorrect. \"калюжа\" means \"puddle\""},{"statement":"\"світлофор\" means \"pilot\"","isTrue":false,"explanation":"Incorrect. \"світлофор\" means \"traffic light\""}]}},{"id":"activity-5","type":"group-sort","title":"Сортування за родом","data":{"type":"group-sort","groups":[{"id":"-","name":"Чоловічий рід","items":["напрямок","виїзд","перехід","заїзд","прихід","світлофор"]},{"id":"-","name":"Середній рід","items":["перехрестя","відбуття"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Виберіть правильний префікс","data":{"type":"select","items":[{"question":"Вчора ми _______ в нову квартиру на вулиці Хрещатик.","options":[{"text":"прийшли","correct":false},{"text":"вийшли","correct":false},{"text":"переїхали","correct":true},{"text":"зайшли","correct":false}]},{"question":"Літак з Варшави _______ о восьмій годині ранку.","options":[{"text":"прилетів","correct":true},{"text":"вилетів","correct":false},{"text":"перелетів","correct":false},{"text":"відлетів","correct":false}]},{"question":"Потрібно _______ вулицю на зеленому світлофорі, а не тут.","options":[{"text":"прийти","correct":false},{"text":"перейти","correct":true},{"text":"зайти","correct":false},{"text":"вийти","correct":false}]},{"question":"Він щодня _______ до бабусі після школи випити чаю.","options":[{"text":"приходить","correct":false},{"text":"виходить","correct":false},{"text":"заходить","correct":true},{"text":"переходить","correct":false}]},{"question":"Автобус вже _______, ми запізнилися на п'ять хвилин.","options":[{"text":"прийшов","correct":false},{"text":"відійшов","correct":true},{"text":"зайшов","correct":false},{"text":"перейшов","correct":false}]},{"question":"Я _______ з будинку о сьомій ранку кожного дня.","options":[{"text":"прийду","correct":false},{"text":"виходжу","correct":true},{"text":"заходжу","correct":false},{"text":"переходжу","correct":false}]},{"question":"Коли ми _______ до станції метро, дощ ще не почався.","options":[{"text":"дійшли","correct":true},{"text":"прийшли","correct":false},{"text":"відійшли","correct":false},{"text":"зайшли","correct":false}]},{"question":"Він _______ мені подарунок із Львова після відпустки.","options":[{"text":"приніс","correct":false},{"text":"привіз","correct":true},{"text":"виніс","correct":false},{"text":"перенів","correct":false}]},{"question":"Вона _______ у кімнату дуже тихо, я не чув.","options":[{"text":"увійшла","correct":true},{"text":"вийшла","correct":false},{"text":"зайшла","correct":false},{"text":"перейшла","correct":false}]},{"question":"Батьки _______ з вокзалу дві години тому на таксі.","options":[{"text":"прийшли","correct":false},{"text":"приїхали","correct":true},{"text":"виїхали","correct":false},{"text":"заїхали","correct":false}]},{"question":"Машина _______ за рогом і зникла з поля зору.","options":[{"text":"приїхала","correct":false},{"text":"виїхала","correct":false},{"text":"заїхала","correct":true},{"text":"переїхала","correct":false}]},{"question":"Птахи _______ на південь, коли стало холодно восени.","options":[{"text":"прилетіли","correct":false},{"text":"влетіли","correct":false},{"text":"відлетіли","correct":true},{"text":"перелетіли","correct":false}]},{"question":"Ми _______ посередині шляху і трохи відпочили біля дерева.","options":[{"text":"прийшли","correct":false},{"text":"дійшли","correct":true},{"text":"відійшли","correct":false},{"text":"перейшли","correct":false}]},{"question":"Собака швидко _______ через вулицю до свого господаря.","options":[{"text":"прибігла","correct":false},{"text":"перебігла","correct":true},{"text":"забігла","correct":false},{"text":"вибігла","correct":false}]},{"question":"Вони _______ на нашу вечірку ненадовго, лише на годину.","options":[{"text":"прийшли","correct":false},{"text":"вийшли","correct":false},{"text":"зайшли","correct":true},{"text":"перейшли","correct":false}]}]}},{"id":"activity-7","type":"order","title":"Порядок дій у дорозі","data":{"type":"order","items":[],"correctOrder":[]}},{"id":"activity-8","type":"quiz","title":"Префікси та їх значення","data":{"type":"quiz","questions":[{"question":"Що означає префікс \"при-\" в дієсловах руху?","options":["movement away","movement across","arrival, movement toward","movement out"],"correctIndex":2,"explanation":"\"при-\" indicates arrival or movement toward destination"},{"question":"Яке значення має префікс \"ви-\" в дієсловах?","options":["entry","exit, movement out","crossing","arrival"],"correctIndex":1,"explanation":"\"ви-\" means exit or outward movement"},{"question":"Що означає \"заходити\" (префікс за-)?","options":["to arrive permanently","to drop by, visit briefly","to exit","to cross over"],"correctIndex":1,"explanation":"\"за-\" often means brief stop or dropping by"},{"question":"Яке значення префікса \"пере-\" в дієсловах руху?","options":["arrival","departure","across, over, from one side to another","entering"],"correctIndex":2,"explanation":"\"пере-\" means movement across or transfer"},{"question":"Що означає префікс \"від-\" в дієсловах?","options":["movement away from starting point","movement toward","movement into","movement behind"],"correctIndex":0,"explanation":"\"від-\" indicates movement away from"},{"question":"Який префікс використовується для \"входити, заходити всередину\"?","options":["ви-","при-","в-/у-","за-"],"correctIndex":2,"explanation":"\"в-/у-\" means entry or movement into"},{"question":"Що означає дієслово \"дійти\" (префікс до-)?","options":["to go out","to arrive from afar","to reach, to get to a destination","to cross"],"correctIndex":2,"explanation":"\"до-\" means reaching up to a point"},{"question":"Який префікс робить дієслова доконаними (perfective)?","options":["жоден","тільки при-","тільки ви-","майже всі префікси"],"correctIndex":3,"explanation":"Most prefixes make verbs perfective"},{"question":"Яке слово означає \"entrance\" і походить від \"увійти\"?","options":["виїзд","вхід","прихід","перехід"],"correctIndex":1,"explanation":"\"вхід\" (entrance) comes from \"увійти\" (to enter)"},{"question":"Що означає \"переїхати\" в контексті житла?","options":["to visit","to exit","to move (to a new home)","to arrive"],"correctIndex":2,"explanation":"\"переїхати\" means to move/relocate"},{"question":"Який корінь використовується для руху пішки?","options":["-їх-/-їзд-","-йд-/-ход-","-лет-","-нес-"],"correctIndex":1,"explanation":"\"-йд-/-ход-\" is used for movement on foot"},{"question":"Який корінь використовується для руху транспортом?","options":["-їх-/-їзд-","-йд-/-ход-","-біг-","-нес-"],"correctIndex":0,"explanation":"\"-їх-/-їзд-\" is used for movement by vehicle"},{"question":"Що означає \"відійшов\" про поїзд?","options":["arrived","departed","stopped","crashed"],"correctIndex":1,"explanation":"\"відійшов\" about train means departed"},{"question":"Яке дієслово означає \"to carry out\" (винести назовні)?","options":["внести","винести","принести","перенести"],"correctIndex":1,"explanation":"\"винести\" means to carry out"},{"question":"Що означає \"забігти\" в повсякденному контексті?","options":["to run away","to run in briefly, pop in quickly","to run across","to arrive running"],"correctIndex":1,"explanation":"\"забігти\" means to run in briefly"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-9","type":"match-up","title":"Протилежні префікси","data":{"type":"match-up","pairs":[],"shuffleRight":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Motion Verb Prefixes","data":{"type":"fill-blank","items":[{"prompt":"Він ___ (прийшов / вийшов) о восьмій годині. (arrived)","answer":"прийшов","hints":["прийшов / вийшов"]},{"prompt":"Вона ___ (увійшла / вийшла) з магазину з покупками. (exited)","answer":"вийшла","hints":["увійшла / вийшла"]},{"prompt":"Ми ___ (перейшли / зайшли) вулицю на світлофорі. (crossed)","answer":"перейшли","hints":["перейшли / зайшли"]},{"prompt":"___ (Зайди / Дійди) до мене після роботи. (Drop by)","answer":"Зайди","hints":["Зайди / Дійди"]},{"prompt":"Як ___ (дійти / зайти) до центру міста? (reach, get to)","answer":"дійти","hints":["дійти / зайти"]}]}},{"id":"activity-1","type":"unjumble","title":"Motion Verb Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["о","восьмій","Він","прийшов","додому","годині"],"answer":"Він прийшов додому о восьмій годині.","translation":"He arrived home at eight o'clock."},{"words":["вулицю","Перейдіть","на","світлофорі"],"answer":"Перейдіть вулицю на світлофорі.","translation":"Cross the street at the traffic light."},{"words":["кімнати","вийшла","з","Вона"],"answer":"Вона вийшла з кімнати.","translation":"She exited the room."},{"words":["до","Зайди","мене","ввечері"],"answer":"Зайди до мене ввечері.","translation":"Drop by my place in the evening."},{"words":["дійти","до","Як","станції","метро"],"answer":"Як дійти до станції метро?","translation":"How do I get to the metro station?"}]}},{"id":"activity-2","type":"match-up","title":"Знайдіть пари","data":{"type":"match-up","pairs":[{"left":"приходити","right":"to come (habitually)"},{"left":"найдешевший","right":"cheapest"},{"left":"англійська","right":"English (adj)"},{"left":"світлофор","right":"traffic light"},{"left":"відбуття","right":"departure"},{"left":"фото","right":"photo"},{"left":"привезти","right":"to bring (by transport)"},{"left":"прихід","right":"arrival, coming"},{"left":"напрямок","right":"direction"},{"left":"хокей","right":"hockey"},{"left":"прилетіти","right":"to arrive (by plane)"},{"left":"перехрестя","right":"intersection"},{"left":"прошу","right":"please/you're welcome"},{"left":"об'їхати","right":"to drive around"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Перевірка значень","data":{"type":"quiz","questions":[{"question":"Що означає \"об'їхати\"?","options":["to meet","(with) you","wireless","to drive around"],"correctIndex":3,"explanation":"\"об'їхати\" means \"to drive around\""},{"question":"Що означає \"відходити\"?","options":["what","to eat (perf)","to depart (habitually)","to drive, manage"],"correctIndex":2,"explanation":"\"відходити\" means \"to depart (habitually)\""},{"question":"Що означає \"переїзд\"?","options":["nowhere","often","smallest","move (relocation)"],"correctIndex":3,"explanation":"\"переїзд\" means \"move (relocation)\""},{"question":"Що означає \"світлофор\"?","options":["no","convinced","traffic light","reluctantly"],"correctIndex":2,"explanation":"\"світлофор\" means \"traffic light\""},{"question":"Що означає \"доїхати\"?","options":["to reach (by transport)","to write","thin","passport"],"correctIndex":0,"explanation":"\"доїхати\" means \"to reach (by transport)\""},{"question":"Що означає \"калюжа\"?","options":["to help (impf)","fish","signature","puddle"],"correctIndex":3,"explanation":"\"калюжа\" means \"puddle\""},{"question":"Що означає \"заходити\"?","options":["to drop by (habitually)","borscht","while","to return"],"correctIndex":0,"explanation":"\"заходити\" means \"to drop by (habitually)\""},{"question":"Що означає \"увійти\"?","options":["to remain","train","to enter","platform"],"correctIndex":2,"explanation":"\"увійти\" means \"to enter\""},{"question":"Що означає \"від'їхати\"?","options":["to drive away","to become","on the contrary","puddle"],"correctIndex":0,"explanation":"\"від'їхати\" means \"to drive away\""},{"question":"Що означає \"привезти\"?","options":["password","to hurt, ache","to bring (by transport)","for"],"correctIndex":2,"explanation":"\"привезти\" means \"to bring (by transport)\""},{"question":"Що означає \"прилетіти\"?","options":["train","to arrive (by plane)","more slowly","declension"],"correctIndex":1,"explanation":"\"прилетіти\" means \"to arrive (by plane)\""},{"question":"Що означає \"заїхати\"?","options":["cucumber","that (neuter)","biggest","to drive by"],"correctIndex":3,"explanation":"\"заїхати\" means \"to drive by\""},{"question":"Що означає \"відійти\"?","options":["bottle","change (money)","entrance","to step away"],"correctIndex":3,"explanation":"\"відійти\" means \"to step away\""},{"question":"Що означає \"перехрестя\"?","options":["imaginary, hypothetical","there","intersection","this, this is"],"correctIndex":2,"explanation":"\"перехрестя\" means \"intersection\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи ні?","data":{"type":"true-false","statements":[{"statement":"\"заїхати\" means \"to drive by\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"винести\" means \"if\"","isTrue":false,"explanation":"Incorrect. \"винести\" means \"to carry out\""},{"statement":"\"виїзд\" means \"would (after vowel)\"","isTrue":false,"explanation":"Incorrect. \"виїзд\" means \"exit (for vehicles)\""},{"statement":"\"прилетіти\" means \"to continue (ongoing)\"","isTrue":false,"explanation":"Incorrect. \"прилетіти\" means \"to arrive (by plane)\""},{"statement":"\"дійти\" means \"to reach (on foot)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"вилетіти\" means \"to fly out, depart\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"в'їхати\" means \"to drive in\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"обійти\" means \"to go around\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"калюжа\" means \"in order to, so that\"","isTrue":false,"explanation":"Incorrect. \"калюжа\" means \"puddle\""},{"statement":"\"світлофор\" means \"pilot\"","isTrue":false,"explanation":"Incorrect. \"світлофор\" means \"traffic light\""}]}},{"id":"activity-5","type":"group-sort","title":"Сортування за родом","data":{"type":"group-sort","groups":[{"id":"-","name":"Чоловічий рід","items":["напрямок","виїзд","перехід","заїзд","прихід","світлофор"]},{"id":"-","name":"Середній рід","items":["перехрестя","відбуття"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Виберіть правильний префікс","data":{"type":"select","items":[{"question":"Вчора ми _______ в нову квартиру на вулиці Хрещатик.","options":[{"text":"прийшли","correct":false},{"text":"вийшли","correct":false},{"text":"переїхали","correct":true},{"text":"зайшли","correct":false}]},{"question":"Літак з Варшави _______ о восьмій годині ранку.","options":[{"text":"прилетів","correct":true},{"text":"вилетів","correct":false},{"text":"перелетів","correct":false},{"text":"відлетів","correct":false}]},{"question":"Потрібно _______ вулицю на зеленому світлофорі, а не тут.","options":[{"text":"прийти","correct":false},{"text":"перейти","correct":true},{"text":"зайти","correct":false},{"text":"вийти","correct":false}]},{"question":"Він щодня _______ до бабусі після школи випити чаю.","options":[{"text":"приходить","correct":false},{"text":"виходить","correct":false},{"text":"заходить","correct":true},{"text":"переходить","correct":false}]},{"question":"Автобус вже _______, ми запізнилися на п'ять хвилин.","options":[{"text":"прийшов","correct":false},{"text":"відійшов","correct":true},{"text":"зайшов","correct":false},{"text":"перейшов","correct":false}]},{"question":"Я _______ з будинку о сьомій ранку кожного дня.","options":[{"text":"прийду","correct":false},{"text":"виходжу","correct":true},{"text":"заходжу","correct":false},{"text":"переходжу","correct":false}]},{"question":"Коли ми _______ до станції метро, дощ ще не почався.","options":[{"text":"дійшли","correct":true},{"text":"прийшли","correct":false},{"text":"відійшли","correct":false},{"text":"зайшли","correct":false}]},{"question":"Він _______ мені подарунок із Львова після відпустки.","options":[{"text":"приніс","correct":false},{"text":"привіз","correct":true},{"text":"виніс","correct":false},{"text":"перенів","correct":false}]},{"question":"Вона _______ у кімнату дуже тихо, я не чув.","options":[{"text":"увійшла","correct":true},{"text":"вийшла","correct":false},{"text":"зайшла","correct":false},{"text":"перейшла","correct":false}]},{"question":"Батьки _______ з вокзалу дві години тому на таксі.","options":[{"text":"прийшли","correct":false},{"text":"приїхали","correct":true},{"text":"виїхали","correct":false},{"text":"заїхали","correct":false}]},{"question":"Машина _______ за рогом і зникла з поля зору.","options":[{"text":"приїхала","correct":false},{"text":"виїхала","correct":false},{"text":"заїхала","correct":true},{"text":"переїхала","correct":false}]},{"question":"Птахи _______ на південь, коли стало холодно восени.","options":[{"text":"прилетіли","correct":false},{"text":"влетіли","correct":false},{"text":"відлетіли","correct":true},{"text":"перелетіли","correct":false}]},{"question":"Ми _______ посередині шляху і трохи відпочили біля дерева.","options":[{"text":"прийшли","correct":false},{"text":"дійшли","correct":true},{"text":"відійшли","correct":false},{"text":"перейшли","correct":false}]},{"question":"Собака швидко _______ через вулицю до свого господаря.","options":[{"text":"прибігла","correct":false},{"text":"перебігла","correct":true},{"text":"забігла","correct":false},{"text":"вибігла","correct":false}]},{"question":"Вони _______ на нашу вечірку ненадовго, лише на годину.","options":[{"text":"прийшли","correct":false},{"text":"вийшли","correct":false},{"text":"зайшли","correct":true},{"text":"перейшли","correct":false}]}]}},{"id":"activity-7","type":"order","title":"Порядок дій у дорозі","data":{"type":"order","items":["Потім я перейшов вулицю на світлофорі біля центрального парку.","Нарешті я дійшов до бібліотеки і зайшов усередину по книжку.","Я вийшов з дому о дев'ятій годині ранку в суботу.","Після кав'ярні я ще трохи пройшов уздовж річки насолоджуючись природою.","Коли я виходив з бібліотеки, почав падати дощ та я заїхав додому на таксі.","Спочатку я прокинувся і швидко поснідав вдома перед виходом.","Біля станції метро я зайшов у маленьку пекарню купити хліб.","На протилежному боці я побачив стару кав'ярню і зайшов випити каву.","Я дійшов до станції метро приблизно за п'ятнадцять хвилин неквапливо.","У бібліотеці я провів дві години вибираючи цікаві книги для читання."],"correctOrder":[5,2,8,6,0,7,3,1,9,4]}},{"id":"activity-8","type":"quiz","title":"Префікси та їх значення","data":{"type":"quiz","questions":[{"question":"Що означає префікс \"при-\" в дієсловах руху?","options":["movement away","movement across","arrival, movement toward","movement out"],"correctIndex":2,"explanation":"\"при-\" indicates arrival or movement toward destination"},{"question":"Яке значення має префікс \"ви-\" в дієсловах?","options":["entry","exit, movement out","crossing","arrival"],"correctIndex":1,"explanation":"\"ви-\" means exit or outward movement"},{"question":"Що означає \"заходити\" (префікс за-)?","options":["to arrive permanently","to drop by, visit briefly","to exit","to cross over"],"correctIndex":1,"explanation":"\"за-\" often means brief stop or dropping by"},{"question":"Яке значення префікса \"пере-\" в дієсловах руху?","options":["arrival","departure","across, over, from one side to another","entering"],"correctIndex":2,"explanation":"\"пере-\" means movement across or transfer"},{"question":"Що означає префікс \"від-\" в дієсловах?","options":["movement away from starting point","movement toward","movement into","movement behind"],"correctIndex":0,"explanation":"\"від-\" indicates movement away from"},{"question":"Який префікс використовується для \"входити, заходити всередину\"?","options":["ви-","при-","в-/у-","за-"],"correctIndex":2,"explanation":"\"в-/у-\" means entry or movement into"},{"question":"Що означає дієслово \"дійти\" (префікс до-)?","options":["to go out","to arrive from afar","to reach, to get to a destination","to cross"],"correctIndex":2,"explanation":"\"до-\" means reaching up to a point"},{"question":"Який префікс робить дієслова доконаними (perfective)?","options":["жоден","тільки при-","тільки ви-","майже всі префікси"],"correctIndex":3,"explanation":"Most prefixes make verbs perfective"},{"question":"Яке слово означає \"entrance\" і походить від \"увійти\"?","options":["виїзд","вхід","прихід","перехід"],"correctIndex":1,"explanation":"\"вхід\" (entrance) comes from \"увійти\" (to enter)"},{"question":"Що означає \"переїхати\" в контексті житла?","options":["to visit","to exit","to move (to a new home)","to arrive"],"correctIndex":2,"explanation":"\"переїхати\" means to move/relocate"},{"question":"Який корінь використовується для руху пішки?","options":["-їх-/-їзд-","-йд-/-ход-","-лет-","-нес-"],"correctIndex":1,"explanation":"\"-йд-/-ход-\" is used for movement on foot"},{"question":"Який корінь використовується для руху транспортом?","options":["-їх-/-їзд-","-йд-/-ход-","-біг-","-нес-"],"correctIndex":0,"explanation":"\"-їх-/-їзд-\" is used for movement by vehicle"},{"question":"Що означає \"відійшов\" про поїзд?","options":["arrived","departed","stopped","crashed"],"correctIndex":1,"explanation":"\"відійшов\" about train means departed"},{"question":"Яке дієслово означає \"to carry out\" (винести назовні)?","options":["внести","винести","принести","перенести"],"correctIndex":1,"explanation":"\"винести\" means to carry out"},{"question":"Що означає \"забігти\" в повсякденному контексті?","options":["to run away","to run in briefly, pop in quickly","to run across","to arrive running"],"correctIndex":1,"explanation":"\"забігти\" means to run in briefly"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-9","type":"match-up","title":"Протилежні префікси","data":{"type":"match-up","pairs":[{"left":"прийти","right":"вийти"},{"left":"увійти","right":"вийти"},{"left":"приїхати","right":"виїхати"},{"left":"прилетіти","right":"вилетіти"},{"left":"принести","right":"винести"},{"left":"привезти","right":"вивезти"},{"left":"в'їхати","right":"виїхати"},{"left":"прибігти","right":"вибігти"},{"left":"внести","right":"винести"},{"left":"приходити","right":"виходити"},{"left":"підійти","right":"відійти"},{"left":"прийти","right":"піти"},{"left":"вбігти","right":"вибігти"},{"left":"в'їхати","right":"від'їхати"},{"left":"приїздити","right":"виїздити"}],"shuffleRight":true}}];
     const vocabData = [{"uk":"прилетіти","translit":"","en":"to arrive (by plane)","note":"pf"},{"uk":"привезти","translit":"","en":"to bring (by transport)","note":"pf"},{"uk":"приходити","translit":"","en":"to come (habitually)","note":"impf"},{"uk":"виїхати","translit":"","en":"to drive out, leave","note":"pf"},{"uk":"вилетіти","translit":"","en":"to fly out, depart","note":"pf"},{"uk":"винести","translit":"","en":"to carry out","note":"pf"},{"uk":"увійти","translit":"","en":"to enter","note":"pf"},{"uk":"в'їхати","translit":"","en":"to drive into","note":"pf"},{"uk":"входити","translit":"","en":"to enter (habitually)","note":"impf"},{"uk":"зайти","translit":"","en":"to drop by","note":"pf"},{"uk":"заїхати","translit":"","en":"to stop by (driving)","note":"pf"},{"uk":"заходити","translit":"","en":"to drop by (habitually)","note":"impf"},{"uk":"переїхати","translit":"","en":"to move (residence)","note":"pf"},{"uk":"переходити","translit":"","en":"to cross (habitually)","note":"impf"},{"uk":"відійти","translit":"","en":"to step away, leave","note":"pf"},{"uk":"від'їхати","translit":"","en":"to drive away","note":"pf"},{"uk":"відходити","translit":"","en":"to depart (habitually)","note":"impf"},{"uk":"дійти","translit":"","en":"to reach (on foot)","note":"pf"},{"uk":"доїхати","translit":"","en":"to reach (by transport)","note":"pf"},{"uk":"обійти","translit":"","en":"to go around","note":"pf"},{"uk":"об'їхати","translit":"","en":"to drive around","note":"pf"},{"uk":"прихід","translit":"","en":"arrival, coming","note":""},{"uk":"відхід","translit":"","en":"departure","note":""},{"uk":"перехід","translit":"","en":"crossing, transition","note":""},{"uk":"відбуття","translit":"","en":"departure","note":"formal"},{"uk":"переїзд","translit":"","en":"move (relocation)","note":""},{"uk":"заїзд","translit":"","en":"entrance (for vehicles)","note":""},{"uk":"виїзд","translit":"","en":"exit (for vehicles)","note":""},{"uk":"напрямок","translit":"","en":"direction","note":""},{"uk":"затор","translit":"","en":"traffic jam","note":""},{"uk":"світлофор","translit":"","en":"traffic light","note":""},{"uk":"перехрестя","translit":"","en":"intersection","note":""},{"uk":"калюжа","translit":"","en":"puddle","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2020,27 +2049,226 @@ function resetUnjumbleQuestion(sectionId, idx) {
 function initClassicOrder(sectionId, container, data) {
   const state = orderState[sectionId];
 
-  const shuffled = [...data.items].map((item, idx) => ({ text: item, origIdx: idx }));
-  shuffled.sort(() => Math.random() - 0.5);
+  // Create array with original indices, then shuffle
+  const items = [...data.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  // Fisher-Yates shuffle
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
 
-  const div = document.createElement('div');
-  div.className = 'order-items';
-  div.dataset.section = sectionId;
-  div.innerHTML = shuffled.map((item, i) => `
-    <div class="order-item" draggable="true" data-orig="${item.origIdx}" data-section="${sectionId}">
-      <span class="order-handle">☰</span>
-      <span class="order-text">${item.text}</span>
-    </div>
-  `).join('');
-  container.appendChild(div);
+  // Create container div for all items
+  const wrapper = document.createElement('div');
+  wrapper.className = 'order-items-wrapper';
+  wrapper.dataset.section = sectionId;
 
-  const checkBtn = document.createElement('button');
-  checkBtn.className = 'btn btn-outline';
-  checkBtn.textContent = 'Check Order';
-  checkBtn.onclick = () => checkOrder(sectionId);
-  container.appendChild(checkBtn);
+  // Create each sentence as a draggable item
+  items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'order-sentence-card';
+    div.draggable = true;
+    div.dataset.orig = item.origIdx;
+    div.dataset.section = sectionId;
+    div.innerHTML = '<span class="order-card-num">' + (i + 1) + '</span><span class="order-card-text">' + item.text + '</span>';
+    wrapper.appendChild(div);
+  });
 
-  initDragDrop(div);
+  container.appendChild(wrapper);
+
+  // Add buttons
+  const btnDiv = document.createElement('div');
+  btnDiv.className = 'order-buttons';
+  btnDiv.innerHTML = '<button class="btn btn-outline order-check-btn" data-section="' + sectionId + '">Check Order</button>';
+  container.appendChild(btnDiv);
+
+  // Add feedback area
+  const feedback = document.createElement('div');
+  feedback.className = 'order-feedback';
+  feedback.dataset.section = sectionId;
+  container.appendChild(feedback);
+
+  // Initialize drag-and-drop
+  initOrderCardDragDrop(wrapper);
+
+  // Button click handler
+  btnDiv.querySelector('.order-check-btn').onclick = function() { checkOrder(sectionId); };
+}
+
+function initOrderCardDragDrop(wrapper) {
+  let dragItem = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('dragstart', function(e) {
+      dragItem = card;
+      card.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    card.addEventListener('dragend', function() {
+      card.classList.remove('dragging');
+      dragItem = null;
+      updateCardNumbers(wrapper);
+    });
+
+    card.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      if (!dragItem || dragItem === card) return;
+      const rect = card.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        wrapper.insertBefore(dragItem, card);
+      } else {
+        wrapper.insertBefore(dragItem, card.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('touchstart', function(e) {
+      touchItem = card;
+      card.classList.add('dragging');
+      touchClone = card.cloneNode(true);
+      touchClone.style.position = 'fixed';
+      touchClone.style.zIndex = '1000';
+      touchClone.style.pointerEvents = 'none';
+      touchClone.style.opacity = '0.8';
+      touchClone.style.maxWidth = '90vw';
+      document.body.appendChild(touchClone);
+      moveTouchClone(e.touches[0]);
+    });
+
+    card.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (!touchItem) return;
+      moveTouchClone(e.touches[0]);
+      const touch = e.touches[0];
+      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = els.find(function(el) { return el.classList.contains('order-sentence-card') && el !== touchItem; });
+      if (target && target.parentNode === wrapper) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          wrapper.insertBefore(touchItem, target);
+        } else {
+          wrapper.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    card.addEventListener('touchend', function() {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateCardNumbers(wrapper);
+    });
+  });
+
+  function moveTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 100) + 'px';
+      touchClone.style.top = (touch.clientY - 25) + 'px';
+    }
+  }
+}
+
+function updateCardNumbers(wrapper) {
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card, i) {
+    card.querySelector('.order-card-num').textContent = i + 1;
+  });
+}
+
+function initOrderSentenceDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+      // Update numbers after drag
+      updateOrderNumbers(row);
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+
+      if (e.clientY < midY) {
+        row.insertBefore(dragItem, item);
+      } else {
+        row.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('touchstart', (e) => {
+      touchItem = item;
+      item.classList.add('dragging');
+      touchClone = item.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClonePos(e.touches[0], touchClone);
+    });
+
+    item.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClonePos(e.touches[0], touchClone);
+
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = elements.find(el => el.classList.contains('order-sentence-item') && el !== touchItem);
+
+      if (target && target.parentNode === row) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          row.insertBefore(touchItem, target);
+        } else {
+          row.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    item.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateOrderNumbers(row);
+    });
+  });
+
+  function updateTouchClonePos(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 100) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function updateOrderNumbers(row) {
+  row.querySelectorAll('.order-sentence-item').forEach((item, i) => {
+    item.querySelector('.order-num').textContent = i + 1;
+  });
 }
 
 function initDragDrop(container) {
@@ -2075,8 +2303,16 @@ function initDragDrop(container) {
 function checkOrder(sectionId) {
   const state = orderState[sectionId];
   const data = state.data;
-  const items = document.querySelectorAll(`.order-item[data-section="${sectionId}"]`);
-  const currentOrder = Array.from(items).map(item => parseInt(item.dataset.orig));
+  // Support multiple class names for order items
+  let items = document.querySelectorAll('.order-sentence-card[data-section="' + sectionId + '"]');
+  if (!items.length) {
+    items = document.querySelectorAll('.order-sentence-item[data-section="' + sectionId + '"]');
+  }
+  if (!items.length) {
+    items = document.querySelectorAll('.order-item[data-section="' + sectionId + '"]');
+  }
+  const currentOrder = Array.from(items).map(function(item) { return parseInt(item.dataset.orig); });
+  const feedback = document.querySelector('.order-feedback[data-section="' + sectionId + '"]');
 
   let correct = true;
   currentOrder.forEach((val, idx) => {
@@ -2099,6 +2335,19 @@ function checkOrder(sectionId) {
     state.score = state.total;
     document.getElementById(sectionId + '-score').textContent = state.score;
     document.getElementById(sectionId + '-complete').classList.add('show');
+    if (feedback) {
+      feedback.innerHTML = '<span class="correct-text">✓ Perfect order!</span>';
+      feedback.classList.add('show');
+    }
+  } else {
+    if (feedback) {
+      feedback.innerHTML = '<span class="wrong-text">✗ Not quite right. Try again!</span>';
+      feedback.classList.add('show');
+    }
+    setTimeout(function() {
+      items.forEach(function(item) { item.classList.remove('wrong'); });
+      if (feedback) feedback.classList.remove('show');
+    }, 2000);
   }
 }
 

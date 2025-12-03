@@ -17,6 +17,12 @@
  *
  * 1. автобусом / роботу / Я / на / їду
  *    > [!answer] Я їду на роботу автобусом.
+ *
+ * Also handles bracket-number format (when items start with "- [N]"):
+ *
+ * - [5] Statement that should be 5th
+ * - [1] Statement that should be 1st
+ * - [3] Statement that should be 3rd
  */
 
 import { ActivityParser } from './base';
@@ -40,6 +46,11 @@ export class OrderParser extends ActivityParser<OrderContent | UnjumbleContent> 
   protected parseContent(content: string, ctx: ParseContext): OrderContent | UnjumbleContent {
     const body = this.getContentBody(content);
 
+    // Check if this is bracket-number format: "- [N] text"
+    if (body.match(/^-\s*\[\d+\]/m)) {
+      return this.parseAsBracketOrder(body);
+    }
+
     // Check if this is a word-jumble format (items contain "/")
     const firstItemMatch = body.match(/\d+\.\s+([^\n]+)/);
     if (firstItemMatch && firstItemMatch[1].includes('/')) {
@@ -47,6 +58,42 @@ export class OrderParser extends ActivityParser<OrderContent | UnjumbleContent> 
     }
 
     return this.parseAsSequence(body);
+  }
+
+  /**
+   * Parse bracket-number format: "- [N] text"
+   * The number indicates the correct position in sequence
+   */
+  private parseAsBracketOrder(body: string): OrderContent {
+    const itemsWithOrder: Array<{ text: string; order: number; origIdx: number }> = [];
+
+    // Match "- [N] text" pattern
+    const matches = body.matchAll(/^-\s*\[(\d+)\]\s*(.+)$/gm);
+
+    let idx = 0;
+    for (const match of matches) {
+      const order = parseInt(match[1], 10);
+      const text = match[2].trim();
+      itemsWithOrder.push({ text, order, origIdx: idx++ });
+    }
+
+    // Items as they appear in markdown (shuffled)
+    const items = itemsWithOrder.map(i => i.text);
+
+    // correctOrder[position] = which original item index should be at this position
+    // JS expects: for position 0, correctOrder[0] tells which item should be first
+    // If item at origIdx=2 has order=1, then correctOrder[0] = 2
+    const correctOrder: number[] = new Array(items.length);
+    for (const item of itemsWithOrder) {
+      const targetPosition = item.order - 1; // 0-indexed position
+      correctOrder[targetPosition] = item.origIdx;
+    }
+
+    return {
+      type: 'order',
+      items,
+      correctOrder,
+    };
   }
 
   /**

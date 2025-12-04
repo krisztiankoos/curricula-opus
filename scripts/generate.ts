@@ -61,8 +61,10 @@ function getLevelFromModuleNum(moduleNum: number): string {
   if (moduleNum <= 30) return 'A1';
   if (moduleNum <= 60) return 'A2';
   if (moduleNum <= 80) return 'A2+';
-  if (moduleNum <= 140) return 'B1';
-  if (moduleNum <= 190) return 'B2';
+  if (moduleNum <= 120) return 'B1';
+  if (moduleNum <= 160) return 'B1+';
+  if (moduleNum <= 235) return 'B2';
+  if (moduleNum <= 310) return 'B2+';
   return 'C1';
 }
 
@@ -163,10 +165,23 @@ function generateLevelIndex(
     'B1.2': { bg: '#db2777', light: '#fce7f3' },
     'B1.3': { bg: '#e11d48', light: '#ffe4e6' },
     'B1.4': { bg: '#dc2626', light: '#fee2e2' },
+    'B1+.1': { bg: '#f43f5e', light: '#ffe4e6' },
+    'B1+.2': { bg: '#fb7185', light: '#fff1f2' },
+    'B1+.3': { bg: '#fda4af', light: '#fff1f2' },
+    'B1+.4': { bg: '#fecdd3', light: '#fff1f2' },
     'B2.1': { bg: '#ea580c', light: '#ffedd5' },
     'B2.2': { bg: '#d97706', light: '#fef3c7' },
     'B2.3': { bg: '#ca8a04', light: '#fef9c3' },
     'B2.4': { bg: '#a16207', light: '#fef08a' },
+    'B2+.1': { bg: '#84cc16', light: '#ecfccb' },
+    'B2+.2': { bg: '#65a30d', light: '#d9f99d' },
+    'B2+.3': { bg: '#4d7c0f', light: '#bef264' },
+    'B2+.4': { bg: '#3f6212', light: '#a3e635' },
+    'C1.1': { bg: '#0d9488', light: '#ccfbf1' },
+    'C1.2': { bg: '#0891b2', light: '#cffafe' },
+    'C1.3': { bg: '#0284c7', light: '#e0f2fe' },
+    'C1.4': { bg: '#2563eb', light: '#dbeafe' },
+    'C1.5': { bg: '#4f46e5', light: '#e0e7ff' },
   };
   const defaultColor = { bg: '#6b7280', light: '#f3f4f6' };
 

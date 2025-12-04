@@ -27,7 +27,7 @@ export interface Frontmatter {
   title: string;
   subtitle?: string;
   titleUk?: string;
-  level: 'A1' | 'A2' | 'A2+' | 'B1' | 'B2' | 'C1';
+  level: 'A1' | 'A2' | 'A2+' | 'B1' | 'B1+' | 'B2' | 'B2+' | 'C1';
   phase: string;
   duration: number;
   transliteration: 'full' | 'partial' | 'first-occurrence' | 'none';

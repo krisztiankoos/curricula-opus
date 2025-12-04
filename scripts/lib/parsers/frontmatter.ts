@@ -163,7 +163,7 @@ function validateFrontmatter(fm: Record<string, unknown>): void {
   }
 
   // Validate level
-  const validLevels = ['A1', 'A2', 'A2+', 'B1', 'B2', 'C1'];
+  const validLevels = ['A1', 'A2', 'A2+', 'B1', 'B1+', 'B2', 'B2+', 'C1'];
   if (!validLevels.includes(fm.level as string)) {
     throw new Error(`Invalid level: ${fm.level}. Must be one of: ${validLevels.join(', ')}`);
   }

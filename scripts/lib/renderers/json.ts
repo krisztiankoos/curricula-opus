@@ -166,7 +166,9 @@ function getImmersionLevel(level: string): number {
     'A2': 0.40,   // 60% EN / 40% UK
     'A2+': 0.50,  // 50% EN / 50% UK
     'B1': 0.60,   // 40% EN / 60% UK
+    'B1+': 0.70,  // 30% EN / 70% UK
     'B2': 0.85,   // 15% EN / 85% UK
+    'B2+': 0.90,  // 10% EN / 90% UK
     'C1': 0.95,   // 5% EN / 95% UK
     'C2': 0.98,   // 2% EN / 98% UK
   };

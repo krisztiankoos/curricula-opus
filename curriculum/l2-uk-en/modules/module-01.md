@@ -137,6 +137,10 @@ To say "This is...", you just say **Це** (Tse). No "is" verb needed!
 - **Це** парк. (This is a park.)
 - **Це** мама. (This is mom.)
 
+> 🎬 **Pop Culture Moment: "I am Groot"**
+>
+> In Ukrainian, Groot would say: **Я є Ґрут** (Ya ye Grut). That's only 3 words! But don't worry - we won't teach you 3-word sentences. Even A1 learners deserve better than tree-speak. Our sentences start at 5+ words because you're here to actually communicate, not just announce your species. 🌳
+
 Combine it with "my":
 - **Це мій** телефон. (This is my telephone.) - *Masculine (consonant)*
 - **Це моя** лампа. (This is my lamp.) - *Feminine (-a)*

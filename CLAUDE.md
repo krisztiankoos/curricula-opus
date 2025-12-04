@@ -2,216 +2,186 @@
 
 ## Project Overview
 
+<context>
 **Curricula Opus** (CO) is a language content factory generating Ukrainian language learning curricula.
 
-**Source of truth**: Markdown files in `curriculum/l2-uk-en/modules/`
+- **Source of truth**: Markdown files in `curriculum/l2-uk-en/modules/`
+- **Output**: HTML (web lessons) + JSON (Vibe app import)
+- **Current focus**: Ukrainian for English speakers (l2-uk-en)
+</context>
 
-**Output formats:**
-- **HTML** (book-style) - Readable lessons for web viewing
-- **JSON** (v2) - Structured data for Vibe app import
+## Critical Rules
 
-**Documentation:**
-- `docs/ARCHITECTURE.md` - Full system architecture
-- `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec
-- `docs/VIBE-IMPORT-INSTRUCTIONS.md` - JSON import guide
+<constraints>
+### NEVER Do These
+- NEVER add activities without rebuilding vocabulary first
+- NEVER keep old activities when enriching - DELETE ALL and recreate
+- NEVER skip the 3-step enrichment workflow
+- NEVER create activities with fewer items than level requirements
+- NEVER write sentences shorter than level requirements
+- NEVER use vocabulary words not in the module's vocabulary section
+
+### ALWAYS Do These
+- ALWAYS follow the 3-step enrichment workflow in exact order
+- ALWAYS delete ALL existing activities before creating new ones
+- ALWAYS run vocab:enrich after narrative changes
+- ALWAYS verify activity answers are correct
+- ALWAYS use vocabulary from the module's vocabulary section
+</constraints>
+
+## Module Enrichment Workflow
+
+<instructions>
+**This is the ONLY correct way to enrich a module. No shortcuts.**
+
+### Step 1: ENRICH NARRATIVE CONTENT
+- Make lesson rich with examples, engagement boxes, explanations
+- Add: 💡 Did You Know, 🎬 Pop Culture Moment, 🌍 Real World, etc.
+- Ensure 12+ example sentences for A1, more for higher levels
+- DO NOT touch activities section yet
+
+### Step 2: REBUILD VOCABULARY
+```bash
+npm run vocab:enrich l2-uk-en [moduleNum]
+```
+- Captures ALL words from enriched lesson
+- Must run AFTER narrative changes, BEFORE activities
+
+### Step 3: COMPLETELY RECREATE ALL ACTIVITIES
+- **DELETE every existing activity** - no exceptions
+- Create fresh activities using ONLY vocabulary from Step 2
+- Meet all quality requirements (see Activity Requirements below)
+- Verify every answer is correct
+
+### Step 4: GENERATE AND VERIFY
+```bash
+npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
+```
+- Check HTML output in browser
+- Verify activities work correctly
+</instructions>
+
+## Activity Requirements by Level
+
+<format>
+| Level | Modules | Activities | Items/Activity | Fill-in Words | Unjumble Words |
+|-------|---------|------------|----------------|---------------|----------------|
+| A1 | 1-30 | 8+ | 12+ | 5-8 | 5-8 |
+| A2 | 31-60 | 10+ | 12+ | 6-9 | 6-9 |
+| A2+ | 61-80 | 10+ | 12+ | 6-10 | 6-10 |
+| B1 | 81-120 | 12+ | 14+ | 7-11 | 7-11 |
+| B1+ | 121-160 | 12+ | 14+ | 8-12 | 8-12 |
+| B2 | 161-200 | 14+ | 16+ | 9-14 | 9-14 |
+| B2+ | 201-240 | 14+ | 16+ | 10-15 | 10-15 |
+| C1 | 241+ | 16+ | 18+ | 12-18 | 12-18 |
+
+### Activity Types Required
+Each module needs variety. Include at least 4 different types:
+- `fill-in` - Gap fill with options
+- `unjumble` - Reorder words into sentence
+- `quiz` - Multiple choice questions
+- `match-up` - Match pairs
+- `group-sort` - Sort items into categories
+- `true-false` - True/false statements
+</format>
+
+## Content Quality Requirements
+
+<format>
+| Level | Examples | Engagement Boxes | Content Words | Immersion |
+|-------|----------|------------------|---------------|-----------|
+| A1 | 12+ | 3+ | 600+ | 30% Ukrainian |
+| A2 | 15+ | 4+ | 700+ | 40% Ukrainian |
+| A2+ | 18+ | 4+ | 800+ | 50% Ukrainian |
+| B1 | 22+ | 5+ | 900+ | 60% Ukrainian |
+| B1+ | 24+ | 5+ | 950+ | 70% Ukrainian |
+| B2 | 26+ | 6+ | 1000+ | 85% Ukrainian |
+| B2+ | 28+ | 6+ | 1050+ | 90% Ukrainian |
+| C1 | 30+ | 7+ | 1100+ | 95% Ukrainian |
+
+### Engagement Box Types
+- 💡 **Did You Know** - Interesting facts
+- 🎬 **Pop Culture Moment** - Movies, games, music references
+- 🌍 **Real World** - Practical usage scenarios
+- 🎯 **Fun Fact** - Memorable trivia
+- 🎮 **Gamer's Corner** - Gaming references (S.T.A.L.K.E.R., Witcher)
+</format>
 
 ## Directory Structure
 
 ```
 curricula-opus/
-├── curriculum/                    # SOURCE OF TRUTH
-│   └── l2-uk-en/
-│       ├── modules/               # 190 markdown module files
-│       │   ├── module-01.md       # A1: The Cyrillic Code I
-│       │   ├── module-168.md      # B2: History: Kyivan Rus II
-│       │   └── ...
-│       └── vocabulary.csv         # Master vocabulary database
-│
-├── scripts/                       # GENERATOR CODE
-│   ├── generate.ts                # Main entry point
-│   └── lib/
-│       ├── parsers/               # Markdown parsing
-│       ├── renderers/             # HTML + JSON generation
-│       └── utils/                 # Utilities
-│
-├── output/                        # GENERATED OUTPUT
-│   ├── html/l2-uk-en/             # Web-viewable lessons (book)
-│   └── json/l2-uk-en/             # Vibe import data
-│
-└── docs/                          # DOCUMENTATION
-    ├── ARCHITECTURE.md
-    ├── MARKDOWN-FORMAT.md
-    └── VIBE-IMPORT-INSTRUCTIONS.md
+├── curriculum/l2-uk-en/
+│   ├── modules/           # SOURCE OF TRUTH - 240+ markdown files
+│   └── vocabulary.csv     # Master vocabulary database
+├── scripts/               # Generator code
+├── output/                # Generated HTML + JSON
+└── docs/                  # Documentation
+    └── l2-uk-en/          # Ukrainian-specific docs
+        └── MODULE-RICHNESS-GUIDELINES.md  # Quality standards
 ```
 
-## Language Pair Naming Convention
+## Level Definitions
 
-Format: `{type}-{target}-{source}`
+| Level | Modules | Description |
+|-------|---------|-------------|
+| A1 | 1-30 | Beginner - Cyrillic, basic phrases, simple grammar |
+| A2 | 31-60 | Elementary - Cases intro, present tense, basic vocab |
+| A2+ | 61-80 | Pre-Intermediate - All cases, past tense |
+| B1 | 81-120 | Intermediate - Complex grammar, expanded vocab |
+| B1+ | 121-160 | Upper-Intermediate - Refinement, nuance |
+| B2 | 161-200 | Advanced - Complex structures, abstract topics |
+| B2+ | 201-240 | Upper-Advanced - Near-native patterns |
+| C1 | 241-400 | Proficient - Full complexity, specialized topics |
 
-| Code | Type | Target Language | Source Language | Description |
-|------|------|-----------------|-----------------|-------------|
-| `l2-uk-en` | L2 | Ukrainian | English | Ukrainian for English speakers |
-| `l2-uk-es` | L2 | Ukrainian | Spanish | Ukrainian for Spanish speakers |
-| `l2-en-uk` | L2 | English | Ukrainian | English for Ukrainian speakers |
-| `l1-uk` | L1 | Ukrainian | - | Ukrainian for native speakers |
-| `l1-en` | L1 | English | - | English for native speakers |
+## Transliteration Strategy
 
-## JSON Schema (v2)
-
-```json
-{
-  "lesson": {
-    "id": "lesson-uk-B2-168",
-    "moduleNumber": 168,
-    "moduleType": "history",          // grammar, vocabulary, history, etc.
-    "immersionLevel": 0.85,           // 0.0-1.0 (% Ukrainian)
-    "title": "History: Kyivan Rus II",
-    "level": "B2",
-    "sections": [                     // Raw markdown sections
-      { "name": "Вступ", "type": "intro", "content": "..." }
-    ],
-    "rawMarkdown": "..."              // Full source
-  },
-  "activities": [...],
-  "vocabulary": {...}
-}
-```
-
-### Module Types
-| Type | Tags | Description |
-|------|------|-------------|
-| `grammar` | grammar, cases, verbs, aspect | Grammar lessons |
-| `vocabulary` | vocabulary, vocab | Word-building |
-| `checkpoint` | review, checkpoint | Assessment |
-| `history` | history | Ukrainian history |
-| `biography` | biography | Famous Ukrainians |
-| `idioms` | idioms, phraseology | Expressions |
-| `literature` | literature, poetry | Text analysis |
-
-## Key Rules
-
-### Transliteration Strategy
 - **Modules 1-10 (A1.1)**: Full transliteration `Слово (Slovo)`
 - **Modules 11-20 (A1.2)**: Vocab lists only, sentences Cyrillic
 - **Modules 21-30 (A1.3)**: First occurrence only
 - **Modules 31+ (A2+)**: No transliteration
 
-### Immersion Strategy (immersionLevel field)
-| Level | Ukrainian % | English % | immersionLevel |
-|-------|-------------|-----------|----------------|
-| A1 | 30% | 70% | 0.30 |
-| A2 | 40% | 60% | 0.40 |
-| A2+ | 50% | 50% | 0.50 |
-| B1 | 60% | 40% | 0.60 |
-| B2 | 85% | 15% | 0.85 |
-| C1 | 95% | 5% | 0.95 |
-
-### Vocabulary Targets
-| Level | New Words | Cumulative |
-|-------|-----------|------------|
-| A1    | 750       | 750        |
-| A2    | 1,050     | 1,800      |
-| B1    | 1,500     | 3,300      |
-| B2    | 2,200     | 5,500      |
-| C1    | 2,500     | 8,000      |
-
-### Module Types
-- **G-Module (Grammar)**: 15-20 new words, grammar focus
-- **V-Module (Vocabulary)**: 35-45 new words, vocab focus
-- **F-Module (Function)**: 20-30 new words, real-world practice
-- **R-Module (Review)**: 0-10 new words, assessment
-
-## Generation Commands
+## Commands Reference
 
 ```bash
-# Generate ALL output (JSON + HTML)
-npx ts-node scripts/generate.ts
+# Generate output
+npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 
-# Generate specific language pair
-npx ts-node scripts/generate.ts l2-uk-en
+# Enrich vocabulary
+npm run vocab:enrich l2-uk-en [moduleNum]
 
-# Generate single module
-npx ts-node scripts/generate.ts l2-uk-en 168
+# Run audit
+npx ts-node scripts/module-audit.ts l2-uk-en [moduleNum]
+
+# Deploy Claude skills
+npm run claude:deploy
 ```
 
-**Reads from:** `curriculum/l2-uk-en/modules/module-*.md`
+## Vocabulary Section Formats
 
-**Outputs to:**
-- `output/json/l2-uk-en/{level}/module-XX.json`
-- `output/html/l2-uk-en/{level}/module-XX.html`
+| Level | Header | Columns |
+|-------|--------|---------|
+| A1-A2+ (1-80) | `# Vocabulary` | Word \| IPA \| English \| POS \| Gender \| Note |
+| B1-B1+ (81-160) | `# Словник` | Слово \| Вимова \| Переклад \| ЧМ \| Примітка |
+| B2-C1 (161+) | `# Словник` | Слово \| Переклад \| Примітки |
 
-## Workflow
-
-1. Edit markdown files in `curriculum/l2-uk-en/modules/`
-2. Run generator: `npx ts-node scripts/generate.ts l2-uk-en`
-3. Output appears in `output/`
-4. Vibe imports JSON from `output/json/`
-
-## Module Creation & Enrichment Workflow
-
-### Creating New Modules (B1+)
-
-When creating a new module, complete ALL steps before moving to next module:
-
-1. **Write content** - lesson, grammar explanations, examples
-2. **Create activities** - fill-in, unjumble, quiz, match-up
-   - Fill-in sentences: 5-7 words with realistic context
-   - Unjumble sentences: 6-8 words with complex structures
-3. **Add basic vocab section** - all words used in module
-4. **Run vocab enrichment**: `npm run vocab:enrich l2-uk-en [moduleNum]`
-5. **Generate output**: `npx ts-node scripts/generate.ts l2-uk-en [moduleNum]`
-6. **Verify** - spot-check HTML output
-
-### Enrichment Methods
-
-| Task | Method | Command |
-|------|--------|---------|
-| Activity enrichment | Manual (Claude) | - |
-| Vocab enrichment | Script | `npm run vocab:enrich l2-uk-en [moduleNum]` |
-
-### Batch Enrichment Status
-
-Activity enrichment (manual, must be done before vocab enrichment):
+## Enrichment Status
 
 | Range | Modules | Status |
 |-------|---------|--------|
-| A1 | 1-30 | ✅ Done |
-| A2 | 31-60 | ⏳ Pending |
-| A2+ | 61-80 | ⏳ Pending |
-| B1.1 | 81-100 | ⏳ Pending |
-| B1.2-B1.4 | 101-140 | ⏳ Pending |
+| A1 | 1-30 | ⏳ Needs full enrichment |
+| A2 | 31-60 | ⏳ Needs full enrichment |
+| A2+ | 61-80 | ⏳ Needs full enrichment |
+| B1 | 81-120 | ⏳ Needs full enrichment |
+| B1+ | 121-160 | ✅ Done |
+| B2 | 161-200 | ⏳ Needs full enrichment |
+| B2+ | 201-240 | ⏳ Needs creation |
+| C1 | 241-400 | ⏳ Needs creation |
 
-After activity enrichment, run vocab enrichment for the range:
-```bash
-npm run vocab:enrich l2-uk-en
-npx ts-node scripts/generate.ts l2-uk-en
-```
+## Documentation Links
 
-### Vocabulary Section Formats
-
-See `docs/MARKDOWN-FORMAT.md` for complete spec. Quick reference:
-
-| Level | Modules | Header | Columns |
-|-------|---------|--------|---------|
-| A1-A2+ | 1-80 | `# Vocabulary` | Word \| IPA \| English \| POS \| Gender \| Note |
-| B1 | 81-160 | `# Словник` | Слово \| Вимова \| Переклад \| ЧМ \| Примітка |
-| B2+ | 161+ | `# Словник` | Слово \| Переклад \| Примітки |
-
-## Markdown Format
-
-See `docs/MARKDOWN-FORMAT.md` for full spec. Key patterns:
-
-```markdown
-# Answer syntax (hidden, toggleable)
-> [!answer] **відповідь**
-
-# Activity blocks
-## quiz: Title
-## match-up: Title
-## group-sort: Title
-
-# Section headers
-# Вступ / # Introduction
-# Практика / # Practice
-# Словник / # Vocabulary
-```
+- `docs/ARCHITECTURE.md` - System architecture
+- `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec
+- `docs/SCRIPTS.md` - Scripts reference
+- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` - Quality standards
+- `docs/l2-uk-en/claude-review-prompt.md` - Review prompts

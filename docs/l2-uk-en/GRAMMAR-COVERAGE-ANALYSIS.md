@@ -3,6 +3,11 @@
 **Date:** 2025-12-04
 **Source:** Ukrainian State Standard (September 2024) vs. Curricula Opus modules
 
+> **Note:** This analysis uses base CEFR levels (B1, B2, C1). Our curriculum splits these into sub-levels:
+> - **B1** (81-120) + **B1+** (121-160) — B1+ focuses on contemporary Ukraine & authentic texts
+> - **B2** (161-200) + **B2+** (201-240) — B2+ focuses on history, biographies, advanced skills
+> - **C1** (241+)
+
 ---
 
 ## A1 Grammar Requirements (Official Standard)
@@ -259,7 +264,7 @@
 9. **C2 level** - Not currently planned (beyond scope?)
 
 ### C1 Module Numbering Issue
-The C1 curriculum plan shows modules 233-352, but based on our structure it should be **311-400**. This needs to be corrected.
+~~The C1 curriculum plan shows modules 233-352, but based on our structure it should be **311-400**. This needs to be corrected.~~ **FIXED** - C1-CURRICULUM-PLAN.md now shows modules 311-400.
 
 ---
 
@@ -269,5 +274,5 @@ The C1 curriculum plan shows modules 233-352, but based on our structure it shou
 2. **Add B2 word formation block** (4-5 modules on словотвір)
 3. **Expand B2 numerals** beyond B1 basics
 4. **Add B2 stylistic devices** modules (metaphors, epithets, etc.)
-5. **Fix C1 module numbers** (233-352 → 311-400)
+5. ~~**Fix C1 module numbers** (233-352 → 311-400)~~ **DONE**
 6. **Consider C2 scope** - may be beyond initial release

@@ -73,83 +73,159 @@ interface LevelRequirements {
   immersionLevel: number;  // Target Ukrainian percentage (0.0 - 1.0)
 }
 
+// =============================================================================
+// Requirements based on Ukrainian State Standard (September 2024)
+// Source: docs/l2-uk-en/UKRAINIAN-CEFR-RESEARCH.md
+// =============================================================================
+
+// QUALITY TARGETS - these are ambitious goals, not bare minimums
+// Good modules should comfortably exceed these values
 const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
   'A1': {
     moduleRange: [1, 30],
-    newWordsMin: 15, newWordsMax: 20,
-    activityCount: 6,
-    itemsPerActivity: 10,
-    fillInWords: [3, 5],
-    unjumbleWords: [4, 6],
-    immersionLevel: 0.30,  // 30% Ukrainian, 70% English
+    newWordsMin: 18, newWordsMax: 25,      // Target ~20 new words per module
+    activityCount: 8,                       // 8 activities for variety
+    itemsPerActivity: 12,                   // Solid practice per activity
+    fillInWords: [5, 8],                    // "Моя сестра ___ в лікарні" (5-8 words)
+    unjumbleWords: [5, 8],
+    immersionLevel: 0.30,
   },
   'A2': {
     moduleRange: [31, 60],
-    newWordsMin: 20, newWordsMax: 25,
-    activityCount: 8,
-    itemsPerActivity: 10,
-    fillInWords: [6, 8],
-    unjumbleWords: [8, 10],
-    immersionLevel: 0.40,  // 40% Ukrainian, 60% English
+    newWordsMin: 22, newWordsMax: 30,      // Target ~25 new words
+    activityCount: 10,                      // More activity variety
+    itemsPerActivity: 12,
+    fillInWords: [6, 10],                   // Compound sentences with connectors
+    unjumbleWords: [6, 10],
+    immersionLevel: 0.40,
   },
   'A2+': {
     moduleRange: [61, 80],
-    newWordsMin: 35, newWordsMax: 40,
-    activityCount: 10,
+    newWordsMin: 35, newWordsMax: 45,      // Vocabulary expansion phase
+    activityCount: 12,
     itemsPerActivity: 15,
-    fillInWords: [8, 10],
-    unjumbleWords: [10, 12],
-    immersionLevel: 0.50,  // 50% Ukrainian, 50% English
+    fillInWords: [8, 12],                   // Subordinate clauses, more complexity
+    unjumbleWords: [8, 12],
+    immersionLevel: 0.50,
   },
   'B1': {
     moduleRange: [81, 120],
-    newWordsMin: 25, newWordsMax: 30,
-    activityCount: 12,
+    newWordsMin: 28, newWordsMax: 35,      // Solid vocabulary growth
+    activityCount: 14,                      // Rich activity set
     itemsPerActivity: 20,
-    fillInWords: [10, 14],
-    unjumbleWords: [12, 16],
-    immersionLevel: 0.60,  // 60% Ukrainian, 40% English
+    fillInWords: [10, 15],                  // Complex sentences, conditionals
+    unjumbleWords: [10, 15],
+    immersionLevel: 0.60,
   },
   'B1+': {
     moduleRange: [121, 160],
-    newWordsMin: 25, newWordsMax: 30,
-    activityCount: 12,
+    newWordsMin: 28, newWordsMax: 35,
+    activityCount: 14,
     itemsPerActivity: 20,
-    fillInWords: [10, 14],
-    unjumbleWords: [12, 16],
-    immersionLevel: 0.70,  // 70% Ukrainian, 30% English
+    fillInWords: [11, 16],                  // Participles, extended complexity
+    unjumbleWords: [11, 16],
+    immersionLevel: 0.70,
   },
   'B2': {
-    moduleRange: [161, 235],
-    newWordsMin: 25, newWordsMax: 30,
-    activityCount: 14,
-    itemsPerActivity: 20,
-    fillInWords: [12, 16],
-    unjumbleWords: [14, 18],
-    immersionLevel: 0.85,  // 85% Ukrainian, 15% English
+    moduleRange: [161, 200],
+    newWordsMin: 30, newWordsMax: 40,      // Advanced vocabulary
+    activityCount: 16,                      // Maximum activity variety
+    itemsPerActivity: 22,
+    fillInWords: [12, 18],                  // Sophisticated structures, passive
+    unjumbleWords: [12, 18],
+    immersionLevel: 0.85,
   },
   'B2+': {
-    moduleRange: [236, 310],
-    newWordsMin: 25, newWordsMax: 30,
-    activityCount: 14,
-    itemsPerActivity: 20,
-    fillInWords: [12, 16],
-    unjumbleWords: [14, 18],
-    immersionLevel: 0.90,  // 90% Ukrainian, 10% English
+    moduleRange: [201, 240],
+    newWordsMin: 30, newWordsMax: 40,
+    activityCount: 16,
+    itemsPerActivity: 22,
+    fillInWords: [13, 19],                  // Advanced stylistic variation
+    unjumbleWords: [13, 19],
+    immersionLevel: 0.90,
   },
   'C1': {
-    moduleRange: [311, 400],
-    newWordsMin: 30, newWordsMax: 35,
-    activityCount: 14,
-    itemsPerActivity: 20,
-    fillInWords: [14, 18],
-    unjumbleWords: [16, 20],
-    immersionLevel: 0.95,  // 95% Ukrainian, 5% English
+    moduleRange: [241, 400],
+    newWordsMin: 35, newWordsMax: 45,      // Rich academic vocabulary
+    activityCount: 16,
+    itemsPerActivity: 24,
+    fillInWords: [14, 22],                  // Advanced academic/literary
+    unjumbleWords: [14, 22],
+    immersionLevel: 0.95,
   },
 };
 
 // Tolerance for immersion level deviation (±10%)
 const IMMERSION_TOLERANCE = 0.10;
+
+// =============================================================================
+// Grammar Topics by Level (Ukrainian State Standard September 2024)
+// These are used to validate that modules cover appropriate grammar content
+// =============================================================================
+
+interface GrammarRequirement {
+  topic: string;
+  patterns: RegExp[];  // Patterns to detect this grammar topic in content
+  required: boolean;   // Is this required for the level?
+}
+
+const LEVEL_GRAMMAR: Record<string, GrammarRequirement[]> = {
+  'A1': [
+    { topic: 'Cyrillic alphabet', patterns: [/(?:алфавіт|alphabet|кирилиц|cyrillic)/i], required: true },
+    { topic: 'Noun gender', patterns: [/(?:рід іменник|gender|masculine|feminine|neuter|чоловічий|жіночий|середній)/i], required: true },
+    { topic: 'Nominative case', patterns: [/(?:називний|nominative)/i], required: true },
+    { topic: 'Accusative case', patterns: [/(?:знахідний|accusative)/i], required: true },
+    { topic: 'Present tense', patterns: [/(?:теперішній час|present tense)/i], required: true },
+    { topic: 'Past tense', patterns: [/(?:минулий час|past tense)/i], required: true },
+    { topic: 'Personal pronouns', patterns: [/(?:особові займенник|personal pronoun|я, ти, він)/i], required: true },
+  ],
+  'A2': [
+    { topic: 'Genitive case', patterns: [/(?:родовий|genitive)/i], required: true },
+    { topic: 'Dative case', patterns: [/(?:давальний|dative)/i], required: true },
+    { topic: 'Locative case', patterns: [/(?:місцевий|locative)/i], required: true },
+    { topic: 'Aspect introduction', patterns: [/(?:вид дієслова|aspect|доконан|недоконан|perfective|imperfective)/i], required: true },
+    { topic: 'Comparative adjectives', patterns: [/(?:вищий ступінь|comparative|більш|менш|-іший|-ший)/i], required: true },
+    { topic: 'Euphony rules', patterns: [/(?:евфонія|euphony|у\/в|і\/й|з\/із\/зі)/i], required: true },
+    { topic: 'Reflexive verbs', patterns: [/(?:зворотн|reflexive|-ся\b)/i], required: true },
+  ],
+  'A2+': [
+    { topic: 'Instrumental case', patterns: [/(?:орудний|instrumental)/i], required: true },
+    { topic: 'Vocative case', patterns: [/(?:кличний|vocative)/i], required: true },
+    { topic: 'Verbs of motion', patterns: [/(?:дієслова руху|motion verb|йти|ходити|їхати|їздити)/i], required: true },
+    { topic: 'Relative clauses', patterns: [/(?:підрядні речення|relative clause|який|яка|яке)/i], required: true },
+  ],
+  'B1': [
+    { topic: 'Aspect mastery', patterns: [/(?:вид дієслова|aspect|доконан|недоконан)/i], required: true },
+    { topic: 'Motion verbs with prefixes', patterns: [/(?:при-|ви-|за-|пере-|дієслова руху з префікс|prefixed motion)/i], required: true },
+    { topic: 'Conditional mood', patterns: [/(?:умовний спосіб|conditional|якби|б\b)/i], required: true },
+    { topic: 'Past passive participles', patterns: [/(?:пасивний дієприкметник|passive participle|-ний\b|-тий\b)/i], required: true },
+    { topic: 'Reported speech', patterns: [/(?:непряма мова|reported speech|indirect speech)/i], required: true },
+    { topic: 'Purpose clauses', patterns: [/(?:мета|purpose|щоб)/i], required: true },
+  ],
+  'B1+': [
+    { topic: 'Adverbial participles', patterns: [/(?:дієприслівник|adverbial participle|-учи|-ючи|-вши)/i], required: true },
+    { topic: 'Impersonal passive', patterns: [/(?:-но\/-то|impersonal passive|написано|зроблено)/i], required: true },
+    { topic: 'Numeral declension', patterns: [/(?:відмінювання числівник|numeral declension|collective numeral|двоє|троє)/i], required: true },
+  ],
+  'B2': [
+    { topic: 'All passive forms', patterns: [/(?:пасив|passive|будується|-ся\b|-ний\b|-тий\b|-но\/-то)/i], required: true },
+    { topic: 'Active participles', patterns: [/(?:активний дієприкметник|active participle|-учий|-ючий|-лий)/i], required: true },
+    { topic: 'Functional styles', patterns: [/(?:функціональний стиль|register|стиль|офіційний|науковий|розмовний|публіцистичний|художній)/i], required: true },
+    { topic: 'Phraseology', patterns: [/(?:фразеологі|прислів|idiom|proverb|приказк|крилат)/i], required: true },
+    { topic: 'Word formation', patterns: [/(?:словотвір|word formation|суфікс|префікс|-ння\b|-ець\b|-ач\b)/i], required: false },
+  ],
+  'B2+': [
+    { topic: 'Synonymy', patterns: [/(?:синонім|synonym)/i], required: true },
+    { topic: 'Register control', patterns: [/(?:регістр|register|formal|informal|офіційний|неофіційний)/i], required: true },
+    { topic: 'Historical content', patterns: [/(?:історі|history|Київська Русь|козак|гетьман)/i], required: true },
+  ],
+  'C1': [
+    { topic: 'Archaic forms', patterns: [/(?:архаїчн|archaic|застарілий|церковнослов)/i], required: false },
+    { topic: 'Dialectal awareness', patterns: [/(?:діалект|dialect|говірк|регіональн)/i], required: false },
+    { topic: 'Literary devices', patterns: [/(?:метафор|епітет|метонімі|синекдох|metaphor|epithet)/i], required: true },
+    { topic: 'Academic writing', patterns: [/(?:академічн|academic|наукови|essay|есе)/i], required: true },
+  ],
+};
 
 // =============================================================================
 // Audit Functions
@@ -477,7 +553,7 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // 5. ENGAGEMENT BOXES
   // ==========================================================================
 
-  // Check for engagement boxes (💡 Did You Know, ⚡ Pro Tip, 📜 History Bite, 🎭 Culture Corner, etc.)
+  // Check for engagement boxes (💡 Did You Know, ⚡ Pro Tip, 📜 History Bite, 🎭 Culture Corner, 🎬 Pop Culture, etc.)
   const engagementPatterns = [
     />\s*💡\s*\*\*Did You Know/g,
     />\s*⚡\s*\*\*Pro Tip/g,
@@ -487,6 +563,7 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
     />\s*🎯\s*\*\*Fun Fact/g,
     />\s*🔗\s*\*\*Language Link/g,
     />\s*🌍\s*\*\*Real World/g,
+    />\s*🎬\s*\*\*Pop Culture/g,
   ];
 
   let engagementBoxes = 0;
@@ -544,14 +621,17 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
 
   const wordCount = mainContent.split(/\s+/).filter(w => w.length > 2).length;
 
-  // Check for minimal lesson content
+  // Check for minimal lesson content - these are QUALITY targets
+  // Good modules should have substantial explanatory content
   const minWordCount: Record<string, number> = {
-    'A1': 400,
-    'A2': 500,
-    'A2+': 600,
-    'B1': 700,
-    'B2': 800,
-    'C1': 900,
+    'A1': 600,      // Substantial explanation in English for beginners
+    'A2': 700,      // More context and examples
+    'A2+': 800,     // Richer content as immersion increases
+    'B1': 900,      // Complex grammar needs thorough explanation
+    'B1+': 950,     // Continued depth
+    'B2': 1000,     // Advanced topics need substantial treatment
+    'B2+': 1050,    // Historical/cultural content requires depth
+    'C1': 1100,     // Academic-level depth
   };
 
   const minWords = minWordCount[level] || 500;
@@ -745,8 +825,16 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   const tableExamples = content.match(/\|\s*[А-Яа-яЇїІіЄєҐґ'].+\s*\|\s*[A-Za-z].+\s*\|/g) || [];
   exampleCount += Math.min(tableExamples.length, 10); // Cap table examples
 
+  // QUALITY targets - examples are key to learning
   const minExamples: Record<string, number> = {
-    'A1': 8, 'A2': 10, 'A2+': 12, 'B1': 15, 'B2': 18, 'C1': 20,
+    'A1': 12,   // Beginners need lots of examples
+    'A2': 15,   // More variety and context
+    'A2+': 18,  // Rich example coverage
+    'B1': 22,   // Complex grammar needs many illustrations
+    'B1+': 24,  // Continued example depth
+    'B2': 26,   // Advanced structures well-illustrated
+    'B2+': 28,  // Historical/cultural examples
+    'C1': 30,   // Academic-level illustration
   };
   const reqExamples = minExamples[level] || 10;
   if (exampleCount < reqExamples) {
@@ -790,17 +878,21 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // A2: Transitional - more context expected
   // B1+: Rich narrative, mostly Ukrainian prose
 
+  // QUALITY targets for narrative richness
+  // Engagement boxes, prose explanations, and examples drive learning
   const narrativeRequirements: Record<string, {
     minEngagementBoxes: number;
     minProseLines: number;  // Lines >30 chars that explain/contextualize
     minExamples: number;    // Example sentences (Ukrainian + translation)
   }> = {
-    'A1': { minEngagementBoxes: 2, minProseLines: 5, minExamples: 3 },
-    'A2': { minEngagementBoxes: 2, minProseLines: 8, minExamples: 5 },
-    'A2+': { minEngagementBoxes: 3, minProseLines: 10, minExamples: 5 },
-    'B1': { minEngagementBoxes: 3, minProseLines: 12, minExamples: 6 },
-    'B2': { minEngagementBoxes: 3, minProseLines: 15, minExamples: 6 },
-    'C1': { minEngagementBoxes: 2, minProseLines: 20, minExamples: 6 },
+    'A1': { minEngagementBoxes: 3, minProseLines: 12, minExamples: 6 },   // Rich scaffolding for beginners
+    'A2': { minEngagementBoxes: 3, minProseLines: 15, minExamples: 8 },   // More context building
+    'A2+': { minEngagementBoxes: 4, minProseLines: 18, minExamples: 8 },  // Deeper explanations
+    'B1': { minEngagementBoxes: 4, minProseLines: 22, minExamples: 10 },  // Substantial narrative
+    'B1+': { minEngagementBoxes: 4, minProseLines: 25, minExamples: 10 }, // Rich cultural/authentic content
+    'B2': { minEngagementBoxes: 4, minProseLines: 28, minExamples: 10 },  // Advanced explanations
+    'B2+': { minEngagementBoxes: 5, minProseLines: 32, minExamples: 12 }, // Historical depth
+    'C1': { minEngagementBoxes: 4, minProseLines: 35, minExamples: 12 },  // Academic richness
   };
 
   const narrativeReq = narrativeRequirements[level];
@@ -881,14 +973,18 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
     'A2': { target: 0.55, tolerance: 0.20 },   // 35%-75%
     'A2+': { target: 0.60, tolerance: 0.18 },  // 42%-78%
     'B1': { target: 0.70, tolerance: 0.15 },   // 55%-85%
+    'B1+': { target: 0.80, tolerance: 0.12 },  // 68%-92%
     'B2': { target: 0.90, tolerance: 0.08 },   // 82%-98%
+    'B2+': { target: 0.92, tolerance: 0.06 },  // 86%-98%
     'C1': { target: 0.95, tolerance: 0.05 },   // 90%-100%
   } : {
     'A1': { target: 0.30, tolerance: 0.15 },   // Regular modules: 30% ±15%
     'A2': { target: 0.40, tolerance: 0.15 },
     'A2+': { target: 0.50, tolerance: 0.12 },
     'B1': { target: 0.60, tolerance: 0.10 },
+    'B1+': { target: 0.70, tolerance: 0.10 },
     'B2': { target: 0.85, tolerance: 0.10 },
+    'B2+': { target: 0.90, tolerance: 0.08 },
     'C1': { target: 0.95, tolerance: 0.05 },
   };
 
@@ -972,13 +1068,18 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // ==========================================================================
 
   // Check sentence length in activities matches level
+  // QUALITY targets for sentence complexity in activities
+  // These are word counts for ACTIVITY sentences (fill-in, unjumble)
+  // Real lesson content should have natural sentence lengths
   const sentenceComplexity: Record<string, { min: number; max: number }> = {
-    'A1': { min: 3, max: 6 },
-    'A2': { min: 6, max: 8 },
-    'A2+': { min: 8, max: 10 },
-    'B1': { min: 10, max: 14 },
-    'B2': { min: 12, max: 16 },
-    'C1': { min: 14, max: 18 },
+    'A1': { min: 5, max: 8 },     // "Моя мама працює в лікарні" (5) - not trivial!
+    'A2': { min: 6, max: 10 },    // Compound with connectors, prepositions
+    'A2+': { min: 8, max: 12 },   // Subordinate clauses, complex structures
+    'B1': { min: 10, max: 15 },   // Complex sentences, conditionals, aspect
+    'B1+': { min: 11, max: 16 },  // Participles, extended complexity
+    'B2': { min: 12, max: 18 },   // Sophisticated structures, passive
+    'B2+': { min: 13, max: 19 },  // Advanced stylistic variation
+    'C1': { min: 14, max: 22 },   // Advanced academic/literary
   };
 
   const levelComplexity = sentenceComplexity[level];
@@ -1084,14 +1185,17 @@ function generateFixPrompt(audit: ModuleAudit): string {
     issuesByCategory[issue.category].push(issue);
   }
 
-  // Level-specific requirements
+  // Level-specific QUALITY TARGETS (based on Ukrainian State Standard September 2024)
+  // These are ambitious goals - good modules should meet or exceed them
   const levelReqs: Record<string, string> = {
-    'A1': 'Activities: 6 min, 10 items each | Vocab: 15-20 | Sentences: 3-6 words (simple SVO)',
-    'A2': 'Activities: 8 min, 10 items each | Vocab: 20-25 | Sentences: 6-8 words (connectors)',
-    'A2+': 'Activities: 10 min, 15 items each | Vocab: 35-40 | Sentences: 8-10 words (subordinate clauses)',
-    'B1': 'Activities: 12 min, 20 items each | Vocab: 25-30 | Sentences: 10-14 words (conditionals)',
-    'B2': 'Activities: 14 min, 20 items each | Vocab: 25-30 | Sentences: 12-16 words (passive, sophisticated)',
-    'C1': 'Activities: 14 min, 20 items each | Vocab: 30-35 | Sentences: 14-18 words (academic)',
+    'A1': 'Activities: 8+, 12 items each | Vocab: 18-25 | Sentences: 5-8 words | Content: 600+ words | Examples: 12+',
+    'A2': 'Activities: 10+, 12 items each | Vocab: 22-30 | Sentences: 6-10 words | Content: 700+ words | Examples: 15+',
+    'A2+': 'Activities: 12+, 15 items each | Vocab: 35-45 | Sentences: 8-12 words | Content: 800+ words | Examples: 18+',
+    'B1': 'Activities: 14+, 20 items each | Vocab: 28-35 | Sentences: 10-15 words | Content: 900+ words | Examples: 22+',
+    'B1+': 'Activities: 14+, 20 items each | Vocab: 28-35 | Sentences: 11-16 words | Content: 950+ words | Examples: 24+',
+    'B2': 'Activities: 16+, 22 items each | Vocab: 30-40 | Sentences: 12-18 words | Content: 1000+ words | Examples: 26+',
+    'B2+': 'Activities: 16+, 22 items each | Vocab: 30-40 | Sentences: 13-19 words | Content: 1050+ words | Examples: 28+',
+    'C1': 'Activities: 16+, 24 items each | Vocab: 35-45 | Sentences: 14-22 words | Content: 1100+ words | Examples: 30+',
   };
 
   // Build the fix prompt

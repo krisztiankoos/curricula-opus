@@ -17,7 +17,8 @@
     "vocab:enrich:force": "ts-node scripts/vocab-enrich.ts l2-uk-en --force",
     "vocab:rebuild": "npm run vocab:init:force && npm run vocab:scan",
     "test": "ts-node scripts/test-html.ts",
-    "test:html": "ts-node scripts/test-html.ts"
+    "test:html": "ts-node scripts/test-html.ts",
+    "claude:deploy": "mkdir -p .claude/skills && cp -r claude_extensions/skills/* .claude/skills/"
   },
   "repository": {
     "type": "git",

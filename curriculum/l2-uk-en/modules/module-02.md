@@ -190,11 +190,123 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 
 ---
 
----
+## Euphony: The Music of Ukrainian
+
+### Why Ukrainian Sounds So Melodic
+
+Have you ever wondered why Ukrainian sounds so smooth and musical? The secret is **euphony** (евфонія) - the art of sound harmony. Ukrainian has built-in rules that automatically make words flow together beautifully. It's like the language has its own autocorrect for ugly sounds!
+
+When two words create an awkward combination of consonants or vowels, Ukrainian simply swaps one letter for another. This isn't optional grammar - it's the soul of how Ukrainian sounds.
+
+> 💡 **Did You Know?**
+>
+> The word "euphony" comes from Greek: **eu** (good) + **phonē** (sound). Ukrainian takes this literally - the language actively avoids sounds that don't "sound good" together. Native speakers do this automatically, and it's one reason Ukrainian poetry and songs sound so beautiful!
+
+### The Three Euphonic Pairs
+
+Ukrainian has three magical letter pairs that switch depending on what comes before:
+
+| Pair | After Consonant | After Vowel | Example |
+|------|-----------------|-------------|---------|
+| **у / в** | **у** | **в** | брат **у** школі / сестра **в** школі |
+| **і / й** | **і** | **й** | хліб **і** сіль / каша **й** молоко |
+| **з / із / зі** | **із/зі** | **з** | йти **з** роботи / йти **із** школи |
 
 ---
 
+### У vs В: The Vowel Switch
+
+This is the most common euphonic change. Think of **у** and **в** as the same word wearing different outfits depending on the party:
+
+**Rule:** Use **в** after vowels, **у** after consonants.
+
+| Context | Correct | Wrong | Why |
+|---------|---------|-------|-----|
+| After vowel | Я живу **в** Києві | ~~Я живу у Києві~~ | "у" after vowel "у" sounds awkward |
+| After consonant | Брат **у** школі | ~~Брат в школі~~ | "в" after "т" creates consonant cluster |
+| Beginning | **У** мене є книга | ~~В мене є книга~~ | After pause/silence, use "у" |
+
+**Practice sentences:**
+- Я працюю **в** офісі. (I work in an office.) - after vowel "ю"
+- Мама **у** магазині. (Mom is at the store.) - after consonant "а"
+- Вона живе **в** Одесі. (She lives in Odesa.) - after vowel "е"
+- Батько **у** лікарні. (Father is at the hospital.) - after consonant "о"
+
+> 🎬 **Pop Culture Moment: Ukrainian Dubbing**
+>
+> When movies are dubbed into Ukrainian, translators pay careful attention to euphony. In the Ukrainian dub of *The Lord of the Rings*, listen for how "у/в" switches naturally: "Фродо **в** Шайрі" (Frodo in the Shire) vs "Гендальф **у** Шайрі" (Gandalf in the Shire). Same place, different preposition - because Ukrainian demands musical flow!
+
 ---
+
+### І vs Й: The Connector Duo
+
+The word "and" in Ukrainian has two forms: **і** and **й**. They follow the same logic:
+
+**Rule:** Use **й** after vowels, **і** after consonants.
+
+| Context | Correct | Wrong | Why |
+|---------|---------|-------|-----|
+| After vowel | мама **й** тато | ~~мама і тато~~ | "і" after "а" breaks flow |
+| After consonant | хліб **і** сіль | ~~хліб й сіль~~ | "й" after "б" is unpronounceable |
+| After vowel | кава **й** чай | ~~кава і чай~~ | smooth transition |
+| After consonant | суп **і** салат | ~~суп й салат~~ | needs vowel bridge |
+
+**Practice sentences:**
+- Вода **й** сік на столі. (Water and juice are on the table.) - after vowel "а"
+- Борщ **і** вареники смачні. (Borscht and varenyky are tasty.) - after consonant "щ"
+- Україна **й** Польща - сусіди. (Ukraine and Poland are neighbors.) - after vowel "а"
+- Львів **і** Київ - міста. (Lviv and Kyiv are cities.) - after consonant "в"
+
+> 💡 **Memory Trick**
+>
+> Think of **й** as the "lazy" version of **і**. After a vowel, your mouth is already open, so it takes the shortcut "й". After a consonant, you need the full "і" to open up the sound again.
+
+---
+
+### З / Із / Зі: The Triple Threat
+
+The preposition "from/with" has three forms! This one's a bit more complex:
+
+**Rules:**
+- **з** - default form, used after vowels and before most consonants
+- **із** - used after consonants when the next word starts with certain sounds
+- **зі** - used before words starting with з-, с-, ш-, щ-
+
+| Form | When to Use | Example |
+|------|-------------|---------|
+| **з** | Default, especially after vowels | Я **з** України. (I'm from Ukraine.) |
+| **із** | After consonant, before vowel/soft consonant | Йду **із** офісу. (Going from the office.) |
+| **зі** | Before з-, с-, ш-, щ- | **Зі** школи. (From school.) |
+
+**Why зі before з/с/ш/щ?** Try saying "з школи" fast - it sounds like a snake hissing! "Зі школи" flows much better.
+
+**Practice sentences:**
+- Я **з** Києва. (I'm from Kyiv.) - default form
+- Приїхав **із** Америки. (Arrived from America.) - after consonant "в"
+- Повернувся **зі** США. (Returned from the USA.) - before "С"
+- Вийшов **зі** школи. (Left school.) - before "ш"
+
+> 🎮 **Gamer's Corner: S.T.A.L.K.E.R. Ukrainian**
+>
+> In the legendary Ukrainian game *S.T.A.L.K.E.R.* (made in Kyiv!), characters say "вийти **зі** Зони" (exit from the Zone) - not "з Зони". Even in post-apocalyptic Chornobyl, Ukrainian euphony rules apply! The Zone may be lawless, but grammar isn't.
+
+---
+
+### Quick Reference Card
+
+| Situation | Use This | Example |
+|-----------|----------|---------|
+| "in/at" after vowel | **в** | живу **в** місті |
+| "in/at" after consonant | **у** | брат **у** школі |
+| "and" after vowel | **й** | мама **й** тато |
+| "and" after consonant | **і** | хліб **і** сіль |
+| "from" (default) | **з** | я **з** України |
+| "from" after consonant | **із** | він **із** Канади |
+| "from" before з/с/ш/щ | **зі** | йду **зі** школи |
+
+> 🌍 **Real World: Sounding Native**
+>
+> Euphony is what separates textbook Ukrainian from natural Ukrainian. When you correctly use "в" vs "у", native speakers will immediately notice - in a good way! It's like the difference between saying "I am going to" and "I'm gonna" in English. Both are correct, but one sounds more natural.
 
 ---
 
@@ -439,6 +551,165 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 - [x] Ukrainian has 33 letters in its alphabet.
    > Correct! More than English (26) but fewer than Russian (33).
 
+## fill-in: Euphony - У vs В
+
+> Choose the correct form: **у** or **в**. Remember: **в** after vowels, **у** after consonants!
+
+1. Я живу ___ Києві. (I live in Kyiv.)
+   > [!answer] в
+   > [!options] у | в
+
+2. Брат ___ школі. (Brother is at school.)
+   > [!answer] у
+   > [!options] у | в
+
+3. Мама працює ___ лікарні. (Mom works at the hospital.)
+   > [!answer] в
+   > [!options] у | в
+
+4. Сестра ___ магазині. (Sister is at the store.)
+   > [!answer] у
+   > [!options] у | в
+
+5. Батько ___ офісі. (Father is at the office.)
+   > [!answer] в
+   > [!options] у | в
+
+6. Вона живе ___ Одесі. (She lives in Odesa.)
+   > [!answer] в
+   > [!options] у | в
+
+7. ___ мене є книга. (I have a book.)
+   > [!answer] У
+   > [!options] У | В
+
+8. Він працює ___ банку. (He works at a bank.)
+   > [!answer] в
+   > [!options] у | в
+
+## fill-in: Euphony - І vs Й
+
+> Choose the correct form: **і** or **й**. Remember: **й** after vowels, **і** after consonants!
+
+1. мама ___ тато (mom and dad)
+   > [!answer] й
+   > [!options] і | й
+
+2. хліб ___ сіль (bread and salt)
+   > [!answer] і
+   > [!options] і | й
+
+3. кава ___ чай (coffee and tea)
+   > [!answer] й
+   > [!options] і | й
+
+4. борщ ___ вареники (borscht and varenyky)
+   > [!answer] і
+   > [!options] і | й
+
+5. сестра ___ брат (sister and brother)
+   > [!answer] й
+   > [!options] і | й
+
+6. Київ ___ Львів (Kyiv and Lviv)
+   > [!answer] і
+   > [!options] і | й
+
+7. вода ___ молоко (water and milk)
+   > [!answer] й
+   > [!options] і | й
+
+8. суп ___ салат (soup and salad)
+   > [!answer] і
+   > [!options] і | й
+
+## quiz: Euphony Rules
+
+> Choose the correct answer about Ukrainian euphony.
+
+1. Why does Ukrainian have euphonic alternations like у/в?
+   - [ ] To make grammar more difficult
+   - [x] To make the language sound smoother and more melodic
+   - [ ] To distinguish formal from informal speech
+   - [ ] To mark grammatical gender
+   > Euphony = "good sound" - Ukrainian avoids awkward consonant clusters!
+
+2. "Я живу ___ Києві" - which preposition is correct?
+   - [ ] у - because "у" is always used for location
+   - [x] в - because it follows the vowel "у" in "живу"
+   - [ ] Either is always acceptable
+   - [ ] Neither - use a different word
+   > After vowel → use "в" for smooth flow
+
+3. "Хліб ___ сіль" - which connector is correct?
+   - [x] і - because it follows the consonant "б"
+   - [ ] й - because "й" is shorter
+   - [ ] та - because it's more formal
+   - [ ] Either і or й
+   > After consonant → use "і" (й would be unpronounceable)
+
+4. When do you use "зі" instead of "з"?
+   - [ ] After all consonants
+   - [ ] Only in formal writing
+   - [x] Before words starting with з-, с-, ш-, щ-
+   - [ ] At the beginning of sentences
+   > "Зі школи" not "з школи" - avoids hissing sound!
+
+5. "Мама ___ тато вдома" - what goes in the blank?
+   - [ ] і - standard form
+   - [x] й - because it follows the vowel "а"
+   - [ ] та - always correct
+   - [ ] Either і or й
+   > After vowel → use "й" for smooth flow
+
+6. Which sentence demonstrates correct euphony?
+   - [ ] Я живу у Одесі.
+   - [x] Я живу в Одесі.
+   - [ ] Я живу в в Одесі.
+   - [ ] Я живу Одесі.
+   > "у" after vowel "у" would be awkward (у у) - use "в"!
+
+## match-up: Euphonic Pairs
+
+> Match the context to the correct euphonic form.
+
+| Context | Correct Form |
+|---------|--------------|
+| after vowel, meaning "in" | в |
+| after consonant, meaning "in" | у |
+| after vowel, meaning "and" | й |
+| after consonant, meaning "and" | і |
+| before words starting with з/с/ш/щ | зі |
+| default "from" form | з |
+
+## group-sort: Euphony Rules
+
+> Sort these phrases by which euphonic form they need.
+
+### Use В (after vowel)
+- Я живу ___ місті (в)
+- Вона працює ___ офісі (в)
+- Вони живуть ___ Києві (в)
+- Батько ___ банку (в)
+
+### Use У (after consonant)
+- Брат ___ школі (у)
+- Сестра ___ магазині (у)
+- Він ___ лікарні (у)
+- Мама ___ роботі (у)
+
+### Use Й (after vowel)
+- мама ___ тато (й)
+- кава ___ чай (й)
+- вода ___ сік (й)
+- каша ___ молоко (й)
+
+### Use І (after consonant)
+- хліб ___ сіль (і)
+- борщ ___ вареники (і)
+- суп ___ салат (і)
+- Львів ___ Київ (і)
+
 ---
 
 # Vocabulary
@@ -475,6 +746,33 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 | ім'я | /iˈmjɑ/ | name | noun | n | ' = apostrophe, Я = YA |
 | жінка | /ˈʒinkɑ/ | woman | noun | f | Ж = ZH |
 | чоловік | /tʃɔlɔˈvʲik/ | man/husband | noun | m | Ч = CH |
+| у/в | /u/, /v/ | in, at | prep | - | Euphonic pair: в after vowel, у after consonant |
+| і/й | /i/, /j/ | and | conj | - | Euphonic pair: й after vowel, і after consonant |
+| із | /iz/ | from, with | prep | - | After consonant before vowel/soft sound |
+| зі | /zi/ | from, with | prep | - | Before з-, с-, ш-, щ- |
+| євфонія | /jɛvˈfɔnʲijɑ/ | euphony | noun | f | Greek: "good sound" |
+| звук | /zvuk/ | sound | noun | m | Basic music/phonetics term |
+| голосний | /ɦɔlɔsˈnɪj/ | vowel | adj | m | Literally: "voiced" |
+| вода | /vɔˈdɑ/ | water | noun | f | Basic vocabulary |
+| молоко | /mɔlɔˈkɔ/ | milk | noun | n | Basic vocabulary |
+| сік | /sʲik/ | juice | noun | m | Basic vocabulary |
+
+---
+
+# Review Vocabulary
+
+| Word | First Module |
+|------|-------------|
+| з | 4 |
+| приголосний | 162 |
+| магазин | 13 |
+| офіс | 13 |
+| лікарня | 15 |
+| банк | 1 |
+| робота | 57 |
+| каша | 17 |
+| вареники | 17 |
+
 ---
 
 # Letter Groups Summary
@@ -504,6 +802,10 @@ The Ukrainian alphabet has a specific order (like ABC in English). Practice sayi
 > - **Special letters:** И (short i), Й (y consonant), Ь (softens consonants)
 > - The letter **Ї** exists ONLY in Ukrainian!
 > - Cursive letters can look very different - watch out!
+> - **Euphony rules** - why Ukrainian sounds so melodic:
+>   - **у/в**: в after vowels, у after consonants (Я живу **в** Києві)
+>   - **і/й**: й after vowels, і after consonants (мама **й** тато)
+>   - **з/із/зі**: зі before з-, с-, ш-, щ- (**зі** школи)
 > - Your first Ukrainian phrases: Дякую! Будь ласка! Привіт!
 
 > 🎯 **Coming Next**

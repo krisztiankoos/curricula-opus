@@ -54,8 +54,8 @@ npm run vocab:rebuild
 |-----------|------|---------|
 | **Audit Script** | `scripts/module-audit.ts` | Main audit logic |
 | **Vocab Database** | `curriculum/l2-uk-en/vocabulary.db` | SQLite DB for word tracking |
-| **Review Prompts** | `docs/claude-review-prompt.md` | AI review instructions |
-| **Richness Guidelines** | `curriculum/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` | Quality standards |
+| **Review Prompts** | `docs/l2-uk-en/claude-review-prompt.md` | AI review instructions |
+| **Richness Guidelines** | `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` | Quality standards |
 
 ### Data Flow
 
@@ -277,10 +277,10 @@ When adding/removing vocabulary words:
 
 | Document | Purpose |
 |----------|---------|
-| `docs/claude-review-prompt.md` | AI review instructions |
+| `docs/l2-uk-en/claude-review-prompt.md` | AI review instructions |
 | `docs/MARKDOWN-FORMAT.md` | Markdown syntax specification |
-| `docs/A1-REVIEW-STATUS.md` | A1 modules review status |
-| `curriculum/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` | Quality standards |
+| `docs/l2-uk-en/A1-REVIEW-STATUS.md` | A1 modules review status |
+| `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` | Quality standards |
 
 ---
 

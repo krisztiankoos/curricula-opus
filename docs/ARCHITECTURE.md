@@ -162,14 +162,16 @@ curricula-opus/
 
 ### Immersion Levels by CEFR
 
-| Level | Immersion | English % | Ukrainian % |
-|-------|-----------|-----------|-------------|
-| A1 | 0.30 | 70% | 30% |
-| A2 | 0.40 | 60% | 40% |
-| A2+ | 0.50 | 50% | 50% |
-| B1 | 0.60 | 40% | 60% |
-| B2 | 0.85 | 15% | 85% |
-| C1 | 0.95 | 5% | 95% |
+| Level | Modules | Immersion | English % | Ukrainian % |
+|-------|---------|-----------|-----------|-------------|
+| A1 | 1-30 | 0.30 | 70% | 30% |
+| A2 | 31-60 | 0.40 | 60% | 40% |
+| A2+ | 61-80 | 0.50 | 50% | 50% |
+| B1 | 81-120 | 0.60 | 40% | 60% |
+| B1+ | 121-160 | 0.70 | 30% | 70% |
+| B2 | 161-200 | 0.85 | 15% | 85% |
+| B2+ | 201-240 | 0.90 | 10% | 90% |
+| C1 | 241+ | 0.95 | 5% | 95% |
 
 ## HTML Output
 
@@ -316,23 +318,22 @@ When rewriting modules, apply these standards:
 - [ ] Engaging narrative intro (not "Welcome to X!")
 - [ ] 2-3 "Чи знали ви?" boxes per module
 - [ ] At least 1 "Міф vs Факт" box
-- [ ] Correct immersion ratio for level (B1.1: 70% EN / 30% UK)
+- [ ] Correct immersion ratio for level (see table below)
 - [ ] Cultural/historical context where relevant
 - [ ] Empty Словник placeholder (for vocab:enrich)
 
-### Immersion Levels by Phase
+### Immersion Levels by Level
 
-| Phase | EN % | UK % | Notes |
-|-------|------|------|-------|
-| A1 | 95% | 5% | Transliteration in early modules |
-| A2 | 80% | 20% | Bilingual headers |
-| A2+ | 80% | 20% | Transition phase |
-| B1.1 | 70% | 30% | Ukrainian headers, some Ukrainian instructions |
-| B1.2 | 60% | 40% | More Ukrainian instructions |
-| B1.3 | 50% | 50% | Balanced |
-| B1.4 | 40% | 60% | Prepares for B2 |
-| B2 | 15% | 85% | Full immersion |
-| C1 | 5% | 95% | Near-native |
+| Level | Modules | EN % | UK % | Notes |
+|-------|---------|------|------|-------|
+| A1 | 1-30 | 70% | 30% | Transliteration in early modules |
+| A2 | 31-60 | 60% | 40% | Bilingual headers |
+| A2+ | 61-80 | 50% | 50% | Transition phase |
+| B1 | 81-120 | 40% | 60% | Ukrainian headers, some Ukrainian instructions |
+| B1+ | 121-160 | 30% | 70% | More Ukrainian, English for complex grammar |
+| B2 | 161-200 | 15% | 85% | Near-full immersion |
+| B2+ | 201-240 | 10% | 90% | Full immersion |
+| C1 | 241+ | 5% | 95% | Near-native |
 
 ## Vibe Integration
 

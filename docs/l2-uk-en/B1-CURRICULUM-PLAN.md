@@ -1,13 +1,15 @@
-# B1 Draft Plan - Ukrainian
+# B1/B1+ Curriculum Plan - Ukrainian
 
 **Based on CEFR requirements + Ukrainian language specifics**
 
 ## Overview
 
-- **Modules:** 81-140 (60 modules)
-- **Target vocabulary:** ~1,500-1,800 new words (~25-30/module)
-- **Cumulative vocabulary:** ~2,900-3,200 words
-- **Focus:** Grammar depth, aspect mastery, complex sentences, intermediate vocabulary
+- **B1 Modules:** 81-120 (40 modules)
+- **B1+ Modules:** 121-160 (40 modules)
+- **Total:** 80 modules
+- **Target vocabulary:** ~2,000 new words (~25/module)
+- **Cumulative vocabulary:** ~3,400 words after B1+
+- **Focus:** Grammar depth, aspect mastery, complex sentences, contemporary Ukraine
 
 ---
 
@@ -94,9 +96,11 @@
 
 ---
 
-## Proposed Module Structure
+## Module Structure
 
-### B1.1: Aspect & Motion Mastery (Modules 81-100)
+### B1 Level (Modules 81-120)
+
+#### B1 Phase 1: Aspect & Motion Mastery (Modules 81-100)
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
@@ -121,7 +125,7 @@
 | 99 | B1.1 Review | Review | Aspect & motion consolidation |
 | 100 | B1.1 Checkpoint | Review | Assessment |
 
-### B1.2: Complex Sentences (Modules 101-115)
+#### B1 Phase 2: Complex Sentences (Modules 101-120)
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
@@ -138,106 +142,90 @@
 | 111 | Media & News Vocabulary | Vocabulary | Newspaper, journalist, report |
 | 112 | Society & Politics | Vocabulary | Government, election, law |
 | 113 | Environment | Vocabulary | Climate, pollution, protect |
-| 114 | B1.2 Review | Review | Complex sentences |
-| 115 | B1.2 Checkpoint | Review | Assessment |
-
-### B1.3: Reported Speech & Participles (Modules 116-125)
-
-| # | Title | Type | Focus |
-|---|-------|------|-------|
-| 116 | Reported Statements | Grammar | Він сказав, що... |
-| 117 | Reported Questions | Grammar | Він запитав, чи/що... |
-| 118 | Reported Commands | Grammar | Він попросив, щоб... |
-| 119 | Past Passive Participles I | Grammar | Formation -ний/-тий |
-| 120 | Past Passive Participles II | Grammar | Usage, short forms -но/-то |
-| 121 | Adverbial Participles | Grammar | Читаючи, прочитавши |
-| 122 | Emotions & Relationships | Vocabulary | Trust, conflict, support |
-| 123 | Health & Wellness | Vocabulary | Stress, recovery, diet |
-| 124 | B1.3 Review | Review | Reported speech, participles |
-| 125 | B1.3 Checkpoint | Review | Assessment |
-
-### B1.4: Expansion & Integration (Modules 126-140)
-
-| # | Title | Type | Focus |
-|---|-------|------|-------|
-| 126 | Diminutives | Grammar | -ик, -ок, -очок, -еньк- |
-| 127 | Numerals: Collectives & Fractions | Grammar | Двоє, троє; половина |
-| 128 | Business Basics | Vocabulary | Company, meeting, contract |
-| 129 | Travel & Geography | Vocabulary | Border, visa, destination |
-| 130 | Discourse Markers | Vocabulary | However, therefore, moreover |
-| 131 | Describing Changes | Vocabulary | Improve, worsen, increase |
-| 132 | Synonymy I: Thinking | Vocabulary | думати/гадати/вважати/міркувати |
-| 133 | Synonymy II: Speaking | Vocabulary | казати/говорити/розповідати/повідомляти |
-| 134 | Synonymy III: Seeing/Knowing | Vocabulary | бачити/дивитися; знати/розуміти |
-| 135 | Idioms & Set Phrases I | Vocabulary | Common expressions |
-| 136 | Idioms & Set Phrases II | Vocabulary | More expressions |
-| 137 | Collocations Review | Vocabulary | Verb+noun, adj+noun patterns |
-| 138 | B1 Integration I | Practice | Grammar skills |
-| 139 | B1 Integration II | Practice | Vocabulary & communication |
-| 140 | B1 Capstone | Review | Comprehensive B1 assessment |
+| 114 | Reported Statements | Grammar | Він сказав, що... |
+| 115 | Reported Questions | Grammar | Він запитав, чи/що... |
+| 116 | Reported Commands | Grammar | Він попросив, щоб... |
+| 117 | Emotions & Relationships | Vocabulary | Trust, conflict, support |
+| 118 | Health & Wellness | Vocabulary | Stress, recovery, diet |
+| 119 | B1 Review | Review | Complex sentences, reported speech |
+| 120 | B1 Checkpoint | Review | B1 Assessment |
 
 ---
 
-### B1.5: Contemporary Ukraine via Media (Modules 141-150)
+### B1+ Level (Modules 121-160)
 
-**Theme:** Сучасна Україна через медіа
+#### B1+ Phase 1: Participles & Advanced Grammar (Modules 121-140)
+
 **Immersion:** 30% English / 70% Ukrainian
-**Sources:** Ukrainer, BBC Ukraine, DW Ukraine style content
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
-| 141 | Українські регіони: Захід | Culture | Львів, Закарпаття, Волинь — Ukrainer style |
-| 142 | Українські регіони: Схід | Culture | Харків, Донбас, Слобожанщина |
-| 143 | Українські регіони: Південь | Culture | Одеса, Херсон, Крим |
-| 144 | Українська музика сьогодні | Culture | Contemporary music scene |
-| 145 | Українське кіно та серіали | Culture | Film industry, popular shows |
-| 146 | Екологія та довкілля | Vocabulary | Environment, sustainability |
-| 147 | Технології та стартапи | Vocabulary | Tech industry, innovation |
-| 148 | Спорт в Україні | Vocabulary | Sports culture, achievements |
-| 149 | Українська кухня: більше ніж борщ | Culture | Regional cuisines, traditions |
-| 150 | B1.5 Checkpoint | Review | Assessment |
+| 121 | Adverbial Participles | Grammar | Читаючи, прочитавши |
+| 122 | Past Passive Participles I | Grammar | Formation -ний/-тий |
+| 123 | Past Passive Participles II | Grammar | Usage, short forms -но/-то |
+| 124 | Diminutives | Grammar | -ик, -ок, -очок, -еньк- |
+| 125 | Numerals: Collectives & Fractions | Grammar | Двоє, троє; половина |
+| 126 | Business Basics | Vocabulary | Company, meeting, contract |
+| 127 | Travel & Geography | Vocabulary | Border, visa, destination |
+| 128 | Discourse Markers | Vocabulary | However, therefore, moreover |
+| 129 | Describing Changes | Vocabulary | Improve, worsen, increase |
+| 130 | Synonymy I: Thinking | Vocabulary | думати/гадати/вважати/міркувати |
+| 131 | Synonymy II: Speaking | Vocabulary | казати/говорити/розповідати |
+| 132 | Idioms & Set Phrases I | Vocabulary | Common expressions |
+| 133 | Idioms & Set Phrases II | Vocabulary | More expressions |
+| 134 | Collocations Review | Vocabulary | Verb+noun, adj+noun patterns |
+| 135 | Українські регіони: Захід | Culture | Львів, Закарпаття, Волинь |
+| 136 | Українські регіони: Схід | Culture | Харків, Слобожанщина |
+| 137 | Українські регіони: Південь | Culture | Одеса, Херсон, Крим |
+| 138 | Українська музика сьогодні | Culture | Contemporary music scene |
+| 139 | B1+ Phase 1 Review | Review | Participles, advanced grammar |
+| 140 | B1+ Phase 1 Checkpoint | Review | Assessment |
 
-### B1.6: Authentic Texts & Media Literacy (Modules 151-160)
+#### B1+ Phase 2: Contemporary Ukraine & Authentic Texts (Modules 141-160)
 
-**Theme:** Читаємо справжні тексти
-**Immersion:** 20% English / 80% Ukrainian
+**Theme:** Сучасна Україна, автентичні тексти
+**Immersion:** 25% English / 75% Ukrainian
 **Preparation for B2 immersion level**
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
-| 151 | Новини: як читати та розуміти | Skills | News literacy, BBC/DW style |
-| 152 | Інтерв'ю: розмовний стиль | Skills | Ukrainer interview format |
-| 153 | Блоги та соцмережі | Skills | Authentic online Ukrainian |
-| 154 | Подкасти: слухаємо українською | Skills | Audio comprehension |
-| 155 | Короткі оповідання I | Literature | Simplified contemporary stories |
-| 156 | Короткі оповідання II | Literature | More contemporary stories |
-| 157 | Документальні фільми | Skills | Ukrainer documentary style |
-| 158 | Подорожі Україною | Vocabulary | Travel, tourism vocabulary |
-| 159 | B1.6 Review | Review | Integration |
-| 160 | B1 Final Checkpoint | Review | Comprehensive B1 assessment |
+| 141 | Українське кіно та серіали | Culture | Film industry, popular shows |
+| 142 | Екологія та довкілля | Vocabulary | Environment, sustainability |
+| 143 | Технології та стартапи | Vocabulary | Tech industry, innovation |
+| 144 | Спорт в Україні | Vocabulary | Sports culture, achievements |
+| 145 | Українська кухня | Culture | Regional cuisines, traditions |
+| 146 | Новини: як читати | Skills | News literacy |
+| 147 | Інтерв'ю: розмовний стиль | Skills | Interview format |
+| 148 | Блоги та соцмережі | Skills | Authentic online Ukrainian |
+| 149 | Подкасти: слухаємо українською | Skills | Audio comprehension |
+| 150 | B1+ Mid Checkpoint | Review | Assessment |
+| 151 | Короткі оповідання I | Literature | Contemporary stories |
+| 152 | Короткі оповідання II | Literature | More contemporary stories |
+| 153 | Документальні фільми | Skills | Documentary style |
+| 154 | Подорожі Україною | Vocabulary | Travel, tourism |
+| 155 | Культурні події | Culture | Festivals, events |
+| 156 | Соціальні теми | Vocabulary | Social issues |
+| 157 | B1+ Integration I | Practice | Grammar skills |
+| 158 | B1+ Integration II | Practice | Vocabulary & communication |
+| 159 | B1+ Review | Review | Comprehensive review |
+| 160 | B1+ Final Checkpoint | Review | B1+ Final Assessment |
 
 ---
 
 ## Summary
 
-- **Total B1 modules:** 80 (81-160)
-- **Grammar modules:** ~35
-- **Vocabulary modules:** ~25
-- **Culture/Media modules:** ~15
-- **Review/checkpoint modules:** ~5
-- **Target new words:** ~2,000-2,400 (~25-30/module average)
-- **Cumulative after B1:** ~3,400-3,800 words
+- **B1 modules:** 40 (81-120)
+- **B1+ modules:** 40 (121-160)
+- **Total:** 80 modules
+- **Target new words:** ~2,000 (~25/module average)
+- **Cumulative after B1+:** ~3,400 words
 
 ## Immersion Progression
 
-| Phase | Modules | English | Ukrainian |
+| Level | Modules | English | Ukrainian |
 |-------|---------|---------|-----------|
-| B1.1 | 81-100 | 70% | 30% |
-| B1.2 | 101-115 | 60% | 40% |
-| B1.3 | 116-125 | 50% | 50% |
-| B1.4 | 126-140 | 40% | 60% |
-| B1.5 | 141-150 | 30% | 70% |
-| B1.6 | 151-160 | 20% | 80% |
+| B1 | 81-120 | 40% | 60% |
+| B1+ | 121-160 | 30% | 70% |
 
 ---
 
@@ -301,16 +289,11 @@ Ukrainian aspect is **NOT black and white**. Many situations allow BOTH perfecti
 
 ## Implementation Status
 
-| Phase | Modules | Status |
+| Level | Modules | Status |
 |-------|---------|--------|
-| B1.1 | 81-100 | ✅ Implemented (needs quality rewrite) |
-| B1.2 | 101-115 | ✅ Implemented (needs quality rewrite) |
-| B1.3 | 116-125 | ✅ Implemented (needs quality rewrite) |
-| B1.4 | 126-140 | ✅ Implemented (needs quality rewrite) |
-| B1.5 | 141-150 | ⏳ Planned (NEW) |
-| B1.6 | 151-160 | ⏳ Planned (NEW) |
+| B1 | 81-120 | ✅ Complete |
+| B1+ | 121-160 | ✅ Complete |
 
 **Related GitHub Issues:**
-- #24: Implement missing modules 101-140
-- #25: Review aspect examples for ambiguous cases
-- #56: Phase 3: Investigate and improve B1 content quality
+- #73: Curriculum Reorganization (B1+/B2+ levels)
+- #89: Documentation Consolidation

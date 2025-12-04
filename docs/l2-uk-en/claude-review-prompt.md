@@ -21,14 +21,16 @@ Review and enrich module [X] following these requirements:
 
 When writing or enriching content, maintain the correct language balance for each level:
 
-| Level | Ukrainian % | English % | Practical Meaning |
-|-------|-------------|-----------|-------------------|
-| A1 | 30% | 70% | Mostly English explanations, Ukrainian examples/vocab |
-| A2 | 40% | 60% | More Ukrainian in dialogues, English explanations |
-| A2+ | 50% | 50% | Equal balance, section headers in Ukrainian |
-| B1 | 60% | 40% | Ukrainian-dominant, English for complex grammar |
-| B2 | 85% | 15% | Almost entirely Ukrainian, English only for nuance |
-| C1 | 95% | 5% | Full immersion, English only for rare clarifications |
+| Level | Modules | Ukrainian % | English % | Practical Meaning |
+|-------|---------|-------------|-----------|-------------------|
+| A1 | 1-30 | 30% | 70% | Mostly English explanations, Ukrainian examples/vocab |
+| A2 | 31-60 | 40% | 60% | More Ukrainian in dialogues, English explanations |
+| A2+ | 61-80 | 50% | 50% | Equal balance, section headers in Ukrainian |
+| B1 | 81-120 | 60% | 40% | Ukrainian-dominant, English for complex grammar |
+| B1+ | 121-160 | 70% | 30% | More Ukrainian, English for nuance only |
+| B2 | 161-200 | 85% | 15% | Almost entirely Ukrainian, English only for nuance |
+| B2+ | 201-240 | 90% | 10% | Near-full immersion, minimal English |
+| C1 | 241+ | 95% | 5% | Full immersion, English only for rare clarifications |
 
 **Important**: When adding prose/narrative content to fix "dry narration" issues, write new content in the appropriate language mix. Don't just add English explanations to B2 modules or Ukrainian prose to A1 modules.
 
@@ -61,22 +63,37 @@ When writing or enriching content, maintain the correct language balance for eac
 - Sentence complexity: Subordinate clauses begin (8-10 words)
 - Checkpoints: 70, 80
 
-### B1 (Modules 81-140)
+### B1 (Modules 81-120)
 - **Immersion**: 60% Ukrainian, 40% English
 - Activities: 12 minimum, 20 items each
 - Vocabulary: 25-30 new words per module
 - Sentence complexity: Complex sentences, conditionals (10-14 words)
-- Checkpoints: 100, 120, 140
+- Checkpoints: 100, 120
 
-### B2 (Modules 141-190)
+### B1+ (Modules 121-160)
+- **Immersion**: 70% Ukrainian, 30% English
+- Activities: 12 minimum, 20 items each
+- Vocabulary: 25-30 new words per module
+- Sentence complexity: Extended complexity, participles (10-14 words)
+- Checkpoints: 140, 160
+
+### B2 (Modules 161-200)
 - **Immersion**: 85% Ukrainian, 15% English
 - Activities: 14 minimum, 20 items each
 - Vocabulary: 25-30 new words per module
 - Sentence complexity: Sophisticated structures, passive (12-16 words)
 - Pronunciation guidance required for grammar modules
-- Checkpoints: 160, 180, 190
+- Checkpoints: 180, 200
 
-### C1 (Modules 191+)
+### B2+ (Modules 201-240)
+- **Immersion**: 90% Ukrainian, 10% English
+- Activities: 14 minimum, 20 items each
+- Vocabulary: 25-30 new words per module
+- Sentence complexity: Advanced stylistic variation (12-16 words)
+- Pronunciation guidance required for grammar modules
+- Checkpoints: 220, 240
+
+### C1 (Modules 241+)
 - **Immersion**: 95% Ukrainian, 5% English
 - Activities: 14 minimum, 20 items each
 - Vocabulary: 30-35 new words per module

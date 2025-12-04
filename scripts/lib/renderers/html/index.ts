@@ -33,7 +33,10 @@ export async function renderHtml(
   ctx: RenderContext
 ): Promise<string> {
   const template = await getTemplate();
-  const { frontmatter, activities, vocabulary, reviewVocabulary } = parsed;
+  const { frontmatter, sections, activities, vocabulary, reviewVocabulary } = parsed;
+
+  // Check if module has a summary section
+  const hasSummary = sections.some(s => s.type === 'summary');
 
   // Build navigation options - pass all activities
   const navOptions: NavOptions = {
@@ -44,6 +47,7 @@ export async function renderHtml(
     prevModule: ctx.prevModule,
     nextModule: ctx.nextModule,
     activities: activities,
+    hasSummary,
   };
 
   // Build page content
@@ -85,6 +89,10 @@ interface ContentOptions {
 function renderMainContent(options: ContentOptions): string {
   const { parsed, activities, vocabulary, reviewVocabulary } = options;
 
+  // Check if there's a summary section
+  const summarySection = parsed.sections.find(s => s.type === 'summary');
+  const hasSummary = !!summarySection;
+
   // Determine first activity for navigation
   const firstActivityId = activities.length > 0 ? `activity-0` : 'vocab';
 
@@ -92,10 +100,19 @@ function renderMainContent(options: ContentOptions): string {
   const lessonSection = renderLessonSection(parsed, firstActivityId);
 
   // Render each activity as its own section
+  // Last activity links to summary (if exists) or vocab
   const activitySections = activities.map((activity, index) => {
-    const nextSection = index < activities.length - 1 ? `activity-${index + 1}` : 'vocab';
+    const isLast = index === activities.length - 1;
+    const nextSection = isLast
+      ? (hasSummary ? 'summary' : 'vocab')
+      : `activity-${index + 1}`;
     return renderActivitySection(activity, index, nextSection);
   }).join('\n');
+
+  // Render summary section (if exists)
+  const summarySectionHtml = summarySection
+    ? renderSummarySection(summarySection, 'vocab')
+    : '';
 
   // Render vocabulary section
   const vocabSection = renderVocabSection(vocabulary, reviewVocabulary);
@@ -103,6 +120,7 @@ function renderMainContent(options: ContentOptions): string {
   return `
     ${lessonSection}
     ${activitySections}
+    ${summarySectionHtml}
     ${vocabSection}
   `;
 }
@@ -114,7 +132,8 @@ function renderMainContent(options: ContentOptions): string {
 function renderLessonSection(parsed: ParsedModule, nextSection: string): string {
   const { frontmatter, sections, rawMarkdown } = parsed;
 
-  const lessonSections = sections.filter(s => !['activities', 'vocabulary'].includes(s.type));
+  // Exclude activities, vocabulary, and summary (summary is rendered separately after activities)
+  const lessonSections = sections.filter(s => !['activities', 'vocabulary', 'summary'].includes(s.type));
 
   let contentHtml = '';
   if (lessonSections.length > 0) {
@@ -148,6 +167,23 @@ function renderSectionCard(section: Section): string {
       <h3>${icon}${escapeHtml(section.title)}</h3>
       <div class="md-content">${markdownToHtml(section.content)}</div>
     </div>
+  `;
+}
+
+/**
+ * Render the summary section (displayed after activities, before vocabulary)
+ */
+function renderSummarySection(section: Section, nextSection: string): string {
+  return `
+    <section id="summary" class="section">
+      <div class="card section-summary">
+        <h3>📋 ${escapeHtml(section.title)}</h3>
+        <div class="md-content">${markdownToHtml(section.content)}</div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('${nextSection}')">Vocabulary →</button>
+      </div>
+    </section>
   `;
 }
 

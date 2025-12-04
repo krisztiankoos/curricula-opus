@@ -17,9 +17,11 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 | A1 | 1-30 | 15 min | 45 min | **1h** | 15-20 | 6 | 10 |
 | A2 | 31-60 | 20 min | 45 min | **1h+** | 20-25 | 8 | 10 |
 | A2+ | 61-80 | 25 min | 60 min | **1.5h** | 35-40 | 10 | 15 |
-| B1 | 81-160 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
-| B2 | 161-310 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
-| C1 | 311-430 | 45 min | 90 min | **2h+** | 30-35 | 14 | 20 |
+| B1 | 81-120 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
+| B1+ | 121-160 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
+| B2 | 161-200 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
+| B2+ | 201-240 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
+| C1 | 241+ | 45 min | 90 min | **2h+** | 30-35 | 14 | 20 |
 
 ### Activity Type Priority
 
@@ -48,7 +50,9 @@ Activity sentences must follow CEFR complexity progression:
 | A2 | 6-8 | 8-10 | Simple sentences + connectors: `Я завжди даю мамі квіти на свято.` |
 | A2+ | 8-10 | 10-12 | Subordinate clauses begin: `Він каже, що хоче допомогти своїй сестрі.` |
 | B1 | 10-14 | 12-16 | Complex sentences, conditionals: `Якби я мав більше часу, я б допоміг тобі з роботою.` |
+| B1+ | 10-14 | 12-16 | Extended complexity, participles: `Прочитавши статтю, він зрозумів суть проблеми.` |
 | B2 | 12-16 | 14-18 | Sophisticated structures, passive: `Було вирішено, що проєкт буде завершено до кінця місяця.` |
+| B2+ | 12-16 | 14-18 | Advanced stylistic variation: `Варто зазначити, що результати перевершили очікування.` |
 
 ### Complexity Progression Principles
 
@@ -70,17 +74,29 @@ Activity sentences must follow CEFR complexity progression:
    - Multiple modifiers
    - Example: `Дівчина, яка працює в цьому офісі, дуже добре говорить англійською.` (10 words)
 
-4. **B1 (Modules 81-140)**: Integration
+4. **B1 (Modules 81-120)**: Integration
    - Conditional sentences (якщо, якби)
    - Reported speech
    - Complex time expressions
    - Example: `Якби я знав про цю проблему раніше, я б обов'язково допоміг тобі її вирішити.` (14 words)
 
-5. **B2 (Modules 141-190)**: Sophistication
+5. **B1+ (Modules 121-160)**: Consolidation
+   - All B1 structures with increased complexity
+   - Adverbial participles (дієприслівники)
+   - Extended subordinate clauses
+   - Example: `Прочитавши цю статтю, я зрозумів, чому ця проблема є такою важливою для суспільства.` (12 words)
+
+6. **B2 (Modules 161-200)**: Sophistication
    - Passive constructions
    - Abstract vocabulary
    - Nuanced connectors
    - Example: `Незважаючи на те, що проєкт був складним, команда успішно завершила його вчасно.` (12 words)
+
+7. **B2+ (Modules 201-240)**: Advanced Fluency
+   - All B2 structures with increased nuance
+   - Stylistic variation
+   - Register awareness
+   - Example: `Варто зазначити, що дане дослідження проводилось з урахуванням усіх методологічних вимог.` (10 words)
 
 ### Content Depth Indicators
 
@@ -340,6 +356,7 @@ Modules should include **contextual boxes** that make learning memorable and eng
 | Fun Fact | 🎯 | Memorable tidbits | "The word 'Козак' (Cossack) means 'free man'" |
 | Language Link | 🔗 | Connections to English | "'Borsch' entered English from Ukrainian, not Russian" |
 | Real World | 🌍 | Modern relevance | "These words appear daily in Ukrainian news" |
+| Pop Culture Moment | 🎬 | Movies, music, memes | "Groot would say 'Я є Ґрут' - but we teach real sentences!" |
 
 ### Box Format in Markdown
 
@@ -375,23 +392,61 @@ Modules should include **contextual boxes** that make learning memorable and eng
 - Ukrainian unique letters
 - Why Ukrainian sounds different from Russian
 - Famous Ukrainian words in English (steppe, borsch)
+- 🎬 Pop culture: How movie/game characters would speak Ukrainian
 
 **A2 (Grammar Expansion):**
 - How Ukrainian cases compare to Latin/German
 - Why aspect is "the soul of Slavic languages"
 - Historical reasons for grammatical features
+- 🎬 Pop culture: Famous quotes translated to Ukrainian
 
 **B1-B2 (Intermediate):**
 - Language politics and identity
 - Regional dialects and their history
 - Ukrainian literary tradition
 - Famous polyglots who learned Ukrainian
+- 🎬 Pop culture: Ukrainian music, films, memes
 
 **C1+ (Advanced):**
 - Linguistic research about Ukrainian
 - Evolution of Ukrainian over centuries
 - Influence of other languages
 - Debates in modern Ukrainian linguistics
+- 🎬 Pop culture: Subtitling challenges, dubbing culture
+
+### Pop Culture Moment Guidelines
+
+**🎬 Pop Culture Moments** connect Ukrainian to movies, music, games, and internet culture. They make learning memorable and shareable.
+
+**Good pop culture references:**
+- Internationally known (Marvel, Star Wars, Harry Potter)
+- Popular in Ukraine: Lord of the Rings, The Witcher, S.T.A.L.K.E.R. series
+- Video games with Ukrainian connections (S.T.A.L.K.E.R., Metro series - both made by Ukrainian studios!)
+- Easy to translate/explain
+- Make a teaching point (grammar, pronunciation, culture)
+- Self-aware humor (like the Groot example about sentence length)
+
+**Ukrainian pop culture gold:**
+- **Lord of the Rings** - "орки" (orcs) became wartime slang; Tolkien's languages resonate with Slavic speakers
+- **The Witcher** - Slavic mythology, hugely popular; Netflix series has excellent Ukrainian dub
+- **S.T.A.L.K.E.R.** - Made by GSC Game World (Kyiv); set in Chornobyl zone; iconic Ukrainian game
+- **Metro 2033/Exodus** - Made by 4A Games (Kyiv); post-apocalyptic; Ukrainian voice acting
+- **Cossacks** - Classic strategy game series by GSC Game World
+
+**Ideas for pop culture boxes:**
+- How would [character] say this in Ukrainian?
+- Famous movie quotes in Ukrainian
+- Ukrainian songs that teach grammar patterns
+- Viral Ukrainian memes explained
+- Video game localization quirks
+- How Ukrainian dubbing differs from subtitles
+
+**Format:**
+```markdown
+> 🎬 **Pop Culture Moment: [Reference]**
+>
+> [Interesting observation about Ukrainian through pop culture lens]
+```
 
 ---
 

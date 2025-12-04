@@ -562,7 +562,8 @@ function main(): void {
   let results: EnrichResult[];
 
   if (moduleNum) {
-    const modulePath = path.join(curriculumPath, 'modules', `module-${moduleNum}.md`);
+    const paddedNum = moduleNum.toString().padStart(2, '0');
+    const modulePath = path.join(curriculumPath, 'modules', `module-${paddedNum}.md`);
     if (!fs.existsSync(modulePath)) {
       console.error(`Module not found: ${modulePath}`);
       process.exit(1);

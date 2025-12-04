@@ -13,8 +13,10 @@ This plan defines activity requirements for each CEFR level with progressive com
 | A1 | 1-30 | 6 | 3-6 words | 1 | Gender, Basic cases, Present tense |
 | A2 | 31-60 | 8 | 6-10 words | 1-2 | All cases, Past/Future, Aspect intro |
 | A2+ | 61-80 | 10 | 8-14 words | 2 | Aspect mastery, Subordinate clauses |
-| B1 | 81-140 | 12 | 12-18 words | 2-3 | Conditionals, Participles, Indirect speech |
-| B2 | 141-190 | 15 | 15-25 words | 3-4 | Literary style, Register, Advanced syntax |
+| B1 | 81-120 | 12 | 12-18 words | 2-3 | Conditionals, Participles, Indirect speech |
+| B1+ | 121-160 | 12 | 12-18 words | 2-3 | Participles, Contemporary Ukraine, Authentic texts |
+| B2 | 161-200 | 15 | 15-25 words | 3-4 | Literary style, Register, Advanced syntax |
+| B2+ | 201-240 | 15 | 15-25 words | 3-4 | History, Biographies, Advanced skills |
 
 ---
 
@@ -571,7 +573,9 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ---
 
-## B1 Level (Modules 81-140) — Threshold
+## B1/B1+ Level (Modules 81-160) — Threshold
+
+> **Note:** B1 (81-120) and B1+ (121-160) share similar activity requirements. B1+ modules include more contemporary Ukraine content and authentic texts.
 
 ### CEFR B1 Can-Do Statements
 - Can deal with most situations likely to arise while travelling
@@ -821,7 +825,9 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ---
 
-## B2 Level (Modules 141-190) — Vantage
+## B2/B2+ Level (Modules 161-240) — Vantage
+
+> **Note:** B2 (161-200) and B2+ (201-240) share similar activity requirements. B2+ modules focus on Ukrainian history, biographies, and advanced skills.
 
 ### CEFR B2 Can-Do Statements
 - Can interact with a degree of fluency and spontaneity
@@ -1126,13 +1132,15 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ### Per-Module Requirements
 
-| Level | Activities | Items Each | Total Items/Module |
-|-------|------------|------------|-------------------|
-| A1 | 6 | 10 | 60 |
-| A2 | 8 | 10 | 80 |
-| A2+ | 10 | 10 | 100 |
-| B1 | 12 | 10 | 120 |
-| B2 | 15 | 10 | 150 |
+| Level | Modules | Activities | Items Each | Total Items/Module |
+|-------|---------|------------|------------|-------------------|
+| A1 | 1-30 | 6 | 10 | 60 |
+| A2 | 31-60 | 8 | 10 | 80 |
+| A2+ | 61-80 | 10 | 10 | 100 |
+| B1 | 81-120 | 12 | 10 | 120 |
+| B1+ | 121-160 | 12 | 10 | 120 |
+| B2 | 161-200 | 15 | 10 | 150 |
+| B2+ | 201-240 | 15 | 10 | 150 |
 
 ### Quality Standards
 

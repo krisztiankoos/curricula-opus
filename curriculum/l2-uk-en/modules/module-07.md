@@ -61,7 +61,7 @@ To ask a yes/no question, add **Чи** at the beginning:
 
 > 📜 **History Bite: Where Чи Comes From**
 >
-> The particle **чи** comes from Proto-Slavic *či, related to the word **що** (what). It originally meant "whether" and still does in some contexts: "Не знаю, чи він прийде" (I don't know whether he'll come).
+> The particle **чи** comes from Proto-Slavic *či, related to the word **що** (what). It originally meant "whether" and still works this way in questions!
 
 ### Question Words
 
@@ -70,13 +70,12 @@ To ask a yes/no question, add **Чи** at the beginning:
 | що | shcho | what | Що це? (What is this?) |
 | хто | khto | who | Хто це? (Who is this?) |
 | де | de | where (location) | Де ти? (Where are you?) |
-| куди | kudy | where (direction) | Куди ти йдеш? (Where are you going?) |
+| куди | kudy | where (direction) | Куди ти? (Where are you going?) |
 | звідки | zvidky | where from | Звідки ти? (Where are you from?) |
 | коли | koly | when | Коли? (When?) |
 | чому | chomu | why | Чому? (Why?) |
 | як | yak | how | Як справи? (How are things?) |
 | скільки | skilky | how much/many | Скільки? (How much?) |
-| який/яка/яке | yakyi/yaka/yake | which/what kind | Яка це книга? (What book is this?) |
 
 > 🔗 **Language Link: Question Word Patterns**
 >
@@ -151,9 +150,9 @@ Ukrainian requires **multiple negatives** in a sentence:
 
 **Using question words:**
 - ___ це? (What is this?) → Що це?
-- ___ ти живеш? (Where do you live?) → Де ти живеш?
-- ___ ти йдеш? (Where are you going?) → Куди ти йдеш?
-- ___ це коштує? (How much does this cost?) → Скільки це коштує?
+- ___ ти? (Where are you?) → Де ти?
+- ___ ти? (Where are you going?) → Куди ти?
+- ___ це? (How much is this?) → Скільки це?
 
 ### Negation Practice
 
@@ -164,7 +163,7 @@ Ukrainian requires **multiple negatives** in a sentence:
 
 **Double negatives:**
 - I know nothing. → Я нічого не знаю.
-- Nobody is here. → Ніхто тут не є. / Тут нікого немає.
+- Nobody reads. → Ніхто не читає.
 - I never work. → Я ніколи не працюю.
 
 > 🌍 **Real World: Common Questions**
@@ -172,9 +171,9 @@ Ukrainian requires **multiple negatives** in a sentence:
 > Questions you'll use every day:
 > - **Як справи?** - How are things? (casual greeting)
 > - **Що нового?** - What's new?
-> - **Скільки коштує?** - How much does it cost?
-> - **Де туалет?** - Where is the toilet?
-> - **Чи ви говорите англійською?** - Do you speak English?
+> - **Скільки це?** - How much is this?
+> - **Де це?** - Where is this?
+> - **Чи ти знаєш?** - Do you know?
 > - **Чому?** - Why? (very useful!)
 
 ## production
@@ -183,20 +182,25 @@ Ukrainian requires **multiple negatives** in a sentence:
 
 Form questions about:
 1. Someone's name: ___ тебе звати?
+   > [!answer] Як
 2. Someone's origin: ___ ти?
+   > [!answer] Звідки
 3. Location of something: ___ моя книга?
-4. Time: ___ ми зустрінемося?
-5. Reason: ___ ти не прийшов?
+   > [!answer] Де
+4. Time: ___ ти тут?
+   > [!answer] Коли
+5. Reason: ___ ти не знаєш?
+   > [!answer] Чому
 
 ### Negate These Statements
 
 Turn positive to negative:
 1. Я все знаю.
-   > [!answer] Я ___ не знаю.
+   > [!answer] Я нічого не знаю.
 2. Він завжди працює.
-   > [!answer] Він ___ не працює.
-3. Хтось тут є.
-   > [!answer] ___ тут не є.
+   > [!answer] Він ніколи не працює.
+3. Хтось тут читає.
+   > [!answer] Ніхто тут не читає.
 
 ---
 
@@ -208,14 +212,14 @@ Turn positive to negative:
 | What | Що | What | Що це? |
 | Who | Хто | Who | Хто там? |
 | Where (location) | Де | Where | Де ти? |
-| Where (direction) | Куди | Where to | Куди йдеш? |
+| Where (direction) | Куди | Where to | Куди ти? |
 | When | Коли | When | Коли? |
 | Why | Чому | Why | Чому ні? |
 | How | Як | How | Як справи? |
 | Negation | не + verb | not | Я не знаю |
 | Nothing | нічого | nothing | нічого не знаю |
 | Nobody | ніхто | nobody | ніхто не знає |
-| Never | ніколи | never | ніколи не був |
+| Never | ніколи | never | ніколи не читаю |
 
 ---
 
@@ -233,19 +237,19 @@ Turn positive to negative:
    > [!answer] Де
    > [!options] Що | Хто | Де | Куди
 
-3. ___ ти йдеш? (Where are you going?)
-   > [!answer] Куди
+3. ___ ти зараз? (Where are you now?)
+   > [!answer] Де
    > [!options] Де | Куди | Звідки | Коли
 
 4. ___ ти? (Where are you from?)
    > [!answer] Звідки
    > [!options] Де | Куди | Звідки | Як
 
-5. ___ ти не прийшов? (Why didn't you come?)
+5. ___ ти не знаєш? (Why don't you know?)
    > [!answer] Чому
    > [!options] Що | Хто | Чому | Коли
 
-6. ___ коштує? (How much does it cost?)
+6. ___ це? (How much is this?)
    > [!answer] Скільки
    > [!options] Що | Як | Скільки | Чому
 
@@ -261,53 +265,69 @@ Turn positive to negative:
    > [!answer] ніколи
    > [!options] ніхто | нічого | ніде | ніколи
 
-10. ___ ти говориш українською? (Do you speak Ukrainian?)
-   > [!answer] Чи
-   > [!options] Що | Чи | Як | Де
+10. ___ ти знаєш українську? (Do you know Ukrainian?)
+    > [!answer] Чи
+    > [!options] Що | Чи | Як | Де
+
+11. ___ тебе звати? (What is your name?)
+   > [!answer] Як
+   > [!options] Що | Хто | Як | Де
+
+12. ___ тут немає. (There is nothing here.)
+   > [!answer] Нічого
+   > [!options] Ніхто | Нічого | Ніде | Ніколи
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order.
+> Arrange the words in the correct order. Use 5-7 words per sentence.
 
-1. це / Що
-   > [!answer] Що це?
-   > (What is this?)
+1. зараз / ти / Що / читаєш / тут
+   > [!answer] Що ти читаєш тут зараз?
+   > (What are you reading here now?) [5 words]
 
-2. ти / Де
-   > [!answer] Де ти?
-   > (Where are you?)
+2. сьогодні / Де / ти / працюєш / тут
+   > [!answer] Де ти працюєш тут сьогодні?
+   > (Where do you work here today?) [5 words]
 
-3. йдеш / Куди / ти
-   > [!answer] Куди ти йдеш?
-   > (Where are you going?)
+3. знаєш / Куди / ти / це / добре
+   > [!answer] Куди ти це добре знаєш?
+   > (Where do you know this well?) [5 words]
 
-4. ти / Звідки
-   > [!answer] Звідки ти?
-   > (Where are you from?)
+4. він / Звідки / тут / зараз
+   > [!answer] Звідки він тут зараз?
+   > (Where is he from here now?) [4 words]
 
-5. коштує / Скільки / це
-   > [!answer] Скільки це коштує?
-   > (How much does it cost?)
+5. це / Скільки / тут / зараз
+   > [!answer] Скільки це тут зараз?
+   > (How much is this here now?) [4 words]
 
-6. знаю / не / Я
-   > [!answer] Я не знаю.
-   > (I don't know.)
+6. знаю / не / Я / цього / добре
+   > [!answer] Я добре не знаю цього.
+   > (I don't know this well.) [5 words]
 
-7. не / Ніхто / знає
-   > [!answer] Ніхто не знає.
-   > (Nobody knows.)
+7. не / Ніхто / тут / знає / нічого
+   > [!answer] Ніхто тут нічого не знає.
+   > (Nobody here knows anything.) [5 words]
 
-8. не / нічого / Я / знаю
-   > [!answer] Я нічого не знаю.
-   > (I don't know anything.)
+8. не / нічого / Я / знаю / про / це
+   > [!answer] Я нічого не знаю про це.
+   > (I don't know anything about this.) [6 words]
 
-9. не / Вона / ніколи / читає
-   > [!answer] Вона ніколи не читає.
-   > (She never reads.)
+9. не / Вона / ніколи / читає / тут / книги
+   > [!answer] Вона ніколи не читає тут книги.
+   > (She never reads books here.) [6 words]
 
-10. говориш / Чи / українською / ти
-   > [!answer] Чи ти говориш українською?
-   > (Do you speak Ukrainian?)
+10. знаєш / Чи / українську / ти / добре / вже
+   > [!answer] Чи ти вже добре знаєш українську?
+   > (Do you already know Ukrainian well?) [6 words]
+
+11. тут / ніколи / ніхто / не / працює / добре
+    > [!answer] Тут ніхто ніколи не працює добре.
+    > (Nobody ever works well here.) [6 words]
+
+12. Чому / ти / сьогодні / не / знаєш / це
+    > [!answer] Чому ти сьогодні не знаєш це?
+    > (Why don't you know this today?) [6 words]
 
 ## match-up: Match the Pairs
 
@@ -325,6 +345,8 @@ Turn positive to negative:
 | ніхто | nobody |
 | нічого | nothing |
 | ніколи | never |
+| завжди | always |
+| часто | often |
 
 ## group-sort: Question Word Categories
 
@@ -347,7 +369,7 @@ Turn positive to negative:
 ### Identity/Thing Questions
 - хто (who)
 - що (what)
-- який/яка/яке (which/what kind)
+- чий/чия/чиє (whose)
 
 ### Quantity Questions
 - скільки (how much/many)
@@ -405,11 +427,11 @@ Turn positive to negative:
    - [ ] Нічого я знаю.
    > Double negative: Я НІЧОГО НЕ знаю
 
-8. Which is correct: "Where are you going?"
-   - [ ] Де ти йдеш?
-   - [x] Куди ти йдеш?
-   - [ ] Звідки ти йдеш?
-   - [ ] Коли ти йдеш?
+8. Which question word asks about direction?
+   - [ ] Де
+   - [x] Куди
+   - [ ] Звідки
+   - [ ] Коли
    > "Куди" for direction/destination
 
 9. In "Чи ти студент?", what does "Чи" do?
@@ -419,12 +441,26 @@ Turn positive to negative:
    - [ ] Makes it past tense
    > "Чи" is the question particle for yes/no questions
 
-10. How do you ask "How much does this cost?"
-    - [x] Скільки це коштує?
-    - [ ] Що це коштує?
-    - [ ] Чому це коштує?
-    - [ ] Де це коштує?
+10. How do you ask "How much is this?"
+    - [x] Скільки це?
+    - [ ] Що це?
+    - [ ] Чому це?
+    - [ ] Де це?
     > Скільки = how much/many (quantity)
+
+11. "Як тебе звати?" asks about:
+    - [ ] Where you live
+    - [x] Your name
+    - [ ] Your age
+    - [ ] Your job
+    > Як тебе звати? = What is your name? (literally "How do they call you?")
+
+12. How do you say "Nobody reads here"?
+    - [ ] Тут хтось читає.
+    - [x] Ніхто тут не читає.
+    - [ ] Тут читає ніхто.
+    - [ ] Не читає хтось тут.
+    > Double negative: НІХТО + НЕ + verb
 
 ## true-false: Question & Negation Rules
 
@@ -460,6 +496,83 @@ Turn positive to negative:
 - [x] The negative pronoun goes BEFORE "не + verb": "Я нічого не знаю".
    > Correct! Negative word order: [neg pronoun] + не + [verb].
 
+- [x] "Скільки" is used to ask about quantity (how much/many).
+   > Correct! Скільки це? (How much is this?)
+
+- [ ] "Хто це?" and "Що це?" can be used interchangeably.
+   > Incorrect. Хто = who (for people), Що = what (for things).
+
+## match-up: Negative Forms
+
+> Match each positive word with its negative counterpart.
+
+| Left | Right |
+|------|-------|
+| хтось (someone) | ніхто (nobody) |
+| щось (something) | нічого (nothing) |
+| десь (somewhere) | ніде (nowhere) |
+| колись (sometime) | ніколи (never) |
+| якийсь (some kind) | ніякий (no kind) |
+| завжди (always) | ніколи (never) |
+| всюди (everywhere) | ніде (nowhere) |
+| все (everything) | нічого (nothing) |
+| всі (everyone) | ніхто (nobody) |
+| кожен (each) | жоден (none) |
+| якось (somehow) | ніяк (no way) |
+| чомусь (for some reason) | без причини (for no reason) |
+
+## fill-in: Double Negation
+
+> Complete each sentence with the correct negative word. Remember: Ukrainian requires double negatives!
+
+1. ___ не знає це слово. (Nobody knows this word.)
+   > [!answer] Ніхто
+   > [!options] Ніхто | Нічого | Ніде | Ніколи
+
+2. Я ___ не знаю. (I don't know anything.)
+   > [!answer] нічого
+   > [!options] ніхто | нічого | ніде | ніколи
+
+3. Вона ___ не читає книги. (She never reads books.)
+   > [!answer] ніколи
+   > [!options] ніхто | нічого | ніде | ніколи
+
+4. ___ не працює тут. (Nobody works here.)
+   > [!answer] Ніхто
+   > [!options] Ніхто | Нічого | Ніде | Ніколи
+
+5. Він ___ не пише. (He never writes.)
+   > [!answer] ніколи
+   > [!options] ніхто | нічого | ніде | ніколи
+
+6. Ми ___ не знаємо про це. (We don't know anything about this.)
+   > [!answer] нічого
+   > [!options] ніхто | нічого | ніде | ніколи
+
+7. ___ тут не читає. (Nobody reads here.)
+   > [!answer] Ніхто
+   > [!options] Ніхто | Нічого | Ніде | Ніколи
+
+8. Вони ___ не працюють. (They never work.)
+   > [!answer] ніколи
+   > [!options] ніхто | нічого | ніде | ніколи
+
+9. Я ___ не слухаю музику. (I never listen to music.)
+   > [!answer] ніколи
+   > [!options] ніхто | нічого | ніде | ніколи
+
+10. ___ не знає українську. (Nobody knows Ukrainian.)
+    > [!answer] Ніхто
+    > [!options] Ніхто | Нічого | Ніде | Ніколи
+
+11. Вона ___ не пише листи. (She never writes letters.)
+    > [!answer] ніколи
+    > [!options] ніхто | нічого | ніде | ніколи
+
+12. Ми ___ тут не знаємо. (We don't know anything here.)
+    > [!answer] нічого
+    > [!options] ніхто | нічого | ніде | ніколи
+
 ---
 
 # Vocabulary
@@ -472,20 +585,20 @@ Turn positive to negative:
 | коли | /kɔˈlɪ/ | when | adv | - | Time question |
 | чому | /tʃɔˈmu/ | why | adv | - | Reason question |
 | скільки | /ˈskʲilʲkɪ/ | how much/many | adv | - | Quantity question |
-| який | /jɑˈkɪj/ | which/what kind (m) | pron | m | Agrees with noun |
-| яка | /jɑˈkɑ/ | which/what kind (f) | pron | f | Agrees with noun |
-| яке | /jɑˈkɛ/ | which/what kind (n) | pron | n | Agrees with noun |
+| чий | /tʃɪj/ | whose (m) | pron | m | Possession question |
+| чия | /tʃɪˈjɑ/ | whose (f) | pron | f | Possession question |
+| чиє | /tʃɪˈjɛ/ | whose (n) | pron | n | Possession question |
 | ніхто | /nʲixˈtɔ/ | nobody | pron | - | Requires не with verb |
 | ніщо | /nʲiʃˈtʃɔ/ | nothing | pron | - | Requires не with verb |
+| нічого | /nʲiˈtʃɔɦɔ/ | nothing (genitive) | pron | - | Я нічого не знаю |
 | ніде | /nʲiˈdɛ/ | nowhere | adv | - | Requires не with verb |
 | ніколи | /nʲiˈkɔlɪ/ | never | adv | - | Requires не with verb |
-| ніякий | /nʲijɑˈkɪj/ | no kind of | pron | m | Requires не with verb |
 | завжди | /ˈzɑvʒdɪ/ | always | adv | - | Frequency |
 | часто | /ˈtʃɑstɔ/ | often | adv | - | Frequency |
 | іноді | /iˈnɔdʲi/ | sometimes | adv | - | Frequency |
 | рідко | /ˈrʲidkɔ/ | rarely | adv | - | Frequency |
-| йти | /jtɪ/ | to go (on foot) | verb | - | Motion: іду, йдеш, йде... |
-| коштувати | /kɔʃtuˈvɑtɪ/ | to cost | verb | - | Class I: коштує (it costs) |
+| так | /tɑk/ | yes | part | - | Affirmative answer |
+| ні | /nʲi/ | no | part | - | Negative answer |
 ---
 
 # Question Patterns
@@ -501,10 +614,10 @@ Turn positive to negative:
 
 | Pattern | Example | Translation |
 |---------|---------|-------------|
-| Що + verb? | Що ти робиш? | What are you doing? |
+| Що + verb? | Що ти читаєш? | What are you reading? |
 | Хто + verb? | Хто це знає? | Who knows this? |
 | Де + subject? | Де твоя книга? | Where is your book? |
-| Куди + motion verb? | Куди ти йдеш? | Where are you going? |
+| Куди + subject? | Куди ти зараз? | Where are you going now? |
 
 ## Negation Patterns
 

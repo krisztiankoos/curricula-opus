@@ -62,7 +62,7 @@ The verb "to be" just **doesn't exist** in present tense Ukrainian! This is call
 
 ### Це = This Is
 
-The word **Це** (tse) means "this" or "this is":
+The word **Це** means "this" or "this is":
 
 | Ukrainian | Literal | English |
 |-----------|---------|---------|
@@ -117,24 +117,23 @@ In Ukrainian, nouns for people often change gender!
 | англієць | англійка | English |
 
 #### 2. Professions
-Some professions have distinct female forms, others use the masculine form for official titles.
+Some professions have distinct female forms, others use the masculine form for both genders.
 
 | Masculine | Feminine | English |
 |-----------|----------|---------|
 | студент | студентка | student |
-| вчитель | вчителька | teacher |
-| лікар | лікарка | doctor |
 | програміст | (програміст) | programmer |
 | менеджер | (менеджер) | manager |
 | дизайнер | (дизайнер) | designer |
 | інженер | (інженер) | engineer |
 
-> ⚡ **Pro Tip: Modern Feminitives**
+> ⚡ **Pro Tip: Modern Loanwords**
 >
-> Historically, official titles used the masculine form (Вона — лікар).
-> However, modern Ukrainian is bringing back **feminitives** (female forms).
-> You will hear both "Вона лікар" (formal) and "Вона лікарка" (distinct).
-> "Студентка" and "Вчителька" are standard.
+> Many modern profession words (borrowed from English) use the same form for both genders:
+> - "Вона менеджер" (She is a manager)
+> - "Вона програміст" (She is a programmer)
+>
+> "Студентка" is the standard feminine form for "student."
 
 ### Making Sentences
 
@@ -145,11 +144,11 @@ Without "is," sentence structure is simple:
 | Subject | What They Are | Full Sentence | English |
 |---------|---------------|---------------|---------|
 | Я | студент | Я студент. | I am a student. |
-| Ти | вчитель? | Ти вчитель? | Are you a teacher? |
+| Ти | інженер? | Ти інженер? | Are you an engineer? |
 | Він | українець. | Він українець. | He is Ukrainian. |
-| Вона | лікарка. | Вона лікарка. | She is a doctor. |
-| Ми | друзі. | Ми друзі. | We are friends. |
-| Вони | туристи. | Вони туристи. | They are tourists. |
+| Вона | студентка. | Вона студентка. | She is a student. |
+| Ми | студенти. | Ми студенти. | We are students. |
+| Вони | програмісти. | Вони програмісти. | They are programmers. |
 
 > 💡 **Did You Know?**
 >
@@ -175,9 +174,9 @@ Without "is," sentence structure is simple:
 Practice combining subjects with descriptions:
 
 **With Це:**
-- Це + мій друг = Це мій друг. (This is my friend.)
-- Це + ваша книга? = Це ваша книга? (Is this your book?)
-- Це + добре = Це добре. (This is good.)
+- Це + студент = Це студент. (This is a student.)
+- Це + він = Це він. (This is him.)
+- Це + тут = Це тут. (It's here.)
 
 **With pronouns:**
 - Я + з України = Я з України. (I'm from Ukraine.)
@@ -187,12 +186,12 @@ Practice combining subjects with descriptions:
 ### Question and Answer Patterns
 
 **Pattern 1: Хто це? (Who is this?)**
-- Хто це? - Це мій брат. (Who is this? - This is my brother.)
-- Хто вона? - Вона моя сестра. (Who is she? - She is my sister.)
+- Хто це? - Це студент. (Who is this? - This is a student.)
+- Хто вона? - Вона студентка. (Who is she? - She is a student.)
 
 **Pattern 2: Що це? (What is this?)**
 - Що це? - Це книга. (What is this? - This is a book.)
-- Що це? - Це яблуко. (What is this? - This is an apple.)
+- Що це? - Це вікно. (What is this? - This is a window.)
 
 > 🌍 **Real World: First Conversations**
 >
@@ -207,8 +206,8 @@ Practice combining subjects with descriptions:
 > A: Так, я студентка. А ти?
 > (Yes, I'm a student. And you?)
 >
-> B: Я вчитель.
-> (I'm a teacher.)
+> B: Я інженер.
+> (I'm an engineer.)
 >
 > Notice: no "am," no "are" - just subject + description!
 
@@ -231,7 +230,7 @@ Use "Це" to identify things around you:
 ### Make It a Question
 
 Turn these statements into questions (just add ?):
-- Це твоя книга. → Це твоя книга?
+- Це книга. → Це книга?
 - Він студент. → Він студент?
 - Вони українці. → Вони українці?
 
@@ -245,14 +244,6 @@ Turn these statements into questions (just add ?):
 
 ---
 
----
-
----
-
----
-
----
-
 # Activities
 
 ## fill-in: Complete the Sentences
@@ -261,89 +252,104 @@ Turn these statements into questions (just add ?):
 
 1. Він — ___. (He is an engineer.)
    > [!answer] інженер
-   > [!options] інженер | лікарка | студентка | вчителька
+   > [!options] інженер | студентка | програміст | менеджер
 
-2. Вона — ___. (She is a teacher.)
-   > [!answer] вчителька
-   > [!options] вчитель | вчителька | програміст | канадець
+2. Вона — ___. (She is a student.)
+   > [!answer] студентка
+   > [!options] студент | студентка | програміст | канадець
 
 3. Я — ___. (I am a designer.) [masculine context]
    > [!answer] дизайнер
-   > [!options] дизайнер | лікарка | американка | подруга
+   > [!options] дизайнер | студентка | американка | інженер
 
-4. Цей ___ - мій друг. (This guy is my friend.)
-   > [!answer] хлопець
-   > [!options] хлопець | дівчина | людина | чоловік
+4. Це ___. (This is he / This is him.)
+   > [!answer] він
+   > [!options] він | вона | ми | вони
 
 5. Ти — ___? (Are you American?) [to a female]
    > [!answer] американка
-   > [!options] американець | американка | англієць | канадець
+   > [!options] американець | американка | канадка | канадець
 
-6. Вони — ___. (They are doctors.)
-   > [!answer] лікарі
-   > [!options] лікар | лікарка | лікарі | вчитель
+6. Вони — ___. (They are students.)
+   > [!answer] студенти
+   > [!options] студент | студентка | студенти | інженер
 
-7. Це ___ людина. (This is a good person.)
-   > [!answer] добра
-   > [!options] добра | добрий | добре | добрі
+7. Це ___. (This is she / This is her.)
+   > [!answer] вона
+   > [!options] він | вона | ми | вони
 
-8. Ця ___ - моя сестра. (This girl is my sister.)
-   > [!answer] дівчина
-   > [!options] дівчина | хлопець | чоловік | студент
+8. Цей ___ — студент. (This guy is a student.)
+   > [!answer] хлопець
+   > [!options] дівчина | хлопець | людина | студент
 
 9. Вона — ___. (She is a programmer.)
    > [!answer] програміст
-   > [!options] програміст | програмістка | інженер | менеджер
+   > [!options] програміст | інженер | менеджер | дизайнер
    > (Profession nouns like "програміст" use same form for both genders)
 
-10. Це ___ книга. (This is my book.)
-    > [!answer] моя
-    > [!options] мій | моя | моє | мої
-    > (книга is feminine, so моя is required)
+10. Він — ___. (He is Ukrainian.) [male]
+    > [!answer] українець
+    > [!options] українець | українка | канадець | американець
+
+11. Ми — ___. (We are Ukrainians.)
+    > [!answer] українці
+    > [!options] українець | українка | українці | американці
+
+12. ___ це? (What is this?)
+    > [!answer] Що
+    > [!options] Хто | Що | Де | Як
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. Sentences range from 3-6 words.
+> Arrange the words in the correct order.
 
-1. вчитель / добрий / Він / мій
-   > [!answer] Він мій добрий вчитель.
-   > (He is my good teacher.) [4 words]
+1. студент / Він / а / інженер / я
+   > [!answer] Він студент, а я інженер.
+   > (He is a student, and I am an engineer.) [5 words]
 
-2. нова / лікарка / Вона / тут
-   > [!answer] Вона тут нова лікарка.
-   > (She is the new doctor here.) [4 words]
+2. американка / Вона / чи / українка / тут
+   > [!answer] Вона тут американка чи українка?
+   > (Is she American or Ukrainian here?) [5 words]
 
-3. канадець / Ти / чи / американець
-   > [!answer] Ти канадець чи американець?
-   > (Are you Canadian or American?) [4 words]
+3. канадець / Ти / чи / американець / там
+   > [!answer] Ти там канадець чи американець?
+   > (Are you Canadian or American there?) [5 words]
 
-4. людина / Він / дуже / добра
-   > [!answer] Він дуже добра людина.
-   > (He is a very good person.) [4 words]
+4. студентка / Це / а / студент / він
+   > [!answer] Це студентка, а він студент.
+   > (This is a [female] student, and he is a student.) [5 words]
 
-5. Я / тут / не / сьогодні
-   > [!answer] Я сьогодні не тут.
-   > (I am not here today.) [4 words]
+5. тут / Я / не / а / там
+   > [!answer] Я не тут, а там.
+   > (I am not here, but there.) [5 words]
 
-6. хлопець / там / той / Де
-   > [!answer] Де той хлопець там?
-   > (Where is that guy there?) [4 words]
+6. хлопець / Хто / це / чи / дівчина
+   > [!answer] Хто це, хлопець чи дівчина?
+   > (Who is this, a boy or a girl?) [5 words]
 
-7. українці / Ми / всі / тут
-   > [!answer] Ми всі тут українці.
-   > (We are all Ukrainians here.) [4 words]
+7. українці / Ми / всі / тут / чи / ні
+   > [!answer] Ми всі тут українці чи ні?
+   > (Are we all Ukrainians here or not?) [6 words]
 
-8. дизайнер / Я / а / вона / лікарка
-   > [!answer] Я дизайнер, а вона лікарка.
-   > (I'm a designer, and she's a doctor.) [5 words]
+8. дизайнер / Я / а / він / програміст / тут
+   > [!answer] Я дизайнер, а він тут програміст.
+   > (I'm a designer, and he is a programmer here.) [6 words]
 
-9. чоловік / Це / твій / чи / брат
-   > [!answer] Це твій чоловік чи брат?
-   > (Is this your husband or brother?) [5 words]
+9. канадка / Вона / чи / а / американка / ні
+   > [!answer] Вона канадка чи американка, а ні?
+   > (Is she Canadian or American, or not?) [6 words]
 
-10. дівчина / Вона / красива / дуже
-    > [!answer] Вона дуже красива дівчина.
-    > (She is a very beautiful girl.) [4 words]
+10. дівчина / Це / а / хлопець / там / він
+    > [!answer] Це дівчина, а він там хлопець.
+    > (This is a girl, and he is a boy there.) [6 words]
+
+11. інженер / Він / а / я / менеджер / тут
+    > [!answer] Він інженер, а я тут менеджер.
+    > (He is an engineer, and I am a manager here.) [6 words]
+
+12. студентка / Вона / а / він / студент / тут
+    > [!answer] Вона студентка, а він тут студент.
+    > (She is a student, and he is a student here.) [6 words]
 
 ## match-up: Match the Pairs
 
@@ -351,24 +357,24 @@ Turn these statements into questions (just add ?):
 
 | Left | Right |
 |------|-------|
-| вчитель | teacher (male) |
-| лікарка | doctor (female) |
+| це | this, this is |
 | людина | person, human |
-| чоловік | man, husband |
-| жінка | woman, wife |
 | хлопець | boy, guy |
 | дівчина | girl |
-| друг | friend (male) |
-| подруга | friend (female) |
+| студент | student (male) |
+| студентка | student (female) |
 | інженер | engineer |
+| програміст | programmer |
+| дизайнер | designer |
+| менеджер | manager |
+| українець | Ukrainian (male) |
+| американка | American (female) |
 
 ## group-sort: Profession Gender Forms
 
 > Sort these professions by whether they have distinct male/female forms.
 
 ### Distinct M/F Forms
-- вчитель / вчителька (teacher)
-- лікар / лікарка (doctor)
 - студент / студентка (student)
 - американець / американка (American)
 - канадець / канадка (Canadian)
@@ -379,21 +385,16 @@ Turn these statements into questions (just add ?):
 - інженер (engineer)
 - програміст (programmer)
 - дизайнер (designer)
-- директор (director)
-
-### Only Masculine Form Common
-- президент (president)
-- міністр (minister)
 
 ## quiz: Zero Copula & Gender Agreement
 
 > Test your understanding of Ukrainian sentence structure.
 
-1. How do you say "He is a doctor" in Ukrainian?
-   - [x] Він лікар.
-   - [ ] Він є лікар.
-   - [ ] Він лікарка.
-   - [ ] Він бути лікар.
+1. How do you say "He is an engineer" in Ukrainian?
+   - [x] Він інженер.
+   - [ ] Він є інженер.
+   - [ ] Він бути інженер.
+   - [ ] Він інженерка.
    > Ukrainian has zero copula - no "is" in present tense
 
 2. A woman says "I am Canadian." Which form is correct?
@@ -403,12 +404,12 @@ Turn these statements into questions (just add ?):
    - [ ] Я Канада.
    > Women use feminine nationality forms: канадка
 
-3. Which profession form is correct for "She is a teacher"?
-   - [ ] Вона вчитель.
-   - [x] Вона вчителька.
-   - [ ] Вона вчителі.
-   - [ ] Вона вчити.
-   > Feminine profession form: вчителька
+3. Which form is correct for "She is a student"?
+   - [ ] Вона студент.
+   - [x] Вона студентка.
+   - [ ] Вона студенти.
+   - [ ] Вона студентів.
+   > Feminine profession form: студентка
 
 4. How do you form a question from "Він студент"?
    - [x] Він студент? (rising intonation)
@@ -417,12 +418,12 @@ Turn these statements into questions (just add ?):
    - [ ] Студент він є?
    > Just add rising intonation - no word order change
 
-5. Which is correct for "This is my friend" (male friend)?
-   - [x] Це мій друг.
-   - [ ] Це моя друг.
-   - [ ] Це мій подруга.
-   - [ ] Це є мій друг.
-   > "друг" is masculine, so "мій" is used
+5. Which is correct for "This is a student" (male)?
+   - [x] Це студент.
+   - [ ] Це студентка.
+   - [ ] Це є студент.
+   - [ ] Це студенти.
+   > Male student form: студент (no copula needed)
 
 6. A man says "I am American." Which form is correct?
    - [x] Я американець.
@@ -431,7 +432,7 @@ Turn these statements into questions (just add ?):
    - [ ] Я американці.
    > Men use masculine nationality forms: американець
 
-7. What is missing in "Вона ___ лікарка" in everyday speech?
+7. What is missing in "Вона ___ студентка" in everyday speech?
    - [x] Nothing - zero copula
    - [ ] є
    - [ ] бути
@@ -452,28 +453,42 @@ Turn these statements into questions (just add ?):
    - [ ] Як це?
    > "Хто" = who (for people)
 
-10. Which is correct for "This is your friend" (female friend)?
-    - [ ] Це твій подруга.
-    - [x] Це твоя подруга.
-    - [ ] Це твоє подруга.
-    - [ ] Це твої подруга.
-    > "подруга" is feminine, so "твоя" is used
+10. Which is correct for "She is Ukrainian" (female)?
+    - [ ] Вона українець.
+    - [x] Вона українка.
+    - [ ] Вона український.
+    - [ ] Вона українці.
+    > Women use feminine nationality forms: українка
+
+11. Which nationality word is correct for a woman: "I am Ukrainian"?
+    - [ ] Я українець.
+    - [x] Я українка.
+    - [ ] Я український.
+    - [ ] Я Україна.
+    > Women use feminine nationality forms: українка
+
+12. Which pronoun correctly replaces "студент" (student)?
+    - [x] Він (he)
+    - [ ] Вона (she)
+    - [ ] Воно (it)
+    - [ ] Вони (they)
+    > "студент" is masculine, replaced by Він
 
 ## true-false: Grammar Rules
 
 > Determine if each statement about Ukrainian grammar is true or false.
 
-- [x] Ukrainian has zero copula - "He is a doctor" = "Він лікар" (no "is").
+- [x] Ukrainian has zero copula - "He is a student" = "Він студент" (no "is").
    > Correct! Present tense doesn't use "є" (to be).
 
 - [ ] Male and female profession forms are always identical.
-   > Incorrect. Many have distinct forms: вчитель/вчителька, лікар/лікарка.
+   > Incorrect. Many have distinct forms: студент/студентка, українець/українка.
 
 - [x] Nationalities also have masculine and feminine forms.
    > Correct! американець/американка, канадець/канадка, etc.
 
-- [ ] "Це мій друг" and "Це моя друг" are both correct.
-   > Incorrect. "друг" is masculine, requires "мій" not "моя".
+- [ ] "Він студентка" and "Вона студентка" are both correct.
+   > Incorrect. "студентка" is feminine, requires "Вона" not "Він".
 
 - [x] To form a yes/no question, you can just use rising intonation.
    > Correct! "Він студент?" with rising tone = question.
@@ -481,8 +496,8 @@ Turn these statements into questions (just add ?):
 - [ ] The word order must change to form questions.
    > Incorrect. Ukrainian keeps SVO order; intonation or "Чи" marks questions.
 
-- [x] "-ка" is a common feminine profession suffix (вчитель → вчителька).
-   > Correct! Many professions add -ка for feminine form.
+- [x] "-ка" is a common feminine suffix (студент → студентка).
+   > Correct! Many words add -ка for feminine form.
 
 - [x] Some professions (like "менеджер") are used for both genders.
    > Correct! Modern loanwords often lack distinct feminine forms.
@@ -492,6 +507,78 @@ Turn these statements into questions (just add ?):
 
 - [x] "Тут" (here) and "там" (there) function like English equivalents.
    > Correct! Location words work similarly.
+
+- [x] "Подруга" is the feminine form of "друг" (friend).
+   > Correct! друг (male friend) / подруга (female friend).
+
+- [ ] The word "це" changes based on the gender of the noun.
+   > Incorrect. "Це" is invariable - it never changes form.
+
+## match-up: Gender Pairs
+
+> Match the masculine form with its feminine form.
+
+| Left | Right |
+|------|-------|
+| українець | українка |
+| американець | американка |
+| канадець | канадка |
+| студент | студентка |
+| хлопець | дівчина |
+| він | вона |
+
+## fill-in: Zero Copula Sentences
+
+> Complete each sentence without "is" - Ukrainian zero copula!
+
+1. Він ___. (He is an engineer)
+   > [!answer] інженер
+   > [!options] інженер | студентка | менеджер | програміст
+
+2. Вона ___. (She is a student - female form)
+   > [!answer] студентка
+   > [!options] студент | студентка | студенти | дизайнер
+
+3. Ми ___. (We are students)
+   > [!answer] студенти
+   > [!options] студент | студентка | студенти | студентки
+
+4. ___ це? (Who is this?)
+   > [!answer] Хто
+   > [!options] Хто | Що | Де | Як
+
+5. Вони ___. (They are Ukrainians)
+   > [!answer] українці
+   > [!options] українець | українка | українці | українки
+
+6. Я ___. (I am a programmer)
+   > [!answer] програміст
+   > [!options] програміст | інженер | менеджер | дизайнер
+
+7. ___ там. (She is there)
+   > [!answer] Вона
+   > [!options] Він | Вона | Воно | Вони
+
+8. ___ це? (What is this?)
+   > [!answer] Що
+   > [!options] Хто | Що | Де | Коли
+
+9. Він ___. (He is Ukrainian - male)
+   > [!answer] українець
+   > [!options] українець | українка | канадець | американець
+
+10. Вона ___. (She is American - female)
+    > [!answer] американка
+    > [!options] американець | американка | канадка | українка
+
+11. Це ___. (This is a person)
+    > [!answer] людина
+    > [!options] людина | хлопець | дівчина | студент
+
+12. Вони ___ тут. (They are here)
+    > [!answer] -
+    > [!options] є | тут | - | там
+    > (Zero copula - nothing is needed between subject and location)
 
 ---
 
@@ -503,35 +590,23 @@ Turn these statements into questions (just add ?):
 | то | /tɔ/ | that | pron | - | Less common than це |
 | ось | /ɔsʲ/ | here is, look | part | - | Pointing out |
 | людина | /lʲuˈdɪnɑ/ | person, human | noun | f | Plural: люди |
-| чоловік | /tʃɔlɔˈvʲik/ | man, husband | noun | m |
-| жінка | /ˈʒinkɑ/ | woman, wife | noun | f |
-| хлопець | /ˈxlɔpɛt͡sʲ/ | boy, boyfriend | noun | m |
-| дівчина | /ˈdʲivtʃɪnɑ/ | girl, girlfriend | noun | f |
-| дизайнер | /dɪˈzɑjnɛr/ | designer | noun | m | Profession |
-| інженер | /inʒɛˈnɛr/ | engineer | noun | m | Profession |
-| менеджер | /ˈmɛnɛdʒɛr/ | manager | noun | m | Profession |
-| програміст | /prɔɦrɑˈmʲist/ | programmer | noun | m | Profession |
-| вчитель | /ˈwtʃɪtɛlʲ/ | teacher (male) | noun | m | Profession |
-| вчителька | /ˈwtʃɪtɛlʲkɑ/ | teacher (female) | noun | f | Profession |
-| лікар | /ˈlʲikɑr/ | doctor | noun | m | Profession |
-| лікарка | /ˈlʲikɑrkɑ/ | doctor (female) | noun | f | Profession |
+| хлопець | /ˈxlɔpɛt͡sʲ/ | boy, boyfriend | noun | m | |
+| дівчина | /ˈdʲivtʃɪnɑ/ | girl, girlfriend | noun | f | |
+| студент | /stuˈdɛnt/ | student (male) | noun | m | Profession |
+| студентка | /stuˈdɛntkɑ/ | student (female) | noun | f | Profession |
+| дизайнер | /dɪˈzɑjnɛr/ | designer | noun | m | Profession (both genders) |
+| інженер | /inʒɛˈnɛr/ | engineer | noun | m | Profession (both genders) |
+| менеджер | /ˈmɛnɛdʒɛr/ | manager | noun | m | Profession (both genders) |
+| програміст | /prɔɦrɑˈmʲist/ | programmer | noun | m | Profession (both genders) |
 | американець | /ɑmɛrɪˈkɑnɛt͡sʲ/ | American (male) | noun | m | Nationality |
 | американка | /ɑmɛrɪˈkɑnkɑ/ | American (female) | noun | f | Nationality |
 | канадець | /kɑˈnɑdɛt͡sʲ/ | Canadian (male) | noun | m | Nationality |
 | канадка | /kɑˈnɑdkɑ/ | Canadian (female) | noun | f | Nationality |
-| англієць | /ɑnˈɦlʲijɛt͡sʲ/ | English (male) | noun | m | Nationality |
-| англійка | /ɑnˈɦlʲijkɑ/ | English (female) | noun | f | Nationality |
 | українець | /ukrɑˈjinɛt͡sʲ/ | Ukrainian (male) | noun | m | Nationality |
 | українка | /ukrɑˈjinkɑ/ | Ukrainian (female) | noun | f | Nationality |
-| друг | /druɦ/ | friend (male) | noun | m | Plural: друзі |
-| подруга | /pɔˈdruɦɑ/ | friend (female) | noun | f | Female friend |
 | з | /z/ | from | prep | - | Я з України = I'm from Ukraine |
 | тут | /tut/ | here | adv | - | Location |
 | там | /tɑm/ | there | adv | - | Location |
-| мій | /mʲij/ | my (masculine) | pron | m | Possessive pronoun |
-| моя | /mɔˈjɑ/ | my (feminine) | pron | f | Possessive pronoun |
-| твій | /tvʲij/ | your (masc, informal) | pron | m | Informal possessive |
-| твоя | /tvɔˈjɑ/ | your (fem, informal) | pron | f | Informal possessive |
 ---
 
 # Zero Copula Summary
@@ -541,9 +616,9 @@ Turn these statements into questions (just add ?):
 | English | Ukrainian | Literal Translation |
 |---------|-----------|---------------------|
 | This is a book. | Це книга. | This — book. |
-| She is a doctor. | Вона лікарка. | She — doctor. |
+| She is a student. | Вона студентка. | She — student. |
 | We are students. | Ми студенти. | We — students. |
-| Is this your pen? | Це твоя ручка? | This — your pen? |
+| Is this a window? | Це вікно? | This — window? |
 
 ## When "є" (is) IS Used
 

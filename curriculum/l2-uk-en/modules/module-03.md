@@ -6,18 +6,16 @@ level: A1
 phase: A1.1
 duration: 60
 transliteration: full
-tags: [grammar, nouns, gender, declensions, basics, pronouns]
+tags: [grammar, nouns, gender, declensions, basics]
 objectives:
   - Understand that every Ukrainian noun has grammatical gender
   - Learn the 4 Declension Groups (Відміни)
   - Classify nouns into Declensions based on endings
   - Predict gender from Declension group
-  - Use Personal Pronouns (I, You, He, She, We, They) correctly
 grammar:
   - Grammatical gender (чоловічий, жіночий, середній рід)
   - The 4 Noun Declensions (I, II, III, IV)
   - Noun ending patterns
-  - Personal Pronouns (Я, Ти, Він, Вона, Воно...)
 ---
 
 # Lesson Content
@@ -46,27 +44,6 @@ Think of them as "teams" that follow the same rules.
 > Learn the Team, and you'll know exactly how to change the word later!
 
 ## presentation
-
-### Personal Pronouns (Subject)
-
-Before we analyze nouns, we need the words to replace them!
-
-| English | Ukrainian | Pronunciation |
-|---------|-----------|---------------|
-| **I** | **Я** | /ya/ |
-| **You** (informal) | **Ти** | /tɪ/ |
-| **He** | **Він** | /vin/ |
-| **She** | **Вона** | /vɔˈnɑ/ |
-| **It** | **Воно** | /vɔˈnɔ/ |
-| **We** | **Ми** | /mɪ/ |
-| **You** (formal/plural) | **Ви** | /vɪ/ |
-| **They** | **Вони** | /vɔˈnɪ/ |
-
-> ⚡ **Pro Tip: Ти vs Ви**
->
-> - **Ти** is for friends, family, children, and pets.
-> - **Ви** is for strangers, elders, bosses, and groups of people (plural).
-> When in doubt, use **Ви** to be polite!
 
 ### Group I: The "-A/-YA" Team (First Declension)
 
@@ -218,14 +195,6 @@ Look at these words and determine: **Group** and **Gender**.
 
 ---
 
----
-
----
-
----
-
----
-
 # Activities
 
 ## fill-in: Gender & Declension System
@@ -272,93 +241,117 @@ Look at these words and determine: **Group** and **Gender**.
     > [!answer] Feminine
     > [!options] Masculine | Feminine | Neuter | Can't tell
 
-## fill-in: He, She, or It?
+11. The noun "музей" (museum) ends in **-й**, so its gender is ___.
+    > [!answer] Masculine
+    > [!options] Masculine | Feminine | Neuter | Can't tell
 
-> Replace the noun with the correct pronoun (Він, Вона, Воно).
+12. The noun "яблуко" (apple) ends in **-о**, so its gender is ___.
+    > [!answer] Neuter
+    > [!options] Masculine | Feminine | Neuter | Can't tell
 
-1. Мама (Mom) is replaced by ___.
-   > [!answer] Вона
-   > [!options] Він | Вона | Воно
+## fill-in: Identify the Gender
 
-2. Тато (Dad) is replaced by ___.
-   > [!answer] Він
-   > [!options] Він | Вона | Воно
+> Determine the gender of each noun based on its ending.
 
-3. Хліб (Bread) is replaced by ___.
-   > [!answer] Він
-   > [!options] Він | Вона | Воно
+1. The noun "вода" ends in **-а**, so its gender is ___.
+   > [!answer] Feminine
+   > [!options] Masculine | Feminine | Neuter
 
-4. Молоко (Milk) is replaced by ___.
-   > [!answer] Воно
-   > [!options] Він | Вона | Воно
+2. The noun "дім" ends in a **consonant**, so its gender is ___.
+   > [!answer] Masculine
+   > [!options] Masculine | Feminine | Neuter
 
-5. Річка (River) is replaced by ___.
-   > [!answer] Вона
-   > [!options] Він | Вона | Воно
+3. The noun "море" ends in **-е**, so its gender is ___.
+   > [!answer] Neuter
+   > [!options] Masculine | Feminine | Neuter
 
-6. Сонце (Sun) is replaced by ___.
-   > [!answer] Воно
-   > [!options] Він | Вона | Воно
+4. The noun "земля" ends in **-я**, so its gender is ___.
+   > [!answer] Feminine
+   > [!options] Masculine | Feminine | Neuter
 
-7. День (Day) is replaced by ___.
-   > [!answer] Він
-   > [!options] Він | Вона | Воно
+5. The noun "річка" ends in **-а**, so its gender is ___.
+   > [!answer] Feminine
+   > [!options] Masculine | Feminine | Neuter
 
-8. Ніч (Night) is replaced by ___.
-   > [!answer] Вона
-   > [!options] Він | Вона | Воно
+6. The noun "сік" ends in a **consonant**, so its gender is ___.
+   > [!answer] Masculine
+   > [!options] Masculine | Feminine | Neuter
 
-9. Село (Village) is replaced by ___.
-   > [!answer] Воно
-   > [!options] Він | Вона | Воно
+7. The noun "м'ясо" ends in **-о**, so its gender is ___.
+   > [!answer] Neuter
+   > [!options] Masculine | Feminine | Neuter
 
-10. Вода (Water) is replaced by ___.
-    > [!answer] Вона
-    > [!options] Він | Вона | Воно
+8. The noun "риба" ends in **-а**, so its gender is ___.
+   > [!answer] Feminine
+   > [!options] Masculine | Feminine | Neuter
 
-## unjumble: Build the Sentence
+9. The noun "апельсин" ends in a **consonant**, so its gender is ___.
+   > [!answer] Masculine
+   > [!options] Masculine | Feminine | Neuter
+
+10. The noun "сонце" ends in **-е**, so its gender is ___.
+    > [!answer] Neuter
+    > [!options] Masculine | Feminine | Neuter
+
+11. The noun "картопля" ends in **-я**, so its gender is ___.
+    > [!answer] Feminine
+    > [!options] Masculine | Feminine | Neuter
+
+12. The noun "помідор" ends in a **consonant**, so its gender is ___.
+    > [!answer] Masculine
+    > [!options] Masculine | Feminine | Neuter
+
+## unjumble: Build Simple Phrases
 
 > Arrange the words in the correct order.
 
-1. стіл / мій / Це
-   > [!answer] Це мій стіл.
-   > (This is my table.)
+1. моя / книга / є / тут / Це
+   > [!answer] Це моя книга є тут.
+   > (This is my book here.) [5 words]
 
-2. річка / моя / Це
-   > [!answer] Це моя річка.
-   > (This is my river.)
+2. стіл / є / мій / Це / там
+   > [!answer] Це мій стіл є там.
+   > (This is my table there.) [5 words]
 
-3. вікно / Це / моє
-   > [!answer] Це моє вікно.
-   > (This is my window.)
+3. моє / вікно / Це / є / тут
+   > [!answer] Це моє вікно є тут.
+   > (This is my window here.) [5 words]
 
-4. сім'я / Це / моя
-   > [!answer] Це моя сім'я.
-   > (This is my family.)
+4. там / Тато / мама / і / є
+   > [!answer] Тато і мама є там.
+   > (Dad and mom are there.) [5 words]
 
-5. море / моє / Це
-   > [!answer] Це моє море.
-   > (This is my sea.)
+5. Це / сім'я / моя / є / тут
+   > [!answer] Це моя сім'я є тут.
+   > (This is my family here.) [5 words]
 
-6. мій / хліб / Це
-   > [!answer] Це мій хліб.
-   > (This is my bread.)
+6. Мама / тато / є / і / тут
+   > [!answer] Мама і тато є тут.
+   > (Mom and dad are here.) [5 words]
 
-7. земля / Це / моя
-   > [!answer] Це моя земля.
-   > (This is my land.)
+7. село / Це / моє / там / є
+   > [!answer] Це моє село є там.
+   > (This is my village there.) [5 words]
 
-8. сонце / моє / Це
-   > [!answer] Це моє сонце.
-   > (This is my sun.)
+8. мій / Це / дім / є / тут
+   > [!answer] Це мій дім є тут.
+   > (This is my house here.) [5 words]
 
-9. Тут / село / є
-   > [!answer] Тут є село.
-   > (Here is a village.)
+9. є / хліб / і / Тут / молоко
+   > [!answer] Тут є хліб і молоко.
+   > (Here is bread and milk.) [5 words]
 
-10. є / вода / Там
-    > [!answer] Там є вода.
-    > (There is water.)
+10. моя / Це / книга / і / стіл
+    > [!answer] Це моя книга і стіл.
+    > (This is my book and table.) [5 words]
+
+11. вода / Там / молоко / є / і
+    > [!answer] Там є вода і молоко.
+    > (There is water and milk.) [5 words]
+
+12. Це / море / моє / є / там
+    > [!answer] Це моє море є там.
+    > (This is my sea there.) [5 words]
 
 ## group-sort: Sort by Gender
 
@@ -490,6 +483,20 @@ Look at these words and determine: **Group** and **Gender**.
     - [ ] книга / земля (both Group I)
     > День (day) is Masc Group II, ніч (night) is Fem Group III - same ending, different groups!
 
+11. The noun "музей" (museum) ends in **-й**. What Declension Group is it?
+    - [ ] Group I (Feminine)
+    - [x] Group II (Masculine)
+    - [ ] Group III (Soft Feminine)
+    - [ ] Group IV (Baby Animals)
+    > Nouns ending in -й are Group II Masculine
+
+12. The noun "сім'я" (family) ends in **-я**. What is its gender?
+    - [ ] Masculine
+    - [x] Feminine
+    - [ ] Neuter
+    - [ ] It's a baby animal
+    > Ends in -я but not a baby animal → Group I Feminine
+
 ## true-false: Grammar Rules
 
 > Determine if each statement about Ukrainian grammar is true or false.
@@ -503,17 +510,14 @@ Look at these words and determine: **Group** and **Gender**.
 - [x] The ending -ість always indicates Group III Feminine (abstract nouns).
    > Correct! радість, якість, можливість - always feminine.
 
-- [ ] The pronoun "Воно" is used for Masculine nouns.
-   > Incorrect. Воно = Neuter, Він = Masculine, Вона = Feminine.
-
 - [x] Baby animal nouns (теля, кошеня) are Neuter despite ending in -а/-я.
    > Correct! Group IV = baby animals = always Neuter.
 
 - [ ] "День" (day) and "ніч" (night) belong to the same Declension group.
    > Incorrect. День = Group II Masculine, ніч = Group III Feminine.
 
-- [x] "Ти" is informal (friends/family), "Ви" is formal (strangers/elders).
-   > Correct! When in doubt, use Ви to be polite.
+- [x] Nouns ending in -о or -е belong to Group II and are Neuter.
+   > Correct! вікно, море, сонце - all Group II Neuter.
 
 - [x] Knowing a noun's Declension Group helps predict all its case endings.
    > Correct! That's why we learn "teams" not just individual endings.
@@ -523,6 +527,35 @@ Look at these words and determine: **Group** and **Gender**.
 
 - [x] Group II contains both Masculine (consonant) and Neuter (-о/-е) nouns.
    > Correct! It's the biggest "mixed" group.
+
+- [ ] The word "кошеня" (kitten) is Feminine because it ends in -я.
+   > Incorrect. It's a baby animal → Group IV Neuter.
+
+- [x] Abstract nouns ending in -ь (like "любов") are usually Group III Feminine.
+   > Correct! любов, радість, ніч - all Group III Feminine.
+
+- [x] Nouns ending in -й (like "музей") belong to Group II Masculine.
+   > Correct! музей, герой, край - all Group II Masculine.
+
+## match-up: Nouns and Declension Groups
+
+> Match each noun with its correct Declension Group.
+
+| Left | Right |
+|------|-------|
+| книга | Group I |
+| стіл | Group II |
+| вікно | Group II |
+| ніч | Group III |
+| теля | Group IV |
+| земля | Group I |
+| море | Group II |
+| радість | Group III |
+| хліб | Group II |
+| сім'я | Group I |
+| кошеня | Group IV |
+| день | Group II |
+
 ---
 
 # Vocabulary
@@ -543,15 +576,10 @@ Look at these words and determine: **Group** and **Gender**.
 | сонце | /ˈsɔnt͡sɛ/ | sun | noun | n | Group II (hard) |
 | море | /ˈmɔrɛ/ | sea | noun | n | Group II (soft) |
 | земля | /zɛmˈlʲa/ | earth | noun | f | Group I (soft) |
-| сім'я | /sʲiˈmjɑ/ | family | noun | f | Group I (soft) |
 | дім | /dʲim/ | house, home | noun | m | Group II |
 | село | /sɛˈlɔ/ | village | noun | n | Group II |
 | річка | /ˈrʲitʃkɑ/ | river | noun | f | Group I |
 | хліб | /xlʲib/ | bread | noun | m | Group II |
-| вода | /vɔˈdɑ/ | water | noun | f | Group I |
-| молоко | /mɔlɔˈkɔ/ | milk | noun | n | Group II |
-| чай | /tʃɑj/ | tea | noun | m | Group II |
-| сік | /sʲik/ | juice | noun | m | Group II |
 | м'ясо | /ˈmjɑsɔ/ | meat | noun | n | Group II |
 | риба | /ˈrɪbɑ/ | fish | noun | f | Group I |
 | овочі | /ˈɔvɔtʃi/ | vegetables | noun | pl | Plural only |
@@ -562,31 +590,6 @@ Look at these words and determine: **Group** and **Gender**.
 | помідор | /pɔmʲiˈdɔr/ | tomato | noun | m | Group II |
 | огірок | /ɔɦʲiˈrɔk/ | cucumber | noun | m | Group II |
 | цибуля | /t͡sɪˈbulʲɑ/ | onion | noun | f | Group I (soft) |
-| я | /jɑ/ | I | pron | - | Subject |
-| ти | /tɪ/ | you (informal) | pron | - | Singular |
-| він | /vʲin/ | he | pron | m | Subject |
-| вона | /vɔˈnɑ/ | she | pron | f | Subject |
-| воно | /vɔˈnɔ/ | it | pron | n | Subject |
-| ми | /mɪ/ | we | pron | - | Plural |
-| ви | /vɪ/ | you (formal/plural) | pron | - | Plural |
-| вони | /vɔˈnɪ/ | they | pron | - | Plural |
-
----
-
-# Declension Reference
-
-## Why memorize groups?
-
-When we start changing words (cases), each group has its own pattern.
-
-| If you are in... | Accusative change? |
-|------------------|-------------------|
-| **Group I** | Yes (-у/-ю) |
-| **Group II** | No (if inanimate) |
-| **Group III** | No |
-| **Group IV** | No |
-
-Knowing the group now saves you headaches later!
 
 ---
 
@@ -594,18 +597,18 @@ Knowing the group now saves you headaches later!
 
 > 💡 **What You Learned Today**
 >
-> - **Personal Pronouns:** Я, Ти, Він, Вона, Ми, Ви, Вони
+> - Every Ukrainian noun has **grammatical gender** (Masculine, Feminine, Neuter)
 > - **Nouns belong to 4 Declension Groups (Families)**
 > - **Group I:** -а/-я nouns (mostly Feminine)
 > - **Group II:** Consonant nouns (Masculine) + -о/-е nouns (Neuter)
-> - **Group III:** -ь nouns (Feminine)
-> - **Group IV:** Baby animals (Neuter)
+> - **Group III:** -ь nouns (Feminine, abstract nouns like радість)
+> - **Group IV:** Baby animals in -а/-я (Neuter)
 > - Identifying the Group helps you predict the Gender
-> - **Gender Match:** Він = Masculine nouns, Вона = Feminine nouns, Воно = Neuter nouns
+> - Knowing the Declension Group helps predict how nouns change in sentences
 
 > 🎯 **Coming Next**
 >
-> In Module 04, we will bring these nouns to life with **Verbs**:
-> - How to conjugate verbs (I do, You do, He does)
-> - The two Conjugation Groups (Type 1 vs Type 2)
-> - Building full sentences like "I see the table" (Wait, that requires cases! We'll start with "I read" and "I speak").
+> In Module 04, you'll learn **Personal Pronouns**:
+> - Subject pronouns (I, You, He, She, We, They)
+> - The Ти/Ви distinction (informal vs formal "you")
+> - Matching pronouns to noun genders

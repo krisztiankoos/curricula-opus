@@ -461,6 +461,8 @@ footer {
       <button class="nav-tab" data-section="activity-3">4. Sort</button>
       <button class="nav-tab" data-section="activity-4">5. Quiz</button>
       <button class="nav-tab" data-section="activity-5">6. T/F</button>
+      <button class="nav-tab" data-section="activity-6">7. Match</button>
+      <button class="nav-tab" data-section="activity-7">8. Fill</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -525,7 +527,7 @@ footer {
   </ul>
   <p>Both are correct! In everyday speech, Ukrainians often skip Чи and just raise their voice at the end.</p>
   <p>📜 <strong>History Bite: Where Чи Comes From</strong></p>
-  <p>The particle <strong>чи</strong> comes from Proto-Slavic *či, related to the word <strong>що</strong> (what). It originally meant "whether" and still does in some contexts: "Не знаю, чи він прийде" (I don't know whether he'll come).</p>
+  <p>The particle <strong>чи</strong> comes from Proto-Slavic *či, related to the word <strong>що</strong> (what). It originally meant "whether" and still works this way in questions!</p>
 </blockquote>
 <h3 id="questionwords">Question Words</h3>
 <table>
@@ -560,7 +562,7 @@ footer {
 <td>куди</td>
 <td>kudy</td>
 <td>where (direction)</td>
-<td>Куди ти йдеш? (Where are you going?)</td>
+<td>Куди ти? (Where are you going?)</td>
 </tr>
 <tr>
 <td>звідки</td>
@@ -591,12 +593,6 @@ footer {
 <td>skilky</td>
 <td>how much/many</td>
 <td>Скільки? (How much?)</td>
-</tr>
-<tr>
-<td>який/яка/яке</td>
-<td>yakyi/yaka/yake</td>
-<td>which/what kind</td>
-<td>Яка це книга? (What book is this?)</td>
 </tr>
 </tbody>
 </table>
@@ -706,9 +702,9 @@ footer {
 <p><strong>Using question words:</strong></p>
 <ul>
 <li>___ це? (What is this?) → Що це?</li>
-<li>___ ти живеш? (Where do you live?) → Де ти живеш?</li>
-<li>___ ти йдеш? (Where are you going?) → Куди ти йдеш?</li>
-<li>___ це коштує? (How much does this cost?) → Скільки це коштує?</li>
+<li>___ ти? (Where are you?) → Де ти?</li>
+<li>___ ти? (Where are you going?) → Куди ти?</li>
+<li>___ це? (How much is this?) → Скільки це?</li>
 </ul>
 <h3 id="negationpractice">Negation Practice</h3>
 <p><strong>Add negation:</strong></p>
@@ -720,7 +716,7 @@ footer {
 <p><strong>Double negatives:</strong></p>
 <ul>
 <li>I know nothing. → Я нічого не знаю.</li>
-<li>Nobody is here. → Ніхто тут не є. / Тут нікого немає.</li>
+<li>Nobody reads. → Ніхто не читає.</li>
 <li>I never work. → Я ніколи не працюю.</li>
 </ul>
 <blockquote>
@@ -729,9 +725,9 @@ footer {
   <ul>
   <li><strong>Як справи?</strong> - How are things? (casual greeting)</li>
   <li><strong>Що нового?</strong> - What's new?</li>
-  <li><strong>Скільки коштує?</strong> - How much does it cost?</li>
-  <li><strong>Де туалет?</strong> - Where is the toilet?</li>
-  <li><strong>Чи ви говорите англійською?</strong> - Do you speak English?</li>
+  <li><strong>Скільки це?</strong> - How much is this?</li>
+  <li><strong>Де це?</strong> - Where is this?</li>
+  <li><strong>Чи ти знаєш?</strong> - Do you know?</li>
   <li><strong>Чому?</strong> - Why? (very useful!)</li>
   </ul>
 </blockquote>
@@ -739,26 +735,39 @@ footer {
 <h3 id="askabouteverything">Ask About Everything</h3>
 <p>Form questions about:</p>
 <ol>
-<li>Someone's name: ___ тебе звати?</li>
-<li>Someone's origin: ___ ти?</li>
-<li>Location of something: ___ моя книга?</li>
-<li>Time: ___ ми зустрінемося?</li>
-<li>Reason: ___ ти не прийшов?</li>
+<li><p>Someone's name: ___ тебе звати?</p></li>
 </ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Як</div></div>
+<ol start="2">
+<li><p>Someone's origin: ___ ти?</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Звідки</div></div>
+<ol start="3">
+<li><p>Location of something: ___ моя книга?</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">Де</div></div>
+<ol start="4">
+<li><p>Time: ___ ти тут?</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">Коли</div></div>
+<ol start="5">
+<li><p>Reason: ___ ти не знаєш?</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">Чому</div></div>
 <h3 id="negatethesestatements">Negate These Statements</h3>
 <p>Turn positive to negative:</p>
 <ol>
 <li><p>Я все знаю.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Я ___ не знаю.</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Я нічого не знаю.</div></div>
 <ol start="2">
 <li><p>Він завжди працює.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Він ___ не працює.</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Він ніколи не працює.</div></div>
 <ol start="3">
-<li><p>Хтось тут є.</p></li>
+<li><p>Хтось тут читає.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">___ тут не є.</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Ніхто тут не читає.</div></div>
 <hr />
 <h2 id="questionsnegationsummary">Questions &amp; Negation Summary</h2>
 <table>
@@ -799,7 +808,7 @@ footer {
 <td>Where (direction)</td>
 <td>Куди</td>
 <td>Where to</td>
-<td>Куди йдеш?</td>
+<td>Куди ти?</td>
 </tr>
 <tr>
 <td>When</td>
@@ -841,7 +850,7 @@ footer {
 <td>Never</td>
 <td>ніколи</td>
 <td>never</td>
-<td>ніколи не був</td>
+<td>ніколи не читаю</td>
 </tr>
 </tbody>
 </table>
@@ -883,8 +892,8 @@ footer {
 <tbody>
 <tr>
 <td>Що + verb?</td>
-<td>Що ти робиш?</td>
-<td>What are you doing?</td>
+<td>Що ти читаєш?</td>
+<td>What are you reading?</td>
 </tr>
 <tr>
 <td>Хто + verb?</td>
@@ -897,9 +906,9 @@ footer {
 <td>Where is your book?</td>
 </tr>
 <tr>
-<td>Куди + motion verb?</td>
-<td>Куди ти йдеш?</td>
-<td>Where are you going?</td>
+<td>Куди + subject?</td>
+<td>Куди ти зараз?</td>
+<td>Where are you going now?</td>
 </tr>
 </tbody>
 </table>
@@ -938,6 +947,7 @@ footer {
 <hr /></div>
     </div>
   
+      
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><blockquote>
@@ -967,21 +977,21 @@ footer {
   
     
     <section id="activity-0" class="section"><div class="card"><h3>Complete the Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
     <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
       <div id="activity-1-container" class="order-container"></div>
       <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
     <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
       <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
         <div class="match-column" id="activity-2-left"></div>
         <div class="match-column" id="activity-2-right"></div>
@@ -999,17 +1009,34 @@ footer {
     </div></section>
 
     <section id="activity-4" class="section"><div class="card"><h3>Questions &amp; Negation Rules</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
     <section id="activity-5" class="section"><div class="card"><h3>Question &amp; Negation Rules</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div id="activity-5-container"></div>
       <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-6" class="section"><div class="card"><h3>Negative Forms</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-6-container"><svg class="match-lines" id="activity-6-lines"></svg>
+        <div class="match-column" id="activity-6-left"></div>
+        <div class="match-column" id="activity-6-right"></div>
+      </div>
+      <div class="completion-message" id="activity-6-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-7" class="section"><div class="card"><h3>Double Negation</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1024,7 +1051,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">чи</td><td class="vocab-ipa">/tʃɪ/</td><td class="vocab-en">whether (question particle)</td><td class="vocab-note">Starts yes/no questions</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-ipa">/kuˈdɪ/</td><td class="vocab-en">where to (direction)</td><td class="vocab-note">Movement toward</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-ipa">/ˈzvʲidkɪ/</td><td class="vocab-en">where from</td><td class="vocab-note">Origin/source</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/kɔˈlɪ/</td><td class="vocab-en">when</td><td class="vocab-note">Time question</td></tr><tr><td class="vocab-uk">чому</td><td class="vocab-ipa">/tʃɔˈmu/</td><td class="vocab-en">why</td><td class="vocab-note">Reason question</td></tr><tr><td class="vocab-uk">скільки</td><td class="vocab-ipa">/ˈskʲilʲkɪ/</td><td class="vocab-en">how much/many</td><td class="vocab-note">Quantity question</td></tr><tr><td class="vocab-uk">який</td><td class="vocab-ipa">/jɑˈkɪj/</td><td class="vocab-en">which/what kind (m)</td><td class="vocab-note">Agrees with noun</td></tr><tr><td class="vocab-uk">яка</td><td class="vocab-ipa">/jɑˈkɑ/</td><td class="vocab-en">which/what kind (f)</td><td class="vocab-note">Agrees with noun</td></tr><tr><td class="vocab-uk">яке</td><td class="vocab-ipa">/jɑˈkɛ/</td><td class="vocab-en">which/what kind (n)</td><td class="vocab-note">Agrees with noun</td></tr><tr><td class="vocab-uk">ніхто</td><td class="vocab-ipa">/nʲixˈtɔ/</td><td class="vocab-en">nobody</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніщо</td><td class="vocab-ipa">/nʲiʃˈtʃɔ/</td><td class="vocab-en">nothing</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніде</td><td class="vocab-ipa">/nʲiˈdɛ/</td><td class="vocab-en">nowhere</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніколи</td><td class="vocab-ipa">/nʲiˈkɔlɪ/</td><td class="vocab-en">never</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніякий</td><td class="vocab-ipa">/nʲijɑˈkɪj/</td><td class="vocab-en">no kind of</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">завжди</td><td class="vocab-ipa">/ˈzɑvʒdɪ/</td><td class="vocab-en">always</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">часто</td><td class="vocab-ipa">/ˈtʃɑstɔ/</td><td class="vocab-en">often</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">іноді</td><td class="vocab-ipa">/iˈnɔdʲi/</td><td class="vocab-en">sometimes</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">рідко</td><td class="vocab-ipa">/ˈrʲidkɔ/</td><td class="vocab-en">rarely</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">йти</td><td class="vocab-ipa">/jtɪ/</td><td class="vocab-en">to go (on foot)</td><td class="vocab-note">Motion: іду, йдеш, йде...</td></tr><tr><td class="vocab-uk">коштувати</td><td class="vocab-ipa">/kɔʃtuˈvɑtɪ/</td><td class="vocab-en">to cost</td><td class="vocab-note">Class I: коштує (it costs)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">чи</td><td class="vocab-ipa">/tʃɪ/</td><td class="vocab-en">whether (question particle)</td><td class="vocab-note">Starts yes/no questions</td></tr><tr><td class="vocab-uk">куди</td><td class="vocab-ipa">/kuˈdɪ/</td><td class="vocab-en">where to (direction)</td><td class="vocab-note">Movement toward</td></tr><tr><td class="vocab-uk">звідки</td><td class="vocab-ipa">/ˈzvʲidkɪ/</td><td class="vocab-en">where from</td><td class="vocab-note">Origin/source</td></tr><tr><td class="vocab-uk">коли</td><td class="vocab-ipa">/kɔˈlɪ/</td><td class="vocab-en">when</td><td class="vocab-note">Time question</td></tr><tr><td class="vocab-uk">чому</td><td class="vocab-ipa">/tʃɔˈmu/</td><td class="vocab-en">why</td><td class="vocab-note">Reason question</td></tr><tr><td class="vocab-uk">скільки</td><td class="vocab-ipa">/ˈskʲilʲkɪ/</td><td class="vocab-en">how much/many</td><td class="vocab-note">Quantity question</td></tr><tr><td class="vocab-uk">чий</td><td class="vocab-ipa">/tʃɪj/</td><td class="vocab-en">whose (m)</td><td class="vocab-note">Possession question</td></tr><tr><td class="vocab-uk">чия</td><td class="vocab-ipa">/tʃɪˈjɑ/</td><td class="vocab-en">whose (f)</td><td class="vocab-note">Possession question</td></tr><tr><td class="vocab-uk">чиє</td><td class="vocab-ipa">/tʃɪˈjɛ/</td><td class="vocab-en">whose (n)</td><td class="vocab-note">Possession question</td></tr><tr><td class="vocab-uk">ніхто</td><td class="vocab-ipa">/nʲixˈtɔ/</td><td class="vocab-en">nobody</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніщо</td><td class="vocab-ipa">/nʲiʃˈtʃɔ/</td><td class="vocab-en">nothing</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">нічого</td><td class="vocab-ipa">/nʲiˈtʃɔɦɔ/</td><td class="vocab-en">nothing (genitive)</td><td class="vocab-note">Я нічого не знаю</td></tr><tr><td class="vocab-uk">ніде</td><td class="vocab-ipa">/nʲiˈdɛ/</td><td class="vocab-en">nowhere</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">ніколи</td><td class="vocab-ipa">/nʲiˈkɔlɪ/</td><td class="vocab-en">never</td><td class="vocab-note">Requires не with verb</td></tr><tr><td class="vocab-uk">завжди</td><td class="vocab-ipa">/ˈzɑvʒdɪ/</td><td class="vocab-en">always</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">часто</td><td class="vocab-ipa">/ˈtʃɑstɔ/</td><td class="vocab-en">often</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">іноді</td><td class="vocab-ipa">/iˈnɔdʲi/</td><td class="vocab-en">sometimes</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">рідко</td><td class="vocab-ipa">/ˈrʲidkɔ/</td><td class="vocab-en">rarely</td><td class="vocab-note">Frequency</td></tr><tr><td class="vocab-uk">так</td><td class="vocab-ipa">/tɑk/</td><td class="vocab-en">yes</td><td class="vocab-note">Affirmative answer</td></tr><tr><td class="vocab-uk">ні</td><td class="vocab-ipa">/nʲi/</td><td class="vocab-en">no</td><td class="vocab-note">Negative answer</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1036,8 +1063,8 @@ footer {
   </main><footer>Module 07 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Sentences","data":{"type":"fill-blank","items":[{"prompt":"___ це? (What is this?)","answer":"Що","options":["Що","Хто","Де","Коли"]},{"prompt":"___ ти? (Where are you?)","answer":"Де","options":["Що","Хто","Де","Куди"]},{"prompt":"___ ти йдеш? (Where are you going?)","answer":"Куди","options":["Де","Куди","Звідки","Коли"]},{"prompt":"___ ти? (Where are you from?)","answer":"Звідки","options":["Де","Куди","Звідки","Як"]},{"prompt":"___ ти не прийшов? (Why didn't you come?)","answer":"Чому","options":["Що","Хто","Чому","Коли"]},{"prompt":"___ коштує? (How much does it cost?)","answer":"Скільки","options":["Що","Як","Скільки","Чому"]},{"prompt":"Я ___ не знаю. (I don't know anything.)","answer":"нічого","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ не знає. (Nobody knows.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Я ___ не працюю. (I never work.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ ти говориш українською? (Do you speak Ukrainian?)","answer":"Чи","options":["Що","Чи","Як","Де"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["це","Що"],"answer":"Що це?","translation":"What is this?"},{"words":["ти","Де"],"answer":"Де ти?","translation":"Where are you?"},{"words":["йдеш","Куди","ти"],"answer":"Куди ти йдеш?","translation":"Where are you going?"},{"words":["ти","Звідки"],"answer":"Звідки ти?","translation":"Where are you from?"},{"words":["коштує","Скільки","це"],"answer":"Скільки це коштує?","translation":"How much does it cost?"},{"words":["знаю","не","Я"],"answer":"Я не знаю.","translation":"I don't know."},{"words":["не","Ніхто","знає"],"answer":"Ніхто не знає.","translation":"Nobody knows."},{"words":["не","нічого","Я","знаю"],"answer":"Я нічого не знаю.","translation":"I don't know anything."},{"words":["не","Вона","ніколи","читає"],"answer":"Вона ніколи не читає.","translation":"She never reads."},{"words":["говориш","Чи","українською","ти"],"answer":"Чи ти говориш українською?","translation":"Do you speak Ukrainian?"}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"що","right":"what"},{"left":"хто","right":"who"},{"left":"де","right":"where (location)"},{"left":"куди","right":"where to (direction)"},{"left":"звідки","right":"where from"},{"left":"коли","right":"when"},{"left":"чому","right":"why"},{"left":"ніхто","right":"nobody"},{"left":"нічого","right":"nothing"},{"left":"ніколи","right":"never"}],"shuffleRight":true}},{"id":"activity-3","type":"group-sort","title":"Question Word Categories","data":{"type":"group-sort","groups":[{"id":"location-questions","name":"Location Questions","items":["де (where - static location)","куди (where to - direction)","звідки (where from - origin)"]},{"id":"time-questions","name":"Time Questions","items":["коли (when)","як довго (how long)"]},{"id":"reasonmanner-questions","name":"Reason/Manner Questions","items":["чому (why)","як (how)","навіщо (what for)"]},{"id":"identitything-questions","name":"Identity/Thing Questions","items":["хто (who)","що (what)","який/яка/яке (which/what kind)"]},{"id":"quantity-questions","name":"Quantity Questions","items":["скільки (how much/many)"]}],"shuffleItems":true}},{"id":"activity-4","type":"quiz","title":"Questions & Negation Rules","data":{"type":"quiz","questions":[{"question":"How do you form a yes/no question from \"Він читає\"?","options":["Чи він читає? OR Він читає? (rising tone)","Він читає чи?","Читає він?","Чи читає він є?"],"correctIndex":0,"explanation":"Add \"Чи\" at start OR just use rising intonation"},{"question":"\"Де\" vs \"куди\" - which asks about direction (where TO)?","options":["Де","Куди","Both","Neither"],"correctIndex":1,"explanation":"Де = location (static), Куди = direction (motion toward)"},{"question":"How do you say \"Nobody knows\" using double negation?","options":["Ніхто знає.","Ніхто не знає.","Не ніхто знає.","Знає ніхто не."],"correctIndex":1,"explanation":"Double negative required: НІХТО НЕ знає"},{"question":"Which question word asks \"why\"?","options":["Як","Що","Чому","Коли"],"correctIndex":2,"explanation":"Чому = why (asking for reason)"},{"question":"How do you say \"I never read\" with double negation?","options":["Я ніколи читаю.","Я ніколи не читаю.","Я не читаю ніколи.","Ніколи я читаю не."],"correctIndex":1,"explanation":"Pattern: Subject + НІКОЛИ + НЕ + verb"},{"question":"\"Звідки ти?\" asks about:","options":["Where you are","Where you're going","Where you're from","When you arrived"],"correctIndex":2,"explanation":"Звідки = where FROM (origin)"},{"question":"How do you say \"I don't know anything\"?","options":["Я не знаю що.","Я нічого не знаю.","Я знаю нічого.","Нічого я знаю."],"correctIndex":1,"explanation":"Double negative: Я НІЧОГО НЕ знаю"},{"question":"Which is correct: \"Where are you going?\"","options":["Де ти йдеш?","Куди ти йдеш?","Звідки ти йдеш?","Коли ти йдеш?"],"correctIndex":1,"explanation":"\"Куди\" for direction/destination"},{"question":"In \"Чи ти студент?\", what does \"Чи\" do?","options":["Marks it as a yes/no question","Means \"what\"","Negates the sentence","Makes it past tense"],"correctIndex":0,"explanation":"\"Чи\" is the question particle for yes/no questions"},{"question":"How do you ask \"How much does this cost?\"","options":["Скільки це коштує?","Що це коштує?","Чому це коштує?","Де це коштує?"],"correctIndex":0,"explanation":"Скільки = how much/many (quantity)"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-5","type":"true-false","title":"Question & Negation Rules","data":{"type":"true-false","statements":[{"statement":"Yes/no questions can be formed by rising intonation alone.","isTrue":true,"explanation":"Correct! \"Він читає?\" (rising tone) = question, no word change needed."},{"statement":"\"Де\" and \"куди\" are interchangeable.","isTrue":false,"explanation":"Incorrect. Де = where (location), куди = where to (direction/motion)."},{"statement":"Ukrainian requires double negatives: \"Я нічого не знаю\".","isTrue":true,"explanation":"Correct! Negative pronoun + не + verb (literally \"I nothing not know\")."},{"statement":"\"Ніхто знає\" is grammatically correct.","isTrue":false,"explanation":"Incorrect. Must have double negative: \"Ніхто НЕ знає\"."},{"statement":"The particle \"чи\" at the start marks a yes/no question.","isTrue":true,"explanation":"Correct! \"Чи він читає?\" = \"Does he read?\""},{"statement":"Question word order changes like in English.","isTrue":false,"explanation":"Incorrect. SVO order stays; question words front the sentence."},{"statement":"\"Ні-\" words (ніхто, нічого, ніколи) always pair with \"не\".","isTrue":true,"explanation":"Correct! This is the mandatory double negative rule."},{"statement":"\"Звідки\" asks about origin (where from), \"куди\" asks about destination.","isTrue":true,"explanation":"Correct! звідки = whence, куди = whither."},{"statement":"\"Чому\" means \"how\".","isTrue":false,"explanation":"Incorrect. Чому = why, як = how."},{"statement":"The negative pronoun goes BEFORE \"не + verb\": \"Я нічого не знаю\".","isTrue":true,"explanation":"Correct! Negative word order: [neg pronoun] + не + [verb]."}]}}];
-    const vocabData = [{"uk":"чи","translit":"","en":"whether (question particle)","note":"Starts yes/no questions"},{"uk":"куди","translit":"","en":"where to (direction)","note":"Movement toward"},{"uk":"звідки","translit":"","en":"where from","note":"Origin/source"},{"uk":"коли","translit":"","en":"when","note":"Time question"},{"uk":"чому","translit":"","en":"why","note":"Reason question"},{"uk":"скільки","translit":"","en":"how much/many","note":"Quantity question"},{"uk":"який","translit":"","en":"which/what kind (m)","note":"Agrees with noun"},{"uk":"яка","translit":"","en":"which/what kind (f)","note":"Agrees with noun"},{"uk":"яке","translit":"","en":"which/what kind (n)","note":"Agrees with noun"},{"uk":"ніхто","translit":"","en":"nobody","note":"Requires не with verb"},{"uk":"ніщо","translit":"","en":"nothing","note":"Requires не with verb"},{"uk":"ніде","translit":"","en":"nowhere","note":"Requires не with verb"},{"uk":"ніколи","translit":"","en":"never","note":"Requires не with verb"},{"uk":"ніякий","translit":"","en":"no kind of","note":"Requires не with verb"},{"uk":"завжди","translit":"","en":"always","note":"Frequency"},{"uk":"часто","translit":"","en":"often","note":"Frequency"},{"uk":"іноді","translit":"","en":"sometimes","note":"Frequency"},{"uk":"рідко","translit":"","en":"rarely","note":"Frequency"},{"uk":"йти","translit":"","en":"to go (on foot)","note":"Motion: іду, йдеш, йде..."},{"uk":"коштувати","translit":"","en":"to cost","note":"Class I: коштує (it costs)"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Sentences","data":{"type":"fill-blank","items":[{"prompt":"___ це? (What is this?)","answer":"Що","options":["Що","Хто","Де","Коли"]},{"prompt":"___ ти? (Where are you?)","answer":"Де","options":["Що","Хто","Де","Куди"]},{"prompt":"___ ти зараз? (Where are you now?)","answer":"Де","options":["Де","Куди","Звідки","Коли"]},{"prompt":"___ ти? (Where are you from?)","answer":"Звідки","options":["Де","Куди","Звідки","Як"]},{"prompt":"___ ти не знаєш? (Why don't you know?)","answer":"Чому","options":["Що","Хто","Чому","Коли"]},{"prompt":"___ це? (How much is this?)","answer":"Скільки","options":["Що","Як","Скільки","Чому"]},{"prompt":"Я ___ не знаю. (I don't know anything.)","answer":"нічого","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ не знає. (Nobody knows.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Я ___ не працюю. (I never work.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ ти знаєш українську? (Do you know Ukrainian?)","answer":"Чи","options":["Що","Чи","Як","Де"]},{"prompt":"___ тебе звати? (What is your name?)","answer":"Як","options":["Що","Хто","Як","Де"]},{"prompt":"___ тут немає. (There is nothing here.)","answer":"Нічого","options":["Ніхто","Нічого","Ніде","Ніколи"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["зараз","ти","Що","читаєш","тут"],"answer":"Що ти читаєш тут зараз?","translation":"What are you reading here now?"},{"words":["сьогодні","Де","ти","працюєш","тут"],"answer":"Де ти працюєш тут сьогодні?","translation":"Where do you work here today?"},{"words":["знаєш","Куди","ти","це","добре"],"answer":"Куди ти це добре знаєш?","translation":"Where do you know this well?"},{"words":["він","Звідки","тут","зараз"],"answer":"Звідки він тут зараз?","translation":"Where is he from here now?"},{"words":["це","Скільки","тут","зараз"],"answer":"Скільки це тут зараз?","translation":"How much is this here now?"},{"words":["знаю","не","Я","цього","добре"],"answer":"Я добре не знаю цього.","translation":"I don't know this well."},{"words":["не","Ніхто","тут","знає","нічого"],"answer":"Ніхто тут нічого не знає.","translation":"Nobody here knows anything."},{"words":["не","нічого","Я","знаю","про","це"],"answer":"Я нічого не знаю про це.","translation":"I don't know anything about this."},{"words":["не","Вона","ніколи","читає","тут","книги"],"answer":"Вона ніколи не читає тут книги.","translation":"She never reads books here."},{"words":["знаєш","Чи","українську","ти","добре","вже"],"answer":"Чи ти вже добре знаєш українську?","translation":"Do you already know Ukrainian well?"},{"words":["тут","ніколи","ніхто","не","працює","добре"],"answer":"Тут ніхто ніколи не працює добре.","translation":"Nobody ever works well here."},{"words":["Чому","ти","сьогодні","не","знаєш","це"],"answer":"Чому ти сьогодні не знаєш це?","translation":"Why don't you know this today?"}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"що","right":"what"},{"left":"хто","right":"who"},{"left":"де","right":"where (location)"},{"left":"куди","right":"where to (direction)"},{"left":"звідки","right":"where from"},{"left":"коли","right":"when"},{"left":"чому","right":"why"},{"left":"ніхто","right":"nobody"},{"left":"нічого","right":"nothing"},{"left":"ніколи","right":"never"},{"left":"завжди","right":"always"},{"left":"часто","right":"often"}],"shuffleRight":true}},{"id":"activity-3","type":"group-sort","title":"Question Word Categories","data":{"type":"group-sort","groups":[{"id":"location-questions","name":"Location Questions","items":["де (where - static location)","куди (where to - direction)","звідки (where from - origin)"]},{"id":"time-questions","name":"Time Questions","items":["коли (when)","як довго (how long)"]},{"id":"reasonmanner-questions","name":"Reason/Manner Questions","items":["чому (why)","як (how)","навіщо (what for)"]},{"id":"identitything-questions","name":"Identity/Thing Questions","items":["хто (who)","що (what)","чий/чия/чиє (whose)"]},{"id":"quantity-questions","name":"Quantity Questions","items":["скільки (how much/many)"]}],"shuffleItems":true}},{"id":"activity-4","type":"quiz","title":"Questions & Negation Rules","data":{"type":"quiz","questions":[{"question":"How do you form a yes/no question from \"Він читає\"?","options":["Чи він читає? OR Він читає? (rising tone)","Він читає чи?","Читає він?","Чи читає він є?"],"correctIndex":0,"explanation":"Add \"Чи\" at start OR just use rising intonation"},{"question":"\"Де\" vs \"куди\" - which asks about direction (where TO)?","options":["Де","Куди","Both","Neither"],"correctIndex":1,"explanation":"Де = location (static), Куди = direction (motion toward)"},{"question":"How do you say \"Nobody knows\" using double negation?","options":["Ніхто знає.","Ніхто не знає.","Не ніхто знає.","Знає ніхто не."],"correctIndex":1,"explanation":"Double negative required: НІХТО НЕ знає"},{"question":"Which question word asks \"why\"?","options":["Як","Що","Чому","Коли"],"correctIndex":2,"explanation":"Чому = why (asking for reason)"},{"question":"How do you say \"I never read\" with double negation?","options":["Я ніколи читаю.","Я ніколи не читаю.","Я не читаю ніколи.","Ніколи я читаю не."],"correctIndex":1,"explanation":"Pattern: Subject + НІКОЛИ + НЕ + verb"},{"question":"\"Звідки ти?\" asks about:","options":["Where you are","Where you're going","Where you're from","When you arrived"],"correctIndex":2,"explanation":"Звідки = where FROM (origin)"},{"question":"How do you say \"I don't know anything\"?","options":["Я не знаю що.","Я нічого не знаю.","Я знаю нічого.","Нічого я знаю."],"correctIndex":1,"explanation":"Double negative: Я НІЧОГО НЕ знаю"},{"question":"Which question word asks about direction?","options":["Де","Куди","Звідки","Коли"],"correctIndex":1,"explanation":"\"Куди\" for direction/destination"},{"question":"In \"Чи ти студент?\", what does \"Чи\" do?","options":["Marks it as a yes/no question","Means \"what\"","Negates the sentence","Makes it past tense"],"correctIndex":0,"explanation":"\"Чи\" is the question particle for yes/no questions"},{"question":"How do you ask \"How much is this?\"","options":["Скільки це?","Що це?","Чому це?","Де це?"],"correctIndex":0,"explanation":"Скільки = how much/many (quantity)"},{"question":"\"Як тебе звати?\" asks about:","options":["Where you live","Your name","Your age","Your job"],"correctIndex":1,"explanation":"Як тебе звати? = What is your name? (literally \"How do they call you?\")"},{"question":"How do you say \"Nobody reads here\"?","options":["Тут хтось читає.","Ніхто тут не читає.","Тут читає ніхто.","Не читає хтось тут."],"correctIndex":1,"explanation":"Double negative: НІХТО + НЕ + verb"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-5","type":"true-false","title":"Question & Negation Rules","data":{"type":"true-false","statements":[{"statement":"Yes/no questions can be formed by rising intonation alone.","isTrue":true,"explanation":"Correct! \"Він читає?\" (rising tone) = question, no word change needed."},{"statement":"\"Де\" and \"куди\" are interchangeable.","isTrue":false,"explanation":"Incorrect. Де = where (location), куди = where to (direction/motion)."},{"statement":"Ukrainian requires double negatives: \"Я нічого не знаю\".","isTrue":true,"explanation":"Correct! Negative pronoun + не + verb (literally \"I nothing not know\")."},{"statement":"\"Ніхто знає\" is grammatically correct.","isTrue":false,"explanation":"Incorrect. Must have double negative: \"Ніхто НЕ знає\"."},{"statement":"The particle \"чи\" at the start marks a yes/no question.","isTrue":true,"explanation":"Correct! \"Чи він читає?\" = \"Does he read?\""},{"statement":"Question word order changes like in English.","isTrue":false,"explanation":"Incorrect. SVO order stays; question words front the sentence."},{"statement":"\"Ні-\" words (ніхто, нічого, ніколи) always pair with \"не\".","isTrue":true,"explanation":"Correct! This is the mandatory double negative rule."},{"statement":"\"Звідки\" asks about origin (where from), \"куди\" asks about destination.","isTrue":true,"explanation":"Correct! звідки = whence, куди = whither."},{"statement":"\"Чому\" means \"how\".","isTrue":false,"explanation":"Incorrect. Чому = why, як = how."},{"statement":"The negative pronoun goes BEFORE \"не + verb\": \"Я нічого не знаю\".","isTrue":true,"explanation":"Correct! Negative word order: [neg pronoun] + не + [verb]."},{"statement":"\"Скільки\" is used to ask about quantity (how much/many).","isTrue":true,"explanation":"Correct! Скільки це? (How much is this?)"},{"statement":"\"Хто це?\" and \"Що це?\" can be used interchangeably.","isTrue":false,"explanation":"Incorrect. Хто = who (for people), Що = what (for things)."}]}},{"id":"activity-6","type":"match-up","title":"Negative Forms","data":{"type":"match-up","pairs":[{"left":"хтось (someone)","right":"ніхто (nobody)"},{"left":"щось (something)","right":"нічого (nothing)"},{"left":"десь (somewhere)","right":"ніде (nowhere)"},{"left":"колись (sometime)","right":"ніколи (never)"},{"left":"якийсь (some kind)","right":"ніякий (no kind)"},{"left":"завжди (always)","right":"ніколи (never)"},{"left":"всюди (everywhere)","right":"ніде (nowhere)"},{"left":"все (everything)","right":"нічого (nothing)"},{"left":"всі (everyone)","right":"ніхто (nobody)"},{"left":"кожен (each)","right":"жоден (none)"},{"left":"якось (somehow)","right":"ніяк (no way)"},{"left":"чомусь (for some reason)","right":"без причини (for no reason)"}],"shuffleRight":true}},{"id":"activity-7","type":"fill-blank","title":"Double Negation","data":{"type":"fill-blank","items":[{"prompt":"___ не знає це слово. (Nobody knows this word.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Я ___ не знаю. (I don't know anything.)","answer":"нічого","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"Вона ___ не читає книги. (She never reads books.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ не працює тут. (Nobody works here.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Він ___ не пише. (He never writes.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"Ми ___ не знаємо про це. (We don't know anything about this.)","answer":"нічого","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ тут не читає. (Nobody reads here.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Вони ___ не працюють. (They never work.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"Я ___ не слухаю музику. (I never listen to music.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"___ не знає українську. (Nobody knows Ukrainian.)","answer":"Ніхто","options":["Ніхто","Нічого","Ніде","Ніколи"]},{"prompt":"Вона ___ не пише листи. (She never writes letters.)","answer":"ніколи","options":["ніхто","нічого","ніде","ніколи"]},{"prompt":"Ми ___ тут не знаємо. (We don't know anything here.)","answer":"нічого","options":["ніхто","нічого","ніде","ніколи"]}]}}];
+    const vocabData = [{"uk":"чи","translit":"","en":"whether (question particle)","note":"Starts yes/no questions"},{"uk":"куди","translit":"","en":"where to (direction)","note":"Movement toward"},{"uk":"звідки","translit":"","en":"where from","note":"Origin/source"},{"uk":"коли","translit":"","en":"when","note":"Time question"},{"uk":"чому","translit":"","en":"why","note":"Reason question"},{"uk":"скільки","translit":"","en":"how much/many","note":"Quantity question"},{"uk":"чий","translit":"","en":"whose (m)","note":"Possession question"},{"uk":"чия","translit":"","en":"whose (f)","note":"Possession question"},{"uk":"чиє","translit":"","en":"whose (n)","note":"Possession question"},{"uk":"ніхто","translit":"","en":"nobody","note":"Requires не with verb"},{"uk":"ніщо","translit":"","en":"nothing","note":"Requires не with verb"},{"uk":"нічого","translit":"","en":"nothing (genitive)","note":"Я нічого не знаю"},{"uk":"ніде","translit":"","en":"nowhere","note":"Requires не with verb"},{"uk":"ніколи","translit":"","en":"never","note":"Requires не with verb"},{"uk":"завжди","translit":"","en":"always","note":"Frequency"},{"uk":"часто","translit":"","en":"often","note":"Frequency"},{"uk":"іноді","translit":"","en":"sometimes","note":"Frequency"},{"uk":"рідко","translit":"","en":"rarely","note":"Frequency"},{"uk":"так","translit":"","en":"yes","note":"Affirmative answer"},{"uk":"ні","translit":"","en":"no","note":"Negative answer"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {

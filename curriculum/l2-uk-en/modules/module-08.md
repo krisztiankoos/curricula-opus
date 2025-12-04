@@ -98,7 +98,7 @@ Many Class II verbs have consonant changes in **я** and **вони** forms:
 
 | | Form | Example |
 |-|------|---------|
-| я | роблю | Я роблю домашнє завдання. |
+| я | роблю | Я роблю це зараз. |
 | ти | робиш | Що ти робиш? |
 | він/вона | робить | Вона робить каву. |
 | ми | робимо | Ми робимо це разом. |
@@ -241,7 +241,7 @@ Describe what you/others do using Class II verbs:
    > [!answer] бачить
    > [!options] бачу | бачиш | бачить | бачать
 
-4. Ми ___ домашнє завдання. (We do homework.)
+4. Ми ___ це разом. (We do this together.)
    > [!answer] робимо
    > [!options] роблю | робиш | робимо | роблять
 
@@ -266,24 +266,32 @@ Describe what you/others do using Class II verbs:
    > [!options] сиджу | сидиш | сидить | сидять
 
 10. Я ___ у Києві. (I live in Kyiv.)
-   > [!answer] живу
-   > [!options] живу | живеш | живе | живуть
+    > [!answer] живу
+    > [!options] живу | живеш | живе | живуть
+
+11. Вони ___ чай. (They drink tea.)
+    > [!answer] п'ють
+    > [!options] п'ю | п'єш | п'є | п'ють
+
+12. Ти ___ це добре? (Do you see this well?)
+    > [!answer] бачиш
+    > [!options] бачу | бачиш | бачить | бачать
 
 ## unjumble: Build the Sentence
 
 > Arrange the words in the correct order. Sentences range from 4-6 words.
 
-1. каву / люблю / гарячу / Я / дуже
-   > [!answer] Я дуже люблю гарячу каву.
-   > (I really love hot coffee.) [5 words]
+1. каву / люблю / дуже / Я / зараз
+   > [!answer] Я зараз дуже люблю каву.
+   > (I really love coffee right now.) [5 words]
 
 2. говорить / Він / добре / українською / дуже
    > [!answer] Він дуже добре говорить українською.
    > (He speaks Ukrainian very well.) [5 words]
 
-3. бачить / Вона / щось / там / цікаве
-   > [!answer] Вона бачить щось цікаве там.
-   > (She sees something interesting there.) [5 words]
+3. бачить / Вона / щось / там / зараз
+   > [!answer] Вона зараз бачить щось там.
+   > (She sees something there now.) [5 words]
 
 4. робимо / Ми / це / разом / завжди
    > [!answer] Ми завжди робимо це разом.
@@ -293,13 +301,13 @@ Describe what you/others do using Class II verbs:
    > [!answer] Я щодня ходжу до школи.
    > (I go to school every day.) [5 words]
 
-6. п'є / гарячий / чай / Він / вранці
-   > [!answer] Він п'є гарячий чай вранці.
-   > (He drinks hot tea in the morning.) [5 words]
+6. п'є / чай / Він / вранці / завжди
+   > [!answer] Він завжди п'є чай вранці.
+   > (He always drinks tea in the morning.) [5 words]
 
-7. їсть / Вона / смачне / яблуко / зелене
-   > [!answer] Вона їсть смачне зелене яблуко.
-   > (She eats a tasty green apple.) [5 words]
+7. їсть / Вона / яблуко / тут / зараз
+   > [!answer] Вона зараз їсть яблуко тут.
+   > (She is eating an apple here now.) [5 words]
 
 8. живу / у / Києві / Я / тепер
    > [!answer] Я тепер живу у Києві.
@@ -309,9 +317,17 @@ Describe what you/others do using Class II verbs:
    > [!answer] Він сидить тут і чекає.
    > (He sits here and waits.) [5 words]
 
-10. люблять / українську / музику / Вони / сучасну
-    > [!answer] Вони люблять сучасну українську музику.
-    > (They love modern Ukrainian music.) [5 words]
+10. люблять / музику / Вони / дуже / завжди
+    > [!answer] Вони завжди дуже люблять музику.
+    > (They always really love music.) [5 words]
+
+11. бачимо / все / добре / ми / тут
+    > [!answer] Ми добре бачимо все тут.
+    > (We see everything well here.) [5 words]
+
+12. ходить / школи / він / до / щодня
+    > [!answer] Він щодня ходить до школи.
+    > (He goes to school every day.) [5 words]
 
 ## match-up: Match the Pairs
 
@@ -329,6 +345,8 @@ Describe what you/others do using Class II verbs:
 | жити | to live |
 | сидіти | to sit |
 | спати | to sleep |
+| носити | to carry/wear |
+| стояти | to stand |
 
 ## group-sort: Verb Consonant Changes
 
@@ -337,24 +355,27 @@ Describe what you/others do using Class II verbs:
 ### б → бл change
 - любити → люБЛю (to love)
 - робити → роБЛю (to do)
+- губити → гуБЛю (to lose)
 
 ### д → дж change
 - ходити → хоДЖу (to walk)
 - сидіти → сиДЖу (to sit)
-- бачити → бачу (no change - ч already soft)
+- їздити → їЖДЖу (to ride)
 
 ### с → ш change
 - носити → ноШу (to carry)
 - просити → проШу (to ask)
+- возити → воЖу (to transport)
 
 ### No consonant change
 - говорити → говорю (to speak)
-- жити → живу (to live)
-- спати → сплю (п + л insertion)
+- бачити → бачу (ч already soft)
+- вчити → вчу (to teach)
 
 ### Irregular patterns
 - їсти → їм (to eat - unique)
 - пити → п'ю (to drink - apostrophe)
+- жити → живу (е-type: живеш)
 
 ## quiz: Class II Conjugation Patterns
 
@@ -424,11 +445,25 @@ Describe what you/others do using Class II verbs:
    > The д → дж pattern is common in Class II verbs
 
 10. What is the main difference between Class I and Class II verbs?
-   - [ ] Class I ends in -ити
-   - [x] Class II has -и- in endings (говориш), Class I has -є- (читаєш)
-   - [ ] Class I is irregular
-   - [ ] There is no difference
-   > Class II uses -и- pattern (говориш, говорить), Class I uses -є- pattern (читаєш, читає)
+    - [ ] Class I ends in -ити
+    - [x] Class II has -и- in endings (говориш), Class I has -є- (читаєш)
+    - [ ] Class I is irregular
+    - [ ] There is no difference
+    > Class II uses -и- pattern (говориш, говорить), Class I uses -є- pattern (читаєш, читає)
+
+11. What is the вони-form of "бачити"?
+    - [ ] бачу
+    - [ ] бачиш
+    - [ ] бачить
+    - [x] бачать
+    > "Вони бачать" - They see (no consonant change, ч is already soft)
+
+12. What is the ми-form of "любити"?
+    - [ ] люблю
+    - [ ] любиш
+    - [x] любимо
+    - [ ] люблять
+    > "Ми любимо" - We love (no consonant change in ми-form)
 
 ## true-false: True or False?
 
@@ -464,6 +499,83 @@ Describe what you/others do using Class II verbs:
 - [x] "жити" means "to live"
    > Correct!
 
+- [x] "носити" has the change с→ш in "я ношу"
+   > Correct! носити → ношу
+
+- [ ] "говорити" is a Class I verb
+   > Incorrect. "говорити" is Class II (ends in -ити)
+
+## fill-in: Choose the Correct Form
+
+> Choose the correct verb form to complete each sentence.
+
+1. Ми ___ до парку щодня. (We walk to the park every day.)
+   > [!answer] ходимо
+   > [!options] ходжу | ходиш | ходить | ходимо
+
+2. Вона ___ каву вранці. (She makes coffee in the morning.)
+   > [!answer] робить
+   > [!options] роблю | робиш | робить | роблять
+
+3. Вони ___ українською добре. (They speak Ukrainian well.)
+   > [!answer] говорять
+   > [!options] говорю | говориш | говорить | говорять
+
+4. Ти ___ цього кота? (Do you see this cat?)
+   > [!answer] бачиш
+   > [!options] бачу | бачиш | бачить | бачать
+
+5. Я ___ музику. (I love music.)
+   > [!answer] люблю
+   > [!options] люблю | любиш | любить | люблять
+
+6. Він ___ багато книг. (He carries many books.)
+   > [!answer] носить
+   > [!options] ношу | носиш | носить | носять
+
+7. Ми ___ тут вже два роки. (We have lived here for two years.)
+   > [!answer] живемо
+   > [!options] живу | живеш | живе | живемо
+
+8. Вона ___ молоко. (She drinks milk.)
+   > [!answer] п'є
+   > [!options] п'ю | п'єш | п'є | п'ють
+
+9. Вони ___ яблука. (They eat apples.)
+   > [!answer] їдять
+   > [!options] їм | їси | їсть | їдять
+
+10. Я ___ на стільці. (I sit on the chair.)
+    > [!answer] сиджу
+    > [!options] сиджу | сидиш | сидить | сидять
+
+11. Ви ___ цю людину? (Do you know this person?)
+    > [!answer] бачите
+    > [!options] бачу | бачиш | бачите | бачать
+
+12. Він ___ вдома. (He sleeps at home.)
+    > [!answer] спить
+    > [!options] сплю | спиш | спить | сплять
+
+## match-up: Verb Conjugation Forms
+
+> Match the verb infinitive with its correct я-form.
+
+| Left | Right |
+|------|-------|
+| робити | роблю |
+| любити | люблю |
+| ходити | ходжу |
+| сидіти | сиджу |
+| носити | ношу |
+| просити | прошу |
+| їсти | їм |
+| пити | п'ю |
+| бачити | бачу |
+| говорити | говорю |
+| жити | живу |
+| спати | сплю |
+
 ---
 
 # Vocabulary
@@ -486,7 +598,6 @@ Describe what you/others do using Class II verbs:
 | пити | /ˈpɪtɪ/ | to drink | verb | - | Irregular: п'ю, п'єш, п'є |
 | жити | /ˈʒɪtɪ/ | to live | verb | - | живу, живеш, живе |
 | вчити | /ˈwtʃɪtɪ/ | to teach/learn | verb | - | вчу, вчиш, вчить |
-| вчитися | /ˈwtʃɪtɪsʲɑ/ | to study, learn | verb | - | Reflexive: вчуся, вчишся |
 | пам'ятати | /pɑmjɑˈtɑtɪ/ | to remember | verb | - | Class I: пам'ятаю |
 | забувати | /zɑbuˈvɑtɪ/ | to forget | verb | - | Class I: забуваю |
 | вітати | /vʲiˈtɑtɪ/ | to greet | verb | - | Class I: вітаю |

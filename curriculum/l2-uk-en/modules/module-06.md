@@ -9,9 +9,9 @@ transliteration: full
 tags: [grammar, verbs, conjugation, present-tense]
 objectives:
   - Understand Ukrainian verb conjugation concept
-  - Learn the two main conjugation classes
-  - Master Class I verbs (-ати/-яти) in present tense
-  - Conjugate high-frequency verbs like знати, читати, говорити
+  - Learn Class I verbs (-ати/-яти) in present tense
+  - Conjugate high-frequency Class I verbs like знати, читати, працювати
+  - Form negative sentences with не
 grammar:
   - Verb infinitives (-ти ending)
   - Present tense conjugation overview
@@ -63,8 +63,8 @@ Every Ukrainian verb has an **infinitive** - its basic form that means "to ___":
 | читати | chytaty | to read |
 | писати | pysaty | to write |
 | знати | znaty | to know |
-| говорити | hovoryty | to speak |
-| робити | robyty | to do/make |
+| працювати | pratsyuvaty | to work |
+| слухати | slukhaty | to listen |
 
 All infinitives end in **-ти** (ty). This is how you find verbs in dictionaries!
 
@@ -78,25 +78,22 @@ All infinitives end in **-ти** (ty). This is how you find verbs in dictionarie
 >
 > Ukrainian preserved the full ancient ending, while other Slavic languages shortened it over time.
 
-### Two Conjugation Classes
+### Conjugation Classes
 
-Ukrainian verbs fall into **two main classes** based on their endings:
+Ukrainian verbs fall into **two main classes** based on their endings. Today we focus on **Class I** - the most common pattern:
 
-| Class | Infinitive Ends In | Example |
-|-------|-------------------|---------|
-| Class I | -ати, -яти, -іти (some) | читати, знати |
-| Class II | -ити, -іти (most) | говорити, робити |
+| Class | Infinitive Ends In | Example | This Module? |
+|-------|-------------------|---------|--------------|
+| Class I | -ати, -яти | читати, знати | ✅ Yes! |
+| Class II | -ити, -іти | (coming in Module 08) | Later |
 
-Today we'll focus on **Class I** - the more common pattern.
-
-> ⚡ **Pro Tip: Recognizing Classes**
+> ⚡ **Pro Tip: Recognizing Class I**
 >
 > Quick rule of thumb:
-> - **-ати/-яти** → almost always Class I
-> - **-ити** → almost always Class II
-> - **-іти** → could be either (check individually)
+> - **-ати** → Class I (читати, знати, працювати)
+> - **-яти** → Class I (мріяти, гуляти)
 >
-> When in doubt, look at the first person singular (я) form - it tells you the class!
+> If the infinitive ends in -ати/-яти, you can conjugate it with today's pattern!
 
 ### Class I Conjugation: -ати/-яти Verbs
 
@@ -190,36 +187,41 @@ To make a verb negative, add **не** (not) before it:
 
 ### Conjugation Drill
 
-**Observe the Class II Pattern (Preview)**
+**Practice with Class I Verbs**
 
-**робити (to do/make)** - This is Class II. Notice how it differs from Class I:
-- я роб**лю** (I do)
-- ти роб**иш** (you do)
-- він/вона роб**ить** (he/she does)
-- ми роб**имо** (we do)
-- ви роб**ите** (you do)
-- вони роб**лять** (they do)
+Let's practice conjugating more Class I verbs:
 
-**Compare: знати (Class I) vs робити (Class II)**
+**працювати (to work)**
 
-| Person | знати (Class I) | робити (Class II) |
-|--------|-----------------|-------------------|
-| я | зна**ю** | робл**ю** |
-| ти | зна**єш** | роб**иш** |
-| він | зна**є** | роб**ить** |
-| ми | зна**ємо** | роб**имо** |
-| ви | зна**єте** | роб**ите** |
-| вони | зна**ють** | робл**ять** |
+| Person | Form | Example |
+|--------|------|---------|
+| я | працюю | Я працюю тут. |
+| ти | працюєш | Ти працюєш? |
+| він/вона | працює | Вона працює. |
+| ми | працюємо | Ми працюємо. |
+| ви | працюєте | Ви працюєте? |
+| вони | працюють | Вони працюють. |
+
+**слухати (to listen)**
+
+| Person | Form | Example |
+|--------|------|---------|
+| я | слухаю | Я слухаю музику. |
+| ти | слухаєш | Ти слухаєш? |
+| він/вона | слухає | Він слухає. |
+| ми | слухаємо | Ми слухаємо. |
+| ви | слухаєте | Ви слухаєте? |
+| вони | слухають | Вони слухають. |
 
 > 🌍 **Real World: Daily Conversations**
 >
-> These verb forms appear constantly in everyday Ukrainian:
+> These Class I verb forms appear constantly in everyday Ukrainian:
 >
-> - **Що ти робиш?** - What are you doing?
+> - **Що ти читаєш?** - What are you reading?
 > - **Я читаю книгу.** - I'm reading a book.
 > - **Вона не знає.** - She doesn't know.
 > - **Ми пишемо листа.** - We're writing a letter.
-> - **Ви говорите українською?** - Do you speak Ukrainian?
+> - **Ви працюєте тут?** - Do you work here?
 
 ### Making Questions
 
@@ -235,33 +237,33 @@ Questions with verbs work the same as with nouns - just change intonation:
 
 ### Talk About Yourself
 
-Use these verbs to describe yourself:
-1. Я _______ українську мову. (know
-   > [!answer] знаю / don't know → не знаю)
-2. Я _______ книги. (read
-   > [!answer] читаю)
-3. Я _______ листи. (write
-   > [!answer] пишу)
-4. Я _______ кожен день. (work
-   > [!answer] працюю)
+Use these Class I verbs to describe yourself:
+1. Я _______ українську мову. (know)
+   > [!answer] знаю
+2. Я _______ книги. (read)
+   > [!answer] читаю
+3. Я _______ листи. (write)
+   > [!answer] пишу
+4. Я _______ тут. (work)
+   > [!answer] працюю
 
 ### Ask Your Partner
 
 Practice asking questions:
-1. Ти _______ українською? (speak
-   > [!answer] говориш)
-2. Що ти _______? (read
-   > [!answer] читаєш)
-3. Де ви _______? (work
-   > [!answer] працюєте)
+1. Ти _______ музику? (listen)
+   > [!answer] слухаєш
+2. Що ти _______? (read)
+   > [!answer] читаєш
+3. Де ви _______? (work)
+   > [!answer] працюєте
 
-> ⚡ **Pro Tip: Present = Present AND Future**
+> ⚡ **Pro Tip: Ukrainian Present Tense**
 >
-> Ukrainian present tense can also mean future with context:
-> - **Завтра я читаю** - Tomorrow I read (= I'm reading tomorrow)
-> - **Ввечері ми пишемо** - In the evening we write (= we're writing tonight)
+> Ukrainian present tense covers both "I read" and "I am reading":
+> - **Я читаю** - I read / I am reading
+> - **Вона працює** - She works / She is working
 >
-> Context words like "завтра" (tomorrow) make the meaning clear!
+> Context makes the meaning clear!
 
 ---
 
@@ -277,15 +279,15 @@ Practice asking questions:
 
 ## fill-in: Complete the Sentences
 
-> Choose the correct verb form to complete each sentence.
+> Choose the correct Class I verb form to complete each sentence.
 
 1. Я ___ книгу. (I read a book.)
    > [!answer] читаю
    > [!options] читаю | читаєш | читає | читають
 
-2. Ти ___ українською? (Do you speak Ukrainian?)
-   > [!answer] говориш
-   > [!options] говорю | говориш | говорить | говорять
+2. Ти ___ українську? (Do you know Ukrainian?)
+   > [!answer] знаєш
+   > [!options] знаю | знаєш | знає | знають
 
 3. Вона ___ добре. (She knows well.)
    > [!answer] знає
@@ -299,113 +301,130 @@ Practice asking questions:
    > [!answer] слухають
    > [!options] слухаю | слухаєш | слухає | слухають
 
-6. Він ___ кожен день. (He works every day.)
+6. Він ___ тут. (He works here.)
    > [!answer] працює
    > [!options] працюю | працюєш | працює | працюють
 
-7. Ви ___ це? (Do you understand this?)
-   > [!answer] розумієте
-   > [!options] розумію | розумієш | розумієте | розуміють
+7. Ви ___ це? (Do you know this?)
+   > [!answer] знаєте
+   > [!options] знаю | знаєш | знаєте | знають
 
 8. Я не ___. (I don't know.)
    > [!answer] знаю
    > [!options] знаю | знаєш | знає | знають
 
-9. Вона ___ телевізор. (She watches TV.)
-   > [!answer] дивиться
-   > [!options] дивлюся | дивишся | дивиться | дивляться
+9. Вона ___ листа. (She writes a letter.)
+   > [!answer] пише
+   > [!options] пишу | пишеш | пише | пишуть
 
-10. Ми ___ українську мову. (We study Ukrainian.)
-   > [!answer] вчимо
-   > [!options] вчу | вчиш | вчимо | вчать
+10. Ми ___ музику. (We listen to music.)
+   > [!answer] слухаємо
+   > [!options] слухаю | слухаєш | слухаємо | слухають
+
+11. Вони ___ щодня. (They rest every day.)
+   > [!answer] відпочивають
+   > [!options] відпочиваю | відпочиваєш | відпочиває | відпочивають
+
+12. Ти ___ сніданок? (Do you have breakfast?)
+   > [!answer] снідаєш
+   > [!options] снідаю | снідаєш | снідає | снідають
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. Sentences range from 4-6 words.
+> Arrange the words in the correct order. Use 5-7 words per sentence (Class I verbs only).
 
-1. читаю / Я / цікаву / книгу / нову
-   > [!answer] Я читаю нову цікаву книгу.
-   > (I read a new interesting book.) [5 words]
+1. читаю / Я / книгу / тут
+   > [!answer] Я читаю книгу тут.
+   > (I read a book here.) [4 words]
 
-2. українською / добре / говориш / Ти
-   > [!answer] Ти добре говориш українською.
-   > (You speak Ukrainian well.) [4 words]
+2. українську / добре / знаєш / Ти / мову
+   > [!answer] Ти добре знаєш українську мову.
+   > (You know Ukrainian well.) [5 words]
 
 3. знає / Вона / все / про / це
    > [!answer] Вона знає все про це.
    > (She knows everything about this.) [5 words]
 
-4. пишемо / довгого / листа / Ми / сьогодні
-   > [!answer] Ми сьогодні пишемо довгого листа.
-   > (We are writing a long letter today.) [5 words]
+4. пишемо / листа / Ми / тут
+   > [!answer] Ми пишемо листа тут.
+   > (We write a letter here.) [4 words]
 
 5. не / Я / добре / знаю / це
    > [!answer] Я не знаю це добре.
    > (I don't know this well.) [5 words]
 
-6. працює / Він / тут / кожен / день
-   > [!answer] Він працює тут кожен день.
-   > (He works here every day.) [5 words]
+6. працює / Він / тут / добре
+   > [!answer] Він добре працює тут.
+   > (He works well here.) [4 words]
 
-7. слухають / українську / музику / Вони / часто
-   > [!answer] Вони часто слухають українську музику.
-   > (They often listen to Ukrainian music.) [5 words]
+7. слухають / музику / Вони / часто
+   > [!answer] Вони часто слухають музику.
+   > (They often listen to music.) [4 words]
 
-8. сьогодні / читаєш / Ти / що / цікаве
-   > [!answer] Що цікаве ти читаєш сьогодні?
-   > (What interesting thing are you reading today?) [5 words]
+8. читаєш / Ти / що / тут
+   > [!answer] Що ти читаєш тут?
+   > (What are you reading here?) [4 words]
 
-9. завтра / працюємо / не / Ми / тут
-   > [!answer] Ми завтра не працюємо тут.
-   > (We don't work here tomorrow.) [5 words]
+9. працюємо / не / Ми / тут
+   > [!answer] Ми не працюємо тут.
+   > (We don't work here.) [4 words]
 
-10. знаю / не / Я / нічого / про / нього
-    > [!answer] Я нічого не знаю про нього.
-    > (I don't know anything about him.) [6 words]
+10. знаю / не / Я / нічого / про / це
+    > [!answer] Я нічого не знаю про це.
+    > (I don't know anything about this.) [6 words]
+
+11. вечеряє / Він / пізно / завжди
+    > [!answer] Він завжди пізно вечеряє.
+    > (He always has dinner late.) [4 words]
+
+12. малюють / діти / тут / добре
+    > [!answer] Діти добре малюють тут.
+    > (The children draw well here.) [4 words]
 
 ## match-up: Match the Pairs
 
-> Match Ukrainian verbs to their English meanings.
+> Match Ukrainian Class I verbs to their English meanings.
 
 | Left | Right |
 |------|-------|
 | читати | to read |
 | писати | to write |
 | знати | to know |
-| говорити | to speak |
 | слухати | to listen |
 | працювати | to work |
-| розуміти | to understand |
-| дивитися | to watch |
 | думати | to think |
-| хотіти | to want |
+| чекати | to wait |
+| питати | to ask |
+| відпочивати | to rest |
+| снідати | to have breakfast |
+| гуляти | to walk |
+| мріяти | to dream |
 
-## group-sort: Verb Conjugation Classes
+## group-sort: Class I Verb Endings
 
-> Sort these verbs by their conjugation class.
+> Sort these Class I verbs by their "я" form ending pattern.
 
-### Class I (-ати verbs, use -є-)
-- читати (читаю, читаЄШ, читаЄ)
-- знати (знаю, знаЄШ, знаЄ)
-- працювати (працюю, працюЄШ)
-- слухати (слухаю, слухаЄШ)
-- думати (думаю, думаЄШ)
-- писати (пишу, пишЕШ - with consonant change)
+### Regular -ю ending (no stem change)
+- читати → читаю
+- знати → знаю
+- працювати → працюю
+- слухати → слухаю
+- думати → думаю
+- чекати → чекаю
 
-### Class II (-ити verbs, use -и-)
-- говорити (говорю, говорИШ, говорИТЬ)
-- робити (роблю, робИШ)
-- бачити (бачу, бачИШ)
-- любити (люблю, любИШ)
+### Consonant change in stem
+- писати → пишу (с→ш)
+- казати → кажу (з→ж)
+- плакати → плачу (к→ч)
 
-### Irregular Verbs
-- хотіти (хочу, хочеш - stem change)
-- їсти (їм, їси - unique pattern)
-- пити (п'ю, п'єш - apostrophe)
+### -яти verbs (same pattern)
+- мріяти → мрію
+- гуляти → гуляю
+- співати → співаю
 
-## quiz: Verb Conjugation Rules
+## quiz: Class I Verb Conjugation Rules
 
-> Test your understanding of Ukrainian verb conjugation patterns.
+> Test your understanding of Class I verb conjugation patterns.
 
 1. Class I verbs (-ати) use which vowel pattern in conjugation?
    - [ ] -и- (читиш, читить)
@@ -428,12 +447,12 @@ Practice asking questions:
    - [ ] At the beginning only
    > "не" always immediately precedes the verb: Я НЕ знаю
 
-4. Which ending marks the "вони" (they) form?
+4. Which ending marks the "вони" (they) form in Class I?
    - [ ] -ємо
    - [ ] -єте
    - [ ] -є
-   - [x] -ють/-ать
-   > Third person plural ends in -ють (Class I) or -ять (Class II)
+   - [x] -ють
+   > Third person plural in Class I ends in -ють: читаЮТЬ
 
 5. How do you form "we read" (ми + читати)?
    - [ ] Ми читаю
@@ -444,8 +463,8 @@ Practice asking questions:
 
 6. The infinitive "читати" ends in "-ати". This tells you it's:
    - [x] Class I (є-pattern)
-   - [ ] Class II (и-pattern)
-   - [ ] Irregular
+   - [ ] A different verb class
+   - [ ] A special verb
    - [ ] Past tense
    > -ати/-яти infinitives are Class I verbs
 
@@ -457,10 +476,10 @@ Practice asking questions:
    > "Вона" (3rd person singular) takes -є: працюЄ
 
 8. What happens to the stem when conjugating "писати"?
-   - [x] піс- (stem changes)
-   - [ ] писа- (stays same)
-   - [ ] пис- (drops -ати)
-   - [ ] писат- (keeps -т-)
+   - [x] с changes to ш (пишу)
+   - [ ] The stem stays exactly the same
+   - [ ] The -ати is removed completely
+   - [ ] Nothing changes
    > писати → пишу (consonant alternation: с→ш)
 
 9. How do you say "You (informal) know"?
@@ -477,24 +496,38 @@ Practice asking questions:
     - [ ] Читаю я не.
     > Word order: Subject + НЕ + Verb
 
-## true-false: Conjugation Rules
+11. How do you say "They work" (вони + працювати)?
+    - [ ] Вони працюю
+    - [ ] Вони працюєш
+    - [ ] Вони працює
+    - [x] Вони працюють
+    > "Вони" takes -ють ending: працюЮТЬ
 
-> Determine if each statement about Ukrainian verb conjugation is true or false.
+12. Which verb is Class I based on its ending?
+    - [x] слухати (to listen)
+    - [ ] A verb ending in -ити
+    - [ ] A verb ending in -іти
+    - [ ] None of these
+    > -ати ending = Class I: слухаю, слухаЄШ, слухаЄ...
+
+## true-false: Class I Conjugation Rules
+
+> Determine if each statement about Class I verb conjugation is true or false.
 
 - [x] Class I verbs (-ати) use -є- in their conjugation: читаєш, читає.
    > Correct! The -є- pattern is the hallmark of Class I.
 
-- [ ] All verbs use the same conjugation pattern.
-   > Incorrect. Class I (-ати) and Class II (-ити) have different patterns.
+- [ ] All Class I verbs have exactly the same stem in all forms.
+   > Incorrect. Some verbs like писати have consonant changes: пишу, пишеш (с→ш).
 
-- [x] The "я" form always ends in -ю (читаю, знаю, говорю).
-   > Correct! First person singular universally ends in -ю.
+- [x] The "я" form of Class I verbs ends in -ю (читаю, знаю, слухаю).
+   > Correct! First person singular of Class I verbs ends in -ю.
 
 - [ ] "Не" is placed after the verb in negation.
    > Incorrect. "Не" always goes BEFORE the verb: "Я не знаю".
 
-- [x] "Вони" (they) takes -ють (Class I) or -ять (Class II).
-   > Correct! читаЮТЬ (I), говорЯТЬ (II).
+- [x] "Вони" (they) takes -ють in Class I verbs.
+   > Correct! читаЮТЬ, знаЮТЬ, працюЮТЬ.
 
 - [ ] "Ми читає" is correct for "we read".
    > Incorrect. "Ми" requires -ємо: "Ми читаЄМО".
@@ -502,14 +535,91 @@ Practice asking questions:
 - [x] Ukrainian has no auxiliary verbs for negation - just add "не".
    > Correct! Unlike English "do not", Ukrainian simply adds "не".
 
-- [x] The infinitive (-ти) tells you the conjugation class.
-   > Correct! -ати = Class I, -ити = Class II (mostly).
+- [x] The infinitive ending -ати tells you it's Class I.
+   > Correct! -ати/-яти = Class I verbs.
 
 - [ ] "Ви" and "вони" use the same verb ending.
-   > Incorrect. Ви = -єте/-ите, Вони = -ють/-ять.
+   > Incorrect. Ви = -єте, Вони = -ють.
 
-- [x] "Ми" and "ви" are formal plural, but "ви" is also formal singular.
+- [x] "Ви" can mean both "you (plural)" and "you (formal singular)".
    > Correct! "Ви" = you (plural) OR you (formal singular).
+
+- [x] Some verbs have consonant changes like с→ш (писати → пишу).
+   > Correct! This is a regular consonant alternation pattern.
+
+- [ ] "Він читаю книгу" is grammatically correct.
+   > Incorrect. "Він" requires 3rd person: "Він читаЄ книгу".
+
+## match-up: Conjugation Forms
+
+> Match each pronoun + Class I verb combination with the correct form.
+
+| Left | Right |
+|------|-------|
+| я + читати | читаю |
+| ти + знати | знаєш |
+| вона + працювати | працює |
+| ми + писати | пишемо |
+| ви + слухати | слухаєте |
+| вони + думати | думають |
+| він + чекати | чекає |
+| я + мріяти | мрію |
+| ти + питати | питаєш |
+| ми + знати | знаємо |
+| вони + читати | читають |
+| ви + гуляти | гуляєте |
+
+## fill-in: Negative Sentences
+
+> Choose the correct Class I verb form to complete each negative sentence.
+
+1. Я не ___ цього. (I don't know this.)
+   > [!answer] знаю
+   > [!options] знаю | знаєш | знає | знають
+
+2. Вона не ___ листа. (She doesn't write a letter.)
+   > [!answer] пише
+   > [!options] пишу | пишеш | пише | пишуть
+
+3. Ми не ___ тут. (We don't work here.)
+   > [!answer] працюємо
+   > [!options] працюю | працюєш | працюємо | працюють
+
+4. Вони не ___ це. (They don't know this.)
+   > [!answer] знають
+   > [!options] знаю | знаєш | знає | знають
+
+5. Ти не ___ листи? (You don't write letters?)
+   > [!answer] пишеш
+   > [!options] пишу | пишеш | пише | пишуть
+
+6. Він не ___ музику. (He doesn't listen to music.)
+   > [!answer] слухає
+   > [!options] слухаю | слухаєш | слухає | слухають
+
+7. Я не ___ книги. (I don't read books.)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
+
+8. Ви не ___ тут? (You don't work here?)
+   > [!answer] працюєте
+   > [!options] працюю | працюєш | працюємо | працюєте
+
+9. Ми не ___ вранці. (We don't have breakfast in the morning.)
+   > [!answer] снідаємо
+   > [!options] снідаю | снідаєш | снідає | снідаємо
+
+10. Вона не ___ музику. (She doesn't listen to music.)
+    > [!answer] слухає
+    > [!options] слухаю | слухаєш | слухає | слухають
+
+11. Вони не ___ тут. (They don't rest here.)
+    > [!answer] відпочивають
+    > [!options] відпочиваю | відпочиваєш | відпочиває | відпочивають
+
+12. Ти не ___ це? (You don't think this?)
+    > [!answer] думаєш
+    > [!options] думаю | думаєш | думає | думають
 
 ---
 
@@ -521,50 +631,41 @@ Practice asking questions:
 | писати | /pɪˈsɑtɪ/ | to write | verb | - | Class I with с→ш: пишу, пишеш... |
 | знати | /ˈznɑtɪ/ | to know | verb | - | Class I: знаю, знаєш... |
 | працювати | /prɑt͡sʲuˈvɑtɪ/ | to work | verb | - | Class I: працюю, працюєш... |
-| говорити | /ɦɔvɔˈrɪtɪ/ | to speak | verb | - | Class II: говорю, говориш... |
-| робити | /rɔˈbɪtɪ/ | to do, to make | verb | - | Class II: роблю, робиш... |
-| дивитися | /dɪvɪˈtɪsʲɑ/ | to watch, look | verb | - | Reflexive Class II |
 | слухати | /ˈsluxɑtɪ/ | to listen | verb | - | Class I: слухаю, слухаєш... |
-| розуміти | /rɔzuˈmʲitɪ/ | to understand | verb | - | Class II: розумію, розумієш... |
 | думати | /ˈdumɑtɪ/ | to think | verb | - | Class I: думаю, думаєш... |
-| хотіти | /xɔˈtʲitɪ/ | to want | verb | - | Irregular: хочу, хочеш... |
-| чекати | /tʃɛˈkɑtɪ/ | to wait | verb | - | Class I: чекаю |
-| питати | /pɪˈtɑtɪ/ | to ask | verb | - | Class I: питаю |
-| відповідати | /vʲidpɔvʲiˈdɑtɪ/ | to answer | verb | - | Class I: відповідаю |
-| відпочивати | /vʲidpɔtʃɪˈvɑtɪ/ | to rest | verb | - | Class I: відпочиваю |
-| снідати | /sʲnʲiˈdɑtɪ/ | to have breakfast | verb | - | Class I: снідаю |
-| обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - | Class I: обідаю |
-| вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - | Class I: вечеряю |
-| гуляти | /ɦuˈlʲɑtɪ/ | to walk, stroll | verb | - | Class I: гуляю |
-| грати | /ˈɦrɑtɪ/ | to play | verb | - | Class I: граю |
-| співати | /sʲpʲiˈvɑtɪ/ | to sing | verb | - | Class I: співаю |
-| танцювати | /tɑnt͡sʲuˈvɑtɪ/ | to dance | verb | - | Class I: танцюю |
-| малювати | /mɑlʲuˈvɑtɪ/ | to draw, paint | verb | - | Class I: малюю |
-| мріяти | /ˈmrʲijɑtɪ/ | to dream | verb | - | Class I: мрію |
-| починати | /pɔtʃɪˈnɑtɪ/ | to start | verb | - | Class I: починаю |
-| закінчувати | /zɑˈkʲintʃuˈvɑtɪ/ | to finish | verb | - | Class I: закінчую |
-| шукати | /ʃuˈkɑtɪ/ | to search, look for | verb | - | Class I: шукаю |
-| знаходити | /znɑˈxɔdɪtɪ/ | to find | verb | - | Class II: знаходжу |
-| називати | /nɑzɪˈvɑtɪ/ | to name, call | verb | - | Class I: називаю |
+| чекати | /tʃɛˈkɑtɪ/ | to wait | verb | - | Class I: чекаю, чекаєш... |
+| питати | /pɪˈtɑtɪ/ | to ask | verb | - | Class I: питаю, питаєш... |
+| відповідати | /vʲidpɔvʲiˈdɑtɪ/ | to answer | verb | - | Class I: відповідаю... |
+| відпочивати | /vʲidpɔtʃɪˈvɑtɪ/ | to rest | verb | - | Class I: відпочиваю... |
+| снідати | /sʲnʲiˈdɑtɪ/ | to have breakfast | verb | - | Class I: снідаю... |
+| обідати | /ɔˈbʲidɑtɪ/ | to have lunch | verb | - | Class I: обідаю... |
+| вечеряти | /vɛtʃɛˈrʲɑtɪ/ | to have dinner | verb | - | Class I: вечеряю... |
+| гуляти | /ɦuˈlʲɑtɪ/ | to walk, stroll | verb | - | Class I: гуляю... |
+| грати | /ˈɦrɑtɪ/ | to play | verb | - | Class I: граю... |
+| співати | /sʲpʲiˈvɑtɪ/ | to sing | verb | - | Class I: співаю... |
+| танцювати | /tɑnt͡sʲuˈvɑtɪ/ | to dance | verb | - | Class I: танцюю... |
+| малювати | /mɑlʲuˈvɑtɪ/ | to draw, paint | verb | - | Class I: малюю... |
+| мріяти | /ˈmrʲijɑtɪ/ | to dream | verb | - | Class I: мрію... |
+| починати | /pɔtʃɪˈnɑtɪ/ | to start | verb | - | Class I: починаю... |
+| закінчувати | /zɑˈkʲintʃuˈvɑtɪ/ | to finish | verb | - | Class I: закінчую... |
+| шукати | /ʃuˈkɑtɪ/ | to search | verb | - | Class I: шукаю... |
+| називати | /nɑzɪˈvɑtɪ/ | to name, call | verb | - | Class I: називаю... |
 | не | /nɛ/ | not | part | - | Goes before verb |
 | лист | /lɪst/ | letter | noun | m | Object of писати |
-| кожен день | /ˈkɔʒɛn dɛnʲ/ | every day | phrase | - | Time expression |
-| завтра | /ˈzɑvtrɑ/ | tomorrow | adv | - | Time word |
-| сьогодні | /sʲɔˈɦɔdnʲi/ | today | adv | - | Time word |
 ---
 
 # Conjugation Summary
 
 ## Class I Pattern (-ати/-яти)
 
-| Person | Ending | читати | знати |
-|--------|--------|--------|-------|
-| я | -ю | читаю | знаю |
-| ти | -єш | читаєш | знаєш |
-| він/вона | -є | читає | знає |
-| ми | -ємо | читаємо | знаємо |
-| ви | -єте | читаєте | знаєте |
-| вони | -ють | читають | знають |
+| Person | Ending | читати | знати | працювати |
+|--------|--------|--------|-------|-----------|
+| я | -ю | читаю | знаю | працюю |
+| ти | -єш | читаєш | знаєш | працюєш |
+| він/вона | -є | читає | знає | працює |
+| ми | -ємо | читаємо | знаємо | працюємо |
+| ви | -єте | читаєте | знаєте | працюєте |
+| вони | -ють | читають | знають | працюють |
 
 ## Common Consonant Changes
 
@@ -573,12 +674,11 @@ Practice asking questions:
 | с | ш | писати → пишу |
 | з | ж | казати → кажу |
 | к | ч | плакати → плачу |
-| г | ж | могти → можу |
 
 ## Memory Trick
 
 **Class I has є everywhere!** (except я and вони forms)
-- читаю, читає**ш**, читає, читаємо, читаєте, читають
+- чита**ю**, чита**єш**, чита**є**, чита**ємо**, чита**єте**, чита**ють**
 
 ---
 
@@ -588,14 +688,14 @@ Practice asking questions:
 >
 > - Ukrainian verbs change endings based on who does the action
 > - All infinitives end in **-ти** (to ___)
-> - Two main conjugation classes exist (Class I and II)
-> - Class I (-ати/-яти) endings: -ю, -єш, -є, -ємо, -єте, -ють
+> - Class I verbs (-ати/-яти) are the most common pattern
+> - Class I endings: -ю, -єш, -є, -ємо, -єте, -ють
 > - Negation: add **не** before the verb
-> - Some verbs have consonant changes (с→ш, з→ж, etc.)
+> - Some verbs have consonant changes (с→ш, з→ж, к→ч)
 
 > 🎯 **Coming Next**
 >
 > In Module 07, you'll learn how to ask and answer:
 > - **Yes/No Questions:** Чи ти знаєш?
 > - **Wh-Questions:** Що, де, коли, хто?
-> - **Negation:** Using "не" and double negatives correctly.
+> - **Double Negatives:** Я нічого не знаю.

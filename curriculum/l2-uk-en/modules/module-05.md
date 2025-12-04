@@ -141,26 +141,6 @@ This is called **agreement** - and once you understand the pattern, it becomes a
 >
 > In formal situations, you must use ваш/ваша/ваше/ваші, not твій!
 
-### Other Possessives
-
-**"His/Her/Its/Their" don't change!**
-
-| Pronoun | Form | Example |
-|---------|------|---------|
-| his | його (yoho) | його книга, його стіл, його вікно |
-| her | її (yiyi) | її книга, її стіл, її вікно |
-| its | його | (same as "his") |
-| their | їхній/їхня/їхнє | їхній дім, їхня машина |
-
-> 💡 **Did You Know?**
->
-> **Його** and **її** never change form! They stay the same regardless of the noun's gender:
-> - його книга (his/its book - feminine noun)
-> - його стіл (his/its table - masculine noun)
-> - його вікно (his/its window - neuter noun)
->
-> This makes them easier than мій/твій!
-
 > 🎯 **Fun Fact: Whose Chair?**
 >
 > The word **чий** (whose) also follows the gender pattern:
@@ -250,14 +230,6 @@ Change "this" to "that" and "my" to "your":
 
 ---
 
----
-
----
-
----
-
----
-
 # Activities
 
 ## fill-in: Complete the Sentences
@@ -304,49 +276,65 @@ Change "this" to "that" and "my" to "your":
    > [!answer] твій
    > [!options] твій | твоя | твоє | твої
 
+11. ___ двері. (These doors.) [plural]
+   > [!answer] Ці
+   > [!options] Цей | Ця | Це | Ці
+
+12. Це ___ крісло. (This is my armchair.) [neuter]
+   > [!answer] моє
+   > [!options] мій | моя | моє | мої
+
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. Sentences range from 4-6 words.
+> Arrange the words in the correct order. Sentences range from 5-6 words.
 
-1. холодильник / Цей / мій / великий / новий
-   > [!answer] Цей великий холодильник мій новий.
-   > (This big fridge is my new one.) [5 words]
+1. холодильник / Цей / мій / а / той / твій
+   > [!answer] Цей холодильник мій, а той твій.
+   > (This fridge is mine, and that one is yours.) [6 words]
 
-2. праска / Ця / моя / нова
-   > [!answer] Ця нова праска моя.
-   > (This new iron is mine.) [4 words]
+2. сумка / Ця / моя / чи / твоя
+   > [!answer] Ця сумка моя чи твоя?
+   > (Is this bag mine or yours?) [5 words]
 
 3. вікно / моє / Це / чи / твоє
    > [!answer] Це вікно моє чи твоє?
    > (Is this window mine or yours?) [5 words]
 
-4. ключ / Де / мій / від / квартири
-   > [!answer] Де мій ключ від квартири?
-   > (Where is my key to the apartment?) [5 words]
+4. ключ / Де / мій / а / твій / там
+   > [!answer] Де мій ключ, а твій там?
+   > (Where is my key, and yours is there?) [6 words]
 
-5. твоя / Це / нова / сумка / чи
-   > [!answer] Чи це твоя нова сумка?
-   > (Is this your new bag?) [5 words]
+5. тарілка / Ця / моя / а / та / твоя
+   > [!answer] Ця тарілка моя, а та твоя.
+   > (This plate is mine, and that one is yours.) [6 words]
 
-6. телефон / Той / твій / там / старий
-   > [!answer] Той старий телефон там твій.
-   > (That old phone there is yours.) [5 words]
+6. телефон / Той / твій / там / чи / мій
+   > [!answer] Той телефон там твій чи мій?
+   > (Is that phone there yours or mine?) [6 words]
 
-7. диван / Це / мій / а / той / твій
-   > [!answer] Це диван мій, а той твій.
+7. диван / Цей / мій / а / той / твій
+   > [!answer] Цей диван мій, а той твій.
    > (This sofa is mine, and that one is yours.) [6 words]
 
-8. ложка / Ця / моя / срібна / красива
-   > [!answer] Ця красива срібна ложка моя.
-   > (This beautiful silver spoon is mine.) [5 words]
+8. ложка / Ця / моя / а / та / твоя
+   > [!answer] Ця ложка моя, а та твоя.
+   > (This spoon is mine, and that one is yours.) [6 words]
 
 9. стілець / Цей / твій / чи / мій
    > [!answer] Цей стілець твій чи мій?
    > (Is this chair yours or mine?) [5 words]
 
-10. ручка / Де / твоя / синя
-    > [!answer] Де твоя синя ручка?
-    > (Where is your blue pen?) [4 words]
+10. ручка / Де / твоя / а / моя / тут
+    > [!answer] Де твоя ручка, а моя тут.
+    > (Where is your pen, and mine is here.) [6 words]
+
+11. годинник / Цей / мій / чи / твій
+    > [!answer] Цей годинник мій чи твій?
+    > (Is this clock mine or yours?) [5 words]
+
+12. картина / Та / твоя / чи / моя / там
+    > [!answer] Та картина там твоя чи моя?
+    > (Is that painting there yours or mine?) [6 words]
 
 ## group-sort: Sort by Gender
 
@@ -362,13 +350,12 @@ Change "this" to "that" and "my" to "your":
 - ключ
 - гаманець
 - рюкзак
-- пилосос
+- годинник
 
 ### Feminine (Жіночий рід)
 - шафа
 - лампа
 - плита
-- праска
 - чашка
 - ложка
 - виделка
@@ -376,6 +363,7 @@ Change "this" to "that" and "my" to "your":
 - пляшка
 - сумка
 - ручка
+- картина
 
 ### Neuter (Середній рід)
 - ліжко
@@ -393,15 +381,17 @@ Change "this" to "that" and "my" to "your":
 | Left | Right |
 |------|-------|
 | холодильник | fridge |
-| праска | iron |
-| пилосос | vacuum cleaner |
 | плита | stove |
-| мікрохвильовка | microwave |
 | шафа | wardrobe |
 | диван | sofa |
 | крісло | armchair |
 | ліжко | bed |
 | стілець | chair |
+| дзеркало | mirror |
+| годинник | clock, watch |
+| чашка | cup |
+| тарілка | plate |
+| гаманець | wallet |
 
 ## quiz: Gender Agreement Rules
 
@@ -428,12 +418,12 @@ Change "this" to "that" and "my" to "your":
    - [ ] ці крісло
    > Neuter nouns (-о ending) take "це"
 
-4. Why doesn't "його" change form like "мій"?
-   - [ ] It's a neuter form
-   - [ ] It's defective
-   - [x] It's a frozen genitive form
-   - [ ] It's plural only
-   > "його" and "її" never change - they're invariable
+4. How do you say "this cup" (чашка = feminine)?
+   - [ ] цей чашка
+   - [x] ця чашка
+   - [ ] це чашка
+   - [ ] ці чашка
+   > Feminine nouns take "ця"
 
 5. Which is correct for "that computer" (masculine)?
    - [x] той комп'ютер
@@ -463,12 +453,12 @@ Change "this" to "that" and "my" to "your":
    - [ ] це (m), ця (f), цей (n), ці (pl)
    > The pattern is: -ей (m), -я (f), -е (n), -і (pl)
 
-9. "Її шафа, її стіл, її вікно" - what's special about "її"?
-   - [ ] It changes for each gender
-   - [x] It stays the same for all genders
-   - [ ] It's only for feminine nouns
-   - [ ] It's only for masculine nouns
-   > "її" is invariable - never changes regardless of noun gender
+9. How do you say "your window" (твій, informal)?
+   - [ ] твій вікно
+   - [ ] твоя вікно
+   - [x] твоє вікно
+   - [ ] твої вікно
+   > "Вікно" is neuter, so use "твоє"
 
 10. Which question word follows the same gender pattern as "мій"?
     - [x] чий (whose)
@@ -476,6 +466,20 @@ Change "this" to "that" and "my" to "your":
     - [ ] де (where)
     - [ ] хто (who)
     > "чий, чия, чиє, чиї" follows the same pattern as "мій, моя, моє, мої"
+
+11. "Дзеркало" ends in -о. Which possessive is correct?
+    - [ ] мій дзеркало
+    - [ ] моя дзеркало
+    - [x] моє дзеркало
+    - [ ] мої дзеркало
+    > Neuter nouns (-о ending) take "моє"
+
+12. What's the plural demonstrative "those"?
+    - [ ] той
+    - [ ] та
+    - [ ] те
+    - [x] ті
+    > "Ті" is the plural form of "той/та/те" meaning "those"
 
 ## true-false: Grammar Rules
 
@@ -490,8 +494,8 @@ Change "this" to "that" and "my" to "your":
 - [x] Possessives change form based on the noun's gender, not the owner's.
    > Correct! "мій стіл" (my table), "моя книга" (my book) - noun gender matters.
 
-- [ ] "Його" and "її" change form like "мій/моя/моє".
-   > Incorrect. "Його" and "її" are frozen genitive forms - they never change.
+- [ ] "Той" and "та" both work for masculine nouns.
+   > Incorrect. "Той" is masculine, "та" is feminine. Use "той стіл", not "та стіл".
 
 - [x] "Це" can mean both "this" (demonstrative) and "this is" (identifier).
    > Correct! "Це вікно" = this window; "Це вікно" = this is a window (context).
@@ -502,14 +506,91 @@ Change "this" to "that" and "my" to "your":
 - [x] Plural "these/those" have only one form for all genders.
    > Correct! "Ці" (these) and "ті" (those) work for all genders in plural.
 
-- [x] Third-person possessives (його, її, їхній) indicate the owner's gender.
-   > Correct! його = his/its, її = her, їхній = their.
+- [x] The question word "чий" follows the same pattern as "мій".
+   > Correct! чий/чия/чиє/чиї matches мій/моя/моє/мої.
 
 - [ ] "Моє стіл" is correct because "моє" is neuter.
    > Incorrect. "стіл" is masculine → requires "мій стіл".
 
 - [x] Demonstratives answer "which one?" while possessives answer "whose?".
    > Correct! цей/той = which, мій/твій = whose.
+
+- [x] "Чий" changes based on the gender of the thing being asked about.
+   > Correct! чий стіл (m), чия книга (f), чиє вікно (n), чиї речі (pl).
+
+- [ ] "Твій стіна" is correct because you're asking about "your wall".
+   > Incorrect. "стіна" is feminine → requires "твоя стіна".
+
+## match-up: Demonstrative Forms
+
+> Match each noun with the correct demonstrative "this".
+
+| Left | Right |
+|------|-------|
+| ___ стіл | цей |
+| ___ книга | ця |
+| ___ вікно | це |
+| ___ двері | ці |
+| ___ телефон | цей |
+| ___ сумка | ця |
+| ___ крісло | це |
+| ___ ключі | ці |
+| ___ лампа | ця |
+| ___ диван | цей |
+| ___ ліжко | це |
+| ___ гаманець | цей |
+
+## fill-in: Possessive Agreement
+
+> Choose the correct possessive pronoun for each sentence.
+
+1. Це ___ книга. (This is my book.)
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
+
+2. Це ___ стіл. (This is your table.)
+   > [!answer] твій
+   > [!options] твій | твоя | твоє | твої
+
+3. Де ___ ключ? (Where is my key?)
+   > [!answer] мій
+   > [!options] мій | моя | моє | мої
+
+4. Це ___ сумка? (Is this your bag?)
+   > [!answer] твоя
+   > [!options] твій | твоя | твоє | твої
+
+5. Де ___ телефон? (Where is your phone?)
+   > [!answer] твій
+   > [!options] твій | твоя | твоє | твої
+
+6. Це ___ друзі. (These are my friends.)
+   > [!answer] мої
+   > [!options] мій | моя | моє | мої
+
+7. Де ___ ручка? (Where is my pen?)
+   > [!answer] моя
+   > [!options] мій | моя | моє | мої
+
+8. Це ___ вікно? (Is this your window?)
+   > [!answer] твоє
+   > [!options] твій | твоя | твоє | твої
+
+9. Де ___ крісло? (Where is my armchair?)
+   > [!answer] моє
+   > [!options] мій | моя | моє | мої
+
+10. Це ___ тарілка. (This is your plate.)
+    > [!answer] твоя
+    > [!options] твій | твоя | твоє | твої
+
+11. Де ___ гаманець? (Where is my wallet?)
+    > [!answer] мій
+    > [!options] мій | моя | моє | мої
+
+12. Це ___ двері. (These are your doors.)
+    > [!answer] твої
+    > [!options] твій | твоя | твоє | твої
 
 ---
 
@@ -528,8 +609,6 @@ Change "this" to "that" and "my" to "your":
 | мої | /mɔˈji/ | my (plural) | pron | pl | Possessive |
 | твоє | /tvɔˈjɛ/ | your (n, informal) | pron | n | Informal possessive |
 | твої | /tvɔˈji/ | your (pl, informal) | pron | pl | Informal possessive |
-| його | /jɔˈɦɔ/ | his, its | pron | - | Invariable - never changes |
-| її | /jiˈji/ | her, hers | pron | - | Invariable - never changes |
 | чашка | /ˈtʃɑʃkɑ/ | cup | noun | f |
 | ложка | /ˈlɔʒkɑ/ | spoon | noun | f |
 | виделка | /vɪˈdɛlkɑ/ | fork | noun | f |
@@ -550,9 +629,6 @@ Change "this" to "that" and "my" to "your":
 | шафа | /ˈʃɑfɑ/ | wardrobe | noun | f |
 | холодильник | /xɔlɔˈdɪlʲnɪk/ | fridge | noun | m |
 | плита | /plɪˈtɑ/ | stove | noun | f |
-| мікрохвильовка | /mʲikrɔxvɪˈlʲɔvkɑ/ | microwave | noun | f |
-| праска | /ˈprɑskɑ/ | iron | noun | f |
-| пилосос | /pɪlɔˈsɔs/ | vacuum cleaner | noun | m |
 | стілець | /ˈstʲilɛt͡sʲ/ | chair | noun | m | Furniture |
 | ліжко | /ˈlʲiʒkɔ/ | bed | noun | n | Furniture |
 | лампа | /ˈlɑmpɑ/ | lamp | noun | f | Cognate with English |
@@ -575,12 +651,6 @@ Change "this" to "that" and "my" to "your":
 | Neuter | -о/-е | це | те | моє | твоє |
 | Plural | (various) | ці | ті | мої | твої |
 
-## Invariable Possessives
-
-These NEVER change regardless of noun gender:
-- **його** (his/its) - його книга, його стіл, його вікно
-- **її** (her) - її книга, її стіл, її вікно
-
 ---
 
 # Summary
@@ -592,7 +662,6 @@ These NEVER change regardless of noun gender:
 > - "That" = той (m), та (f), те (n), ті (pl)
 > - "My" = мій (m), моя (f), моє (n), мої (pl)
 > - "Your" (informal) = твій, твоя, твоє, твої
-> - **Його** (his) and **її** (her) never change!
 > - The pattern is consistent - learn it once, apply everywhere
 
 > 🎯 **Coming Next**

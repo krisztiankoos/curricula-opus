@@ -61,6 +61,14 @@ These letters look AND sound like their Latin equivalents:
 
 Trust these! They work exactly as you'd expect.
 
+**Practice reading with True Friends:**
+- МАМА (mama) - mom
+- ТАТО (tato) - dad
+- КІНО (kino) - cinema
+- КАСА (kasa) - cash register
+- АТОМ (atom) - atom
+- ТАКТ (takt) - tact
+
 > 📜 **History Bite: The Greek Connection**
 >
 > Both the Latin alphabet (which English uses) and Cyrillic come from the **Greek alphabet**. That's why letters like A, E, K, M, O, and T look the same - they share Greek ancestors! When you see these "True Friends," you're seeing evidence of how alphabets evolved from ancient Greece to modern times.
@@ -79,6 +87,14 @@ DANGER! These look Latin but sound completely different:
 | Х х | X | KH (as in German "Bach") |
 
 Memorize these! They cause the most confusion for beginners.
+
+**Practice reading with False Friends:**
+- РЕСТОРАН (restoran) - restaurant (Р=R, С=S, Н=N)
+- СУПЕРМАРКЕТ (supermarket) - supermarket (С=S, У=U, Р=R)
+- ПАСПОРТ (pasport) - passport (Р=R twice!)
+- СТУДЕНТ (student) - student (С=S, У=U, Н=N)
+- ТУРИСТ (turyst) - tourist (У=U, Р=R, С=S)
+- ХОКЕЙ (khokei) - hockey (Х=KH)
 
 > ⚡ **Pro Tip: Remember the False Friends**
 >
@@ -109,9 +125,17 @@ These don't exist in Latin but are straightforward:
 | П п | P | Like a doorway/portal |
 | Ф ф | F | Like a person with arms out |
 
-> 🔗 **Language Link: B and V**
+**Practice reading with New Letters:**
+- БАНК (bank) - bank (Б=B)
+- ДОКТОР (doktor) - doctor (Д=D)
+- ЗЕБРА (zebra) - zebra (З=Z, Б=B)
+- ЛАМПА (lampa) - lamp (Л=L, П=P)
+- ПЛАН (plan) - plan (П=P, Л=L)
+- ФУТБОЛ (futbol) - football (Ф=F, Б=B, Л=L)
+
+> 🔗 **Language Link: Don't Confuse Б and В**
 >
-> Notice that Ukrainian has **two** letters for B-sounds: **Б** (true B) and **В** (V sound). English only has one! This is why some Ukrainian words borrowed into English seem to swap B and V. For example, the name "Volodymyr" (Володимир) is sometimes written "Vladimir" because Russian В sounds like V to English ears.
+> Remember: **Б** = B sound, **В** = V sound. These are completely different letters with different sounds! The В looking like Latin B is a classic "False Friend" trap from Module 01's Group 2.
 
 ## grammar
 
@@ -134,17 +158,40 @@ In Ukrainian, every noun has a **gender**. It's not about biology (mostly) - it'
 
 To say "This is...", you just say **Це** (Tse). No "is" verb needed!
 
-- **Це** парк. (This is a park.)
-- **Це** мама. (This is mom.)
-
-> 🎬 **Pop Culture Moment: "I am Groot"**
+> 💡 **Sight Word Alert**
 >
-> In Ukrainian, Groot would say: **Я є Ґрут** (Ya ye Grut). That's only 3 words! But don't worry - we won't teach you 3-word sentences. Even A1 learners deserve better than tree-speak. Our sentences start at 5+ words because you're here to actually communicate, not just announce your species. 🌳
+> The word **Це** contains the letter Ц which you'll formally learn in Module 02. For now, just memorize **Це** (Tse) as a "sight word" - it's so common and useful that we introduce it early!
 
-Combine it with "my":
-- **Це мій** телефон. (This is my telephone.) - *Masculine (consonant)*
-- **Це моя** лампа. (This is my lamp.) - *Feminine (-a)*
-- **Це моє** радіо. (This is my radio.) - *Neuter (-o)*
+**Examples with Це (Tse):**
+- Це парк. (Tse park) - This is a park.
+- Це мама. (Tse mama) - This is mom.
+- Це банк. (Tse bank) - This is a bank.
+- Це кафе. (Tse kafe) - This is a café.
+- Це метро. (Tse metro) - This is a metro.
+- Це ресторан. (Tse restoran) - This is a restaurant.
+- Це театр. (Tse teatr) - This is a theater.
+- Це студент. (Tse student) - This is a student.
+
+**Combine Це with "my" (мій/моя/моє):**
+
+> 💡 **Sight Word Alert**
+>
+> The pronouns **моя** (moya) and **моє** (moye) contain letters Я and Є which you'll learn in Module 02. For now, treat these three forms as sight words:
+> - **мій** (miy) = my (masculine) - uses only known letters!
+> - **моя** (moya) = my (feminine) - contains Я (preview)
+> - **моє** (moye) = my (neuter) - contains Є (preview)
+
+| Ukrainian | Transliteration | English | Gender |
+|-----------|-----------------|---------|--------|
+| Це мій телефон. | Tse miy telefon. | This is my phone. | Masculine |
+| Це мій доктор. | Tse miy doktor. | This is my doctor. | Masculine |
+| Це мій план. | Tse miy plan. | This is my plan. | Masculine |
+| Це моя мама. | Tse moya mama. | This is my mom. | Feminine |
+| Це моя лампа. | Tse moya lampa. | This is my lamp. | Feminine |
+| Це моя музика. | Tse moya muzyka. | This is my music. | Feminine |
+| Це моє радіо. | Tse moye radio. | This is my radio. | Neuter |
+| Це моє фото. | Tse moye foto. | This is my photo. | Neuter |
+| Це моє метро. | Tse moye metro. | This is my metro. | Neuter |
 
 ## practice
 
@@ -160,10 +207,12 @@ When you see a Cyrillic word:
 
 Sound out each word. Most are international words you'll recognize:
 
-БАНК → B-A-N-K → bank
-ПАРК → P-A-R-K → park
-МЕТРО → M-E-T-R-O → metro
-КАФЕ → K-A-F-E → café
+- БАНК → B-A-N-K → bank
+- ПАРК → P-A-R-K → park
+- МЕТРО → M-E-T-R-O → metro
+- КАФЕ → K-A-F-E → café
+- СТУДЕНТ → S-T-U-D-E-N-T → student
+- ФУТБОЛ → F-U-T-B-O-L → football
 
 > 🌍 **Real World: Cognates Everywhere**
 >
@@ -207,147 +256,171 @@ Read these tricky words:
 
 ---
 
----
-
----
-
----
-
----
-
 # Activities
 
 ## fill-in: False Friends - What Sound?
 
 > The letter looks Latin but sounds different! Choose the correct sound.
 
-1. The Ukrainian letter **Р** makes the sound ___.
+1. The Ukrainian letter **Р** makes the ___ sound.
    > [!answer] [r] like "run"
    > [!options] [p] like "park" | [r] like "run" | [b] like "bat" | [d] like "dog"
 
-2. The Ukrainian letter **В** makes the sound ___.
+2. The Ukrainian letter **В** makes the ___ sound.
    > [!answer] [v] like "van"
    > [!options] [b] like "bat" | [v] like "van" | [w] like "win" | [f] like "fan"
 
-3. The Ukrainian letter **Н** makes the sound ___.
+3. The Ukrainian letter **Н** makes the ___ sound.
    > [!answer] [n] like "no"
    > [!options] [h] like "hat" | [n] like "no" | [m] like "map" | [ng] like "sing"
 
-4. The Ukrainian letter **С** makes the sound ___.
+4. The Ukrainian letter **С** makes the ___ sound.
    > [!answer] [s] like "sun"
    > [!options] [k] like "cat" | [s] like "sun" | [ch] like "chin" | [sh] like "ship"
 
-5. The Ukrainian letter **Х** makes the sound ___.
+5. The Ukrainian letter **Х** makes the ___ sound.
    > [!answer] [kh] like Scottish "loch"
    > [!options] [x] like "box" | [h] like "hat" | [kh] like Scottish "loch" | [k] like "cat"
 
-6. The Ukrainian letter **У** makes the sound ___.
+6. The Ukrainian letter **У** makes the ___ sound.
    > [!answer] [u] like "moon"
    > [!options] [y] like "yes" | [u] like "moon" | [oo] like "book" | [ju] like "you"
 
-7. The word "студент" sounds like ___.
-   > [!answer] stoo-DENT
-   > [!options] STOO-dent | stoo-DENT | STYOO-dent | stu-DYENT
+7. The word "парк" has the letter Р which sounds ___.
+   > [!answer] like English R
+   > [!options] like English P | like English R | like English B | silent
 
-8. The word "метро" sounds like ___.
-   > [!answer] meh-TRO
-   > [!options] MEE-tro | MET-ro | meh-TRO | may-TROH
+8. The word "студент" contains ___ False Friend letters.
+   > [!answer] three (С, У, Н)
+   > [!options] one (С) | two (С, У) | three (С, У, Н) | four (С, У, Н, Т)
 
-9. In "доктор", the letter "о" is pronounced ___.
-   > [!answer] always as [o], never reduced
-   > [!options] as [a] like in Russian | always as [o], never reduced | sometimes [o], sometimes [a] | silent
+9. In "ресторан", the Р sounds like ___ in English.
+   > [!answer] R
+   > [!options] P | R | B | silent
 
-10. The word "парк" ends with the sound ___.
-    > [!answer] [k] - final consonants stay voiced
-    > [!options] [g] - voiced at the end | [k] - final consonants stay voiced | silent - not pronounced | [kh] - aspirated
+10. The word "супермаркет" starts with the ___ sound.
+    > [!answer] S (because С = S)
+    > [!options] K (because С = C) | S (because С = S) | CH (like "chin") | SH (like "ship")
 
-## fill-in: Miy, Moya, or Moye?
+11. In "хокей", the Х makes a sound like ___.
+    > [!answer] KH in "Bach"
+    > [!options] X in "box" | H in "hat" | KH in "Bach" | silent
 
-> Choose the correct possessive pronoun based on the gender.
+12. The word "турист" has ___ False Friend letters.
+    > [!answer] three (У, Р, С)
+    > [!options] one (Р) | two (У, Р) | three (У, Р, С) | none
 
-1. Це ___ мама. (Mom - feminine)
+## fill-in: Possessive Pronouns (Мій, Моя, Моє)
+
+> Choose the correct possessive pronoun based on noun gender.
+
+1. Це ___ мама. (Mom ends in -а = feminine)
    > [!answer] моя
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-2. Це ___ тато. (Dad - masculine)
+2. Це ___ тато. (Dad ends in -о = neuter... or is it?)
    > [!answer] мій
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-3. Це ___ фото. (Photo - neuter)
+3. Це ___ фото. (Photo ends in -о = neuter)
    > [!answer] моє
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-4. Це ___ телефон. (Telephone - masculine)
+4. Це ___ телефон. (Telephone ends in consonant = masculine)
    > [!answer] мій
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-5. Це ___ лампа. (Lamp - feminine)
+5. Це ___ лампа. (Lamp ends in -а = feminine)
    > [!answer] моя
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-6. Це ___ радіо. (Radio - neuter)
+6. Це ___ радіо. (Radio ends in -о = neuter)
    > [!answer] моє
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-7. Це ___ банан. (Banana - masculine)
+7. Це ___ банан. (Banana ends in consonant = masculine)
    > [!answer] мій
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
 
-8. Це ___ піца. (Pizza - feminine)
+8. Це ___ каса. (Cash register ends in -а = feminine)
    > [!answer] моя
-   > [!options] мій | моя | моє
+   > [!options] мій | моя | моє | мої
+
+9. Це ___ метро. (Metro ends in -о = neuter)
+   > [!answer] моє
+   > [!options] мій | моя | моє | мої
+
+10. Це ___ доктор. (Doctor ends in consonant = masculine)
+    > [!answer] мій
+    > [!options] мій | моя | моє | мої
+
+11. Це ___ музика. (Music ends in -а = feminine)
+    > [!answer] моя
+    > [!options] мій | моя | моє | мої
+
+12. Це ___ відео. (Video ends in -о = neuter)
+    > [!answer] моє
+    > [!options] мій | моя | моє | мої
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. Sentences range from 4-6 words.
+> Arrange the words in correct order. Each sentence has 5-8 words.
 
-1. мій / доктор / Тато / мій
-   > [!answer] Мій тато мій доктор.
-   > (My dad is my doctor.) [4 words]
+1. мій / доктор / Це / тато / мій
+   > [!answer] Це мій тато, мій доктор.
+   > (This is my dad, my doctor.) [5 words]
 
-2. є / Там / великий / парк
-   > [!answer] Там є великий парк.
-   > (There is a big park.) [4 words]
+2. є / Там / великий / парк / і / банк
+   > [!answer] Там є великий парк і банк.
+   > (There is a big park and bank.) [6 words]
 
-3. мама / Моя / вдома / тут
-   > [!answer] Моя мама тут вдома.
-   > (My mom is here at home.) [4 words]
+3. мама / Моя / тут / і / тато / мій
+   > [!answer] Моя мама тут і мій тато.
+   > (My mom is here and my dad.) [6 words]
 
-4. новий / Це / мій / телефон
-   > [!answer] Це мій новий телефон.
-   > (This is my new phone.) [4 words]
+4. телефон / Це / мій / і / моє / фото
+   > [!answer] Це мій телефон і моє фото.
+   > (This is my phone and my photo.) [6 words]
 
-5. там / банк / і / є / кафе
-   > [!answer] Там є банк і кафе.
-   > (There is a bank and a café.) [5 words]
+5. там / банк / і / кафе / Там / є
+   > [!answer] Там є банк, і там кафе.
+   > (There is a bank, and there is a café.) [6 words]
 
-6. моє / фото / старе / Це
-   > [!answer] Це моє старе фото.
-   > (This is my old photo.) [4 words]
+6. моє / радіо / і / музика / Це / моя
+   > [!answer] Це моє радіо і моя музика.
+   > (This is my radio and my music.) [6 words]
 
-7. салат / Тут / є / смачний
-   > [!answer] Тут є смачний салат.
-   > (Here is a tasty salad.) [4 words]
+7. салат / Це / мій / і / моя / каса
+   > [!answer] Це мій салат і моя каса.
+   > (This is my salad and my cash register.) [6 words]
 
-8. таксі / там / Моє / є
-   > [!answer] Моє таксі є там.
-   > (My taxi is there.) [4 words]
+8. таксі / там / Моє / і / метро / моє
+   > [!answer] Моє таксі там і моє метро.
+   > (My taxi is there and my metro.) [6 words]
 
-9. і / піца / суп / Це / моя / мій
-   > [!answer] Це моя піца і мій суп.
-   > (This is my pizza and my soup.) [6 words]
+9. студент / Мій / тато / і / доктор / мій
+   > [!answer] Мій тато студент і мій доктор.
+   > (My dad is a student and my doctor.) [6 words]
 
-10. музика / Моя / і / тут / відео
-    > [!answer] Моя музика і відео тут.
-    > (My music and video are here.) [5 words]
+10. музика / Моя / і / відео / моє / тут
+    > [!answer] Моя музика і моє відео тут.
+    > (My music and my video are here.) [6 words]
 
-## match-up: Match the Pairs
+11. план / Це / мій / і / старт / мій
+    > [!answer] Це мій план і мій старт.
+    > (This is my plan and my start.) [6 words]
 
-> Match Ukrainian words to their English meanings.
+12. лампа / Моя / тут / і / телефон / мій
+    > [!answer] Моя лампа тут і мій телефон.
+    > (My lamp is here and my phone.) [6 words]
+
+## match-up: Ukrainian Words and English Meanings
+
+> Match the Ukrainian word to its English translation.
 
 | Left | Right |
 |------|-------|
-| піца | pizza |
+| каса | cash register |
 | суп | soup |
 | салат | salad |
 | хокей | hockey |
@@ -357,19 +430,21 @@ Read these tricky words:
 | турист | tourist |
 | студент | student |
 | зебра | zebra |
+| театр | theater |
+| доктор | doctor |
 
 ## group-sort: Letter Classification
 
 > Sort these Cyrillic letters into the correct categories.
 
 ### True Friends (Same look AND sound)
-- А
-- О
-- К
-- М
-- Т
-- Е
-- І
+- А (sounds like A in "father")
+- Е (sounds like E in "bet")
+- І (sounds like EE in "meet")
+- О (sounds like O in "hot")
+- К (sounds like K)
+- М (sounds like M)
+- Т (sounds like T)
 
 ### False Friends (Look similar, different sound)
 - В (looks like B, sounds like V)
@@ -380,120 +455,159 @@ Read these tricky words:
 - Х (looks like X, sounds like KH)
 
 ### New Letters (Unique to Cyrillic)
-- Б (B sound)
-- Д (D sound)
-- З (Z sound)
-- Л (L sound)
-- П (P sound)
-- Ф (F sound)
+- Б (B sound - belly with belt)
+- Д (D sound - like a house)
+- З (Z sound - like number 3)
+- Л (L sound - like a tent)
+- П (P sound - like a portal)
+- Ф (F sound - arms outstretched)
 
 ## quiz: Cyrillic Alphabet Rules
 
-> Test your understanding of the Ukrainian alphabet and False Friends.
+> Test your understanding of the Ukrainian alphabet and letter categories.
 
 1. The letter **Р** in Ukrainian sounds like:
    - [ ] English "P"
    - [x] English "R" (rolled)
    - [ ] English "B"
    - [ ] English "D"
-   > Р is a False Friend - looks like P but sounds like R
+   > Р is a False Friend - looks like P but sounds like rolled R.
 
 2. The letter **Н** in Ukrainian sounds like:
    - [ ] English "H"
    - [x] English "N"
    - [ ] English "M"
    - [ ] English "Y"
-   > Н is a False Friend - looks like H but sounds like N
+   > Н is a False Friend - looks like H but sounds like N.
 
-3. Which letter is unique to Ukrainian (not found in Russian)?
-   - [ ] А
-   - [ ] О
-   - [x] Ї
-   - [ ] Е
-   > Ї (yi) only exists in Ukrainian alphabet
-
-4. The letter **В** in Ukrainian sounds like:
+3. The letter **В** in Ukrainian sounds like:
    - [ ] English "B"
    - [x] English "V"
    - [ ] English "W"
    - [ ] English "F"
-   > В is a False Friend - looks like B but sounds like V
+   > В is a False Friend - looks like B but sounds like V.
 
-5. How many letters are in the Ukrainian alphabet?
-   - [ ] 26
-   - [ ] 30
-   - [x] 33
-   - [ ] 35
-   > Ukrainian has 33 letters (more than English's 26)
-
-6. The letter **С** in Ukrainian sounds like:
+4. The letter **С** in Ukrainian sounds like:
    - [ ] English "K"
    - [x] English "S"
    - [ ] English "C" as in "cat"
    - [ ] English "Z"
-   > С is a False Friend - looks like C but always sounds like S
+   > С is a False Friend - looks like C but always sounds like S.
 
-7. Which are "True Friends" (same look AND sound)?
-   - [x] А, О, К, М, Т
-   - [ ] В, Н, Р, С
-   - [ ] Ж, Ш, Щ, Ч
+5. How many letters are in the Ukrainian alphabet?
+   - [ ] 26 (same as English)
+   - [ ] 30
+   - [x] 33
+   - [ ] 35
+   > Ukrainian has 33 letters, 7 more than English's 26.
+
+6. The letter **Х** sounds like:
+   - [ ] English "X" in "box"
+   - [x] "KH" as in German "Bach"
+   - [ ] English "H" in "hat"
+   - [ ] Silent (not pronounced)
+   > Х makes a guttural "kh" sound like in "Bach".
+
+7. Which group contains ONLY "True Friends"?
+   - [x] А, О, К, М, Т, Е, І
+   - [ ] В, Н, Р, С, У, Х
+   - [ ] Б, Д, З, Л, П, Ф
    - [ ] Є, Ї, Ю, Я
-   > True Friends look Latin and sound the same
+   > True Friends look Latin and sound the same in both languages.
 
-8. The letter **Х** sounds like:
-   - [ ] English "X"
-   - [x] "KH" as in "Bach"
-   - [ ] English "H"
-   - [ ] Silent
-   > Х makes a guttural "kh" sound
+8. The letter **У** in Ukrainian sounds like:
+   - [ ] English "Y" in "yes"
+   - [x] English "OO" in "moon"
+   - [ ] English "U" in "but"
+   - [ ] English "EW" in "new"
+   > У is a False Friend - looks like Y but sounds like OO.
 
-9. What does the soft sign **Ь** do?
-   - [ ] Makes a vowel sound
-   - [ ] Makes an "H" sound
-   - [x] Softens the preceding consonant
-   - [ ] Nothing - it's silent and meaningless
-   > Ь doesn't make a sound but softens consonants
+9. Which letter is unique to Ukrainian (not in Russian)?
+   - [ ] А
+   - [ ] О
+   - [x] Ї
+   - [ ] Е
+   > Ї (yi) only exists in the Ukrainian alphabet.
 
-10. Which letters are "iotated vowels" (add Y-sound)?
-    - [ ] А, О, У, И
-    - [x] Є, Ї, Ю, Я
-    - [ ] Е, І, И
-    - [ ] Б, В, Г
-    > Iotated vowels: Є=YE, Ї=YI, Ю=YU, Я=YA
+10. The word "ресторан" is pronounced:
+    - [ ] PEC-to-pan
+    - [x] res-to-RAN
+    - [ ] rec-to-ran
+    - [ ] pes-to-pan
+    > Р=R, С=S, making it "restoran" (restaurant).
 
-## true-false: Alphabet Rules
+11. Which letters are "New But Easy" (unique to Cyrillic)?
+    - [ ] А, О, К, М
+    - [ ] В, Н, Р, С
+    - [x] Б, Д, З, Л, П, Ф
+    - [ ] Є, Ї, Ю, Я
+    > These 6 letters don't exist in Latin but are easy to learn.
 
-> Determine if each statement about Ukrainian letters is true or false.
+12. In the word "студент", how many False Friends are there?
+    - [ ] One
+    - [ ] Two
+    - [x] Three
+    - [ ] Four
+    > С=S, У=U, Н=N are all False Friends in "студент".
+
+## true-false: Alphabet Facts
+
+> Determine if each statement is true or false.
 
 - [x] The Ukrainian letter Р sounds like English "R", not "P".
-   > Correct! Р is a False Friend - looks like P but sounds like rolled R.
+  > Correct! Р is a False Friend - looks like P but sounds like rolled R.
 
 - [ ] The letter Н in Ukrainian sounds like English "H".
-   > Incorrect. Н = N sound. It's a False Friend (looks like H).
+  > Incorrect. Н = N sound. It's a False Friend (looks like H).
 
 - [x] The letters А, О, К, М, Т look AND sound the same in English and Ukrainian.
-   > Correct! These are "True Friends" - identical in both languages.
+  > Correct! These are "True Friends" - identical in both languages.
 
 - [ ] The letter В in Ukrainian sounds like English "B".
-   > Incorrect. В = V sound. It's a False Friend (looks like B).
+  > Incorrect. В = V sound. It's a False Friend (looks like B).
 
 - [x] The letter С in Ukrainian always sounds like English "S".
-   > Correct! С = S, never the "k" sound of English "C" in "cat".
+  > Correct! С = S, never the "k" sound of English "C" in "cat".
 
 - [x] Ukrainian has 33 letters, more than English's 26.
-   > Correct! Ukrainian alphabet: 33 letters total.
+  > Correct! Ukrainian alphabet has 33 letters total.
 
 - [ ] The letter Х in Ukrainian sounds like English "X".
-   > Incorrect. Х = KH sound (like "ch" in Scottish "loch").
+  > Incorrect. Х = KH sound (like "ch" in Scottish "loch").
 
 - [x] The letter І in Ukrainian sounds like "ee" in "meet".
-   > Correct! І is a True Friend with consistent "ee" pronunciation.
+  > Correct! І is a True Friend with consistent "ee" pronunciation.
 
 - [ ] All Cyrillic letters that look like Latin letters sound the same.
-   > Incorrect. False Friends (В, Н, Р, С, У, Х) look similar but sound different!
+  > Incorrect. False Friends (В, Н, Р, С, У, Х) look similar but sound different!
 
 - [x] Learning True Friends first makes reading Ukrainian easier.
-   > Correct! Start with identical letters, then learn False Friends.
+  > Correct! Start with identical letters, then learn False Friends.
+
+- [x] The Cyrillic alphabet was created in Bulgaria, not Russia.
+  > Correct! Created in 9th century Bulgaria by disciples of Cyril and Methodius.
+
+- [ ] The letter У looks like English U and sounds the same.
+  > Incorrect. У looks like Y but sounds like OO in "moon".
+
+## match-up: Gender and Possessive Pronouns
+
+> Match each noun with the correct possessive pronoun.
+
+| Left | Right |
+|------|-------|
+| мама (ends in -а) | моя |
+| тато (masculine exception) | мій |
+| фото (ends in -о) | моє |
+| телефон (ends in consonant) | мій |
+| лампа (ends in -а) | моя |
+| радіо (ends in -о) | моє |
+| банан (ends in consonant) | мій |
+| каса (ends in -а) | моя |
+| метро (ends in -о) | моє |
+| доктор (ends in consonant) | мій |
+| музика (ends in -а) | моя |
+| відео (ends in -о) | моє |
 
 ---
 
@@ -501,36 +615,27 @@ Read these tricky words:
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| мама | /ˈmɑmɑ/ | mom | noun | f | True Friends only: М-А-М-А |
+| мама | /ˈmɑmɑ/ | mom | noun | f | True Friends: М-А-М-А |
 | тато | /ˈtɑtɔ/ | dad | noun | m | True Friends: Т-А-Т-О |
-| банк | /bɑnk/ | bank | noun | m | Б=B (new), Н=N (false friend) |
-| парк | /pɑrk/ | park | noun | m | П=P (new), Р=R (false friend) |
-| кафе | /kɑˈfɛ/ | café | noun | n | All True Friends + Ф (new) |
-| метро | /mɛˈtrɔ/ | metro | noun | n | Р=R (false friend) |
-| таксі | /tɑkˈsi/ | taxi | noun | n | С=S (false friend), І=I |
-| радіо | /ˈrɑdʲiɔ/ | radio | noun | n | Р=R (false friend), Д=D (new) |
-| піца | /ˈpitsɑ/ | pizza | noun | f | П=P (new), Ц=TS (preview) |
-| суп | /sup/ | soup | noun | m | С=S, У=U (false friends) |
-| салат | /sɑˈlɑt/ | salad | noun | m | С=S (false friend), Л=L (new) |
-| лимон | /lɪˈmɔn/ | lemon | noun | m | Л=L (new), Н=N (false friend) |
-| банан | /bɑˈnɑn/ | banana | noun | m | Б=B (new), Н=N (false friend) |
-| хокей | /xɔˈkɛj/ | hockey | noun | m | Х=KH (false friend) |
-| футбол | /futˈbɔl/ | football | noun | m | Ф=F (new), У=U, Б=B, Л=L |
-| студент | /stuˈdɛnt/ | student | noun | m | С=S, У=U, Н=N (false friends) |
-| турист | /tuˈrɪst/ | tourist | noun | m | У=U, Р=R, С=S (false friends) |
-| музика | /ˈmuzɪkɑ/ | music | noun | f | У=U (false friend), З=Z (new) |
-| фото | /ˈfɔtɔ/ | photo | noun | n | Ф=F (new), rest True Friends |
-| відео | /ˈwideɔ/ | video | noun | n | В=V (false friend), Д=D (new) |
-| театр | /tɛˈɑtr/ | theater | noun | m | All True Friends + Р=R |
-| телефон | /tɛlɛˈfɔn/ | telephone | noun | m | Ф=F (new), Л=L (new) |
-| доктор | /ˈdɔktɔr/ | doctor | noun | m | Д=D (new), К=K, Р=R |
-| лампа | /ˈlɑmpɑ/ | lamp | noun | f | Л=L (new), П=P (new) |
-| зебра | /ˈzɛbrɑ/ | zebra | noun | f | З=Z (new), Б=B (new) |
-| клас | /klɑs/ | class | noun | m | К=K, Л=L (new), С=S |
-| план | /plɑn/ | plan | noun | m | П=P (new), Л=L (new) |
-| спорт | /spɔrt/ | sport | noun | m | С=S, П=P (new), Р=R |
-| старт | /stɑrt/ | start | noun | m | С=S, Р=R, Т=T |
-| стоп | /stɔp/ | stop | noun | m | С=S, Т=T, П=P (new) |
+| банк | /bɑnk/ | bank | noun | m | Б(new), Н(false friend) |
+| парк | /pɑrk/ | park | noun | m | П(new), Р(false friend) |
+| кафе | /kɑˈfɛ/ | café | noun | n | К, А, Ф(new), Е |
+| метро | /mɛˈtrɔ/ | metro | noun | n | Р(false friend) |
+| таксі | /tɑkˈsi/ | taxi | noun | n | С(false friend), І |
+| радіо | /ˈrɑdʲiɔ/ | radio | noun | n | Р(false friend), Д(new) |
+| суп | /sup/ | soup | noun | m | С, У(false friends) |
+| салат | /sɑˈlɑt/ | salad | noun | m | С(false friend), Л(new) |
+| лимон | /lɪˈmɔn/ | lemon | noun | m | Л(new), Н(false friend) |
+| банан | /bɑˈnɑn/ | banana | noun | m | Б(new), Н(false friend) |
+| хокей | /xɔˈkɛj/ | hockey | noun | m | Х(false friend) |
+| футбол | /futˈbɔl/ | football | noun | m | Ф(new), У, Б, Л |
+| студент | /stuˈdɛnt/ | student | noun | m | С, У, Н(false friends) |
+| турист | /tuˈrɪst/ | tourist | noun | m | У, Р, С(false friends) |
+| музика | /ˈmuzɪkɑ/ | music | noun | f | У(false friend), З(new) |
+| фото | /ˈfɔtɔ/ | photo | noun | n | Ф(new) |
+| відео | /ˈvidɛɔ/ | video | noun | n | В(false friend), Д(new) |
+| театр | /tɛˈɑtr/ | theater | noun | m | Р(false friend) |
+
 ---
 
 # Letter Groups

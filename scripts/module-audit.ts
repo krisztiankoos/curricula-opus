@@ -22,6 +22,11 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import {
+  getVocabDatabase,
+  resetVocabDatabase,
+  VocabDatabase,
+} from './lib/vocab-sqlite';
 
 // =============================================================================
 // Types
@@ -49,6 +54,7 @@ interface ModuleAudit {
     wordCount: number;
     engagementBoxes: number;
     itemsPerActivity: number[];
+    vocabDuplicates: string[];  // Words already introduced in earlier modules
   };
 }
 
@@ -64,6 +70,7 @@ interface LevelRequirements {
   itemsPerActivity: number;
   fillInWords: [number, number];
   unjumbleWords: [number, number];
+  immersionLevel: number;  // Target Ukrainian percentage (0.0 - 1.0)
 }
 
 const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
@@ -74,6 +81,7 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 10,
     fillInWords: [3, 5],
     unjumbleWords: [4, 6],
+    immersionLevel: 0.30,  // 30% Ukrainian, 70% English
   },
   'A2': {
     moduleRange: [31, 60],
@@ -82,6 +90,7 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 10,
     fillInWords: [6, 8],
     unjumbleWords: [8, 10],
+    immersionLevel: 0.40,  // 40% Ukrainian, 60% English
   },
   'A2+': {
     moduleRange: [61, 80],
@@ -90,6 +99,7 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 15,
     fillInWords: [8, 10],
     unjumbleWords: [10, 12],
+    immersionLevel: 0.50,  // 50% Ukrainian, 50% English
   },
   'B1': {
     moduleRange: [81, 160],
@@ -98,6 +108,7 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 20,
     fillInWords: [10, 14],
     unjumbleWords: [12, 16],
+    immersionLevel: 0.60,  // 60% Ukrainian, 40% English
   },
   'B2': {
     moduleRange: [161, 310],
@@ -106,6 +117,7 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 20,
     fillInWords: [12, 16],
     unjumbleWords: [14, 18],
+    immersionLevel: 0.85,  // 85% Ukrainian, 15% English
   },
   'C1': {
     moduleRange: [311, 430],
@@ -114,17 +126,22 @@ const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
     itemsPerActivity: 20,
     fillInWords: [14, 18],
     unjumbleWords: [16, 20],
+    immersionLevel: 0.95,  // 95% Ukrainian, 5% English
   },
 };
+
+// Tolerance for immersion level deviation (±10%)
+const IMMERSION_TOLERANCE = 0.10;
 
 // =============================================================================
 // Audit Functions
 // =============================================================================
 
-function auditModule(filePath: string): ModuleAudit {
+function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   const content = fs.readFileSync(filePath, 'utf8');
   const lines = content.split('\n');
   const issues: Issue[] = [];
+  const vocabDuplicates: string[] = [];
 
   // Extract frontmatter
   const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
@@ -402,6 +419,43 @@ function auditModule(filePath: string): ModuleAudit {
   }
 
   // ==========================================================================
+  // 4b. VOCABULARY DUPLICATE CHECK (cascade detection)
+  // ==========================================================================
+
+  // Check if any vocab words in this module were already introduced earlier
+  if (vocabSection && vocabDb) {
+    const vocabContent = vocabSection[1];
+
+    // Extract Ukrainian words from vocab table (first column)
+    const vocabTableMatch = vocabContent.match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|\n---|\n#|$)/);
+    if (vocabTableMatch) {
+      const tableRows = vocabTableMatch[1].trim().split('\n');
+      for (const row of tableRows) {
+        if (!row.includes('|')) continue;
+        const cells = row.split('|').map(c => c.trim()).filter(c => c);
+        if (cells.length < 1) continue;
+
+        const ukWord = cells[0].replace(/\*\*/g, '').trim();
+        if (!ukWord || ukWord.includes('---')) continue;
+
+        // Check if word exists in DB with earlier first_module
+        const entry = vocabDb.getEntry(ukWord);
+        if (entry && entry.first_module < moduleNum) {
+          vocabDuplicates.push(`${ukWord} (introduced in module ${entry.first_module})`);
+        }
+      }
+    }
+
+    if (vocabDuplicates.length > 0) {
+      issues.push({
+        type: 'warning',
+        category: 'vocab-duplicate',
+        message: `${vocabDuplicates.length} vocab word(s) already introduced in earlier modules - remove from this module's vocab`,
+      });
+    }
+  }
+
+  // ==========================================================================
   // 5. ENGAGEMENT BOXES
   // ==========================================================================
 
@@ -535,8 +589,10 @@ function auditModule(filePath: string): ModuleAudit {
   const isReviewModule = frontmatter.match(/tags:.*(?:review|checkpoint)/i) || title.toLowerCase().includes('checkpoint');
 
   if (isCheckpoint || isReviewModule) {
-    // Check for named character
-    const hasCharacterName = content.match(/(?:Ліам|Софія|Марко|Олена|Джон|Анна|Микола|Катерина|\w+),\s*\d+,?\s*(?:Irish|American|British|Canadian|German|French|Ukrainian|Polish)/i);
+    // Check for named character - supports both formats:
+    // Format 1: "Ліам, 26, Irish, Dublin"
+    // Format 2: "**Ліам** (26, Irish, Dublin)"
+    const hasCharacterName = content.match(/(?:\*\*)?(?:Ліам|Софія|Марко|Олена|Джон|Анна|Микола|Катерина|Емма|Сара|Хосе|Акіко|Олівер|Fatima|Марія|Томас|Юлія|\w+)(?:\*\*)?\s*[\(,]\s*\d+,?\s*(?:Irish|American|British|Canadian|German|French|Ukrainian|Polish|Australian|Brazilian|Japanese|Spanish)/i);
     if (!hasCharacterName) {
       issues.push({
         type: 'warning',
@@ -555,13 +611,15 @@ function auditModule(filePath: string): ModuleAudit {
       });
     }
 
-    // Check for testimonies (multiple learner quotes)
-    const testimonies = content.match(/["«»].*(?:дуже|легко|важко|цікаво|подобається).*["«»]/gi) || [];
-    if (testimonies.length < 2) {
+    // Check for testimonies (multiple learner quotes) - look for quotation patterns with learner experiences
+    const testimonies = content.match(/>\s*\*"[^"]+"\*/g) || [];  // Matches: > *"quote"*
+    const altTestimonies = content.match(/["«»].*(?:дуже|легко|важко|цікаво|подобається|learned|clicked|scared|helped|trick|emotional|started).*["«»\*]/gi) || [];
+    const totalTestimonies = Math.max(testimonies.length, altTestimonies.length);
+    if (totalTestimonies < 2) {
       issues.push({
         type: 'info',
         category: 'checkpoint',
-        message: `Checkpoint has only ${testimonies.length} testimonies (recommend 3-4 learner quotes)`,
+        message: `Checkpoint has only ${totalTestimonies} testimonies (recommend 3-4 learner quotes)`,
       });
     }
 
@@ -705,23 +763,147 @@ function auditModule(filePath: string): ModuleAudit {
   // 13. NARRATIVE RICHNESS & ANTI-PATTERNS
   // ==========================================================================
 
-  // Check for dry/minimal narration (mostly tables and lists, little prose)
-  const proseLines = mainContent.split('\n').filter(line =>
-    line.trim().length > 50 &&
-    !line.startsWith('|') &&
-    !line.startsWith('-') &&
-    !line.startsWith('>') &&
-    !line.startsWith('#') &&
-    !line.match(/^\d+\./)
-  );
+  // Narrative richness is measured by QUALITY indicators, not just prose ratio.
+  // A good module has: engagement boxes, explanatory prose, context, examples.
+  // Tables are pedagogically appropriate - we don't penalize them.
 
-  const proseRatio = proseLines.length / Math.max(1, lines.length);
-  if (proseRatio < 0.1 && wordCount > 200) {
-    issues.push({
-      type: 'warning',
-      category: 'narrative',
-      message: `Dry narration: only ${Math.round(proseRatio * 100)}% prose content (mostly tables/lists)`,
-    });
+  // Level-specific narrative expectations:
+  // A1: More English explanation, less narrative depth expected
+  // A2: Transitional - more context expected
+  // B1+: Rich narrative, mostly Ukrainian prose
+
+  const narrativeRequirements: Record<string, {
+    minEngagementBoxes: number;
+    minProseLines: number;  // Lines >30 chars that explain/contextualize
+    minExamples: number;    // Example sentences (Ukrainian + translation)
+  }> = {
+    'A1': { minEngagementBoxes: 2, minProseLines: 5, minExamples: 3 },
+    'A2': { minEngagementBoxes: 2, minProseLines: 8, minExamples: 5 },
+    'A2+': { minEngagementBoxes: 3, minProseLines: 10, minExamples: 5 },
+    'B1': { minEngagementBoxes: 3, minProseLines: 12, minExamples: 6 },
+    'B2': { minEngagementBoxes: 3, minProseLines: 15, minExamples: 6 },
+    'C1': { minEngagementBoxes: 2, minProseLines: 20, minExamples: 6 },
+  };
+
+  const narrativeReq = narrativeRequirements[level];
+
+  // Count prose lines: explanatory text (not tables, headers, or activity items)
+  const proseLines = mainContent.split('\n').filter(line => {
+    const trimmed = line.trim();
+    return trimmed.length > 30 &&
+      !trimmed.startsWith('|') &&
+      !trimmed.startsWith('-') &&
+      !trimmed.startsWith('>') &&
+      !trimmed.startsWith('#') &&
+      !trimmed.match(/^\d+\./) &&
+      !trimmed.match(/^\[/) &&       // Not markdown links/images
+      !trimmed.match(/^---/) &&      // Not dividers
+      !trimmed.match(/^```/);        // Not code blocks
+  });
+
+  // Count example sentences (Ukrainian text with English in parentheses or after —)
+  const examples = mainContent.match(/[\u0400-\u04FF].{5,}(?:\(|—|–).{3,}/g) || [];
+
+  // Check narrative richness
+  if (narrativeReq && !isCheckpoint) {
+    const narrativeScore = {
+      engagementBoxes: engagementBoxes,
+      proseLines: proseLines.length,
+      examples: examples.length,
+    };
+
+    // Calculate deficiency
+    const deficiencies: string[] = [];
+
+    if (narrativeScore.engagementBoxes < narrativeReq.minEngagementBoxes) {
+      deficiencies.push(`engagement boxes: ${narrativeScore.engagementBoxes}/${narrativeReq.minEngagementBoxes}`);
+    }
+    if (narrativeScore.proseLines < narrativeReq.minProseLines) {
+      deficiencies.push(`explanatory prose: ${narrativeScore.proseLines}/${narrativeReq.minProseLines} lines`);
+    }
+    if (narrativeScore.examples < narrativeReq.minExamples) {
+      deficiencies.push(`examples: ${narrativeScore.examples}/${narrativeReq.minExamples}`);
+    }
+
+    if (deficiencies.length >= 2) {
+      issues.push({
+        type: 'warning',
+        category: 'narrative',
+        message: `Low narrative richness (${deficiencies.join(', ')})`,
+      });
+    } else if (deficiencies.length === 1) {
+      issues.push({
+        type: 'info',
+        category: 'narrative',
+        message: `Could improve: ${deficiencies[0]}`,
+      });
+    }
+  }
+
+  // ==========================================================================
+  // 14. IMMERSION LEVEL CHECK (Ukrainian vs English percentage)
+  // ==========================================================================
+
+  // Immersion measures overall language balance in the module content.
+  // INCLUDES tables (vocabulary tables are learning content).
+  // EXCLUDES: markdown syntax, frontmatter, code blocks, pure punctuation.
+
+  // Level-specific immersion targets with WIDER tolerance for lower levels:
+  // A1: 30% ±15% (lots of English explanation is fine)
+  // A2: 40% ±15%
+  // A2+: 50% ±12%
+  // B1: 60% ±10%
+  // B2: 85% ±10%
+  // C1: 95% ±5%
+
+  // Checkpoint modules have HIGHER immersion targets (they test learned material)
+  // They contain dialogue tables, testimonies, and character narratives - naturally more Ukrainian
+  const immersionConfig: Record<string, { target: number; tolerance: number }> = isCheckpoint ? {
+    'A1': { target: 0.55, tolerance: 0.25 },   // Checkpoints: 55% ±25% (30%-80%)
+    'A2': { target: 0.55, tolerance: 0.20 },   // 35%-75%
+    'A2+': { target: 0.60, tolerance: 0.18 },  // 42%-78%
+    'B1': { target: 0.70, tolerance: 0.15 },   // 55%-85%
+    'B2': { target: 0.90, tolerance: 0.08 },   // 82%-98%
+    'C1': { target: 0.95, tolerance: 0.05 },   // 90%-100%
+  } : {
+    'A1': { target: 0.30, tolerance: 0.15 },   // Regular modules: 30% ±15%
+    'A2': { target: 0.40, tolerance: 0.15 },
+    'A2+': { target: 0.50, tolerance: 0.12 },
+    'B1': { target: 0.60, tolerance: 0.10 },
+    'B2': { target: 0.85, tolerance: 0.10 },
+    'C1': { target: 0.95, tolerance: 0.05 },
+  };
+
+  // Clean text for immersion analysis
+  const textForImmersion = mainContent
+    .replace(/```[\s\S]*?```/g, '')     // Remove code blocks
+    .replace(/[#*_`\[\](){}|<>\-]/g, '') // Remove markdown syntax
+    .replace(/\d+/g, '');               // Remove numbers
+
+  const cyrillicChars = (textForImmersion.match(/[\u0400-\u04FF]/g) || []).length;
+  const latinChars = (textForImmersion.match(/[a-zA-Z]/g) || []).length;
+  const totalChars = cyrillicChars + latinChars;
+
+  const immersionReq = immersionConfig[level];
+
+  if (totalChars > 200 && immersionReq) {
+    const actualImmersion = cyrillicChars / totalChars;
+    const targetImmersion = immersionReq.target;
+    const tolerance = immersionReq.tolerance;
+    const deviation = actualImmersion - targetImmersion;
+
+    if (Math.abs(deviation) > tolerance) {
+      const actualPercent = Math.round(actualImmersion * 100);
+      const targetPercent = Math.round(targetImmersion * 100);
+      const tolerancePercent = Math.round(tolerance * 100);
+      const direction = deviation > 0 ? 'too much Ukrainian' : 'too much English';
+
+      issues.push({
+        type: 'warning',
+        category: 'immersion',
+        message: `Immersion imbalance: ${actualPercent}% Ukrainian (target: ${targetPercent}% ±${tolerancePercent}%) - ${direction}`,
+      });
+    }
   }
 
   // Check for text walls (sections with no breaks)
@@ -862,6 +1044,7 @@ function auditModule(filePath: string): ModuleAudit {
       wordCount,
       engagementBoxes,
       itemsPerActivity,
+      vocabDuplicates,
     },
   };
 }
@@ -906,6 +1089,18 @@ function generateFixPrompt(audit: ModuleAudit): string {
     for (const issue of [...(issuesByCategory['broken-format'] || []), ...(issuesByCategory['broken-activity'] || [])]) {
       lines.push(`- ${issue.message}`);
     }
+    lines.push('');
+  }
+
+  // Priority 1b: Vocabulary duplicates (cascade fix)
+  if (issuesByCategory['vocab-duplicate']) {
+    lines.push('## 🔴 REMOVE DUPLICATE VOCABULARY:');
+    lines.push('The following words were already introduced in earlier modules. Remove them from this module\'s Vocabulary section:');
+    for (const dup of audit.stats.vocabDuplicates) {
+      lines.push(`- ${dup}`);
+    }
+    lines.push('');
+    lines.push('After removing, run `npm run vocab:build` to rebuild the vocabulary database.');
     lines.push('');
   }
 
@@ -1040,11 +1235,23 @@ function main() {
   const lang = filteredArgs[0] || 'l2-uk-en';
   const rangeArg = filteredArgs[1];
 
-  const modulesDir = path.join(process.cwd(), 'curriculum', lang, 'modules');
+  const curriculumDir = path.join(process.cwd(), 'curriculum', lang);
+  const modulesDir = path.join(curriculumDir, 'modules');
 
   if (!fs.existsSync(modulesDir)) {
     console.error(`Directory not found: ${modulesDir}`);
     process.exit(1);
+  }
+
+  // Initialize vocabulary database for duplicate detection
+  const vocabDbPath = path.join(curriculumDir, 'vocabulary.db');
+  let vocabDb: VocabDatabase | undefined;
+  if (fs.existsSync(vocabDbPath)) {
+    resetVocabDatabase();
+    vocabDb = getVocabDatabase(curriculumDir);
+    console.log(`📚 Vocabulary database loaded for duplicate detection`);
+  } else {
+    console.log(`⚠️  No vocabulary.db found - skipping vocab duplicate check`);
   }
 
   // Parse range
@@ -1079,7 +1286,7 @@ function main() {
   const problemModules: ModuleAudit[] = [];
 
   for (const file of files) {
-    const audit = auditModule(file.path);
+    const audit = auditModule(file.path, vocabDb);
 
     const errors = audit.issues.filter(i => i.type === 'error').length;
     const warnings = audit.issues.filter(i => i.type === 'warning').length;
@@ -1098,6 +1305,7 @@ function main() {
   const categories = [
     'broken-format',
     'broken-activity',
+    'vocab-duplicate',  // Vocab cascade detection
     'checkpoint',
     'requirements',
     'missing-content',
@@ -1105,6 +1313,7 @@ function main() {
     'enrichment',
     'content-quality',
     'narrative',
+    'immersion',
     'activity-order',
     'complexity',
   ];

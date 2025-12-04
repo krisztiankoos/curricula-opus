@@ -35,6 +35,20 @@ grammar:
 
 This is your graduation too. Let's prove what you've learned.
 
+### What Other Graduates Say
+
+**Хосе, 28, Spanish, Madrid:**
+> *"I thought Spanish would make Ukrainian easier - we're both European languages, right? Ha! The cases were completely new to me. But by week 3, something clicked. Now I can actually feel when to use accusative vs genitive. It's like learning to ride a bike - suddenly it just makes sense."*
+
+**Акіко, 31, Japanese, Tokyo:**
+> *"Japanese has no articles, no gender, no cases. Ukrainian has all three! But you know what helped? Treating cases like Japanese particles. が (ga) is like nominative, を (wo) is like accusative. My Ukrainian teacher said I was the fastest learner she'd seen - I think it's because I approached it systematically."*
+
+**Олівер, 45, British, London:**
+> *"I'm terrible at languages. Failed French at school, forgot my Spanish from holiday courses. But Ukrainian? Something about the logic hooked me. My daughter (whose partner is Ukrainian) was shocked when I said 'Дякую за каву' last week. Best feeling ever."*
+
+**Fatima, 22, American, Chicago:**
+> *"Started learning because of the war - I wanted to help refugees in a meaningful way. Now I volunteer as an interpreter at refugee centers. My Ukrainian isn't perfect, but when someone's eyes light up because you said 'Як справи?' instead of just 'Hello'... that's everything."*
+
 > 💡 **Did You Know?**
 >
 > At CEFR A1, you can:
@@ -567,6 +581,29 @@ Use all three tenses! Past (what you did), present (what you do), future (what y
 - Possessives (мій, моя, моє)
 - Numbers (один, два, три)
 - Pronouns (я, ти, він, вона)
+
+---
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| відмінок | /vidˈminɔk/ | grammatical case | noun | m | Nom, Acc, Gen, Loc |
+| присвійний | /prɪsˈvijnɪj/ | possessive | adj | m | мій, твій, його |
+| рід | /rʲid/ | gender (gram.) | noun | m | чоловічий, жіночий, середній |
+| час | /t͡ʃas/ | time; tense | noun | m | Теперішній час = present tense |
+| дієслово | /dʲiˈjɛslɔwɔ/ | verb | noun | n | читати, писати |
+| іменник | /iˈmɛnnɪk/ | noun | noun | m | студент, книга |
+| прикметник | /prɪkˈmɛtnɪk/ | adjective | noun | m | новий, великий |
+| закінчення | /zɑˈkint͡ʃɛnnʲa/ | ending | noun | n | -ий, -а, -у |
+| відповідь | /vidˈpɔvʲidʲ/ | answer | noun | f | Яка правильна відповідь? |
+| запитання | /zɑpɪˈtɑnnʲa/ | question | noun | n | Хто? Що? Де? |
+| теперішній | /tɛpɛˈrʲiʃnʲij/ | present | adj | m | теперішній час |
+| минулий | /mɪˈnulɪj/ | past | adj | m | минулий час |
+| майбутній | /mɑjˈbutnʲij/ | future | adj | m | майбутній час |
+| однина | /ɔdˈnɪnɑ/ | singular | noun | f | я, ти, він |
+| множина | /ˈmnɔʒɪnɑ/ | plural | noun | f | ми, ви, вони |
+| вітати | /vʲiˈtɑtɪ/ | congratulate | verb | - | Вітаємо! |
 
 ---
 

@@ -224,9 +224,24 @@ Say what you don't have:
 
 ---
 
----
+## Genitive Case Summary
 
----
+| Case | Masculine | Feminine -а | Feminine -ь | Neuter |
+|------|-----------|-------------|-------------|--------|
+| Nominative | час | книга | ніч | місто |
+| Genitive | часу | книги | ночі | міста |
+
+**Key uses:**
+- Possession: книга друга (friend's book)
+- Absence: немає часу (no time)
+- Prepositions: без, для, до, з, від, після
+
+| Ending | Genitive | Example |
+|--------|----------|---------|
+| Consonant (m) | → -а/-у | друг → друга, час → часу |
+| -а (f) | → -и | книга → книги |
+| -я (f) | → -і | земля → землі |
+| -о/-е (n) | → -а | місто → міста |
 
 ---
 

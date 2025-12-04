@@ -204,11 +204,29 @@ Use adjectives to describe:
 
 ---
 
----
+## Adjective Endings Summary
 
----
+| Case | Masculine | Feminine | Neuter | Plural |
+|------|-----------|----------|--------|--------|
+| Nominative | новий | нова | нове | нові |
+| Accusative (inan) | новий | нову | нове | нові |
+| Accusative (anim) | нового | нову | нове | нових |
 
----
+**Hard stems (-ий):**
+| Gender | Ending | Example |
+|--------|--------|---------|
+| Masculine | -ий | великий будинок |
+| Feminine | -а | велика книга |
+| Neuter | -е | велике місто |
+| Plural | -і | великі міста |
+
+**Soft stems (-ій):**
+| Gender | Ending | Example |
+|--------|--------|---------|
+| Masculine | -ій | синій колір |
+| Feminine | -я | синя сукня |
+| Neuter | -є | синє небо |
+| Plural | -і | сині очі |
 
 ---
 

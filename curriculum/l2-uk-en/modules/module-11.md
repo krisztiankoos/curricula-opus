@@ -211,11 +211,14 @@ Say what you want:
 
 ---
 
----
+## Accusative Case Summary
 
----
+| Case | Masculine | Feminine -а | Feminine -я | Neuter |
+|------|-----------|-------------|-------------|--------|
+| Nominative | стіл | книга | земля | вікно |
+| Accusative | стіл | книгу | землю | вікно |
 
----
+**Key pattern:** Only Group I feminines (-а/-я) change: **-а → -у**, **-я → -ю**
 
 ---
 

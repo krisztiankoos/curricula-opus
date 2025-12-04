@@ -421,9 +421,19 @@ Practice with real people:
 | гість | /ɦʲistʲ/ | guest | noun | m | Acc: гостя |
 | директор | /dɪˈrɛktɔr/ | director | noun | m | Acc: директора |
 | менеджер | /mɛˈnɛd͡ʒɛr/ | manager | noun | m | Acc: менеджера |
+| учитель | /uˈtʃɪtɛlʲ/ | teacher (m) | noun | m | Acc: учителя |
+| учителька | /utʃɪˈtɛlʲkɑ/ | teacher (f) | noun | f | Acc: учительку |
+| собака | /sɔˈbɑkɑ/ | dog | noun | m | Animate! Acc: собаку |
+| кіт | /kʲit/ | cat | noun | m | Acc: кота |
+
 ---
 
 # Animate Accusative Summary
+
+| Case | Masculine Animate | Masculine Inanimate | Feminine |
+|------|-------------------|---------------------|----------|
+| Nominative | студент | стіл | студентка |
+| Accusative | студента | стіл | студентку |
 
 ## Masculine Animate
 

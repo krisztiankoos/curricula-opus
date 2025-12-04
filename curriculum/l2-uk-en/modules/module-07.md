@@ -200,11 +200,22 @@ Turn positive to negative:
 
 ---
 
----
+## Questions & Negation Summary
 
----
-
----
+| Form | Ukrainian | English | Example |
+|------|-----------|---------|---------|
+| Yes/No question | Чи + statement | Do...? | Чи ти читаєш? |
+| What | Що | What | Що це? |
+| Who | Хто | Who | Хто там? |
+| Where (location) | Де | Where | Де ти? |
+| Where (direction) | Куди | Where to | Куди йдеш? |
+| When | Коли | When | Коли? |
+| Why | Чому | Why | Чому ні? |
+| How | Як | How | Як справи? |
+| Negation | не + verb | not | Я не знаю |
+| Nothing | нічого | nothing | нічого не знаю |
+| Nobody | ніхто | nobody | ніхто не знає |
+| Never | ніколи | never | ніколи не був |
 
 ---
 

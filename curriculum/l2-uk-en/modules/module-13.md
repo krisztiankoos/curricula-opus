@@ -190,9 +190,21 @@ Where are these things/people?
 
 ---
 
----
+## Locative Case Summary
 
----
+| Case | Masculine | Feminine -а | Feminine -ь | Neuter |
+|------|-----------|-------------|-------------|--------|
+| Nominative | стіл | школа | площа | місто |
+| Locative | на столі | у школі | на площі | у місті |
+
+**Prepositions:** в/у (in), на (on, at)
+
+| Ending | Locative | Example |
+|--------|----------|---------|
+| Consonant (m) | → -і/-у | стіл → на столі |
+| -а (f) | → -і | школа → у школі |
+| -я (f) | → -і | станція → на станції |
+| -о/-е (n) | → -і | місто → у місті |
 
 ---
 

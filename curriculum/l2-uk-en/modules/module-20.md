@@ -31,6 +31,17 @@ grammar:
 
 This module is your checkpoint moment - just like Ліам's. Let's prove how far you've come!
 
+### What Other Learners Say
+
+**Марія, 32, Brazilian, São Paulo:**
+> *"The cases scared me at first. In Portuguese we don't have them! But after week two, I realized they're like different 'flavors' of a word - each one tells you something about what the word is doing in the sentence."*
+
+**Томас, 24, German, Berlin:**
+> *"German has four cases, so I understood the concept. But Ukrainian endings are different. My trick? I made color-coded flashcards - blue for Accusative, green for Locative, red for Genitive."*
+
+**Юлія, 29, Canadian, Toronto:**
+> *"I'm half-Ukrainian but never learned the language. This checkpoint made me emotional - I can finally understand my бабуся when she talks about going 'до магазину' or being 'в церкві'. The cases clicked!"*
+
 > 💡 **Did You Know?**
 >
 > With just three cases (Accusative, Locative, Genitive), you can handle about 70% of everyday situations. Add possessives, and you're truly navigating Ukrainian life. That's the power of A1.2!
@@ -457,7 +468,7 @@ Use everything you've learned: cases, possessives, prepositions, directions!
 
 ---
 
-# Vocabulary Review
+# A1.2 Vocabulary Review
 
 ## Key Words from A1.2: Ліам's Journey
 
@@ -510,6 +521,29 @@ Use everything you've learned: cases, possessives, prepositions, directions!
 - **Daily routines** - Describing his day
 
 You're ready too!
+
+---
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| відмінок | /vidˈminɔk/ | case (grammar) | noun | m | Gen: відмінка |
+| знахідний | /znɑˈxʲidnɪj/ | accusative | adj | m | Case for direct objects |
+| місцевий | /mʲisˈt͡sɛvɪj/ | locative | adj | m | Case for locations |
+| родовий | /rɔdɔˈvɪj/ | genitive | adj | m | Case for possession/absence |
+| присвійний | /prɪsˈvijnɪj/ | possessive | adj | m | Pronouns: мій, твій |
+| прийменник | /prɪjˈmɛnɪk/ | preposition | noun | m | в, на, до, без |
+| напрямок | /nɑˈprʲamɔk/ | direction | noun | m | Gen: напрямку |
+| замовляти | /zɑmɔvˈlʲatɪ/ | to order | verb | - | Я замовляю каву |
+| рахунок | /rɑˈxunɔk/ | bill, check | noun | m | Рахунок, будь ласка |
+| знижка | /ˈznɪʒkɑ/ | discount | noun | f | Чи є знижка? |
+| праворуч | /prɑˈvɔrut͡ʃ/ | on the right | adv | - | Поверніть праворуч |
+| ліворуч | /lʲiˈvɔrut͡ʃ/ | on the left | adv | - | Аптека ліворуч |
+| прямо | /ˈprʲamɔ/ | straight ahead | adv | - | Ідіть прямо |
+| меню | /mɛˈnʲu/ | menu | noun | n | Можна меню? |
+| офіціант | /ɔfʲit͡sʲiˈɑnt/ | waiter | noun | m | Офіціант, будь ласка! |
+| розмір | /ˈrɔzmʲir/ | size | noun | m | Який ваш розмір? |
 
 ---
 

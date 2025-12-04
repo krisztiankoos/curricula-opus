@@ -204,11 +204,30 @@ Describe what you did yesterday using past tense:
 
 ---
 
----
+## Past Tense Summary
 
----
+| Person | Masculine | Feminine | Neuter | Plural |
+|--------|-----------|----------|--------|--------|
+| я | читав | читала | - | - |
+| ти | читав | читала | - | - |
+| він | читав | - | - | - |
+| вона | - | читала | - | - |
+| воно | - | - | читало | - |
+| ми/ви/вони | - | - | - | читали |
 
----
+**Formation:** Stem + gender/number ending
+- Masculine: -в (читав)
+- Feminine: -ла (читала)
+- Neuter: -ло (читало)
+- Plural: -ли (читали)
+
+**Бути (to be) in past:**
+| Form | Example |
+|------|---------|
+| був | Він був там |
+| була | Вона була тут |
+| було | Це було добре |
+| були | Вони були разом |
 
 ---
 
@@ -291,8 +310,8 @@ Describe what you did yesterday using past tense:
    > (They recently heard very interesting news.) [6 words]
 
 8. давно / був / Він / у / Львові / минулого / року
-   > [!!answer] Він був у Львові минулого року давно.
-   > (He was in Lviv last year a long time ago.) [8 words]
+   > [!answer] Він був у Львові давно, минулого року.
+   > (He was in Lviv long ago, last year.) [7 words]
 
 9. зустріли / друзі / Ми / багато / нових / під час / подорожі
    > [!answer] Ми зустріли багато нових друзів під час подорожі.

@@ -627,6 +627,219 @@ function auditModule(filePath: string): ModuleAudit {
     });
   }
 
+  // ==========================================================================
+  // 12. CONTENT QUALITY & RICHNESS
+  // ==========================================================================
+
+  // Check for PPP structure (warm-up/presentation/practice/production)
+  const hasWarmUp = !!content.match(/^##\s*(?:warm-?up|introduction|вступ|розігрів)/im);
+  const hasPresentation = !!content.match(/^##\s*(?:presentation|theory|теорія|пояснення)/im);
+  const hasPractice = !!content.match(/^##\s*(?:practice|guided|практика)/im);
+  const hasProduction = !!content.match(/^##\s*(?:production|free|вироб|творч)/im);
+
+  const pppCount = [hasWarmUp, hasPresentation, hasPractice, hasProduction].filter(Boolean).length;
+  if (pppCount < 2 && !isCheckpoint && !isReviewModule) {
+    issues.push({
+      type: 'info',
+      category: 'content-quality',
+      message: `Limited lesson structure: only ${pppCount}/4 PPP sections (warm-up/presentation/practice/production)`,
+    });
+  }
+
+  // Check for examples in content (lessons should have multiple examples)
+  const examplePatterns = [
+    /(?:example|приклад|наприклад):/gi,
+    /^\s*[-•]\s*\*\*[^*]+\*\*\s*[-–—]\s*.+/gm, // Bullet with bold + explanation
+    /^\s*\d+\.\s+\*\*[^*]+\*\*/gm, // Numbered with bold
+  ];
+  let exampleCount = 0;
+  for (const pattern of examplePatterns) {
+    exampleCount += (content.match(pattern) || []).length;
+  }
+
+  // Also count example sentences in tables
+  const tableExamples = content.match(/\|\s*[А-Яа-яЇїІіЄєҐґ'].+\s*\|\s*[A-Za-z].+\s*\|/g) || [];
+  exampleCount += Math.min(tableExamples.length, 10); // Cap table examples
+
+  const minExamples: Record<string, number> = {
+    'A1': 8, 'A2': 10, 'A2+': 12, 'B1': 15, 'B2': 18, 'C1': 20,
+  };
+  const reqExamples = minExamples[level] || 10;
+  if (exampleCount < reqExamples) {
+    issues.push({
+      type: 'warning',
+      category: 'content-quality',
+      message: `Low example count: ~${exampleCount} examples (${level} should have ${reqExamples}+)`,
+    });
+  }
+
+  // Check for common mistakes section (Типові помилки)
+  const hasCommonMistakes = !!content.match(/(?:common mistake|типов[іа] помилк|avoid|уникай)/i);
+  if (!hasCommonMistakes && ['B1', 'B2', 'C1'].includes(level)) {
+    issues.push({
+      type: 'info',
+      category: 'content-quality',
+      message: 'No common mistakes section (Типові помилки) - recommended for B1+',
+    });
+  }
+
+  // Check for cultural context
+  const hasCulturalContent = !!content.match(/(?:культур|tradition|традиц|custom|звичай|Ukraine|Україн|history|історі)/i);
+  if (!hasCulturalContent && !isCheckpoint) {
+    issues.push({
+      type: 'info',
+      category: 'content-quality',
+      message: 'No cultural context detected - consider adding Ukrainian culture references',
+    });
+  }
+
+  // ==========================================================================
+  // 13. NARRATIVE RICHNESS & ANTI-PATTERNS
+  // ==========================================================================
+
+  // Check for dry/minimal narration (mostly tables and lists, little prose)
+  const proseLines = mainContent.split('\n').filter(line =>
+    line.trim().length > 50 &&
+    !line.startsWith('|') &&
+    !line.startsWith('-') &&
+    !line.startsWith('>') &&
+    !line.startsWith('#') &&
+    !line.match(/^\d+\./)
+  );
+
+  const proseRatio = proseLines.length / Math.max(1, lines.length);
+  if (proseRatio < 0.1 && wordCount > 200) {
+    issues.push({
+      type: 'warning',
+      category: 'narrative',
+      message: `Dry narration: only ${Math.round(proseRatio * 100)}% prose content (mostly tables/lists)`,
+    });
+  }
+
+  // Check for text walls (sections with no breaks)
+  const sections = mainContent.split(/^#+ /m);
+  for (const section of sections) {
+    const sectionLines = section.split('\n').filter(l => l.trim().length > 0);
+    const consecutiveTextLines = sectionLines.filter(l =>
+      !l.startsWith('|') && !l.startsWith('-') && !l.startsWith('>') && !l.match(/^\d+\./)
+    );
+
+    // Check for 15+ consecutive lines without visual break
+    let maxConsecutive = 0;
+    let current = 0;
+    for (const line of sectionLines) {
+      if (line.startsWith('|') || line.startsWith('-') || line.startsWith('>') || line.match(/^#+\s/) || line.match(/^\d+\./)) {
+        maxConsecutive = Math.max(maxConsecutive, current);
+        current = 0;
+      } else if (line.trim().length > 30) {
+        current++;
+      }
+    }
+    maxConsecutive = Math.max(maxConsecutive, current);
+
+    if (maxConsecutive > 15) {
+      issues.push({
+        type: 'info',
+        category: 'narrative',
+        message: `Text wall detected: ${maxConsecutive} consecutive lines without visual break`,
+      });
+      break; // Only report once
+    }
+  }
+
+  // Check for real-world/authentic content markers
+  const hasAuthenticContent = !!content.match(/(?:real|authentic|actual|справжн|реальн|new article|стаття|news|новин|menu|меню|sign|вивіска)/i);
+  const mentionsMedia = !!content.match(/(?:video|відео|audio|аудіо|song|пісня|podcast|film|фільм)/i);
+
+  if (!hasAuthenticContent && !mentionsMedia && ['B1', 'B2', 'C1'].includes(level)) {
+    issues.push({
+      type: 'info',
+      category: 'content-quality',
+      message: 'No authentic materials detected (real texts, media) - recommended for B1+',
+    });
+  }
+
+  // ==========================================================================
+  // 14. SENTENCE COMPLEXITY ANALYSIS
+  // ==========================================================================
+
+  // Check sentence length in activities matches level
+  const sentenceComplexity: Record<string, { min: number; max: number }> = {
+    'A1': { min: 3, max: 6 },
+    'A2': { min: 6, max: 8 },
+    'A2+': { min: 8, max: 10 },
+    'B1': { min: 10, max: 14 },
+    'B2': { min: 12, max: 16 },
+    'C1': { min: 14, max: 18 },
+  };
+
+  const levelComplexity = sentenceComplexity[level];
+  if (levelComplexity) {
+    // Sample sentences from fill-in and unjumble activities
+    const activitySentences: string[] = [];
+
+    // Get fill-in sentences
+    const fillInMatches = content.matchAll(/^\d+\.\s+([^_\n]+___[^\n]+)/gm);
+    for (const match of fillInMatches) {
+      activitySentences.push(match[1]);
+    }
+
+    // Get unjumble jumbled words (count the words)
+    const unjumbleMatches = content.matchAll(/^\d+\.\s+([^/\n]+(?:\/[^/\n]+)+)/gm);
+    for (const match of unjumbleMatches) {
+      activitySentences.push(match[1]);
+    }
+
+    if (activitySentences.length >= 3) {
+      const wordCounts = activitySentences.map(s =>
+        s.split(/[\s/]+/).filter(w => w.length > 0 && !w.match(/^[_]+$/)).length
+      );
+      const avgWords = Math.round(wordCounts.reduce((a, b) => a + b, 0) / wordCounts.length);
+
+      if (avgWords < levelComplexity.min - 2) {
+        issues.push({
+          type: 'warning',
+          category: 'complexity',
+          message: `Activity sentences too simple: avg ${avgWords} words (${level} target: ${levelComplexity.min}-${levelComplexity.max})`,
+        });
+      } else if (avgWords > levelComplexity.max + 3) {
+        issues.push({
+          type: 'warning',
+          category: 'complexity',
+          message: `Activity sentences too complex: avg ${avgWords} words (${level} target: ${levelComplexity.min}-${levelComplexity.max})`,
+        });
+      }
+    }
+  }
+
+  // ==========================================================================
+  // 15. SELF-ASSESSMENT & LEARNING AIDS
+  // ==========================================================================
+
+  // Check for self-assessment or checklist
+  const hasSelfAssessment = !!content.match(/(?:self-assessment|checklist|I can now|Тепер я вмію|можу|check yourself|перевір себе)/i);
+  if (!hasSelfAssessment && !isCheckpoint && ['B1', 'B2', 'C1'].includes(level)) {
+    issues.push({
+      type: 'info',
+      category: 'content-quality',
+      message: 'No self-assessment checklist - recommended for B1+ modules',
+    });
+  }
+
+  // Check for grammar tables (expected in grammar modules)
+  const isGrammarModule = frontmatter.match(/tags:.*grammar/i) || title.toLowerCase().includes('grammar') ||
+                          title.match(/case|відмін|verb|дієсл|aspect|вид/i);
+  const hasGrammarTable = content.match(/\|[^|]+\|[^|]+\|[^|]+\|/) &&
+                          (content.match(/\|\s*(?:Form|Форма|Case|Відмінок|Singular|Однина|Person|Особа)/i));
+
+  if (isGrammarModule && !hasGrammarTable) {
+    issues.push({
+      type: 'warning',
+      category: 'content-quality',
+      message: 'Grammar module lacks conjugation/declension tables',
+    });
+  }
+
   return {
     module: moduleNum,
     title,
@@ -717,6 +930,8 @@ function main() {
     'missing-content',
     'incomplete',
     'enrichment',
+    'content-quality',
+    'narrative',
     'activity-order',
     'complexity',
   ];

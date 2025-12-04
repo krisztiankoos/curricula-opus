@@ -6,10 +6,18 @@
  * Checks against MODULE-RICHNESS-GUIDELINES.md requirements.
  *
  * Usage:
- *   npx ts-node scripts/module-audit.ts [lang] [module-range]
- *   npx ts-node scripts/module-audit.ts l2-uk-en
- *   npx ts-node scripts/module-audit.ts l2-uk-en 41-65
- *   npx ts-node scripts/module-audit.ts l2-uk-en 47
+ *   npx ts-node scripts/module-audit.ts [lang] [module-range] [--fix]
+ *
+ * Examples:
+ *   npx ts-node scripts/module-audit.ts l2-uk-en           # Audit all modules
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 41-65     # Audit range
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 47        # Audit single module
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 81-90 --fix  # Generate fix prompts
+ *
+ * Options:
+ *   --fix    Generate actionable fix prompts for each module with issues.
+ *            Prompts are sorted by severity (most issues first).
+ *            Copy-paste prompts directly to Claude to fix modules.
  */
 
 import * as fs from 'fs';
@@ -859,13 +867,158 @@ function auditModule(filePath: string): ModuleAudit {
 }
 
 // =============================================================================
+// Fix Prompt Generator
+// =============================================================================
+
+function generateFixPrompt(audit: ModuleAudit): string {
+  const errors = audit.issues.filter(i => i.type === 'error');
+  const warnings = audit.issues.filter(i => i.type === 'warning');
+  const infos = audit.issues.filter(i => i.type === 'info');
+
+  // Group issues by category for clearer instructions
+  const issuesByCategory: Record<string, Issue[]> = {};
+  for (const issue of [...errors, ...warnings]) {
+    if (!issuesByCategory[issue.category]) {
+      issuesByCategory[issue.category] = [];
+    }
+    issuesByCategory[issue.category].push(issue);
+  }
+
+  // Build the fix prompt
+  const lines: string[] = [];
+  lines.push(`Fix module ${audit.module} (${audit.title}, ${audit.level}):`);
+  lines.push('');
+
+  // Priority 1: Broken formats (must fix)
+  if (issuesByCategory['broken-format'] || issuesByCategory['broken-activity']) {
+    lines.push('## 🔴 FIX BROKEN FORMATS:');
+    for (const issue of [...(issuesByCategory['broken-format'] || []), ...(issuesByCategory['broken-activity'] || [])]) {
+      lines.push(`- ${issue.message}`);
+    }
+    lines.push('');
+  }
+
+  // Priority 2: Requirements (activity count, vocab)
+  if (issuesByCategory['requirements']) {
+    lines.push('## 🟡 MEET REQUIREMENTS:');
+    const reqIssues = issuesByCategory['requirements'];
+
+    // Activity count
+    const activityIssue = reqIssues.find(i => i.message.includes('activities'));
+    if (activityIssue) {
+      const match = activityIssue.message.match(/Only (\d+) activities.*requires (\d+)/);
+      if (match) {
+        const current = parseInt(match[1]);
+        const required = parseInt(match[2]);
+        lines.push(`- Add ${required - current} more activities (currently ${current}, need ${required})`);
+        lines.push(`  Priority order: quiz → match-up → group-sort → true-false → fill-in → unjumble`);
+      }
+    }
+
+    // Vocab count
+    const vocabIssue = reqIssues.find(i => i.message.includes('vocab'));
+    if (vocabIssue) {
+      lines.push(`- ${vocabIssue.message}`);
+    }
+
+    // Item counts
+    const itemIssues = reqIssues.filter(i => i.message.includes('items'));
+    if (itemIssues.length > 0) {
+      const target = itemIssues[0].message.match(/target: (\d+)/)?.[1] || '?';
+      lines.push(`- Expand activities to ${target} items each`);
+    }
+    lines.push('');
+  }
+
+  // Priority 3: Enrichment
+  if (issuesByCategory['enrichment']) {
+    lines.push('## 🟡 ADD ENRICHMENT:');
+    for (const issue of issuesByCategory['enrichment']) {
+      if (issue.message.includes('engagement boxes')) {
+        lines.push('- Add 2+ engagement boxes: 💡 Did You Know, ⚡ Pro Tip, 🎭 Culture Corner, 📜 History Bite');
+      } else {
+        lines.push(`- ${issue.message}`);
+      }
+    }
+    lines.push('');
+  }
+
+  // Priority 4: Content quality
+  if (issuesByCategory['content-quality']) {
+    lines.push('## 🟡 IMPROVE CONTENT:');
+    for (const issue of issuesByCategory['content-quality']) {
+      if (issue.message.includes('example count')) {
+        lines.push('- Add more examples with Ukrainian + English translations');
+      } else if (issue.message.includes('PPP')) {
+        lines.push('- Add lesson structure: ## warm-up, ## presentation, ## practice, ## production');
+      } else if (issue.message.includes('Grammar module lacks')) {
+        lines.push('- Add conjugation/declension tables for grammar forms');
+      } else {
+        lines.push(`- ${issue.message}`);
+      }
+    }
+    lines.push('');
+  }
+
+  // Priority 5: Narrative
+  if (issuesByCategory['narrative']) {
+    lines.push('## 🟡 ENRICH NARRATIVE:');
+    for (const issue of issuesByCategory['narrative']) {
+      if (issue.message.includes('Dry narration')) {
+        lines.push('- Add explanatory prose between tables/lists - explain WHY, not just WHAT');
+        lines.push('- Include real-world usage examples and context');
+      } else {
+        lines.push(`- ${issue.message}`);
+      }
+    }
+    lines.push('');
+  }
+
+  // Priority 6: Complexity
+  if (issuesByCategory['complexity']) {
+    lines.push('## 🟡 ADJUST COMPLEXITY:');
+    for (const issue of issuesByCategory['complexity']) {
+      lines.push(`- ${issue.message}`);
+    }
+    lines.push('');
+  }
+
+  // Priority 7: Checkpoint requirements
+  if (issuesByCategory['checkpoint']) {
+    lines.push('## 🟡 CHECKPOINT REQUIREMENTS:');
+    for (const issue of issuesByCategory['checkpoint']) {
+      if (issue.message.includes('named character')) {
+        lines.push('- Add named character: "Name, age, nationality, city" (e.g., "Ліам, 26, Irish, Dublin")');
+      } else if (issue.message.includes('dialogue tables')) {
+        lines.push('- Add dialogue table: | Speaker | Ukrainian | English |');
+      } else if (issue.message.includes('testimonies')) {
+        lines.push('- Add 3-4 learner testimonies with names and quotes');
+      } else {
+        lines.push(`- ${issue.message}`);
+      }
+    }
+    lines.push('');
+  }
+
+  // Add regeneration reminder
+  lines.push('After fixing, regenerate: npx ts-node scripts/generate.ts l2-uk-en ' + audit.module);
+
+  return lines.join('\n');
+}
+
+// =============================================================================
 // Main
 // =============================================================================
 
 function main() {
   const args = process.argv.slice(2);
-  const lang = args[0] || 'l2-uk-en';
-  const rangeArg = args[1];
+
+  // Check for --fix flag
+  const fixMode = args.includes('--fix');
+  const filteredArgs = args.filter(a => !a.startsWith('--'));
+
+  const lang = filteredArgs[0] || 'l2-uk-en';
+  const rangeArg = filteredArgs[1];
 
   const modulesDir = path.join(process.cwd(), 'curriculum', lang, 'modules');
 
@@ -994,6 +1147,39 @@ function main() {
     console.log(`\n  ✅ Clean modules: ${cleanModules.map(f => f.num).join(', ')}`);
   } else if (cleanModules.length > 30) {
     console.log(`\n  ✅ Clean modules: ${cleanModules.length} modules have no issues`);
+  }
+
+  // Fix mode: generate prompts for each module
+  if (fixMode && problemModules.length > 0) {
+    // Sort by severity (most issues first)
+    const sorted = [...problemModules].sort((a, b) => {
+      const aErrors = a.issues.filter(i => i.type === 'error').length;
+      const bErrors = b.issues.filter(i => i.type === 'error').length;
+      const aWarnings = a.issues.filter(i => i.type === 'warning').length;
+      const bWarnings = b.issues.filter(i => i.type === 'warning').length;
+      if (aErrors !== bErrors) return bErrors - aErrors;
+      return bWarnings - aWarnings;
+    });
+
+    console.log('\n' + '='.repeat(70));
+    console.log('\n🔧 FIX MODE - Prompts for each module:\n');
+
+    for (let i = 0; i < sorted.length; i++) {
+      const audit = sorted[i];
+      const errCount = audit.issues.filter(i => i.type === 'error').length;
+      const warnCount = audit.issues.filter(i => i.type === 'warning').length;
+
+      console.log('─'.repeat(70));
+      console.log(`\n📝 [${i + 1}/${sorted.length}] Module ${audit.module} (${errCount} errors, ${warnCount} warnings)\n`);
+      console.log(generateFixPrompt(audit));
+      console.log('');
+    }
+
+    // Also output a summary prompt for batch fixing
+    console.log('─'.repeat(70));
+    console.log('\n📋 QUICK COPY - Module numbers to fix (priority order):\n');
+    console.log(sorted.map(a => a.module).join(', '));
+    console.log('');
   }
 
   // Exit code

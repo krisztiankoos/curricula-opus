@@ -1,0 +1,790 @@
+#!/usr/bin/env npx ts-node
+/**
+ * Module Audit Script
+ *
+ * Finds non-compliant, broken, or under-enriched modules.
+ * Checks against MODULE-RICHNESS-GUIDELINES.md requirements.
+ *
+ * Usage:
+ *   npx ts-node scripts/module-audit.ts [lang] [module-range]
+ *   npx ts-node scripts/module-audit.ts l2-uk-en
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 41-65
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 47
+ */
+
+import * as fs from 'fs';
+import * as path from 'path';
+
+// =============================================================================
+// Types
+// =============================================================================
+
+interface Issue {
+  type: 'error' | 'warning' | 'info';
+  category: string;
+  message: string;
+  line?: number;
+  context?: string;
+}
+
+interface ModuleAudit {
+  module: number;
+  title: string;
+  level: string;
+  issues: Issue[];
+  stats: {
+    activities: number;
+    activityTypes: string[];
+    vocabCount: number;
+    hasVocabSection: boolean;
+    hasSummary: boolean;
+    wordCount: number;
+    engagementBoxes: number;
+    itemsPerActivity: number[];
+  };
+}
+
+// =============================================================================
+// Requirements from MODULE-RICHNESS-GUIDELINES.md
+// =============================================================================
+
+interface LevelRequirements {
+  moduleRange: [number, number];
+  newWordsMin: number;
+  newWordsMax: number;
+  activityCount: number;
+  itemsPerActivity: number;
+  fillInWords: [number, number];
+  unjumbleWords: [number, number];
+}
+
+const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
+  'A1': {
+    moduleRange: [1, 30],
+    newWordsMin: 15, newWordsMax: 20,
+    activityCount: 6,
+    itemsPerActivity: 10,
+    fillInWords: [3, 5],
+    unjumbleWords: [4, 6],
+  },
+  'A2': {
+    moduleRange: [31, 60],
+    newWordsMin: 20, newWordsMax: 25,
+    activityCount: 8,
+    itemsPerActivity: 10,
+    fillInWords: [6, 8],
+    unjumbleWords: [8, 10],
+  },
+  'A2+': {
+    moduleRange: [61, 80],
+    newWordsMin: 35, newWordsMax: 40,
+    activityCount: 10,
+    itemsPerActivity: 15,
+    fillInWords: [8, 10],
+    unjumbleWords: [10, 12],
+  },
+  'B1': {
+    moduleRange: [81, 160],
+    newWordsMin: 25, newWordsMax: 30,
+    activityCount: 12,
+    itemsPerActivity: 20,
+    fillInWords: [10, 14],
+    unjumbleWords: [12, 16],
+  },
+  'B2': {
+    moduleRange: [161, 310],
+    newWordsMin: 25, newWordsMax: 30,
+    activityCount: 14,
+    itemsPerActivity: 20,
+    fillInWords: [12, 16],
+    unjumbleWords: [14, 18],
+  },
+  'C1': {
+    moduleRange: [311, 430],
+    newWordsMin: 30, newWordsMax: 35,
+    activityCount: 14,
+    itemsPerActivity: 20,
+    fillInWords: [14, 18],
+    unjumbleWords: [16, 20],
+  },
+};
+
+// =============================================================================
+// Audit Functions
+// =============================================================================
+
+function auditModule(filePath: string): ModuleAudit {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const lines = content.split('\n');
+  const issues: Issue[] = [];
+
+  // Extract frontmatter
+  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  const frontmatter = frontmatterMatch ? frontmatterMatch[1] : '';
+
+  const moduleNum = parseInt(frontmatter.match(/module:\s*(\d+)/)?.[1] || '0');
+  const title = frontmatter.match(/title:\s*"?([^"\n]+)"?/)?.[1] || 'Unknown';
+  const level = frontmatter.match(/level:\s*(\w+\+?)/)?.[1] || 'Unknown';
+
+  const req = LEVEL_REQUIREMENTS[level];
+
+  // ==========================================================================
+  // 1. BROKEN FORMAT DETECTION
+  // ==========================================================================
+
+  // Old order format: - [N] text
+  const orderFormatMatches = content.matchAll(/^- \[(\d+)\]\s+(.+)$/gm);
+  for (const match of orderFormatMatches) {
+    const lineNum = content.substring(0, match.index).split('\n').length;
+    issues.push({
+      type: 'error',
+      category: 'broken-format',
+      message: `Old order format "- [${match[1]}]" should be unjumble format`,
+      line: lineNum,
+      context: match[0].substring(0, 60),
+    });
+  }
+
+  // Arrow in answer position (indented arrow)
+  const arrowAnswerMatches = content.matchAll(/^(\s{2,})→\s*\*?\*?(.+)$/gm);
+  for (const match of arrowAnswerMatches) {
+    const lineNum = content.substring(0, match.index).split('\n').length;
+    // Skip if it's in a table or transformation context
+    const prevLines = content.substring(0, match.index).split('\n').slice(-3).join('\n');
+    if (!prevLines.includes('|') && !prevLines.match(/^\s*-\s+\w+\s*→/m)) {
+      issues.push({
+        type: 'error',
+        category: 'broken-format',
+        message: 'Arrow answer format should use > [!answer]',
+        line: lineNum,
+        context: match[0].substring(0, 60),
+      });
+    }
+  }
+
+  // Old pairs: format
+  if (content.match(/^pairs:\s*$/m)) {
+    const lineNum = content.split('\n').findIndex(l => l.match(/^pairs:\s*$/)) + 1;
+    issues.push({
+      type: 'error',
+      category: 'broken-format',
+      message: 'Old "pairs:" format should use table format',
+      line: lineNum,
+    });
+  }
+
+  // Old groups: format
+  if (content.match(/^groups:\s*$/m)) {
+    const lineNum = content.split('\n').findIndex(l => l.match(/^groups:\s*$/)) + 1;
+    issues.push({
+      type: 'error',
+      category: 'broken-format',
+      message: 'Old "groups:" format should use ### Category format',
+      line: lineNum,
+    });
+  }
+
+  // ==========================================================================
+  // 2. ACTIVITY ANALYSIS
+  // ==========================================================================
+
+  // Count activities and their types
+  const activityHeaders = content.match(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order|translate):\s*(.*)$/gim) || [];
+  const activityCount = activityHeaders.length;
+  const activityTypes = [...new Set(activityHeaders.map(h => h.match(/## (\w+(-\w+)?):/i)?.[1]?.toLowerCase() || ''))];
+
+  // Count items per activity
+  const itemsPerActivity: number[] = [];
+  const activitySections = content.matchAll(/## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order|translate):[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n# |$)/gi);
+
+  for (const actMatch of activitySections) {
+    const actType = actMatch[1].toLowerCase();
+    const actContent = actMatch[2];
+    let itemCount = 0;
+
+    if (actType === 'quiz' || actType === 'select') {
+      itemCount = (actContent.match(/^\d+\.\s+/gm) || []).length;
+    } else if (actType === 'match-up') {
+      itemCount = Math.max(0, (actContent.match(/^\|[^|]+\|/gm) || []).length - 2);
+    } else if (actType === 'group-sort') {
+      itemCount = (actContent.match(/^- .+$/gm) || []).length;
+    } else if (actType === 'true-false') {
+      itemCount = (actContent.match(/^- \[[ x]\]/gm) || []).length;
+    } else if (actType === 'fill-in' || actType === 'unjumble') {
+      itemCount = (actContent.match(/^\d+\.\s+/gm) || []).length;
+    }
+
+    itemsPerActivity.push(itemCount);
+  }
+
+  // Check for missing Activities section
+  if (!content.match(/# (?:Activities|Вправи)/)) {
+    issues.push({
+      type: 'warning',
+      category: 'missing-content',
+      message: 'No Activities section found',
+    });
+  }
+
+  // Check activity count against requirements
+  if (req && activityCount < req.activityCount) {
+    issues.push({
+      type: 'warning',
+      category: 'requirements',
+      message: `Only ${activityCount} activities (${level} requires ${req.activityCount})`,
+    });
+  }
+
+  // Check activity diversity (at least 3 different types)
+  if (activityCount >= 3 && activityTypes.length < 3) {
+    issues.push({
+      type: 'warning',
+      category: 'requirements',
+      message: `Low activity diversity: only ${activityTypes.length} types (need 3+): ${activityTypes.join(', ')}`,
+    });
+  }
+
+  // Check items per activity against requirements
+  if (req) {
+    for (let i = 0; i < itemsPerActivity.length; i++) {
+      if (itemsPerActivity[i] < req.itemsPerActivity && itemsPerActivity[i] > 0) {
+        issues.push({
+          type: 'info',
+          category: 'requirements',
+          message: `Activity ${i + 1} has only ${itemsPerActivity[i]} items (${level} target: ${req.itemsPerActivity})`,
+        });
+      }
+    }
+  }
+
+  // ==========================================================================
+  // 3. ACTIVITY VALIDATION
+  // ==========================================================================
+
+  // Check for quiz without correct answer marked
+  const quizSections = content.matchAll(/## quiz:[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n|$)/gi);
+  for (const quizMatch of quizSections) {
+    const quizContent = quizMatch[1];
+    // Split by numbered items using lookahead, then filter to actual questions
+    const questions = quizContent.split(/(?=^\d+\.\s+)/m).filter(p => p.match(/^\d+\./));
+    for (let qNum = 0; qNum < questions.length; qNum++) {
+      if (!questions[qNum].includes('[x]')) {
+        const lineNum = content.substring(0, quizMatch.index).split('\n').length;
+        issues.push({
+          type: 'error',
+          category: 'broken-activity',
+          message: `Quiz question ${qNum + 1} has no correct answer marked [x]`,
+          line: lineNum,
+        });
+      }
+    }
+  }
+
+  // Check for unjumble without answers
+  const unjumbleSections = content.matchAll(/## unjumble:[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n|$)/gi);
+  for (const unjMatch of unjumbleSections) {
+    const unjContent = unjMatch[1];
+    const items = unjContent.match(/^\d+\.\s+/gm) || [];
+    const answers = unjContent.match(/>\s*\[!answer\]/g) || [];
+    if (items.length > answers.length) {
+      const lineNum = content.substring(0, unjMatch.index).split('\n').length;
+      issues.push({
+        type: 'error',
+        category: 'broken-activity',
+        message: `Unjumble has ${items.length} items but only ${answers.length} answers`,
+        line: lineNum,
+      });
+    }
+
+    // Check unjumble word count
+    if (req) {
+      const unjumbleItems = unjContent.matchAll(/^\d+\.\s+([^\n]+)/gm);
+      for (const item of unjumbleItems) {
+        const wordCount = item[1].split(/\s*\/\s*/).length;
+        if (wordCount > 0 && (wordCount < req.unjumbleWords[0] || wordCount > req.unjumbleWords[1])) {
+          const lineNum = content.substring(0, unjMatch.index).split('\n').length;
+          issues.push({
+            type: 'info',
+            category: 'complexity',
+            message: `Unjumble item has ${wordCount} words (${level} target: ${req.unjumbleWords[0]}-${req.unjumbleWords[1]})`,
+            line: lineNum,
+          });
+          break; // Only report once per activity
+        }
+      }
+    }
+  }
+
+  // Check for fill-in without answers
+  const fillSections = content.matchAll(/## fill-in:[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n|$)/gi);
+  for (const fillMatch of fillSections) {
+    const fillContent = fillMatch[1];
+    const blanks = fillContent.match(/___/g) || [];
+    const answers = fillContent.match(/>\s*\[!answer\]/g) || [];
+    if (blanks.length > answers.length) {
+      const lineNum = content.substring(0, fillMatch.index).split('\n').length;
+      issues.push({
+        type: 'warning',
+        category: 'broken-activity',
+        message: `Fill-in has ${blanks.length} blanks but only ${answers.length} answers`,
+        line: lineNum,
+      });
+    }
+  }
+
+  // Check for match-up without table
+  const matchSections = content.matchAll(/## match-up:[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n|$)/gi);
+  for (const matchMatch of matchSections) {
+    const matchContent = matchMatch[1];
+    if (!matchContent.includes('|')) {
+      const lineNum = content.substring(0, matchMatch.index).split('\n').length;
+      issues.push({
+        type: 'error',
+        category: 'broken-activity',
+        message: 'Match-up activity missing table format',
+        line: lineNum,
+      });
+    }
+  }
+
+  // ==========================================================================
+  // 4. VOCABULARY ANALYSIS
+  // ==========================================================================
+
+  const vocabSection = content.match(/# (?:Vocabulary|Словник)\n([\s\S]*?)(?=\n# |$)/);
+  const hasVocabSection = !!vocabSection;
+  let vocabCount = 0;
+
+  if (vocabSection) {
+    const vocabContent = vocabSection[1];
+    const tableRows = vocabContent.match(/^\|[^|]+\|/gm) || [];
+    vocabCount = Math.max(0, tableRows.length - 2); // Subtract header and separator
+
+    // Check for empty vocab
+    if (vocabCount === 0) {
+      issues.push({
+        type: 'warning',
+        category: 'missing-content',
+        message: 'Vocabulary section exists but no entries found',
+      });
+    }
+
+    // Check vocab count against requirements
+    if (req) {
+      if (vocabCount < req.newWordsMin) {
+        issues.push({
+          type: 'warning',
+          category: 'requirements',
+          message: `Only ${vocabCount} vocab words (${level} requires ${req.newWordsMin}-${req.newWordsMax})`,
+        });
+      } else if (vocabCount > req.newWordsMax + 10) {
+        issues.push({
+          type: 'info',
+          category: 'requirements',
+          message: `High vocab count: ${vocabCount} words (${level} target: ${req.newWordsMin}-${req.newWordsMax}) - consider splitting`,
+        });
+      }
+    }
+  } else {
+    issues.push({
+      type: 'warning',
+      category: 'missing-content',
+      message: 'No Vocabulary section found',
+    });
+  }
+
+  // ==========================================================================
+  // 5. ENGAGEMENT BOXES
+  // ==========================================================================
+
+  // Check for engagement boxes (💡 Did You Know, ⚡ Pro Tip, 📜 History Bite, 🎭 Culture Corner, etc.)
+  const engagementPatterns = [
+    />\s*💡\s*\*\*Did You Know/g,
+    />\s*⚡\s*\*\*Pro Tip/g,
+    />\s*📜\s*\*\*History Bite/g,
+    />\s*🎭\s*\*\*Culture Corner/g,
+    />\s*🔍\s*\*\*Myth Buster/g,
+    />\s*🎯\s*\*\*Fun Fact/g,
+    />\s*🔗\s*\*\*Language Link/g,
+    />\s*🌍\s*\*\*Real World/g,
+  ];
+
+  let engagementBoxes = 0;
+  for (const pattern of engagementPatterns) {
+    engagementBoxes += (content.match(pattern) || []).length;
+  }
+
+  if (engagementBoxes === 0) {
+    issues.push({
+      type: 'warning',
+      category: 'enrichment',
+      message: 'No engagement boxes found (💡 Did You Know, ⚡ Pro Tip, etc.)',
+    });
+  } else if (engagementBoxes < 2) {
+    issues.push({
+      type: 'info',
+      category: 'enrichment',
+      message: `Only ${engagementBoxes} engagement box (recommend 2+ per module)`,
+    });
+  }
+
+  // ==========================================================================
+  // 6. STRUCTURE CHECKS
+  // ==========================================================================
+
+  // Check for Summary section
+  const hasSummary = !!content.match(/# (?:Summary|Підсумок)/);
+  if (!hasSummary) {
+    issues.push({
+      type: 'info',
+      category: 'missing-content',
+      message: 'No Summary section found',
+    });
+  }
+
+  // Check for Introduction
+  if (!content.match(/# (?:Introduction|Вступ|Lesson Content)/)) {
+    issues.push({
+      type: 'info',
+      category: 'missing-content',
+      message: 'No Introduction/Вступ section found',
+    });
+  }
+
+  // ==========================================================================
+  // 7. CONTENT DEPTH / DRY NARRATION
+  // ==========================================================================
+
+  // Get main content (excluding frontmatter, activities, vocab, summary)
+  const mainContent = content
+    .replace(/^---[\s\S]*?---/, '')
+    .replace(/# (?:Activities|Вправи)[\s\S]*?(?=# (?:Vocabulary|Словник)|$)/, '')
+    .replace(/# (?:Vocabulary|Словник)[\s\S]*?(?=# |$)/, '')
+    .replace(/# (?:Summary|Підсумок)[\s\S]*$/, '');
+
+  const wordCount = mainContent.split(/\s+/).filter(w => w.length > 2).length;
+
+  // Check for minimal lesson content
+  const minWordCount: Record<string, number> = {
+    'A1': 400,
+    'A2': 500,
+    'A2+': 600,
+    'B1': 700,
+    'B2': 800,
+    'C1': 900,
+  };
+
+  const minWords = minWordCount[level] || 500;
+  if (wordCount < minWords) {
+    issues.push({
+      type: 'warning',
+      category: 'enrichment',
+      message: `Low content word count: ${wordCount} words (${level} should have ${minWords}+)`,
+    });
+  }
+
+  // Check for placeholder text
+  const placeholders = [
+    /TODO/gi,
+    /FIXME/gi,
+    /\[placeholder\]/gi,
+    /\[TBD\]/gi,
+    /\[to be added\]/gi,
+  ];
+  for (const pattern of placeholders) {
+    const matches = content.matchAll(pattern);
+    for (const match of matches) {
+      const lineNum = content.substring(0, match.index).split('\n').length;
+      issues.push({
+        type: 'warning',
+        category: 'incomplete',
+        message: `Placeholder text found: "${match[0]}"`,
+        line: lineNum,
+      });
+    }
+  }
+
+  // ==========================================================================
+  // 8. PRONUNCIATION GUIDANCE (B2+ Grammar Modules)
+  // ==========================================================================
+
+  if (['B2', 'C1', 'C2'].includes(level)) {
+    const isGrammarModule = frontmatter.match(/tags:.*grammar/i) || title.toLowerCase().includes('grammar');
+    if (isGrammarModule && !content.match(/# (?:Pronunciation|Вимова)/i)) {
+      issues.push({
+        type: 'info',
+        category: 'requirements',
+        message: 'B2+ grammar module should include pronunciation guidance section',
+      });
+    }
+  }
+
+  // ==========================================================================
+  // 9. CHECKPOINT MODULES (every 10th: 10, 20, 30, etc.)
+  // ==========================================================================
+
+  const isCheckpoint = moduleNum % 10 === 0;
+  const isReviewModule = frontmatter.match(/tags:.*(?:review|checkpoint)/i) || title.toLowerCase().includes('checkpoint');
+
+  if (isCheckpoint || isReviewModule) {
+    // Check for named character
+    const hasCharacterName = content.match(/(?:Ліам|Софія|Марко|Олена|Джон|Анна|Микола|Катерина|\w+),\s*\d+,?\s*(?:Irish|American|British|Canadian|German|French|Ukrainian|Polish)/i);
+    if (!hasCharacterName) {
+      issues.push({
+        type: 'warning',
+        category: 'checkpoint',
+        message: 'Checkpoint missing named character (e.g., "Ліам, 26, Irish, Dublin")',
+      });
+    }
+
+    // Check for dialogue tables
+    const hasDialogueTable = content.match(/\|\s*(?:Speaker|Мовець|Хто)\s*\|.*\|.*\|/i);
+    if (!hasDialogueTable) {
+      issues.push({
+        type: 'warning',
+        category: 'checkpoint',
+        message: 'Checkpoint missing dialogue tables (Speaker | Ukrainian | English)',
+      });
+    }
+
+    // Check for testimonies (multiple learner quotes)
+    const testimonies = content.match(/["«»].*(?:дуже|легко|важко|цікаво|подобається).*["«»]/gi) || [];
+    if (testimonies.length < 2) {
+      issues.push({
+        type: 'info',
+        category: 'checkpoint',
+        message: `Checkpoint has only ${testimonies.length} testimonies (recommend 3-4 learner quotes)`,
+      });
+    }
+
+    // Check for story/narrative opening
+    const hasNarrative = content.match(/(?:journal|diary|journal entry|story|щоденник|історія)/i) ||
+                         content.match(/^(?:День \d+|Day \d+|Today|Сьогодні)/m);
+    if (!hasNarrative) {
+      issues.push({
+        type: 'info',
+        category: 'checkpoint',
+        message: 'Checkpoint may lack opening narrative (journal entry, story)',
+      });
+    }
+  }
+
+  // ==========================================================================
+  // 10. ACTIVITY ORDER (should follow priority)
+  // ==========================================================================
+
+  const activityPriority: Record<string, number> = {
+    'quiz': 1,
+    'match-up': 2,
+    'group-sort': 3,
+    'true-false': 4,
+    'select': 5,
+    'order': 6,
+    'fill-in': 7,
+    'unjumble': 8,
+  };
+
+  const activityOrder: { type: string; index: number }[] = [];
+  const activityOrderMatches = content.matchAll(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order):/gim);
+  let actIdx = 0;
+  for (const match of activityOrderMatches) {
+    activityOrder.push({ type: match[1].toLowerCase(), index: actIdx++ });
+  }
+
+  // Check if high-load activities come before low-load ones (not ideal)
+  let lastPriority = 0;
+  let orderViolations = 0;
+  for (const act of activityOrder) {
+    const priority = activityPriority[act.type] || 5;
+    if (priority < lastPriority - 2) {
+      // Allow some flexibility (2 priority levels)
+      orderViolations++;
+    }
+    lastPriority = priority;
+  }
+
+  if (orderViolations >= 2) {
+    issues.push({
+      type: 'info',
+      category: 'activity-order',
+      message: `Activity order may be suboptimal (high-load activities before low-load). Current order: ${activityOrder.map(a => a.type).join(' → ')}`,
+    });
+  }
+
+  // ==========================================================================
+  // 11. CONVERSATION/DIALOGUE QUALITY
+  // ==========================================================================
+
+  // Check for dialogue tables in non-checkpoint modules too (good practice)
+  const dialogueTables = content.match(/\|\s*(?:Speaker|Мовець|Хто|Person|Особа|A|B)\s*\|/gi) || [];
+  const hasConversationalContent = content.match(/(?:conversation|dialogue|діалог|розмова)/i);
+
+  if (hasConversationalContent && dialogueTables.length === 0) {
+    issues.push({
+      type: 'info',
+      category: 'enrichment',
+      message: 'Module mentions dialogue/conversation but has no dialogue tables',
+    });
+  }
+
+  return {
+    module: moduleNum,
+    title,
+    level,
+    issues,
+    stats: {
+      activities: activityCount,
+      activityTypes,
+      vocabCount,
+      hasVocabSection,
+      hasSummary,
+      wordCount,
+      engagementBoxes,
+      itemsPerActivity,
+    },
+  };
+}
+
+// =============================================================================
+// Main
+// =============================================================================
+
+function main() {
+  const args = process.argv.slice(2);
+  const lang = args[0] || 'l2-uk-en';
+  const rangeArg = args[1];
+
+  const modulesDir = path.join(process.cwd(), 'curriculum', lang, 'modules');
+
+  if (!fs.existsSync(modulesDir)) {
+    console.error(`Directory not found: ${modulesDir}`);
+    process.exit(1);
+  }
+
+  // Parse range
+  let minModule = 1;
+  let maxModule = 999;
+  if (rangeArg) {
+    if (rangeArg.includes('-')) {
+      const [min, max] = rangeArg.split('-').map(Number);
+      minModule = min;
+      maxModule = max;
+    } else {
+      minModule = maxModule = parseInt(rangeArg);
+    }
+  }
+
+  // Find module files
+  const files = fs.readdirSync(modulesDir)
+    .filter(f => f.match(/^module-\d+\.md$/))
+    .map(f => ({
+      path: path.join(modulesDir, f),
+      num: parseInt(f.match(/module-(\d+)/)?.[1] || '0'),
+    }))
+    .filter(f => f.num >= minModule && f.num <= maxModule)
+    .sort((a, b) => a.num - b.num);
+
+  console.log(`\n🔍 Module Audit: ${lang} (modules ${minModule}-${maxModule})\n`);
+  console.log('='.repeat(70));
+
+  let totalErrors = 0;
+  let totalWarnings = 0;
+  let totalInfo = 0;
+  const problemModules: ModuleAudit[] = [];
+
+  for (const file of files) {
+    const audit = auditModule(file.path);
+
+    const errors = audit.issues.filter(i => i.type === 'error').length;
+    const warnings = audit.issues.filter(i => i.type === 'warning').length;
+    const infos = audit.issues.filter(i => i.type === 'info').length;
+
+    totalErrors += errors;
+    totalWarnings += warnings;
+    totalInfo += infos;
+
+    if (audit.issues.length > 0) {
+      problemModules.push(audit);
+    }
+  }
+
+  // Print results grouped by category
+  const categories = [
+    'broken-format',
+    'broken-activity',
+    'checkpoint',
+    'requirements',
+    'missing-content',
+    'incomplete',
+    'enrichment',
+    'activity-order',
+    'complexity',
+  ];
+
+  for (const category of categories) {
+    const modulesWithCategory = problemModules.filter(m =>
+      m.issues.some(i => i.category === category)
+    );
+
+    if (modulesWithCategory.length === 0) continue;
+
+    console.log(`\n📋 ${category.toUpperCase()}`);
+    console.log('-'.repeat(70));
+
+    for (const audit of modulesWithCategory) {
+      const categoryIssues = audit.issues.filter(i => i.category === category);
+      if (categoryIssues.length === 0) continue;
+
+      console.log(`\n  Module ${audit.module}: ${audit.title} (${audit.level})`);
+      for (const issue of categoryIssues) {
+        const icon = issue.type === 'error' ? '❌' : issue.type === 'warning' ? '⚠️' : 'ℹ️';
+        const lineInfo = issue.line ? `:${issue.line}` : '';
+        console.log(`    ${icon} ${issue.message}${lineInfo}`);
+        if (issue.context) {
+          console.log(`       → ${issue.context}`);
+        }
+      }
+    }
+  }
+
+  // Summary
+  console.log('\n' + '='.repeat(70));
+  console.log('\n📊 SUMMARY\n');
+  console.log(`  Modules scanned: ${files.length}`);
+  console.log(`  Modules with issues: ${problemModules.length}`);
+  console.log(`  ❌ Errors: ${totalErrors}`);
+  console.log(`  ⚠️  Warnings: ${totalWarnings}`);
+  console.log(`  ℹ️  Info: ${totalInfo}`);
+
+  // Stats by level
+  const byLevel: Record<string, { total: number; withIssues: number }> = {};
+  for (const file of files) {
+    const audit = problemModules.find(p => p.module === file.num);
+    const level = audit?.level || 'Unknown';
+    if (!byLevel[level]) byLevel[level] = { total: 0, withIssues: 0 };
+    byLevel[level].total++;
+    if (audit) byLevel[level].withIssues++;
+  }
+
+  console.log('\n  By Level:');
+  for (const [level, stats] of Object.entries(byLevel)) {
+    console.log(`    ${level}: ${stats.withIssues}/${stats.total} with issues`);
+  }
+
+  // List clean modules
+  const cleanModules = files.filter(f =>
+    !problemModules.some(p => p.module === f.num)
+  );
+  if (cleanModules.length > 0 && cleanModules.length <= 30) {
+    console.log(`\n  ✅ Clean modules: ${cleanModules.map(f => f.num).join(', ')}`);
+  } else if (cleanModules.length > 30) {
+    console.log(`\n  ✅ Clean modules: ${cleanModules.length} modules have no issues`);
+  }
+
+  // Exit code
+  if (totalErrors > 0) {
+    process.exit(1);
+  }
+}
+
+main();

@@ -14,7 +14,7 @@ objectives:
   - Navigate Ukrainian cities with confidence
 grammar:
   - Imperatives for directions (йдіть, поверніть)
-  - Prepositions of direction (до, біля, навпроти)
+  - Location words (тут, там, близько, далеко)
   - Question patterns for location
 ---
 
@@ -42,7 +42,6 @@ Key phrases you'll learn:
 **Basic patterns:**
 - Де + noun? → Де метро? (Where is the metro?)
 - Де тут + noun? → Де тут банк? (Where is a bank here?)
-- Де найближча/найближчий + noun? → Де найближча аптека? (Where is the nearest pharmacy?)
 
 **Polite patterns:**
 - Скажіть, будь ласка, де...? (Tell me please, where is...?)
@@ -79,20 +78,14 @@ Key phrases you'll learn:
 
 | Ukrainian | English | Example |
 |-----------|---------|---------|
-| до | to, toward | Йдіть до станції. (Go to the station.) |
-| біля | near, by | Банк біля метро. (Bank is near the metro.) |
-| навпроти | opposite | Аптека навпроти готелю. (Pharmacy is opposite the hotel.) |
-| за | behind | За рогом. (Around the corner. / Behind the corner.) |
-| перед | in front of | Перед входом. (In front of the entrance.) |
-| між | between | Між банком і аптекою. (Between the bank and pharmacy.) |
+| тут | here | Банк тут. (The bank is here.) |
+| там | there | Аптека там. (The pharmacy is there.) |
+| за рогом | around the corner | За рогом. (Around the corner.) |
+| поруч | next to, nearby | Банк поруч. (The bank is nearby.) |
 
-> 🔗 **Language Link: До + Genitive**
+> 💡 **Preview: Prepositions with Cases**
 >
-> The preposition "до" (to) takes the genitive case:
-> - до станці**ї** (to the station) - станція → станції
-> - до готел**ю** (to the hotel) - готель → готелю
->
-> You'll learn genitive fully in Module 16, but for now, notice the endings change!
+> Some prepositions like "до" (to), "біля" (near), and "навпроти" (opposite) require special word endings called "cases." You'll learn these in Module 16! For now, focus on basic location words.
 
 ### Giving Directions (Imperatives)
 
@@ -164,7 +157,7 @@ Key phrases you'll learn:
 >
 > Pharmacies (аптеки) in Ukraine are everywhere and marked with a green cross. Pharmacists can recommend medications - you don't always need a doctor for minor issues.
 >
-> - Де найближча аптека? (Where is the nearest pharmacy?)
+> - Де тут аптека? (Where is a pharmacy here?)
 > - У мене болить голова. (I have a headache.)
 > - Дайте, будь ласка, знеболююче. (Give me a painkiller, please.)
 
@@ -184,7 +177,7 @@ Match the instruction to the action:
 
 ### Complete the Dialogue
 
-A: Вибачте, де найближче метро?
+A: Вибачте, де тут метро?
 B: Йдіть ___ (straight), потім поверніть ___ (left). Метро ___ (there).
 
 Answers: прямо, ліворуч, там
@@ -193,11 +186,11 @@ Answers: прямо, ліворуч, там
 
 Form questions:
 1. Bank
-   > [!answer] Де банк? / Вибачте, де найближчий банк?
+   > [!answer] Де банк? / Вибачте, де тут банк?
 2. Metro
    > [!answer] Де метро? / Скажіть, будь ласка, де метро?
 3. Pharmacy
-   > [!answer] Де аптека? / Де найближча аптека?
+   > [!answer] Де аптека? / Де тут аптека?
 
 ## production
 
@@ -210,8 +203,8 @@ Practice asking for directions to:
 4. A restaurant
 
 Example:
-- Вибачте, скажіть, будь ласка, як дійти до метро?
-- Йдіть прямо, потім поверніть праворуч. Метро біля банку.
+- Вибачте, скажіть, будь ласка, де метро?
+- Йдіть прямо, потім поверніть праворуч. Метро там.
 - Дякую!
 
 ---
@@ -242,21 +235,21 @@ Example:
    > [!answer] праворуч
    > [!options] прямо | праворуч | назад
 
-4. Банк ___ метро. (The bank is near the metro.)
-   > [!answer] біля
-   > [!options] на | в | біля
+4. Банк ___. (The bank is here.)
+   > [!answer] тут
+   > [!options] там | тут | далеко
 
 5. ___ вулицю. (Cross the street.)
    > [!answer] Перейдіть
    > [!options] Йдіть | Поверніть | Перейдіть
 
-6. Аптека ___ готелю. (The pharmacy is opposite the hotel.)
-   > [!answer] навпроти
-   > [!options] біля | навпроти | за
+6. Аптека ___. (The pharmacy is there.)
+   > [!answer] там
+   > [!options] тут | там | близько
 
-7. Магазин ___ рогом. (The store is around the corner.)
-   > [!answer] за
-   > [!options] до | за | біля
+7. Магазин за ___. (The store is around the corner.)
+   > [!answer] рогом
+   > [!options] рогом | метро | вулицю
 
 8. Метро тут ___. (The metro is close here.)
    > [!answer] близько
@@ -298,9 +291,9 @@ Example:
    > [!answer] Перейдіть цю вулицю.
    > (Cross this street.) [3 words]
 
-5. метро / біля / Банк
-   > [!answer] Банк біля метро.
-   > (The bank is near the metro.) [3 words]
+5. тут / Банк / поруч
+   > [!answer] Банк тут поруч.
+   > (The bank is nearby here.) [3 words]
 
 6. рогом / за / Аптека
    > [!answer] Аптека за рогом.
@@ -326,9 +319,9 @@ Example:
     > [!answer] Банк далеко.
     > (The bank is far.) [2 words]
 
-12. готелю / навпроти / Магазин
-    > [!answer] Магазин навпроти готелю.
-    > (The store is opposite the hotel.) [3 words]
+12. там / Магазин / далеко
+    > [!answer] Магазин там далеко.
+    > (The store is far there.) [3 words]
 
 ## match-up: Match the Pairs
 
@@ -450,7 +443,7 @@ Example:
 - [ ] "Йдіть прямо" means "Turn around"
    > Incorrect. It means "Go straight"
 
-- [x] "Де найближче метро?" asks for the nearest metro
+- [x] "Де тут метро?" asks where the metro is
    > Correct!
 
 - [ ] "вхід" and "вихід" mean the same thing
@@ -523,9 +516,9 @@ Example:
    > [!answer] де
    > [!options] що | хто | де
 
-6. B: Банк ___ метро. (The bank is near the metro.)
-   > [!answer] біля
-   > [!options] на | біля | в
+6. B: Банк ___ поруч. (The bank is nearby here.)
+   > [!answer] тут
+   > [!options] там | тут | далеко
 
 7. A: Дякую! А ___ аптека? (Thanks! And where is the pharmacy?)
    > [!answer] де
@@ -587,13 +580,13 @@ Example:
    > [!answer] Перейдіть вулицю.
    > [!options] Йдіть прямо. | Перейдіть вулицю. | Поверніть ліворуч.
 
-9. Someone asks where the bank is. It's near the metro. What do you say?
-   > [!answer] Банк біля метро.
-   > [!options] Де банк? | Банк далеко. | Банк біля метро.
+9. Someone asks where the bank is. It's nearby. What do you say?
+   > [!answer] Банк тут поруч.
+   > [!options] Де банк? | Банк далеко. | Банк тут поруч.
 
-10. You want to ask how to get to the station. What do you say?
-    > [!answer] Як дійти до станції?
-    > [!options] Станція там. | Як дійти до станції? | Де вулиця?
+10. You want to ask where the station is. What do you say?
+    > [!answer] Де станція?
+    > [!options] Станція там. | Де станція? | Де вулиця?
 
 11. Someone says "Аптека за рогом." Where is the pharmacy?
     > [!answer] Around the corner
@@ -668,9 +661,8 @@ Example:
 |---------|---------|
 | Де + noun? | Де метро? |
 | Де тут + noun? | Де тут банк? |
-| Де найближча/чий + noun? | Де найближча аптека? |
-| Як дійти до + gen.? | Як дійти до станції? |
 | Вибачте, де...? | Вибачте, де готель? |
+| Скажіть, будь ласка, де...? | Скажіть, будь ласка, де аптека? |
 
 ## Giving Directions
 

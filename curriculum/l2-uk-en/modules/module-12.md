@@ -73,22 +73,13 @@ In Module 11, you learned masculine inanimate nouns don't change in accusative. 
 
 **Animate (use genitive-like accusative):**
 - People: студент, лікар, друг, чоловік, тато
-- Animals: собака, кіт, птах, кінь
-- Personified beings: Бог (God), ангел (angel)
 
 **Inanimate (no accusative change):**
 - Objects: стіл, телефон, комп'ютер
-- Abstract things: час (time), успіх (success)
-- Plants: дерево (tree), квітка (flower)
-- Collectives: народ (people/nation), клас (class)
 
-> 🎯 **Fun Fact: Dead People**
+> 🎯 **Fun Fact: Historical Figures**
 >
-> In Ukrainian, deceased people are still grammatically animate:
-> - Я вивчаю **Шевченка**. (I study Shevchenko.)
-> - Ми читаємо **Франка**. (We read Franko.)
->
-> The animate rule applies even to historical figures!
+> In Ukrainian, deceased people are still grammatically animate - the animate rule applies even to historical figures!
 
 ### Common People Vocabulary
 
@@ -147,7 +138,7 @@ Change to accusative:
 > - **Я знаю цього чоловіка.** - I know this man.
 > - **Ти бачиш ту жінку?** - Do you see that woman?
 > - **Ми чекаємо на лікаря.** - We're waiting for the doctor.
-> - **Я люблю свою маму.** - I love my mom.
+> - **Я люблю маму.** - I love mom.
 
 ## production
 
@@ -262,9 +253,9 @@ Practice with real people:
    > [!answer] Я бачу цього чоловіка.
    > (I see this man.) [4 words]
 
-10. директора / бачимо / Ми / нашого
-    > [!answer] Ми бачимо нашого директора.
-    > (We see our director.) [4 words]
+10. директора / бачимо / Ми / цього
+    > [!answer] Ми бачимо цього директора.
+    > (We see this director.) [4 words]
 
 11. сусідку / знаєш / Ти / цю
     > [!answer] Ти знаєш цю сусідку.
@@ -532,10 +523,8 @@ Practice with real people:
 | гість | /ɦʲistʲ/ | guest | noun | m | Acc: гостя |
 | директор | /dɪˈrɛktɔr/ | director | noun | m | Acc: директора |
 | менеджер | /mɛˈnɛd͡ʒɛr/ | manager | noun | m | Acc: менеджера |
-| учитель | /uˈtʃɪtɛlʲ/ | teacher (m) | noun | m | Acc: учителя |
-| учителька | /utʃɪˈtɛlʲkɑ/ | teacher (f) | noun | f | Acc: учительку |
-| собака | /sɔˈbɑkɑ/ | dog | noun | m | Animate! Acc: собаку |
-| кіт | /kʲit/ | cat | noun | m | Acc: кота |
+| вчитель | /utʃɪˈtɛlʲ/ | teacher (m) | noun | m | Acc: вчителя |
+| вчителька | /utʃɪˈtɛlʲkɑ/ | teacher (f) | noun | f | Acc: вчительку |
 
 ---
 

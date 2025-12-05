@@ -170,11 +170,11 @@ Choose the correct form:
    > [!answer] мій
 2. Де ___ (your-informal) книга?
    > [!answer] твоя
-3. ___ (Our) дім великий.
+3. ___ (Our) дім тут.
    > [!answer] Наш
 4. ___ (Her) брат студент.
    > [!answer] Її
-5. ___ (Their) машина нова.
+5. ___ (Their) машина там.
    > [!answer] Їхня
 
 > 🌍 **Real World: Talking About Belongings**
@@ -192,12 +192,12 @@ Choose the correct form:
 Describe using possessives:
 1. My phone is on the table.
    > [!answer] Мій телефон на столі.
-2. Her book is interesting.
-   > [!answer] Її книга цікава.
-3. Our city is beautiful.
-   > [!answer] Наше місто гарне.
-4. Their house is big.
-   > [!answer] Їхній дім великий.
+2. Her book is here.
+   > [!answer] Її книга тут.
+3. Our city is there.
+   > [!answer] Наше місто там.
+4. Their house is here.
+   > [!answer] Їхній дім тут.
 
 ---
 
@@ -565,9 +565,6 @@ Describe using possessives:
 | свій | /svʲij/ | one's own (m) | pron | m | своя (f), своє (n), свої (pl) |
 | чий | /tʃɪj/ | whose (m) | pron | m | чия (f), чиє (n), чиї (pl) |
 | річ | /rʲitʃ/ | thing | noun | f | Plural: речі |
-| власний | /ˈvlɑsnɪj/ | own, personal | adj | m |
-| чужий | /tʃuˈʒɪj/ | someone else's | adj | m | foreign/alien |
-| спільний | /ˈsʲpʲilʲnɪj/ | common, shared | adj | m |
 | разом | /ˈrɑzɔm/ | together | adv | - |
 | окремо | /ɔˈkrɛmɔ/ | separately | adv | - |
 | родина | /rɔˈdɪnɑ/ | family | noun | f |

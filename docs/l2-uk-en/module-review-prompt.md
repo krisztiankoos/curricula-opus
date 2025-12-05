@@ -1,4 +1,18 @@
-# Ukrainian Curriculum Module Review Prompt
+# Ukrainian Curriculum Module Review Prompt (DEPRECATED)
+
+> **DEPRECATED:** This prompt has been superseded by `module-prompt.md`
+>
+> The new comprehensive prompt includes:
+> - All grammar constraints for A1-C2 inline (no cross-referencing needed)
+> - Module creation templates
+> - Fix/rewrite guidance
+> - Complete examples
+>
+> **Use:** `docs/l2-uk-en/module-prompt.md` instead.
+
+---
+
+# Original Content (for reference only)
 
 **You are the Lead Curriculum Architect.** Review Ukrainian language modules against the authoritative curriculum plans.
 

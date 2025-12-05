@@ -5,7 +5,7 @@ subtitle: "Direct Objects - People"
 level: A1
 phase: A1.2
 duration: 45
-transliteration: full
+transliteration: partial
 tags: [grammar, cases, accusative, animate]
 objectives:
   - Distinguish animate from inanimate nouns
@@ -174,89 +174,105 @@ Practice with real people:
 
 > Choose the correct accusative form for animate nouns (people).
 
-1. Я бачу нового українського ___ біля бібліотеки. (I see a new Ukrainian student near the library.)
-   > [!answer] студента
-   > [!options] студент | студента | студенті | студенту
-
-2. Вона добре знає цього досвідченого ___. (She knows this experienced doctor well.)
-   > [!answer] лікаря
-   > [!options] лікар | лікаря | лікарі | лікару
-
-3. Я бачу молоду талановиту ___ на сцені. (I see a young talented student on stage.)
-   > [!answer] студентку
-   > [!options] студентка | студентку | студентці | студенткою
-
-4. Він давно чекає на свого найкращого ___. (He has been waiting for his best friend for a long time.)
+1. Я бачу ___. Це мій друг. (I see the friend. This is my friend.)
    > [!answer] друга
    > [!options] друг | друга | друзі | другу
 
-5. Ми добре знаємо нашого нового ___. (We know our new teacher well.)
+2. Вона знає цього ___. (She knows this doctor.)
+   > [!answer] лікаря
+   > [!options] лікар | лікаря | лікарі | лікару
+
+3. Я бачу ___. Вона студентка. (I see the student. She is a student.)
+   > [!answer] студентку
+   > [!options] студентка | студентку | студентці | студенткою
+
+4. Він чекає на ___. (He is waiting for the friend.)
+   > [!answer] друга
+   > [!options] друг | друга | друзі | другу
+
+5. Ми знаємо цього ___. (We know this teacher.)
    > [!answer] вчителя
    > [!options] вчитель | вчителя | вчителі | вчителю
 
-6. Вона часто бачить цю молоду ___ в парку. (She often sees this young woman in the park.)
+6. Вона бачить цю ___. (She sees this woman.)
    > [!answer] жінку
    > [!options] жінка | жінку | жінці | жінкою
 
-7. Я давно знаю цього розумного ___. (I have known this smart man for a long time.)
+7. Я знаю цього ___. (I know this man.)
    > [!answer] чоловіка
    > [!options] чоловік | чоловіка | чоловіці | чоловіку
 
-8. Він терпляче чекає на свою добру ___. (He patiently waits for his good friend.)
+8. Він чекає на ___. (He waits for the friend.)
    > [!answer] подругу
    > [!options] подруга | подругу | подрузі | подругою
 
-9. Ми рідко бачимо нашого зайнятого ___. (We rarely see our busy director.)
+9. Ми бачимо ___. (We see the director.)
    > [!answer] директора
    > [!options] директор | директора | директорі | директору
 
-10. Я добре знаю цю привітну ___. (I know this friendly neighbor well.)
-   > [!answer] сусідку
-   > [!options] сусідка | сусідку | сусідці | сусідкою
+10. Я знаю цю ___. (I know this neighbor.)
+    > [!answer] сусідку
+    > [!options] сусідка | сусідку | сусідці | сусідкою
+
+11. Ти бачиш ___? (Do you see the student?)
+    > [!answer] студента
+    > [!options] студент | студента | студенті | студенту
+
+12. Вони знають цього ___. (They know this driver.)
+    > [!answer] водія
+    > [!options] водій | водія | водії | водію
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. Sentences range from 5-7 words.
+> Arrange the words in the correct order. (4-5 words)
 
-1. студента / нового / бачу / Я / українського / біля / бібліотеки
-   > [!answer] Я бачу нового українського студента біля бібліотеки.
-   > (I see a new Ukrainian student near the library.) [7 words]
+1. студента / бачу / Я / цього
+   > [!answer] Я бачу цього студента.
+   > (I see this student.) [4 words]
 
-2. лікаря / добре / знає / Вона / цього / досвідченого
-   > [!answer] Вона добре знає цього досвідченого лікаря.
-   > (She knows this experienced doctor well.) [6 words]
+2. лікаря / знає / Вона / цього
+   > [!answer] Вона знає цього лікаря.
+   > (She knows this doctor.) [4 words]
 
-3. подругу / мою / бачить / Він / часто / у / парку
-   > [!answer] Він часто бачить мою подругу у парку.
-   > (He often sees my friend in the park.) [7 words]
+3. подругу / бачить / Він / мою
+   > [!answer] Він бачить мою подругу.
+   > (He sees my friend.) [4 words]
 
-4. на / чекаю / друга / Я / свого / найкращого / давно
-   > [!answer] Я давно чекаю на свого найкращого друга.
-   > (I've been waiting for my best friend for a long time.) [7 words]
+4. на / чекаю / друга / Я
+   > [!answer] Я чекаю на друга.
+   > (I'm waiting for a friend.) [4 words]
 
-5. цю / студентку / талановиту / знаємо / Ми / молоду
-   > [!answer] Ми знаємо цю молоду талановиту студентку.
-   > (We know this young talented student.) [6 words]
+5. цю / студентку / знаємо / Ми
+   > [!answer] Ми знаємо цю студентку.
+   > (We know this student.) [4 words]
 
-6. вчителя / бачать / Вони / нового / досвідченого / у / школі
-   > [!answer] Вони бачать нового досвідченого вчителя у школі.
-   > (They see the new experienced teacher at school.) [7 words]
+6. вчителя / бачать / Вони / цього
+   > [!answer] Вони бачать цього вчителя.
+   > (They see this teacher.) [4 words]
 
-7. жінку / цю / знаю / Я / добре / молоду / привітну
-   > [!answer] Я добре знаю цю молоду привітну жінку.
-   > (I know this young friendly woman well.) [7 words]
+7. жінку / цю / знаю / Я
+   > [!answer] Я знаю цю жінку.
+   > (I know this woman.) [4 words]
 
-8. на / чекає / лікаря / Вона / свого / у / лікарні
-   > [!answer] Вона чекає на свого лікаря у лікарні.
-   > (She's waiting for her doctor at the hospital.) [7 words]
+8. на / чекає / лікаря / Вона
+   > [!answer] Вона чекає на лікаря.
+   > (She's waiting for the doctor.) [4 words]
 
-9. чоловіка / цього / знаю / Я / давно / розумного
-   > [!answer] Я давно знаю цього розумного чоловіка.
-   > (I've known this smart man for a long time.) [6 words]
+9. чоловіка / цього / бачу / Я
+   > [!answer] Я бачу цього чоловіка.
+   > (I see this man.) [4 words]
 
-10. директора / нашого / бачимо / Ми / рідко / зайнятого
-    > [!answer] Ми рідко бачимо нашого зайнятого директора.
-    > (We rarely see our busy director.) [6 words]
+10. директора / бачимо / Ми / нашого
+    > [!answer] Ми бачимо нашого директора.
+    > (We see our director.) [4 words]
+
+11. сусідку / знаєш / Ти / цю
+    > [!answer] Ти знаєш цю сусідку.
+    > (You know this neighbor.) [4 words]
+
+12. водія / бачить / Вона / цього
+    > [!answer] Вона бачить цього водія.
+    > (She sees this driver.) [4 words]
 
 ## match-up: Match the Pairs
 
@@ -274,6 +290,8 @@ Practice with real people:
 | друг | friend (m) |
 | подруга | friend (f) |
 | сусід | neighbor (m) |
+| сусідка | neighbor (f) |
+| водій | driver |
 
 ## quiz: Animate Accusative Rules
 
@@ -343,11 +361,25 @@ Practice with real people:
    > Animate masculine needs -а ending
 
 10. Does feminine animate differ from feminine inanimate in accusative?
-   - [ ] Yes, completely different
-   - [x] No, both use -а → -у
-   - [ ] Animate doesn't change
-   - [ ] Inanimate doesn't change
-   > Feminine is the same: -а → -у for both
+    - [ ] Yes, completely different
+    - [x] No, both use -а → -у
+    - [ ] Animate doesn't change
+    - [ ] Inanimate doesn't change
+    > Feminine is the same: -а → -у for both
+
+11. What is the accusative of "водій"?
+    - [ ] водій
+    - [x] водія
+    - [ ] водію
+    - [ ] водії
+    > Animate masculine -й: add -я
+
+12. What is the accusative of "сусідка"?
+    - [ ] сусідка
+    - [x] сусідку
+    - [ ] сусідці
+    - [ ] сусідкою
+    > Feminine -а → -у
 
 ## true-false: True or False?
 
@@ -383,6 +415,12 @@ Practice with real people:
 - [x] "вчитель" becomes "вчителя" in accusative
    > Correct! -ь masculines add -я
 
+- [ ] "Я бачу подруга" is correct
+   > Incorrect. Should be "Я бачу подругу"
+
+- [x] "водій" becomes "водія" in accusative
+   > Correct! -й masculines add -я
+
 ## group-sort: Animate Accusative Patterns
 
 > Sort these nouns by their accusative pattern.
@@ -393,6 +431,7 @@ Practice with real people:
 - лікар → лікаря
 - вчитель → вчителя
 - чоловік → чоловіка
+- водій → водія
 
 ### Feminine (both animate/inanimate: -а → -у)
 - студентка → студентку
@@ -400,6 +439,78 @@ Practice with real people:
 - жінка → жінку
 - лікарка → лікарку
 - сусідка → сусідку
+- вчителька → вчительку
+
+## fill-in: Transform to Accusative
+
+> Transform the nominative noun to accusative form.
+
+1. Я бачу ___ (студент). (I see the student.)
+   > [!answer] студента
+   > [!options] студент | студента | студенті | студенту
+
+2. Вона знає ___ (подруга). (She knows the friend.)
+   > [!answer] подругу
+   > [!options] подруга | подругу | подрузі | подругою
+
+3. Він бачить ___ (чоловік). (He sees the man.)
+   > [!answer] чоловіка
+   > [!options] чоловік | чоловіка | чоловіку | чоловіці
+
+4. Ми чекаємо на ___ (лікар). (We are waiting for the doctor.)
+   > [!answer] лікаря
+   > [!options] лікар | лікаря | лікарі | лікару
+
+5. Вони знають ___ (жінка). (They know the woman.)
+   > [!answer] жінку
+   > [!options] жінка | жінку | жінці | жінкою
+
+6. Я бачу ___ (вчитель). (I see the teacher.)
+   > [!answer] вчителя
+   > [!options] вчитель | вчителя | вчителі | вчителю
+
+7. Ти знаєш ___ (сусід)? (Do you know the neighbor?)
+   > [!answer] сусіда
+   > [!options] сусід | сусіда | сусіді | сусіду
+
+8. Вона чекає на ___ (друг). (She is waiting for the friend.)
+   > [!answer] друга
+   > [!options] друг | друга | друзі | другу
+
+9. Ми бачимо ___ (дівчина). (We see the girl.)
+   > [!answer] дівчину
+   > [!options] дівчина | дівчину | дівчині | дівчиною
+
+10. Він знає ___ (директор). (He knows the director.)
+    > [!answer] директора
+    > [!options] директор | директора | директорі | директору
+
+11. Я бачу ___ (водій). (I see the driver.)
+    > [!answer] водія
+    > [!options] водій | водія | водію | водії
+
+12. Вони знають ___ (лікарка). (They know the doctor.)
+    > [!answer] лікарку
+    > [!options] лікарка | лікарку | лікарці | лікаркою
+
+## match-up: Nominative vs Accusative
+
+> Match the nominative form to its accusative form.
+
+| Left | Right |
+|------|-------|
+| студент | студента |
+| друг | друга |
+| лікар | лікаря |
+| жінка | жінку |
+| подруга | подругу |
+| вчитель | вчителя |
+| чоловік | чоловіка |
+| водій | водія |
+| сусідка | сусідку |
+| директор | директора |
+| дівчина | дівчину |
+| хлопець | хлопця |
 
 ---
 

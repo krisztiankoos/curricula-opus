@@ -5,7 +5,7 @@ subtitle: "Finding Your Way"
 level: A1
 phase: A1.2
 duration: 50
-transliteration: full
+transliteration: partial
 tags: [vocabulary, practical, directions, city]
 objectives:
   - Learn city vocabulary (metro, street, building)
@@ -228,25 +228,25 @@ Example:
 
 ## fill-in: Directions and Location
 
-> Choose the correct word to complete each direction or location phrase. (A1: 3-5 words)
+> Choose the correct word to complete each direction or location phrase.
 
-1. ___ тут метро? (Where is the metro?)
+1. ___ тут метро? (Where is the metro here?)
    > [!answer] Де
    > [!options] Де | Що | Хто
 
-2. Йдіть ___ два квартали. (Go straight two blocks.)
+2. Йдіть ___. (Go straight.)
    > [!answer] прямо
    > [!options] праворуч | ліворуч | прямо
 
-3. Поверніть ___ біля банку. (Turn right near the bank.)
+3. Поверніть ___. (Turn right.)
    > [!answer] праворуч
    > [!options] прямо | праворуч | назад
 
-4. Банк знаходиться ___ метро. (The bank is near the metro.)
+4. Банк ___ метро. (The bank is near the metro.)
    > [!answer] біля
    > [!options] на | в | біля
 
-5. ___ цю вулицю. (Cross this street.)
+5. ___ вулицю. (Cross the street.)
    > [!answer] Перейдіть
    > [!options] Йдіть | Поверніть | Перейдіть
 
@@ -258,61 +258,77 @@ Example:
    > [!answer] за
    > [!options] до | за | біля
 
-8. Йдіть ___ станції. (Go to the station.)
-   > [!answer] до
-   > [!options] біля | на | до
+8. Метро тут ___. (The metro is close here.)
+   > [!answer] близько
+   > [!options] там | тут | близько
 
-9. Метро ___ близько. (The metro is close.)
-   > [!answer] тут
-   > [!options] там | тут | далеко
+9. ___ прямо. (Go straight.)
+   > [!answer] Йдіть
+   > [!options] Йдіть | Де | Що
 
-10. ___ прямо і праворуч. (Go straight and right.)
-    > [!answer] Йдіть
-    > [!options] Йдіть | Де | Що
+10. Поверніть ___. (Turn left.)
+    > [!answer] ліворуч
+    > [!options] прямо | ліворуч | назад
+
+11. Банк ___. (The bank is there.)
+    > [!answer] там
+    > [!options] тут | там | далеко
+
+12. Метро ___? (Is the metro far?)
+    > [!answer] далеко
+    > [!options] близько | далеко | тут
 
 ## unjumble: Build the Sentence
 
-> Arrange the words in the correct order. (A1: 4-6 words)
+> Arrange the words in the correct order. (3-4 words)
 
 1. метро / Де / тут
    > [!answer] Де тут метро?
    > (Where is the metro here?) [3 words]
 
-2. прямо / Йдіть / два / квартали
-   > [!answer] Йдіть прямо два квартали.
-   > (Go straight two blocks.) [4 words]
+2. прямо / Йдіть
+   > [!answer] Йдіть прямо.
+   > (Go straight.) [2 words]
 
-3. праворуч / Поверніть / біля / банку
-   > [!answer] Поверніть праворуч біля банку.
-   > (Turn right near the bank.) [4 words]
+3. праворуч / Поверніть
+   > [!answer] Поверніть праворуч.
+   > (Turn right.) [2 words]
 
 4. вулицю / Перейдіть / цю
    > [!answer] Перейдіть цю вулицю.
    > (Cross this street.) [3 words]
 
-5. метро / біля / Банк / знаходиться
-   > [!answer] Банк знаходиться біля метро.
-   > (The bank is near the metro.) [4 words]
+5. метро / біля / Банк
+   > [!answer] Банк біля метро.
+   > (The bank is near the metro.) [3 words]
 
-6. рогом / за / Аптека / цим
-   > [!answer] Аптека за цим рогом.
-   > (The pharmacy is around this corner.) [4 words]
+6. рогом / за / Аптека
+   > [!answer] Аптека за рогом.
+   > (The pharmacy is around the corner.) [3 words]
 
-7. ліворуч / Поверніть / і / прямо
-   > [!answer] Поверніть ліворуч і прямо.
-   > (Turn left and straight.) [4 words]
+7. ліворуч / Поверніть
+   > [!answer] Поверніть ліворуч.
+   > (Turn left.) [2 words]
 
-8. станції / до / Йдіть / цієї
-   > [!answer] Йдіть до цієї станції.
-   > (Go to this station.) [4 words]
+8. там / Станція
+   > [!answer] Станція там.
+   > (The station is there.) [2 words]
 
-9. близько / Метро / тут / дуже
-   > [!answer] Метро тут дуже близько.
-   > (The metro is very close here.) [4 words]
+9. близько / Метро / тут
+   > [!answer] Метро тут близько.
+   > (The metro is close here.) [3 words]
 
-10. аптека / найближча / Де / тут
-    > [!answer] Де тут найближча аптека?
-    > (Where is the nearest pharmacy here?) [4 words]
+10. аптека / Де / тут
+    > [!answer] Де тут аптека?
+    > (Where is the pharmacy here?) [3 words]
+
+11. далеко / Банк
+    > [!answer] Банк далеко.
+    > (The bank is far.) [2 words]
+
+12. готелю / навпроти / Магазин
+    > [!answer] Магазин навпроти готелю.
+    > (The store is opposite the hotel.) [3 words]
 
 ## match-up: Match the Pairs
 
@@ -325,11 +341,13 @@ Example:
 | ліворуч | to the left |
 | біля | near, by |
 | навпроти | opposite |
-| до | to, toward |
 | за | behind |
 | вхід | entrance |
 | вихід | exit |
 | зупинка | stop |
+| далеко | far |
+| близько | close |
+| там | there |
 
 ## quiz: City Navigation
 
@@ -363,12 +381,12 @@ Example:
    - [ ] Поверніть назад
    > "ліворуч" = to the left
 
-5. What case does "біля" require?
-   - [ ] Nominative
-   - [ ] Accusative
-   - [x] Genitive
-   - [ ] Locative
-   > "біля" + genitive: біля метро, біля банку
+5. What does "далеко" mean?
+   - [ ] close
+   - [ ] here
+   - [x] far
+   - [ ] there
+   > "далеко" = far
 
 6. How do you politely start asking for directions?
    - [ ] Йдіть!
@@ -377,12 +395,12 @@ Example:
    - [ ] Так!
    > "Вибачте" = Excuse me (polite opener)
 
-7. What case does "за" + instrumental express?
-   - [ ] Destination (to)
-   - [ ] Location inside
-   - [x] Location behind
-   - [ ] Location on top of
-   > "за рогом" = behind/around the corner (за + instrumental)
+7. What does "за рогом" mean?
+   - [ ] in the corner
+   - [ ] on the corner
+   - [x] around the corner
+   - [ ] near the corner
+   > "за рогом" = around/behind the corner
 
 8. What prefix does "вихід" (exit) use versus "вхід" (entrance)?
    - [ ] Both have the same prefix
@@ -391,19 +409,33 @@ Example:
    - [ ] пере- (across) vs за- (behind)
    > ви- means out/exit, в- means in/entrance
 
-9. How do you say "Go to the station"?
-   - [ ] Йдіть на станції
-   - [x] Йдіть до станції
-   - [ ] Йдіть в станції
-   - [ ] Йдіть біля станції
-   > "до" + genitive for destination
+9. What does "близько" mean?
+   - [x] close, near
+   - [ ] far
+   - [ ] there
+   - [ ] here
+   > "близько" = close, near
 
-10. Why is "найближча" (nearest) feminine in "найближча аптека"?
-   - [ ] Because it's an adjective
-   - [ ] Because all superlatives are feminine
-   - [x] Because it agrees with feminine noun "аптека"
-   - [ ] It's a fixed form that never changes
-   > Adjectives/superlatives match noun gender: найближчий (m), найближча (f)
+10. What does "навпроти" mean?
+    - [ ] near
+    - [ ] behind
+    - [x] opposite
+    - [ ] between
+    > "навпроти" = opposite
+
+11. How do you say "Go straight"?
+    - [x] Йдіть прямо
+    - [ ] Йдіть ліворуч
+    - [ ] Йдіть праворуч
+    - [ ] Йдіть назад
+    > "прямо" = straight
+
+12. What does "зупинка" mean?
+    - [ ] station
+    - [x] stop (bus/tram)
+    - [ ] entrance
+    - [ ] exit
+    > "зупинка" = bus/tram stop
 
 ## true-false: True or False?
 
@@ -439,6 +471,12 @@ Example:
 - [ ] "до" and "біля" have the same meaning
    > Incorrect. "до" = to/toward, "біля" = near/by
 
+- [x] "Де тут банк?" is correct
+   > Correct!
+
+- [ ] "Йдіть назад" means "Go straight"
+   > Incorrect. "Йдіть назад" means "Go back"
+
 ## group-sort: Direction Types
 
 > Sort these direction words by their function.
@@ -460,6 +498,110 @@ Example:
 - навпроти (opposite)
 - за (behind)
 - до (to, toward)
+
+## fill-in: Complete the Dialogue
+
+> Fill in the blanks to complete the dialogue.
+
+1. A: Вибачте, ___ метро? (Excuse me, where is the metro?)
+   > [!answer] де
+   > [!options] де | що | як
+
+2. B: Йдіть ___. (Go straight.)
+   > [!answer] прямо
+   > [!options] прямо | назад | там
+
+3. A: Метро ___? (Is the metro far?)
+   > [!answer] далеко
+   > [!options] тут | там | далеко
+
+4. B: Ні, метро ___. (No, the metro is close.)
+   > [!answer] близько
+   > [!options] далеко | близько | там
+
+5. A: Скажіть, ___ тут банк? (Tell me, where is a bank here?)
+   > [!answer] де
+   > [!options] що | хто | де
+
+6. B: Банк ___ метро. (The bank is near the metro.)
+   > [!answer] біля
+   > [!options] на | біля | в
+
+7. A: Дякую! А ___ аптека? (Thanks! And where is the pharmacy?)
+   > [!answer] де
+   > [!options] де | що | як
+
+8. B: Аптека ___ рогом. (The pharmacy is around the corner.)
+   > [!answer] за
+   > [!options] на | до | за
+
+9. A: Поверніть ___? (Turn left?)
+   > [!answer] ліворуч
+   > [!options] прямо | ліворуч | там
+
+10. B: Так, поверніть ___, і аптека там. (Yes, turn left, and the pharmacy is there.)
+    > [!answer] ліворуч
+    > [!options] праворуч | ліворуч | назад
+
+11. A: ___, будь ласка! (Excuse me, please!)
+    > [!answer] Вибачте
+    > [!options] Вибачте | Йдіть | Де
+
+12. B: Станція ___. (The station is there.)
+    > [!answer] там
+    > [!options] тут | там | де
+
+## select: Choose the Response
+
+> Choose the correct response for each situation.
+
+1. Someone asks "Де метро?" - What is an appropriate response?
+   > [!answer] Йдіть прямо.
+   > [!options] Дякую. | Йдіть прямо. | Де метро?
+
+2. You want to ask where the pharmacy is. What do you say?
+   > [!answer] Де аптека?
+   > [!options] Аптека там. | Де аптека? | Дякую!
+
+3. Someone says "Йдіть прямо, потім поверніть ліворуч." What do you say?
+   > [!answer] Дякую!
+   > [!options] Де банк? | Дякую! | Йдіть прямо.
+
+4. You want to politely start asking for directions. What do you say first?
+   > [!answer] Вибачте
+   > [!options] Там! | Вибачте | Прямо!
+
+5. Someone asks "Банк далеко?" The bank is close. What do you say?
+   > [!answer] Ні, близько.
+   > [!options] Так, далеко. | Ні, близько. | Де банк?
+
+6. You want to ask if the metro is far. What do you say?
+   > [!answer] Метро далеко?
+   > [!options] Метро там. | Де метро? | Метро далеко?
+
+7. Someone says "Поверніть праворуч." What action should you take?
+   > [!answer] Turn right
+   > [!options] Go straight | Turn left | Turn right
+
+8. You need to tell someone to cross the street. What do you say?
+   > [!answer] Перейдіть вулицю.
+   > [!options] Йдіть прямо. | Перейдіть вулицю. | Поверніть ліворуч.
+
+9. Someone asks where the bank is. It's near the metro. What do you say?
+   > [!answer] Банк біля метро.
+   > [!options] Де банк? | Банк далеко. | Банк біля метро.
+
+10. You want to ask how to get to the station. What do you say?
+    > [!answer] Як дійти до станції?
+    > [!options] Станція там. | Як дійти до станції? | Де вулиця?
+
+11. Someone says "Аптека за рогом." Where is the pharmacy?
+    > [!answer] Around the corner
+    > [!options] Near the metro | Opposite the hotel | Around the corner
+
+12. You want to say thank you for directions. What do you say?
+    > [!answer] Дякую!
+    > [!options] Вибачте! | Дякую! | Де?
 
 ---
 

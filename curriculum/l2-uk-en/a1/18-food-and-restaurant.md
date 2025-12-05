@@ -450,6 +450,75 @@ Create a dialogue using:
 - тістечко
 - шоколад
 
+## anagram: Food Vocabulary
+> Unscramble the Ukrainian food and restaurant words.
+
+1. а в а к
+   > [!answer] кава
+   > (coffee)
+
+2. й а ч
+   > [!answer] чай
+   > (tea)
+
+3. щ р о б
+   > [!answer] борщ
+   > (borsch)
+
+4. п у с
+   > [!answer] суп
+   > (soup)
+
+5. а д о в
+   > [!answer] вода
+   > (water)
+
+6. б і л х
+   > [!answer] хліб
+   > (bread)
+
+7. о с я м
+   > [!answer] м'ясо
+   > (meat)
+
+8. а б и р
+   > [!answer] риба
+   > (fish)
+
+9. р и с
+   > [!answer] сир
+   > (cheese)
+
+10. к і с
+    > [!answer] сік
+    > (juice)
+
+11. а в а р т с
+    > [!answer] страва
+    > (dish)
+
+12. ю н е м
+    > [!answer] меню
+    > (menu)
+
+## match-up: Cooking Methods
+> Match the Ukrainian cooking term with its English translation.
+
+| Ukrainian | English |
+|-----------|---------|
+| смажений | fried |
+| варений | boiled |
+| печений | baked |
+| гарячий | hot |
+| холодний | cold |
+| теплий | warm |
+| солодкий | sweet |
+| солоний | salty |
+| гострий | spicy |
+| смачний | tasty |
+| свіжий | fresh |
+| запечений | baked (au gratin) |
+
 ---
 
 # Vocabulary

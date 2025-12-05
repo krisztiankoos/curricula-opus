@@ -304,9 +304,9 @@ Example:
     - [ ] це
     > "Воно" is "it," but it's rarely used.
 
-## match-up: Pronouns
+## match-up: Pronouns and Demonstratives
 
-> Match each Ukrainian pronoun to its English meaning.
+> Match each Ukrainian word to its English meaning.
 
 | Ukrainian | English |
 |-----------|---------|
@@ -318,17 +318,29 @@ Example:
 | ми | we |
 | ви | you (formal/plural) |
 | вони | they |
+| це | this is |
+| то | that is |
+| ось | here is |
+| людина | person |
 
-## match-up: Nationalities
+## match-up: Male and Female Forms
 
-> Match male and female forms of nationalities.
+> Match male and female forms of people words.
 
-| Male | Female |
-|------|--------|
+| Male Form | Female Form |
+|-----------|-------------|
 | українець | українка |
 | англієць | англійка |
 | студент | студентка |
 | турист | туристка |
+| чоловік | жінка |
+| хлопець | дівчина |
+| він | вона |
+| лікар | лікарка |
+| вчитель | вчителька |
+| американець | американка |
+| друг | подруга |
+| я (чоловік) | я (жінка) |
 
 ## group-sort: Gender Pairs
 

@@ -342,16 +342,22 @@ Example:
 
 ## match-up: Pronouns and Verb Forms
 
-> Match each pronoun to its verb ending.
+> Match each pronoun to its correct verb form.
 
-| Pronoun | Ending |
-|---------|--------|
-| я | -ю |
-| ти | -єш |
-| він/вона | -є |
-| ми | -ємо |
-| ви | -єте |
-| вони | -ють |
+| Pronoun | Verb Form |
+|---------|-----------|
+| я | читаю |
+| ти | читаєш |
+| він | знає |
+| вона | працює |
+| ми | слухаємо |
+| ви | думаєте |
+| вони | пишуть |
+| я | знаю |
+| ти | працюєш |
+| вона | читає |
+| ми | думаємо |
+| вони | слухають |
 
 ## match-up: Verbs and Meanings
 

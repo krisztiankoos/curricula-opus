@@ -461,6 +461,75 @@ Share 3-4 sentences about your past!
 - були
 - пішли
 
+## anagram: Past Tense Vocabulary
+> Unscramble the Ukrainian past tense words and time expressions.
+
+1. в а ч и т
+   > [!answer] читав
+   > (read - masculine)
+
+2. а л а ю в ц а р п
+   > [!answer] працювала
+   > (worked - feminine)
+
+3. в у б
+   > [!answer] був
+   > (was - masculine)
+
+4. а л у б
+   > [!answer] була
+   > (was - feminine)
+
+5. в о ш і п
+   > [!answer] пішов
+   > (went - masculine)
+
+6. в і р о в о г
+   > [!answer] говорив
+   > (spoke - masculine)
+
+7. а р о ч в
+   > [!answer] вчора
+   > (yesterday)
+
+8. о н в а д
+   > [!answer] давно
+   > (long ago)
+
+9. о н в а д е н
+   > [!answer] недавно
+   > (recently)
+
+10. в а з а к с
+    > [!answer] сказав
+    > (said - masculine)
+
+11. в а л і х о п і р п
+    > [!answer] приїхала
+    > (arrived - feminine)
+
+12. в о ш й і р п
+    > [!answer] прийшов
+    > (came - masculine)
+
+## match-up: Past Tense Forms by Gender
+> Match the masculine past form with its feminine equivalent.
+
+| Masculine | Feminine |
+|-----------|----------|
+| читав | читала |
+| працював | працювала |
+| говорив | говорила |
+| був | була |
+| пішов | пішла |
+| прийшов | прийшла |
+| сказав | сказала |
+| їв | їла |
+| йшов | йшла |
+| взяв | взяла |
+| бачив | бачила |
+| робив | робила |
+
 ---
 
 # Vocabulary

@@ -443,6 +443,75 @@ Try different variations: ordering for one, ordering for two, splitting the bill
 - Дякую вам!
 - До побачення!
 
+## anagram: Café Phrases
+> Unscramble the Ukrainian café-related words.
+
+1. к и л о т с
+   > [!answer] столик
+   > (small table)
+
+2. ю н е м
+   > [!answer] меню
+   > (menu)
+
+3. к о н у х а р
+   > [!answer] рахунок
+   > (bill/check)
+
+4. о ю к р а т к
+   > [!answer] картою
+   > (by card)
+
+5. о м з а р
+   > [!answer] разом
+   > (together)
+
+6. о м е р к о
+   > [!answer] окремо
+   > (separately)
+
+7. о н ч а м с
+   > [!answer] смачно
+   > (tasty)
+
+8. у ш о р п
+   > [!answer] прошу
+   > (please/here you go)
+
+9. є щ
+   > [!answer] ще
+   > (more/else)
+
+10. е с в
+    > [!answer] все
+    > (everything)
+
+11. і в о й а ч
+    > [!answer] чайові
+    > (tip)
+
+12. а т ш е р
+    > [!answer] решта
+    > (change)
+
+## match-up: Polite Expressions
+> Match the situation with the polite Ukrainian phrase.
+
+| Situation | Phrase |
+|-----------|--------|
+| Greeting staff | Добрий день! |
+| Asking for menu | Можна меню? |
+| Ordering food | Я візьму... |
+| Asking recommendation | Що порекомендуєте? |
+| Coffee with milk | Кава з молоком |
+| Without sugar | Без цукру |
+| Asking for check | Рахунок, будь ласка |
+| Paying by card | Картою, будь ласка |
+| Leaving a tip | Решта — чайові |
+| Complimenting food | Було дуже смачно! |
+| Thanking waiter | Дякую вам! |
+| Saying goodbye | До побачення! |
+
 ---
 
 # Vocabulary

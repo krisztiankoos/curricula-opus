@@ -432,6 +432,75 @@ Try making 3-4 sentences about what's missing in your life!
 - проблему
 - час
 
+## anagram: Genitive Vocabulary
+> Unscramble the Ukrainian words related to absence and possession.
+
+1. с а ч у
+   > [!answer] часу
+   > (time - genitive)
+
+2. и д о в
+   > [!answer] води
+   > (water - genitive)
+
+3. і ї д е і
+   > [!answer] ідеї
+   > (idea - genitive)
+
+4. и м е л б о р п
+   > [!answer] проблеми
+   > (problem - genitive)
+
+5. у р к у ц
+   > [!answer] цукру
+   > (sugar - genitive)
+
+6. і ш о р г е й
+   > [!answer] грошей
+   > (money - genitive)
+
+7. у с н е с
+   > [!answer] сенсу
+   > (sense - genitive)
+
+8. и н и ч и р п
+   > [!answer] причини
+   > (reason - genitive)
+
+9. і г о м о п о д
+   > [!answer] допомоги
+   > (help - genitive)
+
+10. і ї а ц м р о ф н і
+    > [!answer] інформації
+    > (information - genitive)
+
+11. і т с о в и л ж о м
+    > [!answer] можливості
+    > (opportunity - genitive)
+
+12. є а м е н
+    > [!answer] немає
+    > (there is no)
+
+## match-up: Possession Phrases
+> Match the possessor with the correct phrase.
+
+| Possessor | Phrase |
+|-----------|--------|
+| я | у мене |
+| ти | у тебе |
+| він | у нього |
+| вона | у неї |
+| ми | у нас |
+| ви | у вас |
+| вони | у них |
+| мама | у мами |
+| тато | у тата |
+| брат | у брата |
+| сестра | у сестри |
+| друг | у друга |
+
 ---
 
 # Vocabulary

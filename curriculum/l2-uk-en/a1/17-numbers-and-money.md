@@ -476,6 +476,75 @@ Try with: хліб (bread), кава (coffee), яблука (apples), молок
 - двадцять п'ять
 - сто
 
+## anagram: Number Words
+> Unscramble the Ukrainian number words.
+
+1. ь т я п
+   > [!answer] п'ять
+   > (five)
+
+2. ь т с і ш
+   > [!answer] шість
+   > (six)
+
+3. м і с
+   > [!answer] сім
+   > (seven)
+
+4. м і с і в
+   > [!answer] вісім
+   > (eight)
+
+5. ь т я в е д
+   > [!answer] дев'ять
+   > (nine)
+
+6. ь т я с е д
+   > [!answer] десять
+   > (ten)
+
+7. к о р о с
+   > [!answer] сорок
+   > (forty)
+
+8. о т с
+   > [!answer] сто
+   > (hundred)
+
+9. я н в и р г
+   > [!answer] гривня
+   > (hryvnia)
+
+10. а к й і п о к
+    > [!answer] копійка
+    > (kopeck)
+
+11. о г о р о д
+    > [!answer] дорого
+    > (expensive)
+
+12. о в е ш е д
+    > [!answer] дешево
+    > (cheap)
+
+## match-up: Price Expressions
+> Match the price with the correct Ukrainian phrase.
+
+| Price | Ukrainian |
+|-------|-----------|
+| 1₴ | одна гривня |
+| 2₴ | дві гривні |
+| 3₴ | три гривні |
+| 5₴ | п'ять гривень |
+| 10₴ | десять гривень |
+| 15₴ | п'ятнадцять гривень |
+| 21₴ | двадцять одна гривня |
+| 25₴ | двадцять п'ять гривень |
+| 33₴ | тридцять три гривні |
+| 50₴ | п'ятдесят гривень |
+| 99₴ | дев'яносто дев'ять гривень |
+| 100₴ | сто гривень |
+
 ---
 
 # Vocabulary

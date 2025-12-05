@@ -356,19 +356,25 @@ Using the question words you learned, write 5 questions you would ask a new Ukra
 | чи | whether (yes/no) |
 | ні | no |
 
-## group-sort: Frequency Adverbs
+## group-sort: Frequency and Question Words
 
-> Sort these words by how often they indicate.
+> Sort these words by their type.
 
-### Часто (Often)
+### Frequency Adverbs
 - завжди
 - часто
 - звичайно
-
-### Рідко (Rarely)
 - рідко
 - іноді
 - ніколи
+
+### Question Words
+- що
+- хто
+- де
+- коли
+- чому
+- як
 
 ## true-false: Question and Negation Rules
 
@@ -474,6 +480,12 @@ Using the question words you learned, write 5 questions you would ask a new Ukra
 | Вона говорить. | Вона не говорить. |
 | Ти слухаєш. | Ти не слухаєш. |
 | Вони розуміють. | Вони не розуміють. |
+| Я завжди читаю. | Я ніколи не читаю. |
+| Вона часто працює. | Вона рідко працює. |
+| Ми завжди знаємо. | Ми іноді не знаємо. |
+| Він завжди говорить. | Він ніколи не говорить. |
+| Ти часто слухаєш. | Ти не слухаєш. |
+| Вони завжди розуміють. | Вони не розуміють. |
 
 ## anagram: Question Word Scramble
 

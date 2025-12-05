@@ -460,6 +460,75 @@ Tell us 3-4 of your future plans!
 - згодом
 - колись
 
+## anagram: Future Tense Vocabulary
+> Unscramble the Ukrainian future tense words and time expressions.
+
+1. у д у б
+   > [!answer] буду
+   > (will - 1st person)
+
+2. ш е д у б
+   > [!answer] будеш
+   > (will - 2nd person)
+
+3. е д у б
+   > [!answer] буде
+   > (will - 3rd person)
+
+4. о м е д у б
+   > [!answer] будемо
+   > (will - 1st plural)
+
+5. ь т у д у б
+   > [!answer] будуть
+   > (will - 3rd plural)
+
+6. а р т в а з
+   > [!answer] завтра
+   > (tomorrow)
+
+7. о р о к с
+   > [!answer] скоро
+   > (soon)
+
+8. є ш і н з і п
+   > [!answer] пізніше
+   > (later)
+
+9. м і т о п
+   > [!answer] потім
+   > (then)
+
+10. ю у н а л п
+    > [!answer] планую
+    > (I plan)
+
+11. ю у ч о х
+    > [!answer] хочу
+    > (I want)
+
+12. я с ю а р и б з
+    > [!answer] збираюся
+    > (I'm going to)
+
+## match-up: Present to Future Intentions
+> Match the present situation with the future intention.
+
+| Now | Future |
+|-----|--------|
+| Я вивчаю українську. | Я буду говорити вільно. |
+| Я працюю. | Я буду відпочивати. |
+| Я голодний. | Я буду їсти. |
+| Я втомлений. | Я буду спати. |
+| Я в Україні. | Я буду подорожувати. |
+| Я читаю книгу. | Я буду писати рецензію. |
+| Я дивлюся фільм. | Я буду обговорювати. |
+| Я снідаю. | Я буду працювати. |
+| Я вчуся. | Я буду складати іспит. |
+| Я готую. | Я буду вечеряти. |
+| Я прибираю. | Я буду відпочивати. |
+| Я чекаю. | Я буду зустрічатися. |
+
 ---
 
 # Vocabulary

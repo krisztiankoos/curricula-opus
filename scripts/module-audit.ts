@@ -4,14 +4,17 @@
  *
  * Finds non-compliant, broken, or under-enriched modules.
  * Checks against MODULE-RICHNESS-GUIDELINES.md requirements.
+ * Uses config from ./lib/audit-requirements.ts for quality targets.
  *
  * Usage:
- *   npx ts-node scripts/module-audit.ts [lang] [module-range] [--fix]
+ *   npx ts-node scripts/module-audit.ts [lang] [range] [--fix]
  *
  * Examples:
  *   npx ts-node scripts/module-audit.ts l2-uk-en           # Audit all modules
- *   npx ts-node scripts/module-audit.ts l2-uk-en 41-65     # Audit range
+ *   npx ts-node scripts/module-audit.ts l2-uk-en 41-65     # Audit global range
  *   npx ts-node scripts/module-audit.ts l2-uk-en 47        # Audit single module
+ *   npx ts-node scripts/module-audit.ts l2-uk-en a1        # Audit A1 level only
+ *   npx ts-node scripts/module-audit.ts l2-uk-en b1:1-20   # Audit B1 modules 1-20
  *   npx ts-node scripts/module-audit.ts l2-uk-en 81-90 --fix  # Generate fix prompts
  *
  * Options:
@@ -27,6 +30,14 @@ import {
   resetVocabDatabase,
   VocabDatabase,
 } from './lib/vocab-sqlite';
+import {
+  LevelRequirements,
+  LEVEL_REQUIREMENTS,
+  ENGAGEMENT_PATTERNS,
+  ACTIVITY_PRIORITY,
+  getRequirements,
+  IMMERSION_TOLERANCE,
+} from './lib/audit-requirements';
 
 // =============================================================================
 // Types
@@ -59,104 +70,9 @@ interface ModuleAudit {
 }
 
 // =============================================================================
-// Requirements from MODULE-RICHNESS-GUIDELINES.md
+// Requirements loaded from ./lib/audit-requirements.ts
+// Quality targets based on MODULE-RICHNESS-GUIDELINES.md
 // =============================================================================
-
-interface LevelRequirements {
-  moduleRange: [number, number];
-  newWordsMin: number;
-  newWordsMax: number;
-  activityCount: number;
-  itemsPerActivity: number;
-  fillInWords: [number, number];
-  unjumbleWords: [number, number];
-  immersionLevel: number;  // Target Ukrainian percentage (0.0 - 1.0)
-}
-
-// =============================================================================
-// Requirements based on Ukrainian State Standard (September 2024)
-// Source: docs/l2-uk-en/UKRAINIAN-CEFR-RESEARCH.md
-// =============================================================================
-
-// QUALITY TARGETS - these are ambitious goals, not bare minimums
-// Good modules should comfortably exceed these values
-const LEVEL_REQUIREMENTS: Record<string, LevelRequirements> = {
-  'A1': {
-    moduleRange: [1, 30],
-    newWordsMin: 18, newWordsMax: 25,      // Target ~20 new words per module
-    activityCount: 8,                       // 8 activities for variety
-    itemsPerActivity: 12,                   // Solid practice per activity
-    fillInWords: [5, 8],                    // "Моя сестра ___ в лікарні" (5-8 words)
-    unjumbleWords: [5, 8],
-    immersionLevel: 0.30,
-  },
-  'A2': {
-    moduleRange: [31, 60],
-    newWordsMin: 22, newWordsMax: 30,      // Target ~25 new words
-    activityCount: 10,                      // More activity variety
-    itemsPerActivity: 12,
-    fillInWords: [6, 10],                   // Compound sentences with connectors
-    unjumbleWords: [6, 10],
-    immersionLevel: 0.40,
-  },
-  'A2+': {
-    moduleRange: [61, 80],
-    newWordsMin: 35, newWordsMax: 45,      // Vocabulary expansion phase
-    activityCount: 12,
-    itemsPerActivity: 15,
-    fillInWords: [8, 12],                   // Subordinate clauses, more complexity
-    unjumbleWords: [8, 12],
-    immersionLevel: 0.50,
-  },
-  'B1': {
-    moduleRange: [81, 120],
-    newWordsMin: 28, newWordsMax: 35,      // Solid vocabulary growth
-    activityCount: 14,                      // Rich activity set
-    itemsPerActivity: 20,
-    fillInWords: [10, 15],                  // Complex sentences, conditionals
-    unjumbleWords: [10, 15],
-    immersionLevel: 0.60,
-  },
-  'B1+': {
-    moduleRange: [121, 160],
-    newWordsMin: 28, newWordsMax: 35,
-    activityCount: 14,
-    itemsPerActivity: 20,
-    fillInWords: [11, 16],                  // Participles, extended complexity
-    unjumbleWords: [11, 16],
-    immersionLevel: 0.70,
-  },
-  'B2': {
-    moduleRange: [161, 200],
-    newWordsMin: 30, newWordsMax: 40,      // Advanced vocabulary
-    activityCount: 16,                      // Maximum activity variety
-    itemsPerActivity: 22,
-    fillInWords: [12, 18],                  // Sophisticated structures, passive
-    unjumbleWords: [12, 18],
-    immersionLevel: 0.85,
-  },
-  'B2+': {
-    moduleRange: [201, 240],
-    newWordsMin: 30, newWordsMax: 40,
-    activityCount: 16,
-    itemsPerActivity: 22,
-    fillInWords: [13, 19],                  // Advanced stylistic variation
-    unjumbleWords: [13, 19],
-    immersionLevel: 0.90,
-  },
-  'C1': {
-    moduleRange: [241, 400],
-    newWordsMin: 35, newWordsMax: 45,      // Rich academic vocabulary
-    activityCount: 16,
-    itemsPerActivity: 24,
-    fillInWords: [14, 22],                  // Advanced academic/literary
-    unjumbleWords: [14, 22],
-    immersionLevel: 0.95,
-  },
-};
-
-// Tolerance for immersion level deviation (±10%)
-const IMMERSION_TOLERANCE = 0.10;
 
 // =============================================================================
 // Grammar Topics by Level (Ukrainian State Standard September 2024)
@@ -241,9 +157,33 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
   const frontmatter = frontmatterMatch ? frontmatterMatch[1] : '';
 
-  const moduleNum = parseInt(frontmatter.match(/module:\s*(\d+)/)?.[1] || '0');
+  // Try multiple ways to get module number:
+  // 1. Explicit module: field
+  // 2. From filename (NN-slug.md)
+  const moduleFieldMatch = frontmatter.match(/module:\s*(\d+)/);
+  const filenameMatch = path.basename(filePath).match(/^(\d{2})/);
+  const moduleNum = moduleFieldMatch
+    ? parseInt(moduleFieldMatch[1])
+    : filenameMatch
+      ? parseInt(filenameMatch[1])
+      : 0;
+
   const title = frontmatter.match(/title:\s*"?([^"\n]+)"?/)?.[1] || 'Unknown';
-  const level = frontmatter.match(/level:\s*(\w+\+?)/)?.[1] || 'Unknown';
+
+  // Try multiple ways to get level:
+  // 1. Explicit level: field
+  // 2. From phase: field (e.g., "A1.1" -> "A1")
+  // 3. From directory name
+  const levelFieldMatch = frontmatter.match(/level:\s*(\w+\+?)/);
+  const phaseFieldMatch = frontmatter.match(/phase:\s*([AB][12]\+?)/);
+  const dirMatch = filePath.match(/\/([ab][12](?:-plus)?)\//i);
+  const level = levelFieldMatch
+    ? levelFieldMatch[1]
+    : phaseFieldMatch
+      ? phaseFieldMatch[1].replace(/\.\d+$/, '') // Remove sub-phase: A1.1 -> A1
+      : dirMatch
+        ? dirMatch[1].toUpperCase().replace('-PLUS', '+')
+        : 'Unknown';
 
   const req = LEVEL_REQUIREMENTS[level];
 
@@ -308,13 +248,13 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // ==========================================================================
 
   // Count activities and their types
-  const activityHeaders = content.match(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order|translate):\s*(.*)$/gim) || [];
+  const activityHeaders = content.match(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|anagram|select|translate):\s*(.*)$/gim) || [];
   const activityCount = activityHeaders.length;
   const activityTypes = [...new Set(activityHeaders.map(h => h.match(/## (\w+(-\w+)?):/i)?.[1]?.toLowerCase() || ''))];
 
   // Count items per activity
   const itemsPerActivity: number[] = [];
-  const activitySections = content.matchAll(/## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order|translate):[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n# |$)/gi);
+  const activitySections = content.matchAll(/## (quiz|match-up|group-sort|fill-in|true-false|unjumble|anagram|select|translate):[^\n]*\n([\s\S]*?)(?=\n## |\n# |\n---\n# |$)/gi);
 
   for (const actMatch of activitySections) {
     const actType = actMatch[1].toLowerCase();
@@ -329,7 +269,7 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
       itemCount = (actContent.match(/^- .+$/gm) || []).length;
     } else if (actType === 'true-false') {
       itemCount = (actContent.match(/^- \[[ x]\]/gm) || []).length;
-    } else if (actType === 'fill-in' || actType === 'unjumble') {
+    } else if (actType === 'fill-in' || actType === 'unjumble' || actType === 'anagram') {
       itemCount = (actContent.match(/^\d+\.\s+/gm) || []).length;
     }
 
@@ -554,20 +494,9 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // ==========================================================================
 
   // Check for engagement boxes (💡 Did You Know, ⚡ Pro Tip, 📜 History Bite, 🎭 Culture Corner, 🎬 Pop Culture, etc.)
-  const engagementPatterns = [
-    />\s*💡\s*\*\*Did You Know/g,
-    />\s*⚡\s*\*\*Pro Tip/g,
-    />\s*📜\s*\*\*History Bite/g,
-    />\s*🎭\s*\*\*Culture Corner/g,
-    />\s*🔍\s*\*\*Myth Buster/g,
-    />\s*🎯\s*\*\*Fun Fact/g,
-    />\s*🔗\s*\*\*Language Link/g,
-    />\s*🌍\s*\*\*Real World/g,
-    />\s*🎬\s*\*\*Pop Culture/g,
-  ];
-
+  // Patterns loaded from ./lib/audit-requirements.ts
   let engagementBoxes = 0;
-  for (const pattern of engagementPatterns) {
+  for (const pattern of ENGAGEMENT_PATTERNS) {
     engagementBoxes += (content.match(pattern) || []).length;
   }
 
@@ -623,18 +552,8 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
 
   // Check for minimal lesson content - these are QUALITY targets
   // Good modules should have substantial explanatory content
-  const minWordCount: Record<string, number> = {
-    'A1': 600,      // Substantial explanation in English for beginners
-    'A2': 700,      // More context and examples
-    'A2+': 800,     // Richer content as immersion increases
-    'B1': 900,      // Complex grammar needs thorough explanation
-    'B1+': 950,     // Continued depth
-    'B2': 1000,     // Advanced topics need substantial treatment
-    'B2+': 1050,    // Historical/cultural content requires depth
-    'C1': 1100,     // Academic-level depth
-  };
-
-  const minWords = minWordCount[level] || 500;
+  // minWordCount loaded from ./lib/audit-requirements.ts
+  const minWords = req?.minWordCount || 500;
   if (wordCount < minWords) {
     issues.push({
       type: 'warning',
@@ -737,19 +656,9 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // 10. ACTIVITY ORDER (should follow priority)
   // ==========================================================================
 
-  const activityPriority: Record<string, number> = {
-    'quiz': 1,
-    'match-up': 2,
-    'group-sort': 3,
-    'true-false': 4,
-    'select': 5,
-    'order': 6,
-    'fill-in': 7,
-    'unjumble': 8,
-  };
-
+  // Activity priority loaded from ./lib/audit-requirements.ts
   const activityOrder: { type: string; index: number }[] = [];
-  const activityOrderMatches = content.matchAll(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|select|order):/gim);
+  const activityOrderMatches = content.matchAll(/^## (quiz|match-up|group-sort|fill-in|true-false|unjumble|anagram|select|translate):/gim);
   let actIdx = 0;
   for (const match of activityOrderMatches) {
     activityOrder.push({ type: match[1].toLowerCase(), index: actIdx++ });
@@ -759,7 +668,7 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   let lastPriority = 0;
   let orderViolations = 0;
   for (const act of activityOrder) {
-    const priority = activityPriority[act.type] || 5;
+    const priority = ACTIVITY_PRIORITY[act.type] || 5;
     if (priority < lastPriority - 2) {
       // Allow some flexibility (2 priority levels)
       orderViolations++;
@@ -1245,7 +1154,7 @@ function generateFixPrompt(audit: ModuleAudit): string {
         const current = parseInt(match[1]);
         const required = parseInt(match[2]);
         lines.push(`- Add ${required - current} more activities (currently ${current}, need ${required})`);
-        lines.push(`  Priority order: quiz → match-up → group-sort → true-false → fill-in → unjumble`);
+        lines.push(`  Priority order: quiz → match-up → group-sort → true-false → anagram → fill-in → unjumble`);
       }
     }
 
@@ -1364,10 +1273,9 @@ function main() {
   const rangeArg = filteredArgs[1];
 
   const curriculumDir = path.join(process.cwd(), 'curriculum', lang);
-  const modulesDir = path.join(curriculumDir, 'modules');
 
-  if (!fs.existsSync(modulesDir)) {
-    console.error(`Directory not found: ${modulesDir}`);
+  if (!fs.existsSync(curriculumDir)) {
+    console.error(`Directory not found: ${curriculumDir}`);
     process.exit(1);
   }
 
@@ -1382,11 +1290,27 @@ function main() {
     console.log(`⚠️  No vocabulary.db found - skipping vocab duplicate check`);
   }
 
-  // Parse range
+  // Parse range - can be global module numbers (1-210) or level-specific (a1:1-30)
   let minModule = 1;
   let maxModule = 999;
+  let levelFilter: string | null = null;
+
   if (rangeArg) {
-    if (rangeArg.includes('-')) {
+    // Check for level prefix (e.g., "a1:1-30" or "b1")
+    if (rangeArg.includes(':')) {
+      const [lvl, range] = rangeArg.split(':');
+      levelFilter = lvl.toLowerCase();
+      if (range && range.includes('-')) {
+        const [min, max] = range.split('-').map(Number);
+        minModule = min;
+        maxModule = max;
+      } else if (range) {
+        minModule = maxModule = parseInt(range);
+      }
+    } else if (rangeArg.match(/^[a-z]/i)) {
+      // Just a level name (e.g., "a1", "b1")
+      levelFilter = rangeArg.toLowerCase();
+    } else if (rangeArg.includes('-')) {
       const [min, max] = rangeArg.split('-').map(Number);
       minModule = min;
       maxModule = max;
@@ -1395,17 +1319,43 @@ function main() {
     }
   }
 
-  // Find module files
-  const files = fs.readdirSync(modulesDir)
-    .filter(f => f.match(/^module-\d+\.md$/))
-    .map(f => ({
-      path: path.join(modulesDir, f),
-      num: parseInt(f.match(/module-(\d+)/)?.[1] || '0'),
-    }))
-    .filter(f => f.num >= minModule && f.num <= maxModule)
-    .sort((a, b) => a.num - b.num);
+  // Find module files from level subdirectories
+  // New structure: curriculum/l2-uk-en/{level}/NN-slug.md
+  const levelDirs = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+  const files: { path: string; num: number; level: string }[] = [];
 
-  console.log(`\n🔍 Module Audit: ${lang} (modules ${minModule}-${maxModule})\n`);
+  for (const levelDir of levelDirs) {
+    if (levelFilter && levelDir !== levelFilter) continue;
+
+    const levelPath = path.join(curriculumDir, levelDir);
+    if (!fs.existsSync(levelPath)) continue;
+
+    const levelFiles = fs.readdirSync(levelPath)
+      .filter(f => f.match(/^\d{2}-.*\.md$/))
+      .map(f => {
+        const localNum = parseInt(f.match(/^(\d{2})/)?.[1] || '0');
+        // Read frontmatter to get global module number
+        const content = fs.readFileSync(path.join(levelPath, f), 'utf8');
+        const globalNum = parseInt(content.match(/module:\s*(\d+)/)?.[1] || '0');
+        return {
+          path: path.join(levelPath, f),
+          num: globalNum || localNum,
+          level: levelDir.toUpperCase().replace('-PLUS', '+').replace('-', '+'),
+        };
+      })
+      .filter(f => f.num >= minModule && f.num <= maxModule);
+
+    files.push(...levelFiles);
+  }
+
+  // Sort by global module number
+  files.sort((a, b) => a.num - b.num);
+
+  const rangeDesc = levelFilter
+    ? `${levelFilter.toUpperCase()} level, modules ${minModule}-${maxModule}`
+    : `modules ${minModule}-${maxModule}`;
+  console.log(`\n🔍 Module Audit: ${lang} (${rangeDesc})\n`);
+  console.log(`Found ${files.length} modules to audit`);
   console.log('='.repeat(70));
 
   let totalErrors = 0;

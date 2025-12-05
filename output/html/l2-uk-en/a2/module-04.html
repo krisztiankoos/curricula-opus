@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 04: The Instrumental I | Ukrainian A2</title>
+  <style>
+:root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+.top-nav a { color: white; text-decoration: none; }
+.top-nav a:hover { text-decoration: underline; }
+.module-nav { display: flex; gap: 1rem; align-items: center; }
+.module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+.module-nav-link:hover { color: white; }
+.module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+.nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+.nav h1 { font-size: 1.25rem; }
+.nav-tabs { display: flex; gap: 0.5rem; }
+.nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+.nav-tab.active { background: white; color: var(--primary); }
+main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.section { display: none; } .section.active { display: block; }
+.lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+.level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+.card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+.card h3 { color: var(--primary); margin-bottom: 1rem; }
+.section-intro { border-left: 4px solid var(--primary); }
+.section-intro h3 { color: var(--primary); }
+.section-topic { border-left: 4px solid var(--border); }
+.section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+.section-summary h3 { color: var(--success); }
+.canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+.canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+.md-content { line-height: 1.7; }
+.md-content p { margin: 0.75rem 0; }
+.md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.md-content li { margin: 0.25rem 0; }
+.md-content strong { color: var(--primary); }
+.md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+.md-content blockquote p { margin: 0.25rem 0; }
+.md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+.md-content th { background: #f5f5f5; font-weight: 600; }
+.md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+.md-content details { background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0; margin: 1rem 0; }
+.md-content details summary { background: linear-gradient(135deg, #e8f4fd, #f0e8fd); padding: 0.75rem 1rem; cursor: pointer; font-weight: 600; color: var(--primary); border-radius: 8px; list-style: none; display: flex; align-items: center; gap: 0.5rem; }
+.md-content details summary::-webkit-details-marker { display: none; }
+.md-content details summary::before { content: '▶'; font-size: 0.75rem; transition: transform 0.2s; }
+.md-content details[open] summary::before { transform: rotate(90deg); }
+.md-content details[open] summary { border-radius: 8px 8px 0 0; }
+.md-content details > *:not(summary) { padding: 0 1rem; }
+.md-content details > *:last-child { padding-bottom: 1rem; }
+.md-content p > details { margin: 0; }
+.md-content p:has(> details) { margin: 1rem 0; }
+.inline-answer { background: linear-gradient(135deg, #d4edda, #e8f4fd); padding: 0.125rem 0.5rem; border-radius: 4px; transition: opacity 0.2s; }
+.inline-answer.hidden { opacity: 0; user-select: none; }
+.answer-toggle-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border: 1px solid var(--primary); color: var(--primary); padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-size: 0.875rem; font-weight: 600; margin: 1rem 0; }
+.answer-toggle-btn:hover { background: var(--primary); color: white; }
+.answer-toggle-btn svg { width: 1rem; height: 1rem; }
+.letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+.letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+.letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+.letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+.letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+.btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-outline { background: transparent; border: 2px solid var(--border); }
+.btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+.score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+.score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+.completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+.completion-message.show { display: block; }
+footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+@media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+
+
+/**
+ * Layout styles - Navigation, page structure
+ */
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+
+.top-nav a {
+  color: var(--text-muted);
+}
+
+.top-nav a:hover {
+  color: var(--primary);
+}
+
+.module-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.module-nav-link {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.module-nav-link:hover {
+  background: #e8f4fd;
+}
+
+/* Main Navigation */
+.nav {
+  background: linear-gradient(135deg, #1a5fb4, #613583);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-size: 1.5rem;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-tab {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.nav-tab:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-tab.active {
+  background: white;
+  color: var(--primary);
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Sections */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Lesson Header */
+.lesson-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f4fd, #f0e8fd);
+  border-radius: 12px;
+}
+
+.lesson-header h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Section Cards */
+.section-intro {
+  border-left: 4px solid var(--primary);
+}
+
+.section-intro h3 {
+  color: var(--primary);
+}
+
+.section-topic {
+  border-left: 4px solid var(--border);
+}
+
+.section-summary {
+  background: linear-gradient(135deg, #f0f9ff, #e8f4fd);
+  border-left: 4px solid var(--success);
+}
+
+.section-summary h3 {
+  color: var(--success);
+}
+
+/* Canvas Notes */
+.canvas-note {
+  background: #fffbeb;
+  border-left: 4px solid var(--warning);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.canvas-note h4 {
+  color: var(--warning);
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+/* Match Activity */
+.match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+.match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+.match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+.match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+.match-item.matched { border-color: var(--success); background: #e8f8f0; }
+.match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* Quiz Activity */
+.quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+.quiz-question.answered { pointer-events: none; }
+.quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+.quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+.quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+.quiz-option.correct { border-color: var(--success); background: #d4edda; }
+.quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+.quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+.quiz-explanation.show { display: block; }
+
+/* True/False Activity */
+.tf-statement { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+.tf-statement.answered { pointer-events: none; }
+.tf-text { font-size: 1.15rem; margin-bottom: 1rem; }
+.tf-buttons { display: flex; gap: 1rem; }
+.tf-btn { flex: 1; background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem; cursor: pointer; font-size: 1rem; font-weight: 500; }
+.tf-btn:hover { background: #e8f4fd; border-color: var(--primary); }
+.tf-btn.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.tf-btn.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+.tf-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+.tf-explanation.show { display: block; }
+
+/* Sort Activity */
+.sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+.sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+.sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+.sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+.sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+.sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+.sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+.sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+.sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+
+/* Vocabulary Grid (legacy) */
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+.vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+.vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+.vocab-card .translit { color: var(--text-muted); font-style: italic; }
+.vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+.vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
+
+/* Answer Callout Blocks */
+.callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
+.callout-answer { background: #e8f8f0; border-left: 3px solid var(--success); }
+.callout-explanation { background: #e8f4fd; border-left: 3px solid var(--primary); color: var(--text-muted); font-style: italic; }
+.callout-alt { background: #f5f5f5; border-left: 3px solid var(--border); color: var(--text-muted); }
+
+/* Answer Block Toggle */
+.answer-block { display: none; }
+.answer-block.show { display: block; }
+.show-answer-btn { background: #f0f0f0; border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.75rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted); margin: 0.25rem 0; }
+.show-answer-btn:hover { background: #e5e5e5; }
+.show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
+
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
+/* Order Sentence Activity - Sentence reordering with unjumble-style UI */
+.order-sequence { display: flex; flex-direction: column; align-items: stretch; }
+.order-sentence-row { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0.5rem; min-height: auto; padding: 0.5rem; flex: none; width: 100%; }
+.order-sentence-item { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-item:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-item:active { cursor: grabbing; }
+.order-sentence-item.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-item.correct { background: var(--success); }
+.order-sentence-item.wrong { background: var(--danger); }
+.order-sentence-item.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); max-width: 90vw; }
+.order-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-sentence-text { flex: 1; }
+.order-feedback { width: 100%; padding: 0.5rem 0; display: none; }
+.order-feedback.show { display: block; }
+.order-feedback .correct-text { color: var(--success); font-weight: 600; }
+.order-feedback .wrong-text { color: var(--danger); }
+
+/* Order Card Activity - New class names for classic order */
+.order-items-wrapper { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-sentence-card { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-card:active { cursor: grabbing; }
+.order-sentence-card.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-card.correct { background: var(--success); }
+.order-sentence-card.wrong { background: var(--danger); }
+.order-card-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-card-text { flex: 1; }
+.order-buttons { margin-top: 0.5rem; }
+
+/* Select Activity - Multi-choice checkboxes */
+.select-container { display: flex; flex-direction: column; gap: 1rem; }
+.select-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; display: flex; gap: 0.75rem; }
+.select-question.answered .select-checkbox { pointer-events: none; }
+.select-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.select-content { flex: 1; }
+.select-prompt { font-size: 1.1rem; font-weight: 500; margin-bottom: 0.75rem; }
+.select-options { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
+.select-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.75rem; border-radius: 6px; cursor: pointer; transition: background 0.15s; }
+.select-option:hover { background: #f5f5f5; }
+.select-option.correct { background: #d4edda; }
+.select-option.correct-unchecked { background: #f8f9fa; }
+.select-option.wrong { background: #f8d7da; }
+.select-option.missed { background: #fff3cd; border: 1px dashed var(--warning); }
+.select-checkbox { width: 1.25rem; height: 1.25rem; cursor: pointer; }
+.select-text { font-size: 1rem; }
+.select-check { margin-top: 0.5rem; }
+.select-feedback { margin-top: 0.75rem; display: none; }
+.select-feedback.show { display: block; }
+.select-feedback .correct-text { color: var(--success); font-weight: 600; }
+.select-feedback .wrong-text { color: var(--danger); }
+
+  </style>
+</head>
+<body>
+  
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-03.html" class="module-nav-link">← Module 03</a>
+      <a href="index.html" class="module-nav-link">A2 Index</a>
+      <a href="module-05.html" class="module-nav-link">Module 05 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 04: The Instrumental I</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="activity-0">1. Fill</button>
+      <button class="nav-tab" data-section="activity-1">2. Order</button>
+      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
+      <button class="nav-tab" data-section="activity-4">5. T/F</button>
+      <button class="nav-tab" data-section="activity-5">6. Fill</button>
+      <button class="nav-tab" data-section="activity-6">7. Sort</button>
+      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">A2 · A2.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">The Instrumental I</h2>
+        <p style="color:var(--text-muted)">With Whom</p>
+      </div>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
+<h3 id="theseventhcase">The Seventh Case!</h3>
+<p>You've learned six cases: Nominative, Accusative, Genitive, Dative, Locative, and Vocative. Now for the last one: the <strong>Instrumental case</strong> (Орудний відмінок).</p>
+<p><strong>The key question:</strong> З ким? (With whom?) / З чим? (With what?)</p>
+<p>In English, "with" does all the work. In Ukrainian, the noun itself changes to show it's the companion or instrument:</p>
+<ul>
+<li>Я йду <strong>з другом</strong>. (I'm going with a friend.)</li>
+<li>Вона п'є каву <strong>з молоком</strong>. (She drinks coffee with milk.)</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>The instrumental case is named for its use with <em>instruments</em> (tools), but its most common use in everyday speech is for companionship - "with whom." This dual purpose makes it incredibly useful: you'll use it to say who you're with AND what you use to do something.</p>
+</blockquote>
+<h2 id="presentation">presentation</h2>
+<h3 id="instrumentalendingsoverview">Instrumental Endings Overview</h3>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>-consonant</td>
+<td>-ом</td>
+<td>друг → з друг<strong>ом</strong></td>
+</tr>
+<tr>
+<td>Masculine soft</td>
+<td>-ь/-й</td>
+<td>-ем</td>
+<td>вчитель → з вчител<strong>ем</strong></td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>-а</td>
+<td>-ою</td>
+<td>сестра → з сестр<strong>ою</strong></td>
+</tr>
+<tr>
+<td>Feminine soft</td>
+<td>-я</td>
+<td>-ею</td>
+<td>Марія → з Марі<strong>єю</strong></td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>-о</td>
+<td>-ом</td>
+<td>вікно → з вікн<strong>ом</strong></td>
+</tr>
+<tr>
+<td>Neuter soft</td>
+<td>-е</td>
+<td>-ем</td>
+<td>море → з мор<strong>ем</strong></td>
+</tr>
+<tr>
+<td>Plural (all)</td>
+<td>-</td>
+<td>-ами/-ями</td>
+<td>друзі → з друз<strong>ями</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="masculineinstrumental">Masculine Instrumental: -ом/-ем</h3>
+<p><strong>Hard consonant → -ом:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>With…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>друг</td>
+<td>друг<strong>ом</strong></td>
+<td>з другом</td>
+</tr>
+<tr>
+<td>брат</td>
+<td>брат<strong>ом</strong></td>
+<td>з братом</td>
+</tr>
+<tr>
+<td>батько</td>
+<td>батьк<strong>ом</strong></td>
+<td>з батьком</td>
+</tr>
+<tr>
+<td>студент</td>
+<td>студент<strong>ом</strong></td>
+<td>зі студентом</td>
+</tr>
+<tr>
+<td>чоловік</td>
+<td>чоловік<strong>ом</strong></td>
+<td>з чоловіком</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Soft consonant (-ь, -й) → -ем:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>With…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>вчитель</td>
+<td>вчител<strong>ем</strong></td>
+<td>з вчителем</td>
+</tr>
+<tr>
+<td>хлопець</td>
+<td>хлопц<strong>ем</strong></td>
+<td>з хлопцем</td>
+</tr>
+<tr>
+<td>Андрій</td>
+<td>Андрі<strong>єм</strong></td>
+<td>з Андрієм</td>
+</tr>
+<tr>
+<td>край</td>
+<td>кра<strong>єм</strong></td>
+<td>з краєм</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: з vs зі vs із</strong></p>
+  <p>All three mean "with" before instrumental:</p>
+  <ul>
+  <li><strong>з</strong> - default: з другом, з сестрою</li>
+  <li><strong>зі</strong> - before consonant clusters: зі студентом, зі мною</li>
+  <li><strong>із</strong> - formal/written alternative: із задоволенням</li>
+  </ul>
+  <p>Use <strong>зі</strong> when "з" would be hard to pronounce!</p>
+</blockquote>
+<h3 id="feminineinstrumental">Feminine Instrumental: -ою/-ею</h3>
+<p><strong>Hard stem (-а) → -ою:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>With…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>сестра</td>
+<td>сестр<strong>ою</strong></td>
+<td>з сестрою</td>
+</tr>
+<tr>
+<td>подруга</td>
+<td>подруг<strong>ою</strong></td>
+<td>з подругою</td>
+</tr>
+<tr>
+<td>мама</td>
+<td>мам<strong>ою</strong></td>
+<td>з мамою</td>
+</tr>
+<tr>
+<td>дружина</td>
+<td>дружин<strong>ою</strong></td>
+<td>з дружиною</td>
+</tr>
+<tr>
+<td>донька</td>
+<td>донькою</td>
+<td>з донькою</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Soft stem (-я) → -ею:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>With…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Марія</td>
+<td>Марі<strong>єю</strong></td>
+<td>з Марією</td>
+</tr>
+<tr>
+<td>Наталія</td>
+<td>Наталі<strong>єю</strong></td>
+<td>з Наталією</td>
+</tr>
+<tr>
+<td>сім'я</td>
+<td>сім'<strong>єю</strong></td>
+<td>з сім'єю</td>
+</tr>
+<tr>
+<td>земля</td>
+<td>земл<strong>ею</strong></td>
+<td>з землею</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>📜 <strong>History Bite: The -ою Ending</strong></p>
+  <p>The feminine instrumental -ою comes from Old Church Slavonic -ojǫ. Over centuries, the nasal vowel simplified, but the ending kept its distinctive length. When you say "з сестрою," you're using a form that has existed for over 1,000 years!</p>
+</blockquote>
+<h3 id="instrumentalpronouns">Instrumental Pronouns</h3>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>мною</td>
+<td>зі <strong>мною</strong></td>
+</tr>
+<tr>
+<td>ти</td>
+<td>тобою</td>
+<td>з <strong>тобою</strong></td>
+</tr>
+<tr>
+<td>він</td>
+<td>ним</td>
+<td>з <strong>ним</strong></td>
+</tr>
+<tr>
+<td>вона</td>
+<td>нею</td>
+<td>з <strong>нею</strong></td>
+</tr>
+<tr>
+<td>воно</td>
+<td>ним</td>
+<td>з <strong>ним</strong></td>
+</tr>
+<tr>
+<td>ми</td>
+<td>нами</td>
+<td>з <strong>нами</strong></td>
+</tr>
+<tr>
+<td>ви</td>
+<td>вами</td>
+<td>з <strong>вами</strong></td>
+</tr>
+<tr>
+<td>вони</td>
+<td>ними</td>
+<td>з <strong>ними</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Хто йде <strong>зі мною</strong>? - Who's going with me?</li>
+<li>Я хочу бути <strong>з тобою</strong>. - I want to be with you.</li>
+<li>Вона живе <strong>з ним</strong>. - She lives with him.</li>
+<li>Поїдемо <strong>з нами</strong>! - Come with us!</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner: Companionship</strong></p>
+  <p>Ukrainians value being together. The question "З ким ти?" (Who are you with?) is common and caring, not intrusive. Doing things alone (сам/сама) is often seen as unfortunate. "Ходімо з нами!" (Come with us!) is a warm invitation you'll hear often.</p>
+</blockquote>
+<h3 id="pluralinstrumental">Plural Instrumental: -ами/-ями</h3>
+<p><strong>Hard stems → -ами:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nom. Singular</th>
+<th>Nom. Plural</th>
+<th>Instrumental Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>друг</td>
+<td>друзі</td>
+<td>друз<strong>ями</strong></td>
+</tr>
+<tr>
+<td>брат</td>
+<td>брати</td>
+<td>брат<strong>ами</strong></td>
+</tr>
+<tr>
+<td>сестра</td>
+<td>сестри</td>
+<td>сестр<strong>ами</strong></td>
+</tr>
+<tr>
+<td>батько</td>
+<td>батьки</td>
+<td>батьк<strong>ами</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Soft stems → -ями:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nom. Singular</th>
+<th>Nom. Plural</th>
+<th>Instrumental Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>вчитель</td>
+<td>вчителі</td>
+<td>вчител<strong>ями</strong></td>
+</tr>
+<tr>
+<td>гість</td>
+<td>гості</td>
+<td>гост<strong>ями</strong></td>
+</tr>
+<tr>
+<td>приятель</td>
+<td>приятелі</td>
+<td>приятел<strong>ями</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Я живу <strong>з батьками</strong>. - I live with my parents.</li>
+<li>Вона працює <strong>з колегами</strong>. - She works with colleagues.</li>
+<li>Ми гуляємо <strong>з друзями</strong>. - We walk with friends.</li>
+</ul>
+<h3 id="commonpatternswithinstrumental">Common Patterns with з + Instrumental</h3>
+<p><strong>Living/Being:</strong></p>
+<ul>
+<li>жити з + INSTR (live with)</li>
+<li>бути з + INSTR (be with)</li>
+<li>залишатися з + INSTR (stay with)</li>
+</ul>
+<p><strong>Going/Moving:</strong></p>
+<ul>
+<li>йти з + INSTR (go with)</li>
+<li>їхати з + INSTR (travel with)</li>
+<li>гуляти з + INSTR (walk with)</li>
+</ul>
+<p><strong>Social Activities:</strong></p>
+<ul>
+<li>зустрічатися з + INSTR (meet with)</li>
+<li>розмовляти з + INSTR (talk with)</li>
+<li>знайомитися з + INSTR (get acquainted with)</li>
+<li>працювати з + INSTR (work with)</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Verbs That Love Instrumental</strong></p>
+  <p>These verbs commonly take з + instrumental:</p>
+  <ul>
+  <li><strong>зустрічатися</strong> з ким? (meet with whom?)</li>
+  <li><strong>вітатися</strong> з ким? (greet whom?)</li>
+  <li><strong>прощатися</strong> з ким? (say goodbye to whom?)</li>
+  <li><strong>знайомитися</strong> з ким? (get acquainted with whom?)</li>
+  </ul>
+  <p>All about social interaction!</p>
+</blockquote>
+<h3 id="expressionsoftogetherness">Expressions of Togetherness</h3>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>разом з</td>
+<td>together with</td>
+</tr>
+<tr>
+<td>удвох</td>
+<td>the two of us</td>
+</tr>
+<tr>
+<td>утрьох</td>
+<td>the three of us</td>
+</tr>
+<tr>
+<td>усі разом</td>
+<td>all together</td>
+</tr>
+<tr>
+<td>один на один</td>
+<td>one-on-one</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Ми <strong>разом з</strong> братом поїдемо. - My brother and I will go together.</li>
+<li>Вони живуть <strong>удвох</strong>. - The two of them live together.</li>
+<li>Поговоримо <strong>один на один</strong>. - Let's talk one-on-one.</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Ukrainian has special words for "the two of us" (удвох), "the three of us" (утрьох), "the four of us" (учотирьох), etc. These express togetherness more warmly than just counting people!</p>
+</blockquote>
+<h2 id="practice">practice</h2>
+<h3 id="nountransformations">Noun Transformations</h3>
+<p>Change nominative to instrumental:</p>
+<p><strong>Masculine:</strong></p>
+<ol>
+<li><p>друг</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">другом</div></div>
+<ol start="2">
+<li><p>брат</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">братом</div></div>
+<ol start="3">
+<li><p>вчитель</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">вчителем</div></div>
+<ol start="4">
+<li><p>батько</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">батьком</div></div>
+<ol start="5">
+<li><p>Андрій</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">Андрієм</div></div>
+<p><strong>Feminine:</strong></p>
+<ol>
+<li><p>сестра</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">сестрою</div></div>
+<ol start="2">
+<li><p>подруга</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">подругою</div></div>
+<ol start="3">
+<li><p>мама</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">мамою</div></div>
+<ol start="4">
+<li><p>Марія</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Марією</div></div>
+<p><strong>Plural:</strong></p>
+<ol>
+<li><p>друзі</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">друзями</div></div>
+<ol start="2">
+<li><p>батьки</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">батьками</div></div>
+<ol start="3">
+<li><p>сестри</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">сестрами</div></div>
+<ol start="4">
+<li><p>колеги</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">колегами</div></div>
+<h3 id="completethesentences">Complete the Sentences</h3>
+<p>Fill in the instrumental form:</p>
+<ol>
+<li><p>Я йду з ___ (друг).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">другом</div></div>
+<ol start="2">
+<li><p>Вона живе з ___ (сестра).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">сестрою</div></div>
+<ol start="3">
+<li><p>Ми розмовляємо з ___ (вчитель).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">вчителем</div></div>
+<ol start="4">
+<li><p>Він їде з ___ (батьки).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">батьками</div></div>
+<ol start="5">
+<li><p>Я хочу бути з ___ (ти).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">тобою</div></div>
+<ol start="6">
+<li><p>Вони працюють з ___ (ми).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">нами</div></div>
+<h3 id="buildfullsentences">Build Full Sentences</h3>
+<p>Create sentences: Subject + verb + з + instrumental</p>
+<ol>
+<li><p>Я / жити / батьки</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-19', this)">Показати відповідь</button><div class="answer-block" id="ans-19"><div class="callout callout-answer" data-callout="answer">Я живу з батьками.</div></div>
+<ol start="2">
+<li><p>Вона / гуляти / собака</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Вона гуляє з собакою.</div></div>
+<ol start="3">
+<li><p>Ми / їхати / друзі</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-21', this)">Показати відповідь</button><div class="answer-block" id="ans-21"><div class="callout callout-answer" data-callout="answer">Ми їдемо з друзями.</div></div>
+<ol start="4">
+<li><p>Він / працювати / колеги</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-22', this)">Показати відповідь</button><div class="answer-block" id="ans-22"><div class="callout callout-answer" data-callout="answer">Він працює з колегами.</div></div>
+<h2 id="production">production</h2>
+<h3 id="realsituations">Real Situations</h3>
+<p><strong>Scenario 1: Making plans</strong></p>
+<ul>
+<li>З ким ти йдеш на концерт?</li>
+<li>З подругою. А ти?</li>
+<li>Я ще не знаю. Може, з братом.</li>
+<li>Ходімо всі разом!</li>
+</ul>
+<p><strong>Scenario 2: Meeting someone new</strong></p>
+<ul>
+<li>Познайомся, це Андрій.</li>
+<li>Приємно познайомитися з вами!</li>
+<li>Ми з Андрієм разом працюємо.</li>
+<li>О, ви колеги! Як давно?</li>
+</ul>
+<p><strong>Scenario 3: Family life</strong></p>
+<ul>
+<li>Ти живеш з батьками?</li>
+<li>Ні, я живу з дружиною і донькою.</li>
+<li>А з ким ти проводиш вихідні?</li>
+<li>Зазвичай з сім'єю, іноді з друзями.</li>
+</ul>
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr /></div>
+    </div>
+  
+      
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><h2 id="instrumentalendings">Instrumental Endings</h2>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Nom ending</th>
+<th>Instr ending</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>consonant</td>
+<td>-ом</td>
+<td>друг → другом</td>
+</tr>
+<tr>
+<td>Masc soft</td>
+<td>-ь/-й</td>
+<td>-ем</td>
+<td>вчитель → вчителем</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>-а</td>
+<td>-ою</td>
+<td>сестра → сестрою</td>
+</tr>
+<tr>
+<td>Fem soft</td>
+<td>-я</td>
+<td>-ею</td>
+<td>Марія → Марією</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>-о/-е</td>
+<td>-ом/-ем</td>
+<td>місто → містом</td>
+</tr>
+<tr>
+<td>Plural</td>
+<td>-</td>
+<td>-ами/-ями</td>
+<td>друзі → друзями</td>
+</tr>
+</tbody>
+</table>
+<h2 id="instrumentalpronouns">Instrumental Pronouns</h2>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Instrumental</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>мною</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>тобою</td>
+</tr>
+<tr>
+<td>він/воно</td>
+<td>ним</td>
+</tr>
+<tr>
+<td>вона</td>
+<td>нею</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>нами</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>вами</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>ними</td>
+</tr>
+</tbody>
+</table>
+<h2 id="commonpatterns">Common Patterns</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>жити з + instr</td>
+<td>жити з батьками</td>
+</tr>
+<tr>
+<td>йти з + instr</td>
+<td>йти з другом</td>
+</tr>
+<tr>
+<td>працювати з + instr</td>
+<td>працювати з колегами</td>
+</tr>
+<tr>
+<td>зустрічатися з + instr</td>
+<td>зустрічатися з подругою</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>💡 <strong>Key Takeaways</strong></p>
+  <ul>
+  <li>Instrumental answers "з ким?" (with whom?) and "з чим?" (with what?)</li>
+  <li>Masculine: -ом (hard) / -ем (soft)</li>
+  <li>Feminine: -ою (hard) / -ею (soft)</li>
+  <li>Plural: -ами (hard) / -ями (soft)</li>
+  <li>Use зі before consonant clusters: зі мною, зі студентом</li>
+  <li>Many social verbs use з + instrumental: зустрічатися, знайомитися</li>
+  </ul>
+</blockquote></div>
+    </div>
+  
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('activity-0')">Activities →</button>
+      </div>
+    </section>
+  
+    
+    <section id="activity-0" class="section"><div class="card"><h3>Instrumental with з</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+      <div id="activity-0-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
+      <div id="activity-1-container" class="order-container"></div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
+        <div class="match-column" id="activity-2-left"></div>
+        <div class="match-column" id="activity-2-right"></div>
+      </div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
+      <div id="activity-3-container"></div>
+      <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+      <div id="activity-4-container"></div>
+      <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-5" class="section"><div class="card"><h3>Choose the Correct Instrumental Form</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
+      <div id="activity-5-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-6" class="section"><div class="card"><h3>Instrumental Ending Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/17</span></div>
+      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
+      <div class="sort-groups" id="activity-6-groups"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-7" class="section"><div class="card"><h3>Instrumental Sentence Building</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
+      <div id="activity-7-container" class="order-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
+    
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (31)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    <th>IPA</th>
+    <th>Переклад</th>
+    <th>Примітка</th>
+  </tr></thead>
+            <tbody><tr><td class="vocab-uk">з/із/зі</td><td class="vocab-ipa">/z/, /iz/, /zʲi/</td><td class="vocab-en">with</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">разом</td><td class="vocab-ipa">/ˈrɑzom/</td><td class="vocab-en">together</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">удвох</td><td class="vocab-ipa">/udˈvox/</td><td class="vocab-en">the two (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">утрьох</td><td class="vocab-ipa">/uˈtrʲox/</td><td class="vocab-en">the three (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зустрічатися</td><td class="vocab-ipa">/zustriˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to meet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">вітатися</td><td class="vocab-ipa">/viˈtɑtɪsʲɑ/</td><td class="vocab-en">to greet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">прощатися</td><td class="vocab-ipa">/proʃˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to say goodbye</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">знайомитися</td><td class="vocab-ipa">/znɑˈjomɪtɪsʲɑ/</td><td class="vocab-en">to get acquainted</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">мною</td><td class="vocab-ipa">/mnoju/</td><td class="vocab-en">(with) me</td><td class="vocab-note">Instr. of я</td></tr><tr><td class="vocab-uk">тобою</td><td class="vocab-ipa">/toˈboju/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ти</td></tr><tr><td class="vocab-uk">ним</td><td class="vocab-ipa">/nɪm/</td><td class="vocab-en">(with) him/it</td><td class="vocab-note">Instr. of він/воно</td></tr><tr><td class="vocab-uk">нею</td><td class="vocab-ipa">/ˈnɛju/</td><td class="vocab-en">(with) her</td><td class="vocab-note">Instr. of вона</td></tr><tr><td class="vocab-uk">нами</td><td class="vocab-ipa">/ˈnɑmɪ/</td><td class="vocab-en">(with) us</td><td class="vocab-note">Instr. of ми</td></tr><tr><td class="vocab-uk">вами</td><td class="vocab-ipa">/ˈvɑmɪ/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ви</td></tr><tr><td class="vocab-uk">ними</td><td class="vocab-ipa">/ˈnɪmɪ/</td><td class="vocab-en">(with) them</td><td class="vocab-note">Instr. of вони</td></tr><tr><td class="vocab-uk">компанія</td><td class="vocab-ipa">/kompɑˈnʲijɑ/</td><td class="vocab-en">company, group</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">група</td><td class="vocab-ipa">/ˈhrupɑ/</td><td class="vocab-en">group</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">команда</td><td class="vocab-ipa">/kɔˈmɑndɑ/</td><td class="vocab-en">team</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пара</td><td class="vocab-ipa">/ˈpɑrɑ/</td><td class="vocab-en">couple, pair</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">родина</td><td class="vocab-ipa">/rɔˈdɪnɑ/</td><td class="vocab-en">family</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сім&#039;я</td><td class="vocab-ipa">/sʲiˈmjɑ/</td><td class="vocab-en">family</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">колега</td><td class="vocab-ipa">/kɔˈlɛɦɑ/</td><td class="vocab-en">colleague (m/f)</td><td class="vocab-note">Instr: колегою</td></tr><tr><td class="vocab-uk">сусіди</td><td class="vocab-ipa">/suˈsʲidɪ/</td><td class="vocab-en">neighbors</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знайомі</td><td class="vocab-ipa">/znɑˈjɔmʲi/</td><td class="vocab-en">acquaintances</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">партнер</td><td class="vocab-ipa">/pɑrtˈnɛr/</td><td class="vocab-en">partner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">напарник</td><td class="vocab-ipa">/nɑˈpɑrnɪk/</td><td class="vocab-en">partner, teammate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">супутник</td><td class="vocab-ipa">/suˈputnɪk/</td><td class="vocab-en">companion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">товариш</td><td class="vocab-ipa">/tɔˈvɑrɪʃ/</td><td class="vocab-en">comrade, friend</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">приятель</td><td class="vocab-ipa">/prɪˈjɑtɛlʲ/</td><td class="vocab-en">buddy, pal</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ворог</td><td class="vocab-ipa">/ˈvɔrɔɦ/</td><td class="vocab-en">enemy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">натовп</td><td class="vocab-ipa">/ˈnɑtɔu̯p/</td><td class="vocab-en">crowd</td><td class="vocab-note"></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
+    </section>
+  </main><footer>Module 04 · curricula-opus</footer>
+  <script>
+
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Instrumental with з","data":{"type":"fill-blank","items":[{"prompt":"Я йду в кіно з моїм ___ (друг) сьогодні ввечері.","answer":"другом","hints":["друг"],"options":["друг","друга","другові","другом"]},{"prompt":"Вона розмовляє по телефону з ___ (сестра) кожен день.","answer":"сестрою","hints":["сестра"],"options":["сестра","сестри","сестрі","сестрою"]},{"prompt":"Ми живемо разом з нашими ___ (батьки) в Києві.","answer":"батьками","hints":["батьки"],"options":["батьки","батьків","батькам","батьками"]},{"prompt":"Він гуляє в парку з ___ (собака) вранці та ввечері.","answer":"собакою","hints":["собака"],"options":["собака","собаки","собаці","собакою"]},{"prompt":"Я їду на море з ___ (ти) цього літа!","answer":"тобою","hints":["ти"],"options":["ти","тебе","тобі","тобою"]},{"prompt":"Ти хочеш познайомитися з ___ (вони) на вечірці?","answer":"ними","hints":["вони"],"options":["вони","їх","їм","ними"]},{"prompt":"Вона щасливо живе з ___ (чоловік) у Львові.","answer":"чоловіком","hints":["чоловік"],"options":["чоловік","чоловіка","чоловікові","чоловіком"]},{"prompt":"Діти люблять грати з ___ (котик) на подвір'ї.","answer":"котиком","hints":["котик"],"options":["котик","котика","котикові","котиком"]},{"prompt":"З ___ (хто) ти йдеш на концерт у суботу?","answer":"ким","hints":["хто"],"options":["хто","кого","кому","ким"]},{"prompt":"Ми завжди святкуємо Новий рік з ___ (сім'я).","answer":"сім'єю","hints":["сім'я"],"options":["сім'я","сім'ї","сім'ї","сім'єю"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["другом","Я","в кіно","йду","з","сьогодні"],"answer":"Я йду в кіно з другом сьогодні.","translation":"I'm going to the cinema with a friend today."},{"words":["сестрою","Вона","розмовляє","з","по телефону","часто"],"answer":"Вона часто розмовляє з сестрою по телефону.","translation":"She often talks to her sister on the phone."},{"words":["батьками","Ми","живемо","з","в Києві","разом"],"answer":"Ми живемо разом з батьками в Києві.","translation":"We live together with our parents in Kyiv."},{"words":["собакою","Він","в парку","гуляє","з","вранці"],"answer":"Він гуляє в парку з собакою вранці.","translation":"He walks in the park with the dog in the morning."},{"words":["тобою","Я","на море","їду","з","цього літа"],"answer":"Я їду на море з тобою цього літа.","translation":"I'm going to the sea with you this summer."},{"words":["ними","Ти","хочеш","познайомитися","з","на вечірці"],"answer":"Ти хочеш познайомитися з ними на вечірці?","translation":"Do you want to get acquainted with them at the party?"},{"words":["чоловіком","Вона","живе","щасливо","з","у Львові"],"answer":"Вона щасливо живе з чоловіком у Львові.","translation":"She lives happily with her husband in Lviv."},{"words":["сім'єю","Ми","завжди","святкуємо","з","Новий рік"],"answer":"Ми завжди святкуємо Новий рік з сім'єю.","translation":"We always celebrate New Year with family."},{"words":["ким","З","йдеш","ти","на концерт","у суботу"],"answer":"З ким ти йдеш на концерт у суботу?","translation":"Who are you going to the concert with on Saturday?"},{"words":["колегами","Він","працює","з","разом","у офісі"],"answer":"Він працює разом з колегами у офісі.","translation":"He works together with colleagues in the office."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"знайомитися","right":"to get acquainted"},{"left":"праворуч","right":"to the right"},{"left":"вітатися","right":"to greet"},{"left":"нами","right":"(with) us"},{"left":"з/із/зі","right":"with"},{"left":"аптека","right":"pharmacy"},{"left":"тобою","right":"(with) you"},{"left":"компанія","right":"company, group"},{"left":"разом","right":"together"},{"left":"четвер","right":"Thursday"},{"left":"нею","right":"(with) her"},{"left":"удвох","right":"the two (together)"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"вітатися\" mean?","options":["to call (phone)","discount","bill, check","to greet"],"correctIndex":3,"explanation":"\"вітатися\" means \"to greet\""},{"question":"What does \"знайомитися\" mean?","options":["to get acquainted","window","discount","photo"],"correctIndex":0,"explanation":"\"знайомитися\" means \"to get acquainted\""},{"question":"What does \"нею\" mean?","options":["to disturb","it","feminine","(with) her"],"correctIndex":3,"explanation":"\"нею\" means \"(with) her\""},{"question":"What does \"ними\" mean?","options":["new","(with) them","to appear in dream","dad"],"correctIndex":1,"explanation":"\"ними\" means \"(with) them\""},{"question":"What does \"з/із/зі\" mean?","options":["to see","banana","with","to inform"],"correctIndex":2,"explanation":"\"з/із/зі\" means \"with\""},{"question":"What does \"зустрічатися\" mean?","options":["twenty","to meet","alphabet","exit"],"correctIndex":1,"explanation":"\"зустрічатися\" means \"to meet\""},{"question":"What does \"мною\" mean?","options":["soon","to see","(with) me","calf"],"correctIndex":2,"explanation":"\"мною\" means \"(with) me\""},{"question":"What does \"компанія\" mean?","options":["radio","to them","to return","company, group"],"correctIndex":3,"explanation":"\"компанія\" means \"company, group\""},{"question":"What does \"тобою\" mean?","options":["fifty","document","(with) you","music"],"correctIndex":2,"explanation":"\"тобою\" means \"(with) you\""},{"question":"What does \"вами\" mean?","options":["(with) you","father","husband","square"],"correctIndex":0,"explanation":"\"вами\" means \"(with) you\""},{"question":"What does \"ним\" mean?","options":["to seem","(with) him/it","sneakers","document"],"correctIndex":1,"explanation":"\"ним\" means \"(with) him/it\""},{"question":"What does \"нами\" mean?","options":["(with) us","hair","near, close","every day"],"correctIndex":0,"explanation":"\"нами\" means \"(with) us\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"вами\" means \"(with) you\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"з/із/зі\" means \"meat\"","isTrue":false,"explanation":"Incorrect. \"з/із/зі\" means \"with\""},{"statement":"\"нами\" means \"to sell\"","isTrue":false,"explanation":"Incorrect. \"нами\" means \"(with) us\""},{"statement":"\"утрьох\" means \"the three (together)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"знайомитися\" means \"can, to be able\"","isTrue":false,"explanation":"Incorrect. \"знайомитися\" means \"to get acquainted\""},{"statement":"\"нею\" means \"(with) her\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"разом\" means \"together\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"удвох\" means \"to advise\"","isTrue":false,"explanation":"Incorrect. \"удвох\" means \"the two (together)\""},{"statement":"\"вітатися\" means \"to greet\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"ним\" means \"(with) him/it\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"fill-blank","title":"Choose the Correct Instrumental Form","data":{"type":"fill-blank","items":[{"prompt":"Я йду в кіно з ___ . (he)","answer":"ним","options":["його","йому","ним"]},{"prompt":"Вона розмовляє з ___ . (we)","answer":"нами","options":["нас","нам","нами"]},{"prompt":"Він зустрічається з ___ . (she)","answer":"нею","options":["її","їй","нею"]},{"prompt":"Ми працюємо з ___ . (friend)","answer":"другом","options":["друга","другу","другом"]},{"prompt":"Вона знайомиться з ___ . (students)","answer":"студентами","options":["студентів","студентам","студентами"]},{"prompt":"Я обідаю з ___ . (sister)","answer":"сестрою","options":["сестру","сестрі","сестрою"]},{"prompt":"Він вітається з ___ . (teacher)","answer":"вчителем","options":["вчителя","вчителю","вчителем"]},{"prompt":"Ми гуляємо з ___ . (they)","answer":"ними","options":["їх","їм","ними"]},{"prompt":"Вона прощається з ___ . (you, formal)","answer":"вами","options":["вас","вам","вами"]},{"prompt":"Я живу з ___ . (parents)","answer":"батьками","options":["батьків","батькам","батьками"]}]}},{"id":"activity-6","type":"group-sort","title":"Instrumental Ending Categories","data":{"type":"group-sort","groups":[{"id":"-","name":"-ом","items":["другом","братом","студентом","батьком"],"nameUk":"Hard Masculine"},{"id":"-","name":"-ем","items":["вчителем","хлопцем","товаришем"],"nameUk":"Soft Masculine"},{"id":"-","name":"-ою","items":["сестрою","мамою","подругою"],"nameUk":"Hard Feminine"},{"id":"-","name":"-ею","items":["Марією","землею","статтею"],"nameUk":"Soft Feminine"},{"id":"--","name":"-ами/-ями","items":["друзями","батьками","студентами","сестрами"],"nameUk":"Plural"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Instrumental Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","йду","в кіно","з другом"],"answer":"Я йду в кіно з другом.","translation":"I go to the cinema with a friend."},{"words":["Вона","зустрічається","з подругою","в кафе"],"answer":"Вона зустрічається з подругою в кафе.","translation":"She meets with a friend at a cafe."},{"words":["Ми","живемо","разом","з батьками"],"answer":"Ми живемо разом з батьками.","translation":"We live together with our parents."},{"words":["Він","працює","з колегами","в офісі"],"answer":"Він працює з колегами в офісі.","translation":"He works with colleagues in the office."},{"words":["Я","вітаюся","з вами","щодня"],"answer":"Я вітаюся з вами щодня.","translation":"I greet you every day."},{"words":["Вона","обідає","з сестрою","вдома"],"answer":"Вона обідає з сестрою вдома.","translation":"She has lunch with her sister at home."},{"words":["Ми","прощаємося","з друзями","ввечері"],"answer":"Ми прощаємося з друзями ввечері.","translation":"We say goodbye to friends in the evening."},{"words":["Він","знайомиться","з нею","на вечірці"],"answer":"Він знайомиться з нею на вечірці.","translation":"He gets acquainted with her at a party."},{"words":["Я","гуляю","з ними","у парку"],"answer":"Я гуляю з ними у парку.","translation":"I walk with them in the park."},{"words":["Вона","розмовляє","з мамою","по телефону"],"answer":"Вона розмовляє з мамою по телефону.","translation":"She talks with mom on the phone."}]}}];
+    const vocabData = [{"uk":"з/із/зі","translit":"","en":"with","note":"+ instr"},{"uk":"разом","translit":"","en":"together","note":""},{"uk":"удвох","translit":"","en":"the two (together)","note":""},{"uk":"утрьох","translit":"","en":"the three (together)","note":""},{"uk":"зустрічатися","translit":"","en":"to meet","note":"з + instr"},{"uk":"вітатися","translit":"","en":"to greet","note":"з + instr"},{"uk":"прощатися","translit":"","en":"to say goodbye","note":"з + instr"},{"uk":"знайомитися","translit":"","en":"to get acquainted","note":"з + instr"},{"uk":"мною","translit":"","en":"(with) me","note":"Instr. of я"},{"uk":"тобою","translit":"","en":"(with) you","note":"Instr. of ти"},{"uk":"ним","translit":"","en":"(with) him/it","note":"Instr. of він/воно"},{"uk":"нею","translit":"","en":"(with) her","note":"Instr. of вона"},{"uk":"нами","translit":"","en":"(with) us","note":"Instr. of ми"},{"uk":"вами","translit":"","en":"(with) you","note":"Instr. of ви"},{"uk":"ними","translit":"","en":"(with) them","note":"Instr. of вони"},{"uk":"компанія","translit":"","en":"company, group","note":""},{"uk":"група","translit":"","en":"group","note":""},{"uk":"команда","translit":"","en":"team","note":""},{"uk":"пара","translit":"","en":"couple, pair","note":""},{"uk":"родина","translit":"","en":"family","note":""},{"uk":"сім'я","translit":"","en":"family","note":""},{"uk":"колега","translit":"","en":"colleague (m/f)","note":"Instr: колегою"},{"uk":"сусіди","translit":"","en":"neighbors","note":""},{"uk":"знайомі","translit":"","en":"acquaintances","note":""},{"uk":"партнер","translit":"","en":"partner","note":""},{"uk":"напарник","translit":"","en":"partner, teammate","note":""},{"uk":"супутник","translit":"","en":"companion","note":""},{"uk":"товариш","translit":"","en":"comrade, friend","note":""},{"uk":"приятель","translit":"","en":"buddy, pal","note":""},{"uk":"ворог","translit":"","en":"enemy","note":""},{"uk":"натовп","translit":"","en":"crowd","note":""}];
+  
+// Answer callout toggle (for new > [!answer] syntax)
+function toggleAnswer(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const isUkrainian = document.querySelector('.level-badge')?.textContent.match(/B[12]|C[12]/);
+  const showText = isUkrainian ? 'Показати відповідь' : 'Show Answer';
+  const hideText = isUkrainian ? 'Сховати відповідь' : 'Hide Answer';
+  const show = !el.classList.contains('show');
+  if (show) {
+    el.classList.add('show');
+    btn.textContent = hideText;
+    btn.classList.add('revealed');
+  } else {
+    el.classList.remove('show');
+    btn.textContent = showText;
+    btn.classList.remove('revealed');
+  }
+}
+
+// Section navigation
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id)?.classList.add('active');
+  document.querySelector('[data-section="' + id + '"]')?.classList.add('active');
+}
+document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', () => showSection(t.dataset.section)));
+
+// Activity reset dispatcher
+function resetActivity(sectionId) {
+  const activity = activitiesData.find(a => a.id === sectionId);
+  if (!activity) return;
+
+  switch (activity.type) {
+    case 'match-up':
+      resetMatch(sectionId);
+      break;
+    case 'quiz':
+      resetQuiz(sectionId);
+      break;
+    case 'true-false':
+      resetTf(sectionId);
+      break;
+    case 'group-sort':
+      resetSort(sectionId);
+      break;
+    case 'fill-blank':
+    case 'gap-fill':
+      resetFill(sectionId);
+      break;
+    case 'order':
+    case 'unjumble':
+      resetOrder(sectionId);
+      break;
+    case 'select':
+      resetSelect(sectionId);
+      break;
+  }
+}
+
+// Initialize all activities from activitiesData array
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof activitiesData === 'undefined') return;
+
+  activitiesData.forEach(activity => {
+    switch (activity.type) {
+      case 'match-up':
+        initMatch(activity.id, activity.data);
+        break;
+      case 'quiz':
+        initQuiz(activity.id, activity.data);
+        break;
+      case 'true-false':
+        initTf(activity.id, activity.data);
+        break;
+      case 'group-sort':
+        initSort(activity.id, activity.data);
+        break;
+      case 'fill-blank':
+      case 'gap-fill':
+        initFill(activity.id, activity.data);
+        break;
+      case 'order':
+      case 'unjumble':
+        initOrder(activity.id, activity.data);
+        break;
+      case 'select':
+        initSelect(activity.id, activity.data);
+        break;
+    }
+  });
+
+  // Initialize vocabulary
+  if (typeof initVocab === 'function') initVocab();
+});
+
+
+// Quiz Activity - supports multiple instances
+const quizState = {};
+
+function initQuiz(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.questions || !data.questions.length) return;
+
+  quizState[sectionId] = { score: 0, answered: 0, total: data.questions.length, data: data };
+
+  c.innerHTML = '';
+  data.questions.forEach((q, i) => {
+    const sh = [...q.options].sort(() => Math.random() - 0.5);
+    const cor = sh.indexOf(q.options[q.correctIndex]);
+    const div = document.createElement('div');
+    div.className = 'quiz-question';
+    div.dataset.section = sectionId;
+    div.innerHTML = '<h4>Q' + (i + 1) + ': ' + q.question + '</h4><div class="quiz-options">' + sh.map((o, j) => '<div class="quiz-option" data-c="' + (j === cor) + '" data-q="' + i + '" data-section="' + sectionId + '">' + o + '</div>').join('') + '</div><div class="quiz-explanation" id="' + sectionId + '-exp-' + i + '">' + (q.explanation || '') + '</div>';
+    c.appendChild(div);
+  });
+  c.querySelectorAll('.quiz-option').forEach(o => o.addEventListener('click', handleQuiz));
+}
+
+function handleQuiz(e) {
+  const opt = e.target, q = opt.closest('.quiz-question');
+  const sectionId = opt.dataset.section;
+  if (q.classList.contains('answered')) return;
+  q.classList.add('answered');
+
+  const state = quizState[sectionId];
+  if (opt.dataset.c === 'true') {
+    opt.classList.add('correct');
+    state.score++;
+  } else {
+    opt.classList.add('wrong');
+    q.querySelector('[data-c="true"]').classList.add('correct');
+  }
+  document.getElementById(sectionId + '-exp-' + opt.dataset.q)?.classList.add('show');
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+}
+
+function resetQuiz(sectionId) {
+  const state = quizState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initQuiz(sectionId, state.data);
+}
+
+
+// True/False Activity - supports multiple instances
+const tfState = {};
+
+function initTf(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.statements || !data.statements.length) return;
+
+  tfState[sectionId] = { score: 0, answered: 0, total: data.statements.length, data: data };
+
+  c.innerHTML = '';
+  data.statements.forEach((s, i) => {
+    const div = document.createElement('div');
+    div.className = 'tf-statement';
+    div.dataset.section = sectionId;
+    div.innerHTML = '<p class="tf-text">' + s.statement + '</p>' +
+      '<div class="tf-buttons">' +
+      '<button class="tf-btn" data-value="true" data-idx="' + i + '" data-section="' + sectionId + '">True</button>' +
+      '<button class="tf-btn" data-value="false" data-idx="' + i + '" data-section="' + sectionId + '">False</button>' +
+      '</div>' +
+      '<div class="tf-explanation" id="' + sectionId + '-exp-' + i + '">' + (s.explanation || '') + '</div>';
+    div.dataset.correct = s.isTrue;
+    c.appendChild(div);
+  });
+  c.querySelectorAll('.tf-btn').forEach(b => b.addEventListener('click', handleTf));
+}
+
+function handleTf(e) {
+  const btn = e.target;
+  const sectionId = btn.dataset.section;
+  const idx = parseInt(btn.dataset.idx);
+  const statement = btn.closest('.tf-statement');
+  const state = tfState[sectionId];
+  if (statement.classList.contains('answered')) return;
+
+  statement.classList.add('answered');
+  const correct = state.data.statements[idx].isTrue;
+  const clicked = btn.dataset.value === 'true';
+
+  if (clicked === correct) {
+    btn.classList.add('correct');
+    state.score++;
+  } else {
+    btn.classList.add('wrong');
+    // Highlight the correct answer
+    statement.querySelector('[data-value="' + correct + '"]').classList.add('correct');
+  }
+
+  const exp = document.getElementById(sectionId + '-exp-' + idx);
+  if (exp && exp.textContent) exp.classList.add('show');
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+}
+
+function resetTf(sectionId) {
+  const state = tfState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initTf(sectionId, state.data);
+}
+
+
+// Match Activity - supports multiple instances
+const matchState = {};
+
+function initMatch(sectionId, data) {
+  const container = document.getElementById(sectionId + '-container');
+  const leftCol = document.getElementById(sectionId + '-left');
+  const rightCol = document.getElementById(sectionId + '-right');
+  if (!container || !leftCol || !rightCol || !data.pairs || !data.pairs.length) return;
+
+  const pairs = data.pairs;
+  matchState[sectionId] = { selected: null, score: 0, matched: [], total: pairs.length, data: data };
+
+  // Create left column items
+  const shuffledLeft = pairs.map((p, i) => ({ text: p.left, idx: i })).sort(() => Math.random() - 0.5);
+  leftCol.innerHTML = shuffledLeft.map(p => '<div class="match-item" data-pair="' + p.idx + '" data-section="' + sectionId + '" data-side="left">' + p.text + '</div>').join('');
+
+  // Create right column items
+  const shuffledRight = pairs.map((p, i) => ({ text: p.right, idx: i })).sort(() => Math.random() - 0.5);
+  rightCol.innerHTML = shuffledRight.map(p => '<div class="match-item" data-pair="' + p.idx + '" data-section="' + sectionId + '" data-side="right">' + p.text + '</div>').join('');
+
+  // Attach click handlers
+  leftCol.querySelectorAll('.match-item').forEach(item => {
+    item.addEventListener('click', () => handleMatchLeft(item));
+  });
+  rightCol.querySelectorAll('.match-item').forEach(item => {
+    item.addEventListener('click', () => handleMatchRight(item));
+  });
+}
+
+function handleMatchLeft(item) {
+  const sectionId = item.dataset.section;
+  const state = matchState[sectionId];
+  if (item.classList.contains('matched')) return;
+
+  const leftCol = document.getElementById(sectionId + '-left');
+  leftCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+  item.classList.add('selected');
+  state.selected = { el: item, pair: item.dataset.pair };
+}
+
+function handleMatchRight(item) {
+  const sectionId = item.dataset.section;
+  const state = matchState[sectionId];
+  if (item.classList.contains('matched') || !state.selected) return;
+
+  if (state.selected.pair === item.dataset.pair) {
+    state.selected.el.classList.remove('selected');
+    state.selected.el.classList.add('matched');
+    item.classList.add('matched');
+    state.matched.push({ left: state.selected.el, right: item });
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    drawMatchLines(sectionId);
+    if (state.score === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+  } else {
+    item.classList.add('wrong');
+    setTimeout(() => item.classList.remove('wrong'), 300);
+  }
+  state.selected = null;
+}
+
+function drawMatchLines(sectionId) {
+  const svg = document.getElementById(sectionId + '-lines');
+  const container = document.getElementById(sectionId + '-container');
+  const state = matchState[sectionId];
+  if (!svg || !container || !state) return;
+
+  const r = container.getBoundingClientRect();
+  svg.innerHTML = '';
+  svg.setAttribute('viewBox', '0 0 ' + r.width + ' ' + r.height);
+  state.matched.forEach(p => {
+    const lr = p.left.getBoundingClientRect(), rr = p.right.getBoundingClientRect();
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', lr.right - r.left);
+    line.setAttribute('y1', lr.top + lr.height / 2 - r.top);
+    line.setAttribute('x2', rr.left - r.left);
+    line.setAttribute('y2', rr.top + rr.height / 2 - r.top);
+    line.setAttribute('stroke', '#26a269');
+    line.setAttribute('stroke-width', '2');
+    svg.appendChild(line);
+  });
+}
+
+function resetMatch(sectionId) {
+  const state = matchState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  document.getElementById(sectionId + '-lines').innerHTML = '';
+  initMatch(sectionId, state.data);
+}
+
+// Redraw lines on resize for all match activities
+window.addEventListener('resize', () => {
+  Object.keys(matchState).forEach(sectionId => drawMatchLines(sectionId));
+});
+
+
+// Sort Activity - supports multiple instances
+const sortState = {};
+
+function initSort(sectionId, data) {
+  const pool = document.getElementById(sectionId + '-items');
+  const groupsContainer = document.getElementById(sectionId + '-groups');
+  if (!pool || !groupsContainer || !data.groups || !data.groups.length) return;
+
+  const groups = data.groups;
+  const totalItems = groups.reduce((sum, g) => sum + g.items.length, 0);
+  sortState[sectionId] = { score: 0, total: totalItems, dragItem: null, data: data };
+
+  // Create group containers
+  groupsContainer.innerHTML = groups.map((g, i) =>
+    '<div class="sort-group" data-group="' + i + '" data-section="' + sectionId + '"><h4>' + g.name + '</h4><div class="sort-items"></div></div>'
+  ).join('');
+
+  // Flatten and shuffle all items
+  const allItems = groups.flatMap((g, gi) => g.items.map(item => ({ text: item, group: gi })));
+  allItems.sort(() => Math.random() - 0.5);
+
+  // Create draggable items
+  pool.innerHTML = '';
+  allItems.forEach(item => {
+    const el = document.createElement('div');
+    el.className = 'sort-item';
+    el.textContent = item.text;
+    el.draggable = true;
+    el.dataset.group = item.group;
+    el.dataset.section = sectionId;
+    el.addEventListener('dragstart', () => {
+      sortState[sectionId].dragItem = el;
+      el.classList.add('dragging');
+    });
+    el.addEventListener('dragend', () => {
+      el.classList.remove('dragging');
+      sortState[sectionId].dragItem = null;
+    });
+    pool.appendChild(el);
+  });
+
+  // Setup drop zones
+  groupsContainer.querySelectorAll('.sort-group').forEach(g => {
+    g.addEventListener('dragover', e => {
+      e.preventDefault();
+      g.classList.add('drag-over');
+    });
+    g.addEventListener('dragleave', () => g.classList.remove('drag-over'));
+    g.addEventListener('drop', e => handleSortDrop(e, g));
+  });
+}
+
+function handleSortDrop(e, groupEl) {
+  e.preventDefault();
+  groupEl.classList.remove('drag-over');
+  const sectionId = groupEl.dataset.section;
+  const state = sortState[sectionId];
+  const dragItem = state.dragItem;
+  if (!dragItem) return;
+
+  if (groupEl.dataset.group === dragItem.dataset.group) {
+    dragItem.classList.add('correct');
+    groupEl.querySelector('.sort-items').appendChild(dragItem);
+    dragItem.draggable = false;
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    if (state.score === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+  } else {
+    dragItem.classList.add('wrong');
+    setTimeout(() => dragItem.classList.remove('wrong'), 300);
+  }
+}
+
+function resetSort(sectionId) {
+  const state = sortState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initSort(sectionId, state.data);
+}
+
+
+// Fill-in Activity - supports multiple instances
+const fillState = {};
+
+function initFill(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  fillState[sectionId] = { score: 0, answered: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.dataset.section = sectionId;
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = data.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}" data-section="${sectionId}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
+    div.innerHTML = `
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
+      <div class="fill-feedback" id="${sectionId}-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
+}
+
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
+  const sectionId = dropdown.dataset.section;
+  const state = fillState[sectionId];
+  if (q.classList.contains('answered')) return;
+
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
+  const fb = document.getElementById(sectionId + '-fb-' + idx);
+
+  q.classList.add('answered');
+  dropdown.disabled = true;
+
+  if (userAnswer === correctAnswer) {
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
+    state.score++;
+  } else {
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
+  }
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetFill(sectionId) {
+  const state = fillState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initFill(sectionId, state.data);
+}
+
+
+// Order/Unjumble Activity - supports multiple instances
+const orderState = {};
+
+function initOrder(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  orderState[sectionId] = { score: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  if (data.isUnjumble) {
+    initUnjumble(sectionId, c, data);
+  } else {
+    initClassicOrder(sectionId, c, data);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(sectionId, container, data) {
+  const state = orderState[sectionId];
+
+  // Create array with original indices, then shuffle
+  const items = [...data.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  // Fisher-Yates shuffle
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+
+  // Create container div for all items
+  const wrapper = document.createElement('div');
+  wrapper.className = 'order-items-wrapper';
+  wrapper.dataset.section = sectionId;
+
+  // Create each sentence as a draggable item
+  items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'order-sentence-card';
+    div.draggable = true;
+    div.dataset.orig = item.origIdx;
+    div.dataset.section = sectionId;
+    div.innerHTML = '<span class="order-card-num">' + (i + 1) + '</span><span class="order-card-text">' + item.text + '</span>';
+    wrapper.appendChild(div);
+  });
+
+  container.appendChild(wrapper);
+
+  // Add buttons
+  const btnDiv = document.createElement('div');
+  btnDiv.className = 'order-buttons';
+  btnDiv.innerHTML = '<button class="btn btn-outline order-check-btn" data-section="' + sectionId + '">Check Order</button>';
+  container.appendChild(btnDiv);
+
+  // Add feedback area
+  const feedback = document.createElement('div');
+  feedback.className = 'order-feedback';
+  feedback.dataset.section = sectionId;
+  container.appendChild(feedback);
+
+  // Initialize drag-and-drop
+  initOrderCardDragDrop(wrapper);
+
+  // Button click handler
+  btnDiv.querySelector('.order-check-btn').onclick = function() { checkOrder(sectionId); };
+}
+
+function initOrderCardDragDrop(wrapper) {
+  let dragItem = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('dragstart', function(e) {
+      dragItem = card;
+      card.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    card.addEventListener('dragend', function() {
+      card.classList.remove('dragging');
+      dragItem = null;
+      updateCardNumbers(wrapper);
+    });
+
+    card.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      if (!dragItem || dragItem === card) return;
+      const rect = card.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        wrapper.insertBefore(dragItem, card);
+      } else {
+        wrapper.insertBefore(dragItem, card.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('touchstart', function(e) {
+      touchItem = card;
+      card.classList.add('dragging');
+      touchClone = card.cloneNode(true);
+      touchClone.style.position = 'fixed';
+      touchClone.style.zIndex = '1000';
+      touchClone.style.pointerEvents = 'none';
+      touchClone.style.opacity = '0.8';
+      touchClone.style.maxWidth = '90vw';
+      document.body.appendChild(touchClone);
+      moveTouchClone(e.touches[0]);
+    });
+
+    card.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (!touchItem) return;
+      moveTouchClone(e.touches[0]);
+      const touch = e.touches[0];
+      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = els.find(function(el) { return el.classList.contains('order-sentence-card') && el !== touchItem; });
+      if (target && target.parentNode === wrapper) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          wrapper.insertBefore(touchItem, target);
+        } else {
+          wrapper.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    card.addEventListener('touchend', function() {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateCardNumbers(wrapper);
+    });
+  });
+
+  function moveTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 100) + 'px';
+      touchClone.style.top = (touch.clientY - 25) + 'px';
+    }
+  }
+}
+
+function updateCardNumbers(wrapper) {
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card, i) {
+    card.querySelector('.order-card-num').textContent = i + 1;
+  });
+}
+
+function initOrderSentenceDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+      // Update numbers after drag
+      updateOrderNumbers(row);
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+
+      if (e.clientY < midY) {
+        row.insertBefore(dragItem, item);
+      } else {
+        row.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('touchstart', (e) => {
+      touchItem = item;
+      item.classList.add('dragging');
+      touchClone = item.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClonePos(e.touches[0], touchClone);
+    });
+
+    item.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClonePos(e.touches[0], touchClone);
+
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = elements.find(el => el.classList.contains('order-sentence-item') && el !== touchItem);
+
+      if (target && target.parentNode === row) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          row.insertBefore(touchItem, target);
+        } else {
+          row.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    item.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateOrderNumbers(row);
+    });
+  });
+
+  function updateTouchClonePos(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 100) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function updateOrderNumbers(row) {
+  row.querySelectorAll('.order-sentence-item').forEach((item, i) => {
+    item.querySelector('.order-num').textContent = i + 1;
+  });
+}
+
+function initDragDrop(container) {
+  const items = container.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder(sectionId) {
+  const state = orderState[sectionId];
+  const data = state.data;
+  // Support multiple class names for order items
+  let items = document.querySelectorAll('.order-sentence-card[data-section="' + sectionId + '"]');
+  if (!items.length) {
+    items = document.querySelectorAll('.order-sentence-item[data-section="' + sectionId + '"]');
+  }
+  if (!items.length) {
+    items = document.querySelectorAll('.order-item[data-section="' + sectionId + '"]');
+  }
+  const currentOrder = Array.from(items).map(function(item) { return parseInt(item.dataset.orig); });
+  const feedback = document.querySelector('.order-feedback[data-section="' + sectionId + '"]');
+
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = data.correctOrder && data.correctOrder.length ? data.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = data.correctOrder && data.correctOrder.length ? data.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    state.score = state.total;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    document.getElementById(sectionId + '-complete').classList.add('show');
+    if (feedback) {
+      feedback.innerHTML = '<span class="correct-text">✓ Perfect order!</span>';
+      feedback.classList.add('show');
+    }
+  } else {
+    if (feedback) {
+      feedback.innerHTML = '<span class="wrong-text">✗ Not quite right. Try again!</span>';
+      feedback.classList.add('show');
+    }
+    setTimeout(function() {
+      items.forEach(function(item) { item.classList.remove('wrong'); });
+      if (feedback) feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetOrder(sectionId) {
+  const state = orderState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initOrder(sectionId, state.data);
+}
+
+
+// Select Activity - supports multiple instances
+const selectState = {};
+
+function initSelect(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  selectState[sectionId] = { score: 0, answered: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  data.items.forEach((item, idx) => {
+    const div = document.createElement('div');
+    div.className = 'select-question';
+    div.dataset.section = sectionId;
+    div.dataset.idx = idx;
+
+    const optionsHtml = item.options.map((opt, oi) =>
+      `<label class="select-option" data-correct="${opt.correct}" data-section="${sectionId}" data-idx="${idx}">
+        <input type="checkbox" class="select-checkbox" data-oi="${oi}">
+        <span class="select-text">${opt.text}</span>
+      </label>`
+    ).join('');
+
+    div.innerHTML = `
+      <div class="select-number">${idx + 1}.</div>
+      <div class="select-content">
+        <p class="select-prompt">${item.question}</p>
+        <div class="select-options">${optionsHtml}</div>
+        <button class="btn btn-sm btn-outline select-check" data-section="${sectionId}" data-idx="${idx}">Check</button>
+        <div class="select-feedback" id="${sectionId}-fb-${idx}"></div>
+      </div>
+    `;
+    c.appendChild(div);
+  });
+
+  // Event delegation for check buttons
+  c.addEventListener('click', (e) => {
+    if (e.target.classList.contains('select-check')) {
+      checkSelectAnswer(e.target.dataset.section, parseInt(e.target.dataset.idx));
+    }
+  });
+}
+
+function checkSelectAnswer(sectionId, idx) {
+  const state = selectState[sectionId];
+  const item = state.data.items[idx];
+  const question = document.querySelector(`.select-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(sectionId + '-fb-' + idx);
+
+  if (question.classList.contains('answered')) return;
+
+  const options = question.querySelectorAll('.select-option');
+  let allCorrect = true;
+
+  options.forEach(opt => {
+    const checkbox = opt.querySelector('.select-checkbox');
+    const isChecked = checkbox.checked;
+    const shouldBeChecked = opt.dataset.correct === 'true';
+
+    if (isChecked === shouldBeChecked) {
+      opt.classList.add(shouldBeChecked ? 'correct' : 'correct-unchecked');
+    } else {
+      opt.classList.add(shouldBeChecked ? 'missed' : 'wrong');
+      allCorrect = false;
+    }
+    checkbox.disabled = true;
+  });
+
+  question.classList.add('answered');
+
+  if (allCorrect) {
+    fb.innerHTML = '<span class="correct-text">✓ Perfect!</span>';
+    state.score++;
+  } else {
+    fb.innerHTML = '<span class="wrong-text">✗ Some answers were incorrect.</span>';
+  }
+  fb.classList.add('show');
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+
+  if (state.answered === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetSelect(sectionId) {
+  const state = selectState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initSelect(sectionId, state.data);
+}
+
+
+// Vocabulary
+function initVocab() {
+  const grid = document.getElementById('vocab-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  vocabData.forEach(v => {
+    const card = document.createElement('div');
+    card.className = 'vocab-card';
+    card.innerHTML = '<div class="uk">' + v.uk + '</div><div class="translit">' + v.translit + '</div><div class="en">' + v.en + '</div>' + (v.note ? '<div class="note">' + v.note + '</div>' : '');
+    grid.appendChild(card);
+  });
+}
+
+  </script>
+</body>
+</html>

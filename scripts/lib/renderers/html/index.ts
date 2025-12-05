@@ -178,8 +178,8 @@ function renderActivitySection(activity: Activity, index: number, nextSection: s
     case 'fill-blank':
     case 'gap-fill':
       return renderFillSection(activity, sectionId, nextSection);
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       return renderOrderSection(activity, sectionId, nextSection);
     case 'select':
       return renderSelectSection(activity, sectionId, nextSection);

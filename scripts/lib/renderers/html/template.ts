@@ -178,8 +178,8 @@ function getActivityLabel(type: string, num: number): string {
     'group-sort': 'Sort',
     'fill-blank': 'Fill',
     'gap-fill': 'Fill',
-    'order': 'Order',
     'unjumble': 'Order',
+    'anagram': 'Spell',
     'select': 'Select',
   };
   const base = labels[type] || type;

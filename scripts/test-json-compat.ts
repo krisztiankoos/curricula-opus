@@ -203,7 +203,7 @@ function validateLesson(lesson: any, result: TestResult) {
 function validateActivities(activities: any[], result: TestResult) {
   if (!activities || !Array.isArray(activities)) return;
 
-  const validTypes = ['quiz', 'match-up', 'group-sort', 'fill-blank', 'true-false', 'translate', 'order', 'gap-fill'];
+  const validTypes = ['quiz', 'match-up', 'group-sort', 'fill-blank', 'true-false', 'translate', 'unjumble', 'anagram', 'gap-fill', 'select'];
 
   for (let i = 0; i < activities.length; i++) {
     const act = activities[i];

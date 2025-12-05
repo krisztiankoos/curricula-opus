@@ -1,8 +1,179 @@
 # A1 Curriculum Plan: Ukrainian for English Speakers
 
 **Status:** ✅ COMPLETE
-**Modules:** 1-30
-**Vocabulary:** 456 words (actual)
+**Modules:** 01-30 (30 modules)
+**Vocabulary Target:** ~750 words (level), ~750 cumulative
+
+---
+
+## Ukrainian State Standard 2024 Alignment
+
+> **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
+> **Document:** `docs/l2-uk-en/UKRAINIAN-STATE-STANDARD-2024.txt`
+
+The A1 level (Початковий рівень) per the official Ukrainian State Standard 2024 requires:
+
+### Grammar Requirements (Каталог В)
+
+#### Cases (Відмінки)
+
+| Case | Ukrainian | Allowed at A1 | Key Patterns |
+|------|-----------|---------------|--------------|
+| Nominative | Називний | ✅ From M01 | Subject, "Це X", identity |
+| Accusative | Знахідний | ✅ From M11 | Objects, direction (в/у/на + Acc), time (days) |
+| Locative | Місцевий | ✅ From M13 | Location (в/у/на + Loc), months |
+| Vocative | Кличний | ✅ From M02 | Addressing: Остапе, Олено, Галю |
+| Genitive | Родовий | ✅ From M16 | Absence (немає), possession (у мене) |
+| Dative | Давальний | ❌ A2 topic | — |
+| Instrumental | Орудний | ❌ A2 topic | — |
+
+**Reference:** State Standard §4.2.3 (lines 672-700)
+
+#### Noun Patterns (Іменник)
+
+**Accusative endings (§4.2.3.2):**
+- M inanimate: no change (бачу стіл)
+- M animate: -а (бачу студента) ← = genitive
+- F -а → -у (бачу книгу)
+- F -я → -ю (бачу землю)
+- N: no change (бачу місто)
+
+**Locative endings (§4.2.3.3):**
+- M: -і/-ові/-у (на столі, на батькові, у парку)
+- F: -і (у книзі, на вулиці)
+- N: -і (у місті, на морі)
+
+**Genitive endings (inferred from examples):**
+- M: -а/-у (немає столу, немає друга)
+- F: -и/-і (немає книги, немає води)
+- N: -а (немає вікна)
+
+#### Adjectives (Прикметник)
+
+**✅ ALLOWED at A1** (§4.2.1.2, lines 633-650):
+
+| Form | Hard -ий | Soft -ій |
+|------|----------|----------|
+| M nom | -ий (великий) | -ій (літній) |
+| F nom | -а (велика) | -я (літня) |
+| N nom | -е (велике) | -є (літнє) |
+| Pl nom | -і (великі) | -і (літні) |
+
+**Accusative/Locative forms also taught at A1.**
+
+**❌ NOT at A1:**
+- Comparative forms (більший, менший)
+- Superlative forms (найбільший)
+- Short-form adjectives
+
+#### Pronouns (Займенник)
+
+**Personal pronouns (§4.2.1.4):**
+- я (мене, мені), ти (тебе, тобі), ми (нас, нам), ви (вас, вам)
+- він, вона, воно, вони (nominative only at A1)
+
+**Possessive pronouns (§4.2.2, lines 661-667):**
+
+| | M | F | N | Pl |
+|---|-----|-----|-----|------|
+| my | мій | моя | моє | мої |
+| your (sg) | твій | твоя | твоє | твої |
+| his | його | його | його | його |
+| her | її | її | її | її |
+| our | наш | наша | наше | наші |
+| your (pl) | ваш | ваша | ваше | ваші |
+| their | їхній | їхня | їхнє | їхні |
+
+**❌ NOT at A1:**
+- **свій** (reflexive possessive) - A2/B1 topic
+- Declined forms of possessives (мого, твоєї, etc.)
+
+**Demonstrative pronouns:**
+- цей, ця, це, ці (this)
+- той, та, те, ті (that)
+
+#### Verbs (Дієслово)
+
+**Present tense (§4.2.4.1, lines 704-709):**
+- Class I (-ати): читаю, читаєш, читає, читаємо, читаєте, читають
+- Class II (-ити): говорю, говориш, говорить, говоримо, говорите, говорять
+- Irregulars: їсти, пити, могти, іти, їхати
+
+**Past tense (§4.2.4.1, lines 713-714):**
+- L-participle: читав (m), читала (f), читало (n), читали (pl)
+
+**Future tense (§4.2.4.1, lines 710-719):**
+- Compound (imperfective): буду + infinitive (буду читати)
+- Simple (perfective): **LIMITED** - only зможу, скажете, прочитають explicitly listed
+
+**Imperative (§4.2.4.2, lines 721-725):**
+- ✅ **ALLOWED at A1** - 2nd person only
+- Specific verbs: читай/читайте, скажи/скажіть, дай/дайте, пиши/пишіть, сідай/сідайте
+- Present as **memorized phrases**, not conjugatable verbs
+
+#### Verbal Aspect Policy
+
+| Aspect | Usage at A1 | Notes |
+|--------|-------------|-------|
+| Imperfective | ✅ Default | All present tense, compound future |
+| Perfective | ⚠️ Limited | Only in imperative phrases, simple future of common verbs |
+
+**Rule:** At A1, do NOT teach aspect as a grammatical concept. Use perfective verbs only as:
+1. Fixed imperative phrases (Скажіть, будь ласка)
+2. Simple future of very common verbs (зможу, скажу, прочитаю)
+
+**Avoid:**
+- Aspect pairs (робити/зробити)
+- Aspect choice explanations
+- Perfective verbs in vocabulary tables marked as "pf"
+
+#### Syntax (Синтаксис)
+
+**Simple sentences (§4.3.1, lines 729-739):**
+- Declarative: Ми були у Львові.
+- Yes/no questions: Чи студент відповідає?
+- Wh-questions: Де ви були вчора? Хто вам це сказав?
+- Imperative requests: Дайте, будь ласка, два квитки.
+- Negation: Він не чекає.
+
+**Compound sentences (§4.3.2, lines 741-747):**
+- Coordinating: і/й, але
+- Subordinating: тому що, бо (cause)
+
+**❌ NOT at A1:**
+- Complex subordinate clauses
+- Relative clauses (який, що as relative pronoun)
+- Conditional constructions
+
+### Thematic Requirements (Каталог Б)
+
+- Personal info (особиста інформація): name, age, nationality
+- Family (сім'я): members, relationships
+- Home (дім): rooms, basic furniture
+- Daily life (побут): routines, time
+- Food (їжа): basic food, drinks, meals
+- Shopping (купівля): numbers, prices, basic transactions
+- Directions (напрямки): basic location, simple directions
+
+### Communicative Competence
+
+- Understand and use familiar everyday expressions
+- Introduce oneself and others
+- Ask and answer questions about personal details
+- Interact in a simple way if the other person speaks slowly
+
+### Module Scope Checklist
+
+Before writing/reviewing any A1 module, verify:
+
+| Check | Constraint |
+|-------|------------|
+| Cases | Only Nom, Acc, Loc, Gen, Voc |
+| Adjectives | Only nominative/accusative/locative forms, no comparatives |
+| Possessives | No свій, no declined forms |
+| Verbs | Imperative = phrases only, aspect not explained |
+| Perfective | Only in imperatives or limited simple future |
+| Syntax | Simple/compound only, no complex subordination |
 
 ---
 
@@ -916,155 +1087,7 @@ Before generating any module:
 
 ---
 
-## Appendix: Grammar Constraints (Ukrainian State Standard 2024)
+## Changelog
 
-> **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
-> **Document:** `docs/l2-uk-en/UKRAINIAN-STATE-STANDARD-2024.txt`
-
-This appendix defines **authoritative grammar constraints** for A1 modules. Any grammar not listed here is OUT OF SCOPE for A1.
-
-### A1 Cases (Відмінки)
-
-| Case | Ukrainian | Allowed at A1 | Key Patterns |
-|------|-----------|---------------|--------------|
-| Nominative | Називний | ✅ From M01 | Subject, "Це X", identity |
-| Accusative | Знахідний | ✅ From M11 | Objects, direction (в/у/на + Acc), time (days) |
-| Locative | Місцевий | ✅ From M13 | Location (в/у/на + Loc), months |
-| Vocative | Кличний | ✅ From M02 | Addressing: Остапе, Олено, Галю |
-| Genitive | Родовий | ✅ From M16 | Absence (немає), possession (у мене) |
-| Dative | Давальний | ❌ A2 topic | — |
-| Instrumental | Орудний | ❌ A2 topic | — |
-
-**Reference:** State Standard §4.2.3 (lines 672-700)
-
-### A1 Noun Patterns (Іменник)
-
-**Accusative endings (§4.2.3.2):**
-- M inanimate: no change (бачу стіл)
-- M animate: -а (бачу студента) ← = genitive
-- F -а → -у (бачу книгу)
-- F -я → -ю (бачу землю)
-- N: no change (бачу місто)
-
-**Locative endings (§4.2.3.3):**
-- M: -і/-ові/-у (на столі, на батькові, у парку)
-- F: -і (у книзі, на вулиці)
-- N: -і (у місті, на морі)
-
-**Genitive endings (inferred from examples):**
-- M: -а/-у (немає столу, немає друга)
-- F: -и/-і (немає книги, немає води)
-- N: -а (немає вікна)
-
-### A1 Adjectives (Прикметник)
-
-**✅ ALLOWED at A1** (§4.2.1.2, lines 633-650):
-
-| Form | Hard -ий | Soft -ій |
-|------|----------|----------|
-| M nom | -ий (великий) | -ій (літній) |
-| F nom | -а (велика) | -я (літня) |
-| N nom | -е (велике) | -є (літнє) |
-| Pl nom | -і (великі) | -і (літні) |
-
-**Accusative/Locative forms also taught at A1.**
-
-**❌ NOT at A1:**
-- Comparative forms (більший, менший)
-- Superlative forms (найбільший)
-- Short-form adjectives
-
-### A1 Pronouns (Займенник)
-
-**Personal pronouns (§4.2.1.4):**
-- я (мене, мені), ти (тебе, тобі), ми (нас, нам), ви (вас, вам)
-- він, вона, воно, вони (nominative only at A1)
-
-**Possessive pronouns (§4.2.2, lines 661-667):**
-| | M | F | N | Pl |
-|---|-----|-----|-----|------|
-| my | мій | моя | моє | мої |
-| your (sg) | твій | твоя | твоє | твої |
-| his | його | його | його | його |
-| her | її | її | її | її |
-| our | наш | наша | наше | наші |
-| your (pl) | ваш | ваша | ваше | ваші |
-| their | їхній | їхня | їхнє | їхні |
-
-**❌ NOT at A1:**
-- **свій** (reflexive possessive) - A2/B1 topic
-- Declined forms of possessives (мого, твоєї, etc.)
-
-**Demonstrative pronouns:**
-- цей, ця, це, ці (this)
-- той, та, те, ті (that)
-
-### A1 Verbs (Дієслово)
-
-**Present tense (§4.2.4.1, lines 704-709):**
-- Class I (-ати): читаю, читаєш, читає, читаємо, читаєте, читають
-- Class II (-ити): говорю, говориш, говорить, говоримо, говорите, говорять
-- Irregulars: їсти, пити, могти, іти, їхати
-
-**Past tense (§4.2.4.1, lines 713-714):**
-- L-participle: читав (m), читала (f), читало (n), читали (pl)
-
-**Future tense (§4.2.4.1, lines 710-719):**
-- Compound (imperfective): буду + infinitive (буду читати)
-- Simple (perfective): **LIMITED** - only зможу, скажете, прочитають explicitly listed
-
-**Imperative (§4.2.4.2, lines 721-725):**
-- ✅ **ALLOWED at A1** - 2nd person only
-- Specific verbs: читай/читайте, скажи/скажіть, дай/дайте, пиши/пишіть, сідай/сідайте
-- Present as **memorized phrases**, not conjugatable verbs
-
-### A1 Verbal Aspect Policy
-
-Based on State Standard §4.2.4.1:
-
-| Aspect | Usage at A1 | Notes |
-|--------|-------------|-------|
-| Imperfective | ✅ Default | All present tense, compound future |
-| Perfective | ⚠️ Limited | Only in imperative phrases, simple future of common verbs |
-
-**Rule:** At A1, do NOT teach aspect as a grammatical concept. Use perfective verbs only as:
-1. Fixed imperative phrases (Скажіть, будь ласка)
-2. Simple future of very common verbs (зможу, скажу, прочитаю)
-
-**Avoid:**
-- Aspect pairs (робити/зробити)
-- Aspect choice explanations
-- Perfective verbs in vocabulary tables marked as "pf"
-
-### A1 Syntax (Синтаксис)
-
-**Simple sentences (§4.3.1, lines 729-739):**
-- Declarative: Ми були у Львові.
-- Yes/no questions: Чи студент відповідає?
-- Wh-questions: Де ви були вчора? Хто вам це сказав?
-- Imperative requests: Дайте, будь ласка, два квитки.
-- Negation: Він не чекає.
-
-**Compound sentences (§4.3.2, lines 741-747):**
-- Coordinating: і/й, але
-- Subordinating: тому що, бо (cause)
-
-**❌ NOT at A1:**
-- Complex subordinate clauses
-- Relative clauses (який, що as relative pronoun)
-- Conditional constructions
-
----
-
-### Module Scope Checklist (Based on State Standard)
-
-Before writing/reviewing any A1 module, verify:
-
-| Check | Constraint |
-|-------|------------|
-| Cases | Only Nom, Acc, Loc, Gen, Voc |
-| Adjectives | Only nominative/accusative/locative forms, no comparatives |
-| Possessives | No свій, no declined forms |
-| Verbs | Imperative = phrases only, aspect not explained |
-| Perfective | Only in imperatives or limited simple future |
-| Syntax | Simple/compound only, no complex subordination |
+- **2025-12-05:** Moved State Standard alignment to beginning, upgraded with detailed module specifications
+- **Previous:** Basic structure only

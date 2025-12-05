@@ -14,7 +14,7 @@ export type ActivityType =
   | 'true-false'
   | 'translate'
   | 'unjumble'
-  | 'order'
+  | 'anagram'
   | 'gap-fill'
   | 'select';
 
@@ -217,12 +217,17 @@ export interface TranslateItem {
   explanation?: string;
 }
 
-// Order (sequencing)
-export interface OrderContent extends ActivityContent {
-  type: 'order';
-  items: string[];
-  correctOrder: number[];
-  explanation?: string;
+// Anagram (reorder letters to form a word)
+export interface AnagramContent extends ActivityContent {
+  type: 'anagram';
+  items: AnagramItem[];
+}
+
+export interface AnagramItem {
+  letters: string[];      // scrambled letters: ['а', 'м', 'м', 'а']
+  answer: string;         // correct word: 'мама'
+  translation?: string;   // English: 'mom'
+  hint?: string;          // optional hint
 }
 
 // Gap-Fill (text passage with multiple blanks)

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 14: Possessive Pronouns | Ukrainian A1</title>
+  <title>Module 14: Mine and Yours | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,17 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 14: Possessive Pronouns</h1>
+    <h1>Module 14: Mine and Yours</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
-      <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
-      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
-      <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Fill</button>
-      <button class="nav-tab" data-section="activity-7">8. Match</button>
+      <button class="nav-tab" data-section="activity-0">1. Quiz</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Sort</button>
+      <button class="nav-tab" data-section="activity-3">4. T/F</button>
+      <button class="nav-tab" data-section="activity-4">5. Fill</button>
+      <button class="nav-tab" data-section="activity-5">6. Match</button>
+      <button class="nav-tab" data-section="activity-6">7. Spell</button>
+      <button class="nav-tab" data-section="activity-7">8. Fill</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,34 +497,94 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Possessive Pronouns</h2>
-        <p style="color:var(--text-muted)">My, Your, Our</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Mine and Yours</h2>
+        <p style="color:var(--text-muted)">Possessive Pronouns</p>
       </div>
       
-    <div class="card section-intro">
-      <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="whoseisit">Whose Is It?</h3>
-<p>You learned demonstratives (цей, ця, це) in Module 05. Possessive pronouns work the same way - they match the noun's gender and number!</p>
-<ul>
-<li><strong>мій</strong> стіл (my table - masculine)</li>
-<li><strong>моя</strong> книга (my book - feminine)</li>
-<li><strong>моє</strong> вікно (my window - neuter)</li>
-<li><strong>мої</strong> друзі (my friends - plural)</li>
-</ul>
-<p>Same root "мо-", different endings for each gender.</p>
+    <div class="card section-content">
+      <h3>Warm Up</h3>
+      <div class="md-content"><p>Whose book is this? Чия це книга? In Ukrainian, possessive pronouns must <strong>agree with the noun they describe</strong>, not with the possessor. Let's master this essential pattern!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Lesson</h3>
+      <div class="md-content"><h2 id="possessivepronounsoverview">Possessive Pronouns Overview</h2>
+<p>Ukrainian possessive pronouns change form based on the <strong>gender and number of the noun</strong> they describe—not the gender of the owner!</p>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Masculine</th>
+<th>Feminine</th>
+<th>Neuter</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my</td>
+<td>мій</td>
+<td>моя</td>
+<td>моє</td>
+<td>мої</td>
+</tr>
+<tr>
+<td>your (sg)</td>
+<td>твій</td>
+<td>твоя</td>
+<td>твоє</td>
+<td>твої</td>
+</tr>
+<tr>
+<td>his</td>
+<td>його</td>
+<td>його</td>
+<td>його</td>
+<td>його</td>
+</tr>
+<tr>
+<td>her</td>
+<td>її</td>
+<td>її</td>
+<td>її</td>
+<td>її</td>
+</tr>
+<tr>
+<td>our</td>
+<td>наш</td>
+<td>наша</td>
+<td>наше</td>
+<td>наші</td>
+</tr>
+<tr>
+<td>your (pl/formal)</td>
+<td>ваш</td>
+<td>ваша</td>
+<td>ваше</td>
+<td>ваші</td>
+</tr>
+<tr>
+<td>their</td>
+<td>їхній</td>
+<td>їхня</td>
+<td>їхнє</td>
+<td>їхні</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian possessives come from the genitive (possession) forms of personal pronouns. "Мій" literally evolved from something like "of me." This is why possessives in all Slavic languages look similar - they share this ancient origin!</p>
+  <p>💡 <strong>Did You Know?</strong><br />
+  "Його" (his) and "її" (her) never change form—they're invariable! This makes them the easiest possessives to use.</p>
 </blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="firstsecondpersonpossessives">First &amp; Second Person Possessives</h3>
-<p><strong>Мій (my) - matches noun gender:</strong></p>
+<hr />
+<h2 id="firstpersonmy">First Person: Мій (My)</h2>
+<p><strong>Мій</strong> changes to match the gender of what's possessed:</p>
 <table>
 <thead>
 <tr>
 <th>Gender</th>
-<th>Form</th>
+<th>Possessive</th>
 <th>Example</th>
 </tr>
 </thead>
@@ -506,17 +592,17 @@ footer {
 <tr>
 <td>Masculine</td>
 <td>мій</td>
-<td>мій брат (my brother)</td>
+<td>мій телефон (my phone)</td>
 </tr>
 <tr>
 <td>Feminine</td>
 <td>моя</td>
-<td>моя сестра (my sister)</td>
+<td>моя книга (my book)</td>
 </tr>
 <tr>
 <td>Neuter</td>
 <td>моє</td>
-<td>моє ім'я (my name)</td>
+<td>моє вікно (my window)</td>
 </tr>
 <tr>
 <td>Plural</td>
@@ -525,12 +611,21 @@ footer {
 </tr>
 </tbody>
 </table>
-<p><strong>Твій (your - informal) - same pattern:</strong></p>
+<p><strong>Examples in sentences:</strong></p>
+<ul>
+<li>Це <strong>мій</strong> будинок. (This is my house.)</li>
+<li>Де <strong>моя</strong> сумка? (Where is my bag?)</li>
+<li><strong>Моє</strong> місто красиве. (My city is beautiful.)</li>
+<li><strong>Мої</strong> батьки живуть у Києві. (My parents live in Kyiv.)</li>
+</ul>
+<hr />
+<h2 id="secondpersonsingularyourinformal">Second Person Singular: Твій (Your - informal)</h2>
+<p>Used with friends, family, peers:</p>
 <table>
 <thead>
 <tr>
 <th>Gender</th>
-<th>Form</th>
+<th>Possessive</th>
 <th>Example</th>
 </tr>
 </thead>
@@ -538,56 +633,186 @@ footer {
 <tr>
 <td>Masculine</td>
 <td>твій</td>
-<td>твій телефон (your phone)</td>
+<td>твій друг (your friend)</td>
 </tr>
 <tr>
 <td>Feminine</td>
 <td>твоя</td>
-<td>твоя книга (your book)</td>
+<td>твоя машина (your car)</td>
 </tr>
 <tr>
 <td>Neuter</td>
 <td>твоє</td>
-<td>твоє місто (your city)</td>
+<td>твоє ім'я (your name)</td>
 </tr>
 <tr>
 <td>Plural</td>
 <td>твої</td>
-<td>твої речі (your things)</td>
+<td>твої книги (your books)</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: The Pattern</strong></p>
-  <p>All possessives follow the same endings:</p>
-  <ul>
-  <li>Masculine: -ій (мій, твій, наш)</li>
-  <li>Feminine: -я (моя, твоя, наша)</li>
-  <li>Neuter: -є (моє, твоє, наше)</li>
-  <li>Plural: -і (мої, твої, наші)</li>
-  </ul>
+  <p>🌍 <strong>Real World</strong><br />
+  Use <strong>твій</strong> with people you call "ти"—friends, family, children, classmates. It implies familiarity and closeness.</p>
 </blockquote>
-<h3 id="thirdpersonpossessives">Third Person Possessives</h3>
-<p><strong>Його (his/its) - NEVER changes!</strong></p>
-<ul>
-<li>його брат (his brother)</li>
-<li>його сестра (his sister)</li>
-<li>його ім'я (his name)</li>
-<li>його друзі (his friends)</li>
-</ul>
-<p><strong>Її (her) - NEVER changes!</strong></p>
-<ul>
-<li>її брат (her brother)</li>
-<li>її книга (her book)</li>
-<li>її місто (her city)</li>
-<li>її друзі (her friends)</li>
-</ul>
-<p><strong>Їхній (their) - changes like мій:</strong></p>
+<hr />
+<h2 id="thirdpersonhisandher">Third Person: Його (His) and Її (Her)</h2>
+<p>These are <strong>invariable</strong>—they never change form!</p>
+<h3 id="his">Його (His)</h3>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>його телефон</td>
+<td>his phone</td>
+</tr>
+<tr>
+<td>його сумка</td>
+<td>his bag</td>
+</tr>
+<tr>
+<td>його місто</td>
+<td>his city</td>
+</tr>
+<tr>
+<td>його батьки</td>
+<td>his parents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="her">Її (Her)</h3>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>її телефон</td>
+<td>her phone</td>
+</tr>
+<tr>
+<td>її сумка</td>
+<td>her bag</td>
+</tr>
+<tr>
+<td>її місто</td>
+<td>her city</td>
+</tr>
+<tr>
+<td>її батьки</td>
+<td>her parents</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🎯 <strong>Fun Fact</strong><br />
+  "Його" and "її" are actually genitive forms of the personal pronouns "він" and "вона." They literally mean "of him" and "of her"—which is why they don't change!</p>
+</blockquote>
+<hr />
+<h2 id="firstpersonpluralour">First Person Plural: Наш (Our)</h2>
 <table>
 <thead>
 <tr>
 <th>Gender</th>
-<th>Form</th>
+<th>Possessive</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>наш</td>
+<td>наш дім (our home)</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>наша</td>
+<td>наша країна (our country)</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>наше</td>
+<td>наше місто (our city)</td>
+</tr>
+<tr>
+<td>Plural</td>
+<td>наші</td>
+<td>наші друзі (our friends)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Наш</strong> будинок великий. (Our house is big.)</li>
+<li><strong>Наша</strong> вчителька добра. (Our teacher is kind.)</li>
+<li><strong>Наше</strong> завдання складне. (Our task is difficult.)</li>
+<li><strong>Наші</strong> сусіди українці. (Our neighbors are Ukrainians.)</li>
+</ul>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong><br />
+  "Наша пісня" (Our Song) is a common phrase for national anthems and beloved folk songs. Ukraine's national anthem starts with "Ще не вмерла України…" (Ukraine has not yet perished…)—a song that has united Ukrainians for over 150 years.</p>
+</blockquote>
+<hr />
+<h2 id="secondpersonpluralformalyour">Second Person Plural/Formal: Ваш (Your)</h2>
+<p>Used for plural "you" OR formal singular (like French "vous"):</p>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Possessive</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>ваш</td>
+<td>ваш паспорт (your passport)</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>ваша</td>
+<td>ваша адреса (your address)</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>ваше</td>
+<td>ваше ім'я (your name)</td>
+</tr>
+<tr>
+<td>Plural</td>
+<td>ваші</td>
+<td>ваші документи (your documents)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Formal usage:</strong></p>
+<ul>
+<li><strong>Ваш</strong> паспорт, будь ласка. (Your passport, please.)</li>
+<li>Як <strong>ваше</strong> ім'я? (What is your name? - formal)</li>
+<li><strong>Ваша</strong> черга. (Your turn.)</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong><br />
+  In official settings like banks, offices, and with strangers, always use "ваш" instead of "твій." It's a sign of respect!</p>
+</blockquote>
+<hr />
+<h2 id="thirdpersonpluraltheir">Third Person Plural: Їхній (Their)</h2>
+<p>The only plural possessive that changes:</p>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Possessive</th>
 <th>Example</th>
 </tr>
 </thead>
@@ -595,7 +820,7 @@ footer {
 <tr>
 <td>Masculine</td>
 <td>їхній</td>
-<td>їхній дім (their house)</td>
+<td>їхній дім (their home)</td>
 </tr>
 <tr>
 <td>Feminine</td>
@@ -614,289 +839,325 @@ footer {
 </tr>
 </tbody>
 </table>
-<blockquote>
-  <p>🎯 <strong>Fun Fact: The Unchanging Ones</strong></p>
-  <p>Why don't його and її change? They're actually genitive forms of він and вона, frozen as possessives:</p>
-  <ul>
-  <li>"його книга" literally = "the book of him"</li>
-  <li>"її дім" literally = "the house of her"</li>
-  </ul>
-  <p>This frozen genitive construction is why they never change for gender!</p>
-</blockquote>
-<h3 id="pluralpossessives">Plural Possessives</h3>
-<p><strong>Наш (our):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Form</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>наш</td>
-<td>наш клас (our class)</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>наша</td>
-<td>наша родина (our family)</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>наше</td>
-<td>наше місто (our city)</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>наші</td>
-<td>наші друзі (our friends)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Ваш (your - formal/plural):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Form</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>ваш</td>
-<td>ваш паспорт (your passport)</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>ваша</td>
-<td>ваша валіза (your suitcase)</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>ваше</td>
-<td>ваше місце (your seat)</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>ваші</td>
-<td>ваші документи (your documents)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>📜 <strong>History Bite: Наш vs Ваш</strong></p>
-  <p>"Наш" and "ваш" have the same ancient root as English "us" and Latin "nos." These pronouns have been remarkably stable for thousands of years across Indo-European languages. When you say "наш," you're using a word that Bronze Age speakers would have recognized!</p>
-</blockquote>
-<h3 id="previewreflexivepossessive">Preview: Свій (Reflexive Possessive)</h3>
-<p>Ukrainian has a special possessive <strong>свій</strong> meaning "one's own" - it refers back to the subject:</p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Я читаю <strong>свою</strong> книгу. (I read my [own] book.)</li>
-<li>Він любить <strong>свою</strong> роботу. (He loves his [own] job.)</li>
+<li><strong>Їхній</strong> кіт сірий. (Their cat is gray.)</li>
+<li><strong>Їхня</strong> квартира велика. (Their apartment is big.)</li>
+<li><strong>Їхнє</strong> місто далеко. (Their city is far.)</li>
+<li><strong>Їхні</strong> друзі приїхали. (Their friends arrived.)</li>
 </ul>
-<p><strong>Свій changes like мій:</strong></p>
-<ul>
-<li>свій, своя, своє, свої</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Note: Advanced Topic</strong></p>
-  <p>Свій is a useful but subtle concept. For now, just recognize it when you see it. Compare:</p>
-  <ul>
-  <li>Він взяв <strong>свій</strong> телефон. = He took his own phone.</li>
-  <li>Він взяв <strong>його</strong> телефон. = He took his (someone else's) phone.</li>
-  </ul>
-  <p>You'll practice this more at A2 level!</p>
-  <p>🎭 <strong>Culture Corner: Formal vs Informal</strong></p>
-  <p>In Ukrainian society:</p>
-  <ul>
-  <li>Use <strong>твій</strong> with friends, family, children, peers</li>
-  <li>Use <strong>ваш</strong> with strangers, elders, in professional settings</li>
-  <li>Addressing someone with ти/твій when ви/ваш is expected is considered rude!</li>
-  </ul>
-  <p>When in doubt, use ви/ваш - it's always safe.</p>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="matchpossessivetonoun">Match Possessive to Noun</h3>
-<p>Choose the correct form:</p>
-<ol>
-<li><p>___ брат (мій/моя/моє)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">мій</div></div>
-<ol start="2">
-<li><p>___ книга (твій/твоя/твоє)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">твоя</div></div>
-<ol start="3">
-<li><p>___ місто (наш/наша/наше)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">наше</div></div>
-<ol start="4">
-<li><p>___ друзі (ваш/ваша/ваші)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">ваші</div></div>
-<h3 id="completewithpossessives">Complete with Possessives</h3>
-<ol>
-<li><p>Це ___ (my) телефон.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">мій</div></div>
-<ol start="2">
-<li><p>Де ___ (your-informal) книга?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">твоя</div></div>
-<ol start="3">
-<li><p>___ (Our) дім тут.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Наш</div></div>
-<ol start="4">
-<li><p>___ (Her) брат студент.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Її</div></div>
-<ol start="5">
-<li><p>___ (Their) машина там.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Їхня</div></div>
-<blockquote>
-  <p>🌍 <strong>Real World: Talking About Belongings</strong></p>
-  <ul>
-  <li><strong>Чий це телефон?</strong> - Whose phone is this?</li>
-  <li><strong>Це мій.</strong> - It's mine.</li>
-  <li><strong>Це твоя сумка?</strong> - Is this your bag?</li>
-  <li><strong>Ні, це її сумка.</strong> - No, it's her bag.</li>
-  <li><strong>Де ваш паспорт?</strong> - Where is your passport?</li>
-  </ul>
-</blockquote>
-<h2 id="production">production</h2>
-<h3 id="talkaboutyourthings">Talk About Your Things</h3>
-<p>Describe using possessives:</p>
-<ol>
-<li><p>My phone is on the table.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Мій телефон на столі.</div></div>
-<ol start="2">
-<li><p>Her book is here.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">Її книга тут.</div></div>
-<ol start="3">
-<li><p>Our city is there.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">Наше місто там.</div></div>
-<ol start="4">
-<li><p>Their house is here.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Їхній дім тут.</div></div>
 <hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Possessive Summary</h3>
-      <div class="md-content"><h2 id="fullpossessivetable">Full Possessive Table</h2>
+<h2 id="summarytable">Summary Table</h2>
 <table>
 <thead>
 <tr>
 <th>Person</th>
-<th>Masculine</th>
-<th>Feminine</th>
-<th>Neuter</th>
-<th>Plural</th>
+<th>M</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>я</td>
+<td>my</td>
 <td>мій</td>
 <td>моя</td>
 <td>моє</td>
 <td>мої</td>
 </tr>
 <tr>
-<td>ти</td>
+<td>your (sg)</td>
 <td>твій</td>
 <td>твоя</td>
 <td>твоє</td>
 <td>твої</td>
 </tr>
 <tr>
-<td>він/воно</td>
+<td>his</td>
 <td>його</td>
 <td>його</td>
 <td>його</td>
 <td>його</td>
 </tr>
 <tr>
-<td>вона</td>
+<td>her</td>
 <td>її</td>
 <td>її</td>
 <td>її</td>
 <td>її</td>
 </tr>
 <tr>
-<td>ми</td>
+<td>our</td>
 <td>наш</td>
 <td>наша</td>
 <td>наше</td>
 <td>наші</td>
 </tr>
 <tr>
-<td>ви</td>
+<td>your (pl)</td>
 <td>ваш</td>
 <td>ваша</td>
 <td>ваше</td>
 <td>ваші</td>
 </tr>
 <tr>
-<td>вони</td>
+<td>their</td>
 <td>їхній</td>
 <td>їхня</td>
 <td>їхнє</td>
 <td>їхні</td>
 </tr>
+</tbody>
+</table>
+<hr />
+<h2 id="whose">Whose? — Чий?</h2>
+<p>The question word "whose" also changes for gender:</p>
+<table>
+<thead>
 <tr>
-<td>reflexive</td>
-<td>свій</td>
-<td>своя</td>
-<td>своє</td>
-<td>свої</td>
+<th>Gender</th>
+<th>Question</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>чий</td>
+<td>Чий це телефон? (Whose phone is this?)</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>чия</td>
+<td>Чия це сумка? (Whose bag is this?)</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>чиє</td>
+<td>Чиє це місто? (Whose city is this?)</td>
+</tr>
+<tr>
+<td>Plural</td>
+<td>чиї</td>
+<td>Чиї це книги? (Whose books are these?)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="keyrules">Key Rules</h2>
+<p><strong>Dialogues:</strong></p>
+<ul>
+<li>Чий це телефон? — Це мій телефон.</li>
+<li>Чия це машина? — Це її машина.</li>
+<li>Чиї це діти? — Це наші діти.</li>
+</ul>
+<hr />
+<h2 id="commonphrases">Common Phrases</h2>
+<h3 id="askingaboutownership">Asking About Ownership</h3>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Це твоє?</td>
+<td>Is this yours?</td>
+</tr>
+<tr>
+<td>Це моє.</td>
+<td>This is mine.</td>
+</tr>
+<tr>
+<td>Це не моє.</td>
+<td>This isn't mine.</td>
+</tr>
+<tr>
+<td>Чиє це?</td>
+<td>Whose is this?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="describingpossessions">Describing Possessions</h3>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Це мій телефон.</td>
+<td>This is my phone.</td>
+</tr>
+<tr>
+<td>Де твоя сумка?</td>
+<td>Where is your bag?</td>
+</tr>
+<tr>
+<td>Його машина нова.</td>
+<td>His car is new.</td>
+</tr>
+<tr>
+<td>Наша квартира маленька.</td>
+<td>Our apartment is small.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="familycontext">Family Context</h3>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>мій тато</td>
+<td>my dad</td>
+</tr>
+<tr>
+<td>моя мама</td>
+<td>my mom</td>
+</tr>
+<tr>
+<td>мої батьки</td>
+<td>my parents</td>
+</tr>
+<tr>
+<td>твій брат</td>
+<td>your brother</td>
+</tr>
+<tr>
+<td>її сестра</td>
+<td>her sister</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🌍 <strong>Real World</strong><br />
+  At Ukrainian customs or hotels, you'll hear: "Ваш паспорт, будь ласка" and "Ваші документи." Using formal possessives is standard in professional settings.</p>
+</blockquote>
+<hr />
+<h2 id="additionalvocabulary">Additional Vocabulary</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>річ</td>
+<td>thing</td>
+<td>Це моя річ. (This is my thing.)</td>
+</tr>
+<tr>
+<td>власний</td>
+<td>own</td>
+<td>Це мій власний будинок. (This is my own house.)</td>
+</tr>
+<tr>
+<td>чужий</td>
+<td>someone else's</td>
+<td>Це чужа сумка. (This is someone else's bag.)</td>
+</tr>
+<tr>
+<td>разом</td>
+<td>together</td>
+<td>Ми разом. (We're together.)</td>
+</tr>
+<tr>
+<td>окремо</td>
+<td>separately</td>
+<td>Вони живуть окремо. (They live separately.)</td>
+</tr>
+<tr>
+<td>спільний</td>
+<td>shared</td>
+<td>Це наш спільний проєкт. (This is our shared project.)</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-practice">
+      <h3>Practice</h3>
+      <div class="md-content"><h2 id="exercise1matchpossessivetonoun">Exercise 1: Match Possessive to Noun</h2>
+<p>Choose the correct form:</p>
 <ol>
-<li><strong>Його, її</strong> - never change</li>
-<li><strong>All others</strong> - match gender/number of the noun they describe</li>
-<li><strong>Свій</strong> - use when possessive refers back to subject</li>
+<li>___ телефон (мій/моя/моє)</li>
+<li>___ книга (твій/твоя/твоє)</li>
+<li>___ місто (наш/наша/наше)</li>
+<li>___ друзі (ваш/ваша/ваші)</li>
+<li>___ машина (їхній/їхня/їхнє)</li>
 </ol>
+<h2 id="exercise2translate">Exercise 2: Translate</h2>
+<ol>
+<li>my house → <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>your (sg) book → <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>his phone → <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>her bag → <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>our city → <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+</ol>
+<h2 id="exercise3answer">Exercise 3: Answer "Чий?"</h2>
+<ol>
+<li>Чий це телефон? (я) → Це <strong><em><em></em></strong><strong><em></em></em></strong>_ телефон.</li>
+<li>Чия це книга? (вона) → Це <strong><em><em></em></strong><strong><em></em></em></strong>_ книга.</li>
+<li>Чиє це місто? (ми) → Це <strong><em><em></em></strong><strong><em></em></em></strong>_ місто.</li>
+<li>Чиї це діти? (вони) → Це <strong><em><em></em></strong><strong><em></em></em></strong>_ діти.</li>
+</ol>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Production</h3>
+      <div class="md-content"><h2 id="taskmythings">Task: My Things</h2>
+<p>Describe 5 things you own:</p>
+<ol>
+<li>Це мій/моя/моє <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Це мій/моя/моє <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Це мій/моя/моє <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Це мій/моя/моє <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Це мій/моя/моє <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+</ol>
+<h2 id="taskfamilydescriptions">Task: Family Descriptions</h2>
+<p>Write sentences about family members:</p>
+<ul>
+<li>Мій тато <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Моя мама <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+<li>Мій брат/Моя сестра <strong><em><em></em></strong><strong><em></em></em></strong>_</li>
+</ul>
+<hr />
+<hr />
 <hr /></div>
     </div>
   
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><blockquote>
-  <p>💡 <strong>What You Learned Today</strong></p>
-  <ul>
-  <li>Possessives agree with the <strong>noun's gender</strong>, not the owner's!</li>
-  <li>Pattern: -ій (m), -я (f), -є (n), -і (pl)</li>
-  <li><strong>Його</strong> and <strong>її</strong> never change</li>
-  <li><strong>Свій</strong> = reflexive "one's own"</li>
-  <li>Question word: <strong>Чий?</strong> (whose?)</li>
-  </ul>
-  <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 15, you'll learn to navigate the city:</p>
-  <ul>
-  <li>Де метро? (Where is the metro?)</li>
-  <li>Directions: прямо, наліво, направо, назад</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>In this module, you learned:</p>
+<ol>
+<li><strong>Possessive pronouns</strong> agree with the noun's gender, not the owner's</li>
+<li><strong>Changing possessives</strong>: мій/моя/моє, твій/твоя/твоє, наш/наша/наше, ваш/ваша/ваше, їхній/їхня/їхнє</li>
+<li><strong>Invariable possessives</strong>: його (his) and її (her) never change</li>
+<li><strong>Formal usage</strong>: ваш for formal "your" (like French "vous")</li>
+<li><strong>Question word</strong>: чий/чия/чиє/чиї (whose)</li>
+</ol>
+<p><strong>Key patterns:</strong></p>
+<ul>
+<li>Це мій телефон. (This is my phone.)</li>
+<li>Де твоя книга? (Where is your book?)</li>
+<li>Його машина нова. (His car is new.)</li>
+<li>Наша країна красива. (Our country is beautiful.)</li>
+</ul>
+<p>Next module: Around the City! You'll learn directions and navigation vocabulary to get around Ukrainian cities.</p></div>
     </div>
   
       <div class="btn-group">
@@ -905,72 +1166,72 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Possessive Pronouns</h3>
+    <section id="activity-0" class="section"><div class="card"><h3>Possessive Form Selection</h3>
       <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
-      <div id="activity-0-container" class="fill-container"></div>
+      <div id="activity-0-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
+    <section id="activity-1" class="section"><div class="card"><h3>Possessive Translations</h3>
       <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Sort by Gender</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/17</span></div>
+      <div class="sort-pool" id="activity-2-pool"><div class="sort-items" id="activity-2-items"></div></div>
+      <div class="sort-groups" id="activity-2-groups"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Possessive Rules</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Possessive Pronoun Rules</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
+    <section id="activity-4" class="section"><div class="card"><h3>Possessive Practice</h3>
       <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
-      <div id="activity-4-container"></div>
+      <div id="activity-4-container" class="fill-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Possessive Behavior</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/8</span></div>
-      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
-      <div class="sort-groups" id="activity-5-groups"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Questions and Answers</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-5-container"><svg class="match-lines" id="activity-5-lines"></svg>
+        <div class="match-column" id="activity-5-left"></div>
+        <div class="match-column" id="activity-5-right"></div>
+      </div>
+      <div class="completion-message" id="activity-5-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Match Possessive to Noun</h3>
+    <section id="activity-6" class="section"><div class="card"><h3>Possessive Pronouns</h3>
       <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
-      <div id="activity-6-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
+      <div id="activity-6-container" class="order-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Noun Gender to Possessive</h3>
+    <section id="activity-7" class="section"><div class="card"><h3>Family Possessives</h3>
       <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-7-container"><svg class="match-lines" id="activity-7-lines"></svg>
-        <div class="match-column" id="activity-7-left"></div>
-        <div class="match-column" id="activity-7-right"></div>
-      </div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect!</h3></div>
+      <div id="activity-7-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (20)</h3>
+        <h3>Словник (14)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -980,7 +1241,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">мій</td><td class="vocab-ipa">/mʲij/</td><td class="vocab-en">my (masculine)</td><td class="vocab-note">моя (f), моє (n), мої (pl)</td></tr><tr><td class="vocab-uk">твій</td><td class="vocab-ipa">/tvʲij/</td><td class="vocab-en">your (masc, informal)</td><td class="vocab-note">твоя (f), твоє (n), твої (pl)</td></tr><tr><td class="vocab-uk">його</td><td class="vocab-ipa">/jɔˈɦɔ/</td><td class="vocab-en">his, its</td><td class="vocab-note">Invariable</td></tr><tr><td class="vocab-uk">її</td><td class="vocab-ipa">/jiˈji/</td><td class="vocab-en">her, hers</td><td class="vocab-note">Invariable</td></tr><tr><td class="vocab-uk">наш</td><td class="vocab-ipa">/nɑʃ/</td><td class="vocab-en">our (m)</td><td class="vocab-note">наша (f), наше (n), наші (pl)</td></tr><tr><td class="vocab-uk">ваш</td><td class="vocab-ipa">/vɑʃ/</td><td class="vocab-en">your (m, formal)</td><td class="vocab-note">ваша (f), ваше (n), ваші (pl)</td></tr><tr><td class="vocab-uk">їхній</td><td class="vocab-ipa">/ˈjixnʲij/</td><td class="vocab-en">their (m)</td><td class="vocab-note">їхня (f), їхнє (n), їхні (pl)</td></tr><tr><td class="vocab-uk">свій</td><td class="vocab-ipa">/svʲij/</td><td class="vocab-en">one&#039;s own (m)</td><td class="vocab-note">своя (f), своє (n), свої (pl)</td></tr><tr><td class="vocab-uk">чий</td><td class="vocab-ipa">/tʃɪj/</td><td class="vocab-en">whose (m)</td><td class="vocab-note">чия (f), чиє (n), чиї (pl)</td></tr><tr><td class="vocab-uk">річ</td><td class="vocab-ipa">/rʲitʃ/</td><td class="vocab-en">thing</td><td class="vocab-note">Plural: речі</td></tr><tr><td class="vocab-uk">разом</td><td class="vocab-ipa">/ˈrɑzɔm/</td><td class="vocab-en">together</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">окремо</td><td class="vocab-ipa">/ɔˈkrɛmɔ/</td><td class="vocab-en">separately</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">родина</td><td class="vocab-ipa">/rɔˈdɪnɑ/</td><td class="vocab-en">family</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">машина</td><td class="vocab-ipa">/mɑˈʃɪnɑ/</td><td class="vocab-en">car</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сумка</td><td class="vocab-ipa">/ˈsumkɑ/</td><td class="vocab-en">bag</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">паспорт</td><td class="vocab-ipa">/ˈpɑspɔrt/</td><td class="vocab-en">passport</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">валіза</td><td class="vocab-ipa">/vɑˈlʲizɑ/</td><td class="vocab-en">suitcase</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">документ</td><td class="vocab-ipa">/dɔkuˈmɛnt/</td><td class="vocab-en">document</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">телефон</td><td class="vocab-ipa">/tɛlɛˈfɔn/</td><td class="vocab-en">phone</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рішення</td><td class="vocab-ipa">/rʲiˈʃɛnʲːɑ/</td><td class="vocab-en">decision</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">мій (miy)</td><td class="vocab-ipa">/mij/</td><td class="vocab-en">my</td><td class="vocab-note">Changes: моя (f), моє (n), мої (pl)</td></tr><tr><td class="vocab-uk">твій (tviy)</td><td class="vocab-ipa">/tvij/</td><td class="vocab-en">your (singular)</td><td class="vocab-note">Changes: твоя (f), твоє (n), твої (pl)</td></tr><tr><td class="vocab-uk">його (yoho)</td><td class="vocab-ipa">/jɔˈɦɔ/</td><td class="vocab-en">his</td><td class="vocab-note">Invariable</td></tr><tr><td class="vocab-uk">її (yiyi)</td><td class="vocab-ipa">/jiˈji/</td><td class="vocab-en">her</td><td class="vocab-note">Invariable</td></tr><tr><td class="vocab-uk">наш (nash)</td><td class="vocab-ipa">/nɑʃ/</td><td class="vocab-en">our</td><td class="vocab-note">Changes: наша (f), наше (n), наші (pl)</td></tr><tr><td class="vocab-uk">ваш (vash)</td><td class="vocab-ipa">/vɑʃ/</td><td class="vocab-en">your (pl/formal)</td><td class="vocab-note">Changes: ваша (f), ваше (n), ваші (pl)</td></tr><tr><td class="vocab-uk">їхній (yikhniy)</td><td class="vocab-ipa">/ˈjixnʲij/</td><td class="vocab-en">their</td><td class="vocab-note">Changes: їхня (f), їхнє (n), їхні (pl)</td></tr><tr><td class="vocab-uk">чий (chyy)</td><td class="vocab-ipa">/tʃɪj/</td><td class="vocab-en">whose</td><td class="vocab-note">Changes: чия (f), чиє (n), чиї (pl)</td></tr><tr><td class="vocab-uk">річ (rich)</td><td class="vocab-ipa">/rʲitʃ/</td><td class="vocab-en">thing</td><td class="vocab-note">Feminine</td></tr><tr><td class="vocab-uk">власний (vlasnyy)</td><td class="vocab-ipa">/ˈvlɑsnɪj/</td><td class="vocab-en">own</td><td class="vocab-note">Changes by gender</td></tr><tr><td class="vocab-uk">чужий (chuzhyy)</td><td class="vocab-ipa">/tʃuˈʒɪj/</td><td class="vocab-en">someone else&#039;s</td><td class="vocab-note">Changes by gender</td></tr><tr><td class="vocab-uk">разом (razom)</td><td class="vocab-ipa">/ˈrɑzɔm/</td><td class="vocab-en">together</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">окремо (okremo)</td><td class="vocab-ipa">/ɔkˈrɛmɔ/</td><td class="vocab-en">separately</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спільний (spil&#039;nyy)</td><td class="vocab-ipa">/ˈspʲilʲnɪj/</td><td class="vocab-en">shared, common</td><td class="vocab-note">Changes by gender</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -992,8 +1253,8 @@ footer {
   </main><footer>Module 14 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Possessive Pronouns","data":{"type":"fill-blank","items":[{"prompt":"Це ___ брат. Він студент. (This is my brother. He's a student.)","answer":"мій","options":["мій","моя","моє","мої"]},{"prompt":"Це ___ книга. (This is my book.)","answer":"моя","options":["мій","моя","моє","мої"]},{"prompt":"Це ___ вікно. (This is my window.)","answer":"моє","options":["мій","моя","моє","мої"]},{"prompt":"Це ___ друзі. (These are my friends.)","answer":"мої","options":["мій","моя","моє","мої"]},{"prompt":"Де ___ телефон? (Where is your phone?)","answer":"твій","options":["твій","твоя","твоє","твої"]},{"prompt":"___ машина тут. (Our car is here.)","answer":"Наша","options":["Наш","Наша","Наше","Наші"]},{"prompt":"Це ___ дім. (This is their house.)","answer":"їхній","options":["їхній","їхня","їхнє","їхні"]},{"prompt":"___ брат працює тут. (Her brother works here.)","answer":"Її","options":["Її","Його","Їхній","Свій"]},{"prompt":"___ книга на столі. (His book is on the table.)","answer":"Його","options":["Її","Його","Їхній","Свій"]},{"prompt":"Він читає ___ книгу. (He reads his own book.)","answer":"свою","options":["свій","своя","свою","своє"]},{"prompt":"Де ___ сумка? (Where is your bag?)","answer":"твоя","options":["твій","твоя","твоє","твої"]},{"prompt":"___ місто тут. (Our city is here.)","answer":"Наше","options":["Наш","Наша","Наше","Наші"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["брат","мій","Це"],"answer":"Це мій брат.","translation":"This is my brother."},{"words":["книга","моя","Це"],"answer":"Це моя книга.","translation":"This is my book."},{"words":["телефон","твій","Де"],"answer":"Де твій телефон?","translation":"Where is your phone?"},{"words":["машина","Наша","тут"],"answer":"Наша машина тут.","translation":"Our car is here."},{"words":["дім","їхній","Це"],"answer":"Це їхній дім.","translation":"This is their house."},{"words":["родина","Це","моя"],"answer":"Це моя родина.","translation":"This is my family."},{"words":["паспорт","ваш","Де"],"answer":"Де ваш паспорт?","translation":"Where is your passport?"},{"words":["книгу","свою","читає","Він"],"answer":"Він читає свою книгу.","translation":"He reads his own book."},{"words":["це","Чий","телефон"],"answer":"Чий це телефон?","translation":"Whose phone is this?"},{"words":["друзі","наші","Це"],"answer":"Це наші друзі.","translation":"These are our friends."},{"words":["сумка","її","Це"],"answer":"Це її сумка.","translation":"This is her bag."},{"words":["місто","наше","Це"],"answer":"Це наше місто.","translation":"This is our city."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"мій","right":"my (masculine)"},{"left":"моя","right":"my (feminine)"},{"left":"моє","right":"my (neuter)"},{"left":"твій","right":"your (informal, m)"},{"left":"наш","right":"our (masculine)"},{"left":"ваш","right":"your (formal, m)"},{"left":"його","right":"his/its"},{"left":"її","right":"her"},{"left":"їхній","right":"their (masculine)"},{"left":"свій","right":"one's own (m)"},{"left":"мої","right":"my (plural)"},{"left":"наші","right":"our (plural)"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Possessive Rules","data":{"type":"quiz","questions":[{"question":"Which possessive agrees with a masculine noun?","options":["мій","моя","моє","мої"],"correctIndex":0,"explanation":"мій for masculine nouns"},{"question":"Which possessives NEVER change for gender?","options":["мій, твій","наш, ваш","його, її","їхній, свій"],"correctIndex":2,"explanation":"його and її never change"},{"question":"What is the feminine form of \"наш\"?","options":["наш","наша","наше","наші"],"correctIndex":1,"explanation":"наша for feminine nouns"},{"question":"What does \"свій\" mean?","options":["his (someone else's)","one's own (reflexive)","their","your"],"correctIndex":1,"explanation":"свій refers back to the subject"},{"question":"\"Він бере свій телефон\" vs \"Він бере його телефон\" - what's the difference?","options":["свій = his own, його = someone else's","No difference","свій = formal, його = informal","Both mean his own"],"correctIndex":0,"explanation":"свій is reflexive (refers to subject)"},{"question":"Which is correct: \"Це ___ книга\" (her)?","options":["її's","її","їхня","своя"],"correctIndex":1,"explanation":"її never changes"},{"question":"What is \"чий\" used for?","options":["Asking \"whose?\" (masculine)","Saying \"my\"","Saying \"their\"","Saying \"one's own\""],"correctIndex":0,"explanation":"чий = whose (question word)"},{"question":"What is the neuter form of \"твій\"?","options":["твій","твоя","твоє","твої"],"correctIndex":2,"explanation":"твоє for neuter nouns"},{"question":"\"Де ваші документи?\" - what is \"ваші\"?","options":["your (singular noun)","your (plural noun, formal)","our (plural)","their (plural)"],"correctIndex":1,"explanation":"ваші = formal \"your\" for plural nouns"},{"question":"Which sentence is correct?","options":["Це моя сестра.","Це мій сестра.","Це моє сестра.","Це мої сестра."],"correctIndex":0,"explanation":"сестра is feminine → моя"},{"question":"What is the plural form of \"мій\"?","options":["мій","моя","моє","мої"],"correctIndex":3,"explanation":"мої for plural nouns"},{"question":"Which possessive agrees with \"родина\" (family)?","options":["мій","моя","моє","мої"],"correctIndex":1,"explanation":"родина is feminine → моя"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"Possessives agree with the noun's gender, not the owner's","isTrue":true,"explanation":"Correct! \"мій брат\" even for a female speaker"},{"statement":"\"Його\" and \"її\" never change for gender","isTrue":true,"explanation":"Correct! They're frozen genitive forms"},{"statement":"\"Це мій книга\" is correct","isTrue":false,"explanation":"Incorrect. книга is feminine → \"Це моя книга\""},{"statement":"\"Свій\" means \"one's own\" and refers to the subject","isTrue":true,"explanation":"Correct!"},{"statement":"\"Наш\" can be used with feminine nouns","isTrue":false,"explanation":"Incorrect. Use \"наша\" for feminine nouns"},{"statement":"\"Чий це телефон?\" means \"Whose phone is this?\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"Ваш\" is the formal/plural form of \"твій\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"Її брат\" means \"their brother\"","isTrue":false,"explanation":"Incorrect. \"Її брат\" means \"her brother\""},{"statement":"\"Їхній дім\" means \"their house\"","isTrue":true,"explanation":"Correct!"},{"statement":"Possessive patterns: -ій (m), -я (f), -є (n), -і (pl)","isTrue":true,"explanation":"Correct!"},{"statement":"\"Це наше місто\" is correct","isTrue":true,"explanation":"Correct! місто is neuter → наше"},{"statement":"\"Де моя телефон?\" is correct","isTrue":false,"explanation":"Incorrect. телефон is masculine → \"Де мій телефон?\""}]}},{"id":"activity-5","type":"group-sort","title":"Possessive Behavior","data":{"type":"group-sort","groups":[{"id":"changes-for-gender","name":"Changes for Gender","items":["мій / моя / моє / мої (my)","твій / твоя / твоє / твої (your informal)","наш / наша / наше / наші (our)","ваш / ваша / ваше / ваші (your formal)","їхній / їхня / їхнє / їхні (their)","свій / своя / своє / свої (one's own)"],"nameUk":"m/f/n/pl forms"},{"id":"never-changes","name":"Never Changes","items":["його (his/its) - all genders","її (her) - all genders"],"nameUk":"frozen genitive forms"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Match Possessive to Noun","data":{"type":"fill-blank","items":[{"prompt":"___ стіл (my table)","answer":"мій","options":["мій","моя","моє","мої"]},{"prompt":"___ книга (your book, informal)","answer":"твоя","options":["твій","твоя","твоє","твої"]},{"prompt":"___ вікно (our window)","answer":"наше","options":["наш","наша","наше","наші"]},{"prompt":"___ друзі (their friends)","answer":"їхні","options":["їхній","їхня","їхнє","їхні"]},{"prompt":"___ сумка (her bag)","answer":"її","options":["її","його","їхній","свій"]},{"prompt":"___ телефон (his phone)","answer":"його","options":["її","його","їхній","свій"]},{"prompt":"___ машина (your car, formal)","answer":"ваша","options":["ваш","ваша","ваше","ваші"]},{"prompt":"___ місто (my city)","answer":"моє","options":["мій","моя","моє","мої"]},{"prompt":"___ дім (their house)","answer":"їхній","options":["їхній","їхня","їхнє","їхні"]},{"prompt":"___ родина (our family)","answer":"наша","options":["наш","наша","наше","наші"]},{"prompt":"___ речі (your things, informal)","answer":"твої","options":["твій","твоя","твоє","твої"]},{"prompt":"___ книгу (his own book - accusative)","answer":"свою","options":["свій","своя","свою","своє"]}]}},{"id":"activity-7","type":"match-up","title":"Noun Gender to Possessive","data":{"type":"match-up","pairs":[{"left":"телефон","right":"мій"},{"left":"книга","right":"моя"},{"left":"вікно","right":"моє"},{"left":"друзі","right":"мої"},{"left":"брат","right":"мій"},{"left":"сестра","right":"моя"},{"left":"місто","right":"моє"},{"left":"речі","right":"мої"},{"left":"дім","right":"мій"},{"left":"машина","right":"моя"},{"left":"ім'я","right":"моє"},{"left":"батьки","right":"мої"}],"shuffleRight":true}}];
-    const vocabData = [{"uk":"мій","translit":"","en":"my (masculine)","note":"моя (f), моє (n), мої (pl)"},{"uk":"твій","translit":"","en":"your (masc, informal)","note":"твоя (f), твоє (n), твої (pl)"},{"uk":"його","translit":"","en":"his, its","note":"Invariable"},{"uk":"її","translit":"","en":"her, hers","note":"Invariable"},{"uk":"наш","translit":"","en":"our (m)","note":"наша (f), наше (n), наші (pl)"},{"uk":"ваш","translit":"","en":"your (m, formal)","note":"ваша (f), ваше (n), ваші (pl)"},{"uk":"їхній","translit":"","en":"their (m)","note":"їхня (f), їхнє (n), їхні (pl)"},{"uk":"свій","translit":"","en":"one's own (m)","note":"своя (f), своє (n), свої (pl)"},{"uk":"чий","translit":"","en":"whose (m)","note":"чия (f), чиє (n), чиї (pl)"},{"uk":"річ","translit":"","en":"thing","note":"Plural: речі"},{"uk":"разом","translit":"","en":"together","note":""},{"uk":"окремо","translit":"","en":"separately","note":""},{"uk":"родина","translit":"","en":"family","note":""},{"uk":"машина","translit":"","en":"car","note":""},{"uk":"сумка","translit":"","en":"bag","note":""},{"uk":"паспорт","translit":"","en":"passport","note":""},{"uk":"валіза","translit":"","en":"suitcase","note":""},{"uk":"документ","translit":"","en":"document","note":""},{"uk":"телефон","translit":"","en":"phone","note":""},{"uk":"рішення","translit":"","en":"decision","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"quiz","title":"Possessive Form Selection","data":{"type":"quiz","questions":[{"question":"___ телефон (my)","options":["мій","моя","моє","мої"],"correctIndex":0,"explanation":"Телефон is masculine, so use мій."},{"question":"___ книга (my)","options":["мій","моя","моє","мої"],"correctIndex":1,"explanation":"Книга is feminine, so use моя."},{"question":"___ місто (our)","options":["наш","наша","наше","наші"],"correctIndex":2,"explanation":"Місто is neuter, so use наше."},{"question":"___ друзі (your pl)","options":["ваш","ваша","ваше","ваші"],"correctIndex":3,"explanation":"Друзі is plural, so use ваші."},{"question":"___ машина (their)","options":["їхній","їхня","їхнє","їхні"],"correctIndex":1,"explanation":"Машина is feminine, so use їхня."},{"question":"___ будинок (his)","options":["його","її","їхній","мій"],"correctIndex":0,"explanation":"His is його, which never changes."},{"question":"___ сумка (her)","options":["його","її","моя","твоя"],"correctIndex":1,"explanation":"Her is її, which never changes."},{"question":"___ вікно (my)","options":["мій","моя","моє","мої"],"correctIndex":2,"explanation":"Вікно is neuter, so use моє."},{"question":"___ батьки (our)","options":["наш","наша","наше","наші"],"correctIndex":3,"explanation":"Батьки is plural, so use наші."},{"question":"___ квартира (their)","options":["їхній","їхня","їхнє","їхні"],"correctIndex":1,"explanation":"Квартира is feminine, so use їхня."},{"question":"___ паспорт (your formal)","options":["ваш","ваша","ваше","ваші"],"correctIndex":0,"explanation":"Паспорт is masculine, so use ваш."},{"question":"___ робота (your sg)","options":["твій","твоя","твоє","твої"],"correctIndex":1,"explanation":"Робота is feminine, so use твоя."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-1","type":"match-up","title":"Possessive Translations","data":{"type":"match-up","pairs":[{"left":"мій телефон","right":"my phone"},{"left":"моя книга","right":"my book"},{"left":"твій друг","right":"your friend (sg)"},{"left":"його машина","right":"his car"},{"left":"її сумка","right":"her bag"},{"left":"наш дім","right":"our home"},{"left":"наша країна","right":"our country"},{"left":"ваша адреса","right":"your address (pl/formal)"},{"left":"їхні діти","right":"their children"},{"left":"моє місто","right":"my city"},{"left":"твоє вікно","right":"your window (sg)"},{"left":"наші друзі","right":"our friends"}],"shuffleRight":true}},{"id":"activity-2","type":"group-sort","title":"Sort by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["мій","твій","наш","ваш","їхній"]},{"id":"feminine","name":"Feminine","items":["моя","твоя","наша","ваша","їхня"]},{"id":"neuter","name":"Neuter","items":["моє","твоє","наше","ваше","їхнє"]},{"id":"invariable","name":"Invariable","items":["його","її"]}],"shuffleItems":true}},{"id":"activity-3","type":"true-false","title":"Possessive Pronoun Rules","data":{"type":"true-false","statements":[{"statement":"Possessive pronouns agree with the gender of the owner.","isTrue":false,"explanation":"False. They agree with the NOUN being possessed, not the owner!"},{"statement":"Його (his) and її (her) never change form.","isTrue":true,"explanation":"True. These are invariable—they stay the same regardless of the noun's gender."},{"statement":"Ваш is used for formal 'your' (singular).","isTrue":true,"explanation":"True. Like French 'votre'—use ваш with people you call 'ви'."},{"statement":"Мій is used for feminine nouns.","isTrue":false,"explanation":"False. Мій is masculine. Feminine is моя."},{"statement":"Їхній changes to match the noun's gender.","isTrue":true,"explanation":"True. їхній (m), їхня (f), їхнє (n), їхні (pl)."},{"statement":"The question 'Whose?' is always 'чий' in Ukrainian.","isTrue":false,"explanation":"False. It changes: чий (m), чия (f), чиє (n), чиї (pl)."},{"statement":"You use твій with friends and family.","isTrue":true,"explanation":"True. Твій is informal, for people you call 'ти'."},{"statement":"Possessive pronouns come before the noun.","isTrue":true,"explanation":"True. Example: мій телефон, моя книга."},{"statement":"Його changes to його́ for feminine nouns.","isTrue":false,"explanation":"False. Його never changes—it's invariable."},{"statement":"Наш and ваш follow the same pattern.","isTrue":true,"explanation":"True. Both change: наш/наша/наше/наші and ваш/ваша/ваше/ваші."},{"statement":"Її is used for masculine nouns only.","isTrue":false,"explanation":"False. Її (her) is invariable and used for all genders."},{"statement":"Чий/чия/чиє/чиї means 'whose'.","isTrue":true,"explanation":"True. The question word changes to match the noun's gender."}]}},{"id":"activity-4","type":"fill-blank","title":"Possessive Practice","data":{"type":"fill-blank","items":[{"prompt":"Це ___ телефон.","answer":"мій","options":["мій","моя","моє","його"]},{"prompt":"Де ___ книга?","answer":"твоя","options":["твоя","твій","твоє","її"]},{"prompt":"___ машина нова.","answer":"Його","options":["Його","Її","Мій","Наш"]},{"prompt":"___ сумка красива.","answer":"Її","options":["Її","Його","Моя","Твоя"]},{"prompt":"___ дім великий.","answer":"Наш","options":["Наш","Наша","Наше","Ваш"]},{"prompt":"___ паспорт, будь ласка.","answer":"Ваш","options":["Ваш","Ваша","Твій","Мій"]},{"prompt":"___ діти в школі.","answer":"Їхні","options":["Їхні","Їхній","Їхня","Наші"]},{"prompt":"___ місто красиве.","answer":"Моє","options":["Моє","Мій","Моя","Твоє"]},{"prompt":"___ друзі українці.","answer":"Наші","options":["Наші","Наш","Наша","Ваші"]},{"prompt":"___ квартира маленька.","answer":"Їхня","options":["Їхня","Їхній","Їхнє","Наша"]},{"prompt":"___ ім'я Олена.","answer":"Її","options":["Її","Його","Моє","Твоє"]},{"prompt":"___ робота цікава.","answer":"Твоя","options":["Твоя","Твій","Моя","Ваша"]}]}},{"id":"activity-5","type":"match-up","title":"Questions and Answers","data":{"type":"match-up","pairs":[{"left":"Чий це телефон?","right":"Це мій телефон."},{"left":"Чия це книга?","right":"Це моя книга."},{"left":"Чиє це місто?","right":"Це наше місто."},{"left":"Чиї це діти?","right":"Це їхні діти."},{"left":"Чий це паспорт?","right":"Це ваш паспорт."},{"left":"Чия це машина?","right":"Це його машина."},{"left":"Чиє це вікно?","right":"Це моє вікно."},{"left":"Чиї це книги?","right":"Це твої книги."},{"left":"Чий це дім?","right":"Це наш дім."},{"left":"Чия це сумка?","right":"Це її сумка."},{"left":"Чиє це завдання?","right":"Це їхнє завдання."},{"left":"Чиї це речі?","right":"Це мої речі."}],"shuffleRight":true}},{"id":"activity-6","type":"anagram","title":"Possessive Pronouns","data":{"type":"anagram","isAnagram":true,"items":[{"letters":["й","і","м"],"answer":"мій","translation":"my - masculine"},{"letters":["о","м","я"],"answer":"моя","translation":"my - feminine"},{"letters":["є","о","м"],"answer":"моє","translation":"my - neuter"},{"letters":["ш","н","а"],"answer":"наш","translation":"our - masculine"},{"letters":["ш","а","н","а"],"answer":"наша","translation":"our - feminine"},{"letters":["ш","а","в"],"answer":"ваш","translation":"your formal - masculine"},{"letters":["й","і","н","х","ї"],"answer":"їхній","translation":"their - masculine"},{"letters":["я","н","х","ї"],"answer":"їхня","translation":"their - feminine"},{"letters":["є","н","х","ї"],"answer":"їхнє","translation":"their - neuter"},{"letters":["ї","ї"],"answer":"її","translation":"her - invariable"},{"letters":["о","г","о","й"],"answer":"його","translation":"his - invariable"},{"letters":["і","о","м"],"answer":"мої","translation":"my - plural"}]}},{"id":"activity-7","type":"fill-blank","title":"Family Possessives","data":{"type":"fill-blank","items":[{"prompt":"___ тато працює в офісі.","answer":"Мій","options":["Мій","Моя","Твій","Його"]},{"prompt":"___ мама лікар.","answer":"Твоя","options":["Твоя","Твій","Моя","Її"]},{"prompt":"___ брат студент.","answer":"Його","options":["Його","Її","Мій","Твій"]},{"prompt":"___ сестра вчителька.","answer":"Її","options":["Її","Його","Моя","Твоя"]},{"prompt":"___ батьки живуть у Києві.","answer":"Наші","options":["Наші","Наш","Ваші","Їхні"]},{"prompt":"___ сім'я велика.","answer":"Їхня","options":["Їхня","Їхній","Наша","Ваша"]},{"prompt":"___ діти в школі.","answer":"Ваші","options":["Ваші","Ваш","Наші","Їхні"]},{"prompt":"___ бабуся готує борщ.","answer":"Моя","options":["Моя","Мій","Твоя","Наша"]},{"prompt":"___ дідусь любить читати.","answer":"Твій","options":["Твій","Твоя","Мій","Його"]},{"prompt":"___ родина у Львові.","answer":"Його","options":["Його","Її","Наша","Їхня"]},{"prompt":"___ кіт сірий.","answer":"Їхній","options":["Їхній","Їхня","Наш","Мій"]},{"prompt":"___ собака великий.","answer":"Наш","options":["Наш","Наша","Ваш","Їхній"]}]}}];
+    const vocabData = [{"uk":"мій (miy)","translit":"","en":"my","note":"Changes: моя (f), моє (n), мої (pl)"},{"uk":"твій (tviy)","translit":"","en":"your (singular)","note":"Changes: твоя (f), твоє (n), твої (pl)"},{"uk":"його (yoho)","translit":"","en":"his","note":"Invariable"},{"uk":"її (yiyi)","translit":"","en":"her","note":"Invariable"},{"uk":"наш (nash)","translit":"","en":"our","note":"Changes: наша (f), наше (n), наші (pl)"},{"uk":"ваш (vash)","translit":"","en":"your (pl/formal)","note":"Changes: ваша (f), ваше (n), ваші (pl)"},{"uk":"їхній (yikhniy)","translit":"","en":"their","note":"Changes: їхня (f), їхнє (n), їхні (pl)"},{"uk":"чий (chyy)","translit":"","en":"whose","note":"Changes: чия (f), чиє (n), чиї (pl)"},{"uk":"річ (rich)","translit":"","en":"thing","note":"Feminine"},{"uk":"власний (vlasnyy)","translit":"","en":"own","note":"Changes by gender"},{"uk":"чужий (chuzhyy)","translit":"","en":"someone else's","note":"Changes by gender"},{"uk":"разом (razom)","translit":"","en":"together","note":""},{"uk":"окремо (okremo)","translit":"","en":"separately","note":""},{"uk":"спільний (spil'nyy)","translit":"","en":"shared, common","note":"Changes by gender"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1045,8 +1306,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1077,8 +1338,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1490,7 +1751,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1500,7 +1761,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1701,6 +1964,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

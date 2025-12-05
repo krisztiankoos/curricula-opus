@@ -69,8 +69,8 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
       'match': 'match-up',
       'sort': 'group-sort',
       'groupsort': 'group-sort',
-      'reorder': 'order',
-      // Note: unjumble/unscramble/word-order handled by UnjumbleParser
+      // Note: unjumble handled by UnjumbleParser (sentences)
+      // Note: anagram handled by AnagramParser (single words/letters)
       // Note: select is handled by SelectParser
     };
     const normalized = type.toLowerCase().replace(/\s+/g, '-');

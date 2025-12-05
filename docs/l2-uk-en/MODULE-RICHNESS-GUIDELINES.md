@@ -527,6 +527,95 @@ At minimum one of:
 
 ---
 
+## Ukrainian Identity & Decolonization
+
+### Philosophy
+
+This curriculum takes a **decolonial approach** to teaching Ukrainian. For centuries, Russian imperial and Soviet narratives minimized, distorted, or erased Ukrainian language, history, and identity. Many learners come with misconceptions absorbed from these narratives. Our role is to provide **accurate, factual information** that corrects these misconceptions.
+
+This is not about politics - it's about **historical accuracy** and **respect for Ukrainian identity**.
+
+### Principles
+
+1. **Ukrainian is a distinct language** - Not a "dialect of Russian," not "Little Russian," not derivative. Ukrainian has its own history, literature, and development path.
+
+2. **Facts over narratives** - Present historically accurate information, even when it contradicts widely-held misconceptions. Cite sources when possible.
+
+3. **Celebrate Ukrainian achievements** - Highlight Ukrainian contributions to world culture, science, literature, and history that have been overlooked or misattributed.
+
+4. **Use proper Ukrainian** - Avoid Russianisms and Surzhyk in curriculum content. Teach standard Ukrainian vocabulary, not Russian calques.
+
+5. **Name things correctly** - Use Ukrainian names for Ukrainian places (Kyiv not Kiev, Kharkiv not Kharkov, Odesa not Odessa).
+
+### Common Misconceptions to Address
+
+Use **🔍 Myth Buster** boxes to correct these when relevant to the lesson:
+
+| Misconception | Reality |
+|---------------|---------|
+| "Cyrillic is Russian" | Created in Bulgaria (9th c.); Ukraine adopted it independently |
+| "Ukrainian is a dialect of Russian" | Separate East Slavic language with distinct development |
+| "Kyivan Rus' was Russia" | Medieval state centered in Kyiv; "Russia" didn't exist yet |
+| "Borsch is Russian" | Ukrainian dish; the word entered English from Ukrainian |
+| "Holodomor was just a famine" | Deliberate genocide killing 4-10 million Ukrainians |
+| "Ukraine means 'borderland'" | Contested etymology; Ukrainians reject this interpretation |
+| "Russians and Ukrainians are one people" | Distinct nations with different languages, cultures, histories |
+
+### Level-Appropriate Integration
+
+| Level | Approach |
+|-------|----------|
+| **A1** | Factual corrections in engagement boxes (Cyrillic origins, word etymologies) |
+| **A2** | Language comparisons, Ukrainian unique features, cultural facts |
+| **B1** | Historical context, regional diversity, Ukrainian achievements |
+| **B2** | Dedicated history modules, explicit myth-busting, literature |
+| **C1-C2** | Critical analysis, propaganda recognition, academic discourse |
+
+### Examples by Level
+
+**A1 - Alphabet lesson:**
+> 🔍 **Myth Buster**
+>
+> **Myth:** "Cyrillic is the Russian alphabet"
+> **Fact:** Cyrillic was created in Bulgaria in the 9th century, over 100 years before "Russia" existed. Ukrainian Cyrillic has unique letters (Ї, Є, Ґ) that Russian doesn't have!
+
+**A2 - Food vocabulary:**
+> 🔍 **Myth Buster**
+>
+> **Myth:** "Borsch is a Russian dish"
+> **Fact:** Borsch (борщ) is Ukrainian! The word entered English directly from Ukrainian. UNESCO recognized Ukrainian borsch culture as endangered heritage in 2022.
+
+**B1 - History module:**
+> 🔍 **Myth Buster**
+>
+> **Myth:** "Kyivan Rus' was an early Russian state"
+> **Fact:** Kyivan Rus' (Київська Русь) was a medieval federation centered in Kyiv. The name "Russia" (Росія) appeared centuries later. Moscow didn't exist when Kyiv was already a major European capital.
+
+### What This Is NOT
+
+- **Not anti-Russian bigotry** - We distinguish between Russian government narratives and Russian people
+- **Not political propaganda** - We present historical facts, not political opinions
+- **Not one-sided** - We acknowledge complexity where it exists
+- **Not aggressive** - Tone is educational and matter-of-fact, not polemical
+
+### Vocabulary Choices
+
+Always prefer standard Ukrainian over Russianisms:
+
+| Use This ✅ | Not This ❌ | Why |
+|-------------|-------------|-----|
+| вибачте | ізвіняюсь | Russian calque |
+| будь ласка | пожалуйста | Russian word |
+| квиток | білет | Russian *билет* |
+| гаразд | ладно | Russian word |
+| файно/чудово | класно | Russian slang |
+| мабуть | наверно | Russian word |
+| відчиняти (doors) | відкривати | Russian usage pattern |
+
+See `docs/l2-uk-en/VOCABULARY_AUDIT.md` for full analysis.
+
+---
+
 ## Quality Checklist
 
 Before publishing any module:

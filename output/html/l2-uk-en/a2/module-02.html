@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 02: The Dative II | Ukrainian A2</title>
+  <style>
+:root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.top-nav { background: #2e2e2e; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem; }
+.top-nav a { color: white; text-decoration: none; }
+.top-nav a:hover { text-decoration: underline; }
+.module-nav { display: flex; gap: 1rem; align-items: center; }
+.module-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.25rem 0.5rem; }
+.module-nav-link:hover { color: white; }
+.module-nav-link.disabled { color: rgba(255,255,255,0.3); pointer-events: none; }
+.nav { position: sticky; top: 0; background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+.nav h1 { font-size: 1.25rem; }
+.nav-tabs { display: flex; gap: 0.5rem; }
+.nav-tab { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+.nav-tab.active { background: white; color: var(--primary); }
+main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.section { display: none; } .section.active { display: block; }
+.lesson-header { text-align: center; margin-bottom: 2rem; padding: 2rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border-radius: 12px; }
+.level-badge { background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; }
+.card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+.card h3 { color: var(--primary); margin-bottom: 1rem; }
+.section-intro { border-left: 4px solid var(--primary); }
+.section-intro h3 { color: var(--primary); }
+.section-topic { border-left: 4px solid var(--border); }
+.section-summary { background: linear-gradient(135deg, #f0f9ff, #e8f4fd); border-left: 4px solid var(--success); }
+.section-summary h3 { color: var(--success); }
+.canvas-note { background: #fffbeb; border-left: 4px solid var(--warning); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+.canvas-note h4 { color: var(--warning); margin-bottom: 0.5rem; }
+.md-content { line-height: 1.7; }
+.md-content p { margin: 0.75rem 0; }
+.md-content ul, .md-content ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.md-content li { margin: 0.25rem 0; }
+.md-content strong { color: var(--primary); }
+.md-content blockquote { background: #e8f4fd; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+.md-content blockquote p { margin: 0.25rem 0; }
+.md-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.md-content th, .md-content td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+.md-content th { background: #f5f5f5; font-weight: 600; }
+.md-content code { background: #f0f0f0; padding: 0.125rem 0.375rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+.md-content details { background: #f8f9fa; border: 1px solid var(--border); border-radius: 8px; padding: 0; margin: 1rem 0; }
+.md-content details summary { background: linear-gradient(135deg, #e8f4fd, #f0e8fd); padding: 0.75rem 1rem; cursor: pointer; font-weight: 600; color: var(--primary); border-radius: 8px; list-style: none; display: flex; align-items: center; gap: 0.5rem; }
+.md-content details summary::-webkit-details-marker { display: none; }
+.md-content details summary::before { content: '▶'; font-size: 0.75rem; transition: transform 0.2s; }
+.md-content details[open] summary::before { transform: rotate(90deg); }
+.md-content details[open] summary { border-radius: 8px 8px 0 0; }
+.md-content details > *:not(summary) { padding: 0 1rem; }
+.md-content details > *:last-child { padding-bottom: 1rem; }
+.md-content p > details { margin: 0; }
+.md-content p:has(> details) { margin: 1rem 0; }
+.inline-answer { background: linear-gradient(135deg, #d4edda, #e8f4fd); padding: 0.125rem 0.5rem; border-radius: 4px; transition: opacity 0.2s; }
+.inline-answer.hidden { opacity: 0; user-select: none; }
+.answer-toggle-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #e8f4fd, #f0e8fd); border: 1px solid var(--primary); color: var(--primary); padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-size: 0.875rem; font-weight: 600; margin: 1rem 0; }
+.answer-toggle-btn:hover { background: var(--primary); color: white; }
+.answer-toggle-btn svg { width: 1rem; height: 1rem; }
+.letter-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.letter-group { border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; }
+.letter-group.true-friends { border-color: var(--success); } .letter-group.true-friends .letters { color: var(--success); }
+.letter-group.false-friends { border-color: var(--danger); } .letter-group.false-friends .letters { color: var(--danger); }
+.letter-group.new-letters { border-color: var(--primary); } .letter-group.new-letters .letters { color: var(--primary); }
+.letters { font-size: 1.75rem; letter-spacing: 0.3rem; }
+.btn { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-outline { background: transparent; border: 2px solid var(--border); }
+.btn-group { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+.score-display { text-align: center; padding: 1rem; background: linear-gradient(135deg, #e8f8f0, #e8f4fd); border-radius: 8px; margin-bottom: 1rem; }
+.score-display .score { font-size: 2rem; font-weight: 700; color: var(--success); }
+.completion-message { text-align: center; padding: 2rem; background: linear-gradient(135deg, #d4edda, #e8f4fd); border-radius: 12px; margin-top: 1rem; display: none; }
+.completion-message.show { display: block; }
+footer { text-align: center; padding: 2rem; color: var(--text-muted); }
+@media (max-width: 768px) { .nav { flex-direction: column; gap: 1rem; } .letter-groups, .sort-groups, .quiz-options { grid-template-columns: 1fr; } .match-container { flex-direction: column; } }
+
+
+/**
+ * Layout styles - Navigation, page structure
+ */
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+
+.top-nav a {
+  color: var(--text-muted);
+}
+
+.top-nav a:hover {
+  color: var(--primary);
+}
+
+.module-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.module-nav-link {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.module-nav-link:hover {
+  background: #e8f4fd;
+}
+
+/* Main Navigation */
+.nav {
+  background: linear-gradient(135deg, #1a5fb4, #613583);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-size: 1.5rem;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-tab {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.nav-tab:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-tab.active {
+  background: white;
+  color: var(--primary);
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Sections */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Lesson Header */
+.lesson-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e8f4fd, #f0e8fd);
+  border-radius: 12px;
+}
+
+.lesson-header h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Section Cards */
+.section-intro {
+  border-left: 4px solid var(--primary);
+}
+
+.section-intro h3 {
+  color: var(--primary);
+}
+
+.section-topic {
+  border-left: 4px solid var(--border);
+}
+
+.section-summary {
+  background: linear-gradient(135deg, #f0f9ff, #e8f4fd);
+  border-left: 4px solid var(--success);
+}
+
+.section-summary h3 {
+  color: var(--success);
+}
+
+/* Canvas Notes */
+.canvas-note {
+  background: #fffbeb;
+  border-left: 4px solid var(--warning);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.canvas-note h4 {
+  color: var(--warning);
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+/* Match Activity */
+.match-container { display: flex; gap: 3rem; padding: 1rem; position: relative; }
+.match-column { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+.match-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; font-size: 1.25rem; cursor: pointer; }
+.match-item.selected { border-color: var(--primary); background: #e8f4fd; }
+.match-item.matched { border-color: var(--success); background: #e8f8f0; }
+.match-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.match-lines { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* Quiz Activity */
+.quiz-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+.quiz-question.answered { pointer-events: none; }
+.quiz-question .cyrillic { font-size: 1.5rem; color: var(--primary); font-weight: 600; }
+.quiz-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-top: 1rem; }
+.quiz-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; text-align: center; }
+.quiz-option.correct { border-color: var(--success); background: #d4edda; }
+.quiz-option.wrong { border-color: var(--danger); background: #f8d7da; }
+.quiz-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+.quiz-explanation.show { display: block; }
+
+/* True/False Activity */
+.tf-statement { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+.tf-statement.answered { pointer-events: none; }
+.tf-text { font-size: 1.15rem; margin-bottom: 1rem; }
+.tf-buttons { display: flex; gap: 1rem; }
+.tf-btn { flex: 1; background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem; cursor: pointer; font-size: 1rem; font-weight: 500; }
+.tf-btn:hover { background: #e8f4fd; border-color: var(--primary); }
+.tf-btn.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.tf-btn.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+.tf-explanation { margin-top: 1rem; padding: 1rem; background: #e8f4fd; border-radius: 8px; display: none; }
+.tf-explanation.show { display: block; }
+
+/* Sort Activity */
+.sort-pool { background: #f5f5f5; border: 2px dashed var(--border); border-radius: 12px; padding: 1.5rem; min-height: 80px; margin-bottom: 1rem; }
+.sort-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.sort-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 0.75rem 1.25rem; font-size: 1.5rem; cursor: grab; }
+.sort-item.correct { border-color: var(--success); background: #e8f8f0; }
+.sort-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.sort-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.sort-group { border: 2px solid var(--border); border-radius: 12px; padding: 1rem; min-height: 150px; }
+.sort-group.drag-over { border-color: var(--primary); background: #e8f4fd; }
+.sort-group h4 { font-size: 0.875rem; text-align: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+.sort-group.true-friends h4 { color: var(--success); border-color: var(--success); }
+.sort-group.false-friends h4 { color: var(--danger); border-color: var(--danger); }
+.sort-group.new-letters h4 { color: var(--primary); border-color: var(--primary); }
+
+/* Vocabulary Grid (legacy) */
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; }
+.vocab-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; text-align: center; }
+.vocab-card .uk { font-size: 1.75rem; font-weight: 600; color: var(--primary); }
+.vocab-card .translit { color: var(--text-muted); font-style: italic; }
+.vocab-card .en { font-weight: 500; margin: 0.25rem 0; }
+.vocab-card .note { font-size: 0.75rem; color: #613583; background: #f0e8fd; padding: 0.25rem 0.5rem; border-radius: 4px; }
+
+/* Vocabulary Table (book-style) */
+.vocab-table-container { overflow-x: auto; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.vocab-table thead { background: var(--card-bg); border-bottom: 2px solid var(--border); }
+.vocab-table th { padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.vocab-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+.vocab-table tbody tr:hover { background: #f8f9fa; }
+.vocab-table .vocab-uk { font-size: 1.25rem; font-weight: 600; color: var(--primary); }
+.vocab-table .vocab-translit { color: var(--text-muted); font-style: italic; }
+.vocab-table .vocab-ipa { font-family: monospace; color: var(--text-muted); font-size: 0.9rem; }
+.vocab-table .vocab-en { font-weight: 500; }
+.vocab-table .vocab-note { font-size: 0.85rem; color: #613583; }
+
+/* Answer Callout Blocks */
+.callout { padding: 0.5rem 1rem; margin: 0.25rem 0; border-radius: 4px; }
+.callout-answer { background: #e8f8f0; border-left: 3px solid var(--success); }
+.callout-explanation { background: #e8f4fd; border-left: 3px solid var(--primary); color: var(--text-muted); font-style: italic; }
+.callout-alt { background: #f5f5f5; border-left: 3px solid var(--border); color: var(--text-muted); }
+
+/* Answer Block Toggle */
+.answer-block { display: none; }
+.answer-block.show { display: block; }
+.show-answer-btn { background: #f0f0f0; border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.75rem; font-size: 0.8rem; cursor: pointer; color: var(--text-muted); margin: 0.25rem 0; }
+.show-answer-btn:hover { background: #e5e5e5; }
+.show-answer-btn.revealed { background: #e8f8f0; border-color: var(--success); color: var(--success); }
+
+/* Fill-in Activity - Dropdown in Sentence */
+.fill-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.fill-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; }
+
+.fill-number { font-weight: 600; color: var(--text-muted); margin-right: 0.5rem; }
+.fill-sentence { font-size: 1.15rem; line-height: 1.8; }
+
+.fill-dropdown { font-size: 1rem; padding: 0.4rem 0.6rem; border: 2px solid var(--primary); border-radius: 6px; background: #fff; color: var(--primary); font-weight: 500; cursor: pointer; min-width: 120px; }
+.fill-dropdown:focus { outline: none; box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2); }
+.fill-dropdown.correct { border-color: var(--success); background: #e8f8f0; color: var(--success); }
+.fill-dropdown.wrong { border-color: var(--danger); background: #fde8e8; color: var(--danger); }
+
+.fill-feedback { margin-top: 0.5rem; font-weight: 500; }
+.fill-feedback .correct-text { color: var(--success); }
+.fill-feedback .wrong-text { color: var(--danger); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Order/Unjumble Activity */
+.order-container { display: flex; flex-direction: column; gap: 1rem; }
+.order-items { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-item { background: var(--card-bg); border: 2px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; cursor: grab; user-select: none; }
+.order-item:active { cursor: grabbing; }
+.order-item.dragging { opacity: 0.5; }
+.order-item.correct { border-color: var(--success); background: #e8f8f0; }
+.order-item.wrong { border-color: var(--danger); background: #fde8e8; }
+.order-handle { color: var(--text-muted); font-size: 1.25rem; }
+.order-text { font-size: 1.1rem; }
+
+/* Unjumble Activity - Drag and Drop */
+.unjumble-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.unjumble-question.answered .unjumble-word { cursor: default; }
+.unjumble-question.correct { border-color: var(--success); background: #f8fff8; }
+.unjumble-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.unjumble-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.unjumble-word-row { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1; min-height: 42px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.unjumble-word-row.correct { background: #e8f8f0; }
+.unjumble-word-row.wrong { background: #fde8e8; }
+
+.unjumble-word { background: var(--primary); color: white; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 1rem; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; }
+.unjumble-word:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.unjumble-word:active { cursor: grabbing; }
+.unjumble-word.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.unjumble-word.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.unjumble-actions { display: flex; gap: 0.5rem; }
+.unjumble-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.unjumble-feedback.show { display: block; }
+.unjumble-feedback .correct-text { color: var(--success); font-weight: 600; }
+.unjumble-feedback .wrong-text { color: var(--danger); }
+.unjumble-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
+/* Order Sentence Activity - Sentence reordering with unjumble-style UI */
+.order-sequence { display: flex; flex-direction: column; align-items: stretch; }
+.order-sentence-row { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0.5rem; min-height: auto; padding: 0.5rem; flex: none; width: 100%; }
+.order-sentence-item { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-item:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-item:active { cursor: grabbing; }
+.order-sentence-item.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-item.correct { background: var(--success); }
+.order-sentence-item.wrong { background: var(--danger); }
+.order-sentence-item.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); max-width: 90vw; }
+.order-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-sentence-text { flex: 1; }
+.order-feedback { width: 100%; padding: 0.5rem 0; display: none; }
+.order-feedback.show { display: block; }
+.order-feedback .correct-text { color: var(--success); font-weight: 600; }
+.order-feedback .wrong-text { color: var(--danger); }
+
+/* Order Card Activity - New class names for classic order */
+.order-items-wrapper { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.order-sentence-card { background: var(--primary); color: white; border-radius: 8px; padding: 0.75rem 1rem; font-size: 1rem; cursor: grab; user-select: none; display: flex; align-items: center; gap: 0.75rem; transition: transform 0.1s, box-shadow 0.1s; }
+.order-sentence-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.order-sentence-card:active { cursor: grabbing; }
+.order-sentence-card.dragging { opacity: 0.5; transform: scale(1.02); }
+.order-sentence-card.correct { background: var(--success); }
+.order-sentence-card.wrong { background: var(--danger); }
+.order-card-num { background: rgba(255,255,255,0.3); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 600; min-width: 1.5rem; text-align: center; }
+.order-card-text { flex: 1; }
+.order-buttons { margin-top: 0.5rem; }
+
+/* Select Activity - Multi-choice checkboxes */
+.select-container { display: flex; flex-direction: column; gap: 1rem; }
+.select-question { border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; display: flex; gap: 0.75rem; }
+.select-question.answered .select-checkbox { pointer-events: none; }
+.select-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.select-content { flex: 1; }
+.select-prompt { font-size: 1.1rem; font-weight: 500; margin-bottom: 0.75rem; }
+.select-options { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
+.select-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.75rem; border-radius: 6px; cursor: pointer; transition: background 0.15s; }
+.select-option:hover { background: #f5f5f5; }
+.select-option.correct { background: #d4edda; }
+.select-option.correct-unchecked { background: #f8f9fa; }
+.select-option.wrong { background: #f8d7da; }
+.select-option.missed { background: #fff3cd; border: 1px dashed var(--warning); }
+.select-checkbox { width: 1.25rem; height: 1.25rem; cursor: pointer; }
+.select-text { font-size: 1rem; }
+.select-check { margin-top: 0.5rem; }
+.select-feedback { margin-top: 0.75rem; display: none; }
+.select-feedback.show { display: block; }
+.select-feedback .correct-text { color: var(--success); font-weight: 600; }
+.select-feedback .wrong-text { color: var(--danger); }
+
+  </style>
+</head>
+<body>
+  
+  <div class="top-nav">
+    <a href="../index.html">← l2-uk-en Curriculum</a>
+    <div class="module-nav">
+      <a href="module-01.html" class="module-nav-link">← Module 01</a>
+      <a href="index.html" class="module-nav-link">A2 Index</a>
+      <a href="module-03.html" class="module-nav-link">Module 03 →</a>
+    </div>
+  </div>
+  <nav class="nav">
+    <h1>Module 02: The Dative II</h1>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="lesson">Lesson</button>
+      <button class="nav-tab" data-section="activity-0">1. Fill</button>
+      <button class="nav-tab" data-section="activity-1">2. Order</button>
+      <button class="nav-tab" data-section="activity-2">3. Fill</button>
+      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
+      <button class="nav-tab" data-section="activity-4">5. T/F</button>
+      <button class="nav-tab" data-section="activity-5">6. Match</button>
+      <button class="nav-tab" data-section="activity-6">7. Sort</button>
+      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="vocab">Vocab</button>
+    </div>
+  </nav>
+  <main>
+    
+    <section id="lesson" class="section active">
+      <div class="lesson-header">
+        <span class="level-badge">A2 · A2.1</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">The Dative II</h2>
+        <p style="color:var(--text-muted)">To Whom - Nouns</p>
+      </div>
+      
+    <div class="card section-intro">
+      <h3>📖 Introduction</h3>
+      <div class="md-content"><h2 id="warmup">warm-up</h2>
+<h3 id="frompronounstonouns">From Pronouns to Nouns</h3>
+<p>In Module 31, you learned dative pronouns (мені, тобі, йому…). Now let's apply dative to <strong>nouns</strong> - to friends, family, people by name!</p>
+<p><strong>Compare:</strong></p>
+<ul>
+<li>Я даю книгу <strong>йому</strong>. (I give the book to him - pronoun)</li>
+<li>Я даю книгу <strong>другові</strong>. (I give the book to my friend - noun)</li>
+</ul>
+<p><strong>The key question:</strong> Кому? (To whom?)</p>
+<ul>
+<li>Кому ти пишеш? - To whom are you writing?</li>
+<li>Другові. / Сестрі. / Батькові. - To a friend. / To sister. / To father.</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Ukrainian has TWO masculine dative endings: <strong>-ові</strong> and <strong>-у</strong>. The -ові ending is uniquely Ukrainian! It developed to make speech clearer (since -у is also genitive/locative). When you use "-ові," you're using a distinctly Ukrainian form that sets it apart from other Slavic languages.</p>
+</blockquote>
+<h2 id="presentation">presentation</h2>
+<h3 id="dativeendingsoverview">Dative Endings Overview</h3>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Nominative</th>
+<th>Dative</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td>-consonant</td>
+<td>-ові / -у</td>
+<td>друг → другові</td>
+</tr>
+<tr>
+<td>Masculine soft</td>
+<td>-ь</td>
+<td>-еві / -ю</td>
+<td>вчитель → вчителеві</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td>-а</td>
+<td>-і</td>
+<td>сестра → сестрі</td>
+</tr>
+<tr>
+<td>Feminine soft</td>
+<td>-я</td>
+<td>-і</td>
+<td>Марія → Марії</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td>-о/-е</td>
+<td>-у/-ові</td>
+<td>місто → місту</td>
+</tr>
+<tr>
+<td>Plural (all)</td>
+<td>-</td>
+<td>-ам</td>
+<td>друзі → друзям</td>
+</tr>
+</tbody>
+</table>
+<h3 id="masculinedativevs">Masculine Dative: -ові vs -у</h3>
+<p><strong>Both endings are correct!</strong> Ukrainians use both:</p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Dative (-ові)</th>
+<th>Dative (-у)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>друг</td>
+<td>друг<strong>ові</strong></td>
+<td>друг<strong>у</strong></td>
+</tr>
+<tr>
+<td>брат</td>
+<td>брат<strong>ові</strong></td>
+<td>брат<strong>у</strong></td>
+</tr>
+<tr>
+<td>студент</td>
+<td>студент<strong>ові</strong></td>
+<td>студент<strong>у</strong></td>
+</tr>
+<tr>
+<td>батько</td>
+<td>батьк<strong>ові</strong></td>
+<td>батьк<strong>у</strong></td>
+</tr>
+<tr>
+<td>Андрій</td>
+<td>Андрі<strong>єві</strong></td>
+<td>Андрі<strong>ю</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: When to Use Which?</strong></p>
+  <ul>
+  <li><strong>-ові/-еві</strong> sounds more formal, literary, distinctly Ukrainian</li>
+  <li><strong>-у/-ю</strong> sounds more casual, conversational</li>
+  <li>For names, both work: "Іванові" or "Івану"</li>
+  <li>In modern speech, -ові is becoming more popular as a marker of Ukrainian identity</li>
+  </ul>
+</blockquote>
+<p><strong>Consonant changes before -і:</strong></p>
+<ul>
+<li>г → з: друг → дру<strong>з</strong>і (but also другові)</li>
+<li>к → ц: студентка → студент<strong>ц</strong>і</li>
+<li>х → с: свекруха → свекру<strong>с</strong>і</li>
+</ul>
+<blockquote>
+  <p>📜 <strong>History Bite: The -ові Ending</strong></p>
+  <p>The -ові ending developed in Ukrainian during the medieval period (12th-14th centuries) and became a distinctive marker of the language. While Russian uses only -у, Ukrainian proudly maintains both. After Ukraine's independence, using -ові became associated with conscious Ukrainian language use - it's grammar with identity!</p>
+</blockquote>
+<h3 id="femininedative">Feminine Dative: -і</h3>
+<p>Feminine nouns change <strong>-а/-я</strong> to <strong>-і</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Dative</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>мама</td>
+<td>мам<strong>і</strong></td>
+<td>Я дзвоню мамі.</td>
+</tr>
+<tr>
+<td>сестра</td>
+<td>сестр<strong>і</strong></td>
+<td>Допоможи сестрі.</td>
+</tr>
+<tr>
+<td>подруга</td>
+<td>подруз<strong>і</strong></td>
+<td>Розкажи подрузі.</td>
+</tr>
+<tr>
+<td>бабуся</td>
+<td>бабус<strong>і</strong></td>
+<td>Напиши бабусі.</td>
+</tr>
+<tr>
+<td>Марія</td>
+<td>Марі<strong>ї</strong></td>
+<td>Дай це Марії.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Remember the consonant changes:</strong></p>
+<ul>
+<li>г → з: подру<strong>г</strong>а → подру<strong>з</strong>і</li>
+<li>к → ц: донь<strong>к</strong>а → донь<strong>ц</strong>і</li>
+<li>х → с: невіст<strong>к</strong>а → невіст<strong>ц</strong>і</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner: Addressing People</strong></p>
+  <p>When you need to address someone indirectly, use dative:</p>
+  <ul>
+  <li>Передай привіт <strong>мамі</strong>! (Say hi to mom!)</li>
+  <li>Скажи <strong>Олені</strong>, що я чекаю. (Tell Olena I'm waiting.)</li>
+  <li>Побажай <strong>бабусі</strong> здоров'я! (Wish grandma health!)</li>
+  </ul>
+  <p>This is extremely common in everyday Ukrainian conversations!</p>
+</blockquote>
+<h3 id="neuterdative">Neuter Dative: -у/-ові</h3>
+<p>Neuter nouns take <strong>-у</strong> (or sometimes -ові for emphasis):</p>
+<table>
+<thead>
+<tr>
+<th>Nominative</th>
+<th>Dative</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>місто</td>
+<td>міст<strong>у</strong></td>
+<td>Що потрібно місту?</td>
+</tr>
+<tr>
+<td>село</td>
+<td>сел<strong>у</strong></td>
+<td>Допомога селу.</td>
+</tr>
+<tr>
+<td>дитя</td>
+<td>дитят<strong>і</strong></td>
+<td>Дай дитяті іграшку.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Neuter dative is relatively rare because neuter nouns are mostly things, not recipients. You'll use it mostly with <strong>дитя</strong> (child), <strong>немовля</strong> (baby), or abstract concepts like "місту потрібні дороги" (the city needs roads).</p>
+</blockquote>
+<h3 id="pluraldative">Plural Dative: -ам/-ям</h3>
+<p>All genders form plural dative with <strong>-ам</strong> (hard) or <strong>-ям</strong> (soft):</p>
+<table>
+<thead>
+<tr>
+<th>Nominative Sg</th>
+<th>Nominative Pl</th>
+<th>Dative Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>друг</td>
+<td>друзі</td>
+<td>друз<strong>ям</strong></td>
+</tr>
+<tr>
+<td>сестра</td>
+<td>сестри</td>
+<td>сестр<strong>ам</strong></td>
+</tr>
+<tr>
+<td>батько</td>
+<td>батьки</td>
+<td>батьк<strong>ам</strong></td>
+</tr>
+<tr>
+<td>студент</td>
+<td>студенти</td>
+<td>студент<strong>ам</strong></td>
+</tr>
+<tr>
+<td>дитина</td>
+<td>діти</td>
+<td>діт<strong>ям</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example sentences:</strong></p>
+<ul>
+<li>Я допомагаю <strong>студентам</strong>. (I help students.)</li>
+<li>Вона пише <strong>батькам</strong>. (She writes to her parents.)</li>
+<li>Розкажи це <strong>друзям</strong>! (Tell this to friends!)</li>
+</ul>
+<h3 id="commonpatterns">Common Patterns</h3>
+<p><strong>Letter/message writing:</strong></p>
+<ul>
+<li>писати листа <strong>другові</strong> (write a letter to a friend)</li>
+<li>надіслати повідомлення <strong>колезі</strong> (send a message to a colleague)</li>
+<li>відповісти <strong>клієнтові</strong> (reply to a client)</li>
+</ul>
+<p><strong>Giving and showing:</strong></p>
+<ul>
+<li>дати подарунок <strong>сестрі</strong> (give a gift to sister)</li>
+<li>показати фото <strong>батькам</strong> (show photos to parents)</li>
+<li>принести квіти <strong>дівчині</strong> (bring flowers to girlfriend)</li>
+</ul>
+<p><strong>Helping and telling:</strong></p>
+<ul>
+<li>допомогти <strong>бабусі</strong> (help grandma)</li>
+<li>сказати правду <strong>другові</strong> (tell the truth to a friend)</li>
+<li>пояснити <strong>студентові</strong> (explain to a student)</li>
+</ul>
+<blockquote>
+  <p>⚡ <strong>Pro Tip: Names in Dative</strong></p>
+  <p>Ukrainian names follow the same rules:</p>
+  <ul>
+  <li>Іван → Іван<strong>ові</strong> / Іван<strong>у</strong></li>
+  <li>Олена → Олен<strong>і</strong></li>
+  <li>Андрій → Андрі<strong>єві</strong> / Андрі<strong>ю</strong></li>
+  <li>Марія → Марі<strong>ї</strong></li>
+  </ul>
+  <p>Foreign names often don't decline: "Скажи Джон<strong>у</strong>" but sometimes "Скажи Джон"</p>
+</blockquote>
+<h2 id="practice">practice</h2>
+<h3 id="nountransformations">Noun Transformations</h3>
+<p>Change nominative to dative:</p>
+<p><strong>Masculine:</strong></p>
+<ol>
+<li><p>друг</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">другові / другу</div></div>
+<ol start="2">
+<li><p>брат</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">братові / брату</div></div>
+<ol start="3">
+<li><p>студент</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">студентові / студенту</div></div>
+<ol start="4">
+<li><p>батько</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">батькові / батьку</div></div>
+<ol start="5">
+<li><p>вчитель</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">вчителеві / вчителю</div></div>
+<p><strong>Feminine:</strong></p>
+<ol>
+<li><p>сестра</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">сестрі</div></div>
+<ol start="2">
+<li><p>мама</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">мамі</div></div>
+<ol start="3">
+<li><p>подруга</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">подрузі</div></div>
+<ol start="4">
+<li><p>бабуся</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">бабусі</div></div>
+<ol start="5">
+<li><p>колега</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">колезі</div></div>
+<p><strong>Plural:</strong></p>
+<ol>
+<li><p>друзі</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">друзям</div></div>
+<ol start="2">
+<li><p>батьки</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">батькам</div></div>
+<ol start="3">
+<li><p>студенти</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">студентам</div></div>
+<ol start="4">
+<li><p>сестри</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">сестрам</div></div>
+<h3 id="completethesentences">Complete the Sentences</h3>
+<p>Fill in the dative form:</p>
+<ol>
+<li><p>Я пишу листа ___ (брат).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">братові / брату</div></div>
+<ol start="2">
+<li><p>Допоможи ___ (бабуся)!</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">бабусі</div></div>
+<ol start="3">
+<li><p>Вона дзвонить ___ (подруга).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">подрузі</div></div>
+<ol start="4">
+<li><p>Покажи це ___ (батьки).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">батькам</div></div>
+<ol start="5">
+<li><p>Скажи ___ (Марія), що я чекаю.</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">Марії</div></div>
+<ol start="6">
+<li>Він дає гроші ___ (студенти).</li>
+</ol>
+<blockquote>
+  <p>[!!answer] студентам</p>
+</blockquote>
+<h3 id="buildfullsentences">Build Full Sentences</h3>
+<p>Create sentences using: Subject + дати/показати/сказати + Object + Dative noun</p>
+<ol>
+<li><p>Я / подарунок / сестра</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-19', this)">Показати відповідь</button><div class="answer-block" id="ans-19"><div class="callout callout-answer" data-callout="answer">Я даю подарунок сестрі.</div></div>
+<ol start="2">
+<li><p>Вона / лист / друг</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Вона пише листа другові.</div></div>
+<ol start="3">
+<li><p>Ми / фото / батьки</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-21', this)">Показати відповідь</button><div class="answer-block" id="ans-21"><div class="callout callout-answer" data-callout="answer">Ми показуємо фото батькам.</div></div>
+<ol start="4">
+<li><p>Він / правда / брат</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-22', this)">Показати відповідь</button><div class="answer-block" id="ans-22"><div class="callout callout-answer" data-callout="answer">Він каже правду братові.</div></div>
+<h2 id="production">production</h2>
+<h3 id="realsituations">Real Situations</h3>
+<p><strong>Scenario 1: At the post office</strong></p>
+<ul>
+<li>Я хочу надіслати посилку.</li>
+<li>Кому?</li>
+<li>Братові. Він живе в Львові.</li>
+<li>Напишіть адресу отримувача.</li>
+</ul>
+<p><strong>Scenario 2: Planning a party</strong></p>
+<ul>
+<li>Кому ти надіслав запрошення?</li>
+<li>Усім друзям! Олегові, Марії, Андрієві…</li>
+<li>А батькам?</li>
+<li>Так, батькам теж!</li>
+</ul>
+<p><strong>Scenario 3: Office communication</strong></p>
+<ul>
+<li>Передай це директорові.</li>
+<li>А копію?</li>
+<li>Копію надішли колегам по електронній пошті.</li>
+</ul>
+<hr />
+<hr />
+<hr />
+<hr /></div>
+    </div>
+  
+      
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('activity-0')">Activities →</button>
+      </div>
+    </section>
+  
+    
+    <section id="activity-0" class="section"><div class="card"><h3>Dative Noun Endings</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+      <div id="activity-0-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
+      <div id="activity-1-container" class="order-container"></div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-2" class="section"><div class="card"><h3>Choose the Dative Noun Form</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
+      <div id="activity-2-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-3" class="section"><div class="card"><h3>Dative Noun Endings</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
+      <div id="activity-3-container"></div>
+      <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-4" class="section"><div class="card"><h3>Dative Noun Rules</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+      <div id="activity-4-container"></div>
+      <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-5" class="section"><div class="card"><h3>Dative Noun Pairs</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
+      <div class="match-container" id="activity-5-container"><svg class="match-lines" id="activity-5-lines"></svg>
+        <div class="match-column" id="activity-5-left"></div>
+        <div class="match-column" id="activity-5-right"></div>
+      </div>
+      <div class="completion-message" id="activity-5-complete"><h3>Perfect!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-6" class="section"><div class="card"><h3>Dative Ending Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/14</span></div>
+      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
+      <div class="sort-groups" id="activity-6-groups"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-7" class="section"><div class="card"><h3>Dative Sentence Building</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
+      <div id="activity-7-container" class="order-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    </div></section>
+    
+    <section id="vocab" class="section">
+      <div class="card">
+        <h3>Словник (0)</h3>
+        <div class="vocab-table-container">
+          <table class="vocab-table">
+            <thead><tr>
+    <th>Слово</th>
+    
+    
+    <th>Переклад</th>
+    
+  </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="showSection('lesson')">← Back to Lesson</button>
+      </div>
+    </section>
+  </main><footer>Module 02 · curricula-opus</footer>
+  <script>
+
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Noun Endings","data":{"type":"fill-blank","items":[{"prompt":"Я пишу довгого листа ___ (брат) у Львів.","answer":"братові / брату","hints":["брат"],"options":["брат","братові","брату","брата"]},{"prompt":"Допоможи, будь ласка, ___ (бабуся) на кухні!","answer":"бабусі","hints":["бабуся"],"options":["бабуся","бабусі","бабусю","бабусею"]},{"prompt":"Вона щодня дзвонить своїй ___ (подруга) ввечері.","answer":"подрузі","hints":["подруга"],"options":["подруга","подрузі","подругу","подругою"]},{"prompt":"Покажи ці нові фотографії ___ (батьки) сьогодні.","answer":"батькам","hints":["батьки"],"options":["батьки","батьків","батькам","батьками"]},{"prompt":"Скажи ___ (Марія), що я чекаю біля кафе.","answer":"Марії","hints":["Марія"],"options":["Марія","Марії","Марію","Марією"]},{"prompt":"Він щомісяця дає гроші ___ (студенти) на проєкти.","answer":"студентам","hints":["студенти"],"options":["студенти","студентів","студентам","студентами"]},{"prompt":"Що саме потрібно цьому ___ (місто) зараз?","answer":"місту","hints":["місто"],"options":["місто","міста","місту","містом"]},{"prompt":"Я завжди з радістю допомагаю ___ (вчитель).","answer":"вчителеві / вчителю","hints":["вчитель"],"options":["вчитель","вчителеві","вчителю","вчителя"]},{"prompt":"Розкажи цю цікаву історію ___ (друзі) завтра!","answer":"друзям","hints":["друзі"],"options":["друзі","друзів","друзям","друзями"]},{"prompt":"Напиши коротке повідомлення ___ (колега) про зустріч.","answer":"колезі","hints":["колега"],"options":["колега","колегу","колезі","колегою"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["братові","Я","пишу","листа","довгого","у Львів","старшому","своєму"],"answer":"Я пишу довгого листа своєму старшому братові у Львів.","translation":"I'm writing a long letter to my older brother in Lviv."},{"words":["бабусі","Допоможи","на кухні","будь ласка","нашій","готувати","обід"],"answer":"Допоможи нашій бабусі готувати обід на кухні, будь ласка!","translation":"Help our grandma cook lunch in the kitchen, please!"},{"words":["дзвонить","Вона","подрузі","щодня","ввечері","найкращій","своїй","після роботи"],"answer":"Вона щодня дзвонить своїй найкращій подрузі ввечері після роботи.","translation":"She calls her best friend every evening after work."},{"words":["батькам","Покажи","нові","фотографії","ці","сьогодні","нашим","із відпустки"],"answer":"Покажи ці нові фотографії із відпустки нашим батькам сьогодні.","translation":"Show these new vacation photos to our parents today."},{"words":["Марії","Скажи","що","чекаю","я","біля кафе","нашого","центрального"],"answer":"Скажи Марії, що я чекаю біля нашого центрального кафе.","translation":"Tell Mariya that I'm waiting near our central cafe."},{"words":["студентам","Він","дає","гроші","щомісяця","на проєкти","талановитим","молодим"],"answer":"Він щомісяця дає гроші талановитим молодим студентам на проєкти.","translation":"He gives money to talented young students monthly for projects."},{"words":["місту","потрібно","Що","цьому","нашому","зараз","старому","найбільше"],"answer":"Що найбільше зараз потрібно нашому старому місту?","translation":"What does our old city need most now?"},{"words":["вчителеві","Я","допомагаю","завжди","з радістю","нашому","новому","молодому"],"answer":"Я завжди з радістю допомагаю нашому новому молодому вчителеві.","translation":"I always gladly help our new young teacher."},{"words":["друзям","Розкажи","цю","історію","цікаву","завтра","українську","старим","своїм"],"answer":"Розкажи цю цікаву українську історію своїм старим друзям завтра!","translation":"Tell this interesting Ukrainian story to your old friends tomorrow!"},{"words":["подарунок","Я","даю","сестрі","гарний","на день народження","молодшій","своїй"],"answer":"Я даю гарний подарунок своїй молодшій сестрі на день народження.","translation":"I give a nice gift to my younger sister for her birthday."}]}},{"id":"activity-2","type":"fill-blank","title":"Choose the Dative Noun Form","data":{"type":"fill-blank","items":[{"prompt":"друг → ___","answer":"другові / другу","options":["друга","другові","другу"]},{"prompt":"сестра → ___","answer":"сестрі","options":["сестру","сестрі","сестрою"]},{"prompt":"батьки → ___","answer":"батькам","options":["батьків","батькам","батьками"]},{"prompt":"місто → ___","answer":"місту","options":["міста","місту","містом"]},{"prompt":"студент → ___","answer":"студентові / студенту","options":["студента","студентові","студенту"]},{"prompt":"подруга → ___","answer":"подрузі","options":["подругу","подрузі","подругою"]},{"prompt":"вчитель → ___","answer":"вчителеві / вчителю","options":["вчителя","вчителеві","вчителю"]},{"prompt":"мама → ___","answer":"мамі","options":["маму","мамі","мамою"]},{"prompt":"діти → ___","answer":"дітям","options":["дітей","дітям","дітьми"]},{"prompt":"колега → ___","answer":"колезі","options":["колегу","колезі","колегою"]}]}},{"id":"activity-3","type":"quiz","title":"Dative Noun Endings","data":{"type":"quiz","questions":[{"question":"What is the dative form of \"друг\"?","options":["другові / другу","друг","друга","другом"],"correctIndex":0,"explanation":"Masculine dative -ові/-у"},{"question":"What is the dative form of \"сестра\"?","options":["сестрі","сестра","сестру","сестрою"],"correctIndex":0,"explanation":"Feminine dative -і"},{"question":"What is the dative form of \"місто\"?","options":["місту","місто","міста","містом"],"correctIndex":0,"explanation":"Neuter dative -у"},{"question":"What is the dative form of \"батьки\" (parents - plural)?","options":["батькам","батьки","батьків","батьками"],"correctIndex":0,"explanation":"Plural dative -ам"},{"question":"What is the dative form of \"вчитель\"?","options":["вчителеві / вчителю","вчитель","вчителя","вчителем"],"correctIndex":0,"explanation":"Masculine soft dative -еві/-ю"},{"question":"Which consonant change occurs for \"подруга\" in dative?","options":["г → з","к → ц","х → с","No change"],"correctIndex":0,"explanation":"подруга → подрузі (г → з)"},{"question":"What is the dative form of \"мама\"?","options":["мамі","мама","маму","мамою"],"correctIndex":0,"explanation":"Feminine dative -і"},{"question":"What is the dative form of \"студент\" (plural)?","options":["студентам","студенти","студентів","студентами"],"correctIndex":0,"explanation":"Plural dative -ам"},{"question":"When is the -ові ending typically used for masculine nouns?","options":["More formal/literary","More casual/conversational","Only for names","Never"],"correctIndex":0,"explanation":"-ові is more formal/distinctly Ukrainian"},{"question":"What is the dative form of \"дитина\" (child)?","options":["дитяті","дитина","дитину","дитиною"],"correctIndex":0,"explanation":"Neuter dative -яті (special case)"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Dative Noun Rules","data":{"type":"true-false","statements":[{"statement":"Masculine nouns can end in -ові or -у in dative.","isTrue":true,"explanation":"Correct!"},{"statement":"Feminine nouns ending in -а change to -і in dative.","isTrue":true,"explanation":"Correct!"},{"statement":"Plural nouns (all genders) end in -ам or -ям in dative.","isTrue":true,"explanation":"Correct!"},{"statement":"Neuter nouns typically end in -і in dative.","isTrue":false,"explanation":"Incorrect. Neuter nouns typically end in -у in dative (місто → місту)."},{"statement":"The -ові ending is considered more formal than -у for masculine nouns.","isTrue":true,"explanation":"Correct!"},{"statement":"\"г → з\" is a common consonant change before the dative ending -і.","isTrue":true,"explanation":"Correct! (подруга → подрузі)"},{"statement":"Names like \"Андрій\" only take the -у ending in dative.","isTrue":false,"explanation":"Incorrect. Андрій → Андрієві / Андрію."},{"statement":"\"Я дзвоню мамі\" correctly uses the dative case.","isTrue":true,"explanation":"Correct!"},{"statement":"Dative nouns answer the question \"Кому?\".","isTrue":true,"explanation":"Correct!"},{"statement":"The dative form of \"колега\" (f) is \"колезі\".","isTrue":true,"explanation":"Correct! (колега is a-stem, so changes to -і, with г→з consonant change implicit)"}]}},{"id":"activity-5","type":"match-up","title":"Dative Noun Pairs","data":{"type":"match-up","pairs":[{"left":"друг","right":"другові"},{"left":"сестра","right":"сестрі"},{"left":"батьки","right":"батькам"},{"left":"місто","right":"місту"},{"left":"вчитель","right":"вчителеві"},{"left":"подруга","right":"подрузі"},{"left":"мама","right":"мамі"},{"left":"студенти","right":"студентам"},{"left":"брат","right":"братові"},{"left":"дитина","right":"дитині"}],"shuffleRight":true}},{"id":"activity-6","type":"group-sort","title":"Dative Ending Categories","data":{"type":"group-sort","groups":[{"id":"--","name":"-ові/-у","items":["другові","братові","студенту","вчителю"],"nameUk":"Masculine"},{"id":"-","name":"-і","items":["сестрі","мамі","подрузі","бабусі"],"nameUk":"Feminine"},{"id":"-","name":"-у","items":["місту","селу"],"nameUk":"Neuter"},{"id":"--","name":"-ам/-ям","items":["батькам","друзям","студентам","дітям"],"nameUk":"Plural"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Dative Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","даю","подарунок","сестрі"],"answer":"Я даю подарунок сестрі.","translation":"I give a gift to my sister."},{"words":["Вона","пише","листа","другові"],"answer":"Вона пише листа другові.","translation":"She writes a letter to a friend."},{"words":["Ми","показуємо","фото","батькам"],"answer":"Ми показуємо фото батькам.","translation":"We show photos to our parents."},{"words":["Він","допомагає","бабусі","на кухні"],"answer":"Він допомагає бабусі на кухні.","translation":"He helps grandma in the kitchen."},{"words":["Вони","дзвонять","друзям","щодня"],"answer":"Вони дзвонять друзям щодня.","translation":"They call friends every day."},{"words":["Я","кажу","правду","вчителеві"],"answer":"Я кажу правду вчителеві.","translation":"I tell the truth to the teacher."},{"words":["Вона","надсилає","листа","колезі"],"answer":"Вона надсилає листа колезі.","translation":"She sends a letter to a colleague."},{"words":["Ми","даємо","книгу","студентові"],"answer":"Ми даємо книгу студентові.","translation":"We give a book to the student."},{"words":["Він","розповідає","історію","дітям"],"answer":"Він розповідає історію дітям.","translation":"He tells a story to the children."},{"words":["Я","купую","квіти","мамі"],"answer":"Я купую квіти мамі.","translation":"I buy flowers for mom."}]}}];
+    const vocabData = [];
+  
+// Answer callout toggle (for new > [!answer] syntax)
+function toggleAnswer(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const isUkrainian = document.querySelector('.level-badge')?.textContent.match(/B[12]|C[12]/);
+  const showText = isUkrainian ? 'Показати відповідь' : 'Show Answer';
+  const hideText = isUkrainian ? 'Сховати відповідь' : 'Hide Answer';
+  const show = !el.classList.contains('show');
+  if (show) {
+    el.classList.add('show');
+    btn.textContent = hideText;
+    btn.classList.add('revealed');
+  } else {
+    el.classList.remove('show');
+    btn.textContent = showText;
+    btn.classList.remove('revealed');
+  }
+}
+
+// Section navigation
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id)?.classList.add('active');
+  document.querySelector('[data-section="' + id + '"]')?.classList.add('active');
+}
+document.querySelectorAll('.nav-tab').forEach(t => t.addEventListener('click', () => showSection(t.dataset.section)));
+
+// Activity reset dispatcher
+function resetActivity(sectionId) {
+  const activity = activitiesData.find(a => a.id === sectionId);
+  if (!activity) return;
+
+  switch (activity.type) {
+    case 'match-up':
+      resetMatch(sectionId);
+      break;
+    case 'quiz':
+      resetQuiz(sectionId);
+      break;
+    case 'true-false':
+      resetTf(sectionId);
+      break;
+    case 'group-sort':
+      resetSort(sectionId);
+      break;
+    case 'fill-blank':
+    case 'gap-fill':
+      resetFill(sectionId);
+      break;
+    case 'order':
+    case 'unjumble':
+      resetOrder(sectionId);
+      break;
+    case 'select':
+      resetSelect(sectionId);
+      break;
+  }
+}
+
+// Initialize all activities from activitiesData array
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof activitiesData === 'undefined') return;
+
+  activitiesData.forEach(activity => {
+    switch (activity.type) {
+      case 'match-up':
+        initMatch(activity.id, activity.data);
+        break;
+      case 'quiz':
+        initQuiz(activity.id, activity.data);
+        break;
+      case 'true-false':
+        initTf(activity.id, activity.data);
+        break;
+      case 'group-sort':
+        initSort(activity.id, activity.data);
+        break;
+      case 'fill-blank':
+      case 'gap-fill':
+        initFill(activity.id, activity.data);
+        break;
+      case 'order':
+      case 'unjumble':
+        initOrder(activity.id, activity.data);
+        break;
+      case 'select':
+        initSelect(activity.id, activity.data);
+        break;
+    }
+  });
+
+  // Initialize vocabulary
+  if (typeof initVocab === 'function') initVocab();
+});
+
+
+// Quiz Activity - supports multiple instances
+const quizState = {};
+
+function initQuiz(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.questions || !data.questions.length) return;
+
+  quizState[sectionId] = { score: 0, answered: 0, total: data.questions.length, data: data };
+
+  c.innerHTML = '';
+  data.questions.forEach((q, i) => {
+    const sh = [...q.options].sort(() => Math.random() - 0.5);
+    const cor = sh.indexOf(q.options[q.correctIndex]);
+    const div = document.createElement('div');
+    div.className = 'quiz-question';
+    div.dataset.section = sectionId;
+    div.innerHTML = '<h4>Q' + (i + 1) + ': ' + q.question + '</h4><div class="quiz-options">' + sh.map((o, j) => '<div class="quiz-option" data-c="' + (j === cor) + '" data-q="' + i + '" data-section="' + sectionId + '">' + o + '</div>').join('') + '</div><div class="quiz-explanation" id="' + sectionId + '-exp-' + i + '">' + (q.explanation || '') + '</div>';
+    c.appendChild(div);
+  });
+  c.querySelectorAll('.quiz-option').forEach(o => o.addEventListener('click', handleQuiz));
+}
+
+function handleQuiz(e) {
+  const opt = e.target, q = opt.closest('.quiz-question');
+  const sectionId = opt.dataset.section;
+  if (q.classList.contains('answered')) return;
+  q.classList.add('answered');
+
+  const state = quizState[sectionId];
+  if (opt.dataset.c === 'true') {
+    opt.classList.add('correct');
+    state.score++;
+  } else {
+    opt.classList.add('wrong');
+    q.querySelector('[data-c="true"]').classList.add('correct');
+  }
+  document.getElementById(sectionId + '-exp-' + opt.dataset.q)?.classList.add('show');
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+}
+
+function resetQuiz(sectionId) {
+  const state = quizState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initQuiz(sectionId, state.data);
+}
+
+
+// True/False Activity - supports multiple instances
+const tfState = {};
+
+function initTf(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.statements || !data.statements.length) return;
+
+  tfState[sectionId] = { score: 0, answered: 0, total: data.statements.length, data: data };
+
+  c.innerHTML = '';
+  data.statements.forEach((s, i) => {
+    const div = document.createElement('div');
+    div.className = 'tf-statement';
+    div.dataset.section = sectionId;
+    div.innerHTML = '<p class="tf-text">' + s.statement + '</p>' +
+      '<div class="tf-buttons">' +
+      '<button class="tf-btn" data-value="true" data-idx="' + i + '" data-section="' + sectionId + '">True</button>' +
+      '<button class="tf-btn" data-value="false" data-idx="' + i + '" data-section="' + sectionId + '">False</button>' +
+      '</div>' +
+      '<div class="tf-explanation" id="' + sectionId + '-exp-' + i + '">' + (s.explanation || '') + '</div>';
+    div.dataset.correct = s.isTrue;
+    c.appendChild(div);
+  });
+  c.querySelectorAll('.tf-btn').forEach(b => b.addEventListener('click', handleTf));
+}
+
+function handleTf(e) {
+  const btn = e.target;
+  const sectionId = btn.dataset.section;
+  const idx = parseInt(btn.dataset.idx);
+  const statement = btn.closest('.tf-statement');
+  const state = tfState[sectionId];
+  if (statement.classList.contains('answered')) return;
+
+  statement.classList.add('answered');
+  const correct = state.data.statements[idx].isTrue;
+  const clicked = btn.dataset.value === 'true';
+
+  if (clicked === correct) {
+    btn.classList.add('correct');
+    state.score++;
+  } else {
+    btn.classList.add('wrong');
+    // Highlight the correct answer
+    statement.querySelector('[data-value="' + correct + '"]').classList.add('correct');
+  }
+
+  const exp = document.getElementById(sectionId + '-exp-' + idx);
+  if (exp && exp.textContent) exp.classList.add('show');
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+}
+
+function resetTf(sectionId) {
+  const state = tfState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initTf(sectionId, state.data);
+}
+
+
+// Match Activity - supports multiple instances
+const matchState = {};
+
+function initMatch(sectionId, data) {
+  const container = document.getElementById(sectionId + '-container');
+  const leftCol = document.getElementById(sectionId + '-left');
+  const rightCol = document.getElementById(sectionId + '-right');
+  if (!container || !leftCol || !rightCol || !data.pairs || !data.pairs.length) return;
+
+  const pairs = data.pairs;
+  matchState[sectionId] = { selected: null, score: 0, matched: [], total: pairs.length, data: data };
+
+  // Create left column items
+  const shuffledLeft = pairs.map((p, i) => ({ text: p.left, idx: i })).sort(() => Math.random() - 0.5);
+  leftCol.innerHTML = shuffledLeft.map(p => '<div class="match-item" data-pair="' + p.idx + '" data-section="' + sectionId + '" data-side="left">' + p.text + '</div>').join('');
+
+  // Create right column items
+  const shuffledRight = pairs.map((p, i) => ({ text: p.right, idx: i })).sort(() => Math.random() - 0.5);
+  rightCol.innerHTML = shuffledRight.map(p => '<div class="match-item" data-pair="' + p.idx + '" data-section="' + sectionId + '" data-side="right">' + p.text + '</div>').join('');
+
+  // Attach click handlers
+  leftCol.querySelectorAll('.match-item').forEach(item => {
+    item.addEventListener('click', () => handleMatchLeft(item));
+  });
+  rightCol.querySelectorAll('.match-item').forEach(item => {
+    item.addEventListener('click', () => handleMatchRight(item));
+  });
+}
+
+function handleMatchLeft(item) {
+  const sectionId = item.dataset.section;
+  const state = matchState[sectionId];
+  if (item.classList.contains('matched')) return;
+
+  const leftCol = document.getElementById(sectionId + '-left');
+  leftCol.querySelectorAll('.match-item').forEach(i => i.classList.remove('selected'));
+  item.classList.add('selected');
+  state.selected = { el: item, pair: item.dataset.pair };
+}
+
+function handleMatchRight(item) {
+  const sectionId = item.dataset.section;
+  const state = matchState[sectionId];
+  if (item.classList.contains('matched') || !state.selected) return;
+
+  if (state.selected.pair === item.dataset.pair) {
+    state.selected.el.classList.remove('selected');
+    state.selected.el.classList.add('matched');
+    item.classList.add('matched');
+    state.matched.push({ left: state.selected.el, right: item });
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    drawMatchLines(sectionId);
+    if (state.score === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+  } else {
+    item.classList.add('wrong');
+    setTimeout(() => item.classList.remove('wrong'), 300);
+  }
+  state.selected = null;
+}
+
+function drawMatchLines(sectionId) {
+  const svg = document.getElementById(sectionId + '-lines');
+  const container = document.getElementById(sectionId + '-container');
+  const state = matchState[sectionId];
+  if (!svg || !container || !state) return;
+
+  const r = container.getBoundingClientRect();
+  svg.innerHTML = '';
+  svg.setAttribute('viewBox', '0 0 ' + r.width + ' ' + r.height);
+  state.matched.forEach(p => {
+    const lr = p.left.getBoundingClientRect(), rr = p.right.getBoundingClientRect();
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', lr.right - r.left);
+    line.setAttribute('y1', lr.top + lr.height / 2 - r.top);
+    line.setAttribute('x2', rr.left - r.left);
+    line.setAttribute('y2', rr.top + rr.height / 2 - r.top);
+    line.setAttribute('stroke', '#26a269');
+    line.setAttribute('stroke-width', '2');
+    svg.appendChild(line);
+  });
+}
+
+function resetMatch(sectionId) {
+  const state = matchState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  document.getElementById(sectionId + '-lines').innerHTML = '';
+  initMatch(sectionId, state.data);
+}
+
+// Redraw lines on resize for all match activities
+window.addEventListener('resize', () => {
+  Object.keys(matchState).forEach(sectionId => drawMatchLines(sectionId));
+});
+
+
+// Sort Activity - supports multiple instances
+const sortState = {};
+
+function initSort(sectionId, data) {
+  const pool = document.getElementById(sectionId + '-items');
+  const groupsContainer = document.getElementById(sectionId + '-groups');
+  if (!pool || !groupsContainer || !data.groups || !data.groups.length) return;
+
+  const groups = data.groups;
+  const totalItems = groups.reduce((sum, g) => sum + g.items.length, 0);
+  sortState[sectionId] = { score: 0, total: totalItems, dragItem: null, data: data };
+
+  // Create group containers
+  groupsContainer.innerHTML = groups.map((g, i) =>
+    '<div class="sort-group" data-group="' + i + '" data-section="' + sectionId + '"><h4>' + g.name + '</h4><div class="sort-items"></div></div>'
+  ).join('');
+
+  // Flatten and shuffle all items
+  const allItems = groups.flatMap((g, gi) => g.items.map(item => ({ text: item, group: gi })));
+  allItems.sort(() => Math.random() - 0.5);
+
+  // Create draggable items
+  pool.innerHTML = '';
+  allItems.forEach(item => {
+    const el = document.createElement('div');
+    el.className = 'sort-item';
+    el.textContent = item.text;
+    el.draggable = true;
+    el.dataset.group = item.group;
+    el.dataset.section = sectionId;
+    el.addEventListener('dragstart', () => {
+      sortState[sectionId].dragItem = el;
+      el.classList.add('dragging');
+    });
+    el.addEventListener('dragend', () => {
+      el.classList.remove('dragging');
+      sortState[sectionId].dragItem = null;
+    });
+    pool.appendChild(el);
+  });
+
+  // Setup drop zones
+  groupsContainer.querySelectorAll('.sort-group').forEach(g => {
+    g.addEventListener('dragover', e => {
+      e.preventDefault();
+      g.classList.add('drag-over');
+    });
+    g.addEventListener('dragleave', () => g.classList.remove('drag-over'));
+    g.addEventListener('drop', e => handleSortDrop(e, g));
+  });
+}
+
+function handleSortDrop(e, groupEl) {
+  e.preventDefault();
+  groupEl.classList.remove('drag-over');
+  const sectionId = groupEl.dataset.section;
+  const state = sortState[sectionId];
+  const dragItem = state.dragItem;
+  if (!dragItem) return;
+
+  if (groupEl.dataset.group === dragItem.dataset.group) {
+    dragItem.classList.add('correct');
+    groupEl.querySelector('.sort-items').appendChild(dragItem);
+    dragItem.draggable = false;
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    if (state.score === state.total) document.getElementById(sectionId + '-complete').classList.add('show');
+  } else {
+    dragItem.classList.add('wrong');
+    setTimeout(() => dragItem.classList.remove('wrong'), 300);
+  }
+}
+
+function resetSort(sectionId) {
+  const state = sortState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initSort(sectionId, state.data);
+}
+
+
+// Fill-in Activity - supports multiple instances
+const fillState = {};
+
+function initFill(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  fillState[sectionId] = { score: 0, answered: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'fill-question';
+    div.dataset.section = sectionId;
+
+    // Generate options: correct answer + 3 distractors
+    let options = [];
+    if (item.options && item.options.length >= 4) {
+      options = item.options;
+    } else {
+      // Fallback: generate distractors from other items' answers
+      options = [item.answer];
+      const otherAnswers = data.items
+        .filter((_, idx) => idx !== i)
+        .map(it => it.answer)
+        .filter(a => a && a !== item.answer);
+
+      const shuffled = otherAnswers.sort(() => Math.random() - 0.5);
+      options.push(...shuffled.slice(0, 3));
+
+      while (options.length < 4) {
+        options.push('—');
+      }
+    }
+
+    // Shuffle options
+    const shuffledOptions = [...options].sort(() => Math.random() - 0.5);
+
+    // Replace ___ in the sentence with a dropdown
+    const sentence = (item.prompt || item.sentence || '').replace(/___/g,
+      `<select class="fill-dropdown" data-idx="${i}" data-answer="${item.answer}" data-section="${sectionId}">
+        <option value="" disabled selected>—</option>
+        ${shuffledOptions.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+      </select>`
+    );
+
+    div.innerHTML = `
+      <div class="fill-sentence">
+        <span class="fill-number">${i + 1}.</span>
+        ${sentence}
+      </div>
+      <div class="fill-feedback" id="${sectionId}-fb-${i}"></div>
+    `;
+    c.appendChild(div);
+  });
+
+  // Event delegation for dropdown changes
+  c.addEventListener('change', (e) => {
+    if (e.target.classList.contains('fill-dropdown')) {
+      handleFillChoice(e.target);
+    }
+  });
+}
+
+function handleFillChoice(dropdown) {
+  const q = dropdown.closest('.fill-question');
+  const sectionId = dropdown.dataset.section;
+  const state = fillState[sectionId];
+  if (q.classList.contains('answered')) return;
+
+  const idx = dropdown.dataset.idx;
+  const userAnswer = dropdown.value;
+  const correctAnswer = dropdown.dataset.answer;
+  const fb = document.getElementById(sectionId + '-fb-' + idx);
+
+  q.classList.add('answered');
+  dropdown.disabled = true;
+
+  if (userAnswer === correctAnswer) {
+    dropdown.classList.add('correct');
+    fb.innerHTML = '<span class="correct-text">✓ Correct!</span>';
+    state.score++;
+  } else {
+    dropdown.classList.add('wrong');
+    fb.innerHTML = `<span class="wrong-text">✗ Answer: ${correctAnswer}</span>`;
+  }
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+  if (state.answered === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetFill(sectionId) {
+  const state = fillState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initFill(sectionId, state.data);
+}
+
+
+// Order/Unjumble Activity - supports multiple instances
+const orderState = {};
+
+function initOrder(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  orderState[sectionId] = { score: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  if (data.isUnjumble) {
+    initUnjumble(sectionId, c, data);
+  } else {
+    initClassicOrder(sectionId, c, data);
+  }
+}
+
+// UNJUMBLE: Drag-and-drop words to form sentences
+function initUnjumble(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'unjumble-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle words
+    const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="unjumble-number">${idx + 1}.</div>
+      <div class="unjumble-word-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledWords.map((word, i) => `
+          <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+        `).join('')}
+      </div>
+      <div class="unjumble-actions">
+        <button class="btn btn-sm btn-outline unjumble-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline unjumble-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="unjumble-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initUnjumbleDragDrop(question.querySelector('.unjumble-word-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleUnjumbleClick);
+}
+
+function initUnjumbleDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('dragstart', (e) => {
+      dragItem = word;
+      word.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    word.addEventListener('dragend', () => {
+      word.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    word.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === word) return;
+
+      const rect = word.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, word);
+      } else {
+        row.insertBefore(dragItem, word.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.unjumble-word').forEach(word => {
+    word.addEventListener('touchstart', (e) => {
+      touchItem = word;
+      word.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = word.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClone(e.touches[0]);
+    });
+
+    word.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClone(e.touches[0]);
+
+      // Find which word we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetWord = elements.find(el => el.classList.contains('unjumble-word') && el !== touchItem);
+
+      if (targetWord && targetWord.parentNode === row) {
+        const rect = targetWord.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetWord);
+        } else {
+          row.insertBefore(touchItem, targetWord.nextSibling);
+        }
+      }
+    });
+
+    word.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 40) + 'px';
+      touchClone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleUnjumbleClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('unjumble-check')) {
+    checkUnjumbleAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('unjumble-reset')) {
+    resetUnjumbleQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkUnjumbleAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current word order
+  const words = row.querySelectorAll('.unjumble-word');
+  const userAnswer = Array.from(words).map(w => w.dataset.word).join(' ');
+
+  // Normalize for comparison (handle punctuation)
+  const normalize = (s) => s.replace(/[?!.,]/g, '').toLowerCase().trim();
+  const isCorrect = normalize(userAnswer) === normalize(item.answer);
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    words.forEach(w => w.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetUnjumbleQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.unjumble-word-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.unjumble-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.unjumble-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledWords = [...item.words].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledWords.map(word => `
+    <span class="unjumble-word" draggable="true" data-word="${word}">${word}</span>
+  `).join('');
+
+  initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// CLASSIC ORDER: Drag items into correct sequence
+function initClassicOrder(sectionId, container, data) {
+  const state = orderState[sectionId];
+
+  // Create array with original indices, then shuffle
+  const items = [...data.items].map((item, idx) => ({ text: item, origIdx: idx }));
+  // Fisher-Yates shuffle
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+
+  // Create container div for all items
+  const wrapper = document.createElement('div');
+  wrapper.className = 'order-items-wrapper';
+  wrapper.dataset.section = sectionId;
+
+  // Create each sentence as a draggable item
+  items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'order-sentence-card';
+    div.draggable = true;
+    div.dataset.orig = item.origIdx;
+    div.dataset.section = sectionId;
+    div.innerHTML = '<span class="order-card-num">' + (i + 1) + '</span><span class="order-card-text">' + item.text + '</span>';
+    wrapper.appendChild(div);
+  });
+
+  container.appendChild(wrapper);
+
+  // Add buttons
+  const btnDiv = document.createElement('div');
+  btnDiv.className = 'order-buttons';
+  btnDiv.innerHTML = '<button class="btn btn-outline order-check-btn" data-section="' + sectionId + '">Check Order</button>';
+  container.appendChild(btnDiv);
+
+  // Add feedback area
+  const feedback = document.createElement('div');
+  feedback.className = 'order-feedback';
+  feedback.dataset.section = sectionId;
+  container.appendChild(feedback);
+
+  // Initialize drag-and-drop
+  initOrderCardDragDrop(wrapper);
+
+  // Button click handler
+  btnDiv.querySelector('.order-check-btn').onclick = function() { checkOrder(sectionId); };
+}
+
+function initOrderCardDragDrop(wrapper) {
+  let dragItem = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('dragstart', function(e) {
+      dragItem = card;
+      card.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    card.addEventListener('dragend', function() {
+      card.classList.remove('dragging');
+      dragItem = null;
+      updateCardNumbers(wrapper);
+    });
+
+    card.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      if (!dragItem || dragItem === card) return;
+      const rect = card.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        wrapper.insertBefore(dragItem, card);
+      } else {
+        wrapper.insertBefore(dragItem, card.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card) {
+    card.addEventListener('touchstart', function(e) {
+      touchItem = card;
+      card.classList.add('dragging');
+      touchClone = card.cloneNode(true);
+      touchClone.style.position = 'fixed';
+      touchClone.style.zIndex = '1000';
+      touchClone.style.pointerEvents = 'none';
+      touchClone.style.opacity = '0.8';
+      touchClone.style.maxWidth = '90vw';
+      document.body.appendChild(touchClone);
+      moveTouchClone(e.touches[0]);
+    });
+
+    card.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (!touchItem) return;
+      moveTouchClone(e.touches[0]);
+      const touch = e.touches[0];
+      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = els.find(function(el) { return el.classList.contains('order-sentence-card') && el !== touchItem; });
+      if (target && target.parentNode === wrapper) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          wrapper.insertBefore(touchItem, target);
+        } else {
+          wrapper.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    card.addEventListener('touchend', function() {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateCardNumbers(wrapper);
+    });
+  });
+
+  function moveTouchClone(touch) {
+    if (touchClone) {
+      touchClone.style.left = (touch.clientX - 100) + 'px';
+      touchClone.style.top = (touch.clientY - 25) + 'px';
+    }
+  }
+}
+
+function updateCardNumbers(wrapper) {
+  wrapper.querySelectorAll('.order-sentence-card').forEach(function(card, i) {
+    card.querySelector('.order-card-num').textContent = i + 1;
+  });
+}
+
+function initOrderSentenceDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+      // Update numbers after drag
+      updateOrderNumbers(row);
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+
+      if (e.clientY < midY) {
+        row.insertBefore(dragItem, item);
+      } else {
+        row.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+
+  // Touch support
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.order-sentence-item').forEach(item => {
+    item.addEventListener('touchstart', (e) => {
+      touchItem = item;
+      item.classList.add('dragging');
+      touchClone = item.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateTouchClonePos(e.touches[0], touchClone);
+    });
+
+    item.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateTouchClonePos(e.touches[0], touchClone);
+
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = elements.find(el => el.classList.contains('order-sentence-item') && el !== touchItem);
+
+      if (target && target.parentNode === row) {
+        const rect = target.getBoundingClientRect();
+        const midY = rect.top + rect.height / 2;
+        if (touch.clientY < midY) {
+          row.insertBefore(touchItem, target);
+        } else {
+          row.insertBefore(touchItem, target.nextSibling);
+        }
+      }
+    });
+
+    item.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+      updateOrderNumbers(row);
+    });
+  });
+
+  function updateTouchClonePos(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 100) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function updateOrderNumbers(row) {
+  row.querySelectorAll('.order-sentence-item').forEach((item, i) => {
+    item.querySelector('.order-num').textContent = i + 1;
+  });
+}
+
+function initDragDrop(container) {
+  const items = container.querySelectorAll('.order-item');
+  let dragItem = null;
+
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      dragItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === item) return;
+      const rect = item.getBoundingClientRect();
+      const midY = rect.top + rect.height / 2;
+      if (e.clientY < midY) {
+        container.insertBefore(dragItem, item);
+      } else {
+        container.insertBefore(dragItem, item.nextSibling);
+      }
+    });
+  });
+}
+
+function checkOrder(sectionId) {
+  const state = orderState[sectionId];
+  const data = state.data;
+  // Support multiple class names for order items
+  let items = document.querySelectorAll('.order-sentence-card[data-section="' + sectionId + '"]');
+  if (!items.length) {
+    items = document.querySelectorAll('.order-sentence-item[data-section="' + sectionId + '"]');
+  }
+  if (!items.length) {
+    items = document.querySelectorAll('.order-item[data-section="' + sectionId + '"]');
+  }
+  const currentOrder = Array.from(items).map(function(item) { return parseInt(item.dataset.orig); });
+  const feedback = document.querySelector('.order-feedback[data-section="' + sectionId + '"]');
+
+  let correct = true;
+  currentOrder.forEach((val, idx) => {
+    const expectedIdx = data.correctOrder && data.correctOrder.length ? data.correctOrder[idx] : idx;
+    if (val !== expectedIdx) correct = false;
+  });
+
+  items.forEach((item, idx) => {
+    const expectedIdx = data.correctOrder && data.correctOrder.length ? data.correctOrder[idx] : idx;
+    if (parseInt(item.dataset.orig) === expectedIdx) {
+      item.classList.add('correct');
+      item.classList.remove('wrong');
+    } else {
+      item.classList.add('wrong');
+      item.classList.remove('correct');
+    }
+  });
+
+  if (correct) {
+    state.score = state.total;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+    document.getElementById(sectionId + '-complete').classList.add('show');
+    if (feedback) {
+      feedback.innerHTML = '<span class="correct-text">✓ Perfect order!</span>';
+      feedback.classList.add('show');
+    }
+  } else {
+    if (feedback) {
+      feedback.innerHTML = '<span class="wrong-text">✗ Not quite right. Try again!</span>';
+      feedback.classList.add('show');
+    }
+    setTimeout(function() {
+      items.forEach(function(item) { item.classList.remove('wrong'); });
+      if (feedback) feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetOrder(sectionId) {
+  const state = orderState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initOrder(sectionId, state.data);
+}
+
+
+// Select Activity - supports multiple instances
+const selectState = {};
+
+function initSelect(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  selectState[sectionId] = { score: 0, answered: 0, total: data.items.length, data: data };
+  c.innerHTML = '';
+
+  data.items.forEach((item, idx) => {
+    const div = document.createElement('div');
+    div.className = 'select-question';
+    div.dataset.section = sectionId;
+    div.dataset.idx = idx;
+
+    const optionsHtml = item.options.map((opt, oi) =>
+      `<label class="select-option" data-correct="${opt.correct}" data-section="${sectionId}" data-idx="${idx}">
+        <input type="checkbox" class="select-checkbox" data-oi="${oi}">
+        <span class="select-text">${opt.text}</span>
+      </label>`
+    ).join('');
+
+    div.innerHTML = `
+      <div class="select-number">${idx + 1}.</div>
+      <div class="select-content">
+        <p class="select-prompt">${item.question}</p>
+        <div class="select-options">${optionsHtml}</div>
+        <button class="btn btn-sm btn-outline select-check" data-section="${sectionId}" data-idx="${idx}">Check</button>
+        <div class="select-feedback" id="${sectionId}-fb-${idx}"></div>
+      </div>
+    `;
+    c.appendChild(div);
+  });
+
+  // Event delegation for check buttons
+  c.addEventListener('click', (e) => {
+    if (e.target.classList.contains('select-check')) {
+      checkSelectAnswer(e.target.dataset.section, parseInt(e.target.dataset.idx));
+    }
+  });
+}
+
+function checkSelectAnswer(sectionId, idx) {
+  const state = selectState[sectionId];
+  const item = state.data.items[idx];
+  const question = document.querySelector(`.select-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(sectionId + '-fb-' + idx);
+
+  if (question.classList.contains('answered')) return;
+
+  const options = question.querySelectorAll('.select-option');
+  let allCorrect = true;
+
+  options.forEach(opt => {
+    const checkbox = opt.querySelector('.select-checkbox');
+    const isChecked = checkbox.checked;
+    const shouldBeChecked = opt.dataset.correct === 'true';
+
+    if (isChecked === shouldBeChecked) {
+      opt.classList.add(shouldBeChecked ? 'correct' : 'correct-unchecked');
+    } else {
+      opt.classList.add(shouldBeChecked ? 'missed' : 'wrong');
+      allCorrect = false;
+    }
+    checkbox.disabled = true;
+  });
+
+  question.classList.add('answered');
+
+  if (allCorrect) {
+    fb.innerHTML = '<span class="correct-text">✓ Perfect!</span>';
+    state.score++;
+  } else {
+    fb.innerHTML = '<span class="wrong-text">✗ Some answers were incorrect.</span>';
+  }
+  fb.classList.add('show');
+
+  document.getElementById(sectionId + '-score').textContent = state.score;
+  state.answered++;
+
+  if (state.answered === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetSelect(sectionId) {
+  const state = selectState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initSelect(sectionId, state.data);
+}
+
+
+// Vocabulary
+function initVocab() {
+  const grid = document.getElementById('vocab-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  vocabData.forEach(v => {
+    const card = document.createElement('div');
+    card.className = 'vocab-card';
+    card.innerHTML = '<div class="uk">' + v.uk + '</div><div class="translit">' + v.translit + '</div><div class="en">' + v.en + '</div>' + (v.note ? '<div class="note">' + v.note + '</div>' : '');
+    grid.appendChild(card);
+  });
+}
+
+  </script>
+</body>
+</html>

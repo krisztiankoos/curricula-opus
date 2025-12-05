@@ -3,12 +3,14 @@
  *
  * Parses YAML frontmatter from module markdown files.
  *
+ * Note: 'module' and 'level' are now derived from file path, not frontmatter.
+ * Files are stored in: curriculum/{langPair}/{level}/{num}-{slug}.md
+ * Example: curriculum/l2-uk-en/a1/01-the-cyrillic-code-i.md
+ *
  * Example frontmatter:
  * ---
- * module: 1
  * title: The Cyrillic Code I
  * subtitle: Visual Recognition
- * level: A1
  * phase: A1.1
  * duration: 45
  * transliteration: full
@@ -152,9 +154,13 @@ function parseValue(value: string): string | number | boolean {
 
 /**
  * Validate frontmatter has required fields
+ *
+ * Note: 'module' and 'level' are now derived from file path, not frontmatter.
+ * They're kept as optional for backwards compatibility.
  */
 function validateFrontmatter(fm: Record<string, unknown>): void {
-  const required = ['module', 'title', 'level', 'phase', 'duration', 'transliteration', 'tags', 'objectives'];
+  // module and level are now derived from path, not required in frontmatter
+  const required = ['title', 'phase', 'duration', 'transliteration', 'tags', 'objectives'];
 
   for (const field of required) {
     if (!(field in fm)) {
@@ -162,9 +168,17 @@ function validateFrontmatter(fm: Record<string, unknown>): void {
     }
   }
 
-  // Validate level
+  // Set defaults for module and level (will be overwritten by generator from path)
+  if (!('module' in fm)) {
+    fm.module = 0;  // Placeholder, overwritten by generator
+  }
+  if (!('level' in fm)) {
+    fm.level = 'A1';  // Placeholder, overwritten by generator
+  }
+
+  // Validate level if present
   const validLevels = ['A1', 'A2', 'A2+', 'B1', 'B1+', 'B2', 'B2+', 'C1'];
-  if (!validLevels.includes(fm.level as string)) {
+  if (fm.level && !validLevels.includes(fm.level as string)) {
     throw new Error(`Invalid level: ${fm.level}. Must be one of: ${validLevels.join(', ')}`);
   }
 

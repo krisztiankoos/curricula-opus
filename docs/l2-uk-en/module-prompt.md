@@ -20,6 +20,42 @@
 
 ---
 
+## CRITICAL: Vocabulary Source of Truth
+
+<critical>
+**STOP. Before ANY module work, you MUST extract the exact vocabulary list.**
+
+The curriculum plan (`docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`) contains the **EXACT vocabulary list** for each module. This is not a suggestion - it is a contract.
+
+**MANDATORY STEPS:**
+
+1. Open the curriculum plan for the level (e.g., `A1-CURRICULUM-PLAN.md`)
+2. Find the section for the target module number
+3. Copy the EXACT vocabulary list - every word, no more, no less
+4. Use ONLY those words in:
+   - Vocabulary table
+   - Examples in lesson content
+   - Activity items
+
+**FORBIDDEN:**
+- Adding "pedagogically useful" words not in the list
+- Substituting "better" examples
+- Omitting words because they don't fit your explanation
+- Using words from later modules as examples
+
+**IF THE PLAN SEEMS WRONG:** Ask the user. Do not improvise.
+
+**Example - Module 03 vocabulary from A1-CURRICULUM-PLAN.md:**
+```
+стіл, книга, вікно, двері, кімната, дім, місто, село, річка, море,
+хліб, вода, молоко, чай, сік, м'ясо, риба, овочі, фрукти, яблуко,
+апельсин, картопля, помідор, огірок, цибуля
+```
+Use EXACTLY these 25 words. Not 24. Not 26. Not different words.
+</critical>
+
+---
+
 ## Task Modes
 
 <instructions>
@@ -41,6 +77,8 @@ Title: [title]
 Grammar focus: [grammar point]
 Vocabulary target: [XX words]
 ```
+
+**For ALL modes:** First extract the exact vocabulary list from the curriculum plan.
 </instructions>
 
 ---
@@ -463,6 +501,29 @@ grammar:
 | A1 | 8 | At least 4 different |
 | A2+ | 10 | At least 4 different |
 | B1+ | 12 | At least 4 different |
+
+### Activity Format Reference
+
+**CRITICAL:** Activities use pure markdown syntax, NOT YAML. See `docs/MARKDOWN-FORMAT.md` for complete format specification.
+
+Quick reference:
+- **quiz**: Numbered questions with `- [x]` correct / `- [ ]` wrong options
+- **match-up**: Markdown table with `| Left | Right |` headers
+- **fill-in**: Numbered sentences with `> [!answer]` and `> [!options]`
+- **true-false**: `- [x]` for true, `- [ ]` for false statements
+- **group-sort**: `### Category` headers with bullet lists
+- **unjumble**: Jumbled words with `> [!answer]` for correct sentence
+
+### Anagram Activity Rules
+
+| Level | Modules | Anagram Policy |
+|-------|---------|----------------|
+| A1 | 01-10 | ✅ Allowed (Cyrillic scaffolding) |
+| A1 | 11-20 | ⚠️ Reduce (transition period) |
+| A1 | 21-30 | ❌ Avoid (use unjumble) |
+| A2+ | All | ❌ NOT ALLOWED |
+
+**Rationale:** Anagrams help beginners learn Cyrillic letter recognition. Once learners can read Cyrillic fluently (by A1.3), switch to `unjumble` which practices word order and sentence structure - more valuable skills at higher levels.
 
 ### Vocabulary Targets
 

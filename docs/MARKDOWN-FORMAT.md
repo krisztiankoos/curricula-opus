@@ -162,17 +162,212 @@ Use `> [!note]` or `> [!tip]` for highlighted information.
    > [!answer] Правда
 ```
 
-### Matching (in Activities section)
+---
 
+## Activity Section Format
+
+All activities appear under `# Activities` using pure markdown syntax (NOT YAML).
+
+### Quiz Format
+
+```markdown
+## quiz: Title
+
+> Instructions for this activity.
+
+1. Question text here?
+   - [ ] Wrong answer
+   - [x] Correct answer
+   - [ ] Wrong answer
+   - [ ] Wrong answer
+   > Explanation shown after answering.
+
+2. Another question?
+   - [x] Correct answer
+   - [ ] Wrong answer
+   - [ ] Wrong answer
+   - [ ] Wrong answer
+   > Explanation text.
+```
+
+**Key points:**
+- Use `- [x]` for correct answer, `- [ ]` for wrong answers
+- Use `>` for explanation (optional)
+- Minimum 12 questions per quiz
+
+### Match-up Format
+
+```markdown
+## match-up: Title
+
+> Match the Ukrainian words with their English meanings.
+
+| Left | Right |
+|------|-------|
+| привіт | hello |
+| дякую | thank you |
+| так | yes |
+| ні | no |
+```
+
+**Key points:**
+- Use markdown table with `| Left | Right |` headers exactly
+- Minimum 12 pairs
+
+### Fill-in Format
+
+```markdown
+## fill-in: Title
+
+> Complete each sentence with the correct word.
+
+1. Я ___ книгу. (читати)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
+
+2. Вона ___ українською. (говорити)
+   > [!answer] говорить
+   > [!options] говорить | говорю | говоримо | говорять
+```
+
+**Key points:**
+- Use `___` for blank
+- Use `> [!answer]` for correct answer
+- Use `> [!options]` with pipe-separated options
+- Minimum 12 items
+
+### True-False Format
+
+```markdown
+## true-false: Title
+
+> Decide if each statement is true (Правда) or false (Міф).
+
+- [x] Ukrainian has 7 grammatical cases.
+  > Correct! Nominative, Genitive, Dative, Accusative, Instrumental, Locative, Vocative.
+
+- [ ] All Ukrainian nouns are masculine.
+  > Incorrect! Ukrainian has three genders: masculine, feminine, and neuter.
+
+- [x] Verb endings show who is doing the action.
+  > Correct! That's why pronouns are often optional.
+```
+
+**Key points:**
+- Use `- [x]` for true statements, `- [ ]` for false statements
+- Use `>` for explanation
+- Minimum 12 statements
+
+### Group-sort Format
+
+```markdown
+## group-sort: Title
+
+> Sort these items into the correct categories.
+
+### Category 1
+- item1
+- item2
+- item3
+
+### Category 2
+- item4
+- item5
+- item6
+
+### Category 3
+- item7
+- item8
+- item9
+```
+
+**Key points:**
+- Use `### Category Name` for each group
+- Use bullet list for items in that group
+- Minimum 2 categories, 3+ items each
+
+### Anagram Format (A1 Only - Phased Out)
+
+**LEVEL RESTRICTIONS:**
+- A1 Modules 01-10: ✅ Allowed (Cyrillic scaffolding)
+- A1 Modules 11-20: ⚠️ Reduce usage
+- A1 Modules 21-30: ❌ Avoid (use unjumble instead)
+- A2+: ❌ NOT ALLOWED
+
+```markdown
+## anagram: Title
+
+> Arrange the letters to form the correct word.
+
+1. ч и т а т и
+   > [!answer] читати
+   > (to read)
+
+2. п и с а т и
+   > [!answer] писати
+   > (to write)
+```
+
+**Key points:**
+- Spaced letters for scrambled word
+- `> [!answer]` for correct word
+- `> (translation)` for meaning
+- Minimum 12 items
+- **Use `unjumble` instead for A1.3+ and all higher levels**
+
+### Unjumble Format
+
+```markdown
+## unjumble: Title
+
+> Put the words in the correct order.
+
+1. книгу читаю Я
+   > [!answer] Я читаю книгу.
+   > (I read a book.) [3 words]
+
+2. українською Вона говорить
+   > [!answer] Вона говорить українською.
+   > (She speaks Ukrainian.) [3 words]
+```
+
+**Key points:**
+- Jumbled words on first line
+- `> [!answer]` for correct sentence
+- `> (translation) [X words]` for meaning and word count
+- Minimum 12 items
+
+---
+
+## IMPORTANT: DO NOT USE YAML FORMAT
+
+**WRONG** (will not parse):
 ```yaml
-# Вправи
-
-## match-up: Match words
+## match-up: Title
 pairs:
   - left: "привіт"
     right: "hello"
-  - left: "дякую"
-    right: "thank you"
+
+## quiz: Title
+questions:
+  - prompt: "Question?"
+    options: ["a", "b", "c"]
+    answer: 0
+```
+
+**CORRECT** (use markdown):
+```markdown
+## match-up: Title
+
+| Left | Right |
+|------|-------|
+| привіт | hello |
+
+## quiz: Title
+
+1. Question?
+   - [x] Correct
+   - [ ] Wrong
 ```
 
 ---
@@ -183,39 +378,58 @@ Standard module sections:
 
 ```markdown
 ---
-module: 1
 title: Title
-level: A1
+subtitle: Subtitle
+phase: A1.1
+duration: 45
+transliteration: full
+tags: [grammar]
+objectives:
+  - Objective 1
+grammar:
+  - Grammar point 1
 ---
 
-# Вступ
+# Lesson Content
+
+## warm-up
 Introduction content...
 
-# Main Content Section
+## presentation
 Teaching content with → for transformations...
 
-# Практика
+## practice
 Exercises with > [!answer] for answers...
 
-# Вправи
-## match-up: Title
-pairs:
-  - left: "x"
-    right: "y"
+## production
+Open-ended practice...
+
+---
+
+# Activities
 
 ## quiz: Title
-questions:
-  - prompt: "Question?"
-    options: ["a", "b", "c"]
-    answer: 0
+[Using markdown format - see Activity Section Format above]
 
-# Словник
-| Ukrainian | English |
-|-----------|---------|
-| слово     | word    |
+## match-up: Title
+[Using markdown table format]
 
-# Підсумок
-Summary content...
+## fill-in: Title
+[Using markdown format with > [!answer] and > [!options]]
+
+---
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| слово | /ˈslɔvɔ/ | word | noun | n | |
+
+---
+
+# Summary
+
+> Summary content...
 ```
 
 ---

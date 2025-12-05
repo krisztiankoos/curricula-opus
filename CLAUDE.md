@@ -1,11 +1,33 @@
 # CLAUDE.md - Project Instructions
 
+## Current Work
+See `.claude/memory/a1-rewrite-status.md` for ongoing task status.
+
+## Module Writing Workflow
+
+<critical>
+**EVERY time you write or rewrite a module:**
+
+1. **READ `docs/l2-uk-en/module-prompt.md`** - Grammar constraints, format rules, review checklist.
+2. **READ `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`** - Extract the EXACT vocabulary list and grammar scope.
+3. **READ `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md`** - Activity counts, sentence complexity, engagement boxes.
+4. **WRITE the module** using ONLY the vocabulary and grammar from those documents.
+5. **VERIFY** before delivering - check vocabulary matches the plan exactly.
+
+**DO NOT:**
+- Write from memory
+- Add "helpful" words not in the plan
+- Skip reading the prompts because you think you remember them
+
+**The prompts exist because you forget. Read them every time.**
+</critical>
+
 ## Project Overview
 
 <context>
 **Curricula Opus** (CO) is a language content factory generating Ukrainian language learning curricula.
 
-- **Source of truth**: Markdown files in `curriculum/l2-uk-en/modules/`
+- **Source of truth**: Markdown files in `curriculum/l2-uk-en/{level}/` folders
 - **Output**: HTML (web lessons) + JSON (Vibe app import)
 - **Current focus**: Ukrainian for English speakers (l2-uk-en)
 </context>
@@ -71,14 +93,12 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 <format>
 | Level | Modules | Activities | Items/Activity | Fill-in Words | Unjumble Words |
 |-------|---------|------------|----------------|---------------|----------------|
-| A1 | 1-30 | 8+ | 12+ | 5-8 | 5-8 |
-| A2 | 31-60 | 10+ | 12+ | 6-9 | 6-9 |
-| A2+ | 61-80 | 10+ | 12+ | 6-10 | 6-10 |
-| B1 | 81-120 | 12+ | 14+ | 7-11 | 7-11 |
-| B1+ | 121-160 | 12+ | 14+ | 8-12 | 8-12 |
-| B2 | 161-200 | 14+ | 16+ | 9-14 | 9-14 |
-| B2+ | 201-240 | 14+ | 16+ | 10-15 | 10-15 |
-| C1 | 241+ | 16+ | 18+ | 12-18 | 12-18 |
+| A1 | 01-30 | 8+ | 12+ | 5-8 | 5-8 |
+| A2 | 01-50 | 10+ | 12+ | 6-10 | 6-10 |
+| B1 | 01-80 | 12+ | 14+ | 7-12 | 7-12 |
+| B2 | 01-50 | 14+ | 16+ | 9-15 | 9-15 |
+| C1 | TBD | 16+ | 18+ | 12-18 | 12-18 |
+| C2 | TBD | 16+ | 18+ | 12-18 | 12-18 |
 
 ### Activity Types Required
 Each module needs variety. Include at least 4 different types:
@@ -88,6 +108,13 @@ Each module needs variety. Include at least 4 different types:
 - `match-up` - Match pairs
 - `group-sort` - Sort items into categories
 - `true-false` - True/false statements
+
+### Anagram Activity Rules
+- `anagram` - Letter unscrambling (A1 ONLY, phased out)
+  - **A1 Modules 01-10**: Allowed (scaffolding for Cyrillic learners)
+  - **A1 Modules 11-20**: Reduce usage (transition period)
+  - **A1 Modules 21-30**: Avoid (use unjumble instead)
+  - **A2+**: NOT ALLOWED - use `unjumble` for word ordering practice
 </format>
 
 ## Content Quality Requirements
@@ -96,13 +123,11 @@ Each module needs variety. Include at least 4 different types:
 | Level | Examples | Engagement Boxes | Content Words | Immersion |
 |-------|----------|------------------|---------------|-----------|
 | A1 | 12+ | 3+ | 600+ | 30% Ukrainian |
-| A2 | 15+ | 4+ | 700+ | 40% Ukrainian |
-| A2+ | 18+ | 4+ | 800+ | 50% Ukrainian |
-| B1 | 22+ | 5+ | 900+ | 60% Ukrainian |
-| B1+ | 24+ | 5+ | 950+ | 70% Ukrainian |
-| B2 | 26+ | 6+ | 1000+ | 85% Ukrainian |
-| B2+ | 28+ | 6+ | 1050+ | 90% Ukrainian |
+| A2 | 18+ | 4+ | 750+ | 40% Ukrainian |
+| B1 | 24+ | 5+ | 900+ | 60% Ukrainian |
+| B2 | 28+ | 6+ | 1000+ | 85% Ukrainian |
 | C1 | 30+ | 7+ | 1100+ | 95% Ukrainian |
+| C2 | 30+ | 7+ | 1100+ | 98% Ukrainian |
 
 ### Engagement Box Types
 - 💡 **Did You Know** - Interesting facts
@@ -117,40 +142,68 @@ Each module needs variety. Include at least 4 different types:
 ```
 curricula-opus/
 ├── curriculum/l2-uk-en/
-│   ├── modules/           # SOURCE OF TRUTH - 240+ markdown files
-│   └── vocabulary.csv     # Master vocabulary database
-├── scripts/               # Generator code
-├── output/                # Generated HTML + JSON
-└── docs/                  # Documentation
-    └── l2-uk-en/          # Ukrainian-specific docs
+│   ├── a1/               # A1 modules (30 modules)
+│   ├── a2/               # A2 modules (50 modules)
+│   ├── b1/               # B1 modules (80 modules)
+│   ├── b2/               # B2 modules (50 modules)
+│   ├── c1/               # C1 modules (TBD)
+│   ├── c2/               # C2 modules (TBD)
+│   ├── vocabulary.csv    # Master vocabulary database
+│   └── module-mapping.json  # Old→new path mapping reference
+├── scripts/              # Generator code
+├── output/               # Generated HTML + JSON
+└── docs/                 # Documentation
+    └── l2-uk-en/         # Ukrainian-specific docs
         └── MODULE-RICHNESS-GUIDELINES.md  # Quality standards
 ```
 
-## Level Definitions
+**Note:** Level structure follows the Ukrainian State Standard 2024 which defines 6 official levels: A1, A2, B1, B2, C1, C2 (no "plus" levels).
 
-| Level | Modules | Description |
-|-------|---------|-------------|
-| A1 | 1-30 | Beginner - Cyrillic, basic phrases, simple grammar |
-| A2 | 31-60 | Elementary - Cases intro, present tense, basic vocab |
-| A2+ | 61-80 | Pre-Intermediate - All cases, past tense |
-| B1 | 81-120 | Intermediate - Complex grammar, expanded vocab |
-| B1+ | 121-160 | Upper-Intermediate - Refinement, nuance |
-| B2 | 161-200 | Advanced - Complex structures, abstract topics |
-| B2+ | 201-240 | Upper-Advanced - Near-native patterns |
-| C1 | 241-400 | Proficient - Full complexity, specialized topics |
+### Module File Naming
+
+Modules use level-relative numbering with slugified titles:
+- `a1/01-the-cyrillic-code-i.md` (first A1 module)
+- `a1/30-checkpoint-a1.md` (last A1 module)
+- `b1/01-dative-case.md` (first B1 module)
+
+Level and module number are derived from the file path, not frontmatter.
+
+## Level Definitions (Ukrainian State Standard 2024)
+
+| Level | Folder | Modules | Vocab Target | Description |
+|-------|--------|---------|--------------|-------------|
+| A1 | `a1/` | 30 | ~750 | Beginner - Cyrillic, basic phrases, simple grammar |
+| A2 | `a2/` | 50 | ~1,050 | Elementary - All 7 cases, aspect basics, comparison |
+| B1 | `b1/` | 80 | ~1,500 | Intermediate - Aspect mastery, motion verbs, complex sentences |
+| B2 | `b2/` | 50 | ~2,200 | Advanced - Literature, academic, professional |
+| C1 | `c1/` | TBD | ~2,500 | Proficient - Full complexity, specialized topics |
+| C2 | `c2/` | TBD | TBD | Mastery - Native-level proficiency |
+
+**Vocabulary Progression:**
+- A1: ~750 cumulative
+- A2: ~1,800 cumulative
+- B1: ~3,300 cumulative
+- B2: ~5,500 cumulative
+- C1: ~8,000 cumulative
 
 ## Transliteration Strategy
 
 - **Modules 1-10 (A1.1)**: Full transliteration `Слово (Slovo)`
 - **Modules 11-20 (A1.2)**: Vocab lists only, sentences Cyrillic
 - **Modules 21-30 (A1.3)**: First occurrence only
-- **Modules 31+ (A2+)**: No transliteration
+- **A2+ (modules 31+)**: No transliteration
 
 ## Commands Reference
 
 ```bash
-# Generate output
-npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
+# Generate all levels
+npx ts-node scripts/generate.ts l2-uk-en
+
+# Generate specific level
+npx ts-node scripts/generate.ts l2-uk-en a1
+
+# Generate specific module (level + module number)
+npx ts-node scripts/generate.ts l2-uk-en a1 5
 
 # Enrich vocabulary
 npm run vocab:enrich l2-uk-en [moduleNum]
@@ -166,22 +219,20 @@ npm run claude:deploy
 
 | Level | Header | Columns |
 |-------|--------|---------|
-| A1-A2+ (1-80) | `# Vocabulary` | Word \| IPA \| English \| POS \| Gender \| Note |
-| B1-B1+ (81-160) | `# Словник` | Слово \| Вимова \| Переклад \| ЧМ \| Примітка |
-| B2-C1 (161+) | `# Словник` | Слово \| Переклад \| Примітки |
+| A1, A2 | `# Vocabulary` | Word \| IPA \| English \| POS \| Gender \| Note |
+| B1 | `# Словник` | Слово \| Вимова \| Переклад \| ЧМ \| Примітка |
+| B2, C1, C2 | `# Словник` | Слово \| Переклад \| Примітки |
 
 ## Enrichment Status
 
-| Range | Modules | Status |
+| Level | Modules | Status |
 |-------|---------|--------|
-| A1 | 1-30 | ⏳ Needs full enrichment |
-| A2 | 31-60 | ⏳ Needs full enrichment |
-| A2+ | 61-80 | ⏳ Needs full enrichment |
-| B1 | 81-120 | ⏳ Needs full enrichment |
-| B1+ | 121-160 | ✅ Done |
-| B2 | 161-200 | ⏳ Needs full enrichment |
-| B2+ | 201-240 | ⏳ Needs creation |
-| C1 | 241-400 | ⏳ Needs creation |
+| A1 | 01-30 | ⏳ Needs full enrichment |
+| A2 | 01-50 | ⏳ Needs full enrichment |
+| B1 | 01-80 | ⏳ Needs full enrichment |
+| B2 | 01-50 | ⏳ Needs full enrichment |
+| C1 | TBD | ⏳ Needs creation |
+| C2 | TBD | ⏳ Needs creation |
 
 ## Documentation Links
 

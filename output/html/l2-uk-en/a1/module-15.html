@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 15: City Navigation | Ukrainian A1</title>
+  <title>Module 15: Around the City | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -448,21 +474,21 @@ footer {
     <div class="module-nav">
       <a href="module-14.html" class="module-nav-link">← Module 14</a>
       <a href="index.html" class="module-nav-link">A1 Index</a>
-      <a href="module-16.html" class="module-nav-link">Module 16 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 15: City Navigation</h1>
+    <h1>Module 15: Around the City</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
-      <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
-      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
-      <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Fill</button>
-      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-0">1. Quiz</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Sort</button>
+      <button class="nav-tab" data-section="activity-3">4. T/F</button>
+      <button class="nav-tab" data-section="activity-4">5. Fill</button>
+      <button class="nav-tab" data-section="activity-5">6. Match</button>
+      <button class="nav-tab" data-section="activity-6">7. Spell</button>
+      <button class="nav-tab" data-section="activity-7">8. Fill</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,109 +497,120 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">City Navigation</h2>
-        <p style="color:var(--text-muted)">Finding Your Way</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Around the City</h2>
+        <p style="color:var(--text-muted)">Navigation and Directions</p>
       </div>
       
-    <div class="card section-intro">
-      <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="lostinkyiv">Lost in Kyiv?</h3>
-<p>You've landed in Kyiv. You need to find your hotel, a café, the metro… How do you ask for directions?</p>
-<p>Key phrases you'll learn:</p>
-<ul>
-<li><strong>Де…?</strong> - Where is…?</li>
-<li><strong>Як дійти до…?</strong> - How do I get to…?</li>
-<li><strong>Йдіть прямо!</strong> - Go straight!</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian cities have excellent public transport! Kyiv's metro is one of the deepest in the world (some stations are 100m underground - built to double as bomb shelters). The words "метро" and "станція" will be among your most useful vocabulary!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="askingwhere">Asking "Where?"</h3>
-<p><strong>Basic patterns:</strong></p>
-<ul>
-<li>Де + noun? → Де метро? (Where is the metro?)</li>
-<li>Де тут + noun? → Де тут банк? (Where is a bank here?)</li>
-</ul>
-<p><strong>Polite patterns:</strong></p>
-<ul>
-<li>Скажіть, будь ласка, де…? (Tell me please, where is…?)</li>
-<li>Вибачте, де…? (Excuse me, where is…?)</li>
-<li>Ви не підкажете, де…? (Could you tell me where…?)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Politeness Matters</strong></p>
-  <p>Always start with:</p>
-  <ul>
-  <li><strong>Вибачте</strong> (Excuse me) - literally "forgive me"</li>
-  <li><strong>Скажіть, будь ласка</strong> (Tell me, please)</li>
-  </ul>
-  <p>Ukrainians appreciate polite beginnings to requests!</p>
-</blockquote>
-<h3 id="directionwords">Direction Words</h3>
+    <div class="card section-content">
+      <h3>Warm Up</h3>
+      <div class="md-content"><p>Lost in Kyiv? Need to find the metro? Learning to navigate is essential! In this module, you'll master directions, street vocabulary, and transportation—everything you need to get around a Ukrainian city.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Lesson</h3>
+      <div class="md-content"><h2 id="basicdirections">Basic Directions</h2>
+<p>These are your navigation essentials:</p>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>Transliteration</th>
 <th>English</th>
+<th>Gesture</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>прямо</td>
-<td>pryamo</td>
 <td>straight</td>
+<td>→</td>
 </tr>
 <tr>
-<td>праворуч</td>
-<td>pravoruch</td>
-<td>to the right</td>
-</tr>
-<tr>
-<td>ліворуч</td>
-<td>livoruch</td>
+<td>наліво</td>
 <td>to the left</td>
+<td>←</td>
+</tr>
+<tr>
+<td>направо</td>
+<td>to the right</td>
+<td>→</td>
 </tr>
 <tr>
 <td>назад</td>
-<td>nazad</td>
 <td>back</td>
+<td>↩</td>
 </tr>
+</tbody>
+</table>
+<p><strong>Example dialogue:</strong></p>
+<ul>
+<li>Де метро? (Where is the metro?)</li>
+<li>Прямо, потім наліво. (Straight, then left.)</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong><br />
+  "Наліво" and "направо" come from "на" (to) + "ліво/право" (left/right). They answer "куди?" (where to?) rather than "де?" (where?).</p>
+</blockquote>
+<hr />
+<h2 id="positionwords">Position Words</h2>
+<table>
+<thead>
 <tr>
-<td>тут</td>
-<td>tut</td>
-<td>here</td>
+<th>Ukrainian</th>
+<th>English</th>
+<th>Example</th>
 </tr>
-<tr>
-<td>там</td>
-<td>tam</td>
-<td>there</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td>далеко</td>
-<td>daleko</td>
 <td>far</td>
+<td>Це далеко? (Is it far?)</td>
 </tr>
 <tr>
 <td>близько</td>
-<td>blyzko</td>
 <td>near, close</td>
+<td>Це близько. (It's close.)</td>
 </tr>
 <tr>
 <td>поруч</td>
-<td>poruch</td>
-<td>next to, nearby</td>
+<td>nearby, next to</td>
+<td>Банк поруч. (The bank is nearby.)</td>
+</tr>
+<tr>
+<td>навпроти</td>
+<td>opposite, across</td>
+<td>Навпроти школи. (Opposite the school.)</td>
+</tr>
+<tr>
+<td>за</td>
+<td>behind</td>
+<td>За будинком. (Behind the building.)</td>
+</tr>
+<tr>
+<td>перед</td>
+<td>in front of</td>
+<td>Перед магазином. (In front of the store.)</td>
+</tr>
+<tr>
+<td>між</td>
+<td>between</td>
+<td>Між банком і аптекою. (Between the bank and pharmacy.)</td>
+</tr>
+<tr>
+<td>біля</td>
+<td>near, by</td>
+<td>Біля метро. (Near the metro.)</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>📜 <strong>History Bite: Право- and Ліво-</strong></p>
-  <p>"Праворуч" (right) contains "право" (right/law), connected to "правда" (truth) and "правий" (correct). In many cultures, right = correct/good. "Ліворуч" (left) contains "ліво" - connected to concepts of "other" or "different." These associations are thousands of years old across Indo-European languages!</p>
+  <p>🌍 <strong>Real World</strong><br />
+  When asking for directions in Ukraine, start with "Вибачте" (Excuse me) or "Скажіть, будь ласка" (Tell me, please). Ukrainians are generally very helpful to tourists!</p>
 </blockquote>
-<h3 id="prepositionsforlocation">Prepositions for Location</h3>
+<hr />
+<h2 id="streetvocabulary">Street Vocabulary</h2>
+<h3 id="typesofstreets">Types of Streets</h3>
 <table>
 <thead>
 <tr>
@@ -584,375 +621,458 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>тут</td>
-<td>here</td>
-<td>Банк тут. (The bank is here.)</td>
-</tr>
-<tr>
-<td>там</td>
-<td>there</td>
-<td>Аптека там. (The pharmacy is there.)</td>
-</tr>
-<tr>
-<td>за рогом</td>
-<td>around the corner</td>
-<td>За рогом. (Around the corner.)</td>
-</tr>
-<tr>
-<td>поруч</td>
-<td>next to, nearby</td>
-<td>Банк поруч. (The bank is nearby.)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Preview: Prepositions with Cases</strong></p>
-  <p>Some prepositions like "до" (to), "біля" (near), and "навпроти" (opposite) require special word endings called "cases." You'll learn these in Module 16! For now, focus on basic location words.</p>
-</blockquote>
-<h3 id="givingdirectionsimperatives">Giving Directions (Imperatives)</h3>
-<table>
-<thead>
-<tr>
-<th>Infinitive</th>
-<th>Imperative (ви)</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>йти</td>
-<td>йдіть</td>
-<td>go (on foot)</td>
-</tr>
-<tr>
-<td>іти</td>
-<td>ідіть</td>
-<td>go</td>
-</tr>
-<tr>
-<td>повернути</td>
-<td>поверніть</td>
-<td>turn</td>
-</tr>
-<tr>
-<td>перейти</td>
-<td>перейдіть</td>
-<td>cross</td>
-</tr>
-<tr>
-<td>пройти</td>
-<td>пройдіть</td>
-<td>pass, go through</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Common direction sentences:</strong></p>
-<ul>
-<li>Йдіть прямо. (Go straight.)</li>
-<li>Поверніть праворуч. (Turn right.)</li>
-<li>Поверніть ліворуч. (Turn left.)</li>
-<li>Перейдіть вулицю. (Cross the street.)</li>
-<li>Пройдіть два квартали. (Go two blocks.)</li>
-</ul>
-<blockquote>
-  <p>🎯 <strong>Fun Fact: Metro Station Names</strong></p>
-  <p>Kyiv metro stations often have meaningful names:</p>
-  <ul>
-  <li><strong>Майдан Незалежності</strong> - Independence Square</li>
-  <li><strong>Золоті ворота</strong> - Golden Gate (medieval gate)</li>
-  <li><strong>Хрещатик</strong> - main street name (from хрещення = baptism)</li>
-  <li><strong>Університет</strong> - University</li>
-  </ul>
-  <p>Learning station names teaches you history and vocabulary!</p>
-</blockquote>
-<h3 id="cityplacesvocabulary">City Places Vocabulary</h3>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>Transliteration</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>метро</td>
-<td>metro</td>
-<td>metro, subway</td>
-</tr>
-<tr>
-<td>станція</td>
-<td>stantsiya</td>
-<td>station</td>
-</tr>
-<tr>
-<td>зупинка</td>
-<td>zupynka</td>
-<td>stop (bus/tram)</td>
-</tr>
-<tr>
 <td>вулиця</td>
-<td>vulytsya</td>
 <td>street</td>
+<td>на вулиці Хрещатик</td>
+</tr>
+<tr>
+<td>провулок</td>
+<td>lane, alley</td>
+<td>у провулку</td>
 </tr>
 <tr>
 <td>площа</td>
-<td>ploshcha</td>
 <td>square</td>
+<td>на площі</td>
 </tr>
 <tr>
-<td>квартал</td>
-<td>kvartal</td>
-<td>block</td>
+<td>проспект</td>
+<td>avenue</td>
+<td>на проспекті</td>
 </tr>
 <tr>
-<td>ріг</td>
-<td>rih</td>
-<td>corner</td>
+<td>бульвар</td>
+<td>boulevard</td>
+<td>на бульварі</td>
 </tr>
 <tr>
-<td>перехрестя</td>
-<td>perekhrestya</td>
-<td>intersection</td>
+<td>набережна</td>
+<td>embankment</td>
+<td>на набережній</td>
 </tr>
 <tr>
-<td>вхід</td>
-<td>vkhid</td>
-<td>entrance</td>
-</tr>
-<tr>
-<td>вихід</td>
-<td>vykhid</td>
-<td>exit</td>
+<td>міст</td>
+<td>bridge</td>
+<td>на мосту</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Street Names</strong></p>
-  <p>Ukrainian streets are named after:</p>
-  <ul>
-  <li><strong>Famous people</strong>: вулиця Шевченка, вулиця Лесі Українки</li>
-  <li><strong>Historical events</strong>: вулиця Незалежності (Independence Street)</li>
-  <li><strong>Cities</strong>: Київська вулиця, Львівська вулиця</li>
-  </ul>
-  <p>Many streets were renamed after 2014 and 2022, replacing Soviet-era names with Ukrainian ones!</p>
-</blockquote>
-<h3 id="essentialservices">Essential Services</h3>
+<h3 id="navigationpoints">Navigation Points</h3>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>Transliteration</th>
 <th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>банк</td>
-<td>bank</td>
-<td>bank</td>
-</tr>
-<tr>
-<td>банкомат</td>
-<td>bankomat</td>
-<td>ATM</td>
-</tr>
-<tr>
-<td>аптека</td>
-<td>apteka</td>
-<td>pharmacy</td>
-</tr>
-<tr>
-<td>лікарня</td>
-<td>likarnya</td>
-<td>hospital</td>
-</tr>
-<tr>
-<td>поліція</td>
-<td>politsiya</td>
-<td>police</td>
-</tr>
-<tr>
-<td>пошта</td>
-<td>poshta</td>
-<td>post office</td>
-</tr>
-<tr>
-<td>супермаркет</td>
-<td>supermarket</td>
-<td>supermarket</td>
-</tr>
-<tr>
-<td>ринок</td>
-<td>rynok</td>
-<td>market</td>
-</tr>
-<tr>
-<td>готель</td>
-<td>hotel</td>
-<td>hotel</td>
-</tr>
-<tr>
-<td>туалет</td>
-<td>tualet</td>
-<td>toilet, restroom</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>🌍 <strong>Real World: Finding a Pharmacy</strong></p>
-  <p>Pharmacies (аптеки) in Ukraine are everywhere and marked with a green cross. Pharmacists can recommend medications - you don't always need a doctor for minor issues.</p>
-  <ul>
-  <li>Де тут аптека? (Where is a pharmacy here?)</li>
-  <li>У мене болить голова. (I have a headache.)</li>
-  <li>Дайте, будь ласка, знеболююче. (Give me a painkiller, please.)</li>
-  </ul>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="directioncomprehension">Direction Comprehension</h3>
-<p>Match the instruction to the action:</p>
-<ol>
-<li><p>Йдіть прямо.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Go straight.</div></div>
-<ol start="2">
-<li><p>Поверніть праворуч.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Turn right.</div></div>
-<ol start="3">
-<li><p>Перейдіть вулицю.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">Cross the street.</div></div>
-<ol start="4">
-<li><p>Це за рогом.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">It's around the corner.</div></div>
-<h3 id="completethedialogue">Complete the Dialogue</h3>
-<p>A: Вибачте, де тут метро?<br />
-B: Йдіть ___ (straight), потім поверніть ___ (left). Метро ___ (there).</p>
-<p>Answers: прямо, ліворуч, там</p>
-<h3 id="askfortheseplaces">Ask for These Places</h3>
-<p>Form questions:</p>
-<ol>
-<li><p>Bank</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">Де банк? / Вибачте, де тут банк?</div></div>
-<ol start="2">
-<li><p>Metro</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Де метро? / Скажіть, будь ласка, де метро?</div></div>
-<ol start="3">
-<li><p>Pharmacy</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Де аптека? / Де тут аптека?</div></div>
-<h2 id="production">production</h2>
-<h3 id="roleplaytourist">Role Play: Tourist</h3>
-<p>Practice asking for directions to:</p>
-<ol>
-<li>The metro station</li>
-<li>A pharmacy</li>
-<li>Your hotel</li>
-<li>A restaurant</li>
-</ol>
-<p>Example:</p>
-<ul>
-<li>Вибачте, скажіть, будь ласка, де метро?</li>
-<li>Йдіть прямо, потім поверніть праворуч. Метро там.</li>
-<li>Дякую!</li>
-</ul>
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Direction Patterns</h3>
-      <div class="md-content"><h2 id="askingfordirections">Asking for Directions</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Де + noun?</td>
-<td>Де метро?</td>
+<td>перехрестя</td>
+<td>intersection</td>
+<td>на перехресті</td>
 </tr>
 <tr>
-<td>Де тут + noun?</td>
-<td>Де тут банк?</td>
+<td>світлофор</td>
+<td>traffic light</td>
+<td>біля світлофора</td>
 </tr>
 <tr>
-<td>Вибачте, де…?</td>
-<td>Вибачте, де готель?</td>
+<td>зупинка</td>
+<td>bus stop</td>
+<td>на зупинці</td>
 </tr>
 <tr>
-<td>Скажіть, будь ласка, де…?</td>
-<td>Скажіть, будь ласка, де аптека?</td>
+<td>станція</td>
+<td>station</td>
+<td>на станції</td>
+</tr>
+<tr>
+<td>вхід</td>
+<td>entrance</td>
+<td>біля входу</td>
+</tr>
+<tr>
+<td>вихід</td>
+<td>exit</td>
+<td>біля виходу</td>
 </tr>
 </tbody>
 </table>
-<h2 id="givingdirections">Giving Directions</h2>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong><br />
+  <strong>Хрещатик</strong> (Khreshchatyk) is Kyiv's main street, often called "the Champs-Élysées of Kyiv." On weekends, it's closed to cars and becomes a huge pedestrian zone. If someone says "Зустрінемось на Хрещатику" (Let's meet on Khreshchatyk), you know you're going to the heart of the city!</p>
+</blockquote>
+<hr />
+<h2 id="askingfordirections">Asking for Directions</h2>
+<h3 id="keyphrases">Key Phrases</h3>
 <table>
 <thead>
 <tr>
-<th>Command</th>
-<th>Meaning</th>
+<th>Ukrainian</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Йдіть прямо.</td>
+<td>Де метро?</td>
+<td>Where is the metro?</td>
+</tr>
+<tr>
+<td>Як дістатися до…?</td>
+<td>How to get to…?</td>
+</tr>
+<tr>
+<td>Де тут зупинка?</td>
+<td>Where is the bus stop here?</td>
+</tr>
+<tr>
+<td>Це далеко?</td>
+<td>Is it far?</td>
+</tr>
+<tr>
+<td>Скільки хвилин пішки?</td>
+<td>How many minutes on foot?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sampledialogues">Sample Dialogues</h3>
+<p><strong>Dialogue 1: Finding the Metro</strong></p>
+<ul>
+<li>Вибачте, де метро?</li>
+<li>Прямо, потім наліво. Це близько.</li>
+<li>Дякую!</li>
+</ul>
+<p><strong>Dialogue 2: Getting to a Place</strong></p>
+<ul>
+<li>Скажіть, будь ласка, як дістатися до вокзалу?</li>
+<li>Ідіть прямо до світлофора, потім направо.</li>
+<li>Це далеко?</li>
+<li>Ні, п'ять хвилин пішки.</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong><br />
+  "Пішки" means "on foot" and comes from "піший" (pedestrian). When someone says "10 хвилин пішки," they mean a 10-minute walk.</p>
+</blockquote>
+<hr />
+<h2 id="transportation">Transportation</h2>
+<h3 id="typesoftransport">Types of Transport</h3>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>Preposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>автобус</td>
+<td>bus</td>
+<td>автобусом</td>
+</tr>
+<tr>
+<td>тролейбус</td>
+<td>trolleybus</td>
+<td>тролейбусом</td>
+</tr>
+<tr>
+<td>трамвай</td>
+<td>tram</td>
+<td>трамваєм</td>
+</tr>
+<tr>
+<td>метро</td>
+<td>metro</td>
+<td>метро</td>
+</tr>
+<tr>
+<td>таксі</td>
+<td>taxi</td>
+<td>таксі</td>
+</tr>
+<tr>
+<td>машина</td>
+<td>car</td>
+<td>машиною</td>
+</tr>
+<tr>
+<td>велосипед</td>
+<td>bicycle</td>
+<td>велосипедом</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bytransport">"By" Transport</h3>
+<p>To express "by [transport]," use the instrumental case:</p>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Ukrainian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>by bus</td>
+<td>автобусом</td>
+</tr>
+<tr>
+<td>by tram</td>
+<td>трамваєм</td>
+</tr>
+<tr>
+<td>by car</td>
+<td>машиною</td>
+</tr>
+<tr>
+<td>on foot</td>
+<td>пішки</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Я їду автобусом. (I'm going by bus.)</li>
+<li>Вона їздить на роботу трамваєм. (She goes to work by tram.)</li>
+<li>Ми йдемо пішки. (We're going on foot.)</li>
+</ul>
+<blockquote>
+  <p>🌍 <strong>Real World</strong><br />
+  Kyiv's metro is one of the deepest in the world—some stations are over 100 meters underground! The famous Arsenalna station is the deepest metro station globally at 105.5 meters.</p>
+</blockquote>
+<hr />
+<h2 id="vsdirectionvslocation">Куди vs Де: Direction vs Location</h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Meaning</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Де?</td>
+<td>Where? (location)</td>
+<td>у магазині (in the store)</td>
+</tr>
+<tr>
+<td>Куди?</td>
+<td>Where to? (direction)</td>
+<td>до магазину (to the store)</td>
+</tr>
+<tr>
+<td>Звідки?</td>
+<td>Where from? (origin)</td>
+<td>з магазину (from the store)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Де ти? — Я на зупинці. (Where are you? — I'm at the stop.)</li>
+<li>Куди ти йдеш? — До метро. (Where are you going? — To the metro.)</li>
+<li>Звідки ти йдеш? — З магазину. (Where are you coming from? — From the store.)</li>
+</ul>
+<hr />
+<h2 id="prepositionsofdirection">Prepositions of Direction</h2>
+<table>
+<thead>
+<tr>
+<th>Preposition</th>
+<th>Meaning</th>
+<th>Case</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>до</td>
+<td>to</td>
+<td>+ Gen</td>
+<td>до метро (to the metro)</td>
+</tr>
+<tr>
+<td>від</td>
+<td>from</td>
+<td>+ Gen</td>
+<td>від вокзалу (from the station)</td>
+</tr>
+<tr>
+<td>через</td>
+<td>through</td>
+<td>+ Acc</td>
+<td>через парк (through the park)</td>
+</tr>
+<tr>
+<td>вздовж</td>
+<td>along</td>
+<td>+ Gen</td>
+<td>вздовж вулиці (along the street)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Ідіть до світлофора. (Walk to the traffic light.)</li>
+<li>Це далеко від центру. (It's far from the center.)</li>
+<li>Пройдіть через площу. (Go through the square.)</li>
+</ul>
+<hr />
+<h2 id="directionwords">Direction Words</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>туди</td>
+<td>there (direction)</td>
+<td>Йдіть туди. (Go there.)</td>
+</tr>
+<tr>
+<td>сюди</td>
+<td>here (direction)</td>
+<td>Ідіть сюди! (Come here!)</td>
+</tr>
+<tr>
+<td>звідти</td>
+<td>from there</td>
+<td>Він іде звідти. (He's coming from there.)</td>
+</tr>
+<tr>
+<td>куди</td>
+<td>where to</td>
+<td>Куди йдеш? (Where are you going?)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🎯 <strong>Fun Fact</strong><br />
+  "Туди-сюди" is a common Ukrainian expression meaning "here and there" or "back and forth." "Він бігає туди-сюди" — He's running back and forth.</p>
+</blockquote>
+<hr />
+<h2 id="commonnavigationphrases">Common Navigation Phrases</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ідіть прямо.</td>
 <td>Go straight.</td>
 </tr>
 <tr>
-<td>Поверніть праворуч.</td>
+<td>Поверніть наліво.</td>
+<td>Turn left.</td>
+</tr>
+<tr>
+<td>Поверніть направо.</td>
 <td>Turn right.</td>
 </tr>
 <tr>
-<td>Поверніть ліворуч.</td>
-<td>Turn left.</td>
+<td>Це на розі.</td>
+<td>It's on the corner.</td>
+</tr>
+<tr>
+<td>Ви побачите…</td>
+<td>You will see…</td>
+</tr>
+<tr>
+<td>Це поруч з…</td>
+<td>It's next to…</td>
+</tr>
+<tr>
+<td>Це навпроти…</td>
+<td>It's opposite…</td>
 </tr>
 <tr>
 <td>Перейдіть вулицю.</td>
 <td>Cross the street.</td>
 </tr>
-<tr>
-<td>Пройдіть два квартали.</td>
-<td>Go two blocks.</td>
-</tr>
 </tbody>
 </table>
+<h3 id="completedirectionsexample">Complete Directions Example</h3>
+<p><strong>Як дістатися до музею?</strong><br />
+Ідіть прямо до світлофора. Потім поверніть наліво і йдіть вздовж вулиці. Музей буде на правому боці, навпроти парку.</p>
+<p>(Walk straight to the traffic light. Then turn left and walk along the street. The museum will be on the right side, opposite the park.)</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-practice">
+      <h3>Practice</h3>
+      <div class="md-content"><h2 id="exercise1givedirections">Exercise 1: Give Directions</h2>
+<p>Complete the directions:</p>
+<ol>
+<li><strong><em><em></em></strong><strong><em></em></em></strong>_ (straight), потім <strong><em><em></em></strong><strong><em></em></em></strong>_ (left).</li>
+<li>Це <strong><em><em></em></strong><strong><em></em></em></strong>_ (far)?</li>
+<li>Ні, це <strong><em><em></em></strong><strong><em></em></em></strong>_ (close).</li>
+<li><strong><em><em></em></strong><strong><em></em></em></strong>_ (Turn right) на світлофорі.</li>
+</ol>
+<h2 id="exercise2vs">Exercise 2: Куди vs Де</h2>
+<p>Choose the correct question:</p>
+<ol>
+<li>___ ти йдеш? — До магазину. (Де/Куди)</li>
+<li>___ метро? — На площі. (Де/Куди)</li>
+<li>___ ви їдете? — До Києва. (Де/Куди)</li>
+<li>___ ти зараз? — У парку. (Де/Куди)</li>
+</ol>
+<h2 id="exercise3transportation">Exercise 3: Transportation</h2>
+<p>Fill in the transport method:</p>
+<ol>
+<li>Я їду на роботу <strong><em><em></em></strong><strong><em></em></em></strong>_. (by bus)</li>
+<li>Вона їздить до школи <strong><em><em></em></strong><strong><em></em></em></strong>_. (by tram)</li>
+<li>Ми йдемо <strong><em><em></em></strong><strong><em></em></em></strong>_. (on foot)</li>
+<li>Він їде <strong><em><em></em></strong><strong><em></em></em></strong>_. (by taxi)</li>
+</ol>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Production</h3>
+      <div class="md-content"><h2 id="taskgivedirections">Task: Give Directions</h2>
+<p>Imagine someone asks you for directions to these places. Write the directions:</p>
+<p><strong>До метро:</strong></p>
+<hr />
+<p><strong>До магазину:</strong></p>
+<hr />
+<p><strong>До парку:</strong></p>
+<hr />
+<h2 id="taskmyroute">Task: My Route</h2>
+<p>Describe how you get to work/school:</p>
+<p>Я виходжу з дому і йду <strong><em><em></em></strong><strong><em></em></em></strong><em>. Потім я їду <strong><em></em></em></strong><strong><em><em></em></strong></em>. Це займає <strong><em><em></em></strong><strong><em></em></em></strong>_ хвилин.</p>
+<hr />
+<hr />
 <hr /></div>
     </div>
   
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><blockquote>
-  <p>💡 <strong>What You Learned Today</strong></p>
-  <ul>
-  <li><strong>Де…?</strong> for asking location</li>
-  <li>Direction words: прямо, праворуч, ліворуч, назад</li>
-  <li>Prepositions: біля, навпроти, до, за</li>
-  <li>Imperatives: йдіть, поверніть, перейдіть</li>
-  <li>City vocabulary: метро, станція, аптека, банк</li>
-  <li>Polite openers: Вибачте, Скажіть, будь ласка</li>
-  </ul>
-  <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 16, you'll learn the <strong>genitive case</strong>:</p>
-  <ul>
-  <li>Expressing possession: книга <strong>студента</strong> (the student's book)</li>
-  <li>Absence: немає <strong>часу</strong> (no time)</li>
-  <li>After numbers 5+: п'ять <strong>книг</strong> (five books)</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>In this module, you learned:</p>
+<ol>
+<li><strong>Basic directions</strong>: прямо, наліво, направо, назад</li>
+<li><strong>Position words</strong>: далеко, близько, поруч, навпроти, біля</li>
+<li><strong>Street vocabulary</strong>: вулиця, площа, проспект, зупинка, станція</li>
+<li><strong>Transportation</strong>: автобусом, трамваєм, машиною, пішки</li>
+<li><strong>Куди vs Де</strong>: Direction (куди? → до…) vs Location (де? → у…)</li>
+</ol>
+<p><strong>Key phrases:</strong></p>
+<ul>
+<li>Де метро? — Прямо, потім наліво. (Where is the metro? — Straight, then left.)</li>
+<li>Як дістатися до вокзалу? (How to get to the train station?)</li>
+<li>Це далеко? — Ні, п'ять хвилин пішки. (Is it far? — No, five minutes on foot.)</li>
+<li>Я їду автобусом. (I'm going by bus.)</li>
+</ul>
+<p>Next module: The Genitive Case! You'll learn to express absence and possession: "I don't have…" (У мене немає…).</p></div>
     </div>
   
       <div class="btn-group">
@@ -961,69 +1081,72 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Directions and Location</h3>
+    <section id="activity-0" class="section"><div class="card"><h3>Direction Vocabulary</h3>
       <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
-      <div id="activity-0-container" class="fill-container"></div>
+      <div id="activity-0-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
+    <section id="activity-1" class="section"><div class="card"><h3>Street Types</h3>
       <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Де vs Куди</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div class="sort-pool" id="activity-2-pool"><div class="sort-items" id="activity-2-items"></div></div>
+      <div class="sort-groups" id="activity-2-groups"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>City Navigation</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Navigation Facts</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
+    <section id="activity-4" class="section"><div class="card"><h3>Complete Directions</h3>
       <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
-      <div id="activity-4-container"></div>
+      <div id="activity-4-container" class="fill-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Direction Types</h3>
+    <section id="activity-5" class="section"><div class="card"><h3>Transport Methods</h3>
       <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
-      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
-      <div class="sort-groups" id="activity-5-groups"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
+      <div class="match-container" id="activity-5-container"><svg class="match-lines" id="activity-5-lines"></svg>
+        <div class="match-column" id="activity-5-left"></div>
+        <div class="match-column" id="activity-5-right"></div>
+      </div>
+      <div class="completion-message" id="activity-5-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Complete the Dialogue</h3>
+    <section id="activity-6" class="section"><div class="card"><h3>Navigation Vocabulary</h3>
       <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
-      <div id="activity-6-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
+      <div id="activity-6-container" class="order-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Choose the Response</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/0</span></div>
-      <div id="activity-7-container" class="select-container"></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Dialogue Completion</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="fill-container"></div>
       <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (48)</h3>
+        <h3>Словник (40)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1033,7 +1156,7 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">прямо</td><td class="vocab-ipa">/ˈprʲɑmɔ/</td><td class="vocab-en">straight</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">праворуч</td><td class="vocab-ipa">/prɑˈvɔrutʃ/</td><td class="vocab-en">to the right</td><td class="vocab-note">право = right</td></tr><tr><td class="vocab-uk">направо</td><td class="vocab-ipa">/nɑˈprɑvɔ/</td><td class="vocab-en">to the right</td><td class="vocab-note">Synonym</td></tr><tr><td class="vocab-uk">ліворуч</td><td class="vocab-ipa">/lʲiˈvɔrutʃ/</td><td class="vocab-en">to the left</td><td class="vocab-note">ліво = left</td></tr><tr><td class="vocab-uk">наліво</td><td class="vocab-ipa">/nɑˈlʲivɔ/</td><td class="vocab-en">to the left</td><td class="vocab-note">Synonym</td></tr><tr><td class="vocab-uk">назад</td><td class="vocab-ipa">/nɑˈzɑd/</td><td class="vocab-en">back</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">близько</td><td class="vocab-ipa">/ˈblɪzʲkɔ/</td><td class="vocab-en">near, close</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">далеко</td><td class="vocab-ipa">/dɑˈlɛkɔ/</td><td class="vocab-en">far</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поруч</td><td class="vocab-ipa">/ˈpɔrutʃ/</td><td class="vocab-en">nearby, next to</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">біля</td><td class="vocab-ipa">/ˈbʲilʲɑ/</td><td class="vocab-en">near, by</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-ipa">/dɔ/</td><td class="vocab-en">to, toward</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">від</td><td class="vocab-ipa">/vʲid/</td><td class="vocab-en">from</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">навпроти</td><td class="vocab-ipa">/nɑuˈprɔtɪ/</td><td class="vocab-en">opposite</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">за</td><td class="vocab-ipa">/zɑ/</td><td class="vocab-en">behind</td><td class="vocab-note">+ instrumental</td></tr><tr><td class="vocab-uk">перед</td><td class="vocab-ipa">/ˈpɛrɛd/</td><td class="vocab-en">in front of</td><td class="vocab-note">+ instrumental</td></tr><tr><td class="vocab-uk">між</td><td class="vocab-ipa">/mʲiʒ/</td><td class="vocab-en">between</td><td class="vocab-note">+ instrumental</td></tr><tr><td class="vocab-uk">через</td><td class="vocab-ipa">/ˈtʃɛrɛz/</td><td class="vocab-en">through, across</td><td class="vocab-note">+ accusative</td></tr><tr><td class="vocab-uk">вздовж</td><td class="vocab-ipa">/vzdɔvʒ/</td><td class="vocab-en">along</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">туди</td><td class="vocab-ipa">/tuˈdɪ/</td><td class="vocab-en">(to) there</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">сюди</td><td class="vocab-ipa">/sʲuˈdɪ/</td><td class="vocab-en">(to) here</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">звідти</td><td class="vocab-ipa">/ˈzvʲidtɪ/</td><td class="vocab-en">from there</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">зупинка</td><td class="vocab-ipa">/zuˈpɪnkɑ/</td><td class="vocab-en">stop</td><td class="vocab-note">Bus, tram stop</td></tr><tr><td class="vocab-uk">квартал</td><td class="vocab-ipa">/kvɑrˈtɑl/</td><td class="vocab-en">block</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ріг</td><td class="vocab-ipa">/rʲiɦ/</td><td class="vocab-en">corner</td><td class="vocab-note">За рогом</td></tr><tr><td class="vocab-uk">перехрестя</td><td class="vocab-ipa">/pɛrɛˈxrɛsʲtʲɑ/</td><td class="vocab-en">intersection</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">світлофор</td><td class="vocab-ipa">/svʲitlɔˈfɔr/</td><td class="vocab-en">traffic light</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">міст</td><td class="vocab-ipa">/mʲist/</td><td class="vocab-en">bridge</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">набережна</td><td class="vocab-ipa">/nɑbɛˈrɛʒnɑ/</td><td class="vocab-en">embankment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">проспект</td><td class="vocab-ipa">/prɔˈspɛkt/</td><td class="vocab-en">avenue</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бульвар</td><td class="vocab-ipa">/bulʲˈvɑr/</td><td class="vocab-en">boulevard</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">провулок</td><td class="vocab-ipa">/prɔˈvulɔk/</td><td class="vocab-en">lane</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вхід</td><td class="vocab-ipa">/vxʲid/</td><td class="vocab-en">entrance</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вихід</td><td class="vocab-ipa">/ˈvɪxʲid/</td><td class="vocab-en">exit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">аптека</td><td class="vocab-ipa">/ɑpˈtɛkɑ/</td><td class="vocab-en">pharmacy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лікарня</td><td class="vocab-ipa">/lʲiˈkɑrnʲɑ/</td><td class="vocab-en">hospital</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пошта</td><td class="vocab-ipa">/ˈpɔʃtɑ/</td><td class="vocab-en">post office</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ринок</td><td class="vocab-ipa">/ˈrɪnɔk/</td><td class="vocab-en">market</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">йти</td><td class="vocab-ipa">/jtɪ/</td><td class="vocab-en">to go (on foot)</td><td class="vocab-note">Imp: йди, йдіть</td></tr><tr><td class="vocab-uk">пішки</td><td class="vocab-ipa">/ˈpʲiʃkɪ/</td><td class="vocab-en">on foot</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повернути</td><td class="vocab-ipa">/pɔvɛrˈnutɪ/</td><td class="vocab-en">to turn</td><td class="vocab-note">Imp: поверни, поверніть</td></tr><tr><td class="vocab-uk">перейти</td><td class="vocab-ipa">/pɛrɛjˈtɪ/</td><td class="vocab-en">to cross</td><td class="vocab-note">Imp: перейди, перейдіть</td></tr><tr><td class="vocab-uk">їхати</td><td class="vocab-ipa">/ˈjixɑtɪ/</td><td class="vocab-en">to go (vehicle)</td><td class="vocab-note">Imp: їдь, їдьте</td></tr><tr><td class="vocab-uk">автобус</td><td class="vocab-ipa">/ɑu̯ˈtɔbus/</td><td class="vocab-en">bus</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">трамвай</td><td class="vocab-ipa">/trɑmˈvɑj/</td><td class="vocab-en">tram</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">тролейбус</td><td class="vocab-ipa">/trɔˈlɛjbus/</td><td class="vocab-en">trolleybus</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">таксі</td><td class="vocab-ipa">/tɑkˈsʲi/</td><td class="vocab-en">taxi</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">машина</td><td class="vocab-ipa">/mɑˈʃɪnɑ/</td><td class="vocab-en">car</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">велосипед</td><td class="vocab-ipa">/vɛlɔsɪˈpɛd/</td><td class="vocab-en">bicycle</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">вулиця (vulytsya)</td><td class="vocab-ipa">/ˈvulɪtsʲɑ/</td><td class="vocab-en">street</td><td class="vocab-note">Loc: на вулиці</td></tr><tr><td class="vocab-uk">провулок (provulok)</td><td class="vocab-ipa">/prɔˈvulɔk/</td><td class="vocab-en">lane, alley</td><td class="vocab-note">Loc: у провулку</td></tr><tr><td class="vocab-uk">площа (ploshcha)</td><td class="vocab-ipa">/ˈplɔʃtʃɑ/</td><td class="vocab-en">square</td><td class="vocab-note">Loc: на площі</td></tr><tr><td class="vocab-uk">проспект (prospekt)</td><td class="vocab-ipa">/prɔˈspɛkt/</td><td class="vocab-en">avenue</td><td class="vocab-note">Loc: на проспекті</td></tr><tr><td class="vocab-uk">бульвар (bul&#039;var)</td><td class="vocab-ipa">/bulʲˈvɑr/</td><td class="vocab-en">boulevard</td><td class="vocab-note">Loc: на бульварі</td></tr><tr><td class="vocab-uk">набережна (naberezhna)</td><td class="vocab-ipa">/nɑbɛˈrɛʒnɑ/</td><td class="vocab-en">embankment</td><td class="vocab-note">Loc: на набережній</td></tr><tr><td class="vocab-uk">міст (mist)</td><td class="vocab-ipa">/mʲist/</td><td class="vocab-en">bridge</td><td class="vocab-note">Loc: на мосту</td></tr><tr><td class="vocab-uk">перехрестя (perekhrestya)</td><td class="vocab-ipa">/pɛrɛˈxrɛstʲɑ/</td><td class="vocab-en">intersection</td><td class="vocab-note">Loc: на перехресті</td></tr><tr><td class="vocab-uk">світлофор (svitlofor)</td><td class="vocab-ipa">/svʲitlɔˈfɔr/</td><td class="vocab-en">traffic light</td><td class="vocab-note">біля світлофора</td></tr><tr><td class="vocab-uk">зупинка (zupynka)</td><td class="vocab-ipa">/zuˈpɪnkɑ/</td><td class="vocab-en">stop (bus/tram)</td><td class="vocab-note">Loc: на зупинці</td></tr><tr><td class="vocab-uk">станція (stantsiya)</td><td class="vocab-ipa">/ˈstɑntsʲijɑ/</td><td class="vocab-en">station</td><td class="vocab-note">Loc: на станції</td></tr><tr><td class="vocab-uk">вхід (vkhid)</td><td class="vocab-ipa">/vxʲid/</td><td class="vocab-en">entrance</td><td class="vocab-note">біля входу</td></tr><tr><td class="vocab-uk">вихід (vykhid)</td><td class="vocab-ipa">/ˈvɪxʲid/</td><td class="vocab-en">exit</td><td class="vocab-note">біля виходу</td></tr><tr><td class="vocab-uk">прямо (pryamo)</td><td class="vocab-ipa">/ˈprʲɑmɔ/</td><td class="vocab-en">straight</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">наліво (nalivo)</td><td class="vocab-ipa">/nɑˈlʲivɔ/</td><td class="vocab-en">to the left</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">направо (napravo)</td><td class="vocab-ipa">/nɑˈprɑvɔ/</td><td class="vocab-en">to the right</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">назад (nazad)</td><td class="vocab-ipa">/nɑˈzɑd/</td><td class="vocab-en">back</td><td class="vocab-note">Direction</td></tr><tr><td class="vocab-uk">далеко (daleko)</td><td class="vocab-ipa">/dɑˈlɛkɔ/</td><td class="vocab-en">far</td><td class="vocab-note">Distance</td></tr><tr><td class="vocab-uk">близько (blyz&#039;ko)</td><td class="vocab-ipa">/ˈblɪzʲkɔ/</td><td class="vocab-en">near, close</td><td class="vocab-note">Distance</td></tr><tr><td class="vocab-uk">поруч (poruch)</td><td class="vocab-ipa">/ˈpɔrutʃ/</td><td class="vocab-en">nearby, next to</td><td class="vocab-note">Position</td></tr><tr><td class="vocab-uk">навпроти (navproty)</td><td class="vocab-ipa">/nɑˈvprɔtɪ/</td><td class="vocab-en">opposite</td><td class="vocab-note">+ Gen</td></tr><tr><td class="vocab-uk">за (za)</td><td class="vocab-ipa">/zɑ/</td><td class="vocab-en">behind</td><td class="vocab-note">+ Instr</td></tr><tr><td class="vocab-uk">перед (pered)</td><td class="vocab-ipa">/ˈpɛrɛd/</td><td class="vocab-en">in front of</td><td class="vocab-note">+ Instr</td></tr><tr><td class="vocab-uk">між (mizh)</td><td class="vocab-ipa">/mʲiʒ/</td><td class="vocab-en">between</td><td class="vocab-note">+ Instr</td></tr><tr><td class="vocab-uk">біля (bilya)</td><td class="vocab-ipa">/ˈbʲilʲɑ/</td><td class="vocab-en">near, by</td><td class="vocab-note">+ Gen</td></tr><tr><td class="vocab-uk">через (cherez)</td><td class="vocab-ipa">/ˈtʃɛrɛz/</td><td class="vocab-en">through</td><td class="vocab-note">+ Acc</td></tr><tr><td class="vocab-uk">до (do)</td><td class="vocab-ipa">/dɔ/</td><td class="vocab-en">to</td><td class="vocab-note">+ Gen</td></tr><tr><td class="vocab-uk">від (vid)</td><td class="vocab-ipa">/vʲid/</td><td class="vocab-en">from</td><td class="vocab-note">+ Gen</td></tr><tr><td class="vocab-uk">вздовж (vzdovzh)</td><td class="vocab-ipa">/vzdɔʋʒ/</td><td class="vocab-en">along</td><td class="vocab-note">+ Gen</td></tr><tr><td class="vocab-uk">туди (tudy)</td><td class="vocab-ipa">/tuˈdɪ/</td><td class="vocab-en">there (direction)</td><td class="vocab-note">Motion toward</td></tr><tr><td class="vocab-uk">сюди (syudy)</td><td class="vocab-ipa">/sʲuˈdɪ/</td><td class="vocab-en">here (direction)</td><td class="vocab-note">Motion toward</td></tr><tr><td class="vocab-uk">звідти (zvidty)</td><td class="vocab-ipa">/ˈzvʲidtɪ/</td><td class="vocab-en">from there</td><td class="vocab-note">Origin</td></tr><tr><td class="vocab-uk">куди (kudy)</td><td class="vocab-ipa">/kuˈdɪ/</td><td class="vocab-en">where to</td><td class="vocab-note">Direction question</td></tr><tr><td class="vocab-uk">пішки (pishky)</td><td class="vocab-ipa">/ˈpʲiʃkɪ/</td><td class="vocab-en">on foot</td><td class="vocab-note">Walking</td></tr><tr><td class="vocab-uk">автобусом (avtobusom)</td><td class="vocab-ipa">/ɑʋˈtɔbusɔm/</td><td class="vocab-en">by bus</td><td class="vocab-note">Instrumental</td></tr><tr><td class="vocab-uk">трамваєм (tramvayem)</td><td class="vocab-ipa">/trɑmˈvɑjɛm/</td><td class="vocab-en">by tram</td><td class="vocab-note">Instrumental</td></tr><tr><td class="vocab-uk">метро (metro)</td><td class="vocab-ipa">/mɛtˈrɔ/</td><td class="vocab-en">metro</td><td class="vocab-note">Indeclinable</td></tr><tr><td class="vocab-uk">таксі (taksi)</td><td class="vocab-ipa">/tɑkˈsʲi/</td><td class="vocab-en">taxi</td><td class="vocab-note">Indeclinable</td></tr><tr><td class="vocab-uk">машиною (mashynoyu)</td><td class="vocab-ipa">/mɑˈʃɪnɔju/</td><td class="vocab-en">by car</td><td class="vocab-note">Instrumental</td></tr><tr><td class="vocab-uk">велосипедом (velosypedom)</td><td class="vocab-ipa">/vɛlɔsɪˈpɛdɔm/</td><td class="vocab-en">by bicycle</td><td class="vocab-note">Instrumental</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1045,8 +1168,8 @@ B: Йдіть ___ (straight), потім поверніть ___ (left). Метр
   </main><footer>Module 15 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Directions and Location","data":{"type":"fill-blank","items":[{"prompt":"___ тут метро? (Where is the metro here?)","answer":"Де","options":["Де","Що","Хто"]},{"prompt":"Йдіть ___. (Go straight.)","answer":"прямо","options":["праворуч","ліворуч","прямо"]},{"prompt":"Поверніть ___. (Turn right.)","answer":"праворуч","options":["прямо","праворуч","назад"]},{"prompt":"Банк ___. (The bank is here.)","answer":"тут","options":["там","тут","далеко"]},{"prompt":"___ вулицю. (Cross the street.)","answer":"Перейдіть","options":["Йдіть","Поверніть","Перейдіть"]},{"prompt":"Аптека ___. (The pharmacy is there.)","answer":"там","options":["тут","там","близько"]},{"prompt":"Магазин за ___. (The store is around the corner.)","answer":"рогом","options":["рогом","метро","вулицю"]},{"prompt":"Метро тут ___. (The metro is close here.)","answer":"близько","options":["там","тут","близько"]},{"prompt":"___ прямо. (Go straight.)","answer":"Йдіть","options":["Йдіть","Де","Що"]},{"prompt":"Поверніть ___. (Turn left.)","answer":"ліворуч","options":["прямо","ліворуч","назад"]},{"prompt":"Банк ___. (The bank is there.)","answer":"там","options":["тут","там","далеко"]},{"prompt":"Метро ___? (Is the metro far?)","answer":"далеко","options":["близько","далеко","тут"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["метро","Де","тут"],"answer":"Де тут метро?","translation":"Where is the metro here?"},{"words":["прямо","Йдіть"],"answer":"Йдіть прямо.","translation":"Go straight."},{"words":["праворуч","Поверніть"],"answer":"Поверніть праворуч.","translation":"Turn right."},{"words":["вулицю","Перейдіть","цю"],"answer":"Перейдіть цю вулицю.","translation":"Cross this street."},{"words":["тут","Банк","поруч"],"answer":"Банк тут поруч.","translation":"The bank is nearby here."},{"words":["рогом","за","Аптека"],"answer":"Аптека за рогом.","translation":"The pharmacy is around the corner."},{"words":["ліворуч","Поверніть"],"answer":"Поверніть ліворуч.","translation":"Turn left."},{"words":["там","Станція"],"answer":"Станція там.","translation":"The station is there."},{"words":["близько","Метро","тут"],"answer":"Метро тут близько.","translation":"The metro is close here."},{"words":["аптека","Де","тут"],"answer":"Де тут аптека?","translation":"Where is the pharmacy here?"},{"words":["далеко","Банк"],"answer":"Банк далеко.","translation":"The bank is far."},{"words":["там","Магазин","далеко"],"answer":"Магазин там далеко.","translation":"The store is far there."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"прямо","right":"straight"},{"left":"праворуч","right":"to the right"},{"left":"ліворуч","right":"to the left"},{"left":"біля","right":"near, by"},{"left":"навпроти","right":"opposite"},{"left":"за","right":"behind"},{"left":"вхід","right":"entrance"},{"left":"вихід","right":"exit"},{"left":"зупинка","right":"stop"},{"left":"далеко","right":"far"},{"left":"близько","right":"close"},{"left":"там","right":"there"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"City Navigation","data":{"type":"quiz","questions":[{"question":"What is the correct question for \"Where is the metro?\"","options":["Де метро?","Що метро?","Хто метро?","Як метро?"],"correctIndex":0,"explanation":"\"Де\" means \"where\""},{"question":"What verb form is \"Йдіть\" (go)?","options":["Infinitive","First person singular","Imperative (formal/plural)","Past tense"],"correctIndex":2,"explanation":"\"Йдіть\" is the formal imperative form of \"йти\""},{"question":"What preposition means \"near, by\"?","options":["на","біля","в","до"],"correctIndex":1,"explanation":"\"біля\" means near, by"},{"question":"How do you say \"Turn left\"?","options":["Поверніть прямо","Поверніть праворуч","Поверніть ліворуч","Поверніть назад"],"correctIndex":2,"explanation":"\"ліворуч\" = to the left"},{"question":"What does \"далеко\" mean?","options":["close","here","far","there"],"correctIndex":2,"explanation":"\"далеко\" = far"},{"question":"How do you politely start asking for directions?","options":["Йдіть!","Де!","Вибачте","Так!"],"correctIndex":2,"explanation":"\"Вибачте\" = Excuse me (polite opener)"},{"question":"What does \"за рогом\" mean?","options":["in the corner","on the corner","around the corner","near the corner"],"correctIndex":2,"explanation":"\"за рогом\" = around/behind the corner"},{"question":"What prefix does \"вихід\" (exit) use versus \"вхід\" (entrance)?","options":["Both have the same prefix","ви- (out) vs в- (in)","над- (over) vs під- (under)","пере- (across) vs за- (behind)"],"correctIndex":1,"explanation":"ви- means out/exit, в- means in/entrance"},{"question":"What does \"близько\" mean?","options":["close, near","far","there","here"],"correctIndex":0,"explanation":"\"близько\" = close, near"},{"question":"What does \"навпроти\" mean?","options":["near","behind","opposite","between"],"correctIndex":2,"explanation":"\"навпроти\" = opposite"},{"question":"How do you say \"Go straight\"?","options":["Йдіть прямо","Йдіть ліворуч","Йдіть праворуч","Йдіть назад"],"correctIndex":0,"explanation":"\"прямо\" = straight"},{"question":"What does \"зупинка\" mean?","options":["station","stop (bus/tram)","entrance","exit"],"correctIndex":1,"explanation":"\"зупинка\" = bus/tram stop"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"праворуч\" means \"to the right\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"біля\" is used to say \"near, by\" something","isTrue":true,"explanation":"Correct!"},{"statement":"\"Йдіть прямо\" means \"Turn around\"","isTrue":false,"explanation":"Incorrect. It means \"Go straight\""},{"statement":"\"Де тут метро?\" asks where the metro is","isTrue":true,"explanation":"Correct!"},{"statement":"\"вхід\" and \"вихід\" mean the same thing","isTrue":false,"explanation":"Incorrect. \"вхід\" = entrance, \"вихід\" = exit"},{"statement":"\"Вибачте\" is a polite way to start asking directions","isTrue":true,"explanation":"Correct!"},{"statement":"\"ліворуч\" means \"to the right\"","isTrue":false,"explanation":"Incorrect. \"ліворуч\" means \"to the left\""},{"statement":"\"зупинка\" means \"stop\" (bus/tram stop)","isTrue":true,"explanation":"Correct!"},{"statement":"\"Перейдіть вулицю\" means \"Cross the street\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"до\" and \"біля\" have the same meaning","isTrue":false,"explanation":"Incorrect. \"до\" = to/toward, \"біля\" = near/by"},{"statement":"\"Де тут банк?\" is correct","isTrue":true,"explanation":"Correct!"},{"statement":"\"Йдіть назад\" means \"Go straight\"","isTrue":false,"explanation":"Incorrect. \"Йдіть назад\" means \"Go back\""}]}},{"id":"activity-5","type":"group-sort","title":"Direction Types","data":{"type":"group-sort","groups":[{"id":"movement-verbs","name":"Movement Verbs","items":["Йдіть (go)","Поверніть (turn)","Перейдіть (cross)","Пройдіть (pass through)"],"nameUk":"Imperatives"},{"id":"direction-adverbs","name":"Direction Adverbs","items":["прямо (straight)","праворуч (to the right)","ліворуч (to the left)","назад (back)"]},{"id":"location-prepositions","name":"Location Prepositions","items":["біля (near, by)","навпроти (opposite)","за (behind)","до (to, toward)"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Dialogue","data":{"type":"fill-blank","items":[{"prompt":"A: Вибачте, ___ метро? (Excuse me, where is the metro?)","answer":"де","options":["де","що","як"]},{"prompt":"B: Йдіть ___. (Go straight.)","answer":"прямо","options":["прямо","назад","там"]},{"prompt":"A: Метро ___? (Is the metro far?)","answer":"далеко","options":["тут","там","далеко"]},{"prompt":"B: Ні, метро ___. (No, the metro is close.)","answer":"близько","options":["далеко","близько","там"]},{"prompt":"A: Скажіть, ___ тут банк? (Tell me, where is a bank here?)","answer":"де","options":["що","хто","де"]},{"prompt":"B: Банк ___ поруч. (The bank is nearby here.)","answer":"тут","options":["там","тут","далеко"]},{"prompt":"A: Дякую! А ___ аптека? (Thanks! And where is the pharmacy?)","answer":"де","options":["де","що","як"]},{"prompt":"B: Аптека ___ рогом. (The pharmacy is around the corner.)","answer":"за","options":["на","до","за"]},{"prompt":"A: Поверніть ___? (Turn left?)","answer":"ліворуч","options":["прямо","ліворуч","там"]},{"prompt":"B: Так, поверніть ___, і аптека там. (Yes, turn left, and the pharmacy is there.)","answer":"ліворуч","options":["праворуч","ліворуч","назад"]},{"prompt":"A: ___, будь ласка! (Excuse me, please!)","answer":"Вибачте","options":["Вибачте","Йдіть","Де"]},{"prompt":"B: Станція ___. (The station is there.)","answer":"там","options":["тут","там","де"]}]}},{"id":"activity-7","type":"select","title":"Choose the Response","data":{"type":"select","items":[]}}];
-    const vocabData = [{"uk":"прямо","translit":"","en":"straight","note":""},{"uk":"праворуч","translit":"","en":"to the right","note":"право = right"},{"uk":"направо","translit":"","en":"to the right","note":"Synonym"},{"uk":"ліворуч","translit":"","en":"to the left","note":"ліво = left"},{"uk":"наліво","translit":"","en":"to the left","note":"Synonym"},{"uk":"назад","translit":"","en":"back","note":""},{"uk":"близько","translit":"","en":"near, close","note":""},{"uk":"далеко","translit":"","en":"far","note":""},{"uk":"поруч","translit":"","en":"nearby, next to","note":""},{"uk":"біля","translit":"","en":"near, by","note":"+ genitive"},{"uk":"до","translit":"","en":"to, toward","note":"+ genitive"},{"uk":"від","translit":"","en":"from","note":"+ genitive"},{"uk":"навпроти","translit":"","en":"opposite","note":"+ genitive"},{"uk":"за","translit":"","en":"behind","note":"+ instrumental"},{"uk":"перед","translit":"","en":"in front of","note":"+ instrumental"},{"uk":"між","translit":"","en":"between","note":"+ instrumental"},{"uk":"через","translit":"","en":"through, across","note":"+ accusative"},{"uk":"вздовж","translit":"","en":"along","note":"+ genitive"},{"uk":"туди","translit":"","en":"(to) there","note":"Direction"},{"uk":"сюди","translit":"","en":"(to) here","note":"Direction"},{"uk":"звідти","translit":"","en":"from there","note":"Direction"},{"uk":"зупинка","translit":"","en":"stop","note":"Bus, tram stop"},{"uk":"квартал","translit":"","en":"block","note":""},{"uk":"ріг","translit":"","en":"corner","note":"За рогом"},{"uk":"перехрестя","translit":"","en":"intersection","note":""},{"uk":"світлофор","translit":"","en":"traffic light","note":""},{"uk":"міст","translit":"","en":"bridge","note":""},{"uk":"набережна","translit":"","en":"embankment","note":""},{"uk":"проспект","translit":"","en":"avenue","note":""},{"uk":"бульвар","translit":"","en":"boulevard","note":""},{"uk":"провулок","translit":"","en":"lane","note":""},{"uk":"вхід","translit":"","en":"entrance","note":""},{"uk":"вихід","translit":"","en":"exit","note":""},{"uk":"аптека","translit":"","en":"pharmacy","note":""},{"uk":"лікарня","translit":"","en":"hospital","note":""},{"uk":"пошта","translit":"","en":"post office","note":""},{"uk":"ринок","translit":"","en":"market","note":""},{"uk":"йти","translit":"","en":"to go (on foot)","note":"Imp: йди, йдіть"},{"uk":"пішки","translit":"","en":"on foot","note":""},{"uk":"повернути","translit":"","en":"to turn","note":"Imp: поверни, поверніть"},{"uk":"перейти","translit":"","en":"to cross","note":"Imp: перейди, перейдіть"},{"uk":"їхати","translit":"","en":"to go (vehicle)","note":"Imp: їдь, їдьте"},{"uk":"автобус","translit":"","en":"bus","note":""},{"uk":"трамвай","translit":"","en":"tram","note":""},{"uk":"тролейбус","translit":"","en":"trolleybus","note":""},{"uk":"таксі","translit":"","en":"taxi","note":""},{"uk":"машина","translit":"","en":"car","note":""},{"uk":"велосипед","translit":"","en":"bicycle","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"quiz","title":"Direction Vocabulary","data":{"type":"quiz","questions":[{"question":"What is the Ukrainian word for \"straight\"?","options":["прямо","наліво","направо","назад"],"correctIndex":0,"explanation":"прямо means straight (go straight = Ідіть прямо)"},{"question":"What is the Ukrainian word for \"to the left\"?","options":["наліво","прямо","направо","назад"],"correctIndex":0,"explanation":"наліво means to the left"},{"question":"What is the Ukrainian word for \"to the right\"?","options":["направо","наліво","прямо","назад"],"correctIndex":0,"explanation":"направо means to the right"},{"question":"What is the Ukrainian word for \"far\"?","options":["далеко","близько","поруч","біля"],"correctIndex":0,"explanation":"далеко means far (Is it far? = Це далеко?)"},{"question":"What is the Ukrainian word for \"near/close\"?","options":["близько","далеко","поруч","навпроти"],"correctIndex":0,"explanation":"близько means near or close"},{"question":"What is the Ukrainian word for \"opposite\"?","options":["навпроти","поруч","біля","за"],"correctIndex":0,"explanation":"навпроти means opposite or across from"},{"question":"What is the Ukrainian word for \"nearby\"?","options":["поруч","далеко","близько","навпроти"],"correctIndex":0,"explanation":"поруч means nearby or next to"},{"question":"What is the Ukrainian word for \"behind\"?","options":["за","перед","між","біля"],"correctIndex":0,"explanation":"за means behind (behind the building = за будинком)"},{"question":"What is the Ukrainian word for \"in front of\"?","options":["перед","за","між","біля"],"correctIndex":0,"explanation":"перед means in front of"},{"question":"What is the Ukrainian word for \"between\"?","options":["між","за","перед","біля"],"correctIndex":0,"explanation":"між means between"},{"question":"What is the Ukrainian word for \"near/by\"?","options":["біля","між","за","перед"],"correctIndex":0,"explanation":"біля means near or by (near the metro = біля метро)"},{"question":"What is the Ukrainian word for \"back\"?","options":["назад","прямо","наліво","направо"],"correctIndex":0,"explanation":"назад means back"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-1","type":"match-up","title":"Street Types","data":{"type":"match-up","pairs":[{"left":"вулиця","right":"street"},{"left":"площа","right":"square"},{"left":"проспект","right":"avenue"},{"left":"бульвар","right":"boulevard"},{"left":"набережна","right":"embankment"},{"left":"міст","right":"bridge"},{"left":"провулок","right":"lane"},{"left":"перехрестя","right":"intersection"},{"left":"світлофор","right":"traffic light"},{"left":"зупинка","right":"stop"},{"left":"станція","right":"station"},{"left":"вхід","right":"entrance"}],"shuffleRight":true}},{"id":"activity-2","type":"group-sort","title":"Де vs Куди","data":{"type":"group-sort","groups":[{"id":"","name":"Де?","items":["у магазині","на вулиці","в метро","на площі","біля банку","на зупинці"],"nameUk":"Location"},{"id":"","name":"Куди?","items":["до магазину","на вулицю","в метро","на площу","до банку","на зупинку"],"nameUk":"Direction"}],"shuffleItems":true}},{"id":"activity-3","type":"true-false","title":"Navigation Facts","data":{"type":"true-false","statements":[{"statement":"Куди asks about location, while Де asks about direction.","isTrue":false,"explanation":"False! It's the opposite: Де = location (where?), Куди = direction (where to?)"},{"statement":"Прямо means 'straight.'","isTrue":true,"explanation":"True! Ідіть прямо = Go straight."},{"statement":"Пішки means 'by bus.'","isTrue":false,"explanation":"False! Пішки means 'on foot.' By bus = автобусом."},{"statement":"Навпроти means 'opposite' or 'across from.'","isTrue":true,"explanation":"True! Банк навпроти школи = The bank is opposite the school."},{"statement":"To say 'by car' in Ukrainian, you use машиною.","isTrue":true,"explanation":"True! This is the instrumental case form of машина."},{"statement":"Зупинка is a metro station.","isTrue":false,"explanation":"False! Зупинка is a bus/tram stop. Metro station = станція метро."},{"statement":"Прямо, потім наліво means 'Straight, then left.'","isTrue":true,"explanation":"True! This is a common way to give directions."},{"statement":"Біля means 'near' or 'by.'","isTrue":true,"explanation":"True! Біля метро = near the metro."},{"statement":"Туди means 'there' (location).","isTrue":false,"explanation":"False! Туди means 'there' (direction/motion toward). Static location = там."},{"statement":"Перехрестя means 'intersection.'","isTrue":true,"explanation":"True! На перехресті = at the intersection."},{"statement":"Куди ти? is correct to ask where someone is located.","isTrue":false,"explanation":"False! Use Де ти? for location. Куди ти йдеш? = Where are you going?"},{"statement":"Звідти means 'from there.'","isTrue":true,"explanation":"True! Він іде звідти = He's coming from there."}]}},{"id":"activity-4","type":"fill-blank","title":"Complete Directions","data":{"type":"fill-blank","items":[{"prompt":"Ідіть ___, потім наліво.","answer":"прямо","options":["прямо","наліво","направо","назад"]},{"prompt":"Поверніть ___ на світлофорі.","answer":"направо","options":["направо","далеко","близько","поруч"]},{"prompt":"Це далеко? — Ні, це ___.","answer":"близько","options":["близько","далеко","назад","туди"]},{"prompt":"Метро ___ вокзалу.","answer":"біля","options":["біля","до","від","за"]},{"prompt":"___ ти йдеш? — До магазину.","answer":"Куди","options":["Куди","Де","Звідки","Що"]},{"prompt":"Я їду на роботу ___.","answer":"автобусом","options":["автобусом","автобус","автобуса","в автобус"]},{"prompt":"Банк ___ аптеки.","answer":"навпроти","options":["навпроти","прямо","далеко","близько"]},{"prompt":"Ми йдемо ___.","answer":"пішки","options":["пішки","машина","автобус","таксі"]},{"prompt":"Це на ___ вулиці.","answer":"розі","options":["розі","далеко","близько","прямо"]},{"prompt":"___ ти зараз? — У парку.","answer":"Де","options":["Де","Куди","Звідки","Як"]},{"prompt":"Музей ___ площі.","answer":"на","options":["на","в","до","від"]},{"prompt":"Йдіть ___ вулиці.","answer":"вздовж","options":["вздовж","між","через","до"]}]}},{"id":"activity-5","type":"match-up","title":"Transport Methods","data":{"type":"match-up","pairs":[{"left":"автобусом","right":"by bus"},{"left":"трамваєм","right":"by tram"},{"left":"машиною","right":"by car"},{"left":"таксі","right":"by taxi"},{"left":"пішки","right":"on foot"},{"left":"велосипедом","right":"by bicycle"},{"left":"метро","right":"by metro"},{"left":"тролейбусом","right":"by trolleybus"},{"left":"поїздом","right":"by train"},{"left":"літаком","right":"by plane"},{"left":"маршруткою","right":"by minibus"},{"left":"мотоциклом","right":"by motorcycle"}],"shuffleRight":true}},{"id":"activity-6","type":"anagram","title":"Navigation Vocabulary","data":{"type":"anagram","isAnagram":true,"items":[{"letters":["о","м","я","р","п"],"answer":"прямо","translation":"straight"},{"letters":["о","в","і","л","а","н"],"answer":"наліво","translation":"to the left"},{"letters":["о","в","а","р","п","а","н"],"answer":"направо","translation":"to the right"},{"letters":["о","к","е","л","а","д"],"answer":"далеко","translation":"far"},{"letters":["о","к","ь","з","л","и","б"],"answer":"близько","translation":"near"},{"letters":["ч","р","о","у","п"],"answer":"поруч","translation":"nearby"},{"letters":["я","ц","и","л","в","у"],"answer":"вулиця","translation":"street"},{"letters":["о","р","т","е","м"],"answer":"метро","translation":"metro"},{"letters":["а","щ","л","о","п"],"answer":"площа","translation":"square"},{"letters":["а","к","н","и","п","у","з"],"answer":"зупинка","translation":"stop"},{"letters":["я","і","ц","н","а","т","с"],"answer":"станція","translation":"station"},{"letters":["і","д","х","в"],"answer":"вхід","translation":"entrance"}]}},{"id":"activity-7","type":"fill-blank","title":"Dialogue Completion","data":{"type":"fill-blank","items":[{"prompt":"Вибачте, ___ метро?","answer":"де","options":["де","куди","звідки","як"]},{"prompt":"Прямо, ___ наліво.","answer":"потім","options":["потім","але","або","та"]},{"prompt":"Це ___? — Ні, п'ять хвилин пішки.","answer":"далеко","options":["далеко","близько","прямо","назад"]},{"prompt":"Як дістатися ___ вокзалу?","answer":"до","options":["до","на","в","від"]},{"prompt":"Поверніть направо ___ світлофора.","answer":"біля","options":["біля","на","в","до"]},{"prompt":"Музей ___ з банком.","answer":"поруч","options":["поруч","далеко","прямо","назад"]},{"prompt":"Перейдіть ___ вулицю.","answer":"через","options":["через","вздовж","до","від"]},{"prompt":"___ ти їдеш? — До Львова.","answer":"Куди","options":["Куди","Де","Звідки","Що"]},{"prompt":"Зупинка ___ магазину.","answer":"біля","options":["біля","на","в","до"]},{"prompt":"Ідіть ___ площу.","answer":"через","options":["через","вздовж","біля","поруч"]},{"prompt":"Я йду ___.","answer":"звідти","options":["звідти","туди","сюди","куди"]},{"prompt":"Ми їдемо ___ автобусом.","answer":"туди","options":["туди","там","тут","звідти"]}]}}];
+    const vocabData = [{"uk":"вулиця (vulytsya)","translit":"","en":"street","note":"Loc: на вулиці"},{"uk":"провулок (provulok)","translit":"","en":"lane, alley","note":"Loc: у провулку"},{"uk":"площа (ploshcha)","translit":"","en":"square","note":"Loc: на площі"},{"uk":"проспект (prospekt)","translit":"","en":"avenue","note":"Loc: на проспекті"},{"uk":"бульвар (bul'var)","translit":"","en":"boulevard","note":"Loc: на бульварі"},{"uk":"набережна (naberezhna)","translit":"","en":"embankment","note":"Loc: на набережній"},{"uk":"міст (mist)","translit":"","en":"bridge","note":"Loc: на мосту"},{"uk":"перехрестя (perekhrestya)","translit":"","en":"intersection","note":"Loc: на перехресті"},{"uk":"світлофор (svitlofor)","translit":"","en":"traffic light","note":"біля світлофора"},{"uk":"зупинка (zupynka)","translit":"","en":"stop (bus/tram)","note":"Loc: на зупинці"},{"uk":"станція (stantsiya)","translit":"","en":"station","note":"Loc: на станції"},{"uk":"вхід (vkhid)","translit":"","en":"entrance","note":"біля входу"},{"uk":"вихід (vykhid)","translit":"","en":"exit","note":"біля виходу"},{"uk":"прямо (pryamo)","translit":"","en":"straight","note":"Direction"},{"uk":"наліво (nalivo)","translit":"","en":"to the left","note":"Direction"},{"uk":"направо (napravo)","translit":"","en":"to the right","note":"Direction"},{"uk":"назад (nazad)","translit":"","en":"back","note":"Direction"},{"uk":"далеко (daleko)","translit":"","en":"far","note":"Distance"},{"uk":"близько (blyz'ko)","translit":"","en":"near, close","note":"Distance"},{"uk":"поруч (poruch)","translit":"","en":"nearby, next to","note":"Position"},{"uk":"навпроти (navproty)","translit":"","en":"opposite","note":"+ Gen"},{"uk":"за (za)","translit":"","en":"behind","note":"+ Instr"},{"uk":"перед (pered)","translit":"","en":"in front of","note":"+ Instr"},{"uk":"між (mizh)","translit":"","en":"between","note":"+ Instr"},{"uk":"біля (bilya)","translit":"","en":"near, by","note":"+ Gen"},{"uk":"через (cherez)","translit":"","en":"through","note":"+ Acc"},{"uk":"до (do)","translit":"","en":"to","note":"+ Gen"},{"uk":"від (vid)","translit":"","en":"from","note":"+ Gen"},{"uk":"вздовж (vzdovzh)","translit":"","en":"along","note":"+ Gen"},{"uk":"туди (tudy)","translit":"","en":"there (direction)","note":"Motion toward"},{"uk":"сюди (syudy)","translit":"","en":"here (direction)","note":"Motion toward"},{"uk":"звідти (zvidty)","translit":"","en":"from there","note":"Origin"},{"uk":"куди (kudy)","translit":"","en":"where to","note":"Direction question"},{"uk":"пішки (pishky)","translit":"","en":"on foot","note":"Walking"},{"uk":"автобусом (avtobusom)","translit":"","en":"by bus","note":"Instrumental"},{"uk":"трамваєм (tramvayem)","translit":"","en":"by tram","note":"Instrumental"},{"uk":"метро (metro)","translit":"","en":"metro","note":"Indeclinable"},{"uk":"таксі (taksi)","translit":"","en":"taxi","note":"Indeclinable"},{"uk":"машиною (mashynoyu)","translit":"","en":"by car","note":"Instrumental"},{"uk":"велосипедом (velosypedom)","translit":"","en":"by bicycle","note":"Instrumental"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1098,8 +1221,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1130,8 +1253,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1543,7 +1666,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1553,7 +1676,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1754,6 +1879,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

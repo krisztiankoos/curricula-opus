@@ -1,0 +1,935 @@
+{
+  "$schema": "../../../schemas/vibe-module.schema.json",
+  "lesson": {
+    "id": "lesson-uk-A2-02",
+    "moduleId": "mod-uk-A2-02",
+    "languagePair": "l2-uk-en",
+    "subject": "language",
+    "owner": "curricula-opus",
+    "visibility": "public",
+    "language": "uk",
+    "targetLevel": "A2",
+    "phase": "A2.1",
+    "moduleNumber": 2,
+    "moduleType": "grammar",
+    "immersionLevel": 0.4,
+    "title": "The Dative II",
+    "subtitle": "To Whom - Nouns",
+    "description": "Learn dative case endings for nouns",
+    "objectives": [
+      "Learn dative case endings for nouns",
+      "Apply dative to masculine, feminine, neuter nouns",
+      "Express recipients in full sentences",
+      "Build on pronoun dative from Module 31"
+    ],
+    "grammarFocus": [
+      "Dative noun endings by gender",
+      "Masculine -ові/-у patterns",
+      "Feminine -і pattern",
+      "Plural -ам pattern"
+    ],
+    "tags": [
+      "dative",
+      "nouns",
+      "case",
+      "indirect-object",
+      "endings"
+    ],
+    "totalDuration": 45,
+    "transliterationMode": "partial",
+    "sections": [
+      {
+        "id": "section-intro",
+        "name": "Вступ",
+        "nameEn": "Introduction",
+        "type": "intro",
+        "content": "## warm-up\n\n### From Pronouns to Nouns\n\nIn Module 31, you learned dative pronouns (мені, тобі, йому...). Now let's apply dative to **nouns** - to friends, family, people by name!\n\n**Compare:**\n- Я даю книгу **йому**. (I give the book to him - pronoun)\n- Я даю книгу **другові**. (I give the book to my friend - noun)\n\n**The key question:** Кому? (To whom?)\n- Кому ти пишеш? - To whom are you writing?\n- Другові. / Сестрі. / Батькові. - To a friend. / To sister. / To father.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian has TWO masculine dative endings: **-ові** and **-у**. The -ові ending is uniquely Ukrainian! It developed to make speech clearer (since -у is also genitive/locative). When you use \"-ові,\" you're using a distinctly Ukrainian form that sets it apart from other Slavic languages.\n\n## presentation\n\n### Dative Endings Overview\n\n| Gender | Nominative | Dative | Example |\n|--------|------------|--------|---------|\n| Masculine | -consonant | -ові / -у | друг → другові |\n| Masculine soft | -ь | -еві / -ю | вчитель → вчителеві |\n| Feminine | -а | -і | сестра → сестрі |\n| Feminine soft | -я | -і | Марія → Марії |\n| Neuter | -о/-е | -у/-ові | місто → місту |\n| Plural (all) | - | -ам | друзі → друзям |\n\n### Masculine Dative: -ові vs -у\n\n**Both endings are correct!** Ukrainians use both:\n\n| Nominative | Dative (-ові) | Dative (-у) |\n|------------|---------------|-------------|\n| друг | друг**ові** | друг**у** |\n| брат | брат**ові** | брат**у** |\n| студент | студент**ові** | студент**у** |\n| батько | батьк**ові** | батьк**у** |\n| Андрій | Андрі**єві** | Андрі**ю** |\n\n> ⚡ **Pro Tip: When to Use Which?**\n>\n> - **-ові/-еві** sounds more formal, literary, distinctly Ukrainian\n> - **-у/-ю** sounds more casual, conversational\n> - For names, both work: \"Іванові\" or \"Івану\"\n> - In modern speech, -ові is becoming more popular as a marker of Ukrainian identity\n\n**Consonant changes before -і:**\n- г → з: друг → дру**з**і (but also другові)\n- к → ц: студентка → студент**ц**і\n- х → с: свекруха → свекру**с**і\n\n> 📜 **History Bite: The -ові Ending**\n>\n> The -ові ending developed in Ukrainian during the medieval period (12th-14th centuries) and became a distinctive marker of the language. While Russian uses only -у, Ukrainian proudly maintains both. After Ukraine's independence, using -ові became associated with conscious Ukrainian language use - it's grammar with identity!\n\n### Feminine Dative: -і\n\nFeminine nouns change **-а/-я** to **-і**:\n\n| Nominative | Dative | Example Sentence |\n|------------|--------|------------------|\n| мама | мам**і** | Я дзвоню мамі. |\n| сестра | сестр**і** | Допоможи сестрі. |\n| подруга | подруз**і** | Розкажи подрузі. |\n| бабуся | бабус**і** | Напиши бабусі. |\n| Марія | Марі**ї** | Дай це Марії. |\n\n**Remember the consonant changes:**\n- г → з: подру**г**а → подру**з**і\n- к → ц: донь**к**а → донь**ц**і\n- х → с: невіст**к**а → невіст**ц**і\n\n> 🎭 **Culture Corner: Addressing People**\n>\n> When you need to address someone indirectly, use dative:\n> - Передай привіт **мамі**! (Say hi to mom!)\n> - Скажи **Олені**, що я чекаю. (Tell Olena I'm waiting.)\n> - Побажай **бабусі** здоров'я! (Wish grandma health!)\n>\n> This is extremely common in everyday Ukrainian conversations!\n\n### Neuter Dative: -у/-ові\n\nNeuter nouns take **-у** (or sometimes -ові for emphasis):\n\n| Nominative | Dative | Example |\n|------------|--------|---------|\n| місто | міст**у** | Що потрібно місту? |\n| село | сел**у** | Допомога селу. |\n| дитя | дитят**і** | Дай дитяті іграшку. |\n\n> 💡 **Did You Know?**\n>\n> Neuter dative is relatively rare because neuter nouns are mostly things, not recipients. You'll use it mostly with **дитя** (child), **немовля** (baby), or abstract concepts like \"місту потрібні дороги\" (the city needs roads).\n\n### Plural Dative: -ам/-ям\n\nAll genders form plural dative with **-ам** (hard) or **-ям** (soft):\n\n| Nominative Sg | Nominative Pl | Dative Pl |\n|---------------|---------------|-----------|\n| друг | друзі | друз**ям** |\n| сестра | сестри | сестр**ам** |\n| батько | батьки | батьк**ам** |\n| студент | студенти | студент**ам** |\n| дитина | діти | діт**ям** |\n\n**Example sentences:**\n- Я допомагаю **студентам**. (I help students.)\n- Вона пише **батькам**. (She writes to her parents.)\n- Розкажи це **друзям**! (Tell this to friends!)\n\n### Common Patterns\n\n**Letter/message writing:**\n- писати листа **другові** (write a letter to a friend)\n- надіслати повідомлення **колезі** (send a message to a colleague)\n- відповісти **клієнтові** (reply to a client)\n\n**Giving and showing:**\n- дати подарунок **сестрі** (give a gift to sister)\n- показати фото **батькам** (show photos to parents)\n- принести квіти **дівчині** (bring flowers to girlfriend)\n\n**Helping and telling:**\n- допомогти **бабусі** (help grandma)\n- сказати правду **другові** (tell the truth to a friend)\n- пояснити **студентові** (explain to a student)\n\n> ⚡ **Pro Tip: Names in Dative**\n>\n> Ukrainian names follow the same rules:\n> - Іван → Іван**ові** / Іван**у**\n> - Олена → Олен**і**\n> - Андрій → Андрі**єві** / Андрі**ю**\n> - Марія → Марі**ї**\n>\n> Foreign names often don't decline: \"Скажи Джон**у**\" but sometimes \"Скажи Джон\"\n\n## practice\n\n### Noun Transformations\n\nChange nominative to dative:\n\n**Masculine:**\n1. друг\n   > [!answer] другові / другу\n2. брат\n   > [!answer] братові / брату\n3. студент\n   > [!answer] студентові / студенту\n4. батько\n   > [!answer] батькові / батьку\n5. вчитель\n   > [!answer] вчителеві / вчителю\n\n**Feminine:**\n1. сестра\n   > [!answer] сестрі\n2. мама\n   > [!answer] мамі\n3. подруга\n   > [!answer] подрузі\n4. бабуся\n   > [!answer] бабусі\n5. колега\n   > [!answer] колезі\n\n**Plural:**\n1. друзі\n   > [!answer] друзям\n2. батьки\n   > [!answer] батькам\n3. студенти\n   > [!answer] студентам\n4. сестри\n   > [!answer] сестрам\n\n### Complete the Sentences\n\nFill in the dative form:\n\n1. Я пишу листа ___ (брат).\n   > [!answer] братові / брату\n2. Допоможи ___ (бабуся)!\n   > [!answer] бабусі\n3. Вона дзвонить ___ (подруга).\n   > [!answer] подрузі\n4. Покажи це ___ (батьки).\n   > [!answer] батькам\n5. Скажи ___ (Марія), що я чекаю.\n   > [!answer] Марії\n6. Він дає гроші ___ (студенти).\n   > [!!answer] студентам\n\n### Build Full Sentences\n\nCreate sentences using: Subject + дати/показати/сказати + Object + Dative noun\n\n1. Я / подарунок / сестра\n   > [!answer] Я даю подарунок сестрі.\n2. Вона / лист / друг\n   > [!answer] Вона пише листа другові.\n3. Ми / фото / батьки\n   > [!answer] Ми показуємо фото батькам.\n4. Він / правда / брат\n   > [!answer] Він каже правду братові.\n\n## production\n\n### Real Situations\n\n**Scenario 1: At the post office**\n- Я хочу надіслати посилку.\n- Кому?\n- Братові. Він живе в Львові.\n- Напишіть адресу отримувача.\n\n**Scenario 2: Planning a party**\n- Кому ти надіслав запрошення?\n- Усім друзям! Олегові, Марії, Андрієві...\n- А батькам?\n- Так, батькам теж!\n\n**Scenario 3: Office communication**\n- Передай це директорові.\n- А копію?\n- Копію надішли колегам по електронній пошті.\n\n---\n\n---\n\n---\n\n---"
+      }
+    ],
+    "rawMarkdown": "---\ntitle: \"The Dative II\"\nsubtitle: \"To Whom - Nouns\"\nphase: A2.1\nduration: 45\ntransliteration: partial\ntags: [dative, nouns, case, indirect-object, endings]\nobjectives:\n  - Learn dative case endings for nouns\n  - Apply dative to masculine, feminine, neuter nouns\n  - Express recipients in full sentences\n  - Build on pronoun dative from Module 31\ngrammar:\n  - Dative noun endings by gender\n  - Masculine -ові/-у patterns\n  - Feminine -і pattern\n  - Plural -ам pattern\n---\n\n# Lesson Content\n\n## warm-up\n\n### From Pronouns to Nouns\n\nIn Module 31, you learned dative pronouns (мені, тобі, йому...). Now let's apply dative to **nouns** - to friends, family, people by name!\n\n**Compare:**\n- Я даю книгу **йому**. (I give the book to him - pronoun)\n- Я даю книгу **другові**. (I give the book to my friend - noun)\n\n**The key question:** Кому? (To whom?)\n- Кому ти пишеш? - To whom are you writing?\n- Другові. / Сестрі. / Батькові. - To a friend. / To sister. / To father.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian has TWO masculine dative endings: **-ові** and **-у**. The -ові ending is uniquely Ukrainian! It developed to make speech clearer (since -у is also genitive/locative). When you use \"-ові,\" you're using a distinctly Ukrainian form that sets it apart from other Slavic languages.\n\n## presentation\n\n### Dative Endings Overview\n\n| Gender | Nominative | Dative | Example |\n|--------|------------|--------|---------|\n| Masculine | -consonant | -ові / -у | друг → другові |\n| Masculine soft | -ь | -еві / -ю | вчитель → вчителеві |\n| Feminine | -а | -і | сестра → сестрі |\n| Feminine soft | -я | -і | Марія → Марії |\n| Neuter | -о/-е | -у/-ові | місто → місту |\n| Plural (all) | - | -ам | друзі → друзям |\n\n### Masculine Dative: -ові vs -у\n\n**Both endings are correct!** Ukrainians use both:\n\n| Nominative | Dative (-ові) | Dative (-у) |\n|------------|---------------|-------------|\n| друг | друг**ові** | друг**у** |\n| брат | брат**ові** | брат**у** |\n| студент | студент**ові** | студент**у** |\n| батько | батьк**ові** | батьк**у** |\n| Андрій | Андрі**єві** | Андрі**ю** |\n\n> ⚡ **Pro Tip: When to Use Which?**\n>\n> - **-ові/-еві** sounds more formal, literary, distinctly Ukrainian\n> - **-у/-ю** sounds more casual, conversational\n> - For names, both work: \"Іванові\" or \"Івану\"\n> - In modern speech, -ові is becoming more popular as a marker of Ukrainian identity\n\n**Consonant changes before -і:**\n- г → з: друг → дру**з**і (but also другові)\n- к → ц: студентка → студент**ц**і\n- х → с: свекруха → свекру**с**і\n\n> 📜 **History Bite: The -ові Ending**\n>\n> The -ові ending developed in Ukrainian during the medieval period (12th-14th centuries) and became a distinctive marker of the language. While Russian uses only -у, Ukrainian proudly maintains both. After Ukraine's independence, using -ові became associated with conscious Ukrainian language use - it's grammar with identity!\n\n### Feminine Dative: -і\n\nFeminine nouns change **-а/-я** to **-і**:\n\n| Nominative | Dative | Example Sentence |\n|------------|--------|------------------|\n| мама | мам**і** | Я дзвоню мамі. |\n| сестра | сестр**і** | Допоможи сестрі. |\n| подруга | подруз**і** | Розкажи подрузі. |\n| бабуся | бабус**і** | Напиши бабусі. |\n| Марія | Марі**ї** | Дай це Марії. |\n\n**Remember the consonant changes:**\n- г → з: подру**г**а → подру**з**і\n- к → ц: донь**к**а → донь**ц**і\n- х → с: невіст**к**а → невіст**ц**і\n\n> 🎭 **Culture Corner: Addressing People**\n>\n> When you need to address someone indirectly, use dative:\n> - Передай привіт **мамі**! (Say hi to mom!)\n> - Скажи **Олені**, що я чекаю. (Tell Olena I'm waiting.)\n> - Побажай **бабусі** здоров'я! (Wish grandma health!)\n>\n> This is extremely common in everyday Ukrainian conversations!\n\n### Neuter Dative: -у/-ові\n\nNeuter nouns take **-у** (or sometimes -ові for emphasis):\n\n| Nominative | Dative | Example |\n|------------|--------|---------|\n| місто | міст**у** | Що потрібно місту? |\n| село | сел**у** | Допомога селу. |\n| дитя | дитят**і** | Дай дитяті іграшку. |\n\n> 💡 **Did You Know?**\n>\n> Neuter dative is relatively rare because neuter nouns are mostly things, not recipients. You'll use it mostly with **дитя** (child), **немовля** (baby), or abstract concepts like \"місту потрібні дороги\" (the city needs roads).\n\n### Plural Dative: -ам/-ям\n\nAll genders form plural dative with **-ам** (hard) or **-ям** (soft):\n\n| Nominative Sg | Nominative Pl | Dative Pl |\n|---------------|---------------|-----------|\n| друг | друзі | друз**ям** |\n| сестра | сестри | сестр**ам** |\n| батько | батьки | батьк**ам** |\n| студент | студенти | студент**ам** |\n| дитина | діти | діт**ям** |\n\n**Example sentences:**\n- Я допомагаю **студентам**. (I help students.)\n- Вона пише **батькам**. (She writes to her parents.)\n- Розкажи це **друзям**! (Tell this to friends!)\n\n### Common Patterns\n\n**Letter/message writing:**\n- писати листа **другові** (write a letter to a friend)\n- надіслати повідомлення **колезі** (send a message to a colleague)\n- відповісти **клієнтові** (reply to a client)\n\n**Giving and showing:**\n- дати подарунок **сестрі** (give a gift to sister)\n- показати фото **батькам** (show photos to parents)\n- принести квіти **дівчині** (bring flowers to girlfriend)\n\n**Helping and telling:**\n- допомогти **бабусі** (help grandma)\n- сказати правду **другові** (tell the truth to a friend)\n- пояснити **студентові** (explain to a student)\n\n> ⚡ **Pro Tip: Names in Dative**\n>\n> Ukrainian names follow the same rules:\n> - Іван → Іван**ові** / Іван**у**\n> - Олена → Олен**і**\n> - Андрій → Андрі**єві** / Андрі**ю**\n> - Марія → Марі**ї**\n>\n> Foreign names often don't decline: \"Скажи Джон**у**\" but sometimes \"Скажи Джон\"\n\n## practice\n\n### Noun Transformations\n\nChange nominative to dative:\n\n**Masculine:**\n1. друг\n   > [!answer] другові / другу\n2. брат\n   > [!answer] братові / брату\n3. студент\n   > [!answer] студентові / студенту\n4. батько\n   > [!answer] батькові / батьку\n5. вчитель\n   > [!answer] вчителеві / вчителю\n\n**Feminine:**\n1. сестра\n   > [!answer] сестрі\n2. мама\n   > [!answer] мамі\n3. подруга\n   > [!answer] подрузі\n4. бабуся\n   > [!answer] бабусі\n5. колега\n   > [!answer] колезі\n\n**Plural:**\n1. друзі\n   > [!answer] друзям\n2. батьки\n   > [!answer] батькам\n3. студенти\n   > [!answer] студентам\n4. сестри\n   > [!answer] сестрам\n\n### Complete the Sentences\n\nFill in the dative form:\n\n1. Я пишу листа ___ (брат).\n   > [!answer] братові / брату\n2. Допоможи ___ (бабуся)!\n   > [!answer] бабусі\n3. Вона дзвонить ___ (подруга).\n   > [!answer] подрузі\n4. Покажи це ___ (батьки).\n   > [!answer] батькам\n5. Скажи ___ (Марія), що я чекаю.\n   > [!answer] Марії\n6. Він дає гроші ___ (студенти).\n   > [!!answer] студентам\n\n### Build Full Sentences\n\nCreate sentences using: Subject + дати/показати/сказати + Object + Dative noun\n\n1. Я / подарунок / сестра\n   > [!answer] Я даю подарунок сестрі.\n2. Вона / лист / друг\n   > [!answer] Вона пише листа другові.\n3. Ми / фото / батьки\n   > [!answer] Ми показуємо фото батькам.\n4. Він / правда / брат\n   > [!answer] Він каже правду братові.\n\n## production\n\n### Real Situations\n\n**Scenario 1: At the post office**\n- Я хочу надіслати посилку.\n- Кому?\n- Братові. Він живе в Львові.\n- Напишіть адресу отримувача.\n\n**Scenario 2: Planning a party**\n- Кому ти надіслав запрошення?\n- Усім друзям! Олегові, Марії, Андрієві...\n- А батькам?\n- Так, батькам теж!\n\n**Scenario 3: Office communication**\n- Передай це директорові.\n- А копію?\n- Копію надішли колегам по електронній пошті.\n\n---\n\n---\n\n---\n\n---\n\n# Activities\n\n## fill-in: Dative Noun Endings\n\n> Choose the correct dative noun form to complete each sentence.\n\n1. Я пишу довгого листа ___ (брат) у Львів.\n   > [!answer] братові / брату\n   > [!options] брат | братові | брату | брата\n\n2. Допоможи, будь ласка, ___ (бабуся) на кухні!\n   > [!answer] бабусі\n   > [!options] бабуся | бабусі | бабусю | бабусею\n\n3. Вона щодня дзвонить своїй ___ (подруга) ввечері.\n   > [!answer] подрузі\n   > [!options] подруга | подрузі | подругу | подругою\n\n4. Покажи ці нові фотографії ___ (батьки) сьогодні.\n   > [!answer] батькам\n   > [!options] батьки | батьків | батькам | батьками\n\n5. Скажи ___ (Марія), що я чекаю біля кафе.\n   > [!answer] Марії\n   > [!options] Марія | Марії | Марію | Марією\n\n6. Він щомісяця дає гроші ___ (студенти) на проєкти.\n   > [!answer] студентам\n   > [!options] студенти | студентів | студентам | студентами\n\n7. Що саме потрібно цьому ___ (місто) зараз?\n   > [!answer] місту\n   > [!options] місто | міста | місту | містом\n\n8. Я завжди з радістю допомагаю ___ (вчитель).\n   > [!answer] вчителеві / вчителю\n   > [!options] вчитель | вчителеві | вчителю | вчителя\n\n9. Розкажи цю цікаву історію ___ (друзі) завтра!\n   > [!answer] друзям\n   > [!options] друзі | друзів | друзям | друзями\n\n10. Напиши коротке повідомлення ___ (колега) про зустріч.\n    > [!answer] колезі\n    > [!options] колега | колегу | колезі | колегою\n\n## unjumble: Build the Sentence\n\n> Arrange the words in the correct order. (A2: 8-10 words)\n\n1. братові / Я / пишу / листа / довгого / у Львів / старшому / своєму\n   > [!answer] Я пишу довгого листа своєму старшому братові у Львів.\n   > (I'm writing a long letter to my older brother in Lviv.) [8 words]\n\n2. бабусі / Допоможи / на кухні / будь ласка / нашій / готувати / обід\n   > [!answer] Допоможи нашій бабусі готувати обід на кухні, будь ласка!\n   > (Help our grandma cook lunch in the kitchen, please!) [9 words]\n\n3. дзвонить / Вона / подрузі / щодня / ввечері / найкращій / своїй / після роботи\n   > [!answer] Вона щодня дзвонить своїй найкращій подрузі ввечері після роботи.\n   > (She calls her best friend every evening after work.) [9 words]\n\n4. батькам / Покажи / нові / фотографії / ці / сьогодні / нашим / із відпустки\n   > [!answer] Покажи ці нові фотографії із відпустки нашим батькам сьогодні.\n   > (Show these new vacation photos to our parents today.) [9 words]\n\n5. Марії / Скажи / що / чекаю / я / біля кафе / нашого / центрального\n   > [!answer] Скажи Марії, що я чекаю біля нашого центрального кафе.\n   > (Tell Mariya that I'm waiting near our central cafe.) [9 words]\n\n6. студентам / Він / дає / гроші / щомісяця / на проєкти / талановитим / молодим\n   > [!answer] Він щомісяця дає гроші талановитим молодим студентам на проєкти.\n   > (He gives money to talented young students monthly for projects.) [9 words]\n\n7. місту / потрібно / Що / цьому / нашому / зараз / старому / найбільше\n   > [!answer] Що найбільше зараз потрібно нашому старому місту?\n   > (What does our old city need most now?) [8 words]\n\n8. вчителеві / Я / допомагаю / завжди / з радістю / нашому / новому / молодому\n   > [!answer] Я завжди з радістю допомагаю нашому новому молодому вчителеві.\n   > (I always gladly help our new young teacher.) [9 words]\n\n9. друзям / Розкажи / цю / історію / цікаву / завтра / українську / старим / своїм\n   > [!answer] Розкажи цю цікаву українську історію своїм старим друзям завтра!\n   > (Tell this interesting Ukrainian story to your old friends tomorrow!) [10 words]\n\n10. подарунок / Я / даю / сестрі / гарний / на день народження / молодшій / своїй\n    > [!answer] Я даю гарний подарунок своїй молодшій сестрі на день народження.\n    > (I give a nice gift to my younger sister for her birthday.) [10 words]\n\n## fill-in: Choose the Dative Noun Form\n\n> Choose the correct dative noun form. (A2: 10 items)\n\n1. друг → ___\n   > [!answer] другові / другу\n   > [!options] друга | другові | другу\n\n2. сестра → ___\n   > [!answer] сестрі\n   > [!options] сестру | сестрі | сестрою\n\n3. батьки → ___\n   > [!answer] батькам\n   > [!options] батьків | батькам | батьками\n\n4. місто → ___\n   > [!answer] місту\n   > [!options] міста | місту | містом\n\n5. студент → ___\n   > [!answer] студентові / студенту\n   > [!options] студента | студентові | студенту\n\n6. подруга → ___\n   > [!answer] подрузі\n   > [!options] подругу | подрузі | подругою\n\n7. вчитель → ___\n   > [!answer] вчителеві / вчителю\n   > [!options] вчителя | вчителеві | вчителю\n\n8. мама → ___\n   > [!answer] мамі\n   > [!options] маму | мамі | мамою\n\n9. діти → ___\n   > [!answer] дітям\n   > [!options] дітей | дітям | дітьми\n\n10. колега → ___\n    > [!answer] колезі\n    > [!options] колегу | колезі | колегою\n\n## quiz: Dative Noun Endings\n\n> Choose the correct dative noun form.\n\n1. What is the dative form of \"друг\"?\n   - [x] другові / другу\n   - [ ] друг\n   - [ ] друга\n   - [ ] другом\n   > Masculine dative -ові/-у\n\n2. What is the dative form of \"сестра\"?\n   - [x] сестрі\n   - [ ] сестра\n   - [ ] сестру\n   - [ ] сестрою\n   > Feminine dative -і\n\n3. What is the dative form of \"місто\"?\n   - [x] місту\n   - [ ] місто\n   - [ ] міста\n   - [ ] містом\n   > Neuter dative -у\n\n4. What is the dative form of \"батьки\" (parents - plural)?\n   - [x] батькам\n   - [ ] батьки\n   - [ ] батьків\n   - [ ] батьками\n   > Plural dative -ам\n\n5. What is the dative form of \"вчитель\"?\n   - [x] вчителеві / вчителю\n   - [ ] вчитель\n   - [ ] вчителя\n   - [ ] вчителем\n   > Masculine soft dative -еві/-ю\n\n6. Which consonant change occurs for \"подруга\" in dative?\n   - [x] г → з\n   - [ ] к → ц\n   - [ ] х → с\n   - [ ] No change\n   > подруга → подрузі (г → з)\n\n7. What is the dative form of \"мама\"?\n   - [x] мамі\n   - [ ] мама\n   - [ ] маму\n   - [ ] мамою\n   > Feminine dative -і\n\n8. What is the dative form of \"студент\" (plural)?\n   - [x] студентам\n   - [ ] студенти\n   - [ ] студентів\n   - [ ] студентами\n   > Plural dative -ам\n\n9. When is the -ові ending typically used for masculine nouns?\n   - [x] More formal/literary\n   - [ ] More casual/conversational\n   - [ ] Only for names\n   - [ ] Never\n   > -ові is more formal/distinctly Ukrainian\n\n10. What is the dative form of \"дитина\" (child)?\n    - [x] дитяті\n    - [ ] дитина\n    - [ ] дитину\n    - [ ] дитиною\n    > Neuter dative -яті (special case)\n\n## true-false: Dative Noun Rules\n\n> Determine if each statement about dative noun forms is true or false.\n\n- [x] Masculine nouns can end in -ові or -у in dative.\n   > Correct!\n\n- [x] Feminine nouns ending in -а change to -і in dative.\n   > Correct!\n\n- [x] Plural nouns (all genders) end in -ам or -ям in dative.\n   > Correct!\n\n- [ ] Neuter nouns typically end in -і in dative.\n   > Incorrect. Neuter nouns typically end in -у in dative (місто → місту).\n\n- [x] The -ові ending is considered more formal than -у for masculine nouns.\n   > Correct!\n\n- [x] \"г → з\" is a common consonant change before the dative ending -і.\n   > Correct! (подруга → подрузі)\n\n- [ ] Names like \"Андрій\" only take the -у ending in dative.\n   > Incorrect. Андрій → Андрієві / Андрію.\n\n- [x] \"Я дзвоню мамі\" correctly uses the dative case.\n   > Correct!\n\n- [x] Dative nouns answer the question \"Кому?\".\n   > Correct!\n\n- [x] The dative form of \"колега\" (f) is \"колезі\".\n   > Correct! (колега is a-stem, so changes to -і, with г→з consonant change implicit)\n\n## match-up: Dative Noun Pairs\n\n> Match the nominative noun with its dative form.\n\n| Left | Right |\n|------|-------|\n| друг | другові |\n| сестра | сестрі |\n| батьки | батькам |\n| місто | місту |\n| вчитель | вчителеві |\n| подруга | подрузі |\n| мама | мамі |\n| студенти | студентам |\n| брат | братові |\n| дитина | дитині |\n\n## group-sort: Dative Ending Categories\n\n> Sort these dative forms by their ending pattern.\n\n### -ові/-у (Masculine)\n- другові\n- братові\n- студенту\n- вчителю\n\n### -і (Feminine)\n- сестрі\n- мамі\n- подрузі\n- бабусі\n\n### -у (Neuter)\n- місту\n- селу\n\n### -ам/-ям (Plural)\n- батькам\n- друзям\n- студентам\n- дітям\n\n## unjumble: Dative Sentence Building\n\n> Arrange the sentence elements in the correct order.\n\n1. Я / даю / подарунок / сестрі\n   > [!answer] Я даю подарунок сестрі.\n   > (I give a gift to my sister.)\n\n2. Вона / пише / листа / другові\n   > [!answer] Вона пише листа другові.\n   > (She writes a letter to a friend.)\n\n3. Ми / показуємо / фото / батькам\n   > [!answer] Ми показуємо фото батькам.\n   > (We show photos to our parents.)\n\n4. Він / допомагає / бабусі / на кухні\n   > [!answer] Він допомагає бабусі на кухні.\n   > (He helps grandma in the kitchen.)\n\n5. Вони / дзвонять / друзям / щодня\n   > [!answer] Вони дзвонять друзям щодня.\n   > (They call friends every day.)\n\n6. Я / кажу / правду / вчителеві\n   > [!answer] Я кажу правду вчителеві.\n   > (I tell the truth to the teacher.)\n\n7. Вона / надсилає / листа / колезі\n   > [!answer] Вона надсилає листа колезі.\n   > (She sends a letter to a colleague.)\n\n8. Ми / даємо / книгу / студентові\n   > [!answer] Ми даємо книгу студентові.\n   > (We give a book to the student.)\n\n9. Він / розповідає / історію / дітям\n   > [!answer] Він розповідає історію дітям.\n   > (He tells a story to the children.)\n\n10. Я / купую / квіти / мамі\n    > [!answer] Я купую квіти мамі.\n    > (I buy flowers for mom.)",
+    "createdAt": "2025-12-05T01:15:57.965Z",
+    "modifiedAt": "2025-12-05T01:15:57.965Z",
+    "version": 2
+  },
+  "activities": [
+    {
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Dative Noun Endings",
+      "description": "Choose the correct dative noun form to complete each sentence.",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "Я пишу довгого листа ___ (брат) у Львів.",
+            "answer": "братові / брату",
+            "hints": [
+              "брат"
+            ],
+            "options": [
+              "брат",
+              "братові",
+              "брату",
+              "брата"
+            ]
+          },
+          {
+            "prompt": "Допоможи, будь ласка, ___ (бабуся) на кухні!",
+            "answer": "бабусі",
+            "hints": [
+              "бабуся"
+            ],
+            "options": [
+              "бабуся",
+              "бабусі",
+              "бабусю",
+              "бабусею"
+            ]
+          },
+          {
+            "prompt": "Вона щодня дзвонить своїй ___ (подруга) ввечері.",
+            "answer": "подрузі",
+            "hints": [
+              "подруга"
+            ],
+            "options": [
+              "подруга",
+              "подрузі",
+              "подругу",
+              "подругою"
+            ]
+          },
+          {
+            "prompt": "Покажи ці нові фотографії ___ (батьки) сьогодні.",
+            "answer": "батькам",
+            "hints": [
+              "батьки"
+            ],
+            "options": [
+              "батьки",
+              "батьків",
+              "батькам",
+              "батьками"
+            ]
+          },
+          {
+            "prompt": "Скажи ___ (Марія), що я чекаю біля кафе.",
+            "answer": "Марії",
+            "hints": [
+              "Марія"
+            ],
+            "options": [
+              "Марія",
+              "Марії",
+              "Марію",
+              "Марією"
+            ]
+          },
+          {
+            "prompt": "Він щомісяця дає гроші ___ (студенти) на проєкти.",
+            "answer": "студентам",
+            "hints": [
+              "студенти"
+            ],
+            "options": [
+              "студенти",
+              "студентів",
+              "студентам",
+              "студентами"
+            ]
+          },
+          {
+            "prompt": "Що саме потрібно цьому ___ (місто) зараз?",
+            "answer": "місту",
+            "hints": [
+              "місто"
+            ],
+            "options": [
+              "місто",
+              "міста",
+              "місту",
+              "містом"
+            ]
+          },
+          {
+            "prompt": "Я завжди з радістю допомагаю ___ (вчитель).",
+            "answer": "вчителеві / вчителю",
+            "hints": [
+              "вчитель"
+            ],
+            "options": [
+              "вчитель",
+              "вчителеві",
+              "вчителю",
+              "вчителя"
+            ]
+          },
+          {
+            "prompt": "Розкажи цю цікаву історію ___ (друзі) завтра!",
+            "answer": "друзям",
+            "hints": [
+              "друзі"
+            ],
+            "options": [
+              "друзі",
+              "друзів",
+              "друзям",
+              "друзями"
+            ]
+          },
+          {
+            "prompt": "Напиши коротке повідомлення ___ (колега) про зустріч.",
+            "answer": "колезі",
+            "hints": [
+              "колега"
+            ],
+            "options": [
+              "колега",
+              "колегу",
+              "колезі",
+              "колегою"
+            ]
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Build the Sentence",
+      "description": "Arrange the words in the correct order. (A2: 8-10 words)",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "братові",
+              "Я",
+              "пишу",
+              "листа",
+              "довгого",
+              "у Львів",
+              "старшому",
+              "своєму"
+            ],
+            "answer": "Я пишу довгого листа своєму старшому братові у Львів.",
+            "translation": "I'm writing a long letter to my older brother in Lviv."
+          },
+          {
+            "words": [
+              "бабусі",
+              "Допоможи",
+              "на кухні",
+              "будь ласка",
+              "нашій",
+              "готувати",
+              "обід"
+            ],
+            "answer": "Допоможи нашій бабусі готувати обід на кухні, будь ласка!",
+            "translation": "Help our grandma cook lunch in the kitchen, please!"
+          },
+          {
+            "words": [
+              "дзвонить",
+              "Вона",
+              "подрузі",
+              "щодня",
+              "ввечері",
+              "найкращій",
+              "своїй",
+              "після роботи"
+            ],
+            "answer": "Вона щодня дзвонить своїй найкращій подрузі ввечері після роботи.",
+            "translation": "She calls her best friend every evening after work."
+          },
+          {
+            "words": [
+              "батькам",
+              "Покажи",
+              "нові",
+              "фотографії",
+              "ці",
+              "сьогодні",
+              "нашим",
+              "із відпустки"
+            ],
+            "answer": "Покажи ці нові фотографії із відпустки нашим батькам сьогодні.",
+            "translation": "Show these new vacation photos to our parents today."
+          },
+          {
+            "words": [
+              "Марії",
+              "Скажи",
+              "що",
+              "чекаю",
+              "я",
+              "біля кафе",
+              "нашого",
+              "центрального"
+            ],
+            "answer": "Скажи Марії, що я чекаю біля нашого центрального кафе.",
+            "translation": "Tell Mariya that I'm waiting near our central cafe."
+          },
+          {
+            "words": [
+              "студентам",
+              "Він",
+              "дає",
+              "гроші",
+              "щомісяця",
+              "на проєкти",
+              "талановитим",
+              "молодим"
+            ],
+            "answer": "Він щомісяця дає гроші талановитим молодим студентам на проєкти.",
+            "translation": "He gives money to talented young students monthly for projects."
+          },
+          {
+            "words": [
+              "місту",
+              "потрібно",
+              "Що",
+              "цьому",
+              "нашому",
+              "зараз",
+              "старому",
+              "найбільше"
+            ],
+            "answer": "Що найбільше зараз потрібно нашому старому місту?",
+            "translation": "What does our old city need most now?"
+          },
+          {
+            "words": [
+              "вчителеві",
+              "Я",
+              "допомагаю",
+              "завжди",
+              "з радістю",
+              "нашому",
+              "новому",
+              "молодому"
+            ],
+            "answer": "Я завжди з радістю допомагаю нашому новому молодому вчителеві.",
+            "translation": "I always gladly help our new young teacher."
+          },
+          {
+            "words": [
+              "друзям",
+              "Розкажи",
+              "цю",
+              "історію",
+              "цікаву",
+              "завтра",
+              "українську",
+              "старим",
+              "своїм"
+            ],
+            "answer": "Розкажи цю цікаву українську історію своїм старим друзям завтра!",
+            "translation": "Tell this interesting Ukrainian story to your old friends tomorrow!"
+          },
+          {
+            "words": [
+              "подарунок",
+              "Я",
+              "даю",
+              "сестрі",
+              "гарний",
+              "на день народження",
+              "молодшій",
+              "своїй"
+            ],
+            "answer": "Я даю гарний подарунок своїй молодшій сестрі на день народження.",
+            "translation": "I give a nice gift to my younger sister for her birthday."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Choose the Dative Noun Form",
+      "description": "Choose the correct dative noun form. (A2: 10 items)",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "друг → ___",
+            "answer": "другові / другу",
+            "options": [
+              "друга",
+              "другові",
+              "другу"
+            ]
+          },
+          {
+            "prompt": "сестра → ___",
+            "answer": "сестрі",
+            "options": [
+              "сестру",
+              "сестрі",
+              "сестрою"
+            ]
+          },
+          {
+            "prompt": "батьки → ___",
+            "answer": "батькам",
+            "options": [
+              "батьків",
+              "батькам",
+              "батьками"
+            ]
+          },
+          {
+            "prompt": "місто → ___",
+            "answer": "місту",
+            "options": [
+              "міста",
+              "місту",
+              "містом"
+            ]
+          },
+          {
+            "prompt": "студент → ___",
+            "answer": "студентові / студенту",
+            "options": [
+              "студента",
+              "студентові",
+              "студенту"
+            ]
+          },
+          {
+            "prompt": "подруга → ___",
+            "answer": "подрузі",
+            "options": [
+              "подругу",
+              "подрузі",
+              "подругою"
+            ]
+          },
+          {
+            "prompt": "вчитель → ___",
+            "answer": "вчителеві / вчителю",
+            "options": [
+              "вчителя",
+              "вчителеві",
+              "вчителю"
+            ]
+          },
+          {
+            "prompt": "мама → ___",
+            "answer": "мамі",
+            "options": [
+              "маму",
+              "мамі",
+              "мамою"
+            ]
+          },
+          {
+            "prompt": "діти → ___",
+            "answer": "дітям",
+            "options": [
+              "дітей",
+              "дітям",
+              "дітьми"
+            ]
+          },
+          {
+            "prompt": "колега → ___",
+            "answer": "колезі",
+            "options": [
+              "колегу",
+              "колезі",
+              "колегою"
+            ]
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-quiz",
+      "type": "quiz",
+      "title": "Dative Noun Endings",
+      "description": "Choose the correct dative noun form.",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "question": "What is the dative form of \"друг\"?",
+            "options": [
+              "другові / другу",
+              "друг",
+              "друга",
+              "другом"
+            ],
+            "correctIndex": 0,
+            "explanation": "Masculine dative -ові/-у"
+          },
+          {
+            "question": "What is the dative form of \"сестра\"?",
+            "options": [
+              "сестрі",
+              "сестра",
+              "сестру",
+              "сестрою"
+            ],
+            "correctIndex": 0,
+            "explanation": "Feminine dative -і"
+          },
+          {
+            "question": "What is the dative form of \"місто\"?",
+            "options": [
+              "місту",
+              "місто",
+              "міста",
+              "містом"
+            ],
+            "correctIndex": 0,
+            "explanation": "Neuter dative -у"
+          },
+          {
+            "question": "What is the dative form of \"батьки\" (parents - plural)?",
+            "options": [
+              "батькам",
+              "батьки",
+              "батьків",
+              "батьками"
+            ],
+            "correctIndex": 0,
+            "explanation": "Plural dative -ам"
+          },
+          {
+            "question": "What is the dative form of \"вчитель\"?",
+            "options": [
+              "вчителеві / вчителю",
+              "вчитель",
+              "вчителя",
+              "вчителем"
+            ],
+            "correctIndex": 0,
+            "explanation": "Masculine soft dative -еві/-ю"
+          },
+          {
+            "question": "Which consonant change occurs for \"подруга\" in dative?",
+            "options": [
+              "г → з",
+              "к → ц",
+              "х → с",
+              "No change"
+            ],
+            "correctIndex": 0,
+            "explanation": "подруга → подрузі (г → з)"
+          },
+          {
+            "question": "What is the dative form of \"мама\"?",
+            "options": [
+              "мамі",
+              "мама",
+              "маму",
+              "мамою"
+            ],
+            "correctIndex": 0,
+            "explanation": "Feminine dative -і"
+          },
+          {
+            "question": "What is the dative form of \"студент\" (plural)?",
+            "options": [
+              "студентам",
+              "студенти",
+              "студентів",
+              "студентами"
+            ],
+            "correctIndex": 0,
+            "explanation": "Plural dative -ам"
+          },
+          {
+            "question": "When is the -ові ending typically used for masculine nouns?",
+            "options": [
+              "More formal/literary",
+              "More casual/conversational",
+              "Only for names",
+              "Never"
+            ],
+            "correctIndex": 0,
+            "explanation": "-ові is more formal/distinctly Ukrainian"
+          },
+          {
+            "question": "What is the dative form of \"дитина\" (child)?",
+            "options": [
+              "дитяті",
+              "дитина",
+              "дитину",
+              "дитиною"
+            ],
+            "correctIndex": 0,
+            "explanation": "Neuter dative -яті (special case)"
+          }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-truefalse",
+      "type": "true-false",
+      "title": "Dative Noun Rules",
+      "description": "Determine if each statement about dative noun forms is true or false.",
+      "content": {
+        "type": "true-false",
+        "statements": [
+          {
+            "statement": "Masculine nouns can end in -ові or -у in dative.",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "Feminine nouns ending in -а change to -і in dative.",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "Plural nouns (all genders) end in -ам or -ям in dative.",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "Neuter nouns typically end in -і in dative.",
+            "isTrue": false,
+            "explanation": "Incorrect. Neuter nouns typically end in -у in dative (місто → місту)."
+          },
+          {
+            "statement": "The -ові ending is considered more formal than -у for masculine nouns.",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "\"г → з\" is a common consonant change before the dative ending -і.",
+            "isTrue": true,
+            "explanation": "Correct! (подруга → подрузі)"
+          },
+          {
+            "statement": "Names like \"Андрій\" only take the -у ending in dative.",
+            "isTrue": false,
+            "explanation": "Incorrect. Андрій → Андрієві / Андрію."
+          },
+          {
+            "statement": "\"Я дзвоню мамі\" correctly uses the dative case.",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "Dative nouns answer the question \"Кому?\".",
+            "isTrue": true,
+            "explanation": "Correct!"
+          },
+          {
+            "statement": "The dative form of \"колега\" (f) is \"колезі\".",
+            "isTrue": true,
+            "explanation": "Correct! (колега is a-stem, so changes to -і, with г→з consonant change implicit)"
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-matchup",
+      "type": "match-up",
+      "title": "Dative Noun Pairs",
+      "description": "Match the nominative noun with its dative form.",
+      "content": {
+        "type": "match-up",
+        "pairs": [
+          {
+            "left": "друг",
+            "right": "другові"
+          },
+          {
+            "left": "сестра",
+            "right": "сестрі"
+          },
+          {
+            "left": "батьки",
+            "right": "батькам"
+          },
+          {
+            "left": "місто",
+            "right": "місту"
+          },
+          {
+            "left": "вчитель",
+            "right": "вчителеві"
+          },
+          {
+            "left": "подруга",
+            "right": "подрузі"
+          },
+          {
+            "left": "мама",
+            "right": "мамі"
+          },
+          {
+            "left": "студенти",
+            "right": "студентам"
+          },
+          {
+            "left": "брат",
+            "right": "братові"
+          },
+          {
+            "left": "дитина",
+            "right": "дитині"
+          }
+        ],
+        "shuffleRight": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-groupsort",
+      "type": "group-sort",
+      "title": "Dative Ending Categories",
+      "description": "Sort these dative forms by their ending pattern.",
+      "content": {
+        "type": "group-sort",
+        "groups": [
+          {
+            "id": "--",
+            "name": "-ові/-у",
+            "items": [
+              "другові",
+              "братові",
+              "студенту",
+              "вчителю"
+            ],
+            "nameUk": "Masculine"
+          },
+          {
+            "id": "-",
+            "name": "-і",
+            "items": [
+              "сестрі",
+              "мамі",
+              "подрузі",
+              "бабусі"
+            ],
+            "nameUk": "Feminine"
+          },
+          {
+            "id": "-",
+            "name": "-у",
+            "items": [
+              "місту",
+              "селу"
+            ],
+            "nameUk": "Neuter"
+          },
+          {
+            "id": "--",
+            "name": "-ам/-ям",
+            "items": [
+              "батькам",
+              "друзям",
+              "студентам",
+              "дітям"
+            ],
+            "nameUk": "Plural"
+          }
+        ],
+        "shuffleItems": true
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    },
+    {
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Dative Sentence Building",
+      "description": "Arrange the sentence elements in the correct order.",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "Я",
+              "даю",
+              "подарунок",
+              "сестрі"
+            ],
+            "answer": "Я даю подарунок сестрі.",
+            "translation": "I give a gift to my sister."
+          },
+          {
+            "words": [
+              "Вона",
+              "пише",
+              "листа",
+              "другові"
+            ],
+            "answer": "Вона пише листа другові.",
+            "translation": "She writes a letter to a friend."
+          },
+          {
+            "words": [
+              "Ми",
+              "показуємо",
+              "фото",
+              "батькам"
+            ],
+            "answer": "Ми показуємо фото батькам.",
+            "translation": "We show photos to our parents."
+          },
+          {
+            "words": [
+              "Він",
+              "допомагає",
+              "бабусі",
+              "на кухні"
+            ],
+            "answer": "Він допомагає бабусі на кухні.",
+            "translation": "He helps grandma in the kitchen."
+          },
+          {
+            "words": [
+              "Вони",
+              "дзвонять",
+              "друзям",
+              "щодня"
+            ],
+            "answer": "Вони дзвонять друзям щодня.",
+            "translation": "They call friends every day."
+          },
+          {
+            "words": [
+              "Я",
+              "кажу",
+              "правду",
+              "вчителеві"
+            ],
+            "answer": "Я кажу правду вчителеві.",
+            "translation": "I tell the truth to the teacher."
+          },
+          {
+            "words": [
+              "Вона",
+              "надсилає",
+              "листа",
+              "колезі"
+            ],
+            "answer": "Вона надсилає листа колезі.",
+            "translation": "She sends a letter to a colleague."
+          },
+          {
+            "words": [
+              "Ми",
+              "даємо",
+              "книгу",
+              "студентові"
+            ],
+            "answer": "Ми даємо книгу студентові.",
+            "translation": "We give a book to the student."
+          },
+          {
+            "words": [
+              "Він",
+              "розповідає",
+              "історію",
+              "дітям"
+            ],
+            "answer": "Він розповідає історію дітям.",
+            "translation": "He tells a story to the children."
+          },
+          {
+            "words": [
+              "Я",
+              "купую",
+              "квіти",
+              "мамі"
+            ],
+            "answer": "Я купую квіти мамі.",
+            "translation": "I buy flowers for mom."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T01:15:57.965Z",
+      "modifiedAt": "2025-12-05T01:15:57.965Z"
+    }
+  ],
+  "vocabulary": {
+    "moduleId": "mod-uk-A2-2",
+    "level": "A2",
+    "phase": "A2.1",
+    "wordCount": 0,
+    "newWordCount": 0,
+    "reviewWordCount": 0,
+    "transliterationMode": "partial",
+    "words": []
+  }
+}

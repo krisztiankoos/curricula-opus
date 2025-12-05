@@ -1,0 +1,685 @@
+---
+title: "Health & Body"
+subtitle: "At the Doctor's"
+phase: A2.3
+duration: 45
+transliteration: partial
+tags: [health, body, medical, functional, dialogue]
+objectives:
+  - Describe symptoms and health problems
+  - Navigate doctor's visits
+  - Understand medical instructions
+  - Talk about body parts
+grammar:
+  - Body part vocabulary
+  - Expressing pain (боліти)
+  - Medical imperatives
+  - Health-related expressions
+---
+
+# Lesson Content
+
+## warm-up
+
+### Staying Healthy
+
+Nobody likes being sick, but knowing how to describe your symptoms in Ukrainian is essential!
+
+**Key phrases:**
+- Мені **погано**. - I feel bad.
+- У мене **болить** голова. - I have a headache.
+- Мені **потрібен** лікар. - I need a doctor.
+
+> 💡 **Did You Know?**
+>
+> Ukraine has both public (state) clinics and private medical centers. The word "поліклініка" refers to an outpatient clinic (not police!). For emergencies, call 103 (швидка допомога - ambulance). Pharmacies (аптека) are widespread and pharmacists often give advice for minor ailments.
+
+## presentation
+
+### Body Parts - Частини тіла
+
+**Head area:**
+| Ukrainian | English |
+|-----------|---------|
+| голова | head |
+| обличчя | face |
+| око (очі) | eye (eyes) |
+| вухо (вуха) | ear (ears) |
+| ніс | nose |
+| рот | mouth |
+| зуб (зуби) | tooth (teeth) |
+| язик | tongue |
+| горло | throat |
+| шия | neck |
+
+**Upper body:**
+| Ukrainian | English |
+|-----------|---------|
+| плече (плечі) | shoulder(s) |
+| рука (руки) | arm/hand(s) |
+| лікоть | elbow |
+| долоня | palm |
+| палець (пальці) | finger(s) |
+| груди | chest |
+| спина | back |
+| живіт | stomach/belly |
+
+**Lower body:**
+| Ukrainian | English |
+|-----------|---------|
+| нога (ноги) | leg/foot |
+| коліно | knee |
+| стопа | foot |
+| п'ятка | heel |
+
+> ⚡ **Pro Tip: Singular vs Plural**
+>
+> Many body parts have irregular plurals:
+> - око → очі (eyes)
+> - вухо → вуха (ears)
+> - рука → руки (hands)
+> - нога → ноги (legs)
+
+### Describing Pain - Боліти
+
+**У мене болить... (I have pain in... / My ... hurts):**
+
+**Singular (болить):**
+- У мене **болить** голова. - My head hurts.
+- У мене **болить** живіт. - My stomach hurts.
+- У мене **болить** горло. - My throat hurts.
+- У мене **болить** спина. - My back hurts.
+
+**Plural (болять):**
+- У мене **болять** очі. - My eyes hurt.
+- У мене **болять** ноги. - My legs hurt.
+- У мене **болять** зуби. - My teeth hurt.
+
+**How much it hurts:**
+- трохи болить - hurts a little
+- сильно болить - hurts a lot
+- дуже болить - hurts very much
+- нестерпно болить - unbearable pain
+
+> 🎭 **Culture Corner: Ukrainian Medicine**
+>
+> Ukrainians often try home remedies first: tea with honey for colds, chamomile for stomach issues, garlic for prevention! "Народна медицина" (folk medicine) is still popular. However, for serious issues, professional medical care is the norm.
+
+### Common Symptoms
+
+**General symptoms:**
+| Ukrainian | English |
+|-----------|---------|
+| температура | fever/temperature |
+| кашель | cough |
+| нежить | runny nose |
+| біль | pain |
+| слабкість | weakness |
+| запаморочення | dizziness |
+| нудота | nausea |
+
+**Describing symptoms:**
+- У мене **температура**. - I have a fever.
+- У мене **кашель**. - I have a cough.
+- У мене **нежить**. - I have a runny nose.
+- Мене **нудить**. - I feel nauseous.
+- У мене **запаморочення**. - I feel dizzy.
+- Я **втомлений/втомлена**. - I'm tired.
+
+**Common illnesses:**
+| Ukrainian | English |
+|-----------|---------|
+| застуда | cold |
+| грип | flu |
+| алергія | allergy |
+| отруєння | poisoning |
+| інфекція | infection |
+| запалення | inflammation |
+
+> 📜 **History Bite: Traditional Healing**
+>
+> Before modern medicine, Ukrainians relied heavily on herbs and natural remedies. "Знахар" or "знахарка" (healer) used plants like "чебрець" (thyme), "м'ята" (mint), and "липа" (linden) for treatments. Many of these traditions continue today!
+
+### At the Doctor's - У лікаря
+
+**Making an appointment:**
+- Я хочу **записатися** до лікаря. - I want to make an appointment.
+- Коли **приймає** терапевт? - When does the therapist see patients?
+- Чи є **вільний** час сьогодні? - Is there an opening today?
+- Мені потрібна **консультація**. - I need a consultation.
+
+**Common specialists:**
+| Ukrainian | English |
+|-----------|---------|
+| терапевт | general practitioner |
+| лор | ENT (ear-nose-throat) |
+| окуліст | eye doctor |
+| стоматолог | dentist |
+| хірург | surgeon |
+| кардіолог | cardiologist |
+
+**At the appointment:**
+- **На що скаржитесь?** - What are your complaints?
+- **Що вас турбує?** - What's bothering you?
+- **Як давно це почалося?** - How long has this been going on?
+- **Де болить?** - Where does it hurt?
+- **Покажіть**, де болить. - Show me where it hurts.
+
+### Answering the Doctor
+
+**Describing your problem:**
+- У мене болить голова **вже два дні**. - I've had a headache for two days.
+- Це почалося **вчора**. - It started yesterday.
+- Мені **погано** з ранку. - I've felt bad since morning.
+- Я **застудився/застудилася**. - I caught a cold.
+- Мене **турбує** кашель. - I'm bothered by a cough.
+
+**Intensity and duration:**
+- Біль **сильний/слабкий**. - The pain is strong/weak.
+- Болить **постійно**. - It hurts constantly.
+- Болить **іноді**. - It hurts sometimes.
+- **Стало гірше** вчора. - It got worse yesterday.
+- **Стало краще** сьогодні. - It got better today.
+
+### Medical Instructions
+
+**Doctor's orders:**
+- **Відкрийте** рот. - Open your mouth.
+- **Покажіть** язик. - Show your tongue.
+- **Дихайте** глибоко. - Breathe deeply.
+- **Не дихайте**. - Don't breathe.
+- **Роздягніться** до пояса. - Undress to the waist.
+- **Ляжте** на кушетку. - Lie down on the couch.
+
+**Prescriptions:**
+- Я **виписую** вам ліки. - I'm prescribing you medicine.
+- **Приймайте** по одній таблетці три рази на день. - Take one tablet three times a day.
+- Приймайте **до/після** їжі. - Take before/after meals.
+- **Пийте** багато води. - Drink lots of water.
+- **Відпочивайте**. - Rest.
+- Приходьте **через тиждень**. - Come back in a week.
+
+> ⚡ **Pro Tip: Pharmacy Vocabulary**
+>
+> | Ukrainian | English |
+> |-----------|---------|
+> | аптека | pharmacy |
+> | рецепт | prescription |
+> | таблетки | tablets |
+> | краплі | drops |
+> | мазь | ointment |
+> | сироп | syrup |
+
+### At the Pharmacy - В аптеці
+
+**Buying medicine:**
+- Дайте, будь ласка, щось **від** головного болю. - Please give me something for headaches.
+- Мені потрібні ліки **від** застуди. - I need cold medicine.
+- Це **без рецепта**? - Is this over-the-counter?
+- **Як приймати** ці ліки? - How do I take this medicine?
+- Чи є **побічні ефекти**? - Are there side effects?
+
+**Common OTC medicines:**
+- знеболююче - painkiller
+- жарознижуюче - fever reducer
+- від кашлю - for cough
+- від нежитю - for runny nose
+- від алергії - for allergies
+
+## practice
+
+### Match Body Parts
+
+1. голова
+   > [!answer] head
+2. рука
+   > [!answer] arm/hand
+3. нога
+   > [!answer] leg/foot
+4. горло
+   > [!answer] throat
+5. живіт
+   > [!answer] stomach
+6. спина
+   > [!answer] back
+
+### Form Sentences with Боліти
+
+1. голова
+   > [!answer] У мене болить голова.
+2. очі
+   > [!answer] У мене болять очі.
+3. зуби
+   > [!answer] У мене болять зуби.
+4. живіт
+   > [!answer] У мене болить живіт.
+5. ноги
+   > [!answer] У мене болять ноги.
+6. горло
+   > [!answer] У мене болить горло.
+
+### Doctor's Appointment Dialogue
+
+Create responses:
+
+1. "На що скаржитесь?" (headache and fever)
+   > [!answer] У мене болить голова і температура.
+
+2. "Як давно це почалося?" (two days)
+   > [!answer] Це почалося два дні тому.
+
+3. "Відкрийте рот." (understood)
+   > [!answer] 
+   > [!explanation] patient opens mouth
+4. "Приймайте по одній таблетці." (how many times?)
+   > [!answer] Скільки разів на день?
+
+## production
+
+### Describe Your Symptoms
+
+Imagine you're sick. Describe:
+- Що у вас болить?
+- Які у вас симптоми?
+- Як давно це почалося?
+- Що ви вже робили?
+
+### Role Play: Doctor Visit
+
+**Patient:**
+- Describe symptoms
+- Answer questions
+- Ask about treatment
+
+**Doctor:**
+- Ask about symptoms
+- Give examination instructions
+- Prescribe treatment
+
+---
+
+---
+
+---
+
+---
+
+# Activities
+
+## fill-in: Health and Body
+
+> Choose the correct word to complete each sentence.
+
+1. У мене ___ (болить / болять) голова вже два дні.
+   > [!answer] болить
+   > (Singular = болить)
+
+2. У мене ___ (болить / болять) ноги після прогулянки.
+   > [!answer] болять
+   > (Plural = болять)
+
+3. Я ___ (застудився / застудила) і маю температуру.
+   > [!answer] застудився
+   > (Masculine past tense = застудився)
+
+4. Мені потрібно записатися до ___ (лікар / лікаря).
+   > [!answer] лікаря
+   > (Genitive case after "до")
+
+5. Дайте, будь ласка, щось ___ (від / для) головного болю.
+   > [!answer] від
+   > (Medicine "for" an illness = від)
+
+## unjumble: Health Sentences
+
+> Arrange the words in the correct order.
+
+1. мене / У / болить / голова / дуже
+   > [!answer] У мене дуже болить голова.
+   > (I have a really bad headache.)
+
+2. болять / мене / У / ноги / після / прогулянки
+   > [!answer] У мене болять ноги після прогулянки.
+   > (My legs hurt after the walk.)
+
+3. застудився / Я / і / маю / температуру
+   > [!answer] Я застудився і маю температуру.
+   > (I caught a cold and have a fever.)
+
+4. записатися / хочу / Я / до / лікаря
+   > [!answer] Я хочу записатися до лікаря.
+   > (I want to make a doctor's appointment.)
+
+5. щось / Дайте / від / головного / болю
+   > [!answer] Дайте щось від головного болю.
+   > (Give me something for a headache.)
+
+## match-up: Match the Pairs
+
+> Match Ukrainian words to their English meanings.
+
+| Left | Right |
+|------|-------|
+| таблетка | tablet, pill |
+| спина | back |
+| живіт | stomach, belly |
+| нежить | runny nose |
+| рецепт | prescription |
+| боліти | to hurt, ache |
+| найцікавіший | most interesting |
+| посилка | package |
+| курка | chicken |
+| голова | head |
+| горло | throat |
+| застуда | cold (illness) |
+
+## quiz: Meaning Check
+
+> Choose the correct answer.
+
+1. What does "ліки" mean?
+   - [ ] near, by
+   - [x] medicine
+   - [ ] their (m)
+   - [ ] next
+   > "ліки" means "medicine"
+
+2. What does "таблетка" mean?
+   - [ ] partner
+   - [x] tablet, pill
+   - [ ] five
+   - [ ] along
+   > "таблетка" means "tablet, pill"
+
+3. What does "голова" mean?
+   - [ ] much (intensifier)
+   - [ ] more slowly
+   - [x] head
+   - [ ] married (m)
+   > "голова" means "head"
+
+4. What does "застуда" mean?
+   - [x] cold (illness)
+   - [ ] cash register
+   - [ ] result
+   - [ ] five
+   > "застуда" means "cold (illness)"
+
+5. What does "кашель" mean?
+   - [x] cough
+   - [ ] incredibly
+   - [ ] door
+   - [ ] to be mistaken
+   > "кашель" means "cough"
+
+6. What does "боліти" mean?
+   - [ ] relative
+   - [x] to hurt, ache
+   - [ ] hot (adv)
+   - [ ] suddenly
+   > "боліти" means "to hurt, ache"
+
+7. What does "живіт" mean?
+   - [ ] masculine
+   - [x] stomach, belly
+   - [ ] day after tomorrow
+   - [ ] to try on
+   > "живіт" means "stomach, belly"
+
+8. What does "спина" mean?
+   - [ ] to go (on foot)
+   - [x] back
+   - [ ] receipt
+   - [ ] was (f)
+   > "спина" means "back"
+
+9. What does "рецепт" mean?
+   - [x] prescription
+   - [ ] son
+   - [ ] lemon
+   - [ ] charger
+   > "рецепт" means "prescription"
+
+10. What does "горло" mean?
+   - [ ] more slowly
+   - [ ] tomato
+   - [x] throat
+   - [ ] fresh
+   > "горло" means "throat"
+
+11. What does "нежить" mean?
+   - [ ] sender
+   - [ ] salt
+   - [x] runny nose
+   - [ ] it's necessary
+   > "нежить" means "runny nose"
+
+## true-false: True or False?
+
+> Determine if each statement is true or false.
+
+- [ ] "боліти" means "that (masculine)"
+   > Incorrect. "боліти" means "to hurt, ache"
+
+- [ ] "ліки" means "page"
+   > Incorrect. "ліки" means "medicine"
+
+- [ ] "кашель" means "Wednesday"
+   > Incorrect. "кашель" means "cough"
+
+- [ ] "нежить" means "seven"
+   > Incorrect. "нежить" means "runny nose"
+
+- [x] "застуда" means "cold (illness)"
+   > Correct!
+
+- [x] "рецепт" means "prescription"
+   > Correct!
+
+- [x] "живіт" means "stomach, belly"
+   > Correct!
+
+- [ ] "горло" means "nothing"
+   > Incorrect. "горло" means "throat"
+
+- [x] "спина" means "back"
+   > Correct!
+
+- [x] "голова" means "head"
+   > Correct!
+
+## group-sort: Sort by Gender
+
+> Sort the nouns into gender categories.
+
+### Masculine
+- ліки
+- нежить
+- рецепт
+- кашель
+- живіт
+
+### Feminine
+- таблетка
+- голова
+- спина
+- застуда
+
+## select: Choose the Correct Health Term
+
+> Select the correct answer for each situation.
+
+1. У мене дуже сильно болить ___ після роботи за комп'ютером.
+   - [x] голова
+   - [ ] горло
+   - [ ] живіт
+   - [ ] спина
+   > Headache after computer work: "голова"
+
+2. Мені потрібні ___ від головного болю в аптеці.
+   - [ ] таблетка
+   - [x] ліки
+   - [ ] рецепт
+   - [ ] застуда
+   > Medicine (plural): "ліки"
+
+3. У мене ___, і я постійно кашляю.
+   - [ ] нежить
+   - [x] кашель
+   - [ ] живіт
+   - [ ] спина
+   > Coughing indicates: "кашель"
+
+4. Лікар написав ___ на антибіотики в лікарні.
+   - [ ] ліки
+   - [ ] таблетка
+   - [x] рецепт
+   - [ ] застуда
+   > Doctor writes: "рецепт" (prescription)
+
+5. У мене болить ___, тому що я з'їв щось погане.
+   - [ ] голова
+   - [ ] горло
+   - [x] живіт
+   - [ ] спина
+   > Stomach pain from bad food: "живіт"
+
+6. У мене ___, і мій ніс не дихає нормально.
+   - [x] нежить
+   - [ ] кашель
+   - [ ] застуда
+   - [ ] рецепт
+   > Runny nose: "нежить"
+
+7. У мене ___ після занять спортом у спортзалі.
+   - [ ] голова
+   - [ ] горло
+   - [ ] живіт
+   - [x] спина
+   > Back pain after sports: "спина"
+
+8. Мені потрібна одна ___ від температури зараз.
+   - [x] таблетка
+   - [ ] ліки
+   - [ ] рецепт
+   - [ ] застуда
+   > One pill: "таблетка"
+
+9. У мене боліє ___, і важко ковтати їжу.
+   - [ ] голова
+   - [x] горло
+   - [ ] живіт
+   - [ ] спина
+   > Sore throat, hard to swallow: "горло"
+
+10. Я застудився і тепер маю ___ з температурою.
+    - [ ] таблетка
+    - [ ] ліки
+    - [ ] рецепт
+    - [x] застуду
+    > Having a cold: "застуду" (accusative)
+
+## unjumble: Put Words in Order
+
+> Arrange the words to form correct sentences about health.
+
+1. У / мене / болить / голова / дуже / сильно / сьогодні
+   > [!answer] У мене голова болить дуже сильно сьогодні.
+   > (My head hurts very badly today.)
+
+2. Мені / потрібні / ліки / від / головного / болю / з / аптеки
+   > [!answer] Мені потрібні ліки від головного болю з аптеки.
+   > (I need medicine for a headache from the pharmacy.)
+
+3. Лікар / написав / рецепт / на / антибіотики / після / огляду / пацієнта
+   > [!answer] Лікар написав рецепт на антибіотики після огляду пацієнта.
+   > (The doctor wrote a prescription for antibiotics after examining the patient.)
+
+4. У / мене / болить / живіт / після / того / як / я / поїв
+   > [!answer] У мене болить живіт після того, як я поїв.
+   > (My stomach hurts after I ate.)
+
+5. Я / маю / застуду / з / високою / температурою / та / кашлем
+   > [!answer] Я маю застуду з високою температурою та кашлем.
+   > (I have a cold with high temperature and cough.)
+
+6. Візьміть / цю / таблетку / тричі / на / день / після / їжі
+   > [!answer] Візьміть цю таблетку тричі на день після їжі.
+   > (Take this pill three times a day after meals.)
+
+7. У / мене / болить / спина / після / важкої / фізичної / роботи / вчора
+   > [!answer] У мене болить спина після важкої фізичної роботи вчора.
+   > (My back hurts after hard physical work yesterday.)
+
+8. Мені / важко / ковтати / бо / у / мене / боліє / горло
+   > [!answer] Мені важко ковтати, бо у мене боліє горло.
+   > (It's hard for me to swallow because my throat hurts.)
+
+9. Я / маю / сильний / кашель / і / нежить / через / застуду
+   > [!answer] Я маю сильний кашель і нежить через застуду.
+   > (I have a strong cough and runny nose because of a cold.)
+
+10. У / мене / болять / ноги / після / довгої / прогулянки / в / парку
+    > [!answer] У мене болять ноги після довгої прогулянки в парку.
+    > (My legs hurt after a long walk in the park.)
+
+---
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| голова | /ɦoloˈvɑ/ | head | noun | f |
+| горло | /ˈɦorlo/ | throat | noun | n |
+| живіт | /ʒɪˈvʲit/ | stomach, belly | noun | m |
+| спина | /spɪˈnɑ/ | back | noun | f |
+| боліти | /boˈlʲitɪ/ | to hurt, ache | verb | - |
+| кашель | /ˈkɑʃɛlʲ/ | cough | noun | m |
+| нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m |
+| застуда | /zɑˈstudɑ/ | cold (illness) | noun | f |
+| ліки | /ˈlʲikɪ/ | medicine | noun | m | pl-only |
+| таблетка | /tɑbˈlɛtkɑ/ | tablet, pill | noun | f |
+| рецепт | /rɛˈtsɛpt/ | prescription | noun | m |
+
+---
+
+# Summary
+
+## Body Parts
+
+| Area | Parts |
+|------|-------|
+| Head | голова, очі, вуха, ніс, рот, горло |
+| Upper | плечі, руки, груди, спина, живіт |
+| Lower | ноги, коліна, стопи |
+
+## Expressing Pain
+
+| Pattern | Example |
+|---------|---------|
+| Болить (sing) | У мене болить голова |
+| Болять (pl) | У мене болять ноги |
+
+## At the Doctor
+
+| Ukrainian | English |
+|-----------|---------|
+| На що скаржитесь? | What are your complaints? |
+| Де болить? | Where does it hurt? |
+| Як давно? | How long? |
+| Приймайте... | Take... |
+
+## At the Pharmacy
+
+| Pattern | Example |
+|---------|---------|
+| Щось від... | Something for... |
+| Як приймати? | How to take? |
+
+> 💡 **Key Takeaways**
+>
+> - У мене болить (sing) / болять (pl)
+> - Emergency: 103 (швидка допомога)
+> - Medicine "for something" = від + genitive
+> - Common: застуда, температура, кашель
+> - Аптека = pharmacy, рецепт = prescription

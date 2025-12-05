@@ -3,11 +3,13 @@
  * Curricula-Opus Generator (Refactored)
  *
  * Uses modular lib/ architecture for parsing and rendering.
+ * Reads modules from level folders: curriculum/{langPair}/{level}/*.md
  *
  * Usage:
- *   npm run generate                    # Generate all
- *   npm run generate l2-uk-en           # Generate for Ukrainian
- *   npm run generate l2-uk-en 1         # Generate only module 01
+ *   npm run generate                    # Generate all curricula
+ *   npm run generate l2-uk-en           # Generate all levels for Ukrainian
+ *   npm run generate l2-uk-en a1        # Generate only A1 level
+ *   npm run generate l2-uk-en a1 5      # Generate only module 5 of A1
  */
 
 import { readFile, readdir, mkdir, writeFile } from 'fs/promises';
@@ -57,15 +59,16 @@ function padNumber(n: number, len: number = 2): string {
   return String(n).padStart(len, '0');
 }
 
-function getLevelFromModuleNum(moduleNum: number): string {
-  if (moduleNum <= 30) return 'A1';
-  if (moduleNum <= 60) return 'A2';
-  if (moduleNum <= 80) return 'A2+';
-  if (moduleNum <= 120) return 'B1';
-  if (moduleNum <= 160) return 'B1+';
-  if (moduleNum <= 235) return 'B2';
-  if (moduleNum <= 310) return 'B2+';
-  return 'C1';
+// Level folder names (lowercase) - aligned with Ukrainian State Standard 2024
+// No "plus" levels - these are the official CEFR levels
+const LEVEL_FOLDERS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+
+function levelFolderToDisplay(folder: string): string {
+  return folder.toUpperCase();
+}
+
+function levelDisplayToFolder(display: string): string {
+  return display.toLowerCase();
 }
 
 /**
@@ -363,10 +366,12 @@ function generateRootIndex(curricula: { langPair: string; name: string; levels: 
 async function main() {
   const args = process.argv.slice(2);
   const targetLangPair = args[0];
-  const targetModule = args[1] ? parseInt(args[1], 10) : null;
+  // Target can be: level (e.g., "a1"), or level + module num (e.g., "a1 5")
+  const targetLevel = args[1]?.toLowerCase();
+  const targetModuleNum = args[2] ? parseInt(args[2], 10) : null;
 
   console.log('\n🚀 Curricula-Opus Generator (Refactored)\n');
-  console.log('Source: curriculum/[lang]/modules/*.md');
+  console.log('Source: curriculum/[lang]/[level]/*.md');
   console.log('Output: output/json/ + output/html/\n');
 
   const langPairs = targetLangPair
@@ -378,70 +383,94 @@ async function main() {
   for (const langPair of langPairs) {
     console.log(`📚 Processing ${langPair}...`);
 
-    const modulesDir = join(CURRICULUM_DIR, langPair, 'modules');
-    if (!existsSync(modulesDir)) {
-      console.log(`  ⚠ No modules directory, skipping...`);
+    const langDir = join(CURRICULUM_DIR, langPair);
+    if (!existsSync(langDir)) {
+      console.log(`  ⚠ Language directory not found, skipping...`);
       continue;
     }
 
-    const mdFiles = (await readdir(modulesDir))
-      .filter(f => f.startsWith('module-') && f.endsWith('.md'))
-      .sort();
+    // Find level folders (a1, a2, a2+, b1, etc.)
+    const allEntries = await readdir(langDir, { withFileTypes: true });
+    const levelFolders = allEntries
+      .filter(e => e.isDirectory() && LEVEL_FOLDERS.includes(e.name))
+      .map(e => e.name)
+      .sort((a, b) => LEVEL_FOLDERS.indexOf(a) - LEVEL_FOLDERS.indexOf(b));
+
+    if (levelFolders.length === 0) {
+      console.log(`  ⚠ No level folders found, skipping...`);
+      continue;
+    }
 
     const imageMap = await loadImageLookupMap(langPair);
     if (imageMap.size > 0) {
       console.log(`  📷 Loaded ${imageMap.size} image URLs from vocabulary.csv`);
     }
 
-    // First pass: parse all modules (or just frontmatter for nav when targeting single module)
+    // Process each level folder
     const modules: ModuleInfo[] = [];
-    const navInfo: Map<number, { level: string; title: string }> = new Map();
+    const navInfo: Map<string, { level: string; num: number; title: string }[]> = new Map();
 
-    for (const mdFile of mdFiles) {
-      const moduleNum = parseInt(mdFile.match(/module-(\d+)/)?.[1] || '0', 10);
+    for (const levelFolder of levelFolders) {
+      // Skip if targeting a specific level
+      if (targetLevel && levelFolder !== targetLevel) continue;
 
-      try {
-        const mdPath = join(modulesDir, mdFile);
-        const mdContent = await readFile(mdPath, 'utf-8');
+      const levelDir = join(langDir, levelFolder);
+      const level = levelFolderToDisplay(levelFolder);
 
-        // If targeting a single module, only fully parse that one
-        // but extract frontmatter from all for navigation
-        if (targetModule && moduleNum !== targetModule) {
+      const mdFiles = (await readdir(levelDir))
+        .filter(f => f.match(/^\d{2}-.*\.md$/))  // Match: 01-slug.md
+        .sort();
+
+      console.log(`\n  📁 Level ${level} (${mdFiles.length} modules)`);
+
+      // Initialize nav info for this level
+      navInfo.set(level, []);
+
+      for (const mdFile of mdFiles) {
+        // Extract module number from filename: "01-slug.md" -> 1
+        const moduleNum = parseInt(mdFile.match(/^(\d{2})-/)?.[1] || '0', 10);
+
+        try {
+          const mdPath = join(levelDir, mdFile);
+          const mdContent = await readFile(mdPath, 'utf-8');
+
           // Quick frontmatter extraction for navigation
           const fmMatch = mdContent.match(/^---\n([\s\S]*?)\n---/);
-          if (fmMatch) {
-            const levelMatch = fmMatch[1].match(/^level:\s*(.+)$/m);
-            const titleMatch = fmMatch[1].match(/^title:\s*["']?(.+?)["']?\s*$/m);
-            if (levelMatch && titleMatch) {
-              navInfo.set(moduleNum, { level: levelMatch[1].trim(), title: titleMatch[1] });
-            }
-          }
-          continue;
+          const titleMatch = fmMatch?.[1].match(/^title:\s*["']?(.+?)["']?\s*$/m);
+          const title = titleMatch?.[1] || mdFile.replace(/^\d+-/, '').replace('.md', '');
+
+          // Add to navInfo
+          navInfo.get(level)!.push({ level, num: moduleNum, title });
+
+          // If targeting a single module, only fully parse that one
+          if (targetModuleNum && moduleNum !== targetModuleNum) continue;
+
+          const parsed = parseModule(mdContent, { languagePair: langPair, imageMap });
+
+          // Inject level and module number from path (not frontmatter)
+          parsed.frontmatter.level = level as typeof parsed.frontmatter.level;
+          parsed.frontmatter.module = moduleNum;
+
+          const vibeCtx: RenderContext = {
+            moduleNum: moduleNum,
+            level: level,
+            languagePair: langPair,
+          };
+          const vibeJSON = renderVibeJson(parsed, vibeCtx);
+
+          modules.push({
+            num: moduleNum,
+            level: level,
+            title: parsed.frontmatter.title,
+            subtitle: parsed.frontmatter.subtitle,
+            phase: parsed.frontmatter.phase,
+            duration: parsed.frontmatter.duration,
+            parsed,
+            vibeJSON,
+          });
+        } catch (error) {
+          console.error(`  ⚠ Error parsing ${levelFolder}/${mdFile}:`, error);
         }
-
-        const parsed = parseModule(mdContent, { languagePair: langPair, imageMap });
-        const vibeCtx: RenderContext = {
-          moduleNum: moduleNum,
-          level: parsed.frontmatter.level,
-          languagePair: langPair,
-        };
-        const vibeJSON = renderVibeJson(parsed, vibeCtx);
-
-        modules.push({
-          num: moduleNum,
-          level: parsed.frontmatter.level,
-          title: parsed.frontmatter.title,
-          subtitle: parsed.frontmatter.subtitle,
-          phase: parsed.frontmatter.phase,
-          duration: parsed.frontmatter.duration,
-          parsed,
-          vibeJSON,
-        });
-
-        // Also add to navInfo
-        navInfo.set(moduleNum, { level: parsed.frontmatter.level, title: parsed.frontmatter.title });
-      } catch (error) {
-        console.error(`  ⚠ Error parsing ${mdFile}:`, error);
       }
     }
 
@@ -456,17 +485,16 @@ async function main() {
     // Build sorted list of modules in same level for navigation
     const getNavNeighbors = (moduleNum: number, level: string) => {
       // Get all modules in the same level, sorted by number
-      const sameLevel = Array.from(navInfo.entries())
-        .filter(([_, info]) => info.level === level)
-        .sort((a, b) => a[0] - b[0]);
+      const levelModules = navInfo.get(level) || [];
+      const sorted = [...levelModules].sort((a, b) => a.num - b.num);
 
-      const idx = sameLevel.findIndex(([num]) => num === moduleNum);
-      const prevEntry = idx > 0 ? sameLevel[idx - 1] : undefined;
-      const nextEntry = idx < sameLevel.length - 1 ? sameLevel[idx + 1] : undefined;
+      const idx = sorted.findIndex(m => m.num === moduleNum);
+      const prevEntry = idx > 0 ? sorted[idx - 1] : undefined;
+      const nextEntry = idx < sorted.length - 1 ? sorted[idx + 1] : undefined;
 
       return {
-        prev: prevEntry ? { num: prevEntry[0], title: prevEntry[1].title } : undefined,
-        next: nextEntry ? { num: nextEntry[0], title: nextEntry[1].title } : undefined,
+        prev: prevEntry ? { num: prevEntry.num, title: prevEntry.title } : undefined,
+        next: nextEntry ? { num: nextEntry.num, title: nextEntry.title } : undefined,
       };
     };
 
@@ -506,7 +534,7 @@ async function main() {
       }
 
       // Generate level index
-      if (!targetModule) {
+      if (!targetModuleNum) {
         const levelIndex = generateLevelIndex(
           levelModules.map(m => ({ num: m.num, title: m.title, subtitle: m.subtitle, phase: m.phase, duration: m.duration })),
           level,
@@ -517,7 +545,7 @@ async function main() {
     }
 
     // Generate curriculum index
-    if (!targetModule) {
+    if (!targetModuleNum) {
       const levels = Array.from(modulesByLevel.entries())
         .map(([level, mods]) => ({ level, moduleCount: mods.length }))
         .sort((a, b) => a.level.localeCompare(b.level));
@@ -537,7 +565,7 @@ async function main() {
   }
 
   // Generate root index
-  if (!targetModule && allCurricula.length > 0) {
+  if (!targetModuleNum && allCurricula.length > 0) {
     const rootIndex = generateRootIndex(allCurricula);
     await writeHTML(join(OUTPUT_DIR, 'html', 'index.html'), rootIndex);
   }

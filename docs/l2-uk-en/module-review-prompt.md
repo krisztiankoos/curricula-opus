@@ -68,6 +68,7 @@
 | **Accusative case** | **Module 11** | бачу книгу, люблю каву |
 | **Locative case** | **Module 13** | у Києві, в школі, на столі |
 | Possessives його/її/наш/ваш/їхній | Module 14 | його машина, наша кімната |
+| **Свій/своя/своє (reflexive possessive)** | **Module 14** | Я люблю свою маму |
 | **Genitive case** | **Module 16** | немає часу, багато грошей |
 | Numbers 0-100 + money | Module 17 | один, два, три... сто, гривня |
 | **Past tense** | **Module 21** | читав, писала, працювало, знали |
@@ -108,11 +109,13 @@
 
 ### Before Module 14 (Limited Possessives)
 - ❌ No його, її, наш, ваш, їхній
+- ❌ No свій/своя/своє/свою (reflexive possessive)
 - ✅ Only мій/моя/моє and твій/твоя/твоє allowed (from Module 05)
 
 ### Before Module 16 (No Genitive Case)
 - ❌ No genitive constructions: "немає часу", "багато грошей"
 - ❌ No partitive genitive: "трохи води", "шматок хліба"
+- ❌ No genitive after prepositions: "до станції", "біля метро"
 
 ### Before Module 21 (No Past Tense)
 - ❌ **No past tense forms:** -в, -ла, -ло, -ли endings
@@ -164,45 +167,6 @@
 - ✅ Dialogues with side-by-side translation
 - ✅ English explanations with Ukrainian examples
 
-**Example A1 violation:**
-```markdown
-❌ WRONG (A1):
-Кав'ярня у центрі Києва. Ранок. Сара сидить за столиком біля вікна.
-Перед нею — зошит із українськими словами.
-
-✅ CORRECT (A1):
-A coffee shop in central Kyiv. Morning. Sara sits at a table by the window.
-In front of her — a notebook with Ukrainian words.
-```
-
-**B1+ (70% Ukrainian):**
-- ✅ Most content in Ukrainian
-- ✅ Only key grammar explanations in English
-- ✅ Ukrainian narratives acceptable
-
-**B2 (85% Ukrainian):**
-- ✅ Nearly full immersion
-- ✅ English only for complex grammar clarifications
-
-### Immersion Violations to Check
-
-1. **Narrative sections**: Is the intro/story text in the correct language ratio?
-2. **Character testimonials**: Are quotes translated appropriately for the level?
-3. **Grammar explanations**: A1-A2 should explain in English; B1+ can explain in Ukrainian
-4. **Dialogues**: Must ALWAYS have parallel translation regardless of level
-5. **Activity instructions**: A1-B1 in English; B1+ can be in Ukrainian
-
-### Scope Interaction
-
-**CRITICAL**: Even if immersion allows Ukrainian prose, the Ukrainian text must still follow scope rules!
-
-An A1 module with 30% Ukrainian immersion still cannot use:
-- Past tense in Ukrainian narrative (before M21)
-- Locative case in Ukrainian narrative (before M13)
-- Adjectives in Ukrainian narrative (before M26)
-
-**The immersion level controls HOW MUCH Ukrainian, not WHAT grammar can appear.**
-
 ---
 
 ## 4. Transliteration Rules
@@ -214,37 +178,9 @@ An A1 module with 30% Ukrainian immersion still cannot use:
 | 21-30 (A1.3) | First occurrence only | First mention has transliteration |
 | 31+ (A2+) | **NO transliteration** | Remove ALL `(latinized)` patterns |
 
-**Check for violations:**
-- In Module 31+: Search for patterns like `слово (slovo)`, `читати (chytaty)`
-- English translations in parentheses are OK: `книга (book)`
-
 ---
 
-## 5. Letter Sequencing (Modules 1-2)
-
-**Module 01 letters:** А, О, Е, І, М, Т, К, Н, В, Р, С, Д
-
-**Module 02 letters:** All remaining (Б, Г, Ґ, Л, П, У, Ф, Х, Ц, Ч, Ш, Щ, Ж, З, И, Ї, Й, Є, Ю, Я, Ь)
-
-**In Module 01:**
-- ❌ Cannot use words containing Module 02 letters
-- ❌ Моя (uses Я), Моє (uses Є) - these letters not yet taught
-- ❌ піца (uses Ц) - not yet taught
-- ✅ Can only use words with: А, О, Е, І, М, Т, К, Н, В, Р, С, Д
-
----
-
-## 6. Vocabulary Scope Rules
-
-### Word Count Limits
-
-| Level | Target per Module | Max Tolerance |
-|-------|-------------------|---------------|
-| A1 | 15-40 (per plan) | +5 words max |
-| A2 | 20-25 | +5 words max |
-| A2+ | 35-40 | +5 words max |
-| B1 | 25-30 | +5 words max |
-| B2 | 25-30 | +5 words max |
+## 5. Vocabulary Scope Rules
 
 ### Vocabulary Plan Compliance (CRITICAL)
 
@@ -258,13 +194,6 @@ An A1 module with 30% Ukrainian immersion still cannot use:
    - **Missing words**: Words in plan but not in vocabulary table
    - **Extra words**: Words in vocabulary table but not in plan (may be OK if related)
    - **Count mismatch**: Actual count vs planned count
-
-**Example violation:**
-```
-Plan for M11: "бачити, чути, брати, давати, мати, нести, класти..."
-Module M11 vocab table: missing "бачити" (the main verb!)
-→ VIOLATION: Core vocabulary word from plan is missing
-```
 
 ### Vocabulary Leakage (Common Problem)
 
@@ -280,9 +209,28 @@ Words scheduled for later modules should NOT appear early:
 
 **Always check CURRICULUM-PLAN.md for the specific module's vocabulary list.**
 
+### Example/Activity Vocabulary Check (NEW)
+
+**Every noun used in examples and activities MUST either:**
+1. Be in the current module's vocabulary table, OR
+2. Have been introduced in a previous module
+
+**Audit steps:**
+1. List all nouns used in presentation examples (e.g., "Це мій **телефон**")
+2. List all nouns used in activities (fill-in, unjumble, match-up, etc.)
+3. Check each noun against:
+   - The current module's `# Vocabulary` table
+   - Previous modules' vocabulary tables (use CURRICULUM-PLAN.md as reference)
+4. Report any nouns that appear without prior introduction as **vocabulary leakage**
+
+**Common leakage patterns to check:**
+- Generic nouns in possessive examples: телефон, книга, сумка, машина
+- People nouns in animate accusative: друг, лікар, студент, сусід
+- Place nouns in locative examples: школа, магазин, офіс, ресторан
+
 ---
 
-## 7. Activity Requirements
+## 6. Activity Requirements
 
 ### Quantity by Level
 
@@ -305,71 +253,9 @@ Words scheduled for later modules should NOT appear early:
 5. `fill-in` - Gap completion
 6. `unjumble` - Word ordering (highest cognitive load)
 
-### Activity Format Templates
-
-```markdown
-## fill-in: Title
-
-> Instructions here.
-
-1. Sentence with ___ blank here. (5-8 words)
-   > [!answer] correct answer
-   > [!options] wrong1 | correct answer | wrong2 | wrong3
-
-## quiz: Title
-
-> Instructions here.
-
-1. Question text?
-   - [x] Correct answer
-   - [ ] Wrong answer
-   - [ ] Wrong answer
-   - [ ] Wrong answer
-   > Explanation text
-
-## match-up: Title
-
-> Instructions here.
-
-| Left | Right |
-|------|-------|
-| українське | english |
-| слово | word |
-
-## unjumble: Title
-
-> Instructions here.
-
-1. слово1 / слово2 / слово3 / слово4 / слово5
-   > [!answer] Correct sentence in proper order.
-   > (English translation) [5 words]
-
-## true-false: Title
-
-> Instructions here.
-
-- [x] True statement about the topic.
-  > Explanation of why this is true.
-
-- [ ] False statement about the topic.
-  > Explanation of why this is false.
-
-## group-sort: Title
-
-> Instructions here.
-
-### Category 1
-- item1
-- item2
-
-### Category 2
-- item3
-- item4
-```
-
 ---
 
-## 8. Engagement Box Requirements
+## 7. Engagement Box Requirements
 
 Every module MUST include engagement boxes (minimum 3 for A1):
 
@@ -385,18 +271,6 @@ Every module MUST include engagement boxes (minimum 3 for A1):
 | Real World | 🌍 | Modern relevance |
 | Pop Culture Moment | 🎬 | Movies, games, music |
 
-**Format:**
-```markdown
-> 💡 **Did You Know?**
->
-> The Cyrillic alphabet was NOT invented by Russians! It was created in the
-> 9th century in Bulgaria by followers of Saints Cyril and Methodius.
-```
-
-**Accuracy requirement:** Ensure all facts are linguistically and historically accurate. Common mistakes:
-- ❌ "English only has one B-sound" (false - English has both /b/ and /v/)
-- ❌ Etymology errors about Ukrainian vs Russian word origins
-
 ### Level-Appropriate Complexity
 
 **A1-A2 engagement boxes should be:**
@@ -407,25 +281,67 @@ Every module MUST include engagement boxes (minimum 3 for A1):
 - ❌ NOT historical linguistics (Proto-Slavic evolution)
 - ❌ NOT academic explanations
 
-**Example violation (A1):**
+---
+
+## 8. Coming Next Section Verification (NEW)
+
+Every module's "Coming Next" section must accurately preview the next module.
+
+**Verification steps:**
+1. Read the "Coming Next" (`> 🎯 **Coming Next**`) section
+2. Look up the **next module** in CURRICULUM-PLAN.md
+3. Verify that:
+   - The grammar topic matches the plan
+   - The vocabulary/direction words match the plan exactly
+   - The example sentences use only grammar/vocab from the next module's plan
+
+**Common errors:**
+- Using synonyms instead of planned terms (e.g., `праворуч` vs `направо`)
+- Previewing content from module N+2 instead of N+1
+- Using example sentences with grammar not yet taught
+
+**Example:**
 ```markdown
-❌ WRONG for A1:
-> 📜 **History Bite: Why Feminine Changes**
-> In Proto-Slavic, the accusative originally had distinct endings for all genders.
-> Over time, masculine and neuter inanimate forms merged with nominative...
-
-✅ BETTER for A1:
-> ⚡ **Pro Tip: The -у Rule**
-> Most feminine nouns ending in -а change to -у in accusative.
-> книга → книгу, вода → воду, кава → каву
-> Easy pattern to remember!
+# Module 14 "Coming Next" should reference M15 plan:
+❌ "Directions: прямо, праворуч, ліворуч" (wrong terms)
+✅ "Directions: прямо, наліво, направо, назад" (matches plan)
 ```
-
-**History Bite / Etymology boxes** are better suited for B1+ where learners appreciate linguistic depth.
 
 ---
 
-## 9. The Review Process
+## 9. Advanced Topic Markers (NEW)
+
+Some concepts may be introduced for **recognition only** before their full teaching module. These must be clearly marked.
+
+**Concepts requiring "Preview" or "Advanced" labels:**
+
+| Concept | Full Teaching | Can Preview From | Required Label |
+|---------|---------------|------------------|----------------|
+| свій (reflexive) | A2 | M14 | "Preview: Advanced Topic" |
+| Genitive with prepositions | M16 | M15 | "Preview: Coming in M16" |
+| Adjective agreement | M26 | M24-25 | "Preview: Coming in M26" |
+| Aspect (perfective/imperfective) | A2+ | B1 intro | "Preview: Advanced Grammar" |
+
+**Format for preview sections:**
+```markdown
+### Preview: [Topic Name]
+
+[Brief introduction for recognition]
+
+> 💡 **Note: Advanced Topic**
+>
+> [Explanation that this is for awareness, not mastery]
+> You'll practice this more at [level] level!
+```
+
+**Do NOT:**
+- Include preview topics in quizzes/tests
+- Expect production of preview concepts in activities
+- Count preview vocabulary toward module word targets
+
+---
+
+## 10. The Review Process
 
 ### Step 1: Scope Compliance Audit (CRITICAL)
 
@@ -436,70 +352,45 @@ Before anything else, check for scope violations:
 3. **Scan all sentences** for verbs, cases, adjectives not yet introduced
 4. **Check vocabulary list** against CURRICULUM-PLAN.md
 5. **Verify transliteration** matches the module range rules
-6. **Report all violations** using the format in Section 11
+6. **Report all violations** using the format below
 
 ### Step 2: Content Richness Audit
 
-Use the table from Section 0 to verify:
 - **Example sentences**: Count all Ukrainian example sentences (min 12+ for A1)
 - **Engagement boxes**: Count 💡🎬🌍🎯 boxes (min 3+ for A1)
 - **Content words**: Estimate total word count in lesson content (min 600+ for A1)
 - **Immersion level**: Estimate Ukrainian vs English ratio (30% for A1)
 
-### Step 3: Content Quality Review
-
-- Check example sentences (realistic, useful?)
-- Check explanations (clear, Theory-First approach?)
-- For checkpoint modules (10, 20, 30...): named character, dialogues, testimonies?
-
-### Step 4: Activity Audit
+### Step 3: Activity Audit
 
 - Count activities (minimum met?)
 - Count items per activity (minimum met?)
 - Check sentence lengths (within range?)
 - Verify all activity words exist in vocabulary section
-- Verify answer format is correct (`> [!answer]` not `- answer:`)
+- Verify answer format is correct
 
-### Step 5: Vocabulary Audit
+### Step 4: Vocabulary Audit
 
 - Count total words (within limit?)
 - Check against CURRICULUM-PLAN.md target list
 - Identify any words from future modules (leakage)
+- **NEW**: Check example/activity nouns against vocabulary table
 
----
+### Step 5: Coming Next Verification (NEW)
 
-## 10. Common Mistakes to AVOID
+- Read "Coming Next" section
+- Cross-check against next module in CURRICULUM-PLAN.md
+- Verify terminology matches exactly (no synonyms)
 
-**Format errors:**
-- ❌ `- answer: "text"` → ✅ `> [!answer] text`
-- ❌ Using ✅ emoji to mark correct → ✅ Use `- [x]` for quiz
-- ❌ Activities with < 12 items → ✅ Always 12+ items
+### Step 6: Advanced Topic Check (NEW)
 
-**Scope errors:**
-- ❌ Using adjectives before Module 26 (гарячу каву, смачний хліб)
-- ❌ Using Class II verbs before Module 08 (говорити, робити)
-- ❌ Using past tense before Module 21 (прийшов, було)
-- ❌ Using accusative before Module 11 (бачу книгу)
-- ❌ Using locative before Module 13 (у Києві, в школі)
-
-**Content errors:**
-- ❌ Inaccurate linguistic facts in engagement boxes
-- ❌ Vocabulary from future modules appearing early
-- ❌ Exceeding vocabulary count limits significantly
-- ❌ Missing planned vocabulary words (compare to CURRICULUM-PLAN.md)
-- ❌ Abstract/academic engagement boxes in A1-A2 (History Bite about Proto-Slavic, etc.)
-
-**Immersion errors:**
-- ❌ Full Ukrainian prose in A1 modules (should be 30% Ukrainian)
-- ❌ Ukrainian testimonials without translation in A1-A2
-- ❌ English explanations in B2+ modules (should be 85% Ukrainian)
-- ❌ Missing parallel translations in dialogues (required at ALL levels)
+- Identify any grammar/vocabulary above module scope
+- Verify appropriate "Preview" labels are present
+- Ensure preview topics are NOT in quizzes/activities
 
 ---
 
 ## 11. Reporting Format
-
-When reviewing a module, report findings in this format:
 
 ```markdown
 # Module [XX] Review
@@ -510,15 +401,10 @@ When reviewing a module, report findings in this format:
 |--------|----------|--------|--------|
 | Example sentences | [X]+ | [Y] | ✅/❌ |
 | Engagement boxes | [X]+ | [Y] | ✅/❌ |
-| Content words | [X]+ | [Y] | ✅/❌ |
-| Immersion level | [X]% | [Y]% | ✅/❌ |
+| Activities | [X]+ | [Y] | ✅/❌ |
+| Items per activity | [X]+ | [Y] | ✅/❌ |
 
 ## Scope Violations Found
-
-### Immersion Violations
-1. **Level mismatch**: Module is [level] but immersion is [actual]% Ukrainian (should be [target]%)
-   - Line: [number]
-   - Issue: [description of Ukrainian prose that should be English, or vice versa]
 
 ### Grammar Violations
 1. **[Type] before M[XX]**: `word` found in [location]
@@ -526,36 +412,29 @@ When reviewing a module, report findings in this format:
    - Fix: Replace with `alternative`
 
 ### Vocabulary Violations
-1. **Word count**: [actual] words vs [target] target ([+/-] over/under)
-2. **Missing planned words**: `word1`, `word2` from CURRICULUM-PLAN.md not in vocab table
+1. **Word count**: [actual] words vs [target] target
+2. **Missing planned words**: `word1`, `word2` from CURRICULUM-PLAN.md
 3. **Leakage**: `word` scheduled for Module [XX], appears here
-
-### Engagement Box Violations (A1-A2)
-1. **Too abstract**: "[Box name]" uses academic/historical linguistics not appropriate for [level]
-   - Issue: [description]
-   - Fix: Simplify to practical tip or move to B1+
+4. **Example/Activity leakage**: `noun` used in examples but not in vocabulary table
 
 ### Transliteration Violations
 1. **Rule**: [description of violation]
-   - Line: [number]
 
-### Activity Violations
-1. **Count**: [actual] activities vs [required] required
-2. **Items**: Activity "[name]" has [actual] items vs [required] required
+### Coming Next Violations (NEW)
+1. **Terminology mismatch**: Used `word` but plan specifies `correct_word`
+2. **Wrong module reference**: Previews M[X] content but should preview M[Y]
+
+### Advanced Topic Issues (NEW)
+1. **Missing label**: `concept` introduced without "Preview" marker
+2. **In activity**: Preview concept `word` appears in quiz/test (should be recognition only)
 
 ## Fixes Required
-- [ ] Replace `говорити` with `читати` (Class I verb)
-- [ ] Remove adjectives from unjumble sentences
-- [ ] Add [X] more activities
-- [ ] Reduce vocabulary to [target] words
-- [ ] Add [X] more example sentences
-- [ ] Add [X] more engagement boxes
-- [ ] Rewrite narrative to match [X]% immersion level
+- [ ] Fix 1
+- [ ] Fix 2
 
 ## Summary
 - Total violations: [X]
 - Severity: [High/Medium/Low]
-- Estimated fix effort: [description]
 ```
 
 ---
@@ -567,60 +446,12 @@ When reviewing a module, report findings in this format:
 | 01-05 | None (infinitives only in vocab) | Nominative only | No adjectives |
 | 06-07 | Class I only | Nominative only | No adjectives |
 | 08-10 | Class I + II + irregulars | Nominative only | No adjectives, no numbers |
-| 11-12 | All verb classes | + Accusative | No adjectives, no numbers |
-| 13-15 | All verb classes | + Locative | No adjectives, no numbers |
+| 11-12 | All verb classes | + Accusative | No adjectives, no numbers, no свій |
+| 13 | All verb classes | + Locative | No adjectives, no numbers, no свій |
+| 14-15 | All verb classes | + Locative | No adjectives, no numbers, **свій allowed** |
 | 16 | All verb classes | + Genitive | No adjectives, no numbers |
 | 17-20 | All verb classes | + Genitive | No adjectives, **numbers allowed** |
 | 21-24 | + Past tense | All A1 cases | No adjectives |
 | 22-24 | + Future tense | All A1 cases | No adjectives |
 | 25 | + Reflexive verbs | All A1 cases | No adjectives |
 | 26+ | All verbs | All A1 cases | **Adjectives allowed** |
-
----
-
-## 13. Vocabulary Table Formats
-
-### A1-A2+ (Modules 1-80)
-```markdown
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| слово | /ˈslɔvɔ/ | word | noun | n | Example note |
-```
-
-### B1-B1+ (Modules 81-160)
-```markdown
-# Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| слово | /ˈslɔvɔ/ | word | ім. | Example note |
-```
-
-### B2+ (Modules 161+)
-```markdown
-# Словник
-
-| Слово | Переклад | Примітки |
-|-------|----------|----------|
-| слово | word | Example note |
-```
-
----
-
-## 14. Output Requirements
-
-When fixing a module, output the **entire revised module** as a complete markdown file. Do not output diffs or partial changes.
-
-**Checklist before submitting:**
-- [ ] Content richness met (examples, engagement boxes, word count)
-- [ ] Immersion level matches CEFR (A1=30%, A2=40%, etc.)
-- [ ] All scope violations fixed (grammar, vocabulary, cases)
-- [ ] Vocabulary count within limits for module type
-- [ ] Activities meet quantity requirements (8+ for A1)
-- [ ] Activity items meet minimum (12+ items each)
-- [ ] All answers verified correct
-- [ ] Engagement boxes present (3+ for A1)
-- [ ] Transliteration follows module rules
-- [ ] No placeholder text remains

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 30: A1 Capstone | Ukrainian A1</title>
+  <title>Module 30: A1 Capstone — Who Am I? | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,15 +478,17 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 30: A1 Capstone</h1>
+    <h1>Module 30: A1 Capstone — Who Am I?</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
-      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
-      <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-1">2. Fill</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
+      <button class="nav-tab" data-section="activity-3">4. Match</button>
+      <button class="nav-tab" data-section="activity-4">5. Match</button>
+      <button class="nav-tab" data-section="activity-5">6. Quiz</button>
+      <button class="nav-tab" data-section="activity-6">7. T/F</button>
+      <button class="nav-tab" data-section="activity-7">8. Sort</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -469,674 +497,306 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.3</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">A1 Capstone</h2>
-        <p style="color:var(--text-muted)">Your Ukrainian Foundation</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">A1 Capstone — Who Am I?</h2>
+        <p style="color:var(--text-muted)">Хто я? — Complete Review of A1 Ukrainian</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
       <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="graduationdayemmasstory">Graduation Day: Emma's Story</h3>
-<p><strong>Емма</strong> (34, Australian, Melbourne) sits in her favorite Kyiv café. It's her last day in Ukraine - she arrived 30 days ago knowing zero Ukrainian. Tonight, she flies home. In her journal, she writes:</p>
+<h3 id="youvemadeit">You've Made It!</h3>
+<p>Congratulations! You've completed all 30 modules of A1 Ukrainian. This capstone module will help you review everything and assess your progress.</p>
 <blockquote>
-  <p><em>"Day 30. I did it. Thirty days ago, I couldn't tell А from Д. I thought Cyrillic was impossible. Today, I read a Ukrainian newspaper headline. I ordered борщ without pointing. I gave directions to a lost tourist. I told a shop assistant that I needed a smaller size - in Ukrainian! When I asked a babusya at the ринок 'Скільки коштує?' and she answered back, I actually understood.</em></p>
-  <p><em>The cases still make my head spin sometimes. Was it 'у Києві' or 'до Києва'? But now I hear the patterns. I feel the logic. I'm not just memorizing - I'm starting to think in Ukrainian.</em></p>
-  <p><em>To anyone starting this journey: it's possible. It's hard, but it's possible. And it's worth every confusing moment."</em></p>
-</blockquote>
-<p>This is your graduation too. Let's prove what you've learned.</p>
-<h3 id="whatothergraduatessay">What Other Graduates Say</h3>
-<p><strong>Хосе, 28, Spanish, Madrid:</strong></p>
-<blockquote>
-  <p><em>"I thought Spanish would make Ukrainian easier - we're both European languages, right? Ha! The cases were completely new to me. But by week 3, something clicked. Now I can actually feel when to use accusative vs genitive. It's like learning to ride a bike - suddenly it just makes sense."</em></p>
-</blockquote>
-<p><strong>Акіко, 31, Japanese, Tokyo:</strong></p>
-<blockquote>
-  <p><em>"Japanese has no articles, no gender, no cases. Ukrainian has all three! But you know what helped? Treating cases like Japanese particles. が (ga) is like nominative, を (wo) is like accusative. My Ukrainian teacher said I was the fastest learner she'd seen - I think it's because I approached it systematically."</em></p>
-</blockquote>
-<p><strong>Олівер, 45, British, London:</strong></p>
-<blockquote>
-  <p><em>"I'm terrible at languages. Failed French at school, forgot my Spanish from holiday courses. But Ukrainian? Something about the logic hooked me. My daughter (whose partner is Ukrainian) was shocked when I said 'Дякую за каву' last week. Best feeling ever."</em></p>
-</blockquote>
-<p><strong>Fatima, 22, American, Chicago:</strong></p>
-<blockquote>
-  <p><em>"Started learning because of the war - I wanted to help refugees in a meaningful way. Now I volunteer as an interpreter at refugee centers. My Ukrainian isn't perfect, but when someone's eyes light up because you said 'Як справи?' instead of just 'Hello'… that's everything."</em></p>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>At CEFR A1, you can:</p>
-  <ul>
-  <li>Understand and use familiar everyday expressions</li>
-  <li>Introduce yourself and others</li>
-  <li>Ask and answer simple personal questions</li>
-  <li>Interact in a simple way if the other person speaks slowly</li>
-  </ul>
-  <p>You're now officially a CEFR A1 Ukrainian speaker!</p>
+  <p>At A1 level, you should be able to: introduce yourself, navigate basic situations, understand simple texts, and communicate in everyday contexts. Let's see how far you've come!</p>
 </blockquote>
 <h2 id="presentation">presentation</h2>
-<h3 id="emmasjourneythecompletea1review">Emma's Journey: The Complete A1 Review</h3>
-<p><strong>Phase 1: The Alphabet (Modules 1-10)</strong></p>
-<p>Emma remembers her first week:</p>
-<table>
-<thead>
-<tr>
-<th>What she learned</th>
-<th>Her breakthrough moment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cyrillic letters А-Я</td>
-<td>Reading her first Ukrainian word: МАМА</td>
-</tr>
-<tr>
-<td>Similar letters (А, К, М, О, Т)</td>
-<td>Recognizing "кава" on a café sign</td>
-</tr>
-<tr>
-<td>False friends (В, Н, Р, С)</td>
-<td>Not reading "ресторан" as "pectopah"</td>
-</tr>
-<tr>
-<td>Unique letters (Ї, Є, Ь)</td>
-<td>Pronouncing "їжа" correctly</td>
-</tr>
-<tr>
-<td>Basic greetings</td>
-<td>Saying "Привіт!" to her host</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>Phase 2: Navigation (Modules 11-20)</strong></p>
-<p>The cases Emma conquered:</p>
+<h3 id="whatyouvelearnedgrammaroverview">What You've Learned: Grammar Overview</h3>
+<h4 id="cases">Cases (Відмінки)</h4>
 <table>
 <thead>
 <tr>
 <th>Case</th>
 <th>Question</th>
-<th>Emma's real-world use</th>
+<th>Usage</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Nominative</td>
 <td>Хто? Що?</td>
-<td><strong>Студент</strong> сидить там. (Describing who's there)</td>
+<td>Subject</td>
+<td>Це <strong>книга</strong>.</td>
 </tr>
 <tr>
 <td>Accusative</td>
 <td>Кого? Що?</td>
-<td>Я бачу <strong>студента</strong>. (Pointing out people)</td>
+<td>Direct object</td>
+<td>Я читаю <strong>книгу</strong>.</td>
 </tr>
 <tr>
 <td>Locative</td>
-<td>Де?</td>
-<td>Я в <strong>школі</strong>. (Saying where she was)</td>
+<td>Де? На чому?</td>
+<td>Location</td>
+<td>Книга на <strong>столі</strong>.</td>
 </tr>
 <tr>
 <td>Genitive</td>
 <td>Кого? Чого?</td>
-<td>Немає <strong>часу</strong>. (Explaining why she couldn't stay)</td>
+<td>Absence, possession</td>
+<td>Немає <strong>книги</strong>.</td>
+</tr>
+<tr>
+<td>Vocative</td>
+<td>—</td>
+<td>Addressing</td>
+<td><strong>Марію</strong>! Привіт!</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Emma's case tip:</strong></p>
 <blockquote>
-  <p><em>"I made flashcards with arrows. Nominative = start position (WHO does something). Accusative = target (WHAT you see/want). Locative = where you ARE. Genitive = what's MISSING or WHOSE. The arrows helped me visualize the logic."</em></p>
+  <p>🎬 <strong>Pop Culture Moment: Language Learning Movies</strong></p>
+  <p>Every great language learning journey has a capstone moment — like in "Lost in Translation" when finally, the protagonist understands. Now it's YOUR moment!</p>
 </blockquote>
-<hr />
-<p><strong>Phase 3: Time & Action (Modules 21-30)</strong></p>
-<p>Tenses Emma mastered:</p>
+<h4 id="verbtenses">Verb Tenses</h4>
+<p><strong>Present:</strong></p>
+<ul>
+<li>Я читаю. (I read/am reading.)</li>
+<li>Вона працює. (She works/is working.)</li>
+</ul>
+<p><strong>Past (L-participle):</strong></p>
+<ul>
+<li>Я читав/читала. (I read/was reading.)</li>
+<li>Він працював. (He worked.)</li>
+</ul>
+<p><strong>Future (буду + infinitive):</strong></p>
+<ul>
+<li>Я буду читати. (I will read.)</li>
+<li>Вона буде працювати. (She will work.)</li>
+</ul>
+<h4 id="modalverbs">Modal Verbs</h4>
 <table>
 <thead>
 <tr>
-<th>Tense</th>
-<th>Pattern</th>
-<th>Emma's diary entries</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Present</td>
-<td>читаю, читаєш, читає</td>
-<td>Я <strong>читаю</strong> меню. (Now)</td>
-</tr>
-<tr>
-<td>Past</td>
-<td>читав/читала</td>
-<td>Вчора я <strong>читала</strong> книгу. (Yesterday)</td>
-</tr>
-<tr>
-<td>Future</td>
-<td>буду + infinitive</td>
-<td>Завтра я <strong>буду</strong> літати. (Tomorrow)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="completegrammarsummary">Complete Grammar Summary</h3>
-<p><strong>Cases at a Glance:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Masculine</th>
-<th>Feminine</th>
-<th>Neuter</th>
+<th>Modal</th>
+<th>Meaning</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Nominative</td>
-<td>студент</td>
-<td>книга</td>
-<td>вікно</td>
-<td>Студент читає.</td>
+<td>можу</td>
+<td>can (ability)</td>
+<td>Я можу допомогти.</td>
 </tr>
 <tr>
-<td>Accusative (inan.)</td>
-<td>стіл</td>
-<td>книгу</td>
-<td>вікно</td>
-<td>Я бачу стіл.</td>
+<td>вмію</td>
+<td>can (skill)</td>
+<td>Я вмію плавати.</td>
 </tr>
 <tr>
-<td>Accusative (anim.)</td>
-<td>студента</td>
-<td>-</td>
-<td>-</td>
-<td>Я бачу студента.</td>
+<td>хочу</td>
+<td>want</td>
+<td>Я хочу їсти.</td>
 </tr>
 <tr>
-<td>Locative</td>
-<td>студенті</td>
-<td>книзі</td>
-<td>вікні</td>
-<td>У школі.</td>
+<td>повинен</td>
+<td>must</td>
+<td>Я повинен йти.</td>
 </tr>
 <tr>
-<td>Genitive</td>
-<td>студента</td>
-<td>книги</td>
-<td>вікна</td>
-<td>Немає книги.</td>
+<td>треба</td>
+<td>need to</td>
+<td>Мені треба працювати.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Verb Tenses:</strong></p>
+<h3 id="whatyouvelearnedvocabularydomains">What You've Learned: Vocabulary Domains</h3>
+<h4 id="identityfamilymodules1529">Identity &amp; Family (Modules 1-5, 29)</h4>
+<ul>
+<li>Personal pronouns: я, ти, він, вона, ми, ви, вони</li>
+<li>Family: батько, мати, брат, сестра, дідусь, бабуся</li>
+<li>Personal info: ім'я, прізвище, вік, професія</li>
+</ul>
+<h4 id="everydaylifemodules610181925">Everyday Life (Modules 6-10, 18-19, 25)</h4>
+<ul>
+<li>Daily activities: працювати, їсти, спати, читати</li>
+<li>Food: хліб, вода, кава, борщ</li>
+<li>Routine: прокидатися, снідати, працювати</li>
+</ul>
+<h4 id="navigationplacesmodules1315">Navigation &amp; Places (Modules 13-15)</h4>
+<ul>
+<li>Places: місто, вулиця, магазин, метро</li>
+<li>Directions: прямо, наліво, направо</li>
+<li>Prepositions: в/у, на, біля</li>
+</ul>
+<h4 id="timecalendarmodules2123">Time &amp; Calendar (Modules 21-23)</h4>
+<ul>
+<li>Days: понеділок, вівторок, середа…</li>
+<li>Months: січень, лютий, березень…</li>
+<li>Time: година, хвилина, рано, пізно</li>
+</ul>
+<h4 id="descriptionsmodules2628">Descriptions (Modules 26-28)</h4>
+<ul>
+<li>Adjectives: великий, малий, гарний, поганий</li>
+<li>Colors: білий, чорний, червоний, синій</li>
+<li>Weather: тепло, холодно, сонячно</li>
+</ul>
+<blockquote>
+  <p>🌍 <strong>Real World: Your A1 Can-Do List</strong></p>
+  <p>✓ Introduce yourself and others<br />
+  ✓ Ask and answer simple questions<br />
+  ✓ Navigate a city and order food<br />
+  ✓ Describe people, places, and things<br />
+  ✓ Talk about past events and future plans<br />
+  ✓ Express ability, necessity, and desire</p>
+</blockquote>
+<h3 id="a1grammarquickreference">A1 Grammar Quick Reference</h3>
+<h4 id="noungenderpatterns">Noun Gender Patterns</h4>
 <table>
 <thead>
 <tr>
-<th>Tense</th>
-<th>Formation</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Present</td>
-<td>Stem + endings</td>
-<td>Я читаю, ти читаєш, він/вона читає</td>
-</tr>
-<tr>
-<td>Past</td>
-<td>Stem + gender ending</td>
-<td>Я читав (m), читала (f), воно читало (n), ми читали (pl)</td>
-</tr>
-<tr>
-<td>Future</td>
-<td>буду/будеш/буде + infinitive</td>
-<td>Я буду читати, ти будеш працювати</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Adjective Agreement:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
 <th>Ending</th>
-<th>Emma's example</th>
+<th>Gender</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Masculine</td>
-<td>-ий/-ій</td>
-<td>новий ресторан, синій светр</td>
+<td>consonant</td>
+<td>M</td>
+<td>стіл, друг</td>
 </tr>
 <tr>
-<td>Feminine</td>
 <td>-а/-я</td>
-<td>нова книга, синя сукня</td>
+<td>F</td>
+<td>книга, земля</td>
 </tr>
 <tr>
-<td>Neuter</td>
-<td>-е/-є</td>
-<td>нове місто, синє небо</td>
+<td>-о/-е</td>
+<td>N</td>
+<td>вікно, море</td>
 </tr>
+</tbody>
+</table>
+<h4 id="adjectiveagreement">Adjective Agreement</h4>
+<table>
+<thead>
 <tr>
-<td>Plural</td>
+<th></th>
+<th>M</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hard</td>
+<td>-ий</td>
+<td>-а</td>
+<td>-е</td>
 <td>-і</td>
-<td>нові друзі, сині очі</td>
+</tr>
+<tr>
+<td>Soft</td>
+<td>-ій</td>
+<td>-я</td>
+<td>-є</td>
+<td>-і</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="">##</h2>
-<h3 id="communicationskillswhatemmacando">Communication Skills: What Emma Can Do</h3>
+<h4 id="numberpatterns">Number Patterns</h4>
 <table>
 <thead>
 <tr>
-<th>Skill</th>
-<th>Ukrainian</th>
-<th>English</th>
+<th>Number</th>
+<th>Noun Form</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Introduce herself</td>
-<td>Привіт! Мене звати Емма.</td>
-<td>Hello! My name is Emma.</td>
+<td>1</td>
+<td>Nominative singular</td>
 </tr>
 <tr>
-<td>Ask questions</td>
-<td>Як справи? Де ти живеш?</td>
-<td>How are you? Where do you live?</td>
+<td>2-4</td>
+<td>Nominative plural</td>
 </tr>
 <tr>
-<td>Express preferences</td>
-<td>Я люблю каву. Я не люблю м'ясо.</td>
-<td>I love coffee. I don't like meat.</td>
-</tr>
-<tr>
-<td>Describe things</td>
-<td>Це великий будинок.</td>
-<td>This is a big house.</td>
-</tr>
-<tr>
-<td>Talk about time</td>
-<td>Я встаю о сьомій.</td>
-<td>I wake up at seven.</td>
-</tr>
-<tr>
-<td>Make requests</td>
-<td>Можна каву, будь ласка?</td>
-<td>May I have coffee, please?</td>
-</tr>
-<tr>
-<td>Give directions</td>
-<td>Йдіть прямо, потім праворуч.</td>
-<td>Go straight, then right.</td>
-</tr>
-<tr>
-<td>Discuss family</td>
-<td>У мене є брат і сестра.</td>
-<td>I have a brother and sister.</td>
+<td>5-20</td>
+<td>Genitive plural</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="testimoniesfellowa1graduates">Testimonies: Fellow A1 Graduates</h3>
 <blockquote>
-  <p><em>"I was terrified of cases. Then I realized: English has them too! 'He' vs 'him' vs 'his' - that's nominative, accusative, genitive. Ukrainian just does it more. Once I saw the pattern, everything clicked."</em> — <strong>Марк</strong> (35, British, London)</p>
-  <p><em>"The past tense was my favorite discovery. Masculine -в, feminine -ла - it's so logical! Now I eavesdrop on conversations and think 'that was past tense, she's talking about yesterday!' It's like a superpower."</em> — <strong>Юкі</strong> (24, Japanese, Tokyo)</p>
-  <p><em>"My advice? Use it every day. Even if it's just thinking 'Де мої ключі?' when you lose your keys. The more you use it in real life, the faster it sticks."</em> — <strong>Ганна</strong> (42, German, Munich)</p>
-  <p><em>"Completing A1 felt impossible at first. Now I'm starting A2 next week. If you told me 30 days ago I'd be reading Ukrainian menus without Google Translate, I'd have laughed. But here I am."</em> — <strong>Сара</strong> (28, American, Chicago)</p>
+  <p>⚡ <strong>Pro Tip</strong></p>
+  <p>Review isn't about memorizing — it's about recognizing patterns. If you understand WHY cases change, you'll remember HOW they change!</p>
 </blockquote>
-<hr />
-<h3 id="whatsnexta2preview">What's Next: A2 Preview</h3>
-<p>Emma's already signed up for A2. Here's what awaits:</p>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>What You'll Unlock</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cases</td>
-<td>Dative (to whom), Instrumental (with what), Vocative (calling someone)</td>
-</tr>
-<tr>
-<td>Verbs</td>
-<td>Aspect - perfective vs imperfective</td>
-</tr>
-<tr>
-<td>Complex structures</td>
-<td>Conditional mood, reported speech</td>
-</tr>
-<tr>
-<td>Vocabulary</td>
-<td>500+ new words</td>
-</tr>
-<tr>
-<td>Skills</td>
-<td>Reading longer texts, extended conversations</td>
-</tr>
-</tbody>
-</table>
+<h3 id="selfassessmentchecklist">Self-Assessment Checklist</h3>
+<p>Rate yourself 1-5 on each skill:</p>
+<p><strong>Reading</strong></p>
+<ul>
+<li>[ ] I can read Cyrillic without transliteration</li>
+<li>[ ] I can understand simple signs and menus</li>
+<li>[ ] I can read short texts about familiar topics</li>
+</ul>
+<p><strong>Writing</strong></p>
+<ul>
+<li>[ ] I can write simple sentences about myself</li>
+<li>[ ] I can fill out basic forms</li>
+<li>[ ] I can write short messages</li>
+</ul>
+<p><strong>Speaking</strong></p>
+<ul>
+<li>[ ] I can introduce myself</li>
+<li>[ ] I can order food and ask prices</li>
+<li>[ ] I can describe my family and daily routine</li>
+</ul>
+<p><strong>Listening</strong></p>
+<ul>
+<li>[ ] I can understand simple greetings</li>
+<li>[ ] I can understand numbers and prices</li>
+<li>[ ] I can follow basic instructions</li>
+</ul>
 <blockquote>
-  <p>📜 <strong>History Bite: Your Achievement</strong></p>
-  <p>You've learned a language spoken by 40+ million people, with over 1000 years of written history. You can read Cyrillic - an alphabet created by Byzantine missionaries Saints Cyril and Methodius in the 9th century. You understand grammatical cases - a feature that has existed in Slavic languages for over 1500 years. You're now connected to a rich linguistic and cultural heritage!</p>
+  <p>🎮 <strong>Gamer's Corner: Achievement Unlocked!</strong></p>
+  <p>You've completed A1! Like finishing a tutorial level, you now have the basic skills to explore the game. A2 awaits with new challenges: all 7 cases, aspect, and complex sentences!</p>
 </blockquote>
 <h2 id="practice">practice</h2>
-<h3 id="emmasfinalreadingchallenge">Emma's Final Reading Challenge</h3>
-<p>Emma found this text in a Ukrainian magazine. Can you read it?</p>
-<blockquote>
-  <p>Привіт! Мене звати Олена. Я з Києва. Мені 25 років. Я працюю лікаркою в лікарні. У мене є брат Андрій і сестра Марія. Мій брат студент, він вивчає інформатику. Моя сестра вже працює - вона вчителька.</p>
-  <p>Я живу в маленькій квартирі в центрі міста. Щодня я прокидаюся о шостій, снідаю і їду на роботу метро. Увечері я відпочиваю, читаю книги або дивлюся фільми. На вихідних я люблю гуляти в парку або зустрічатися з друзями в кав'ярні.</p>
-  <p>Зараз зима, холодно, йде сніг. Але я люблю зиму! Скоро Новий рік - моє улюблене свято.</p>
-</blockquote>
-<p><strong>Comprehension questions:</strong></p>
+<h3 id="comprehensivereviewexercise">Comprehensive Review Exercise</h3>
+<p>Write a short paragraph (50+ words) about yourself including:</p>
+<ul>
+<li>Your name and where you're from</li>
+<li>Your family (at least 3 members)</li>
+<li>What you do (work/study)</li>
+<li>What you like and don't like</li>
+<li>Your typical day (at least 3 activities)</li>
+</ul>
+<h3 id="finalgrammarcheck">Final Grammar Check</h3>
+<p>Transform these sentences:</p>
 <ol>
-<li><p>Хто Олена за професією?</p></li>
+<li>Present → Past: Я читаю книгу. → ___</li>
+<li>Present → Future: Він працює. → ___</li>
+<li>Positive → Negative: У мене є брат. → ___</li>
+<li>Nominative → Accusative: Це книга. → Я читаю ___</li>
+<li>Nominative → Locative: Стіл. → Книга на ___</li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Лікарка (She's a doctor)</div></div>
-<ol start="2">
-<li><p>Скільки братів і сестер у Олени?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Один брат і одна сестра (One brother and one sister)</div></div>
-<ol start="3">
-<li><p>Коли Олена прокидається?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">О шостій (At six o'clock)</div></div>
-<ol start="4">
-<li><p>Яка зараз пора року?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">Зима (Winter)</div></div>
-<hr />
-<h3 id="grammarintegrationchallenge">Grammar Integration Challenge</h3>
-<p>Complete with correct forms:</p>
-<ol>
-<li><p>Вчора я ___ (читати - past, f) цікаву книгу.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">читала</div></div>
-<ol start="2">
-<li><p>Він живе в ___ (Київ - locative).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Києві</div></div>
-<ol start="3">
-<li><p>У мене немає ___ (час - genitive).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">часу</div></div>
-<ol start="4">
-<li><p>Завтра ми ___ (бути) вдома.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">будемо</div></div>
-<ol start="5">
-<li><p>Це ___ (мій) сестра.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">моя</div></div>
-<hr />
-<h3 id="emmaslastukrainianconversation">Emma's Last Ukrainian Conversation</h3>
-<p>Practice this dialogue - Emma's final café conversation:</p>
-<table>
-<thead>
-<tr>
-<th>Speaker</th>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Емма</td>
-<td>Привіт! Як справи?</td>
-<td>Hi! How are you?</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Добре, дякую! А в вас?</td>
-<td>Good, thanks! And you?</td>
-</tr>
-<tr>
-<td>Емма</td>
-<td>Теж добре. Це мій останній день у Києві.</td>
-<td>Also good. This is my last day in Kyiv.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>О, шкода! Сподобалося вам тут?</td>
-<td>Oh, what a pity! Did you like it here?</td>
-</tr>
-<tr>
-<td>Емма</td>
-<td>Так, дуже! Київ прекрасне місто.</td>
-<td>Yes, very much! Kyiv is a beautiful city.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Куди ви їдете далі?</td>
-<td>Where are you going next?</td>
-</tr>
-<tr>
-<td>Емма</td>
-<td>Додому, в Австралію. Але я повернуся!</td>
-<td>Home, to Australia. But I'll return!</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Чудово! Що замовите на прощання?</td>
-<td>Wonderful! What will you order as a farewell?</td>
-</tr>
-<tr>
-<td>Емма</td>
-<td>Мою улюблену каву і медівник, будь ласка.</td>
-<td>My favorite coffee and honey cake, please.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Звичайно. Щасливої дороги!</td>
-<td>Of course. Safe travels!</td>
-</tr>
-<tr>
-<td>Емма</td>
-<td>Дякую! До побачення!</td>
-<td>Thank you! Goodbye!</td>
-</tr>
-</tbody>
-</table>
 <h2 id="production">production</h2>
-<h3 id="yourfinalchallengetellyourstory">Your Final Challenge: Tell Your Story</h3>
-<p>Like Emma, write or speak about yourself covering:</p>
+<h3 id="capstonetaskselfintroductionvideoscript">Capstone Task: Self-Introduction Video Script</h3>
+<p>Prepare a 2-minute self-introduction in Ukrainian. Include:</p>
 <ol>
-<li><strong>Ім'я і вік</strong> - Your name and age</li>
-<li><strong>Звідки ви</strong> - Where you're from</li>
-<li><strong>Ваша родина</strong> - Your family</li>
-<li><strong>Де ви живете</strong> - Where you live</li>
-<li><strong>Що ви робите</strong> - What you do (work/study)</li>
-<li><strong>Ваш типовий день</strong> - Your typical day</li>
-<li><strong>Що ви любите робити</strong> - What you love to do</li>
-<li><strong>Чому ви вчите українську</strong> - Why you're learning Ukrainian</li>
-<li><strong>Ваші плани</strong> - Your plans</li>
+<li><strong>Personal info</strong>: Привіт! Мене звати… Я з…</li>
+<li><strong>Family</strong>: У мене є… Мого батька звати…</li>
+<li><strong>Description</strong>: Я (tall/short), у мене (eye color) очі…</li>
+<li><strong>Daily routine</strong>: Я прокидаюся о… потім я…</li>
+<li><strong>Likes/hobbies</strong>: Я люблю… Я вмію…</li>
+<li><strong>Future plans</strong>: Завтра я буду…</li>
+<li><strong>Weather today</strong>: Сьогодні (weather)…</li>
 </ol>
-<p>Use all three tenses! Past (what you did), present (what you do), future (what you will do).</p>
 <hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>A1 Achievement Summary</h3>
-      <div class="md-content"><h2 id="emmascompletedchecklist">Emma's Completed Checklist</h2>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Emma</th>
-<th>You</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Read and write Cyrillic</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Use 4 cases correctly</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Conjugate verbs (present)</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Use past tense with gender</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Form compound future</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Navigate a city</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Order at restaurants</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Shop and negotiate</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Describe weather</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Talk about time and routine</td>
-<td>✅</td>
-<td>☐</td>
-</tr>
-</tbody>
-</table>
-<h2 id="casesmastered">Cases Mastered</h2>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Question</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nominative</td>
-<td>Хто? Що?</td>
-<td>Студент читає.</td>
-</tr>
-<tr>
-<td>Accusative</td>
-<td>Кого? Що?</td>
-<td>Бачу студента.</td>
-</tr>
-<tr>
-<td>Locative</td>
-<td>Де?</td>
-<td>У школі.</td>
-</tr>
-<tr>
-<td>Genitive</td>
-<td>Кого? Чого?</td>
-<td>Немає часу.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="verbtensesmastered">Verb Tenses Mastered</h2>
-<table>
-<thead>
-<tr>
-<th>Tense</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Present</td>
-<td>Я читаю книгу.</td>
-</tr>
-<tr>
-<td>Past</td>
-<td>Я читав/читала книгу.</td>
-</tr>
-<tr>
-<td>Future</td>
-<td>Я буду читати книгу.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keyvocabularydomains">Key Vocabulary Domains</h2>
-<table>
-<thead>
-<tr>
-<th>Domain</th>
-<th>Word Count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Personal info</td>
-<td>30+ words</td>
-</tr>
-<tr>
-<td>Numbers &amp; time</td>
-<td>50+ words</td>
-</tr>
-<tr>
-<td>Family</td>
-<td>25+ words</td>
-</tr>
-<tr>
-<td>Food &amp; drinks</td>
-<td>40+ words</td>
-</tr>
-<tr>
-<td>City &amp; transport</td>
-<td>35+ words</td>
-</tr>
-<tr>
-<td>Clothes &amp; weather</td>
-<td>30+ words</td>
-</tr>
-<tr>
-<td>Actions &amp; routines</td>
-<td>40+ words</td>
-</tr>
-<tr>
-<td><strong>Total A1</strong></td>
-<td><strong>250+ words</strong></td>
-</tr>
-</tbody>
-</table>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Certification</h3>
-      <div class="md-content"><h2 id="a1completion">A1 Completion</h2>
-<blockquote>
-  <p>🎓 <strong>Congratulations!</strong></p>
-  <p>You have completed the <strong>A1 Ukrainian Language Course</strong>!</p>
-  <p>You demonstrated:</p>
-  <ul>
-  <li>Reading and writing Cyrillic</li>
-  <li>Understanding of 4 grammatical cases</li>
-  <li>Present, past, and future verb tenses</li>
-  <li>Practical communication skills</li>
-  <li>Cultural awareness</li>
-  </ul>
-  <p><strong>You are ready for A2!</strong></p>
-</blockquote>
 <hr />
 <hr /></div>
     </div>
@@ -1145,27 +805,38 @@ footer {
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><blockquote>
-  <p>💡 <strong>What You've Accomplished</strong></p>
-  <p>Following Emma's 30-day journey:</p>
+  <p><strong>Congratulations — A1 Complete!</strong></p>
+  <p>You've successfully completed A1 Ukrainian! You can now:</p>
   <ul>
-  <li><strong>30 modules</strong> of structured learning</li>
-  <li><strong>Cyrillic mastery</strong> - all 33 letters</li>
-  <li><strong>4 cases</strong> - Nominative, Accusative, Locative, Genitive</li>
-  <li><strong>3 tenses</strong> - Present, Past, Future</li>
-  <li><strong>Core vocabulary</strong> - 250+ words</li>
-  <li><strong>Practical skills</strong> - Ordering, shopping, directions, descriptions</li>
+  <li><strong>Read</strong> Cyrillic fluently</li>
+  <li><strong>Introduce</strong> yourself and your family</li>
+  <li><strong>Navigate</strong> cities and order food</li>
+  <li><strong>Describe</strong> people, places, and things</li>
+  <li><strong>Express</strong> past events and future plans</li>
+  <li><strong>Use</strong> 5 of 7 Ukrainian cases</li>
   </ul>
-  <p>Вітаємо! Congratulations!</p>
-  <p>🎯 <strong>Your Next Journey: A2</strong></p>
-  <p>Like Emma, you're ready to unlock:</p>
+  <p><strong>Your A1 Achievements:</strong></p>
   <ul>
-  <li>Remaining 3 cases (Dative, Instrumental, Vocative)</li>
-  <li>Verbal aspect (imperfective/perfective)</li>
-  <li>Conditional mood</li>
-  <li>More complex sentence structures</li>
-  <li>500+ new words</li>
+  <li>Cyrillic alphabet mastery</li>
+  <li>~750 vocabulary words</li>
+  <li>5 grammatical cases</li>
+  <li>Past and future tense</li>
+  <li>Modal verbs</li>
+  <li>Adjective agreement</li>
+  <li>Reflexive verbs</li>
+  <li>Impersonal constructions</li>
   </ul>
-  <p>До зустрічі на A2! See you at A2!</p>
+  <p><strong>Next Steps: A2 — Elementary</strong></p>
+  <p>In A2, you'll learn:</p>
+  <ul>
+  <li>Remaining 2 cases (Dative, Instrumental)</li>
+  <li>Verbal aspect (perfective/imperfective)</li>
+  <li>Comparative adjectives</li>
+  <li>More complex sentences</li>
+  <li>Extended vocabulary domains</li>
+  </ul>
+  <p><strong>Вітаю! Ви молодець!</strong> (Congratulations! You're great!)</p>
+  <p>Your Ukrainian journey has just begun. Keep practicing, and soon you'll be having full conversations in Ukrainian!</p>
 </blockquote></div>
     </div>
   
@@ -1175,55 +846,72 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Emma&#039;s Grammar Final</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>A1 Grammar Review</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Emma&#039;s Last Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Vocabulary Review</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div id="activity-1-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-1-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>A1 Vocabulary Final</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>A1 Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Emma&#039;s Comprehensive Review</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
-      <div id="activity-3-container"></div>
-      <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
+    <section id="activity-3" class="section"><div class="card"><h3>A1 Core Grammar</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-3-container"><svg class="match-lines" id="activity-3-lines"></svg>
+        <div class="match-column" id="activity-3-left"></div>
+        <div class="match-column" id="activity-3-right"></div>
+      </div>
+      <div class="completion-message" id="activity-3-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>Grammar Truth or Myth?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
-      <div id="activity-4-container"></div>
-      <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
+    <section id="activity-4" class="section"><div class="card"><h3>A1 Vocabulary Themes</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-4-container"><svg class="match-lines" id="activity-4-lines"></svg>
+        <div class="match-column" id="activity-4-left"></div>
+        <div class="match-column" id="activity-4-right"></div>
+      </div>
+      <div class="completion-message" id="activity-4-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>A1 Grammar Categories</h3>
+    <section id="activity-5" class="section"><div class="card"><h3>A1 Comprehensive</h3>
       <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
-      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
-      <div class="sort-groups" id="activity-5-groups"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-5-container"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-6" class="section"><div class="card"><h3>A1 Review</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-7" class="section"><div class="card"><h3>A1 Case Usage</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
+      <div class="sort-groups" id="activity-7-groups"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Словник (1)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1231,9 +919,9 @@ footer {
     
     
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">**Personal**</td><td class="vocab-en">ім&#039;я, вік, професія</td><td class="vocab-note">Мене звати Емма.</td></tr><tr><td class="vocab-uk">**Numbers**</td><td class="vocab-en">1-100, гроші</td><td class="vocab-note">Скільки коштує?</td></tr><tr><td class="vocab-uk">**Family**</td><td class="vocab-en">родина, мама, тато</td><td class="vocab-note">У мене є брат.</td></tr><tr><td class="vocab-uk">**Home**</td><td class="vocab-en">кімната, кухня</td><td class="vocab-note">Я живу в квартирі.</td></tr><tr><td class="vocab-uk">**City**</td><td class="vocab-en">метро, вулиця</td><td class="vocab-note">Де станція метро?</td></tr><tr><td class="vocab-uk">**Food**</td><td class="vocab-en">їжа, борщ, кава</td><td class="vocab-note">Мені борщ, будь ласка.</td></tr><tr><td class="vocab-uk">**Clothes**</td><td class="vocab-en">одяг, розмір, колір</td><td class="vocab-note">Чи є менший розмір?</td></tr><tr><td class="vocab-uk">**Weather**</td><td class="vocab-en">погода, холодно, дощ</td><td class="vocab-note">Сьогодні холодно.</td></tr><tr><td class="vocab-uk">**Time**</td><td class="vocab-en">дні, години</td><td class="vocab-note">О котрій годині?</td></tr><tr><td class="vocab-uk">**Actions**</td><td class="vocab-en">йти, їсти, спати</td><td class="vocab-note">Я йду додому.</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">Review all vocabulary from Modules 1-29</td><td class="vocab-en"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1245,8 +933,8 @@ footer {
   </main><footer>Module 30 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Emma's Grammar Final","data":{"type":"fill-blank","items":[{"prompt":"Я зараз ___ дуже цікаву книгу. (read - present)","answer":"читаю","options":["читаю","читаєш","читає","читають"]},{"prompt":"Вона вчора добре ___ українською мовою. (spoke - past, feminine)","answer":"говорила","options":["говорив","говорила","говорило","говорили"]},{"prompt":"Ми завтра ___ разом працювати в офісі. (will - future)","answer":"будемо","options":["буду","будеш","буде","будемо"]},{"prompt":"Я вже давно живу в ___. (Kyiv - locative)","answer":"Києві","options":["Київ","Києва","Києві","Києвом"]},{"prompt":"На жаль, у мене немає ___. (time - genitive)","answer":"часу","options":["час","часу","часі","часом"]},{"prompt":"Це дуже ___ і затишний новий дім. (big - masculine)","answer":"великий","options":["великий","велика","велике","великі"]},{"prompt":"Вона сьогодні носить гарну ___ сукню. (new - feminine accusative)","answer":"нову","options":["новий","нова","нову","нове"]},{"prompt":"Сьогодні надворі дуже ___ і вітряно. (cold - impersonal)","answer":"холодно","options":["холодний","холодна","холодне","холодно"]},{"prompt":"Я вже добре ___ говорити українською. (can)","answer":"можу","options":["можу","можеш","може","можуть"]},{"prompt":"___ мене є старший брат Андрій. (I have)","answer":"У","options":["Я","У","На","Мій"]}]}},{"id":"activity-1","type":"unjumble","title":"Emma's Last Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цікаву","читаю","Я","книгу","зараз","українську","нову"],"answer":"Я зараз читаю нову цікаву українську книгу.","translation":"I am now reading a new interesting Ukrainian book."},{"words":["Вона","вчора","довго","працювала","весь","день","в","офісі"],"answer":"Вона вчора весь день довго працювала в офісі.","translation":"She worked a long time in the office all day yesterday."},{"words":["буду","Завтра","я","вдома","весь","день","увечері"],"answer":"Завтра увечері я буду весь день вдома.","translation":"Tomorrow evening I will be at home all day."},{"words":["Києві","Я","живу","в","давно","вже","красивому"],"answer":"Я вже давно живу в красивому Києві.","translation":"I have been living in beautiful Kyiv for a long time."},{"words":["часу","немає","У","мене","на","жаль","зовсім"],"answer":"На жаль, у мене зовсім немає часу.","translation":"Unfortunately, I have no time at all."},{"words":["велика","Це","дружна","моя","родина","і","щаслива"],"answer":"Це моя велика дружна і щаслива родина.","translation":"This is my big close-knit and happy family."},{"words":["сильний","дощ","Сьогодні","йде","холодний","надворі","осінній"],"answer":"Сьогодні надворі йде сильний холодний осінній дощ.","translation":"Today a strong cold autumn rain is falling outside."},{"words":["гарячу","каву","Я","дуже","люблю","з","молоком"],"answer":"Я дуже люблю гарячу каву з молоком.","translation":"I really love hot coffee with milk."},{"words":["українською","говорити","Я","можу","вже","добре","мовою"],"answer":"Я вже можу добре говорити українською мовою.","translation":"I can already speak Ukrainian language well."},{"words":["Мене","Олена","з","звати","Києва","і","я","студентка"],"answer":"Мене звати Олена, я студентка з Києва.","translation":"My name is Olena, I'm a student from Kyiv."}]}},{"id":"activity-2","type":"match-up","title":"A1 Vocabulary Final","data":{"type":"match-up","pairs":[{"left":"привіт","right":"hello"},{"left":"дякую","right":"thank you"},{"left":"будь ласка","right":"please"},{"left":"сьогодні","right":"today"},{"left":"завтра","right":"tomorrow"},{"left":"вчора","right":"yesterday"},{"left":"добрий","right":"good"},{"left":"великий","right":"big"},{"left":"новий","right":"new"},{"left":"гарний","right":"beautiful"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Emma's Comprehensive Review","data":{"type":"quiz","questions":[{"question":"How do you form past tense for feminine subjects?","options":["stem + -в","stem + -ла","stem + -ло","stem + -ли"],"correctIndex":1,"explanation":"Feminine past: -ла (він читав, вона читала)"},{"question":"What case is used after \"в\" for location?","options":["Nominative","Accusative","Locative","Genitive"],"correctIndex":2,"explanation":"В/У + locative for \"where\""},{"question":"What case follows \"немає\"?","options":["Nominative","Accusative","Locative","Genitive"],"correctIndex":3,"explanation":"немає + genitive for absence"},{"question":"How do you form compound future tense?","options":["буду/будеш/буде + infinitive","past + буде","present + буду","infinitive only"],"correctIndex":0,"explanation":"Я буду читати"},{"question":"What endings do masculine adjectives have?","options":["-ий/-ій","-а/-я","-е/-є","-і"],"correctIndex":0,"explanation":"новий (hard), синій (soft)"},{"question":"How do you say impersonal \"it's cold\"?","options":["Він холодний","Вона холодна","Холодно","Холоди"],"correctIndex":2,"explanation":"Adverb form for weather"},{"question":"What is the locative of \"місто\"?","options":["місто","міста","місті","містом"],"correctIndex":2,"explanation":"в місті (in the city)"},{"question":"How do you express \"I have\"?","options":["У мене є","Я є","Мій є","Маю є"],"correctIndex":0,"explanation":"У + genitive + є + nominative"},{"question":"What is accusative of animate masculine \"брат\"?","options":["брат","брата","брату","братом"],"correctIndex":1,"explanation":"Animate masculine accusative = genitive"},{"question":"How do you say \"It's raining\"?","options":["Йде дощ","Дощить","Є дощ","Робить дощ"],"correctIndex":0,"explanation":"Literally \"rain goes\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Grammar Truth or Myth?","data":{"type":"true-false","statements":[{"statement":"Nominative is used for sentence subjects.","isTrue":true,"explanation":"Correct! Студент читає."},{"statement":"Locative is always used with a preposition.","isTrue":true,"explanation":"Correct! в школі, на роботі"},{"statement":"Accusative for feminine is the same as nominative.","isTrue":false,"explanation":"Incorrect. Feminine: -а → -у (книга → книгу)"},{"statement":"Past tense agrees with subject gender.","isTrue":true,"explanation":"Correct! він читав, вона читала"},{"statement":"\"Холодно\" is impersonal weather expression.","isTrue":true,"explanation":"Correct!"},{"statement":"\"Моя брат\" is correct.","isTrue":false,"explanation":"Incorrect. брат is masculine: мій брат"},{"statement":"Genitive is used after \"немає\".","isTrue":true,"explanation":"Correct! У мене немає часу."},{"statement":"Future: буду + infinitive.","isTrue":true,"explanation":"Correct! Я буду читати."},{"statement":"All adjectives end in -ий.","isTrue":false,"explanation":"Incorrect. Soft adjectives end in -ій (синій)"},{"statement":"\"У мене є\" means \"I have\".","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"group-sort","title":"A1 Grammar Categories","data":{"type":"group-sort","groups":[{"id":"cases","name":"Cases","items":["Nominative (хто? що?)","Accusative (кого? що?)","Genitive (кого? чого?)","Locative (де?)"],"nameUk":"4 A1 Cases"},{"id":"verb-tenses","name":"Verb Tenses","items":["Present (-ю, -єш, -є)","Past (-в, -ла, -ло, -ли)","Future (буду + infinitive)","Modal (можу, повинен)"]},{"id":"word-types","name":"Word Types","items":["Adjectives (-ий, -а, -е)","Possessives (мій, моя, моє)","Numbers (один, два, три)","Pronouns (я, ти, він, вона)"]}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"**Personal**","translit":"","en":"ім'я, вік, професія","note":"Мене звати Емма."},{"uk":"**Numbers**","translit":"","en":"1-100, гроші","note":"Скільки коштує?"},{"uk":"**Family**","translit":"","en":"родина, мама, тато","note":"У мене є брат."},{"uk":"**Home**","translit":"","en":"кімната, кухня","note":"Я живу в квартирі."},{"uk":"**City**","translit":"","en":"метро, вулиця","note":"Де станція метро?"},{"uk":"**Food**","translit":"","en":"їжа, борщ, кава","note":"Мені борщ, будь ласка."},{"uk":"**Clothes**","translit":"","en":"одяг, розмір, колір","note":"Чи є менший розмір?"},{"uk":"**Weather**","translit":"","en":"погода, холодно, дощ","note":"Сьогодні холодно."},{"uk":"**Time**","translit":"","en":"дні, години","note":"О котрій годині?"},{"uk":"**Actions**","translit":"","en":"йти, їсти, спати","note":"Я йду додому."}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"A1 Grammar Review","data":{"type":"fill-blank","items":[{"prompt":"Я читаю ___ (книга).","answer":"книгу","hints":["книга"],"options":["книгу","книга","книги","книзі"]},{"prompt":"Книга на ___ (стіл).","answer":"столі","hints":["стіл"],"options":["столі","стіл","столу","столом"]},{"prompt":"Немає ___ (час).","answer":"часу","hints":["час"],"options":["часу","час","часі","часом"]},{"prompt":"Вчора я ___ (читати) книгу.","answer":"читав","hints":["читати"],"options":["читав","читаю","буду читати","читати"]},{"prompt":"Завтра він ___ працювати.","answer":"буде","options":["буде","був","є","працював"]},{"prompt":"Я ___ плавати.","answer":"вмію","options":["вмію","хочу","можу","треба"]},{"prompt":"Мені ___ йти.","answer":"треба","options":["треба","можу","хочу","вмію"]},{"prompt":"Це ___ книга (new).","answer":"нова","options":["нова","новий","нове","нові"]},{"prompt":"У мене ___ брат.","answer":"є","options":["є","немає","був","буде"]},{"prompt":"___ сьогодні погода?","answer":"Яка","options":["Яка","Який","Яке","Які"]},{"prompt":"Мого батька ___ Іван.","answer":"звати","options":["звати","ім'я","називає","є"]},{"prompt":"Я живу ___ Києві.","answer":"у","options":["у","на","до","з"]}]}},{"id":"activity-1","type":"fill-blank","title":"Vocabulary Review","data":{"type":"fill-blank","items":[{"prompt":"Перший день тижня — ___.","answer":"понеділок","options":["понеділок","неділя","субота","вівторок"]},{"prompt":"Батько батька — це ___.","answer":"дідусь","options":["дідусь","дядько","брат","онук"]},{"prompt":"Скільки ___ ? (How much does it cost?)","answer":"коштує","options":["коштує","є","має","стоїть"]},{"prompt":"Сьогодні дуже ___, +35 градусів.","answer":"спекотно","options":["спекотно","холодно","морозно","прохолодно"]},{"prompt":"___ дощ. (It's raining.)","answer":"Йде","options":["Йде","Є","Дме","Падає"]},{"prompt":"Я ___ о сьомій ранку.","answer":"прокидаюся","options":["прокидаюся","засинаю","лягаю","виходжу"]},{"prompt":"Червоний, синій, зелений — це ___.","answer":"кольори","options":["кольори","одяг","погода","час"]},{"prompt":"Сорочка, штани, куртка — це ___.","answer":"одяг","options":["одяг","кольори","їжа","меблі"]},{"prompt":"Велика, мала, гарна — це ___.","answer":"прикметники","options":["прикметники","іменники","дієслова","числа"]},{"prompt":"Спочатку, потім, ___.","answer":"нарешті","options":["нарешті","завжди","ніколи","зараз"]},{"prompt":"Навесні, влітку, восени, ___.","answer":"взимку","options":["взимку","у зиму","зимою","зимі"]},{"prompt":"___, вівторок, середа, четвер...","answer":"Понеділок","options":["Понеділок","Неділя","П'ятниця","Субота"]}]}},{"id":"activity-2","type":"unjumble","title":"A1 Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["звати Мене Іван"],"answer":"Мене звати Іван.","translation":"My name is Ivan."},{"words":["з України Я"],"answer":"Я з України.","translation":"I'm from Ukraine."},{"words":["книгу читаю Я цікаву"],"answer":"Я читаю цікаву книгу.","translation":"I'm reading an interesting book."},{"words":["у Києві Мої живуть батьки"],"answer":"Мої батьки живуть у Києві.","translation":"My parents live in Kyiv."},{"words":["години о сьомій прокидаюся Я"],"answer":"Я прокидаюся о сьомій годині.","translation":"I wake up at 7 o'clock."},{"words":["буду Завтра працювати я"],"answer":"Завтра я буду працювати.","translation":"Tomorrow I will work."},{"words":["Вчора холодно було дуже"],"answer":"Вчора було дуже холодно.","translation":"Yesterday it was very cold."},{"words":["сестра У є мене"],"answer":"У мене є сестра.","translation":"I have a sister."},{"words":["говорити українською Я можу"],"answer":"Я можу говорити українською.","translation":"I can speak Ukrainian."},{"words":["працювати Мені треба"],"answer":"Мені треба працювати.","translation":"I need to work."},{"words":["носить червону Вона сукню"],"answer":"Вона носить червону сукню.","translation":"She wears a red dress."},{"words":["Рахунок ласка будь"],"answer":"Рахунок, будь ласка.","translation":"Check, please."}]}},{"id":"activity-3","type":"match-up","title":"A1 Core Grammar","data":{"type":"match-up","pairs":[{"left":"Accusative case","right":"Я читаю книгу."},{"left":"Locative case","right":"Книга на столі."},{"left":"Genitive case","right":"Немає часу."},{"left":"Past tense","right":"Вчора я працював."},{"left":"Future tense","right":"Завтра буду читати."},{"left":"Modal: ability","right":"Я можу допомогти."},{"left":"Modal: skill","right":"Я вмію плавати."},{"left":"Modal: want","right":"Я хочу їсти."},{"left":"Modal: need","right":"Мені треба йти."},{"left":"Adjective agreement","right":"Нова книга"},{"left":"Impersonal","right":"Сьогодні холодно."},{"left":"Reflexive verb","right":"Я вмиваюся."}],"shuffleRight":true}},{"id":"activity-4","type":"match-up","title":"A1 Vocabulary Themes","data":{"type":"match-up","pairs":[{"left":"Family","right":"батько, мати, брат"},{"left":"Time","right":"година, день, тиждень"},{"left":"Colors","right":"червоний, синій, зелений"},{"left":"Weather","right":"тепло, холодно, дощ"},{"left":"Food","right":"борщ, хліб, кава"},{"left":"Clothing","right":"сорочка, штани, куртка"},{"left":"Places","right":"місто, вулиця, магазин"},{"left":"Numbers","right":"один, два, три"},{"left":"Directions","right":"прямо, наліво, направо"},{"left":"Daily routine","right":"прокидатися, снідати"},{"left":"Adjectives","right":"великий, малий, гарний"},{"left":"Modals","right":"можу, хочу, треба"}],"shuffleRight":true}},{"id":"activity-5","type":"quiz","title":"A1 Comprehensive","data":{"type":"quiz","questions":[{"question":"What case is used for direct objects?","options":["Nominative","Accusative","Genitive","Locative"],"correctIndex":1,"explanation":"Direct objects take accusative."},{"question":"How do you say \"I was reading\" (male)?","options":["Я читаю","Я читав","Я буду читати","Я читати"],"correctIndex":1,"explanation":"Past tense for male: -в ending."},{"question":"\"У мене немає часу\" — what case is \"часу\"?","options":["Nominative","Accusative","Genitive","Locative"],"correctIndex":2,"explanation":"\"Немає\" requires genitive."},{"question":"Which is soft stem?","options":["великий","синій","новий","старий"],"correctIndex":1,"explanation":"Soft stem ends in -ій."},{"question":"How do you form future tense?","options":["Add -ти to verb","Add -в to verb","буду + infinitive","Change ending"],"correctIndex":2,"explanation":"Compound future: буду + infinitive."},{"question":"\"Прокидатися\" is what type of verb?","options":["Regular","Modal","Reflexive","Impersonal"],"correctIndex":2,"explanation":"-ся ending = reflexive."},{"question":"What's the difference between можу and вмію?","options":["They're the same","Можу = ability, вмію = skill","Можу is formal","Вмію is past tense"],"correctIndex":1,"explanation":"Important distinction!"},{"question":"How many cases have you learned at A1?","options":["3","4","5","7"],"correctIndex":2,"explanation":"Nom, Acc, Loc, Gen, Voc."},{"question":"\"Холодно\" is:","options":["An adjective","A noun","An impersonal expression","A verb"],"correctIndex":2,"explanation":"Weather uses impersonal constructions."},{"question":"Ukrainian week starts on:","options":["Monday","Sunday","Saturday","Depends"],"correctIndex":0,"explanation":"Понеділок is first."},{"question":"\"П'ять гривень\" — why \"гривень\"?","options":["Always гривень","Numbers 5+ require genitive plural","It's nominative","Exception"],"correctIndex":1,"explanation":"Numbers 5-20 use genitive plural."},{"question":"What's next after A1?","options":["A2 — Elementary","B1 — Intermediate","A1+ — Advanced Beginner","A0 — Pre-Beginner"],"correctIndex":0,"explanation":"A2 introduces all 7 cases and aspect!"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-6","type":"true-false","title":"A1 Review","data":{"type":"true-false","statements":[{"statement":"A1 covers 5 of 7 Ukrainian cases.","isTrue":true,"explanation":"Correct! Nom, Acc, Loc, Gen, Voc. Dative and Instrumental are A2."},{"statement":"Past tense endings are the same for all genders.","isTrue":false,"explanation":"Incorrect! -в (m), -ла (f), -ло (n), -ли (pl)."},{"statement":"\"Немає\" always takes genitive.","isTrue":true,"explanation":"Correct! Немає + genitive."},{"statement":"Ukrainian adjectives agree with nouns in gender.","isTrue":true,"explanation":"Correct! Новий (m), нова (f), нове (n)."},{"statement":"\"Можна\" requires a subject.","isTrue":false,"explanation":"Incorrect! Impersonal — no subject needed."},{"statement":"\"Синій\" is a soft stem adjective.","isTrue":true,"explanation":"Correct! Ends in -ій."},{"statement":"Ukrainian has one word for \"blue.\"","isTrue":false,"explanation":"Incorrect! Синій (dark) and блакитний (light)."},{"statement":"\"Прокидатися\" is reflexive.","isTrue":true,"explanation":"Correct! -ся ending."},{"statement":"Weather expressions are impersonal.","isTrue":true,"explanation":"Correct! \"Холодно\" — no subject."},{"statement":"All numbers use the same noun form.","isTrue":false,"explanation":"Incorrect! 1 = nom.sg, 2-4 = nom.pl, 5+ = gen.pl."},{"statement":"\"Чоловік\" can mean both \"husband\" and \"man.\"","isTrue":true,"explanation":"Correct! Context determines meaning."},{"statement":"Ukrainian weeks start on Monday.","isTrue":true,"explanation":"Correct! Понеділок is first."}]}},{"id":"activity-7","type":"group-sort","title":"A1 Case Usage","data":{"type":"group-sort","groups":[{"id":"nominative","name":"Nominative","items":["Це **книга**.","**Я** студент.","**Погода** гарна."]},{"id":"accusative","name":"Accusative","items":["Я читаю **книгу**.","Я бачу **друга**.","Я люблю **каву**."]},{"id":"locative","name":"Locative","items":["Книга на **столі**.","Я живу в **Києві**.","Він у **банку**."]},{"id":"genitive","name":"Genitive","items":["Немає **часу**.","П'ять **гривень**.","Склянка **води**."]}],"shuffleItems":true}}];
+    const vocabData = [{"uk":"Review all vocabulary from Modules 1-29","translit":"","en":"","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1298,8 +986,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1330,8 +1018,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1743,7 +1431,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1753,7 +1441,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1954,6 +1644,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

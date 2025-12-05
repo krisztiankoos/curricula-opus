@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 20: Checkpoint: Navigating Life | Ukrainian A1</title>
+  <title>Module 20: Checkpoint: Navigation | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,7 +478,7 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 20: Checkpoint: Navigating Life</h1>
+    <h1>Module 20: Checkpoint: Navigation</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
@@ -469,306 +495,212 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Checkpoint: Navigating Life</h2>
-        <p style="color:var(--text-muted)">A1.2 Review</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Checkpoint: Navigation</h2>
+        <p style="color:var(--text-muted)">Review of A1.2 — Cases, Possession, and Real-World Skills</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
       <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="atouriststaleoneweekinkyiv">A Tourist's Tale: One Week in Kyiv</h3>
-<p><strong>Ліам</strong> (26, Irish, Dublin) arrived in Kyiv exactly seven days ago. Yesterday evening, at his hostel near Контрактова площа, he wrote this in his journal:</p>
+<h3 id="congratulationsyouvereacheda12checkpoint">Congratulations — You've Reached A1.2 Checkpoint!</h3>
+<p>You've come so far! In modules 11-19, you learned three grammatical cases and how to navigate real-world situations. Let's review everything before moving on.</p>
 <blockquote>
-  <p><em>"Day 7 in Kyiv. I can't believe how much I've learned. On Monday, I couldn't order coffee. Today, I navigated the metro alone, bargained at Бессарабський ринок, and had a full conversation with my Airbnb host. The cases still confuse me sometimes - is it 'у Київі' or 'до Києва'? - but I'm starting to feel the patterns. Tomorrow I take the A1.2 checkpoint. Nervous but ready."</em></p>
-</blockquote>
-<p>This module is your checkpoint moment - just like Ліам's. Let's prove how far you've come!</p>
-<h3 id="whatotherlearnerssay">What Other Learners Say</h3>
-<p><strong>Марія, 32, Brazilian, São Paulo:</strong></p>
-<blockquote>
-  <p><em>"The cases scared me at first. In Portuguese we don't have them! But after week two, I realized they're like different 'flavors' of a word - each one tells you something about what the word is doing in the sentence."</em></p>
-</blockquote>
-<p><strong>Томас, 24, German, Berlin:</strong></p>
-<blockquote>
-  <p><em>"German has four cases, so I understood the concept. But Ukrainian endings are different. My trick? I made color-coded flashcards - blue for Accusative, green for Locative, red for Genitive."</em></p>
-</blockquote>
-<p><strong>Юлія, 29, Canadian, Toronto:</strong></p>
-<blockquote>
-  <p><em>"I'm half-Ukrainian but never learned the language. This checkpoint made me emotional - I can finally understand my бабуся when she talks about going 'до магазину' or being 'в церкві'. The cases clicked!"</em></p>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>With just three cases (Accusative, Locative, Genitive), you can handle about 70% of everyday situations. Add possessives, and you're truly navigating Ukrainian life. That's the power of A1.2!</p>
+  <p>You now know 5 of 7 Ukrainian cases! Nominative (M01), Accusative (M11-12), Locative (M13), Genitive (M16), and Vocative (M02). Only Dative and Instrumental remain — and those are for A2!</p>
 </blockquote>
 <h2 id="presentation">presentation</h2>
-<h3 id="sweekcasebycase">Ліам's Week: Case by Case</h3>
-<p>Follow Ліам through his week to review each case in context:</p>
-<p><strong>Day 1-2: Accusative (Знахідний)</strong> - What Ліам saw and wanted</p>
+<h3 id="casesummarytable">Case Summary Table</h3>
 <table>
 <thead>
 <tr>
-<th>Ліам's journal</th>
-<th>English</th>
+<th>Case</th>
+<th>Question</th>
+<th>Usage</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Я бачу собор. (bâchu sobor)</td>
-<td>I see a cathedral.</td>
+<td>Nominative</td>
+<td>Хто? Що?</td>
+<td>Subject</td>
+<td>Це <strong>книга</strong>.</td>
 </tr>
 <tr>
-<td>Я бачу студента. (bâchu studénta)</td>
-<td>I see a student.</td>
+<td>Accusative</td>
+<td>Кого? Що?</td>
+<td>Direct object</td>
+<td>Я читаю <strong>книгу</strong>.</td>
 </tr>
 <tr>
-<td>Я хочу каву. (khóchu kâvu)</td>
-<td>I want coffee.</td>
+<td>Locative</td>
+<td>Де? На чому?</td>
+<td>Location</td>
+<td>Книга <strong>на столі</strong>.</td>
 </tr>
 <tr>
-<td>Я читаю книгу. (chytáyu knýhu)</td>
-<td>I'm reading a book.</td>
+<td>Genitive</td>
+<td>Кого? Чого?</td>
+<td>Absence, quantities</td>
+<td>Немає <strong>книги</strong>.</td>
+</tr>
+<tr>
+<td>Vocative</td>
+<td>—</td>
+<td>Addressing</td>
+<td><strong>Олено</strong>!</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Case endings quick reference:</strong></p>
+<h3 id="accusativeendingsreview">Accusative Endings Review</h3>
 <table>
 <thead>
 <tr>
-<th>Type</th>
-<th>Nom. → Acc.</th>
-<th>Ліам's example</th>
+<th>Gender</th>
+<th>Nominative</th>
+<th>Accusative</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>M. inanimate</td>
-<td>no change</td>
-<td>бачу <strong>стіл</strong></td>
+<td>M inanimate</td>
+<td>стіл</td>
+<td>стіл</td>
+<td>Я бачу стіл.</td>
 </tr>
 <tr>
-<td>M. animate</td>
-<td>→ -а/-я</td>
-<td>бачу <strong>студента</strong></td>
+<td>M animate</td>
+<td>друг</td>
+<td>друга</td>
+<td>Я бачу друга.</td>
 </tr>
 <tr>
-<td>F. -а</td>
-<td>→ -у</td>
-<td>бачу <strong>книгу</strong></td>
+<td>F (-а)</td>
+<td>книга</td>
+<td>книгу</td>
+<td>Я читаю книгу.</td>
 </tr>
 <tr>
-<td>F. -я</td>
-<td>→ -ю</td>
-<td>бачу <strong>землю</strong></td>
+<td>F (-я)</td>
+<td>земля</td>
+<td>землю</td>
+<td>Я люблю землю.</td>
 </tr>
 <tr>
-<td>N.</td>
-<td>no change</td>
-<td>бачу <strong>вікно</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>Day 3-4: Locative (Місцевий)</strong> - Where Ліам was</p>
-<table>
-<thead>
-<tr>
-<th>Ліам's journal</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Я в готелі. (ya v hotéli)</td>
-<td>I'm in the hotel.</td>
-</tr>
-<tr>
-<td>Кава на столі. (kâva na stolí)</td>
-<td>The coffee is on the table.</td>
-</tr>
-<tr>
-<td>Я був у музеї. (ya buv u muzéyi)</td>
-<td>I was in the museum.</td>
-</tr>
-<tr>
-<td>Ми на станції. (my na stántsii)</td>
-<td>We're at the station.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Case endings quick reference:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Nom. → Loc.</th>
-<th>Ліам's example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>M.</td>
-<td>→ -і/-ові/-у</td>
-<td>в <strong>офісі</strong>, на <strong>ринку</strong></td>
-</tr>
-<tr>
-<td>F. -а</td>
-<td>→ -і</td>
-<td>в <strong>школі</strong></td>
-</tr>
-<tr>
-<td>F. -я</td>
-<td>→ -і</td>
-<td>на <strong>станції</strong></td>
-</tr>
-<tr>
-<td>N.</td>
-<td>→ -і</td>
-<td>на <strong>морі</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>Day 5-6: Genitive (Родовий)</strong> - What Ліам didn't have / needed</p>
-<table>
-<thead>
-<tr>
-<th>Ліам's journal</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Немає часу. (nemáye chásu)</td>
-<td>There's no time.</td>
-</tr>
-<tr>
-<td>Кава без цукру. (kâva bez tsúkru)</td>
-<td>Coffee without sugar.</td>
-</tr>
-<tr>
-<td>Для друга. (dlya drúha)</td>
-<td>For a friend.</td>
-</tr>
-<tr>
-<td>До станції. (do stántsii)</td>
-<td>To the station.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Case endings quick reference:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Nom. → Gen.</th>
-<th>Ліам's example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>M.</td>
-<td>→ -а/-я</td>
-<td>немає <strong>часу</strong></td>
-</tr>
-<tr>
-<td>F. -а</td>
-<td>→ -и</td>
-<td>немає <strong>книги</strong></td>
-</tr>
-<tr>
-<td>F. -я</td>
-<td>→ -і</td>
-<td>кінець <strong>землі</strong></td>
-</tr>
-<tr>
-<td>N.</td>
-<td>→ -а/-я</td>
-<td>немає <strong>вікна</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="day7puttingitalltogether">Day 7: Putting It All Together</h3>
-<p><strong>A conversation at a Kyiv café:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Speaker</th>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ліам</td>
-<td>Добрий день! Можна меню?</td>
-<td>Hello! May I have a menu?</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Так, прошу. Що замовите?</td>
-<td>Yes, here you go. What will you order?</td>
-</tr>
-<tr>
-<td>Ліам</td>
-<td>Мені каву без цукру, будь ласка.</td>
-<td>Coffee without sugar, please.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>З молоком?</td>
-<td>With milk?</td>
-</tr>
-<tr>
-<td>Ліам</td>
-<td>Ні, дякую. Чорну.</td>
-<td>No, thanks. Black.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Щось ще?</td>
-<td>Anything else?</td>
-</tr>
-<tr>
-<td>Ліам</td>
-<td>Чи є круасан?</td>
-<td>Do you have a croissant?</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Так, є!</td>
-<td>Yes, we do!</td>
-</tr>
-<tr>
-<td>Ліам</td>
-<td>Добре, я візьму один. Скільки коштує?</td>
-<td>Good, I'll take one. How much is it?</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Вісімдесят п'ять гривень.</td>
-<td>Eighty-five hryvnias.</td>
-</tr>
-<tr>
-<td>Ліам</td>
-<td>Ось, будь ласка.</td>
-<td>Here you go.</td>
-</tr>
-<tr>
-<td>Офіціант</td>
-<td>Дякую! Приємного апетиту!</td>
-<td>Thank you! Enjoy your meal!</td>
+<td>N</td>
+<td>вікно</td>
+<td>вікно</td>
+<td>Я бачу вікно.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: Café Etiquette</strong></p>
-  <p>Ліам learned quickly: In Ukrainian cafés, you don't rush. Ukrainians love to sit and talk over coffee. Nobody will hurry you to leave. "Рахунок, будь ласка" (the bill, please) when you're ready - they won't bring it automatically.</p>
+  <p>⚡ <strong>Pro Tip</strong></p>
+  <p>Remember: Masculine animate accusative = genitive (друг → друга). This helps you learn genitive forms too!</p>
 </blockquote>
-<hr />
-<h3 id="possessivessthings">Possessives: Ліам's Things</h3>
-<p>When Ліам lost his phone, he had to describe whose things were whose at the police station:</p>
+<h3 id="locativeendingsreview">Locative Endings Review</h3>
 <table>
 <thead>
 <tr>
-<th>Person</th>
+<th>Gender</th>
+<th>Nominative</th>
+<th>Locative</th>
+<th>Preposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>банк</td>
+<td>у банку</td>
+<td>в/у</td>
+</tr>
+<tr>
+<td>M</td>
+<td>стіл</td>
+<td>на столі</td>
+<td>на</td>
+</tr>
+<tr>
+<td>F</td>
+<td>книга</td>
+<td>у книзі</td>
+<td>в/у</td>
+</tr>
+<tr>
+<td>F</td>
+<td>вулиця</td>
+<td>на вулиці</td>
+<td>на</td>
+</tr>
+<tr>
+<td>N</td>
+<td>місто</td>
+<td>у місті</td>
+<td>в/у</td>
+</tr>
+<tr>
+<td>N</td>
+<td>море</td>
+<td>на морі</td>
+<td>на</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🔍 <strong>Myth Buster</strong></p>
+  <p><strong>Myth:</strong> "в" and "у" are different prepositions.<br />
+  <strong>Fact:</strong> They're the same! Use "у" after consonants for easier pronunciation, "в" after vowels: "Я у банку" but "Вона в банку."</p>
+</blockquote>
+<h3 id="genitiveendingsreview">Genitive Endings Review</h3>
+<table>
+<thead>
+<tr>
+<th>Gender</th>
+<th>Nominative</th>
+<th>Genitive</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>час</td>
+<td>часу</td>
+<td>немає часу</td>
+</tr>
+<tr>
+<td>M</td>
+<td>друг</td>
+<td>друга</td>
+<td>немає друга</td>
+</tr>
+<tr>
+<td>F (-а)</td>
+<td>вода</td>
+<td>води</td>
+<td>немає води</td>
+</tr>
+<tr>
+<td>F (-я)</td>
+<td>ідея</td>
+<td>ідеї</td>
+<td>немає ідеї</td>
+</tr>
+<tr>
+<td>N</td>
+<td>вікно</td>
+<td>вікна</td>
+<td>немає вікна</td>
+</tr>
+</tbody>
+</table>
+<h3 id="possessivepronounsreview">Possessive Pronouns Review</h3>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
 <th>M</th>
 <th>F</th>
 <th>N</th>
@@ -777,346 +709,141 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>я</td>
-<td>мій телефон</td>
-<td>моя сумка</td>
-<td>моє фото</td>
-<td>мої речі</td>
+<td>my</td>
+<td>мій</td>
+<td>моя</td>
+<td>моє</td>
+<td>мої</td>
 </tr>
 <tr>
-<td>ти</td>
-<td>твій телефон</td>
-<td>твоя сумка</td>
-<td>твоє фото</td>
-<td>твої речі</td>
+<td>your (sg)</td>
+<td>твій</td>
+<td>твоя</td>
+<td>твоє</td>
+<td>твої</td>
 </tr>
 <tr>
-<td>він/воно</td>
-<td>його телефон</td>
-<td>його сумка</td>
-<td>його фото</td>
-<td>його речі</td>
+<td>his</td>
+<td>його</td>
+<td>його</td>
+<td>його</td>
+<td>його</td>
 </tr>
 <tr>
-<td>вона</td>
-<td>її телефон</td>
-<td>її сумка</td>
-<td>її фото</td>
-<td>її речі</td>
+<td>her</td>
+<td>її</td>
+<td>її</td>
+<td>її</td>
+<td>її</td>
 </tr>
 <tr>
-<td>ми</td>
-<td>наш телефон</td>
-<td>наша сумка</td>
-<td>наше фото</td>
-<td>наші речі</td>
+<td>our</td>
+<td>наш</td>
+<td>наша</td>
+<td>наше</td>
+<td>наші</td>
 </tr>
 <tr>
-<td>ви</td>
-<td>ваш телефон</td>
-<td>ваша сумка</td>
-<td>ваше фото</td>
-<td>ваші речі</td>
+<td>your (pl)</td>
+<td>ваш</td>
+<td>ваша</td>
+<td>ваше</td>
+<td>ваші</td>
 </tr>
 <tr>
-<td>вони</td>
-<td>їхній телефон</td>
-<td>їхня сумка</td>
-<td>їхнє фото</td>
-<td>їхні речі</td>
+<td>their</td>
+<td>їхній</td>
+<td>їхня</td>
+<td>їхнє</td>
+<td>їхні</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Remember:</strong> <em>його</em> and <em>її</em> NEVER change! Ліам kept making this mistake until Day 5.</p>
-<hr />
-<h3 id="keyprepositionsmastered">Key Prepositions Ліам Mastered</h3>
-<table>
-<thead>
-<tr>
-<th>Preposition</th>
-<th>Case</th>
-<th>Meaning</th>
-<th>Ліам's example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>в/у</td>
-<td>Loc.</td>
-<td>in</td>
-<td>Я <strong>в</strong> готелі.</td>
-</tr>
-<tr>
-<td>на</td>
-<td>Loc.</td>
-<td>on/at</td>
-<td>Кава <strong>на</strong> столі.</td>
-</tr>
-<tr>
-<td>до</td>
-<td>Gen.</td>
-<td>to</td>
-<td>Йду <strong>до</strong> станції.</td>
-</tr>
-<tr>
-<td>без</td>
-<td>Gen.</td>
-<td>without</td>
-<td>Кава <strong>без</strong> цукру.</td>
-</tr>
-<tr>
-<td>для</td>
-<td>Gen.</td>
-<td>for</td>
-<td>Подарунок <strong>для</strong> друга.</td>
-</tr>
-<tr>
-<td>біля</td>
-<td>Gen.</td>
-<td>near</td>
-<td>Кафе <strong>біля</strong> метро.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="directioncommandsuseddaily">Direction Commands Ліам Used Daily</h3>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Meaning</th>
-<th>When Ліам used it</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Йдіть прямо!</td>
-<td>Go straight!</td>
-<td>Finding his hostel</td>
-</tr>
-<tr>
-<td>Поверніть праворуч!</td>
-<td>Turn right!</td>
-<td>To the Maidan</td>
-</tr>
-<tr>
-<td>Поверніть ліворуч!</td>
-<td>Turn left!</td>
-<td>To the market</td>
-</tr>
-<tr>
-<td>Перейдіть вулицю!</td>
-<td>Cross the street!</td>
-<td>At Khreshchatyk</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="testimoniesotherlearnersata12checkpoint">Testimonies: Other Learners at A1.2 Checkpoint</h3>
 <blockquote>
-  <p><em>"I kept mixing up 'у Києві' (in Kyiv - where you ARE) and 'до Києва' (to Kyiv - where you're GOING). Drawing arrows on flashcards helped. Location = Locative. Direction = Genitive with до."</em> — <strong>Марія</strong> (29, Spanish, Barcelona)</p>
-  <p><em>"The accusative animate rule confused me until I thought of it this way: you 'catch' people differently than things. Я бачу стіл (the table just sits there), but Я бачу студента (the student could run away!). Silly, but it worked."</em> — <strong>Такеші</strong> (32, Japanese, Tokyo)</p>
-  <p><em>"Shopping was my breakthrough. When I asked 'Чи є більший розмір?' and the seller understood me perfectly - that was the moment I felt like a real speaker."</em> — <strong>Сара</strong> (28, American, Chicago)</p>
+  <p>🎬 <strong>Pop Culture Moment: Harry Potter</strong></p>
+  <p>"Це моя паличка" (This is my wand). Harry would need different possessives: "Це твоя паличка, Роне" (This is your wand, Ron) — and notice the vocative "Роне"!</p>
 </blockquote>
+<h3 id="numberswithcasesreview">Numbers with Cases Review</h3>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Noun Form</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nom. singular</td>
+<td>одна гривня</td>
+</tr>
+<tr>
+<td>2, 3, 4</td>
+<td>Nom. plural</td>
+<td>дві гривні</td>
+</tr>
+<tr>
+<td>5-20</td>
+<td>Gen. plural</td>
+<td>п'ять гривень</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Nom. singular</td>
+<td>двадцять одна гривня</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Gen. plural</td>
+<td>двадцять п'ять гривень</td>
+</tr>
+</tbody>
+</table>
+<h3 id="integratedskillschecklist">Integrated Skills Checklist</h3>
+<p>By the end of A1.2, you should be able to:</p>
+<ul>
+<li>[ ] Talk about what you have and don't have (У мене є…/немає…)</li>
+<li>[ ] Describe where things are (на столі, у кімнаті)</li>
+<li>[ ] Navigate a city (Де метро? Прямо, потім наліво.)</li>
+<li>[ ] Order food and drinks at a café</li>
+<li>[ ] Handle money and prices</li>
+<li>[ ] Use possessives correctly</li>
+</ul>
 <h2 id="practice">practice</h2>
-<h3 id="sdailychallenges">Ліам's Daily Challenges</h3>
-<p><strong>Challenge 1: Case Selection</strong></p>
-<p>Help Ліам fill in the correct forms:</p>
+<h3 id="mixedexercisechoosetherightcase">Mixed Exercise: Choose the Right Case</h3>
 <ol>
-<li><p>Я бачу ___ (студент).</p></li>
+<li><p>Я бачу ___ (книга).</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">студента (Acc. animate)</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">книгу (Accusative)</div></div>
 <ol start="2">
 <li><p>Книга на ___ (стіл).</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">столі (Loc.)</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">столі (Locative)</div></div>
 <ol start="3">
-<li><p>Немає ___ (час).</p></li>
+<li><p>У мене немає ___ (час).</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">часу (Gen.)</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">часу (Genitive)</div></div>
 <ol start="4">
-<li><p>Я живу в ___ (Київ).</p></li>
+<li><p>Це ___ (мій) телефон.</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">Києві (Loc.)</div></div>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">мій (Nominative)</div></div>
 <ol start="5">
-<li><p>Кава без ___ (цукор).</p></li>
+<li><p>П'ять ___ (гривня).</p></li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">цукру (Gen.)</div></div>
-<hr />
-<p><strong>Challenge 2: Reconstruct Ліам's Café Dialogue</strong></p>
-<p>Put in order:</p>
-<ul>
-<li>Добрий день! Можна меню?</li>
-<li>Так, прошу. Що замовите?</li>
-<li>Мені каву з молоком, будь ласка.</li>
-<li>Щось ще?</li>
-<li>Ні, дякую. Скільки коштує?</li>
-<li>Сорок п'ять гривень.</li>
-<li>Ось, прошу. Дякую!</li>
-</ul>
-<hr />
-<p><strong>Challenge 3: Give Ліам Directions</strong></p>
-<p>Guide him:</p>
-<ul>
-<li>From metro to pharmacy: Йдіть прямо, потім поверніть праворуч. Аптека біля банку.</li>
-<li>From his location to café: Йдіть два квартали, кав'ярня навпроти станції.</li>
-</ul>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">гривень (Genitive plural)</div></div>
 <h2 id="production">production</h2>
-<h3 id="youra12finalscenario">Your A1.2 Final Scenario</h3>
-<p>You're Ліам's friend who just arrived in Kyiv. Practice:</p>
+<h3 id="selfassessment">Self-Assessment</h3>
+<p>Rate yourself on these skills (1-5):</p>
 <ol>
-<li>Ask where the metro is</li>
-<li>Get directions</li>
-<li>At a café, order coffee and food</li>
-<li>Pay and leave</li>
-<li>Go shopping, ask about a product</li>
-<li>Buy something</li>
+<li>I can order food at a café: ___</li>
+<li>I can ask for and understand prices: ___</li>
+<li>I can say what I have and don't have: ___</li>
+<li>I can describe where things are: ___</li>
+<li>I can give and understand directions: ___</li>
 </ol>
-<p>Use everything you've learned: cases, possessives, prepositions, directions!</p>
+<p>What do you need to practice more?</p>
 <hr />
-<hr />
-<hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>A1.2 Vocabulary Review</h3>
-      <div class="md-content"><h2 id="keywordsfroma12sjourney">Key Words from A1.2: Ліам's Journey</h2>
-<table>
-<thead>
-<tr>
-<th>Module</th>
-<th>Topic</th>
-<th>Key Vocabulary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>11-12</td>
-<td>Accusative</td>
-<td>бачити, читати, любити, хотіти</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Locative</td>
-<td>в, на, де, тут, там, готель</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Possessives</td>
-<td>мій, твій, його, її, наш, ваш</td>
-</tr>
-<tr>
-<td>15</td>
-<td>City</td>
-<td>метро, вулиця, праворуч, ліворуч</td>
-</tr>
-<tr>
-<td>16</td>
-<td>Genitive</td>
-<td>немає, без, для, до, біля</td>
-</tr>
-<tr>
-<td>17</td>
-<td>Food</td>
-<td>сніданок, обід, вечеря, борщ</td>
-</tr>
-<tr>
-<td>18</td>
-<td>Café</td>
-<td>меню, замовити, рахунок, офіціант</td>
-</tr>
-<tr>
-<td>19</td>
-<td>Shopping</td>
-<td>розмір, колір, ціна, знижка</td>
-</tr>
-</tbody>
-</table>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Progress Check</h3>
-      <div class="md-content"><h2 id="a12competenciesachieved">A1.2 Competencies Achieved</h2>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Ліам's Status</th>
-<th>Your Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Accusative case (things)</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Accusative case (people)</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Locative case</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Genitive case</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Possessive pronouns</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>City navigation</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Food vocabulary</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Café ordering</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-<tr>
-<td>Shopping</td>
-<td>✅ Mastered</td>
-<td>☐ Check</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>🎯 <strong>Self-Assessment</strong></p>
-  <p>Can you…</p>
-  <ul>
-  <li>[ ] Form accusative for animate and inanimate nouns?</li>
-  <li>[ ] Say where you are using locative?</li>
-  <li>[ ] Express possession and absence with genitive?</li>
-  <li>[ ] Use possessive pronouns correctly?</li>
-  <li>[ ] Ask for and understand directions?</li>
-  <li>[ ] Order at a café?</li>
-  <li>[ ] Shop and ask about prices, sizes, colors?</li>
-  </ul>
-</blockquote>
-<h2 id="readyfora13">Ready for A1.3!</h2>
-<p>Ліам passed his checkpoint. Now he's ready for:</p>
-<ul>
-<li><strong>Past tense</strong> - Talking about yesterday</li>
-<li><strong>Future tense</strong> - Making plans</li>
-<li><strong>Time expressions</strong> - Days, months, hours</li>
-<li><strong>Daily routines</strong> - Describing his day</li>
-</ul>
-<p>You're ready too!</p>
 <hr />
 <hr /></div>
     </div>
@@ -1125,21 +852,26 @@ footer {
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><blockquote>
-  <p>💡 <strong>What You Reviewed Today</strong></p>
-  <p>Following Ліam's week in Kyiv:</p>
+  <p><strong>A1.2 Complete!</strong></p>
+  <p>You've mastered:</p>
   <ul>
-  <li><strong>Three cases:</strong> Accusative, Locative, Genitive</li>
-  <li><strong>Possessives:</strong> мій/моя/моє, твій/твоя/твоє, etc.</li>
-  <li><strong>Prepositions:</strong> в/на (Loc.), без/для/до (Gen.)</li>
-  <li><strong>Practical skills:</strong> Directions, café, shopping</li>
-  <li><strong>Vocabulary:</strong> City, food, shopping essentials</li>
+  <li><strong>Accusative case</strong> for direct objects and animate beings</li>
+  <li><strong>Locative case</strong> for location with в/у and на</li>
+  <li><strong>Genitive case</strong> for absence (немає) and quantities</li>
+  <li><strong>Possessive pronouns</strong> (мій, твій, його, її, наш, ваш, їхній)</li>
+  <li><strong>Numbers 0-100</strong> with correct noun forms</li>
+  <li><strong>Real-world skills</strong>: ordering food, asking prices, navigating</li>
   </ul>
-  <p>🎯 <strong>Coming Next: A1.3 Time & Action</strong></p>
-  <p>In Module 21, you'll learn the <strong>past tense</strong>:</p>
+  <p><strong>Coming Next: A1.3 — Time & Self</strong></p>
+  <p>In Modules 21-30, you'll learn:</p>
   <ul>
-  <li>Я читав/читала книгу. (I read a book.)</li>
-  <li>Він був у школі. (He was at school.)</li>
-  <li>Ми бачили фільм. (We saw a movie.)</li>
+  <li>Past tense (what happened yesterday)</li>
+  <li>Future tense (what will happen tomorrow)</li>
+  <li>Time expressions and calendar</li>
+  <li>Modal verbs (can, must, want)</li>
+  <li>Daily routine with reflexive verbs</li>
+  <li>Adjectives, colors, clothing</li>
+  <li>Weather and family</li>
   </ul>
 </blockquote></div>
     </div>
@@ -1150,22 +882,22 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Ліам&#039;s Case Challenge</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Case Practice</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Ліам&#039;s Complex Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
+    <section id="activity-1" class="section"><div class="card"><h3>A1.2 Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
       <div id="activity-1-container" class="order-container"></div>
       <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Grammar Detective</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Case Functions</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
       <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
         <div class="match-column" id="activity-2-left"></div>
         <div class="match-column" id="activity-2-right"></div>
@@ -1174,22 +906,22 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Ліам&#039;s Case Test</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>A1.2 Comprehensive</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>Grammar Master Challenge</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>A1.2 Review</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Preposition Master</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Cases</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/16</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
@@ -1198,17 +930,17 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (16)</h3>
+        <h3>Словник (1)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    <th>IPA</th>
+    
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">відмінок</td><td class="vocab-ipa">/vidˈminɔk/</td><td class="vocab-en">case (grammar)</td><td class="vocab-note">Gen: відмінка</td></tr><tr><td class="vocab-uk">знахідний</td><td class="vocab-ipa">/znɑˈxʲidnɪj/</td><td class="vocab-en">accusative</td><td class="vocab-note">Case for direct objects</td></tr><tr><td class="vocab-uk">місцевий</td><td class="vocab-ipa">/mʲisˈt͡sɛvɪj/</td><td class="vocab-en">locative</td><td class="vocab-note">Case for locations</td></tr><tr><td class="vocab-uk">родовий</td><td class="vocab-ipa">/rɔdɔˈvɪj/</td><td class="vocab-en">genitive</td><td class="vocab-note">Case for possession/absence</td></tr><tr><td class="vocab-uk">присвійний</td><td class="vocab-ipa">/prɪsˈvijnɪj/</td><td class="vocab-en">possessive</td><td class="vocab-note">Pronouns: мій, твій</td></tr><tr><td class="vocab-uk">прийменник</td><td class="vocab-ipa">/prɪjˈmɛnɪk/</td><td class="vocab-en">preposition</td><td class="vocab-note">в, на, до, без</td></tr><tr><td class="vocab-uk">напрямок</td><td class="vocab-ipa">/nɑˈprʲamɔk/</td><td class="vocab-en">direction</td><td class="vocab-note">Gen: напрямку</td></tr><tr><td class="vocab-uk">замовляти</td><td class="vocab-ipa">/zɑmɔvˈlʲatɪ/</td><td class="vocab-en">to order</td><td class="vocab-note">Я замовляю каву</td></tr><tr><td class="vocab-uk">рахунок</td><td class="vocab-ipa">/rɑˈxunɔk/</td><td class="vocab-en">bill, check</td><td class="vocab-note">Рахунок, будь ласка</td></tr><tr><td class="vocab-uk">знижка</td><td class="vocab-ipa">/ˈznɪʒkɑ/</td><td class="vocab-en">discount</td><td class="vocab-note">Чи є знижка?</td></tr><tr><td class="vocab-uk">праворуч</td><td class="vocab-ipa">/prɑˈvɔrut͡ʃ/</td><td class="vocab-en">on the right</td><td class="vocab-note">Поверніть праворуч</td></tr><tr><td class="vocab-uk">ліворуч</td><td class="vocab-ipa">/lʲiˈvɔrut͡ʃ/</td><td class="vocab-en">on the left</td><td class="vocab-note">Аптека ліворуч</td></tr><tr><td class="vocab-uk">прямо</td><td class="vocab-ipa">/ˈprʲamɔ/</td><td class="vocab-en">straight ahead</td><td class="vocab-note">Ідіть прямо</td></tr><tr><td class="vocab-uk">меню</td><td class="vocab-ipa">/mɛˈnʲu/</td><td class="vocab-en">menu</td><td class="vocab-note">Можна меню?</td></tr><tr><td class="vocab-uk">офіціант</td><td class="vocab-ipa">/ɔfʲit͡sʲiˈɑnt/</td><td class="vocab-en">waiter</td><td class="vocab-note">Офіціант, будь ласка!</td></tr><tr><td class="vocab-uk">розмір</td><td class="vocab-ipa">/ˈrɔzmʲir/</td><td class="vocab-en">size</td><td class="vocab-note">Який ваш розмір?</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">Review vocabulary from modules 11-19</td><td class="vocab-en"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1220,8 +952,8 @@ footer {
   </main><footer>Module 20 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Ліам's Case Challenge","data":{"type":"fill-blank","items":[{"prompt":"Я хочу надіслати ___ (посилка) ___ (мама).","answer":"посилку / мамі","hints":["посилка"],"options":["посилка / мама","посилку / мамі","посилці / маму","посилкою / мамою"]},{"prompt":"Ми живемо біля ___ (парк) і часто гуляємо там з ___ (собака).","answer":"парку / собакою","hints":["парк"],"options":["парку / собакою","парк / собака","парком / собаки","парку / собаці"]},{"prompt":"Дайте мені, будь ласка, ___ (чашка) гарячої ___ (кава).","answer":"чашку / кави","hints":["чашка"],"options":["чашка / кава","чашку / кави","чашці / каву","чашкою / кавою"]},{"prompt":"Вона працює ___ (лікар) у великій ___ (лікарня).","answer":"лікарем / лікарні","hints":["лікар"],"options":["лікар / лікарня","лікаря / лікарню","лікарем / лікарні","лікарі / лікарнею"]},{"prompt":"У мене немає ___ (час) говорити про ___ (робота).","answer":"часу / роботу","hints":["час"],"options":["час / робота","часу / роботу","часом / роботі","часі / роботою"]},{"prompt":"Ми їдемо до ___ (Львів) ___ (поїзд).","answer":"Львова / поїздом","hints":["Львів"],"options":["Львів / поїзд","Львова / поїздом","Львові / поїзда","Львовом / поїзді"]},{"prompt":"Скажи ___ (брат), що я чекаю його біля ___ (метро).","answer":"братові / метро","hints":["брат"],"options":["брат / метро","брата / метром","братові / метро","братом / метрі"]},{"prompt":"Я пишу ___ (лист) своєю улюбленою ___ (ручка).","answer":"листа / ручкою","hints":["лист"],"options":["лист / ручка","листа / ручкою","листом / ручки","листі / ручці"]},{"prompt":"Вона не любить ___ (м'ясо), вона їсть тільки ___ (овочі).","answer":"м'яса / овочі","hints":["м'ясо"],"options":["м'ясо / овочів","м'яса / овочі","м'ясом / овочами","м'ясу / овочах"]},{"prompt":"___ (Андрій), дай мені ___ (твоя ручка)!","answer":"Андрію / твою ручку","hints":["Андрій"],"options":["Андрій / твоя ручка","Андрію / твою ручку","Андрія / твоєю ручкою","Андрієм / твоїй ручці"]}]}},{"id":"activity-1","type":"unjumble","title":"Ліам's Complex Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["подарунок","Я","купив","гарний","для","сестри","моєї"],"answer":"Я купив гарний подарунок для моєї сестри.","translation":"I bought a nice gift for my sister."},{"words":["з","Ми","друзями","піцу","їмо","кафе","у","смачну"],"answer":"Ми їмо смачну піцу з друзями у кафе.","translation":"We are eating tasty pizza with friends at a cafe."},{"words":["автобусом","їде","Вона","на","роботу","щоранку","до","офісу"],"answer":"Вона їде автобусом на роботу до офісу щоранку.","translation":"She goes to the office by bus every morning."},{"words":["не","цукру","Я","п'ю","і","каву","без","молока","ніколи"],"answer":"Я ніколи не п'ю каву без цукру і молока.","translation":"I never drink coffee without sugar and milk."},{"words":["столом","Кіт","сидить","під","і","дивиться","на","мене"],"answer":"Кіт сидить під столом і дивиться на мене.","translation":"The cat sits under the table and looks at me."},{"words":["листівку","Хочу","надіслати","цю","бабусі","в","Україну"],"answer":"Хочу надіслати цю листівку бабусі в Україну.","translation":"I want to send this postcard to grandma in Ukraine."},{"words":["вчителем","Мій","працює","батько","у","школі","старій"],"answer":"Мій батько працює вчителем у старій школі.","translation":"My father works as a teacher in an old school."},{"words":["грошей","немає","У","мене","на","дорогий","такий","телефон"],"answer":"У мене немає грошей на такий дорогий телефон.","translation":"I don't have money for such an expensive phone."},{"words":["тобою","Я","хочу","поговорити","про","плани","з","наші"],"answer":"Я хочу поговорити з тобою про наші плани.","translation":"I want to talk with you about our plans."},{"words":["магазину","Йдіть","до","прямо","потім","ліворуч","поверніть"],"answer":"Йдіть прямо до магазину, потім поверніть ліворуч.","translation":"Go straight to the store, then turn left."}]}},{"id":"activity-2","type":"match-up","title":"Grammar Detective","data":{"type":"match-up","pairs":[{"left":"Nominative (Subject)","right":"Я"},{"left":"Verb","right":"даю"},{"left":"Accusative (Direct Object)","right":"книгу"},{"left":"Dative (Indirect Object)","right":"братові"},{"left":"Genitive (Possession)","right":"(книга) студента"},{"left":"Instrumental (Means)","right":"(писати) ручкою"},{"left":"Locative (Location)","right":"(у) кімнаті"},{"left":"Vocative (Address)","right":"Мамо!"},{"left":"Preposition + Genitive","right":"до школи"},{"left":"Preposition + Accusative","right":"в парк"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Ліам's Case Test","data":{"type":"quiz","questions":[{"question":"Я бачу **ТЕБЕ**.","options":["Accusative","Genitive","Dative"],"correctIndex":0,"explanation":""},{"question":"Ми йдемо з **ДРУГОМ**.","options":["Locative","Instrumental","Nominative"],"correctIndex":1,"explanation":""},{"question":"Книга лежить на **СТОЛІ**.","options":["Dative","Locative","Accusative"],"correctIndex":1,"explanation":""},{"question":"У мене немає **ЧАСУ**.","options":["Genitive","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"Скажи **ЙОМУ** правду.","options":["Genitive","Nominative","Dative"],"correctIndex":2,"explanation":""},{"question":"**СТУДЕНТ** читає.","options":["Nominative","Vocative","Accusative"],"correctIndex":0,"explanation":""},{"question":"Я хочу стати **ЛІКАРЕМ**.","options":["Dative","Instrumental","Locative"],"correctIndex":1,"explanation":""},{"question":"Я йду в **ПАРК**.","options":["Locative","Accusative","Genitive"],"correctIndex":1,"explanation":""},{"question":"Він живе в **УКРАЇНІ**.","options":["Accusative","Locative","Genitive"],"correctIndex":1,"explanation":""},{"question":"**ДІТИ** грають у парку.","options":["Nominative","Accusative","Dative"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Grammar Master Challenge","data":{"type":"true-false","statements":[{"statement":"\"До\" (to) always takes the Genitive case.","isTrue":true,"explanation":"Correct! До + Genitive is always required."},{"statement":"\"З\" always takes the Instrumental case.","isTrue":false,"explanation":"Incorrect! \"З\" can mean \"with\" (Instrumental) or \"from\" (Genitive)."},{"statement":"Animate masculine nouns in Accusative look like Genitive nouns.","isTrue":true,"explanation":"Correct! Я бачу студента (not студент)."},{"statement":"Neuter nouns change their ending in Accusative.","isTrue":false,"explanation":"Incorrect! Neuter nouns keep the same form: вікно → вікно."},{"statement":"\"На\" can take Locative (location) or Accusative (motion).","isTrue":true,"explanation":"Correct! На столі (on the table) vs на стіл (onto the table)."},{"statement":"You must use Dative with the verb \"допомагати\" (to help).","isTrue":true,"explanation":"Correct! Я допомагаю братові (not брата)."},{"statement":"All feminine nouns end in -а or -я.","isTrue":false,"explanation":"Incorrect! Some end in soft sign: ніч, сіль, любов."},{"statement":"The preposition \"без\" (without) requires Genitive case.","isTrue":true,"explanation":"Correct! Без води, без грошей."},{"statement":"Ukrainian has 7 grammatical cases.","isTrue":true,"explanation":"Correct! Nominative, Accusative, Genitive, Dative, Instrumental, Locative, Vocative."},{"statement":"Locative case is used for motion toward a place.","isTrue":false,"explanation":"Incorrect! Locative is for static location. Accusative is for motion."}]}},{"id":"activity-5","type":"group-sort","title":"Preposition Master","data":{"type":"group-sort","groups":[{"id":"genitive","name":"Genitive","items":["до (to)","від (from)","без (without)","для (for)","біля (near)"]},{"id":"instrumental","name":"Instrumental","items":["з (with)","над (above)","перед (in front of)","між (between)"]},{"id":"locative","name":"Locative","items":["на (on - location)","у/в (in - location)","по (along/around)"]}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"відмінок","translit":"","en":"case (grammar)","note":"Gen: відмінка"},{"uk":"знахідний","translit":"","en":"accusative","note":"Case for direct objects"},{"uk":"місцевий","translit":"","en":"locative","note":"Case for locations"},{"uk":"родовий","translit":"","en":"genitive","note":"Case for possession/absence"},{"uk":"присвійний","translit":"","en":"possessive","note":"Pronouns: мій, твій"},{"uk":"прийменник","translit":"","en":"preposition","note":"в, на, до, без"},{"uk":"напрямок","translit":"","en":"direction","note":"Gen: напрямку"},{"uk":"замовляти","translit":"","en":"to order","note":"Я замовляю каву"},{"uk":"рахунок","translit":"","en":"bill, check","note":"Рахунок, будь ласка"},{"uk":"знижка","translit":"","en":"discount","note":"Чи є знижка?"},{"uk":"праворуч","translit":"","en":"on the right","note":"Поверніть праворуч"},{"uk":"ліворуч","translit":"","en":"on the left","note":"Аптека ліворуч"},{"uk":"прямо","translit":"","en":"straight ahead","note":"Ідіть прямо"},{"uk":"меню","translit":"","en":"menu","note":"Можна меню?"},{"uk":"офіціант","translit":"","en":"waiter","note":"Офіціант, будь ласка!"},{"uk":"розмір","translit":"","en":"size","note":"Який ваш розмір?"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Case Practice","data":{"type":"fill-blank","items":[{"prompt":"Я читаю ___ (книга).","answer":"книгу","hints":["книга"],"options":["книгу","книга","книги","книзі"]},{"prompt":"Книга на ___ (стіл).","answer":"столі","hints":["стіл"],"options":["столі","стіл","столу","столом"]},{"prompt":"Немає ___ (вода).","answer":"води","hints":["вода"],"options":["води","вода","воду","водою"]},{"prompt":"Я бачу ___ (друг).","answer":"друга","hints":["друг"],"options":["друга","друг","другу","другові"]},{"prompt":"Вона в ___ (магазин).","answer":"магазині","hints":["магазин"],"options":["магазині","магазин","магазину","магазином"]},{"prompt":"Це ___ (мій) машина.","answer":"моя","hints":["мій"],"options":["моя","мій","моє","мої"]},{"prompt":"У мене немає ___ (гроші).","answer":"грошей","hints":["гроші"],"options":["грошей","гроші","грошима","грошам"]},{"prompt":"Двадцять ___ (гривня).","answer":"гривень","hints":["гривня"],"options":["гривень","гривня","гривні","гривню"]},{"prompt":"Книга у ___ (сумка).","answer":"сумці","hints":["сумка"],"options":["сумці","сумка","сумку","сумкою"]},{"prompt":"Можна ___ (меню)?","answer":"меню","hints":["меню"],"options":["меню","меню","меню","меню"]},{"prompt":"Ми живемо в ___ (місто).","answer":"місті","hints":["місто"],"options":["місті","місто","міста","містом"]},{"prompt":"Три ___ (книга).","answer":"книги","hints":["книга"],"options":["книги","книга","книгу","книг"]}]}},{"id":"activity-1","type":"unjumble","title":"A1.2 Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу читаю Я"],"answer":"Я читаю книгу.","translation":"I'm reading a book."},{"words":["столі на Книга"],"answer":"Книга на столі.","translation":"The book is on the table."},{"words":["часу немає мене У"],"answer":"У мене немає часу.","translation":"I don't have time."},{"words":["є брат У мене"],"answer":"У мене є брат.","translation":"I have a brother."},{"words":["телефон Це мій"],"answer":"Це мій телефон.","translation":"This is my phone."},{"words":["друга бачу Я"],"answer":"Я бачу друга.","translation":"I see a friend."},{"words":["гривень П'ятдесят коштує Це"],"answer":"Це коштує п'ятдесят гривень.","translation":"This costs 50 hryvnias."},{"words":["Києві живу Я в"],"answer":"Я живу в Києві.","translation":"I live in Kyiv."},{"words":["візьму Я борщ"],"answer":"Я візьму борщ.","translation":"I'll take borsch."},{"words":["молоком Кава без з цукру"],"answer":"Кава з молоком, без цукру.","translation":"Coffee with milk, without sugar."},{"words":["метро наліво Прямо потім"],"answer":"Прямо, потім наліво — метро.","translation":"Straight, then left — metro."},{"words":["ласка будь Рахунок"],"answer":"Рахунок, будь ласка.","translation":"Check, please."}]}},{"id":"activity-2","type":"match-up","title":"Case Functions","data":{"type":"match-up","pairs":[{"left":"Direct object (what I see)","right":"Accusative"},{"left":"Location (where it is)","right":"Locative"},{"left":"Absence (what's missing)","right":"Genitive"},{"left":"Subject (what this is)","right":"Nominative"},{"left":"Addressing someone","right":"Vocative"},{"left":"After numbers 5+","right":"Genitive plural"},{"left":"After у/в + location","right":"Locative"},{"left":"After без (without)","right":"Genitive"},{"left":"After для (for)","right":"Genitive"},{"left":"I have (possession)","right":"Accusative"},{"left":"I don't have","right":"Genitive"},{"left":"Object of emotion (love)","right":"Accusative"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"A1.2 Comprehensive","data":{"type":"quiz","questions":[{"question":"Which case is used for direct objects?","options":["Nominative","Accusative","Genitive","Locative"],"correctIndex":1,"explanation":"Direct objects use accusative: Я читаю книгу."},{"question":"Which preposition is followed by locative for location?","options":["без","до","у/в","для"],"correctIndex":2,"explanation":"\"У/в\" + locative = in/at a location."},{"question":"How do you say \"I don't have time\"?","options":["Я не маю час","У мене немає часу","Мені немає часу","Я немаю часу"],"correctIndex":1,"explanation":"\"У мене немає\" + genitive."},{"question":"What is \"книга\" in locative?","options":["книгу","книги","книзі","книгою"],"correctIndex":2,"explanation":"Feminine -а → -і in locative (with consonant change)."},{"question":"After number 5, nouns use:","options":["Nominative singular","Nominative plural","Genitive plural","Accusative"],"correctIndex":2,"explanation":"Numbers 5-20 require genitive plural: п'ять гривень."},{"question":"\"Моя\" is used with:","options":["Masculine nouns","Feminine nouns","Neuter nouns","Plural nouns"],"correctIndex":1,"explanation":"\"Моя\" = my (feminine): моя книга."},{"question":"Which is correct for \"at the café\"?","options":["на кафе","у кафе","до кафе","з кафе"],"correctIndex":1,"explanation":"\"У кафе\" (кафе is indeclinable)."},{"question":"\"Без цукру\" uses which case?","options":["Accusative","Locative","Genitive","Nominative"],"correctIndex":2,"explanation":"\"Без\" requires genitive."},{"question":"Masculine animate accusative equals:","options":["Nominative","Locative","Genitive","Instrumental"],"correctIndex":2,"explanation":"Animate masculine: accusative = genitive (друг → друга)."},{"question":"\"Скільки коштує?\" asks about:","options":["Price","Location","Time","Direction"],"correctIndex":0,"explanation":"\"Скільки коштує?\" = How much does it cost?"},{"question":"Which is the correct locative of \"місто\"?","options":["містo","міста","місті","містом"],"correctIndex":2,"explanation":"Neuter -о → -і in locative."},{"question":"\"Двадцять одна гривня\" — why \"гривня\"?","options":["21 ends in 1, so nominative singular","21 uses genitive","All numbers use nominative","This is an exception"],"correctIndex":0,"explanation":"Numbers ending in 1 use nominative singular."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"A1.2 Review","data":{"type":"true-false","statements":[{"statement":"Accusative case is used for direct objects.","isTrue":true,"explanation":"Correct! \"Я бачу книгу\" — \"книгу\" is accusative."},{"statement":"Locative case is used after \"без.\"","isTrue":false,"explanation":"Incorrect! \"Без\" requires genitive, not locative."},{"statement":"\"У мене є\" uses accusative for what you have.","isTrue":true,"explanation":"Correct! \"У мене є книга\" — \"книга\" is nominative/accusative."},{"statement":"Numbers 2-4 require genitive case.","isTrue":false,"explanation":"Incorrect! 2-4 use nominative plural; 5+ use genitive plural."},{"statement":"Possessive pronouns agree with the noun's gender.","isTrue":true,"explanation":"Correct! \"Мій стіл\" (m), \"моя книга\" (f), \"моє вікно\" (n)."},{"statement":"\"В\" and \"у\" are different prepositions with different meanings.","isTrue":false,"explanation":"Incorrect! They're the same; \"у\" is used after consonants."},{"statement":"Masculine animate accusative = genitive.","isTrue":true,"explanation":"Correct! \"Друг → друга\" in accusative."},{"statement":"\"Кафе\" changes form in different cases.","isTrue":false,"explanation":"Incorrect! \"Кафе\" is indeclinable (doesn't change)."},{"statement":"\"Немає\" is always followed by genitive.","isTrue":true,"explanation":"Correct! \"Немає води, часу, грошей.\""},{"statement":"\"Три гривень\" is correct.","isTrue":false,"explanation":"Incorrect! 2-4 use nominative plural: \"три гривні.\""},{"statement":"You must ask for the check in Ukrainian restaurants.","isTrue":true,"explanation":"Correct! \"Рахунок, будь ласка.\""},{"statement":"\"Прямо, потім наліво\" gives directions.","isTrue":true,"explanation":"Correct! \"Straight, then left.\""}]}},{"id":"activity-5","type":"group-sort","title":"Cases","data":{"type":"group-sort","groups":[{"id":"nominative","name":"Nominative","items":["книга","стіл","мій телефон","це вода"]},{"id":"accusative","name":"Accusative","items":["книгу","друга","воду","мою книгу"]},{"id":"locative","name":"Locative","items":["на столі","у книзі","в місті","на вулиці"]},{"id":"genitive","name":"Genitive","items":["води","часу","без цукру","п'ять гривень"]}],"shuffleItems":true}}];
+    const vocabData = [{"uk":"Review vocabulary from modules 11-19","translit":"","en":"","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1273,8 +1005,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1305,8 +1037,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1718,7 +1450,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1728,7 +1460,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1929,6 +1663,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

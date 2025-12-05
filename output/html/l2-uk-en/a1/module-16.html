@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 16: The Genitive Case | Ukrainian A1</title>
+  <title>Module 16: The Genitive I: Absence | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,7 +478,7 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 16: The Genitive Case</h1>
+    <h1>Module 16: The Genitive I: Absence</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
@@ -469,502 +495,258 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">The Genitive Case</h2>
-        <p style="color:var(--text-muted)">Possession &amp; Absence</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">The Genitive I: Absence</h2>
+        <p style="color:var(--text-muted)">Expressing what&#039;s missing with немає</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
       <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="thecaseofownership">The Case of Ownership</h3>
-<p>You've learned nominative (subject), accusative (direct object), and locative (location). Now meet the <strong>genitive</strong> - the case of possession!</p>
-<p>English uses "of" or 's: "the book of the student" / "the student's book"<br />
-Ukrainian changes the noun ending: книга <strong>студента</strong> (student's book)</p>
-<ul>
-<li>Nominative: студент (student)</li>
-<li>Genitive: книга студент<strong>а</strong> (the student's book)</li>
-</ul>
+<h3 id="welcometothegenitivecase">Welcome to the Genitive Case!</h3>
+<p>You've learned to talk about <strong>what exists</strong> and <strong>where things are</strong>. Now it's time to talk about <strong>what's missing</strong>!</p>
+<p>In English, we say "There is no coffee" or "I don't have time." In Ukrainian, we use a special grammatical case called the <strong>genitive</strong> (родовий відмінок).</p>
 <blockquote>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>"Genitive" comes from Latin "genitivus" meaning "of birth/origin." It originally indicated where something came from. Over time, it expanded to express possession, absence, and quantity. Ukrainian genitive does all this and more!</p>
+  <p>The genitive case is one of the most frequently used cases in Ukrainian. It expresses absence, possession, quantities, and much more. Today we focus on <strong>absence</strong> — saying what ISN'T there.</p>
 </blockquote>
 <h2 id="presentation">presentation</h2>
-<h3 id="genitiveendings">Genitive Endings</h3>
-<p><strong>Masculine:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Genitive</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>студент</td>
-<td>студент<strong>а</strong></td>
-<td>книга студента</td>
-</tr>
-<tr>
-<td>стіл</td>
-<td>стол<strong>а</strong></td>
-<td>ніжка стола (table leg)</td>
-</tr>
-<tr>
-<td>день</td>
-<td>дн<strong>я</strong></td>
-<td>кінець дня (end of day)</td>
-</tr>
-<tr>
-<td>чай</td>
-<td>ча<strong>ю</strong></td>
-<td>чашка чаю (cup of tea)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Feminine:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Genitive</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>книга</td>
-<td>книг<strong>и</strong></td>
-<td>сторінка книги (page of book)</td>
-</tr>
-<tr>
-<td>земля</td>
-<td>земл<strong>і</strong></td>
-<td>поверхня землі (surface of earth)</td>
-</tr>
-<tr>
-<td>ніч</td>
-<td>ноч<strong>і</strong></td>
-<td>кінець ночі (end of night)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Neuter:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Genitive</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>вікно</td>
-<td>вікн<strong>а</strong></td>
-<td>скло вікна (window glass)</td>
-</tr>
-<tr>
-<td>море</td>
-<td>мор<strong>я</strong></td>
-<td>берег моря (seashore)</td>
-</tr>
-<tr>
-<td>ім'я</td>
-<td>імен<strong>і</strong></td>
-<td>значення імені (meaning of name)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Pattern Summary</strong></p>
-  <ul>
-  <li><strong>Masculine:</strong> add -а or -я</li>
-  <li><strong>Feminine -а:</strong> change to -и</li>
-  <li><strong>Feminine -я:</strong> change to -і</li>
-  <li><strong>Neuter -о:</strong> change to -а</li>
-  <li><strong>Neuter -е/-я:</strong> change to -я</li>
-  </ul>
-</blockquote>
-<h3 id="expressingpossession">Expressing Possession</h3>
-<p><strong>Word order: possessed thing + genitive possessor</strong></p>
-<ul>
-<li>книга студент<strong>а</strong> = the student's book</li>
-<li>машина брат<strong>а</strong> = my brother's car</li>
-<li>дім батьк<strong>ів</strong> = parents' house</li>
-<li>кінець дн<strong>я</strong> = end of day</li>
-</ul>
-<blockquote>
-  <p>📜 <strong>History Bite: Why No "Of"?</strong></p>
-  <p>English uses prepositions ("of the student") or 's ("student's") for possession. Ukrainian evolved differently - the genitive ending itself carries the meaning of "of." This is more efficient: one suffix does what English needs extra words for!</p>
-</blockquote>
-<h3 id="genitiveabsence">Немає + Genitive (Absence)</h3>
-<p>To say "there is no…" use <strong>немає</strong> + genitive:</p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Genitive</th>
-<th>"There is no…"</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>час</td>
-<td>часу</td>
-<td>Немає часу. (No time.)</td>
-</tr>
-<tr>
-<td>хліб</td>
-<td>хліба</td>
-<td>Немає хліба. (No bread.)</td>
-</tr>
-<tr>
-<td>вода</td>
-<td>води</td>
-<td>Немає води. (No water.)</td>
-</tr>
-<tr>
-<td>гроші</td>
-<td>грошей</td>
-<td>Немає грошей. (No money.)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Compare presence vs absence:</strong></p>
-<ul>
-<li>Є час. (There is time.) - nominative</li>
-<li>Немає часу. (There is no time.) - genitive</li>
-</ul>
-<blockquote>
-  <p>🔍 <strong>Myth Buster: "Немає Is Difficult"</strong></p>
-  <p>Many learners avoid немає. But it's just: немає + genitive!<br />
-  The pattern is simple and incredibly useful:</p>
-  <ul>
-  <li>Немає проблем! (No problem! - literally "No problems!")</li>
-  <li>Немає питань. (No questions.)</li>
-  </ul>
-</blockquote>
-<h3 id="genitiveafternumbers5">Genitive After Numbers 5+</h3>
-<p>Remember from Module 09: numbers 5-20 take genitive plural!</p>
-<table>
-<thead>
-<tr>
-<th>Number</th>
-<th>Noun (Genitive Plural)</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5</td>
-<td>книг</td>
-<td>п'ять книг</td>
-</tr>
-<tr>
-<td>6</td>
-<td>студентів</td>
-<td>шість студентів</td>
-</tr>
-<tr>
-<td>10</td>
-<td>гривень</td>
-<td>десять гривень</td>
-</tr>
-<tr>
-<td>15</td>
-<td>хвилин</td>
-<td>п'ятнадцять хвилин</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Genitive plural endings:</strong></p>
-<ul>
-<li>Masculine: -ів / -ей (студентів, друзів)</li>
-<li>Feminine -а: drop -а (книга → книг)</li>
-<li>Feminine -я: -ь (хвилина → хвилин, but земля → земель)</li>
-<li>Neuter: -Ø or -ів (вікно → вікон, море → морів)</li>
-</ul>
-<blockquote>
-  <p>🎯 <strong>Fun Fact: Zero Ending</strong></p>
-  <p>Some genitive plurals have "zero ending" - you just remove the final vowel:</p>
-  <ul>
-  <li>книга → книг (5 книг)</li>
-  <li>гривня → гривень (5 гривень)</li>
-  </ul>
-  <p>This "nothing" is itself a grammatical marker - the absence of an ending carries meaning!</p>
-</blockquote>
-<h3 id="commongenitiveprepositions">Common Genitive Prepositions</h3>
-<p>These prepositions always take genitive:</p>
-<table>
-<thead>
-<tr>
-<th>Preposition</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>без</td>
-<td>without</td>
-<td>кава без цукру (coffee without sugar)</td>
-</tr>
-<tr>
-<td>для</td>
-<td>for</td>
-<td>подарунок для друга (gift for a friend)</td>
-</tr>
-<tr>
-<td>до</td>
-<td>to, until</td>
-<td>до станції (to the station)</td>
-</tr>
-<tr>
-<td>з/із</td>
-<td>from, out of</td>
-<td>з України (from Ukraine)</td>
-</tr>
-<tr>
-<td>біля</td>
-<td>near</td>
-<td>біля метро (near the metro)</td>
-</tr>
-<tr>
-<td>після</td>
-<td>after</td>
-<td>після роботи (after work)</td>
-</tr>
-<tr>
-<td>від</td>
-<td>from</td>
-<td>лист від мами (letter from mom)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Ordering Coffee</strong></p>
-  <p>Ukrainians love their coffee! Use genitive naturally:</p>
-  <ul>
-  <li>Каву <strong>без молока</strong>, будь ласка. (Coffee without milk.)</li>
-  <li>Каву <strong>з цукром</strong>… wait, that's instrumental!</li>
-  <li>Каву <strong>без цукру</strong>. (Coffee without sugar.)</li>
-  </ul>
-  <p>"Без" (without) always takes genitive!</p>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="formgenitivesingular">Form Genitive Singular</h3>
-<p>Transform to genitive:</p>
-<ol>
-<li><p>студент</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">студент__ (студента)</div></div>
-<ol start="2">
-<li><p>книга</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">книг__ (книги)</div></div>
-<ol start="3">
-<li><p>вікно</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">вікн__ (вікна)</div></div>
-<ol start="4">
-<li><p>день</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">дн__ (дня)</div></div>
-<ol start="5">
-<li><p>ніч</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">ноч__ (ночі)</div></div>
-<h3 id="expressabsence">Express Absence</h3>
-<p>Use немає + genitive:</p>
-<ol>
-<li><p>час</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Немає ___ (часу)</div></div>
-<ol start="2">
-<li><p>вода</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Немає ___ (води)</div></div>
-<ol start="3">
-<li><p>гроші</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Немає ___ (грошей)</div></div>
-<ol start="4">
-<li><p>хліб</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Немає ___ (хліба)</div></div>
-<h3 id="possessionphrases">Possession Phrases</h3>
-<p>Form possession phrases:</p>
-<ol>
-<li><p>book + student</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">книга студента</div></div>
-<ol start="2">
-<li><p>car + brother</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">машина брата</div></div>
-<ol start="3">
-<li><p>end + day</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">кінець дня</div></div>
-<ol start="4">
-<li><p>cup + tea</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">чашка чаю</div></div>
-<blockquote>
-  <p>🌍 <strong>Real World: Daily Genitive</strong></p>
-  <p>You'll use genitive constantly:</p>
-  <ul>
-  <li><strong>Скільки часу?</strong> - What time is it? (literally "How much of time?")</li>
-  <li><strong>Немає проблем!</strong> - No problem!</li>
-  <li><strong>Чашка кави</strong> - A cup of coffee</li>
-  <li><strong>Пляшка води</strong> - A bottle of water</li>
-  <li><strong>Кілограм яблук</strong> - A kilogram of apples</li>
-  </ul>
-</blockquote>
-<h2 id="production">production</h2>
-<h3 id="describewhatsmissing">Describe What's Missing</h3>
-<p>Say what you don't have:</p>
-<ol>
-<li><p>I don't have time.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">У мене немає часу.</div></div>
-<ol start="2">
-<li><p>There's no bread.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Немає хліба.</div></div>
-<ol start="3">
-<li><p>There's no water.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">Немає води.</div></div>
-<ol start="4">
-<li><p>She doesn't have money.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">У неї немає грошей.</div></div>
-<hr />
-<hr />
-<h2 id="genitivecasesummary">Genitive Case Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Masculine</th>
-<th>Feminine -а</th>
-<th>Feminine -ь</th>
-<th>Neuter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nominative</td>
-<td>час</td>
-<td>книга</td>
-<td>ніч</td>
-<td>місто</td>
-</tr>
-<tr>
-<td>Genitive</td>
-<td>часу</td>
-<td>книги</td>
-<td>ночі</td>
-<td>міста</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Key uses:</strong></p>
-<ul>
-<li>Possession: книга друга (friend's book)</li>
-<li>Absence: немає часу (no time)</li>
-<li>Prepositions: без, для, до, з, від, після</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Ending</th>
-<th>Genitive</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Consonant (m)</td>
-<td>→ -а/-у</td>
-<td>друг → друга, час → часу</td>
-</tr>
-<tr>
-<td>-а (f)</td>
-<td>→ -и</td>
-<td>книга → книги</td>
-</tr>
-<tr>
-<td>-я (f)</td>
-<td>→ -і</td>
-<td>земля → землі</td>
-</tr>
-<tr>
-<td>-о/-е (n)</td>
-<td>→ -а</td>
-<td>місто → міста</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Genitive Summary</h3>
-      <div class="md-content"><h2 id="singularendings">Singular Endings</h2>
+<h3 id="thegenitiveendings">The Genitive Endings</h3>
+<p>When something <strong>doesn't exist</strong> or you <strong>don't have</strong> something, the noun changes form:</p>
 <table>
 <thead>
 <tr>
 <th>Gender</th>
 <th>Nominative</th>
 <th>Genitive</th>
-<th>Example</th>
+<th>Pattern</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Masculine (hard)</td>
-<td>-consonant</td>
-<td>-а</td>
-<td>стіл → стола</td>
+<td>Masculine</td>
+<td>час</td>
+<td>час<strong>у</strong></td>
+<td>+ -у/-а</td>
 </tr>
 <tr>
-<td>Masculine (soft)</td>
-<td>-ь/-й</td>
-<td>-я</td>
-<td>день → дня</td>
+<td>Masculine</td>
+<td>друг</td>
+<td>друг<strong>а</strong></td>
+<td>+ -а (animate)</td>
 </tr>
 <tr>
-<td>Feminine (hard)</td>
-<td>-а</td>
-<td>-и</td>
-<td>книга → книги</td>
+<td>Feminine</td>
+<td>вода</td>
+<td>вод<strong>и</strong></td>
+<td>-а → -и</td>
 </tr>
 <tr>
-<td>Feminine (soft)</td>
-<td>-я</td>
-<td>-і</td>
-<td>земля → землі</td>
+<td>Feminine</td>
+<td>ідея</td>
+<td>іде<strong>ї</strong></td>
+<td>-я → -ї</td>
 </tr>
 <tr>
 <td>Neuter</td>
-<td>-о/-е</td>
-<td>-а/-я</td>
-<td>вікно → вікна</td>
+<td>вікно</td>
+<td>вікн<strong>а</strong></td>
+<td>-о → -а</td>
 </tr>
 </tbody>
 </table>
-<h2 id="keyuses">Key Uses</h2>
+<blockquote>
+  <p>⚡ <strong>Pro Tip</strong></p>
+  <p>Masculine inanimate nouns often take <strong>-у</strong>, while animate masculines take <strong>-а</strong>. This mirrors what you learned about accusative for people!</p>
+</blockquote>
+<h3 id="thereisno">немає — There Is No</h3>
+<p>The word <strong>немає</strong> (or <strong>нема</strong> in speech) means "there is no / there isn't":</p>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Немає часу.</td>
+<td>There is no time.</td>
+</tr>
+<tr>
+<td>Немає кави.</td>
+<td>There is no coffee.</td>
+</tr>
+<tr>
+<td>Немає проблеми.</td>
+<td>There is no problem.</td>
+</tr>
+<tr>
+<td>Немає сенсу.</td>
+<td>There is no sense/point.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🔍 <strong>Myth Buster</strong></p>
+  <p><strong>Myth:</strong> Ukrainian must be hard because it has so many cases!<br />
+  <strong>Fact:</strong> English used to have cases too! We lost them about 500 years ago. The endings actually make Ukrainian MORE precise — you always know the grammatical role of a word.</p>
+</blockquote>
+<h3 id="possessionwith">Possession with у мене (не)має</h3>
+<p>To say "I have" or "I don't have," Ukrainian uses a unique construction:</p>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>Literal</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>У мене є</strong> книга.</td>
+<td>At me is book.</td>
+<td>I have a book.</td>
+</tr>
+<tr>
+<td><strong>У мене немає</strong> книги.</td>
+<td>At me is-not book-GEN.</td>
+<td>I don't have a book.</td>
+</tr>
+</tbody>
+</table>
+<p>The possessor pronouns in genitive:</p>
+<table>
+<thead>
+<tr>
+<th>Pronoun</th>
+<th>With "у"</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я</td>
+<td>у мене</td>
+<td>I have / at me</td>
+</tr>
+<tr>
+<td>ти</td>
+<td>у тебе</td>
+<td>you have / at you</td>
+</tr>
+<tr>
+<td>він/вона</td>
+<td>у нього/неї</td>
+<td>he/she has</td>
+</tr>
+<tr>
+<td>ми</td>
+<td>у нас</td>
+<td>we have</td>
+</tr>
+<tr>
+<td>ви</td>
+<td>у вас</td>
+<td>you (pl/formal) have</td>
+</tr>
+<tr>
+<td>вони</td>
+<td>у них</td>
+<td>they have</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>"У мене немає часу" (I don't have time) is one of the most common phrases you'll hear in everyday Ukrainian. Perfect for politely declining invitations!</p>
+</blockquote>
+<h3 id="without">без — Without</h3>
+<p>The preposition <strong>без</strong> (without) also requires genitive:</p>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кава без цукру</td>
+<td>Coffee without sugar</td>
+</tr>
+<tr>
+<td>Без проблем!</td>
+<td>No problem! (Without problems!)</td>
+</tr>
+<tr>
+<td>Без причини</td>
+<td>Without reason</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment: The Matrix</strong></p>
+  <p>Remember Neo choosing between pills? In Ukrainian: "Без повернення" (Without return / No going back). The genitive makes everything sound more dramatic!</p>
+</blockquote>
+<h2 id="practice">practice</h2>
+<h3 id="exercise1transformtogenitive">Exercise 1: Transform to Genitive</h3>
+<p>Change these nominative nouns to genitive:</p>
 <ol>
-<li><strong>Possession:</strong> книга студента (student's book)</li>
-<li><strong>Absence:</strong> Немає часу (no time)</li>
-<li><strong>After 5+:</strong> п'ять книг (five books)</li>
-<li><strong>After prepositions:</strong> без цукру, для друга, з України</li>
+<li><p>час (time)</p></li>
 </ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">часу</div></div>
+<ol start="2">
+<li><p>вода (water)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">води</div></div>
+<ol start="3">
+<li><p>гроші (money)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">грошей</div></div>
+<ol start="4">
+<li><p>ідея (idea)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">ідеї</div></div>
+<ol start="5">
+<li><p>допомога (help)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">допомоги</div></div>
+<ol start="6">
+<li><p>сенс (sense)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">сенсу</div></div>
+<h3 id="exercise2completethesentences">Exercise 2: Complete the Sentences</h3>
+<ol>
+<li><p>У мене немає ___ (час).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">часу</div></div>
+<ol start="2">
+<li><p>Тут немає ___ (кава).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">кави</div></div>
+<ol start="3">
+<li><p>Без ___, будь ласка. (цукор)</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">цукру</div></div>
+<ol start="4">
+<li><p>У нас немає ___ (проблема).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">проблеми</div></div>
+<ol start="5">
+<li><p>У неї немає ___ (гроші).</p></li>
+</ol>
+<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">грошей</div></div>
+<h2 id="production">production</h2>
+<h3 id="speakingpractice">Speaking Practice</h3>
+<p>Describe what you DON'T have right now. Use these prompts:</p>
+<ul>
+<li>У мене немає… (час, гроші, ідея)</li>
+<li>Тут немає… (кава, вода, інформація)</li>
+<li>Я хочу каву без… (цукор, молоко)</li>
+</ul>
+<p>Try making 3-4 sentences about what's missing in your life!</p>
+<hr />
+<hr />
 <hr /></div>
     </div>
   
@@ -972,21 +754,20 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><blockquote>
-  <p>💡 <strong>What You Learned Today</strong></p>
+  <p><strong>What You Learned Today</strong></p>
   <ul>
-  <li><strong>Genitive</strong> expresses possession, absence, quantity</li>
-  <li>Masculine: -а/-я, Feminine: -и/-і, Neuter: -а/-я</li>
-  <li><strong>Немає</strong> + genitive = "there is no"</li>
-  <li>Numbers 5+ take <strong>genitive plural</strong></li>
-  <li>Prepositions: без, для, до, з, біля, після, від</li>
+  <li>The <strong>genitive case</strong> expresses absence: <strong>Немає кави</strong> (There's no coffee)</li>
+  <li>Genitive endings: M: -а/-у, F: -и/-ї, N: -а</li>
+  <li>Possession: <strong>У мене немає</strong> + genitive (I don't have)</li>
+  <li><strong>Без</strong> (without) + genitive: <strong>без цукру</strong> (without sugar)</li>
   </ul>
-  <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 17, you'll learn <strong>numbers and money</strong>:</p>
+  <p><strong>Coming Next</strong></p>
+  <p>In Module 17, you'll learn <strong>Numbers & Money</strong>:</p>
   <ul>
-  <li>Counting from 0 to 100 in Ukrainian</li>
-  <li>Ukrainian currency: гривня (₴)</li>
-  <li>Numbers 5+ use genitive plural (п'ять гривень)</li>
-  <li>Shopping phrases: Скільки коштує?</li>
+  <li>Cardinals 0-100</li>
+  <li>Currency: гривня, гривні, гривень</li>
+  <li>Using genitive with quantities (5+ items)</li>
+  <li>Asking prices: Скільки коштує?</li>
   </ul>
 </blockquote></div>
     </div>
@@ -997,22 +778,22 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Genitive Case</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Genitive Forms</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Absence Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
       <div id="activity-1-container" class="order-container"></div>
       <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Nominative to Genitive</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
       <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
         <div class="match-column" id="activity-2-left"></div>
         <div class="match-column" id="activity-2-right"></div>
@@ -1021,22 +802,22 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Genitive Rules</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Genitive Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Genitive Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Genitive Uses</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/11</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Case Forms</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
@@ -1045,7 +826,7 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (35)</h3>
+        <h3>Словник (25)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1055,7 +836,7 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">немає</td><td class="vocab-ipa">/nɛˈmɑjɛ/</td><td class="vocab-en">there is no</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">без</td><td class="vocab-ipa">/bɛz/</td><td class="vocab-en">without</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">для</td><td class="vocab-ipa">/dlʲɑ/</td><td class="vocab-en">for</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">крім</td><td class="vocab-ipa">/krʲim/</td><td class="vocab-en">except for</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">з / із</td><td class="vocab-ipa">/z/ /iz/</td><td class="vocab-en">from, out of</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">після</td><td class="vocab-ipa">/ˈpʲislʲɑ/</td><td class="vocab-en">after</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">від</td><td class="vocab-ipa">/vʲid/</td><td class="vocab-en">from</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">у / в</td><td class="vocab-ipa">/u/ /v/</td><td class="vocab-en">at, near (possession)</td><td class="vocab-note">+ genitive (e.g. у мене)</td></tr><tr><td class="vocab-uk">час</td><td class="vocab-ipa">/tʃɑs/</td><td class="vocab-en">time</td><td class="vocab-note">Gen: часу</td></tr><tr><td class="vocab-uk">гроші</td><td class="vocab-ipa">/ˈɦrɔʃʲi/</td><td class="vocab-en">money</td><td class="vocab-note">Gen: грошей</td></tr><tr><td class="vocab-uk">ідея</td><td class="vocab-ipa">/iˈdɛjɑ/</td><td class="vocab-en">idea</td><td class="vocab-note">Gen: ідеї</td></tr><tr><td class="vocab-uk">проблема</td><td class="vocab-ipa">/prɔˈblɛmɑ/</td><td class="vocab-en">problem</td><td class="vocab-note">Gen: проблеми</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/mɔʒˈlɪvʲisʲtʲ/</td><td class="vocab-en">opportunity</td><td class="vocab-note">Gen: можливості</td></tr><tr><td class="vocab-uk">причина</td><td class="vocab-ipa">/prɪˈtʃɪnɑ/</td><td class="vocab-en">reason</td><td class="vocab-note">Gen: причини</td></tr><tr><td class="vocab-uk">сенс</td><td class="vocab-ipa">/sɛns/</td><td class="vocab-en">sense, meaning</td><td class="vocab-note">Gen: сенсу</td></tr><tr><td class="vocab-uk">користь</td><td class="vocab-ipa">/ˈkɔrɪstʲ/</td><td class="vocab-en">benefit</td><td class="vocab-note">Gen: користі</td></tr><tr><td class="vocab-uk">значення</td><td class="vocab-ipa">/ˈznɑtʃɛnʲːɑ/</td><td class="vocab-en">meaning, significance</td><td class="vocab-note">Gen: значення</td></tr><tr><td class="vocab-uk">різниця</td><td class="vocab-ipa">/ˈrʲiznɪt͡sʲɑ/</td><td class="vocab-en">difference</td><td class="vocab-note">Gen: різниці</td></tr><tr><td class="vocab-uk">вибір</td><td class="vocab-ipa">/ˈvɪbʲir/</td><td class="vocab-en">choice</td><td class="vocab-note">Gen: вибору</td></tr><tr><td class="vocab-uk">досвід</td><td class="vocab-ipa">/ˈdɔsvʲid/</td><td class="vocab-en">experience</td><td class="vocab-note">Gen: досвіду</td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-ipa">/znɑnˈnʲɑ/</td><td class="vocab-en">knowledge</td><td class="vocab-note">Gen: знань</td></tr><tr><td class="vocab-uk">інформація</td><td class="vocab-ipa">/infɔrˈmɑt͡sʲijɑ/</td><td class="vocab-en">information</td><td class="vocab-note">Gen: інформації</td></tr><tr><td class="vocab-uk">допомога</td><td class="vocab-ipa">/dɔpɔˈmɔɦɑ/</td><td class="vocab-en">help</td><td class="vocab-note">Gen: допомоги</td></tr><tr><td class="vocab-uk">підтримка</td><td class="vocab-ipa">/pʲidˈtrɪmkɑ/</td><td class="vocab-en">support</td><td class="vocab-note">Gen: підтримки</td></tr><tr><td class="vocab-uk">увага</td><td class="vocab-ipa">/uˈvɑɦɑ/</td><td class="vocab-en">attention</td><td class="vocab-note">Gen: уваги</td></tr><tr><td class="vocab-uk">терпіння</td><td class="vocab-ipa">/tɛrˈpʲinʲːɑ/</td><td class="vocab-en">patience</td><td class="vocab-note">Gen: терпіння</td></tr><tr><td class="vocab-uk">сила</td><td class="vocab-ipa">/ˈsɪlɑ/</td><td class="vocab-en">strength, power</td><td class="vocab-note">Gen: сили</td></tr><tr><td class="vocab-uk">хліб</td><td class="vocab-ipa">/xlʲib/</td><td class="vocab-en">bread</td><td class="vocab-note">Gen: хліба</td></tr><tr><td class="vocab-uk">цукор</td><td class="vocab-ipa">/ˈt͡sukɔr/</td><td class="vocab-en">sugar</td><td class="vocab-note">Gen: цукру</td></tr><tr><td class="vocab-uk">чашка</td><td class="vocab-ipa">/ˈtʃɑʃkɑ/</td><td class="vocab-en">cup</td><td class="vocab-note">Gen: чашки</td></tr><tr><td class="vocab-uk">пляшка</td><td class="vocab-ipa">/ˈplʲɑʃkɑ/</td><td class="vocab-en">bottle</td><td class="vocab-note">Gen: пляшки</td></tr><tr><td class="vocab-uk">сторінка</td><td class="vocab-ipa">/stɔˈrʲinkɑ/</td><td class="vocab-en">page</td><td class="vocab-note">Gen: сторінки</td></tr><tr><td class="vocab-uk">кінець</td><td class="vocab-ipa">/kʲiˈnɛt͡sʲ/</td><td class="vocab-en">end</td><td class="vocab-note">Gen: кінця</td></tr><tr><td class="vocab-uk">початок</td><td class="vocab-ipa">/pɔˈtʃɑtɔk/</td><td class="vocab-en">beginning</td><td class="vocab-note">Gen: початку</td></tr><tr><td class="vocab-uk">кілограм</td><td class="vocab-ipa">/kʲilɔˈɦrɑm/</td><td class="vocab-en">kilogram</td><td class="vocab-note">Gen: кілограма</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">немає</td><td class="vocab-ipa">/neˈmɑjɛ/</td><td class="vocab-en">there is no</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">нема</td><td class="vocab-ipa">/neˈmɑ/</td><td class="vocab-en">there is no</td><td class="vocab-note">colloquial form</td></tr><tr><td class="vocab-uk">без</td><td class="vocab-ipa">/bɛz/</td><td class="vocab-en">without</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">крім</td><td class="vocab-ipa">/krim/</td><td class="vocab-en">except, besides</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">для</td><td class="vocab-ipa">/dlʲɑ/</td><td class="vocab-en">for</td><td class="vocab-note">+ genitive</td></tr><tr><td class="vocab-uk">у/в</td><td class="vocab-ipa">/u/, /v/</td><td class="vocab-en">at (possession)</td><td class="vocab-note">у мене = I have</td></tr><tr><td class="vocab-uk">час</td><td class="vocab-ipa">/t͡ʃɑs/</td><td class="vocab-en">time</td><td class="vocab-note">часу in genitive</td></tr><tr><td class="vocab-uk">гроші</td><td class="vocab-ipa">/ˈɦrɔʃi/</td><td class="vocab-en">money</td><td class="vocab-note">грошей in genitive</td></tr><tr><td class="vocab-uk">ідея</td><td class="vocab-ipa">/iˈdɛjɑ/</td><td class="vocab-en">idea</td><td class="vocab-note">ідеї in genitive</td></tr><tr><td class="vocab-uk">проблема</td><td class="vocab-ipa">/prɔˈblɛmɑ/</td><td class="vocab-en">problem</td><td class="vocab-note">проблеми in genitive</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/mɔʒˈlɪvʲistʲ/</td><td class="vocab-en">possibility, opportunity</td><td class="vocab-note">soft stem</td></tr><tr><td class="vocab-uk">причина</td><td class="vocab-ipa">/prɪˈt͡ʃɪnɑ/</td><td class="vocab-en">reason, cause</td><td class="vocab-note">причини in genitive</td></tr><tr><td class="vocab-uk">сенс</td><td class="vocab-ipa">/sɛns/</td><td class="vocab-en">sense, meaning</td><td class="vocab-note">сенсу in genitive</td></tr><tr><td class="vocab-uk">користь</td><td class="vocab-ipa">/ˈkɔrɪstʲ/</td><td class="vocab-en">benefit, use</td><td class="vocab-note">soft stem</td></tr><tr><td class="vocab-uk">значення</td><td class="vocab-ipa">/ˈznɑt͡ʃɛnʲːɑ/</td><td class="vocab-en">meaning, significance</td><td class="vocab-note">neuter -ння</td></tr><tr><td class="vocab-uk">різниця</td><td class="vocab-ipa">/ˈriznɪt͡sʲɑ/</td><td class="vocab-en">difference</td><td class="vocab-note">різниці in genitive</td></tr><tr><td class="vocab-uk">вибір</td><td class="vocab-ipa">/ˈvɪbir/</td><td class="vocab-en">choice</td><td class="vocab-note">вибору in genitive</td></tr><tr><td class="vocab-uk">досвід</td><td class="vocab-ipa">/ˈdɔsvid/</td><td class="vocab-en">experience</td><td class="vocab-note">досвіду in genitive</td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-ipa">/ˈznɑnʲːɑ/</td><td class="vocab-en">knowledge</td><td class="vocab-note">neuter -ння</td></tr><tr><td class="vocab-uk">інформація</td><td class="vocab-ipa">/infɔrˈmɑt͡sʲijɑ/</td><td class="vocab-en">information</td><td class="vocab-note">інформації in genitive</td></tr><tr><td class="vocab-uk">допомога</td><td class="vocab-ipa">/dɔˈpɔmɔɦɑ/</td><td class="vocab-en">help, assistance</td><td class="vocab-note">допомоги in genitive</td></tr><tr><td class="vocab-uk">підтримка</td><td class="vocab-ipa">/pidˈtrɪmkɑ/</td><td class="vocab-en">support</td><td class="vocab-note">підтримки in genitive</td></tr><tr><td class="vocab-uk">увага</td><td class="vocab-ipa">/uˈvɑɦɑ/</td><td class="vocab-en">attention</td><td class="vocab-note">уваги in genitive</td></tr><tr><td class="vocab-uk">терпіння</td><td class="vocab-ipa">/tɛrˈpʲinʲːɑ/</td><td class="vocab-en">patience</td><td class="vocab-note">neuter -ння</td></tr><tr><td class="vocab-uk">сила</td><td class="vocab-ipa">/ˈsɪlɑ/</td><td class="vocab-en">strength, force</td><td class="vocab-note">сили in genitive</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1067,8 +848,8 @@ Ukrainian changes the noun ending: книга <strong>студента</strong> 
   </main><footer>Module 16 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Genitive Case","data":{"type":"fill-blank","items":[{"prompt":"У мене сьогодні зовсім немає вільного ___. (I have absolutely no free time today.)","answer":"часу","options":["час","часу","часі","часом"]},{"prompt":"Це цікава книга нового українського ___. (This is an interesting book of the new Ukrainian student.)","answer":"студента","options":["студент","студента","студенту","студенті"]},{"prompt":"У холодильнику зовсім немає холодної ___. (There is absolutely no cold water in the fridge.)","answer":"води","options":["вода","води","воді","водою"]},{"prompt":"Я завжди п'ю гарячу каву без ___. (I always drink hot coffee without sugar.)","answer":"цукру","options":["цукор","цукра","цукру","цукрі"]},{"prompt":"Це смачна чашка ранкової ___. (This is a tasty cup of morning coffee.)","answer":"кави","options":["кава","кави","каві","кавою"]},{"prompt":"На столі немає свіжого білого ___. (There is no fresh white bread on the table.)","answer":"хліба","options":["хліб","хліба","хлібу","хлібі"]},{"prompt":"Цей подарунок для мого найкращого ___. (This gift is for my best friend.)","answer":"друга","options":["друг","друга","другу","друзі"]},{"prompt":"Це вже кінець важкого робочого ___. (This is already the end of a hard working day.)","answer":"дня","options":["день","дня","дню","дні"]},{"prompt":"Я завжди відпочиваю після важкої ___. (I always rest after hard work.)","answer":"роботи","options":["робота","роботи","роботі","роботою"]},{"prompt":"На столі стоїть пляшка холодної мінеральної ___. (There's a bottle of cold mineral water on the table.)","answer":"води","options":["вода","води","воді","водою"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["часу","сьогодні","немає","у","мене","вільного","зовсім"],"answer":"У мене сьогодні зовсім немає вільного часу.","translation":"I have absolutely no free time today."},{"words":["студента","книга","Це","нового","цікава","українського"],"answer":"Це цікава книга нового українського студента.","translation":"This is an interesting book of the new Ukrainian student."},{"words":["води","немає","холодної","тут","зовсім","мінеральної"],"answer":"Тут зовсім немає холодної мінеральної води.","translation":"There's absolutely no cold mineral water here."},{"words":["цукру","без","Кава","гаряча","і","молока"],"answer":"Гаряча кава без цукру і молока.","translation":"Hot coffee without sugar and milk."},{"words":["кави","чашка","смачної","Це","гарячої","моя"],"answer":"Це моя чашка смачної гарячої кави.","translation":"This is my cup of tasty hot coffee."},{"words":["друга","для","подарунок","мого","кращого"],"answer":"Це подарунок для мого кращого друга.","translation":"This is a gift for my best friend."},{"words":["роботи","після","йду","Я","додому"],"answer":"Я йду додому після роботи.","translation":"I go home after work."},{"words":["грошей","немає","У мене","зараз"],"answer":"У мене зараз немає грошей.","translation":"I don't have money right now."},{"words":["дня","кінець","Це","важкого","робочого"],"answer":"Це кінець важкого робочого дня.","translation":"This is the end of a hard work day."},{"words":["хліба","Немає","свіжого","в магазині"],"answer":"В магазині немає свіжого хліба.","translation":"There's no fresh bread in the store."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"без","right":"without"},{"left":"для","right":"for"},{"left":"до","right":"to, toward"},{"left":"від","right":"from"},{"left":"після","right":"after"},{"left":"біля","right":"near, by"},{"left":"немає","right":"there is no"},{"left":"з/із","right":"from, out of"},{"left":"чашка","right":"cup"},{"left":"пляшка","right":"bottle"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Genitive Rules","data":{"type":"quiz","questions":[{"question":"What is the genitive of \"студент\"?","options":["студент","студента","студенту","студенті"],"correctIndex":1,"explanation":"Masculine: add -а"},{"question":"What is the genitive of \"книга\"?","options":["книга","книгу","книги","книзі"],"correctIndex":2,"explanation":"Feminine -а → -и"},{"question":"How do you say \"There is no time\"?","options":["Є час.","Немає часу.","Немає час.","Немає часі."],"correctIndex":1,"explanation":"Немає + genitive"},{"question":"What is the pattern for masculine genitive?","options":["Add -а or -я","Add -у or -ю","Add -и or -і","No change"],"correctIndex":0,"explanation":"Masculine adds -а/-я in genitive"},{"question":"How do you say \"coffee without sugar\"?","options":["кава без цукор","кава без цукру","кава без цукрі","кава без цукра"],"correctIndex":1,"explanation":"\"без\" + genitive (цукру)"},{"question":"What does \"книга студента\" mean?","options":["the student's book","a book for the student","a book about the student","the book and the student"],"correctIndex":0,"explanation":"Genitive expresses possession"},{"question":"Which preposition means \"after\"?","options":["для","без","після","від"],"correctIndex":2,"explanation":"\"після\" = after"},{"question":"What is the genitive of \"вода\"?","options":["вода","воду","води","воді"],"correctIndex":2,"explanation":"Feminine -а → -и"},{"question":"How do you say \"I don't have money\"?","options":["Я не маю гроші.","У мене немає грошей.","Я немає гроші.","У мене немає гроші."],"correctIndex":1,"explanation":"\"У мене немає\" + genitive"},{"question":"What case do all these prepositions require: без, для, до, після?","options":["Accusative","Locative","Genitive","Nominative"],"correctIndex":2,"explanation":"These prepositions all take genitive"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"Немає\" always requires the genitive case","isTrue":true,"explanation":"Correct!"},{"statement":"Masculine genitive singular ends in -а or -я","isTrue":true,"explanation":"Correct!"},{"statement":"\"книга студент\" is correct for \"student's book\"","isTrue":false,"explanation":"Incorrect. Should be \"книга студента\" (genitive)"},{"statement":"\"без\" (without) takes the genitive case","isTrue":true,"explanation":"Correct!"},{"statement":"Feminine genitive is the same as nominative","isTrue":false,"explanation":"Incorrect. Feminine -а → -и, -я → -і"},{"statement":"\"Немає часу\" means \"There is no time\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"для друга\" means \"for a friend\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"кава без цукор\" is grammatically correct","isTrue":false,"explanation":"Incorrect. Should be \"кава без цукру\""},{"statement":"The genitive case expresses possession in Ukrainian","isTrue":true,"explanation":"Correct!"},{"statement":"\"після роботи\" means \"after work\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"group-sort","title":"Genitive Uses","data":{"type":"group-sort","groups":[{"id":"possession","name":"Possession","items":["книга студента (student's book)","машина брата (brother's car)","кінець дня (end of day)","чашка кави (cup of coffee)"],"nameUk":"whose?"},{"id":"absence","name":"Absence","items":["Немає часу (no time)","Немає води (no water)","Немає грошей (no money)"],"nameUk":"немає + genitive"},{"id":"after-prepositions","name":"After Prepositions","items":["без цукру (without sugar)","для друга (for a friend)","після роботи (after work)","від мами (from mom)"]}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"немає","translit":"","en":"there is no","note":"+ genitive"},{"uk":"без","translit":"","en":"without","note":"+ genitive"},{"uk":"для","translit":"","en":"for","note":"+ genitive"},{"uk":"крім","translit":"","en":"except for","note":"+ genitive"},{"uk":"з / із","translit":"","en":"from, out of","note":"+ genitive"},{"uk":"після","translit":"","en":"after","note":"+ genitive"},{"uk":"від","translit":"","en":"from","note":"+ genitive"},{"uk":"у / в","translit":"","en":"at, near (possession)","note":"+ genitive (e.g. у мене)"},{"uk":"час","translit":"","en":"time","note":"Gen: часу"},{"uk":"гроші","translit":"","en":"money","note":"Gen: грошей"},{"uk":"ідея","translit":"","en":"idea","note":"Gen: ідеї"},{"uk":"проблема","translit":"","en":"problem","note":"Gen: проблеми"},{"uk":"можливість","translit":"","en":"opportunity","note":"Gen: можливості"},{"uk":"причина","translit":"","en":"reason","note":"Gen: причини"},{"uk":"сенс","translit":"","en":"sense, meaning","note":"Gen: сенсу"},{"uk":"користь","translit":"","en":"benefit","note":"Gen: користі"},{"uk":"значення","translit":"","en":"meaning, significance","note":"Gen: значення"},{"uk":"різниця","translit":"","en":"difference","note":"Gen: різниці"},{"uk":"вибір","translit":"","en":"choice","note":"Gen: вибору"},{"uk":"досвід","translit":"","en":"experience","note":"Gen: досвіду"},{"uk":"знання","translit":"","en":"knowledge","note":"Gen: знань"},{"uk":"інформація","translit":"","en":"information","note":"Gen: інформації"},{"uk":"допомога","translit":"","en":"help","note":"Gen: допомоги"},{"uk":"підтримка","translit":"","en":"support","note":"Gen: підтримки"},{"uk":"увага","translit":"","en":"attention","note":"Gen: уваги"},{"uk":"терпіння","translit":"","en":"patience","note":"Gen: терпіння"},{"uk":"сила","translit":"","en":"strength, power","note":"Gen: сили"},{"uk":"хліб","translit":"","en":"bread","note":"Gen: хліба"},{"uk":"цукор","translit":"","en":"sugar","note":"Gen: цукру"},{"uk":"чашка","translit":"","en":"cup","note":"Gen: чашки"},{"uk":"пляшка","translit":"","en":"bottle","note":"Gen: пляшки"},{"uk":"сторінка","translit":"","en":"page","note":"Gen: сторінки"},{"uk":"кінець","translit":"","en":"end","note":"Gen: кінця"},{"uk":"початок","translit":"","en":"beginning","note":"Gen: початку"},{"uk":"кілограм","translit":"","en":"kilogram","note":"Gen: кілограма"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Genitive Forms","data":{"type":"fill-blank","items":[{"prompt":"У мене немає ___ (час).","answer":"часу","hints":["час"],"options":["часу","часа","час","часи"]},{"prompt":"Тут немає ___ (кава).","answer":"кави","hints":["кава"],"options":["кави","кава","каву","кавою"]},{"prompt":"Без ___, будь ласка. (цукор)","answer":"цукру","options":["цукру","цукор","цукра","цукром"]},{"prompt":"У нього немає ___ (ідея).","answer":"ідеї","hints":["ідея"],"options":["ідеї","ідея","ідею","ідеєю"]},{"prompt":"Немає ___ (проблема).","answer":"проблеми","hints":["проблема"],"options":["проблеми","проблема","проблему","проблем"]},{"prompt":"У тебе немає ___ (гроші).","answer":"грошей","hints":["гроші"],"options":["грошей","гроші","грошима","грошам"]},{"prompt":"Без ___ (причина).","answer":"причини","hints":["причина"],"options":["причини","причина","причину","причиною"]},{"prompt":"Немає ___ (сенс).","answer":"сенсу","hints":["сенс"],"options":["сенсу","сенс","сенса","сенсом"]},{"prompt":"У нас немає ___ (інформація).","answer":"інформації","hints":["інформація"],"options":["інформації","інформація","інформацію","інформацією"]},{"prompt":"Тут немає ___ (вода).","answer":"води","hints":["вода"],"options":["води","вода","воду","водою"]},{"prompt":"Без ___ (допомога).","answer":"допомоги","hints":["допомога"],"options":["допомоги","допомога","допомогу","допомогою"]},{"prompt":"У них немає ___ (можливість).","answer":"можливості","hints":["можливість"],"options":["можливості","можливість","можливістю","можливостей"]}]}},{"id":"activity-1","type":"unjumble","title":"Absence Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["немає мене часу У"],"answer":"У мене немає часу.","translation":"I don't have time."},{"words":["немає Тут кави"],"answer":"Тут немає кави.","translation":"There's no coffee here."},{"words":["цукру Без ласка будь"],"answer":"Без цукру, будь ласка.","translation":"Without sugar, please."},{"words":["проблеми немає У нас"],"answer":"У нас немає проблеми.","translation":"We don't have a problem."},{"words":["грошей нього немає У"],"answer":"У нього немає грошей.","translation":"He doesn't have money."},{"words":["Немає сенсу"],"answer":"Немає сенсу.","translation":"There's no point."},{"words":["ідеї немає тебе У"],"answer":"У тебе немає ідеї.","translation":"You don't have an idea."},{"words":["немає води Тут"],"answer":"Тут немає води.","translation":"There's no water here."},{"words":["допомоги Без"],"answer":"Без допомоги.","translation":"Without help."},{"words":["немає вас інформації У"],"answer":"У вас немає інформації.","translation":"You don't have information."},{"words":["причини без Він пішов"],"answer":"Він пішов без причини.","translation":"He left without reason."},{"words":["можливості У неї немає"],"answer":"У неї немає можливості.","translation":"She doesn't have the opportunity."}]}},{"id":"activity-2","type":"match-up","title":"Nominative to Genitive","data":{"type":"match-up","pairs":[{"left":"час","right":"часу"},{"left":"вода","right":"води"},{"left":"кава","right":"кави"},{"left":"гроші","right":"грошей"},{"left":"ідея","right":"ідеї"},{"left":"проблема","right":"проблеми"},{"left":"цукор","right":"цукру"},{"left":"причина","right":"причини"},{"left":"сенс","right":"сенсу"},{"left":"допомога","right":"допомоги"},{"left":"можливість","right":"можливості"},{"left":"інформація","right":"інформації"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Genitive Knowledge","data":{"type":"quiz","questions":[{"question":"What case do we use after \"немає\"?","options":["Nominative","Accusative","Genitive","Locative"],"correctIndex":2,"explanation":"The genitive case is always used with немає to express absence."},{"question":"How do you say \"I don't have\" in Ukrainian?","options":["Я не маю","У мене немає","Мені немає","Я немає"],"correctIndex":1,"explanation":"Ukrainian uses \"У мене немає\" + genitive."},{"question":"What is the genitive of \"вода\"?","options":["воду","води","водою","воді"],"correctIndex":1,"explanation":"Feminine -а changes to -и in genitive."},{"question":"What preposition means \"without\"?","options":["з","без","для","у"],"correctIndex":1,"explanation":"\"Без\" means \"without\" and requires genitive."},{"question":"What is the genitive of \"час\"?","options":["часа","часу","часі","часом"],"correctIndex":1,"explanation":"Masculine inanimate nouns often take -у."},{"question":"\"Немає сенсу\" means:","options":["There is sense","There is no point/sense","I have sense","Give me sense"],"correctIndex":1,"explanation":"\"Немає\" + genitive = there is no."},{"question":"What is the genitive of \"гроші\" (money)?","options":["гроші","грошима","грошей","грошам"],"correctIndex":2,"explanation":"Plural nouns have special genitive forms."},{"question":"How do you say \"he doesn't have\"?","options":["Він не має","У нього немає","Його немає","Він немає"],"correctIndex":1,"explanation":"Use \"у нього\" for \"he has\" construction."},{"question":"\"Кава без цукру\" means:","options":["Coffee with sugar","Coffee without sugar","Sugar without coffee","Give me sugar"],"correctIndex":1,"explanation":"\"Без\" + genitive = without."},{"question":"What is the genitive of \"проблема\"?","options":["проблеми","проблему","проблемою","проблемі"],"correctIndex":0,"explanation":"Feminine -а changes to -и."},{"question":"\"У нас немає проблеми\" means:","options":["We have a problem","We don't have a problem","Give us a problem","There is a problem"],"correctIndex":1,"explanation":"\"У нас немає\" + genitive = we don't have."},{"question":"Which is correct for \"without help\"?","options":["без допомоги","без допомога","без допомогу","без допомогою"],"correctIndex":0,"explanation":"\"Без\" requires the genitive form."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Genitive Facts","data":{"type":"true-false","statements":[{"statement":"The genitive case is used to express absence.","isTrue":true,"explanation":"Correct! \"Немає\" + genitive = there is no."},{"statement":"\"Немає\" is followed by the accusative case.","isTrue":false,"explanation":"Incorrect! \"Немає\" is always followed by the genitive case."},{"statement":"\"Без\" means \"without\" in Ukrainian.","isTrue":true,"explanation":"Correct! And it requires the genitive case."},{"statement":"Feminine nouns keep -а ending in genitive.","isTrue":false,"explanation":"Incorrect! Feminine -а changes to -и in genitive."},{"statement":"\"У мене немає\" means \"I don't have.\"","isTrue":true,"explanation":"Correct! This is the standard construction for \"not having.\""},{"statement":"Masculine genitive always ends in -а.","isTrue":false,"explanation":"Incorrect! Masculine genitives can end in -у or -а."},{"statement":"\"Грошей\" is the genitive of \"гроші.\"","isTrue":true,"explanation":"Correct! This is the genitive plural form."},{"statement":"\"Без проблем\" uses the nominative case.","isTrue":false,"explanation":"Incorrect! \"Без\" always requires genitive (проблем = genitive plural)."},{"statement":"\"У нього\" means \"he has\" in the possession construction.","isTrue":true,"explanation":"Correct! \"У нього є\" = he has, \"у нього немає\" = he doesn't have."},{"statement":"The genitive is the least common case in Ukrainian.","isTrue":false,"explanation":"Incorrect! The genitive is one of the most frequently used cases."},{"statement":"\"Часу\" is the genitive form of \"час.\"","isTrue":true,"explanation":"Correct! Masculine inanimate nouns often take -у."},{"statement":"\"Ідеї\" is the genitive form of \"ідея.\"","isTrue":true,"explanation":"Correct! Feminine -я changes to -ї in genitive."}]}},{"id":"activity-5","type":"group-sort","title":"Case Forms","data":{"type":"group-sort","groups":[{"id":"nominative","name":"Nominative","items":["час","вода","ідея","проблема"]},{"id":"genitive","name":"Genitive","items":["часу","води","ідеї","проблеми"]},{"id":"accusative","name":"Accusative","items":["воду","ідею","проблему","час"]}],"shuffleItems":true}}];
+    const vocabData = [{"uk":"немає","translit":"","en":"there is no","note":"+ genitive"},{"uk":"нема","translit":"","en":"there is no","note":"colloquial form"},{"uk":"без","translit":"","en":"without","note":"+ genitive"},{"uk":"крім","translit":"","en":"except, besides","note":"+ genitive"},{"uk":"для","translit":"","en":"for","note":"+ genitive"},{"uk":"у/в","translit":"","en":"at (possession)","note":"у мене = I have"},{"uk":"час","translit":"","en":"time","note":"часу in genitive"},{"uk":"гроші","translit":"","en":"money","note":"грошей in genitive"},{"uk":"ідея","translit":"","en":"idea","note":"ідеї in genitive"},{"uk":"проблема","translit":"","en":"problem","note":"проблеми in genitive"},{"uk":"можливість","translit":"","en":"possibility, opportunity","note":"soft stem"},{"uk":"причина","translit":"","en":"reason, cause","note":"причини in genitive"},{"uk":"сенс","translit":"","en":"sense, meaning","note":"сенсу in genitive"},{"uk":"користь","translit":"","en":"benefit, use","note":"soft stem"},{"uk":"значення","translit":"","en":"meaning, significance","note":"neuter -ння"},{"uk":"різниця","translit":"","en":"difference","note":"різниці in genitive"},{"uk":"вибір","translit":"","en":"choice","note":"вибору in genitive"},{"uk":"досвід","translit":"","en":"experience","note":"досвіду in genitive"},{"uk":"знання","translit":"","en":"knowledge","note":"neuter -ння"},{"uk":"інформація","translit":"","en":"information","note":"інформації in genitive"},{"uk":"допомога","translit":"","en":"help, assistance","note":"допомоги in genitive"},{"uk":"підтримка","translit":"","en":"support","note":"підтримки in genitive"},{"uk":"увага","translit":"","en":"attention","note":"уваги in genitive"},{"uk":"терпіння","translit":"","en":"patience","note":"neuter -ння"},{"uk":"сила","translit":"","en":"strength, force","note":"сили in genitive"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1120,8 +901,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1152,8 +933,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1565,7 +1346,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1575,7 +1356,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1776,6 +1559,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

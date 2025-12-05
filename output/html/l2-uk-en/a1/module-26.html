@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 26: Adjectives | Ukrainian A1</title>
+  <title>Module 26: Describing Things — Adjectives | Ukrainian A1</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,15 +478,17 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 26: Adjectives</h1>
+    <h1>Module 26: Describing Things — Adjectives</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
-      <button class="nav-tab" data-section="activity-3">4. Quiz</button>
-      <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-1">2. Fill</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
+      <button class="nav-tab" data-section="activity-3">4. Match</button>
+      <button class="nav-tab" data-section="activity-4">5. Match</button>
+      <button class="nav-tab" data-section="activity-5">6. Quiz</button>
+      <button class="nav-tab" data-section="activity-6">7. T/F</button>
+      <button class="nav-tab" data-section="activity-7">8. Sort</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -469,28 +497,26 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A1 · A1.3</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Adjectives</h2>
-        <p style="color:var(--text-muted)">Describing the World</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Describing Things — Adjectives</h2>
+        <p style="color:var(--text-muted)">Прикметники — Making Your Ukrainian Colorful</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
       <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="bringingwordstolife">Bringing Words to Life</h3>
-<p>So far, you've talked about WHAT things are. Now let's describe HOW they are!</p>
-<ul>
-<li>новий дім (new house)</li>
-<li>нова книга (new book)</li>
-<li>нове місто (new city)</li>
-</ul>
-<p>Adjectives change endings to match the gender of the noun they describe!</p>
+<h3 id="colorssizesandqualities">Colors, Sizes, and Qualities</h3>
+<p>"A big house." "A beautiful city." "An old book." — Adjectives bring language to life! In Ukrainian, adjectives change their endings to match the nouns they describe.</p>
 <blockquote>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian adjectives are incredibly flexible - they can go before OR after the noun, unlike English where they usually come before. "Гарний дім" and "дім гарний" are both correct, though the first is more common. Poets love this flexibility!</p>
+  <p>Unlike English where "big" stays "big" regardless of the noun, Ukrainian adjectives change: великий будинок (big house-m), велика книга (big book-f), велике місто (big city-n). The adjective agrees with the noun in gender and number!</p>
 </blockquote>
 <h2 id="presentation">presentation</h2>
-<h3 id="adjectivegenderagreement">Adjective Gender Agreement</h3>
-<p><strong>Hard adjectives (most common):</strong></p>
+<h3 id="adjectiveagreementthebasics">Adjective Agreement: The Basics</h3>
+<p>Every Ukrainian adjective must agree with its noun in:</p>
+<ul>
+<li><strong>Gender</strong>: masculine, feminine, or neuter</li>
+<li><strong>Number</strong>: singular or plural</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -502,584 +528,469 @@ footer {
 <tbody>
 <tr>
 <td>Masculine</td>
-<td>-ий</td>
-<td>нов<strong>ий</strong> дім</td>
+<td>-ий/-ій</td>
+<td>новий телефон</td>
 </tr>
 <tr>
 <td>Feminine</td>
-<td>-а</td>
-<td>нов<strong>а</strong> книга</td>
+<td>-а/-я</td>
+<td>нова книга</td>
 </tr>
 <tr>
 <td>Neuter</td>
-<td>-е</td>
-<td>нов<strong>е</strong> вікно</td>
+<td>-е/-є</td>
+<td>нове місто</td>
 </tr>
 <tr>
 <td>Plural</td>
 <td>-і</td>
-<td>нов<strong>і</strong> друзі</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Soft adjectives (-ній):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>-ій</td>
-<td>синій колір</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-я</td>
-<td>синя сукня</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-є</td>
-<td>синє небо</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-і</td>
-<td>сині очі</td>
+<td>нові друзі</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Hard vs Soft</strong></p>
-  <p>Most adjectives are "hard" (-ий/-а/-е/-і):</p>
-  <ul>
-  <li>великий, новий, старий, гарний</li>
-  </ul>
-  <p>"Soft" adjectives have -ь before the ending or are colors:</p>
-  <ul>
-  <li>синій, давній, осінній, літній</li>
-  </ul>
+  <p>🔍 <strong>Myth Buster</strong></p>
+  <p><strong>Myth:</strong> You need to memorize separate adjectives for each gender.<br />
+  <strong>Fact:</strong> Just learn the masculine form and change the ending! новий → нова → нове → нові. The stem stays the same!</p>
 </blockquote>
-<h3 id="commondescriptiveadjectives">Common Descriptive Adjectives</h3>
-<p><strong>Size:</strong></p>
+<h3 id="hardstemadjectives">Hard Stem Adjectives (-ий)</h3>
+<p>Most adjectives have hard stems. The masculine form ends in <strong>-ий</strong>:</p>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
-<th>Feminine</th>
+<th>Gender</th>
+<th>Ending</th>
+<th>Example with "новий"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>-ий</td>
+<td>новий друг (new friend)</td>
+</tr>
+<tr>
+<td>F</td>
+<td>-а</td>
+<td>нова подруга (new girlfriend)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>-е</td>
+<td>нове слово (new word)</td>
+</tr>
+<tr>
+<td>Pl</td>
+<td>-і</td>
+<td>нові слова (new words)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common hard stem adjectives:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Masculine</th>
 <th>English</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>великий</td>
+<td>big</td>
 <td>велика</td>
-<td>big, large</td>
+<td>велике</td>
+<td>великі</td>
 </tr>
 <tr>
-<td>маленький</td>
-<td>маленька</td>
+<td>малий</td>
 <td>small</td>
+<td>мала</td>
+<td>мале</td>
+<td>малі</td>
 </tr>
 <tr>
-<td>довгий</td>
-<td>довга</td>
-<td>long</td>
+<td>старий</td>
+<td>old</td>
+<td>стара</td>
+<td>старе</td>
+<td>старі</td>
 </tr>
 <tr>
-<td>короткий</td>
-<td>коротка</td>
-<td>short</td>
+<td>молодий</td>
+<td>young</td>
+<td>молода</td>
+<td>молоде</td>
+<td>молоді</td>
 </tr>
-<tr>
-<td>високий</td>
-<td>висока</td>
-<td>tall, high</td>
-</tr>
-<tr>
-<td>низький</td>
-<td>низька</td>
-<td>short, low</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Quality:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>Feminine</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>гарний</td>
+<td>beautiful</td>
 <td>гарна</td>
-<td>beautiful, nice</td>
-</tr>
-<tr>
-<td>поганий</td>
-<td>погана</td>
-<td>bad</td>
+<td>гарне</td>
+<td>гарні</td>
 </tr>
 <tr>
 <td>добрий</td>
+<td>good/kind</td>
 <td>добра</td>
-<td>good, kind</td>
+<td>добре</td>
+<td>добрі</td>
 </tr>
 <tr>
-<td>злий</td>
-<td>зла</td>
-<td>evil, angry</td>
-</tr>
-<tr>
-<td>новий</td>
-<td>нова</td>
-<td>new</td>
-</tr>
-<tr>
-<td>старий</td>
-<td>стара</td>
-<td>old</td>
+<td>поганий</td>
+<td>bad</td>
+<td>погана</td>
+<td>погане</td>
+<td>погані</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>📜 <strong>History Bite: Гарний</strong></p>
-  <p>"Гарний" (beautiful, nice) is uniquely Ukrainian! It comes from an old word meaning "fitting, proper." Russian uses "красивый" (related to "красный" - red), while Ukrainian chose a different word. "Гарний" sounds softer and is used widely - гарна погода, гарний день, гарна людина!</p>
+  <p>🎬 <strong>Pop Culture Moment: Harry Potter</strong></p>
+  <p>"Це великий замок!" (This is a big castle!) — describing Hogwarts. "Велика зала" (The Great Hall) — feminine! The adjective changes to match.</p>
 </blockquote>
-<h3 id="describingpeople">Describing People</h3>
+<h3 id="softstemadjectives">Soft Stem Adjectives (-ій)</h3>
+<p>Some adjectives have soft stems. The masculine form ends in <strong>-ій</strong>:</p>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
-<th>Feminine</th>
-<th>English</th>
+<th>Gender</th>
+<th>Ending</th>
+<th>Example with "синій"</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>молодий</td>
-<td>молода</td>
-<td>young</td>
+<td>M</td>
+<td>-ій</td>
+<td>синій колір (blue color)</td>
 </tr>
 <tr>
-<td>старий</td>
-<td>стара</td>
-<td>old</td>
+<td>F</td>
+<td>-я</td>
+<td>синя сукня (blue dress)</td>
 </tr>
 <tr>
-<td>розумний</td>
-<td>розумна</td>
-<td>smart</td>
+<td>N</td>
+<td>-є</td>
+<td>синє небо (blue sky)</td>
 </tr>
 <tr>
-<td>дурний</td>
-<td>дурна</td>
-<td>stupid</td>
+<td>Pl</td>
+<td>-і</td>
+<td>сині очі (blue eyes)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common soft stem adjectives:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Masculine</th>
+<th>English</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>синій</td>
+<td>blue</td>
+<td>синя</td>
+<td>синє</td>
+<td>сині</td>
 </tr>
 <tr>
-<td>сильний</td>
-<td>сильна</td>
-<td>strong</td>
+<td>останній</td>
+<td>last</td>
+<td>остання</td>
+<td>останнє</td>
+<td>останні</td>
 </tr>
 <tr>
-<td>слабкий</td>
-<td>слабка</td>
-<td>weak</td>
+<td>домашній</td>
+<td>home/domestic</td>
+<td>домашня</td>
+<td>домашнє</td>
+<td>домашні</td>
 </tr>
 <tr>
-<td>веселий</td>
-<td>весела</td>
-<td>cheerful</td>
+<td>ранній</td>
+<td>early</td>
+<td>рання</td>
+<td>раннє</td>
+<td>ранні</td>
 </tr>
 <tr>
-<td>сумний</td>
-<td>сумна</td>
-<td>sad</td>
-</tr>
-<tr>
-<td>щасливий</td>
-<td>щаслива</td>
-<td>happy</td>
-</tr>
-<tr>
-<td>красивий</td>
-<td>красива</td>
-<td>beautiful</td>
+<td>пізній</td>
+<td>late</td>
+<td>пізня</td>
+<td>пізнє</td>
+<td>пізні</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p>🎯 <strong>Fun Fact: Сильний</strong></p>
-  <p>"Сильний" (strong) is related to "сила" (strength, force). Ukraine's national motto is "Слава Україні! Героям слава!" but you'll also hear "Сила в єдності!" (Strength in unity!) - using this same root.</p>
+  <p>⚡ <strong>Pro Tip</strong></p>
+  <p>Most color adjectives are hard stem (червоний, зелений, жовтий), but синій (blue) is soft stem. Notice the soft sign in the ending: син<strong>і</strong>й, син<strong>я</strong>, син<strong>є</strong>!</p>
 </blockquote>
-<h3 id="describingthings">Describing Things</h3>
+<h3 id="morecommonadjectives">More Common Adjectives</h3>
+<p><strong>Size and Dimension:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>Feminine</th>
 <th>English</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>високий</td>
+<td>tall/high</td>
+<td>висока</td>
+<td>високе</td>
+<td>високі</td>
+</tr>
+<tr>
+<td>низький</td>
+<td>short/low</td>
+<td>низька</td>
+<td>низьке</td>
+<td>низькі</td>
+</tr>
+<tr>
+<td>довгий</td>
+<td>long</td>
+<td>довга</td>
+<td>довге</td>
+<td>довгі</td>
+</tr>
+<tr>
+<td>короткий</td>
+<td>short</td>
+<td>коротка</td>
+<td>коротке</td>
+<td>короткі</td>
+</tr>
+<tr>
+<td>широкий</td>
+<td>wide</td>
+<td>широка</td>
+<td>широке</td>
+<td>широкі</td>
+</tr>
+<tr>
+<td>вузький</td>
+<td>narrow</td>
+<td>вузька</td>
+<td>вузьке</td>
+<td>вузькі</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>In Ukrainian cities: "широка вулиця" (wide street), "висока будівля" (tall building), "довга черга" (long queue). These phrases help you navigate!</p>
+</blockquote>
+<p><strong>Quality and Character:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>розумний</td>
+<td>smart</td>
+<td>розумна</td>
+<td>розумне</td>
+<td>розумні</td>
+</tr>
+<tr>
+<td>дурний</td>
+<td>stupid</td>
+<td>дурна</td>
+<td>дурне</td>
+<td>дурні</td>
+</tr>
+<tr>
+<td>сильний</td>
+<td>strong</td>
+<td>сильна</td>
+<td>сильне</td>
+<td>сильні</td>
+</tr>
+<tr>
+<td>слабкий</td>
+<td>weak</td>
+<td>слабка</td>
+<td>слабке</td>
+<td>слабкі</td>
+</tr>
+<tr>
+<td>швидкий</td>
+<td>fast</td>
+<td>швидка</td>
+<td>швидке</td>
+<td>швидкі</td>
+</tr>
+<tr>
+<td>повільний</td>
+<td>slow</td>
+<td>повільна</td>
+<td>повільне</td>
+<td>повільні</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🎮 <strong>Gamer's Corner</strong></p>
+  <p>In The Witcher games: "сильний монстр" (strong monster), "швидка атака" (fast attack), "розумний вибір" (smart choice). Game descriptions are full of adjectives!</p>
+</blockquote>
+<p><strong>Value and Interest:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>дорогий</td>
-<td>дорога</td>
 <td>expensive</td>
+<td>дорога</td>
+<td>дороге</td>
+<td>дорогі</td>
 </tr>
 <tr>
 <td>дешевий</td>
-<td>дешева</td>
 <td>cheap</td>
+<td>дешева</td>
+<td>дешеве</td>
+<td>дешеві</td>
 </tr>
 <tr>
-<td>легкий</td>
-<td>легка</td>
-<td>easy, light</td>
+<td>цікавий</td>
+<td>interesting</td>
+<td>цікава</td>
+<td>цікаве</td>
+<td>цікаві</td>
 </tr>
 <tr>
-<td>важкий</td>
-<td>важка</td>
-<td>difficult, heavy</td>
+<td>нудний</td>
+<td>boring</td>
+<td>нудна</td>
+<td>нудне</td>
+<td>нудні</td>
 </tr>
 <tr>
-<td>чистий</td>
-<td>чиста</td>
-<td>clean</td>
+<td>важливий</td>
+<td>important</td>
+<td>важлива</td>
+<td>важливе</td>
+<td>важливі</td>
 </tr>
 <tr>
-<td>брудний</td>
-<td>брудна</td>
-<td>dirty</td>
+<td>простий</td>
+<td>simple</td>
+<td>проста</td>
+<td>просте</td>
+<td>прості</td>
 </tr>
 <tr>
-<td>мокрий</td>
-<td>мокра</td>
-<td>wet</td>
-</tr>
-<tr>
-<td>сухий</td>
-<td>суха</td>
-<td>dry</td>
-</tr>
-<tr>
-<td>гарячий</td>
-<td>гаряча</td>
-<td>hot</td>
-</tr>
-<tr>
-<td>холодний</td>
-<td>холодна</td>
-<td>cold</td>
+<td>складний</td>
+<td>complex</td>
+<td>складна</td>
+<td>складне</td>
+<td>складні</td>
 </tr>
 </tbody>
 </table>
+<h3 id="wordorder">Word Order</h3>
+<p>In Ukrainian, adjectives typically come <strong>before</strong> the noun (like in English):</p>
+<ul>
+<li>великий будинок (a big house)</li>
+<li>гарна погода (nice weather)</li>
+<li>цікава книга (an interesting book)</li>
+</ul>
+<p>But in poetic or emphatic speech, they can follow:</p>
+<ul>
+<li>людина добра (a kind person — sounds poetic)</li>
+</ul>
 <blockquote>
-  <p>🔗 <strong>Language Link: Adjective Position</strong></p>
-  <p>In Ukrainian, adjectives typically come BEFORE nouns (like English):</p>
-  <ul>
-  <li><strong>великий</strong> дім (big house)</li>
-  <li><strong>смачна</strong> їжа (tasty food)</li>
-  </ul>
-  <p>But they can come AFTER for emphasis or in fixed expressions:</p>
-  <ul>
-  <li>дівчина <strong>красива</strong> (a beautiful girl - emphatic)</li>
-  <li>вода <strong>мінеральна</strong> (mineral water - fixed phrase)</li>
-  </ul>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>You can stack multiple adjectives: "великий старий будинок" (a big old house), "гарна молода жінка" (a beautiful young woman). Each adjective must agree with the noun!</p>
 </blockquote>
-<h3 id="commonadjectivepairs">Common Adjective Pairs</h3>
-<table>
-<thead>
-<tr>
-<th>Positive</th>
-<th>Negative</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>добрий (good)</td>
-<td>поганий (bad)</td>
-</tr>
-<tr>
-<td>новий (new)</td>
-<td>старий (old)</td>
-</tr>
-<tr>
-<td>великий (big)</td>
-<td>маленький (small)</td>
-</tr>
-<tr>
-<td>легкий (easy)</td>
-<td>важкий (difficult)</td>
-</tr>
-<tr>
-<td>довгий (long)</td>
-<td>короткий (short)</td>
-</tr>
-<tr>
-<td>чистий (clean)</td>
-<td>брудний (dirty)</td>
-</tr>
-<tr>
-<td>мокрий (wet)</td>
-<td>сухий (dry)</td>
-</tr>
-<tr>
-<td>гарячий (hot)</td>
-<td>холодний (cold)</td>
-</tr>
-</tbody>
-</table>
+<h3 id="usingadjectiveswiththisis">Using Adjectives with "Це" (This is)</h3>
+<p>When describing with "це," the adjective often stays in nominative:</p>
+<ul>
+<li>Це великий будинок. (This is a big house.)</li>
+<li>Це нова книга. (This is a new book.)</li>
+<li>Це гарне місто. (This is a beautiful city.)</li>
+</ul>
+<h3 id="adjectivesaspredicates">Adjectives as Predicates</h3>
+<p>Adjectives can also come after the verb "бути" (to be):</p>
+<ul>
+<li>Будинок великий. (The house is big.)</li>
+<li>Книга цікава. (The book is interesting.)</li>
+<li>Місто красиве. (The city is beautiful.)</li>
+</ul>
 <blockquote>
-  <p>🌍 <strong>Real World: Compliments</strong></p>
-  <ul>
-  <li><strong>Ти гарна/гарний!</strong> - You're beautiful/handsome!</li>
-  <li><strong>У тебе гарні очі.</strong> - You have beautiful eyes.</li>
-  <li><strong>Це смачно!</strong> - This is delicious!</li>
-  <li><strong>Яка гарна погода!</strong> - What nice weather!</li>
-  </ul>
+  <p>🎯 <strong>Fun Fact</strong></p>
+  <p>Ukrainian has special "short forms" of adjectives that only exist as predicates: "рад" (glad), "готов" (ready), "певен" (sure). But for A1, focus on the regular forms!</p>
 </blockquote>
 <h2 id="practice">practice</h2>
-<h3 id="matchadjectivestonouns">Match Adjectives to Nouns</h3>
-<p>Form correct phrases:</p>
+<h3 id="exercise1matchtheending">Exercise 1: Match the Ending</h3>
+<p>Choose the correct adjective form:</p>
 <ol>
-<li><p>великий + книга</p></li>
+<li>___ телефон (новий/нова/нове)</li>
+<li>___ книга (великий/велика/велике)</li>
+<li>___ місто (гарний/гарна/гарне)</li>
+<li>___ друзі (добрий/добра/добрі)</li>
 </ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">велика книга</div></div>
-<ol start="2">
-<li><p>новий + вікно</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">нове вікно</div></div>
-<ol start="3">
-<li><p>старий + місто</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">старе місто</div></div>
-<ol start="4">
-<li><p>гарний + друзі</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">гарні друзі</div></div>
-<h3 id="describetheseitems">Describe These Items</h3>
-<ol>
-<li><p>House (big)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">великий дім</div></div>
-<ol start="2">
-<li><p>Book (interesting)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">цікава книга</div></div>
-<ol start="3">
-<li><p>Window (new)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">нове вікно</div></div>
-<ol start="4">
-<li><p>Friends (good)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">добрі друзі</div></div>
-<h3 id="completesentences">Complete Sentences</h3>
-<ol>
-<li><p>Це ___ (new) дім.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">новий</div></div>
-<ol start="2">
-<li><p>Вона ___ (smart) жінка.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">розумна</div></div>
-<ol start="3">
-<li><p>Вони ___ (happy) люди.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">щасливі</div></div>
-<ol start="4">
-<li><p>Це ___ (tasty) їжа.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">смачна</div></div>
-<h2 id="production">production</h2>
-<h3 id="describeyourworld">Describe Your World</h3>
+<h3 id="exercise2describethese">Exercise 2: Describe These</h3>
 <p>Use adjectives to describe:</p>
 <ol>
-<li>Your home: Мій дім… (великий/маленький/новий/старий)</li>
-<li>Your friend: Мій друг… (добрий/розумний/веселий)</li>
-<li>Your city: Моє місто… (гарне/старе/велике)</li>
-<li>Your work: Моя робота… (цікава/важка/легка)</li>
+<li>Ваш дім (your house) → великий/малий/старий/новий</li>
+<li>Ваше місто (your city) → гарне/цікаве/велике</li>
+<li>Ваш друг (your friend) → добрий/розумний/молодий</li>
 </ol>
-<hr />
-<h2 id="adjectiveendingssummary">Adjective Endings Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Masculine</th>
-<th>Feminine</th>
-<th>Neuter</th>
-<th>Plural</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nominative</td>
-<td>новий</td>
-<td>нова</td>
-<td>нове</td>
-<td>нові</td>
-</tr>
-<tr>
-<td>Accusative (inan)</td>
-<td>новий</td>
-<td>нову</td>
-<td>нове</td>
-<td>нові</td>
-</tr>
-<tr>
-<td>Accusative (anim)</td>
-<td>нового</td>
-<td>нову</td>
-<td>нове</td>
-<td>нових</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Hard stems (-ий):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>-ий</td>
-<td>великий будинок</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-а</td>
-<td>велика книга</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-е</td>
-<td>велике місто</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-і</td>
-<td>великі міста</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Soft stems (-ій):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>-ій</td>
-<td>синій колір</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-я</td>
-<td>синя сукня</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-є</td>
-<td>синє небо</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-і</td>
-<td>сині очі</td>
-</tr>
-</tbody>
-</table>
+<h3 id="exercise3transform">Exercise 3: Transform</h3>
+<p>Change the adjective to match:</p>
+<ol>
+<li>новий (телефон → книга) → нова книга</li>
+<li>великий (будинок → місто) → велике місто</li>
+<li>гарний (хлопець → дівчина) → гарна дівчина</li>
+</ol>
+<h2 id="production">production</h2>
+<h3 id="taskdescribeyourworld">Task: Describe Your World</h3>
+<p>Write 8 sentences describing:</p>
+<ul>
+<li>Your home (size, age, quality)</li>
+<li>Your city (size, beauty, interest)</li>
+<li>A friend or family member (character, appearance)</li>
+<li>An object you like (quality, value)</li>
+</ul>
+<p>Use different adjectives for each!</p>
 <hr />
 <hr />
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Adjective Summary</h3>
-      <div class="md-content"><h2 id="hardadjectives">Hard Adjectives (-ий)</h2>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>-ий</td>
-<td>новий</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-а</td>
-<td>нова</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-е</td>
-<td>нове</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-і</td>
-<td>нові</td>
-</tr>
-</tbody>
-</table>
-<h2 id="softadjectives">Soft Adjectives (-ій)</h2>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>-ій</td>
-<td>синій</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-я</td>
-<td>синя</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-є</td>
-<td>синє</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-і</td>
-<td>сині</td>
-</tr>
-</tbody>
-</table>
 <hr /></div>
     </div>
   
@@ -1087,20 +998,27 @@ footer {
     <div class="card section-summary">
       <h3>📋 Summary</h3>
       <div class="md-content"><blockquote>
-  <p>💡 <strong>What You Learned Today</strong></p>
+  <p><strong>Congratulations!</strong></p>
+  <p>You can now describe people, places, and things in Ukrainian:</p>
   <ul>
-  <li>Adjectives agree with noun gender: -ий (m), -а (f), -е (n), -і (pl)</li>
-  <li>Soft adjectives: -ій (m), -я (f), -є (n), -і (pl)</li>
-  <li>Common pairs: великий/маленький, новий/старий</li>
-  <li>Describing people: молодий, розумний, щасливий</li>
-  <li>Describing things: легкий, важкий, цікавий</li>
+  <li><strong>Agreement</strong>: Adjectives match nouns in gender and number</li>
+  <li><strong>Hard stem</strong>: -ий/-а/-е/-і (великий, велика, велике, великі)</li>
+  <li><strong>Soft stem</strong>: -ій/-я/-є/-і (синій, синя, синє, сині)</li>
+  <li><strong>Word order</strong>: Adjective + Noun (гарна погода)</li>
   </ul>
-  <p>🎯 <strong>Coming Next</strong></p>
-  <p>In Module 27, you'll learn about <strong>clothes & appearance</strong>:</p>
+  <p><strong>Key Adjective Categories:</strong></p>
   <ul>
-  <li>Що ти носиш? (What are you wearing?)</li>
-  <li>Clothing vocabulary</li>
-  <li>Describing what people look like</li>
+  <li>Size: великий, малий, високий, низький</li>
+  <li>Quality: гарний, поганий, добрий</li>
+  <li>Character: розумний, сильний, швидкий</li>
+  <li>Value: дорогий, дешевий, цікавий, важливий</li>
+  </ul>
+  <p><strong>Coming Next: Module 27 — Colors & Clothing</strong></p>
+  <p>In the next module, you'll learn:</p>
+  <ul>
+  <li>Colors: червоний, синій, зелений, жовтий…</li>
+  <li>Clothing: сорочка, штани, сукня, взуття…</li>
+  <li>Describing outfits: Вона носить червону сукню.</li>
   </ul>
 </blockquote></div>
     </div>
@@ -1112,54 +1030,71 @@ footer {
   
     
     <section id="activity-0" class="section"><div class="card"><h3>Adjective Agreement</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Opposites</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div id="activity-1-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-1-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Adjective Forms</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Adjective Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Adjective Grammar</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
-      <div id="activity-3-container"></div>
-      <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Adjective Meanings</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-3-container"><svg class="match-lines" id="activity-3-lines"></svg>
+        <div class="match-column" id="activity-3-left"></div>
+        <div class="match-column" id="activity-3-right"></div>
+      </div>
+      <div class="completion-message" id="activity-3-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
-      <div id="activity-4-container"></div>
-      <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Adjective Forms</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-4-container"><svg class="match-lines" id="activity-4-lines"></svg>
+        <div class="match-column" id="activity-4-left"></div>
+        <div class="match-column" id="activity-4-right"></div>
+      </div>
+      <div class="completion-message" id="activity-4-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Adjective Endings by Gender</h3>
+    <section id="activity-5" class="section"><div class="card"><h3>Adjective Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
-      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
-      <div class="sort-groups" id="activity-5-groups"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-5-container"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-6" class="section"><div class="card"><h3>Adjective Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-7" class="section"><div class="card"><h3>Adjective Types</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/17</span></div>
+      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
+      <div class="sort-groups" id="activity-7-groups"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (38)</h3>
+        <h3>Словник (35)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1169,7 +1104,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">новий</td><td class="vocab-ipa">/nɔˈvɪj/</td><td class="vocab-en">new</td><td class="vocab-note">нова (f), нове (n)</td></tr><tr><td class="vocab-uk">старий</td><td class="vocab-ipa">/stɑˈrɪj/</td><td class="vocab-en">old</td><td class="vocab-note">стара (f), старе (n)</td></tr><tr><td class="vocab-uk">гарний</td><td class="vocab-ipa">/ˈɦɑrnɪj/</td><td class="vocab-en">beautiful, nice</td><td class="vocab-note">гарна (f), гарне (n)</td></tr><tr><td class="vocab-uk">красивий</td><td class="vocab-ipa">/krɑˈsɪvɪj/</td><td class="vocab-en">beautiful</td><td class="vocab-note">красива (f), красиве (n)</td></tr><tr><td class="vocab-uk">добрий</td><td class="vocab-ipa">/ˈdɔbrɪj/</td><td class="vocab-en">good, kind</td><td class="vocab-note">добра (f), добре (n)</td></tr><tr><td class="vocab-uk">поганий</td><td class="vocab-ipa">/pɔˈɦɑnɪj/</td><td class="vocab-en">bad</td><td class="vocab-note">погана (f), погане (n)</td></tr><tr><td class="vocab-uk">злий</td><td class="vocab-ipa">/zlɪj/</td><td class="vocab-en">angry, evil</td><td class="vocab-note">зла (f), зле (n)</td></tr><tr><td class="vocab-uk">молодий</td><td class="vocab-ipa">/mɔˈlɔdɪj/</td><td class="vocab-en">young</td><td class="vocab-note">молода (f), молоде (n)</td></tr><tr><td class="vocab-uk">розумний</td><td class="vocab-ipa">/rɔˈzumnɪj/</td><td class="vocab-en">smart</td><td class="vocab-note">розумна (f), розумне (n)</td></tr><tr><td class="vocab-uk">дурний</td><td class="vocab-ipa">/durˈnɪj/</td><td class="vocab-en">stupid</td><td class="vocab-note">дурна (f), дурне (n)</td></tr><tr><td class="vocab-uk">щасливий</td><td class="vocab-ipa">/ʃtʃɑsˈlɪvɪj/</td><td class="vocab-en">happy</td><td class="vocab-note">щаслива (f), щасливе (n)</td></tr><tr><td class="vocab-uk">сумний</td><td class="vocab-ipa">/ˈsumnɪj/</td><td class="vocab-en">sad</td><td class="vocab-note">сумна (f), сумне (n)</td></tr><tr><td class="vocab-uk">легкий</td><td class="vocab-ipa">/ˈlɛɦkɪj/</td><td class="vocab-en">easy, light</td><td class="vocab-note">легка (f), легке (n)</td></tr><tr><td class="vocab-uk">важкий</td><td class="vocab-ipa">/vɑʒˈkɪj/</td><td class="vocab-en">hard, heavy</td><td class="vocab-note">важка (f), важке (n)</td></tr><tr><td class="vocab-uk">чистий</td><td class="vocab-ipa">/ˈtʃɪstɪj/</td><td class="vocab-en">clean</td><td class="vocab-note">чиста (f), чисте (n)</td></tr><tr><td class="vocab-uk">цікавий</td><td class="vocab-ipa">/t͡sʲiˈkɑvɪj/</td><td class="vocab-en">interesting</td><td class="vocab-note">цікава (f), цікаве (n)</td></tr><tr><td class="vocab-uk">нудний</td><td class="vocab-ipa">/nudˈnɪj/</td><td class="vocab-en">boring</td><td class="vocab-note">нудна (f), нудне (n)</td></tr><tr><td class="vocab-uk">великий</td><td class="vocab-ipa">/vɛˈlɪkɪj/</td><td class="vocab-en">big</td><td class="vocab-note">велика (f), велике (n)</td></tr><tr><td class="vocab-uk">маленький</td><td class="vocab-ipa">/mɑˈlɛnʲkɪj/</td><td class="vocab-en">small</td><td class="vocab-note">маленька (f), маленьке (n)</td></tr><tr><td class="vocab-uk">високий</td><td class="vocab-ipa">/vɪˈsɔkɪj/</td><td class="vocab-en">tall, high</td><td class="vocab-note">висока (f), високе (n)</td></tr><tr><td class="vocab-uk">низький</td><td class="vocab-ipa">/nɪzʲˈkɪj/</td><td class="vocab-en">short, low</td><td class="vocab-note">низька (f), низьке (n)</td></tr><tr><td class="vocab-uk">довгий</td><td class="vocab-ipa">/ˈdɔvɦɪj/</td><td class="vocab-en">long</td><td class="vocab-note">довга (f), довге (n)</td></tr><tr><td class="vocab-uk">короткий</td><td class="vocab-ipa">/kɔˈrɔtkɪj/</td><td class="vocab-en">short</td><td class="vocab-note">коротка (f), коротке (n)</td></tr><tr><td class="vocab-uk">широкий</td><td class="vocab-ipa">/ʃɪˈrɔkɪj/</td><td class="vocab-en">wide</td><td class="vocab-note">широка (f), широке (n)</td></tr><tr><td class="vocab-uk">вузький</td><td class="vocab-ipa">/vuzʲˈkɪj/</td><td class="vocab-en">narrow</td><td class="vocab-note">вузька (f), вузьке (n)</td></tr><tr><td class="vocab-uk">сильний</td><td class="vocab-ipa">/ˈsɪlʲnɪj/</td><td class="vocab-en">strong</td><td class="vocab-note">сильна (f), сильне (n)</td></tr><tr><td class="vocab-uk">слабкий</td><td class="vocab-ipa">/slɑbˈkɪj/</td><td class="vocab-en">weak</td><td class="vocab-note">слабка (f), слабке (n)</td></tr><tr><td class="vocab-uk">швидкий</td><td class="vocab-ipa">/ʃvɪdˈkɪj/</td><td class="vocab-en">fast</td><td class="vocab-note">швидка (f), швидке (n)</td></tr><tr><td class="vocab-uk">повільний</td><td class="vocab-ipa">/pɔˈvʲilʲnɪj/</td><td class="vocab-en">slow</td><td class="vocab-note">повільна (f), повільне (n)</td></tr><tr><td class="vocab-uk">дорогий</td><td class="vocab-ipa">/dɔrɔˈɦɪj/</td><td class="vocab-en">expensive, dear</td><td class="vocab-note">дорога (f), дороге (n)</td></tr><tr><td class="vocab-uk">дешевий</td><td class="vocab-ipa">/dɛˈʃɛvɪj/</td><td class="vocab-en">cheap</td><td class="vocab-note">дешева (f), дешеве (n)</td></tr><tr><td class="vocab-uk">простий</td><td class="vocab-ipa">/prɔsˈtɪj/</td><td class="vocab-en">simple</td><td class="vocab-note">проста (f), просте (n)</td></tr><tr><td class="vocab-uk">складний</td><td class="vocab-ipa">/sklɑdˈnɪj/</td><td class="vocab-en">difficult, complex</td><td class="vocab-note">складна (f), складне (n)</td></tr><tr><td class="vocab-uk">важливий</td><td class="vocab-ipa">/vɑʒˈlɪvɪj/</td><td class="vocab-en">important</td><td class="vocab-note">важлива (f), важливе (n)</td></tr><tr><td class="vocab-uk">головний</td><td class="vocab-ipa">/ɦɔlɔvˈnɪj/</td><td class="vocab-en">main</td><td class="vocab-note">головна (f), головне (n)</td></tr><tr><td class="vocab-uk">різний</td><td class="vocab-ipa">/ˈrʲiznɪj/</td><td class="vocab-en">different</td><td class="vocab-note">різна (f), різне (n)</td></tr><tr><td class="vocab-uk">однаковий</td><td class="vocab-ipa">/ɔdˈnɑkɔvɪj/</td><td class="vocab-en">same</td><td class="vocab-note">однакова (f), однакове (n)</td></tr><tr><td class="vocab-uk">особливий</td><td class="vocab-ipa">/ɔsɔˈblɪvɪj/</td><td class="vocab-en">special</td><td class="vocab-note">особлива (f), особливе (n)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">великий</td><td class="vocab-ipa">wɛˈlɪkɪj</td><td class="vocab-en">big, large</td><td class="vocab-note">велика (f), велике (n)</td></tr><tr><td class="vocab-uk">малий</td><td class="vocab-ipa">mɐˈlɪj</td><td class="vocab-en">small, little</td><td class="vocab-note">мала, мале</td></tr><tr><td class="vocab-uk">високий</td><td class="vocab-ipa">wɪˈsɔkɪj</td><td class="vocab-en">tall, high</td><td class="vocab-note">висока, високе</td></tr><tr><td class="vocab-uk">низький</td><td class="vocab-ipa">ˈnɪzʲkɪj</td><td class="vocab-en">short, low</td><td class="vocab-note">низька, низьке</td></tr><tr><td class="vocab-uk">довгий</td><td class="vocab-ipa">ˈdɔwɦɪj</td><td class="vocab-en">long</td><td class="vocab-note">довга, довге</td></tr><tr><td class="vocab-uk">короткий</td><td class="vocab-ipa">kɔˈrɔtkɪj</td><td class="vocab-en">short</td><td class="vocab-note">коротка, коротке</td></tr><tr><td class="vocab-uk">широкий</td><td class="vocab-ipa">ʃɪˈrɔkɪj</td><td class="vocab-en">wide</td><td class="vocab-note">широка, широке</td></tr><tr><td class="vocab-uk">вузький</td><td class="vocab-ipa">ˈwuzʲkɪj</td><td class="vocab-en">narrow</td><td class="vocab-note">вузька, вузьке</td></tr><tr><td class="vocab-uk">новий</td><td class="vocab-ipa">ˈnɔwɪj</td><td class="vocab-en">new</td><td class="vocab-note">нова, нове</td></tr><tr><td class="vocab-uk">старий</td><td class="vocab-ipa">stɐˈrɪj</td><td class="vocab-en">old</td><td class="vocab-note">стара, старе</td></tr><tr><td class="vocab-uk">молодий</td><td class="vocab-ipa">mɔˈlɔdɪj</td><td class="vocab-en">young</td><td class="vocab-note">молода, молоде</td></tr><tr><td class="vocab-uk">гарний</td><td class="vocab-ipa">ˈɦɑrnɪj</td><td class="vocab-en">beautiful, nice</td><td class="vocab-note">гарна, гарне</td></tr><tr><td class="vocab-uk">красивий</td><td class="vocab-ipa">krɐˈsɪwɪj</td><td class="vocab-en">beautiful</td><td class="vocab-note">красива, красиве</td></tr><tr><td class="vocab-uk">поганий</td><td class="vocab-ipa">pɔˈɦɑnɪj</td><td class="vocab-en">bad</td><td class="vocab-note">погана, погане</td></tr><tr><td class="vocab-uk">добрий</td><td class="vocab-ipa">ˈdɔbrɪj</td><td class="vocab-en">good, kind</td><td class="vocab-note">добра, добре</td></tr><tr><td class="vocab-uk">злий</td><td class="vocab-ipa">zlɪj</td><td class="vocab-en">evil, angry</td><td class="vocab-note">зла, зле</td></tr><tr><td class="vocab-uk">розумний</td><td class="vocab-ipa">rɔˈzumnɪj</td><td class="vocab-en">smart, clever</td><td class="vocab-note">розумна, розумне</td></tr><tr><td class="vocab-uk">дурний</td><td class="vocab-ipa">ˈdurnɪj</td><td class="vocab-en">stupid</td><td class="vocab-note">дурна, дурне</td></tr><tr><td class="vocab-uk">сильний</td><td class="vocab-ipa">ˈsɪlʲnɪj</td><td class="vocab-en">strong</td><td class="vocab-note">сильна, сильне</td></tr><tr><td class="vocab-uk">слабкий</td><td class="vocab-ipa">ˈslɑbkɪj</td><td class="vocab-en">weak</td><td class="vocab-note">слабка, слабке</td></tr><tr><td class="vocab-uk">швидкий</td><td class="vocab-ipa">ˈʃwɪdkɪj</td><td class="vocab-en">fast, quick</td><td class="vocab-note">швидка, швидке</td></tr><tr><td class="vocab-uk">повільний</td><td class="vocab-ipa">pɔˈwilʲnɪj</td><td class="vocab-en">slow</td><td class="vocab-note">повільна, повільне</td></tr><tr><td class="vocab-uk">легкий</td><td class="vocab-ipa">ˈlɛɦkɪj</td><td class="vocab-en">easy, light</td><td class="vocab-note">легка, легке</td></tr><tr><td class="vocab-uk">важкий</td><td class="vocab-ipa">wɐʒˈkɪj</td><td class="vocab-en">heavy, difficult</td><td class="vocab-note">важка, важке</td></tr><tr><td class="vocab-uk">дорогий</td><td class="vocab-ipa">dɔrɔˈɦɪj</td><td class="vocab-en">expensive, dear</td><td class="vocab-note">дорога, дороге</td></tr><tr><td class="vocab-uk">дешевий</td><td class="vocab-ipa">dɛˈʃɛwɪj</td><td class="vocab-en">cheap</td><td class="vocab-note">дешева, дешеве</td></tr><tr><td class="vocab-uk">цікавий</td><td class="vocab-ipa">t͡siˈkɑwɪj</td><td class="vocab-en">interesting</td><td class="vocab-note">цікава, цікаве</td></tr><tr><td class="vocab-uk">нудний</td><td class="vocab-ipa">ˈnudnɪj</td><td class="vocab-en">boring</td><td class="vocab-note">нудна, нудне</td></tr><tr><td class="vocab-uk">простий</td><td class="vocab-ipa">prɔsˈtɪj</td><td class="vocab-en">simple</td><td class="vocab-note">проста, просте</td></tr><tr><td class="vocab-uk">складний</td><td class="vocab-ipa">sklɐdˈnɪj</td><td class="vocab-en">complex</td><td class="vocab-note">складна, складне</td></tr><tr><td class="vocab-uk">важливий</td><td class="vocab-ipa">wɐʒˈlɪwɪj</td><td class="vocab-en">important</td><td class="vocab-note">важлива, важливе</td></tr><tr><td class="vocab-uk">головний</td><td class="vocab-ipa">ɦɔˈlɔwnɪj</td><td class="vocab-en">main</td><td class="vocab-note">головна, головне</td></tr><tr><td class="vocab-uk">різний</td><td class="vocab-ipa">ˈriznɪj</td><td class="vocab-en">different</td><td class="vocab-note">різна, різне</td></tr><tr><td class="vocab-uk">однаковий</td><td class="vocab-ipa">ɔdnɐˈkɔwɪj</td><td class="vocab-en">same, identical</td><td class="vocab-note">однакова, однакове</td></tr><tr><td class="vocab-uk">особливий</td><td class="vocab-ipa">ɔsɔˈblɪwɪj</td><td class="vocab-en">special</td><td class="vocab-note">особлива, особливе</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1181,8 +1116,8 @@ footer {
   </main><footer>Module 26 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Adjective Agreement","data":{"type":"fill-blank","items":[{"prompt":"Це дуже ___ і затишний дім. (new - masculine)","answer":"новий","options":["новий","нова","нове","нові"]},{"prompt":"Моя мама читає дуже ___ книгу. (interesting - feminine accusative)","answer":"цікаву","options":["цікавий","цікава","цікаву","цікаві"]},{"prompt":"У кімнаті є ___ велике вікно. (new - neuter)","answer":"нове","options":["новий","нова","нове","нові"]},{"prompt":"Мої ___ друзі живуть у Києві. (new - plural)","answer":"нові","options":["новий","нова","нове","нові"]},{"prompt":"Вона дуже ___ і талановита жінка. (smart - feminine)","answer":"розумна","options":["розумний","розумна","розумне","розумні"]},{"prompt":"Мій сусід ___ і дуже веселий чоловік. (young - masculine)","answer":"молодий","options":["молодий","молода","молоде","молоді"]},{"prompt":"Вони завжди такі ___ і добрі люди. (happy - plural)","answer":"щасливі","options":["щасливий","щаслива","щасливе","щасливі"]},{"prompt":"Львів - дуже ___ і гарне місто. (old - neuter)","answer":"старе","options":["старий","стара","старе","старі"]},{"prompt":"Ця нова робота дуже ___ для мене. (interesting - feminine)","answer":"цікава","options":["цікавий","цікава","цікаве","цікаві"]},{"prompt":"Погода сьогодні зовсім ___ і холодна. (bad - feminine)","answer":"погана","options":["поганий","погана","погане","погані"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["дім","великий","Це","дуже","новий","і","затишний"],"answer":"Це дуже великий новий і затишний дім.","translation":"This is a very big new and cozy house."},{"words":["книга","цікава","Це","моя","улюблена","про","історію"],"answer":"Це моя улюблена цікава книга про історію.","translation":"This is my favorite interesting book about history."},{"words":["нове","Це","вікно","таке","чисте","у","кімнаті"],"answer":"Це таке чисте нове вікно у кімнаті.","translation":"This is such a clean new window in the room."},{"words":["добрі","друзі","Вони","мої","найкращі","з","університету"],"answer":"Вони мої найкращі добрі друзі з університету.","translation":"They are my best good friends from university."},{"words":["розумна","Вона","дуже","жінка","молода","і","талановита"],"answer":"Вона дуже розумна молода і талановита жінка.","translation":"She is a very smart young and talented woman."},{"words":["молодий","чоловік","Він","і","високий","дуже","веселий"],"answer":"Він дуже молодий і високий веселий чоловік.","translation":"He is a very young and tall cheerful man."},{"words":["щасливі","люди","Вони","такі","завжди","і","добрі"],"answer":"Вони завжди такі щасливі і добрі люди.","translation":"They are always such happy and kind people."},{"words":["старе","місто","Львів","таке","гарне","і","цікаве"],"answer":"Львів таке гарне старе і цікаве місто.","translation":"Lviv is such a beautiful old and interesting city."},{"words":["погода","гарна","сьогодні","дуже","і","сонячна","тут"],"answer":"Сьогодні тут дуже гарна і сонячна погода.","translation":"Today here is very nice and sunny weather."},{"words":["важка","робота","Це","але","цікава","і","корисна"],"answer":"Це важка, але цікава і корисна робота.","translation":"This is hard but interesting and useful work."}]}},{"id":"activity-2","type":"match-up","title":"Adjective Forms","data":{"type":"match-up","pairs":[{"left":"новий","right":"нова"},{"left":"старий","right":"стара"},{"left":"великий","right":"велика"},{"left":"маленький","right":"маленька"},{"left":"гарний","right":"гарна"},{"left":"добрий","right":"добра"},{"left":"молодий","right":"молода"},{"left":"розумний","right":"розумна"},{"left":"щасливий","right":"щаслива"},{"left":"цікавий","right":"цікава"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Adjective Grammar","data":{"type":"quiz","questions":[{"question":"What ending do masculine adjectives typically have?","options":["-ий","-а","-е","-і"],"correctIndex":0,"explanation":"Hard masculine adjectives end in -ий"},{"question":"What ending do feminine adjectives have?","options":["-ий","-а","-е","-і"],"correctIndex":1,"explanation":"Feminine adjectives end in -а"},{"question":"What ending do neuter adjectives have?","options":["-ий","-а","-е","-і"],"correctIndex":2,"explanation":"Neuter adjectives end in -е"},{"question":"What ending do plural adjectives have?","options":["-ий","-а","-е","-і"],"correctIndex":3,"explanation":"All plural adjectives end in -і"},{"question":"How do you say \"new book\" (feminine)?","options":["новий книга","нова книга","нове книга","нові книга"],"correctIndex":1,"explanation":"Feminine noun needs feminine adjective"},{"question":"Which is correct for \"old city\" (neuter)?","options":["старий місто","стара місто","старе місто","старі місто"],"correctIndex":2,"explanation":"Neuter noun needs neuter adjective"},{"question":"What does \"гарний\" mean?","options":["beautiful, nice","bad","big","small"],"correctIndex":0,"explanation":"гарний = beautiful, nice"},{"question":"What is the opposite of \"великий\"?","options":["маленький","старий","новий","добрий"],"correctIndex":0,"explanation":"великий (big) ↔ маленький (small)"},{"question":"What is the feminine form of \"щасливий\"?","options":["щасливий","щаслива","щасливе","щасливі"],"correctIndex":1,"explanation":"Feminine -а ending"},{"question":"Where do adjectives usually go in Ukrainian?","options":["Before the noun","After the noun","At the end of sentence","Anywhere"],"correctIndex":0,"explanation":"Usually before: великий дім"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"Adjectives must agree with noun gender","isTrue":true,"explanation":"Correct!"},{"statement":"Masculine adjectives end in -ий","isTrue":true,"explanation":"Correct!"},{"statement":"\"Нове книга\" is correct","isTrue":false,"explanation":"Incorrect. книга is feminine, so \"нова книга\""},{"statement":"Plural adjectives always end in -і","isTrue":true,"explanation":"Correct!"},{"statement":"\"Гарний\" means \"beautiful\" or \"nice\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"Велика дім\" is correct","isTrue":false,"explanation":"Incorrect. дім is masculine, so \"великий дім\""},{"statement":"\"Старе місто\" is correct for \"old city\"","isTrue":true,"explanation":"Correct! місто is neuter"},{"statement":"\"Щаслива жінка\" means \"happy woman\"","isTrue":true,"explanation":"Correct!"},{"statement":"Adjectives always come after the noun","isTrue":false,"explanation":"Incorrect. Usually before: великий дім"},{"statement":"\"Добрий\" and \"добра\" are masculine and feminine forms","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"group-sort","title":"Adjective Endings by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["новий (new)","старий (old)","великий (big)","добрий (good)"],"nameUk":"-ий"},{"id":"feminine","name":"Feminine","items":["нова (new)","стара (old)","велика (big)","добра (good)"],"nameUk":"-а"},{"id":"neuter","name":"Neuter","items":["нове (new)","старе (old)","велике (big)","добре (good)"],"nameUk":"-е"}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"новий","translit":"","en":"new","note":"нова (f), нове (n)"},{"uk":"старий","translit":"","en":"old","note":"стара (f), старе (n)"},{"uk":"гарний","translit":"","en":"beautiful, nice","note":"гарна (f), гарне (n)"},{"uk":"красивий","translit":"","en":"beautiful","note":"красива (f), красиве (n)"},{"uk":"добрий","translit":"","en":"good, kind","note":"добра (f), добре (n)"},{"uk":"поганий","translit":"","en":"bad","note":"погана (f), погане (n)"},{"uk":"злий","translit":"","en":"angry, evil","note":"зла (f), зле (n)"},{"uk":"молодий","translit":"","en":"young","note":"молода (f), молоде (n)"},{"uk":"розумний","translit":"","en":"smart","note":"розумна (f), розумне (n)"},{"uk":"дурний","translit":"","en":"stupid","note":"дурна (f), дурне (n)"},{"uk":"щасливий","translit":"","en":"happy","note":"щаслива (f), щасливе (n)"},{"uk":"сумний","translit":"","en":"sad","note":"сумна (f), сумне (n)"},{"uk":"легкий","translit":"","en":"easy, light","note":"легка (f), легке (n)"},{"uk":"важкий","translit":"","en":"hard, heavy","note":"важка (f), важке (n)"},{"uk":"чистий","translit":"","en":"clean","note":"чиста (f), чисте (n)"},{"uk":"цікавий","translit":"","en":"interesting","note":"цікава (f), цікаве (n)"},{"uk":"нудний","translit":"","en":"boring","note":"нудна (f), нудне (n)"},{"uk":"великий","translit":"","en":"big","note":"велика (f), велике (n)"},{"uk":"маленький","translit":"","en":"small","note":"маленька (f), маленьке (n)"},{"uk":"високий","translit":"","en":"tall, high","note":"висока (f), високе (n)"},{"uk":"низький","translit":"","en":"short, low","note":"низька (f), низьке (n)"},{"uk":"довгий","translit":"","en":"long","note":"довга (f), довге (n)"},{"uk":"короткий","translit":"","en":"short","note":"коротка (f), коротке (n)"},{"uk":"широкий","translit":"","en":"wide","note":"широка (f), широке (n)"},{"uk":"вузький","translit":"","en":"narrow","note":"вузька (f), вузьке (n)"},{"uk":"сильний","translit":"","en":"strong","note":"сильна (f), сильне (n)"},{"uk":"слабкий","translit":"","en":"weak","note":"слабка (f), слабке (n)"},{"uk":"швидкий","translit":"","en":"fast","note":"швидка (f), швидке (n)"},{"uk":"повільний","translit":"","en":"slow","note":"повільна (f), повільне (n)"},{"uk":"дорогий","translit":"","en":"expensive, dear","note":"дорога (f), дороге (n)"},{"uk":"дешевий","translit":"","en":"cheap","note":"дешева (f), дешеве (n)"},{"uk":"простий","translit":"","en":"simple","note":"проста (f), просте (n)"},{"uk":"складний","translit":"","en":"difficult, complex","note":"складна (f), складне (n)"},{"uk":"важливий","translit":"","en":"important","note":"важлива (f), важливе (n)"},{"uk":"головний","translit":"","en":"main","note":"головна (f), головне (n)"},{"uk":"різний","translit":"","en":"different","note":"різна (f), різне (n)"},{"uk":"однаковий","translit":"","en":"same","note":"однакова (f), однакове (n)"},{"uk":"особливий","translit":"","en":"special","note":"особлива (f), особливе (n)"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Adjective Agreement","data":{"type":"fill-blank","items":[{"prompt":"Це ___ будинок.","answer":"великий","options":["великий","велика","велике","великі"]},{"prompt":"Це ___ книга.","answer":"цікава","options":["цікава","цікавий","цікаве","цікаві"]},{"prompt":"Це ___ місто.","answer":"гарне","options":["гарне","гарний","гарна","гарні"]},{"prompt":"Це ___ друзі.","answer":"добрі","options":["добрі","добрий","добра","добре"]},{"prompt":"Вона ___ жінка.","answer":"розумна","options":["розумна","розумний","розумне","розумні"]},{"prompt":"Це ___ слово.","answer":"нове","options":["нове","новий","нова","нові"]},{"prompt":"Він ___ чоловік.","answer":"молодий","options":["молодий","молода","молоде","молоді"]},{"prompt":"Це ___ вулиця.","answer":"широка","options":["широка","широкий","широке","широкі"]},{"prompt":"Книга дуже ___.","answer":"цікава","options":["цікава","цікавий","цікаве","цікаві"]},{"prompt":"Погода сьогодні ___.","answer":"гарна","options":["гарна","гарний","гарне","гарні"]},{"prompt":"Це ___ небо.","answer":"синє","options":["синє","синій","синя","сині"]},{"prompt":"Мої батьки ___.","answer":"добрі","options":["добрі","добрий","добра","добре"]}]}},{"id":"activity-1","type":"fill-blank","title":"Opposites","data":{"type":"fill-blank","items":[{"prompt":"Не великий, а ___.","answer":"малий","options":["малий","старий","новий","добрий"]},{"prompt":"Не новий, а ___.","answer":"старий","options":["старий","молодий","великий","малий"]},{"prompt":"Не швидкий, а ___.","answer":"повільний","options":["повільний","сильний","високий","довгий"]},{"prompt":"Не дорогий, а ___.","answer":"дешевий","options":["дешевий","новий","старий","великий"]},{"prompt":"Не високий, а ___.","answer":"низький","options":["низький","довгий","короткий","широкий"]},{"prompt":"Не довгий, а ___.","answer":"короткий","options":["короткий","високий","низький","вузький"]},{"prompt":"Не цікавий, а ___.","answer":"нудний","options":["нудний","простий","складний","важливий"]},{"prompt":"Не добрий, а ___.","answer":"поганий","options":["поганий","злий","дурний","слабкий"]},{"prompt":"Не сильний, а ___.","answer":"слабкий","options":["слабкий","повільний","малий","короткий"]},{"prompt":"Не простий, а ___.","answer":"складний","options":["складний","важливий","цікавий","нудний"]},{"prompt":"Не молодий, а ___.","answer":"старий","options":["старий","новий","великий","малий"]},{"prompt":"Не широкий, а ___.","answer":"вузький","options":["вузький","довгий","короткий","низький"]}]}},{"id":"activity-2","type":"unjumble","title":"Adjective Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["великий будинок Це"],"answer":"Це великий будинок.","translation":"This is a big house."},{"words":["книга цікава Ця"],"answer":"Ця книга цікава.","translation":"This book is interesting."},{"words":["гарне місто Київ"],"answer":"Київ — гарне місто.","translation":"Kyiv is a beautiful city."},{"words":["Моя подруга розумна"],"answer":"Моя подруга розумна.","translation":"My friend is smart. — female"},{"words":["старий У мене телефон"],"answer":"У мене старий телефон.","translation":"I have an old phone."},{"words":["висока Ця будівля дуже"],"answer":"Ця будівля дуже висока.","translation":"This building is very tall."},{"words":["добра людина Він"],"answer":"Він добра людина.","translation":"He is a good person."},{"words":["сині очі У неї"],"answer":"У неї сині очі.","translation":"She has blue eyes."},{"words":["нова машина Це"],"answer":"Це нова машина.","translation":"This is a new car."},{"words":["довга вулиця Ця"],"answer":"Ця вулиця довга.","translation":"This street is long."},{"words":["швидкий поїзд Це"],"answer":"Це швидкий поїзд.","translation":"This is a fast train."},{"words":["молоді студенти Вони"],"answer":"Вони молоді студенти.","translation":"They are young students."}]}},{"id":"activity-3","type":"match-up","title":"Adjective Meanings","data":{"type":"match-up","pairs":[{"left":"великий","right":"big"},{"left":"малий","right":"small"},{"left":"новий","right":"new"},{"left":"старий","right":"old"},{"left":"гарний","right":"beautiful"},{"left":"поганий","right":"bad"},{"left":"добрий","right":"good, kind"},{"left":"швидкий","right":"fast"},{"left":"повільний","right":"slow"},{"left":"цікавий","right":"interesting"},{"left":"нудний","right":"boring"},{"left":"важливий","right":"important"}],"shuffleRight":true}},{"id":"activity-4","type":"match-up","title":"Adjective Forms","data":{"type":"match-up","pairs":[{"left":"великий","right":"велика"},{"left":"новий","right":"нова"},{"left":"старий","right":"стара"},{"left":"гарний","right":"гарна"},{"left":"синій","right":"синя"},{"left":"добрий","right":"добра"},{"left":"дорогий","right":"дорога"},{"left":"молодий","right":"молода"},{"left":"розумний","right":"розумна"},{"left":"цікавий","right":"цікава"},{"left":"високий","right":"висока"},{"left":"швидкий","right":"швидка"}],"shuffleRight":true}},{"id":"activity-5","type":"quiz","title":"Adjective Knowledge","data":{"type":"quiz","questions":[{"question":"What determines the adjective ending?","options":["The verb","The noun's gender and number","The subject","The sentence position"],"correctIndex":1,"explanation":"Adjectives agree with nouns in gender and number."},{"question":"\"Нова книга\" — what gender is \"книга\"?","options":["Masculine","Feminine","Neuter","Plural"],"correctIndex":1,"explanation":"\"Нова\" is feminine, matching \"книга.\""},{"question":"What's the neuter form of \"великий\"?","options":["велика","велике","великі","великого"],"correctIndex":1,"explanation":"Neuter adjectives end in -е: велике."},{"question":"\"Синій\" is a ___ stem adjective.","options":["Hard","Soft","Mixed","Irregular"],"correctIndex":1,"explanation":"Soft stem: -ій/-я/-є/-і."},{"question":"What's the plural of \"новий\"?","options":["нова","нове","нові","новий"],"correctIndex":2,"explanation":"All plural adjectives end in -і."},{"question":"\"Це гарне місто\" — why \"гарне\"?","options":["Because \"це\" is neuter","Because \"місто\" is neuter","Because it's plural","It's always \"гарне\""],"correctIndex":1,"explanation":"The adjective matches \"місто\" (neuter)."},{"question":"Where do adjectives usually go?","options":["Before the noun","After the noun","After the verb","At the end of the sentence"],"correctIndex":0,"explanation":"Like English: великий будинок (big house)."},{"question":"\"Вона розумна жінка\" — why \"розумна\"?","options":["Because \"жінка\" is feminine","Because \"вона\" is feminine","Because it's plural","Random choice"],"correctIndex":0,"explanation":"Adjective agrees with \"жінка.\""},{"question":"What's the opposite of \"великий\"?","options":["малий","новий","старий","добрий"],"correctIndex":0,"explanation":"Великий (big) ↔ малий (small)."},{"question":"\"Добрі друзі\" — why \"добрі\"?","options":["Because \"друзі\" is masculine","Because \"друзі\" is feminine","Because \"друзі\" is plural","It's always \"добрі\""],"correctIndex":2,"explanation":"Plural adjectives always end in -і."},{"question":"Which is a soft stem adjective?","options":["великий","новий","синій","старий"],"correctIndex":2,"explanation":"\"Синій\" ends in -ій (soft)."},{"question":"\"Цікавий фільм\" → feminine would be:","options":["цікава книга","цікавий книга","цікаве книга","цікаві книга"],"correctIndex":0,"explanation":"Feminine: -ий → -а."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-6","type":"true-false","title":"Adjective Facts","data":{"type":"true-false","statements":[{"statement":"Adjectives must agree with nouns in gender.","isTrue":true,"explanation":"Correct! Великий (m), велика (f), велике (n)."},{"statement":"All adjectives end in -ий in masculine.","isTrue":false,"explanation":"Incorrect! Soft stem adjectives end in -ій (синій)."},{"statement":"Plural adjectives always end in -і.","isTrue":true,"explanation":"Correct! Нові, великі, гарні — all end in -і."},{"statement":"\"Синій\" is a hard stem adjective.","isTrue":false,"explanation":"Incorrect! \"Синій\" is soft stem (-ій/-я/-є/-і)."},{"statement":"Adjectives usually come before nouns.","isTrue":true,"explanation":"Correct! Like English: гарний день (nice day)."},{"statement":"The adjective ending depends on the verb.","isTrue":false,"explanation":"Incorrect! It depends on the noun's gender and number."},{"statement":"\"Добрий\" and \"добра\" are the same adjective.","isTrue":true,"explanation":"Correct! Just different genders of the same word."},{"statement":"Neuter adjectives end in -е or -є.","isTrue":true,"explanation":"Correct! Велике (hard), синє (soft)."},{"statement":"\"Великий\" and \"малий\" mean the same thing.","isTrue":false,"explanation":"Incorrect! Великий = big, малий = small (opposites)."},{"statement":"You can use multiple adjectives with one noun.","isTrue":true,"explanation":"Correct! \"Великий старий будинок\" (big old house)."},{"statement":"\"Нове\" is masculine.","isTrue":false,"explanation":"Incorrect! \"Нове\" is neuter. Masculine is \"новий.\""},{"statement":"\"Висока будівля\" means \"tall building.\"","isTrue":true,"explanation":"Correct! \"Висока\" (f) matches \"будівля\" (f)."}]}},{"id":"activity-7","type":"group-sort","title":"Adjective Types","data":{"type":"group-sort","groups":[{"id":"hard-stem","name":"Hard Stem","items":["великий","малий","новий","старий","гарний","добрий"],"nameUk":"-ий"},{"id":"soft-stem","name":"Soft Stem","items":["синій","останній","домашній","ранній","пізній"],"nameUk":"-ій"},{"id":"size-adjectives","name":"Size Adjectives","items":["великий","малий","високий","низький","довгий","короткий"]}],"shuffleItems":true}}];
+    const vocabData = [{"uk":"великий","translit":"","en":"big, large","note":"велика (f), велике (n)"},{"uk":"малий","translit":"","en":"small, little","note":"мала, мале"},{"uk":"високий","translit":"","en":"tall, high","note":"висока, високе"},{"uk":"низький","translit":"","en":"short, low","note":"низька, низьке"},{"uk":"довгий","translit":"","en":"long","note":"довга, довге"},{"uk":"короткий","translit":"","en":"short","note":"коротка, коротке"},{"uk":"широкий","translit":"","en":"wide","note":"широка, широке"},{"uk":"вузький","translit":"","en":"narrow","note":"вузька, вузьке"},{"uk":"новий","translit":"","en":"new","note":"нова, нове"},{"uk":"старий","translit":"","en":"old","note":"стара, старе"},{"uk":"молодий","translit":"","en":"young","note":"молода, молоде"},{"uk":"гарний","translit":"","en":"beautiful, nice","note":"гарна, гарне"},{"uk":"красивий","translit":"","en":"beautiful","note":"красива, красиве"},{"uk":"поганий","translit":"","en":"bad","note":"погана, погане"},{"uk":"добрий","translit":"","en":"good, kind","note":"добра, добре"},{"uk":"злий","translit":"","en":"evil, angry","note":"зла, зле"},{"uk":"розумний","translit":"","en":"smart, clever","note":"розумна, розумне"},{"uk":"дурний","translit":"","en":"stupid","note":"дурна, дурне"},{"uk":"сильний","translit":"","en":"strong","note":"сильна, сильне"},{"uk":"слабкий","translit":"","en":"weak","note":"слабка, слабке"},{"uk":"швидкий","translit":"","en":"fast, quick","note":"швидка, швидке"},{"uk":"повільний","translit":"","en":"slow","note":"повільна, повільне"},{"uk":"легкий","translit":"","en":"easy, light","note":"легка, легке"},{"uk":"важкий","translit":"","en":"heavy, difficult","note":"важка, важке"},{"uk":"дорогий","translit":"","en":"expensive, dear","note":"дорога, дороге"},{"uk":"дешевий","translit":"","en":"cheap","note":"дешева, дешеве"},{"uk":"цікавий","translit":"","en":"interesting","note":"цікава, цікаве"},{"uk":"нудний","translit":"","en":"boring","note":"нудна, нудне"},{"uk":"простий","translit":"","en":"simple","note":"проста, просте"},{"uk":"складний","translit":"","en":"complex","note":"складна, складне"},{"uk":"важливий","translit":"","en":"important","note":"важлива, важливе"},{"uk":"головний","translit":"","en":"main","note":"головна, головне"},{"uk":"різний","translit":"","en":"different","note":"різна, різне"},{"uk":"однаковий","translit":"","en":"same, identical","note":"однакова, однакове"},{"uk":"особливий","translit":"","en":"special","note":"особлива, особливе"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1234,8 +1169,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1266,8 +1201,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1679,7 +1614,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1689,7 +1624,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1890,6 +1827,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

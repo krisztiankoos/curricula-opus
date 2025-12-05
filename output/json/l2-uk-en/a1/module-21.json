@@ -13,116 +13,154 @@
     "moduleNumber": 21,
     "moduleType": "grammar",
     "immersionLevel": 0.3,
-    "title": "The Past Tense",
-    "subtitle": "What Happened Yesterday",
-    "description": "Form past tense for all genders",
+    "title": "Yesterday: Past Tense",
+    "subtitle": "Talking about what already happened",
+    "description": "Form past tense verbs with L-participle",
     "objectives": [
-      "Form past tense for all genders",
-      "Use past tense in sentences",
-      "Tell stories about past events",
-      "Understand the simple past tense pattern"
+      "Form past tense verbs with L-participle",
+      "Use correct gender endings (він/вона/воно)",
+      "Talk about past actions and events",
+      "Use time expressions for the past"
     ],
     "grammarFocus": [
-      "Past tense formation (-в/-ла/-ло/-ли)",
+      "Past tense formation (L-participle)",
       "Gender agreement in past tense",
-      "Бути in past tense (був/була/було/були)"
+      "Past time expressions"
     ],
     "tags": [
       "grammar",
       "verbs",
       "past-tense"
     ],
-    "totalDuration": 55,
-    "transliterationMode": "full",
+    "totalDuration": 45,
+    "transliterationMode": "none",
     "sections": [
       {
         "id": "section-intro",
         "name": "Вступ",
         "nameEn": "Introduction",
         "type": "intro",
-        "content": "## warm-up\n\n### Yesterday, Last Week, Long Ago...\n\nSo far, you've only spoken about NOW (present tense). Time to unlock the past!\n\nUkrainian past tense is beautifully simple - just ONE past tense form (unlike English with its \"I did,\" \"I was doing,\" \"I had done,\" etc.). But there's a twist: the verb must match the GENDER of the subject!\n\n- Я читав. (I read - male speaker)\n- Я читала. (I read - female speaker)\n\n> 💡 **Did You Know?**\n>\n> Ukrainian past tense comes from an ancient past participle + the verb \"to be.\" Originally, \"я читав єсмь\" (I am having-read) became just \"я читав.\" The \"to be\" disappeared, but the gender agreement from the participle remained. That's why past tense verbs change for gender!\n\n## presentation\n\n### Past Tense Formation\n\nTake the infinitive, remove -ти, add past endings:\n\n| Gender | Ending | читати → |\n|--------|--------|----------|\n| Masculine | -в | читав |\n| Feminine | -ла | читала |\n| Neuter | -ло | читало |\n| Plural (all) | -ли | читали |\n\n**Full pattern:**\n\n| Subject | читати | робити | говорити |\n|---------|--------|--------|----------|\n| він | читав | робив | говорив |\n| вона | читала | робила | говорила |\n| воно | читало | робило | говорило |\n| вони | читали | робили | говорили |\n| я (m) | читав | робив | говорив |\n| я (f) | читала | робила | говорила |\n| ти (m) | читав | робив | говорив |\n| ти (f) | читала | робила | говорила |\n| ми | читали | робили | говорили |\n| ви | читали | робили | говорили |\n\n> ⚡ **Pro Tip: Gender Matters for Я and Ти!**\n>\n> Unlike English \"I\" which never changes, Ukrainian past tense reveals the speaker's gender:\n> - Де ти **був**? (Where were you? - to a man)\n> - Де ти **була**? (Where were you? - to a woman)\n>\n> This also applies to \"I\" - use the form matching YOUR gender!\n\n### The Verb \"To Be\" (Бути) in Past\n\n| Subject | Past Tense | Example |\n|---------|------------|---------|\n| він | був | Він був удома. (He was at home.) |\n| вона | була | Вона була в школі. (She was at school.) |\n| воно | було | Все було добре. (Everything was fine.) |\n| вони | були | Вони були разом. (They were together.) |\n| я (m) | був | Я був там. (I was there.) |\n| я (f) | була | Я була там. (I was there.) |\n\n> 📜 **History Bite: The Disappearing \"To Be\"**\n>\n> In Old East Slavic, \"I was\" was \"я був єсмь\" - the \"єсмь\" (I am) has completely vanished in modern Ukrainian past tense. However, traces remain in formal/archaic contexts and in the conditional mood (б). Languages constantly simplify!\n\n### Special Past Tense Forms\n\nSome verbs have irregular past tense stems:\n\n| Infinitive | He | She | They |\n|------------|-----|------|------|\n| їсти (eat) | їв | їла | їли |\n| пити (drink) | пив | пила | пили |\n| йти (go) | ішов | ішла | ішли |\n| могти (can) | міг | могла | могли |\n| нести (carry) | ніс | несла | несли |\n| везти (transport) | віз | везла | везли |\n\n> 🎯 **Fun Fact: Ішов vs Йшов**\n>\n> \"Йти\" (to go on foot) has a unique past: ішов/ішла/ішли. The initial \"й\" transforms to \"і\" in the past. This verb is highly irregular in many Slavic languages - it's so common that it resisted regularization!\n\n### Common Past Tense Verbs\n\n| Infinitive | Meaning | Він | Вона |\n|------------|---------|-----|------|\n| працювати | work | працював | працювала |\n| жити | live | жив | жила |\n| знати | know | знав | знала |\n| хотіти | want | хотів | хотіла |\n| бачити | see | бачив | бачила |\n| любити | love | любив | любила |\n| купити | buy | купив | купила |\n| дивитися | watch | дивився | дивилася |\n\n> 🔗 **Language Link: Reflexive Verbs**\n>\n> Reflexive verbs (-ся) keep -ся in past tense:\n> - дивитися → дивився/дивилася (watched)\n> - вчитися → вчився/вчилася (studied)\n> - називатися → називався/називалася (was called)\n\n### Time Expressions for Past\n\n| Ukrainian | Transliteration | English |\n|-----------|-----------------|---------|\n| вчора | vchora | yesterday |\n| позавчора | pozavchora | day before yesterday |\n| минулого тижня | mynuloho tyzhnya | last week |\n| минулого місяця | mynuloho misyatsya | last month |\n| минулого року | mynuloho roku | last year |\n| давно | davno | long ago |\n| недавно | nedavno | recently |\n| раніше | ranishe | earlier, before |\n\n> 🌍 **Real World: Talking About Yesterday**\n>\n> - **Що ти робив учора?** - What did you do yesterday?\n> - **Я працював.** - I worked.\n> - **Де ви були минулого тижня?** - Where were you last week?\n> - **Ми були у Львові.** - We were in Lviv.\n\n## practice\n\n### Form Past Tense\n\nChange to past (он):\n1. читати\n   > [!answer] читав\n2. писати\n   > [!answer] писав\n3. робити\n   > [!answer] робив\n4. їсти\n   > [!answer] їв\n5. йти\n   > [!answer] ішов\n\nChange to past (вона):\n1. говорити\n   > [!answer] говорила\n2. знати\n   > [!answer] знала\n3. пити\n   > [!answer] пила\n4. бути\n   > [!answer] була\n5. працювати\n   > [!answer] працювала\n\n### Complete Sentences\n\n1. Він ___ (читати) книгу.\n   > [!answer] читав\n2. Вона ___ (бути) в школі.\n   > [!answer] була\n3. Ми ___ (дивитися) фільм.\n   > [!answer] дивилися\n4. Вони ___ (їсти) піцу.\n   > [!answer] їли\n5. Я (f) ___ (працювати) вчора.\n   > [!answer] працювала\n\n### Tell About Yesterday\n\nAnswer these questions:\n1. Де ви були вчора?\n2. Що ви їли на сніданок?\n3. Чи ви читали книгу?\n4. Що ви дивилися ввечері?\n\n## production\n\n### Share Your Day\n\nDescribe what you did yesterday using past tense:\n- Вчора я встав/встала о сьомій годині.\n- Я їв/їла кашу на сніданок.\n- Потім я працював/працювала.\n- Увечері я дивився/дивилася фільм.\n\n---\n\n## Past Tense Summary\n\n| Person | Masculine | Feminine | Neuter | Plural |\n|--------|-----------|----------|--------|--------|\n| я | читав | читала | - | - |\n| ти | читав | читала | - | - |\n| він | читав | - | - | - |\n| вона | - | читала | - | - |\n| воно | - | - | читало | - |\n| ми/ви/вони | - | - | - | читали |\n\n**Formation:** Stem + gender/number ending\n- Masculine: -в (читав)\n- Feminine: -ла (читала)\n- Neuter: -ло (читало)\n- Plural: -ли (читали)\n\n**Бути (to be) in past:**\n| Form | Example |\n|------|---------|\n| був | Він був там |\n| була | Вона була тут |\n| було | Це було добре |\n| були | Вони були разом |\n\n---\n\n\n---\n\n\n---"
-      },
-      {
-        "id": "section-past-tense-summary",
-        "name": "Past Tense Summary",
-        "type": "content",
-        "content": "## Formation\n\n**Stem + ending:**\n- Remove -ти from infinitive\n- Add: -в (m), -ла (f), -ло (n), -ли (pl)\n\n## Agreement\n\n| Subject | Ending | Example |\n|---------|--------|---------|\n| він, я(m), ти(m) | -в | читав |\n| вона, я(f), ти(f) | -ла | читала |\n| воно | -ло | читало |\n| вони, ми, ви | -ли | читали |\n\n## Key Irregulars\n\n| Infinitive | M | F | Pl |\n|------------|---|---|-----|\n| бути | був | була | були |\n| їсти | їв | їла | їли |\n| пити | пив | пила | пили |\n| йти | ішов | ішла | ішли |\n\n---"
+        "content": "## warm-up\n\n### Welcome to A1.3: Time & Self!\n\nYou've learned to talk about what IS. Now it's time to talk about what WAS! The past tense opens up a whole new world — sharing stories, explaining what happened, and connecting with people through shared experiences.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian past tense is actually simpler than English! There's only ONE past form (no \"was reading\" vs \"read\" vs \"had read\"). The catch? It changes based on the **gender** of the subject!\n\n## presentation\n\n### Past Tense Formation\n\nThe past tense uses the **L-participle** — take the infinitive stem and add endings:\n\n| Subject | Ending | Example (читати) |\n|---------|--------|------------------|\n| він (he) | -в | читав |\n| вона (she) | -ла | читала |\n| воно (it) | -ло | читало |\n| вони (they) | -ли | читали |\n| я (I) - male | -в | я читав |\n| я (I) - female | -ла | я читала |\n| ти (you) - male | -в | ти читав |\n| ти (you) - female | -ла | ти читала |\n| ми (we) | -ли | ми читали |\n| ви (you pl/formal) | -ли | ви читали |\n\n> ⚡ **Pro Tip**\n>\n> The past tense ending tells you the GENDER of who did the action! If someone says \"Я читала,\" you know it's a woman speaking. \"Я читав\" = a man.\n\n### Forming the Stem\n\n1. Take the infinitive: **читати**\n2. Remove **-ти**: **чита-**\n3. Add ending: **читав, читала, читало, читали**\n\nMore examples:\n\n| Infinitive | He | She | They |\n|------------|----|----|------|\n| працювати | працював | працювала | працювали |\n| говорити | говорив | говорила | говорили |\n| робити | робив | робила | робили |\n| бачити | бачив | бачила | бачили |\n\n> 🔍 **Myth Buster**\n>\n> **Myth:** \"Ukrainian verbs are impossibly complex!\"\n> **Fact:** Past tense is actually EASIER than present! Same form for all persons — only gender changes. Compare: він читав, вона читала vs він читає, вони читають.\n\n### Special Past Forms\n\nSome verbs have consonant changes or irregular stems:\n\n| Infinitive | Past Stem | Example |\n|------------|-----------|---------|\n| іти (to go) | йшов/йшла | Він йшов додому. |\n| їсти (to eat) | їв/їла | Вона їла борщ. |\n| піти (to go/leave) | пішов/пішла | Він пішов. |\n| прийти (to come) | прийшов/прийшла | Вона прийшла. |\n| взяти (to take) | взяв/взяла | Він взяв книгу. |\n| сказати (to say) | сказав/сказала | Вона сказала. |\n\n> 🎬 **Pop Culture Moment: S.T.A.L.K.E.R.**\n>\n> \"Він пішов у Зону і не повернувся\" (He went to the Zone and didn't return). In gaming, past tense tells the tragic stories!\n\n### Past Time Expressions\n\n| Ukrainian | English |\n|-----------|---------|\n| вчора | yesterday |\n| позавчора | the day before yesterday |\n| минулого тижня | last week |\n| минулого місяця | last month |\n| минулого року | last year |\n| давно | long ago |\n| недавно | recently |\n| раніше | earlier, before |\n| колись | once, sometime |\n\n> 🌍 **Real World**\n>\n> \"Що ти робив учора?\" (What did you do yesterday?) is one of the most common conversation starters. Now you can answer!\n\n### Negation in Past Tense\n\nJust add **не** before the verb:\n\n| Positive | Negative |\n|----------|----------|\n| Я читав. | Я **не** читав. |\n| Вона працювала. | Вона **не** працювала. |\n| Вони говорили. | Вони **не** говорили. |\n\n### The Verb \"бути\" (to be) in Past\n\nUnlike present (where \"to be\" is usually omitted), past tense uses **був/була/було/були**:\n\n| Subject | Form | Example |\n|---------|------|---------|\n| він | був | Він був тут. (He was here.) |\n| вона | була | Вона була вчителькою. (She was a teacher.) |\n| воно | було | Це було цікаво. (It was interesting.) |\n| вони | були | Вони були в Києві. (They were in Kyiv.) |\n\n> 💡 **Did You Know?**\n>\n> \"Було\" (it was) is incredibly common in expressions: \"Було смачно!\" (It was tasty!), \"Було цікаво!\" (It was interesting!), \"Як було?\" (How was it?)\n\n## practice\n\n### Exercise 1: Transform to Past Tense\n\nChange to past tense (masculine form):\n\n1. читати → він ___\n   > [!answer] читав\n\n2. працювати → він ___\n   > [!answer] працював\n\n3. говорити → він ___\n   > [!answer] говорив\n\n4. їсти → він ___\n   > [!answer] їв\n\n5. іти → він ___\n   > [!answer] йшов\n\n### Exercise 2: Choose the Right Gender\n\n1. Марія ___ (читати) книгу.\n   > [!answer] читала\n\n2. Іван ___ (працювати) вчора.\n   > [!answer] працював\n\n3. Діти ___ (грати) в парку.\n   > [!answer] грали\n\n4. Воно ___ (бути) цікаво.\n   > [!answer] було\n\n## production\n\n### Tell Your Story\n\nWhat did you do yesterday? Use these prompts:\n\n- Вчора я... (читав/читала, працював/працювала, їв/їла...)\n- Минулого тижня я... (був/була в..., бачив/бачила...)\n- Раніше я часто... (говорив/говорила, ходив/ходила...)\n\nShare 3-4 sentences about your past!\n\n---\n\n\n---\n\n\n---"
       },
       {
         "id": "section-summary",
         "name": "Підсумок",
         "nameEn": "Summary",
         "type": "summary",
-        "content": "> 💡 **What You Learned Today**\n>\n> - Past tense endings: -в (m), -ла (f), -ло (n), -ли (pl)\n> - Subject gender determines verb ending\n> - Key irregular: бути (був/була/було/були)\n> - Time words: вчора, давно, минулого тижня\n> - Reflexive verbs keep -ся in past\n\n> 🎯 **Coming Next**\n>\n> In Module 22, you'll learn the **future tense**:\n> - Я буду читати. (I will read.)\n> - Він прочитає книгу. (He will read the book.)\n> - Two ways to express future!"
+        "content": "> **What You Learned Today**\n>\n> - Past tense formation: infinitive stem + ending\n> - Gender agreement: -в (m), -ла (f), -ло (n), -ли (pl)\n> - \"Бути\" in past: був, була, було, були\n> - Time expressions: вчора, минулого тижня, давно\n> - Negation: не + past verb\n\n> **Coming Next**\n>\n> In Module 22, you'll learn **Future Tense**:\n> - Compound future: буду + infinitive\n> - Future time expressions: завтра, наступного тижня\n> - Making plans and predictions"
       }
     ],
-    "rawMarkdown": "---\ntitle: \"The Past Tense\"\nsubtitle: \"What Happened Yesterday\"\nphase: A1.3\nduration: 55\ntransliteration: full\ntags: [grammar, verbs, past-tense]\nobjectives:\n  - Form past tense for all genders\n  - Use past tense in sentences\n  - Tell stories about past events\n  - Understand the simple past tense pattern\ngrammar:\n  - Past tense formation (-в/-ла/-ло/-ли)\n  - Gender agreement in past tense\n  - Бути in past tense (був/була/було/були)\n---\n\n# Lesson Content\n\n## warm-up\n\n### Yesterday, Last Week, Long Ago...\n\nSo far, you've only spoken about NOW (present tense). Time to unlock the past!\n\nUkrainian past tense is beautifully simple - just ONE past tense form (unlike English with its \"I did,\" \"I was doing,\" \"I had done,\" etc.). But there's a twist: the verb must match the GENDER of the subject!\n\n- Я читав. (I read - male speaker)\n- Я читала. (I read - female speaker)\n\n> 💡 **Did You Know?**\n>\n> Ukrainian past tense comes from an ancient past participle + the verb \"to be.\" Originally, \"я читав єсмь\" (I am having-read) became just \"я читав.\" The \"to be\" disappeared, but the gender agreement from the participle remained. That's why past tense verbs change for gender!\n\n## presentation\n\n### Past Tense Formation\n\nTake the infinitive, remove -ти, add past endings:\n\n| Gender | Ending | читати → |\n|--------|--------|----------|\n| Masculine | -в | читав |\n| Feminine | -ла | читала |\n| Neuter | -ло | читало |\n| Plural (all) | -ли | читали |\n\n**Full pattern:**\n\n| Subject | читати | робити | говорити |\n|---------|--------|--------|----------|\n| він | читав | робив | говорив |\n| вона | читала | робила | говорила |\n| воно | читало | робило | говорило |\n| вони | читали | робили | говорили |\n| я (m) | читав | робив | говорив |\n| я (f) | читала | робила | говорила |\n| ти (m) | читав | робив | говорив |\n| ти (f) | читала | робила | говорила |\n| ми | читали | робили | говорили |\n| ви | читали | робили | говорили |\n\n> ⚡ **Pro Tip: Gender Matters for Я and Ти!**\n>\n> Unlike English \"I\" which never changes, Ukrainian past tense reveals the speaker's gender:\n> - Де ти **був**? (Where were you? - to a man)\n> - Де ти **була**? (Where were you? - to a woman)\n>\n> This also applies to \"I\" - use the form matching YOUR gender!\n\n### The Verb \"To Be\" (Бути) in Past\n\n| Subject | Past Tense | Example |\n|---------|------------|---------|\n| він | був | Він був удома. (He was at home.) |\n| вона | була | Вона була в школі. (She was at school.) |\n| воно | було | Все було добре. (Everything was fine.) |\n| вони | були | Вони були разом. (They were together.) |\n| я (m) | був | Я був там. (I was there.) |\n| я (f) | була | Я була там. (I was there.) |\n\n> 📜 **History Bite: The Disappearing \"To Be\"**\n>\n> In Old East Slavic, \"I was\" was \"я був єсмь\" - the \"єсмь\" (I am) has completely vanished in modern Ukrainian past tense. However, traces remain in formal/archaic contexts and in the conditional mood (б). Languages constantly simplify!\n\n### Special Past Tense Forms\n\nSome verbs have irregular past tense stems:\n\n| Infinitive | He | She | They |\n|------------|-----|------|------|\n| їсти (eat) | їв | їла | їли |\n| пити (drink) | пив | пила | пили |\n| йти (go) | ішов | ішла | ішли |\n| могти (can) | міг | могла | могли |\n| нести (carry) | ніс | несла | несли |\n| везти (transport) | віз | везла | везли |\n\n> 🎯 **Fun Fact: Ішов vs Йшов**\n>\n> \"Йти\" (to go on foot) has a unique past: ішов/ішла/ішли. The initial \"й\" transforms to \"і\" in the past. This verb is highly irregular in many Slavic languages - it's so common that it resisted regularization!\n\n### Common Past Tense Verbs\n\n| Infinitive | Meaning | Він | Вона |\n|------------|---------|-----|------|\n| працювати | work | працював | працювала |\n| жити | live | жив | жила |\n| знати | know | знав | знала |\n| хотіти | want | хотів | хотіла |\n| бачити | see | бачив | бачила |\n| любити | love | любив | любила |\n| купити | buy | купив | купила |\n| дивитися | watch | дивився | дивилася |\n\n> 🔗 **Language Link: Reflexive Verbs**\n>\n> Reflexive verbs (-ся) keep -ся in past tense:\n> - дивитися → дивився/дивилася (watched)\n> - вчитися → вчився/вчилася (studied)\n> - називатися → називався/називалася (was called)\n\n### Time Expressions for Past\n\n| Ukrainian | Transliteration | English |\n|-----------|-----------------|---------|\n| вчора | vchora | yesterday |\n| позавчора | pozavchora | day before yesterday |\n| минулого тижня | mynuloho tyzhnya | last week |\n| минулого місяця | mynuloho misyatsya | last month |\n| минулого року | mynuloho roku | last year |\n| давно | davno | long ago |\n| недавно | nedavno | recently |\n| раніше | ranishe | earlier, before |\n\n> 🌍 **Real World: Talking About Yesterday**\n>\n> - **Що ти робив учора?** - What did you do yesterday?\n> - **Я працював.** - I worked.\n> - **Де ви були минулого тижня?** - Where were you last week?\n> - **Ми були у Львові.** - We were in Lviv.\n\n## practice\n\n### Form Past Tense\n\nChange to past (он):\n1. читати\n   > [!answer] читав\n2. писати\n   > [!answer] писав\n3. робити\n   > [!answer] робив\n4. їсти\n   > [!answer] їв\n5. йти\n   > [!answer] ішов\n\nChange to past (вона):\n1. говорити\n   > [!answer] говорила\n2. знати\n   > [!answer] знала\n3. пити\n   > [!answer] пила\n4. бути\n   > [!answer] була\n5. працювати\n   > [!answer] працювала\n\n### Complete Sentences\n\n1. Він ___ (читати) книгу.\n   > [!answer] читав\n2. Вона ___ (бути) в школі.\n   > [!answer] була\n3. Ми ___ (дивитися) фільм.\n   > [!answer] дивилися\n4. Вони ___ (їсти) піцу.\n   > [!answer] їли\n5. Я (f) ___ (працювати) вчора.\n   > [!answer] працювала\n\n### Tell About Yesterday\n\nAnswer these questions:\n1. Де ви були вчора?\n2. Що ви їли на сніданок?\n3. Чи ви читали книгу?\n4. Що ви дивилися ввечері?\n\n## production\n\n### Share Your Day\n\nDescribe what you did yesterday using past tense:\n- Вчора я встав/встала о сьомій годині.\n- Я їв/їла кашу на сніданок.\n- Потім я працював/працювала.\n- Увечері я дивився/дивилася фільм.\n\n---\n\n## Past Tense Summary\n\n| Person | Masculine | Feminine | Neuter | Plural |\n|--------|-----------|----------|--------|--------|\n| я | читав | читала | - | - |\n| ти | читав | читала | - | - |\n| він | читав | - | - | - |\n| вона | - | читала | - | - |\n| воно | - | - | читало | - |\n| ми/ви/вони | - | - | - | читали |\n\n**Formation:** Stem + gender/number ending\n- Masculine: -в (читав)\n- Feminine: -ла (читала)\n- Neuter: -ло (читало)\n- Plural: -ли (читали)\n\n**Бути (to be) in past:**\n| Form | Example |\n|------|---------|\n| був | Він був там |\n| була | Вона була тут |\n| було | Це було добре |\n| були | Вони були разом |\n\n---\n\n# Activities\n\n## fill-in: Past Tense Formation\n\n> Choose the correct past tense form. Sentences focus on new past tense verbs.\n\n1. Він вчора ___ дуже важливу справу. (зробити - to do/make)\n   > [!answer] зробив\n   > [!options] зробив | зробила | зробило | зробили\n\n2. Вона минулого місяця ___ свого давнього друга. (зустріти - to meet)\n   > [!answer] зустріла\n   > [!options] зустрів | зустріла | зустріло | зустріли\n\n3. Я (m) ___ побачити цей фільм. (хотіти - to want)\n   > [!answer] хотів\n   > [!options] хотів | хотіла | хотіло | хотіли\n\n4. Вони ___ все, що їм казали. (забути - to forget)\n   > [!answer] забули\n   > [!options] забув | забула | забуло | забули\n\n5. Ми вчора ___ новий цікавий фільм. (побачити - to see)\n   > [!answer] побачили\n   > [!options] побачив | побачила | побачило | побачили\n\n6. Він дуже голосно ___ про цю проблему. (сказати - to say)\n   > [!answer] сказав\n   > [!options] сказав | сказала | сказало | сказали\n\n7. Я (f) ___ працювати рано вранці. (почати - to start)\n   > [!answer] почала\n   > [!options] почав | почала | почало | почали\n\n8. Вони ___ свою роботу вчасно. (закінчити - to finish)\n   > [!answer] закінчили\n   > [!options] закінчив | закінчила | закінчило | закінчили\n\n9. Ти (f) ___ про це? (почути - to hear)\n   > [!answer] почула\n   > [!options] почув | почула | почуло | почули\n\n10. Вчора все у них ___ дуже добре. (бути - neuter)\n    > [!answer] було\n    > [!options] був | була | було | були\n\n## unjumble: Build the Sentence\n\n> Arrange the words in the correct order. Sentences range from 6-9 words.\n\n1. важливу / Він / зробив / вчора / дуже / справу\n   > [!answer] Він вчора зробив дуже важливу справу.\n   > (Yesterday he did a very important thing.) [6 words]\n\n2. зустріла / Вона / давнього / подругу / свою / минулого / тижня\n   > [!answer] Вона минулого тижня зустріла свою давню подругу.\n   > (She met her old friend last week.) [7 words]\n\n3. побачили / Ми / новий / український / фільм / увечері / цікавий\n   > [!answer] Ми увечері побачили новий цікавий український фільм.\n   > (We saw a new interesting Ukrainian film in the evening.) [7 words]\n\n4. забула / Я / сказати / тобі / про / це / важливе\n   > [!answer] Я забула сказати тобі про це важливе.\n   > (I forgot to tell you about this important thing.) [7 words]\n\n5. почала / Вона / працювати / рано / вранці / і / закінчила / пізно\n   > [!answer] Вона почала працювати рано вранці і закінчила пізно.\n   > (She started working early in the morning and finished late.) [9 words]\n\n6. сказав / Він / правду / свою / вчора / мені / всю\n   > [!answer] Він вчора сказав мені всю свою правду.\n   > (He told me all his truth yesterday.) [7 words]\n\n7. почули / Вони / новину / цікаву / недавно / дуже\n   > [!answer] Вони недавно почули дуже цікаву новину.\n   > (They recently heard very interesting news.) [6 words]\n\n8. давно / був / Він / у / Львові / минулого / року\n   > [!answer] Він був у Львові давно, минулого року.\n   > (He was in Lviv long ago, last year.) [7 words]\n\n9. зустріли / друзі / Ми / багато / нових / під час / подорожі\n   > [!answer] Ми зустріли багато нових друзів під час подорожі.\n   > (We met many new friends during the trip.) [9 words]\n\n10. Я (f) / вчора / пізно / працювала / в / бібліотеці / до / ночі\n    > [!answer] Я вчора працювала в бібліотеці до пізньої ночі.\n    > (Yesterday I worked in the library until late night.) [8 words]\n\n## match-up: Past Tense Verbs\n\n> Match the infinitive to its masculine past tense form.\n\n| Left | Right |\n|------|-------|\n| зробити | зробив |\n| зустріти | зустрів |\n| побачити | побачив |\n| почути | почув |\n| забути | забув |\n| почати | почав |\n| закінчити | закінчив |\n| сказати | сказав |\n| бути | був |\n| йти | ішов |\n\n## quiz: Past Tense Grammar\n\n> Choose the correct answer.\n\n1. How do you form past tense for masculine singular?\n   - [x] Remove -ти, add -в\n   - [ ] Remove -ти, add -ла\n   - [ ] Remove -ти, add -ло\n   - [ ] Remove -ти, add -ли\n   > Masculine past ends in -в\n\n2. What is the past tense of \"бути\" for вона?\n   - [ ] був\n   - [x] була\n   - [ ] було\n   - [ ] були\n   > Feminine past of бути = була\n\n3. What determines the past tense ending in Ukrainian?\n   - [ ] The object\n   - [x] The gender of the subject\n   - [ ] The time of day\n   - [ ] The verb type\n   > Past tense agrees with subject gender\n\n4. What is the past tense of \"йти\" for він?\n   - [x] ішов\n   - [ ] йшов\n   - [ ] ійшов\n   - [ ] йдев\n   > Irregular: йти → ішов/ішла/ішли\n\n5. What ending do all plural subjects use in past tense?\n   - [ ] -в\n   - [ ] -ла\n   - [ ] -ло\n   - [x] -ли\n   > All plurals (ми, ви, вони) use -ли\n\n6. Which verb indicates a completed action in the past?\n   - [x] зробив\n   - [ ] робив\n   - [ ] робити\n   - [ ] роблю\n   > \"зробив\" is the perfective past form (completed action)\n\n7. How do you say \"I forgot\" if you're female?\n   - [ ] Я забув\n   - [x] Я забула\n   - [ ] Я забуло\n   - [ ] Я забули\n   > Female speakers use feminine form\n\n8. Which form is correct for \"She heard\" (почути)?\n   - [ ] почувив\n   - [x] почула\n   - [ ] почуло\n   - [ ] почули\n   > Feminine past: почула\n\n9. What is the past of \"зустріти\" for вони?\n   - [ ] зустрів\n   - [ ] зустріла\n   - [ ] зустріло\n   - [x] зустріли\n   > Plural past: зустріли\n\n10. What determines the form of \"був/була/було/були\"?\n    - [x] The gender and number of the subject\n    - [ ] The verb tense\n    - [ ] The time expression\n    - [ ] The object of the sentence\n    > \"Бути\" in the past agrees with the subject's gender and number\n\n## true-false: Past Tense Rules\n\n> Determine if each statement is true or false.\n\n- [x] Past tense verbs must agree with the subject's gender\n   > Correct!\n\n- [x] \"Він зробив\" is correct for \"He did\"\n   > Correct!\n\n- [ ] \"Вона був\" is correct for \"She was\"\n   > Incorrect. Feminine needs \"була\"\n\n- [x] \"Ми закінчили\" uses the plural ending -ли\n   > Correct!\n\n- [ ] \"Я побачив\" can be said by a female speaker\n   > Incorrect. Female speakers say \"Я побачила\"\n\n- [x] \"Йти\" has irregular past: ішов/ішла/ішли\n   > Correct!\n\n- [x] \"Вчора\" means \"yesterday\"\n   > Correct!\n\n- [ ] Past tense of \"пити\" for він is \"питив\"\n   > Incorrect. It's \"пив\"\n\n- [x] \"Все було добре\" means \"Everything was fine\"\n   > Correct!\n\n- [x] \"Давно\" means \"long ago\"\n   > Correct!\n\n## group-sort: Past Tense Endings\n\n> Sort these past tense forms by their ending pattern.\n\n### Masculine (-в)\n- читав (read)\n- був (was)\n- зробив (did)\n- ішов (went)\n- сказав (said)\n\n### Feminine (-ла)\n- читала (read)\n- була (was)\n- зробила (did)\n- ішла (went)\n- сказала (said)\n\n### Neuter (-ло)\n- читало (read)\n- було (was)\n- зробило (did)\n- почуло (heard)\n\n### Plural (-ли)\n- читали (read)\n- були (were)\n- зробили (did)\n- ішли (went)\n- сказали (said)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| вчора | /ˈwtʃɔrɑ/ | yesterday | adv | - | |\n| позавчора | /pɔzɑˈwtʃɔrɑ/ | day before yesterday | adv | - | |\n| минулий | /mɪˈnulɪj/ | last, past | adj | m | минулого тижня |\n| давно | /ˈdɑvnɔ/ | long ago | adv | - | |\n| недавно | /nɛˈdɑvnɔ/ | recently | adv | - | |\n| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - | |\n| тоді | /tɔˈdʲi/ | then | adv | - | |\n| потім | /pɔˈtʲim/ | then, later | adv | - | |\n| вже | /vʒɛ/ | already | adv | - | |\n| ще не | /ʃtʃɛ nɛ/ | not yet | phrase | - | |\n| був | /buv/ | was (m) | verb | m | Past of бути |\n| була | /buˈlɑ/ | was (f) | verb | f | Past of бути |\n| було | /ˈbulɔ/ | was (n) | verb | n | Past of бути |\n| були | /buˈlɪ/ | were | verb | pl | Past of бути |\n| ішов | /iˈʃɔv/ | went (m) | verb | m | Past of йти |\n| ішла | /iʃˈlɑ/ | went (f) | verb | f | Past of йти |\n| зробив | /zrɔˈbɪv/ | did, made | verb | m | completed |\n| сказав | /skɑˈzɑv/ | said, told | verb | m | completed |\n| почав | /pɔˈtʃɑv/ | started | verb | m | completed |\n| закінчив | /zɑˈkʲinʲtʃɪv/ | finished | verb | m | completed |\n| побачив | /pɔˈbɑtʃɪv/ | saw | verb | m | completed |\n| почув | /pɔˈtʃuv/ | heard | verb | m | completed |\n| забув | /zɑˈbuv/ | forgot | verb | m | completed |\n| зустрів | /zusˈtrʲiv/ | met | verb | m | completed |\n\n---\n\n# Past Tense Summary\n\n## Formation\n\n**Stem + ending:**\n- Remove -ти from infinitive\n- Add: -в (m), -ла (f), -ло (n), -ли (pl)\n\n## Agreement\n\n| Subject | Ending | Example |\n|---------|--------|---------|\n| він, я(m), ти(m) | -в | читав |\n| вона, я(f), ти(f) | -ла | читала |\n| воно | -ло | читало |\n| вони, ми, ви | -ли | читали |\n\n## Key Irregulars\n\n| Infinitive | M | F | Pl |\n|------------|---|---|-----|\n| бути | був | була | були |\n| їсти | їв | їла | їли |\n| пити | пив | пила | пили |\n| йти | ішов | ішла | ішли |\n\n---\n\n# Summary\n\n> 💡 **What You Learned Today**\n>\n> - Past tense endings: -в (m), -ла (f), -ло (n), -ли (pl)\n> - Subject gender determines verb ending\n> - Key irregular: бути (був/була/було/були)\n> - Time words: вчора, давно, минулого тижня\n> - Reflexive verbs keep -ся in past\n\n> 🎯 **Coming Next**\n>\n> In Module 22, you'll learn the **future tense**:\n> - Я буду читати. (I will read.)\n> - Він прочитає книгу. (He will read the book.)\n> - Two ways to express future!",
-    "createdAt": "2025-12-05T01:15:57.960Z",
-    "modifiedAt": "2025-12-05T01:15:57.960Z",
+    "rawMarkdown": "---\ntitle: \"Yesterday: Past Tense\"\nsubtitle: \"Talking about what already happened\"\nphase: A1.3\nduration: 45\ntransliteration: none\ntags: [grammar, verbs, past-tense]\nobjectives:\n  - Form past tense verbs with L-participle\n  - Use correct gender endings (він/вона/воно)\n  - Talk about past actions and events\n  - Use time expressions for the past\ngrammar:\n  - Past tense formation (L-participle)\n  - Gender agreement in past tense\n  - Past time expressions\n---\n\n# Lesson Content\n\n## warm-up\n\n### Welcome to A1.3: Time & Self!\n\nYou've learned to talk about what IS. Now it's time to talk about what WAS! The past tense opens up a whole new world — sharing stories, explaining what happened, and connecting with people through shared experiences.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian past tense is actually simpler than English! There's only ONE past form (no \"was reading\" vs \"read\" vs \"had read\"). The catch? It changes based on the **gender** of the subject!\n\n## presentation\n\n### Past Tense Formation\n\nThe past tense uses the **L-participle** — take the infinitive stem and add endings:\n\n| Subject | Ending | Example (читати) |\n|---------|--------|------------------|\n| він (he) | -в | читав |\n| вона (she) | -ла | читала |\n| воно (it) | -ло | читало |\n| вони (they) | -ли | читали |\n| я (I) - male | -в | я читав |\n| я (I) - female | -ла | я читала |\n| ти (you) - male | -в | ти читав |\n| ти (you) - female | -ла | ти читала |\n| ми (we) | -ли | ми читали |\n| ви (you pl/formal) | -ли | ви читали |\n\n> ⚡ **Pro Tip**\n>\n> The past tense ending tells you the GENDER of who did the action! If someone says \"Я читала,\" you know it's a woman speaking. \"Я читав\" = a man.\n\n### Forming the Stem\n\n1. Take the infinitive: **читати**\n2. Remove **-ти**: **чита-**\n3. Add ending: **читав, читала, читало, читали**\n\nMore examples:\n\n| Infinitive | He | She | They |\n|------------|----|----|------|\n| працювати | працював | працювала | працювали |\n| говорити | говорив | говорила | говорили |\n| робити | робив | робила | робили |\n| бачити | бачив | бачила | бачили |\n\n> 🔍 **Myth Buster**\n>\n> **Myth:** \"Ukrainian verbs are impossibly complex!\"\n> **Fact:** Past tense is actually EASIER than present! Same form for all persons — only gender changes. Compare: він читав, вона читала vs він читає, вони читають.\n\n### Special Past Forms\n\nSome verbs have consonant changes or irregular stems:\n\n| Infinitive | Past Stem | Example |\n|------------|-----------|---------|\n| іти (to go) | йшов/йшла | Він йшов додому. |\n| їсти (to eat) | їв/їла | Вона їла борщ. |\n| піти (to go/leave) | пішов/пішла | Він пішов. |\n| прийти (to come) | прийшов/прийшла | Вона прийшла. |\n| взяти (to take) | взяв/взяла | Він взяв книгу. |\n| сказати (to say) | сказав/сказала | Вона сказала. |\n\n> 🎬 **Pop Culture Moment: S.T.A.L.K.E.R.**\n>\n> \"Він пішов у Зону і не повернувся\" (He went to the Zone and didn't return). In gaming, past tense tells the tragic stories!\n\n### Past Time Expressions\n\n| Ukrainian | English |\n|-----------|---------|\n| вчора | yesterday |\n| позавчора | the day before yesterday |\n| минулого тижня | last week |\n| минулого місяця | last month |\n| минулого року | last year |\n| давно | long ago |\n| недавно | recently |\n| раніше | earlier, before |\n| колись | once, sometime |\n\n> 🌍 **Real World**\n>\n> \"Що ти робив учора?\" (What did you do yesterday?) is one of the most common conversation starters. Now you can answer!\n\n### Negation in Past Tense\n\nJust add **не** before the verb:\n\n| Positive | Negative |\n|----------|----------|\n| Я читав. | Я **не** читав. |\n| Вона працювала. | Вона **не** працювала. |\n| Вони говорили. | Вони **не** говорили. |\n\n### The Verb \"бути\" (to be) in Past\n\nUnlike present (where \"to be\" is usually omitted), past tense uses **був/була/було/були**:\n\n| Subject | Form | Example |\n|---------|------|---------|\n| він | був | Він був тут. (He was here.) |\n| вона | була | Вона була вчителькою. (She was a teacher.) |\n| воно | було | Це було цікаво. (It was interesting.) |\n| вони | були | Вони були в Києві. (They were in Kyiv.) |\n\n> 💡 **Did You Know?**\n>\n> \"Було\" (it was) is incredibly common in expressions: \"Було смачно!\" (It was tasty!), \"Було цікаво!\" (It was interesting!), \"Як було?\" (How was it?)\n\n## practice\n\n### Exercise 1: Transform to Past Tense\n\nChange to past tense (masculine form):\n\n1. читати → він ___\n   > [!answer] читав\n\n2. працювати → він ___\n   > [!answer] працював\n\n3. говорити → він ___\n   > [!answer] говорив\n\n4. їсти → він ___\n   > [!answer] їв\n\n5. іти → він ___\n   > [!answer] йшов\n\n### Exercise 2: Choose the Right Gender\n\n1. Марія ___ (читати) книгу.\n   > [!answer] читала\n\n2. Іван ___ (працювати) вчора.\n   > [!answer] працював\n\n3. Діти ___ (грати) в парку.\n   > [!answer] грали\n\n4. Воно ___ (бути) цікаво.\n   > [!answer] було\n\n## production\n\n### Tell Your Story\n\nWhat did you do yesterday? Use these prompts:\n\n- Вчора я... (читав/читала, працював/працювала, їв/їла...)\n- Минулого тижня я... (був/була в..., бачив/бачила...)\n- Раніше я часто... (говорив/говорила, ходив/ходила...)\n\nShare 3-4 sentences about your past!\n\n---\n\n# Activities\n\n## fill-in: Past Tense Forms\n\n> Complete with the correct past tense form.\n\n1. Він ___ (читати) книгу.\n   > [!answer] читав\n   > [!options] читав | читала | читало | читали\n\n2. Вона ___ (працювати) вчора.\n   > [!answer] працювала\n   > [!options] працювала | працював | працювало | працювали\n\n3. Ми ___ (говорити) українською.\n   > [!answer] говорили\n   > [!options] говорили | говорив | говорила | говорило\n\n4. Я (male) ___ (їсти) борщ.\n   > [!answer] їв\n   > [!options] їв | їла | їло | їли\n\n5. Вони ___ (бути) в Києві.\n   > [!answer] були\n   > [!options] були | був | була | було\n\n6. Це ___ (бути) цікаво.\n   > [!answer] було\n   > [!options] було | був | була | були\n\n7. Марія ___ (піти) додому.\n   > [!answer] пішла\n   > [!options] пішла | пішов | пішло | пішли\n\n8. Він ___ (сказати) правду.\n   > [!answer] сказав\n   > [!options] сказав | сказала | сказало | сказали\n\n9. Ти (female) ___ (бачити) це?\n   > [!answer] бачила\n   > [!options] бачила | бачив | бачило | бачили\n\n10. Діти ___ (грати) в парку.\n    > [!answer] грали\n    > [!options] грали | грав | грала | грало\n\n11. Він ___ (прийти) о шостій.\n    > [!answer] прийшов\n    > [!options] прийшов | прийшла | прийшло | прийшли\n\n12. Вона ___ (взяти) мою книгу.\n    > [!answer] взяла\n    > [!options] взяла | взяв | взяло | взяли\n\n## unjumble: Past Tense Sentences\n\n> Put the words in the correct order.\n\n1. читав книгу Він вчора\n   > [!answer] Він вчора читав книгу.\n   > (He read a book yesterday.) [4 words]\n\n2. працювала Вона тижня минулого\n   > [!answer] Вона працювала минулого тижня.\n   > (She worked last week.) [4 words]\n\n3. говорили українською Ми\n   > [!answer] Ми говорили українською.\n   > (We spoke Ukrainian.) [3 words]\n\n4. були Києві Вони в\n   > [!answer] Вони були в Києві.\n   > (They were in Kyiv.) [4 words]\n\n5. Було смачно дуже\n   > [!answer] Було дуже смачно.\n   > (It was very tasty.) [3 words]\n\n6. їв борщ я Вчора\n   > [!answer] Вчора я їв борщ.\n   > (Yesterday I ate borsch.) [4 words]\n\n7. додому пішла Вона\n   > [!answer] Вона пішла додому.\n   > (She went home.) [3 words]\n\n8. не працював вчора Він\n   > [!answer] Він не працював вчора.\n   > (He didn't work yesterday.) [4 words]\n\n9. сказала Що вона\n   > [!answer] Що вона сказала?\n   > (What did she say?) [3 words]\n\n10. прийшов пізно Він\n    > [!answer] Він прийшов пізно.\n    > (He came late.) [3 words]\n\n11. робив ти Що вчора\n    > [!answer] Що ти робив вчора?\n    > (What did you do yesterday?) [4 words]\n\n12. Як було\n    > [!answer] Як було?\n    > (How was it?) [2 words]\n\n## match-up: Infinitive to Past\n\n> Match the infinitive with its past tense (masculine) form.\n\n| Left | Right |\n|------|-------|\n| читати | читав |\n| працювати | працював |\n| говорити | говорив |\n| робити | робив |\n| їсти | їв |\n| іти | йшов |\n| піти | пішов |\n| прийти | прийшов |\n| взяти | взяв |\n| сказати | сказав |\n| бачити | бачив |\n| бути | був |\n\n## quiz: Past Tense Knowledge\n\n> Test your understanding of Ukrainian past tense.\n\n1. What determines the past tense ending?\n   - [ ] The verb class\n   - [x] The gender of the subject\n   - [ ] The time of day\n   - [ ] The direct object\n   > Past tense endings agree with subject gender: -в (m), -ла (f), -ло (n), -ли (pl).\n\n2. How do you say \"she read\" in Ukrainian?\n   - [ ] вона читав\n   - [x] вона читала\n   - [ ] вона читало\n   - [ ] вона читали\n   > Feminine subjects use -ла ending.\n\n3. What is the past tense of \"іти\" (to go)?\n   - [ ] ів/іла\n   - [x] йшов/йшла\n   - [ ] ішов/ішла\n   - [ ] ходив/ходила\n   > \"Іти\" has irregular past: йшов, йшла, йшло, йшли.\n\n4. \"Вчора\" means:\n   - [x] yesterday\n   - [ ] tomorrow\n   - [ ] today\n   - [ ] last week\n   > \"Вчора\" = yesterday; \"завтра\" = tomorrow.\n\n5. How do you negate past tense?\n   - [ ] Add \"ні\" after the verb\n   - [x] Add \"не\" before the verb\n   - [ ] Change the ending\n   - [ ] Use a different verb\n   > Negation: Він **не** читав.\n\n6. If a woman says \"Я читала,\" what do we know?\n   - [x] The speaker is female\n   - [ ] The speaker is male\n   - [ ] Multiple people are speaking\n   - [ ] It's a question\n   > -ла ending indicates feminine gender of the subject.\n\n7. \"Було цікаво\" means:\n   - [ ] It is interesting\n   - [x] It was interesting\n   - [ ] It will be interesting\n   - [ ] Interesting!\n   > \"Було\" is past tense of \"бути\" (to be).\n\n8. What is the past tense of \"їсти\" (to eat)?\n   - [x] їв/їла\n   - [ ] їстив/їстила\n   - [ ] їдав/їдала\n   - [ ] їжив/їжила\n   > \"Їсти\" → їв (m), їла (f), їло (n), їли (pl).\n\n9. \"Минулого тижня\" means:\n   - [ ] this week\n   - [ ] next week\n   - [x] last week\n   - [ ] every week\n   > \"Минулого\" = past/last; \"тижня\" = week (genitive).\n\n10. Which is correct for \"they were\"?\n    - [ ] вони був\n    - [ ] вони була\n    - [ ] вони було\n    - [x] вони були\n    > Plural subjects use -ли ending.\n\n11. \"Він прийшов\" means:\n    - [x] He came/arrived\n    - [ ] He left\n    - [ ] He is coming\n    - [ ] He will come\n    > \"Прийшов\" is past tense of \"прийти\" (to come).\n\n12. In \"Ми говорили,\" why is it \"-ли\"?\n    - [ ] Because it's negative\n    - [ ] Because of the verb class\n    - [x] Because \"ми\" is plural\n    - [ ] Because it's formal\n    > All plural subjects (ми, ви, вони) use -ли.\n\n## true-false: Past Tense Facts\n\n> Decide if each statement is true (Правда) or false (Міф).\n\n- [x] Past tense endings change based on gender.\n  > Correct! -в (m), -ла (f), -ло (n), -ли (pl).\n\n- [ ] Ukrainian has multiple past tenses like English.\n  > Incorrect! Ukrainian has only one past tense form.\n\n- [x] \"Він читав\" and \"вона читала\" are both past tense.\n  > Correct! Same tense, different gender endings.\n\n- [ ] \"Бути\" (to be) is omitted in past tense.\n  > Incorrect! Unlike present, past uses був/була/було/були.\n\n- [x] \"Не\" comes before the verb for negation.\n  > Correct! Він не читав, вона не працювала.\n\n- [ ] \"Позавчора\" means \"tomorrow.\"\n  > Incorrect! \"Позавчора\" = the day before yesterday.\n\n- [x] \"Їв\" is the masculine past of \"їсти.\"\n  > Correct! Їсти → їв (m), їла (f).\n\n- [ ] Past tense of \"я\" always uses -в ending.\n  > Incorrect! It depends on the speaker's gender: я читав (m), я читала (f).\n\n- [x] \"Йшов\" is the past of \"іти.\"\n  > Correct! Irregular: іти → йшов/йшла/йшло/йшли.\n\n- [ ] \"Як було?\" means \"How is it?\"\n  > Incorrect! \"Як було?\" = How was it? (past).\n\n- [x] \"Колись\" means \"once\" or \"sometime.\"\n  > Correct! Time expression for the past.\n\n- [x] \"-ли\" ending is used for all plural subjects.\n  > Correct! Ми, ви, вони all use -ли.\n\n## group-sort: Gender Endings\n\n> Sort these past tense forms into the correct gender category.\n\n### Masculine (-в)\n- читав\n- працював\n- був\n- пішов\n\n### Feminine (-ла)\n- читала\n- працювала\n- була\n- пішла\n\n### Neuter (-ло)\n- читало\n- працювало\n- було\n- пішло\n\n### Plural (-ли)\n- читали\n- працювали\n- були\n- пішли\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| вчора | /vˈt͡ʃɔrɑ/ | yesterday | adv | - | |\n| позавчора | /pɔzɑvˈt͡ʃɔrɑ/ | day before yesterday | adv | - | |\n| минулого тижня | /mɪˈnulɔɦɔ ˈtɪʒnʲɑ/ | last week | phrase | - | genitive time |\n| минулого місяця | /mɪˈnulɔɦɔ ˈmʲisʲɑt͡sʲɑ/ | last month | phrase | - | |\n| минулого року | /mɪˈnulɔɦɔ ˈrɔku/ | last year | phrase | - | |\n| давно | /dɑvˈnɔ/ | long ago | adv | - | |\n| недавно | /nɛˈdɑvnɔ/ | recently | adv | - | |\n| раніше | /ˈrɑnʲiʃɛ/ | earlier, before | adv | - | |\n| колись | /ˈkɔlɪsʲ/ | once, sometime | adv | - | |\n| був | /buv/ | was (m) | verb | - | past of бути |\n| була | /buˈlɑ/ | was (f) | verb | - | past of бути |\n| було | /ˈbulɔ/ | was (n) | verb | - | past of бути |\n| були | /buˈlɪ/ | were (pl) | verb | - | past of бути |\n| зробив | /zrɔˈbɪv/ | did, made (m) | verb | - | past of зробити |\n| сказав | /skɑˈzɑv/ | said (m) | verb | - | past of сказати |\n| пішов | /pʲiˈʃɔv/ | went, left (m) | verb | - | past of піти |\n| прийшов | /prɪjˈʃɔv/ | came (m) | verb | - | past of прийти |\n| поїхав | /pɔˈjixɑv/ | went (vehicle) (m) | verb | - | past of поїхати |\n| приїхав | /prɪˈjixɑv/ | arrived (vehicle) (m) | verb | - | past of приїхати |\n| почав | /pɔˈt͡ʃɑv/ | began (m) | verb | - | past of почати |\n| закінчив | /zɑˈkʲint͡ʃɪv/ | finished (m) | verb | - | past of закінчити |\n| побачив | /pɔˈbɑt͡ʃɪv/ | saw (m) | verb | - | past of побачити |\n| почув | /pɔˈt͡ʃuv/ | heard (m) | verb | - | past of почути |\n| зустрів | /zuˈstrʲiv/ | met (m) | verb | - | past of зустріти |\n| забув | /zɑˈbuv/ | forgot (m) | verb | - | past of забути |\n\n---\n\n# Summary\n\n> **What You Learned Today**\n>\n> - Past tense formation: infinitive stem + ending\n> - Gender agreement: -в (m), -ла (f), -ло (n), -ли (pl)\n> - \"Бути\" in past: був, була, було, були\n> - Time expressions: вчора, минулого тижня, давно\n> - Negation: не + past verb\n\n> **Coming Next**\n>\n> In Module 22, you'll learn **Future Tense**:\n> - Compound future: буду + infinitive\n> - Future time expressions: завтра, наступного тижня\n> - Making plans and predictions\n",
+    "createdAt": "2025-12-05T16:44:42.815Z",
+    "modifiedAt": "2025-12-05T16:44:42.815Z",
     "version": 2
   },
   "activities": [
     {
       "id": "act-a1-0-fillblank",
       "type": "fill-blank",
-      "title": "Past Tense Formation",
-      "description": "Choose the correct past tense form. Sentences focus on new past tense verbs.",
+      "title": "Past Tense Forms",
+      "description": "Complete with the correct past tense form.",
       "content": {
         "type": "fill-blank",
         "items": [
           {
-            "prompt": "Він вчора ___ дуже важливу справу. (зробити - to do/make)",
-            "answer": "зробив",
+            "prompt": "Він ___ (читати) книгу.",
+            "answer": "читав",
+            "hints": [
+              "читати"
+            ],
             "options": [
-              "зробив",
-              "зробила",
-              "зробило",
-              "зробили"
+              "читав",
+              "читала",
+              "читало",
+              "читали"
             ]
           },
           {
-            "prompt": "Вона минулого місяця ___ свого давнього друга. (зустріти - to meet)",
-            "answer": "зустріла",
+            "prompt": "Вона ___ (працювати) вчора.",
+            "answer": "працювала",
+            "hints": [
+              "працювати"
+            ],
             "options": [
-              "зустрів",
-              "зустріла",
-              "зустріло",
-              "зустріли"
+              "працювала",
+              "працював",
+              "працювало",
+              "працювали"
             ]
           },
           {
-            "prompt": "Я (m) ___ побачити цей фільм. (хотіти - to want)",
-            "answer": "хотів",
+            "prompt": "Ми ___ (говорити) українською.",
+            "answer": "говорили",
+            "hints": [
+              "говорити"
+            ],
             "options": [
-              "хотів",
-              "хотіла",
-              "хотіло",
-              "хотіли"
+              "говорили",
+              "говорив",
+              "говорила",
+              "говорило"
             ]
           },
           {
-            "prompt": "Вони ___ все, що їм казали. (забути - to forget)",
-            "answer": "забули",
+            "prompt": "Я (male) ___ (їсти) борщ.",
+            "answer": "їв",
+            "hints": [
+              "їсти"
+            ],
             "options": [
-              "забув",
-              "забула",
-              "забуло",
-              "забули"
+              "їв",
+              "їла",
+              "їло",
+              "їли"
             ]
           },
           {
-            "prompt": "Ми вчора ___ новий цікавий фільм. (побачити - to see)",
-            "answer": "побачили",
+            "prompt": "Вони ___ (бути) в Києві.",
+            "answer": "були",
+            "hints": [
+              "бути"
+            ],
             "options": [
-              "побачив",
-              "побачила",
-              "побачило",
-              "побачили"
+              "були",
+              "був",
+              "була",
+              "було"
             ]
           },
           {
-            "prompt": "Він дуже голосно ___ про цю проблему. (сказати - to say)",
+            "prompt": "Це ___ (бути) цікаво.",
+            "answer": "було",
+            "hints": [
+              "бути"
+            ],
+            "options": [
+              "було",
+              "був",
+              "була",
+              "були"
+            ]
+          },
+          {
+            "prompt": "Марія ___ (піти) додому.",
+            "answer": "пішла",
+            "hints": [
+              "піти"
+            ],
+            "options": [
+              "пішла",
+              "пішов",
+              "пішло",
+              "пішли"
+            ]
+          },
+          {
+            "prompt": "Він ___ (сказати) правду.",
             "answer": "сказав",
+            "hints": [
+              "сказати"
+            ],
             "options": [
               "сказав",
               "сказала",
@@ -131,43 +169,55 @@
             ]
           },
           {
-            "prompt": "Я (f) ___ працювати рано вранці. (почати - to start)",
-            "answer": "почала",
+            "prompt": "Ти (female) ___ (бачити) це?",
+            "answer": "бачила",
+            "hints": [
+              "бачити"
+            ],
             "options": [
-              "почав",
-              "почала",
-              "почало",
-              "почали"
+              "бачила",
+              "бачив",
+              "бачило",
+              "бачили"
             ]
           },
           {
-            "prompt": "Вони ___ свою роботу вчасно. (закінчити - to finish)",
-            "answer": "закінчили",
+            "prompt": "Діти ___ (грати) в парку.",
+            "answer": "грали",
+            "hints": [
+              "грати"
+            ],
             "options": [
-              "закінчив",
-              "закінчила",
-              "закінчило",
-              "закінчили"
+              "грали",
+              "грав",
+              "грала",
+              "грало"
             ]
           },
           {
-            "prompt": "Ти (f) ___ про це? (почути - to hear)",
-            "answer": "почула",
+            "prompt": "Він ___ (прийти) о шостій.",
+            "answer": "прийшов",
+            "hints": [
+              "прийти"
+            ],
             "options": [
-              "почув",
-              "почула",
-              "почуло",
-              "почули"
+              "прийшов",
+              "прийшла",
+              "прийшло",
+              "прийшли"
             ]
           },
           {
-            "prompt": "Вчора все у них ___ дуже добре. (бути - neuter)",
-            "answer": "було",
+            "prompt": "Вона ___ (взяти) мою книгу.",
+            "answer": "взяла",
+            "hints": [
+              "взяти"
+            ],
             "options": [
-              "був",
-              "була",
-              "було",
-              "були"
+              "взяла",
+              "взяв",
+              "взяло",
+              "взяли"
             ]
           }
         ]
@@ -179,147 +229,101 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     },
     {
       "id": "act-a1-0-unjumble",
       "type": "unjumble",
-      "title": "Build the Sentence",
-      "description": "Arrange the words in the correct order. Sentences range from 6-9 words.",
+      "title": "Past Tense Sentences",
+      "description": "Put the words in the correct order.",
       "content": {
         "type": "unjumble",
         "isUnjumble": true,
         "items": [
           {
             "words": [
-              "важливу",
-              "Він",
-              "зробив",
-              "вчора",
-              "дуже",
-              "справу"
+              "читав книгу Він вчора"
             ],
-            "answer": "Він вчора зробив дуже важливу справу.",
-            "translation": "Yesterday he did a very important thing."
+            "answer": "Він вчора читав книгу.",
+            "translation": "He read a book yesterday."
           },
           {
             "words": [
-              "зустріла",
-              "Вона",
-              "давнього",
-              "подругу",
-              "свою",
-              "минулого",
-              "тижня"
+              "працювала Вона тижня минулого"
             ],
-            "answer": "Вона минулого тижня зустріла свою давню подругу.",
-            "translation": "She met her old friend last week."
+            "answer": "Вона працювала минулого тижня.",
+            "translation": "She worked last week."
           },
           {
             "words": [
-              "побачили",
-              "Ми",
-              "новий",
-              "український",
-              "фільм",
-              "увечері",
-              "цікавий"
+              "говорили українською Ми"
             ],
-            "answer": "Ми увечері побачили новий цікавий український фільм.",
-            "translation": "We saw a new interesting Ukrainian film in the evening."
+            "answer": "Ми говорили українською.",
+            "translation": "We spoke Ukrainian."
           },
           {
             "words": [
-              "забула",
-              "Я",
-              "сказати",
-              "тобі",
-              "про",
-              "це",
-              "важливе"
+              "були Києві Вони в"
             ],
-            "answer": "Я забула сказати тобі про це важливе.",
-            "translation": "I forgot to tell you about this important thing."
+            "answer": "Вони були в Києві.",
+            "translation": "They were in Kyiv."
           },
           {
             "words": [
-              "почала",
-              "Вона",
-              "працювати",
-              "рано",
-              "вранці",
-              "і",
-              "закінчила",
-              "пізно"
+              "Було смачно дуже"
             ],
-            "answer": "Вона почала працювати рано вранці і закінчила пізно.",
-            "translation": "She started working early in the morning and finished late."
+            "answer": "Було дуже смачно.",
+            "translation": "It was very tasty."
           },
           {
             "words": [
-              "сказав",
-              "Він",
-              "правду",
-              "свою",
-              "вчора",
-              "мені",
-              "всю"
+              "їв борщ я Вчора"
             ],
-            "answer": "Він вчора сказав мені всю свою правду.",
-            "translation": "He told me all his truth yesterday."
+            "answer": "Вчора я їв борщ.",
+            "translation": "Yesterday I ate borsch."
           },
           {
             "words": [
-              "почули",
-              "Вони",
-              "новину",
-              "цікаву",
-              "недавно",
-              "дуже"
+              "додому пішла Вона"
             ],
-            "answer": "Вони недавно почули дуже цікаву новину.",
-            "translation": "They recently heard very interesting news."
+            "answer": "Вона пішла додому.",
+            "translation": "She went home."
           },
           {
             "words": [
-              "давно",
-              "був",
-              "Він",
-              "у",
-              "Львові",
-              "минулого",
-              "року"
+              "не працював вчора Він"
             ],
-            "answer": "Він був у Львові давно, минулого року.",
-            "translation": "He was in Lviv long ago, last year."
+            "answer": "Він не працював вчора.",
+            "translation": "He didn't work yesterday."
           },
           {
             "words": [
-              "зустріли",
-              "друзі",
-              "Ми",
-              "багато",
-              "нових",
-              "під час",
-              "подорожі"
+              "сказала Що вона"
             ],
-            "answer": "Ми зустріли багато нових друзів під час подорожі.",
-            "translation": "We met many new friends during the trip."
+            "answer": "Що вона сказала?",
+            "translation": "What did she say?"
           },
           {
             "words": [
-              "Я (f)",
-              "вчора",
-              "пізно",
-              "працювала",
-              "в",
-              "бібліотеці",
-              "до",
-              "ночі"
+              "прийшов пізно Він"
             ],
-            "answer": "Я вчора працювала в бібліотеці до пізньої ночі.",
-            "translation": "Yesterday I worked in the library until late night."
+            "answer": "Він прийшов пізно.",
+            "translation": "He came late."
+          },
+          {
+            "words": [
+              "робив ти Що вчора"
+            ],
+            "answer": "Що ти робив вчора?",
+            "translation": "What did you do yesterday?"
+          },
+          {
+            "words": [
+              "Як було"
+            ],
+            "answer": "Як було?",
+            "translation": "How was it?"
           }
         ]
       },
@@ -330,56 +334,64 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     },
     {
       "id": "act-a1-0-matchup",
       "type": "match-up",
-      "title": "Past Tense Verbs",
-      "description": "Match the infinitive to its masculine past tense form.",
+      "title": "Infinitive to Past",
+      "description": "Match the infinitive with its past tense (masculine) form.",
       "content": {
         "type": "match-up",
         "pairs": [
           {
-            "left": "зробити",
-            "right": "зробив"
+            "left": "читати",
+            "right": "читав"
           },
           {
-            "left": "зустріти",
-            "right": "зустрів"
+            "left": "працювати",
+            "right": "працював"
           },
           {
-            "left": "побачити",
-            "right": "побачив"
+            "left": "говорити",
+            "right": "говорив"
           },
           {
-            "left": "почути",
-            "right": "почув"
+            "left": "робити",
+            "right": "робив"
           },
           {
-            "left": "забути",
-            "right": "забув"
+            "left": "їсти",
+            "right": "їв"
           },
           {
-            "left": "почати",
-            "right": "почав"
+            "left": "іти",
+            "right": "йшов"
           },
           {
-            "left": "закінчити",
-            "right": "закінчив"
+            "left": "піти",
+            "right": "пішов"
+          },
+          {
+            "left": "прийти",
+            "right": "прийшов"
+          },
+          {
+            "left": "взяти",
+            "right": "взяв"
           },
           {
             "left": "сказати",
             "right": "сказав"
           },
           {
-            "left": "бути",
-            "right": "був"
+            "left": "бачити",
+            "right": "бачив"
           },
           {
-            "left": "йти",
-            "right": "ішов"
+            "left": "бути",
+            "right": "був"
           }
         ],
         "shuffleRight": true
@@ -391,126 +403,148 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     },
     {
       "id": "act-a1-0-quiz",
       "type": "quiz",
-      "title": "Past Tense Grammar",
-      "description": "Choose the correct answer.",
+      "title": "Past Tense Knowledge",
+      "description": "Test your understanding of Ukrainian past tense.",
       "content": {
         "type": "quiz",
         "questions": [
           {
-            "question": "How do you form past tense for masculine singular?",
+            "question": "What determines the past tense ending?",
             "options": [
-              "Remove -ти, add -в",
-              "Remove -ти, add -ла",
-              "Remove -ти, add -ло",
-              "Remove -ти, add -ли"
-            ],
-            "correctIndex": 0,
-            "explanation": "Masculine past ends in -в"
-          },
-          {
-            "question": "What is the past tense of \"бути\" for вона?",
-            "options": [
-              "був",
-              "була",
-              "було",
-              "були"
-            ],
-            "correctIndex": 1,
-            "explanation": "Feminine past of бути = була"
-          },
-          {
-            "question": "What determines the past tense ending in Ukrainian?",
-            "options": [
-              "The object",
+              "The verb class",
               "The gender of the subject",
               "The time of day",
-              "The verb type"
+              "The direct object"
             ],
             "correctIndex": 1,
-            "explanation": "Past tense agrees with subject gender"
+            "explanation": "Past tense endings agree with subject gender: -в (m), -ла (f), -ло (n), -ли (pl)."
           },
           {
-            "question": "What is the past tense of \"йти\" for він?",
+            "question": "How do you say \"she read\" in Ukrainian?",
             "options": [
-              "ішов",
-              "йшов",
-              "ійшов",
-              "йдев"
+              "вона читав",
+              "вона читала",
+              "вона читало",
+              "вона читали"
+            ],
+            "correctIndex": 1,
+            "explanation": "Feminine subjects use -ла ending."
+          },
+          {
+            "question": "What is the past tense of \"іти\" (to go)?",
+            "options": [
+              "ів/іла",
+              "йшов/йшла",
+              "ішов/ішла",
+              "ходив/ходила"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Іти\" has irregular past: йшов, йшла, йшло, йшли."
+          },
+          {
+            "question": "\"Вчора\" means:",
+            "options": [
+              "yesterday",
+              "tomorrow",
+              "today",
+              "last week"
             ],
             "correctIndex": 0,
-            "explanation": "Irregular: йти → ішов/ішла/ішли"
+            "explanation": "\"Вчора\" = yesterday; \"завтра\" = tomorrow."
           },
           {
-            "question": "What ending do all plural subjects use in past tense?",
+            "question": "How do you negate past tense?",
             "options": [
-              "-в",
-              "-ла",
-              "-ло",
-              "-ли"
+              "Add \"ні\" after the verb",
+              "Add \"не\" before the verb",
+              "Change the ending",
+              "Use a different verb"
+            ],
+            "correctIndex": 1,
+            "explanation": "Negation: Він **не** читав."
+          },
+          {
+            "question": "If a woman says \"Я читала,\" what do we know?",
+            "options": [
+              "The speaker is female",
+              "The speaker is male",
+              "Multiple people are speaking",
+              "It's a question"
+            ],
+            "correctIndex": 0,
+            "explanation": "-ла ending indicates feminine gender of the subject."
+          },
+          {
+            "question": "\"Було цікаво\" means:",
+            "options": [
+              "It is interesting",
+              "It was interesting",
+              "It will be interesting",
+              "Interesting!"
+            ],
+            "correctIndex": 1,
+            "explanation": "\"Було\" is past tense of \"бути\" (to be)."
+          },
+          {
+            "question": "What is the past tense of \"їсти\" (to eat)?",
+            "options": [
+              "їв/їла",
+              "їстив/їстила",
+              "їдав/їдала",
+              "їжив/їжила"
+            ],
+            "correctIndex": 0,
+            "explanation": "\"Їсти\" → їв (m), їла (f), їло (n), їли (pl)."
+          },
+          {
+            "question": "\"Минулого тижня\" means:",
+            "options": [
+              "this week",
+              "next week",
+              "last week",
+              "every week"
+            ],
+            "correctIndex": 2,
+            "explanation": "\"Минулого\" = past/last; \"тижня\" = week (genitive)."
+          },
+          {
+            "question": "Which is correct for \"they were\"?",
+            "options": [
+              "вони був",
+              "вони була",
+              "вони було",
+              "вони були"
             ],
             "correctIndex": 3,
-            "explanation": "All plurals (ми, ви, вони) use -ли"
+            "explanation": "Plural subjects use -ли ending."
           },
           {
-            "question": "Which verb indicates a completed action in the past?",
+            "question": "\"Він прийшов\" means:",
             "options": [
-              "зробив",
-              "робив",
-              "робити",
-              "роблю"
+              "He came/arrived",
+              "He left",
+              "He is coming",
+              "He will come"
             ],
             "correctIndex": 0,
-            "explanation": "\"зробив\" is the perfective past form (completed action)"
+            "explanation": "\"Прийшов\" is past tense of \"прийти\" (to come)."
           },
           {
-            "question": "How do you say \"I forgot\" if you're female?",
+            "question": "In \"Ми говорили,\" why is it \"-ли\"?",
             "options": [
-              "Я забув",
-              "Я забула",
-              "Я забуло",
-              "Я забули"
+              "Because it's negative",
+              "Because of the verb class",
+              "Because \"ми\" is plural",
+              "Because it's formal"
             ],
-            "correctIndex": 1,
-            "explanation": "Female speakers use feminine form"
-          },
-          {
-            "question": "Which form is correct for \"She heard\" (почути)?",
-            "options": [
-              "почувив",
-              "почула",
-              "почуло",
-              "почули"
-            ],
-            "correctIndex": 1,
-            "explanation": "Feminine past: почула"
-          },
-          {
-            "question": "What is the past of \"зустріти\" for вони?",
-            "options": [
-              "зустрів",
-              "зустріла",
-              "зустріло",
-              "зустріли"
-            ],
-            "correctIndex": 3,
-            "explanation": "Plural past: зустріли"
-          },
-          {
-            "question": "What determines the form of \"був/була/було/були\"?",
-            "options": [
-              "The gender and number of the subject",
-              "The verb tense",
-              "The time expression",
-              "The object of the sentence"
-            ],
-            "correctIndex": 0,
-            "explanation": "\"Бути\" in the past agrees with the subject's gender and number"
+            "correctIndex": 2,
+            "explanation": "All plural subjects (ми, ви, вони) use -ли."
           }
         ],
         "shuffleQuestions": true,
@@ -524,66 +558,76 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     },
     {
       "id": "act-a1-0-truefalse",
       "type": "true-false",
-      "title": "Past Tense Rules",
-      "description": "Determine if each statement is true or false.",
+      "title": "Past Tense Facts",
+      "description": "Decide if each statement is true (Правда) or false (Міф).",
       "content": {
         "type": "true-false",
         "statements": [
           {
-            "statement": "Past tense verbs must agree with the subject's gender",
+            "statement": "Past tense endings change based on gender.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": "Correct! -в (m), -ла (f), -ло (n), -ли (pl)."
           },
           {
-            "statement": "\"Він зробив\" is correct for \"He did\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"Вона був\" is correct for \"She was\"",
+            "statement": "Ukrainian has multiple past tenses like English.",
             "isTrue": false,
-            "explanation": "Incorrect. Feminine needs \"була\""
+            "explanation": "Incorrect! Ukrainian has only one past tense form."
           },
           {
-            "statement": "\"Ми закінчили\" uses the plural ending -ли",
+            "statement": "\"Він читав\" and \"вона читала\" are both past tense.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": "Correct! Same tense, different gender endings."
           },
           {
-            "statement": "\"Я побачив\" can be said by a female speaker",
+            "statement": "\"Бути\" (to be) is omitted in past tense.",
             "isTrue": false,
-            "explanation": "Incorrect. Female speakers say \"Я побачила\""
+            "explanation": "Incorrect! Unlike present, past uses був/була/було/були."
           },
           {
-            "statement": "\"Йти\" has irregular past: ішов/ішла/ішли",
+            "statement": "\"Не\" comes before the verb for negation.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": "Correct! Він не читав, вона не працювала."
           },
           {
-            "statement": "\"Вчора\" means \"yesterday\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "Past tense of \"пити\" for він is \"питив\"",
+            "statement": "\"Позавчора\" means \"tomorrow.\"",
             "isTrue": false,
-            "explanation": "Incorrect. It's \"пив\""
+            "explanation": "Incorrect! \"Позавчора\" = the day before yesterday."
           },
           {
-            "statement": "\"Все було добре\" means \"Everything was fine\"",
+            "statement": "\"Їв\" is the masculine past of \"їсти.\"",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": "Correct! Їсти → їв (m), їла (f)."
           },
           {
-            "statement": "\"Давно\" means \"long ago\"",
+            "statement": "Past tense of \"я\" always uses -в ending.",
+            "isTrue": false,
+            "explanation": "Incorrect! It depends on the speaker's gender: я читав (m), я читала (f)."
+          },
+          {
+            "statement": "\"Йшов\" is the past of \"іти.\"",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": "Correct! Irregular: іти → йшов/йшла/йшло/йшли."
+          },
+          {
+            "statement": "\"Як було?\" means \"How is it?\"",
+            "isTrue": false,
+            "explanation": "Incorrect! \"Як було?\" = How was it? (past)."
+          },
+          {
+            "statement": "\"Колись\" means \"once\" or \"sometime.\"",
+            "isTrue": true,
+            "explanation": "Correct! Time expression for the past."
+          },
+          {
+            "statement": "\"-ли\" ending is used for all plural subjects.",
+            "isTrue": true,
+            "explanation": "Correct! Ми, ви, вони all use -ли."
           }
         ]
       },
@@ -594,14 +638,14 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     },
     {
       "id": "act-a1-0-groupsort",
       "type": "group-sort",
-      "title": "Past Tense Endings",
-      "description": "Sort these past tense forms by their ending pattern.",
+      "title": "Gender Endings",
+      "description": "Sort these past tense forms into the correct gender category.",
       "content": {
         "type": "group-sort",
         "groups": [
@@ -609,11 +653,10 @@
             "id": "masculine",
             "name": "Masculine",
             "items": [
-              "читав (read)",
-              "був (was)",
-              "зробив (did)",
-              "ішов (went)",
-              "сказав (said)"
+              "читав",
+              "працював",
+              "був",
+              "пішов"
             ],
             "nameUk": "-в"
           },
@@ -621,11 +664,10 @@
             "id": "feminine",
             "name": "Feminine",
             "items": [
-              "читала (read)",
-              "була (was)",
-              "зробила (did)",
-              "ішла (went)",
-              "сказала (said)"
+              "читала",
+              "працювала",
+              "була",
+              "пішла"
             ],
             "nameUk": "-ла"
           },
@@ -633,10 +675,10 @@
             "id": "neuter",
             "name": "Neuter",
             "items": [
-              "читало (read)",
-              "було (was)",
-              "зробило (did)",
-              "почуло (heard)"
+              "читало",
+              "працювало",
+              "було",
+              "пішло"
             ],
             "nameUk": "-ло"
           },
@@ -644,11 +686,10 @@
             "id": "plural",
             "name": "Plural",
             "items": [
-              "читали (read)",
-              "були (were)",
-              "зробили (did)",
-              "ішли (went)",
-              "сказали (said)"
+              "читали",
+              "працювали",
+              "були",
+              "пішли"
             ],
             "nameUk": "-ли"
           }
@@ -662,25 +703,25 @@
       "difficultyLevel": "A1",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.960Z",
-      "modifiedAt": "2025-12-05T01:15:57.960Z"
+      "createdAt": "2025-12-05T16:44:42.815Z",
+      "modifiedAt": "2025-12-05T16:44:42.815Z"
     }
   ],
   "vocabulary": {
     "moduleId": "mod-uk-A1-21",
     "level": "A1",
     "phase": "A1.3",
-    "wordCount": 24,
-    "newWordCount": 24,
+    "wordCount": 25,
+    "newWordCount": 25,
     "reviewWordCount": 0,
-    "transliterationMode": "full",
+    "transliterationMode": "none",
     "words": [
       {
         "id": "v-vchora-0-0",
         "uk": "вчора",
         "en": "yesterday",
         "pos": "adv",
-        "ipa": "/ˈwtʃɔrɑ/",
+        "ipa": "/vˈt͡ʃɔrɑ/",
         "isNew": true,
         "firstModule": 0
       },
@@ -689,32 +730,49 @@
         "uk": "позавчора",
         "en": "day before yesterday",
         "pos": "adv",
-        "ipa": "/pɔzɑˈwtʃɔrɑ/",
+        "ipa": "/pɔzɑvˈt͡ʃɔrɑ/",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-mynulyy-0-2",
-        "uk": "минулий",
-        "en": "last, past",
-        "pos": "adj",
-        "ipa": "/mɪˈnulɪj/",
-        "gender": "m",
-        "note": "минулого тижня",
+        "id": "v-mynuloho-tyzhnya-0-2",
+        "uk": "минулого тижня",
+        "en": "last week",
+        "pos": "phrase",
+        "ipa": "/mɪˈnulɔɦɔ ˈtɪʒnʲɑ/",
+        "note": "genitive time",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-davno-0-3",
+        "id": "v-mynuloho-misyatsya-0-3",
+        "uk": "минулого місяця",
+        "en": "last month",
+        "pos": "phrase",
+        "ipa": "/mɪˈnulɔɦɔ ˈmʲisʲɑt͡sʲɑ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-mynuloho-roku-0-4",
+        "uk": "минулого року",
+        "en": "last year",
+        "pos": "phrase",
+        "ipa": "/mɪˈnulɔɦɔ ˈrɔku/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-davno-0-5",
         "uk": "давно",
         "en": "long ago",
         "pos": "adv",
-        "ipa": "/ˈdɑvnɔ/",
+        "ipa": "/dɑvˈnɔ/",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-nedavno-0-4",
+        "id": "v-nedavno-0-6",
         "uk": "недавно",
         "en": "recently",
         "pos": "adv",
@@ -723,7 +781,7 @@
         "firstModule": 0
       },
       {
-        "id": "v-ranishe-0-5",
+        "id": "v-ranishe-0-7",
         "uk": "раніше",
         "en": "earlier, before",
         "pos": "adv",
@@ -732,191 +790,171 @@
         "firstModule": 0
       },
       {
-        "id": "v-todi-0-6",
-        "uk": "тоді",
-        "en": "then",
+        "id": "v-kolysь-0-8",
+        "uk": "колись",
+        "en": "once, sometime",
         "pos": "adv",
-        "ipa": "/tɔˈdʲi/",
+        "ipa": "/ˈkɔlɪsʲ/",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-potim-0-7",
-        "uk": "потім",
-        "en": "then, later",
-        "pos": "adv",
-        "ipa": "/pɔˈtʲim/",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-vzhe-0-8",
-        "uk": "вже",
-        "en": "already",
-        "pos": "adv",
-        "ipa": "/vʒɛ/",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-shche-ne-0-9",
-        "uk": "ще не",
-        "en": "not yet",
-        "pos": "phrase",
-        "ipa": "/ʃtʃɛ nɛ/",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-buv-0-10",
+        "id": "v-buv-0-9",
         "uk": "був",
         "en": "was (m)",
         "pos": "verb",
         "ipa": "/buv/",
-        "gender": "m",
-        "note": "Past of бути",
+        "note": "past of бути",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-bula-0-11",
+        "id": "v-bula-0-10",
         "uk": "була",
         "en": "was (f)",
         "pos": "verb",
         "ipa": "/buˈlɑ/",
-        "gender": "f",
-        "note": "Past of бути",
+        "note": "past of бути",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-bulo-0-12",
+        "id": "v-bulo-0-11",
         "uk": "було",
         "en": "was (n)",
         "pos": "verb",
         "ipa": "/ˈbulɔ/",
-        "gender": "n",
-        "note": "Past of бути",
+        "note": "past of бути",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-buly-0-13",
+        "id": "v-buly-0-12",
         "uk": "були",
-        "en": "were",
+        "en": "were (pl)",
         "pos": "verb",
         "ipa": "/buˈlɪ/",
-        "note": "Past of бути",
+        "note": "past of бути",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-ishov-0-14",
-        "uk": "ішов",
-        "en": "went (m)",
-        "pos": "verb",
-        "ipa": "/iˈʃɔv/",
-        "gender": "m",
-        "note": "Past of йти",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-ishla-0-15",
-        "uk": "ішла",
-        "en": "went (f)",
-        "pos": "verb",
-        "ipa": "/iʃˈlɑ/",
-        "gender": "f",
-        "note": "Past of йти",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-zrobyv-0-16",
+        "id": "v-zrobyv-0-13",
         "uk": "зробив",
-        "en": "did, made",
+        "en": "did, made (m)",
         "pos": "verb",
         "ipa": "/zrɔˈbɪv/",
-        "gender": "m",
-        "note": "completed",
+        "note": "past of зробити",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-skazav-0-17",
+        "id": "v-skazav-0-14",
         "uk": "сказав",
-        "en": "said, told",
+        "en": "said (m)",
         "pos": "verb",
         "ipa": "/skɑˈzɑv/",
-        "gender": "m",
-        "note": "completed",
+        "note": "past of сказати",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-pochav-0-18",
+        "id": "v-pishov-0-15",
+        "uk": "пішов",
+        "en": "went, left (m)",
+        "pos": "verb",
+        "ipa": "/pʲiˈʃɔv/",
+        "note": "past of піти",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pryyshov-0-16",
+        "uk": "прийшов",
+        "en": "came (m)",
+        "pos": "verb",
+        "ipa": "/prɪjˈʃɔv/",
+        "note": "past of прийти",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-poyikhav-0-17",
+        "uk": "поїхав",
+        "en": "went (vehicle) (m)",
+        "pos": "verb",
+        "ipa": "/pɔˈjixɑv/",
+        "note": "past of поїхати",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pryyikhav-0-18",
+        "uk": "приїхав",
+        "en": "arrived (vehicle) (m)",
+        "pos": "verb",
+        "ipa": "/prɪˈjixɑv/",
+        "note": "past of приїхати",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pochav-0-19",
         "uk": "почав",
-        "en": "started",
+        "en": "began (m)",
         "pos": "verb",
-        "ipa": "/pɔˈtʃɑv/",
-        "gender": "m",
-        "note": "completed",
+        "ipa": "/pɔˈt͡ʃɑv/",
+        "note": "past of почати",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-zakinchyv-0-19",
+        "id": "v-zakinchyv-0-20",
         "uk": "закінчив",
-        "en": "finished",
+        "en": "finished (m)",
         "pos": "verb",
-        "ipa": "/zɑˈkʲinʲtʃɪv/",
-        "gender": "m",
-        "note": "completed",
+        "ipa": "/zɑˈkʲint͡ʃɪv/",
+        "note": "past of закінчити",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-pobachyv-0-20",
+        "id": "v-pobachyv-0-21",
         "uk": "побачив",
-        "en": "saw",
+        "en": "saw (m)",
         "pos": "verb",
-        "ipa": "/pɔˈbɑtʃɪv/",
-        "gender": "m",
-        "note": "completed",
+        "ipa": "/pɔˈbɑt͡ʃɪv/",
+        "note": "past of побачити",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-pochuv-0-21",
+        "id": "v-pochuv-0-22",
         "uk": "почув",
-        "en": "heard",
+        "en": "heard (m)",
         "pos": "verb",
-        "ipa": "/pɔˈtʃuv/",
-        "gender": "m",
-        "note": "completed",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-zabuv-0-22",
-        "uk": "забув",
-        "en": "forgot",
-        "pos": "verb",
-        "ipa": "/zɑˈbuv/",
-        "gender": "m",
-        "note": "completed",
+        "ipa": "/pɔˈt͡ʃuv/",
+        "note": "past of почути",
         "isNew": true,
         "firstModule": 0
       },
       {
         "id": "v-zustriv-0-23",
         "uk": "зустрів",
-        "en": "met",
+        "en": "met (m)",
         "pos": "verb",
-        "ipa": "/zusˈtrʲiv/",
-        "gender": "m",
-        "note": "completed",
+        "ipa": "/zuˈstrʲiv/",
+        "note": "past of зустріти",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zabuv-0-24",
+        "uk": "забув",
+        "en": "forgot (m)",
+        "pos": "verb",
+        "ipa": "/zɑˈbuv/",
+        "note": "past of забути",
         "isNew": true,
         "firstModule": 0
       }

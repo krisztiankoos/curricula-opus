@@ -14,9 +14,10 @@
 2. [Grammar Constraints by Level](#grammar-constraints-by-level)
 3. [Module Format Specification](#module-format-specification)
 4. [Review Checklist](#review-checklist)
-5. [Fix/Rewrite Guidelines](#fixrewrite-guidelines)
-6. [Module Creation Templates](#module-creation-templates)
-7. [Examples](#examples)
+5. [Module Enrichment Guidelines](#module-enrichment-guidelines)
+6. [Fix/Rewrite Guidelines](#fixrewrite-guidelines)
+7. [Module Creation Templates](#module-creation-templates)
+8. [Examples](#examples)
 
 ---
 
@@ -494,13 +495,9 @@ grammar:
 | публіцистика | journalism | стиль ЗМІ |
 ```
 
-### Activity Counts
+### Activity & Content Requirements
 
-| Level | Minimum Activities | Activity Types |
-|-------|--------------------|----------------|
-| A1 | 8 | At least 4 different |
-| A2+ | 10 | At least 4 different |
-| B1+ | 12 | At least 4 different |
+> **Single source of truth:** See `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` for all richness parameters including activity counts, items per activity, content quality, sentence complexity, and time/vocabulary targets.
 
 ### Activity Format Reference
 
@@ -614,6 +611,172 @@ For the module's level, verify:
 - [ ] Answer syntax correct (`> [!answer]`)
 - [ ] Tables properly formatted
 - [ ] Coming Next section accurate
+
+</instructions>
+
+---
+
+## Module Enrichment Guidelines
+
+<instructions>
+
+### The Core Problem
+
+Modules often become **dry lists** of grammar rules or vocabulary with minimal narrative. This fails learners because:
+- No memorable context for new information
+- No emotional engagement
+- No sense of real-world relevance
+- Feels like a textbook, not a journey
+
+### Enrichment Philosophy
+
+**Every module should feel like a mini-adventure, not a reference sheet.**
+
+Good modules have:
+- **Narrative flow** — content reads like a story, not a list
+- **Cultural anchoring** — connects to Ukrainian life, history, pop culture
+- **Practical scenarios** — "here's when you'd actually use this"
+- **Voice and personality** — engaging, sometimes funny, never dry
+
+### Content Richness Requirements by Level
+
+| Level | Engagement Boxes | Mini-Dialogues | Contextual Paragraphs | Cultural References |
+|-------|------------------|----------------|----------------------|---------------------|
+| A1 | 3+ | 1-2 | 2-3 per section | 1-2 |
+| A2 | 4+ | 2-3 | 3-4 per section | 2-3 |
+| B1 | 5+ | 3-4 | 4-5 per section | 3-4 |
+| B2+ | 6+ | 4+ | Full narrative | 4+ |
+
+### Grammar Module Enrichment
+
+Grammar modules should NOT be dry rule explanations. Transform them:
+
+**BAD (Dry):**
+```markdown
+# Dative Case
+
+The dative case is used for indirect objects.
+
+| Noun | Dative |
+|------|--------|
+| мама | мамі |
+| друг | другу |
+
+Practice: Fill in the blank...
+```
+
+**GOOD (Rich):**
+```markdown
+# Dative Case: Giving and Telling
+
+When you give a gift in Ukraine, you're not just handing over an object — you're
+participating in a cultural ritual. Ukrainians are famously generous hosts, and
+knowing HOW to give (grammatically!) matters.
+
+The dative case answers: **Кому?** (To whom?) and **Чому?** (To what?)
+
+> 💡 **Did You Know?** In Ukrainian culture, gifts are given with both hands
+> and received with both hands — a sign of respect. The grammar reflects this
+> importance: the RECIPIENT gets their own special case!
+
+**Common Patterns:**
+
+| Who receives? | Base | Dative | Example |
+|---------------|------|--------|---------|
+| мама | мам-а | мам-і | Даю квіти мамі. |
+| друг | друг | друг-у | Кажу другу новину. |
+
+**У реальному житті (In Real Life)**
+
+You're at a birthday party in Kyiv. Watch how dative works:
+
+— Що ти подарував Олені?
+— Я подарував їй книгу.
+— А що ти сказав?
+— Я сказав їй "З днем народження!"
+
+Notice: **їй** = "to her" (dative of вона). You're giving TO someone,
+telling TO someone.
+```
+
+### Vocabulary Module Enrichment
+
+See the dedicated "Vocabulary-Focused Module Guidelines" section in MODULE-RICHNESS-GUIDELINES.md.
+
+Key principle: **Tables do NOT count toward content word requirements.** Every vocabulary section needs contextual paragraphs and dialogues showing words in natural use.
+
+### Engagement Box Types
+
+Use a variety throughout each module:
+
+| Type | Icon | Purpose |
+|------|------|---------|
+| Did You Know? | 💡 | Surprising facts |
+| Myth Buster | 🔍 | Correct misconceptions |
+| Pro Tip | ⚡ | Practical advice |
+| Culture Corner | 🎭 | Traditions, customs |
+| History Bite | 📜 | Historical context |
+| Fun Fact | 🎯 | Memorable tidbits |
+| Real World | 🌍 | Modern relevance |
+| Pop Culture Moment | 🎬 | Movies, music, games |
+| Gamer's Corner | 🎮 | Gaming references (S.T.A.L.K.E.R., Witcher) |
+
+### Mini-Dialogue Requirements
+
+Every module A2+ should include mini-dialogues showing grammar/vocabulary in natural conversation:
+
+**Format:**
+```markdown
+**У кав'ярні (At a café)**
+
+— Що ти будеш замовляти?
+— Я візьму каву з молоком.
+— А я хочу чай. Офіціанте, будь ласка!
+— Так, слухаю вас.
+```
+
+**Guidelines:**
+- 3-6 exchanges per dialogue
+- Natural, not stilted
+- Show the grammar point being used
+- Include brief context setting
+- Vary scenarios (café, shop, home, office, etc.)
+
+### Section-by-Section Enrichment
+
+**Introduction (Вступ):**
+- NOT just "In this lesson we learn..."
+- Set the scene: WHY does this matter?
+- Connect to prior knowledge
+- Hint at practical application
+
+**Main Content:**
+- Lead with context, then rules
+- Every table should have surrounding narrative
+- Examples should tell mini-stories
+- Break up dense content with engagement boxes
+
+**Practice/Activities:**
+- Frame activities with scenarios
+- Activity instructions can set context
+- Explanations after answers add value
+
+**Summary (Підсумок):**
+- Reinforce practical value
+- Preview what's next
+- Leave learner feeling accomplished
+
+### Enrichment Checklist
+
+Before finishing any module A2+:
+
+- [ ] Introduction has narrative context (not just "we will learn")
+- [ ] Each major section has 2+ paragraphs of narrative (not just tables)
+- [ ] 4+ engagement boxes throughout
+- [ ] 2+ mini-dialogues showing natural usage
+- [ ] Cultural/real-world connections present
+- [ ] Content flows like a story, not a reference
+- [ ] Word count (excluding tables/activities) reaches level target
 
 </instructions>
 

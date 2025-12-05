@@ -10,22 +10,42 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 
 ## Module Length & Depth
 
-### Minimum Content Requirements
+### Minimum Activity Requirements
 
-| Level | Modules | Reading Time | Practice Time | Total Time | New Words / Mod | Activity Count | Items / Activity |
-|-------|---------|--------------|---------------|------------|-----------------|----------------|------------------|
-| A1 | 1-30 | 15 min | 45 min | **1h** | 15-20 | 6 | 10 |
-| A2 | 31-60 | 20 min | 45 min | **1h+** | 20-25 | 8 | 10 |
-| A2+ | 61-80 | 25 min | 60 min | **1.5h** | 35-40 | 10 | 15 |
-| B1 | 81-120 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
-| B1+ | 121-160 | 30 min | 60 min | **1.5h** | 25-30 | 12 | 20 |
-| B2 | 161-200 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
-| B2+ | 201-240 | 40 min | 80 min | **2h** | 25-30 | 14 | 20 |
-| C1 | 241+ | 45 min | 90 min | **2h+** | 30-35 | 14 | 20 |
+| Level | Modules | Activity Count | Items / Activity | Activity Types |
+|-------|---------|----------------|------------------|----------------|
+| A1 | 01-30 | 8+ | 12+ | 4+ different |
+| A2 | 01-50 | 10+ | 12+ | 4+ different |
+| B1 | 01-80 | 12+ | 14+ | 4+ different |
+| B2 | 01-50 | 14+ | 16+ | 4+ different |
+| C1 | 01-50 | 16+ | 18+ | 4+ different |
+| C2 | 01-80 | 16+ | 18+ | 4+ different |
+
+### Content Quality Requirements
+
+| Level | Examples | Engagement Boxes | Content Words | Immersion |
+|-------|----------|------------------|---------------|-----------|
+| A1 | 12+ | 3+ | 600+ | 30% Ukrainian |
+| A2 | 18+ | 4+ | 750+ | 40% Ukrainian |
+| B1 | 24+ | 5+ | 900+ | 60% Ukrainian |
+| B2 | 28+ | 6+ | 1000+ | 85% Ukrainian |
+| C1 | 30+ | 7+ | 1100+ | 95% Ukrainian |
+| C2 | 32+ | 8+ | 1200+ | 98% Ukrainian |
+
+### Time & Vocabulary Targets
+
+| Level | Reading Time | Practice Time | Total Time | New Words / Mod |
+|-------|--------------|---------------|------------|-----------------|
+| A1 | 15 min | 45 min | **1h** | 15-20 |
+| A2 | 20 min | 45 min | **1h+** | 20-25 |
+| B1 | 30 min | 60 min | **1.5h** | 25-30 |
+| B2 | 40 min | 80 min | **2h** | 25-30 |
+| C1 | 45 min | 90 min | **2h+** | 30-35 |
+| C2 | 45 min | 90 min | **2h+** | 30-35 |
 
 ### Activity Type Priority
 
-When adding activities to a module, prioritize in this order:
+**A1-A2 (Beginner):** Prioritize comprehension activities first, then production:
 
 1. **quiz** - Multiple choice comprehension
 2. **match-up** - Vocabulary associations
@@ -36,7 +56,18 @@ When adding activities to a module, prioritize in this order:
 7. **fill-in** - Gap completion (sentence complexity applies)
 8. **unjumble** - Word ordering (sentence complexity applies)
 
-**Rationale:** fill-in and unjumble are highest cognitive load activities. Build comprehension with lower-load activities first, then challenge with production tasks.
+**B1+ (Intermediate and above):** Prioritize production activities:
+
+1. **fill-in** - Gap completion (high cognitive load, production)
+2. **unjumble** - Word ordering (high cognitive load, production)
+3. **quiz** - Multiple choice comprehension
+4. **match-up** - Vocabulary associations
+5. **group-sort** - Categorization skills
+6. **true-false** - Statement validation
+7. **select** - Word selection
+8. **order** - Sequence building
+
+**Rationale:** At lower levels, build comprehension first. At B1+, learners need more production practice - prioritize fill-in and unjumble when adding activities.
 
 ---
 
@@ -48,55 +79,51 @@ Activity sentences must follow CEFR complexity progression:
 |-------|---------------|----------------|----------------------------|
 | A1 | 3-5 | 4-6 | Simple isolated phrases: `Я читаю книгу.` |
 | A2 | 6-8 | 8-10 | Simple sentences + connectors: `Я завжди даю мамі квіти на свято.` |
-| A2+ | 8-10 | 10-12 | Subordinate clauses begin: `Він каже, що хоче допомогти своїй сестрі.` |
 | B1 | 10-14 | 12-16 | Complex sentences, conditionals: `Якби я мав більше часу, я б допоміг тобі з роботою.` |
-| B1+ | 10-14 | 12-16 | Extended complexity, participles: `Прочитавши статтю, він зрозумів суть проблеми.` |
 | B2 | 12-16 | 14-18 | Sophisticated structures, passive: `Було вирішено, що проєкт буде завершено до кінця місяця.` |
-| B2+ | 12-16 | 14-18 | Advanced stylistic variation: `Варто зазначити, що результати перевершили очікування.` |
+| C1 | 14-18 | 16-20 | Advanced stylistic variation: `Варто зазначити, що результати перевершили очікування.` |
+| C2 | 14-18 | 16-20 | Full native complexity: `Незважаючи на численні застереження експертів, рішення було ухвалено одноголосно.` |
 
 ### Complexity Progression Principles
 
-1. **A1 (Modules 1-30)**: Foundation
+1. **A1**: Foundation
    - Simple SVO sentences
    - Basic vocabulary, high-frequency words
    - No subordinate clauses
    - Example: `Це моя книга.` (3 words)
 
-2. **A2 (Modules 31-60)**: Expansion
+2. **A2**: Expansion
    - Add adjectives, adverbs, time expressions
    - Simple connectors (і, але, тому що)
    - Basic prepositional phrases
+   - Subordinate clauses with що, який, коли
    - Example: `Я завжди читаю цікаві книги ввечері.` (6 words)
 
-3. **A2+ (Modules 61-80)**: Transition
-   - Subordinate clauses with що, який, коли
-   - More complex verb forms
-   - Multiple modifiers
-   - Example: `Дівчина, яка працює в цьому офісі, дуже добре говорить англійською.` (10 words)
-
-4. **B1 (Modules 81-120)**: Integration
+3. **B1**: Integration
    - Conditional sentences (якщо, якби)
    - Reported speech
    - Complex time expressions
+   - Adverbial participles (дієприслівники)
    - Example: `Якби я знав про цю проблему раніше, я б обов'язково допоміг тобі її вирішити.` (14 words)
 
-5. **B1+ (Modules 121-160)**: Consolidation
-   - All B1 structures with increased complexity
-   - Adverbial participles (дієприслівники)
-   - Extended subordinate clauses
-   - Example: `Прочитавши цю статтю, я зрозумів, чому ця проблема є такою важливою для суспільства.` (12 words)
-
-6. **B2 (Modules 161-200)**: Sophistication
+4. **B2**: Sophistication
    - Passive constructions
    - Abstract vocabulary
    - Nuanced connectors
+   - Stylistic variation
    - Example: `Незважаючи на те, що проєкт був складним, команда успішно завершила його вчасно.` (12 words)
 
-7. **B2+ (Modules 201-240)**: Advanced Fluency
-   - All B2 structures with increased nuance
-   - Stylistic variation
-   - Register awareness
+5. **C1**: Advanced Fluency
+   - All registers (formal, academic, professional)
+   - Complex argumentation structures
+   - Implicit meaning and nuance
    - Example: `Варто зазначити, що дане дослідження проводилось з урахуванням усіх методологічних вимог.` (10 words)
+
+6. **C2**: Mastery
+   - Full native-level complexity
+   - Literary and specialized language
+   - Subtle stylistic effects
+   - Example: `Незважаючи на численні застереження експертів, рішення було ухвалено одноголосно.` (8 words, but highly sophisticated)
 
 ### Content Depth Indicators
 
@@ -648,6 +675,274 @@ Before publishing any module:
 - [ ] Vocabulary table complete
 - [ ] Activities function properly
 - [ ] Can generate valid Vibe lesson(s)
+
+---
+
+## Grammar-Focused Module Guidelines
+
+### The Problem
+
+Grammar modules often become **dry rule dumps** — tables of endings, conjugations, and declensions with minimal context. This fails learners because:
+- Rules without context don't stick in memory
+- No sense of when/why to use the grammar
+- Feels like studying for a test, not learning to communicate
+- Misses the cultural significance of language patterns
+
+### Enrichment Philosophy
+
+**Grammar is a tool for communication, not an end in itself.**
+
+Every grammar point should be taught through:
+1. **Real-world context** — when would someone actually use this?
+2. **Cultural anchoring** — how does this connect to Ukrainian life?
+3. **Narrative examples** — mini-stories, not isolated sentences
+4. **Practical dialogues** — show the grammar in natural conversation
+
+### Grammar Module Structure
+
+Instead of: **Rule → Table → Exercises**
+
+Use: **Context → Pattern Discovery → Practice → Real Application**
+
+**Required sections for grammar modules (A2+):**
+
+1. **Contextual Introduction (100+ words)**
+   - Set up a real scenario where this grammar matters
+   - Connect to cultural practices or daily life
+   - Show WHY learners need this, not just WHAT it is
+
+2. **Pattern Presentation with Narrative (per pattern: 80+ words)**
+   - Brief table for reference
+   - Followed by: Paragraph explaining the pattern
+   - Mini-examples in context (not isolated words)
+   - Engagement box connecting to culture/history
+
+3. **Usage Patterns Section (150+ words)**
+   - When to use vs. when NOT to use
+   - Common mistakes and how to avoid them
+   - Collocations and fixed expressions
+
+4. **Mini-Dialogues (2-3 per module, 50+ words each)**
+   - Show grammar in natural conversation
+   - Vary scenarios (café, shop, home, work)
+   - Highlight the grammar point with bold
+
+5. **Cultural/Practical Connection (100+ words)**
+   - How Ukrainians actually use this in life
+   - Register notes (formal vs. informal)
+   - Regional variations if relevant
+
+### Example: Dative Case (BAD vs GOOD)
+
+**BAD (rule-dump):**
+```markdown
+# Dative Case
+
+The dative case shows indirect object.
+
+| Noun | Nominative | Dative |
+|------|------------|--------|
+| мама | мама | мамі |
+| друг | друг | другу |
+| книга | книга | книзі |
+
+## Exercises
+1. Fill in the dative: Я даю ___ (мама).
+```
+
+**GOOD (contextual):**
+```markdown
+# Dative Case: The Art of Giving
+
+In Ukrainian culture, giving matters. Whether it's a birthday gift, a cup of tea
+to a guest, or advice to a friend — the ACT of giving is deeply woven into daily
+life. And Ukrainian grammar has a special case just for recipients: the Dative.
+
+The dative answers: **Кому?** (To whom?) — whenever something is given, told,
+shown, or sent TO someone.
+
+> 💡 **Did You Know?** Ukrainians traditionally give flowers in odd numbers
+> (3, 5, 7...) for celebrations. Even numbers are only for funerals. So when
+> you say "Я дарую мамі квіти" — make sure it's an odd bunch!
+
+**Core Pattern:**
+
+| Who receives? | Nominative | Dative | Example |
+|---------------|------------|--------|---------|
+| мама | мама | мам-і | Дарую мамі квіти. |
+| друг | друг | друг-у | Кажу другу новину. |
+| дитина | дитина | дитин-і | Читаю дитині казку. |
+
+Notice the pattern: feminine nouns ending in -а get -і, masculine nouns get -у
+(or -ові for people: другові, батькові).
+
+**У реальному житті (In Real Life)**
+
+You're at a birthday party in Lviv:
+
+— Що ти подарував **Олені**?
+— Я подарував **їй** книгу про Карпати.
+— Вона любить гори?
+— Так! Я завжди дарую **друзям** щось особливе.
+
+Notice how the dative marks every recipient: Олені, їй, друзям.
+
+**Common Dative Verbs:**
+- **дарувати** — to give as a gift: Дарую мамі квіти.
+- **казати** — to tell: Кажу другу правду.
+- **показувати** — to show: Показую туристам місто.
+- **допомагати** — to help: Допомагаю бабусі.
+- **телефонувати** — to call: Телефоную батькам.
+
+> 🎬 **Pop Culture Moment:** In the Ukrainian dub of "The Lord of the Rings",
+> when Galadriel gives gifts to the Fellowship, every recipient is in dative:
+> "Я даю тобі світло..." The grammar of giving!
+```
+
+### Content Targets by Level
+
+| Level | Narrative Words | Engagement Boxes | Mini-Dialogues | Examples in Context |
+|-------|-----------------|------------------|----------------|---------------------|
+| A2 | 600+ | 4+ | 2-3 | 12+ |
+| B1 | 800+ | 5+ | 3-4 | 18+ |
+| B2 | 1000+ | 6+ | 4+ | 24+ |
+| C1+ | 1200+ | 7+ | 5+ | 30+ |
+
+### Grammar Module Checklist
+
+Before finishing a grammar module (A2+):
+
+- [ ] Introduction explains WHY (not just "in this lesson we learn...")
+- [ ] Each grammar table has surrounding narrative paragraphs
+- [ ] Usage patterns explained (when to use, common mistakes)
+- [ ] At least 2 mini-dialogues showing natural use
+- [ ] Cultural connection (how Ukrainians actually use this)
+- [ ] 4+ engagement boxes (varied types)
+- [ ] Word count (excluding tables) reaches level target
+- [ ] Examples are in context, not isolated words
+
+---
+
+## Vocabulary-Focused Module Guidelines
+
+### The Problem
+
+Vocabulary modules (like A2.5 "Vocabulary Expansion" modules 37-48) often become **dry lists of words** with minimal narrative. This fails to:
+- Meet the 750+ content word requirement (tables don't count!)
+- Provide contextual learning
+- Create memorable associations
+- Engage learners
+
+### Word Count Rule
+
+**Tables do NOT count toward content word requirements.**
+
+Content words come from:
+- ✅ Narrative paragraphs
+- ✅ Example sentences in flowing text
+- ✅ Engagement boxes
+- ✅ Explanations and context
+- ✅ Mini-dialogues and scenarios
+- ❌ NOT vocabulary tables
+- ❌ NOT activity instructions
+- ❌ NOT answer options
+
+### Vocabulary Module Structure
+
+Instead of: **Table → Table → Table → Activities**
+
+Use: **Context → Vocabulary-in-use → Context → Practice**
+
+**Required sections for vocabulary modules:**
+
+1. **Thematic Introduction (100+ words)**
+   - Set the scene with a narrative
+   - Why is this vocabulary useful?
+   - Real-world context
+
+2. **Vocabulary Groups with Context (per group: 80+ words)**
+   - Brief vocabulary table (reference)
+   - Followed by: Mini-scenario using those words
+   - Or: Dialogue demonstrating natural usage
+   - Or: Descriptive paragraph with words in context
+
+3. **Usage Patterns Section (150+ words)**
+   - Common phrases and collocations
+   - What verbs go with what nouns?
+   - What prepositions are used?
+
+4. **Cultural/Real-World Connection (100+ words)**
+   - How Ukrainians actually use these words
+   - Regional variations if relevant
+   - Modern usage (social media, news)
+
+5. **Mini-Scenarios (150+ words)**
+   - 2-3 short dialogues or situations
+   - Show vocabulary in natural conversation
+
+### Example: Sports Vocabulary (BAD vs GOOD)
+
+**BAD (table-only):**
+```markdown
+# Види спорту
+
+| Спорт | English |
+|-------|---------|
+| футбол | football |
+| баскетбол | basketball |
+
+> 💡 Fact about sports
+```
+
+**GOOD (contextual):**
+```markdown
+# Види спорту / Types of Sports
+
+Ukraine has a rich sporting culture. Football (футбол) is the most popular
+team sport, with clubs like Dynamo Kyiv and Shakhtar Donetsk competing in
+European championships. Basketball (баскетбол) has grown rapidly, especially
+among young people in cities.
+
+| Спорт | IPA | English |
+|-------|-----|---------|
+| футбол | /futˈbɔl/ | football |
+| баскетбол | /baskɛtˈbɔl/ | basketball |
+
+**У реальному житті (In Real Life)**
+
+Imagine you're at a café in Kyiv with new Ukrainian friends. They ask about
+your hobbies:
+
+— Чим ти займаєшся у вільний час?
+— Я граю у футбол щонеділі з друзями.
+— О, класно! А де ви граєте?
+— На стадіоні біля університету.
+
+Notice how we use "грати в" (play) with ball sports...
+```
+
+### Minimum Content by Section
+
+| Section | Min Words | Purpose |
+|---------|-----------|---------|
+| Thematic intro | 100 | Set context |
+| Per vocab group | 80 | Words in use |
+| Usage patterns | 150 | Collocations |
+| Cultural notes | 100 | Real-world |
+| Mini-scenarios | 150 | Natural dialogue |
+| **Total narrative** | **580+** | + engagement boxes = 750+ |
+
+### Vocabulary Module Checklist
+
+Before finishing a vocabulary module:
+
+- [ ] Introduction paragraph (not just "In this lesson we learn...")
+- [ ] Each vocab group has contextual paragraph or dialogue
+- [ ] Usage patterns explained (not just translated)
+- [ ] At least 2 mini-dialogues showing natural use
+- [ ] Cultural connection (how Ukrainians use these words)
+- [ ] 4+ engagement boxes
+- [ ] Word count (excluding tables) reaches 750+
 
 ---
 

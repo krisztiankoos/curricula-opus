@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 43: Verbal Aspect III | Ukrainian A2</title>
+  <title>Module 43: Технології та медіа | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 43: Verbal Aspect III</h1>
+    <h1>Module 43: Технології та медіа</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,315 +497,345 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Verbal Aspect III</h2>
-        <p style="color:var(--text-muted)">Aspect in Context</p>
+        <span class="level-badge">A2 · A2.5 Vocabulary Expansion</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Технології та медіа</h2>
+        <p style="color:var(--text-muted)">Technology &amp; Media</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="aspectmastery">Aspect Mastery</h3>
-<p>You know aspect pairs and their meanings. Now the challenge: choosing the RIGHT aspect in real situations!</p>
-<p><strong>The key insight:</strong><br />
-Context determines aspect. The same verb might need different aspects depending on:</p>
-<ul>
-<li>Time expressions (за годину vs годину)</li>
-<li>The whole situation (habit vs single event)</li>
-<li>What you want to emphasize (process vs result)</li>
-</ul>
+      <div class="md-content"><p>У цьому уроці ми вивчимо слова про технології, інтернет та медіа. Ви навчитеся говорити про пристрої, соціальні мережі та новини.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Пристрої / Devices</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Пристрій</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>комп'ютер</td>
+<td>/kɔmˈpjutɛr/</td>
+<td>computer</td>
+<td>Я працюю за комп'ютером</td>
+</tr>
+<tr>
+<td>ноутбук</td>
+<td>/nɔʊtˈbuk/</td>
+<td>laptop</td>
+<td>Мій ноутбук легкий і зручний</td>
+</tr>
+<tr>
+<td>смартфон</td>
+<td>/smɑrtˈfɔn/</td>
+<td>smartphone</td>
+<td>Смартфон завжди зі мною</td>
+</tr>
+<tr>
+<td>планшет</td>
+<td>/plɑnˈʃɛt/</td>
+<td>tablet</td>
+<td>Дитина грає на планшеті</td>
+</tr>
+<tr>
+<td>навушники</td>
+<td>/nɑˈʋuʃnɪkɪ/</td>
+<td>headphones</td>
+<td>Я слухаю музику в навушниках</td>
+</tr>
+<tr>
+<td>клавіатура</td>
+<td>/klɑʋiɑˈturɑ/</td>
+<td>keyboard</td>
+<td>Клавіатура зручна для друку</td>
+</tr>
+<tr>
+<td>миша</td>
+<td>/ˈmɪʃɑ/</td>
+<td>mouse</td>
+<td>Миша не працює</td>
+</tr>
+<tr>
+<td>екран</td>
+<td>/ɛkˈrɑn/</td>
+<td>screen</td>
+<td>Екран дуже яскравий</td>
+</tr>
+<tr>
+<td>принтер</td>
+<td>/ˈprɪntɛr/</td>
+<td>printer</td>
+<td>Принтер друкує документи</td>
+</tr>
+<tr>
+<td>зарядка</td>
+<td>/zɑˈrʲɑdkɑ/</td>
+<td>charger</td>
+<td>Де моя зарядка?</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Even native speakers occasionally pause to choose the right aspect! The good news: both options are usually understood. The better news: with practice, aspect becomes intuitive. This module gives you that practice!</p>
+  <p>💡 <strong>Did You Know?</strong> Україна — один з лідерів IT-індустрії у Східній Європі. Понад 200 000 програмістів працюють в Україні. Багато відомих додатків створили українці!</p>
 </blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="aspectwithtimeexpressions">Aspect with Time Expressions</h3>
-<p><strong>Duration (how long?) → Imperfective:</strong></p>
-<ul>
-<li>Я читав <strong>дві години</strong>. - I was reading for two hours.</li>
-<li>Вона працювала <strong>весь день</strong>. - She was working all day.</li>
-<li>Ми чекали <strong>довго</strong>. - We were waiting for a long time.</li>
-</ul>
-<p><strong>Time limit (in how long?) → Perfective:</strong></p>
-<ul>
-<li>Я прочитав книгу <strong>за два дні</strong>. - I read the book in two days.</li>
-<li>Вона приготувала обід <strong>за годину</strong>. - She made lunch in an hour.</li>
-<li>Він написав лист <strong>за п'ять хвилин</strong>. - He wrote the letter in five minutes.</li>
-</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Інтернет / Internet</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Слово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>інтернет</td>
+<td>/intɛrˈnɛt/</td>
+<td>internet</td>
+<td>Я підключений до інтернету</td>
+</tr>
+<tr>
+<td>вебсайт</td>
+<td>/vɛbˈsɑjt/</td>
+<td>website</td>
+<td>Цей вебсайт дуже корисний</td>
+</tr>
+<tr>
+<td>сторінка</td>
+<td>/stɔˈrinkɑ/</td>
+<td>page</td>
+<td>Відкрий цю сторінку</td>
+</tr>
+<tr>
+<td>пошта</td>
+<td>/ˈpɔʃtɑ/</td>
+<td>email</td>
+<td>Надішли мені на пошту</td>
+</tr>
+<tr>
+<td>пароль</td>
+<td>/pɑˈrɔlʲ/</td>
+<td>password</td>
+<td>Я забув пароль</td>
+</tr>
+<tr>
+<td>акаунт</td>
+<td>/ɑˈkɑunt/</td>
+<td>account</td>
+<td>Створи новий акаунт</td>
+</tr>
+<tr>
+<td>посилання</td>
+<td>/pɔsɪˈlɑnʲɑ/</td>
+<td>link</td>
+<td>Надішли посилання</td>
+</tr>
+<tr>
+<td>завантаження</td>
+<td>/zɑvɑntɑˈʒɛnʲɑ/</td>
+<td>download</td>
+<td>Завантаження файлу</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: за vs No Preposition</strong></p>
-  <ul>
-  <li><strong>дві години</strong> (for two hours) → imperfective (duration)</li>
-  <li><strong>за дві години</strong> (in two hours) → perfective (completion)</li>
-  </ul>
-  <p>"Я читав дві години" = I was reading for 2 hours (process)<br />
-  "Я прочитав за дві години" = I finished in 2 hours (result)</p>
+  <p>🌍 <strong>Real World:</strong> "Дія" (Diia) — це український державний застосунок, де можна зберігати документи, платити штрафи та отримувати послуги. Це один з найкращих державних застосунків у світі!</p>
 </blockquote>
-<h3 id="aspectinstorytelling">Aspect in Storytelling</h3>
-<p><strong>Narrative sequence → Perfective:</strong><br />
-When telling what happened (sequence of events):</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Соціальні мережі / Social Media</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Слово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>соціальні мережі</td>
+<td>/sɔt͡siˈɑlʲni mɛˈrɛʒi/</td>
+<td>social media</td>
+<td>Я багато часу в соціальних мережах</td>
+</tr>
+<tr>
+<td>профіль</td>
+<td>/ˈprɔfilʲ/</td>
+<td>profile</td>
+<td>Мій профіль закритий</td>
+</tr>
+<tr>
+<td>підписник</td>
+<td>/pidpɪsˈnɪk/</td>
+<td>follower</td>
+<td>У неї багато підписників</td>
+</tr>
+<tr>
+<td>публікація</td>
+<td>/publikɑˈt͡siːɑ/</td>
+<td>post</td>
+<td>Цікава публікація!</td>
+</tr>
+<tr>
+<td>лайк</td>
+<td>/lɑjk/</td>
+<td>like</td>
+<td>Постав лайк</td>
+</tr>
+<tr>
+<td>коментар</td>
+<td>/kɔmɛnˈtɑr/</td>
+<td>comment</td>
+<td>Напиши коментар</td>
+</tr>
+<tr>
+<td>поділитися</td>
+<td>/pɔdiˈlɪtɪsʲɑ/</td>
+<td>to share</td>
+<td>Поділися цим постом</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-  <p>Вчора я <strong>прокинувся</strong>, <strong>поснідав</strong>, <strong>поїхав</strong> на роботу, <strong>попрацював</strong>, <strong>повернувся</strong> додому і <strong>подивився</strong> фільм.<br />
-  (Yesterday I woke up, had breakfast, went to work, worked, came home, and watched a movie.)</p>
+  <p>🎮 <strong>Gamer's Corner:</strong> Українські геймери активні в соціальних мережах. Стрімери на Twitch та YouTube мають мільйони підписників. Гра S.T.A.L.K.E.R. 2 — одна з найочікуваніших українських ігор!</p>
 </blockquote>
-<p>All actions completed, one after another = perfective chain.</p>
-<p><strong>Background/setting → Imperfective:</strong><br />
-When describing what was happening:</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Медіа / Media</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Слово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>новини</td>
+<td>/nɔˈvɪnɪ/</td>
+<td>news</td>
+<td>Я читаю новини щоранку</td>
+</tr>
+<tr>
+<td>стаття</td>
+<td>/stɑˈtʲɑ/</td>
+<td>article</td>
+<td>Цікава стаття про технології</td>
+</tr>
+<tr>
+<td>блог</td>
+<td>/blɔɦ/</td>
+<td>blog</td>
+<td>Він веде блог про подорожі</td>
+</tr>
+<tr>
+<td>подкаст</td>
+<td>/ˈpɔdkɑst/</td>
+<td>podcast</td>
+<td>Слухаю подкаст по дорозі</td>
+</tr>
+<tr>
+<td>відео</td>
+<td>/ˈvidɛɔ/</td>
+<td>video</td>
+<td>Дивись це відео</td>
+</tr>
+<tr>
+<td>канал</td>
+<td>/kɑˈnɑl/</td>
+<td>channel</td>
+<td>Підпишись на мій канал</td>
+</tr>
+<tr>
+<td>реклама</td>
+<td>/rɛkˈlɑmɑ/</td>
+<td>advertisement</td>
+<td>Занадто багато реклами</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Дієслова / Tech Verbs</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Дієслово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>завантажувати</td>
+<td>/zɑvɑntɑˈʒuvɑtɪ/</td>
+<td>to download</td>
+<td>Завантажую фільм</td>
+</tr>
+<tr>
+<td>публікувати</td>
+<td>/publikuˈvɑtɪ/</td>
+<td>to publish</td>
+<td>Вона публікує фото щодня</td>
+</tr>
+<tr>
+<td>шукати</td>
+<td>/ʃuˈkɑtɪ/</td>
+<td>to search</td>
+<td>Шукаю інформацію в інтернеті</td>
+</tr>
+<tr>
+<td>підписатися</td>
+<td>/pidpɪˈsɑtɪsʲɑ/</td>
+<td>to subscribe</td>
+<td>Підпишіться на наш канал</td>
+</tr>
+<tr>
+<td>надсилати</td>
+<td>/nɑdsɪˈlɑtɪ/</td>
+<td>to send</td>
+<td>Надсилаю вам файл</td>
+</tr>
+<tr>
+<td>зберігати</td>
+<td>/zbɛriˈɦɑtɪ/</td>
+<td>to save</td>
+<td>Збережи документ</td>
+</tr>
+<tr>
+<td>видаляти</td>
+<td>/vɪdɑˈlʲɑtɪ/</td>
+<td>to delete</td>
+<td>Видали цей файл</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-  <p>Коли я <strong>йшов</strong> додому, <strong>світило</strong> сонце, птахи <strong>співали</strong>, люди <strong>гуляли</strong> в парку.<br />
-  (When I was walking home, the sun was shining, birds were singing, people were strolling in the park.)</p>
+  <p>🎬 <strong>Pop Culture Moment:</strong> Українська пісня "Стефанія" гурту Kalush Orchestra перемогла на Євробаченні 2022. Відео цієї пісні переглянули понад 100 мільйонів разів на YouTube!</p>
 </blockquote>
-<p>Ongoing background = imperfective.</p>
-<blockquote>
-  <p>📜 <strong>History Bite: Aspectual Storytelling</strong></p>
-  <p>Old Church Slavonic texts from the 9th century already showed this pattern: perfective for main events, imperfective for background. Ukrainian continues this 1,200-year tradition of aspectual narration!</p>
-</blockquote>
-<h3 id="whileandwhenconstructions">"While" and "When" Constructions</h3>
-<p><strong>Коли (when) + background → Imperfective:</strong></p>
-<ul>
-<li><strong>Коли</strong> я <strong>снідав</strong>, зателефонував друг.</li>
-<li>(When I was having breakfast, a friend called.)</li>
-</ul>
-<p><strong>Коли (when) + completed action → Perfective:</strong></p>
-<ul>
-<li><strong>Коли</strong> я <strong>поснідав</strong>, я пішов на роботу.</li>
-<li>(When I finished breakfast, I went to work.)</li>
-</ul>
-<p><strong>Поки (while) → Usually Imperfective:</strong></p>
-<ul>
-<li><strong>Поки</strong> вона <strong>готувала</strong>, я <strong>читав</strong>.</li>
-<li>(While she was cooking, I was reading.)</li>
-</ul>
-<p><strong>Перш ніж (before) → Perfective:</strong></p>
-<ul>
-<li><strong>Перш ніж</strong> <strong>піти</strong>, він подзвонив.</li>
-<li>(Before leaving, he called.)</li>
-</ul>
-<p><strong>Після того як (after) → Perfective:</strong></p>
-<ul>
-<li><strong>Після того як</strong> він <strong>прийшов</strong>, ми почали.</li>
-<li>(After he arrived, we started.)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Simultaneous vs Sequential</strong></p>
-  <p>Simultaneous actions (happening at the same time) → imperfective<br />
-  Sequential actions (one after another) → perfective</p>
-</blockquote>
-<h3 id="aspectaftermodalexpressions">Aspect After Modal Expressions</h3>
-<p><strong>хотіти (to want) - both possible:</strong></p>
-<ul>
-<li>Я хочу <strong>читати</strong>. (I want to read - in general)</li>
-<li>Я хочу <strong>прочитати</strong> цю книгу. (I want to finish this book)</li>
-</ul>
-<p><strong>могти (can/able) - both possible:</strong></p>
-<ul>
-<li>Я можу <strong>читати</strong> українською. (I can read Ukrainian - ability)</li>
-<li>Я можу <strong>прочитати</strong> це за день. (I can finish this in a day)</li>
-</ul>
-<p><strong>треба/потрібно (need to) - usually perfective:</strong></p>
-<ul>
-<li>Мені треба <strong>зробити</strong> це. (I need to get this done)</li>
-<li>Тобі потрібно <strong>написати</strong> їм. (You need to write to them)</li>
-</ul>
-<p><strong>починати/почати (start) - imperfective follows:</strong></p>
-<ul>
-<li>Я починаю <strong>читати</strong>. (I'm starting to read)</li>
-<li>Він почав <strong>працювати</strong>. (He started working)</li>
-</ul>
-<p><strong>закінчувати/закінчити (finish) - imperfective follows:</strong></p>
-<ul>
-<li>Я закінчив <strong>читати</strong>. (I finished reading)</li>
-<li>Вона закінчує <strong>готувати</strong>. (She's finishing cooking)</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Polite Aspect</strong></p>
-  <p>In Ukrainian, using imperfective can sound softer:</p>
-  <ul>
-  <li>"Можна <strong>запитати</strong>?" (May I ask? - polite, perfective)</li>
-  <li>"Можна <strong>питати</strong>?" (May I ask? - very soft, imperfective)</li>
-  </ul>
-  <p>But for requests: "Чи можете <strong>сказати</strong>…?" (perfective) is standard.</p>
-</blockquote>
-<h3 id="aspectwithnegationrevisited">Aspect with Negation Revisited</h3>
-<p><strong>Не + imperfective = didn't do:</strong></p>
-<ul>
-<li>Я <strong>не читав</strong> цю книгу. - I haven't read this book. (never)</li>
-<li>Він <strong>не писав</strong> мені. - He didn't write to me. (no writing happened)</li>
-</ul>
-<p><strong>Не + perfective = didn't complete/couldn't:</strong></p>
-<ul>
-<li>Я <strong>не прочитав</strong> книгу. - I didn't finish the book.</li>
-<li>Він <strong>не написав</strong> листа. - He didn't manage to write the letter.</li>
-</ul>
-<p><strong>Special case - ще не (not yet) → usually perfective:</strong></p>
-<ul>
-<li>Я <strong>ще не прочитав</strong>. - I haven't read it yet. (but will)</li>
-<li>Вона <strong>ще не приїхала</strong>. - She hasn't arrived yet.</li>
-</ul>
-<p><strong>вже (already) → perfective:</strong></p>
-<ul>
-<li>Я <strong>вже прочитав</strong>. - I've already read it.</li>
-<li>Він <strong>вже пішов</strong>. - He's already left.</li>
-</ul>
-<h3 id="commonaspectmistakes">Common Aspect Mistakes</h3>
-<p><strong>❌ Wrong: "Я буду прочитати."</strong><br />
-✅ Right: "Я прочитаю." (Perfective future = conjugated verb)<br />
-✅ Right: "Я буду читати." (Imperfective future = буду + infinitive)</p>
-<p><strong>❌ Wrong: "Я зараз прочитаю." (for process)</strong><br />
-✅ Right: "Я зараз читаю." (Now = in progress = imperfective)</p>
-<p><strong>❌ Wrong: "Він завжди написав листи."</strong><br />
-✅ Right: "Він завжди писав листи." (Always = habitual = imperfective)</p>
-<p><strong>❌ Wrong: "Не зроби це!" (negative command)</strong><br />
-✅ Right: "Не роби це!" (Negative commands = imperfective)</p>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: When in Doubt</strong></p>
-  <ul>
-  <li>Is it ongoing/repeated? → Imperfective</li>
-  <li>Is it completed/single? → Perfective</li>
-  <li>Present tense? → Imperfective only</li>
-  <li>Negative command? → Imperfective</li>
-  <li>"вже" or "ще не"? → Perfective</li>
-  </ul>
-</blockquote>
-<h3 id="aspectinquestions">Aspect in Questions</h3>
-<p><strong>Asking about experience (ever?) → Imperfective:</strong></p>
-<ul>
-<li>Ти <strong>читав</strong> "Кобзар"? - Have you (ever) read "Kobzar"?</li>
-<li>Ви <strong>бували</strong> в Україні? - Have you (ever) been to Ukraine?</li>
-</ul>
-<p><strong>Asking about specific result → Perfective:</strong></p>
-<ul>
-<li>Ти <strong>прочитав</strong> статтю, яку я надіслав? - Did you read the article I sent?</li>
-<li>Ви <strong>побачили</strong> мій лист? - Did you see my letter?</li>
-</ul>
-<p><strong>Asking about current activity → Imperfective:</strong></p>
-<ul>
-<li>Що ти <strong>робиш</strong>? - What are you doing?</li>
-<li>Що ви <strong>читаєте</strong>? - What are you reading?</li>
-</ul>
-<p><strong>Asking what was accomplished → Perfective:</strong></p>
-<ul>
-<li>Що ти <strong>зробив</strong> сьогодні? - What did you get done today?</li>
-<li>Що ви <strong>приготували</strong>? - What did you cook/make?</li>
-</ul>
-<h2 id="practice">practice</h2>
-<h3 id="choosethecorrectaspect">Choose the Correct Aspect</h3>
-<ol>
-<li><p>Я писав листа ___ (дві години / за дві години).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">дві години</div>
-<div class="callout callout-explanation" data-callout="explanation">imperfective + duration</div></div>
-<ol start="2">
-<li><p>Вона прочитала книгу ___ (тиждень / за тиждень).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">за тиждень</div>
-<div class="callout callout-explanation" data-callout="explanation">perfective + time limit</div></div>
-<ol start="3">
-<li><p>Коли я ___ (снідав / поснідав), зателефонувала мама.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">снідав</div>
-<div class="callout callout-explanation" data-callout="explanation">background action - imperfective</div></div>
-<ol start="4">
-<li><p>Коли я ___ (снідав / поснідав), я пішов на роботу.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">поснідав</div>
-<div class="callout callout-explanation" data-callout="explanation">completed before next action - perfective</div></div>
-<ol start="5">
-<li><p>Я хочу ___ (читати / прочитати) цю книгу до кінця.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">прочитати</div>
-<div class="callout callout-explanation" data-callout="explanation">complete the book - perfective</div></div>
-<ol start="6">
-<li><p>Ти вже ___ (робив / зробив) домашнє завдання?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">зробив</div>
-<div class="callout callout-explanation" data-callout="explanation">вже = already = perfective</div></div>
-<h3 id="fillinwithcorrectaspect">Fill in with Correct Aspect</h3>
-<ol>
-<li><p>Вчора я ___ (прокидатися/прокинутися) о сьомій.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">прокинувся</div>
-<div class="callout callout-explanation" data-callout="explanation">single completed action</div></div>
-<ol start="2">
-<li><p>Кожен день я ___ (прокидатися/прокинутися) о сьомій.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">прокидаюся</div>
-<div class="callout callout-explanation" data-callout="explanation">habitual</div></div>
-<ol start="3">
-<li><p>Поки він ___ (працювати/попрацювати), я чекала.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">працював</div>
-<div class="callout callout-explanation" data-callout="explanation">simultaneous - imperfective</div></div>
-<ol start="4">
-<li><p>Після того як він ___ (закінчувати/закінчити), ми пішли.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">закінчив</div>
-<div class="callout callout-explanation" data-callout="explanation">completed before - perfective</div></div>
-<ol start="5">
-<li><p>Не ___ (забувати/забути) ключі!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">забувай</div>
-<div class="callout callout-explanation" data-callout="explanation">negative command - imperfective</div></div>
-<ol start="6">
-<li><p>Я ще не ___ (відповідати/відповісти) на лист.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">відповів</div>
-<div class="callout callout-explanation" data-callout="explanation">ще не + perfective</div></div>
-<h3 id="translateusingcorrectaspect">Translate Using Correct Aspect</h3>
-<ol>
-<li><p>I was reading for three hours.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Я читав три години.</div></div>
-<ol start="2">
-<li><p>I read the book in three hours.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">Я прочитав книгу за три години.</div></div>
-<ol start="3">
-<li><p>While she was cooking, I watched TV.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Поки вона готувала, я дивився телевізор.</div></div>
-<ol start="4">
-<li><p>Have you ever been to Kyiv?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">Ти бував у Києві?</div></div>
-<ol start="5">
-<li><p>I haven't finished yet.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">Я ще не закінчив.</div></div>
-<ol start="6">
-<li><p>I already called him.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">Я вже подзвонив йому.</div></div>
-<h2 id="production">production</h2>
-<h3 id="tellastory">Tell a Story</h3>
-<p><strong>Use both aspects appropriately:</strong></p>
-<blockquote>
-  <p>Минулої неділі я <strong>вирішив</strong> поїхати на природу. Рано вранці я <strong>прокинувся</strong>, <strong>поснідав</strong> і <strong>зібрав</strong> речі. Погода <strong>була</strong> чудова - <strong>світило</strong> сонце, <strong>співали</strong> птахи. Я <strong>їхав</strong> автобусом дві години. Коли я <strong>приїхав</strong>, я <strong>пішов</strong> до озера. Там я <strong>відпочивав</strong> весь день - <strong>читав</strong> книгу, <strong>плавав</strong>, <strong>обідав</strong> на траві. Увечері я <strong>повернувся</strong> додому задоволений.</p>
-</blockquote>
-<p>Notice:</p>
-<ul>
-<li>Perfective for main events (вирішив, прокинувся, приїхав…)</li>
-<li>Imperfective for background (була, світило, співали…)</li>
-<li>Imperfective for duration (їхав дві години, відпочивав весь день…)</li>
-</ul>
-<h3 id="practicedialogues">Practice Dialogues</h3>
-<p><strong>Asking about results:</strong></p>
-<ul>
-<li>Ти вже <strong>прочитав</strong> ту статтю?</li>
-<li>Так, <strong>прочитав</strong> учора.</li>
-<li>І що <strong>подумав</strong>?</li>
-<li>Цікаво! Треба <strong>обговорити</strong>.</li>
-</ul>
-<p><strong>Asking about experience:</strong></p>
-<ul>
-<li>Ти <strong>читав</strong> Шевченка?</li>
-<li>Звичайно, <strong>читав</strong> у школі.</li>
-<li>А "Заповіт" <strong>пам'ятаєш</strong>?</li>
-<li>Так, можу навіть <strong>прочитати</strong> напам'ять!</li>
-</ul>
-<hr />
-<hr />
-<hr />
 <hr />
 <hr />
 <hr /></div>
@@ -787,112 +844,14 @@ When describing what was happening:</p>
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="timeexpressionsandaspect">Time Expressions and Aspect</h2>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
-<th>Aspect</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>дві години (for 2h)</td>
-<td>Imperfective</td>
-<td>Я читав дві години.</td>
-</tr>
-<tr>
-<td>за дві години (in 2h)</td>
-<td>Perfective</td>
-<td>Я прочитав за дві години.</td>
-</tr>
-<tr>
-<td>щодня (every day)</td>
-<td>Imperfective</td>
-<td>Я читаю щодня.</td>
-</tr>
-<tr>
-<td>вже (already)</td>
-<td>Perfective</td>
-<td>Я вже прочитав.</td>
-</tr>
-<tr>
-<td>ще не (not yet)</td>
-<td>Perfective</td>
-<td>Я ще не прочитав.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="aspectinstorytelling">Aspect in Storytelling</h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Aspect</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Main events</td>
-<td>Perfective</td>
-<td>Я прийшов, поїв, пішов.</td>
-</tr>
-<tr>
-<td>Background</td>
-<td>Imperfective</td>
-<td>Світило сонце, співали птахи.</td>
-</tr>
-<tr>
-<td>Simultaneous</td>
-<td>Imperfective</td>
-<td>Поки він працював, я читав.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="modalconstructions">Modal Constructions</h2>
-<table>
-<thead>
-<tr>
-<th>Modal</th>
-<th>Infinitive Aspect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>хотіти</td>
-<td>both (depends on meaning)</td>
-</tr>
-<tr>
-<td>могти</td>
-<td>both (depends on meaning)</td>
-</tr>
-<tr>
-<td>починати</td>
-<td>imperfective</td>
-</tr>
-<tr>
-<td>закінчувати</td>
-<td>imperfective</td>
-</tr>
-<tr>
-<td>треба</td>
-<td>usually perfective</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Duration (дві години) → imperfective</li>
-  <li>Time limit (за дві години) → perfective</li>
-  <li>Background/simultaneous → imperfective</li>
-  <li>Sequence of events → perfective</li>
-  <li>вже/ще не → perfective</li>
-  <li>After починати/закінчувати → imperfective</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>У цьому уроці ви вивчили:</p>
+<ul>
+<li>Назви пристроїв (комп'ютер, смартфон, ноутбук)</li>
+<li>Слова про інтернет (вебсайт, пошта, пароль)</li>
+<li>Соціальні мережі (профіль, підписник, публікація)</li>
+<li>Медіа та дієслова (новини, завантажувати, публікувати)</li>
+</ul>
+<p><strong>Coming up next:</strong> Хобі та дозвілля — words for hobbies, leisure activities, and entertainment.</p></div>
     </div>
   
       <div class="btn-group">
@@ -901,69 +860,76 @@ When describing what was happening:</p>
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Aspect in Context</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Оберіть правильне слово</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Aspect Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>З&#039;єднайте слово з перекладом</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/11</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Складіть речення</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/8</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Виберіть правильну відповідь</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/8</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Правда чи неправда?</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Time Expression Aspect</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Розподіліть слова за категоріями</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/24</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Morning Routine Sequence</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Tech Actions</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Aspect Pattern</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/20</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Device or Action?</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Digital Literacy</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -973,7 +939,7 @@ When describing what was happening:</p>
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">поки</td><td class="vocab-ipa">/poˈkɪ/</td><td class="vocab-en">while</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перш ніж</td><td class="vocab-ipa">/pɛrʃ nʲiʒ/</td><td class="vocab-en">before</td><td class="vocab-note">+ perfective</td></tr><tr><td class="vocab-uk">після того як</td><td class="vocab-ipa">/ˈpʲislʲɑ toˈɦo jɑk/</td><td class="vocab-en">after</td><td class="vocab-note">+ perfective</td></tr><tr><td class="vocab-uk">нарешті</td><td class="vocab-ipa">/nɑˈrɛʃtʲi/</td><td class="vocab-en">finally</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">раптом</td><td class="vocab-ipa">/ˈrɑptom/</td><td class="vocab-en">suddenly</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">прокинутися</td><td class="vocab-ipa">/proˈkɪnutɪsʲɑ/</td><td class="vocab-en">to wake up (perf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повернутися</td><td class="vocab-ipa">/povɛrˈnutɪsʲɑ/</td><td class="vocab-en">to return (perf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">збирати</td><td class="vocab-ipa">/zbɪˈrɑtɪ/</td><td class="vocab-en">to gather (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зібрати</td><td class="vocab-ipa">/zʲiˈbrɑtɪ/</td><td class="vocab-en">to gather (perf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відпочивати</td><td class="vocab-ipa">/vʲidpotʃɪˈvɑtɪ/</td><td class="vocab-en">to rest (impf)</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">комп&#039;ютер</td><td class="vocab-ipa">/kɔmˈpjutɛr/</td><td class="vocab-en">computer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ноутбук</td><td class="vocab-ipa">/nɔʊtˈbuk/</td><td class="vocab-en">laptop</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">смартфон</td><td class="vocab-ipa">/smɑrtˈfɔn/</td><td class="vocab-en">smartphone</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">планшет</td><td class="vocab-ipa">/plɑnˈʃɛt/</td><td class="vocab-en">tablet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">навушники</td><td class="vocab-ipa">/nɑˈʋuʃnɪkɪ/</td><td class="vocab-en">headphones</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">клавіатура</td><td class="vocab-ipa">/klɑʋiɑˈturɑ/</td><td class="vocab-en">keyboard</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">миша</td><td class="vocab-ipa">/ˈmɪʃɑ/</td><td class="vocab-en">mouse</td><td class="vocab-note">computer mouse</td></tr><tr><td class="vocab-uk">екран</td><td class="vocab-ipa">/ɛkˈrɑn/</td><td class="vocab-en">screen</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">принтер</td><td class="vocab-ipa">/ˈprɪntɛr/</td><td class="vocab-en">printer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зарядка</td><td class="vocab-ipa">/zɑˈrʲɑdkɑ/</td><td class="vocab-en">charger</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">інтернет</td><td class="vocab-ipa">/intɛrˈnɛt/</td><td class="vocab-en">internet</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вебсайт</td><td class="vocab-ipa">/vɛbˈsɑjt/</td><td class="vocab-en">website</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сторінка</td><td class="vocab-ipa">/stɔˈrinkɑ/</td><td class="vocab-en">page</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пошта</td><td class="vocab-ipa">/ˈpɔʃtɑ/</td><td class="vocab-en">email</td><td class="vocab-note">also: post office</td></tr><tr><td class="vocab-uk">пароль</td><td class="vocab-ipa">/pɑˈrɔlʲ/</td><td class="vocab-en">password</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">акаунт</td><td class="vocab-ipa">/ɑˈkɑunt/</td><td class="vocab-en">account</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посилання</td><td class="vocab-ipa">/pɔsɪˈlɑnʲɑ/</td><td class="vocab-en">link</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">соціальні мережі</td><td class="vocab-ipa">/sɔt͡siˈɑlʲni mɛˈrɛʒi/</td><td class="vocab-en">social media</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">профіль</td><td class="vocab-ipa">/ˈprɔfilʲ/</td><td class="vocab-en">profile</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підписник</td><td class="vocab-ipa">/pidpɪsˈnɪk/</td><td class="vocab-en">follower</td><td class="vocab-note">f: підписниця</td></tr><tr><td class="vocab-uk">публікація</td><td class="vocab-ipa">/publikɑˈt͡siːɑ/</td><td class="vocab-en">post</td><td class="vocab-note">publication</td></tr><tr><td class="vocab-uk">коментар</td><td class="vocab-ipa">/kɔmɛnˈtɑr/</td><td class="vocab-en">comment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">новини</td><td class="vocab-ipa">/nɔˈvɪnɪ/</td><td class="vocab-en">news</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">стаття</td><td class="vocab-ipa">/stɑˈtʲɑ/</td><td class="vocab-en">article</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">блог</td><td class="vocab-ipa">/blɔɦ/</td><td class="vocab-en">blog</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">подкаст</td><td class="vocab-ipa">/ˈpɔdkɑst/</td><td class="vocab-en">podcast</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відео</td><td class="vocab-ipa">/ˈvidɛɔ/</td><td class="vocab-en">video</td><td class="vocab-note">indecl</td></tr><tr><td class="vocab-uk">канал</td><td class="vocab-ipa">/kɑˈnɑl/</td><td class="vocab-en">channel</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">завантажувати</td><td class="vocab-ipa">/zɑvɑntɑˈʒuvɑtɪ/</td><td class="vocab-en">to download</td><td class="vocab-note">pf: завантажити</td></tr><tr><td class="vocab-uk">публікувати</td><td class="vocab-ipa">/publikuˈvɑtɪ/</td><td class="vocab-en">to publish</td><td class="vocab-note">pf: опублікувати</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -985,8 +951,8 @@ When describing what was happening:</p>
   </main><footer>Module 43 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Aspect in Context","data":{"type":"fill-blank","items":[{"prompt":"Я читав цю книгу ___ (дві години / за дві години).","answer":"дві години","hints":["дві години / за дві години"]},{"prompt":"Поки вона ___ (готувала / приготувала), я читав газету.","answer":"готувала","hints":["готувала / приготувала"]},{"prompt":"Він вже ___ (писав / написав) листа своїй сестрі.","answer":"написав","hints":["писав / написав"]},{"prompt":"Коли я ___ (снідав / поснідав), зателефонував мій друг.","answer":"снідав","hints":["снідав / поснідав"]},{"prompt":"Вона ще не ___ (відповідала / відповіла) на моє повідомлення.","answer":"відповіла","hints":["відповідала / відповіла"]}]}},{"id":"activity-1","type":"unjumble","title":"Aspect Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["читав","Я","книгу","три","години","вчора"],"answer":"Я читав книгу три години вчора.","translation":"I was reading a book for three hours yesterday."},{"words":["вже","написав","Він","листа","своїй","сестрі"],"answer":"Він вже написав листа своїй сестрі.","translation":"He has already written a letter to his sister."},{"words":["готувала","Поки","вона","читав","я","газету"],"answer":"Поки вона готувала, я читав газету.","translation":"While she was cooking, I was reading the newspaper."},{"words":["не","ще","Вона","відповіла","на","лист"],"answer":"Вона ще не відповіла на лист.","translation":"She hasn't answered the letter yet."},{"words":["поснідав","Коли","я","пішов","на","роботу"],"answer":"Коли я поснідав, я пішов на роботу.","translation":"When I had breakfast, I went to work."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"скільки","right":"how much/many"},{"left":"нарешті","right":"finally"},{"left":"раптом","right":"suddenly"},{"left":"відпочивати","right":"to rest (impf)"},{"left":"збирати","right":"to gather (impf)"},{"left":"колега","right":"colleague"},{"left":"зібрати","right":"to gather (perf)"},{"left":"повернутися","right":"to return (perf)"},{"left":"поки","right":"while"},{"left":"прокинутися","right":"to wake up (perf)"},{"left":"полиця","right":"shelf"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"зібрати\" mean?","options":["word","to gather (perf)","new","bag"],"correctIndex":1,"explanation":"\"зібрати\" means \"to gather (perf)\""},{"question":"What does \"нарешті\" mean?","options":["husband","newspaper","finally","cheap"],"correctIndex":2,"explanation":"\"нарешті\" means \"finally\""},{"question":"What does \"повернутися\" mean?","options":["which/what kind (f)","programmer","to return (perf)","to turn"],"correctIndex":2,"explanation":"\"повернутися\" means \"to return (perf)\""},{"question":"What does \"прокинутися\" mean?","options":["dinner","relative","to wake up (perf)","answer"],"correctIndex":2,"explanation":"\"прокинутися\" means \"to wake up (perf)\""},{"question":"What does \"поки\" mean?","options":["joy","to call (phone)","while","passport"],"correctIndex":2,"explanation":"\"поки\" means \"while\""},{"question":"What does \"збирати\" mean?","options":["to call (pf)","to gather (impf)","sweater","company, group"],"correctIndex":1,"explanation":"\"збирати\" means \"to gather (impf)\""},{"question":"What does \"раптом\" mean?","options":["suddenly","to gift (impf)","skirt","exchange"],"correctIndex":0,"explanation":"\"раптом\" means \"suddenly\""},{"question":"What does \"відпочивати\" mean?","options":["cash register","accountant","they will be","to rest (impf)"],"correctIndex":3,"explanation":"\"відпочивати\" means \"to rest (impf)\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"прокинутися\" means \"to wake up (perf)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"поки\" means \"to buy\"","isTrue":false,"explanation":"Incorrect. \"поки\" means \"while\""},{"statement":"\"збирати\" means \"to return (perf)\"","isTrue":false,"explanation":"Incorrect. \"збирати\" means \"to gather (impf)\""},{"statement":"\"відпочивати\" means \"to rest (impf)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"зібрати\" means \"photo\"","isTrue":false,"explanation":"Incorrect. \"зібрати\" means \"to gather (perf)\""},{"statement":"\"раптом\" means \"to do (perf)\"","isTrue":false,"explanation":"Incorrect. \"раптом\" means \"suddenly\""},{"statement":"\"нарешті\" means \"finally\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"повернутися\" means \"cup\"","isTrue":false,"explanation":"Incorrect. \"повернутися\" means \"to return (perf)\""}]}},{"id":"activity-5","type":"select","title":"Time Expression Aspect","data":{"type":"select","items":[{"question":"I read for three hours yesterday.","options":[{"text":"Я прочитав три години вчора.","correct":false},{"text":"Я читав три години вчора.","correct":true},{"text":"Я читаю три години вчора.","correct":false},{"text":"Я буду читати три години.","correct":false}]},{"question":"She finished the report in two days.","options":[{"text":"Вона написала звіт за два дні.","correct":true},{"text":"Вона писала звіт за два дні.","correct":false},{"text":"Вона пише звіт за два дні.","correct":false},{"text":"Вона буде писати звіт.","correct":false}]},{"question":"They work all day every day.","options":[{"text":"Вони зроблять весь день щодня.","correct":false},{"text":"Вони працюють весь день щодня.","correct":true},{"text":"Вони зробили весь день.","correct":false},{"text":"Вони працювали щодня.","correct":false}]},{"question":"I finally woke up at 7 AM.","options":[{"text":"Я нарешті прокинувся о сьомій.","correct":true},{"text":"Я нарешті прокидався о сьомій.","correct":false},{"text":"Я нарешті прокидаюся о сьомій.","correct":false},{"text":"Я буду прокидатися.","correct":false}]},{"question":"While I was eating, he called.","options":[{"text":"Поки я з'їв, він подзвонив.","correct":false},{"text":"Поки я їв, він подзвонив.","correct":true},{"text":"Поки я їм, він дзвонить.","correct":false},{"text":"Поки я буду їсти.","correct":false}]},{"question":"After I finish work, I'll go home.","options":[{"text":"Після того як я закінчу роботу, я піду додому.","correct":true},{"text":"Після того як я кінчаю роботу, я йду додому.","correct":false},{"text":"Після того як я кінчав роботу, я пішов.","correct":false},{"text":"Після того як я буду кінчати.","correct":false}]},{"question":"Before she left, she gathered her things.","options":[{"text":"Перш ніж вона пішла, вона зібрала речі.","correct":true},{"text":"Перш ніж вона йшла, вона збирала речі.","correct":false},{"text":"Перш ніж вона йде, вона збирає речі.","correct":false},{"text":"Перш ніж вона буде йти.","correct":false}]},{"question":"We rest every Sunday.","options":[{"text":"Ми відпочили кожної неділі.","correct":false},{"text":"Ми відпочиваємо кожної неділі.","correct":true},{"text":"Ми відпочинемо кожної неділі.","correct":false},{"text":"Ми будемо відпочивати.","correct":false}]},{"question":"Suddenly he returned from the trip.","options":[{"text":"Раптом він повернувся з поїздки.","correct":true},{"text":"Раптом він повертався з поїздки.","correct":false},{"text":"Раптом він повертається з поїздки.","correct":false},{"text":"Він буде повертатися.","correct":false}]},{"question":"I was working when the phone rang.","options":[{"text":"Я зробив, коли телефон задзвонив.","correct":false},{"text":"Я працював, коли телефон задзвонив.","correct":true},{"text":"Я працюю, коли телефон дзвонить.","correct":false},{"text":"Я буду працювати.","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"Morning Routine Sequence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["каву","за п'ять","Я","хвилин","зробив"],"answer":"Я зробив каву за п'ять хвилин."},{"words":["о сьомій","прокинувся","Я","годині","ранку"],"answer":"Я прокинувся о сьомій годині ранку."},{"words":["сніданок","і","з'їв","каву","випив","Я"],"answer":"Я з'їв сніданок і випив каву."},{"words":["душ","і","зуби","прийняв","почистив","Я"],"answer":"Я прийняв душ і почистив зуби."},{"words":["з дому","вийшов","Я","о восьмій","тридцять"],"answer":"Я вийшов з дому о восьмій тридцять."},{"words":["з ліжка","встав","і","вікно","Я","відкрив"],"answer":"Я встав з ліжка і відкрив вікно."},{"words":["речі","зібрав","Я","для","роботи"],"answer":"Я зібрав речі для роботи."},{"words":["на роботу","приїхав","Я","за двадцять","хвилин"],"answer":"Я приїхав на роботу за двадцять хвилин."},{"words":["і","одягнувся","Я","сумку","взяв"],"answer":"Я одягнувся і взяв сумку."},{"words":["в автобус","сів","і","на роботу","поїхав","Я"],"answer":"Я сів в автобус і поїхав на роботу."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Aspect Pattern","data":{"type":"group-sort","groups":[{"id":"durationprocess","name":"Duration/Process","items":["працювати","відпочивати","збирати","повертатися","прокидатися","кінчати","готувати","писати","читати","вчити"],"nameUk":"Imperfective"},{"id":"completionresult","name":"Completion/Result","items":["зробити","відпочити","зібрати","повернутися","прокинутися","закінчити","приготувати","написати","прочитати","вивчити"],"nameUk":"Perfective"}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"поки","translit":"","en":"while","note":""},{"uk":"перш ніж","translit":"","en":"before","note":"+ perfective"},{"uk":"після того як","translit":"","en":"after","note":"+ perfective"},{"uk":"нарешті","translit":"","en":"finally","note":""},{"uk":"раптом","translit":"","en":"suddenly","note":""},{"uk":"прокинутися","translit":"","en":"to wake up (perf)","note":""},{"uk":"повернутися","translit":"","en":"to return (perf)","note":""},{"uk":"збирати","translit":"","en":"to gather (impf)","note":""},{"uk":"зібрати","translit":"","en":"to gather (perf)","note":""},{"uk":"відпочивати","translit":"","en":"to rest (impf)","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я працюю за ___ у офісі.","answer":"комп'ютером","options":["комп'ютером","смартфоном","навушниками","планшетом"]},{"prompt":"Мій ___ завжди зі мною.","answer":"смартфон","options":["комп'ютер","смартфон","принтер","екран"]},{"prompt":"___ зручний для подорожей.","answer":"Ноутбук","options":["Комп'ютер","Ноутбук","Принтер","Екран"]},{"prompt":"Дитина грає на ___.","answer":"планшеті","options":["планшеті","комп'ютері","принтері","зарядці"]},{"prompt":"Я слухаю музику в ___.","answer":"навушниках","options":["навушниках","екрані","клавіатурі","мишці"]},{"prompt":"___ потрібен для роботи.","answer":"Комп'ютер","options":["Навушники","Комп'ютер","Зарядка","Посилання"]},{"prompt":"___ — це телефон і комп'ютер.","answer":"Смартфон","options":["Смартфон","Принтер","Екран","Канал"]},{"prompt":"Візьми ___ на зустріч.","answer":"ноутбук","options":["принтер","ноутбук","зарядку","екран"]},{"prompt":"___ більший за смартфон.","answer":"Планшет","options":["Планшет","Навушники","Пароль","Профіль"]},{"prompt":"Нові ___ дуже якісні.","answer":"навушники","options":["навушники","паролі","сторінки","акаунти"]},{"prompt":"Мій ___ працює швидко.","answer":"комп'ютер","options":["комп'ютер","пароль","коментар","канал"]},{"prompt":"Я забув ___ вдома.","answer":"смартфон","options":["смартфон","інтернет","новини","стаття"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"комп'ютер","right":"computer"},{"left":"смартфон","right":"smartphone"},{"left":"інтернет","right":"internet"},{"left":"пароль","right":"password"},{"left":"новини","right":"news"},{"left":"стаття","right":"article"},{"left":"завантажувати","right":"to download"},{"left":"публікувати","right":"to publish"},{"left":"підписник","right":"follower"},{"left":"коментар","right":"comment"},{"left":"екран","right":"screen"},{"left":"вебсайт","right":"website"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","працюю","за","комп'ютером","кожен","день"],"answer":"Я працюю за комп'ютером кожен день.","translation":"I work at the computer every day."},{"words":["Мій","смартфон","завжди","зі","мною"],"answer":"Мій смартфон завжди зі мною.","translation":"My smartphone is always with me."},{"words":["Вона","публікує","фото","в","соціальних","мережах"],"answer":"Вона публікує фото в соціальних мережах.","translation":"She publishes photos on social media."},{"words":["Завантажую","цей","файл","з","інтернету"],"answer":"Завантажую цей файл з інтернету.","translation":"I'm downloading this file from the internet."},{"words":["У","неї","багато","підписників","на","каналі"],"answer":"У неї багато підписників на каналі.","translation":"She has many followers on the channel."},{"words":["Я","читаю","новини","щоранку","на","телефоні"],"answer":"Я читаю новини щоранку на телефоні.","translation":"I read the news every morning on my phone."},{"words":["Напиши","коментар","під","цією","публікацією"],"answer":"Напиши коментар під цією публікацією.","translation":"Write a comment under this post."},{"words":["Підпишіться","на","наш","канал","у","YouTube"],"answer":"Підпишіться на наш канал у YouTube.","translation":"Subscribe to our channel on YouTube."},{"words":["Збережи","цей","документ","на","комп'ютері"],"answer":"Збережи цей документ на комп'ютері.","translation":"Save this document on the computer."},{"words":["Надішли","мені","посилання","на","пошту"],"answer":"Надішли мені посилання на пошту.","translation":"Send me the link to my email."},{"words":["Я","забув","пароль","від","акаунту"],"answer":"Я забув пароль від акаунту.","translation":"I forgot the password to my account."},{"words":["Цей","вебсайт","дуже","корисний","для","навчання"],"answer":"Цей вебсайт дуже корисний для навчання.","translation":"This website is very useful for studying."}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Що таке \"смартфон\"?","options":["computer","smartphone","tablet","laptop"],"correctIndex":1,"explanation":""},{"question":"Що означає \"завантажувати\"?","options":["to download","to delete","to search","to save"],"correctIndex":0,"explanation":""},{"question":"Що таке \"підписник\"?","options":["comment","follower","post","password"],"correctIndex":1,"explanation":""},{"question":"Де ви читаєте новини?","options":["на клавіатурі","на зарядці","на вебсайті","на принтері"],"correctIndex":2,"explanation":""},{"question":"Що таке \"пароль\"?","options":["email","profile","password","link"],"correctIndex":2,"explanation":""},{"question":"Що означає \"публікувати\"?","options":["to delete","to download","to publish","to search"],"correctIndex":2,"explanation":""},{"question":"Що таке \"коментар\"?","options":["comment","like","share","follower"],"correctIndex":0,"explanation":""},{"question":"Чим друкують документи?","options":["мишою","екраном","принтером","навушниками"],"correctIndex":2,"explanation":""},{"question":"Що таке \"подкаст\"?","options":["video","podcast","blog","article"],"correctIndex":1,"explanation":""},{"question":"Що означає \"видаляти\"?","options":["to save","to delete","to send","to download"],"correctIndex":1,"explanation":""},{"question":"Що таке \"акаунт\"?","options":["password","account","email","link"],"correctIndex":1,"explanation":""},{"question":"Що таке \"реклама\"?","options":["news","article","advertisement","channel"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Смартфон — це мобільний телефон з інтернетом.","isTrue":true,"explanation":"Correct! A smartphone is a mobile phone with internet."},{"statement":"Ноутбук — це стаціонарний комп'ютер.","isTrue":false,"explanation":"Incorrect! A laptop is portable, not stationary."},{"statement":"Пароль потрібен для входу в акаунт.","isTrue":true,"explanation":"Correct! A password is needed to log into an account."},{"statement":"Завантажувати означає видаляти файли.","isTrue":false,"explanation":"Incorrect! Завантажувати means to download, not delete."},{"statement":"Підписник — це людина, яка підписана на канал.","isTrue":true,"explanation":"Correct! A follower is subscribed to a channel."},{"statement":"Принтер використовують для друку документів.","isTrue":true,"explanation":"Correct! A printer is used to print documents."},{"statement":"Блог — це особистий журнал в інтернеті.","isTrue":true,"explanation":"Correct! A blog is a personal journal online."},{"statement":"Навушники потрібні для друку.","isTrue":false,"explanation":"Incorrect! Headphones are for listening, not printing."},{"statement":"Публікувати означає ділитися контентом.","isTrue":true,"explanation":"Correct! To publish means to share content."},{"statement":"Екран — це частина комп'ютера.","isTrue":true,"explanation":"Correct! The screen is part of a computer."},{"statement":"Зарядка потрібна для клавіатури.","isTrue":false,"explanation":"Incorrect! A keyboard doesn't typically need charging."},{"statement":"Новини — це інформація про події.","isTrue":true,"explanation":"Correct! News is information about events."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Пристрої","items":["комп'ютер","смартфон","ноутбук","планшет","принтер","навушники"]},{"id":"","name":"Інтернет","items":["вебсайт","пошта","пароль","акаунт","посилання","сторінка"]},{"id":"-","name":"Соціальні мережі","items":["профіль","підписник","публікація","коментар","лайк","канал"]},{"id":"","name":"Дієслова","items":["завантажувати","публікувати","шукати","надсилати","зберігати","видаляти"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Tech Actions","data":{"type":"fill-blank","items":[{"prompt":"Я ___ нову програму на комп'ютер вчора. (downloaded)","answer":"завантажив"},{"prompt":"Вона ___ фото в соціальних мережах щодня. (publishes)","answer":"публікує"},{"prompt":"___ інформацію про цей ресторан в інтернеті. (Search)","answer":"Шукай"},{"prompt":"Він ___ мені посилання на електронну пошту. (sent)","answer":"надіслав"},{"prompt":"___ цей документ на комп'ютері обов'язково! (Save)","answer":"Збережи"},{"prompt":"Я випадково ___ важливий файл з папки. (deleted)","answer":"видалив"},{"prompt":"Мій ___ розрядився, де моя зарядка? (smartphone)","answer":"смартфон"},{"prompt":"У мене немає ___ до інтернету в цьому місці. (access)","answer":"доступу"},{"prompt":"Я забув ___ від свого акаунту в соцмережі. (password)","answer":"пароль"},{"prompt":"На цьому ___ багато корисної інформації про Україну. (website)","answer":"вебсайті"},{"prompt":"Підпишіться на наш ___ у YouTube! (channel)","answer":"канал"},{"prompt":"Я читаю ___ про технології щоранку в метро. (news)","answer":"новини"}]}},{"id":"activity-7","type":"select","title":"Device or Action?","data":{"type":"select","items":[{"question":"комп'ютер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"завантажувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"смартфон","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"публікувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"принтер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"видаляти","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"ноутбук","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"зберігати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"планшет","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"шукати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"навушники","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"надсилати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Digital Literacy","data":{"type":"quiz","questions":[{"question":"Що потрібно для входу в акаунт?","options":["пароль","принтер","навушники","екран"],"correctIndex":0,"explanation":""},{"question":"Яким пристроєм друкують документи?","options":["принтером","мишею","клавіатурою","екраном"],"correctIndex":0,"explanation":""},{"question":"Що таке «підписник»?","options":["follower","password","email","screen"],"correctIndex":0,"explanation":""},{"question":"Як називається особистий журнал в інтернеті?","options":["блог","пошта","принтер","пароль"],"correctIndex":0,"explanation":""},{"question":"Що означає «видаляти»?","options":["to delete","to download","to save","to send"],"correctIndex":0,"explanation":""},{"question":"Де зберігають документи на комп'ютері?","options":["у папках","у навушниках","на принтері","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що таке «посилання»?","options":["link","password","screen","keyboard"],"correctIndex":0,"explanation":""},{"question":"Яким словом називають відео-журнал?","options":["подкаст","пароль","акаунт","профіль"],"correctIndex":0,"explanation":""},{"question":"Де ви дивитесь відео онлайн?","options":["на YouTube","на принтері","на клавіатурі","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що означає «зберігати»?","options":["to save","to delete","to search","to download"],"correctIndex":0,"explanation":""},{"question":"Що таке «реклама»?","options":["advertisement","news","password","profile"],"correctIndex":0,"explanation":""},{"question":"Як називають повідомлення під постом?","options":["коментар","пароль","профіль","акаунт"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"комп'ютер","translit":"","en":"computer","note":""},{"uk":"ноутбук","translit":"","en":"laptop","note":""},{"uk":"смартфон","translit":"","en":"smartphone","note":""},{"uk":"планшет","translit":"","en":"tablet","note":""},{"uk":"навушники","translit":"","en":"headphones","note":""},{"uk":"клавіатура","translit":"","en":"keyboard","note":""},{"uk":"миша","translit":"","en":"mouse","note":"computer mouse"},{"uk":"екран","translit":"","en":"screen","note":""},{"uk":"принтер","translit":"","en":"printer","note":""},{"uk":"зарядка","translit":"","en":"charger","note":""},{"uk":"інтернет","translit":"","en":"internet","note":""},{"uk":"вебсайт","translit":"","en":"website","note":""},{"uk":"сторінка","translit":"","en":"page","note":""},{"uk":"пошта","translit":"","en":"email","note":"also: post office"},{"uk":"пароль","translit":"","en":"password","note":""},{"uk":"акаунт","translit":"","en":"account","note":""},{"uk":"посилання","translit":"","en":"link","note":""},{"uk":"соціальні мережі","translit":"","en":"social media","note":""},{"uk":"профіль","translit":"","en":"profile","note":""},{"uk":"підписник","translit":"","en":"follower","note":"f: підписниця"},{"uk":"публікація","translit":"","en":"post","note":"publication"},{"uk":"коментар","translit":"","en":"comment","note":""},{"uk":"новини","translit":"","en":"news","note":""},{"uk":"стаття","translit":"","en":"article","note":""},{"uk":"блог","translit":"","en":"blog","note":""},{"uk":"подкаст","translit":"","en":"podcast","note":""},{"uk":"відео","translit":"","en":"video","note":"indecl"},{"uk":"канал","translit":"","en":"channel","note":""},{"uk":"завантажувати","translit":"","en":"to download","note":"pf: завантажити"},{"uk":"публікувати","translit":"","en":"to publish","note":"pf: опублікувати"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1038,8 +1004,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1070,8 +1036,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1483,7 +1449,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1493,7 +1459,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1694,6 +1662,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

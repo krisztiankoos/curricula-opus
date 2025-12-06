@@ -1,22 +1,40 @@
-# CEFR-Compliant Activity Enrichment Plan
+# Activity Guidelines
 
 ## Overview
 
-This plan defines activity requirements for each CEFR level with progressive complexity in both activity types and sentence structures.
+This document provides **activity templates and examples** for each CEFR level. Use these as reference when creating or reviewing module activities.
+
+**For activity COUNTS and REQUIREMENTS:** See `MODULE-RICHNESS-GUIDELINES.md`
 
 ---
 
-## Level Requirements Summary
+## Supported Activity Types
 
-| Level | Modules | Min Activities | Sentence Length | Clauses | Key Grammar Focus |
-|-------|---------|----------------|-----------------|---------|-------------------|
-| A1 | 1-30 | 6 | 3-6 words | 1 | Gender, Basic cases, Present tense |
-| A2 | 31-60 | 8 | 6-10 words | 1-2 | All cases, Past/Future, Aspect intro |
-| A2+ | 61-80 | 10 | 8-14 words | 2 | Aspect mastery, Subordinate clauses |
-| B1 | 81-120 | 12 | 12-18 words | 2-3 | Conditionals, Participles, Indirect speech |
-| B1+ | 121-160 | 12 | 12-18 words | 2-3 | Participles, Contemporary Ukraine, Authentic texts |
-| B2 | 161-200 | 15 | 15-25 words | 3-4 | Literary style, Register, Advanced syntax |
-| B2+ | 201-240 | 15 | 15-25 words | 3-4 | History, Biographies, Advanced skills |
+| Type | Parser | Description |
+|------|--------|-------------|
+| `quiz` | Yes | Multiple choice questions |
+| `match-up` | Yes | Match pairs (Ukrainian ↔ English, etc.) |
+| `group-sort` | Yes | Sort items into categories |
+| `fill-in` | Yes | Gap fill with options |
+| `true-false` | Yes | True/false statements |
+| `unjumble` | Yes | Reorder words into sentence |
+| `select` | Yes | Word selection from options |
+| `anagram` | Yes | Letter unscrambling (A1 only) |
+| `translate` | Yes | Translation exercise |
+| `error-correction` | Planned (#94) | Find and fix errors (A2+) |
+
+---
+
+## Sentence Complexity by Level
+
+| Level | Fill-in Words | Unjumble Words | Clauses | Key Grammar |
+|-------|---------------|----------------|---------|-------------|
+| A1 | 3-5 | 4-6 | 1 | Gender, Basic cases, Present |
+| A2 | 6-8 | 8-10 | 1-2 | All cases, Past/Future, Aspect |
+| B1 | 10-14 | 12-16 | 2-3 | Conditionals, Participles |
+| B2 | 12-16 | 14-18 | 3-4 | Literary style, Register |
+| C1 | 14-18 | 16-20 | 4+ | Full complexity, Academic |
+| C2 | 16-20 | 18-22 | 4+ | Native-level complexity |
 
 ---
 
@@ -27,16 +45,19 @@ This plan defines activity requirements for each CEFR level with progressive com
 - Can introduce themselves and others
 - Can ask and answer simple questions about personal details
 
-### Required Activities: 6 per module
+### Recommended Activity Types
 
-| # | Activity Type | Cognitive Level | Purpose |
-|---|---------------|-----------------|---------|
-| 1 | **fill-in** | Production | Complete sentences with correct form |
-| 2 | **match-up** | Recognition | Connect Ukrainian ↔ English |
-| 3 | **unjumble** | Synthesis | Build sentences from scrambled words |
-| 4 | **quiz** | Comprehension | Test grammar rules |
-| 5 | **true-false** | Recognition | Verify statements |
-| 6 | **group-sort** | Analysis | Classify by category |
+| Activity Type | Cognitive Level | Purpose |
+|---------------|-----------------|---------|
+| **fill-in** | Production | Complete sentences with correct form |
+| **match-up** | Recognition | Connect Ukrainian ↔ English |
+| **unjumble** | Synthesis | Build sentences from scrambled words |
+| **quiz** | Comprehension | Test grammar rules |
+| **true-false** | Recognition | Verify statements |
+| **group-sort** | Analysis | Classify by category |
+| **anagram** | Recognition | Letter unscrambling (A1 only - Cyrillic scaffolding) |
+
+> **Note:** See `MODULE-RICHNESS-GUIDELINES.md` for activity counts per level.
 
 ### A1 Sentence Complexity
 
@@ -177,25 +198,26 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ---
 
-## A2 Level (Modules 31-60) — Waystage
+## A2 Level (Modules 1-50) — Waystage
 
 ### CEFR A2 Can-Do Statements
 - Can communicate in simple, routine tasks
 - Can describe aspects of background, environment, and immediate needs
 - Can handle short social exchanges
 
-### Required Activities: 8 per module
+### Recommended Activity Types
 
-| # | Activity Type | Cognitive Level | Purpose |
-|---|---------------|-----------------|---------|
-| 1 | **fill-in** | Production | Case endings, verb conjugations |
-| 2 | **fill-in** (2nd) | Production | Aspect choices, agreement |
-| 3 | **match-up** | Recognition | Verb pairs, case relationships |
-| 4 | **unjumble** | Synthesis | Longer sentences with cases |
-| 5 | **quiz** | Comprehension | Multi-concept questions |
-| 6 | **quiz** (2nd) | Analysis | Why + What reasoning |
-| 7 | **true-false** | Recognition | Complex rule verification |
-| 8 | **transform** | Production | Form changes (tense, number) |
+| Activity Type | Cognitive Level | Purpose |
+|---------------|-----------------|---------|
+| **fill-in** | Production | Case endings, verb conjugations, aspect |
+| **match-up** | Recognition | Verb pairs, case relationships |
+| **unjumble** | Synthesis | Longer sentences with cases |
+| **quiz** | Comprehension | Multi-concept questions, reasoning |
+| **true-false** | Recognition | Complex rule verification |
+| **group-sort** | Analysis | Categorization (gender, case, aspect) |
+| **error-correction** | Analysis | Find and fix grammar errors |
+
+> **Note:** See `MODULE-RICHNESS-GUIDELINES.md` for activity counts per level.
 
 ### A2 Sentence Complexity
 
@@ -345,53 +367,107 @@ This plan defines activity requirements for each CEFR level with progressive com
   > Incorrect. "буду читати" = process, "прочитаю" = completion
 ```
 
-#### 8. transform (10 items)
+#### 8. error-correction (12 items) — INTRODUCING AT A2
 ```markdown
-## transform: Change the Form
+## error-correction: Find and Fix
 
-> Transform as indicated.
+> Each sentence has ONE obvious error. Find the incorrect word, then choose the correct form.
 
-1. читати (past, masculine) → ___
-   > [!answer] читав
-
-2. робити (past, feminine) → ___
-   > [!answer] робила
-
-3. студент (accusative) → ___
+1. Я бачу студент у бібліотеці.
+   > [!error] студент
    > [!answer] студента
+   > [!options] студент | студента | студенту | студентом
+   > [!explanation] Animate masculine accusative = genitive form
 
-4. книга (genitive) → ___
-   > [!answer] книги
+2. Вона читав книгу вчора.
+   > [!error] читав
+   > [!answer] читала
+   > [!options] читав | читала | читало | читали
+   > [!explanation] Past tense agrees with subject gender (feminine = -ла)
 
-5. Я читаю книгу. (past tense) → ___
-   > [!answer] Я читав/читала книгу.
+3. Він дав книгу друг.
+   > [!error] друг
+   > [!answer] другові
+   > [!options] друг | друга | другові | другом
+   > [!explanation] "Give to someone" requires dative case
+
+4. Ми йдемо в школа.
+   > [!error] школа
+   > [!answer] школу
+   > [!options] школа | школу | школи | школі
+   > [!explanation] "В" + destination requires accusative case
+
+5. Я читаю цікавий книга.
+   > [!error] цікавий
+   > [!answer] цікаву
+   > [!options] цікавий | цікава | цікаву | цікавою
+   > [!explanation] Adjective must agree with noun gender/case (feminine accusative)
+
+6. Вчора вона купив хліб.
+   > [!error] купив
+   > [!answer] купила
+   > [!options] купив | купила | купило | купили
+   > [!explanation] Past tense: він купив, вона купила
+
+7. У мене є брата.
+   > [!error] брата
+   > [!answer] брат
+   > [!options] брат | брата | братові | братом
+   > [!explanation] "У мене є" + nominative (not genitive)
+
+8. Він працює в офіс.
+   > [!error] офіс
+   > [!answer] офісі
+   > [!options] офіс | офісу | офісі | офісом
+   > [!explanation] "В" + location requires locative case
+
+9. Це моя книга, а це твоя.
+   > [!error] none
+   > [!answer] ✓
+   > [!explanation] No error - keeps learners alert (use 1-2 per activity)
+
+10. Вони говорять українська мова.
+    > [!error] українська
+    > [!answer] українською
+    > [!options] українська | українську | українській | українською
+    > [!explanation] "Говорити" + instrumental case for language
 ```
+
+**A2 Error Types (1 obvious error):**
+- Gender agreement (adjective-noun, past tense-subject)
+- Case endings (accusative, dative, locative, instrumental)
+- Animate masculine accusative = genitive
+
+**Format requirements:**
+- `[!error]` = word to find (or `none`)
+- `[!answer]` = correct form
+- `[!options]` = 4 choices including wrong + correct
+- `[!explanation]` = **REQUIRED** - rule explanation
 
 ---
 
-## A2+ Level (Modules 61-80) — Strong Waystage
+## B1 Level (Modules 1-80) — Threshold
 
-### CEFR A2+ Can-Do Statements
+### CEFR B1 Can-Do Statements
 - Can deal with most situations likely to arise while travelling
 - Can enter unprepared into conversation on familiar topics
-- Can connect phrases in a simple way
+- Can produce simple connected text on familiar topics
+- Can describe experiences, events, dreams, hopes and briefly give reasons
 
-### Required Activities: 10 per module
+### Recommended Activity Types
 
-| # | Activity Type | Cognitive Level | Purpose |
-|---|---------------|-----------------|---------|
-| 1 | **fill-in** | Production | Multiple blanks, agreement chains |
-| 2 | **fill-in** (2nd) | Production | Aspect in context |
-| 3 | **fill-in** (3rd) | Production | Subordinate clause completion |
-| 4 | **match-up** | Recognition | Synonyms, contextual phrases |
-| 5 | **unjumble** | Synthesis | Complex sentences with subordination |
-| 6 | **unjumble** (2nd) | Synthesis | Conditional structures |
-| 7 | **quiz** | Comprehension | Compare/contrast forms |
-| 8 | **quiz** (2nd) | Analysis | Contextual appropriateness |
-| 9 | **transform** | Production | Full paradigm shifts |
-| 10 | **error-correction** | Analysis | Find and fix errors |
+| Activity Type | Cognitive Level | Purpose |
+|---------------|-----------------|---------|
+| **fill-in** | Production | Multiple blanks, agreement chains, aspect |
+| **match-up** | Recognition | Synonyms, contextual phrases |
+| **unjumble** | Synthesis | Complex sentences with subordination |
+| **quiz** | Comprehension | Compare/contrast forms, contextual choices |
+| **error-correction** | Analysis | Find and fix 1-2 errors per sentence |
+| **transform** | Production | Direct→indirect speech, voice changes |
 
-### A2+ Sentence Complexity
+> **Note:** See `MODULE-RICHNESS-GUIDELINES.md` for activity counts per level.
+
+### B1 Sentence Complexity
 
 **Structure:** Complex sentences with subordinate clauses
 **Length:** 8-14 words
@@ -573,286 +649,25 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ---
 
-## B1/B1+ Level (Modules 81-160) — Threshold
-
-> **Note:** B1 (81-120) and B1+ (121-160) share similar activity requirements. B1+ modules include more contemporary Ukraine content and authentic texts.
-
-### CEFR B1 Can-Do Statements
-- Can deal with most situations likely to arise while travelling
-- Can produce simple connected text on familiar topics
-- Can describe experiences, events, dreams, hopes and briefly give reasons and explanations
-
-### Required Activities: 12 per module
-
-| # | Activity Type | Cognitive Level | Purpose |
-|---|---------------|-----------------|---------|
-| 1 | **fill-in** | Production | 3+ blanks, complex agreement |
-| 2 | **fill-in** (2nd) | Production | Participles, verbal adverbs |
-| 3 | **fill-in** (3rd) | Production | Conditional mood |
-| 4 | **match-up** | Recognition | Idiomatic expressions |
-| 5 | **match-up** (2nd) | Recognition | Register pairs |
-| 6 | **unjumble** | Synthesis | 10+ word sentences |
-| 7 | **unjumble** (2nd) | Synthesis | Conditional/subjunctive |
-| 8 | **quiz** | Comprehension | Nuanced grammar choices |
-| 9 | **quiz** (2nd) | Analysis | Stylistic differences |
-| 10 | **transform** | Production | Direct → Indirect speech |
-| 11 | **transform** (2nd) | Production | Active → Passive voice |
-| 12 | **error-correction** | Analysis | 2 errors per sentence |
-
-### B1 Sentence Complexity
-
-**Structure:** Multi-clause sentences with embedding
-**Length:** 12-18 words
-**Clauses:** 2-3
-**Features:** Conditionals, participles, indirect speech, relative clauses
-
-**Example Sentences:**
-```
-Якби я знав про це раніше, я б обов'язково прийшов на зустріч.
-Прочитавши цю книгу, він зрозумів багато нового про історію України.
-Він сказав, що не зможе прийти, тому що буде зайнятий на роботі.
-Студент, який написав цю роботу, отримав найвищу оцінку від професора.
-Незважаючи на погану погоду, ми вирішили піти на екскурсію містом.
-```
-
-### B1 Activity Examples
-
-#### 1-3. fill-in (3 types, 10 items each)
-
-**#1: Complex Agreement**
-```markdown
-## fill-in: Multi-Element Agreement
-
-1. ___ (Той) ___ (молодий) вчителька, ___ (який) працює в ___ (наш) школі, дуже ___ (талановитий).
-   > [!answer] Та молода вчителька, яка працює в нашій школі, дуже талановита.
-
-2. Усі ___ (цей) ___ (новий) підручники ___ (бути, past) ___ (написаний) ___ (відомий) авторами.
-   > [!answer] Усі ці нові підручники були написані відомими авторами.
-```
-
-**#2: Participles & Verbal Adverbs**
-```markdown
-## fill-in: Participles
-
-1. ___ (Прочитати, verbal adverb) статтю, він ___ (зрозуміти, past) проблему краще.
-   > [!answer] Прочитавши статтю, він зрозумів проблему краще.
-
-2. Книга, ___ (написати, passive participle) цим автором, стала бестселером.
-   > [!answer] Книга, написана цим автором, стала бестселером.
-
-3. ___ (Іти, verbal adverb) додому, вона ___ (думати, past) про завтрашній день.
-   > [!answer] Ідучи додому, вона думала про завтрашній день.
-```
-
-**#3: Conditional Mood**
-```markdown
-## fill-in: Conditionals
-
-1. Якби я ___ (мати, past) більше часу, я б ___ (вивчити) ще одну мову.
-   > [!answer] Якби я мав/мала більше часу, я б вивчив/вивчила ще одну мову.
-
-2. Він ___ (прийти, conditional) на зустріч, якби ___ (знати) про неї заздалегідь.
-   > [!answer] Він прийшов би на зустріч, якби знав про неї заздалегідь.
-```
-
-#### 4-5. match-up (2 types, 12 pairs each)
-
-**#4: Idiomatic Expressions**
-```markdown
-## match-up: Ukrainian Idioms
-
-| Idiom | Meaning |
-|-------|---------|
-| ні риба ні м'ясо | neither fish nor fowl |
-| як риба у воді | like a fish in water (comfortable) |
-| битися як риба об лід | to struggle in vain |
-| робити з мухи слона | to make a mountain out of a molehill |
-| тримати язик за зубами | to keep one's mouth shut |
-| брати бика за роги | to take the bull by the horns |
-| мати золоті руки | to be very skilled |
-| сидіти на двох стільцях | to sit on the fence |
-| як грім серед ясного неба | out of the blue |
-| не моя справа | none of my business |
-| крапля в морі | a drop in the ocean |
-| одна нога тут, друга там | hurry up and come back |
-```
-
-**#5: Register Pairs (Formal ↔ Colloquial)**
-```markdown
-## match-up: Register Variation
-
-| Formal/Written | Colloquial/Spoken |
-|----------------|-------------------|
-| здійснювати | робити |
-| споживати | їсти |
-| перебувати | бути |
-| розпочинати | починати |
-| завершувати | закінчувати |
-| повідомляти | казати |
-| отримувати | діставати |
-| надавати | давати |
-| функціонувати | працювати |
-| придбати | купити |
-| мешкати | жити |
-| споглядати | дивитися |
-```
-
-#### 6-7. unjumble (2 types, 10 items each)
-
-**#6: Long Complex Sentences (10-14 words)**
-```markdown
-## unjumble: Extended Sentences
-
-1. він / зрозумів / Прочитавши / статтю / цю / проблему / набагато / краще / головну
-   > [!answer] Прочитавши цю статтю, він зрозумів головну проблему набагато краще.
-   > (Having read this article, he understood the main problem much better.)
-
-2. Незважаючи / погоду / на / погану / вирішили / ми / піти / екскурсію / на / містом
-   > [!answer] Незважаючи на погану погоду, ми вирішили піти на екскурсію містом.
-   > (Despite the bad weather, we decided to go on a city tour.)
-
-3. який / Студент / роботу / цю / написав / найвищу / отримав / оцінку / від / професора
-   > [!answer] Студент, який написав цю роботу, отримав найвищу оцінку від професора.
-   > (The student who wrote this work received the highest grade from the professor.)
-```
-
-**#7: Conditional/Subjunctive**
-```markdown
-## unjumble: Conditional Sentences
-
-1. знав / Якби / я / раніше / про / це / прийшов / обов'язково / б / я / на / зустріч
-   > [!answer] Якби я знав про це раніше, я б обов'язково прийшов на зустріч.
-   > (If I had known about this earlier, I would definitely have come to the meeting.)
-
-2. Він / хотів / б / поїхати / за / кордон / але / не / мав / можливості / фінансової
-   > [!answer] Він хотів би поїхати за кордон, але не мав фінансової можливості.
-   > (He would like to go abroad, but he didn't have the financial opportunity.)
-```
-
-#### 8-9. quiz (2 types, 10 questions each)
-
-**#8: Nuanced Grammar**
-```markdown
-## quiz: Grammar Nuances
-
-1. "Читаючи книгу" vs "Прочитавши книгу" — what's the temporal difference?
-   - [x] First is simultaneous, second is prior action
-   - [ ] First is past, second is present
-   - [ ] No difference
-   - [ ] First is completed, second is ongoing
-   > -учи/-ачи = simultaneous action; -вши = completed prior action
-
-2. When is "якби...б" used vs "якщо"?
-   - [ ] Якби is formal, якщо is informal
-   - [x] Якби is unreal/hypothetical, якщо is real possibility
-   - [ ] Якби is past, якщо is future
-   - [ ] No difference
-   > Якби + conditional for hypotheticals; якщо for real conditions
-```
-
-**#9: Stylistic Differences**
-```markdown
-## quiz: Register and Style
-
-1. In formal writing, which is preferred: "тому що" or "оскільки"?
-   - [ ] тому що
-   - [x] оскільки
-   - [ ] Both equally formal
-   - [ ] Neither is formal
-   > "Оскільки" is more formal/academic than "тому що"
-
-2. "Він сказав, що прийде" vs "Він сказав: «Я прийду»" — which is more common in writing?
-   - [x] Indirect speech (перша форма)
-   - [ ] Direct speech (друга форма)
-   - [ ] Both equally common
-   > Indirect speech is more common in formal/academic writing
-```
-
-#### 10-11. transform (2 types, 10 items each)
-
-**#10: Direct → Indirect Speech**
-```markdown
-## transform: Reported Speech
-
-1. Марія сказала: "Я завтра піду в бібліотеку."
-   > [!answer] Марія сказала, що вона завтра піде в бібліотеку.
-
-2. Він запитав: "Чи ти вже закінчив роботу?"
-   > [!answer] Він запитав, чи я вже закінчив роботу.
-
-3. Вчитель сказав: "Відкрийте підручники на сторінці 50."
-   > [!answer] Вчитель сказав, щоб ми відкрили підручники на сторінці 50.
-
-4. Вона відповіла: "Я не знаю, де він зараз."
-   > [!answer] Вона відповіла, що не знає, де він зараз.
-```
-
-**#11: Active → Passive Voice**
-```markdown
-## transform: Voice Change
-
-1. Студенти написали контрольну роботу.
-   > [!answer] Контрольна робота була написана студентами.
-
-2. Архітектор спроєктував цей будинок у минулому столітті.
-   > [!answer] Цей будинок був спроєктований архітектором у минулому столітті.
-
-3. Уряд прийме нові закони наступного року.
-   > [!answer] Нові закони будуть прийняті урядом наступного року.
-
-4. Письменник закінчує новий роман.
-   > [!answer] Новий роман закінчується письменником.
-```
-
-#### 12. error-correction (2 errors per sentence, 10 items)
-```markdown
-## error-correction: Two Errors
-
-> Each sentence has TWO errors. Find and correct both.
-
-1. "Студент, який написала роботу, отримав найвищий оцінку."
-   > [!answer] Студент, який написаВ роботу, отримав найвищУ оцінку.
-   > Errors: 1) написала→написав (masculine agreement), 2) найвищий→найвищу (feminine accusative)
-
-2. "Якби я знаю про це, я б прийшов."
-   > [!answer] Якби я зНАВ про це, я б прийшов.
-   > Errors: 1) знаю→знав (conditional requires past tense after якби)
-
-3. "Прочитавши книгу, вона була дуже цікава."
-   > [!answer] Прочитавши книгу, Я ЗРОЗУМІВ, ЩО вона була дуже цікава.
-   > Errors: Dangling participle (subject must perform action of -вши form)
-```
-
----
-
-## B2/B2+ Level (Modules 161-240) — Vantage
-
-> **Note:** B2 (161-200) and B2+ (201-240) share similar activity requirements. B2+ modules focus on Ukrainian history, biographies, and advanced skills.
+## B2 Level (Modules 1-125) — Vantage
 
 ### CEFR B2 Can-Do Statements
 - Can interact with a degree of fluency and spontaneity
 - Can produce clear, detailed text on a wide range of subjects
 - Can explain a viewpoint on a topical issue giving advantages and disadvantages
 
-### Required Activities: 15 per module
+### Recommended Activity Types
 
-| # | Activity Type | Cognitive Level | Purpose |
-|---|---------------|-----------------|---------|
-| 1 | **fill-in** | Production | 4+ blanks, literary register |
-| 2 | **fill-in** (2nd) | Production | Stylistic choices |
-| 3 | **fill-in** (3rd) | Production | Academic vocabulary |
-| 4 | **fill-in** (4th) | Production | Idiom completion |
-| 5 | **match-up** | Recognition | Near-synonyms with nuance |
-| 6 | **match-up** (2nd) | Recognition | Author-style pairs |
-| 7 | **unjumble** | Synthesis | 15+ word literary sentences |
-| 8 | **unjumble** (2nd) | Synthesis | Academic argumentation |
-| 9 | **quiz** | Comprehension | Subtle distinctions |
-| 10 | **quiz** (2nd) | Analysis | Historical context |
-| 11 | **quiz** (3rd) | Evaluation | Stylistic analysis |
-| 12 | **transform** | Production | Register shifts |
-| 13 | **transform** (2nd) | Production | Paraphrase |
-| 14 | **transform** (3rd) | Production | Summarization |
-| 15 | **error-correction** | Analysis | Subtle style errors |
+| Activity Type | Cognitive Level | Purpose |
+|---------------|-----------------|---------|
+| **fill-in** | Production | Literary register, stylistic choices, academic vocabulary |
+| **match-up** | Recognition | Near-synonyms with nuance, author-style pairs |
+| **unjumble** | Synthesis | 15+ word literary sentences, academic argumentation |
+| **quiz** | Comprehension | Subtle distinctions, historical context, stylistic analysis |
+| **transform** | Production | Register shifts, paraphrase, summarization |
+| **error-correction** | Analysis | 2+ subtle/stylistic errors per sentence |
+
+> **Note:** See `MODULE-RICHNESS-GUIDELINES.md` for activity counts per level.
 
 ### B2 Sentence Complexity
 
@@ -1132,15 +947,16 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ### Per-Module Requirements
 
-| Level | Modules | Activities | Items Each | Total Items/Module |
-|-------|---------|------------|------------|-------------------|
-| A1 | 1-30 | 6 | 10 | 60 |
-| A2 | 31-60 | 8 | 10 | 80 |
-| A2+ | 61-80 | 10 | 10 | 100 |
-| B1 | 81-120 | 12 | 10 | 120 |
-| B1+ | 121-160 | 12 | 10 | 120 |
-| B2 | 161-200 | 15 | 10 | 150 |
-| B2+ | 201-240 | 15 | 10 | 150 |
+**See `MODULE-RICHNESS-GUIDELINES.md` for authoritative activity counts per level.**
+
+| Level | Modules | Key Features |
+|-------|---------|--------------|
+| A1 | 30 | Simple sentences, basic activities, anagram allowed |
+| A2 | 50 | All cases, aspect, error-correction introduced |
+| B1 | 80 | Conditionals, participles, transform activities |
+| B2 | 125 | Literary style, register variation, subtle errors |
+| C1 | 115 | Academic discourse, specialized topics |
+| C2 | 80 | Native-level complexity, professional specialization |
 
 ### Quality Standards
 
@@ -1155,4 +971,5 @@ This plan defines activity requirements for each CEFR level with progressive com
 
 ## Revision History
 
+- v2.0 (2025-12): Aligned with Ukrainian State Standard 2024 (6 levels: A1-C2)
 - v1.0 (2024-12): Initial comprehensive plan with CEFR alignment

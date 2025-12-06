@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 50: Checkpoint: A2.2 Review | Ukrainian A2</title>
+  <title>Module 50: Підсумок рівня A2 | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -448,21 +474,19 @@ footer {
     <div class="module-nav">
       <a href="module-49.html" class="module-nav-link">← Module 49</a>
       <a href="index.html" class="module-nav-link">A2 Index</a>
-      <a href="module-51.html" class="module-nav-link">Module 51 →</a>
+      <span class="module-nav-link disabled">Next →</span>
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 50: Checkpoint: A2.2 Review</h1>
+    <h1>Module 50: Підсумок рівня A2</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,548 +494,189 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Checkpoint: A2.2 Review</h2>
-        <p style="color:var(--text-muted)">Aspect, Comparison &amp; Conditionals</p>
+        <span class="level-badge">A2 · A2.6 Review & Consolidation</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Підсумок рівня A2</h2>
+        <p style="color:var(--text-muted)">A2 Capstone</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="a22complete">A2.2 Complete!</h3>
-<p>Congratulations! You've completed Phase A2.2. Let's review everything:</p>
-<p><strong>What you've learned (Modules 41-49):</strong></p>
+      <div class="md-content"><p>Вітаємо! Це фінальний урок рівня A2. Ви перевірите свої знання граматики, лексики та комунікативні навички.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Що ви вивчили на рівні A2</h3>
+      <div class="md-content"><h2 id="grammar">Граматика / Grammar</h2>
+<h3 id="cases">Відмінки (Cases)</h3>
 <ul>
-<li>✅ Verbal aspect (perfective/imperfective)</li>
-<li>✅ Comparative adjectives and adverbs</li>
-<li>✅ Superlative forms</li>
-<li>✅ Real conditionals (якщо)</li>
-<li>✅ Unreal conditionals (якби + б/би)</li>
-<li>✅ Advanced shopping vocabulary</li>
-<li>✅ Making plans and arrangements</li>
+<li>✅ Називний (Nominative) — підмет</li>
+<li>✅ Родовий (Genitive) — належність, заперечення</li>
+<li>✅ Давальний (Dative) — адресат</li>
+<li>✅ Знахідний (Accusative) — прямий об'єкт</li>
+<li>✅ Орудний (Instrumental) — інструмент, професія</li>
+<li>✅ Місцевий (Locative) — місце</li>
+<li>✅ Кличний (Vocative) — звертання</li>
 </ul>
-<p>This checkpoint will consolidate your knowledge and prepare you for the final stretch of A2!</p>
-<blockquote>
-  <p>💡 <strong>Self-Assessment Goal</strong></p>
-  <p>By the end of this module, you should feel confident:</p>
-  <ul>
-  <li>Choosing correct aspect for any situation</li>
-  <li>Comparing things using all forms</li>
-  <li>Making real and hypothetical conditionals</li>
-  <li>Handling complex shopping and planning scenarios</li>
-  </ul>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="verbalaspectreviewmodules4143">Verbal Aspect Review (Modules 41-43)</h3>
-<p><strong>The core concept:</strong></p>
+<h3 id="aspect">Дієслівний вид (Aspect)</h3>
+<ul>
+<li>✅ Недоконаний — процес, повторення</li>
+<li>✅ Доконаний — результат, завершення</li>
+<li>✅ Видові пари та їх використання</li>
+</ul>
+<h3 id="complexsentences">Складні речення (Complex Sentences)</h3>
+<ul>
+<li>✅ Причинові — тому що, бо</li>
+<li>✅ Допустові — хоча, незважаючи на</li>
+<li>✅ Цільові — щоб</li>
+<li>✅ Відносні — який, яка, яке</li>
+<li>✅ Часові — коли, поки, після того як</li>
+</ul>
+<h3 id="wordformation">Словотвір (Word Formation)</h3>
+<ul>
+<li>✅ Префікси руху та дії</li>
+<li>✅ Суфікси іменників та прикметників</li>
+<li>✅ Кореневі родини</li>
+</ul>
+<hr />
+<h2 id="vocabularydomains">Лексика / Vocabulary Domains</h2>
 <table>
 <thead>
 <tr>
-<th>Aspect</th>
-<th>Use</th>
-<th>Example</th>
+<th>Тема</th>
+<th>Ключові слова</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Imperfective</td>
-<td>Process, repeated, duration</td>
-<td>Я читав годину.</td>
+<td>Їжа та кулінарія</td>
+<td>страва, смажити, солодкий</td>
 </tr>
 <tr>
-<td>Perfective</td>
-<td>Completed, single, result</td>
-<td>Я прочитав книгу.</td>
+<td>Здоров'я та тіло</td>
+<td>серце, хворіти, ліки</td>
+</tr>
+<tr>
+<td>Дім та меблі</td>
+<td>вітальня, диван, прибирати</td>
+</tr>
+<tr>
+<td>Природа та погода</td>
+<td>гора, дощ, сонячно</td>
+</tr>
+<tr>
+<td>Емоції та характер</td>
+<td>радість, сумний, терплячий</td>
+</tr>
+<tr>
+<td>Робота та професії</td>
+<td>лікар, офіс, зарплата</td>
+</tr>
+<tr>
+<td>Технології та медіа</td>
+<td>комп'ютер, інтернет, публікувати</td>
+</tr>
+<tr>
+<td>Хобі та дозвілля</td>
+<td>малювання, подорож, відпочивати</td>
+</tr>
+<tr>
+<td>Освіта та навчання</td>
+<td>урок, студент, вивчати</td>
+</tr>
+<tr>
+<td>Покупки та послуги</td>
+<td>магазин, ціна, платити</td>
+</tr>
+<tr>
+<td>Спорт та фітнес</td>
+<td>футбол, тренування, перемагати</td>
+</tr>
+<tr>
+<td>Мистецтво та культура</td>
+<td>картина, концерт, свято</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Key aspect pairs:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Imperfective</th>
-<th>Perfective</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>читати</td>
-<td>прочитати</td>
-</tr>
-<tr>
-<td>писати</td>
-<td>написати</td>
-</tr>
-<tr>
-<td>робити</td>
-<td>зробити</td>
-</tr>
-<tr>
-<td>відкривати</td>
-<td>відкрити</td>
-</tr>
-<tr>
-<td>закривати</td>
-<td>закрити</td>
-</tr>
-<tr>
-<td>шукати</td>
-<td>знайти</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Time expressions:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Комунікативні навички / Can-Do Statements</h3>
+      <div class="md-content"><p>На рівні A2 ви можете:</p>
+<h3 id="understanding">Розуміння (Understanding)</h3>
 <ul>
-<li>Duration → imperfective: Я працював <strong>три години</strong>.</li>
-<li>Time limit → perfective: Я зробив <strong>за три години</strong>.</li>
+<li>✅ Розуміти головну інформацію про себе, сім'ю, покупки</li>
+<li>✅ Розуміти короткі прості повідомлення та оголошення</li>
+<li>✅ Знаходити конкретну інформацію в простих текстах</li>
 </ul>
-<p><strong>With modals:</strong></p>
+<h3 id="speaking">Говоріння (Speaking)</h3>
 <ul>
-<li>починати/закінчувати + imperfective: закінчив <strong>читати</strong></li>
-<li>хотіти + either (depends on meaning)</li>
+<li>✅ Описувати свою сім'ю, освіту, роботу</li>
+<li>✅ Розповідати про минулі події та плани</li>
+<li>✅ Пояснювати причини та наслідки</li>
 </ul>
-<h3 id="comparativessuperlativesreviewmodules4445">Comparatives &amp; Superlatives Review (Modules 44-45)</h3>
-<p><strong>Comparative formation:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Regular</td>
-<td>+ -іший/-ший</td>
-<td>новий → новіший</td>
-</tr>
-<tr>
-<td>Irregular</td>
-<td>stem change</td>
-<td>великий → більший</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Key irregular forms:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Adjective</th>
-<th>Comparative</th>
-<th>Superlative</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>великий</td>
-<td>більший</td>
-<td>найбільший</td>
-</tr>
-<tr>
-<td>малий</td>
-<td>менший</td>
-<td>найменший</td>
-</tr>
-<tr>
-<td>добрий</td>
-<td>кращий</td>
-<td>найкращий</td>
-</tr>
-<tr>
-<td>поганий</td>
-<td>гірший</td>
-<td>найгірший</td>
-</tr>
-<tr>
-<td>високий</td>
-<td>вищий</td>
-<td>найвищий</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Comparison constructions:</strong></p>
+<h3 id="writing">Письмо (Writing)</h3>
 <ul>
-<li>A більший <strong>ніж</strong> B (than)</li>
-<li>A більший <strong>за</strong> B + acc (than)</li>
-<li><strong>Такий… як</strong> (as… as)</li>
-</ul>
-<p><strong>Superlatives:</strong></p>
-<ul>
-<li>най- + comparative: найбільший, найкращий</li>
-<li>With prepositions: найвищий <strong>в Україні</strong></li>
-</ul>
-<h3 id="conditionalsreviewmodules4647">Conditionals Review (Modules 46-47)</h3>
-<p><strong>Real conditionals (якщо):</strong></p>
-<ul>
-<li>Якщо + future/present, future</li>
-<li>Якщо буде дощ, візьму парасолю.</li>
-</ul>
-<p><strong>Unreal conditionals (якби + б/би):</strong></p>
-<ul>
-<li>Якби + past, past + б/би</li>
-<li>Якби мав час, допоміг би.</li>
-</ul>
-<p><strong>Key differences:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Word</th>
-<th>Meaning</th>
-<th>Certainty</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Якщо</td>
-<td>If (possible)</td>
-<td>Might happen</td>
-</tr>
-<tr>
-<td>Якби</td>
-<td>If (unreal)</td>
-<td>Contrary to fact</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Useful phrases:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Я хотів би</td>
-<td>I would like</td>
-</tr>
-<tr>
-<td>Чи не могли б ви…?</td>
-<td>Could you possibly…?</td>
-</tr>
-<tr>
-<td>Було б добре</td>
-<td>It would be good</td>
-</tr>
-<tr>
-<td>Мав би</td>
-<td>should</td>
-</tr>
-</tbody>
-</table>
-<h3 id="shoppingplansreviewmodules4849">Shopping &amp; Plans Review (Modules 48-49)</h3>
-<p><strong>Shopping vocabulary:</strong></p>
-<ul>
-<li>розмір (size), примірочна (fitting room)</li>
-<li>знижка (discount), гарантія (warranty)</li>
-<li>завеликий/замалий (too big/small)</li>
-<li>повернути (return), обміняти (exchange)</li>
-</ul>
-<p><strong>Planning phrases:</strong></p>
-<ul>
-<li>Давай… (Let's…)</li>
-<li>О котрій? (At what time?)</li>
-<li>Домовились! (Agreed!)</li>
-<li>На жаль, не можу (Unfortunately, I can't)</li>
-</ul>
-<h2 id="practice">practice</h2>
-<h3 id="aspectchallenge">Aspect Challenge</h3>
-<p>Choose correct aspect:</p>
-<ol>
-<li><p>Вчора я ___ (читати/прочитати) цю книгу. (finished)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">прочитав</div></div>
-<ol start="2">
-<li><p>Я завжди ___ (читати/прочитати) перед сном. (habit)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">читаю</div></div>
-<ol start="3">
-<li><p>Поки він ___ (готувати/приготувати), я дивився телевізор.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">готував</div>
-<div class="callout callout-explanation" data-callout="explanation">simultaneous</div></div>
-<ol start="4">
-<li><p>Вона ___ (писати/написати) листа за годину. (in one hour)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">написала</div></div>
-<ol start="5">
-<li><p>Коли ___ (закінчувати/закінчити), зателефонуй!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">закінчиш</div></div>
-<ol start="6">
-<li><p>Я ще не ___ (відповідати/відповісти) на листа.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">відповів</div>
-<div class="callout callout-explanation" data-callout="explanation">ще не + perf</div></div>
-<h3 id="comparisonchallenge">Comparison Challenge</h3>
-<p>Complete with correct form:</p>
-<ol>
-<li><p>Київ ___ (великий) за Львів.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">більший</div></div>
-<ol start="2">
-<li><p>Це ___ (добрий) ресторан у місті.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">найкращий</div></div>
-<ol start="3">
-<li><p>Вона говорить українською ___ (добре), ніж я.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">краще</div></div>
-<ol start="4">
-<li><p>Чим ___ (багато), тим ___ (добре).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">більше, краще</div></div>
-<ol start="5">
-<li><p>Цей телефон ___ (дорогий), але ___ (якісний).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">дорожчий, якісніший</div></div>
-<ol start="6">
-<li><p>Яка ___ (висока) гора в Україні?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">найвища</div></div>
-<h3 id="conditionalchallenge">Conditional Challenge</h3>
-<p>Transform or complete:</p>
-<ol>
-<li><p>Real: Якщо матиму час, ___ (допомогти).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">допоможу</div></div>
-<ol start="2">
-<li><p>Unreal: Якби мав час, ___ (допомогти).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">допоміг би</div></div>
-<ol start="3">
-<li><p>Real: Якщо він ___ (прийти), ми почнемо.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">прийде</div></div>
-<ol start="4">
-<li><p>Unreal: Якби він ___ (прийти), ми б почали.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">прийшов</div></div>
-<ol start="5">
-<li><p>Polite: Чи не ___ (могти) ви допомогти?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">могли б</div></div>
-<ol start="6">
-<li><p>Wish: Я ___ (хотіти) поїхати в Україну.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">хотів би</div></div>
-<h3 id="integratedscenarios">Integrated Scenarios</h3>
-<p><strong>Scenario 1: Shopping</strong><br />
-Complete the dialogue:</p>
-<ul>
-<li>Я шукаю куртку. Ця ___ (занадто великий).</li>
-<li>Є ___ (менший) розмір?</li>
-<li>Так, ось. Це ___ (добрий) якість.</li>
-<li>Скільки коштує? Чи є ___? (знижка)</li>
-<li>Так, сьогодні 20% знижка.</li>
-<li>___ (чудово)! Беру.</li>
-</ul>
-<p>Answers: завелика, менший, найкраща, знижка, Чудово</p>
-<p><strong>Scenario 2: Making plans</strong><br />
-Complete the dialogue:</p>
-<ul>
-<li>___ (давай) зустрінемося у вихідні?</li>
-<li>На жаль, у суботу я ___. (зайнятий)</li>
-<li>А ___ (як щодо) неділі?</li>
-<li>Неділя ___ (підходити)! О ___ (котрий)?</li>
-<li>Може, о п'ятій? Де ___? (зустрічатися)</li>
-<li>Біля кінотеатру. ___! (домовитися)</li>
-</ul>
-<p>Answers: Давай, зайнятий, як щодо, підходить, котрій, зустрінемося, Домовились</p>
-<h2 id="production">production</h2>
-<h3 id="selfassessmenttasks">Self-Assessment Tasks</h3>
-<p><strong>Task 1: Tell a story using aspect</strong><br />
-Describe what you did yesterday using appropriate aspects:</p>
-<ul>
-<li>Вчора я прокинувся о… (perfective chain)</li>
-<li>Коли снідав, я… (imperfective background)</li>
-</ul>
-<p><strong>Task 2: Compare things</strong></p>
-<ul>
-<li>Compare two cities you know</li>
-<li>Describe the best [food/place/movie] you know</li>
-<li>Use: більший, кращий, найкращий</li>
-</ul>
-<p><strong>Task 3: Express wishes</strong></p>
-<ul>
-<li>What would you do if you had more time?</li>
-<li>What would you do if you could live anywhere?</li>
-<li>Use: Якби…, я б…</li>
-</ul>
-<p><strong>Task 4: Make plans</strong></p>
-<ul>
-<li>Invite someone to an activity</li>
-<li>Agree on time and place</li>
-<li>Use: Давай…, О котрій?, Домовились!</li>
-</ul>
-<h3 id="candochecklist">Can-Do Checklist</h3>
-<p><strong>Check your abilities:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Can Do?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I can choose correct aspect for past actions</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can use aspect with time expressions</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can form comparatives (більший, кращий)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can form superlatives (найбільший, найкращий)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can make real conditionals (якщо…)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can make unreal conditionals (якби… б)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can use polite requests (чи не могли б ви)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can shop for clothes (sizes, returns)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can shop for electronics (warranties, features)</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>I can make and confirm plans</td>
-<td>☐</td>
-</tr>
-</tbody>
-</table>
-<p><strong>How did you do?</strong></p>
-<ul>
-<li>8-10 checks: Excellent! Ready for A2.3</li>
-<li>5-7 checks: Good progress, review weak areas</li>
-<li>0-4 checks: Review Modules 41-49 before continuing</li>
+<li>✅ Писати короткі прості записки та повідомлення</li>
+<li>✅ Описувати події та враження</li>
+<li>✅ Писати особисті листи</li>
 </ul>
 <hr />
 <hr />
-<hr />
-<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Самооцінка / Self-Assessment</h3>
+      <div class="md-content"><h2 id="checkyourself">Перевірте себе / Check Yourself</h2>
+<h3 id="">Граматика</h3>
+<ul>
+<li>[ ] Я можу правильно використовувати всі 7 відмінків</li>
+<li>[ ] Я розумію різницю між недоконаним і доконаним видом</li>
+<li>[ ] Я можу будувати складні речення</li>
+<li>[ ] Я знаю основні префікси та суфікси</li>
+</ul>
+<h3 id="-1">Лексика</h3>
+<ul>
+<li>[ ] Я знаю слова про роботу та професії</li>
+<li>[ ] Я можу описати своє здоров'я</li>
+<li>[ ] Я знаю слова про технології</li>
+<li>[ ] Я можу говорити про хобі та культуру</li>
+</ul>
+<h3 id="-2">Комунікація</h3>
+<ul>
+<li>[ ] Я можу описати свій досвід</li>
+<li>[ ] Я можу пояснити причини</li>
+<li>[ ] Я можу висловити мету</li>
+<li>[ ] Я можу вести просту розмову</li>
+</ul>
 <hr /></div>
     </div>
   
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="a22grammarachievements">A2.2 Grammar Achievements</h2>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Modules</th>
-<th>Key Pattern</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Aspect basics</td>
-<td>41</td>
-<td>impf vs perf</td>
-</tr>
-<tr>
-<td>Aspect pairs</td>
-<td>42</td>
-<td>читати/прочитати</td>
-</tr>
-<tr>
-<td>Aspect in context</td>
-<td>43</td>
-<td>time expressions</td>
-</tr>
-<tr>
-<td>Comparatives</td>
-<td>44</td>
-<td>більший, кращий</td>
-</tr>
-<tr>
-<td>Superlatives</td>
-<td>45</td>
-<td>най- prefix</td>
-</tr>
-<tr>
-<td>Real conditionals</td>
-<td>46</td>
-<td>якщо + future</td>
-</tr>
-<tr>
-<td>Unreal conditionals</td>
-<td>47</td>
-<td>якби + б/би</td>
-</tr>
-<tr>
-<td>Advanced shopping</td>
-<td>48</td>
-<td>sizes, returns</td>
-</tr>
-<tr>
-<td>Making plans</td>
-<td>49</td>
-<td>invitations</td>
-</tr>
-</tbody>
-</table>
-<h2 id="quickreferencea22essentials">Quick Reference: A2.2 Essentials</h2>
-<p><strong>Aspect:</strong></p>
+      <div class="md-content"><h2 id="a2">Вітаємо з завершенням рівня A2! 🎉</h2>
+<p>Ви успішно вивчили:</p>
 <ul>
-<li>Imperfective = process, repeated, duration</li>
-<li>Perfective = completed, single, result</li>
+<li>Всі 7 відмінків української мови</li>
+<li>Дієслівний вид (недоконаний та доконаний)</li>
+<li>Складні речення з різними сполучниками</li>
+<li>Словотвір (префікси, суфікси, корені)</li>
+<li>Понад 1000 нових слів з 12 тематичних областей</li>
 </ul>
-<p><strong>Comparatives:</strong></p>
+<h2 id="">Що далі?</h2>
+<p>На рівні <strong>B1</strong> ви будете вивчати:</p>
 <ul>
-<li>Regular: + -іший/-ший</li>
-<li>Irregular: більший, менший, кращий, гірший</li>
+<li>Глибше використання виду</li>
+<li>Дієслова руху з повною системою префіксів</li>
+<li>Пасивні та безособові конструкції</li>
+<li>Абстрактну лексику</li>
+<li>Складну аргументацію та дискусію</li>
 </ul>
-<p><strong>Superlatives:</strong></p>
-<ul>
-<li>най- + comparative: найбільший, найкращий</li>
-</ul>
-<p><strong>Conditionals:</strong></p>
-<ul>
-<li>Real: Якщо буде…, зроблю.</li>
-<li>Unreal: Якби був…, зробив би.</li>
-</ul>
-<h2 id="readyfora23">Ready for A2.3?</h2>
-<p><strong>You're ready if you can:</strong></p>
-<ol>
-<li>✅ Choose correct aspect consistently</li>
-<li>✅ Form comparatives and superlatives</li>
-<li>✅ Make real and unreal conditionals</li>
-<li>✅ Handle complex shopping situations</li>
-<li>✅ Make and confirm plans effectively</li>
-</ol>
-<p><strong>Coming in A2.3:</strong></p>
-<ul>
-<li>Reported speech</li>
-<li>Passive constructions</li>
-<li>Advanced time expressions</li>
-<li>Travel and transport</li>
-<li>A2 Final Review</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Congratulations!</strong></p>
-  <p>You've completed A2.2! You now have powerful tools: aspect lets you describe actions precisely, comparisons help you evaluate, and conditionals let you discuss possibilities. Keep practicing - these skills become automatic with use!</p>
-</blockquote></div>
+<p><strong>Удачі у вивченні української мови!</strong><br />
+<strong>Успіхів на рівні B1!</strong></p></div>
     </div>
   
       <div class="btn-group">
@@ -1020,79 +685,65 @@ Describe what you did yesterday using appropriate aspects:</p>
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>A2.2 Review</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Комплексне завдання — відмінки</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>A2.2 Grammar Review</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Комплексне завдання — лексика</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Комплексне завдання — складні речення</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Комплексна перевірка знань</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Фінальна перевірка</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>A2.2 Review</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
-    </div></section>
-
-    <section id="activity-6" class="section"><div class="card"><h3>A2.2 Integrated Story</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
-    </div></section>
-
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Gender</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Розподіліть за темами</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/24</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    
+    <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">підсумок</td><td class="vocab-ipa">/pidˈsumɔk/</td><td class="vocab-en">summary</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перевірка</td><td class="vocab-ipa">/pɛrɛˈʋirkɑ/</td><td class="vocab-en">check</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">досягнення</td><td class="vocab-ipa">/dɔsʲɑɦˈnɛnʲɑ/</td><td class="vocab-en">achievement</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рівень</td><td class="vocab-ipa">/ˈriʋɛnʲ/</td><td class="vocab-en">level</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">навичка</td><td class="vocab-ipa">/nɑˈʋɪt͡ʃkɑ/</td><td class="vocab-en">skill</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знання</td><td class="vocab-ipa">/ˈznɑnʲɑ/</td><td class="vocab-en">knowledge</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вміння</td><td class="vocab-ipa">/ʋˈminʲɑ/</td><td class="vocab-en">ability</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">прогрес</td><td class="vocab-ipa">/prɔˈɦrɛs/</td><td class="vocab-en">progress</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">завершення</td><td class="vocab-ipa">/zɑʋɛrˈʃɛnʲɑ/</td><td class="vocab-en">completion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сертифікат</td><td class="vocab-ipa">/sɛrtɪfiˈkɑt/</td><td class="vocab-en">certificate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">готовий</td><td class="vocab-ipa">/ɦɔˈtɔʋɪj/</td><td class="vocab-en">ready</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">наступний</td><td class="vocab-ipa">/nɑˈstupnɪj/</td><td class="vocab-en">next</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">попередній</td><td class="vocab-ipa">/pɔpɛˈrɛdnij/</td><td class="vocab-en">previous</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">успішний</td><td class="vocab-ipa">/uˈspiʃnɪj/</td><td class="vocab-en">successful</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">досвідчений</td><td class="vocab-ipa">/dɔsʋidˈt͡ʃɛnɪj/</td><td class="vocab-en">experienced</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вдосконалювати</td><td class="vocab-ipa">/ʋdɔskɔˈnɑlʲuʋɑtɪ/</td><td class="vocab-en">to improve</td><td class="vocab-note">pf: вдосконалити</td></tr><tr><td class="vocab-uk">досягати</td><td class="vocab-ipa">/dɔsʲɑˈɦɑtɪ/</td><td class="vocab-en">to achieve</td><td class="vocab-note">pf: досягти</td></tr><tr><td class="vocab-uk">завершувати</td><td class="vocab-ipa">/zɑʋɛrˈʃuʋɑtɪ/</td><td class="vocab-en">to complete</td><td class="vocab-note">pf: завершити</td></tr><tr><td class="vocab-uk">оцінювати</td><td class="vocab-ipa">/ɔt͡siˈnʲuʋɑtɪ/</td><td class="vocab-en">to evaluate</td><td class="vocab-note">pf: оцінити</td></tr><tr><td class="vocab-uk">продовжувати</td><td class="vocab-ipa">/prɔdɔʋˈʒuʋɑtɪ/</td><td class="vocab-en">to continue</td><td class="vocab-note">pf: продовжити</td></tr><tr><td class="vocab-uk">самооцінка</td><td class="vocab-ipa">/sɑmɔˈɔt͡sinkɑ/</td><td class="vocab-en">self-assessment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">мотивація</td><td class="vocab-ipa">/mɔtɪˈvɑt͡sijɑ/</td><td class="vocab-en">motivation</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">практика</td><td class="vocab-ipa">/ˈprɑktɪkɑ/</td><td class="vocab-en">practice</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">результат</td><td class="vocab-ipa">/rɛzulʲˈtɑt/</td><td class="vocab-en">result</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">майбутнє</td><td class="vocab-ipa">/mɑjˈbutnʲɛ/</td><td class="vocab-en">future</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">впевненість</td><td class="vocab-ipa">/ʋpɛʋˈnɛnistʲ/</td><td class="vocab-en">confidence</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">здатність</td><td class="vocab-ipa">/zdɑtˈnistʲ/</td><td class="vocab-en">capability</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розвиток</td><td class="vocab-ipa">/rɔzˈʋɪtɔk/</td><td class="vocab-en">development</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/mɔʒˈlɪʋistʲ/</td><td class="vocab-en">opportunity</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">середній</td><td class="vocab-ipa">/sɛˈrɛdnij/</td><td class="vocab-en">intermediate</td><td class="vocab-note">B1 level</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1104,8 +755,8 @@ Describe what you did yesterday using appropriate aspects:</p>
   </main><footer>Module 50 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"A2.2 Review","data":{"type":"fill-blank","items":[{"prompt":"Вчора я ___ (читати / прочитати) цю книгу до кінця.","answer":"прочитав","hints":["читати / прочитати"]},{"prompt":"Київ ___ (великий / більший) за Львів у три рази.","answer":"більший","hints":["великий / більший"]},{"prompt":"Якщо буде дощ, я ___ (взяти / візьму) парасолю.","answer":"візьму","hints":["взяти / візьму"]},{"prompt":"Якби я ___ (мати / мав) час, я б допоміг.","answer":"мав","hints":["мати / мав"]},{"prompt":"Це ___ (добрий / найкращий) ресторан у місті.","answer":"найкращий","hints":["добрий / найкращий"]}]}},{"id":"activity-1","type":"unjumble","title":"A2.2 Grammar Review","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","Я","прочитав","цю","вчора"],"answer":"Я прочитав цю книгу вчора.","translation":"I finished reading this book yesterday. - Aspect"},{"words":["більший","Київ","ніж","Львів"],"answer":"Київ більший, ніж Львів.","translation":"Kyiv is bigger than Lviv. - Comparative"},{"words":["буде","Якщо","дощ","візьму","парасолю","я"],"answer":"Якщо буде дощ, я візьму парасолю.","translation":"If it rains, I'll take an umbrella. - Real conditional"},{"words":["мав","Якби","час","я","б","допоміг","я"],"answer":"Якби я мав час, я б допоміг.","translation":"If I had time, I would help. - Unreal conditional"},{"words":["найкращий","Це","ресторан","місті","у"],"answer":"Це найкращий ресторан у місті.","translation":"This is the best restaurant in the city. - Superlative"}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"шкода","right":"pity, shame"},{"left":"для","right":"for"},{"left":"вони","right":"they"},{"left":"акція","right":"promotion, sale"},{"left":"доставка","right":"delivery"},{"left":"рахунок","right":"bill, check"},{"left":"зупинка","right":"stop"},{"left":"художник","right":"artist"},{"left":"секретарка","right":"secretary (f)"},{"left":"одружений","right":"married (m)"},{"left":"слухати","right":"to listen"},{"left":"подобатися","right":"to please, like"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"зупинка\" mean?","options":["stop","friend (female)","bread","to you"],"correctIndex":0,"explanation":"\"зупинка\" means \"stop\""},{"question":"What does \"сумка\" mean?","options":["group","Ukrainian (adj)","bag","her, hers"],"correctIndex":2,"explanation":"\"сумка\" means \"bag\""},{"question":"What does \"для\" mean?","options":["Ukrainian (adj)","to have breakfast","to watch, look","for"],"correctIndex":3,"explanation":"\"для\" means \"for\""},{"question":"What does \"уявний\" mean?","options":["beautiful, nice","temperature","imaginary, hypothetical","if"],"correctIndex":2,"explanation":"\"уявний\" means \"imaginary, hypothetical\""},{"question":"What does \"акція\" mean?","options":["near, by","promotion, sale","(with) us","to eat (perf)"],"correctIndex":1,"explanation":"\"акція\" means \"promotion, sale\""},{"question":"What does \"секретарка\" mean?","options":["earlier, before, used to","guest","secretary (f)","to stay (perf)"],"correctIndex":2,"explanation":"\"секретарка\" means \"secretary (f)\""},{"question":"What does \"ринок\" mean?","options":["student","day after tomorrow","market","would (after vowel)"],"correctIndex":2,"explanation":"\"ринок\" means \"market\""},{"question":"What does \"доставка\" mean?","options":["to help (impf)","while","café","delivery"],"correctIndex":3,"explanation":"\"доставка\" means \"delivery\""},{"question":"What does \"скільки\" mean?","options":["to succeed","how much/many","driver","worst"],"correctIndex":1,"explanation":"\"скільки\" means \"how much/many\""},{"question":"What does \"будуть\" mean?","options":["t-shirt","hot","they will be","wind"],"correctIndex":2,"explanation":"\"будуть\" means \"they will be\""},{"question":"What does \"класти\" mean?","options":["Ukrainian (adj)","to see","to close (perf)","to put"],"correctIndex":3,"explanation":"\"класти\" means \"to put\""},{"question":"What does \"подобатися\" mean?","options":["to help (impf)","to please, like","deposit","artist"],"correctIndex":1,"explanation":"\"подобатися\" means \"to please, like\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"будуть\" means \"forty\"","isTrue":false,"explanation":"Incorrect. \"будуть\" means \"they will be\""},{"statement":"\"акція\" means \"promotion, sale\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"подобатися\" means \"dish, course\"","isTrue":false,"explanation":"Incorrect. \"подобатися\" means \"to please, like\""},{"statement":"\"стіл\" means \"spoon\"","isTrue":false,"explanation":"Incorrect. \"стіл\" means \"table\""},{"statement":"\"секретарка\" means \"bag\"","isTrue":false,"explanation":"Incorrect. \"секретарка\" means \"secretary (f)\""},{"statement":"\"слухати\" means \"to listen\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"понеділок\" means \"defect\"","isTrue":false,"explanation":"Incorrect. \"понеділок\" means \"Monday\""},{"statement":"\"для\" means \"it's necessary\"","isTrue":false,"explanation":"Incorrect. \"для\" means \"for\""},{"statement":"\"доставка\" means \"to understand\"","isTrue":false,"explanation":"Incorrect. \"доставка\" means \"delivery\""},{"statement":"\"сумний\" means \"sad\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"select","title":"A2.2 Review","data":{"type":"select","items":[{"question":"Yesterday I read this book for three hours. (aspect)","options":[{"text":"Вчора я читав цю книгу три години.","correct":true},{"text":"Вчора я прочитав цю книгу три години.","correct":false},{"text":"Вчора я читаю цю книгу.","correct":false},{"text":"Вчора я буду читати книгу.","correct":false}]},{"question":"Kyiv is bigger than Lviv. (comparatives)","options":[{"text":"Київ більший ніж Львів.","correct":true},{"text":"Київ більше ніж Львів.","correct":false},{"text":"Київ найбільший ніж Львів.","correct":false},{"text":"Київ великий ніж Львів.","correct":false}]},{"question":"If I had time, I would travel. (conditionals)","options":[{"text":"Якби я мав час, я б подорожував.","correct":true},{"text":"Якщо я маю час, я подорожую.","correct":false},{"text":"Якби я мав час, я подорожую.","correct":false},{"text":"Якщо я мав час, я подорожував.","correct":false}]},{"question":"This is the best restaurant in the city. (superlatives)","options":[{"text":"Це найкращий ресторан у місті.","correct":true},{"text":"Це кращий ресторан у місті.","correct":false},{"text":"Це добрий ресторан у місті.","correct":false},{"text":"Це більший ресторан у місті.","correct":false}]},{"question":"I finished the work in two hours. (aspect)","options":[{"text":"Я закінчив роботу за дві години.","correct":true},{"text":"Я кінчав роботу дві години.","correct":false},{"text":"Я кінчаю роботу за години.","correct":false},{"text":"Я буду кінчати роботу.","correct":false}]},{"question":"Could you help me, please? (polite request)","options":[{"text":"Ви могли б мені допомогти?","correct":true},{"text":"Ви можете мені допомогти?","correct":false},{"text":"Ви могли мені допомогти?","correct":false},{"text":"Ви допоможете мені?","correct":false}]},{"question":"Let's schedule a meeting for Monday. (planning)","options":[{"text":"Давай призначимо зустріч на понеділок.","correct":true},{"text":"Давай призначити зустріч на понеділок.","correct":false},{"text":"Давай призначаємо зустріч понеділка.","correct":false},{"text":"Давай призначали зустріч.","correct":false}]},{"question":"Do you have this in a larger size? (shopping)","options":[{"text":"У вас є це більшого розміру?","correct":true},{"text":"У вас є це великого розміру?","correct":false},{"text":"У вас є це більший розмір?","correct":false},{"text":"У вас більше розміру?","correct":false}]},{"question":"If it rains tomorrow, I'll stay home. (real conditional)","options":[{"text":"Якщо завтра дощ, я залишуся вдома.","correct":true},{"text":"Якби завтра дощ, я залишуся вдома.","correct":false},{"text":"Якщо завтра дощ, я залишатимусь вдома.","correct":false},{"text":"Якби завтра був дощ, я б залишився.","correct":false}]},{"question":"She runs the fastest on our team. (superlative adverb)","options":[{"text":"Вона бігає найшвидше в нашій команді.","correct":true},{"text":"Вона бігає швидше в нашій команді.","correct":false},{"text":"Вона бігає швидко в нашій команді.","correct":false},{"text":"Вона бігає найшвидший в команді.","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"A2.2 Integrated Story","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["часу","мав","я","Якби","більше","залишився","б","я","довше"],"answer":"Якби я мав більше часу, я б залишився довше."},{"words":["тижня","Минулого","вирішив","я","поїхати","до Києва"],"answer":"Минулого тижня я вирішив поїхати до Києва."},{"words":["була","Це","найкраща","подорож","цього","року"],"answer":"Це була найкраща подорож цього року."},{"words":["до Києва","приїхав","Я","за три","години","на потязі"],"answer":"Я приїхав до Києва за три години на потязі."},{"words":["сподіваюся","Я","поїхати","знову","наступного","місяця"],"answer":"Я сподіваюся поїхати знову наступного місяця."},{"words":["квитки","купив","Я","онлайн","і","запланував","програму"],"answer":"Я купив квитки онлайн і запланував програму."},{"words":["я","Але","мав","повернутися","через","роботу"],"answer":"Але я мав повернутися через роботу."},{"words":["відвідав","Я","найцікавіші","музеї","та","найкрасивіші","парки"],"answer":"Я відвідав найцікавіші музеї та найкрасивіші парки."},{"words":["погода","Якщо","буде","гарна","відвідаю","я","всі","визначні","місця"],"answer":"Якщо погода буде гарна, я відвідаю всі визначні місця."},{"words":["прочитав","Я","багато","про історію","міста","і","зробив","фотографії"],"answer":"Я прочитав багато про історію міста і зробив фотографії."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["понеділок","ринок","стіл","рахунок"]},{"id":"feminine","name":"Feminine","items":["шкода","зупинка","акція","сумка","доставка","секретарка"]}],"shuffleItems":true}}];
-    const vocabData = [];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Комплексне завдання — відмінки","data":{"type":"fill-blank","items":[{"prompt":"Немає ___ у класі сьогодні.","answer":"студента","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Я даю підручник ___.","answer":"студентові","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Він працює ___ у бібліотеці.","answer":"студентом","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"У цьому ___ багато потенціалу.","answer":"студенті","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"___, ходімо на каву!","answer":"Студенте","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Книга належить ___ з моєї групи.","answer":"студентові","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Я бачив ___ в університеті.","answer":"студента","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Розмовляю з ___ про проект.","answer":"студентом","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Думаю про ___ часто.","answer":"студента","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Пишу ___ листа.","answer":"студентові","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"Батьки пишаються ___.","answer":"студентом","options":["студента","студентові","студентом","студенті","студенте"]},{"prompt":"___, ти готовий до іспиту?","answer":"Студенте","options":["студента","студентові","студентом","студенті","студенте"]}]}},{"id":"activity-1","type":"match-up","title":"Комплексне завдання — лексика","data":{"type":"match-up","pairs":[{"left":"лікар","right":"працює в лікарні"},{"left":"програміст","right":"пише код"},{"left":"художник","right":"малює картини"},{"left":"співак","right":"виступає на концертах"},{"left":"вчитель","right":"працює в школі"},{"left":"журналіст","right":"пише статті"},{"left":"перекладач","right":"перекладає тексти"},{"left":"архітектор","right":"проектує будинки"},{"left":"кухар","right":"готує страви"},{"left":"музикант","right":"грає на інструментах"},{"left":"спортсмен","right":"тренується щодня"},{"left":"актор","right":"грає у виставах"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Комплексне завдання — складні речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","не","прийшов","на","роботу","тому","що","захворів"],"answer":"Я не прийшов на роботу, тому що захворів.","translation":"I didn't come to work because I got sick"},{"words":["Хоча","було","дуже","холодно","ми","пішли","гуляти","в","парку"],"answer":"Хоча було дуже холодно, ми пішли гуляти в парку.","translation":"Although it was very cold, we went for a walk in the park"},{"words":["Він","вчиться","в","університеті","щоб","стати","лікарем"],"answer":"Він вчиться в університеті, щоб стати лікарем.","translation":"He studies at university to become a doctor"},{"words":["Книга","яку","я","читаю","зараз","дуже","цікава"],"answer":"Книга, яку я читаю зараз, дуже цікава.","translation":"The book that I'm reading now is very interesting"},{"words":["Коли","я","прийшов","додому","мама","вже","приготувала","вечерю"],"answer":"Коли я прийшов додому, мама вже приготувала вечерю.","translation":"When I came home, mom had already made dinner"},{"words":["Незважаючи","на","сильний","дощ","вони","грали","у","футбол"],"answer":"Незважаючи на сильний дощ, вони грали у футбол.","translation":"Despite the heavy rain, they played football"},{"words":["Я","дзвоню","тобі","щоб","запросити","на","концерт"],"answer":"Я дзвоню тобі, щоб запросити на концерт.","translation":"I'm calling you to invite you to a concert"},{"words":["Місто","в","якому","я","народився","знаходиться","на","півдні","України"],"answer":"Місто, в якому я народився, знаходиться на півдні України.","translation":"The city where I was born is located in the south of Ukraine"},{"words":["Поки","він","спав","я","приготував","сніданок","і","кофе"],"answer":"Поки він спав, я приготував сніданок і кофе.","translation":"While he was sleeping, I made breakfast and coffee"},{"words":["Після","того","як","закінчив","університет","він","переїхав","до","Києва"],"answer":"Після того, як закінчив університет, він переїхав до Києва.","translation":"After finishing university, he moved to Kyiv"},{"words":["Бо","завтра","рано","вставати","я","лягаю","спати","зараз"],"answer":"Бо завтра рано вставати, я лягаю спати зараз.","translation":"Because I have to get up early tomorrow, I'm going to bed now"},{"words":["Друг","з","яким","я","розмовляв","працює","програмістом"],"answer":"Друг, з яким я розмовляв, працює програмістом.","translation":"The friend with whom I talked works as a programmer"}]}},{"id":"activity-3","type":"quiz","title":"Комплексна перевірка знань","data":{"type":"quiz","questions":[{"question":"Який відмінок використовується для професій з дієсловом \"працювати\"?","options":["Родовий","Давальний","Орудний","Місцевий"],"correctIndex":2,"explanation":""},{"question":"Яке речення правильне?","options":["Я читаю книгу, який цікава.","Я читаю книгу, яка цікава.","Я читаю книгу, яке цікава.","Я читаю книгу, які цікава."],"correctIndex":1,"explanation":""},{"question":"Який вид дієслова: \"Він завжди читає перед сном\"?","options":["Недоконаний","Доконаний","Пасивний","Умовний"],"correctIndex":0,"explanation":""},{"question":"Як правильно: \"Книга ...\"?","options":["студента","студента","студентові","студентом"],"correctIndex":1,"explanation":""},{"question":"Який сполучник вводить допустове речення?","options":["тому що","щоб","хоча","коли"],"correctIndex":2,"explanation":""},{"question":"Де правильний Давальний відмінок?","options":["Бачу маму","Дзвоню мамі","Йду з мамою","Нема мами"],"correctIndex":1,"explanation":""},{"question":"Яка видова пара до \"писати\"?","options":["переписати","дописати","написати","виписати"],"correctIndex":2,"explanation":""},{"question":"Як правильно: \"Живу в ...\" (місто)?","options":["місто","міста","місті","містом"],"correctIndex":2,"explanation":""},{"question":"Яке речення цільове?","options":["Я не прийшов, бо захворів.","Хоча було холодно, ми пішли.","Він вчиться, щоб отримати диплом.","Коли я прийшов, вона пішла."],"correctIndex":2,"explanation":""},{"question":"Як сказати \"I work as a doctor\"?","options":["Я працюю лікар.","Я працюю лікаря.","Я працюю лікарем.","Я працюю лікареві."],"correctIndex":2,"explanation":""},{"question":"Який префікс означає \"в середину\"?","options":["в-/у-","ви-","від-","при-"],"correctIndex":0,"explanation":""},{"question":"На якому рівні ви зараз?","options":["A1","A2","B1","B2"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Фінальна перевірка","data":{"type":"true-false","statements":[{"statement":"Рівень A2 — це елементарний рівень.","isTrue":true,"explanation":"Правда: A2 — elementary level згідно з CEFR."},{"statement":"На рівні A2 вивчають всі 7 відмінків.","isTrue":true,"explanation":"Правда: Всі 7 відмінків української мови вивчаються на A2."},{"statement":"Недоконаний вид означає завершену дію.","isTrue":false,"explanation":"Неправда: Недоконаний вид означає процес, а доконаний — завершену дію."},{"statement":"\"Щоб\" вводить цільове речення.","isTrue":true,"explanation":"Правда: Сполучник \"щоб\" виражає мету."},{"statement":"Давальний відмінок відповідає на питання \"Кого?\"","isTrue":false,"explanation":"Неправда: Давальний відповідає на \"Кому? Чому?\", а \"Кого?\" — це Родовий або Знахідний."},{"statement":"На рівні A2 ви можете описувати свій досвід.","isTrue":true,"explanation":"Правда: A2 дозволяє розповідати про минулі події та досвід."},{"statement":"Орудний відмінок використовується для професій.","isTrue":true,"explanation":"Правда: \"Працювати лікарем\" — орудний відмінок."},{"statement":"\"Хоча\" вводить причинове речення.","isTrue":false,"explanation":"Неправда: \"Хоча\" вводить допустове речення, а не причинове."},{"statement":"Після A2 йде рівень B1.","isTrue":true,"explanation":"Правда: Порядок рівнів: A1, A2, B1, B2, C1, C2."},{"statement":"Кличний відмінок використовується для прямого об'єкта.","isTrue":false,"explanation":"Неправда: Кличний використовується для звертання, а Знахідний — для прямого об'єкта."},{"statement":"На рівні A2 ви вивчили близько 1000 нових слів.","isTrue":true,"explanation":"Правда: Кумулятивний словниковий запас A2 — приблизно 1800 слів."},{"statement":"Місцевий відмінок завжди вживається з прийменником.","isTrue":true,"explanation":"Правда: Місцевий обов'язково потребує прийменників (в, на, у, при)."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть за темами","data":{"type":"group-sort","groups":[{"id":"","name":"Робота","items":["офіс","зарплата","колега","керувати","посада","звільняти"]},{"id":"","name":"Технології","items":["комп'ютер","інтернет","завантажувати","смартфон","пароль","вебсайт"]},{"id":"","name":"Освіта","items":["урок","студент","іспит","підручник","лекція","вивчати"]},{"id":"","name":"Культура","items":["картина","концерт","театр","вистава","художник","свято"]}],"shuffleItems":true}}];
+    const vocabData = [{"uk":"підсумок","translit":"","en":"summary","note":""},{"uk":"перевірка","translit":"","en":"check","note":""},{"uk":"досягнення","translit":"","en":"achievement","note":""},{"uk":"рівень","translit":"","en":"level","note":""},{"uk":"навичка","translit":"","en":"skill","note":""},{"uk":"знання","translit":"","en":"knowledge","note":""},{"uk":"вміння","translit":"","en":"ability","note":""},{"uk":"прогрес","translit":"","en":"progress","note":""},{"uk":"завершення","translit":"","en":"completion","note":""},{"uk":"сертифікат","translit":"","en":"certificate","note":""},{"uk":"готовий","translit":"","en":"ready","note":""},{"uk":"наступний","translit":"","en":"next","note":""},{"uk":"попередній","translit":"","en":"previous","note":""},{"uk":"успішний","translit":"","en":"successful","note":""},{"uk":"досвідчений","translit":"","en":"experienced","note":""},{"uk":"вдосконалювати","translit":"","en":"to improve","note":"pf: вдосконалити"},{"uk":"досягати","translit":"","en":"to achieve","note":"pf: досягти"},{"uk":"завершувати","translit":"","en":"to complete","note":"pf: завершити"},{"uk":"оцінювати","translit":"","en":"to evaluate","note":"pf: оцінити"},{"uk":"продовжувати","translit":"","en":"to continue","note":"pf: продовжити"},{"uk":"самооцінка","translit":"","en":"self-assessment","note":""},{"uk":"мотивація","translit":"","en":"motivation","note":""},{"uk":"практика","translit":"","en":"practice","note":""},{"uk":"результат","translit":"","en":"result","note":""},{"uk":"майбутнє","translit":"","en":"future","note":""},{"uk":"впевненість","translit":"","en":"confidence","note":""},{"uk":"здатність","translit":"","en":"capability","note":""},{"uk":"розвиток","translit":"","en":"development","note":""},{"uk":"можливість","translit":"","en":"opportunity","note":""},{"uk":"середній","translit":"","en":"intermediate","note":"B1 level"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1157,8 +808,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1189,8 +840,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1602,7 +1253,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1612,7 +1263,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1813,6 +1466,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

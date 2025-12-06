@@ -11,96 +11,137 @@
     "targetLevel": "A2",
     "phase": "A2.3",
     "moduleNumber": 24,
-    "moduleType": "functional",
+    "moduleType": "grammar",
     "immersionLevel": 0.4,
-    "title": "Health & Body",
-    "subtitle": "At the Doctor's",
-    "description": "Describe symptoms and health problems",
+    "title": "I Think That...",
+    "subtitle": "Expressing Opinions",
+    "description": "Express personal opinions",
     "objectives": [
-      "Describe symptoms and health problems",
-      "Navigate doctor's visits",
-      "Understand medical instructions",
-      "Talk about body parts"
+      "Express personal opinions",
+      "Agree and disagree politely",
+      "Use opinion structures with що"
     ],
     "grammarFocus": [
-      "Body part vocabulary",
-      "Expressing pain (боліти)",
-      "Medical imperatives",
-      "Health-related expressions"
+      "Opinion verbs (думати, вважати, гадати)",
+      "Opinion phrases (на мою думку)",
+      "Agreement/disagreement expressions"
     ],
     "tags": [
-      "health",
-      "body",
-      "medical",
-      "functional",
-      "dialogue"
+      "grammar",
+      "opinions",
+      "beliefs",
+      "expressions",
+      "communication"
     ],
     "totalDuration": 45,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "sections": [
       {
         "id": "section-intro",
         "name": "Вступ",
         "nameEn": "Introduction",
         "type": "intro",
-        "content": "## warm-up\n\n### Staying Healthy\n\nNobody likes being sick, but knowing how to describe your symptoms in Ukrainian is essential!\n\n**Key phrases:**\n- Мені **погано**. - I feel bad.\n- У мене **болить** голова. - I have a headache.\n- Мені **потрібен** лікар. - I need a doctor.\n\n> 💡 **Did You Know?**\n>\n> Ukraine has both public (state) clinics and private medical centers. The word \"поліклініка\" refers to an outpatient clinic (not police!). For emergencies, call 103 (швидка допомога - ambulance). Pharmacies (аптека) are widespread and pharmacists often give advice for minor ailments.\n\n## presentation\n\n### Body Parts - Частини тіла\n\n**Head area:**\n| Ukrainian | English |\n|-----------|---------|\n| голова | head |\n| обличчя | face |\n| око (очі) | eye (eyes) |\n| вухо (вуха) | ear (ears) |\n| ніс | nose |\n| рот | mouth |\n| зуб (зуби) | tooth (teeth) |\n| язик | tongue |\n| горло | throat |\n| шия | neck |\n\n**Upper body:**\n| Ukrainian | English |\n|-----------|---------|\n| плече (плечі) | shoulder(s) |\n| рука (руки) | arm/hand(s) |\n| лікоть | elbow |\n| долоня | palm |\n| палець (пальці) | finger(s) |\n| груди | chest |\n| спина | back |\n| живіт | stomach/belly |\n\n**Lower body:**\n| Ukrainian | English |\n|-----------|---------|\n| нога (ноги) | leg/foot |\n| коліно | knee |\n| стопа | foot |\n| п'ятка | heel |\n\n> ⚡ **Pro Tip: Singular vs Plural**\n>\n> Many body parts have irregular plurals:\n> - око → очі (eyes)\n> - вухо → вуха (ears)\n> - рука → руки (hands)\n> - нога → ноги (legs)\n\n### Describing Pain - Боліти\n\n**У мене болить... (I have pain in... / My ... hurts):**\n\n**Singular (болить):**\n- У мене **болить** голова. - My head hurts.\n- У мене **болить** живіт. - My stomach hurts.\n- У мене **болить** горло. - My throat hurts.\n- У мене **болить** спина. - My back hurts.\n\n**Plural (болять):**\n- У мене **болять** очі. - My eyes hurt.\n- У мене **болять** ноги. - My legs hurt.\n- У мене **болять** зуби. - My teeth hurt.\n\n**How much it hurts:**\n- трохи болить - hurts a little\n- сильно болить - hurts a lot\n- дуже болить - hurts very much\n- нестерпно болить - unbearable pain\n\n> 🎭 **Culture Corner: Ukrainian Medicine**\n>\n> Ukrainians often try home remedies first: tea with honey for colds, chamomile for stomach issues, garlic for prevention! \"Народна медицина\" (folk medicine) is still popular. However, for serious issues, professional medical care is the norm.\n\n### Common Symptoms\n\n**General symptoms:**\n| Ukrainian | English |\n|-----------|---------|\n| температура | fever/temperature |\n| кашель | cough |\n| нежить | runny nose |\n| біль | pain |\n| слабкість | weakness |\n| запаморочення | dizziness |\n| нудота | nausea |\n\n**Describing symptoms:**\n- У мене **температура**. - I have a fever.\n- У мене **кашель**. - I have a cough.\n- У мене **нежить**. - I have a runny nose.\n- Мене **нудить**. - I feel nauseous.\n- У мене **запаморочення**. - I feel dizzy.\n- Я **втомлений/втомлена**. - I'm tired.\n\n**Common illnesses:**\n| Ukrainian | English |\n|-----------|---------|\n| застуда | cold |\n| грип | flu |\n| алергія | allergy |\n| отруєння | poisoning |\n| інфекція | infection |\n| запалення | inflammation |\n\n> 📜 **History Bite: Traditional Healing**\n>\n> Before modern medicine, Ukrainians relied heavily on herbs and natural remedies. \"Знахар\" or \"знахарка\" (healer) used plants like \"чебрець\" (thyme), \"м'ята\" (mint), and \"липа\" (linden) for treatments. Many of these traditions continue today!\n\n### At the Doctor's - У лікаря\n\n**Making an appointment:**\n- Я хочу **записатися** до лікаря. - I want to make an appointment.\n- Коли **приймає** терапевт? - When does the therapist see patients?\n- Чи є **вільний** час сьогодні? - Is there an opening today?\n- Мені потрібна **консультація**. - I need a consultation.\n\n**Common specialists:**\n| Ukrainian | English |\n|-----------|---------|\n| терапевт | general practitioner |\n| лор | ENT (ear-nose-throat) |\n| окуліст | eye doctor |\n| стоматолог | dentist |\n| хірург | surgeon |\n| кардіолог | cardiologist |\n\n**At the appointment:**\n- **На що скаржитесь?** - What are your complaints?\n- **Що вас турбує?** - What's bothering you?\n- **Як давно це почалося?** - How long has this been going on?\n- **Де болить?** - Where does it hurt?\n- **Покажіть**, де болить. - Show me where it hurts.\n\n### Answering the Doctor\n\n**Describing your problem:**\n- У мене болить голова **вже два дні**. - I've had a headache for two days.\n- Це почалося **вчора**. - It started yesterday.\n- Мені **погано** з ранку. - I've felt bad since morning.\n- Я **застудився/застудилася**. - I caught a cold.\n- Мене **турбує** кашель. - I'm bothered by a cough.\n\n**Intensity and duration:**\n- Біль **сильний/слабкий**. - The pain is strong/weak.\n- Болить **постійно**. - It hurts constantly.\n- Болить **іноді**. - It hurts sometimes.\n- **Стало гірше** вчора. - It got worse yesterday.\n- **Стало краще** сьогодні. - It got better today.\n\n### Medical Instructions\n\n**Doctor's orders:**\n- **Відкрийте** рот. - Open your mouth.\n- **Покажіть** язик. - Show your tongue.\n- **Дихайте** глибоко. - Breathe deeply.\n- **Не дихайте**. - Don't breathe.\n- **Роздягніться** до пояса. - Undress to the waist.\n- **Ляжте** на кушетку. - Lie down on the couch.\n\n**Prescriptions:**\n- Я **виписую** вам ліки. - I'm prescribing you medicine.\n- **Приймайте** по одній таблетці три рази на день. - Take one tablet three times a day.\n- Приймайте **до/після** їжі. - Take before/after meals.\n- **Пийте** багато води. - Drink lots of water.\n- **Відпочивайте**. - Rest.\n- Приходьте **через тиждень**. - Come back in a week.\n\n> ⚡ **Pro Tip: Pharmacy Vocabulary**\n>\n> | Ukrainian | English |\n> |-----------|---------|\n> | аптека | pharmacy |\n> | рецепт | prescription |\n> | таблетки | tablets |\n> | краплі | drops |\n> | мазь | ointment |\n> | сироп | syrup |\n\n### At the Pharmacy - В аптеці\n\n**Buying medicine:**\n- Дайте, будь ласка, щось **від** головного болю. - Please give me something for headaches.\n- Мені потрібні ліки **від** застуди. - I need cold medicine.\n- Це **без рецепта**? - Is this over-the-counter?\n- **Як приймати** ці ліки? - How do I take this medicine?\n- Чи є **побічні ефекти**? - Are there side effects?\n\n**Common OTC medicines:**\n- знеболююче - painkiller\n- жарознижуюче - fever reducer\n- від кашлю - for cough\n- від нежитю - for runny nose\n- від алергії - for allergies\n\n## practice\n\n### Match Body Parts\n\n1. голова\n   > [!answer] head\n2. рука\n   > [!answer] arm/hand\n3. нога\n   > [!answer] leg/foot\n4. горло\n   > [!answer] throat\n5. живіт\n   > [!answer] stomach\n6. спина\n   > [!answer] back\n\n### Form Sentences with Боліти\n\n1. голова\n   > [!answer] У мене болить голова.\n2. очі\n   > [!answer] У мене болять очі.\n3. зуби\n   > [!answer] У мене болять зуби.\n4. живіт\n   > [!answer] У мене болить живіт.\n5. ноги\n   > [!answer] У мене болять ноги.\n6. горло\n   > [!answer] У мене болить горло.\n\n### Doctor's Appointment Dialogue\n\nCreate responses:\n\n1. \"На що скаржитесь?\" (headache and fever)\n   > [!answer] У мене болить голова і температура.\n\n2. \"Як давно це почалося?\" (two days)\n   > [!answer] Це почалося два дні тому.\n\n3. \"Відкрийте рот.\" (understood)\n   > [!answer] \n   > [!explanation] patient opens mouth\n4. \"Приймайте по одній таблетці.\" (how many times?)\n   > [!answer] Скільки разів на день?\n\n## production\n\n### Describe Your Symptoms\n\nImagine you're sick. Describe:\n- Що у вас болить?\n- Які у вас симптоми?\n- Як давно це почалося?\n- Що ви вже робили?\n\n### Role Play: Doctor Visit\n\n**Patient:**\n- Describe symptoms\n- Answer questions\n- Ask about treatment\n\n**Doctor:**\n- Ask about symptoms\n- Give examination instructions\n- Prescribe treatment\n\n---\n\n---\n\n---\n\n---\n\n\n---\n\n\n---"
+        "content": "Everyone has opinions! \"I think that...\", \"In my opinion...\", \"I agree...\" These expressions are essential for real conversations. This module teaches you to share your views, agree with others, and politely disagree — all in Ukrainian.\n\n---"
+      },
+      {
+        "id": "section-opinion-verbs",
+        "name": "Opinion Verbs",
+        "type": "content",
+        "content": "## Я думаю, що... (I think that...)\n\nThe most common way to express opinion:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я думаю, **що** + clause | Я думаю, **що** це добре. | I think that this is good. |\n\n**More examples:**\n- Я **думаю**, що він правий.\n- Я **думаю**, що це помилка.\n- Я **думаю**, що треба почекати.\n\n---\n\n## Я вважаю, що... (I believe that...)\n\nSlightly stronger conviction:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я вважаю, **що** + clause | Я вважаю, **що** це важливо. | I believe that this is important. |\n\n**More examples:**\n- Я **вважаю**, що він чесний.\n- Я **вважаю**, що це правильно.\n- Ми **вважаємо**, що це найкращий варіант.\n\n> [!tip] 💡 Did You Know?\n> \"Вважати\" literally means \"to consider/regard\" — stronger than just thinking!\n\n---\n\n## Я гадаю, що... (I suppose that...)\n\nMore tentative:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я гадаю, **що** + clause | Я гадаю, **що** він прийде. | I suppose he'll come. |\n\n**More examples:**\n- Я **гадаю**, що це можливо.\n- Я **гадаю**, що вони запізнюються.\n- **Гадаю**, що так.\n\n---"
+      },
+      {
+        "id": "section-opinion-phrases",
+        "name": "Opinion Phrases",
+        "type": "content",
+        "content": "## На мою думку (In my opinion)\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| **На мою думку**, + clause | **На мою думку**, це неправильно. | In my opinion, this is wrong. |\n\n**More examples:**\n- **На мою думку**, він талановитий.\n- **На мій погляд**, це цікаво.\n- **З моєї точки зору**, проблема серйозна.\n\n---\n\n## Мені здається, що... (It seems to me that...)\n\nSofter, less definite:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| **Мені здається**, що + clause | **Мені здається**, що він сумний. | It seems to me that he's sad. |\n\n**More examples:**\n- **Мені здається**, що ми помилилися.\n- **Мені здається**, що погода зміниться.\n- **Здається**, що це правда.\n\n> [!example] 🎬 Pop Culture Moment\n> In discussions: *На мою думку, цей фільм найкращий* — In my opinion, this film is the best!\n\n---"
+      },
+      {
+        "id": "section-agreeing",
+        "name": "Agreeing",
+        "type": "content",
+        "content": "## Strong Agreement\n\n| Ukrainian | English |\n|-----------|---------|\n| Я **згоден/згодна**. | I agree. (m/f) |\n| **Точно!** | Exactly! |\n| **Абсолютно!** | Absolutely! |\n| **Безумовно!** | Definitely! |\n| Це **правда**. | That's true. |\n| Ви **маєте рацію**. | You're right. |\n\n**Examples:**\n- А: Цей ресторан дорогий. Б: Я **згоден**, занадто дорогий.\n- А: Треба почекати. Б: **Точно!** Давай почекаємо.\n\n---\n\n## Partial Agreement\n\n| Ukrainian | English |\n|-----------|---------|\n| **Можливо**. | Maybe, perhaps. |\n| **Напевно**. | Probably. |\n| **Частково згоден/згодна**. | Partly agree. |\n| **Мабуть**, ви праві. | You might be right. |\n| В цьому є **сенс**. | There's sense in that. |\n\n> [!tip] 🌍 Real World\n> \"Можливо\" is very useful when you're not sure: *Можливо, ти правий* — Maybe you're right.\n\n---"
+      },
+      {
+        "id": "section-disagreeing",
+        "name": "Disagreeing",
+        "type": "content",
+        "content": "## Polite Disagreement\n\n| Ukrainian | English |\n|-----------|---------|\n| Я **не згоден/не згодна**. | I disagree. (m/f) |\n| Я так **не думаю**. | I don't think so. |\n| **Не зовсім** так. | Not quite so. |\n| Я **сумніваюся**. | I doubt it. |\n| Це **не так**. | That's not so. |\n\n**Examples:**\n- А: Це легко. Б: Я **не згоден**, це досить важко.\n- А: Він прийде. Б: Я так **не думаю**.\n\n---\n\n## Strong Disagreement\n\n| Ukrainian | English |\n|-----------|---------|\n| **Ні**, це неправда. | No, that's not true. |\n| **Зовсім ні!** | Not at all! |\n| Ви **помиляєтесь**. | You're mistaken. |\n| Це **помилка**. | That's a mistake. |\n| Категорично **не згоден**! | Strongly disagree! |\n\n> [!example] 🎮 Gamer's Corner\n> In debates: *Я категорично не згоден — це найгірша стратегія!* — I strongly disagree — that's the worst strategy!\n\n---"
+      },
+      {
+        "id": "section-hedging-softening",
+        "name": "Hedging (Softening)",
+        "type": "content",
+        "content": "| Ukrainian | English |\n|-----------|---------|\n| **Можливо**, я помиляюся, але... | Maybe I'm wrong, but... |\n| Не знаю **напевно**, але... | I don't know for sure, but... |\n| **Здається**, що... | It seems that... |\n| **Якщо** я не помиляюся... | If I'm not mistaken... |\n\n---\n\n\n---\n\n\n---"
       },
       {
         "id": "section-summary",
         "name": "Підсумок",
         "nameEn": "Summary",
         "type": "summary",
-        "content": "## Body Parts\n\n| Area | Parts |\n|------|-------|\n| Head | голова, очі, вуха, ніс, рот, горло |\n| Upper | плечі, руки, груди, спина, живіт |\n| Lower | ноги, коліна, стопи |\n\n## Expressing Pain\n\n| Pattern | Example |\n|---------|---------|\n| Болить (sing) | У мене болить голова |\n| Болять (pl) | У мене болять ноги |\n\n## At the Doctor\n\n| Ukrainian | English |\n|-----------|---------|\n| На що скаржитесь? | What are your complaints? |\n| Де болить? | Where does it hurt? |\n| Як давно? | How long? |\n| Приймайте... | Take... |\n\n## At the Pharmacy\n\n| Pattern | Example |\n|---------|---------|\n| Щось від... | Something for... |\n| Як приймати? | How to take? |\n\n> 💡 **Key Takeaways**\n>\n> - У мене болить (sing) / болять (pl)\n> - Emergency: 103 (швидка допомога)\n> - Medicine \"for something\" = від + genitive\n> - Common: застуда, температура, кашель\n> - Аптека = pharmacy, рецепт = prescription"
+        "content": "Excellent work! You've learned:\n\n- **Opinion verbs**: думати, вважати, гадати + що\n- **Opinion phrases**: На мою думку, Мені здається\n- **Agreement**: Я згоден/згодна, Точно!, Безумовно!\n- **Disagreement**: Я не згоден, Це не так, Ви помиляєтесь\n- **Hedging**: Можливо, Мабуть, Напевно\n\n**Coming up next**: I'm Happy That... — expressing emotions!"
       }
     ],
-    "rawMarkdown": "---\ntitle: \"Health & Body\"\nsubtitle: \"At the Doctor's\"\nphase: A2.3\nduration: 45\ntransliteration: partial\ntags: [health, body, medical, functional, dialogue]\nobjectives:\n  - Describe symptoms and health problems\n  - Navigate doctor's visits\n  - Understand medical instructions\n  - Talk about body parts\ngrammar:\n  - Body part vocabulary\n  - Expressing pain (боліти)\n  - Medical imperatives\n  - Health-related expressions\n---\n\n# Lesson Content\n\n## warm-up\n\n### Staying Healthy\n\nNobody likes being sick, but knowing how to describe your symptoms in Ukrainian is essential!\n\n**Key phrases:**\n- Мені **погано**. - I feel bad.\n- У мене **болить** голова. - I have a headache.\n- Мені **потрібен** лікар. - I need a doctor.\n\n> 💡 **Did You Know?**\n>\n> Ukraine has both public (state) clinics and private medical centers. The word \"поліклініка\" refers to an outpatient clinic (not police!). For emergencies, call 103 (швидка допомога - ambulance). Pharmacies (аптека) are widespread and pharmacists often give advice for minor ailments.\n\n## presentation\n\n### Body Parts - Частини тіла\n\n**Head area:**\n| Ukrainian | English |\n|-----------|---------|\n| голова | head |\n| обличчя | face |\n| око (очі) | eye (eyes) |\n| вухо (вуха) | ear (ears) |\n| ніс | nose |\n| рот | mouth |\n| зуб (зуби) | tooth (teeth) |\n| язик | tongue |\n| горло | throat |\n| шия | neck |\n\n**Upper body:**\n| Ukrainian | English |\n|-----------|---------|\n| плече (плечі) | shoulder(s) |\n| рука (руки) | arm/hand(s) |\n| лікоть | elbow |\n| долоня | palm |\n| палець (пальці) | finger(s) |\n| груди | chest |\n| спина | back |\n| живіт | stomach/belly |\n\n**Lower body:**\n| Ukrainian | English |\n|-----------|---------|\n| нога (ноги) | leg/foot |\n| коліно | knee |\n| стопа | foot |\n| п'ятка | heel |\n\n> ⚡ **Pro Tip: Singular vs Plural**\n>\n> Many body parts have irregular plurals:\n> - око → очі (eyes)\n> - вухо → вуха (ears)\n> - рука → руки (hands)\n> - нога → ноги (legs)\n\n### Describing Pain - Боліти\n\n**У мене болить... (I have pain in... / My ... hurts):**\n\n**Singular (болить):**\n- У мене **болить** голова. - My head hurts.\n- У мене **болить** живіт. - My stomach hurts.\n- У мене **болить** горло. - My throat hurts.\n- У мене **болить** спина. - My back hurts.\n\n**Plural (болять):**\n- У мене **болять** очі. - My eyes hurt.\n- У мене **болять** ноги. - My legs hurt.\n- У мене **болять** зуби. - My teeth hurt.\n\n**How much it hurts:**\n- трохи болить - hurts a little\n- сильно болить - hurts a lot\n- дуже болить - hurts very much\n- нестерпно болить - unbearable pain\n\n> 🎭 **Culture Corner: Ukrainian Medicine**\n>\n> Ukrainians often try home remedies first: tea with honey for colds, chamomile for stomach issues, garlic for prevention! \"Народна медицина\" (folk medicine) is still popular. However, for serious issues, professional medical care is the norm.\n\n### Common Symptoms\n\n**General symptoms:**\n| Ukrainian | English |\n|-----------|---------|\n| температура | fever/temperature |\n| кашель | cough |\n| нежить | runny nose |\n| біль | pain |\n| слабкість | weakness |\n| запаморочення | dizziness |\n| нудота | nausea |\n\n**Describing symptoms:**\n- У мене **температура**. - I have a fever.\n- У мене **кашель**. - I have a cough.\n- У мене **нежить**. - I have a runny nose.\n- Мене **нудить**. - I feel nauseous.\n- У мене **запаморочення**. - I feel dizzy.\n- Я **втомлений/втомлена**. - I'm tired.\n\n**Common illnesses:**\n| Ukrainian | English |\n|-----------|---------|\n| застуда | cold |\n| грип | flu |\n| алергія | allergy |\n| отруєння | poisoning |\n| інфекція | infection |\n| запалення | inflammation |\n\n> 📜 **History Bite: Traditional Healing**\n>\n> Before modern medicine, Ukrainians relied heavily on herbs and natural remedies. \"Знахар\" or \"знахарка\" (healer) used plants like \"чебрець\" (thyme), \"м'ята\" (mint), and \"липа\" (linden) for treatments. Many of these traditions continue today!\n\n### At the Doctor's - У лікаря\n\n**Making an appointment:**\n- Я хочу **записатися** до лікаря. - I want to make an appointment.\n- Коли **приймає** терапевт? - When does the therapist see patients?\n- Чи є **вільний** час сьогодні? - Is there an opening today?\n- Мені потрібна **консультація**. - I need a consultation.\n\n**Common specialists:**\n| Ukrainian | English |\n|-----------|---------|\n| терапевт | general practitioner |\n| лор | ENT (ear-nose-throat) |\n| окуліст | eye doctor |\n| стоматолог | dentist |\n| хірург | surgeon |\n| кардіолог | cardiologist |\n\n**At the appointment:**\n- **На що скаржитесь?** - What are your complaints?\n- **Що вас турбує?** - What's bothering you?\n- **Як давно це почалося?** - How long has this been going on?\n- **Де болить?** - Where does it hurt?\n- **Покажіть**, де болить. - Show me where it hurts.\n\n### Answering the Doctor\n\n**Describing your problem:**\n- У мене болить голова **вже два дні**. - I've had a headache for two days.\n- Це почалося **вчора**. - It started yesterday.\n- Мені **погано** з ранку. - I've felt bad since morning.\n- Я **застудився/застудилася**. - I caught a cold.\n- Мене **турбує** кашель. - I'm bothered by a cough.\n\n**Intensity and duration:**\n- Біль **сильний/слабкий**. - The pain is strong/weak.\n- Болить **постійно**. - It hurts constantly.\n- Болить **іноді**. - It hurts sometimes.\n- **Стало гірше** вчора. - It got worse yesterday.\n- **Стало краще** сьогодні. - It got better today.\n\n### Medical Instructions\n\n**Doctor's orders:**\n- **Відкрийте** рот. - Open your mouth.\n- **Покажіть** язик. - Show your tongue.\n- **Дихайте** глибоко. - Breathe deeply.\n- **Не дихайте**. - Don't breathe.\n- **Роздягніться** до пояса. - Undress to the waist.\n- **Ляжте** на кушетку. - Lie down on the couch.\n\n**Prescriptions:**\n- Я **виписую** вам ліки. - I'm prescribing you medicine.\n- **Приймайте** по одній таблетці три рази на день. - Take one tablet three times a day.\n- Приймайте **до/після** їжі. - Take before/after meals.\n- **Пийте** багато води. - Drink lots of water.\n- **Відпочивайте**. - Rest.\n- Приходьте **через тиждень**. - Come back in a week.\n\n> ⚡ **Pro Tip: Pharmacy Vocabulary**\n>\n> | Ukrainian | English |\n> |-----------|---------|\n> | аптека | pharmacy |\n> | рецепт | prescription |\n> | таблетки | tablets |\n> | краплі | drops |\n> | мазь | ointment |\n> | сироп | syrup |\n\n### At the Pharmacy - В аптеці\n\n**Buying medicine:**\n- Дайте, будь ласка, щось **від** головного болю. - Please give me something for headaches.\n- Мені потрібні ліки **від** застуди. - I need cold medicine.\n- Це **без рецепта**? - Is this over-the-counter?\n- **Як приймати** ці ліки? - How do I take this medicine?\n- Чи є **побічні ефекти**? - Are there side effects?\n\n**Common OTC medicines:**\n- знеболююче - painkiller\n- жарознижуюче - fever reducer\n- від кашлю - for cough\n- від нежитю - for runny nose\n- від алергії - for allergies\n\n## practice\n\n### Match Body Parts\n\n1. голова\n   > [!answer] head\n2. рука\n   > [!answer] arm/hand\n3. нога\n   > [!answer] leg/foot\n4. горло\n   > [!answer] throat\n5. живіт\n   > [!answer] stomach\n6. спина\n   > [!answer] back\n\n### Form Sentences with Боліти\n\n1. голова\n   > [!answer] У мене болить голова.\n2. очі\n   > [!answer] У мене болять очі.\n3. зуби\n   > [!answer] У мене болять зуби.\n4. живіт\n   > [!answer] У мене болить живіт.\n5. ноги\n   > [!answer] У мене болять ноги.\n6. горло\n   > [!answer] У мене болить горло.\n\n### Doctor's Appointment Dialogue\n\nCreate responses:\n\n1. \"На що скаржитесь?\" (headache and fever)\n   > [!answer] У мене болить голова і температура.\n\n2. \"Як давно це почалося?\" (two days)\n   > [!answer] Це почалося два дні тому.\n\n3. \"Відкрийте рот.\" (understood)\n   > [!answer] \n   > [!explanation] patient opens mouth\n4. \"Приймайте по одній таблетці.\" (how many times?)\n   > [!answer] Скільки разів на день?\n\n## production\n\n### Describe Your Symptoms\n\nImagine you're sick. Describe:\n- Що у вас болить?\n- Які у вас симптоми?\n- Як давно це почалося?\n- Що ви вже робили?\n\n### Role Play: Doctor Visit\n\n**Patient:**\n- Describe symptoms\n- Answer questions\n- Ask about treatment\n\n**Doctor:**\n- Ask about symptoms\n- Give examination instructions\n- Prescribe treatment\n\n---\n\n---\n\n---\n\n---\n\n# Activities\n\n## fill-in: Health and Body\n\n> Choose the correct word to complete each sentence.\n\n1. У мене ___ (болить / болять) голова вже два дні.\n   > [!answer] болить\n   > (Singular = болить)\n\n2. У мене ___ (болить / болять) ноги після прогулянки.\n   > [!answer] болять\n   > (Plural = болять)\n\n3. Я ___ (застудився / застудила) і маю температуру.\n   > [!answer] застудився\n   > (Masculine past tense = застудився)\n\n4. Мені потрібно записатися до ___ (лікар / лікаря).\n   > [!answer] лікаря\n   > (Genitive case after \"до\")\n\n5. Дайте, будь ласка, щось ___ (від / для) головного болю.\n   > [!answer] від\n   > (Medicine \"for\" an illness = від)\n\n## unjumble: Health Sentences\n\n> Arrange the words in the correct order.\n\n1. мене / У / болить / голова / дуже\n   > [!answer] У мене дуже болить голова.\n   > (I have a really bad headache.)\n\n2. болять / мене / У / ноги / після / прогулянки\n   > [!answer] У мене болять ноги після прогулянки.\n   > (My legs hurt after the walk.)\n\n3. застудився / Я / і / маю / температуру\n   > [!answer] Я застудився і маю температуру.\n   > (I caught a cold and have a fever.)\n\n4. записатися / хочу / Я / до / лікаря\n   > [!answer] Я хочу записатися до лікаря.\n   > (I want to make a doctor's appointment.)\n\n5. щось / Дайте / від / головного / болю\n   > [!answer] Дайте щось від головного болю.\n   > (Give me something for a headache.)\n\n## match-up: Match the Pairs\n\n> Match Ukrainian words to their English meanings.\n\n| Left | Right |\n|------|-------|\n| таблетка | tablet, pill |\n| спина | back |\n| живіт | stomach, belly |\n| нежить | runny nose |\n| рецепт | prescription |\n| боліти | to hurt, ache |\n| найцікавіший | most interesting |\n| посилка | package |\n| курка | chicken |\n| голова | head |\n| горло | throat |\n| застуда | cold (illness) |\n\n## quiz: Meaning Check\n\n> Choose the correct answer.\n\n1. What does \"ліки\" mean?\n   - [ ] near, by\n   - [x] medicine\n   - [ ] their (m)\n   - [ ] next\n   > \"ліки\" means \"medicine\"\n\n2. What does \"таблетка\" mean?\n   - [ ] partner\n   - [x] tablet, pill\n   - [ ] five\n   - [ ] along\n   > \"таблетка\" means \"tablet, pill\"\n\n3. What does \"голова\" mean?\n   - [ ] much (intensifier)\n   - [ ] more slowly\n   - [x] head\n   - [ ] married (m)\n   > \"голова\" means \"head\"\n\n4. What does \"застуда\" mean?\n   - [x] cold (illness)\n   - [ ] cash register\n   - [ ] result\n   - [ ] five\n   > \"застуда\" means \"cold (illness)\"\n\n5. What does \"кашель\" mean?\n   - [x] cough\n   - [ ] incredibly\n   - [ ] door\n   - [ ] to be mistaken\n   > \"кашель\" means \"cough\"\n\n6. What does \"боліти\" mean?\n   - [ ] relative\n   - [x] to hurt, ache\n   - [ ] hot (adv)\n   - [ ] suddenly\n   > \"боліти\" means \"to hurt, ache\"\n\n7. What does \"живіт\" mean?\n   - [ ] masculine\n   - [x] stomach, belly\n   - [ ] day after tomorrow\n   - [ ] to try on\n   > \"живіт\" means \"stomach, belly\"\n\n8. What does \"спина\" mean?\n   - [ ] to go (on foot)\n   - [x] back\n   - [ ] receipt\n   - [ ] was (f)\n   > \"спина\" means \"back\"\n\n9. What does \"рецепт\" mean?\n   - [x] prescription\n   - [ ] son\n   - [ ] lemon\n   - [ ] charger\n   > \"рецепт\" means \"prescription\"\n\n10. What does \"горло\" mean?\n   - [ ] more slowly\n   - [ ] tomato\n   - [x] throat\n   - [ ] fresh\n   > \"горло\" means \"throat\"\n\n11. What does \"нежить\" mean?\n   - [ ] sender\n   - [ ] salt\n   - [x] runny nose\n   - [ ] it's necessary\n   > \"нежить\" means \"runny nose\"\n\n## true-false: True or False?\n\n> Determine if each statement is true or false.\n\n- [ ] \"боліти\" means \"that (masculine)\"\n   > Incorrect. \"боліти\" means \"to hurt, ache\"\n\n- [ ] \"ліки\" means \"page\"\n   > Incorrect. \"ліки\" means \"medicine\"\n\n- [ ] \"кашель\" means \"Wednesday\"\n   > Incorrect. \"кашель\" means \"cough\"\n\n- [ ] \"нежить\" means \"seven\"\n   > Incorrect. \"нежить\" means \"runny nose\"\n\n- [x] \"застуда\" means \"cold (illness)\"\n   > Correct!\n\n- [x] \"рецепт\" means \"prescription\"\n   > Correct!\n\n- [x] \"живіт\" means \"stomach, belly\"\n   > Correct!\n\n- [ ] \"горло\" means \"nothing\"\n   > Incorrect. \"горло\" means \"throat\"\n\n- [x] \"спина\" means \"back\"\n   > Correct!\n\n- [x] \"голова\" means \"head\"\n   > Correct!\n\n## group-sort: Sort by Gender\n\n> Sort the nouns into gender categories.\n\n### Masculine\n- ліки\n- нежить\n- рецепт\n- кашель\n- живіт\n\n### Feminine\n- таблетка\n- голова\n- спина\n- застуда\n\n## select: Choose the Correct Health Term\n\n> Select the correct answer for each situation.\n\n1. У мене дуже сильно болить ___ після роботи за комп'ютером.\n   - [x] голова\n   - [ ] горло\n   - [ ] живіт\n   - [ ] спина\n   > Headache after computer work: \"голова\"\n\n2. Мені потрібні ___ від головного болю в аптеці.\n   - [ ] таблетка\n   - [x] ліки\n   - [ ] рецепт\n   - [ ] застуда\n   > Medicine (plural): \"ліки\"\n\n3. У мене ___, і я постійно кашляю.\n   - [ ] нежить\n   - [x] кашель\n   - [ ] живіт\n   - [ ] спина\n   > Coughing indicates: \"кашель\"\n\n4. Лікар написав ___ на антибіотики в лікарні.\n   - [ ] ліки\n   - [ ] таблетка\n   - [x] рецепт\n   - [ ] застуда\n   > Doctor writes: \"рецепт\" (prescription)\n\n5. У мене болить ___, тому що я з'їв щось погане.\n   - [ ] голова\n   - [ ] горло\n   - [x] живіт\n   - [ ] спина\n   > Stomach pain from bad food: \"живіт\"\n\n6. У мене ___, і мій ніс не дихає нормально.\n   - [x] нежить\n   - [ ] кашель\n   - [ ] застуда\n   - [ ] рецепт\n   > Runny nose: \"нежить\"\n\n7. У мене ___ після занять спортом у спортзалі.\n   - [ ] голова\n   - [ ] горло\n   - [ ] живіт\n   - [x] спина\n   > Back pain after sports: \"спина\"\n\n8. Мені потрібна одна ___ від температури зараз.\n   - [x] таблетка\n   - [ ] ліки\n   - [ ] рецепт\n   - [ ] застуда\n   > One pill: \"таблетка\"\n\n9. У мене боліє ___, і важко ковтати їжу.\n   - [ ] голова\n   - [x] горло\n   - [ ] живіт\n   - [ ] спина\n   > Sore throat, hard to swallow: \"горло\"\n\n10. Я застудився і тепер маю ___ з температурою.\n    - [ ] таблетка\n    - [ ] ліки\n    - [ ] рецепт\n    - [x] застуду\n    > Having a cold: \"застуду\" (accusative)\n\n## unjumble: Put Words in Order\n\n> Arrange the words to form correct sentences about health.\n\n1. У / мене / болить / голова / дуже / сильно / сьогодні\n   > [!answer] У мене голова болить дуже сильно сьогодні.\n   > (My head hurts very badly today.)\n\n2. Мені / потрібні / ліки / від / головного / болю / з / аптеки\n   > [!answer] Мені потрібні ліки від головного болю з аптеки.\n   > (I need medicine for a headache from the pharmacy.)\n\n3. Лікар / написав / рецепт / на / антибіотики / після / огляду / пацієнта\n   > [!answer] Лікар написав рецепт на антибіотики після огляду пацієнта.\n   > (The doctor wrote a prescription for antibiotics after examining the patient.)\n\n4. У / мене / болить / живіт / після / того / як / я / поїв\n   > [!answer] У мене болить живіт після того, як я поїв.\n   > (My stomach hurts after I ate.)\n\n5. Я / маю / застуду / з / високою / температурою / та / кашлем\n   > [!answer] Я маю застуду з високою температурою та кашлем.\n   > (I have a cold with high temperature and cough.)\n\n6. Візьміть / цю / таблетку / тричі / на / день / після / їжі\n   > [!answer] Візьміть цю таблетку тричі на день після їжі.\n   > (Take this pill three times a day after meals.)\n\n7. У / мене / болить / спина / після / важкої / фізичної / роботи / вчора\n   > [!answer] У мене болить спина після важкої фізичної роботи вчора.\n   > (My back hurts after hard physical work yesterday.)\n\n8. Мені / важко / ковтати / бо / у / мене / боліє / горло\n   > [!answer] Мені важко ковтати, бо у мене боліє горло.\n   > (It's hard for me to swallow because my throat hurts.)\n\n9. Я / маю / сильний / кашель / і / нежить / через / застуду\n   > [!answer] Я маю сильний кашель і нежить через застуду.\n   > (I have a strong cough and runny nose because of a cold.)\n\n10. У / мене / болять / ноги / після / довгої / прогулянки / в / парку\n    > [!answer] У мене болять ноги після довгої прогулянки в парку.\n    > (My legs hurt after a long walk in the park.)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| голова | /ɦoloˈvɑ/ | head | noun | f |\n| горло | /ˈɦorlo/ | throat | noun | n |\n| живіт | /ʒɪˈvʲit/ | stomach, belly | noun | m |\n| спина | /spɪˈnɑ/ | back | noun | f |\n| боліти | /boˈlʲitɪ/ | to hurt, ache | verb | - |\n| кашель | /ˈkɑʃɛlʲ/ | cough | noun | m |\n| нежить | /ˈnɛʒɪtʲ/ | runny nose | noun | m |\n| застуда | /zɑˈstudɑ/ | cold (illness) | noun | f |\n| ліки | /ˈlʲikɪ/ | medicine | noun | m | pl-only |\n| таблетка | /tɑbˈlɛtkɑ/ | tablet, pill | noun | f |\n| рецепт | /rɛˈtsɛpt/ | prescription | noun | m |\n\n---\n\n# Summary\n\n## Body Parts\n\n| Area | Parts |\n|------|-------|\n| Head | голова, очі, вуха, ніс, рот, горло |\n| Upper | плечі, руки, груди, спина, живіт |\n| Lower | ноги, коліна, стопи |\n\n## Expressing Pain\n\n| Pattern | Example |\n|---------|---------|\n| Болить (sing) | У мене болить голова |\n| Болять (pl) | У мене болять ноги |\n\n## At the Doctor\n\n| Ukrainian | English |\n|-----------|---------|\n| На що скаржитесь? | What are your complaints? |\n| Де болить? | Where does it hurt? |\n| Як давно? | How long? |\n| Приймайте... | Take... |\n\n## At the Pharmacy\n\n| Pattern | Example |\n|---------|---------|\n| Щось від... | Something for... |\n| Як приймати? | How to take? |\n\n> 💡 **Key Takeaways**\n>\n> - У мене болить (sing) / болять (pl)\n> - Emergency: 103 (швидка допомога)\n> - Medicine \"for something\" = від + genitive\n> - Common: застуда, температура, кашель\n> - Аптека = pharmacy, рецепт = prescription\n",
-    "createdAt": "2025-12-05T01:15:57.976Z",
-    "modifiedAt": "2025-12-05T01:15:57.976Z",
+    "rawMarkdown": "---\ntitle: \"I Think That...\"\nsubtitle: \"Expressing Opinions\"\nphase: A2.3\nduration: 45\ntransliteration: none\ntags: [grammar, opinions, beliefs, expressions, communication]\nobjectives:\n  - Express personal opinions\n  - Agree and disagree politely\n  - Use opinion structures with що\ngrammar:\n  - Opinion verbs (думати, вважати, гадати)\n  - Opinion phrases (на мою думку)\n  - Agreement/disagreement expressions\n---\n\n# Вступ\n\nEveryone has opinions! \"I think that...\", \"In my opinion...\", \"I agree...\" These expressions are essential for real conversations. This module teaches you to share your views, agree with others, and politely disagree — all in Ukrainian.\n\n---\n\n# Opinion Verbs\n\n## Я думаю, що... (I think that...)\n\nThe most common way to express opinion:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я думаю, **що** + clause | Я думаю, **що** це добре. | I think that this is good. |\n\n**More examples:**\n- Я **думаю**, що він правий.\n- Я **думаю**, що це помилка.\n- Я **думаю**, що треба почекати.\n\n---\n\n## Я вважаю, що... (I believe that...)\n\nSlightly stronger conviction:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я вважаю, **що** + clause | Я вважаю, **що** це важливо. | I believe that this is important. |\n\n**More examples:**\n- Я **вважаю**, що він чесний.\n- Я **вважаю**, що це правильно.\n- Ми **вважаємо**, що це найкращий варіант.\n\n> [!tip] 💡 Did You Know?\n> \"Вважати\" literally means \"to consider/regard\" — stronger than just thinking!\n\n---\n\n## Я гадаю, що... (I suppose that...)\n\nMore tentative:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| Я гадаю, **що** + clause | Я гадаю, **що** він прийде. | I suppose he'll come. |\n\n**More examples:**\n- Я **гадаю**, що це можливо.\n- Я **гадаю**, що вони запізнюються.\n- **Гадаю**, що так.\n\n---\n\n# Opinion Phrases\n\n## На мою думку (In my opinion)\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| **На мою думку**, + clause | **На мою думку**, це неправильно. | In my opinion, this is wrong. |\n\n**More examples:**\n- **На мою думку**, він талановитий.\n- **На мій погляд**, це цікаво.\n- **З моєї точки зору**, проблема серйозна.\n\n---\n\n## Мені здається, що... (It seems to me that...)\n\nSofter, less definite:\n\n| Structure | Example | English |\n|-----------|---------|---------|\n| **Мені здається**, що + clause | **Мені здається**, що він сумний. | It seems to me that he's sad. |\n\n**More examples:**\n- **Мені здається**, що ми помилилися.\n- **Мені здається**, що погода зміниться.\n- **Здається**, що це правда.\n\n> [!example] 🎬 Pop Culture Moment\n> In discussions: *На мою думку, цей фільм найкращий* — In my opinion, this film is the best!\n\n---\n\n# Agreeing\n\n## Strong Agreement\n\n| Ukrainian | English |\n|-----------|---------|\n| Я **згоден/згодна**. | I agree. (m/f) |\n| **Точно!** | Exactly! |\n| **Абсолютно!** | Absolutely! |\n| **Безумовно!** | Definitely! |\n| Це **правда**. | That's true. |\n| Ви **маєте рацію**. | You're right. |\n\n**Examples:**\n- А: Цей ресторан дорогий. Б: Я **згоден**, занадто дорогий.\n- А: Треба почекати. Б: **Точно!** Давай почекаємо.\n\n---\n\n## Partial Agreement\n\n| Ukrainian | English |\n|-----------|---------|\n| **Можливо**. | Maybe, perhaps. |\n| **Напевно**. | Probably. |\n| **Частково згоден/згодна**. | Partly agree. |\n| **Мабуть**, ви праві. | You might be right. |\n| В цьому є **сенс**. | There's sense in that. |\n\n> [!tip] 🌍 Real World\n> \"Можливо\" is very useful when you're not sure: *Можливо, ти правий* — Maybe you're right.\n\n---\n\n# Disagreeing\n\n## Polite Disagreement\n\n| Ukrainian | English |\n|-----------|---------|\n| Я **не згоден/не згодна**. | I disagree. (m/f) |\n| Я так **не думаю**. | I don't think so. |\n| **Не зовсім** так. | Not quite so. |\n| Я **сумніваюся**. | I doubt it. |\n| Це **не так**. | That's not so. |\n\n**Examples:**\n- А: Це легко. Б: Я **не згоден**, це досить важко.\n- А: Він прийде. Б: Я так **не думаю**.\n\n---\n\n## Strong Disagreement\n\n| Ukrainian | English |\n|-----------|---------|\n| **Ні**, це неправда. | No, that's not true. |\n| **Зовсім ні!** | Not at all! |\n| Ви **помиляєтесь**. | You're mistaken. |\n| Це **помилка**. | That's a mistake. |\n| Категорично **не згоден**! | Strongly disagree! |\n\n> [!example] 🎮 Gamer's Corner\n> In debates: *Я категорично не згоден — це найгірша стратегія!* — I strongly disagree — that's the worst strategy!\n\n---\n\n# Hedging (Softening)\n\n| Ukrainian | English |\n|-----------|---------|\n| **Можливо**, я помиляюся, але... | Maybe I'm wrong, but... |\n| Не знаю **напевно**, але... | I don't know for sure, but... |\n| **Здається**, що... | It seems that... |\n| **Якщо** я не помиляюся... | If I'm not mistaken... |\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| думати | /duˈmatɪ/ | to think | verb | — | |\n| вважати | /wwaˈʒatɪ/ | to believe, consider | verb | — | |\n| гадати | /ɦaˈdatɪ/ | to suppose, guess | verb | — | |\n| здаватися | /zdaˈwatɪsʲa/ | to seem | verb | — | |\n| погоджуватися | /poɦoˈdʒuwatɪsʲa/ | to agree | verb | — | |\n| згоден | /ˈzɦodɛn/ | agree (m) | adj | m | short form |\n| згодна | /ˈzɦodna/ | agree (f) | adj | f | short form |\n| думка | /ˈdumka/ | opinion, thought | noun | f | |\n| погляд | /ˈpoɦlʲad/ | view, perspective | noun | m | |\n| точка зору | /ˈtotʃka ˈzoru/ | point of view | phrase | f | |\n| правда | /ˈprawda/ | truth | noun | f | |\n| неправда | /nɛˈprawda/ | untruth, false | noun | f | |\n| помилка | /poˈmɪlka/ | mistake | noun | f | |\n| помилятися | /pomɪˈlʲatɪsʲa/ | to be mistaken | verb | — | |\n| сумніватися | /sumnɪˈwatɪsʲa/ | to doubt | verb | — | |\n| можливо | /ˈmoʒlɪwo/ | maybe, possibly | adv | — | |\n| напевно | /naˈpɛwno/ | probably | adv | — | |\n| безумовно | /bɛzuˈmowno/ | definitely | adv | — | |\n| рація | /ˈrat͡sija/ | right (being right) | noun | f | мати рацію |\n| мабуть | /maˈbutʲ/ | probably, perhaps | adv | — | |\n\n---\n\n# Activities\n\n## fill-in: Express Your Opinion\n\n1. Я ___, що це добре. (think)\n   > [!answer] думаю\n   > (I think that this is good.)\n\n2. Я ___, що він правий. (believe)\n   > [!answer] вважаю\n   > (I believe that he's right.)\n\n3. На мою ___, це неправильно. (opinion)\n   > [!answer] думку\n   > (In my opinion, this is wrong.)\n\n4. Мені ___, що він сумний. (seems)\n   > [!answer] здається\n   > (It seems to me that he's sad.)\n\n5. Я ___. Ви маєте рацію. (agree - m)\n   > [!answer] згоден\n   > (I agree. You're right.)\n\n6. Я так не ___. (think)\n   > [!answer] думаю\n   > (I don't think so.)\n\n7. Це ___! (exactly)\n   > [!answer] точно\n   > (Exactly!)\n\n8. ___, я помиляюся. (maybe)\n   > [!answer] Можливо\n   > (Maybe I'm wrong.)\n\n9. Ви ___. Це неправда. (are mistaken)\n   > [!answer] помиляєтесь\n   > (You're mistaken. That's not true.)\n\n10. Я ___. Це можливо? (doubt)\n    > [!answer] сумніваюся\n    > (I doubt it. Is it possible?)\n\n11. Це не ___ так. (quite)\n    > [!answer] зовсім\n    > (Not quite so.)\n\n12. ___, він прийде. (probably)\n    > [!answer] Напевно\n    > (Probably he'll come.)\n\n## match-up: Opinion Expressions\n\n- Я думаю :: I think\n- Я вважаю :: I believe\n- Я гадаю :: I suppose\n- На мою думку :: In my opinion\n- Мені здається :: It seems to me\n- Я згоден :: I agree (m)\n- Я не згодна :: I disagree (f)\n- Це правда :: That's true\n- Це не так :: That's not so\n- Можливо :: Maybe\n- Напевно :: Probably\n- Безумовно :: Definitely\n\n## unjumble: Sentence Order\n\n1. думаю / що / добре / Я / це / для / нашого / проекту\n   > [!answer] Я думаю, що це добре для нашого проекту.\n   > (I think that this is good for our project.) [8 words]\n\n2. думку / На / мою / це / неправильно / робити / так / зараз\n   > [!answer] На мою думку, неправильно робити це так зараз.\n   > (In my opinion, it's wrong to do it this way now.) [8 words]\n\n3. здається / що / він / сумний / Мені / через / цю / ситуацію\n   > [!answer] Мені здається, що він сумний через цю ситуацію.\n   > (It seems to me that he's sad because of this situation.) [8 words]\n\n4. згоден / Я / повністю / маєте / рацію / Ви / у / цьому\n   > [!answer] Я повністю згоден. Ви маєте рацію у цьому.\n   > (I fully agree. You're right about this.) [8 words]\n\n5. не / так / Я / думаю / про / цю / важливу / справу\n   > [!answer] Я так не думаю про цю важливу справу.\n   > (I don't think so about this important matter.) [8 words]\n\n6. вважаю / що / важливо / Я / це / дуже / для / нас\n   > [!answer] Я вважаю, що це дуже важливо для нас.\n   > (I believe that this is very important for us.) [8 words]\n\n7. зовсім / Не / так / як / ви / думаєте / про / це\n   > [!answer] Не зовсім так, як ви думаєте про це.\n   > (Not quite as you think about it.) [8 words]\n\n8. помиляюся / Можливо / я / але / це / здається / мені / дивним\n   > [!answer] Можливо, я помиляюся, але це здається мені дивним.\n   > (Maybe I'm wrong, but this seems strange to me.) [8 words]\n\n9. сумніваюся / Я / що / це / буде / працювати / добре / тут\n   > [!answer] Я сумніваюся, що це буде добре працювати тут.\n   > (I doubt that this will work well here.) [8 words]\n\n10. Безумовно / правда / Це / я / повністю / з / вами / погоджуюся\n    > [!answer] Безумовно! Це правда. Я повністю з вами погоджуюся.\n    > (Definitely! That's true. I fully agree with you.) [8 words]\n\n11. не / Я / згодна / з / вашою / точкою / зору / на\n    > [!answer] Я не згодна з вашою точкою зору на це.\n    > (I disagree with your point of view on this.) [8 words]\n\n12. гадаю / що / він / прийде / Я / на / зустріч / сьогодні\n    > [!answer] Я гадаю, що він прийде на зустріч сьогодні.\n    > (I suppose he'll come to the meeting today.) [8 words]\n\n## quiz: Opinion Knowledge\n\n1. \"Я думаю, що...\" means:\n   - [x] I think that...\n   - [ ] I know that...\n   - [ ] I see that...\n   - [ ] I want that...\n\n2. \"Я вважаю\" expresses:\n   - [x] Stronger belief than думаю\n   - [ ] Weaker belief\n   - [ ] Question\n   - [ ] Command\n\n3. \"На мою думку\" means:\n   - [x] In my opinion\n   - [ ] I think\n   - [ ] You think\n   - [ ] They think\n\n4. \"Мені здається\" expresses:\n   - [x] Uncertainty, seems to me\n   - [ ] Certainty\n   - [ ] Agreement\n   - [ ] Disagreement\n\n5. \"Я згоден\" is:\n   - [x] Masculine agreement\n   - [ ] Feminine agreement\n   - [ ] Disagreement\n   - [ ] Question\n\n6. \"Можливо\" means:\n   - [x] Maybe, possibly\n   - [ ] Definitely\n   - [ ] Never\n   - [ ] Always\n\n7. \"Ви помиляєтесь\" means:\n   - [x] You're mistaken\n   - [ ] You're right\n   - [ ] You're clever\n   - [ ] You're stupid\n\n8. \"Безумовно\" expresses:\n   - [x] Definite agreement\n   - [ ] Doubt\n   - [ ] Question\n   - [ ] Disagreement\n\n9. \"Мабуть\" means:\n   - [x] Probably, perhaps\n   - [ ] Definitely not\n   - [ ] Never\n   - [ ] Always\n\n10. \"Мати рацію\" means:\n    - [x] To be right\n    - [ ] To be wrong\n    - [ ] To have a reason\n    - [ ] To have money\n\n11. \"Я сумніваюся\" expresses:\n    - [x] Doubt\n    - [ ] Agreement\n    - [ ] Happiness\n    - [ ] Anger\n\n12. \"Частково згоден\" means:\n    - [x] Partly agree\n    - [ ] Fully agree\n    - [ ] Disagree\n    - [ ] Don't know\n\n## true-false: Opinion Facts\n\n1. \"Думати\" means \"to think.\"\n   > [!answer] true\n   > (Я думаю = I think)\n\n2. \"Вважати\" is weaker than \"думати.\"\n   > [!answer] false\n   > (Stronger conviction)\n\n3. \"На мою думку\" is used at the start.\n   > [!answer] true\n   > (In my opinion,...)\n\n4. \"Згоден\" is for women.\n   > [!answer] false\n   > (Згоден = m, Згодна = f)\n\n5. \"Можливо\" expresses certainty.\n   > [!answer] false\n   > (Expresses possibility)\n\n6. \"Безумовно\" means \"definitely.\"\n   > [!answer] true\n   > (Strong agreement)\n\n7. \"Мені здається\" is very certain.\n   > [!answer] false\n   > (Expresses uncertainty)\n\n8. \"Ви помиляєтесь\" is polite disagreement.\n   > [!answer] true\n   > (You're mistaken)\n\n9. \"Мабуть\" = \"probably.\"\n   > [!answer] true\n   > (Perhaps, probably)\n\n10. \"Точно!\" expresses disagreement.\n    > [!answer] false\n    > (Expresses agreement - Exactly!)\n\n11. \"Гадати\" is stronger than \"вважати.\"\n    > [!answer] false\n    > (Гадати is weaker - suppose)\n\n12. \"Не зовсім так\" means \"not quite.\"\n    > [!answer] true\n    > (Partial disagreement)\n\n## group-sort: Opinion Types\n\n> Sort these items into the correct categories.\n\n### Agreement\n- Я згоден\n- Точно!\n- Безумовно\n- Ви маєте рацію\n\n### Disagreement\n- Я не згодна\n- Я сумніваюся\n- Це не так\n- Ви помиляєтесь\n\n### Uncertainty\n- Можливо\n- Мабуть\n- Здається\n- Напевно\n\n## fill-in: Opinion Dialogues\n\n1. На мій ___, це найкращий варіант для нас. (view)\n   > [!answer] погляд\n   > (In my view, this is the best option for us.)\n\n2. З моєї точки ___, проблема дуже серйозна. (view)\n   > [!answer] зору\n   > (From my point of view, the problem is very serious.)\n\n3. Ви абсолютно ___! Я повністю погоджуюся. (right)\n   > [!answer] праві\n   > (You're absolutely right! I fully agree.)\n\n4. В цьому є ___. Давайте спробуємо це. (sense)\n   > [!answer] сенс\n   > (There's sense in that. Let's try it.)\n\n5. Я ___ не впевнений, але думаю, що так. (quite)\n   > [!answer] зовсім\n   > (I'm not quite sure, but I think so.)\n\n6. ___, ви праві, але є інша думка. (perhaps)\n   > [!answer] Мабуть\n   > (Perhaps you're right, but there's another opinion.)\n\n7. Це ___, я перевіряв інформацію. (truth)\n   > [!answer] правда\n   > (That's the truth, I checked the information.)\n\n8. Я категорично не ___! Це погана ідея. (agree)\n   > [!answer] згоден\n   > (I strongly disagree! That's a bad idea.)\n\n9. ___ я не помиляюся, це трапилося вчора. (if)\n   > [!answer] Якщо\n   > (If I'm not mistaken, it happened yesterday.)\n\n10. Не знаю ___, але мені здається, що ні. (for sure)\n    > [!answer] напевно\n    > (I don't know for sure, but it seems to me that no.)\n\n11. Це ___! Я ніколи з цим не погоджуся. (mistake)\n    > [!answer] помилка\n    > (That's a mistake! I'll never agree with that.)\n\n12. ___ ні! Я зовсім так не думаю. (not at all)\n    > [!answer] Зовсім\n    > (Not at all! I don't think so at all.)\n\n## select: Choose the Best Response\n\n1. А: Я думаю, що цей фільм чудовий. Б: ___\n   - [x] Я повністю згоден!\n   - [ ] Я не розумію.\n   - [ ] Де це?\n   - [ ] Коли?\n\n2. А: На мою думку, треба почекати. Б: ___\n   - [ ] Дякую!\n   - [x] Можливо, ви праві.\n   - [ ] До побачення!\n   - [ ] Привіт!\n\n3. А: Він каже, що це легко. Б: ___\n   - [x] Я так не думаю. Це важко.\n   - [ ] Скільки коштує?\n   - [ ] Де ви живете?\n   - [ ] Як вас звати?\n\n4. А: Це найкращий ресторан у місті. Б: ___\n   - [ ] Я голодний.\n   - [ ] Де він знаходиться?\n   - [x] Безумовно! Їжа тут смачна.\n   - [ ] Скільки годин?\n\n5. А: Мені здається, що він сумний. Б: ___\n   - [x] Я теж так вважаю.\n   - [ ] Скільки йому років?\n   - [ ] Де він живе?\n   - [ ] Як його звати?\n\n6. А: Ви помиляєтесь! Це не так. Б: ___\n   - [ ] Дякую за комплімент!\n   - [x] Можливо. Давайте перевіримо.\n   - [ ] Де це?\n   - [ ] Коли?\n\n7. А: Гадаю, що вони запізняться. Б: ___\n   - [x] Напевно. Вони завжди запізнюються.\n   - [ ] Скільки їх?\n   - [ ] Де вони живуть?\n   - [ ] Як їх звати?\n\n8. А: Це правда, що він звільнився? Б: ___\n   - [ ] Він високий.\n   - [x] Я сумніваюся. Він любить свою роботу.\n   - [ ] Де він працює?\n   - [ ] Скільки він заробляє?\n\n9. А: На мій погляд, проект невдалий. Б: ___\n   - [x] Не зовсім так. Є позитивні результати.\n   - [ ] Коли він почався?\n   - [ ] Де він знаходиться?\n   - [ ] Хто його робив?\n\n10. А: Я вважаю, що він правий. Б: ___\n    - [ ] Скільки йому років?\n    - [x] Точно! Він завжди знає, що робить.\n    - [ ] Де він?\n    - [ ] Коли він прийде?\n\n11. А: Треба купити новий комп'ютер. Б: ___\n    - [x] В цьому є сенс. Старий вже не працює добре.\n    - [ ] Скільки він коштує?\n    - [ ] Де його купити?\n    - [ ] Який колір?\n\n12. А: Мабуть, завтра буде дощ. Б: ___\n    - [x] Здається, що так. Небо хмарне.\n    - [ ] Яка температура?\n    - [ ] Де дощ?\n    - [ ] Коли він почнеться?\n\n## order: Opinion Strength\n\n> Arrange from weakest to strongest conviction.\n\n1. гадаю → думаю → вважаю → впевнений\n   > [!answer] Suppose → think → believe → sure\n\n2. можливо → мабуть → напевно → безумовно\n   > [!answer] Maybe → perhaps → probably → definitely\n\n3. здається → думаю → вважаю → знаю\n   > [!answer] Seems → think → believe → know\n\n4. сумніваюся → не впевнений → думаю → згоден\n   > [!answer] Doubt → not sure → think → agree\n\n5. не зовсім → частково → в основному → повністю\n   > [!answer] Not quite → partly → mainly → fully\n\n6. мені здається → я гадаю → я думаю → я знаю\n   > [!answer] It seems to me → I suppose → I think → I know\n\n## quiz: Advanced Opinion Structures\n\n1. Which is the strongest way to express belief?\n   - [ ] Я гадаю\n   - [ ] Мені здається\n   - [x] Я вважаю\n   - [ ] Можливо\n\n2. \"Точка зору\" means:\n   - [x] Point of view\n   - [ ] Exact point\n   - [ ] Vision\n   - [ ] Goal\n\n3. Which expresses doubt?\n   - [ ] Безумовно\n   - [x] Я сумніваюся\n   - [ ] Точно\n   - [ ] Абсолютно\n\n4. \"Частково згоден\" means:\n   - [x] Partly agree\n   - [ ] Completely agree\n   - [ ] Completely disagree\n   - [ ] Don't know\n\n5. Which is more formal?\n   - [ ] Я думаю\n   - [x] На мою думку\n   - [ ] Я гадаю\n   - [ ] Мабуть\n\n6. \"Погоджуватися\" means:\n   - [x] To agree\n   - [ ] To disagree\n   - [ ] To think\n   - [ ] To doubt\n\n7. Which shows polite disagreement?\n   - [x] Не зовсім так\n   - [ ] Зовсім ні!\n   - [ ] Це дурниця!\n   - [ ] Ви не праві!\n\n8. \"Рація\" in \"мати рацію\" means:\n   - [x] Being right\n   - [ ] Radio\n   - [ ] Ration\n   - [ ] Reason\n\n9. Which verb is reflexive?\n   - [ ] думати\n   - [x] сумніватися\n   - [ ] вважати\n   - [ ] гадати\n\n10. \"Категорично\" intensifies:\n    - [x] Agreement or disagreement\n    - [ ] Only agreement\n    - [ ] Only disagreement\n    - [ ] Questions\n\n11. \"На мій погляд\" is:\n    - [x] Similar to \"на мою думку\"\n    - [ ] Opposite of \"на мою думку\"\n    - [ ] A question phrase\n    - [ ] A command\n\n12. Which is most tentative?\n    - [x] Мені здається\n    - [ ] Я впевнений\n    - [ ] Я знаю\n    - [ ] Безумовно\n\n---\n\n# Підсумок\n\nExcellent work! You've learned:\n\n- **Opinion verbs**: думати, вважати, гадати + що\n- **Opinion phrases**: На мою думку, Мені здається\n- **Agreement**: Я згоден/згодна, Точно!, Безумовно!\n- **Disagreement**: Я не згоден, Це не так, Ви помиляєтесь\n- **Hedging**: Можливо, Мабуть, Напевно\n\n**Coming up next**: I'm Happy That... — expressing emotions!\n",
+    "createdAt": "2025-12-05T22:48:17.677Z",
+    "modifiedAt": "2025-12-05T22:48:17.677Z",
     "version": 2
   },
   "activities": [
     {
       "id": "act-a1-0-fillblank",
       "type": "fill-blank",
-      "title": "Health and Body",
-      "description": "Choose the correct word to complete each sentence.",
+      "title": "Express Your Opinion",
+      "description": "Express Your Opinion",
       "content": {
         "type": "fill-blank",
         "items": [
           {
-            "prompt": "У мене ___ (болить / болять) голова вже два дні.",
-            "answer": "болить",
-            "hints": [
-              "болить / болять"
-            ]
+            "prompt": "Я ___, що це добре. (think)",
+            "answer": "думаю"
           },
           {
-            "prompt": "У мене ___ (болить / болять) ноги після прогулянки.",
-            "answer": "болять",
-            "hints": [
-              "болить / болять"
-            ]
+            "prompt": "Я ___, що він правий. (believe)",
+            "answer": "вважаю"
           },
           {
-            "prompt": "Я ___ (застудився / застудила) і маю температуру.",
-            "answer": "застудився",
-            "hints": [
-              "застудився / застудила"
-            ]
+            "prompt": "На мою ___, це неправильно. (opinion)",
+            "answer": "думку"
           },
           {
-            "prompt": "Мені потрібно записатися до ___ (лікар / лікаря).",
-            "answer": "лікаря",
-            "hints": [
-              "лікар / лікаря"
-            ]
+            "prompt": "Мені ___, що він сумний. (seems)",
+            "answer": "здається"
           },
           {
-            "prompt": "Дайте, будь ласка, щось ___ (від / для) головного болю.",
-            "answer": "від",
-            "hints": [
-              "від / для"
-            ]
+            "prompt": "Я ___. Ви маєте рацію. (agree - m)",
+            "answer": "згоден"
+          },
+          {
+            "prompt": "Я так не ___. (think)",
+            "answer": "думаю"
+          },
+          {
+            "prompt": "Це ___! (exactly)",
+            "answer": "точно"
+          },
+          {
+            "prompt": "___, я помиляюся. (maybe)",
+            "answer": "Можливо"
+          },
+          {
+            "prompt": "Ви ___. Це неправда. (are mistaken)",
+            "answer": "помиляєтесь"
+          },
+          {
+            "prompt": "Я ___. Це можливо? (doubt)",
+            "answer": "сумніваюся"
+          },
+          {
+            "prompt": "Це не ___ так. (quite)",
+            "answer": "зовсім"
+          },
+          {
+            "prompt": "___, він прийде. (probably)",
+            "answer": "Напевно"
           }
         ]
       },
@@ -111,141 +152,64 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
-    },
-    {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Health Sentences",
-      "description": "Arrange the words in the correct order.",
-      "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
-          {
-            "words": [
-              "мене",
-              "У",
-              "болить",
-              "голова",
-              "дуже"
-            ],
-            "answer": "У мене дуже болить голова.",
-            "translation": "I have a really bad headache."
-          },
-          {
-            "words": [
-              "болять",
-              "мене",
-              "У",
-              "ноги",
-              "після",
-              "прогулянки"
-            ],
-            "answer": "У мене болять ноги після прогулянки.",
-            "translation": "My legs hurt after the walk."
-          },
-          {
-            "words": [
-              "застудився",
-              "Я",
-              "і",
-              "маю",
-              "температуру"
-            ],
-            "answer": "Я застудився і маю температуру.",
-            "translation": "I caught a cold and have a fever."
-          },
-          {
-            "words": [
-              "записатися",
-              "хочу",
-              "Я",
-              "до",
-              "лікаря"
-            ],
-            "answer": "Я хочу записатися до лікаря.",
-            "translation": "I want to make a doctor's appointment."
-          },
-          {
-            "words": [
-              "щось",
-              "Дайте",
-              "від",
-              "головного",
-              "болю"
-            ],
-            "answer": "Дайте щось від головного болю.",
-            "translation": "Give me something for a headache."
-          }
-        ]
-      },
-      "subject": "language",
-      "owner": "curricula-opus",
-      "visibility": "public",
-      "language": "uk",
-      "difficultyLevel": "A2",
-      "duration": 5,
-      "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
       "id": "act-a1-0-matchup",
       "type": "match-up",
-      "title": "Match the Pairs",
-      "description": "Match Ukrainian words to their English meanings.",
+      "title": "Opinion Expressions",
+      "description": "Opinion Expressions",
       "content": {
         "type": "match-up",
         "pairs": [
           {
-            "left": "таблетка",
-            "right": "tablet, pill"
+            "left": "Я думаю",
+            "right": "I think"
           },
           {
-            "left": "спина",
-            "right": "back"
+            "left": "Я вважаю",
+            "right": "I believe"
           },
           {
-            "left": "живіт",
-            "right": "stomach, belly"
+            "left": "Я гадаю",
+            "right": "I suppose"
           },
           {
-            "left": "нежить",
-            "right": "runny nose"
+            "left": "На мою думку",
+            "right": "In my opinion"
           },
           {
-            "left": "рецепт",
-            "right": "prescription"
+            "left": "Мені здається",
+            "right": "It seems to me"
           },
           {
-            "left": "боліти",
-            "right": "to hurt, ache"
+            "left": "Я згоден",
+            "right": "I agree (m)"
           },
           {
-            "left": "найцікавіший",
-            "right": "most interesting"
+            "left": "Я не згодна",
+            "right": "I disagree (f)"
           },
           {
-            "left": "посилка",
-            "right": "package"
+            "left": "Це правда",
+            "right": "That's true"
           },
           {
-            "left": "курка",
-            "right": "chicken"
+            "left": "Це не так",
+            "right": "That's not so"
           },
           {
-            "left": "голова",
-            "right": "head"
+            "left": "Можливо",
+            "right": "Maybe"
           },
           {
-            "left": "горло",
-            "right": "throat"
+            "left": "Напевно",
+            "right": "Probably"
           },
           {
-            "left": "застуда",
-            "right": "cold (illness)"
+            "left": "Безумовно",
+            "right": "Definitely"
           }
         ],
         "shuffleRight": true
@@ -257,137 +221,337 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
+    },
+    {
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Sentence Order",
+      "description": "Sentence Order",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "думаю",
+              "що",
+              "добре",
+              "Я",
+              "це",
+              "для",
+              "нашого",
+              "проекту"
+            ],
+            "answer": "Я думаю, що це добре для нашого проекту.",
+            "translation": "I think that this is good for our project."
+          },
+          {
+            "words": [
+              "думку",
+              "На",
+              "мою",
+              "це",
+              "неправильно",
+              "робити",
+              "так",
+              "зараз"
+            ],
+            "answer": "На мою думку, неправильно робити це так зараз.",
+            "translation": "In my opinion, it's wrong to do it this way now."
+          },
+          {
+            "words": [
+              "здається",
+              "що",
+              "він",
+              "сумний",
+              "Мені",
+              "через",
+              "цю",
+              "ситуацію"
+            ],
+            "answer": "Мені здається, що він сумний через цю ситуацію.",
+            "translation": "It seems to me that he's sad because of this situation."
+          },
+          {
+            "words": [
+              "згоден",
+              "Я",
+              "повністю",
+              "маєте",
+              "рацію",
+              "Ви",
+              "у",
+              "цьому"
+            ],
+            "answer": "Я повністю згоден. Ви маєте рацію у цьому.",
+            "translation": "I fully agree. You're right about this."
+          },
+          {
+            "words": [
+              "не",
+              "так",
+              "Я",
+              "думаю",
+              "про",
+              "цю",
+              "важливу",
+              "справу"
+            ],
+            "answer": "Я так не думаю про цю важливу справу.",
+            "translation": "I don't think so about this important matter."
+          },
+          {
+            "words": [
+              "вважаю",
+              "що",
+              "важливо",
+              "Я",
+              "це",
+              "дуже",
+              "для",
+              "нас"
+            ],
+            "answer": "Я вважаю, що це дуже важливо для нас.",
+            "translation": "I believe that this is very important for us."
+          },
+          {
+            "words": [
+              "зовсім",
+              "Не",
+              "так",
+              "як",
+              "ви",
+              "думаєте",
+              "про",
+              "це"
+            ],
+            "answer": "Не зовсім так, як ви думаєте про це.",
+            "translation": "Not quite as you think about it."
+          },
+          {
+            "words": [
+              "помиляюся",
+              "Можливо",
+              "я",
+              "але",
+              "це",
+              "здається",
+              "мені",
+              "дивним"
+            ],
+            "answer": "Можливо, я помиляюся, але це здається мені дивним.",
+            "translation": "Maybe I'm wrong, but this seems strange to me."
+          },
+          {
+            "words": [
+              "сумніваюся",
+              "Я",
+              "що",
+              "це",
+              "буде",
+              "працювати",
+              "добре",
+              "тут"
+            ],
+            "answer": "Я сумніваюся, що це буде добре працювати тут.",
+            "translation": "I doubt that this will work well here."
+          },
+          {
+            "words": [
+              "Безумовно",
+              "правда",
+              "Це",
+              "я",
+              "повністю",
+              "з",
+              "вами",
+              "погоджуюся"
+            ],
+            "answer": "Безумовно! Це правда. Я повністю з вами погоджуюся.",
+            "translation": "Definitely! That's true. I fully agree with you."
+          },
+          {
+            "words": [
+              "не",
+              "Я",
+              "згодна",
+              "з",
+              "вашою",
+              "точкою",
+              "зору",
+              "на"
+            ],
+            "answer": "Я не згодна з вашою точкою зору на це.",
+            "translation": "I disagree with your point of view on this."
+          },
+          {
+            "words": [
+              "гадаю",
+              "що",
+              "він",
+              "прийде",
+              "Я",
+              "на",
+              "зустріч",
+              "сьогодні"
+            ],
+            "answer": "Я гадаю, що він прийде на зустріч сьогодні.",
+            "translation": "I suppose he'll come to the meeting today."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
       "id": "act-a1-0-quiz",
       "type": "quiz",
-      "title": "Meaning Check",
-      "description": "Choose the correct answer.",
+      "title": "Opinion Knowledge",
+      "description": "Opinion Knowledge",
       "content": {
         "type": "quiz",
         "questions": [
           {
-            "question": "What does \"ліки\" mean?",
+            "question": "\"Я думаю, що...\" means:",
             "options": [
-              "near, by",
-              "medicine",
-              "their (m)",
-              "next"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"ліки\" means \"medicine\""
-          },
-          {
-            "question": "What does \"таблетка\" mean?",
-            "options": [
-              "partner",
-              "tablet, pill",
-              "five",
-              "along"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"таблетка\" means \"tablet, pill\""
-          },
-          {
-            "question": "What does \"голова\" mean?",
-            "options": [
-              "much (intensifier)",
-              "more slowly",
-              "head",
-              "married (m)"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"голова\" means \"head\""
-          },
-          {
-            "question": "What does \"застуда\" mean?",
-            "options": [
-              "cold (illness)",
-              "cash register",
-              "result",
-              "five"
+              "I think that...",
+              "I know that...",
+              "I see that...",
+              "I want that..."
             ],
             "correctIndex": 0,
-            "explanation": "\"застуда\" means \"cold (illness)\""
+            "explanation": ""
           },
           {
-            "question": "What does \"кашель\" mean?",
+            "question": "\"Я вважаю\" expresses:",
             "options": [
-              "cough",
-              "incredibly",
-              "door",
-              "to be mistaken"
+              "Stronger belief than думаю",
+              "Weaker belief",
+              "Question",
+              "Command"
             ],
             "correctIndex": 0,
-            "explanation": "\"кашель\" means \"cough\""
+            "explanation": ""
           },
           {
-            "question": "What does \"боліти\" mean?",
+            "question": "\"На мою думку\" means:",
             "options": [
-              "relative",
-              "to hurt, ache",
-              "hot (adv)",
-              "suddenly"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"боліти\" means \"to hurt, ache\""
-          },
-          {
-            "question": "What does \"живіт\" mean?",
-            "options": [
-              "masculine",
-              "stomach, belly",
-              "day after tomorrow",
-              "to try on"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"живіт\" means \"stomach, belly\""
-          },
-          {
-            "question": "What does \"спина\" mean?",
-            "options": [
-              "to go (on foot)",
-              "back",
-              "receipt",
-              "was (f)"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"спина\" means \"back\""
-          },
-          {
-            "question": "What does \"рецепт\" mean?",
-            "options": [
-              "prescription",
-              "son",
-              "lemon",
-              "charger"
+              "In my opinion",
+              "I think",
+              "You think",
+              "They think"
             ],
             "correctIndex": 0,
-            "explanation": "\"рецепт\" means \"prescription\""
+            "explanation": ""
           },
           {
-            "question": "What does \"горло\" mean?",
+            "question": "\"Мені здається\" expresses:",
             "options": [
-              "more slowly",
-              "tomato",
-              "throat",
-              "fresh"
+              "Uncertainty, seems to me",
+              "Certainty",
+              "Agreement",
+              "Disagreement"
             ],
-            "correctIndex": 2,
-            "explanation": "\"горло\" means \"throat\""
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "question": "What does \"нежить\" mean?",
+            "question": "\"Я згоден\" is:",
             "options": [
-              "sender",
-              "salt",
-              "runny nose",
-              "it's necessary"
+              "Masculine agreement",
+              "Feminine agreement",
+              "Disagreement",
+              "Question"
             ],
-            "correctIndex": 2,
-            "explanation": "\"нежить\" means \"runny nose\""
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Можливо\" means:",
+            "options": [
+              "Maybe, possibly",
+              "Definitely",
+              "Never",
+              "Always"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Ви помиляєтесь\" means:",
+            "options": [
+              "You're mistaken",
+              "You're right",
+              "You're clever",
+              "You're stupid"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Безумовно\" expresses:",
+            "options": [
+              "Definite agreement",
+              "Doubt",
+              "Question",
+              "Disagreement"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Мабуть\" means:",
+            "options": [
+              "Probably, perhaps",
+              "Definitely not",
+              "Never",
+              "Always"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Мати рацію\" means:",
+            "options": [
+              "To be right",
+              "To be wrong",
+              "To have a reason",
+              "To have money"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Я сумніваюся\" expresses:",
+            "options": [
+              "Doubt",
+              "Agreement",
+              "Happiness",
+              "Anger"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Частково згоден\" means:",
+            "options": [
+              "Partly agree",
+              "Fully agree",
+              "Disagree",
+              "Don't know"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
           }
         ],
         "shuffleQuestions": true,
@@ -401,66 +565,76 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
       "id": "act-a1-0-truefalse",
       "type": "true-false",
-      "title": "True or False?",
-      "description": "Determine if each statement is true or false.",
+      "title": "Opinion Facts",
+      "description": "Opinion Facts",
       "content": {
         "type": "true-false",
         "statements": [
           {
-            "statement": "\"боліти\" means \"that (masculine)\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"боліти\" means \"to hurt, ache\""
-          },
-          {
-            "statement": "\"ліки\" means \"page\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"ліки\" means \"medicine\""
-          },
-          {
-            "statement": "\"кашель\" means \"Wednesday\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"кашель\" means \"cough\""
-          },
-          {
-            "statement": "\"нежить\" means \"seven\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"нежить\" means \"runny nose\""
-          },
-          {
-            "statement": "\"застуда\" means \"cold (illness)\"",
+            "statement": "\"Думати\" means \"to think.\"",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"рецепт\" means \"prescription\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"живіт\" means \"stomach, belly\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"горло\" means \"nothing\"",
+            "statement": "\"Вважати\" is weaker than \"думати.\"",
             "isTrue": false,
-            "explanation": "Incorrect. \"горло\" means \"throat\""
+            "explanation": ""
           },
           {
-            "statement": "\"спина\" means \"back\"",
+            "statement": "\"На мою думку\" is used at the start.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"голова\" means \"head\"",
+            "statement": "\"Згоден\" is for women.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Можливо\" expresses certainty.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Безумовно\" means \"definitely.\"",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
+          },
+          {
+            "statement": "\"Мені здається\" is very certain.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Ви помиляєтесь\" is polite disagreement.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Мабуть\" = \"probably.\"",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Точно!\" expresses disagreement.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Гадати\" is stronger than \"вважати.\"",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Не зовсім так\" means \"not quite.\"",
+            "isTrue": true,
+            "explanation": ""
           }
         ]
       },
@@ -471,36 +645,45 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
       "id": "act-a1-0-groupsort",
       "type": "group-sort",
-      "title": "Sort by Gender",
-      "description": "Sort the nouns into gender categories.",
+      "title": "Opinion Types",
+      "description": "Sort these items into the correct categories.",
       "content": {
         "type": "group-sort",
         "groups": [
           {
-            "id": "masculine",
-            "name": "Masculine",
+            "id": "agreement",
+            "name": "Agreement",
             "items": [
-              "ліки",
-              "нежить",
-              "рецепт",
-              "кашель",
-              "живіт"
+              "Я згоден",
+              "Точно!",
+              "Безумовно",
+              "Ви маєте рацію"
             ]
           },
           {
-            "id": "feminine",
-            "name": "Feminine",
+            "id": "disagreement",
+            "name": "Disagreement",
             "items": [
-              "таблетка",
-              "голова",
-              "спина",
-              "застуда"
+              "Я не згодна",
+              "Я сумніваюся",
+              "Це не так",
+              "Ви помиляєтесь"
+            ]
+          },
+          {
+            "id": "uncertainty",
+            "name": "Uncertainty",
+            "items": [
+              "Можливо",
+              "Мабуть",
+              "Здається",
+              "Напевно"
             ]
           }
         ],
@@ -513,224 +696,334 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
+    },
+    {
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Opinion Dialogues",
+      "description": "Opinion Dialogues",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "На мій ___, це найкращий варіант для нас. (view)",
+            "answer": "погляд"
+          },
+          {
+            "prompt": "З моєї точки ___, проблема дуже серйозна. (view)",
+            "answer": "зору"
+          },
+          {
+            "prompt": "Ви абсолютно ___! Я повністю погоджуюся. (right)",
+            "answer": "праві"
+          },
+          {
+            "prompt": "В цьому є ___. Давайте спробуємо це. (sense)",
+            "answer": "сенс"
+          },
+          {
+            "prompt": "Я ___ не впевнений, але думаю, що так. (quite)",
+            "answer": "зовсім"
+          },
+          {
+            "prompt": "___, ви праві, але є інша думка. (perhaps)",
+            "answer": "Мабуть"
+          },
+          {
+            "prompt": "Це ___, я перевіряв інформацію. (truth)",
+            "answer": "правда"
+          },
+          {
+            "prompt": "Я категорично не ___! Це погана ідея. (agree)",
+            "answer": "згоден"
+          },
+          {
+            "prompt": "___ я не помиляюся, це трапилося вчора. (if)",
+            "answer": "Якщо"
+          },
+          {
+            "prompt": "Не знаю ___, але мені здається, що ні. (for sure)",
+            "answer": "напевно"
+          },
+          {
+            "prompt": "Це ___! Я ніколи з цим не погоджуся. (mistake)",
+            "answer": "помилка"
+          },
+          {
+            "prompt": "___ ні! Я зовсім так не думаю. (not at all)",
+            "answer": "Зовсім"
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
       "id": "act-a1-0-select",
       "type": "select",
-      "title": "Choose the Correct Health Term",
-      "description": "Select the correct answer for each situation.",
+      "title": "Choose the Best Response",
+      "description": "Choose the Best Response",
       "content": {
         "type": "select",
         "items": [
           {
-            "question": "У мене дуже сильно болить ___ після роботи за комп'ютером.",
+            "question": "А: Я думаю, що цей фільм чудовий. Б: ___",
             "options": [
               {
-                "text": "голова",
+                "text": "Я повністю згоден!",
                 "correct": true
               },
               {
-                "text": "горло",
+                "text": "Я не розумію.",
                 "correct": false
               },
               {
-                "text": "живіт",
+                "text": "Де це?",
                 "correct": false
               },
               {
-                "text": "спина",
+                "text": "Коли?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Мені потрібні ___ від головного болю в аптеці.",
+            "question": "А: На мою думку, треба почекати. Б: ___",
             "options": [
               {
-                "text": "таблетка",
+                "text": "Дякую!",
                 "correct": false
               },
               {
-                "text": "ліки",
+                "text": "Можливо, ви праві.",
                 "correct": true
               },
               {
-                "text": "рецепт",
+                "text": "До побачення!",
                 "correct": false
               },
               {
-                "text": "застуда",
+                "text": "Привіт!",
                 "correct": false
               }
             ]
           },
           {
-            "question": "У мене ___, і я постійно кашляю.",
+            "question": "А: Він каже, що це легко. Б: ___",
             "options": [
               {
-                "text": "нежить",
-                "correct": false
-              },
-              {
-                "text": "кашель",
+                "text": "Я так не думаю. Це важко.",
                 "correct": true
               },
               {
-                "text": "живіт",
+                "text": "Скільки коштує?",
                 "correct": false
               },
               {
-                "text": "спина",
+                "text": "Де ви живете?",
+                "correct": false
+              },
+              {
+                "text": "Як вас звати?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Лікар написав ___ на антибіотики в лікарні.",
+            "question": "А: Це найкращий ресторан у місті. Б: ___",
             "options": [
               {
-                "text": "ліки",
+                "text": "Я голодний.",
                 "correct": false
               },
               {
-                "text": "таблетка",
+                "text": "Де він знаходиться?",
                 "correct": false
               },
               {
-                "text": "рецепт",
+                "text": "Безумовно! Їжа тут смачна.",
                 "correct": true
               },
               {
-                "text": "застуда",
+                "text": "Скільки годин?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "У мене болить ___, тому що я з'їв щось погане.",
+            "question": "А: Мені здається, що він сумний. Б: ___",
             "options": [
               {
-                "text": "голова",
-                "correct": false
-              },
-              {
-                "text": "горло",
-                "correct": false
-              },
-              {
-                "text": "живіт",
+                "text": "Я теж так вважаю.",
                 "correct": true
               },
               {
-                "text": "спина",
+                "text": "Скільки йому років?",
+                "correct": false
+              },
+              {
+                "text": "Де він живе?",
+                "correct": false
+              },
+              {
+                "text": "Як його звати?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "У мене ___, і мій ніс не дихає нормально.",
+            "question": "А: Ви помиляєтесь! Це не так. Б: ___",
             "options": [
               {
-                "text": "нежить",
+                "text": "Дякую за комплімент!",
+                "correct": false
+              },
+              {
+                "text": "Можливо. Давайте перевіримо.",
                 "correct": true
               },
               {
-                "text": "кашель",
+                "text": "Де це?",
                 "correct": false
               },
               {
-                "text": "застуда",
-                "correct": false
-              },
-              {
-                "text": "рецепт",
+                "text": "Коли?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "У мене ___ після занять спортом у спортзалі.",
+            "question": "А: Гадаю, що вони запізняться. Б: ___",
             "options": [
               {
-                "text": "голова",
-                "correct": false
-              },
-              {
-                "text": "горло",
-                "correct": false
-              },
-              {
-                "text": "живіт",
-                "correct": false
-              },
-              {
-                "text": "спина",
-                "correct": true
-              }
-            ]
-          },
-          {
-            "question": "Мені потрібна одна ___ від температури зараз.",
-            "options": [
-              {
-                "text": "таблетка",
+                "text": "Напевно. Вони завжди запізнюються.",
                 "correct": true
               },
               {
-                "text": "ліки",
+                "text": "Скільки їх?",
                 "correct": false
               },
               {
-                "text": "рецепт",
+                "text": "Де вони живуть?",
                 "correct": false
               },
               {
-                "text": "застуда",
+                "text": "Як їх звати?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "У мене боліє ___, і важко ковтати їжу.",
+            "question": "А: Це правда, що він звільнився? Б: ___",
             "options": [
               {
-                "text": "голова",
+                "text": "Він високий.",
                 "correct": false
               },
               {
-                "text": "горло",
+                "text": "Я сумніваюся. Він любить свою роботу.",
                 "correct": true
               },
               {
-                "text": "живіт",
+                "text": "Де він працює?",
                 "correct": false
               },
               {
-                "text": "спина",
+                "text": "Скільки він заробляє?",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Я застудився і тепер маю ___ з температурою.",
+            "question": "А: На мій погляд, проект невдалий. Б: ___",
             "options": [
               {
-                "text": "таблетка",
-                "correct": false
-              },
-              {
-                "text": "ліки",
-                "correct": false
-              },
-              {
-                "text": "рецепт",
-                "correct": false
-              },
-              {
-                "text": "застуду",
+                "text": "Не зовсім так. Є позитивні результати.",
                 "correct": true
+              },
+              {
+                "text": "Коли він почався?",
+                "correct": false
+              },
+              {
+                "text": "Де він знаходиться?",
+                "correct": false
+              },
+              {
+                "text": "Хто його робив?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "А: Я вважаю, що він правий. Б: ___",
+            "options": [
+              {
+                "text": "Скільки йому років?",
+                "correct": false
+              },
+              {
+                "text": "Точно! Він завжди знає, що робить.",
+                "correct": true
+              },
+              {
+                "text": "Де він?",
+                "correct": false
+              },
+              {
+                "text": "Коли він прийде?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "А: Треба купити новий комп'ютер. Б: ___",
+            "options": [
+              {
+                "text": "В цьому є сенс. Старий вже не працює добре.",
+                "correct": true
+              },
+              {
+                "text": "Скільки він коштує?",
+                "correct": false
+              },
+              {
+                "text": "Де його купити?",
+                "correct": false
+              },
+              {
+                "text": "Який колір?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "А: Мабуть, завтра буде дощ. Б: ___",
+            "options": [
+              {
+                "text": "Здається, що так. Небо хмарне.",
+                "correct": true
+              },
+              {
+                "text": "Яка температура?",
+                "correct": false
+              },
+              {
+                "text": "Де дощ?",
+                "correct": false
+              },
+              {
+                "text": "Коли він почнеться?",
+                "correct": false
               }
             ]
           }
@@ -743,161 +1036,153 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     },
     {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Put Words in Order",
-      "description": "Arrange the words to form correct sentences about health.",
+      "id": "act-a1-0-quiz",
+      "type": "quiz",
+      "title": "Advanced Opinion Structures",
+      "description": "Advanced Opinion Structures",
       "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
+        "type": "quiz",
+        "questions": [
           {
-            "words": [
-              "У",
-              "мене",
-              "болить",
-              "голова",
-              "дуже",
-              "сильно",
-              "сьогодні"
+            "question": "Which is the strongest way to express belief?",
+            "options": [
+              "Я гадаю",
+              "Мені здається",
+              "Я вважаю",
+              "Можливо"
             ],
-            "answer": "У мене голова болить дуже сильно сьогодні.",
-            "translation": "My head hurts very badly today."
+            "correctIndex": 2,
+            "explanation": ""
           },
           {
-            "words": [
-              "Мені",
-              "потрібні",
-              "ліки",
-              "від",
-              "головного",
-              "болю",
-              "з",
-              "аптеки"
+            "question": "\"Точка зору\" means:",
+            "options": [
+              "Point of view",
+              "Exact point",
+              "Vision",
+              "Goal"
             ],
-            "answer": "Мені потрібні ліки від головного болю з аптеки.",
-            "translation": "I need medicine for a headache from the pharmacy."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "Лікар",
-              "написав",
-              "рецепт",
-              "на",
-              "антибіотики",
-              "після",
-              "огляду",
-              "пацієнта"
+            "question": "Which expresses doubt?",
+            "options": [
+              "Безумовно",
+              "Я сумніваюся",
+              "Точно",
+              "Абсолютно"
             ],
-            "answer": "Лікар написав рецепт на антибіотики після огляду пацієнта.",
-            "translation": "The doctor wrote a prescription for antibiotics after examining the patient."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "У",
-              "мене",
-              "болить",
-              "живіт",
-              "після",
-              "того",
-              "як",
-              "я",
-              "поїв"
+            "question": "\"Частково згоден\" means:",
+            "options": [
+              "Partly agree",
+              "Completely agree",
+              "Completely disagree",
+              "Don't know"
             ],
-            "answer": "У мене болить живіт після того, як я поїв.",
-            "translation": "My stomach hurts after I ate."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "Я",
-              "маю",
-              "застуду",
-              "з",
-              "високою",
-              "температурою",
-              "та",
-              "кашлем"
+            "question": "Which is more formal?",
+            "options": [
+              "Я думаю",
+              "На мою думку",
+              "Я гадаю",
+              "Мабуть"
             ],
-            "answer": "Я маю застуду з високою температурою та кашлем.",
-            "translation": "I have a cold with high temperature and cough."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "Візьміть",
-              "цю",
-              "таблетку",
-              "тричі",
-              "на",
-              "день",
-              "після",
-              "їжі"
+            "question": "\"Погоджуватися\" means:",
+            "options": [
+              "To agree",
+              "To disagree",
+              "To think",
+              "To doubt"
             ],
-            "answer": "Візьміть цю таблетку тричі на день після їжі.",
-            "translation": "Take this pill three times a day after meals."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "У",
-              "мене",
-              "болить",
-              "спина",
-              "після",
-              "важкої",
-              "фізичної",
-              "роботи",
-              "вчора"
+            "question": "Which shows polite disagreement?",
+            "options": [
+              "Не зовсім так",
+              "Зовсім ні!",
+              "Це дурниця!",
+              "Ви не праві!"
             ],
-            "answer": "У мене болить спина після важкої фізичної роботи вчора.",
-            "translation": "My back hurts after hard physical work yesterday."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "Мені",
-              "важко",
-              "ковтати",
-              "бо",
-              "у",
-              "мене",
-              "боліє",
-              "горло"
+            "question": "\"Рація\" in \"мати рацію\" means:",
+            "options": [
+              "Being right",
+              "Radio",
+              "Ration",
+              "Reason"
             ],
-            "answer": "Мені важко ковтати, бо у мене боліє горло.",
-            "translation": "It's hard for me to swallow because my throat hurts."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "Я",
-              "маю",
-              "сильний",
-              "кашель",
-              "і",
-              "нежить",
-              "через",
-              "застуду"
+            "question": "Which verb is reflexive?",
+            "options": [
+              "думати",
+              "сумніватися",
+              "вважати",
+              "гадати"
             ],
-            "answer": "Я маю сильний кашель і нежить через застуду.",
-            "translation": "I have a strong cough and runny nose because of a cold."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "У",
-              "мене",
-              "болять",
-              "ноги",
-              "після",
-              "довгої",
-              "прогулянки",
-              "в",
-              "парку"
+            "question": "\"Категорично\" intensifies:",
+            "options": [
+              "Agreement or disagreement",
+              "Only agreement",
+              "Only disagreement",
+              "Questions"
             ],
-            "answer": "У мене болять ноги після довгої прогулянки в парку.",
-            "translation": "My legs hurt after a long walk in the park."
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"На мій погляд\" is:",
+            "options": [
+              "Similar to \"на мою думку\"",
+              "Opposite of \"на мою думку\"",
+              "A question phrase",
+              "A command"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Which is most tentative?",
+            "options": [
+              "Мені здається",
+              "Я впевнений",
+              "Я знаю",
+              "Безумовно"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
           }
-        ]
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
       },
       "subject": "language",
       "owner": "curricula-opus",
@@ -906,126 +1191,208 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.976Z",
-      "modifiedAt": "2025-12-05T01:15:57.976Z"
+      "createdAt": "2025-12-05T22:48:17.677Z",
+      "modifiedAt": "2025-12-05T22:48:17.677Z"
     }
   ],
   "vocabulary": {
     "moduleId": "mod-uk-A2-24",
     "level": "A2",
     "phase": "A2.3",
-    "wordCount": 11,
-    "newWordCount": 11,
+    "wordCount": 20,
+    "newWordCount": 20,
     "reviewWordCount": 0,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "words": [
       {
-        "id": "v-holova-0-0",
-        "uk": "голова",
-        "en": "head",
-        "pos": "noun",
-        "ipa": "/ɦoloˈvɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-horlo-0-1",
-        "uk": "горло",
-        "en": "throat",
-        "pos": "noun",
-        "ipa": "/ˈɦorlo/",
-        "gender": "n",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-zhyvit-0-2",
-        "uk": "живіт",
-        "en": "stomach, belly",
-        "pos": "noun",
-        "ipa": "/ʒɪˈvʲit/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-spyna-0-3",
-        "uk": "спина",
-        "en": "back",
-        "pos": "noun",
-        "ipa": "/spɪˈnɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-bolity-0-4",
-        "uk": "боліти",
-        "en": "to hurt, ache",
+        "id": "v-dumaty-0-0",
+        "uk": "думати",
+        "en": "to think",
         "pos": "verb",
-        "ipa": "/boˈlʲitɪ/",
+        "ipa": "/duˈmatɪ/",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-kashelь-0-5",
-        "uk": "кашель",
-        "en": "cough",
-        "pos": "noun",
-        "ipa": "/ˈkɑʃɛlʲ/",
+        "id": "v-vvazhaty-0-1",
+        "uk": "вважати",
+        "en": "to believe, consider",
+        "pos": "verb",
+        "ipa": "/wwaˈʒatɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-hadaty-0-2",
+        "uk": "гадати",
+        "en": "to suppose, guess",
+        "pos": "verb",
+        "ipa": "/ɦaˈdatɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zdavatysya-0-3",
+        "uk": "здаватися",
+        "en": "to seem",
+        "pos": "verb",
+        "ipa": "/zdaˈwatɪsʲa/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pohodzhuvatysya-0-4",
+        "uk": "погоджуватися",
+        "en": "to agree",
+        "pos": "verb",
+        "ipa": "/poɦoˈdʒuwatɪsʲa/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zhoden-0-5",
+        "uk": "згоден",
+        "en": "agree (m)",
+        "pos": "adj",
+        "ipa": "/ˈzɦodɛn/",
         "gender": "m",
+        "note": "short form",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-nezhytь-0-6",
-        "uk": "нежить",
-        "en": "runny nose",
-        "pos": "noun",
-        "ipa": "/ˈnɛʒɪtʲ/",
-        "gender": "m",
+        "id": "v-zhodna-0-6",
+        "uk": "згодна",
+        "en": "agree (f)",
+        "pos": "adj",
+        "ipa": "/ˈzɦodna/",
+        "gender": "f",
+        "note": "short form",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-zastuda-0-7",
-        "uk": "застуда",
-        "en": "cold (illness)",
+        "id": "v-dumka-0-7",
+        "uk": "думка",
+        "en": "opinion, thought",
         "pos": "noun",
-        "ipa": "/zɑˈstudɑ/",
+        "ipa": "/ˈdumka/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-liky-0-8",
-        "uk": "ліки",
-        "en": "medicine",
+        "id": "v-pohlyad-0-8",
+        "uk": "погляд",
+        "en": "view, perspective",
         "pos": "noun",
-        "ipa": "/ˈlʲikɪ/",
+        "ipa": "/ˈpoɦlʲad/",
         "gender": "m",
-        "note": "pl-only",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-tabletka-0-9",
-        "uk": "таблетка",
-        "en": "tablet, pill",
-        "pos": "noun",
-        "ipa": "/tɑbˈlɛtkɑ/",
+        "id": "v-tochka-zoru-0-9",
+        "uk": "точка зору",
+        "en": "point of view",
+        "pos": "phrase",
+        "ipa": "/ˈtotʃka ˈzoru/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-retsept-0-10",
-        "uk": "рецепт",
-        "en": "prescription",
+        "id": "v-pravda-0-10",
+        "uk": "правда",
+        "en": "truth",
         "pos": "noun",
-        "ipa": "/rɛˈtsɛpt/",
-        "gender": "m",
+        "ipa": "/ˈprawda/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-nepravda-0-11",
+        "uk": "неправда",
+        "en": "untruth, false",
+        "pos": "noun",
+        "ipa": "/nɛˈprawda/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pomylka-0-12",
+        "uk": "помилка",
+        "en": "mistake",
+        "pos": "noun",
+        "ipa": "/poˈmɪlka/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pomylyatysya-0-13",
+        "uk": "помилятися",
+        "en": "to be mistaken",
+        "pos": "verb",
+        "ipa": "/pomɪˈlʲatɪsʲa/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-sumnivatysya-0-14",
+        "uk": "сумніватися",
+        "en": "to doubt",
+        "pos": "verb",
+        "ipa": "/sumnɪˈwatɪsʲa/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-mozhlyvo-0-15",
+        "uk": "можливо",
+        "en": "maybe, possibly",
+        "pos": "adv",
+        "ipa": "/ˈmoʒlɪwo/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-napevno-0-16",
+        "uk": "напевно",
+        "en": "probably",
+        "pos": "adv",
+        "ipa": "/naˈpɛwno/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-bezumovno-0-17",
+        "uk": "безумовно",
+        "en": "definitely",
+        "pos": "adv",
+        "ipa": "/bɛzuˈmowno/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-ratsiya-0-18",
+        "uk": "рація",
+        "en": "right (being right)",
+        "pos": "noun",
+        "ipa": "/ˈrat͡sija/",
+        "gender": "f",
+        "note": "мати рацію",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-mabutь-0-19",
+        "uk": "мабуть",
+        "en": "probably, perhaps",
+        "pos": "adv",
+        "ipa": "/maˈbutʲ/",
         "isNew": true,
         "firstModule": 0
       }

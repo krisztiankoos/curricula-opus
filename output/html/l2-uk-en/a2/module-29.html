@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 29: Passive &amp; Impersonal | Ukrainian A2</title>
+  <title>Module 29: At the Doctor&#039;s | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 29: Passive &amp; Impersonal</h1>
+    <h1>Module 29: At the Doctor&#039;s</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,271 +498,199 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A2 · A2.3</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Passive &amp; Impersonal</h2>
-        <p style="color:var(--text-muted)">It Is Said, One Does</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">At the Doctor&#039;s</h2>
+        <p style="color:var(--text-muted)">Medical Vocabulary and Interactions</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="beyondactivevoice">Beyond Active Voice</h3>
-<p>Sometimes we don't know or don't want to say who did something:</p>
-<ul>
-<li>"The door <strong>was opened</strong>."</li>
-<li>"<strong>It is said</strong> that…"</li>
-<li>"<strong>One must</strong> be careful."</li>
-</ul>
-<p>Ukrainian has special constructions for these situations!</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian uses passive constructions less frequently than English. Instead, it often prefers active voice with impersonal subjects or reflexive verbs. But knowing passive is essential for understanding news, official documents, and formal texts!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="impersonalconstructions">Impersonal Constructions</h3>
-<p><strong>Impersonal sentences</strong> don't have a specific subject - they describe general situations:</p>
-<p><strong>Common patterns:</strong></p>
+      <div class="md-content"><p>Health matters! Whether you're traveling, living abroad, or helping a Ukrainian speaker, knowing medical vocabulary is essential. "What hurts?", "Take this medicine", "You need rest" — this module teaches you to navigate medical situations in Ukrainian.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Body Parts (Частини тіла)</h3>
+      <div class="md-content"><h2 id="headandface">Head and Face</h2>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
-<th>Meaning</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Треба…</td>
-<td>It's necessary to… / One must…</td>
+<td>голова</td>
+<td>/ɦoloˈwa/</td>
+<td>head</td>
 </tr>
 <tr>
-<td>Можна…</td>
-<td>It's possible to… / One may…</td>
+<td>обличчя</td>
+<td>/obˈlɪtʃːa/</td>
+<td>face</td>
 </tr>
 <tr>
-<td>Не можна…</td>
-<td>It's forbidden to… / One mustn't…</td>
+<td>очі</td>
+<td>/ˈotʃi/</td>
+<td>eyes</td>
 </tr>
 <tr>
-<td>Потрібно…</td>
-<td>It's needed to…</td>
+<td>ніс</td>
+<td>/nis/</td>
+<td>nose</td>
 </tr>
 <tr>
-<td>Варто…</td>
-<td>It's worth…</td>
+<td>рот</td>
+<td>/rot/</td>
+<td>mouth</td>
 </tr>
 <tr>
-<td>Слід…</td>
-<td>One should…</td>
+<td>вуха</td>
+<td>/ˈwuxa/</td>
+<td>ears</td>
 </tr>
 <tr>
-<td>Заборонено…</td>
-<td>It's forbidden…</td>
+<td>горло</td>
+<td>/ˈɦorlo/</td>
+<td>throat</td>
 </tr>
 <tr>
-<td>Дозволено…</td>
-<td>It's allowed…</td>
+<td>зуби</td>
+<td>/ˈzubɪ/</td>
+<td>teeth</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Треба</strong> працювати. - One must work. / It's necessary to work.</li>
-<li><strong>Можна</strong> запитати? - May I ask? / Is it possible to ask?</li>
-<li>Тут <strong>не можна</strong> курити. - Smoking is not allowed here.</li>
-<li><strong>Варто</strong> спробувати. - It's worth trying.</li>
-<li><strong>Заборонено</strong> входити. - Entry is forbidden.</li>
-</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Adding Subject</strong></p>
-  <p>To specify WHO, use dative case:</p>
-  <ul>
-  <li><strong>Мені</strong> треба працювати. - I need to work.</li>
-  <li><strong>Тобі</strong> можна йти. - You may go.</li>
-  <li><strong>Нам</strong> варто подумати. - We should think about it.</li>
-  </ul>
+  <p>"Голова" (head) is also used in expressions like "болить голова" (head hurts) and "голова фірми" (head of a company)!</p>
 </blockquote>
-<h3 id="reflexiveaspassive">Reflexive as Passive</h3>
-<p>Ukrainian often uses <strong>reflexive verbs (-ся)</strong> where English uses passive:</p>
-<p><strong>Active → Reflexive (passive meaning):</strong></p>
-<ul>
-<li>Будують будинок. → Будинок <strong>будується</strong>. - A house is being built.</li>
-<li>Продають квитки. → Квитки <strong>продаються</strong>. - Tickets are sold.</li>
-<li>Говорять, що… → <strong>Говориться</strong>, що… - It is said that…</li>
-</ul>
-<p><strong>Common reflexive passives:</strong></p>
+<hr />
+<h2 id="body">Body</h2>
 <table>
 <thead>
 <tr>
-<th>Reflexive</th>
-<th>Meaning</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>продається</td>
-<td>is sold</td>
+<td>шия</td>
+<td>/ˈʃɪja/</td>
+<td>neck</td>
 </tr>
 <tr>
-<td>здається</td>
-<td>is rented out</td>
+<td>плечі</td>
+<td>/ˈplɛtʃi/</td>
+<td>shoulders</td>
 </tr>
 <tr>
-<td>вважається</td>
-<td>is considered</td>
+<td>груди</td>
+<td>/ˈɦrudɪ/</td>
+<td>chest</td>
 </tr>
 <tr>
-<td>називається</td>
-<td>is called</td>
+<td>спина</td>
+<td>/spɪˈna/</td>
+<td>back</td>
 </tr>
 <tr>
-<td>готується</td>
-<td>is being prepared</td>
+<td>живіт</td>
+<td>/ʒɪˈwit/</td>
+<td>stomach, belly</td>
 </tr>
 <tr>
-<td>пишеться</td>
-<td>is written</td>
+<td>серце</td>
+<td>/ˈsɛrt͡sɛ/</td>
+<td>heart</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Ця книга <strong>продається</strong> в магазині. - This book is sold in the store.</li>
-<li>Квартира <strong>здається</strong>. - Apartment for rent.</li>
-<li>Це <strong>вважається</strong> поганим. - This is considered bad.</li>
-<li>Як це <strong>пишеться</strong>? - How is this written?</li>
-<li>Як це <strong>називається</strong>? - What is this called?</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Signs and Notices</strong></p>
-  <p>You'll see reflexive passives everywhere in Ukraine:</p>
-  <ul>
-  <li>"Продається" - For sale</li>
-  <li>"Здається" - For rent</li>
-  <li>"Відчинено/Зачинено" - Open/Closed</li>
-  <li>"Вхід заборонено" - Entry forbidden</li>
-  </ul>
-</blockquote>
-<h3 id="participlespassiveresult">-но/-то Participles (Passive Result)</h3>
-<p>These forms show the <strong>result</strong> of a completed action (who did it is unknown/unimportant):</p>
-<p><strong>Formation:</strong> verb stem + -но (most) or -то (some verbs)</p>
+<hr />
+<h2 id="limbs">Limbs</h2>
 <table>
 <thead>
 <tr>
-<th>Infinitive</th>
-<th>-но/-то form</th>
-<th>Meaning</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>зробити</td>
-<td>зроблено</td>
-<td>done/made</td>
+<td>рука</td>
+<td>/ruˈka/</td>
+<td>arm, hand</td>
 </tr>
 <tr>
-<td>написати</td>
-<td>написано</td>
-<td>written</td>
+<td>руки</td>
+<td>/ˈrukɪ/</td>
+<td>arms, hands</td>
 </tr>
 <tr>
-<td>сказати</td>
-<td>сказано</td>
-<td>said</td>
+<td>нога</td>
+<td>/noˈɦa/</td>
+<td>leg, foot</td>
 </tr>
 <tr>
-<td>відкрити</td>
-<td>відкрито</td>
-<td>opened</td>
+<td>ноги</td>
+<td>/ˈnoɦɪ/</td>
+<td>legs, feet</td>
 </tr>
 <tr>
-<td>закрити</td>
-<td>закрито</td>
-<td>closed</td>
+<td>пальці</td>
+<td>/ˈpalʲt͡si/</td>
+<td>fingers, toes</td>
 </tr>
 <tr>
-<td>зайняти</td>
-<td>зайнято</td>
-<td>occupied</td>
-</tr>
-<tr>
-<td>продати</td>
-<td>продано</td>
-<td>sold</td>
-</tr>
-<tr>
-<td>прийняти</td>
-<td>прийнято</td>
-<td>accepted</td>
+<td>коліно</td>
+<td>/koˈlino/</td>
+<td>knee</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Usage:</strong></p>
-<ul>
-<li>Роботу <strong>зроблено</strong>. - The work is done.</li>
-<li>Лист <strong>написано</strong>. - The letter is written.</li>
-<li><strong>Сказано</strong> — <strong>зроблено</strong>. - Said — done. (proverb)</li>
-<li>Це місце <strong>зайнято</strong>. - This seat is taken.</li>
-<li>Рішення <strong>прийнято</strong>. - The decision has been made.</li>
-<li>Магазин <strong>закрито</strong>. - The store is closed.</li>
-</ul>
+<div class="callout callout-example" data-callout="example">🌍 Real World</div>
 <blockquote>
-  <p>📜 <strong>History Bite: Impersonal Forms</strong></p>
-  <p>The -но/-то forms are distinctly Ukrainian (and Belarusian). Russian uses different constructions. These forms are ancient and very common in everyday speech and official language.</p>
+  <p>In Ukrainian, "рука" means both arm AND hand, "нога" means both leg AND foot. Context clarifies!</p>
 </blockquote>
-<h3 id="passivewithparticiple">Passive with "бути" + Participle</h3>
-<p>For more formal passive, use <strong>бути</strong> + passive participle (-ний/-тий):</p>
-<p><strong>Formation:</strong> бути + participle (agrees with subject)</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Symptoms (Симптоми)</h3>
+      <div class="md-content"><h2 id="ithurtsexpressions">"It Hurts" Expressions</h2>
 <table>
 <thead>
 <tr>
-<th>Verb</th>
-<th>Participle (m/f/n/pl)</th>
+<th>Structure</th>
+<th>Example</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>зробити</td>
-<td>зроблений/зроблена/зроблене/зроблені</td>
+<td>У мене <strong>болить</strong> + singular</td>
+<td>У мене <strong>болить</strong> голова.</td>
+<td>I have a headache.</td>
 </tr>
 <tr>
-<td>написати</td>
-<td>написаний/написана/написане/написані</td>
-</tr>
-<tr>
-<td>відкрити</td>
-<td>відкритий/відкрита/відкрите/відкриті</td>
-</tr>
-<tr>
-<td>побудувати</td>
-<td>побудований/побудована/побудоване/побудовані</td>
+<td>У мене <strong>болять</strong> + plural</td>
+<td>У мене <strong>болять</strong> зуби.</td>
+<td>My teeth hurt.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p><strong>More examples:</strong></p>
 <ul>
-<li>Лист <strong>був написаний</strong> вчора. - The letter was written yesterday.</li>
-<li>Книга <strong>буде опублікована</strong> завтра. - The book will be published tomorrow.</li>
-<li>Ці будинки <strong>були побудовані</strong> в 19 столітті. - These buildings were built in the 19th century.</li>
-<li>Музей <strong>зараз зачинений</strong>. - The museum is currently closed.</li>
+<li>У мене <strong>болить</strong> горло. (My throat hurts.)</li>
+<li>У мене <strong>болить</strong> спина. (My back hurts.)</li>
+<li>У мене <strong>болять</strong> очі. (My eyes hurt.)</li>
 </ul>
-<h3 id="commonpassiveexpressions">Common Passive Expressions</h3>
-<p><strong>In daily life:</strong></p>
-<ul>
-<li>Вхід <strong>заборонено</strong>. - Entry forbidden.</li>
-<li>Вихід <strong>тут</strong>. - Exit here.</li>
-<li><strong>Зачинено</strong> на ремонт. - Closed for repairs.</li>
-<li><strong>Продано</strong>! - Sold!</li>
-<li><strong>Зайнято</strong>. - Occupied/Busy.</li>
-<li><strong>Вільно</strong>. - Free/Available.</li>
-</ul>
-<p><strong>In news/formal:</strong></p>
-<ul>
-<li><strong>Повідомляється</strong>, що… - It is reported that…</li>
-<li><strong>Очікується</strong>, що… - It is expected that…</li>
-<li><strong>Було прийнято</strong> рішення. - A decision was made.</li>
-<li><strong>Буде оголошено</strong> завтра. - It will be announced tomorrow.</li>
-</ul>
-<h3 id="theysayitissaid">They Say / It Is Said</h3>
-<p><strong>General statements without specific subject:</strong></p>
+<hr />
+<h2 id="commonsymptoms">Common Symptoms</h2>
 <table>
 <thead>
 <tr>
@@ -745,124 +700,250 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>Кажуть, що…</td>
-<td>They say that…</td>
+<td>У мене <strong>температура</strong>.</td>
+<td>I have a fever.</td>
 </tr>
 <tr>
-<td>Говорять, що…</td>
-<td>They say that…</td>
+<td>У мене <strong>нежить</strong>.</td>
+<td>I have a runny nose.</td>
 </tr>
 <tr>
-<td>Вважають, що…</td>
-<td>It's believed that…</td>
+<td>У мене <strong>кашель</strong>.</td>
+<td>I have a cough.</td>
 </tr>
 <tr>
-<td>Відомо, що…</td>
-<td>It's known that…</td>
+<td>Мені <strong>нудить</strong>.</td>
+<td>I feel nauseous.</td>
 </tr>
 <tr>
-<td>Вважається, що…</td>
-<td>It's considered that…</td>
+<td>У мене <strong>запаморочення</strong>.</td>
+<td>I'm dizzy.</td>
+</tr>
+<tr>
+<td>Я <strong>втомлений/втомлена</strong>.</td>
+<td>I'm tired.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>У мене <strong>болить</strong> живіт і <strong>нудить</strong>.</li>
+<li>У мене сильний <strong>кашель</strong> і <strong>температура</strong>.</li>
+<li>Мені <strong>погано</strong>. (I feel bad/sick.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>Classic excuse: <em>У мене болить голова!</em> — I have a headache! (works everywhere!)</p>
+</blockquote>
+<hr />
+<h2 id="describingpain">Describing Pain</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>сильний біль</td>
+<td>strong pain</td>
+</tr>
+<tr>
+<td>гострий біль</td>
+<td>sharp pain</td>
+</tr>
+<tr>
+<td>тупий біль</td>
+<td>dull pain</td>
+</tr>
+<tr>
+<td>постійний біль</td>
+<td>constant pain</td>
+</tr>
+<tr>
+<td>періодичний біль</td>
+<td>intermittent pain</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><strong>Кажуть</strong>, що завтра буде дощ. - They say it will rain tomorrow.</li>
-<li><strong>Говорять</strong>, він дуже розумний. - They say he's very smart.</li>
-<li><strong>Відомо</strong>, що це небезпечно. - It's known that this is dangerous.</li>
-<li><strong>Вважається</strong>, що це найкращий варіант. - It's considered the best option.</li>
+<li>У мене <strong>сильний</strong> біль у животі.</li>
+<li>Це <strong>гострий</strong> біль.</li>
+<li>Біль <strong>постійний</strong> чи <strong>періодичний</strong>?</li>
 </ul>
-<h2 id="practice">practice</h2>
-<h3 id="transformtopassiveimpersonal">Transform to Passive/Impersonal</h3>
-<ol>
-<li><p>Хтось відкрив двері. (someone opened the door)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">Двері відкрито. / Двері були відкриті.</div></div>
-<ol start="2">
-<li><p>Хтось написав книгу. (someone wrote the book)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Книгу написано. / Книга написана.</div></div>
-<ol start="3">
-<li><p>Тут курять. (they smoke here)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">Тут можна курити. (allowed) / Тут не можна курити. (forbidden)</div></div>
-<ol start="4">
-<li><p>Люди кажуть, що він багатий.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">Кажуть, що він багатий.</div></div>
-<ol start="5">
-<li><p>Хтось зайняв це місце.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">Це місце зайнято.</div></div>
-<h3 id="choosethecorrectform">Choose the Correct Form</h3>
-<ol>
-<li><p>The work is done. - Роботу ___.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">зроблено</div></div>
-<ol start="2">
-<li><p>The store is closed. - Магазин ___.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">закрито / зачинено</div></div>
-<ol start="3">
-<li><p>It is said that… - ___, що…</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Кажуть / Говорять</div></div>
-<ol start="4">
-<li><p>Entry is forbidden. - Вхід ___.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">заборонено</div></div>
-<ol start="5">
-<li><p>This seat is taken. - Це місце ___.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">зайнято</div></div>
-<h3 id="translate">Translate</h3>
-<ol>
-<li><p>One must study.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">Треба вчитися.</div></div>
-<ol start="2">
-<li><p>It's not allowed to smoke here.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">Тут не можна курити. / Тут заборонено курити.</div></div>
-<ol start="3">
-<li><p>The decision has been made.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Рішення прийнято.</div></div>
-<ol start="4">
-<li><p>They say it will rain.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">Кажуть, що буде дощ.</div></div>
-<ol start="5">
-<li><p>This is considered important.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Це вважається важливим.</div></div>
-<h2 id="production">production</h2>
-<h3 id="describesituations">Describe Situations</h3>
-<p>Use passive/impersonal constructions:</p>
-<p><strong>At a restaurant:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>At the Doctor&#039;s Office</h3>
+      <div class="md-content"><h2 id="commonphrases">Common Phrases</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Що вас турбує?</td>
+<td>What's bothering you?</td>
+</tr>
+<tr>
+<td>Де болить?</td>
+<td>Where does it hurt?</td>
+</tr>
+<tr>
+<td>Як довго це триває?</td>
+<td>How long has this been going on?</td>
+</tr>
+<tr>
+<td>Покажіть, де болить.</td>
+<td>Show me where it hurts.</td>
+</tr>
+<tr>
+<td>Відкрийте рот.</td>
+<td>Open your mouth.</td>
+</tr>
+<tr>
+<td>Дихайте глибоко.</td>
+<td>Breathe deeply.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Patient responses:</strong></p>
 <ul>
-<li>Столик зайнято/вільно.</li>
-<li>Тут не можна курити.</li>
-<li>Замовлення прийнято.</li>
+<li>У мене болить тут. (It hurts here.)</li>
+<li>Це почалося вчора. (It started yesterday.)</li>
+<li>Біль сильний. (The pain is strong.)</li>
 </ul>
-<p><strong>At an office:</strong></p>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>When seeing a doctor, be specific: <em>Болить тут, з правого боку</em> — It hurts here, on the right side.</p>
+</blockquote>
+<hr />
+<h2 id="doctorsinstructions">Doctor's Instructions</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Візьміть ці ліки.</td>
+<td>Take this medicine.</td>
+</tr>
+<tr>
+<td>Приймайте двічі на день.</td>
+<td>Take (it) twice a day.</td>
+</tr>
+<tr>
+<td>Відпочивайте.</td>
+<td>Rest.</td>
+</tr>
+<tr>
+<td>Пийте багато води.</td>
+<td>Drink lots of water.</td>
+</tr>
+<tr>
+<td>Вам потрібен рецепт.</td>
+<td>You need a prescription.</td>
+</tr>
+<tr>
+<td>Прийдіть через тиждень.</td>
+<td>Come back in a week.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More instructions:</strong></p>
 <ul>
-<li>Документи підготовлено.</li>
-<li>Рішення буде прийнято завтра.</li>
-<li>Зачинено на обід.</li>
+<li><strong>Не їжте</strong> перед аналізами. (Don't eat before the tests.)</li>
+<li><strong>Залишайтеся</strong> в ліжку. (Stay in bed.)</li>
+<li><strong>Уникайте</strong> фізичних навантажень. (Avoid physical activity.)</li>
 </ul>
-<h3 id="newsreport">News Report</h3>
-<p>Create sentences about news:</p>
-<ul>
-<li>Повідомляється, що…</li>
-<li>Було оголошено…</li>
-<li>Очікується, що…</li>
-<li>Вважається, що…</li>
-</ul>
-<hr />
-<hr />
-<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Medical Vocabulary</h3>
+      <div class="md-content"><h2 id="placesandpeople">Places and People</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>лікарня</td>
+<td>hospital</td>
+</tr>
+<tr>
+<td>поліклініка</td>
+<td>clinic</td>
+</tr>
+<tr>
+<td>аптека</td>
+<td>pharmacy</td>
+</tr>
+<tr>
+<td>лікар</td>
+<td>doctor</td>
+</tr>
+<tr>
+<td>медсестра</td>
+<td>nurse</td>
+</tr>
+<tr>
+<td>пацієнт</td>
+<td>patient</td>
+</tr>
+</tbody>
+</table>
+<h2 id="illnessesandconditions">Illnesses and Conditions</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>застуда</td>
+<td>cold (illness)</td>
+</tr>
+<tr>
+<td>грип</td>
+<td>flu</td>
+</tr>
+<tr>
+<td>алергія</td>
+<td>allergy</td>
+</tr>
+<tr>
+<td>інфекція</td>
+<td>infection</td>
+</tr>
+<tr>
+<td>перелом</td>
+<td>fracture</td>
+</tr>
+<tr>
+<td>травма</td>
+<td>injury</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Health status: <em>Персонаж має травму — швидкість зменшена</em> — Character has an injury — speed reduced!</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -871,120 +952,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="impersonalmodals">Impersonal Modals</h2>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Треба</td>
-<td>must, need to</td>
-</tr>
-<tr>
-<td>Можна</td>
-<td>may, can</td>
-</tr>
-<tr>
-<td>Не можна</td>
-<td>mustn't, can't</td>
-</tr>
-<tr>
-<td>Варто</td>
-<td>worth</td>
-</tr>
-<tr>
-<td>Слід</td>
-<td>should</td>
-</tr>
-</tbody>
-</table>
-<h2 id="forms">-но/-то Forms</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Verb stem + -но</td>
-<td>зроблено, написано</td>
-</tr>
-<tr>
-<td>Verb stem + -то</td>
-<td>закрито, відкрито</td>
-</tr>
-</tbody>
-</table>
-<h2 id="reflexivepassives">Reflexive Passives</h2>
-<table>
-<thead>
-<tr>
-<th>Active</th>
-<th>Passive</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>продають</td>
-<td>продається</td>
-</tr>
-<tr>
-<td>вважають</td>
-<td>вважається</td>
-</tr>
-<tr>
-<td>називають</td>
-<td>називається</td>
-</tr>
-</tbody>
-</table>
-<h2 id="commonsigns">Common Signs</h2>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Зачинено</td>
-<td>Closed</td>
-</tr>
-<tr>
-<td>Відчинено</td>
-<td>Open</td>
-</tr>
-<tr>
-<td>Заборонено</td>
-<td>Forbidden</td>
-</tr>
-<tr>
-<td>Продається</td>
-<td>For sale</td>
-</tr>
-<tr>
-<td>Здається</td>
-<td>For rent</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Треба/можна + infinitive for impersonal necessity</li>
-  <li>-но/-то forms show completed passive action</li>
-  <li>Reflexive (-ся) often replaces passive voice</li>
-  <li>Кажуть, що… = They say that…</li>
-  <li>Look for signs: зачинено, заборонено, продається</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>Excellent work! You've learned:</p>
+<ul>
+<li><strong>Body parts</strong>: голова, горло, живіт, спина, серце, рука, нога</li>
+<li><strong>Symptoms</strong>: У мене болить…, температура, кашель, нежить</li>
+<li><strong>Doctor phrases</strong>: Що вас турбує? Де болить? Дихайте глибоко.</li>
+<li><strong>Instructions</strong>: Візьміть ліки. Пийте воду. Відпочивайте.</li>
+<li><strong>Medical places</strong>: лікарня, поліклініка, аптека</li>
+</ul>
+<p><strong>Coming up next</strong>: Checkpoint — reviewing all complex sentence structures from Phase A2.3!</p></div>
     </div>
   
       <div class="btn-group">
@@ -993,69 +969,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Passive and Impersonal</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Medical Expressions</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Impersonal Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Body Parts</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Medical Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Medical Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Medical Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Choose Passive Forms</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Medical Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Put Words in Order</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Doctor-Patient Dialogue</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Passive Type</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/30</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Medical Term</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Medical Situations</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (10)</h3>
+        <h3>Словник (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1063,9 +1046,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">заборонено</td><td class="vocab-ipa">/zɑboroˈnɛno/</td><td class="vocab-en">forbidden</td><td class="vocab-note">-но form</td></tr><tr><td class="vocab-uk">дозволено</td><td class="vocab-ipa">/dozˈvolɛno/</td><td class="vocab-en">allowed</td><td class="vocab-note">-но form</td></tr><tr><td class="vocab-uk">зроблено</td><td class="vocab-ipa">/ˈzroblɛno/</td><td class="vocab-en">done, made</td><td class="vocab-note">-но form</td></tr><tr><td class="vocab-uk">закрито</td><td class="vocab-ipa">/zɑˈkrɪto/</td><td class="vocab-en">closed</td><td class="vocab-note">-то form</td></tr><tr><td class="vocab-uk">відкрито</td><td class="vocab-ipa">/vʲidˈkrɪto/</td><td class="vocab-en">open(ed)</td><td class="vocab-note">-то form</td></tr><tr><td class="vocab-uk">зайнято</td><td class="vocab-ipa">/ˈzɑjnʲɑto/</td><td class="vocab-en">occupied, taken</td><td class="vocab-note">-то form</td></tr><tr><td class="vocab-uk">називатися</td><td class="vocab-ipa">/nɑzɪˈvɑtɪsʲɑ/</td><td class="vocab-en">to be called</td><td class="vocab-note">refl</td></tr><tr><td class="vocab-uk">продаватися</td><td class="vocab-ipa">/prodɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to be sold</td><td class="vocab-note">refl</td></tr><tr><td class="vocab-uk">варто</td><td class="vocab-ipa">/ˈvɑrto/</td><td class="vocab-en">it&#039;s worth</td><td class="vocab-note">+ infinitive</td></tr><tr><td class="vocab-uk">слід</td><td class="vocab-ipa">/slʲid/</td><td class="vocab-en">one should</td><td class="vocab-note">+ infinitive</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">голова</td><td class="vocab-ipa">/ɦoloˈwa/</td><td class="vocab-en">head</td></tr><tr><td class="vocab-uk">горло</td><td class="vocab-ipa">/ˈɦorlo/</td><td class="vocab-en">throat</td></tr><tr><td class="vocab-uk">живіт</td><td class="vocab-ipa">/ʒɪˈwit/</td><td class="vocab-en">stomach</td></tr><tr><td class="vocab-uk">спина</td><td class="vocab-ipa">/spɪˈna/</td><td class="vocab-en">back</td></tr><tr><td class="vocab-uk">серце</td><td class="vocab-ipa">/ˈsɛrt͡sɛ/</td><td class="vocab-en">heart</td></tr><tr><td class="vocab-uk">рука</td><td class="vocab-ipa">/ruˈka/</td><td class="vocab-en">arm, hand</td></tr><tr><td class="vocab-uk">нога</td><td class="vocab-ipa">/noˈɦa/</td><td class="vocab-en">leg, foot</td></tr><tr><td class="vocab-uk">болить</td><td class="vocab-ipa">/boˈlɪtʲ/</td><td class="vocab-en">hurts (sg)</td></tr><tr><td class="vocab-uk">болять</td><td class="vocab-ipa">/ˈbolʲatʲ/</td><td class="vocab-en">hurt (pl)</td></tr><tr><td class="vocab-uk">температура</td><td class="vocab-ipa">/tɛmpɛraˈtura/</td><td class="vocab-en">fever, temperature</td></tr><tr><td class="vocab-uk">кашель</td><td class="vocab-ipa">/ˈkaʃɛlʲ/</td><td class="vocab-en">cough</td></tr><tr><td class="vocab-uk">нежить</td><td class="vocab-ipa">/ˈnɛʒɪtʲ/</td><td class="vocab-en">runny nose</td></tr><tr><td class="vocab-uk">біль</td><td class="vocab-ipa">/bilʲ/</td><td class="vocab-en">pain</td></tr><tr><td class="vocab-uk">ліки</td><td class="vocab-ipa">/ˈlikɪ/</td><td class="vocab-en">medicine</td></tr><tr><td class="vocab-uk">рецепт</td><td class="vocab-ipa">/rɛˈt͡sɛpt/</td><td class="vocab-en">prescription, recipe</td></tr><tr><td class="vocab-uk">лікар</td><td class="vocab-ipa">/ˈlikar/</td><td class="vocab-en">doctor</td></tr><tr><td class="vocab-uk">лікарня</td><td class="vocab-ipa">/liˈkarnʲa/</td><td class="vocab-en">hospital</td></tr><tr><td class="vocab-uk">аптека</td><td class="vocab-ipa">/apˈtɛka/</td><td class="vocab-en">pharmacy</td></tr><tr><td class="vocab-uk">застуда</td><td class="vocab-ipa">/zasˈtuda/</td><td class="vocab-en">cold (illness)</td></tr><tr><td class="vocab-uk">грип</td><td class="vocab-ipa">/ɦrɪp/</td><td class="vocab-en">flu</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1077,8 +1060,8 @@ footer {
   </main><footer>Module 29 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Passive and Impersonal","data":{"type":"fill-blank","items":[{"prompt":"Тут ___ (можна / не можна) курити. Вхід заборонено.","answer":"не можна","hints":["можна / не можна"]},{"prompt":"Роботу вже ___ (зроблено / зробили).","answer":"зроблено","hints":["зроблено / зробили"]},{"prompt":"Це місце ___ (зайнято / зайняти).","answer":"зайнято","hints":["зайнято / зайняти"]},{"prompt":"Магазин ___ (закрито / закритий) на ремонт.","answer":"закрито","hints":["закрито / закритий"]},{"prompt":"___ (Кажуть / Кажу), що завтра буде дощ.","answer":"Кажуть","hints":["Кажуть / Кажу"]}]}},{"id":"activity-1","type":"unjumble","title":"Impersonal Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["курити","Тут","не","можна"],"answer":"Тут не можна курити.","translation":"It's not allowed to smoke here."},{"words":["вже","Рішення","прийнято"],"answer":"Рішення вже прийнято.","translation":"The decision has already been made."},{"words":["Кажуть","буде","що","завтра","дощ"],"answer":"Кажуть, що завтра буде дощ.","translation":"They say it will rain tomorrow."},{"words":["зайнято","місце","Це","вже"],"answer":"Це місце вже зайнято.","translation":"This seat is already taken."},{"words":["ремонт","Магазин","закрито","на"],"answer":"Магазин закрито на ремонт.","translation":"The store is closed for repairs."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"називатися","right":"to be called"},{"left":"дозволено","right":"allowed"},{"left":"варто","right":"it's worth"},{"left":"продаватися","right":"to be sold"},{"left":"брати","right":"to take"},{"left":"слід","right":"one should"},{"left":"вихід","right":"exit"},{"left":"зроблено","right":"done, made"},{"left":"допомогти","right":"to help (perf)"},{"left":"відкрито","right":"open(ed)"},{"left":"закрито","right":"closed"},{"left":"зайнято","right":"occupied, taken"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"слід\" mean?","options":["accountant","end","one should","fish"],"correctIndex":2,"explanation":"\"слід\" means \"one should\""},{"question":"What does \"заборонено\" mean?","options":["forbidden","attachment","who","dish, course"],"correctIndex":0,"explanation":"\"заборонено\" means \"forbidden\""},{"question":"What does \"закрито\" mean?","options":["closed","my (plural)","floor (of building)","taxi"],"correctIndex":0,"explanation":"\"закрито\" means \"closed\""},{"question":"What does \"дозволено\" mean?","options":["bigger","allowed","January","compartment"],"correctIndex":1,"explanation":"\"дозволено\" means \"allowed\""},{"question":"What does \"продаватися\" mean?","options":["to be sold","addressee","to the left","may, can"],"correctIndex":0,"explanation":"\"продаватися\" means \"to be sold\""},{"question":"What does \"відкрито\" mean?","options":["hockey","corner","hot (adv)","open(ed)"],"correctIndex":3,"explanation":"\"відкрито\" means \"open(ed)\""},{"question":"What does \"називатися\" mean?","options":["bag","to remain","phone","to be called"],"correctIndex":3,"explanation":"\"називатися\" means \"to be called\""},{"question":"What does \"зайнято\" mean?","options":["on, at","to try","occupied, taken","to me"],"correctIndex":2,"explanation":"\"зайнято\" means \"occupied, taken\""},{"question":"What does \"варто\" mean?","options":["help","rate","it's worth","pharmacy"],"correctIndex":2,"explanation":"\"варто\" means \"it's worth\""},{"question":"What does \"зроблено\" mean?","options":["done, made","link","lunch","to seem"],"correctIndex":0,"explanation":"\"зроблено\" means \"done, made\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"продаватися\" means \"to be sold\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"відкрито\" means \"open(ed)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"заборонено\" means \"forbidden\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"варто\" means \"it's worth\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"називатися\" means \"porridge\"","isTrue":false,"explanation":"Incorrect. \"називатися\" means \"to be called\""},{"statement":"\"слід\" means \"one should\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"закрито\" means \"to mention (impf)\"","isTrue":false,"explanation":"Incorrect. \"закрито\" means \"closed\""},{"statement":"\"зайнято\" means \"occupied, taken\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"зроблено\" means \"month\"","isTrue":false,"explanation":"Incorrect. \"зроблено\" means \"done, made\""},{"statement":"\"дозволено\" means \"hard, difficult\"","isTrue":false,"explanation":"Incorrect. \"дозволено\" means \"allowed\""}]}},{"id":"activity-5","type":"select","title":"Choose Passive Forms","data":{"type":"select","items":[{"question":"Тут ___ палити в громадських місцях.","options":[{"text":"дозволено","correct":false},{"text":"заборонено","correct":true},{"text":"закрито","correct":false},{"text":"відкрито","correct":false}]},{"question":"Магазин уже ___ на ніч о десятій годині.","options":[{"text":"відкрито","correct":false},{"text":"закрито","correct":true},{"text":"зайнято","correct":false},{"text":"заборонено","correct":false}]},{"question":"Всі місця вже ___ у кінотеатрі сьогодні ввечері.","options":[{"text":"закрито","correct":false},{"text":"відкрито","correct":false},{"text":"зайнято","correct":true},{"text":"дозволено","correct":false}]},{"question":"Робота вже ___ і можна йти додому зараз.","options":[{"text":"зроблено","correct":true},{"text":"закрито","correct":false},{"text":"заборонено","correct":false},{"text":"зайнято","correct":false}]},{"question":"Музей ___ з дев'ятої години ранку щодня.","options":[{"text":"відкрито","correct":true},{"text":"закрито","correct":false},{"text":"зайнято","correct":false},{"text":"заборонено","correct":false}]},{"question":"___ принести документи на зустріч завтра вранці.","options":[{"text":"Можна","correct":false},{"text":"Треба","correct":true},{"text":"Не можна","correct":false},{"text":"Слід","correct":false}]},{"question":"Тут ___ фотографувати в музеї за правилами.","options":[{"text":"можна","correct":true},{"text":"треба","correct":false},{"text":"заборонено","correct":false},{"text":"закрито","correct":false}]},{"question":"Це місто ___ Львовом у честь короля Данила.","options":[{"text":"продається","correct":false},{"text":"називається","correct":true},{"text":"здається","correct":false},{"text":"закривається","correct":false}]},{"question":"Ця книга ___ у всіх книгарнях міста зараз.","options":[{"text":"продається","correct":true},{"text":"називається","correct":false},{"text":"здається","correct":false},{"text":"закривається","correct":false}]},{"question":"___ подивитися цей фільм у кінотеатрі сьогодні.","options":[{"text":"Варто","correct":true},{"text":"Треба","correct":false},{"text":"Можна","correct":false},{"text":"Заборонено","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"Put Words in Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Тут","заборонено","палити","в","громадських","місцях","за","законом"],"answer":"Тут заборонено палити в громадських місцях за законом.","translation":"Smoking is forbidden here in public places by law."},{"words":["Магазин","уже","закрито","на","ніч","о","десятій","годині"],"answer":"Магазин уже закрито на ніч о десятій годині.","translation":"The store is already closed for the night at ten o'clock."},{"words":["Всі","місця","вже","зайнято","у","театрі","на","вечірню","виставу"],"answer":"Всі місця вже зайнято у театрі на вечірню виставу.","translation":"All seats are already occupied in the theater for the evening performance."},{"words":["Робота","вже","зроблено","і","можна","йти","додому","зараз"],"answer":"Робота вже зроблено, і можна йти додому зараз.","translation":"The work is already done and one can go home now."},{"words":["Музей","відкрито","з","дев'ятої","години","ранку","до","шостої","вечора"],"answer":"Музей відкрито з дев'ятої години ранку до шостої вечора.","translation":"The museum is open from nine in the morning until six in the evening."},{"words":["Треба","принести","всі","документи","на","зустріч","завтра","вранці"],"answer":"Треба принести всі документи на зустріч завтра вранці.","translation":"It's necessary to bring all documents to the meeting tomorrow morning."},{"words":["Можна","фотографувати","у","цьому","музеї","за","правилами","безкоштовно"],"answer":"Можна фотографувати у цьому музеї за правилами безкоштовно.","translation":"One can photograph in this museum according to the rules for free."},{"words":["Це","місто","називається","Львовом","у","честь","короля","Данила","Галицького"],"answer":"Це місто називається Львовом у честь короля Данила Галицького.","translation":"This city is called Lviv in honor of King Danylo of Halych."},{"words":["Ця","книга","продається","у","всіх","книгарнях","міста","зараз"],"answer":"Ця книга продається у всіх книгарнях міста зараз.","translation":"This book is sold in all bookstores in the city now."},{"words":["Варто","подивитися","цей","новий","фільм","у","кінотеатрі","цього","тижня"],"answer":"Варто подивитися цей новий фільм у кінотеатрі цього тижня.","translation":"It's worth watching this new movie in the cinema this week."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Passive Type","data":{"type":"group-sort","groups":[{"id":"---forms","name":"-но/-то Forms","items":["заборонено","дозволено","зроблено","закрито","відкрито","зайнято","написано","побудовано","створено","знайдено"]},{"id":"reflexive-passive","name":"Reflexive Passive","items":["називається","продається","здається","вважається","говориться","пишеться","будується","робиться","використовується","знаходиться"]},{"id":"impersonal-modals","name":"Impersonal Modals","items":["треба","можна","не можна","варто","слід","потрібно","не варто","необхідно","не слід","дозволяється"]}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"заборонено","translit":"","en":"forbidden","note":"-но form"},{"uk":"дозволено","translit":"","en":"allowed","note":"-но form"},{"uk":"зроблено","translit":"","en":"done, made","note":"-но form"},{"uk":"закрито","translit":"","en":"closed","note":"-то form"},{"uk":"відкрито","translit":"","en":"open(ed)","note":"-то form"},{"uk":"зайнято","translit":"","en":"occupied, taken","note":"-то form"},{"uk":"називатися","translit":"","en":"to be called","note":"refl"},{"uk":"продаватися","translit":"","en":"to be sold","note":"refl"},{"uk":"варто","translit":"","en":"it's worth","note":"+ infinitive"},{"uk":"слід","translit":"","en":"one should","note":"+ infinitive"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Medical Expressions","data":{"type":"fill-blank","items":[{"prompt":"У мене ___ голова. (hurts - singular)","answer":"болить"},{"prompt":"У мене ___ зуби. (hurt - plural)","answer":"болять"},{"prompt":"У мене ___. (fever)","answer":"температура"},{"prompt":"У мене сильний ___. (cough)","answer":"кашель"},{"prompt":"Візьміть ці ___. (medicine)","answer":"ліки"},{"prompt":"___ багато води. (drink - imperative)","answer":"Пийте"},{"prompt":"Що вас ___? (bothering)","answer":"турбує"},{"prompt":"У мене болить ___. (stomach)","answer":"живіт"},{"prompt":"Вам потрібен ___. (prescription)","answer":"рецепт"},{"prompt":"Де знаходиться ___? (pharmacy)","answer":"аптека"},{"prompt":"___ глибоко. (breathe - imperative)","answer":"Дихайте"},{"prompt":"Прийдіть через ___. (week)","answer":"тиждень"}]}},{"id":"activity-1","type":"match-up","title":"Body Parts","data":{"type":"match-up","pairs":[{"left":"голова","right":"head"},{"left":"горло","right":"throat"},{"left":"живіт","right":"stomach"},{"left":"спина","right":"back"},{"left":"серце","right":"heart"},{"left":"рука","right":"arm/hand"},{"left":"нога","right":"leg/foot"},{"left":"очі","right":"eyes"},{"left":"вуха","right":"ears"},{"left":"ніс","right":"nose"},{"left":"рот","right":"mouth"},{"left":"зуби","right":"teeth"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мене","болить","У","голова","дуже","вже","два","дні"],"answer":"У мене дуже болить голова вже два дні.","translation":"I've had a very bad headache for two days."},{"words":["турбує","вас","Що","сьогодні","скажіть","мені","будь ласка"],"answer":"Скажіть мені, будь ласка, що вас сьогодні турбує?","translation":"Please tell me, what's bothering you today?"},{"words":["болить","Де","саме","покажіть","мені","рукою","своєю","точно"],"answer":"Де саме болить? Покажіть мені точно своєю рукою.","translation":"Where exactly does it hurt? Show me precisely with your hand."},{"words":["ліки","ці","Візьміть","після","їжі","двічі","на","день"],"answer":"Візьміть ці ліки двічі на день після їжі.","translation":"Take this medicine twice a day after meals."},{"words":["мене","У","температура","висока","вже","третій","день","тримається"],"answer":"У мене висока температура тримається вже третій день.","translation":"I've had a high fever for three days now."},{"words":["води","багато","Пийте","та","відпочивайте","в","ліжку","обов'язково"],"answer":"Пийте багато води та обов'язково відпочивайте в ліжку.","translation":"Drink lots of water and definitely rest in bed."},{"words":["глибоко","Дихайте","та","затримайте","повітря","на","кілька","секунд"],"answer":"Дихайте глибоко та затримайте повітря на кілька секунд.","translation":"Breathe deeply and hold your breath for a few seconds."},{"words":["тиждень","через","Прийдіть","на","повторний","до","мене","огляд"],"answer":"Прийдіть до мене на повторний огляд через тиждень.","translation":"Come to me for a follow-up examination in a week."},{"words":["болять","У","мене","зуби","коли","п'ю","щось","холодне"],"answer":"У мене болять зуби, коли п'ю щось холодне.","translation":"My teeth hurt when I drink something cold."},{"words":["рецепт","Вам","потрібен","для","цих","ліків","йдіть","в","аптеку"],"answer":"Вам потрібен рецепт для цих ліків, йдіть в аптеку.","translation":"You need a prescription for this medicine, go to the pharmacy."},{"words":["рот","Відкрийте","широко","та","скажіть","покажіть","горло","мені"],"answer":"Відкрийте рот широко та покажіть мені горло.","translation":"Open your mouth wide and show me your throat."},{"words":["болить","тут","У","мене","з","правого","боку","сильно"],"answer":"У мене сильно болить тут, з правого боку.","translation":"It hurts me badly here, on the right side."}]}},{"id":"activity-3","type":"quiz","title":"Medical Knowledge","data":{"type":"quiz","questions":[{"question":"\"У мене болить голова\" means:","options":["I have a headache","My head is fine","I'm thinking","My head is big"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" is used with:","options":["Singular body parts","Plural body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Болять\" is used with:","options":["Plural body parts","Singular body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Ліки\" means:","options":["Medicine","Doctor","Hospital","Pain"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" is:","options":["Pharmacy","Hospital","Clinic","Doctor's office"],"correctIndex":0,"explanation":""},{"question":"\"Температура\" means:","options":["Fever/temperature","Cold","Pain","Cough"],"correctIndex":0,"explanation":""},{"question":"\"Лікар\" means:","options":["Doctor","Nurse","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["Cold (illness)","Flu","Allergy","Injury"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" means:","options":["Prescription","Receipt","Medicine","Hospital"],"correctIndex":0,"explanation":""},{"question":"\"Рука\" means:","options":["Arm and hand","Only arm","Only hand","Leg"],"correctIndex":0,"explanation":""},{"question":"\"Відпочивайте\" means:","options":["Rest (imperative)","Work","Eat","Drink"],"correctIndex":0,"explanation":""},{"question":"\"Біль\" means:","options":["Pain","Body","Doctor","Medicine"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Medical Facts","data":{"type":"true-false","statements":[{"statement":"\"Болить\" is for singular, \"болять\" for plural.","isTrue":true,"explanation":""},{"statement":"\"Рука\" means only \"hand.\"","isTrue":false,"explanation":""},{"statement":"\"Аптека\" is where you buy medicine.","isTrue":true,"explanation":""},{"statement":"\"Лікарня\" is a pharmacy.","isTrue":false,"explanation":""},{"statement":"\"Температура\" can mean fever.","isTrue":true,"explanation":""},{"statement":"\"Візьміть ліки\" is a command.","isTrue":true,"explanation":""},{"statement":"\"Грип\" is a cold.","isTrue":false,"explanation":""},{"statement":"\"Нога\" means arm.","isTrue":false,"explanation":""},{"statement":"\"Кашель\" is a symptom.","isTrue":true,"explanation":""},{"statement":"\"Рецепт\" is needed for some medicines.","isTrue":true,"explanation":""},{"statement":"\"Серце\" means stomach.","isTrue":false,"explanation":""},{"statement":"\"Що вас турбує?\" is a doctor's question.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Medical Categories","data":{"type":"group-sort","groups":[{"id":"body-parts","name":"Body Parts","items":["голова","живіт","рука"]},{"id":"symptoms","name":"Symptoms","items":["температура","кашель","біль"]},{"id":"medical-places","name":"Medical Places","items":["аптека","лікарня","поліклініка"]},{"id":"instructions","name":"Instructions","items":["пийте воду","відпочивайте","візьміть ліки"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Doctor-Patient Dialogue","data":{"type":"fill-blank","items":[{"prompt":"Лікар: Як довго це ___? (has been going on)","answer":"триває"},{"prompt":"Пацієнт: Це ___ вчора ввечері. (started)","answer":"почалося"},{"prompt":"Лікар: Покажіть, де саме ___. (hurts)","answer":"болить"},{"prompt":"Пацієнт: У мене сильний ___ у животі. (pain)","answer":"біль"},{"prompt":"Лікар: Вам потрібно здати ___. (tests)","answer":"аналізи"},{"prompt":"Пацієнт: У мене ще й ___ і нежить. (cough)","answer":"кашель"},{"prompt":"Лікар: У вас ___. Потрібен відпочинок. (cold illness)","answer":"застуда"},{"prompt":"Пацієнт: Яка у мене ___? (temperature)","answer":"температура"},{"prompt":"Лікар: Тридцять вісім і п'ять. Це ___. (fever/high)","answer":"висока"},{"prompt":"Пацієнт: Чи потрібен мені ___? (prescription)","answer":"рецепт"},{"prompt":"Лікар: Так, ці ___ тільки за рецептом. (medicines)","answer":"ліки"},{"prompt":"Пацієнт: Де найближча ___? (pharmacy)","answer":"аптека"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Medical Term","data":{"type":"select","items":[{"question":"У мене ___ голова.","options":[{"text":"болить","correct":true},{"text":"болять","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"У мене ___ зуби.","options":[{"text":"болять","correct":true},{"text":"болить","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"Ви маєте високу ___.","options":[{"text":"температуру","correct":true},{"text":"кашель","correct":false},{"text":"біль","correct":false},{"text":"застуду","correct":false}]},{"question":"Вам потрібен ___ для цих ліків.","options":[{"text":"рецепт","correct":true},{"text":"аптека","correct":false},{"text":"лікар","correct":false},{"text":"лікарня","correct":false}]},{"question":"___ глибоко і затримайте подих.","options":[{"text":"Дихайте","correct":true},{"text":"Пийте","correct":false},{"text":"Візьміть","correct":false},{"text":"Покажіть","correct":false}]},{"question":"У неї сильний ___ — вона не може говорити.","options":[{"text":"кашель","correct":true},{"text":"нежить","correct":false},{"text":"біль","correct":false},{"text":"температура","correct":false}]},{"question":"Його забрали до ___ на швидкій допомозі.","options":[{"text":"лікарні","correct":true},{"text":"аптеки","correct":false},{"text":"поліклініки","correct":false},{"text":"лікаря","correct":false}]},{"question":"___ оглянув пацієнта уважно.","options":[{"text":"Лікар","correct":true},{"text":"Ліки","correct":false},{"text":"Лікарня","correct":false},{"text":"Рецепт","correct":false}]},{"question":"Це ___ біль чи постійний?","options":[{"text":"гострий","correct":true},{"text":"голова","correct":false},{"text":"живіт","correct":false},{"text":"рука","correct":false}]},{"question":"У мене ___ — ніс закладений.","options":[{"text":"нежить","correct":true},{"text":"кашель","correct":false},{"text":"температура","correct":false},{"text":"біль","correct":false}]},{"question":"Медсестра зробила мені ___.","options":[{"text":"укол","correct":true},{"text":"ліки","correct":false},{"text":"рецепт","correct":false},{"text":"аптеку","correct":false}]},{"question":"У нього ___ — він кілька днів в ліжку.","options":[{"text":"грип","correct":true},{"text":"біль","correct":false},{"text":"рука","correct":false},{"text":"нога","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Medical Situations","data":{"type":"quiz","questions":[{"question":"What do you say first when visiting a doctor?","options":["Describe what's bothering you (Що мене турбує...)","Ask for medicine immediately","Demand a prescription","Complain about waiting"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" vs \"болять\" depends on:","options":["Whether the body part is singular or plural","Time of day","How strong the pain is","Doctor's preference"],"correctIndex":0,"explanation":""},{"question":"To say \"I have a fever,\" use:","options":["У мене температура","Я температура","Мені температура","Мене температура"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" is required for:","options":["Certain prescription medicines","All medicines","No medicines","Only vitamins"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" vs \"лікарня\":","options":["Аптека sells medicine; лікарня is hospital","They are the same","Аптека is larger","Лікарня sells medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["A cold (common illness)","A broken bone","Surgery","A pharmacy"],"correctIndex":0,"explanation":""},{"question":"When the doctor says \"Дихайте глибоко\":","options":["Take deep breaths","Stop breathing","Drink water","Open your mouth"],"correctIndex":0,"explanation":""},{"question":"\"Медсестра\" is:","options":["Nurse","Doctor","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Поліклініка\" is:","options":["Outpatient clinic","Hospital with beds","Pharmacy","Emergency room only"],"correctIndex":0,"explanation":""},{"question":"To describe pain intensity, use:","options":["сильний/слабкий біль","великий/малий біль","довгий/короткий біль","високий/низький біль"],"correctIndex":0,"explanation":""},{"question":"\"Прийдіть через тиждень\" means:","options":["Come back in a week","Wait for a week","Leave in a week","Stay for a week"],"correctIndex":0,"explanation":""},{"question":"\"У мене болить живіт\" — \"живіт\" is:","options":["Stomach/belly","Leg","Arm","Head"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"голова","translit":"","en":"head","note":""},{"uk":"горло","translit":"","en":"throat","note":""},{"uk":"живіт","translit":"","en":"stomach","note":""},{"uk":"спина","translit":"","en":"back","note":""},{"uk":"серце","translit":"","en":"heart","note":""},{"uk":"рука","translit":"","en":"arm, hand","note":""},{"uk":"нога","translit":"","en":"leg, foot","note":""},{"uk":"болить","translit":"","en":"hurts (sg)","note":""},{"uk":"болять","translit":"","en":"hurt (pl)","note":""},{"uk":"температура","translit":"","en":"fever, temperature","note":""},{"uk":"кашель","translit":"","en":"cough","note":""},{"uk":"нежить","translit":"","en":"runny nose","note":""},{"uk":"біль","translit":"","en":"pain","note":""},{"uk":"ліки","translit":"","en":"medicine","note":""},{"uk":"рецепт","translit":"","en":"prescription, recipe","note":""},{"uk":"лікар","translit":"","en":"doctor","note":""},{"uk":"лікарня","translit":"","en":"hospital","note":""},{"uk":"аптека","translit":"","en":"pharmacy","note":""},{"uk":"застуда","translit":"","en":"cold (illness)","note":""},{"uk":"грип","translit":"","en":"flu","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1130,8 +1113,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1162,8 +1145,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1575,7 +1558,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1585,7 +1568,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1786,6 +1771,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

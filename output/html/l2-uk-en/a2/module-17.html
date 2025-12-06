@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 17: Conditionals II | Ukrainian A2</title>
+  <title>Module 17: Preferences &amp; Choices | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 17: Conditionals II</h1>
+    <h1>Module 17: Preferences &amp; Choices</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,370 +498,102 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A2 · A2.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Conditionals II</h2>
-        <p style="color:var(--text-muted)">Would &amp; Could</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Preferences &amp; Choices</h2>
+        <p style="color:var(--text-muted)">Expressing What You Like Better</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="whatwouldyoudo">What Would You Do?</h3>
-<p>Real conditionals deal with possible futures. Now let's talk about <strong>unreal</strong> situations - things that aren't true or might never happen:</p>
-<p><strong>English:</strong> If I <strong>had</strong> money, I <strong>would</strong> buy a car.<br />
-<strong>Ukrainian:</strong> Якби я <strong>мав</strong> гроші, я <strong>б купив</strong> машину.</p>
-<p>The key word is <strong>би/б</strong> - it means "would."</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The particle "би/б" transforms any sentence into hypothetical territory. It comes after the verb and attaches to it. This single particle does the work of "would," "could," and "might" in English conditionals!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="theconditionalparticle">The Conditional Particle: б/би</h3>
-<p><strong>Forms:</strong></p>
-<ul>
-<li><strong>б</strong> - after vowels (я б, вона б, ти б)</li>
-<li><strong>би</strong> - after consonants (він би, ми би)</li>
-</ul>
-<p><strong>Position:</strong> Usually after the subject or verb:</p>
-<ul>
-<li>Я <strong>б</strong> хотів… - I would want…</li>
-<li>Він <strong>би</strong> поїхав… - He would go…</li>
-<li>Це <strong>було б</strong> добре. - That would be good.</li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Я <strong>б</strong> допоміг тобі. - I would help you.</li>
-<li>Вона <strong>б</strong> прийшла. - She would come.</li>
-<li>Ми <strong>б</strong> зробили це. - We would do this.</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Placement Flexibility</strong></p>
-  <p>б/би can move around:</p>
-  <ul>
-  <li>Я б хотів = Я хотів би (I would want)</li>
-  <li>Він би прийшов = Він прийшов би (He would come)</li>
-  </ul>
-  <p>The meaning stays the same!</p>
-</blockquote>
-<h3 id="unrealconditionals">Unreal Conditionals: Якби + б/би</h3>
-<p><strong>Structure: Якби + past tense…, subject + б/би + past tense</strong></p>
-<table>
-<thead>
-<tr>
-<th>Якби (If)</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Якби я <strong>мав</strong> час,</td>
-<td>я <strong>б прочитав</strong> книгу.</td>
-</tr>
-<tr>
-<td>If I had time,</td>
-<td>I would read the book.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Key pattern:</strong></p>
-<ul>
-<li><strong>Якби</strong> = if (unreal/hypothetical)</li>
-<li>Both clauses use <strong>past tense</strong> forms</li>
-<li>Result clause includes <strong>б/би</strong></li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Якби</strong> я знав, я <strong>б</strong> сказав. - If I knew, I would tell.</li>
-<li><strong>Якби</strong> вона прийшла, ми <strong>б</strong> почали. - If she came, we would start.</li>
-<li><strong>Якби</strong> було тепло, ми <strong>б</strong> пішли гуляти. - If it were warm, we'd go for a walk.</li>
-</ul>
-<blockquote>
-  <p>📜 <strong>History Bite: Slavic Conditional</strong></p>
-  <p>The particle "би" comes from an old form of "бути" (to be). In Old Church Slavonic, conditionals used full auxiliary verbs. Over centuries, these shortened to just "би/б" - a perfect example of grammaticalization!</p>
-</blockquote>
-<h3 id="vs">Якщо vs Якби</h3>
-<p><strong>Якщо (if) - possible/real:</strong></p>
-<ul>
-<li><strong>Якщо</strong> матиму час, прочитаю. - If I have time, I'll read. (possible)</li>
-<li><strong>Якщо</strong> він прийде, почнемо. - If he comes, we'll start. (might happen)</li>
-</ul>
-<p><strong>Якби (if) - unreal/hypothetical:</strong></p>
-<ul>
-<li><strong>Якби</strong> мав час, прочитав би. - If I had time, I would read. (I don't have time)</li>
-<li><strong>Якби</strong> він прийшов, почали б. - If he came, we would start. (he's not coming)</li>
-</ul>
-<p><strong>The difference:</strong></p>
-<ul>
-<li>Якщо + future = real possibility</li>
-<li>Якби + past + би = unreal/contrary to fact</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Dreams and Wishes</strong></p>
-  <p>Ukrainians often use якби for dreams:</p>
-  <ul>
-  <li>"Якби я був багатим…" (If I were rich…)</li>
-  <li>"Якби можна було…" (If it were possible…)</li>
-  <li>"Якби я міг почати знову…" (If I could start over…)</li>
-  </ul>
-  <p>These express wishes for impossible or unlikely things.</p>
-</blockquote>
-<h3 id="wisheswith">Wishes with "Якби…"</h3>
-<p><strong>Express wishes about the present:</strong></p>
-<ul>
-<li><strong>Якби</strong> я знав українську краще! - If only I knew Ukrainian better!</li>
-<li><strong>Якби</strong> було тепліше! - If only it were warmer!</li>
-<li><strong>Якби</strong> мав більше часу! - If only I had more time!</li>
-</ul>
-<p><strong>Express wishes about the past (harder):</strong></p>
-<ul>
-<li><strong>Якби</strong> я <strong>був</strong> вивчив раніше! - If only I had studied earlier!</li>
-</ul>
-<p><strong>Хотів би (would like):</strong></p>
-<ul>
-<li>Я <strong>хотів би</strong> поїхати в Україну. - I would like to go to Ukraine.</li>
-<li>Вона <strong>хотіла б</strong> побачити Львів. - She would like to see Lviv.</li>
-</ul>
-<h3 id="politerequestswith">Polite Requests with б/би</h3>
-<p><strong>Softening requests:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Direct</th>
-<th>Polite (with б/би)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Допоможи!</td>
-<td>Ти б допоміг?</td>
-</tr>
-<tr>
-<td>Скажіть!</td>
-<td>Ви б сказали?</td>
-</tr>
-<tr>
-<td>Дай мені…</td>
-<td>Ти б дав мені…?</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Чи не <strong>могли б</strong> ви допомогти? - Could you help? (very polite)</li>
-<li><strong>Чи б</strong> ви сказали…? - Would you tell…?</li>
-<li>Я <strong>хотів би</strong> запитати… - I would like to ask…</li>
-</ul>
-<p><strong>Common polite phrases:</strong></p>
-<ul>
-<li><strong>Було б</strong> добре, якби… - It would be good if…</li>
-<li><strong>Мені б хотілося</strong>… - I would like…</li>
-<li><strong>Чи не могли б</strong> ви…? - Could you possibly…?</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Maximum Politeness</strong></p>
-  <p>Чи не могли б ви…? (Could you possibly…?) is very formal and polite. Use it in:</p>
-  <ul>
-  <li>Business situations</li>
-  <li>With strangers</li>
-  <li>When asking for favors</li>
-  </ul>
-</blockquote>
-<h3 id="couldhavewouldhave">Could Have / Would Have</h3>
-<p><strong>Міг би (could):</strong></p>
-<ul>
-<li>Я <strong>міг би</strong> допомогти. - I could help.</li>
-<li>Вона <strong>могла б</strong> прийти. - She could come.</li>
-</ul>
-<p><strong>Should have (мав би):</strong></p>
-<ul>
-<li>Ти <strong>мав би</strong> сказати раніше. - You should have told me earlier.</li>
-<li>Вона <strong>мала б</strong> зателефонувати. - She should have called.</li>
-</ul>
-<p><strong>Would have (був би + past participle - advanced):</strong></p>
-<ul>
-<li>Я <strong>був би пішов</strong>, якби знав. - I would have gone if I had known.</li>
-<li>Вона <strong>була б прийшла</strong>. - She would have come.</li>
-</ul>
-<p>Note: "Would have" is more complex; focus on present/future hypotheticals first.</p>
-<h3 id="conditionalwithdifferentsubjects">Conditional with Different Subjects</h3>
-<p><strong>Same subject:</strong></p>
-<ul>
-<li>Якби <strong>я</strong> мав гроші, <strong>я</strong> б купив машину.</li>
-<li>If I had money, I would buy a car.</li>
-</ul>
-<p><strong>Different subjects:</strong></p>
-<ul>
-<li>Якби <strong>він</strong> прийшов, <strong>ми</strong> б почали.</li>
-<li>If he came, we would start.</li>
-</ul>
-<p><strong>Impersonal:</strong></p>
-<ul>
-<li><p>Якби <strong>було</strong> можливо, я б поїхав.</p></li>
-<li><p>If it were possible, I would go.</p></li>
-<li><p><strong>Було б</strong> краще, якби ти зателефонував.</p></li>
-<li><p>It would be better if you called.</p></li>
-</ul>
-<h2 id="practice">practice</h2>
-<h3 id="transformtohypothetical">Transform to Hypothetical</h3>
-<p>Change real to unreal conditionals:</p>
-<ol>
-<li><p>Якщо матиму час, прочитаю. →<br />
-Якби мав час, прочитав би.</p></li>
-<li><p>Якщо він прийде, почнемо. →<br />
-Якби він прийшов, почали б.</p></li>
-<li><p>Якщо погода буде гарна, підемо. →<br />
-Якби погода була гарна, пішли б.</p></li>
-<li><p>Якщо знатиму, скажу. →<br />
-Якби знав, сказав би.</p></li>
-<li><p>Якщо вона захоче, допоможе. →<br />
-Якби вона хотіла, допомогла б.</p></li>
-</ol>
-<h3 id="completewith">Complete with б/би</h3>
-<ol>
-<li><p>Я ___ хотів поїхати в Україну.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="2">
-<li><p>Він ___ допоміг, якби міг.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">би</div></div>
-<ol start="3">
-<li><p>Було ___ добре побачитися.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="4">
-<li><p>Ти ___ зателефонував мені?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="5">
-<li><p>Вона ___ прийшла раніше.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">б / би</div></div>
-<h3 id="makepolite">Make Polite</h3>
-<p>Transform to polite requests:</p>
-<ol>
-<li><p>Допоможи мені! →<br />
-Чи не міг би ти допомогти?</p></li>
-<li><p>Скажіть адресу! →<br />
-Чи не могли б ви сказати адресу?</p></li>
-<li><p>Дай мені книгу! →<br />
-Ти б дав мені книгу?</p></li>
-<li><p>Закрий вікно! →<br />
-Чи не міг би ти закрити вікно?</p></li>
-<li><p>Почекайте! →<br />
-Чи не могли б ви почекати?</p></li>
-</ol>
-<h3 id="translatehypotheticals">Translate Hypotheticals</h3>
-<ol>
-<li><p>If I had time, I would help.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Якби я мав час, я б допоміг.</div></div>
-<ol start="2">
-<li><p>I would like to learn Ukrainian.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Я хотів би вивчити українську.</div></div>
-<ol start="3">
-<li><p>Could you please help?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Чи не могли б ви допомогти?</div></div>
-<ol start="4">
-<li><p>If she knew, she would tell.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Якби вона знала, вона б сказала.</div></div>
-<ol start="5">
-<li><p>It would be good to meet.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Було б добре зустрітися.</div></div>
-<ol start="6">
-<li><p>You should call him.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">Ти мав би зателефонувати йому.</div></div>
-<h2 id="production">production</h2>
-<h3 id="expresswishes">Express Wishes</h3>
-<p><strong>What would you do if…?</strong></p>
-<ul>
-<li>Якби я виграв лотерею, я б…</li>
-<li>Якби я міг жити в будь-якій країні, я б…</li>
-<li>Якби мав суперсилу, я б…</li>
-<li>Якби міг зустріти будь-кого, я б…</li>
-</ul>
-<h3 id="politeconversation">Polite Conversation</h3>
-<ul>
-<li>Вибачте, <strong>чи не могли б ви</strong> допомогти мені?</li>
-<li>Звичайно! Що вам потрібно?</li>
-<li>Я <strong>хотів би</strong> знати, де найближча станція метро.</li>
-<li><strong>Було б</strong> краще, якби ви пішли прямо, потім направо.</li>
-<li>Дякую! Ви дуже люб'язні!</li>
-<li>Немає за що. Я <strong>радий би</strong> допомогти ще.</li>
-</ul>
-<h3 id="regretsandadvice">Regrets and Advice</h3>
-<p><strong>What someone should do:</strong></p>
-<ul>
-<li>Ти <strong>мав би</strong> більше спати.</li>
-<li>Вона <strong>мала б</strong> вивчати українську щодня.</li>
-<li>Ми <strong>мали б</strong> почати раніше.</li>
-</ul>
-<p><strong>What you would like:</strong></p>
-<ul>
-<li>Я <strong>хотів би</strong> подорожувати більше.</li>
-<li>Вона <strong>хотіла б</strong> працювати з дому.</li>
-<li>Ми <strong>хотіли б</strong> познайомитися з вами.</li>
-</ul>
-<hr />
-<hr />
-<hr />
-<hr />
-<hr />
+      <div class="md-content"><p>"I prefer tea to coffee." "I'd rather stay home." "This one is better for me." These preference expressions are essential for real conversations! This module teaches you how to express what you like more, what you'd choose, and why.</p>
 <hr /></div>
     </div>
   
-      
-    <div class="card section-summary">
-      <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="conditionalparticle">Conditional Particle</h2>
+    <div class="card section-content">
+      <h3>Expressing Preferences</h3>
+      <div class="md-content"><h2 id="ilikemore">Мені більше подобається (I like … more)</h2>
 <table>
 <thead>
 <tr>
-<th>After…</th>
-<th>Form</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vowel</td>
-<td>б</td>
-<td>я б, вона б</td>
-</tr>
-<tr>
-<td>Consonant</td>
-<td>би</td>
-<td>він би, ми би</td>
-</tr>
-</tbody>
-</table>
-<h2 id="realvsunrealconditionals">Real vs Unreal Conditionals</h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
 <th>Structure</th>
 <th>Example</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Real</td>
-<td>Якщо + future</td>
-<td>Якщо матиму, зроблю</td>
+<td>Мені більше подобається X ніж Y</td>
+<td>Мені більше подобається чай ніж кава.</td>
+<td>I like tea more than coffee.</td>
 </tr>
 <tr>
-<td>Unreal</td>
-<td>Якби + past + б/би</td>
-<td>Якби мав, зробив би</td>
+<td>Мені більше подобається X</td>
+<td>Мені більше подобається літо.</td>
+<td>I like summer more.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="commonphrases">Common Phrases</h2>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>"Подобатися" literally means "to please" — so <em>Мені більше подобається чай</em> means "Tea pleases me more"!</p>
+</blockquote>
+<hr />
+<h2 id="toprefer">Віддавати/Віддати перевагу (To prefer)</h2>
+<p><strong>Structure:</strong> Віддавати перевагу + Dative</p>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я <strong>віддаю перевагу чаю</strong>.</td>
+<td>I prefer tea.</td>
+</tr>
+<tr>
+<td>Вона <strong>віддає перевагу книгам</strong>.</td>
+<td>She prefers books.</td>
+</tr>
+<tr>
+<td>Ми <strong>віддаємо перевагу прогулянкам</strong>.</td>
+<td>We prefer walks.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="better">Краще (Better)</h2>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Краще X ніж Y</td>
+<td>Краще пізно, ніж ніколи.</td>
+<td>Better late than never.</td>
+</tr>
+<tr>
+<td>Мені краще…</td>
+<td>Мені краще залишитися.</td>
+<td>It's better for me to stay.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>Famous Ukrainian proverb: <em>Краще синиця в руці, ніж журавель у небі</em> — Better a bird in the hand than two in the bush!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Comparison of Actions</h3>
+      <div class="md-content"><h2 id="infinitivecomparisons">Infinitive Comparisons</h2>
 <table>
 <thead>
 <tr>
@@ -844,52 +603,204 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>Я хотів би</td>
-<td>I would like</td>
+<td>Краще <strong>читати</strong> ніж <strong>дивитися</strong> телевізор.</td>
+<td>Better to read than watch TV.</td>
 </tr>
 <tr>
-<td>Чи не могли б ви…?</td>
-<td>Could you possibly…?</td>
+<td>Легше <strong>говорити</strong> ніж <strong>робити</strong>.</td>
+<td>Easier to talk than to do.</td>
 </tr>
 <tr>
-<td>Було б добре</td>
-<td>It would be good</td>
-</tr>
-<tr>
-<td>Мав би</td>
-<td>should</td>
+<td>Цікавіше <strong>подорожувати</strong> ніж <strong>сидіти</strong> вдома.</td>
+<td>More interesting to travel than sit at home.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="politerequests">Polite Requests</h2>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Choice Expressions</h3>
+      <div class="md-content"><h2 id="iwouldchoose">Я б вибрав/вибрала (I would choose)</h2>
 <table>
 <thead>
 <tr>
-<th>Direct</th>
-<th>Polite</th>
+<th>Example</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Допоможи!</td>
-<td>Чи не міг би ти допомогти?</td>
+<td>Я б <strong>вибрав</strong> це.</td>
+<td>I would choose this.</td>
 </tr>
 <tr>
-<td>Скажіть!</td>
-<td>Чи не могли б ви сказати?</td>
+<td>Я б <strong>вибрала</strong> синю сукню.</td>
+<td>I would choose the blue dress.</td>
+</tr>
+<tr>
+<td>Він би <strong>вибрав</strong> каву.</td>
+<td>He would choose coffee.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="suitsmebetter">Мені більше підходить (Suits me better)</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мені більше <strong>підходить</strong> цей варіант.</td>
+<td>This option suits me better.</td>
+</tr>
+<tr>
+<td>Їй більше <strong>підходить</strong> ранкова зміна.</td>
+<td>The morning shift suits her better.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
 <blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>б/би = "would" particle</li>
-  <li>Якщо = real (possible), Якби = unreal (hypothetical)</li>
-  <li>Unreal: past tense in both clauses + би in result</li>
-  <li>Polite requests: чи не могли б ви…?</li>
-  <li>хотів би = would like, мав би = should</li>
-  </ul>
-</blockquote></div>
+  <p>When shopping: <em>Мені більше підходить ця сукня</em> — This dress suits me better!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Asking About Preferences</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Що ти <strong>волієш</strong>?</td>
+<td>Я волію чай.</td>
+</tr>
+<tr>
+<td>Що тобі <strong>більше подобається</strong>?</td>
+<td>Мені більше подобається…</td>
+</tr>
+<tr>
+<td>Що б ти <strong>вибрав</strong>?</td>
+<td>Я б вибрав…</td>
+</tr>
+<tr>
+<td>Що для тебе <strong>краще</strong>?</td>
+<td>Для мене краще…</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Giving Reasons</h3>
+      <div class="md-content"><h2 id="because">Тому що (Because)</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я волію чай, <strong>тому що</strong> він корисніший.</td>
+<td>I prefer tea because it's healthier.</td>
+</tr>
+<tr>
+<td>Мені краще залишитися, <strong>тому що</strong> я втомився.</td>
+<td>It's better for me to stay because I'm tired.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="becauseinformal">Бо (Because - informal)</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Я вибрав це, <strong>бо</strong> дешевше.</td>
+<td>I chose this because it's cheaper.</td>
+</tr>
+<tr>
+<td>Він волів залишитися, <strong>бо</strong> пішов дощ.</td>
+<td>He preferred to stay because it rained.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>In games: <em>Я вибрав цього персонажа, бо він найсильніший</em> — I chose this character because he's the strongest!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Common Preference Phrases</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мені все одно.</td>
+<td>I don't mind. / It doesn't matter to me.</td>
+</tr>
+<tr>
+<td>Як хочеш.</td>
+<td>As you like.</td>
+</tr>
+<tr>
+<td>На твій вибір.</td>
+<td>Your choice.</td>
+</tr>
+<tr>
+<td>Без різниці.</td>
+<td>No difference.</td>
+</tr>
+<tr>
+<td>Я за!</td>
+<td>I'm for it!</td>
+</tr>
+<tr>
+<td>Я проти.</td>
+<td>I'm against.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<hr /></div>
+    </div>
+  
+      
+    <div class="card section-summary">
+      <h3>📋 Summary</h3>
+      <div class="md-content"><p>Excellent work! You've learned:</p>
+<ul>
+<li><strong>Preference expressions</strong>: Мені більше подобається, віддавати перевагу + dative</li>
+<li><strong>Choice expressions</strong>: Я б вибрав/вибрала, мені більше підходить</li>
+<li><strong>Comparing actions</strong>: Краще читати ніж дивитися</li>
+<li><strong>Giving reasons</strong>: тому що (formal), бо (informal)</li>
+<li><strong>Indifference phrases</strong>: Мені все одно, без різниці</li>
+</ul>
+<p><strong>Coming up next</strong>: Conditional Mood — expressing "if I were…" and hypothetical situations!</p></div>
     </div>
   
       <div class="btn-group">
@@ -898,69 +809,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Unreal Conditionals</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Complete the Preference Expression</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Hypothetical Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Preference Expressions</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Word Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/11</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Preference Structures</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Preference Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Unreal Conditionals</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Expression Types</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Hypothetical Story</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Preferences in Context</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Conditional Type</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/20</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Expression</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/0</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Preference Structures</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (17)</h3>
+        <h3>Словник (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -968,9 +886,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">якби</td><td class="vocab-ipa">/jɑkˈbɪ/</td><td class="vocab-en">if (unreal)</td></tr><tr><td class="vocab-uk">б</td><td class="vocab-ipa">/b/</td><td class="vocab-en">would (after vowel)</td></tr><tr><td class="vocab-uk">би</td><td class="vocab-ipa">/bɪ/</td><td class="vocab-en">would (after consonant)</td></tr><tr><td class="vocab-uk">хотів би</td><td class="vocab-ipa">/xoˈtʲiv bɪ/</td><td class="vocab-en">would like (m)</td></tr><tr><td class="vocab-uk">хотіла б</td><td class="vocab-ipa">/xoˈtʲilɑ b/</td><td class="vocab-en">would like (f)</td></tr><tr><td class="vocab-uk">могли б</td><td class="vocab-ipa">/moɦˈlɪ b/</td><td class="vocab-en">could (pl/formal)</td></tr><tr><td class="vocab-uk">мав би</td><td class="vocab-ipa">/mɑv bɪ/</td><td class="vocab-en">should (m)</td></tr><tr><td class="vocab-uk">було б</td><td class="vocab-ipa">/buˈlo b/</td><td class="vocab-en">would be</td></tr><tr><td class="vocab-uk">гіпотетичний</td><td class="vocab-ipa">/ɦʲipotɛˈtɪtʃnɪj/</td><td class="vocab-en">hypothetical</td></tr><tr><td class="vocab-uk">уявний</td><td class="vocab-ipa">/ujɑvˈnɪj/</td><td class="vocab-en">imaginary, hypothetical</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/moʒˈlɪvʲistʲ/</td><td class="vocab-en">possibility</td></tr><tr><td class="vocab-uk">мрія</td><td class="vocab-ipa">/ˈmrʲijɑ/</td><td class="vocab-en">dream</td></tr><tr><td class="vocab-uk">мріяти</td><td class="vocab-ipa">/mrʲiˈjɑtɪ/</td><td class="vocab-en">to dream</td></tr><tr><td class="vocab-uk">уявляти</td><td class="vocab-ipa">/ujɑvˈlʲɑtɪ/</td><td class="vocab-en">to imagine (impf)</td></tr><tr><td class="vocab-uk">уявити</td><td class="vocab-ipa">/ujɑˈvɪtɪ/</td><td class="vocab-en">to imagine (perf)</td></tr><tr><td class="vocab-uk">шкода</td><td class="vocab-ipa">/ˈʃkodɑ/</td><td class="vocab-en">pity, shame</td></tr><tr><td class="vocab-uk">на жаль</td><td class="vocab-ipa">/nɑ ʒɑlʲ/</td><td class="vocab-en">unfortunately</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">подобатися</td><td class="vocab-ipa">/podoˈbatɪsʲa/</td><td class="vocab-en">to please, to like</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">віддавати перевагу</td><td class="vocab-ipa">/widdaˈwatɪ pereˈwaɦu/</td><td class="vocab-en">to prefer</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">волiти</td><td class="vocab-ipa">/woˈlitɪ/</td><td class="vocab-en">to prefer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибирати</td><td class="vocab-ipa">/wɪbɪˈratɪ/</td><td class="vocab-en">to choose (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибрати</td><td class="vocab-ipa">/ˈwɪbratɪ/</td><td class="vocab-en">to choose (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підходити</td><td class="vocab-ipa">/pidxoˈdɪtɪ/</td><td class="vocab-en">to suit</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">перевага</td><td class="vocab-ipa">/pereˈwaɦa/</td><td class="vocab-en">preference, advantage</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибір</td><td class="vocab-ipa">/ˈwɪbir/</td><td class="vocab-en">choice</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">краще</td><td class="vocab-ipa">/ˈkraʃtʃe/</td><td class="vocab-en">better</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гірше</td><td class="vocab-ipa">/ˈɦirʃe/</td><td class="vocab-en">worse</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">тому що</td><td class="vocab-ipa">/toˈmu ʃtʃo/</td><td class="vocab-en">because</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бо</td><td class="vocab-ipa">/bo/</td><td class="vocab-en">because (informal)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">все одно</td><td class="vocab-ipa">/wse odˈno/</td><td class="vocab-en">all the same</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">без різниці</td><td class="vocab-ipa">/bez ˈriznɪt͡si/</td><td class="vocab-en">no difference</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">на вибір</td><td class="vocab-ipa">/na ˈwɪbir/</td><td class="vocab-en">at choice</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">замість</td><td class="vocab-ipa">/zaˈmistʲ/</td><td class="vocab-en">instead of</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">корисний</td><td class="vocab-ipa">/koˈrɪsnɪj/</td><td class="vocab-en">useful, healthy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зручний</td><td class="vocab-ipa">/ˈzrutʃnɪj/</td><td class="vocab-en">convenient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вигідний</td><td class="vocab-ipa">/wɪˈɦidnɪj/</td><td class="vocab-en">profitable, advantageous</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відповідний</td><td class="vocab-ipa">/widpoˈwidnɪj/</td><td class="vocab-en">appropriate, suitable</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -982,8 +900,8 @@ footer {
   </main><footer>Module 17 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Unreal Conditionals","data":{"type":"fill-blank","items":[{"prompt":"Якби я ___ (мати) час, я б допоміг тобі.","answer":"мав","hints":["мати"]},{"prompt":"Я ___ (хотіти) б поїхати в Україну влітку.","answer":"хотів","hints":["хотіти"]},{"prompt":"Чи не могли ___ (б / би) ви допомогти мені?","answer":"б","hints":["б / би"]},{"prompt":"Якби він ___ (знати), він би обов'язково сказав.","answer":"знав","hints":["знати"]},{"prompt":"Було ___ (б / би) добре зустрітися з вами.","answer":"б","hints":["б / би"]}]}},{"id":"activity-1","type":"unjumble","title":"Hypothetical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мав","Якби","я","час","допоміг","б","я"],"answer":"Якби я мав час, я б допоміг.","translation":"If I had time, I would help."},{"words":["хотів","Я","б","поїхати","в","Україну"],"answer":"Я хотів би поїхати в Україну.","translation":"I would like to go to Ukraine."},{"words":["не","Чи","могли","б","ви","допомогти"],"answer":"Чи не могли б ви допомогти?","translation":"Could you possibly help?"},{"words":["знала","Якби","вона","б","сказала","вона"],"answer":"Якби вона знала, вона б сказала.","translation":"If she knew, she would tell."},{"words":["добре","Було","б","зустрітися","з","вами"],"answer":"Було б добре зустрітися з вами.","translation":"It would be good to meet with you."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"гіпотетичний","right":"hypothetical"},{"left":"двадцять","right":"twenty"},{"left":"мрія","right":"dream"},{"left":"лампа","right":"lamp"},{"left":"б","right":"would (after vowel)"},{"left":"можливість","right":"possibility"},{"left":"уявний","right":"imaginary, hypothetical"},{"left":"уявляти","right":"to imagine (impf)"},{"left":"якби","right":"if (unreal)"},{"left":"би","right":"would (after consonant)"},{"left":"мріяти","right":"to dream"},{"left":"неймовірно","right":"incredibly"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"б\" mean?","options":["in front, ahead","where from","would (after vowel)","sometimes"],"correctIndex":2,"explanation":"\"б\" means \"would (after vowel)\""},{"question":"What does \"уявляти\" mean?","options":["whose (m)","family","dad","to imagine (impf)"],"correctIndex":3,"explanation":"\"уявляти\" means \"to imagine (impf)\""},{"question":"What does \"гіпотетичний\" mean?","options":["to call (pf)","hypothetical","to eat (perf)","bon appétit"],"correctIndex":1,"explanation":"\"гіпотетичний\" means \"hypothetical\""},{"question":"What does \"би\" mean?","options":["would (after consonant)","behind","to watch, look","fog"],"correctIndex":0,"explanation":"\"би\" means \"would (after consonant)\""},{"question":"What does \"уявний\" mean?","options":["to wake up (perf)","music","to succeed","imaginary, hypothetical"],"correctIndex":3,"explanation":"\"уявний\" means \"imaginary, hypothetical\""},{"question":"What does \"уявити\" mean?","options":["it","to help (perf)","to imagine (perf)","borscht"],"correctIndex":2,"explanation":"\"уявити\" means \"to imagine (perf)\""},{"question":"What does \"можливість\" mean?","options":["possibility","most interesting","good, kind","how"],"correctIndex":0,"explanation":"\"можливість\" means \"possibility\""},{"question":"What does \"шкода\" mean?","options":["pity, shame","nothing","(with) us","to want"],"correctIndex":0,"explanation":"\"шкода\" means \"pity, shame\""},{"question":"What does \"якби\" mean?","options":["to serve","(with) us","if (unreal)","artist"],"correctIndex":2,"explanation":"\"якби\" means \"if (unreal)\""},{"question":"What does \"мріяти\" mean?","options":["to send, dispatch","to dream","masculine","fitting room"],"correctIndex":1,"explanation":"\"мріяти\" means \"to dream\""},{"question":"What does \"мрія\" mean?","options":["sun","Saturday","dream","bigger"],"correctIndex":2,"explanation":"\"мрія\" means \"dream\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"гіпотетичний\" means \"hypothetical\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"би\" means \"to carry\"","isTrue":false,"explanation":"Incorrect. \"би\" means \"would (after consonant)\""},{"statement":"\"якби\" means \"if (unreal)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"уявляти\" means \"your (pl, informal)\"","isTrue":false,"explanation":"Incorrect. \"уявляти\" means \"to imagine (impf)\""},{"statement":"\"можливість\" means \"husband\"","isTrue":false,"explanation":"Incorrect. \"можливість\" means \"possibility\""},{"statement":"\"шкода\" means \"advice\"","isTrue":false,"explanation":"Incorrect. \"шкода\" means \"pity, shame\""},{"statement":"\"уявити\" means \"to imagine (perf)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"б\" means \"would (after vowel)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мрія\" means \"dream\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мріяти\" means \"pen\"","isTrue":false,"explanation":"Incorrect. \"мріяти\" means \"to dream\""}]}},{"id":"activity-5","type":"select","title":"Unreal Conditionals","data":{"type":"select","items":[{"question":"If I had money, I would buy a car.","options":[{"text":"Якби я мав гроші, я б купив машину.","correct":true},{"text":"Якщо я маю гроші, я куплю машину.","correct":false},{"text":"Якби я маю гроші, я куплю машину.","correct":false},{"text":"Якщо я мав гроші, я купив машину.","correct":false}]},{"question":"If she knew Ukrainian, she would speak with us.","options":[{"text":"Якби вона знала українську, вона б говорила з нами.","correct":true},{"text":"Якщо вона знає українську, вона говорить з нами.","correct":false},{"text":"Якби вона знає українську, вона говорить.","correct":false},{"text":"Якщо вона знала українську, вона говорила.","correct":false}]},{"question":"I would like to visit Kyiv.","options":[{"text":"Я хотів би відвідати Київ.","correct":true},{"text":"Я хочу відвідати Київ.","correct":false},{"text":"Я хотів відвідати Київ.","correct":false},{"text":"Я буду хотіти відвідати Київ.","correct":false}]},{"question":"Could you help me, please?","options":[{"text":"Ви могли б мені допомогти?","correct":true},{"text":"Ви можете мені допомогти?","correct":false},{"text":"Ви могли мені допомогти?","correct":false},{"text":"Ви будете допомагати?","correct":false}]},{"question":"If we had time, we would rest.","options":[{"text":"Якби ми мали час, ми б відпочили.","correct":true},{"text":"Якщо ми маємо час, ми відпочинемо.","correct":false},{"text":"Якби ми маємо час, ми відпочинемо.","correct":false},{"text":"Якщо ми мали час, ми відпочили.","correct":false}]},{"question":"It would be great if you came.","options":[{"text":"Було б чудово, якби ти прийшов.","correct":true},{"text":"Буде чудово, якщо ти прийдеш.","correct":false},{"text":"Було чудово, якби ти прийшов.","correct":false},{"text":"Буде б чудово, якщо ти прийдеш.","correct":false}]},{"question":"I dream of traveling to Ukraine.","options":[{"text":"Я мрію про подорож до України.","correct":true},{"text":"Я мріяв про подорож до України.","correct":false},{"text":"Я мріятиму про подорож.","correct":false},{"text":"Я б мріяв про подорож.","correct":false}]},{"question":"If only I could speak fluently!","options":[{"text":"Якби я міг говорити вільно!","correct":true},{"text":"Якщо я можу говорити вільно!","correct":false},{"text":"Якби я можу говорити вільно!","correct":false},{"text":"Якщо я міг говорити!","correct":false}]},{"question":"You should try this dish.","options":[{"text":"Ви мали б спробувати цю страву.","correct":true},{"text":"Ви маєте спробувати цю страву.","correct":false},{"text":"Ви мали спробувати цю страву.","correct":false},{"text":"Ви будете пробувати страву.","correct":false}]},{"question":"What a pity that you can't come!","options":[{"text":"Шкода, що ти не можеш прийти!","correct":true},{"text":"Шкода б, що ти не можеш прийти!","correct":false},{"text":"Шкода, що ти б не міг прийти!","correct":false},{"text":"Було б шкода, що ти не прийдеш!","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"Hypothetical Story","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["пропозицію","прийняв","він","Якби","переїхав","би","він","до Києва"],"answer":"Якби він прийняв пропозицію, він би переїхав до Києва."},{"words":["можливість","знав","я","Якби","про","раніше","розповів","я б","другу"],"answer":"Якби я знав про можливість раніше, я б розповів другу."},{"words":["у Києві","жив","він","Якби","вивчив","би","він","українську","швидше"],"answer":"Якби він жив у Києві, він би вивчив українську швидше."},{"words":["про це","подумав","він","Якби","погодився","би","він"],"answer":"Якби він подумав про це, він би погодився."},{"words":["українською","говорив","він","Якби","вільно","знайшов","би","він","кращу","роботу"],"answer":"Якби він говорив українською вільно, він би знайшов кращу роботу."},{"words":["важливість","зрозумів","друг","Якби","зацікавився","би","він","пропозицією"],"answer":"Якби друг зрозумів важливість, він би зацікавився пропозицією."},{"words":["з ним","переїхала","вона","Якби","вивчила","б","вона","теж","мову"],"answer":"Якби вона переїхала з ним, вона б теж вивчила мову."},{"words":["що","Шкода","цього","не","сталося"],"answer":"Шкода, що цього не сталося."},{"words":["разом","працювали","вони","Якби","було б","все","чудово"],"answer":"Якби вони разом працювали, все було б чудово."},{"words":["це","Але","тільки","мрія","не","реальність"],"answer":"Але це тільки мрія, не реальність."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Conditional Type","data":{"type":"group-sort","groups":[{"id":"real-conditions","name":"Real conditions","items":["Якщо завтра буде сонце, ми підемо гуляти.","Якщо ти зателефонуєш, я відповім.","Якщо ми домовимося, все буде добре.","Якщо вона прийде, скажи їй привіт.","Якщо можливо, давай зустрінемось.","Якщо ти поспішиш, ти встигнеш.","Якщо результат буде добрий, всі будуть раді.","Якщо він подзвонить, я допоможу.","Якщо ви матимете час, приходьте.","Якщо погода буде гарна, поїдемо на море."],"nameUk":"possible"},{"id":"unreal-conditions","name":"Unreal conditions","items":["Якби я мав гроші, я б купив машину.","Якби вона знала мову, вона б говорила.","Якби ми мали час, ми б відпочили.","Якби він прийшов, було б чудово.","Якби я міг, я б допоміг.","Якби вони жили тут, все було б інакше.","Якби ти зрозумів, ти б погодився.","Якби ми працювали разом, було б легше.","Якби це було можливо, я б зробив.","Якби вони мріяли про це, вони б намагалися."],"nameUk":"hypothetical"}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"якби","translit":"","en":"if (unreal)","note":""},{"uk":"б","translit":"","en":"would (after vowel)","note":""},{"uk":"би","translit":"","en":"would (after consonant)","note":""},{"uk":"хотів би","translit":"","en":"would like (m)","note":""},{"uk":"хотіла б","translit":"","en":"would like (f)","note":""},{"uk":"могли б","translit":"","en":"could (pl/formal)","note":""},{"uk":"мав би","translit":"","en":"should (m)","note":""},{"uk":"було б","translit":"","en":"would be","note":""},{"uk":"гіпотетичний","translit":"","en":"hypothetical","note":""},{"uk":"уявний","translit":"","en":"imaginary, hypothetical","note":""},{"uk":"можливість","translit":"","en":"possibility","note":""},{"uk":"мрія","translit":"","en":"dream","note":""},{"uk":"мріяти","translit":"","en":"to dream","note":""},{"uk":"уявляти","translit":"","en":"to imagine (impf)","note":""},{"uk":"уявити","translit":"","en":"to imagine (perf)","note":""},{"uk":"шкода","translit":"","en":"pity, shame","note":""},{"uk":"на жаль","translit":"","en":"unfortunately","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Preference Expression","data":{"type":"fill-blank","items":[{"prompt":"Мені більше ___ чай ніж кава.","answer":"подобається"},{"prompt":"Я ___ перевагу книгам.","answer":"віддаю"},{"prompt":"___ пізно, ніж ніколи.","answer":"Краще"},{"prompt":"Я б ___ синю сукню.","answer":"вибрала"},{"prompt":"Мені більше ___ цей варіант.","answer":"підходить"},{"prompt":"Легше говорити ___ робити.","answer":"ніж"},{"prompt":"Я волію чай, ___ він корисніший.","answer":"тому що"},{"prompt":"Мені все ___","answer":"одно"},{"prompt":"Що тобі більше ___?","answer":"подобається"},{"prompt":"Що б ти ___?","answer":"вибрав"},{"prompt":"На твій ___","answer":"вибір"},{"prompt":"Без ___","answer":"різниці"}]}},{"id":"activity-1","type":"match-up","title":"Preference Expressions","data":{"type":"match-up","pairs":[{"left":"Мені більше подобається","right":"I like more"},{"left":"Віддавати перевагу","right":"to prefer"},{"left":"Краще","right":"better"},{"left":"Я б вибрав","right":"I would choose"},{"left":"Мені підходить","right":"suits me"},{"left":"Все одно","right":"doesn't matter"},{"left":"На вибір","right":"at choice"},{"left":"Тому що","right":"because"},{"left":"Бо","right":"because (informal)"},{"left":"Замість","right":"instead of"},{"left":"Без різниці","right":"no difference"},{"left":"Я за","right":"I'm for it"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["більше","гарячий","чай","Мені","подобається","з","медом","завжди"],"answer":"Мені завжди більше подобається гарячий чай з медом.","translation":"I always like hot tea with honey more."},{"words":["перевагу","цікавим","книгам","Я","віддаю","про","історію","України"],"answer":"Я віддаю перевагу цікавим книгам про історію України.","translation":"I prefer interesting books about the history of Ukraine."},{"words":["набагато","краще","Це","ніж","те","що","було","раніше"],"answer":"Це набагато краще ніж те що було раніше.","translation":"This is much better than what was before."},{"words":["вибрав","цей","новий","варіант","Я","б","без","сумнівів"],"answer":"Я б без сумнівів вибрав цей новий варіант.","translation":"I would choose this new option without doubts."},{"words":["підходить","мені","зручний","варіант","Цей","набагато","більше","сьогодні"],"answer":"Цей зручний варіант мені сьогодні підходить набагато більше.","translation":"This convenient option suits me much better today."},{"words":["читати","книги","Краще","ніж","дивитися","телевізор","цілий","день"],"answer":"Краще читати книги ніж дивитися телевізор цілий день.","translation":"Better to read books than watch TV all day."},{"words":["тобі","більше","подобається","Що","літо","чи","зима","взагалі"],"answer":"Що тобі взагалі більше подобається літо чи зима?","translation":"What do you generally like more summer or winter?"},{"words":["волію","зелений","чай","я","тому що","він","дуже","корисний"],"answer":"Я волію зелений чай тому що він дуже корисний.","translation":"I prefer green tea because it's very healthy."},{"words":["одно","що","вибрати","Мені","все","сьогодні","на","обід"],"answer":"Мені сьогодні все одно що вибрати на обід.","translation":"I don't mind what to choose for lunch today."},{"words":["вибрав","на","вечірку","Що","ти","б","одягнути","завтра"],"answer":"Що б ти вибрав одягнути на вечірку завтра?","translation":"What would you choose to wear to the party tomorrow?"},{"words":["різниці","великої","Без","між","цими","двома","варіантами","немає"],"answer":"Без великої різниці між цими двома варіантами немає.","translation":"There's no big difference between these two options."},{"words":["за","цю","ідею","Я","повністю","і","підтримую","її"],"answer":"Я повністю за цю ідею і підтримую її.","translation":"I'm completely for this idea and support it."}]}},{"id":"activity-3","type":"quiz","title":"Preference Structures","data":{"type":"quiz","questions":[{"question":"\"Мені більше подобається X\" means:","options":["I like X more","X is bigger","X pleases everyone","I dislike X"],"correctIndex":0,"explanation":""},{"question":"\"Віддавати перевагу\" requires:","options":["Accusative","Dative","Genitive","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Краще пізно, ніж ніколи\" is:","options":["A proverb","A question","A command","A complaint"],"correctIndex":0,"explanation":""},{"question":"\"Я б вибрав\" is:","options":["Present tense","Past tense","Conditional","Future tense"],"correctIndex":2,"explanation":""},{"question":"\"Тому що\" means:","options":["Therefore","Because","Although","Instead"],"correctIndex":1,"explanation":""},{"question":"\"Мені все одно\" means:","options":["I want everything","One is enough","I don't mind","I'm alone"],"correctIndex":2,"explanation":""},{"question":"\"Бо\" is:","options":["Informal \"because\"","Formal \"because\"","\"But\"","\"Or\""],"correctIndex":0,"explanation":""},{"question":"\"Мені більше підходить\" means:","options":["Suits me better","I'm coming closer","Approaches me","Is bigger for me"],"correctIndex":0,"explanation":""},{"question":"\"Без різниці\" means:","options":["With difference","No difference","Different","Differently"],"correctIndex":1,"explanation":""},{"question":"\"На твій вибір\" means:","options":["Your choice","You're choosing","Choose now","I choose you"],"correctIndex":0,"explanation":""},{"question":"\"Замість\" requires:","options":["Accusative","Dative","Genitive","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Я за!\" means:","options":["I'm for it!","I'm behind","After me!","Go for it!"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Preference Facts","data":{"type":"true-false","statements":[{"statement":"\"Подобатися\" takes dative case.","isTrue":true,"explanation":""},{"statement":"\"Віддавати перевагу\" takes accusative.","isTrue":false,"explanation":""},{"statement":"\"Краще\" can compare actions.","isTrue":true,"explanation":""},{"statement":"\"Бо\" is more formal than \"тому що.\"","isTrue":false,"explanation":""},{"statement":"\"Я б вибрав\" is conditional mood.","isTrue":true,"explanation":""},{"statement":"\"Мені все одно\" shows strong preference.","isTrue":false,"explanation":""},{"statement":"\"Замість\" means \"instead of.\"","isTrue":true,"explanation":""},{"statement":"\"Без різниці\" = \"no difference.\"","isTrue":true,"explanation":""},{"statement":"\"Я проти\" means \"I'm for it.\"","isTrue":false,"explanation":""},{"statement":"\"Волiти\" means \"to want.\"","isTrue":false,"explanation":""},{"statement":"\"На вибір\" offers options.","isTrue":true,"explanation":""},{"statement":"\"Підходить\" can mean \"suits.\"","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Expression Types","data":{"type":"group-sort","groups":[{"id":"preference","name":"Preference","items":["Мені більше подобається","Віддаю перевагу","Волію","Краще"]},{"id":"indifference","name":"Indifference","items":["Мені все одно","Без різниці","Як хочеш","Не важливо"]},{"id":"choice","name":"Choice","items":["Я б вибрав","На твій вибір","Я вибираю","Я за!"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Preferences in Context","data":{"type":"fill-blank","items":[{"prompt":"Мені більше ___ читати книги. (pleases)","answer":"подобається"},{"prompt":"Я ___ перевагу каві. (give)","answer":"віддаю"},{"prompt":"___ пізно, ніж ніколи. (better)","answer":"Краще"},{"prompt":"Мені ___ одно, що вибрати. (all)","answer":"все"},{"prompt":"Я волію чай, ___ він корисніший. (because)","answer":"тому що"},{"prompt":"Це мені більше ___. (suits)","answer":"підходить"},{"prompt":"Я б ___ синю сукню. (chose)","answer":"вибрала"},{"prompt":"___ різниці між ними. (without)","answer":"Без"},{"prompt":"Я вибрав це, ___ воно дешевше. (because informal)","answer":"бо"},{"prompt":"На твій ___. (choice)","answer":"вибір"},{"prompt":"Що тобі більше ___? (pleases)","answer":"подобається"},{"prompt":"Я повністю ___! (for it)","answer":"за"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Expression","data":{"type":"select","items":[]}},{"id":"activity-8","type":"quiz","title":"Advanced Preference Structures","data":{"type":"quiz","questions":[{"question":"\"Віддавати перевагу\" requires which case?","options":["Dative","Accusative","Genitive","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Мені все одно\" expresses:","options":["Indifference","Strong preference","Disagreement","Excitement"],"correctIndex":0,"explanation":""},{"question":"Which is more informal?","options":["бо","тому що","через те, що","оскільки"],"correctIndex":0,"explanation":""},{"question":"\"Я б вибрав\" is in which mood?","options":["Conditional","Indicative","Imperative","Subjunctive"],"correctIndex":0,"explanation":""},{"question":"\"Замість\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Подобатися\" literally means:","options":["To please","To like","To love","To want"],"correctIndex":0,"explanation":""},{"question":"\"На твій вибір\" means:","options":["Your choice","You choose now","I choose for you","Good choice"],"correctIndex":0,"explanation":""},{"question":"\"Я проти\" is the opposite of:","options":["Я за","Я без","Я з","Я для"],"correctIndex":0,"explanation":""},{"question":"\"Краще\" can compare:","options":["Actions (infinitives)","Only nouns","Only adjectives","Only adverbs"],"correctIndex":0,"explanation":""},{"question":"\"Без різниці\" means:","options":["No difference","With difference","Different","Differently"],"correctIndex":0,"explanation":""},{"question":"\"Волiти\" is similar to:","options":["Prefer","Want","Need","Must"],"correctIndex":0,"explanation":""},{"question":"\"Мені більше підходить\" means:","options":["Suits me better","I'm getting closer","It's approaching me","I prefer more"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"подобатися","translit":"","en":"to please, to like","note":"+ dat"},{"uk":"віддавати перевагу","translit":"","en":"to prefer","note":"+ dat"},{"uk":"волiти","translit":"","en":"to prefer","note":""},{"uk":"вибирати","translit":"","en":"to choose (impf)","note":""},{"uk":"вибрати","translit":"","en":"to choose (pf)","note":""},{"uk":"підходити","translit":"","en":"to suit","note":"+ dat"},{"uk":"перевага","translit":"","en":"preference, advantage","note":""},{"uk":"вибір","translit":"","en":"choice","note":""},{"uk":"краще","translit":"","en":"better","note":""},{"uk":"гірше","translit":"","en":"worse","note":""},{"uk":"тому що","translit":"","en":"because","note":""},{"uk":"бо","translit":"","en":"because (informal)","note":""},{"uk":"все одно","translit":"","en":"all the same","note":""},{"uk":"без різниці","translit":"","en":"no difference","note":""},{"uk":"на вибір","translit":"","en":"at choice","note":""},{"uk":"замість","translit":"","en":"instead of","note":"+ gen"},{"uk":"корисний","translit":"","en":"useful, healthy","note":""},{"uk":"зручний","translit":"","en":"convenient","note":""},{"uk":"вигідний","translit":"","en":"profitable, advantageous","note":""},{"uk":"відповідний","translit":"","en":"appropriate, suitable","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1035,8 +953,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1067,8 +985,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1480,7 +1398,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1490,7 +1408,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1691,6 +1611,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

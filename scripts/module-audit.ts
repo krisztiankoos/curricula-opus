@@ -264,11 +264,17 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
     if (actType === 'quiz' || actType === 'select') {
       itemCount = (actContent.match(/^\d+\.\s+/gm) || []).length;
     } else if (actType === 'match-up') {
-      itemCount = Math.max(0, (actContent.match(/^\|[^|]+\|/gm) || []).length - 2);
+      // Support both table format and :: separator format
+      const tableRows = Math.max(0, (actContent.match(/^\|[^|]+\|/gm) || []).length - 2);
+      const bulletPairs = (actContent.match(/^-\s+.+?\s*::\s*.+$/gm) || []).length;
+      itemCount = Math.max(tableRows, bulletPairs);
     } else if (actType === 'group-sort') {
       itemCount = (actContent.match(/^- .+$/gm) || []).length;
     } else if (actType === 'true-false') {
-      itemCount = (actContent.match(/^- \[[ x]\]/gm) || []).length;
+      // Support both checkbox format and numbered format with [!answer]
+      const checkboxItems = (actContent.match(/^- \[[ x]\]/gm) || []).length;
+      const numberedItems = (actContent.match(/^\d+\.\s+.+\n\s*>\s*\[!answer\]\s*(true|false)/gim) || []).length;
+      itemCount = Math.max(checkboxItems, numberedItems);
     } else if (actType === 'fill-in' || actType === 'unjumble' || actType === 'anagram') {
       itemCount = (actContent.match(/^\d+\.\s+/gm) || []).length;
     }
@@ -306,7 +312,14 @@ function auditModule(filePath: string, vocabDb?: VocabDatabase): ModuleAudit {
   // Check items per activity against requirements
   if (req) {
     for (let i = 0; i < itemsPerActivity.length; i++) {
-      if (itemsPerActivity[i] < req.itemsPerActivity && itemsPerActivity[i] > 0) {
+      if (itemsPerActivity[i] === 0) {
+        // Activity has 0 items - likely wrong format that parser can't read
+        issues.push({
+          type: 'error',
+          category: 'broken-activity',
+          message: `Activity ${i + 1} (${activityTypes[i] || 'unknown'}) has 0 items - check format matches parser expectations`,
+        });
+      } else if (itemsPerActivity[i] < req.itemsPerActivity) {
         issues.push({
           type: 'info',
           category: 'requirements',

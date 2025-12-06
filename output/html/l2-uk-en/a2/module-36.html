@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 36: Being &amp; Becoming | Ukrainian A2</title>
+  <title>Module 36: Root Families II | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 36: Being &amp; Becoming</h1>
+    <h1>Module 36: Root Families II</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Select</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,493 +497,571 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Being &amp; Becoming</h2>
-        <p style="color:var(--text-muted)">Professions with Instrumental</p>
+        <span class="level-badge">A2 · A2.4</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Root Families II</h2>
+        <p style="color:var(--text-muted)">Perception and Speech Roots</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="whatdoyoudo">What Do You Do?</h3>
-<p>In English, we say "I am a doctor" or "She works as a teacher." Ukrainian uses the <strong>instrumental case</strong> to express professions with certain verbs.</p>
-<p><strong>The pattern:</strong></p>
-<ul>
-<li>Він <strong>лікар</strong>. (He's a doctor. - nominative, simple statement)</li>
-<li>Він працює <strong>лікарем</strong>. (He works as a doctor. - instrumental)</li>
-<li>Він став <strong>лікарем</strong>. (He became a doctor. - instrumental)</li>
-</ul>
-<p>When did this happen? The instrumental shows the <em>role</em> someone plays, while nominative is a basic identity statement.</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>This instrumental use is called the "predicative instrumental" - it marks what role or function something serves. It emphasizes the profession as a <em>role</em> you perform, not just a label. "Працювати лікарем" means you actively fulfill the doctor role!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="threekeyverbs">Three Key Verbs</h3>
+      <div class="md-content"><p>Perception and communication are fundamental to human experience. In this module, you'll explore four root families: БАЧ- (see), СЛУХ-/ЧУ- (hear), ГОВОР-/МОВ- (speak), and ДУМ- (think). These roots create dozens of everyday words about how we perceive the world and express ourselves!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The БАЧ- Family (See)</h3>
+      <div class="md-content"><h2 id="therootanditsmeaning">The Root and Its Meaning</h2>
+<p><strong>бач-</strong> (also <strong>вид-</strong>, <strong>гляд-</strong>) = see, look, view</p>
+<p>These related roots create vocabulary about seeing and vision.</p>
+<hr />
+<h2 id="basicderivativeswith">Basic Derivatives with БАЧ-</h2>
 <table>
 <thead>
 <tr>
-<th>Verb</th>
-<th>Meaning</th>
-<th>Case</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>бути</td>
-<td>to be</td>
-<td>instrumental</td>
-<td>Він був студентом.</td>
-</tr>
-<tr>
-<td>стати</td>
-<td>to become</td>
-<td>instrumental</td>
-<td>Вона стала вчителькою.</td>
-</tr>
-<tr>
-<td>працювати</td>
-<td>to work as</td>
-<td>instrumental</td>
-<td>Я працюю інженером.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Important:</strong> In present tense, "to be" is usually omitted:</p>
-<ul>
-<li>Він лікар. (He's a doctor - nominative, no verb)</li>
-<li>Він <strong>є</strong> лікарем. (He is a doctor - formal, with instrumental)</li>
-</ul>
-<p>But in past and future, instrumental is common:</p>
-<ul>
-<li>Він <strong>був</strong> лікарем. (He was a doctor.)</li>
-<li>Він <strong>буде</strong> лікарем. (He will be a doctor.)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Nominative vs Instrumental</strong></p>
-  <ul>
-  <li><strong>Nominative:</strong> Simple identification - Він лікар. (He's a doctor.)</li>
-  <li><strong>Instrumental:</strong> Role/function - Він працює лікарем. (He works as a doctor.)</li>
-  </ul>
-  <p>Instrumental emphasizes the <em>activity</em> of being something!</p>
-</blockquote>
-<h3 id="commonprofessionsmasculine">Common Professions - Masculine</h3>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Instrumental</th>
+<th>Word</th>
+<th>Parts</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>лікар</td>
-<td>лікар<strong>ем</strong></td>
-<td>doctor</td>
+<td>бачити</td>
+<td>бач- + -ити</td>
+<td>to see</td>
 </tr>
 <tr>
-<td>інженер</td>
-<td>інженер<strong>ом</strong></td>
-<td>engineer</td>
+<td>бачення</td>
+<td>бач- + -ення</td>
+<td>vision, view</td>
 </tr>
 <tr>
-<td>програміст</td>
-<td>програміст<strong>ом</strong></td>
-<td>programmer</td>
+<td>побачити</td>
+<td>по- + бач- + -ити</td>
+<td>to see (pf)</td>
 </tr>
 <tr>
-<td>вчитель</td>
-<td>вчител<strong>ем</strong></td>
-<td>teacher</td>
+<td>побачення</td>
+<td>по- + бач- + -ення</td>
+<td>date, meeting</td>
 </tr>
 <tr>
-<td>журналіст</td>
-<td>журналіст<strong>ом</strong></td>
-<td>journalist</td>
-</tr>
-<tr>
-<td>юрист</td>
-<td>юрист<strong>ом</strong></td>
-<td>lawyer</td>
-</tr>
-<tr>
-<td>бухгалтер</td>
-<td>бухгалтер<strong>ом</strong></td>
-<td>accountant</td>
-</tr>
-<tr>
-<td>менеджер</td>
-<td>менеджер<strong>ом</strong></td>
-<td>manager</td>
-</tr>
-<tr>
-<td>директор</td>
-<td>директор<strong>ом</strong></td>
-<td>director</td>
-</tr>
-<tr>
-<td>водій</td>
-<td>воді<strong>єм</strong></td>
-<td>driver</td>
-</tr>
-<tr>
-<td>пілот</td>
-<td>пілот<strong>ом</strong></td>
-<td>pilot</td>
-</tr>
-<tr>
-<td>музикант</td>
-<td>музикант<strong>ом</strong></td>
-<td>musician</td>
-</tr>
-<tr>
-<td>художник</td>
-<td>художник<strong>ом</strong></td>
-<td>artist</td>
-</tr>
-<tr>
-<td>письменник</td>
-<td>письменник<strong>ом</strong></td>
-<td>writer</td>
+<td>передбачення</td>
+<td>перед- + бач- + -ення</td>
+<td>prediction</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example sentences:</strong></p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Він працює <strong>лікарем</strong> у лікарні. - He works as a doctor at a hospital.</li>
-<li>Мій брат став <strong>програмістом</strong>. - My brother became a programmer.</li>
-<li>Батько був <strong>інженером</strong>. - Father was an engineer.</li>
+<li>Я <strong>бачу</strong> тебе! (I see you!)</li>
+<li>У нього хороше <strong>бачення</strong> ситуації. (He has a good view of the situation.)</li>
+<li>Рада тебе <strong>побачити</strong>! (Nice to see you!)</li>
+<li>У нас <strong>побачення</strong> завтра. (We have a date tomorrow.)</li>
+<li>Це було моє <strong>передбачення</strong>. (This was my prediction.)</li>
 </ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>📜 <strong>History Bite: Soviet Professions</strong></p>
-  <p>During Soviet times, certain professions carried special prestige: інженер (engineer), лікар (doctor), вчитель (teacher). These were called "інтелігенція" (intelligentsia). Today, професіонал (professional) and спеціаліст (specialist) are valued across all fields.</p>
+  <p>"Побачення" means both "meeting" and "date" — from "to see each other"!</p>
 </blockquote>
-<h3 id="commonprofessionsfeminine">Common Professions - Feminine</h3>
+<hr />
+<h2 id="relatedrootlook">Related Root: ГЛЯД- (Look)</h2>
 <table>
 <thead>
 <tr>
-<th>Nominative</th>
-<th>Instrumental</th>
+<th>Word</th>
+<th>Parts</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>лікарка</td>
-<td>лікарк<strong>ою</strong></td>
-<td>doctor (f)</td>
+<td>глядач</td>
+<td>гляд- + -ач</td>
+<td>viewer, spectator</td>
 </tr>
 <tr>
-<td>вчителька</td>
-<td>вчительк<strong>ою</strong></td>
-<td>teacher (f)</td>
+<td>погляд</td>
+<td>по- + гляд</td>
+<td>look, view, glance</td>
 </tr>
 <tr>
-<td>журналістка</td>
-<td>журналістк<strong>ою</strong></td>
-<td>journalist (f)</td>
+<td>вигляд</td>
+<td>ви- + гляд</td>
+<td>appearance</td>
 </tr>
 <tr>
-<td>юристка</td>
-<td>юристк<strong>ою</strong></td>
-<td>lawyer (f)</td>
+<td>огляд</td>
+<td>о- + гляд</td>
+<td>review, overview</td>
 </tr>
 <tr>
-<td>програмістка</td>
-<td>програмістк<strong>ою</strong></td>
-<td>programmer (f)</td>
-</tr>
-<tr>
-<td>медсестра</td>
-<td>медсестр<strong>ою</strong></td>
-<td>nurse</td>
-</tr>
-<tr>
-<td>секретарка</td>
-<td>секретарк<strong>ою</strong></td>
-<td>secretary (f)</td>
-</tr>
-<tr>
-<td>актриса</td>
-<td>актрис<strong>ою</strong></td>
-<td>actress</td>
-</tr>
-<tr>
-<td>співачка</td>
-<td>співачк<strong>ою</strong></td>
-<td>singer (f)</td>
-</tr>
-<tr>
-<td>письменниця</td>
-<td>письменниц<strong>ею</strong></td>
-<td>writer (f)</td>
+<td>догляд</td>
+<td>до- + гляд</td>
+<td>care, supervision</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example sentences:</strong></p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Вона працює <strong>вчителькою</strong>. - She works as a teacher.</li>
-<li>Моя сестра стала <strong>лікаркою</strong>. - My sister became a doctor.</li>
-<li>Мама була <strong>медсестрою</strong>. - Mom was a nurse.</li>
+<li><strong>Глядачі</strong> аплодували. (The spectators applauded.)</li>
+<li>Твій <strong>погляд</strong> на це цікавий. (Your view on this is interesting.)</li>
+<li>Гарний <strong>вигляд</strong>! (Nice appearance!)</li>
+<li>Напишу <strong>огляд</strong> фільму. (I'll write a movie review.)</li>
+<li><strong>Догляд</strong> за дітьми важливий. (Childcare is important.)</li>
 </ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: Gender in Professions</strong></p>
-  <p>Ukrainian has feminine forms for most professions. Using them is standard and respectful. Some newer professions (менеджер, програміст) often use masculine forms for women too: "Вона - менеджер" or "Вона працює менеджером." Both are acceptable!</p>
+  <p>"Глядач" (viewer) — you'll see this on TV ratings: <em>мільйон глядачів</em> — a million viewers!</p>
 </blockquote>
-<h3 id="tobecome">стати - To Become</h3>
-<p><strong>Conjugation (perfective):</strong></p>
+<hr />
+<h2 id="relatedrootseevisible">Related Root: ВИД- (See/Visible)</h2>
 <table>
 <thead>
 <tr>
-<th>Person</th>
-<th>Present/Future</th>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>я</td>
-<td>стану</td>
+<td>видіти</td>
+<td>вид- + -іти</td>
+<td>to see (archaic)</td>
 </tr>
 <tr>
-<td>ти</td>
-<td>станеш</td>
+<td>видний</td>
+<td>вид- + -ний</td>
+<td>visible, prominent</td>
 </tr>
 <tr>
-<td>він/вона</td>
-<td>стане</td>
+<td>очевидний</td>
+<td>очі + вид- + -ний</td>
+<td>obvious (eye-visible)</td>
 </tr>
 <tr>
-<td>ми</td>
-<td>станемо</td>
+<td>вид</td>
+<td>—</td>
+<td>view, species, kind</td>
 </tr>
 <tr>
-<td>ви</td>
-<td>станете</td>
-</tr>
-<tr>
-<td>вони</td>
-<td>стануть</td>
+<td>невидимий</td>
+<td>не- + вид- + -имий</td>
+<td>invisible</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Past tense:</strong></p>
-<ul>
-<li>він став</li>
-<li>вона стала</li>
-<li>воно стало</li>
-<li>вони стали</li>
-</ul>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>Я хочу <strong>стати</strong> лікарем. - I want to become a doctor.</li>
-<li>Вона <strong>стала</strong> відомою письменницею. - She became a famous writer.</li>
-<li>Він <strong>став</strong> директором компанії. - He became company director.</li>
-<li>Ми <strong>станемо</strong> професіоналами. - We will become professionals.</li>
+<li>Це <strong>очевидно</strong>! (This is obvious!)</li>
+<li>Зірки <strong>видні</strong> на небі. (Stars are visible in the sky.)</li>
+<li>Чудовий <strong>вид</strong> з вікна! (Wonderful view from the window!)</li>
+<li>Він став <strong>невидимим</strong>. (He became invisible.)</li>
 </ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Want to Become</strong></p>
-  <p>The most common pattern: хотіти + стати + INSTRUMENTAL</p>
-  <ul>
-  <li>Ким ти хочеш стати? - What do you want to become?</li>
-  <li>Я хочу стати лікарем. - I want to become a doctor.</li>
-  <li>Вона мріє стати акторкою. - She dreams of becoming an actress.</li>
-  </ul>
-</blockquote>
-<h3 id="moreverbsinstrumentalpredicate">More Verbs + Instrumental Predicate</h3>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The СЛУХ-/ЧУ- Family (Hear)</h3>
+      <div class="md-content"><h2 id="therootanditsmeaning">The Root and Its Meaning</h2>
+<p><strong>слух-</strong> and <strong>чу-</strong> = hear, listen</p>
+<p>Two related roots for hearing-related vocabulary.</p>
+<hr />
+<h2 id="basicderivativeswith">Basic Derivatives with СЛУХ-</h2>
 <table>
 <thead>
 <tr>
-<th>Verb</th>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>слухати</td>
+<td>слух- + -ати</td>
+<td>to listen</td>
+</tr>
+<tr>
+<td>слух</td>
+<td>—</td>
+<td>hearing, rumor</td>
+</tr>
+<tr>
+<td>слухач</td>
+<td>слух- + -ач</td>
+<td>listener</td>
+</tr>
+<tr>
+<td>послухати</td>
+<td>по- + слух- + -ати</td>
+<td>to listen (pf)</td>
+</tr>
+<tr>
+<td>прослухати</td>
+<td>про- + слух- + -ати</td>
+<td>to listen through</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Слухай</strong> уважно! (Listen carefully!)</li>
+<li>У нього добрий <strong>слух</strong>. (He has good hearing.)</li>
+<li>Радіо має багато <strong>слухачів</strong>. (The radio has many listeners.)</li>
+<li><strong>Послухай</strong> цю пісню! (Listen to this song!)</li>
+<li><strong>Прослухав</strong> всю лекцію. (Listened through the whole lecture.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>"Слух" also means "rumor": <em>Це лише слухи</em> — These are just rumors!</p>
+</blockquote>
+<hr />
+<h2 id="theroothearfeel">The ЧУ- Root (Hear/Feel)</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>чути</td>
+<td>чу- + -ти</td>
+<td>to hear</td>
+</tr>
+<tr>
+<td>почути</td>
+<td>по- + чу- + -ти</td>
+<td>to hear (pf)</td>
+</tr>
+<tr>
+<td>почуття</td>
+<td>по- + чу- + -ття</td>
+<td>feeling, emotion</td>
+</tr>
+<tr>
+<td>відчуття</td>
+<td>від- + чу- + -ття</td>
+<td>sensation</td>
+</tr>
+<tr>
+<td>співчуття</td>
+<td>спів- + чу- + -ття</td>
+<td>sympathy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Я <strong>чую</strong> музику. (I hear music.)</li>
+<li><strong>Почув</strong> голос за спиною. (Heard a voice behind me.)</li>
+<li>Яке прекрасне <strong>почуття</strong>! (What a beautiful feeling!)</li>
+<li>Дивне <strong>відчуття</strong>. (Strange sensation.)</li>
+<li>Моє <strong>співчуття</strong>. (My sympathies.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>"Почуття" (feeling) comes from "чути" (hear) — Ukrainians "hear" emotions!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The ГОВОР-/МОВ- Family (Speak)</h3>
+      <div class="md-content"><h2 id="therootanditsmeaning">The Root and Its Meaning</h2>
+<p><strong>говор-</strong> and <strong>мов-</strong> = speak, talk, say</p>
+<p>These roots create all speech-related vocabulary.</p>
+<hr />
+<h2 id="basicderivativeswith">Basic Derivatives with ГОВОР-</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>говорити</td>
+<td>говор- + -ити</td>
+<td>to speak</td>
+</tr>
+<tr>
+<td>розмова</td>
+<td>роз- + мов- + -а</td>
+<td>conversation</td>
+</tr>
+<tr>
+<td>переговори</td>
+<td>пере- + говор- + -и</td>
+<td>negotiations</td>
+</tr>
+<tr>
+<td>розговір</td>
+<td>роз- + говор</td>
+<td>conversation</td>
+</tr>
+<tr>
+<td>виговор</td>
+<td>ви- + говор</td>
+<td>pronunciation; reprimand</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Він <strong>говорить</strong> українською. (He speaks Ukrainian.)</li>
+<li>Цікава <strong>розмова</strong>! (Interesting conversation!)</li>
+<li><strong>Переговори</strong> тривають. (Negotiations are ongoing.)</li>
+<li>Важкий <strong>виговір</strong> слова. (Difficult word pronunciation.)</li>
+</ul>
+<hr />
+<h2 id="therootlanguagespeech">The МОВ- Root (Language/Speech)</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>мова</td>
+<td>мов- + -а</td>
+<td>language</td>
+</tr>
+<tr>
+<td>мовець</td>
+<td>мов- + -ець</td>
+<td>speaker</td>
+</tr>
+<tr>
+<td>мовлення</td>
+<td>мов- + -лення</td>
+<td>speech</td>
+</tr>
+<tr>
+<td>мовчати</td>
+<td>мовч- + -ати</td>
+<td>to be silent</td>
+</tr>
+<tr>
+<td>мовчання</td>
+<td>мовч- + -ання</td>
+<td>silence</td>
+</tr>
+<tr>
+<td>мовчазний</td>
+<td>мовч- + -азний</td>
+<td>silent, taciturn</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Українська мова</strong> — моя рідна. (Ukrainian is my native language.)</li>
+<li>Він хороший <strong>мовець</strong>. (He's a good speaker.)</li>
+<li><strong>Мовлення</strong> дитини розвивається. (The child's speech is developing.)</li>
+<li>Чому ти <strong>мовчиш</strong>? (Why are you silent?)</li>
+<li><strong>Мовчання</strong> — золото. (Silence is golden.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>"Мовчання ягнят" — The Silence of the Lambs! Uses "мовчання" from the МОВ- root!</p>
+</blockquote>
+<hr />
+<h2 id="antonymsspeakvssilent">Antonyms: Speak vs. Silent</h2>
+<table>
+<thead>
+<tr>
+<th>Speaking</th>
+<th>Silent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>говорити (speak)</td>
+<td>мовчати (be silent)</td>
+</tr>
+<tr>
+<td>розмова (conversation)</td>
+<td>мовчання (silence)</td>
+</tr>
+<tr>
+<td>балакучий (talkative)</td>
+<td>мовчазний (silent)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Він любить <strong>говорити</strong>, вона віддає перевагу <strong>мовчати</strong>.</li>
+<li>Після довгої <strong>розмови</strong> настало <strong>мовчання</strong>.</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The ДУМ- Family (Think)</h3>
+      <div class="md-content"><h2 id="therootanditsmeaning">The Root and Its Meaning</h2>
+<p><strong>дум-</strong> = think, thought</p>
+<p>This root creates vocabulary about thinking and ideas.</p>
+<hr />
+<h2 id="basicderivatives">Basic Derivatives</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>думати</td>
+<td>дум- + -ати</td>
+<td>to think</td>
+</tr>
+<tr>
+<td>думка</td>
+<td>дум- + -ка</td>
+<td>thought, opinion</td>
+</tr>
+<tr>
+<td>подумати</td>
+<td>по- + дум- + -ати</td>
+<td>to think (pf)</td>
+</tr>
+<tr>
+<td>обдумати</td>
+<td>об- + дум- + -ати</td>
+<td>to consider</td>
+</tr>
+<tr>
+<td>роздуми</td>
+<td>роз- + дум- + -и</td>
+<td>reflections</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Я <strong>думаю</strong>, що це правда. (I think this is true.)</li>
+<li>Цікава <strong>думка</strong>! (Interesting thought!)</li>
+<li><strong>Подумай</strong> перед відповіддю. (Think before answering.)</li>
+<li>Треба <strong>обдумати</strong> це рішення. (Need to consider this decision.)</li>
+<li>Він у глибоких <strong>роздумах</strong>. (He's in deep thought.)</li>
+</ul>
+<hr />
+<h2 id="morewords">More ДУМ- Words</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Parts</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>надумати</td>
+<td>на- + дум- + -ати</td>
+<td>to decide, make up</td>
+</tr>
+<tr>
+<td>задуматися</td>
+<td>за- + дум- + -атися</td>
+<td>to become thoughtful</td>
+</tr>
+<tr>
+<td>передумати</td>
+<td>пере- + дум- + -ати</td>
+<td>to change one's mind</td>
+</tr>
+<tr>
+<td>придумати</td>
+<td>при- + дум- + -ати</td>
+<td>to invent, come up with</td>
+</tr>
+<tr>
+<td>вигадка</td>
+<td>ви- + гад- + -ка</td>
+<td>fiction, invention</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Я <strong>надумав</strong> їхати. (I've decided to go.)</li>
+<li>Він <strong>задумався</strong> над проблемою. (He got thoughtful about the problem.)</li>
+<li>Я <strong>передумав</strong>! (I changed my mind!)</li>
+<li>Вона <strong>придумала</strong> цікаву гру. (She came up with an interesting game.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Quest: <em>Придумай план атаки</em> — Come up with an attack plan!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Root Summary</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Root</th>
 <th>Meaning</th>
-<th>Example</th>
+<th>Key Words</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>залишатися</td>
-<td>remain, stay</td>
-<td>Він залишається директором.</td>
+<td>бач-</td>
+<td>see</td>
+<td>бачити, побачення, передбачення</td>
 </tr>
 <tr>
-<td>виявитися</td>
-<td>turn out to be</td>
-<td>Він виявився хорошим другом.</td>
+<td>гляд-</td>
+<td>look</td>
+<td>погляд, вигляд, огляд, глядач</td>
 </tr>
 <tr>
-<td>вважатися</td>
-<td>be considered</td>
-<td>Вона вважається експертом.</td>
+<td>вид-</td>
+<td>visible</td>
+<td>видний, очевидний, невидимий</td>
 </tr>
 <tr>
-<td>називатися</td>
-<td>be called</td>
-<td>Це називається прогресом.</td>
+<td>слух-</td>
+<td>hear/listen</td>
+<td>слухати, слух, слухач</td>
 </tr>
 <tr>
-<td>служити</td>
-<td>serve as</td>
-<td>Він служить офіцером.</td>
+<td>чу-</td>
+<td>hear/feel</td>
+<td>чути, почуття, відчуття</td>
+</tr>
+<tr>
+<td>говор-</td>
+<td>speak</td>
+<td>говорити, розмова, переговори</td>
+</tr>
+<tr>
+<td>мов-</td>
+<td>language</td>
+<td>мова, мовлення, мовчати</td>
+</tr>
+<tr>
+<td>дум-</td>
+<td>think</td>
+<td>думати, думка, роздуми</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Він <strong>залишається</strong> найкращим спеціалістом. - He remains the best specialist.</li>
-<li>Вона <strong>вважається</strong> експертом у цій галузі. - She's considered an expert in this field.</li>
-<li>Це <strong>виявилося</strong> помилкою. - This turned out to be a mistake.</li>
-</ul>
-<h3 id="askingaboutprofessions">Asking About Professions</h3>
-<p><strong>Ким? - As whom? / What (profession)?</strong></p>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ким ти працюєш?</td>
-<td>Я працюю вчителем.</td>
-</tr>
-<tr>
-<td>Ким він став?</td>
-<td>Він став лікарем.</td>
-</tr>
-<tr>
-<td>Ким ти хочеш бути?</td>
-<td>Я хочу бути інженером.</td>
-</tr>
-<tr>
-<td>Ким вона була?</td>
-<td>Вона була медсестрою.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>More detailed questions:</strong></p>
-<ul>
-<li><strong>Де</strong> ти працюєш? - Where do you work?</li>
-<li><strong>Ким</strong> ти працюєш? - What do you work as?</li>
-<li><strong>Скільки</strong> ти заробляєш? - How much do you earn? (informal)</li>
-<li>Тобі <strong>подобається</strong> твоя робота? - Do you like your job?</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The question "Ким?" uses instrumental case - it's literally asking "By whom?" or "As whom?" This perfectly matches the instrumental answers: "Ким ти працюєш?" - "Лікарем" (As a doctor).</p>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="transformtoinstrumental">Transform to Instrumental</h3>
-<p>Give the instrumental form of these professions:</p>
-<p><strong>Masculine:</strong></p>
-<ol>
-<li><p>лікар</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">лікарем</div></div>
-<ol start="2">
-<li><p>інженер</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">інженером</div></div>
-<ol start="3">
-<li><p>вчитель</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">вчителем</div></div>
-<ol start="4">
-<li><p>програміст</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">програмістом</div></div>
-<ol start="5">
-<li><p>водій</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">водієм</div></div>
-<p><strong>Feminine:</strong></p>
-<ol>
-<li><p>лікарка</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">лікаркою</div></div>
-<ol start="2">
-<li><p>вчителька</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">вчителькою</div></div>
-<ol start="3">
-<li><p>медсестра</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">медсестрою</div></div>
-<ol start="4">
-<li><p>актриса</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">актрисою</div></div>
-<ol start="5">
-<li><p>письменниця</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">письменницею</div></div>
-<h3 id="completethesentences">Complete the Sentences</h3>
-<p>Fill in the correct form:</p>
-<ol>
-<li><p>Він працює ___ (лікар).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">лікарем</div></div>
-<ol start="2">
-<li><p>Вона стала ___ (вчителька).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">вчителькою</div></div>
-<ol start="3">
-<li><p>Мій брат хоче бути ___ (програміст).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">програмістом</div></div>
-<ol start="4">
-<li><p>Батько був ___ (інженер).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">інженером</div></div>
-<ol start="5">
-<li><p>Ким ти працюєш? - ___ (журналіст).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Журналістом.</div></div>
-<ol start="6">
-<li><p>Вона мріє стати ___ (актриса).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">актрисою</div></div>
-<h3 id="builddialogues">Build Dialogues</h3>
-<p>Create mini-dialogues:</p>
-<ol>
-<li><p>A: Ким ти працюєш? B: ___ (teacher)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">Я працюю вчителем/вчителькою.</div></div>
-<ol start="2">
-<li><p>A: Ким став твій брат? B: ___ (programmer)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">Він став програмістом.</div></div>
-<ol start="3">
-<li><p>A: Ким ти хочеш бути? B: ___ (doctor)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">Я хочу бути лікарем/лікаркою.</div></div>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Meeting someone new</strong></p>
-<ul>
-<li>Привіт! Я Олег. Ким ти працюєш?</li>
-<li>Я працюю програмістом в IT-компанії. А ти?</li>
-<li>Я журналіст. Пишу для онлайн-видання.</li>
-<li>Цікаво! Тобі подобається твоя робота?</li>
-</ul>
-<p><strong>Scenario 2: Career change</strong></p>
-<ul>
-<li>Я чула, ти змінив роботу?</li>
-<li>Так, раніше я був менеджером, а тепер став підприємцем.</li>
-<li>Вау! Власний бізнес?</li>
-<li>Так, відкрив невелике кафе.</li>
-</ul>
-<p><strong>Scenario 3: Dreams and goals</strong></p>
-<ul>
-<li>Ким ти хотів стати в дитинстві?</li>
-<li>Я мріяв стати пілотом!</li>
-<li>А тепер?</li>
-<li>Тепер я працюю бухгалтером. Але це теж цікаво!</li>
-</ul>
-<hr />
-<hr />
-<hr />
 <hr />
 <hr />
 <hr /></div>
@@ -965,112 +1070,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="keyverbsinstrumental">Key Verbs + Instrumental</h2>
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>бути</td>
-<td>be</td>
-<td>був лікарем</td>
-</tr>
-<tr>
-<td>стати</td>
-<td>become</td>
-<td>став інженером</td>
-</tr>
-<tr>
-<td>працювати</td>
-<td>work as</td>
-<td>працюю вчителем</td>
-</tr>
-<tr>
-<td>залишатися</td>
-<td>remain</td>
-<td>залишається директором</td>
-</tr>
-<tr>
-<td>вважатися</td>
-<td>be considered</td>
-<td>вважається експертом</td>
-</tr>
-</tbody>
-</table>
-<h2 id="commonprofessionendings">Common Profession Endings</h2>
-<table>
-<thead>
-<tr>
-<th>Masc. ending</th>
-<th>Fem. ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-ер/-ор</td>
-<td>-ерка/-орка</td>
-<td>інженер → інженерка</td>
-</tr>
-<tr>
-<td>-іст</td>
-<td>-істка</td>
-<td>програміст → програмістка</td>
-</tr>
-<tr>
-<td>-ник</td>
-<td>-ниця</td>
-<td>письменник → письменниця</td>
-</tr>
-<tr>
-<td>-тель</td>
-<td>-телька</td>
-<td>вчитель → вчителька</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keyquestion">Key Question</h2>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Meaning</th>
-<th>Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ким ти працюєш?</td>
-<td>What do you work as?</td>
-<td>Лікарем.</td>
-</tr>
-<tr>
-<td>Ким він став?</td>
-<td>What did he become?</td>
-<td>Інженером.</td>
-</tr>
-<tr>
-<td>Ким ти хочеш бути?</td>
-<td>What do you want to be?</td>
-<td>Програмістом.</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Use instrumental with бути/стати/працювати for professions</li>
-  <li>"Ким?" is the question word for profession (instrumental)</li>
-  <li>Masculine professions: -ом/-ем (лікарем, вчителем)</li>
-  <li>Feminine professions: -ою/-ею (лікаркою, вчителькою)</li>
-  <li>Past/future "to be" often uses instrumental: був студентом, буде лікарем</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>You've mastered four root families:</p>
+<ul>
+<li><strong>БАЧ-/ГЛЯД-/ВИД- (see)</strong>: бачити, погляд, вигляд, очевидний, глядач</li>
+<li><strong>СЛУХ-/ЧУ- (hear)</strong>: слухати, слухач, чути, почуття, відчуття</li>
+<li><strong>ГОВОР-/МОВ- (speak)</strong>: говорити, розмова, мова, мовчати, мовлення</li>
+<li><strong>ДУМ- (think)</strong>: думати, думка, роздуми, придумати, передумати</li>
+</ul>
+<p>With these roots plus the ХОД-, ПИС-, and ЧИТ- families from the previous module, you can now decode hundreds of Ukrainian words!</p>
+<p><strong>Coming up next</strong>: Food &amp; Cooking — vocabulary expansion in the culinary domain!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1079,69 +1087,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Professions with Instrumental</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Root Recognition</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Roots and Meanings</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Sentence Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Root Family Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Root Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Sort by Gender</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/6</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Root Families</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Choose Professions and Verbs</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="select-container"></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Complete with Root Words</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
       <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Arrange Words into Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Word</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Root Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (36)</h3>
+        <h3>Словник (29)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1149,9 +1164,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">бути</td><td class="vocab-ipa">/ˈbutɪ/</td><td class="vocab-en">to be</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">стати</td><td class="vocab-ipa">/ˈstɑtɪ/</td><td class="vocab-en">to become</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">ставати</td><td class="vocab-ipa">/stɑˈvɑtɪ/</td><td class="vocab-en">to become (impf)</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">працювати</td><td class="vocab-ipa">/prɑtsʲuˈvɑtɪ/</td><td class="vocab-en">to work</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">служити</td><td class="vocab-ipa">/sluˈʒɪtɪ/</td><td class="vocab-en">to serve</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">залишатися</td><td class="vocab-ipa">/zɑlɪˈʃɑtɪsʲɑ/</td><td class="vocab-en">to remain</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">виявитися</td><td class="vocab-ipa">/vɪjɑˈvɪtɪsʲɑ/</td><td class="vocab-en">to turn out</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">вважатися</td><td class="vocab-ipa">/vvɑˈʒɑtɪsʲɑ/</td><td class="vocab-en">to be considered</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">називатися</td><td class="vocab-ipa">/nɑzɪˈvɑtɪsʲɑ/</td><td class="vocab-en">to be called</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">інженер</td><td class="vocab-ipa">/inʒɛˈnɛr/</td><td class="vocab-en">engineer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">програміст</td><td class="vocab-ipa">/proɦrɑˈmʲist/</td><td class="vocab-en">programmer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">журналіст</td><td class="vocab-ipa">/ʒurnɑˈlʲist/</td><td class="vocab-en">journalist</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">юрист</td><td class="vocab-ipa">/juˈrɪst/</td><td class="vocab-en">lawyer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бухгалтер</td><td class="vocab-ipa">/buxˈɦɑltɛr/</td><td class="vocab-en">accountant</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пілот</td><td class="vocab-ipa">/pʲiˈlot/</td><td class="vocab-en">pilot</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">музикант</td><td class="vocab-ipa">/muzɪˈkɑnt/</td><td class="vocab-en">musician</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">художник</td><td class="vocab-ipa">/xuˈdoʒnɪk/</td><td class="vocab-en">artist</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">письменник</td><td class="vocab-ipa">/pɪsʲˈmɛnnɪk/</td><td class="vocab-en">writer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перекладач</td><td class="vocab-ipa">/pɛrɛklɑˈdɑtʃ/</td><td class="vocab-en">translator</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">керівник</td><td class="vocab-ipa">/kɛrʲivˈnɪk/</td><td class="vocab-en">manager, head</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">директор</td><td class="vocab-ipa">/dɪˈrɛktor/</td><td class="vocab-en">director</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">менеджер</td><td class="vocab-ipa">/mɛnɛd͡ʒɛr/</td><td class="vocab-en">manager</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підприємець</td><td class="vocab-ipa">/pʲidprɪˈjɛmɛtsʲ/</td><td class="vocab-en">entrepreneur</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">офіціант</td><td class="vocab-ipa">/ofʲitsʲiˈɑnt/</td><td class="vocab-en">waiter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">продавець</td><td class="vocab-ipa">/prodɑˈvɛtsʲ/</td><td class="vocab-en">seller</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">водій</td><td class="vocab-ipa">/voˈdʲij/</td><td class="vocab-en">driver</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поліцейський</td><td class="vocab-ipa">/polʲiˈt͡sɛjsʲkɪj/</td><td class="vocab-en">police officer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">військовий</td><td class="vocab-ipa">/vʲijˈsʲkovɪj/</td><td class="vocab-en">military person</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спортсмен</td><td class="vocab-ipa">/sportˈsmɛn/</td><td class="vocab-en">athlete</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">студент</td><td class="vocab-ipa">/stuˈdɛnt/</td><td class="vocab-en">student</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пенсіонер</td><td class="vocab-ipa">/pɛnsʲioˈnɛr/</td><td class="vocab-en">pensioner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">безробітний</td><td class="vocab-ipa">/bɛzroˈbʲitnɪj/</td><td class="vocab-en">unemployed</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">актор</td><td class="vocab-ipa">/ɑkˈtɔr/</td><td class="vocab-en">actor</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спеціаліст</td><td class="vocab-ipa">/spɛtsʲiɑˈlʲist/</td><td class="vocab-en">specialist</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">експерт</td><td class="vocab-ipa">/ɛksˈpɛrt/</td><td class="vocab-en">expert</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">професіонал</td><td class="vocab-ipa">/profɛsʲioˈnɑl/</td><td class="vocab-en">professional</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">бачити</td><td class="vocab-ipa">/ˈbatʃɪtɪ/</td><td class="vocab-en">to see</td></tr><tr><td class="vocab-uk">бачення</td><td class="vocab-ipa">/ˈbatʃɛnːa/</td><td class="vocab-en">vision</td></tr><tr><td class="vocab-uk">побачення</td><td class="vocab-ipa">/poˈbatʃɛnːa/</td><td class="vocab-en">date, meeting</td></tr><tr><td class="vocab-uk">передбачення</td><td class="vocab-ipa">/pɛrɛdˈbatʃɛnːa/</td><td class="vocab-en">prediction</td></tr><tr><td class="vocab-uk">погляд</td><td class="vocab-ipa">/ˈpoɦlʲad/</td><td class="vocab-en">look, view</td></tr><tr><td class="vocab-uk">вигляд</td><td class="vocab-ipa">/ˈwɪɦlʲad/</td><td class="vocab-en">appearance</td></tr><tr><td class="vocab-uk">огляд</td><td class="vocab-ipa">/ˈoɦlʲad/</td><td class="vocab-en">review</td></tr><tr><td class="vocab-uk">глядач</td><td class="vocab-ipa">/ɦlʲaˈdatʃ/</td><td class="vocab-en">viewer</td></tr><tr><td class="vocab-uk">слухати</td><td class="vocab-ipa">/ˈsluxatɪ/</td><td class="vocab-en">to listen</td></tr><tr><td class="vocab-uk">слух</td><td class="vocab-ipa">/slux/</td><td class="vocab-en">hearing, rumor</td></tr><tr><td class="vocab-uk">слухач</td><td class="vocab-ipa">/sluˈxatʃ/</td><td class="vocab-en">listener</td></tr><tr><td class="vocab-uk">чути</td><td class="vocab-ipa">/ˈtʃutɪ/</td><td class="vocab-en">to hear</td></tr><tr><td class="vocab-uk">почуття</td><td class="vocab-ipa">/poˈtʃutːa/</td><td class="vocab-en">feeling</td></tr><tr><td class="vocab-uk">відчуття</td><td class="vocab-ipa">/widˈtʃutːa/</td><td class="vocab-en">sensation</td></tr><tr><td class="vocab-uk">співчуття</td><td class="vocab-ipa">/spiwˈtʃutːa/</td><td class="vocab-en">sympathy</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦowoˈrɪtɪ/</td><td class="vocab-en">to speak</td></tr><tr><td class="vocab-uk">розмова</td><td class="vocab-ipa">/rozˈmowa/</td><td class="vocab-en">conversation</td></tr><tr><td class="vocab-uk">мова</td><td class="vocab-ipa">/ˈmowa/</td><td class="vocab-en">language</td></tr><tr><td class="vocab-uk">мовлення</td><td class="vocab-ipa">/ˈmowlɛnːa/</td><td class="vocab-en">speech</td></tr><tr><td class="vocab-uk">мовчати</td><td class="vocab-ipa">/mowˈtʃatɪ/</td><td class="vocab-en">to be silent</td></tr><tr><td class="vocab-uk">мовчання</td><td class="vocab-ipa">/mowˈtʃanːa/</td><td class="vocab-en">silence</td></tr><tr><td class="vocab-uk">думати</td><td class="vocab-ipa">/ˈdumatɪ/</td><td class="vocab-en">to think</td></tr><tr><td class="vocab-uk">думка</td><td class="vocab-ipa">/ˈdumka/</td><td class="vocab-en">thought, opinion</td></tr><tr><td class="vocab-uk">подумати</td><td class="vocab-ipa">/poˈdumatɪ/</td><td class="vocab-en">to think (pf)</td></tr><tr><td class="vocab-uk">обдумати</td><td class="vocab-ipa">/obˈdumatɪ/</td><td class="vocab-en">to consider</td></tr><tr><td class="vocab-uk">роздуми</td><td class="vocab-ipa">/rozˈdumɪ/</td><td class="vocab-en">reflections</td></tr><tr><td class="vocab-uk">придумати</td><td class="vocab-ipa">/prɪˈdumatɪ/</td><td class="vocab-en">to invent</td></tr><tr><td class="vocab-uk">передумати</td><td class="vocab-ipa">/pɛrɛˈdumatɪ/</td><td class="vocab-en">to change mind</td></tr><tr><td class="vocab-uk">очевидний</td><td class="vocab-ipa">/otʃɛˈwɪdnɪj/</td><td class="vocab-en">obvious</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1163,8 +1178,8 @@ footer {
   </main><footer>Module 36 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Professions with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Мій брат працює ___ (програміст) в IT-компанії.","answer":"програмістом","hints":["програміст"],"options":["програміст","програміста","програмісту","програмістом"]},{"prompt":"Вона хоче стати ___ (лікар) у майбутньому.","answer":"лікарем","hints":["лікар"],"options":["лікар","лікаря","лікарю","лікарем"]},{"prompt":"Раніше він був ___ (вчитель) у школі.","answer":"вчителем","hints":["вчитель"],"options":["вчитель","вчителя","вчителю","вчителем"]},{"prompt":"Моя сестра працює ___ (журналіст) для газети.","answer":"журналістом","hints":["журналіст"],"options":["журналіст","журналіста","журналісту","журналістом"]},{"prompt":"Вона мріє стати відомою ___ (співачка) в Україні.","answer":"співачкою","hints":["співачка"],"options":["співачка","співачки","співачці","співачкою"]},{"prompt":"Мій тато все життя працював ___ (інженер).","answer":"інженером","hints":["інженер"],"options":["інженер","інженера","інженеру","інженером"]},{"prompt":"Ким ти хочеш стати — ___ (художник) чи музикантом?","answer":"художником","hints":["художник"],"options":["художник","художника","художнику","художником"]},{"prompt":"Вона вважається найкращою ___ (бухгалтер) у фірмі.","answer":"бухгалтером","hints":["бухгалтер"],"options":["бухгалтер","бухгалтера","бухгалтеру","бухгалтером"]},{"prompt":"Мій друг став успішним ___ (підприємець) у тридцять років.","answer":"підприємцем","hints":["підприємець"],"options":["підприємець","підприємця","підприємцю","підприємцем"]},{"prompt":"Вона працює ___ (офіціантка) у кафе біля університету.","answer":"офіціанткою","hints":["офіціантка"],"options":["офіціантка","офіціантки","офіціантці","офіціанткою"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["програмістом","Мій брат","працює","в IT-компанії","вже п'ять років"],"answer":"Мій брат працює програмістом в IT-компанії вже п'ять років.","translation":"My brother has worked as a programmer at an IT company for five years."},{"words":["лікарем","Вона","хоче","стати","у майбутньому"],"answer":"Вона хоче стати лікарем у майбутньому.","translation":"She wants to become a doctor in the future."},{"words":["вчителем","Раніше","він","був","у школі"],"answer":"Раніше він був вчителем у школі.","translation":"He used to be a teacher at school."},{"words":["журналістом","Моя сестра","працює","для газети","вже рік"],"answer":"Моя сестра працює журналістом для газети вже рік.","translation":"My sister has been working as a journalist for a newspaper for a year."},{"words":["співачкою","Вона","мріє","стати","відомою","в Україні"],"answer":"Вона мріє стати відомою співачкою в Україні.","translation":"She dreams of becoming a famous singer in Ukraine."},{"words":["інженером","Мій тато","все життя","працював","на заводі"],"answer":"Мій тато все життя працював інженером на заводі.","translation":"My dad worked as an engineer at a factory all his life."},{"words":["художником","Ким","ти","хочеш","стати","у майбутньому"],"answer":"Ким ти хочеш стати у майбутньому — художником?","translation":"What do you want to become in the future - an artist?"},{"words":["бухгалтером","Вона","вважається","найкращою","у фірмі"],"answer":"Вона вважається найкращою бухгалтером у фірмі.","translation":"She is considered the best accountant in the company."},{"words":["підприємцем","Мій друг","став","успішним","у тридцять років"],"answer":"Мій друг став успішним підприємцем у тридцять років.","translation":"My friend became a successful entrepreneur at thirty."},{"words":["офіціанткою","Вона","працює","у кафе","біля університету"],"answer":"Вона працює офіціанткою у кафе біля університету.","translation":"She works as a waitress at a cafe near the university."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"програміст","right":"programmer"},{"left":"журналіст","right":"journalist"},{"left":"підприємець","right":"entrepreneur"},{"left":"художник","right":"artist"},{"left":"юрист","right":"lawyer"},{"left":"ішов","right":"went (m)"},{"left":"станція","right":"station"},{"left":"спеціаліст","right":"specialist"},{"left":"виявитися","right":"to turn out"},{"left":"експерт","right":"expert"},{"left":"вважатися","right":"to be considered"},{"left":"дешево","right":"cheap"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"експерт\" mean?","options":["expert","back","that (neuter)","to advise"],"correctIndex":0,"explanation":"\"експерт\" means \"expert\""},{"question":"What does \"залишатися\" mean?","options":["to hear","to appear in dream","metro","to remain"],"correctIndex":3,"explanation":"\"залишатися\" means \"to remain\""},{"question":"What does \"музикант\" mean?","options":["thunderstorm","thing","Kyiv","musician"],"correctIndex":3,"explanation":"\"музикант\" means \"musician\""},{"question":"What does \"письменник\" mean?","options":["store","bill, check","writer","to him/it"],"correctIndex":2,"explanation":"\"письменник\" means \"writer\""},{"question":"What does \"стати\" mean?","options":["colleague","to undress","color","to become"],"correctIndex":3,"explanation":"\"стати\" means \"to become\""},{"question":"What does \"служити\" mean?","options":["nine","change (money)","your (m, formal)","to serve"],"correctIndex":3,"explanation":"\"служити\" means \"to serve\""},{"question":"What does \"журналіст\" mean?","options":["clean","tourist","journalist","manager"],"correctIndex":2,"explanation":"\"журналіст\" means \"journalist\""},{"question":"What does \"програміст\" mean?","options":["Genitive: немає, без, для, до","programmer","to turn out","car"],"correctIndex":1,"explanation":"\"програміст\" means \"programmer\""},{"question":"What does \"інженер\" mean?","options":["to be engaged in","engineer","my (plural)","to her"],"correctIndex":1,"explanation":"\"інженер\" means \"engineer\""},{"question":"What does \"професіонал\" mean?","options":["professional","to close","to me","engineer"],"correctIndex":0,"explanation":"\"професіонал\" means \"professional\""},{"question":"What does \"підприємець\" mean?","options":["to pay","discount","to advise","entrepreneur"],"correctIndex":3,"explanation":"\"підприємець\" means \"entrepreneur\""},{"question":"What does \"художник\" mean?","options":["spring","to succeed","to shave","artist"],"correctIndex":3,"explanation":"\"художник\" means \"artist\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"професіонал\" means \"your (masc, informal)\"","isTrue":false,"explanation":"Incorrect. \"професіонал\" means \"professional\""},{"statement":"\"служити\" means \"to serve\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"стати\" means \"jacket\"","isTrue":false,"explanation":"Incorrect. \"стати\" means \"to become\""},{"statement":"\"художник\" means \"artist\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"виявитися\" means \"to turn out\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"експерт\" means \"expert\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"музикант\" means \"musician\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"інженер\" means \"engineer\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"програміст\" means \"programmer\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"вважатися\" means \"dish, course\"","isTrue":false,"explanation":"Incorrect. \"вважатися\" means \"to be considered\""}]}},{"id":"activity-5","type":"group-sort","title":"Sort by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["експерт","спеціаліст","музикант","журналіст","професіонал","бухгалтер"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Choose Professions and Verbs","data":{"type":"select","items":[{"question":"Which are medical professions?","options":[{"text":"лікар","correct":true},{"text":"інженер","correct":false},{"text":"лікарка","correct":true},{"text":"програміст","correct":false},{"text":"медсестра","correct":true},{"text":"юрист","correct":false},{"text":"бухгалтер","correct":false},{"text":"вчитель","correct":false},{"text":"журналіст","correct":false},{"text":"художник","correct":false}]},{"question":"Which are creative professions?","options":[{"text":"лікар","correct":false},{"text":"художник","correct":true},{"text":"інженер","correct":false},{"text":"музикант","correct":true},{"text":"письменник","correct":true},{"text":"бухгалтер","correct":false},{"text":"акторка","correct":true},{"text":"юрист","correct":false},{"text":"водій","correct":false},{"text":"менеджер","correct":false}]},{"question":"Which verbs take instrumental for professions?","options":[{"text":"бути","correct":true},{"text":"мати","correct":false},{"text":"стати","correct":true},{"text":"працювати","correct":true},{"text":"знати","correct":false},{"text":"залишатися","correct":true},{"text":"вважатися","correct":true},{"text":"жити","correct":false},{"text":"розуміти","correct":false},{"text":"любити","correct":false}]},{"question":"Which are feminine profession forms?","options":[{"text":"лікар","correct":false},{"text":"лікарка","correct":true},{"text":"вчитель","correct":false},{"text":"вчителька","correct":true},{"text":"журналістка","correct":true},{"text":"програміст","correct":false},{"text":"медсестра","correct":true},{"text":"інженер","correct":false},{"text":"акторка","correct":true},{"text":"музикант","correct":false}]},{"question":"Which are technical professions?","options":[{"text":"інженер","correct":true},{"text":"лікар","correct":false},{"text":"програміст","correct":true},{"text":"вчитель","correct":false},{"text":"художник","correct":false},{"text":"механік","correct":true},{"text":"журналіст","correct":false},{"text":"письменник","correct":false},{"text":"музикант","correct":false},{"text":"актор","correct":false}]},{"question":"Which are business-related professions?","options":[{"text":"менеджер","correct":true},{"text":"бухгалтер","correct":true},{"text":"директор","correct":true},{"text":"лікар","correct":false},{"text":"вчитель","correct":false},{"text":"юрист","correct":true},{"text":"художник","correct":false},{"text":"експерт","correct":true},{"text":"пілот","correct":false},{"text":"водій","correct":false}]},{"question":"Which require instrumental case with працювати?","options":[{"text":"працювати лікарем","correct":true},{"text":"працювати багато","correct":false},{"text":"працювати вчителем","correct":true},{"text":"працювати добре","correct":false},{"text":"працювати інженером","correct":true},{"text":"працювати журналістом","correct":true},{"text":"працювати швидко","correct":false},{"text":"працювати програмістом","correct":true},{"text":"працювати вдома","correct":false},{"text":"працювати щодня","correct":false}]},{"question":"Which are transportation-related professions?","options":[{"text":"водій","correct":true},{"text":"пілот","correct":true},{"text":"лікар","correct":false},{"text":"вчитель","correct":false},{"text":"програміст","correct":false},{"text":"бухгалтер","correct":false},{"text":"художник","correct":false},{"text":"журналіст","correct":false},{"text":"юрист","correct":false},{"text":"менеджер","correct":false}]},{"question":"Which are education professions?","options":[{"text":"вчитель","correct":true},{"text":"вчителька","correct":true},{"text":"лікар","correct":false},{"text":"інженер","correct":false},{"text":"програміст","correct":false},{"text":"художник","correct":false},{"text":"водій","correct":false},{"text":"пілот","correct":false},{"text":"бухгалтер","correct":false},{"text":"юрист","correct":false}]},{"question":"Which use instrumental to show \"becoming\"?","options":[{"text":"стати лікарем","correct":true},{"text":"знати лікаря","correct":false},{"text":"стати вчителем","correct":true},{"text":"бачити вчителя","correct":false},{"text":"стати інженером","correct":true},{"text":"стати програмістом","correct":true},{"text":"любити професію","correct":false},{"text":"стати журналістом","correct":true},{"text":"шукати роботу","correct":false},{"text":"мати диплом","correct":false}]}]}},{"id":"activity-7","type":"unjumble","title":"Arrange Words into Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["лікарем","працює","лікарні","Він","у"],"answer":"Він працює лікарем у лікарні.","translation":"He works as a doctor at a hospital."},{"words":["стала","вчителькою","Вона","школі","у"],"answer":"Вона стала вчителькою у школі.","translation":"She became a teacher at school."},{"words":["інженером","брат","працює","Мій","заводі","на"],"answer":"Мій брат працює інженером на заводі.","translation":"My brother works as an engineer at a factory."},{"words":["програмістом","став","Він","після","університету"],"answer":"Він став програмістом після університету.","translation":"He became a programmer after university."},{"words":["працює","журналісткою","Моя","сестра","газеті","у"],"answer":"Моя сестра працює журналісткою у газеті.","translation":"My sister works as a journalist at a newspaper."},{"words":["був","Батько","інженером","заводі","на"],"answer":"Батько був інженером на заводі.","translation":"Father was an engineer at a factory."},{"words":["хоче","лікарем","стати","Вона","майбутньому","у"],"answer":"Вона хоче стати лікарем у майбутньому.","translation":"She wants to become a doctor in the future."},{"words":["директором","став","Він","компанії","великої"],"answer":"Він став директором великої компанії.","translation":"He became director of a large company."},{"words":["залишається","вчителькою","Вона","роки","багато"],"answer":"Вона залишається вчителькою багато років.","translation":"She has remained a teacher for many years."},{"words":["юристом","працює","столиці","Мій","друг","у"],"answer":"Мій друг працює юристом у столиці.","translation":"My friend works as a lawyer in the capital."}]}}];
-    const vocabData = [{"uk":"бути","translit":"","en":"to be","note":"+ instr"},{"uk":"стати","translit":"","en":"to become","note":"+ instr"},{"uk":"ставати","translit":"","en":"to become (impf)","note":"+ instr"},{"uk":"працювати","translit":"","en":"to work","note":"+ instr"},{"uk":"служити","translit":"","en":"to serve","note":"+ instr"},{"uk":"залишатися","translit":"","en":"to remain","note":"+ instr"},{"uk":"виявитися","translit":"","en":"to turn out","note":"+ instr"},{"uk":"вважатися","translit":"","en":"to be considered","note":"+ instr"},{"uk":"називатися","translit":"","en":"to be called","note":"+ instr"},{"uk":"інженер","translit":"","en":"engineer","note":""},{"uk":"програміст","translit":"","en":"programmer","note":""},{"uk":"журналіст","translit":"","en":"journalist","note":""},{"uk":"юрист","translit":"","en":"lawyer","note":""},{"uk":"бухгалтер","translit":"","en":"accountant","note":""},{"uk":"пілот","translit":"","en":"pilot","note":""},{"uk":"музикант","translit":"","en":"musician","note":""},{"uk":"художник","translit":"","en":"artist","note":""},{"uk":"письменник","translit":"","en":"writer","note":""},{"uk":"перекладач","translit":"","en":"translator","note":""},{"uk":"керівник","translit":"","en":"manager, head","note":""},{"uk":"директор","translit":"","en":"director","note":""},{"uk":"менеджер","translit":"","en":"manager","note":""},{"uk":"підприємець","translit":"","en":"entrepreneur","note":""},{"uk":"офіціант","translit":"","en":"waiter","note":""},{"uk":"продавець","translit":"","en":"seller","note":""},{"uk":"водій","translit":"","en":"driver","note":""},{"uk":"поліцейський","translit":"","en":"police officer","note":""},{"uk":"військовий","translit":"","en":"military person","note":""},{"uk":"спортсмен","translit":"","en":"athlete","note":""},{"uk":"студент","translit":"","en":"student","note":""},{"uk":"пенсіонер","translit":"","en":"pensioner","note":""},{"uk":"безробітний","translit":"","en":"unemployed","note":""},{"uk":"актор","translit":"","en":"actor","note":""},{"uk":"спеціаліст","translit":"","en":"specialist","note":""},{"uk":"експерт","translit":"","en":"expert","note":""},{"uk":"професіонал","translit":"","en":"professional","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Root Recognition","data":{"type":"fill-blank","items":[{"prompt":"Корінь «бач-» означає ___. (to see)","answer":"бачити"},{"prompt":"«Побачення» — це коли люди ___. (meet/see each other)","answer":"зустрічаються/бачаться"},{"prompt":"Корінь «слух-» означає ___. (to hear/listen)","answer":"слухати"},{"prompt":"«Почуття» — це те, що ми ___. (feel)","answer":"відчуваємо"},{"prompt":"«Мова» — це те, чим ми ___. (speak)","answer":"говоримо"},{"prompt":"«Мовчання» — це коли не ___. (speak)","answer":"говорять"},{"prompt":"«Думка» — це те, що ми ___. (think)","answer":"думаємо"},{"prompt":"«Передбачення» — це коли ___ наперед. (see)","answer":"бачать"},{"prompt":"«Глядач» — це людина, яка ___. (watches)","answer":"дивиться"},{"prompt":"«Розмова» — це коли люди ___. (talk)","answer":"говорять/розмовляють"},{"prompt":"«Співчуття» — це коли ___ разом. (feel)","answer":"відчуваєш"},{"prompt":"«Придумати» — це ___ щось нове. (think up)","answer":"вигадати"}]}},{"id":"activity-1","type":"match-up","title":"Roots and Meanings","data":{"type":"match-up","pairs":[{"left":"бач-","right":"to see"},{"left":"гляд-","right":"to look"},{"left":"слух-","right":"to hear/listen"},{"left":"чу-","right":"to hear/feel"},{"left":"говор-","right":"to speak"},{"left":"мов-","right":"language/speech"},{"left":"дум-","right":"to think"},{"left":"вид-","right":"visible"},{"left":"мовч-","right":"silent"},{"left":"роз-","right":"apart/conversation"},{"left":"по-","right":"completion/result"},{"left":"перед-","right":"before/ahead"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["тебе","Рада","побачити","знову","після","такого","довгого","часу"],"answer":"Рада побачити тебе знову після такого довгого часу.","translation":"Nice to see you again after such a long time."},{"words":["побачення","У","нас","завтра","о","восьмій","годині","ввечері"],"answer":"У нас побачення завтра о восьмій годині ввечері.","translation":"We have a date tomorrow at eight o'clock in the evening."},{"words":["уважно","Слухай","бо","це","дуже","важлива","інформація","для"],"answer":"Слухай уважно, бо це дуже важлива інформація для тебе.","translation":"Listen carefully because this is very important information for you."},{"words":["почуття","Яке","прекрасне","коли","ти","поруч","зі","мною"],"answer":"Яке прекрасне почуття, коли ти поруч зі мною.","translation":"What a wonderful feeling when you are next to me."},{"words":["говорить","Він","українською","мовою","дуже","добре","і","вільно"],"answer":"Він говорить українською мовою дуже добре і вільно.","translation":"He speaks Ukrainian language very well and fluently."},{"words":["Мовчання","золото","а","слово","срібло","каже","народна","мудрість"],"answer":"Мовчання — золото, а слово — срібло, каже народна мудрість.","translation":"Silence is gold and word is silver, says folk wisdom."},{"words":["думаю","Я","що","це","правильне","рішення","для","всіх"],"answer":"Я думаю, що це правильне рішення для всіх.","translation":"I think that this is the right decision for everyone."},{"words":["Подумай","добре","перед","тим","як","давати","свою","відповідь"],"answer":"Подумай добре перед тим, як давати свою відповідь.","translation":"Think well before giving your answer."},{"words":["глядачі","Усі","аплодували","коли","співак","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співак закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["вигляд","У","тебе","чудовий","сьогодні","ти","виглядаєш","прекрасно"],"answer":"У тебе чудовий вигляд сьогодні, ти виглядаєш прекрасно.","translation":"You look wonderful today, you look beautiful."},{"words":["розмова","Цікава","була","з","тобою","дякую","за","час"],"answer":"Цікава розмова була з тобою, дякую за час.","translation":"It was an interesting conversation with you, thanks for the time."},{"words":["передумав","Я","і","вирішив","залишитися","тут","на","довше"],"answer":"Я передумав і вирішив залишитися тут на довше.","translation":"I changed my mind and decided to stay here longer."}]}},{"id":"activity-3","type":"quiz","title":"Root Family Knowledge","data":{"type":"quiz","questions":[{"question":"«Бач-» root means:","options":["To see","To be","To buy","To beat"],"correctIndex":0,"explanation":""},{"question":"«Побачення» is:","options":["A date/meeting","A viewpoint","A prediction","A vision"],"correctIndex":0,"explanation":""},{"question":"«Слухач» is:","options":["A listener","A speaker","A writer","A reader"],"correctIndex":0,"explanation":""},{"question":"«Почуття» comes from:","options":["чу- (hear/feel)","пач- (pack)","поч- (start)","пуч- (bunch)"],"correctIndex":0,"explanation":""},{"question":"«Мовчання» is the opposite of:","options":["Розмова","Мова","Мовлення","Словник"],"correctIndex":0,"explanation":""},{"question":"«Думка» means:","options":["Thought, opinion","Drum","House","Tree"],"correctIndex":0,"explanation":""},{"question":"«Передумати» means:","options":["To change one's mind","To think ahead","To think first","To stop thinking"],"correctIndex":0,"explanation":""},{"question":"«Глядач» is formed from:","options":["гляд- (look) root","гля- (clay) root","глад- (smooth) root","глас- (voice) root"],"correctIndex":0,"explanation":""},{"question":"«Очевидний» literally means:","options":["Eye-visible (obvious)","Eyes-only","Eye-catching","Eye-opening"],"correctIndex":0,"explanation":""},{"question":"«Розмова» uses prefix:","options":["роз- (apart/together)","роз- (grow)","рос- (Russian)","рох- (move)"],"correctIndex":0,"explanation":""},{"question":"«Співчуття» is:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"«Вигляд» is:","options":["Appearance","Exit","Entrance","Overview"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Root Facts","data":{"type":"true-false","statements":[{"statement":"«Бач-» and «вид-» both relate to seeing.","isTrue":true,"explanation":""},{"statement":"«Побачення» only means \"vision.\"","isTrue":false,"explanation":""},{"statement":"«Слух» can mean both hearing and rumor.","isTrue":true,"explanation":""},{"statement":"«Почуття» is an action verb.","isTrue":false,"explanation":""},{"statement":"«Мова» and «мовчання» use the same root.","isTrue":true,"explanation":""},{"statement":"«Мовчати» means to speak loudly.","isTrue":false,"explanation":""},{"statement":"«Думка» is related to «думати».","isTrue":true,"explanation":""},{"statement":"«Передумати» means to think first.","isTrue":false,"explanation":""},{"statement":"«Глядач» watches something.","isTrue":true,"explanation":""},{"statement":"«Співчуття» means feeling alone.","isTrue":false,"explanation":""},{"statement":"«Огляд» is a review or overview.","isTrue":true,"explanation":""},{"statement":"«Придумати» means to invent/imagine.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Root Families","data":{"type":"group-sort","groups":[{"id":"--","name":"БАЧ-/ГЛЯД-","items":["побачення","погляд","глядач"],"nameUk":"See"},{"id":"--","name":"СЛУХ-/ЧУ-","items":["слухач","почуття","відчуття"],"nameUk":"Hear"},{"id":"--","name":"ГОВОР-/МОВ-","items":["розмова","мовчання","мова"],"nameUk":"Speak"},{"id":"-","name":"ДУМ-","items":["думка","роздуми","придумати"],"nameUk":"Think"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Root Words","data":{"type":"fill-blank","items":[{"prompt":"Рада тебе ___! (to see - pf)","answer":"побачити"},{"prompt":"У нас ___ завтра ввечері. (date/meeting)","answer":"побачення"},{"prompt":"___ уважно, це важливо! (Listen)","answer":"Слухай"},{"prompt":"Яке прекрасне ___! (feeling)","answer":"почуття"},{"prompt":"Він добре ___ українською. (speaks)","answer":"говорить"},{"prompt":"Чому ти ___? Скажи щось! (are silent)","answer":"мовчиш"},{"prompt":"Я ___, що це правда. (think)","answer":"думаю"},{"prompt":"Твій ___ на це питання цікавий. (view/opinion)","answer":"погляд"},{"prompt":"Це було моє ___. (prediction)","answer":"передбачення"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Цікава ___ з тобою! (conversation)","answer":"розмова"},{"prompt":"Вона ___ цікаву гру. (invented)","answer":"придумала"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[{"question":"Рада тебе ___ знову!","options":[{"text":"побачити","correct":true},{"text":"побачення","correct":false},{"text":"бачення","correct":false},{"text":"видіння","correct":false}]},{"question":"___ уважно, це важливо.","options":[{"text":"Слухай","correct":true},{"text":"Слухач","correct":false},{"text":"Слух","correct":false},{"text":"Слухання","correct":false}]},{"question":"Яке прекрасне ___ любові!","options":[{"text":"почуття","correct":true},{"text":"чути","correct":false},{"text":"відчуття","correct":false},{"text":"співчуття","correct":false}]},{"question":"Він добре ___ кількома мовами.","options":[{"text":"говорить","correct":true},{"text":"мовчить","correct":false},{"text":"мовить","correct":false},{"text":"розмовляння","correct":false}]},{"question":"___ — золото.","options":[{"text":"Мовчання","correct":true},{"text":"Мова","correct":false},{"text":"Мовлення","correct":false},{"text":"Розмова","correct":false}]},{"question":"Я ___, що ти правий.","options":[{"text":"думаю","correct":true},{"text":"думка","correct":false},{"text":"роздуми","correct":false},{"text":"задумав","correct":false}]},{"question":"У неї гарний ___.","options":[{"text":"вигляд","correct":true},{"text":"погляд","correct":false},{"text":"огляд","correct":false},{"text":"догляд","correct":false}]},{"question":"___ фільму були задоволені.","options":[{"text":"Глядачі","correct":true},{"text":"Слухачі","correct":false},{"text":"Читачі","correct":false},{"text":"Письменники","correct":false}]},{"question":"Це цікава ___ з тобою.","options":[{"text":"розмова","correct":true},{"text":"мовчання","correct":false},{"text":"мова","correct":false},{"text":"мовець","correct":false}]},{"question":"Я ___! Тепер хочу поїхати.","options":[{"text":"передумав","correct":true},{"text":"подумав","correct":false},{"text":"задумав","correct":false},{"text":"надумав","correct":false}]},{"question":"Моє ___ тим, хто втратив близьких.","options":[{"text":"співчуття","correct":true},{"text":"почуття","correct":false},{"text":"відчуття","correct":false},{"text":"чуття","correct":false}]},{"question":"Це ___! Не треба пояснювати.","options":[{"text":"очевидно","correct":true},{"text":"видно","correct":false},{"text":"бачите","correct":false},{"text":"глядіть","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Root Understanding","data":{"type":"quiz","questions":[{"question":"Which root means \"to see\"?","options":["бач-","слух-","говор-","дум-"],"correctIndex":0,"explanation":""},{"question":"\"Побачення\" combines:","options":["по- + бач- + -ення","по- + бачи- + -ня","поба- + чення","побач- + ення"],"correctIndex":0,"explanation":""},{"question":"\"Почуття\" comes from which root?","options":["чу- (hear/feel)","поч- (start)","чут- (sensitive)","тя- (pull)"],"correctIndex":0,"explanation":""},{"question":"\"Мовчання\" is related to:","options":["Not speaking (silence)","Speaking loudly","Language learning","Writing"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"re-/again\" in \"передумати\"?","options":["пере-","пре-","при-","про-"],"correctIndex":0,"explanation":""},{"question":"\"Глядач\" is someone who:","options":["Watches/views","Listens","Reads","Thinks"],"correctIndex":0,"explanation":""},{"question":"\"Співчуття\" means:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"\"Вигляд\" comes from:","options":["ви- + гляд (appearance)","виг- + ляд (look out)","в- + игляд (into look)","вигля- + д (view)"],"correctIndex":0,"explanation":""},{"question":"Which root relates to thinking?","options":["дум-","бач-","слух-","мов-"],"correctIndex":0,"explanation":""},{"question":"\"Очевидний\" literally means:","options":["Eye-visible (obvious)","Eyes closed","Eye-catching","Eye color"],"correctIndex":0,"explanation":""},{"question":"\"Розмова\" uses which root?","options":["мов- (language/speech)","роз- (distribute)","мо- (my)","ва- (you)"],"correctIndex":0,"explanation":""},{"question":"The opposite of \"говорити\" is:","options":["мовчати","слухати","бачити","думати"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"бачити","translit":"","en":"to see","note":""},{"uk":"бачення","translit":"","en":"vision","note":""},{"uk":"побачення","translit":"","en":"date, meeting","note":""},{"uk":"передбачення","translit":"","en":"prediction","note":""},{"uk":"погляд","translit":"","en":"look, view","note":""},{"uk":"вигляд","translit":"","en":"appearance","note":""},{"uk":"огляд","translit":"","en":"review","note":""},{"uk":"глядач","translit":"","en":"viewer","note":""},{"uk":"слухати","translit":"","en":"to listen","note":""},{"uk":"слух","translit":"","en":"hearing, rumor","note":""},{"uk":"слухач","translit":"","en":"listener","note":""},{"uk":"чути","translit":"","en":"to hear","note":""},{"uk":"почуття","translit":"","en":"feeling","note":""},{"uk":"відчуття","translit":"","en":"sensation","note":""},{"uk":"співчуття","translit":"","en":"sympathy","note":""},{"uk":"говорити","translit":"","en":"to speak","note":""},{"uk":"розмова","translit":"","en":"conversation","note":""},{"uk":"мова","translit":"","en":"language","note":""},{"uk":"мовлення","translit":"","en":"speech","note":""},{"uk":"мовчати","translit":"","en":"to be silent","note":""},{"uk":"мовчання","translit":"","en":"silence","note":""},{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"думка","translit":"","en":"thought, opinion","note":""},{"uk":"подумати","translit":"","en":"to think (pf)","note":""},{"uk":"обдумати","translit":"","en":"to consider","note":""},{"uk":"роздуми","translit":"","en":"reflections","note":""},{"uk":"придумати","translit":"","en":"to invent","note":""},{"uk":"передумати","translit":"","en":"to change mind","note":""},{"uk":"очевидний","translit":"","en":"obvious","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1216,8 +1231,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1248,8 +1263,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1661,7 +1676,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1671,7 +1686,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1872,6 +1889,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

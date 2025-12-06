@@ -17,8 +17,8 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 | A1 | 01-30 | 8+ | 12+ | 4+ different |
 | A2 | 01-50 | 10+ | 12+ | 4+ different |
 | B1 | 01-80 | 12+ | 14+ | 4+ different |
-| B2 | 01-50 | 14+ | 16+ | 4+ different |
-| C1 | 01-50 | 16+ | 18+ | 4+ different |
+| B2 | 01-125 | 14+ | 16+ | 4+ different |
+| C1 | 01-115 | 16+ | 18+ | 4+ different |
 | C2 | 01-80 | 16+ | 18+ | 4+ different |
 
 ### Content Quality Requirements
@@ -43,46 +43,148 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 | C1 | 45 min | 90 min | **2h+** | 30-35 |
 | C2 | 45 min | 90 min | **2h+** | 30-35 |
 
-### Activity Type Priority
+### Activity Types by Level
 
-**A1-A2 (Beginner):** Prioritize comprehension activities first, then production:
+| Activity | A1 | A2 | B1 | B2 | C1 | C2 | Description |
+|----------|----|----|----|----|----|----|-------------|
+| quiz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Multiple choice |
+| match-up | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Match pairs |
+| group-sort | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Categorization |
+| true-false | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Statement validation |
+| select | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Word selection |
+| fill-in | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Gap completion |
+| unjumble | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Word ordering |
+| anagram | ✓ | - | - | - | - | - | Letter unscrambling (Cyrillic scaffolding) |
+| error-correction | - | ✓ | ✓ | ✓ | ✓ | ✓ | Find and fix errors (#94) |
 
-1. **quiz** - Multiple choice comprehension
-2. **match-up** - Vocabulary associations
-3. **group-sort** - Categorization skills
-4. **true-false** - Statement validation
-5. **select** - Word selection
-6. **order** - Sequence building
-7. **fill-in** - Gap completion (sentence complexity applies)
-8. **unjumble** - Word ordering (sentence complexity applies)
+### Error-Correction Progression
 
-**B1+ (Intermediate and above):** Prioritize production activities:
+| Level | Errors per Sentence | Error Types |
+|-------|---------------------|-------------|
+| A2 | 1 obvious | Gender agreement, case endings, animate accusative |
+| B1 | 1-2 | + Aspect errors, participles, word order |
+| B2 | 2+ subtle | + Style errors, register mismatches, Russianisms |
+| C1-C2 | 2+ nuanced | + Stylistic inconsistency, academic register |
 
-1. **fill-in** - Gap completion (high cognitive load, production)
-2. **unjumble** - Word ordering (high cognitive load, production)
-3. **quiz** - Multiple choice comprehension
-4. **match-up** - Vocabulary associations
-5. **group-sort** - Categorization skills
-6. **true-false** - Statement validation
-7. **select** - Word selection
-8. **order** - Sequence building
+### Activity Priority & Minimum Requirements
 
-**Rationale:** At lower levels, build comprehension first. At B1+, learners need more production practice - prioritize fill-in and unjumble when adding activities.
+**A1 (Beginner):** Comprehension → Production
+1. quiz, match-up, group-sort, true-false (recognition)
+2. select, fill-in, unjumble (production)
+3. anagram (Cyrillic scaffolding, M01-10 only)
+
+**A2 (Elementary):** Introduce error-finding
+1. quiz, match-up, group-sort, true-false (recognition)
+2. select, fill-in, unjumble (production)
+3. **error-correction** — minimum 1 per module (analysis)
+
+**B1+ (Intermediate+):** Prioritize production & analysis
+
+| Activity | B1 Min | B2 Min | C1 Min | C2 Min | Why Priority |
+|----------|--------|--------|--------|--------|--------------|
+| **fill-in** | 2 | 3 | 3 | 3 | Core production skill |
+| **unjumble** | 2 | 2 | 2 | 2 | Sentence construction |
+| **error-correction** | 2 | 2 | 3 | 3 | Critical for accuracy |
+| quiz | 1 | 1 | 1 | 1 | Concept reinforcement |
+| match-up | 1 | 1 | 1 | 1 | Vocabulary/collocations |
+| other | as needed | as needed | as needed | as needed | Variety |
+
+**Rationale:** At B1+, learners need to *produce* correct Ukrainian, not just recognize it. Error-correction builds metalinguistic awareness essential for self-correction.
+
+> **For activity templates and examples:** See `ACTIVITY-GUIDELINES.md`
+> **For markdown format specs:** See `docs/MARKDOWN-FORMAT.md`
 
 ---
 
-## CEFR Sentence Complexity Standards
+## CEFR Activity Complexity Standards
 
-Activity sentences must follow CEFR complexity progression:
+Activity complexity must follow CEFR progression for ALL activity types:
 
-| Level | Fill-in Words | Unjumble Words | Sentence Structure Examples |
+### fill-in & unjumble (Sentence Length)
+
+| Level | Fill-in Words | Unjumble Words | Sentence Structure |
 |-------|---------------|----------------|----------------------------|
-| A1 | 3-5 | 4-6 | Simple isolated phrases: `Я читаю книгу.` |
-| A2 | 6-8 | 8-10 | Simple sentences + connectors: `Я завжди даю мамі квіти на свято.` |
-| B1 | 10-14 | 12-16 | Complex sentences, conditionals: `Якби я мав більше часу, я б допоміг тобі з роботою.` |
-| B2 | 12-16 | 14-18 | Sophisticated structures, passive: `Було вирішено, що проєкт буде завершено до кінця місяця.` |
-| C1 | 14-18 | 16-20 | Advanced stylistic variation: `Варто зазначити, що результати перевершили очікування.` |
-| C2 | 14-18 | 16-20 | Full native complexity: `Незважаючи на численні застереження експертів, рішення було ухвалено одноголосно.` |
+| A1 | 3-5 | 4-6 | Simple SVO: `Я читаю книгу.` |
+| A2 | 6-8 | 8-10 | Connectors: `Я завжди даю мамі квіти на свято.` |
+| B1 | 10-14 | 12-16 | Conditionals: `Якби я мав більше часу, я б допоміг тобі.` |
+| B2 | 12-16 | 14-18 | Passive/complex: `Було вирішено, що проєкт буде завершено.` |
+| C1 | 14-18 | 16-20 | Academic: `Варто зазначити, що результати перевершили очікування.` |
+| C2 | 14-18 | 16-20 | Native: `Незважаючи на застереження експертів, рішення ухвалено.` |
+
+### quiz (Question & Option Complexity)
+
+| Level | Question Length | Options | Distractors |
+|-------|-----------------|---------|-------------|
+| A1 | 5-10 words | 3-4 | Obviously wrong |
+| A2 | 8-15 words | 4 | Plausible but clearly wrong |
+| B1 | 12-20 words | 4 | Require careful reading |
+| B2 | 15-25 words | 4 | Near-synonyms, subtle differences |
+| C1 | 18-30 words | 4 | Nuanced, context-dependent |
+| C2 | 20-35 words | 4 | Expert-level distinctions |
+
+### match-up (Pair Complexity)
+
+| Level | Pairs | Left Side | Right Side |
+|-------|-------|-----------|------------|
+| A1 | 8-10 | Single words | Single word translations |
+| A2 | 10-12 | Words/short phrases | Translations/definitions |
+| B1 | 12-14 | Phrases/idioms | Meanings/synonyms |
+| B2 | 12-16 | Idioms/collocations | Nuanced equivalents |
+| C1 | 14-18 | Register variants | Formal/informal pairs |
+| C2 | 14-18 | Stylistic expressions | Literary/academic pairs |
+
+### group-sort (Categorization Complexity)
+
+| Level | Groups | Items Total | Category Type |
+|-------|--------|-------------|---------------|
+| A1 | 2-3 | 8-12 | Concrete (gender, animate/inanimate) |
+| A2 | 2-3 | 10-14 | Grammar (case, aspect, tense) |
+| B1 | 3-4 | 12-16 | Abstract (register, style, meaning) |
+| B2 | 3-4 | 14-18 | Nuanced (connotation, usage context) |
+| C1 | 3-4 | 16-20 | Expert (stylistic register, academic vs literary) |
+| C2 | 3-4 | 16-20 | Native-level (dialectal, archaic, professional) |
+
+### true-false (Statement Complexity)
+
+| Level | Statement Length | Complexity |
+|-------|------------------|------------|
+| A1 | 4-8 words | Obvious facts about grammar rules |
+| A2 | 6-12 words | Grammar rules with exceptions |
+| B1 | 10-18 words | Nuanced grammar, context-dependent |
+| B2 | 14-22 words | Subtle distinctions, register rules |
+| C1 | 16-25 words | Academic/literary conventions |
+| C2 | 18-30 words | Expert-level linguistic facts |
+
+### select (Word Selection Complexity)
+
+| Level | Sentence Length | Options | Distractor Type |
+|-------|-----------------|---------|-----------------|
+| A1 | 4-6 words | 3-4 | Wrong gender/case |
+| A2 | 6-10 words | 4 | Wrong case/aspect |
+| B1 | 10-14 words | 4-5 | Aspect/mood confusion |
+| B2 | 12-18 words | 4-5 | Register/style mismatch |
+| C1 | 14-20 words | 4-5 | Near-synonyms, collocations |
+| C2 | 16-22 words | 4-5 | Stylistic precision |
+
+### error-correction (Error Complexity)
+
+| Level | Errors | Sentence Length | Error Types |
+|-------|--------|-----------------|-------------|
+| A1 | - | - | Not used at A1 |
+| A2 | 1 obvious | 6-10 words | Gender, case endings, agreement |
+| B1 | 1-2 | 10-16 words | + Aspect, participles, word order |
+| B2 | 2+ subtle | 14-20 words | + Style, register, Russianisms |
+| C1 | 2+ nuanced | 16-24 words | + Academic register, collocations |
+| C2 | 2+ expert | 18-28 words | + Stylistic inconsistency, archaisms |
+
+### anagram (A1 Only)
+
+| Level | Word Length | Complexity |
+|-------|-------------|------------|
+| A1 (M01-10) | 4-8 letters | Common nouns, verbs |
+| A1 (M11-20) | 5-10 letters | Reduce usage |
+| A1 (M21-30) | - | Avoid, use unjumble instead |
+| A2+ | - | NOT ALLOWED |
 
 ### Complexity Progression Principles
 

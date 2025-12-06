@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 37: Preposition Master Class | Ukrainian A2</title>
+  <title>Module 37: Food &amp; Cooking | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 37: Preposition Master Class</h1>
+    <h1>Module 37: Food &amp; Cooking</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Select</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,601 +497,517 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Preposition Master Class</h2>
-        <p style="color:var(--text-muted)">Prepositions + Cases</p>
+        <span class="level-badge">A2 · A2.5</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Food &amp; Cooking</h2>
+        <p style="color:var(--text-muted)">Culinary Vocabulary</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="theprepositionpuzzle">The Preposition Puzzle</h3>
-<p>You've learned all 7 cases. Now the challenge: <strong>which preposition takes which case?</strong></p>
-<p>In English, "in" always means "in." In Ukrainian, the CASE changes the meaning:</p>
-<ul>
-<li>у кімнат<strong>і</strong> (in the room - locative, location)</li>
-<li>у кімнат<strong>у</strong> (into the room - accusative, motion)</li>
-</ul>
-<p>Same preposition, different cases, different meanings!</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian prepositions are "case governors" - they demand specific cases from the nouns that follow. Some prepositions take only one case; others can take two or three, with the case determining the meaning. Master this, and you've mastered a key part of Ukrainian grammar!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="thebigpictureprepositioncasemap">The Big Picture: Preposition → Case Map</h3>
+      <div class="md-content"><p>Food brings people together! Whether you're following a Ukrainian recipe, ordering at a restaurant, or cooking at home, culinary vocabulary is essential. "Cut the onion," "fry the meat," "mix the ingredients" — this module teaches you to navigate the kitchen in Ukrainian!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Kitchen Equipment (Кухонне обладнання)</h3>
+      <div class="md-content"><h2 id="majorappliances">Major Appliances</h2>
 <table>
 <thead>
 <tr>
-<th>Preposition</th>
-<th>Case(s)</th>
-<th>Meaning</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>у/в</td>
-<td>Loc / Acc</td>
-<td>in / into</td>
+<td>плита</td>
+<td>/plɪˈta/</td>
+<td>stove</td>
 </tr>
 <tr>
-<td>на</td>
-<td>Loc / Acc</td>
-<td>on / onto</td>
+<td>духовка</td>
+<td>/duxowˈka/</td>
+<td>oven</td>
 </tr>
 <tr>
-<td>з</td>
-<td>Gen / Instr</td>
-<td>from / with</td>
+<td>холодильник</td>
+<td>/xolodɪlʲˈnɪk/</td>
+<td>refrigerator</td>
 </tr>
 <tr>
-<td>до</td>
-<td>Gen</td>
-<td>to, until</td>
+<td>мікрохвильовка</td>
+<td>/mikroxwɪˈlʲowka/</td>
+<td>microwave</td>
 </tr>
 <tr>
-<td>від</td>
-<td>Gen</td>
-<td>from</td>
+<td>посудомийка</td>
+<td>/posudoˈmɪjka/</td>
+<td>dishwasher</td>
 </tr>
 <tr>
-<td>для</td>
-<td>Gen</td>
-<td>for</td>
-</tr>
-<tr>
-<td>без</td>
-<td>Gen</td>
-<td>without</td>
-</tr>
-<tr>
-<td>після</td>
-<td>Gen</td>
-<td>after</td>
-</tr>
-<tr>
-<td>під</td>
-<td>Acc / Instr</td>
-<td>under (motion/location)</td>
-</tr>
-<tr>
-<td>над</td>
-<td>Instr</td>
-<td>above</td>
-</tr>
-<tr>
-<td>перед</td>
-<td>Instr</td>
-<td>in front of</td>
-</tr>
-<tr>
-<td>за</td>
-<td>Acc / Instr</td>
-<td>behind/for</td>
-</tr>
-<tr>
-<td>між</td>
-<td>Instr</td>
-<td>between</td>
-</tr>
-<tr>
-<td>біля</td>
-<td>Gen</td>
-<td>near, by</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Memory Groups</strong></p>
-  <p>Group prepositions by case:</p>
-  <ul>
-  <li><strong>Genitive lovers:</strong> до, від, для, без, після, біля, з (from)</li>
-  <li><strong>Instrumental friends:</strong> з (with), над, перед, між</li>
-  <li><strong>Two-case players:</strong> у/в, на, під, за (motion vs location)</li>
-  </ul>
-</blockquote>
-<h3 id="locationvsmotionthekeydistinction">Location vs Motion: The Key Distinction</h3>
-<p><strong>у/в (in/into) and на (on/onto):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Context</th>
-<th>Case</th>
-<th>Example</th>
-<th>Translation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Location (where?)</td>
-<td>Locative</td>
-<td>у кімнаті</td>
-<td>in the room</td>
-</tr>
-<tr>
-<td>Motion (where to?)</td>
-<td>Accusative</td>
-<td>у кімнату</td>
-<td>into the room</td>
-</tr>
-<tr>
-<td>Location (where?)</td>
-<td>Locative</td>
-<td>на столі</td>
-<td>on the table</td>
-</tr>
-<tr>
-<td>Motion (where to?)</td>
-<td>Accusative</td>
-<td>на стіл</td>
-<td>onto the table</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Key questions:</strong></p>
-<ul>
-<li><strong>Де?</strong> (Where?) → Locative</li>
-<li><strong>Куди?</strong> (Where to?) → Accusative</li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Де ти? - Я <strong>у парку</strong>. (Where? - In the park. - locative)</li>
-<li>Куди ти йдеш? - Я йду <strong>у парк</strong>. (Where to? - To the park. - accusative)</li>
-</ul>
-<blockquote>
-  <p>📜 <strong>History Bite: Motion vs Rest</strong></p>
-  <p>This location/motion distinction goes back to Proto-Indo-European! Latin had it (in + ablative vs in + accusative), German still has it (in dem Zimmer vs in das Zimmer). Ukrainian preserves this ancient pattern perfectly.</p>
-</blockquote>
-<h3 id="genitiveprepositions">Genitive Prepositions</h3>
-<p>These ALWAYS take genitive:</p>
-<table>
-<thead>
-<tr>
-<th>Preposition</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>до</td>
-<td>to, until</td>
-<td>до Києва, до вечора</td>
-</tr>
-<tr>
-<td>від</td>
-<td>from</td>
-<td>від брата, від ранку</td>
-</tr>
-<tr>
-<td>для</td>
-<td>for</td>
-<td>для мами, для роботи</td>
-</tr>
-<tr>
-<td>без</td>
-<td>without</td>
-<td>без води, без тебе</td>
-</tr>
-<tr>
-<td>після</td>
-<td>after</td>
-<td>після обіду, після уроку</td>
-</tr>
-<tr>
-<td>біля</td>
-<td>near</td>
-<td>біля дому, біля мене</td>
-</tr>
-<tr>
-<td>коло</td>
-<td>near</td>
-<td>коло парку</td>
-</tr>
-<tr>
-<td>замість</td>
-<td>instead of</td>
-<td>замість кави</td>
-</tr>
-<tr>
-<td>окрім</td>
-<td>except</td>
-<td>окрім нього</td>
-</tr>
-<tr>
-<td>серед</td>
-<td>among</td>
-<td>серед друзів</td>
-</tr>
-<tr>
-<td>через</td>
-<td>through, because</td>
-<td>через місто, через хворобу</td>
+<td>чайник</td>
+<td>/ˈtʃajnɪk/</td>
+<td>kettle</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>Я їду <strong>до Києва</strong>. - I'm going to Kyiv.</li>
-<li>Ми зустрінемося <strong>після роботи</strong>. - We'll meet after work.</li>
-<li>Я не можу <strong>без тебе</strong>. - I can't (live) without you.</li>
-<li>Вона стоїть <strong>біля вікна</strong>. - She's standing by the window.</li>
+<li>Постав каструлю на <strong>плиту</strong>. (Put the pot on the stove.)</li>
+<li>Пиріг у <strong>духовці</strong>. (The pie is in the oven.)</li>
+<li>Молоко в <strong>холодильнику</strong>. (Milk is in the refrigerator.)</li>
+<li>Розігрій у <strong>мікрохвильовці</strong>. (Heat it up in the microwave.)</li>
 </ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: через</strong></p>
-  <p>The preposition через has two meanings:</p>
-  <ul>
-  <li>Physical: <strong>через</strong> місто (through the city)</li>
-  <li>Causal: <strong>через</strong> хворобу (because of illness)</li>
-  </ul>
-  <p>Context makes it clear!</p>
+  <p>"Холодильник" comes from "холод" (cold) + -ильник (device) — literally "cold-maker"!</p>
 </blockquote>
-<h3 id="instrumentalprepositions">Instrumental Prepositions</h3>
-<p>These ALWAYS take instrumental:</p>
+<hr />
+<h2 id="potsandpans">Pots and Pans</h2>
 <table>
 <thead>
 <tr>
-<th>Preposition</th>
-<th>Meaning</th>
-<th>Example</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>з</td>
-<td>with</td>
-<td>з другом, з молоком</td>
+<td>каструля</td>
+<td>/kasˈtrulʲa/</td>
+<td>pot, saucepan</td>
 </tr>
 <tr>
-<td>над</td>
-<td>above</td>
-<td>над столом, над містом</td>
+<td>сковорода</td>
+<td>/skoworoˈda/</td>
+<td>frying pan</td>
 </tr>
 <tr>
-<td>під (location)</td>
-<td>under</td>
-<td>під столом</td>
+<td>казан</td>
+<td>/kaˈzan/</td>
+<td>cauldron</td>
 </tr>
 <tr>
-<td>перед</td>
-<td>in front of</td>
-<td>перед домом</td>
+<td>чавунна сковорода</td>
+<td>/tʃawunˈna skoworoˈda/</td>
+<td>cast iron pan</td>
 </tr>
 <tr>
-<td>за (location)</td>
-<td>behind</td>
-<td>за будинком</td>
-</tr>
-<tr>
-<td>між</td>
-<td>between</td>
-<td>між нами</td>
-</tr>
-<tr>
-<td>поруч з</td>
-<td>next to</td>
-<td>поруч зі мною</td>
+<td>каструлька</td>
+<td>/kasˈtrulʲka/</td>
+<td>small pot</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>Я йду <strong>з другом</strong>. - I'm going with a friend.</li>
-<li>Лампа висить <strong>над столом</strong>. - The lamp hangs above the table.</li>
-<li>Кіт сидить <strong>під столом</strong>. - The cat sits under the table.</li>
-<li>Машина стоїть <strong>перед будинком</strong>. - The car is in front of the house.</li>
-<li>Це таємниця <strong>між нами</strong>. - This is a secret between us.</li>
+<li>Візьми велику <strong>каструлю</strong> для супу. (Take a big pot for soup.)</li>
+<li>Смаж на <strong>сковороді</strong>. (Fry in the pan.)</li>
+<li>Борщ варять у великому <strong>казані</strong>. (Borscht is cooked in a big cauldron.)</li>
 </ul>
+<div class="callout callout-example" data-callout="example">🌍 Real World</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: з + Genitive vs з + Instrumental</strong></p>
-  <ul>
-  <li><strong>з + Genitive</strong> = from (origin): Я з України. (I'm from Ukraine.)</li>
-  <li><strong>з + Instrumental</strong> = with (accompaniment): Я з другом. (I'm with a friend.)</li>
-  </ul>
-  <p>Same word, different cases, opposite meanings!</p>
+  <p>"Сковорода" — pan named after philosopher Hryhoriy Skovoroda? No, but fun to remember!</p>
 </blockquote>
-<h3 id="twocaseprepositionsmotionvslocation">Two-Case Prepositions: Motion vs Location</h3>
-<p><strong>під (under):</strong></p>
+<hr />
+<h2 id="utensils">Utensils</h2>
 <table>
 <thead>
 <tr>
-<th>Context</th>
-<th>Case</th>
-<th>Example</th>
-<th>Translation</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Motion</td>
-<td>Accusative</td>
-<td>під стіл</td>
-<td>under the table (moving)</td>
+<td>ніж</td>
+<td>/niʒ/</td>
+<td>knife</td>
 </tr>
 <tr>
-<td>Location</td>
-<td>Instrumental</td>
-<td>під столом</td>
-<td>under the table (staying)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>за (behind/for):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Context</th>
-<th>Case</th>
-<th>Example</th>
-<th>Translation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Motion</td>
-<td>Accusative</td>
-<td>за будинок</td>
-<td>behind the house (moving)</td>
+<td>виделка</td>
+<td>/wɪˈdɛlka/</td>
+<td>fork</td>
 </tr>
 <tr>
-<td>Location</td>
-<td>Instrumental</td>
-<td>за будинком</td>
-<td>behind the house (staying)</td>
+<td>ложка</td>
+<td>/ˈloʒka/</td>
+<td>spoon</td>
 </tr>
 <tr>
-<td>Purpose</td>
-<td>Accusative</td>
-<td>за молоком</td>
-<td>for milk (going to get)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>над (above) - almost always instrumental:</strong></p>
-<ul>
-<li>над столом (above the table)</li>
-<li>над морем (above the sea)</li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Кіт забіг <strong>під стіл</strong>. (Acc) - The cat ran under the table.</li>
-<li>Кіт сидить <strong>під столом</strong>. (Instr) - The cat sits under the table.</li>
-<li>Сонце сідає <strong>за гору</strong>. (Acc) - The sun sets behind the mountain.</li>
-<li>Сонце <strong>за горою</strong>. (Instr) - The sun is behind the mountain.</li>
-</ul>
-<h3 id="prepositionsofrelativeposition">Prepositions of Relative Position</h3>
-<table>
-<thead>
-<tr>
-<th>Preposition</th>
-<th>Case</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>біля</td>
-<td>Gen</td>
-<td>near, by</td>
-<td>біля дому</td>
+<td>дошка</td>
+<td>/ˈdoʃka/</td>
+<td>cutting board</td>
 </tr>
 <tr>
-<td>поруч з</td>
-<td>Instr</td>
-<td>next to</td>
-<td>поруч з банком</td>
+<td>терка</td>
+<td>/ˈtɛrka/</td>
+<td>grater</td>
 </tr>
 <tr>
-<td>навпроти</td>
-<td>Gen</td>
-<td>opposite</td>
-<td>навпроти школи</td>
-</tr>
-<tr>
-<td>посеред</td>
-<td>Gen</td>
-<td>in the middle of</td>
-<td>посеред кімнати</td>
-</tr>
-<tr>
-<td>вздовж</td>
-<td>Gen</td>
-<td>along</td>
-<td>вздовж вулиці</td>
-</tr>
-<tr>
-<td>навколо</td>
-<td>Gen</td>
-<td>around</td>
-<td>навколо міста</td>
-</tr>
-<tr>
-<td>позаду</td>
-<td>Gen</td>
-<td>behind</td>
-<td>позаду будинку</td>
-</tr>
-<tr>
-<td>попереду</td>
-<td>Gen</td>
-<td>in front, ahead</td>
-<td>попереду нас</td>
+<td>ополоник</td>
+<td>/oˈpolonɪk/</td>
+<td>ladle</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
 <ul>
-<li>Аптека <strong>біля</strong> банку. - The pharmacy is near the bank.</li>
-<li>Зупинка <strong>навпроти</strong> школи. - The bus stop is opposite the school.</li>
-<li>Ми гуляли <strong>вздовж</strong> річки. - We walked along the river.</li>
-<li>Дерева ростуть <strong>навколо</strong> озера. - Trees grow around the lake.</li>
+<li>Ріж <strong>ножем</strong> обережно. (Cut carefully with the knife.)<br />
+| Їж <strong>виделкою</strong>, не руками! (Eat with a fork, not hands!)</li>
+<li>Насип суп <strong>ополоником</strong>. (Ladle out soup with a ladle.)</li>
+<li>Натри моркву на <strong>терці</strong>. (Grate carrots on the grater.)</li>
 </ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Many of these are compound words: на + впроти (opposite to), по + серед (through the middle), на + вколо (around). Understanding the components helps you remember meanings!</p>
-</blockquote>
-<h3 id="commonmistakestoavoid">Common Mistakes to Avoid</h3>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Cooking Methods (Способи приготування)</h3>
+      <div class="md-content"><h2 id="basicverbs">Basic Verbs</h2>
 <table>
 <thead>
 <tr>
-<th>Wrong</th>
-<th>Right</th>
-<th>Why</th>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>❌ Я йду до парк.</td>
-<td>✓ Я йду до парку.</td>
-<td>до + genitive</td>
+<td>варити</td>
+<td>/waˈrɪtɪ/</td>
+<td>to boil, cook</td>
 </tr>
 <tr>
-<td>❌ Він біля стіл.</td>
-<td>✓ Він біля столу.</td>
-<td>біля + genitive</td>
+<td>смажити</td>
+<td>/ˈsmaʒɪtɪ/</td>
+<td>to fry</td>
 </tr>
 <tr>
-<td>❌ Ми з друг.</td>
-<td>✓ Ми з другом.</td>
-<td>з (with) + instrumental</td>
+<td>пекти</td>
+<td>/pɛkˈtɪ/</td>
+<td>to bake</td>
 </tr>
 <tr>
-<td>❌ Після урок.</td>
-<td>✓ Після уроку.</td>
-<td>після + genitive</td>
+<td>тушкувати</td>
+<td>/tuʃkuˈwatɪ/</td>
+<td>to stew, braise</td>
 </tr>
 <tr>
-<td>❌ Я у Київ.</td>
-<td>✓ Я у Києві. / Я їду у Київ.</td>
-<td>location (loc) vs motion (acc)</td>
+<td>готувати</td>
+<td>/ɦotuˈwatɪ/</td>
+<td>to cook, prepare</td>
 </tr>
 </tbody>
 </table>
-<h2 id="practice">practice</h2>
-<h3 id="choosethecorrectcase">Choose the Correct Case</h3>
-<p>Select the right form:</p>
-<ol>
-<li><p>Я йду до ___ (магазин).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">магазину (gen)</div></div>
-<ol start="2">
-<li><p>Вона біля ___ (вікно).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">вікна (gen)</div></div>
-<ol start="3">
-<li><p>Ми з ___ (друзі).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">друзями (instr)</div></div>
-<ol start="4">
-<li><p>Кіт під ___ (стіл - location).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">столом (instr)</div></div>
-<ol start="5">
-<li><p>Він за ___ (будинок - motion).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">будинок (acc)</div></div>
-<ol start="6">
-<li><p>Після ___ (урок).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">уроку (gen)</div></div>
-<h3 id="locationormotion">Location or Motion?</h3>
-<p>Choose the correct form:</p>
-<ol>
-<li><p>Книга лежить ___ (стіл).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">на столі (loc - location)</div></div>
-<ol start="2">
-<li><p>Я кладу книгу ___ (стіл).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">на стіл (acc - motion)</div></div>
-<ol start="3">
-<li><p>Він ___ (кімната).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">у кімнаті (loc - location)</div></div>
-<ol start="4">
-<li><p>Він входить ___ (кімната).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">у кімнату (acc - motion)</div></div>
-<ol start="5">
-<li><p>Собака ___ (ліжко).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">під ліжком (instr - location)</div></div>
-<ol start="6">
-<li><p>Собака забіг ___ (ліжко).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">під ліжко (acc - motion)</div></div>
-<h3 id="buildsentences">Build Sentences</h3>
-<p>Use the correct preposition + case:</p>
-<ol>
-<li><p>near / house</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">біля дому</div></div>
-<ol start="2">
-<li><p>after / work</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">після роботи</div></div>
-<ol start="3">
-<li><p>with / friend</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">з другом</div></div>
-<ol start="4">
-<li><p>to / Kyiv</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">до Києва</div></div>
-<ol start="5">
-<li><p>between / us</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">між нами</div></div>
-<ol start="6">
-<li><p>above / table</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">над столом</div></div>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Giving directions</strong></p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Як дійти до метро?</li>
-<li>Ідіть прямо, потім поверніть біля банку.</li>
-<li>Метро буде навпроти парку?</li>
-<li>Так, між супермаркетом і кафе.</li>
+<li><strong>Вари</strong> воду для чаю. (Boil water for tea.)</li>
+<li><strong>Смаж</strong> цибулю до золотистого кольору. (Fry onion until golden.)</li>
+<li><strong>Печи</strong> хліб годину. (Bake bread for an hour.)</li>
+<li><strong>Тушкуй</strong> м'ясо з овочами. (Stew meat with vegetables.)</li>
+<li>Хто буде <strong>готувати</strong> вечерю? (Who will cook dinner?)</li>
 </ul>
-<p><strong>Scenario 2: Describing location</strong></p>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>"Варити" (to boil) is related to "вар" (boiling liquid) — that's why варення means "jam" (boiled fruit)!</p>
+</blockquote>
+<hr />
+<h2 id="morecookingactions">More Cooking Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>нарізати</td>
+<td>/narʲiˈzatɪ/</td>
+<td>to cut, chop</td>
+</tr>
+<tr>
+<td>мішати</td>
+<td>/mʲiˈʃatɪ/</td>
+<td>to mix, stir</td>
+</tr>
+<tr>
+<td>додавати</td>
+<td>/dodaˈwatɪ/</td>
+<td>to add</td>
+</tr>
+<tr>
+<td>солити</td>
+<td>/soˈlɪtɪ/</td>
+<td>to salt</td>
+</tr>
+<tr>
+<td>перчити</td>
+<td>/pɛrˈtʃɪtɪ/</td>
+<td>to pepper</td>
+</tr>
+<tr>
+<td>заправляти</td>
+<td>/zaprawˈlʲatɪ/</td>
+<td>to dress (salad)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Де мої ключі?</li>
-<li>Подивися на столі або під журналом.</li>
-<li>Знайшов! Вони були за диваном.</li>
-<li>Як вони туди потрапили?</li>
-</ul>
-<p><strong>Scenario 3: Making plans</strong></p>
-<ul>
-<li>Зустрінемося після роботи?</li>
-<li>Добре. Біля твого офісу?</li>
-<li>Ні, краще навпроти станції метро.</li>
-<li>До шостої буду там!</li>
+<li><strong>Наріж</strong> овочі дрібно. (Chop vegetables finely.)</li>
+<li><strong>Мішай</strong> постійно, щоб не пригоріло. (Stir constantly so it doesn't burn.)</li>
+<li><strong>Додай</strong> сіль за смаком. (Add salt to taste.)</li>
+<li>Не забудь <strong>посолити</strong>! (Don't forget to salt it!)</li>
+<li><strong>Заправ</strong> салат оливковою олією. (Dress the salad with olive oil.)</li>
 </ul>
 <hr />
+<h2 id="recipeinstructionsimperatives">Recipe Instructions (Imperatives)</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вимий овочі.</td>
+<td>Wash the vegetables.</td>
+</tr>
+<tr>
+<td>Очисти картоплю.</td>
+<td>Peel the potatoes.</td>
+</tr>
+<tr>
+<td>Наріж цибулю.</td>
+<td>Cut the onion.</td>
+</tr>
+<tr>
+<td>Додай спеції.</td>
+<td>Add spices.</td>
+</tr>
+<tr>
+<td>Вари 20 хвилин.</td>
+<td>Cook for 20 minutes.</td>
+</tr>
+<tr>
+<td>Подавай гарячим.</td>
+<td>Serve hot.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>Ukrainian cooking shows love imperatives: <em>Насипай борщ! Їж зі сметаною!</em> — Pour the borscht! Eat it with sour cream!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Tastes and Textures (Смаки та текстури)</h3>
+      <div class="md-content"><h2 id="tastewords">Taste Words</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>солодкий</td>
+<td>/soˈlodkɪj/</td>
+<td>sweet</td>
+</tr>
+<tr>
+<td>солоний</td>
+<td>/soˈlonɪj/</td>
+<td>salty</td>
+</tr>
+<tr>
+<td>кислий</td>
+<td>/ˈkɪslɪj/</td>
+<td>sour</td>
+</tr>
+<tr>
+<td>гіркий</td>
+<td>/ˈɦirkɪj/</td>
+<td>bitter</td>
+</tr>
+<tr>
+<td>гострий</td>
+<td>/ˈɦostrɪj/</td>
+<td>spicy, hot</td>
+</tr>
+<tr>
+<td>прісний</td>
+<td>/ˈprisnɪj/</td>
+<td>bland</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Торт дуже <strong>солодкий</strong>. (The cake is very sweet.)</li>
+<li>Суп занадто <strong>солоний</strong>. (The soup is too salty.)</li>
+<li>Лимон <strong>кислий</strong>. (Lemon is sour.)</li>
+<li>Кава без цукру <strong>гірка</strong>. (Coffee without sugar is bitter.)</li>
+<li>Соус занадто <strong>гострий</strong>! (The sauce is too spicy!)</li>
+</ul>
 <hr />
+<h2 id="texturewords">Texture Words</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>м'який</td>
+<td>/mjaˈkɪj/</td>
+<td>soft</td>
+</tr>
+<tr>
+<td>твердий</td>
+<td>/ˈtwɛrdɪj/</td>
+<td>hard</td>
+</tr>
+<tr>
+<td>хрусткий</td>
+<td>/xrusˈkɪj/</td>
+<td>crispy, crunchy</td>
+</tr>
+<tr>
+<td>соковитий</td>
+<td>/sokoˈwɪtɪj/</td>
+<td>juicy</td>
+</tr>
+<tr>
+<td>сухий</td>
+<td>/suˈxɪj/</td>
+<td>dry</td>
+</tr>
+<tr>
+<td>ніжний</td>
+<td>/ˈniʒnɪj/</td>
+<td>tender</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Хліб ще <strong>м'який</strong>. (The bread is still soft.)</li>
+<li><strong>Хрустке</strong> печиво смачне. (Crispy cookies are tasty.)</li>
+<li>Стейк <strong>соковитий</strong>. (The steak is juicy.)</li>
+<li>М'ясо дуже <strong>ніжне</strong>. (The meat is very tender.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Meals (Прийоми їжі)</h3>
+      <div class="md-content"><h2 id="dailymeals">Daily Meals</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>сніданок</td>
+<td>/ˈsnʲidanok/</td>
+<td>breakfast</td>
+</tr>
+<tr>
+<td>обід</td>
+<td>/oˈbid/</td>
+<td>lunch</td>
+</tr>
+<tr>
+<td>вечеря</td>
+<td>/wɛˈtʃɛrʲa/</td>
+<td>dinner</td>
+</tr>
+<tr>
+<td>перекус</td>
+<td>/pɛrɛˈkus/</td>
+<td>snack</td>
+</tr>
+<tr>
+<td>полудень</td>
+<td>/poˈludɛnʲ/</td>
+<td>midday meal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Що на <strong>сніданок</strong>? (What's for breakfast?)</li>
+<li>Обідаємо о першій. (We have lunch at one.)</li>
+<li><strong>Вечеря</strong> готова! (Dinner is ready!)</li>
+<li>Візьми яблуко на <strong>перекус</strong>. (Take an apple for a snack.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>In Ukraine, "обід" is traditionally the main meal, often eaten at home!</p>
+</blockquote>
 <hr />
+<h2 id="commonfooditems">Common Food Items</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>м'ясо</td>
+<td>meat</td>
+</tr>
+<tr>
+<td>риба</td>
+<td>fish</td>
+</tr>
+<tr>
+<td>овочі</td>
+<td>vegetables</td>
+</tr>
+<tr>
+<td>фрукти</td>
+<td>fruits</td>
+</tr>
+<tr>
+<td>крупа</td>
+<td>grains, cereal</td>
+</tr>
+<tr>
+<td>молочні продукти</td>
+<td>dairy products</td>
+</tr>
+<tr>
+<td>хліб</td>
+<td>bread</td>
+</tr>
+<tr>
+<td>яйця</td>
+<td>eggs</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <hr />
 <hr /></div>
@@ -1073,100 +1016,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="prepositioncasequickreference">Preposition → Case Quick Reference</h2>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Prepositions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Genitive</td>
-<td>до, від, для, без, після, біля, з (from), коло, замість, окрім, серед, через, навпроти, вздовж, навколо</td>
-</tr>
-<tr>
-<td>Instrumental</td>
-<td>з (with), над, перед, між, поруч з</td>
-</tr>
-<tr>
-<td>Accusative</td>
-<td>у/в (motion), на (motion), під (motion), за (motion)</td>
-</tr>
-<tr>
-<td>Locative</td>
-<td>у/в (location), на (location)</td>
-</tr>
-<tr>
-<td>Acc/Instr</td>
-<td>під, за (motion = acc, location = instr)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="motionvslocation">Motion vs Location</h2>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Case</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Де? (Where?)</td>
-<td>Locative</td>
-<td>у кімнаті</td>
-</tr>
-<tr>
-<td>Куди? (Where to?)</td>
-<td>Accusative</td>
-<td>у кімнату</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keypatterns">Key Patterns</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>до + gen</td>
-<td>до Києва</td>
-</tr>
-<tr>
-<td>біля + gen</td>
-<td>біля дому</td>
-</tr>
-<tr>
-<td>з + instr</td>
-<td>з другом</td>
-</tr>
-<tr>
-<td>над + instr</td>
-<td>над столом</td>
-</tr>
-<tr>
-<td>між + instr</td>
-<td>між нами</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Genitive prepositions: до, від, для, без, після, біля</li>
-  <li>Instrumental prepositions: з (with), над, перед, між</li>
-  <li>Location (де?) uses locative; motion (куди?) uses accusative</li>
-  <li>під/за: motion = accusative, location = instrumental</li>
-  <li>з + genitive = from; з + instrumental = with</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>You've expanded your culinary vocabulary:</p>
+<ul>
+<li><strong>Kitchen equipment</strong>: каструля, сковорода, духовка, холодильник, чайник</li>
+<li><strong>Utensils</strong>: ніж, виделка, ложка, терка, дошка</li>
+<li><strong>Cooking methods</strong>: варити, смажити, пекти, тушкувати, нарізати</li>
+<li><strong>Tastes</strong>: солодкий, солоний, кислий, гіркий, гострий</li>
+<li><strong>Meals</strong>: сніданок, обід, вечеря, перекус</li>
+</ul>
+<p><strong>Coming up next</strong>: Health &amp; Body — expanding medical and anatomy vocabulary!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1175,69 +1033,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Prepositions with Cases</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Kitchen Vocabulary</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Kitchen Items</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Recipe Instructions</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Cooking Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Kitchen Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Sort by Case Requirement</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Kitchen Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Choose Prepositions and Cases</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="select-container"></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Cooking Verbs</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
       <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Arrange Words into Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Cooking Tool</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Food and Taste</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (30)</h3>
+        <h3>Словник (29)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1245,9 +1110,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">у / в</td><td class="vocab-ipa">/u/ /v/</td><td class="vocab-en">in, at, into</td><td class="vocab-note">Loc/Acc</td></tr><tr><td class="vocab-uk">на</td><td class="vocab-ipa">/nɑ/</td><td class="vocab-en">on, at, onto</td><td class="vocab-note">Loc/Acc</td></tr><tr><td class="vocab-uk">з / із / зі</td><td class="vocab-ipa">/z/ /iz/ /zʲi/</td><td class="vocab-en">from, with</td><td class="vocab-note">Gen/Instr</td></tr><tr><td class="vocab-uk">до</td><td class="vocab-ipa">/dɔ/</td><td class="vocab-en">to, until</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">від</td><td class="vocab-ipa">/vʲid/</td><td class="vocab-en">from</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">для</td><td class="vocab-ipa">/dlʲɑ/</td><td class="vocab-en">for</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">без</td><td class="vocab-ipa">/bɛz/</td><td class="vocab-en">without</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">під</td><td class="vocab-ipa">/pʲid/</td><td class="vocab-en">under</td><td class="vocab-note">Acc/Instr</td></tr><tr><td class="vocab-uk">над</td><td class="vocab-ipa">/nɑd/</td><td class="vocab-en">above</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">перед</td><td class="vocab-ipa">/ˈpɛrɛd/</td><td class="vocab-en">in front of</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">за</td><td class="vocab-ipa">/zɑ/</td><td class="vocab-en">behind, for</td><td class="vocab-note">Acc/Instr</td></tr><tr><td class="vocab-uk">між</td><td class="vocab-ipa">/mʲiʒ/</td><td class="vocab-en">between</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">біля</td><td class="vocab-ipa">/ˈbʲilʲɑ/</td><td class="vocab-en">near, by</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">коло</td><td class="vocab-ipa">/ˈkɔlɔ/</td><td class="vocab-en">near, around</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">поруч</td><td class="vocab-ipa">/ˈpɔrutʃ/</td><td class="vocab-en">next to</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">навпроти</td><td class="vocab-ipa">/nɑuˈprɔtɪ/</td><td class="vocab-en">opposite</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">позаду</td><td class="vocab-ipa">/pɔˈzɑdu/</td><td class="vocab-en">behind</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">попереду</td><td class="vocab-ipa">/pɔpɛˈrɛdu/</td><td class="vocab-en">in front, ahead</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">посеред</td><td class="vocab-ipa">/pɔˈsɛrɛd/</td><td class="vocab-en">in the middle</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">серед</td><td class="vocab-ipa">/sɛˈrɛd/</td><td class="vocab-en">among</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">вздовж</td><td class="vocab-ipa">/vzdɔvʒ/</td><td class="vocab-en">along</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">упоперек</td><td class="vocab-ipa">/upɔˈpɛrɛk/</td><td class="vocab-en">across</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">через</td><td class="vocab-ipa">/ˈtʃɛrɛz/</td><td class="vocab-en">through, across</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">крізь</td><td class="vocab-ipa">/krʲizʲ/</td><td class="vocab-en">through</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">навколо</td><td class="vocab-ipa">/nɑuˈkɔlɔ/</td><td class="vocab-en">around</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">довкола</td><td class="vocab-ipa">/dɔuˈkɔlɑ/</td><td class="vocab-en">around</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">замість</td><td class="vocab-ipa">/ˈzɑmʲisʲtʲ/</td><td class="vocab-en">instead of</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">окрім</td><td class="vocab-ipa">/ɔˈkrʲim/</td><td class="vocab-en">except</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">крім</td><td class="vocab-ipa">/krʲim/</td><td class="vocab-en">besides</td><td class="vocab-note">+ gen</td></tr><tr><td class="vocab-uk">проти</td><td class="vocab-ipa">/ˈprɔtɪ/</td><td class="vocab-en">against</td><td class="vocab-note">+ gen</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">каструля</td><td class="vocab-ipa">/kasˈtrulʲa/</td><td class="vocab-en">pot</td></tr><tr><td class="vocab-uk">сковорода</td><td class="vocab-ipa">/skoworoˈda/</td><td class="vocab-en">frying pan</td></tr><tr><td class="vocab-uk">духовка</td><td class="vocab-ipa">/duxowˈka/</td><td class="vocab-en">oven</td></tr><tr><td class="vocab-uk">мікрохвильовка</td><td class="vocab-ipa">/mikroxwɪˈlʲowka/</td><td class="vocab-en">microwave</td></tr><tr><td class="vocab-uk">холодильник</td><td class="vocab-ipa">/xolodɪlʲˈnɪk/</td><td class="vocab-en">refrigerator</td></tr><tr><td class="vocab-uk">чайник</td><td class="vocab-ipa">/ˈtʃajnɪk/</td><td class="vocab-en">kettle</td></tr><tr><td class="vocab-uk">ніж</td><td class="vocab-ipa">/niʒ/</td><td class="vocab-en">knife</td></tr><tr><td class="vocab-uk">виделка</td><td class="vocab-ipa">/wɪˈdɛlka/</td><td class="vocab-en">fork</td></tr><tr><td class="vocab-uk">ложка</td><td class="vocab-ipa">/ˈloʒka/</td><td class="vocab-en">spoon</td></tr><tr><td class="vocab-uk">нарізати</td><td class="vocab-ipa">/narʲiˈzatɪ/</td><td class="vocab-en">to cut, chop</td></tr><tr><td class="vocab-uk">смажити</td><td class="vocab-ipa">/ˈsmaʒɪtɪ/</td><td class="vocab-en">to fry</td></tr><tr><td class="vocab-uk">варити</td><td class="vocab-ipa">/waˈrɪtɪ/</td><td class="vocab-en">to boil, cook</td></tr><tr><td class="vocab-uk">пекти</td><td class="vocab-ipa">/pɛkˈtɪ/</td><td class="vocab-en">to bake</td></tr><tr><td class="vocab-uk">тушкувати</td><td class="vocab-ipa">/tuʃkuˈwatɪ/</td><td class="vocab-en">to stew</td></tr><tr><td class="vocab-uk">мішати</td><td class="vocab-ipa">/mʲiˈʃatɪ/</td><td class="vocab-en">to mix, stir</td></tr><tr><td class="vocab-uk">солодкий</td><td class="vocab-ipa">/soˈlodkɪj/</td><td class="vocab-en">sweet</td></tr><tr><td class="vocab-uk">солоний</td><td class="vocab-ipa">/soˈlonɪj/</td><td class="vocab-en">salty</td></tr><tr><td class="vocab-uk">кислий</td><td class="vocab-ipa">/ˈkɪslɪj/</td><td class="vocab-en">sour</td></tr><tr><td class="vocab-uk">гіркий</td><td class="vocab-ipa">/ˈɦirkɪj/</td><td class="vocab-en">bitter</td></tr><tr><td class="vocab-uk">гострий</td><td class="vocab-ipa">/ˈɦostrɪj/</td><td class="vocab-en">spicy</td></tr><tr><td class="vocab-uk">хрусткий</td><td class="vocab-ipa">/xrusˈkɪj/</td><td class="vocab-en">crispy</td></tr><tr><td class="vocab-uk">соковитий</td><td class="vocab-ipa">/sokoˈwɪtɪj/</td><td class="vocab-en">juicy</td></tr><tr><td class="vocab-uk">сніданок</td><td class="vocab-ipa">/ˈsnʲidanok/</td><td class="vocab-en">breakfast</td></tr><tr><td class="vocab-uk">обід</td><td class="vocab-ipa">/oˈbid/</td><td class="vocab-en">lunch</td></tr><tr><td class="vocab-uk">вечеря</td><td class="vocab-ipa">/wɛˈtʃɛrʲa/</td><td class="vocab-en">dinner</td></tr><tr><td class="vocab-uk">перекус</td><td class="vocab-ipa">/pɛrɛˈkus/</td><td class="vocab-en">snack</td></tr><tr><td class="vocab-uk">рецепт</td><td class="vocab-ipa">/rɛˈt͡sɛpt/</td><td class="vocab-en">recipe</td></tr><tr><td class="vocab-uk">інгредієнт</td><td class="vocab-ipa">/inɦrɛdiˈjɛnt/</td><td class="vocab-en">ingredient</td></tr><tr><td class="vocab-uk">страва</td><td class="vocab-ipa">/ˈstrawa/</td><td class="vocab-en">dish, meal</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1259,8 +1124,8 @@ footer {
   </main><footer>Module 37 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Prepositions with Cases","data":{"type":"fill-blank","items":[{"prompt":"Книга лежить на ___ (стіл) біля вікна.","answer":"столі","hints":["стіл"],"options":["стіл","стола","столу","столі"]},{"prompt":"Він іде до ___ (магазин) за хлібом.","answer":"магазину","hints":["магазин"],"options":["магазин","магазину","магазині","магазином"]},{"prompt":"Діти грають під ___ (велике дерево) в парку.","answer":"великим деревом","hints":["велике дерево"],"options":["велике дерево","великого дерева","великому дереву","великим деревом"]},{"prompt":"Ми живемо між ___ (станція метро) і парком.","answer":"станцією метро","hints":["станція метро"],"options":["станція метро","станції метро","станцію метро","станцією метро"]},{"prompt":"Картина висить над ___ (диван) у вітальні.","answer":"диваном","hints":["диван"],"options":["диван","дивана","дивану","диваном"]},{"prompt":"Вона йде через ___ (центральний парк) до університету.","answer":"центральний парк","hints":["центральний парк"],"options":["центральний парк","центрального парку","центральному парку","центральним парком"]},{"prompt":"Навколо ___ (наш будинок) ростуть красиві квіти.","answer":"нашого будинку","hints":["наш будинок"],"options":["наш будинок","нашого будинку","нашому будинку","нашим будинком"]},{"prompt":"Кіт сидить за ___ (шафа) і ховається від нас.","answer":"шафою","hints":["шафа"],"options":["шафа","шафи","шафі","шафою"]},{"prompt":"Вони гуляють вздовж ___ (річка) кожного вечора.","answer":"річки","hints":["річка"],"options":["річка","річки","річці","річкою"]},{"prompt":"Я чекаю біля ___ (головний вхід) вже десять хвилин.","answer":"головного входу","hints":["головний вхід"],"options":["головний вхід","головного входу","головному входу","головним входом"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["столі","Книга","на","лежить","біля вікна"],"answer":"Книга лежить на столі біля вікна.","translation":"The book lies on the table near the window."},{"words":["магазину","Він","до","іде","за хлібом"],"answer":"Він іде до магазину за хлібом.","translation":"He goes to the store for bread."},{"words":["деревом","Діти","під","грають","великим","в парку"],"answer":"Діти грають під великим деревом в парку.","translation":"Children play under a big tree in the park."},{"words":["станцією","Ми","живемо","між","метро","і парком"],"answer":"Ми живемо між станцією метро і парком.","translation":"We live between the metro station and the park."},{"words":["диваном","Картина","висить","над","у вітальні"],"answer":"Картина висить над диваном у вітальні.","translation":"The picture hangs above the couch in the living room."},{"words":["парк","Вона","йде","через","центральний","до університету"],"answer":"Вона йде через центральний парк до університету.","translation":"She walks through the central park to the university."},{"words":["будинку","Навколо","нашого","ростуть","красиві квіти"],"answer":"Навколо нашого будинку ростуть красиві квіти.","translation":"Beautiful flowers grow around our house."},{"words":["шафою","Кіт","сидить","за","і ховається"],"answer":"Кіт сидить за шафою і ховається.","translation":"The cat sits behind the wardrobe and hides."},{"words":["річки","Вони","вздовж","гуляють","кожного вечора"],"answer":"Вони гуляють вздовж річки кожного вечора.","translation":"They walk along the river every evening."},{"words":["входу","Я","біля","чекаю","головного","вже десять хвилин"],"answer":"Я чекаю біля головного входу вже десять хвилин.","translation":"I've been waiting near the main entrance for ten minutes."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"над","right":"above"},{"left":"між","right":"between"},{"left":"навколо","right":"around"},{"left":"завжди","right":"always"},{"left":"мороз","right":"frost"},{"left":"серед","right":"among"},{"left":"магазин","right":"store"},{"left":"замість","right":"instead of"},{"left":"вздовж","right":"along"},{"left":"попереду","right":"in front, ahead"},{"left":"під","right":"under"},{"left":"поруч","right":"next to"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"замість\" mean?","options":["instead of","next to","Accusative: бачити, читати, любити","bigger"],"correctIndex":0,"explanation":"\"замість\" means \"instead of\""},{"question":"What does \"навколо\" mean?","options":["newspaper","around","to be going to","to have"],"correctIndex":1,"explanation":"\"навколо\" means \"around\""},{"question":"What does \"позаду\" mean?","options":["to understand","behind","who","food"],"correctIndex":1,"explanation":"\"позаду\" means \"behind\""},{"question":"What does \"над\" mean?","options":["to understand (perf)","thirty","in front of","above"],"correctIndex":3,"explanation":"\"над\" means \"above\""},{"question":"What does \"вздовж\" mean?","options":["along","bag","lunch","hryvnia (₴)"],"correctIndex":0,"explanation":"\"вздовж\" means \"along\""},{"question":"What does \"посеред\" mean?","options":["recipient","end","to fall asleep","in the middle"],"correctIndex":3,"explanation":"\"посеред\" means \"in the middle\""},{"question":"What does \"серед\" mean?","options":["fog","beautiful, nice","among","video"],"correctIndex":2,"explanation":"\"серед\" means \"among\""},{"question":"What does \"під\" mean?","options":["back","to clean, brush","under","to put"],"correctIndex":2,"explanation":"\"під\" means \"under\""},{"question":"What does \"поруч\" mean?","options":["to be considered","discount","how","next to"],"correctIndex":3,"explanation":"\"поруч\" means \"next to\""},{"question":"What does \"перед\" mean?","options":["smart","calf","please/you're welcome","in front of"],"correctIndex":3,"explanation":"\"перед\" means \"in front of\""},{"question":"What does \"між\" mean?","options":["between","fitting room","white","must, have to"],"correctIndex":0,"explanation":"\"між\" means \"between\""},{"question":"What does \"попереду\" mean?","options":["in front, ahead","to meet","without","to go out, leave"],"correctIndex":0,"explanation":"\"попереду\" means \"in front, ahead\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"серед\" means \"why\"","isTrue":false,"explanation":"Incorrect. \"серед\" means \"among\""},{"statement":"\"замість\" means \"instead of\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"перед\" means \"fish\"","isTrue":false,"explanation":"Incorrect. \"перед\" means \"in front of\""},{"statement":"\"між\" means \"color\"","isTrue":false,"explanation":"Incorrect. \"між\" means \"between\""},{"statement":"\"поруч\" means \"next to\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"посеред\" means \"in the middle\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"над\" means \"seat, place\"","isTrue":false,"explanation":"Incorrect. \"над\" means \"above\""},{"statement":"\"попереду\" means \"to gift (impf)\"","isTrue":false,"explanation":"Incorrect. \"попереду\" means \"in front, ahead\""},{"statement":"\"навколо\" means \"seller (m)\"","isTrue":false,"explanation":"Incorrect. \"навколо\" means \"around\""},{"statement":"\"під\" means \"table\"","isTrue":false,"explanation":"Incorrect. \"під\" means \"under\""}]}},{"id":"activity-5","type":"group-sort","title":"Sort by Case Requirement","data":{"type":"group-sort","groups":[{"id":"genitive","name":"Genitive","items":["до","від","для","без","біля","після"]},{"id":"instrumental","name":"Instrumental","items":["над","перед","між","з (with)"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Choose Prepositions and Cases","data":{"type":"select","items":[{"question":"Which prepositions always take genitive?","options":[{"text":"до","correct":true},{"text":"у","correct":false},{"text":"від","correct":true},{"text":"для","correct":true},{"text":"на","correct":false},{"text":"без","correct":true},{"text":"після","correct":true},{"text":"з (with)","correct":false},{"text":"біля","correct":true},{"text":"над","correct":false}]},{"question":"Which prepositions take instrumental?","options":[{"text":"до","correct":false},{"text":"над","correct":true},{"text":"перед","correct":true},{"text":"для","correct":false},{"text":"між","correct":true},{"text":"з (with)","correct":true},{"text":"від","correct":false},{"text":"без","correct":false},{"text":"біля","correct":false},{"text":"після","correct":false}]},{"question":"Which prepositions can take TWO different cases?","options":[{"text":"до","correct":false},{"text":"у","correct":true},{"text":"на","correct":true},{"text":"для","correct":false},{"text":"під","correct":true},{"text":"за","correct":true},{"text":"над","correct":false},{"text":"перед","correct":false},{"text":"між","correct":false},{"text":"біля","correct":false}]},{"question":"Which questions indicate LOCATION (locative)?","options":[{"text":"Де?","correct":true},{"text":"Куди?","correct":false},{"text":"Звідки?","correct":false},{"text":"Where?","correct":true},{"text":"Where to?","correct":false},{"text":"Where at?","correct":true},{"text":"Where from?","correct":false},{"text":"Коли?","correct":false},{"text":"Чому?","correct":false},{"text":"Як?","correct":false}]},{"question":"Which questions indicate MOTION (accusative)?","options":[{"text":"Де?","correct":false},{"text":"Куди?","correct":true},{"text":"Звідки?","correct":false},{"text":"Where?","correct":false},{"text":"Where to?","correct":true},{"text":"Where at?","correct":false},{"text":"Where from?","correct":false},{"text":"Коли?","correct":false},{"text":"Чому?","correct":false},{"text":"Як?","correct":false}]},{"question":"Which use locative case for location?","options":[{"text":"у парку","correct":true},{"text":"у парк","correct":false},{"text":"на столі","correct":true},{"text":"на стіл","correct":false},{"text":"в кімнаті","correct":true},{"text":"в кімнату","correct":false},{"text":"до парку","correct":false},{"text":"від парку","correct":false},{"text":"без парку","correct":false},{"text":"для парку","correct":false}]},{"question":"Which use accusative case for motion?","options":[{"text":"у парку","correct":false},{"text":"у парк","correct":true},{"text":"на столі","correct":false},{"text":"на стіл","correct":true},{"text":"в кімнаті","correct":false},{"text":"в кімнату","correct":true},{"text":"над столом","correct":false},{"text":"перед будинком","correct":false},{"text":"між деревами","correct":false},{"text":"до школи","correct":false}]},{"question":"Which prepositions indicate direction/movement?","options":[{"text":"до","correct":true},{"text":"біля","correct":false},{"text":"від","correct":true},{"text":"у (motion)","correct":true},{"text":"на (motion)","correct":true},{"text":"над","correct":false},{"text":"перед","correct":false},{"text":"між","correct":false},{"text":"під (motion)","correct":true},{"text":"за (motion)","correct":true}]},{"question":"Which prepositions indicate spatial relationships?","options":[{"text":"до","correct":false},{"text":"над","correct":true},{"text":"під","correct":true},{"text":"для","correct":false},{"text":"перед","correct":true},{"text":"за","correct":true},{"text":"між","correct":true},{"text":"біля","correct":true},{"text":"без","correct":false},{"text":"після","correct":false}]},{"question":"Which combine with genitive to mean \"from\"?","options":[{"text":"у","correct":false},{"text":"з","correct":true},{"text":"від","correct":true},{"text":"до","correct":false},{"text":"на","correct":false},{"text":"для","correct":false},{"text":"без","correct":false},{"text":"над","correct":false},{"text":"перед","correct":false},{"text":"між","correct":false}]}]}},{"id":"activity-7","type":"unjumble","title":"Arrange Words into Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["парку","Я","у","гуляю"],"answer":"Я гуляю у парку.","translation":"I walk in the park."},{"words":["йду","парк","у","Я"],"answer":"Я йду у парк.","translation":"I go to the park."},{"words":["на","книга","столі","лежить"],"answer":"Книга лежить на столі.","translation":"The book lies on the table."},{"words":["книгу","стіл","кладу","на","Я"],"answer":"Я кладу книгу на стіл.","translation":"I put the book on the table."},{"words":["парку","до","Ми","йдемо"],"answer":"Ми йдемо до парку.","translation":"We go to the park."},{"words":["парку","Вони","від","приїхали"],"answer":"Вони приїхали від парку.","translation":"They came from the park."},{"words":["над","літає","містом","Птах"],"answer":"Птах літає над містом.","translation":"A bird flies above the city."},{"words":["перед","будинком","стоїть","Машина"],"answer":"Машина стоїть перед будинком.","translation":"The car stands in front of the building."},{"words":["парком","біля","живу","Я"],"answer":"Я живу біля парку.","translation":"I live near the park."},{"words":["між","деревами","Діти","граються"],"answer":"Діти граються між деревами.","translation":"Children play between the trees."}]}}];
-    const vocabData = [{"uk":"у / в","translit":"","en":"in, at, into","note":"Loc/Acc"},{"uk":"на","translit":"","en":"on, at, onto","note":"Loc/Acc"},{"uk":"з / із / зі","translit":"","en":"from, with","note":"Gen/Instr"},{"uk":"до","translit":"","en":"to, until","note":"+ gen"},{"uk":"від","translit":"","en":"from","note":"+ gen"},{"uk":"для","translit":"","en":"for","note":"+ gen"},{"uk":"без","translit":"","en":"without","note":"+ gen"},{"uk":"під","translit":"","en":"under","note":"Acc/Instr"},{"uk":"над","translit":"","en":"above","note":"+ instr"},{"uk":"перед","translit":"","en":"in front of","note":"+ instr"},{"uk":"за","translit":"","en":"behind, for","note":"Acc/Instr"},{"uk":"між","translit":"","en":"between","note":"+ instr"},{"uk":"біля","translit":"","en":"near, by","note":"+ gen"},{"uk":"коло","translit":"","en":"near, around","note":"+ gen"},{"uk":"поруч","translit":"","en":"next to","note":"з + instr"},{"uk":"навпроти","translit":"","en":"opposite","note":"+ gen"},{"uk":"позаду","translit":"","en":"behind","note":"+ gen"},{"uk":"попереду","translit":"","en":"in front, ahead","note":"+ gen"},{"uk":"посеред","translit":"","en":"in the middle","note":"+ gen"},{"uk":"серед","translit":"","en":"among","note":"+ gen"},{"uk":"вздовж","translit":"","en":"along","note":"+ gen"},{"uk":"упоперек","translit":"","en":"across","note":"+ gen"},{"uk":"через","translit":"","en":"through, across","note":"+ acc"},{"uk":"крізь","translit":"","en":"through","note":"+ acc"},{"uk":"навколо","translit":"","en":"around","note":"+ gen"},{"uk":"довкола","translit":"","en":"around","note":"+ gen"},{"uk":"замість","translit":"","en":"instead of","note":"+ gen"},{"uk":"окрім","translit":"","en":"except","note":"+ gen"},{"uk":"крім","translit":"","en":"besides","note":"+ gen"},{"uk":"проти","translit":"","en":"against","note":"+ gen"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Kitchen Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Вари воду в ___. (kettle)","answer":"чайнику"},{"prompt":"Постав м'ясо в ___. (oven)","answer":"духовку"},{"prompt":"Візьми молоко з ___. (refrigerator)","answer":"холодильника"},{"prompt":"___ овочі на сковороді. (Fry)","answer":"Смаж"},{"prompt":"___ суп 30 хвилин. (Boil/Cook)","answer":"Вари"},{"prompt":"___ картоплю дрібно. (Cut)","answer":"Наріж"},{"prompt":"Суп занадто ___. (salty)","answer":"солоний"},{"prompt":"Торт дуже ___. (sweet)","answer":"солодкий"},{"prompt":"Що на ___? (breakfast)","answer":"сніданок"},{"prompt":"___ готова! (Dinner)","answer":"Вечеря"},{"prompt":"Ріж хліб ___. (with knife)","answer":"ножем"},{"prompt":"Їж суп ___. (with spoon)","answer":"ложкою"}]}},{"id":"activity-1","type":"match-up","title":"Kitchen Items","data":{"type":"match-up","pairs":[{"left":"каструля","right":"pot"},{"left":"сковорода","right":"frying pan"},{"left":"духовка","right":"oven"},{"left":"холодильник","right":"refrigerator"},{"left":"ніж","right":"knife"},{"left":"виделка","right":"fork"},{"left":"ложка","right":"spoon"},{"left":"чайник","right":"kettle"},{"left":"терка","right":"grater"},{"left":"дошка","right":"cutting board"},{"left":"ополоник","right":"ladle"},{"left":"мікрохвильовка","right":"microwave"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Recipe Instructions","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Наріж","овочі","дрібно","для","салату","на","кухонному","столі"],"answer":"Наріж овочі дрібно для салату на кухонному столі.","translation":"Cut vegetables finely for salad on the kitchen table."},{"words":["Вари","суп","двадцять","хвилин","на","повільному","вогні","сьогодні"],"answer":"Вари суп двадцять хвилин на повільному вогні сьогодні.","translation":"Cook soup for twenty minutes on slow heat today."},{"words":["Смаж","цибулю","до","золотистого","кольору","на","сковороді","обережно"],"answer":"Смаж цибулю до золотистого кольору на сковороді обережно.","translation":"Fry onion until golden on the pan carefully."},{"words":["Додай","сіль","та","перець","за","смаком","у","страву"],"answer":"Додай сіль та перець за смаком у страву.","translation":"Add salt and pepper to taste into the dish."},{"words":["Печи","хліб","одну","годину","у","гарячій","духовці","сьогодні"],"answer":"Печи хліб одну годину у гарячій духовці сьогодні.","translation":"Bake bread for one hour in hot oven today."},{"words":["Подавай","цю","страву","гарячою","зі","сметаною","на","столі"],"answer":"Подавай цю страву гарячою зі сметаною на столі.","translation":"Serve this dish hot with sour cream at table."},{"words":["Мішай","постійно","щоб","страва","не","пригоріла","на","плиті"],"answer":"Мішай постійно, щоб страва не пригоріла на плиті.","translation":"Stir constantly so the dish doesn't burn on stove."},{"words":["Вимий","всі","овочі","холодною","водою","перед","приготуванням","їжі"],"answer":"Вимий всі овочі холодною водою перед приготуванням їжі.","translation":"Wash all vegetables with cold water before cooking food."},{"words":["Смаж","м'ясо","на","великій","сковороді","п'ятнадцять","хвилин","сьогодні"],"answer":"Смаж м'ясо на великій сковороді п'ятнадцять хвилин сьогодні.","translation":"Fry meat on big pan for fifteen minutes today."},{"words":["Очисти","всю","картоплю","та","поклади","її","в","каструлю"],"answer":"Очисти всю картоплю та поклади її в каструлю.","translation":"Peel all potatoes and put them in the pot."},{"words":["Натри","свіжу","моркву","на","великій","терці","для","салату"],"answer":"Натри свіжу моркву на великій терці для салату.","translation":"Grate fresh carrot on the big grater for salad."},{"words":["Додай","улюблені","спеції","та","трави","у","готову","страву"],"answer":"Додай улюблені спеції та трави у готову страву.","translation":"Add favorite spices and herbs into the ready dish."}]}},{"id":"activity-3","type":"quiz","title":"Cooking Knowledge","data":{"type":"quiz","questions":[{"question":"«Варити» means:","options":["To boil, cook","To buy","To sell","To wash"],"correctIndex":0,"explanation":""},{"question":"«Сковорода» is:","options":["Frying pan","Pot","Oven","Kettle"],"correctIndex":0,"explanation":""},{"question":"«Солодкий» is:","options":["Sweet","Salty","Sour","Bitter"],"correctIndex":0,"explanation":""},{"question":"«Сніданок» is:","options":["Breakfast","Lunch","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"«Нарізати» means:","options":["To cut, chop","To boil","To bake","To eat"],"correctIndex":0,"explanation":""},{"question":"«Духовка» is:","options":["Oven","Microwave","Refrigerator","Dishwasher"],"correctIndex":0,"explanation":""},{"question":"«Гострий» (for food) means:","options":["Spicy","Sweet","Sour","Sharp (angle)"],"correctIndex":0,"explanation":""},{"question":"«Мішати» means:","options":["To mix, stir","To wash","To cut","To bake"],"correctIndex":0,"explanation":""},{"question":"Which meal is lunch?","options":["Обід","Сніданок","Вечеря","Перекус"],"correctIndex":0,"explanation":""},{"question":"«Холодильник» keeps food:","options":["Cold","Hot","Frozen","Dry"],"correctIndex":0,"explanation":""},{"question":"«Пекти» is for:","options":["Baking bread, cakes","Frying eggs","Boiling soup","Cutting vegetables"],"correctIndex":0,"explanation":""},{"question":"«Соковитий» means:","options":["Juicy","Dry","Hard","Soft"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Kitchen Facts","data":{"type":"true-false","statements":[{"statement":"«Варити» means to fry.","isTrue":false,"explanation":""},{"statement":"«Сковорода» is used for frying.","isTrue":true,"explanation":""},{"statement":"«Солоний» means sweet.","isTrue":false,"explanation":""},{"statement":"«Обід» is dinner.","isTrue":false,"explanation":""},{"statement":"«Духовка» is an oven.","isTrue":true,"explanation":""},{"statement":"«Кислий» means sour.","isTrue":true,"explanation":""},{"statement":"«Чайник» boils water.","isTrue":true,"explanation":""},{"statement":"«Перекус» is the main meal.","isTrue":false,"explanation":""},{"statement":"«Нарізати» means to mix.","isTrue":false,"explanation":""},{"statement":"«Гіркий» means bitter.","isTrue":true,"explanation":""},{"statement":"«Тушкувати» means to stew.","isTrue":true,"explanation":""},{"statement":"«Виделка» is a spoon.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Kitchen Categories","data":{"type":"group-sort","groups":[{"id":"appliances","name":"Appliances","items":["духовка","холодильник","мікрохвильовка"]},{"id":"utensils","name":"Utensils","items":["ніж","ложка","виделка"]},{"id":"cooking-methods","name":"Cooking Methods","items":["варити","смажити","пекти"]},{"id":"tastes","name":"Tastes","items":["солодкий","кислий","гострий"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Cooking Verbs","data":{"type":"fill-blank","items":[{"prompt":"Мама ___ борщ на плиті. (cooks)","answer":"варить"},{"prompt":"Тато ___ м'ясо на сковороді. (fries)","answer":"смажить"},{"prompt":"Бабуся ___ хліб у духовці. (bakes)","answer":"пече"},{"prompt":"Я ___ овочі на салат. (cut)","answer":"нарізаю"},{"prompt":"Ти ___ суп ложкою? (stir)","answer":"мішаєш"},{"prompt":"Вона ___ м'ясо з овочами. (stews)","answer":"тушкує"},{"prompt":"Ми ___ вечерю разом. (prepare)","answer":"готуємо"},{"prompt":"Він ___ воду для чаю. (boils)","answer":"варить"},{"prompt":"Я ___ сіль у суп. (add)","answer":"додаю"},{"prompt":"Вона ___ салат олією. (dresses)","answer":"заправляє"},{"prompt":"Мама ___ страву гарячою. (serves)","answer":"подає"},{"prompt":"Ти ___ картоплю ножем? (peel)","answer":"чистиш"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Cooking Tool","data":{"type":"select","items":[{"question":"Чим ріжуть хліб?","options":[{"text":"ложкою","correct":false},{"text":"ножем","correct":true},{"text":"виделкою","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де смажать м'ясо?","options":[{"text":"на сковороді","correct":true},{"text":"у чайнику","correct":false},{"text":"на тарілці","correct":false},{"text":"у склянці","correct":false}]},{"question":"Де печуть пиріг?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":true},{"text":"у холодильнику","correct":false},{"text":"на столі","correct":false}]},{"question":"Чим їдять суп?","options":[{"text":"виделкою","correct":false},{"text":"ложкою","correct":true},{"text":"ножем","correct":false},{"text":"паличками","correct":false}]},{"question":"Де варять воду для чаю?","options":[{"text":"у духовці","correct":false},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":true},{"text":"у мікрохвильовці","correct":false}]},{"question":"Де зберігають молоко?","options":[{"text":"на плиті","correct":false},{"text":"у холодильнику","correct":true},{"text":"на столі","correct":false},{"text":"у шафі","correct":false}]},{"question":"Чим натирають моркву?","options":[{"text":"на терці","correct":true},{"text":"ножем","correct":false},{"text":"ложкою","correct":false},{"text":"виделкою","correct":false}]},{"question":"Де варять борщ?","options":[{"text":"у каструлі","correct":true},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":false},{"text":"у духовці","correct":false}]},{"question":"Чим наливають суп?","options":[{"text":"виделкою","correct":false},{"text":"ополоником","correct":true},{"text":"ножем","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де ріжуть овочі?","options":[{"text":"на тарілці","correct":false},{"text":"на дошці","correct":true},{"text":"у каструлі","correct":false},{"text":"на сковороді","correct":false}]},{"question":"Де розігрівають їжу швидко?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":false},{"text":"у мікрохвильовці","correct":true},{"text":"на балконі","correct":false}]},{"question":"Чим їдять м'ясо?","options":[{"text":"ложкою","correct":false},{"text":"виделкою","correct":true},{"text":"паличками","correct":false},{"text":"руками","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Food and Taste","data":{"type":"quiz","questions":[{"question":"«Солодкий торт» means:","options":["Sweet cake","Salty cake","Sour cake","Spicy cake"],"correctIndex":0,"explanation":""},{"question":"Що є «кислим»?","options":["Лимон","Цукор","Сіль","Перець"],"correctIndex":0,"explanation":""},{"question":"«Гострий соус» means:","options":["Spicy sauce","Sweet sauce","Salty sauce","Bitter sauce"],"correctIndex":0,"explanation":""},{"question":"Який смак у кави без цукру?","options":["Гіркий","Солодкий","Кислий","Солоний"],"correctIndex":0,"explanation":""},{"question":"«М'яке м'ясо» означає:","options":["Tender meat","Hard meat","Dry meat","Raw meat"],"correctIndex":0,"explanation":""},{"question":"Що є «соковитим»?","options":["Стейк","Сухар","Крекер","Чіпси"],"correctIndex":0,"explanation":""},{"question":"«Хрустке печиво» means:","options":["Crispy cookie","Soft cookie","Wet cookie","Burnt cookie"],"correctIndex":0,"explanation":""},{"question":"Коли їдять «сніданок»?","options":["Вранці","Вдень","Ввечері","Вночі"],"correctIndex":0,"explanation":""},{"question":"«Обід» — це:","options":["Lunch","Breakfast","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"Що таке «перекус»?","options":["Snack","Main meal","Breakfast","Feast"],"correctIndex":0,"explanation":""},{"question":"«Рецепт» — це:","options":["Recipe","Restaurant","Receipt","Refuse"],"correctIndex":0,"explanation":""},{"question":"«Інгредієнт» — це:","options":["Ingredient","Integration","Intelligence","Intention"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"каструля","translit":"","en":"pot","note":""},{"uk":"сковорода","translit":"","en":"frying pan","note":""},{"uk":"духовка","translit":"","en":"oven","note":""},{"uk":"мікрохвильовка","translit":"","en":"microwave","note":""},{"uk":"холодильник","translit":"","en":"refrigerator","note":""},{"uk":"чайник","translit":"","en":"kettle","note":""},{"uk":"ніж","translit":"","en":"knife","note":""},{"uk":"виделка","translit":"","en":"fork","note":""},{"uk":"ложка","translit":"","en":"spoon","note":""},{"uk":"нарізати","translit":"","en":"to cut, chop","note":""},{"uk":"смажити","translit":"","en":"to fry","note":""},{"uk":"варити","translit":"","en":"to boil, cook","note":""},{"uk":"пекти","translit":"","en":"to bake","note":""},{"uk":"тушкувати","translit":"","en":"to stew","note":""},{"uk":"мішати","translit":"","en":"to mix, stir","note":""},{"uk":"солодкий","translit":"","en":"sweet","note":""},{"uk":"солоний","translit":"","en":"salty","note":""},{"uk":"кислий","translit":"","en":"sour","note":""},{"uk":"гіркий","translit":"","en":"bitter","note":""},{"uk":"гострий","translit":"","en":"spicy","note":""},{"uk":"хрусткий","translit":"","en":"crispy","note":""},{"uk":"соковитий","translit":"","en":"juicy","note":""},{"uk":"сніданок","translit":"","en":"breakfast","note":""},{"uk":"обід","translit":"","en":"lunch","note":""},{"uk":"вечеря","translit":"","en":"dinner","note":""},{"uk":"перекус","translit":"","en":"snack","note":""},{"uk":"рецепт","translit":"","en":"recipe","note":""},{"uk":"інгредієнт","translit":"","en":"ingredient","note":""},{"uk":"страва","translit":"","en":"dish, meal","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1312,8 +1177,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1344,8 +1209,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1757,7 +1622,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1767,7 +1632,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1968,6 +1835,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

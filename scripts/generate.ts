@@ -149,44 +149,71 @@ interface ModuleInfo {
 // INDEX PAGE GENERATORS (kept from original)
 // ============================================================================
 
+// Extract phase prefix (e.g., "A2.5" from "A2.5 Vocabulary Expansion")
+function getPhasePrefix(phase: string): string {
+  const match = phase.match(/^[A-C]\d\+?\.\d+/);
+  return match ? match[0] : phase;
+}
+
+// Convert HSL to Hex color
+function hslToHex(h: number, s: number, l: number): string {
+  s /= 100;
+  l /= 100;
+  const a = s * Math.min(l, 1 - l);
+  const f = (n: number) => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color).toString(16).padStart(2, '0');
+  };
+  return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+// Generate colors dynamically based on phase
+// Each level gets a base hue, subphases rotate through that range
+function getPhaseColor(phase: string): { bg: string; light: string } {
+  const prefix = getPhasePrefix(phase);
+
+  // Parse level and subphase: "A2.5" -> level="A2", sub=5
+  const match = prefix.match(/^([A-C]\d\+?)\.(\d+)$/);
+  if (!match) {
+    return { bg: '#6b7280', light: '#f3f4f6' }; // default grey
+  }
+
+  const level = match[1];
+  const subphase = parseInt(match[2], 10);
+
+  // Base hues for each level (spread across color wheel)
+  // A1: green (140), A2: blue-violet (250), B1: magenta (320), B2: orange (30), C1: teal (180), C2: red (0)
+  const levelHues: Record<string, number> = {
+    'A1': 140,   // green
+    'A2': 250,   // blue-violet
+    'A2+': 280,  // purple
+    'B1': 320,   // magenta
+    'B1+': 340,  // pink
+    'B2': 30,    // orange
+    'B2+': 60,   // yellow-green
+    'C1': 180,   // teal
+    'C1+': 200,  // cyan
+    'C2': 0,     // red
+  };
+
+  const baseHue = levelHues[level] ?? 220;
+
+  // Rotate hue slightly for each subphase (15 degrees per subphase)
+  const hue = (baseHue + (subphase - 1) * 15) % 360;
+
+  // Generate dark (bg) and light versions
+  const bg = hslToHex(hue, 70, 45);      // saturated, medium dark
+  const light = hslToHex(hue, 80, 92);   // saturated, very light
+
+  return { bg, light };
+}
+
 function generateLevelIndex(
   modules: Array<{ num: number; title: string; subtitle?: string; phase: string; duration?: number }>,
   level: string,
   langPair: string
 ): string {
-  const phaseColors: Record<string, { bg: string; light: string }> = {
-    'A1.1': { bg: '#059669', light: '#d1fae5' },
-    'A1.2': { bg: '#0891b2', light: '#cffafe' },
-    'A1.3': { bg: '#0284c7', light: '#e0f2fe' },
-    'A2.1': { bg: '#2563eb', light: '#dbeafe' },
-    'A2.2': { bg: '#7c3aed', light: '#ede9fe' },
-    'A2.3': { bg: '#9333ea', light: '#f3e8ff' },
-    'A2+.1': { bg: '#be185d', light: '#fce7f3' },
-    'A2+.2': { bg: '#9d174d', light: '#fce7f3' },
-    'A2+.3': { bg: '#831843', light: '#ffe4e6' },
-    'B1.1': { bg: '#c026d3', light: '#fae8ff' },
-    'B1.2': { bg: '#db2777', light: '#fce7f3' },
-    'B1.3': { bg: '#e11d48', light: '#ffe4e6' },
-    'B1.4': { bg: '#dc2626', light: '#fee2e2' },
-    'B1+.1': { bg: '#f43f5e', light: '#ffe4e6' },
-    'B1+.2': { bg: '#fb7185', light: '#fff1f2' },
-    'B1+.3': { bg: '#fda4af', light: '#fff1f2' },
-    'B1+.4': { bg: '#fecdd3', light: '#fff1f2' },
-    'B2.1': { bg: '#ea580c', light: '#ffedd5' },
-    'B2.2': { bg: '#d97706', light: '#fef3c7' },
-    'B2.3': { bg: '#ca8a04', light: '#fef9c3' },
-    'B2.4': { bg: '#a16207', light: '#fef08a' },
-    'B2+.1': { bg: '#84cc16', light: '#ecfccb' },
-    'B2+.2': { bg: '#65a30d', light: '#d9f99d' },
-    'B2+.3': { bg: '#4d7c0f', light: '#bef264' },
-    'B2+.4': { bg: '#3f6212', light: '#a3e635' },
-    'C1.1': { bg: '#0d9488', light: '#ccfbf1' },
-    'C1.2': { bg: '#0891b2', light: '#cffafe' },
-    'C1.3': { bg: '#0284c7', light: '#e0f2fe' },
-    'C1.4': { bg: '#2563eb', light: '#dbeafe' },
-    'C1.5': { bg: '#4f46e5', light: '#e0e7ff' },
-  };
-  const defaultColor = { bg: '#6b7280', light: '#f3f4f6' };
 
   const phases = [...new Set(modules.map(m => m.phase))];
 
@@ -243,7 +270,7 @@ function generateLevelIndex(
       </div>
       <div class="tile-grid">
         ${phaseModules.map(m => {
-          const c = phaseColors[m.phase] || defaultColor;
+          const c = getPhaseColor(m.phase);
           return `
         <a href="module-${padNumber(m.num)}.html" class="tile">
           <div class="tile-header">

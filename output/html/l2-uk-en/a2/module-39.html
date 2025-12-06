@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 39: At the Post Office &amp; Bank | Ukrainian A2</title>
+  <title>Module 39: Home &amp; Furniture | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 39: At the Post Office &amp; Bank</h1>
+    <h1>Module 39: Home &amp; Furniture</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Select</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,460 +497,499 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">At the Post Office &amp; Bank</h2>
-        <p style="color:var(--text-muted)">Service Interactions</p>
+        <span class="level-badge">A2 · A2.5</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Home &amp; Furniture</h2>
+        <p style="color:var(--text-muted)">Living Space Vocabulary</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="realworldukrainian">Real-World Ukrainian</h3>
-<p>You've mastered the case system. Now let's use it in real service situations: the post office (пошта) and the bank (банк).</p>
-<p><strong>Common needs:</strong></p>
-<ul>
-<li>Sending letters and packages</li>
-<li>Exchanging currency</li>
-<li>Paying bills</li>
-<li>Asking about services</li>
-</ul>
-<p>These situations combine everything you've learned - cases, prepositions, polite requests!</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>"Укрпошта" (Ukrposhta) is Ukraine's national postal service, founded in 1994. Despite the digital age, Ukrainians still value sending postcards (листівки) and packages (посилки), especially for holidays. The phrase "Надіслати з любов'ю" (sent with love) captures this tradition!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="atthepostofficekeyphrases">At the Post Office: Key Phrases</h3>
-<p><strong>Entering and asking:</strong></p>
-<ul>
-<li>Добрий день! Я хочу надіслати листа. - Hello! I want to send a letter.</li>
-<li>Мені потрібно відправити посилку. - I need to send a package.</li>
-<li>Скільки коштує марка до Англії? - How much is a stamp to England?</li>
-<li>Де можна купити конверт? - Where can I buy an envelope?</li>
-</ul>
-<p><strong>Specifying destination:</strong></p>
-<ul>
-<li>До Америки. - To America. (до + gen)</li>
-<li>У Німеччину. - To Germany. (у + acc for countries)</li>
-<li>На адресу… - To the address… (на + acc)</li>
-</ul>
-<p><strong>Package details:</strong></p>
-<ul>
-<li>Посилка важить два кілограми. - The package weighs two kilograms.</li>
-<li>Що всередині? - What's inside?</li>
-<li>Там книги і одяг. - There are books and clothes.</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Sending Mail</strong></p>
-  <p>Key verbs for mail:</p>
-  <ul>
-  <li><strong>надіслати</strong> / <strong>відправити</strong> (to send) + acc (what) + dat (to whom)</li>
-  <li><strong>отримати</strong> (to receive) + acc (what) + від + gen (from whom)</li>
-  <li><strong>забрати</strong> (to pick up) + acc (what)</li>
-  </ul>
-</blockquote>
-<h3 id="postofficevocabulary">Post Office Vocabulary</h3>
+      <div class="md-content"><p>Home is where life happens! Whether you're looking for an apartment, describing your room, or shopping for furniture, you need home vocabulary. "The couch is in the living room," "Put it in the closet," "We need to clean the bathroom" — this module makes your Ukrainian feel right at home!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Rooms (Кімнати)</h3>
+      <div class="md-content"><h2 id="basicrooms">Basic Rooms</h2>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
+<th>IPA</th>
 <th>English</th>
-<th>Case notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>лист</td>
-<td>letter</td>
-<td>надіслати листа (acc)</td>
+<td>кімната</td>
+<td>/kimˈnata/</td>
+<td>room</td>
 </tr>
 <tr>
-<td>листівка</td>
-<td>postcard</td>
-<td>написати листівку (acc)</td>
+<td>вітальня</td>
+<td>/wiˈtalʲnʲa/</td>
+<td>living room</td>
 </tr>
 <tr>
-<td>посилка</td>
-<td>package</td>
-<td>відправити посилку (acc)</td>
+<td>спальня</td>
+<td>/ˈspalʲnʲa/</td>
+<td>bedroom</td>
 </tr>
 <tr>
-<td>бандероль</td>
-<td>small parcel</td>
-<td></td>
+<td>кухня</td>
+<td>/ˈkuxnʲa/</td>
+<td>kitchen</td>
 </tr>
 <tr>
-<td>марка</td>
-<td>stamp</td>
-<td>купити марку (acc)</td>
+<td>ванна кімната</td>
+<td>/ˈwanːa kimˈnata/</td>
+<td>bathroom</td>
 </tr>
 <tr>
-<td>конверт</td>
-<td>envelope</td>
-<td></td>
-</tr>
-<tr>
-<td>адреса</td>
-<td>address</td>
-<td>на адресу (acc)</td>
-</tr>
-<tr>
-<td>відправник</td>
-<td>sender</td>
-<td>від відправника (gen)</td>
-</tr>
-<tr>
-<td>одержувач</td>
-<td>recipient</td>
-<td>одержувачу (dat)</td>
-</tr>
-<tr>
-<td>індекс</td>
-<td>postal code</td>
-<td></td>
-</tr>
-<tr>
-<td>квитанція</td>
-<td>receipt</td>
-<td></td>
-</tr>
-<tr>
-<td>вага</td>
-<td>weight</td>
-<td></td>
-</tr>
-<tr>
-<td>доставка</td>
-<td>delivery</td>
-<td></td>
+<td>туалет</td>
+<td>/tuaˈlɛt/</td>
+<td>toilet, restroom</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example dialogue:</strong></p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Я хочу надіслати посилку до Канади.</li>
-<li>Що в посилці?</li>
-<li>Книги і солодощі.</li>
-<li>Поставте посилку на ваги. Два кілограми. Це коштує 350 гривень.</li>
-<li>Добре. Ось гроші.</li>
-<li>Ваша квитанція. Доставка - 10-14 днів.</li>
+<li>У нас три <strong>кімнати</strong>. (We have three rooms.)</li>
+<li>Телевізор у <strong>вітальні</strong>. (TV is in the living room.)</li>
+<li>Ліжко в <strong>спальні</strong>. (Bed is in the bedroom.)</li>
+<li>Готую на <strong>кухні</strong>. (I'm cooking in the kitchen.)</li>
+<li>Я в <strong>ванній</strong> кімнаті. (I'm in the bathroom.)</li>
 </ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: Ukrainian Mail Traditions</strong></p>
-  <p>Ukrainians love sending greeting cards for holidays, especially:</p>
-  <ul>
-  <li>Новий рік (New Year) - the biggest holiday</li>
-  <li>Великдень (Easter) - with traditional "писанки" designs</li>
-  <li>День народження (Birthday)</li>
-  </ul>
-  <p>Receiving a handwritten card is special - it shows someone took time for you!</p>
+  <p>"Вітальня" comes from "вітати" (to greet) — it's the room where you greet guests!</p>
 </blockquote>
-<h3 id="atthebankkeyphrases">At the Bank: Key Phrases</h3>
-<p><strong>Basic requests:</strong></p>
-<ul>
-<li>Я хочу обміняти долари на гривні. - I want to exchange dollars for hryvnias.</li>
-<li>Який курс обміну? - What's the exchange rate?</li>
-<li>Можна зняти готівку? - Can I withdraw cash?</li>
-<li>Я хочу відкрити рахунок. - I want to open an account.</li>
-<li>Мені потрібна виписка з рахунку. - I need an account statement.</li>
-</ul>
-<p><strong>Card and ATM:</strong></p>
-<ul>
-<li>Де найближчий банкомат? - Where's the nearest ATM?</li>
-<li>Моя картка не працює. - My card doesn't work.</li>
-<li>Можна оплатити карткою? - Can I pay by card?</li>
-<li>Введіть пін-код. - Enter your PIN.</li>
-</ul>
-<p><strong>Transfers:</strong></p>
-<ul>
-<li>Я хочу зробити переказ. - I want to make a transfer.</li>
-<li>На який рахунок? - To which account?</li>
-<li>Яка комісія? - What's the commission?</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Money Talk</strong></p>
-  <p>Currency phrases:</p>
-  <ul>
-  <li>обміняти X <strong>на</strong> Y - exchange X <strong>for</strong> Y</li>
-  <li>зняти гроші <strong>з</strong> рахунку - withdraw money <strong>from</strong> account</li>
-  <li>покласти гроші <strong>на</strong> рахунок - deposit money <strong>to</strong> account</li>
-  <li>переказати гроші <strong>кому</strong> - transfer money <strong>to someone</strong> (dat)</li>
-  </ul>
-</blockquote>
-<h3 id="bankvocabulary">Bank Vocabulary</h3>
+<hr />
+<h2 id="additionalrooms">Additional Rooms</h2>
 <table>
 <thead>
 <tr>
 <th>Ukrainian</th>
+<th>IPA</th>
 <th>English</th>
-<th>Case notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>рахунок</td>
-<td>account</td>
-<td>на рахунок (acc), з рахунку (gen)</td>
+<td>кабінет</td>
+<td>/kabiˈnɛt/</td>
+<td>office, study</td>
 </tr>
 <tr>
-<td>картка</td>
-<td>card</td>
-<td>карткою (instr)</td>
+<td>комора</td>
+<td>/koˈmora/</td>
+<td>pantry, storage room</td>
 </tr>
 <tr>
-<td>готівка</td>
-<td>cash</td>
-<td>готівкою (instr)</td>
+<td>коридор</td>
+<td>/korɪˈdor/</td>
+<td>hallway, corridor</td>
 </tr>
 <tr>
-<td>переказ</td>
-<td>transfer</td>
-<td>зробити переказ (acc)</td>
+<td>балкон</td>
+<td>/balˈkon/</td>
+<td>balcony</td>
 </tr>
 <tr>
-<td>обмін валют</td>
-<td>currency exchange</td>
-<td></td>
+<td>підвал</td>
+<td>/ˈpidwal/</td>
+<td>basement</td>
 </tr>
 <tr>
-<td>курс</td>
-<td>exchange rate</td>
-<td></td>
-</tr>
-<tr>
-<td>долар</td>
-<td>dollar</td>
-<td></td>
-</tr>
-<tr>
-<td>євро</td>
-<td>euro</td>
-<td></td>
-</tr>
-<tr>
-<td>гривня</td>
-<td>hryvnia</td>
-<td></td>
-</tr>
-<tr>
-<td>депозит</td>
-<td>deposit</td>
-<td></td>
-</tr>
-<tr>
-<td>кредит</td>
-<td>loan/credit</td>
-<td></td>
-</tr>
-<tr>
-<td>відсоток</td>
-<td>interest, percent</td>
-<td></td>
-</tr>
-<tr>
-<td>банкомат</td>
-<td>ATM</td>
-<td>біля банкомату (gen)</td>
-</tr>
-<tr>
-<td>каса</td>
-<td>cash desk</td>
-<td>у касі (loc)</td>
-</tr>
-<tr>
-<td>комісія</td>
-<td>commission, fee</td>
-<td></td>
-</tr>
-<tr>
-<td>підпис</td>
-<td>signature</td>
-<td></td>
-</tr>
-<tr>
-<td>форма</td>
-<td>form</td>
-<td>заповнити форму (acc)</td>
-</tr>
-<tr>
-<td>документ</td>
-<td>document</td>
-<td></td>
-</tr>
-<tr>
-<td>посвідчення</td>
-<td>ID</td>
-<td></td>
+<td>горище</td>
+<td>/ˈɦorɪʃtʃɛ/</td>
+<td>attic</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Example dialogue:</strong></p>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Добрий день! Я хочу обміняти євро.</li>
-<li>Скільки?</li>
-<li>200 євро. Який сьогодні курс?</li>
-<li>40 гривень за євро. Це буде 8000 гривень.</li>
-<li>Добре. Ось паспорт.</li>
-<li>Дякую. Розпишіться тут, будь ласка.</li>
-<li>(підписує)</li>
-<li>Ось ваші гривні. Перерахуйте, будь ласка.</li>
+<li>Працюю в <strong>кабінеті</strong>. (I work in the study.)</li>
+<li>Консерви в <strong>коморі</strong>. (Canned goods in the pantry.)</li>
+<li>Взуття в <strong>коридорі</strong>. (Shoes in the hallway.)</li>
+<li>Квіти на <strong>балконі</strong>. (Flowers on the balcony.)</li>
 </ul>
+<div class="callout callout-example" data-callout="example">🌍 Real World</div>
 <blockquote>
-  <p>📜 <strong>History Bite: The Hryvnia</strong></p>
-  <p>The гривня (hryvnia, ₴) became Ukraine's currency in 1996, replacing the карбованець. The name comes from a medieval unit of weight for silver - "гривна." On banknotes, you'll see famous Ukrainian figures: Taras Shevchenko (100₴), Lesya Ukrainka (200₴), and others.</p>
+  <p>Ukrainian apartments often have a "комора" — a small room for storage, very practical!</p>
 </blockquote>
-<h3 id="politeservicephrases">Polite Service Phrases</h3>
-<p><strong>Requests:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Furniture (Меблі)</h3>
+      <div class="md-content"><h2 id="livingroomfurniture">Living Room Furniture</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>диван</td>
+<td>/dɪˈwan/</td>
+<td>sofa, couch</td>
+</tr>
+<tr>
+<td>крісло</td>
+<td>/ˈkrislo/</td>
+<td>armchair</td>
+</tr>
+<tr>
+<td>стіл</td>
+<td>/stil/</td>
+<td>table</td>
+</tr>
+<tr>
+<td>стілець</td>
+<td>/stiˈlɛt͡sʲ/</td>
+<td>chair</td>
+</tr>
+<tr>
+<td>полиця</td>
+<td>/poˈlɪt͡sʲa/</td>
+<td>shelf</td>
+</tr>
+<tr>
+<td>шафа</td>
+<td>/ˈʃafa/</td>
+<td>wardrobe, cabinet</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Будь ласка, … - Please, …</li>
-<li>Чи можна…? - Is it possible to…?</li>
-<li>Я хотів би / хотіла б… - I would like…</li>
-<li>Мені потрібно… - I need…</li>
-<li>Чи не могли б ви…? - Could you…? (formal)</li>
+<li>Сядь на <strong>диван</strong>. (Sit on the sofa.)</li>
+<li>Він сидить у <strong>кріслі</strong>. (He's sitting in the armchair.)</li>
+<li>Книги на <strong>полиці</strong>. (Books on the shelf.)</li>
+<li>Одяг у <strong>шафі</strong>. (Clothes in the wardrobe.)</li>
 </ul>
-<p><strong>Responses:</strong></p>
+<hr />
+<h2 id="bedroomfurniture">Bedroom Furniture</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ліжко</td>
+<td>/ˈliʒko/</td>
+<td>bed</td>
+</tr>
+<tr>
+<td>комод</td>
+<td>/koˈmod/</td>
+<td>dresser, chest of drawers</td>
+</tr>
+<tr>
+<td>тумбочка</td>
+<td>/ˈtumbotʃka/</td>
+<td>nightstand</td>
+</tr>
+<tr>
+<td>дзеркало</td>
+<td>/ˈd͡zɛrkalo/</td>
+<td>mirror</td>
+</tr>
+<tr>
+<td>лампа</td>
+<td>/ˈlampa/</td>
+<td>lamp</td>
+</tr>
+<tr>
+<td>килим</td>
+<td>/kɪˈlɪm/</td>
+<td>carpet, rug</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Звичайно. - Of course.</li>
-<li>Одну хвилинку. - One moment.</li>
-<li>На жаль, це неможливо. - Unfortunately, that's not possible.</li>
-<li>Вам потрібно… - You need to…</li>
-<li>Будь ласка, зачекайте. - Please wait.</li>
+<li>Спи на <strong>ліжку</strong>. (Sleep on the bed.)</li>
+<li>Білизна в <strong>комоді</strong>. (Linens in the dresser.)</li>
+<li>Годинник на <strong>тумбочці</strong>. (Clock on the nightstand.)</li>
+<li>Дивлюсь у <strong>дзеркало</strong>. (I'm looking in the mirror.)</li>
+<li><strong>Килим</strong> на підлозі. (Carpet on the floor.)</li>
 </ul>
-<p><strong>Problems:</strong></p>
-<ul>
-<li>Вибачте, я не розумію. - Sorry, I don't understand.</li>
-<li>Повторіть, будь ласка. - Please repeat.</li>
-<li>Чи можете говорити повільніше? - Can you speak slower?</li>
-<li>Де я можу…? - Where can I…?</li>
-</ul>
-<h3 id="numbersandamountsreview">Numbers and Amounts Review</h3>
-<p><strong>For transactions:</strong></p>
-<ul>
-<li>сто гривень (100₴)</li>
-<li>двісті долар<strong>ів</strong> (200$) - genitive plural</li>
-<li>триста євро (300€) - євро doesn't change</li>
-<li>п'ятсот гривень (500₴)</li>
-<li>тисяча гривень (1000₴)</li>
-</ul>
-<p><strong>Weights and measures:</strong></p>
-<ul>
-<li>один кілограм</li>
-<li>два кілограм<strong>и</strong></li>
-<li>п'ять кілограм<strong>ів</strong></li>
-</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Number Agreement</strong></p>
-  <p>Remember from A1:</p>
-  <ul>
-  <li>1 + nominative singular: одна гривня</li>
-  <li>2-4 + genitive singular: дві гривні</li>
-  <li>5+ + genitive plural: п'ять гривень</li>
-  </ul>
+  <p>"Килим" (carpet) — Ukraine is famous for traditional kilims, woven rugs with beautiful patterns!</p>
 </blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="completethedialogues">Complete the Dialogues</h3>
-<p><strong>At the post office:</strong></p>
-<ol>
-<li><p>- Я хочу надіслати ___ (посилка) до Польщі.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">посилку</div>
-<div class="callout callout-explanation" data-callout="explanation">acc</div></div>
-<ol start="2">
-<li><p>- Скільки коштує ___ (марка)?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">марка</div>
-<div class="callout callout-explanation" data-callout="explanation">nom, asking price</div></div>
-<ol start="3">
-<li><p>- Напишіть адресу ___ (одержувач).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">одержувача</div>
-<div class="callout callout-explanation" data-callout="explanation">gen</div></div>
-<p><strong>At the bank:</strong></p>
-<ol>
-<li><p>- Я хочу обміняти долари на ___ (гривні).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">гривні</div>
-<div class="callout callout-explanation" data-callout="explanation">acc</div></div>
-<ol start="2">
-<li><p>- Де найближчий ___ (банкомат)?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">банкомат</div>
-<div class="callout callout-explanation" data-callout="explanation">nom</div></div>
-<ol start="3">
-<li><p>- Можна зняти гроші з ___ (рахунок)?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">рахунку</div>
-<div class="callout callout-explanation" data-callout="explanation">gen</div></div>
-<h3 id="buildrequests">Build Requests</h3>
-<p>Create polite requests:</p>
-<ol>
-<li><p>send / letter / friend</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Я хочу надіслати листа другові.</div></div>
-<ol start="2">
-<li><p>exchange / 100 euros / hryvnias</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Я хочу обміняти 100 євро на гривні.</div></div>
-<ol start="3">
-<li><p>withdraw / money / account</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Я хочу зняти гроші з рахунку.</div></div>
-<ol start="4">
-<li><p>buy / stamps / postcards</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Мені потрібно купити марки для листівок.</div></div>
-<h3 id="roleplayscenarios">Role Play Scenarios</h3>
-<p><strong>Scenario 1: Sending a package</strong></p>
+<hr />
+<h2 id="kitchenfurniture">Kitchen Furniture</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>кухонний стіл</td>
+<td>/kuˈxonːɪj stil/</td>
+<td>kitchen table</td>
+</tr>
+<tr>
+<td>табуретка</td>
+<td>/tabuˈrɛtka/</td>
+<td>stool</td>
+</tr>
+<tr>
+<td>кухонна шафа</td>
+<td>/kuˈxonːa ˈʃafa/</td>
+<td>kitchen cabinet</td>
+</tr>
+<tr>
+<td>мийка</td>
+<td>/ˈmɪjka/</td>
+<td>sink</td>
+</tr>
+<tr>
+<td>стільниця</td>
+<td>/stilʲˈnɪt͡sʲa/</td>
+<td>countertop</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Добрий день!</li>
-<li>Добрий день! Чим можу допомогти?</li>
-<li>Я хочу відправити посилку до США.</li>
-<li>Що в посилці?</li>
-<li>Подарунки для сім'ї.</li>
-<li>Поставте на ваги… 3 кілограми. 420 гривень.</li>
-<li>Ось, будь ласка.</li>
-<li>Дякую! Ось квитанція.</li>
+<li>Поклади на <strong>кухонний стіл</strong>. (Put it on the kitchen table.)</li>
+<li>Сядь на <strong>табуретку</strong>. (Sit on the stool.)</li>
+<li>Тарілки в <strong>кухонній шафі</strong>. (Plates in the kitchen cabinet.)</li>
+<li>Помий посуд у <strong>мийці</strong>. (Wash dishes in the sink.)</li>
 </ul>
-<p><strong>Scenario 2: Currency exchange</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Home Appliances (Побутова техніка)</h3>
+      <div class="md-content"><h2 id="majorappliances">Major Appliances</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>пральна машина</td>
+<td>/ˈpralʲna maˈʃɪna/</td>
+<td>washing machine</td>
+</tr>
+<tr>
+<td>посудомийка</td>
+<td>/posudoˈmɪjka/</td>
+<td>dishwasher</td>
+</tr>
+<tr>
+<td>пилосос</td>
+<td>/pɪloˈsos/</td>
+<td>vacuum cleaner</td>
+</tr>
+<tr>
+<td>праска</td>
+<td>/ˈpraska/</td>
+<td>iron</td>
+</tr>
+<tr>
+<td>кондиціонер</td>
+<td>/kondɪt͡sioˈnɛr/</td>
+<td>air conditioner</td>
+</tr>
+<tr>
+<td>обігрівач</td>
+<td>/obiɦriˈwatʃ/</td>
+<td>heater</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Добрий день! Який курс долара?</li>
-<li>37 гривень за долар.</li>
-<li>Я хочу обміняти 500 доларів.</li>
-<li>Ваш паспорт, будь ласка.</li>
-<li>Ось.</li>
-<li>Дякую. 18,500 гривень. Перерахуйте.</li>
+<li>Одяг у <strong>пральній машині</strong>. (Clothes in the washing machine.)</li>
+<li>Увімкни <strong>посудомийку</strong>. (Turn on the dishwasher.)</li>
+<li>Пропилососи <strong>пилососом</strong>. (Vacuum with the vacuum cleaner.)</li>
+<li><strong>Праска</strong> гаряча. (The iron is hot.)</li>
+<li>Увімкни <strong>кондиціонер</strong>, спекотно! (Turn on the AC, it's hot!)</li>
 </ul>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Lost package</strong></p>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>"Пилосос" literally means "dust-sucker" — піл (dust) + сос (sucker)!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Housework (Домашня робота)</h3>
+      <div class="md-content"><h2 id="cleaningactions">Cleaning Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>прибирати</td>
+<td>/prɪbɪˈratɪ/</td>
+<td>to clean, tidy up</td>
+</tr>
+<tr>
+<td>мити</td>
+<td>/ˈmɪtɪ/</td>
+<td>to wash</td>
+</tr>
+<tr>
+<td>прати</td>
+<td>/ˈpratɪ/</td>
+<td>to do laundry</td>
+</tr>
+<tr>
+<td>прасувати</td>
+<td>/prasuˈwatɪ/</td>
+<td>to iron</td>
+</tr>
+<tr>
+<td>пилососити</td>
+<td>/pɪloˈsosɪtɪ/</td>
+<td>to vacuum</td>
+</tr>
+<tr>
+<td>витирати пил</td>
+<td>/wɪtɪˈratɪ pɪl/</td>
+<td>to dust</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
 <ul>
-<li>Вибачте, я відправляв посилку тиждень тому, але вона не прийшла.</li>
-<li>Ваша квитанція?</li>
-<li>Ось.</li>
-<li>Зачекайте… Посилка в дорозі. Буде через 3 дні.</li>
-<li>Дякую!</li>
-</ul>
-<p><strong>Scenario 2: Bank problem</strong></p>
-<ul>
-<li>Моя картка не працює в банкоматі.</li>
-<li>Ви правильно вводите пін-код?</li>
-<li>Так, я впевнений.</li>
-<li>Можливо, потрібно замінити картку. Заповніть цю форму.</li>
-<li>Скільки це коштує?</li>
-<li>Безкоштовно.</li>
-</ul>
-<p><strong>Scenario 3: Sending money</strong></p>
-<ul>
-<li>Я хочу переказати гроші родині в Україну.</li>
-<li>На який рахунок?</li>
-<li>Ось номер рахунку.</li>
-<li>Скільки переказуєте?</li>
-<li>200 євро.</li>
-<li>Комісія 3 євро. Загалом 203 євро.</li>
+<li>Треба <strong>прибрати</strong> кімнату. (Need to clean the room.)</li>
+<li><strong>Мию</strong> посуд. (I'm washing dishes.)</li>
+<li><strong>Перу</strong> одяг у понеділок. (I do laundry on Monday.)</li>
+<li>Мама <strong>прасує</strong> сорочки. (Mom is ironing shirts.)</li>
+<li>Хто буде <strong>пилососити</strong>? (Who will vacuum?)</li>
 </ul>
 <hr />
-<hr />
-<hr />
+<h2 id="otherhomeactions">Other Home Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ремонтувати</td>
+<td>/rɛmontuˈwatɪ/</td>
+<td>to repair, renovate</td>
+</tr>
+<tr>
+<td>облаштовувати</td>
+<td>/oblaʃtoˈwuwatɪ/</td>
+<td>to furnish, arrange</td>
+</tr>
+<tr>
+<td>переїжджати</td>
+<td>/pɛrɛˈjiʒd͡ʒatɪ/</td>
+<td>to move (house)</td>
+</tr>
+<tr>
+<td>орендувати</td>
+<td>/orɛnduˈwatɪ/</td>
+<td>to rent</td>
+</tr>
+<tr>
+<td>купувати</td>
+<td>/kupuˈwatɪ/</td>
+<td>to buy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Ремонтуємо</strong> квартиру. (We're renovating the apartment.)</li>
+<li><strong>Облаштовую</strong> нову кімнату. (I'm furnishing the new room.)</li>
+<li>Ми <strong>переїжджаємо</strong> наступного місяця. (We're moving next month.)</li>
+<li><strong>Орендуємо</strong> квартиру. (We rent an apartment.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Base building: <em>Облаштуй свій будинок! Додай меблі!</em> — Furnish your house! Add furniture!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Parts of a Home (Частини будинку)</h3>
+      <div class="md-content"><h2 id="structure">Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>IPA</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>стіна</td>
+<td>/stiˈna/</td>
+<td>wall</td>
+</tr>
+<tr>
+<td>стеля</td>
+<td>/ˈstɛlʲa/</td>
+<td>ceiling</td>
+</tr>
+<tr>
+<td>підлога</td>
+<td>/pidˈloɦa/</td>
+<td>floor</td>
+</tr>
+<tr>
+<td>двері</td>
+<td>/ˈdwɛri/</td>
+<td>door</td>
+</tr>
+<tr>
+<td>вікно</td>
+<td>/wikˈno/</td>
+<td>window</td>
+</tr>
+<tr>
+<td>сходи</td>
+<td>/ˈsxodɪ/</td>
+<td>stairs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Картина на <strong>стіні</strong>. (Picture on the wall.)</li>
+<li>Люстра на <strong>стелі</strong>. (Chandelier on the ceiling.)</li>
+<li>Килим на <strong>підлозі</strong>. (Carpet on the floor.)</li>
+<li>Зачини <strong>двері</strong>. (Close the door.)</li>
+<li>Відкрий <strong>вікно</strong>. (Open the window.)</li>
+</ul>
 <hr />
 <hr />
 <hr /></div>
@@ -932,107 +998,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="postofficeessentials">Post Office Essentials</h2>
-<table>
-<thead>
-<tr>
-<th>Action</th>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Send</td>
-<td>надіслати + acc + dat</td>
-<td>надіслати листа другові</td>
-</tr>
-<tr>
-<td>To destination</td>
-<td>до + gen</td>
-<td>до Америки</td>
-</tr>
-<tr>
-<td>Buy stamps</td>
-<td>купити + acc</td>
-<td>купити марки</td>
-</tr>
-<tr>
-<td>Package weight</td>
-<td>важити + acc</td>
-<td>важить 2 кг</td>
-</tr>
-</tbody>
-</table>
-<h2 id="bankessentials">Bank Essentials</h2>
-<table>
-<thead>
-<tr>
-<th>Action</th>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Exchange</td>
-<td>обміняти + acc + на + acc</td>
-<td>обміняти долари на гривні</td>
-</tr>
-<tr>
-<td>Withdraw</td>
-<td>зняти + acc + з + gen</td>
-<td>зняти гроші з рахунку</td>
-</tr>
-<tr>
-<td>Deposit</td>
-<td>покласти + acc + на + acc</td>
-<td>покласти на рахунок</td>
-</tr>
-<tr>
-<td>Transfer</td>
-<td>переказати + acc + dat</td>
-<td>переказати гроші мамі</td>
-</tr>
-</tbody>
-</table>
-<h2 id="politerequests">Polite Requests</h2>
-<table>
-<thead>
-<tr>
-<th>Phrase</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Я хочу…</td>
-<td>I want to…</td>
-</tr>
-<tr>
-<td>Мені потрібно…</td>
-<td>I need…</td>
-</tr>
-<tr>
-<td>Чи можна…?</td>
-<td>Is it possible…?</td>
-</tr>
-<tr>
-<td>Будь ласка</td>
-<td>Please</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Post office: надіслати + acc (what) + dat (to whom)</li>
-  <li>Bank: обміняти X на Y, зняти з рахунку</li>
-  <li>Always bring паспорт or посвідчення for transactions</li>
-  <li>Квитанція (receipt) is important - keep it!</li>
-  <li>Currency: гривня (UAH), долар (USD), євро (EUR)</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>You've mastered home and furniture vocabulary:</p>
+<ul>
+<li><strong>Rooms</strong>: вітальня, спальня, кухня, кабінет, комора, балкон</li>
+<li><strong>Furniture</strong>: диван, крісло, шафа, ліжко, комод, полиця</li>
+<li><strong>Appliances</strong>: пральна машина, пилосос, праска, посудомийка</li>
+<li><strong>Housework</strong>: прибирати, мити, прати, пилососити</li>
+<li><strong>Home parts</strong>: стіна, стеля, підлога, вікно, двері</li>
+</ul>
+<p><strong>Coming up next</strong>: Nature &amp; Weather — vocabulary for the natural world!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1041,45 +1015,45 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Post Office &amp; Bank Vocabulary</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Home Vocabulary</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Rooms and Items</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Home Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Home Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Home Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Sort by Gender</h3>
+    <section id="activity-5" class="section"><div class="card"><h3>Home Categories</h3>
       <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
@@ -1087,23 +1061,30 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Choose Post Office and Bank Terms</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="select-container"></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Home Actions</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
       <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Arrange Words into Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Room</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Home Situations</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (46)</h3>
+        <h3>Словник (29)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1111,9 +1092,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">пошта</td><td class="vocab-ipa">/ˈpɔʃtɑ/</td><td class="vocab-en">post office</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">поштове відділення</td><td class="vocab-ipa">/pɔˈʃtɔvɛ vʲidˈdʲilɛnʲːɑ/</td><td class="vocab-en">post office branch</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лист</td><td class="vocab-ipa">/lɪst/</td><td class="vocab-en">letter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">листівка</td><td class="vocab-ipa">/lɪsˈtʲifkɑ/</td><td class="vocab-en">postcard</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посилка</td><td class="vocab-ipa">/pɔˈsɪlkɑ/</td><td class="vocab-en">package</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бандероль</td><td class="vocab-ipa">/bɑndɛˈrolʲ/</td><td class="vocab-en">small parcel</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">марка</td><td class="vocab-ipa">/ˈmɑrkɑ/</td><td class="vocab-en">stamp</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">конверт</td><td class="vocab-ipa">/kɔnˈvɛrt/</td><td class="vocab-en">envelope</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">адреса</td><td class="vocab-ipa">/ɑˈdrɛsɑ/</td><td class="vocab-en">address</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відправник</td><td class="vocab-ipa">/vʲidprɑvˈnɪk/</td><td class="vocab-en">sender</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">одержувач</td><td class="vocab-ipa">/ɔdɛrˈʒuvɑtʃ/</td><td class="vocab-en">recipient</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">банк</td><td class="vocab-ipa">/bɑnk/</td><td class="vocab-en">bank</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рахунок</td><td class="vocab-ipa">/rɑˈxunɔk/</td><td class="vocab-en">account, bill</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">картка</td><td class="vocab-ipa">/ˈkɑrtkɑ/</td><td class="vocab-en">card</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">готівка</td><td class="vocab-ipa">/ɦɔˈtʲivkɑ/</td><td class="vocab-en">cash</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">переказ</td><td class="vocab-ipa">/pɛrɛˈkɑz/</td><td class="vocab-en">transfer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обмін валют</td><td class="vocab-ipa">/ɔbˈmʲin vɑˈlʲut/</td><td class="vocab-en">currency exchange</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">курс</td><td class="vocab-ipa">/kurs/</td><td class="vocab-en">rate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">долар</td><td class="vocab-ipa">/ˈdɔlɑr/</td><td class="vocab-en">dollar</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">євро</td><td class="vocab-ipa">/ˈjɛvrɔ/</td><td class="vocab-en">euro</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гривня</td><td class="vocab-ipa">/ˈɦrɪvnʲɑ/</td><td class="vocab-en">hryvnia</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">депозит</td><td class="vocab-ipa">/dɛpɔˈzɪt/</td><td class="vocab-en">deposit</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">кредит</td><td class="vocab-ipa">/krɛˈdɪt/</td><td class="vocab-en">credit, loan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">позика</td><td class="vocab-ipa">/pɔˈzɪkɑ/</td><td class="vocab-en">loan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відсоток</td><td class="vocab-ipa">/vʲidˈsɔtɔk/</td><td class="vocab-en">percent, interest</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">банкомат</td><td class="vocab-ipa">/bɑnkɔˈmɑt/</td><td class="vocab-en">ATM</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">каса</td><td class="vocab-ipa">/ˈkɑsɑ/</td><td class="vocab-en">cash desk</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">касир</td><td class="vocab-ipa">/kɑˈsɪr/</td><td class="vocab-en">cashier</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">черга</td><td class="vocab-ipa">/ˈtʃɛrɦɑ/</td><td class="vocab-en">queue, line</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">квитанція</td><td class="vocab-ipa">/kvɪˈtɑntsʲijɑ/</td><td class="vocab-en">receipt</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">чек</td><td class="vocab-ipa">/tʃɛk/</td><td class="vocab-en">receipt, check</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підпис</td><td class="vocab-ipa">/ˈpʲidpɪs/</td><td class="vocab-en">signature</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">форма</td><td class="vocab-ipa">/ˈfɔrmɑ/</td><td class="vocab-en">form</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">документ</td><td class="vocab-ipa">/dɔkuˈmɛnt/</td><td class="vocab-en">document</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">паспорт</td><td class="vocab-ipa">/ˈpɑspɔrt/</td><td class="vocab-en">passport</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посвідчення</td><td class="vocab-ipa">/pɔsˈvʲidtʃɛnʲːɑ/</td><td class="vocab-en">ID, certificate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">комісія</td><td class="vocab-ipa">/kɔˈmʲisʲijɑ/</td><td class="vocab-en">commission</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">термін</td><td class="vocab-ipa">/ˈtɛrmʲin/</td><td class="vocab-en">term, deadline</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">безкоштовно</td><td class="vocab-ipa">/bɛzkɔˈʃtɔvnɔ/</td><td class="vocab-en">free of charge</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">платний</td><td class="vocab-ipa">/ˈplɑtnɪj/</td><td class="vocab-en">paid</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">надіслати</td><td class="vocab-ipa">/nɑdʲisˈlɑtɪ/</td><td class="vocab-en">to send</td><td class="vocab-note">+ acc + dat</td></tr><tr><td class="vocab-uk">відправити</td><td class="vocab-ipa">/vʲidprɑˈvɪtɪ/</td><td class="vocab-en">to send, dispatch</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">обміняти</td><td class="vocab-ipa">/obmʲiˈnʲɑtɪ/</td><td class="vocab-en">to exchange</td><td class="vocab-note">+ acc + на + acc</td></tr><tr><td class="vocab-uk">зняти</td><td class="vocab-ipa">/znʲɑˈtɪ/</td><td class="vocab-en">to withdraw</td><td class="vocab-note">+ acc + з + gen</td></tr><tr><td class="vocab-uk">переказати</td><td class="vocab-ipa">/pɛrɛkɑˈzɑtɪ/</td><td class="vocab-en">to transfer</td><td class="vocab-note">+ acc + dat</td></tr><tr><td class="vocab-uk">заповнити</td><td class="vocab-ipa">/zɑˈpovnɪtɪ/</td><td class="vocab-en">to fill out</td><td class="vocab-note">+ acc</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">вітальня</td><td class="vocab-ipa">/wiˈtalʲnʲa/</td><td class="vocab-en">living room</td></tr><tr><td class="vocab-uk">спальня</td><td class="vocab-ipa">/ˈspalʲnʲa/</td><td class="vocab-en">bedroom</td></tr><tr><td class="vocab-uk">кухня</td><td class="vocab-ipa">/ˈkuxnʲa/</td><td class="vocab-en">kitchen</td></tr><tr><td class="vocab-uk">кабінет</td><td class="vocab-ipa">/kabiˈnɛt/</td><td class="vocab-en">study, office</td></tr><tr><td class="vocab-uk">комора</td><td class="vocab-ipa">/koˈmora/</td><td class="vocab-en">pantry</td></tr><tr><td class="vocab-uk">коридор</td><td class="vocab-ipa">/korɪˈdor/</td><td class="vocab-en">hallway</td></tr><tr><td class="vocab-uk">балкон</td><td class="vocab-ipa">/balˈkon/</td><td class="vocab-en">balcony</td></tr><tr><td class="vocab-uk">диван</td><td class="vocab-ipa">/dɪˈwan/</td><td class="vocab-en">sofa</td></tr><tr><td class="vocab-uk">крісло</td><td class="vocab-ipa">/ˈkrislo/</td><td class="vocab-en">armchair</td></tr><tr><td class="vocab-uk">шафа</td><td class="vocab-ipa">/ˈʃafa/</td><td class="vocab-en">wardrobe</td></tr><tr><td class="vocab-uk">полиця</td><td class="vocab-ipa">/poˈlɪt͡sʲa/</td><td class="vocab-en">shelf</td></tr><tr><td class="vocab-uk">комод</td><td class="vocab-ipa">/koˈmod/</td><td class="vocab-en">dresser</td></tr><tr><td class="vocab-uk">тумбочка</td><td class="vocab-ipa">/ˈtumbotʃka/</td><td class="vocab-en">nightstand</td></tr><tr><td class="vocab-uk">дзеркало</td><td class="vocab-ipa">/ˈd͡zɛrkalo/</td><td class="vocab-en">mirror</td></tr><tr><td class="vocab-uk">килим</td><td class="vocab-ipa">/kɪˈlɪm/</td><td class="vocab-en">carpet</td></tr><tr><td class="vocab-uk">пральна машина</td><td class="vocab-ipa">/ˈpralʲna maˈʃɪna/</td><td class="vocab-en">washing machine</td></tr><tr><td class="vocab-uk">посудомийка</td><td class="vocab-ipa">/posudoˈmɪjka/</td><td class="vocab-en">dishwasher</td></tr><tr><td class="vocab-uk">пилосос</td><td class="vocab-ipa">/pɪloˈsos/</td><td class="vocab-en">vacuum cleaner</td></tr><tr><td class="vocab-uk">праска</td><td class="vocab-ipa">/ˈpraska/</td><td class="vocab-en">iron</td></tr><tr><td class="vocab-uk">прибирати</td><td class="vocab-ipa">/prɪbɪˈratɪ/</td><td class="vocab-en">to clean</td></tr><tr><td class="vocab-uk">мити</td><td class="vocab-ipa">/ˈmɪtɪ/</td><td class="vocab-en">to wash</td></tr><tr><td class="vocab-uk">прати</td><td class="vocab-ipa">/ˈpratɪ/</td><td class="vocab-en">to do laundry</td></tr><tr><td class="vocab-uk">пилососити</td><td class="vocab-ipa">/pɪloˈsosɪtɪ/</td><td class="vocab-en">to vacuum</td></tr><tr><td class="vocab-uk">ремонтувати</td><td class="vocab-ipa">/rɛmontuˈwatɪ/</td><td class="vocab-en">to renovate</td></tr><tr><td class="vocab-uk">стіна</td><td class="vocab-ipa">/stiˈna/</td><td class="vocab-en">wall</td></tr><tr><td class="vocab-uk">стеля</td><td class="vocab-ipa">/ˈstɛlʲa/</td><td class="vocab-en">ceiling</td></tr><tr><td class="vocab-uk">підлога</td><td class="vocab-ipa">/pidˈloɦa/</td><td class="vocab-en">floor</td></tr><tr><td class="vocab-uk">двері</td><td class="vocab-ipa">/ˈdwɛri/</td><td class="vocab-en">door</td></tr><tr><td class="vocab-uk">вікно</td><td class="vocab-ipa">/wikˈno/</td><td class="vocab-en">window</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1125,8 +1106,8 @@ footer {
   </main><footer>Module 39 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Post Office & Bank Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Я хочу відправити ___ (посилка) в Україну, будь ласка.","answer":"посилку","hints":["посилка"],"options":["посилка","посилки","посилці","посилку"]},{"prompt":"Скільки коштує доставка ___ (цей лист) до Львова?","answer":"цього листа","hints":["цей лист"],"options":["цей лист","цього листа","цьому листу","цим листом"]},{"prompt":"Я хочу обміняти долари на ___ (гривня).","answer":"гривні","hints":["гривня"],"options":["гривня","гривні","гривню","гривнею"]},{"prompt":"Мені потрібно зняти гроші з ___ (мій рахунок).","answer":"мого рахунку","hints":["мій рахунок"],"options":["мій рахунок","мого рахунку","моєму рахунку","моїм рахунком"]},{"prompt":"Де я можу отримати ___ (моя посилка)?","answer":"мою посилку","hints":["моя посилка"],"options":["моя посилка","моєї посилки","моїй посилці","мою посилку"]},{"prompt":"Який курс ___ (долар) сьогодні у вашому банку?","answer":"долара","hints":["долар"],"options":["долар","долара","долару","доларом"]},{"prompt":"Будь ласка, напишіть адресу ___ (отримувач) тут.","answer":"отримувача","hints":["отримувач"],"options":["отримувач","отримувача","отримувачу","отримувачем"]},{"prompt":"Я хочу відкрити ___ (новий рахунок) у вашому банку.","answer":"новий рахунок","hints":["новий рахунок"],"options":["новий рахунок","нового рахунку","новому рахунку","новим рахунком"]},{"prompt":"Скільки часу потрібно для ___ (банківський переказ)?","answer":"банківського переказу","hints":["банківський переказ"],"options":["банківський переказ","банківського переказу","банківському переказу","банківським переказом"]},{"prompt":"Мені потрібна квитанція про ___ (оплата) цього рахунку.","answer":"оплату","hints":["оплата"],"options":["оплата","оплати","оплаті","оплату"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["посилку","Я","хочу","відправити","в Україну","будь ласка"],"answer":"Я хочу відправити посилку в Україну, будь ласка.","translation":"I want to send a package to Ukraine, please."},{"words":["листа","Скільки","коштує","доставка","цього","до Львова"],"answer":"Скільки коштує доставка цього листа до Львова?","translation":"How much does delivery of this letter to Lviv cost?"},{"words":["гривні","Я","хочу","обміняти","долари","на"],"answer":"Я хочу обміняти долари на гривні.","translation":"I want to exchange dollars for hryvnias."},{"words":["рахунку","Мені","потрібно","зняти","гроші","з мого"],"answer":"Мені потрібно зняти гроші з мого рахунку.","translation":"I need to withdraw money from my account."},{"words":["посилку","Де","я","можу","отримати","мою"],"answer":"Де я можу отримати мою посилку?","translation":"Where can I receive my package?"},{"words":["долара","Який","курс","сьогодні","у вашому банку"],"answer":"Який курс долара сьогодні у вашому банку?","translation":"What is the dollar exchange rate today at your bank?"},{"words":["отримувача","Будь ласка","напишіть","адресу","тут"],"answer":"Будь ласка, напишіть адресу отримувача тут.","translation":"Please write the recipient's address here."},{"words":["рахунок","Я","хочу","відкрити","новий","у вашому банку"],"answer":"Я хочу відкрити новий рахунок у вашому банку.","translation":"I want to open a new account at your bank."},{"words":["переказу","Скільки","часу","потрібно","для","банківського"],"answer":"Скільки часу потрібно для банківського переказу?","translation":"How much time is needed for a bank transfer?"},{"words":["квитанція","Мені","потрібна","про оплату","цього рахунку"],"answer":"Мені потрібна квитанція про оплату цього рахунку.","translation":"I need a receipt for payment of this bill."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"зняти","right":"to withdraw"},{"left":"протягом","right":"during, throughout"},{"left":"зуби","right":"teeth"},{"left":"переказ","right":"transfer"},{"left":"переказати","right":"to transfer"},{"left":"обмін","right":"exchange"},{"left":"підпис","right":"signature"},{"left":"відсоток","right":"percent, interest"},{"left":"бандероль","right":"small parcel"},{"left":"лікарня","right":"hospital"},{"left":"індекс","right":"postal code"},{"left":"квитанція","right":"receipt"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"індекс\" mean?","options":["newspaper","relative","postal code","bicycle"],"correctIndex":2,"explanation":"\"індекс\" means \"postal code\""},{"question":"What does \"переказати\" mean?","options":["ten","to transfer","alphabet","to understand (perf)"],"correctIndex":1,"explanation":"\"переказати\" means \"to transfer\""},{"question":"What does \"вага\" mean?","options":["restaurant","invitation","weight","to shave"],"correctIndex":2,"explanation":"\"вага\" means \"weight\""},{"question":"What does \"кредит\" mean?","options":["credit, loan","musician","exchange","friend (male)"],"correctIndex":0,"explanation":"\"кредит\" means \"credit, loan\""},{"question":"What does \"відправник\" mean?","options":["five","sender","postcard","(with) you"],"correctIndex":1,"explanation":"\"відправник\" means \"sender\""},{"question":"What does \"відправити\" mean?","options":["pleasure, satisfaction","three","glass","to send, dispatch"],"correctIndex":3,"explanation":"\"відправити\" means \"to send, dispatch\""},{"question":"What does \"доставка\" mean?","options":["delivery","exit","to give","bag"],"correctIndex":0,"explanation":"\"доставка\" means \"delivery\""},{"question":"What does \"відсоток\" mean?","options":["percent, interest","bon appétit","student","you (informal)"],"correctIndex":0,"explanation":"\"відсоток\" means \"percent, interest\""},{"question":"What does \"зняти\" mean?","options":["passport","to withdraw","suitcase","color"],"correctIndex":1,"explanation":"\"зняти\" means \"to withdraw\""},{"question":"What does \"обміняти\" mean?","options":["to exchange","pork fat","seller (f)","to be fascinated"],"correctIndex":0,"explanation":"\"обміняти\" means \"to exchange\""},{"question":"What does \"надіслати\" mean?","options":["doctor (f)","to send","to be lucky","married (m)"],"correctIndex":1,"explanation":"\"надіслати\" means \"to send\""},{"question":"What does \"розписатися\" mean?","options":["to sign","bag","day after tomorrow","salad"],"correctIndex":0,"explanation":"\"розписатися\" means \"to sign\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"обміняти\" means \"Ukrainian (female)\"","isTrue":false,"explanation":"Incorrect. \"обміняти\" means \"to exchange\""},{"statement":"\"відправник\" means \"sender\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"банкомат\" means \"ATM\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"комісія\" means \"to hurry\"","isTrue":false,"explanation":"Incorrect. \"комісія\" means \"commission\""},{"statement":"\"депозит\" means \"went (f)\"","isTrue":false,"explanation":"Incorrect. \"депозит\" means \"deposit\""},{"statement":"\"надіслати\" means \"good, okay\"","isTrue":false,"explanation":"Incorrect. \"надіслати\" means \"to send\""},{"statement":"\"доставка\" means \"delivery\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"марка\" means \"stamp\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"бандероль\" means \"small parcel\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"перерахувати\" means \"to count, recount\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"group-sort","title":"Sort by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["індекс","кредит","одержувач","переказ","депозит","курс"]},{"id":"feminine","name":"Feminine","items":["вага","квитанція","комісія","бандероль","марка","листівка"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Choose Post Office and Bank Terms","data":{"type":"select","items":[{"question":"Which are postal items you can send?","options":[{"text":"лист","correct":true},{"text":"листівка","correct":true},{"text":"посилка","correct":true},{"text":"бандероль","correct":true},{"text":"марка","correct":false},{"text":"конверт","correct":false},{"text":"адреса","correct":false},{"text":"індекс","correct":false},{"text":"вага","correct":false},{"text":"квитанція","correct":false}]},{"question":"Which are bank transaction types?","options":[{"text":"лист","correct":false},{"text":"переказ","correct":true},{"text":"обмін валюти","correct":true},{"text":"посилка","correct":false},{"text":"депозит","correct":true},{"text":"кредит","correct":true},{"text":"марка","correct":false},{"text":"зняття готівки","correct":true},{"text":"конверт","correct":false},{"text":"доставка","correct":false}]},{"question":"Which are postal service vocabulary?","options":[{"text":"надіслати","correct":true},{"text":"відправити","correct":true},{"text":"отримати","correct":true},{"text":"доставка","correct":true},{"text":"обміняти","correct":false},{"text":"одержувач","correct":true},{"text":"відправник","correct":true},{"text":"рахунок","correct":false},{"text":"готівка","correct":false},{"text":"валюта","correct":false}]},{"question":"Which are bank-related vocabulary?","options":[{"text":"посилка","correct":false},{"text":"готівка","correct":true},{"text":"валюта","correct":true},{"text":"рахунок","correct":true},{"text":"марка","correct":false},{"text":"обміняти","correct":true},{"text":"курс","correct":true},{"text":"комісія","correct":true},{"text":"листівка","correct":false},{"text":"конверт","correct":false}]},{"question":"Which verbs are used at the post office?","options":[{"text":"надіслати","correct":true},{"text":"відправити","correct":true},{"text":"обміняти","correct":false},{"text":"отримати","correct":true},{"text":"забрати","correct":true},{"text":"зняти","correct":false},{"text":"покласти","correct":false},{"text":"перерахувати","correct":false},{"text":"заощадити","correct":false},{"text":"відкрити рахунок","correct":false}]},{"question":"Which verbs are used at the bank?","options":[{"text":"надіслати","correct":false},{"text":"обміняти","correct":true},{"text":"відправити посилку","correct":false},{"text":"зняти гроші","correct":true},{"text":"покласти гроші","correct":true},{"text":"перерахувати","correct":true},{"text":"відкрити рахунок","correct":true},{"text":"забрати посилку","correct":false},{"text":"отримати листа","correct":false},{"text":"купити марку","correct":false}]},{"question":"Which require accusative case (direct object)?","options":[{"text":"надіслати листа","correct":true},{"text":"відправити посилку","correct":true},{"text":"купити марку","correct":true},{"text":"обміняти гроші","correct":true},{"text":"зняти готівку","correct":true},{"text":"до Америки","correct":false},{"text":"від відправника","correct":false},{"text":"отримати квитанцію","correct":true},{"text":"на рахунку","correct":false},{"text":"у банку","correct":false}]},{"question":"Which require genitive case?","options":[{"text":"надіслати посилку","correct":false},{"text":"до Америки","correct":true},{"text":"від відправника","correct":true},{"text":"відправити листа","correct":false},{"text":"біля пошти","correct":true},{"text":"без комісії","correct":true},{"text":"купити марку","correct":false},{"text":"курс долара","correct":true},{"text":"у банку","correct":false},{"text":"на пошті","correct":false}]},{"question":"Which are currencies mentioned?","options":[{"text":"марка","correct":false},{"text":"долар","correct":true},{"text":"євро","correct":true},{"text":"гривня","correct":true},{"text":"індекс","correct":false},{"text":"кредит","correct":false},{"text":"депозит","correct":false},{"text":"переказ","correct":false},{"text":"курс","correct":false},{"text":"комісія","correct":false}]},{"question":"Which describe payment or money?","options":[{"text":"готівка","correct":true},{"text":"гроші","correct":true},{"text":"посилка","correct":false},{"text":"валюта","correct":true},{"text":"марка","correct":false},{"text":"комісія","correct":true},{"text":"курс","correct":true},{"text":"вага","correct":false},{"text":"рахунок","correct":true},{"text":"доставка","correct":false}]}]}},{"id":"activity-7","type":"unjumble","title":"Arrange Words into Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["надіслати","хочу","Я","листа","до","Англії"],"answer":"Я хочу надіслати листа до Англії.","translation":"I want to send a letter to England."},{"words":["посилку","відправити","потрібно","Мені","Канади","до"],"answer":"Мені потрібно відправити посилку до Канади.","translation":"I need to send a package to Canada."},{"words":["коштує","Скільки","марка","до","Америки"],"answer":"Скільки коштує марка до Америки?","translation":"How much is a stamp to America?"},{"words":["купити","можна","Де","конверт"],"answer":"Де можна купити конверт?","translation":"Where can I buy an envelope?"},{"words":["обміняти","хочу","долари","Я","гривні","на"],"answer":"Я хочу обміняти долари на гривні.","translation":"I want to exchange dollars for hryvnias."},{"words":["курс","Який","євро","сьогодні"],"answer":"Який курс євро сьогодні?","translation":"What is the euro exchange rate today?"},{"words":["зняти","хочу","готівку","Я","рахунку","з"],"answer":"Я хочу зняти готівку з рахунку.","translation":"I want to withdraw cash from my account."},{"words":["гроші","покласти","Мені","на","потрібно","рахунок"],"answer":"Мені потрібно покласти гроші на рахунок.","translation":"I need to deposit money into the account."},{"words":["відкрити","можна","Чи","рахунок","у","вашому","банку"],"answer":"Чи можна відкрити рахунок у вашому банку?","translation":"Can I open an account at your bank?"},{"words":["отримати","Я","прийшов","посилку","відділенні","у","цьому"],"answer":"Я прийшов отримати посилку у цьому відділенні.","translation":"I came to pick up a package at this branch."}]}}];
-    const vocabData = [{"uk":"пошта","translit":"","en":"post office","note":""},{"uk":"поштове відділення","translit":"","en":"post office branch","note":""},{"uk":"лист","translit":"","en":"letter","note":""},{"uk":"листівка","translit":"","en":"postcard","note":""},{"uk":"посилка","translit":"","en":"package","note":""},{"uk":"бандероль","translit":"","en":"small parcel","note":""},{"uk":"марка","translit":"","en":"stamp","note":""},{"uk":"конверт","translit":"","en":"envelope","note":""},{"uk":"адреса","translit":"","en":"address","note":""},{"uk":"відправник","translit":"","en":"sender","note":""},{"uk":"одержувач","translit":"","en":"recipient","note":""},{"uk":"банк","translit":"","en":"bank","note":""},{"uk":"рахунок","translit":"","en":"account, bill","note":""},{"uk":"картка","translit":"","en":"card","note":""},{"uk":"готівка","translit":"","en":"cash","note":""},{"uk":"переказ","translit":"","en":"transfer","note":""},{"uk":"обмін валют","translit":"","en":"currency exchange","note":""},{"uk":"курс","translit":"","en":"rate","note":""},{"uk":"долар","translit":"","en":"dollar","note":""},{"uk":"євро","translit":"","en":"euro","note":""},{"uk":"гривня","translit":"","en":"hryvnia","note":""},{"uk":"депозит","translit":"","en":"deposit","note":""},{"uk":"кредит","translit":"","en":"credit, loan","note":""},{"uk":"позика","translit":"","en":"loan","note":""},{"uk":"відсоток","translit":"","en":"percent, interest","note":""},{"uk":"банкомат","translit":"","en":"ATM","note":""},{"uk":"каса","translit":"","en":"cash desk","note":""},{"uk":"касир","translit":"","en":"cashier","note":""},{"uk":"черга","translit":"","en":"queue, line","note":""},{"uk":"квитанція","translit":"","en":"receipt","note":""},{"uk":"чек","translit":"","en":"receipt, check","note":""},{"uk":"підпис","translit":"","en":"signature","note":""},{"uk":"форма","translit":"","en":"form","note":""},{"uk":"документ","translit":"","en":"document","note":""},{"uk":"паспорт","translit":"","en":"passport","note":""},{"uk":"посвідчення","translit":"","en":"ID, certificate","note":""},{"uk":"комісія","translit":"","en":"commission","note":""},{"uk":"термін","translit":"","en":"term, deadline","note":""},{"uk":"безкоштовно","translit":"","en":"free of charge","note":""},{"uk":"платний","translit":"","en":"paid","note":""},{"uk":"надіслати","translit":"","en":"to send","note":"+ acc + dat"},{"uk":"відправити","translit":"","en":"to send, dispatch","note":"+ acc"},{"uk":"обміняти","translit":"","en":"to exchange","note":"+ acc + на + acc"},{"uk":"зняти","translit":"","en":"to withdraw","note":"+ acc + з + gen"},{"uk":"переказати","translit":"","en":"to transfer","note":"+ acc + dat"},{"uk":"заповнити","translit":"","en":"to fill out","note":"+ acc"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Home Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Телевізор у ___. (living room)","answer":"вітальні"},{"prompt":"Ліжко в ___. (bedroom)","answer":"спальні"},{"prompt":"Готую на ___. (kitchen)","answer":"кухні"},{"prompt":"Одяг у ___. (wardrobe)","answer":"шафі"},{"prompt":"Книги на ___. (shelf)","answer":"полиці"},{"prompt":"Сядь на ___. (sofa)","answer":"диван"},{"prompt":"Картина на ___. (wall)","answer":"стіні"},{"prompt":"Килим на ___. (floor)","answer":"підлозі"},{"prompt":"Треба ___ кімнату. (clean)","answer":"прибрати"},{"prompt":"___ одяг. (I'm washing)","answer":"Перу"},{"prompt":"Увімкни ___. (vacuum cleaner)","answer":"пилосос"},{"prompt":"Ми ___ квартиру. (rent)","answer":"орендуємо"}]}},{"id":"activity-1","type":"match-up","title":"Rooms and Items","data":{"type":"match-up","pairs":[{"left":"вітальня","right":"sofa, TV"},{"left":"спальня","right":"bed, dresser"},{"left":"кухня","right":"stove, sink"},{"left":"кабінет","right":"desk, computer"},{"left":"ванна кімната","right":"shower, toilet"},{"left":"коридор","right":"shoes, coat rack"},{"left":"балкон","right":"flowers, chair"},{"left":"комора","right":"supplies, boxes"},{"left":"підвал","right":"storage, tools"},{"left":"горище","right":"old things, dust"},{"left":"стіна","right":"picture, clock"},{"left":"підлога","right":"carpet, rug"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Home Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Великий","телевізор","стоїть","у","вітальні","на","тумбочці","біля"],"answer":"Великий телевізор стоїть у вітальні на тумбочці біля.","translation":"Big TV stands in living room on the stand near."},{"words":["Весь","одяг","лежить","у","великій","шафі","в","спальні"],"answer":"Весь одяг лежить у великій шафі в спальні.","translation":"All clothes are in the big wardrobe in bedroom."},{"words":["Треба","прибрати","всю","кімнату","сьогодні","до","вечора","обов'язково"],"answer":"Треба прибрати всю кімнату сьогодні до вечора обов'язково.","translation":"Need to clean the whole room today by evening certainly."},{"words":["Нові","книги","стоять","на","верхній","полиці","у","кабінеті"],"answer":"Нові книги стоять на верхній полиці у кабінеті.","translation":"New books stand on the upper shelf in study."},{"words":["Сядь","будь ласка","на","зручний","диван","у","вітальні","тут"],"answer":"Сядь, будь ласка, на зручний диван у вітальні тут.","translation":"Please sit on the comfortable sofa in living room here."},{"words":["Зачини","будь ласка","двері","у","спальню","бо","холодно","там"],"answer":"Зачини, будь ласка, двері у спальню, бо холодно там.","translation":"Please close the door to bedroom because it's cold there."},{"words":["Відкрий","велике","вікно","у","кухні","бо","тут","душно"],"answer":"Відкрий велике вікно у кухні, бо тут душно.","translation":"Open the big window in kitchen because it's stuffy here."},{"words":["Помий","будь ласка","весь","посуд","у","мийці","після","вечері"],"answer":"Помий, будь ласка, весь посуд у мийці після вечері.","translation":"Please wash all dishes in sink after dinner."},{"words":["Я","дивлюсь","у","велике","дзеркало","в","ванній","кімнаті"],"answer":"Я дивлюсь у велике дзеркало в ванній кімнаті.","translation":"I'm looking in the big mirror in the bathroom."},{"words":["Ми","переїжджаємо","у","нову","квартиру","наступного","місяця","обов'язково"],"answer":"Ми переїжджаємо у нову квартиру наступного місяця обов'язково.","translation":"We're moving to new apartment next month certainly."},{"words":["Брудний","одяг","лежить","у","пральній","машині","на","кухні"],"answer":"Брудний одяг лежить у пральній машині на кухні.","translation":"Dirty clothes are in washing machine in the kitchen."},{"words":["Красива","картина","висить","на","білій","стіні","у","вітальні"],"answer":"Красива картина висить на білій стіні у вітальні.","translation":"Beautiful picture hangs on the white wall in living room."}]}},{"id":"activity-3","type":"quiz","title":"Home Knowledge","data":{"type":"quiz","questions":[{"question":"«Вітальня» is:","options":["Living room","Bedroom","Kitchen","Bathroom"],"correctIndex":0,"explanation":""},{"question":"«Шафа» is:","options":["Wardrobe/cabinet","Shelf","Table","Chair"],"correctIndex":0,"explanation":""},{"question":"«Прибирати» means:","options":["To clean","To cook","To sleep","To watch"],"correctIndex":0,"explanation":""},{"question":"«Пилосос» is:","options":["Vacuum cleaner","Iron","Washing machine","Dishwasher"],"correctIndex":0,"explanation":""},{"question":"«Комора» is:","options":["Pantry/storage","Living room","Bedroom","Kitchen"],"correctIndex":0,"explanation":""},{"question":"«Прати» means:","options":["To do laundry","To iron","To vacuum","To cook"],"correctIndex":0,"explanation":""},{"question":"«Килим» is:","options":["Carpet/rug","Curtain","Ceiling","Wall"],"correctIndex":0,"explanation":""},{"question":"«Тумбочка» is:","options":["Nightstand","Desk","Sofa","Table"],"correctIndex":0,"explanation":""},{"question":"«Підлога» is:","options":["Floor","Ceiling","Wall","Door"],"correctIndex":0,"explanation":""},{"question":"«Орендувати» means:","options":["To rent","To buy","To sell","To clean"],"correctIndex":0,"explanation":""},{"question":"«Балкон» is:","options":["Balcony","Basement","Attic","Hallway"],"correctIndex":0,"explanation":""},{"question":"«Праска» is used for:","options":["Ironing clothes","Washing dishes","Vacuuming","Cooking"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Home Facts","data":{"type":"true-false","statements":[{"statement":"«Вітальня» is the living room.","isTrue":true,"explanation":""},{"statement":"«Спальня» is where you cook.","isTrue":false,"explanation":""},{"statement":"«Пилосос» is a vacuum cleaner.","isTrue":true,"explanation":""},{"statement":"«Комора» is a living room.","isTrue":false,"explanation":""},{"statement":"«Прибирати» means to clean.","isTrue":true,"explanation":""},{"statement":"«Шафа» stores clothes.","isTrue":true,"explanation":""},{"statement":"«Килим» goes on the wall.","isTrue":false,"explanation":""},{"statement":"«Прати» means to wash clothes.","isTrue":true,"explanation":""},{"statement":"«Балкон» is inside.","isTrue":false,"explanation":""},{"statement":"«Стеля» is the ceiling.","isTrue":true,"explanation":""},{"statement":"«Тумбочка» is next to the bed.","isTrue":true,"explanation":""},{"statement":"«Підвал» is the attic.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Home Categories","data":{"type":"group-sort","groups":[{"id":"rooms","name":"Rooms","items":["вітальня","спальня","кухня"]},{"id":"furniture","name":"Furniture","items":["диван","шафа","комод"]},{"id":"appliances","name":"Appliances","items":["пилосос","праска","посудомийка"]},{"id":"actions","name":"Actions","items":["прибирати","мити","прати"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Home Actions","data":{"type":"fill-blank","items":[{"prompt":"Мама ___ квартиру щосуботи. (cleans)","answer":"прибирає"},{"prompt":"Тато ___ посуд після вечері. (washes)","answer":"миє"},{"prompt":"Я ___ одяг у понеділок. (do laundry)","answer":"перу"},{"prompt":"Сестра ___ сорочки праскою. (irons)","answer":"прасує"},{"prompt":"Брат ___ підлогу пилососом. (vacuums)","answer":"пилососить"},{"prompt":"Ми ___ нову квартиру. (rent)","answer":"орендуємо"},{"prompt":"Вони ___ у новий будинок. (move)","answer":"переїжджають"},{"prompt":"Батьки ___ стару квартиру. (renovate)","answer":"ремонтують"},{"prompt":"Я ___ нову кімнату меблями. (furnish)","answer":"облаштовую"},{"prompt":"Бабуся ___ пил із полиць. (dusts)","answer":"витирає"},{"prompt":"Він ___ вікна щотижня. (washes)","answer":"миє"},{"prompt":"Вона ___ квіти на балконі. (waters)","answer":"поливає"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Room","data":{"type":"select","items":[{"question":"Де ми спимо?","options":[{"text":"У спальні","correct":true},{"text":"У кухні","correct":false},{"text":"У коридорі","correct":false},{"text":"На балконі","correct":false}]},{"question":"Де готують їжу?","options":[{"text":"На кухні","correct":true},{"text":"У спальні","correct":false},{"text":"У вітальні","correct":false},{"text":"У ванній","correct":false}]},{"question":"Де приймають душ?","options":[{"text":"У ванній кімнаті","correct":true},{"text":"На кухні","correct":false},{"text":"У вітальні","correct":false},{"text":"У спальні","correct":false}]},{"question":"Де працюють вдома?","options":[{"text":"У кабінеті","correct":true},{"text":"У ванній","correct":false},{"text":"На балконі","correct":false},{"text":"У коридорі","correct":false}]},{"question":"Де дивляться телевізор?","options":[{"text":"У вітальні","correct":true},{"text":"У ванній","correct":false},{"text":"У коморі","correct":false},{"text":"У підвалі","correct":false}]},{"question":"Де зберігають старі речі?","options":[{"text":"У коморі або на горищі","correct":true},{"text":"У спальні","correct":false},{"text":"У вітальні","correct":false},{"text":"На кухні","correct":false}]},{"question":"Де знімають взуття?","options":[{"text":"У коридорі","correct":true},{"text":"У спальні","correct":false},{"text":"На кухні","correct":false},{"text":"У ванній","correct":false}]},{"question":"Де ростуть квіти вдома?","options":[{"text":"На балконі","correct":true},{"text":"У ванній","correct":false},{"text":"У коридорі","correct":false},{"text":"У підвалі","correct":false}]},{"question":"Де стоїть ліжко?","options":[{"text":"У спальні","correct":true},{"text":"На кухні","correct":false},{"text":"У коридорі","correct":false},{"text":"У ванній","correct":false}]},{"question":"Де стоїть диван?","options":[{"text":"У вітальні","correct":true},{"text":"У ванній","correct":false},{"text":"На кухні","correct":false},{"text":"У коморі","correct":false}]},{"question":"Де стоїть холодильник?","options":[{"text":"На кухні","correct":true},{"text":"У спальні","correct":false},{"text":"У вітальні","correct":false},{"text":"У коридорі","correct":false}]},{"question":"Де висить дзеркало?","options":[{"text":"У ванній та коридорі","correct":true},{"text":"На балконі","correct":false},{"text":"У підвалі","correct":false},{"text":"На горищі","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Home Situations","data":{"type":"quiz","questions":[{"question":"«Орендувати квартиру» означає:","options":["To rent an apartment","To buy an apartment","To sell an apartment","To clean an apartment"],"correctIndex":0,"explanation":""},{"question":"Що робить «пилосос»?","options":["Збирає пил і сміття","Миє посуд","Пере одяг","Готує їжу"],"correctIndex":0,"explanation":""},{"question":"«Переїжджати» означає:","options":["To move to a new place","To stay home","To clean","To sleep"],"correctIndex":0,"explanation":""},{"question":"Де найчастіше стоїть «комод»?","options":["У спальні","На кухні","У ванній","На балконі"],"correctIndex":0,"explanation":""},{"question":"«Тумбочка» стоїть біля:","options":["Ліжка","Плити","Ванни","Балкона"],"correctIndex":0,"explanation":""},{"question":"Що таке «стеля»?","options":["Верхня частина кімнати","Нижня частина кімнати","Бокова частина кімнати","Вхід у кімнату"],"correctIndex":0,"explanation":""},{"question":"«Прибирати» означає:","options":["To clean, tidy up","To cook","To sleep","To work"],"correctIndex":0,"explanation":""},{"question":"Що робить «праска»?","options":["Прасує одяг","Миє посуд","Варить воду","Охолоджує їжу"],"correctIndex":0,"explanation":""},{"question":"«Килим» лежить на:","options":["Підлозі","Стелі","Стіні","Вікні"],"correctIndex":0,"explanation":""},{"question":"Що таке «підвал»?","options":["Basement","Attic","Balcony","Kitchen"],"correctIndex":0,"explanation":""},{"question":"«Ремонтувати» означає:","options":["To renovate, repair","To destroy","To rent","To sell"],"correctIndex":0,"explanation":""},{"question":"Що таке «горище»?","options":["Attic","Basement","Balcony","Kitchen"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"вітальня","translit":"","en":"living room","note":""},{"uk":"спальня","translit":"","en":"bedroom","note":""},{"uk":"кухня","translit":"","en":"kitchen","note":""},{"uk":"кабінет","translit":"","en":"study, office","note":""},{"uk":"комора","translit":"","en":"pantry","note":""},{"uk":"коридор","translit":"","en":"hallway","note":""},{"uk":"балкон","translit":"","en":"balcony","note":""},{"uk":"диван","translit":"","en":"sofa","note":""},{"uk":"крісло","translit":"","en":"armchair","note":""},{"uk":"шафа","translit":"","en":"wardrobe","note":""},{"uk":"полиця","translit":"","en":"shelf","note":""},{"uk":"комод","translit":"","en":"dresser","note":""},{"uk":"тумбочка","translit":"","en":"nightstand","note":""},{"uk":"дзеркало","translit":"","en":"mirror","note":""},{"uk":"килим","translit":"","en":"carpet","note":""},{"uk":"пральна машина","translit":"","en":"washing machine","note":""},{"uk":"посудомийка","translit":"","en":"dishwasher","note":""},{"uk":"пилосос","translit":"","en":"vacuum cleaner","note":""},{"uk":"праска","translit":"","en":"iron","note":""},{"uk":"прибирати","translit":"","en":"to clean","note":""},{"uk":"мити","translit":"","en":"to wash","note":""},{"uk":"прати","translit":"","en":"to do laundry","note":""},{"uk":"пилососити","translit":"","en":"to vacuum","note":""},{"uk":"ремонтувати","translit":"","en":"to renovate","note":""},{"uk":"стіна","translit":"","en":"wall","note":""},{"uk":"стеля","translit":"","en":"ceiling","note":""},{"uk":"підлога","translit":"","en":"floor","note":""},{"uk":"двері","translit":"","en":"door","note":""},{"uk":"вікно","translit":"","en":"window","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1178,8 +1159,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1210,8 +1191,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1623,7 +1604,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1633,7 +1614,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1834,6 +1817,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

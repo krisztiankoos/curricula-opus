@@ -9,191 +9,146 @@
     "visibility": "public",
     "language": "uk",
     "targetLevel": "A2",
-    "phase": "A2.1",
+    "phase": "A2.5",
     "moduleNumber": 38,
-    "moduleType": "checkpoint",
+    "moduleType": "vocabulary",
     "immersionLevel": 0.4,
-    "title": "Case Integration",
-    "subtitle": "All 7 Cases Together",
-    "description": "Use all 7 cases in context",
+    "title": "Health & Body",
+    "subtitle": "Expanded Medical Vocabulary",
+    "description": "Name internal organs and body systems",
     "objectives": [
-      "Use all 7 cases in context",
-      "Build multi-case sentences",
-      "Identify cases in complex texts",
-      "Switch between cases fluently"
+      "Name internal organs and body systems",
+      "Describe extended symptoms and conditions",
+      "Understand medical procedures and treatments",
+      "Discuss health and wellness topics"
     ],
     "grammarFocus": [
-      "All case functions review",
-      "Multi-case sentence building",
-      "Case identification strategies"
+      "Body part expressions (болить, боліло)",
+      "Medical imperatives",
+      "Genitive with negation (немає температури)"
     ],
     "tags": [
-      "cases",
-      "integration",
-      "review",
-      "practice"
+      "vocabulary",
+      "health",
+      "body",
+      "medical",
+      "anatomy"
     ],
     "totalDuration": 45,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "sections": [
       {
         "id": "section-intro",
         "name": "Вступ",
         "nameEn": "Introduction",
         "type": "intro",
-        "content": "## warm-up\n\n### The Complete System\n\nCongratulations! You now know all 7 Ukrainian cases. Let's see them working together:\n\n**One sentence, multiple cases:**\n> Я дав книгу братові біля столу вчора.\n> (I gave a book to my brother near the table yesterday.)\n\n- **Я** - nominative (subject)\n- **книгу** - accusative (direct object)\n- **братові** - dative (to whom)\n- **столу** - genitive (біля + gen)\n\nCases work together to create precise meaning. Today we practice using them all!\n\n> 💡 **Did You Know?**\n>\n> Most Ukrainian sentences use 2-3 different cases. Native speakers don't think about cases consciously - they just \"sound right.\" With practice, you'll develop this intuition too!\n\n## presentation\n\n### The 7 Cases: Complete Review\n\n| Case | Question | Function | Example |\n|------|----------|----------|---------|\n| Nominative | Хто? Що? | Subject | **Брат** читає. |\n| Genitive | Кого? Чого? | Possession, absence, quantities | Книга **брата**. |\n| Dative | Кому? Чому? | To/for whom | Даю **братові**. |\n| Accusative | Кого? Що? | Direct object | Бачу **брата**. |\n| Instrumental | Ким? Чим? | With/by means | Йду з **братом**. |\n| Locative | На/у кому/чому? | Location | Думаю про **брата**. |\n| Vocative | - | Direct address | **Брате**! |\n\n> ⚡ **Pro Tip: Case Recognition**\n>\n> To identify a case in a sentence:\n> 1. Find the verb\n> 2. Ask what question the noun answers\n> 3. Check for prepositions (they determine case)\n> 4. Look at the ending\n\n### Multi-Case Sentences\n\n**Simple (2 cases):**\n- **Мама** (nom) готує **вечерю** (acc). - Mom is preparing dinner.\n- **Я** (nom) йду до **магазину** (gen). - I'm going to the store.\n\n**Medium (3 cases):**\n- **Я** (nom) даю **подарунок** (acc) **сестрі** (dat). - I give a gift to sister.\n- **Ми** (nom) живемо біля **річки** (gen) з **батьками** (instr). - We live near the river with parents.\n\n**Complex (4+ cases):**\n- **Я** (nom) написав **листа** (acc) **другові** (dat) про **подорож** (acc after про).\n  - I wrote a letter to a friend about the trip.\n- **Учитель** (nom) пояснює **учням** (dat) правила **граматики** (gen) **олівцем** (instr).\n  - The teacher explains grammar rules to students with a pencil.\n\n> 📜 **History Bite: Case-Rich Languages**\n>\n> Ukrainian's 7 cases come from Proto-Slavic, which had even more! Finnish has 15 cases, Hungarian has 18. Ukrainian strikes a balance - enough cases to be precise, not so many as to be overwhelming.\n\n### Case Chains: Following the Logic\n\n**Nominative starts the chain:**\nБрат читає книгу сестрі.\n- Хто читає? → Брат (nom)\n- Що читає? → Книгу (acc)\n- Кому читає? → Сестрі (dat)\n\n**Genitive for possession/origin:**\nКнига брата лежить на столі.\n- Що лежить? → Книга (nom)\n- Чия книга? → Брата (gen)\n- Де лежить? → На столі (loc)\n\n**Instrumental for means/company:**\nЯ їду з братом автобусом до Львова.\n- Хто їде? → Я (nom)\n- З ким? → З братом (instr)\n- Чим? → Автобусом (instr)\n- Куди? → До Львова (gen)\n\n### Common Multi-Case Patterns\n\n**Pattern 1: Subject + Action + Object + Recipient**\nNOM + verb + ACC + DAT\n- Батько дав гроші синові.\n- Вчителька показала карту студентам.\n\n**Pattern 2: Subject + Action + Object + Location**\nNOM + verb + ACC + у/на + LOC\n- Я поклав книгу на полицю.\n- Вона поставила вазу у кімнаті.\n\n**Pattern 3: Subject + Action + Companion + Means**\nNOM + verb + з + INSTR + INSTR (means)\n- Ми їдемо з друзями поїздом.\n- Вона йде з сестрою пішки.\n\n**Pattern 4: Subject + Action + Destination + Purpose**\nNOM + verb + до + GEN + за + ACC\n- Він пішов до магазину за хлібом.\n- Я біжу до лікаря за допомогою.\n\n> 🎭 **Culture Corner: Formal Requests**\n>\n> In formal Ukrainian, multi-case sentences show politeness:\n> - \"Прошу Вас передати цю інформацію директорові компанії.\"\n> - (I ask you to pass this information to the company director.)\n>\n> The more precise, the more polite!\n\n### Case Conflicts: Choosing Right\n\n**Same verb, different cases by meaning:**\n\nписати:\n- Я пишу **листа** (acc). - I write a letter. (what)\n- Я пишу **другові** (dat). - I write to a friend. (to whom)\n- Я пишу **ручкою** (instr). - I write with a pen. (by what means)\n\nдивитися:\n- Я дивлюся **фільм** (acc). - I watch a film. (what)\n- Я дивлюся **на тебе** (acc). - I look at you. (direction)\n- Я дивлюся **з цікавістю** (instr). - I look with interest. (manner)\n\nдумати:\n- Я думаю **про тебе** (acc). - I think about you.\n- Я думаю **над проблемою** (instr). - I think over a problem.\n\n> ⚡ **Pro Tip: When in Doubt**\n>\n> 1. Check the preposition - it usually determines case\n> 2. Ask the case question (кого? кому? ким? etc.)\n> 3. Think about the FUNCTION (object? recipient? means?)\n\n### Reading Multi-Case Sentences\n\n**Practice parsing:**\n\n**Sentence 1:**\n> Маленька дівчинка дала красивий малюнок своїй бабусі.\n\nParse:\n- Хто? → маленька дівчинка (nom) - subject\n- Що дала? → красивий малюнок (acc) - direct object\n- Кому? → своїй бабусі (dat) - recipient\n\n**Sentence 2:**\n> Студенти з різних країн зустрілися біля університету перед лекцією.\n\nParse:\n- Хто? → студенти (nom) - subject\n- З яких країн? → з різних країн (gen) - origin\n- Де? → біля університету (gen) - location\n- Коли? → перед лекцією (instr) - time\n\n**Sentence 3:**\n> Мій друг, Іване, передай, будь ласка, цю книгу Марії від мене!\n\nParse:\n- Іване (voc) - direct address\n- Що передай? → цю книгу (acc) - object\n- Кому? → Марії (dat) - recipient\n- Від кого? → від мене (gen) - source\n\n## practice\n\n### Identify All Cases\n\nFind and label each case in the sentences:\n\n1. Мама готує смачний обід для сім'ї.\n   - Мама (nom), обід (acc), сім'ї (gen)\n\n2. Я розповів другові про свою подорож.\n   - Я (nom), другові (dat), подорож (acc)\n\n3. Студентка пише листа батькам ручкою.\n   - Студентка (nom), листа (acc), батькам (dat), ручкою (instr)\n\n4. Брате, дай мені книгу зі столу!\n   - Брате (voc), мені (dat), книгу (acc), столу (gen)\n\n### Complete Multi-Case Sentences\n\nFill in ALL blanks:\n\n1. ___ (я) даю ___ (книга) ___ (сестра).\n   > [!answer] Я даю книгу сестрі.\n\n2. ___ (вчитель) пояснює ___ (правило) ___ (студенти).\n   > [!answer] Вчитель пояснює правило студентам.\n\n3. ___ (ми) йдемо з ___ (друзі) до ___ (парк).\n   > [!answer] Ми йдемо з друзями до парку.\n\n4. ___ (дідусь), розкажи ___ (я) про ___ (війна).\n   > [!answer] Дідусю, розкажи мені про війну.\n\n### Build Complex Sentences\n\nCreate sentences using all given elements:\n\n1. [я / писати / лист / друг / ручка]\n   > [!answer] Я пишу листа другові ручкою.\n\n2. [батько / купити / подарунок / мама / магазин]\n   > [!answer] Батько купив подарунок мамі в магазині.\n\n3. [ми / зустрітися / колеги / кафе / після / робота]\n   > [!answer] Ми зустрілися з колегами в кафе після роботи.\n\n## production\n\n### Real Situations\n\n**Scenario 1: Telling a story**\n- Вчора я пішов до парку з друзями.\n- Ми сиділи біля озера і розмовляли про життя.\n- Потім мій друг дав мені цікаву книгу.\n- Тепер я читаю її з великим задоволенням.\n\n**Scenario 2: Giving instructions**\n- Візьми документи зі столу в кабінеті.\n- Передай їх секретарці на другому поверсі.\n- Скажи їй, що це від директора для бухгалтерії.\n- Після цього повернися до мене.\n\n**Scenario 3: Describing a day**\n- Зранку я їду автобусом на роботу.\n- Протягом дня я працюю з клієнтами.\n- Після обіду я пишу листи партнерам.\n- Увечері зустрічаюся з друзями біля кінотеатру.\n\n---\n\n---\n\n---\n\n---\n\n\n---\n\n\n---"
+        "content": "Beyond basic body parts, you need deeper vocabulary to discuss health. \"My heart,\" \"my lungs,\" \"blood pressure,\" \"a blood test\" — this module expands your medical vocabulary from the basics in Module 29 to a comprehensive health toolkit!\n\n---"
+      },
+      {
+        "id": "section-internal-organs-внутрішні-орга",
+        "name": "Internal Organs (Внутрішні органи)",
+        "type": "content",
+        "content": "## Major Organs\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| серце | /ˈsɛrt͡sɛ/ | heart |\n| легені | /lɛˈɦɛnʲi/ | lungs |\n| печінка | /pɛˈtʃinka/ | liver |\n| нирки | /ˈnɪrkɪ/ | kidneys |\n| шлунок | /ˈʃlunok/ | stomach |\n| кишечник | /kɪˈʃɛtʃnɪk/ | intestines |\n\n**Examples:**\n- **Серце** б'ється швидко. (The heart is beating fast.)\n- Він має проблеми з **легенями**. (He has lung problems.)\n- Перевір **печінку**. (Check the liver.)\n- Болять **нирки**. (The kidneys hurt.)\n- **Шлунок** болить після їжі. (Stomach hurts after eating.)\n\n> [!tip] 💡 Did You Know?\n> \"Легені\" (lungs) comes from \"легкий\" (light) — lungs were thought to be light organs!\n\n---\n\n## More Internal Organs\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| мозок | /moˈzok/ | brain |\n| селезінка | /sɛlɛˈzinka/ | spleen |\n| жовчний міхур | /ˈʒowtʃnɪj ˈmixur/ | gallbladder |\n| підшлункова залоза | /pidʃlunˈkowa zaˈloza/ | pancreas |\n| щитоподібна залоза | /ʃtʃɪtopoˈdibna zaˈloza/ | thyroid |\n\n**Examples:**\n- **Мозок** контролює все тіло. (The brain controls the whole body.)\n- Проблеми з **щитоподібною залозою**. (Thyroid problems.)\n\n---"
+      },
+      {
+        "id": "section-body-systems-системи-організму",
+        "name": "Body Systems (Системи організму)",
+        "type": "content",
+        "content": "## System Names\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| травлення | /trawˈlɛnːa/ | digestion |\n| дихання | /dɪˈxanːa/ | breathing, respiration |\n| кровообіг | /krowoˈobih/ | blood circulation |\n| нервова система | /nɛrˈwowa sɪsˈtɛma/ | nervous system |\n| імунна система | /iˈmunːa sɪsˈtɛma/ | immune system |\n\n**Examples:**\n- Проблеми з **травленням**. (Digestion problems.)\n- **Дихання** важке. (Breathing is difficult.)\n- Поганий **кровообіг** у ногах. (Poor blood circulation in legs.)\n- **Нервова система** втомлена. (Nervous system is exhausted.)\n- **Імунна система** ослаблена. (Immune system is weakened.)\n\n> [!example] 🌍 Real World\n> At the doctor: *У мене проблеми з травленням* — I have digestion problems!\n\n---"
+      },
+      {
+        "id": "section-extended-symptoms-розширені-си",
+        "name": "Extended Symptoms (Розширені симптоми)",
+        "type": "content",
+        "content": "## Common Complaints\n\n| Ukrainian | English |\n|-----------|---------|\n| У мене **головний біль**. | I have a headache. |\n| У мене **підвищений тиск**. | I have high blood pressure. |\n| Мене **нудить**. | I feel nauseous. |\n| У мене **запалення**. | I have inflammation. |\n| Мені **важко дихати**. | It's hard for me to breathe. |\n| У мене **алергія** на... | I'm allergic to... |\n\n**More symptoms:**\n- **Набряк** ноги. (Leg swelling.)\n- **Запаморочення**. (Dizziness.)\n- **Слабкість**. (Weakness.)\n- **Безсоння**. (Insomnia.)\n\n> [!tip] 💡 Did You Know?\n> \"Тиск\" literally means \"pressure\" — used for both physical pressure and blood pressure!\n\n---\n\n## Describing Pain\n\n| Ukrainian | English |\n|-----------|---------|\n| гострий біль | sharp pain |\n| тупий біль | dull pain |\n| пекучий біль | burning pain |\n| пульсуючий біль | throbbing pain |\n| ниючий біль | aching pain |\n| постійний біль | constant pain |\n\n**Examples:**\n- У мене **гострий біль** у спині. (I have sharp pain in my back.)\n- Це **тупий біль**, не гострий. (It's a dull pain, not sharp.)\n- **Пекучий біль** у грудях. (Burning pain in chest.)\n\n---"
+      },
+      {
+        "id": "section-medical-procedures-медичні-про",
+        "name": "Medical Procedures (Медичні процедури)",
+        "type": "content",
+        "content": "## Tests and Examinations\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| аналіз крові | /aˈnaliz ˈkrowi/ | blood test |\n| рентген | /rɛntˈɦɛn/ | X-ray |\n| УЗД | /u zɛ dɛ/ | ultrasound |\n| ЕКГ | /ɛ ka ɦɛ/ | ECG |\n| томографія | /tomoɦraˈfija/ | CT scan |\n| вимірювання тиску | /wɪmʲirʲuˈwanːa ˈtɪsku/ | blood pressure measurement |\n\n**Examples:**\n- Треба зробити **аналіз крові**. (Need to do a blood test.)\n- Зробіть **рентген** грудної клітки. (Take a chest X-ray.)\n- **УЗД** показало норму. (Ultrasound showed normal.)\n- **Виміряйте тиск**. (Measure blood pressure.)\n\n> [!example] 🎬 Pop Culture Moment\n> Hospital dramas: *Терміново рентген! Готуйте операційну!* — X-ray urgently! Prepare the operating room!\n\n---\n\n## Treatments\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| ліки | /ˈlikɪ/ | medicine |\n| таблетки | /tabˈlɛtkɪ/ | pills |\n| мазь | /mazʲ/ | ointment |\n| ін'єкція | /inˈjɛkt͡sija/ | injection |\n| краплі | /ˈkraplʲi/ | drops |\n| операція | /opɛˈrat͡sija/ | surgery |\n\n**Examples:**\n- Приймайте ці **ліки** двічі на день. (Take this medicine twice a day.)\n- **Таблетки** від головного болю. (Pills for headache.)\n- Наносьте **мазь** на шкіру. (Apply ointment to skin.)\n- Потрібна **ін'єкція**. (An injection is needed.)\n- Капайте **краплі** в очі. (Put drops in eyes.)\n\n---"
+      },
+      {
+        "id": "section-health-and-wellness-здоров-я-т",
+        "name": "Health and Wellness (Здоров'я та добробут)",
+        "type": "content",
+        "content": "## Health Words\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| здоров'я | /zdoˈrowja/ | health |\n| здоровий | /zdoˈrowɪj/ | healthy |\n| хворий | /xwoˈrɪj/ | sick, ill |\n| хвороба | /xwoˈroba/ | illness, disease |\n| одужувати | /oduˈʒuwatɪ/ | to recover |\n| лікувати | /likuˈwatɪ/ | to treat |\n\n**Examples:**\n- **Здоров'я** — найважливіше! (Health is the most important!)\n- Ти **здоровий**? (Are you healthy?)\n- Він **хворий** уже тиждень. (He's been sick for a week.)\n- Треба **лікувати** цю **хворобу**. (This illness needs to be treated.)\n- Вона швидко **одужує**. (She's recovering quickly.)\n\n> [!tip] 🌍 Real World\n> Ukrainian greeting: *На здоров'я!* — To your health! (Also \"You're welcome!\")\n\n---\n\n## Lifestyle Words\n\n| Ukrainian | English |\n|-----------|---------|\n| дієта | diet |\n| вітаміни | vitamins |\n| профілактика | prevention |\n| імунітет | immunity |\n| стрес | stress |\n| відпочинок | rest |\n\n**Examples:**\n- Дотримуйся **дієти**. (Follow the diet.)\n- Приймай **вітаміни**. (Take vitamins.)\n- **Профілактика** краще за лікування. (Prevention is better than cure.)\n- **Стрес** шкодить здоров'ю. (Stress harms health.)\n\n---"
+      },
+      {
+        "id": "section-at-the-doctor-s-extended",
+        "name": "At the Doctor's (Extended)",
+        "type": "content",
+        "content": "## Doctor's Questions\n\n| Ukrainian | English |\n|-----------|---------|\n| Що вас турбує? | What's bothering you? |\n| Як давно це почалося? | How long ago did this start? |\n| Де саме болить? | Where exactly does it hurt? |\n| Чи є алергії? | Do you have allergies? |\n| Які ліки приймаєте? | What medications are you taking? |\n| Чи були операції? | Have you had surgeries? |\n\n## Patient's Answers\n\n| Ukrainian | English |\n|-----------|---------|\n| Болить тут. | It hurts here. |\n| Почалося вчора. | It started yesterday. |\n| У мене алергія на пеніцилін. | I'm allergic to penicillin. |\n| Приймаю таблетки від тиску. | I take blood pressure pills. |\n| Мав операцію два роки тому. | Had surgery two years ago. |\n\n> [!example] 🎮 Gamer's Corner\n> Status effect: *Отруєння — здоров'я зменшується* — Poisoning — health decreasing!\n\n---\n\n\n---\n\n\n---"
       },
       {
         "id": "section-summary",
         "name": "Підсумок",
         "nameEn": "Summary",
         "type": "summary",
-        "content": "## The 7 Cases at a Glance\n\n| Case | Question | Typical Use |\n|------|----------|-------------|\n| Nominative | Хто? Що? | Subject |\n| Genitive | Кого? Чого? | Possession, absence, \"of\" |\n| Dative | Кому? | To/for whom |\n| Accusative | Кого? Що? | Direct object |\n| Instrumental | Ким? Чим? | With, by means of |\n| Locative | Де? У чому? | Location (with preposition) |\n| Vocative | - | Calling someone |\n\n## Multi-Case Sentence Patterns\n\n| Pattern | Example |\n|---------|---------|\n| NOM + ACC | Я читаю книгу. |\n| NOM + ACC + DAT | Я даю книгу братові. |\n| NOM + з + INSTR | Я йду з другом. |\n| NOM + до + GEN | Я йду до магазину. |\n| NOM + у/на + LOC | Я живу в Києві. |\n\n## Case Identification Strategy\n\n1. Find the verb (or preposition)\n2. Ask: Хто? Що? Кого? Кому? Ким? Де?\n3. Check the ending\n4. Consider the function\n\n> 💡 **Key Takeaways**\n>\n> - Most sentences use 2-4 different cases\n> - Prepositions determine case for nouns that follow\n> - Practice identifying cases in real sentences\n> - The question words (хто, кого, кому, ким) match case questions\n> - Context helps when endings are similar"
+        "content": "You've expanded your medical vocabulary:\n\n- **Internal organs**: серце, легені, печінка, нирки, шлунок, мозок\n- **Body systems**: травлення, дихання, кровообіг, імунітет\n- **Medical procedures**: аналіз крові, рентген, УЗД, операція\n- **Treatments**: ліки, таблетки, мазь, ін'єкція, краплі\n- **Health concepts**: здоров'я, профілактика, дієта, стрес\n\n**Coming up next**: Home & Furniture — vocabulary for living spaces!"
       }
     ],
-    "rawMarkdown": "---\nmodule: 38\ntitle: \"Case Integration\"\nsubtitle: \"All 7 Cases Together\"\nlevel: A2\nphase: A2.1\nduration: 45\ntransliteration: partial\ntags: [cases, integration, review, practice]\nobjectives:\n  - Use all 7 cases in context\n  - Build multi-case sentences\n  - Identify cases in complex texts\n  - Switch between cases fluently\ngrammar:\n  - All case functions review\n  - Multi-case sentence building\n  - Case identification strategies\n---\n\n# Lesson Content\n\n## warm-up\n\n### The Complete System\n\nCongratulations! You now know all 7 Ukrainian cases. Let's see them working together:\n\n**One sentence, multiple cases:**\n> Я дав книгу братові біля столу вчора.\n> (I gave a book to my brother near the table yesterday.)\n\n- **Я** - nominative (subject)\n- **книгу** - accusative (direct object)\n- **братові** - dative (to whom)\n- **столу** - genitive (біля + gen)\n\nCases work together to create precise meaning. Today we practice using them all!\n\n> 💡 **Did You Know?**\n>\n> Most Ukrainian sentences use 2-3 different cases. Native speakers don't think about cases consciously - they just \"sound right.\" With practice, you'll develop this intuition too!\n\n## presentation\n\n### The 7 Cases: Complete Review\n\n| Case | Question | Function | Example |\n|------|----------|----------|---------|\n| Nominative | Хто? Що? | Subject | **Брат** читає. |\n| Genitive | Кого? Чого? | Possession, absence, quantities | Книга **брата**. |\n| Dative | Кому? Чому? | To/for whom | Даю **братові**. |\n| Accusative | Кого? Що? | Direct object | Бачу **брата**. |\n| Instrumental | Ким? Чим? | With/by means | Йду з **братом**. |\n| Locative | На/у кому/чому? | Location | Думаю про **брата**. |\n| Vocative | - | Direct address | **Брате**! |\n\n> ⚡ **Pro Tip: Case Recognition**\n>\n> To identify a case in a sentence:\n> 1. Find the verb\n> 2. Ask what question the noun answers\n> 3. Check for prepositions (they determine case)\n> 4. Look at the ending\n\n### Multi-Case Sentences\n\n**Simple (2 cases):**\n- **Мама** (nom) готує **вечерю** (acc). - Mom is preparing dinner.\n- **Я** (nom) йду до **магазину** (gen). - I'm going to the store.\n\n**Medium (3 cases):**\n- **Я** (nom) даю **подарунок** (acc) **сестрі** (dat). - I give a gift to sister.\n- **Ми** (nom) живемо біля **річки** (gen) з **батьками** (instr). - We live near the river with parents.\n\n**Complex (4+ cases):**\n- **Я** (nom) написав **листа** (acc) **другові** (dat) про **подорож** (acc after про).\n  - I wrote a letter to a friend about the trip.\n- **Учитель** (nom) пояснює **учням** (dat) правила **граматики** (gen) **олівцем** (instr).\n  - The teacher explains grammar rules to students with a pencil.\n\n> 📜 **History Bite: Case-Rich Languages**\n>\n> Ukrainian's 7 cases come from Proto-Slavic, which had even more! Finnish has 15 cases, Hungarian has 18. Ukrainian strikes a balance - enough cases to be precise, not so many as to be overwhelming.\n\n### Case Chains: Following the Logic\n\n**Nominative starts the chain:**\nБрат читає книгу сестрі.\n- Хто читає? → Брат (nom)\n- Що читає? → Книгу (acc)\n- Кому читає? → Сестрі (dat)\n\n**Genitive for possession/origin:**\nКнига брата лежить на столі.\n- Що лежить? → Книга (nom)\n- Чия книга? → Брата (gen)\n- Де лежить? → На столі (loc)\n\n**Instrumental for means/company:**\nЯ їду з братом автобусом до Львова.\n- Хто їде? → Я (nom)\n- З ким? → З братом (instr)\n- Чим? → Автобусом (instr)\n- Куди? → До Львова (gen)\n\n### Common Multi-Case Patterns\n\n**Pattern 1: Subject + Action + Object + Recipient**\nNOM + verb + ACC + DAT\n- Батько дав гроші синові.\n- Вчителька показала карту студентам.\n\n**Pattern 2: Subject + Action + Object + Location**\nNOM + verb + ACC + у/на + LOC\n- Я поклав книгу на полицю.\n- Вона поставила вазу у кімнаті.\n\n**Pattern 3: Subject + Action + Companion + Means**\nNOM + verb + з + INSTR + INSTR (means)\n- Ми їдемо з друзями поїздом.\n- Вона йде з сестрою пішки.\n\n**Pattern 4: Subject + Action + Destination + Purpose**\nNOM + verb + до + GEN + за + ACC\n- Він пішов до магазину за хлібом.\n- Я біжу до лікаря за допомогою.\n\n> 🎭 **Culture Corner: Formal Requests**\n>\n> In formal Ukrainian, multi-case sentences show politeness:\n> - \"Прошу Вас передати цю інформацію директорові компанії.\"\n> - (I ask you to pass this information to the company director.)\n>\n> The more precise, the more polite!\n\n### Case Conflicts: Choosing Right\n\n**Same verb, different cases by meaning:**\n\nписати:\n- Я пишу **листа** (acc). - I write a letter. (what)\n- Я пишу **другові** (dat). - I write to a friend. (to whom)\n- Я пишу **ручкою** (instr). - I write with a pen. (by what means)\n\nдивитися:\n- Я дивлюся **фільм** (acc). - I watch a film. (what)\n- Я дивлюся **на тебе** (acc). - I look at you. (direction)\n- Я дивлюся **з цікавістю** (instr). - I look with interest. (manner)\n\nдумати:\n- Я думаю **про тебе** (acc). - I think about you.\n- Я думаю **над проблемою** (instr). - I think over a problem.\n\n> ⚡ **Pro Tip: When in Doubt**\n>\n> 1. Check the preposition - it usually determines case\n> 2. Ask the case question (кого? кому? ким? etc.)\n> 3. Think about the FUNCTION (object? recipient? means?)\n\n### Reading Multi-Case Sentences\n\n**Practice parsing:**\n\n**Sentence 1:**\n> Маленька дівчинка дала красивий малюнок своїй бабусі.\n\nParse:\n- Хто? → маленька дівчинка (nom) - subject\n- Що дала? → красивий малюнок (acc) - direct object\n- Кому? → своїй бабусі (dat) - recipient\n\n**Sentence 2:**\n> Студенти з різних країн зустрілися біля університету перед лекцією.\n\nParse:\n- Хто? → студенти (nom) - subject\n- З яких країн? → з різних країн (gen) - origin\n- Де? → біля університету (gen) - location\n- Коли? → перед лекцією (instr) - time\n\n**Sentence 3:**\n> Мій друг, Іване, передай, будь ласка, цю книгу Марії від мене!\n\nParse:\n- Іване (voc) - direct address\n- Що передай? → цю книгу (acc) - object\n- Кому? → Марії (dat) - recipient\n- Від кого? → від мене (gen) - source\n\n## practice\n\n### Identify All Cases\n\nFind and label each case in the sentences:\n\n1. Мама готує смачний обід для сім'ї.\n   - Мама (nom), обід (acc), сім'ї (gen)\n\n2. Я розповів другові про свою подорож.\n   - Я (nom), другові (dat), подорож (acc)\n\n3. Студентка пише листа батькам ручкою.\n   - Студентка (nom), листа (acc), батькам (dat), ручкою (instr)\n\n4. Брате, дай мені книгу зі столу!\n   - Брате (voc), мені (dat), книгу (acc), столу (gen)\n\n### Complete Multi-Case Sentences\n\nFill in ALL blanks:\n\n1. ___ (я) даю ___ (книга) ___ (сестра).\n   > [!answer] Я даю книгу сестрі.\n\n2. ___ (вчитель) пояснює ___ (правило) ___ (студенти).\n   > [!answer] Вчитель пояснює правило студентам.\n\n3. ___ (ми) йдемо з ___ (друзі) до ___ (парк).\n   > [!answer] Ми йдемо з друзями до парку.\n\n4. ___ (дідусь), розкажи ___ (я) про ___ (війна).\n   > [!answer] Дідусю, розкажи мені про війну.\n\n### Build Complex Sentences\n\nCreate sentences using all given elements:\n\n1. [я / писати / лист / друг / ручка]\n   > [!answer] Я пишу листа другові ручкою.\n\n2. [батько / купити / подарунок / мама / магазин]\n   > [!answer] Батько купив подарунок мамі в магазині.\n\n3. [ми / зустрітися / колеги / кафе / після / робота]\n   > [!answer] Ми зустрілися з колегами в кафе після роботи.\n\n## production\n\n### Real Situations\n\n**Scenario 1: Telling a story**\n- Вчора я пішов до парку з друзями.\n- Ми сиділи біля озера і розмовляли про життя.\n- Потім мій друг дав мені цікаву книгу.\n- Тепер я читаю її з великим задоволенням.\n\n**Scenario 2: Giving instructions**\n- Візьми документи зі столу в кабінеті.\n- Передай їх секретарці на другому поверсі.\n- Скажи їй, що це від директора для бухгалтерії.\n- Після цього повернися до мене.\n\n**Scenario 3: Describing a day**\n- Зранку я їду автобусом на роботу.\n- Протягом дня я працюю з клієнтами.\n- Після обіду я пишу листи партнерам.\n- Увечері зустрічаюся з друзями біля кінотеатру.\n\n---\n\n---\n\n---\n\n---\n\n# Activities\n\n## fill-in: All 7 Cases Practice\n\n> Choose the correct case form to complete each sentence. Identify which case is needed.\n\n1. Я бачу ___ (моя сестра) в кафе кожного ранку.\n   > [!answer] мою сестру\n   > [!options] моя сестра | моєї сестри | моїй сестрі | мою сестру\n\n2. Книга належить ___ (мій друг) з дитинства.\n   > [!answer] моєму другові\n   > [!options] мій друг | мого друга | моєму другові | моїм другом\n\n3. Ми живемо біля ___ (центральний парк) у Києві.\n   > [!answer] центрального парку\n   > [!options] центральний парк | центрального парку | центральному парку | центральним парком\n\n4. Вона працює ___ (вчитель) у новій школі.\n   > [!answer] вчителем\n   > [!options] вчитель | вчителя | вчителю | вчителем\n\n5. Книги лежать на ___ (великий стіл) у вітальні.\n   > [!answer] великому столі\n   > [!options] великий стіл | великого стола | великому столі | великим столом\n\n6. Дай, будь ласка, цю каву ___ (мій колега)!\n   > [!answer] моєму колезі\n   > [!options] мій колега | мого колегу | моєму колезі | моїм колегою\n\n7. Ти знаєш ___ (ця жінка) з нашого офісу?\n   > [!answer] цю жінку\n   > [!options] ця жінка | цієї жінки | цій жінці | цю жінку\n\n8. Я їду автобусом до ___ (робота) кожного дня.\n   > [!answer] роботи\n   > [!options] робота | роботи | роботі | роботою\n\n9. ___ (Оксана), допоможи мені, будь ласка!\n   > [!answer] Оксано\n   > [!options] Оксана | Оксани | Оксані | Оксано\n\n10. Він гуляє з ___ (свій собака) у парку.\n    > [!answer] своїм собакою\n    > [!options] свій собака | свого собаку | своєму собаці | своїм собакою\n\n## unjumble: Build the Sentence\n\n> Arrange the words to form multi-case sentences.\n\n1. сестру / Я / бачу / мою / в кафе / кожного ранку\n   > [!answer] Я бачу мою сестру в кафе кожного ранку.\n   > (I see my sister in the cafe every morning. - Accusative)\n\n2. другові / Книга / належить / моєму / з дитинства\n   > [!answer] Книга належить моєму другові з дитинства.\n   > (The book belongs to my friend since childhood. - Dative)\n\n3. парку / Ми / живемо / біля / центрального / у Києві\n   > [!answer] Ми живемо біля центрального парку у Києві.\n   > (We live near the central park in Kyiv. - Genitive)\n\n4. вчителем / Вона / працює / у новій школі\n   > [!answer] Вона працює вчителем у новій школі.\n   > (She works as a teacher at a new school. - Instrumental)\n\n5. столі / Книги / лежать / на / великому / у вітальні\n   > [!answer] Книги лежать на великому столі у вітальні.\n   > (Books lie on a big table in the living room. - Locative)\n\n6. колезі / Дай / цю каву / моєму / будь ласка\n   > [!answer] Дай, будь ласка, цю каву моєму колезі!\n   > (Please give this coffee to my colleague! - Dative)\n\n7. жінку / Ти / знаєш / цю / з нашого офісу\n   > [!answer] Ти знаєш цю жінку з нашого офісу?\n   > (Do you know this woman from our office? - Accusative)\n\n8. роботи / Я / їду / до / автобусом / кожного дня\n   > [!answer] Я їду автобусом до роботи кожного дня.\n   > (I go by bus to work every day. - Genitive + Instrumental)\n\n9. Оксано / допоможи / мені / будь ласка\n   > [!answer] Оксано, допоможи мені, будь ласка!\n   > (Oksana, help me please! - Vocative + Dative)\n\n10. собакою / Він / гуляє / з / своїм / у парку\n    > [!answer] Він гуляє з своїм собакою у парку.\n    > (He walks with his dog in the park. - Instrumental + Locative)\n\n## match-up: Match the Pairs\n\n> Match Ukrainian words to their English meanings.\n\n| Left | Right |\n|------|-------|\n| кабінет | office, study |\n| ваза | vase |\n| малюнок | drawing, picture |\n| протягом | during, throughout |\n| бухгалтерія | accounting dept |\n| партнер | partner |\n| задоволення | pleasure, satisfaction |\n| іноді | sometimes |\n| правило | rule |\n| принести | to bring |\n| полиця | shelf |\n| ви | you (formal/plural) |\n\n## quiz: Meaning Check\n\n> Choose the correct answer.\n\n1. What does \"секретарка\" mean?\n   - [ ] straight\n   - [x] secretary (f)\n   - [ ] eyes\n   - [ ] Accusative: бачити, читати, любити\n   > \"секретарка\" means \"secretary (f)\"\n\n2. What does \"задоволення\" mean?\n   - [ ] to speak\n   - [ ] lecture\n   - [x] pleasure, satisfaction\n   - [ ] to become\n   > \"задоволення\" means \"pleasure, satisfaction\"\n\n3. What does \"поверх\" mean?\n   - [ ] to sell\n   - [ ] Kyiv\n   - [x] floor (of building)\n   - [ ] experience\n   > \"поверх\" means \"floor (of building)\"\n\n4. What does \"малюнок\" mean?\n   - [ ] calf\n   - [x] drawing, picture\n   - [ ] to be considered\n   - [ ] to be lucky\n   > \"малюнок\" means \"drawing, picture\"\n\n5. What does \"бухгалтерія\" mean?\n   - [ ] to understand\n   - [ ] in the middle\n   - [ ] price\n   - [x] accounting dept\n   > \"бухгалтерія\" means \"accounting dept\"\n\n6. What does \"полиця\" mean?\n   - [x] shelf\n   - [ ] to inform\n   - [ ] thin\n   - [ ] pork fat\n   > \"полиця\" means \"shelf\"\n\n7. What does \"партнер\" mean?\n   - [ ] that\n   - [ ] cucumber\n   - [ ] there\n   - [x] partner\n   > \"партнер\" means \"partner\"\n\n8. What does \"лекція\" mean?\n   - [ ] small\n   - [ ] lemon\n   - [ ] English (adj)\n   - [x] lecture\n   > \"лекція\" means \"lecture\"\n\n9. What does \"протягом\" mean?\n   - [ ] to have\n   - [ ] neighbor (f)\n   - [x] during, throughout\n   - [ ] salt\n   > \"протягом\" means \"during, throughout\"\n\n10. What does \"правило\" mean?\n   - [ ] gift\n   - [ ] we\n   - [x] rule\n   - [ ] to be going to\n   > \"правило\" means \"rule\"\n\n11. What does \"ваза\" mean?\n   - [x] vase\n   - [ ] potato\n   - [ ] to remain\n   - [ ] entrepreneur\n   > \"ваза\" means \"vase\"\n\n12. What does \"кабінет\" mean?\n   - [ ] to try on\n   - [x] office, study\n   - [ ] discount\n   - [ ] porridge\n   > \"кабінет\" means \"office, study\"\n\n## true-false: True or False?\n\n> Determine if each statement is true or false.\n\n- [x] \"кабінет\" means \"office, study\"\n   > Correct!\n\n- [x] \"лекція\" means \"lecture\"\n   > Correct!\n\n- [ ] \"ваза\" means \"can, to be able\"\n   > Incorrect. \"ваза\" means \"vase\"\n\n- [x] \"малюнок\" means \"drawing, picture\"\n   > Correct!\n\n- [x] \"протягом\" means \"during, throughout\"\n   > Correct!\n\n- [x] \"партнер\" means \"partner\"\n   > Correct!\n\n- [x] \"секретарка\" means \"secretary (f)\"\n   > Correct!\n\n- [x] \"правило\" means \"rule\"\n   > Correct!\n\n- [ ] \"полиця\" means \"yesterday\"\n   > Incorrect. \"полиця\" means \"shelf\"\n\n- [x] \"бухгалтерія\" means \"accounting dept\"\n   > Correct!\n\n## group-sort: Sort by Gender\n\n> Sort the nouns into gender categories.\n\n### Masculine\n- кабінет\n- малюнок\n- партнер\n- поверх\n\n### Feminine\n- полиця\n- ваза\n- бухгалтерія\n- секретарка\n- лекція\n\n### Neuter\n- задоволення\n- правило\n\n## select: Choose Cases and Functions\n\n> Select all words that belong to the category.\n\n1. Which are nominative case functions?\n   - [x] Subject of sentence\n   - [ ] Direct object\n   - [ ] Possession\n   - [x] Predicate noun\n   - [ ] To/for whom\n   - [ ] Location\n   - [ ] With/by means\n   - [ ] Direct address\n   - [ ] After preposition без\n   - [ ] After preposition з\n\n2. Which are accusative case functions?\n   - [ ] Subject\n   - [x] Direct object\n   - [ ] Possession\n   - [x] Motion destination (у, на + acc)\n   - [ ] To/for whom\n   - [ ] Location\n   - [ ] With/by means\n   - [ ] Direct address\n   - [ ] After до\n   - [ ] After від\n\n3. Which are genitive case functions?\n   - [ ] Subject\n   - [ ] Direct object\n   - [x] Possession\n   - [ ] Motion destination\n   - [x] After без\n   - [x] After до\n   - [x] After від\n   - [x] Quantities\n   - [x] Absence/negation\n   - [ ] With/by means\n\n4. Which are dative case functions?\n   - [ ] Subject\n   - [ ] Direct object\n   - [ ] Possession\n   - [x] To/for whom (indirect object)\n   - [ ] Location\n   - [ ] With/by means\n   - [x] Giving/telling someone\n   - [ ] Direct address\n   - [ ] After без\n   - [ ] After з\n\n5. Which are instrumental case functions?\n   - [ ] Subject\n   - [ ] Direct object\n   - [ ] Possession\n   - [ ] Motion destination\n   - [x] With someone (companionship)\n   - [x] By means of (tool/transport)\n   - [x] Manner of doing\n   - [x] After preposition з (with)\n   - [x] Profession (with працювати, стати)\n   - [ ] After до\n\n6. Which are locative case functions?\n   - [ ] Subject\n   - [ ] Direct object\n   - [ ] Possession\n   - [x] Location (де?)\n   - [x] After у/в (location)\n   - [x] After на (location)\n   - [x] After про (about)\n   - [ ] With/by means\n   - [ ] Direct address\n   - [ ] After від\n\n7. Which questions identify accusative case?\n   - [ ] Хто?\n   - [x] Кого? (animate)\n   - [x] Що? (inanimate)\n   - [ ] Кому?\n   - [ ] Чому?\n   - [x] Куди? (where to)\n   - [ ] Де?\n   - [ ] Чим?\n   - [ ] Ким?\n   - [ ] Кого? (possession)\n\n8. Which questions identify genitive case?\n   - [ ] Хто?\n   - [x] Кого? (possession)\n   - [x] Чого? (possession)\n   - [ ] Кому?\n   - [ ] Що? (direct object)\n   - [ ] Куди?\n   - [ ] Де?\n   - [x] Звідки? (from where)\n   - [ ] Ким?\n   - [ ] Чим?\n\n9. Which require genitive case?\n   - [x] біля парку\n   - [ ] у парку\n   - [x] до школи\n   - [x] від вокзалу\n   - [x] для мами\n   - [x] без води\n   - [ ] з другом\n   - [x] після уроку\n   - [ ] над містом\n   - [ ] перед будинком\n\n10. Which require instrumental case?\n    - [ ] біля парку\n    - [ ] до школи\n    - [x] з другом\n    - [ ] від вокзалу\n    - [ ] для мами\n    - [ ] без води\n    - [x] над містом\n    - [x] перед будинком\n    - [x] між деревами\n    - [x] автобусом (transport)\n\n## unjumble: Arrange Words into Sentences\n\n> Put the words in the correct order to form grammatically correct sentences.\n\n1. книгу / братові / Я / дав / столу / біля\n   > [!answer] Я дав книгу братові біля столу.\n   > (I gave a book to brother near the table.)\n\n2. готує / Мама / вечерю / кухні / на\n   > [!answer] Мама готує вечерю на кухні.\n   > (Mom prepares dinner in the kitchen.)\n\n3. подарунок / сестрі / даю / Я / день / народження / на\n   > [!answer] Я даю подарунок сестрі на день народження.\n   > (I give a gift to sister for birthday.)\n\n4. живемо / Ми / річки / біля / батьками / з\n   > [!answer] Ми живемо біля річки з батьками.\n   > (We live near the river with parents.)\n\n5. листа / Я / другові / написав / подорож / про\n   > [!answer] Я написав листа другові про подорож.\n   > (I wrote a letter to friend about the trip.)\n\n6. Учитель / учням / правила / пояснює / граматики\n   > [!answer] Учитель пояснює учням правила граматики.\n   > (The teacher explains grammar rules to students.)\n\n7. книга / брата / на / лежить / столі\n   > [!answer] Книга брата лежить на столі.\n   > (Brother's book lies on the table.)\n\n8. школу / Вона / до / автобусом / їде\n   > [!answer] Вона їде до школи автобусом.\n   > (She goes to school by bus.)\n\n9. думає / про / екзамен / студент / кімнаті / у\n   > [!answer] Студент думає про екзамен у кімнаті.\n   > (The student thinks about the exam in the room.)\n\n10. працює / Брат / лікарем / лікарні / у / Києві / у\n    > [!answer] Брат працює лікарем у лікарні у Києві.\n    > (Brother works as a doctor at a hospital in Kyiv.)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| правило | /prɑˈvɪlo/ | rule | noun | n |\n| полиця | /poˈlɪtsʲɑ/ | shelf | noun | f |\n| ваза | /ˈvɑzɑ/ | vase | noun | f |\n| поверх | /ˈpovɛrx/ | floor (of building) | noun | m |\n| кабінет | /kɑbʲiˈnɛt/ | office, study | noun | m |\n| секретарка | /sɛkrɛˈtɑrkɑ/ | secretary (f) | noun | f |\n| бухгалтерія | /buxɦɑlˈtɛrʲijɑ/ | accounting dept | noun | f |\n| партнер | /pɑrtˈnɛr/ | partner | noun | m |\n| малюнок | /mɑˈlʲunok/ | drawing, picture | noun | m |\n| лекція | /ˈlɛktsʲijɑ/ | lecture | noun | f |\n| задоволення | /zɑdoˈvolɛnʲːɑ/ | pleasure, satisfaction | noun | n |\n| протягом | /proˈtʲɑɦom/ | during, throughout | prep | - | + gen |\n\n---\n\n# Summary\n\n## The 7 Cases at a Glance\n\n| Case | Question | Typical Use |\n|------|----------|-------------|\n| Nominative | Хто? Що? | Subject |\n| Genitive | Кого? Чого? | Possession, absence, \"of\" |\n| Dative | Кому? | To/for whom |\n| Accusative | Кого? Що? | Direct object |\n| Instrumental | Ким? Чим? | With, by means of |\n| Locative | Де? У чому? | Location (with preposition) |\n| Vocative | - | Calling someone |\n\n## Multi-Case Sentence Patterns\n\n| Pattern | Example |\n|---------|---------|\n| NOM + ACC | Я читаю книгу. |\n| NOM + ACC + DAT | Я даю книгу братові. |\n| NOM + з + INSTR | Я йду з другом. |\n| NOM + до + GEN | Я йду до магазину. |\n| NOM + у/на + LOC | Я живу в Києві. |\n\n## Case Identification Strategy\n\n1. Find the verb (or preposition)\n2. Ask: Хто? Що? Кого? Кому? Ким? Де?\n3. Check the ending\n4. Consider the function\n\n> 💡 **Key Takeaways**\n>\n> - Most sentences use 2-4 different cases\n> - Prepositions determine case for nouns that follow\n> - Practice identifying cases in real sentences\n> - The question words (хто, кого, кому, ким) match case questions\n> - Context helps when endings are similar\n",
-    "createdAt": "2025-12-04T23:47:24.904Z",
-    "modifiedAt": "2025-12-04T23:47:24.904Z",
+    "rawMarkdown": "---\ntitle: \"Health & Body\"\nsubtitle: \"Expanded Medical Vocabulary\"\nphase: A2.5\nduration: 45\ntransliteration: none\ntags: [vocabulary, health, body, medical, anatomy]\nobjectives:\n  - Name internal organs and body systems\n  - Describe extended symptoms and conditions\n  - Understand medical procedures and treatments\n  - Discuss health and wellness topics\ngrammar:\n  - Body part expressions (болить, боліло)\n  - Medical imperatives\n  - Genitive with negation (немає температури)\n---\n\n# Вступ\n\nBeyond basic body parts, you need deeper vocabulary to discuss health. \"My heart,\" \"my lungs,\" \"blood pressure,\" \"a blood test\" — this module expands your medical vocabulary from the basics in Module 29 to a comprehensive health toolkit!\n\n---\n\n# Internal Organs (Внутрішні органи)\n\n## Major Organs\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| серце | /ˈsɛrt͡sɛ/ | heart |\n| легені | /lɛˈɦɛnʲi/ | lungs |\n| печінка | /pɛˈtʃinka/ | liver |\n| нирки | /ˈnɪrkɪ/ | kidneys |\n| шлунок | /ˈʃlunok/ | stomach |\n| кишечник | /kɪˈʃɛtʃnɪk/ | intestines |\n\n**Examples:**\n- **Серце** б'ється швидко. (The heart is beating fast.)\n- Він має проблеми з **легенями**. (He has lung problems.)\n- Перевір **печінку**. (Check the liver.)\n- Болять **нирки**. (The kidneys hurt.)\n- **Шлунок** болить після їжі. (Stomach hurts after eating.)\n\n> [!tip] 💡 Did You Know?\n> \"Легені\" (lungs) comes from \"легкий\" (light) — lungs were thought to be light organs!\n\n---\n\n## More Internal Organs\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| мозок | /moˈzok/ | brain |\n| селезінка | /sɛlɛˈzinka/ | spleen |\n| жовчний міхур | /ˈʒowtʃnɪj ˈmixur/ | gallbladder |\n| підшлункова залоза | /pidʃlunˈkowa zaˈloza/ | pancreas |\n| щитоподібна залоза | /ʃtʃɪtopoˈdibna zaˈloza/ | thyroid |\n\n**Examples:**\n- **Мозок** контролює все тіло. (The brain controls the whole body.)\n- Проблеми з **щитоподібною залозою**. (Thyroid problems.)\n\n---\n\n# Body Systems (Системи організму)\n\n## System Names\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| травлення | /trawˈlɛnːa/ | digestion |\n| дихання | /dɪˈxanːa/ | breathing, respiration |\n| кровообіг | /krowoˈobih/ | blood circulation |\n| нервова система | /nɛrˈwowa sɪsˈtɛma/ | nervous system |\n| імунна система | /iˈmunːa sɪsˈtɛma/ | immune system |\n\n**Examples:**\n- Проблеми з **травленням**. (Digestion problems.)\n- **Дихання** важке. (Breathing is difficult.)\n- Поганий **кровообіг** у ногах. (Poor blood circulation in legs.)\n- **Нервова система** втомлена. (Nervous system is exhausted.)\n- **Імунна система** ослаблена. (Immune system is weakened.)\n\n> [!example] 🌍 Real World\n> At the doctor: *У мене проблеми з травленням* — I have digestion problems!\n\n---\n\n# Extended Symptoms (Розширені симптоми)\n\n## Common Complaints\n\n| Ukrainian | English |\n|-----------|---------|\n| У мене **головний біль**. | I have a headache. |\n| У мене **підвищений тиск**. | I have high blood pressure. |\n| Мене **нудить**. | I feel nauseous. |\n| У мене **запалення**. | I have inflammation. |\n| Мені **важко дихати**. | It's hard for me to breathe. |\n| У мене **алергія** на... | I'm allergic to... |\n\n**More symptoms:**\n- **Набряк** ноги. (Leg swelling.)\n- **Запаморочення**. (Dizziness.)\n- **Слабкість**. (Weakness.)\n- **Безсоння**. (Insomnia.)\n\n> [!tip] 💡 Did You Know?\n> \"Тиск\" literally means \"pressure\" — used for both physical pressure and blood pressure!\n\n---\n\n## Describing Pain\n\n| Ukrainian | English |\n|-----------|---------|\n| гострий біль | sharp pain |\n| тупий біль | dull pain |\n| пекучий біль | burning pain |\n| пульсуючий біль | throbbing pain |\n| ниючий біль | aching pain |\n| постійний біль | constant pain |\n\n**Examples:**\n- У мене **гострий біль** у спині. (I have sharp pain in my back.)\n- Це **тупий біль**, не гострий. (It's a dull pain, not sharp.)\n- **Пекучий біль** у грудях. (Burning pain in chest.)\n\n---\n\n# Medical Procedures (Медичні процедури)\n\n## Tests and Examinations\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| аналіз крові | /aˈnaliz ˈkrowi/ | blood test |\n| рентген | /rɛntˈɦɛn/ | X-ray |\n| УЗД | /u zɛ dɛ/ | ultrasound |\n| ЕКГ | /ɛ ka ɦɛ/ | ECG |\n| томографія | /tomoɦraˈfija/ | CT scan |\n| вимірювання тиску | /wɪmʲirʲuˈwanːa ˈtɪsku/ | blood pressure measurement |\n\n**Examples:**\n- Треба зробити **аналіз крові**. (Need to do a blood test.)\n- Зробіть **рентген** грудної клітки. (Take a chest X-ray.)\n- **УЗД** показало норму. (Ultrasound showed normal.)\n- **Виміряйте тиск**. (Measure blood pressure.)\n\n> [!example] 🎬 Pop Culture Moment\n> Hospital dramas: *Терміново рентген! Готуйте операційну!* — X-ray urgently! Prepare the operating room!\n\n---\n\n## Treatments\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| ліки | /ˈlikɪ/ | medicine |\n| таблетки | /tabˈlɛtkɪ/ | pills |\n| мазь | /mazʲ/ | ointment |\n| ін'єкція | /inˈjɛkt͡sija/ | injection |\n| краплі | /ˈkraplʲi/ | drops |\n| операція | /opɛˈrat͡sija/ | surgery |\n\n**Examples:**\n- Приймайте ці **ліки** двічі на день. (Take this medicine twice a day.)\n- **Таблетки** від головного болю. (Pills for headache.)\n- Наносьте **мазь** на шкіру. (Apply ointment to skin.)\n- Потрібна **ін'єкція**. (An injection is needed.)\n- Капайте **краплі** в очі. (Put drops in eyes.)\n\n---\n\n# Health and Wellness (Здоров'я та добробут)\n\n## Health Words\n\n| Ukrainian | IPA | English |\n|-----------|-----|---------|\n| здоров'я | /zdoˈrowja/ | health |\n| здоровий | /zdoˈrowɪj/ | healthy |\n| хворий | /xwoˈrɪj/ | sick, ill |\n| хвороба | /xwoˈroba/ | illness, disease |\n| одужувати | /oduˈʒuwatɪ/ | to recover |\n| лікувати | /likuˈwatɪ/ | to treat |\n\n**Examples:**\n- **Здоров'я** — найважливіше! (Health is the most important!)\n- Ти **здоровий**? (Are you healthy?)\n- Він **хворий** уже тиждень. (He's been sick for a week.)\n- Треба **лікувати** цю **хворобу**. (This illness needs to be treated.)\n- Вона швидко **одужує**. (She's recovering quickly.)\n\n> [!tip] 🌍 Real World\n> Ukrainian greeting: *На здоров'я!* — To your health! (Also \"You're welcome!\")\n\n---\n\n## Lifestyle Words\n\n| Ukrainian | English |\n|-----------|---------|\n| дієта | diet |\n| вітаміни | vitamins |\n| профілактика | prevention |\n| імунітет | immunity |\n| стрес | stress |\n| відпочинок | rest |\n\n**Examples:**\n- Дотримуйся **дієти**. (Follow the diet.)\n- Приймай **вітаміни**. (Take vitamins.)\n- **Профілактика** краще за лікування. (Prevention is better than cure.)\n- **Стрес** шкодить здоров'ю. (Stress harms health.)\n\n---\n\n# At the Doctor's (Extended)\n\n## Doctor's Questions\n\n| Ukrainian | English |\n|-----------|---------|\n| Що вас турбує? | What's bothering you? |\n| Як давно це почалося? | How long ago did this start? |\n| Де саме болить? | Where exactly does it hurt? |\n| Чи є алергії? | Do you have allergies? |\n| Які ліки приймаєте? | What medications are you taking? |\n| Чи були операції? | Have you had surgeries? |\n\n## Patient's Answers\n\n| Ukrainian | English |\n|-----------|---------|\n| Болить тут. | It hurts here. |\n| Почалося вчора. | It started yesterday. |\n| У мене алергія на пеніцилін. | I'm allergic to penicillin. |\n| Приймаю таблетки від тиску. | I take blood pressure pills. |\n| Мав операцію два роки тому. | Had surgery two years ago. |\n\n> [!example] 🎮 Gamer's Corner\n> Status effect: *Отруєння — здоров'я зменшується* — Poisoning — health decreasing!\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| серце | /ˈsɛrt͡sɛ/ | heart | noun | n | |\n| легені | /lɛˈɦɛnʲi/ | lungs | noun | pl | |\n| печінка | /pɛˈtʃinka/ | liver | noun | f | |\n| нирки | /ˈnɪrkɪ/ | kidneys | noun | pl | |\n| шлунок | /ˈʃlunok/ | stomach (organ) | noun | m | |\n| мозок | /moˈzok/ | brain | noun | m | |\n| кровообіг | /krowoˈobih/ | circulation | noun | m | |\n| травлення | /trawˈlɛnːa/ | digestion | noun | n | |\n| дихання | /dɪˈxanːa/ | breathing | noun | n | |\n| тиск | /tɪsk/ | pressure | noun | m | |\n| запалення | /zapaˈlɛnːa/ | inflammation | noun | n | |\n| набряк | /ˈnabrʲak/ | swelling | noun | m | |\n| алергія | /alɛrˈɦija/ | allergy | noun | f | |\n| аналіз | /aˈnaliz/ | test, analysis | noun | m | |\n| рентген | /rɛntˈɦɛn/ | X-ray | noun | m | |\n| операція | /opɛˈrat͡sija/ | surgery | noun | f | |\n| таблетки | /tabˈlɛtkɪ/ | pills | noun | pl | |\n| мазь | /mazʲ/ | ointment | noun | f | |\n| ін'єкція | /inˈjɛkt͡sija/ | injection | noun | f | |\n| краплі | /ˈkraplʲi/ | drops | noun | pl | |\n| здоров'я | /zdoˈrowja/ | health | noun | n | |\n| хвороба | /xwoˈroba/ | illness | noun | f | |\n| одужувати | /oduˈʒuwatɪ/ | to recover | verb | — | |\n| лікувати | /likuˈwatɪ/ | to treat | verb | — | |\n| імунітет | /imuniˈtɛt/ | immunity | noun | m | |\n| профілактика | /profilakˈtɪka/ | prevention | noun | f | |\n| дієта | /diˈjɛta/ | diet | noun | f | |\n| вітаміни | /witaˈminɪ/ | vitamins | noun | pl | |\n| стрес | /strɛs/ | stress | noun | m | |\n\n---\n\n# Activities\n\n## fill-in: Medical Vocabulary\n\n1. ___ б'ється швидко. (Heart)\n   > [!answer] Серце\n   > (Internal organ)\n\n2. Проблеми з ___. (digestion)\n   > [!answer] травленням\n   > (Instrumental case)\n\n3. Треба зробити ___ крові. (test)\n   > [!answer] аналіз\n   > (Medical test)\n\n4. У мене підвищений ___. (pressure)\n   > [!answer] тиск\n   > (Blood pressure)\n\n5. Приймайте ___ двічі на день. (medicine)\n   > [!answer] ліки\n   > (Treatment)\n\n6. У мене ___ на пеніцилін. (allergy)\n   > [!answer] алергія\n   > (Medical condition)\n\n7. ___ краще за лікування. (Prevention)\n   > [!answer] Профілактика\n   > (Health concept)\n\n8. Він швидко ___. (recovering)\n   > [!answer] одужує\n   > (Verb)\n\n9. Зробіть ___ грудної клітки. (X-ray)\n   > [!answer] рентген\n   > (Medical procedure)\n\n10. Капайте ___ в очі. (drops)\n    > [!answer] краплі\n    > (Medicine form)\n\n11. Потрібна ___. (surgery)\n    > [!answer] операція\n    > (Medical procedure)\n\n12. ___ — найважливіше! (Health)\n    > [!answer] Здоров'я\n    > (General concept)\n\n## match-up: Body Systems\n\n- серце :: heart\n- легені :: lungs\n- печінка :: liver\n- нирки :: kidneys\n- мозок :: brain\n- шлунок :: stomach\n- травлення :: digestion\n- дихання :: breathing\n- кровообіг :: circulation\n- імунітет :: immunity\n- нервова система :: nervous system\n- тиск :: pressure\n\n## unjumble: Medical Sentences\n\n1. Виміряйте / будь ласка / мій / тиск / зараз / у / кабінеті / лікаря\n   > [!answer] Виміряйте, будь ласка, мій тиск зараз у кабінеті лікаря.\n   > (Please measure my pressure now in the doctor's office.) [8 words]\n\n2. Треба / зробити / аналіз / крові / завтра / вранці / у / лікарні\n   > [!answer] Треба зробити аналіз крові завтра вранці у лікарні.\n   > (Need to do a blood test tomorrow morning at hospital.) [8 words]\n\n3. Приймайте / ці / таблетки / двічі / на / день / після / їжі\n   > [!answer] Приймайте ці таблетки двічі на день після їжі.\n   > (Take these pills twice a day after food.) [8 words]\n\n4. У / мене / алергія / на / пеніцилін / та / інші / антибіотики\n   > [!answer] У мене алергія на пеніцилін та інші антибіотики.\n   > (I'm allergic to penicillin and other antibiotics.) [8 words]\n\n5. Як / давно / у / вас / почалися / ці / симптоми / скажіть\n   > [!answer] Скажіть, як давно у вас почалися ці симптоми?\n   > (Tell me, how long ago did you start having these symptoms?) [8 words]\n\n6. Я / мав / операцію / на / серці / два / роки / тому\n   > [!answer] Я мав операцію на серці два роки тому.\n   > (I had heart surgery two years ago.) [8 words]\n\n7. Що / саме / вас / турбує / сьогодні / розкажіть / мені / детально\n   > [!answer] Розкажіть мені детально, що саме вас турбує сьогодні.\n   > (Tell me in detail what exactly is bothering you today.) [8 words]\n\n8. Скажіть / де / саме / у / вас / болить / зараз / сильно\n   > [!answer] Скажіть, де саме у вас зараз сильно болить.\n   > (Tell me where exactly you have strong pain now.) [8 words]\n\n9. Приймай / вітаміни / щодня / вранці / після / сніданку / для / здоров'я\n   > [!answer] Приймай вітаміни щодня вранці після сніданку для здоров'я.\n   > (Take vitamins daily in morning after breakfast for health.) [8 words]\n\n10. Вона / швидко / одужує / після / важкої / операції / у / лікарні\n    > [!answer] Вона швидко одужує після важкої операції у лікарні.\n    > (She is recovering quickly after difficult surgery at hospital.) [8 words]\n\n11. Постійний / стрес / дуже / шкодить / вашому / здоров'ю / та / імунітету\n    > [!answer] Постійний стрес дуже шкодить вашому здоров'ю та імунітету.\n    > (Constant stress greatly harms your health and immunity.) [8 words]\n\n12. Капайте / ці / краплі / в / очі / тричі / на / день\n    > [!answer] Капайте ці краплі в очі тричі на день.\n    > (Put these drops in eyes three times a day.) [8 words]\n\n## quiz: Health Knowledge\n\n1. «Легені» are:\n   - [x] Lungs\n   - [ ] Liver\n   - [ ] Legs\n   - [ ] Lips\n\n2. «Аналіз крові» is:\n   - [x] Blood test\n   - [ ] Blood type\n   - [ ] Blood pressure\n   - [ ] Blood vessel\n\n3. «Травлення» is:\n   - [x] Digestion\n   - [ ] Travel\n   - [ ] Training\n   - [ ] Treatment\n\n4. «Тиск» means:\n   - [x] Pressure\n   - [ ] Tissue\n   - [ ] Taste\n   - [ ] Temperature\n\n5. «Одужувати» means:\n   - [x] To recover\n   - [ ] To get sick\n   - [ ] To diagnose\n   - [ ] To operate\n\n6. «Рентген» is:\n   - [x] X-ray\n   - [ ] Injection\n   - [ ] Surgery\n   - [ ] Medicine\n\n7. «Мазь» is applied to:\n   - [x] Skin\n   - [ ] Eyes\n   - [ ] Stomach\n   - [ ] Heart\n\n8. «Профілактика» is:\n   - [x] Prevention\n   - [ ] Profession\n   - [ ] Procedure\n   - [ ] Program\n\n9. «Нирки» are:\n   - [x] Kidneys\n   - [ ] Knees\n   - [ ] Nerves\n   - [ ] Nails\n\n10. «Краплі» are used as:\n    - [x] Eye/ear drops\n    - [ ] Pills\n    - [ ] Ointment\n    - [ ] Injection\n\n11. «Кровообіг» is:\n    - [x] Blood circulation\n    - [ ] Blood type\n    - [ ] Blood test\n    - [ ] Bleeding\n\n12. «Здоров'я» means:\n    - [x] Health\n    - [ ] Healthy\n    - [ ] Hospital\n    - [ ] Healing\n\n## true-false: Medical Facts\n\n1. «Серце» is the heart.\n   > [!answer] true\n   > (Vital organ)\n\n2. «Легені» means liver.\n   > [!answer] false\n   > (Lungs)\n\n3. «Тиск» can mean blood pressure.\n   > [!answer] true\n   > (Common medical use)\n\n4. «Аналіз крові» is a blood test.\n   > [!answer] true\n   > (Medical procedure)\n\n5. «Травлення» relates to breathing.\n   > [!answer] false\n   > (Digestion)\n\n6. «Мазь» is applied to skin.\n   > [!answer] true\n   > (Ointment)\n\n7. «Краплі» are pills.\n   > [!answer] false\n   > (Drops)\n\n8. «Одужувати» means to get sick.\n   > [!answer] false\n   > (To recover)\n\n9. «Профілактика» means prevention.\n   > [!answer] true\n   > (Health concept)\n\n10. «Нирки» are in pairs.\n    > [!answer] true\n    > (Two kidneys)\n\n11. «Рентген» is named after its inventor.\n    > [!answer] true\n    > (Wilhelm Röntgen)\n\n12. «Здоров'я» is only used for physical health.\n    > [!answer] false\n    > (Also mental health)\n\n## group-sort: Medical Categories\n\n> Sort these items into the correct categories.\n\n### Internal Organs\n- серце\n- легені\n- печінка\n\n### Medical Tests\n- аналіз крові\n- рентген\n- УЗД\n\n### Treatments\n- таблетки\n- мазь\n- ін'єкція\n\n### Symptoms\n- головний біль\n- тиск\n- запалення\n\n## fill-in: Body Systems\n\n1. ___ б'ється дуже швидко. (Heart)\n   > [!answer] Серце\n   > (Internal organ)\n\n2. Він має проблеми з ___. (lungs)\n   > [!answer] легенями\n   > (Instrumental case)\n\n3. ___ контролює все тіло. (Brain)\n   > [!answer] Мозок\n   > (Internal organ)\n\n4. Перевірте мою ___. (liver)\n   > [!answer] печінку\n   > (Accusative case)\n\n5. ___ у неї ослаблена. (Immune system)\n   > [!answer] Імунна система\n   > (Body system)\n\n6. Проблеми з ___ бувають часто. (digestion)\n   > [!answer] травленням\n   > (Instrumental case)\n\n7. ___ важке після бігу. (Breathing)\n   > [!answer] Дихання\n   > (Body function)\n\n8. Поганий ___ у ногах. (circulation)\n   > [!answer] кровообіг\n   > (Body system)\n\n9. Болять обидві ___. (kidneys)\n   > [!answer] нирки\n   > (Internal organ)\n\n10. ___ болить після їжі. (Stomach)\n    > [!answer] Шлунок\n    > (Internal organ)\n\n11. ___ нервова дуже втомлена. (System)\n    > [!answer] Система\n    > (Body system part)\n\n12. У мене підвищений ___. (pressure)\n    > [!answer] тиск\n    > (Medical term)\n\n## select: Choose the Correct Medical Term\n\n1. Де роблять аналіз крові?\n   - [x] У лабораторії\n   - [ ] У ресторані\n   - [ ] На вулиці\n   - [ ] У магазині\n\n2. Що призначає лікар при інфекції?\n   - [x] Антибіотики\n   - [ ] Вітаміни\n   - [ ] Воду\n   - [ ] Каву\n\n3. Що перевіряє кардіолог?\n   - [x] Серце\n   - [ ] Ноги\n   - [ ] Руки\n   - [ ] Волосся\n\n4. Куди капають очні краплі?\n   - [x] В очі\n   - [ ] У вуха\n   - [ ] У рот\n   - [ ] На руку\n\n5. Що показує рентген?\n   - [x] Кістки\n   - [ ] Думки\n   - [ ] Сни\n   - [ ] Спогади\n\n6. При якому симптомі приймають жарознижуюче?\n   - [x] Температура\n   - [ ] Голод\n   - [ ] Втома\n   - [ ] Радість\n\n7. Що таке УЗД?\n   - [x] Ультразвукове дослідження\n   - [ ] Укол звичайний добрий\n   - [ ] Управління здоров'я\n   - [ ] Універсальна допомога\n\n8. Куди наносять мазь?\n   - [x] На шкіру\n   - [ ] У рот\n   - [ ] В очі\n   - [ ] У вуха\n\n9. Що означає «одужувати»?\n   - [x] Видужувати\n   - [ ] Хворіти\n   - [ ] Працювати\n   - [ ] Спати\n\n10. Що таке профілактика?\n    - [x] Запобігання хворобам\n    - [ ] Лікування хвороб\n    - [ ] Операція\n    - [ ] Ін'єкція\n\n11. Що перевіряє гастроентеролог?\n    - [x] Шлунок та кишечник\n    - [ ] Серце\n    - [ ] Легені\n    - [ ] Мозок\n\n12. Що таке алергія?\n    - [x] Реакція на подразник\n    - [ ] Вид спорту\n    - [ ] Їжа\n    - [ ] Напій\n\n## order: Steps at Doctor's Visit\n\n> Put these steps in the correct order for a doctor's visit.\n\n1. Запишіться на прийом.\n2. Прийдіть до лікарні.\n3. Зачекайте у черзі.\n4. Зайдіть до кабінету.\n5. Опишіть симптоми лікарю.\n6. Пройдіть обстеження.\n\n## quiz: Health Situations\n\n1. «У мене болить голова» означає:\n   - [x] I have a headache\n   - [ ] I'm hungry\n   - [ ] I'm tired\n   - [ ] I'm cold\n\n2. Що робити при високій температурі?\n   - [x] Приймати жарознижуюче\n   - [ ] Їсти морозиво\n   - [ ] Бігати\n   - [ ] Танцювати\n\n3. «Мені важко дихати» означає:\n   - [x] It's hard for me to breathe\n   - [ ] I can't sleep\n   - [ ] I can't eat\n   - [ ] I can't run\n\n4. Коли потрібна операція?\n   - [x] При серйозних захворюваннях\n   - [ ] При легкій застуді\n   - [ ] Коли хочеться спати\n   - [ ] Коли голодний\n\n5. «Здоров'я — найважливіше» означає:\n   - [x] Health is the most important\n   - [ ] Money is everything\n   - [ ] Work is life\n   - [ ] Sleep is good\n\n6. Що означає «імунітет»?\n   - [x] Захист організму від хвороб\n   - [ ] Вид спорту\n   - [ ] Тип їжі\n   - [ ] Назва ліків\n\n7. «Профілактика краще за лікування» означає:\n   - [x] Prevention is better than cure\n   - [ ] Treatment is the best\n   - [ ] Surgery is easy\n   - [ ] Medicine is cheap\n\n8. Що таке «набряк»?\n   - [x] Swelling\n   - [ ] Hunger\n   - [ ] Sleep\n   - [ ] Joy\n\n9. «Гострий біль» означає:\n   - [x] Sharp pain\n   - [ ] Mild discomfort\n   - [ ] No pain\n   - [ ] Happiness\n\n10. Що робити при алергії?\n    - [x] Уникати алергенів\n    - [ ] Їсти більше алергенів\n    - [ ] Ігнорувати симптоми\n    - [ ] Бігати\n\n11. «Відпочинок важливий» означає:\n    - [x] Rest is important\n    - [ ] Work more\n    - [ ] Don't sleep\n    - [ ] Run faster\n\n12. Що таке «стрес»?\n    - [x] Напруження організму\n    - [ ] Вид відпочинку\n    - [ ] Тип їжі\n    - [ ] Назва вправи\n\n---\n\n# Підсумок\n\nYou've expanded your medical vocabulary:\n\n- **Internal organs**: серце, легені, печінка, нирки, шлунок, мозок\n- **Body systems**: травлення, дихання, кровообіг, імунітет\n- **Medical procedures**: аналіз крові, рентген, УЗД, операція\n- **Treatments**: ліки, таблетки, мазь, ін'єкція, краплі\n- **Health concepts**: здоров'я, профілактика, дієта, стрес\n\n**Coming up next**: Home & Furniture — vocabulary for living spaces!\n",
+    "createdAt": "2025-12-05T22:48:17.682Z",
+    "modifiedAt": "2025-12-05T22:48:17.682Z",
     "version": 2
   },
   "activities": [
     {
-      "id": "act-a2-38-fillblank",
+      "id": "act-a1-0-fillblank",
       "type": "fill-blank",
-      "title": "All 7 Cases Practice",
-      "description": "Choose the correct case form to complete each sentence. Identify which case is needed.",
+      "title": "Medical Vocabulary",
+      "description": "Medical Vocabulary",
       "content": {
         "type": "fill-blank",
         "items": [
           {
-            "prompt": "Я бачу ___ (моя сестра) в кафе кожного ранку.",
-            "answer": "мою сестру",
-            "hints": [
-              "моя сестра"
-            ],
-            "options": [
-              "моя сестра",
-              "моєї сестри",
-              "моїй сестрі",
-              "мою сестру"
-            ]
+            "prompt": "___ б'ється швидко. (Heart)",
+            "answer": "Серце"
           },
           {
-            "prompt": "Книга належить ___ (мій друг) з дитинства.",
-            "answer": "моєму другові",
-            "hints": [
-              "мій друг"
-            ],
-            "options": [
-              "мій друг",
-              "мого друга",
-              "моєму другові",
-              "моїм другом"
-            ]
+            "prompt": "Проблеми з ___. (digestion)",
+            "answer": "травленням"
           },
           {
-            "prompt": "Ми живемо біля ___ (центральний парк) у Києві.",
-            "answer": "центрального парку",
-            "hints": [
-              "центральний парк"
-            ],
-            "options": [
-              "центральний парк",
-              "центрального парку",
-              "центральному парку",
-              "центральним парком"
-            ]
+            "prompt": "Треба зробити ___ крові. (test)",
+            "answer": "аналіз"
           },
           {
-            "prompt": "Вона працює ___ (вчитель) у новій школі.",
-            "answer": "вчителем",
-            "hints": [
-              "вчитель"
-            ],
-            "options": [
-              "вчитель",
-              "вчителя",
-              "вчителю",
-              "вчителем"
-            ]
+            "prompt": "У мене підвищений ___. (pressure)",
+            "answer": "тиск"
           },
           {
-            "prompt": "Книги лежать на ___ (великий стіл) у вітальні.",
-            "answer": "великому столі",
-            "hints": [
-              "великий стіл"
-            ],
-            "options": [
-              "великий стіл",
-              "великого стола",
-              "великому столі",
-              "великим столом"
-            ]
+            "prompt": "Приймайте ___ двічі на день. (medicine)",
+            "answer": "ліки"
           },
           {
-            "prompt": "Дай, будь ласка, цю каву ___ (мій колега)!",
-            "answer": "моєму колезі",
-            "hints": [
-              "мій колега"
-            ],
-            "options": [
-              "мій колега",
-              "мого колегу",
-              "моєму колезі",
-              "моїм колегою"
-            ]
+            "prompt": "У мене ___ на пеніцилін. (allergy)",
+            "answer": "алергія"
           },
           {
-            "prompt": "Ти знаєш ___ (ця жінка) з нашого офісу?",
-            "answer": "цю жінку",
-            "hints": [
-              "ця жінка"
-            ],
-            "options": [
-              "ця жінка",
-              "цієї жінки",
-              "цій жінці",
-              "цю жінку"
-            ]
+            "prompt": "___ краще за лікування. (Prevention)",
+            "answer": "Профілактика"
           },
           {
-            "prompt": "Я їду автобусом до ___ (робота) кожного дня.",
-            "answer": "роботи",
-            "hints": [
-              "робота"
-            ],
-            "options": [
-              "робота",
-              "роботи",
-              "роботі",
-              "роботою"
-            ]
+            "prompt": "Він швидко ___. (recovering)",
+            "answer": "одужує"
           },
           {
-            "prompt": "___ (Оксана), допоможи мені, будь ласка!",
-            "answer": "Оксано",
-            "hints": [
-              "Оксана"
-            ],
-            "options": [
-              "Оксана",
-              "Оксани",
-              "Оксані",
-              "Оксано"
-            ]
+            "prompt": "Зробіть ___ грудної клітки. (X-ray)",
+            "answer": "рентген"
           },
           {
-            "prompt": "Він гуляє з ___ (свій собака) у парку.",
-            "answer": "своїм собакою",
-            "hints": [
-              "свій собака"
-            ],
-            "options": [
-              "свій собака",
-              "свого собаку",
-              "своєму собаці",
-              "своїм собакою"
-            ]
+            "prompt": "Капайте ___ в очі. (drops)",
+            "answer": "краплі"
+          },
+          {
+            "prompt": "Потрібна ___. (surgery)",
+            "answer": "операція"
+          },
+          {
+            "prompt": "___ — найважливіше! (Health)",
+            "answer": "Здоров'я"
           }
         ]
       },
@@ -204,198 +159,64 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-unjumble",
-      "type": "unjumble",
-      "title": "Build the Sentence",
-      "description": "Arrange the words to form multi-case sentences.",
-      "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
-          {
-            "words": [
-              "сестру",
-              "Я",
-              "бачу",
-              "мою",
-              "в кафе",
-              "кожного ранку"
-            ],
-            "answer": "Я бачу мою сестру в кафе кожного ранку.",
-            "translation": "I see my sister in the cafe every morning. - Accusative"
-          },
-          {
-            "words": [
-              "другові",
-              "Книга",
-              "належить",
-              "моєму",
-              "з дитинства"
-            ],
-            "answer": "Книга належить моєму другові з дитинства.",
-            "translation": "The book belongs to my friend since childhood. - Dative"
-          },
-          {
-            "words": [
-              "парку",
-              "Ми",
-              "живемо",
-              "біля",
-              "центрального",
-              "у Києві"
-            ],
-            "answer": "Ми живемо біля центрального парку у Києві.",
-            "translation": "We live near the central park in Kyiv. - Genitive"
-          },
-          {
-            "words": [
-              "вчителем",
-              "Вона",
-              "працює",
-              "у новій школі"
-            ],
-            "answer": "Вона працює вчителем у новій школі.",
-            "translation": "She works as a teacher at a new school. - Instrumental"
-          },
-          {
-            "words": [
-              "столі",
-              "Книги",
-              "лежать",
-              "на",
-              "великому",
-              "у вітальні"
-            ],
-            "answer": "Книги лежать на великому столі у вітальні.",
-            "translation": "Books lie on a big table in the living room. - Locative"
-          },
-          {
-            "words": [
-              "колезі",
-              "Дай",
-              "цю каву",
-              "моєму",
-              "будь ласка"
-            ],
-            "answer": "Дай, будь ласка, цю каву моєму колезі!",
-            "translation": "Please give this coffee to my colleague! - Dative"
-          },
-          {
-            "words": [
-              "жінку",
-              "Ти",
-              "знаєш",
-              "цю",
-              "з нашого офісу"
-            ],
-            "answer": "Ти знаєш цю жінку з нашого офісу?",
-            "translation": "Do you know this woman from our office? - Accusative"
-          },
-          {
-            "words": [
-              "роботи",
-              "Я",
-              "їду",
-              "до",
-              "автобусом",
-              "кожного дня"
-            ],
-            "answer": "Я їду автобусом до роботи кожного дня.",
-            "translation": "I go by bus to work every day. - Genitive + Instrumental"
-          },
-          {
-            "words": [
-              "Оксано",
-              "допоможи",
-              "мені",
-              "будь ласка"
-            ],
-            "answer": "Оксано, допоможи мені, будь ласка!",
-            "translation": "Oksana, help me please! - Vocative + Dative"
-          },
-          {
-            "words": [
-              "собакою",
-              "Він",
-              "гуляє",
-              "з",
-              "своїм",
-              "у парку"
-            ],
-            "answer": "Він гуляє з своїм собакою у парку.",
-            "translation": "He walks with his dog in the park. - Instrumental + Locative"
-          }
-        ]
-      },
-      "subject": "language",
-      "owner": "curricula-opus",
-      "visibility": "public",
-      "language": "uk",
-      "difficultyLevel": "A2",
-      "duration": 5,
-      "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
-    },
-    {
-      "id": "act-a2-38-matchup",
+      "id": "act-a1-0-matchup",
       "type": "match-up",
-      "title": "Match the Pairs",
-      "description": "Match Ukrainian words to their English meanings.",
+      "title": "Body Systems",
+      "description": "Body Systems",
       "content": {
         "type": "match-up",
         "pairs": [
           {
-            "left": "кабінет",
-            "right": "office, study"
+            "left": "серце",
+            "right": "heart"
           },
           {
-            "left": "ваза",
-            "right": "vase"
+            "left": "легені",
+            "right": "lungs"
           },
           {
-            "left": "малюнок",
-            "right": "drawing, picture"
+            "left": "печінка",
+            "right": "liver"
           },
           {
-            "left": "протягом",
-            "right": "during, throughout"
+            "left": "нирки",
+            "right": "kidneys"
           },
           {
-            "left": "бухгалтерія",
-            "right": "accounting dept"
+            "left": "мозок",
+            "right": "brain"
           },
           {
-            "left": "партнер",
-            "right": "partner"
+            "left": "шлунок",
+            "right": "stomach"
           },
           {
-            "left": "задоволення",
-            "right": "pleasure, satisfaction"
+            "left": "травлення",
+            "right": "digestion"
           },
           {
-            "left": "іноді",
-            "right": "sometimes"
+            "left": "дихання",
+            "right": "breathing"
           },
           {
-            "left": "правило",
-            "right": "rule"
+            "left": "кровообіг",
+            "right": "circulation"
           },
           {
-            "left": "принести",
-            "right": "to bring"
+            "left": "імунітет",
+            "right": "immunity"
           },
           {
-            "left": "полиця",
-            "right": "shelf"
+            "left": "нервова система",
+            "right": "nervous system"
           },
           {
-            "left": "ви",
-            "right": "you (formal/plural)"
+            "left": "тиск",
+            "right": "pressure"
           }
         ],
         "shuffleRight": true
@@ -407,148 +228,337 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-quiz",
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Medical Sentences",
+      "description": "Medical Sentences",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "Виміряйте",
+              "будь ласка",
+              "мій",
+              "тиск",
+              "зараз",
+              "у",
+              "кабінеті",
+              "лікаря"
+            ],
+            "answer": "Виміряйте, будь ласка, мій тиск зараз у кабінеті лікаря.",
+            "translation": "Please measure my pressure now in the doctor's office."
+          },
+          {
+            "words": [
+              "Треба",
+              "зробити",
+              "аналіз",
+              "крові",
+              "завтра",
+              "вранці",
+              "у",
+              "лікарні"
+            ],
+            "answer": "Треба зробити аналіз крові завтра вранці у лікарні.",
+            "translation": "Need to do a blood test tomorrow morning at hospital."
+          },
+          {
+            "words": [
+              "Приймайте",
+              "ці",
+              "таблетки",
+              "двічі",
+              "на",
+              "день",
+              "після",
+              "їжі"
+            ],
+            "answer": "Приймайте ці таблетки двічі на день після їжі.",
+            "translation": "Take these pills twice a day after food."
+          },
+          {
+            "words": [
+              "У",
+              "мене",
+              "алергія",
+              "на",
+              "пеніцилін",
+              "та",
+              "інші",
+              "антибіотики"
+            ],
+            "answer": "У мене алергія на пеніцилін та інші антибіотики.",
+            "translation": "I'm allergic to penicillin and other antibiotics."
+          },
+          {
+            "words": [
+              "Як",
+              "давно",
+              "у",
+              "вас",
+              "почалися",
+              "ці",
+              "симптоми",
+              "скажіть"
+            ],
+            "answer": "Скажіть, як давно у вас почалися ці симптоми?",
+            "translation": "Tell me, how long ago did you start having these symptoms?"
+          },
+          {
+            "words": [
+              "Я",
+              "мав",
+              "операцію",
+              "на",
+              "серці",
+              "два",
+              "роки",
+              "тому"
+            ],
+            "answer": "Я мав операцію на серці два роки тому.",
+            "translation": "I had heart surgery two years ago."
+          },
+          {
+            "words": [
+              "Що",
+              "саме",
+              "вас",
+              "турбує",
+              "сьогодні",
+              "розкажіть",
+              "мені",
+              "детально"
+            ],
+            "answer": "Розкажіть мені детально, що саме вас турбує сьогодні.",
+            "translation": "Tell me in detail what exactly is bothering you today."
+          },
+          {
+            "words": [
+              "Скажіть",
+              "де",
+              "саме",
+              "у",
+              "вас",
+              "болить",
+              "зараз",
+              "сильно"
+            ],
+            "answer": "Скажіть, де саме у вас зараз сильно болить.",
+            "translation": "Tell me where exactly you have strong pain now."
+          },
+          {
+            "words": [
+              "Приймай",
+              "вітаміни",
+              "щодня",
+              "вранці",
+              "після",
+              "сніданку",
+              "для",
+              "здоров'я"
+            ],
+            "answer": "Приймай вітаміни щодня вранці після сніданку для здоров'я.",
+            "translation": "Take vitamins daily in morning after breakfast for health."
+          },
+          {
+            "words": [
+              "Вона",
+              "швидко",
+              "одужує",
+              "після",
+              "важкої",
+              "операції",
+              "у",
+              "лікарні"
+            ],
+            "answer": "Вона швидко одужує після важкої операції у лікарні.",
+            "translation": "She is recovering quickly after difficult surgery at hospital."
+          },
+          {
+            "words": [
+              "Постійний",
+              "стрес",
+              "дуже",
+              "шкодить",
+              "вашому",
+              "здоров'ю",
+              "та",
+              "імунітету"
+            ],
+            "answer": "Постійний стрес дуже шкодить вашому здоров'ю та імунітету.",
+            "translation": "Constant stress greatly harms your health and immunity."
+          },
+          {
+            "words": [
+              "Капайте",
+              "ці",
+              "краплі",
+              "в",
+              "очі",
+              "тричі",
+              "на",
+              "день"
+            ],
+            "answer": "Капайте ці краплі в очі тричі на день.",
+            "translation": "Put these drops in eyes three times a day."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
+    },
+    {
+      "id": "act-a1-0-quiz",
       "type": "quiz",
-      "title": "Meaning Check",
-      "description": "Choose the correct answer.",
+      "title": "Health Knowledge",
+      "description": "Health Knowledge",
       "content": {
         "type": "quiz",
         "questions": [
           {
-            "question": "What does \"секретарка\" mean?",
+            "question": "«Легені» are:",
             "options": [
-              "straight",
-              "secretary (f)",
-              "eyes",
-              "Accusative: бачити, читати, любити"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"секретарка\" means \"secretary (f)\""
-          },
-          {
-            "question": "What does \"задоволення\" mean?",
-            "options": [
-              "to speak",
-              "lecture",
-              "pleasure, satisfaction",
-              "to become"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"задоволення\" means \"pleasure, satisfaction\""
-          },
-          {
-            "question": "What does \"поверх\" mean?",
-            "options": [
-              "to sell",
-              "Kyiv",
-              "floor (of building)",
-              "experience"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"поверх\" means \"floor (of building)\""
-          },
-          {
-            "question": "What does \"малюнок\" mean?",
-            "options": [
-              "calf",
-              "drawing, picture",
-              "to be considered",
-              "to be lucky"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"малюнок\" means \"drawing, picture\""
-          },
-          {
-            "question": "What does \"бухгалтерія\" mean?",
-            "options": [
-              "to understand",
-              "in the middle",
-              "price",
-              "accounting dept"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"бухгалтерія\" means \"accounting dept\""
-          },
-          {
-            "question": "What does \"полиця\" mean?",
-            "options": [
-              "shelf",
-              "to inform",
-              "thin",
-              "pork fat"
+              "Lungs",
+              "Liver",
+              "Legs",
+              "Lips"
             ],
             "correctIndex": 0,
-            "explanation": "\"полиця\" means \"shelf\""
+            "explanation": ""
           },
           {
-            "question": "What does \"партнер\" mean?",
+            "question": "«Аналіз крові» is:",
             "options": [
-              "that",
-              "cucumber",
-              "there",
-              "partner"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"партнер\" means \"partner\""
-          },
-          {
-            "question": "What does \"лекція\" mean?",
-            "options": [
-              "small",
-              "lemon",
-              "English (adj)",
-              "lecture"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"лекція\" means \"lecture\""
-          },
-          {
-            "question": "What does \"протягом\" mean?",
-            "options": [
-              "to have",
-              "neighbor (f)",
-              "during, throughout",
-              "salt"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"протягом\" means \"during, throughout\""
-          },
-          {
-            "question": "What does \"правило\" mean?",
-            "options": [
-              "gift",
-              "we",
-              "rule",
-              "to be going to"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"правило\" means \"rule\""
-          },
-          {
-            "question": "What does \"ваза\" mean?",
-            "options": [
-              "vase",
-              "potato",
-              "to remain",
-              "entrepreneur"
+              "Blood test",
+              "Blood type",
+              "Blood pressure",
+              "Blood vessel"
             ],
             "correctIndex": 0,
-            "explanation": "\"ваза\" means \"vase\""
+            "explanation": ""
           },
           {
-            "question": "What does \"кабінет\" mean?",
+            "question": "«Травлення» is:",
             "options": [
-              "to try on",
-              "office, study",
-              "discount",
-              "porridge"
+              "Digestion",
+              "Travel",
+              "Training",
+              "Treatment"
             ],
-            "correctIndex": 1,
-            "explanation": "\"кабінет\" means \"office, study\""
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Тиск» means:",
+            "options": [
+              "Pressure",
+              "Tissue",
+              "Taste",
+              "Temperature"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Одужувати» means:",
+            "options": [
+              "To recover",
+              "To get sick",
+              "To diagnose",
+              "To operate"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Рентген» is:",
+            "options": [
+              "X-ray",
+              "Injection",
+              "Surgery",
+              "Medicine"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Мазь» is applied to:",
+            "options": [
+              "Skin",
+              "Eyes",
+              "Stomach",
+              "Heart"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Профілактика» is:",
+            "options": [
+              "Prevention",
+              "Profession",
+              "Procedure",
+              "Program"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Нирки» are:",
+            "options": [
+              "Kidneys",
+              "Knees",
+              "Nerves",
+              "Nails"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Краплі» are used as:",
+            "options": [
+              "Eye/ear drops",
+              "Pills",
+              "Ointment",
+              "Injection"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Кровообіг» is:",
+            "options": [
+              "Blood circulation",
+              "Blood type",
+              "Blood test",
+              "Bleeding"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Здоров'я» means:",
+            "options": [
+              "Health",
+              "Healthy",
+              "Hospital",
+              "Healing"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
           }
         ],
         "shuffleQuestions": true,
@@ -562,66 +572,76 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-truefalse",
+      "id": "act-a1-0-truefalse",
       "type": "true-false",
-      "title": "True or False?",
-      "description": "Determine if each statement is true or false.",
+      "title": "Medical Facts",
+      "description": "Medical Facts",
       "content": {
         "type": "true-false",
         "statements": [
           {
-            "statement": "\"кабінет\" means \"office, study\"",
+            "statement": "«Серце» is the heart.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"лекція\" means \"lecture\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"ваза\" means \"can, to be able\"",
+            "statement": "«Легені» means liver.",
             "isTrue": false,
-            "explanation": "Incorrect. \"ваза\" means \"vase\""
+            "explanation": ""
           },
           {
-            "statement": "\"малюнок\" means \"drawing, picture\"",
+            "statement": "«Тиск» can mean blood pressure.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"протягом\" means \"during, throughout\"",
+            "statement": "«Аналіз крові» is a blood test.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"партнер\" means \"partner\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"секретарка\" means \"secretary (f)\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"правило\" means \"rule\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"полиця\" means \"yesterday\"",
+            "statement": "«Травлення» relates to breathing.",
             "isTrue": false,
-            "explanation": "Incorrect. \"полиця\" means \"shelf\""
+            "explanation": ""
           },
           {
-            "statement": "\"бухгалтерія\" means \"accounting dept\"",
+            "statement": "«Мазь» is applied to skin.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
+          },
+          {
+            "statement": "«Краплі» are pills.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "«Одужувати» means to get sick.",
+            "isTrue": false,
+            "explanation": ""
+          },
+          {
+            "statement": "«Профілактика» means prevention.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "«Нирки» are in pairs.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "«Рентген» is named after its inventor.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "«Здоров'я» is only used for physical health.",
+            "isTrue": false,
+            "explanation": ""
           }
         ]
       },
@@ -632,44 +652,51 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-groupsort",
+      "id": "act-a1-0-groupsort",
       "type": "group-sort",
-      "title": "Sort by Gender",
-      "description": "Sort the nouns into gender categories.",
+      "title": "Medical Categories",
+      "description": "Sort these items into the correct categories.",
       "content": {
         "type": "group-sort",
         "groups": [
           {
-            "id": "masculine",
-            "name": "Masculine",
+            "id": "internal-organs",
+            "name": "Internal Organs",
             "items": [
-              "кабінет",
-              "малюнок",
-              "партнер",
-              "поверх"
+              "серце",
+              "легені",
+              "печінка"
             ]
           },
           {
-            "id": "feminine",
-            "name": "Feminine",
+            "id": "medical-tests",
+            "name": "Medical Tests",
             "items": [
-              "полиця",
-              "ваза",
-              "бухгалтерія",
-              "секретарка",
-              "лекція"
+              "аналіз крові",
+              "рентген",
+              "УЗД"
             ]
           },
           {
-            "id": "neuter",
-            "name": "Neuter",
+            "id": "treatments",
+            "name": "Treatments",
             "items": [
-              "задоволення",
-              "правило"
+              "таблетки",
+              "мазь",
+              "ін'єкція"
+            ]
+          },
+          {
+            "id": "symptoms",
+            "name": "Symptoms",
+            "items": [
+              "головний біль",
+              "тиск",
+              "запалення"
             ]
           }
         ],
@@ -682,464 +709,334 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-select",
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Body Systems",
+      "description": "Body Systems",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "___ б'ється дуже швидко. (Heart)",
+            "answer": "Серце"
+          },
+          {
+            "prompt": "Він має проблеми з ___. (lungs)",
+            "answer": "легенями"
+          },
+          {
+            "prompt": "___ контролює все тіло. (Brain)",
+            "answer": "Мозок"
+          },
+          {
+            "prompt": "Перевірте мою ___. (liver)",
+            "answer": "печінку"
+          },
+          {
+            "prompt": "___ у неї ослаблена. (Immune system)",
+            "answer": "Імунна система"
+          },
+          {
+            "prompt": "Проблеми з ___ бувають часто. (digestion)",
+            "answer": "травленням"
+          },
+          {
+            "prompt": "___ важке після бігу. (Breathing)",
+            "answer": "Дихання"
+          },
+          {
+            "prompt": "Поганий ___ у ногах. (circulation)",
+            "answer": "кровообіг"
+          },
+          {
+            "prompt": "Болять обидві ___. (kidneys)",
+            "answer": "нирки"
+          },
+          {
+            "prompt": "___ болить після їжі. (Stomach)",
+            "answer": "Шлунок"
+          },
+          {
+            "prompt": "___ нервова дуже втомлена. (System)",
+            "answer": "Система"
+          },
+          {
+            "prompt": "У мене підвищений ___. (pressure)",
+            "answer": "тиск"
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
+    },
+    {
+      "id": "act-a1-0-select",
       "type": "select",
-      "title": "Choose Cases and Functions",
-      "description": "Select all words that belong to the category.",
+      "title": "Choose the Correct Medical Term",
+      "description": "Choose the Correct Medical Term",
       "content": {
         "type": "select",
         "items": [
           {
-            "question": "Which are nominative case functions?",
+            "question": "Де роблять аналіз крові?",
             "options": [
               {
-                "text": "Subject of sentence",
+                "text": "У лабораторії",
                 "correct": true
               },
               {
-                "text": "Direct object",
+                "text": "У ресторані",
                 "correct": false
               },
               {
-                "text": "Possession",
+                "text": "На вулиці",
                 "correct": false
               },
               {
-                "text": "Predicate noun",
-                "correct": true
-              },
-              {
-                "text": "To/for whom",
-                "correct": false
-              },
-              {
-                "text": "Location",
-                "correct": false
-              },
-              {
-                "text": "With/by means",
-                "correct": false
-              },
-              {
-                "text": "Direct address",
-                "correct": false
-              },
-              {
-                "text": "After preposition без",
-                "correct": false
-              },
-              {
-                "text": "After preposition з",
+                "text": "У магазині",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are accusative case functions?",
+            "question": "Що призначає лікар при інфекції?",
             "options": [
               {
-                "text": "Subject",
-                "correct": false
-              },
-              {
-                "text": "Direct object",
+                "text": "Антибіотики",
                 "correct": true
               },
               {
-                "text": "Possession",
+                "text": "Вітаміни",
                 "correct": false
               },
               {
-                "text": "Motion destination (у, на + acc)",
-                "correct": true
-              },
-              {
-                "text": "To/for whom",
+                "text": "Воду",
                 "correct": false
               },
               {
-                "text": "Location",
-                "correct": false
-              },
-              {
-                "text": "With/by means",
-                "correct": false
-              },
-              {
-                "text": "Direct address",
-                "correct": false
-              },
-              {
-                "text": "After до",
-                "correct": false
-              },
-              {
-                "text": "After від",
+                "text": "Каву",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are genitive case functions?",
+            "question": "Що перевіряє кардіолог?",
             "options": [
               {
-                "text": "Subject",
+                "text": "Серце",
+                "correct": true
+              },
+              {
+                "text": "Ноги",
                 "correct": false
               },
               {
-                "text": "Direct object",
+                "text": "Руки",
                 "correct": false
               },
               {
-                "text": "Possession",
-                "correct": true
-              },
-              {
-                "text": "Motion destination",
-                "correct": false
-              },
-              {
-                "text": "After без",
-                "correct": true
-              },
-              {
-                "text": "After до",
-                "correct": true
-              },
-              {
-                "text": "After від",
-                "correct": true
-              },
-              {
-                "text": "Quantities",
-                "correct": true
-              },
-              {
-                "text": "Absence/negation",
-                "correct": true
-              },
-              {
-                "text": "With/by means",
+                "text": "Волосся",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are dative case functions?",
+            "question": "Куди капають очні краплі?",
             "options": [
               {
-                "text": "Subject",
-                "correct": false
-              },
-              {
-                "text": "Direct object",
-                "correct": false
-              },
-              {
-                "text": "Possession",
-                "correct": false
-              },
-              {
-                "text": "To/for whom (indirect object)",
+                "text": "В очі",
                 "correct": true
               },
               {
-                "text": "Location",
+                "text": "У вуха",
                 "correct": false
               },
               {
-                "text": "With/by means",
+                "text": "У рот",
                 "correct": false
               },
               {
-                "text": "Giving/telling someone",
-                "correct": true
-              },
-              {
-                "text": "Direct address",
-                "correct": false
-              },
-              {
-                "text": "After без",
-                "correct": false
-              },
-              {
-                "text": "After з",
+                "text": "На руку",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are instrumental case functions?",
+            "question": "Що показує рентген?",
             "options": [
               {
-                "text": "Subject",
+                "text": "Кістки",
+                "correct": true
+              },
+              {
+                "text": "Думки",
                 "correct": false
               },
               {
-                "text": "Direct object",
+                "text": "Сни",
                 "correct": false
               },
               {
-                "text": "Possession",
-                "correct": false
-              },
-              {
-                "text": "Motion destination",
-                "correct": false
-              },
-              {
-                "text": "With someone (companionship)",
-                "correct": true
-              },
-              {
-                "text": "By means of (tool/transport)",
-                "correct": true
-              },
-              {
-                "text": "Manner of doing",
-                "correct": true
-              },
-              {
-                "text": "After preposition з (with)",
-                "correct": true
-              },
-              {
-                "text": "Profession (with працювати, стати)",
-                "correct": true
-              },
-              {
-                "text": "After до",
+                "text": "Спогади",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are locative case functions?",
+            "question": "При якому симптомі приймають жарознижуюче?",
             "options": [
               {
-                "text": "Subject",
-                "correct": false
-              },
-              {
-                "text": "Direct object",
-                "correct": false
-              },
-              {
-                "text": "Possession",
-                "correct": false
-              },
-              {
-                "text": "Location (де?)",
+                "text": "Температура",
                 "correct": true
               },
               {
-                "text": "After у/в (location)",
-                "correct": true
-              },
-              {
-                "text": "After на (location)",
-                "correct": true
-              },
-              {
-                "text": "After про (about)",
-                "correct": true
-              },
-              {
-                "text": "With/by means",
+                "text": "Голод",
                 "correct": false
               },
               {
-                "text": "Direct address",
+                "text": "Втома",
                 "correct": false
               },
               {
-                "text": "After від",
+                "text": "Радість",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which questions identify accusative case?",
+            "question": "Що таке УЗД?",
             "options": [
               {
-                "text": "Хто?",
-                "correct": false
-              },
-              {
-                "text": "Кого? (animate)",
+                "text": "Ультразвукове дослідження",
                 "correct": true
               },
               {
-                "text": "Що? (inanimate)",
-                "correct": true
-              },
-              {
-                "text": "Кому?",
+                "text": "Укол звичайний добрий",
                 "correct": false
               },
               {
-                "text": "Чому?",
+                "text": "Управління здоров'я",
                 "correct": false
               },
               {
-                "text": "Куди? (where to)",
-                "correct": true
-              },
-              {
-                "text": "Де?",
-                "correct": false
-              },
-              {
-                "text": "Чим?",
-                "correct": false
-              },
-              {
-                "text": "Ким?",
-                "correct": false
-              },
-              {
-                "text": "Кого? (possession)",
+                "text": "Універсальна допомога",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which questions identify genitive case?",
+            "question": "Куди наносять мазь?",
             "options": [
               {
-                "text": "Хто?",
-                "correct": false
-              },
-              {
-                "text": "Кого? (possession)",
+                "text": "На шкіру",
                 "correct": true
               },
               {
-                "text": "Чого? (possession)",
-                "correct": true
-              },
-              {
-                "text": "Кому?",
+                "text": "У рот",
                 "correct": false
               },
               {
-                "text": "Що? (direct object)",
+                "text": "В очі",
                 "correct": false
               },
               {
-                "text": "Куди?",
-                "correct": false
-              },
-              {
-                "text": "Де?",
-                "correct": false
-              },
-              {
-                "text": "Звідки? (from where)",
-                "correct": true
-              },
-              {
-                "text": "Ким?",
-                "correct": false
-              },
-              {
-                "text": "Чим?",
+                "text": "У вуха",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which require genitive case?",
+            "question": "Що означає «одужувати»?",
             "options": [
               {
-                "text": "біля парку",
+                "text": "Видужувати",
                 "correct": true
               },
               {
-                "text": "у парку",
+                "text": "Хворіти",
                 "correct": false
               },
               {
-                "text": "до школи",
-                "correct": true
-              },
-              {
-                "text": "від вокзалу",
-                "correct": true
-              },
-              {
-                "text": "для мами",
-                "correct": true
-              },
-              {
-                "text": "без води",
-                "correct": true
-              },
-              {
-                "text": "з другом",
+                "text": "Працювати",
                 "correct": false
               },
               {
-                "text": "після уроку",
-                "correct": true
-              },
-              {
-                "text": "над містом",
-                "correct": false
-              },
-              {
-                "text": "перед будинком",
+                "text": "Спати",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which require instrumental case?",
+            "question": "Що таке профілактика?",
             "options": [
               {
-                "text": "біля парку",
-                "correct": false
-              },
-              {
-                "text": "до школи",
-                "correct": false
-              },
-              {
-                "text": "з другом",
+                "text": "Запобігання хворобам",
                 "correct": true
               },
               {
-                "text": "від вокзалу",
+                "text": "Лікування хвороб",
                 "correct": false
               },
               {
-                "text": "для мами",
+                "text": "Операція",
                 "correct": false
               },
               {
-                "text": "без води",
+                "text": "Ін'єкція",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Що перевіряє гастроентеролог?",
+            "options": [
+              {
+                "text": "Шлунок та кишечник",
+                "correct": true
+              },
+              {
+                "text": "Серце",
                 "correct": false
               },
               {
-                "text": "над містом",
+                "text": "Легені",
+                "correct": false
+              },
+              {
+                "text": "Мозок",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Що таке алергія?",
+            "options": [
+              {
+                "text": "Реакція на подразник",
                 "correct": true
               },
               {
-                "text": "перед будинком",
-                "correct": true
+                "text": "Вид спорту",
+                "correct": false
               },
               {
-                "text": "між деревами",
-                "correct": true
+                "text": "Їжа",
+                "correct": false
               },
               {
-                "text": "автобусом (transport)",
-                "correct": true
+                "text": "Напій",
+                "correct": false
               }
             ]
           }
@@ -1152,137 +1049,153 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     },
     {
-      "id": "act-a2-38-unjumble",
-      "type": "unjumble",
-      "title": "Arrange Words into Sentences",
-      "description": "Put the words in the correct order to form grammatically correct sentences.",
+      "id": "act-a1-0-quiz",
+      "type": "quiz",
+      "title": "Health Situations",
+      "description": "Health Situations",
       "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
+        "type": "quiz",
+        "questions": [
           {
-            "words": [
-              "книгу",
-              "братові",
-              "Я",
-              "дав",
-              "столу",
-              "біля"
+            "question": "«У мене болить голова» означає:",
+            "options": [
+              "I have a headache",
+              "I'm hungry",
+              "I'm tired",
+              "I'm cold"
             ],
-            "answer": "Я дав книгу братові біля столу.",
-            "translation": "I gave a book to brother near the table."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "готує",
-              "Мама",
-              "вечерю",
-              "кухні",
-              "на"
+            "question": "Що робити при високій температурі?",
+            "options": [
+              "Приймати жарознижуюче",
+              "Їсти морозиво",
+              "Бігати",
+              "Танцювати"
             ],
-            "answer": "Мама готує вечерю на кухні.",
-            "translation": "Mom prepares dinner in the kitchen."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "подарунок",
-              "сестрі",
-              "даю",
-              "Я",
-              "день",
-              "народження",
-              "на"
+            "question": "«Мені важко дихати» означає:",
+            "options": [
+              "It's hard for me to breathe",
+              "I can't sleep",
+              "I can't eat",
+              "I can't run"
             ],
-            "answer": "Я даю подарунок сестрі на день народження.",
-            "translation": "I give a gift to sister for birthday."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "живемо",
-              "Ми",
-              "річки",
-              "біля",
-              "батьками",
-              "з"
+            "question": "Коли потрібна операція?",
+            "options": [
+              "При серйозних захворюваннях",
+              "При легкій застуді",
+              "Коли хочеться спати",
+              "Коли голодний"
             ],
-            "answer": "Ми живемо біля річки з батьками.",
-            "translation": "We live near the river with parents."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "листа",
-              "Я",
-              "другові",
-              "написав",
-              "подорож",
-              "про"
+            "question": "«Здоров'я — найважливіше» означає:",
+            "options": [
+              "Health is the most important",
+              "Money is everything",
+              "Work is life",
+              "Sleep is good"
             ],
-            "answer": "Я написав листа другові про подорож.",
-            "translation": "I wrote a letter to friend about the trip."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "Учитель",
-              "учням",
-              "правила",
-              "пояснює",
-              "граматики"
+            "question": "Що означає «імунітет»?",
+            "options": [
+              "Захист організму від хвороб",
+              "Вид спорту",
+              "Тип їжі",
+              "Назва ліків"
             ],
-            "answer": "Учитель пояснює учням правила граматики.",
-            "translation": "The teacher explains grammar rules to students."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "книга",
-              "брата",
-              "на",
-              "лежить",
-              "столі"
+            "question": "«Профілактика краще за лікування» означає:",
+            "options": [
+              "Prevention is better than cure",
+              "Treatment is the best",
+              "Surgery is easy",
+              "Medicine is cheap"
             ],
-            "answer": "Книга брата лежить на столі.",
-            "translation": "Brother's book lies on the table."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "школу",
-              "Вона",
-              "до",
-              "автобусом",
-              "їде"
+            "question": "Що таке «набряк»?",
+            "options": [
+              "Swelling",
+              "Hunger",
+              "Sleep",
+              "Joy"
             ],
-            "answer": "Вона їде до школи автобусом.",
-            "translation": "She goes to school by bus."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "думає",
-              "про",
-              "екзамен",
-              "студент",
-              "кімнаті",
-              "у"
+            "question": "«Гострий біль» означає:",
+            "options": [
+              "Sharp pain",
+              "Mild discomfort",
+              "No pain",
+              "Happiness"
             ],
-            "answer": "Студент думає про екзамен у кімнаті.",
-            "translation": "The student thinks about the exam in the room."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "працює",
-              "Брат",
-              "лікарем",
-              "лікарні",
-              "у",
-              "Києві",
-              "у"
+            "question": "Що робити при алергії?",
+            "options": [
+              "Уникати алергенів",
+              "Їсти більше алергенів",
+              "Ігнорувати симптоми",
+              "Бігати"
             ],
-            "answer": "Брат працює лікарем у лікарні у Києві.",
-            "translation": "Brother works as a doctor at a hospital in Kyiv."
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "«Відпочинок важливий» означає:",
+            "options": [
+              "Rest is important",
+              "Work more",
+              "Don't sleep",
+              "Run faster"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "Що таке «стрес»?",
+            "options": [
+              "Напруження організму",
+              "Вид відпочинку",
+              "Тип їжі",
+              "Назва вправи"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
           }
-        ]
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
       },
       "subject": "language",
       "owner": "curricula-opus",
@@ -1291,138 +1204,301 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-04T23:47:24.904Z",
-      "modifiedAt": "2025-12-04T23:47:24.904Z"
+      "createdAt": "2025-12-05T22:48:17.682Z",
+      "modifiedAt": "2025-12-05T22:48:17.682Z"
     }
   ],
   "vocabulary": {
     "moduleId": "mod-uk-A2-38",
     "level": "A2",
-    "phase": "A2.1",
-    "wordCount": 12,
-    "newWordCount": 12,
+    "phase": "A2.5",
+    "wordCount": 29,
+    "newWordCount": 29,
     "reviewWordCount": 0,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "words": [
       {
-        "id": "v-pravylo-38-0",
-        "uk": "правило",
-        "en": "rule",
+        "id": "v-sertse-0-0",
+        "uk": "серце",
+        "en": "heart",
         "pos": "noun",
-        "ipa": "/prɑˈvɪlo/",
+        "ipa": "/ˈsɛrt͡sɛ/",
         "gender": "n",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-polytsya-38-1",
-        "uk": "полиця",
-        "en": "shelf",
+        "id": "v-leheni-0-1",
+        "uk": "легені",
+        "en": "lungs",
         "pos": "noun",
-        "ipa": "/poˈlɪtsʲɑ/",
+        "ipa": "/lɛˈɦɛnʲi/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pechinka-0-2",
+        "uk": "печінка",
+        "en": "liver",
+        "pos": "noun",
+        "ipa": "/pɛˈtʃinka/",
         "gender": "f",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-vaza-38-2",
-        "uk": "ваза",
-        "en": "vase",
+        "id": "v-nyrky-0-3",
+        "uk": "нирки",
+        "en": "kidneys",
         "pos": "noun",
-        "ipa": "/ˈvɑzɑ/",
-        "gender": "f",
+        "ipa": "/ˈnɪrkɪ/",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-poverkh-38-3",
-        "uk": "поверх",
-        "en": "floor (of building)",
+        "id": "v-shlunok-0-4",
+        "uk": "шлунок",
+        "en": "stomach (organ)",
         "pos": "noun",
-        "ipa": "/ˈpovɛrx/",
+        "ipa": "/ˈʃlunok/",
         "gender": "m",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-kabinet-38-4",
-        "uk": "кабінет",
-        "en": "office, study",
+        "id": "v-mozok-0-5",
+        "uk": "мозок",
+        "en": "brain",
         "pos": "noun",
-        "ipa": "/kɑbʲiˈnɛt/",
+        "ipa": "/moˈzok/",
         "gender": "m",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-sekretarka-38-5",
-        "uk": "секретарка",
-        "en": "secretary (f)",
+        "id": "v-krovoobih-0-6",
+        "uk": "кровообіг",
+        "en": "circulation",
         "pos": "noun",
-        "ipa": "/sɛkrɛˈtɑrkɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 38
-      },
-      {
-        "id": "v-bukhhalteriya-38-6",
-        "uk": "бухгалтерія",
-        "en": "accounting dept",
-        "pos": "noun",
-        "ipa": "/buxɦɑlˈtɛrʲijɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 38
-      },
-      {
-        "id": "v-partner-38-7",
-        "uk": "партнер",
-        "en": "partner",
-        "pos": "noun",
-        "ipa": "/pɑrtˈnɛr/",
+        "ipa": "/krowoˈobih/",
         "gender": "m",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-malyunok-38-8",
-        "uk": "малюнок",
-        "en": "drawing, picture",
+        "id": "v-travlennya-0-7",
+        "uk": "травлення",
+        "en": "digestion",
         "pos": "noun",
-        "ipa": "/mɑˈlʲunok/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 38
-      },
-      {
-        "id": "v-lektsiya-38-9",
-        "uk": "лекція",
-        "en": "lecture",
-        "pos": "noun",
-        "ipa": "/ˈlɛktsʲijɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 38
-      },
-      {
-        "id": "v-zadovolennya-38-10",
-        "uk": "задоволення",
-        "en": "pleasure, satisfaction",
-        "pos": "noun",
-        "ipa": "/zɑdoˈvolɛnʲːɑ/",
+        "ipa": "/trawˈlɛnːa/",
         "gender": "n",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
       },
       {
-        "id": "v-protyahom-38-11",
-        "uk": "протягом",
-        "en": "during, throughout",
-        "pos": "prep",
-        "ipa": "/proˈtʲɑɦom/",
-        "note": "+ gen",
+        "id": "v-dykhannya-0-8",
+        "uk": "дихання",
+        "en": "breathing",
+        "pos": "noun",
+        "ipa": "/dɪˈxanːa/",
+        "gender": "n",
         "isNew": true,
-        "firstModule": 38
+        "firstModule": 0
+      },
+      {
+        "id": "v-tysk-0-9",
+        "uk": "тиск",
+        "en": "pressure",
+        "pos": "noun",
+        "ipa": "/tɪsk/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zapalennya-0-10",
+        "uk": "запалення",
+        "en": "inflammation",
+        "pos": "noun",
+        "ipa": "/zapaˈlɛnːa/",
+        "gender": "n",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-nabryak-0-11",
+        "uk": "набряк",
+        "en": "swelling",
+        "pos": "noun",
+        "ipa": "/ˈnabrʲak/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-alerhiya-0-12",
+        "uk": "алергія",
+        "en": "allergy",
+        "pos": "noun",
+        "ipa": "/alɛrˈɦija/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-analiz-0-13",
+        "uk": "аналіз",
+        "en": "test, analysis",
+        "pos": "noun",
+        "ipa": "/aˈnaliz/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-renthen-0-14",
+        "uk": "рентген",
+        "en": "X-ray",
+        "pos": "noun",
+        "ipa": "/rɛntˈɦɛn/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-operatsiya-0-15",
+        "uk": "операція",
+        "en": "surgery",
+        "pos": "noun",
+        "ipa": "/opɛˈrat͡sija/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-tabletky-0-16",
+        "uk": "таблетки",
+        "en": "pills",
+        "pos": "noun",
+        "ipa": "/tabˈlɛtkɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-mazь-0-17",
+        "uk": "мазь",
+        "en": "ointment",
+        "pos": "noun",
+        "ipa": "/mazʲ/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-in'yektsiya-0-18",
+        "uk": "ін'єкція",
+        "en": "injection",
+        "pos": "noun",
+        "ipa": "/inˈjɛkt͡sija/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-krapli-0-19",
+        "uk": "краплі",
+        "en": "drops",
+        "pos": "noun",
+        "ipa": "/ˈkraplʲi/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zdorov'ya-0-20",
+        "uk": "здоров'я",
+        "en": "health",
+        "pos": "noun",
+        "ipa": "/zdoˈrowja/",
+        "gender": "n",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-khvoroba-0-21",
+        "uk": "хвороба",
+        "en": "illness",
+        "pos": "noun",
+        "ipa": "/xwoˈroba/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-oduzhuvaty-0-22",
+        "uk": "одужувати",
+        "en": "to recover",
+        "pos": "verb",
+        "ipa": "/oduˈʒuwatɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-likuvaty-0-23",
+        "uk": "лікувати",
+        "en": "to treat",
+        "pos": "verb",
+        "ipa": "/likuˈwatɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-imunitet-0-24",
+        "uk": "імунітет",
+        "en": "immunity",
+        "pos": "noun",
+        "ipa": "/imuniˈtɛt/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-profilaktyka-0-25",
+        "uk": "профілактика",
+        "en": "prevention",
+        "pos": "noun",
+        "ipa": "/profilakˈtɪka/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-diyeta-0-26",
+        "uk": "дієта",
+        "en": "diet",
+        "pos": "noun",
+        "ipa": "/diˈjɛta/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-vitaminy-0-27",
+        "uk": "вітаміни",
+        "en": "vitamins",
+        "pos": "noun",
+        "ipa": "/witaˈminɪ/",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-stres-0-28",
+        "uk": "стрес",
+        "en": "stress",
+        "pos": "noun",
+        "ipa": "/strɛs/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
       }
     ]
   }

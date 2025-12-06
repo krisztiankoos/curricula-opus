@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 34: The Instrumental I | Ukrainian A2</title>
+  <title>Module 34: Suffixes II: Adjectives | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 34: The Instrumental I</h1>
+    <h1>Module 34: Suffixes II: Adjectives</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Fill</button>
-      <button class="nav-tab" data-section="activity-6">7. Sort</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,565 +497,491 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">The Instrumental I</h2>
-        <p style="color:var(--text-muted)">With Whom</p>
+        <span class="level-badge">A2 · A2.4</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Suffixes II: Adjectives</h2>
+        <p style="color:var(--text-muted)">Adjective-Forming Suffixes</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="theseventhcase">The Seventh Case!</h3>
-<p>You've learned six cases: Nominative, Accusative, Genitive, Dative, Locative, and Vocative. Now for the last one: the <strong>Instrumental case</strong> (Орудний відмінок).</p>
-<p><strong>The key question:</strong> З ким? (With whom?) / З чим? (With what?)</p>
-<p>In English, "with" does all the work. In Ukrainian, the noun itself changes to show it's the companion or instrument:</p>
-<ul>
-<li>Я йду <strong>з другом</strong>. (I'm going with a friend.)</li>
-<li>Вона п'є каву <strong>з молоком</strong>. (She drinks coffee with milk.)</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The instrumental case is named for its use with <em>instruments</em> (tools), but its most common use in everyday speech is for companionship - "with whom." This dual purpose makes it incredibly useful: you'll use it to say who you're with AND what you use to do something.</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="instrumentalendingsoverview">Instrumental Endings Overview</h3>
+      <div class="md-content"><p>Adjectives color our language. From "music" we get "musical," from "Ukraine" we get "Ukrainian." In this module, you'll learn how Ukrainian builds adjectives from nouns and verbs. Master these suffixes and you'll describe anything!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>From Nouns to Adjectives</h3>
+      <div class="md-content"><h2 id="thesuffix">The -ний Suffix</h2>
 <table>
 <thead>
 <tr>
-<th>Gender</th>
-<th>Nominative</th>
-<th>Instrumental</th>
-<th>Example</th>
+<th>Noun</th>
+<th>Adjective</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Masculine</td>
-<td>-consonant</td>
-<td>-ом</td>
-<td>друг → з друг<strong>ом</strong></td>
+<td>музика</td>
+<td>музичний</td>
+<td>musical</td>
 </tr>
 <tr>
-<td>Masculine soft</td>
-<td>-ь/-й</td>
-<td>-ем</td>
-<td>вчитель → з вчител<strong>ем</strong></td>
+<td>історія</td>
+<td>історичний</td>
+<td>historical</td>
 </tr>
 <tr>
-<td>Feminine</td>
-<td>-а</td>
-<td>-ою</td>
-<td>сестра → з сестр<strong>ою</strong></td>
+<td>географія</td>
+<td>географічний</td>
+<td>geographical</td>
 </tr>
 <tr>
-<td>Feminine soft</td>
-<td>-я</td>
-<td>-ею</td>
-<td>Марія → з Марі<strong>єю</strong></td>
+<td>математика</td>
+<td>математичний</td>
+<td>mathematical</td>
 </tr>
 <tr>
-<td>Neuter</td>
-<td>-о</td>
-<td>-ом</td>
-<td>вікно → з вікн<strong>ом</strong></td>
-</tr>
-<tr>
-<td>Neuter soft</td>
-<td>-е</td>
-<td>-ем</td>
-<td>море → з мор<strong>ем</strong></td>
-</tr>
-<tr>
-<td>Plural (all)</td>
-<td>-</td>
-<td>-ами/-ями</td>
-<td>друзі → з друз<strong>ями</strong></td>
+<td>фізика</td>
+<td>фізичний</td>
+<td>physical</td>
 </tr>
 </tbody>
 </table>
-<h3 id="masculineinstrumental">Masculine Instrumental: -ом/-ем</h3>
-<p><strong>Hard consonant → -ом:</strong></p>
+<p><strong>Pattern:</strong> Many academic and abstract nouns form adjectives with <strong>-ний</strong> (often <strong>-ичний</strong>/<strong>-ічний</strong>).</p>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li>Це <strong>музичний</strong> інструмент. (This is a musical instrument.)</li>
+<li><strong>Історичний</strong> музей дуже цікавий. (The historical museum is very interesting.)</li>
+<li><strong>Географічне</strong> положення важливе. (Geographical location is important.)</li>
+<li>Він має <strong>фізичну</strong> силу. (He has physical strength.)</li>
+<li><strong>Математичні</strong> формули складні. (Mathematical formulas are complex.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>Many -ичний/-ічний adjectives are international: "musical" ↔ "музичний", "historical" ↔ "історичний"!</p>
+</blockquote>
+<hr />
+<h2 id="thesuffix-1">The -овий Suffix</h2>
 <table>
 <thead>
 <tr>
-<th>Nominative</th>
-<th>Instrumental</th>
-<th>With…</th>
+<th>Noun</th>
+<th>Adjective</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>друг</td>
-<td>друг<strong>ом</strong></td>
-<td>з другом</td>
+<td>колір</td>
+<td>кольоровий</td>
+<td>colored, colorful</td>
 </tr>
 <tr>
-<td>брат</td>
-<td>брат<strong>ом</strong></td>
-<td>з братом</td>
+<td>смак</td>
+<td>смаковий</td>
+<td>taste (adj)</td>
 </tr>
 <tr>
-<td>батько</td>
-<td>батьк<strong>ом</strong></td>
-<td>з батьком</td>
+<td>матерія</td>
+<td>матеріальний</td>
+<td>material</td>
 </tr>
 <tr>
-<td>студент</td>
-<td>студент<strong>ом</strong></td>
-<td>зі студентом</td>
+<td>дух</td>
+<td>духовний</td>
+<td>spiritual</td>
+</tr>
+<tr>
+<td>наука</td>
+<td>науковий</td>
+<td>scientific</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> <strong>-овий</strong> often indicates "relating to" or "made of."</p>
+<hr />
+<h2 id="examplesincontext-1">Examples in Context</h2>
+<ul>
+<li>Це <strong>кольоровий</strong> телевізор. (This is a color TV.)</li>
+<li><strong>Смакові</strong> якості чудові. (The taste qualities are wonderful.)</li>
+<li><strong>Матеріальна</strong> допомога потрібна. (Material help is needed.)</li>
+<li><strong>Духовне</strong> життя важливе. (Spiritual life is important.)</li>
+<li><strong>Науковий</strong> підхід правильний. (The scientific approach is correct.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>"Науково-фантастичний фільм" — Science fiction film! Two adjectives in one: науков- (scientific) + фантастичн- (fantastic).</p>
+</blockquote>
+<hr />
+<h2 id="thesuffixnationalityorigin">The -ський Suffix (Nationality &amp; Origin)</h2>
+<table>
+<thead>
+<tr>
+<th>Noun</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Україна</td>
+<td>український</td>
+<td>Ukrainian</td>
+</tr>
+<tr>
+<td>Росія</td>
+<td>російський</td>
+<td>Russian</td>
+</tr>
+<tr>
+<td>Англія</td>
+<td>англійський</td>
+<td>English</td>
+</tr>
+<tr>
+<td>місто</td>
+<td>міський</td>
+<td>urban, city</td>
+</tr>
+<tr>
+<td>село</td>
+<td>сільський</td>
+<td>rural, village</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> <strong>-ський/-цький</strong> forms adjectives of origin, nationality, and belonging.</p>
+<hr />
+<h2 id="examplesincontext-2">Examples in Context</h2>
+<ul>
+<li><strong>Українська</strong> мова красива. (The Ukrainian language is beautiful.)</li>
+<li><strong>Англійський</strong> футбол популярний. (English football is popular.)</li>
+<li><strong>Міський</strong> транспорт працює. (City transport is running.)</li>
+<li><strong>Сільське</strong> життя спокійне. (Rural life is peaceful.)</li>
+<li><strong>Російські</strong> борщі смачні. (Russian borscht is tasty.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>Capital cities often have -ський adjectives: київський (of Kyiv), львівський (of Lviv), одеський (of Odesa)!</p>
+</blockquote>
+<hr />
+<h2 id="morenationalityadjectives">More Nationality Adjectives</h2>
+<table>
+<thead>
+<tr>
+<th>Country/Place</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Німеччина</td>
+<td>німецький</td>
+<td>German</td>
+</tr>
+<tr>
+<td>Франція</td>
+<td>французький</td>
+<td>French</td>
+</tr>
+<tr>
+<td>Італія</td>
+<td>італійський</td>
+<td>Italian</td>
+</tr>
+<tr>
+<td>Іспанія</td>
+<td>іспанський</td>
+<td>Spanish</td>
+</tr>
+<tr>
+<td>Польща</td>
+<td>польський</td>
+<td>Polish</td>
+</tr>
+<tr>
+<td>Китай</td>
+<td>китайський</td>
+<td>Chinese</td>
+</tr>
+<tr>
+<td>Японія</td>
+<td>японський</td>
+<td>Japanese</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Французький</strong> сир смачний. (French cheese is tasty.)</li>
+<li><strong>Японська</strong> кухня здорова. (Japanese cuisine is healthy.)</li>
+<li><strong>Польський</strong> кордон поруч. (The Polish border is nearby.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>From Verbs to Adjectives</h3>
+      <div class="md-content"><h2 id="thesuffixresultstate">The -лий Suffix (Result State)</h2>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>зів'янути</td>
+<td>зів'ялий</td>
+<td>wilted</td>
+</tr>
+<tr>
+<td>змерзнути</td>
+<td>змерзлий</td>
+<td>frozen</td>
+</tr>
+<tr>
+<td>засохнути</td>
+<td>засохлий</td>
+<td>dried up</td>
+</tr>
+<tr>
+<td>постаріти</td>
+<td>постарілий</td>
+<td>aged</td>
+</tr>
+<tr>
+<td>зрілий</td>
+<td>зрілий</td>
+<td>ripe, mature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> <strong>-лий</strong> forms adjectives showing the result of an action (often from perfective verbs).</p>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li>Квіти <strong>зів'ялі</strong>. (The flowers are wilted.)</li>
+<li>Вода <strong>замерзла</strong>. (The water is frozen.)</li>
+<li>Листя <strong>засохле</strong>. (The leaves are dried up.)</li>
+<li>Він виглядає <strong>постарілим</strong>. (He looks aged.)</li>
+<li>Фрукти <strong>зрілі</strong>. (The fruits are ripe.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Game item: <em>Зів'яла троянда</em> — Wilted rose. Often needed for alchemy quests!</p>
+</blockquote>
+<hr />
+<h2 id="thesuffixactivestate">The -чий/-учий Suffix (Active State)</h2>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>лежати</td>
+<td>лежачий</td>
+<td>lying</td>
+</tr>
+<tr>
+<td>стояти</td>
+<td>стоячий</td>
+<td>standing</td>
+</tr>
+<tr>
+<td>бігти</td>
+<td>біжучий</td>
+<td>running</td>
+</tr>
+<tr>
+<td>гарячий</td>
+<td>гарячий</td>
+<td>hot</td>
+</tr>
+<tr>
+<td>живучий</td>
+<td>живучий</td>
+<td>tenacious, hardy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> <strong>-чий/-учий/-ячий</strong> forms adjectives showing ongoing action or characteristic.</p>
+<hr />
+<h2 id="examplesincontext-1">Examples in Context</h2>
+<ul>
+<li><strong>Лежачий</strong> пацієнт потребує догляду. (A bedridden patient needs care.)</li>
+<li><strong>Стоячі</strong> місця дешевші. (Standing places are cheaper.)</li>
+<li>Це <strong>гаряча</strong> вода. (This is hot water.)</li>
+<li><strong>Біжуча</strong> вода — flowing water.</li>
+<li>Вона людина <strong>живуча</strong>. (She's a resilient person.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>"Стоячий" and "лежачий" are used for seating: <em>стоячі квитки</em> (standing tickets) vs <em>сидячі місця</em> (seated places)!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Characteristic Suffixes</h3>
+      <div class="md-content"><h2 id="thesuffix">The -истий Suffix</h2>
+<table>
+<thead>
+<tr>
+<th>Base</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>зірка</td>
+<td>зіркастий</td>
+<td>star-shaped, starry</td>
+</tr>
+<tr>
+<td>вода</td>
+<td>водянистий</td>
+<td>watery</td>
+</tr>
+<tr>
+<td>камінь</td>
+<td>камінистий</td>
+<td>stony, rocky</td>
+</tr>
+<tr>
+<td>пісок</td>
+<td>піщаний</td>
+<td>sandy</td>
+</tr>
+<tr>
+<td>листя</td>
+<td>листяний</td>
+<td>leafy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> <strong>-истий/-астий</strong> indicates "having the quality of" or "resembling."</p>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li><strong>Зоряне</strong> небо красиве. (The starry sky is beautiful.)</li>
+<li>Суп занадто <strong>водянистий</strong>. (The soup is too watery.)</li>
+<li><strong>Камінистий</strong> берег небезпечний. (The rocky shore is dangerous.)</li>
+<li><strong>Піщаний</strong> пляж приємний. (The sandy beach is pleasant.)</li>
+<li><strong>Листяні</strong> дерева скидають листя. (Deciduous trees shed leaves.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Gender &amp; Profession Adjectives</h3>
+      <div class="md-content"><h2 id="genderrelated">Gender-Related</h2>
+<table>
+<thead>
+<tr>
+<th>Base</th>
+<th>Adjective</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>жінка</td>
+<td>жіночий</td>
+<td>female, women's</td>
 </tr>
 <tr>
 <td>чоловік</td>
-<td>чоловік<strong>ом</strong></td>
-<td>з чоловіком</td>
+<td>чоловічий</td>
+<td>male, men's</td>
+</tr>
+<tr>
+<td>дитина</td>
+<td>дитячий</td>
+<td>children's, childish</td>
+</tr>
+<tr>
+<td>людина</td>
+<td>людський</td>
+<td>human</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Soft consonant (-ь, -й) → -ем:</strong></p>
-<table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Жіночий</strong> одяг. (Women's clothing.)</li>
+<li><strong>Чоловічі</strong> туфлі. (Men's shoes.)</li>
+<li><strong>Дитяча</strong> кімната. (Children's room.)</li>
+<li><strong>Людські</strong> права. (Human rights.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Adjective Suffix Summary</h3>
+      <div class="md-content"><table>
 <thead>
 <tr>
-<th>Nominative</th>
-<th>Instrumental</th>
-<th>With…</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>вчитель</td>
-<td>вчител<strong>ем</strong></td>
-<td>з вчителем</td>
-</tr>
-<tr>
-<td>хлопець</td>
-<td>хлопц<strong>ем</strong></td>
-<td>з хлопцем</td>
-</tr>
-<tr>
-<td>Андрій</td>
-<td>Андрі<strong>єм</strong></td>
-<td>з Андрієм</td>
-</tr>
-<tr>
-<td>край</td>
-<td>кра<strong>єм</strong></td>
-<td>з краєм</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: з vs зі vs із</strong></p>
-  <p>All three mean "with" before instrumental:</p>
-  <ul>
-  <li><strong>з</strong> - default: з другом, з сестрою</li>
-  <li><strong>зі</strong> - before consonant clusters: зі студентом, зі мною</li>
-  <li><strong>із</strong> - formal/written alternative: із задоволенням</li>
-  </ul>
-  <p>Use <strong>зі</strong> when "з" would be hard to pronounce!</p>
-</blockquote>
-<h3 id="feminineinstrumental">Feminine Instrumental: -ою/-ею</h3>
-<p><strong>Hard stem (-а) → -ою:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Instrumental</th>
-<th>With…</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>сестра</td>
-<td>сестр<strong>ою</strong></td>
-<td>з сестрою</td>
-</tr>
-<tr>
-<td>подруга</td>
-<td>подруг<strong>ою</strong></td>
-<td>з подругою</td>
-</tr>
-<tr>
-<td>мама</td>
-<td>мам<strong>ою</strong></td>
-<td>з мамою</td>
-</tr>
-<tr>
-<td>дружина</td>
-<td>дружин<strong>ою</strong></td>
-<td>з дружиною</td>
-</tr>
-<tr>
-<td>донька</td>
-<td>донькою</td>
-<td>з донькою</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Soft stem (-я) → -ею:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Instrumental</th>
-<th>With…</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Марія</td>
-<td>Марі<strong>єю</strong></td>
-<td>з Марією</td>
-</tr>
-<tr>
-<td>Наталія</td>
-<td>Наталі<strong>єю</strong></td>
-<td>з Наталією</td>
-</tr>
-<tr>
-<td>сім'я</td>
-<td>сім'<strong>єю</strong></td>
-<td>з сім'єю</td>
-</tr>
-<tr>
-<td>земля</td>
-<td>земл<strong>ею</strong></td>
-<td>з землею</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>📜 <strong>History Bite: The -ою Ending</strong></p>
-  <p>The feminine instrumental -ою comes from Old Church Slavonic -ojǫ. Over centuries, the nasal vowel simplified, but the ending kept its distinctive length. When you say "з сестрою," you're using a form that has existed for over 1,000 years!</p>
-</blockquote>
-<h3 id="instrumentalpronouns">Instrumental Pronouns</h3>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Instrumental</th>
+<th>Suffix</th>
+<th>Creates From</th>
+<th>Meaning</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>я</td>
-<td>мною</td>
-<td>зі <strong>мною</strong></td>
+<td>-ний</td>
+<td>Nouns</td>
+<td>Relating to</td>
+<td>музика → музичний</td>
 </tr>
 <tr>
-<td>ти</td>
-<td>тобою</td>
-<td>з <strong>тобою</strong></td>
+<td>-овий</td>
+<td>Nouns</td>
+<td>Of, relating to</td>
+<td>наука → науковий</td>
 </tr>
 <tr>
-<td>він</td>
-<td>ним</td>
-<td>з <strong>ним</strong></td>
+<td>-ський</td>
+<td>Nouns (places)</td>
+<td>Origin, nationality</td>
+<td>Україна → український</td>
 </tr>
 <tr>
-<td>вона</td>
-<td>нею</td>
-<td>з <strong>нею</strong></td>
+<td>-лий</td>
+<td>Verbs</td>
+<td>Result state</td>
+<td>зів'янути → зів'ялий</td>
 </tr>
 <tr>
-<td>воно</td>
-<td>ним</td>
-<td>з <strong>ним</strong></td>
+<td>-чий/-учий</td>
+<td>Verbs</td>
+<td>Active state</td>
+<td>лежати → лежачий</td>
 </tr>
 <tr>
-<td>ми</td>
-<td>нами</td>
-<td>з <strong>нами</strong></td>
+<td>-истий</td>
+<td>Nouns</td>
+<td>Characteristic</td>
+<td>вода → водянистий</td>
 </tr>
 <tr>
-<td>ви</td>
-<td>вами</td>
-<td>з <strong>вами</strong></td>
-</tr>
-<tr>
-<td>вони</td>
-<td>ними</td>
-<td>з <strong>ними</strong></td>
+<td>-ячий</td>
+<td>Nouns</td>
+<td>Belonging to</td>
+<td>дитина → дитячий</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Хто йде <strong>зі мною</strong>? - Who's going with me?</li>
-<li>Я хочу бути <strong>з тобою</strong>. - I want to be with you.</li>
-<li>Вона живе <strong>з ним</strong>. - She lives with him.</li>
-<li>Поїдемо <strong>з нами</strong>! - Come with us!</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Companionship</strong></p>
-  <p>Ukrainians value being together. The question "З ким ти?" (Who are you with?) is common and caring, not intrusive. Doing things alone (сам/сама) is often seen as unfortunate. "Ходімо з нами!" (Come with us!) is a warm invitation you'll hear often.</p>
-</blockquote>
-<h3 id="pluralinstrumental">Plural Instrumental: -ами/-ями</h3>
-<p><strong>Hard stems → -ами:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nom. Singular</th>
-<th>Nom. Plural</th>
-<th>Instrumental Plural</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>друг</td>
-<td>друзі</td>
-<td>друз<strong>ями</strong></td>
-</tr>
-<tr>
-<td>брат</td>
-<td>брати</td>
-<td>брат<strong>ами</strong></td>
-</tr>
-<tr>
-<td>сестра</td>
-<td>сестри</td>
-<td>сестр<strong>ами</strong></td>
-</tr>
-<tr>
-<td>батько</td>
-<td>батьки</td>
-<td>батьк<strong>ами</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Soft stems → -ями:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Nom. Singular</th>
-<th>Nom. Plural</th>
-<th>Instrumental Plural</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>вчитель</td>
-<td>вчителі</td>
-<td>вчител<strong>ями</strong></td>
-</tr>
-<tr>
-<td>гість</td>
-<td>гості</td>
-<td>гост<strong>ями</strong></td>
-</tr>
-<tr>
-<td>приятель</td>
-<td>приятелі</td>
-<td>приятел<strong>ями</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Я живу <strong>з батьками</strong>. - I live with my parents.</li>
-<li>Вона працює <strong>з колегами</strong>. - She works with colleagues.</li>
-<li>Ми гуляємо <strong>з друзями</strong>. - We walk with friends.</li>
-</ul>
-<h3 id="commonpatternswithinstrumental">Common Patterns with з + Instrumental</h3>
-<p><strong>Living/Being:</strong></p>
-<ul>
-<li>жити з + INSTR (live with)</li>
-<li>бути з + INSTR (be with)</li>
-<li>залишатися з + INSTR (stay with)</li>
-</ul>
-<p><strong>Going/Moving:</strong></p>
-<ul>
-<li>йти з + INSTR (go with)</li>
-<li>їхати з + INSTR (travel with)</li>
-<li>гуляти з + INSTR (walk with)</li>
-</ul>
-<p><strong>Social Activities:</strong></p>
-<ul>
-<li>зустрічатися з + INSTR (meet with)</li>
-<li>розмовляти з + INSTR (talk with)</li>
-<li>знайомитися з + INSTR (get acquainted with)</li>
-<li>працювати з + INSTR (work with)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Verbs That Love Instrumental</strong></p>
-  <p>These verbs commonly take з + instrumental:</p>
-  <ul>
-  <li><strong>зустрічатися</strong> з ким? (meet with whom?)</li>
-  <li><strong>вітатися</strong> з ким? (greet whom?)</li>
-  <li><strong>прощатися</strong> з ким? (say goodbye to whom?)</li>
-  <li><strong>знайомитися</strong> з ким? (get acquainted with whom?)</li>
-  </ul>
-  <p>All about social interaction!</p>
-</blockquote>
-<h3 id="expressionsoftogetherness">Expressions of Togetherness</h3>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>разом з</td>
-<td>together with</td>
-</tr>
-<tr>
-<td>удвох</td>
-<td>the two of us</td>
-</tr>
-<tr>
-<td>утрьох</td>
-<td>the three of us</td>
-</tr>
-<tr>
-<td>усі разом</td>
-<td>all together</td>
-</tr>
-<tr>
-<td>один на один</td>
-<td>one-on-one</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Ми <strong>разом з</strong> братом поїдемо. - My brother and I will go together.</li>
-<li>Вони живуть <strong>удвох</strong>. - The two of them live together.</li>
-<li>Поговоримо <strong>один на один</strong>. - Let's talk one-on-one.</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian has special words for "the two of us" (удвох), "the three of us" (утрьох), "the four of us" (учотирьох), etc. These express togetherness more warmly than just counting people!</p>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="nountransformations">Noun Transformations</h3>
-<p>Change nominative to instrumental:</p>
-<p><strong>Masculine:</strong></p>
-<ol>
-<li><p>друг</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">другом</div></div>
-<ol start="2">
-<li><p>брат</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">братом</div></div>
-<ol start="3">
-<li><p>вчитель</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">вчителем</div></div>
-<ol start="4">
-<li><p>батько</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">батьком</div></div>
-<ol start="5">
-<li><p>Андрій</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">Андрієм</div></div>
-<p><strong>Feminine:</strong></p>
-<ol>
-<li><p>сестра</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">сестрою</div></div>
-<ol start="2">
-<li><p>подруга</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">подругою</div></div>
-<ol start="3">
-<li><p>мама</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">мамою</div></div>
-<ol start="4">
-<li><p>Марія</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Марією</div></div>
-<p><strong>Plural:</strong></p>
-<ol>
-<li><p>друзі</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">друзями</div></div>
-<ol start="2">
-<li><p>батьки</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">батьками</div></div>
-<ol start="3">
-<li><p>сестри</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">сестрами</div></div>
-<ol start="4">
-<li><p>колеги</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">колегами</div></div>
-<h3 id="completethesentences">Complete the Sentences</h3>
-<p>Fill in the instrumental form:</p>
-<ol>
-<li><p>Я йду з ___ (друг).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">другом</div></div>
-<ol start="2">
-<li><p>Вона живе з ___ (сестра).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">сестрою</div></div>
-<ol start="3">
-<li><p>Ми розмовляємо з ___ (вчитель).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">вчителем</div></div>
-<ol start="4">
-<li><p>Він їде з ___ (батьки).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">батьками</div></div>
-<ol start="5">
-<li><p>Я хочу бути з ___ (ти).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">тобою</div></div>
-<ol start="6">
-<li><p>Вони працюють з ___ (ми).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">нами</div></div>
-<h3 id="buildfullsentences">Build Full Sentences</h3>
-<p>Create sentences: Subject + verb + з + instrumental</p>
-<ol>
-<li><p>Я / жити / батьки</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-19', this)">Показати відповідь</button><div class="answer-block" id="ans-19"><div class="callout callout-answer" data-callout="answer">Я живу з батьками.</div></div>
-<ol start="2">
-<li><p>Вона / гуляти / собака</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Вона гуляє з собакою.</div></div>
-<ol start="3">
-<li><p>Ми / їхати / друзі</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-21', this)">Показати відповідь</button><div class="answer-block" id="ans-21"><div class="callout callout-answer" data-callout="answer">Ми їдемо з друзями.</div></div>
-<ol start="4">
-<li><p>Він / працювати / колеги</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-22', this)">Показати відповідь</button><div class="answer-block" id="ans-22"><div class="callout callout-answer" data-callout="answer">Він працює з колегами.</div></div>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Making plans</strong></p>
-<ul>
-<li>З ким ти йдеш на концерт?</li>
-<li>З подругою. А ти?</li>
-<li>Я ще не знаю. Може, з братом.</li>
-<li>Ходімо всі разом!</li>
-</ul>
-<p><strong>Scenario 2: Meeting someone new</strong></p>
-<ul>
-<li>Познайомся, це Андрій.</li>
-<li>Приємно познайомитися з вами!</li>
-<li>Ми з Андрієм разом працюємо.</li>
-<li>О, ви колеги! Як давно?</li>
-</ul>
-<p><strong>Scenario 3: Family life</strong></p>
-<ul>
-<li>Ти живеш з батьками?</li>
-<li>Ні, я живу з дружиною і донькою.</li>
-<li>А з ким ти проводиш вихідні?</li>
-<li>Зазвичай з сім'єю, іноді з друзями.</li>
-</ul>
-<hr />
-<hr />
-<hr />
 <hr />
 <hr />
 <hr /></div>
@@ -1037,132 +990,14 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="instrumentalendings">Instrumental Endings</h2>
-<table>
-<thead>
-<tr>
-<th>Gender</th>
-<th>Nom ending</th>
-<th>Instr ending</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Masculine</td>
-<td>consonant</td>
-<td>-ом</td>
-<td>друг → другом</td>
-</tr>
-<tr>
-<td>Masc soft</td>
-<td>-ь/-й</td>
-<td>-ем</td>
-<td>вчитель → вчителем</td>
-</tr>
-<tr>
-<td>Feminine</td>
-<td>-а</td>
-<td>-ою</td>
-<td>сестра → сестрою</td>
-</tr>
-<tr>
-<td>Fem soft</td>
-<td>-я</td>
-<td>-ею</td>
-<td>Марія → Марією</td>
-</tr>
-<tr>
-<td>Neuter</td>
-<td>-о/-е</td>
-<td>-ом/-ем</td>
-<td>місто → містом</td>
-</tr>
-<tr>
-<td>Plural</td>
-<td>-</td>
-<td>-ами/-ями</td>
-<td>друзі → друзями</td>
-</tr>
-</tbody>
-</table>
-<h2 id="instrumentalpronouns">Instrumental Pronouns</h2>
-<table>
-<thead>
-<tr>
-<th>Nominative</th>
-<th>Instrumental</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>я</td>
-<td>мною</td>
-</tr>
-<tr>
-<td>ти</td>
-<td>тобою</td>
-</tr>
-<tr>
-<td>він/воно</td>
-<td>ним</td>
-</tr>
-<tr>
-<td>вона</td>
-<td>нею</td>
-</tr>
-<tr>
-<td>ми</td>
-<td>нами</td>
-</tr>
-<tr>
-<td>ви</td>
-<td>вами</td>
-</tr>
-<tr>
-<td>вони</td>
-<td>ними</td>
-</tr>
-</tbody>
-</table>
-<h2 id="commonpatterns">Common Patterns</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>жити з + instr</td>
-<td>жити з батьками</td>
-</tr>
-<tr>
-<td>йти з + instr</td>
-<td>йти з другом</td>
-</tr>
-<tr>
-<td>працювати з + instr</td>
-<td>працювати з колегами</td>
-</tr>
-<tr>
-<td>зустрічатися з + instr</td>
-<td>зустрічатися з подругою</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Instrumental answers "з ким?" (with whom?) and "з чим?" (with what?)</li>
-  <li>Masculine: -ом (hard) / -ем (soft)</li>
-  <li>Feminine: -ою (hard) / -ею (soft)</li>
-  <li>Plural: -ами (hard) / -ями (soft)</li>
-  <li>Use зі before consonant clusters: зі мною, зі студентом</li>
-  <li>Many social verbs use з + instrumental: зустрічатися, знайомитися</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>You've mastered adjective formation:</p>
+<ul>
+<li><strong>From nouns (-ний/-овий)</strong>: музика → музичний, наука → науковий</li>
+<li><strong>Nationality (-ський)</strong>: Україна → український, місто → міський</li>
+<li><strong>From verbs (-лий/-чий)</strong>: лежати → лежачий, зів'янути → зів'ялий</li>
+<li><strong>Group/gender (-ячий/-очий)</strong>: дитина → дитячий, жінка → жіночий</li>
+</ul>
+<p><strong>Coming up next</strong>: Root Families I — discovering word families through common roots!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1171,69 +1006,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Instrumental with з</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Adjective Formation</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Suffixes and Origins</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Sentence Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Suffix Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Adjective Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Choose the Correct Instrumental Form</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Suffix Origins</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Instrumental Ending Categories</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/17</span></div>
-      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
-      <div class="sort-groups" id="activity-6-groups"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Complete the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Instrumental Sentence Building</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Adjective</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (31)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1241,9 +1083,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    <th>Примітка</th>
+    
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">з/із/зі</td><td class="vocab-ipa">/z/, /iz/, /zʲi/</td><td class="vocab-en">with</td><td class="vocab-note">+ instr</td></tr><tr><td class="vocab-uk">разом</td><td class="vocab-ipa">/ˈrɑzom/</td><td class="vocab-en">together</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">удвох</td><td class="vocab-ipa">/udˈvox/</td><td class="vocab-en">the two (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">утрьох</td><td class="vocab-ipa">/uˈtrʲox/</td><td class="vocab-en">the three (together)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зустрічатися</td><td class="vocab-ipa">/zustriˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to meet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">вітатися</td><td class="vocab-ipa">/viˈtɑtɪsʲɑ/</td><td class="vocab-en">to greet</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">прощатися</td><td class="vocab-ipa">/proʃˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to say goodbye</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">знайомитися</td><td class="vocab-ipa">/znɑˈjomɪtɪsʲɑ/</td><td class="vocab-en">to get acquainted</td><td class="vocab-note">з + instr</td></tr><tr><td class="vocab-uk">мною</td><td class="vocab-ipa">/mnoju/</td><td class="vocab-en">(with) me</td><td class="vocab-note">Instr. of я</td></tr><tr><td class="vocab-uk">тобою</td><td class="vocab-ipa">/toˈboju/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ти</td></tr><tr><td class="vocab-uk">ним</td><td class="vocab-ipa">/nɪm/</td><td class="vocab-en">(with) him/it</td><td class="vocab-note">Instr. of він/воно</td></tr><tr><td class="vocab-uk">нею</td><td class="vocab-ipa">/ˈnɛju/</td><td class="vocab-en">(with) her</td><td class="vocab-note">Instr. of вона</td></tr><tr><td class="vocab-uk">нами</td><td class="vocab-ipa">/ˈnɑmɪ/</td><td class="vocab-en">(with) us</td><td class="vocab-note">Instr. of ми</td></tr><tr><td class="vocab-uk">вами</td><td class="vocab-ipa">/ˈvɑmɪ/</td><td class="vocab-en">(with) you</td><td class="vocab-note">Instr. of ви</td></tr><tr><td class="vocab-uk">ними</td><td class="vocab-ipa">/ˈnɪmɪ/</td><td class="vocab-en">(with) them</td><td class="vocab-note">Instr. of вони</td></tr><tr><td class="vocab-uk">компанія</td><td class="vocab-ipa">/kompɑˈnʲijɑ/</td><td class="vocab-en">company, group</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">група</td><td class="vocab-ipa">/ˈhrupɑ/</td><td class="vocab-en">group</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">команда</td><td class="vocab-ipa">/kɔˈmɑndɑ/</td><td class="vocab-en">team</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">пара</td><td class="vocab-ipa">/ˈpɑrɑ/</td><td class="vocab-en">couple, pair</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">родина</td><td class="vocab-ipa">/rɔˈdɪnɑ/</td><td class="vocab-en">family</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сім&#039;я</td><td class="vocab-ipa">/sʲiˈmjɑ/</td><td class="vocab-en">family</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">колега</td><td class="vocab-ipa">/kɔˈlɛɦɑ/</td><td class="vocab-en">colleague (m/f)</td><td class="vocab-note">Instr: колегою</td></tr><tr><td class="vocab-uk">сусіди</td><td class="vocab-ipa">/suˈsʲidɪ/</td><td class="vocab-en">neighbors</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">знайомі</td><td class="vocab-ipa">/znɑˈjɔmʲi/</td><td class="vocab-en">acquaintances</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">партнер</td><td class="vocab-ipa">/pɑrtˈnɛr/</td><td class="vocab-en">partner</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">напарник</td><td class="vocab-ipa">/nɑˈpɑrnɪk/</td><td class="vocab-en">partner, teammate</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">супутник</td><td class="vocab-ipa">/suˈputnɪk/</td><td class="vocab-en">companion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">товариш</td><td class="vocab-ipa">/tɔˈvɑrɪʃ/</td><td class="vocab-en">comrade, friend</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">приятель</td><td class="vocab-ipa">/prɪˈjɑtɛlʲ/</td><td class="vocab-en">buddy, pal</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ворог</td><td class="vocab-ipa">/ˈvɔrɔɦ/</td><td class="vocab-en">enemy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">натовп</td><td class="vocab-ipa">/ˈnɑtɔu̯p/</td><td class="vocab-en">crowd</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">музичний</td><td class="vocab-ipa">/muˈzɪtʃnɪj/</td><td class="vocab-en">musical</td></tr><tr><td class="vocab-uk">науковий</td><td class="vocab-ipa">/nauˈkowɪj/</td><td class="vocab-en">scientific</td></tr><tr><td class="vocab-uk">український</td><td class="vocab-ipa">/ukraˈjinsʲkɪj/</td><td class="vocab-en">Ukrainian</td></tr><tr><td class="vocab-uk">російський</td><td class="vocab-ipa">/roˈsijsʲkɪj/</td><td class="vocab-en">Russian</td></tr><tr><td class="vocab-uk">англійський</td><td class="vocab-ipa">/anˈɦlijsʲkɪj/</td><td class="vocab-en">English</td></tr><tr><td class="vocab-uk">міський</td><td class="vocab-ipa">/ˈmisʲkɪj/</td><td class="vocab-en">urban, city</td></tr><tr><td class="vocab-uk">сільський</td><td class="vocab-ipa">/ˈsilʲsʲkɪj/</td><td class="vocab-en">rural, village</td></tr><tr><td class="vocab-uk">людський</td><td class="vocab-ipa">/lʲudˈsʲkɪj/</td><td class="vocab-en">human</td></tr><tr><td class="vocab-uk">дитячий</td><td class="vocab-ipa">/dɪˈtʲatʃɪj/</td><td class="vocab-en">children&#039;s</td></tr><tr><td class="vocab-uk">жіночий</td><td class="vocab-ipa">/ʒiˈnotʃɪj/</td><td class="vocab-en">female, women&#039;s</td></tr><tr><td class="vocab-uk">чоловічий</td><td class="vocab-ipa">/tʃoloˈwitʃɪj/</td><td class="vocab-en">male, men&#039;s</td></tr><tr><td class="vocab-uk">кольоровий</td><td class="vocab-ipa">/kolʲoˈrowɪj/</td><td class="vocab-en">colored</td></tr><tr><td class="vocab-uk">смаковий</td><td class="vocab-ipa">/smaˈkowɪj/</td><td class="vocab-en">taste (adj)</td></tr><tr><td class="vocab-uk">матеріальний</td><td class="vocab-ipa">/matɛriˈalʲnɪj/</td><td class="vocab-en">material</td></tr><tr><td class="vocab-uk">духовний</td><td class="vocab-ipa">/duxowˈnɪj/</td><td class="vocab-en">spiritual</td></tr><tr><td class="vocab-uk">фізичний</td><td class="vocab-ipa">/fiˈzɪtʃnɪj/</td><td class="vocab-en">physical</td></tr><tr><td class="vocab-uk">хімічний</td><td class="vocab-ipa">/xiˈmitʃnɪj/</td><td class="vocab-en">chemical</td></tr><tr><td class="vocab-uk">історичний</td><td class="vocab-ipa">/istorˈɪtʃnɪj/</td><td class="vocab-en">historical</td></tr><tr><td class="vocab-uk">географічний</td><td class="vocab-ipa">/ɦɛoɦraˈfitʃnɪj/</td><td class="vocab-en">geographical</td></tr><tr><td class="vocab-uk">математичний</td><td class="vocab-ipa">/matɛmaˈtɪtʃnɪj/</td><td class="vocab-en">mathematical</td></tr><tr><td class="vocab-uk">робочий</td><td class="vocab-ipa">/roˈbotʃɪj/</td><td class="vocab-en">working</td></tr><tr><td class="vocab-uk">лежачий</td><td class="vocab-ipa">/lɛˈʒatʃɪj/</td><td class="vocab-en">lying, bedridden</td></tr><tr><td class="vocab-uk">стоячий</td><td class="vocab-ipa">/stoˈjatʃɪj/</td><td class="vocab-en">standing</td></tr><tr><td class="vocab-uk">біжучий</td><td class="vocab-ipa">/biˈʒutʃɪj/</td><td class="vocab-en">running</td></tr><tr><td class="vocab-uk">гарячий</td><td class="vocab-ipa">/ɦaˈrʲatʃɪj/</td><td class="vocab-en">hot</td></tr><tr><td class="vocab-uk">холодний</td><td class="vocab-ipa">/xoˈlodnɪj/</td><td class="vocab-en">cold</td></tr><tr><td class="vocab-uk">теплий</td><td class="vocab-ipa">/ˈtɛplɪj/</td><td class="vocab-en">warm</td></tr><tr><td class="vocab-uk">свіжий</td><td class="vocab-ipa">/ˈswiʒɪj/</td><td class="vocab-en">fresh</td></tr><tr><td class="vocab-uk">старий</td><td class="vocab-ipa">/staˈrɪj/</td><td class="vocab-en">old</td></tr><tr><td class="vocab-uk">молодий</td><td class="vocab-ipa">/moloˈdɪj/</td><td class="vocab-en">young</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1255,8 +1097,8 @@ footer {
   </main><footer>Module 34 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Instrumental with з","data":{"type":"fill-blank","items":[{"prompt":"Я йду в кіно з моїм ___ (друг) сьогодні ввечері.","answer":"другом","hints":["друг"],"options":["друг","друга","другові","другом"]},{"prompt":"Вона розмовляє по телефону з ___ (сестра) кожен день.","answer":"сестрою","hints":["сестра"],"options":["сестра","сестри","сестрі","сестрою"]},{"prompt":"Ми живемо разом з нашими ___ (батьки) в Києві.","answer":"батьками","hints":["батьки"],"options":["батьки","батьків","батькам","батьками"]},{"prompt":"Він гуляє в парку з ___ (собака) вранці та ввечері.","answer":"собакою","hints":["собака"],"options":["собака","собаки","собаці","собакою"]},{"prompt":"Я їду на море з ___ (ти) цього літа!","answer":"тобою","hints":["ти"],"options":["ти","тебе","тобі","тобою"]},{"prompt":"Ти хочеш познайомитися з ___ (вони) на вечірці?","answer":"ними","hints":["вони"],"options":["вони","їх","їм","ними"]},{"prompt":"Вона щасливо живе з ___ (чоловік) у Львові.","answer":"чоловіком","hints":["чоловік"],"options":["чоловік","чоловіка","чоловікові","чоловіком"]},{"prompt":"Діти люблять грати з ___ (котик) на подвір'ї.","answer":"котиком","hints":["котик"],"options":["котик","котика","котикові","котиком"]},{"prompt":"З ___ (хто) ти йдеш на концерт у суботу?","answer":"ким","hints":["хто"],"options":["хто","кого","кому","ким"]},{"prompt":"Ми завжди святкуємо Новий рік з ___ (сім'я).","answer":"сім'єю","hints":["сім'я"],"options":["сім'я","сім'ї","сім'ї","сім'єю"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["другом","Я","в кіно","йду","з","сьогодні"],"answer":"Я йду в кіно з другом сьогодні.","translation":"I'm going to the cinema with a friend today."},{"words":["сестрою","Вона","розмовляє","з","по телефону","часто"],"answer":"Вона часто розмовляє з сестрою по телефону.","translation":"She often talks to her sister on the phone."},{"words":["батьками","Ми","живемо","з","в Києві","разом"],"answer":"Ми живемо разом з батьками в Києві.","translation":"We live together with our parents in Kyiv."},{"words":["собакою","Він","в парку","гуляє","з","вранці"],"answer":"Він гуляє в парку з собакою вранці.","translation":"He walks in the park with the dog in the morning."},{"words":["тобою","Я","на море","їду","з","цього літа"],"answer":"Я їду на море з тобою цього літа.","translation":"I'm going to the sea with you this summer."},{"words":["ними","Ти","хочеш","познайомитися","з","на вечірці"],"answer":"Ти хочеш познайомитися з ними на вечірці?","translation":"Do you want to get acquainted with them at the party?"},{"words":["чоловіком","Вона","живе","щасливо","з","у Львові"],"answer":"Вона щасливо живе з чоловіком у Львові.","translation":"She lives happily with her husband in Lviv."},{"words":["сім'єю","Ми","завжди","святкуємо","з","Новий рік"],"answer":"Ми завжди святкуємо Новий рік з сім'єю.","translation":"We always celebrate New Year with family."},{"words":["ким","З","йдеш","ти","на концерт","у суботу"],"answer":"З ким ти йдеш на концерт у суботу?","translation":"Who are you going to the concert with on Saturday?"},{"words":["колегами","Він","працює","з","разом","у офісі"],"answer":"Він працює разом з колегами у офісі.","translation":"He works together with colleagues in the office."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"знайомитися","right":"to get acquainted"},{"left":"праворуч","right":"to the right"},{"left":"вітатися","right":"to greet"},{"left":"нами","right":"(with) us"},{"left":"з/із/зі","right":"with"},{"left":"аптека","right":"pharmacy"},{"left":"тобою","right":"(with) you"},{"left":"компанія","right":"company, group"},{"left":"разом","right":"together"},{"left":"четвер","right":"Thursday"},{"left":"нею","right":"(with) her"},{"left":"удвох","right":"the two (together)"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"вітатися\" mean?","options":["to call (phone)","discount","bill, check","to greet"],"correctIndex":3,"explanation":"\"вітатися\" means \"to greet\""},{"question":"What does \"знайомитися\" mean?","options":["to get acquainted","window","discount","photo"],"correctIndex":0,"explanation":"\"знайомитися\" means \"to get acquainted\""},{"question":"What does \"нею\" mean?","options":["to disturb","it","feminine","(with) her"],"correctIndex":3,"explanation":"\"нею\" means \"(with) her\""},{"question":"What does \"ними\" mean?","options":["new","(with) them","to appear in dream","dad"],"correctIndex":1,"explanation":"\"ними\" means \"(with) them\""},{"question":"What does \"з/із/зі\" mean?","options":["to see","banana","with","to inform"],"correctIndex":2,"explanation":"\"з/із/зі\" means \"with\""},{"question":"What does \"зустрічатися\" mean?","options":["twenty","to meet","alphabet","exit"],"correctIndex":1,"explanation":"\"зустрічатися\" means \"to meet\""},{"question":"What does \"мною\" mean?","options":["soon","to see","(with) me","calf"],"correctIndex":2,"explanation":"\"мною\" means \"(with) me\""},{"question":"What does \"компанія\" mean?","options":["radio","to them","to return","company, group"],"correctIndex":3,"explanation":"\"компанія\" means \"company, group\""},{"question":"What does \"тобою\" mean?","options":["fifty","document","(with) you","music"],"correctIndex":2,"explanation":"\"тобою\" means \"(with) you\""},{"question":"What does \"вами\" mean?","options":["(with) you","father","husband","square"],"correctIndex":0,"explanation":"\"вами\" means \"(with) you\""},{"question":"What does \"ним\" mean?","options":["to seem","(with) him/it","sneakers","document"],"correctIndex":1,"explanation":"\"ним\" means \"(with) him/it\""},{"question":"What does \"нами\" mean?","options":["(with) us","hair","near, close","every day"],"correctIndex":0,"explanation":"\"нами\" means \"(with) us\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"вами\" means \"(with) you\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"з/із/зі\" means \"meat\"","isTrue":false,"explanation":"Incorrect. \"з/із/зі\" means \"with\""},{"statement":"\"нами\" means \"to sell\"","isTrue":false,"explanation":"Incorrect. \"нами\" means \"(with) us\""},{"statement":"\"утрьох\" means \"the three (together)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"знайомитися\" means \"can, to be able\"","isTrue":false,"explanation":"Incorrect. \"знайомитися\" means \"to get acquainted\""},{"statement":"\"нею\" means \"(with) her\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"разом\" means \"together\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"удвох\" means \"to advise\"","isTrue":false,"explanation":"Incorrect. \"удвох\" means \"the two (together)\""},{"statement":"\"вітатися\" means \"to greet\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"ним\" means \"(with) him/it\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"fill-blank","title":"Choose the Correct Instrumental Form","data":{"type":"fill-blank","items":[{"prompt":"Я йду в кіно з ___ . (he)","answer":"ним","options":["його","йому","ним"]},{"prompt":"Вона розмовляє з ___ . (we)","answer":"нами","options":["нас","нам","нами"]},{"prompt":"Він зустрічається з ___ . (she)","answer":"нею","options":["її","їй","нею"]},{"prompt":"Ми працюємо з ___ . (friend)","answer":"другом","options":["друга","другу","другом"]},{"prompt":"Вона знайомиться з ___ . (students)","answer":"студентами","options":["студентів","студентам","студентами"]},{"prompt":"Я обідаю з ___ . (sister)","answer":"сестрою","options":["сестру","сестрі","сестрою"]},{"prompt":"Він вітається з ___ . (teacher)","answer":"вчителем","options":["вчителя","вчителю","вчителем"]},{"prompt":"Ми гуляємо з ___ . (they)","answer":"ними","options":["їх","їм","ними"]},{"prompt":"Вона прощається з ___ . (you, formal)","answer":"вами","options":["вас","вам","вами"]},{"prompt":"Я живу з ___ . (parents)","answer":"батьками","options":["батьків","батькам","батьками"]}]}},{"id":"activity-6","type":"group-sort","title":"Instrumental Ending Categories","data":{"type":"group-sort","groups":[{"id":"-","name":"-ом","items":["другом","братом","студентом","батьком"],"nameUk":"Hard Masculine"},{"id":"-","name":"-ем","items":["вчителем","хлопцем","товаришем"],"nameUk":"Soft Masculine"},{"id":"-","name":"-ою","items":["сестрою","мамою","подругою"],"nameUk":"Hard Feminine"},{"id":"-","name":"-ею","items":["Марією","землею","статтею"],"nameUk":"Soft Feminine"},{"id":"--","name":"-ами/-ями","items":["друзями","батьками","студентами","сестрами"],"nameUk":"Plural"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Instrumental Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","йду","в кіно","з другом"],"answer":"Я йду в кіно з другом.","translation":"I go to the cinema with a friend."},{"words":["Вона","зустрічається","з подругою","в кафе"],"answer":"Вона зустрічається з подругою в кафе.","translation":"She meets with a friend at a cafe."},{"words":["Ми","живемо","разом","з батьками"],"answer":"Ми живемо разом з батьками.","translation":"We live together with our parents."},{"words":["Він","працює","з колегами","в офісі"],"answer":"Він працює з колегами в офісі.","translation":"He works with colleagues in the office."},{"words":["Я","вітаюся","з вами","щодня"],"answer":"Я вітаюся з вами щодня.","translation":"I greet you every day."},{"words":["Вона","обідає","з сестрою","вдома"],"answer":"Вона обідає з сестрою вдома.","translation":"She has lunch with her sister at home."},{"words":["Ми","прощаємося","з друзями","ввечері"],"answer":"Ми прощаємося з друзями ввечері.","translation":"We say goodbye to friends in the evening."},{"words":["Він","знайомиться","з нею","на вечірці"],"answer":"Він знайомиться з нею на вечірці.","translation":"He gets acquainted with her at a party."},{"words":["Я","гуляю","з ними","у парку"],"answer":"Я гуляю з ними у парку.","translation":"I walk with them in the park."},{"words":["Вона","розмовляє","з мамою","по телефону"],"answer":"Вона розмовляє з мамою по телефону.","translation":"She talks with mom on the phone."}]}}];
-    const vocabData = [{"uk":"з/із/зі","translit":"","en":"with","note":"+ instr"},{"uk":"разом","translit":"","en":"together","note":""},{"uk":"удвох","translit":"","en":"the two (together)","note":""},{"uk":"утрьох","translit":"","en":"the three (together)","note":""},{"uk":"зустрічатися","translit":"","en":"to meet","note":"з + instr"},{"uk":"вітатися","translit":"","en":"to greet","note":"з + instr"},{"uk":"прощатися","translit":"","en":"to say goodbye","note":"з + instr"},{"uk":"знайомитися","translit":"","en":"to get acquainted","note":"з + instr"},{"uk":"мною","translit":"","en":"(with) me","note":"Instr. of я"},{"uk":"тобою","translit":"","en":"(with) you","note":"Instr. of ти"},{"uk":"ним","translit":"","en":"(with) him/it","note":"Instr. of він/воно"},{"uk":"нею","translit":"","en":"(with) her","note":"Instr. of вона"},{"uk":"нами","translit":"","en":"(with) us","note":"Instr. of ми"},{"uk":"вами","translit":"","en":"(with) you","note":"Instr. of ви"},{"uk":"ними","translit":"","en":"(with) them","note":"Instr. of вони"},{"uk":"компанія","translit":"","en":"company, group","note":""},{"uk":"група","translit":"","en":"group","note":""},{"uk":"команда","translit":"","en":"team","note":""},{"uk":"пара","translit":"","en":"couple, pair","note":""},{"uk":"родина","translit":"","en":"family","note":""},{"uk":"сім'я","translit":"","en":"family","note":""},{"uk":"колега","translit":"","en":"colleague (m/f)","note":"Instr: колегою"},{"uk":"сусіди","translit":"","en":"neighbors","note":""},{"uk":"знайомі","translit":"","en":"acquaintances","note":""},{"uk":"партнер","translit":"","en":"partner","note":""},{"uk":"напарник","translit":"","en":"partner, teammate","note":""},{"uk":"супутник","translit":"","en":"companion","note":""},{"uk":"товариш","translit":"","en":"comrade, friend","note":""},{"uk":"приятель","translit":"","en":"buddy, pal","note":""},{"uk":"ворог","translit":"","en":"enemy","note":""},{"uk":"натовп","translit":"","en":"crowd","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Adjective Formation","data":{"type":"fill-blank","items":[{"prompt":"Від «музика» утворюємо прикметник ___. (musical)","answer":"музичний"},{"prompt":"Від «Україна» утворюємо ___. (Ukrainian)","answer":"український"},{"prompt":"Від «місто» утворюємо ___. (urban)","answer":"міський"},{"prompt":"Від «наука» утворюємо ___. (scientific)","answer":"науковий"},{"prompt":"___ мова дуже красива. (Ukrainian)","answer":"Українська"},{"prompt":"___ транспорт працює добре. (City)","answer":"Міський"},{"prompt":"Це ___ підхід до проблеми. (scientific)","answer":"науковий"},{"prompt":"___ права важливі для всіх. (Human)","answer":"Людські"},{"prompt":"Це ___ кімната для малюків. (children's)","answer":"дитяча"},{"prompt":"___ одяг на другому поверсі. (Women's)","answer":"Жіночий"},{"prompt":"Вода в басейні ___. (hot)","answer":"гаряча"},{"prompt":"___ пацієнт потребує допомоги. (Bedridden)","answer":"Лежачий"}]}},{"id":"activity-1","type":"match-up","title":"Suffixes and Origins","data":{"type":"match-up","pairs":[{"left":"-ний","right":"From nouns (academic)"},{"left":"-овий","right":"From nouns (relating to)"},{"left":"-ський","right":"From place names"},{"left":"-лий","right":"From verbs (result)"},{"left":"-чий","right":"From verbs (active)"},{"left":"-истий","right":"Characteristic quality"},{"left":"-ячий","right":"Belonging to (group)"},{"left":"-ічний","right":"Academic/scientific"},{"left":"-альний","right":"Relating to concept"},{"left":"-івський","right":"Of a place (alt)"},{"left":"-учий","right":"Ongoing action"},{"left":"-астий","right":"Resembling"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мова","Українська","дуже","красива","і","мелодійна","для","слуху"],"answer":"Українська мова дуже красива і мелодійна для слуху.","translation":"The Ukrainian language is very beautiful and melodic to hear."},{"words":["музей","Історичний","цікавий","і","привертає","багато","туристів","щороку"],"answer":"Історичний музей цікавий і привертає багато туристів щороку.","translation":"The historical museum is interesting and attracts many tourists yearly."},{"words":["підхід","Науковий","до","цієї","проблеми","є","дуже","важливим"],"answer":"Науковий підхід до цієї проблеми є дуже важливим.","translation":"The scientific approach to this problem is very important."},{"words":["транспорт","Міський","працює","добре","в","нашому","місті","сьогодні"],"answer":"Міський транспорт працює добре в нашому місті сьогодні.","translation":"City transport works well in our city today."},{"words":["права","Людські","важливі","для","кожної","людини","у","світі"],"answer":"Людські права важливі для кожної людини у світі.","translation":"Human rights are important for every person in the world."},{"words":["кімната","Дитяча","на","другому","поверсі","біля","великого","вікна"],"answer":"Дитяча кімната на другому поверсі біля великого вікна.","translation":"The children's room is on the second floor near the big window."},{"words":["одяг","Жіночий","на","третьому","поверсі","в","великому","магазині"],"answer":"Жіночий одяг на третьому поверсі в великому магазині.","translation":"Women's clothing is on the third floor in the big store."},{"words":["вода","Гаряча","в","цьому","готелі","працює","цілий","день"],"answer":"Гаряча вода в цьому готелі працює цілий день.","translation":"Hot water in this hotel works all day long."},{"words":["пацієнт","Лежачий","потребує","постійного","догляду","від","медичного","персоналу"],"answer":"Лежачий пацієнт потребує постійного догляду від медичного персоналу.","translation":"A bedridden patient needs constant care from medical staff."},{"words":["життя","Сільське","спокійне","і","тихе","порівняно","з","міським"],"answer":"Сільське життя спокійне і тихе порівняно з міським.","translation":"Rural life is peaceful and quiet compared to urban."},{"words":["формули","Математичні","складні","але","дуже","важливі","для","науки"],"answer":"Математичні формули складні, але дуже важливі для науки.","translation":"Mathematical formulas are complex but very important for science."},{"words":["телевізор","Кольоровий","новий","і","показує","чудову","яскраву","картинку"],"answer":"Кольоровий телевізор новий і показує чудову яскраву картинку.","translation":"The color TV is new and shows a wonderful bright picture."}]}},{"id":"activity-3","type":"quiz","title":"Suffix Knowledge","data":{"type":"quiz","questions":[{"question":"«Музичний» is formed with:","options":["-ний suffix","-овий suffix","-ський suffix","-лий suffix"],"correctIndex":0,"explanation":""},{"question":"Nationality adjectives use:","options":["-ський/-цький","-ний","-овий","-лий"],"correctIndex":0,"explanation":""},{"question":"«Лежачий» comes from:","options":["A verb (лежати)","A noun","An adjective","An adverb"],"correctIndex":0,"explanation":""},{"question":"«Науковий» means:","options":["Scientific","National","Natural","Naval"],"correctIndex":0,"explanation":""},{"question":"Which suffix is for places?","options":["-ський","-ний","-лий","-овий"],"correctIndex":0,"explanation":""},{"question":"«Дитячий» relates to:","options":["Children","Day","Distance","Detail"],"correctIndex":0,"explanation":""},{"question":"«Гарячий» means:","options":["Hot","Cold","Hard","Harsh"],"correctIndex":0,"explanation":""},{"question":"«Міський» relates to:","options":["City/urban","Misty","Mixed","Mild"],"correctIndex":0,"explanation":""},{"question":"«-овий» forms adjectives meaning:","options":["Relating to / of","Without","Against","Before"],"correctIndex":0,"explanation":""},{"question":"«Російський» means:","options":["Russian","Regional","Royal","Rough"],"correctIndex":0,"explanation":""},{"question":"«Людський» comes from:","options":["людина (person)","люд (people mass)","любити (to love)","лудити (to tin)"],"correctIndex":0,"explanation":""},{"question":"«Стоячий» describes:","options":["Standing position","Status","Style","Story"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Adjective Facts","data":{"type":"true-false","statements":[{"statement":"«-ський» forms nationality adjectives.","isTrue":true,"explanation":""},{"statement":"«Музичний» comes from «музика».","isTrue":true,"explanation":""},{"statement":"«Лежачий» is from the noun «ліжко».","isTrue":false,"explanation":""},{"statement":"«Науковий» means «national».","isTrue":false,"explanation":""},{"statement":"«-овий» indicates «relating to».","isTrue":true,"explanation":""},{"statement":"«Міський» relates to villages.","isTrue":false,"explanation":""},{"statement":"«Дитячий» comes from «дитина».","isTrue":true,"explanation":""},{"statement":"«Гарячий» means cold.","isTrue":false,"explanation":""},{"statement":"«-лий» forms result-state adjectives.","isTrue":true,"explanation":""},{"statement":"«Англійський» is a nationality adjective.","isTrue":true,"explanation":""},{"statement":"«Людський» means «kind».","isTrue":false,"explanation":""},{"statement":"All adjectives from verbs end in «-лий».","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Suffix Origins","data":{"type":"group-sort","groups":[{"id":"from-nouns","name":"From Nouns","items":["музичний","науковий","історичний"],"nameUk":"-ний/-овий"},{"id":"from-place-names","name":"From Place Names","items":["український","міський","російський"],"nameUk":"-ський"},{"id":"from-verbs","name":"From Verbs","items":["лежачий","стоячий","зів'ялий"],"nameUk":"-чий/-лий"},{"id":"groupgender","name":"Group/Gender","items":["дитячий","жіночий","чоловічий"],"nameUk":"-ячий"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"___ мова — одна з найкрасивіших. (Ukrainian)","answer":"Українська"},{"prompt":"Це дуже ___ підхід до проблеми. (scientific)","answer":"науковий"},{"prompt":"___ музей розташований у центрі. (Historical)","answer":"Історичний"},{"prompt":"___ транспорт працює добре. (City)","answer":"Міський"},{"prompt":"Я люблю ___ інструменти. (musical)","answer":"музичні"},{"prompt":"___ права захищають всіх людей. (Human)","answer":"Людські"},{"prompt":"___ кімната на другому поверсі. (Children's)","answer":"Дитяча"},{"prompt":"___ одяг знаходиться тут. (Women's)","answer":"Жіночий"},{"prompt":"Ця вода занадто ___. (hot)","answer":"гаряча"},{"prompt":"___ життя дуже спокійне. (Rural)","answer":"Сільське"},{"prompt":"Він ___ пацієнт і потребує догляду. (bedridden)","answer":"лежачий"},{"prompt":"___ формули дуже складні. (Mathematical)","answer":"Математичні"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Adjective","data":{"type":"select","items":[{"question":"___ мова дуже мелодійна.","options":[{"text":"Українська","correct":true},{"text":"Україна","correct":false},{"text":"Українка","correct":false},{"text":"Українець","correct":false}]},{"question":"Це ___ підхід до вирішення проблеми.","options":[{"text":"науковий","correct":true},{"text":"наука","correct":false},{"text":"науковець","correct":false},{"text":"наукування","correct":false}]},{"question":"___ транспорт працює з ранку до ночі.","options":[{"text":"Міський","correct":true},{"text":"Місто","correct":false},{"text":"Містом","correct":false},{"text":"Містечко","correct":false}]},{"question":"Він любить ___ музику.","options":[{"text":"класичну","correct":true},{"text":"класика","correct":false},{"text":"класик","correct":false},{"text":"класність","correct":false}]},{"question":"___ права важливі для всіх.","options":[{"text":"Людські","correct":true},{"text":"Людина","correct":false},{"text":"Люди","correct":false},{"text":"Людність","correct":false}]},{"question":"Це ___ кімната для малюків.","options":[{"text":"дитяча","correct":true},{"text":"дитина","correct":false},{"text":"діти","correct":false},{"text":"дитинство","correct":false}]},{"question":"Вода в басейні дуже ___.","options":[{"text":"гаряча","correct":true},{"text":"гарячити","correct":false},{"text":"гарячість","correct":false},{"text":"гарячка","correct":false}]},{"question":"___ пацієнт потребує особливого догляду.","options":[{"text":"Лежачий","correct":true},{"text":"Лежати","correct":false},{"text":"Лежання","correct":false},{"text":"Ліжко","correct":false}]},{"question":"___ сир дуже смачний.","options":[{"text":"Французький","correct":true},{"text":"Франція","correct":false},{"text":"Француз","correct":false},{"text":"Французка","correct":false}]},{"question":"Мені подобається ___ кухня.","options":[{"text":"японська","correct":true},{"text":"Японія","correct":false},{"text":"японець","correct":false},{"text":"японка","correct":false}]},{"question":"___ музей відкритий щодня.","options":[{"text":"Історичний","correct":true},{"text":"Історія","correct":false},{"text":"Історик","correct":false},{"text":"Історично","correct":false}]},{"question":"___ формули потрібно вивчити.","options":[{"text":"Математичні","correct":true},{"text":"Математика","correct":false},{"text":"Математик","correct":false},{"text":"Математично","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which suffix forms nationality adjectives?","options":["-ський/-цький","-ний","-овий","-истий"],"correctIndex":0,"explanation":""},{"question":"«Науковий» comes from:","options":["наука (science)","наукати (to teach)","науковець (scientist)","наукування (sciencing)"],"correctIndex":0,"explanation":""},{"question":"Which suffix forms adjectives from verbs?","options":["-ачий/-учий/-ячий","-ський","-ний","-ість"],"correctIndex":0,"explanation":""},{"question":"«Міський» relates to:","options":["City (місто)","Ministry (міністерство)","Mission (місія)","Mix (мікс)"],"correctIndex":0,"explanation":""},{"question":"What does «-овий» indicate?","options":["Relating to or of","Nationality","Result state","Small size"],"correctIndex":0,"explanation":""},{"question":"«Дитячий» comes from:","options":["дитина (child)","день (day)","діти (children)","дитинство (childhood)"],"correctIndex":0,"explanation":""},{"question":"Which adjective shows result state from verb?","options":["зів'ялий (wilted)","український (Ukrainian)","музичний (musical)","кольоровий (colorful)"],"correctIndex":0,"explanation":""},{"question":"«Людський» means:","options":["Human","Kind","Loving","Personal"],"correctIndex":0,"explanation":""},{"question":"«Гарячий» describes:","options":["Temperature (hot)","Color","Size","Distance"],"correctIndex":0,"explanation":""},{"question":"Which is a place-origin adjective?","options":["київський (of Kyiv)","музичний (musical)","лежачий (lying)","дитячий (children's)"],"correctIndex":0,"explanation":""},{"question":"«-ичний/-ічний» forms adjectives for:","options":["Academic/scientific fields","Nationalities","Physical states","Diminutives"],"correctIndex":0,"explanation":""},{"question":"«Жіночий» relates to:","options":["Women/female","Yellow color","Alive state","Living being"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"музичний","translit":"","en":"musical","note":""},{"uk":"науковий","translit":"","en":"scientific","note":""},{"uk":"український","translit":"","en":"Ukrainian","note":""},{"uk":"російський","translit":"","en":"Russian","note":""},{"uk":"англійський","translit":"","en":"English","note":""},{"uk":"міський","translit":"","en":"urban, city","note":""},{"uk":"сільський","translit":"","en":"rural, village","note":""},{"uk":"людський","translit":"","en":"human","note":""},{"uk":"дитячий","translit":"","en":"children's","note":""},{"uk":"жіночий","translit":"","en":"female, women's","note":""},{"uk":"чоловічий","translit":"","en":"male, men's","note":""},{"uk":"кольоровий","translit":"","en":"colored","note":""},{"uk":"смаковий","translit":"","en":"taste (adj)","note":""},{"uk":"матеріальний","translit":"","en":"material","note":""},{"uk":"духовний","translit":"","en":"spiritual","note":""},{"uk":"фізичний","translit":"","en":"physical","note":""},{"uk":"хімічний","translit":"","en":"chemical","note":""},{"uk":"історичний","translit":"","en":"historical","note":""},{"uk":"географічний","translit":"","en":"geographical","note":""},{"uk":"математичний","translit":"","en":"mathematical","note":""},{"uk":"робочий","translit":"","en":"working","note":""},{"uk":"лежачий","translit":"","en":"lying, bedridden","note":""},{"uk":"стоячий","translit":"","en":"standing","note":""},{"uk":"біжучий","translit":"","en":"running","note":""},{"uk":"гарячий","translit":"","en":"hot","note":""},{"uk":"холодний","translit":"","en":"cold","note":""},{"uk":"теплий","translit":"","en":"warm","note":""},{"uk":"свіжий","translit":"","en":"fresh","note":""},{"uk":"старий","translit":"","en":"old","note":""},{"uk":"молодий","translit":"","en":"young","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1308,8 +1150,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1340,8 +1182,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1753,7 +1595,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1763,7 +1605,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1964,6 +1808,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

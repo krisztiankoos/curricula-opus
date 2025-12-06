@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 33: The Dative III | Ukrainian A2</title>
+  <title>Module 33: Suffixes I: Nouns | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 33: The Dative III</h1>
+    <h1>Module 33: Suffixes I: Nouns</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Fill</button>
-      <button class="nav-tab" data-section="activity-6">7. Sort</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,443 +497,510 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">The Dative III</h2>
-        <p style="color:var(--text-muted)">Verbs + Dative</p>
+        <span class="level-badge">A2 · A2.4</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Suffixes I: Nouns</h2>
+        <p style="color:var(--text-muted)">Noun-Forming Suffixes</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="notjustgiveandtell">Not Just "Give" and "Tell"</h3>
-<p>In Modules 31-32, you used dative with verbs like давати (give) and казати (tell). But many more Ukrainian verbs require dative - and they're not always the same as English!</p>
-<p><strong>The surprise:</strong></p>
-<ul>
-<li>English: I help <strong>him</strong>. (accusative-like)</li>
-<li>Ukrainian: Я допомагаю <strong>йому</strong>. (dative!)</li>
-</ul>
-<p>Some verbs that take direct objects in English use dative in Ukrainian. Today you'll learn which ones - and why.</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The dative case originally marked the "receiver" of an action. In Ukrainian, this extends to anyone who <em>benefits</em> from or is <em>affected</em> by an action - even if they're not receiving a physical object. That's why допомагати (help), дякувати (thank), and заважати (disturb) all use dative!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="coredativeverbs">Core Dative Verbs</h3>
-<p>These verbs ALWAYS take dative objects:</p>
+      <div class="md-content"><p>Every language multiplies vocabulary through word formation. In English, "read" becomes "reading" and "reader." Ukrainian does the same! From читати (to read), you get читання (reading) and читач (reader). Master these suffixes and you'll recognize — and create — hundreds of new words!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Verbal Nouns (-ння/-ття)</h3>
+      <div class="md-content"><h2 id="fromverbstonouns">From Verbs to Nouns</h2>
 <table>
 <thead>
 <tr>
 <th>Verb</th>
-<th>Meaning</th>
-<th>Example</th>
+<th>Verbal Noun</th>
+<th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>допомагати</td>
-<td>to help</td>
-<td>Допомагаю <strong>братові</strong>.</td>
-</tr>
-<tr>
-<td>дякувати</td>
-<td>to thank</td>
-<td>Дякую <strong>вам</strong>!</td>
-</tr>
-<tr>
-<td>відповідати</td>
-<td>to answer</td>
-<td>Відповідаю <strong>вчителеві</strong>.</td>
-</tr>
-<tr>
-<td>заважати</td>
-<td>to disturb</td>
-<td>Не заважай <strong>мені</strong>!</td>
-</tr>
-<tr>
-<td>радити</td>
-<td>to advise</td>
-<td>Раджу <strong>тобі</strong> відпочити.</td>
-</tr>
-<tr>
-<td>телефонувати</td>
-<td>to phone</td>
-<td>Телефоную <strong>мамі</strong>.</td>
-</tr>
-<tr>
-<td>належати</td>
-<td>to belong</td>
-<td>Це належить <strong>йому</strong>.</td>
-</tr>
-<tr>
-<td>подобатися</td>
-<td>to please/like</td>
-<td>Це <strong>мені</strong> подобається.</td>
-</tr>
-<tr>
-<td>вдаватися</td>
-<td>to succeed</td>
-<td><strong>Йому</strong> вдається все.</td>
-</tr>
-<tr>
-<td>бракувати</td>
-<td>to lack</td>
-<td><strong>Мені</strong> бракує часу.</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: The "Beneficiary" Test</strong></p>
-  <p>If someone benefits from, is affected by, or receives the result of an action - even without getting a physical object - use dative. Think: "Who does this action happen <em>to</em> or <em>for</em>?"</p>
-</blockquote>
-<h3 id="verbsofcommunication">Verbs of Communication</h3>
-<p>Speaking and writing to someone uses dative:</p>
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>відповідати</td>
-<td>відповідати</td>
-<td>відповісти</td>
-<td>Відповідаю <strong>професорові</strong>.</td>
+<td>читати</td>
+<td>читання</td>
+<td>reading</td>
 </tr>
 <tr>
 <td>писати</td>
-<td>писати</td>
-<td>написати</td>
-<td>Пишу <strong>другові</strong>.</td>
+<td>писання</td>
+<td>writing</td>
 </tr>
 <tr>
-<td>говорити</td>
-<td>говорити</td>
-<td>сказати</td>
-<td>Кажу <strong>тобі</strong> правду.</td>
+<td>навчати</td>
+<td>навчання</td>
+<td>teaching, learning</td>
 </tr>
 <tr>
-<td>дзвонити</td>
-<td>дзвонити</td>
-<td>подзвонити</td>
-<td>Дзвоню <strong>батькам</strong>.</td>
+<td>жити</td>
+<td>життя</td>
+<td>life</td>
 </tr>
 <tr>
-<td>повідомляти</td>
-<td>повідомляти</td>
-<td>повідомити</td>
-<td>Повідомлю <strong>вам</strong> завтра.</td>
+<td>почувати</td>
+<td>почуття</td>
+<td>feeling</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Pattern:</strong> говорити/казати/писати + DATIVE (person) + ACCUSATIVE (what)</p>
+<p><strong>Pattern:</strong> Most verbs form nouns with <strong>-ння</strong>, verbs ending in -ти often use <strong>-ття</strong>.</p>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
 <ul>
-<li>Я кажу <strong>тобі</strong> (dat) <strong>правду</strong> (acc). - I tell you the truth.</li>
-<li>Вона пише <strong>другові</strong> (dat) <strong>листа</strong> (acc). - She writes a letter to a friend.</li>
+<li><strong>Читання</strong> книг — моє хобі. (Reading books is my hobby.)</li>
+<li><strong>Навчання</strong> української — цікаве. (Learning Ukrainian is interesting.)</li>
+<li><strong>Життя</strong> — це подорож. (Life is a journey.)</li>
+<li>Яке твоє <strong>почуття</strong>? (What is your feeling?)</li>
+<li><strong>Писання</strong> листів займає час. (Writing letters takes time.)</li>
 </ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>📜 <strong>History Bite: Dative of Interest</strong></p>
-  <p>Slavic languages preserved an ancient Indo-European pattern called the "dative of interest" - marking who has a stake in an action. Latin had it, Greek had it, Sanskrit had it. When you say "Мені подобається" (to me it pleases), you're using grammar that's over 5,000 years old!</p>
+  <p>"Життя" (life) comes from "жити" (to live) — the same pattern that gives English "living" from "live"!</p>
 </blockquote>
-<h3 id="impersonaldativeconstructions">Impersonal + Dative Constructions</h3>
-<p>Many impersonal expressions use dative for the person experiencing something:</p>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
-<th>Meaning</th>
-<th>Structure</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>мені холодно</td>
-<td>I'm cold</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>тобі сумно</td>
-<td>you're sad</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>йому важко</td>
-<td>it's hard for him</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>їй весело</td>
-<td>she's having fun</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>нам потрібно</td>
-<td>we need</td>
-<td>DAT + потрібно</td>
-</tr>
-<tr>
-<td>вам треба</td>
-<td>you must</td>
-<td>DAT + треба</td>
-</tr>
-<tr>
-<td>їм можна</td>
-<td>they may</td>
-<td>DAT + можна</td>
-</tr>
-<tr>
-<td>мені не можна</td>
-<td>I mustn't</td>
-<td>DAT + не можна</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Мені</strong> холодно. - I'm cold. (lit: To me [it's] cold.)</li>
-<li><strong>Тобі</strong> потрібна допомога? - Do you need help?</li>
-<li><strong>Йому</strong> важко це зрозуміти. - It's hard for him to understand this.</li>
-<li><strong>Їм</strong> не можна палити тут. - They can't smoke here.</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Indirect Expression</strong></p>
-  <p>Ukrainian often expresses personal states indirectly: "Мені сумно" (to me it's sad) rather than "I am sad." This isn't evasion - it's a different way of experiencing: the feeling happens <em>to</em> you rather than <em>being</em> you. This subtle difference reflects a worldview where emotions are things that affect us, not just things we are.</p>
-</blockquote>
-<h3 id="dativevsaccusativethekeydifference">Dative vs Accusative: The Key Difference</h3>
-<p>Some verbs look similar but take different cases:</p>
-<table>
-<thead>
-<tr>
-<th>Dative verb</th>
-<th>Meaning</th>
-<th>Accusative verb</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати <strong>йому</strong></td>
-<td>help him</td>
-<td>бачити <strong>його</strong></td>
-<td>see him</td>
-</tr>
-<tr>
-<td>відповідати <strong>їй</strong></td>
-<td>answer her</td>
-<td>питати <strong>її</strong></td>
-<td>ask her</td>
-</tr>
-<tr>
-<td>дякувати <strong>нам</strong></td>
-<td>thank us</td>
-<td>любити <strong>нас</strong></td>
-<td>love us</td>
-</tr>
-<tr>
-<td>радити <strong>вам</strong></td>
-<td>advise you</td>
-<td>знати <strong>вас</strong></td>
-<td>know you</td>
-</tr>
-<tr>
-<td>заважати <strong>їм</strong></td>
-<td>disturb them</td>
-<td>чути <strong>їх</strong></td>
-<td>hear them</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Test:</strong></p>
-<ul>
-<li>Accusative = direct action ON someone (see, hear, love, know)</li>
-<li>Dative = action AFFECTS/BENEFITS someone (help, thank, answer, advise)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Memorize These Pairs</strong></p>
-  <p>Learn these dative verbs as a group:</p>
-  <ul>
-  <li><strong>Д</strong>опомагати (help)</li>
-  <li><strong>Д</strong>якувати (thank)</li>
-  <li><strong>В</strong>ідповідати (answer)</li>
-  <li><strong>З</strong>аважати (disturb)</li>
-  <li><strong>Р</strong>адити (advise)</li>
-  </ul>
-  <p>Notice they're about social interaction, not physical action!</p>
-</blockquote>
-<h3 id="verbsofhappeningsucceeding">Verbs of Happening/Succeeding</h3>
-<p>When things happen TO someone or succeed FOR someone:</p>
+<hr />
+<h2 id="moreverbalnouns">More Verbal Nouns</h2>
 <table>
 <thead>
 <tr>
 <th>Verb</th>
-<th>Meaning</th>
+<th>Verbal Noun</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>питати</td>
+<td>питання</td>
+<td>question</td>
+</tr>
+<tr>
+<td>бажати</td>
+<td>бажання</td>
+<td>wish, desire</td>
+</tr>
+<tr>
+<td>знати</td>
+<td>знання</td>
+<td>knowledge</td>
+</tr>
+<tr>
+<td>вчити</td>
+<td>вчення</td>
+<td>teaching, doctrine</td>
+</tr>
+<tr>
+<td>мовчати</td>
+<td>мовчання</td>
+<td>silence</td>
+</tr>
+<tr>
+<td>малювати</td>
+<td>малювання</td>
+<td>drawing, painting</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>У мене є <strong>питання</strong>. (I have a question.)</li>
+<li>Це моє <strong>бажання</strong>. (This is my wish.)</li>
+<li><strong>Знання</strong> — сила. (Knowledge is power.)</li>
+<li><strong>Мовчання</strong> — золото. (Silence is golden.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Abstract Nouns (-ість)</h3>
+      <div class="md-content"><h2 id="fromadjectivestoabstractnouns">From Adjectives to Abstract Nouns</h2>
+<table>
+<thead>
+<tr>
+<th>Adjective</th>
+<th>Abstract Noun</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>важливий</td>
+<td>важливість</td>
+<td>importance</td>
+</tr>
+<tr>
+<td>можливий</td>
+<td>можливість</td>
+<td>possibility</td>
+</tr>
+<tr>
+<td>відповідальний</td>
+<td>відповідальність</td>
+<td>responsibility</td>
+</tr>
+<tr>
+<td>радісний</td>
+<td>радість</td>
+<td>joy</td>
+</tr>
+<tr>
+<td>молодий</td>
+<td>молодість</td>
+<td>youth</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pattern:</strong> Adjectives form abstract nouns with <strong>-ість</strong> (or <strong>-ість</strong> after soft consonants).</p>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li>Це велика <strong>важливість</strong>. (This is of great importance.)</li>
+<li>Є <strong>можливість</strong> вивчити. (There's a possibility to learn.)</li>
+<li>Несеш <strong>відповідальність</strong>. (You bear responsibility.)</li>
+<li>Яка <strong>радість</strong>! (What joy!)</li>
+<li><strong>Молодість</strong> минає швидко. (Youth passes quickly.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<blockquote>
+  <p>Ukrainian proverb: <em>Молодість — не гріх</em> — Youth is no sin!</p>
+</blockquote>
+<hr />
+<h2 id="moreabstractnouns">More Abstract Nouns</h2>
+<table>
+<thead>
+<tr>
+<th>Adjective</th>
+<th>Abstract Noun</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>старий</td>
+<td>старість</td>
+<td>old age</td>
+</tr>
+<tr>
+<td>щасливий</td>
+<td>щасливість</td>
+<td>happiness</td>
+</tr>
+<tr>
+<td>творчий</td>
+<td>творчість</td>
+<td>creativity</td>
+</tr>
+<tr>
+<td>людський</td>
+<td>людськість</td>
+<td>humanity</td>
+</tr>
+<tr>
+<td>особистий</td>
+<td>особистість</td>
+<td>personality</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Старість</strong> приходить до всіх. (Old age comes to everyone.)</li>
+<li><strong>Творчість</strong> — це вираження себе. (Creativity is self-expression.)</li>
+<li><strong>Особистість</strong> формується роками. (Personality forms over years.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Agent Nouns (-ач/-ець/-ник)</h3>
+      <div class="md-content"><h2 id="whodoestheaction">Who Does the Action?</h2>
+<table>
+<thead>
+<tr>
+<th>Verb/Root</th>
+<th>Agent Noun</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>читати</td>
+<td>читач</td>
+<td>reader</td>
+</tr>
+<tr>
+<td>слухати</td>
+<td>слухач</td>
+<td>listener</td>
+</tr>
+<tr>
+<td>глядати</td>
+<td>глядач</td>
+<td>viewer, spectator</td>
+</tr>
+<tr>
+<td>співати</td>
+<td>співець</td>
+<td>singer</td>
+</tr>
+<tr>
+<td>борець</td>
+<td>борець</td>
+<td>fighter</td>
+</tr>
+<tr>
+<td>письмо</td>
+<td>письменник</td>
+<td>writer</td>
+</tr>
+<tr>
+<td>вчити</td>
+<td>вчитель</td>
+<td>teacher</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Patterns:</strong></p>
+<ul>
+<li><strong>-ач</strong>: читач, слухач, глядач (from action verbs)</li>
+<li><strong>-ець</strong>: співець, борець (often profession/role)</li>
+<li><strong>-ник/-тель</strong>: письменник, вчитель (profession)</li>
+</ul>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li>Я — активний <strong>читач</strong>. (I'm an active reader.)</li>
+<li><strong>Слухачі</strong> аплодували. (The listeners applauded.)</li>
+<li>Мій батько — <strong>письменник</strong>. (My father is a writer.)</li>
+<li>Вона — відома <strong>співачка</strong>. (She's a famous singer.)</li>
+<li>Він — борець за свободу. (He's a fighter for freedom.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>"Глядач" (viewer) — you'll see this word at cinema and theater box offices: <em>Кількість глядачів</em> — Number of viewers!</p>
+</blockquote>
+<hr />
+<h2 id="moreagentnouns">More Agent Nouns</h2>
+<table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Agent</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>водити</td>
+<td>водій</td>
+<td>driver</td>
+</tr>
+<tr>
+<td>продавати</td>
+<td>продавець</td>
+<td>seller</td>
+</tr>
+<tr>
+<td>робити</td>
+<td>робітник</td>
+<td>worker</td>
+</tr>
+<tr>
+<td>вчитися</td>
+<td>учень</td>
+<td>student</td>
+</tr>
+<tr>
+<td>грати</td>
+<td>гравець</td>
+<td>player</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Водій</strong> таксі приїхав. (The taxi driver arrived.)</li>
+<li><strong>Продавець</strong> допоміг мені. (The seller helped me.)</li>
+<li><strong>Робітники</strong> працюють. (Workers are working.)</li>
+<li>Він хороший <strong>гравець</strong>. (He's a good player.)</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Diminutives (-ик/-ок/-очок/-ечка)</h3>
+      <div class="md-content"><h2 id="makingthingssmallandcute">Making Things Small and Cute</h2>
+<table>
+<thead>
+<tr>
+<th>Base Word</th>
+<th>Diminutive</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>дім</td>
+<td>домик</td>
+<td>little house</td>
+</tr>
+<tr>
+<td>кіт</td>
+<td>котик</td>
+<td>kitty</td>
+</tr>
+<tr>
+<td>син</td>
+<td>синок</td>
+<td>little son (sonny)</td>
+</tr>
+<tr>
+<td>брат</td>
+<td>братик</td>
+<td>little brother</td>
+</tr>
+<tr>
+<td>сестра</td>
+<td>сестричка</td>
+<td>little sister</td>
+</tr>
+<tr>
+<td>книга</td>
+<td>книжечка</td>
+<td>little book</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Patterns:</strong></p>
+<ul>
+<li><strong>-ик</strong>: домик, котик (masculine)</li>
+<li><strong>-ок</strong>: синок (masculine)</li>
+<li><strong>-очок/-ечка</strong>: для більшої пестливості</li>
+<li><strong>-ичка/-ечка</strong>: сестричка, книжечка (feminine)</li>
+</ul>
+<hr />
+<h2 id="examplesincontext">Examples in Context</h2>
+<ul>
+<li>Який гарний <strong>котик</strong>! (What a cute kitty!)</li>
+<li>Мій <strong>синок</strong> грається. (My little son is playing.)</li>
+<li>Любий <strong>братику</strong>! (Dear little brother!)</li>
+<li>Прочитай цю <strong>книжечку</strong>. (Read this little book.)</li>
+<li>Дивись, яке <strong>сонечко</strong>! (Look, what a lovely sun!)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>In Ukrainian games, diminutives show affection: <em>Мій маленький котик</em> — My little kitty!</p>
+</blockquote>
+<hr />
+<h2 id="morediminutives">More Diminutives</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Diminutive</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>квітка</td>
+<td>квіточка</td>
+<td>little flower</td>
+</tr>
+<tr>
+<td>рука</td>
+<td>ручечка</td>
+<td>little hand</td>
+</tr>
+<tr>
+<td>голова</td>
+<td>голівка</td>
+<td>little head</td>
+</tr>
+<tr>
+<td>дівчина</td>
+<td>дівчинка</td>
+<td>little girl</td>
+</tr>
+<tr>
+<td>хлопець</td>
+<td>хлопчик</td>
+<td>little boy</td>
+</tr>
+<tr>
+<td>сонце</td>
+<td>сонечко</td>
+<td>little sun (dear)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Яка красива <strong>квіточка</strong>! (What a beautiful little flower!)</li>
+<li><strong>Дівчинка</strong> посміхається. (The little girl is smiling.)</li>
+<li><strong>Хлопчик</strong> біжить. (The little boy is running.)</li>
+<li><strong>Сонечко</strong> моє! (My dear! — term of endearment)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<blockquote>
+  <p>Ukrainians use diminutives to express affection. "Сонечко" (little sun) is a common term of endearment, like "sweetheart" in English!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Suffix Summary</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Suffix</th>
+<th>Creates</th>
+<th>From</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>вдаватися</td>
-<td>to succeed</td>
-<td><strong>Мені</strong> вдається це зробити.</td>
+<td>-ння/-ття</td>
+<td>Verbal nouns</td>
+<td>Verbs</td>
+<td>читати → читання</td>
 </tr>
 <tr>
-<td>щастити</td>
-<td>to be lucky</td>
-<td><strong>Йому</strong> завжди щастить!</td>
+<td>-ість</td>
+<td>Abstract nouns</td>
+<td>Adjectives</td>
+<td>важливий → важливість</td>
 </tr>
 <tr>
-<td>снитися</td>
-<td>to dream (appear in dream)</td>
-<td><strong>Їй</strong> сниться море.</td>
+<td>-ач/-ець</td>
+<td>Agent nouns</td>
+<td>Verbs</td>
+<td>читати → читач</td>
 </tr>
 <tr>
-<td>здаватися</td>
-<td>to seem</td>
-<td><strong>Нам</strong> здається, що…</td>
+<td>-ник/-тель</td>
+<td>Professional</td>
+<td>Nouns/verbs</td>
+<td>вчити → вчитель</td>
 </tr>
 <tr>
-<td>личити</td>
-<td>to suit/become</td>
-<td>Ця сукня <strong>їй</strong> личить.</td>
+<td>-ик/-ок</td>
+<td>Diminutives (m)</td>
+<td>Nouns</td>
+<td>кіт → котик</td>
+</tr>
+<tr>
+<td>-ечка/-ичка</td>
+<td>Diminutives (f)</td>
+<td>Nouns</td>
+<td>книга → книжечка</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Мені</strong> сниться Україна. - I dream of Ukraine. (lit: Ukraine appears in my dream)</li>
-<li><strong>Тобі</strong> це личить! - This suits you!</li>
-<li><strong>Їм</strong> здається, що все добре. - It seems to them that everything's fine.</li>
-</ul>
-<h3 id="thelackingconstruction">The "Lacking" Construction</h3>
-<p>To express lacking or missing, use <strong>бракувати</strong> + dative + genitive:</p>
-<p><strong>Structure:</strong> DATIVE (who lacks) + бракувати + GENITIVE (what's lacking)</p>
-<ul>
-<li><strong>Мені</strong> бракує <strong>часу</strong>. - I lack time.</li>
-<li><strong>Тобі</strong> бракує <strong>досвіду</strong>. - You lack experience.</li>
-<li><strong>Йому</strong> бракує <strong>грошей</strong>. - He lacks money.</li>
-<li><strong>Нам</strong> бракувало <strong>інформації</strong>. - We lacked information.</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The verb бракувати comes from German "brauchen" (to need) and entered Ukrainian through Polish. It perfectly captures the dative sense: "to me there is lacking of time" rather than "I lack time."</p>
-</blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="identifythedativeverb">Identify the Dative Verb</h3>
-<p>Which verbs require dative?</p>
-<ol>
-<li><p>допомагати ✓ (help</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="2">
-<li><p>бачити ✗ (see</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="3">
-<li><p>відповідати ✓ (answer</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="4">
-<li><p>знати ✗ (know</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="5">
-<li><p>дякувати ✓ (thank</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="6">
-<li><p>любити ✗ (love</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="7">
-<li><p>заважати ✓ (disturb</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="8">
-<li><p>радити ✓ (advise</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<h3 id="completewithcorrectcase">Complete with Correct Case</h3>
-<p>Fill in dative or accusative:</p>
-<ol>
-<li><p>Я допомагаю ___ (він).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">йому (dative)</div></div>
-<ol start="2">
-<li><p>Вона бачить ___ (він).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">його (accusative)</div></div>
-<ol start="3">
-<li><p>Ми відповідаємо ___ (вчитель).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">вчителеві (dative)</div></div>
-<ol start="4">
-<li><p>Він знає ___ (вона).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">її (accusative)</div></div>
-<ol start="5">
-<li><p>Дякую ___ (ви)!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">вам (dative)</div></div>
-<ol start="6">
-<li><p>Вони чують ___ (ми).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">нас (accusative)</div></div>
-<ol start="7">
-<li><p>Не заважай ___ (я)!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">мені (dative)</div></div>
-<ol start="8">
-<li><p>Раджу ___ (ти) відпочити.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">тобі (dative)</div></div>
-<h3 id="buildimpersonalsentences">Build Impersonal Sentences</h3>
-<p>Create sentences with impersonal + dative:</p>
-<ol>
-<li><p>я / холодно</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">Мені холодно.</div></div>
-<ol start="2">
-<li><p>він / важко / зрозуміти</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">Йому важко зрозуміти.</div></div>
-<ol start="3">
-<li><p>вони / потрібно / допомога</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">Їм потрібна допомога.</div></div>
-<ol start="4">
-<li><p>ти / можна / йти</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-19', this)">Показати відповідь</button><div class="answer-block" id="ans-19"><div class="callout callout-answer" data-callout="answer">Тобі можна йти.</div></div>
-<ol start="5">
-<li><p>ми / бракувати / час</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Нам бракує часу.</div></div>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Office help</strong></p>
-<ul>
-<li>Можеш допомогти мені?</li>
-<li>Звісно! Що тобі потрібно?</li>
-<li>Мені важко зрозуміти цей документ.</li>
-<li>Зараз поясню тобі. Не хвилюйся!</li>
-</ul>
-<p><strong>Scenario 2: Phone call</strong></p>
-<ul>
-<li>Алло! Телефоную тобі з новиною!</li>
-<li>Що сталося? Розкажи мені!</li>
-<li>Мені вдалося отримати роботу!</li>
-<li>Вітаю! Я так радий за тебе!</li>
-</ul>
-<p><strong>Scenario 3: Asking for advice</strong></p>
-<ul>
-<li>Що ти мені радиш?</li>
-<li>Раджу тобі поговорити з ним.</li>
-<li>Мені здається, він не хоче слухати.</li>
-<li>Все одно спробуй. Йому потрібна твоя підтримка.</li>
-</ul>
 <hr />
 <hr />
 <hr /></div>
@@ -915,141 +1009,14 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="coredativeverbs">Core Dative Verbs</h2>
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати</td>
-<td>help</td>
-<td>йому</td>
-</tr>
-<tr>
-<td>дякувати</td>
-<td>thank</td>
-<td>вам</td>
-</tr>
-<tr>
-<td>відповідати</td>
-<td>answer</td>
-<td>їй</td>
-</tr>
-<tr>
-<td>заважати</td>
-<td>disturb</td>
-<td>мені</td>
-</tr>
-<tr>
-<td>радити</td>
-<td>advise</td>
-<td>тобі</td>
-</tr>
-<tr>
-<td>телефонувати</td>
-<td>phone</td>
-<td>батькам</td>
-</tr>
-<tr>
-<td>належати</td>
-<td>belong</td>
-<td>йому</td>
-</tr>
-<tr>
-<td>подобатися</td>
-<td>please</td>
-<td>мені</td>
-</tr>
-<tr>
-<td>вдаватися</td>
-<td>succeed</td>
-<td>нам</td>
-</tr>
-<tr>
-<td>бракувати</td>
-<td>lack</td>
-<td>їм</td>
-</tr>
-</tbody>
-</table>
-<h2 id="impersonaldative">Impersonal + Dative</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DAT + холодно</td>
-<td>Мені холодно.</td>
-<td>I'm cold.</td>
-</tr>
-<tr>
-<td>DAT + потрібно</td>
-<td>Тобі потрібно.</td>
-<td>You need.</td>
-</tr>
-<tr>
-<td>DAT + можна</td>
-<td>Їм можна.</td>
-<td>They may.</td>
-</tr>
-<tr>
-<td>DAT + важко</td>
-<td>Йому важко.</td>
-<td>It's hard for him.</td>
-</tr>
-<tr>
-<td>DAT + здається</td>
-<td>Нам здається.</td>
-<td>It seems to us.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keydistinction">Key Distinction</h2>
-<table>
-<thead>
-<tr>
-<th>Dative (affected by)</th>
-<th>Accusative (acted on)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати йому</td>
-<td>бачити його</td>
-</tr>
-<tr>
-<td>дякувати їй</td>
-<td>любити її</td>
-</tr>
-<tr>
-<td>відповідати нам</td>
-<td>знати нас</td>
-</tr>
-<tr>
-<td>заважати їм</td>
-<td>чути їх</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Many verbs of social interaction require dative (help, thank, answer, advise, disturb)</li>
-  <li>Impersonal constructions use dative for the experiencer (мені холодно, тобі потрібно)</li>
-  <li>Dative = who is affected/benefits; Accusative = direct object of action</li>
-  <li>Test: Does the action happen TO/FOR someone? → Use dative</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>You've learned powerful word-formation tools:</p>
+<ul>
+<li><strong>Verbal nouns (-ння/-ття)</strong>: читати → читання, жити → життя</li>
+<li><strong>Abstract nouns (-ість)</strong>: важливий → важливість</li>
+<li><strong>Agent nouns (-ач/-ець/-ник)</strong>: читати → читач, співати → співець</li>
+<li><strong>Diminutives (-ик/-ок/-ечка)</strong>: кіт → котик, книга → книжечка</li>
+</ul>
+<p><strong>Coming up next</strong>: Suffixes II — forming adjectives from nouns and verbs!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1058,69 +1025,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Dative Verbs</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Suffix Practice</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Suffixes and Functions</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Sentence Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Suffix Knowledge</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Suffix Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Choose the Correct Dative Form</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Suffix Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Dative Verb Categories</h3>
+    <section id="activity-6" class="section"><div class="card"><h3>Complete the Sentence</h3>
       <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
-      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
-      <div class="sort-groups" id="activity-6-groups"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Dative Sentence Building</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Suffix</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (29)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1130,7 +1104,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">відповідати</td><td class="vocab-ipa">/vidpoviˈdɑtɪ/</td><td class="vocab-en">to answer</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">заважати</td><td class="vocab-ipa">/zɑvɑˈʒɑtɪ/</td><td class="vocab-en">to disturb</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-ipa">/ˈrɑdɪtɪ/</td><td class="vocab-en">to advise</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">належати</td><td class="vocab-ipa">/nɑˈlɛʒɑtɪ/</td><td class="vocab-en">to belong</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вдаватися</td><td class="vocab-ipa">/vdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to succeed</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">щастити</td><td class="vocab-ipa">/ʃtʃɑˈstɪtɪ/</td><td class="vocab-en">to be lucky</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">снитися</td><td class="vocab-ipa">/snɪˈtɪsʲɑ/</td><td class="vocab-en">to appear in dream</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">личити</td><td class="vocab-ipa">/ˈlɪtʃɪtɪ/</td><td class="vocab-en">to suit/become</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">бракувати</td><td class="vocab-ipa">/brɑkuˈvɑtɪ/</td><td class="vocab-en">to lack</td><td class="vocab-note">+ dat + gen</td></tr><tr><td class="vocab-uk">повідомляти</td><td class="vocab-ipa">/povidomˈlʲɑtɪ/</td><td class="vocab-en">to inform</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">давати</td><td class="vocab-ipa">/dɑˈvɑtɪ/</td><td class="vocab-en">to give (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">казати</td><td class="vocab-ipa">/kɑˈzɑtɪ/</td><td class="vocab-en">to tell (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦɔvɔˈrɪtɪ/</td><td class="vocab-en">to speak (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-ipa">/rɔzpɔvʲiˈdɑtɪ/</td><td class="vocab-en">to tell a story (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">пояснювати</td><td class="vocab-ipa">/pɔˈjɑsnʲuvɑtɪ/</td><td class="vocab-en">to explain (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">допомагати</td><td class="vocab-ipa">/dɔpɔmɑˈɦɑtɪ/</td><td class="vocab-en">to help (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-ipa">/prɔpɔnuˈvɑtɪ/</td><td class="vocab-en">to offer (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дзвонити</td><td class="vocab-ipa">/dzvɔˈnɪtɪ/</td><td class="vocab-en">to call (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">писати</td><td class="vocab-ipa">/pɪˈsɑtɪ/</td><td class="vocab-en">to write (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дякувати</td><td class="vocab-ipa">/ˈdʲɑkuvɑtɪ/</td><td class="vocab-en">to thank (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вибачатися</td><td class="vocab-ipa">/vɪbɑˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to apologize</td><td class="vocab-note">перед + instr (usually)</td></tr><tr><td class="vocab-uk">шкодити</td><td class="vocab-ipa">/ˈʃkɔdɪtɪ/</td><td class="vocab-en">to harm</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">подобатися</td><td class="vocab-ipa">/pɔˈdɔbɑtɪsʲɑ/</td><td class="vocab-en">to like</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вистачати</td><td class="vocab-ipa">/vɪstɑˈtʃɑtɪ/</td><td class="vocab-en">to be enough</td><td class="vocab-note">+ dat + gen</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-ipa">/zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to seem</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">важко</td><td class="vocab-ipa">/ˈvɑʒko/</td><td class="vocab-en">hard, difficult</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">весело</td><td class="vocab-ipa">/ˈvɛsɛlo/</td><td class="vocab-en">fun, merry</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">сумно</td><td class="vocab-ipa">/ˈsumno/</td><td class="vocab-en">sad</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">досвід</td><td class="vocab-ipa">/ˈdosvʲid/</td><td class="vocab-en">experience</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">читання</td><td class="vocab-ipa">/tʃɪˈtanːa/</td><td class="vocab-en">reading</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">писання</td><td class="vocab-ipa">/pɪˈsanːa/</td><td class="vocab-en">writing</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">навчання</td><td class="vocab-ipa">/nawˈtʃanːa/</td><td class="vocab-en">learning, teaching</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">життя</td><td class="vocab-ipa">/ʒɪˈtːa/</td><td class="vocab-en">life</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">питання</td><td class="vocab-ipa">/pɪˈtanːa/</td><td class="vocab-en">question</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">завдання</td><td class="vocab-ipa">/zawˈdanːa/</td><td class="vocab-en">task, assignment</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">важливість</td><td class="vocab-ipa">/waʒlɪˈwistʲ/</td><td class="vocab-en">importance</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/moʒlɪˈwistʲ/</td><td class="vocab-en">possibility</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відповідальність</td><td class="vocab-ipa">/widpowidˈalʲnistʲ/</td><td class="vocab-en">responsibility</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">радість</td><td class="vocab-ipa">/ˈradistʲ/</td><td class="vocab-en">joy</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">молодість</td><td class="vocab-ipa">/ˈmolodistʲ/</td><td class="vocab-en">youth</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">старість</td><td class="vocab-ipa">/ˈstaristʲ/</td><td class="vocab-en">old age</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">читач</td><td class="vocab-ipa">/tʃɪˈtatʃ/</td><td class="vocab-en">reader</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">письменник</td><td class="vocab-ipa">/pɪsʲˈmɛnːɪk/</td><td class="vocab-en">writer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вчитель</td><td class="vocab-ipa">/wtʃɪˈtɛlʲ/</td><td class="vocab-en">teacher</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">водій</td><td class="vocab-ipa">/woˈdij/</td><td class="vocab-en">driver</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">продавець</td><td class="vocab-ipa">/prodaˈwɛtsʲ/</td><td class="vocab-en">seller</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">співець</td><td class="vocab-ipa">/spiˈwɛtsʲ/</td><td class="vocab-en">singer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">борець</td><td class="vocab-ipa">/boˈrɛtsʲ/</td><td class="vocab-en">fighter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">глядач</td><td class="vocab-ipa">/ɦlʲaˈdatʃ/</td><td class="vocab-en">viewer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">домик</td><td class="vocab-ipa">/ˈdomɪk/</td><td class="vocab-en">little house</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">котик</td><td class="vocab-ipa">/ˈkotɪk/</td><td class="vocab-en">kitty</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">синок</td><td class="vocab-ipa">/sɪˈnok/</td><td class="vocab-en">little son</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">братик</td><td class="vocab-ipa">/ˈbratɪk/</td><td class="vocab-en">little brother</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">сестричка</td><td class="vocab-ipa">/sɛsˈtrɪtʃka/</td><td class="vocab-en">little sister</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">книжечка</td><td class="vocab-ipa">/knɪˈʒɛtʃka/</td><td class="vocab-en">little book</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">ручечка</td><td class="vocab-ipa">/ruˈtʃɛtʃka/</td><td class="vocab-en">little hand</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">квіточка</td><td class="vocab-ipa">/kwiˈtotʃka/</td><td class="vocab-en">little flower</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">сонечко</td><td class="vocab-ipa">/ˈsonɛtʃko/</td><td class="vocab-en">little sun, dear</td><td class="vocab-note">diminutive</td></tr><tr><td class="vocab-uk">дівчинка</td><td class="vocab-ipa">/diwˈtʃɪnka/</td><td class="vocab-en">little girl</td><td class="vocab-note">diminutive</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1142,8 +1116,8 @@ footer {
   </main><footer>Module 33 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Verbs","data":{"type":"fill-blank","items":[{"prompt":"Я завжди з радістю допомагаю ___ (брат).","answer":"братові / брату","hints":["брат"],"options":["брат","братові","брату","брата"]},{"prompt":"Дякую ___ (ви) за вашу допомогу сьогодні!","answer":"вам","hints":["ви"],"options":["ви","вас","вам","вами"]},{"prompt":"Вона відповідає ___ (вчитель) на уроці англійської.","answer":"вчителеві / вчителю","hints":["вчитель"],"options":["вчитель","вчителеві","вчителю","вчителя"]},{"prompt":"Не заважай ___ (я), коли я працюю, будь ласка!","answer":"мені","hints":["я"],"options":["я","мене","мені","мною"]},{"prompt":"Що ви радите ___ (ми) робити в цій ситуації?","answer":"нам","hints":["ми"],"options":["ми","нас","нам","нами"]},{"prompt":"___ (він) сьогодні дуже холодно без куртки.","answer":"Йому","hints":["він"],"options":["Він","Його","Йому","Ним"]},{"prompt":"___ (вона) важко зрозуміти цю нову граматику.","answer":"Їй","hints":["вона"],"options":["Вона","Її","Їй","Нею"]},{"prompt":"Ця книга належить ___ (моя сестра) з дитинства.","answer":"моїй сестрі","hints":["моя сестра"],"options":["моя сестра","мою сестру","моїй сестрі","моєю сестрою"]},{"prompt":"___ (ти) потрібна допомога з домашнім завданням?","answer":"Тобі","hints":["ти"],"options":["Ти","Тебе","Тобі","Тобою"]},{"prompt":"___ (я) бракує часу для спорту цього тижня.","answer":"Мені","hints":["я"],"options":["Я","Мене","Мені","Мною"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["допомагаю","Я","братові","завжди","з радістю"],"answer":"Я завжди з радістю допомагаю братові.","translation":"I always gladly help my brother."},{"words":["вам","Дякую","за","вашу","допомогу","сьогодні"],"answer":"Дякую вам за вашу допомогу сьогодні!","translation":"Thank you for your help today!"},{"words":["вчителеві","Вона","відповідає","на уроці","англійської"],"answer":"Вона відповідає вчителеві на уроці англійської.","translation":"She answers the teacher in English class."},{"words":["мені","Не заважай","коли","я","працюю"],"answer":"Не заважай мені, коли я працюю!","translation":"Don't disturb me when I'm working!"},{"words":["радите","Що","ви","нам","робити","в цій ситуації"],"answer":"Що ви радите нам робити в цій ситуації?","translation":"What do you advise us to do in this situation?"},{"words":["Йому","холодно","сьогодні","дуже","без куртки"],"answer":"Йому сьогодні дуже холодно без куртки.","translation":"He's very cold today without a jacket."},{"words":["Їй","зрозуміти","важко","цю","нову","граматику"],"answer":"Їй важко зрозуміти цю нову граматику.","translation":"It's hard for her to understand this new grammar."},{"words":["належить","Ця","книга","моїй сестрі","з дитинства"],"answer":"Ця книга належить моїй сестрі з дитинства.","translation":"This book has belonged to my sister since childhood."},{"words":["Тобі","потрібна","допомога","з домашнім завданням"],"answer":"Тобі потрібна допомога з домашнім завданням?","translation":"Do you need help with homework?"},{"words":["Мені","часу","бракує","для спорту","цього тижня"],"answer":"Мені бракує часу для спорту цього тижня.","translation":"I lack time for sports this week."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"вдаватися","right":"to succeed"},{"left":"снитися","right":"to appear in dream"},{"left":"весело","right":"fun, merry"},{"left":"личити","right":"to suit/become"},{"left":"дякувати","right":"to thank"},{"left":"належати","right":"to belong"},{"left":"відповідати","right":"to answer"},{"left":"заважати","right":"to disturb"},{"left":"бракувати","right":"to lack"},{"left":"сумно","right":"sad"},{"left":"потрібно","right":"necessary/needed"},{"left":"важко","right":"hard, difficult"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"бракувати\" mean?","options":["porridge","you (informal)","radio","to lack"],"correctIndex":3,"explanation":"\"бракувати\" means \"to lack\""},{"question":"What does \"важко\" mean?","options":["doctor (m)","we","block","hard, difficult"],"correctIndex":3,"explanation":"\"важко\" means \"hard, difficult\""},{"question":"What does \"заважати\" mean?","options":["to drink","to hear","to disturb","box"],"correctIndex":2,"explanation":"\"заважати\" means \"to disturb\""},{"question":"What does \"щастити\" mean?","options":["to be lucky","chair","every day","cloudy"],"correctIndex":0,"explanation":"\"щастити\" means \"to be lucky\""},{"question":"What does \"личити\" mean?","options":["Ukrainian (female)","box","next","to suit/become"],"correctIndex":3,"explanation":"\"личити\" means \"to suit/become\""},{"question":"What does \"повідомляти\" mean?","options":["to listen","Monday","to turn","to inform"],"correctIndex":3,"explanation":"\"повідомляти\" means \"to inform\""},{"question":"What does \"сумно\" mean?","options":["from","center","sad","word"],"correctIndex":2,"explanation":"\"сумно\" means \"sad\""},{"question":"What does \"відповідати\" mean?","options":["relative","thin","to answer","Shopping: розмір, колір, ціна, знижка"],"correctIndex":2,"explanation":"\"відповідати\" means \"to answer\""},{"question":"What does \"вдаватися\" mean?","options":["radio","to open","room","to succeed"],"correctIndex":3,"explanation":"\"вдаватися\" means \"to succeed\""},{"question":"What does \"радити\" mean?","options":["year","to advise","tasty","she"],"correctIndex":1,"explanation":"\"радити\" means \"to advise\""},{"question":"What does \"належати\" mean?","options":["to have dinner","tourist","to carry","to belong"],"correctIndex":3,"explanation":"\"належати\" means \"to belong\""},{"question":"What does \"весело\" mean?","options":["minute","fun, merry","our (m)","square"],"correctIndex":1,"explanation":"\"весело\" means \"fun, merry\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"радити\" means \"to advise\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"личити\" means \"dad\"","isTrue":false,"explanation":"Incorrect. \"личити\" means \"to suit/become\""},{"statement":"\"досвід\" means \"support\"","isTrue":false,"explanation":"Incorrect. \"досвід\" means \"experience\""},{"statement":"\"відповідати\" means \"how\"","isTrue":false,"explanation":"Incorrect. \"відповідати\" means \"to answer\""},{"statement":"\"сумно\" means \"sad\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"заважати\" means \"to disturb\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"повідомляти\" means \"to inform\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"належати\" means \"to belong\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"важко\" means \"hard, difficult\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"весело\" means \"fun, merry\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"fill-blank","title":"Choose the Correct Dative Form","data":{"type":"fill-blank","items":[{"prompt":"Я допомагаю ___ з домашнім завданням. (him)","answer":"йому","options":["його","йому","він"]},{"prompt":"Вона дякує ___ за подарунок. (you, formal)","answer":"вам","options":["вас","вам","ви"]},{"prompt":"Не заважай ___, я працюю! (me)","answer":"мені","options":["мене","мені","я"]},{"prompt":"Він відповідає ___ на запитання. (teacher)","answer":"вчителеві","options":["вчителя","вчителеві","вчитель"]},{"prompt":"___ потрібна допомога. (them)","answer":"Їм","options":["Їх","Їм","Вони"]},{"prompt":"Радимо ___ відпочити. (her)","answer":"їй","options":["її","їй","вона"]},{"prompt":"___ холодно в цій кімнаті. (us)","answer":"Нам","options":["Нас","Нам","Ми"]},{"prompt":"Ця книга належить ___. (brother)","answer":"братові","options":["брата","братові","брат"]},{"prompt":"___ подобається ця музика. (me)","answer":"Мені","options":["Мене","Мені","Я"]},{"prompt":"Він телефонує ___ щодня. (parents)","answer":"батькам","options":["батьків","батькам","батьки"]}]}},{"id":"activity-6","type":"group-sort","title":"Dative Verb Categories","data":{"type":"group-sort","groups":[{"id":"dative-verbs","name":"Dative Verbs","items":["допомагати (to help)","дякувати (to thank)","відповідати (to answer)","заважати (to disturb)"],"nameUk":"object = dative"},{"id":"impersonal--dative","name":"Impersonal + Dative","items":["холодно (cold)","потрібно (need)","можна (may)","важко (difficult)"],"nameUk":"experiencer = dative"},{"id":"accusative-verbs","name":"Accusative Verbs","items":["бачити (to see)","любити (to love)","знати (to know)","чути (to hear)"],"nameUk":"object = accusative"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Dative Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","допомагаю","братові","з роботою"],"answer":"Я допомагаю братові з роботою.","translation":"I help my brother with work."},{"words":["Вона","дякує","вам","за допомогу"],"answer":"Вона дякує вам за допомогу.","translation":"She thanks you for help."},{"words":["Мені","потрібно","купити","молоко"],"answer":"Мені потрібно купити молоко.","translation":"I need to buy milk."},{"words":["Не","заважай","мені","працювати"],"answer":"Не заважай мені працювати!","translation":"Don't disturb me working!"},{"words":["Їй","подобається","ця","музика"],"answer":"Їй подобається ця музика.","translation":"She likes this music."},{"words":["Він","відповідає","вчителеві","чітко"],"answer":"Він відповідає вчителеві чітко.","translation":"He answers the teacher clearly."},{"words":["Нам","холодно","у","кімнаті"],"answer":"Нам холодно у кімнаті.","translation":"We are cold in the room."},{"words":["Я","раджу","тобі","відпочити"],"answer":"Я раджу тобі відпочити.","translation":"I advise you to rest."},{"words":["Цей","годинник","належить","батькові"],"answer":"Цей годинник належить батькові.","translation":"This watch belongs to father."},{"words":["Їм","важко","зрозуміти","це"],"answer":"Їм важко зрозуміти це.","translation":"It's hard for them to understand this."}]}}];
-    const vocabData = [{"uk":"відповідати","translit":"","en":"to answer","note":"+ dat"},{"uk":"заважати","translit":"","en":"to disturb","note":"+ dat"},{"uk":"радити","translit":"","en":"to advise","note":"+ dat"},{"uk":"належати","translit":"","en":"to belong","note":"+ dat"},{"uk":"вдаватися","translit":"","en":"to succeed","note":"+ dat"},{"uk":"щастити","translit":"","en":"to be lucky","note":"+ dat"},{"uk":"снитися","translit":"","en":"to appear in dream","note":"+ dat"},{"uk":"личити","translit":"","en":"to suit/become","note":"+ dat"},{"uk":"бракувати","translit":"","en":"to lack","note":"+ dat + gen"},{"uk":"повідомляти","translit":"","en":"to inform","note":"+ dat"},{"uk":"давати","translit":"","en":"to give (impf)","note":"+ dat"},{"uk":"казати","translit":"","en":"to tell (impf)","note":"+ dat"},{"uk":"говорити","translit":"","en":"to speak (impf)","note":"+ dat"},{"uk":"розповідати","translit":"","en":"to tell a story (impf)","note":"+ dat"},{"uk":"пояснювати","translit":"","en":"to explain (impf)","note":"+ dat"},{"uk":"допомагати","translit":"","en":"to help (impf)","note":"+ dat"},{"uk":"пропонувати","translit":"","en":"to offer (impf)","note":"+ dat"},{"uk":"дзвонити","translit":"","en":"to call (impf)","note":"+ dat"},{"uk":"писати","translit":"","en":"to write (impf)","note":"+ dat"},{"uk":"дякувати","translit":"","en":"to thank (impf)","note":"+ dat"},{"uk":"вибачатися","translit":"","en":"to apologize","note":"перед + instr (usually)"},{"uk":"шкодити","translit":"","en":"to harm","note":"+ dat"},{"uk":"подобатися","translit":"","en":"to like","note":"+ dat"},{"uk":"вистачати","translit":"","en":"to be enough","note":"+ dat + gen"},{"uk":"здаватися","translit":"","en":"to seem","note":"+ dat"},{"uk":"важко","translit":"","en":"hard, difficult","note":"+ dat"},{"uk":"весело","translit":"","en":"fun, merry","note":"+ dat"},{"uk":"сумно","translit":"","en":"sad","note":"+ dat"},{"uk":"досвід","translit":"","en":"experience","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Suffix Practice","data":{"type":"fill-blank","items":[{"prompt":"Від дієслова «читати» утворюємо іменник ___. (reading)","answer":"читання"},{"prompt":"Від прикметника «важливий» утворюємо ___. (importance)","answer":"важливість"},{"prompt":"Людина, яка читає — це ___. (reader)","answer":"читач"},{"prompt":"Маленький кіт — це ___. (kitty)","answer":"котик"},{"prompt":"___ — моє хобі. (Reading)","answer":"Читання"},{"prompt":"Яка ___ працювати разом! (possibility)","answer":"можливість"},{"prompt":"Мій брат — відомий ___. (writer)","answer":"письменник"},{"prompt":"Маленька сестра — це ___. (little sister)","answer":"сестричка"},{"prompt":"___ — це подорож. (Life)","answer":"Життя"},{"prompt":"Несу ___ за це. (responsibility)","answer":"відповідальність"},{"prompt":"___ аплодували артисту. (Viewers)","answer":"Глядачі"},{"prompt":"Яке гарне ___! (little sun)","answer":"сонечко"}]}},{"id":"activity-1","type":"match-up","title":"Suffixes and Functions","data":{"type":"match-up","pairs":[{"left":"-ння","right":"Verbal nouns"},{"left":"-ість","right":"Abstract nouns"},{"left":"-ач","right":"Agent (doer)"},{"left":"-ик","right":"Diminutive (masc)"},{"left":"-ття","right":"Verbal nouns"},{"left":"-ець","right":"Agent (profession)"},{"left":"-ник","right":"Professional"},{"left":"-ечка","right":"Diminutive (fem)"},{"left":"-тель","right":"Teacher/professional"},{"left":"-ок","right":"Diminutive (masc)"},{"left":"-ичка","right":"Diminutive (fem)"},{"left":"-очок","right":"Diminutive (extra small)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книг","Читання","моє","улюблене","хобі","у","вільний","час"],"answer":"Читання книг — моє улюблене хобі у вільний час.","translation":"Reading books is my favorite hobby in free time."},{"words":["це","важливість","Яка","велика","для","нашого","проєкту","сьогодні"],"answer":"Яка велика важливість це для нашого проєкту сьогодні.","translation":"What great importance this is for our project today."},{"words":["активний","читач","Він","дуже","і","любить","різні","книги"],"answer":"Він дуже активний читач і любить різні книги.","translation":"He is a very active reader and loves various books."},{"words":["маленький","котик","Мій","грається","з","м'ячиком","на","килимі"],"answer":"Мій маленький котик грається з м'ячиком на килимі.","translation":"My little kitty is playing with a ball on the carpet."},{"words":["це","Життя","подорож","яку","треба","прожити","з","радістю"],"answer":"Життя — це подорож, яку треба прожити з радістю.","translation":"Life is a journey that must be lived with joy."},{"words":["минає","Молодість","швидко","тому","цінуй","кожен","день","свій"],"answer":"Молодість минає швидко, тому цінуй кожен свій день.","translation":"Youth passes quickly, so value every day of yours."},{"words":["відомий","письменник","Мій","дядько","який","написав","багато","книг"],"answer":"Мій дядько — відомий письменник, який написав багато книг.","translation":"My uncle is a famous writer who wrote many books."},{"words":["прочитай","книжечку","Цю","маленьку","бо","вона","дуже","цікава"],"answer":"Прочитай цю маленьку книжечку, бо вона дуже цікава.","translation":"Read this little book because it is very interesting."},{"words":["У","мене","є","важливе","питання","до","тебе","сьогодні"],"answer":"У мене є важливе питання до тебе сьогодні.","translation":"I have an important question for you today."},{"words":["несу","відповідальність","Я","за","це","рішення","перед","всіма"],"answer":"Я несу відповідальність за це рішення перед всіма.","translation":"I bear responsibility for this decision before everyone."},{"words":["глядачі","Усі","аплодували","коли","співець","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співець закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["сонечко","Моє","де","ти","я","чекаю","на","тебе"],"answer":"Моє сонечко, де ти? Я чекаю на тебе.","translation":"My dear, where are you? I'm waiting for you."}]}},{"id":"activity-3","type":"quiz","title":"Suffix Knowledge","data":{"type":"quiz","questions":[{"question":"«Читання» is formed from «читати» using:","options":["-ння suffix","-ість suffix","-ач suffix","-ик suffix"],"correctIndex":0,"explanation":""},{"question":"Abstract nouns from adjectives use:","options":["-ість","-ння","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Читач» is an example of:","options":["Agent noun","Verbal noun","Abstract noun","Diminutive"],"correctIndex":0,"explanation":""},{"question":"«Котик» is a diminutive of:","options":["кіт","кішка","котеня","кіт'ка"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from the verb:","options":["жити","живий","живити","жир"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is formed from:","options":["можливий","могти","можна","можливо"],"correctIndex":0,"explanation":""},{"question":"Which suffix forms verbal nouns?","options":["-ння/-ття","-ість","-ач/-ець","-ик/-ок"],"correctIndex":0,"explanation":""},{"question":"«Письменник» means:","options":["writer","reader","letter","writing"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» is used as:","options":["Term of endearment","Formal address","Scientific term","Negative word"],"correctIndex":0,"explanation":""},{"question":"«Водій» is formed with suffix:","options":["-ій","-ач","-ник","-ець"],"correctIndex":0,"explanation":""},{"question":"Diminutives express:","options":["Smallness or affection","Size increase","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"«Відповідальність» means:","options":["Responsibility","Answer","Response","Responsible"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Suffix Facts","data":{"type":"true-false","statements":[{"statement":"«-ння» forms verbal nouns from verbs.","isTrue":true,"explanation":""},{"statement":"«-ість» forms abstract nouns from verbs.","isTrue":false,"explanation":""},{"statement":"«Читач» means someone who reads.","isTrue":true,"explanation":""},{"statement":"«Котик» is larger than «кіт».","isTrue":false,"explanation":""},{"statement":"«Життя» is a verbal noun from «жити».","isTrue":true,"explanation":""},{"statement":"«Важливість» comes from «важливий».","isTrue":true,"explanation":""},{"statement":"«-ець» always means a negative person.","isTrue":false,"explanation":""},{"statement":"Diminutives can express affection.","isTrue":true,"explanation":""},{"statement":"«Письменник» comes from «писати».","isTrue":true,"explanation":""},{"statement":"«Радість» is a verbal noun.","isTrue":false,"explanation":""},{"statement":"«Сестричка» is a diminutive of «сестра».","isTrue":true,"explanation":""},{"statement":"All agent nouns end in «-ач».","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Suffix Categories","data":{"type":"group-sort","groups":[{"id":"verbal-nouns","name":"Verbal Nouns","items":["читання","життя","навчання"]},{"id":"abstract-nouns","name":"Abstract Nouns","items":["важливість","можливість","радість"]},{"id":"agent-nouns","name":"Agent Nouns","items":["читач","письменник","водій"]},{"id":"diminutives","name":"Diminutives","items":["котик","книжечка","сонечко"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"___ української мови — це цікаво. (Learning)","answer":"Навчання"},{"prompt":"Він відомий ___ у нашому місті. (writer)","answer":"письменник"},{"prompt":"Яка ___ прийти на концерт! (possibility)","answer":"можливість"},{"prompt":"Мій маленький ___ любить молоко. (kitty)","answer":"котик"},{"prompt":"У мене є важливе ___ до вас. (question)","answer":"питання"},{"prompt":"___ — це велика сила. (Knowledge)","answer":"Знання"},{"prompt":"___ таксі приїхав вчасно. (Driver)","answer":"Водій"},{"prompt":"Моя ___ грає в парку. (little sister)","answer":"сестричка"},{"prompt":"Яка ___ сьогодні чудовий день! (joy)","answer":"радість"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Прочитай цю ___ перед сном. (little book)","answer":"книжечку"},{"prompt":"Це моє найбільше ___. (wish)","answer":"бажання"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Suffix","data":{"type":"select","items":[{"question":"Від «читати» утворюємо:","options":[{"text":"читання","correct":true},{"text":"читачість","correct":false},{"text":"читачик","correct":false},{"text":"читайка","correct":false}]},{"question":"Від «важливий» утворюємо:","options":[{"text":"важливість","correct":true},{"text":"важливання","correct":false},{"text":"важливач","correct":false},{"text":"важливик","correct":false}]},{"question":"Людина, яка слухає — це:","options":[{"text":"слухач","correct":true},{"text":"слухання","correct":false},{"text":"слухість","correct":false},{"text":"слухик","correct":false}]},{"question":"Маленький брат — це:","options":[{"text":"братик","correct":true},{"text":"братач","correct":false},{"text":"братість","correct":false},{"text":"братання","correct":false}]},{"question":"Від «жити» утворюємо:","options":[{"text":"життя","correct":true},{"text":"живач","correct":false},{"text":"живість","correct":false},{"text":"живик","correct":false}]},{"question":"Людина, яка співає — це:","options":[{"text":"співець","correct":true},{"text":"співання","correct":false},{"text":"співість","correct":false},{"text":"співик","correct":false}]},{"question":"Від «молодий» утворюємо:","options":[{"text":"молодість","correct":true},{"text":"молодання","correct":false},{"text":"молодач","correct":false},{"text":"молодик","correct":false}]},{"question":"Маленьке сонце — це:","options":[{"text":"сонечко","correct":true},{"text":"сонцеач","correct":false},{"text":"сонцеість","correct":false},{"text":"сонцення","correct":false}]},{"question":"Людина, яка водить машину — це:","options":[{"text":"водій","correct":true},{"text":"водіння","correct":false},{"text":"водість","correct":false},{"text":"водик","correct":false}]},{"question":"Маленька книга — це:","options":[{"text":"книжечка","correct":true},{"text":"книгач","correct":false},{"text":"книгість","correct":false},{"text":"книгання","correct":false}]},{"question":"Від «писати» утворюємо:","options":[{"text":"писання","correct":true},{"text":"писач","correct":false},{"text":"писість","correct":false},{"text":"писик","correct":false}]},{"question":"Маленька квітка — це:","options":[{"text":"квіточка","correct":true},{"text":"квіткач","correct":false},{"text":"квіткість","correct":false},{"text":"квіткання","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which suffix creates verbal nouns from verbs?","options":["-ння/-ття","-ість","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Письменник» is formed from:","options":["«письмо» (writing)","«писати» directly","«прикметник»","«дієслово»"],"correctIndex":0,"explanation":""},{"question":"What does «-ість» create?","options":["Abstract nouns from adjectives","Verbs from nouns","Adjectives from nouns","Diminutives"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» expresses:","options":["Affection or endearment","Large size","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"Which is NOT a diminutive suffix?","options":["-ість","-ик","-ок","-ечка"],"correctIndex":0,"explanation":""},{"question":"«Глядач» means:","options":["Viewer, spectator","Actor","Director","Writer"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from:","options":["жити (to live)","живий (alive)","жир (fat)","жінка (woman)"],"correctIndex":0,"explanation":""},{"question":"Which suffix indicates a profession?","options":["-ник/-тель","-ість","-ечка","-ння"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is:","options":["An abstract noun meaning \"possibility\"","A verb meaning \"to be possible\"","An adjective meaning \"possible\"","A diminutive"],"correctIndex":0,"explanation":""},{"question":"Diminutives are typically used for:","options":["Expressing smallness or affection","Formal writing","Scientific texts","Negative connotations"],"correctIndex":0,"explanation":""},{"question":"«Навчання» can mean both:","options":["Learning and teaching","Reading and writing","Speaking and listening","Running and walking"],"correctIndex":0,"explanation":""},{"question":"Which word is an agent noun?","options":["борець (fighter)","боротьба (struggle)","боротися (to fight)","борний (fighting)"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"читання","translit":"","en":"reading","note":""},{"uk":"писання","translit":"","en":"writing","note":""},{"uk":"навчання","translit":"","en":"learning, teaching","note":""},{"uk":"життя","translit":"","en":"life","note":""},{"uk":"питання","translit":"","en":"question","note":""},{"uk":"завдання","translit":"","en":"task, assignment","note":""},{"uk":"важливість","translit":"","en":"importance","note":""},{"uk":"можливість","translit":"","en":"possibility","note":""},{"uk":"відповідальність","translit":"","en":"responsibility","note":""},{"uk":"радість","translit":"","en":"joy","note":""},{"uk":"молодість","translit":"","en":"youth","note":""},{"uk":"старість","translit":"","en":"old age","note":""},{"uk":"читач","translit":"","en":"reader","note":""},{"uk":"письменник","translit":"","en":"writer","note":""},{"uk":"вчитель","translit":"","en":"teacher","note":""},{"uk":"водій","translit":"","en":"driver","note":""},{"uk":"продавець","translit":"","en":"seller","note":""},{"uk":"співець","translit":"","en":"singer","note":""},{"uk":"борець","translit":"","en":"fighter","note":""},{"uk":"глядач","translit":"","en":"viewer","note":""},{"uk":"домик","translit":"","en":"little house","note":"diminutive"},{"uk":"котик","translit":"","en":"kitty","note":"diminutive"},{"uk":"синок","translit":"","en":"little son","note":"diminutive"},{"uk":"братик","translit":"","en":"little brother","note":"diminutive"},{"uk":"сестричка","translit":"","en":"little sister","note":"diminutive"},{"uk":"книжечка","translit":"","en":"little book","note":"diminutive"},{"uk":"ручечка","translit":"","en":"little hand","note":"diminutive"},{"uk":"квіточка","translit":"","en":"little flower","note":"diminutive"},{"uk":"сонечко","translit":"","en":"little sun, dear","note":"diminutive"},{"uk":"дівчинка","translit":"","en":"little girl","note":"diminutive"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1195,8 +1169,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1227,8 +1201,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1640,7 +1614,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1650,7 +1624,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1851,6 +1827,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

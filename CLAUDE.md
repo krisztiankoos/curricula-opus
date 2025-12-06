@@ -1,7 +1,7 @@
 # CLAUDE.md - Project Instructions
 
 ## Current Work
-See `.claude/memory/a1-rewrite-status.md` for ongoing task status.
+A1 modules complete. Ready for A2 enrichment or other tasks.
 
 ## Module Writing Workflow
 
@@ -88,20 +88,15 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 - Verify activities work correctly
 </instructions>
 
-## Activity Requirements by Level
+## Activity & Content Requirements
 
-<format>
-| Level | Modules | Activities | Items/Activity | Fill-in Words | Unjumble Words |
-|-------|---------|------------|----------------|---------------|----------------|
-| A1 | 01-30 | 8+ | 12+ | 5-8 | 5-8 |
-| A2 | 01-50 | 10+ | 12+ | 6-10 | 6-10 |
-| B1 | 01-80 | 12+ | 14+ | 7-12 | 7-12 |
-| B2 | 01-50 | 14+ | 16+ | 9-15 | 9-15 |
-| C1 | TBD | 16+ | 18+ | 12-18 | 12-18 |
-| C2 | TBD | 16+ | 18+ | 12-18 | 12-18 |
+> **Single source of truth:** See `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` for all richness parameters including:
+> - Activity counts and items per activity
+> - Content quality (examples, engagement boxes, immersion)
+> - Sentence complexity (fill-in/unjumble word counts)
+> - Time and vocabulary targets
 
-### Activity Types Required
-Each module needs variety. Include at least 4 different types:
+### Activity Types
 - `fill-in` - Gap fill with options
 - `unjumble` - Reorder words into sentence
 - `quiz` - Multiple choice questions
@@ -115,19 +110,6 @@ Each module needs variety. Include at least 4 different types:
   - **A1 Modules 11-20**: Reduce usage (transition period)
   - **A1 Modules 21-30**: Avoid (use unjumble instead)
   - **A2+**: NOT ALLOWED - use `unjumble` for word ordering practice
-</format>
-
-## Content Quality Requirements
-
-<format>
-| Level | Examples | Engagement Boxes | Content Words | Immersion |
-|-------|----------|------------------|---------------|-----------|
-| A1 | 12+ | 3+ | 600+ | 30% Ukrainian |
-| A2 | 18+ | 4+ | 750+ | 40% Ukrainian |
-| B1 | 24+ | 5+ | 900+ | 60% Ukrainian |
-| B2 | 28+ | 6+ | 1000+ | 85% Ukrainian |
-| C1 | 30+ | 7+ | 1100+ | 95% Ukrainian |
-| C2 | 30+ | 7+ | 1100+ | 98% Ukrainian |
 
 ### Engagement Box Types
 - 💡 **Did You Know** - Interesting facts
@@ -135,7 +117,6 @@ Each module needs variety. Include at least 4 different types:
 - 🌍 **Real World** - Practical usage scenarios
 - 🎯 **Fun Fact** - Memorable trivia
 - 🎮 **Gamer's Corner** - Gaming references (S.T.A.L.K.E.R., Witcher)
-</format>
 
 ## Directory Structure
 
@@ -145,10 +126,10 @@ curricula-opus/
 │   ├── a1/               # A1 modules (30 modules)
 │   ├── a2/               # A2 modules (50 modules)
 │   ├── b1/               # B1 modules (80 modules)
-│   ├── b2/               # B2 modules (50 modules)
-│   ├── c1/               # C1 modules (TBD)
-│   ├── c2/               # C2 modules (TBD)
-│   ├── vocabulary.csv    # Master vocabulary database
+│   ├── b2/               # B2 modules (125 modules)
+│   ├── c1/               # C1 modules (115 modules)
+│   ├── c2/               # C2 modules (80 modules)
+│   ├── vocabulary.db     # Master vocabulary database (SQLite)
 │   └── module-mapping.json  # Old→new path mapping reference
 ├── scripts/              # Generator code
 ├── output/               # Generated HTML + JSON
@@ -175,16 +156,17 @@ Level and module number are derived from the file path, not frontmatter.
 | A1 | `a1/` | 30 | ~750 | Beginner - Cyrillic, basic phrases, simple grammar |
 | A2 | `a2/` | 50 | ~1,050 | Elementary - All 7 cases, aspect basics, comparison |
 | B1 | `b1/` | 80 | ~1,500 | Intermediate - Aspect mastery, motion verbs, complex sentences |
-| B2 | `b2/` | 50 | ~2,200 | Advanced - Literature, academic, professional |
-| C1 | `c1/` | TBD | ~2,500 | Proficient - Full complexity, specialized topics |
-| C2 | `c2/` | TBD | TBD | Mastery - Native-level proficiency |
+| B2 | `b2/` | 125 | ~2,900 | Advanced - Literature, academic, professional |
+| C1 | `c1/` | 115 | ~2,800 | Proficient - Full complexity, specialized topics |
+| C2 | `c2/` | 80 | ~2,000 | Mastery - Native-level proficiency |
 
 **Vocabulary Progression:**
 - A1: ~750 cumulative
 - A2: ~1,800 cumulative
 - B1: ~3,300 cumulative
-- B2: ~5,500 cumulative
-- C1: ~8,000 cumulative
+- B2: ~6,200 cumulative
+- C1: ~9,000 cumulative
+- C2: ~11,000 cumulative
 
 ## Transliteration Strategy
 
@@ -227,12 +209,12 @@ npm run claude:deploy
 
 | Level | Modules | Status |
 |-------|---------|--------|
-| A1 | 01-30 | ⏳ Needs full enrichment |
+| A1 | 01-30 | ✅ Complete |
 | A2 | 01-50 | ⏳ Needs full enrichment |
-| B1 | 01-80 | ⏳ Needs full enrichment |
-| B2 | 01-50 | ⏳ Needs full enrichment |
-| C1 | TBD | ⏳ Needs creation |
-| C2 | TBD | ⏳ Needs creation |
+| B1 | 01-80 | ⏳ Needs creation |
+| B2 | 01-125 | ⏳ Needs creation |
+| C1 | 01-115 | ⏳ Needs creation |
+| C2 | 01-80 | ⏳ Needs creation |
 
 ## Documentation Links
 

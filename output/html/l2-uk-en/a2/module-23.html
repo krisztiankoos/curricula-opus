@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 23: Complex Conjunctions | Ukrainian A2</title>
+  <title>Module 23: She Said That... | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 23: Complex Conjunctions</h1>
+    <h1>Module 23: She Said That...</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,274 +498,320 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A2 · A2.3</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Complex Conjunctions</h2>
-        <p style="color:var(--text-muted)">Щоб, Хоча, Тому що</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">She Said That...</h2>
+        <p style="color:var(--text-muted)">Reported Speech</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="beyondsimplesentences">Beyond Simple Sentences</h3>
-<p>Time to connect ideas more sophisticatedly!</p>
+      <div class="md-content"><p>"He said: 'I'm coming.'" → "He said that he was coming." Converting direct speech to indirect (reported) speech is essential for telling others what someone said. In Ukrainian, the key connector is <strong>що</strong> (that), and the rules are simpler than in English!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Direct vs Indirect Speech</h3>
+      <div class="md-content"><h2 id="directspeech">Direct Speech (Пряма мова)</h2>
+<p>Uses quotation marks, exact words:</p>
 <ul>
-<li>"I study <strong>in order to</strong> learn." - Я вчуся, <strong>щоб</strong> знати.</li>
-<li>"<strong>Although</strong> it's cold, I went out." - <strong>Хоча</strong> холодно, я вийшов.</li>
-<li>"I stayed home <strong>because</strong> it rained." - Я залишився вдома, <strong>тому що</strong> був дощ.</li>
+<li>Він сказав: «Я йду.» (He said: "I'm going.")</li>
+<li>Вона запитала: «Ти готовий?» (She asked: "Are you ready?")</li>
 </ul>
-<p>These conjunctions help you express complex thoughts!</p>
+<h2 id="indirectspeech">Indirect Speech (Непряма мова)</h2>
+<p>Reports what someone said:</p>
+<ul>
+<li>Він сказав, <strong>що</strong> він іде. (He said that he was going.)</li>
+<li>Вона запитала, <strong>чи</strong> я готовий. (She asked if I was ready.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukrainian has many ways to say "because": тому що, бо, оскільки, через те що, адже… Each has slightly different nuances. We'll focus on the most common ones at A2 level!</p>
+  <p>Ukrainian uses «» (guillemets) for quotation marks, not "". These are called "лапки"!</p>
 </blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="inordertosothat">Щоб - In Order To / So That</h3>
-<p><strong>Щоб</strong> expresses purpose - why you do something:</p>
-<p><strong>Structure: Main clause + щоб + infinitive/past tense</strong></p>
-<p><strong>Same subject (infinitive):</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The Connector: Що (That)</h3>
+      <div class="md-content"><p>For statements, use <strong>що</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Direct Speech</th>
+<th>Indirect Speech</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Він сказав: «Я прийду.»</td>
+<td>Він сказав, <strong>що</strong> він прийде.</td>
+</tr>
+<tr>
+<td>Вона сказала: «Я втомилася.»</td>
+<td>Вона сказала, <strong>що</strong> вона втомилася.</td>
+</tr>
+<tr>
+<td>Вони сказали: «Ми чекаємо.»</td>
+<td>Вони сказали, <strong>що</strong> вони чекають.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
 <ul>
-<li>Я вчуся, <strong>щоб</strong> знати українську. - I study to know Ukrainian.</li>
-<li>Вона працює, <strong>щоб</strong> заробляти гроші. - She works to earn money.</li>
-<li>Ми прийшли, <strong>щоб</strong> допомогти. - We came to help.</li>
+<li>Мама сказала, <strong>що</strong> обід готовий.</li>
+<li>Він повідомив, <strong>що</strong> не зможе прийти.</li>
+<li>Вона написала, <strong>що</strong> все добре.</li>
 </ul>
-<p><strong>Different subjects (past tense form):</strong></p>
-<ul>
-<li>Я сказав, <strong>щоб</strong> він прийшов. - I told him to come. (lit: so that he came)</li>
-<li>Вона хоче, <strong>щоб</strong> ти зателефонував. - She wants you to call.</li>
-<li>Треба, <strong>щоб</strong> усі були готові. - Everyone needs to be ready.</li>
-</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>For Questions: Чи (If/Whether)</h3>
+      <div class="md-content"><p>For yes/no questions, use <strong>чи</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Direct Question</th>
+<th>Indirect Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Ти прийдеш?»</td>
+<td>Вона запитала, <strong>чи</strong> я прийду.</td>
+</tr>
+<tr>
+<td>«Він вдома?»</td>
+<td>Я запитав, <strong>чи</strong> він вдома.</td>
+</tr>
+<tr>
+<td>«Вам подобається?»</td>
+<td>Вони запитали, <strong>чи</strong> нам подобається.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Щоб + Past Tense</strong></p>
-  <p>When subjects differ, use past tense after щоб (even for present/future meaning!):</p>
-  <ul>
-  <li>Я хочу, щоб ти <strong>прийшов</strong>. (not прийдеш)</li>
-  <li>Важливо, щоб вони <strong>зрозуміли</strong>. (not зрозуміють)</li>
-  </ul>
+  <p>In films: <em>Вона запитала, чи я її кохаю</em> — She asked if I loved her. Classic drama!</p>
 </blockquote>
-<h3 id="patterns">Щоб Patterns</h3>
-<p><strong>Purpose (why you do something):</strong></p>
-<ul>
-<li>Я купив квитки, <strong>щоб</strong> поїхати до Львова. - I bought tickets to go to Lviv.</li>
-<li>Треба рано встати, <strong>щоб</strong> встигнути на потяг. - We need to get up early to catch the train.</li>
-</ul>
-<p><strong>Desire/Request (what you want others to do):</strong></p>
-<ul>
-<li>Я хочу, <strong>щоб</strong> ви мене зрозуміли. - I want you to understand me.</li>
-<li>Попроси, <strong>щоб</strong> він почекав. - Ask him to wait.</li>
-<li>Скажи йому, <strong>щоб</strong> зателефонував. - Tell him to call.</li>
-</ul>
-<p><strong>Necessity:</strong></p>
-<ul>
-<li>Потрібно, <strong>щоб</strong> документи були готові. - The documents need to be ready.</li>
-<li>Важливо, <strong>щоб</strong> усі прийшли вчасно. - It's important that everyone comes on time.</li>
-</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>For Wh-Questions</h3>
+      <div class="md-content"><p>Question words remain, no <strong>чи</strong> needed:</p>
+<table>
+<thead>
+<tr>
+<th>Direct Question</th>
+<th>Indirect Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Де ти живеш?»</td>
+<td>Він запитав, <strong>де</strong> я живу.</td>
+</tr>
+<tr>
+<td>«Коли ти прийдеш?»</td>
+<td>Вона запитала, <strong>коли</strong> я прийду.</td>
+</tr>
+<tr>
+<td>«Чому ти плачеш?»</td>
+<td>Він запитав, <strong>чому</strong> я плачу.</td>
+</tr>
+<tr>
+<td>«Що ти робиш?»</td>
+<td>Вона запитала, <strong>що</strong> я роблю.</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Reporting Verbs</h3>
+      <div class="md-content"><h2 id="commonreportingverbs">Common Reporting Verbs</h2>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>сказати</strong></td>
+<td>to say (pf)</td>
+<td>Він сказав, що…</td>
+</tr>
+<tr>
+<td><strong>казати</strong></td>
+<td>to say (impf)</td>
+<td>Вона казала, що…</td>
+</tr>
+<tr>
+<td><strong>говорити</strong></td>
+<td>to speak, say</td>
+<td>Вони говорили, що…</td>
+</tr>
+<tr>
+<td><strong>розповідати</strong></td>
+<td>to tell, narrate</td>
+<td>Він розповів, що…</td>
+</tr>
+<tr>
+<td><strong>запитати</strong></td>
+<td>to ask (pf)</td>
+<td>Вона запитала, чи…</td>
+</tr>
+<tr>
+<td><strong>питати</strong></td>
+<td>to ask (impf)</td>
+<td>Він питав, де…</td>
+</tr>
+<tr>
+<td><strong>відповідати</strong></td>
+<td>to answer</td>
+<td>Я відповів, що…</td>
+</tr>
+</tbody>
+</table>
+<h2 id="morespecificverbs">More Specific Verbs</h2>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>повідомити</strong></td>
+<td>to inform</td>
+<td>Він повідомив, що…</td>
+</tr>
+<tr>
+<td><strong>пояснити</strong></td>
+<td>to explain</td>
+<td>Вона пояснила, що…</td>
+</tr>
+<tr>
+<td><strong>обіцяти</strong></td>
+<td>to promise</td>
+<td>Він обіцяв, що прийде.</td>
+</tr>
+<tr>
+<td><strong>попередити</strong></td>
+<td>to warn</td>
+<td>Вона попередила, що…</td>
+</tr>
+<tr>
+<td><strong>нагадати</strong></td>
+<td>to remind</td>
+<td>Він нагадав, що…</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: Indirect Requests</strong></p>
-  <p>Ukrainians often use щоб for polite, indirect requests:</p>
-  <ul>
-  <li>"Я б хотів, щоб ви мені допомогли" (I would like you to help me)<br />
-  This is softer than a direct command!</li>
-  </ul>
+  <p>In news: <em>Президент заявив, що…</em> (The president stated that…) — formal reporting style.</p>
 </blockquote>
-<h3 id="inordernotto">Щоб не - In Order Not To</h3>
-<p><strong>Negative purpose:</strong></p>
-<ul>
-<li>Я поспішаю, <strong>щоб не</strong> запізнитися. - I'm hurrying so as not to be late.</li>
-<li>Говори тихіше, <strong>щоб не</strong> розбудити дитину. - Speak quieter so as not to wake the child.</li>
-<li>Вона взяла парасолю, <strong>щоб не</strong> змокнути. - She took an umbrella so as not to get wet.</li>
-</ul>
-<h3 id="although">Хоча / Хоч - Although</h3>
-<p><strong>Хоча</strong> expresses contrast - something unexpected:</p>
-<p><strong>Structure: Хоча + clause, main clause</strong></p>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Хоча</strong> йде дощ, я піду на прогулянку. - Although it's raining, I'll go for a walk.</li>
-<li><strong>Хоча</strong> він втомився, він продовжував працювати. - Although he was tired, he continued working.</li>
-<li>Я допоможу, <strong>хоча</strong> в мене мало часу. - I'll help, although I have little time.</li>
-</ul>
-<p><strong>Хоча at the end:</strong></p>
-<ul>
-<li>Він погодився, <strong>хоча</strong> й неохоче. - He agreed, although reluctantly.</li>
-<li>Це правда, <strong>хоча</strong> звучить дивно. - It's true, although it sounds strange.</li>
-</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Pronoun Changes</h3>
+      <div class="md-content"><p>When reporting, pronouns usually change:</p>
+<table>
+<thead>
+<tr>
+<th>Direct</th>
+<th>Indirect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>я → він/вона</td>
+<td>«Я йду» → Він сказав, що <strong>він</strong> іде.</td>
+</tr>
+<tr>
+<td>ти → я</td>
+<td>«Ти красива» → Він сказав, що <strong>я</strong> красива.</td>
+</tr>
+<tr>
+<td>ми → вони</td>
+<td>«Ми готові» → Вони сказали, що <strong>вони</strong> готові.</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Tense in Reported Speech</h3>
+      <div class="md-content"><p>Unlike English, Ukrainian often keeps the same tense:</p>
+<table>
+<thead>
+<tr>
+<th>Direct</th>
+<th>Indirect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Я <strong>працюю</strong>» (present)</td>
+<td>Він сказав, що він <strong>працює</strong>.</td>
+</tr>
+<tr>
+<td>«Я <strong>працював</strong>» (past)</td>
+<td>Він сказав, що він <strong>працював</strong>.</td>
+</tr>
+<tr>
+<td>«Я <strong>буду працювати</strong>» (future)</td>
+<td>Він сказав, що він <strong>буде працювати</strong>.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>📜 <strong>History Bite: Хоча Origins</strong></p>
-  <p>Хоча comes from "хотіти" (to want) - originally meaning "even if you want." Over time it evolved to simply mean "although." The short form "хоч" is more casual.</p>
+  <p>This is much simpler than English, where tenses often shift back! In Ukrainian, you can usually keep the original tense.</p>
 </blockquote>
-<h3 id="vs">Хоча vs Але</h3>
-<p><strong>Хоча</strong> (although) - subordinating, shows unexpected contrast:</p>
-<ul>
-<li><strong>Хоча</strong> дорого, я куплю. (Despite the high price, I'll buy.)</li>
-</ul>
-<p><strong>Але</strong> (but) - coordinating, simple contrast:</p>
-<ul>
-<li>Дорого, <strong>але</strong> я куплю. (It's expensive, but I'll buy.)</li>
-</ul>
-<p><strong>Compare:</strong></p>
-<ul>
-<li><strong>Хоча</strong> він старий, він активний. - Although he's old, he's active.</li>
-<li>Він старий, <strong>але</strong> активний. - He's old, but active.</li>
-</ul>
-<h3 id="because">Тому що / Бо - Because</h3>
-<p><strong>Giving reasons:</strong></p>
-<p><strong>Тому що (because) - more formal:</strong></p>
-<ul>
-<li>Я залишився вдома, <strong>тому що</strong> був дощ. - I stayed home because it was raining.</li>
-<li>Вона запізнилася, <strong>тому що</strong> були затори. - She was late because there were traffic jams.</li>
-</ul>
-<p><strong>Бо (because) - casual:</strong></p>
-<ul>
-<li>Я не прийшов, <strong>бо</strong> захворів. - I didn't come because I got sick.</li>
-<li>Він щасливий, <strong>бо</strong> здав екзамен. - He's happy because he passed the exam.</li>
-</ul>
-<p><strong>Through (через) - because of (+ noun):</strong></p>
-<ul>
-<li>Я запізнився <strong>через</strong> затори. - I was late because of traffic jams.</li>
-<li><strong>Через</strong> дощ ми залишилися вдома. - Because of the rain, we stayed home.</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Тому що vs Бо</strong></p>
-  <ul>
-  <li><strong>Тому що</strong> - neutral, can be used anywhere</li>
-  <li><strong>Бо</strong> - more casual, common in speech</li>
-  <li><strong>Через</strong> + noun - for specific causes</li>
-  </ul>
-</blockquote>
-<h3 id="">Тому / Тому що</h3>
-<p>Don't confuse:</p>
-<ul>
-<li><strong>Тому</strong> = therefore, that's why (RESULT)</li>
-<li><strong>Тому що</strong> = because (REASON)</li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Був дощ, <strong>тому</strong> я залишився вдома. - It rained, therefore I stayed home.</li>
-<li>Я залишився вдома, <strong>тому що</strong> був дощ. - I stayed home because it rained.</li>
-</ul>
-<h3 id="otherusefulconjunctions">Other Useful Conjunctions</h3>
-<p><strong>Якщо… то (if… then):</strong></p>
-<ul>
-<li><strong>Якщо</strong> матимеш час, <strong>то</strong> зателефонуй. - If you have time, then call.</li>
-</ul>
-<p><strong>Коли (when):</strong></p>
-<ul>
-<li><strong>Коли</strong> прийдеш, подзвони. - When you arrive, call.</li>
-</ul>
-<p><strong>Поки (while):</strong></p>
-<ul>
-<li><strong>Поки</strong> я працюю, ти відпочивай. - While I work, you rest.</li>
-</ul>
-<p><strong>Перш ніж (before):</strong></p>
-<ul>
-<li><strong>Перш ніж</strong> піти, зателефонуй. - Before leaving, call.</li>
-</ul>
-<p><strong>Після того як (after):</strong></p>
-<ul>
-<li><strong>Після того як</strong> поїли, пішли гуляти. - After we ate, we went for a walk.</li>
-</ul>
-<h3 id="complexsentencestructure">Complex Sentence Structure</h3>
-<p><strong>Word order flexibility:</strong></p>
-<ul>
-<li><strong>Тому що</strong> він запізнився, ми почали без нього.</li>
-<li>Ми почали без нього, <strong>тому що</strong> він запізнився.</li>
-</ul>
-<p><strong>Combining conjunctions:</strong></p>
-<ul>
-<li><strong>Хоча</strong> я втомився, я продовжував працювати, <strong>тому що</strong> хотів закінчити.</li>
-<li>Although I was tired, I continued working because I wanted to finish.</li>
-</ul>
-<h2 id="practice">practice</h2>
-<h3 id="completewithcorrectconjunction">Complete with Correct Conjunction</h3>
-<ol>
-<li><p>Я вчу українську, ___ розмовляти з друзями. (purpose)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">щоб</div></div>
-<ol start="2">
-<li><p>___ холодно, ми пішли гуляти. (contrast)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">Хоча</div></div>
-<ol start="3">
-<li><p>Вона запізнилася, ___ були затори. (reason)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">тому що / бо</div></div>
-<ol start="4">
-<li><p>Попроси його, ___ він допоміг. (request)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">щоб</div></div>
-<ol start="5">
-<li><p>Я поспішаю, ___ не запізнитися. (negative purpose)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">щоб не</div></div>
-<ol start="6">
-<li><p>Він не прийшов ___ хворобу. (cause - noun)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">через</div></div>
-<h3 id="combinesentences">Combine Sentences</h3>
-<ol>
-<li><p>Я хочу. Ти прийдеш.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Я хочу, щоб ти прийшов.</div></div>
-<ol start="2">
-<li><p>Холодно. Я вийшов.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Хоча холодно, я вийшов.</div></div>
-<ol start="3">
-<li><p>Я залишився вдома. Був дощ.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Я залишився вдома, тому що був дощ.</div></div>
-<ol start="4">
-<li><p>Я рано встав. Хочу встигнути на потяг.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Я рано встав, щоб встигнути на потяг.</div></div>
-<ol start="5">
-<li><p>Він втомився. Він продовжував.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">Хоча він втомився, він продовжував.</div></div>
-<h3 id="translate">Translate</h3>
-<ol>
-<li><p>I study in order to learn.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">Я вчуся, щоб знати. / Я вчуся, щоб вивчити.</div></div>
-<ol start="2">
-<li><p>Although it's raining, I'll go.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Хоча йде дощ, я піду.</div></div>
-<ol start="3">
-<li><p>I stayed home because I was sick.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">Я залишився вдома, тому що/бо захворів.</div></div>
-<ol start="4">
-<li><p>Tell him to wait.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Скажи йому, щоб почекав.</div></div>
-<ol start="5">
-<li><p>She was late because of traffic.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">Вона запізнилася через затори.</div></div>
-<h2 id="production">production</h2>
-<h3 id="explainyouractions">Explain Your Actions</h3>
-<p>Use purpose clauses:</p>
-<ul>
-<li>Я вивчаю українську, щоб…</li>
-<li>Я працюю, щоб…</li>
-<li>Я прийшов сюди, щоб…</li>
-</ul>
-<h3 id="expresscontrasts">Express Contrasts</h3>
-<p>Use хоча:</p>
-<ul>
-<li>Хоча я втомлений, я…</li>
-<li>Хоча це дорого, я…</li>
-<li>Хоча в мене мало часу, я…</li>
-</ul>
-<h3 id="givereasons">Give Reasons</h3>
-<p>Use тому що/бо:</p>
-<ul>
-<li>Я люблю Україну, тому що…</li>
-<li>Я вивчаю мови, бо…</li>
-<li>Я вибрав цю роботу, тому що…</li>
-</ul>
-<hr />
-<hr />
-<hr />
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Common Patterns</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Він сказав, що…</td>
+<td>Він сказав, що все добре.</td>
+</tr>
+<tr>
+<td>Вона запитала, чи…</td>
+<td>Вона запитала, чи я прийду.</td>
+</tr>
+<tr>
+<td>Вони розповіли, що…</td>
+<td>Вони розповіли, що бачили тебе.</td>
+</tr>
+<tr>
+<td>Я відповів, що…</td>
+<td>Я відповів, що не знаю.</td>
+</tr>
+<tr>
+<td>Він обіцяв, що…</td>
+<td>Він обіцяв, що допоможе.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <hr />
 <hr /></div>
@@ -747,108 +820,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="purpose">Purpose: Щоб</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Same subject + infinitive</td>
-<td>вчуся, щоб знати</td>
-</tr>
-<tr>
-<td>Different subject + past</td>
-<td>хочу, щоб ти прийшов</td>
-</tr>
-<tr>
-<td>Negative purpose</td>
-<td>щоб не запізнитися</td>
-</tr>
-</tbody>
-</table>
-<h2 id="contrast">Contrast: Хоча</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Хоча + clause, main</td>
-<td>Хоча холодно, я піду</td>
-</tr>
-<tr>
-<td>Main, хоча…</td>
-<td>Допоможу, хоча зайнятий</td>
-</tr>
-</tbody>
-</table>
-<h2 id="reason">Reason: Тому що / Бо</h2>
-<table>
-<thead>
-<tr>
-<th>Form</th>
-<th>Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>тому що</td>
-<td>formal/neutral</td>
-</tr>
-<tr>
-<td>бо</td>
-<td>casual</td>
-</tr>
-<tr>
-<td>через + noun</td>
-<td>because of</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keydifferences">Key Differences</h2>
-<table>
-<thead>
-<tr>
-<th>Word</th>
-<th>Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>тому</td>
-<td>therefore (result)</td>
-</tr>
-<tr>
-<td>тому що</td>
-<td>because (reason)</td>
-</tr>
-<tr>
-<td>щоб</td>
-<td>purpose</td>
-</tr>
-<tr>
-<td>хоча</td>
-<td>contrast</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Щоб + infinitive (same subject) or past (different subject)</li>
-  <li>Хоча = although (unexpected contrast)</li>
-  <li>Тому що / бо = because (reason)</li>
-  <li>Через + noun = because of</li>
-  <li>Тому = therefore (don't confuse with тому що!)</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>Excellent work! You've learned:</p>
+<ul>
+<li><strong>Що</strong> for reported statements: Він сказав, що він іде.</li>
+<li><strong>Чи</strong> for reported yes/no questions: Вона запитала, чи я готовий.</li>
+<li><strong>Question words</strong> for reported wh-questions: Він запитав, де я живу.</li>
+<li><strong>Reporting verbs</strong>: сказати, говорити, запитати, розповісти, обіцяти</li>
+<li><strong>Pronoun changes</strong>: я → він/вона when reporting</li>
+</ul>
+<p><strong>Coming up next</strong>: I Think That… — expressing opinions and beliefs!</p></div>
     </div>
   
       <div class="btn-group">
@@ -857,69 +837,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Complex Conjunctions</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Convert to Reported Speech</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Complex Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Reporting Verbs</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/11</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Word Order</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/8</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Reported Speech</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/8</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Reported Speech Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Choose the Right Conjunction</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Speech Types</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Put Words in Order</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Complete the Reported Speech</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Conjunction Type</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/30</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Connector</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Reported Speech</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (9)</h3>
+        <h3>Словник (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -929,7 +916,7 @@ footer {
     <th>Переклад</th>
     
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">щоб</td><td class="vocab-ipa">/ʃtʃob/</td><td class="vocab-en">in order to, so that</td></tr><tr><td class="vocab-uk">хоча</td><td class="vocab-ipa">/xoˈtʃɑ/</td><td class="vocab-en">although</td></tr><tr><td class="vocab-uk">хоч</td><td class="vocab-ipa">/xotʃ/</td><td class="vocab-en">although (casual)</td></tr><tr><td class="vocab-uk">тому що</td><td class="vocab-ipa">/toˈmu ʃtʃo/</td><td class="vocab-en">because</td></tr><tr><td class="vocab-uk">бо</td><td class="vocab-ipa">/bo/</td><td class="vocab-en">because (casual)</td></tr><tr><td class="vocab-uk">неохоче</td><td class="vocab-ipa">/nɛˈoxotʃɛ/</td><td class="vocab-en">reluctantly</td></tr><tr><td class="vocab-uk">продовжувати</td><td class="vocab-ipa">/prodovˈʒuvɑtɪ/</td><td class="vocab-en">to continue (impf)</td></tr><tr><td class="vocab-uk">змокнути</td><td class="vocab-ipa">/zˈmoknʊtɪ/</td><td class="vocab-en">to get wet (perf)</td></tr><tr><td class="vocab-uk">розбудити</td><td class="vocab-ipa">/rozbuˈdɪtɪ/</td><td class="vocab-en">to wake up (sb) (perf)</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">сказати</td><td class="vocab-ipa">/skaˈzatɪ/</td><td class="vocab-en">to say (pf)</td></tr><tr><td class="vocab-uk">казати</td><td class="vocab-ipa">/kaˈzatɪ/</td><td class="vocab-en">to say (impf)</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦowoˈrɪtɪ/</td><td class="vocab-en">to speak, say</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-ipa">/rozpowiˈdatɪ/</td><td class="vocab-en">to tell (impf)</td></tr><tr><td class="vocab-uk">розповісти</td><td class="vocab-ipa">/rozpowisˈtɪ/</td><td class="vocab-en">to tell (pf)</td></tr><tr><td class="vocab-uk">запитати</td><td class="vocab-ipa">/zapɪˈtatɪ/</td><td class="vocab-en">to ask (pf)</td></tr><tr><td class="vocab-uk">питати</td><td class="vocab-ipa">/pɪˈtatɪ/</td><td class="vocab-en">to ask (impf)</td></tr><tr><td class="vocab-uk">відповідати</td><td class="vocab-ipa">/widpowiˈdatɪ/</td><td class="vocab-en">to answer (impf)</td></tr><tr><td class="vocab-uk">відповісти</td><td class="vocab-ipa">/widpowisˈtɪ/</td><td class="vocab-en">to answer (pf)</td></tr><tr><td class="vocab-uk">повідомити</td><td class="vocab-ipa">/powiˈdomɪtɪ/</td><td class="vocab-en">to inform (pf)</td></tr><tr><td class="vocab-uk">пояснити</td><td class="vocab-ipa">/poˈjasnɪtɪ/</td><td class="vocab-en">to explain (pf)</td></tr><tr><td class="vocab-uk">обіцяти</td><td class="vocab-ipa">/obiˈt͡sʲatɪ/</td><td class="vocab-en">to promise</td></tr><tr><td class="vocab-uk">попередити</td><td class="vocab-ipa">/popereˈdɪtɪ/</td><td class="vocab-en">to warn (pf)</td></tr><tr><td class="vocab-uk">нагадати</td><td class="vocab-ipa">/naɦaˈdatɪ/</td><td class="vocab-en">to remind (pf)</td></tr><tr><td class="vocab-uk">стверджувати</td><td class="vocab-ipa">/stwerˈdʒuwatɪ/</td><td class="vocab-en">to claim, assert</td></tr><tr><td class="vocab-uk">заперечувати</td><td class="vocab-ipa">/zapereˈtʃuwatɪ/</td><td class="vocab-en">to deny</td></tr><tr><td class="vocab-uk">що</td><td class="vocab-ipa">/ʃtʃo/</td><td class="vocab-en">that (conjunction)</td></tr><tr><td class="vocab-uk">чи</td><td class="vocab-ipa">/tʃɪ/</td><td class="vocab-en">if, whether</td></tr><tr><td class="vocab-uk">пряма мова</td><td class="vocab-ipa">/prʲaˈma ˈmowa/</td><td class="vocab-en">direct speech</td></tr><tr><td class="vocab-uk">непряма мова</td><td class="vocab-ipa">/nɛprʲaˈma ˈmowa/</td><td class="vocab-en">indirect speech</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -941,8 +928,8 @@ footer {
   </main><footer>Module 23 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complex Conjunctions","data":{"type":"fill-blank","items":[{"prompt":"Я вчу українську, ___ (щоб / хоча) розмовляти з друзями.","answer":"щоб","hints":["щоб / хоча"]},{"prompt":"___ (Хоча / Щоб) холодно, я піду на прогулянку.","answer":"Хоча","hints":["Хоча / Щоб"]},{"prompt":"Я залишився вдома, ___ (тому що / щоб) був дощ.","answer":"тому що","hints":["тому що / щоб"]},{"prompt":"Я поспішаю, ___ (щоб / хоча) не запізнитися на роботу.","answer":"щоб","hints":["щоб / хоча"]},{"prompt":"Він не прийшов ___ (через / тому) хворобу.","answer":"через","hints":["через / тому"]}]}},{"id":"activity-1","type":"unjumble","title":"Complex Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["вчу","Я","українську","щоб","розмовляти","друзями","з"],"answer":"Я вчу українську, щоб розмовляти з друзями.","translation":"I study Ukrainian in order to speak with friends."},{"words":["Хоча","холодно","піду","я","на","прогулянку"],"answer":"Хоча холодно, я піду на прогулянку.","translation":"Although it's cold, I'll go for a walk."},{"words":["залишився","Я","вдома","тому що","дощ","був"],"answer":"Я залишився вдома, тому що був дощ.","translation":"I stayed home because it was raining."},{"words":["поспішаю","Я","щоб","не","запізнитися"],"answer":"Я поспішаю, щоб не запізнитися.","translation":"I'm hurrying so as not to be late."},{"words":["прийшов","Він","не","через","хворобу"],"answer":"Він не прийшов через хворобу.","translation":"He didn't come because of illness."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"місяць","right":"month"},{"left":"хоча","right":"although"},{"left":"неохоче","right":"reluctantly"},{"left":"хоч","right":"although (casual)"},{"left":"дякувати","right":"to thank"},{"left":"розбудити","right":"to wake up (sb) (perf)"},{"left":"змокнути","right":"to get wet (perf)"},{"left":"більший","right":"bigger"},{"left":"щоб","right":"in order to, so that"},{"left":"бо","right":"because (casual)"},{"left":"продовжувати","right":"to continue (ongoing)"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"щоб\" mean?","options":["in order to, so that","to turn out","eight","your (pl, informal)"],"correctIndex":0,"explanation":"\"щоб\" means \"in order to, so that\""},{"question":"What does \"бо\" mean?","options":["cold (adv)","because (casual)","bag","ten"],"correctIndex":1,"explanation":"\"бо\" means \"because (casual)\""},{"question":"What does \"хоч\" mean?","options":["receipt","to disturb","Wednesday","although (casual)"],"correctIndex":3,"explanation":"\"хоч\" means \"although (casual)\""},{"question":"What does \"змокнути\" mean?","options":["advice","most important","to get wet (perf)","we"],"correctIndex":2,"explanation":"\"змокнути\" means \"to get wet (perf)\""},{"question":"What does \"хоча\" mean?","options":["although","to understand (perf)","secretary (f)","one's own (m)"],"correctIndex":0,"explanation":"\"хоча\" means \"although\""},{"question":"What does \"продовжувати\" mean?","options":["back","tip","to continue (ongoing)","son"],"correctIndex":2,"explanation":"\"продовжувати\" means \"to continue (ongoing)\""},{"question":"What does \"неохоче\" mean?","options":["reluctantly","if (unreal)","with","to wake up (sb) (perf)"],"correctIndex":0,"explanation":"\"неохоче\" means \"reluctantly\""},{"question":"What does \"розбудити\" mean?","options":["help","Shopping: розмір, колір, ціна, знижка","to me","to wake up (sb) (perf)"],"correctIndex":3,"explanation":"\"розбудити\" means \"to wake up (sb) (perf)\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"хоч\" means \"to ask (perf)\"","isTrue":false,"explanation":"Incorrect. \"хоч\" means \"although (casual)\""},{"statement":"\"змокнути\" means \"to you\"","isTrue":false,"explanation":"Incorrect. \"змокнути\" means \"to get wet (perf)\""},{"statement":"\"неохоче\" means \"reluctantly\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"хоча\" means \"car\"","isTrue":false,"explanation":"Incorrect. \"хоча\" means \"although\""},{"statement":"\"продовжувати\" means \"to continue (ongoing)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"щоб\" means \"to tell (once)\"","isTrue":false,"explanation":"Incorrect. \"щоб\" means \"in order to, so that\""},{"statement":"\"бо\" means \"because (casual)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"розбудити\" means \"to wake up (sb) (perf)\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"select","title":"Choose the Right Conjunction","data":{"type":"select","items":[{"question":"Я вчуся, ___ говорити українською мовою.","options":[{"text":"щоб","correct":true},{"text":"хоча","correct":false},{"text":"тому що","correct":false},{"text":"бо","correct":false}]},{"question":"___ був дощ, ми пішли на прогулянку.","options":[{"text":"щоб","correct":false},{"text":"хоча","correct":true},{"text":"тому що","correct":false},{"text":"через","correct":false}]},{"question":"Вона не прийшла на вечірку, ___ захворіла.","options":[{"text":"щоб","correct":false},{"text":"хоча","correct":false},{"text":"тому що","correct":true},{"text":"хоч","correct":false}]},{"question":"Я хочу, ___ ти зателефонував мені завтра.","options":[{"text":"щоб","correct":true},{"text":"хоча","correct":false},{"text":"тому що","correct":false},{"text":"коли","correct":false}]},{"question":"Він поспішає, ___ не запізнитися на зустріч.","options":[{"text":"щоб не","correct":true},{"text":"хоча не","correct":false},{"text":"тому що не","correct":false},{"text":"бо не","correct":false}]},{"question":"Я купив квитки ___ поїздку наступного місяця.","options":[{"text":"щоб","correct":false},{"text":"хоча","correct":false},{"text":"тому що","correct":false},{"text":"через","correct":true}]},{"question":"___ він втомився, він продовжував працювати.","options":[{"text":"щоб","correct":false},{"text":"хоча","correct":true},{"text":"тому","correct":false},{"text":"бо","correct":false}]},{"question":"Вона вивчає українську, ___ спілкуватися з родиною.","options":[{"text":"щоб","correct":true},{"text":"хоча","correct":false},{"text":"тому що","correct":false},{"text":"коли","correct":false}]},{"question":"Я запізнився, ___ були великі затори на дорозі.","options":[{"text":"щоб","correct":false},{"text":"хоча","correct":false},{"text":"бо","correct":true},{"text":"хоч","correct":false}]},{"question":"Треба, ___ усі студенти були готові до іспиту.","options":[{"text":"щоб","correct":true},{"text":"хоча","correct":false},{"text":"тому що","correct":false},{"text":"коли","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"Put Words in Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","вчуся","щоб","знати","українську","мову","добре"],"answer":"Я вчуся, щоб добре знати українську мову.","translation":"I study in order to know Ukrainian well."},{"words":["Хоча","був","дощ","ми","пішли","на","прогулянку","в","парк"],"answer":"Хоча був дощ, ми пішли на прогулянку в парк.","translation":"Although it was raining, we went for a walk in the park."},{"words":["Вона","залишилася","вдома","тому","що","погано","почувала","себе"],"answer":"Вона залишилася вдома, тому що погано почувала себе.","translation":"She stayed home because she felt bad."},{"words":["Я","хочу","щоб","ти","прийшов","на","мій","день","народження"],"answer":"Я хочу, щоб ти прийшов на мій день народження.","translation":"I want you to come to my birthday."},{"words":["Він","говорив","тихо","щоб","не","розбудити","маленьку","дитину"],"answer":"Він говорив тихо, щоб не розбудити маленьку дитину.","translation":"He spoke quietly so as not to wake the little child."},{"words":["Хоча","він","мало","часу","мав","він","допоміг","мені","з","завданням"],"answer":"Хоча він мало часу мав, він допоміг мені з завданням.","translation":"Although he had little time, he helped me with the assignment."},{"words":["Ми","поспішали","щоб","не","запізнитися","на","потяг","до","Києва"],"answer":"Ми поспішали, щоб не запізнитися на потяг до Києва.","translation":"We hurried so as not to be late for the train to Kyiv."},{"words":["Вона","щаслива","бо","здала","всі","екзамени","успішно","в","університеті"],"answer":"Вона щаслива, бо здала всі екзамени успішно в університеті.","translation":"She's happy because she passed all the exams successfully at university."},{"words":["Важливо","щоб","усі","студенти","прийшли","вчасно","на","лекцію"],"answer":"Важливо, щоб усі студенти прийшли вчасно на лекцію.","translation":"It's important that all students come on time to the lecture."},{"words":["Я","візьму","парасолю","щоб","не","змокнути","через","дощ"],"answer":"Я візьму парасолю, щоб не змокнути через дощ.","translation":"I'll take an umbrella so as not to get wet because of the rain."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Conjunction Type","data":{"type":"group-sort","groups":[{"id":"purpose","name":"Purpose","items":["Я вчуся, щоб знати","Він працює, щоб заробляти","Вона прийшла, щоб допомогти","Треба, щоб він прийшов","Я хочу, щоб ти зрозумів","Поспішаю, щоб не запізнитися","Вчи, щоб говорити добре","Скажи, щоб він почекав","Візьми, щоб не забути","Купи квитки, щоб поїхати"],"nameUk":"щоб"},{"id":"contrast","name":"Contrast","items":["Хоча холодно, я гуляю","Хоча втомився, працював","Хоча дорого, я куплю","Хоча зайнятий, допоможу","Хоча важко, я продовжую","Хоча мало часу, зроблю","Хоча він старий, активний","Хоча складно, спробую","Хоча не хотів, погодився","Хоча дощ йде, піду гуляти"],"nameUk":"хоча"},{"id":"reason","name":"Reason","items":["Я залишився, тому що хворий","Вона запізнилася, бо були затори","Він щасливий, тому що здав іспит","Ми не пішли, бо був дощ","Вони залишилися, тому що втомилися","Я не можу, бо не маю грошей","Вона хвора, тому що простудилася","Запізнився, бо прокинувся пізно","Не прийшов, тому що захворів","Відмовився, бо не мав часу"],"nameUk":"тому що/бо"}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"щоб","translit":"","en":"in order to, so that","note":""},{"uk":"хоча","translit":"","en":"although","note":""},{"uk":"хоч","translit":"","en":"although (casual)","note":""},{"uk":"тому що","translit":"","en":"because","note":""},{"uk":"бо","translit":"","en":"because (casual)","note":""},{"uk":"неохоче","translit":"","en":"reluctantly","note":""},{"uk":"продовжувати","translit":"","en":"to continue (impf)","note":""},{"uk":"змокнути","translit":"","en":"to get wet (perf)","note":""},{"uk":"розбудити","translit":"","en":"to wake up (sb) (perf)","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Convert to Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Він сказав: «Я йду.» → Він сказав, ___ він іде.","answer":"що"},{"prompt":"Вона запитала: «Ти готовий?» → Вона запитала, ___ я готовий.","answer":"чи"},{"prompt":"Він запитав: «Де ти живеш?» → Він запитав, ___ я живу.","answer":"де"},{"prompt":"Вона ___: «Я втомилася.» (said)","answer":"сказала"},{"prompt":"Він ___, що все добре. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чи я прийду. (asked)","answer":"запитала"},{"prompt":"Він ___, що допоможе. (promised)","answer":"обіцяв"},{"prompt":"Вона ___, що треба бути обережним. (warned)","answer":"попередила"},{"prompt":"Він ___, що не знає. (answered)","answer":"відповів"},{"prompt":"Вона ___, як це працює. (explained)","answer":"пояснила"},{"prompt":"Він запитав: «Коли ти прийдеш?» → Він запитав, ___ я прийду.","answer":"коли"},{"prompt":"Вона ___, що бачила мене. (told)","answer":"розповіла"}]}},{"id":"activity-1","type":"match-up","title":"Reporting Verbs","data":{"type":"match-up","pairs":[{"left":"сказати","right":"to say (perfective)"},{"left":"казати","right":"to say (imperfective)"},{"left":"говорити","right":"to speak"},{"left":"розповісти","right":"to tell (perfective)"},{"left":"запитати","right":"to ask (perfective)"},{"left":"відповісти","right":"to answer (perfective)"},{"left":"повідомити","right":"to inform"},{"left":"пояснити","right":"to explain"},{"left":"обіцяти","right":"to promise"},{"left":"попередити","right":"to warn"},{"left":"нагадати","right":"to remind"},{"left":"стверджувати","right":"to claim"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["сказав","що","він","Він","іде","на","роботу","сьогодні"],"answer":"Він сказав, що він сьогодні іде на роботу.","translation":"He said that he was going to work today."},{"words":["запитала","чи","готовий","я","Вона","до","важливої","зустрічі"],"answer":"Вона запитала, чи я готовий до важливої зустрічі.","translation":"She asked if I was ready for the important meeting."},{"words":["де","запитав","живу","я","Він","зараз","у","місті"],"answer":"Він запитав, де я зараз живу у місті.","translation":"He asked where I now live in the city."},{"words":["що","добре","все","сказала","Вона","буде","у","них"],"answer":"Вона сказала, що у них все буде добре.","translation":"She said that everything will be fine with them."},{"words":["обіцяв","що","допоможе","він","Він","мені","з","проектом"],"answer":"Він обіцяв, що він допоможе мені з проектом.","translation":"He promised that he would help me with the project."},{"words":["чи","прийду","Вона","я","запитала","на","вечірку","завтра"],"answer":"Вона запитала, чи я прийду на вечірку завтра.","translation":"She asked if I would come to the party tomorrow."},{"words":["відповів","знаю","що","не","Я","правильної","відповіді","на"],"answer":"Я відповів, що не знаю правильної відповіді на це.","translation":"I answered that I don't know the right answer to this."},{"words":["повідомив","що","Він","не","зможе","прийти","на","свято"],"answer":"Він повідомив, що не зможе прийти на свято.","translation":"He informed that he wouldn't be able to come to the celebration."},{"words":["пояснила","як","працює","це","Вона","нам","дуже","детально"],"answer":"Вона дуже детально пояснила нам, як це працює.","translation":"She explained to us in detail how it works."},{"words":["розповіла","бачила","мене","що","Вона","вчора","в","парку"],"answer":"Вона розповіла, що бачила мене вчора в парку.","translation":"She told that she had seen me yesterday in the park."},{"words":["попередила","бути","треба","що","обережним","Вона","на","дорозі"],"answer":"Вона попередила, що треба бути обережним на дорозі.","translation":"She warned that one should be careful on the road."},{"words":["нагадав","про","зустріч","Він","мені","важливу","завтра","вранці"],"answer":"Він нагадав мені про важливу зустріч завтра вранці.","translation":"He reminded me about the important meeting tomorrow morning."}]}},{"id":"activity-3","type":"quiz","title":"Reported Speech","data":{"type":"quiz","questions":[{"question":"For statements, use:","options":["що","чи","де","коли"],"correctIndex":0,"explanation":""},{"question":"For yes/no questions, use:","options":["що","чи","де","коли"],"correctIndex":1,"explanation":""},{"question":"For wh-questions, use:","options":["що","чи","The original question word","Nothing"],"correctIndex":2,"explanation":""},{"question":"\"Він сказав, що він іде\" is:","options":["Indirect speech","Direct speech","A question","A command"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, tenses:","options":["Often stay the same","Always change","Never exist","Disappear"],"correctIndex":0,"explanation":""},{"question":"\"Запитати\" means:","options":["To ask (perfective)","To say","To tell","To answer"],"correctIndex":0,"explanation":""},{"question":"\"Розповісти\" means:","options":["To tell (perfective)","To ask","To answer","To explain"],"correctIndex":0,"explanation":""},{"question":"\"Чи\" is used for:","options":["Yes/no questions in reported speech","Statements","Commands","All questions"],"correctIndex":0,"explanation":""},{"question":"\"Він обіцяв, що прийде\" means:","options":["He promised that he would come","He asked if he would come","He denied coming","He refused to come"],"correctIndex":0,"explanation":""},{"question":"Direct speech uses:","options":["Quotation marks «»","No special punctuation","Що","Чи"],"correctIndex":0,"explanation":""},{"question":"\"Повідомити\" means:","options":["To inform","To ask","To deny","To forget"],"correctIndex":0,"explanation":""},{"question":"After \"сказав\" we usually use:","options":["що","чи","як","де"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Reported Speech Facts","data":{"type":"true-false","statements":[{"statement":"\"Що\" connects statements in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Чи\" is used for wh-questions.","isTrue":false,"explanation":""},{"statement":"Ukrainian keeps the same tense in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Сказати\" is imperfective.","isTrue":false,"explanation":""},{"statement":"\"Запитати\" introduces questions.","isTrue":true,"explanation":""},{"statement":"Direct speech has quotation marks.","isTrue":true,"explanation":""},{"statement":"Pronouns never change in reported speech.","isTrue":false,"explanation":""},{"statement":"\"Розповісти\" means \"to ask.\"","isTrue":false,"explanation":""},{"statement":"\"Він запитав, де я живу\" is indirect speech.","isTrue":true,"explanation":""},{"statement":"\"Обіцяти\" means \"to promise.\"","isTrue":true,"explanation":""},{"statement":"\"Пояснити\" means \"to explain.\"","isTrue":true,"explanation":""},{"statement":"For \"what\" questions, we use \"чи.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Speech Types","data":{"type":"group-sort","groups":[{"id":"direct-speech","name":"Direct Speech","items":["Він сказав: «Я йду.»","Вона запитала: «Де ти?»","«Я втомилася,» — сказала вона.","Він питав: «Ти готовий?»","«Допоможу,» — обіцяв він.","Вона крикнула: «Йди!»"]},{"id":"indirect-speech","name":"Indirect Speech","items":["Він сказав, що він іде.","Вона запитала, де я.","Вона сказала, що втомилася.","Він питав, чи я готовий.","Він обіцяв, що допоможе.","Вона сказала йти."]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Мама сказала, ___ обід вже готовий на столі. (that)","answer":"що"},{"prompt":"Вчитель запитав, ___ ми виконали домашнє завдання. (if)","answer":"чи"},{"prompt":"Він ___, що завтра буде важлива зустріч. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чому я запізнився на урок. (asked)","answer":"запитала"},{"prompt":"Батько ___, що допоможе мені з проектом. (promised)","answer":"обіцяв"},{"prompt":"Лікар ___, що треба пити багато води. (explained)","answer":"пояснив"},{"prompt":"Вона ___, що не зможе прийти на вечірку. (said)","answer":"сказала"},{"prompt":"Він ___, що треба бути обережним на дорозі. (warned)","answer":"попередив"},{"prompt":"Друг ___, як він провів літні канікули. (told)","answer":"розповів"},{"prompt":"Вона ___, що я повинен подзвонити мамі. (reminded)","answer":"нагадала"},{"prompt":"Директор ___, коли буде наступна нарада. (announced)","answer":"оголосив"},{"prompt":"Він ___, що не знає відповіді на питання. (answered)","answer":"відповів"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Connector","data":{"type":"select","items":[{"question":"Він сказав, ___ він не може прийти.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"коли","correct":false}]},{"question":"Вона запитала, ___ я буду вдома ввечері.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"де","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я живу зараз.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"де","correct":true},{"text":"який","correct":false}]},{"question":"Мама запитала, ___ я хочу на вечерю.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"де","correct":false},{"text":"який","correct":false}]},{"question":"Вона сказала, ___ погода буде гарна завтра.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"коли","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я повернуся з роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"коли","correct":true},{"text":"де","correct":false}]},{"question":"Вчитель запитав, ___ ми зрозуміли матеріал.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона пояснила, ___ це працює в системі.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Він розповів, ___ познайомився зі своєю дружиною.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ книга лежить на полиці.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"яка","correct":true},{"text":"коли","correct":false}]},{"question":"Він повідомив, ___ збори почнуться о десятій.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ я голодний після роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"коли","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Reported Speech","data":{"type":"quiz","questions":[{"question":"What punctuation marks does Ukrainian use for direct speech?","options":["\"...\"","«...»","'...'","[...]"],"correctIndex":1,"explanation":""},{"question":"Which verb is imperfective?","options":["сказати","казати","запитати","повідомити"],"correctIndex":1,"explanation":""},{"question":"\"Стверджувати\" means:","options":["To deny","To claim, assert","To ask","To promise"],"correctIndex":1,"explanation":""},{"question":"\"Заперечувати\" means:","options":["To deny","To claim","To agree","To promise"],"correctIndex":0,"explanation":""},{"question":"When converting \"я\" in direct speech, it becomes:","options":["він/вона (depending on speaker)","Always я","Always ми","Always вони"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, future tense:","options":["Usually stays as future","Always becomes past","Always becomes present","Disappears"],"correctIndex":0,"explanation":""},{"question":"\"Непряма мова\" is:","options":["Indirect speech","Direct speech","Written speech","Spoken speech"],"correctIndex":0,"explanation":""},{"question":"\"Нагадати\" means:","options":["To remind","To forget","To ask","To deny"],"correctIndex":0,"explanation":""},{"question":"Which introduces yes/no questions in reported speech?","options":["що","чи","як","де"],"correctIndex":1,"explanation":""},{"question":"\"Він питав, чи я готовий\" — the original question was:","options":["«Ти готовий?»","«Де ти?»","«Що ти робиш?»","«Коли ти прийдеш?»"],"correctIndex":0,"explanation":""},{"question":"After \"розповів\" we typically use:","options":["що or a question word","Only чи","Only де","Nothing"],"correctIndex":0,"explanation":""},{"question":"\"Пояснити\" is:","options":["Perfective","Imperfective","Both","Neither"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"сказати","translit":"","en":"to say (pf)","note":""},{"uk":"казати","translit":"","en":"to say (impf)","note":""},{"uk":"говорити","translit":"","en":"to speak, say","note":""},{"uk":"розповідати","translit":"","en":"to tell (impf)","note":""},{"uk":"розповісти","translit":"","en":"to tell (pf)","note":""},{"uk":"запитати","translit":"","en":"to ask (pf)","note":""},{"uk":"питати","translit":"","en":"to ask (impf)","note":""},{"uk":"відповідати","translit":"","en":"to answer (impf)","note":""},{"uk":"відповісти","translit":"","en":"to answer (pf)","note":""},{"uk":"повідомити","translit":"","en":"to inform (pf)","note":""},{"uk":"пояснити","translit":"","en":"to explain (pf)","note":""},{"uk":"обіцяти","translit":"","en":"to promise","note":""},{"uk":"попередити","translit":"","en":"to warn (pf)","note":""},{"uk":"нагадати","translit":"","en":"to remind (pf)","note":""},{"uk":"стверджувати","translit":"","en":"to claim, assert","note":""},{"uk":"заперечувати","translit":"","en":"to deny","note":""},{"uk":"що","translit":"","en":"that (conjunction)","note":""},{"uk":"чи","translit":"","en":"if, whether","note":""},{"uk":"пряма мова","translit":"","en":"direct speech","note":""},{"uk":"непряма мова","translit":"","en":"indirect speech","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -994,8 +981,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1026,8 +1013,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1439,7 +1426,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1449,7 +1436,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1650,6 +1639,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

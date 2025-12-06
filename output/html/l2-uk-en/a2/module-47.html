@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 47: Conditionals II | Ukrainian A2</title>
+  <title>Module 47: Спорт та фітнес | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 47: Conditionals II</h1>
+    <h1>Module 47: Спорт та фітнес</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Select</button>
-      <button class="nav-tab" data-section="activity-6">7. Order</button>
-      <button class="nav-tab" data-section="activity-7">8. Sort</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,318 +497,434 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.2</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Conditionals II</h2>
-        <p style="color:var(--text-muted)">Would &amp; Could</p>
+        <span class="level-badge">A2 · A2.5 Vocabulary Expansion</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Спорт та фітнес</h2>
+        <p style="color:var(--text-muted)">Sports &amp; Fitness</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="whatwouldyoudo">What Would You Do?</h3>
-<p>Real conditionals deal with possible futures. Now let's talk about <strong>unreal</strong> situations - things that aren't true or might never happen:</p>
-<p><strong>English:</strong> If I <strong>had</strong> money, I <strong>would</strong> buy a car.<br />
-<strong>Ukrainian:</strong> Якби я <strong>мав</strong> гроші, я <strong>б купив</strong> машину.</p>
-<p>The key word is <strong>би/б</strong> - it means "would."</p>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>The particle "би/б" transforms any sentence into hypothetical territory. It comes after the verb and attaches to it. This single particle does the work of "would," "could," and "might" in English conditionals!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="theconditionalparticle">The Conditional Particle: б/би</h3>
-<p><strong>Forms:</strong></p>
-<ul>
-<li><strong>б</strong> - after vowels (я б, вона б, ти б)</li>
-<li><strong>би</strong> - after consonants (він би, ми би)</li>
-</ul>
-<p><strong>Position:</strong> Usually after the subject or verb:</p>
-<ul>
-<li>Я <strong>б</strong> хотів… - I would want…</li>
-<li>Він <strong>би</strong> поїхав… - He would go…</li>
-<li>Це <strong>було б</strong> добре. - That would be good.</li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Я <strong>б</strong> допоміг тобі. - I would help you.</li>
-<li>Вона <strong>б</strong> прийшла. - She would come.</li>
-<li>Ми <strong>б</strong> зробили це. - We would do this.</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Placement Flexibility</strong></p>
-  <p>б/би can move around:</p>
-  <ul>
-  <li>Я б хотів = Я хотів би (I would want)</li>
-  <li>Він би прийшов = Він прийшов би (He would come)</li>
-  </ul>
-  <p>The meaning stays the same!</p>
-</blockquote>
-<h3 id="unrealconditionals">Unreal Conditionals: Якби + б/би</h3>
-<p><strong>Structure: Якби + past tense…, subject + б/би + past tense</strong></p>
+      <div class="md-content"><p>Спорт — важлива частина життя багатьох українців. У великих містах, таких як Київ, Львів і Харків, люди активно займаються фітнесом, бігають у парках і відвідують спортзали. Україна має сильні традиції у футболі, боксі та гімнастиці. Українські спортсмени здобувають медалі на Олімпійських іграх і чемпіонатах світу.</p>
+<p>In this module, you'll learn vocabulary for talking about sports, fitness routines, and competitions. Whether you want to discuss your favorite team, describe your workout, or understand sports news in Ukrainian, these words will help you join the conversation.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Види спорту / Types of Sports</h3>
+      <div class="md-content"><p>Ukraine has passionate sports fans. Football (футбол) dominates the conversation — matches between Dynamo Kyiv and Shakhtar Donetsk draw millions of viewers. But Ukrainians also excel in individual sports: boxing champions like Oleksandr Usyk and the Klitschko brothers made Ukraine famous worldwide.</p>
 <table>
 <thead>
 <tr>
-<th>Якби (If)</th>
-<th>Result</th>
+<th>Спорт</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Якби я <strong>мав</strong> час,</td>
-<td>я <strong>б прочитав</strong> книгу.</td>
+<td>футбол</td>
+<td>/futˈbɔl/</td>
+<td>football/soccer</td>
+<td>Я граю у футбол</td>
 </tr>
 <tr>
-<td>If I had time,</td>
-<td>I would read the book.</td>
+<td>баскетбол</td>
+<td>/bɑskɛtˈbɔl/</td>
+<td>basketball</td>
+<td>Баскетбол — командна гра</td>
+</tr>
+<tr>
+<td>волейбол</td>
+<td>/vɔlɛjˈbɔl/</td>
+<td>volleyball</td>
+<td>Граємо у волейбол на пляжі</td>
+</tr>
+<tr>
+<td>теніс</td>
+<td>/ˈtɛnis/</td>
+<td>tennis</td>
+<td>Вона грає в теніс</td>
+</tr>
+<tr>
+<td>плавання</td>
+<td>/plɑˈvɑnʲɑ/</td>
+<td>swimming</td>
+<td>Плавання — корисний спорт</td>
+</tr>
+<tr>
+<td>біг</td>
+<td>/biɦ/</td>
+<td>running</td>
+<td>Біг зміцнює серце</td>
+</tr>
+<tr>
+<td>бокс</td>
+<td>/bɔks/</td>
+<td>boxing</td>
+<td>Він займається боксом</td>
+</tr>
+<tr>
+<td>гімнастика</td>
+<td>/ɦimˈnɑstɪkɑ/</td>
+<td>gymnastics</td>
+<td>Гімнастика розвиває гнучкість</td>
+</tr>
+<tr>
+<td>хокей</td>
+<td>/xɔˈkɛj/</td>
+<td>hockey</td>
+<td>Хокей популярний взимку</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Key pattern:</strong></p>
+<p><strong>Як говорити про спорт (How to Talk About Sports)</strong></p>
+<p>Notice the different verb patterns with sports:</p>
 <ul>
-<li><strong>Якби</strong> = if (unreal/hypothetical)</li>
-<li>Both clauses use <strong>past tense</strong> forms</li>
-<li>Result clause includes <strong>б/би</strong></li>
-</ul>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Якби</strong> я знав, я <strong>б</strong> сказав. - If I knew, I would tell.</li>
-<li><strong>Якби</strong> вона прийшла, ми <strong>б</strong> почали. - If she came, we would start.</li>
-<li><strong>Якби</strong> було тепло, ми <strong>б</strong> пішли гуляти. - If it were warm, we'd go for a walk.</li>
+<li><strong>Грати в/у + Accusative</strong> — for ball games: грати у футбол, грати в теніс</li>
+<li><strong>Займатися + Instrumental</strong> — for activities: займатися боксом, займатися плаванням</li>
+<li><strong>Ходити на + Accusative</strong> — for attending: ходити на тренування, ходити на йогу</li>
 </ul>
 <blockquote>
-  <p>📜 <strong>History Bite: Slavic Conditional</strong></p>
-  <p>The particle "би" comes from an old form of "бути" (to be). In Old Church Slavonic, conditionals used full auxiliary verbs. Over centuries, these shortened to just "би/б" - a perfect example of grammaticalization!</p>
+  <p>💡 <strong>Did You Know?</strong> Ukrainian boxer Oleksandr Usyk became the undisputed heavyweight champion in 2024, holding all four major belts. Before him, Vitali and Wladimir Klitschko dominated heavyweight boxing for over a decade. Vitali later became the mayor of Kyiv!</p>
 </blockquote>
-<h3 id="vs">Якщо vs Якби</h3>
-<p><strong>Якщо (if) - possible/real:</strong></p>
-<ul>
-<li><strong>Якщо</strong> матиму час, прочитаю. - If I have time, I'll read. (possible)</li>
-<li><strong>Якщо</strong> він прийде, почнемо. - If he comes, we'll start. (might happen)</li>
-</ul>
-<p><strong>Якби (if) - unreal/hypothetical:</strong></p>
-<ul>
-<li><strong>Якби</strong> мав час, прочитав би. - If I had time, I would read. (I don't have time)</li>
-<li><strong>Якби</strong> він прийшов, почали б. - If he came, we would start. (he's not coming)</li>
-</ul>
-<p><strong>The difference:</strong></p>
-<ul>
-<li>Якщо + future = real possibility</li>
-<li>Якби + past + би = unreal/contrary to fact</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Dreams and Wishes</strong></p>
-  <p>Ukrainians often use якби for dreams:</p>
-  <ul>
-  <li>"Якби я був багатим…" (If I were rich…)</li>
-  <li>"Якби можна було…" (If it were possible…)</li>
-  <li>"Якби я міг почати знову…" (If I could start over…)</li>
-  </ul>
-  <p>These express wishes for impossible or unlikely things.</p>
-</blockquote>
-<h3 id="wisheswith">Wishes with "Якби…"</h3>
-<p><strong>Express wishes about the present:</strong></p>
-<ul>
-<li><strong>Якби</strong> я знав українську краще! - If only I knew Ukrainian better!</li>
-<li><strong>Якби</strong> було тепліше! - If only it were warmer!</li>
-<li><strong>Якби</strong> мав більше часу! - If only I had more time!</li>
-</ul>
-<p><strong>Express wishes about the past (harder):</strong></p>
-<ul>
-<li><strong>Якби</strong> я <strong>був</strong> вивчив раніше! - If only I had studied earlier!</li>
-</ul>
-<p><strong>Хотів би (would like):</strong></p>
-<ul>
-<li>Я <strong>хотів би</strong> поїхати в Україну. - I would like to go to Ukraine.</li>
-<li>Вона <strong>хотіла б</strong> побачити Львів. - She would like to see Lviv.</li>
-</ul>
-<h3 id="politerequestswith">Polite Requests with б/би</h3>
-<p><strong>Softening requests:</strong></p>
+<p><strong>У реальному житті (In Real Life)</strong></p>
+<p>Imagine you meet someone at a party in Kyiv. Here's how a conversation about sports might go:</p>
+<p>— Привіт! Чим займаєшся у вільний час?<br />
+— Я люблю спорт. Граю у футбол щонеділі.<br />
+— О, круто! А де граєте?<br />
+— На стадіоні біля метро "Олімпійська". Приходь якось!<br />
+— Дякую, може прийду подивитися.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Фізичні вправи / Exercises &amp; Fitness</h3>
+      <div class="md-content"><p>Fitness culture has exploded in Ukrainian cities over the past decade. Modern gyms (спортзали) can be found in every neighborhood, and outdoor workout areas (воркаут-майданчики) are free in most parks. Many Ukrainians start their day with a morning run (ранковий біг) or exercises at home.</p>
 <table>
 <thead>
 <tr>
-<th>Direct</th>
-<th>Polite (with б/би)</th>
+<th>Слово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Допоможи!</td>
-<td>Ти б допоміг?</td>
+<td>тренування</td>
+<td>/trɛnuˈvɑnʲɑ/</td>
+<td>training/workout</td>
+<td>Тренування триває годину</td>
 </tr>
 <tr>
-<td>Скажіть!</td>
-<td>Ви б сказали?</td>
+<td>вправа</td>
+<td>/ˈʋprɑʋɑ/</td>
+<td>exercise</td>
+<td>Роблю вправи щоранку</td>
 </tr>
 <tr>
-<td>Дай мені…</td>
-<td>Ти б дав мені…?</td>
+<td>розминка</td>
+<td>/rɔzˈmɪnkɑ/</td>
+<td>warm-up</td>
+<td>Розминка перед тренуванням</td>
+</tr>
+<tr>
+<td>віджимання</td>
+<td>/vidʒɪˈmɑnʲɑ/</td>
+<td>push-ups</td>
+<td>Роблю двадцять віджимань</td>
+</tr>
+<tr>
+<td>присідання</td>
+<td>/prɪsɪˈdɑnʲɑ/</td>
+<td>squats</td>
+<td>Присідання для ніг</td>
+</tr>
+<tr>
+<td>розтяжка</td>
+<td>/rɔzˈtʲɑʒkɑ/</td>
+<td>stretching</td>
+<td>Розтяжка після тренування</td>
+</tr>
+<tr>
+<td>біг підтюпцем</td>
+<td>/biɦ pidˈtʲupt͡sɛm/</td>
+<td>jogging</td>
+<td>Біг підтюпцем у парку</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p><strong>Структура тренування (Workout Structure)</strong></p>
+<p>A typical Ukrainian fitness session follows this pattern:</p>
+<ol>
+<li><strong>Розминка</strong> (warm-up) — 5-10 хвилин легких вправ</li>
+<li><strong>Основна частина</strong> (main part) — силові або кардіо вправи</li>
+<li><strong>Розтяжка</strong> (stretching) — 5-10 хвилин на завершення</li>
+</ol>
+<p>Ukrainians often say: "Без розминки не починай!" (Don't start without a warm-up!). This reflects a strong culture of proper training technique.</p>
+<blockquote>
+  <p>🌍 <strong>Real World:</strong> Parkrun Ukraine is hugely popular — every Saturday morning, thousands of people gather in parks across Kyiv, Lviv, Odesa, and other cities for a free 5km run. It started in 2016 and now has over 50 locations. Just search for "паркран" + your city name!</p>
+</blockquote>
+<p><strong>Розмова у спортзалі (Conversation at the Gym)</strong></p>
+<p>— Вибач, ти ще користуєшся цим тренажером?<br />
+— Ні, я вже закінчив. Можеш брати.<br />
+— Дякую! А скільки підходів ти робиш?<br />
+— Зазвичай три підходи по дванадцять повторень.<br />
+— Добре, я теж спробую так.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Місця для спорту / Sports Venues</h3>
+      <div class="md-content"><p>Every Ukrainian city has public sports facilities. The Olympic Stadium (Олімпійський стадіон) in Kyiv seats 70,000 and hosts major football matches. But most sports happen in neighborhood courts (майданчики), school gyms, and local swimming pools.</p>
+<table>
+<thead>
+<tr>
+<th>Місце</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>стадіон</td>
+<td>/stɑˈdiɔn/</td>
+<td>stadium</td>
+<td>Матч на стадіоні</td>
+</tr>
+<tr>
+<td>басейн</td>
+<td>/bɑˈsɛjn/</td>
+<td>swimming pool</td>
+<td>Плаваю в басейні</td>
+</tr>
+<tr>
+<td>спортзал</td>
+<td>/spɔrtˈzɑl/</td>
+<td>gym</td>
+<td>Ходжу в спортзал</td>
+</tr>
+<tr>
+<td>майданчик</td>
+<td>/mɑjˈdɑnt͡ʃɪk/</td>
+<td>court/field</td>
+<td>Баскетбольний майданчик</td>
+</tr>
+<tr>
+<td>каток</td>
+<td>/kɑˈtɔk/</td>
+<td>ice rink</td>
+<td>Катаюся на ковзанах на катку</td>
+</tr>
+<tr>
+<td>корт</td>
+<td>/kɔrt/</td>
+<td>court</td>
+<td>Тенісний корт</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Куди піти займатися спортом (Where to Exercise)</strong></p>
+<p>In Ukrainian cities, you have many options:</p>
 <ul>
-<li>Чи не <strong>могли б</strong> ви допомогти? - Could you help? (very polite)</li>
-<li><strong>Чи б</strong> ви сказали…? - Would you tell…?</li>
-<li>Я <strong>хотів би</strong> запитати… - I would like to ask…</li>
-</ul>
-<p><strong>Common polite phrases:</strong></p>
-<ul>
-<li><strong>Було б</strong> добре, якби… - It would be good if…</li>
-<li><strong>Мені б хотілося</strong>… - I would like…</li>
-<li><strong>Чи не могли б</strong> ви…? - Could you possibly…?</li>
+<li><strong>Спортзал</strong> — monthly memberships cost 500-1500 UAH</li>
+<li><strong>Парк</strong> — free outdoor workout equipment (воркаут-майданчики)</li>
+<li><strong>Басейн</strong> — one session costs about 100-200 UAH</li>
+<li><strong>Стадіон</strong> — many have open hours for public jogging</li>
 </ul>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Maximum Politeness</strong></p>
-  <p>Чи не могли б ви…? (Could you possibly…?) is very formal and polite. Use it in:</p>
-  <ul>
-  <li>Business situations</li>
-  <li>With strangers</li>
-  <li>When asking for favors</li>
-  </ul>
+  <p>🎮 <strong>Gamer's Corner:</strong> Ukraine's esports scene is world-class! Teams like Natus Vincere (Na'Vi) have won major championships in CS:GO and Dota 2. Ukrainian players compete in top leagues worldwide. Many Ukrainians consider кіберспорт (esports) a legitimate sport — it even has official recognition.</p>
 </blockquote>
-<h3 id="couldhavewouldhave">Could Have / Would Have</h3>
-<p><strong>Міг би (could):</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Спортивні дієслова / Sports Verbs</h3>
+      <div class="md-content"><p>Understanding how Ukrainians talk about physical activity requires knowing the right verbs. Each verb has specific patterns — learning them will make your Ukrainian sound natural.</p>
+<table>
+<thead>
+<tr>
+<th>Дієслово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>тренуватися</td>
+<td>/trɛnuˈvɑtɪsʲɑ/</td>
+<td>to train</td>
+<td>Тренуюся три рази на тиждень</td>
+</tr>
+<tr>
+<td>займатися</td>
+<td>/zɑjˈmɑtɪsʲɑ/</td>
+<td>to practice/do</td>
+<td>Займаюся йогою</td>
+</tr>
+<tr>
+<td>бігати</td>
+<td>/ˈbiɦɑtɪ/</td>
+<td>to run (habitually)</td>
+<td>Бігаю щоранку</td>
+</tr>
+<tr>
+<td>плавати</td>
+<td>/plɑˈvɑtɪ/</td>
+<td>to swim</td>
+<td>Плаваю в басейні</td>
+</tr>
+<tr>
+<td>грати</td>
+<td>/ˈɦrɑtɪ/</td>
+<td>to play</td>
+<td>Граю у футбол</td>
+</tr>
+<tr>
+<td>перемагати</td>
+<td>/pɛrɛmɑˈɦɑtɪ/</td>
+<td>to win</td>
+<td>Наша команда перемогла</td>
+</tr>
+<tr>
+<td>програвати</td>
+<td>/prɔɦrɑˈvɑtɪ/</td>
+<td>to lose</td>
+<td>Вони програли матч</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Вживання дієслів (Verb Usage)</strong></p>
+<p>The verb <strong>займатися</strong> is extremely common in sports contexts. It requires the Instrumental case:</p>
 <ul>
-<li>Я <strong>міг би</strong> допомогти. - I could help.</li>
-<li>Вона <strong>могла б</strong> прийти. - She could come.</li>
+<li>Займатися <strong>боксом</strong> (to do boxing)</li>
+<li>Займатися <strong>йогою</strong> (to do yoga)</li>
+<li>Займатися <strong>плаванням</strong> (to do swimming)</li>
+<li>Займатися <strong>фітнесом</strong> (to do fitness)</li>
 </ul>
-<p><strong>Should have (мав би):</strong></p>
+<p>The verbs <strong>перемагати/перемогти</strong> and <strong>програвати/програти</strong> are aspect pairs:</p>
 <ul>
-<li>Ти <strong>мав би</strong> сказати раніше. - You should have told me earlier.</li>
-<li>Вона <strong>мала б</strong> зателефонувати. - She should have called.</li>
+<li><strong>Наша команда перемагає</strong> — Our team is winning / wins (habitually)</li>
+<li><strong>Наша команда перемогла</strong> — Our team won (completed action)</li>
 </ul>
-<p><strong>Would have (був би + past participle - advanced):</strong></p>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment:</strong> The movie "Fight Club" is called "Бійцівський клуб" in Ukrainian. When Tyler Durden says his famous rules, in Ukrainian it's: "Перше правило Бійцівського клубу — не говорити про Бійцівський клуб." Learning sports vocabulary helps you understand dubbed movies!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Змагання / Competitions</h3>
+      <div class="md-content"><p>Ukrainians are passionate about sports competitions. When the national football team plays, the whole country watches. Olympic medals are celebrated as national achievements, and successful athletes become heroes.</p>
+<table>
+<thead>
+<tr>
+<th>Слово</th>
+<th>IPA</th>
+<th>English</th>
+<th>Приклад</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>змагання</td>
+<td>/zmɑˈɦɑnʲɑ/</td>
+<td>competition</td>
+<td>Змагання з плавання</td>
+</tr>
+<tr>
+<td>матч</td>
+<td>/mɑt͡ʃ/</td>
+<td>match</td>
+<td>Футбольний матч сьогодні</td>
+</tr>
+<tr>
+<td>чемпіонат</td>
+<td>/t͡ʃɛmpiɔˈnɑt/</td>
+<td>championship</td>
+<td>Чемпіонат світу</td>
+</tr>
+<tr>
+<td>турнір</td>
+<td>/turˈnir/</td>
+<td>tournament</td>
+<td>Тенісний турнір</td>
+</tr>
+<tr>
+<td>медаль</td>
+<td>/mɛˈdɑlʲ/</td>
+<td>medal</td>
+<td>Вона виграла золоту медаль</td>
+</tr>
+<tr>
+<td>команда</td>
+<td>/kɔˈmɑndɑ/</td>
+<td>team</td>
+<td>Наша команда — найкраща</td>
+</tr>
+<tr>
+<td>гравець</td>
+<td>/ɦrɑˈvɛt͡sʲ/</td>
+<td>player</td>
+<td>Він — найкращий гравець</td>
+</tr>
+<tr>
+<td>тренер</td>
+<td>/ˈtrɛnɛr/</td>
+<td>coach</td>
+<td>Тренер вимогливий</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Як обговорювати спорт (How to Discuss Sports)</strong></p>
+<p>When talking about competitions, you'll hear these phrases constantly:</p>
 <ul>
-<li>Я <strong>був би пішов</strong>, якби знав. - I would have gone if I had known.</li>
-<li>Вона <strong>була б прийшла</strong>. - She would have come.</li>
+<li><strong>Хто виграв?</strong> — Who won?</li>
+<li><strong>Який рахунок?</strong> — What's the score?</li>
+<li><strong>Наші перемогли!</strong> — Our guys won!</li>
+<li><strong>Ми програли зі рахунком 2:1</strong> — We lost 2-1</li>
+<li><strong>Який матч сьогодні?</strong> — What game is on today?</li>
 </ul>
-<p>Note: "Would have" is more complex; focus on present/future hypotheticals first.</p>
-<h3 id="conditionalwithdifferentsubjects">Conditional with Different Subjects</h3>
-<p><strong>Same subject:</strong></p>
+<blockquote>
+  <p>🎯 <strong>Fun Fact:</strong> Ukraine has won over 150 Olympic medals in total. The country particularly excels in gymnastics, boxing, and wrestling. At the 2020 Tokyo Olympics, Ukrainian athletes won 19 medals, including the famous gold medal by high jumper Yaroslava Mahuchikh.</p>
+</blockquote>
+<p><strong>Уболівальники (Fans)</strong></p>
+<p>Ukrainian football fans are legendary for their passion. A conversation between fans might sound like this:</p>
+<p>— Ти дивився вчорашній матч?<br />
+— Так! Динамо виграло три-нуль!<br />
+— Шевченко забив два голи. Неймовірно!<br />
+— Наступний матч у суботу. Підеш на стадіон?<br />
+— Звичайно! Вже купив квитки.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Типові фрази / Common Phrases</h3>
+      <div class="md-content"><p>Here are everyday expressions Ukrainians use when talking about sports and fitness:</p>
+<p><strong>Запрошення (Invitations)</strong></p>
 <ul>
-<li>Якби <strong>я</strong> мав гроші, <strong>я</strong> б купив машину.</li>
-<li>If I had money, I would buy a car.</li>
+<li>Хочеш пограти у футбол? — Want to play football?</li>
+<li>Підеш зі мною в спортзал? — Will you go to the gym with me?</li>
+<li>Давай побігаємо завтра вранці? — Let's go running tomorrow morning?</li>
 </ul>
-<p><strong>Different subjects:</strong></p>
+<p><strong>Описання звичок (Describing Habits)</strong></p>
 <ul>
-<li>Якби <strong>він</strong> прийшов, <strong>ми</strong> б почали.</li>
-<li>If he came, we would start.</li>
+<li>Я тренуюся тричі на тиждень — I work out three times a week</li>
+<li>Він займається спортом з дитинства — He's been doing sports since childhood</li>
+<li>Вона бігає кожного ранку — She runs every morning</li>
 </ul>
-<p><strong>Impersonal:</strong></p>
+<p><strong>На тренуванні (During Training)</strong></p>
 <ul>
-<li><p>Якби <strong>було</strong> можливо, я б поїхав.</p></li>
-<li><p>If it were possible, I would go.</p></li>
-<li><p><strong>Було б</strong> краще, якби ти зателефонував.</p></li>
-<li><p>It would be better if you called.</p></li>
+<li>Ще один підхід! — One more set!</li>
+<li>Годі, я втомився — Enough, I'm tired</li>
+<li>Відпочинь хвилинку — Rest for a minute</li>
 </ul>
-<h2 id="practice">practice</h2>
-<h3 id="transformtohypothetical">Transform to Hypothetical</h3>
-<p>Change real to unreal conditionals:</p>
-<ol>
-<li><p>Якщо матиму час, прочитаю. →<br />
-Якби мав час, прочитав би.</p></li>
-<li><p>Якщо він прийде, почнемо. →<br />
-Якби він прийшов, почали б.</p></li>
-<li><p>Якщо погода буде гарна, підемо. →<br />
-Якби погода була гарна, пішли б.</p></li>
-<li><p>Якщо знатиму, скажу. →<br />
-Якби знав, сказав би.</p></li>
-<li><p>Якщо вона захоче, допоможе. →<br />
-Якби вона хотіла, допомогла б.</p></li>
-</ol>
-<h3 id="completewith">Complete with б/би</h3>
-<ol>
-<li><p>Я ___ хотів поїхати в Україну.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="2">
-<li><p>Він ___ допоміг, якби міг.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">би</div></div>
-<ol start="3">
-<li><p>Було ___ добре побачитися.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="4">
-<li><p>Ти ___ зателефонував мені?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">б</div></div>
-<ol start="5">
-<li><p>Вона ___ прийшла раніше.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">б / би</div></div>
-<h3 id="makepolite">Make Polite</h3>
-<p>Transform to polite requests:</p>
-<ol>
-<li><p>Допоможи мені! →<br />
-Чи не міг би ти допомогти?</p></li>
-<li><p>Скажіть адресу! →<br />
-Чи не могли б ви сказати адресу?</p></li>
-<li><p>Дай мені книгу! →<br />
-Ти б дав мені книгу?</p></li>
-<li><p>Закрий вікно! →<br />
-Чи не міг би ти закрити вікно?</p></li>
-<li><p>Почекайте! →<br />
-Чи не могли б ви почекати?</p></li>
-</ol>
-<h3 id="translatehypotheticals">Translate Hypotheticals</h3>
-<ol>
-<li><p>If I had time, I would help.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">Якби я мав час, я б допоміг.</div></div>
-<ol start="2">
-<li><p>I would like to learn Ukrainian.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">Я хотів би вивчити українську.</div></div>
-<ol start="3">
-<li><p>Could you please help?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">Чи не могли б ви допомогти?</div></div>
-<ol start="4">
-<li><p>If she knew, she would tell.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">Якби вона знала, вона б сказала.</div></div>
-<ol start="5">
-<li><p>It would be good to meet.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">Було б добре зустрітися.</div></div>
-<ol start="6">
-<li><p>You should call him.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">Ти мав би зателефонувати йому.</div></div>
-<h2 id="production">production</h2>
-<h3 id="expresswishes">Express Wishes</h3>
-<p><strong>What would you do if…?</strong></p>
-<ul>
-<li>Якби я виграв лотерею, я б…</li>
-<li>Якби я міг жити в будь-якій країні, я б…</li>
-<li>Якби мав суперсилу, я б…</li>
-<li>Якби міг зустріти будь-кого, я б…</li>
-</ul>
-<h3 id="politeconversation">Polite Conversation</h3>
-<ul>
-<li>Вибачте, <strong>чи не могли б ви</strong> допомогти мені?</li>
-<li>Звичайно! Що вам потрібно?</li>
-<li>Я <strong>хотів би</strong> знати, де найближча станція метро.</li>
-<li><strong>Було б</strong> краще, якби ви пішли прямо, потім направо.</li>
-<li>Дякую! Ви дуже люб'язні!</li>
-<li>Немає за що. Я <strong>радий би</strong> допомогти ще.</li>
-</ul>
-<h3 id="regretsandadvice">Regrets and Advice</h3>
-<p><strong>What someone should do:</strong></p>
-<ul>
-<li>Ти <strong>мав би</strong> більше спати.</li>
-<li>Вона <strong>мала б</strong> вивчати українську щодня.</li>
-<li>Ми <strong>мали б</strong> почати раніше.</li>
-</ul>
-<p><strong>What you would like:</strong></p>
-<ul>
-<li>Я <strong>хотів би</strong> подорожувати більше.</li>
-<li>Вона <strong>хотіла б</strong> працювати з дому.</li>
-<li>Ми <strong>хотіли б</strong> познайомитися з вами.</li>
-</ul>
-<hr />
-<hr />
-<hr />
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong> Ukrainian rhythmic gymnasts are among the best in the world. The Deriugina School in Kyiv has produced multiple Olympic and world champions. Anna Bessonova and Hanna Rizatdinova brought Ukraine numerous medals in this graceful sport.</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -790,106 +933,16 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="conditionalparticle">Conditional Particle</h2>
-<table>
-<thead>
-<tr>
-<th>After…</th>
-<th>Form</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vowel</td>
-<td>б</td>
-<td>я б, вона б</td>
-</tr>
-<tr>
-<td>Consonant</td>
-<td>би</td>
-<td>він би, ми би</td>
-</tr>
-</tbody>
-</table>
-<h2 id="realvsunrealconditionals">Real vs Unreal Conditionals</h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Structure</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Real</td>
-<td>Якщо + future</td>
-<td>Якщо матиму, зроблю</td>
-</tr>
-<tr>
-<td>Unreal</td>
-<td>Якби + past + б/би</td>
-<td>Якби мав, зробив би</td>
-</tr>
-</tbody>
-</table>
-<h2 id="commonphrases">Common Phrases</h2>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Я хотів би</td>
-<td>I would like</td>
-</tr>
-<tr>
-<td>Чи не могли б ви…?</td>
-<td>Could you possibly…?</td>
-</tr>
-<tr>
-<td>Було б добре</td>
-<td>It would be good</td>
-</tr>
-<tr>
-<td>Мав би</td>
-<td>should</td>
-</tr>
-</tbody>
-</table>
-<h2 id="politerequests">Polite Requests</h2>
-<table>
-<thead>
-<tr>
-<th>Direct</th>
-<th>Polite</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Допоможи!</td>
-<td>Чи не міг би ти допомогти?</td>
-</tr>
-<tr>
-<td>Скажіть!</td>
-<td>Чи не могли б ви сказати?</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>б/би = "would" particle</li>
-  <li>Якщо = real (possible), Якби = unreal (hypothetical)</li>
-  <li>Unreal: past tense in both clauses + би in result</li>
-  <li>Polite requests: чи не могли б ви…?</li>
-  <li>хотів би = would like, мав би = should</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>У цьому уроці ви вивчили:</p>
+<ul>
+<li>Види спорту (футбол, баскетбол, плавання)</li>
+<li>Фізичні вправи (тренування, розминка, віджимання)</li>
+<li>Місця для спорту (стадіон, басейн, спортзал)</li>
+<li>Слова про змагання (матч, чемпіонат, медаль)</li>
+<li>Дієслова для спорту (займатися + Instrumental, грати в + Accusative)</li>
+</ul>
+<p>You can now talk about your sports activities, describe your workout routine, and discuss competitions in Ukrainian. Try using phrases like "Я займаюся…" or "Я граю в…" to talk about your hobbies!</p>
+<p><strong>Coming up next:</strong> Мистецтво та культура — words for art, music, and cultural traditions.</p></div>
     </div>
   
       <div class="btn-group">
@@ -898,69 +951,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Unreal Conditionals</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Оберіть правильне слово</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Hypothetical Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>З&#039;єднайте слово з перекладом</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Складіть речення</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/11</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Виберіть правильну відповідь</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Правда чи неправда?</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Unreal Conditionals</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="select-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Розподіліть слова за категоріями</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/24</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Hypothetical Story</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="order-container"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Sports Actions</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Sort by Conditional Type</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/20</span></div>
-      <div class="sort-pool" id="activity-7-pool"><div class="sort-items" id="activity-7-items"></div></div>
-      <div class="sort-groups" id="activity-7-groups"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>All Sorted!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Sport or Exercise?</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Sports Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (17)</h3>
+        <h3>Словник (29)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -968,9 +1028,9 @@ footer {
     
     <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">якби</td><td class="vocab-ipa">/jɑkˈbɪ/</td><td class="vocab-en">if (unreal)</td></tr><tr><td class="vocab-uk">б</td><td class="vocab-ipa">/b/</td><td class="vocab-en">would (after vowel)</td></tr><tr><td class="vocab-uk">би</td><td class="vocab-ipa">/bɪ/</td><td class="vocab-en">would (after consonant)</td></tr><tr><td class="vocab-uk">хотів би</td><td class="vocab-ipa">/xoˈtʲiv bɪ/</td><td class="vocab-en">would like (m)</td></tr><tr><td class="vocab-uk">хотіла б</td><td class="vocab-ipa">/xoˈtʲilɑ b/</td><td class="vocab-en">would like (f)</td></tr><tr><td class="vocab-uk">могли б</td><td class="vocab-ipa">/moɦˈlɪ b/</td><td class="vocab-en">could (pl/formal)</td></tr><tr><td class="vocab-uk">мав би</td><td class="vocab-ipa">/mɑv bɪ/</td><td class="vocab-en">should (m)</td></tr><tr><td class="vocab-uk">було б</td><td class="vocab-ipa">/buˈlo b/</td><td class="vocab-en">would be</td></tr><tr><td class="vocab-uk">гіпотетичний</td><td class="vocab-ipa">/ɦʲipotɛˈtɪtʃnɪj/</td><td class="vocab-en">hypothetical</td></tr><tr><td class="vocab-uk">уявний</td><td class="vocab-ipa">/ujɑvˈnɪj/</td><td class="vocab-en">imaginary, hypothetical</td></tr><tr><td class="vocab-uk">можливість</td><td class="vocab-ipa">/moʒˈlɪvʲistʲ/</td><td class="vocab-en">possibility</td></tr><tr><td class="vocab-uk">мрія</td><td class="vocab-ipa">/ˈmrʲijɑ/</td><td class="vocab-en">dream</td></tr><tr><td class="vocab-uk">мріяти</td><td class="vocab-ipa">/mrʲiˈjɑtɪ/</td><td class="vocab-en">to dream</td></tr><tr><td class="vocab-uk">уявляти</td><td class="vocab-ipa">/ujɑvˈlʲɑtɪ/</td><td class="vocab-en">to imagine (impf)</td></tr><tr><td class="vocab-uk">уявити</td><td class="vocab-ipa">/ujɑˈvɪtɪ/</td><td class="vocab-en">to imagine (perf)</td></tr><tr><td class="vocab-uk">шкода</td><td class="vocab-ipa">/ˈʃkodɑ/</td><td class="vocab-en">pity, shame</td></tr><tr><td class="vocab-uk">на жаль</td><td class="vocab-ipa">/nɑ ʒɑlʲ/</td><td class="vocab-en">unfortunately</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">футбол</td><td class="vocab-ipa">/futˈbɔl/</td><td class="vocab-en">football</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">баскетбол</td><td class="vocab-ipa">/bɑskɛtˈbɔl/</td><td class="vocab-en">basketball</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">волейбол</td><td class="vocab-ipa">/vɔlɛjˈbɔl/</td><td class="vocab-en">volleyball</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">теніс</td><td class="vocab-ipa">/ˈtɛnis/</td><td class="vocab-en">tennis</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">плавання</td><td class="vocab-ipa">/plɑˈvɑnʲɑ/</td><td class="vocab-en">swimming</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">біг</td><td class="vocab-ipa">/biɦ/</td><td class="vocab-en">running</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">бокс</td><td class="vocab-ipa">/bɔks/</td><td class="vocab-en">boxing</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гімнастика</td><td class="vocab-ipa">/ɦimˈnɑstɪkɑ/</td><td class="vocab-en">gymnastics</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">тренування</td><td class="vocab-ipa">/trɛnuˈvɑnʲɑ/</td><td class="vocab-en">training</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вправа</td><td class="vocab-ipa">/ˈʋprɑʋɑ/</td><td class="vocab-en">exercise</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розминка</td><td class="vocab-ipa">/rɔzˈmɪnkɑ/</td><td class="vocab-en">warm-up</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розтяжка</td><td class="vocab-ipa">/rɔzˈtʲɑʒkɑ/</td><td class="vocab-en">stretching</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">стадіон</td><td class="vocab-ipa">/stɑˈdiɔn/</td><td class="vocab-en">stadium</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">басейн</td><td class="vocab-ipa">/bɑˈsɛjn/</td><td class="vocab-en">swimming pool</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спортзал</td><td class="vocab-ipa">/spɔrtˈzɑl/</td><td class="vocab-en">gym</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">майданчик</td><td class="vocab-ipa">/mɑjˈdɑnt͡ʃɪk/</td><td class="vocab-en">court</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">тренуватися</td><td class="vocab-ipa">/trɛnuˈvɑtɪsʲɑ/</td><td class="vocab-en">to train</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">займатися</td><td class="vocab-ipa">/zɑjˈmɑtɪsʲɑ/</td><td class="vocab-en">to practice</td><td class="vocab-note">+ Inst</td></tr><tr><td class="vocab-uk">бігати</td><td class="vocab-ipa">/ˈbiɦɑtɪ/</td><td class="vocab-en">to run</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">плавати</td><td class="vocab-ipa">/plɑˈvɑtɪ/</td><td class="vocab-en">to swim</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">перемагати</td><td class="vocab-ipa">/pɛrɛmɑˈɦɑtɪ/</td><td class="vocab-en">to win</td><td class="vocab-note">pf: перемогти</td></tr><tr><td class="vocab-uk">програвати</td><td class="vocab-ipa">/prɔɦrɑˈvɑtɪ/</td><td class="vocab-en">to lose</td><td class="vocab-note">pf: програти</td></tr><tr><td class="vocab-uk">змагання</td><td class="vocab-ipa">/zmɑˈɦɑnʲɑ/</td><td class="vocab-en">competition</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">матч</td><td class="vocab-ipa">/mɑt͡ʃ/</td><td class="vocab-en">match</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">чемпіонат</td><td class="vocab-ipa">/t͡ʃɛmpiɔˈnɑt/</td><td class="vocab-en">championship</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">медаль</td><td class="vocab-ipa">/mɛˈdɑlʲ/</td><td class="vocab-en">medal</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">команда</td><td class="vocab-ipa">/kɔˈmɑndɑ/</td><td class="vocab-en">team</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гравець</td><td class="vocab-ipa">/ɦrɑˈvɛt͡sʲ/</td><td class="vocab-en">player</td><td class="vocab-note">f: гравчиня</td></tr><tr><td class="vocab-uk">тренер</td><td class="vocab-ipa">/ˈtrɛnɛr/</td><td class="vocab-en">coach</td><td class="vocab-note">f: тренерка</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -982,8 +1042,8 @@ footer {
   </main><footer>Module 47 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Unreal Conditionals","data":{"type":"fill-blank","items":[{"prompt":"Якби я ___ (мати) час, я б допоміг тобі.","answer":"мав","hints":["мати"]},{"prompt":"Я ___ (хотіти) б поїхати в Україну влітку.","answer":"хотів","hints":["хотіти"]},{"prompt":"Чи не могли ___ (б / би) ви допомогти мені?","answer":"б","hints":["б / би"]},{"prompt":"Якби він ___ (знати), він би обов'язково сказав.","answer":"знав","hints":["знати"]},{"prompt":"Було ___ (б / би) добре зустрітися з вами.","answer":"б","hints":["б / би"]}]}},{"id":"activity-1","type":"unjumble","title":"Hypothetical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мав","Якби","я","час","допоміг","б","я"],"answer":"Якби я мав час, я б допоміг.","translation":"If I had time, I would help."},{"words":["хотів","Я","б","поїхати","в","Україну"],"answer":"Я хотів би поїхати в Україну.","translation":"I would like to go to Ukraine."},{"words":["не","Чи","могли","б","ви","допомогти"],"answer":"Чи не могли б ви допомогти?","translation":"Could you possibly help?"},{"words":["знала","Якби","вона","б","сказала","вона"],"answer":"Якби вона знала, вона б сказала.","translation":"If she knew, she would tell."},{"words":["добре","Було","б","зустрітися","з","вами"],"answer":"Було б добре зустрітися з вами.","translation":"It would be good to meet with you."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"гіпотетичний","right":"hypothetical"},{"left":"двадцять","right":"twenty"},{"left":"мрія","right":"dream"},{"left":"лампа","right":"lamp"},{"left":"б","right":"would (after vowel)"},{"left":"можливість","right":"possibility"},{"left":"уявний","right":"imaginary, hypothetical"},{"left":"уявляти","right":"to imagine (impf)"},{"left":"якби","right":"if (unreal)"},{"left":"би","right":"would (after consonant)"},{"left":"мріяти","right":"to dream"},{"left":"неймовірно","right":"incredibly"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"б\" mean?","options":["in front, ahead","where from","would (after vowel)","sometimes"],"correctIndex":2,"explanation":"\"б\" means \"would (after vowel)\""},{"question":"What does \"уявляти\" mean?","options":["whose (m)","family","dad","to imagine (impf)"],"correctIndex":3,"explanation":"\"уявляти\" means \"to imagine (impf)\""},{"question":"What does \"гіпотетичний\" mean?","options":["to call (pf)","hypothetical","to eat (perf)","bon appétit"],"correctIndex":1,"explanation":"\"гіпотетичний\" means \"hypothetical\""},{"question":"What does \"би\" mean?","options":["would (after consonant)","behind","to watch, look","fog"],"correctIndex":0,"explanation":"\"би\" means \"would (after consonant)\""},{"question":"What does \"уявний\" mean?","options":["to wake up (perf)","music","to succeed","imaginary, hypothetical"],"correctIndex":3,"explanation":"\"уявний\" means \"imaginary, hypothetical\""},{"question":"What does \"уявити\" mean?","options":["it","to help (perf)","to imagine (perf)","borscht"],"correctIndex":2,"explanation":"\"уявити\" means \"to imagine (perf)\""},{"question":"What does \"можливість\" mean?","options":["possibility","most interesting","good, kind","how"],"correctIndex":0,"explanation":"\"можливість\" means \"possibility\""},{"question":"What does \"шкода\" mean?","options":["pity, shame","nothing","(with) us","to want"],"correctIndex":0,"explanation":"\"шкода\" means \"pity, shame\""},{"question":"What does \"якби\" mean?","options":["to serve","(with) us","if (unreal)","artist"],"correctIndex":2,"explanation":"\"якби\" means \"if (unreal)\""},{"question":"What does \"мріяти\" mean?","options":["to send, dispatch","to dream","masculine","fitting room"],"correctIndex":1,"explanation":"\"мріяти\" means \"to dream\""},{"question":"What does \"мрія\" mean?","options":["sun","Saturday","dream","bigger"],"correctIndex":2,"explanation":"\"мрія\" means \"dream\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"гіпотетичний\" means \"hypothetical\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"би\" means \"to carry\"","isTrue":false,"explanation":"Incorrect. \"би\" means \"would (after consonant)\""},{"statement":"\"якби\" means \"if (unreal)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"уявляти\" means \"your (pl, informal)\"","isTrue":false,"explanation":"Incorrect. \"уявляти\" means \"to imagine (impf)\""},{"statement":"\"можливість\" means \"husband\"","isTrue":false,"explanation":"Incorrect. \"можливість\" means \"possibility\""},{"statement":"\"шкода\" means \"advice\"","isTrue":false,"explanation":"Incorrect. \"шкода\" means \"pity, shame\""},{"statement":"\"уявити\" means \"to imagine (perf)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"б\" means \"would (after vowel)\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мрія\" means \"dream\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мріяти\" means \"pen\"","isTrue":false,"explanation":"Incorrect. \"мріяти\" means \"to dream\""}]}},{"id":"activity-5","type":"select","title":"Unreal Conditionals","data":{"type":"select","items":[{"question":"If I had money, I would buy a car.","options":[{"text":"Якби я мав гроші, я б купив машину.","correct":true},{"text":"Якщо я маю гроші, я куплю машину.","correct":false},{"text":"Якби я маю гроші, я куплю машину.","correct":false},{"text":"Якщо я мав гроші, я купив машину.","correct":false}]},{"question":"If she knew Ukrainian, she would speak with us.","options":[{"text":"Якби вона знала українську, вона б говорила з нами.","correct":true},{"text":"Якщо вона знає українську, вона говорить з нами.","correct":false},{"text":"Якби вона знає українську, вона говорить.","correct":false},{"text":"Якщо вона знала українську, вона говорила.","correct":false}]},{"question":"I would like to visit Kyiv.","options":[{"text":"Я хотів би відвідати Київ.","correct":true},{"text":"Я хочу відвідати Київ.","correct":false},{"text":"Я хотів відвідати Київ.","correct":false},{"text":"Я буду хотіти відвідати Київ.","correct":false}]},{"question":"Could you help me, please?","options":[{"text":"Ви могли б мені допомогти?","correct":true},{"text":"Ви можете мені допомогти?","correct":false},{"text":"Ви могли мені допомогти?","correct":false},{"text":"Ви будете допомагати?","correct":false}]},{"question":"If we had time, we would rest.","options":[{"text":"Якби ми мали час, ми б відпочили.","correct":true},{"text":"Якщо ми маємо час, ми відпочинемо.","correct":false},{"text":"Якби ми маємо час, ми відпочинемо.","correct":false},{"text":"Якщо ми мали час, ми відпочили.","correct":false}]},{"question":"It would be great if you came.","options":[{"text":"Було б чудово, якби ти прийшов.","correct":true},{"text":"Буде чудово, якщо ти прийдеш.","correct":false},{"text":"Було чудово, якби ти прийшов.","correct":false},{"text":"Буде б чудово, якщо ти прийдеш.","correct":false}]},{"question":"I dream of traveling to Ukraine.","options":[{"text":"Я мрію про подорож до України.","correct":true},{"text":"Я мріяв про подорож до України.","correct":false},{"text":"Я мріятиму про подорож.","correct":false},{"text":"Я б мріяв про подорож.","correct":false}]},{"question":"If only I could speak fluently!","options":[{"text":"Якби я міг говорити вільно!","correct":true},{"text":"Якщо я можу говорити вільно!","correct":false},{"text":"Якби я можу говорити вільно!","correct":false},{"text":"Якщо я міг говорити!","correct":false}]},{"question":"You should try this dish.","options":[{"text":"Ви мали б спробувати цю страву.","correct":true},{"text":"Ви маєте спробувати цю страву.","correct":false},{"text":"Ви мали спробувати цю страву.","correct":false},{"text":"Ви будете пробувати страву.","correct":false}]},{"question":"What a pity that you can't come!","options":[{"text":"Шкода, що ти не можеш прийти!","correct":true},{"text":"Шкода б, що ти не можеш прийти!","correct":false},{"text":"Шкода, що ти б не міг прийти!","correct":false},{"text":"Було б шкода, що ти не прийдеш!","correct":false}]}]}},{"id":"activity-6","type":"unjumble","title":"Hypothetical Story","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["пропозицію","прийняв","він","Якби","переїхав","би","він","до Києва"],"answer":"Якби він прийняв пропозицію, він би переїхав до Києва."},{"words":["можливість","знав","я","Якби","про","раніше","розповів","я б","другу"],"answer":"Якби я знав про можливість раніше, я б розповів другу."},{"words":["у Києві","жив","він","Якби","вивчив","би","він","українську","швидше"],"answer":"Якби він жив у Києві, він би вивчив українську швидше."},{"words":["про це","подумав","він","Якби","погодився","би","він"],"answer":"Якби він подумав про це, він би погодився."},{"words":["українською","говорив","він","Якби","вільно","знайшов","би","він","кращу","роботу"],"answer":"Якби він говорив українською вільно, він би знайшов кращу роботу."},{"words":["важливість","зрозумів","друг","Якби","зацікавився","би","він","пропозицією"],"answer":"Якби друг зрозумів важливість, він би зацікавився пропозицією."},{"words":["з ним","переїхала","вона","Якби","вивчила","б","вона","теж","мову"],"answer":"Якби вона переїхала з ним, вона б теж вивчила мову."},{"words":["що","Шкода","цього","не","сталося"],"answer":"Шкода, що цього не сталося."},{"words":["разом","працювали","вони","Якби","було б","все","чудово"],"answer":"Якби вони разом працювали, все було б чудово."},{"words":["це","Але","тільки","мрія","не","реальність"],"answer":"Але це тільки мрія, не реальність."}]}},{"id":"activity-7","type":"group-sort","title":"Sort by Conditional Type","data":{"type":"group-sort","groups":[{"id":"real-conditions","name":"Real conditions","items":["Якщо завтра буде сонце, ми підемо гуляти.","Якщо ти зателефонуєш, я відповім.","Якщо ми домовимося, все буде добре.","Якщо вона прийде, скажи їй привіт.","Якщо можливо, давай зустрінемось.","Якщо ти поспішиш, ти встигнеш.","Якщо результат буде добрий, всі будуть раді.","Якщо він подзвонить, я допоможу.","Якщо ви матимете час, приходьте.","Якщо погода буде гарна, поїдемо на море."],"nameUk":"possible"},{"id":"unreal-conditions","name":"Unreal conditions","items":["Якби я мав гроші, я б купив машину.","Якби вона знала мову, вона б говорила.","Якби ми мали час, ми б відпочили.","Якби він прийшов, було б чудово.","Якби я міг, я б допоміг.","Якби вони жили тут, все було б інакше.","Якби ти зрозумів, ти б погодився.","Якби ми працювали разом, було б легше.","Якби це було можливо, я б зробив.","Якби вони мріяли про це, вони б намагалися."],"nameUk":"hypothetical"}],"shuffleItems":true}}];
-    const vocabData = [{"uk":"якби","translit":"","en":"if (unreal)","note":""},{"uk":"б","translit":"","en":"would (after vowel)","note":""},{"uk":"би","translit":"","en":"would (after consonant)","note":""},{"uk":"хотів би","translit":"","en":"would like (m)","note":""},{"uk":"хотіла б","translit":"","en":"would like (f)","note":""},{"uk":"могли б","translit":"","en":"could (pl/formal)","note":""},{"uk":"мав би","translit":"","en":"should (m)","note":""},{"uk":"було б","translit":"","en":"would be","note":""},{"uk":"гіпотетичний","translit":"","en":"hypothetical","note":""},{"uk":"уявний","translit":"","en":"imaginary, hypothetical","note":""},{"uk":"можливість","translit":"","en":"possibility","note":""},{"uk":"мрія","translit":"","en":"dream","note":""},{"uk":"мріяти","translit":"","en":"to dream","note":""},{"uk":"уявляти","translit":"","en":"to imagine (impf)","note":""},{"uk":"уявити","translit":"","en":"to imagine (perf)","note":""},{"uk":"шкода","translit":"","en":"pity, shame","note":""},{"uk":"на жаль","translit":"","en":"unfortunately","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я граю у ___ з друзями у парку.","answer":"футбол","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ — командна гра з м'ячем і кошиком.","answer":"Баскетбол","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ — найкращий спорт для здоров'я.","answer":"Плавання","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"Вона грає в ___ на корті.","answer":"теніс","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ зміцнює серце і легені.","answer":"Біг","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ — найпопулярніший спорт у світі.","answer":"Футбол","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"Для ___у потрібен високий зріст.","answer":"баскетбол","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ корисне для спини.","answer":"Плавання","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"Ракетка потрібна для гри в ___.","answer":"теніс","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"Ранковий ___ заряджає енергією.","answer":"біг","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"Матч з ___у починається о сьомій.","answer":"футбол","options":["футбол","баскетбол","плавання","теніс","біг"]},{"prompt":"___ — це індивідуальний вид спорту.","answer":"Теніс","options":["футбол","баскетбол","плавання","теніс","біг"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"футбол","right":"football"},{"left":"плавання","right":"swimming"},{"left":"біг","right":"running"},{"left":"тренування","right":"training"},{"left":"стадіон","right":"stadium"},{"left":"басейн","right":"swimming pool"},{"left":"спортзал","right":"gym"},{"left":"команда","right":"team"},{"left":"гравець","right":"player"},{"left":"тренер","right":"coach"},{"left":"медаль","right":"medal"},{"left":"матч","right":"match"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","тренуюся","в","спортзалі","три","рази","на","тиждень"],"answer":"Я тренуюся в спортзалі три рази на тиждень.","translation":"I train at the gym three times a week"},{"words":["Наша","команда","виграла","чемпіонат"],"answer":"Наша команда виграла чемпіонат.","translation":"Our team won the championship"},{"words":["Він","плаває","в","басейні","щодня"],"answer":"Він плаває в басейні щодня.","translation":"He swims in the pool every day"},{"words":["Футбольний","матч","починається","о","сьомій"],"answer":"Футбольний матч починається о сьомій.","translation":"The football match starts at seven"},{"words":["Вона","займається","гімнастикою","з","дитинства"],"answer":"Вона займається гімнастикою з дитинства.","translation":"She has been doing gymnastics since childhood"},{"words":["Тренер","вимогливий","але","справедливий"],"answer":"Тренер вимогливий, але справедливий.","translation":"The coach is demanding but fair"},{"words":["Я","бігаю","в","парку","щоранку"],"answer":"Я бігаю в парку щоранку.","translation":"I run in the park every morning"},{"words":["Він","отримав","золоту","медаль","на","змаганнях"],"answer":"Він отримав золоту медаль на змаганнях.","translation":"He received a gold medal at the competition"},{"words":["Розминка","потрібна","перед","тренуванням"],"answer":"Розминка потрібна перед тренуванням.","translation":"Warm-up is needed before training"},{"words":["Баскетбольний","майданчик","біля","школи"],"answer":"Баскетбольний майданчик біля школи.","translation":"The basketball court is near the school"},{"words":["Наша","команда","програла","матч","вчора"],"answer":"Наша команда програла матч вчора.","translation":"Our team lost the match yesterday"},{"words":["Турнір","з","тенісу","відбувається","влітку"],"answer":"Турнір з тенісу відбувається влітку.","translation":"The tennis tournament takes place in summer"}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Де плавають?","options":["на стадіоні","в басейні","у спортзалі","на катку"],"correctIndex":1,"explanation":""},{"question":"Що таке \"тренування\"?","options":["match","training","team","medal"],"correctIndex":1,"explanation":""},{"question":"Що означає \"перемагати\"?","options":["to lose","to win","to play","to train"],"correctIndex":1,"explanation":""},{"question":"Де проходять футбольні матчі?","options":["на стадіоні","в басейні","на катку","у спортзалі"],"correctIndex":0,"explanation":""},{"question":"Хто такий \"тренер\"?","options":["player","team","coach","referee"],"correctIndex":2,"explanation":""},{"question":"Що таке \"медаль\"?","options":["team","match","medal","player"],"correctIndex":2,"explanation":""},{"question":"Що означає \"бігати\"?","options":["to swim","to run","to play","to jump"],"correctIndex":1,"explanation":""},{"question":"Що таке \"команда\"?","options":["match","player","team","coach"],"correctIndex":2,"explanation":""},{"question":"Де займаються фітнесом?","options":["на стадіоні","в басейні","у спортзалі","на корті"],"correctIndex":2,"explanation":""},{"question":"Що означає \"програвати\"?","options":["to win","to lose","to play","to train"],"correctIndex":1,"explanation":""},{"question":"Що таке \"чемпіонат\"?","options":["match","training","championship","exercise"],"correctIndex":2,"explanation":""},{"question":"Що робить тренер?","options":["грає","тренує","плаває","біжить"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Футбол — командний вид спорту.","isTrue":true,"explanation":"Правда. У футбол грають дві команди."},{"statement":"Плавання відбувається на стадіоні.","isTrue":false,"explanation":"Неправда. Плавають у басейні, а футбол грають на стадіоні."},{"statement":"Тренер тренує спортсменів.","isTrue":true,"explanation":"Правда. Це основна робота тренера."},{"statement":"Біг корисний для здоров'я.","isTrue":true,"explanation":"Правда. Біг зміцнює серце та легені."},{"statement":"У баскетбол грають ракеткою.","isTrue":false,"explanation":"Неправда. Ракетка потрібна для тенісу, а баскетбол — це гра з м'ячем."},{"statement":"Медаль отримують за перемогу.","isTrue":true,"explanation":"Правда. Переможці отримують золоті, срібні та бронзові медалі."},{"statement":"Розминка потрібна після тренування.","isTrue":false,"explanation":"Неправда. Розминка потрібна перед тренуванням, а після — розтяжка."},{"statement":"Спортзал — це місце для фітнесу.","isTrue":true,"explanation":"Правда. У спортзалі займаються фізичними вправами."},{"statement":"Програвати означає перемагати.","isTrue":false,"explanation":"Неправда. Програвати — протилежність перемагати."},{"statement":"Гравець — це член команди.","isTrue":true,"explanation":"Правда. Гравець входить до складу команди."},{"statement":"Чемпіонат — це одна гра.","isTrue":false,"explanation":"Неправда. Чемпіонат — це серія ігор або змагань."},{"statement":"Басейн потрібен для плавання.","isTrue":true,"explanation":"Правда. Басейн — це спеціальне місце для плавання."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"-","name":"Види спорту","items":["футбол","баскетбол","плавання","теніс","біг","бокс"]},{"id":"","name":"Вправи","items":["тренування","розминка","віджимання","присідання","розтяжка","вправа"]},{"id":"","name":"Місця","items":["стадіон","басейн","спортзал","майданчик","каток","корт"]},{"id":"","name":"Змагання","items":["матч","чемпіонат","турнір","медаль","команда","гравець"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Sports Actions","data":{"type":"fill-blank","items":[{"prompt":"Спортсмен ___ у спортзалі кожен день. (trains)","answer":"тренується"},{"prompt":"Наша команда ___ важливий матч учора. (won)","answer":"виграла"},{"prompt":"Він ___ у басейні три рази на тиждень. (swims)","answer":"плаває"},{"prompt":"Вона ___ йогою кожен ранок перед роботою. (practices)","answer":"займається"},{"prompt":"Діти ___ у футбол на майданчику. (play)","answer":"грають"},{"prompt":"На жаль, ми ___ минулий матч. (lost)","answer":"програли"},{"prompt":"Тренер ___ команду до чемпіонату світу. (trains)","answer":"тренує"},{"prompt":"Спортсмени ___ щоранку в парку біля стадіону. (run)","answer":"бігають"},{"prompt":"Вона ___ золоту медаль на Олімпійських іграх. (won)","answer":"виграла"},{"prompt":"Ми ___ розминку перед кожним тренуванням. (do)","answer":"робимо"},{"prompt":"Команда ___ на стадіоні перед важливим матчем. (trains)","answer":"тренується"},{"prompt":"Він ___ боксом уже десять років професійно. (practices)","answer":"займається"}]}},{"id":"activity-7","type":"select","title":"Sport or Exercise?","data":{"type":"select","items":[{"question":"футбол","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"віджимання","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]},{"question":"плавання","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"присідання","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]},{"question":"баскетбол","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"розминка","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]},{"question":"теніс","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"розтяжка","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]},{"question":"бокс","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"тренування","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]},{"question":"волейбол","options":[{"text":"вид спорту","correct":true},{"text":"вправа","correct":false}]},{"question":"біг підтюпцем","options":[{"text":"вид спорту","correct":false},{"text":"вправа","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Sports Knowledge","data":{"type":"quiz","questions":[{"question":"Де відбуваються футбольні матчі?","options":["на стадіоні","у басейні","на катку","у спортзалі"],"correctIndex":0,"explanation":""},{"question":"Хто тренує команду?","options":["гравець","тренер","суддя","глядач"],"correctIndex":1,"explanation":""},{"question":"Що потрібно зробити перед тренуванням?","options":["розтяжку","розминку","душ","перерву"],"correctIndex":1,"explanation":""},{"question":"Як називається нагорода за перемогу?","options":["кубок","медаль","м'яч","квиток"],"correctIndex":1,"explanation":""},{"question":"Де займаються плаванням?","options":["на стадіоні","у спортзалі","у басейні","на майданчику"],"correctIndex":2,"explanation":""},{"question":"Що таке чемпіонат?","options":["одна гра","серія змагань","тренування","розминка"],"correctIndex":1,"explanation":""},{"question":"Який спорт потребує ракетку?","options":["футбол","баскетбол","теніс","плавання"],"correctIndex":2,"explanation":""},{"question":"Що означає \"програвати\"?","options":["to win","to lose","to play","to train"],"correctIndex":1,"explanation":""},{"question":"Де катаються на ковзанах?","options":["у басейні","на стадіоні","на катку","на корті"],"correctIndex":2,"explanation":""},{"question":"Що роблять після тренування?","options":["розминку","розтяжку","біг","віджимання"],"correctIndex":1,"explanation":""},{"question":"Хто грає у команді?","options":["гравці","тренери","судді","глядачі"],"correctIndex":0,"explanation":""},{"question":"Як часто треба тренуватися для результату?","options":["раз на місяць","раз на тиждень","регулярно","ніколи"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"футбол","translit":"","en":"football","note":""},{"uk":"баскетбол","translit":"","en":"basketball","note":""},{"uk":"волейбол","translit":"","en":"volleyball","note":""},{"uk":"теніс","translit":"","en":"tennis","note":""},{"uk":"плавання","translit":"","en":"swimming","note":""},{"uk":"біг","translit":"","en":"running","note":""},{"uk":"бокс","translit":"","en":"boxing","note":""},{"uk":"гімнастика","translit":"","en":"gymnastics","note":""},{"uk":"тренування","translit":"","en":"training","note":""},{"uk":"вправа","translit":"","en":"exercise","note":""},{"uk":"розминка","translit":"","en":"warm-up","note":""},{"uk":"розтяжка","translit":"","en":"stretching","note":""},{"uk":"стадіон","translit":"","en":"stadium","note":""},{"uk":"басейн","translit":"","en":"swimming pool","note":""},{"uk":"спортзал","translit":"","en":"gym","note":""},{"uk":"майданчик","translit":"","en":"court","note":""},{"uk":"тренуватися","translit":"","en":"to train","note":""},{"uk":"займатися","translit":"","en":"to practice","note":"+ Inst"},{"uk":"бігати","translit":"","en":"to run","note":""},{"uk":"плавати","translit":"","en":"to swim","note":""},{"uk":"перемагати","translit":"","en":"to win","note":"pf: перемогти"},{"uk":"програвати","translit":"","en":"to lose","note":"pf: програти"},{"uk":"змагання","translit":"","en":"competition","note":""},{"uk":"матч","translit":"","en":"match","note":""},{"uk":"чемпіонат","translit":"","en":"championship","note":""},{"uk":"медаль","translit":"","en":"medal","note":""},{"uk":"команда","translit":"","en":"team","note":""},{"uk":"гравець","translit":"","en":"player","note":"f: гравчиня"},{"uk":"тренер","translit":"","en":"coach","note":"f: тренерка"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1035,8 +1095,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1067,8 +1127,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1480,7 +1540,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1490,7 +1550,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1691,6 +1753,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

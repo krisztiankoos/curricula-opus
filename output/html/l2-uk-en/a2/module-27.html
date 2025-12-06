@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 27: Work &amp; Careers | Ukrainian A2</title>
+  <title>Module 27: Which One? | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 27: Work &amp; Careers</h1>
+    <h1>Module 27: Which One?</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
-      <button class="nav-tab" data-section="activity-6">7. Select</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,549 +498,349 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A2 · A2.3</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">Work &amp; Careers</h2>
-        <p style="color:var(--text-muted)">Jobs and the Workplace</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Which One?</h2>
+        <p style="color:var(--text-muted)">Relative Clauses with Який</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="theworldofwork">The World of Work</h3>
-<p>Whether you're working in Ukraine or discussing careers, this vocabulary is essential!</p>
-<p><strong>Key phrases:</strong></p>
-<ul>
-<li>Ким ви <strong>працюєте</strong>? - What do you do for work?</li>
-<li>Я <strong>працюю</strong> менеджером. - I work as a manager.</li>
-<li>Я <strong>шукаю</strong> роботу. - I'm looking for a job.</li>
-</ul>
+      <div class="md-content"><p>"The book that I'm reading…", "The woman who called…", "The house which is old…" — relative clauses let you describe and specify things in detail. In Ukrainian, <em>який</em> (which/that/who) is the main relative pronoun, and it changes based on the noun it describes. Master this, and your sentences become richly descriptive!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Який/Яка/Яке/Які (Which, That, Who)</h3>
+      <div class="md-content"><h2 id="genderandnumberagreement">Gender and Number Agreement</h2>
+<p>The relative pronoun matches the noun it refers to:</p>
+<table>
+<thead>
+<tr>
+<th>Gender/Number</th>
+<th>Relative Pronoun</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Masculine</td>
+<td><strong>який</strong></td>
+<td>чоловік, <strong>який</strong> читає</td>
+</tr>
+<tr>
+<td>Feminine</td>
+<td><strong>яка</strong></td>
+<td>жінка, <strong>яка</strong> читає</td>
+</tr>
+<tr>
+<td>Neuter</td>
+<td><strong>яке</strong></td>
+<td>місто, <strong>яке</strong> я люблю</td>
+</tr>
+<tr>
+<td>Plural</td>
+<td><strong>які</strong></td>
+<td>люди, <strong>які</strong> читають</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>Ukraine has a booming IT sector! Many Ukrainians work in tech, often for international companies. Remote work (віддалена робота) has become very popular. Common job sites include work.ua, rabota.ua, and LinkedIn.</p>
+  <p>"Який" literally means "what kind of" as a question word, but in relative clauses it means "which/that/who"!</p>
 </blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="professions">Professions - Професії</h3>
-<p><strong>Office jobs:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Masculine: Який</h3>
+      <div class="md-content"><h2 id="exampleswithmasculinenouns">Examples with Masculine Nouns</h2>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
+<th>Sentence</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>менеджер</td>
-<td>manager</td>
+<td>Чоловік, <strong>який</strong> стоїть там, — мій друг.</td>
+<td>The man who is standing there is my friend.</td>
 </tr>
 <tr>
-<td>директор</td>
-<td>director</td>
+<td>Фільм, <strong>який</strong> я дивився, був цікавий.</td>
+<td>The film that I watched was interesting.</td>
 </tr>
 <tr>
-<td>бухгалтер</td>
-<td>accountant</td>
-</tr>
-<tr>
-<td>юрист</td>
-<td>lawyer</td>
-</tr>
-<tr>
-<td>секретар</td>
-<td>secretary</td>
-</tr>
-<tr>
-<td>адміністратор</td>
-<td>administrator</td>
-</tr>
-<tr>
-<td>економіст</td>
-<td>economist</td>
-</tr>
-<tr>
-<td>аналітик</td>
-<td>analyst</td>
+<td>Дім, <strong>який</strong> вони купили, великий.</td>
+<td>The house that they bought is big.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Tech jobs:</strong></p>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Студент, <strong>який</strong> добре вчиться…</li>
+<li>Ресторан, <strong>який</strong> відкрився нещодавно…</li>
+<li>Телефон, <strong>який</strong> я загубив…</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Feminine: Яка</h3>
+      <div class="md-content"><h2 id="exampleswithfemininenouns">Examples with Feminine Nouns</h2>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
+<th>Sentence</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>програміст</td>
-<td>programmer</td>
+<td>Жінка, <strong>яка</strong> говорить, — вчителька.</td>
+<td>The woman who is speaking is a teacher.</td>
 </tr>
 <tr>
-<td>розробник</td>
-<td>developer</td>
+<td>Книга, <strong>яка</strong> лежить на столі, моя.</td>
+<td>The book that is lying on the table is mine.</td>
 </tr>
 <tr>
-<td>дизайнер</td>
-<td>designer</td>
-</tr>
-<tr>
-<td>тестувальник</td>
-<td>tester (QA)</td>
-</tr>
-<tr>
-<td>системний адміністратор</td>
-<td>system administrator</td>
-</tr>
-<tr>
-<td>аналітик даних</td>
-<td>data analyst</td>
+<td>Країна, <strong>яка</strong> мені подобається…</td>
+<td>The country that I like…</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Service and trades:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>продавець</td>
-<td>salesperson</td>
-</tr>
-<tr>
-<td>офіціант/офіціантка</td>
-<td>waiter/waitress</td>
-</tr>
-<tr>
-<td>перукар</td>
-<td>hairdresser</td>
-</tr>
-<tr>
-<td>кухар</td>
-<td>cook/chef</td>
-</tr>
-<tr>
-<td>водій</td>
-<td>driver</td>
-</tr>
-<tr>
-<td>електрик</td>
-<td>electrician</td>
-</tr>
-<tr>
-<td>будівельник</td>
-<td>builder</td>
-</tr>
-<tr>
-<td>сантехнік</td>
-<td>plumber</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Medical and education:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>лікар</td>
-<td>doctor</td>
-</tr>
-<tr>
-<td>медсестра</td>
-<td>nurse</td>
-</tr>
-<tr>
-<td>вчитель/вчителька</td>
-<td>teacher</td>
-</tr>
-<tr>
-<td>викладач</td>
-<td>lecturer/professor</td>
-</tr>
-<tr>
-<td>науковець</td>
-<td>scientist</td>
-</tr>
-<tr>
-<td>дослідник</td>
-<td>researcher</td>
-</tr>
-</tbody>
-</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Дівчина, <strong>яка</strong> співає…</li>
+<li>Робота, <strong>яка</strong> мені цікава…</li>
+<li>Машина, <strong>яка</strong> швидко їде…</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Ким ви працюєте?</strong></p>
-  <p>When answering "What do you do?", use instrumental case:</p>
-  <ul>
-  <li>Я працюю <strong>програмістом</strong>. (m)</li>
-  <li>Вона працює <strong>вчителькою</strong>. (f)</li>
-  <li>Він працює <strong>лікарем</strong>. (m)</li>
-  </ul>
+  <p>Song lyric style: <em>Дівчина, яка танцює під дощем</em> — The girl who dances in the rain!</p>
 </blockquote>
-<h3 id="workplace">Workplace - Робоче місце</h3>
-<p><strong>Places:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Neuter: Яке</h3>
+      <div class="md-content"><h2 id="exampleswithneuternouns">Examples with Neuter Nouns</h2>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
+<th>Sentence</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>офіс</td>
-<td>office</td>
+<td>Місто, <strong>яке</strong> я відвідав, красиве.</td>
+<td>The city that I visited is beautiful.</td>
 </tr>
 <tr>
-<td>завод</td>
-<td>factory</td>
+<td>Завдання, <strong>яке</strong> вона робить, складне.</td>
+<td>The task that she's doing is difficult.</td>
 </tr>
 <tr>
-<td>фабрика</td>
-<td>factory (light industry)</td>
-</tr>
-<tr>
-<td>магазин</td>
-<td>store</td>
-</tr>
-<tr>
-<td>лікарня</td>
-<td>hospital</td>
-</tr>
-<tr>
-<td>школа</td>
-<td>school</td>
-</tr>
-<tr>
-<td>ресторан</td>
-<td>restaurant</td>
-</tr>
-<tr>
-<td>компанія</td>
-<td>company</td>
-</tr>
-<tr>
-<td>фірма</td>
-<td>firm</td>
+<td>Село, <strong>яке</strong> там розташоване…</td>
+<td>The village that is located there…</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Office equipment:</strong></p>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Питання, <strong>яке</strong> він поставив…</li>
+<li>Море, <strong>яке</strong> ми бачили…</li>
+<li>Слово, <strong>яке</strong> я забув…</li>
+</ul>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Plural: Які</h3>
+      <div class="md-content"><h2 id="exampleswithpluralnouns">Examples with Plural Nouns</h2>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
+<th>Sentence</th>
 <th>English</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>комп'ютер</td>
-<td>computer</td>
+<td>Люди, <strong>які</strong> тут живуть, дружні.</td>
+<td>The people who live here are friendly.</td>
 </tr>
 <tr>
-<td>принтер</td>
-<td>printer</td>
+<td>Книги, <strong>які</strong> я читаю, цікаві.</td>
+<td>The books that I'm reading are interesting.</td>
 </tr>
 <tr>
-<td>телефон</td>
-<td>phone</td>
-</tr>
-<tr>
-<td>стіл</td>
-<td>desk</td>
-</tr>
-<tr>
-<td>стілець</td>
-<td>chair</td>
-</tr>
-<tr>
-<td>документи</td>
-<td>documents</td>
-</tr>
-<tr>
-<td>папір</td>
-<td>paper</td>
-</tr>
-<tr>
-<td>ручка</td>
-<td>pen</td>
+<td>Речі, <strong>які</strong> вона купила…</td>
+<td>The things that she bought…</td>
 </tr>
 </tbody>
 </table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Студенти, <strong>які</strong> вивчають українську…</li>
+<li>Фільми, <strong>які</strong> мені подобаються…</li>
+<li>Країни, <strong>які</strong> я хочу відвідати…</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
 <blockquote>
-  <p>🎭 <strong>Culture Corner: Ukrainian Work Culture</strong></p>
-  <p>Ukrainian workplaces often have a formal hierarchy but friendly atmosphere. Colleagues often celebrate birthdays together, and the New Year corporate party (корпоратив) is a big tradition! Tea/coffee breaks are common, and many offices have a kitchen area.</p>
+  <p>This is how you specify things in everyday conversation: <em>Ті люди, які живуть поруч, дуже добрі</em> — Those people who live nearby are very kind.</p>
 </blockquote>
-<h3 id="talkingaboutwork">Talking About Work</h3>
-<p><strong>Basic questions:</strong></p>
-<ul>
-<li><strong>Ким</strong> ви працюєте? - What do you do for work?</li>
-<li><strong>Де</strong> ви працюєте? - Where do you work?</li>
-<li>Вам <strong>подобається</strong> ваша робота? - Do you like your job?</li>
-<li><strong>Скільки</strong> ви заробляєте? - How much do you earn? (often considered rude)</li>
-</ul>
-<p><strong>Describing your job:</strong></p>
-<ul>
-<li>Я працюю <strong>в</strong> компанії "X". - I work at company "X".</li>
-<li>Я працюю <strong>на</strong> заводі. - I work at a factory.</li>
-<li>Моя робота <strong>цікава/складна/стресова</strong>. - My job is interesting/difficult/stressful.</li>
-<li>Я <strong>відповідаю</strong> за… - I'm responsible for…</li>
-<li>Мої <strong>обов'язки</strong> включають… - My duties include…</li>
-</ul>
-<p><strong>Work schedule:</strong></p>
-<ul>
-<li>Я працюю <strong>з 9 до 6</strong>. - I work from 9 to 6.</li>
-<li>У мене <strong>гнучкий</strong> графік. - I have a flexible schedule.</li>
-<li>Я працюю <strong>віддалено</strong>. - I work remotely.</li>
-<li>Я працюю <strong>на повну ставку</strong>. - I work full-time.</li>
-<li>Я працюю <strong>на часткову ставку</strong>. - I work part-time.</li>
-</ul>
-<h3 id="lookingforwork">Looking for Work</h3>
-<p><strong>Job search vocabulary:</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Case Changes in Relative Clauses</h3>
+      <div class="md-content"><h2 id="indifferentcases">Який in Different Cases</h2>
+<p>The relative pronoun changes case based on its role in the relative clause:</p>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
-<th>English</th>
+<th>Case</th>
+<th>M</th>
+<th>F</th>
+<th>N</th>
+<th>Pl</th>
+<th>Role</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>вакансія</td>
-<td>vacancy/job opening</td>
+<td>Nom</td>
+<td>який</td>
+<td>яка</td>
+<td>яке</td>
+<td>які</td>
+<td>subject</td>
 </tr>
 <tr>
-<td>резюме</td>
-<td>resume/CV</td>
+<td>Acc</td>
+<td>який/якого</td>
+<td>яку</td>
+<td>яке</td>
+<td>які/яких</td>
+<td>direct object</td>
 </tr>
 <tr>
-<td>співбесіда</td>
-<td>interview</td>
+<td>Gen</td>
+<td>якого</td>
+<td>якої</td>
+<td>якого</td>
+<td>яких</td>
+<td>possession</td>
 </tr>
 <tr>
-<td>роботодавець</td>
-<td>employer</td>
+<td>Dat</td>
+<td>якому</td>
+<td>якій</td>
+<td>якому</td>
+<td>яким</td>
+<td>indirect object</td>
 </tr>
 <tr>
-<td>кандидат</td>
-<td>candidate</td>
+<td>Inst</td>
+<td>яким</td>
+<td>якою</td>
+<td>яким</td>
+<td>якими</td>
+<td>instrument</td>
 </tr>
 <tr>
-<td>досвід</td>
-<td>experience</td>
-</tr>
-<tr>
-<td>кваліфікація</td>
-<td>qualification</td>
-</tr>
-<tr>
-<td>зарплата</td>
-<td>salary</td>
-</tr>
-<tr>
-<td>умови праці</td>
-<td>working conditions</td>
+<td>Loc</td>
+<td>якому</td>
+<td>якій</td>
+<td>якому</td>
+<td>яких</td>
+<td>location</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Phrases:</strong></p>
-<ul>
-<li>Я <strong>шукаю</strong> роботу. - I'm looking for a job.</li>
-<li>Я хочу <strong>подати</strong> резюме. - I want to submit my resume.</li>
-<li>Коли <strong>співбесіда</strong>? - When is the interview?</li>
-<li>Які <strong>вимоги</strong>? - What are the requirements?</li>
-<li>Яка <strong>зарплата</strong>? - What's the salary?</li>
-<li>Чи є <strong>соціальний пакет</strong>? - Is there a benefits package?</li>
-</ul>
-<blockquote>
-  <p>📜 <strong>History Bite: Work in Ukraine</strong></p>
-  <p>During Soviet times, unemployment officially didn't exist - everyone was guaranteed work. Today, Ukraine has a dynamic job market. The IT sector especially has grown tremendously, with cities like Kyiv, Lviv, and Kharkiv becoming tech hubs.</p>
-</blockquote>
-<h3 id="atwork">At Work - На роботі</h3>
-<p><strong>Daily activities:</strong></p>
-<ul>
-<li>Я <strong>приходжу</strong> на роботу о дев'ятій. - I come to work at nine.</li>
-<li>Я <strong>перевіряю</strong> пошту. - I check my email.</li>
-<li>Я <strong>маю</strong> зустрічі з клієнтами. - I have meetings with clients.</li>
-<li>Ми <strong>обговорюємо</strong> проєкти. - We discuss projects.</li>
-<li>Я <strong>готую</strong> звіти. - I prepare reports.</li>
-<li>Я <strong>закінчую</strong> роботу о шостій. - I finish work at six.</li>
-</ul>
-<p><strong>Communication:</strong></p>
-<ul>
-<li>Мені потрібно <strong>поговорити</strong> з босом. - I need to talk to the boss.</li>
-<li>Чи можна взяти <strong>відпустку</strong>? - Can I take vacation?</li>
-<li>Я <strong>хворію</strong> сьогодні. - I'm sick today.</li>
-<li>Я <strong>спізнюся</strong> сьогодні. - I'll be late today.</li>
-<li>Коли <strong>дедлайн</strong>? - When is the deadline?</li>
-<li>Я <strong>закінчив/закінчила</strong> завдання. - I finished the task.</li>
-</ul>
-<p><strong>Problems:</strong></p>
-<ul>
-<li>Я <strong>перевантажений/перевантажена</strong> роботою. - I'm overloaded with work.</li>
-<li>Мені потрібна <strong>допомога</strong>. - I need help.</li>
-<li>Це <strong>терміново</strong>. - This is urgent.</li>
-<li>У нас <strong>проблема</strong> з проєктом. - We have a problem with the project.</li>
-</ul>
-<h3 id="careerdevelopment">Career Development</h3>
-<p><strong>Career vocabulary:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>кар'єра</td>
-<td>career</td>
-</tr>
-<tr>
-<td>підвищення</td>
-<td>promotion</td>
-</tr>
-<tr>
-<td>зарплата</td>
-<td>salary</td>
-</tr>
-<tr>
-<td>премія</td>
-<td>bonus</td>
-</tr>
-<tr>
-<td>відпустка</td>
-<td>vacation</td>
-</tr>
-<tr>
-<td>лікарняний</td>
-<td>sick leave</td>
-</tr>
-<tr>
-<td>звільнення</td>
-<td>dismissal/resignation</td>
-</tr>
-<tr>
-<td>пенсія</td>
-<td>pension/retirement</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Talking about career:</strong></p>
-<ul>
-<li>Я хочу <strong>кар'єрного росту</strong>. - I want career growth.</li>
-<li>Я отримав/отримала <strong>підвищення</strong>. - I got a promotion.</li>
-<li>Мені <strong>підвищили зарплату</strong>. - I got a raise.</li>
-<li>Я <strong>звільняюся</strong>. - I'm quitting.</li>
-<li>Мене <strong>звільнили</strong>. - I was fired.</li>
-<li>Я <strong>на пенсії</strong>. - I'm retired.</li>
-</ul>
-<h2 id="practice">practice</h2>
-<h3 id="matchprofessions">Match Professions</h3>
-<ol>
-<li><p>програміст</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">programmer</div></div>
-<ol start="2">
-<li><p>вчитель</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">teacher</div></div>
-<ol start="3">
-<li><p>лікар</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">doctor</div></div>
-<ol start="4">
-<li><p>продавець</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">salesperson</div></div>
-<ol start="5">
-<li><p>бухгалтер</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">accountant</div></div>
-<ol start="6">
-<li><p>кухар</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">cook</div></div>
-<h3 id="completesentences">Complete Sentences</h3>
-<ol>
-<li><p>Я працюю ___ (programmer - instrumental).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">програмістом</div></div>
-<ol start="2">
-<li><p>Вона працює ___ (teacher - instrumental).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">вчителькою</div></div>
-<ol start="3">
-<li><p>Він працює ___ компанії "Сім'я". (at)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">в / у</div></div>
-<ol start="4">
-<li><p>Я шукаю ___. (job)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">роботу</div></div>
-<ol start="5">
-<li><p>Коли ___? (interview)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">співбесіда</div></div>
-<ol start="6">
-<li><p>Яка ___? (salary)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">зарплата</div></div>
-<h3 id="translate">Translate</h3>
-<ol>
-<li><p>What do you do for work?</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Ким ви працюєте?</div></div>
-<ol start="2">
-<li><p>I work as a manager.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">Я працюю менеджером.</div></div>
-<ol start="3">
-<li><p>I'm looking for a job.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Я шукаю роботу.</div></div>
-<ol start="4">
-<li><p>I work from home.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">Я працюю вдома / віддалено.</div></div>
-<ol start="5">
-<li><p>I got a promotion.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">Я отримав/отримала підвищення.</div></div>
-<h2 id="production">production</h2>
-<h3 id="describeyourjob">Describe Your Job</h3>
-<p>Talk about your work:</p>
-<ul>
-<li>Ким ви працюєте?</li>
-<li>Де ви працюєте?</li>
-<li>Який у вас графік?</li>
-<li>Що входить у ваші обов'язки?</li>
-<li>Вам подобається ваша робота?</li>
-</ul>
-<h3 id="roleplayjobinterview">Role Play: Job Interview</h3>
-<p><strong>Interviewer:</strong></p>
-<ul>
-<li>Ask about experience</li>
-<li>Ask about qualifications</li>
-<li>Explain the position</li>
-</ul>
-<p><strong>Candidate:</strong></p>
-<ul>
-<li>Describe your experience</li>
-<li>Ask about conditions</li>
-<li>Express interest</li>
-</ul>
 <hr />
-<hr />
-<hr />
+<h2 id="examplesindifferentcases">Examples in Different Cases</h2>
+<p><strong>Nominative (subject):</strong></p>
+<ul>
+<li>Чоловік, <strong>який</strong> читає… (The man who is reading…)</li>
+</ul>
+<p><strong>Accusative (object):</strong></p>
+<ul>
+<li>Чоловік, <strong>якого</strong> я бачу… (The man whom I see…)</li>
+<li>Книга, <strong>яку</strong> я читаю… (The book that I'm reading…)</li>
+</ul>
+<p><strong>Genitive (possession):</strong></p>
+<ul>
+<li>Чоловік, <strong>якого</strong> дочка… (The man whose daughter…)</li>
+</ul>
+<p><strong>Dative:</strong></p>
+<ul>
+<li>Людина, <strong>якій</strong> я допомагаю… (The person whom I'm helping…)</li>
+</ul>
+<p><strong>Instrumental:</strong></p>
+<ul>
+<li>Друг, <strong>з яким</strong> я говорив… (The friend with whom I spoke…)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Quest description: <em>Знайди людину, з якою ти розмовляв</em> — Find the person with whom you talked!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Common Patterns</h3>
+      <div class="md-content"><h2 id="subjectrelativeclauses">Subject Relative Clauses</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noun + який/яка/яке + verb</td>
+<td>Людина, <strong>яка</strong> працює тут…</td>
+</tr>
+</tbody>
+</table>
+<h2 id="objectrelativeclauses">Object Relative Clauses</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noun + якого/яку/яке + subject + verb</td>
+<td>Фільм, <strong>який</strong> я дивився…</td>
+</tr>
+</tbody>
+</table>
+<h2 id="withprepositions">With Prepositions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noun + prep + який/яку…</td>
+<td>Людина, <strong>про яку</strong> я говорив…</td>
+</tr>
+<tr>
+<td></td>
+<td>Місто, <strong>в якому</strong> я живу…</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <hr />
 <hr /></div>
@@ -1022,120 +849,15 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="askingaboutwork">Asking About Work</h2>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Answer Pattern</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ким ви працюєте?</td>
-<td>Я працюю + Instrumental</td>
-</tr>
-<tr>
-<td>Де ви працюєте?</td>
-<td>Я працюю в/на + Locative</td>
-</tr>
-</tbody>
-</table>
-<h2 id="commonprofessions">Common Professions</h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Office</td>
-<td>менеджер, бухгалтер, юрист</td>
-</tr>
-<tr>
-<td>Tech</td>
-<td>програміст, дизайнер, аналітик</td>
-</tr>
-<tr>
-<td>Service</td>
-<td>продавець, офіціант, водій</td>
-</tr>
-<tr>
-<td>Medical</td>
-<td>лікар, медсестра</td>
-</tr>
-<tr>
-<td>Education</td>
-<td>вчитель, викладач</td>
-</tr>
-</tbody>
-</table>
-<h2 id="jobsearch">Job Search</h2>
-<table>
-<thead>
-<tr>
-<th>Ukrainian</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>шукати роботу</td>
-<td>to look for a job</td>
-</tr>
-<tr>
-<td>подати резюме</td>
-<td>to submit a resume</td>
-</tr>
-<tr>
-<td>пройти співбесіду</td>
-<td>to have an interview</td>
-</tr>
-<tr>
-<td>отримати підвищення</td>
-<td>to get a promotion</td>
-</tr>
-</tbody>
-</table>
-<h2 id="workschedule">Work Schedule</h2>
-<table>
-<thead>
-<tr>
-<th>Phrase</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>на повну ставку</td>
-<td>full-time</td>
-</tr>
-<tr>
-<td>на часткову ставку</td>
-<td>part-time</td>
-</tr>
-<tr>
-<td>віддалено</td>
-<td>remotely</td>
-</tr>
-<tr>
-<td>гнучкий графік</td>
-<td>flexible schedule</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Ким + працювати + Instrumental for professions</li>
-  <li>В/у + company, на + factory/plant</li>
-  <li>Шукати роботу = look for a job</li>
-  <li>Співбесіда = job interview</li>
-  <li>Віддалено = remotely (popular in Ukraine!)</li>
-  </ul>
-</blockquote></div>
+      <div class="md-content"><p>Excellent work! You've learned:</p>
+<ul>
+<li><strong>Gender forms</strong>: який (m), яка (f), яке (n), які (pl)</li>
+<li><strong>Agreement</strong>: Relative pronoun matches the noun it refers to</li>
+<li><strong>Case changes</strong>: який/якого/якому/яким based on role in clause</li>
+<li><strong>With prepositions</strong>: з яким, в якому, про яку</li>
+<li><strong>Common patterns</strong>: Subject and object relative clauses</li>
+</ul>
+<p><strong>Coming up next</strong>: When, While, After — time clauses in Ukrainian!</p></div>
     </div>
   
       <div class="btn-group">
@@ -1144,69 +866,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Work Vocabulary</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/5</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Choose the Form</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Work Sentences</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/5</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Gender/Number Agreement</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Sentence Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/11</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Relative Clause Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Relative Clause Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Sort by Gender</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Gender Agreement</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Choose Work Vocabulary</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div id="activity-6-container" class="select-container"></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Case Forms Practice</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
       <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Put Words in Order</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Relative Pronoun</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Relative Clause Usage</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (11)</h3>
+        <h3>Словник (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1216,7 +945,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">професія</td><td class="vocab-ipa">/proˈfɛsʲijɑ/</td><td class="vocab-en">profession</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">робота</td><td class="vocab-ipa">/roˈbotɑ/</td><td class="vocab-en">work, job</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вакансія</td><td class="vocab-ipa">/vɑˈkɑnsʲijɑ/</td><td class="vocab-en">vacancy, job opening</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">резюме</td><td class="vocab-ipa">/rɛzʲuˈmɛ/</td><td class="vocab-en">resume, CV</td><td class="vocab-note">indecl</td></tr><tr><td class="vocab-uk">співбесіда</td><td class="vocab-ipa">/spʲivˈbɛsʲidɑ/</td><td class="vocab-en">interview</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зарплата</td><td class="vocab-ipa">/zɑrˈplɑtɑ/</td><td class="vocab-en">salary</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">підвищення</td><td class="vocab-ipa">/pʲidˈvɪʃtʃɛnʲɑ/</td><td class="vocab-en">promotion</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відпустка</td><td class="vocab-ipa">/vʲidˈpustkɑ/</td><td class="vocab-en">vacation</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обов&#039;язок</td><td class="vocab-ipa">/oboˈvjɑzok/</td><td class="vocab-en">duty, responsibility</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">графік</td><td class="vocab-ipa">/ˈɦrɑfʲik/</td><td class="vocab-en">schedule</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">віддалено</td><td class="vocab-ipa">/vʲidɑˈlɛno/</td><td class="vocab-en">remotely</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">який</td><td class="vocab-ipa">/jaˈkɪj/</td><td class="vocab-en">which, that, who (m)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яка</td><td class="vocab-ipa">/jaˈka/</td><td class="vocab-en">which, that, who (f)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яке</td><td class="vocab-ipa">/jaˈkɛ/</td><td class="vocab-en">which, that (n)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">які</td><td class="vocab-ipa">/jaˈki/</td><td class="vocab-en">which, that, who (pl)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">якого</td><td class="vocab-ipa">/jaˈkoɦo/</td><td class="vocab-en">whom (m/n acc/gen)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яку</td><td class="vocab-ipa">/jaˈku/</td><td class="vocab-en">whom (f acc)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">якій</td><td class="vocab-ipa">/jaˈkij/</td><td class="vocab-en">whom (f dat/loc)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яким</td><td class="vocab-ipa">/jaˈkɪm/</td><td class="vocab-en">whom (m/n inst, pl dat)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">якою</td><td class="vocab-ipa">/jaˈkoju/</td><td class="vocab-en">whom (f inst)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">яких</td><td class="vocab-ipa">/jaˈkɪx/</td><td class="vocab-en">whom (pl gen/loc)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">що</td><td class="vocab-ipa">/ʃtʃo/</td><td class="vocab-en">that, which</td><td class="vocab-note">also relative</td></tr><tr><td class="vocab-uk">людина</td><td class="vocab-ipa">/lʲuˈdɪna/</td><td class="vocab-en">person</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">річ</td><td class="vocab-ipa">/ritʃ/</td><td class="vocab-en">thing</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">завдання</td><td class="vocab-ipa">/zawˈdanʲːa/</td><td class="vocab-en">task</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">подія</td><td class="vocab-ipa">/poˈdija/</td><td class="vocab-en">event</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">місце</td><td class="vocab-ipa">/ˈmist͡sɛ/</td><td class="vocab-en">place</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">причина</td><td class="vocab-ipa">/prɪˈtʃɪna/</td><td class="vocab-en">reason</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">спосіб</td><td class="vocab-ipa">/ˈsposib/</td><td class="vocab-en">way, method</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">розташований</td><td class="vocab-ipa">/rostaˈʃowanɪj/</td><td class="vocab-en">located</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дружній</td><td class="vocab-ipa">/druʒˈnij/</td><td class="vocab-en">friendly</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1228,8 +957,8 @@ footer {
   </main><footer>Module 27 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Work Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Ким ви ___? — Я працюю лікарем.","answer":"працюєте"},{"prompt":"Вона працює ___ (вчитель / вчителькою) у школі.","answer":"вчителькою","hints":["вчитель / вчителькою"]},{"prompt":"Я хочу подати ___ (резюме / співбесіду) на цю вакансію.","answer":"резюме","hints":["резюме / співбесіду"]},{"prompt":"У мене завтра ___ (графік / співбесіда) о десятій.","answer":"співбесіда","hints":["графік / співбесіда"]},{"prompt":"Він працює ___ (віддалено / відпустка), з дому.","answer":"віддалено","hints":["віддалено / відпустка"]}]}},{"id":"activity-1","type":"unjumble","title":"Work Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["програмістом","Він","великій","працює","в","компанії"],"answer":"Він працює програмістом в великій компанії.","translation":"He works as a programmer at a big company."},{"words":["шукаю","Я","нову","роботу","зараз"],"answer":"Я зараз шукаю нову роботу.","translation":"I'm currently looking for a new job."},{"words":["підвищення","отримала","Вона","минулого","тижня"],"answer":"Вона отримала підвищення минулого тижня.","translation":"She got a promotion last week."},{"words":["співбесіда","о","Моя","десятій","завтра","годині"],"answer":"Моя співбесіда завтра о десятій годині.","translation":"My interview is tomorrow at ten o'clock."},{"words":["гнучкий","У","мене","графік","роботи"],"answer":"У мене гнучкий графік роботи.","translation":"I have a flexible work schedule."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"відпочивати","right":"to rest (impf)"},{"left":"найдорожчий","right":"most expensive"},{"left":"обов'язок","right":"duty, responsibility"},{"left":"віддалено","right":"remotely"},{"left":"попереду","right":"in front, ahead"},{"left":"резюме","right":"resume, CV"},{"left":"робота","right":"work, job"},{"left":"зарплата","right":"salary"},{"left":"співбесіда","right":"interview"},{"left":"графік","right":"schedule"},{"left":"відпустка","right":"vacation"},{"left":"вакансія","right":"vacancy, job opening"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"робота\" mean?","options":["trolleybus","work, job","wireless","to count, recount"],"correctIndex":1,"explanation":"\"робота\" means \"work, job\""},{"question":"What does \"професія\" mean?","options":["profession","to arrive (by vehicle)","they will be","one (m)"],"correctIndex":0,"explanation":"\"професія\" means \"profession\""},{"question":"What does \"відпустка\" mean?","options":["possibly, maybe","to carry","vacation","sender"],"correctIndex":2,"explanation":"\"відпустка\" means \"vacation\""},{"question":"What does \"віддалено\" mean?","options":["bag","meat","hotel","remotely"],"correctIndex":3,"explanation":"\"віддалено\" means \"remotely\""},{"question":"What does \"співбесіда\" mean?","options":["to return (perf)","suitcase","interview","at most"],"correctIndex":2,"explanation":"\"співбесіда\" means \"interview\""},{"question":"What does \"резюме\" mean?","options":["to call (pf)","dad","park","resume, CV"],"correctIndex":3,"explanation":"\"резюме\" means \"resume, CV\""},{"question":"What does \"зарплата\" mean?","options":["salary","why","because (casual)","to answer (perf)"],"correctIndex":0,"explanation":"\"зарплата\" means \"salary\""},{"question":"What does \"графік\" mean?","options":["hard, heavy","cheaper","then","schedule"],"correctIndex":3,"explanation":"\"графік\" means \"schedule\""},{"question":"What does \"обов'язок\" mean?","options":["to try on","thunderstorm","duty, responsibility","phone"],"correctIndex":2,"explanation":"\"обов'язок\" means \"duty, responsibility\""},{"question":"What does \"вакансія\" mean?","options":["to meet","good, okay","vacancy, job opening","to master, own"],"correctIndex":2,"explanation":"\"вакансія\" means \"vacancy, job opening\""},{"question":"What does \"підвищення\" mean?","options":["fifty","my (feminine)","promotion","color"],"correctIndex":2,"explanation":"\"підвищення\" means \"promotion\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"співбесіда\" means \"interview\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"відпустка\" means \"vacation\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"віддалено\" means \"newspaper\"","isTrue":false,"explanation":"Incorrect. \"віддалено\" means \"remotely\""},{"statement":"\"обов'язок\" means \"duty, responsibility\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"графік\" means \"Sunday\"","isTrue":false,"explanation":"Incorrect. \"графік\" means \"schedule\""},{"statement":"\"зарплата\" means \"fresh\"","isTrue":false,"explanation":"Incorrect. \"зарплата\" means \"salary\""},{"statement":"\"вакансія\" means \"to lie down\"","isTrue":false,"explanation":"Incorrect. \"вакансія\" means \"vacancy, job opening\""},{"statement":"\"підвищення\" means \"promotion\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"професія\" means \"family\"","isTrue":false,"explanation":"Incorrect. \"професія\" means \"profession\""},{"statement":"\"резюме\" means \"medicine\"","isTrue":false,"explanation":"Incorrect. \"резюме\" means \"resume, CV\""}]}},{"id":"activity-5","type":"group-sort","title":"Sort by Gender","data":{"type":"group-sort","groups":[{"id":"masculine","name":"Masculine","items":["графік","обов'язок"]},{"id":"feminine","name":"Feminine","items":["професія","зарплата","вакансія","робота","співбесіда","відпустка"]},{"id":"neuter","name":"Neuter","items":["підвищення","резюме"]}],"shuffleItems":true}},{"id":"activity-6","type":"select","title":"Choose Work Vocabulary","data":{"type":"select","items":[{"question":"Мені потрібно написати ___ щоб подати заяву на роботу.","options":[{"text":"професію","correct":false},{"text":"резюме","correct":true},{"text":"зарплату","correct":false},{"text":"графік","correct":false}]},{"question":"Я шукаю ___ на посаді менеджера в компанії.","options":[{"text":"вакансію","correct":true},{"text":"професію","correct":false},{"text":"зарплату","correct":false},{"text":"відпустку","correct":false}]},{"question":"У мене буде ___ з роботодавцем завтра вранці.","options":[{"text":"вакансія","correct":false},{"text":"співбесіда","correct":true},{"text":"професія","correct":false},{"text":"відпустка","correct":false}]},{"question":"Моя ___ становить три тисячі доларів на місяць.","options":[{"text":"професія","correct":false},{"text":"вакансія","correct":false},{"text":"зарплата","correct":true},{"text":"співбесіда","correct":false}]},{"question":"Я отримав ___ на посаді старшого спеціаліста в компанії.","options":[{"text":"вакансію","correct":false},{"text":"професію","correct":false},{"text":"зарплату","correct":false},{"text":"підвищення","correct":true}]},{"question":"Мій робочий ___ дуже гнучкий у цій компанії.","options":[{"text":"графік","correct":true},{"text":"обов'язок","correct":false},{"text":"професія","correct":false},{"text":"резюме","correct":false}]},{"question":"Я працюю ___ і не приходжу в офіс.","options":[{"text":"на повну ставку","correct":false},{"text":"на часткову ставку","correct":false},{"text":"віддалено","correct":true},{"text":"графік","correct":false}]},{"question":"Моя ___ мені подобається дуже сильно завжди.","options":[{"text":"зарплата","correct":false},{"text":"робота","correct":true},{"text":"вакансія","correct":false},{"text":"відпустка","correct":false}]},{"question":"Я візьму ___ влітку на два тижні.","options":[{"text":"зарплату","correct":false},{"text":"професію","correct":false},{"text":"вакансію","correct":false},{"text":"відпустку","correct":true}]},{"question":"Мій головний ___ у роботі це контроль якості продукції.","options":[{"text":"обов'язок","correct":true},{"text":"графік","correct":false},{"text":"професія","correct":false},{"text":"резюме","correct":false}]}]}},{"id":"activity-7","type":"unjumble","title":"Put Words in Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","шукаю","роботу","на","посаді","програміста","в","компанії"],"answer":"Я шукаю роботу на посаді програміста в компанії.","translation":"I'm looking for work in the position of programmer at a company."},{"words":["Мені","потрібно","написати","резюме","і","подати","на","вакансію"],"answer":"Мені потрібно написати резюме і подати на вакансію.","translation":"I need to write a resume and apply for the vacancy."},{"words":["У","мене","буде","співбесіда","з","роботодавцем","завтра","вранці"],"answer":"У мене буде співбесіда з роботодавцем завтра вранці.","translation":"I will have an interview with the employer tomorrow morning."},{"words":["Моя","зарплата","становить","три","тисячі","доларів","на","місяць"],"answer":"Моя зарплата становить три тисячі доларів на місяць.","translation":"My salary is three thousand dollars per month."},{"words":["Я","отримав","підвищення","на","посаді","старшого","менеджера","в","компанії"],"answer":"Я отримав підвищення на посаді старшого менеджера в компанії.","translation":"I received a promotion to the position of senior manager at the company."},{"words":["Мій","робочий","графік","дуже","гнучкий","у","цій","компанії"],"answer":"Мій робочий графік дуже гнучкий у цій компанії.","translation":"My work schedule is very flexible at this company."},{"words":["Я","працюю","віддалено","і","не","приходжу","в","офіс","щодня"],"answer":"Я працюю віддалено і не приходжу в офіс щодня.","translation":"I work remotely and don't come to the office every day."},{"words":["Вона","працює","вчителькою","у","школі","на","повну","ставку"],"answer":"Вона працює вчителькою у школі на повну ставку.","translation":"She works as a teacher at a school full-time."},{"words":["Я","візьму","відпустку","влітку","на","два","тижні","в","липні"],"answer":"Я візьму відпустку влітку на два тижні в липні.","translation":"I will take vacation in summer for two weeks in July."},{"words":["Мій","головний","обов'язок","у","роботі","це","контроль","якості","продукції"],"answer":"Мій головний обов'язок у роботі це контроль якості продукції.","translation":"My main duty at work is quality control of products."}]}}];
-    const vocabData = [{"uk":"професія","translit":"","en":"profession","note":""},{"uk":"робота","translit":"","en":"work, job","note":""},{"uk":"вакансія","translit":"","en":"vacancy, job opening","note":""},{"uk":"резюме","translit":"","en":"resume, CV","note":"indecl"},{"uk":"співбесіда","translit":"","en":"interview","note":""},{"uk":"зарплата","translit":"","en":"salary","note":""},{"uk":"підвищення","translit":"","en":"promotion","note":""},{"uk":"відпустка","translit":"","en":"vacation","note":""},{"uk":"обов'язок","translit":"","en":"duty, responsibility","note":""},{"uk":"графік","translit":"","en":"schedule","note":""},{"uk":"віддалено","translit":"","en":"remotely","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Form","data":{"type":"fill-blank","items":[{"prompt":"Чоловік, ___ стоїть там, — мій друг. (who - m)","answer":"який"},{"prompt":"Жінка, ___ говорить, — вчителька. (who - f)","answer":"яка"},{"prompt":"Місто, ___ я відвідав, красиве. (that - n)","answer":"яке"},{"prompt":"Люди, ___ тут живуть, дружні. (who - pl)","answer":"які"},{"prompt":"Книга, ___ я читаю, цікава. (that - f acc)","answer":"яку"},{"prompt":"Чоловік, ___ я бачу... (whom - m acc)","answer":"якого"},{"prompt":"Друг, з ___ я говорив... (whom - m inst)","answer":"яким"},{"prompt":"Місто, в ___ я живу... (which - n loc)","answer":"якому"},{"prompt":"Людина, ___ я допомагаю... (whom - f dat)","answer":"якій"},{"prompt":"Фільм, ___ я дивився, був цікавий. (that - m)","answer":"який"},{"prompt":"Речі, ___ вона купила... (that - pl acc)","answer":"які"},{"prompt":"Країна, ___ мені подобається... (that - f)","answer":"яка"}]}},{"id":"activity-1","type":"match-up","title":"Gender/Number Agreement","data":{"type":"match-up","pairs":[{"left":"чоловік +","right":"який"},{"left":"жінка +","right":"яка"},{"left":"місто +","right":"яке"},{"left":"люди +","right":"які"},{"left":"книга +","right":"яка"},{"left":"фільм +","right":"який"},{"left":"завдання +","right":"яке"},{"left":"студенти +","right":"які"},{"left":"дівчина +","right":"яка"},{"left":"телефон +","right":"який"},{"left":"питання +","right":"яке"},{"left":"речі +","right":"які"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["який","там","Чоловік","стоїть","мій","друг","біля","дверей"],"answer":"Чоловік, який стоїть там біля дверей, — мій друг.","translation":"The man who is standing there by the door is my friend."},{"words":["яка","говорить","Жінка","вчителька","нашої","української","зараз","мови"],"answer":"Жінка, яка зараз говорить, — вчителька української мови.","translation":"The woman who is speaking now is a Ukrainian language teacher."},{"words":["яке","Місто","я","відвідав","минулого","року","дуже","красиве"],"answer":"Місто, яке я відвідав минулого року, дуже красиве.","translation":"The city that I visited last year is very beautiful."},{"words":["які","живуть","тут","Люди","дуже","дружні","та","привітні"],"answer":"Люди, які тут живуть, дуже дружні та привітні.","translation":"The people who live here are very friendly and welcoming."},{"words":["яку","читаю","Книга","я","зараз","дуже","цікава","мені"],"answer":"Книга, яку я зараз читаю, мені дуже цікава.","translation":"The book that I'm reading now is very interesting to me."},{"words":["який","дивився","Фільм","я","вчора","ввечері","був","цікавий"],"answer":"Фільм, який я дивився вчора ввечері, був цікавий.","translation":"The film that I watched yesterday evening was interesting."},{"words":["з","я","яким","Друг","говорив","учора","мій","найкращий"],"answer":"Друг, з яким я говорив учора, — мій найкращий.","translation":"The friend with whom I spoke yesterday is my best."},{"words":["в","живу","я","якому","Місто","вже","п'ять","років"],"answer":"Місто, в якому я живу вже п'ять років.","translation":"The city in which I've been living for five years."},{"words":["які","Студенти","українську","вивчають","мову","дуже","добре","працюють"],"answer":"Студенти, які вивчають українську мову, дуже добре працюють.","translation":"The students who are learning Ukrainian work very well."},{"words":["яка","Дівчина","співає","красиво","на","сцені","моя","сестра"],"answer":"Дівчина, яка красиво співає на сцені, — моя сестра.","translation":"The girl who sings beautifully on stage is my sister."},{"words":["якій","допомагаю","Людина","я","кожного","дня","моя","бабуся"],"answer":"Людина, якій я допомагаю кожного дня, — моя бабуся.","translation":"The person whom I help every day is my grandmother."},{"words":["якого","бачу","Чоловік","я","часто","в","кафе","цьому"],"answer":"Чоловік, якого я часто бачу в цьому кафе.","translation":"The man whom I often see in this café."}]}},{"id":"activity-3","type":"quiz","title":"Relative Clause Knowledge","data":{"type":"quiz","questions":[{"question":"\"Який\" agrees with:","options":["The noun it refers to","The verb in the clause","Nothing","The subject of main clause"],"correctIndex":0,"explanation":""},{"question":"For feminine nouns, use:","options":["Яка","Який","Яке","Які"],"correctIndex":0,"explanation":""},{"question":"For plural nouns, use:","options":["Які","Який","Яка","Яке"],"correctIndex":0,"explanation":""},{"question":"\"Книга, яку я читаю\" — \"яку\" is:","options":["Accusative feminine","Nominative feminine","Dative feminine","Genitive feminine"],"correctIndex":0,"explanation":""},{"question":"\"Чоловік, якого я бачу\" — \"якого\" is:","options":["Accusative masculine animate","Nominative","Dative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Друг, з яким я говорив\" — \"яким\" is:","options":["Instrumental masculine","Dative masculine","Accusative masculine","Genitive masculine"],"correctIndex":0,"explanation":""},{"question":"\"Який\" can translate as:","options":["Which, that, who","Only \"which\"","Only \"who\"","Only \"that\""],"correctIndex":0,"explanation":""},{"question":"For neuter nouns, use:","options":["Яке","Який","Яка","Які"],"correctIndex":0,"explanation":""},{"question":"\"Місто, в якому я живу\" — \"якому\" is:","options":["Locative neuter","Dative neuter","Accusative neuter","Instrumental neuter"],"correctIndex":0,"explanation":""},{"question":"Relative pronouns introduce:","options":["Relative clauses","Questions","Commands","Conditions"],"correctIndex":0,"explanation":""},{"question":"\"Людина, якій я допомагаю\" — \"якій\" is:","options":["Dative feminine","Locative feminine","Accusative feminine","Genitive feminine"],"correctIndex":0,"explanation":""},{"question":"\"Який\" as a question means:","options":["What kind of?","Who?","Where?","When?"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Relative Clause Facts","data":{"type":"true-false","statements":[{"statement":"\"Який\" changes based on gender.","isTrue":true,"explanation":""},{"statement":"All forms of \"який\" are the same.","isTrue":false,"explanation":""},{"statement":"\"Яка\" is used with feminine nouns.","isTrue":true,"explanation":""},{"statement":"\"Яке\" is used with plural nouns.","isTrue":false,"explanation":""},{"statement":"The relative pronoun agrees with its antecedent.","isTrue":true,"explanation":""},{"statement":"\"Який\" only means \"which.\"","isTrue":false,"explanation":""},{"statement":"\"Якого\" is accusative for animate masculine.","isTrue":true,"explanation":""},{"statement":"Relative clauses describe nouns.","isTrue":true,"explanation":""},{"statement":"\"Яким\" is instrumental form.","isTrue":true,"explanation":""},{"statement":"\"Який\" never changes case.","isTrue":false,"explanation":""},{"statement":"\"Які\" is for neuter nouns.","isTrue":false,"explanation":""},{"statement":"Relative clauses need commas.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Gender Agreement","data":{"type":"group-sort","groups":[{"id":"","name":"Який","items":["чоловік","фільм","телефон"],"nameUk":"m"},{"id":"","name":"Яка","items":["жінка","книга","машина"],"nameUk":"f"},{"id":"","name":"Яке","items":["місто","завдання","питання"],"nameUk":"n"},{"id":"","name":"Які","items":["люди","студенти","речі"],"nameUk":"pl"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Case Forms Practice","data":{"type":"fill-blank","items":[{"prompt":"Це чоловік, ___ працює в банку. (who - m nominative)","answer":"який"},{"prompt":"Це жінка, ___ я зустрів учора. (whom - f accusative)","answer":"яку"},{"prompt":"Це студент, ___ батько — лікар. (whose - m genitive)","answer":"якого"},{"prompt":"Це людина, ___ я допоміг. (whom - f dative)","answer":"якій"},{"prompt":"Це друг, ___ ми разом подорожували. (with whom - m instrumental)","answer":"з яким"},{"prompt":"Це місто, в ___ я народився. (in which - n locative)","answer":"якому"},{"prompt":"Це книги, ___ я хочу прочитати. (which - pl accusative)","answer":"які"},{"prompt":"Це діти, ___ граються у дворі. (who - pl nominative)","answer":"які"},{"prompt":"Це подруга, ___ ми часто телефонуємо. (to whom - f dative)","answer":"якій"},{"prompt":"Це письменник, про ___ ми говорили. (about whom - m accusative)","answer":"якого"},{"prompt":"Це завдання, ___ потрібно зробити. (which - n nominative)","answer":"яке"},{"prompt":"Це сусіди, у ___ є собака. (who have - pl genitive)","answer":"яких"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Relative Pronoun","data":{"type":"select","items":[{"question":"Машина, ___ стоїть біля дому, нова.","options":[{"text":"яка","correct":true},{"text":"який","correct":false},{"text":"яке","correct":false},{"text":"яку","correct":false}]},{"question":"Це телефон, ___ я загубив минулого тижня.","options":[{"text":"який","correct":true},{"text":"яка","correct":false},{"text":"яке","correct":false},{"text":"якого","correct":false}]},{"question":"Місто, ___ ми відвідали, дуже гарне.","options":[{"text":"яке","correct":true},{"text":"який","correct":false},{"text":"яка","correct":false},{"text":"яку","correct":false}]},{"question":"Студенти, ___ вивчають українську, дуже старанні.","options":[{"text":"які","correct":true},{"text":"який","correct":false},{"text":"яка","correct":false},{"text":"яке","correct":false}]},{"question":"Це дівчина, ___ брат працює зі мною.","options":[{"text":"якої","correct":true},{"text":"яка","correct":false},{"text":"яку","correct":false},{"text":"якій","correct":false}]},{"question":"Ресторан, в ___ ми обідали, був чудовий.","options":[{"text":"якому","correct":true},{"text":"який","correct":false},{"text":"яким","correct":false},{"text":"якого","correct":false}]},{"question":"Людина, ___ я допомагаю, моя бабуся.","options":[{"text":"якій","correct":true},{"text":"яка","correct":false},{"text":"яку","correct":false},{"text":"якої","correct":false}]},{"question":"Колега, з ___ я працюю, дуже розумний.","options":[{"text":"яким","correct":true},{"text":"який","correct":false},{"text":"якого","correct":false},{"text":"якому","correct":false}]},{"question":"Питання, ___ він поставив, було складне.","options":[{"text":"яке","correct":true},{"text":"який","correct":false},{"text":"яка","correct":false},{"text":"які","correct":false}]},{"question":"Речі, ___ вона купила, дуже дорогі.","options":[{"text":"які","correct":true},{"text":"яка","correct":false},{"text":"яке","correct":false},{"text":"яких","correct":false}]},{"question":"Фільм, про ___ всі говорять, вийшов учора.","options":[{"text":"який","correct":true},{"text":"яке","correct":false},{"text":"якого","correct":false},{"text":"якому","correct":false}]},{"question":"Країна, ___ мені подобається, — Україна.","options":[{"text":"яка","correct":true},{"text":"який","correct":false},{"text":"яку","correct":false},{"text":"якої","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Relative Clause Usage","data":{"type":"quiz","questions":[{"question":"Which case is used for \"whose\" (possession)?","options":["Genitive (якого/якої/яких)","Accusative","Dative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Друг, з яким я працюю\" — \"яким\" is:","options":["Instrumental because of \"з\"","Dative","Accusative","Genitive"],"correctIndex":0,"explanation":""},{"question":"\"Місто, в якому я живу\" — why \"якому\"?","options":["Locative required by \"в\" + location","It's dative","It's genitive","It's accusative"],"correctIndex":0,"explanation":""},{"question":"For animate masculine accusative, use:","options":["Якого","Який","Яким","Якому"],"correctIndex":0,"explanation":""},{"question":"\"Людина, про яку я думаю\" — why \"яку\"?","options":["Accusative required by \"про\"","It's nominative","It's genitive","It's dative"],"correctIndex":0,"explanation":""},{"question":"What determines the case of \"який\"?","options":["Its role in the relative clause","The main clause verb","Always nominative","The gender only"],"correctIndex":0,"explanation":""},{"question":"\"Книга, яка лежить\" vs \"Книга, яку я читаю\" differ because:","options":["Subject (яка) vs object (яку) role","Different tenses","Different genders","No difference"],"correctIndex":0,"explanation":""},{"question":"Which is correct for \"the city where I live\"?","options":["Місто, в якому я живу","Місто, яке я живу","Місто, який я живу","Місто, де я живу (also correct but different structure)"],"correctIndex":0,"explanation":""},{"question":"\"Студенти, яких я бачу\" — why \"яких\"?","options":["Animate plural accusative = genitive form","It's nominative","It's dative","It's instrumental"],"correctIndex":0,"explanation":""},{"question":"Commas around relative clauses in Ukrainian are:","options":["Required","Optional","Never used","Only for long clauses"],"correctIndex":0,"explanation":""},{"question":"\"Дівчина, якої сестра...\" — \"якої\" shows:","options":["Feminine genitive (whose sister)","Feminine accusative","Feminine dative","Feminine nominative"],"correctIndex":0,"explanation":""},{"question":"\"Люди, з якими я працюю\" — \"якими\" is:","options":["Plural instrumental","Plural dative","Plural genitive","Plural accusative"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"який","translit":"","en":"which, that, who (m)","note":""},{"uk":"яка","translit":"","en":"which, that, who (f)","note":""},{"uk":"яке","translit":"","en":"which, that (n)","note":""},{"uk":"які","translit":"","en":"which, that, who (pl)","note":""},{"uk":"якого","translit":"","en":"whom (m/n acc/gen)","note":""},{"uk":"яку","translit":"","en":"whom (f acc)","note":""},{"uk":"якій","translit":"","en":"whom (f dat/loc)","note":""},{"uk":"яким","translit":"","en":"whom (m/n inst, pl dat)","note":""},{"uk":"якою","translit":"","en":"whom (f inst)","note":""},{"uk":"яких","translit":"","en":"whom (pl gen/loc)","note":""},{"uk":"що","translit":"","en":"that, which","note":"also relative"},{"uk":"людина","translit":"","en":"person","note":""},{"uk":"річ","translit":"","en":"thing","note":""},{"uk":"завдання","translit":"","en":"task","note":""},{"uk":"подія","translit":"","en":"event","note":""},{"uk":"місце","translit":"","en":"place","note":""},{"uk":"причина","translit":"","en":"reason","note":""},{"uk":"спосіб","translit":"","en":"way, method","note":""},{"uk":"розташований","translit":"","en":"located","note":""},{"uk":"дружній","translit":"","en":"friendly","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1281,8 +1010,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1313,8 +1042,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1726,7 +1455,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1736,7 +1465,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1937,6 +1668,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

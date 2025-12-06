@@ -337,6 +337,52 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - `> (translation) [X words]` for meaning and word count
 - Minimum 12 items
 
+### Error-Correction Format (A2+)
+
+**LEVEL RESTRICTIONS:**
+- A1: ❌ NOT ALLOWED
+- A2+: ✅ Required (see MODULE-RICHNESS-GUIDELINES.md for counts)
+
+```markdown
+## error-correction: Find and Fix
+
+> Each sentence has ONE error. Find the incorrect word, then choose the correct form.
+
+1. Я бачу студент у бібліотеці.
+   > [!error] студент
+   > [!answer] студента
+   > [!options] студент | студента | студенту | студентом
+   > [!explanation] Animate masculine accusative = genitive form
+
+2. Вона читав книгу вчора.
+   > [!error] читав
+   > [!answer] читала
+   > [!options] читав | читала | читало | читали
+   > [!explanation] Past tense agrees with subject gender (feminine = -ла)
+
+3. Це моя книга, а це твоя.
+   > [!error] none
+   > [!answer] ✓
+   > [!explanation] No error - keeps learners alert (use sparingly: 1-2 per activity)
+```
+
+**Key points:**
+- Sentence with error on first line
+- `> [!error]` for the incorrect word (or `none` for trick questions)
+- `> [!answer]` for the correct form (or `✓` for no-error items)
+- `> [!options]` with pipe-separated options (must include both wrong and correct)
+- `> [!explanation]` **REQUIRED** - explains why it's wrong and the rule
+- Minimum 12 items
+- Use `none` errors sparingly (1-2 per activity max)
+
+**UI Flow:**
+1. User clicks word they think is wrong
+2. If correct word selected → show options to choose fix
+3. If wrong word selected → feedback "Try again"
+4. After fix selected → show explanation
+
+**Scoring:** 2 points per item (1 for identifying error, 1 for correct fix)
+
 ---
 
 ## IMPORTANT: DO NOT USE YAML FORMAT

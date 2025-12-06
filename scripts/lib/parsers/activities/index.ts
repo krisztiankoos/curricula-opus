@@ -59,6 +59,19 @@ export function parseActivity(
 }
 
 /**
+ * Get the number of items in an activity (for validation)
+ */
+function getActivityItemCount(activity: Activity): number {
+  const content = activity.content as any;
+  if (content?.items) return content.items.length;
+  if (content?.pairs) return content.pairs.length;
+  if (content?.groups) return content.groups.length;
+  if (content?.statements) return content.statements.length;
+  if (content?.questions) return content.questions.length;
+  return 0;
+}
+
+/**
  * Parse all activities from markdown content
  * Finds "# Activities" or "# Вправи" section and parses all ## subsections
  */
@@ -90,6 +103,11 @@ export function parseActivities(body: string, ctx: ParseContext): {
 
     const activity = parseActivity(header, content, ctx);
     if (activity) {
+      // Warn if activity parsed but has no items (likely format mismatch)
+      const itemCount = getActivityItemCount(activity);
+      if (itemCount === 0) {
+        console.warn(`⚠️  Activity "${activity.title}" (${activity.type}) has 0 items - check markdown format`);
+      }
       activities.push(activity);
     }
   }

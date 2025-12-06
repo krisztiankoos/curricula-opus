@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 31: The Dative I | Ukrainian A2</title>
+  <title>Module 31: Prefixes I: Motion Verbs | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -446,23 +472,24 @@ footer {
   <div class="top-nav">
     <a href="../index.html">← l2-uk-en Curriculum</a>
     <div class="module-nav">
-      <span class="module-nav-link disabled">← Prev</span>
+      <a href="module-30.html" class="module-nav-link">← Module 30</a>
       <a href="index.html" class="module-nav-link">A2 Index</a>
       <a href="module-32.html" class="module-nav-link">Module 32 →</a>
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 31: The Dative I</h1>
+    <h1>Module 31: Prefixes I: Motion Verbs</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Fill</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Match</button>
-      <button class="nav-tab" data-section="activity-6">7. Sort</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -470,720 +497,416 @@ footer {
     
     <section id="lesson" class="section active">
       <div class="lesson-header">
-        <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">The Dative I</h2>
-        <p style="color:var(--text-muted)">To Me, To You</p>
+        <span class="level-badge">A2 · A2.4</span>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Prefixes I: Motion Verbs</h2>
+        <p style="color:var(--text-muted)">How Prefixes Change Movement</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="welcometoa2">Welcome to A2!</h3>
-<p>Congratulations on completing A1! You've mastered the foundation - now let's build on it.</p>
-<p>In A1, you learned 4 cases. At A2, you'll complete all 7. Today: the <strong>Dative case</strong> - answering "to whom?"</p>
-<p><strong>The scenario:</strong></p>
-<ul>
-<li>A1: Я бачу книгу. (I see <strong>the book</strong> - accusative, direct object)</li>
-<li>A2: Я даю книгу <strong>мамі</strong>. (I give the book <strong>to mom</strong> - dative, indirect object)</li>
-</ul>
-<blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>English used to have dative case too! Old English "him" was dative (vs. "hine" accusative). Over time, English merged them. When we say "Give <strong>him</strong> the book," that "him" is a remnant of the dative case. Ukrainian kept all its cases - which means more precision in who receives what!</p>
-</blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="thedativequestion">The Dative Question: Кому?</h3>
-<p>The dative case answers: <strong>Кому?</strong> (To whom?)</p>
+      <div class="md-content"><p>One prefix — completely different meaning! "Йти" means "to go," but "прийти" means "to arrive," "вийти" means "to exit," and "зайти" means "to stop by." Ukrainian prefixes are like magic keys that unlock dozens of new verbs from each base word. Master these, and your vocabulary multiplies!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Base Motion Verbs</h3>
+      <div class="md-content"><h2 id="togoonfoottogobyvehicle">йти (to go on foot) &amp; їхати (to go by vehicle)</h2>
+<p>These are the foundation. Prefixes transform them:</p>
 <table>
 <thead>
 <tr>
-<th>Nominative</th>
-<th>Dative</th>
-<th>English</th>
+<th>Base</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>я</td>
-<td>мені</td>
-<td>to me</td>
+<td>йти</td>
+<td>to go (on foot)</td>
 </tr>
 <tr>
-<td>ти</td>
-<td>тобі</td>
-<td>to you (informal)</td>
+<td>їхати</td>
+<td>to go (by vehicle)</td>
 </tr>
 <tr>
-<td>він</td>
-<td>йому</td>
-<td>to him</td>
+<td>нести</td>
+<td>to carry (on foot)</td>
 </tr>
 <tr>
-<td>вона</td>
-<td>їй</td>
-<td>to her</td>
+<td>везти</td>
+<td>to carry (by vehicle)</td>
 </tr>
 <tr>
-<td>воно</td>
-<td>йому</td>
-<td>to it</td>
-</tr>
-<tr>
-<td>ми</td>
-<td>нам</td>
-<td>to us</td>
-</tr>
-<tr>
-<td>ви</td>
-<td>вам</td>
-<td>to you (formal/plural)</td>
-</tr>
-<tr>
-<td>вони</td>
-<td>їм</td>
-<td>to them</td>
+<td>вести</td>
+<td>to lead</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Memory trick:</strong></p>
-<ul>
-<li><strong>мені, тобі</strong> - end in -і</li>
-<li><strong>йому</strong> - "yo-MU" for him/it</li>
-<li><strong>їй</strong> - short for her</li>
-<li><strong>нам, вам, їм</strong> - rhyme together!</li>
-</ul>
+<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>⚡ <strong>Pro Tip: Pronunciation</strong></p>
-  <ul>
-  <li><strong>мені</strong> [meˈnʲi] - stress on second syllable</li>
-  <li><strong>тобі</strong> [toˈbʲi] - stress on second syllable</li>
-  <li><strong>йому</strong> [joˈmu] - stress on second syllable</li>
-  <li>These patterns are consistent - always stress the ending!</li>
-  </ul>
+  <p>Ukrainian has two separate verbs for "go" — one for walking, one for riding! This distinction carries through all prefixed forms.</p>
 </blockquote>
-<h3 id="coredativeverbs">Core Dative Verbs</h3>
-<p>These verbs naturally take dative objects:</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Key Prefixes</h3>
+      <div class="md-content"><h2 id="arrival">при- (Arrival)</h2>
 <table>
 <thead>
 <tr>
-<th>Verb</th>
+<th>Prefix + Base</th>
 <th>Meaning</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>давати/дати</td>
-<td>to give</td>
-<td>Дай <strong>мені</strong> воду.</td>
+<td>при- + йти</td>
+<td>to arrive (foot)</td>
+<td>Він <strong>прийшов</strong> додому.</td>
 </tr>
 <tr>
-<td>казати/сказати</td>
-<td>to tell</td>
-<td>Скажи <strong>їй</strong> правду.</td>
+<td>при- + їхати</td>
+<td>to arrive (vehicle)</td>
+<td>Вона <strong>приїхала</strong> з Києва.</td>
 </tr>
 <tr>
-<td>показувати/показати</td>
-<td>to show</td>
-<td>Покажи <strong>нам</strong> фото.</td>
+<td>при- + нести</td>
+<td>to bring (carrying)</td>
+<td>Я <strong>приніс</strong> книгу.</td>
 </tr>
 <tr>
-<td>допомагати/допомогти</td>
-<td>to help</td>
-<td>Допоможи <strong>йому</strong>!</td>
-</tr>
-<tr>
-<td>дзвонити/подзвонити</td>
-<td>to call</td>
-<td>Подзвони <strong>мені</strong>!</td>
+<td>при- + везти</td>
+<td>to bring (vehicle)</td>
+<td>Він <strong>привіз</strong> подарунки.</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-  <p>📜 <strong>History Bite: Why Dative?</strong></p>
-  <p>The word "dative" comes from Latin "dare" (to give). This case has existed since Proto-Indo-European times - at least 5,000 years! The fundamental human actions of giving, telling, and showing have always needed a way to express the recipient. Ukrainian preserves this ancient grammar beautifully.</p>
-</blockquote>
-<h3 id="buildingsentences">Building Sentences</h3>
-<p><strong>Pattern:</strong> Subject + Verb + Accusative (what) + Dative (to whom)</p>
+<p><strong>More examples:</strong></p>
+<ul>
+<li>Коли ти <strong>прийдеш</strong>? (When will you come?)</li>
+<li>Вони <strong>приїхали</strong> вчора. (They arrived yesterday.)</li>
+<li><strong>Принеси</strong> води, будь ласка. (Bring water, please.)</li>
+</ul>
+<hr />
+<h2 id="exitout">ви- (Exit, Out)</h2>
 <table>
 <thead>
 <tr>
-<th>Ukrainian</th>
-<th>English</th>
-<th>Analysis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Я даю книгу <strong>тобі</strong>.</td>
-<td>I give the book to you.</td>
-<td>книгу (acc) + тобі (dat)</td>
-</tr>
-<tr>
-<td>Він показує фото <strong>нам</strong>.</td>
-<td>He shows the photo to us.</td>
-<td>фото (acc) + нам (dat)</td>
-</tr>
-<tr>
-<td>Вона каже правду <strong>їм</strong>.</td>
-<td>She tells them the truth.</td>
-<td>правду (acc) + їм (dat)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Word order flexibility:</strong></p>
-<ul>
-<li>Я даю <strong>тобі</strong> книгу. (emphasis on recipient)</li>
-<li><strong>Тобі</strong> я даю книгу. (strong emphasis on YOU)</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Gift-Giving</strong></p>
-  <p>Ukrainians love giving gifts! "Дарувати" (to give as a gift) uses dative: "Я дарую <strong>тобі</strong> квіти" (I give you flowers). Important customs:</p>
-  <ul>
-  <li>Give odd numbers of flowers (even numbers are for funerals)</li>
-  <li>Don't give sharp objects as gifts (superstition)</li>
-  <li>Accept gifts graciously with both hands</li>
-  </ul>
-</blockquote>
-<h3 id="thequestionpattern">The Question Pattern</h3>
-<p><strong>Asking who receives:</strong></p>
-<ul>
-<li>Кому ти даєш? - To whom are you giving?</li>
-<li>Кому це? - For whom is this?</li>
-<li>Кому потрібно? - Who needs (this)?</li>
-</ul>
-<p><strong>Common responses:</strong></p>
-<ul>
-<li>Мені! - To me! / For me!</li>
-<li>Це тобі. - This is for you.</li>
-<li>Їй потрібно. - She needs (it).</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Потрібно + Dative</strong></p>
-  <p>The expression "need" uses dative for the person:</p>
-  <ul>
-  <li><strong>Мені</strong> потрібно = I need (lit: to me it's needed)</li>
-  <li><strong>Тобі</strong> потрібна допомога? = Do you need help?</li>
-  <li><strong>Йому</strong> потрібен час. = He needs time.</li>
-  </ul>
-  <p>Notice: потрібно (neuter), потрібна (fem), потрібен (masc) agrees with WHAT is needed!</p>
-</blockquote>
-<h3 id="moredativeexpressions">More Dative Expressions</h3>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
+<th>Prefix + Base</th>
 <th>Meaning</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>мені подобається</td>
-<td>I like (it pleases me)</td>
-<td>Мені подобається музика.</td>
+<td>ви- + йти</td>
+<td>to exit, go out</td>
+<td>Він <strong>вийшов</strong> з кімнати.</td>
 </tr>
 <tr>
-<td>мені здається</td>
-<td>it seems to me</td>
-<td>Мені здається, що…</td>
+<td>ви- + їхати</td>
+<td>to depart, leave</td>
+<td>Вона <strong>виїхала</strong> о восьмій.</td>
 </tr>
 <tr>
-<td>мені холодно</td>
-<td>I'm cold</td>
-<td>Тобі не холодно?</td>
+<td>ви- + нести</td>
+<td>to carry out</td>
+<td>Я <strong>виніс</strong> сміття.</td>
 </tr>
 <tr>
-<td>скільки тобі років?</td>
-<td>how old are you?</td>
-<td>Мені 25 років.</td>
-</tr>
-<tr>
-<td>як тобі?</td>
-<td>how do you like it?</td>
-<td>Як тобі Київ?</td>
+<td>ви- + везти</td>
+<td>to export, drive out</td>
+<td>Вони <strong>вивезли</strong> меблі.</td>
 </tr>
 </tbody>
 </table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Вийди</strong> на хвилинку! (Come out for a minute!)</li>
+<li>Поїзд <strong>виїжджає</strong> о п'ятій. (The train departs at five.)</li>
+<li><strong>Винеси</strong> коробки. (Carry the boxes out.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>💡 <strong>Did You Know?</strong></p>
-  <p>"Мені подобається" literally means "it is pleasing to me" - the thing doing the pleasing is the subject! This is why we say "Мені подобаєТЬСЯ музика" (music pleases) not "подобаюся" (I please). The thing you like is the grammatical subject!</p>
+  <p>Classic film direction: <em>Вийдіть з кадру!</em> — Exit the frame!</p>
 </blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="pronountransformation">Pronoun Transformation</h3>
-<p>Change nominative to dative:</p>
-<ol>
-<li><p>я</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">мені</div></div>
-<ol start="2">
-<li><p>ти</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">тобі</div></div>
-<ol start="3">
-<li><p>він</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">йому</div></div>
-<ol start="4">
-<li><p>вона</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">їй</div></div>
-<ol start="5">
-<li><p>ми</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">нам</div></div>
-<ol start="6">
-<li>ви</li>
-</ol>
-<blockquote>
-  <p>[!!answer] вам</p>
-  <ol start="7">
-  <li>вони</li>
-  </ol>
-</blockquote>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">їм</div></div>
-<h3 id="fillinthedative">Fill in the Dative</h3>
-<p>Complete with correct dative pronoun:</p>
-<ol>
-<li><p>Дай ___ воду, будь ласка. (I)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">мені</div></div>
-<ol start="2">
-<li><p>Я скажу ___ завтра. (you, informal)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">тобі</div></div>
-<ol start="3">
-<li><p>Покажи ___ дорогу. (we)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">нам</div></div>
-<ol start="4">
-<li><p>Він допомагає ___. (she)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">їй</div></div>
-<ol start="5">
-<li><p>Подзвони ___! (they)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">їм</div></div>
-<ol start="6">
-<li><p>Що ___ потрібно? (he)</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">йому</div></div>
-<h3 id="sentencebuilding">Sentence Building</h3>
-<p>Create sentences using the pattern: Subject + дати + Object + Dative</p>
-<p>Example: Я / книга / він → Я даю книгу йому.</p>
-<ol>
-<li><p>Вона / подарунок / я</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">Вона дає подарунок мені.</div></div>
-<ol start="2">
-<li><p>Ми / гроші / ви</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">Ми даємо гроші вам.</div></div>
-<ol start="3">
-<li><p>Вони / відповідь / ми</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">Вони дають відповідь нам.</div></div>
-<h2 id="production">production</h2>
-<h3 id="realconversations">Real Conversations</h3>
-<p>Practice these dialogues:</p>
-<p><strong>A: Giving directions</strong></p>
-<ul>
-<li>Покажи мені, де метро.</li>
-<li>Тобі потрібно йти прямо, потім праворуч.</li>
-<li>Дякую! Ти мені дуже допоміг!</li>
-</ul>
-<p><strong>B: At a café</strong></p>
-<ul>
-<li>Що вам принести?</li>
-<li>Принесіть мені каву, будь ласка.</li>
-<li>Що їй? (pointing to friend)</li>
-<li>Їй чай, будь ласка.</li>
-</ul>
-<p><strong>C: Phone call</strong></p>
-<ul>
-<li>Подзвони мені ввечері!</li>
-<li>Добре, я тобі подзвоню о восьмій.</li>
-<li>Скажи їм, що я буду пізніше.</li>
-</ul>
 <hr />
-<hr />
-<hr />
-<hr />
-<hr />
+<h2 id="entryin">у-/в- (Entry, In)</h2>
 <table>
 <thead>
 <tr>
-<th>Word</th>
-<th>IPA</th>
-<th>English</th>
-<th>POS</th>
-<th>Gender</th>
-<th>Note</th>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>мені</td>
-<td>/meˈnʲi/</td>
-<td>to me</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of я</td>
+<td>у-/в- + йти</td>
+<td>to enter (foot)</td>
+<td>Він <strong>увійшов</strong> до кімнати.</td>
 </tr>
 <tr>
-<td>тобі</td>
-<td>/toˈbʲi/</td>
-<td>to you</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of ти</td>
+<td>у-/в- + їхати</td>
+<td>to drive in</td>
+<td>Машина <strong>в'їхала</strong> в гараж.</td>
 </tr>
 <tr>
-<td>йому</td>
-<td>/joˈmu/</td>
-<td>to him/it</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of він/воно</td>
-</tr>
-<tr>
-<td>їй</td>
-<td>/jij/</td>
-<td>to her</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of вона</td>
-</tr>
-<tr>
-<td>нам</td>
-<td>/nɑm/</td>
-<td>to us</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of ми</td>
-</tr>
-<tr>
-<td>вам</td>
-<td>/vɑm/</td>
-<td>to you</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of ви</td>
-</tr>
-<tr>
-<td>їм</td>
-<td>/jim/</td>
-<td>to them</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. of вони</td>
-</tr>
-<tr>
-<td>кому</td>
-<td>/koˈmu/</td>
-<td>to whom</td>
-<td>pron</td>
-<td>-</td>
-<td>Dat. question</td>
-</tr>
-<tr>
-<td>дати</td>
-<td>/ˈdɑtɪ/</td>
-<td>to give (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>давати</td>
-<td>/dɑˈvɑtɪ/</td>
-<td>to give (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>казати</td>
-<td>/kɑˈzɑtɪ/</td>
-<td>to tell (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>сказати</td>
-<td>/skɑˈzɑtɪ/</td>
-<td>to tell (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>показувати</td>
-<td>/pokɑˈzuvɑtɪ/</td>
-<td>to show (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>показати</td>
-<td>/pokɑˈzɑtɪ/</td>
-<td>to show (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>допомагати</td>
-<td>/dopoˈmɑɦɑtɪ/</td>
-<td>to help (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>допомогти</td>
-<td>/dopomoɦˈtɪ/</td>
-<td>to help (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>дзвонити</td>
-<td>/dzvoˈnɪtɪ/</td>
-<td>to call (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>подзвонити</td>
-<td>/podzvonɪtɪ/</td>
-<td>to call (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>писати</td>
-<td>/pɪˈsɑtɪ/</td>
-<td>to write (impf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>написати</td>
-<td>/nɑpɪˈsɑtɪ/</td>
-<td>to write (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>розповісти</td>
-<td>/rozpɔvʲisˈtɪ/</td>
-<td>to tell a story (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>пояснити</td>
-<td>/pojasˈnɪtɪ/</td>
-<td>to explain (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>запропонувати</td>
-<td>/zɑpropɔnuˈvɑtɪ/</td>
-<td>to offer (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>принести</td>
-<td>/prɪnɛsˈtɪ/</td>
-<td>to bring (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>послати</td>
-<td>/pɔsˈlɑtɪ/</td>
-<td>to send (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>надіслати</td>
-<td>/nɑdʲiˈslɑtɪ/</td>
-<td>to send (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>купити</td>
-<td>/kuˈpɪtɪ/</td>
-<td>to buy (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>подарувати</td>
-<td>/podɑruˈvɑtɪ/</td>
-<td>to gift (pf)</td>
-<td>verb</td>
-<td>-</td>
-<td>+ dat</td>
-</tr>
-<tr>
-<td>потрібний</td>
-<td>/poˈtrʲibnɪj/</td>
-<td>needed (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>потрібна (f), потрібне (n)</td>
-</tr>
-<tr>
-<td>необхідний</td>
-<td>/nɛɔbˈxʲidnɪj/</td>
-<td>necessary (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>необхідна (f), необхідне (n)</td>
-</tr>
-<tr>
-<td>цікавий</td>
-<td>/tsʲiˈkɑvɪj/</td>
-<td>interesting (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>цікава (f), цікаве (n)</td>
-</tr>
-<tr>
-<td>приємний</td>
-<td>/prɪˈjɛmnɪj/</td>
-<td>pleasant (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>приємна (f), приємне (n)</td>
-</tr>
-<tr>
-<td>важливий</td>
-<td>/vɑʒˈlɪvɪj/</td>
-<td>important (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>важлива (f), важливе (n)</td>
-</tr>
-<tr>
-<td>корисний</td>
-<td>/koˈrɪsnɪj/</td>
-<td>useful (m)</td>
-<td>adj</td>
-<td>m</td>
-<td>корисна (f), корисне (n)</td>
+<td>у-/в- + нести</td>
+<td>to carry in</td>
+<td>Я <strong>вніс</strong> валізу.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Увійдіть</strong>, будь ласка. (Enter, please.)</li>
+<li>Ми <strong>в'їхали</strong> в місто. (We drove into the city.)</li>
+<li><strong>Внесіть</strong> речі до хати. (Bring the things into the house.)</li>
+</ul>
+<hr />
+<h2 id="dropbybriefvisit">за- (Drop by, Brief visit)</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>за- + йти</td>
+<td>to stop by (foot)</td>
+<td><strong>Зайди</strong> до мене!</td>
+</tr>
+<tr>
+<td>за- + їхати</td>
+<td>to stop by (vehicle)</td>
+<td>Я <strong>заїду</strong> по дорозі.</td>
+</tr>
+<tr>
+<td>за- + нести</td>
+<td>to drop off</td>
+<td>Він <strong>заніс</strong> документи.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Зайдіть</strong> завтра. (Stop by tomorrow.)</li>
+<li>Я <strong>заїду</strong> за тобою о шостій. (I'll pick you up at six.)</li>
+<li><strong>Занеси</strong> це сусіду. (Drop this off at the neighbor's.)</li>
+</ul>
+<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
+<blockquote>
+  <p>"Зайти" is extremely common: <em>Зайди в магазин</em> — Stop by the store!</p>
+</blockquote>
+<hr />
+<h2 id="acrossthrough">пере- (Across, Through)</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>пере- + йти</td>
+<td>to cross (foot)</td>
+<td><strong>Перейди</strong> вулицю.</td>
+</tr>
+<tr>
+<td>пере- + їхати</td>
+<td>to cross, move</td>
+<td>Ми <strong>переїхали</strong> в нову квартиру.</td>
+</tr>
+<tr>
+<td>пере- + нести</td>
+<td>to carry across</td>
+<td>Він <strong>переніс</strong> стіл.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Перейдіть</strong> на інший бік. (Cross to the other side.)</li>
+<li>Вони <strong>переїхали</strong> до Львова. (They moved to Lviv.)</li>
+<li><strong>Перенеси</strong> зустріч на завтра. (Move the meeting to tomorrow.)</li>
+</ul>
+<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<blockquote>
+  <p>Navigation prompt: <em>Перейди міст і йди прямо</em> — Cross the bridge and go straight!</p>
+</blockquote>
+<hr />
+<h2 id="awaydeparture">від- (Away, Departure)</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>від- + йти</td>
+<td>to walk away</td>
+<td>Він <strong>відійшов</strong> від вікна.</td>
+</tr>
+<tr>
+<td>від- + їхати</td>
+<td>to drive away</td>
+<td>Машина <strong>відїхала</strong>.</td>
+</tr>
+<tr>
+<td>від- + нести</td>
+<td>to carry away</td>
+<td>Я <strong>відніс</strong> посуд.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Відійди</strong> від дверей! (Move away from the door!)</li>
+<li>Поїзд уже <strong>відїхав</strong>. (The train already left.)</li>
+<li><strong>Віднеси</strong> це на кухню. (Take this to the kitchen.)</li>
+</ul>
+<hr />
+<h2 id="approachunder">під- (Approach, Under)</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>під- + йти</td>
+<td>to approach</td>
+<td>Він <strong>підійшов</strong> до мене.</td>
+</tr>
+<tr>
+<td>під- + їхати</td>
+<td>to drive up</td>
+<td>Таксі <strong>під'їхало</strong>.</td>
+</tr>
+<tr>
+<td>під- + нести</td>
+<td>to bring closer</td>
+<td><strong>Піднеси</strong> стілець.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Підійди</strong> ближче. (Come closer.)</li>
+<li>Автобус <strong>під'їжджає</strong>. (The bus is arriving.)</li>
+<li><strong>Піднеси</strong> мені книгу. (Bring me the book.)</li>
+</ul>
+<hr />
+<h2 id="around">об- (Around)</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix + Base</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>об- + йти</td>
+<td>to go around</td>
+<td><strong>Обійди</strong> це дерево.</td>
+</tr>
+<tr>
+<td>об- + їхати</td>
+<td>to drive around</td>
+<td>Ми <strong>об'їхали</strong> пробку.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More examples:</strong></p>
+<ul>
+<li><strong>Обійдіть</strong> будинок. (Go around the building.)</li>
+<li>Краще <strong>об'їхати</strong> центр. (Better to drive around the center.)</li>
+</ul>
+<hr /></div>
     </div>
   
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="dativepronouns">Dative Pronouns</h2>
-<table>
+      <div class="md-content"><table>
 <thead>
 <tr>
-<th>Nominative</th>
-<th>Dative</th>
+<th>Prefix</th>
+<th>Core Meaning</th>
+<th>йти →</th>
+<th>їхати →</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>я</td>
-<td>мені</td>
+<td>при-</td>
+<td>arrival</td>
+<td>прийти</td>
+<td>приїхати</td>
 </tr>
 <tr>
-<td>ти</td>
-<td>тобі</td>
+<td>ви-</td>
+<td>exit</td>
+<td>вийти</td>
+<td>виїхати</td>
 </tr>
 <tr>
-<td>він/воно</td>
-<td>йому</td>
+<td>у-/в-</td>
+<td>entry</td>
+<td>увійти</td>
+<td>в'їхати</td>
 </tr>
 <tr>
-<td>вона</td>
-<td>їй</td>
+<td>за-</td>
+<td>drop by</td>
+<td>зайти</td>
+<td>заїхати</td>
 </tr>
 <tr>
-<td>ми</td>
-<td>нам</td>
+<td>пере-</td>
+<td>across</td>
+<td>перейти</td>
+<td>переїхати</td>
 </tr>
 <tr>
-<td>ви</td>
-<td>вам</td>
+<td>від-</td>
+<td>away</td>
+<td>відійти</td>
+<td>відїхати</td>
 </tr>
 <tr>
-<td>вони</td>
-<td>їм</td>
+<td>під-</td>
+<td>approach</td>
+<td>підійти</td>
+<td>під'їхати</td>
+</tr>
+<tr>
+<td>об-</td>
+<td>around</td>
+<td>обійти</td>
+<td>об'їхати</td>
 </tr>
 </tbody>
 </table>
-<h2 id="keypatterns">Key Patterns</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>дати + dat</td>
-<td>Дай мені!</td>
-</tr>
-<tr>
-<td>сказати + dat</td>
-<td>Скажи їй.</td>
-</tr>
-<tr>
-<td>допомогти + dat</td>
-<td>Допоможи нам!</td>
-</tr>
-<tr>
-<td>подзвонити + dat</td>
-<td>Подзвони йому.</td>
-</tr>
-<tr>
-<td>потрібно + dat</td>
-<td>Мені потрібно.</td>
-</tr>
-<tr>
-<td>подобається + dat</td>
-<td>Тобі подобається?</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
-  <ul>
-  <li>Dative answers "to whom?" (кому?)</li>
-  <li>All pronouns have special dative forms</li>
-  <li>Key verbs: давати, казати, показувати, допомагати</li>
-  <li>Expressions: мені потрібно, мені подобається, мені холодно</li>
-  <li>Age uses dative: Скільки тобі років?</li>
-  </ul>
-</blockquote></div>
+<hr />
+<hr />
+<hr /></div>
     </div>
   
       <div class="btn-group">
@@ -1192,79 +915,86 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Dative Pronouns</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Choose the Prefix</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Prefix Meanings</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Choose the Dative Pronoun</h3>
-      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/10</span></div>
-      <div id="activity-2-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-2-complete"><h3>Complete!</h3></div>
+    <section id="activity-2" class="section"><div class="card"><h3>Sentence Order</h3>
+      <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Dative Pronouns</h3>
-      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/10</span></div>
+    <section id="activity-3" class="section"><div class="card"><h3>Prefix Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Prefix Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Dative Pronouns and Verbs</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div class="match-container" id="activity-5-container"><svg class="match-lines" id="activity-5-lines"></svg>
-        <div class="match-column" id="activity-5-left"></div>
-        <div class="match-column" id="activity-5-right"></div>
-      </div>
-      <div class="completion-message" id="activity-5-complete"><h3>Perfect!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Prefix Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Dative Usage Categories</h3>
-      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/10</span></div>
-      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
-      <div class="sort-groups" id="activity-6-groups"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+    <section id="activity-6" class="section"><div class="card"><h3>Complete the Sentence</h3>
+      <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Dative Sentence Building</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Verb</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Prefix Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (19)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    
+    <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">прийти</td><td class="vocab-ipa">/prɪjˈtɪ/</td><td class="vocab-en">to come, arrive</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вийти</td><td class="vocab-ipa">/ˈwɪjtɪ/</td><td class="vocab-en">to exit, go out</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">увійти</td><td class="vocab-ipa">/uwɪjˈtɪ/</td><td class="vocab-en">to enter</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">зайти</td><td class="vocab-ipa">/zajˈtɪ/</td><td class="vocab-en">to stop by</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">перейти</td><td class="vocab-ipa">/pɛrɛjˈtɪ/</td><td class="vocab-en">to cross</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">відійти</td><td class="vocab-ipa">/widɪjˈtɪ/</td><td class="vocab-en">to walk away</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">підійти</td><td class="vocab-ipa">/pidɪjˈtɪ/</td><td class="vocab-en">to approach</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">обійти</td><td class="vocab-ipa">/obɪjˈtɪ/</td><td class="vocab-en">to go around</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">приїхати</td><td class="vocab-ipa">/prɪˈjixatɪ/</td><td class="vocab-en">to arrive (vehicle)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">виїхати</td><td class="vocab-ipa">/wɪˈjixatɪ/</td><td class="vocab-en">to depart</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">в&#039;їхати</td><td class="vocab-ipa">/wjˈixatɪ/</td><td class="vocab-en">to drive in</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">заїхати</td><td class="vocab-ipa">/zaˈjixatɪ/</td><td class="vocab-en">to stop by (vehicle)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">переїхати</td><td class="vocab-ipa">/pɛrɛˈjixatɪ/</td><td class="vocab-en">to move, relocate</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">принести</td><td class="vocab-ipa">/prɪnɛsˈtɪ/</td><td class="vocab-en">to bring</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">винести</td><td class="vocab-ipa">/wɪnɛsˈtɪ/</td><td class="vocab-en">to carry out</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">занести</td><td class="vocab-ipa">/zanɛsˈtɪ/</td><td class="vocab-en">to drop off</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">перенести</td><td class="vocab-ipa">/pɛrɛnɛsˈtɪ/</td><td class="vocab-en">to carry across, postpone</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">привезти</td><td class="vocab-ipa">/prɪwɛzˈtɪ/</td><td class="vocab-en">to bring (by vehicle)</td><td class="vocab-note">pf</td></tr><tr><td class="vocab-uk">вивезти</td><td class="vocab-ipa">/wɪwɛzˈtɪ/</td><td class="vocab-en">to take out</td><td class="vocab-note">pf</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1276,8 +1006,8 @@ footer {
   </main><footer>Module 31 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Pronouns","data":{"type":"fill-blank","items":[{"prompt":"Дай цю нову книгу ___ (я), будь ласка.","answer":"мені","hints":["я"],"options":["я","мені","мене","мною"]},{"prompt":"Я обов'язково скажу ___ (ти) всю правду завтра.","answer":"тобі","hints":["ти"],"options":["ти","тебе","тобі","тобою"]},{"prompt":"Він завжди з радістю допомагає ___ (вони) вдома.","answer":"їм","hints":["вони"],"options":["вони","їх","їм","ними"]},{"prompt":"Що саме ___ (ви) потрібно для цієї роботи?","answer":"вам","hints":["ви"],"options":["ви","вас","вам","вами"]},{"prompt":"Вона з усмішкою показує старі фото ___ (ми).","answer":"нам","hints":["ми"],"options":["ми","нас","нам","нами"]},{"prompt":"Обов'язково подзвони ___ (він) сьогодні ввечері після роботи.","answer":"йому","hints":["він"],"options":["він","його","йому","ним"]},{"prompt":"Я хочу подарувати красиві квіти ___ (вона) на свято.","answer":"їй","hints":["вона"],"options":["вона","її","їй","нею"]},{"prompt":"Скільки ___ (ти) років виповнилося цього року?","answer":"тобі","hints":["ти"],"options":["ти","тебе","тобі","тобою"]},{"prompt":"Як ___ (ви) подобається наше прекрасне місто Київ?","answer":"вам","hints":["ви"],"options":["ви","вас","вам","вами"]},{"prompt":"Це дуже ___ (я) потрібно для важливої роботи.","answer":"мені","hints":["я"],"options":["я","мені","мене","мною"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мені","Дай","цю","книгу","нову","цікаву","будь ласка","українську"],"answer":"Дай мені цю нову цікаву українську книгу, будь ласка.","translation":"Give me this new interesting Ukrainian book, please."},{"words":["тобі","Я","скажу","завтра","всю","правду","обов'язково","вранці","важливу"],"answer":"Я обов'язково скажу тобі всю важливу правду завтра вранці.","translation":"I will definitely tell you the whole important truth tomorrow morning."},{"words":["допомагає","Він","їм","завжди","з радістю","вдома","і","на роботі"],"answer":"Він завжди з радістю допомагає їм вдома і на роботі.","translation":"He always gladly helps them at home and at work."},{"words":["вам","потрібно","Що","для","саме","роботи","цієї","важливої","нової"],"answer":"Що саме вам потрібно для цієї нової важливої роботи?","translation":"What exactly do you need for this new important work?"},{"words":["нам","показує","Вона","фото","старі","свої","із","відпустки","минулої"],"answer":"Вона показує нам свої старі фото із минулої відпустки.","translation":"She shows us her old photos from last vacation."},{"words":["йому","Подзвони","сьогодні","ввечері","обов'язково","після","важливої","наради","довгої"],"answer":"Обов'язково подзвони йому сьогодні ввечері після довгої важливої наради.","translation":"Be sure to call him tonight after the long important meeting."},{"words":["подобається","Мені","дуже","українська","музика","народна","і","сучасна","також"],"answer":"Мені дуже подобається українська народна і сучасна музика також.","translation":"I really like Ukrainian folk and modern music too."},{"words":["тобі","Скільки","років","виповнилося","цього","року","у","березні","місяці"],"answer":"Скільки тобі років виповнилося у березні місяці цього року?","translation":"How old did you turn in March of this year?"},{"words":["вам","Як","наше","місто","подобається","прекрасне","старе","і","затишне"],"answer":"Як вам подобається наше прекрасне старе і затишне місто?","translation":"How do you like our beautiful old and cozy city?"},{"words":["Мені","сьогодні","трохи","холодно","на вулиці","без","теплої","куртки","зимової"],"answer":"Мені сьогодні трохи холодно на вулиці без теплої зимової куртки.","translation":"I'm a little cold outside today without a warm winter jacket."}]}},{"id":"activity-2","type":"fill-blank","title":"Choose the Dative Pronoun","data":{"type":"fill-blank","items":[{"prompt":"Дай ___ (я) цю нову книгу.","answer":"мені","hints":["я"],"options":["мені","мене","мною"]},{"prompt":"Він покаже ___ (вона) старі фото.","answer":"їй","hints":["вона"],"options":["її","їй","нею"]},{"prompt":"Що ___ (ми) потрібно для роботи?","answer":"нам","hints":["ми"],"options":["ми","нас","нам"]},{"prompt":"Подзвони ___ (він) сьогодні ввечері.","answer":"йому","hints":["він"],"options":["він","його","йому"]},{"prompt":"Я дарую красиві квіти ___ (ти).","answer":"тобі","hints":["ти"],"options":["ти","тебе","тобі"]},{"prompt":"Вона завжди допомагає ___ (вони).","answer":"їм","hints":["вони"],"options":["вони","їх","їм"]},{"prompt":"Скажіть ___ (ви), будь ласка, правду.","answer":"вам","hints":["ви"],"options":["ви","вас","вам"]},{"prompt":"Як ___ (ти) подобається Київ?","answer":"тобі","hints":["ти"],"options":["ти","тебе","тобі"]},{"prompt":"Скільки ___ (вона) років виповнилося?","answer":"їй","hints":["вона"],"options":["її","їй","нею"]},{"prompt":"Це дуже потрібно ___ (я).","answer":"мені","hints":["я"],"options":["я","мені","мене"]}]}},{"id":"activity-3","type":"quiz","title":"Dative Pronouns","data":{"type":"quiz","questions":[{"question":"What is the dative form of \"я\"?","options":["мені","я","мене","мною"],"correctIndex":0,"explanation":"\"мені\" is the dative form of \"я\""},{"question":"What is the dative form of \"ти\"?","options":["тобі","ти","тебе","тобою"],"correctIndex":0,"explanation":"\"тобі\" is the dative form of \"ти\""},{"question":"What is the dative form of \"він\"?","options":["йому","він","його","ним"],"correctIndex":0,"explanation":"\"йому\" is the dative form of \"він\""},{"question":"What is the dative form of \"вона\"?","options":["їй","вона","її","нею"],"correctIndex":0,"explanation":"\"їй\" is the dative form of \"вона\""},{"question":"What is the dative form of \"ми\"?","options":["нам","ми","нас","нами"],"correctIndex":0,"explanation":"\"нам\" is the dative form of \"ми\""},{"question":"What is the dative form of \"ви\"?","options":["вам","ви","вас","вами"],"correctIndex":0,"explanation":"\"вам\" is the dative form of \"ви\""},{"question":"What is the dative form of \"вони\"?","options":["їм","вони","їх","ними"],"correctIndex":0,"explanation":"\"їм\" is the dative form of \"вони\""},{"question":"How do you say \"I need\" (impersonal)?","options":["Мені потрібно","Я потрібен","Моє потрібно","Я потребую"],"correctIndex":0,"explanation":"\"Мені потрібно\" is the correct impersonal expression"},{"question":"How do you say \"I like music\" (impersonal)?","options":["Мені подобається музика","Я подобаю музику","Я люблю музику","Музика мені подобається"],"correctIndex":0,"explanation":"\"Мені подобається музика\" is the correct impersonal expression"},{"question":"What question word asks \"to whom\"?","options":["Кому?","Хто?","Що?","Де?"],"correctIndex":0,"explanation":"\"Кому?\" is the dative question word"}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"мені\" is the dative of \"я\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"тобі\" is the dative of \"ти\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"його\" is the dative of \"він\"","isTrue":false,"explanation":"Incorrect. \"його\" is genitive/accusative; \"йому\" is dative"},{"statement":"\"їй\" is the dative of \"вона\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"нам\" is the dative of \"ми\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"вам\" is the dative of \"ви\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"їм\" is the dative of \"вони\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мені потрібно\" means \"I need\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"мені подобається\" means \"I like\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"кому?\" means \"to whom?\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"match-up","title":"Dative Pronouns and Verbs","data":{"type":"match-up","pairs":[{"left":"мені","right":"я"},{"left":"тобі","right":"ти"},{"left":"йому","right":"він"},{"left":"їй","right":"вона"},{"left":"нам","right":"ми"},{"left":"вам","right":"ви"},{"left":"їм","right":"вони"},{"left":"кому","right":"хто"},{"left":"давати","right":"to give"},{"left":"допомагати","right":"to help"}],"shuffleRight":true}},{"id":"activity-6","type":"group-sort","title":"Dative Usage Categories","data":{"type":"group-sort","groups":[{"id":"givingshowing","name":"Giving/Showing","items":["Дай мені книгу.","Покажи їй фото.","Він дає нам подарунки."],"nameUk":"давати/показувати"},{"id":"tellingcalling","name":"Telling/Calling","items":["Скажи йому правду.","Подзвони їм ввечері.","Я кажу тобі важливе."],"nameUk":"казати/дзвонити"},{"id":"impersonal-expressions","name":"Impersonal Expressions","items":["Мені потрібно працювати.","Тобі подобається музика?","Їй холодно сьогодні.","Вам здається, що так?"],"nameUk":"потрібно/подобається"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Dative Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","даю","тобі","книгу"],"answer":"Я даю тобі книгу."},{"words":["Вона","показує","нам","фото"],"answer":"Вона показує нам фото."},{"words":["Він","каже","їй","правду"],"answer":"Він каже їй правду."},{"words":["Ми","допомагаємо","їм","вдома"],"answer":"Ми допомагаємо їм вдома."},{"words":["Подзвони","мені","завтра","вранці"],"answer":"Подзвони мені завтра вранці."},{"words":["Мені","потрібно","купити","хліб"],"answer":"Мені потрібно купити хліб."},{"words":["Тобі","подобається","ця","музика"],"answer":"Тобі подобається ця музика?"},{"words":["Скільки","їй","років","виповнилося"],"answer":"Скільки їй років виповнилося?"},{"words":["Як","вам","подобається","Київ"],"answer":"Як вам подобається Київ?"},{"words":["Йому","холодно","сьогодні","на вулиці"],"answer":"Йому холодно сьогодні на вулиці."}]}}];
-    const vocabData = [];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Prefix","data":{"type":"fill-blank","items":[{"prompt":"Він ___йшов додому о п'ятій. (arrived)","answer":"при"},{"prompt":"Вона ___йшла з кімнати. (exited)","answer":"ви"},{"prompt":"___йди до кімнати. (enter)","answer":"Увій"},{"prompt":"___йди до мене завтра. (stop by)","answer":"Зай"},{"prompt":"___йди вулицю обережно. (cross)","answer":"Перей"},{"prompt":"___йди від дверей! (move away)","answer":"Відій"},{"prompt":"___йди ближче. (approach)","answer":"Підій"},{"prompt":"___йди це дерево. (go around)","answer":"Обій"},{"prompt":"Вони ___їхали до Києва. (moved)","answer":"пере"},{"prompt":"Машина ___їхала з гаража. (drove out)","answer":"ви"},{"prompt":"___неси книгу, будь ласка. (bring)","answer":"При"},{"prompt":"Я ___ніс сміття. (carried out)","answer":"ви"}]}},{"id":"activity-1","type":"match-up","title":"Prefix Meanings","data":{"type":"match-up","pairs":[{"left":"при-","right":"arrival"},{"left":"ви-","right":"exit, out"},{"left":"у-/в-","right":"entry, in"},{"left":"за-","right":"drop by"},{"left":"пере-","right":"across"},{"left":"від-","right":"away"},{"left":"під-","right":"approach"},{"left":"об-","right":"around"},{"left":"прийти","right":"to arrive (foot)"},{"left":"вийти","right":"to exit"},{"left":"увійти","right":"to enter"},{"left":"перейти","right":"to cross"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["додому","прийшов","Він","о","п'ятій","після","довгого","дня"],"answer":"Він прийшов додому о п'ятій після довгого дня.","translation":"He arrived home at five after a long day."},{"words":["з","кімнати","Вона","вийшла","швидко","та","закрила","двері"],"answer":"Вона швидко вийшла з кімнати та закрила двері.","translation":"She quickly exited the room and closed the door."},{"words":["до","мене","Зайди","завтра","ввечері","поговорити","про","це"],"answer":"Зайди до мене завтра ввечері поговорити про це.","translation":"Stop by my place tomorrow evening to talk about this."},{"words":["вулицю","Перейди","обережно","та","дивись","на","світлофор","уважно"],"answer":"Перейди вулицю обережно та дивись на світлофор уважно.","translation":"Cross the street carefully and watch the traffic light attentively."},{"words":["від","вікна","Він","відійшов","коли","почув","дивний","шум"],"answer":"Він відійшов від вікна, коли почув дивний шум.","translation":"He walked away from the window when he heard a strange noise."},{"words":["ближче","Підійди","до","мене","щоб","я","тебе","бачив"],"answer":"Підійди ближче до мене, щоб я тебе бачив.","translation":"Come closer to me so that I can see you."},{"words":["до","Львова","переїхали","Вони","минулого","року","на","постійно"],"answer":"Вони переїхали до Львова минулого року на постійно.","translation":"They moved to Lviv last year permanently."},{"words":["Машина","в","гараж","в'їхала","повільно","та","зупинилася","там"],"answer":"Машина повільно в'їхала в гараж та там зупинилася.","translation":"The car slowly drove into the garage and stopped there."},{"words":["будь ласка","Принеси","книгу","з","полиці","що","біля","вікна"],"answer":"Принеси, будь ласка, книгу з полиці, що біля вікна.","translation":"Please bring the book from the shelf by the window."},{"words":["сміття","виніс","Я","на","вулицю","як","мама","просила"],"answer":"Я виніс сміття на вулицю, як мама просила.","translation":"I carried out the trash as mom asked."},{"words":["Поїзд","вже","відїхав","коли","ми","прибігли","на","станцію"],"answer":"Поїзд вже відїхав, коли ми прибігли на станцію.","translation":"The train already left when we ran to the station."},{"words":["о","шостій","заїду","Я","за","тобою","будь","готова"],"answer":"Я заїду за тобою о шостій, будь готова.","translation":"I'll pick you up at six, be ready."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Knowledge","data":{"type":"quiz","questions":[{"question":"\"При-\" means:","options":["Arrival","Exit","Around","Away"],"correctIndex":0,"explanation":""},{"question":"\"Вийти\" means:","options":["To exit, go out","To enter","To arrive","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Зайти\" means:","options":["To stop by","To exit","To cross","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Перейти\" means:","options":["To cross","To stop by","To exit","To enter"],"correctIndex":0,"explanation":""},{"question":"\"Під-\" expresses:","options":["Approach","Departure","Around","Entry"],"correctIndex":0,"explanation":""},{"question":"\"Переїхати\" can mean:","options":["To move (relocate)","To arrive","To exit","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"Принести\" means:","options":["To bring (carrying)","To take away","To exit","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Відійти\" means:","options":["To walk away","To approach","To enter","To arrive"],"correctIndex":0,"explanation":""},{"question":"\"Об'їхати\" means:","options":["To drive around","To drive in","To drive out","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"В'їхати\" means:","options":["To drive in","To drive out","To drive around","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Винести\" means:","options":["To carry out","To carry in","To bring","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Увійти\" means:","options":["To enter","To exit","To arrive","To cross"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Prefix Facts","data":{"type":"true-false","statements":[{"statement":"\"При-\" indicates arrival.","isTrue":true,"explanation":""},{"statement":"\"Ви-\" means \"into.\"","isTrue":false,"explanation":""},{"statement":"\"Зайти\" means \"to stop by briefly.\"","isTrue":true,"explanation":""},{"statement":"\"Перейти\" means \"to exit.\"","isTrue":false,"explanation":""},{"statement":"\"Під-\" means \"away.\"","isTrue":false,"explanation":""},{"statement":"\"Переїхати\" can mean \"to relocate.\"","isTrue":true,"explanation":""},{"statement":"Prefixes change verb meaning significantly.","isTrue":true,"explanation":""},{"statement":"\"Обійти\" means \"to enter.\"","isTrue":false,"explanation":""},{"statement":"\"В'їхати\" uses an apostrophe.","isTrue":true,"explanation":""},{"statement":"\"Від-\" indicates departure.","isTrue":true,"explanation":""},{"statement":"\"Увійти\" and \"в'їхати\" have same prefix.","isTrue":true,"explanation":""},{"statement":"Motion verb prefixes only work with \"йти.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Prefix Categories","data":{"type":"group-sort","groups":[{"id":"arrivalentry","name":"Arrival/Entry","items":["при-","у-/в-","під-","прийти","увійти"]},{"id":"exitaway","name":"Exit/Away","items":["ви-","від-","вийти"]},{"id":"movement-type","name":"Movement Type","items":["пере-","об-","перейти"]},{"id":"other-direction","name":"Other Direction","items":["за-"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"Він ___ до кімнати і закрив двері. (entered)","answer":"увійшов"},{"prompt":"Вона ___ з дому о восьмій ранку. (exited)","answer":"вийшла"},{"prompt":"Ми ___ до Львова минулого літа. (moved)","answer":"переїхали"},{"prompt":"___ до мене завтра ввечері. (stop by)","answer":"Зайди"},{"prompt":"Поїзд уже ___ зі станції. (departed)","answer":"відїхав"},{"prompt":"Таксі ___ до готелю о п'ятій. (drove up)","answer":"під'їхало"},{"prompt":"Я ___ книгу з бібліотеки. (brought)","answer":"приніс"},{"prompt":"Вони ___ пробку на дорозі. (drove around)","answer":"об'їхали"},{"prompt":"___ вулицю на зеленому світлі. (cross)","answer":"Перейди"},{"prompt":"Він ___ від вікна, коли почув шум. (walked away)","answer":"відійшов"},{"prompt":"Ми ___ сміття на вулицю. (carried out)","answer":"винесли"},{"prompt":"Автобус ___ до зупинки. (approached)","answer":"під'їхав"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Verb","data":{"type":"select","items":[{"question":"Він ___ додому о шостій вечора.","options":[{"text":"вийшов","correct":false},{"text":"прийшов","correct":true},{"text":"відійшов","correct":false},{"text":"перейшов","correct":false}]},{"question":"Вона ___ з кімнати швидко.","options":[{"text":"вийшла","correct":true},{"text":"прийшла","correct":false},{"text":"увійшла","correct":false},{"text":"зайшла","correct":false}]},{"question":"Ми ___ до нової квартири.","options":[{"text":"вийшли","correct":false},{"text":"зайшли","correct":false},{"text":"переїхали","correct":true},{"text":"відійшли","correct":false}]},{"question":"___ до магазину по хліб.","options":[{"text":"Вийди","correct":false},{"text":"Зайди","correct":true},{"text":"Перейди","correct":false},{"text":"Відійди","correct":false}]},{"question":"Машина ___ в гараж повільно.","options":[{"text":"виїхала","correct":false},{"text":"в'їхала","correct":true},{"text":"об'їхала","correct":false},{"text":"переїхала","correct":false}]},{"question":"Він ___ від дверей і сів на стілець.","options":[{"text":"відійшов","correct":true},{"text":"підійшов","correct":false},{"text":"увійшов","correct":false},{"text":"обійшов","correct":false}]},{"question":"___ ближче, я тебе не чую.","options":[{"text":"Відійди","correct":false},{"text":"Підійди","correct":true},{"text":"Перейди","correct":false},{"text":"Обійди","correct":false}]},{"question":"Ми ___ це дерево і пішли далі.","options":[{"text":"перейшли","correct":false},{"text":"зайшли","correct":false},{"text":"обійшли","correct":true},{"text":"відійшли","correct":false}]},{"question":"Поїзд ___ о десятій ранку.","options":[{"text":"приїхав","correct":false},{"text":"виїхав","correct":true},{"text":"під'їхав","correct":false},{"text":"заїхав","correct":false}]},{"question":"Вона ___ воду з кухні.","options":[{"text":"принесла","correct":true},{"text":"винесла","correct":false},{"text":"занесла","correct":false},{"text":"перенесла","correct":false}]},{"question":"Я ___ за тобою о п'ятій.","options":[{"text":"приїду","correct":false},{"text":"виїду","correct":false},{"text":"заїду","correct":true},{"text":"переїду","correct":false}]},{"question":"___ вулицю обережно.","options":[{"text":"Перейди","correct":true},{"text":"Обійди","correct":false},{"text":"Відійди","correct":false},{"text":"Підійди","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Prefix Understanding","data":{"type":"quiz","questions":[{"question":"Which prefix means \"arrival\"?","options":["при-","ви-","від-","об-"],"correctIndex":0,"explanation":""},{"question":"\"Він переїхав до Києва\" means:","options":["He moved to Kyiv","He exited Kyiv","He stopped by Kyiv","He drove around Kyiv"],"correctIndex":0,"explanation":""},{"question":"What is the difference between \"прийти\" and \"приїхати\"?","options":["Прийти is on foot, приїхати is by vehicle","Прийти is formal, приїхати is informal","Прийти is perfective, приїхати is imperfective","There is no difference"],"correctIndex":0,"explanation":""},{"question":"\"Зайди до магазину\" means:","options":["Stop by the store","Exit the store","Cross the store","Enter the store and stay"],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to carry out\"?","options":["винести","принести","занести","перенести"],"correctIndex":0,"explanation":""},{"question":"\"Під'їхати\" means:","options":["To drive up, approach","To drive away","To drive around","To drive out"],"correctIndex":0,"explanation":""},{"question":"\"Обійти\" is used when you:","options":["Go around something","Enter something","Exit something","Cross something"],"correctIndex":0,"explanation":""},{"question":"What happens to \"їхати\" with prefix \"в-\"?","options":["It becomes \"в'їхати\" with apostrophe","It becomes \"віхати\"","It stays \"їхати\"","It becomes \"уїхати\""],"correctIndex":0,"explanation":""},{"question":"\"Відійди від вогню\" means:","options":["Walk away from the fire","Walk toward the fire","Walk around the fire","Walk into the fire"],"correctIndex":0,"explanation":""},{"question":"\"Перенести зустріч\" means:","options":["To reschedule/move a meeting","To cancel a meeting","To attend a meeting","To exit a meeting"],"correctIndex":0,"explanation":""},{"question":"Which prefix pair indicates entry?","options":["у-/в-","ви-/від-","при-/під-","за-/пере-"],"correctIndex":0,"explanation":""},{"question":"\"Ми об'їхали пробку\" means:","options":["We drove around the traffic jam","We drove into the traffic jam","We drove out of the traffic jam","We drove through the traffic jam"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"прийти","translit":"","en":"to come, arrive","note":"pf"},{"uk":"вийти","translit":"","en":"to exit, go out","note":"pf"},{"uk":"увійти","translit":"","en":"to enter","note":"pf"},{"uk":"зайти","translit":"","en":"to stop by","note":"pf"},{"uk":"перейти","translit":"","en":"to cross","note":"pf"},{"uk":"відійти","translit":"","en":"to walk away","note":"pf"},{"uk":"підійти","translit":"","en":"to approach","note":"pf"},{"uk":"обійти","translit":"","en":"to go around","note":"pf"},{"uk":"приїхати","translit":"","en":"to arrive (vehicle)","note":"pf"},{"uk":"виїхати","translit":"","en":"to depart","note":"pf"},{"uk":"в'їхати","translit":"","en":"to drive in","note":"pf"},{"uk":"заїхати","translit":"","en":"to stop by (vehicle)","note":"pf"},{"uk":"переїхати","translit":"","en":"to move, relocate","note":"pf"},{"uk":"принести","translit":"","en":"to bring","note":"pf"},{"uk":"винести","translit":"","en":"to carry out","note":"pf"},{"uk":"занести","translit":"","en":"to drop off","note":"pf"},{"uk":"перенести","translit":"","en":"to carry across, postpone","note":"pf"},{"uk":"привезти","translit":"","en":"to bring (by vehicle)","note":"pf"},{"uk":"вивезти","translit":"","en":"to take out","note":"pf"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1329,8 +1059,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1361,8 +1091,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1774,7 +1504,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1784,7 +1514,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1985,6 +1717,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

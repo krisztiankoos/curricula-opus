@@ -11,190 +11,167 @@
     "targetLevel": "A2",
     "phase": "A2.1",
     "moduleNumber": 7,
-    "moduleType": "grammar",
+    "moduleType": "checkpoint",
     "immersionLevel": 0.4,
     "title": "Preposition Master Class",
-    "subtitle": "Prepositions + Cases",
-    "description": "Master preposition + case combinations",
+    "subtitle": "Every Preposition, Every Case",
+    "description": "Review all prepositions with their required cases",
     "objectives": [
+      "Review all prepositions with their required cases",
       "Master preposition + case combinations",
-      "Distinguish motion vs location prepositions",
-      "Use spatial prepositions correctly",
-      "Handle prepositions with multiple case options"
+      "Avoid common preposition mistakes"
     ],
     "grammarFocus": [
-      "Preposition → case mapping",
-      "Motion vs location distinction",
-      "Spatial preposition system"
+      "Prepositions by case",
+      "Direction vs location patterns",
+      "Common preposition phrases"
     ],
     "tags": [
+      "grammar",
       "prepositions",
       "cases",
-      "location",
-      "movement",
-      "spatial"
+      "review"
     ],
     "totalDuration": 45,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "sections": [
       {
         "id": "section-intro",
         "name": "Вступ",
         "nameEn": "Introduction",
         "type": "intro",
-        "content": "## warm-up\n\n### The Preposition Puzzle\n\nYou've learned all 7 cases. Now the challenge: **which preposition takes which case?**\n\nIn English, \"in\" always means \"in.\" In Ukrainian, the CASE changes the meaning:\n- у кімнат**і** (in the room - locative, location)\n- у кімнат**у** (into the room - accusative, motion)\n\nSame preposition, different cases, different meanings!\n\n> 💡 **Did You Know?**\n>\n> Ukrainian prepositions are \"case governors\" - they demand specific cases from the nouns that follow. Some prepositions take only one case; others can take two or three, with the case determining the meaning. Master this, and you've mastered a key part of Ukrainian grammar!\n\n## presentation\n\n### The Big Picture: Preposition → Case Map\n\n| Preposition | Case(s) | Meaning |\n|-------------|---------|---------|\n| у/в | Loc / Acc | in / into |\n| на | Loc / Acc | on / onto |\n| з | Gen / Instr | from / with |\n| до | Gen | to, until |\n| від | Gen | from |\n| для | Gen | for |\n| без | Gen | without |\n| після | Gen | after |\n| під | Acc / Instr | under (motion/location) |\n| над | Instr | above |\n| перед | Instr | in front of |\n| за | Acc / Instr | behind/for |\n| між | Instr | between |\n| біля | Gen | near, by |\n\n> ⚡ **Pro Tip: Memory Groups**\n>\n> Group prepositions by case:\n> - **Genitive lovers:** до, від, для, без, після, біля, з (from)\n> - **Instrumental friends:** з (with), над, перед, між\n> - **Two-case players:** у/в, на, під, за (motion vs location)\n\n### Location vs Motion: The Key Distinction\n\n**у/в (in/into) and на (on/onto):**\n\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Location (where?) | Locative | у кімнаті | in the room |\n| Motion (where to?) | Accusative | у кімнату | into the room |\n| Location (where?) | Locative | на столі | on the table |\n| Motion (where to?) | Accusative | на стіл | onto the table |\n\n**Key questions:**\n- **Де?** (Where?) → Locative\n- **Куди?** (Where to?) → Accusative\n\n**Examples:**\n- Де ти? - Я **у парку**. (Where? - In the park. - locative)\n- Куди ти йдеш? - Я йду **у парк**. (Where to? - To the park. - accusative)\n\n> 📜 **History Bite: Motion vs Rest**\n>\n> This location/motion distinction goes back to Proto-Indo-European! Latin had it (in + ablative vs in + accusative), German still has it (in dem Zimmer vs in das Zimmer). Ukrainian preserves this ancient pattern perfectly.\n\n### Genitive Prepositions\n\nThese ALWAYS take genitive:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| до | to, until | до Києва, до вечора |\n| від | from | від брата, від ранку |\n| для | for | для мами, для роботи |\n| без | without | без води, без тебе |\n| після | after | після обіду, після уроку |\n| біля | near | біля дому, біля мене |\n| коло | near | коло парку |\n| замість | instead of | замість кави |\n| окрім | except | окрім нього |\n| серед | among | серед друзів |\n| через | through, because | через місто, через хворобу |\n\n**Examples:**\n- Я їду **до Києва**. - I'm going to Kyiv.\n- Ми зустрінемося **після роботи**. - We'll meet after work.\n- Я не можу **без тебе**. - I can't (live) without you.\n- Вона стоїть **біля вікна**. - She's standing by the window.\n\n> 🎭 **Culture Corner: через**\n>\n> The preposition через has two meanings:\n> - Physical: **через** місто (through the city)\n> - Causal: **через** хворобу (because of illness)\n>\n> Context makes it clear!\n\n### Instrumental Prepositions\n\nThese ALWAYS take instrumental:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| з | with | з другом, з молоком |\n| над | above | над столом, над містом |\n| під (location) | under | під столом |\n| перед | in front of | перед домом |\n| за (location) | behind | за будинком |\n| між | between | між нами |\n| поруч з | next to | поруч зі мною |\n\n**Examples:**\n- Я йду **з другом**. - I'm going with a friend.\n- Лампа висить **над столом**. - The lamp hangs above the table.\n- Кіт сидить **під столом**. - The cat sits under the table.\n- Машина стоїть **перед будинком**. - The car is in front of the house.\n- Це таємниця **між нами**. - This is a secret between us.\n\n> ⚡ **Pro Tip: з + Genitive vs з + Instrumental**\n>\n> - **з + Genitive** = from (origin): Я з України. (I'm from Ukraine.)\n> - **з + Instrumental** = with (accompaniment): Я з другом. (I'm with a friend.)\n>\n> Same word, different cases, opposite meanings!\n\n### Two-Case Prepositions: Motion vs Location\n\n**під (under):**\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Motion | Accusative | під стіл | under the table (moving) |\n| Location | Instrumental | під столом | under the table (staying) |\n\n**за (behind/for):**\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Motion | Accusative | за будинок | behind the house (moving) |\n| Location | Instrumental | за будинком | behind the house (staying) |\n| Purpose | Accusative | за молоком | for milk (going to get) |\n\n**над (above) - almost always instrumental:**\n- над столом (above the table)\n- над морем (above the sea)\n\n**Examples:**\n- Кіт забіг **під стіл**. (Acc) - The cat ran under the table.\n- Кіт сидить **під столом**. (Instr) - The cat sits under the table.\n- Сонце сідає **за гору**. (Acc) - The sun sets behind the mountain.\n- Сонце **за горою**. (Instr) - The sun is behind the mountain.\n\n### Prepositions of Relative Position\n\n| Preposition | Case | Meaning | Example |\n|-------------|------|---------|---------|\n| біля | Gen | near, by | біля дому |\n| поруч з | Instr | next to | поруч з банком |\n| навпроти | Gen | opposite | навпроти школи |\n| посеред | Gen | in the middle of | посеред кімнати |\n| вздовж | Gen | along | вздовж вулиці |\n| навколо | Gen | around | навколо міста |\n| позаду | Gen | behind | позаду будинку |\n| попереду | Gen | in front, ahead | попереду нас |\n\n**Examples:**\n- Аптека **біля** банку. - The pharmacy is near the bank.\n- Зупинка **навпроти** школи. - The bus stop is opposite the school.\n- Ми гуляли **вздовж** річки. - We walked along the river.\n- Дерева ростуть **навколо** озера. - Trees grow around the lake.\n\n> 💡 **Did You Know?**\n>\n> Many of these are compound words: на + впроти (opposite to), по + серед (through the middle), на + вколо (around). Understanding the components helps you remember meanings!\n\n### Common Mistakes to Avoid\n\n| Wrong | Right | Why |\n|-------|-------|-----|\n| ❌ Я йду до парк. | ✓ Я йду до парку. | до + genitive |\n| ❌ Він біля стіл. | ✓ Він біля столу. | біля + genitive |\n| ❌ Ми з друг. | ✓ Ми з другом. | з (with) + instrumental |\n| ❌ Після урок. | ✓ Після уроку. | після + genitive |\n| ❌ Я у Київ. | ✓ Я у Києві. / Я їду у Київ. | location (loc) vs motion (acc) |\n\n## practice\n\n### Choose the Correct Case\n\nSelect the right form:\n\n1. Я йду до ___ (магазин).\n   > [!answer] магазину (gen)\n2. Вона біля ___ (вікно).\n   > [!answer] вікна (gen)\n3. Ми з ___ (друзі).\n   > [!answer] друзями (instr)\n4. Кіт під ___ (стіл - location).\n   > [!answer] столом (instr)\n5. Він за ___ (будинок - motion).\n   > [!answer] будинок (acc)\n6. Після ___ (урок).\n   > [!answer] уроку (gen)\n\n### Location or Motion?\n\nChoose the correct form:\n\n1. Книга лежить ___ (стіл).\n   > [!answer] на столі (loc - location)\n2. Я кладу книгу ___ (стіл).\n   > [!answer] на стіл (acc - motion)\n3. Він ___ (кімната).\n   > [!answer] у кімнаті (loc - location)\n4. Він входить ___ (кімната).\n   > [!answer] у кімнату (acc - motion)\n5. Собака ___ (ліжко).\n   > [!answer] під ліжком (instr - location)\n6. Собака забіг ___ (ліжко).\n   > [!answer] під ліжко (acc - motion)\n\n### Build Sentences\n\nUse the correct preposition + case:\n\n1. near / house\n   > [!answer] біля дому\n2. after / work\n   > [!answer] після роботи\n3. with / friend\n   > [!answer] з другом\n4. to / Kyiv\n   > [!answer] до Києва\n5. between / us\n   > [!answer] між нами\n6. above / table\n   > [!answer] над столом\n\n## production\n\n### Real Situations\n\n**Scenario 1: Giving directions**\n- Як дійти до метро?\n- Ідіть прямо, потім поверніть біля банку.\n- Метро буде навпроти парку?\n- Так, між супермаркетом і кафе.\n\n**Scenario 2: Describing location**\n- Де мої ключі?\n- Подивися на столі або під журналом.\n- Знайшов! Вони були за диваном.\n- Як вони туди потрапили?\n\n**Scenario 3: Making plans**\n- Зустрінемося після роботи?\n- Добре. Біля твого офісу?\n- Ні, краще навпроти станції метро.\n- До шостої буду там!\n\n---\n\n---\n\n---\n\n---\n\n\n---\n\n\n---"
+        "content": "Prepositions are the hidden architects of Ukrainian sentences. Each one is a gatekeeper that demands a specific case from the noun that follows — get it wrong, and native speakers will notice immediately. Get it right, and your Ukrainian will flow naturally.\n\nThis module is your master reference — a comprehensive guide to every major preposition organized by the case it requires. Think of it as your Ukrainian GPS: knowing which preposition takes which case will guide you through any sentence.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian has about 200 prepositions, but only about 20 are used constantly in everyday speech. Master these core 20, and you'll handle 95% of real-world situations. Today's module covers exactly these essential gatekeepers!\n\n---"
+      },
+      {
+        "id": "section-genitive-case-prepositions-род",
+        "name": "Genitive Case Prepositions (Родовий)",
+        "type": "content",
+        "content": "The genitive is the \"relationship\" case — and its prepositions often express origin, possession, or absence:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **без** | without | без цукру (without sugar) |\n| **з/із** | from, out of | з України (from Ukraine) |\n| **до** | to, until, before | до магазину (to the store) |\n| **від** | from (a person/source) | від брата (from brother) |\n| **для** | for (purpose) | для мами (for mom) |\n| **після** | after | після роботи (after work) |\n| **біля** | near, beside | біля дому (near home) |\n| **коло** | near, around | коло мене (near me) |\n| **замість** | instead of | замість кави (instead of coffee) |\n| **окрім** | except, besides | окрім мене (except me) |\n| **посеред** | in the middle of | посеред кімнати (in the middle of the room) |\n\n> ⚡ **Pro Tip: The \"Without\" Pattern**\n>\n> When ordering food, *без* is your best friend:\n> - *Кава без цукру* (Coffee without sugar)\n> - *Салат без цибулі* (Salad without onion)\n> - *Піца без грибів* (Pizza without mushrooms)\n\n**🎭 У кав'ярні (At the Coffee Shop)**\n\n— Добрий день! Що бажаєте?\n— Каву, будь ласка. **Без** цукру.\n— А молоко?\n— Так, **з** молоком. І ще тістечко **для** подруги.\n— Добре. Ви будете тут чи **до** дому?\n— Тут, дякую. Ми сядемо **біля** вікна.\n\n> 📜 **History Bite: До vs. К**\n>\n> In Old Ukrainian and some dialects, **к** (like Russian \"к\") was used for \"to.\" Modern Ukrainian strongly prefers **до** — it's one of the features that distinguishes Ukrainian from Russian. When you use *до магазину* instead of \"к магазину,\" you're speaking authentic Ukrainian!\n\n---"
+      },
+      {
+        "id": "section-dative-case-prepositions-давал",
+        "name": "Dative Case Prepositions (Давальний)",
+        "type": "content",
+        "content": "The dative has few prepositions, but they're important:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **завдяки** | thanks to | завдяки тобі (thanks to you) |\n| **всупереч** | despite, contrary to | всупереч правилам (despite the rules) |\n| **назустріч** | towards (meeting) | назустріч другу (towards the friend) |\n| **напроти/навпроти** | opposite | напроти банку (opposite the bank) |\n\n> 🌍 **Real World: Expressing Gratitude**\n>\n> *Завдяки тобі* is a powerful expression. It's more emphatic than just \"дякую\" — it means \"because of you, this happened.\" Politicians use it in speeches (*завдяки нашому народу*), lovers use it in declarations (*завдяки тобі я щасливий*), and athletes use it in victory speeches (*завдяки моїй команді*).\n\n**🎭 Після перемоги (After the Victory)**\n\n— Ми виграли!\n— Так! **Завдяки** тобі! Твій гол був неймовірний!\n— Ні, **завдяки** всій команді. І **всупереч** усім прогнозам!\n— Усі казали, що ми програємо...\n— А ми пішли **назустріч** мрії!\n\n---"
+      },
+      {
+        "id": "section-accusative-case-prepositions-з",
+        "name": "Accusative Case Prepositions (Знахідний)",
+        "type": "content",
+        "content": "The accusative is the \"action direction\" case — its prepositions often express movement or the object of attention:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **в/у** | into (direction) | в магазин (into the store) |\n| **на** | onto (direction) | на роботу (to work) |\n| **за** | for (purpose), behind | за мир (for peace), за стіл (to the table) |\n| **через** | through, across, because of | через місто (through city) |\n| **про** | about | про тебе (about you) |\n| **крізь** | through (physically) | крізь вікно (through the window) |\n| **понад** | over, more than | понад сто (over a hundred) |\n\n> 💡 **Did You Know?**\n>\n> **Через** has two meanings that confuse learners:\n> - *physical*: through a place — *Ми йдемо через парк* (We're going through the park)\n> - *causal*: because of — *Через дощ ми залишилися вдома* (Because of rain we stayed home)\n>\n> Context always clarifies which meaning applies!\n\n**🎭 Розмова про плани (Talking About Plans)**\n\n— **Про** що ти думаєш?\n— **Про** відпустку. Хочу поїхати **на** море.\n— **Через** місяць?\n— Ні, **за** два тижні! Поїдемо **через** Львів.\n— О, можемо зайти **в** ту кав'ярню **на** площі!\n— Точно! Я завжди думаю **про** їхній десерт...\n\n> 🎬 **Pop Culture Moment: \"Про тебе\"**\n>\n> One of Ukraine's most famous pop songs is \"Я думаю про тебе\" (I'm thinking about you). The phrase *про тебе* appears in countless Ukrainian songs, poems, and love letters — it's the quintessential expression of romantic thought!\n\n---"
+      },
+      {
+        "id": "section-instrumental-case-prepositions",
+        "name": "Instrumental Case Prepositions (Орудний)",
+        "type": "content",
+        "content": "The instrumental is the \"relationship and location\" case — its prepositions express accompaniment, position, and comparison:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **з/із** | with | з братом (with brother) |\n| **за** | behind (location) | за столом (behind the table) |\n| **під** | under (location) | під столом (under the table) |\n| **над** | above (location) | над містом (above the city) |\n| **перед** | in front of, before | перед домом (in front of house) |\n| **між** | between | між нами (between us) |\n| **поруч з** | next to | поруч з банком (next to bank) |\n| **порівняно з** | compared with | порівняно з учора (compared with yesterday) |\n\n> 🎭 **Culture Corner: Між нами**\n>\n> The phrase *між нами* (between us) is how Ukrainians start sharing secrets. It's the equivalent of \"just between you and me\" — a signal that what follows is confidential. *Між нами кажучи...* (Speaking between us...) is even more intimate.\n\n**🎭 Секрет (A Secret)**\n\n— Можу сказати тобі щось **між нами**?\n— Звичайно! Сядь **поруч зі** мною.\n— Бачиш того чоловіка **за** столом?\n— Того, що сидить **перед** вікном?\n— Так! Він — мій новий бос!\n— Справді? І він сидить **між** тими людьми?\n— Так. Тільки **між нами** — він дуже суворий...\n\n---"
+      },
+      {
+        "id": "section-locative-case-prepositions-міс",
+        "name": "Locative Case Prepositions (Місцевий)",
+        "type": "content",
+        "content": "The locative (also called prepositional) case ONLY appears with prepositions — that's its superpower:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **в/у** | in (location) | в магазині (in the store) |\n| **на** | on, at (location) | на роботі (at work) |\n| **по** | on, along, after | по телефону (on the phone) |\n| **при** | at, by, near | при вході (at the entrance) |\n\n> 💡 **Did You Know?**\n>\n> **По** is tricky — it takes LOCATIVE for most meanings (*по телефону*, *по дорозі*), but there's also *по* with ACCUSATIVE for distribution (*по яблуку кожному* = an apple to each). Most commonly, you'll use it with locative.\n\n---"
+      },
+      {
+        "id": "section-the-great-direction-vs-locatio",
+        "name": "The Great Direction vs. Location Split",
+        "type": "content",
+        "content": "This is perhaps the most important pattern in Ukrainian prepositions. The SAME preposition can take different cases depending on whether you're expressing movement (direction) or position (location):\n\n| Direction (Куди?) | Location (Де?) |\n|------------------------|----------------------------------|\n| Я йду **в магазин** (Acc). | Я **в магазині** (Loc). |\n| Він іде **на роботу** (Acc). | Він **на роботі** (Loc). |\n| Поклади **під стіл** (Acc). | Лежить **під столом** (Inst). |\n| Сядь **за стіл** (Acc). | Він сидить **за столом** (Inst). |\n| Повісь **над столом** (Inst). | Висить **над столом** (Inst). |\n\n> ⚡ **Pro Tip: над and під**\n>\n> Unlike в/на, the prepositions **над** (above) and **під** (under) now primarily use **Instrumental** for both direction AND location in modern Ukrainian. You may see Accusative in older texts or literary language, but for everyday speech, stick with Instrumental!\n\n> ⚡ **Pro Tip: The Two Questions**\n>\n> - **Куди?** (Where to?) → Accusative (direction)\n> - **Де?** (Where?) → Locative/Instrumental (location)\n>\n> Ask yourself which question the preposition phrase answers, and you'll always know the right case!\n\n**🎭 Де кіт? (Where's the Cat?)**\n\n— Де кіт?\n— Не знаю... Може, **під столом**?\n— Ні, його там немає.\n— А **за диваном**? Він любить ховатися **за диваном**.\n— Ні...\n— О! Дивись! Він біжить **під ліжко**!\n— А тепер сидить **під ліжком** і дивиться на нас...\n\n---"
+      },
+      {
+        "id": "section-з-із-the-chameleon-preposition",
+        "name": "З/Із — The Chameleon Preposition",
+        "type": "content",
+        "content": "**З** is unique — it completely changes meaning based on the case it takes:\n\n| Case | Meaning | Example |\n|------|---------|---------|\n| **Genitive** | from (origin) | **з** України (from Ukraine) |\n| **Instrumental** | with (accompaniment) | **з** братом (with brother) |\n\n> 🌍 **Real World: \"Звідки ви?\"**\n>\n> When Ukrainians ask *Звідки ви?* (Where are you from?), your answer uses **з + genitive**:\n> - *Я з Києва* (I'm from Kyiv)\n> - *Я з Канади* (I'm from Canada)\n> - *Я з маленького села* (I'm from a small village)\n\n**When to use \"із\" vs \"з\":**\n- Use **із** before words starting with з, с, ш, щ: *із сестрою*, *із Закарпаття*\n- Use **зі** before мн, лл, and some consonant clusters: *зі мною*, *зі Львова*\n- Otherwise, **з** works everywhere: *з братом*, *з України*\n\n---"
+      },
+      {
+        "id": "section-на-vs-в-у-the-big-choice",
+        "name": "На vs. В/У — The Big Choice",
+        "type": "content",
+        "content": "This distinction confuses even advanced learners. Here's the pattern:\n\n| Use **на** | Use **в/у** |\n|------------|-------------|\n| на Україні (in Ukraine) | в Італії (in Italy) |\n| на роботі (at work) | в офісі (in the office) |\n| на вокзалі (at the station) | в аеропорту (in the airport) |\n| на вулиці (on the street) | в магазині (in the store) |\n| на пошті (at the post office) | в банку (in the bank) |\n| на заводі (at the factory) | в ресторані (in the restaurant) |\n| на кухні (in the kitchen) | в кімнаті (in the room) |\n| на концерті (at the concert) | в театрі (in the theater) |\n\n> 📜 **History Bite: На Україні vs. В Україні**\n>\n> This is a sensitive topic. Historically, *на Україні* was used when Ukraine was a region within an empire. Since independence, many Ukrainians prefer *в Україні* to emphasize Ukraine's status as an independent country, not a borderland (*край*). Both forms exist in modern usage, but *в Україні* is increasingly preferred in official contexts. As a learner, be aware of both — and follow the preference of native speakers you interact with.\n\n**General rule of thumb:**\n- **На** = open spaces, surfaces, events, and some traditional locations\n- **В/у** = enclosed spaces, buildings, and most countries\n\n---"
+      },
+      {
+        "id": "section-common-preposition-phrases",
+        "name": "Common Preposition Phrases",
+        "type": "content",
+        "content": "These fixed expressions are essential for fluent Ukrainian:\n\n| Ukrainian | Literal | English Meaning |\n|-----------|---------|-----------------|\n| без сумніву | without doubt | undoubtedly |\n| до побачення | to seeing | goodbye |\n| до речі | to the matter | by the way |\n| після обіду | after lunch | in the afternoon |\n| перед сном | before sleep | before bedtime |\n| під час | under time | during |\n| на жаль | on pity | unfortunately |\n| за кордоном | behind the border | abroad |\n| між іншим | between other | by the way |\n| ні за що | not for anything | you're welcome / no way |\n| на мою думку | on my thought | in my opinion |\n| без перебільшення | without exaggeration | no exaggeration |\n\n> 🎬 **Pop Culture Moment: \"За кордоном\"**\n>\n> The phrase *за кордоном* (abroad, literally \"behind the border\") became hugely significant after 2022 when millions of Ukrainians found themselves living *за кордоном*. It appears in countless songs, poems, and social media posts about the diaspora experience.\n\n---"
+      },
+      {
+        "id": "section-practice",
+        "name": "Практика",
+        "nameEn": "Practice",
+        "type": "practice",
+        "content": "Read these sentences aloud, paying attention to preposition + case combinations:\n\n1. Я йду **до** магазину. (I'm going to the store.)\n2. Кава **без** цукру, будь ласка. (Coffee without sugar, please.)\n3. Він живе **біля** парку. (He lives near the park.)\n4. Ми говоримо **про** тебе. (We're talking about you.)\n5. Книга лежить **на** столі. (The book is on the table.)\n6. Вона сидить **між** батьками. (She sits between her parents.)\n7. **Завдяки** тобі ми перемогли! (Thanks to you, we won!)\n8. Кіт сховався **під** ліжком. (The cat hid under the bed.)\n9. Я **з** України, **з** Харкова. (I'm from Ukraine, from Kharkiv.)\n10. Поїдемо **через** Львів. (We'll go through Lviv.)\n\n---\n\n\n---\n\n\n---"
       },
       {
         "id": "section-summary",
         "name": "Підсумок",
         "nameEn": "Summary",
         "type": "summary",
-        "content": "## Preposition → Case Quick Reference\n\n| Case | Prepositions |\n|------|--------------|\n| Genitive | до, від, для, без, після, біля, з (from), коло, замість, окрім, серед, через, навпроти, вздовж, навколо |\n| Instrumental | з (with), над, перед, між, поруч з |\n| Accusative | у/в (motion), на (motion), під (motion), за (motion) |\n| Locative | у/в (location), на (location) |\n| Acc/Instr | під, за (motion = acc, location = instr) |\n\n## Motion vs Location\n\n| Question | Case | Example |\n|----------|------|---------|\n| Де? (Where?) | Locative | у кімнаті |\n| Куди? (Where to?) | Accusative | у кімнату |\n\n## Key Patterns\n\n| Pattern | Example |\n|---------|---------|\n| до + gen | до Києва |\n| біля + gen | біля дому |\n| з + instr | з другом |\n| над + instr | над столом |\n| між + instr | між нами |\n\n> 💡 **Key Takeaways**\n>\n> - Genitive prepositions: до, від, для, без, після, біля\n> - Instrumental prepositions: з (with), над, перед, між\n> - Location (де?) uses locative; motion (куди?) uses accusative\n> - під/за: motion = accusative, location = instrumental\n> - з + genitive = from; з + instrumental = with"
+        "content": "You've now mastered the Ukrainian preposition system! Here's your quick reference:\n\n**Genitive (Родовий):**\n- без, до, від, для, після, біля, замість, окрім\n\n**Dative (Давальний):**\n- завдяки, всупереч, назустріч\n\n**Accusative (Знахідний):**\n- в/у (direction), на (direction), про, через, під (direction), над (direction)\n\n**Instrumental (Орудний):**\n- з (with), перед, між, над (location), під (location), за (location), поруч з\n\n**Locative (Місцевий):**\n- в/у (location), на (location), по, при\n\n**Key Patterns:**\n- Direction (Куди?) → Accusative\n- Location (Де?) → Locative or Instrumental\n- \"З\" changes meaning by case: genitive (from) vs. instrumental (with)\n\n**Coming up next**: All Cases Practice — put all seven cases together in comprehensive exercises!"
       }
     ],
-    "rawMarkdown": "---\ntitle: \"Preposition Master Class\"\nsubtitle: \"Prepositions + Cases\"\nphase: A2.1\nduration: 45\ntransliteration: partial\ntags: [prepositions, cases, location, movement, spatial]\nobjectives:\n  - Master preposition + case combinations\n  - Distinguish motion vs location prepositions\n  - Use spatial prepositions correctly\n  - Handle prepositions with multiple case options\ngrammar:\n  - Preposition → case mapping\n  - Motion vs location distinction\n  - Spatial preposition system\n---\n\n# Lesson Content\n\n## warm-up\n\n### The Preposition Puzzle\n\nYou've learned all 7 cases. Now the challenge: **which preposition takes which case?**\n\nIn English, \"in\" always means \"in.\" In Ukrainian, the CASE changes the meaning:\n- у кімнат**і** (in the room - locative, location)\n- у кімнат**у** (into the room - accusative, motion)\n\nSame preposition, different cases, different meanings!\n\n> 💡 **Did You Know?**\n>\n> Ukrainian prepositions are \"case governors\" - they demand specific cases from the nouns that follow. Some prepositions take only one case; others can take two or three, with the case determining the meaning. Master this, and you've mastered a key part of Ukrainian grammar!\n\n## presentation\n\n### The Big Picture: Preposition → Case Map\n\n| Preposition | Case(s) | Meaning |\n|-------------|---------|---------|\n| у/в | Loc / Acc | in / into |\n| на | Loc / Acc | on / onto |\n| з | Gen / Instr | from / with |\n| до | Gen | to, until |\n| від | Gen | from |\n| для | Gen | for |\n| без | Gen | without |\n| після | Gen | after |\n| під | Acc / Instr | under (motion/location) |\n| над | Instr | above |\n| перед | Instr | in front of |\n| за | Acc / Instr | behind/for |\n| між | Instr | between |\n| біля | Gen | near, by |\n\n> ⚡ **Pro Tip: Memory Groups**\n>\n> Group prepositions by case:\n> - **Genitive lovers:** до, від, для, без, після, біля, з (from)\n> - **Instrumental friends:** з (with), над, перед, між\n> - **Two-case players:** у/в, на, під, за (motion vs location)\n\n### Location vs Motion: The Key Distinction\n\n**у/в (in/into) and на (on/onto):**\n\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Location (where?) | Locative | у кімнаті | in the room |\n| Motion (where to?) | Accusative | у кімнату | into the room |\n| Location (where?) | Locative | на столі | on the table |\n| Motion (where to?) | Accusative | на стіл | onto the table |\n\n**Key questions:**\n- **Де?** (Where?) → Locative\n- **Куди?** (Where to?) → Accusative\n\n**Examples:**\n- Де ти? - Я **у парку**. (Where? - In the park. - locative)\n- Куди ти йдеш? - Я йду **у парк**. (Where to? - To the park. - accusative)\n\n> 📜 **History Bite: Motion vs Rest**\n>\n> This location/motion distinction goes back to Proto-Indo-European! Latin had it (in + ablative vs in + accusative), German still has it (in dem Zimmer vs in das Zimmer). Ukrainian preserves this ancient pattern perfectly.\n\n### Genitive Prepositions\n\nThese ALWAYS take genitive:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| до | to, until | до Києва, до вечора |\n| від | from | від брата, від ранку |\n| для | for | для мами, для роботи |\n| без | without | без води, без тебе |\n| після | after | після обіду, після уроку |\n| біля | near | біля дому, біля мене |\n| коло | near | коло парку |\n| замість | instead of | замість кави |\n| окрім | except | окрім нього |\n| серед | among | серед друзів |\n| через | through, because | через місто, через хворобу |\n\n**Examples:**\n- Я їду **до Києва**. - I'm going to Kyiv.\n- Ми зустрінемося **після роботи**. - We'll meet after work.\n- Я не можу **без тебе**. - I can't (live) without you.\n- Вона стоїть **біля вікна**. - She's standing by the window.\n\n> 🎭 **Culture Corner: через**\n>\n> The preposition через has two meanings:\n> - Physical: **через** місто (through the city)\n> - Causal: **через** хворобу (because of illness)\n>\n> Context makes it clear!\n\n### Instrumental Prepositions\n\nThese ALWAYS take instrumental:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| з | with | з другом, з молоком |\n| над | above | над столом, над містом |\n| під (location) | under | під столом |\n| перед | in front of | перед домом |\n| за (location) | behind | за будинком |\n| між | between | між нами |\n| поруч з | next to | поруч зі мною |\n\n**Examples:**\n- Я йду **з другом**. - I'm going with a friend.\n- Лампа висить **над столом**. - The lamp hangs above the table.\n- Кіт сидить **під столом**. - The cat sits under the table.\n- Машина стоїть **перед будинком**. - The car is in front of the house.\n- Це таємниця **між нами**. - This is a secret between us.\n\n> ⚡ **Pro Tip: з + Genitive vs з + Instrumental**\n>\n> - **з + Genitive** = from (origin): Я з України. (I'm from Ukraine.)\n> - **з + Instrumental** = with (accompaniment): Я з другом. (I'm with a friend.)\n>\n> Same word, different cases, opposite meanings!\n\n### Two-Case Prepositions: Motion vs Location\n\n**під (under):**\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Motion | Accusative | під стіл | under the table (moving) |\n| Location | Instrumental | під столом | under the table (staying) |\n\n**за (behind/for):**\n| Context | Case | Example | Translation |\n|---------|------|---------|-------------|\n| Motion | Accusative | за будинок | behind the house (moving) |\n| Location | Instrumental | за будинком | behind the house (staying) |\n| Purpose | Accusative | за молоком | for milk (going to get) |\n\n**над (above) - almost always instrumental:**\n- над столом (above the table)\n- над морем (above the sea)\n\n**Examples:**\n- Кіт забіг **під стіл**. (Acc) - The cat ran under the table.\n- Кіт сидить **під столом**. (Instr) - The cat sits under the table.\n- Сонце сідає **за гору**. (Acc) - The sun sets behind the mountain.\n- Сонце **за горою**. (Instr) - The sun is behind the mountain.\n\n### Prepositions of Relative Position\n\n| Preposition | Case | Meaning | Example |\n|-------------|------|---------|---------|\n| біля | Gen | near, by | біля дому |\n| поруч з | Instr | next to | поруч з банком |\n| навпроти | Gen | opposite | навпроти школи |\n| посеред | Gen | in the middle of | посеред кімнати |\n| вздовж | Gen | along | вздовж вулиці |\n| навколо | Gen | around | навколо міста |\n| позаду | Gen | behind | позаду будинку |\n| попереду | Gen | in front, ahead | попереду нас |\n\n**Examples:**\n- Аптека **біля** банку. - The pharmacy is near the bank.\n- Зупинка **навпроти** школи. - The bus stop is opposite the school.\n- Ми гуляли **вздовж** річки. - We walked along the river.\n- Дерева ростуть **навколо** озера. - Trees grow around the lake.\n\n> 💡 **Did You Know?**\n>\n> Many of these are compound words: на + впроти (opposite to), по + серед (through the middle), на + вколо (around). Understanding the components helps you remember meanings!\n\n### Common Mistakes to Avoid\n\n| Wrong | Right | Why |\n|-------|-------|-----|\n| ❌ Я йду до парк. | ✓ Я йду до парку. | до + genitive |\n| ❌ Він біля стіл. | ✓ Він біля столу. | біля + genitive |\n| ❌ Ми з друг. | ✓ Ми з другом. | з (with) + instrumental |\n| ❌ Після урок. | ✓ Після уроку. | після + genitive |\n| ❌ Я у Київ. | ✓ Я у Києві. / Я їду у Київ. | location (loc) vs motion (acc) |\n\n## practice\n\n### Choose the Correct Case\n\nSelect the right form:\n\n1. Я йду до ___ (магазин).\n   > [!answer] магазину (gen)\n2. Вона біля ___ (вікно).\n   > [!answer] вікна (gen)\n3. Ми з ___ (друзі).\n   > [!answer] друзями (instr)\n4. Кіт під ___ (стіл - location).\n   > [!answer] столом (instr)\n5. Він за ___ (будинок - motion).\n   > [!answer] будинок (acc)\n6. Після ___ (урок).\n   > [!answer] уроку (gen)\n\n### Location or Motion?\n\nChoose the correct form:\n\n1. Книга лежить ___ (стіл).\n   > [!answer] на столі (loc - location)\n2. Я кладу книгу ___ (стіл).\n   > [!answer] на стіл (acc - motion)\n3. Він ___ (кімната).\n   > [!answer] у кімнаті (loc - location)\n4. Він входить ___ (кімната).\n   > [!answer] у кімнату (acc - motion)\n5. Собака ___ (ліжко).\n   > [!answer] під ліжком (instr - location)\n6. Собака забіг ___ (ліжко).\n   > [!answer] під ліжко (acc - motion)\n\n### Build Sentences\n\nUse the correct preposition + case:\n\n1. near / house\n   > [!answer] біля дому\n2. after / work\n   > [!answer] після роботи\n3. with / friend\n   > [!answer] з другом\n4. to / Kyiv\n   > [!answer] до Києва\n5. between / us\n   > [!answer] між нами\n6. above / table\n   > [!answer] над столом\n\n## production\n\n### Real Situations\n\n**Scenario 1: Giving directions**\n- Як дійти до метро?\n- Ідіть прямо, потім поверніть біля банку.\n- Метро буде навпроти парку?\n- Так, між супермаркетом і кафе.\n\n**Scenario 2: Describing location**\n- Де мої ключі?\n- Подивися на столі або під журналом.\n- Знайшов! Вони були за диваном.\n- Як вони туди потрапили?\n\n**Scenario 3: Making plans**\n- Зустрінемося після роботи?\n- Добре. Біля твого офісу?\n- Ні, краще навпроти станції метро.\n- До шостої буду там!\n\n---\n\n---\n\n---\n\n---\n\n# Activities\n\n## fill-in: Prepositions with Cases\n\n> Choose the correct case form after each preposition.\n\n1. Книга лежить на ___ (стіл) біля вікна.\n   > [!answer] столі\n   > [!options] стіл | стола | столу | столі\n\n2. Він іде до ___ (магазин) за хлібом.\n   > [!answer] магазину\n   > [!options] магазин | магазину | магазині | магазином\n\n3. Діти грають під ___ (велике дерево) в парку.\n   > [!answer] великим деревом\n   > [!options] велике дерево | великого дерева | великому дереву | великим деревом\n\n4. Ми живемо між ___ (станція метро) і парком.\n   > [!answer] станцією метро\n   > [!options] станція метро | станції метро | станцію метро | станцією метро\n\n5. Картина висить над ___ (диван) у вітальні.\n   > [!answer] диваном\n   > [!options] диван | дивана | дивану | диваном\n\n6. Вона йде через ___ (центральний парк) до університету.\n   > [!answer] центральний парк\n   > [!options] центральний парк | центрального парку | центральному парку | центральним парком\n\n7. Навколо ___ (наш будинок) ростуть красиві квіти.\n   > [!answer] нашого будинку\n   > [!options] наш будинок | нашого будинку | нашому будинку | нашим будинком\n\n8. Кіт сидить за ___ (шафа) і ховається від нас.\n   > [!answer] шафою\n   > [!options] шафа | шафи | шафі | шафою\n\n9. Вони гуляють вздовж ___ (річка) кожного вечора.\n   > [!answer] річки\n   > [!options] річка | річки | річці | річкою\n\n10. Я чекаю біля ___ (головний вхід) вже десять хвилин.\n    > [!answer] головного входу\n    > [!options] головний вхід | головного входу | головному входу | головним входом\n\n## unjumble: Build the Sentence\n\n> Arrange the words to form sentences with prepositions.\n\n1. столі / Книга / на / лежить / біля вікна\n   > [!answer] Книга лежить на столі біля вікна.\n   > (The book lies on the table near the window.)\n\n2. магазину / Він / до / іде / за хлібом\n   > [!answer] Він іде до магазину за хлібом.\n   > (He goes to the store for bread.)\n\n3. деревом / Діти / під / грають / великим / в парку\n   > [!answer] Діти грають під великим деревом в парку.\n   > (Children play under a big tree in the park.)\n\n4. станцією / Ми / живемо / між / метро / і парком\n   > [!answer] Ми живемо між станцією метро і парком.\n   > (We live between the metro station and the park.)\n\n5. диваном / Картина / висить / над / у вітальні\n   > [!answer] Картина висить над диваном у вітальні.\n   > (The picture hangs above the couch in the living room.)\n\n6. парк / Вона / йде / через / центральний / до університету\n   > [!answer] Вона йде через центральний парк до університету.\n   > (She walks through the central park to the university.)\n\n7. будинку / Навколо / нашого / ростуть / красиві квіти\n   > [!answer] Навколо нашого будинку ростуть красиві квіти.\n   > (Beautiful flowers grow around our house.)\n\n8. шафою / Кіт / сидить / за / і ховається\n   > [!answer] Кіт сидить за шафою і ховається.\n   > (The cat sits behind the wardrobe and hides.)\n\n9. річки / Вони / вздовж / гуляють / кожного вечора\n   > [!answer] Вони гуляють вздовж річки кожного вечора.\n   > (They walk along the river every evening.)\n\n10. входу / Я / біля / чекаю / головного / вже десять хвилин\n    > [!answer] Я чекаю біля головного входу вже десять хвилин.\n    > (I've been waiting near the main entrance for ten minutes.)\n\n## match-up: Match the Pairs\n\n> Match Ukrainian words to their English meanings.\n\n| Left | Right |\n|------|-------|\n| над | above |\n| між | between |\n| навколо | around |\n| завжди | always |\n| мороз | frost |\n| серед | among |\n| магазин | store |\n| замість | instead of |\n| вздовж | along |\n| попереду | in front, ahead |\n| під | under |\n| поруч | next to |\n\n## quiz: Meaning Check\n\n> Choose the correct answer.\n\n1. What does \"замість\" mean?\n   - [x] instead of\n   - [ ] next to\n   - [ ] Accusative: бачити, читати, любити\n   - [ ] bigger\n   > \"замість\" means \"instead of\"\n\n2. What does \"навколо\" mean?\n   - [ ] newspaper\n   - [x] around\n   - [ ] to be going to\n   - [ ] to have\n   > \"навколо\" means \"around\"\n\n3. What does \"позаду\" mean?\n   - [ ] to understand\n   - [x] behind\n   - [ ] who\n   - [ ] food\n   > \"позаду\" means \"behind\"\n\n4. What does \"над\" mean?\n   - [ ] to understand (perf)\n   - [ ] thirty\n   - [ ] in front of\n   - [x] above\n   > \"над\" means \"above\"\n\n5. What does \"вздовж\" mean?\n   - [x] along\n   - [ ] bag\n   - [ ] lunch\n   - [ ] hryvnia (₴)\n   > \"вздовж\" means \"along\"\n\n6. What does \"посеред\" mean?\n   - [ ] recipient\n   - [ ] end\n   - [ ] to fall asleep\n   - [x] in the middle\n   > \"посеред\" means \"in the middle\"\n\n7. What does \"серед\" mean?\n   - [ ] fog\n   - [ ] beautiful, nice\n   - [x] among\n   - [ ] video\n   > \"серед\" means \"among\"\n\n8. What does \"під\" mean?\n   - [ ] back\n   - [ ] to clean, brush\n   - [x] under\n   - [ ] to put\n   > \"під\" means \"under\"\n\n9. What does \"поруч\" mean?\n   - [ ] to be considered\n   - [ ] discount\n   - [ ] how\n   - [x] next to\n   > \"поруч\" means \"next to\"\n\n10. What does \"перед\" mean?\n   - [ ] smart\n   - [ ] calf\n   - [ ] please/you're welcome\n   - [x] in front of\n   > \"перед\" means \"in front of\"\n\n11. What does \"між\" mean?\n   - [x] between\n   - [ ] fitting room\n   - [ ] white\n   - [ ] must, have to\n   > \"між\" means \"between\"\n\n12. What does \"попереду\" mean?\n   - [x] in front, ahead\n   - [ ] to meet\n   - [ ] without\n   - [ ] to go out, leave\n   > \"попереду\" means \"in front, ahead\"\n\n## true-false: True or False?\n\n> Determine if each statement is true or false.\n\n- [ ] \"серед\" means \"why\"\n   > Incorrect. \"серед\" means \"among\"\n\n- [x] \"замість\" means \"instead of\"\n   > Correct!\n\n- [ ] \"перед\" means \"fish\"\n   > Incorrect. \"перед\" means \"in front of\"\n\n- [ ] \"між\" means \"color\"\n   > Incorrect. \"між\" means \"between\"\n\n- [x] \"поруч\" means \"next to\"\n   > Correct!\n\n- [x] \"посеред\" means \"in the middle\"\n   > Correct!\n\n- [ ] \"над\" means \"seat, place\"\n   > Incorrect. \"над\" means \"above\"\n\n- [ ] \"попереду\" means \"to gift (impf)\"\n   > Incorrect. \"попереду\" means \"in front, ahead\"\n\n- [ ] \"навколо\" means \"seller (m)\"\n   > Incorrect. \"навколо\" means \"around\"\n\n- [ ] \"під\" means \"table\"\n   > Incorrect. \"під\" means \"under\"\n\n## group-sort: Sort by Case Requirement\n\n> Sort the prepositions by which case they require.\n\n### Genitive\n- до\n- від\n- для\n- без\n- біля\n- після\n\n### Instrumental\n- над\n- перед\n- між\n- з (with)\n\n## select: Choose Prepositions and Cases\n\n> Select all words that belong to the category.\n\n1. Which prepositions always take genitive?\n   - [x] до\n   - [ ] у\n   - [x] від\n   - [x] для\n   - [ ] на\n   - [x] без\n   - [x] після\n   - [ ] з (with)\n   - [x] біля\n   - [ ] над\n\n2. Which prepositions take instrumental?\n   - [ ] до\n   - [x] над\n   - [x] перед\n   - [ ] для\n   - [x] між\n   - [x] з (with)\n   - [ ] від\n   - [ ] без\n   - [ ] біля\n   - [ ] після\n\n3. Which prepositions can take TWO different cases?\n   - [ ] до\n   - [x] у\n   - [x] на\n   - [ ] для\n   - [x] під\n   - [x] за\n   - [ ] над\n   - [ ] перед\n   - [ ] між\n   - [ ] біля\n\n4. Which questions indicate LOCATION (locative)?\n   - [x] Де?\n   - [ ] Куди?\n   - [ ] Звідки?\n   - [x] Where?\n   - [ ] Where to?\n   - [x] Where at?\n   - [ ] Where from?\n   - [ ] Коли?\n   - [ ] Чому?\n   - [ ] Як?\n\n5. Which questions indicate MOTION (accusative)?\n   - [ ] Де?\n   - [x] Куди?\n   - [ ] Звідки?\n   - [ ] Where?\n   - [x] Where to?\n   - [ ] Where at?\n   - [ ] Where from?\n   - [ ] Коли?\n   - [ ] Чому?\n   - [ ] Як?\n\n6. Which use locative case for location?\n   - [x] у парку\n   - [ ] у парк\n   - [x] на столі\n   - [ ] на стіл\n   - [x] в кімнаті\n   - [ ] в кімнату\n   - [ ] до парку\n   - [ ] від парку\n   - [ ] без парку\n   - [ ] для парку\n\n7. Which use accusative case for motion?\n   - [ ] у парку\n   - [x] у парк\n   - [ ] на столі\n   - [x] на стіл\n   - [ ] в кімнаті\n   - [x] в кімнату\n   - [ ] над столом\n   - [ ] перед будинком\n   - [ ] між деревами\n   - [ ] до школи\n\n8. Which prepositions indicate direction/movement?\n   - [x] до\n   - [ ] біля\n   - [x] від\n   - [x] у (motion)\n   - [x] на (motion)\n   - [ ] над\n   - [ ] перед\n   - [ ] між\n   - [x] під (motion)\n   - [x] за (motion)\n\n9. Which prepositions indicate spatial relationships?\n   - [ ] до\n   - [x] над\n   - [x] під\n   - [ ] для\n   - [x] перед\n   - [x] за\n   - [x] між\n   - [x] біля\n   - [ ] без\n   - [ ] після\n\n10. Which combine with genitive to mean \"from\"?\n    - [ ] у\n    - [x] з\n    - [x] від\n    - [ ] до\n    - [ ] на\n    - [ ] для\n    - [ ] без\n    - [ ] над\n    - [ ] перед\n    - [ ] між\n\n## unjumble: Arrange Words into Sentences\n\n> Put the words in the correct order to form grammatically correct sentences.\n\n1. парку / Я / у / гуляю\n   > [!answer] Я гуляю у парку.\n   > (I walk in the park.)\n\n2. йду / парк / у / Я\n   > [!answer] Я йду у парк.\n   > (I go to the park.)\n\n3. на / книга / столі / лежить\n   > [!answer] Книга лежить на столі.\n   > (The book lies on the table.)\n\n4. книгу / стіл / кладу / на / Я\n   > [!answer] Я кладу книгу на стіл.\n   > (I put the book on the table.)\n\n5. парку / до / Ми / йдемо\n   > [!answer] Ми йдемо до парку.\n   > (We go to the park.)\n\n6. парку / Вони / від / приїхали\n   > [!answer] Вони приїхали від парку.\n   > (They came from the park.)\n\n7. над / літає / містом / Птах\n   > [!answer] Птах літає над містом.\n   > (A bird flies above the city.)\n\n8. перед / будинком / стоїть / Машина\n   > [!answer] Машина стоїть перед будинком.\n   > (The car stands in front of the building.)\n\n9. парком / біля / живу / Я\n   > [!answer] Я живу біля парку.\n   > (I live near the park.)\n\n10. між / деревами / Діти / граються\n    > [!answer] Діти граються між деревами.\n    > (Children play between the trees.)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| у / в | /u/ /v/ | in, at, into | prep | - | Loc/Acc |\n| на | /nɑ/ | on, at, onto | prep | - | Loc/Acc |\n| з / із / зі | /z/ /iz/ /zʲi/ | from, with | prep | - | Gen/Instr |\n| до | /dɔ/ | to, until | prep | - | + gen |\n| від | /vʲid/ | from | prep | - | + gen |\n| для | /dlʲɑ/ | for | prep | - | + gen |\n| без | /bɛz/ | without | prep | - | + gen |\n| під | /pʲid/ | under | prep | - | Acc/Instr |\n| над | /nɑd/ | above | prep | - | + instr |\n| перед | /ˈpɛrɛd/ | in front of | prep | - | + instr |\n| за | /zɑ/ | behind, for | prep | - | Acc/Instr |\n| між | /mʲiʒ/ | between | prep | - | + instr |\n| біля | /ˈbʲilʲɑ/ | near, by | prep | - | + gen |\n| коло | /ˈkɔlɔ/ | near, around | prep | - | + gen |\n| поруч | /ˈpɔrutʃ/ | next to | adv | - | з + instr |\n| навпроти | /nɑuˈprɔtɪ/ | opposite | prep | - | + gen |\n| позаду | /pɔˈzɑdu/ | behind | prep | - | + gen |\n| попереду | /pɔpɛˈrɛdu/ | in front, ahead | prep | - | + gen |\n| посеред | /pɔˈsɛrɛd/ | in the middle | prep | - | + gen |\n| серед | /sɛˈrɛd/ | among | prep | - | + gen |\n| вздовж | /vzdɔvʒ/ | along | prep | - | + gen |\n| упоперек | /upɔˈpɛrɛk/ | across | prep | - | + gen |\n| через | /ˈtʃɛrɛz/ | through, across | prep | - | + acc |\n| крізь | /krʲizʲ/ | through | prep | - | + acc |\n| навколо | /nɑuˈkɔlɔ/ | around | prep | - | + gen |\n| довкола | /dɔuˈkɔlɑ/ | around | prep | - | + gen |\n| замість | /ˈzɑmʲisʲtʲ/ | instead of | prep | - | + gen |\n| окрім | /ɔˈkrʲim/ | except | prep | - | + gen |\n| крім | /krʲim/ | besides | prep | - | + gen |\n| проти | /ˈprɔtɪ/ | against | prep | - | + gen |\n\n---\n\n# Summary\n\n## Preposition → Case Quick Reference\n\n| Case | Prepositions |\n|------|--------------|\n| Genitive | до, від, для, без, після, біля, з (from), коло, замість, окрім, серед, через, навпроти, вздовж, навколо |\n| Instrumental | з (with), над, перед, між, поруч з |\n| Accusative | у/в (motion), на (motion), під (motion), за (motion) |\n| Locative | у/в (location), на (location) |\n| Acc/Instr | під, за (motion = acc, location = instr) |\n\n## Motion vs Location\n\n| Question | Case | Example |\n|----------|------|---------|\n| Де? (Where?) | Locative | у кімнаті |\n| Куди? (Where to?) | Accusative | у кімнату |\n\n## Key Patterns\n\n| Pattern | Example |\n|---------|---------|\n| до + gen | до Києва |\n| біля + gen | біля дому |\n| з + instr | з другом |\n| над + instr | над столом |\n| між + instr | між нами |\n\n> 💡 **Key Takeaways**\n>\n> - Genitive prepositions: до, від, для, без, після, біля\n> - Instrumental prepositions: з (with), над, перед, між\n> - Location (де?) uses locative; motion (куди?) uses accusative\n> - під/за: motion = accusative, location = instrumental\n> - з + genitive = from; з + instrumental = with\n",
-    "createdAt": "2025-12-05T01:15:57.968Z",
-    "modifiedAt": "2025-12-05T01:15:57.968Z",
+    "rawMarkdown": "---\ntitle: \"Preposition Master Class\"\nsubtitle: \"Every Preposition, Every Case\"\nphase: A2.1\nduration: 45\ntransliteration: none\ntags: [grammar, prepositions, cases, review]\nobjectives:\n  - Review all prepositions with their required cases\n  - Master preposition + case combinations\n  - Avoid common preposition mistakes\ngrammar:\n  - Prepositions by case\n  - Direction vs location patterns\n  - Common preposition phrases\n---\n\n# Вступ\n\nPrepositions are the hidden architects of Ukrainian sentences. Each one is a gatekeeper that demands a specific case from the noun that follows — get it wrong, and native speakers will notice immediately. Get it right, and your Ukrainian will flow naturally.\n\nThis module is your master reference — a comprehensive guide to every major preposition organized by the case it requires. Think of it as your Ukrainian GPS: knowing which preposition takes which case will guide you through any sentence.\n\n> 💡 **Did You Know?**\n>\n> Ukrainian has about 200 prepositions, but only about 20 are used constantly in everyday speech. Master these core 20, and you'll handle 95% of real-world situations. Today's module covers exactly these essential gatekeepers!\n\n---\n\n# Genitive Case Prepositions (Родовий)\n\nThe genitive is the \"relationship\" case — and its prepositions often express origin, possession, or absence:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **без** | without | без цукру (without sugar) |\n| **з/із** | from, out of | з України (from Ukraine) |\n| **до** | to, until, before | до магазину (to the store) |\n| **від** | from (a person/source) | від брата (from brother) |\n| **для** | for (purpose) | для мами (for mom) |\n| **після** | after | після роботи (after work) |\n| **біля** | near, beside | біля дому (near home) |\n| **коло** | near, around | коло мене (near me) |\n| **замість** | instead of | замість кави (instead of coffee) |\n| **окрім** | except, besides | окрім мене (except me) |\n| **посеред** | in the middle of | посеред кімнати (in the middle of the room) |\n\n> ⚡ **Pro Tip: The \"Without\" Pattern**\n>\n> When ordering food, *без* is your best friend:\n> - *Кава без цукру* (Coffee without sugar)\n> - *Салат без цибулі* (Salad without onion)\n> - *Піца без грибів* (Pizza without mushrooms)\n\n**🎭 У кав'ярні (At the Coffee Shop)**\n\n— Добрий день! Що бажаєте?\n— Каву, будь ласка. **Без** цукру.\n— А молоко?\n— Так, **з** молоком. І ще тістечко **для** подруги.\n— Добре. Ви будете тут чи **до** дому?\n— Тут, дякую. Ми сядемо **біля** вікна.\n\n> 📜 **History Bite: До vs. К**\n>\n> In Old Ukrainian and some dialects, **к** (like Russian \"к\") was used for \"to.\" Modern Ukrainian strongly prefers **до** — it's one of the features that distinguishes Ukrainian from Russian. When you use *до магазину* instead of \"к магазину,\" you're speaking authentic Ukrainian!\n\n---\n\n# Dative Case Prepositions (Давальний)\n\nThe dative has few prepositions, but they're important:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **завдяки** | thanks to | завдяки тобі (thanks to you) |\n| **всупереч** | despite, contrary to | всупереч правилам (despite the rules) |\n| **назустріч** | towards (meeting) | назустріч другу (towards the friend) |\n| **напроти/навпроти** | opposite | напроти банку (opposite the bank) |\n\n> 🌍 **Real World: Expressing Gratitude**\n>\n> *Завдяки тобі* is a powerful expression. It's more emphatic than just \"дякую\" — it means \"because of you, this happened.\" Politicians use it in speeches (*завдяки нашому народу*), lovers use it in declarations (*завдяки тобі я щасливий*), and athletes use it in victory speeches (*завдяки моїй команді*).\n\n**🎭 Після перемоги (After the Victory)**\n\n— Ми виграли!\n— Так! **Завдяки** тобі! Твій гол був неймовірний!\n— Ні, **завдяки** всій команді. І **всупереч** усім прогнозам!\n— Усі казали, що ми програємо...\n— А ми пішли **назустріч** мрії!\n\n---\n\n# Accusative Case Prepositions (Знахідний)\n\nThe accusative is the \"action direction\" case — its prepositions often express movement or the object of attention:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **в/у** | into (direction) | в магазин (into the store) |\n| **на** | onto (direction) | на роботу (to work) |\n| **за** | for (purpose), behind | за мир (for peace), за стіл (to the table) |\n| **через** | through, across, because of | через місто (through city) |\n| **про** | about | про тебе (about you) |\n| **крізь** | through (physically) | крізь вікно (through the window) |\n| **понад** | over, more than | понад сто (over a hundred) |\n\n> 💡 **Did You Know?**\n>\n> **Через** has two meanings that confuse learners:\n> - *physical*: through a place — *Ми йдемо через парк* (We're going through the park)\n> - *causal*: because of — *Через дощ ми залишилися вдома* (Because of rain we stayed home)\n>\n> Context always clarifies which meaning applies!\n\n**🎭 Розмова про плани (Talking About Plans)**\n\n— **Про** що ти думаєш?\n— **Про** відпустку. Хочу поїхати **на** море.\n— **Через** місяць?\n— Ні, **за** два тижні! Поїдемо **через** Львів.\n— О, можемо зайти **в** ту кав'ярню **на** площі!\n— Точно! Я завжди думаю **про** їхній десерт...\n\n> 🎬 **Pop Culture Moment: \"Про тебе\"**\n>\n> One of Ukraine's most famous pop songs is \"Я думаю про тебе\" (I'm thinking about you). The phrase *про тебе* appears in countless Ukrainian songs, poems, and love letters — it's the quintessential expression of romantic thought!\n\n---\n\n# Instrumental Case Prepositions (Орудний)\n\nThe instrumental is the \"relationship and location\" case — its prepositions express accompaniment, position, and comparison:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **з/із** | with | з братом (with brother) |\n| **за** | behind (location) | за столом (behind the table) |\n| **під** | under (location) | під столом (under the table) |\n| **над** | above (location) | над містом (above the city) |\n| **перед** | in front of, before | перед домом (in front of house) |\n| **між** | between | між нами (between us) |\n| **поруч з** | next to | поруч з банком (next to bank) |\n| **порівняно з** | compared with | порівняно з учора (compared with yesterday) |\n\n> 🎭 **Culture Corner: Між нами**\n>\n> The phrase *між нами* (between us) is how Ukrainians start sharing secrets. It's the equivalent of \"just between you and me\" — a signal that what follows is confidential. *Між нами кажучи...* (Speaking between us...) is even more intimate.\n\n**🎭 Секрет (A Secret)**\n\n— Можу сказати тобі щось **між нами**?\n— Звичайно! Сядь **поруч зі** мною.\n— Бачиш того чоловіка **за** столом?\n— Того, що сидить **перед** вікном?\n— Так! Він — мій новий бос!\n— Справді? І він сидить **між** тими людьми?\n— Так. Тільки **між нами** — він дуже суворий...\n\n---\n\n# Locative Case Prepositions (Місцевий)\n\nThe locative (also called prepositional) case ONLY appears with prepositions — that's its superpower:\n\n| Preposition | Meaning | Example |\n|-------------|---------|---------|\n| **в/у** | in (location) | в магазині (in the store) |\n| **на** | on, at (location) | на роботі (at work) |\n| **по** | on, along, after | по телефону (on the phone) |\n| **при** | at, by, near | при вході (at the entrance) |\n\n> 💡 **Did You Know?**\n>\n> **По** is tricky — it takes LOCATIVE for most meanings (*по телефону*, *по дорозі*), but there's also *по* with ACCUSATIVE for distribution (*по яблуку кожному* = an apple to each). Most commonly, you'll use it with locative.\n\n---\n\n# The Great Direction vs. Location Split\n\nThis is perhaps the most important pattern in Ukrainian prepositions. The SAME preposition can take different cases depending on whether you're expressing movement (direction) or position (location):\n\n| Direction (Куди?) | Location (Де?) |\n|------------------------|----------------------------------|\n| Я йду **в магазин** (Acc). | Я **в магазині** (Loc). |\n| Він іде **на роботу** (Acc). | Він **на роботі** (Loc). |\n| Поклади **під стіл** (Acc). | Лежить **під столом** (Inst). |\n| Сядь **за стіл** (Acc). | Він сидить **за столом** (Inst). |\n| Повісь **над столом** (Inst). | Висить **над столом** (Inst). |\n\n> ⚡ **Pro Tip: над and під**\n>\n> Unlike в/на, the prepositions **над** (above) and **під** (under) now primarily use **Instrumental** for both direction AND location in modern Ukrainian. You may see Accusative in older texts or literary language, but for everyday speech, stick with Instrumental!\n\n> ⚡ **Pro Tip: The Two Questions**\n>\n> - **Куди?** (Where to?) → Accusative (direction)\n> - **Де?** (Where?) → Locative/Instrumental (location)\n>\n> Ask yourself which question the preposition phrase answers, and you'll always know the right case!\n\n**🎭 Де кіт? (Where's the Cat?)**\n\n— Де кіт?\n— Не знаю... Може, **під столом**?\n— Ні, його там немає.\n— А **за диваном**? Він любить ховатися **за диваном**.\n— Ні...\n— О! Дивись! Він біжить **під ліжко**!\n— А тепер сидить **під ліжком** і дивиться на нас...\n\n---\n\n# З/Із — The Chameleon Preposition\n\n**З** is unique — it completely changes meaning based on the case it takes:\n\n| Case | Meaning | Example |\n|------|---------|---------|\n| **Genitive** | from (origin) | **з** України (from Ukraine) |\n| **Instrumental** | with (accompaniment) | **з** братом (with brother) |\n\n> 🌍 **Real World: \"Звідки ви?\"**\n>\n> When Ukrainians ask *Звідки ви?* (Where are you from?), your answer uses **з + genitive**:\n> - *Я з Києва* (I'm from Kyiv)\n> - *Я з Канади* (I'm from Canada)\n> - *Я з маленького села* (I'm from a small village)\n\n**When to use \"із\" vs \"з\":**\n- Use **із** before words starting with з, с, ш, щ: *із сестрою*, *із Закарпаття*\n- Use **зі** before мн, лл, and some consonant clusters: *зі мною*, *зі Львова*\n- Otherwise, **з** works everywhere: *з братом*, *з України*\n\n---\n\n# На vs. В/У — The Big Choice\n\nThis distinction confuses even advanced learners. Here's the pattern:\n\n| Use **на** | Use **в/у** |\n|------------|-------------|\n| на Україні (in Ukraine) | в Італії (in Italy) |\n| на роботі (at work) | в офісі (in the office) |\n| на вокзалі (at the station) | в аеропорту (in the airport) |\n| на вулиці (on the street) | в магазині (in the store) |\n| на пошті (at the post office) | в банку (in the bank) |\n| на заводі (at the factory) | в ресторані (in the restaurant) |\n| на кухні (in the kitchen) | в кімнаті (in the room) |\n| на концерті (at the concert) | в театрі (in the theater) |\n\n> 📜 **History Bite: На Україні vs. В Україні**\n>\n> This is a sensitive topic. Historically, *на Україні* was used when Ukraine was a region within an empire. Since independence, many Ukrainians prefer *в Україні* to emphasize Ukraine's status as an independent country, not a borderland (*край*). Both forms exist in modern usage, but *в Україні* is increasingly preferred in official contexts. As a learner, be aware of both — and follow the preference of native speakers you interact with.\n\n**General rule of thumb:**\n- **На** = open spaces, surfaces, events, and some traditional locations\n- **В/у** = enclosed spaces, buildings, and most countries\n\n---\n\n# Common Preposition Phrases\n\nThese fixed expressions are essential for fluent Ukrainian:\n\n| Ukrainian | Literal | English Meaning |\n|-----------|---------|-----------------|\n| без сумніву | without doubt | undoubtedly |\n| до побачення | to seeing | goodbye |\n| до речі | to the matter | by the way |\n| після обіду | after lunch | in the afternoon |\n| перед сном | before sleep | before bedtime |\n| під час | under time | during |\n| на жаль | on pity | unfortunately |\n| за кордоном | behind the border | abroad |\n| між іншим | between other | by the way |\n| ні за що | not for anything | you're welcome / no way |\n| на мою думку | on my thought | in my opinion |\n| без перебільшення | without exaggeration | no exaggeration |\n\n> 🎬 **Pop Culture Moment: \"За кордоном\"**\n>\n> The phrase *за кордоном* (abroad, literally \"behind the border\") became hugely significant after 2022 when millions of Ukrainians found themselves living *за кордоном*. It appears in countless songs, poems, and social media posts about the diaspora experience.\n\n---\n\n# Practice Sentences\n\nRead these sentences aloud, paying attention to preposition + case combinations:\n\n1. Я йду **до** магазину. (I'm going to the store.)\n2. Кава **без** цукру, будь ласка. (Coffee without sugar, please.)\n3. Він живе **біля** парку. (He lives near the park.)\n4. Ми говоримо **про** тебе. (We're talking about you.)\n5. Книга лежить **на** столі. (The book is on the table.)\n6. Вона сидить **між** батьками. (She sits between her parents.)\n7. **Завдяки** тобі ми перемогли! (Thanks to you, we won!)\n8. Кіт сховався **під** ліжком. (The cat hid under the bed.)\n9. Я **з** України, **з** Харкова. (I'm from Ukraine, from Kharkiv.)\n10. Поїдемо **через** Львів. (We'll go through Lviv.)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| без | /bɛz/ | without | prep | — | + gen |\n| до | /do/ | to, until | prep | — | + gen |\n| від | /wid/ | from | prep | — | + gen |\n| для | /dlʲa/ | for | prep | — | + gen |\n| після | /ˈpislʲa/ | after | prep | — | + gen |\n| біля | /ˈbilʲa/ | near | prep | — | + gen |\n| замість | /zaˈmistʲ/ | instead of | prep | — | + gen |\n| про | /pro/ | about | prep | — | + acc |\n| через | /ˈtʃɛrɛz/ | through, because | prep | — | + acc |\n| перед | /ˈpɛrɛd/ | in front of | prep | — | + inst |\n| між | /miʒ/ | between | prep | — | + inst |\n| над | /nad/ | above, over | prep | — | + inst |\n| під | /pid/ | under | prep | — | + inst |\n| за | /za/ | behind, for | prep | — | + inst/acc |\n| завдяки | /zawˈdʲakɪ/ | thanks to | prep | — | + dat |\n| всупереч | /wsuˈpɛrɛtʃ/ | despite | prep | — | + dat |\n| напроти | /ˈnaprotɪ/ | opposite | prep | — | + gen, also навпроти |\n| крізь | /krʲizʲ/ | through | prep | — | + acc |\n| поруч | /ˈporutʃ/ | next to | prep | — | + з + inst |\n| сумнів | /ˈsumniv/ | doubt | noun | m | |\n| вхід | /wxit/ | entrance | noun | m | |\n| кордон | /korˈdon/ | border | noun | m | за кордоном |\n| сон | /son/ | sleep, dream | noun | m | перед сном |\n| думка | /ˈdumka/ | thought, opinion | noun | f | на мою думку |\n\n---\n\n# Activities\n\n## fill-in: Choose the Correct Preposition\n\n1. Кава ___ цукру, будь ласка.\n   > [!answer] без\n   > (Coffee without sugar, please.)\n\n2. Я йду ___ магазину.\n   > [!answer] до\n   > (I'm going to the store.)\n\n3. Це подарунок ___ тебе.\n   > [!answer] для\n   > (This is a gift for you.)\n\n4. Вони говорять ___ мене.\n   > [!answer] про\n   > (They're talking about me.)\n\n5. Банк знаходиться ___ пошти.\n   > [!answer] біля\n   > (The bank is near the post office.)\n\n6. Я прийду ___ роботи.\n   > [!answer] після\n   > (I'll come after work.)\n\n7. Кіт сидить ___ столом.\n   > [!answer] під\n   > (The cat is sitting under the table.)\n\n8. Вона стоїть ___ дверима.\n   > [!answer] перед\n   > (She's standing in front of the door.)\n\n9. Він живе ___ кордоном.\n   > [!answer] за\n   > (He lives abroad.)\n\n10. Сядь ___ мною!\n    > [!answer] зі\n    > (Sit with me!)\n\n11. Лампа висить ___ столом.\n    > [!answer] над\n    > (The lamp hangs above the table.)\n\n12. Успіх ___ тобі!\n    > [!answer] завдяки\n    > (Success thanks to you!)\n\n## match-up: Preposition and Case\n\n- без :: genitive\n- про :: accusative\n- з (with) :: instrumental\n- до :: genitive\n- перед :: instrumental\n- на (location) :: locative\n- для :: genitive\n- між :: instrumental\n- від :: genitive\n- під (location) :: instrumental\n- після :: genitive\n- завдяки :: dative\n\n## unjumble: Word Order\n\n1. цукру / без / Кава / ранку / кожного / молоком / з / гаряча\n   > [!answer] Кава без цукру з молоком кожного ранку гаряча.\n   > (Coffee without sugar with milk every morning is hot.) [8 words]\n\n2. до / Я / великого / магазину / нового / йду / сьогодні / ввечері\n   > [!answer] Я йду до нового великого магазину сьогодні ввечері.\n   > (I'm going to the new big store this evening.) [8 words]\n\n3. тебе / Це / для / особливий / подарунок / на / день / народження\n   > [!answer] Це особливий подарунок для тебе на день народження.\n   > (This is a special gift for you for your birthday.) [8 words]\n\n4. столом / великим / Кіт / кухонним / під / сидить / нашим / тихо\n   > [!answer] Кіт тихо сидить під нашим великим кухонним столом.\n   > (The cat sits quietly under our big kitchen table.) [8 words]\n\n5. роботи / важкої / після / прийду / Я / додому / сьогодні / пізно\n   > [!answer] Я прийду додому пізно після важкої роботи сьогодні.\n   > (I'll come home late after hard work today.) [8 words]\n\n6. тебе / про / говорять / Вони / часто / добре / на / роботі\n   > [!answer] Вони часто говорять про тебе добре на роботі.\n   > (They often talk about you positively at work.) [8 words]\n\n7. парку / центрального / біля / Він / великого / живе / міського / нашого\n   > [!answer] Він живе біля нашого великого центрального міського парку.\n   > (He lives near our big central city park.) [8 words]\n\n8. нами / між / Це / великий / секрет / залишиться / тільки / назавжди\n   > [!answer] Це великий секрет тільки між нами назавжди залишиться.\n   > (This big secret will remain only between us forever.) [8 words]\n\n9. дверима / головними / стоїть / перед / Вона / чекає / і / мене\n   > [!answer] Вона стоїть перед головними дверима і чекає мене.\n   > (She stands in front of the main door and waits for me.) [8 words]\n\n10. столом / робочим / висить / над / Лампа / яскрава / моїм / нова\n    > [!answer] Нова яскрава лампа висить над моїм робочим столом.\n    > (A new bright lamp hangs above my work desk.) [8 words]\n\n11. кордоном / живе / за / Він / уже / багато / років / давно\n    > [!answer] Він давно живе за кордоном уже багато років.\n    > (He has been living abroad for many years now.) [8 words]\n\n12. тобі / завдяки / Успіх / наш / цей / великий / можливий / став\n    > [!answer] Цей наш великий успіх став можливий завдяки тобі.\n    > (This big success of ours became possible thanks to you.) [8 words]\n\n## quiz: Preposition + Case\n\n1. \"Без\" requires which case?\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n2. \"Про\" requires which case?\n   - [ ] Genitive\n   - [ ] Dative\n   - [x] Accusative\n   - [ ] Instrumental\n\n3. \"Перед\" requires which case?\n   - [ ] Genitive\n   - [ ] Locative\n   - [ ] Accusative\n   - [x] Instrumental\n\n4. \"До\" requires which case?\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Locative\n\n5. \"З\" (with) requires which case?\n   - [ ] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [x] Instrumental\n\n6. \"На\" (location) requires which case?\n   - [ ] Genitive\n   - [ ] Accusative\n   - [ ] Instrumental\n   - [x] Locative\n\n7. \"Завдяки\" requires which case?\n   - [ ] Genitive\n   - [x] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n8. \"Між\" requires which case?\n   - [ ] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [x] Instrumental\n\n9. \"Після\" requires which case?\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Locative\n\n10. \"Під\" (location) requires which case?\n    - [ ] Genitive\n    - [ ] Accusative\n    - [x] Instrumental\n    - [ ] Locative\n\n11. \"Для\" requires which case?\n    - [x] Genitive\n    - [ ] Dative\n    - [ ] Accusative\n    - [ ] Instrumental\n\n12. \"В\" (direction) requires which case?\n    - [ ] Genitive\n    - [ ] Dative\n    - [x] Accusative\n    - [ ] Locative\n\n## true-false: Preposition Facts\n\n1. \"Без\" takes genitive case.\n   > [!answer] true\n   > (без цукру - without sugar)\n\n2. \"З\" always takes instrumental case.\n   > [!answer] false\n   > (з + gen = from, з + inst = with)\n\n3. Direction uses accusative, location uses locative.\n   > [!answer] true\n   > (в магазин vs в магазині)\n\n4. \"Завдяки\" takes dative case.\n   > [!answer] true\n   > (завдяки тобі - thanks to you)\n\n5. \"На Україні\" uses accusative.\n   > [!answer] false\n   > (Uses locative for location)\n\n6. \"Перед\" takes genitive case.\n   > [!answer] false\n   > (Перед takes instrumental)\n\n7. \"Про\" takes accusative case.\n   > [!answer] true\n   > (про тебе - about you)\n\n8. \"Між\" takes instrumental case.\n   > [!answer] true\n   > (між нами - between us)\n\n9. \"До побачення\" uses genitive.\n   > [!answer] true\n   > (до + genitive)\n\n10. \"За кордоном\" uses accusative.\n    > [!answer] false\n    > (Location uses instrumental)\n\n11. \"Після\" takes genitive case.\n    > [!answer] true\n    > (після роботи - after work)\n\n12. \"Під столом\" uses locative case.\n    > [!answer] false\n    > (Uses instrumental for location)\n\n## group-sort: Cases Required\n\n> Sort these prepositions by the case they require.\n\n### Genitive\n- без\n- до\n- для\n- від\n- після\n\n### Instrumental\n- з (with)\n- перед\n- між\n- над\n\n### Accusative\n- про\n- через\n- в (direction)\n\n## fill-in: Direction vs Location\n\n1. Я йду ___ магазин. (direction)\n   > [!answer] в/до\n   > (I'm going to the store.)\n\n2. Я ___ магазині. (location)\n   > [!answer] в/у\n   > (I'm in the store.)\n\n3. Вона їде ___ Київ. (direction)\n   > [!answer] до/в\n   > (She's going to Kyiv.)\n\n4. Вона ___ Києві. (location)\n   > [!answer] в/у\n   > (She's in Kyiv.)\n\n5. Він кладе книгу ___ стіл. (direction)\n   > [!answer] на\n   > (He puts the book on the table.)\n\n6. Книга лежить ___ столі. (location)\n   > [!answer] на\n   > (The book is on the table.)\n\n7. Ми йдемо ___ пошту. (direction)\n   > [!answer] на\n   > (We're going to the post office.)\n\n8. Ми ___ пошті. (location)\n   > [!answer] на\n   > (We're at the post office.)\n\n9. Кіт біжить ___ стіл. (direction - under)\n   > [!answer] під\n   > (The cat runs under the table.)\n\n10. Кіт сидить ___ столом. (location - under)\n    > [!answer] під\n    > (The cat sits under the table.)\n\n11. Він вішає картину ___ ліжком. (above)\n    > [!answer] над\n    > (He hangs the picture above the bed.)\n\n12. Картина висить ___ ліжком. (above)\n    > [!answer] над\n    > (The picture hangs above the bed.)\n\n## select: Choose the Correct Case\n\n> Select the correct form based on the preposition.\n\n1. Кава без ___.\n   - [x] цукру (genitive)\n   - [ ] цукор (nominative)\n   - [ ] цукром (instrumental)\n   - [ ] цукрі (locative)\n\n2. Подарунок для ___.\n   - [ ] мама\n   - [x] мами\n   - [ ] мамою\n   - [ ] мамі\n\n3. Він живе біля ___.\n   - [ ] парк\n   - [x] парку\n   - [ ] парком\n   - [ ] парці\n\n4. Ми говоримо про ___.\n   - [ ] він\n   - [ ] його\n   - [x] нього\n   - [ ] ним\n\n5. Вона сидить між ___.\n   - [ ] батьків\n   - [ ] батьки\n   - [x] батьками\n   - [ ] батьках\n\n6. Лампа висить над ___.\n   - [ ] стіл\n   - [ ] столу\n   - [x] столом\n   - [ ] столі\n\n7. Завдяки ___ ми перемогли.\n   - [ ] ти\n   - [x] тобі\n   - [ ] тебе\n   - [ ] тобою\n\n8. Він стоїть перед ___.\n   - [ ] двері\n   - [ ] дверей\n   - [x] дверима\n   - [ ] дверях\n\n9. Це секрет між ___.\n   - [ ] ми\n   - [ ] нас\n   - [x] нами\n   - [ ] нам\n\n10. Вона йде до ___.\n    - [ ] магазин\n    - [x] магазину\n    - [ ] магазином\n    - [ ] магазині\n\n11. Після ___ я прийду.\n    - [ ] робота\n    - [x] роботи\n    - [ ] роботою\n    - [ ] роботі\n\n12. Кіт сидить під ___.\n    - [ ] стіл\n    - [ ] столу\n    - [x] столом\n    - [ ] столі\n\n## order: Daily Routine with Prepositions\n\n> Put these actions in the order they typically happen during a day.\n\n1. Я прокидаюся о сьомій ранку.\n2. Після сніданку я йду на роботу.\n3. Я працюю в офісі до п'ятої.\n4. Після роботи я йду в магазин.\n5. Увечері я сиджу перед телевізором.\n6. Я лягаю спати о одинадцятій.\n\n## quiz: Preposition Mastery\n\n1. \"Без\" takes which case?\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n2. When \"в\" means direction, it takes:\n   - [ ] Genitive\n   - [ ] Dative\n   - [x] Accusative\n   - [ ] Locative\n\n3. When \"в\" means location, it takes:\n   - [ ] Genitive\n   - [ ] Accusative\n   - [ ] Instrumental\n   - [x] Locative\n\n4. \"З\" meaning \"with\" takes:\n   - [ ] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [x] Instrumental\n\n5. \"З\" meaning \"from\" takes:\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n6. \"Завдяки\" takes:\n   - [ ] Genitive\n   - [x] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n7. \"Перед\" takes:\n   - [ ] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [x] Instrumental\n\n8. \"Про\" takes:\n   - [ ] Genitive\n   - [ ] Dative\n   - [x] Accusative\n   - [ ] Instrumental\n\n9. \"Після\" takes:\n   - [x] Genitive\n   - [ ] Dative\n   - [ ] Accusative\n   - [ ] Instrumental\n\n10. \"Між\" takes:\n    - [ ] Genitive\n    - [ ] Dative\n    - [ ] Accusative\n    - [x] Instrumental\n\n11. Which preposition can take two different cases?\n    - [ ] без\n    - [ ] для\n    - [x] на\n    - [ ] перед\n\n12. \"До побачення\" uses:\n    - [x] Genitive\n    - [ ] Dative\n    - [ ] Accusative\n    - [ ] Instrumental\n\n---\n\n# Підсумок\n\nYou've now mastered the Ukrainian preposition system! Here's your quick reference:\n\n**Genitive (Родовий):**\n- без, до, від, для, після, біля, замість, окрім\n\n**Dative (Давальний):**\n- завдяки, всупереч, назустріч\n\n**Accusative (Знахідний):**\n- в/у (direction), на (direction), про, через, під (direction), над (direction)\n\n**Instrumental (Орудний):**\n- з (with), перед, між, над (location), під (location), за (location), поруч з\n\n**Locative (Місцевий):**\n- в/у (location), на (location), по, при\n\n**Key Patterns:**\n- Direction (Куди?) → Accusative\n- Location (Де?) → Locative or Instrumental\n- \"З\" changes meaning by case: genitive (from) vs. instrumental (with)\n\n**Coming up next**: All Cases Practice — put all seven cases together in comprehensive exercises!\n",
+    "createdAt": "2025-12-06T00:40:26.237Z",
+    "modifiedAt": "2025-12-06T00:40:26.237Z",
     "version": 2
   },
   "activities": [
     {
       "id": "act-a1-0-fillblank",
       "type": "fill-blank",
-      "title": "Prepositions with Cases",
-      "description": "Choose the correct case form after each preposition.",
+      "title": "Choose the Correct Preposition",
+      "description": "Choose the Correct Preposition",
       "content": {
         "type": "fill-blank",
         "items": [
           {
-            "prompt": "Книга лежить на ___ (стіл) біля вікна.",
-            "answer": "столі",
-            "hints": [
-              "стіл"
-            ],
-            "options": [
-              "стіл",
-              "стола",
-              "столу",
-              "столі"
-            ]
+            "prompt": "Кава ___ цукру, будь ласка.",
+            "answer": "без"
           },
           {
-            "prompt": "Він іде до ___ (магазин) за хлібом.",
-            "answer": "магазину",
-            "hints": [
-              "магазин"
-            ],
-            "options": [
-              "магазин",
-              "магазину",
-              "магазині",
-              "магазином"
-            ]
+            "prompt": "Я йду ___ магазину.",
+            "answer": "до"
           },
           {
-            "prompt": "Діти грають під ___ (велике дерево) в парку.",
-            "answer": "великим деревом",
-            "hints": [
-              "велике дерево"
-            ],
-            "options": [
-              "велике дерево",
-              "великого дерева",
-              "великому дереву",
-              "великим деревом"
-            ]
+            "prompt": "Це подарунок ___ тебе.",
+            "answer": "для"
           },
           {
-            "prompt": "Ми живемо між ___ (станція метро) і парком.",
-            "answer": "станцією метро",
-            "hints": [
-              "станція метро"
-            ],
-            "options": [
-              "станція метро",
-              "станції метро",
-              "станцію метро",
-              "станцією метро"
-            ]
+            "prompt": "Вони говорять ___ мене.",
+            "answer": "про"
           },
           {
-            "prompt": "Картина висить над ___ (диван) у вітальні.",
-            "answer": "диваном",
-            "hints": [
-              "диван"
-            ],
-            "options": [
-              "диван",
-              "дивана",
-              "дивану",
-              "диваном"
-            ]
+            "prompt": "Банк знаходиться ___ пошти.",
+            "answer": "біля"
           },
           {
-            "prompt": "Вона йде через ___ (центральний парк) до університету.",
-            "answer": "центральний парк",
-            "hints": [
-              "центральний парк"
-            ],
-            "options": [
-              "центральний парк",
-              "центрального парку",
-              "центральному парку",
-              "центральним парком"
-            ]
+            "prompt": "Я прийду ___ роботи.",
+            "answer": "після"
           },
           {
-            "prompt": "Навколо ___ (наш будинок) ростуть красиві квіти.",
-            "answer": "нашого будинку",
-            "hints": [
-              "наш будинок"
-            ],
-            "options": [
-              "наш будинок",
-              "нашого будинку",
-              "нашому будинку",
-              "нашим будинком"
-            ]
+            "prompt": "Кіт сидить ___ столом.",
+            "answer": "під"
           },
           {
-            "prompt": "Кіт сидить за ___ (шафа) і ховається від нас.",
-            "answer": "шафою",
-            "hints": [
-              "шафа"
-            ],
-            "options": [
-              "шафа",
-              "шафи",
-              "шафі",
-              "шафою"
-            ]
+            "prompt": "Вона стоїть ___ дверима.",
+            "answer": "перед"
           },
           {
-            "prompt": "Вони гуляють вздовж ___ (річка) кожного вечора.",
-            "answer": "річки",
-            "hints": [
-              "річка"
-            ],
-            "options": [
-              "річка",
-              "річки",
-              "річці",
-              "річкою"
-            ]
+            "prompt": "Він живе ___ кордоном.",
+            "answer": "за"
           },
           {
-            "prompt": "Я чекаю біля ___ (головний вхід) вже десять хвилин.",
-            "answer": "головного входу",
-            "hints": [
-              "головний вхід"
-            ],
-            "options": [
-              "головний вхід",
-              "головного входу",
-              "головному входу",
-              "головним входом"
-            ]
+            "prompt": "Сядь ___ мною!",
+            "answer": "зі"
+          },
+          {
+            "prompt": "Лампа висить ___ столом.",
+            "answer": "над"
+          },
+          {
+            "prompt": "Успіх ___ тобі!",
+            "answer": "завдяки"
           }
         ]
       },
@@ -205,199 +182,64 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
-    },
-    {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Build the Sentence",
-      "description": "Arrange the words to form sentences with prepositions.",
-      "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
-          {
-            "words": [
-              "столі",
-              "Книга",
-              "на",
-              "лежить",
-              "біля вікна"
-            ],
-            "answer": "Книга лежить на столі біля вікна.",
-            "translation": "The book lies on the table near the window."
-          },
-          {
-            "words": [
-              "магазину",
-              "Він",
-              "до",
-              "іде",
-              "за хлібом"
-            ],
-            "answer": "Він іде до магазину за хлібом.",
-            "translation": "He goes to the store for bread."
-          },
-          {
-            "words": [
-              "деревом",
-              "Діти",
-              "під",
-              "грають",
-              "великим",
-              "в парку"
-            ],
-            "answer": "Діти грають під великим деревом в парку.",
-            "translation": "Children play under a big tree in the park."
-          },
-          {
-            "words": [
-              "станцією",
-              "Ми",
-              "живемо",
-              "між",
-              "метро",
-              "і парком"
-            ],
-            "answer": "Ми живемо між станцією метро і парком.",
-            "translation": "We live between the metro station and the park."
-          },
-          {
-            "words": [
-              "диваном",
-              "Картина",
-              "висить",
-              "над",
-              "у вітальні"
-            ],
-            "answer": "Картина висить над диваном у вітальні.",
-            "translation": "The picture hangs above the couch in the living room."
-          },
-          {
-            "words": [
-              "парк",
-              "Вона",
-              "йде",
-              "через",
-              "центральний",
-              "до університету"
-            ],
-            "answer": "Вона йде через центральний парк до університету.",
-            "translation": "She walks through the central park to the university."
-          },
-          {
-            "words": [
-              "будинку",
-              "Навколо",
-              "нашого",
-              "ростуть",
-              "красиві квіти"
-            ],
-            "answer": "Навколо нашого будинку ростуть красиві квіти.",
-            "translation": "Beautiful flowers grow around our house."
-          },
-          {
-            "words": [
-              "шафою",
-              "Кіт",
-              "сидить",
-              "за",
-              "і ховається"
-            ],
-            "answer": "Кіт сидить за шафою і ховається.",
-            "translation": "The cat sits behind the wardrobe and hides."
-          },
-          {
-            "words": [
-              "річки",
-              "Вони",
-              "вздовж",
-              "гуляють",
-              "кожного вечора"
-            ],
-            "answer": "Вони гуляють вздовж річки кожного вечора.",
-            "translation": "They walk along the river every evening."
-          },
-          {
-            "words": [
-              "входу",
-              "Я",
-              "біля",
-              "чекаю",
-              "головного",
-              "вже десять хвилин"
-            ],
-            "answer": "Я чекаю біля головного входу вже десять хвилин.",
-            "translation": "I've been waiting near the main entrance for ten minutes."
-          }
-        ]
-      },
-      "subject": "language",
-      "owner": "curricula-opus",
-      "visibility": "public",
-      "language": "uk",
-      "difficultyLevel": "A2",
-      "duration": 5,
-      "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
       "id": "act-a1-0-matchup",
       "type": "match-up",
-      "title": "Match the Pairs",
-      "description": "Match Ukrainian words to their English meanings.",
+      "title": "Preposition and Case",
+      "description": "Preposition and Case",
       "content": {
         "type": "match-up",
         "pairs": [
           {
-            "left": "над",
-            "right": "above"
+            "left": "без",
+            "right": "genitive"
+          },
+          {
+            "left": "про",
+            "right": "accusative"
+          },
+          {
+            "left": "з (with)",
+            "right": "instrumental"
+          },
+          {
+            "left": "до",
+            "right": "genitive"
+          },
+          {
+            "left": "перед",
+            "right": "instrumental"
+          },
+          {
+            "left": "на (location)",
+            "right": "locative"
+          },
+          {
+            "left": "для",
+            "right": "genitive"
           },
           {
             "left": "між",
-            "right": "between"
+            "right": "instrumental"
           },
           {
-            "left": "навколо",
-            "right": "around"
+            "left": "від",
+            "right": "genitive"
           },
           {
-            "left": "завжди",
-            "right": "always"
+            "left": "під (location)",
+            "right": "instrumental"
           },
           {
-            "left": "мороз",
-            "right": "frost"
+            "left": "після",
+            "right": "genitive"
           },
           {
-            "left": "серед",
-            "right": "among"
-          },
-          {
-            "left": "магазин",
-            "right": "store"
-          },
-          {
-            "left": "замість",
-            "right": "instead of"
-          },
-          {
-            "left": "вздовж",
-            "right": "along"
-          },
-          {
-            "left": "попереду",
-            "right": "in front, ahead"
-          },
-          {
-            "left": "під",
-            "right": "under"
-          },
-          {
-            "left": "поруч",
-            "right": "next to"
+            "left": "завдяки",
+            "right": "dative"
           }
         ],
         "shuffleRight": true
@@ -409,148 +251,337 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
+    },
+    {
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Word Order",
+      "description": "Word Order",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "цукру",
+              "без",
+              "Кава",
+              "ранку",
+              "кожного",
+              "молоком",
+              "з",
+              "гаряча"
+            ],
+            "answer": "Кава без цукру з молоком кожного ранку гаряча.",
+            "translation": "Coffee without sugar with milk every morning is hot."
+          },
+          {
+            "words": [
+              "до",
+              "Я",
+              "великого",
+              "магазину",
+              "нового",
+              "йду",
+              "сьогодні",
+              "ввечері"
+            ],
+            "answer": "Я йду до нового великого магазину сьогодні ввечері.",
+            "translation": "I'm going to the new big store this evening."
+          },
+          {
+            "words": [
+              "тебе",
+              "Це",
+              "для",
+              "особливий",
+              "подарунок",
+              "на",
+              "день",
+              "народження"
+            ],
+            "answer": "Це особливий подарунок для тебе на день народження.",
+            "translation": "This is a special gift for you for your birthday."
+          },
+          {
+            "words": [
+              "столом",
+              "великим",
+              "Кіт",
+              "кухонним",
+              "під",
+              "сидить",
+              "нашим",
+              "тихо"
+            ],
+            "answer": "Кіт тихо сидить під нашим великим кухонним столом.",
+            "translation": "The cat sits quietly under our big kitchen table."
+          },
+          {
+            "words": [
+              "роботи",
+              "важкої",
+              "після",
+              "прийду",
+              "Я",
+              "додому",
+              "сьогодні",
+              "пізно"
+            ],
+            "answer": "Я прийду додому пізно після важкої роботи сьогодні.",
+            "translation": "I'll come home late after hard work today."
+          },
+          {
+            "words": [
+              "тебе",
+              "про",
+              "говорять",
+              "Вони",
+              "часто",
+              "добре",
+              "на",
+              "роботі"
+            ],
+            "answer": "Вони часто говорять про тебе добре на роботі.",
+            "translation": "They often talk about you positively at work."
+          },
+          {
+            "words": [
+              "парку",
+              "центрального",
+              "біля",
+              "Він",
+              "великого",
+              "живе",
+              "міського",
+              "нашого"
+            ],
+            "answer": "Він живе біля нашого великого центрального міського парку.",
+            "translation": "He lives near our big central city park."
+          },
+          {
+            "words": [
+              "нами",
+              "між",
+              "Це",
+              "великий",
+              "секрет",
+              "залишиться",
+              "тільки",
+              "назавжди"
+            ],
+            "answer": "Це великий секрет тільки між нами назавжди залишиться.",
+            "translation": "This big secret will remain only between us forever."
+          },
+          {
+            "words": [
+              "дверима",
+              "головними",
+              "стоїть",
+              "перед",
+              "Вона",
+              "чекає",
+              "і",
+              "мене"
+            ],
+            "answer": "Вона стоїть перед головними дверима і чекає мене.",
+            "translation": "She stands in front of the main door and waits for me."
+          },
+          {
+            "words": [
+              "столом",
+              "робочим",
+              "висить",
+              "над",
+              "Лампа",
+              "яскрава",
+              "моїм",
+              "нова"
+            ],
+            "answer": "Нова яскрава лампа висить над моїм робочим столом.",
+            "translation": "A new bright lamp hangs above my work desk."
+          },
+          {
+            "words": [
+              "кордоном",
+              "живе",
+              "за",
+              "Він",
+              "уже",
+              "багато",
+              "років",
+              "давно"
+            ],
+            "answer": "Він давно живе за кордоном уже багато років.",
+            "translation": "He has been living abroad for many years now."
+          },
+          {
+            "words": [
+              "тобі",
+              "завдяки",
+              "Успіх",
+              "наш",
+              "цей",
+              "великий",
+              "можливий",
+              "став"
+            ],
+            "answer": "Цей наш великий успіх став можливий завдяки тобі.",
+            "translation": "This big success of ours became possible thanks to you."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
       "id": "act-a1-0-quiz",
       "type": "quiz",
-      "title": "Meaning Check",
-      "description": "Choose the correct answer.",
+      "title": "Preposition + Case",
+      "description": "Preposition + Case",
       "content": {
         "type": "quiz",
         "questions": [
           {
-            "question": "What does \"замість\" mean?",
+            "question": "\"Без\" requires which case?",
             "options": [
-              "instead of",
-              "next to",
-              "Accusative: бачити, читати, любити",
-              "bigger"
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
             ],
             "correctIndex": 0,
-            "explanation": "\"замість\" means \"instead of\""
+            "explanation": ""
           },
           {
-            "question": "What does \"навколо\" mean?",
+            "question": "\"Про\" requires which case?",
             "options": [
-              "newspaper",
-              "around",
-              "to be going to",
-              "to have"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"навколо\" means \"around\""
-          },
-          {
-            "question": "What does \"позаду\" mean?",
-            "options": [
-              "to understand",
-              "behind",
-              "who",
-              "food"
-            ],
-            "correctIndex": 1,
-            "explanation": "\"позаду\" means \"behind\""
-          },
-          {
-            "question": "What does \"над\" mean?",
-            "options": [
-              "to understand (perf)",
-              "thirty",
-              "in front of",
-              "above"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"над\" means \"above\""
-          },
-          {
-            "question": "What does \"вздовж\" mean?",
-            "options": [
-              "along",
-              "bag",
-              "lunch",
-              "hryvnia (₴)"
-            ],
-            "correctIndex": 0,
-            "explanation": "\"вздовж\" means \"along\""
-          },
-          {
-            "question": "What does \"посеред\" mean?",
-            "options": [
-              "recipient",
-              "end",
-              "to fall asleep",
-              "in the middle"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"посеред\" means \"in the middle\""
-          },
-          {
-            "question": "What does \"серед\" mean?",
-            "options": [
-              "fog",
-              "beautiful, nice",
-              "among",
-              "video"
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
             ],
             "correctIndex": 2,
-            "explanation": "\"серед\" means \"among\""
+            "explanation": ""
           },
           {
-            "question": "What does \"під\" mean?",
+            "question": "\"Перед\" requires which case?",
             "options": [
-              "back",
-              "to clean, brush",
-              "under",
-              "to put"
+              "Genitive",
+              "Locative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"До\" requires which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Locative"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"З\" (with) requires which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"На\" (location) requires which case?",
+            "options": [
+              "Genitive",
+              "Accusative",
+              "Instrumental",
+              "Locative"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"Завдяки\" requires which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "\"Між\" requires which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"Після\" requires which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Locative"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Під\" (location) requires which case?",
+            "options": [
+              "Genitive",
+              "Accusative",
+              "Instrumental",
+              "Locative"
             ],
             "correctIndex": 2,
-            "explanation": "\"під\" means \"under\""
+            "explanation": ""
           },
           {
-            "question": "What does \"поруч\" mean?",
+            "question": "\"Для\" requires which case?",
             "options": [
-              "to be considered",
-              "discount",
-              "how",
-              "next to"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"поруч\" means \"next to\""
-          },
-          {
-            "question": "What does \"перед\" mean?",
-            "options": [
-              "smart",
-              "calf",
-              "please/you're welcome",
-              "in front of"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"перед\" means \"in front of\""
-          },
-          {
-            "question": "What does \"між\" mean?",
-            "options": [
-              "between",
-              "fitting room",
-              "white",
-              "must, have to"
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
             ],
             "correctIndex": 0,
-            "explanation": "\"між\" means \"between\""
+            "explanation": ""
           },
           {
-            "question": "What does \"попереду\" mean?",
+            "question": "\"В\" (direction) requires which case?",
             "options": [
-              "in front, ahead",
-              "to meet",
-              "without",
-              "to go out, leave"
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Locative"
             ],
-            "correctIndex": 0,
-            "explanation": "\"попереду\" means \"in front, ahead\""
+            "correctIndex": 2,
+            "explanation": ""
           }
         ],
         "shuffleQuestions": true,
@@ -564,66 +595,76 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
       "id": "act-a1-0-truefalse",
       "type": "true-false",
-      "title": "True or False?",
-      "description": "Determine if each statement is true or false.",
+      "title": "Preposition Facts",
+      "description": "Preposition Facts",
       "content": {
         "type": "true-false",
         "statements": [
           {
-            "statement": "\"серед\" means \"why\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"серед\" means \"among\""
-          },
-          {
-            "statement": "\"замість\" means \"instead of\"",
+            "statement": "\"Без\" takes genitive case.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"перед\" means \"fish\"",
+            "statement": "\"З\" always takes instrumental case.",
             "isTrue": false,
-            "explanation": "Incorrect. \"перед\" means \"in front of\""
+            "explanation": ""
           },
           {
-            "statement": "\"між\" means \"color\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"між\" means \"between\""
-          },
-          {
-            "statement": "\"поруч\" means \"next to\"",
+            "statement": "Direction uses accusative, location uses locative.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"посеред\" means \"in the middle\"",
+            "statement": "\"Завдяки\" takes dative case.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"над\" means \"seat, place\"",
+            "statement": "\"На Україні\" uses accusative.",
             "isTrue": false,
-            "explanation": "Incorrect. \"над\" means \"above\""
+            "explanation": ""
           },
           {
-            "statement": "\"попереду\" means \"to gift (impf)\"",
+            "statement": "\"Перед\" takes genitive case.",
             "isTrue": false,
-            "explanation": "Incorrect. \"попереду\" means \"in front, ahead\""
+            "explanation": ""
           },
           {
-            "statement": "\"навколо\" means \"seller (m)\"",
-            "isTrue": false,
-            "explanation": "Incorrect. \"навколо\" means \"around\""
+            "statement": "\"Про\" takes accusative case.",
+            "isTrue": true,
+            "explanation": ""
           },
           {
-            "statement": "\"під\" means \"table\"",
+            "statement": "\"Між\" takes instrumental case.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"До побачення\" uses genitive.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"За кордоном\" uses accusative.",
             "isTrue": false,
-            "explanation": "Incorrect. \"під\" means \"under\""
+            "explanation": ""
+          },
+          {
+            "statement": "\"Після\" takes genitive case.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Під столом\" uses locative case.",
+            "isTrue": false,
+            "explanation": ""
           }
         ]
       },
@@ -634,14 +675,14 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
       "id": "act-a1-0-groupsort",
       "type": "group-sort",
-      "title": "Sort by Case Requirement",
-      "description": "Sort the prepositions by which case they require.",
+      "title": "Cases Required",
+      "description": "Sort these prepositions by the case they require.",
       "content": {
         "type": "group-sort",
         "groups": [
@@ -649,11 +690,10 @@
             "id": "genitive",
             "name": "Genitive",
             "items": [
-              "до",
-              "від",
-              "для",
               "без",
-              "біля",
+              "до",
+              "для",
+              "від",
               "після"
             ]
           },
@@ -661,10 +701,19 @@
             "id": "instrumental",
             "name": "Instrumental",
             "items": [
-              "над",
+              "з (with)",
               "перед",
               "між",
-              "з (with)"
+              "над"
+            ]
+          },
+          {
+            "id": "accusative",
+            "name": "Accusative",
+            "items": [
+              "про",
+              "через",
+              "в (direction)"
             ]
           }
         ],
@@ -677,463 +726,333 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
+    },
+    {
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Direction vs Location",
+      "description": "Direction vs Location",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "Я йду ___ магазин. (direction)",
+            "answer": "в/до"
+          },
+          {
+            "prompt": "Я ___ магазині. (location)",
+            "answer": "в/у"
+          },
+          {
+            "prompt": "Вона їде ___ Київ. (direction)",
+            "answer": "до/в"
+          },
+          {
+            "prompt": "Вона ___ Києві. (location)",
+            "answer": "в/у"
+          },
+          {
+            "prompt": "Він кладе книгу ___ стіл. (direction)",
+            "answer": "на"
+          },
+          {
+            "prompt": "Книга лежить ___ столі. (location)",
+            "answer": "на"
+          },
+          {
+            "prompt": "Ми йдемо ___ пошту. (direction)",
+            "answer": "на"
+          },
+          {
+            "prompt": "Ми ___ пошті. (location)",
+            "answer": "на"
+          },
+          {
+            "prompt": "Кіт біжить ___ стіл. (direction - under)",
+            "answer": "під"
+          },
+          {
+            "prompt": "Кіт сидить ___ столом. (location - under)",
+            "answer": "під"
+          },
+          {
+            "prompt": "Він вішає картину ___ ліжком. (above)",
+            "answer": "над"
+          },
+          {
+            "prompt": "Картина висить ___ ліжком. (above)",
+            "answer": "над"
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
       "id": "act-a1-0-select",
       "type": "select",
-      "title": "Choose Prepositions and Cases",
-      "description": "Select all words that belong to the category.",
+      "title": "Choose the Correct Case",
+      "description": "Select the correct form based on the preposition.",
       "content": {
         "type": "select",
         "items": [
           {
-            "question": "Which prepositions always take genitive?",
+            "question": "Кава без ___.",
             "options": [
               {
-                "text": "до",
+                "text": "цукру (genitive)",
                 "correct": true
               },
               {
-                "text": "у",
+                "text": "цукор (nominative)",
                 "correct": false
               },
               {
-                "text": "від",
-                "correct": true
-              },
-              {
-                "text": "для",
-                "correct": true
-              },
-              {
-                "text": "на",
+                "text": "цукром (instrumental)",
                 "correct": false
               },
               {
-                "text": "без",
-                "correct": true
-              },
-              {
-                "text": "після",
-                "correct": true
-              },
-              {
-                "text": "з (with)",
-                "correct": false
-              },
-              {
-                "text": "біля",
-                "correct": true
-              },
-              {
-                "text": "над",
+                "text": "цукрі (locative)",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which prepositions take instrumental?",
+            "question": "Подарунок для ___.",
             "options": [
               {
-                "text": "до",
+                "text": "мама",
                 "correct": false
               },
               {
-                "text": "над",
+                "text": "мами",
                 "correct": true
               },
               {
-                "text": "перед",
-                "correct": true
-              },
-              {
-                "text": "для",
+                "text": "мамою",
                 "correct": false
               },
               {
-                "text": "між",
-                "correct": true
-              },
-              {
-                "text": "з (with)",
-                "correct": true
-              },
-              {
-                "text": "від",
-                "correct": false
-              },
-              {
-                "text": "без",
-                "correct": false
-              },
-              {
-                "text": "біля",
-                "correct": false
-              },
-              {
-                "text": "після",
+                "text": "мамі",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which prepositions can take TWO different cases?",
+            "question": "Він живе біля ___.",
             "options": [
               {
-                "text": "до",
+                "text": "парк",
                 "correct": false
               },
               {
-                "text": "у",
+                "text": "парку",
                 "correct": true
               },
               {
-                "text": "на",
-                "correct": true
-              },
-              {
-                "text": "для",
+                "text": "парком",
                 "correct": false
               },
               {
-                "text": "під",
-                "correct": true
-              },
-              {
-                "text": "за",
-                "correct": true
-              },
-              {
-                "text": "над",
-                "correct": false
-              },
-              {
-                "text": "перед",
-                "correct": false
-              },
-              {
-                "text": "між",
-                "correct": false
-              },
-              {
-                "text": "біля",
+                "text": "парці",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which questions indicate LOCATION (locative)?",
+            "question": "Ми говоримо про ___.",
             "options": [
               {
-                "text": "Де?",
+                "text": "він",
+                "correct": false
+              },
+              {
+                "text": "його",
+                "correct": false
+              },
+              {
+                "text": "нього",
                 "correct": true
               },
               {
-                "text": "Куди?",
-                "correct": false
-              },
-              {
-                "text": "Звідки?",
-                "correct": false
-              },
-              {
-                "text": "Where?",
-                "correct": true
-              },
-              {
-                "text": "Where to?",
-                "correct": false
-              },
-              {
-                "text": "Where at?",
-                "correct": true
-              },
-              {
-                "text": "Where from?",
-                "correct": false
-              },
-              {
-                "text": "Коли?",
-                "correct": false
-              },
-              {
-                "text": "Чому?",
-                "correct": false
-              },
-              {
-                "text": "Як?",
+                "text": "ним",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which questions indicate MOTION (accusative)?",
+            "question": "Вона сидить між ___.",
             "options": [
               {
-                "text": "Де?",
+                "text": "батьків",
                 "correct": false
               },
               {
-                "text": "Куди?",
+                "text": "батьки",
+                "correct": false
+              },
+              {
+                "text": "батьками",
                 "correct": true
               },
               {
-                "text": "Звідки?",
-                "correct": false
-              },
-              {
-                "text": "Where?",
-                "correct": false
-              },
-              {
-                "text": "Where to?",
-                "correct": true
-              },
-              {
-                "text": "Where at?",
-                "correct": false
-              },
-              {
-                "text": "Where from?",
-                "correct": false
-              },
-              {
-                "text": "Коли?",
-                "correct": false
-              },
-              {
-                "text": "Чому?",
-                "correct": false
-              },
-              {
-                "text": "Як?",
+                "text": "батьках",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which use locative case for location?",
+            "question": "Лампа висить над ___.",
             "options": [
               {
-                "text": "у парку",
+                "text": "стіл",
+                "correct": false
+              },
+              {
+                "text": "столу",
+                "correct": false
+              },
+              {
+                "text": "столом",
                 "correct": true
               },
               {
-                "text": "у парк",
-                "correct": false
-              },
-              {
-                "text": "на столі",
-                "correct": true
-              },
-              {
-                "text": "на стіл",
-                "correct": false
-              },
-              {
-                "text": "в кімнаті",
-                "correct": true
-              },
-              {
-                "text": "в кімнату",
-                "correct": false
-              },
-              {
-                "text": "до парку",
-                "correct": false
-              },
-              {
-                "text": "від парку",
-                "correct": false
-              },
-              {
-                "text": "без парку",
-                "correct": false
-              },
-              {
-                "text": "для парку",
+                "text": "столі",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which use accusative case for motion?",
+            "question": "Завдяки ___ ми перемогли.",
             "options": [
               {
-                "text": "у парку",
+                "text": "ти",
                 "correct": false
               },
               {
-                "text": "у парк",
+                "text": "тобі",
                 "correct": true
               },
               {
-                "text": "на столі",
+                "text": "тебе",
                 "correct": false
               },
               {
-                "text": "на стіл",
-                "correct": true
-              },
-              {
-                "text": "в кімнаті",
-                "correct": false
-              },
-              {
-                "text": "в кімнату",
-                "correct": true
-              },
-              {
-                "text": "над столом",
-                "correct": false
-              },
-              {
-                "text": "перед будинком",
-                "correct": false
-              },
-              {
-                "text": "між деревами",
-                "correct": false
-              },
-              {
-                "text": "до школи",
+                "text": "тобою",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which prepositions indicate direction/movement?",
+            "question": "Він стоїть перед ___.",
             "options": [
               {
-                "text": "до",
-                "correct": true
-              },
-              {
-                "text": "біля",
+                "text": "двері",
                 "correct": false
               },
               {
-                "text": "від",
-                "correct": true
-              },
-              {
-                "text": "у (motion)",
-                "correct": true
-              },
-              {
-                "text": "на (motion)",
-                "correct": true
-              },
-              {
-                "text": "над",
+                "text": "дверей",
                 "correct": false
               },
               {
-                "text": "перед",
-                "correct": false
-              },
-              {
-                "text": "між",
-                "correct": false
-              },
-              {
-                "text": "під (motion)",
+                "text": "дверима",
                 "correct": true
               },
               {
-                "text": "за (motion)",
-                "correct": true
-              }
-            ]
-          },
-          {
-            "question": "Which prepositions indicate spatial relationships?",
-            "options": [
-              {
-                "text": "до",
-                "correct": false
-              },
-              {
-                "text": "над",
-                "correct": true
-              },
-              {
-                "text": "під",
-                "correct": true
-              },
-              {
-                "text": "для",
-                "correct": false
-              },
-              {
-                "text": "перед",
-                "correct": true
-              },
-              {
-                "text": "за",
-                "correct": true
-              },
-              {
-                "text": "між",
-                "correct": true
-              },
-              {
-                "text": "біля",
-                "correct": true
-              },
-              {
-                "text": "без",
-                "correct": false
-              },
-              {
-                "text": "після",
+                "text": "дверях",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which combine with genitive to mean \"from\"?",
+            "question": "Це секрет між ___.",
             "options": [
               {
-                "text": "у",
+                "text": "ми",
                 "correct": false
               },
               {
-                "text": "з",
+                "text": "нас",
+                "correct": false
+              },
+              {
+                "text": "нами",
                 "correct": true
               },
               {
-                "text": "від",
+                "text": "нам",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Вона йде до ___.",
+            "options": [
+              {
+                "text": "магазин",
+                "correct": false
+              },
+              {
+                "text": "магазину",
                 "correct": true
               },
               {
-                "text": "до",
+                "text": "магазином",
                 "correct": false
               },
               {
-                "text": "на",
+                "text": "магазині",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Після ___ я прийду.",
+            "options": [
+              {
+                "text": "робота",
                 "correct": false
               },
               {
-                "text": "для",
+                "text": "роботи",
+                "correct": true
+              },
+              {
+                "text": "роботою",
                 "correct": false
               },
               {
-                "text": "без",
+                "text": "роботі",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "question": "Кіт сидить під ___.",
+            "options": [
+              {
+                "text": "стіл",
                 "correct": false
               },
               {
-                "text": "над",
+                "text": "столу",
                 "correct": false
               },
               {
-                "text": "перед",
-                "correct": false
+                "text": "столом",
+                "correct": true
               },
               {
-                "text": "між",
+                "text": "столі",
                 "correct": false
               }
             ]
@@ -1147,120 +1066,153 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     },
     {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Arrange Words into Sentences",
-      "description": "Put the words in the correct order to form grammatically correct sentences.",
+      "id": "act-a1-0-quiz",
+      "type": "quiz",
+      "title": "Preposition Mastery",
+      "description": "Preposition Mastery",
       "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
+        "type": "quiz",
+        "questions": [
           {
-            "words": [
-              "парку",
-              "Я",
-              "у",
-              "гуляю"
+            "question": "\"Без\" takes which case?",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
             ],
-            "answer": "Я гуляю у парку.",
-            "translation": "I walk in the park."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "йду",
-              "парк",
-              "у",
-              "Я"
+            "question": "When \"в\" means direction, it takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Locative"
             ],
-            "answer": "Я йду у парк.",
-            "translation": "I go to the park."
+            "correctIndex": 2,
+            "explanation": ""
           },
           {
-            "words": [
+            "question": "When \"в\" means location, it takes:",
+            "options": [
+              "Genitive",
+              "Accusative",
+              "Instrumental",
+              "Locative"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"З\" meaning \"with\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"З\" meaning \"from\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Завдяки\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "\"Перед\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "\"Про\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 2,
+            "explanation": ""
+          },
+          {
+            "question": "\"Після\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Між\" takes:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          },
+          {
+            "question": "Which preposition can take two different cases?",
+            "options": [
+              "без",
+              "для",
               "на",
-              "книга",
-              "столі",
-              "лежить"
+              "перед"
             ],
-            "answer": "Книга лежить на столі.",
-            "translation": "The book lies on the table."
+            "correctIndex": 2,
+            "explanation": ""
           },
           {
-            "words": [
-              "книгу",
-              "стіл",
-              "кладу",
-              "на",
-              "Я"
+            "question": "\"До побачення\" uses:",
+            "options": [
+              "Genitive",
+              "Dative",
+              "Accusative",
+              "Instrumental"
             ],
-            "answer": "Я кладу книгу на стіл.",
-            "translation": "I put the book on the table."
-          },
-          {
-            "words": [
-              "парку",
-              "до",
-              "Ми",
-              "йдемо"
-            ],
-            "answer": "Ми йдемо до парку.",
-            "translation": "We go to the park."
-          },
-          {
-            "words": [
-              "парку",
-              "Вони",
-              "від",
-              "приїхали"
-            ],
-            "answer": "Вони приїхали від парку.",
-            "translation": "They came from the park."
-          },
-          {
-            "words": [
-              "над",
-              "літає",
-              "містом",
-              "Птах"
-            ],
-            "answer": "Птах літає над містом.",
-            "translation": "A bird flies above the city."
-          },
-          {
-            "words": [
-              "перед",
-              "будинком",
-              "стоїть",
-              "Машина"
-            ],
-            "answer": "Машина стоїть перед будинком.",
-            "translation": "The car stands in front of the building."
-          },
-          {
-            "words": [
-              "парком",
-              "біля",
-              "живу",
-              "Я"
-            ],
-            "answer": "Я живу біля парку.",
-            "translation": "I live near the park."
-          },
-          {
-            "words": [
-              "між",
-              "деревами",
-              "Діти",
-              "граються"
-            ],
-            "answer": "Діти граються між деревами.",
-            "translation": "Children play between the trees."
+            "correctIndex": 0,
+            "explanation": ""
           }
-        ]
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
       },
       "subject": "language",
       "owner": "curricula-opus",
@@ -1269,81 +1221,21 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.968Z",
-      "modifiedAt": "2025-12-05T01:15:57.968Z"
+      "createdAt": "2025-12-06T00:40:26.237Z",
+      "modifiedAt": "2025-12-06T00:40:26.237Z"
     }
   ],
   "vocabulary": {
     "moduleId": "mod-uk-A2-7",
     "level": "A2",
     "phase": "A2.1",
-    "wordCount": 30,
-    "newWordCount": 30,
+    "wordCount": 24,
+    "newWordCount": 24,
     "reviewWordCount": 0,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "words": [
       {
-        "id": "v-u-/-v-0-0",
-        "uk": "у / в",
-        "en": "in, at, into",
-        "pos": "prep",
-        "ipa": "/u/ /v/",
-        "note": "Loc/Acc",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-na-0-1",
-        "uk": "на",
-        "en": "on, at, onto",
-        "pos": "prep",
-        "ipa": "/nɑ/",
-        "note": "Loc/Acc",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-z-/-iz-/-zi-0-2",
-        "uk": "з / із / зі",
-        "en": "from, with",
-        "pos": "prep",
-        "ipa": "/z/ /iz/ /zʲi/",
-        "note": "Gen/Instr",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-do-0-3",
-        "uk": "до",
-        "en": "to, until",
-        "pos": "prep",
-        "ipa": "/dɔ/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-vid-0-4",
-        "uk": "від",
-        "en": "from",
-        "pos": "prep",
-        "ipa": "/vʲid/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-dlya-0-5",
-        "uk": "для",
-        "en": "for",
-        "pos": "prep",
-        "ipa": "/dlʲɑ/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-bez-0-6",
+        "id": "v-bez-0-0",
         "uk": "без",
         "en": "without",
         "pos": "prep",
@@ -1353,22 +1245,82 @@
         "firstModule": 0
       },
       {
-        "id": "v-pid-0-7",
-        "uk": "під",
-        "en": "under",
+        "id": "v-do-0-1",
+        "uk": "до",
+        "en": "to, until",
         "pos": "prep",
-        "ipa": "/pʲid/",
-        "note": "Acc/Instr",
+        "ipa": "/do/",
+        "note": "+ gen",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-nad-0-8",
-        "uk": "над",
-        "en": "above",
+        "id": "v-vid-0-2",
+        "uk": "від",
+        "en": "from",
         "pos": "prep",
-        "ipa": "/nɑd/",
-        "note": "+ instr",
+        "ipa": "/wid/",
+        "note": "+ gen",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-dlya-0-3",
+        "uk": "для",
+        "en": "for",
+        "pos": "prep",
+        "ipa": "/dlʲa/",
+        "note": "+ gen",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pislya-0-4",
+        "uk": "після",
+        "en": "after",
+        "pos": "prep",
+        "ipa": "/ˈpislʲa/",
+        "note": "+ gen",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-bilya-0-5",
+        "uk": "біля",
+        "en": "near",
+        "pos": "prep",
+        "ipa": "/ˈbilʲa/",
+        "note": "+ gen",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-zamistь-0-6",
+        "uk": "замість",
+        "en": "instead of",
+        "pos": "prep",
+        "ipa": "/zaˈmistʲ/",
+        "note": "+ gen",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-pro-0-7",
+        "uk": "про",
+        "en": "about",
+        "pos": "prep",
+        "ipa": "/pro/",
+        "note": "+ acc",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-cherez-0-8",
+        "uk": "через",
+        "en": "through, because",
+        "pos": "prep",
+        "ipa": "/ˈtʃɛrɛz/",
+        "note": "+ acc",
         "isNew": true,
         "firstModule": 0
       },
@@ -1378,142 +1330,82 @@
         "en": "in front of",
         "pos": "prep",
         "ipa": "/ˈpɛrɛd/",
-        "note": "+ instr",
+        "note": "+ inst",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-za-0-10",
-        "uk": "за",
-        "en": "behind, for",
-        "pos": "prep",
-        "ipa": "/zɑ/",
-        "note": "Acc/Instr",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-mizh-0-11",
+        "id": "v-mizh-0-10",
         "uk": "між",
         "en": "between",
         "pos": "prep",
-        "ipa": "/mʲiʒ/",
-        "note": "+ instr",
+        "ipa": "/miʒ/",
+        "note": "+ inst",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-bilya-0-12",
-        "uk": "біля",
-        "en": "near, by",
+        "id": "v-nad-0-11",
+        "uk": "над",
+        "en": "above, over",
         "pos": "prep",
-        "ipa": "/ˈbʲilʲɑ/",
-        "note": "+ gen",
+        "ipa": "/nad/",
+        "note": "+ inst",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-kolo-0-13",
-        "uk": "коло",
-        "en": "near, around",
+        "id": "v-pid-0-12",
+        "uk": "під",
+        "en": "under",
         "pos": "prep",
-        "ipa": "/ˈkɔlɔ/",
-        "note": "+ gen",
+        "ipa": "/pid/",
+        "note": "+ inst",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-poruch-0-14",
-        "uk": "поруч",
-        "en": "next to",
-        "pos": "adv",
-        "ipa": "/ˈpɔrutʃ/",
-        "note": "з + instr",
+        "id": "v-za-0-13",
+        "uk": "за",
+        "en": "behind, for",
+        "pos": "prep",
+        "ipa": "/za/",
+        "note": "+ inst/acc",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-navproty-0-15",
-        "uk": "навпроти",
+        "id": "v-zavdyaky-0-14",
+        "uk": "завдяки",
+        "en": "thanks to",
+        "pos": "prep",
+        "ipa": "/zawˈdʲakɪ/",
+        "note": "+ dat",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-vsuperech-0-15",
+        "uk": "всупереч",
+        "en": "despite",
+        "pos": "prep",
+        "ipa": "/wsuˈpɛrɛtʃ/",
+        "note": "+ dat",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-naproty-0-16",
+        "uk": "напроти",
         "en": "opposite",
         "pos": "prep",
-        "ipa": "/nɑuˈprɔtɪ/",
-        "note": "+ gen",
+        "ipa": "/ˈnaprotɪ/",
+        "note": "+ gen, also навпроти",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-pozadu-0-16",
-        "uk": "позаду",
-        "en": "behind",
-        "pos": "prep",
-        "ipa": "/pɔˈzɑdu/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-poperedu-0-17",
-        "uk": "попереду",
-        "en": "in front, ahead",
-        "pos": "prep",
-        "ipa": "/pɔpɛˈrɛdu/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-posered-0-18",
-        "uk": "посеред",
-        "en": "in the middle",
-        "pos": "prep",
-        "ipa": "/pɔˈsɛrɛd/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-sered-0-19",
-        "uk": "серед",
-        "en": "among",
-        "pos": "prep",
-        "ipa": "/sɛˈrɛd/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-vzdovzh-0-20",
-        "uk": "вздовж",
-        "en": "along",
-        "pos": "prep",
-        "ipa": "/vzdɔvʒ/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-upoperek-0-21",
-        "uk": "упоперек",
-        "en": "across",
-        "pos": "prep",
-        "ipa": "/upɔˈpɛrɛk/",
-        "note": "+ gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-cherez-0-22",
-        "uk": "через",
-        "en": "through, across",
-        "pos": "prep",
-        "ipa": "/ˈtʃɛrɛz/",
-        "note": "+ acc",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-krizь-0-23",
+        "id": "v-krizь-0-17",
         "uk": "крізь",
         "en": "through",
         "pos": "prep",
@@ -1523,62 +1415,65 @@
         "firstModule": 0
       },
       {
-        "id": "v-navkolo-0-24",
-        "uk": "навколо",
-        "en": "around",
+        "id": "v-poruch-0-18",
+        "uk": "поруч",
+        "en": "next to",
         "pos": "prep",
-        "ipa": "/nɑuˈkɔlɔ/",
-        "note": "+ gen",
+        "ipa": "/ˈporutʃ/",
+        "note": "+ з + inst",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-dovkola-0-25",
-        "uk": "довкола",
-        "en": "around",
-        "pos": "prep",
-        "ipa": "/dɔuˈkɔlɑ/",
-        "note": "+ gen",
+        "id": "v-sumniv-0-19",
+        "uk": "сумнів",
+        "en": "doubt",
+        "pos": "noun",
+        "ipa": "/ˈsumniv/",
+        "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-zamistь-0-26",
-        "uk": "замість",
-        "en": "instead of",
-        "pos": "prep",
-        "ipa": "/ˈzɑmʲisʲtʲ/",
-        "note": "+ gen",
+        "id": "v-vkhid-0-20",
+        "uk": "вхід",
+        "en": "entrance",
+        "pos": "noun",
+        "ipa": "/wxit/",
+        "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-okrim-0-27",
-        "uk": "окрім",
-        "en": "except",
-        "pos": "prep",
-        "ipa": "/ɔˈkrʲim/",
-        "note": "+ gen",
+        "id": "v-kordon-0-21",
+        "uk": "кордон",
+        "en": "border",
+        "pos": "noun",
+        "ipa": "/korˈdon/",
+        "gender": "m",
+        "note": "за кордоном",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-krim-0-28",
-        "uk": "крім",
-        "en": "besides",
-        "pos": "prep",
-        "ipa": "/krʲim/",
-        "note": "+ gen",
+        "id": "v-son-0-22",
+        "uk": "сон",
+        "en": "sleep, dream",
+        "pos": "noun",
+        "ipa": "/son/",
+        "gender": "m",
+        "note": "перед сном",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-proty-0-29",
-        "uk": "проти",
-        "en": "against",
-        "pos": "prep",
-        "ipa": "/ˈprɔtɪ/",
-        "note": "+ gen",
+        "id": "v-dumka-0-23",
+        "uk": "думка",
+        "en": "thought, opinion",
+        "pos": "noun",
+        "ipa": "/ˈdumka/",
+        "gender": "f",
+        "note": "на мою думку",
         "isNew": true,
         "firstModule": 0
       }

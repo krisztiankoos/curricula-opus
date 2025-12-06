@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 03: The Dative III | Ukrainian A2</title>
+  <title>Module 03: Dative Verbs | Ukrainian A2</title>
   <style>
 :root { --primary: #1a5fb4; --primary-light: #3584e4; --success: #26a269; --warning: #e5a50a; --danger: #c01c28; --bg: #fafafa; --card-bg: #fff; --text: #1e1e1e; --text-muted: #5e5e5e; --border: #e0e0e0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -439,6 +439,32 @@ footer {
 .select-feedback .correct-text { color: var(--success); font-weight: 600; }
 .select-feedback .wrong-text { color: var(--danger); }
 
+/* Anagram Activity - Letter reordering to form words */
+.anagram-question { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.anagram-question.answered .anagram-letter { cursor: default; }
+.anagram-question.correct { border-color: var(--success); background: #f8fff8; }
+.anagram-question.wrong { border-color: var(--danger); background: #fff8f8; }
+
+.anagram-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+
+.anagram-letter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; flex: 1; min-height: 52px; padding: 0.25rem; border-radius: 8px; background: #f8f9fa; }
+.anagram-letter-row.correct { background: #e8f8f0; }
+.anagram-letter-row.wrong { background: #fde8e8; }
+
+.anagram-letter { background: var(--primary); color: white; border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 1.5rem; font-weight: 600; cursor: grab; user-select: none; transition: transform 0.1s, box-shadow 0.1s; min-width: 2.5rem; text-align: center; }
+.anagram-letter:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+.anagram-letter:active { cursor: grabbing; }
+.anagram-letter.dragging { opacity: 0.5; transform: scale(1.05); }
+
+.anagram-letter.touch-clone { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+.anagram-actions { display: flex; gap: 0.5rem; }
+.anagram-feedback { width: 100%; padding: 0.5rem 0 0 2.5rem; display: none; }
+.anagram-feedback.show { display: block; }
+.anagram-feedback .correct-text { color: var(--success); font-weight: 600; }
+.anagram-feedback .wrong-text { color: var(--danger); }
+.anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
+
   </style>
 </head>
 <body>
@@ -452,17 +478,18 @@ footer {
     </div>
   </div>
   <nav class="nav">
-    <h1>Module 03: The Dative III</h1>
+    <h1>Module 03: Dative Verbs</h1>
     <div class="nav-tabs">
       <button class="nav-tab active" data-section="lesson">Lesson</button>
       <button class="nav-tab" data-section="activity-0">1. Fill</button>
-      <button class="nav-tab" data-section="activity-1">2. Order</button>
-      <button class="nav-tab" data-section="activity-2">3. Match</button>
+      <button class="nav-tab" data-section="activity-1">2. Match</button>
+      <button class="nav-tab" data-section="activity-2">3. Order</button>
       <button class="nav-tab" data-section="activity-3">4. Quiz</button>
       <button class="nav-tab" data-section="activity-4">5. T/F</button>
-      <button class="nav-tab" data-section="activity-5">6. Fill</button>
-      <button class="nav-tab" data-section="activity-6">7. Sort</button>
-      <button class="nav-tab" data-section="activity-7">8. Order</button>
+      <button class="nav-tab" data-section="activity-5">6. Sort</button>
+      <button class="nav-tab" data-section="activity-6">7. Fill</button>
+      <button class="nav-tab" data-section="activity-7">8. Select</button>
+      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -471,28 +498,25 @@ footer {
     <section id="lesson" class="section active">
       <div class="lesson-header">
         <span class="level-badge">A2 · A2.1</span>
-        <h2 style="font-size:2rem;margin:0.5rem 0">The Dative III</h2>
-        <p style="color:var(--text-muted)">Verbs + Dative</p>
+        <h2 style="font-size:2rem;margin:0.5rem 0">Dative Verbs</h2>
+        <p style="color:var(--text-muted)">Verbs That Demand the Dative</p>
       </div>
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><h2 id="warmup">warm-up</h2>
-<h3 id="notjustgiveandtell">Not Just "Give" and "Tell"</h3>
-<p>In Modules 31-32, you used dative with verbs like давати (give) and казати (tell). But many more Ukrainian verbs require dative - and they're not always the same as English!</p>
-<p><strong>The surprise:</strong></p>
-<ul>
-<li>English: I help <strong>him</strong>. (accusative-like)</li>
-<li>Ukrainian: Я допомагаю <strong>йому</strong>. (dative!)</li>
-</ul>
-<p>Some verbs that take direct objects in English use dative in Ukrainian. Today you'll learn which ones - and why.</p>
+      <div class="md-content"><p>Some Ukrainian verbs are inseparable from the dative case — they simply won't work without it! Think about it: when you help someone, thank someone, or believe someone, there's always a <strong>recipient</strong> of that action. Ukrainian grammar makes this crystal clear by requiring the dative case.</p>
 <blockquote>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>The dative case originally marked the "receiver" of an action. In Ukrainian, this extends to anyone who <em>benefits</em> from or is <em>affected</em> by an action - even if they're not receiving a physical object. That's why допомагати (help), дякувати (thank), and заважати (disturb) all use dative!</p>
+  <p>In English, we say "I help <em>him</em>" — the same object form used for "I see <em>him</em>." But Ukrainian distinguishes: "Я бачу <em>його</em>" (I see him - accusative) vs. "Я допомагаю <em>йому</em>" (I help him - dative). The dative signals that the person is <em>receiving</em> the help, not being acted upon directly. This distinction reveals Ukrainian's rich system of showing relationships through grammar!</p>
 </blockquote>
-<h2 id="presentation">presentation</h2>
-<h3 id="coredativeverbs">Core Dative Verbs</h3>
-<p>These verbs ALWAYS take dative objects:</p>
+<p>In this module, you'll master the verbs that demand a dative object. By the end, you'll naturally know whether to say "допомагаю <strong>мамі</strong>" or "люблю <strong>маму</strong>" — and why they're different.</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Дієслова з давальним відмінком</h3>
+      <div class="md-content"><h2 id="verbsthattakeonlydative">Verbs That Take Only Dative</h2>
+<p>These verbs answer the question <strong>кому?</strong> (to whom?) and take ONLY a dative object — no accusative needed:</p>
 <table>
 <thead>
 <tr>
@@ -503,241 +527,97 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>допомагати</td>
+<td><strong>допомагати</strong></td>
 <td>to help</td>
-<td>Допомагаю <strong>братові</strong>.</td>
+<td>Я допомагаю мамі.</td>
 </tr>
 <tr>
-<td>дякувати</td>
-<td>to thank</td>
-<td>Дякую <strong>вам</strong>!</td>
-</tr>
-<tr>
-<td>відповідати</td>
-<td>to answer</td>
-<td>Відповідаю <strong>вчителеві</strong>.</td>
-</tr>
-<tr>
-<td>заважати</td>
+<td><strong>заважати</strong></td>
 <td>to disturb</td>
-<td>Не заважай <strong>мені</strong>!</td>
+<td>Не заважай братові!</td>
 </tr>
 <tr>
-<td>радити</td>
-<td>to advise</td>
-<td>Раджу <strong>тобі</strong> відпочити.</td>
+<td><strong>дякувати</strong></td>
+<td>to thank</td>
+<td>Дякую вам за все.</td>
 </tr>
 <tr>
-<td>телефонувати</td>
-<td>to phone</td>
-<td>Телефоную <strong>мамі</strong>.</td>
+<td><strong>вірити</strong></td>
+<td>to believe</td>
+<td>Я вірю тобі.</td>
 </tr>
 <tr>
-<td>належати</td>
+<td><strong>довіряти</strong></td>
+<td>to trust</td>
+<td>Вона довіряє другу.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>📜 <strong>History Bite</strong></p>
+  <p>The verb <strong>дякувати</strong> (to thank) comes from the Proto-Slavic root meaning "to praise." When you say "Дякую тобі," you're literally "giving praise TO you" — the dative makes the recipient clear. This is why Ukrainians often respond with "Нема за що" (There's nothing [to thank] for) or simply "Будь ласка" (Please/You're welcome).</p>
+</blockquote>
+<p><strong>Why dative, not accusative?</strong></p>
+<p>These verbs express relationships where the person <strong>receives</strong> something abstract — help, trust, thanks, belief. The action doesn't directly affect them the way hitting or seeing would. Compare:</p>
+<ul>
+<li>Я <strong>бачу</strong> маму. (accusative — direct perception)</li>
+<li>Я <strong>допомагаю</strong> мамі. (dative — she receives help)</li>
+<li>Я <strong>люблю</strong> тебе. (accusative — direct emotion)</li>
+<li>Я <strong>вірю</strong> тобі. (dative — you receive my belief)</li>
+</ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner</strong></p>
+  <p>Ukrainian gratitude runs deep. "Дякую" is for everyday thanks, but for profound gratitude, Ukrainians say "Щиро дякую" (I sincerely thank you) or even "Дякую від щирого серця" (I thank you from a sincere heart). All of these use the dative to show WHO receives your thanks.</p>
+</blockquote>
+<h3 id="moredativeonlyverbs">More Dative-Only Verbs</h3>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>заздрити</strong></td>
+<td>to envy</td>
+<td>Він заздрить сусідові.</td>
+</tr>
+<tr>
+<td><strong>співчувати</strong></td>
+<td>to sympathize</td>
+<td>Ми співчуваємо їй.</td>
+</tr>
+<tr>
+<td><strong>личити</strong></td>
+<td>to suit (appearance)</td>
+<td>Ця сукня личить їй.</td>
+</tr>
+<tr>
+<td><strong>шкодити</strong></td>
+<td>to harm</td>
+<td>Куріння шкодить здоров'ю.</td>
+</tr>
+<tr>
+<td><strong>належати</strong></td>
 <td>to belong</td>
-<td>Це належить <strong>йому</strong>.</td>
+<td>Ця книжка належить мені.</td>
 </tr>
 <tr>
-<td>подобатися</td>
-<td>to please/like</td>
-<td>Це <strong>мені</strong> подобається.</td>
+<td><strong>радіти</strong></td>
+<td>to rejoice</td>
+<td>Діти радіють подарункам.</td>
 </tr>
 <tr>
-<td>вдаватися</td>
-<td>to succeed</td>
-<td><strong>Йому</strong> вдається все.</td>
-</tr>
-<tr>
-<td>бракувати</td>
-<td>to lack</td>
-<td><strong>Мені</strong> бракує часу.</td>
+<td><strong>дивуватися</strong></td>
+<td>to be surprised</td>
+<td>Я дивуюся її терпінню.</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: The "Beneficiary" Test</strong></p>
-  <p>If someone benefits from, is affected by, or receives the result of an action - even without getting a physical object - use dative. Think: "Who does this action happen <em>to</em> or <em>for</em>?"</p>
-</blockquote>
-<h3 id="verbsofcommunication">Verbs of Communication</h3>
-<p>Speaking and writing to someone uses dative:</p>
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>відповідати</td>
-<td>відповідати</td>
-<td>відповісти</td>
-<td>Відповідаю <strong>професорові</strong>.</td>
-</tr>
-<tr>
-<td>писати</td>
-<td>писати</td>
-<td>написати</td>
-<td>Пишу <strong>другові</strong>.</td>
-</tr>
-<tr>
-<td>говорити</td>
-<td>говорити</td>
-<td>сказати</td>
-<td>Кажу <strong>тобі</strong> правду.</td>
-</tr>
-<tr>
-<td>дзвонити</td>
-<td>дзвонити</td>
-<td>подзвонити</td>
-<td>Дзвоню <strong>батькам</strong>.</td>
-</tr>
-<tr>
-<td>повідомляти</td>
-<td>повідомляти</td>
-<td>повідомити</td>
-<td>Повідомлю <strong>вам</strong> завтра.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Pattern:</strong> говорити/казати/писати + DATIVE (person) + ACCUSATIVE (what)</p>
-<ul>
-<li>Я кажу <strong>тобі</strong> (dat) <strong>правду</strong> (acc). - I tell you the truth.</li>
-<li>Вона пише <strong>другові</strong> (dat) <strong>листа</strong> (acc). - She writes a letter to a friend.</li>
-</ul>
-<blockquote>
-  <p>📜 <strong>History Bite: Dative of Interest</strong></p>
-  <p>Slavic languages preserved an ancient Indo-European pattern called the "dative of interest" - marking who has a stake in an action. Latin had it, Greek had it, Sanskrit had it. When you say "Мені подобається" (to me it pleases), you're using grammar that's over 5,000 years old!</p>
-</blockquote>
-<h3 id="impersonaldativeconstructions">Impersonal + Dative Constructions</h3>
-<p>Many impersonal expressions use dative for the person experiencing something:</p>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
-<th>Meaning</th>
-<th>Structure</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>мені холодно</td>
-<td>I'm cold</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>тобі сумно</td>
-<td>you're sad</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>йому важко</td>
-<td>it's hard for him</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>їй весело</td>
-<td>she's having fun</td>
-<td>DAT + adverb</td>
-</tr>
-<tr>
-<td>нам потрібно</td>
-<td>we need</td>
-<td>DAT + потрібно</td>
-</tr>
-<tr>
-<td>вам треба</td>
-<td>you must</td>
-<td>DAT + треба</td>
-</tr>
-<tr>
-<td>їм можна</td>
-<td>they may</td>
-<td>DAT + можна</td>
-</tr>
-<tr>
-<td>мені не можна</td>
-<td>I mustn't</td>
-<td>DAT + не можна</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Мені</strong> холодно. - I'm cold. (lit: To me [it's] cold.)</li>
-<li><strong>Тобі</strong> потрібна допомога? - Do you need help?</li>
-<li><strong>Йому</strong> важко це зрозуміти. - It's hard for him to understand this.</li>
-<li><strong>Їм</strong> не можна палити тут. - They can't smoke here.</li>
-</ul>
-<blockquote>
-  <p>🎭 <strong>Culture Corner: Indirect Expression</strong></p>
-  <p>Ukrainian often expresses personal states indirectly: "Мені сумно" (to me it's sad) rather than "I am sad." This isn't evasion - it's a different way of experiencing: the feeling happens <em>to</em> you rather than <em>being</em> you. This subtle difference reflects a worldview where emotions are things that affect us, not just things we are.</p>
-</blockquote>
-<h3 id="dativevsaccusativethekeydifference">Dative vs Accusative: The Key Difference</h3>
-<p>Some verbs look similar but take different cases:</p>
-<table>
-<thead>
-<tr>
-<th>Dative verb</th>
-<th>Meaning</th>
-<th>Accusative verb</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати <strong>йому</strong></td>
-<td>help him</td>
-<td>бачити <strong>його</strong></td>
-<td>see him</td>
-</tr>
-<tr>
-<td>відповідати <strong>їй</strong></td>
-<td>answer her</td>
-<td>питати <strong>її</strong></td>
-<td>ask her</td>
-</tr>
-<tr>
-<td>дякувати <strong>нам</strong></td>
-<td>thank us</td>
-<td>любити <strong>нас</strong></td>
-<td>love us</td>
-</tr>
-<tr>
-<td>радити <strong>вам</strong></td>
-<td>advise you</td>
-<td>знати <strong>вас</strong></td>
-<td>know you</td>
-</tr>
-<tr>
-<td>заважати <strong>їм</strong></td>
-<td>disturb them</td>
-<td>чути <strong>їх</strong></td>
-<td>hear them</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Test:</strong></p>
-<ul>
-<li>Accusative = direct action ON someone (see, hear, love, know)</li>
-<li>Dative = action AFFECTS/BENEFITS someone (help, thank, answer, advise)</li>
-</ul>
-<blockquote>
-  <p>⚡ <strong>Pro Tip: Memorize These Pairs</strong></p>
-  <p>Learn these dative verbs as a group:</p>
-  <ul>
-  <li><strong>Д</strong>опомагати (help)</li>
-  <li><strong>Д</strong>якувати (thank)</li>
-  <li><strong>В</strong>ідповідати (answer)</li>
-  <li><strong>З</strong>аважати (disturb)</li>
-  <li><strong>Р</strong>адити (advise)</li>
-  </ul>
-  <p>Notice they're about social interaction, not physical action!</p>
-</blockquote>
-<h3 id="verbsofhappeningsucceeding">Verbs of Happening/Succeeding</h3>
-<p>When things happen TO someone or succeed FOR someone:</p>
+<h2 id="verbswithdativeinfinitive">Verbs with Dative + Infinitive</h2>
+<p>Some verbs take a dative person AND an infinitive (what to do). These express permission, prohibition, or advice:</p>
 <table>
 <thead>
 <tr>
@@ -748,165 +628,284 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>вдаватися</td>
-<td>to succeed</td>
-<td><strong>Мені</strong> вдається це зробити.</td>
+<td><strong>радити</strong></td>
+<td>to advise</td>
+<td>Я раджу <strong>тобі</strong> відпочити. (I advise you to rest.)</td>
 </tr>
 <tr>
-<td>щастити</td>
-<td>to be lucky</td>
-<td><strong>Йому</strong> завжди щастить!</td>
+<td><strong>дозволяти</strong></td>
+<td>to allow</td>
+<td>Батько дозволяє <strong>дітям</strong> гуляти. (Father allows the children to walk.)</td>
 </tr>
 <tr>
-<td>снитися</td>
-<td>to dream (appear in dream)</td>
-<td><strong>Їй</strong> сниться море.</td>
+<td><strong>забороняти</strong></td>
+<td>to forbid</td>
+<td>Лікар забороняє <strong>йому</strong> палити. (Doctor forbids him to smoke.)</td>
 </tr>
 <tr>
-<td>здаватися</td>
-<td>to seem</td>
-<td><strong>Нам</strong> здається, що…</td>
+<td><strong>заважати</strong></td>
+<td>to prevent</td>
+<td>Шум заважає <strong>мені</strong> спати. (Noise prevents me from sleeping.)</td>
 </tr>
 <tr>
-<td>личити</td>
-<td>to suit/become</td>
-<td>Ця сукня <strong>їй</strong> личить.</td>
+<td><strong>допомагати</strong></td>
+<td>to help</td>
+<td>Вона допомагає <strong>бабусі</strong> готувати. (She helps grandma cook.)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Мені</strong> сниться Україна. - I dream of Ukraine. (lit: Ukraine appears in my dream)</li>
-<li><strong>Тобі</strong> це личить! - This suits you!</li>
-<li><strong>Їм</strong> здається, що все добре. - It seems to them that everything's fine.</li>
-</ul>
-<h3 id="thelackingconstruction">The "Lacking" Construction</h3>
-<p>To express lacking or missing, use <strong>бракувати</strong> + dative + genitive:</p>
-<p><strong>Structure:</strong> DATIVE (who lacks) + бракувати + GENITIVE (what's lacking)</p>
-<ul>
-<li><strong>Мені</strong> бракує <strong>часу</strong>. - I lack time.</li>
-<li><strong>Тобі</strong> бракує <strong>досвіду</strong>. - You lack experience.</li>
-<li><strong>Йому</strong> бракує <strong>грошей</strong>. - He lacks money.</li>
-<li><strong>Нам</strong> бракувало <strong>інформації</strong>. - We lacked information.</li>
-</ul>
 <blockquote>
   <p>💡 <strong>Did You Know?</strong></p>
-  <p>The verb бракувати comes from German "brauchen" (to need) and entered Ukrainian through Polish. It perfectly captures the dative sense: "to me there is lacking of time" rather than "I lack time."</p>
+  <p>Notice the pattern: the dative marks WHO receives the advice/permission/prohibition, while the infinitive shows WHAT they should (or shouldn't) do. This is different from English where "I advise <strong>you</strong> to rest" uses an object pronoun, not a dative!</p>
+  <p>⚡ <strong>Pro Tip</strong></p>
+  <p>Memorize this pattern: if the action involves something being <strong>directed toward</strong> a person (help, thanks, envy, sympathy) rather than <strong>done to</strong> them (hitting, seeing, loving), it probably takes dative. The dative is the case of <strong>beneficiaries and recipients</strong>!</p>
 </blockquote>
-<h2 id="practice">practice</h2>
-<h3 id="identifythedativeverb">Identify the Dative Verb</h3>
-<p>Which verbs require dative?</p>
-<ol>
-<li><p>допомагати ✓ (help</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-0', this)">Показати відповідь</button><div class="answer-block" id="ans-0"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="2">
-<li><p>бачити ✗ (see</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-1', this)">Показати відповідь</button><div class="answer-block" id="ans-1"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="3">
-<li><p>відповідати ✓ (answer</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-2', this)">Показати відповідь</button><div class="answer-block" id="ans-2"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="4">
-<li><p>знати ✗ (know</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-3', this)">Показати відповідь</button><div class="answer-block" id="ans-3"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="5">
-<li><p>дякувати ✓ (thank</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-4', this)">Показати відповідь</button><div class="answer-block" id="ans-4"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="6">
-<li><p>любити ✗ (love</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-5', this)">Показати відповідь</button><div class="answer-block" id="ans-5"><div class="callout callout-answer" data-callout="answer">accusative)</div></div>
-<ol start="7">
-<li><p>заважати ✓ (disturb</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-6', this)">Показати відповідь</button><div class="answer-block" id="ans-6"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<ol start="8">
-<li><p>радити ✓ (advise</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-7', this)">Показати відповідь</button><div class="answer-block" id="ans-7"><div class="callout callout-answer" data-callout="answer">dative)</div></div>
-<h3 id="completewithcorrectcase">Complete with Correct Case</h3>
-<p>Fill in dative or accusative:</p>
-<ol>
-<li><p>Я допомагаю ___ (він).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-8', this)">Показати відповідь</button><div class="answer-block" id="ans-8"><div class="callout callout-answer" data-callout="answer">йому (dative)</div></div>
-<ol start="2">
-<li><p>Вона бачить ___ (він).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-9', this)">Показати відповідь</button><div class="answer-block" id="ans-9"><div class="callout callout-answer" data-callout="answer">його (accusative)</div></div>
-<ol start="3">
-<li><p>Ми відповідаємо ___ (вчитель).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-10', this)">Показати відповідь</button><div class="answer-block" id="ans-10"><div class="callout callout-answer" data-callout="answer">вчителеві (dative)</div></div>
-<ol start="4">
-<li><p>Він знає ___ (вона).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-11', this)">Показати відповідь</button><div class="answer-block" id="ans-11"><div class="callout callout-answer" data-callout="answer">її (accusative)</div></div>
-<ol start="5">
-<li><p>Дякую ___ (ви)!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-12', this)">Показати відповідь</button><div class="answer-block" id="ans-12"><div class="callout callout-answer" data-callout="answer">вам (dative)</div></div>
-<ol start="6">
-<li><p>Вони чують ___ (ми).</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-13', this)">Показати відповідь</button><div class="answer-block" id="ans-13"><div class="callout callout-answer" data-callout="answer">нас (accusative)</div></div>
-<ol start="7">
-<li><p>Не заважай ___ (я)!</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-14', this)">Показати відповідь</button><div class="answer-block" id="ans-14"><div class="callout callout-answer" data-callout="answer">мені (dative)</div></div>
-<ol start="8">
-<li><p>Раджу ___ (ти) відпочити.</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-15', this)">Показати відповідь</button><div class="answer-block" id="ans-15"><div class="callout callout-answer" data-callout="answer">тобі (dative)</div></div>
-<h3 id="buildimpersonalsentences">Build Impersonal Sentences</h3>
-<p>Create sentences with impersonal + dative:</p>
-<ol>
-<li><p>я / холодно</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-16', this)">Показати відповідь</button><div class="answer-block" id="ans-16"><div class="callout callout-answer" data-callout="answer">Мені холодно.</div></div>
-<ol start="2">
-<li><p>він / важко / зрозуміти</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-17', this)">Показати відповідь</button><div class="answer-block" id="ans-17"><div class="callout callout-answer" data-callout="answer">Йому важко зрозуміти.</div></div>
-<ol start="3">
-<li><p>вони / потрібно / допомога</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-18', this)">Показати відповідь</button><div class="answer-block" id="ans-18"><div class="callout callout-answer" data-callout="answer">Їм потрібна допомога.</div></div>
-<ol start="4">
-<li><p>ти / можна / йти</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-19', this)">Показати відповідь</button><div class="answer-block" id="ans-19"><div class="callout callout-answer" data-callout="answer">Тобі можна йти.</div></div>
-<ol start="5">
-<li><p>ми / бракувати / час</p></li>
-</ol>
-<button class="show-answer-btn" onclick="toggleAnswer('ans-20', this)">Показати відповідь</button><div class="answer-block" id="ans-20"><div class="callout callout-answer" data-callout="answer">Нам бракує часу.</div></div>
-<h2 id="production">production</h2>
-<h3 id="realsituations">Real Situations</h3>
-<p><strong>Scenario 1: Office help</strong></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Verbs with Dative + Accusative</h3>
+      <div class="md-content"><p>Some verbs need TWO objects: a <strong>person (dative)</strong> and a <strong>thing (accusative)</strong>. This is the classic "give something TO someone" pattern.</p>
+<p><strong>Pattern: VERB + DATIVE (кому?) + ACCUSATIVE (що?)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>давати</strong></td>
+<td>give smth to smb</td>
+<td>Він дає сестрі квіти.</td>
+</tr>
+<tr>
+<td><strong>показувати</strong></td>
+<td>show smth to smb</td>
+<td>Покажіть мені документ.</td>
+</tr>
+<tr>
+<td><strong>пояснювати</strong></td>
+<td>explain smth to smb</td>
+<td>Вона пояснює учневі правило.</td>
+</tr>
+<tr>
+<td><strong>купувати</strong></td>
+<td>buy smth for smb</td>
+<td>Мама купує дітям морозиво.</td>
+</tr>
+<tr>
+<td><strong>готувати</strong></td>
+<td>prepare smth for smb</td>
+<td>Бабуся готує онукам вечерю.</td>
+</tr>
+<tr>
+<td><strong>приносити</strong></td>
+<td>bring smth to smb</td>
+<td>Офіціант приносить гостям меню.</td>
+</tr>
+<tr>
+<td><strong>розповідати</strong></td>
+<td>tell smth to smb</td>
+<td>Вона розповідає дітям казку.</td>
+</tr>
+<tr>
+<td><strong>посилати</strong></td>
+<td>send smth to smb</td>
+<td>Я посилаю батькам листа.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong></p>
+  <p>In Ukrainian films, the dramatic declaration "Я тобі все поясню!" (I'll explain everything to you!) appears constantly. Notice: <strong>тобі</strong> (dative) receives the explanation, <strong>все</strong> (accusative) is what's being explained. Even in intense moments, grammar matters!</p>
+</blockquote>
+<h3 id="wordorderflexibility">Word Order Flexibility</h3>
+<p>Remember: Ukrainian word order is flexible because case endings (not position) show who does what to whom. All of these mean the same thing:</p>
 <ul>
-<li>Можеш допомогти мені?</li>
-<li>Звісно! Що тобі потрібно?</li>
-<li>Мені важко зрозуміти цей документ.</li>
-<li>Зараз поясню тобі. Не хвилюйся!</li>
+<li>Мама купує <strong>дітям</strong> морозиво. (neutral)</li>
+<li>Мама купує морозиво <strong>дітям</strong>. (emphasizes children)</li>
+<li><strong>Дітям</strong> мама купує морозиво. (strong emphasis on children)</li>
+<li>Морозиво мама купує <strong>дітям</strong>. (emphasizes ice cream + children)</li>
 </ul>
-<p><strong>Scenario 2: Phone call</strong></p>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>At a Ukrainian restaurant, you use this pattern constantly:</p>
+  <ul>
+  <li>"Принесіть <strong>мені</strong> рахунок, будь ласка." (Bring me the bill, please.)</li>
+  <li>"Покажіть <strong>нам</strong> меню." (Show us the menu.)</li>
+  <li>"Дайте <strong>мені</strong> склянку води." (Give me a glass of water.)</li>
+  </ul>
+  <p>The dative <strong>мені/нам</strong> shows who receives the item being requested.</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Mini-Dialogues</h3>
+      <div class="md-content"><h3 id="dialogue1atthedoctorsoffice">Dialogue 1: At the Doctor's Office</h3>
+<p>A patient visits their doctor:</p>
+<p>— Добрий день, лікарю. Мені погано.<br />
+— Що вас турбує? Скажіть <strong>мені</strong>.<br />
+— Голова болить. І я погано сплю.<br />
+— Я <strong>вам</strong> допоможу. Спочатку <strong>покажіть мені</strong> горло.<br />
+— (opens mouth) Ааа…<br />
+— Все гаразд. Я <strong>випишу вам</strong> ліки. Це <strong>допоможе вам</strong> краще спати.<br />
+— <strong>Дякую вам</strong>, лікарю!<br />
+— Будь ласка. <strong>Бережіть</strong> здоров'я — стрес <strong>шкодить</strong> організму.</p>
+<p>Notice: допоможу <strong>вам</strong>, покажіть <strong>мені</strong>, випишу <strong>вам</strong>, дякую <strong>вам</strong>, шкодить <strong>організму</strong> — dative everywhere!</p>
+<h3 id="dialogue2helpingwithmoving">Dialogue 2: Helping with Moving</h3>
+<p>Friends helping with a move:</p>
+<p>— Ти переїжджаєш? <strong>Допоможи тобі</strong>?<br />
+— Так! Я <strong>дуже вдячний тобі</strong>! Ці коробки важкі.<br />
+— Не хвилюйся. Я <strong>допоможу тобі</strong> нести їх.<br />
+— А Оксана <strong>приготувала нам</strong> обід! Вона завжди <strong>допомагає мені</strong>.<br />
+— Яка гарна подруга! <strong>Передай їй</strong> привіт від мене.<br />
+— Обов'язково! А потім я <strong>покажу тобі</strong> нову квартиру.<br />
+— Чудово! Тільки не <strong>заважай мені</strong> дивитися футбол увечері!<br />
+— Обіцяю!</p>
+<h3 id="dialogue3attheoffice">Dialogue 3: At the Office</h3>
+<p>Colleagues discussing a project:</p>
+<p>— Шефе, <strong>можу вам пояснити</strong> проєкт?<br />
+— Так, <strong>покажіть мені</strong> презентацію.<br />
+— Ось. Я <strong>підготував вам</strong> усі деталі.<br />
+— Добре. А хто <strong>допоміг тобі</strong> з дизайном?<br />
+— Марина. Вона <strong>дала мені</strong> багато порад.<br />
+— <strong>Передай їй подяку</strong> від мене. Гарна робота!<br />
+— <strong>Дякую вам</strong>! Це <strong>мені</strong> дуже приємно чути.</p>
+<h3 id="dialogue4familydinner">Dialogue 4: Family Dinner</h3>
+<p>A grandmother with grandchildren:</p>
+<p>— Бабусю, <strong>розкажи нам</strong> казку!<br />
+— Добре, я <strong>розповім вам</strong> про Котигорошка. Але спочатку — вечеря!<br />
+— А що ти <strong>приготувала нам</strong>?<br />
+— Вареники! <strong>Мамі</strong> я теж залишила.<br />
+— Ура! Ці вареники — найкращі! <strong>Ніхто нам</strong> так не готує!<br />
+— <strong>Їжте</strong>, діточки. А потім я <strong>дам вам</strong> цукерки.<br />
+— <strong>Дякуємо тобі</strong>, бабусю!<br />
+— <strong>Це мені</strong> щастя — бачити вас!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Common Expressions with Dative Verbs</h3>
+      <div class="md-content"><table>
+<thead>
+<tr>
+<th>Ukrainian</th>
+<th>Literal</th>
+<th>Natural English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Дякую тобі!</td>
+<td>I thank to-you</td>
+<td>Thank you!</td>
+</tr>
+<tr>
+<td>Не заважай мені!</td>
+<td>Don't disturb to-me</td>
+<td>Don't disturb me!</td>
+</tr>
+<tr>
+<td>Вибач мені.</td>
+<td>Forgive to-me</td>
+<td>Forgive me.</td>
+</tr>
+<tr>
+<td>Допоможи мені, будь ласка.</td>
+<td>Help to-me, please</td>
+<td>Help me, please.</td>
+</tr>
+<tr>
+<td>Це не личить тобі.</td>
+<td>This not suits to-you</td>
+<td>This doesn't suit you.</td>
+</tr>
+<tr>
+<td>Я тобі вірю.</td>
+<td>I to-you believe</td>
+<td>I believe you.</td>
+</tr>
+<tr>
+<td>Мені здається…</td>
+<td>To-me seems…</td>
+<td>It seems to me…</td>
+</tr>
+<tr>
+<td>Тобі пощастило!</td>
+<td>To-you lucked!</td>
+<td>You're lucky!</td>
+</tr>
+<tr>
+<td>Нам потрібно…</td>
+<td>To-us needed…</td>
+<td>We need to…</td>
+</tr>
+<tr>
+<td>Їм холодно.</td>
+<td>To-them cold</td>
+<td>They're cold.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Many expressions that use "be" + adjective in English use dative + adverb in Ukrainian:</p>
+  <ul>
+  <li>"I am cold" → "<strong>Мені</strong> холодно" (To me [it's] cold)</li>
+  <li>"She is sad" → "<strong>Їй</strong> сумно" (To her [it's] sad)</li>
+  <li>"They are fun" → "<strong>Їм</strong> весело" (To them [it's] fun)</li>
+  </ul>
+  <p>This shows Ukrainian's preference for expressing states as happening TO someone rather than someone BEING a state!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Вибачати vs Пробачати</h3>
+      <div class="md-content"><p>Both mean "to forgive" but have different weight:</p>
+<p><strong>Вибачати</strong> — everyday forgiveness, common apologies:</p>
 <ul>
-<li>Алло! Телефоную тобі з новиною!</li>
-<li>Що сталося? Розкажи мені!</li>
-<li>Мені вдалося отримати роботу!</li>
-<li>Вітаю! Я так радий за тебе!</li>
+<li><em>Вибач мені за запізнення.</em> (Sorry for being late.)</li>
+<li><em>Вибачте, де тут метро?</em> (Excuse me, where's the metro?)</li>
+<li><em>Вибач, я не хотів!</em> (Sorry, I didn't mean to!)</li>
 </ul>
-<p><strong>Scenario 3: Asking for advice</strong></p>
+<p><strong>Пробачати</strong> — deeper forgiveness, for serious matters:</p>
 <ul>
-<li>Що ти мені радиш?</li>
-<li>Раджу тобі поговорити з ним.</li>
-<li>Мені здається, він не хоче слухати.</li>
-<li>Все одно спробуй. Йому потрібна твоя підтримка.</li>
+<li><em>Вона не може йому пробачити зраду.</em> (She cannot forgive him the betrayal.)</li>
+<li><em>Пробачте мені все зло.</em> (Forgive me all the harm [I've done].)</li>
+<li><em>Я пробачаю тобі, але не забуду.</em> (I forgive you, but I won't forget.)</li>
 </ul>
+<blockquote>
+  <p>🎭 <strong>Culture Corner</strong></p>
+  <p>During the Ukrainian holiday of <em>Прощена неділя</em> (Forgiveness Sunday) — the last Sunday before Lent — people traditionally ask each other: "Пробач мені, якщо я тебе чимось образив/образила" (Forgive me if I offended you somehow). The response is "Бог простить, і я прощаю" (God forgives, and I forgive). This deep ritual uses <strong>пробачати</strong>, not the everyday <strong>вибачати</strong>.</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-practice">
+      <h3>Practice</h3>
+      <div class="md-content"><h2 id="helpingandthanking">Helping and Thanking</h2>
+<ul>
+<li>Сусід <strong>допомагає бабусі</strong> нести сумки. (Neighbor helps grandma carry bags.)</li>
+<li>Студенти <strong>дякують професору</strong> за лекцію. (Students thank professor for lecture.)</li>
+<li>Друзі <strong>вірять одне одному</strong>. (Friends believe in each other.)</li>
+<li>Я <strong>не заважаю нікому</strong>. (I don't disturb anyone.)</li>
+</ul>
+<h2 id="givingandshowing">Giving and Showing</h2>
+<ul>
+<li>Батько <strong>дає синові</strong> гроші. (Father gives money to his son.)</li>
+<li>Учитель <strong>показує студентам</strong> карту. (Teacher shows students the map.)</li>
+<li>Офіціант <strong>приносить гостям</strong> меню. (Waiter brings menu to guests.)</li>
+<li>Лікар <strong>виписує пацієнту</strong> рецепт. (Doctor writes a prescription for the patient.)</li>
+</ul>
+<blockquote>
+  <p>🎮 <strong>Gamer's Corner</strong></p>
+  <p>In Ukrainian game translations, quest objectives constantly use dative verbs: "<strong>Допоможи кузнецеві</strong>" (Help the blacksmith), "<strong>Покажи старійшині</strong> артефакт" (Show the artifact to the elder), "<strong>Принеси магу</strong> інгредієнти" (Bring ingredients to the mage). If you play games in Ukrainian, you'll internalize dative patterns naturally!</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -915,140 +914,17 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><h2 id="coredativeverbs">Core Dative Verbs</h2>
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати</td>
-<td>help</td>
-<td>йому</td>
-</tr>
-<tr>
-<td>дякувати</td>
-<td>thank</td>
-<td>вам</td>
-</tr>
-<tr>
-<td>відповідати</td>
-<td>answer</td>
-<td>їй</td>
-</tr>
-<tr>
-<td>заважати</td>
-<td>disturb</td>
-<td>мені</td>
-</tr>
-<tr>
-<td>радити</td>
-<td>advise</td>
-<td>тобі</td>
-</tr>
-<tr>
-<td>телефонувати</td>
-<td>phone</td>
-<td>батькам</td>
-</tr>
-<tr>
-<td>належати</td>
-<td>belong</td>
-<td>йому</td>
-</tr>
-<tr>
-<td>подобатися</td>
-<td>please</td>
-<td>мені</td>
-</tr>
-<tr>
-<td>вдаватися</td>
-<td>succeed</td>
-<td>нам</td>
-</tr>
-<tr>
-<td>бракувати</td>
-<td>lack</td>
-<td>їм</td>
-</tr>
-</tbody>
-</table>
-<h2 id="impersonaldative">Impersonal + Dative</h2>
-<table>
-<thead>
-<tr>
-<th>Pattern</th>
-<th>Example</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DAT + холодно</td>
-<td>Мені холодно.</td>
-<td>I'm cold.</td>
-</tr>
-<tr>
-<td>DAT + потрібно</td>
-<td>Тобі потрібно.</td>
-<td>You need.</td>
-</tr>
-<tr>
-<td>DAT + можна</td>
-<td>Їм можна.</td>
-<td>They may.</td>
-</tr>
-<tr>
-<td>DAT + важко</td>
-<td>Йому важко.</td>
-<td>It's hard for him.</td>
-</tr>
-<tr>
-<td>DAT + здається</td>
-<td>Нам здається.</td>
-<td>It seems to us.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="keydistinction">Key Distinction</h2>
-<table>
-<thead>
-<tr>
-<th>Dative (affected by)</th>
-<th>Accusative (acted on)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>допомагати йому</td>
-<td>бачити його</td>
-</tr>
-<tr>
-<td>дякувати їй</td>
-<td>любити її</td>
-</tr>
-<tr>
-<td>відповідати нам</td>
-<td>знати нас</td>
-</tr>
-<tr>
-<td>заважати їм</td>
-<td>чути їх</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-  <p>💡 <strong>Key Takeaways</strong></p>
+      <div class="md-content"><blockquote>
+  <p><strong>What You Learned Today</strong></p>
   <ul>
-  <li>Many verbs of social interaction require dative (help, thank, answer, advise, disturb)</li>
-  <li>Impersonal constructions use dative for the experiencer (мені холодно, тобі потрібно)</li>
-  <li>Dative = who is affected/benefits; Accusative = direct object of action</li>
-  <li>Test: Does the action happen TO/FOR someone? → Use dative</li>
+  <li><strong>Dative-only verbs</strong>: допомагати, заважати, дякувати, вірити, довіряти, належати, шкодити, личити, заздрити, співчувати, радіти, дивуватися</li>
+  <li><strong>Dative + accusative verbs</strong>: давати, показувати, пояснювати, купувати, готувати, приносити, розповідати, посилати</li>
+  <li>The difference between <strong>вибачати</strong> (everyday forgiveness) and <strong>пробачати</strong> (deeper forgiveness)</li>
+  <li><strong>Impersonal dative expressions</strong>: Мені холодно, Їй сумно, Нам весело</li>
+  <li>Common expressions with dative verbs: Дякую тобі!, Допоможи мені!, Не заважай мені!</li>
   </ul>
+  <p><strong>Coming Next</strong></p>
+  <p>In Module 04, you'll learn <strong>The Instrumental Case I: Accompaniment</strong> — how to express "with" in Ukrainian using <strong>з + instrumental</strong> (з братом, з молоком, з друзями)!</p>
 </blockquote></div>
     </div>
   
@@ -1058,69 +934,76 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Dative Verbs</h3>
-      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/10</span></div>
+    <section id="activity-0" class="section"><div class="card"><h3>Complete with Dative Verbs</h3>
+      <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Build the Sentence</h3>
-      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/10</span></div>
-      <div id="activity-1-container" class="order-container"></div>
-      <div class="completion-message" id="activity-1-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-1" class="section"><div class="card"><h3>Verb and Object</h3>
+      <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
+      <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
+        <div class="match-column" id="activity-1-left"></div>
+        <div class="match-column" id="activity-1-right"></div>
+      </div>
+      <div class="completion-message" id="activity-1-complete"><h3>Perfect!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Match the Pairs</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Word Order</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
-      <div class="match-container" id="activity-2-container"><svg class="match-lines" id="activity-2-lines"></svg>
-        <div class="match-column" id="activity-2-left"></div>
-        <div class="match-column" id="activity-2-right"></div>
-      </div>
-      <div class="completion-message" id="activity-2-complete"><h3>Perfect!</h3></div>
+      <div id="activity-2-container" class="order-container"></div>
+      <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Meaning Check</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Which Verb?</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>True or False?</h3>
-      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/10</span></div>
+    <section id="activity-4" class="section"><div class="card"><h3>Dative Verb Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Choose the Correct Dative Form</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/10</span></div>
-      <div id="activity-5-container" class="fill-container"></div>
-      <div class="completion-message" id="activity-5-complete"><h3>Complete!</h3></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Verb Categories</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+      <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
+      <div class="sort-groups" id="activity-5-groups"></div>
+      <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Dative Verb Categories</h3>
+    <section id="activity-6" class="section"><div class="card"><h3>Impersonal Dative Expressions</h3>
       <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
-      <div class="sort-pool" id="activity-6-pool"><div class="sort-items" id="activity-6-items"></div></div>
-      <div class="sort-groups" id="activity-6-groups"></div>
-      <div class="completion-message" id="activity-6-complete"><h3>All Sorted!</h3></div>
+      <div id="activity-6-container" class="fill-container"></div>
+      <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-6')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-7')">Next →</button></div>
     </div></section>
 
-    <section id="activity-7" class="section"><div class="card"><h3>Dative Sentence Building</h3>
-      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/10</span></div>
-      <div id="activity-7-container" class="order-container"></div>
-      <div class="completion-message" id="activity-7-complete"><h3>Perfect Order!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-7" class="section"><div class="card"><h3>Choose the Correct Verb</h3>
+      <div class="score-display"><span class="score"><span id="activity-7-score">0</span>/12</span></div>
+      <div id="activity-7-container" class="select-container"></div>
+      <div class="completion-message" id="activity-7-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-8" class="section"><div class="card"><h3>Advanced Dative Usage</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (29)</h3>
+        <h3>Словник (24)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1130,7 +1013,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">відповідати</td><td class="vocab-ipa">/vidpoviˈdɑtɪ/</td><td class="vocab-en">to answer</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">заважати</td><td class="vocab-ipa">/zɑvɑˈʒɑtɪ/</td><td class="vocab-en">to disturb</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">радити</td><td class="vocab-ipa">/ˈrɑdɪtɪ/</td><td class="vocab-en">to advise</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">належати</td><td class="vocab-ipa">/nɑˈlɛʒɑtɪ/</td><td class="vocab-en">to belong</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вдаватися</td><td class="vocab-ipa">/vdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to succeed</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">щастити</td><td class="vocab-ipa">/ʃtʃɑˈstɪtɪ/</td><td class="vocab-en">to be lucky</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">снитися</td><td class="vocab-ipa">/snɪˈtɪsʲɑ/</td><td class="vocab-en">to appear in dream</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">личити</td><td class="vocab-ipa">/ˈlɪtʃɪtɪ/</td><td class="vocab-en">to suit/become</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">бракувати</td><td class="vocab-ipa">/brɑkuˈvɑtɪ/</td><td class="vocab-en">to lack</td><td class="vocab-note">+ dat + gen</td></tr><tr><td class="vocab-uk">повідомляти</td><td class="vocab-ipa">/povidomˈlʲɑtɪ/</td><td class="vocab-en">to inform</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">давати</td><td class="vocab-ipa">/dɑˈvɑtɪ/</td><td class="vocab-en">to give (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">казати</td><td class="vocab-ipa">/kɑˈzɑtɪ/</td><td class="vocab-en">to tell (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">говорити</td><td class="vocab-ipa">/ɦɔvɔˈrɪtɪ/</td><td class="vocab-en">to speak (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-ipa">/rɔzpɔvʲiˈdɑtɪ/</td><td class="vocab-en">to tell a story (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">пояснювати</td><td class="vocab-ipa">/pɔˈjɑsnʲuvɑtɪ/</td><td class="vocab-en">to explain (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">допомагати</td><td class="vocab-ipa">/dɔpɔmɑˈɦɑtɪ/</td><td class="vocab-en">to help (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">пропонувати</td><td class="vocab-ipa">/prɔpɔnuˈvɑtɪ/</td><td class="vocab-en">to offer (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дзвонити</td><td class="vocab-ipa">/dzvɔˈnɪtɪ/</td><td class="vocab-en">to call (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">писати</td><td class="vocab-ipa">/pɪˈsɑtɪ/</td><td class="vocab-en">to write (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дякувати</td><td class="vocab-ipa">/ˈdʲɑkuvɑtɪ/</td><td class="vocab-en">to thank (impf)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вибачатися</td><td class="vocab-ipa">/vɪbɑˈtʃɑtɪsʲɑ/</td><td class="vocab-en">to apologize</td><td class="vocab-note">перед + instr (usually)</td></tr><tr><td class="vocab-uk">шкодити</td><td class="vocab-ipa">/ˈʃkɔdɪtɪ/</td><td class="vocab-en">to harm</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">подобатися</td><td class="vocab-ipa">/pɔˈdɔbɑtɪsʲɑ/</td><td class="vocab-en">to like</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вистачати</td><td class="vocab-ipa">/vɪstɑˈtʃɑtɪ/</td><td class="vocab-en">to be enough</td><td class="vocab-note">+ dat + gen</td></tr><tr><td class="vocab-uk">здаватися</td><td class="vocab-ipa">/zdɑˈvɑtɪsʲɑ/</td><td class="vocab-en">to seem</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">важко</td><td class="vocab-ipa">/ˈvɑʒko/</td><td class="vocab-en">hard, difficult</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">весело</td><td class="vocab-ipa">/ˈvɛsɛlo/</td><td class="vocab-en">fun, merry</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">сумно</td><td class="vocab-ipa">/ˈsumno/</td><td class="vocab-en">sad</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">досвід</td><td class="vocab-ipa">/ˈdosvʲid/</td><td class="vocab-en">experience</td><td class="vocab-note"></td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">допомагати</td><td class="vocab-ipa">/dopomaˈɦatɪ/</td><td class="vocab-en">to help</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">заважати</td><td class="vocab-ipa">/zawaˈʒatɪ/</td><td class="vocab-en">to disturb, bother</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">подобатися</td><td class="vocab-ipa">/podoˈbɑtɪsʲɑ/</td><td class="vocab-en">to please, to like</td><td class="vocab-note">thing pleases + dat (Мені подобається = I like)</td></tr><tr><td class="vocab-uk">вірити</td><td class="vocab-ipa">/ˈwirɪtɪ/</td><td class="vocab-en">to believe</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">довіряти</td><td class="vocab-ipa">/doˈwirʲatɪ/</td><td class="vocab-en">to trust</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дякувати</td><td class="vocab-ipa">/dʲaˈkuwatɪ/</td><td class="vocab-en">to thank</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">вибачати</td><td class="vocab-ipa">/wɪbaˈtʃatɪ/</td><td class="vocab-en">to forgive, excuse</td><td class="vocab-note">+ dat (everyday)</td></tr><tr><td class="vocab-uk">пробачати</td><td class="vocab-ipa">/probaˈtʃatɪ/</td><td class="vocab-en">to forgive</td><td class="vocab-note">+ dat (deep)</td></tr><tr><td class="vocab-uk">заздрити</td><td class="vocab-ipa">/ˈzazdrɪtɪ/</td><td class="vocab-en">to envy</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">співчувати</td><td class="vocab-ipa">/spiwˈtʃuwatɪ/</td><td class="vocab-en">to sympathize</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">личити</td><td class="vocab-ipa">/lɪˈtʃɪtɪ/</td><td class="vocab-en">to suit (appearance)</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">шкодити</td><td class="vocab-ipa">/ˈʃkodɪtɪ/</td><td class="vocab-en">to harm</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">належати</td><td class="vocab-ipa">/naleˈʒatɪ/</td><td class="vocab-en">to belong</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">радіти</td><td class="vocab-ipa">/raˈdʲitɪ/</td><td class="vocab-en">to rejoice</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дивуватися</td><td class="vocab-ipa">/dɪwuˈwatɪsʲa/</td><td class="vocab-en">to be surprised</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">давати</td><td class="vocab-ipa">/daˈwatɪ/</td><td class="vocab-en">to give</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">показувати</td><td class="vocab-ipa">/poˈkazuwatɪ/</td><td class="vocab-en">to show</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">пояснювати</td><td class="vocab-ipa">/pojasˈnʲuwatɪ/</td><td class="vocab-en">to explain</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">купувати</td><td class="vocab-ipa">/kupuˈwatɪ/</td><td class="vocab-en">to buy</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">готувати</td><td class="vocab-ipa">/ɦotuˈwatɪ/</td><td class="vocab-en">to prepare, cook</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">приносити</td><td class="vocab-ipa">/prɪnoˈsɪtɪ/</td><td class="vocab-en">to bring</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">розповідати</td><td class="vocab-ipa">/rozpowiˈdatɪ/</td><td class="vocab-en">to tell, narrate</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">посилати</td><td class="vocab-ipa">/posɪˈlatɪ/</td><td class="vocab-en">to send</td><td class="vocab-note">+ dat + acc</td></tr><tr><td class="vocab-uk">здоров&#039;я</td><td class="vocab-ipa">/zdoˈrowjɑ/</td><td class="vocab-en">health</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1142,8 +1025,8 @@ footer {
   </main><footer>Module 03 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Verbs","data":{"type":"fill-blank","items":[{"prompt":"Я завжди з радістю допомагаю ___ (брат).","answer":"братові / брату","hints":["брат"],"options":["брат","братові","брату","брата"]},{"prompt":"Дякую ___ (ви) за вашу допомогу сьогодні!","answer":"вам","hints":["ви"],"options":["ви","вас","вам","вами"]},{"prompt":"Вона відповідає ___ (вчитель) на уроці англійської.","answer":"вчителеві / вчителю","hints":["вчитель"],"options":["вчитель","вчителеві","вчителю","вчителя"]},{"prompt":"Не заважай ___ (я), коли я працюю, будь ласка!","answer":"мені","hints":["я"],"options":["я","мене","мені","мною"]},{"prompt":"Що ви радите ___ (ми) робити в цій ситуації?","answer":"нам","hints":["ми"],"options":["ми","нас","нам","нами"]},{"prompt":"___ (він) сьогодні дуже холодно без куртки.","answer":"Йому","hints":["він"],"options":["Він","Його","Йому","Ним"]},{"prompt":"___ (вона) важко зрозуміти цю нову граматику.","answer":"Їй","hints":["вона"],"options":["Вона","Її","Їй","Нею"]},{"prompt":"Ця книга належить ___ (моя сестра) з дитинства.","answer":"моїй сестрі","hints":["моя сестра"],"options":["моя сестра","мою сестру","моїй сестрі","моєю сестрою"]},{"prompt":"___ (ти) потрібна допомога з домашнім завданням?","answer":"Тобі","hints":["ти"],"options":["Ти","Тебе","Тобі","Тобою"]},{"prompt":"___ (я) бракує часу для спорту цього тижня.","answer":"Мені","hints":["я"],"options":["Я","Мене","Мені","Мною"]}]}},{"id":"activity-1","type":"unjumble","title":"Build the Sentence","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["допомагаю","Я","братові","завжди","з радістю"],"answer":"Я завжди з радістю допомагаю братові.","translation":"I always gladly help my brother."},{"words":["вам","Дякую","за","вашу","допомогу","сьогодні"],"answer":"Дякую вам за вашу допомогу сьогодні!","translation":"Thank you for your help today!"},{"words":["вчителеві","Вона","відповідає","на уроці","англійської"],"answer":"Вона відповідає вчителеві на уроці англійської.","translation":"She answers the teacher in English class."},{"words":["мені","Не заважай","коли","я","працюю"],"answer":"Не заважай мені, коли я працюю!","translation":"Don't disturb me when I'm working!"},{"words":["радите","Що","ви","нам","робити","в цій ситуації"],"answer":"Що ви радите нам робити в цій ситуації?","translation":"What do you advise us to do in this situation?"},{"words":["Йому","холодно","сьогодні","дуже","без куртки"],"answer":"Йому сьогодні дуже холодно без куртки.","translation":"He's very cold today without a jacket."},{"words":["Їй","зрозуміти","важко","цю","нову","граматику"],"answer":"Їй важко зрозуміти цю нову граматику.","translation":"It's hard for her to understand this new grammar."},{"words":["належить","Ця","книга","моїй сестрі","з дитинства"],"answer":"Ця книга належить моїй сестрі з дитинства.","translation":"This book has belonged to my sister since childhood."},{"words":["Тобі","потрібна","допомога","з домашнім завданням"],"answer":"Тобі потрібна допомога з домашнім завданням?","translation":"Do you need help with homework?"},{"words":["Мені","часу","бракує","для спорту","цього тижня"],"answer":"Мені бракує часу для спорту цього тижня.","translation":"I lack time for sports this week."}]}},{"id":"activity-2","type":"match-up","title":"Match the Pairs","data":{"type":"match-up","pairs":[{"left":"вдаватися","right":"to succeed"},{"left":"снитися","right":"to appear in dream"},{"left":"весело","right":"fun, merry"},{"left":"личити","right":"to suit/become"},{"left":"дякувати","right":"to thank"},{"left":"належати","right":"to belong"},{"left":"відповідати","right":"to answer"},{"left":"заважати","right":"to disturb"},{"left":"бракувати","right":"to lack"},{"left":"сумно","right":"sad"},{"left":"потрібно","right":"necessary/needed"},{"left":"важко","right":"hard, difficult"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Meaning Check","data":{"type":"quiz","questions":[{"question":"What does \"бракувати\" mean?","options":["porridge","you (informal)","radio","to lack"],"correctIndex":3,"explanation":"\"бракувати\" means \"to lack\""},{"question":"What does \"важко\" mean?","options":["doctor (m)","we","block","hard, difficult"],"correctIndex":3,"explanation":"\"важко\" means \"hard, difficult\""},{"question":"What does \"заважати\" mean?","options":["to drink","to hear","to disturb","box"],"correctIndex":2,"explanation":"\"заважати\" means \"to disturb\""},{"question":"What does \"щастити\" mean?","options":["to be lucky","chair","every day","cloudy"],"correctIndex":0,"explanation":"\"щастити\" means \"to be lucky\""},{"question":"What does \"личити\" mean?","options":["Ukrainian (female)","box","next","to suit/become"],"correctIndex":3,"explanation":"\"личити\" means \"to suit/become\""},{"question":"What does \"повідомляти\" mean?","options":["to listen","Monday","to turn","to inform"],"correctIndex":3,"explanation":"\"повідомляти\" means \"to inform\""},{"question":"What does \"сумно\" mean?","options":["from","center","sad","word"],"correctIndex":2,"explanation":"\"сумно\" means \"sad\""},{"question":"What does \"відповідати\" mean?","options":["relative","thin","to answer","Shopping: розмір, колір, ціна, знижка"],"correctIndex":2,"explanation":"\"відповідати\" means \"to answer\""},{"question":"What does \"вдаватися\" mean?","options":["radio","to open","room","to succeed"],"correctIndex":3,"explanation":"\"вдаватися\" means \"to succeed\""},{"question":"What does \"радити\" mean?","options":["year","to advise","tasty","she"],"correctIndex":1,"explanation":"\"радити\" means \"to advise\""},{"question":"What does \"належати\" mean?","options":["to have dinner","tourist","to carry","to belong"],"correctIndex":3,"explanation":"\"належати\" means \"to belong\""},{"question":"What does \"весело\" mean?","options":["minute","fun, merry","our (m)","square"],"correctIndex":1,"explanation":"\"весело\" means \"fun, merry\""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"True or False?","data":{"type":"true-false","statements":[{"statement":"\"радити\" means \"to advise\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"личити\" means \"dad\"","isTrue":false,"explanation":"Incorrect. \"личити\" means \"to suit/become\""},{"statement":"\"досвід\" means \"support\"","isTrue":false,"explanation":"Incorrect. \"досвід\" means \"experience\""},{"statement":"\"відповідати\" means \"how\"","isTrue":false,"explanation":"Incorrect. \"відповідати\" means \"to answer\""},{"statement":"\"сумно\" means \"sad\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"заважати\" means \"to disturb\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"повідомляти\" means \"to inform\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"належати\" means \"to belong\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"важко\" means \"hard, difficult\"","isTrue":true,"explanation":"Correct!"},{"statement":"\"весело\" means \"fun, merry\"","isTrue":true,"explanation":"Correct!"}]}},{"id":"activity-5","type":"fill-blank","title":"Choose the Correct Dative Form","data":{"type":"fill-blank","items":[{"prompt":"Я допомагаю ___ з домашнім завданням. (him)","answer":"йому","options":["його","йому","він"]},{"prompt":"Вона дякує ___ за подарунок. (you, formal)","answer":"вам","options":["вас","вам","ви"]},{"prompt":"Не заважай ___, я працюю! (me)","answer":"мені","options":["мене","мені","я"]},{"prompt":"Він відповідає ___ на запитання. (teacher)","answer":"вчителеві","options":["вчителя","вчителеві","вчитель"]},{"prompt":"___ потрібна допомога. (them)","answer":"Їм","options":["Їх","Їм","Вони"]},{"prompt":"Радимо ___ відпочити. (her)","answer":"їй","options":["її","їй","вона"]},{"prompt":"___ холодно в цій кімнаті. (us)","answer":"Нам","options":["Нас","Нам","Ми"]},{"prompt":"Ця книга належить ___. (brother)","answer":"братові","options":["брата","братові","брат"]},{"prompt":"___ подобається ця музика. (me)","answer":"Мені","options":["Мене","Мені","Я"]},{"prompt":"Він телефонує ___ щодня. (parents)","answer":"батькам","options":["батьків","батькам","батьки"]}]}},{"id":"activity-6","type":"group-sort","title":"Dative Verb Categories","data":{"type":"group-sort","groups":[{"id":"dative-verbs","name":"Dative Verbs","items":["допомагати (to help)","дякувати (to thank)","відповідати (to answer)","заважати (to disturb)"],"nameUk":"object = dative"},{"id":"impersonal--dative","name":"Impersonal + Dative","items":["холодно (cold)","потрібно (need)","можна (may)","важко (difficult)"],"nameUk":"experiencer = dative"},{"id":"accusative-verbs","name":"Accusative Verbs","items":["бачити (to see)","любити (to love)","знати (to know)","чути (to hear)"],"nameUk":"object = accusative"}],"shuffleItems":true}},{"id":"activity-7","type":"unjumble","title":"Dative Sentence Building","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","допомагаю","братові","з роботою"],"answer":"Я допомагаю братові з роботою.","translation":"I help my brother with work."},{"words":["Вона","дякує","вам","за допомогу"],"answer":"Вона дякує вам за допомогу.","translation":"She thanks you for help."},{"words":["Мені","потрібно","купити","молоко"],"answer":"Мені потрібно купити молоко.","translation":"I need to buy milk."},{"words":["Не","заважай","мені","працювати"],"answer":"Не заважай мені працювати!","translation":"Don't disturb me working!"},{"words":["Їй","подобається","ця","музика"],"answer":"Їй подобається ця музика.","translation":"She likes this music."},{"words":["Він","відповідає","вчителеві","чітко"],"answer":"Він відповідає вчителеві чітко.","translation":"He answers the teacher clearly."},{"words":["Нам","холодно","у","кімнаті"],"answer":"Нам холодно у кімнаті.","translation":"We are cold in the room."},{"words":["Я","раджу","тобі","відпочити"],"answer":"Я раджу тобі відпочити.","translation":"I advise you to rest."},{"words":["Цей","годинник","належить","батькові"],"answer":"Цей годинник належить батькові.","translation":"This watch belongs to father."},{"words":["Їм","важко","зрозуміти","це"],"answer":"Їм важко зрозуміти це.","translation":"It's hard for them to understand this."}]}}];
-    const vocabData = [{"uk":"відповідати","translit":"","en":"to answer","note":"+ dat"},{"uk":"заважати","translit":"","en":"to disturb","note":"+ dat"},{"uk":"радити","translit":"","en":"to advise","note":"+ dat"},{"uk":"належати","translit":"","en":"to belong","note":"+ dat"},{"uk":"вдаватися","translit":"","en":"to succeed","note":"+ dat"},{"uk":"щастити","translit":"","en":"to be lucky","note":"+ dat"},{"uk":"снитися","translit":"","en":"to appear in dream","note":"+ dat"},{"uk":"личити","translit":"","en":"to suit/become","note":"+ dat"},{"uk":"бракувати","translit":"","en":"to lack","note":"+ dat + gen"},{"uk":"повідомляти","translit":"","en":"to inform","note":"+ dat"},{"uk":"давати","translit":"","en":"to give (impf)","note":"+ dat"},{"uk":"казати","translit":"","en":"to tell (impf)","note":"+ dat"},{"uk":"говорити","translit":"","en":"to speak (impf)","note":"+ dat"},{"uk":"розповідати","translit":"","en":"to tell a story (impf)","note":"+ dat"},{"uk":"пояснювати","translit":"","en":"to explain (impf)","note":"+ dat"},{"uk":"допомагати","translit":"","en":"to help (impf)","note":"+ dat"},{"uk":"пропонувати","translit":"","en":"to offer (impf)","note":"+ dat"},{"uk":"дзвонити","translit":"","en":"to call (impf)","note":"+ dat"},{"uk":"писати","translit":"","en":"to write (impf)","note":"+ dat"},{"uk":"дякувати","translit":"","en":"to thank (impf)","note":"+ dat"},{"uk":"вибачатися","translit":"","en":"to apologize","note":"перед + instr (usually)"},{"uk":"шкодити","translit":"","en":"to harm","note":"+ dat"},{"uk":"подобатися","translit":"","en":"to like","note":"+ dat"},{"uk":"вистачати","translit":"","en":"to be enough","note":"+ dat + gen"},{"uk":"здаватися","translit":"","en":"to seem","note":"+ dat"},{"uk":"важко","translit":"","en":"hard, difficult","note":"+ dat"},{"uk":"весело","translit":"","en":"fun, merry","note":"+ dat"},{"uk":"сумно","translit":"","en":"sad","note":"+ dat"},{"uk":"досвід","translit":"","en":"experience","note":""}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete with Dative Verbs","data":{"type":"fill-blank","items":[{"prompt":"Я ___ мамі готувати вечерю кожного дня.","answer":"допомагаю","options":["допомагаю","дякую","заважаю","вірю"]},{"prompt":"Не ___ мені, будь ласка, коли я працюю!","answer":"заважай","options":["заважай","допомагай","дякуй","вір"]},{"prompt":"Ми ___ вам за вашу велику допомогу.","answer":"дякуємо","options":["дякуємо","заважаємо","допомагаємо","віримо"]},{"prompt":"Вона не ___ йому, бо він часто бреше.","answer":"вірить","options":["вірить","заважає","допомагає","дякує"]},{"prompt":"Ця стара книжка ___ моєму дідусеві вже п'ятдесят років.","answer":"належить","options":["належить","шкодить","личить","заздрить"]},{"prompt":"Куріння сигарет дуже ___ здоров'ю людини.","answer":"шкодить","options":["шкодить","належить","личить","заздрить"]},{"prompt":"Вчитель терпляче ___ студентам складне правило.","answer":"пояснює","options":["пояснює","заважає","вірить","належить"]},{"prompt":"Бабуся ___ онукам цікаву казку перед сном.","answer":"розповідає","options":["розповідає","заважає","вірить","шкодить"]},{"prompt":"Ця гарна червона сукня дуже ___ тобі!","answer":"личить","options":["личить","шкодить","належить","заздрить"]},{"prompt":"Ми ___ їй у цій складній життєвій ситуації.","answer":"співчуваємо","options":["співчуваємо","заздримо","шкодимо","личимо"]},{"prompt":"Він ___ своєму найкращому другу всі секрети.","answer":"довіряє","options":["довіряє","заздрить","шкодить","належить"]},{"prompt":"___ мені, будь ласка, я дуже запізнився!","answer":"Вибач","options":["Вибач","Допоможи","Покажи","Розкажи"]}]}},{"id":"activity-1","type":"match-up","title":"Verb and Object","data":{"type":"match-up","pairs":[{"left":"допомагати","right":"мамі"},{"left":"дякувати","right":"вчителю"},{"left":"вірити","right":"другу"},{"left":"заважати","right":"сестрі"},{"left":"показувати","right":"студентам"},{"left":"належати","right":"батькові"},{"left":"шкодити","right":"здоров'ю"},{"left":"личити","right":"тобі"},{"left":"пояснювати","right":"дітям"},{"left":"довіряти","right":"колезі"},{"left":"співчувати","right":"їй"},{"left":"готувати","right":"гостям"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["допомагаю завжди","своїй","Я","мамі","готувати","на","кухні","вечерю"],"answer":"Я завжди допомагаю своїй мамі готувати вечерю на кухні.","translation":"I always help my mom prepare dinner in the kitchen."},{"words":["працюю","мені","Не","коли","заважай","будь ласка","я","вдома"],"answer":"Не заважай мені, будь ласка, коли я працюю вдома.","translation":"Don't disturb me, please, when I'm working at home."},{"words":["вам","дуже","Дякуємо","за","вашу","щиру","велику","допомогу"],"answer":"Дякуємо вам дуже за вашу велику щиру допомогу.","translation":"We thank you very much for your great sincere help."},{"words":["тобі","кажеш","вірю","Я","тому","що","ти","правду"],"answer":"Я тобі вірю, тому що ти кажеш правду.","translation":"I believe you because you tell the truth."},{"words":["синові","новий","Батько","на","велосипед","дає","день","народження"],"answer":"Батько дає синові новий велосипед на день народження.","translation":"Father gives his son a new bicycle for his birthday."},{"words":["студентам","важливу","Професор","пояснює","граматику","нову","на","уроці"],"answer":"Професор пояснює студентам нову важливу граматику на уроці.","translation":"The professor explains new important grammar to students in class."},{"words":["належить","Ця","мені","стара","машина","від","дідуся","моя"],"answer":"Ця моя стара машина від дідуся належить мені.","translation":"This old car of mine from grandpa belongs to me."},{"words":["їй","червона","сукня","дуже","Ця","личить","гарна","нова"],"answer":"Ця гарна нова червона сукня дуже личить їй.","translation":"This beautiful new red dress really suits her."},{"words":["здоров'ю","Куріння","людини","кожного","шкодить","сигарети","дуже","дня"],"answer":"Куріння сигарети кожного дня дуже шкодить здоров'ю людини.","translation":"Smoking cigarettes every day really harms a person's health."},{"words":["другу","Він","своєму","довіряє","всі","найкращому","секрети","свої"],"answer":"Він довіряє своєму найкращому другу всі свої секрети.","translation":"He trusts his best friend with all his secrets."},{"words":["дітям","смачне","Мама","морозиво","велике","купує","в","магазині"],"answer":"Мама купує дітям велике смачне морозиво в магазині.","translation":"Mom buys the children big tasty ice cream at the store."},{"words":["гостям","Офіціант","приносить","нове","меню","ресторану","з","напоями"],"answer":"Офіціант приносить гостям нове меню ресторану з напоями.","translation":"The waiter brings guests the new restaurant menu with drinks."}]}},{"id":"activity-3","type":"quiz","title":"Which Verb?","data":{"type":"quiz","questions":[{"question":"Батько ___ дочці нову книжку на день народження.","options":["дає","вірить","заважає","належить"],"correctIndex":0,"explanation":"Дає + dative (recipient) + accusative (thing)."},{"question":"Ми ___ бабусі нести важкі сумки з магазину.","options":["заздримо","допомагаємо","шкодимо","личимо"],"correctIndex":1,"explanation":"Допомагати + dative (who receives help)."},{"question":"Учень ___ вчителю за цікавий урок сьогодні.","options":["показує","заважає","дякує","довіряє"],"correctIndex":2,"explanation":"Дякувати + dative (who receives thanks)."},{"question":"Ця стара сумка ___ моїй старшій сестрі.","options":["шкодить","вірить","належить","заздрить"],"correctIndex":2,"explanation":"Належати + dative (owner)."},{"question":"Я не ___ цій людині, вона часто бреше.","options":["личу","належу","заважаю","довіряю"],"correctIndex":3,"explanation":"Довіряти + dative (who you trust)."},{"question":"Цей яскравий колір дуже ___ тобі!","options":["личить","належить","шкодить","вірить"],"correctIndex":0,"explanation":"Личити + dative (who it suits)."},{"question":"Вона ___ подрузі всі свої секрети і мрії.","options":["заважає","шкодить","розповідає","заздрить"],"correctIndex":2,"explanation":"Розповідати + dative + accusative."},{"question":"Не ___ мені спати, мені треба вставати рано!","options":["заважай","допомагай","дякуй","вір"],"correctIndex":0,"explanation":"Заважати + dative (who is disturbed)."},{"question":"Студенти щиро ___ професору за цікаву лекцію.","options":["довіряють","належать","заважають","дякують"],"correctIndex":3,"explanation":"Дякувати + dative."},{"question":"Офіціант ___ нам рахунок і запитує про чайові.","options":["вірить","приносить","заздрить","шкодить"],"correctIndex":1,"explanation":"Приносити + dative + accusative."},{"question":"Занадто багато цукру ___ зубам дитини.","options":["належить","личить","шкодить","довіряє"],"correctIndex":2,"explanation":"Шкодити + dative (what is harmed)."},{"question":"Вона ___ сусідці її великого успіху в бізнесі.","options":["допомагає","вірить","заздрить","личить"],"correctIndex":2,"explanation":"Заздрити + dative (who you envy)."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Dative Verb Facts","data":{"type":"true-false","statements":[{"statement":"Допомагати requires the dative case.","isTrue":true,"explanation":"Correct! Допомагати + dat: допомагати мамі."},{"statement":"Давати takes only dative, not accusative.","isTrue":false,"explanation":"Incorrect. Давати takes dative + accusative: давати мамі квіти."},{"statement":"Вибачати and пробачати both mean \"to forgive.\"","isTrue":true,"explanation":"Correct! Both mean forgive, with вибачати for everyday use and пробачати for deeper forgiveness."},{"statement":"Належати means \"to help.\"","isTrue":false,"explanation":"Incorrect. Належати means \"to belong\": Ця книжка належить мені."},{"statement":"Шкодити requires the dative case.","isTrue":true,"explanation":"Correct! Шкодить здоров'ю — harms health."},{"statement":"Личити means \"to harm.\"","isTrue":false,"explanation":"Incorrect. Личити means \"to suit\" (appearance): Ця сукня личить їй."},{"statement":"Заздрити means \"to envy.\"","isTrue":true,"explanation":"Correct! Заздрити комусь — to envy someone."},{"statement":"Показувати takes dative + accusative.","isTrue":true,"explanation":"Correct! Показувати студентам (dat) карту (acc)."},{"statement":"Дякувати always takes accusative case.","isTrue":false,"explanation":"Incorrect. Дякувати takes dative: дякую тобі."},{"statement":"Довіряти and вірити have exactly the same meaning.","isTrue":false,"explanation":"Incorrect. Вірити = to believe (accept as true), довіряти = to trust (have confidence in)."},{"statement":"Співчувати requires the dative case.","isTrue":true,"explanation":"Correct! Співчувати комусь — to sympathize with someone."},{"statement":"Готувати can take dative + accusative.","isTrue":true,"explanation":"Correct! Готувати дітям вечерю — prepare dinner for children."}]}},{"id":"activity-5","type":"group-sort","title":"Verb Categories","data":{"type":"group-sort","groups":[{"id":"dative-only","name":"Dative Only","items":["допомагати","вірити","заважати","дякувати","належати","шкодити"]},{"id":"dative--accusative","name":"Dative + Accusative","items":["давати","показувати","пояснювати","купувати","готувати","приносити"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Impersonal Dative Expressions","data":{"type":"fill-blank","items":[{"prompt":"___ важко вставати рано вранці кожного дня.","answer":"Мені","options":["Мені","Тобі","Йому","Нам"]},{"prompt":"___ подобається красива українська музика.","answer":"Їй","options":["Мені","Тобі","Їй","Їм"]},{"prompt":"___ потрібна твоя допомога з цим проєктом.","answer":"Нам","options":["Мені","Тобі","Їй","Нам"]},{"prompt":"___ цікаво вивчати нові іноземні мови.","answer":"Йому","options":["Мені","Тобі","Йому","Їй"]},{"prompt":"___ холодно в цій великій кімнаті сьогодні.","answer":"Їм","options":["Мені","Тобі","Їй","Їм"]},{"prompt":"___ зрозуміло це складне граматичне правило?","answer":"Тобі","options":["Мені","Тобі","Йому","Нам"]},{"prompt":"___ сумно без моїх друзів вдома.","answer":"Мені","options":["Мені","Тобі","Йому","Їй"]},{"prompt":"___ не можна палити тут у ресторані.","answer":"Вам","options":["Мені","Тобі","Вам","Їм"]},{"prompt":"___ весело на цій чудовій вечірці сьогодні!","answer":"Нам","options":["Мені","Тобі","Їй","Нам"]},{"prompt":"___ треба йти додому зараз, вже пізно.","answer":"Їй","options":["Мені","Тобі","Їй","Нам"]},{"prompt":"___ легко говорити українською після курсів.","answer":"Йому","options":["Мені","Тобі","Йому","Їм"]},{"prompt":"___ приємно познайомитися з вами тут!","answer":"Мені","options":["Мені","Тобі","Йому","Нам"]}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Verb","data":{"type":"select","items":[{"question":"Мама ___ дітям цікаву казку перед сном.","options":[{"text":"розповідає","correct":true},{"text":"шкодить","correct":false},{"text":"належить","correct":false},{"text":"заздрить","correct":false}]},{"question":"Цей старий подарунок від бабусі ___ сестрі.","options":[{"text":"вірить","correct":false},{"text":"допомагає","correct":false},{"text":"належить","correct":true},{"text":"заважає","correct":false}]},{"question":"Я завжди ___ батькам нести важкі сумки.","options":[{"text":"заздрю","correct":false},{"text":"допомагаю","correct":true},{"text":"шкоджу","correct":false},{"text":"належу","correct":false}]},{"question":"Вона ___ сусідці її великого успіху в роботі.","options":[{"text":"заздрить","correct":true},{"text":"вірить","correct":false},{"text":"допомагає","correct":false},{"text":"шкодить","correct":false}]},{"question":"Ми щиро ___ вам за ваше запрошення!","options":[{"text":"заважаємо","correct":false},{"text":"належимо","correct":false},{"text":"дякуємо","correct":true},{"text":"шкодимо","correct":false}]},{"question":"Лікар ___ пацієнту нові ефективні ліки.","options":[{"text":"заздрить","correct":false},{"text":"призначає","correct":true},{"text":"належить","correct":false},{"text":"заважає","correct":false}]},{"question":"Батько нарешті ___ синові водити машину.","options":[{"text":"шкодить","correct":false},{"text":"дозволяє","correct":true},{"text":"заздрить","correct":false},{"text":"належить","correct":false}]},{"question":"Ця гарна нова сукня дуже ___ тобі!","options":[{"text":"шкодить","correct":false},{"text":"заважає","correct":false},{"text":"личить","correct":true},{"text":"належить","correct":false}]},{"question":"Голосний шум за вікном ___ мені працювати.","options":[{"text":"допомагає","correct":false},{"text":"заважає","correct":true},{"text":"личить","correct":false},{"text":"дякує","correct":false}]},{"question":"Він часто ___ другу всі свої проблеми.","options":[{"text":"розповідає","correct":true},{"text":"заздрить","correct":false},{"text":"шкодить","correct":false},{"text":"належить","correct":false}]},{"question":"Ми дуже ___ їй у цей важкий час.","options":[{"text":"заздримо","correct":false},{"text":"співчуваємо","correct":true},{"text":"шкодимо","correct":false},{"text":"заважаємо","correct":false}]},{"question":"Вона повністю ___ лікарю і приймає ліки.","options":[{"text":"довіряє","correct":true},{"text":"заздрить","correct":false},{"text":"шкодить","correct":false},{"text":"належить","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Dative Usage","data":{"type":"quiz","questions":[{"question":"Which verb does NOT take dative case?","options":["допомагати","дякувати","любити","заважати"],"correctIndex":2,"explanation":"Любити takes accusative: Я люблю тебе (not тобі)."},{"question":"\"Належати\" means:","options":["to help","to disturb","to belong","to trust"],"correctIndex":2,"explanation":"Ця книжка належить мені — This book belongs to me."},{"question":"Which sentence is correct?","options":["Я допомагаю мамі.","Я допомагаю маму.","Я допомагаю мама.","Я допомагаю мамою."],"correctIndex":0,"explanation":"Допомагати requires dative: мамі."},{"question":"\"Шкодити здоров'ю\" means:","options":["to help health","to harm health","to trust health","to belong to health"],"correctIndex":1,"explanation":"Шкодити + dative = to harm."},{"question":"Which verb takes both dative AND accusative?","options":["належати","вірити","давати","заздрити"],"correctIndex":2,"explanation":"Давати + dat + acc: даю мамі квіти."},{"question":"\"Ця сукня їй личить\" means:","options":["This dress belongs to her","This dress harms her","This dress suits her","This dress disturbs her"],"correctIndex":2,"explanation":"Личити + dative = to suit (appearance)."},{"question":"Which is the correct dative form of \"я\"?","options":["мене","мені","мною","моєму"],"correctIndex":1,"explanation":"Я → мені in dative."},{"question":"\"Заздрити\" means:","options":["to help","to trust","to envy","to forgive"],"correctIndex":2,"explanation":"Заздрити комусь = to envy someone."},{"question":"\"Довіряти\" differs from \"вірити\" because:","options":["They mean the same thing","Довіряти = trust, вірити = believe","Вірити = trust, довіряти = believe","Neither takes dative"],"correctIndex":1,"explanation":"Вірити = accept as true; довіряти = have confidence in."},{"question":"Which sentence uses dative correctly?","options":["Він показує студенти карту.","Він показує студентам карту.","Він показує студентів карту.","Він показує студентами карту."],"correctIndex":1,"explanation":"Показувати + dative (recipient) + accusative (thing)."},{"question":"\"Співчувати\" means:","options":["to envy","to harm","to sympathize","to belong"],"correctIndex":2,"explanation":"Співчувати комусь = to sympathize with someone."},{"question":"Which verb means \"to forgive\" (everyday)?","options":["вибачати","заздрити","належати","шкодити"],"correctIndex":0,"explanation":"Вибачати for everyday forgiveness, пробачати for deeper."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"допомагати","translit":"","en":"to help","note":"+ dat"},{"uk":"заважати","translit":"","en":"to disturb, bother","note":"+ dat"},{"uk":"подобатися","translit":"","en":"to please, to like","note":"thing pleases + dat (Мені подобається = I like)"},{"uk":"вірити","translit":"","en":"to believe","note":"+ dat"},{"uk":"довіряти","translit":"","en":"to trust","note":"+ dat"},{"uk":"дякувати","translit":"","en":"to thank","note":"+ dat"},{"uk":"вибачати","translit":"","en":"to forgive, excuse","note":"+ dat (everyday)"},{"uk":"пробачати","translit":"","en":"to forgive","note":"+ dat (deep)"},{"uk":"заздрити","translit":"","en":"to envy","note":"+ dat"},{"uk":"співчувати","translit":"","en":"to sympathize","note":"+ dat"},{"uk":"личити","translit":"","en":"to suit (appearance)","note":"+ dat"},{"uk":"шкодити","translit":"","en":"to harm","note":"+ dat"},{"uk":"належати","translit":"","en":"to belong","note":"+ dat"},{"uk":"радіти","translit":"","en":"to rejoice","note":"+ dat"},{"uk":"дивуватися","translit":"","en":"to be surprised","note":"+ dat"},{"uk":"давати","translit":"","en":"to give","note":"+ dat + acc"},{"uk":"показувати","translit":"","en":"to show","note":"+ dat + acc"},{"uk":"пояснювати","translit":"","en":"to explain","note":"+ dat + acc"},{"uk":"купувати","translit":"","en":"to buy","note":"+ dat + acc"},{"uk":"готувати","translit":"","en":"to prepare, cook","note":"+ dat + acc"},{"uk":"приносити","translit":"","en":"to bring","note":"+ dat + acc"},{"uk":"розповідати","translit":"","en":"to tell, narrate","note":"+ dat + acc"},{"uk":"посилати","translit":"","en":"to send","note":"+ dat + acc"},{"uk":"здоров'я","translit":"","en":"health","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -1195,8 +1078,8 @@ function resetActivity(sectionId) {
     case 'gap-fill':
       resetFill(sectionId);
       break;
-    case 'order':
     case 'unjumble':
+    case 'anagram':
       resetOrder(sectionId);
       break;
     case 'select':
@@ -1227,8 +1110,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'gap-fill':
         initFill(activity.id, activity.data);
         break;
-      case 'order':
       case 'unjumble':
+      case 'anagram':
         initOrder(activity.id, activity.data);
         break;
       case 'select':
@@ -1640,7 +1523,7 @@ function resetFill(sectionId) {
 }
 
 
-// Order/Unjumble Activity - supports multiple instances
+// Order/Unjumble/Anagram Activity - supports multiple instances
 const orderState = {};
 
 function initOrder(sectionId, data) {
@@ -1650,7 +1533,9 @@ function initOrder(sectionId, data) {
   orderState[sectionId] = { score: 0, total: data.items.length, data: data };
   c.innerHTML = '';
 
-  if (data.isUnjumble) {
+  if (data.isAnagram) {
+    initAnagram(sectionId, c, data);
+  } else if (data.isUnjumble) {
     initUnjumble(sectionId, c, data);
   } else {
     initClassicOrder(sectionId, c, data);
@@ -1851,6 +1736,206 @@ function resetUnjumbleQuestion(sectionId, idx) {
   `).join('');
 
   initUnjumbleDragDrop(row);
+
+  question.classList.remove('wrong');
+  row.classList.remove('wrong');
+  feedback.innerHTML = '';
+  feedback.classList.remove('show');
+}
+
+// ANAGRAM: Drag-and-drop letters to form a single word
+function initAnagram(sectionId, container, data) {
+  data.items.forEach((item, idx) => {
+    const question = document.createElement('div');
+    question.className = 'anagram-question';
+    question.dataset.idx = idx;
+    question.dataset.section = sectionId;
+
+    // Shuffle letters
+    const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+
+    question.innerHTML = `
+      <div class="anagram-number">${idx + 1}.</div>
+      <div class="anagram-letter-row" data-idx="${idx}" data-section="${sectionId}">
+        ${shuffledLetters.map((letter, i) => `
+          <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+        `).join('')}
+      </div>
+      <div class="anagram-actions">
+        <button class="btn btn-sm btn-outline anagram-check" data-idx="${idx}" data-section="${sectionId}">Check</button>
+        <button class="btn btn-sm btn-outline anagram-reset" data-idx="${idx}" data-section="${sectionId}">Reset</button>
+      </div>
+      <div class="anagram-feedback" data-idx="${idx}" data-section="${sectionId}"></div>
+    `;
+
+    container.appendChild(question);
+
+    // Initialize drag-and-drop for this row
+    initAnagramDragDrop(question.querySelector('.anagram-letter-row'));
+  });
+
+  // Event delegation for buttons
+  container.addEventListener('click', handleAnagramClick);
+}
+
+function initAnagramDragDrop(row) {
+  let dragItem = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('dragstart', (e) => {
+      dragItem = letter;
+      letter.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+
+    letter.addEventListener('dragend', () => {
+      letter.classList.remove('dragging');
+      dragItem = null;
+    });
+
+    letter.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      if (!dragItem || dragItem === letter) return;
+
+      const rect = letter.getBoundingClientRect();
+      const midX = rect.left + rect.width / 2;
+
+      if (e.clientX < midX) {
+        row.insertBefore(dragItem, letter);
+      } else {
+        row.insertBefore(dragItem, letter.nextSibling);
+      }
+    });
+  });
+
+  // Touch support for mobile
+  let touchItem = null;
+  let touchClone = null;
+
+  row.querySelectorAll('.anagram-letter').forEach(letter => {
+    letter.addEventListener('touchstart', (e) => {
+      touchItem = letter;
+      letter.classList.add('dragging');
+
+      // Create a clone for visual feedback
+      touchClone = letter.cloneNode(true);
+      touchClone.classList.add('touch-clone');
+      document.body.appendChild(touchClone);
+      updateAnagramTouchClone(e.touches[0], touchClone);
+    });
+
+    letter.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      if (!touchItem) return;
+      updateAnagramTouchClone(e.touches[0], touchClone);
+
+      // Find which letter we're over
+      const touch = e.touches[0];
+      const elements = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const targetLetter = elements.find(el => el.classList.contains('anagram-letter') && el !== touchItem);
+
+      if (targetLetter && targetLetter.parentNode === row) {
+        const rect = targetLetter.getBoundingClientRect();
+        const midX = rect.left + rect.width / 2;
+        if (touch.clientX < midX) {
+          row.insertBefore(touchItem, targetLetter);
+        } else {
+          row.insertBefore(touchItem, targetLetter.nextSibling);
+        }
+      }
+    });
+
+    letter.addEventListener('touchend', () => {
+      if (touchItem) touchItem.classList.remove('dragging');
+      if (touchClone) touchClone.remove();
+      touchItem = null;
+      touchClone = null;
+    });
+  });
+
+  function updateAnagramTouchClone(touch, clone) {
+    if (clone) {
+      clone.style.left = (touch.clientX - 20) + 'px';
+      clone.style.top = (touch.clientY - 20) + 'px';
+    }
+  }
+}
+
+function handleAnagramClick(e) {
+  const target = e.target;
+
+  if (target.classList.contains('anagram-check')) {
+    checkAnagramAnswer(target.dataset.section, parseInt(target.dataset.idx));
+  }
+
+  if (target.classList.contains('anagram-reset')) {
+    resetAnagramQuestion(target.dataset.section, parseInt(target.dataset.idx));
+  }
+}
+
+function checkAnagramAnswer(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  // Build user's answer from current letter order
+  const letters = row.querySelectorAll('.anagram-letter');
+  const userAnswer = Array.from(letters).map(l => l.dataset.letter).join('');
+
+  // Compare with correct answer
+  const isCorrect = userAnswer.toLowerCase() === item.answer.toLowerCase();
+
+  if (isCorrect) {
+    question.classList.add('answered', 'correct');
+    row.classList.add('correct');
+    letters.forEach(l => l.setAttribute('draggable', 'false'));
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    feedback.innerHTML = `
+      <span class="correct-text">✓ Correct!</span>
+      <span class="translation">${item.translation || ''}</span>
+    `;
+    feedback.classList.add('show');
+
+    if (state.score === state.total) {
+      document.getElementById(sectionId + '-complete').classList.add('show');
+    }
+  } else {
+    question.classList.add('wrong');
+    row.classList.add('wrong');
+
+    feedback.innerHTML = `
+      <span class="wrong-text">✗ Try again. Hint: ${item.answer}</span>
+    `;
+    feedback.classList.add('show');
+
+    setTimeout(() => {
+      question.classList.remove('wrong');
+      row.classList.remove('wrong');
+      feedback.classList.remove('show');
+    }, 2000);
+  }
+}
+
+function resetAnagramQuestion(sectionId, idx) {
+  const state = orderState[sectionId];
+  const item = state.data.items[idx];
+  const row = document.querySelector(`.anagram-letter-row[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const question = document.querySelector(`.anagram-question[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const feedback = document.querySelector(`.anagram-feedback[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (question.classList.contains('correct')) return;
+
+  // Re-shuffle and rebuild
+  const shuffledLetters = [...item.letters].sort(() => Math.random() - 0.5);
+  row.innerHTML = shuffledLetters.map(letter => `
+    <span class="anagram-letter" draggable="true" data-letter="${letter}">${letter}</span>
+  `).join('');
+
+  initAnagramDragDrop(row);
 
   question.classList.remove('wrong');
   row.classList.remove('wrong');

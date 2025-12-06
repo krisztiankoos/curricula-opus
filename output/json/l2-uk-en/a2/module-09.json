@@ -11,189 +11,159 @@
     "targetLevel": "A2",
     "phase": "A2.1",
     "moduleNumber": 9,
-    "moduleType": "functional",
+    "moduleType": "vocabulary",
     "immersionLevel": 0.4,
     "title": "At the Post Office & Bank",
-    "subtitle": "Service Interactions",
-    "description": "Handle transactions at post office",
+    "subtitle": "Essential Errands Vocabulary",
+    "description": "Learn vocabulary for post office transactions",
     "objectives": [
-      "Handle transactions at post office",
-      "Manage basic banking needs",
-      "Use all cases in service contexts",
-      "Master service vocabulary"
+      "Learn vocabulary for post office transactions",
+      "Master banking vocabulary and phrases",
+      "Practice using cases in real-world scenarios"
     ],
     "grammarFocus": [
-      "Functional application of all cases",
-      "Service request patterns",
-      "Transaction vocabulary"
+      "Post office vocabulary",
+      "Banking vocabulary",
+      "Practical dialogues"
     ],
     "tags": [
-      "services",
+      "vocabulary",
       "post-office",
       "bank",
-      "functional",
-      "transactions"
+      "practical"
     ],
     "totalDuration": 45,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "sections": [
       {
         "id": "section-intro",
         "name": "Вступ",
         "nameEn": "Introduction",
         "type": "intro",
-        "content": "## warm-up\n\n### Real-World Ukrainian\n\nYou've mastered the case system. Now let's use it in real service situations: the post office (пошта) and the bank (банк).\n\n**Common needs:**\n- Sending letters and packages\n- Exchanging currency\n- Paying bills\n- Asking about services\n\nThese situations combine everything you've learned - cases, prepositions, polite requests!\n\n> 💡 **Did You Know?**\n>\n> \"Укрпошта\" (Ukrposhta) is Ukraine's national postal service, founded in 1994. Despite the digital age, Ukrainians still value sending postcards (листівки) and packages (посилки), especially for holidays. The phrase \"Надіслати з любов'ю\" (sent with love) captures this tradition!\n\n## presentation\n\n### At the Post Office: Key Phrases\n\n**Entering and asking:**\n- Добрий день! Я хочу надіслати листа. - Hello! I want to send a letter.\n- Мені потрібно відправити посилку. - I need to send a package.\n- Скільки коштує марка до Англії? - How much is a stamp to England?\n- Де можна купити конверт? - Where can I buy an envelope?\n\n**Specifying destination:**\n- До Америки. - To America. (до + gen)\n- У Німеччину. - To Germany. (у + acc for countries)\n- На адресу... - To the address... (на + acc)\n\n**Package details:**\n- Посилка важить два кілограми. - The package weighs two kilograms.\n- Що всередині? - What's inside?\n- Там книги і одяг. - There are books and clothes.\n\n> ⚡ **Pro Tip: Sending Mail**\n>\n> Key verbs for mail:\n> - **надіслати** / **відправити** (to send) + acc (what) + dat (to whom)\n> - **отримати** (to receive) + acc (what) + від + gen (from whom)\n> - **забрати** (to pick up) + acc (what)\n\n### Post Office Vocabulary\n\n| Ukrainian | English | Case notes |\n|-----------|---------|------------|\n| лист | letter | надіслати листа (acc) |\n| листівка | postcard | написати листівку (acc) |\n| посилка | package | відправити посилку (acc) |\n| бандероль | small parcel | |\n| марка | stamp | купити марку (acc) |\n| конверт | envelope | |\n| адреса | address | на адресу (acc) |\n| відправник | sender | від відправника (gen) |\n| одержувач | recipient | одержувачу (dat) |\n| індекс | postal code | |\n| квитанція | receipt | |\n| вага | weight | |\n| доставка | delivery | |\n\n**Example dialogue:**\n- Я хочу надіслати посилку до Канади.\n- Що в посилці?\n- Книги і солодощі.\n- Поставте посилку на ваги. Два кілограми. Це коштує 350 гривень.\n- Добре. Ось гроші.\n- Ваша квитанція. Доставка - 10-14 днів.\n\n> 🎭 **Culture Corner: Ukrainian Mail Traditions**\n>\n> Ukrainians love sending greeting cards for holidays, especially:\n> - Новий рік (New Year) - the biggest holiday\n> - Великдень (Easter) - with traditional \"писанки\" designs\n> - День народження (Birthday)\n>\n> Receiving a handwritten card is special - it shows someone took time for you!\n\n### At the Bank: Key Phrases\n\n**Basic requests:**\n- Я хочу обміняти долари на гривні. - I want to exchange dollars for hryvnias.\n- Який курс обміну? - What's the exchange rate?\n- Можна зняти готівку? - Can I withdraw cash?\n- Я хочу відкрити рахунок. - I want to open an account.\n- Мені потрібна виписка з рахунку. - I need an account statement.\n\n**Card and ATM:**\n- Де найближчий банкомат? - Where's the nearest ATM?\n- Моя картка не працює. - My card doesn't work.\n- Можна оплатити карткою? - Can I pay by card?\n- Введіть пін-код. - Enter your PIN.\n\n**Transfers:**\n- Я хочу зробити переказ. - I want to make a transfer.\n- На який рахунок? - To which account?\n- Яка комісія? - What's the commission?\n\n> ⚡ **Pro Tip: Money Talk**\n>\n> Currency phrases:\n> - обміняти X **на** Y - exchange X **for** Y\n> - зняти гроші **з** рахунку - withdraw money **from** account\n> - покласти гроші **на** рахунок - deposit money **to** account\n> - переказати гроші **кому** - transfer money **to someone** (dat)\n\n### Bank Vocabulary\n\n| Ukrainian | English | Case notes |\n|-----------|---------|------------|\n| рахунок | account | на рахунок (acc), з рахунку (gen) |\n| картка | card | карткою (instr) |\n| готівка | cash | готівкою (instr) |\n| переказ | transfer | зробити переказ (acc) |\n| обмін валют | currency exchange | |\n| курс | exchange rate | |\n| долар | dollar | |\n| євро | euro | |\n| гривня | hryvnia | |\n| депозит | deposit | |\n| кредит | loan/credit | |\n| відсоток | interest, percent | |\n| банкомат | ATM | біля банкомату (gen) |\n| каса | cash desk | у касі (loc) |\n| комісія | commission, fee | |\n| підпис | signature | |\n| форма | form | заповнити форму (acc) |\n| документ | document | |\n| посвідчення | ID | |\n\n**Example dialogue:**\n- Добрий день! Я хочу обміняти євро.\n- Скільки?\n- 200 євро. Який сьогодні курс?\n- 40 гривень за євро. Це буде 8000 гривень.\n- Добре. Ось паспорт.\n- Дякую. Розпишіться тут, будь ласка.\n- (підписує)\n- Ось ваші гривні. Перерахуйте, будь ласка.\n\n> 📜 **History Bite: The Hryvnia**\n>\n> The гривня (hryvnia, ₴) became Ukraine's currency in 1996, replacing the карбованець. The name comes from a medieval unit of weight for silver - \"гривна.\" On banknotes, you'll see famous Ukrainian figures: Taras Shevchenko (100₴), Lesya Ukrainka (200₴), and others.\n\n### Polite Service Phrases\n\n**Requests:**\n- Будь ласка, ... - Please, ...\n- Чи можна...? - Is it possible to...?\n- Я хотів би / хотіла б... - I would like...\n- Мені потрібно... - I need...\n- Чи не могли б ви...? - Could you...? (formal)\n\n**Responses:**\n- Звичайно. - Of course.\n- Одну хвилинку. - One moment.\n- На жаль, це неможливо. - Unfortunately, that's not possible.\n- Вам потрібно... - You need to...\n- Будь ласка, зачекайте. - Please wait.\n\n**Problems:**\n- Вибачте, я не розумію. - Sorry, I don't understand.\n- Повторіть, будь ласка. - Please repeat.\n- Чи можете говорити повільніше? - Can you speak slower?\n- Де я можу...? - Where can I...?\n\n### Numbers and Amounts Review\n\n**For transactions:**\n- сто гривень (100₴)\n- двісті долар**ів** (200$) - genitive plural\n- триста євро (300€) - євро doesn't change\n- п'ятсот гривень (500₴)\n- тисяча гривень (1000₴)\n\n**Weights and measures:**\n- один кілограм\n- два кілограм**и**\n- п'ять кілограм**ів**\n\n> ⚡ **Pro Tip: Number Agreement**\n>\n> Remember from A1:\n> - 1 + nominative singular: одна гривня\n> - 2-4 + genitive singular: дві гривні\n> - 5+ + genitive plural: п'ять гривень\n\n## practice\n\n### Complete the Dialogues\n\n**At the post office:**\n1. - Я хочу надіслати ___ (посилка) до Польщі.\n   > [!answer] посилку\n   > [!explanation] acc\n2. - Скільки коштує ___ (марка)?\n   > [!answer] марка\n   > [!explanation] nom, asking price\n3. - Напишіть адресу ___ (одержувач).\n   > [!answer] одержувача\n   > [!explanation] gen\n**At the bank:**\n1. - Я хочу обміняти долари на ___ (гривні).\n   > [!answer] гривні\n   > [!explanation] acc\n2. - Де найближчий ___ (банкомат)?\n   > [!answer] банкомат\n   > [!explanation] nom\n3. - Можна зняти гроші з ___ (рахунок)?\n   > [!answer] рахунку\n   > [!explanation] gen\n### Build Requests\n\nCreate polite requests:\n\n1. send / letter / friend\n   > [!answer] Я хочу надіслати листа другові.\n2. exchange / 100 euros / hryvnias\n   > [!answer] Я хочу обміняти 100 євро на гривні.\n3. withdraw / money / account\n   > [!answer] Я хочу зняти гроші з рахунку.\n4. buy / stamps / postcards\n   > [!answer] Мені потрібно купити марки для листівок.\n\n### Role Play Scenarios\n\n**Scenario 1: Sending a package**\n- Добрий день!\n- Добрий день! Чим можу допомогти?\n- Я хочу відправити посилку до США.\n- Що в посилці?\n- Подарунки для сім'ї.\n- Поставте на ваги... 3 кілограми. 420 гривень.\n- Ось, будь ласка.\n- Дякую! Ось квитанція.\n\n**Scenario 2: Currency exchange**\n- Добрий день! Який курс долара?\n- 37 гривень за долар.\n- Я хочу обміняти 500 доларів.\n- Ваш паспорт, будь ласка.\n- Ось.\n- Дякую. 18,500 гривень. Перерахуйте.\n\n## production\n\n### Real Situations\n\n**Scenario 1: Lost package**\n- Вибачте, я відправляв посилку тиждень тому, але вона не прийшла.\n- Ваша квитанція?\n- Ось.\n- Зачекайте... Посилка в дорозі. Буде через 3 дні.\n- Дякую!\n\n**Scenario 2: Bank problem**\n- Моя картка не працює в банкоматі.\n- Ви правильно вводите пін-код?\n- Так, я впевнений.\n- Можливо, потрібно замінити картку. Заповніть цю форму.\n- Скільки це коштує?\n- Безкоштовно.\n\n**Scenario 3: Sending money**\n- Я хочу переказати гроші родині в Україну.\n- На який рахунок?\n- Ось номер рахунку.\n- Скільки переказуєте?\n- 200 євро.\n- Комісія 3 євро. Загалом 203 євро.\n\n---\n\n---\n\n---\n\n---\n\n\n---\n\n\n---"
+        "content": "Need to send a letter, pay a bill, or open an account? These everyday errands can feel daunting in a new language — but not for long! This module teaches you the essential vocabulary for two important places in Ukrainian life: the post office (пошта) and the bank (банк).\n\nUkrainian post offices have a long history dating back to the Austro-Hungarian Empire in western Ukraine and the Russian Empire in the east. Today, Укрпошта (Ukrainian Post) serves the entire country, from bustling Kyiv to tiny villages in the Carpathians. Banks, meanwhile, have modernized rapidly — you'll find sleek ATMs (банкомати) on nearly every corner in Ukrainian cities.\n\nBy the end of this lesson, you'll be able to navigate both with confidence!\n\n---"
+      },
+      {
+        "id": "section-на-пошті-at-the-post-office",
+        "name": "На пошті — At the Post Office",
+        "type": "content",
+        "content": "Walking into a Ukrainian post office, you'll often see a \"take a number\" system (візьміть номерок). The atmosphere can range from Soviet-era bureaucratic to surprisingly modern — it depends on when the branch was renovated! Either way, the vocabulary you need remains the same.\n\n## Basic Vocabulary\n\n| Ukrainian | English |\n|-----------|---------|\n| пошта | post office |\n| лист | letter |\n| листівка | postcard |\n| посилка | package, parcel |\n| марка | stamp |\n| конверт | envelope |\n| адреса | address |\n| індекс | postal code |\n| відправник | sender |\n| отримувач | recipient |\n\n> [!tip] 💡 Did You Know?\n> Ukrainian postal codes (індекс) have 5 digits. Kyiv codes start with 0, Lviv with 7! The system was introduced in 1932, making it one of the oldest in the world.\n\n> [!tip] 📜 History Bite\n> The first regular postal route in Ukraine was established in 1669 between Kyiv and Moscow. By the 18th century, Lviv had become a major postal hub connecting East and West.\n\n---\n\n## Post Office Phrases\n\nWhen you approach the counter, the clerk will usually ask what you need. Here are the essential phrases:\n\n| Ukrainian | English |\n|-----------|---------|\n| Я хочу відправити листа. | I want to send a letter. |\n| Скільки коштує марка? | How much is a stamp? |\n| Мені потрібен конверт. | I need an envelope. |\n| Куди відправляєте? | Where are you sending it? |\n| В Україну чи за кордон? | To Ukraine or abroad? |\n| Авіапошта чи звичайна? | Airmail or regular? |\n| Заповніть цю форму. | Fill out this form. |\n| Ваша посилка прибула. | Your package has arrived. |\n\nNotice the dative case in action: *Мені* потрібен конверт (I need an envelope — literally \"to me is needed an envelope\").\n\n> [!example] 🎬 Pop Culture Moment\n> Despite the digital age, Ukrainians still love sending *листівки* (postcards) for holidays, especially for New Year and Christmas! Many families have collections of postcards from the Soviet era — they've become collectibles.\n\n> [!tip] ⚡ Pro Tip\n> When sending packages abroad (за кордон), always ask about customs forms (митна декларація). For EU countries, you'll need to declare the contents and value.\n\n---\n\n## Sending a Letter: Dialogue\n\n**Ви**: Доброго дня! Я хочу відправити листа до Німеччини.\n**Працівник**: Звичайною поштою чи авіапоштою?\n**Ви**: Авіапоштою, будь ласка. Скільки це коштує?\n**Працівник**: Тридцять гривень. Напишіть адресу отримувача тут.\n**Ви**: Дякую. А скільки днів іде лист?\n**Працівник**: Приблизно тиждень. Хочете відстеження?\n**Ви**: Так, будь ласка.\n**Працівник**: Тоді п'ятдесят гривень разом. Ось ваша квитанція.\n\n*Notice the cases: листа (accusative - direct object), до Німеччини (genitive - destination), авіапоштою (instrumental - means).*\n\n---"
+      },
+      {
+        "id": "section-у-банку-at-the-bank",
+        "name": "У банку — At the Bank",
+        "type": "content",
+        "content": "Ukrainian banking has transformed dramatically since independence in 1991. Today, major banks like ПриватБанк, Monobank, and Ощадбанк offer modern mobile apps and 24/7 services. Most Ukrainians use bank cards for everyday purchases, and contactless payment is standard in cities.\n\n## Basic Vocabulary\n\n| Ukrainian | English |\n|-----------|---------|\n| банк | bank |\n| рахунок | account |\n| картка | card |\n| гроші | money |\n| готівка | cash |\n| переказ | transfer |\n| обмін валюти | currency exchange |\n| курс | exchange rate |\n| вклад | deposit |\n| кредит | loan, credit |\n| банкомат | ATM |\n| каса | cash desk |\n\n> [!tip] 🌍 Real World\n> ATMs in Ukraine are called **банкомат**. You'll find them everywhere, especially in cities! Most accept international cards (Visa, Mastercard) and offer English language options.\n\n> [!tip] 🎮 Gamer's Corner\n> In Metro 2033 (made by Ukrainian studio 4A Games), pre-war bullets serve as currency. In real Ukraine, the currency is the *гривня* (hryvnia, ₴), named after a medieval unit of weight used in Kyivan Rus!\n\n---\n\n## Banking Phrases\n\nThese phrases will help you navigate any banking situation:\n\n| Ukrainian | English |\n|-----------|---------|\n| Я хочу відкрити рахунок. | I want to open an account. |\n| Мені потрібно зняти гроші. | I need to withdraw money. |\n| Я хочу покласти гроші на рахунок. | I want to deposit money. |\n| Який сьогодні курс долара? | What's today's dollar rate? |\n| Де можна обміняти валюту? | Where can I exchange currency? |\n| Моя картка не працює. | My card doesn't work. |\n| Введіть ваш пін-код. | Enter your PIN. |\n| Підпишіть тут, будь ласка. | Sign here, please. |\n\nNotice the case usage: *Мені* потрібно (dative — \"to me it's necessary\"), *гроші* (accusative — direct object of зняти).\n\n---\n\n## At the ATM\n\nATM screens in Ukraine typically display these instructions. All verbs here are in the imperative form (commands):\n\n| Ukrainian | English |\n|-----------|---------|\n| Вставте картку | Insert card |\n| Введіть пін-код | Enter PIN |\n| Виберіть операцію | Select transaction |\n| Зняття готівки | Cash withdrawal |\n| Перевірка балансу | Balance check |\n| Переказ коштів | Money transfer |\n| Візьміть картку | Take your card |\n| Візьміть гроші | Take your money |\n| Візьміть чек | Take your receipt |\n\n> [!tip] 💡 Did You Know?\n> Ukrainian ATMs often offer language options including English. Look for \"Мова\" (language) on the screen! But using Ukrainian is great practice — you already know all these words!\n\n---\n\n## Currency Exchange: Dialogue\n\n**Ви**: Добрий день! Який сьогодні курс долара?\n**Касир**: Купівля — тридцять сім гривень, продаж — тридцять вісім.\n**Ви**: А євро?\n**Касир**: Купівля — сорок, продаж — сорок одна.\n**Ви**: Добре. Я хочу обміняти сто доларів.\n**Касир**: Ваш паспорт, будь ласка.\n**Ви**: Ось, прошу.\n**Касир**: Дякую. Отримайте три тисячі сімсот гривень. Ось ваш чек.\n**Ви**: Дякую. До побачення!\n\n*Note: \"Купівля\" (buying) is what the bank pays you; \"продаж\" (selling) is what you pay. The difference is the bank's profit!*\n\n## Opening an Account: Dialogue\n\n**Ви**: Добрий день! Я хочу відкрити рахунок.\n**Консультант**: Звичайно. Картковий рахунок чи депозит?\n**Ви**: Картковий, будь ласка.\n**Консультант**: Мені потрібен ваш паспорт і код.\n**Ви**: Ось мій паспорт. А що таке \"код\"?\n**Консультант**: Ідентифікаційний номер платника податків.\n**Ви**: А, зрозуміло. Ось, будь ласка.\n**Консультант**: Дякую. Заповніть цю форму. Картка буде готова за тиждень.\n\n---"
+      },
+      {
+        "id": "section-using-cases-in-context",
+        "name": "Using Cases in Context",
+        "type": "content",
+        "content": "Notice how cases appear naturally:\n\n- Я хочу відправити **листа**. (Accusative - direct object)\n- Напишіть адресу **отримувача**. (Genitive - possession)\n- Дякую **вам**. (Dative - recipient)\n- Заповніть **ручкою**. (Instrumental - tool)\n- Я **на пошті**. (Locative - location)\n- Де **банкомат**? (Nominative - subject)\n\n---\n\n\n---\n\n\n---"
       },
       {
         "id": "section-summary",
         "name": "Підсумок",
         "nameEn": "Summary",
         "type": "summary",
-        "content": "## Post Office Essentials\n\n| Action | Pattern | Example |\n|--------|---------|---------|\n| Send | надіслати + acc + dat | надіслати листа другові |\n| To destination | до + gen | до Америки |\n| Buy stamps | купити + acc | купити марки |\n| Package weight | важити + acc | важить 2 кг |\n\n## Bank Essentials\n\n| Action | Pattern | Example |\n|--------|---------|---------|\n| Exchange | обміняти + acc + на + acc | обміняти долари на гривні |\n| Withdraw | зняти + acc + з + gen | зняти гроші з рахунку |\n| Deposit | покласти + acc + на + acc | покласти на рахунок |\n| Transfer | переказати + acc + dat | переказати гроші мамі |\n\n## Polite Requests\n\n| Phrase | Use |\n|--------|-----|\n| Я хочу... | I want to... |\n| Мені потрібно... | I need... |\n| Чи можна...? | Is it possible...? |\n| Будь ласка | Please |\n\n> 💡 **Key Takeaways**\n>\n> - Post office: надіслати + acc (what) + dat (to whom)\n> - Bank: обміняти X на Y, зняти з рахунку\n> - Always bring паспорт or посвідчення for transactions\n> - Квитанція (receipt) is important - keep it!\n> - Currency: гривня (UAH), долар (USD), євро (EUR)"
+        "content": "Excellent work! You've learned:\n\n**Post Office vocabulary**: пошта, лист, листівка, посилка, марка, конверт, адреса, індекс\n\n**Banking vocabulary**: банк, рахунок, картка, гроші, готівка, переказ, валюта, курс, банкомат\n\n**Useful phrases** for both locations\n\n**Coming up next**: Checkpoint — Cases! Review and test everything you've learned in Phase A2.1!"
       }
     ],
-    "rawMarkdown": "---\ntitle: \"At the Post Office & Bank\"\nsubtitle: \"Service Interactions\"\nphase: A2.1\nduration: 45\ntransliteration: partial\ntags: [services, post-office, bank, functional, transactions]\nobjectives:\n  - Handle transactions at post office\n  - Manage basic banking needs\n  - Use all cases in service contexts\n  - Master service vocabulary\ngrammar:\n  - Functional application of all cases\n  - Service request patterns\n  - Transaction vocabulary\n---\n\n# Lesson Content\n\n## warm-up\n\n### Real-World Ukrainian\n\nYou've mastered the case system. Now let's use it in real service situations: the post office (пошта) and the bank (банк).\n\n**Common needs:**\n- Sending letters and packages\n- Exchanging currency\n- Paying bills\n- Asking about services\n\nThese situations combine everything you've learned - cases, prepositions, polite requests!\n\n> 💡 **Did You Know?**\n>\n> \"Укрпошта\" (Ukrposhta) is Ukraine's national postal service, founded in 1994. Despite the digital age, Ukrainians still value sending postcards (листівки) and packages (посилки), especially for holidays. The phrase \"Надіслати з любов'ю\" (sent with love) captures this tradition!\n\n## presentation\n\n### At the Post Office: Key Phrases\n\n**Entering and asking:**\n- Добрий день! Я хочу надіслати листа. - Hello! I want to send a letter.\n- Мені потрібно відправити посилку. - I need to send a package.\n- Скільки коштує марка до Англії? - How much is a stamp to England?\n- Де можна купити конверт? - Where can I buy an envelope?\n\n**Specifying destination:**\n- До Америки. - To America. (до + gen)\n- У Німеччину. - To Germany. (у + acc for countries)\n- На адресу... - To the address... (на + acc)\n\n**Package details:**\n- Посилка важить два кілограми. - The package weighs two kilograms.\n- Що всередині? - What's inside?\n- Там книги і одяг. - There are books and clothes.\n\n> ⚡ **Pro Tip: Sending Mail**\n>\n> Key verbs for mail:\n> - **надіслати** / **відправити** (to send) + acc (what) + dat (to whom)\n> - **отримати** (to receive) + acc (what) + від + gen (from whom)\n> - **забрати** (to pick up) + acc (what)\n\n### Post Office Vocabulary\n\n| Ukrainian | English | Case notes |\n|-----------|---------|------------|\n| лист | letter | надіслати листа (acc) |\n| листівка | postcard | написати листівку (acc) |\n| посилка | package | відправити посилку (acc) |\n| бандероль | small parcel | |\n| марка | stamp | купити марку (acc) |\n| конверт | envelope | |\n| адреса | address | на адресу (acc) |\n| відправник | sender | від відправника (gen) |\n| одержувач | recipient | одержувачу (dat) |\n| індекс | postal code | |\n| квитанція | receipt | |\n| вага | weight | |\n| доставка | delivery | |\n\n**Example dialogue:**\n- Я хочу надіслати посилку до Канади.\n- Що в посилці?\n- Книги і солодощі.\n- Поставте посилку на ваги. Два кілограми. Це коштує 350 гривень.\n- Добре. Ось гроші.\n- Ваша квитанція. Доставка - 10-14 днів.\n\n> 🎭 **Culture Corner: Ukrainian Mail Traditions**\n>\n> Ukrainians love sending greeting cards for holidays, especially:\n> - Новий рік (New Year) - the biggest holiday\n> - Великдень (Easter) - with traditional \"писанки\" designs\n> - День народження (Birthday)\n>\n> Receiving a handwritten card is special - it shows someone took time for you!\n\n### At the Bank: Key Phrases\n\n**Basic requests:**\n- Я хочу обміняти долари на гривні. - I want to exchange dollars for hryvnias.\n- Який курс обміну? - What's the exchange rate?\n- Можна зняти готівку? - Can I withdraw cash?\n- Я хочу відкрити рахунок. - I want to open an account.\n- Мені потрібна виписка з рахунку. - I need an account statement.\n\n**Card and ATM:**\n- Де найближчий банкомат? - Where's the nearest ATM?\n- Моя картка не працює. - My card doesn't work.\n- Можна оплатити карткою? - Can I pay by card?\n- Введіть пін-код. - Enter your PIN.\n\n**Transfers:**\n- Я хочу зробити переказ. - I want to make a transfer.\n- На який рахунок? - To which account?\n- Яка комісія? - What's the commission?\n\n> ⚡ **Pro Tip: Money Talk**\n>\n> Currency phrases:\n> - обміняти X **на** Y - exchange X **for** Y\n> - зняти гроші **з** рахунку - withdraw money **from** account\n> - покласти гроші **на** рахунок - deposit money **to** account\n> - переказати гроші **кому** - transfer money **to someone** (dat)\n\n### Bank Vocabulary\n\n| Ukrainian | English | Case notes |\n|-----------|---------|------------|\n| рахунок | account | на рахунок (acc), з рахунку (gen) |\n| картка | card | карткою (instr) |\n| готівка | cash | готівкою (instr) |\n| переказ | transfer | зробити переказ (acc) |\n| обмін валют | currency exchange | |\n| курс | exchange rate | |\n| долар | dollar | |\n| євро | euro | |\n| гривня | hryvnia | |\n| депозит | deposit | |\n| кредит | loan/credit | |\n| відсоток | interest, percent | |\n| банкомат | ATM | біля банкомату (gen) |\n| каса | cash desk | у касі (loc) |\n| комісія | commission, fee | |\n| підпис | signature | |\n| форма | form | заповнити форму (acc) |\n| документ | document | |\n| посвідчення | ID | |\n\n**Example dialogue:**\n- Добрий день! Я хочу обміняти євро.\n- Скільки?\n- 200 євро. Який сьогодні курс?\n- 40 гривень за євро. Це буде 8000 гривень.\n- Добре. Ось паспорт.\n- Дякую. Розпишіться тут, будь ласка.\n- (підписує)\n- Ось ваші гривні. Перерахуйте, будь ласка.\n\n> 📜 **History Bite: The Hryvnia**\n>\n> The гривня (hryvnia, ₴) became Ukraine's currency in 1996, replacing the карбованець. The name comes from a medieval unit of weight for silver - \"гривна.\" On banknotes, you'll see famous Ukrainian figures: Taras Shevchenko (100₴), Lesya Ukrainka (200₴), and others.\n\n### Polite Service Phrases\n\n**Requests:**\n- Будь ласка, ... - Please, ...\n- Чи можна...? - Is it possible to...?\n- Я хотів би / хотіла б... - I would like...\n- Мені потрібно... - I need...\n- Чи не могли б ви...? - Could you...? (formal)\n\n**Responses:**\n- Звичайно. - Of course.\n- Одну хвилинку. - One moment.\n- На жаль, це неможливо. - Unfortunately, that's not possible.\n- Вам потрібно... - You need to...\n- Будь ласка, зачекайте. - Please wait.\n\n**Problems:**\n- Вибачте, я не розумію. - Sorry, I don't understand.\n- Повторіть, будь ласка. - Please repeat.\n- Чи можете говорити повільніше? - Can you speak slower?\n- Де я можу...? - Where can I...?\n\n### Numbers and Amounts Review\n\n**For transactions:**\n- сто гривень (100₴)\n- двісті долар**ів** (200$) - genitive plural\n- триста євро (300€) - євро doesn't change\n- п'ятсот гривень (500₴)\n- тисяча гривень (1000₴)\n\n**Weights and measures:**\n- один кілограм\n- два кілограм**и**\n- п'ять кілограм**ів**\n\n> ⚡ **Pro Tip: Number Agreement**\n>\n> Remember from A1:\n> - 1 + nominative singular: одна гривня\n> - 2-4 + genitive singular: дві гривні\n> - 5+ + genitive plural: п'ять гривень\n\n## practice\n\n### Complete the Dialogues\n\n**At the post office:**\n1. - Я хочу надіслати ___ (посилка) до Польщі.\n   > [!answer] посилку\n   > [!explanation] acc\n2. - Скільки коштує ___ (марка)?\n   > [!answer] марка\n   > [!explanation] nom, asking price\n3. - Напишіть адресу ___ (одержувач).\n   > [!answer] одержувача\n   > [!explanation] gen\n**At the bank:**\n1. - Я хочу обміняти долари на ___ (гривні).\n   > [!answer] гривні\n   > [!explanation] acc\n2. - Де найближчий ___ (банкомат)?\n   > [!answer] банкомат\n   > [!explanation] nom\n3. - Можна зняти гроші з ___ (рахунок)?\n   > [!answer] рахунку\n   > [!explanation] gen\n### Build Requests\n\nCreate polite requests:\n\n1. send / letter / friend\n   > [!answer] Я хочу надіслати листа другові.\n2. exchange / 100 euros / hryvnias\n   > [!answer] Я хочу обміняти 100 євро на гривні.\n3. withdraw / money / account\n   > [!answer] Я хочу зняти гроші з рахунку.\n4. buy / stamps / postcards\n   > [!answer] Мені потрібно купити марки для листівок.\n\n### Role Play Scenarios\n\n**Scenario 1: Sending a package**\n- Добрий день!\n- Добрий день! Чим можу допомогти?\n- Я хочу відправити посилку до США.\n- Що в посилці?\n- Подарунки для сім'ї.\n- Поставте на ваги... 3 кілограми. 420 гривень.\n- Ось, будь ласка.\n- Дякую! Ось квитанція.\n\n**Scenario 2: Currency exchange**\n- Добрий день! Який курс долара?\n- 37 гривень за долар.\n- Я хочу обміняти 500 доларів.\n- Ваш паспорт, будь ласка.\n- Ось.\n- Дякую. 18,500 гривень. Перерахуйте.\n\n## production\n\n### Real Situations\n\n**Scenario 1: Lost package**\n- Вибачте, я відправляв посилку тиждень тому, але вона не прийшла.\n- Ваша квитанція?\n- Ось.\n- Зачекайте... Посилка в дорозі. Буде через 3 дні.\n- Дякую!\n\n**Scenario 2: Bank problem**\n- Моя картка не працює в банкоматі.\n- Ви правильно вводите пін-код?\n- Так, я впевнений.\n- Можливо, потрібно замінити картку. Заповніть цю форму.\n- Скільки це коштує?\n- Безкоштовно.\n\n**Scenario 3: Sending money**\n- Я хочу переказати гроші родині в Україну.\n- На який рахунок?\n- Ось номер рахунку.\n- Скільки переказуєте?\n- 200 євро.\n- Комісія 3 євро. Загалом 203 євро.\n\n---\n\n---\n\n---\n\n---\n\n# Activities\n\n## fill-in: Post Office & Bank Vocabulary\n\n> Choose the correct form to complete each service-related sentence.\n\n1. Я хочу відправити ___ (посилка) в Україну, будь ласка.\n   > [!answer] посилку\n   > [!options] посилка | посилки | посилці | посилку\n\n2. Скільки коштує доставка ___ (цей лист) до Львова?\n   > [!answer] цього листа\n   > [!options] цей лист | цього листа | цьому листу | цим листом\n\n3. Я хочу обміняти долари на ___ (гривня).\n   > [!answer] гривні\n   > [!options] гривня | гривні | гривню | гривнею\n\n4. Мені потрібно зняти гроші з ___ (мій рахунок).\n   > [!answer] мого рахунку\n   > [!options] мій рахунок | мого рахунку | моєму рахунку | моїм рахунком\n\n5. Де я можу отримати ___ (моя посилка)?\n   > [!answer] мою посилку\n   > [!options] моя посилка | моєї посилки | моїй посилці | мою посилку\n\n6. Який курс ___ (долар) сьогодні у вашому банку?\n   > [!answer] долара\n   > [!options] долар | долара | долару | доларом\n\n7. Будь ласка, напишіть адресу ___ (отримувач) тут.\n   > [!answer] отримувача\n   > [!options] отримувач | отримувача | отримувачу | отримувачем\n\n8. Я хочу відкрити ___ (новий рахунок) у вашому банку.\n   > [!answer] новий рахунок\n   > [!options] новий рахунок | нового рахунку | новому рахунку | новим рахунком\n\n9. Скільки часу потрібно для ___ (банківський переказ)?\n   > [!answer] банківського переказу\n   > [!options] банківський переказ | банківського переказу | банківському переказу | банківським переказом\n\n10. Мені потрібна квитанція про ___ (оплата) цього рахунку.\n    > [!answer] оплату\n    > [!options] оплата | оплати | оплаті | оплату\n\n## unjumble: Build the Sentence\n\n> Arrange the words to form service-related sentences.\n\n1. посилку / Я / хочу / відправити / в Україну / будь ласка\n   > [!answer] Я хочу відправити посилку в Україну, будь ласка.\n   > (I want to send a package to Ukraine, please.)\n\n2. листа / Скільки / коштує / доставка / цього / до Львова\n   > [!answer] Скільки коштує доставка цього листа до Львова?\n   > (How much does delivery of this letter to Lviv cost?)\n\n3. гривні / Я / хочу / обміняти / долари / на\n   > [!answer] Я хочу обміняти долари на гривні.\n   > (I want to exchange dollars for hryvnias.)\n\n4. рахунку / Мені / потрібно / зняти / гроші / з мого\n   > [!answer] Мені потрібно зняти гроші з мого рахунку.\n   > (I need to withdraw money from my account.)\n\n5. посилку / Де / я / можу / отримати / мою\n   > [!answer] Де я можу отримати мою посилку?\n   > (Where can I receive my package?)\n\n6. долара / Який / курс / сьогодні / у вашому банку\n   > [!answer] Який курс долара сьогодні у вашому банку?\n   > (What is the dollar exchange rate today at your bank?)\n\n7. отримувача / Будь ласка / напишіть / адресу / тут\n   > [!answer] Будь ласка, напишіть адресу отримувача тут.\n   > (Please write the recipient's address here.)\n\n8. рахунок / Я / хочу / відкрити / новий / у вашому банку\n   > [!answer] Я хочу відкрити новий рахунок у вашому банку.\n   > (I want to open a new account at your bank.)\n\n9. переказу / Скільки / часу / потрібно / для / банківського\n   > [!answer] Скільки часу потрібно для банківського переказу?\n   > (How much time is needed for a bank transfer?)\n\n10. квитанція / Мені / потрібна / про оплату / цього рахунку\n    > [!answer] Мені потрібна квитанція про оплату цього рахунку.\n    > (I need a receipt for payment of this bill.)\n\n## match-up: Match the Pairs\n\n> Match Ukrainian words to their English meanings.\n\n| Left | Right |\n|------|-------|\n| зняти | to withdraw |\n| протягом | during, throughout |\n| зуби | teeth |\n| переказ | transfer |\n| переказати | to transfer |\n| обмін | exchange |\n| підпис | signature |\n| відсоток | percent, interest |\n| бандероль | small parcel |\n| лікарня | hospital |\n| індекс | postal code |\n| квитанція | receipt |\n\n## quiz: Meaning Check\n\n> Choose the correct answer.\n\n1. What does \"індекс\" mean?\n   - [ ] newspaper\n   - [ ] relative\n   - [x] postal code\n   - [ ] bicycle\n   > \"індекс\" means \"postal code\"\n\n2. What does \"переказати\" mean?\n   - [ ] ten\n   - [x] to transfer\n   - [ ] alphabet\n   - [ ] to understand (perf)\n   > \"переказати\" means \"to transfer\"\n\n3. What does \"вага\" mean?\n   - [ ] restaurant\n   - [ ] invitation\n   - [x] weight\n   - [ ] to shave\n   > \"вага\" means \"weight\"\n\n4. What does \"кредит\" mean?\n   - [x] credit, loan\n   - [ ] musician\n   - [ ] exchange\n   - [ ] friend (male)\n   > \"кредит\" means \"credit, loan\"\n\n5. What does \"відправник\" mean?\n   - [ ] five\n   - [x] sender\n   - [ ] postcard\n   - [ ] (with) you\n   > \"відправник\" means \"sender\"\n\n6. What does \"відправити\" mean?\n   - [ ] pleasure, satisfaction\n   - [ ] three\n   - [ ] glass\n   - [x] to send, dispatch\n   > \"відправити\" means \"to send, dispatch\"\n\n7. What does \"доставка\" mean?\n   - [x] delivery\n   - [ ] exit\n   - [ ] to give\n   - [ ] bag\n   > \"доставка\" means \"delivery\"\n\n8. What does \"відсоток\" mean?\n   - [x] percent, interest\n   - [ ] bon appétit\n   - [ ] student\n   - [ ] you (informal)\n   > \"відсоток\" means \"percent, interest\"\n\n9. What does \"зняти\" mean?\n   - [ ] passport\n   - [x] to withdraw\n   - [ ] suitcase\n   - [ ] color\n   > \"зняти\" means \"to withdraw\"\n\n10. What does \"обміняти\" mean?\n   - [x] to exchange\n   - [ ] pork fat\n   - [ ] seller (f)\n   - [ ] to be fascinated\n   > \"обміняти\" means \"to exchange\"\n\n11. What does \"надіслати\" mean?\n   - [ ] doctor (f)\n   - [x] to send\n   - [ ] to be lucky\n   - [ ] married (m)\n   > \"надіслати\" means \"to send\"\n\n12. What does \"розписатися\" mean?\n   - [x] to sign\n   - [ ] bag\n   - [ ] day after tomorrow\n   - [ ] salad\n   > \"розписатися\" means \"to sign\"\n\n## true-false: True or False?\n\n> Determine if each statement is true or false.\n\n- [ ] \"обміняти\" means \"Ukrainian (female)\"\n   > Incorrect. \"обміняти\" means \"to exchange\"\n\n- [x] \"відправник\" means \"sender\"\n   > Correct!\n\n- [x] \"банкомат\" means \"ATM\"\n   > Correct!\n\n- [ ] \"комісія\" means \"to hurry\"\n   > Incorrect. \"комісія\" means \"commission\"\n\n- [ ] \"депозит\" means \"went (f)\"\n   > Incorrect. \"депозит\" means \"deposit\"\n\n- [ ] \"надіслати\" means \"good, okay\"\n   > Incorrect. \"надіслати\" means \"to send\"\n\n- [x] \"доставка\" means \"delivery\"\n   > Correct!\n\n- [x] \"марка\" means \"stamp\"\n   > Correct!\n\n- [x] \"бандероль\" means \"small parcel\"\n   > Correct!\n\n- [x] \"перерахувати\" means \"to count, recount\"\n   > Correct!\n\n## group-sort: Sort by Gender\n\n> Sort the nouns into gender categories.\n\n### Masculine\n- індекс\n- кредит\n- одержувач\n- переказ\n- депозит\n- курс\n\n### Feminine\n- вага\n- квитанція\n- комісія\n- бандероль\n- марка\n- листівка\n\n## select: Choose Post Office and Bank Terms\n\n> Select all words that belong to the category.\n\n1. Which are postal items you can send?\n   - [x] лист\n   - [x] листівка\n   - [x] посилка\n   - [x] бандероль\n   - [ ] марка\n   - [ ] конверт\n   - [ ] адреса\n   - [ ] індекс\n   - [ ] вага\n   - [ ] квитанція\n\n2. Which are bank transaction types?\n   - [ ] лист\n   - [x] переказ\n   - [x] обмін валюти\n   - [ ] посилка\n   - [x] депозит\n   - [x] кредит\n   - [ ] марка\n   - [x] зняття готівки\n   - [ ] конверт\n   - [ ] доставка\n\n3. Which are postal service vocabulary?\n   - [x] надіслати\n   - [x] відправити\n   - [x] отримати\n   - [x] доставка\n   - [ ] обміняти\n   - [x] одержувач\n   - [x] відправник\n   - [ ] рахунок\n   - [ ] готівка\n   - [ ] валюта\n\n4. Which are bank-related vocabulary?\n   - [ ] посилка\n   - [x] готівка\n   - [x] валюта\n   - [x] рахунок\n   - [ ] марка\n   - [x] обміняти\n   - [x] курс\n   - [x] комісія\n   - [ ] листівка\n   - [ ] конверт\n\n5. Which verbs are used at the post office?\n   - [x] надіслати\n   - [x] відправити\n   - [ ] обміняти\n   - [x] отримати\n   - [x] забрати\n   - [ ] зняти\n   - [ ] покласти\n   - [ ] перерахувати\n   - [ ] заощадити\n   - [ ] відкрити рахунок\n\n6. Which verbs are used at the bank?\n   - [ ] надіслати\n   - [x] обміняти\n   - [ ] відправити посилку\n   - [x] зняти гроші\n   - [x] покласти гроші\n   - [x] перерахувати\n   - [x] відкрити рахунок\n   - [ ] забрати посилку\n   - [ ] отримати листа\n   - [ ] купити марку\n\n7. Which require accusative case (direct object)?\n   - [x] надіслати листа\n   - [x] відправити посилку\n   - [x] купити марку\n   - [x] обміняти гроші\n   - [x] зняти готівку\n   - [ ] до Америки\n   - [ ] від відправника\n   - [x] отримати квитанцію\n   - [ ] на рахунку\n   - [ ] у банку\n\n8. Which require genitive case?\n   - [ ] надіслати посилку\n   - [x] до Америки\n   - [x] від відправника\n   - [ ] відправити листа\n   - [x] біля пошти\n   - [x] без комісії\n   - [ ] купити марку\n   - [x] курс долара\n   - [ ] у банку\n   - [ ] на пошті\n\n9. Which are currencies mentioned?\n   - [ ] марка\n   - [x] долар\n   - [x] євро\n   - [x] гривня\n   - [ ] індекс\n   - [ ] кредит\n   - [ ] депозит\n   - [ ] переказ\n   - [ ] курс\n   - [ ] комісія\n\n10. Which describe payment or money?\n    - [x] готівка\n    - [x] гроші\n    - [ ] посилка\n    - [x] валюта\n    - [ ] марка\n    - [x] комісія\n    - [x] курс\n    - [ ] вага\n    - [x] рахунок\n    - [ ] доставка\n\n## unjumble: Arrange Words into Sentences\n\n> Put the words in the correct order to form grammatically correct sentences.\n\n1. надіслати / хочу / Я / листа / до / Англії\n   > [!answer] Я хочу надіслати листа до Англії.\n   > (I want to send a letter to England.)\n\n2. посилку / відправити / потрібно / Мені / Канади / до\n   > [!answer] Мені потрібно відправити посилку до Канади.\n   > (I need to send a package to Canada.)\n\n3. коштує / Скільки / марка / до / Америки\n   > [!answer] Скільки коштує марка до Америки?\n   > (How much is a stamp to America?)\n\n4. купити / можна / Де / конверт\n   > [!answer] Де можна купити конверт?\n   > (Where can I buy an envelope?)\n\n5. обміняти / хочу / долари / Я / гривні / на\n   > [!answer] Я хочу обміняти долари на гривні.\n   > (I want to exchange dollars for hryvnias.)\n\n6. курс / Який / євро / сьогодні\n   > [!answer] Який курс євро сьогодні?\n   > (What is the euro exchange rate today?)\n\n7. зняти / хочу / готівку / Я / рахунку / з\n   > [!answer] Я хочу зняти готівку з рахунку.\n   > (I want to withdraw cash from my account.)\n\n8. гроші / покласти / Мені / на / потрібно / рахунок\n   > [!answer] Мені потрібно покласти гроші на рахунок.\n   > (I need to deposit money into the account.)\n\n9. відкрити / можна / Чи / рахунок / у / вашому / банку\n   > [!answer] Чи можна відкрити рахунок у вашому банку?\n   > (Can I open an account at your bank?)\n\n10. отримати / Я / прийшов / посилку / відділенні / у / цьому\n    > [!answer] Я прийшов отримати посилку у цьому відділенні.\n    > (I came to pick up a package at this branch.)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| пошта | /ˈpɔʃtɑ/ | post office | noun | f |\n| поштове відділення | /pɔˈʃtɔvɛ vʲidˈdʲilɛnʲːɑ/ | post office branch | phrase | n |\n| лист | /lɪst/ | letter | noun | m |\n| листівка | /lɪsˈtʲifkɑ/ | postcard | noun | f |\n| посилка | /pɔˈsɪlkɑ/ | package | noun | f |\n| бандероль | /bɑndɛˈrolʲ/ | small parcel | noun | f |\n| марка | /ˈmɑrkɑ/ | stamp | noun | f |\n| конверт | /kɔnˈvɛrt/ | envelope | noun | m |\n| адреса | /ɑˈdrɛsɑ/ | address | noun | f |\n| відправник | /vʲidprɑvˈnɪk/ | sender | noun | m |\n| одержувач | /ɔdɛrˈʒuvɑtʃ/ | recipient | noun | m |\n| банк | /bɑnk/ | bank | noun | m |\n| рахунок | /rɑˈxunɔk/ | account, bill | noun | m |\n| картка | /ˈkɑrtkɑ/ | card | noun | f |\n| готівка | /ɦɔˈtʲivkɑ/ | cash | noun | f |\n| переказ | /pɛrɛˈkɑz/ | transfer | noun | m |\n| обмін валют | /ɔbˈmʲin vɑˈlʲut/ | currency exchange | phrase | m |\n| курс | /kurs/ | rate | noun | m |\n| долар | /ˈdɔlɑr/ | dollar | noun | m |\n| євро | /ˈjɛvrɔ/ | euro | noun | n |\n| гривня | /ˈɦrɪvnʲɑ/ | hryvnia | noun | f |\n| депозит | /dɛpɔˈzɪt/ | deposit | noun | m |\n| кредит | /krɛˈdɪt/ | credit, loan | noun | m |\n| позика | /pɔˈzɪkɑ/ | loan | noun | f |\n| відсоток | /vʲidˈsɔtɔk/ | percent, interest | noun | m |\n| банкомат | /bɑnkɔˈmɑt/ | ATM | noun | m |\n| каса | /ˈkɑsɑ/ | cash desk | noun | f |\n| касир | /kɑˈsɪr/ | cashier | noun | m |\n| черга | /ˈtʃɛrɦɑ/ | queue, line | noun | f |\n| квитанція | /kvɪˈtɑntsʲijɑ/ | receipt | noun | f |\n| чек | /tʃɛk/ | receipt, check | noun | m |\n| підпис | /ˈpʲidpɪs/ | signature | noun | m |\n| форма | /ˈfɔrmɑ/ | form | noun | f |\n| документ | /dɔkuˈmɛnt/ | document | noun | m |\n| паспорт | /ˈpɑspɔrt/ | passport | noun | m |\n| посвідчення | /pɔsˈvʲidtʃɛnʲːɑ/ | ID, certificate | noun | n |\n| комісія | /kɔˈmʲisʲijɑ/ | commission | noun | f |\n| термін | /ˈtɛrmʲin/ | term, deadline | noun | m |\n| безкоштовно | /bɛzkɔˈʃtɔvnɔ/ | free of charge | adv | - |\n| платний | /ˈplɑtnɪj/ | paid | adj | m |\n| надіслати | /nɑdʲisˈlɑtɪ/ | to send | verb | - | + acc + dat |\n| відправити | /vʲidprɑˈvɪtɪ/ | to send, dispatch | verb | - | + acc |\n| обміняти | /obmʲiˈnʲɑtɪ/ | to exchange | verb | - | + acc + на + acc |\n| зняти | /znʲɑˈtɪ/ | to withdraw | verb | - | + acc + з + gen |\n| переказати | /pɛrɛkɑˈzɑtɪ/ | to transfer | verb | - | + acc + dat |\n| заповнити | /zɑˈpovnɪtɪ/ | to fill out | verb | - | + acc |\n\n---\n\n# Summary\n\n## Post Office Essentials\n\n| Action | Pattern | Example |\n|--------|---------|---------|\n| Send | надіслати + acc + dat | надіслати листа другові |\n| To destination | до + gen | до Америки |\n| Buy stamps | купити + acc | купити марки |\n| Package weight | важити + acc | важить 2 кг |\n\n## Bank Essentials\n\n| Action | Pattern | Example |\n|--------|---------|---------|\n| Exchange | обміняти + acc + на + acc | обміняти долари на гривні |\n| Withdraw | зняти + acc + з + gen | зняти гроші з рахунку |\n| Deposit | покласти + acc + на + acc | покласти на рахунок |\n| Transfer | переказати + acc + dat | переказати гроші мамі |\n\n## Polite Requests\n\n| Phrase | Use |\n|--------|-----|\n| Я хочу... | I want to... |\n| Мені потрібно... | I need... |\n| Чи можна...? | Is it possible...? |\n| Будь ласка | Please |\n\n> 💡 **Key Takeaways**\n>\n> - Post office: надіслати + acc (what) + dat (to whom)\n> - Bank: обміняти X на Y, зняти з рахунку\n> - Always bring паспорт or посвідчення for transactions\n> - Квитанція (receipt) is important - keep it!\n> - Currency: гривня (UAH), долар (USD), євро (EUR)\n",
-    "createdAt": "2025-12-05T01:15:57.969Z",
-    "modifiedAt": "2025-12-05T01:15:57.969Z",
+    "rawMarkdown": "---\ntitle: \"At the Post Office & Bank\"\nsubtitle: \"Essential Errands Vocabulary\"\nphase: A2.1\nduration: 45\ntransliteration: none\ntags: [vocabulary, post-office, bank, practical]\nobjectives:\n  - Learn vocabulary for post office transactions\n  - Master banking vocabulary and phrases\n  - Practice using cases in real-world scenarios\ngrammar:\n  - Post office vocabulary\n  - Banking vocabulary\n  - Practical dialogues\n---\n\n# Вступ\n\nNeed to send a letter, pay a bill, or open an account? These everyday errands can feel daunting in a new language — but not for long! This module teaches you the essential vocabulary for two important places in Ukrainian life: the post office (пошта) and the bank (банк).\n\nUkrainian post offices have a long history dating back to the Austro-Hungarian Empire in western Ukraine and the Russian Empire in the east. Today, Укрпошта (Ukrainian Post) serves the entire country, from bustling Kyiv to tiny villages in the Carpathians. Banks, meanwhile, have modernized rapidly — you'll find sleek ATMs (банкомати) on nearly every corner in Ukrainian cities.\n\nBy the end of this lesson, you'll be able to navigate both with confidence!\n\n---\n\n# На пошті — At the Post Office\n\nWalking into a Ukrainian post office, you'll often see a \"take a number\" system (візьміть номерок). The atmosphere can range from Soviet-era bureaucratic to surprisingly modern — it depends on when the branch was renovated! Either way, the vocabulary you need remains the same.\n\n## Basic Vocabulary\n\n| Ukrainian | English |\n|-----------|---------|\n| пошта | post office |\n| лист | letter |\n| листівка | postcard |\n| посилка | package, parcel |\n| марка | stamp |\n| конверт | envelope |\n| адреса | address |\n| індекс | postal code |\n| відправник | sender |\n| отримувач | recipient |\n\n> [!tip] 💡 Did You Know?\n> Ukrainian postal codes (індекс) have 5 digits. Kyiv codes start with 0, Lviv with 7! The system was introduced in 1932, making it one of the oldest in the world.\n\n> [!tip] 📜 History Bite\n> The first regular postal route in Ukraine was established in 1669 between Kyiv and Moscow. By the 18th century, Lviv had become a major postal hub connecting East and West.\n\n---\n\n## Post Office Phrases\n\nWhen you approach the counter, the clerk will usually ask what you need. Here are the essential phrases:\n\n| Ukrainian | English |\n|-----------|---------|\n| Я хочу відправити листа. | I want to send a letter. |\n| Скільки коштує марка? | How much is a stamp? |\n| Мені потрібен конверт. | I need an envelope. |\n| Куди відправляєте? | Where are you sending it? |\n| В Україну чи за кордон? | To Ukraine or abroad? |\n| Авіапошта чи звичайна? | Airmail or regular? |\n| Заповніть цю форму. | Fill out this form. |\n| Ваша посилка прибула. | Your package has arrived. |\n\nNotice the dative case in action: *Мені* потрібен конверт (I need an envelope — literally \"to me is needed an envelope\").\n\n> [!example] 🎬 Pop Culture Moment\n> Despite the digital age, Ukrainians still love sending *листівки* (postcards) for holidays, especially for New Year and Christmas! Many families have collections of postcards from the Soviet era — they've become collectibles.\n\n> [!tip] ⚡ Pro Tip\n> When sending packages abroad (за кордон), always ask about customs forms (митна декларація). For EU countries, you'll need to declare the contents and value.\n\n---\n\n## Sending a Letter: Dialogue\n\n**Ви**: Доброго дня! Я хочу відправити листа до Німеччини.\n**Працівник**: Звичайною поштою чи авіапоштою?\n**Ви**: Авіапоштою, будь ласка. Скільки це коштує?\n**Працівник**: Тридцять гривень. Напишіть адресу отримувача тут.\n**Ви**: Дякую. А скільки днів іде лист?\n**Працівник**: Приблизно тиждень. Хочете відстеження?\n**Ви**: Так, будь ласка.\n**Працівник**: Тоді п'ятдесят гривень разом. Ось ваша квитанція.\n\n*Notice the cases: листа (accusative - direct object), до Німеччини (genitive - destination), авіапоштою (instrumental - means).*\n\n---\n\n# У банку — At the Bank\n\nUkrainian banking has transformed dramatically since independence in 1991. Today, major banks like ПриватБанк, Monobank, and Ощадбанк offer modern mobile apps and 24/7 services. Most Ukrainians use bank cards for everyday purchases, and contactless payment is standard in cities.\n\n## Basic Vocabulary\n\n| Ukrainian | English |\n|-----------|---------|\n| банк | bank |\n| рахунок | account |\n| картка | card |\n| гроші | money |\n| готівка | cash |\n| переказ | transfer |\n| обмін валюти | currency exchange |\n| курс | exchange rate |\n| вклад | deposit |\n| кредит | loan, credit |\n| банкомат | ATM |\n| каса | cash desk |\n\n> [!tip] 🌍 Real World\n> ATMs in Ukraine are called **банкомат**. You'll find them everywhere, especially in cities! Most accept international cards (Visa, Mastercard) and offer English language options.\n\n> [!tip] 🎮 Gamer's Corner\n> In Metro 2033 (made by Ukrainian studio 4A Games), pre-war bullets serve as currency. In real Ukraine, the currency is the *гривня* (hryvnia, ₴), named after a medieval unit of weight used in Kyivan Rus!\n\n---\n\n## Banking Phrases\n\nThese phrases will help you navigate any banking situation:\n\n| Ukrainian | English |\n|-----------|---------|\n| Я хочу відкрити рахунок. | I want to open an account. |\n| Мені потрібно зняти гроші. | I need to withdraw money. |\n| Я хочу покласти гроші на рахунок. | I want to deposit money. |\n| Який сьогодні курс долара? | What's today's dollar rate? |\n| Де можна обміняти валюту? | Where can I exchange currency? |\n| Моя картка не працює. | My card doesn't work. |\n| Введіть ваш пін-код. | Enter your PIN. |\n| Підпишіть тут, будь ласка. | Sign here, please. |\n\nNotice the case usage: *Мені* потрібно (dative — \"to me it's necessary\"), *гроші* (accusative — direct object of зняти).\n\n---\n\n## At the ATM\n\nATM screens in Ukraine typically display these instructions. All verbs here are in the imperative form (commands):\n\n| Ukrainian | English |\n|-----------|---------|\n| Вставте картку | Insert card |\n| Введіть пін-код | Enter PIN |\n| Виберіть операцію | Select transaction |\n| Зняття готівки | Cash withdrawal |\n| Перевірка балансу | Balance check |\n| Переказ коштів | Money transfer |\n| Візьміть картку | Take your card |\n| Візьміть гроші | Take your money |\n| Візьміть чек | Take your receipt |\n\n> [!tip] 💡 Did You Know?\n> Ukrainian ATMs often offer language options including English. Look for \"Мова\" (language) on the screen! But using Ukrainian is great practice — you already know all these words!\n\n---\n\n## Currency Exchange: Dialogue\n\n**Ви**: Добрий день! Який сьогодні курс долара?\n**Касир**: Купівля — тридцять сім гривень, продаж — тридцять вісім.\n**Ви**: А євро?\n**Касир**: Купівля — сорок, продаж — сорок одна.\n**Ви**: Добре. Я хочу обміняти сто доларів.\n**Касир**: Ваш паспорт, будь ласка.\n**Ви**: Ось, прошу.\n**Касир**: Дякую. Отримайте три тисячі сімсот гривень. Ось ваш чек.\n**Ви**: Дякую. До побачення!\n\n*Note: \"Купівля\" (buying) is what the bank pays you; \"продаж\" (selling) is what you pay. The difference is the bank's profit!*\n\n## Opening an Account: Dialogue\n\n**Ви**: Добрий день! Я хочу відкрити рахунок.\n**Консультант**: Звичайно. Картковий рахунок чи депозит?\n**Ви**: Картковий, будь ласка.\n**Консультант**: Мені потрібен ваш паспорт і код.\n**Ви**: Ось мій паспорт. А що таке \"код\"?\n**Консультант**: Ідентифікаційний номер платника податків.\n**Ви**: А, зрозуміло. Ось, будь ласка.\n**Консультант**: Дякую. Заповніть цю форму. Картка буде готова за тиждень.\n\n---\n\n# Using Cases in Context\n\nNotice how cases appear naturally:\n\n- Я хочу відправити **листа**. (Accusative - direct object)\n- Напишіть адресу **отримувача**. (Genitive - possession)\n- Дякую **вам**. (Dative - recipient)\n- Заповніть **ручкою**. (Instrumental - tool)\n- Я **на пошті**. (Locative - location)\n- Де **банкомат**? (Nominative - subject)\n\n---\n\n# Vocabulary\n\n| Word | IPA | English | POS | Gender | Note |\n|------|-----|---------|-----|--------|------|\n| пошта | /ˈpoʃta/ | post office | noun | f | на пошті |\n| лист | /lɪst/ | letter | noun | m | листа (acc) |\n| листівка | /lɪsˈtiwka/ | postcard | noun | f | |\n| посилка | /poˈsɪlka/ | package | noun | f | |\n| марка | /ˈmarka/ | stamp | noun | f | |\n| конверт | /konˈwɛrt/ | envelope | noun | m | |\n| адреса | /adˈrɛsa/ | address | noun | f | |\n| індекс | /ˈindɛks/ | postal code | noun | m | |\n| відправник | /widˈprawnɪk/ | sender | noun | m | |\n| отримувач | /otrɪˈmuwatʃ/ | recipient | noun | m | |\n| банк | /bank/ | bank | noun | m | у банку |\n| рахунок | /raˈxunok/ | account | noun | m | |\n| картка | /ˈkartka/ | card | noun | f | |\n| гроші | /ˈɦroʃi/ | money | noun | pl | |\n| готівка | /ɦoˈtiwka/ | cash | noun | f | |\n| переказ | /pɛrɛˈkaz/ | transfer | noun | m | |\n| валюта | /waˈlʲuta/ | currency | noun | f | |\n| курс | /kurs/ | rate | noun | m | |\n| банкомат | /bankoˈmat/ | ATM | noun | m | |\n| каса | /ˈkasa/ | cash desk | noun | f | |\n| відправляти | /widprawˈlʲatɪ/ | to send | verb | — | impf |\n| знімати | /zniˈmatɪ/ | to withdraw | verb | — | impf |\n| обміняти | /obmiˈnʲatɪ/ | to exchange | verb | — | pf |\n| купівля | /kuˈpiwlʲa/ | buying, purchase | noun | f | |\n| продаж | /proˈdaʒ/ | selling, sale | noun | m | |\n| квитанція | /kwɪˈtant͡sija/ | receipt | noun | f | |\n| гривня | /ˈɦrɪwnʲa/ | hryvnia (₴) | noun | f | Ukrainian currency |\n| вклад | /wklad/ | deposit | noun | m | банківський вклад |\n| кредит | /krɛˈdɪt/ | loan, credit | noun | m | |\n| пін-код | /pin ˈkod/ | PIN code | noun | m | |\n| чек | /tʃɛk/ | receipt, check | noun | m | |\n| паспорт | /ˈpasport/ | passport | noun | m | |\n| форма | /ˈforma/ | form | noun | f | заповнити форму |\n| тиждень | /ˈtɪʒdenʲ/ | week | noun | m | |\n\n---\n\n# Activities\n\n## fill-in: Complete the Sentences\n\n1. Я хочу відправити ___ (лист).\n   > [!answer] листа\n   > (I want to send a letter.)\n\n2. Скільки коштує ___ (марка)?\n   > [!answer] марка\n   > (How much is a stamp?)\n\n3. Мені потрібен ___ (конверт).\n   > [!answer] конверт\n   > (I need an envelope.)\n\n4. Я хочу відкрити ___ (рахунок).\n   > [!answer] рахунок\n   > (I want to open an account.)\n\n5. Де можна обміняти ___ (валюта)?\n   > [!answer] валюту\n   > (Where can I exchange currency?)\n\n6. Моя ___ (картка) не працює.\n   > [!answer] картка\n   > (My card doesn't work.)\n\n7. Який сьогодні ___ (курс) долара?\n   > [!answer] курс\n   > (What's today's dollar rate?)\n\n8. Ваша ___ (посилка) прибула.\n   > [!answer] посилка\n   > (Your package has arrived.)\n\n9. Напишіть ___ (адреса) тут.\n   > [!answer] адресу\n   > (Write the address here.)\n\n10. Введіть ваш ___ (пін-код).\n    > [!answer] пін-код\n    > (Enter your PIN.)\n\n11. Мені потрібно зняти ___ (гроші).\n    > [!answer] гроші\n    > (I need to withdraw money.)\n\n12. Де найближчий ___ (банкомат)?\n    > [!answer] банкомат\n    > (Where's the nearest ATM?)\n\n## match-up: Ukrainian to English\n\n- пошта :: post office\n- лист :: letter\n- посилка :: package\n- марка :: stamp\n- банк :: bank\n- рахунок :: account\n- картка :: card\n- гроші :: money\n- готівка :: cash\n- переказ :: transfer\n- валюта :: currency\n- банкомат :: ATM\n\n## unjumble: Word Order\n\n1. відправити / хочу / Я / листа / до / Німеччини / сьогодні / важливого\n   > [!answer] Я хочу відправити важливого листа до Німеччини сьогодні.\n   > (I want to send an important letter to Germany today.) [8 words]\n\n2. марка / коштує / Скільки / одна / для / листа / за / кордон\n   > [!answer] Скільки коштує одна марка для листа за кордон?\n   > (How much is one stamp for a letter abroad?) [8 words]\n\n3. конверт / Мені / потрібен / великий / для / важливих / моїх / документів\n   > [!answer] Мені потрібен великий конверт для моїх важливих документів.\n   > (I need a big envelope for my important documents.) [8 words]\n\n4. рахунок / відкрити / хочу / Я / новий / у / вашому / банку\n   > [!answer] Я хочу відкрити новий рахунок у вашому банку.\n   > (I want to open a new account at your bank.) [8 words]\n\n5. валюту / можна / обміняти / Де / тут / поблизу / американську / іноземну\n   > [!answer] Де тут поблизу можна обміняти іноземну американську валюту?\n   > (Where nearby can I exchange foreign American currency?) [8 words]\n\n6. не / Моя / працює / картка / банківська / чомусь / сьогодні / нова\n   > [!answer] Моя нова банківська картка чомусь сьогодні не працює.\n   > (My new bank card doesn't work for some reason today.) [8 words]\n\n7. долара / курс / сьогодні / Який / у / вашому / американського / банку\n   > [!answer] Який сьогодні курс американського долара у вашому банку?\n   > (What is today's American dollar rate at your bank?) [8 words]\n\n8. прибула / Ваша / посилка / велика / з / Америки / нарешті / очікувана\n   > [!answer] Ваша очікувана велика посилка з Америки нарешті прибула.\n   > (Your expected big package from America has finally arrived.) [8 words]\n\n9. гроші / зняти / Мені / потрібно / з / мого / рахунку / терміново\n   > [!answer] Мені терміново потрібно зняти гроші з мого рахунку.\n   > (I urgently need to withdraw money from my account.) [8 words]\n\n10. банкомат / найближчий / Де / тут / працює / який / цілодобово / знаходиться\n    > [!answer] Де тут знаходиться найближчий банкомат, який працює цілодобово?\n    > (Where is the nearest ATM that works 24/7?) [8 words]\n\n11. тут / Підпишіть / ласка / будь / внизу / документа / цього / важливого\n    > [!answer] Підпишіть, будь ласка, тут внизу цього важливого документа.\n    > (Please sign here at the bottom of this important document.) [8 words]\n\n12. пін-код / Введіть / ваш / будь / ласка / секретний / особистий / новий\n    > [!answer] Введіть, будь ласка, ваш новий особистий секретний пін-код.\n    > (Please enter your new personal secret PIN code.) [8 words]\n\n## quiz: Where Do You Hear This?\n\n1. \"Скільки коштує марка?\"\n   - [x] At the post office\n   - [ ] At the bank\n   - [ ] At the store\n   - [ ] At the restaurant\n\n2. \"Який сьогодні курс долара?\"\n   - [ ] At the post office\n   - [x] At the bank\n   - [ ] At the doctor\n   - [ ] At school\n\n3. \"Ваша посилка прибула.\"\n   - [x] At the post office\n   - [ ] At the bank\n   - [ ] At the airport\n   - [ ] At the hotel\n\n4. \"Введіть ваш пін-код.\"\n   - [ ] At the post office\n   - [x] At the bank/ATM\n   - [ ] At the pharmacy\n   - [ ] At the cinema\n\n5. \"Напишіть адресу отримувача.\"\n   - [x] At the post office\n   - [ ] At the bank\n   - [ ] At the hospital\n   - [ ] At the museum\n\n6. \"Я хочу відкрити рахунок.\"\n   - [ ] At the post office\n   - [x] At the bank\n   - [ ] At the restaurant\n   - [ ] At the gym\n\n7. \"Авіапошта чи звичайна?\"\n   - [x] At the post office\n   - [ ] At the bank\n   - [ ] At the airport\n   - [ ] At the travel agency\n\n8. \"Де можна обміняти валюту?\"\n   - [ ] At the post office\n   - [x] At the bank\n   - [ ] At the supermarket\n   - [ ] At the library\n\n9. \"Заповніть цю форму.\"\n   - [x] At both\n   - [ ] Only at the post office\n   - [ ] Only at the bank\n   - [ ] Neither\n\n10. \"Візьміть чек.\"\n    - [ ] At the post office\n    - [x] At the bank/ATM\n    - [ ] At the pharmacy\n    - [ ] At the hotel\n\n11. \"Куди відправляєте?\"\n    - [x] At the post office\n    - [ ] At the bank\n    - [ ] At the restaurant\n    - [ ] At the taxi\n\n12. \"Моя картка не працює.\"\n    - [ ] At the post office\n    - [x] At the bank/ATM\n    - [ ] At the theater\n    - [ ] At the school\n\n## true-false: Post Office & Bank Facts\n\n1. \"Пошта\" means post office.\n   > [!answer] true\n   > (На пошті - at the post office)\n\n2. \"Банкомат\" means bank teller.\n   > [!answer] false\n   > (Банкомат means ATM)\n\n3. \"Готівка\" means cash.\n   > [!answer] true\n   > (готівка = cash)\n\n4. \"Листівка\" means a big letter.\n   > [!answer] false\n   > (Листівка means postcard)\n\n5. \"Індекс\" means postal code.\n   > [!answer] true\n   > (Ukrainian postal codes are 5 digits)\n\n6. \"Переказ\" means translation.\n   > [!answer] false\n   > (Переказ means transfer; переклад is translation)\n\n7. \"Марка\" means stamp.\n   > [!answer] true\n   > (поштова марка = postal stamp)\n\n8. \"Валюта\" means currency.\n   > [!answer] true\n   > (обмін валюти = currency exchange)\n\n9. \"Рахунок\" means receipt.\n   > [!answer] false\n   > (Рахунок means account; чек is receipt)\n\n10. \"Каса\" means cash desk.\n    > [!answer] true\n    > (Where you pay or receive money)\n\n11. Ukrainian postal codes have 6 digits.\n    > [!answer] false\n    > (Ukrainian postal codes have 5 digits)\n\n12. \"Курс\" means exchange rate.\n    > [!answer] true\n    > (Який курс долара? = What's the dollar rate?)\n\n## group-sort: Post Office vs Bank\n\n> Sort these vocabulary items into post office or bank categories.\n\n### Post Office (Пошта)\n- лист\n- марка\n- посилка\n- конверт\n- адреса\n- листівка\n\n### Bank (Банк)\n- рахунок\n- валюта\n- картка\n- переказ\n- готівка\n- банкомат\n\n## fill-in: Post Office Dialogue\n\n1. Доброго дня! Я хочу ___ листа до Польщі. (send)\n   > [!answer] відправити\n   > (Good day! I want to send a letter to Poland.)\n\n2. ___ коштує марка? (how much)\n   > [!answer] Скільки\n   > (How much does a stamp cost?)\n\n3. Ваша ___ прибула вчора. (package)\n   > [!answer] посилка\n   > (Your package arrived yesterday.)\n\n4. Напишіть ___ отримувача тут. (address)\n   > [!answer] адресу\n   > (Write the recipient's address here.)\n\n5. Мені потрібен ___ для документів. (envelope)\n   > [!answer] конверт\n   > (I need an envelope for documents.)\n\n6. Авіа___ чи звичайна? (mail)\n   > [!answer] пошта\n   > (Airmail or regular?)\n\n7. Який ___ вашої адреси? (postal code)\n   > [!answer] індекс\n   > (What's the postal code of your address?)\n\n8. Хто ___ цього листа? (sender)\n   > [!answer] відправник\n   > (Who is the sender of this letter?)\n\n9. Лист іде приблизно ___ днів. (number 7)\n   > [!answer] сім\n   > (The letter takes approximately seven days.)\n\n10. ___ можна купити марки? (where)\n    > [!answer] Де\n    > (Where can I buy stamps?)\n\n11. Заповніть цю ___, будь ласка. (form)\n    > [!answer] форму\n    > (Fill out this form, please.)\n\n12. Ваш лист буде доставлений ___. (to the recipient)\n    > [!answer] отримувачу\n    > (Your letter will be delivered to the recipient. - Dative case)\n\n## select: Bank or Post Office?\n\n> Choose where you would hear or use these phrases.\n\n1. \"Я хочу відкрити рахунок.\"\n   - [ ] Post Office\n   - [x] Bank\n\n2. \"Скільки коштує марка?\"\n   - [x] Post Office\n   - [ ] Bank\n\n3. \"Який курс долара?\"\n   - [ ] Post Office\n   - [x] Bank\n\n4. \"Ваша посилка прибула.\"\n   - [x] Post Office\n   - [ ] Bank\n\n5. \"Введіть пін-код.\"\n   - [ ] Post Office\n   - [x] Bank\n\n6. \"Напишіть адресу отримувача.\"\n   - [x] Post Office\n   - [ ] Bank\n\n7. \"Мені потрібно зняти гроші.\"\n   - [ ] Post Office\n   - [x] Bank\n\n8. \"Авіапошта чи звичайна?\"\n   - [x] Post Office\n   - [ ] Bank\n\n9. \"Де найближчий банкомат?\"\n   - [ ] Post Office\n   - [x] Bank\n\n10. \"Мені потрібен конверт.\"\n    - [x] Post Office\n    - [ ] Bank\n\n11. \"Я хочу обміняти валюту.\"\n    - [ ] Post Office\n    - [x] Bank\n\n12. \"Ваша картка не працює.\"\n    - [ ] Post Office\n    - [x] Bank\n\n## order: Sending a Package\n\n> Put these steps in the correct order for sending a package.\n\n1. Прийдіть на пошту.\n2. Візьміть номерок і чекайте.\n3. Покладіть речі в коробку.\n4. Напишіть адресу отримувача.\n5. Заплатіть за посилку.\n6. Отримайте квитанцію.\n\n## quiz: Practical Vocabulary\n\n1. \"Готівка\" means:\n   - [ ] card\n   - [x] cash\n   - [ ] account\n   - [ ] transfer\n\n2. \"Рахунок\" in banking means:\n   - [x] account\n   - [ ] bill\n   - [ ] rate\n   - [ ] card\n\n3. \"Переказ\" means:\n   - [ ] translation\n   - [x] transfer\n   - [ ] exchange\n   - [ ] withdrawal\n\n4. \"Індекс\" in postal context means:\n   - [ ] index\n   - [x] postal code\n   - [ ] address\n   - [ ] package\n\n5. \"Курс\" in banking means:\n   - [ ] course\n   - [x] exchange rate\n   - [ ] direction\n   - [ ] card\n\n6. \"Листівка\" is:\n   - [ ] a small letter\n   - [x] a postcard\n   - [ ] an envelope\n   - [ ] a stamp\n\n7. \"Банкомат\" is:\n   - [ ] a bank teller\n   - [x] an ATM\n   - [ ] a bank building\n   - [ ] a cash desk\n\n8. \"Відправник\" is:\n   - [x] sender\n   - [ ] recipient\n   - [ ] package\n   - [ ] address\n\n9. \"Отримувач\" is:\n   - [ ] sender\n   - [x] recipient\n   - [ ] package\n   - [ ] stamp\n\n10. \"Каса\" is:\n    - [x] cash desk\n    - [ ] safe\n    - [ ] ATM\n    - [ ] card\n\n11. \"Зняти гроші\" means:\n    - [ ] to deposit money\n    - [x] to withdraw money\n    - [ ] to transfer money\n    - [ ] to exchange money\n\n12. \"Обміняти валюту\" means:\n    - [ ] to withdraw currency\n    - [ ] to deposit currency\n    - [x] to exchange currency\n    - [ ] to transfer currency\n\n---\n\n# Підсумок\n\nExcellent work! You've learned:\n\n**Post Office vocabulary**: пошта, лист, листівка, посилка, марка, конверт, адреса, індекс\n\n**Banking vocabulary**: банк, рахунок, картка, гроші, готівка, переказ, валюта, курс, банкомат\n\n**Useful phrases** for both locations\n\n**Coming up next**: Checkpoint — Cases! Review and test everything you've learned in Phase A2.1!\n",
+    "createdAt": "2025-12-06T00:40:27.440Z",
+    "modifiedAt": "2025-12-06T00:40:27.440Z",
     "version": 2
   },
   "activities": [
     {
       "id": "act-a1-0-fillblank",
       "type": "fill-blank",
-      "title": "Post Office & Bank Vocabulary",
-      "description": "Choose the correct form to complete each service-related sentence.",
+      "title": "Complete the Sentences",
+      "description": "Complete the Sentences",
       "content": {
         "type": "fill-blank",
         "items": [
           {
-            "prompt": "Я хочу відправити ___ (посилка) в Україну, будь ласка.",
-            "answer": "посилку",
+            "prompt": "Я хочу відправити ___ (лист).",
+            "answer": "листа",
+            "hints": [
+              "лист"
+            ]
+          },
+          {
+            "prompt": "Скільки коштує ___ (марка)?",
+            "answer": "марка",
+            "hints": [
+              "марка"
+            ]
+          },
+          {
+            "prompt": "Мені потрібен ___ (конверт).",
+            "answer": "конверт",
+            "hints": [
+              "конверт"
+            ]
+          },
+          {
+            "prompt": "Я хочу відкрити ___ (рахунок).",
+            "answer": "рахунок",
+            "hints": [
+              "рахунок"
+            ]
+          },
+          {
+            "prompt": "Де можна обміняти ___ (валюта)?",
+            "answer": "валюту",
+            "hints": [
+              "валюта"
+            ]
+          },
+          {
+            "prompt": "Моя ___ (картка) не працює.",
+            "answer": "картка",
+            "hints": [
+              "картка"
+            ]
+          },
+          {
+            "prompt": "Який сьогодні ___ (курс) долара?",
+            "answer": "курс",
+            "hints": [
+              "курс"
+            ]
+          },
+          {
+            "prompt": "Ваша ___ (посилка) прибула.",
+            "answer": "посилка",
             "hints": [
               "посилка"
-            ],
-            "options": [
-              "посилка",
-              "посилки",
-              "посилці",
-              "посилку"
             ]
           },
           {
-            "prompt": "Скільки коштує доставка ___ (цей лист) до Львова?",
-            "answer": "цього листа",
+            "prompt": "Напишіть ___ (адреса) тут.",
+            "answer": "адресу",
             "hints": [
-              "цей лист"
-            ],
-            "options": [
-              "цей лист",
-              "цього листа",
-              "цьому листу",
-              "цим листом"
+              "адреса"
             ]
           },
           {
-            "prompt": "Я хочу обміняти долари на ___ (гривня).",
-            "answer": "гривні",
+            "prompt": "Введіть ваш ___ (пін-код).",
+            "answer": "пін-код",
             "hints": [
-              "гривня"
-            ],
-            "options": [
-              "гривня",
-              "гривні",
-              "гривню",
-              "гривнею"
+              "пін-код"
             ]
           },
           {
-            "prompt": "Мені потрібно зняти гроші з ___ (мій рахунок).",
-            "answer": "мого рахунку",
+            "prompt": "Мені потрібно зняти ___ (гроші).",
+            "answer": "гроші",
             "hints": [
-              "мій рахунок"
-            ],
-            "options": [
-              "мій рахунок",
-              "мого рахунку",
-              "моєму рахунку",
-              "моїм рахунком"
+              "гроші"
             ]
           },
           {
-            "prompt": "Де я можу отримати ___ (моя посилка)?",
-            "answer": "мою посилку",
+            "prompt": "Де найближчий ___ (банкомат)?",
+            "answer": "банкомат",
             "hints": [
-              "моя посилка"
-            ],
-            "options": [
-              "моя посилка",
-              "моєї посилки",
-              "моїй посилці",
-              "мою посилку"
-            ]
-          },
-          {
-            "prompt": "Який курс ___ (долар) сьогодні у вашому банку?",
-            "answer": "долара",
-            "hints": [
-              "долар"
-            ],
-            "options": [
-              "долар",
-              "долара",
-              "долару",
-              "доларом"
-            ]
-          },
-          {
-            "prompt": "Будь ласка, напишіть адресу ___ (отримувач) тут.",
-            "answer": "отримувача",
-            "hints": [
-              "отримувач"
-            ],
-            "options": [
-              "отримувач",
-              "отримувача",
-              "отримувачу",
-              "отримувачем"
-            ]
-          },
-          {
-            "prompt": "Я хочу відкрити ___ (новий рахунок) у вашому банку.",
-            "answer": "новий рахунок",
-            "hints": [
-              "новий рахунок"
-            ],
-            "options": [
-              "новий рахунок",
-              "нового рахунку",
-              "новому рахунку",
-              "новим рахунком"
-            ]
-          },
-          {
-            "prompt": "Скільки часу потрібно для ___ (банківський переказ)?",
-            "answer": "банківського переказу",
-            "hints": [
-              "банківський переказ"
-            ],
-            "options": [
-              "банківський переказ",
-              "банківського переказу",
-              "банківському переказу",
-              "банківським переказом"
-            ]
-          },
-          {
-            "prompt": "Мені потрібна квитанція про ___ (оплата) цього рахунку.",
-            "answer": "оплату",
-            "hints": [
-              "оплата"
-            ],
-            "options": [
-              "оплата",
-              "оплати",
-              "оплаті",
-              "оплату"
+              "банкомат"
             ]
           }
         ]
@@ -205,202 +175,64 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
-    },
-    {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Build the Sentence",
-      "description": "Arrange the words to form service-related sentences.",
-      "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
-          {
-            "words": [
-              "посилку",
-              "Я",
-              "хочу",
-              "відправити",
-              "в Україну",
-              "будь ласка"
-            ],
-            "answer": "Я хочу відправити посилку в Україну, будь ласка.",
-            "translation": "I want to send a package to Ukraine, please."
-          },
-          {
-            "words": [
-              "листа",
-              "Скільки",
-              "коштує",
-              "доставка",
-              "цього",
-              "до Львова"
-            ],
-            "answer": "Скільки коштує доставка цього листа до Львова?",
-            "translation": "How much does delivery of this letter to Lviv cost?"
-          },
-          {
-            "words": [
-              "гривні",
-              "Я",
-              "хочу",
-              "обміняти",
-              "долари",
-              "на"
-            ],
-            "answer": "Я хочу обміняти долари на гривні.",
-            "translation": "I want to exchange dollars for hryvnias."
-          },
-          {
-            "words": [
-              "рахунку",
-              "Мені",
-              "потрібно",
-              "зняти",
-              "гроші",
-              "з мого"
-            ],
-            "answer": "Мені потрібно зняти гроші з мого рахунку.",
-            "translation": "I need to withdraw money from my account."
-          },
-          {
-            "words": [
-              "посилку",
-              "Де",
-              "я",
-              "можу",
-              "отримати",
-              "мою"
-            ],
-            "answer": "Де я можу отримати мою посилку?",
-            "translation": "Where can I receive my package?"
-          },
-          {
-            "words": [
-              "долара",
-              "Який",
-              "курс",
-              "сьогодні",
-              "у вашому банку"
-            ],
-            "answer": "Який курс долара сьогодні у вашому банку?",
-            "translation": "What is the dollar exchange rate today at your bank?"
-          },
-          {
-            "words": [
-              "отримувача",
-              "Будь ласка",
-              "напишіть",
-              "адресу",
-              "тут"
-            ],
-            "answer": "Будь ласка, напишіть адресу отримувача тут.",
-            "translation": "Please write the recipient's address here."
-          },
-          {
-            "words": [
-              "рахунок",
-              "Я",
-              "хочу",
-              "відкрити",
-              "новий",
-              "у вашому банку"
-            ],
-            "answer": "Я хочу відкрити новий рахунок у вашому банку.",
-            "translation": "I want to open a new account at your bank."
-          },
-          {
-            "words": [
-              "переказу",
-              "Скільки",
-              "часу",
-              "потрібно",
-              "для",
-              "банківського"
-            ],
-            "answer": "Скільки часу потрібно для банківського переказу?",
-            "translation": "How much time is needed for a bank transfer?"
-          },
-          {
-            "words": [
-              "квитанція",
-              "Мені",
-              "потрібна",
-              "про оплату",
-              "цього рахунку"
-            ],
-            "answer": "Мені потрібна квитанція про оплату цього рахунку.",
-            "translation": "I need a receipt for payment of this bill."
-          }
-        ]
-      },
-      "subject": "language",
-      "owner": "curricula-opus",
-      "visibility": "public",
-      "language": "uk",
-      "difficultyLevel": "A2",
-      "duration": 5,
-      "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
       "id": "act-a1-0-matchup",
       "type": "match-up",
-      "title": "Match the Pairs",
-      "description": "Match Ukrainian words to their English meanings.",
+      "title": "Ukrainian to English",
+      "description": "Ukrainian to English",
       "content": {
         "type": "match-up",
         "pairs": [
           {
-            "left": "зняти",
-            "right": "to withdraw"
+            "left": "пошта",
+            "right": "post office"
           },
           {
-            "left": "протягом",
-            "right": "during, throughout"
+            "left": "лист",
+            "right": "letter"
           },
           {
-            "left": "зуби",
-            "right": "teeth"
+            "left": "посилка",
+            "right": "package"
+          },
+          {
+            "left": "марка",
+            "right": "stamp"
+          },
+          {
+            "left": "банк",
+            "right": "bank"
+          },
+          {
+            "left": "рахунок",
+            "right": "account"
+          },
+          {
+            "left": "картка",
+            "right": "card"
+          },
+          {
+            "left": "гроші",
+            "right": "money"
+          },
+          {
+            "left": "готівка",
+            "right": "cash"
           },
           {
             "left": "переказ",
             "right": "transfer"
           },
           {
-            "left": "переказати",
-            "right": "to transfer"
+            "left": "валюта",
+            "right": "currency"
           },
           {
-            "left": "обмін",
-            "right": "exchange"
-          },
-          {
-            "left": "підпис",
-            "right": "signature"
-          },
-          {
-            "left": "відсоток",
-            "right": "percent, interest"
-          },
-          {
-            "left": "бандероль",
-            "right": "small parcel"
-          },
-          {
-            "left": "лікарня",
-            "right": "hospital"
-          },
-          {
-            "left": "індекс",
-            "right": "postal code"
-          },
-          {
-            "left": "квитанція",
-            "right": "receipt"
+            "left": "банкомат",
+            "right": "ATM"
           }
         ],
         "shuffleRight": true
@@ -412,148 +244,337 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
+    },
+    {
+      "id": "act-a1-0-unjumble",
+      "type": "unjumble",
+      "title": "Word Order",
+      "description": "Word Order",
+      "content": {
+        "type": "unjumble",
+        "isUnjumble": true,
+        "items": [
+          {
+            "words": [
+              "відправити",
+              "хочу",
+              "Я",
+              "листа",
+              "до",
+              "Німеччини",
+              "сьогодні",
+              "важливого"
+            ],
+            "answer": "Я хочу відправити важливого листа до Німеччини сьогодні.",
+            "translation": "I want to send an important letter to Germany today."
+          },
+          {
+            "words": [
+              "марка",
+              "коштує",
+              "Скільки",
+              "одна",
+              "для",
+              "листа",
+              "за",
+              "кордон"
+            ],
+            "answer": "Скільки коштує одна марка для листа за кордон?",
+            "translation": "How much is one stamp for a letter abroad?"
+          },
+          {
+            "words": [
+              "конверт",
+              "Мені",
+              "потрібен",
+              "великий",
+              "для",
+              "важливих",
+              "моїх",
+              "документів"
+            ],
+            "answer": "Мені потрібен великий конверт для моїх важливих документів.",
+            "translation": "I need a big envelope for my important documents."
+          },
+          {
+            "words": [
+              "рахунок",
+              "відкрити",
+              "хочу",
+              "Я",
+              "новий",
+              "у",
+              "вашому",
+              "банку"
+            ],
+            "answer": "Я хочу відкрити новий рахунок у вашому банку.",
+            "translation": "I want to open a new account at your bank."
+          },
+          {
+            "words": [
+              "валюту",
+              "можна",
+              "обміняти",
+              "Де",
+              "тут",
+              "поблизу",
+              "американську",
+              "іноземну"
+            ],
+            "answer": "Де тут поблизу можна обміняти іноземну американську валюту?",
+            "translation": "Where nearby can I exchange foreign American currency?"
+          },
+          {
+            "words": [
+              "не",
+              "Моя",
+              "працює",
+              "картка",
+              "банківська",
+              "чомусь",
+              "сьогодні",
+              "нова"
+            ],
+            "answer": "Моя нова банківська картка чомусь сьогодні не працює.",
+            "translation": "My new bank card doesn't work for some reason today."
+          },
+          {
+            "words": [
+              "долара",
+              "курс",
+              "сьогодні",
+              "Який",
+              "у",
+              "вашому",
+              "американського",
+              "банку"
+            ],
+            "answer": "Який сьогодні курс американського долара у вашому банку?",
+            "translation": "What is today's American dollar rate at your bank?"
+          },
+          {
+            "words": [
+              "прибула",
+              "Ваша",
+              "посилка",
+              "велика",
+              "з",
+              "Америки",
+              "нарешті",
+              "очікувана"
+            ],
+            "answer": "Ваша очікувана велика посилка з Америки нарешті прибула.",
+            "translation": "Your expected big package from America has finally arrived."
+          },
+          {
+            "words": [
+              "гроші",
+              "зняти",
+              "Мені",
+              "потрібно",
+              "з",
+              "мого",
+              "рахунку",
+              "терміново"
+            ],
+            "answer": "Мені терміново потрібно зняти гроші з мого рахунку.",
+            "translation": "I urgently need to withdraw money from my account."
+          },
+          {
+            "words": [
+              "банкомат",
+              "найближчий",
+              "Де",
+              "тут",
+              "працює",
+              "який",
+              "цілодобово",
+              "знаходиться"
+            ],
+            "answer": "Де тут знаходиться найближчий банкомат, який працює цілодобово?",
+            "translation": "Where is the nearest ATM that works 24/7?"
+          },
+          {
+            "words": [
+              "тут",
+              "Підпишіть",
+              "ласка",
+              "будь",
+              "внизу",
+              "документа",
+              "цього",
+              "важливого"
+            ],
+            "answer": "Підпишіть, будь ласка, тут внизу цього важливого документа.",
+            "translation": "Please sign here at the bottom of this important document."
+          },
+          {
+            "words": [
+              "пін-код",
+              "Введіть",
+              "ваш",
+              "будь",
+              "ласка",
+              "секретний",
+              "особистий",
+              "новий"
+            ],
+            "answer": "Введіть, будь ласка, ваш новий особистий секретний пін-код.",
+            "translation": "Please enter your new personal secret PIN code."
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
       "id": "act-a1-0-quiz",
       "type": "quiz",
-      "title": "Meaning Check",
-      "description": "Choose the correct answer.",
+      "title": "Where Do You Hear This?",
+      "description": "Where Do You Hear This?",
       "content": {
         "type": "quiz",
         "questions": [
           {
-            "question": "What does \"індекс\" mean?",
+            "question": "\"Скільки коштує марка?\"",
             "options": [
-              "newspaper",
-              "relative",
-              "postal code",
-              "bicycle"
+              "At the post office",
+              "At the bank",
+              "At the store",
+              "At the restaurant"
             ],
-            "correctIndex": 2,
-            "explanation": "\"індекс\" means \"postal code\""
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "question": "What does \"переказати\" mean?",
+            "question": "\"Який сьогодні курс долара?\"",
             "options": [
-              "ten",
-              "to transfer",
-              "alphabet",
-              "to understand (perf)"
+              "At the post office",
+              "At the bank",
+              "At the doctor",
+              "At school"
             ],
             "correctIndex": 1,
-            "explanation": "\"переказати\" means \"to transfer\""
+            "explanation": ""
           },
           {
-            "question": "What does \"вага\" mean?",
+            "question": "\"Ваша посилка прибула.\"",
             "options": [
-              "restaurant",
-              "invitation",
-              "weight",
-              "to shave"
-            ],
-            "correctIndex": 2,
-            "explanation": "\"вага\" means \"weight\""
-          },
-          {
-            "question": "What does \"кредит\" mean?",
-            "options": [
-              "credit, loan",
-              "musician",
-              "exchange",
-              "friend (male)"
+              "At the post office",
+              "At the bank",
+              "At the airport",
+              "At the hotel"
             ],
             "correctIndex": 0,
-            "explanation": "\"кредит\" means \"credit, loan\""
+            "explanation": ""
           },
           {
-            "question": "What does \"відправник\" mean?",
+            "question": "\"Введіть ваш пін-код.\"",
             "options": [
-              "five",
-              "sender",
-              "postcard",
-              "(with) you"
+              "At the post office",
+              "At the bank/ATM",
+              "At the pharmacy",
+              "At the cinema"
             ],
             "correctIndex": 1,
-            "explanation": "\"відправник\" means \"sender\""
+            "explanation": ""
           },
           {
-            "question": "What does \"відправити\" mean?",
+            "question": "\"Напишіть адресу отримувача.\"",
             "options": [
-              "pleasure, satisfaction",
-              "three",
-              "glass",
-              "to send, dispatch"
-            ],
-            "correctIndex": 3,
-            "explanation": "\"відправити\" means \"to send, dispatch\""
-          },
-          {
-            "question": "What does \"доставка\" mean?",
-            "options": [
-              "delivery",
-              "exit",
-              "to give",
-              "bag"
+              "At the post office",
+              "At the bank",
+              "At the hospital",
+              "At the museum"
             ],
             "correctIndex": 0,
-            "explanation": "\"доставка\" means \"delivery\""
+            "explanation": ""
           },
           {
-            "question": "What does \"відсоток\" mean?",
+            "question": "\"Я хочу відкрити рахунок.\"",
             "options": [
-              "percent, interest",
-              "bon appétit",
-              "student",
-              "you (informal)"
-            ],
-            "correctIndex": 0,
-            "explanation": "\"відсоток\" means \"percent, interest\""
-          },
-          {
-            "question": "What does \"зняти\" mean?",
-            "options": [
-              "passport",
-              "to withdraw",
-              "suitcase",
-              "color"
+              "At the post office",
+              "At the bank",
+              "At the restaurant",
+              "At the gym"
             ],
             "correctIndex": 1,
-            "explanation": "\"зняти\" means \"to withdraw\""
+            "explanation": ""
           },
           {
-            "question": "What does \"обміняти\" mean?",
+            "question": "\"Авіапошта чи звичайна?\"",
             "options": [
-              "to exchange",
-              "pork fat",
-              "seller (f)",
-              "to be fascinated"
+              "At the post office",
+              "At the bank",
+              "At the airport",
+              "At the travel agency"
             ],
             "correctIndex": 0,
-            "explanation": "\"обміняти\" means \"to exchange\""
+            "explanation": ""
           },
           {
-            "question": "What does \"надіслати\" mean?",
+            "question": "\"Де можна обміняти валюту?\"",
             "options": [
-              "doctor (f)",
-              "to send",
-              "to be lucky",
-              "married (m)"
+              "At the post office",
+              "At the bank",
+              "At the supermarket",
+              "At the library"
             ],
             "correctIndex": 1,
-            "explanation": "\"надіслати\" means \"to send\""
+            "explanation": ""
           },
           {
-            "question": "What does \"розписатися\" mean?",
+            "question": "\"Заповніть цю форму.\"",
             "options": [
-              "to sign",
-              "bag",
-              "day after tomorrow",
-              "salad"
+              "At both",
+              "Only at the post office",
+              "Only at the bank",
+              "Neither"
             ],
             "correctIndex": 0,
-            "explanation": "\"розписатися\" means \"to sign\""
+            "explanation": ""
+          },
+          {
+            "question": "\"Візьміть чек.\"",
+            "options": [
+              "At the post office",
+              "At the bank/ATM",
+              "At the pharmacy",
+              "At the hotel"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "\"Куди відправляєте?\"",
+            "options": [
+              "At the post office",
+              "At the bank",
+              "At the restaurant",
+              "At the taxi"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Моя картка не працює.\"",
+            "options": [
+              "At the post office",
+              "At the bank/ATM",
+              "At the theater",
+              "At the school"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
           }
         ],
         "shuffleQuestions": true,
@@ -567,66 +588,76 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
       "id": "act-a1-0-truefalse",
       "type": "true-false",
-      "title": "True or False?",
-      "description": "Determine if each statement is true or false.",
+      "title": "Post Office & Bank Facts",
+      "description": "Post Office & Bank Facts",
       "content": {
         "type": "true-false",
         "statements": [
           {
-            "statement": "\"обміняти\" means \"Ukrainian (female)\"",
+            "statement": "\"Пошта\" means post office.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Банкомат\" means bank teller.",
             "isTrue": false,
-            "explanation": "Incorrect. \"обміняти\" means \"to exchange\""
+            "explanation": ""
           },
           {
-            "statement": "\"відправник\" means \"sender\"",
+            "statement": "\"Готівка\" means cash.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"банкомат\" means \"ATM\"",
-            "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"комісія\" means \"to hurry\"",
+            "statement": "\"Листівка\" means a big letter.",
             "isTrue": false,
-            "explanation": "Incorrect. \"комісія\" means \"commission\""
+            "explanation": ""
           },
           {
-            "statement": "\"депозит\" means \"went (f)\"",
+            "statement": "\"Індекс\" means postal code.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Переказ\" means translation.",
             "isTrue": false,
-            "explanation": "Incorrect. \"депозит\" means \"deposit\""
+            "explanation": ""
           },
           {
-            "statement": "\"надіслати\" means \"good, okay\"",
+            "statement": "\"Марка\" means stamp.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Валюта\" means currency.",
+            "isTrue": true,
+            "explanation": ""
+          },
+          {
+            "statement": "\"Рахунок\" means receipt.",
             "isTrue": false,
-            "explanation": "Incorrect. \"надіслати\" means \"to send\""
+            "explanation": ""
           },
           {
-            "statement": "\"доставка\" means \"delivery\"",
+            "statement": "\"Каса\" means cash desk.",
             "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           },
           {
-            "statement": "\"марка\" means \"stamp\"",
-            "isTrue": true,
-            "explanation": "Correct!"
+            "statement": "Ukrainian postal codes have 6 digits.",
+            "isTrue": false,
+            "explanation": ""
           },
           {
-            "statement": "\"бандероль\" means \"small parcel\"",
+            "statement": "\"Курс\" means exchange rate.",
             "isTrue": true,
-            "explanation": "Correct!"
-          },
-          {
-            "statement": "\"перерахувати\" means \"to count, recount\"",
-            "isTrue": true,
-            "explanation": "Correct!"
+            "explanation": ""
           }
         ]
       },
@@ -637,40 +668,42 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
       "id": "act-a1-0-groupsort",
       "type": "group-sort",
-      "title": "Sort by Gender",
-      "description": "Sort the nouns into gender categories.",
+      "title": "Post Office vs Bank",
+      "description": "Sort these vocabulary items into post office or bank categories.",
       "content": {
         "type": "group-sort",
         "groups": [
           {
-            "id": "masculine",
-            "name": "Masculine",
+            "id": "post-office",
+            "name": "Post Office",
             "items": [
-              "індекс",
-              "кредит",
-              "одержувач",
-              "переказ",
-              "депозит",
-              "курс"
-            ]
+              "лист",
+              "марка",
+              "посилка",
+              "конверт",
+              "адреса",
+              "листівка"
+            ],
+            "nameUk": "Пошта"
           },
           {
-            "id": "feminine",
-            "name": "Feminine",
+            "id": "bank",
+            "name": "Bank",
             "items": [
-              "вага",
-              "квитанція",
-              "комісія",
-              "бандероль",
-              "марка",
-              "листівка"
-            ]
+              "рахунок",
+              "валюта",
+              "картка",
+              "переказ",
+              "готівка",
+              "банкомат"
+            ],
+            "nameUk": "Банк"
           }
         ],
         "shuffleItems": true
@@ -682,464 +715,238 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
+    },
+    {
+      "id": "act-a1-0-fillblank",
+      "type": "fill-blank",
+      "title": "Post Office Dialogue",
+      "description": "Post Office Dialogue",
+      "content": {
+        "type": "fill-blank",
+        "items": [
+          {
+            "prompt": "Доброго дня! Я хочу ___ листа до Польщі. (send)",
+            "answer": "відправити"
+          },
+          {
+            "prompt": "___ коштує марка? (how much)",
+            "answer": "Скільки"
+          },
+          {
+            "prompt": "Ваша ___ прибула вчора. (package)",
+            "answer": "посилка"
+          },
+          {
+            "prompt": "Напишіть ___ отримувача тут. (address)",
+            "answer": "адресу"
+          },
+          {
+            "prompt": "Мені потрібен ___ для документів. (envelope)",
+            "answer": "конверт"
+          },
+          {
+            "prompt": "Авіа___ чи звичайна? (mail)",
+            "answer": "пошта"
+          },
+          {
+            "prompt": "Який ___ вашої адреси? (postal code)",
+            "answer": "індекс"
+          },
+          {
+            "prompt": "Хто ___ цього листа? (sender)",
+            "answer": "відправник"
+          },
+          {
+            "prompt": "Лист іде приблизно ___ днів. (number 7)",
+            "answer": "сім"
+          },
+          {
+            "prompt": "___ можна купити марки? (where)",
+            "answer": "Де"
+          },
+          {
+            "prompt": "Заповніть цю ___, будь ласка. (form)",
+            "answer": "форму"
+          },
+          {
+            "prompt": "Ваш лист буде доставлений ___. (to the recipient)",
+            "answer": "отримувачу"
+          }
+        ]
+      },
+      "subject": "language",
+      "owner": "curricula-opus",
+      "visibility": "public",
+      "language": "uk",
+      "difficultyLevel": "A2",
+      "duration": 5,
+      "tags": [],
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
       "id": "act-a1-0-select",
       "type": "select",
-      "title": "Choose Post Office and Bank Terms",
-      "description": "Select all words that belong to the category.",
+      "title": "Bank or Post Office?",
+      "description": "Choose where you would hear or use these phrases.",
       "content": {
         "type": "select",
         "items": [
           {
-            "question": "Which are postal items you can send?",
+            "question": "\"Я хочу відкрити рахунок.\"",
             "options": [
               {
-                "text": "лист",
+                "text": "Post Office",
+                "correct": false
+              },
+              {
+                "text": "Bank",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "\"Скільки коштує марка?\"",
+            "options": [
+              {
+                "text": "Post Office",
                 "correct": true
               },
               {
-                "text": "листівка",
-                "correct": true
-              },
-              {
-                "text": "посилка",
-                "correct": true
-              },
-              {
-                "text": "бандероль",
-                "correct": true
-              },
-              {
-                "text": "марка",
-                "correct": false
-              },
-              {
-                "text": "конверт",
-                "correct": false
-              },
-              {
-                "text": "адреса",
-                "correct": false
-              },
-              {
-                "text": "індекс",
-                "correct": false
-              },
-              {
-                "text": "вага",
-                "correct": false
-              },
-              {
-                "text": "квитанція",
+                "text": "Bank",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are bank transaction types?",
+            "question": "\"Який курс долара?\"",
             "options": [
               {
-                "text": "лист",
+                "text": "Post Office",
                 "correct": false
               },
               {
-                "text": "переказ",
+                "text": "Bank",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "\"Ваша посилка прибула.\"",
+            "options": [
+              {
+                "text": "Post Office",
                 "correct": true
               },
               {
-                "text": "обмін валюти",
-                "correct": true
-              },
-              {
-                "text": "посилка",
-                "correct": false
-              },
-              {
-                "text": "депозит",
-                "correct": true
-              },
-              {
-                "text": "кредит",
-                "correct": true
-              },
-              {
-                "text": "марка",
-                "correct": false
-              },
-              {
-                "text": "зняття готівки",
-                "correct": true
-              },
-              {
-                "text": "конверт",
-                "correct": false
-              },
-              {
-                "text": "доставка",
+                "text": "Bank",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are postal service vocabulary?",
+            "question": "\"Введіть пін-код.\"",
             "options": [
               {
-                "text": "надіслати",
-                "correct": true
-              },
-              {
-                "text": "відправити",
-                "correct": true
-              },
-              {
-                "text": "отримати",
-                "correct": true
-              },
-              {
-                "text": "доставка",
-                "correct": true
-              },
-              {
-                "text": "обміняти",
+                "text": "Post Office",
                 "correct": false
               },
               {
-                "text": "одержувач",
+                "text": "Bank",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "\"Напишіть адресу отримувача.\"",
+            "options": [
+              {
+                "text": "Post Office",
                 "correct": true
               },
               {
-                "text": "відправник",
-                "correct": true
-              },
-              {
-                "text": "рахунок",
-                "correct": false
-              },
-              {
-                "text": "готівка",
-                "correct": false
-              },
-              {
-                "text": "валюта",
+                "text": "Bank",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which are bank-related vocabulary?",
+            "question": "\"Мені потрібно зняти гроші.\"",
             "options": [
               {
-                "text": "посилка",
+                "text": "Post Office",
                 "correct": false
               },
               {
-                "text": "готівка",
+                "text": "Bank",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "\"Авіапошта чи звичайна?\"",
+            "options": [
+              {
+                "text": "Post Office",
                 "correct": true
               },
               {
-                "text": "валюта",
-                "correct": true
-              },
-              {
-                "text": "рахунок",
-                "correct": true
-              },
-              {
-                "text": "марка",
-                "correct": false
-              },
-              {
-                "text": "обміняти",
-                "correct": true
-              },
-              {
-                "text": "курс",
-                "correct": true
-              },
-              {
-                "text": "комісія",
-                "correct": true
-              },
-              {
-                "text": "листівка",
-                "correct": false
-              },
-              {
-                "text": "конверт",
+                "text": "Bank",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which verbs are used at the post office?",
+            "question": "\"Де найближчий банкомат?\"",
             "options": [
               {
-                "text": "надіслати",
+                "text": "Post Office",
+                "correct": false
+              },
+              {
+                "text": "Bank",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "question": "\"Мені потрібен конверт.\"",
+            "options": [
+              {
+                "text": "Post Office",
                 "correct": true
               },
               {
-                "text": "відправити",
-                "correct": true
-              },
-              {
-                "text": "обміняти",
-                "correct": false
-              },
-              {
-                "text": "отримати",
-                "correct": true
-              },
-              {
-                "text": "забрати",
-                "correct": true
-              },
-              {
-                "text": "зняти",
-                "correct": false
-              },
-              {
-                "text": "покласти",
-                "correct": false
-              },
-              {
-                "text": "перерахувати",
-                "correct": false
-              },
-              {
-                "text": "заощадити",
-                "correct": false
-              },
-              {
-                "text": "відкрити рахунок",
+                "text": "Bank",
                 "correct": false
               }
             ]
           },
           {
-            "question": "Which verbs are used at the bank?",
+            "question": "\"Я хочу обміняти валюту.\"",
             "options": [
               {
-                "text": "надіслати",
+                "text": "Post Office",
                 "correct": false
               },
               {
-                "text": "обміняти",
+                "text": "Bank",
                 "correct": true
-              },
-              {
-                "text": "відправити посилку",
-                "correct": false
-              },
-              {
-                "text": "зняти гроші",
-                "correct": true
-              },
-              {
-                "text": "покласти гроші",
-                "correct": true
-              },
-              {
-                "text": "перерахувати",
-                "correct": true
-              },
-              {
-                "text": "відкрити рахунок",
-                "correct": true
-              },
-              {
-                "text": "забрати посилку",
-                "correct": false
-              },
-              {
-                "text": "отримати листа",
-                "correct": false
-              },
-              {
-                "text": "купити марку",
-                "correct": false
               }
             ]
           },
           {
-            "question": "Which require accusative case (direct object)?",
+            "question": "\"Ваша картка не працює.\"",
             "options": [
               {
-                "text": "надіслати листа",
-                "correct": true
-              },
-              {
-                "text": "відправити посилку",
-                "correct": true
-              },
-              {
-                "text": "купити марку",
-                "correct": true
-              },
-              {
-                "text": "обміняти гроші",
-                "correct": true
-              },
-              {
-                "text": "зняти готівку",
-                "correct": true
-              },
-              {
-                "text": "до Америки",
+                "text": "Post Office",
                 "correct": false
               },
               {
-                "text": "від відправника",
-                "correct": false
-              },
-              {
-                "text": "отримати квитанцію",
+                "text": "Bank",
                 "correct": true
-              },
-              {
-                "text": "на рахунку",
-                "correct": false
-              },
-              {
-                "text": "у банку",
-                "correct": false
-              }
-            ]
-          },
-          {
-            "question": "Which require genitive case?",
-            "options": [
-              {
-                "text": "надіслати посилку",
-                "correct": false
-              },
-              {
-                "text": "до Америки",
-                "correct": true
-              },
-              {
-                "text": "від відправника",
-                "correct": true
-              },
-              {
-                "text": "відправити листа",
-                "correct": false
-              },
-              {
-                "text": "біля пошти",
-                "correct": true
-              },
-              {
-                "text": "без комісії",
-                "correct": true
-              },
-              {
-                "text": "купити марку",
-                "correct": false
-              },
-              {
-                "text": "курс долара",
-                "correct": true
-              },
-              {
-                "text": "у банку",
-                "correct": false
-              },
-              {
-                "text": "на пошті",
-                "correct": false
-              }
-            ]
-          },
-          {
-            "question": "Which are currencies mentioned?",
-            "options": [
-              {
-                "text": "марка",
-                "correct": false
-              },
-              {
-                "text": "долар",
-                "correct": true
-              },
-              {
-                "text": "євро",
-                "correct": true
-              },
-              {
-                "text": "гривня",
-                "correct": true
-              },
-              {
-                "text": "індекс",
-                "correct": false
-              },
-              {
-                "text": "кредит",
-                "correct": false
-              },
-              {
-                "text": "депозит",
-                "correct": false
-              },
-              {
-                "text": "переказ",
-                "correct": false
-              },
-              {
-                "text": "курс",
-                "correct": false
-              },
-              {
-                "text": "комісія",
-                "correct": false
-              }
-            ]
-          },
-          {
-            "question": "Which describe payment or money?",
-            "options": [
-              {
-                "text": "готівка",
-                "correct": true
-              },
-              {
-                "text": "гроші",
-                "correct": true
-              },
-              {
-                "text": "посилка",
-                "correct": false
-              },
-              {
-                "text": "валюта",
-                "correct": true
-              },
-              {
-                "text": "марка",
-                "correct": false
-              },
-              {
-                "text": "комісія",
-                "correct": true
-              },
-              {
-                "text": "курс",
-                "correct": true
-              },
-              {
-                "text": "вага",
-                "correct": false
-              },
-              {
-                "text": "рахунок",
-                "correct": true
-              },
-              {
-                "text": "доставка",
-                "correct": false
               }
             ]
           }
@@ -1152,136 +959,153 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     },
     {
-      "id": "act-a1-0-unjumble",
-      "type": "unjumble",
-      "title": "Arrange Words into Sentences",
-      "description": "Put the words in the correct order to form grammatically correct sentences.",
+      "id": "act-a1-0-quiz",
+      "type": "quiz",
+      "title": "Practical Vocabulary",
+      "description": "Practical Vocabulary",
       "content": {
-        "type": "unjumble",
-        "isUnjumble": true,
-        "items": [
+        "type": "quiz",
+        "questions": [
           {
-            "words": [
-              "надіслати",
-              "хочу",
-              "Я",
-              "листа",
-              "до",
-              "Англії"
+            "question": "\"Готівка\" means:",
+            "options": [
+              "card",
+              "cash",
+              "account",
+              "transfer"
             ],
-            "answer": "Я хочу надіслати листа до Англії.",
-            "translation": "I want to send a letter to England."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "посилку",
-              "відправити",
-              "потрібно",
-              "Мені",
-              "Канади",
-              "до"
+            "question": "\"Рахунок\" in banking means:",
+            "options": [
+              "account",
+              "bill",
+              "rate",
+              "card"
             ],
-            "answer": "Мені потрібно відправити посилку до Канади.",
-            "translation": "I need to send a package to Canada."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "коштує",
-              "Скільки",
-              "марка",
-              "до",
-              "Америки"
+            "question": "\"Переказ\" means:",
+            "options": [
+              "translation",
+              "transfer",
+              "exchange",
+              "withdrawal"
             ],
-            "answer": "Скільки коштує марка до Америки?",
-            "translation": "How much is a stamp to America?"
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "купити",
-              "можна",
-              "Де",
-              "конверт"
+            "question": "\"Індекс\" in postal context means:",
+            "options": [
+              "index",
+              "postal code",
+              "address",
+              "package"
             ],
-            "answer": "Де можна купити конверт?",
-            "translation": "Where can I buy an envelope?"
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "обміняти",
-              "хочу",
-              "долари",
-              "Я",
-              "гривні",
-              "на"
+            "question": "\"Курс\" in banking means:",
+            "options": [
+              "course",
+              "exchange rate",
+              "direction",
+              "card"
             ],
-            "answer": "Я хочу обміняти долари на гривні.",
-            "translation": "I want to exchange dollars for hryvnias."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "курс",
-              "Який",
-              "євро",
-              "сьогодні"
+            "question": "\"Листівка\" is:",
+            "options": [
+              "a small letter",
+              "a postcard",
+              "an envelope",
+              "a stamp"
             ],
-            "answer": "Який курс євро сьогодні?",
-            "translation": "What is the euro exchange rate today?"
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "зняти",
-              "хочу",
-              "готівку",
-              "Я",
-              "рахунку",
-              "з"
+            "question": "\"Банкомат\" is:",
+            "options": [
+              "a bank teller",
+              "an ATM",
+              "a bank building",
+              "a cash desk"
             ],
-            "answer": "Я хочу зняти готівку з рахунку.",
-            "translation": "I want to withdraw cash from my account."
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "гроші",
-              "покласти",
-              "Мені",
-              "на",
-              "потрібно",
-              "рахунок"
+            "question": "\"Відправник\" is:",
+            "options": [
+              "sender",
+              "recipient",
+              "package",
+              "address"
             ],
-            "answer": "Мені потрібно покласти гроші на рахунок.",
-            "translation": "I need to deposit money into the account."
+            "correctIndex": 0,
+            "explanation": ""
           },
           {
-            "words": [
-              "відкрити",
-              "можна",
-              "Чи",
-              "рахунок",
-              "у",
-              "вашому",
-              "банку"
+            "question": "\"Отримувач\" is:",
+            "options": [
+              "sender",
+              "recipient",
+              "package",
+              "stamp"
             ],
-            "answer": "Чи можна відкрити рахунок у вашому банку?",
-            "translation": "Can I open an account at your bank?"
+            "correctIndex": 1,
+            "explanation": ""
           },
           {
-            "words": [
-              "отримати",
-              "Я",
-              "прийшов",
-              "посилку",
-              "відділенні",
-              "у",
-              "цьому"
+            "question": "\"Каса\" is:",
+            "options": [
+              "cash desk",
+              "safe",
+              "ATM",
+              "card"
             ],
-            "answer": "Я прийшов отримати посилку у цьому відділенні.",
-            "translation": "I came to pick up a package at this branch."
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "question": "\"Зняти гроші\" means:",
+            "options": [
+              "to deposit money",
+              "to withdraw money",
+              "to transfer money",
+              "to exchange money"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "question": "\"Обміняти валюту\" means:",
+            "options": [
+              "to withdraw currency",
+              "to deposit currency",
+              "to exchange currency",
+              "to transfer currency"
+            ],
+            "correctIndex": 2,
+            "explanation": ""
           }
-        ]
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "showCorrectAnswers": true
       },
       "subject": "language",
       "owner": "curricula-opus",
@@ -1290,156 +1114,158 @@
       "difficultyLevel": "A2",
       "duration": 5,
       "tags": [],
-      "createdAt": "2025-12-05T01:15:57.969Z",
-      "modifiedAt": "2025-12-05T01:15:57.969Z"
+      "createdAt": "2025-12-06T00:40:27.441Z",
+      "modifiedAt": "2025-12-06T00:40:27.441Z"
     }
   ],
   "vocabulary": {
     "moduleId": "mod-uk-A2-9",
     "level": "A2",
     "phase": "A2.1",
-    "wordCount": 46,
-    "newWordCount": 46,
+    "wordCount": 34,
+    "newWordCount": 34,
     "reviewWordCount": 0,
-    "transliterationMode": "partial",
+    "transliterationMode": "none",
     "words": [
       {
         "id": "v-poshta-0-0",
         "uk": "пошта",
         "en": "post office",
         "pos": "noun",
-        "ipa": "/ˈpɔʃtɑ/",
+        "ipa": "/ˈpoʃta/",
         "gender": "f",
+        "note": "на пошті",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-poshtove-viddilennya-0-1",
-        "uk": "поштове відділення",
-        "en": "post office branch",
-        "pos": "phrase",
-        "ipa": "/pɔˈʃtɔvɛ vʲidˈdʲilɛnʲːɑ/",
-        "gender": "n",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-lyst-0-2",
+        "id": "v-lyst-0-1",
         "uk": "лист",
         "en": "letter",
         "pos": "noun",
         "ipa": "/lɪst/",
         "gender": "m",
+        "note": "листа (acc)",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-lystivka-0-3",
+        "id": "v-lystivka-0-2",
         "uk": "листівка",
         "en": "postcard",
         "pos": "noun",
-        "ipa": "/lɪsˈtʲifkɑ/",
+        "ipa": "/lɪsˈtiwka/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-posylka-0-4",
+        "id": "v-posylka-0-3",
         "uk": "посилка",
         "en": "package",
         "pos": "noun",
-        "ipa": "/pɔˈsɪlkɑ/",
+        "ipa": "/poˈsɪlka/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-banderolь-0-5",
-        "uk": "бандероль",
-        "en": "small parcel",
-        "pos": "noun",
-        "ipa": "/bɑndɛˈrolʲ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-marka-0-6",
+        "id": "v-marka-0-4",
         "uk": "марка",
         "en": "stamp",
         "pos": "noun",
-        "ipa": "/ˈmɑrkɑ/",
+        "ipa": "/ˈmarka/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-konvert-0-7",
+        "id": "v-konvert-0-5",
         "uk": "конверт",
         "en": "envelope",
         "pos": "noun",
-        "ipa": "/kɔnˈvɛrt/",
+        "ipa": "/konˈwɛrt/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-adresa-0-8",
+        "id": "v-adresa-0-6",
         "uk": "адреса",
         "en": "address",
         "pos": "noun",
-        "ipa": "/ɑˈdrɛsɑ/",
+        "ipa": "/adˈrɛsa/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-vidpravnyk-0-9",
+        "id": "v-indeks-0-7",
+        "uk": "індекс",
+        "en": "postal code",
+        "pos": "noun",
+        "ipa": "/ˈindɛks/",
+        "gender": "m",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-vidpravnyk-0-8",
         "uk": "відправник",
         "en": "sender",
         "pos": "noun",
-        "ipa": "/vʲidprɑvˈnɪk/",
+        "ipa": "/widˈprawnɪk/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-oderzhuvach-0-10",
-        "uk": "одержувач",
+        "id": "v-otrymuvach-0-9",
+        "uk": "отримувач",
         "en": "recipient",
         "pos": "noun",
-        "ipa": "/ɔdɛrˈʒuvɑtʃ/",
+        "ipa": "/otrɪˈmuwatʃ/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-bank-0-11",
+        "id": "v-bank-0-10",
         "uk": "банк",
         "en": "bank",
         "pos": "noun",
-        "ipa": "/bɑnk/",
+        "ipa": "/bank/",
         "gender": "m",
+        "note": "у банку",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-rakhunok-0-12",
+        "id": "v-rakhunok-0-11",
         "uk": "рахунок",
-        "en": "account, bill",
+        "en": "account",
         "pos": "noun",
-        "ipa": "/rɑˈxunɔk/",
+        "ipa": "/raˈxunok/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-kartka-0-13",
+        "id": "v-kartka-0-12",
         "uk": "картка",
         "en": "card",
         "pos": "noun",
-        "ipa": "/ˈkɑrtkɑ/",
+        "ipa": "/ˈkartka/",
         "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-hroshi-0-13",
+        "uk": "гроші",
+        "en": "money",
+        "pos": "noun",
+        "ipa": "/ˈɦroʃi/",
         "isNew": true,
         "firstModule": 0
       },
@@ -1448,7 +1274,7 @@
         "uk": "готівка",
         "en": "cash",
         "pos": "noun",
-        "ipa": "/ɦɔˈtʲivkɑ/",
+        "ipa": "/ɦoˈtiwka/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
@@ -1458,18 +1284,18 @@
         "uk": "переказ",
         "en": "transfer",
         "pos": "noun",
-        "ipa": "/pɛrɛˈkɑz/",
+        "ipa": "/pɛrɛˈkaz/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-obmin-valyut-0-16",
-        "uk": "обмін валют",
-        "en": "currency exchange",
-        "pos": "phrase",
-        "ipa": "/ɔbˈmʲin vɑˈlʲut/",
-        "gender": "m",
+        "id": "v-valyuta-0-16",
+        "uk": "валюта",
+        "en": "currency",
+        "pos": "noun",
+        "ipa": "/waˈlʲuta/",
+        "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
@@ -1484,49 +1310,111 @@
         "firstModule": 0
       },
       {
-        "id": "v-dolar-0-18",
-        "uk": "долар",
-        "en": "dollar",
+        "id": "v-bankomat-0-18",
+        "uk": "банкомат",
+        "en": "ATM",
         "pos": "noun",
-        "ipa": "/ˈdɔlɑr/",
+        "ipa": "/bankoˈmat/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-yevro-0-19",
-        "uk": "євро",
-        "en": "euro",
+        "id": "v-kasa-0-19",
+        "uk": "каса",
+        "en": "cash desk",
         "pos": "noun",
-        "ipa": "/ˈjɛvrɔ/",
-        "gender": "n",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-hryvnya-0-20",
-        "uk": "гривня",
-        "en": "hryvnia",
-        "pos": "noun",
-        "ipa": "/ˈɦrɪvnʲɑ/",
+        "ipa": "/ˈkasa/",
         "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-depozyt-0-21",
-        "uk": "депозит",
-        "en": "deposit",
+        "id": "v-vidpravlyaty-0-20",
+        "uk": "відправляти",
+        "en": "to send",
+        "pos": "verb",
+        "ipa": "/widprawˈlʲatɪ/",
+        "note": "impf",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-znimaty-0-21",
+        "uk": "знімати",
+        "en": "to withdraw",
+        "pos": "verb",
+        "ipa": "/zniˈmatɪ/",
+        "note": "impf",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-obminyaty-0-22",
+        "uk": "обміняти",
+        "en": "to exchange",
+        "pos": "verb",
+        "ipa": "/obmiˈnʲatɪ/",
+        "note": "pf",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-kupivlya-0-23",
+        "uk": "купівля",
+        "en": "buying, purchase",
         "pos": "noun",
-        "ipa": "/dɛpɔˈzɪt/",
+        "ipa": "/kuˈpiwlʲa/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-prodazh-0-24",
+        "uk": "продаж",
+        "en": "selling, sale",
+        "pos": "noun",
+        "ipa": "/proˈdaʒ/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-kredyt-0-22",
+        "id": "v-kvytantsiya-0-25",
+        "uk": "квитанція",
+        "en": "receipt",
+        "pos": "noun",
+        "ipa": "/kwɪˈtant͡sija/",
+        "gender": "f",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-hryvnya-0-26",
+        "uk": "гривня",
+        "en": "hryvnia (₴)",
+        "pos": "noun",
+        "ipa": "/ˈɦrɪwnʲa/",
+        "gender": "f",
+        "note": "Ukrainian currency",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-vklad-0-27",
+        "uk": "вклад",
+        "en": "deposit",
+        "pos": "noun",
+        "ipa": "/wklad/",
+        "gender": "m",
+        "note": "банківський вклад",
+        "isNew": true,
+        "firstModule": 0
+      },
+      {
+        "id": "v-kredyt-0-28",
         "uk": "кредит",
-        "en": "credit, loan",
+        "en": "loan, credit",
         "pos": "noun",
         "ipa": "/krɛˈdɪt/",
         "gender": "m",
@@ -1534,72 +1422,12 @@
         "firstModule": 0
       },
       {
-        "id": "v-pozyka-0-23",
-        "uk": "позика",
-        "en": "loan",
+        "id": "v-pin-kod-0-29",
+        "uk": "пін-код",
+        "en": "PIN code",
         "pos": "noun",
-        "ipa": "/pɔˈzɪkɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-vidsotok-0-24",
-        "uk": "відсоток",
-        "en": "percent, interest",
-        "pos": "noun",
-        "ipa": "/vʲidˈsɔtɔk/",
+        "ipa": "/pin ˈkod/",
         "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-bankomat-0-25",
-        "uk": "банкомат",
-        "en": "ATM",
-        "pos": "noun",
-        "ipa": "/bɑnkɔˈmɑt/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-kasa-0-26",
-        "uk": "каса",
-        "en": "cash desk",
-        "pos": "noun",
-        "ipa": "/ˈkɑsɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-kasyr-0-27",
-        "uk": "касир",
-        "en": "cashier",
-        "pos": "noun",
-        "ipa": "/kɑˈsɪr/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-cherha-0-28",
-        "uk": "черга",
-        "en": "queue, line",
-        "pos": "noun",
-        "ipa": "/ˈtʃɛrɦɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-kvytantsiya-0-29",
-        "uk": "квитанція",
-        "en": "receipt",
-        "pos": "noun",
-        "ipa": "/kvɪˈtɑntsʲijɑ/",
-        "gender": "f",
         "isNew": true,
         "firstModule": 0
       },
@@ -1614,11 +1442,11 @@
         "firstModule": 0
       },
       {
-        "id": "v-pidpys-0-31",
-        "uk": "підпис",
-        "en": "signature",
+        "id": "v-pasport-0-31",
+        "uk": "паспорт",
+        "en": "passport",
         "pos": "noun",
-        "ipa": "/ˈpʲidpɪs/",
+        "ipa": "/ˈpasport/",
         "gender": "m",
         "isNew": true,
         "firstModule": 0
@@ -1628,137 +1456,19 @@
         "uk": "форма",
         "en": "form",
         "pos": "noun",
-        "ipa": "/ˈfɔrmɑ/",
+        "ipa": "/ˈforma/",
         "gender": "f",
+        "note": "заповнити форму",
         "isNew": true,
         "firstModule": 0
       },
       {
-        "id": "v-dokument-0-33",
-        "uk": "документ",
-        "en": "document",
+        "id": "v-tyzhdenь-0-33",
+        "uk": "тиждень",
+        "en": "week",
         "pos": "noun",
-        "ipa": "/dɔkuˈmɛnt/",
+        "ipa": "/ˈtɪʒdenʲ/",
         "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-pasport-0-34",
-        "uk": "паспорт",
-        "en": "passport",
-        "pos": "noun",
-        "ipa": "/ˈpɑspɔrt/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-posvidchennya-0-35",
-        "uk": "посвідчення",
-        "en": "ID, certificate",
-        "pos": "noun",
-        "ipa": "/pɔsˈvʲidtʃɛnʲːɑ/",
-        "gender": "n",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-komisiya-0-36",
-        "uk": "комісія",
-        "en": "commission",
-        "pos": "noun",
-        "ipa": "/kɔˈmʲisʲijɑ/",
-        "gender": "f",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-termin-0-37",
-        "uk": "термін",
-        "en": "term, deadline",
-        "pos": "noun",
-        "ipa": "/ˈtɛrmʲin/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-bezkoshtovno-0-38",
-        "uk": "безкоштовно",
-        "en": "free of charge",
-        "pos": "adv",
-        "ipa": "/bɛzkɔˈʃtɔvnɔ/",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-platnyy-0-39",
-        "uk": "платний",
-        "en": "paid",
-        "pos": "adj",
-        "ipa": "/ˈplɑtnɪj/",
-        "gender": "m",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-nadislaty-0-40",
-        "uk": "надіслати",
-        "en": "to send",
-        "pos": "verb",
-        "ipa": "/nɑdʲisˈlɑtɪ/",
-        "note": "+ acc + dat",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-vidpravyty-0-41",
-        "uk": "відправити",
-        "en": "to send, dispatch",
-        "pos": "verb",
-        "ipa": "/vʲidprɑˈvɪtɪ/",
-        "note": "+ acc",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-obminyaty-0-42",
-        "uk": "обміняти",
-        "en": "to exchange",
-        "pos": "verb",
-        "ipa": "/obmʲiˈnʲɑtɪ/",
-        "note": "+ acc + на + acc",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-znyaty-0-43",
-        "uk": "зняти",
-        "en": "to withdraw",
-        "pos": "verb",
-        "ipa": "/znʲɑˈtɪ/",
-        "note": "+ acc + з + gen",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-perekazaty-0-44",
-        "uk": "переказати",
-        "en": "to transfer",
-        "pos": "verb",
-        "ipa": "/pɛrɛkɑˈzɑtɪ/",
-        "note": "+ acc + dat",
-        "isNew": true,
-        "firstModule": 0
-      },
-      {
-        "id": "v-zapovnyty-0-45",
-        "uk": "заповнити",
-        "en": "to fill out",
-        "pos": "verb",
-        "ipa": "/zɑˈpovnɪtɪ/",
-        "note": "+ acc",
         "isNew": true,
         "firstModule": 0
       }

@@ -38,7 +38,7 @@ export class UnjumbleParser extends ActivityParser<UnjumbleContent> {
     const match = header.match(/^([\w-]+):\s*/);
     if (!match) return false;
     const type = match[1].toLowerCase();
-    return type === 'unjumble' || type === 'unscramble' || type === 'word-order';
+    return type === 'unjumble' || type === 'unscramble' || type === 'word-order' || type === 'order';
   }
 
   protected parseContent(content: string, ctx: ParseContext): UnjumbleContent {

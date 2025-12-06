@@ -679,22 +679,57 @@ Here are everyday expressions you'll use constantly:
     - [ ] Моє
     > "Шкода" uses dative for the person feeling regret.
 
-## unjumble: Age Expression Sequence
+## unjumble: Age Expressions
 
-> Arrange these age expressions from youngest to oldest.
+> Put the words in correct order to form age expressions.
 
-1. Йому два роки.
-2. Їй п'ять років.
-3. Мені дванадцять років.
-4. Тобі вісімнадцять років.
-5. Нам двадцять п'ять років.
-6. Вам тридцять років.
-7. Їм сорок років.
-8. Йому п'ятдесят років.
-9. Їй шістдесят років.
-10. Мені сімдесят років.
-11. Тобі вісімдесят років.
-12. Їм дев'яносто років.
+1. роки два Йому
+   > [!answer] Йому два роки.
+   > (He is two years old.)
+
+2. років п'ять Їй
+   > [!answer] Їй п'ять років.
+   > (She is five years old.)
+
+3. років дванадцять Мені
+   > [!answer] Мені дванадцять років.
+   > (I am twelve years old.)
+
+4. років вісімнадцять Тобі
+   > [!answer] Тобі вісімнадцять років.
+   > (You are eighteen years old.)
+
+5. років двадцять п'ять Нам
+   > [!answer] Нам двадцять п'ять років.
+   > (We are twenty-five years old.)
+
+6. років тридцять Вам
+   > [!answer] Вам тридцять років.
+   > (You are thirty years old.)
+
+7. років сорок Їм
+   > [!answer] Їм сорок років.
+   > (They are forty years old.)
+
+8. років п'ятдесят Йому
+   > [!answer] Йому п'ятдесят років.
+   > (He is fifty years old.)
+
+9. років шістдесят Їй
+   > [!answer] Їй шістдесят років.
+   > (She is sixty years old.)
+
+10. років сімдесят Мені
+    > [!answer] Мені сімдесят років.
+    > (I am seventy years old.)
+
+11. років вісімдесят Тобі
+    > [!answer] Тобі вісімдесят років.
+    > (You are eighty years old.)
+
+12. років дев'яносто Їм
+    > [!answer] Їм дев'яносто років.
+    > (They are ninety years old.)
 
 ## quiz: Advanced Dative Usage
 

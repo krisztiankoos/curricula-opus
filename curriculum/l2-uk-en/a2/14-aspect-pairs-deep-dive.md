@@ -192,6 +192,13 @@ Some aspect pairs use completely different words:
 | одягатися | /odʲaˈɦatɪsʲa/ | to dress (impf) | verb | — | |
 | одягнутися | /odʲaɦˈnutɪsʲa/ | to dress (pf) | verb | — | |
 | починати | /potʃɪˈnatɪ/ | to begin (impf) | verb | — | |
+| відкривати | /widkrɪˈwatɪ/ | to open (impf) | verb | — | -ва- suffix |
+| класти | /ˈklastɪ/ | to put (impf) | verb | — | suppletive pair |
+| покласти | /poˈklastɪ/ | to put (pf) | verb | — | по- + класти |
+| забувати | /zabuˈwatɪ/ | to forget (impf) | verb | — | -ва- suffix |
+| забути | /zaˈbutɪ/ | to forget (pf) | verb | — | no -ва- |
+| знайомитися | /znajoˈmɪtɪsʲa/ | to get acquainted (impf) | verb | — | |
+| познайомитися | /poznajoˈmɪtɪsʲa/ | to get acquainted (pf) | verb | — | по- + знайомитися |
 
 ---
 

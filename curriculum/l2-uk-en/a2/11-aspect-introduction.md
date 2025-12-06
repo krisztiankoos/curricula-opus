@@ -154,6 +154,13 @@ Compare these sentences:
 | купити | /kuˈpɪtɪ/ | to buy (pf) | verb | — | completion |
 | вид | /wɪd/ | aspect | noun | m | grammatical term |
 | доконаний | /doˈkɔnanɪj/ | perfective | adj | m | aspect type |
+| недоконаний | /nɛdoˈkɔnanɪj/ | imperfective | adj | m | aspect type |
+| продавати | /prodaˈwatɪ/ | to sell (impf) | verb | — | process |
+| продати | /proˈdatɪ/ | to sell (pf) | verb | — | completion |
+| їсти | /ˈjistɪ/ | to eat (impf) | verb | — | process |
+| з'їсти | /ˈzjistɪ/ | to eat (pf) | verb | — | completion |
+| пити | /ˈpɪtɪ/ | to drink (impf) | verb | — | process |
+| випити | /ˈwɪpɪtɪ/ | to drink (pf) | verb | — | completion |
 
 ---
 

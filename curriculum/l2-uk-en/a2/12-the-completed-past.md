@@ -156,6 +156,19 @@ Certain time words typically pair with perfective:
 | раптом | /ˈraptom/ | suddenly | adv | — | |
 | одразу | /oˈdrazu/ | immediately | adv | — | |
 | швидко | /ˈʃwɪdko/ | quickly | adv | — | |
+| читав | /tʃɪˈtaw/ | was reading (m) | verb | — | impf past |
+| бачила | /ˈbatʃɪla/ | saw (f) | verb | — | impf past |
+| слухала | /sluˈxala/ | was listening (f) | verb | — | impf past |
+| дивилися | /dɪwɪˈlɪsʲa/ | were watching | verb | — | impf past pl |
+| грали | /ˈɦralɪ/ | were playing | verb | — | impf past pl |
+| говорили | /ɦowoˈrɪlɪ/ | were talking | verb | — | impf past pl |
+| робив | /roˈbɪw/ | was doing (m) | verb | — | impf past |
+| шукала | /ʃuˈkala/ | was looking for (f) | verb | — | impf past |
+| відчинив | /widtʃɪˈnɪw/ | opened (m) | verb | — | pf past |
+| зрозуміла | /zrozuˈmila/ | understood (f) | verb | — | pf past |
+| закінчила | /zaˈkintʃɪla/ | finished (f) | verb | — | pf past |
+| знайшла | /znajˈʃla/ | found (f) | verb | — | pf past |
+| забула | /zaˈbula/ | forgot (f) | verb | — | pf past |
 
 ---
 

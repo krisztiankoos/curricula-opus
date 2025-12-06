@@ -155,6 +155,19 @@ Some perfective verbs have irregular conjugations:
 | вирішити | /wɪˈriʃɪtɪ/ | to decide (pf) | verb | — | |
 | закінчити | /zaˈkintʃɪtɪ/ | to finish (pf) | verb | — | |
 | почати | /poˈtʃatɪ/ | to begin (pf) | verb | — | |
+| зустріну | /zuˈstrinu/ | I will meet (pf) | verb | — | pf future |
+| здасть | /zdastʲ/ | he/she will pass (pf) | verb | — | pf future |
+| прийме | /ˈprɪjmɛ/ | he/she will accept (pf) | verb | — | pf future |
+| подивимося | /podɪˈwɪmosʲa/ | we will watch (pf) | verb | — | pf future |
+| зможу | /ˈzmɔʒu/ | I will be able (pf) | verb | — | pf future |
+| зателефоную | /zatɛlɛfoˈnuju/ | I will call (pf) | verb | — | pf future |
+| закінчу | /zaˈkintʃu/ | I will finish (pf) | verb | — | pf future |
+| почну | /poˈtʃnu/ | I will begin (pf) | verb | — | pf future |
+| буду | /ˈbudu/ | I will be | verb | — | future auxiliary |
+| будеш | /ˈbudɛʃ/ | you will be | verb | — | future auxiliary |
+| буде | /ˈbudɛ/ | he/she will be | verb | — | future auxiliary |
+| будемо | /ˈbudɛmo/ | we will be | verb | — | future auxiliary |
+| будуть | /ˈbudutʲ/ | they will be | verb | — | future auxiliary |
 
 ---
 
@@ -441,8 +454,8 @@ Some perfective verbs have irregular conjugations:
    > [!answer] закінчу
    > (Perfective — promise with deadline)
 
-6. Студенти ___ цей матеріал весь семестр. (will be studying)
-   > [!answer] будуть вчити
+6. Вони ___ працювати цілий тиждень. (will be)
+   > [!answer] будуть
    > (Imperfective — duration)
 
 7. Він ___ правду, коли прийде час. (will tell)

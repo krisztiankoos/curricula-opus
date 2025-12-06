@@ -171,6 +171,8 @@ Modify comparatives with:
 | за | /za/ | than | prep | — | + acc |
 | набагато | /nabaˈɦato/ | much (more) | adv | — | |
 | трохи | /ˈtroxɪ/ | a little | adv | — | |
+| близький | /ˈblɪzʲkɪj/ | close, near | adj | m | |
+| ближчий | /ˈblɪʒtʃɪj/ | closer, nearer | adj | m | irregular |
 
 ---
 

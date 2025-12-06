@@ -18,7 +18,7 @@
     "vocab:rebuild": "npm run vocab:init:force && npm run vocab:scan",
     "test": "ts-node scripts/test-html.ts",
     "test:html": "ts-node scripts/test-html.ts",
-    "claude:deploy": "mkdir -p .claude/skills && cp -r claude_extensions/skills/* .claude/skills/"
+    "claude:deploy": "mkdir -p .claude/skills .claude/commands && cp -r claude_extensions/skills/* .claude/skills/ && cp -r claude_extensions/commands/* .claude/commands/"
   },
   "repository": {
     "type": "git",

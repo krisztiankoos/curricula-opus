@@ -571,21 +571,29 @@ async function main() {
       }
     }
 
-    // Generate curriculum index
+    // Generate curriculum index (scan ALL levels, not just processed ones)
     if (!targetModuleNum) {
-      const levels = Array.from(modulesByLevel.entries())
-        .map(([level, mods]) => ({ level, moduleCount: mods.length }))
-        .sort((a, b) => a.level.localeCompare(b.level));
+      // Scan all level folders to get accurate counts for curriculum index
+      const allLevelCounts: { level: string; moduleCount: number }[] = [];
+      for (const levelFolder of levelFolders) {
+        const levelDir = join(langDir, levelFolder);
+        const level = levelFolderToDisplay(levelFolder);
+        const mdFiles = (await readdir(levelDir)).filter(f => f.match(/^\d{2}-.*\.md$/));
+        if (mdFiles.length > 0) {
+          allLevelCounts.push({ level, moduleCount: mdFiles.length });
+        }
+      }
+      allLevelCounts.sort((a, b) => a.level.localeCompare(b.level));
 
-      if (levels.length > 0) {
-        const curriculumIndex = generateCurriculumIndex(levels, langPair);
+      if (allLevelCounts.length > 0) {
+        const curriculumIndex = generateCurriculumIndex(allLevelCounts, langPair);
         await writeHTML(join(OUTPUT_DIR, 'html', langPair, 'index.html'), curriculumIndex);
 
         const langName = langPair === 'l2-uk-en' ? 'Ukrainian' : langPair;
         allCurricula.push({
           langPair,
           name: langName,
-          levels: levels.map(l => ({ level: l.level, count: l.moduleCount }))
+          levels: allLevelCounts.map(l => ({ level: l.level, count: l.moduleCount }))
         });
       }
     }

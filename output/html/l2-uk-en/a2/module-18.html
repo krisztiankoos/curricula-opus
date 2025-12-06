@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -911,11 +952,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Conditional Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Conditional Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Conditional Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -942,7 +990,7 @@ footer {
   </main><footer>Module 18 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Conditional","data":{"type":"fill-blank","items":[{"prompt":"Я ___ каву, будь ласка. (would like)","answer":"хотів би"},{"prompt":"___ я мав гроші, я б купив машину.","answer":"Якби"},{"prompt":"Вона ___ допомогти. (could)","answer":"могла б"},{"prompt":"Що ___ ти зробив?","answer":"б"},{"prompt":"Ми хотіли ___ поїхати на море.","answer":"б"},{"prompt":"___ він знав, він би сказав.","answer":"Якби"},{"prompt":"Він ___ би це. (would do)","answer":"зробив"},{"prompt":"Чи ___ ви повторити?","answer":"могли б"},{"prompt":"Було ___ добре!","answer":"б"},{"prompt":"Я ___ радив це робити. (would not)","answer":"не"},{"prompt":"Куди ___ ти поїхав?","answer":"б"},{"prompt":"___ я був птахом!","answer":"Якби"}]}},{"id":"activity-1","type":"match-up","title":"Conditional Pairs","data":{"type":"match-up","pairs":[{"left":"хотів би","right":"would want (m)"},{"left":"хотіла б","right":"would want (f)"},{"left":"міг би","right":"could (m)"},{"left":"могла б","right":"could (f)"},{"left":"був би","right":"would be (m)"},{"left":"була б","right":"would be (f)"},{"left":"мав би","right":"would have (m)"},{"left":"зробив би","right":"would do (m)"},{"left":"якби","right":"if (hypothetical)"},{"left":"було б","right":"it would be"},{"left":"радив би","right":"would advise"},{"left":"знав би","right":"would know"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["би","хотів","гарячу","каву","Я","з","молоком","будь ласка"],"answer":"Я хотів би гарячу каву з молоком будь ласка.","translation":"I would like hot coffee with milk please."},{"words":["мав","достатньо","грошей","я","Якби","купив","би","машину"],"answer":"Якби я мав достатньо грошей купив би машину.","translation":"If I had enough money I would buy a car."},{"words":["би","нам","допомогти","Вона","могла","із","цим","завданням"],"answer":"Вона могла б допомогти нам із цим завданням.","translation":"She could help us with this task."},{"words":["ти","б","зробив","Що","на","моєму","місці","сьогодні"],"answer":"Що б ти зробив на моєму місці сьогодні?","translation":"What would you do in my place today?"},{"words":["б","поїхати","на","море","Ми","хотіли","цього","літа"],"answer":"Ми хотіли б поїхати на море цього літа.","translation":"We would like to go to the sea this summer."},{"words":["добре","якби","ти","б","Було","прийшов","завтра","вранці"],"answer":"Було б добре якби ти прийшов завтра вранці.","translation":"It would be good if you came tomorrow morning."},{"words":["би","радив","тобі","Я","це","зробити","якнайшвидше","можливо"],"answer":"Я б радив тобі зробити це якнайшвидше можливо.","translation":"I would advise you to do this as soon as possible."},{"words":["міг","би","ти","допомогти","Чи","мені","з","перекладом"],"answer":"Чи міг би ти допомогти мені з перекладом?","translation":"Could you help me with the translation?"},{"words":["знав","правду","він","про","цю","Якби","ситуацію","раніше"],"answer":"Якби він знав правду про цю ситуацію раніше.","translation":"If he had known the truth about this situation earlier."},{"words":["б","була","дуже","щаслива","вона","побачити","тебе","знову"],"answer":"Вона була б дуже щаслива побачити тебе знову.","translation":"She would be very happy to see you again."},{"words":["би","куди","поїхав","на","відпочинок","ти","цього","року"],"answer":"Куди би ти поїхав на відпочинок цього року?","translation":"Where would you go on vacation this year?"},{"words":["б","чудово","провести","Це","було","час","разом","сьогодні"],"answer":"Це було б чудово провести час разом сьогодні.","translation":"It would be wonderful to spend time together today."}]}},{"id":"activity-3","type":"quiz","title":"Conditional Structures","data":{"type":"quiz","questions":[{"question":"The conditional particle after consonants is:","options":["би","б","бу","ба"],"correctIndex":0,"explanation":""},{"question":"The conditional particle after vowels is:","options":["би","б","бу","ба"],"correctIndex":1,"explanation":""},{"question":"\"Якби\" introduces:","options":["Hypothetical conditions","Real conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"\"Я хотів би\" means:","options":["I would like","I want","I wanted","I will want"],"correctIndex":0,"explanation":""},{"question":"Conditional is formed with:","options":["Past tense + би/б","Present tense + би/б","Future tense + би/б","Infinitive + би/б"],"correctIndex":0,"explanation":""},{"question":"\"Міг би\" means:","options":["could (conditional)","can","must","should"],"correctIndex":0,"explanation":""},{"question":"Conditional is used for:","options":["Polite requests","Commands","Habitual actions","Future plans"],"correctIndex":0,"explanation":""},{"question":"\"Було б добре\" means:","options":["It would be good","It was good","It is good","It will be good"],"correctIndex":0,"explanation":""},{"question":"Which is more polite?","options":["Я хотів би каву","Я хочу каву","Дай мені каву","Каву!"],"correctIndex":0,"explanation":""},{"question":"\"Якби я був птахом\" means:","options":["If I were a bird","I am a bird","I was a bird","I will be a bird"],"correctIndex":0,"explanation":""},{"question":"\"Що б ти зробив?\" means:","options":["What would you do?","What did you do?","What will you do?","What are you doing?"],"correctIndex":0,"explanation":""},{"question":"\"Він знав би\" means:","options":["He would know","He knew","He knows","He will know"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Conditional Facts","data":{"type":"true-false","statements":[{"statement":"Conditional uses past tense forms + би/б.","isTrue":true,"explanation":""},{"statement":"\"Би\" is used after vowels.","isTrue":false,"explanation":""},{"statement":"\"Якби\" means \"if\" for real conditions.","isTrue":false,"explanation":""},{"statement":"Conditional makes requests more polite.","isTrue":true,"explanation":""},{"statement":"\"Могла б\" is feminine form of \"could.\"","isTrue":true,"explanation":""},{"statement":"\"Було б\" means \"it was.\"","isTrue":false,"explanation":""},{"statement":"Both \"би\" and \"б\" mean \"would.\"","isTrue":true,"explanation":""},{"statement":"Conditional can express wishes.","isTrue":true,"explanation":""},{"statement":"\"Я б радив\" means \"I advise.\"","isTrue":false,"explanation":""},{"statement":"The conditional always needs past tense.","isTrue":true,"explanation":""},{"statement":"\"Хотів би\" is masculine form.","isTrue":true,"explanation":""},{"statement":"Conditional can express dreams.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Conditional vs Present","data":{"type":"group-sort","groups":[{"id":"conditional","name":"Conditional","items":["Я хотів би каву","Він міг би допомогти","Було б добре","Дав би ти мені воду?","Я б знав","Вона працювала б"]},{"id":"presentdirect","name":"Present/Direct","items":["Я хочу каву","Він може допомогти","Це добре","Дай мені воду","Я знаю","Вона працює"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Conditional in Context","data":{"type":"fill-blank","items":[{"prompt":"Я ___ би каву, будь ласка. (would like)","answer":"хотів"},{"prompt":"___ я мав час, я б прийшов. (if hypothetical)","answer":"Якби"},{"prompt":"Вона ___ б допомогти. (could)","answer":"могла"},{"prompt":"Було ___ добре! (would)","answer":"б"},{"prompt":"Що ___ ти зробив? (would)","answer":"б"},{"prompt":"Він ___ би це зробити. (could)","answer":"міг"},{"prompt":"Я ___ радив тобі це. (would not)","answer":"не"},{"prompt":"___ він знав, він би сказав. (if)","answer":"Якби"},{"prompt":"Ми хотіли ___ поїхати. (would)","answer":"б"},{"prompt":"Чи ___ ви повторити? (could you)","answer":"могли б"},{"prompt":"Куди ___ ти поїхав? (would)","answer":"б"},{"prompt":"Вона ___ б щаслива. (would be)","answer":"була"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Form","data":{"type":"select","items":[]}},{"id":"activity-8","type":"quiz","title":"Advanced Conditional Understanding","data":{"type":"quiz","questions":[{"question":"Conditional is formed with:","options":["Past tense + би/б","Present tense + би/б","Future tense + би/б","Infinitive + би/б"],"correctIndex":0,"explanation":""},{"question":"\"Би\" is used after:","options":["Consonants","Vowels","Any sound","Only specific consonants"],"correctIndex":0,"explanation":""},{"question":"\"Б\" is used after:","options":["Vowels","Consonants","Any sound","Only specific vowels"],"correctIndex":0,"explanation":""},{"question":"\"Якби\" introduces:","options":["Hypothetical conditions","Real conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"\"Якщо\" introduces:","options":["Real conditions","Hypothetical conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"Which is more polite?","options":["Я хотів би","Я хочу","Дай мені","Мені потрібно"],"correctIndex":0,"explanation":""},{"question":"\"Могла б\" is:","options":["Feminine conditional","Masculine conditional","Plural conditional","Neuter conditional"],"correctIndex":0,"explanation":""},{"question":"\"Було б добре\" means:","options":["It would be good","It was good","It is good","It will be good"],"correctIndex":0,"explanation":""},{"question":"Conditional expresses:","options":["Hypothetical situations","Past actions","Future plans","Present facts"],"correctIndex":0,"explanation":""},{"question":"\"Хто б міг подумати!\" is:","options":["An exclamation","A question","A command","A statement"],"correctIndex":0,"explanation":""},{"question":"\"Не завадило б\" means:","options":["It wouldn't hurt","It would hurt","Don't interfere","It interferes"],"correctIndex":0,"explanation":""},{"question":"Conditional makes requests:","options":["More polite","More direct","More urgent","More formal only"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Conditional","data":{"type":"fill-blank","items":[{"prompt":"Я ___ каву, будь ласка. (would like)","answer":"хотів би"},{"prompt":"___ я мав гроші, я б купив машину.","answer":"Якби"},{"prompt":"Вона ___ допомогти. (could)","answer":"могла б"},{"prompt":"Що ___ ти зробив?","answer":"б"},{"prompt":"Ми хотіли ___ поїхати на море.","answer":"б"},{"prompt":"___ він знав, він би сказав.","answer":"Якби"},{"prompt":"Він ___ би це. (would do)","answer":"зробив"},{"prompt":"Чи ___ ви повторити?","answer":"могли б"},{"prompt":"Було ___ добре!","answer":"б"},{"prompt":"Я ___ радив це робити. (would not)","answer":"не"},{"prompt":"Куди ___ ти поїхав?","answer":"б"},{"prompt":"___ я був птахом!","answer":"Якби"}]}},{"id":"activity-1","type":"match-up","title":"Conditional Pairs","data":{"type":"match-up","pairs":[{"left":"хотів би","right":"would want (m)"},{"left":"хотіла б","right":"would want (f)"},{"left":"міг би","right":"could (m)"},{"left":"могла б","right":"could (f)"},{"left":"був би","right":"would be (m)"},{"left":"була б","right":"would be (f)"},{"left":"мав би","right":"would have (m)"},{"left":"зробив би","right":"would do (m)"},{"left":"якби","right":"if (hypothetical)"},{"left":"було б","right":"it would be"},{"left":"радив би","right":"would advise"},{"left":"знав би","right":"would know"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["би","хотів","гарячу","каву","Я","з","молоком","будь ласка"],"answer":"Я хотів би гарячу каву з молоком будь ласка.","translation":"I would like hot coffee with milk please."},{"words":["мав","достатньо","грошей","я","Якби","купив","би","машину"],"answer":"Якби я мав достатньо грошей купив би машину.","translation":"If I had enough money I would buy a car."},{"words":["би","нам","допомогти","Вона","могла","із","цим","завданням"],"answer":"Вона могла б допомогти нам із цим завданням.","translation":"She could help us with this task."},{"words":["ти","б","зробив","Що","на","моєму","місці","сьогодні"],"answer":"Що б ти зробив на моєму місці сьогодні?","translation":"What would you do in my place today?"},{"words":["б","поїхати","на","море","Ми","хотіли","цього","літа"],"answer":"Ми хотіли б поїхати на море цього літа.","translation":"We would like to go to the sea this summer."},{"words":["добре","якби","ти","б","Було","прийшов","завтра","вранці"],"answer":"Було б добре якби ти прийшов завтра вранці.","translation":"It would be good if you came tomorrow morning."},{"words":["би","радив","тобі","Я","це","зробити","якнайшвидше","можливо"],"answer":"Я б радив тобі зробити це якнайшвидше можливо.","translation":"I would advise you to do this as soon as possible."},{"words":["міг","би","ти","допомогти","Чи","мені","з","перекладом"],"answer":"Чи міг би ти допомогти мені з перекладом?","translation":"Could you help me with the translation?"},{"words":["знав","правду","він","про","цю","Якби","ситуацію","раніше"],"answer":"Якби він знав правду про цю ситуацію раніше.","translation":"If he had known the truth about this situation earlier."},{"words":["б","була","дуже","щаслива","вона","побачити","тебе","знову"],"answer":"Вона була б дуже щаслива побачити тебе знову.","translation":"She would be very happy to see you again."},{"words":["би","куди","поїхав","на","відпочинок","ти","цього","року"],"answer":"Куди би ти поїхав на відпочинок цього року?","translation":"Where would you go on vacation this year?"},{"words":["б","чудово","провести","Це","було","час","разом","сьогодні"],"answer":"Це було б чудово провести час разом сьогодні.","translation":"It would be wonderful to spend time together today."}]}},{"id":"activity-3","type":"quiz","title":"Conditional Structures","data":{"type":"quiz","questions":[{"question":"The conditional particle after consonants is:","options":["би","б","бу","ба"],"correctIndex":0,"explanation":""},{"question":"The conditional particle after vowels is:","options":["би","б","бу","ба"],"correctIndex":1,"explanation":""},{"question":"\"Якби\" introduces:","options":["Hypothetical conditions","Real conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"\"Я хотів би\" means:","options":["I would like","I want","I wanted","I will want"],"correctIndex":0,"explanation":""},{"question":"Conditional is formed with:","options":["Past tense + би/б","Present tense + би/б","Future tense + би/б","Infinitive + би/б"],"correctIndex":0,"explanation":""},{"question":"\"Міг би\" means:","options":["could (conditional)","can","must","should"],"correctIndex":0,"explanation":""},{"question":"Conditional is used for:","options":["Polite requests","Commands","Habitual actions","Future plans"],"correctIndex":0,"explanation":""},{"question":"\"Було б добре\" means:","options":["It would be good","It was good","It is good","It will be good"],"correctIndex":0,"explanation":""},{"question":"Which is more polite?","options":["Я хотів би каву","Я хочу каву","Дай мені каву","Каву!"],"correctIndex":0,"explanation":""},{"question":"\"Якби я був птахом\" means:","options":["If I were a bird","I am a bird","I was a bird","I will be a bird"],"correctIndex":0,"explanation":""},{"question":"\"Що б ти зробив?\" means:","options":["What would you do?","What did you do?","What will you do?","What are you doing?"],"correctIndex":0,"explanation":""},{"question":"\"Він знав би\" means:","options":["He would know","He knew","He knows","He will know"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Conditional Facts","data":{"type":"true-false","statements":[{"statement":"Conditional uses past tense forms + би/б.","isTrue":true,"explanation":""},{"statement":"\"Би\" is used after vowels.","isTrue":false,"explanation":""},{"statement":"\"Якби\" means \"if\" for real conditions.","isTrue":false,"explanation":""},{"statement":"Conditional makes requests more polite.","isTrue":true,"explanation":""},{"statement":"\"Могла б\" is feminine form of \"could.\"","isTrue":true,"explanation":""},{"statement":"\"Було б\" means \"it was.\"","isTrue":false,"explanation":""},{"statement":"Both \"би\" and \"б\" mean \"would.\"","isTrue":true,"explanation":""},{"statement":"Conditional can express wishes.","isTrue":true,"explanation":""},{"statement":"\"Я б радив\" means \"I advise.\"","isTrue":false,"explanation":""},{"statement":"The conditional always needs past tense.","isTrue":true,"explanation":""},{"statement":"\"Хотів би\" is masculine form.","isTrue":true,"explanation":""},{"statement":"Conditional can express dreams.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Conditional vs Present","data":{"type":"group-sort","groups":[{"id":"conditional","name":"Conditional","items":["Я хотів би каву","Він міг би допомогти","Було б добре","Дав би ти мені воду?","Я б знав","Вона працювала б"]},{"id":"presentdirect","name":"Present/Direct","items":["Я хочу каву","Він може допомогти","Це добре","Дай мені воду","Я знаю","Вона працює"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Conditional in Context","data":{"type":"fill-blank","items":[{"prompt":"Я ___ би каву, будь ласка. (would like)","answer":"хотів"},{"prompt":"___ я мав час, я б прийшов. (if hypothetical)","answer":"Якби"},{"prompt":"Вона ___ б допомогти. (could)","answer":"могла"},{"prompt":"Було ___ добре! (would)","answer":"б"},{"prompt":"Що ___ ти зробив? (would)","answer":"б"},{"prompt":"Він ___ би це зробити. (could)","answer":"міг"},{"prompt":"Я ___ радив тобі це. (would not)","answer":"не"},{"prompt":"___ він знав, він би сказав. (if)","answer":"Якби"},{"prompt":"Ми хотіли ___ поїхати. (would)","answer":"б"},{"prompt":"Чи ___ ви повторити? (could you)","answer":"могли б"},{"prompt":"Куди ___ ти поїхав? (would)","answer":"б"},{"prompt":"Вона ___ б щаслива. (would be)","answer":"була"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Form","data":{"type":"select","items":[]}},{"id":"activity-8","type":"unjumble","title":"Conditional Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["би","|","поїхав","|","я","|","на","|","море","|","якби","|","мав","|","час"],"answer":"Якби я мав час, я би поїхав на море.","translation":"If I had time, I would go to the sea."},{"words":["купив","|","би","|","він","|","машину","|","нову","|","якби","|","мав","|","гроші"],"answer":"Якби він мав гроші, він би купив нову машину.","translation":"If he had money, he would buy a new car."},{"words":["б","|","хотіла","|","вона","|","жити","|","у","|","Києві"],"answer":"Вона б хотіла жити у Києві.","translation":"She would like to live in Kyiv."},{"words":["міг","|","ти","|","би","|","допомогти","|","мені"],"answer":"Ти би міг допомогти мені?","translation":"Could you help me?"},{"words":["було","|","б","|","чудово","|","побачити","|","тебе"],"answer":"Було б чудово побачити тебе.","translation":"It would be wonderful to see you."},{"words":["якби","|","знав","|","я","|","сказав","|","би","|","тобі"],"answer":"Якби я знав, я би сказав тобі.","translation":"If I knew, I would tell you."},{"words":["ми","|","б","|","поїхали","|","разом","|","якби","|","могли"],"answer":"Ми б поїхали разом, якби могли.","translation":"We would go together if we could."},{"words":["радив","|","би","|","я","|","почекати","|","трохи"],"answer":"Я би радив почекати трохи.","translation":"I would advise to wait a bit."},{"words":["вони","|","б","|","прийшли","|","якби","|","знали","|","адресу"],"answer":"Вони б прийшли, якби знали адресу.","translation":"They would come if they knew the address."},{"words":["краще","|","було","|","б","|","зробити","|","це","|","завтра"],"answer":"Було б краще зробити це завтра.","translation":"It would be better to do this tomorrow."},{"words":["я","|","б","|","вибрав","|","інший","|","варіант"],"answer":"Я б вибрав інший варіант.","translation":"I would choose another option."},{"words":["ти","|","б","|","хотів","|","піти","|","з","|","нами"],"answer":"Ти б хотів піти з нами?","translation":"Would you like to go with us?"}]}},{"id":"activity-9","type":"quiz","title":"Advanced Conditional Understanding","data":{"type":"quiz","questions":[{"question":"Conditional is formed with:","options":["Past tense + би/б","Present tense + би/б","Future tense + би/б","Infinitive + би/б"],"correctIndex":0,"explanation":""},{"question":"\"Би\" is used after:","options":["Consonants","Vowels","Any sound","Only specific consonants"],"correctIndex":0,"explanation":""},{"question":"\"Б\" is used after:","options":["Vowels","Consonants","Any sound","Only specific vowels"],"correctIndex":0,"explanation":""},{"question":"\"Якби\" introduces:","options":["Hypothetical conditions","Real conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"\"Якщо\" introduces:","options":["Real conditions","Hypothetical conditions","Questions","Commands"],"correctIndex":0,"explanation":""},{"question":"Which is more polite?","options":["Я хотів би","Я хочу","Дай мені","Мені потрібно"],"correctIndex":0,"explanation":""},{"question":"\"Могла б\" is:","options":["Feminine conditional","Masculine conditional","Plural conditional","Neuter conditional"],"correctIndex":0,"explanation":""},{"question":"\"Було б добре\" means:","options":["It would be good","It was good","It is good","It will be good"],"correctIndex":0,"explanation":""},{"question":"Conditional expresses:","options":["Hypothetical situations","Past actions","Future plans","Present facts"],"correctIndex":0,"explanation":""},{"question":"\"Хто б міг подумати!\" is:","options":["An exclamation","A question","A command","A statement"],"correctIndex":0,"explanation":""},{"question":"\"Не завадило б\" means:","options":["It wouldn't hurt","It would hurt","Don't interfere","It interferes"],"correctIndex":0,"explanation":""},{"question":"Conditional makes requests:","options":["More polite","More direct","More urgent","More formal only"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"би","translit":"","en":"would (particle)","note":"after consonant"},{"uk":"б","translit":"","en":"would (particle)","note":"after vowel"},{"uk":"якби","translit":"","en":"if (hypothetical)","note":""},{"uk":"хотів би","translit":"","en":"would want (m)","note":""},{"uk":"хотіла б","translit":"","en":"would want (f)","note":""},{"uk":"міг би","translit":"","en":"could (m)","note":""},{"uk":"могла б","translit":"","en":"could (f)","note":""},{"uk":"був би","translit":"","en":"would be (m)","note":""},{"uk":"була б","translit":"","en":"would be (f)","note":""},{"uk":"мав би","translit":"","en":"would have (m)","note":""},{"uk":"мала б","translit":"","en":"would have (f)","note":""},{"uk":"радити","translit":"","en":"to advise","note":""},{"uk":"радив би","translit":"","en":"would advise (m)","note":""},{"uk":"завадити","translit":"","en":"to interfere, harm","note":""},{"uk":"мрія","translit":"","en":"dream","note":""},{"uk":"мріяти","translit":"","en":"to dream","note":""},{"uk":"бажання","translit":"","en":"wish, desire","note":""},{"uk":"уявити","translit":"","en":"to imagine (pf)","note":""},{"uk":"гіпотетичний","translit":"","en":"hypothetical","note":""},{"uk":"ввічливий","translit":"","en":"polite","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2267,6 +2315,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

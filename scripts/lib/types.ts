@@ -16,7 +16,8 @@ export type ActivityType =
   | 'unjumble'
   | 'anagram'
   | 'gap-fill'
-  | 'select';
+  | 'select'
+  | 'error-correction';
 
 // =============================================================================
 // Frontmatter
@@ -241,6 +242,20 @@ export interface GapFillContent extends ActivityContent {
 export interface GapFillBlank {
   index: number;
   hint?: string;
+}
+
+// Error-Correction (identify and fix errors)
+export interface ErrorCorrectionContent extends ActivityContent {
+  type: 'error-correction';
+  items: ErrorCorrectionItem[];
+}
+
+export interface ErrorCorrectionItem {
+  sentence: string;
+  errorWord: string | null;  // null = no error
+  correctForm: string;
+  options: string[];
+  explanation: string;
 }
 
 // =============================================================================

@@ -704,14 +704,57 @@ Nature surrounds us — mountains, rivers, forests, and the ever-changing weathe
     - [ ] Навесні
     - [ ] Восени
 
-## order: Seasons of the Year
+## unjumble: Nature and Weather Sentences
 
-> Put the seasons in the correct order starting from spring.
+> Rearrange the words to form correct sentences about nature and weather.
 
-1. Весна
-2. Літо
-3. Осінь
-4. Зима
+1. сьогодні | йде | дощ | і | холодно
+   > [!answer] Сьогодні йде дощ і холодно.
+   > (Today it's raining and cold.)
+
+2. влітку | ми | їдемо | на | море
+   > [!answer] Влітку ми їдемо на море.
+   > (In summer we go to the sea.)
+
+3. взимку | часто | падає | сніг
+   > [!answer] Взимку часто падає сніг.
+   > (In winter it often snows.)
+
+4. весною | цвітуть | красиві | квіти
+   > [!answer] Весною цвітуть красиві квіти.
+   > (In spring beautiful flowers bloom.)
+
+5. восени | листя | жовтіє | і | падає
+   > [!answer] Восени листя жовтіє і падає.
+   > (In autumn leaves turn yellow and fall.)
+
+6. гори | в | Карпатах | дуже | високі
+   > [!answer] Гори в Карпатах дуже високі.
+   > (The mountains in the Carpathians are very high.)
+
+7. чорне | море | омиває | південь | України
+   > [!answer] Чорне море омиває південь України.
+   > (The Black Sea washes the south of Ukraine.)
+
+8. сьогодні | гарна | сонячна | погода
+   > [!answer] Сьогодні гарна сонячна погода.
+   > (Today is nice sunny weather.)
+
+9. степ | це | рівнина | з | травою
+   > [!answer] Степ — це рівнина з травою.
+   > (A steppe is a plain with grass.)
+
+10. вранці | був | густий | туман
+    > [!answer] Вранці був густий туман.
+    > (In the morning there was thick fog.)
+
+11. річка | Дніпро | тече | через | Київ
+    > [!answer] Річка Дніпро тече через Київ.
+    > (The Dnipro river flows through Kyiv.)
+
+12. яка | погода | буде | завтра
+    > [!answer] Яка погода буде завтра?
+    > (What will the weather be tomorrow?)
 
 ## quiz: Ukrainian Nature Facts
 

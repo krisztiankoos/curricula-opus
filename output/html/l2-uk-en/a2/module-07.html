@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -1188,8 +1228,8 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Daily Routine with Prepositions</h3>
-      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/6</span></div>
+    <section id="activity-8" class="section"><div class="card"><h3>Preposition Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
       <div id="activity-8-container" class="order-container"></div>
       <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
@@ -1226,7 +1266,7 @@ footer {
   </main><footer>Module 07 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Preposition","data":{"type":"fill-blank","items":[{"prompt":"Кава ___ цукру, будь ласка.","answer":"без"},{"prompt":"Я йду ___ магазину.","answer":"до"},{"prompt":"Це подарунок ___ тебе.","answer":"для"},{"prompt":"Вони говорять ___ мене.","answer":"про"},{"prompt":"Банк знаходиться ___ пошти.","answer":"біля"},{"prompt":"Я прийду ___ роботи.","answer":"після"},{"prompt":"Кіт сидить ___ столом.","answer":"під"},{"prompt":"Вона стоїть ___ дверима.","answer":"перед"},{"prompt":"Він живе ___ кордоном.","answer":"за"},{"prompt":"Сядь ___ мною!","answer":"зі"},{"prompt":"Лампа висить ___ столом.","answer":"над"},{"prompt":"Успіх ___ тобі!","answer":"завдяки"}]}},{"id":"activity-1","type":"match-up","title":"Preposition and Case","data":{"type":"match-up","pairs":[{"left":"без","right":"genitive"},{"left":"про","right":"accusative"},{"left":"з (with)","right":"instrumental"},{"left":"до","right":"genitive"},{"left":"перед","right":"instrumental"},{"left":"на (location)","right":"locative"},{"left":"для","right":"genitive"},{"left":"між","right":"instrumental"},{"left":"від","right":"genitive"},{"left":"під (location)","right":"instrumental"},{"left":"після","right":"genitive"},{"left":"завдяки","right":"dative"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цукру","без","Кава","ранку","кожного","молоком","з","гаряча"],"answer":"Кава без цукру з молоком кожного ранку гаряча.","translation":"Coffee without sugar with milk every morning is hot."},{"words":["до","Я","великого","магазину","нового","йду","сьогодні","ввечері"],"answer":"Я йду до нового великого магазину сьогодні ввечері.","translation":"I'm going to the new big store this evening."},{"words":["тебе","Це","для","особливий","подарунок","на","день","народження"],"answer":"Це особливий подарунок для тебе на день народження.","translation":"This is a special gift for you for your birthday."},{"words":["столом","великим","Кіт","кухонним","під","сидить","нашим","тихо"],"answer":"Кіт тихо сидить під нашим великим кухонним столом.","translation":"The cat sits quietly under our big kitchen table."},{"words":["роботи","важкої","після","прийду","Я","додому","сьогодні","пізно"],"answer":"Я прийду додому пізно після важкої роботи сьогодні.","translation":"I'll come home late after hard work today."},{"words":["тебе","про","говорять","Вони","часто","добре","на","роботі"],"answer":"Вони часто говорять про тебе добре на роботі.","translation":"They often talk about you positively at work."},{"words":["парку","центрального","біля","Він","великого","живе","міського","нашого"],"answer":"Він живе біля нашого великого центрального міського парку.","translation":"He lives near our big central city park."},{"words":["нами","між","Це","великий","секрет","залишиться","тільки","назавжди"],"answer":"Це великий секрет тільки між нами назавжди залишиться.","translation":"This big secret will remain only between us forever."},{"words":["дверима","головними","стоїть","перед","Вона","чекає","і","мене"],"answer":"Вона стоїть перед головними дверима і чекає мене.","translation":"She stands in front of the main door and waits for me."},{"words":["столом","робочим","висить","над","Лампа","яскрава","моїм","нова"],"answer":"Нова яскрава лампа висить над моїм робочим столом.","translation":"A new bright lamp hangs above my work desk."},{"words":["кордоном","живе","за","Він","уже","багато","років","давно"],"answer":"Він давно живе за кордоном уже багато років.","translation":"He has been living abroad for many years now."},{"words":["тобі","завдяки","Успіх","наш","цей","великий","можливий","став"],"answer":"Цей наш великий успіх став можливий завдяки тобі.","translation":"This big success of ours became possible thanks to you."}]}},{"id":"activity-3","type":"quiz","title":"Preposition + Case","data":{"type":"quiz","questions":[{"question":"\"Без\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Про\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Перед\" requires which case?","options":["Genitive","Locative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"До\" requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":0,"explanation":""},{"question":"\"З\" (with) requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"На\" (location) requires which case?","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"\"Завдяки\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Між\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Після\" requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":0,"explanation":""},{"question":"\"Під\" (location) requires which case?","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"\"Для\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"В\" (direction) requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Preposition Facts","data":{"type":"true-false","statements":[{"statement":"\"Без\" takes genitive case.","isTrue":true,"explanation":""},{"statement":"\"З\" always takes instrumental case.","isTrue":false,"explanation":""},{"statement":"Direction uses accusative, location uses locative.","isTrue":true,"explanation":""},{"statement":"\"Завдяки\" takes dative case.","isTrue":true,"explanation":""},{"statement":"\"На Україні\" uses accusative.","isTrue":false,"explanation":""},{"statement":"\"Перед\" takes genitive case.","isTrue":false,"explanation":""},{"statement":"\"Про\" takes accusative case.","isTrue":true,"explanation":""},{"statement":"\"Між\" takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"До побачення\" uses genitive.","isTrue":true,"explanation":""},{"statement":"\"За кордоном\" uses accusative.","isTrue":false,"explanation":""},{"statement":"\"Після\" takes genitive case.","isTrue":true,"explanation":""},{"statement":"\"Під столом\" uses locative case.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Cases Required","data":{"type":"group-sort","groups":[{"id":"genitive","name":"Genitive","items":["без","до","для","від","після"]},{"id":"instrumental","name":"Instrumental","items":["з (with)","перед","між","над"]},{"id":"accusative","name":"Accusative","items":["про","через","в (direction)"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Direction vs Location","data":{"type":"fill-blank","items":[{"prompt":"Я йду ___ магазин. (direction)","answer":"в/до"},{"prompt":"Я ___ магазині. (location)","answer":"в/у"},{"prompt":"Вона їде ___ Київ. (direction)","answer":"до/в"},{"prompt":"Вона ___ Києві. (location)","answer":"в/у"},{"prompt":"Він кладе книгу ___ стіл. (direction)","answer":"на"},{"prompt":"Книга лежить ___ столі. (location)","answer":"на"},{"prompt":"Ми йдемо ___ пошту. (direction)","answer":"на"},{"prompt":"Ми ___ пошті. (location)","answer":"на"},{"prompt":"Кіт біжить ___ стіл. (direction - under)","answer":"під"},{"prompt":"Кіт сидить ___ столом. (location - under)","answer":"під"},{"prompt":"Він вішає картину ___ ліжком. (above)","answer":"над"},{"prompt":"Картина висить ___ ліжком. (above)","answer":"над"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Case","data":{"type":"select","items":[{"question":"Кава без ___.","options":[{"text":"цукру (genitive)","correct":true},{"text":"цукор (nominative)","correct":false},{"text":"цукром (instrumental)","correct":false},{"text":"цукрі (locative)","correct":false}]},{"question":"Подарунок для ___.","options":[{"text":"мама","correct":false},{"text":"мами","correct":true},{"text":"мамою","correct":false},{"text":"мамі","correct":false}]},{"question":"Він живе біля ___.","options":[{"text":"парк","correct":false},{"text":"парку","correct":true},{"text":"парком","correct":false},{"text":"парці","correct":false}]},{"question":"Ми говоримо про ___.","options":[{"text":"він","correct":false},{"text":"його","correct":false},{"text":"нього","correct":true},{"text":"ним","correct":false}]},{"question":"Вона сидить між ___.","options":[{"text":"батьків","correct":false},{"text":"батьки","correct":false},{"text":"батьками","correct":true},{"text":"батьках","correct":false}]},{"question":"Лампа висить над ___.","options":[{"text":"стіл","correct":false},{"text":"столу","correct":false},{"text":"столом","correct":true},{"text":"столі","correct":false}]},{"question":"Завдяки ___ ми перемогли.","options":[{"text":"ти","correct":false},{"text":"тобі","correct":true},{"text":"тебе","correct":false},{"text":"тобою","correct":false}]},{"question":"Він стоїть перед ___.","options":[{"text":"двері","correct":false},{"text":"дверей","correct":false},{"text":"дверима","correct":true},{"text":"дверях","correct":false}]},{"question":"Це секрет між ___.","options":[{"text":"ми","correct":false},{"text":"нас","correct":false},{"text":"нами","correct":true},{"text":"нам","correct":false}]},{"question":"Вона йде до ___.","options":[{"text":"магазин","correct":false},{"text":"магазину","correct":true},{"text":"магазином","correct":false},{"text":"магазині","correct":false}]},{"question":"Після ___ я прийду.","options":[{"text":"робота","correct":false},{"text":"роботи","correct":true},{"text":"роботою","correct":false},{"text":"роботі","correct":false}]},{"question":"Кіт сидить під ___.","options":[{"text":"стіл","correct":false},{"text":"столу","correct":false},{"text":"столом","correct":true},{"text":"столі","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Daily Routine with Prepositions","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","прокидаюся","о","сьомій","ранку."],"answer":"Я прокидаюся о сьомій ранку."},{"words":["Після","сніданку","я","йду","на","роботу."],"answer":"Після сніданку я йду на роботу."},{"words":["Я","працюю","в","офісі","до","п'ятої."],"answer":"Я працюю в офісі до п'ятої."},{"words":["Після","роботи","я","йду","в","магазин."],"answer":"Після роботи я йду в магазин."},{"words":["Увечері","я","сиджу","перед","телевізором."],"answer":"Увечері я сиджу перед телевізором."},{"words":["Я","лягаю","спати","о","одинадцятій."],"answer":"Я лягаю спати о одинадцятій."}]}},{"id":"activity-9","type":"quiz","title":"Preposition Mastery","data":{"type":"quiz","questions":[{"question":"\"Без\" takes which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"When \"в\" means direction, it takes:","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"When \"в\" means location, it takes:","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"\"З\" meaning \"with\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"З\" meaning \"from\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Завдяки\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Перед\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Про\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Після\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Між\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which preposition can take two different cases?","options":["без","для","на","перед"],"correctIndex":2,"explanation":""},{"question":"\"До побачення\" uses:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Preposition","data":{"type":"fill-blank","items":[{"prompt":"Кава ___ цукру, будь ласка.","answer":"без"},{"prompt":"Я йду ___ магазину.","answer":"до"},{"prompt":"Це подарунок ___ тебе.","answer":"для"},{"prompt":"Вони говорять ___ мене.","answer":"про"},{"prompt":"Банк знаходиться ___ пошти.","answer":"біля"},{"prompt":"Я прийду ___ роботи.","answer":"після"},{"prompt":"Кіт сидить ___ столом.","answer":"під"},{"prompt":"Вона стоїть ___ дверима.","answer":"перед"},{"prompt":"Він живе ___ кордоном.","answer":"за"},{"prompt":"Сядь ___ мною!","answer":"зі"},{"prompt":"Лампа висить ___ столом.","answer":"над"},{"prompt":"Успіх ___ тобі!","answer":"завдяки"}]}},{"id":"activity-1","type":"match-up","title":"Preposition and Case","data":{"type":"match-up","pairs":[{"left":"без","right":"genitive"},{"left":"про","right":"accusative"},{"left":"з (with)","right":"instrumental"},{"left":"до","right":"genitive"},{"left":"перед","right":"instrumental"},{"left":"на (location)","right":"locative"},{"left":"для","right":"genitive"},{"left":"між","right":"instrumental"},{"left":"від","right":"genitive"},{"left":"під (location)","right":"instrumental"},{"left":"після","right":"genitive"},{"left":"завдяки","right":"dative"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цукру","без","Кава","ранку","кожного","молоком","з","гаряча"],"answer":"Кава без цукру з молоком кожного ранку гаряча.","translation":"Coffee without sugar with milk every morning is hot."},{"words":["до","Я","великого","магазину","нового","йду","сьогодні","ввечері"],"answer":"Я йду до нового великого магазину сьогодні ввечері.","translation":"I'm going to the new big store this evening."},{"words":["тебе","Це","для","особливий","подарунок","на","день","народження"],"answer":"Це особливий подарунок для тебе на день народження.","translation":"This is a special gift for you for your birthday."},{"words":["столом","великим","Кіт","кухонним","під","сидить","нашим","тихо"],"answer":"Кіт тихо сидить під нашим великим кухонним столом.","translation":"The cat sits quietly under our big kitchen table."},{"words":["роботи","важкої","після","прийду","Я","додому","сьогодні","пізно"],"answer":"Я прийду додому пізно після важкої роботи сьогодні.","translation":"I'll come home late after hard work today."},{"words":["тебе","про","говорять","Вони","часто","добре","на","роботі"],"answer":"Вони часто говорять про тебе добре на роботі.","translation":"They often talk about you positively at work."},{"words":["парку","центрального","біля","Він","великого","живе","міського","нашого"],"answer":"Він живе біля нашого великого центрального міського парку.","translation":"He lives near our big central city park."},{"words":["нами","між","Це","великий","секрет","залишиться","тільки","назавжди"],"answer":"Це великий секрет тільки між нами назавжди залишиться.","translation":"This big secret will remain only between us forever."},{"words":["дверима","головними","стоїть","перед","Вона","чекає","і","мене"],"answer":"Вона стоїть перед головними дверима і чекає мене.","translation":"She stands in front of the main door and waits for me."},{"words":["столом","робочим","висить","над","Лампа","яскрава","моїм","нова"],"answer":"Нова яскрава лампа висить над моїм робочим столом.","translation":"A new bright lamp hangs above my work desk."},{"words":["кордоном","живе","за","Він","уже","багато","років","давно"],"answer":"Він давно живе за кордоном уже багато років.","translation":"He has been living abroad for many years now."},{"words":["тобі","завдяки","Успіх","наш","цей","великий","можливий","став"],"answer":"Цей наш великий успіх став можливий завдяки тобі.","translation":"This big success of ours became possible thanks to you."}]}},{"id":"activity-3","type":"quiz","title":"Preposition + Case","data":{"type":"quiz","questions":[{"question":"\"Без\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Про\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Перед\" requires which case?","options":["Genitive","Locative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"До\" requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":0,"explanation":""},{"question":"\"З\" (with) requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"На\" (location) requires which case?","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"\"Завдяки\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Між\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Після\" requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":0,"explanation":""},{"question":"\"Під\" (location) requires which case?","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"\"Для\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"В\" (direction) requires which case?","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Preposition Facts","data":{"type":"true-false","statements":[{"statement":"\"Без\" takes genitive case.","isTrue":true,"explanation":""},{"statement":"\"З\" always takes instrumental case.","isTrue":false,"explanation":""},{"statement":"Direction uses accusative, location uses locative.","isTrue":true,"explanation":""},{"statement":"\"Завдяки\" takes dative case.","isTrue":true,"explanation":""},{"statement":"\"На Україні\" uses accusative.","isTrue":false,"explanation":""},{"statement":"\"Перед\" takes genitive case.","isTrue":false,"explanation":""},{"statement":"\"Про\" takes accusative case.","isTrue":true,"explanation":""},{"statement":"\"Між\" takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"До побачення\" uses genitive.","isTrue":true,"explanation":""},{"statement":"\"За кордоном\" uses accusative.","isTrue":false,"explanation":""},{"statement":"\"Після\" takes genitive case.","isTrue":true,"explanation":""},{"statement":"\"Під столом\" uses locative case.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Cases Required","data":{"type":"group-sort","groups":[{"id":"genitive","name":"Genitive","items":["без","до","для","від","після"]},{"id":"instrumental","name":"Instrumental","items":["з (with)","перед","між","над"]},{"id":"accusative","name":"Accusative","items":["про","через","в (direction)"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Direction vs Location","data":{"type":"fill-blank","items":[{"prompt":"Я йду ___ магазин. (direction)","answer":"в/до"},{"prompt":"Я ___ магазині. (location)","answer":"в/у"},{"prompt":"Вона їде ___ Київ. (direction)","answer":"до/в"},{"prompt":"Вона ___ Києві. (location)","answer":"в/у"},{"prompt":"Він кладе книгу ___ стіл. (direction)","answer":"на"},{"prompt":"Книга лежить ___ столі. (location)","answer":"на"},{"prompt":"Ми йдемо ___ пошту. (direction)","answer":"на"},{"prompt":"Ми ___ пошті. (location)","answer":"на"},{"prompt":"Кіт біжить ___ стіл. (direction - under)","answer":"під"},{"prompt":"Кіт сидить ___ столом. (location - under)","answer":"під"},{"prompt":"Він вішає картину ___ ліжком. (above)","answer":"над"},{"prompt":"Картина висить ___ ліжком. (above)","answer":"над"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Case","data":{"type":"select","items":[{"question":"Кава без ___.","options":[{"text":"цукру (genitive)","correct":true},{"text":"цукор (nominative)","correct":false},{"text":"цукром (instrumental)","correct":false},{"text":"цукрі (locative)","correct":false}]},{"question":"Подарунок для ___.","options":[{"text":"мама","correct":false},{"text":"мами","correct":true},{"text":"мамою","correct":false},{"text":"мамі","correct":false}]},{"question":"Він живе біля ___.","options":[{"text":"парк","correct":false},{"text":"парку","correct":true},{"text":"парком","correct":false},{"text":"парці","correct":false}]},{"question":"Ми говоримо про ___.","options":[{"text":"він","correct":false},{"text":"його","correct":false},{"text":"нього","correct":true},{"text":"ним","correct":false}]},{"question":"Вона сидить між ___.","options":[{"text":"батьків","correct":false},{"text":"батьки","correct":false},{"text":"батьками","correct":true},{"text":"батьках","correct":false}]},{"question":"Лампа висить над ___.","options":[{"text":"стіл","correct":false},{"text":"столу","correct":false},{"text":"столом","correct":true},{"text":"столі","correct":false}]},{"question":"Завдяки ___ ми перемогли.","options":[{"text":"ти","correct":false},{"text":"тобі","correct":true},{"text":"тебе","correct":false},{"text":"тобою","correct":false}]},{"question":"Він стоїть перед ___.","options":[{"text":"двері","correct":false},{"text":"дверей","correct":false},{"text":"дверима","correct":true},{"text":"дверях","correct":false}]},{"question":"Це секрет між ___.","options":[{"text":"ми","correct":false},{"text":"нас","correct":false},{"text":"нами","correct":true},{"text":"нам","correct":false}]},{"question":"Вона йде до ___.","options":[{"text":"магазин","correct":false},{"text":"магазину","correct":true},{"text":"магазином","correct":false},{"text":"магазині","correct":false}]},{"question":"Після ___ я прийду.","options":[{"text":"робота","correct":false},{"text":"роботи","correct":true},{"text":"роботою","correct":false},{"text":"роботі","correct":false}]},{"question":"Кіт сидить під ___.","options":[{"text":"стіл","correct":false},{"text":"столу","correct":false},{"text":"столом","correct":true},{"text":"столі","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Preposition Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["о","Я","прокидаюся","сьомій","ранку","кожного","дня","завжди"],"answer":"Я завжди прокидаюся о сьомій ранку кожного дня.","translation":"I always wake up at seven in the morning every day."},{"words":["сніданку","Після","я","йду","на","роботу","швидко","нову"],"answer":"Після сніданку я швидко йду на нову роботу.","translation":"After breakfast I quickly go to my new job."},{"words":["офісі","Я","в","працюю","великому","до","п'ятої","нашому"],"answer":"Я працюю в нашому великому офісі до п'ятої.","translation":"I work in our big office until five."},{"words":["роботи","Після","я","в","йду","магазин","новий","великий"],"answer":"Після роботи я йду в новий великий магазин.","translation":"After work I go to the new big store."},{"words":["телевізором","Увечері","я","перед","сиджу","великим","своїм","новим"],"answer":"Увечері я сиджу перед своїм новим великим телевізором.","translation":"In the evening I sit in front of my new big TV."},{"words":["спати","Я","о","лягаю","одинадцятій","годині","кожну","ніч"],"answer":"Я лягаю спати о одинадцятій годині кожну ніч.","translation":"I go to bed at eleven o'clock every night."},{"words":["столом","Він","за","сидить","великим","кожного","ранку","письмовим"],"answer":"Він кожного ранку сидить за великим письмовим столом.","translation":"Every morning he sits at the big writing desk."},{"words":["деревом","Кіт","під","сидить","великим","нашим","зеленим","старим"],"answer":"Кіт сидить під нашим великим старим зеленим деревом.","translation":"The cat sits under our big old green tree."},{"words":["магазину","Вона","з","вийшла","нового","великого","продуктового","щойно"],"answer":"Вона щойно вийшла з нового великого продуктового магазину.","translation":"She just came out of the new big grocery store."},{"words":["вікна","Ми","біля","стоїмо","великого","нашого","красивого","нового"],"answer":"Ми стоїмо біля нашого великого красивого нового вікна.","translation":"We stand near our big beautiful new window."},{"words":["кімнаті","Діти","в","граються","великій","своїй","кожного","дня"],"answer":"Діти граються в своїй великій кімнаті кожного дня.","translation":"Children play in their big room every day."},{"words":["будинку","Вони","без","вийшли","нашого","з","парасольки","великого"],"answer":"Вони вийшли з нашого великого будинку без парасольки.","translation":"They left our big building without an umbrella."}]}},{"id":"activity-9","type":"quiz","title":"Preposition Mastery","data":{"type":"quiz","questions":[{"question":"\"Без\" takes which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"When \"в\" means direction, it takes:","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"When \"в\" means location, it takes:","options":["Genitive","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"\"З\" meaning \"with\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"З\" meaning \"from\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Завдяки\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Перед\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Про\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Після\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"\"Між\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which preposition can take two different cases?","options":["без","для","на","перед"],"correctIndex":2,"explanation":""},{"question":"\"До побачення\" uses:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"без","translit":"","en":"without","note":"+ gen"},{"uk":"до","translit":"","en":"to, until","note":"+ gen"},{"uk":"від","translit":"","en":"from","note":"+ gen"},{"uk":"для","translit":"","en":"for","note":"+ gen"},{"uk":"після","translit":"","en":"after","note":"+ gen"},{"uk":"біля","translit":"","en":"near","note":"+ gen"},{"uk":"замість","translit":"","en":"instead of","note":"+ gen"},{"uk":"про","translit":"","en":"about","note":"+ acc"},{"uk":"через","translit":"","en":"through, because","note":"+ acc"},{"uk":"перед","translit":"","en":"in front of","note":"+ inst"},{"uk":"між","translit":"","en":"between","note":"+ inst"},{"uk":"над","translit":"","en":"above, over","note":"+ inst"},{"uk":"під","translit":"","en":"under","note":"+ inst"},{"uk":"за","translit":"","en":"behind, for","note":"+ inst/acc"},{"uk":"завдяки","translit":"","en":"thanks to","note":"+ dat"},{"uk":"всупереч","translit":"","en":"despite","note":"+ dat"},{"uk":"напроти","translit":"","en":"opposite","note":"+ gen, also навпроти"},{"uk":"крізь","translit":"","en":"through","note":"+ acc"},{"uk":"поруч","translit":"","en":"next to","note":"+ з + inst"},{"uk":"сумнів","translit":"","en":"doubt","note":""},{"uk":"вхід","translit":"","en":"entrance","note":""},{"uk":"кордон","translit":"","en":"border","note":"за кордоном"},{"uk":"сон","translit":"","en":"sleep, dream","note":"перед сном"},{"uk":"думка","translit":"","en":"thought, opinion","note":"на мою думку"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2551,6 +2591,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

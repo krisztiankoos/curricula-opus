@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1093,11 +1134,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Food and Taste</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Food and Cooking Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Food and Taste</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1124,7 +1172,7 @@ footer {
   </main><footer>Module 37 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Kitchen Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Вари воду в ___. (kettle)","answer":"чайнику"},{"prompt":"Постав м'ясо в ___. (oven)","answer":"духовку"},{"prompt":"Візьми молоко з ___. (refrigerator)","answer":"холодильника"},{"prompt":"___ овочі на сковороді. (Fry)","answer":"Смаж"},{"prompt":"___ суп 30 хвилин. (Boil/Cook)","answer":"Вари"},{"prompt":"___ картоплю дрібно. (Cut)","answer":"Наріж"},{"prompt":"Суп занадто ___. (salty)","answer":"солоний"},{"prompt":"Торт дуже ___. (sweet)","answer":"солодкий"},{"prompt":"Що на ___? (breakfast)","answer":"сніданок"},{"prompt":"___ готова! (Dinner)","answer":"Вечеря"},{"prompt":"Ріж хліб ___. (with knife)","answer":"ножем"},{"prompt":"Їж суп ___. (with spoon)","answer":"ложкою"}]}},{"id":"activity-1","type":"match-up","title":"Kitchen Items","data":{"type":"match-up","pairs":[{"left":"каструля","right":"pot"},{"left":"сковорода","right":"frying pan"},{"left":"духовка","right":"oven"},{"left":"холодильник","right":"refrigerator"},{"left":"ніж","right":"knife"},{"left":"виделка","right":"fork"},{"left":"ложка","right":"spoon"},{"left":"чайник","right":"kettle"},{"left":"терка","right":"grater"},{"left":"дошка","right":"cutting board"},{"left":"ополоник","right":"ladle"},{"left":"мікрохвильовка","right":"microwave"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Recipe Instructions","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Наріж","овочі","дрібно","для","салату","на","кухонному","столі"],"answer":"Наріж овочі дрібно для салату на кухонному столі.","translation":"Cut vegetables finely for salad on the kitchen table."},{"words":["Вари","суп","двадцять","хвилин","на","повільному","вогні","сьогодні"],"answer":"Вари суп двадцять хвилин на повільному вогні сьогодні.","translation":"Cook soup for twenty minutes on slow heat today."},{"words":["Смаж","цибулю","до","золотистого","кольору","на","сковороді","обережно"],"answer":"Смаж цибулю до золотистого кольору на сковороді обережно.","translation":"Fry onion until golden on the pan carefully."},{"words":["Додай","сіль","та","перець","за","смаком","у","страву"],"answer":"Додай сіль та перець за смаком у страву.","translation":"Add salt and pepper to taste into the dish."},{"words":["Печи","хліб","одну","годину","у","гарячій","духовці","сьогодні"],"answer":"Печи хліб одну годину у гарячій духовці сьогодні.","translation":"Bake bread for one hour in hot oven today."},{"words":["Подавай","цю","страву","гарячою","зі","сметаною","на","столі"],"answer":"Подавай цю страву гарячою зі сметаною на столі.","translation":"Serve this dish hot with sour cream at table."},{"words":["Мішай","постійно","щоб","страва","не","пригоріла","на","плиті"],"answer":"Мішай постійно, щоб страва не пригоріла на плиті.","translation":"Stir constantly so the dish doesn't burn on stove."},{"words":["Вимий","всі","овочі","холодною","водою","перед","приготуванням","їжі"],"answer":"Вимий всі овочі холодною водою перед приготуванням їжі.","translation":"Wash all vegetables with cold water before cooking food."},{"words":["Смаж","м'ясо","на","великій","сковороді","п'ятнадцять","хвилин","сьогодні"],"answer":"Смаж м'ясо на великій сковороді п'ятнадцять хвилин сьогодні.","translation":"Fry meat on big pan for fifteen minutes today."},{"words":["Очисти","всю","картоплю","та","поклади","її","в","каструлю"],"answer":"Очисти всю картоплю та поклади її в каструлю.","translation":"Peel all potatoes and put them in the pot."},{"words":["Натри","свіжу","моркву","на","великій","терці","для","салату"],"answer":"Натри свіжу моркву на великій терці для салату.","translation":"Grate fresh carrot on the big grater for salad."},{"words":["Додай","улюблені","спеції","та","трави","у","готову","страву"],"answer":"Додай улюблені спеції та трави у готову страву.","translation":"Add favorite spices and herbs into the ready dish."}]}},{"id":"activity-3","type":"quiz","title":"Cooking Knowledge","data":{"type":"quiz","questions":[{"question":"«Варити» means:","options":["To boil, cook","To buy","To sell","To wash"],"correctIndex":0,"explanation":""},{"question":"«Сковорода» is:","options":["Frying pan","Pot","Oven","Kettle"],"correctIndex":0,"explanation":""},{"question":"«Солодкий» is:","options":["Sweet","Salty","Sour","Bitter"],"correctIndex":0,"explanation":""},{"question":"«Сніданок» is:","options":["Breakfast","Lunch","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"«Нарізати» means:","options":["To cut, chop","To boil","To bake","To eat"],"correctIndex":0,"explanation":""},{"question":"«Духовка» is:","options":["Oven","Microwave","Refrigerator","Dishwasher"],"correctIndex":0,"explanation":""},{"question":"«Гострий» (for food) means:","options":["Spicy","Sweet","Sour","Sharp (angle)"],"correctIndex":0,"explanation":""},{"question":"«Мішати» means:","options":["To mix, stir","To wash","To cut","To bake"],"correctIndex":0,"explanation":""},{"question":"Which meal is lunch?","options":["Обід","Сніданок","Вечеря","Перекус"],"correctIndex":0,"explanation":""},{"question":"«Холодильник» keeps food:","options":["Cold","Hot","Frozen","Dry"],"correctIndex":0,"explanation":""},{"question":"«Пекти» is for:","options":["Baking bread, cakes","Frying eggs","Boiling soup","Cutting vegetables"],"correctIndex":0,"explanation":""},{"question":"«Соковитий» means:","options":["Juicy","Dry","Hard","Soft"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Kitchen Facts","data":{"type":"true-false","statements":[{"statement":"«Варити» means to fry.","isTrue":false,"explanation":""},{"statement":"«Сковорода» is used for frying.","isTrue":true,"explanation":""},{"statement":"«Солоний» means sweet.","isTrue":false,"explanation":""},{"statement":"«Обід» is dinner.","isTrue":false,"explanation":""},{"statement":"«Духовка» is an oven.","isTrue":true,"explanation":""},{"statement":"«Кислий» means sour.","isTrue":true,"explanation":""},{"statement":"«Чайник» boils water.","isTrue":true,"explanation":""},{"statement":"«Перекус» is the main meal.","isTrue":false,"explanation":""},{"statement":"«Нарізати» means to mix.","isTrue":false,"explanation":""},{"statement":"«Гіркий» means bitter.","isTrue":true,"explanation":""},{"statement":"«Тушкувати» means to stew.","isTrue":true,"explanation":""},{"statement":"«Виделка» is a spoon.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Kitchen Categories","data":{"type":"group-sort","groups":[{"id":"appliances","name":"Appliances","items":["духовка","холодильник","мікрохвильовка"]},{"id":"utensils","name":"Utensils","items":["ніж","ложка","виделка"]},{"id":"cooking-methods","name":"Cooking Methods","items":["варити","смажити","пекти"]},{"id":"tastes","name":"Tastes","items":["солодкий","кислий","гострий"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Cooking Verbs","data":{"type":"fill-blank","items":[{"prompt":"Мама ___ борщ на плиті. (cooks)","answer":"варить"},{"prompt":"Тато ___ м'ясо на сковороді. (fries)","answer":"смажить"},{"prompt":"Бабуся ___ хліб у духовці. (bakes)","answer":"пече"},{"prompt":"Я ___ овочі на салат. (cut)","answer":"нарізаю"},{"prompt":"Ти ___ суп ложкою? (stir)","answer":"мішаєш"},{"prompt":"Вона ___ м'ясо з овочами. (stews)","answer":"тушкує"},{"prompt":"Ми ___ вечерю разом. (prepare)","answer":"готуємо"},{"prompt":"Він ___ воду для чаю. (boils)","answer":"варить"},{"prompt":"Я ___ сіль у суп. (add)","answer":"додаю"},{"prompt":"Вона ___ салат олією. (dresses)","answer":"заправляє"},{"prompt":"Мама ___ страву гарячою. (serves)","answer":"подає"},{"prompt":"Ти ___ картоплю ножем? (peel)","answer":"чистиш"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Cooking Tool","data":{"type":"select","items":[{"question":"Чим ріжуть хліб?","options":[{"text":"ложкою","correct":false},{"text":"ножем","correct":true},{"text":"виделкою","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де смажать м'ясо?","options":[{"text":"на сковороді","correct":true},{"text":"у чайнику","correct":false},{"text":"на тарілці","correct":false},{"text":"у склянці","correct":false}]},{"question":"Де печуть пиріг?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":true},{"text":"у холодильнику","correct":false},{"text":"на столі","correct":false}]},{"question":"Чим їдять суп?","options":[{"text":"виделкою","correct":false},{"text":"ложкою","correct":true},{"text":"ножем","correct":false},{"text":"паличками","correct":false}]},{"question":"Де варять воду для чаю?","options":[{"text":"у духовці","correct":false},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":true},{"text":"у мікрохвильовці","correct":false}]},{"question":"Де зберігають молоко?","options":[{"text":"на плиті","correct":false},{"text":"у холодильнику","correct":true},{"text":"на столі","correct":false},{"text":"у шафі","correct":false}]},{"question":"Чим натирають моркву?","options":[{"text":"на терці","correct":true},{"text":"ножем","correct":false},{"text":"ложкою","correct":false},{"text":"виделкою","correct":false}]},{"question":"Де варять борщ?","options":[{"text":"у каструлі","correct":true},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":false},{"text":"у духовці","correct":false}]},{"question":"Чим наливають суп?","options":[{"text":"виделкою","correct":false},{"text":"ополоником","correct":true},{"text":"ножем","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де ріжуть овочі?","options":[{"text":"на тарілці","correct":false},{"text":"на дошці","correct":true},{"text":"у каструлі","correct":false},{"text":"на сковороді","correct":false}]},{"question":"Де розігрівають їжу швидко?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":false},{"text":"у мікрохвильовці","correct":true},{"text":"на балконі","correct":false}]},{"question":"Чим їдять м'ясо?","options":[{"text":"ложкою","correct":false},{"text":"виделкою","correct":true},{"text":"паличками","correct":false},{"text":"руками","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Food and Taste","data":{"type":"quiz","questions":[{"question":"«Солодкий торт» means:","options":["Sweet cake","Salty cake","Sour cake","Spicy cake"],"correctIndex":0,"explanation":""},{"question":"Що є «кислим»?","options":["Лимон","Цукор","Сіль","Перець"],"correctIndex":0,"explanation":""},{"question":"«Гострий соус» means:","options":["Spicy sauce","Sweet sauce","Salty sauce","Bitter sauce"],"correctIndex":0,"explanation":""},{"question":"Який смак у кави без цукру?","options":["Гіркий","Солодкий","Кислий","Солоний"],"correctIndex":0,"explanation":""},{"question":"«М'яке м'ясо» означає:","options":["Tender meat","Hard meat","Dry meat","Raw meat"],"correctIndex":0,"explanation":""},{"question":"Що є «соковитим»?","options":["Стейк","Сухар","Крекер","Чіпси"],"correctIndex":0,"explanation":""},{"question":"«Хрустке печиво» means:","options":["Crispy cookie","Soft cookie","Wet cookie","Burnt cookie"],"correctIndex":0,"explanation":""},{"question":"Коли їдять «сніданок»?","options":["Вранці","Вдень","Ввечері","Вночі"],"correctIndex":0,"explanation":""},{"question":"«Обід» — це:","options":["Lunch","Breakfast","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"Що таке «перекус»?","options":["Snack","Main meal","Breakfast","Feast"],"correctIndex":0,"explanation":""},{"question":"«Рецепт» — це:","options":["Recipe","Restaurant","Receipt","Refuse"],"correctIndex":0,"explanation":""},{"question":"«Інгредієнт» — це:","options":["Ingredient","Integration","Intelligence","Intention"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Kitchen Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Вари воду в ___. (kettle)","answer":"чайнику"},{"prompt":"Постав м'ясо в ___. (oven)","answer":"духовку"},{"prompt":"Візьми молоко з ___. (refrigerator)","answer":"холодильника"},{"prompt":"___ овочі на сковороді. (Fry)","answer":"Смаж"},{"prompt":"___ суп 30 хвилин. (Boil/Cook)","answer":"Вари"},{"prompt":"___ картоплю дрібно. (Cut)","answer":"Наріж"},{"prompt":"Суп занадто ___. (salty)","answer":"солоний"},{"prompt":"Торт дуже ___. (sweet)","answer":"солодкий"},{"prompt":"Що на ___? (breakfast)","answer":"сніданок"},{"prompt":"___ готова! (Dinner)","answer":"Вечеря"},{"prompt":"Ріж хліб ___. (with knife)","answer":"ножем"},{"prompt":"Їж суп ___. (with spoon)","answer":"ложкою"}]}},{"id":"activity-1","type":"match-up","title":"Kitchen Items","data":{"type":"match-up","pairs":[{"left":"каструля","right":"pot"},{"left":"сковорода","right":"frying pan"},{"left":"духовка","right":"oven"},{"left":"холодильник","right":"refrigerator"},{"left":"ніж","right":"knife"},{"left":"виделка","right":"fork"},{"left":"ложка","right":"spoon"},{"left":"чайник","right":"kettle"},{"left":"терка","right":"grater"},{"left":"дошка","right":"cutting board"},{"left":"ополоник","right":"ladle"},{"left":"мікрохвильовка","right":"microwave"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Recipe Instructions","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Наріж","овочі","дрібно","для","салату","на","кухонному","столі"],"answer":"Наріж овочі дрібно для салату на кухонному столі.","translation":"Cut vegetables finely for salad on the kitchen table."},{"words":["Вари","суп","двадцять","хвилин","на","повільному","вогні","сьогодні"],"answer":"Вари суп двадцять хвилин на повільному вогні сьогодні.","translation":"Cook soup for twenty minutes on slow heat today."},{"words":["Смаж","цибулю","до","золотистого","кольору","на","сковороді","обережно"],"answer":"Смаж цибулю до золотистого кольору на сковороді обережно.","translation":"Fry onion until golden on the pan carefully."},{"words":["Додай","сіль","та","перець","за","смаком","у","страву"],"answer":"Додай сіль та перець за смаком у страву.","translation":"Add salt and pepper to taste into the dish."},{"words":["Печи","хліб","одну","годину","у","гарячій","духовці","сьогодні"],"answer":"Печи хліб одну годину у гарячій духовці сьогодні.","translation":"Bake bread for one hour in hot oven today."},{"words":["Подавай","цю","страву","гарячою","зі","сметаною","на","столі"],"answer":"Подавай цю страву гарячою зі сметаною на столі.","translation":"Serve this dish hot with sour cream at table."},{"words":["Мішай","постійно","щоб","страва","не","пригоріла","на","плиті"],"answer":"Мішай постійно, щоб страва не пригоріла на плиті.","translation":"Stir constantly so the dish doesn't burn on stove."},{"words":["Вимий","всі","овочі","холодною","водою","перед","приготуванням","їжі"],"answer":"Вимий всі овочі холодною водою перед приготуванням їжі.","translation":"Wash all vegetables with cold water before cooking food."},{"words":["Смаж","м'ясо","на","великій","сковороді","п'ятнадцять","хвилин","сьогодні"],"answer":"Смаж м'ясо на великій сковороді п'ятнадцять хвилин сьогодні.","translation":"Fry meat on big pan for fifteen minutes today."},{"words":["Очисти","всю","картоплю","та","поклади","її","в","каструлю"],"answer":"Очисти всю картоплю та поклади її в каструлю.","translation":"Peel all potatoes and put them in the pot."},{"words":["Натри","свіжу","моркву","на","великій","терці","для","салату"],"answer":"Натри свіжу моркву на великій терці для салату.","translation":"Grate fresh carrot on the big grater for salad."},{"words":["Додай","улюблені","спеції","та","трави","у","готову","страву"],"answer":"Додай улюблені спеції та трави у готову страву.","translation":"Add favorite spices and herbs into the ready dish."}]}},{"id":"activity-3","type":"quiz","title":"Cooking Knowledge","data":{"type":"quiz","questions":[{"question":"«Варити» means:","options":["To boil, cook","To buy","To sell","To wash"],"correctIndex":0,"explanation":""},{"question":"«Сковорода» is:","options":["Frying pan","Pot","Oven","Kettle"],"correctIndex":0,"explanation":""},{"question":"«Солодкий» is:","options":["Sweet","Salty","Sour","Bitter"],"correctIndex":0,"explanation":""},{"question":"«Сніданок» is:","options":["Breakfast","Lunch","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"«Нарізати» means:","options":["To cut, chop","To boil","To bake","To eat"],"correctIndex":0,"explanation":""},{"question":"«Духовка» is:","options":["Oven","Microwave","Refrigerator","Dishwasher"],"correctIndex":0,"explanation":""},{"question":"«Гострий» (for food) means:","options":["Spicy","Sweet","Sour","Sharp (angle)"],"correctIndex":0,"explanation":""},{"question":"«Мішати» means:","options":["To mix, stir","To wash","To cut","To bake"],"correctIndex":0,"explanation":""},{"question":"Which meal is lunch?","options":["Обід","Сніданок","Вечеря","Перекус"],"correctIndex":0,"explanation":""},{"question":"«Холодильник» keeps food:","options":["Cold","Hot","Frozen","Dry"],"correctIndex":0,"explanation":""},{"question":"«Пекти» is for:","options":["Baking bread, cakes","Frying eggs","Boiling soup","Cutting vegetables"],"correctIndex":0,"explanation":""},{"question":"«Соковитий» means:","options":["Juicy","Dry","Hard","Soft"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Kitchen Facts","data":{"type":"true-false","statements":[{"statement":"«Варити» means to fry.","isTrue":false,"explanation":""},{"statement":"«Сковорода» is used for frying.","isTrue":true,"explanation":""},{"statement":"«Солоний» means sweet.","isTrue":false,"explanation":""},{"statement":"«Обід» is dinner.","isTrue":false,"explanation":""},{"statement":"«Духовка» is an oven.","isTrue":true,"explanation":""},{"statement":"«Кислий» means sour.","isTrue":true,"explanation":""},{"statement":"«Чайник» boils water.","isTrue":true,"explanation":""},{"statement":"«Перекус» is the main meal.","isTrue":false,"explanation":""},{"statement":"«Нарізати» means to mix.","isTrue":false,"explanation":""},{"statement":"«Гіркий» means bitter.","isTrue":true,"explanation":""},{"statement":"«Тушкувати» means to stew.","isTrue":true,"explanation":""},{"statement":"«Виделка» is a spoon.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Kitchen Categories","data":{"type":"group-sort","groups":[{"id":"appliances","name":"Appliances","items":["духовка","холодильник","мікрохвильовка"]},{"id":"utensils","name":"Utensils","items":["ніж","ложка","виделка"]},{"id":"cooking-methods","name":"Cooking Methods","items":["варити","смажити","пекти"]},{"id":"tastes","name":"Tastes","items":["солодкий","кислий","гострий"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Cooking Verbs","data":{"type":"fill-blank","items":[{"prompt":"Мама ___ борщ на плиті. (cooks)","answer":"варить"},{"prompt":"Тато ___ м'ясо на сковороді. (fries)","answer":"смажить"},{"prompt":"Бабуся ___ хліб у духовці. (bakes)","answer":"пече"},{"prompt":"Я ___ овочі на салат. (cut)","answer":"нарізаю"},{"prompt":"Ти ___ суп ложкою? (stir)","answer":"мішаєш"},{"prompt":"Вона ___ м'ясо з овочами. (stews)","answer":"тушкує"},{"prompt":"Ми ___ вечерю разом. (prepare)","answer":"готуємо"},{"prompt":"Він ___ воду для чаю. (boils)","answer":"варить"},{"prompt":"Я ___ сіль у суп. (add)","answer":"додаю"},{"prompt":"Вона ___ салат олією. (dresses)","answer":"заправляє"},{"prompt":"Мама ___ страву гарячою. (serves)","answer":"подає"},{"prompt":"Ти ___ картоплю ножем? (peel)","answer":"чистиш"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Cooking Tool","data":{"type":"select","items":[{"question":"Чим ріжуть хліб?","options":[{"text":"ложкою","correct":false},{"text":"ножем","correct":true},{"text":"виделкою","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де смажать м'ясо?","options":[{"text":"на сковороді","correct":true},{"text":"у чайнику","correct":false},{"text":"на тарілці","correct":false},{"text":"у склянці","correct":false}]},{"question":"Де печуть пиріг?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":true},{"text":"у холодильнику","correct":false},{"text":"на столі","correct":false}]},{"question":"Чим їдять суп?","options":[{"text":"виделкою","correct":false},{"text":"ложкою","correct":true},{"text":"ножем","correct":false},{"text":"паличками","correct":false}]},{"question":"Де варять воду для чаю?","options":[{"text":"у духовці","correct":false},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":true},{"text":"у мікрохвильовці","correct":false}]},{"question":"Де зберігають молоко?","options":[{"text":"на плиті","correct":false},{"text":"у холодильнику","correct":true},{"text":"на столі","correct":false},{"text":"у шафі","correct":false}]},{"question":"Чим натирають моркву?","options":[{"text":"на терці","correct":true},{"text":"ножем","correct":false},{"text":"ложкою","correct":false},{"text":"виделкою","correct":false}]},{"question":"Де варять борщ?","options":[{"text":"у каструлі","correct":true},{"text":"на сковороді","correct":false},{"text":"у чайнику","correct":false},{"text":"у духовці","correct":false}]},{"question":"Чим наливають суп?","options":[{"text":"виделкою","correct":false},{"text":"ополоником","correct":true},{"text":"ножем","correct":false},{"text":"тарілкою","correct":false}]},{"question":"Де ріжуть овочі?","options":[{"text":"на тарілці","correct":false},{"text":"на дошці","correct":true},{"text":"у каструлі","correct":false},{"text":"на сковороді","correct":false}]},{"question":"Де розігрівають їжу швидко?","options":[{"text":"на плиті","correct":false},{"text":"у духовці","correct":false},{"text":"у мікрохвильовці","correct":true},{"text":"на балконі","correct":false}]},{"question":"Чим їдять м'ясо?","options":[{"text":"ложкою","correct":false},{"text":"виделкою","correct":true},{"text":"паличками","correct":false},{"text":"руками","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Food and Cooking Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["налий","|","воду","|","в","|","чайник","|","будь","|","ласка"],"answer":"Налий воду в чайник, будь ласка.","translation":"Pour water into the kettle, please."},{"words":["вона","|","готує","|","вечерю","|","на","|","кухні"],"answer":"Вона готує вечерю на кухні.","translation":"She is cooking dinner in the kitchen."},{"words":["суп","|","занадто","|","солоний","|","для","|","мене"],"answer":"Суп занадто солоний для мене.","translation":"The soup is too salty for me."},{"words":["я","|","люблю","|","смажену","|","картоплю","|","з","|","м'ясом"],"answer":"Я люблю смажену картоплю з м'ясом.","translation":"I like fried potatoes with meat."},{"words":["поклади","|","овочі","|","у","|","холодильник"],"answer":"Поклади овочі у холодильник.","translation":"Put the vegetables in the refrigerator."},{"words":["торт","|","дуже","|","солодкий","|","і","|","смачний"],"answer":"Торт дуже солодкий і смачний.","translation":"The cake is very sweet and tasty."},{"words":["вона","|","їсть","|","виделкою","|","і","|","ножем"],"answer":"Вона їсть виделкою і ножем.","translation":"She eats with a fork and knife."},{"words":["розігрій","|","їжу","|","в","|","мікрохвильовці"],"answer":"Розігрій їжу в мікрохвильовці.","translation":"Heat up the food in the microwave."},{"words":["кава","|","занадто","|","гірка","|","без","|","цукру"],"answer":"Кава занадто гірка без цукру.","translation":"Coffee is too bitter without sugar."},{"words":["він","|","смажить","|","м'ясо","|","на","|","сковороді"],"answer":"Він смажить м'ясо на сковороді.","translation":"He is frying meat in the pan."},{"words":["помий","|","посуд","|","після","|","вечері","|","будь","|","ласка"],"answer":"Помий посуд після вечері, будь ласка.","translation":"Wash the dishes after dinner, please."},{"words":["цей","|","лимон","|","дуже","|","кислий"],"answer":"Цей лимон дуже кислий.","translation":"This lemon is very sour."}]}},{"id":"activity-9","type":"quiz","title":"Food and Taste","data":{"type":"quiz","questions":[{"question":"«Солодкий торт» means:","options":["Sweet cake","Salty cake","Sour cake","Spicy cake"],"correctIndex":0,"explanation":""},{"question":"Що є «кислим»?","options":["Лимон","Цукор","Сіль","Перець"],"correctIndex":0,"explanation":""},{"question":"«Гострий соус» means:","options":["Spicy sauce","Sweet sauce","Salty sauce","Bitter sauce"],"correctIndex":0,"explanation":""},{"question":"Який смак у кави без цукру?","options":["Гіркий","Солодкий","Кислий","Солоний"],"correctIndex":0,"explanation":""},{"question":"«М'яке м'ясо» означає:","options":["Tender meat","Hard meat","Dry meat","Raw meat"],"correctIndex":0,"explanation":""},{"question":"Що є «соковитим»?","options":["Стейк","Сухар","Крекер","Чіпси"],"correctIndex":0,"explanation":""},{"question":"«Хрустке печиво» means:","options":["Crispy cookie","Soft cookie","Wet cookie","Burnt cookie"],"correctIndex":0,"explanation":""},{"question":"Коли їдять «сніданок»?","options":["Вранці","Вдень","Ввечері","Вночі"],"correctIndex":0,"explanation":""},{"question":"«Обід» — це:","options":["Lunch","Breakfast","Dinner","Snack"],"correctIndex":0,"explanation":""},{"question":"Що таке «перекус»?","options":["Snack","Main meal","Breakfast","Feast"],"correctIndex":0,"explanation":""},{"question":"«Рецепт» — це:","options":["Recipe","Restaurant","Receipt","Refuse"],"correctIndex":0,"explanation":""},{"question":"«Інгредієнт» — це:","options":["Ingredient","Integration","Intelligence","Intention"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"каструля","translit":"","en":"pot","note":""},{"uk":"сковорода","translit":"","en":"frying pan","note":""},{"uk":"духовка","translit":"","en":"oven","note":""},{"uk":"мікрохвильовка","translit":"","en":"microwave","note":""},{"uk":"холодильник","translit":"","en":"refrigerator","note":""},{"uk":"чайник","translit":"","en":"kettle","note":""},{"uk":"ніж","translit":"","en":"knife","note":""},{"uk":"виделка","translit":"","en":"fork","note":""},{"uk":"ложка","translit":"","en":"spoon","note":""},{"uk":"нарізати","translit":"","en":"to cut, chop","note":""},{"uk":"смажити","translit":"","en":"to fry","note":""},{"uk":"варити","translit":"","en":"to boil, cook","note":""},{"uk":"пекти","translit":"","en":"to bake","note":""},{"uk":"тушкувати","translit":"","en":"to stew","note":""},{"uk":"мішати","translit":"","en":"to mix, stir","note":""},{"uk":"солодкий","translit":"","en":"sweet","note":""},{"uk":"солоний","translit":"","en":"salty","note":""},{"uk":"кислий","translit":"","en":"sour","note":""},{"uk":"гіркий","translit":"","en":"bitter","note":""},{"uk":"гострий","translit":"","en":"spicy","note":""},{"uk":"хрусткий","translit":"","en":"crispy","note":""},{"uk":"соковитий","translit":"","en":"juicy","note":""},{"uk":"сніданок","translit":"","en":"breakfast","note":""},{"uk":"обід","translit":"","en":"lunch","note":""},{"uk":"вечеря","translit":"","en":"dinner","note":""},{"uk":"перекус","translit":"","en":"snack","note":""},{"uk":"рецепт","translit":"","en":"recipe","note":""},{"uk":"інгредієнт","translit":"","en":"ingredient","note":""},{"uk":"страва","translit":"","en":"dish, meal","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2449,6 +2497,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

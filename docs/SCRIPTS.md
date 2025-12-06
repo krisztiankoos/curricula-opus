@@ -69,7 +69,7 @@ npx ts-node scripts/module-audit.ts l2-uk-en [module_number]
 | Document | Purpose |
 |----------|---------|
 | `docs/l2-uk-en/claude-review-prompt.md` | **Review prompts for Claude** - Use these to fix audit issues |
-| `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` | Quality standards by level |
+| `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` | Quality standards by level (consolidated) |
 | `docs/MARKDOWN-FORMAT.md` | Markdown syntax specification |
 
 ---
@@ -114,7 +114,7 @@ npm run generate l2-uk-en 168       # Generate single module
 
 ### module-audit.ts
 
-**Purpose:** Comprehensive module quality checker. Validates against MODULE-RICHNESS-GUIDELINES.md requirements.
+**Purpose:** Comprehensive module quality checker. Validates against MODULE-RICHNESS-GUIDELINES-v2.md requirements.
 
 **Checks:**
 - Frontmatter validity (level, title, tags)

@@ -1,10 +1,13 @@
 # Activity Guidelines
 
+> ⚠️ **DEPRECATED**: This document has been consolidated into `MODULE-RICHNESS-GUIDELINES-v2.md`.
+> Please use that file instead. This file is kept for historical reference only.
+
 ## Overview
 
 This document provides **activity templates and examples** for each CEFR level. Use these as reference when creating or reviewing module activities.
 
-**For activity COUNTS and REQUIREMENTS:** See `MODULE-RICHNESS-GUIDELINES.md`
+**For activity COUNTS and REQUIREMENTS:** See `MODULE-RICHNESS-GUIDELINES-v2.md`
 
 ---
 

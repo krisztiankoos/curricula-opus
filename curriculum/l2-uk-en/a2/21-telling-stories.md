@@ -570,27 +570,57 @@ Every good story needs structure! "First I woke up... then I had breakfast... su
     - [ ] Спочатку
     - [ ] Пізніше
 
-## order: Story Sequence
+## unjumble: Story Sentences
 
-> Arrange these connectors in the correct order for telling a story.
+> Rearrange the words to form correct story sentences with connectors.
 
-1. одного разу → спочатку → потім → нарешті
-   > [!answer] Story opening → first event → middle → conclusion
+1. одного | разу | я | зустрів | старого | друга
+   > [!answer] Одного разу я зустрів старого друга.
+   > (Once I met an old friend.)
 
-2. раніше → тоді → згодом → врешті-решт
-   > [!answer] Earlier → at that time → later → in the end
+2. спочатку | ми | говорили | про | погоду
+   > [!answer] Спочатку ми говорили про погоду.
+   > (At first we talked about the weather.)
 
-3. колись → після цього → пізніше → нарешті
-   > [!answer] Once → after this → later → finally
+3. потім | він | розповів | цікаву | історію
+   > [!answer] Потім він розповів цікаву історію.
+   > (Then he told an interesting story.)
 
-4. давно → спочатку → раптом → нарешті
-   > [!answer] Long ago → at first → suddenly → finally
+4. раптом | почався | сильний | дощ
+   > [!answer] Раптом почався сильний дощ.
+   > (Suddenly heavy rain started.)
 
-5. недавно → потім → згодом → врешті-решт
-   > [!answer] Recently → then → later → in the end
+5. тим | часом | ми | сховалися | в | кав'ярні
+   > [!answer] Тим часом ми сховалися в кав'ярні.
+   > (Meanwhile we hid in a café.)
 
-6. якось → після цього → тим часом → нарешті
-   > [!answer] Somehow → after this → meanwhile → finally
+6. пізніше | дощ | закінчився | і | вийшло | сонце
+   > [!answer] Пізніше дощ закінчився і вийшло сонце.
+   > (Later the rain ended and the sun came out.)
+
+7. нарешті | ми | попрощалися | і | пішли | додому
+   > [!answer] Нарешті ми попрощалися і пішли додому.
+   > (Finally we said goodbye and went home.)
+
+8. давно | жив | старий | чоловік | в | селі
+   > [!answer] Давно жив старий чоловік в селі.
+   > (Long ago an old man lived in a village.)
+
+9. колись | він | мав | троє | синів
+   > [!answer] Колись він мав троє синів.
+   > (Once he had three sons.)
+
+10. врешті-решт | вони | знайшли | щастя
+    > [!answer] Врешті-решт вони знайшли щастя.
+    > (In the end they found happiness.)
+
+11. несподівано | він | отримав | листа | з | далекої | країни
+    > [!answer] Несподівано він отримав листа з далекої країни.
+    > (Unexpectedly he received a letter from a distant country.)
+
+12. після | цього | все | змінилося
+    > [!answer] Після цього все змінилося.
+    > (After this everything changed.)
 
 ## quiz: Story Structure Mastery
 

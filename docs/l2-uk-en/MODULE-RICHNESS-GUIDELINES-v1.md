@@ -1,5 +1,8 @@
 # Module Richness Guidelines
 
+> ⚠️ **DEPRECATED**: This document has been superseded by `MODULE-RICHNESS-GUIDELINES-v2.md` which consolidates
+> this file and `ACTIVITY-GUIDELINES.md` into a single document. Please use v2 instead.
+
 ## Philosophy
 
 > **The curriculum is the goal. Vibe is just a tool.**
@@ -413,35 +416,6 @@ Where possible, create:
 | Cooking | Ukrainian cooking channels | Vocabulary, culture |
 | Travel | Ukraїner, travel vloggers | Geography, dialects |
 | Language | Ukrainian teachers | Grammar explanations |
-
-### Permission Request Template
-
-```
-Subject: Content Usage Request - Educational Curriculum
-
-Dear [Channel Name],
-
-I am developing an open educational curriculum for Ukrainian language learners. I would like to request permission to include clips from your video "[Video Title]" in our learning materials.
-
-Proposed usage:
-- Educational, non-commercial curriculum
-- Short clip (approximately X minutes)
-- Full attribution and link to original
-- Used in [Module/Topic description]
-
-Benefits:
-- Exposure to language learners worldwide
-- Proper attribution driving traffic to your channel
-- Supporting Ukrainian language education
-
-Please let me know if you would grant permission for this use, and any conditions you may have.
-
-Thank you for your consideration.
-
-Best regards,
-[Name]
-[Project]
-```
 
 ---
 

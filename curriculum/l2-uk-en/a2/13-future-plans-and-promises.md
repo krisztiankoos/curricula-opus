@@ -17,7 +17,15 @@ grammar:
 
 # Вступ
 
-"I'll do it!" vs "I'll be doing it" — these mean different things! In Ukrainian, the future tense also splits by aspect. Perfective future expresses what WILL BE COMPLETED, while imperfective future focuses on the PROCESS. Master this, and your Ukrainian will sound much more natural!
+"I promise" might be the most important phrase in any relationship. But in Ukrainian, the grammar of your promise reveals your commitment level.
+
+Compare: *Я буду робити* (I'll be doing...) vs *Я зроблю* (I'll do it!). The first sounds wishy-washy — "yeah, I'll work on it." The second sounds decisive — "consider it done." Same verb, different aspect, completely different social signal.
+
+This grammatical distinction shapes how Ukrainians make plans, schedule appointments, and keep promises. By the end of this module, you'll know exactly which form to use when you want to sound reliable — or when you need to hedge your bets!
+
+> 💡 **Did You Know?**
+>
+> Linguists call this the "commitment gradient." Studies show that speakers across Slavic languages perceive perfective promises (*Зроблю!*) as more binding than imperfective ones (*Буду робити*). Grammar isn't just grammar — it's social contract!
 
 ---
 
@@ -28,8 +36,9 @@ grammar:
 | **Imperfective Future** | буду + infinitive | Process, duration |
 | **Perfective Future** | Conjugated perfective | Result, completion |
 
-> [!tip] 💡 Did You Know?
-> Making a promise? Use perfective! *Я зроблю це!* (I'll do it!) sounds like a commitment. *Я буду робити* sounds more like "I'll be working on it..."
+> ⚡ **Pro Tip: The Commitment Test**
+>
+> Making a promise? Use perfective! *Я зроблю це!* (I'll do it!) sounds like a commitment. *Я буду робити* sounds more like "I'll be working on it..." When you want to be believed, choose perfective.
 
 ---
 
@@ -49,6 +58,16 @@ Formation: **буду/будеш/буде/будемо/будете/будуть
 **Use for:**
 - Ongoing future action: *Я буду читати увечері.* (I'll be reading in the evening.)
 - Duration: *Він буде працювати весь день.* (He'll be working all day.)
+- Uncertain/vague plans: *Ну, я буду думати про це...* (Well, I'll think about it...)
+
+**🎭 Невизначені плани (Vague Plans)**
+
+— Що ти **будеш робити** у вихідні?
+— Не знаю... Мабуть, **буду відпочивати** вдома.
+— А може в кіно підемо?
+— Ну, **подивимось**. Я **подумаю** і скажу завтра.
+
+*Notice: imperfective "буду робити/відпочивати" for uncertain plans, but perfective "подивимось/подумаю/скажу" when committing to specific actions.*
 
 ---
 
@@ -70,8 +89,23 @@ Perfective verbs conjugate directly in future tense (no "буду"):
 - Promises: *Я зроблю це!* (I'll do it!)
 - Single events: *Він напише їй листа.* (He'll write her a letter.)
 
-> [!example] 🎬 Pop Culture Moment
-> In Ukrainian films, promises sound dramatic with perfective: *Я знайду тебе!* (I will find you!)
+> 🎬 **Pop Culture Moment: "Taken" in Ukrainian**
+>
+> In Ukrainian films, promises sound dramatic with perfective: *Я знайду тебе!* (I will find you!) — Liam Neeson's famous line in Ukrainian is pure perfective: not "I'll be looking for you" but "I WILL find you!" Maximum commitment, zero doubt.
+
+**🎭 Робочі обіцянки (Work Promises)**
+
+— Коли **зробиш** звіт?
+— **Закінчу** до п'ятниці, обіцяю!
+— А презентацію?
+— **Підготую** на вихідних. В понеділок **покажу**.
+— Добре. Я тобі **відправлю** дані сьогодні.
+
+*Every verb here is perfective — it's a contract of deliverables!*
+
+> 🌍 **Real World: Ukrainian Business Culture**
+>
+> In Ukrainian business settings, using perfective future (*Зроблю, надішлю, підготую*) signals professionalism and reliability. Imperfective (*Буду робити, буду готувати*) can sound evasive or non-committal. Choose your aspect wisely in important emails!
 
 ---
 
@@ -101,8 +135,9 @@ Perfective verbs conjugate directly in future tense (no "буду"):
 | дати | дам | даси | дасть | дамо | дадуть |
 | піти | піду | підеш | піде | підемо | підуть |
 
-> [!tip] 🌍 Real World
-> Making appointments: *Я прийду о третій* (I'll come at 3) — perfective for definite arrival!
+> 🎮 **Gamer's Corner: Quest Objectives**
+>
+> Video game quest objectives are almost always perfective: *Знайдеш артефакт* (You will find the artifact), *Переможеш боса* (You will defeat the boss), *Врятуєш принцесу* (You will save the princess). Games love perfective because they're about completing goals!
 
 ---
 
@@ -128,6 +163,51 @@ Some perfective verbs have irregular conjugations:
 | **скоро** (soon) | **довго** (for a long time) |
 | **о третій годині** (at 3 o'clock) | **весь тиждень** (all week) |
 | **через годину** (in an hour) | **завжди** (always) |
+
+---
+
+# Choosing the Right Future: Decision Guide
+
+## Question 1: Is it a promise or commitment?
+
+| If... | Use | Example |
+|-------|-----|---------|
+| Making a firm promise | Perfective | **Зроблю!** (I'll do it!) |
+| Just mentioning activity | Imperfective | **Буду робити** (I'll be working on it) |
+
+## Question 2: Are you specifying completion?
+
+| If... | Use | Example |
+|-------|-----|---------|
+| Will finish/complete | Perfective | **Прочитаю** книгу |
+| Will be engaged in | Imperfective | **Буду читати** увечері |
+
+## Question 3: Check the time expression
+
+| Time word suggests... | Aspect | Example |
+|----------------------|--------|---------|
+| Specific time (о третій) | Perfective | **Прийду** о третій |
+| Duration (весь день) | Imperfective | **Буду працювати** весь день |
+| Deadline (до п'ятниці) | Perfective | **Закінчу** до п'ятниці |
+| General period (цілий рік) | Imperfective | **Буду вчити** цілий рік |
+
+## Common Mistakes to Avoid
+
+**❌ Wrong:** Я буду прочитати книгу завтра.
+**✓ Right:** Я прочитаю книгу завтра.
+*Perfective doesn't use "буду" — it conjugates directly*
+
+**❌ Wrong:** Він зробить роботу весь день.
+**✓ Right:** Він буде робити роботу весь день.
+*Duration = imperfective*
+
+**❌ Wrong:** Вона прийде о третій годині кожного дня.
+**✓ Right:** Вона буде приходити о третій годині кожного дня.
+*Repeated future = imperfective*
+
+> 📜 **History Bite: Synthetic vs Analytic Future**
+>
+> Ukrainian perfective future (*зроблю*) is "synthetic" — one word does the job. Imperfective future (*буду робити*) is "analytic" — needs an auxiliary. Many world languages lost their synthetic future (English did!), but Ukrainian kept both systems, giving speakers more precision.
 
 ---
 
@@ -168,6 +248,20 @@ Some perfective verbs have irregular conjugations:
 | буде | /ˈbudɛ/ | he/she will be | verb | — | future auxiliary |
 | будемо | /ˈbudɛmo/ | we will be | verb | — | future auxiliary |
 | будуть | /ˈbudutʲ/ | they will be | verb | — | future auxiliary |
+| відпочивати | /widpotʃɪˈwatɪ/ | to rest (impf) | verb | — | |
+| подивимось | /podɪˈwɪmosʲ/ | we'll see (pf) | verb | — | pf future |
+| подумаю | /poduˈmaju/ | I will think (pf) | verb | — | pf future |
+| підготую | /pidɦoˈtuju/ | I will prepare (pf) | verb | — | pf future |
+| покажу | /pokaˈʒu/ | I will show (pf) | verb | — | pf future |
+| відправлю | /widˈprawlʲu/ | I will send (pf) | verb | — | pf future |
+| надішлю | /naˈdiʃlʲu/ | I will send (pf) | verb | — | pf future |
+| знайдеш | /znajˈdɛʃ/ | you will find (pf) | verb | — | pf future |
+| переможеш | /pɛrɛˈmɔʒɛʃ/ | you will defeat (pf) | verb | — | pf future |
+| врятуєш | /wrʲaˈtujɛʃ/ | you will save (pf) | verb | — | pf future |
+| встану | /wstaˈnu/ | I will get up (pf) | verb | — | pf future |
+| поснідаю | /posniˈdaju/ | I will have breakfast (pf) | verb | — | pf future |
+| поїду | /poˈjidu/ | I will go (by transport) (pf) | verb | — | pf future |
+| приготую | /prɪɦoˈtuju/ | I will prepare (pf) | verb | — | pf future |
 
 ---
 
@@ -544,16 +638,133 @@ Some perfective verbs have irregular conjugations:
     - [ ] будуть приймати
     > [!answer] приймуть (single definite decision)
 
-## order: Planning Tomorrow
+## error-correction: Correct the Future Aspect Error
 
-> Put these sentences in logical order to describe tomorrow's plans.
+> Find the wrong word in each sentence, then choose the correct form.
 
-1. Завтра я встану о сьомій годині ранку.
-2. Я поснідаю і випʼю каву з молоком.
-3. Потім я поїду на роботу автобусом.
-4. Я буду працювати в офісі до п'ятої.
-5. Після роботи я зайду в магазин.
-6. Увечері я приготую вечерю і відпочину.
+1. Я буду прочитати цю книгу завтра.
+   > [!error] прочитати
+   > [!answer] прочитаю
+   > [!options] буду прочитати | прочитаю | буду читати | читатиму
+   > [!explanation] Perfective future conjugates directly, no "буду"
+
+2. Він зробить домашнє завдання цілий вечір.
+   > [!error] зробить
+   > [!answer] буде робити
+   > [!options] зробить | буде робити | робитиме | зроблятиме
+   > [!explanation] Imperfective for duration with "цілий вечір"
+
+3. Вона прийде о третій годині кожного дня.
+   > [!error] прийде
+   > [!answer] буде приходити
+   > [!options] прийде | буде приходити | приходитиме | прийдуть
+   > [!explanation] Imperfective for repeated future actions
+
+4. Я буду написати тобі листа завтра.
+   > [!error] написати
+   > [!answer] напишу
+   > [!options] буду написати | напишу | буду писати | писатиму
+   > [!explanation] Perfective doesn't use "буду"
+
+5. Він буде подивитися цей фільм увечері.
+   > [!error] подивитися
+   > [!answer] подивиться
+   > [!options] буде подивитися | подивиться | буде дивитися | дивитиметься
+   > [!explanation] Perfective future = conjugated form, no "буду"
+
+6. Ми закінчимо працювати над проєктом весь місяць.
+   > [!error] закінчимо
+   > [!answer] будемо
+   > [!options] закінчимо | будемо | працюватимемо | закінчатимемо
+   > [!explanation] Imperfective for "весь місяць" duration
+
+7. Вона буду готувати вечерю сьогодні.
+   > [!error] буду
+   > [!answer] буде
+   > [!options] буду | буде | будуть | будемо
+   > [!explanation] Wrong auxiliary form: вона = буде, not буду
+
+8. Я зроблю цю роботу довго.
+   > [!error] зроблю
+   > [!answer] буду робити
+   > [!options] зроблю | буду робити | робитиму | зроблятиму
+   > [!explanation] Imperfective for duration with "довго"
+
+9. Вони будуть прийти о п'ятій годині.
+   > [!error] прийти
+   > [!answer] прийдуть
+   > [!options] будуть прийти | прийдуть | будуть приходити | приходитимуть
+   > [!explanation] Perfective doesn't use "будуть"
+
+10. Я буде телефонувати тобі завтра.
+    > [!error] буде
+    > [!answer] буду
+    > [!options] буде | буду | будуть | будемо
+    > [!explanation] Wrong auxiliary form: я = буду, not буде
+
+11. Він візьме цей підручник на весь семестр.
+    > [!error] візьме
+    > [!answer] буде брати
+    > [!options] візьме | буде брати | братиме | візьматиме
+    > [!explanation] Imperfective for "весь семестр" duration
+
+12. Студенти будуть здати цей екзамен завтра.
+    > [!error] здати
+    > [!answer] здадуть
+    > [!options] будуть здати | здадуть | будуть здавати | здаватимуть
+    > [!explanation] Perfective doesn't use "будуть"
+
+## unjumble: Planning Tomorrow
+
+> Reorder the words to form correct sentences about tomorrow's plans.
+
+1. Завтра / я / о / сьомій / годині / встану / рано / ранку
+   > [!answer] Завтра я рано встану о сьомій годині ранку.
+   > (Tomorrow I'll get up early at seven in the morning.) [8 words]
+
+2. Я / поснідаю / і / вип'ю / каву / гарячу / з / молоком
+   > [!answer] Я поснідаю і вип'ю гарячу каву з молоком.
+   > (I'll have breakfast and drink hot coffee with milk.) [8 words]
+
+3. Потім / я / на / роботу / поїду / новим / швидким / автобусом
+   > [!answer] Потім я поїду на роботу новим швидким автобусом.
+   > (Then I'll go to work by new fast bus.) [8 words]
+
+4. Я / буду / працювати / в / офісі / нашому / до / п'ятої
+   > [!answer] Я буду працювати в нашому офісі до п'ятої.
+   > (I'll be working in our office until five.) [8 words]
+
+5. Після / роботи / я / в / зайду / новий / великий / магазин
+   > [!answer] Після роботи я зайду в новий великий магазин.
+   > (After work I'll stop by the new big store.) [8 words]
+
+6. Увечері / я / приготую / смачну / вечерю / і / добре / відпочину
+   > [!answer] Увечері я приготую смачну вечерю і добре відпочину.
+   > (In the evening I'll prepare a tasty dinner and rest well.) [8 words]
+
+7. книгу / Перед / сном / я / читатиму / цікаву / нову / українську
+   > [!answer] Перед сном я читатиму нову цікаву українську книгу.
+   > (Before bed I'll be reading a new interesting Ukrainian book.) [8 words]
+
+8. рано / Наступного / дня / я / знову / прокинуся / о / сьомій
+   > [!answer] Наступного дня я знову прокинуся рано о сьомій.
+   > (The next day I'll wake up early again at seven.) [8 words]
+
+9. буде / Цей / день / дуже / робочий / звичайний / типовий / мій
+   > [!answer] Цей робочий день буде мій дуже типовий звичайний.
+   > (This work day will be my very typical ordinary.) [8 words]
+
+10. люблю / Я / такі / дні / спокійні / звичайні / завжди / дуже
+    > [!answer] Я завжди дуже люблю такі спокійні звичайні дні.
+    > (I always really love such calm ordinary days.) [8 words]
+
+11. вечір / Кожен / я / буду / так / проводити / чудово / свій
+    > [!answer] Кожен вечір я буду так чудово проводити свій.
+    > (Every evening I'll spend mine so wonderfully.) [8 words]
+
+12. план / Це / мій / на / завтра / чудовий / типовий / день
+    > [!answer] Це мій чудовий типовий план на завтра день.
+    > (This is my wonderful typical plan for tomorrow day.) [8 words]
 
 ## quiz: Future Tense Mastery
 

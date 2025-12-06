@@ -555,27 +555,57 @@ For emphasis, use the full form:
     - [ ] Same subject (infinitive)
     - [x] Different subjects (past tense)
 
-## order: Building Purpose Clauses
+## unjumble: Purpose Sentences
 
-> Arrange the elements to form correct purpose clauses.
+> Rearrange the words to form correct purpose sentences.
 
-1. main clause → щоб → infinitive (same subject)
-   > [!answer] Standard same-subject structure
+1. я | прийшов | щоб | допомогти | тобі
+   > [!answer] Я прийшов, щоб допомогти тобі.
+   > (I came to help you.)
 
-2. main clause → щоб → noun/pronoun → past form (different subjects)
-   > [!answer] Standard different-subjects structure
+2. вона | вчиться | щоб | стати | лікарем
+   > [!answer] Вона вчиться, щоб стати лікарем.
+   > (She studies to become a doctor.)
 
-3. Для того → щоб → infinitive → main clause
-   > [!answer] Emphatic purpose structure
+3. він | хоче | щоб | я | прийшов | раніше
+   > [!answer] Він хоче, щоб я прийшов раніше.
+   > (He wants me to come earlier.)
 
-4. main verb → щоб → не → infinitive (negative purpose)
-   > [!answer] Negative purpose structure
+4. для | того | щоб | зрозуміти | треба | читати
+   > [!answer] Для того, щоб зрозуміти, треба читати.
+   > (In order to understand, you need to read.)
 
-5. Мені треба → infinitive → щоб → infinitive
-   > [!answer] Need + purpose structure
+5. я | записав | щоб | не | забути
+   > [!answer] Я записав, щоб не забути.
+   > (I wrote it down so as not to forget.)
 
-6. Він/Вона хоче → щоб → я/ти/він → past form
-   > [!answer] Want + different subject structure
+6. мама | хоче | щоб | ми | прибрали | кімнату
+   > [!answer] Мама хоче, щоб ми прибрали кімнату.
+   > (Mom wants us to clean the room.)
+
+7. він | працює | багато | щоб | заробити | гроші
+   > [!answer] Він працює багато, щоб заробити гроші.
+   > (He works a lot to earn money.)
+
+8. я | подзвонив | щоб | дізнатися | новини
+   > [!answer] Я подзвонив, щоб дізнатися новини.
+   > (I called to find out the news.)
+
+9. вони | хочуть | щоб | він | залишився
+   > [!answer] Вони хочуть, щоб він залишився.
+   > (They want him to stay.)
+
+10. вона | встала | рано | щоб | встигнути | на | автобус
+    > [!answer] Вона встала рано, щоб встигнути на автобус.
+    > (She got up early to catch the bus.)
+
+11. для | того | щоб | вивчити | мову | потрібен | час
+    > [!answer] Для того, щоб вивчити мову, потрібен час.
+    > (In order to learn a language, you need time.)
+
+12. він | зробив | це | щоб | їй | допомогти
+    > [!answer] Він зробив це, щоб їй допомогти.
+    > (He did this to help her.)
 
 ## quiz: Advanced Purpose Structures
 

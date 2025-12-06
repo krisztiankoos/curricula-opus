@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -900,11 +941,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Time Clause Nuances</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Time Clause Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Time Clause Nuances</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -931,7 +979,7 @@ footer {
   </main><footer>Module 28 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Time Conjunctions","data":{"type":"fill-blank","items":[{"prompt":"___ я прийшов, він спав. (when)","answer":"Коли"},{"prompt":"___ він спав, я працював. (while)","answer":"Поки"},{"prompt":"Чекай, ___ він не прийде. (until)","answer":"поки"},{"prompt":"___ того як я поїв, я пішов гуляти. (after)","answer":"Після"},{"prompt":"___ ніж піти, я подзвонив. (before)","answer":"Перш"},{"prompt":"___ він увійшов, усі замовкли. (as soon as)","answer":"Щойно"},{"prompt":"___ я ліг, зателефонували. (barely)","answer":"Ледве"},{"prompt":"___ діти грали, батьки розмовляли. (while)","answer":"Поки"},{"prompt":"___ я був малий, я жив у селі. (when)","answer":"Коли"},{"prompt":"___ тим як спати, я читаю. (before)","answer":"Перед"},{"prompt":"___ вона закінчила роботу, вона поїхала. (after that)","answer":"Після того як"},{"prompt":"Сиди тут, ___ я не повернуся. (until)","answer":"поки"}]}},{"id":"activity-1","type":"match-up","title":"Time Expressions","data":{"type":"match-up","pairs":[{"left":"коли","right":"when"},{"left":"поки","right":"while"},{"left":"поки не","right":"until"},{"left":"після того як","right":"after"},{"left":"перш ніж","right":"before"},{"left":"перед тим як","right":"before"},{"left":"щойно","right":"as soon as"},{"left":"ледве","right":"barely, hardly"},{"left":"одночасно","right":"simultaneously"},{"left":"тим часом","right":"meanwhile"},{"left":"протягом","right":"during"},{"left":"з тих пір як","right":"since (time)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["я","Коли","прийшов","він","спав","у","своїй","кімнаті"],"answer":"Коли я прийшов, він спав у своїй кімнаті.","translation":"When I arrived, he was sleeping in his room."},{"words":["він","Поки","спав","працював","я","над","своїм","проєктом"],"answer":"Поки він спав, я працював над своїм проєктом.","translation":"While he was sleeping, I was working on my project."},{"words":["Чекай","поки","не","він","прийде","тут","сиди","тихо"],"answer":"Чекай тут тихо, поки він не прийде.","translation":"Wait here quietly until he comes."},{"words":["Після","того","як","я","поїв","пішов","гуляти","у"],"answer":"Після того як я поїв, я пішов гуляти.","translation":"After I ate, I went for a walk."},{"words":["Перш","ніж","піти","подзвонив","я","своїй","мамі","ще"],"answer":"Перш ніж піти, я ще подзвонив своїй мамі.","translation":"Before leaving, I also called my mom."},{"words":["Щойно","увійшов","він","замовкли","усі","в","кімнаті","одразу"],"answer":"Щойно він увійшов, усі в кімнаті одразу замовкли.","translation":"As soon as he entered, everyone in the room immediately fell silent."},{"words":["Коли","буде","час","зателефоную","я","тобі","обов'язково","ввечері"],"answer":"Коли буде час, я обов'язково тобі зателефоную ввечері.","translation":"When there's time, I'll definitely call you in the evening."},{"words":["діти","Поки","грали","розмовляли","батьки","на","кухні","спокійно"],"answer":"Поки діти грали, батьки спокійно розмовляли на кухні.","translation":"While the children played, the parents quietly talked in the kitchen."},{"words":["Перед","тим","як","спати","читаю","я","завжди","книгу"],"answer":"Перед тим як спати, я завжди читаю книгу.","translation":"Before sleeping, I always read a book."},{"words":["вона","Після того як","пішла","стало","тихо","в","домі","нашому"],"answer":"Після того як вона пішла, в нашому домі стало тихо.","translation":"After she left, it became quiet in our house."},{"words":["я","Ледве","ліг","зателефонували","мені","з","роботи","знову"],"answer":"Ледве я ліг, мені знову зателефонували з роботи.","translation":"Barely had I lain down when they called me from work again."},{"words":["Коли","зустрінемося","ми","обговоримо","це","питання","разом","завтра"],"answer":"Коли ми завтра зустрінемося, обговоримо це питання разом.","translation":"When we meet tomorrow, we'll discuss this question together."}]}},{"id":"activity-3","type":"quiz","title":"Time Clause Knowledge","data":{"type":"quiz","questions":[{"question":"\"Коли\" means:","options":["When","Where","Why","Who"],"correctIndex":0,"explanation":""},{"question":"\"Поки\" expresses:","options":["Simultaneous actions (while)","Sequence (after)","Cause (because)","Purpose (in order to)"],"correctIndex":0,"explanation":""},{"question":"\"Поки не\" means:","options":["Until","While","Before","After"],"correctIndex":0,"explanation":""},{"question":"\"Після того як\" expresses:","options":["Sequential actions (after)","Simultaneous (while)","Before","Cause"],"correctIndex":0,"explanation":""},{"question":"\"Перш ніж\" is followed by:","options":["Infinitive","Past tense","Future tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Щойно\" means:","options":["As soon as","After a long time","Before","While"],"correctIndex":0,"explanation":""},{"question":"\"Ледве\" indicates:","options":["Barely, hardly happened before","Definitely","Never","Always"],"correctIndex":0,"explanation":""},{"question":"Time clauses answer:","options":["When?","Why?","How?","Where?"],"correctIndex":0,"explanation":""},{"question":"\"Протягом\" means:","options":["During","After","Before","Instead of"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" can also be:","options":["A question word","Only a conjunction","A noun","An adjective"],"correctIndex":0,"explanation":""},{"question":"\"Тим часом\" means:","options":["Meanwhile","At that time","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Перед тим як\" means:","options":["Before","After","While","Until"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Time Clause Facts","data":{"type":"true-false","statements":[{"statement":"\"Коли\" means \"when.\"","isTrue":true,"explanation":""},{"statement":"\"Поки\" means \"after.\"","isTrue":false,"explanation":""},{"statement":"\"Поки не\" means \"until.\"","isTrue":true,"explanation":""},{"statement":"\"Після того як\" = \"before.\"","isTrue":false,"explanation":""},{"statement":"\"Перш ніж\" is followed by infinitive.","isTrue":true,"explanation":""},{"statement":"\"Щойно\" expresses immediate sequence.","isTrue":true,"explanation":""},{"statement":"\"Ледве\" means \"definitely.\"","isTrue":false,"explanation":""},{"statement":"Time clauses can start or end sentences.","isTrue":true,"explanation":""},{"statement":"\"Коли\" is only a conjunction.","isTrue":false,"explanation":""},{"statement":"\"Тим часом\" = \"meanwhile.\"","isTrue":true,"explanation":""},{"statement":"\"Одночасно\" means \"one time.\"","isTrue":false,"explanation":""},{"statement":"\"Протягом\" takes genitive case.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Time Relationships","data":{"type":"group-sort","groups":[{"id":"before","name":"Before","items":["перш ніж","перед тим як","до того як"]},{"id":"duringwhile","name":"During/While","items":["поки","тим часом","одночасно","протягом","під час"]},{"id":"after","name":"After","items":["після того як","щойно","ледве...як","з тих пір як"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Advanced Time Expressions","data":{"type":"fill-blank","items":[{"prompt":"___ вона читала книгу, він дивився телевізор. (while)","answer":"Поки"},{"prompt":"___ я закінчу роботу, поїду додому. (when)","answer":"Коли"},{"prompt":"Почекай, ___ не прийде автобус. (until)","answer":"поки"},{"prompt":"___ того як ми поговорили, все стало зрозуміло. (after)","answer":"Після"},{"prompt":"___ тим як вийти, перевір, чи все взяв. (before)","answer":"Перед"},{"prompt":"___ він сказав це, я все зрозумів. (as soon as)","answer":"Щойно"},{"prompt":"___ я заснув, задзвонив телефон. (barely)","answer":"Ледве"},{"prompt":"Я читаю газету, ___ снідаю. (while)","answer":"поки"},{"prompt":"___ ми повернулися, почався дощ. (when)","answer":"Коли"},{"prompt":"Не їж, ___ не помиєш руки. (until)","answer":"поки"},{"prompt":"___ того як закінчився фільм, ми пішли. (after)","answer":"Після"},{"prompt":"___ ніж відповідати, подумай добре. (before)","answer":"Перш"}]}},{"id":"activity-7","type":"select","title":"Choose the Right Time Conjunction","data":{"type":"select","items":[{"question":"___ я був студентом, жив у гуртожитку.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"Перш ніж","correct":false}]},{"question":"___ батьки працюють, діти в школі.","options":[{"text":"Поки","correct":true},{"text":"Коли","correct":false},{"text":"Після того як","correct":false},{"text":"Перш ніж","correct":false}]},{"question":"Чекай, ___ не скажу \"почали.\"","options":[{"text":"поки","correct":true},{"text":"коли","correct":false},{"text":"після того як","correct":false},{"text":"перш ніж","correct":false}]},{"question":"___ екзамен закінчився, студенти пішли святкувати.","options":[{"text":"Після того як","correct":true},{"text":"Поки","correct":false},{"text":"Коли","correct":false},{"text":"До того як","correct":false}]},{"question":"___ їхати, перевір машину.","options":[{"text":"Перш ніж","correct":true},{"text":"Поки","correct":false},{"text":"Коли","correct":false},{"text":"Після того як","correct":false}]},{"question":"___ вона увійшла, розмова припинилася.","options":[{"text":"Щойно","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"До того як","correct":false}]},{"question":"___ я сів у машину, почався дощ.","options":[{"text":"Ледве","correct":true},{"text":"Поки","correct":false},{"text":"Після","correct":false},{"text":"До","correct":false}]},{"question":"___ ти будеш готовий, скажи мені.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"Після","correct":false},{"text":"Перш","correct":false}]},{"question":"Я працюю, ___ інші відпочивають.","options":[{"text":"поки","correct":true},{"text":"коли","correct":false},{"text":"після того як","correct":false},{"text":"перш ніж","correct":false}]},{"question":"___ прочитаєш цю книгу, поговоримо.","options":[{"text":"Після того як","correct":true},{"text":"Поки","correct":false},{"text":"Перш ніж","correct":false},{"text":"Ледве","correct":false}]},{"question":"___ виходити з дому, візьми парасольку.","options":[{"text":"Перед тим як","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"Ледве","correct":false}]},{"question":"___ почався концерт, усі замовкли.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"До того як","correct":false},{"text":"Перш ніж","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Time Clause Nuances","data":{"type":"quiz","questions":[{"question":"\"Поки\" vs \"поки не\" — what's the difference?","options":["\"Поки\" = while (simultaneous); \"поки не\" = until","They mean the same","\"Поки не\" is more formal","\"Поки\" is only for past"],"correctIndex":0,"explanation":""},{"question":"After \"перш ніж,\" you use:","options":["Infinitive form","Past tense","Future tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Щойно\" indicates:","options":["Immediate sequence — one event right after another","Long gap between events","Simultaneous events","Events that never happened"],"correctIndex":0,"explanation":""},{"question":"\"Ледве...як\" emphasizes:","options":["Something barely started when interrupted","A long duration","Future planning","Regular habit"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" can express:","options":["Past, present, and future time references","Only past","Only future","Only present"],"correctIndex":0,"explanation":""},{"question":"\"Протягом\" and \"під час\" both mean:","options":["During (+ genitive case)","After","Before","Instead of"],"correctIndex":0,"explanation":""},{"question":"\"Тим часом\" is used:","options":["To describe what happens meanwhile","Only in questions","Only in negative sentences","Only with past tense"],"correctIndex":0,"explanation":""},{"question":"\"З тих пір як\" means:","options":["Since (from that time when)","Until","Before","While"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" as a conjunction vs question word:","options":["Context determines meaning","Different pronunciation","Different spelling","Never used as question"],"correctIndex":0,"explanation":""},{"question":"Which pair shows \"before\" relationships?","options":["Перш ніж / Перед тим як","Поки / Тим часом","Після того як / Щойно","Коли / Ледве"],"correctIndex":0,"explanation":""},{"question":"\"Одночасно\" means events happen:","options":["At the same time","One after another","Before","Never"],"correctIndex":0,"explanation":""},{"question":"Time clause position in Ukrainian:","options":["Can be at the beginning or end of sentence","Only at the beginning","Only at the end","Only in the middle"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Time Conjunctions","data":{"type":"fill-blank","items":[{"prompt":"___ я прийшов, він спав. (when)","answer":"Коли"},{"prompt":"___ він спав, я працював. (while)","answer":"Поки"},{"prompt":"Чекай, ___ він не прийде. (until)","answer":"поки"},{"prompt":"___ того як я поїв, я пішов гуляти. (after)","answer":"Після"},{"prompt":"___ ніж піти, я подзвонив. (before)","answer":"Перш"},{"prompt":"___ він увійшов, усі замовкли. (as soon as)","answer":"Щойно"},{"prompt":"___ я ліг, зателефонували. (barely)","answer":"Ледве"},{"prompt":"___ діти грали, батьки розмовляли. (while)","answer":"Поки"},{"prompt":"___ я був малий, я жив у селі. (when)","answer":"Коли"},{"prompt":"___ тим як спати, я читаю. (before)","answer":"Перед"},{"prompt":"___ вона закінчила роботу, вона поїхала. (after that)","answer":"Після того як"},{"prompt":"Сиди тут, ___ я не повернуся. (until)","answer":"поки"}]}},{"id":"activity-1","type":"match-up","title":"Time Expressions","data":{"type":"match-up","pairs":[{"left":"коли","right":"when"},{"left":"поки","right":"while"},{"left":"поки не","right":"until"},{"left":"після того як","right":"after"},{"left":"перш ніж","right":"before"},{"left":"перед тим як","right":"before"},{"left":"щойно","right":"as soon as"},{"left":"ледве","right":"barely, hardly"},{"left":"одночасно","right":"simultaneously"},{"left":"тим часом","right":"meanwhile"},{"left":"протягом","right":"during"},{"left":"з тих пір як","right":"since (time)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["я","Коли","прийшов","він","спав","у","своїй","кімнаті"],"answer":"Коли я прийшов, він спав у своїй кімнаті.","translation":"When I arrived, he was sleeping in his room."},{"words":["він","Поки","спав","працював","я","над","своїм","проєктом"],"answer":"Поки він спав, я працював над своїм проєктом.","translation":"While he was sleeping, I was working on my project."},{"words":["Чекай","поки","не","він","прийде","тут","сиди","тихо"],"answer":"Чекай тут тихо, поки він не прийде.","translation":"Wait here quietly until he comes."},{"words":["Після","того","як","я","поїв","пішов","гуляти","у"],"answer":"Після того як я поїв, я пішов гуляти.","translation":"After I ate, I went for a walk."},{"words":["Перш","ніж","піти","подзвонив","я","своїй","мамі","ще"],"answer":"Перш ніж піти, я ще подзвонив своїй мамі.","translation":"Before leaving, I also called my mom."},{"words":["Щойно","увійшов","він","замовкли","усі","в","кімнаті","одразу"],"answer":"Щойно він увійшов, усі в кімнаті одразу замовкли.","translation":"As soon as he entered, everyone in the room immediately fell silent."},{"words":["Коли","буде","час","зателефоную","я","тобі","обов'язково","ввечері"],"answer":"Коли буде час, я обов'язково тобі зателефоную ввечері.","translation":"When there's time, I'll definitely call you in the evening."},{"words":["діти","Поки","грали","розмовляли","батьки","на","кухні","спокійно"],"answer":"Поки діти грали, батьки спокійно розмовляли на кухні.","translation":"While the children played, the parents quietly talked in the kitchen."},{"words":["Перед","тим","як","спати","читаю","я","завжди","книгу"],"answer":"Перед тим як спати, я завжди читаю книгу.","translation":"Before sleeping, I always read a book."},{"words":["вона","Після того як","пішла","стало","тихо","в","домі","нашому"],"answer":"Після того як вона пішла, в нашому домі стало тихо.","translation":"After she left, it became quiet in our house."},{"words":["я","Ледве","ліг","зателефонували","мені","з","роботи","знову"],"answer":"Ледве я ліг, мені знову зателефонували з роботи.","translation":"Barely had I lain down when they called me from work again."},{"words":["Коли","зустрінемося","ми","обговоримо","це","питання","разом","завтра"],"answer":"Коли ми завтра зустрінемося, обговоримо це питання разом.","translation":"When we meet tomorrow, we'll discuss this question together."}]}},{"id":"activity-3","type":"quiz","title":"Time Clause Knowledge","data":{"type":"quiz","questions":[{"question":"\"Коли\" means:","options":["When","Where","Why","Who"],"correctIndex":0,"explanation":""},{"question":"\"Поки\" expresses:","options":["Simultaneous actions (while)","Sequence (after)","Cause (because)","Purpose (in order to)"],"correctIndex":0,"explanation":""},{"question":"\"Поки не\" means:","options":["Until","While","Before","After"],"correctIndex":0,"explanation":""},{"question":"\"Після того як\" expresses:","options":["Sequential actions (after)","Simultaneous (while)","Before","Cause"],"correctIndex":0,"explanation":""},{"question":"\"Перш ніж\" is followed by:","options":["Infinitive","Past tense","Future tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Щойно\" means:","options":["As soon as","After a long time","Before","While"],"correctIndex":0,"explanation":""},{"question":"\"Ледве\" indicates:","options":["Barely, hardly happened before","Definitely","Never","Always"],"correctIndex":0,"explanation":""},{"question":"Time clauses answer:","options":["When?","Why?","How?","Where?"],"correctIndex":0,"explanation":""},{"question":"\"Протягом\" means:","options":["During","After","Before","Instead of"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" can also be:","options":["A question word","Only a conjunction","A noun","An adjective"],"correctIndex":0,"explanation":""},{"question":"\"Тим часом\" means:","options":["Meanwhile","At that time","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Перед тим як\" means:","options":["Before","After","While","Until"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Time Clause Facts","data":{"type":"true-false","statements":[{"statement":"\"Коли\" means \"when.\"","isTrue":true,"explanation":""},{"statement":"\"Поки\" means \"after.\"","isTrue":false,"explanation":""},{"statement":"\"Поки не\" means \"until.\"","isTrue":true,"explanation":""},{"statement":"\"Після того як\" = \"before.\"","isTrue":false,"explanation":""},{"statement":"\"Перш ніж\" is followed by infinitive.","isTrue":true,"explanation":""},{"statement":"\"Щойно\" expresses immediate sequence.","isTrue":true,"explanation":""},{"statement":"\"Ледве\" means \"definitely.\"","isTrue":false,"explanation":""},{"statement":"Time clauses can start or end sentences.","isTrue":true,"explanation":""},{"statement":"\"Коли\" is only a conjunction.","isTrue":false,"explanation":""},{"statement":"\"Тим часом\" = \"meanwhile.\"","isTrue":true,"explanation":""},{"statement":"\"Одночасно\" means \"one time.\"","isTrue":false,"explanation":""},{"statement":"\"Протягом\" takes genitive case.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Time Relationships","data":{"type":"group-sort","groups":[{"id":"before","name":"Before","items":["перш ніж","перед тим як","до того як"]},{"id":"duringwhile","name":"During/While","items":["поки","тим часом","одночасно","протягом","під час"]},{"id":"after","name":"After","items":["після того як","щойно","ледве...як","з тих пір як"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Advanced Time Expressions","data":{"type":"fill-blank","items":[{"prompt":"___ вона читала книгу, він дивився телевізор. (while)","answer":"Поки"},{"prompt":"___ я закінчу роботу, поїду додому. (when)","answer":"Коли"},{"prompt":"Почекай, ___ не прийде автобус. (until)","answer":"поки"},{"prompt":"___ того як ми поговорили, все стало зрозуміло. (after)","answer":"Після"},{"prompt":"___ тим як вийти, перевір, чи все взяв. (before)","answer":"Перед"},{"prompt":"___ він сказав це, я все зрозумів. (as soon as)","answer":"Щойно"},{"prompt":"___ я заснув, задзвонив телефон. (barely)","answer":"Ледве"},{"prompt":"Я читаю газету, ___ снідаю. (while)","answer":"поки"},{"prompt":"___ ми повернулися, почався дощ. (when)","answer":"Коли"},{"prompt":"Не їж, ___ не помиєш руки. (until)","answer":"поки"},{"prompt":"___ того як закінчився фільм, ми пішли. (after)","answer":"Після"},{"prompt":"___ ніж відповідати, подумай добре. (before)","answer":"Перш"}]}},{"id":"activity-7","type":"select","title":"Choose the Right Time Conjunction","data":{"type":"select","items":[{"question":"___ я був студентом, жив у гуртожитку.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"Перш ніж","correct":false}]},{"question":"___ батьки працюють, діти в школі.","options":[{"text":"Поки","correct":true},{"text":"Коли","correct":false},{"text":"Після того як","correct":false},{"text":"Перш ніж","correct":false}]},{"question":"Чекай, ___ не скажу \"почали.\"","options":[{"text":"поки","correct":true},{"text":"коли","correct":false},{"text":"після того як","correct":false},{"text":"перш ніж","correct":false}]},{"question":"___ екзамен закінчився, студенти пішли святкувати.","options":[{"text":"Після того як","correct":true},{"text":"Поки","correct":false},{"text":"Коли","correct":false},{"text":"До того як","correct":false}]},{"question":"___ їхати, перевір машину.","options":[{"text":"Перш ніж","correct":true},{"text":"Поки","correct":false},{"text":"Коли","correct":false},{"text":"Після того як","correct":false}]},{"question":"___ вона увійшла, розмова припинилася.","options":[{"text":"Щойно","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"До того як","correct":false}]},{"question":"___ я сів у машину, почався дощ.","options":[{"text":"Ледве","correct":true},{"text":"Поки","correct":false},{"text":"Після","correct":false},{"text":"До","correct":false}]},{"question":"___ ти будеш готовий, скажи мені.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"Після","correct":false},{"text":"Перш","correct":false}]},{"question":"Я працюю, ___ інші відпочивають.","options":[{"text":"поки","correct":true},{"text":"коли","correct":false},{"text":"після того як","correct":false},{"text":"перш ніж","correct":false}]},{"question":"___ прочитаєш цю книгу, поговоримо.","options":[{"text":"Після того як","correct":true},{"text":"Поки","correct":false},{"text":"Перш ніж","correct":false},{"text":"Ледве","correct":false}]},{"question":"___ виходити з дому, візьми парасольку.","options":[{"text":"Перед тим як","correct":true},{"text":"Поки","correct":false},{"text":"Після того як","correct":false},{"text":"Ледве","correct":false}]},{"question":"___ почався концерт, усі замовкли.","options":[{"text":"Коли","correct":true},{"text":"Поки","correct":false},{"text":"До того як","correct":false},{"text":"Перш ніж","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Time Clause Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["коли","|","я","|","прийшов","|","додому","|","вона","|","вже","|","спала"],"answer":"Коли я прийшов додому, вона вже спала.","translation":"When I came home, she was already sleeping."},{"words":["поки","|","він","|","працював","|","дружина","|","готувала","|","вечерю"],"answer":"Поки він працював, дружина готувала вечерю.","translation":"While he was working, his wife was making dinner."},{"words":["після","|","того","|","як","|","ми","|","поїли","|","пішли","|","гуляти"],"answer":"Після того як ми поїли, пішли гуляти.","translation":"After we ate, we went for a walk."},{"words":["перш","|","ніж","|","вийти","|","візьми","|","парасольку"],"answer":"Перш ніж вийти, візьми парасольку.","translation":"Before going out, take an umbrella."},{"words":["щойно","|","почався","|","дощ","|","ми","|","сховалися"],"answer":"Щойно почався дощ, ми сховалися.","translation":"As soon as the rain started, we hid."},{"words":["до","|","того","|","як","|","він","|","прийшов","|","все","|","було","|","готово"],"answer":"До того як він прийшов, все було готово.","translation":"Before he came, everything was ready."},{"words":["поки","|","не","|","закінчиться","|","дощ","|","ми","|","не","|","підемо"],"answer":"Поки не закінчиться дощ, ми не підемо.","translation":"Until the rain stops, we won't go."},{"words":["коли","|","вона","|","зателефонувала","|","я","|","обідав"],"answer":"Коли вона зателефонувала, я обідав.","translation":"When she called, I was having lunch."},{"words":["після","|","роботи","|","він","|","завжди","|","ходить","|","у","|","спортзал"],"answer":"Після роботи він завжди ходить у спортзал.","translation":"After work he always goes to the gym."},{"words":["перед","|","тим","|","як","|","спати","|","вона","|","читає","|","книгу"],"answer":"Перед тим як спати, вона читає книгу.","translation":"Before sleeping, she reads a book."},{"words":["як","|","тільки","|","він","|","прийшов","|","почалася","|","нарада"],"answer":"Як тільки він прийшов, почалася нарада.","translation":"As soon as he came, the meeting started."},{"words":["поки","|","я","|","чекав","|","на","|","автобус","|","читав","|","новини"],"answer":"Поки я чекав на автобус, читав новини.","translation":"While I was waiting for the bus, I read the news."}]}},{"id":"activity-9","type":"quiz","title":"Time Clause Nuances","data":{"type":"quiz","questions":[{"question":"\"Поки\" vs \"поки не\" — what's the difference?","options":["\"Поки\" = while (simultaneous); \"поки не\" = until","They mean the same","\"Поки не\" is more formal","\"Поки\" is only for past"],"correctIndex":0,"explanation":""},{"question":"After \"перш ніж,\" you use:","options":["Infinitive form","Past tense","Future tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Щойно\" indicates:","options":["Immediate sequence — one event right after another","Long gap between events","Simultaneous events","Events that never happened"],"correctIndex":0,"explanation":""},{"question":"\"Ледве...як\" emphasizes:","options":["Something barely started when interrupted","A long duration","Future planning","Regular habit"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" can express:","options":["Past, present, and future time references","Only past","Only future","Only present"],"correctIndex":0,"explanation":""},{"question":"\"Протягом\" and \"під час\" both mean:","options":["During (+ genitive case)","After","Before","Instead of"],"correctIndex":0,"explanation":""},{"question":"\"Тим часом\" is used:","options":["To describe what happens meanwhile","Only in questions","Only in negative sentences","Only with past tense"],"correctIndex":0,"explanation":""},{"question":"\"З тих пір як\" means:","options":["Since (from that time when)","Until","Before","While"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" as a conjunction vs question word:","options":["Context determines meaning","Different pronunciation","Different spelling","Never used as question"],"correctIndex":0,"explanation":""},{"question":"Which pair shows \"before\" relationships?","options":["Перш ніж / Перед тим як","Поки / Тим часом","Після того як / Щойно","Коли / Ледве"],"correctIndex":0,"explanation":""},{"question":"\"Одночасно\" means events happen:","options":["At the same time","One after another","Before","Never"],"correctIndex":0,"explanation":""},{"question":"Time clause position in Ukrainian:","options":["Can be at the beginning or end of sentence","Only at the beginning","Only at the end","Only in the middle"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"коли","translit":"","en":"when","note":""},{"uk":"поки","translit":"","en":"while","note":""},{"uk":"поки не","translit":"","en":"until","note":""},{"uk":"після того як","translit":"","en":"after","note":""},{"uk":"перш ніж","translit":"","en":"before","note":"+ inf"},{"uk":"перед тим як","translit":"","en":"before","note":"+ inf"},{"uk":"щойно","translit":"","en":"as soon as","note":""},{"uk":"ледве","translit":"","en":"barely, hardly","note":""},{"uk":"одночасно","translit":"","en":"simultaneously","note":""},{"uk":"тим часом","translit":"","en":"meanwhile","note":""},{"uk":"до того як","translit":"","en":"before","note":""},{"uk":"з тих пір як","translit":"","en":"since (time)","note":""},{"uk":"протягом","translit":"","en":"during","note":"+ gen"},{"uk":"під час","translit":"","en":"during","note":"+ gen"},{"uk":"замовкнути","translit":"","en":"to fall silent","note":"pf"},{"uk":"заснути","translit":"","en":"to fall asleep","note":"pf"},{"uk":"прокинутися","translit":"","en":"to wake up","note":"pf"},{"uk":"повернутися","translit":"","en":"to return","note":"pf"},{"uk":"закінчити","translit":"","en":"to finish","note":"pf"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2256,6 +2304,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

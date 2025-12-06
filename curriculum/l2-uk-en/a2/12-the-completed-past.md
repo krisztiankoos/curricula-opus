@@ -17,7 +17,15 @@ grammar:
 
 # Вступ
 
-When you want to say "I did it!" in Ukrainian, you need the perfective past. This module teaches you how to express completed actions, finished tasks, and single events in the past. By the end, you'll naturally choose between "I was doing" and "I did"!
+Why is "I read the book" such a boring sentence in English? Because you can't tell if the speaker was curled up reading all afternoon, or triumphantly closed the final page. Ukrainian doesn't have this problem.
+
+When you want to express "I did it!" — that satisfying moment of completion — Ukrainian gives you a dedicated verb form: the **perfective past**. It's the grammatical equivalent of checking off a to-do list item. ✓
+
+Think about how often you talk about completed actions: "I called mom." "We finished the project." "She found her keys." All these natural, everyday statements need perfective verbs in Ukrainian. This module teaches you to express finished tasks, single events, and that triumphant "done!" feeling naturally.
+
+> 💡 **Did You Know?**
+>
+> The satisfaction of crossing items off a list has a name: the **Zeigarnik Effect** tells us uncompleted tasks linger in our minds. Perhaps that's why perfective verbs feel so satisfying — *зробив!* (done!) provides grammatical closure!
 
 ---
 
@@ -64,8 +72,20 @@ Both aspects conjugate the same way in past tense:
 - Він **побачив** її. (He saw her — suddenly, momentarily.)
 - Вона **почула** шум. (She heard a noise.)
 
-> [!example] 🎬 Pop Culture Moment
-> Ukrainian films love dramatic reveals: *Я все зрозумів!* (I understood everything!) — perfective for the moment of realization!
+> 🎬 **Pop Culture Moment: The Matrix Moment**
+>
+> Ukrainian films love dramatic reveals: *Я все зрозумів!* (I understood everything!) — perfective for the moment of realization! It's like Neo's "I know kung fu" — a single instant of completed understanding. In Ukrainian dubbed movies, this is always perfective: *Зрозумів!*
+
+**🎭 Продуктивний день (Productive Day)**
+
+— Привіт! Як справи? Що **зробив** сьогодні?
+— О, багато! **Написав** звіт, **відправив** листи, **зателефонував** клієнтам.
+— Ого! А обідав?
+— Так, **поїв** швидко і знову працював.
+— І все **закінчив**?
+— Майже! Ще один дзвінок — і готово!
+
+*Notice how every completed item uses perfective — it's a verbal checklist!*
 
 ---
 
@@ -82,6 +102,22 @@ Both aspects conjugate the same way in past tense:
 ## 3. Process Without Focus on Result
 - Що ти **робив** вчора? (What were you doing yesterday?)
 - Ми **гуляли** в парку. (We were walking in the park.)
+
+**🎭 Спокійний вечір (Quiet Evening)**
+
+— Що ти **робив** учора ввечері?
+— **Дивився** телевізор, **слухав** музику...
+— Нічого не **зробив**?
+— Ну, **відпочивав**! Це теж важливо!
+— Правда. А я весь вечір **читала**...
+— **Прочитала** щось цікаве?
+— Ні, тільки **читала**. Книга довга!
+
+*Notice the contrast: imperfective робив/читала for ongoing activities, perfective прочитала for asking about completion.*
+
+> 📜 **History Bite: Aspect in Old Slavic**
+>
+> The aspect system is over 1,500 years old! Proto-Slavic speakers already distinguished between "doing" and "done." This isn't a quirk of modern Ukrainian — it's ancient grammatical DNA shared by all Slavic languages.
 
 ---
 
@@ -100,8 +136,13 @@ Both aspects conjugate the same way in past tense:
 | піти | пішов | пішла | пішли | went |
 | прийти | прийшов | прийшла | прийшли | came |
 
-> [!tip] 🌍 Real World
-> At restaurants, when you've decided: *Я вибрав* (I chose/decided). When you're still thinking: *Я вибираю* (I'm choosing).
+> 🌍 **Real World: Decision Moments**
+>
+> At restaurants, when you've decided: *Я вибрав* (I chose/decided). When you're still thinking: *Я вибираю* (I'm choosing). The waiter knows immediately whether to take your order!
+
+> 🎮 **Gamer's Corner: Achievement Unlocked**
+>
+> In video games, achievements use perfective: *Завершив рівень* (Completed the level), *Знайшов скарб* (Found the treasure), *Переміг боса* (Defeated the boss). Each achievement is a completed action — grammatically and gamefully satisfying!
 
 ---
 
@@ -129,6 +170,55 @@ Certain time words typically pair with perfective:
 | (She was writing for 3 hours.) | (She wrote/finished the letter.) |
 | Що ви **робили**? | Що ви **зробили**? |
 | (What were you doing?) | (What did you do/accomplish?) |
+
+---
+
+# Choosing the Right Aspect: Decision Guide
+
+When talking about the past, ask yourself these questions:
+
+## Question 1: Am I asking about process or result?
+
+| If you want to know... | Use | Example |
+|------------------------|-----|---------|
+| How they spent time | Imperfective | Що ти **робив** вчора? |
+| What they accomplished | Perfective | Що ти **зробив** вчора? |
+
+## Question 2: Did the action complete?
+
+| Situation | Aspect | Example |
+|-----------|--------|---------|
+| Finished the book | Perfective | **Прочитав** книгу |
+| Read (for a while) | Imperfective | **Читав** книгу |
+| Made a call | Perfective | **Зателефонував** |
+| Was on the phone | Imperfective | **Телефонував** |
+
+## Question 3: Is there a time word?
+
+| Time word suggests... | Aspect | Examples |
+|----------------------|--------|----------|
+| Duration (три години, весь день) | Imperfective | Читав **три години** |
+| Completion (вже, нарешті) | Perfective | **Вже** прочитав |
+| Suddenness (раптом) | Perfective | **Раптом** побачив |
+| Repetition (кожного дня) | Imperfective | Телефонував **кожного дня** |
+
+## Common Mistakes to Avoid
+
+**❌ Wrong:** Я прочитав книгу три години.
+**✓ Right:** Я читав книгу три години.
+*Duration = imperfective*
+
+**❌ Wrong:** Вона вже писала листа.
+**✓ Right:** Вона вже написала листа.
+*"Already" + completion = perfective*
+
+**❌ Wrong:** Раптом він бачив кота.
+**✓ Right:** Раптом він побачив кота.
+*"Suddenly" = perfective*
+
+> ⚡ **Pro Tip: The "Done" Test**
+>
+> If you can add "and it's done/finished" to your sentence in English, use perfective in Ukrainian. "I read the book (and finished it)" = *Прочитав*. "I was reading the book (process)" = *Читав*.
 
 ---
 
@@ -169,6 +259,21 @@ Certain time words typically pair with perfective:
 | закінчила | /zaˈkintʃɪla/ | finished (f) | verb | — | pf past |
 | знайшла | /znajˈʃla/ | found (f) | verb | — | pf past |
 | забула | /zaˈbula/ | forgot (f) | verb | — | pf past |
+| відправив | /widˈprawɪw/ | sent (m) | verb | — | pf past |
+| зателефонував | /zatɛlɛfonuˈwaw/ | called (m) | verb | — | pf past |
+| телефонувала | /tɛlɛfonuˈwala/ | was calling (f) | verb | — | impf past |
+| поїв | /poˈjiw/ | ate (m) | verb | — | pf past |
+| закінчив | /zaˈkintʃɪw/ | finished (m) | verb | — | pf past |
+| відпочивав | /widpotʃɪˈwaw/ | was resting (m) | verb | — | impf past |
+| дивився | /dɪwɪwˈsʲa/ | was watching (m) | verb | — | impf past |
+| подивився | /podɪwɪwˈsʲa/ | watched (m) | verb | — | pf past |
+| гралися | /ˈɦralɪsʲa/ | were playing (pl) | verb | — | impf past |
+| розповідала | /rozpowiˈdala/ | was telling (f) | verb | — | impf past |
+| встав | /wstaw/ | got up (m) | verb | — | pf past |
+| снідав | /sniˈdaw/ | was having breakfast (m) | verb | — | impf past |
+| поїхав | /poˈjixaw/ | went (by transport) (m) | verb | — | pf past |
+| працював | /pratsʲuˈwaw/ | was working (m) | verb | — | impf past |
+| приготував | /prɪɦotuˈwaw/ | prepared (m) | verb | — | pf past |
 
 ---
 
@@ -545,16 +650,133 @@ Certain time words typically pair with perfective:
     - [ ] брав
     > [!answer] взяв (single completed action)
 
-## order: A Day's Story with Aspect
+## error-correction: Correct the Aspect Error
 
-> Put these sentences in chronological order to tell about yesterday's events.
+> Find the wrong word in each sentence, then choose the correct aspect.
 
-1. Вранці я встав о сьомій годині.
-2. Я снідав і читав новини в телефоні.
-3. Потім я поїхав на роботу автобусом.
-4. Я працював у офісі цілий день.
-5. О шостій я закінчив роботу і пішов додому.
-6. Увечері я приготував вечерю і подивився фільм.
+1. Він прочитав книгу три години, але не закінчив.
+   > [!error] прочитав
+   > [!answer] читав
+   > [!options] прочитав | читав | читає | прочитає
+   > [!explanation] Imperfective for duration, especially with "not finished"
+
+2. Вона вже писала листа і відправила його.
+   > [!error] писала
+   > [!answer] написала
+   > [!options] писала | написала | пише | напише
+   > [!explanation] Perfective with "вже" when action is completed
+
+3. Раптом він бачив свого друга на вулиці.
+   > [!error] бачив
+   > [!answer] побачив
+   > [!options] бачив | побачив | бачить | побачить
+   > [!explanation] Perfective with "раптом" for sudden events
+
+4. Я робив домашнє завдання і пішов гуляти.
+   > [!error] робив
+   > [!answer] зробив
+   > [!options] робив | зробив | роблю | зроблю
+   > [!explanation] Perfective for completed action in sequence
+
+5. Вона зателефонувала йому кожного дня минулого тижня.
+   > [!error] зателефонувала
+   > [!answer] телефонувала
+   > [!options] зателефонувала | телефонувала | телефонує | зателефонує
+   > [!explanation] Imperfective for repeated daily actions
+
+6. Він нарешті шукав свої ключі під диваном.
+   > [!error] шукав
+   > [!answer] знайшов
+   > [!options] шукав | знайшов | шукає | знайде
+   > [!explanation] Perfective with "нарешті" for achieved goal
+
+7. Я подивився телевізор весь вечір учора.
+   > [!error] подивився
+   > [!answer] дивився
+   > [!options] подивився | дивився | дивлюся | подивлюся
+   > [!explanation] Imperfective for "all evening" duration
+
+8. Коли мама зробила вечерю, зателефонував тато.
+   > [!error] зробила
+   > [!answer] робила
+   > [!options] зробила | робила | робить | зробить
+   > [!explanation] Imperfective for action interrupted by another event
+
+9. Він одразу розумів, у чому проблема.
+   > [!error] розумів
+   > [!answer] зрозумів
+   > [!options] розумів | зрозумів | розуміє | зрозуміє
+   > [!explanation] Perfective with "одразу" for instant understanding
+
+10. Діти програлися в парку цілий день.
+    > [!error] програлися
+    > [!answer] гралися
+    > [!options] програлися | гралися | граються | пограються
+    > [!explanation] Imperfective for "all day" duration
+
+11. Вчора я швидко писав цей лист і відправив його.
+    > [!error] писав
+    > [!answer] написав
+    > [!options] писав | написав | пишу | напишу
+    > [!explanation] Perfective for completed action before next one
+
+12. Вона забувала про зустріч і не прийшла.
+    > [!error] забувала
+    > [!answer] забула
+    > [!options] забувала | забула | забуває | забуде
+    > [!explanation] Perfective for single completed forgetting
+
+## unjumble: Yesterday's Events
+
+> Reorder the words to form correct sentences about yesterday's events.
+
+1. о / Вранці / я / сьомій / годині / рано / встав / швидко
+   > [!answer] Вранці я рано швидко встав о сьомій годині.
+   > (In the morning I quickly got up at seven.) [8 words]
+
+2. і / Я / снідав / читав / смачно / новини / в / телефоні
+   > [!answer] Я смачно снідав і читав новини в телефоні.
+   > (I ate breakfast and read news on my phone.) [8 words]
+
+3. на / Потім / я / роботу / поїхав / швидким / автобусом / новим
+   > [!answer] Потім я поїхав на роботу новим швидким автобусом.
+   > (Then I went to work by new fast bus.) [8 words]
+
+4. офісі / Я / у / працював / цілий / день / великому / нашому
+   > [!answer] Я працював у нашому великому офісі цілий день.
+   > (I worked in our big office all day.) [8 words]
+
+5. шостій / О / я / роботу / закінчив / і / пішов / швидко / додому
+   > [!answer] О шостій я закінчив роботу і швидко пішов додому.
+   > (At six I finished work and quickly went home.) [9 words]
+
+6. Увечері / вечерю / я / приготував / смачну / і / фільм / подивився / новий
+   > [!answer] Увечері я приготував смачну вечерю і подивився новий фільм.
+   > (In the evening I prepared dinner and watched a new film.) [9 words]
+
+7. книгу / Перед / сном / я / читав / цікаву / довго / українську
+   > [!answer] Перед сном я довго читав цікаву українську книгу.
+   > (Before bed I read an interesting Ukrainian book for a long time.) [8 words]
+
+8. вранці / Наступного / я / знову / прокинувся / рано / о / сьомій
+   > [!answer] Наступного вранці я знову прокинувся рано о сьомій.
+   > (The next morning I woke up early again at seven.) [8 words]
+
+9. день / Цей / був / дуже / робочий / типовий / звичайний / мій
+   > [!answer] Цей робочий день був мій дуже типовий звичайний.
+   > (This work day was my very typical ordinary.) [8 words]
+
+10. люблю / Я / такі / дні / спокійні / прості / звичайні / дуже
+    > [!answer] Я дуже люблю такі спокійні прості звичайні дні.
+    > (I really love such calm simple ordinary days.) [8 words]
+
+11. завжди / Робота / добре / моя / закінчується / вчасно / кожного / дня
+    > [!answer] Моя робота завжди добре закінчується вчасно кожного дня.
+    > (My work always ends well on time every day.) [8 words]
+
+12. спати / Увечері / я / лягаю / завжди / о / десятій / годині / рівно
+    > [!answer] Увечері я завжди лягаю спати рівно о десятій годині.
+    > (In the evening I always go to bed exactly at ten.) [9 words]
 
 ## quiz: Aspect in Past Tense Mastery
 

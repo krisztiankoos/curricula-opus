@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,7 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. order</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
       <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
@@ -1199,9 +1239,11 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Career Path Sequence</h3>
-      <p>Activity type: order</p>
-      <div class="btn-group"><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    <section id="activity-8" class="section"><div class="card"><h3>Career and Profession Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
     </div></section>
 
     <section id="activity-9" class="section"><div class="card"><h3>Profession Mastery</h3>
@@ -1235,7 +1277,7 @@ footer {
   </main><footer>Module 06 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Він був ___ (лікар).","answer":"лікарем","hints":["лікар"]},{"prompt":"Вона стала ___ (вчителька).","answer":"вчителькою","hints":["вчителька"]},{"prompt":"Я хочу стати ___ (програміст).","answer":"програмістом","hints":["програміст"]},{"prompt":"Мій брат працює ___ (інженер).","answer":"інженером","hints":["інженер"]},{"prompt":"Вона була ___ (актриса).","answer":"актрисою","hints":["актриса"]},{"prompt":"Він залишається моїм ___ (друг).","answer":"другом","hints":["друг"]},{"prompt":"Вона мріє стати ___ (письменниця).","answer":"письменницею","hints":["письменниця"]},{"prompt":"Це виявилося ___ (помилка).","answer":"помилкою","hints":["помилка"]},{"prompt":"Моя мама буде ___ (директорка).","answer":"директоркою","hints":["директорка"]},{"prompt":"Вони стали ___ (студенти).","answer":"студентами","hints":["студенти"]},{"prompt":"Він працював ___ (журналіст).","answer":"журналістом","hints":["журналіст"]},{"prompt":"Це залишається ___ (таємниця).","answer":"таємницею","hints":["таємниця"]}]}},{"id":"activity-1","type":"match-up","title":"Profession Forms","data":{"type":"match-up","pairs":[{"left":"лікар","right":"лікарем"},{"left":"вчителька","right":"вчителькою"},{"left":"інженер","right":"інженером"},{"left":"актриса","right":"актрисою"},{"left":"програміст","right":"програмістом"},{"left":"журналіст","right":"журналістом"},{"left":"письменниця","right":"письменницею"},{"left":"студент","right":"студентом"},{"left":"президент","right":"президентом"},{"left":"директор","right":"директором"},{"left":"друг","right":"другом"},{"left":"таємниця","right":"таємницею"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["лікарем","добрим","Він","відомим","був","у","нашому","місті"],"answer":"Він був відомим добрим лікарем у нашому місті.","translation":"He was a famous good doctor in our city."},{"words":["вчителькою","української","стала","Вона","мови","після","університету","чудовою"],"answer":"Вона стала чудовою вчителькою української мови після університету.","translation":"She became a wonderful Ukrainian language teacher after university."},{"words":["програмістом","хочу","Я","стати","у","великій","компанії","успішним"],"answer":"Я хочу стати успішним програмістом у великій компанії.","translation":"I want to become a successful programmer at a big company."},{"words":["інженером","досвідченим","працює","Мій","брат","на","заводі","старший"],"answer":"Мій старший брат працює досвідченим інженером на заводі.","translation":"My older brother works as an experienced engineer at a factory."},{"words":["актрисою","мріє","Вона","стати","відомою","з","самого","дитинства"],"answer":"Вона мріє стати відомою актрисою з самого дитинства.","translation":"She dreams of becoming a famous actress since childhood."},{"words":["другом","Він","моїм","найкращим","залишається","протягом","багатьох","років"],"answer":"Він залишається моїм найкращим другом протягом багатьох років.","translation":"He remains my best friend for many years."},{"words":["журналісткою","буде","Вона","відомою","у","міжнародному","виданні","скоро"],"answer":"Вона скоро буде відомою журналісткою у міжнародному виданні.","translation":"She will soon be a famous journalist at an international publication."},{"words":["помилкою","великою","виявилося","Це","на","жаль","моєю","серйозною"],"answer":"Це, на жаль, виявилося моєю серйозною великою помилкою.","translation":"This, unfortunately, turned out to be my serious big mistake."},{"words":["президентом","хоче","Він","стати","своєї","великої","компанії","успішним"],"answer":"Він хоче стати успішним президентом своєї великої компанії.","translation":"He wants to become a successful president of his big company."},{"words":["письменником","відомим","став","Він","після","публікації","своєї","книги"],"answer":"Він став відомим письменником після публікації своєї книги.","translation":"He became a famous writer after publishing his book."},{"words":["студентами","найкращими","стали","Вони","у","своєму","університеті","нашому"],"answer":"Вони стали найкращими студентами у нашому університеті.","translation":"They became the best students at our university."},{"words":["таємницею","великою","залишається","Це","для","всіх","до","сьогодні"],"answer":"Це залишається великою таємницею для всіх до сьогодні.","translation":"This remains a big secret for everyone until today."}]}},{"id":"activity-3","type":"quiz","title":"Correct Form","data":{"type":"quiz","questions":[{"question":"\"He was a teacher\" in Ukrainian:","options":["Він був вчитель.","Він був вчителем.","Він був вчителю.","Він був вчителя."],"correctIndex":1,"explanation":""},{"question":"\"She wants to become a doctor\":","options":["Вона хоче стати лікар.","Вона хоче стати лікаря.","Вона хоче стати лікаркою.","Вона хоче стати лікарці."],"correctIndex":2,"explanation":""},{"question":"In present tense, \"He is a doctor\" is:","options":["Він лікар.","Він лікарем.","Він є лікарем.","Він лікаря."],"correctIndex":0,"explanation":""},{"question":"\"They became friends\" in Ukrainian:","options":["Вони стали друзями.","Вони стали друзів.","Вони стали друзі.","Вони стали друзям."],"correctIndex":0,"explanation":""},{"question":"\"He works as an engineer\":","options":["Він працює інженер.","Він працює інженером.","Він працює інженера.","Він працює з інженером."],"correctIndex":1,"explanation":""},{"question":"\"She remains a friend\":","options":["Вона залишається подруга.","Вона залишається подругою.","Вона залишається подругу.","Вона залишається подрузі."],"correctIndex":1,"explanation":""},{"question":"\"He will be a president\":","options":["Він буде президент.","Він буде президентом.","Він буде президента.","Він буде президенту."],"correctIndex":1,"explanation":""},{"question":"\"This turned out to be a mistake\":","options":["Це виявилося помилка.","Це виявилося помилкою.","Це виявилося помилку.","Це виявилося помилці."],"correctIndex":1,"explanation":""},{"question":"\"She was an actress\":","options":["Вона була актриса.","Вона була актрисою.","Вона була актрису.","Вона була актрисі."],"correctIndex":1,"explanation":""},{"question":"\"I dream of becoming a writer\":","options":["Я мрію стати письменник.","Я мрію стати письменником.","Я мрію стати письменника.","Я мрію стати з письменником."],"correctIndex":1,"explanation":""},{"question":"\"My mom was a teacher\":","options":["Моя мама була вчителька.","Моя мама була вчителькою.","Моя мама була вчительку.","Моя мама була вчительці."],"correctIndex":1,"explanation":""},{"question":"\"He worked as a journalist\":","options":["Він працював журналістом.","Він працював журналіст.","Він працював журналіста.","Він працював з журналістом."],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Being and Becoming","data":{"type":"true-false","statements":[{"statement":"Бути takes instrumental in past and future tense.","isTrue":true,"explanation":""},{"statement":"In present tense, you always need instrumental with бути.","isTrue":false,"explanation":""},{"statement":"Стати is the perfective form of \"to become.\"","isTrue":true,"explanation":""},{"statement":"Працювати + instrumental means \"to work with.\"","isTrue":false,"explanation":""},{"statement":"Залишатися takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"Він лікар\" and \"Він був лікарем\" use same case.","isTrue":false,"explanation":""},{"statement":"Ставати is the imperfective form of \"to become.\"","isTrue":true,"explanation":""},{"statement":"You can say \"Я хочу бути лікар\" in Ukrainian.","isTrue":false,"explanation":""},{"statement":"Feminine professions also use instrumental.","isTrue":true,"explanation":""},{"statement":"\"Виявитися\" means \"to turn out to be.\"","isTrue":true,"explanation":""},{"statement":"\"Мріяти стати\" takes nominative case.","isTrue":false,"explanation":""},{"statement":"Plural professions also use instrumental.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Masculine vs Feminine","data":{"type":"group-sort","groups":[{"id":"masculine-form","name":"Masculine Form","items":["лікар","вчитель","актор","програміст","журналіст","письменник"]},{"id":"feminine-form","name":"Feminine Form","items":["лікарка","вчителька","актриса","програмістка","журналістка","письменниця"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Career Dreams","data":{"type":"fill-blank","items":[{"prompt":"Коли я був маленьким, я хотів стати ___ (пілот).","answer":"пілотом","hints":["пілот"]},{"prompt":"Моя сестра мріє стати ___ (балерина).","answer":"балериною","hints":["балерина"]},{"prompt":"Він планує працювати ___ (архітектор).","answer":"архітектором","hints":["архітектор"]},{"prompt":"Вона хоче бути ___ (художниця).","answer":"художницею","hints":["художниця"]},{"prompt":"Мій друг став успішним ___ (бізнесмен).","answer":"бізнесменом","hints":["бізнесмен"]},{"prompt":"Батько все життя працював ___ (механік).","answer":"механіком","hints":["механік"]},{"prompt":"Дідусь був ___ (військовий).","answer":"військовим","hints":["військовий"]},{"prompt":"Бабуся завжди була ___ (домогосподарка).","answer":"домогосподаркою","hints":["домогосподарка"]},{"prompt":"Він хоче стати ___ (науковець).","answer":"науковцем","hints":["науковець"]},{"prompt":"Вона мріє бути ___ (співачка).","answer":"співачкою","hints":["співачка"]},{"prompt":"Мій брат став ___ (спортсмен).","answer":"спортсменом","hints":["спортсмен"]},{"prompt":"Вона працює ___ (перекладачка).","answer":"перекладачкою","hints":["перекладачка"]}]}},{"id":"activity-7","type":"select","title":"Correct Verb Form","data":{"type":"select","items":[{"question":"Він ___ лікарем після університету.","options":[{"text":"став","correct":true},{"text":"ставав","correct":false},{"text":"залишався","correct":false},{"text":"працювати","correct":false}]},{"question":"Вона ___ вчителькою вже десять років.","options":[{"text":"стала","correct":false},{"text":"ставала","correct":false},{"text":"залишається","correct":true},{"text":"буде","correct":false}]},{"question":"Я хочу ___ програмістом.","options":[{"text":"стати","correct":true},{"text":"ставати","correct":false},{"text":"залишатися","correct":false},{"text":"залишитися","correct":false}]},{"question":"Він ___ інженером на заводі.","options":[{"text":"став","correct":false},{"text":"стає","correct":false},{"text":"працює","correct":true},{"text":"залишається","correct":false}]},{"question":"Вона поступово ___ популярною.","options":[{"text":"стала","correct":false},{"text":"стає","correct":true},{"text":"залишилася","correct":false},{"text":"працює","correct":false}]},{"question":"Мама ___ медсестрою в лікарні.","options":[{"text":"стала","correct":false},{"text":"ставала","correct":false},{"text":"залишалася","correct":false},{"text":"була","correct":true}]},{"question":"Він хоче ___ моїм другом.","options":[{"text":"стати","correct":false},{"text":"ставати","correct":false},{"text":"залишитися","correct":true},{"text":"працювати","correct":false}]},{"question":"Це ___ великою помилкою.","options":[{"text":"виявилося","correct":true},{"text":"залишилося","correct":false},{"text":"стало","correct":false},{"text":"було","correct":false}]},{"question":"Вона ___ журналісткою після інституту.","options":[{"text":"залишилася","correct":false},{"text":"буде","correct":true},{"text":"працювала","correct":false},{"text":"виявилася","correct":false}]},{"question":"Він ___ директором компанії.","options":[{"text":"став","correct":true},{"text":"ставав","correct":false},{"text":"залишився","correct":false},{"text":"працювати","correct":false}]},{"question":"Вона ___ актрисою з дитинства.","options":[{"text":"стала","correct":false},{"text":"мріє стати","correct":true},{"text":"залишається","correct":false},{"text":"працює","correct":false}]},{"question":"Батько все життя ___ водієм.","options":[{"text":"став","correct":false},{"text":"ставав","correct":false},{"text":"працював","correct":true},{"text":"залишався","correct":false}]}]}},{"id":"activity-8","type":"order","title":"Career Path Sequence","data":{"type":"order","items":["Він вступив до університету.","Він вивчав медицину п'ять років.","Він закінчив університет.","Він став молодим лікарем.","Він працював лікарем десять років.","Він став головним лікарем лікарні."],"correctOrder":[0,1,2,3,4,5]}},{"id":"activity-9","type":"quiz","title":"Profession Mastery","data":{"type":"quiz","questions":[{"question":"\"Вона стала вчителькою\" — why instrumental?","options":["Direct object","Becoming/profession with стати","Location","Accompaniment"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"He was a doctor\"?","options":["Він був лікар.","Він був лікарем.","Він був лікаря.","Він був з лікарем."],"correctIndex":1,"explanation":""},{"question":"In present tense, \"She is a teacher\" is:","options":["Вона вчителька.","Вона вчителькою.","Вона є вчителькою.","Вона вчительці."],"correctIndex":0,"explanation":""},{"question":"\"Працювати лікарем\" means:","options":["to work with a doctor","to work as a doctor","to become a doctor","to remain a doctor"],"correctIndex":1,"explanation":""},{"question":"The difference between \"стати\" and \"ставати\":","options":["Стати = completed, ставати = ongoing","They're the same","Ставати = completed, стати = ongoing","One is formal, one informal"],"correctIndex":0,"explanation":""},{"question":"\"Залишатися другом\" means:","options":["to become a friend","to remain a friend","to work as a friend","to be called a friend"],"correctIndex":1,"explanation":""},{"question":"Which verb does NOT take instrumental?","options":["бути (past/future)","стати","бачити","працювати"],"correctIndex":2,"explanation":""},{"question":"\"Виявитися помилкою\" means:","options":["to turn out to be a mistake","to become a mistake","to remain a mistake","to work as a mistake"],"correctIndex":0,"explanation":""},{"question":"Feminine profession forms end in:","options":["-ом/-ем","-ою/-ею/-ицею","-ові/-у","-і"],"correctIndex":1,"explanation":""},{"question":"\"Вона буде журналісткою\" is in which tense?","options":["Past","Present","Future","Conditional"],"correctIndex":2,"explanation":""},{"question":"\"Мріяти стати\" requires:","options":["Nominative","Genitive","Dative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which profession pair is correct (m/f)?","options":["лікар/лікарка","лікар/лікарок","лікарь/лікарка","лікар/лікареса"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Він був ___ (лікар).","answer":"лікарем","hints":["лікар"]},{"prompt":"Вона стала ___ (вчителька).","answer":"вчителькою","hints":["вчителька"]},{"prompt":"Я хочу стати ___ (програміст).","answer":"програмістом","hints":["програміст"]},{"prompt":"Мій брат працює ___ (інженер).","answer":"інженером","hints":["інженер"]},{"prompt":"Вона була ___ (актриса).","answer":"актрисою","hints":["актриса"]},{"prompt":"Він залишається моїм ___ (друг).","answer":"другом","hints":["друг"]},{"prompt":"Вона мріє стати ___ (письменниця).","answer":"письменницею","hints":["письменниця"]},{"prompt":"Це виявилося ___ (помилка).","answer":"помилкою","hints":["помилка"]},{"prompt":"Моя мама буде ___ (директорка).","answer":"директоркою","hints":["директорка"]},{"prompt":"Вони стали ___ (студенти).","answer":"студентами","hints":["студенти"]},{"prompt":"Він працював ___ (журналіст).","answer":"журналістом","hints":["журналіст"]},{"prompt":"Це залишається ___ (таємниця).","answer":"таємницею","hints":["таємниця"]}]}},{"id":"activity-1","type":"match-up","title":"Profession Forms","data":{"type":"match-up","pairs":[{"left":"лікар","right":"лікарем"},{"left":"вчителька","right":"вчителькою"},{"left":"інженер","right":"інженером"},{"left":"актриса","right":"актрисою"},{"left":"програміст","right":"програмістом"},{"left":"журналіст","right":"журналістом"},{"left":"письменниця","right":"письменницею"},{"left":"студент","right":"студентом"},{"left":"президент","right":"президентом"},{"left":"директор","right":"директором"},{"left":"друг","right":"другом"},{"left":"таємниця","right":"таємницею"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["лікарем","добрим","Він","відомим","був","у","нашому","місті"],"answer":"Він був відомим добрим лікарем у нашому місті.","translation":"He was a famous good doctor in our city."},{"words":["вчителькою","української","стала","Вона","мови","після","університету","чудовою"],"answer":"Вона стала чудовою вчителькою української мови після університету.","translation":"She became a wonderful Ukrainian language teacher after university."},{"words":["програмістом","хочу","Я","стати","у","великій","компанії","успішним"],"answer":"Я хочу стати успішним програмістом у великій компанії.","translation":"I want to become a successful programmer at a big company."},{"words":["інженером","досвідченим","працює","Мій","брат","на","заводі","старший"],"answer":"Мій старший брат працює досвідченим інженером на заводі.","translation":"My older brother works as an experienced engineer at a factory."},{"words":["актрисою","мріє","Вона","стати","відомою","з","самого","дитинства"],"answer":"Вона мріє стати відомою актрисою з самого дитинства.","translation":"She dreams of becoming a famous actress since childhood."},{"words":["другом","Він","моїм","найкращим","залишається","протягом","багатьох","років"],"answer":"Він залишається моїм найкращим другом протягом багатьох років.","translation":"He remains my best friend for many years."},{"words":["журналісткою","буде","Вона","відомою","у","міжнародному","виданні","скоро"],"answer":"Вона скоро буде відомою журналісткою у міжнародному виданні.","translation":"She will soon be a famous journalist at an international publication."},{"words":["помилкою","великою","виявилося","Це","на","жаль","моєю","серйозною"],"answer":"Це, на жаль, виявилося моєю серйозною великою помилкою.","translation":"This, unfortunately, turned out to be my serious big mistake."},{"words":["президентом","хоче","Він","стати","своєї","великої","компанії","успішним"],"answer":"Він хоче стати успішним президентом своєї великої компанії.","translation":"He wants to become a successful president of his big company."},{"words":["письменником","відомим","став","Він","після","публікації","своєї","книги"],"answer":"Він став відомим письменником після публікації своєї книги.","translation":"He became a famous writer after publishing his book."},{"words":["студентами","найкращими","стали","Вони","у","своєму","університеті","нашому"],"answer":"Вони стали найкращими студентами у нашому університеті.","translation":"They became the best students at our university."},{"words":["таємницею","великою","залишається","Це","для","всіх","до","сьогодні"],"answer":"Це залишається великою таємницею для всіх до сьогодні.","translation":"This remains a big secret for everyone until today."}]}},{"id":"activity-3","type":"quiz","title":"Correct Form","data":{"type":"quiz","questions":[{"question":"\"He was a teacher\" in Ukrainian:","options":["Він був вчитель.","Він був вчителем.","Він був вчителю.","Він був вчителя."],"correctIndex":1,"explanation":""},{"question":"\"She wants to become a doctor\":","options":["Вона хоче стати лікар.","Вона хоче стати лікаря.","Вона хоче стати лікаркою.","Вона хоче стати лікарці."],"correctIndex":2,"explanation":""},{"question":"In present tense, \"He is a doctor\" is:","options":["Він лікар.","Він лікарем.","Він є лікарем.","Він лікаря."],"correctIndex":0,"explanation":""},{"question":"\"They became friends\" in Ukrainian:","options":["Вони стали друзями.","Вони стали друзів.","Вони стали друзі.","Вони стали друзям."],"correctIndex":0,"explanation":""},{"question":"\"He works as an engineer\":","options":["Він працює інженер.","Він працює інженером.","Він працює інженера.","Він працює з інженером."],"correctIndex":1,"explanation":""},{"question":"\"She remains a friend\":","options":["Вона залишається подруга.","Вона залишається подругою.","Вона залишається подругу.","Вона залишається подрузі."],"correctIndex":1,"explanation":""},{"question":"\"He will be a president\":","options":["Він буде президент.","Він буде президентом.","Він буде президента.","Він буде президенту."],"correctIndex":1,"explanation":""},{"question":"\"This turned out to be a mistake\":","options":["Це виявилося помилка.","Це виявилося помилкою.","Це виявилося помилку.","Це виявилося помилці."],"correctIndex":1,"explanation":""},{"question":"\"She was an actress\":","options":["Вона була актриса.","Вона була актрисою.","Вона була актрису.","Вона була актрисі."],"correctIndex":1,"explanation":""},{"question":"\"I dream of becoming a writer\":","options":["Я мрію стати письменник.","Я мрію стати письменником.","Я мрію стати письменника.","Я мрію стати з письменником."],"correctIndex":1,"explanation":""},{"question":"\"My mom was a teacher\":","options":["Моя мама була вчителька.","Моя мама була вчителькою.","Моя мама була вчительку.","Моя мама була вчительці."],"correctIndex":1,"explanation":""},{"question":"\"He worked as a journalist\":","options":["Він працював журналістом.","Він працював журналіст.","Він працював журналіста.","Він працював з журналістом."],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Being and Becoming","data":{"type":"true-false","statements":[{"statement":"Бути takes instrumental in past and future tense.","isTrue":true,"explanation":""},{"statement":"In present tense, you always need instrumental with бути.","isTrue":false,"explanation":""},{"statement":"Стати is the perfective form of \"to become.\"","isTrue":true,"explanation":""},{"statement":"Працювати + instrumental means \"to work with.\"","isTrue":false,"explanation":""},{"statement":"Залишатися takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"Він лікар\" and \"Він був лікарем\" use same case.","isTrue":false,"explanation":""},{"statement":"Ставати is the imperfective form of \"to become.\"","isTrue":true,"explanation":""},{"statement":"You can say \"Я хочу бути лікар\" in Ukrainian.","isTrue":false,"explanation":""},{"statement":"Feminine professions also use instrumental.","isTrue":true,"explanation":""},{"statement":"\"Виявитися\" means \"to turn out to be.\"","isTrue":true,"explanation":""},{"statement":"\"Мріяти стати\" takes nominative case.","isTrue":false,"explanation":""},{"statement":"Plural professions also use instrumental.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Masculine vs Feminine","data":{"type":"group-sort","groups":[{"id":"masculine-form","name":"Masculine Form","items":["лікар","вчитель","актор","програміст","журналіст","письменник"]},{"id":"feminine-form","name":"Feminine Form","items":["лікарка","вчителька","актриса","програмістка","журналістка","письменниця"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Career Dreams","data":{"type":"fill-blank","items":[{"prompt":"Коли я був маленьким, я хотів стати ___ (пілот).","answer":"пілотом","hints":["пілот"]},{"prompt":"Моя сестра мріє стати ___ (балерина).","answer":"балериною","hints":["балерина"]},{"prompt":"Він планує працювати ___ (архітектор).","answer":"архітектором","hints":["архітектор"]},{"prompt":"Вона хоче бути ___ (художниця).","answer":"художницею","hints":["художниця"]},{"prompt":"Мій друг став успішним ___ (бізнесмен).","answer":"бізнесменом","hints":["бізнесмен"]},{"prompt":"Батько все життя працював ___ (механік).","answer":"механіком","hints":["механік"]},{"prompt":"Дідусь був ___ (військовий).","answer":"військовим","hints":["військовий"]},{"prompt":"Бабуся завжди була ___ (домогосподарка).","answer":"домогосподаркою","hints":["домогосподарка"]},{"prompt":"Він хоче стати ___ (науковець).","answer":"науковцем","hints":["науковець"]},{"prompt":"Вона мріє бути ___ (співачка).","answer":"співачкою","hints":["співачка"]},{"prompt":"Мій брат став ___ (спортсмен).","answer":"спортсменом","hints":["спортсмен"]},{"prompt":"Вона працює ___ (перекладачка).","answer":"перекладачкою","hints":["перекладачка"]}]}},{"id":"activity-7","type":"select","title":"Correct Verb Form","data":{"type":"select","items":[{"question":"Він ___ лікарем після університету.","options":[{"text":"став","correct":true},{"text":"ставав","correct":false},{"text":"залишався","correct":false},{"text":"працювати","correct":false}]},{"question":"Вона ___ вчителькою вже десять років.","options":[{"text":"стала","correct":false},{"text":"ставала","correct":false},{"text":"залишається","correct":true},{"text":"буде","correct":false}]},{"question":"Я хочу ___ програмістом.","options":[{"text":"стати","correct":true},{"text":"ставати","correct":false},{"text":"залишатися","correct":false},{"text":"залишитися","correct":false}]},{"question":"Він ___ інженером на заводі.","options":[{"text":"став","correct":false},{"text":"стає","correct":false},{"text":"працює","correct":true},{"text":"залишається","correct":false}]},{"question":"Вона поступово ___ популярною.","options":[{"text":"стала","correct":false},{"text":"стає","correct":true},{"text":"залишилася","correct":false},{"text":"працює","correct":false}]},{"question":"Мама ___ медсестрою в лікарні.","options":[{"text":"стала","correct":false},{"text":"ставала","correct":false},{"text":"залишалася","correct":false},{"text":"була","correct":true}]},{"question":"Він хоче ___ моїм другом.","options":[{"text":"стати","correct":false},{"text":"ставати","correct":false},{"text":"залишитися","correct":true},{"text":"працювати","correct":false}]},{"question":"Це ___ великою помилкою.","options":[{"text":"виявилося","correct":true},{"text":"залишилося","correct":false},{"text":"стало","correct":false},{"text":"було","correct":false}]},{"question":"Вона ___ журналісткою після інституту.","options":[{"text":"залишилася","correct":false},{"text":"буде","correct":true},{"text":"працювала","correct":false},{"text":"виявилася","correct":false}]},{"question":"Він ___ директором компанії.","options":[{"text":"став","correct":true},{"text":"ставав","correct":false},{"text":"залишився","correct":false},{"text":"працювати","correct":false}]},{"question":"Вона ___ актрисою з дитинства.","options":[{"text":"стала","correct":false},{"text":"мріє стати","correct":true},{"text":"залишається","correct":false},{"text":"працює","correct":false}]},{"question":"Батько все життя ___ водієм.","options":[{"text":"став","correct":false},{"text":"ставав","correct":false},{"text":"працював","correct":true},{"text":"залишався","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Career and Profession Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["вчителькою","Вона","стала","хорошою","після","університету","відомою"],"answer":"Вона стала хорошою відомою вчителькою після університету.","translation":"She became a good famous teacher after university."},{"words":["лікарем","Він","працює","досвідченим","в","лікарні","нашій","великій"],"answer":"Він працює досвідченим лікарем в нашій великій лікарні.","translation":"He works as an experienced doctor in our big hospital."},{"words":["інженером","Мій","батько","став","успішним","молодим","дуже"],"answer":"Мій батько став дуже успішним молодим інженером.","translation":"My father became a very successful young engineer."},{"words":["актрисою","Вона","була","відомою","в","молодості","своїй","дуже"],"answer":"Вона була дуже відомою актрисою в своїй молодості.","translation":"She was a very famous actress in her youth."},{"words":["студентом","Він","був","найкращим","на","курсі","своєму","завжди"],"answer":"Він завжди був найкращим студентом на своєму курсі.","translation":"He was always the best student in his year."},{"words":["директоркою","Вона","стала","успішною","компанії","великої","нашої"],"answer":"Вона стала успішною директоркою нашої великої компанії.","translation":"She became a successful director of our big company."},{"words":["музикантом","Мій","брат","працює","професійним","в","оркестрі","симфонічному"],"answer":"Мій брат працює професійним музикантом в симфонічному оркестрі.","translation":"My brother works as a professional musician in symphony orchestra."},{"words":["письменником","Він","став","відомим","після","книги","першої","своєї"],"answer":"Він став відомим письменником після своєї першої книги.","translation":"He became a famous writer after his first book."},{"words":["лікаркою","Моя","сестра","хоче","стати","хорошою","дуже","дитячою"],"answer":"Моя сестра хоче стати дуже хорошою дитячою лікаркою.","translation":"My sister wants to become a very good children's doctor."},{"words":["вчителем","Він","працював","протягом","років","двадцяти","школі","в","нашій"],"answer":"Він працював вчителем в нашій школі протягом двадцяти років.","translation":"He worked as a teacher in our school for twenty years."},{"words":["юристкою","Вона","була","успішною","молодою","в","фірмі","великій"],"answer":"Вона була успішною молодою юристкою в великій фірмі.","translation":"She was a successful young lawyer in a big firm."},{"words":["програмістом","Мій","друг","став","хорошим","після","курсів","інтенсивних"],"answer":"Мій друг став хорошим програмістом після інтенсивних курсів.","translation":"My friend became a good programmer after intensive courses."}]}},{"id":"activity-9","type":"quiz","title":"Profession Mastery","data":{"type":"quiz","questions":[{"question":"\"Вона стала вчителькою\" — why instrumental?","options":["Direct object","Becoming/profession with стати","Location","Accompaniment"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"He was a doctor\"?","options":["Він був лікар.","Він був лікарем.","Він був лікаря.","Він був з лікарем."],"correctIndex":1,"explanation":""},{"question":"In present tense, \"She is a teacher\" is:","options":["Вона вчителька.","Вона вчителькою.","Вона є вчителькою.","Вона вчительці."],"correctIndex":0,"explanation":""},{"question":"\"Працювати лікарем\" means:","options":["to work with a doctor","to work as a doctor","to become a doctor","to remain a doctor"],"correctIndex":1,"explanation":""},{"question":"The difference between \"стати\" and \"ставати\":","options":["Стати = completed, ставати = ongoing","They're the same","Ставати = completed, стати = ongoing","One is formal, one informal"],"correctIndex":0,"explanation":""},{"question":"\"Залишатися другом\" means:","options":["to become a friend","to remain a friend","to work as a friend","to be called a friend"],"correctIndex":1,"explanation":""},{"question":"Which verb does NOT take instrumental?","options":["бути (past/future)","стати","бачити","працювати"],"correctIndex":2,"explanation":""},{"question":"\"Виявитися помилкою\" means:","options":["to turn out to be a mistake","to become a mistake","to remain a mistake","to work as a mistake"],"correctIndex":0,"explanation":""},{"question":"Feminine profession forms end in:","options":["-ом/-ем","-ою/-ею/-ицею","-ові/-у","-і"],"correctIndex":1,"explanation":""},{"question":"\"Вона буде журналісткою\" is in which tense?","options":["Past","Present","Future","Conditional"],"correctIndex":2,"explanation":""},{"question":"\"Мріяти стати\" requires:","options":["Nominative","Genitive","Dative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which profession pair is correct (m/f)?","options":["лікар/лікарка","лікар/лікарок","лікарь/лікарка","лікар/лікареса"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"бути","translit":"","en":"to be","note":"+ inst in past/future"},{"uk":"стати","translit":"","en":"to become (pf)","note":"+ inst"},{"uk":"ставати","translit":"","en":"to become (impf)","note":"+ inst"},{"uk":"залишатися","translit":"","en":"to remain","note":"+ inst"},{"uk":"працювати","translit":"","en":"to work (as)","note":"+ inst"},{"uk":"мріяти","translit":"","en":"to dream","note":""},{"uk":"планувати","translit":"","en":"to plan","note":""},{"uk":"виявитися","translit":"","en":"to turn out to be","note":"+ inst"},{"uk":"здаватися","translit":"","en":"to seem","note":"+ inst"},{"uk":"лікар","translit":"","en":"doctor (m)","note":"лікарем"},{"uk":"лікарка","translit":"","en":"doctor (f)","note":"лікаркою"},{"uk":"вчитель","translit":"","en":"teacher (m)","note":"вчителем"},{"uk":"вчителька","translit":"","en":"teacher (f)","note":"вчителькою"},{"uk":"інженер","translit":"","en":"engineer (m)","note":"інженером"},{"uk":"інженерка","translit":"","en":"engineer (f)","note":"інженеркою"},{"uk":"програміст","translit":"","en":"programmer (m)","note":"програмістом"},{"uk":"програмістка","translit":"","en":"programmer (f)","note":"програмісткою"},{"uk":"актор","translit":"","en":"actor","note":"актором"},{"uk":"актриса","translit":"","en":"actress","note":"актрисою"},{"uk":"журналіст","translit":"","en":"journalist (m)","note":"журналістом"},{"uk":"журналістка","translit":"","en":"journalist (f)","note":"журналісткою"},{"uk":"письменник","translit":"","en":"writer (m)","note":"письменником"},{"uk":"письменниця","translit":"","en":"writer (f)","note":"письменницею"},{"uk":"президент","translit":"","en":"president","note":"президентом"},{"uk":"директор","translit":"","en":"director (m)","note":"директором"},{"uk":"директорка","translit":"","en":"director (f)","note":"директоркою"},{"uk":"таємниця","translit":"","en":"secret, mystery","note":"таємницею"},{"uk":"помилка","translit":"","en":"mistake","note":"помилкою"},{"uk":"людина","translit":"","en":"person","note":"людиною"},{"uk":"пілот","translit":"","en":"pilot (m)","note":"пілотом"},{"uk":"пілотка","translit":"","en":"pilot (f)","note":"пілоткою"},{"uk":"архітектор","translit":"","en":"architect (m)","note":"архітектором"},{"uk":"архітекторка","translit":"","en":"architect (f)","note":"архітекторкою"},{"uk":"науковець","translit":"","en":"scientist (m)","note":"науковцем"},{"uk":"науковиця","translit":"","en":"scientist (f)","note":"науковицею"},{"uk":"спортсмен","translit":"","en":"athlete (m)","note":"спортсменом"},{"uk":"спортсменка","translit":"","en":"athlete (f)","note":"спортсменкою"},{"uk":"співак","translit":"","en":"singer (m)","note":"співаком"},{"uk":"співачка","translit":"","en":"singer (f)","note":"співачкою"},{"uk":"художник","translit":"","en":"artist (m)","note":"художником"},{"uk":"художниця","translit":"","en":"artist (f)","note":"художницею"},{"uk":"перекладач","translit":"","en":"translator (m)","note":"перекладачем"},{"uk":"перекладачка","translit":"","en":"translator (f)","note":"перекладачкою"},{"uk":"фотограф","translit":"","en":"photographer (m)","note":"фотографом"},{"uk":"фотографка","translit":"","en":"photographer (f)","note":"фотографкою"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2560,6 +2602,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

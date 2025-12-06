@@ -530,16 +530,57 @@ grammar:
     - [x] University
     > Faculties are university divisions.
 
-## order: A Student's Day
+## unjumble: Education and Learning Sentences
 
-> Put these activities in the correct order for a typical student day.
+> Rearrange the words to form correct sentences about education and learning.
 
-1. Прокинутися рано вранці. (Wake up early in the morning.)
-2. Позавтракати та зібратися. (Have breakfast and get ready.)
-3. Прийти на лекцію о дев'ятій. (Arrive at the lecture at nine.)
-4. Зробити нотатки на семінарі. (Take notes at the seminar.)
-5. Пообідати в їдальні. (Have lunch in the cafeteria.)
-6. Готуватися до іспиту в бібліотеці. (Study for exam in the library.)
+1. Я | вчуся | в | університеті | на | третьому | курсі
+   > [!answer] Я вчуся в університеті на третьому курсі.
+   > (I study at university in the third year.)
+
+2. Урок | математики | починається | о | дев'ятій | ранку
+   > [!answer] Урок математики починається о дев'ятій ранку.
+   > (The math lesson starts at nine in the morning.)
+
+3. Студенти | готуються | до | іспиту | в | бібліотеці | сьогодні
+   > [!answer] Студенти готуються до іспиту в бібліотеці сьогодні.
+   > (Students are preparing for the exam in the library today.)
+
+4. Вчитель | пояснює | нову | тему | учням | дуже | чітко
+   > [!answer] Вчитель пояснює нову тему учням дуже чітко.
+   > (The teacher explains the new topic to students very clearly.)
+
+5. Мій | улюблений | предмет | — | це | історія | України
+   > [!answer] Мій улюблений предмет — це історія України.
+   > (My favorite subject is history of Ukraine.)
+
+6. Я | записую | конспект | лекції | в | зошит | кожного | дня
+   > [!answer] Я записую конспект лекції в зошит кожного дня.
+   > (I write notes of the lecture in my notebook every day.)
+
+7. Завтра | складаю | важливий | іспит | з | української | мови
+   > [!answer] Завтра складаю важливий іспит з української мови.
+   > (Tomorrow I'm taking an important Ukrainian language exam.)
+
+8. Вона | вивчає | англійську | мову | вже | п'ять | років
+   > [!answer] Вона вивчає англійську мову вже п'ять років.
+   > (She has been studying English for five years.)
+
+9. На | перерві | учні | виходять | на | подвір'я | погуляти
+   > [!answer] На перерві учні виходять на подвір'я погуляти.
+   > (During the break students go out to the yard.)
+
+10. Підручник | з | фізики | дуже | товстий | і | важкий
+    > [!answer] Підручник з фізики дуже товстий і важкий.
+    > (The physics textbook is very thick and heavy.)
+
+11. Він | не | розуміє | цю | складну | математичну | тему
+    > [!answer] Він не розуміє цю складну математичну тему.
+    > (He doesn't understand this difficult math topic.)
+
+12. Вона | отримала | диплом | бакалавра | після | чотирьох | років
+    > [!answer] Вона отримала диплом бакалавра після чотирьох років.
+    > (She received a bachelor's diploma after four years.)
 
 ## quiz: Education System
 

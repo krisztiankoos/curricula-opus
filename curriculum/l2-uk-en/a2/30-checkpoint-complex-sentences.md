@@ -603,27 +603,57 @@ Congratulations on completing Phase A2.3! This checkpoint reviews everything you
     - [ ] Simultaneous action
     - [ ] Cause of action
 
-## order: Building Complex Narratives
+## unjumble: Complex Sentence Review
 
-> Order these sentence types from simplest to most complex.
+> Rearrange the words to form correct complex sentences.
 
-1. Simple sentence (Я читаю книгу.)
-   > One clause, no conjunction
+1. я | не | прийшов | тому | що | був | хворий
+   > [!answer] Я не прийшов, тому що був хворий.
+   > (I didn't come because I was sick.)
 
-2. Sentence with sequence (Спочатку я читав, потім спав.)
-   > Two clauses, time sequence
+2. він | сказав | що | хоче | допомогти
+   > [!answer] Він сказав, що хоче допомогти.
+   > (He said that he wants to help.)
 
-3. Causal sentence (Я не прийшов, тому що був хворий.)
-   > Main + reason clause
+3. чоловік | який | там | стоїть | мій | друг
+   > [!answer] Чоловік, який там стоїть, — мій друг.
+   > (The man who is standing there is my friend.)
 
-4. Purpose sentence (Я прийшов, щоб допомогти.)
-   > Main + purpose clause
+4. коли | я | прийшов | вона | вже | пішла
+   > [!answer] Коли я прийшов, вона вже пішла.
+   > (When I came, she had already left.)
 
-5. Relative sentence (Чоловік, який там стоїть, — мій друг.)
-   > Embedded relative clause
+5. я | вчуся | щоб | знайти | гарну | роботу
+   > [!answer] Я вчуся, щоб знайти гарну роботу.
+   > (I'm studying to find a good job.)
 
-6. Multiple clauses (Коли я прийшов, він сказав, що хоче, щоб я допоміг.)
-   > Time + reported + purpose
+6. хоча | було | холодно | він | вийшов | без | куртки
+   > [!answer] Хоча було холодно, він вийшов без куртки.
+   > (Although it was cold, he went out without a jacket.)
+
+7. вона | запитала | чи | я | буду | вдома | завтра
+   > [!answer] Вона запитала, чи я буду вдома завтра.
+   > (She asked if I would be home tomorrow.)
+
+8. книга | яку | він | написав | дуже | популярна
+   > [!answer] Книга, яку він написав, дуже популярна.
+   > (The book that he wrote is very popular.)
+
+9. після | того | як | ми | поїли | пішли | на | прогулянку
+   > [!answer] Після того як ми поїли, пішли на прогулянку.
+   > (After we ate, we went for a walk.)
+
+10. я | думаю | що | він | правий
+    > [!answer] Я думаю, що він правий.
+    > (I think that he is right.)
+
+11. мама | хоче | щоб | я | прибрав | кімнату
+    > [!answer] Мама хоче, щоб я прибрав кімнату.
+    > (Mom wants me to clean the room.)
+
+12. перш | ніж | піти | він | подзвонив | другу
+    > [!answer] Перш ніж піти, він подзвонив другу.
+    > (Before leaving, he called his friend.)
 
 ## quiz: Advanced Complex Sentence Analysis
 

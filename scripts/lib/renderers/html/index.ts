@@ -183,6 +183,8 @@ function renderActivitySection(activity: Activity, index: number, nextSection: s
       return renderOrderSection(activity, sectionId, nextSection);
     case 'select':
       return renderSelectSection(activity, sectionId, nextSection);
+    case 'error-correction':
+      return renderErrorCorrectionSection(activity, sectionId, nextSection);
     default:
       // Generic fallback for unknown types
       return renderGenericSection(activity, sectionId, nextSection);
@@ -274,6 +276,18 @@ function renderSelectSection(activity: Activity, sectionId: string, nextSection:
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length}</span></div>
       <div id="${sectionId}-container" class="select-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('${sectionId}')">Reset</button><button class="btn btn-primary" onclick="showSection('${nextSection}')">Next →</button></div>
+    </div></section>`;
+}
+
+function renderErrorCorrectionSection(activity: Activity, sectionId: string, nextSection: string): string {
+  const items = (activity.content as any).items || [];
+
+  return `
+    <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length * 2}</span></div>
+      <div id="${sectionId}-container" class="error-correction-container"></div>
+      <div class="completion-message" id="${sectionId}-complete"><h3>All Corrected!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('${sectionId}')">Reset</button><button class="btn btn-primary" onclick="showSection('${nextSection}')">Next →</button></div>
     </div></section>`;
 }

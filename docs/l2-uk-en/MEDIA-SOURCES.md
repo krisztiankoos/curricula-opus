@@ -118,7 +118,7 @@ This document tracks all external media sources used in the curriculum, their pe
 
 ### Templates Used
 
-All permission requests use templates from `MODULE-RICHNESS-GUIDELINES.md`.
+All permission requests use templates from `MODULE-RICHNESS-GUIDELINES-v2.md`.
 
 ---
 

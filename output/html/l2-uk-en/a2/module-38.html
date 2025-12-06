@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1125,11 +1166,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Health Situations</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Health and Body Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Health Situations</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1156,7 +1204,7 @@ footer {
   </main><footer>Module 38 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Medical Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"___ б'ється швидко. (Heart)","answer":"Серце"},{"prompt":"Проблеми з ___. (digestion)","answer":"травленням"},{"prompt":"Треба зробити ___ крові. (test)","answer":"аналіз"},{"prompt":"У мене підвищений ___. (pressure)","answer":"тиск"},{"prompt":"Приймайте ___ двічі на день. (medicine)","answer":"ліки"},{"prompt":"У мене ___ на пеніцилін. (allergy)","answer":"алергія"},{"prompt":"___ краще за лікування. (Prevention)","answer":"Профілактика"},{"prompt":"Він швидко ___. (recovering)","answer":"одужує"},{"prompt":"Зробіть ___ грудної клітки. (X-ray)","answer":"рентген"},{"prompt":"Капайте ___ в очі. (drops)","answer":"краплі"},{"prompt":"Потрібна ___. (surgery)","answer":"операція"},{"prompt":"___ — найважливіше! (Health)","answer":"Здоров'я"}]}},{"id":"activity-1","type":"match-up","title":"Body Systems","data":{"type":"match-up","pairs":[{"left":"серце","right":"heart"},{"left":"легені","right":"lungs"},{"left":"печінка","right":"liver"},{"left":"нирки","right":"kidneys"},{"left":"мозок","right":"brain"},{"left":"шлунок","right":"stomach"},{"left":"травлення","right":"digestion"},{"left":"дихання","right":"breathing"},{"left":"кровообіг","right":"circulation"},{"left":"імунітет","right":"immunity"},{"left":"нервова система","right":"nervous system"},{"left":"тиск","right":"pressure"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Виміряйте","будь ласка","мій","тиск","зараз","у","кабінеті","лікаря"],"answer":"Виміряйте, будь ласка, мій тиск зараз у кабінеті лікаря.","translation":"Please measure my pressure now in the doctor's office."},{"words":["Треба","зробити","аналіз","крові","завтра","вранці","у","лікарні"],"answer":"Треба зробити аналіз крові завтра вранці у лікарні.","translation":"Need to do a blood test tomorrow morning at hospital."},{"words":["Приймайте","ці","таблетки","двічі","на","день","після","їжі"],"answer":"Приймайте ці таблетки двічі на день після їжі.","translation":"Take these pills twice a day after food."},{"words":["У","мене","алергія","на","пеніцилін","та","інші","антибіотики"],"answer":"У мене алергія на пеніцилін та інші антибіотики.","translation":"I'm allergic to penicillin and other antibiotics."},{"words":["Як","давно","у","вас","почалися","ці","симптоми","скажіть"],"answer":"Скажіть, як давно у вас почалися ці симптоми?","translation":"Tell me, how long ago did you start having these symptoms?"},{"words":["Я","мав","операцію","на","серці","два","роки","тому"],"answer":"Я мав операцію на серці два роки тому.","translation":"I had heart surgery two years ago."},{"words":["Що","саме","вас","турбує","сьогодні","розкажіть","мені","детально"],"answer":"Розкажіть мені детально, що саме вас турбує сьогодні.","translation":"Tell me in detail what exactly is bothering you today."},{"words":["Скажіть","де","саме","у","вас","болить","зараз","сильно"],"answer":"Скажіть, де саме у вас зараз сильно болить.","translation":"Tell me where exactly you have strong pain now."},{"words":["Приймай","вітаміни","щодня","вранці","після","сніданку","для","здоров'я"],"answer":"Приймай вітаміни щодня вранці після сніданку для здоров'я.","translation":"Take vitamins daily in morning after breakfast for health."},{"words":["Вона","швидко","одужує","після","важкої","операції","у","лікарні"],"answer":"Вона швидко одужує після важкої операції у лікарні.","translation":"She is recovering quickly after difficult surgery at hospital."},{"words":["Постійний","стрес","дуже","шкодить","вашому","здоров'ю","та","імунітету"],"answer":"Постійний стрес дуже шкодить вашому здоров'ю та імунітету.","translation":"Constant stress greatly harms your health and immunity."},{"words":["Капайте","ці","краплі","в","очі","тричі","на","день"],"answer":"Капайте ці краплі в очі тричі на день.","translation":"Put these drops in eyes three times a day."}]}},{"id":"activity-3","type":"quiz","title":"Health Knowledge","data":{"type":"quiz","questions":[{"question":"«Легені» are:","options":["Lungs","Liver","Legs","Lips"],"correctIndex":0,"explanation":""},{"question":"«Аналіз крові» is:","options":["Blood test","Blood type","Blood pressure","Blood vessel"],"correctIndex":0,"explanation":""},{"question":"«Травлення» is:","options":["Digestion","Travel","Training","Treatment"],"correctIndex":0,"explanation":""},{"question":"«Тиск» means:","options":["Pressure","Tissue","Taste","Temperature"],"correctIndex":0,"explanation":""},{"question":"«Одужувати» means:","options":["To recover","To get sick","To diagnose","To operate"],"correctIndex":0,"explanation":""},{"question":"«Рентген» is:","options":["X-ray","Injection","Surgery","Medicine"],"correctIndex":0,"explanation":""},{"question":"«Мазь» is applied to:","options":["Skin","Eyes","Stomach","Heart"],"correctIndex":0,"explanation":""},{"question":"«Профілактика» is:","options":["Prevention","Profession","Procedure","Program"],"correctIndex":0,"explanation":""},{"question":"«Нирки» are:","options":["Kidneys","Knees","Nerves","Nails"],"correctIndex":0,"explanation":""},{"question":"«Краплі» are used as:","options":["Eye/ear drops","Pills","Ointment","Injection"],"correctIndex":0,"explanation":""},{"question":"«Кровообіг» is:","options":["Blood circulation","Blood type","Blood test","Bleeding"],"correctIndex":0,"explanation":""},{"question":"«Здоров'я» means:","options":["Health","Healthy","Hospital","Healing"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Medical Facts","data":{"type":"true-false","statements":[{"statement":"«Серце» is the heart.","isTrue":true,"explanation":""},{"statement":"«Легені» means liver.","isTrue":false,"explanation":""},{"statement":"«Тиск» can mean blood pressure.","isTrue":true,"explanation":""},{"statement":"«Аналіз крові» is a blood test.","isTrue":true,"explanation":""},{"statement":"«Травлення» relates to breathing.","isTrue":false,"explanation":""},{"statement":"«Мазь» is applied to skin.","isTrue":true,"explanation":""},{"statement":"«Краплі» are pills.","isTrue":false,"explanation":""},{"statement":"«Одужувати» means to get sick.","isTrue":false,"explanation":""},{"statement":"«Профілактика» means prevention.","isTrue":true,"explanation":""},{"statement":"«Нирки» are in pairs.","isTrue":true,"explanation":""},{"statement":"«Рентген» is named after its inventor.","isTrue":true,"explanation":""},{"statement":"«Здоров'я» is only used for physical health.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Medical Categories","data":{"type":"group-sort","groups":[{"id":"internal-organs","name":"Internal Organs","items":["серце","легені","печінка"]},{"id":"medical-tests","name":"Medical Tests","items":["аналіз крові","рентген","УЗД"]},{"id":"treatments","name":"Treatments","items":["таблетки","мазь","ін'єкція"]},{"id":"symptoms","name":"Symptoms","items":["головний біль","тиск","запалення"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Body Systems","data":{"type":"fill-blank","items":[{"prompt":"___ б'ється дуже швидко. (Heart)","answer":"Серце"},{"prompt":"Він має проблеми з ___. (lungs)","answer":"легенями"},{"prompt":"___ контролює все тіло. (Brain)","answer":"Мозок"},{"prompt":"Перевірте мою ___. (liver)","answer":"печінку"},{"prompt":"___ у неї ослаблена. (Immune system)","answer":"Імунна система"},{"prompt":"Проблеми з ___ бувають часто. (digestion)","answer":"травленням"},{"prompt":"___ важке після бігу. (Breathing)","answer":"Дихання"},{"prompt":"Поганий ___ у ногах. (circulation)","answer":"кровообіг"},{"prompt":"Болять обидві ___. (kidneys)","answer":"нирки"},{"prompt":"___ болить після їжі. (Stomach)","answer":"Шлунок"},{"prompt":"___ нервова дуже втомлена. (System)","answer":"Система"},{"prompt":"У мене підвищений ___. (pressure)","answer":"тиск"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Medical Term","data":{"type":"select","items":[{"question":"Де роблять аналіз крові?","options":[{"text":"У лабораторії","correct":true},{"text":"У ресторані","correct":false},{"text":"На вулиці","correct":false},{"text":"У магазині","correct":false}]},{"question":"Що призначає лікар при інфекції?","options":[{"text":"Антибіотики","correct":true},{"text":"Вітаміни","correct":false},{"text":"Воду","correct":false},{"text":"Каву","correct":false}]},{"question":"Що перевіряє кардіолог?","options":[{"text":"Серце","correct":true},{"text":"Ноги","correct":false},{"text":"Руки","correct":false},{"text":"Волосся","correct":false}]},{"question":"Куди капають очні краплі?","options":[{"text":"В очі","correct":true},{"text":"У вуха","correct":false},{"text":"У рот","correct":false},{"text":"На руку","correct":false}]},{"question":"Що показує рентген?","options":[{"text":"Кістки","correct":true},{"text":"Думки","correct":false},{"text":"Сни","correct":false},{"text":"Спогади","correct":false}]},{"question":"При якому симптомі приймають жарознижуюче?","options":[{"text":"Температура","correct":true},{"text":"Голод","correct":false},{"text":"Втома","correct":false},{"text":"Радість","correct":false}]},{"question":"Що таке УЗД?","options":[{"text":"Ультразвукове дослідження","correct":true},{"text":"Укол звичайний добрий","correct":false},{"text":"Управління здоров'я","correct":false},{"text":"Універсальна допомога","correct":false}]},{"question":"Куди наносять мазь?","options":[{"text":"На шкіру","correct":true},{"text":"У рот","correct":false},{"text":"В очі","correct":false},{"text":"У вуха","correct":false}]},{"question":"Що означає «одужувати»?","options":[{"text":"Видужувати","correct":true},{"text":"Хворіти","correct":false},{"text":"Працювати","correct":false},{"text":"Спати","correct":false}]},{"question":"Що таке профілактика?","options":[{"text":"Запобігання хворобам","correct":true},{"text":"Лікування хвороб","correct":false},{"text":"Операція","correct":false},{"text":"Ін'єкція","correct":false}]},{"question":"Що перевіряє гастроентеролог?","options":[{"text":"Шлунок та кишечник","correct":true},{"text":"Серце","correct":false},{"text":"Легені","correct":false},{"text":"Мозок","correct":false}]},{"question":"Що таке алергія?","options":[{"text":"Реакція на подразник","correct":true},{"text":"Вид спорту","correct":false},{"text":"Їжа","correct":false},{"text":"Напій","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Health Situations","data":{"type":"quiz","questions":[{"question":"«У мене болить голова» означає:","options":["I have a headache","I'm hungry","I'm tired","I'm cold"],"correctIndex":0,"explanation":""},{"question":"Що робити при високій температурі?","options":["Приймати жарознижуюче","Їсти морозиво","Бігати","Танцювати"],"correctIndex":0,"explanation":""},{"question":"«Мені важко дихати» означає:","options":["It's hard for me to breathe","I can't sleep","I can't eat","I can't run"],"correctIndex":0,"explanation":""},{"question":"Коли потрібна операція?","options":["При серйозних захворюваннях","При легкій застуді","Коли хочеться спати","Коли голодний"],"correctIndex":0,"explanation":""},{"question":"«Здоров'я — найважливіше» означає:","options":["Health is the most important","Money is everything","Work is life","Sleep is good"],"correctIndex":0,"explanation":""},{"question":"Що означає «імунітет»?","options":["Захист організму від хвороб","Вид спорту","Тип їжі","Назва ліків"],"correctIndex":0,"explanation":""},{"question":"«Профілактика краще за лікування» означає:","options":["Prevention is better than cure","Treatment is the best","Surgery is easy","Medicine is cheap"],"correctIndex":0,"explanation":""},{"question":"Що таке «набряк»?","options":["Swelling","Hunger","Sleep","Joy"],"correctIndex":0,"explanation":""},{"question":"«Гострий біль» означає:","options":["Sharp pain","Mild discomfort","No pain","Happiness"],"correctIndex":0,"explanation":""},{"question":"Що робити при алергії?","options":["Уникати алергенів","Їсти більше алергенів","Ігнорувати симптоми","Бігати"],"correctIndex":0,"explanation":""},{"question":"«Відпочинок важливий» означає:","options":["Rest is important","Work more","Don't sleep","Run faster"],"correctIndex":0,"explanation":""},{"question":"Що таке «стрес»?","options":["Напруження організму","Вид відпочинку","Тип їжі","Назва вправи"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Medical Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"___ б'ється швидко. (Heart)","answer":"Серце"},{"prompt":"Проблеми з ___. (digestion)","answer":"травленням"},{"prompt":"Треба зробити ___ крові. (test)","answer":"аналіз"},{"prompt":"У мене підвищений ___. (pressure)","answer":"тиск"},{"prompt":"Приймайте ___ двічі на день. (medicine)","answer":"ліки"},{"prompt":"У мене ___ на пеніцилін. (allergy)","answer":"алергія"},{"prompt":"___ краще за лікування. (Prevention)","answer":"Профілактика"},{"prompt":"Він швидко ___. (recovering)","answer":"одужує"},{"prompt":"Зробіть ___ грудної клітки. (X-ray)","answer":"рентген"},{"prompt":"Капайте ___ в очі. (drops)","answer":"краплі"},{"prompt":"Потрібна ___. (surgery)","answer":"операція"},{"prompt":"___ — найважливіше! (Health)","answer":"Здоров'я"}]}},{"id":"activity-1","type":"match-up","title":"Body Systems","data":{"type":"match-up","pairs":[{"left":"серце","right":"heart"},{"left":"легені","right":"lungs"},{"left":"печінка","right":"liver"},{"left":"нирки","right":"kidneys"},{"left":"мозок","right":"brain"},{"left":"шлунок","right":"stomach"},{"left":"травлення","right":"digestion"},{"left":"дихання","right":"breathing"},{"left":"кровообіг","right":"circulation"},{"left":"імунітет","right":"immunity"},{"left":"нервова система","right":"nervous system"},{"left":"тиск","right":"pressure"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Виміряйте","будь ласка","мій","тиск","зараз","у","кабінеті","лікаря"],"answer":"Виміряйте, будь ласка, мій тиск зараз у кабінеті лікаря.","translation":"Please measure my pressure now in the doctor's office."},{"words":["Треба","зробити","аналіз","крові","завтра","вранці","у","лікарні"],"answer":"Треба зробити аналіз крові завтра вранці у лікарні.","translation":"Need to do a blood test tomorrow morning at hospital."},{"words":["Приймайте","ці","таблетки","двічі","на","день","після","їжі"],"answer":"Приймайте ці таблетки двічі на день після їжі.","translation":"Take these pills twice a day after food."},{"words":["У","мене","алергія","на","пеніцилін","та","інші","антибіотики"],"answer":"У мене алергія на пеніцилін та інші антибіотики.","translation":"I'm allergic to penicillin and other antibiotics."},{"words":["Як","давно","у","вас","почалися","ці","симптоми","скажіть"],"answer":"Скажіть, як давно у вас почалися ці симптоми?","translation":"Tell me, how long ago did you start having these symptoms?"},{"words":["Я","мав","операцію","на","серці","два","роки","тому"],"answer":"Я мав операцію на серці два роки тому.","translation":"I had heart surgery two years ago."},{"words":["Що","саме","вас","турбує","сьогодні","розкажіть","мені","детально"],"answer":"Розкажіть мені детально, що саме вас турбує сьогодні.","translation":"Tell me in detail what exactly is bothering you today."},{"words":["Скажіть","де","саме","у","вас","болить","зараз","сильно"],"answer":"Скажіть, де саме у вас зараз сильно болить.","translation":"Tell me where exactly you have strong pain now."},{"words":["Приймай","вітаміни","щодня","вранці","після","сніданку","для","здоров'я"],"answer":"Приймай вітаміни щодня вранці після сніданку для здоров'я.","translation":"Take vitamins daily in morning after breakfast for health."},{"words":["Вона","швидко","одужує","після","важкої","операції","у","лікарні"],"answer":"Вона швидко одужує після важкої операції у лікарні.","translation":"She is recovering quickly after difficult surgery at hospital."},{"words":["Постійний","стрес","дуже","шкодить","вашому","здоров'ю","та","імунітету"],"answer":"Постійний стрес дуже шкодить вашому здоров'ю та імунітету.","translation":"Constant stress greatly harms your health and immunity."},{"words":["Капайте","ці","краплі","в","очі","тричі","на","день"],"answer":"Капайте ці краплі в очі тричі на день.","translation":"Put these drops in eyes three times a day."}]}},{"id":"activity-3","type":"quiz","title":"Health Knowledge","data":{"type":"quiz","questions":[{"question":"«Легені» are:","options":["Lungs","Liver","Legs","Lips"],"correctIndex":0,"explanation":""},{"question":"«Аналіз крові» is:","options":["Blood test","Blood type","Blood pressure","Blood vessel"],"correctIndex":0,"explanation":""},{"question":"«Травлення» is:","options":["Digestion","Travel","Training","Treatment"],"correctIndex":0,"explanation":""},{"question":"«Тиск» means:","options":["Pressure","Tissue","Taste","Temperature"],"correctIndex":0,"explanation":""},{"question":"«Одужувати» means:","options":["To recover","To get sick","To diagnose","To operate"],"correctIndex":0,"explanation":""},{"question":"«Рентген» is:","options":["X-ray","Injection","Surgery","Medicine"],"correctIndex":0,"explanation":""},{"question":"«Мазь» is applied to:","options":["Skin","Eyes","Stomach","Heart"],"correctIndex":0,"explanation":""},{"question":"«Профілактика» is:","options":["Prevention","Profession","Procedure","Program"],"correctIndex":0,"explanation":""},{"question":"«Нирки» are:","options":["Kidneys","Knees","Nerves","Nails"],"correctIndex":0,"explanation":""},{"question":"«Краплі» are used as:","options":["Eye/ear drops","Pills","Ointment","Injection"],"correctIndex":0,"explanation":""},{"question":"«Кровообіг» is:","options":["Blood circulation","Blood type","Blood test","Bleeding"],"correctIndex":0,"explanation":""},{"question":"«Здоров'я» means:","options":["Health","Healthy","Hospital","Healing"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Medical Facts","data":{"type":"true-false","statements":[{"statement":"«Серце» is the heart.","isTrue":true,"explanation":""},{"statement":"«Легені» means liver.","isTrue":false,"explanation":""},{"statement":"«Тиск» can mean blood pressure.","isTrue":true,"explanation":""},{"statement":"«Аналіз крові» is a blood test.","isTrue":true,"explanation":""},{"statement":"«Травлення» relates to breathing.","isTrue":false,"explanation":""},{"statement":"«Мазь» is applied to skin.","isTrue":true,"explanation":""},{"statement":"«Краплі» are pills.","isTrue":false,"explanation":""},{"statement":"«Одужувати» means to get sick.","isTrue":false,"explanation":""},{"statement":"«Профілактика» means prevention.","isTrue":true,"explanation":""},{"statement":"«Нирки» are in pairs.","isTrue":true,"explanation":""},{"statement":"«Рентген» is named after its inventor.","isTrue":true,"explanation":""},{"statement":"«Здоров'я» is only used for physical health.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Medical Categories","data":{"type":"group-sort","groups":[{"id":"internal-organs","name":"Internal Organs","items":["серце","легені","печінка"]},{"id":"medical-tests","name":"Medical Tests","items":["аналіз крові","рентген","УЗД"]},{"id":"treatments","name":"Treatments","items":["таблетки","мазь","ін'єкція"]},{"id":"symptoms","name":"Symptoms","items":["головний біль","тиск","запалення"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Body Systems","data":{"type":"fill-blank","items":[{"prompt":"___ б'ється дуже швидко. (Heart)","answer":"Серце"},{"prompt":"Він має проблеми з ___. (lungs)","answer":"легенями"},{"prompt":"___ контролює все тіло. (Brain)","answer":"Мозок"},{"prompt":"Перевірте мою ___. (liver)","answer":"печінку"},{"prompt":"___ у неї ослаблена. (Immune system)","answer":"Імунна система"},{"prompt":"Проблеми з ___ бувають часто. (digestion)","answer":"травленням"},{"prompt":"___ важке після бігу. (Breathing)","answer":"Дихання"},{"prompt":"Поганий ___ у ногах. (circulation)","answer":"кровообіг"},{"prompt":"Болять обидві ___. (kidneys)","answer":"нирки"},{"prompt":"___ болить після їжі. (Stomach)","answer":"Шлунок"},{"prompt":"___ нервова дуже втомлена. (System)","answer":"Система"},{"prompt":"У мене підвищений ___. (pressure)","answer":"тиск"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Medical Term","data":{"type":"select","items":[{"question":"Де роблять аналіз крові?","options":[{"text":"У лабораторії","correct":true},{"text":"У ресторані","correct":false},{"text":"На вулиці","correct":false},{"text":"У магазині","correct":false}]},{"question":"Що призначає лікар при інфекції?","options":[{"text":"Антибіотики","correct":true},{"text":"Вітаміни","correct":false},{"text":"Воду","correct":false},{"text":"Каву","correct":false}]},{"question":"Що перевіряє кардіолог?","options":[{"text":"Серце","correct":true},{"text":"Ноги","correct":false},{"text":"Руки","correct":false},{"text":"Волосся","correct":false}]},{"question":"Куди капають очні краплі?","options":[{"text":"В очі","correct":true},{"text":"У вуха","correct":false},{"text":"У рот","correct":false},{"text":"На руку","correct":false}]},{"question":"Що показує рентген?","options":[{"text":"Кістки","correct":true},{"text":"Думки","correct":false},{"text":"Сни","correct":false},{"text":"Спогади","correct":false}]},{"question":"При якому симптомі приймають жарознижуюче?","options":[{"text":"Температура","correct":true},{"text":"Голод","correct":false},{"text":"Втома","correct":false},{"text":"Радість","correct":false}]},{"question":"Що таке УЗД?","options":[{"text":"Ультразвукове дослідження","correct":true},{"text":"Укол звичайний добрий","correct":false},{"text":"Управління здоров'я","correct":false},{"text":"Універсальна допомога","correct":false}]},{"question":"Куди наносять мазь?","options":[{"text":"На шкіру","correct":true},{"text":"У рот","correct":false},{"text":"В очі","correct":false},{"text":"У вуха","correct":false}]},{"question":"Що означає «одужувати»?","options":[{"text":"Видужувати","correct":true},{"text":"Хворіти","correct":false},{"text":"Працювати","correct":false},{"text":"Спати","correct":false}]},{"question":"Що таке профілактика?","options":[{"text":"Запобігання хворобам","correct":true},{"text":"Лікування хвороб","correct":false},{"text":"Операція","correct":false},{"text":"Ін'єкція","correct":false}]},{"question":"Що перевіряє гастроентеролог?","options":[{"text":"Шлунок та кишечник","correct":true},{"text":"Серце","correct":false},{"text":"Легені","correct":false},{"text":"Мозок","correct":false}]},{"question":"Що таке алергія?","options":[{"text":"Реакція на подразник","correct":true},{"text":"Вид спорту","correct":false},{"text":"Їжа","correct":false},{"text":"Напій","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Health and Body Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["у","|","мене","|","болить","|","голова","|","сьогодні"],"answer":"У мене болить голова сьогодні.","translation":"I have a headache today."},{"words":["лікар","|","оглянув","|","пацієнта","|","уважно"],"answer":"Лікар оглянув пацієнта уважно.","translation":"The doctor examined the patient carefully."},{"words":["вона","|","приймає","|","ліки","|","тричі","|","на","|","день"],"answer":"Вона приймає ліки тричі на день.","translation":"She takes medicine three times a day."},{"words":["мені","|","треба","|","записатися","|","до","|","стоматолога"],"answer":"Мені треба записатися до стоматолога.","translation":"I need to make an appointment with the dentist."},{"words":["у","|","нього","|","висока","|","температура","|","і","|","кашель"],"answer":"У нього висока температура і кашель.","translation":"He has a high temperature and a cough."},{"words":["медсестра","|","зробила","|","укол","|","швидко"],"answer":"Медсестра зробила укол швидко.","translation":"The nurse gave the injection quickly."},{"words":["аптека","|","знаходиться","|","за","|","рогом"],"answer":"Аптека знаходиться за рогом.","translation":"The pharmacy is around the corner."},{"words":["він","|","зламав","|","ногу","|","минулого","|","тижня"],"answer":"Він зламав ногу минулого тижня.","translation":"He broke his leg last week."},{"words":["їй","|","важко","|","дихати","|","через","|","алергію"],"answer":"Їй важко дихати через алергію.","translation":"It's hard for her to breathe because of allergies."},{"words":["що","|","вас","|","турбує","|","скажіть","|","лікарю"],"answer":"Що вас турбує, скажіть лікарю.","translation":"Tell the doctor what's bothering you."},{"words":["рецепт","|","на","|","ліки","|","дійсний","|","місяць"],"answer":"Рецепт на ліки дійсний місяць.","translation":"The prescription is valid for a month."},{"words":["він","|","швидко","|","одужав","|","після","|","операції"],"answer":"Він швидко одужав після операції.","translation":"He recovered quickly after the surgery."}]}},{"id":"activity-9","type":"quiz","title":"Health Situations","data":{"type":"quiz","questions":[{"question":"«У мене болить голова» означає:","options":["I have a headache","I'm hungry","I'm tired","I'm cold"],"correctIndex":0,"explanation":""},{"question":"Що робити при високій температурі?","options":["Приймати жарознижуюче","Їсти морозиво","Бігати","Танцювати"],"correctIndex":0,"explanation":""},{"question":"«Мені важко дихати» означає:","options":["It's hard for me to breathe","I can't sleep","I can't eat","I can't run"],"correctIndex":0,"explanation":""},{"question":"Коли потрібна операція?","options":["При серйозних захворюваннях","При легкій застуді","Коли хочеться спати","Коли голодний"],"correctIndex":0,"explanation":""},{"question":"«Здоров'я — найважливіше» означає:","options":["Health is the most important","Money is everything","Work is life","Sleep is good"],"correctIndex":0,"explanation":""},{"question":"Що означає «імунітет»?","options":["Захист організму від хвороб","Вид спорту","Тип їжі","Назва ліків"],"correctIndex":0,"explanation":""},{"question":"«Профілактика краще за лікування» означає:","options":["Prevention is better than cure","Treatment is the best","Surgery is easy","Medicine is cheap"],"correctIndex":0,"explanation":""},{"question":"Що таке «набряк»?","options":["Swelling","Hunger","Sleep","Joy"],"correctIndex":0,"explanation":""},{"question":"«Гострий біль» означає:","options":["Sharp pain","Mild discomfort","No pain","Happiness"],"correctIndex":0,"explanation":""},{"question":"Що робити при алергії?","options":["Уникати алергенів","Їсти більше алергенів","Ігнорувати симптоми","Бігати"],"correctIndex":0,"explanation":""},{"question":"«Відпочинок важливий» означає:","options":["Rest is important","Work more","Don't sleep","Run faster"],"correctIndex":0,"explanation":""},{"question":"Що таке «стрес»?","options":["Напруження організму","Вид відпочинку","Тип їжі","Назва вправи"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"серце","translit":"","en":"heart","note":""},{"uk":"легені","translit":"","en":"lungs","note":""},{"uk":"печінка","translit":"","en":"liver","note":""},{"uk":"нирки","translit":"","en":"kidneys","note":""},{"uk":"шлунок","translit":"","en":"stomach (organ)","note":""},{"uk":"мозок","translit":"","en":"brain","note":""},{"uk":"кровообіг","translit":"","en":"circulation","note":""},{"uk":"травлення","translit":"","en":"digestion","note":""},{"uk":"дихання","translit":"","en":"breathing","note":""},{"uk":"тиск","translit":"","en":"pressure","note":""},{"uk":"запалення","translit":"","en":"inflammation","note":""},{"uk":"набряк","translit":"","en":"swelling","note":""},{"uk":"алергія","translit":"","en":"allergy","note":""},{"uk":"аналіз","translit":"","en":"test, analysis","note":""},{"uk":"рентген","translit":"","en":"X-ray","note":""},{"uk":"операція","translit":"","en":"surgery","note":""},{"uk":"таблетки","translit":"","en":"pills","note":""},{"uk":"мазь","translit":"","en":"ointment","note":""},{"uk":"ін'єкція","translit":"","en":"injection","note":""},{"uk":"краплі","translit":"","en":"drops","note":""},{"uk":"здоров'я","translit":"","en":"health","note":""},{"uk":"хвороба","translit":"","en":"illness","note":""},{"uk":"одужувати","translit":"","en":"to recover","note":""},{"uk":"лікувати","translit":"","en":"to treat","note":""},{"uk":"імунітет","translit":"","en":"immunity","note":""},{"uk":"профілактика","translit":"","en":"prevention","note":""},{"uk":"дієта","translit":"","en":"diet","note":""},{"uk":"вітаміни","translit":"","en":"vitamins","note":""},{"uk":"стрес","translit":"","en":"stress","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2481,6 +2529,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

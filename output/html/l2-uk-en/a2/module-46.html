@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -875,11 +916,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Shopping Knowledge</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Shopping and Services Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Shopping Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -906,7 +954,7 @@ footer {
   </main><footer>Module 46 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я купую продукти в ___і.","answer":"супермаркет","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у можна торгуватися.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Ліки продають в ___і.","answer":"аптека","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Гроші знімаю в ___у.","answer":"банк","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Новий ___ відкрився біля нашого дому.","answer":"магазин","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"У ___і великий вибір товарів.","answer":"супермаркет","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у свіжі овочі та фрукти.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"У ___і є все необхідне.","answer":"аптека","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Рахунок відкриваю в ___у.","answer":"банк","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Цей ___ працює цілодобово.","answer":"магазин","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у ціни нижчі.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"___ зачиняється о шостій.","answer":"Банк","options":["магазин","супермаркет","ринок","аптека","банк"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"магазин","right":"store"},{"left":"ринок","right":"market"},{"left":"гроші","right":"money"},{"left":"ціна","right":"price"},{"left":"знижка","right":"discount"},{"left":"чек","right":"receipt"},{"left":"купувати","right":"to buy"},{"left":"продавати","right":"to sell"},{"left":"платити","right":"to pay"},{"left":"замовляти","right":"to order"},{"left":"картка","right":"card"},{"left":"готівка","right":"cash"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","купую","продукти","в","супермаркеті"],"answer":"Я купую продукти в супермаркеті.","translation":"I buy groceries at the supermarket"},{"words":["Скільки","коштує","ця","сукня","?"],"answer":"Скільки коштує ця сукня?","translation":"How much does this dress cost?"},{"words":["Можна","оплатити","карткою","?"],"answer":"Можна оплатити карткою?","translation":"Can I pay by card?"},{"words":["На","ринку","свіжі","овочі","та","фрукти"],"answer":"На ринку свіжі овочі та фрукти.","translation":"At the market there are fresh vegetables and fruits"},{"words":["Рахунок","будь","ласка"],"answer":"Рахунок, будь ласка.","translation":"The bill, please"},{"words":["Чи","є","знижка","на","цей","товар","?"],"answer":"Чи є знижка на цей товар?","translation":"Is there a discount on this item?"},{"words":["Я","плачу","готівкою"],"answer":"Я плачу готівкою.","translation":"I'm paying with cash"},{"words":["Візьміть","ваш","чек","і","здачу"],"answer":"Візьміть ваш чек і здачу.","translation":"Take your receipt and change"},{"words":["У","мене","немає","готівки"],"answer":"У мене немає готівки.","translation":"I don't have cash"},{"words":["Магазин","закривається","о","дев'ятій","вечора"],"answer":"Магазин закривається о дев'ятій вечора.","translation":"The store closes at nine in the evening"},{"words":["Я","хочу","повернути","цей","товар"],"answer":"Я хочу повернути цей товар.","translation":"I want to return this item"},{"words":["Вона","замовляє","піцу","по","телефону"],"answer":"Вона замовляє піцу по телефону.","translation":"She orders pizza by phone"}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Де купують ліки?","options":["у банку","в аптеці","на пошті","у пекарні"],"correctIndex":1,"explanation":""},{"question":"Що таке \"знижка\"?","options":["price","bill","discount","change"],"correctIndex":2,"explanation":""},{"question":"Що означає \"купувати\"?","options":["to buy","to sell","to pay","to order"],"correctIndex":0,"explanation":""},{"question":"Що таке \"ціна\"?","options":["change","price","receipt","discount"],"correctIndex":1,"explanation":""},{"question":"Де знімають гроші?","options":["на пошті","у магазині","у банку","в аптеці"],"correctIndex":2,"explanation":""},{"question":"Що таке \"чек\"?","options":["card","cash","receipt","bill"],"correctIndex":2,"explanation":""},{"question":"Що означає \"платити\"?","options":["to buy","to pay","to sell","to order"],"correctIndex":1,"explanation":""},{"question":"Де можна торгуватися?","options":["у супермаркеті","на ринку","в аптеці","у банку"],"correctIndex":1,"explanation":""},{"question":"Що таке \"готівка\"?","options":["card","cash","receipt","bill"],"correctIndex":1,"explanation":""},{"question":"Де купують хліб?","options":["у пекарні","в аптеці","у банку","на пошті"],"correctIndex":0,"explanation":""},{"question":"Що таке \"здача\"?","options":["price","discount","change","receipt"],"correctIndex":2,"explanation":""},{"question":"Що означає \"замовляти\"?","options":["to buy","to pay","to sell","to order"],"correctIndex":3,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"У супермаркеті великий вибір продуктів.","isTrue":true,"explanation":"Правда. Супермаркет має широкий асортимент товарів."},{"statement":"На ринку не можна торгуватися.","isTrue":false,"explanation":"Неправда. На ринку часто можна торгуватися про ціну."},{"statement":"Гроші знімають в аптеці.","isTrue":false,"explanation":"Неправда. Гроші знімають у банку або в банкоматі."},{"statement":"Чек — це документ про покупку.","isTrue":true,"explanation":"Правда. Чек підтверджує факт покупки."},{"statement":"Знижка означає нижчу ціну.","isTrue":true,"explanation":"Правда. Знижка зменшує ціну товару."},{"statement":"Готівка — це оплата карткою.","isTrue":false,"explanation":"Неправда. Готівка — це гроші в паперовому чи монетному вигляді."},{"statement":"У книгарні продають книги.","isTrue":true,"explanation":"Правда. Книгарня спеціалізується на продажу книг."},{"statement":"Здача — це решта грошей.","isTrue":true,"explanation":"Правда. Здача — це гроші, що повертають після оплати."},{"statement":"Продавець продає товари.","isTrue":true,"explanation":"Правда. Це основна робота продавця."},{"statement":"Пекарня — це місце, де роблять зачіски.","isTrue":false,"explanation":"Неправда. У пекарні випікають хліб, а зачіски роблять у перукарні."},{"statement":"На пошті надсилають листи.","isTrue":true,"explanation":"Правда. Одна з головних функцій пошти."},{"statement":"Купувати і продавати — це синоніми.","isTrue":false,"explanation":"Неправда. Це протилежні дії: покупець купує, продавець продає."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Магазини","items":["супермаркет","ринок","бутік","аптека","книгарня","пекарня"]},{"id":"","name":"Послуги","items":["банк","пошта","перукарня","хімчистка","автосервіс","ремонт"]},{"id":"","name":"Гроші","items":["готівка","картка","рахунок","чек","ціна","знижка"]},{"id":"","name":"Дієслова","items":["купувати","продавати","платити","замовляти","повертати","економити"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Shopping Actions","data":{"type":"fill-blank","items":[{"prompt":"Я ___ нові черевики в магазині вчора. (bought)","answer":"купив"},{"prompt":"Цей магазин ___ одяг для дітей і дорослих. (sells)","answer":"продає"},{"prompt":"Можна ___ карткою або готівкою? (to pay)","answer":"оплатити"},{"prompt":"Вона ___ піцу по телефону на вечерю. (ordered)","answer":"замовила"},{"prompt":"Я хочу ___ цей товар, він не підходить. (return)","answer":"повернути"},{"prompt":"Ми ___ гроші на відпустку весь рік. (save)","answer":"економимо"},{"prompt":"Скільки ___ ця сукня в жовтому кольорі? (costs)","answer":"коштує"},{"prompt":"Чи є ___ на цей товар сьогодні? (discount)","answer":"знижка"},{"prompt":"Візьміть ваш ___ і здачу, дякую. (receipt)","answer":"чек"},{"prompt":"Я плачу ___, у мене немає картки. (cash)","answer":"готівкою"},{"prompt":"Ліки купую в ___ біля дому. (pharmacy)","answer":"аптеці"},{"prompt":"На ___ можна торгуватися про ціну. (market)","answer":"ринку"}]}},{"id":"activity-7","type":"select","title":"Store Type?","data":{"type":"select","items":[{"question":"свіжий хліб","options":[{"text":"пекарня","correct":true},{"text":"аптека","correct":false}]},{"question":"ліки від застуди","options":[{"text":"книгарня","correct":false},{"text":"аптека","correct":true}]},{"question":"нова книга","options":[{"text":"книгарня","correct":true},{"text":"пекарня","correct":false}]},{"question":"продукти на тиждень","options":[{"text":"супермаркет","correct":true},{"text":"бутік","correct":false}]},{"question":"дорогий одяг","options":[{"text":"аптека","correct":false},{"text":"бутік","correct":true}]},{"question":"свіжі овочі","options":[{"text":"ринок","correct":true},{"text":"книгарня","correct":false}]},{"question":"різні магазини","options":[{"text":"торговий центр","correct":true},{"text":"пекарня","correct":false}]},{"question":"стрижка волосся","options":[{"text":"аптека","correct":false},{"text":"перукарня","correct":true}]},{"question":"чистий костюм","options":[{"text":"хімчистка","correct":true},{"text":"пекарня","correct":false}]},{"question":"посилка друзям","options":[{"text":"пошта","correct":true},{"text":"банк","correct":false}]},{"question":"обмін валюти","options":[{"text":"супермаркет","correct":false},{"text":"банк","correct":true}]},{"question":"ремонт машини","options":[{"text":"автосервіс","correct":true},{"text":"аптека","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"Де купують ліки?","options":["в аптеці","на ринку","у пекарні","в банку"],"correctIndex":0,"explanation":""},{"question":"Що означає «торгуватися»?","options":["to bargain","to buy","to sell","to pay"],"correctIndex":0,"explanation":""},{"question":"Що таке «здача»?","options":["change (money returned)","receipt","price","discount"],"correctIndex":0,"explanation":""},{"question":"Де можна надіслати посилку?","options":["на пошті","в аптеці","на ринку","у пекарні"],"correctIndex":0,"explanation":""},{"question":"Як сказати «How much does it cost?»","options":["Скільки це коштує?","Де це знаходиться?","Коли це відкривається?","Як це називається?"],"correctIndex":0,"explanation":""},{"question":"Що означає «знижка»?","options":["discount","price","receipt","change"],"correctIndex":0,"explanation":""},{"question":"Де стрижуться?","options":["у перукарні","на пошті","у банку","в аптеці"],"correctIndex":0,"explanation":""},{"question":"Що таке «рахунок»?","options":["bill","discount","change","card"],"correctIndex":0,"explanation":""},{"question":"Як оплатити без готівки?","options":["карткою","чеком","знижкою","здачею"],"correctIndex":0,"explanation":""},{"question":"Що означає «повертати товар»?","options":["to return an item","to buy an item","to sell an item","to find an item"],"correctIndex":0,"explanation":""},{"question":"Де обмінюють валюту?","options":["у банку","на ринку","у магазині","на пошті"],"correctIndex":0,"explanation":""},{"question":"Що таке «покупець»?","options":["buyer/customer","seller","cashier","manager"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я купую продукти в ___і.","answer":"супермаркет","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у можна торгуватися.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Ліки продають в ___і.","answer":"аптека","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Гроші знімаю в ___у.","answer":"банк","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Новий ___ відкрився біля нашого дому.","answer":"магазин","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"У ___і великий вибір товарів.","answer":"супермаркет","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у свіжі овочі та фрукти.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"У ___і є все необхідне.","answer":"аптека","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Рахунок відкриваю в ___у.","answer":"банк","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"Цей ___ працює цілодобово.","answer":"магазин","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"На ___у ціни нижчі.","answer":"ринок","options":["магазин","супермаркет","ринок","аптека","банк"]},{"prompt":"___ зачиняється о шостій.","answer":"Банк","options":["магазин","супермаркет","ринок","аптека","банк"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"магазин","right":"store"},{"left":"ринок","right":"market"},{"left":"гроші","right":"money"},{"left":"ціна","right":"price"},{"left":"знижка","right":"discount"},{"left":"чек","right":"receipt"},{"left":"купувати","right":"to buy"},{"left":"продавати","right":"to sell"},{"left":"платити","right":"to pay"},{"left":"замовляти","right":"to order"},{"left":"картка","right":"card"},{"left":"готівка","right":"cash"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","купую","продукти","в","супермаркеті"],"answer":"Я купую продукти в супермаркеті.","translation":"I buy groceries at the supermarket"},{"words":["Скільки","коштує","ця","сукня","?"],"answer":"Скільки коштує ця сукня?","translation":"How much does this dress cost?"},{"words":["Можна","оплатити","карткою","?"],"answer":"Можна оплатити карткою?","translation":"Can I pay by card?"},{"words":["На","ринку","свіжі","овочі","та","фрукти"],"answer":"На ринку свіжі овочі та фрукти.","translation":"At the market there are fresh vegetables and fruits"},{"words":["Рахунок","будь","ласка"],"answer":"Рахунок, будь ласка.","translation":"The bill, please"},{"words":["Чи","є","знижка","на","цей","товар","?"],"answer":"Чи є знижка на цей товар?","translation":"Is there a discount on this item?"},{"words":["Я","плачу","готівкою"],"answer":"Я плачу готівкою.","translation":"I'm paying with cash"},{"words":["Візьміть","ваш","чек","і","здачу"],"answer":"Візьміть ваш чек і здачу.","translation":"Take your receipt and change"},{"words":["У","мене","немає","готівки"],"answer":"У мене немає готівки.","translation":"I don't have cash"},{"words":["Магазин","закривається","о","дев'ятій","вечора"],"answer":"Магазин закривається о дев'ятій вечора.","translation":"The store closes at nine in the evening"},{"words":["Я","хочу","повернути","цей","товар"],"answer":"Я хочу повернути цей товар.","translation":"I want to return this item"},{"words":["Вона","замовляє","піцу","по","телефону"],"answer":"Вона замовляє піцу по телефону.","translation":"She orders pizza by phone"}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Де купують ліки?","options":["у банку","в аптеці","на пошті","у пекарні"],"correctIndex":1,"explanation":""},{"question":"Що таке \"знижка\"?","options":["price","bill","discount","change"],"correctIndex":2,"explanation":""},{"question":"Що означає \"купувати\"?","options":["to buy","to sell","to pay","to order"],"correctIndex":0,"explanation":""},{"question":"Що таке \"ціна\"?","options":["change","price","receipt","discount"],"correctIndex":1,"explanation":""},{"question":"Де знімають гроші?","options":["на пошті","у магазині","у банку","в аптеці"],"correctIndex":2,"explanation":""},{"question":"Що таке \"чек\"?","options":["card","cash","receipt","bill"],"correctIndex":2,"explanation":""},{"question":"Що означає \"платити\"?","options":["to buy","to pay","to sell","to order"],"correctIndex":1,"explanation":""},{"question":"Де можна торгуватися?","options":["у супермаркеті","на ринку","в аптеці","у банку"],"correctIndex":1,"explanation":""},{"question":"Що таке \"готівка\"?","options":["card","cash","receipt","bill"],"correctIndex":1,"explanation":""},{"question":"Де купують хліб?","options":["у пекарні","в аптеці","у банку","на пошті"],"correctIndex":0,"explanation":""},{"question":"Що таке \"здача\"?","options":["price","discount","change","receipt"],"correctIndex":2,"explanation":""},{"question":"Що означає \"замовляти\"?","options":["to buy","to pay","to sell","to order"],"correctIndex":3,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"У супермаркеті великий вибір продуктів.","isTrue":true,"explanation":"Правда. Супермаркет має широкий асортимент товарів."},{"statement":"На ринку не можна торгуватися.","isTrue":false,"explanation":"Неправда. На ринку часто можна торгуватися про ціну."},{"statement":"Гроші знімають в аптеці.","isTrue":false,"explanation":"Неправда. Гроші знімають у банку або в банкоматі."},{"statement":"Чек — це документ про покупку.","isTrue":true,"explanation":"Правда. Чек підтверджує факт покупки."},{"statement":"Знижка означає нижчу ціну.","isTrue":true,"explanation":"Правда. Знижка зменшує ціну товару."},{"statement":"Готівка — це оплата карткою.","isTrue":false,"explanation":"Неправда. Готівка — це гроші в паперовому чи монетному вигляді."},{"statement":"У книгарні продають книги.","isTrue":true,"explanation":"Правда. Книгарня спеціалізується на продажу книг."},{"statement":"Здача — це решта грошей.","isTrue":true,"explanation":"Правда. Здача — це гроші, що повертають після оплати."},{"statement":"Продавець продає товари.","isTrue":true,"explanation":"Правда. Це основна робота продавця."},{"statement":"Пекарня — це місце, де роблять зачіски.","isTrue":false,"explanation":"Неправда. У пекарні випікають хліб, а зачіски роблять у перукарні."},{"statement":"На пошті надсилають листи.","isTrue":true,"explanation":"Правда. Одна з головних функцій пошти."},{"statement":"Купувати і продавати — це синоніми.","isTrue":false,"explanation":"Неправда. Це протилежні дії: покупець купує, продавець продає."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Магазини","items":["супермаркет","ринок","бутік","аптека","книгарня","пекарня"]},{"id":"","name":"Послуги","items":["банк","пошта","перукарня","хімчистка","автосервіс","ремонт"]},{"id":"","name":"Гроші","items":["готівка","картка","рахунок","чек","ціна","знижка"]},{"id":"","name":"Дієслова","items":["купувати","продавати","платити","замовляти","повертати","економити"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Shopping Actions","data":{"type":"fill-blank","items":[{"prompt":"Я ___ нові черевики в магазині вчора. (bought)","answer":"купив"},{"prompt":"Цей магазин ___ одяг для дітей і дорослих. (sells)","answer":"продає"},{"prompt":"Можна ___ карткою або готівкою? (to pay)","answer":"оплатити"},{"prompt":"Вона ___ піцу по телефону на вечерю. (ordered)","answer":"замовила"},{"prompt":"Я хочу ___ цей товар, він не підходить. (return)","answer":"повернути"},{"prompt":"Ми ___ гроші на відпустку весь рік. (save)","answer":"економимо"},{"prompt":"Скільки ___ ця сукня в жовтому кольорі? (costs)","answer":"коштує"},{"prompt":"Чи є ___ на цей товар сьогодні? (discount)","answer":"знижка"},{"prompt":"Візьміть ваш ___ і здачу, дякую. (receipt)","answer":"чек"},{"prompt":"Я плачу ___, у мене немає картки. (cash)","answer":"готівкою"},{"prompt":"Ліки купую в ___ біля дому. (pharmacy)","answer":"аптеці"},{"prompt":"На ___ можна торгуватися про ціну. (market)","answer":"ринку"}]}},{"id":"activity-7","type":"select","title":"Store Type?","data":{"type":"select","items":[{"question":"свіжий хліб","options":[{"text":"пекарня","correct":true},{"text":"аптека","correct":false}]},{"question":"ліки від застуди","options":[{"text":"книгарня","correct":false},{"text":"аптека","correct":true}]},{"question":"нова книга","options":[{"text":"книгарня","correct":true},{"text":"пекарня","correct":false}]},{"question":"продукти на тиждень","options":[{"text":"супермаркет","correct":true},{"text":"бутік","correct":false}]},{"question":"дорогий одяг","options":[{"text":"аптека","correct":false},{"text":"бутік","correct":true}]},{"question":"свіжі овочі","options":[{"text":"ринок","correct":true},{"text":"книгарня","correct":false}]},{"question":"різні магазини","options":[{"text":"торговий центр","correct":true},{"text":"пекарня","correct":false}]},{"question":"стрижка волосся","options":[{"text":"аптека","correct":false},{"text":"перукарня","correct":true}]},{"question":"чистий костюм","options":[{"text":"хімчистка","correct":true},{"text":"пекарня","correct":false}]},{"question":"посилка друзям","options":[{"text":"пошта","correct":true},{"text":"банк","correct":false}]},{"question":"обмін валюти","options":[{"text":"супермаркет","correct":false},{"text":"банк","correct":true}]},{"question":"ремонт машини","options":[{"text":"автосервіс","correct":true},{"text":"аптека","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Shopping and Services Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","|","купую","|","продукти","|","в","|","супермаркеті","|","щодня","|","після","|","роботи"],"answer":"Я купую продукти в супермаркеті щодня після роботи.","translation":"I buy groceries at the supermarket every day after work."},{"words":["Скільки","|","коштує","|","ця","|","красива","|","сукня","|","у","|","вітрині"],"answer":"Скільки коштує ця красива сукня у вітрині?","translation":"How much does this beautiful dress in the window cost?"},{"words":["На","|","ринку","|","можна","|","торгуватися","|","і","|","знайти","|","кращу","|","ціну"],"answer":"На ринку можна торгуватися і знайти кращу ціну.","translation":"At the market you can bargain and find a better price."},{"words":["Чи","|","є","|","знижка","|","на","|","цей","|","товар","|","сьогодні"],"answer":"Чи є знижка на цей товар сьогодні?","translation":"Is there a discount on this item today?"},{"words":["Я","|","плачу","|","готівкою","|","бо","|","забув","|","картку","|","вдома"],"answer":"Я плачу готівкою, бо забув картку вдома.","translation":"I'm paying with cash because I forgot my card at home."},{"words":["Візьміть","|","ваш","|","чек","|","і","|","здачу","|","дякую","|","вам"],"answer":"Візьміть ваш чек і здачу, дякую вам.","translation":"Take your receipt and change, thank you."},{"words":["Ліки","|","від","|","застуди","|","можна","|","купити","|","в","|","аптеці"],"answer":"Ліки від застуди можна купити в аптеці.","translation":"Medicine for cold can be bought at the pharmacy."},{"words":["Я","|","хочу","|","повернути","|","цей","|","товар","|","він","|","не","|","підходить"],"answer":"Я хочу повернути цей товар, він не підходить.","translation":"I want to return this item, it doesn't fit."},{"words":["Магазин","|","закривається","|","о","|","дев'ятій","|","годині","|","вечора"],"answer":"Магазин закривається о дев'ятій годині вечора.","translation":"The store closes at nine in the evening."},{"words":["Вона","|","замовляє","|","піцу","|","по","|","телефону","|","на","|","вечерю"],"answer":"Вона замовляє піцу по телефону на вечерю.","translation":"She orders pizza by phone for dinner."},{"words":["Гроші","|","знімаю","|","в","|","банкоматі","|","біля","|","торгового","|","центру"],"answer":"Гроші знімаю в банкоматі біля торгового центру.","translation":"I withdraw money from the ATM near the shopping mall."},{"words":["На","|","пошті","|","можна","|","надіслати","|","посилку","|","друзям","|","за","|","кордон"],"answer":"На пошті можна надіслати посилку друзям за кордон.","translation":"At the post office you can send a package to friends abroad."}]}},{"id":"activity-9","type":"quiz","title":"Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"Де купують ліки?","options":["в аптеці","на ринку","у пекарні","в банку"],"correctIndex":0,"explanation":""},{"question":"Що означає «торгуватися»?","options":["to bargain","to buy","to sell","to pay"],"correctIndex":0,"explanation":""},{"question":"Що таке «здача»?","options":["change (money returned)","receipt","price","discount"],"correctIndex":0,"explanation":""},{"question":"Де можна надіслати посилку?","options":["на пошті","в аптеці","на ринку","у пекарні"],"correctIndex":0,"explanation":""},{"question":"Як сказати «How much does it cost?»","options":["Скільки це коштує?","Де це знаходиться?","Коли це відкривається?","Як це називається?"],"correctIndex":0,"explanation":""},{"question":"Що означає «знижка»?","options":["discount","price","receipt","change"],"correctIndex":0,"explanation":""},{"question":"Де стрижуться?","options":["у перукарні","на пошті","у банку","в аптеці"],"correctIndex":0,"explanation":""},{"question":"Що таке «рахунок»?","options":["bill","discount","change","card"],"correctIndex":0,"explanation":""},{"question":"Як оплатити без готівки?","options":["карткою","чеком","знижкою","здачею"],"correctIndex":0,"explanation":""},{"question":"Що означає «повертати товар»?","options":["to return an item","to buy an item","to sell an item","to find an item"],"correctIndex":0,"explanation":""},{"question":"Де обмінюють валюту?","options":["у банку","на ринку","у магазині","на пошті"],"correctIndex":0,"explanation":""},{"question":"Що таке «покупець»?","options":["buyer/customer","seller","cashier","manager"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"магазин","translit":"","en":"store","note":""},{"uk":"супермаркет","translit":"","en":"supermarket","note":""},{"uk":"ринок","translit":"","en":"market","note":""},{"uk":"бутік","translit":"","en":"boutique","note":""},{"uk":"аптека","translit":"","en":"pharmacy","note":""},{"uk":"книгарня","translit":"","en":"bookstore","note":""},{"uk":"пекарня","translit":"","en":"bakery","note":""},{"uk":"торговий центр","translit":"","en":"shopping mall","note":""},{"uk":"банк","translit":"","en":"bank","note":""},{"uk":"пошта","translit":"","en":"post office","note":""},{"uk":"перукарня","translit":"","en":"hairdresser","note":""},{"uk":"хімчистка","translit":"","en":"dry cleaner","note":""},{"uk":"гроші","translit":"","en":"money","note":""},{"uk":"готівка","translit":"","en":"cash","note":""},{"uk":"картка","translit":"","en":"card","note":""},{"uk":"рахунок","translit":"","en":"bill","note":""},{"uk":"чек","translit":"","en":"receipt","note":""},{"uk":"ціна","translit":"","en":"price","note":""},{"uk":"знижка","translit":"","en":"discount","note":""},{"uk":"здача","translit":"","en":"change","note":""},{"uk":"купувати","translit":"","en":"to buy","note":"pf: купити"},{"uk":"продавати","translit":"","en":"to sell","note":"pf: продати"},{"uk":"платити","translit":"","en":"to pay","note":"pf: заплатити"},{"uk":"замовляти","translit":"","en":"to order","note":"pf: замовити"},{"uk":"повертати","translit":"","en":"to return","note":"pf: повернути"},{"uk":"обмінювати","translit":"","en":"to exchange","note":"pf: обміняти"},{"uk":"торгуватися","translit":"","en":"to bargain","note":""},{"uk":"економити","translit":"","en":"to save","note":"pf: зекономити"},{"uk":"продавець","translit":"","en":"seller","note":"f: продавчиня"},{"uk":"покупець","translit":"","en":"buyer","note":"f: покупниця"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2231,6 +2279,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

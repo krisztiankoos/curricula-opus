@@ -701,16 +701,57 @@ Read these sentences aloud, paying attention to the bare instrumental:
     - [ ] Tool
     - [x] Transportation
 
-## order: Morning Routine with Tools
+## unjumble: Tools and Means Sentences
 
-> Put these morning actions in logical order.
+> Reorder the words to form correct sentences using instrumental.
 
-1. Я чищу зуби зубною щіткою.
-2. Я вмиваюся водою.
-3. Я витираюся рушником.
-4. Я їм кашу ложкою.
-5. Я п'ю каву.
-6. Я їду на роботу автобусом.
+1. зуби / Я / чищу / зубною / новою / щіткою / кожного / ранку
+   > [!answer] Я кожного ранку чищу зуби новою зубною щіткою.
+   > (Every morning I brush my teeth with a new toothbrush.) [8 words]
+
+2. ножем / Він / ріже / хліб / свіжий / гострим / великим
+   > [!answer] Він ріже свіжий хліб великим гострим ножем.
+   > (He cuts fresh bread with a big sharp knife.) [7 words]
+
+3. ложкою / Вона / їсть / суп / гарячий / смачний / срібною
+   > [!answer] Вона їсть смачний гарячий суп срібною ложкою.
+   > (She eats tasty hot soup with a silver spoon.) [7 words]
+
+4. автобусом / Ми / їдемо / на / роботу / великим / новим / щодня
+   > [!answer] Ми щодня їдемо на роботу новим великим автобусом.
+   > (Every day we go to work by new big bus.) [8 words]
+
+5. рушником / Він / витирається / великим / м'яким / білим / після / душу
+   > [!answer] Він витирається великим м'яким білим рушником після душу.
+   > (He dries off with a big soft white towel after shower.) [8 words]
+
+6. олівцем / Студент / пише / завдання / простим / домашнє / своє / швидко
+   > [!answer] Студент швидко пише своє домашнє завдання простим олівцем.
+   > (The student quickly writes his homework with a simple pencil.) [8 words]
+
+7. метро / Вони / їдуть / в / центр / швидким / міським / сьогодні
+   > [!answer] Вони сьогодні їдуть в центр швидким міським метро.
+   > (Today they go to the center by fast city metro.) [8 words]
+
+8. виделкою / Я / їм / м'ясо / смачне / сріблястою / гостре / великою
+   > [!answer] Я їм смачне гостре м'ясо великою сріблястою виделкою.
+   > (I eat tasty spicy meat with a big silver fork.) [8 words]
+
+9. лікарем / Він / працює / хорошим / відомим / у / лікарні / нашій
+   > [!answer] Він працює хорошим відомим лікарем у нашій лікарні.
+   > (He works as a good famous doctor in our hospital.) [8 words]
+
+10. потягом / Ми / їдемо / до / Львова / швидким / нічним / сьогодні
+    > [!answer] Ми сьогодні їдемо до Львова швидким нічним потягом.
+    > (Today we go to Lviv by fast night train.) [8 words]
+
+11. ручкою / Вона / пише / листа / довгого / синьою / новою / гарною
+    > [!answer] Вона пише довгого листа гарною новою синьою ручкою.
+    > (She writes a long letter with a nice new blue pen.) [8 words]
+
+12. вчителем / Він / став / відомим / хорошим / після / університету / нашого
+    > [!answer] Він став хорошим відомим вчителем після нашого університету.
+    > (He became a good famous teacher after our university.) [8 words]
 
 ## quiz: Means and Methods Mastery
 

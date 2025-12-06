@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -897,11 +938,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Reported Speech</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Reported Speech Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Reported Speech</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -928,7 +976,7 @@ footer {
   </main><footer>Module 23 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Convert to Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Він сказав: «Я йду.» → Він сказав, ___ він іде.","answer":"що"},{"prompt":"Вона запитала: «Ти готовий?» → Вона запитала, ___ я готовий.","answer":"чи"},{"prompt":"Він запитав: «Де ти живеш?» → Він запитав, ___ я живу.","answer":"де"},{"prompt":"Вона ___: «Я втомилася.» (said)","answer":"сказала"},{"prompt":"Він ___, що все добре. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чи я прийду. (asked)","answer":"запитала"},{"prompt":"Він ___, що допоможе. (promised)","answer":"обіцяв"},{"prompt":"Вона ___, що треба бути обережним. (warned)","answer":"попередила"},{"prompt":"Він ___, що не знає. (answered)","answer":"відповів"},{"prompt":"Вона ___, як це працює. (explained)","answer":"пояснила"},{"prompt":"Він запитав: «Коли ти прийдеш?» → Він запитав, ___ я прийду.","answer":"коли"},{"prompt":"Вона ___, що бачила мене. (told)","answer":"розповіла"}]}},{"id":"activity-1","type":"match-up","title":"Reporting Verbs","data":{"type":"match-up","pairs":[{"left":"сказати","right":"to say (perfective)"},{"left":"казати","right":"to say (imperfective)"},{"left":"говорити","right":"to speak"},{"left":"розповісти","right":"to tell (perfective)"},{"left":"запитати","right":"to ask (perfective)"},{"left":"відповісти","right":"to answer (perfective)"},{"left":"повідомити","right":"to inform"},{"left":"пояснити","right":"to explain"},{"left":"обіцяти","right":"to promise"},{"left":"попередити","right":"to warn"},{"left":"нагадати","right":"to remind"},{"left":"стверджувати","right":"to claim"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["сказав","що","він","Він","іде","на","роботу","сьогодні"],"answer":"Він сказав, що він сьогодні іде на роботу.","translation":"He said that he was going to work today."},{"words":["запитала","чи","готовий","я","Вона","до","важливої","зустрічі"],"answer":"Вона запитала, чи я готовий до важливої зустрічі.","translation":"She asked if I was ready for the important meeting."},{"words":["де","запитав","живу","я","Він","зараз","у","місті"],"answer":"Він запитав, де я зараз живу у місті.","translation":"He asked where I now live in the city."},{"words":["що","добре","все","сказала","Вона","буде","у","них"],"answer":"Вона сказала, що у них все буде добре.","translation":"She said that everything will be fine with them."},{"words":["обіцяв","що","допоможе","він","Він","мені","з","проектом"],"answer":"Він обіцяв, що він допоможе мені з проектом.","translation":"He promised that he would help me with the project."},{"words":["чи","прийду","Вона","я","запитала","на","вечірку","завтра"],"answer":"Вона запитала, чи я прийду на вечірку завтра.","translation":"She asked if I would come to the party tomorrow."},{"words":["відповів","знаю","що","не","Я","правильної","відповіді","на"],"answer":"Я відповів, що не знаю правильної відповіді на це.","translation":"I answered that I don't know the right answer to this."},{"words":["повідомив","що","Він","не","зможе","прийти","на","свято"],"answer":"Він повідомив, що не зможе прийти на свято.","translation":"He informed that he wouldn't be able to come to the celebration."},{"words":["пояснила","як","працює","це","Вона","нам","дуже","детально"],"answer":"Вона дуже детально пояснила нам, як це працює.","translation":"She explained to us in detail how it works."},{"words":["розповіла","бачила","мене","що","Вона","вчора","в","парку"],"answer":"Вона розповіла, що бачила мене вчора в парку.","translation":"She told that she had seen me yesterday in the park."},{"words":["попередила","бути","треба","що","обережним","Вона","на","дорозі"],"answer":"Вона попередила, що треба бути обережним на дорозі.","translation":"She warned that one should be careful on the road."},{"words":["нагадав","про","зустріч","Він","мені","важливу","завтра","вранці"],"answer":"Він нагадав мені про важливу зустріч завтра вранці.","translation":"He reminded me about the important meeting tomorrow morning."}]}},{"id":"activity-3","type":"quiz","title":"Reported Speech","data":{"type":"quiz","questions":[{"question":"For statements, use:","options":["що","чи","де","коли"],"correctIndex":0,"explanation":""},{"question":"For yes/no questions, use:","options":["що","чи","де","коли"],"correctIndex":1,"explanation":""},{"question":"For wh-questions, use:","options":["що","чи","The original question word","Nothing"],"correctIndex":2,"explanation":""},{"question":"\"Він сказав, що він іде\" is:","options":["Indirect speech","Direct speech","A question","A command"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, tenses:","options":["Often stay the same","Always change","Never exist","Disappear"],"correctIndex":0,"explanation":""},{"question":"\"Запитати\" means:","options":["To ask (perfective)","To say","To tell","To answer"],"correctIndex":0,"explanation":""},{"question":"\"Розповісти\" means:","options":["To tell (perfective)","To ask","To answer","To explain"],"correctIndex":0,"explanation":""},{"question":"\"Чи\" is used for:","options":["Yes/no questions in reported speech","Statements","Commands","All questions"],"correctIndex":0,"explanation":""},{"question":"\"Він обіцяв, що прийде\" means:","options":["He promised that he would come","He asked if he would come","He denied coming","He refused to come"],"correctIndex":0,"explanation":""},{"question":"Direct speech uses:","options":["Quotation marks «»","No special punctuation","Що","Чи"],"correctIndex":0,"explanation":""},{"question":"\"Повідомити\" means:","options":["To inform","To ask","To deny","To forget"],"correctIndex":0,"explanation":""},{"question":"After \"сказав\" we usually use:","options":["що","чи","як","де"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Reported Speech Facts","data":{"type":"true-false","statements":[{"statement":"\"Що\" connects statements in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Чи\" is used for wh-questions.","isTrue":false,"explanation":""},{"statement":"Ukrainian keeps the same tense in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Сказати\" is imperfective.","isTrue":false,"explanation":""},{"statement":"\"Запитати\" introduces questions.","isTrue":true,"explanation":""},{"statement":"Direct speech has quotation marks.","isTrue":true,"explanation":""},{"statement":"Pronouns never change in reported speech.","isTrue":false,"explanation":""},{"statement":"\"Розповісти\" means \"to ask.\"","isTrue":false,"explanation":""},{"statement":"\"Він запитав, де я живу\" is indirect speech.","isTrue":true,"explanation":""},{"statement":"\"Обіцяти\" means \"to promise.\"","isTrue":true,"explanation":""},{"statement":"\"Пояснити\" means \"to explain.\"","isTrue":true,"explanation":""},{"statement":"For \"what\" questions, we use \"чи.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Speech Types","data":{"type":"group-sort","groups":[{"id":"direct-speech","name":"Direct Speech","items":["Він сказав: «Я йду.»","Вона запитала: «Де ти?»","«Я втомилася,» — сказала вона.","Він питав: «Ти готовий?»","«Допоможу,» — обіцяв він.","Вона крикнула: «Йди!»"]},{"id":"indirect-speech","name":"Indirect Speech","items":["Він сказав, що він іде.","Вона запитала, де я.","Вона сказала, що втомилася.","Він питав, чи я готовий.","Він обіцяв, що допоможе.","Вона сказала йти."]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Мама сказала, ___ обід вже готовий на столі. (that)","answer":"що"},{"prompt":"Вчитель запитав, ___ ми виконали домашнє завдання. (if)","answer":"чи"},{"prompt":"Він ___, що завтра буде важлива зустріч. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чому я запізнився на урок. (asked)","answer":"запитала"},{"prompt":"Батько ___, що допоможе мені з проектом. (promised)","answer":"обіцяв"},{"prompt":"Лікар ___, що треба пити багато води. (explained)","answer":"пояснив"},{"prompt":"Вона ___, що не зможе прийти на вечірку. (said)","answer":"сказала"},{"prompt":"Він ___, що треба бути обережним на дорозі. (warned)","answer":"попередив"},{"prompt":"Друг ___, як він провів літні канікули. (told)","answer":"розповів"},{"prompt":"Вона ___, що я повинен подзвонити мамі. (reminded)","answer":"нагадала"},{"prompt":"Директор ___, коли буде наступна нарада. (announced)","answer":"оголосив"},{"prompt":"Він ___, що не знає відповіді на питання. (answered)","answer":"відповів"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Connector","data":{"type":"select","items":[{"question":"Він сказав, ___ він не може прийти.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"коли","correct":false}]},{"question":"Вона запитала, ___ я буду вдома ввечері.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"де","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я живу зараз.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"де","correct":true},{"text":"який","correct":false}]},{"question":"Мама запитала, ___ я хочу на вечерю.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"де","correct":false},{"text":"який","correct":false}]},{"question":"Вона сказала, ___ погода буде гарна завтра.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"коли","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я повернуся з роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"коли","correct":true},{"text":"де","correct":false}]},{"question":"Вчитель запитав, ___ ми зрозуміли матеріал.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона пояснила, ___ це працює в системі.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Він розповів, ___ познайомився зі своєю дружиною.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ книга лежить на полиці.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"яка","correct":true},{"text":"коли","correct":false}]},{"question":"Він повідомив, ___ збори почнуться о десятій.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ я голодний після роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"коли","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Reported Speech","data":{"type":"quiz","questions":[{"question":"What punctuation marks does Ukrainian use for direct speech?","options":["\"...\"","«...»","'...'","[...]"],"correctIndex":1,"explanation":""},{"question":"Which verb is imperfective?","options":["сказати","казати","запитати","повідомити"],"correctIndex":1,"explanation":""},{"question":"\"Стверджувати\" means:","options":["To deny","To claim, assert","To ask","To promise"],"correctIndex":1,"explanation":""},{"question":"\"Заперечувати\" means:","options":["To deny","To claim","To agree","To promise"],"correctIndex":0,"explanation":""},{"question":"When converting \"я\" in direct speech, it becomes:","options":["він/вона (depending on speaker)","Always я","Always ми","Always вони"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, future tense:","options":["Usually stays as future","Always becomes past","Always becomes present","Disappears"],"correctIndex":0,"explanation":""},{"question":"\"Непряма мова\" is:","options":["Indirect speech","Direct speech","Written speech","Spoken speech"],"correctIndex":0,"explanation":""},{"question":"\"Нагадати\" means:","options":["To remind","To forget","To ask","To deny"],"correctIndex":0,"explanation":""},{"question":"Which introduces yes/no questions in reported speech?","options":["що","чи","як","де"],"correctIndex":1,"explanation":""},{"question":"\"Він питав, чи я готовий\" — the original question was:","options":["«Ти готовий?»","«Де ти?»","«Що ти робиш?»","«Коли ти прийдеш?»"],"correctIndex":0,"explanation":""},{"question":"After \"розповів\" we typically use:","options":["що or a question word","Only чи","Only де","Nothing"],"correctIndex":0,"explanation":""},{"question":"\"Пояснити\" is:","options":["Perfective","Imperfective","Both","Neither"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Convert to Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Він сказав: «Я йду.» → Він сказав, ___ він іде.","answer":"що"},{"prompt":"Вона запитала: «Ти готовий?» → Вона запитала, ___ я готовий.","answer":"чи"},{"prompt":"Він запитав: «Де ти живеш?» → Він запитав, ___ я живу.","answer":"де"},{"prompt":"Вона ___: «Я втомилася.» (said)","answer":"сказала"},{"prompt":"Він ___, що все добре. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чи я прийду. (asked)","answer":"запитала"},{"prompt":"Він ___, що допоможе. (promised)","answer":"обіцяв"},{"prompt":"Вона ___, що треба бути обережним. (warned)","answer":"попередила"},{"prompt":"Він ___, що не знає. (answered)","answer":"відповів"},{"prompt":"Вона ___, як це працює. (explained)","answer":"пояснила"},{"prompt":"Він запитав: «Коли ти прийдеш?» → Він запитав, ___ я прийду.","answer":"коли"},{"prompt":"Вона ___, що бачила мене. (told)","answer":"розповіла"}]}},{"id":"activity-1","type":"match-up","title":"Reporting Verbs","data":{"type":"match-up","pairs":[{"left":"сказати","right":"to say (perfective)"},{"left":"казати","right":"to say (imperfective)"},{"left":"говорити","right":"to speak"},{"left":"розповісти","right":"to tell (perfective)"},{"left":"запитати","right":"to ask (perfective)"},{"left":"відповісти","right":"to answer (perfective)"},{"left":"повідомити","right":"to inform"},{"left":"пояснити","right":"to explain"},{"left":"обіцяти","right":"to promise"},{"left":"попередити","right":"to warn"},{"left":"нагадати","right":"to remind"},{"left":"стверджувати","right":"to claim"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["сказав","що","він","Він","іде","на","роботу","сьогодні"],"answer":"Він сказав, що він сьогодні іде на роботу.","translation":"He said that he was going to work today."},{"words":["запитала","чи","готовий","я","Вона","до","важливої","зустрічі"],"answer":"Вона запитала, чи я готовий до важливої зустрічі.","translation":"She asked if I was ready for the important meeting."},{"words":["де","запитав","живу","я","Він","зараз","у","місті"],"answer":"Він запитав, де я зараз живу у місті.","translation":"He asked where I now live in the city."},{"words":["що","добре","все","сказала","Вона","буде","у","них"],"answer":"Вона сказала, що у них все буде добре.","translation":"She said that everything will be fine with them."},{"words":["обіцяв","що","допоможе","він","Він","мені","з","проектом"],"answer":"Він обіцяв, що він допоможе мені з проектом.","translation":"He promised that he would help me with the project."},{"words":["чи","прийду","Вона","я","запитала","на","вечірку","завтра"],"answer":"Вона запитала, чи я прийду на вечірку завтра.","translation":"She asked if I would come to the party tomorrow."},{"words":["відповів","знаю","що","не","Я","правильної","відповіді","на"],"answer":"Я відповів, що не знаю правильної відповіді на це.","translation":"I answered that I don't know the right answer to this."},{"words":["повідомив","що","Він","не","зможе","прийти","на","свято"],"answer":"Він повідомив, що не зможе прийти на свято.","translation":"He informed that he wouldn't be able to come to the celebration."},{"words":["пояснила","як","працює","це","Вона","нам","дуже","детально"],"answer":"Вона дуже детально пояснила нам, як це працює.","translation":"She explained to us in detail how it works."},{"words":["розповіла","бачила","мене","що","Вона","вчора","в","парку"],"answer":"Вона розповіла, що бачила мене вчора в парку.","translation":"She told that she had seen me yesterday in the park."},{"words":["попередила","бути","треба","що","обережним","Вона","на","дорозі"],"answer":"Вона попередила, що треба бути обережним на дорозі.","translation":"She warned that one should be careful on the road."},{"words":["нагадав","про","зустріч","Він","мені","важливу","завтра","вранці"],"answer":"Він нагадав мені про важливу зустріч завтра вранці.","translation":"He reminded me about the important meeting tomorrow morning."}]}},{"id":"activity-3","type":"quiz","title":"Reported Speech","data":{"type":"quiz","questions":[{"question":"For statements, use:","options":["що","чи","де","коли"],"correctIndex":0,"explanation":""},{"question":"For yes/no questions, use:","options":["що","чи","де","коли"],"correctIndex":1,"explanation":""},{"question":"For wh-questions, use:","options":["що","чи","The original question word","Nothing"],"correctIndex":2,"explanation":""},{"question":"\"Він сказав, що він іде\" is:","options":["Indirect speech","Direct speech","A question","A command"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, tenses:","options":["Often stay the same","Always change","Never exist","Disappear"],"correctIndex":0,"explanation":""},{"question":"\"Запитати\" means:","options":["To ask (perfective)","To say","To tell","To answer"],"correctIndex":0,"explanation":""},{"question":"\"Розповісти\" means:","options":["To tell (perfective)","To ask","To answer","To explain"],"correctIndex":0,"explanation":""},{"question":"\"Чи\" is used for:","options":["Yes/no questions in reported speech","Statements","Commands","All questions"],"correctIndex":0,"explanation":""},{"question":"\"Він обіцяв, що прийде\" means:","options":["He promised that he would come","He asked if he would come","He denied coming","He refused to come"],"correctIndex":0,"explanation":""},{"question":"Direct speech uses:","options":["Quotation marks «»","No special punctuation","Що","Чи"],"correctIndex":0,"explanation":""},{"question":"\"Повідомити\" means:","options":["To inform","To ask","To deny","To forget"],"correctIndex":0,"explanation":""},{"question":"After \"сказав\" we usually use:","options":["що","чи","як","де"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Reported Speech Facts","data":{"type":"true-false","statements":[{"statement":"\"Що\" connects statements in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Чи\" is used for wh-questions.","isTrue":false,"explanation":""},{"statement":"Ukrainian keeps the same tense in reported speech.","isTrue":true,"explanation":""},{"statement":"\"Сказати\" is imperfective.","isTrue":false,"explanation":""},{"statement":"\"Запитати\" introduces questions.","isTrue":true,"explanation":""},{"statement":"Direct speech has quotation marks.","isTrue":true,"explanation":""},{"statement":"Pronouns never change in reported speech.","isTrue":false,"explanation":""},{"statement":"\"Розповісти\" means \"to ask.\"","isTrue":false,"explanation":""},{"statement":"\"Він запитав, де я живу\" is indirect speech.","isTrue":true,"explanation":""},{"statement":"\"Обіцяти\" means \"to promise.\"","isTrue":true,"explanation":""},{"statement":"\"Пояснити\" means \"to explain.\"","isTrue":true,"explanation":""},{"statement":"For \"what\" questions, we use \"чи.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Speech Types","data":{"type":"group-sort","groups":[{"id":"direct-speech","name":"Direct Speech","items":["Він сказав: «Я йду.»","Вона запитала: «Де ти?»","«Я втомилася,» — сказала вона.","Він питав: «Ти готовий?»","«Допоможу,» — обіцяв він.","Вона крикнула: «Йди!»"]},{"id":"indirect-speech","name":"Indirect Speech","items":["Він сказав, що він іде.","Вона запитала, де я.","Вона сказала, що втомилася.","Він питав, чи я готовий.","Він обіцяв, що допоможе.","Вона сказала йти."]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Reported Speech","data":{"type":"fill-blank","items":[{"prompt":"Мама сказала, ___ обід вже готовий на столі. (that)","answer":"що"},{"prompt":"Вчитель запитав, ___ ми виконали домашнє завдання. (if)","answer":"чи"},{"prompt":"Він ___, що завтра буде важлива зустріч. (informed)","answer":"повідомив"},{"prompt":"Вона ___, чому я запізнився на урок. (asked)","answer":"запитала"},{"prompt":"Батько ___, що допоможе мені з проектом. (promised)","answer":"обіцяв"},{"prompt":"Лікар ___, що треба пити багато води. (explained)","answer":"пояснив"},{"prompt":"Вона ___, що не зможе прийти на вечірку. (said)","answer":"сказала"},{"prompt":"Він ___, що треба бути обережним на дорозі. (warned)","answer":"попередив"},{"prompt":"Друг ___, як він провів літні канікули. (told)","answer":"розповів"},{"prompt":"Вона ___, що я повинен подзвонити мамі. (reminded)","answer":"нагадала"},{"prompt":"Директор ___, коли буде наступна нарада. (announced)","answer":"оголосив"},{"prompt":"Він ___, що не знає відповіді на питання. (answered)","answer":"відповів"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Connector","data":{"type":"select","items":[{"question":"Він сказав, ___ він не може прийти.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"коли","correct":false}]},{"question":"Вона запитала, ___ я буду вдома ввечері.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"де","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я живу зараз.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"де","correct":true},{"text":"який","correct":false}]},{"question":"Мама запитала, ___ я хочу на вечерю.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"де","correct":false},{"text":"який","correct":false}]},{"question":"Вона сказала, ___ погода буде гарна завтра.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"коли","correct":false},{"text":"як","correct":false}]},{"question":"Він запитав, ___ я повернуся з роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"коли","correct":true},{"text":"де","correct":false}]},{"question":"Вчитель запитав, ___ ми зрозуміли матеріал.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона пояснила, ___ це працює в системі.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Він розповів, ___ познайомився зі своєю дружиною.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"як","correct":true},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ книга лежить на полиці.","options":[{"text":"що","correct":false},{"text":"чи","correct":false},{"text":"яка","correct":true},{"text":"коли","correct":false}]},{"question":"Він повідомив, ___ збори почнуться о десятій.","options":[{"text":"що","correct":true},{"text":"чи","correct":false},{"text":"як","correct":false},{"text":"де","correct":false}]},{"question":"Вона запитала, ___ я голодний після роботи.","options":[{"text":"що","correct":false},{"text":"чи","correct":true},{"text":"як","correct":false},{"text":"коли","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Reported Speech Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["він","|","сказав","|","що","|","буде","|","вдома","|","о","|","шостій"],"answer":"Він сказав, що буде вдома о шостій.","translation":"He said that he would be home at six."},{"words":["вона","|","запитала","|","чи","|","я","|","голодний"],"answer":"Вона запитала, чи я голодний.","translation":"She asked if I was hungry."},{"words":["мама","|","сказала","|","що","|","вечеря","|","готова"],"answer":"Мама сказала, що вечеря готова.","translation":"Mom said that dinner is ready."},{"words":["він","|","запитав","|","де","|","знаходиться","|","вокзал"],"answer":"Він запитав, де знаходиться вокзал.","translation":"He asked where the station is located."},{"words":["вона","|","відповіла","|","що","|","не","|","знає","|","цього"],"answer":"Вона відповіла, що не знає цього.","translation":"She answered that she doesn't know this."},{"words":["друг","|","повідомив","|","що","|","приїде","|","завтра"],"answer":"Друг повідомив, що приїде завтра.","translation":"A friend informed that he will arrive tomorrow."},{"words":["вчитель","|","запитав","|","коли","|","ми","|","закінчимо","|","завдання"],"answer":"Вчитель запитав, коли ми закінчимо завдання.","translation":"The teacher asked when we will finish the task."},{"words":["вона","|","сказала","|","що","|","їй","|","подобається","|","цей","|","фільм"],"answer":"Вона сказала, що їй подобається цей фільм.","translation":"She said that she likes this movie."},{"words":["він","|","запитав","|","чому","|","я","|","не","|","прийшов","|","вчора"],"answer":"Він запитав, чому я не прийшов вчора.","translation":"He asked why I didn't come yesterday."},{"words":["вони","|","сказали","|","що","|","хочуть","|","поїхати","|","на","|","море"],"answer":"Вони сказали, що хочуть поїхати на море.","translation":"They said that they want to go to the sea."},{"words":["вона","|","запитала","|","як","|","я","|","себе","|","почуваю"],"answer":"Вона запитала, як я себе почуваю.","translation":"She asked how I feel."},{"words":["він","|","відповів","|","що","|","все","|","гаразд"],"answer":"Він відповів, що все гаразд.","translation":"He answered that everything is fine."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Reported Speech","data":{"type":"quiz","questions":[{"question":"What punctuation marks does Ukrainian use for direct speech?","options":["\"...\"","«...»","'...'","[...]"],"correctIndex":1,"explanation":""},{"question":"Which verb is imperfective?","options":["сказати","казати","запитати","повідомити"],"correctIndex":1,"explanation":""},{"question":"\"Стверджувати\" means:","options":["To deny","To claim, assert","To ask","To promise"],"correctIndex":1,"explanation":""},{"question":"\"Заперечувати\" means:","options":["To deny","To claim","To agree","To promise"],"correctIndex":0,"explanation":""},{"question":"When converting \"я\" in direct speech, it becomes:","options":["він/вона (depending on speaker)","Always я","Always ми","Always вони"],"correctIndex":0,"explanation":""},{"question":"In Ukrainian reported speech, future tense:","options":["Usually stays as future","Always becomes past","Always becomes present","Disappears"],"correctIndex":0,"explanation":""},{"question":"\"Непряма мова\" is:","options":["Indirect speech","Direct speech","Written speech","Spoken speech"],"correctIndex":0,"explanation":""},{"question":"\"Нагадати\" means:","options":["To remind","To forget","To ask","To deny"],"correctIndex":0,"explanation":""},{"question":"Which introduces yes/no questions in reported speech?","options":["що","чи","як","де"],"correctIndex":1,"explanation":""},{"question":"\"Він питав, чи я готовий\" — the original question was:","options":["«Ти готовий?»","«Де ти?»","«Що ти робиш?»","«Коли ти прийдеш?»"],"correctIndex":0,"explanation":""},{"question":"After \"розповів\" we typically use:","options":["що or a question word","Only чи","Only де","Nothing"],"correctIndex":0,"explanation":""},{"question":"\"Пояснити\" is:","options":["Perfective","Imperfective","Both","Neither"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"сказати","translit":"","en":"to say (pf)","note":""},{"uk":"казати","translit":"","en":"to say (impf)","note":""},{"uk":"говорити","translit":"","en":"to speak, say","note":""},{"uk":"розповідати","translit":"","en":"to tell (impf)","note":""},{"uk":"розповісти","translit":"","en":"to tell (pf)","note":""},{"uk":"запитати","translit":"","en":"to ask (pf)","note":""},{"uk":"питати","translit":"","en":"to ask (impf)","note":""},{"uk":"відповідати","translit":"","en":"to answer (impf)","note":""},{"uk":"відповісти","translit":"","en":"to answer (pf)","note":""},{"uk":"повідомити","translit":"","en":"to inform (pf)","note":""},{"uk":"пояснити","translit":"","en":"to explain (pf)","note":""},{"uk":"обіцяти","translit":"","en":"to promise","note":""},{"uk":"попередити","translit":"","en":"to warn (pf)","note":""},{"uk":"нагадати","translit":"","en":"to remind (pf)","note":""},{"uk":"стверджувати","translit":"","en":"to claim, assert","note":""},{"uk":"заперечувати","translit":"","en":"to deny","note":""},{"uk":"що","translit":"","en":"that (conjunction)","note":""},{"uk":"чи","translit":"","en":"if, whether","note":""},{"uk":"пряма мова","translit":"","en":"direct speech","note":""},{"uk":"непряма мова","translit":"","en":"indirect speech","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2253,6 +2301,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

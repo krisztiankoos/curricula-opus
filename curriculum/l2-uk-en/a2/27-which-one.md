@@ -592,27 +592,57 @@ The relative pronoun changes case based on its role in the relative clause:
     - [ ] яку
     - [ ] якої
 
-## order: Progression of Complexity
+## unjumble: Relative Clause Sentences
 
-> Order from simplest to most complex relative clause structure.
+> Rearrange the words to form correct sentences with relative clauses.
 
-1. Чоловік, який читає.
-   > Simple nominative (who reads)
+1. чоловік | який | читає | газету | мій | батько
+   > [!answer] Чоловік, який читає газету, — мій батько.
+   > (The man who is reading the newspaper is my father.)
 
-2. Книга, яку я читаю.
-   > Accusative object (which I read)
+2. книга | яку | я | читаю | дуже | цікава
+   > [!answer] Книга, яку я читаю, дуже цікава.
+   > (The book that I'm reading is very interesting.)
 
-3. Людина, якій я допомагаю.
-   > Dative indirect object (to whom I help)
+3. людина | якій | я | допомагаю | моя | сусідка
+   > [!answer] Людина, якій я допомагаю, — моя сусідка.
+   > (The person whom I help is my neighbor.)
 
-4. Друг, з яким я говорив.
-   > Instrumental with preposition (with whom I spoke)
+4. друг | з | яким | я | говорив | живе | у | Львові
+   > [!answer] Друг, з яким я говорив, живе у Львові.
+   > (The friend with whom I talked lives in Lviv.)
 
-5. Місто, в якому я живу.
-   > Locative with preposition (in which I live)
+5. місто | в | якому | я | живу | дуже | красиве
+   > [!answer] Місто, в якому я живу, дуже красиве.
+   > (The city in which I live is very beautiful.)
 
-6. Студент, якого батько — лікар.
-   > Genitive possession (whose father)
+6. студент | якого | батько | лікар | вчиться | добре
+   > [!answer] Студент, якого батько — лікар, вчиться добре.
+   > (The student whose father is a doctor studies well.)
+
+7. фільм | про | який | всі | говорять | вийшов | вчора
+   > [!answer] Фільм, про який всі говорять, вийшов вчора.
+   > (The movie everyone is talking about came out yesterday.)
+
+8. жінка | яка | там | стоїть | моя | вчителька
+   > [!answer] Жінка, яка там стоїть, — моя вчителька.
+   > (The woman who is standing there is my teacher.)
+
+9. ресторан | в | якому | ми | були | дуже | дорогий
+   > [!answer] Ресторан, в якому ми були, дуже дорогий.
+   > (The restaurant we were in is very expensive.)
+
+10. дівчина | з | якою | він | танцював | красива
+    > [!answer] Дівчина, з якою він танцював, дуже красива.
+    > (The girl he danced with is very beautiful.)
+
+11. країна | яка | мені | подобається | Україна
+    > [!answer] Країна, яка мені подобається, — Україна.
+    > (The country I like is Ukraine.)
+
+12. питання | на | яке | я | не | знаю | відповіді | складне
+    > [!answer] Питання, на яке я не знаю відповіді, складне.
+    > (The question I don't know the answer to is difficult.)
 
 ## quiz: Advanced Relative Clause Usage
 

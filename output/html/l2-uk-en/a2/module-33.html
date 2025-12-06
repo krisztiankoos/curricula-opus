@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1085,11 +1126,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Noun Suffix Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1116,7 +1164,7 @@ footer {
   </main><footer>Module 33 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Suffix Practice","data":{"type":"fill-blank","items":[{"prompt":"Від дієслова «читати» утворюємо іменник ___. (reading)","answer":"читання"},{"prompt":"Від прикметника «важливий» утворюємо ___. (importance)","answer":"важливість"},{"prompt":"Людина, яка читає — це ___. (reader)","answer":"читач"},{"prompt":"Маленький кіт — це ___. (kitty)","answer":"котик"},{"prompt":"___ — моє хобі. (Reading)","answer":"Читання"},{"prompt":"Яка ___ працювати разом! (possibility)","answer":"можливість"},{"prompt":"Мій брат — відомий ___. (writer)","answer":"письменник"},{"prompt":"Маленька сестра — це ___. (little sister)","answer":"сестричка"},{"prompt":"___ — це подорож. (Life)","answer":"Життя"},{"prompt":"Несу ___ за це. (responsibility)","answer":"відповідальність"},{"prompt":"___ аплодували артисту. (Viewers)","answer":"Глядачі"},{"prompt":"Яке гарне ___! (little sun)","answer":"сонечко"}]}},{"id":"activity-1","type":"match-up","title":"Suffixes and Functions","data":{"type":"match-up","pairs":[{"left":"-ння","right":"Verbal nouns"},{"left":"-ість","right":"Abstract nouns"},{"left":"-ач","right":"Agent (doer)"},{"left":"-ик","right":"Diminutive (masc)"},{"left":"-ття","right":"Verbal nouns"},{"left":"-ець","right":"Agent (profession)"},{"left":"-ник","right":"Professional"},{"left":"-ечка","right":"Diminutive (fem)"},{"left":"-тель","right":"Teacher/professional"},{"left":"-ок","right":"Diminutive (masc)"},{"left":"-ичка","right":"Diminutive (fem)"},{"left":"-очок","right":"Diminutive (extra small)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книг","Читання","моє","улюблене","хобі","у","вільний","час"],"answer":"Читання книг — моє улюблене хобі у вільний час.","translation":"Reading books is my favorite hobby in free time."},{"words":["це","важливість","Яка","велика","для","нашого","проєкту","сьогодні"],"answer":"Яка велика важливість це для нашого проєкту сьогодні.","translation":"What great importance this is for our project today."},{"words":["активний","читач","Він","дуже","і","любить","різні","книги"],"answer":"Він дуже активний читач і любить різні книги.","translation":"He is a very active reader and loves various books."},{"words":["маленький","котик","Мій","грається","з","м'ячиком","на","килимі"],"answer":"Мій маленький котик грається з м'ячиком на килимі.","translation":"My little kitty is playing with a ball on the carpet."},{"words":["це","Життя","подорож","яку","треба","прожити","з","радістю"],"answer":"Життя — це подорож, яку треба прожити з радістю.","translation":"Life is a journey that must be lived with joy."},{"words":["минає","Молодість","швидко","тому","цінуй","кожен","день","свій"],"answer":"Молодість минає швидко, тому цінуй кожен свій день.","translation":"Youth passes quickly, so value every day of yours."},{"words":["відомий","письменник","Мій","дядько","який","написав","багато","книг"],"answer":"Мій дядько — відомий письменник, який написав багато книг.","translation":"My uncle is a famous writer who wrote many books."},{"words":["прочитай","книжечку","Цю","маленьку","бо","вона","дуже","цікава"],"answer":"Прочитай цю маленьку книжечку, бо вона дуже цікава.","translation":"Read this little book because it is very interesting."},{"words":["У","мене","є","важливе","питання","до","тебе","сьогодні"],"answer":"У мене є важливе питання до тебе сьогодні.","translation":"I have an important question for you today."},{"words":["несу","відповідальність","Я","за","це","рішення","перед","всіма"],"answer":"Я несу відповідальність за це рішення перед всіма.","translation":"I bear responsibility for this decision before everyone."},{"words":["глядачі","Усі","аплодували","коли","співець","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співець закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["сонечко","Моє","де","ти","я","чекаю","на","тебе"],"answer":"Моє сонечко, де ти? Я чекаю на тебе.","translation":"My dear, where are you? I'm waiting for you."}]}},{"id":"activity-3","type":"quiz","title":"Suffix Knowledge","data":{"type":"quiz","questions":[{"question":"«Читання» is formed from «читати» using:","options":["-ння suffix","-ість suffix","-ач suffix","-ик suffix"],"correctIndex":0,"explanation":""},{"question":"Abstract nouns from adjectives use:","options":["-ість","-ння","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Читач» is an example of:","options":["Agent noun","Verbal noun","Abstract noun","Diminutive"],"correctIndex":0,"explanation":""},{"question":"«Котик» is a diminutive of:","options":["кіт","кішка","котеня","кіт'ка"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from the verb:","options":["жити","живий","живити","жир"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is formed from:","options":["можливий","могти","можна","можливо"],"correctIndex":0,"explanation":""},{"question":"Which suffix forms verbal nouns?","options":["-ння/-ття","-ість","-ач/-ець","-ик/-ок"],"correctIndex":0,"explanation":""},{"question":"«Письменник» means:","options":["writer","reader","letter","writing"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» is used as:","options":["Term of endearment","Formal address","Scientific term","Negative word"],"correctIndex":0,"explanation":""},{"question":"«Водій» is formed with suffix:","options":["-ій","-ач","-ник","-ець"],"correctIndex":0,"explanation":""},{"question":"Diminutives express:","options":["Smallness or affection","Size increase","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"«Відповідальність» means:","options":["Responsibility","Answer","Response","Responsible"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Suffix Facts","data":{"type":"true-false","statements":[{"statement":"«-ння» forms verbal nouns from verbs.","isTrue":true,"explanation":""},{"statement":"«-ість» forms abstract nouns from verbs.","isTrue":false,"explanation":""},{"statement":"«Читач» means someone who reads.","isTrue":true,"explanation":""},{"statement":"«Котик» is larger than «кіт».","isTrue":false,"explanation":""},{"statement":"«Життя» is a verbal noun from «жити».","isTrue":true,"explanation":""},{"statement":"«Важливість» comes from «важливий».","isTrue":true,"explanation":""},{"statement":"«-ець» always means a negative person.","isTrue":false,"explanation":""},{"statement":"Diminutives can express affection.","isTrue":true,"explanation":""},{"statement":"«Письменник» comes from «писати».","isTrue":true,"explanation":""},{"statement":"«Радість» is a verbal noun.","isTrue":false,"explanation":""},{"statement":"«Сестричка» is a diminutive of «сестра».","isTrue":true,"explanation":""},{"statement":"All agent nouns end in «-ач».","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Suffix Categories","data":{"type":"group-sort","groups":[{"id":"verbal-nouns","name":"Verbal Nouns","items":["читання","життя","навчання"]},{"id":"abstract-nouns","name":"Abstract Nouns","items":["важливість","можливість","радість"]},{"id":"agent-nouns","name":"Agent Nouns","items":["читач","письменник","водій"]},{"id":"diminutives","name":"Diminutives","items":["котик","книжечка","сонечко"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"___ української мови — це цікаво. (Learning)","answer":"Навчання"},{"prompt":"Він відомий ___ у нашому місті. (writer)","answer":"письменник"},{"prompt":"Яка ___ прийти на концерт! (possibility)","answer":"можливість"},{"prompt":"Мій маленький ___ любить молоко. (kitty)","answer":"котик"},{"prompt":"У мене є важливе ___ до вас. (question)","answer":"питання"},{"prompt":"___ — це велика сила. (Knowledge)","answer":"Знання"},{"prompt":"___ таксі приїхав вчасно. (Driver)","answer":"Водій"},{"prompt":"Моя ___ грає в парку. (little sister)","answer":"сестричка"},{"prompt":"Яка ___ сьогодні чудовий день! (joy)","answer":"радість"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Прочитай цю ___ перед сном. (little book)","answer":"книжечку"},{"prompt":"Це моє найбільше ___. (wish)","answer":"бажання"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Suffix","data":{"type":"select","items":[{"question":"Від «читати» утворюємо:","options":[{"text":"читання","correct":true},{"text":"читачість","correct":false},{"text":"читачик","correct":false},{"text":"читайка","correct":false}]},{"question":"Від «важливий» утворюємо:","options":[{"text":"важливість","correct":true},{"text":"важливання","correct":false},{"text":"важливач","correct":false},{"text":"важливик","correct":false}]},{"question":"Людина, яка слухає — це:","options":[{"text":"слухач","correct":true},{"text":"слухання","correct":false},{"text":"слухість","correct":false},{"text":"слухик","correct":false}]},{"question":"Маленький брат — це:","options":[{"text":"братик","correct":true},{"text":"братач","correct":false},{"text":"братість","correct":false},{"text":"братання","correct":false}]},{"question":"Від «жити» утворюємо:","options":[{"text":"життя","correct":true},{"text":"живач","correct":false},{"text":"живість","correct":false},{"text":"живик","correct":false}]},{"question":"Людина, яка співає — це:","options":[{"text":"співець","correct":true},{"text":"співання","correct":false},{"text":"співість","correct":false},{"text":"співик","correct":false}]},{"question":"Від «молодий» утворюємо:","options":[{"text":"молодість","correct":true},{"text":"молодання","correct":false},{"text":"молодач","correct":false},{"text":"молодик","correct":false}]},{"question":"Маленьке сонце — це:","options":[{"text":"сонечко","correct":true},{"text":"сонцеач","correct":false},{"text":"сонцеість","correct":false},{"text":"сонцення","correct":false}]},{"question":"Людина, яка водить машину — це:","options":[{"text":"водій","correct":true},{"text":"водіння","correct":false},{"text":"водість","correct":false},{"text":"водик","correct":false}]},{"question":"Маленька книга — це:","options":[{"text":"книжечка","correct":true},{"text":"книгач","correct":false},{"text":"книгість","correct":false},{"text":"книгання","correct":false}]},{"question":"Від «писати» утворюємо:","options":[{"text":"писання","correct":true},{"text":"писач","correct":false},{"text":"писість","correct":false},{"text":"писик","correct":false}]},{"question":"Маленька квітка — це:","options":[{"text":"квіточка","correct":true},{"text":"квіткач","correct":false},{"text":"квіткість","correct":false},{"text":"квіткання","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which suffix creates verbal nouns from verbs?","options":["-ння/-ття","-ість","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Письменник» is formed from:","options":["«письмо» (writing)","«писати» directly","«прикметник»","«дієслово»"],"correctIndex":0,"explanation":""},{"question":"What does «-ість» create?","options":["Abstract nouns from adjectives","Verbs from nouns","Adjectives from nouns","Diminutives"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» expresses:","options":["Affection or endearment","Large size","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"Which is NOT a diminutive suffix?","options":["-ість","-ик","-ок","-ечка"],"correctIndex":0,"explanation":""},{"question":"«Глядач» means:","options":["Viewer, spectator","Actor","Director","Writer"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from:","options":["жити (to live)","живий (alive)","жир (fat)","жінка (woman)"],"correctIndex":0,"explanation":""},{"question":"Which suffix indicates a profession?","options":["-ник/-тель","-ість","-ечка","-ння"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is:","options":["An abstract noun meaning \"possibility\"","A verb meaning \"to be possible\"","An adjective meaning \"possible\"","A diminutive"],"correctIndex":0,"explanation":""},{"question":"Diminutives are typically used for:","options":["Expressing smallness or affection","Formal writing","Scientific texts","Negative connotations"],"correctIndex":0,"explanation":""},{"question":"«Навчання» can mean both:","options":["Learning and teaching","Reading and writing","Speaking and listening","Running and walking"],"correctIndex":0,"explanation":""},{"question":"Which word is an agent noun?","options":["борець (fighter)","боротьба (struggle)","боротися (to fight)","борний (fighting)"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Suffix Practice","data":{"type":"fill-blank","items":[{"prompt":"Від дієслова «читати» утворюємо іменник ___. (reading)","answer":"читання"},{"prompt":"Від прикметника «важливий» утворюємо ___. (importance)","answer":"важливість"},{"prompt":"Людина, яка читає — це ___. (reader)","answer":"читач"},{"prompt":"Маленький кіт — це ___. (kitty)","answer":"котик"},{"prompt":"___ — моє хобі. (Reading)","answer":"Читання"},{"prompt":"Яка ___ працювати разом! (possibility)","answer":"можливість"},{"prompt":"Мій брат — відомий ___. (writer)","answer":"письменник"},{"prompt":"Маленька сестра — це ___. (little sister)","answer":"сестричка"},{"prompt":"___ — це подорож. (Life)","answer":"Життя"},{"prompt":"Несу ___ за це. (responsibility)","answer":"відповідальність"},{"prompt":"___ аплодували артисту. (Viewers)","answer":"Глядачі"},{"prompt":"Яке гарне ___! (little sun)","answer":"сонечко"}]}},{"id":"activity-1","type":"match-up","title":"Suffixes and Functions","data":{"type":"match-up","pairs":[{"left":"-ння","right":"Verbal nouns"},{"left":"-ість","right":"Abstract nouns"},{"left":"-ач","right":"Agent (doer)"},{"left":"-ик","right":"Diminutive (masc)"},{"left":"-ття","right":"Verbal nouns"},{"left":"-ець","right":"Agent (profession)"},{"left":"-ник","right":"Professional"},{"left":"-ечка","right":"Diminutive (fem)"},{"left":"-тель","right":"Teacher/professional"},{"left":"-ок","right":"Diminutive (masc)"},{"left":"-ичка","right":"Diminutive (fem)"},{"left":"-очок","right":"Diminutive (extra small)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книг","Читання","моє","улюблене","хобі","у","вільний","час"],"answer":"Читання книг — моє улюблене хобі у вільний час.","translation":"Reading books is my favorite hobby in free time."},{"words":["це","важливість","Яка","велика","для","нашого","проєкту","сьогодні"],"answer":"Яка велика важливість це для нашого проєкту сьогодні.","translation":"What great importance this is for our project today."},{"words":["активний","читач","Він","дуже","і","любить","різні","книги"],"answer":"Він дуже активний читач і любить різні книги.","translation":"He is a very active reader and loves various books."},{"words":["маленький","котик","Мій","грається","з","м'ячиком","на","килимі"],"answer":"Мій маленький котик грається з м'ячиком на килимі.","translation":"My little kitty is playing with a ball on the carpet."},{"words":["це","Життя","подорож","яку","треба","прожити","з","радістю"],"answer":"Життя — це подорож, яку треба прожити з радістю.","translation":"Life is a journey that must be lived with joy."},{"words":["минає","Молодість","швидко","тому","цінуй","кожен","день","свій"],"answer":"Молодість минає швидко, тому цінуй кожен свій день.","translation":"Youth passes quickly, so value every day of yours."},{"words":["відомий","письменник","Мій","дядько","який","написав","багато","книг"],"answer":"Мій дядько — відомий письменник, який написав багато книг.","translation":"My uncle is a famous writer who wrote many books."},{"words":["прочитай","книжечку","Цю","маленьку","бо","вона","дуже","цікава"],"answer":"Прочитай цю маленьку книжечку, бо вона дуже цікава.","translation":"Read this little book because it is very interesting."},{"words":["У","мене","є","важливе","питання","до","тебе","сьогодні"],"answer":"У мене є важливе питання до тебе сьогодні.","translation":"I have an important question for you today."},{"words":["несу","відповідальність","Я","за","це","рішення","перед","всіма"],"answer":"Я несу відповідальність за це рішення перед всіма.","translation":"I bear responsibility for this decision before everyone."},{"words":["глядачі","Усі","аплодували","коли","співець","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співець закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["сонечко","Моє","де","ти","я","чекаю","на","тебе"],"answer":"Моє сонечко, де ти? Я чекаю на тебе.","translation":"My dear, where are you? I'm waiting for you."}]}},{"id":"activity-3","type":"quiz","title":"Suffix Knowledge","data":{"type":"quiz","questions":[{"question":"«Читання» is formed from «читати» using:","options":["-ння suffix","-ість suffix","-ач suffix","-ик suffix"],"correctIndex":0,"explanation":""},{"question":"Abstract nouns from adjectives use:","options":["-ість","-ння","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Читач» is an example of:","options":["Agent noun","Verbal noun","Abstract noun","Diminutive"],"correctIndex":0,"explanation":""},{"question":"«Котик» is a diminutive of:","options":["кіт","кішка","котеня","кіт'ка"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from the verb:","options":["жити","живий","живити","жир"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is formed from:","options":["можливий","могти","можна","можливо"],"correctIndex":0,"explanation":""},{"question":"Which suffix forms verbal nouns?","options":["-ння/-ття","-ість","-ач/-ець","-ик/-ок"],"correctIndex":0,"explanation":""},{"question":"«Письменник» means:","options":["writer","reader","letter","writing"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» is used as:","options":["Term of endearment","Formal address","Scientific term","Negative word"],"correctIndex":0,"explanation":""},{"question":"«Водій» is formed with suffix:","options":["-ій","-ач","-ник","-ець"],"correctIndex":0,"explanation":""},{"question":"Diminutives express:","options":["Smallness or affection","Size increase","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"«Відповідальність» means:","options":["Responsibility","Answer","Response","Responsible"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Suffix Facts","data":{"type":"true-false","statements":[{"statement":"«-ння» forms verbal nouns from verbs.","isTrue":true,"explanation":""},{"statement":"«-ість» forms abstract nouns from verbs.","isTrue":false,"explanation":""},{"statement":"«Читач» means someone who reads.","isTrue":true,"explanation":""},{"statement":"«Котик» is larger than «кіт».","isTrue":false,"explanation":""},{"statement":"«Життя» is a verbal noun from «жити».","isTrue":true,"explanation":""},{"statement":"«Важливість» comes from «важливий».","isTrue":true,"explanation":""},{"statement":"«-ець» always means a negative person.","isTrue":false,"explanation":""},{"statement":"Diminutives can express affection.","isTrue":true,"explanation":""},{"statement":"«Письменник» comes from «писати».","isTrue":true,"explanation":""},{"statement":"«Радість» is a verbal noun.","isTrue":false,"explanation":""},{"statement":"«Сестричка» is a diminutive of «сестра».","isTrue":true,"explanation":""},{"statement":"All agent nouns end in «-ач».","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Suffix Categories","data":{"type":"group-sort","groups":[{"id":"verbal-nouns","name":"Verbal Nouns","items":["читання","життя","навчання"]},{"id":"abstract-nouns","name":"Abstract Nouns","items":["важливість","можливість","радість"]},{"id":"agent-nouns","name":"Agent Nouns","items":["читач","письменник","водій"]},{"id":"diminutives","name":"Diminutives","items":["котик","книжечка","сонечко"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"___ української мови — це цікаво. (Learning)","answer":"Навчання"},{"prompt":"Він відомий ___ у нашому місті. (writer)","answer":"письменник"},{"prompt":"Яка ___ прийти на концерт! (possibility)","answer":"можливість"},{"prompt":"Мій маленький ___ любить молоко. (kitty)","answer":"котик"},{"prompt":"У мене є важливе ___ до вас. (question)","answer":"питання"},{"prompt":"___ — це велика сила. (Knowledge)","answer":"Знання"},{"prompt":"___ таксі приїхав вчасно. (Driver)","answer":"Водій"},{"prompt":"Моя ___ грає в парку. (little sister)","answer":"сестричка"},{"prompt":"Яка ___ сьогодні чудовий день! (joy)","answer":"радість"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Прочитай цю ___ перед сном. (little book)","answer":"книжечку"},{"prompt":"Це моє найбільше ___. (wish)","answer":"бажання"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Suffix","data":{"type":"select","items":[{"question":"Від «читати» утворюємо:","options":[{"text":"читання","correct":true},{"text":"читачість","correct":false},{"text":"читачик","correct":false},{"text":"читайка","correct":false}]},{"question":"Від «важливий» утворюємо:","options":[{"text":"важливість","correct":true},{"text":"важливання","correct":false},{"text":"важливач","correct":false},{"text":"важливик","correct":false}]},{"question":"Людина, яка слухає — це:","options":[{"text":"слухач","correct":true},{"text":"слухання","correct":false},{"text":"слухість","correct":false},{"text":"слухик","correct":false}]},{"question":"Маленький брат — це:","options":[{"text":"братик","correct":true},{"text":"братач","correct":false},{"text":"братість","correct":false},{"text":"братання","correct":false}]},{"question":"Від «жити» утворюємо:","options":[{"text":"життя","correct":true},{"text":"живач","correct":false},{"text":"живість","correct":false},{"text":"живик","correct":false}]},{"question":"Людина, яка співає — це:","options":[{"text":"співець","correct":true},{"text":"співання","correct":false},{"text":"співість","correct":false},{"text":"співик","correct":false}]},{"question":"Від «молодий» утворюємо:","options":[{"text":"молодість","correct":true},{"text":"молодання","correct":false},{"text":"молодач","correct":false},{"text":"молодик","correct":false}]},{"question":"Маленьке сонце — це:","options":[{"text":"сонечко","correct":true},{"text":"сонцеач","correct":false},{"text":"сонцеість","correct":false},{"text":"сонцення","correct":false}]},{"question":"Людина, яка водить машину — це:","options":[{"text":"водій","correct":true},{"text":"водіння","correct":false},{"text":"водість","correct":false},{"text":"водик","correct":false}]},{"question":"Маленька книга — це:","options":[{"text":"книжечка","correct":true},{"text":"книгач","correct":false},{"text":"книгість","correct":false},{"text":"книгання","correct":false}]},{"question":"Від «писати» утворюємо:","options":[{"text":"писання","correct":true},{"text":"писач","correct":false},{"text":"писість","correct":false},{"text":"писик","correct":false}]},{"question":"Маленька квітка — це:","options":[{"text":"квіточка","correct":true},{"text":"квіткач","correct":false},{"text":"квіткість","correct":false},{"text":"квіткання","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Noun Suffix Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["читання","|","книг","|","це","|","корисне","|","заняття"],"answer":"Читання книг — це корисне заняття.","translation":"Reading books is a useful activity."},{"words":["письменник","|","написав","|","нову","|","книгу"],"answer":"Письменник написав нову книгу.","translation":"The writer wrote a new book."},{"words":["важливість","|","здоров'я","|","не","|","можна","|","недооцінювати"],"answer":"Важливість здоров'я не можна недооцінювати.","translation":"The importance of health cannot be underestimated."},{"words":["вчитель","|","працює","|","у","|","цій","|","школі"],"answer":"Вчитель працює у цій школі.","translation":"The teacher works at this school."},{"words":["маленький","|","котик","|","грається","|","з","|","м'ячем"],"answer":"Маленький котик грається з м'ячем.","translation":"The little kitten is playing with a ball."},{"words":["свобода","|","це","|","велика","|","цінність"],"answer":"Свобода — це велика цінність.","translation":"Freedom is a great value."},{"words":["читач","|","бібліотеки","|","взяв","|","три","|","книги"],"answer":"Читач бібліотеки взяв три книги.","translation":"The library reader took three books."},{"words":["приготування","|","вечері","|","зайняло","|","годину"],"answer":"Приготування вечері зайняло годину.","translation":"Preparing dinner took an hour."},{"words":["красуня","|","стояла","|","біля","|","вікна"],"answer":"Красуня стояла біля вікна.","translation":"The beauty stood by the window."},{"words":["учення","|","це","|","важка","|","праця"],"answer":"Учення — це важка праця.","translation":"Learning is hard work."},{"words":["водій","|","автобуса","|","дуже","|","досвідчений"],"answer":"Водій автобуса дуже досвідчений.","translation":"The bus driver is very experienced."},{"words":["квіточка","|","розцвіла","|","на","|","підвіконні"],"answer":"Квіточка розцвіла на підвіконні.","translation":"The little flower bloomed on the windowsill."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which suffix creates verbal nouns from verbs?","options":["-ння/-ття","-ість","-ач","-ик"],"correctIndex":0,"explanation":""},{"question":"«Письменник» is formed from:","options":["«письмо» (writing)","«писати» directly","«прикметник»","«дієслово»"],"correctIndex":0,"explanation":""},{"question":"What does «-ість» create?","options":["Abstract nouns from adjectives","Verbs from nouns","Adjectives from nouns","Diminutives"],"correctIndex":0,"explanation":""},{"question":"«Сонечко» expresses:","options":["Affection or endearment","Large size","Negative meaning","Formal register"],"correctIndex":0,"explanation":""},{"question":"Which is NOT a diminutive suffix?","options":["-ість","-ик","-ок","-ечка"],"correctIndex":0,"explanation":""},{"question":"«Глядач» means:","options":["Viewer, spectator","Actor","Director","Writer"],"correctIndex":0,"explanation":""},{"question":"«Життя» comes from:","options":["жити (to live)","живий (alive)","жир (fat)","жінка (woman)"],"correctIndex":0,"explanation":""},{"question":"Which suffix indicates a profession?","options":["-ник/-тель","-ість","-ечка","-ння"],"correctIndex":0,"explanation":""},{"question":"«Можливість» is:","options":["An abstract noun meaning \"possibility\"","A verb meaning \"to be possible\"","An adjective meaning \"possible\"","A diminutive"],"correctIndex":0,"explanation":""},{"question":"Diminutives are typically used for:","options":["Expressing smallness or affection","Formal writing","Scientific texts","Negative connotations"],"correctIndex":0,"explanation":""},{"question":"«Навчання» can mean both:","options":["Learning and teaching","Reading and writing","Speaking and listening","Running and walking"],"correctIndex":0,"explanation":""},{"question":"Which word is an agent noun?","options":["борець (fighter)","боротьба (struggle)","боротися (to fight)","борний (fighting)"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"читання","translit":"","en":"reading","note":""},{"uk":"писання","translit":"","en":"writing","note":""},{"uk":"навчання","translit":"","en":"learning, teaching","note":""},{"uk":"життя","translit":"","en":"life","note":""},{"uk":"питання","translit":"","en":"question","note":""},{"uk":"завдання","translit":"","en":"task, assignment","note":""},{"uk":"важливість","translit":"","en":"importance","note":""},{"uk":"можливість","translit":"","en":"possibility","note":""},{"uk":"відповідальність","translit":"","en":"responsibility","note":""},{"uk":"радість","translit":"","en":"joy","note":""},{"uk":"молодість","translit":"","en":"youth","note":""},{"uk":"старість","translit":"","en":"old age","note":""},{"uk":"читач","translit":"","en":"reader","note":""},{"uk":"письменник","translit":"","en":"writer","note":""},{"uk":"вчитель","translit":"","en":"teacher","note":""},{"uk":"водій","translit":"","en":"driver","note":""},{"uk":"продавець","translit":"","en":"seller","note":""},{"uk":"співець","translit":"","en":"singer","note":""},{"uk":"борець","translit":"","en":"fighter","note":""},{"uk":"глядач","translit":"","en":"viewer","note":""},{"uk":"домик","translit":"","en":"little house","note":"diminutive"},{"uk":"котик","translit":"","en":"kitty","note":"diminutive"},{"uk":"синок","translit":"","en":"little son","note":"diminutive"},{"uk":"братик","translit":"","en":"little brother","note":"diminutive"},{"uk":"сестричка","translit":"","en":"little sister","note":"diminutive"},{"uk":"книжечка","translit":"","en":"little book","note":"diminutive"},{"uk":"ручечка","translit":"","en":"little hand","note":"diminutive"},{"uk":"квіточка","translit":"","en":"little flower","note":"diminutive"},{"uk":"сонечко","translit":"","en":"little sun, dear","note":"diminutive"},{"uk":"дівчинка","translit":"","en":"little girl","note":"diminutive"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2441,6 +2489,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

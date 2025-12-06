@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -993,11 +1034,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Complex Sentence Analysis</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Complex Sentence Review</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Complex Sentence Analysis</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1024,7 +1072,7 @@ footer {
   </main><footer>Module 30 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Mixed Review","data":{"type":"fill-blank","items":[{"prompt":"___ я прокинувся о сьомій. (at first)","answer":"Спочатку"},{"prompt":"Я не прийшов, ___ був хворий. (because)","answer":"тому що"},{"prompt":"Він сказав, ___ прийде завтра. (that)","answer":"що"},{"prompt":"Я ___, що це правда. (think)","answer":"думаю"},{"prompt":"Я ___, що ти прийшов. (glad)","answer":"радий"},{"prompt":"Я прийшов, ___ допомогти. (in order to)","answer":"щоб"},{"prompt":"Жінка, ___ говорить, — вчителька. (who - f)","answer":"яка"},{"prompt":"___ я прийшов, він спав. (when)","answer":"Коли"},{"prompt":"___ він спав, я працював. (while)","answer":"Поки"},{"prompt":"___ холодно, я вийшов. (although)","answer":"Хоча"},{"prompt":"___ пішов дощ. (suddenly)","answer":"Раптом"},{"prompt":"Я хочу, ___ ти прийшов. (so that)","answer":"щоб"}]}},{"id":"activity-1","type":"match-up","title":"Clause Types","data":{"type":"match-up","pairs":[{"left":"тому що","right":"causal (because)"},{"left":"хоча","right":"concessive (although)"},{"left":"що (after сказав)","right":"reported speech"},{"left":"що (after думаю)","right":"opinion"},{"left":"що (after радий)","right":"emotion"},{"left":"щоб","right":"purpose"},{"left":"який/яка","right":"relative"},{"left":"коли","right":"time (when)"},{"left":"поки","right":"time (while)"},{"left":"після того як","right":"time (after)"},{"left":"перш ніж","right":"time (before)"},{"left":"раптом","right":"sequence (sudden)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Complex Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Спочатку","я","прокинувся","о","сьомій","потім","поснідав","швидко"],"answer":"Спочатку я прокинувся о сьомій, потім швидко поснідав.","translation":"First I woke up at seven, then I quickly had breakfast."},{"words":["прийшов","не","Я","тому що","хворий","був","на","роботу"],"answer":"Я не прийшов на роботу, тому що був хворий.","translation":"I didn't come to work because I was sick."},{"words":["сказав","що","Він","прийде","завтра","вранці","до","нас"],"answer":"Він сказав, що прийде до нас завтра вранці.","translation":"He said that he would come to us tomorrow morning."},{"words":["думаю","що","правда","Я","це","але","не","впевнений"],"answer":"Я думаю, що це правда, але не впевнений.","translation":"I think that this is true, but I'm not sure."},{"words":["радий","що","ти","прийшов","Я","до","мене","сьогодні"],"answer":"Я радий, що ти сьогодні прийшов до мене.","translation":"I'm glad that you came to me today."},{"words":["прийшов","щоб","допомогти","Я","тобі","з","цим","завданням"],"answer":"Я прийшов, щоб допомогти тобі з цим завданням.","translation":"I came to help you with this task."},{"words":["яка","Жінка","говорить","вчителька","зараз","української","мови","наша"],"answer":"Жінка, яка зараз говорить, — наша вчителька української мови.","translation":"The woman who is speaking now is our Ukrainian teacher."},{"words":["я","Коли","прийшов","спав","він","ще","у","ліжку"],"answer":"Коли я прийшов, він ще спав у ліжку.","translation":"When I arrived, he was still sleeping in bed."},{"words":["спав","він","Поки","працював","я","над","своїм","проєктом"],"answer":"Поки він спав, я працював над своїм проєктом.","translation":"While he was sleeping, I was working on my project."},{"words":["холодно","Хоча","було","дуже","вийшов","я","на","прогулянку"],"answer":"Хоча було дуже холодно, я вийшов на прогулянку.","translation":"Although it was very cold, I went out for a walk."},{"words":["хочу","щоб","ти","прийшов","Я","до","мене","завтра"],"answer":"Я хочу, щоб ти прийшов до мене завтра.","translation":"I want you to come to me tomorrow."},{"words":["чоловік","Це","якого","я","бачив","учора","в","кафе"],"answer":"Це чоловік, якого я бачив учора в кафе.","translation":"This is the man whom I saw yesterday in the café."}]}},{"id":"activity-3","type":"quiz","title":"Comprehensive Review","data":{"type":"quiz","questions":[{"question":"\"Спочатку\" is used:","options":["At the beginning of a sequence","At the end","For sudden events","For causes"],"correctIndex":0,"explanation":""},{"question":"\"Тому що\" expresses:","options":["Cause/reason","Contrast","Time","Purpose"],"correctIndex":0,"explanation":""},{"question":"Reported speech uses:","options":["Що for statements","Який for statements","Коли for statements","Щоб for statements"],"correctIndex":0,"explanation":""},{"question":"\"Я думаю, що...\" expresses:","options":["Opinion","Emotion","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Я радий, що...\" expresses:","options":["Emotion","Opinion","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"Purpose clauses with same subject use:","options":["Щоб + infinitive","Щоб + past tense","Що + infinitive","Який + infinitive"],"correctIndex":0,"explanation":""},{"question":"Relative clauses use:","options":["Який/яка/яке/які","Щоб","Тому що","Коли"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" introduces:","options":["Time clauses","Purpose clauses","Relative clauses","Causal clauses"],"correctIndex":0,"explanation":""},{"question":"\"Хоча\" expresses:","options":["Concession/contrast","Cause","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Поки не\" means:","options":["Until","While","Before","After"],"correctIndex":0,"explanation":""},{"question":"Different subjects use:","options":["Щоб + past tense","Щоб + infinitive","Що + infinitive","Який + past"],"correctIndex":0,"explanation":""},{"question":"\"Раптом\" indicates:","options":["Sudden unexpected event","Gradual change","Cause","Purpose"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Final Check","data":{"type":"true-false","statements":[{"statement":"\"Спочатку\" starts sequences.","isTrue":true,"explanation":""},{"statement":"\"Тому що\" expresses contrast.","isTrue":false,"explanation":""},{"statement":"Reported speech uses \"що.\"","isTrue":true,"explanation":""},{"statement":"\"Який\" changes by gender.","isTrue":true,"explanation":""},{"statement":"\"Коли\" only means \"when\" as conjunction.","isTrue":false,"explanation":""},{"statement":"\"Щоб\" + infinitive = same subject.","isTrue":true,"explanation":""},{"statement":"\"Хоча\" = \"because.\"","isTrue":false,"explanation":""},{"statement":"\"Поки\" means \"while.\"","isTrue":true,"explanation":""},{"statement":"\"Після того як\" = \"before.\"","isTrue":false,"explanation":""},{"statement":"Opinion verbs take \"що.\"","isTrue":true,"explanation":""},{"statement":"\"Раптом\" = \"finally.\"","isTrue":false,"explanation":""},{"statement":"\"Яка\" is for feminine nouns.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Clause Functions","data":{"type":"group-sort","groups":[{"id":"sequence","name":"Sequence","items":["спочатку","потім","нарешті"]},{"id":"causecontrast","name":"Cause/Contrast","items":["тому що","хоча","але"]},{"id":"reportopinion","name":"Report/Opinion","items":["сказав, що","думаю, що","радий, що"]},{"id":"purposerelativetime","name":"Purpose/Relative/Time","items":["щоб","який","коли"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Comprehensive Clause Practice","data":{"type":"fill-blank","items":[{"prompt":"___ ми поговорили, я все зрозумів. (after)","answer":"Після того як"},{"prompt":"Він запитав, ___ я приїду. (whether)","answer":"чи"},{"prompt":"Вона сумна, ___ друг поїхав. (that)","answer":"що"},{"prompt":"Це книга, ___ я читаю зараз. (which - f acc)","answer":"яку"},{"prompt":"___ ніж вийти, візьми парасольку. (before)","answer":"Перш"},{"prompt":"___ він увійшов, усі замовкли. (as soon as)","answer":"Щойно"},{"prompt":"Я вчуся, ___ знати більше. (in order to)","answer":"щоб"},{"prompt":"Мені ___, що все добре закінчилося. (pleasant/nice)","answer":"приємно"},{"prompt":"___ дорого, якість хороша. (although)","answer":"Хоча"},{"prompt":"Вона хоче, ___ він прийшов. (so that)","answer":"щоб"},{"prompt":"Студенти, ___ вивчають українську, працьовиті. (who - pl)","answer":"які"},{"prompt":"___ пізно, я пішов додому. (since/because formal)","answer":"Оскільки"}]}},{"id":"activity-7","type":"select","title":"Identify the Clause Type","data":{"type":"select","items":[{"question":"\"Я не прийшов, тому що був хворий\" — this is:","options":[{"text":"Causal clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Він сказав, що прийде\" — this is:","options":[{"text":"Reported speech","correct":true},{"text":"Opinion","correct":false},{"text":"Purpose","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Жінка, яка говорить...\" — this is:","options":[{"text":"Relative clause","correct":true},{"text":"Causal clause","correct":false},{"text":"Time clause","correct":false},{"text":"Purpose clause","correct":false}]},{"question":"\"Коли я прийшов, він спав\" — this is:","options":[{"text":"Time clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Relative clause","correct":false},{"text":"Causal clause","correct":false}]},{"question":"\"Я прийшов, щоб допомогти\" — this is:","options":[{"text":"Purpose clause","correct":true},{"text":"Time clause","correct":false},{"text":"Causal clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Я думаю, що це правда\" — this is:","options":[{"text":"Opinion clause","correct":true},{"text":"Reported speech","correct":false},{"text":"Purpose","correct":false},{"text":"Time clause","correct":false}]},{"question":"\"Хоча холодно, я вийшов\" — this is:","options":[{"text":"Concessive clause","correct":true},{"text":"Causal clause","correct":false},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false}]},{"question":"\"Я радий, що ти прийшов\" — this is:","options":[{"text":"Emotion clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Поки він спав, я працював\" — this is:","options":[{"text":"Time clause (simultaneous)","correct":true},{"text":"Purpose clause","correct":false},{"text":"Causal clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Чекай, поки не прийде\" — \"поки не\" means:","options":[{"text":"Until","correct":true},{"text":"While","correct":false},{"text":"Before","correct":false},{"text":"After","correct":false}]},{"question":"\"Спочатку..., потім..., нарешті...\" — these are:","options":[{"text":"Sequence connectors","correct":true},{"text":"Causal connectors","correct":false},{"text":"Relative pronouns","correct":false},{"text":"Purpose markers","correct":false}]},{"question":"\"Перш ніж піти...\" — this introduces:","options":[{"text":"Action before main clause","correct":true},{"text":"Action after main clause","correct":false},{"text":"Simultaneous action","correct":false},{"text":"Cause of action","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Complex Sentence Analysis","data":{"type":"quiz","questions":[{"question":"\"Щоб\" + infinitive vs \"щоб\" + past tense:","options":["Same subject vs different subjects","No difference","Past vs future","Formal vs informal"],"correctIndex":0,"explanation":""},{"question":"\"Який\" changes form based on:","options":["Gender, number, and case","Only gender","Only case","Nothing — it's invariable"],"correctIndex":0,"explanation":""},{"question":"Reported questions use:","options":["Чи (yes/no) or question word (що, де, коли...)","Only що","Only чи","They don't exist in Ukrainian"],"correctIndex":0,"explanation":""},{"question":"\"Мені радісно, що...\" — \"мені\" is:","options":["Dative case (experiencer)","Nominative","Accusative","Genitive"],"correctIndex":0,"explanation":""},{"question":"\"Бо\" vs \"тому що\":","options":["Same meaning, бо is more informal","Different meanings","Бо is formal","They're not interchangeable"],"correctIndex":0,"explanation":""},{"question":"Time clause position:","options":["Can be before or after main clause","Only before","Only after","In the middle only"],"correctIndex":0,"explanation":""},{"question":"\"Хоча\" and \"проте\" both express:","options":["Contrast/concession","Cause","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Після того як\" introduces:","options":["An action that happened before the main action","An action that happens after the main action","Simultaneous actions","Purpose"],"correctIndex":0,"explanation":""},{"question":"Commas in Ukrainian complex sentences:","options":["Required before subordinate clauses","Optional","Never used","Only in questions"],"correctIndex":0,"explanation":""},{"question":"\"Раптом\" differs from \"потім\" because:","options":["Раптом = sudden/unexpected; потім = then/next","No difference","Раптом is more formal","Потім is unexpected"],"correctIndex":0,"explanation":""},{"question":"\"Вважаю\" vs \"гадаю\" vs \"думаю\":","options":["All express opinion with decreasing certainty","All mean the same","Only думаю expresses opinion","They express different emotions"],"correctIndex":0,"explanation":""},{"question":"Complex sentences in Ukrainian typically:","options":["Have comma before \"що\", \"який\", \"коли\", etc.","Never have commas","Have comma only after conjunction","Follow English punctuation rules"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Mixed Review","data":{"type":"fill-blank","items":[{"prompt":"___ я прокинувся о сьомій. (at first)","answer":"Спочатку"},{"prompt":"Я не прийшов, ___ був хворий. (because)","answer":"тому що"},{"prompt":"Він сказав, ___ прийде завтра. (that)","answer":"що"},{"prompt":"Я ___, що це правда. (think)","answer":"думаю"},{"prompt":"Я ___, що ти прийшов. (glad)","answer":"радий"},{"prompt":"Я прийшов, ___ допомогти. (in order to)","answer":"щоб"},{"prompt":"Жінка, ___ говорить, — вчителька. (who - f)","answer":"яка"},{"prompt":"___ я прийшов, він спав. (when)","answer":"Коли"},{"prompt":"___ він спав, я працював. (while)","answer":"Поки"},{"prompt":"___ холодно, я вийшов. (although)","answer":"Хоча"},{"prompt":"___ пішов дощ. (suddenly)","answer":"Раптом"},{"prompt":"Я хочу, ___ ти прийшов. (so that)","answer":"щоб"}]}},{"id":"activity-1","type":"match-up","title":"Clause Types","data":{"type":"match-up","pairs":[{"left":"тому що","right":"causal (because)"},{"left":"хоча","right":"concessive (although)"},{"left":"що (after сказав)","right":"reported speech"},{"left":"що (after думаю)","right":"opinion"},{"left":"що (after радий)","right":"emotion"},{"left":"щоб","right":"purpose"},{"left":"який/яка","right":"relative"},{"left":"коли","right":"time (when)"},{"left":"поки","right":"time (while)"},{"left":"після того як","right":"time (after)"},{"left":"перш ніж","right":"time (before)"},{"left":"раптом","right":"sequence (sudden)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Complex Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Спочатку","я","прокинувся","о","сьомій","потім","поснідав","швидко"],"answer":"Спочатку я прокинувся о сьомій, потім швидко поснідав.","translation":"First I woke up at seven, then I quickly had breakfast."},{"words":["прийшов","не","Я","тому що","хворий","був","на","роботу"],"answer":"Я не прийшов на роботу, тому що був хворий.","translation":"I didn't come to work because I was sick."},{"words":["сказав","що","Він","прийде","завтра","вранці","до","нас"],"answer":"Він сказав, що прийде до нас завтра вранці.","translation":"He said that he would come to us tomorrow morning."},{"words":["думаю","що","правда","Я","це","але","не","впевнений"],"answer":"Я думаю, що це правда, але не впевнений.","translation":"I think that this is true, but I'm not sure."},{"words":["радий","що","ти","прийшов","Я","до","мене","сьогодні"],"answer":"Я радий, що ти сьогодні прийшов до мене.","translation":"I'm glad that you came to me today."},{"words":["прийшов","щоб","допомогти","Я","тобі","з","цим","завданням"],"answer":"Я прийшов, щоб допомогти тобі з цим завданням.","translation":"I came to help you with this task."},{"words":["яка","Жінка","говорить","вчителька","зараз","української","мови","наша"],"answer":"Жінка, яка зараз говорить, — наша вчителька української мови.","translation":"The woman who is speaking now is our Ukrainian teacher."},{"words":["я","Коли","прийшов","спав","він","ще","у","ліжку"],"answer":"Коли я прийшов, він ще спав у ліжку.","translation":"When I arrived, he was still sleeping in bed."},{"words":["спав","він","Поки","працював","я","над","своїм","проєктом"],"answer":"Поки він спав, я працював над своїм проєктом.","translation":"While he was sleeping, I was working on my project."},{"words":["холодно","Хоча","було","дуже","вийшов","я","на","прогулянку"],"answer":"Хоча було дуже холодно, я вийшов на прогулянку.","translation":"Although it was very cold, I went out for a walk."},{"words":["хочу","щоб","ти","прийшов","Я","до","мене","завтра"],"answer":"Я хочу, щоб ти прийшов до мене завтра.","translation":"I want you to come to me tomorrow."},{"words":["чоловік","Це","якого","я","бачив","учора","в","кафе"],"answer":"Це чоловік, якого я бачив учора в кафе.","translation":"This is the man whom I saw yesterday in the café."}]}},{"id":"activity-3","type":"quiz","title":"Comprehensive Review","data":{"type":"quiz","questions":[{"question":"\"Спочатку\" is used:","options":["At the beginning of a sequence","At the end","For sudden events","For causes"],"correctIndex":0,"explanation":""},{"question":"\"Тому що\" expresses:","options":["Cause/reason","Contrast","Time","Purpose"],"correctIndex":0,"explanation":""},{"question":"Reported speech uses:","options":["Що for statements","Який for statements","Коли for statements","Щоб for statements"],"correctIndex":0,"explanation":""},{"question":"\"Я думаю, що...\" expresses:","options":["Opinion","Emotion","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Я радий, що...\" expresses:","options":["Emotion","Opinion","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"Purpose clauses with same subject use:","options":["Щоб + infinitive","Щоб + past tense","Що + infinitive","Який + infinitive"],"correctIndex":0,"explanation":""},{"question":"Relative clauses use:","options":["Який/яка/яке/які","Щоб","Тому що","Коли"],"correctIndex":0,"explanation":""},{"question":"\"Коли\" introduces:","options":["Time clauses","Purpose clauses","Relative clauses","Causal clauses"],"correctIndex":0,"explanation":""},{"question":"\"Хоча\" expresses:","options":["Concession/contrast","Cause","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Поки не\" means:","options":["Until","While","Before","After"],"correctIndex":0,"explanation":""},{"question":"Different subjects use:","options":["Щоб + past tense","Щоб + infinitive","Що + infinitive","Який + past"],"correctIndex":0,"explanation":""},{"question":"\"Раптом\" indicates:","options":["Sudden unexpected event","Gradual change","Cause","Purpose"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Final Check","data":{"type":"true-false","statements":[{"statement":"\"Спочатку\" starts sequences.","isTrue":true,"explanation":""},{"statement":"\"Тому що\" expresses contrast.","isTrue":false,"explanation":""},{"statement":"Reported speech uses \"що.\"","isTrue":true,"explanation":""},{"statement":"\"Який\" changes by gender.","isTrue":true,"explanation":""},{"statement":"\"Коли\" only means \"when\" as conjunction.","isTrue":false,"explanation":""},{"statement":"\"Щоб\" + infinitive = same subject.","isTrue":true,"explanation":""},{"statement":"\"Хоча\" = \"because.\"","isTrue":false,"explanation":""},{"statement":"\"Поки\" means \"while.\"","isTrue":true,"explanation":""},{"statement":"\"Після того як\" = \"before.\"","isTrue":false,"explanation":""},{"statement":"Opinion verbs take \"що.\"","isTrue":true,"explanation":""},{"statement":"\"Раптом\" = \"finally.\"","isTrue":false,"explanation":""},{"statement":"\"Яка\" is for feminine nouns.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Clause Functions","data":{"type":"group-sort","groups":[{"id":"sequence","name":"Sequence","items":["спочатку","потім","нарешті"]},{"id":"causecontrast","name":"Cause/Contrast","items":["тому що","хоча","але"]},{"id":"reportopinion","name":"Report/Opinion","items":["сказав, що","думаю, що","радий, що"]},{"id":"purposerelativetime","name":"Purpose/Relative/Time","items":["щоб","який","коли"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Comprehensive Clause Practice","data":{"type":"fill-blank","items":[{"prompt":"___ ми поговорили, я все зрозумів. (after)","answer":"Після того як"},{"prompt":"Він запитав, ___ я приїду. (whether)","answer":"чи"},{"prompt":"Вона сумна, ___ друг поїхав. (that)","answer":"що"},{"prompt":"Це книга, ___ я читаю зараз. (which - f acc)","answer":"яку"},{"prompt":"___ ніж вийти, візьми парасольку. (before)","answer":"Перш"},{"prompt":"___ він увійшов, усі замовкли. (as soon as)","answer":"Щойно"},{"prompt":"Я вчуся, ___ знати більше. (in order to)","answer":"щоб"},{"prompt":"Мені ___, що все добре закінчилося. (pleasant/nice)","answer":"приємно"},{"prompt":"___ дорого, якість хороша. (although)","answer":"Хоча"},{"prompt":"Вона хоче, ___ він прийшов. (so that)","answer":"щоб"},{"prompt":"Студенти, ___ вивчають українську, працьовиті. (who - pl)","answer":"які"},{"prompt":"___ пізно, я пішов додому. (since/because formal)","answer":"Оскільки"}]}},{"id":"activity-7","type":"select","title":"Identify the Clause Type","data":{"type":"select","items":[{"question":"\"Я не прийшов, тому що був хворий\" — this is:","options":[{"text":"Causal clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Він сказав, що прийде\" — this is:","options":[{"text":"Reported speech","correct":true},{"text":"Opinion","correct":false},{"text":"Purpose","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Жінка, яка говорить...\" — this is:","options":[{"text":"Relative clause","correct":true},{"text":"Causal clause","correct":false},{"text":"Time clause","correct":false},{"text":"Purpose clause","correct":false}]},{"question":"\"Коли я прийшов, він спав\" — this is:","options":[{"text":"Time clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Relative clause","correct":false},{"text":"Causal clause","correct":false}]},{"question":"\"Я прийшов, щоб допомогти\" — this is:","options":[{"text":"Purpose clause","correct":true},{"text":"Time clause","correct":false},{"text":"Causal clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Я думаю, що це правда\" — this is:","options":[{"text":"Opinion clause","correct":true},{"text":"Reported speech","correct":false},{"text":"Purpose","correct":false},{"text":"Time clause","correct":false}]},{"question":"\"Хоча холодно, я вийшов\" — this is:","options":[{"text":"Concessive clause","correct":true},{"text":"Causal clause","correct":false},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false}]},{"question":"\"Я радий, що ти прийшов\" — this is:","options":[{"text":"Emotion clause","correct":true},{"text":"Purpose clause","correct":false},{"text":"Time clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Поки він спав, я працював\" — this is:","options":[{"text":"Time clause (simultaneous)","correct":true},{"text":"Purpose clause","correct":false},{"text":"Causal clause","correct":false},{"text":"Relative clause","correct":false}]},{"question":"\"Чекай, поки не прийде\" — \"поки не\" means:","options":[{"text":"Until","correct":true},{"text":"While","correct":false},{"text":"Before","correct":false},{"text":"After","correct":false}]},{"question":"\"Спочатку..., потім..., нарешті...\" — these are:","options":[{"text":"Sequence connectors","correct":true},{"text":"Causal connectors","correct":false},{"text":"Relative pronouns","correct":false},{"text":"Purpose markers","correct":false}]},{"question":"\"Перш ніж піти...\" — this introduces:","options":[{"text":"Action before main clause","correct":true},{"text":"Action after main clause","correct":false},{"text":"Simultaneous action","correct":false},{"text":"Cause of action","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Complex Sentence Review","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["я","|","не","|","прийшов","|","тому","|","що","|","був","|","хворий"],"answer":"Я не прийшов, тому що був хворий.","translation":"I didn't come because I was sick."},{"words":["він","|","сказав","|","що","|","хоче","|","допомогти"],"answer":"Він сказав, що хоче допомогти.","translation":"He said that he wants to help."},{"words":["чоловік","|","який","|","там","|","стоїть","|","мій","|","друг"],"answer":"Чоловік, який там стоїть, — мій друг.","translation":"The man who is standing there is my friend."},{"words":["коли","|","я","|","прийшов","|","вона","|","вже","|","пішла"],"answer":"Коли я прийшов, вона вже пішла.","translation":"When I came, she had already left."},{"words":["я","|","вчуся","|","щоб","|","знайти","|","гарну","|","роботу"],"answer":"Я вчуся, щоб знайти гарну роботу.","translation":"I'm studying to find a good job."},{"words":["хоча","|","було","|","холодно","|","він","|","вийшов","|","без","|","куртки"],"answer":"Хоча було холодно, він вийшов без куртки.","translation":"Although it was cold, he went out without a jacket."},{"words":["вона","|","запитала","|","чи","|","я","|","буду","|","вдома","|","завтра"],"answer":"Вона запитала, чи я буду вдома завтра.","translation":"She asked if I would be home tomorrow."},{"words":["книга","|","яку","|","він","|","написав","|","дуже","|","популярна"],"answer":"Книга, яку він написав, дуже популярна.","translation":"The book that he wrote is very popular."},{"words":["після","|","того","|","як","|","ми","|","поїли","|","пішли","|","на","|","прогулянку"],"answer":"Після того як ми поїли, пішли на прогулянку.","translation":"After we ate, we went for a walk."},{"words":["я","|","думаю","|","що","|","він","|","правий"],"answer":"Я думаю, що він правий.","translation":"I think that he is right."},{"words":["мама","|","хоче","|","щоб","|","я","|","прибрав","|","кімнату"],"answer":"Мама хоче, щоб я прибрав кімнату.","translation":"Mom wants me to clean the room."},{"words":["перш","|","ніж","|","піти","|","він","|","подзвонив","|","другу"],"answer":"Перш ніж піти, він подзвонив другу.","translation":"Before leaving, he called his friend."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Complex Sentence Analysis","data":{"type":"quiz","questions":[{"question":"\"Щоб\" + infinitive vs \"щоб\" + past tense:","options":["Same subject vs different subjects","No difference","Past vs future","Formal vs informal"],"correctIndex":0,"explanation":""},{"question":"\"Який\" changes form based on:","options":["Gender, number, and case","Only gender","Only case","Nothing — it's invariable"],"correctIndex":0,"explanation":""},{"question":"Reported questions use:","options":["Чи (yes/no) or question word (що, де, коли...)","Only що","Only чи","They don't exist in Ukrainian"],"correctIndex":0,"explanation":""},{"question":"\"Мені радісно, що...\" — \"мені\" is:","options":["Dative case (experiencer)","Nominative","Accusative","Genitive"],"correctIndex":0,"explanation":""},{"question":"\"Бо\" vs \"тому що\":","options":["Same meaning, бо is more informal","Different meanings","Бо is formal","They're not interchangeable"],"correctIndex":0,"explanation":""},{"question":"Time clause position:","options":["Can be before or after main clause","Only before","Only after","In the middle only"],"correctIndex":0,"explanation":""},{"question":"\"Хоча\" and \"проте\" both express:","options":["Contrast/concession","Cause","Purpose","Time"],"correctIndex":0,"explanation":""},{"question":"\"Після того як\" introduces:","options":["An action that happened before the main action","An action that happens after the main action","Simultaneous actions","Purpose"],"correctIndex":0,"explanation":""},{"question":"Commas in Ukrainian complex sentences:","options":["Required before subordinate clauses","Optional","Never used","Only in questions"],"correctIndex":0,"explanation":""},{"question":"\"Раптом\" differs from \"потім\" because:","options":["Раптом = sudden/unexpected; потім = then/next","No difference","Раптом is more formal","Потім is unexpected"],"correctIndex":0,"explanation":""},{"question":"\"Вважаю\" vs \"гадаю\" vs \"думаю\":","options":["All express opinion with decreasing certainty","All mean the same","Only думаю expresses opinion","They express different emotions"],"correctIndex":0,"explanation":""},{"question":"Complex sentences in Ukrainian typically:","options":["Have comma before \"що\", \"який\", \"коли\", etc.","Never have commas","Have comma only after conjunction","Follow English punctuation rules"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"спочатку","translit":"","en":"at first","note":""},{"uk":"потім","translit":"","en":"then","note":""},{"uk":"нарешті","translit":"","en":"finally","note":""},{"uk":"раптом","translit":"","en":"suddenly","note":""},{"uk":"тому що","translit":"","en":"because","note":""},{"uk":"хоча","translit":"","en":"although","note":""},{"uk":"сказати","translit":"","en":"to say","note":"pf"},{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"вважати","translit":"","en":"to believe","note":""},{"uk":"радий","translit":"","en":"glad","note":""},{"uk":"сумний","translit":"","en":"sad","note":""},{"uk":"щоб","translit":"","en":"in order to","note":""},{"uk":"який","translit":"","en":"which, who","note":""},{"uk":"коли","translit":"","en":"when","note":""},{"uk":"поки","translit":"","en":"while","note":""},{"uk":"після того як","translit":"","en":"after","note":""},{"uk":"перш ніж","translit":"","en":"before","note":""},{"uk":"складне речення","translit":"","en":"complex sentence","note":""},{"uk":"підрядне речення","translit":"","en":"subordinate clause","note":""},{"uk":"головне речення","translit":"","en":"main clause","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2349,6 +2397,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

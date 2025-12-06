@@ -706,16 +706,57 @@ Let's analyze sentences that use multiple cases together:
     - [ ] Accusative
     - [ ] Locative
 
-## order: Building a Complex Sentence
+## unjumble: Complex Case Sentences
 
-> Arrange these sentence parts to build grammatically correct sentences.
+> Reorder the words to form correct sentences using multiple cases.
 
-1. Брат (Nominative - subject)
-2. дає (verb)
-3. сестрі (Dative - recipient)
-4. цікаву (Accusative - adjective)
-5. книгу (Accusative - direct object)
-6. з картинками (Instrumental - accompaniment)
+1. книгу / Брат / дає / сестрі / цікаву / з / картинками / нову
+   > [!answer] Брат дає сестрі нову цікаву книгу з картинками.
+   > (Brother gives sister a new interesting book with pictures.) [8 words]
+
+2. другові / Я / допомагаю / робити / завдання / домашнє / складне / кожного / дня
+   > [!answer] Я кожного дня допомагаю другові робити складне домашнє завдання.
+   > (I help my friend do difficult homework every day.) [9 words]
+
+3. мамі / Дочка / готує / вечерю / смачну / на / кухні / великій
+   > [!answer] Дочка готує мамі смачну вечерю на великій кухні.
+   > (Daughter prepares mom a tasty dinner in the big kitchen.) [8 words]
+
+4. батькові / Син / показує / машину / нову / свою / гарну / червону
+   > [!answer] Син показує батькові свою нову гарну червону машину.
+   > (Son shows father his new beautiful red car.) [8 words]
+
+5. вчителеві / Студенти / дякують / за / урок / цікавий / дуже / кожен
+   > [!answer] Студенти дякують вчителеві за кожен дуже цікавий урок.
+   > (Students thank teacher for every very interesting lesson.) [8 words]
+
+6. подрузі / Вона / розповідає / про / поїздку / свою / цікаву / довгу
+   > [!answer] Вона розповідає подрузі про свою довгу цікаву поїздку.
+   > (She tells her friend about her long interesting trip.) [8 words]
+
+7. лікареві / Хворий / пояснює / про / симптоми / свої / всі / важкі
+   > [!answer] Хворий пояснює лікареві про всі свої важкі симптоми.
+   > (Patient explains to doctor about all his serious symptoms.) [8 words]
+
+8. бабусі / Внук / телефонує / щодня / своїй / коханій / ввечері / старій
+   > [!answer] Внук щодня ввечері телефонує своїй коханій старій бабусі.
+   > (Grandson calls his dear old grandmother every evening.) [8 words]
+
+9. колезі / Він / пише / листа / довгого / електронного / важливого / сьогодні
+   > [!answer] Він сьогодні пише колезі довгого важливого електронного листа.
+   > (Today he writes colleague a long important email.) [8 words]
+
+10. дитині / Мама / читає / казку / цікаву / українську / народну / на / ніч
+    > [!answer] Мама читає дитині цікаву українську народну казку на ніч.
+    > (Mom reads child an interesting Ukrainian folk tale at night.) [9 words]
+
+11. братові / Сестра / купує / подарунок / гарний / великий / на / день / народження
+    > [!answer] Сестра купує братові гарний великий подарунок на день народження.
+    > (Sister buys brother a nice big present for birthday.) [9 words]
+
+12. директорові / Секретарка / несе / документи / важливі / нові / на / підпис / термінові
+    > [!answer] Секретарка несе директорові нові важливі термінові документи на підпис.
+    > (Secretary brings director new important urgent documents to sign.) [9 words]
 
 ## quiz: Seven Cases Mastery
 

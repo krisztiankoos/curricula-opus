@@ -528,16 +528,57 @@ grammar:
     - [x] музика
     > Singer is a music performer.
 
-## order: Visiting a Museum
+## unjumble: Arts and Culture Sentences
 
-> Put these steps in the correct order for visiting a museum.
+> Rearrange the words to form correct sentences about arts and culture.
 
-1. Вибери музей, який хочеш відвідати. (Choose the museum you want to visit.)
-2. Перевір години роботи музею. (Check the museum's opening hours.)
-3. Купи квиток на вході до музею. (Buy a ticket at the museum entrance.)
-4. Візьми карту або аудіогід для екскурсії. (Take a map or audio guide for the tour.)
-5. Оглянь експозицію та насолоджуйся мистецтвом. (View the exhibition and enjoy the art.)
-6. Купи сувеніри на згадку про візит. (Buy souvenirs to remember your visit.)
+1. Ми | йдемо | на | концерт | класичної | музики | сьогодні
+   > [!answer] Ми йдемо на концерт класичної музики сьогодні.
+   > (We are going to a classical music concert today.)
+
+2. Вистава | у | театрі | була | дуже | цікавою | і | захоплюючою
+   > [!answer] Вистава у театрі була дуже цікавою і захоплюючою.
+   > (The performance at the theater was very interesting and exciting.)
+
+3. Відомий | художник | малює | красиві | картини | про | Україну
+   > [!answer] Відомий художник малює красиві картини про Україну.
+   > (A famous artist paints beautiful paintings about Ukraine.)
+
+4. Українські | традиції | дуже | цікаві | та | різноманітні
+   > [!answer] Українські традиції дуже цікаві та різноманітні.
+   > (Ukrainian traditions are very interesting and diverse.)
+
+5. На | Різдво | ми | співаємо | колядки | всією | родиною
+   > [!answer] На Різдво ми співаємо колядки всією родиною.
+   > (At Christmas we sing carols with the whole family.)
+
+6. Виставка | сучасного | мистецтва | в | галереї | відкрита | щодня
+   > [!answer] Виставка сучасного мистецтва в галереї відкрита щодня.
+   > (The exhibition of modern art in the gallery is open daily.)
+
+7. Актори | виступають | на | сцені | театру | дуже | професійно
+   > [!answer] Актори виступають на сцені театру дуже професійно.
+   > (Actors perform on the theater stage very professionally.)
+
+8. Вона | одягає | вишиванку | на | кожне | українське | свято
+   > [!answer] Вона одягає вишиванку на кожне українське свято.
+   > (She wears an embroidered shirt for every Ukrainian holiday.)
+
+9. Мелодія | цієї | народної | пісні | дуже | красива | та | сумна
+   > [!answer] Мелодія цієї народної пісні дуже красива та сумна.
+   > (The melody of this folk song is very beautiful and sad.)
+
+10. Ми | святкуємо | Великдень | з | усією | родиною | вдома
+    > [!answer] Ми святкуємо Великдень з усією родиною вдома.
+    > (We celebrate Easter with the whole family at home.)
+
+11. Цей | рок-гурт | з | Києва | грає | чудову | музику
+    > [!answer] Цей рок-гурт з Києва грає чудову музику.
+    > (This rock band from Kyiv plays wonderful music.)
+
+12. Художник | написав | портрет | відомого | українського | поета
+    > [!answer] Художник написав портрет відомого українського поета.
+    > (The artist painted a portrait of a famous Ukrainian poet.)
 
 ## quiz: Culture Knowledge
 

@@ -596,27 +596,57 @@ Softer, less definite:
     - [ ] Де дощ?
     - [ ] Коли він почнеться?
 
-## order: Opinion Strength
+## unjumble: Opinion Sentences
 
-> Arrange from weakest to strongest conviction.
+> Rearrange the words to form correct opinion sentences.
 
-1. гадаю → думаю → вважаю → впевнений
-   > [!answer] Suppose → think → believe → sure
+1. я | думаю | що | це | гарна | ідея
+   > [!answer] Я думаю, що це гарна ідея.
+   > (I think that this is a good idea.)
 
-2. можливо → мабуть → напевно → безумовно
-   > [!answer] Maybe → perhaps → probably → definitely
+2. мені | здається | що | він | правий
+   > [!answer] Мені здається, що він правий.
+   > (It seems to me that he is right.)
 
-3. здається → думаю → вважаю → знаю
-   > [!answer] Seems → think → believe → know
+3. я | вважаю | що | треба | почекати
+   > [!answer] Я вважаю, що треба почекати.
+   > (I believe that we need to wait.)
 
-4. сумніваюся → не впевнений → думаю → згоден
-   > [!answer] Doubt → not sure → think → agree
+4. на | мою | думку | це | занадто | дорого
+   > [!answer] На мою думку, це занадто дорого.
+   > (In my opinion, this is too expensive.)
 
-5. не зовсім → частково → в основному → повністю
-   > [!answer] Not quite → partly → mainly → fully
+5. я | впевнений | що | він | прийде
+   > [!answer] Я впевнений, що він прийде.
+   > (I am sure that he will come.)
 
-6. мені здається → я гадаю → я думаю → я знаю
-   > [!answer] It seems to me → I suppose → I think → I know
+6. мабуть | завтра | буде | гарна | погода
+   > [!answer] Мабуть завтра буде гарна погода.
+   > (Perhaps tomorrow will be good weather.)
+
+7. я | згоден | з | твоєю | точкою | зору
+   > [!answer] Я згоден з твоєю точкою зору.
+   > (I agree with your point of view.)
+
+8. напевно | він | вже | поїхав | додому
+   > [!answer] Напевно він вже поїхав додому.
+   > (Probably he has already gone home.)
+
+9. я | не | впевнений | що | це | правда
+   > [!answer] Я не впевнений, що це правда.
+   > (I am not sure that this is true.)
+
+10. можливо | вона | знає | відповідь
+    > [!answer] Можливо вона знає відповідь.
+    > (Maybe she knows the answer.)
+
+11. я | гадаю | що | ми | встигнемо
+    > [!answer] Я гадаю, що ми встигнемо.
+    > (I suppose that we will make it.)
+
+12. безумовно | це | найкращий | варіант
+    > [!answer] Безумовно це найкращий варіант.
+    > (Definitely this is the best option.)
 
 ## quiz: Advanced Opinion Structures
 

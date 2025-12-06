@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -989,11 +1030,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Shopping Knowledge</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Shopping Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Shopping Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1020,7 +1068,7 @@ footer {
   </main><footer>Module 19 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Shopping Phrases","data":{"type":"fill-blank","items":[{"prompt":"Скільки це ___? (costs)","answer":"коштує"},{"prompt":"Є щось ___? (cheaper)","answer":"дешевше"},{"prompt":"Я ___ подивитися це. (would like)","answer":"хотів би"},{"prompt":"Це ___ дороге. (too)","answer":"занадто"},{"prompt":"Який розмір ___? (bigger)","answer":"більший"},{"prompt":"Ця якість ___. (best)","answer":"найкраща"},{"prompt":"___ чи готівкою? (by card)","answer":"Карткою"},{"prompt":"Де ___? (checkout)","answer":"каса"},{"prompt":"Чи ___ ви показати? (could)","answer":"могли б"},{"prompt":"Я ___ куртку. (am looking for)","answer":"шукаю"},{"prompt":"Це ___ ніж те. (more expensive)","answer":"дорожче"},{"prompt":"Ось ___. (change)","answer":"здача"}]}},{"id":"activity-1","type":"match-up","title":"Shopping Vocabulary","data":{"type":"match-up","pairs":[{"left":"магазин","right":"shop"},{"left":"ціна","right":"price"},{"left":"знижка","right":"discount"},{"left":"розмір","right":"size"},{"left":"якість","right":"quality"},{"left":"покупець","right":"buyer"},{"left":"продавець","right":"seller"},{"left":"каса","right":"checkout"},{"left":"готівка","right":"cash"},{"left":"картка","right":"card"},{"left":"чек","right":"receipt"},{"left":"здача","right":"change"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["коштує","ця","красива","зимова","куртка","Скільки","це","сьогодні"],"answer":"Скільки сьогодні коштує ця красива зимова куртка?","translation":"How much does this beautiful winter jacket cost today?"},{"words":["дешевше","такого","самого","розміру","щось","Є","у","вас"],"answer":"Є у вас щось дешевше такого самого розміру?","translation":"Do you have something cheaper of the same size?"},{"words":["подивитися","цю","нову","модель","хотів би","ближче","Я","будь ласка"],"answer":"Я хотів би ближче подивитися цю нову модель будь ласка.","translation":"I would like to look at this new model closer please."},{"words":["занадто","дороге","для","мого","бюджету","Це","на","жаль"],"answer":"Це на жаль занадто дороге для мого бюджету.","translation":"This is unfortunately too expensive for my budget."},{"words":["краща","якість","у","цього","товару","Ця","значно","ніж"],"answer":"Ця якість значно краща ніж у цього товару.","translation":"This quality is much better than this product's."},{"words":["найкраща","якість","товару","Це","у","всьому","нашому","магазині"],"answer":"Це найкраща якість товару у всьому нашому магазині.","translation":"This is the best product quality in our whole store."},{"words":["карткою","за","всі","покупки","заплачу","Я","сьогодні","відразу"],"answer":"Я сьогодні відразу заплачу за всі покупки карткою.","translation":"I'll pay for all purchases by card today at once."},{"words":["каса","Де","у","цьому","великому","торговому","центрі","знаходиться"],"answer":"Де знаходиться каса у цьому великому торговому центрі?","translation":"Where is the checkout in this big shopping mall?"},{"words":["теплу","зимову","куртку","шукаю","для","свого","сина","Я"],"answer":"Я шукаю теплу зимову куртку для свого сина.","translation":"I'm looking for a warm winter jacket for my son."},{"words":["набагато","дорожче","ніж","те","що","я","бачив","Це"],"answer":"Це набагато дорожче ніж те що я бачив.","translation":"This is much more expensive than what I saw."},{"words":["могли б","мені","показати","інші","Чи","ви","розміри","будь ласка"],"answer":"Чи могли б ви показати мені інші розміри будь ласка?","translation":"Could you show me other sizes please?"},{"words":["все","що","я","хотів","купити","Це","сьогодні","тут"],"answer":"Це все що я хотів купити тут сьогодні.","translation":"That's all I wanted to buy here today."}]}},{"id":"activity-3","type":"quiz","title":"Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"\"Скільки це коштує?\" means:","options":["How much does this cost?","What is this?","Where is this?","Is this good?"],"correctIndex":0,"explanation":""},{"question":"\"Є щось дешевше?\" asks for:","options":["Something cheaper","Something bigger","Something better","Something newer"],"correctIndex":0,"explanation":""},{"question":"\"Я хотів би\" is:","options":["Polite conditional","Direct request","Question","Command"],"correctIndex":0,"explanation":""},{"question":"\"Найкраща якість\" means:","options":["Best quality","Better quality","Good quality","Bad quality"],"correctIndex":0,"explanation":""},{"question":"\"Каса\" is:","options":["Checkout/cash register","Shopping cart","Entrance","Exit"],"correctIndex":0,"explanation":""},{"question":"\"Карткою чи готівкою?\" asks about:","options":["Payment method","Size preference","Color choice","Quantity needed"],"correctIndex":0,"explanation":""},{"question":"\"Здача\" means:","options":["Change (money back)","Receipt","Price","Discount"],"correctIndex":0,"explanation":""},{"question":"\"Приміряти\" means:","options":["To try on","To buy","To sell","To look at"],"correctIndex":0,"explanation":""},{"question":"\"Це занадто дороге\" expresses:","options":["Too expensive","Very cheap","Good price","Fair price"],"correctIndex":0,"explanation":""},{"question":"\"Ще щось?\" asks:","options":["Anything else?","What's this?","How much?","Which one?"],"correctIndex":0,"explanation":""},{"question":"\"Чи могли б ви показати?\" is:","options":["Could you show me?","Show me!","I'll show you","What's that?"],"correctIndex":0,"explanation":""},{"question":"\"Найнижча ціна\" means:","options":["Lowest price","Highest price","Best price","Normal price"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Shopping Facts","data":{"type":"true-false","statements":[{"statement":"\"Коштувати\" means \"to cost.\"","isTrue":true,"explanation":""},{"statement":"\"Готівка\" means card payment.","isTrue":false,"explanation":""},{"statement":"Using conditional is more polite in shops.","isTrue":true,"explanation":""},{"statement":"\"Знижка\" means discount.","isTrue":true,"explanation":""},{"statement":"\"Продавець\" is the buyer.","isTrue":false,"explanation":""},{"statement":"\"Чек\" means receipt.","isTrue":true,"explanation":""},{"statement":"\"Більший розмір\" means smaller size.","isTrue":false,"explanation":""},{"statement":"Bargaining is acceptable at Ukrainian markets.","isTrue":true,"explanation":""},{"statement":"\"Якість\" means price.","isTrue":false,"explanation":""},{"statement":"\"Дорожче\" is comparative of \"дорогий.\"","isTrue":true,"explanation":""},{"statement":"\"Найдешевший\" means cheapest.","isTrue":true,"explanation":""},{"statement":"\"Покупець\" is the seller.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Shop Types","data":{"type":"group-sort","groups":[{"id":"food","name":"Food","items":["супермаркет","продуктовий магазин","ринок","м'ясний магазин","овочевий магазин"]},{"id":"clothing","name":"Clothing","items":["магазин одягу","взуттєвий магазин","бутик"]},{"id":"other","name":"Other","items":["торговий центр","аптека","книгарня","ювелірний магазин"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Shopping Dialogues","data":{"type":"fill-blank","items":[{"prompt":"Добрий день! Чим можу ___? (help)","answer":"допомогти"},{"prompt":"Я ___ зимове взуття. (am looking for)","answer":"шукаю"},{"prompt":"Який ___ вам потрібен? (size)","answer":"розмір"},{"prompt":"Скільки ___ з мене? (is owed)","answer":"з"},{"prompt":"Я ___ карткою. (will pay)","answer":"заплачу"},{"prompt":"Можна ___? (try on)","answer":"приміряти"},{"prompt":"Яка ___ ціна? (lowest)","answer":"найнижча"},{"prompt":"Це ___ все. (not)","answer":"не"},{"prompt":"___ ви показати інші кольори? (could)","answer":"Могли б"},{"prompt":"У вас є ___? (discount)","answer":"знижка"},{"prompt":"Де знаходиться ___? (checkout)","answer":"каса"},{"prompt":"Ось ваш ___. (receipt)","answer":"чек"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[]}},{"id":"activity-8","type":"quiz","title":"Advanced Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"Which phrase is most polite when asking for help?","options":["Чи могли б ви мені допомогти?","Допоможіть мені!","Мені потрібна допомога","Допомога!"],"correctIndex":0,"explanation":""},{"question":"\"Безконтактна оплата\" means:","options":["Contactless payment","Cash payment","No payment","Delayed payment"],"correctIndex":0,"explanation":""},{"question":"To ask \"Is there something bigger?\":","options":["Є щось більше?","Є щось менше?","Є щось дорожче?","Є щось краще?"],"correctIndex":0,"explanation":""},{"question":"\"Товар\" means:","options":["Product/goods","Store","Price","Receipt"],"correctIndex":0,"explanation":""},{"question":"Which is correct for \"best price\"?","options":["найкраща ціна","кращий ціна","краща ціна","добра ціна"],"correctIndex":0,"explanation":""},{"question":"\"Скільки з мене?\" literally means:","options":["How much from me?","What do I pay?","Can I pay?","Do I pay?"],"correctIndex":0,"explanation":""},{"question":"\"Приміряльна\" is:","options":["Fitting room","Checkout","Entrance","Storage"],"correctIndex":0,"explanation":""},{"question":"To say \"This suits me better\":","options":["Це мені більше підходить","Це мені більше коштує","Це мені більше подобається","Це мені більше потрібно"],"correctIndex":0,"explanation":""},{"question":"\"Торговий центр\" is:","options":["Shopping mall","Small shop","Market","Supermarket"],"correctIndex":0,"explanation":""},{"question":"Which expresses that something is too expensive?","options":["Це занадто дороге","Це дуже дороге","Це трохи дороге","Це дорожче"],"correctIndex":0,"explanation":""},{"question":"\"Покупка\" means:","options":["Purchase","Buyer","Seller","Price"],"correctIndex":0,"explanation":""},{"question":"How do you ask \"Can I take a look?\"","options":["Можна подивитися?","Можна купити?","Можна взяти?","Можна піти?"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Shopping Phrases","data":{"type":"fill-blank","items":[{"prompt":"Скільки це ___? (costs)","answer":"коштує"},{"prompt":"Є щось ___? (cheaper)","answer":"дешевше"},{"prompt":"Я ___ подивитися це. (would like)","answer":"хотів би"},{"prompt":"Це ___ дороге. (too)","answer":"занадто"},{"prompt":"Який розмір ___? (bigger)","answer":"більший"},{"prompt":"Ця якість ___. (best)","answer":"найкраща"},{"prompt":"___ чи готівкою? (by card)","answer":"Карткою"},{"prompt":"Де ___? (checkout)","answer":"каса"},{"prompt":"Чи ___ ви показати? (could)","answer":"могли б"},{"prompt":"Я ___ куртку. (am looking for)","answer":"шукаю"},{"prompt":"Це ___ ніж те. (more expensive)","answer":"дорожче"},{"prompt":"Ось ___. (change)","answer":"здача"}]}},{"id":"activity-1","type":"match-up","title":"Shopping Vocabulary","data":{"type":"match-up","pairs":[{"left":"магазин","right":"shop"},{"left":"ціна","right":"price"},{"left":"знижка","right":"discount"},{"left":"розмір","right":"size"},{"left":"якість","right":"quality"},{"left":"покупець","right":"buyer"},{"left":"продавець","right":"seller"},{"left":"каса","right":"checkout"},{"left":"готівка","right":"cash"},{"left":"картка","right":"card"},{"left":"чек","right":"receipt"},{"left":"здача","right":"change"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["коштує","ця","красива","зимова","куртка","Скільки","це","сьогодні"],"answer":"Скільки сьогодні коштує ця красива зимова куртка?","translation":"How much does this beautiful winter jacket cost today?"},{"words":["дешевше","такого","самого","розміру","щось","Є","у","вас"],"answer":"Є у вас щось дешевше такого самого розміру?","translation":"Do you have something cheaper of the same size?"},{"words":["подивитися","цю","нову","модель","хотів би","ближче","Я","будь ласка"],"answer":"Я хотів би ближче подивитися цю нову модель будь ласка.","translation":"I would like to look at this new model closer please."},{"words":["занадто","дороге","для","мого","бюджету","Це","на","жаль"],"answer":"Це на жаль занадто дороге для мого бюджету.","translation":"This is unfortunately too expensive for my budget."},{"words":["краща","якість","у","цього","товару","Ця","значно","ніж"],"answer":"Ця якість значно краща ніж у цього товару.","translation":"This quality is much better than this product's."},{"words":["найкраща","якість","товару","Це","у","всьому","нашому","магазині"],"answer":"Це найкраща якість товару у всьому нашому магазині.","translation":"This is the best product quality in our whole store."},{"words":["карткою","за","всі","покупки","заплачу","Я","сьогодні","відразу"],"answer":"Я сьогодні відразу заплачу за всі покупки карткою.","translation":"I'll pay for all purchases by card today at once."},{"words":["каса","Де","у","цьому","великому","торговому","центрі","знаходиться"],"answer":"Де знаходиться каса у цьому великому торговому центрі?","translation":"Where is the checkout in this big shopping mall?"},{"words":["теплу","зимову","куртку","шукаю","для","свого","сина","Я"],"answer":"Я шукаю теплу зимову куртку для свого сина.","translation":"I'm looking for a warm winter jacket for my son."},{"words":["набагато","дорожче","ніж","те","що","я","бачив","Це"],"answer":"Це набагато дорожче ніж те що я бачив.","translation":"This is much more expensive than what I saw."},{"words":["могли б","мені","показати","інші","Чи","ви","розміри","будь ласка"],"answer":"Чи могли б ви показати мені інші розміри будь ласка?","translation":"Could you show me other sizes please?"},{"words":["все","що","я","хотів","купити","Це","сьогодні","тут"],"answer":"Це все що я хотів купити тут сьогодні.","translation":"That's all I wanted to buy here today."}]}},{"id":"activity-3","type":"quiz","title":"Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"\"Скільки це коштує?\" means:","options":["How much does this cost?","What is this?","Where is this?","Is this good?"],"correctIndex":0,"explanation":""},{"question":"\"Є щось дешевше?\" asks for:","options":["Something cheaper","Something bigger","Something better","Something newer"],"correctIndex":0,"explanation":""},{"question":"\"Я хотів би\" is:","options":["Polite conditional","Direct request","Question","Command"],"correctIndex":0,"explanation":""},{"question":"\"Найкраща якість\" means:","options":["Best quality","Better quality","Good quality","Bad quality"],"correctIndex":0,"explanation":""},{"question":"\"Каса\" is:","options":["Checkout/cash register","Shopping cart","Entrance","Exit"],"correctIndex":0,"explanation":""},{"question":"\"Карткою чи готівкою?\" asks about:","options":["Payment method","Size preference","Color choice","Quantity needed"],"correctIndex":0,"explanation":""},{"question":"\"Здача\" means:","options":["Change (money back)","Receipt","Price","Discount"],"correctIndex":0,"explanation":""},{"question":"\"Приміряти\" means:","options":["To try on","To buy","To sell","To look at"],"correctIndex":0,"explanation":""},{"question":"\"Це занадто дороге\" expresses:","options":["Too expensive","Very cheap","Good price","Fair price"],"correctIndex":0,"explanation":""},{"question":"\"Ще щось?\" asks:","options":["Anything else?","What's this?","How much?","Which one?"],"correctIndex":0,"explanation":""},{"question":"\"Чи могли б ви показати?\" is:","options":["Could you show me?","Show me!","I'll show you","What's that?"],"correctIndex":0,"explanation":""},{"question":"\"Найнижча ціна\" means:","options":["Lowest price","Highest price","Best price","Normal price"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Shopping Facts","data":{"type":"true-false","statements":[{"statement":"\"Коштувати\" means \"to cost.\"","isTrue":true,"explanation":""},{"statement":"\"Готівка\" means card payment.","isTrue":false,"explanation":""},{"statement":"Using conditional is more polite in shops.","isTrue":true,"explanation":""},{"statement":"\"Знижка\" means discount.","isTrue":true,"explanation":""},{"statement":"\"Продавець\" is the buyer.","isTrue":false,"explanation":""},{"statement":"\"Чек\" means receipt.","isTrue":true,"explanation":""},{"statement":"\"Більший розмір\" means smaller size.","isTrue":false,"explanation":""},{"statement":"Bargaining is acceptable at Ukrainian markets.","isTrue":true,"explanation":""},{"statement":"\"Якість\" means price.","isTrue":false,"explanation":""},{"statement":"\"Дорожче\" is comparative of \"дорогий.\"","isTrue":true,"explanation":""},{"statement":"\"Найдешевший\" means cheapest.","isTrue":true,"explanation":""},{"statement":"\"Покупець\" is the seller.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Shop Types","data":{"type":"group-sort","groups":[{"id":"food","name":"Food","items":["супермаркет","продуктовий магазин","ринок","м'ясний магазин","овочевий магазин"]},{"id":"clothing","name":"Clothing","items":["магазин одягу","взуттєвий магазин","бутик"]},{"id":"other","name":"Other","items":["торговий центр","аптека","книгарня","ювелірний магазин"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Shopping Dialogues","data":{"type":"fill-blank","items":[{"prompt":"Добрий день! Чим можу ___? (help)","answer":"допомогти"},{"prompt":"Я ___ зимове взуття. (am looking for)","answer":"шукаю"},{"prompt":"Який ___ вам потрібен? (size)","answer":"розмір"},{"prompt":"Скільки ___ з мене? (is owed)","answer":"з"},{"prompt":"Я ___ карткою. (will pay)","answer":"заплачу"},{"prompt":"Можна ___? (try on)","answer":"приміряти"},{"prompt":"Яка ___ ціна? (lowest)","answer":"найнижча"},{"prompt":"Це ___ все. (not)","answer":"не"},{"prompt":"___ ви показати інші кольори? (could)","answer":"Могли б"},{"prompt":"У вас є ___? (discount)","answer":"знижка"},{"prompt":"Де знаходиться ___? (checkout)","answer":"каса"},{"prompt":"Ось ваш ___. (receipt)","answer":"чек"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[]}},{"id":"activity-8","type":"unjumble","title":"Shopping Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["скільки","|","коштує","|","ця","|","сукня"],"answer":"Скільки коштує ця сукня?","translation":"How much does this dress cost?"},{"words":["я","|","шукаю","|","взуття","|","чорне","|","розмір","|","сорок","|","два"],"answer":"Я шукаю чорне взуття, розмір сорок два.","translation":"I'm looking for black shoes, size forty-two."},{"words":["є","|","знижка","|","на","|","цей","|","товар"],"answer":"Є знижка на цей товар?","translation":"Is there a discount on this product?"},{"words":["можу","|","я","|","заплатити","|","карткою"],"answer":"Можу я заплатити карткою?","translation":"Can I pay by card?"},{"words":["це","|","занадто","|","дороге","|","для","|","мене"],"answer":"Це занадто дороге для мене.","translation":"This is too expensive for me."},{"words":["є","|","у","|","вас","|","інший","|","розмір"],"answer":"У вас є інший розмір?","translation":"Do you have another size?"},{"words":["можна","|","поміряти","|","цю","|","куртку"],"answer":"Можна поміряти цю куртку?","translation":"Can I try on this jacket?"},{"words":["де","|","знаходиться","|","каса","|","будь","|","ласка"],"answer":"Де знаходиться каса, будь ласка?","translation":"Where is the checkout, please?"},{"words":["ось","|","ваша","|","здача","|","і","|","чек"],"answer":"Ось ваша здача і чек.","translation":"Here's your change and receipt."},{"words":["мені","|","потрібна","|","допомога","|","у","|","виборі"],"answer":"Мені потрібна допомога у виборі.","translation":"I need help choosing."},{"words":["можна","|","обміняти","|","цей","|","товар"],"answer":"Можна обміняти цей товар?","translation":"Can I exchange this product?"},{"words":["скільки","|","з","|","мене","|","всього"],"answer":"Скільки з мене всього?","translation":"How much do I owe in total?"}]}},{"id":"activity-9","type":"quiz","title":"Advanced Shopping Knowledge","data":{"type":"quiz","questions":[{"question":"Which phrase is most polite when asking for help?","options":["Чи могли б ви мені допомогти?","Допоможіть мені!","Мені потрібна допомога","Допомога!"],"correctIndex":0,"explanation":""},{"question":"\"Безконтактна оплата\" means:","options":["Contactless payment","Cash payment","No payment","Delayed payment"],"correctIndex":0,"explanation":""},{"question":"To ask \"Is there something bigger?\":","options":["Є щось більше?","Є щось менше?","Є щось дорожче?","Є щось краще?"],"correctIndex":0,"explanation":""},{"question":"\"Товар\" means:","options":["Product/goods","Store","Price","Receipt"],"correctIndex":0,"explanation":""},{"question":"Which is correct for \"best price\"?","options":["найкраща ціна","кращий ціна","краща ціна","добра ціна"],"correctIndex":0,"explanation":""},{"question":"\"Скільки з мене?\" literally means:","options":["How much from me?","What do I pay?","Can I pay?","Do I pay?"],"correctIndex":0,"explanation":""},{"question":"\"Приміряльна\" is:","options":["Fitting room","Checkout","Entrance","Storage"],"correctIndex":0,"explanation":""},{"question":"To say \"This suits me better\":","options":["Це мені більше підходить","Це мені більше коштує","Це мені більше подобається","Це мені більше потрібно"],"correctIndex":0,"explanation":""},{"question":"\"Торговий центр\" is:","options":["Shopping mall","Small shop","Market","Supermarket"],"correctIndex":0,"explanation":""},{"question":"Which expresses that something is too expensive?","options":["Це занадто дороге","Це дуже дороге","Це трохи дороге","Це дорожче"],"correctIndex":0,"explanation":""},{"question":"\"Покупка\" means:","options":["Purchase","Buyer","Seller","Price"],"correctIndex":0,"explanation":""},{"question":"How do you ask \"Can I take a look?\"","options":["Можна подивитися?","Можна купити?","Можна взяти?","Можна піти?"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"магазин","translit":"","en":"shop, store","note":""},{"uk":"ціна","translit":"","en":"price","note":""},{"uk":"знижка","translit":"","en":"discount","note":""},{"uk":"розмір","translit":"","en":"size","note":""},{"uk":"якість","translit":"","en":"quality","note":""},{"uk":"вибір","translit":"","en":"choice, selection","note":""},{"uk":"товар","translit":"","en":"goods, product","note":""},{"uk":"покупець","translit":"","en":"buyer, customer","note":""},{"uk":"продавець","translit":"","en":"seller, salesperson","note":""},{"uk":"каса","translit":"","en":"checkout, cash register","note":""},{"uk":"готівка","translit":"","en":"cash","note":""},{"uk":"картка","translit":"","en":"card","note":""},{"uk":"здача","translit":"","en":"change (money)","note":""},{"uk":"чек","translit":"","en":"receipt","note":""},{"uk":"приміряти","translit":"","en":"to try on","note":""},{"uk":"коштувати","translit":"","en":"to cost","note":""},{"uk":"платити","translit":"","en":"to pay","note":""},{"uk":"заплатити","translit":"","en":"to pay (pf)","note":""},{"uk":"шукати","translit":"","en":"to look for","note":""},{"uk":"показати","translit":"","en":"to show (pf)","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2345,6 +2393,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

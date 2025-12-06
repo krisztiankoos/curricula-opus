@@ -670,16 +670,57 @@ Beyond basic body parts, you need deeper vocabulary to discuss health. "My heart
     - [ ] Їжа
     - [ ] Напій
 
-## order: Steps at Doctor's Visit
+## unjumble: Health and Body Sentences
 
-> Put these steps in the correct order for a doctor's visit.
+> Rearrange the words to form correct sentences about health and body.
 
-1. Запишіться на прийом.
-2. Прийдіть до лікарні.
-3. Зачекайте у черзі.
-4. Зайдіть до кабінету.
-5. Опишіть симптоми лікарю.
-6. Пройдіть обстеження.
+1. у | мене | болить | голова | сьогодні
+   > [!answer] У мене болить голова сьогодні.
+   > (I have a headache today.)
+
+2. лікар | оглянув | пацієнта | уважно
+   > [!answer] Лікар оглянув пацієнта уважно.
+   > (The doctor examined the patient carefully.)
+
+3. вона | приймає | ліки | тричі | на | день
+   > [!answer] Вона приймає ліки тричі на день.
+   > (She takes medicine three times a day.)
+
+4. мені | треба | записатися | до | стоматолога
+   > [!answer] Мені треба записатися до стоматолога.
+   > (I need to make an appointment with the dentist.)
+
+5. у | нього | висока | температура | і | кашель
+   > [!answer] У нього висока температура і кашель.
+   > (He has a high temperature and a cough.)
+
+6. медсестра | зробила | укол | швидко
+   > [!answer] Медсестра зробила укол швидко.
+   > (The nurse gave the injection quickly.)
+
+7. аптека | знаходиться | за | рогом
+   > [!answer] Аптека знаходиться за рогом.
+   > (The pharmacy is around the corner.)
+
+8. він | зламав | ногу | минулого | тижня
+   > [!answer] Він зламав ногу минулого тижня.
+   > (He broke his leg last week.)
+
+9. їй | важко | дихати | через | алергію
+   > [!answer] Їй важко дихати через алергію.
+    > (It's hard for her to breathe because of allergies.)
+
+10. що | вас | турбує | скажіть | лікарю
+    > [!answer] Що вас турбує, скажіть лікарю.
+    > (Tell the doctor what's bothering you.)
+
+11. рецепт | на | ліки | дійсний | місяць
+    > [!answer] Рецепт на ліки дійсний місяць.
+    > (The prescription is valid for a month.)
+
+12. він | швидко | одужав | після | операції
+    > [!answer] Він швидко одужав після операції.
+    > (He recovered quickly after the surgery.)
 
 ## quiz: Health Situations
 

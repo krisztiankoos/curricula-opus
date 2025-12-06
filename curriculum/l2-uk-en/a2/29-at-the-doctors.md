@@ -610,27 +610,57 @@ Health matters! Whether you're traveling, living abroad, or helping a Ukrainian 
     - [ ] рука
     - [ ] нога
 
-## order: Typical Doctor Visit Sequence
+## unjumble: Medical Sentences
 
-> Order these steps in a typical doctor visit.
+> Rearrange the words to form correct sentences about medical situations.
 
-1. Записатися на прийом до лікаря.
-   > First: Make an appointment
+1. у | мене | болить | голова | і | горло
+   > [!answer] У мене болить голова і горло.
+   > (I have a headache and sore throat.)
 
-2. Прийти до поліклініки вчасно.
-   > Second: Arrive at the clinic on time
+2. мені | потрібно | записатися | до | лікаря
+   > [!answer] Мені потрібно записатися до лікаря.
+   > (I need to make an appointment with the doctor.)
 
-3. Описати симптоми лікарю.
-   > Third: Describe symptoms to the doctor
+3. лікар | виписав | мені | рецепт | на | ліки
+   > [!answer] Лікар виписав мені рецепт на ліки.
+   > (The doctor wrote me a prescription for medicine.)
 
-4. Лікар проводить огляд.
-   > Fourth: Doctor examines you
+4. я | погано | почуваюся | з | учора
+   > [!answer] Я погано почуваюся з учора.
+   > (I've been feeling bad since yesterday.)
 
-5. Отримати діагноз і рекомендації.
-   > Fifth: Get diagnosis and recommendations
+5. медсестра | зробила | мені | укол
+   > [!answer] Медсестра зробила мені укол.
+   > (The nurse gave me an injection.)
 
-6. Взяти рецепт і піти в аптеку.
-   > Sixth: Get prescription and go to pharmacy
+6. вам | треба | лежати | в | ліжку | три | дні
+   > [!answer] Вам треба лежати в ліжку три дні.
+   > (You need to stay in bed for three days.)
+
+7. у | нього | висока | температура | і | кашель
+   > [!answer] У нього висока температура і кашель.
+   > (He has a high temperature and a cough.)
+
+8. приймайте | ці | ліки | тричі | на | день
+   > [!answer] Приймайте ці ліки тричі на день.
+   > (Take this medicine three times a day.)
+
+9. я | застудився | і | не | можу | працювати
+   > [!answer] Я застудився і не можу працювати.
+   > (I caught a cold and can't work.)
+
+10. де | знаходиться | найближча | аптека
+    > [!answer] Де знаходиться найближча аптека?
+    > (Where is the nearest pharmacy?)
+
+11. що | вас | турбує | скажіть | будь | ласка
+    > [!answer] Що вас турбує, скажіть, будь ласка?
+    > (What's bothering you, please tell me?)
+
+12. вона | викликала | швидку | допомогу
+    > [!answer] Вона викликала швидку допомогу.
+    > (She called an ambulance.)
 
 ## quiz: Medical Situations
 

@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -880,11 +921,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Purpose Structures</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Purpose Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Purpose Structures</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -911,7 +959,7 @@ footer {
   </main><footer>Module 26 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Purpose Clauses","data":{"type":"fill-blank","items":[{"prompt":"Я прийшов, ___ допомогти. (in order to)","answer":"щоб"},{"prompt":"Він працює, ___ заробити гроші. (in order to)","answer":"щоб"},{"prompt":"Я хочу, ___ ти прийшов. (that - purpose)","answer":"щоб"},{"prompt":"___ того, щоб вивчити мову, треба практикуватися. (for)","answer":"Для"},{"prompt":"Говори тихо, щоб ___ розбудити дитину. (not)","answer":"не"},{"prompt":"Вона вчиться, ___ знати більше. (in order to)","answer":"щоб"},{"prompt":"Я хочу, щоб він ___. (knew)","answer":"знав"},{"prompt":"Він зателефонував, ___ запитати. (in order to)","answer":"щоб"},{"prompt":"Мені треба працювати, ___ заробити. (in order to)","answer":"щоб"},{"prompt":"Вона хоче, ___ ми приїхали. (that)","answer":"щоб"},{"prompt":"Він виїхав рано, щоб не ___ в затор. (get into)","answer":"потрапити"},{"prompt":"___ досягти успіху, треба працювати. (in order to)","answer":"Щоб"}]}},{"id":"activity-1","type":"match-up","title":"Purpose Expressions","data":{"type":"match-up","pairs":[{"left":"щоб + infinitive","right":"same subject purpose"},{"left":"щоб + past tense","right":"different subjects"},{"left":"для того, щоб","right":"emphatic purpose"},{"left":"щоб не","right":"negative purpose"},{"left":"так що","right":"result (not purpose)"},{"left":"мета","right":"goal"},{"left":"ціль","right":"aim"},{"left":"досягти","right":"to achieve"},{"left":"заробити","right":"to earn"},{"left":"перемогти","right":"to win"},{"left":"встигнути","right":"to make it in time"},{"left":"уникнути","right":"to avoid"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["прийшов","щоб","допомогти","Я","тобі","з","цим","завданням"],"answer":"Я прийшов, щоб допомогти тобі з цим завданням.","translation":"I came to help you with this task."},{"words":["працює","щоб","заробити","Він","гроші","для","своєї","сім'ї"],"answer":"Він працює, щоб заробити гроші для своєї сім'ї.","translation":"He works to earn money for his family."},{"words":["хочу","щоб","прийшов","ти","Я","на","мій","день","народження"],"answer":"Я хочу, щоб ти прийшов на мій день народження.","translation":"I want you to come to my birthday."},{"words":["вчиться","щоб","знати","більше","Вона","про","українську","мову"],"answer":"Вона вчиться, щоб знати більше про українську мову.","translation":"She studies to know more about Ukrainian language."},{"words":["Для","щоб","того","вивчити","мову","треба","багато","практикуватися"],"answer":"Для того, щоб вивчити мову, треба багато практикуватися.","translation":"In order to learn a language, one must practice a lot."},{"words":["тихо","Говори","щоб","не","розбудити","маленьку","дитину","вночі"],"answer":"Говори тихо, щоб не розбудити маленьку дитину вночі.","translation":"Speak quietly so as not to wake the little child at night."},{"words":["хоче","щоб","він","знав","Вона","про","це","рішення"],"answer":"Вона хоче, щоб він знав про це рішення.","translation":"She wants him to know about this decision."},{"words":["зупинилися","щоб","Ми","відпочити","на","кілька","хвилин","тут"],"answer":"Ми зупинилися тут, щоб відпочити на кілька хвилин.","translation":"We stopped here to rest for a few minutes."},{"words":["виїхав","рано","щоб","запізнитися","не","Він","на","роботу"],"answer":"Він виїхав рано, щоб не запізнитися на роботу.","translation":"He left early so as not to be late for work."},{"words":["треба","працювати","Мені","щоб","заробити","достатньо","грошей","сьогодні"],"answer":"Мені треба працювати сьогодні, щоб заробити достатньо грошей.","translation":"I need to work today to earn enough money."},{"words":["записала","щоб","забути","не","Вона","про","важливу","зустріч"],"answer":"Вона записала, щоб не забути про важливу зустріч.","translation":"She wrote it down so as not to forget about the important meeting."},{"words":["досягти","успіху","треба","працювати","Щоб","наполегливо","кожен","день"],"answer":"Щоб досягти успіху, треба наполегливо працювати кожен день.","translation":"To achieve success, one must work hard every day."}]}},{"id":"activity-3","type":"quiz","title":"Purpose Knowledge","data":{"type":"quiz","questions":[{"question":"\"Щоб\" + infinitive is used when:","options":["Same subject in both clauses","Different subjects","Questions only","Past tense only"],"correctIndex":0,"explanation":""},{"question":"\"Щоб\" + past tense is used when:","options":["Different subjects","Same subject","Future only","Questions"],"correctIndex":0,"explanation":""},{"question":"\"Для того, щоб\" is:","options":["Emphatic form of purpose","Different meaning","Informal only","Incorrect"],"correctIndex":0,"explanation":""},{"question":"\"Щоб не\" expresses:","options":["Negative purpose (so as not to)","Result","Condition","Question"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу, щоб ти прийшов\" means:","options":["I want you to come","I want to come","You want to come","He wants you to come"],"correctIndex":0,"explanation":""},{"question":"In \"щоб він знав,\" the verb is:","options":["Past tense form","Infinitive","Present tense","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Так що\" expresses:","options":["Result","Purpose","Condition","Time"],"correctIndex":0,"explanation":""},{"question":"\"Мета\" means:","options":["Goal, purpose","Method","Problem","Solution"],"correctIndex":0,"explanation":""},{"question":"Which is correct for same subject?","options":["Я прийшов, щоб допомогти","Я прийшов, щоб я допоміг","Я прийшов допомогти","Both A and C are correct"],"correctIndex":0,"explanation":""},{"question":"\"Досягти\" means:","options":["To achieve","To avoid","To fail","To try"],"correctIndex":0,"explanation":""},{"question":"Purpose clause answers:","options":["Why? For what?","When?","Where?","Who?"],"correctIndex":0,"explanation":""},{"question":"\"Встигнути\" means:","options":["To make it in time","To be late","To forget","To remember"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Purpose Facts","data":{"type":"true-false","statements":[{"statement":"\"Щоб\" is always followed by infinitive.","isTrue":false,"explanation":""},{"statement":"Same subject uses щоб + infinitive.","isTrue":true,"explanation":""},{"statement":"Different subjects use щоб + past tense.","isTrue":true,"explanation":""},{"statement":"\"Для того, щоб\" is incorrect.","isTrue":false,"explanation":""},{"statement":"\"Щоб не\" means \"so as not to.\"","isTrue":true,"explanation":""},{"statement":"\"Так що\" = \"щоб.\"","isTrue":false,"explanation":""},{"statement":"Purpose clauses explain reasons.","isTrue":true,"explanation":""},{"statement":"\"Я хочу, щоб ти прийшла\" — прийшла is past tense.","isTrue":true,"explanation":""},{"statement":"\"Щоб\" comes from \"що\" + \"б.\"","isTrue":true,"explanation":""},{"statement":"\"Мета\" and \"ціль\" are synonyms.","isTrue":true,"explanation":""},{"statement":"\"Перемогти\" means \"to lose.\"","isTrue":false,"explanation":""},{"statement":"Purpose and result are the same.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Щоб Structures","data":{"type":"group-sort","groups":[{"id":"same-subject","name":"Same Subject","items":["Я прийшов, щоб допомогти","Він працює, щоб заробити","Ми зупинилися, щоб відпочити","Вона вчиться, щоб знати","Він виїхав, щоб встигнути","Я зателефонував, щоб запитати"]},{"id":"different-subjects","name":"Different Subjects","items":["Я хочу, щоб ти прийшов","Вона хоче, щоб він знав","Він хоче, щоб вона зрозуміла","Я попросив, щоб вони допомогли","Мама хоче, щоб ми прибрали","Вони хочуть, щоб я залишився"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Purpose in Context","data":{"type":"fill-blank","items":[{"prompt":"Він купив квитки, ___ поїхати у відпустку. (in order to)","answer":"щоб"},{"prompt":"Мама хоче, ___ діти добре вчилися в школі. (that)","answer":"щоб"},{"prompt":"___ того, щоб бути здоровим, треба займатися спортом. (for)","answer":"Для"},{"prompt":"Вона встала рано, ___ не спізнитися на поїзд. (so as not)","answer":"щоб"},{"prompt":"Він подзвонив, ___ дізнатися результати тесту. (in order to)","answer":"щоб"},{"prompt":"Батьки хочуть, ___ ми були щасливими у житті. (that)","answer":"щоб"},{"prompt":"Я прийшов раніше, ___ зайняти гарне місце. (in order to)","answer":"щоб"},{"prompt":"Вона вчить мову, ___ працювати за кордоном. (in order to)","answer":"щоб"},{"prompt":"Він попросив, ___ я допоміг йому з ремонтом. (that)","answer":"щоб"},{"prompt":"Я закрив вікно, ___ не замерзнути вночі. (so as not)","answer":"щоб"},{"prompt":"___ зрозуміти цю тему, треба багато читати. (in order)","answer":"Щоб"},{"prompt":"Вчитель хоче, ___ студенти виконали всі завдання. (that)","answer":"щоб"}]}},{"id":"activity-7","type":"select","title":"Choose Same or Different Subject","data":{"type":"select","items":[{"question":"Я прийшов, щоб допомогти.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Я хочу, щоб ти прийшов.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Він вчиться, щоб знати більше.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Вона хоче, щоб він допоміг.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Ми зупинилися, щоб поїсти.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Батько хоче, щоб син вивчив музику.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Вона вийшла, щоб подихати повітрям.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Я попросив, щоб вони зачекали.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Він працює, щоб заробити гроші.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Мама хоче, щоб ми прибрали кімнату.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Вона записала, щоб не забути.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Вони хочуть, щоб я залишився.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Purpose Structures","data":{"type":"quiz","questions":[{"question":"After \"щоб\" with different subjects, we use:","options":["Past tense form","Present tense","Infinitive","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Для того, щоб\" is used:","options":["For emphasis","Only in questions","Only negatively","In informal speech only"],"correctIndex":0,"explanation":""},{"question":"\"Уникнути\" means:","options":["To avoid","To achieve","To win","To earn"],"correctIndex":0,"explanation":""},{"question":"Which verb is perfective?","options":["досягти","досягати","заробляти","працювати"],"correctIndex":0,"explanation":""},{"question":"\"Запобігти\" means:","options":["To prevent","To achieve","To remember","To forget"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу, щоб вона прийшла\" — \"прийшла\" is:","options":["Feminine past tense","Masculine past tense","Infinitive","Present tense"],"correctIndex":0,"explanation":""},{"question":"Purpose clause answers the question:","options":["Для чого? Навіщо?","Коли?","Де?","Хто?"],"correctIndex":0,"explanation":""},{"question":"\"Затор\" means:","options":["Traffic jam","Goal","Success","Failure"],"correctIndex":0,"explanation":""},{"question":"Which is NOT a purpose expression?","options":["щоб","для того, щоб","так що","щоб не"],"correctIndex":2,"explanation":""},{"question":"\"Успіх\" means:","options":["Success","Failure","Attempt","Goal"],"correctIndex":0,"explanation":""},{"question":"\"Наполегливо\" means:","options":["Persistently, diligently","Lazily","Quickly","Slowly"],"correctIndex":0,"explanation":""},{"question":"\"Слабке місце\" means:","options":["Weak spot","Strong point","Main goal","Final result"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Purpose Clauses","data":{"type":"fill-blank","items":[{"prompt":"Я прийшов, ___ допомогти. (in order to)","answer":"щоб"},{"prompt":"Він працює, ___ заробити гроші. (in order to)","answer":"щоб"},{"prompt":"Я хочу, ___ ти прийшов. (that - purpose)","answer":"щоб"},{"prompt":"___ того, щоб вивчити мову, треба практикуватися. (for)","answer":"Для"},{"prompt":"Говори тихо, щоб ___ розбудити дитину. (not)","answer":"не"},{"prompt":"Вона вчиться, ___ знати більше. (in order to)","answer":"щоб"},{"prompt":"Я хочу, щоб він ___. (knew)","answer":"знав"},{"prompt":"Він зателефонував, ___ запитати. (in order to)","answer":"щоб"},{"prompt":"Мені треба працювати, ___ заробити. (in order to)","answer":"щоб"},{"prompt":"Вона хоче, ___ ми приїхали. (that)","answer":"щоб"},{"prompt":"Він виїхав рано, щоб не ___ в затор. (get into)","answer":"потрапити"},{"prompt":"___ досягти успіху, треба працювати. (in order to)","answer":"Щоб"}]}},{"id":"activity-1","type":"match-up","title":"Purpose Expressions","data":{"type":"match-up","pairs":[{"left":"щоб + infinitive","right":"same subject purpose"},{"left":"щоб + past tense","right":"different subjects"},{"left":"для того, щоб","right":"emphatic purpose"},{"left":"щоб не","right":"negative purpose"},{"left":"так що","right":"result (not purpose)"},{"left":"мета","right":"goal"},{"left":"ціль","right":"aim"},{"left":"досягти","right":"to achieve"},{"left":"заробити","right":"to earn"},{"left":"перемогти","right":"to win"},{"left":"встигнути","right":"to make it in time"},{"left":"уникнути","right":"to avoid"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["прийшов","щоб","допомогти","Я","тобі","з","цим","завданням"],"answer":"Я прийшов, щоб допомогти тобі з цим завданням.","translation":"I came to help you with this task."},{"words":["працює","щоб","заробити","Він","гроші","для","своєї","сім'ї"],"answer":"Він працює, щоб заробити гроші для своєї сім'ї.","translation":"He works to earn money for his family."},{"words":["хочу","щоб","прийшов","ти","Я","на","мій","день","народження"],"answer":"Я хочу, щоб ти прийшов на мій день народження.","translation":"I want you to come to my birthday."},{"words":["вчиться","щоб","знати","більше","Вона","про","українську","мову"],"answer":"Вона вчиться, щоб знати більше про українську мову.","translation":"She studies to know more about Ukrainian language."},{"words":["Для","щоб","того","вивчити","мову","треба","багато","практикуватися"],"answer":"Для того, щоб вивчити мову, треба багато практикуватися.","translation":"In order to learn a language, one must practice a lot."},{"words":["тихо","Говори","щоб","не","розбудити","маленьку","дитину","вночі"],"answer":"Говори тихо, щоб не розбудити маленьку дитину вночі.","translation":"Speak quietly so as not to wake the little child at night."},{"words":["хоче","щоб","він","знав","Вона","про","це","рішення"],"answer":"Вона хоче, щоб він знав про це рішення.","translation":"She wants him to know about this decision."},{"words":["зупинилися","щоб","Ми","відпочити","на","кілька","хвилин","тут"],"answer":"Ми зупинилися тут, щоб відпочити на кілька хвилин.","translation":"We stopped here to rest for a few minutes."},{"words":["виїхав","рано","щоб","запізнитися","не","Він","на","роботу"],"answer":"Він виїхав рано, щоб не запізнитися на роботу.","translation":"He left early so as not to be late for work."},{"words":["треба","працювати","Мені","щоб","заробити","достатньо","грошей","сьогодні"],"answer":"Мені треба працювати сьогодні, щоб заробити достатньо грошей.","translation":"I need to work today to earn enough money."},{"words":["записала","щоб","забути","не","Вона","про","важливу","зустріч"],"answer":"Вона записала, щоб не забути про важливу зустріч.","translation":"She wrote it down so as not to forget about the important meeting."},{"words":["досягти","успіху","треба","працювати","Щоб","наполегливо","кожен","день"],"answer":"Щоб досягти успіху, треба наполегливо працювати кожен день.","translation":"To achieve success, one must work hard every day."}]}},{"id":"activity-3","type":"quiz","title":"Purpose Knowledge","data":{"type":"quiz","questions":[{"question":"\"Щоб\" + infinitive is used when:","options":["Same subject in both clauses","Different subjects","Questions only","Past tense only"],"correctIndex":0,"explanation":""},{"question":"\"Щоб\" + past tense is used when:","options":["Different subjects","Same subject","Future only","Questions"],"correctIndex":0,"explanation":""},{"question":"\"Для того, щоб\" is:","options":["Emphatic form of purpose","Different meaning","Informal only","Incorrect"],"correctIndex":0,"explanation":""},{"question":"\"Щоб не\" expresses:","options":["Negative purpose (so as not to)","Result","Condition","Question"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу, щоб ти прийшов\" means:","options":["I want you to come","I want to come","You want to come","He wants you to come"],"correctIndex":0,"explanation":""},{"question":"In \"щоб він знав,\" the verb is:","options":["Past tense form","Infinitive","Present tense","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Так що\" expresses:","options":["Result","Purpose","Condition","Time"],"correctIndex":0,"explanation":""},{"question":"\"Мета\" means:","options":["Goal, purpose","Method","Problem","Solution"],"correctIndex":0,"explanation":""},{"question":"Which is correct for same subject?","options":["Я прийшов, щоб допомогти","Я прийшов, щоб я допоміг","Я прийшов допомогти","Both A and C are correct"],"correctIndex":0,"explanation":""},{"question":"\"Досягти\" means:","options":["To achieve","To avoid","To fail","To try"],"correctIndex":0,"explanation":""},{"question":"Purpose clause answers:","options":["Why? For what?","When?","Where?","Who?"],"correctIndex":0,"explanation":""},{"question":"\"Встигнути\" means:","options":["To make it in time","To be late","To forget","To remember"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Purpose Facts","data":{"type":"true-false","statements":[{"statement":"\"Щоб\" is always followed by infinitive.","isTrue":false,"explanation":""},{"statement":"Same subject uses щоб + infinitive.","isTrue":true,"explanation":""},{"statement":"Different subjects use щоб + past tense.","isTrue":true,"explanation":""},{"statement":"\"Для того, щоб\" is incorrect.","isTrue":false,"explanation":""},{"statement":"\"Щоб не\" means \"so as not to.\"","isTrue":true,"explanation":""},{"statement":"\"Так що\" = \"щоб.\"","isTrue":false,"explanation":""},{"statement":"Purpose clauses explain reasons.","isTrue":true,"explanation":""},{"statement":"\"Я хочу, щоб ти прийшла\" — прийшла is past tense.","isTrue":true,"explanation":""},{"statement":"\"Щоб\" comes from \"що\" + \"б.\"","isTrue":true,"explanation":""},{"statement":"\"Мета\" and \"ціль\" are synonyms.","isTrue":true,"explanation":""},{"statement":"\"Перемогти\" means \"to lose.\"","isTrue":false,"explanation":""},{"statement":"Purpose and result are the same.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Щоб Structures","data":{"type":"group-sort","groups":[{"id":"same-subject","name":"Same Subject","items":["Я прийшов, щоб допомогти","Він працює, щоб заробити","Ми зупинилися, щоб відпочити","Вона вчиться, щоб знати","Він виїхав, щоб встигнути","Я зателефонував, щоб запитати"]},{"id":"different-subjects","name":"Different Subjects","items":["Я хочу, щоб ти прийшов","Вона хоче, щоб він знав","Він хоче, щоб вона зрозуміла","Я попросив, щоб вони допомогли","Мама хоче, щоб ми прибрали","Вони хочуть, щоб я залишився"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Purpose in Context","data":{"type":"fill-blank","items":[{"prompt":"Він купив квитки, ___ поїхати у відпустку. (in order to)","answer":"щоб"},{"prompt":"Мама хоче, ___ діти добре вчилися в школі. (that)","answer":"щоб"},{"prompt":"___ того, щоб бути здоровим, треба займатися спортом. (for)","answer":"Для"},{"prompt":"Вона встала рано, ___ не спізнитися на поїзд. (so as not)","answer":"щоб"},{"prompt":"Він подзвонив, ___ дізнатися результати тесту. (in order to)","answer":"щоб"},{"prompt":"Батьки хочуть, ___ ми були щасливими у житті. (that)","answer":"щоб"},{"prompt":"Я прийшов раніше, ___ зайняти гарне місце. (in order to)","answer":"щоб"},{"prompt":"Вона вчить мову, ___ працювати за кордоном. (in order to)","answer":"щоб"},{"prompt":"Він попросив, ___ я допоміг йому з ремонтом. (that)","answer":"щоб"},{"prompt":"Я закрив вікно, ___ не замерзнути вночі. (so as not)","answer":"щоб"},{"prompt":"___ зрозуміти цю тему, треба багато читати. (in order)","answer":"Щоб"},{"prompt":"Вчитель хоче, ___ студенти виконали всі завдання. (that)","answer":"щоб"}]}},{"id":"activity-7","type":"select","title":"Choose Same or Different Subject","data":{"type":"select","items":[{"question":"Я прийшов, щоб допомогти.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Я хочу, щоб ти прийшов.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Він вчиться, щоб знати більше.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Вона хоче, щоб він допоміг.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Ми зупинилися, щоб поїсти.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Батько хоче, щоб син вивчив музику.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Вона вийшла, щоб подихати повітрям.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Я попросив, щоб вони зачекали.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Він працює, щоб заробити гроші.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Мама хоче, щоб ми прибрали кімнату.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]},{"question":"Вона записала, щоб не забути.","options":[{"text":"Same subject (infinitive)","correct":true},{"text":"Different subjects (past tense)","correct":false}]},{"question":"Вони хочуть, щоб я залишився.","options":[{"text":"Same subject (infinitive)","correct":false},{"text":"Different subjects (past tense)","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Purpose Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["я","|","прийшов","|","щоб","|","допомогти","|","тобі"],"answer":"Я прийшов, щоб допомогти тобі.","translation":"I came to help you."},{"words":["вона","|","вчиться","|","щоб","|","стати","|","лікарем"],"answer":"Вона вчиться, щоб стати лікарем.","translation":"She studies to become a doctor."},{"words":["він","|","хоче","|","щоб","|","я","|","прийшов","|","раніше"],"answer":"Він хоче, щоб я прийшов раніше.","translation":"He wants me to come earlier."},{"words":["для","|","того","|","щоб","|","зрозуміти","|","треба","|","читати"],"answer":"Для того, щоб зрозуміти, треба читати.","translation":"In order to understand, you need to read."},{"words":["я","|","записав","|","щоб","|","не","|","забути"],"answer":"Я записав, щоб не забути.","translation":"I wrote it down so as not to forget."},{"words":["мама","|","хоче","|","щоб","|","ми","|","прибрали","|","кімнату"],"answer":"Мама хоче, щоб ми прибрали кімнату.","translation":"Mom wants us to clean the room."},{"words":["він","|","працює","|","багато","|","щоб","|","заробити","|","гроші"],"answer":"Він працює багато, щоб заробити гроші.","translation":"He works a lot to earn money."},{"words":["я","|","подзвонив","|","щоб","|","дізнатися","|","новини"],"answer":"Я подзвонив, щоб дізнатися новини.","translation":"I called to find out the news."},{"words":["вони","|","хочуть","|","щоб","|","він","|","залишився"],"answer":"Вони хочуть, щоб він залишився.","translation":"They want him to stay."},{"words":["вона","|","встала","|","рано","|","щоб","|","встигнути","|","на","|","автобус"],"answer":"Вона встала рано, щоб встигнути на автобус.","translation":"She got up early to catch the bus."},{"words":["для","|","того","|","щоб","|","вивчити","|","мову","|","потрібен","|","час"],"answer":"Для того, щоб вивчити мову, потрібен час.","translation":"In order to learn a language, you need time."},{"words":["він","|","зробив","|","це","|","щоб","|","їй","|","допомогти"],"answer":"Він зробив це, щоб їй допомогти.","translation":"He did this to help her."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Purpose Structures","data":{"type":"quiz","questions":[{"question":"After \"щоб\" with different subjects, we use:","options":["Past tense form","Present tense","Infinitive","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Для того, щоб\" is used:","options":["For emphasis","Only in questions","Only negatively","In informal speech only"],"correctIndex":0,"explanation":""},{"question":"\"Уникнути\" means:","options":["To avoid","To achieve","To win","To earn"],"correctIndex":0,"explanation":""},{"question":"Which verb is perfective?","options":["досягти","досягати","заробляти","працювати"],"correctIndex":0,"explanation":""},{"question":"\"Запобігти\" means:","options":["To prevent","To achieve","To remember","To forget"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу, щоб вона прийшла\" — \"прийшла\" is:","options":["Feminine past tense","Masculine past tense","Infinitive","Present tense"],"correctIndex":0,"explanation":""},{"question":"Purpose clause answers the question:","options":["Для чого? Навіщо?","Коли?","Де?","Хто?"],"correctIndex":0,"explanation":""},{"question":"\"Затор\" means:","options":["Traffic jam","Goal","Success","Failure"],"correctIndex":0,"explanation":""},{"question":"Which is NOT a purpose expression?","options":["щоб","для того, щоб","так що","щоб не"],"correctIndex":2,"explanation":""},{"question":"\"Успіх\" means:","options":["Success","Failure","Attempt","Goal"],"correctIndex":0,"explanation":""},{"question":"\"Наполегливо\" means:","options":["Persistently, diligently","Lazily","Quickly","Slowly"],"correctIndex":0,"explanation":""},{"question":"\"Слабке місце\" means:","options":["Weak spot","Strong point","Main goal","Final result"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"щоб","translit":"","en":"in order to, so that","note":""},{"uk":"для того, щоб","translit":"","en":"in order to","note":""},{"uk":"мета","translit":"","en":"goal, purpose","note":""},{"uk":"ціль","translit":"","en":"aim, target","note":""},{"uk":"причина","translit":"","en":"reason","note":""},{"uk":"досягти","translit":"","en":"to achieve","note":"pf"},{"uk":"досягати","translit":"","en":"to achieve","note":"impf"},{"uk":"заробити","translit":"","en":"to earn","note":"pf"},{"uk":"заробляти","translit":"","en":"to earn","note":"impf"},{"uk":"перемогти","translit":"","en":"to win, defeat","note":"pf"},{"uk":"перемагати","translit":"","en":"to win","note":"impf"},{"uk":"встигнути","translit":"","en":"to make it in time","note":"pf"},{"uk":"встигати","translit":"","en":"to be on time","note":"impf"},{"uk":"уникнути","translit":"","en":"to avoid","note":"pf"},{"uk":"уникати","translit":"","en":"to avoid","note":"impf"},{"uk":"запобігти","translit":"","en":"to prevent","note":"pf"},{"uk":"так що","translit":"","en":"so that, therefore","note":""},{"uk":"успіх","translit":"","en":"success","note":""},{"uk":"затор","translit":"","en":"traffic jam","note":""},{"uk":"слабке місце","translit":"","en":"weak spot","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2236,6 +2284,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

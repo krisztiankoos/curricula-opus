@@ -9,8 +9,7 @@
 | Document | Contains | Location |
 |----------|----------|----------|
 | `{LEVEL}-CURRICULUM-PLAN.md` | Grammar constraints, vocabulary lists, module specs | `docs/l2-uk-en/` |
-| `MODULE-RICHNESS-GUIDELINES.md` | Activity counts, engagement boxes, sentence complexity | `docs/l2-uk-en/` |
-| `ACTIVITY-GUIDELINES.md` | Activity templates, examples, formats by level | `docs/l2-uk-en/` |
+| `MODULE-RICHNESS-GUIDELINES-v2.md` | Activity counts, engagement boxes, sentence complexity, activity templates | `docs/l2-uk-en/` |
 
 **Before ANY module work:**
 1. Open the curriculum plan for the level
@@ -31,12 +30,13 @@
    - Copy the EXACT vocabulary list for this module
    - Read the grammar scope allowed at this level
 
-2. **Open `MODULE-RICHNESS-GUIDELINES.md`**
+2. **Open `MODULE-RICHNESS-GUIDELINES-v2.md`**
    - Note activity count requirement for this level
    - Note items per activity requirement
    - Note engagement box minimum
    - Note mini-dialogue requirement
    - Note sentence complexity (fill-in/unjumble word counts)
+   - Note narrative richness requirements (see table below)
 
 3. **Check previous module**
    - Read ending to ensure continuity
@@ -62,12 +62,39 @@ Write sections in this order:
 
 ### Step 3: VERIFY BEFORE DELIVERING
 
+**Scope & Accuracy:**
 - [ ] Every word in activities appears in vocabulary or prior modules
 - [ ] Grammar stays within level scope (no features from later modules)
 - [ ] Activity answers have only ONE valid answer
-- [ ] Engagement box count meets minimum
-- [ ] Mini-dialogue count meets minimum
 - [ ] "Coming Next" matches actual next module topic
+
+**Narrative Richness (CRITICAL — modules fail without this):**
+- [ ] Introduction has compelling WHY (not "In this lesson we learn...")
+- [ ] Grammar tables surrounded by narrative (no naked tables)
+- [ ] Mini-dialogues present (see count below)
+- [ ] Usage patterns / common mistakes section exists
+- [ ] Content word count meets minimum (excluding tables)
+- [ ] Engagement box count meets minimum
+
+**Narrative Richness Requirements by Level:**
+
+| Level | Content Words | Mini-Dialogues | Engagement Boxes | Examples |
+|-------|---------------|----------------|------------------|----------|
+| A1 | 600+ | 2+ | 3+ | 12+ |
+| A2 | 750+ | 2-3 | 4+ | 18+ |
+| B1 | 900+ | 3-4 | 5+ | 24+ |
+| B2 | 1000+ | 4+ | 6+ | 28+ |
+| C1 | 1100+ | 5+ | 7+ | 30+ |
+| C2 | 1200+ | 5+ | 8+ | 32+ |
+
+**What counts as "content words":**
+- ✅ Narrative paragraphs, explanations, cultural context
+- ✅ Example sentences in flowing text
+- ✅ Mini-dialogues and scenarios
+- ✅ Engagement box text
+- ❌ NOT vocabulary tables
+- ❌ NOT grammar tables
+- ❌ NOT activity instructions or answers
 
 **DO NOT deliver without verification. You WILL forget constraints.**
 
@@ -89,14 +116,41 @@ For each module, verify against the curriculum plan:
 - [ ] Example/activity nouns exist in vocabulary table or prior modules
 
 ### 3. Activities
-- [ ] Minimum count met (see MODULE-RICHNESS-GUIDELINES.md)
+- [ ] Minimum count met (see MODULE-RICHNESS-GUIDELINES-v2.md)
 - [ ] At least 4 different types
 - [ ] All words used are in scope
+- [ ] **No `order:` activities** — replace any `## order:` with `## unjumble:` (sentence word reordering)
 
-### 4. Richness
-- [ ] Engagement boxes meet minimum
-- [ ] Mini-dialogues meet minimum
+### 4. Narrative Richness (CRITICAL)
+
+**This is where most modules fail. Check carefully.**
+
+- [ ] Introduction has compelling WHY (not "In this lesson we learn...")
+- [ ] Grammar tables surrounded by narrative (no naked tables)
+- [ ] Mini-dialogues present and meet count for level
+- [ ] Usage patterns / common mistakes section exists
+- [ ] Content word count meets minimum (excluding tables)
+- [ ] Engagement boxes meet minimum for level
+- [ ] Examples are in context, not isolated words
 - [ ] Ukrainian/English ratio matches level
+
+**Narrative Richness Requirements by Level:**
+
+| Level | Content Words | Mini-Dialogues | Engagement Boxes | Examples |
+|-------|---------------|----------------|------------------|----------|
+| A1 | 600+ | 2+ | 3+ | 12+ |
+| A2 | 750+ | 2-3 | 4+ | 18+ |
+| B1 | 900+ | 3-4 | 5+ | 24+ |
+| B2 | 1000+ | 4+ | 6+ | 28+ |
+| C1 | 1100+ | 5+ | 7+ | 30+ |
+| C2 | 1200+ | 5+ | 8+ | 32+ |
+
+**Red flags for "dry" modules:**
+- Tables with no surrounding paragraphs
+- Introduction starts with "In this lesson we learn..."
+- No mini-dialogues showing grammar in real conversation
+- No "Common Mistakes" or "Usage Patterns" section
+- Only ~150 words of narrative (rest is tables)
 
 ### 5. Coming Next
 - [ ] Matches actual next module content
@@ -127,6 +181,80 @@ For each module, verify against the curriculum plan:
 
 ---
 
+## Vocabulary Completeness Checklist
+
+**CRITICAL: Every word used in the module MUST be in the vocabulary section or a prior module.**
+
+### Words That Are Often Missing
+
+| Category | What to check | Example |
+|----------|---------------|---------|
+| **Verb pairs** | Both impf AND pf if either is used | продавати/продати, їсти/з'їсти |
+| **Past tense forms** | Gendered forms used in examples | читав (m), читала (f), читали (pl) |
+| **Comparative base** | If comparative is used, add base form | ближчий needs близький |
+| **Words in tables** | All words in grammar tables | Words in "Imperfective → Perfective" tables |
+| **Activity answers** | Every answer word | If answer is "забути", vocab needs забути |
+
+### Cross-Check Workflow
+
+1. **After writing lesson content**: Scan all example sentences for verbs/nouns
+2. **After writing activities**: List all answer words, verify each is in vocab
+3. **After writing vocab table**: Re-read activities to catch any missed words
+
+---
+
+## IPA Transcription Rules (Ukrainian)
+
+### Vowel Accuracy
+
+| Ukrainian | IPA | NOT | Example |
+|-----------|-----|-----|---------|
+| **и** | /ɪ/ | /i/ | вид = /wɪd/ NOT /wid/ |
+| **і** | /i/ | /ɪ/ | він = /win/ |
+| **е** | /ɛ/ | /e/ | |
+| **о** | /ɔ/ | /o/ | |
+
+**Key distinction**: Ukrainian "и" is a near-close near-front vowel /ɪ/ (like English "pit"), NOT close front /i/ (like "see").
+
+### Common IPA Errors
+
+| Word | Wrong | Correct |
+|------|-------|---------|
+| вид | /wid/ | /wɪd/ |
+| син | /sin/ | /sɪn/ |
+| ми | /mi/ | /mɪ/ |
+| читати | /tʃitati/ | /tʃɪˈtatɪ/ |
+
+---
+
+## Activity Answer Constraints
+
+### Fill-in Answers
+
+| Rule | Example |
+|------|---------|
+| **Single word only** | ✅ `будуть` ❌ `будуть вчити` |
+| **Restructure if needed** | Change sentence to allow single-word answer |
+| **Must be in vocab** | Answer word must exist in vocabulary section |
+
+**If you need a multi-word answer**: Restructure the sentence so the gap requires only one word, or use a different activity type (unjumble for word order).
+
+### Example Fix
+
+**Before** (wrong — two-word answer):
+```
+Діти ___ завтра. (will study)
+> [!answer] будуть вчити
+```
+
+**After** (correct — single word):
+```
+Діти ___ вчити завтра. (will)
+> [!answer] будуть
+```
+
+---
+
 ## Fix Strategies
 
 | Violation | Fix |
@@ -137,8 +265,13 @@ For each module, verify against the curriculum plan:
 | Adjective before M26 | Remove or use noun only |
 | Out-of-scope word | Replace with in-scope vocabulary |
 | Missing IPA | Add transcription |
+| `## order:` activity | Replace with `## unjumble:` (sentence word reordering) |
 
-**Full Rewrite Triggers:** >30% violations, wrong level, missing core sections
+**Full Rewrite Triggers:**
+- >30% violations
+- Wrong level grammar
+- Missing core sections
+- **Narrative richness failure**: Content words <50% of requirement, no mini-dialogues, tables-only content
 
 ---
 
@@ -153,7 +286,18 @@ For each module, verify against the curriculum plan:
 | Grammar | ✅/❌ | |
 | Vocabulary | ✅/❌ | |
 | Activities | ✅/❌ | |
-| Richness | ✅/❌ | |
+| Narrative Richness | ✅/❌ | |
+
+## Narrative Richness Audit
+| Metric | Required | Actual | Status |
+|--------|----------|--------|--------|
+| Content Words | XXX+ | XXX | ✅/❌ |
+| Mini-Dialogues | X+ | X | ✅/❌ |
+| Engagement Boxes | X+ | X | ✅/❌ |
+| Examples in Context | XX+ | XX | ✅/❌ |
+| Compelling Intro | Yes | Yes/No | ✅/❌ |
+| No Naked Tables | Yes | Yes/No | ✅/❌ |
+| Common Mistakes Section | Yes | Yes/No | ✅/❌ |
 
 ## Violations Found
 1. **[Type]**: `example` — description | Fix: solution
@@ -161,6 +305,12 @@ For each module, verify against the curriculum plan:
 ## Summary
 Violations: X | Severity: High/Medium/Low | Recommendation: Approved/Fix/Rewrite
 ```
+
+**Severity Guide:**
+- **Low**: Minor issues (unjumble word count, missing IPA)
+- **Medium**: Multiple activity issues, missing engagement boxes
+- **High**: Narrative richness failure (dry content), grammar scope violations
+- **Rewrite**: Content words <50% of requirement, no dialogues, tables-only module
 
 ---
 

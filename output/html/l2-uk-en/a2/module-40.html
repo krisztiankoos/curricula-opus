@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1215,11 +1256,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Ukrainian Nature Facts</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Nature and Weather Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Ukrainian Nature Facts</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1246,7 +1294,7 @@ footer {
   </main><footer>Module 40 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Nature Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"___ світить яскраво. (Sun)","answer":"Сонце"},{"prompt":"Іде ___. (rain)","answer":"дощ"},{"prompt":"Падає ___. (snow)","answer":"сніг"},{"prompt":"Карпати — це ___. (mountains)","answer":"гори"},{"prompt":"Дніпро — найбільша ___ України. (river)","answer":"ріка"},{"prompt":"Гуляємо в ___. (forest)","answer":"лісі"},{"prompt":"___ — символ України. (Sunflower)","answer":"Соняшник"},{"prompt":"___ співають вранці. (Birds)","answer":"Птахи"},{"prompt":"Сьогодні ___. (sunny)","answer":"сонячно"},{"prompt":"На вулиці ___. (cold)","answer":"холодно"},{"prompt":"Надходить ___. (thunderstorm)","answer":"гроза"},{"prompt":"___ — пора квітів. (Spring)","answer":"Весна"}]}},{"id":"activity-1","type":"match-up","title":"Nature Terms","data":{"type":"match-up","pairs":[{"left":"гора","right":"mountain"},{"left":"озеро","right":"lake"},{"left":"ріка","right":"river"},{"left":"ліс","right":"forest"},{"left":"дощ","right":"rain"},{"left":"сніг","right":"snow"},{"left":"весна","right":"spring"},{"left":"літо","right":"summer"},{"left":"осінь","right":"autumn"},{"left":"зима","right":"winter"},{"left":"птах","right":"bird"},{"left":"квітка","right":"flower"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Weather Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Сьогодні","дуже","сонячно","і","тепло","на","вулиці","гарно"],"answer":"Сьогодні дуже сонячно і тепло на вулиці, гарно.","translation":"Today it's very sunny and warm outside, nice."},{"words":["Сильний","дощ","іде","вже","цілий","день","без","перерви"],"answer":"Сильний дощ іде вже цілий день без перерви.","translation":"Heavy rain has been falling all day without break."},{"words":["На","вулиці","дуже","холодно","сьогодні","вранці","одягнись","тепло"],"answer":"На вулиці дуже холодно сьогодні вранці, одягнись тепло.","translation":"It's very cold outside this morning, dress warmly."},{"words":["Білий","сніг","падає","з","неба","вже","другий","день"],"answer":"Білий сніг падає з неба вже другий день.","translation":"White snow has been falling from sky for second day."},{"words":["Завтра","буде","хмарно","та","прохолодно","за","прогнозом","погоди"],"answer":"Завтра буде хмарно та прохолодно за прогнозом погоди.","translation":"Tomorrow will be cloudy and cool according to weather forecast."},{"words":["Сильний","холодний","вітер","дме","з","півночі","весь","день"],"answer":"Сильний холодний вітер дме з півночі весь день.","translation":"Strong cold wind blows from north all day."},{"words":["Надходить","сильна","гроза","з","блискавками","та","громом","сьогодні"],"answer":"Надходить сильна гроза з блискавками та громом сьогодні.","translation":"Strong thunderstorm with lightning and thunder is coming today."},{"words":["Яскраве","сонце","світить","на","блакитному","небі","сьогодні","вранці"],"answer":"Яскраве сонце світить на блакитному небі сьогодні вранці.","translation":"Bright sun shines on blue sky this morning."},{"words":["Густий","білий","туман","був","вранці","над","озером","сьогодні"],"answer":"Густий білий туман був вранці над озером сьогодні.","translation":"Thick white fog was over the lake this morning."},{"words":["Яка","буде","погода","завтра","за","прогнозом","скажіть","мені"],"answer":"Скажіть мені, яка буде погода завтра за прогнозом?","translation":"Tell me, what will the weather be tomorrow according to forecast?"},{"words":["Маленькі","птахи","співають","голосно","вранці","в","саду","завжди"],"answer":"Маленькі птахи співають голосно вранці в саду завжди.","translation":"Small birds always sing loudly in the garden in morning."},{"words":["Навесні","вся","природа","прокидається","після","довгої","холодної","зими"],"answer":"Навесні вся природа прокидається після довгої холодної зими.","translation":"In spring all nature awakens after long cold winter."}]}},{"id":"activity-3","type":"quiz","title":"Nature Knowledge","data":{"type":"quiz","questions":[{"question":"«Гора» is:","options":["Mountain","Forest","River","Lake"],"correctIndex":0,"explanation":""},{"question":"«Дощ» is:","options":["Rain","Snow","Wind","Sun"],"correctIndex":0,"explanation":""},{"question":"«Весна» is:","options":["Spring","Summer","Autumn","Winter"],"correctIndex":0,"explanation":""},{"question":"«Соняшник» is:","options":["Sunflower","Sun","Sunny","Sunrise"],"correctIndex":0,"explanation":""},{"question":"«Холодно» means:","options":["Cold","Hot","Warm","Cool"],"correctIndex":0,"explanation":""},{"question":"«Лелека» is:","options":["Stork","Swan","Eagle","Sparrow"],"correctIndex":0,"explanation":""},{"question":"«Ліс» is:","options":["Forest","Field","Meadow","Mountain"],"correctIndex":0,"explanation":""},{"question":"«Гроза» is:","options":["Thunderstorm","Rain","Fog","Wind"],"correctIndex":0,"explanation":""},{"question":"«Озеро» is:","options":["Lake","River","Sea","Ocean"],"correctIndex":0,"explanation":""},{"question":"«Влітку» means:","options":["In summer","In winter","In spring","In autumn"],"correctIndex":0,"explanation":""},{"question":"«Птах» is:","options":["Bird","Fish","Animal","Insect"],"correctIndex":0,"explanation":""},{"question":"«Туман» is:","options":["Fog","Cloud","Rain","Snow"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Nature Facts","data":{"type":"true-false","statements":[{"statement":"«Гора» means mountain.","isTrue":true,"explanation":""},{"statement":"«Дощ» means snow.","isTrue":false,"explanation":""},{"statement":"«Весна» is summer.","isTrue":false,"explanation":""},{"statement":"«Соняшник» is a symbol of Ukraine.","isTrue":true,"explanation":""},{"statement":"«Холодно» means warm.","isTrue":false,"explanation":""},{"statement":"«Лелека» is a bird.","isTrue":true,"explanation":""},{"statement":"«Дніпро» is a river.","isTrue":true,"explanation":""},{"statement":"«Зима» is winter.","isTrue":true,"explanation":""},{"statement":"«Гроза» is calm weather.","isTrue":false,"explanation":""},{"statement":"«Карпати» are mountains.","isTrue":true,"explanation":""},{"statement":"«Туман» is clear visibility.","isTrue":false,"explanation":""},{"statement":"«Осінь» comes after summer.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Nature Categories","data":{"type":"group-sort","groups":[{"id":"landscapes","name":"Landscapes","items":["гора","озеро","ліс"]},{"id":"weather","name":"Weather","items":["дощ","сніг","вітер"]},{"id":"seasons","name":"Seasons","items":["весна","літо","зима"]},{"id":"living-things","name":"Living Things","items":["птах","квітка","тварина"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Nature Vocabulary Extended","data":{"type":"fill-blank","items":[{"prompt":"___ — найбільша ріка України. (Dnipro)","answer":"Дніпро"},{"prompt":"Карпатські ___ дуже красиві. (mountains)","answer":"гори"},{"prompt":"Ми відпочивали на ___ Чорного моря. (shore)","answer":"березі"},{"prompt":"___ — символ України. (Sunflower)","answer":"Соняшник"},{"prompt":"У лісі живуть дикі ___. (animals)","answer":"звірі"},{"prompt":"___ приносить удачу в Україні. (Stork)","answer":"Лелека"},{"prompt":"Український ___ безкрайній і красивий. (steppe)","answer":"степ"},{"prompt":"___ Синевир — найбільше в Карпатах. (Lake)","answer":"Озеро"},{"prompt":"Старий ___ росте у парку. (oak)","answer":"дуб"},{"prompt":"___ — символ України поряд із соняшником. (Willow)","answer":"Верба"},{"prompt":"___ роблять мед. (Bees)","answer":"Бджоли"},{"prompt":"Красивий ___ сів на квітку. (butterfly)","answer":"метелик"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Season","data":{"type":"select","items":[{"question":"Коли падає сніг?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли цвітуть квіти?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Восени","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли найдовші дні?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли листя падає з дерев?","options":[{"text":"Восени","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Взимку","correct":false}]},{"question":"Коли найхолодніше?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли їдуть на море в Україні?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли природа прокидається?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Влітку","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли збирають урожай?","options":[{"text":"Восени","correct":true},{"text":"Навесні","correct":false},{"text":"Взимку","correct":false},{"text":"Влітку","correct":false}]},{"question":"Коли бувають грози?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Завжди","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли повертаються ластівки?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Восени","correct":false},{"text":"Влітку","correct":false}]},{"question":"Коли може бути туман?","options":[{"text":"У будь-яку пору року","correct":true},{"text":"Тільки взимку","correct":false},{"text":"Тільки влітку","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли святкують Новий рік?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Ukrainian Nature Facts","data":{"type":"quiz","questions":[{"question":"Де знаходяться Карпати?","options":["На заході України","На сході України","На півдні України","На півночі України"],"correctIndex":0,"explanation":""},{"question":"Яке море омиває Україну?","options":["Чорне море","Балтійське море","Середземне море","Північне море"],"correctIndex":0,"explanation":""},{"question":"«Влітку» означає:","options":["In summer","In winter","In spring","In autumn"],"correctIndex":0,"explanation":""},{"question":"Що таке «степ»?","options":["Рівнина з травою","Гора","Озеро","Ліс"],"correctIndex":0,"explanation":""},{"question":"«Дощ іде» означає:","options":["It's raining","It's snowing","It's sunny","It's windy"],"correctIndex":0,"explanation":""},{"question":"Який птах є символом України?","options":["Лелека","Ворона","Горобець","Голуб"],"correctIndex":0,"explanation":""},{"question":"«Гроза» — це:","options":["Thunderstorm","Snowfall","Sunny day","Calm weather"],"correctIndex":0,"explanation":""},{"question":"Скільки пір року?","options":["Чотири","Три","П'ять","Дві"],"correctIndex":0,"explanation":""},{"question":"«Блискавка» — це:","options":["Lightning","Thunder","Rain","Snow"],"correctIndex":0,"explanation":""},{"question":"Яка квітка є символом України?","options":["Соняшник","Роза","Тюльпан","Ромашка"],"correctIndex":0,"explanation":""},{"question":"«Туман» погіршує:","options":["Видимість","Смак","Слух","Настрій"],"correctIndex":0,"explanation":""},{"question":"Де живуть ведмеді в Україні?","options":["У Карпатах","У степу","На пляжі","У місті"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Nature Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"___ світить яскраво. (Sun)","answer":"Сонце"},{"prompt":"Іде ___. (rain)","answer":"дощ"},{"prompt":"Падає ___. (snow)","answer":"сніг"},{"prompt":"Карпати — це ___. (mountains)","answer":"гори"},{"prompt":"Дніпро — найбільша ___ України. (river)","answer":"ріка"},{"prompt":"Гуляємо в ___. (forest)","answer":"лісі"},{"prompt":"___ — символ України. (Sunflower)","answer":"Соняшник"},{"prompt":"___ співають вранці. (Birds)","answer":"Птахи"},{"prompt":"Сьогодні ___. (sunny)","answer":"сонячно"},{"prompt":"На вулиці ___. (cold)","answer":"холодно"},{"prompt":"Надходить ___. (thunderstorm)","answer":"гроза"},{"prompt":"___ — пора квітів. (Spring)","answer":"Весна"}]}},{"id":"activity-1","type":"match-up","title":"Nature Terms","data":{"type":"match-up","pairs":[{"left":"гора","right":"mountain"},{"left":"озеро","right":"lake"},{"left":"ріка","right":"river"},{"left":"ліс","right":"forest"},{"left":"дощ","right":"rain"},{"left":"сніг","right":"snow"},{"left":"весна","right":"spring"},{"left":"літо","right":"summer"},{"left":"осінь","right":"autumn"},{"left":"зима","right":"winter"},{"left":"птах","right":"bird"},{"left":"квітка","right":"flower"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Weather Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Сьогодні","дуже","сонячно","і","тепло","на","вулиці","гарно"],"answer":"Сьогодні дуже сонячно і тепло на вулиці, гарно.","translation":"Today it's very sunny and warm outside, nice."},{"words":["Сильний","дощ","іде","вже","цілий","день","без","перерви"],"answer":"Сильний дощ іде вже цілий день без перерви.","translation":"Heavy rain has been falling all day without break."},{"words":["На","вулиці","дуже","холодно","сьогодні","вранці","одягнись","тепло"],"answer":"На вулиці дуже холодно сьогодні вранці, одягнись тепло.","translation":"It's very cold outside this morning, dress warmly."},{"words":["Білий","сніг","падає","з","неба","вже","другий","день"],"answer":"Білий сніг падає з неба вже другий день.","translation":"White snow has been falling from sky for second day."},{"words":["Завтра","буде","хмарно","та","прохолодно","за","прогнозом","погоди"],"answer":"Завтра буде хмарно та прохолодно за прогнозом погоди.","translation":"Tomorrow will be cloudy and cool according to weather forecast."},{"words":["Сильний","холодний","вітер","дме","з","півночі","весь","день"],"answer":"Сильний холодний вітер дме з півночі весь день.","translation":"Strong cold wind blows from north all day."},{"words":["Надходить","сильна","гроза","з","блискавками","та","громом","сьогодні"],"answer":"Надходить сильна гроза з блискавками та громом сьогодні.","translation":"Strong thunderstorm with lightning and thunder is coming today."},{"words":["Яскраве","сонце","світить","на","блакитному","небі","сьогодні","вранці"],"answer":"Яскраве сонце світить на блакитному небі сьогодні вранці.","translation":"Bright sun shines on blue sky this morning."},{"words":["Густий","білий","туман","був","вранці","над","озером","сьогодні"],"answer":"Густий білий туман був вранці над озером сьогодні.","translation":"Thick white fog was over the lake this morning."},{"words":["Яка","буде","погода","завтра","за","прогнозом","скажіть","мені"],"answer":"Скажіть мені, яка буде погода завтра за прогнозом?","translation":"Tell me, what will the weather be tomorrow according to forecast?"},{"words":["Маленькі","птахи","співають","голосно","вранці","в","саду","завжди"],"answer":"Маленькі птахи співають голосно вранці в саду завжди.","translation":"Small birds always sing loudly in the garden in morning."},{"words":["Навесні","вся","природа","прокидається","після","довгої","холодної","зими"],"answer":"Навесні вся природа прокидається після довгої холодної зими.","translation":"In spring all nature awakens after long cold winter."}]}},{"id":"activity-3","type":"quiz","title":"Nature Knowledge","data":{"type":"quiz","questions":[{"question":"«Гора» is:","options":["Mountain","Forest","River","Lake"],"correctIndex":0,"explanation":""},{"question":"«Дощ» is:","options":["Rain","Snow","Wind","Sun"],"correctIndex":0,"explanation":""},{"question":"«Весна» is:","options":["Spring","Summer","Autumn","Winter"],"correctIndex":0,"explanation":""},{"question":"«Соняшник» is:","options":["Sunflower","Sun","Sunny","Sunrise"],"correctIndex":0,"explanation":""},{"question":"«Холодно» means:","options":["Cold","Hot","Warm","Cool"],"correctIndex":0,"explanation":""},{"question":"«Лелека» is:","options":["Stork","Swan","Eagle","Sparrow"],"correctIndex":0,"explanation":""},{"question":"«Ліс» is:","options":["Forest","Field","Meadow","Mountain"],"correctIndex":0,"explanation":""},{"question":"«Гроза» is:","options":["Thunderstorm","Rain","Fog","Wind"],"correctIndex":0,"explanation":""},{"question":"«Озеро» is:","options":["Lake","River","Sea","Ocean"],"correctIndex":0,"explanation":""},{"question":"«Влітку» means:","options":["In summer","In winter","In spring","In autumn"],"correctIndex":0,"explanation":""},{"question":"«Птах» is:","options":["Bird","Fish","Animal","Insect"],"correctIndex":0,"explanation":""},{"question":"«Туман» is:","options":["Fog","Cloud","Rain","Snow"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Nature Facts","data":{"type":"true-false","statements":[{"statement":"«Гора» means mountain.","isTrue":true,"explanation":""},{"statement":"«Дощ» means snow.","isTrue":false,"explanation":""},{"statement":"«Весна» is summer.","isTrue":false,"explanation":""},{"statement":"«Соняшник» is a symbol of Ukraine.","isTrue":true,"explanation":""},{"statement":"«Холодно» means warm.","isTrue":false,"explanation":""},{"statement":"«Лелека» is a bird.","isTrue":true,"explanation":""},{"statement":"«Дніпро» is a river.","isTrue":true,"explanation":""},{"statement":"«Зима» is winter.","isTrue":true,"explanation":""},{"statement":"«Гроза» is calm weather.","isTrue":false,"explanation":""},{"statement":"«Карпати» are mountains.","isTrue":true,"explanation":""},{"statement":"«Туман» is clear visibility.","isTrue":false,"explanation":""},{"statement":"«Осінь» comes after summer.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Nature Categories","data":{"type":"group-sort","groups":[{"id":"landscapes","name":"Landscapes","items":["гора","озеро","ліс"]},{"id":"weather","name":"Weather","items":["дощ","сніг","вітер"]},{"id":"seasons","name":"Seasons","items":["весна","літо","зима"]},{"id":"living-things","name":"Living Things","items":["птах","квітка","тварина"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Nature Vocabulary Extended","data":{"type":"fill-blank","items":[{"prompt":"___ — найбільша ріка України. (Dnipro)","answer":"Дніпро"},{"prompt":"Карпатські ___ дуже красиві. (mountains)","answer":"гори"},{"prompt":"Ми відпочивали на ___ Чорного моря. (shore)","answer":"березі"},{"prompt":"___ — символ України. (Sunflower)","answer":"Соняшник"},{"prompt":"У лісі живуть дикі ___. (animals)","answer":"звірі"},{"prompt":"___ приносить удачу в Україні. (Stork)","answer":"Лелека"},{"prompt":"Український ___ безкрайній і красивий. (steppe)","answer":"степ"},{"prompt":"___ Синевир — найбільше в Карпатах. (Lake)","answer":"Озеро"},{"prompt":"Старий ___ росте у парку. (oak)","answer":"дуб"},{"prompt":"___ — символ України поряд із соняшником. (Willow)","answer":"Верба"},{"prompt":"___ роблять мед. (Bees)","answer":"Бджоли"},{"prompt":"Красивий ___ сів на квітку. (butterfly)","answer":"метелик"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Season","data":{"type":"select","items":[{"question":"Коли падає сніг?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли цвітуть квіти?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Восени","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли найдовші дні?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли листя падає з дерев?","options":[{"text":"Восени","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Взимку","correct":false}]},{"question":"Коли найхолодніше?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли їдуть на море в Україні?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли природа прокидається?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Влітку","correct":false},{"text":"Восени","correct":false}]},{"question":"Коли збирають урожай?","options":[{"text":"Восени","correct":true},{"text":"Навесні","correct":false},{"text":"Взимку","correct":false},{"text":"Влітку","correct":false}]},{"question":"Коли бувають грози?","options":[{"text":"Влітку","correct":true},{"text":"Взимку","correct":false},{"text":"Завжди","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли повертаються ластівки?","options":[{"text":"Навесні","correct":true},{"text":"Взимку","correct":false},{"text":"Восени","correct":false},{"text":"Влітку","correct":false}]},{"question":"Коли може бути туман?","options":[{"text":"У будь-яку пору року","correct":true},{"text":"Тільки взимку","correct":false},{"text":"Тільки влітку","correct":false},{"text":"Ніколи","correct":false}]},{"question":"Коли святкують Новий рік?","options":[{"text":"Взимку","correct":true},{"text":"Влітку","correct":false},{"text":"Навесні","correct":false},{"text":"Восени","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Nature and Weather Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["сьогодні","|","йде","|","дощ","|","і","|","холодно"],"answer":"Сьогодні йде дощ і холодно.","translation":"Today it's raining and cold."},{"words":["влітку","|","ми","|","їдемо","|","на","|","море"],"answer":"Влітку ми їдемо на море.","translation":"In summer we go to the sea."},{"words":["взимку","|","часто","|","падає","|","сніг"],"answer":"Взимку часто падає сніг.","translation":"In winter it often snows."},{"words":["весною","|","цвітуть","|","красиві","|","квіти"],"answer":"Весною цвітуть красиві квіти.","translation":"In spring beautiful flowers bloom."},{"words":["восени","|","листя","|","жовтіє","|","і","|","падає"],"answer":"Восени листя жовтіє і падає.","translation":"In autumn leaves turn yellow and fall."},{"words":["гори","|","в","|","Карпатах","|","дуже","|","високі"],"answer":"Гори в Карпатах дуже високі.","translation":"The mountains in the Carpathians are very high."},{"words":["чорне","|","море","|","омиває","|","південь","|","України"],"answer":"Чорне море омиває південь України.","translation":"The Black Sea washes the south of Ukraine."},{"words":["сьогодні","|","гарна","|","сонячна","|","погода"],"answer":"Сьогодні гарна сонячна погода.","translation":"Today is nice sunny weather."},{"words":["степ","|","це","|","рівнина","|","з","|","травою"],"answer":"Степ — це рівнина з травою.","translation":"A steppe is a plain with grass."},{"words":["вранці","|","був","|","густий","|","туман"],"answer":"Вранці був густий туман.","translation":"In the morning there was thick fog."},{"words":["річка","|","Дніпро","|","тече","|","через","|","Київ"],"answer":"Річка Дніпро тече через Київ.","translation":"The Dnipro river flows through Kyiv."},{"words":["яка","|","погода","|","буде","|","завтра"],"answer":"Яка погода буде завтра?","translation":"What will the weather be tomorrow?"}]}},{"id":"activity-9","type":"quiz","title":"Ukrainian Nature Facts","data":{"type":"quiz","questions":[{"question":"Де знаходяться Карпати?","options":["На заході України","На сході України","На півдні України","На півночі України"],"correctIndex":0,"explanation":""},{"question":"Яке море омиває Україну?","options":["Чорне море","Балтійське море","Середземне море","Північне море"],"correctIndex":0,"explanation":""},{"question":"«Влітку» означає:","options":["In summer","In winter","In spring","In autumn"],"correctIndex":0,"explanation":""},{"question":"Що таке «степ»?","options":["Рівнина з травою","Гора","Озеро","Ліс"],"correctIndex":0,"explanation":""},{"question":"«Дощ іде» означає:","options":["It's raining","It's snowing","It's sunny","It's windy"],"correctIndex":0,"explanation":""},{"question":"Який птах є символом України?","options":["Лелека","Ворона","Горобець","Голуб"],"correctIndex":0,"explanation":""},{"question":"«Гроза» — це:","options":["Thunderstorm","Snowfall","Sunny day","Calm weather"],"correctIndex":0,"explanation":""},{"question":"Скільки пір року?","options":["Чотири","Три","П'ять","Дві"],"correctIndex":0,"explanation":""},{"question":"«Блискавка» — це:","options":["Lightning","Thunder","Rain","Snow"],"correctIndex":0,"explanation":""},{"question":"Яка квітка є символом України?","options":["Соняшник","Роза","Тюльпан","Ромашка"],"correctIndex":0,"explanation":""},{"question":"«Туман» погіршує:","options":["Видимість","Смак","Слух","Настрій"],"correctIndex":0,"explanation":""},{"question":"Де живуть ведмеді в Україні?","options":["У Карпатах","У степу","На пляжі","У місті"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"гора","translit":"","en":"mountain","note":""},{"uk":"долина","translit":"","en":"valley","note":""},{"uk":"озеро","translit":"","en":"lake","note":""},{"uk":"ріка","translit":"","en":"river","note":""},{"uk":"море","translit":"","en":"sea","note":""},{"uk":"ліс","translit":"","en":"forest","note":""},{"uk":"поле","translit":"","en":"field","note":""},{"uk":"погода","translit":"","en":"weather","note":""},{"uk":"сонце","translit":"","en":"sun","note":""},{"uk":"хмара","translit":"","en":"cloud","note":""},{"uk":"дощ","translit":"","en":"rain","note":""},{"uk":"сніг","translit":"","en":"snow","note":""},{"uk":"вітер","translit":"","en":"wind","note":""},{"uk":"гроза","translit":"","en":"thunderstorm","note":""},{"uk":"туман","translit":"","en":"fog","note":""},{"uk":"весна","translit":"","en":"spring","note":""},{"uk":"літо","translit":"","en":"summer","note":""},{"uk":"осінь","translit":"","en":"autumn","note":""},{"uk":"зима","translit":"","en":"winter","note":""},{"uk":"дерево","translit":"","en":"tree","note":""},{"uk":"квітка","translit":"","en":"flower","note":""},{"uk":"соняшник","translit":"","en":"sunflower","note":""},{"uk":"птах","translit":"","en":"bird","note":""},{"uk":"тварина","translit":"","en":"animal","note":""},{"uk":"лелека","translit":"","en":"stork","note":""},{"uk":"холодно","translit":"","en":"cold","note":""},{"uk":"тепло","translit":"","en":"warm","note":""},{"uk":"спекотно","translit":"","en":"hot","note":""},{"uk":"сонячно","translit":"","en":"sunny","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2571,6 +2619,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

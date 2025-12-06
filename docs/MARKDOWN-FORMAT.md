@@ -341,7 +341,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 
 **LEVEL RESTRICTIONS:**
 - A1: ❌ NOT ALLOWED
-- A2+: ✅ Required (see MODULE-RICHNESS-GUIDELINES.md for counts)
+- A2+: ✅ Required (see MODULE-RICHNESS-GUIDELINES-v2.md for counts)
 
 ```markdown
 ## error-correction: Find and Fix

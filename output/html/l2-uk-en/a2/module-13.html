@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,8 +529,9 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Order</button>
-      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Fix</button>
+      <button class="nav-tab" data-section="activity-9">10. Order</button>
+      <button class="nav-tab" data-section="activity-10">11. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -505,7 +546,13 @@ footer {
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><p>"I'll do it!" vs "I'll be doing it" — these mean different things! In Ukrainian, the future tense also splits by aspect. Perfective future expresses what WILL BE COMPLETED, while imperfective future focuses on the PROCESS. Master this, and your Ukrainian will sound much more natural!</p>
+      <div class="md-content"><p>"I promise" might be the most important phrase in any relationship. But in Ukrainian, the grammar of your promise reveals your commitment level.</p>
+<p>Compare: <em>Я буду робити</em> (I'll be doing…) vs <em>Я зроблю</em> (I'll do it!). The first sounds wishy-washy — "yeah, I'll work on it." The second sounds decisive — "consider it done." Same verb, different aspect, completely different social signal.</p>
+<p>This grammatical distinction shapes how Ukrainians make plans, schedule appointments, and keep promises. By the end of this module, you'll know exactly which form to use when you want to sound reliable — or when you need to hedge your bets!</p>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Linguists call this the "commitment gradient." Studies show that speakers across Slavic languages perceive perfective promises (<em>Зроблю!</em>) as more binding than imperfective ones (<em>Буду робити</em>). Grammar isn't just grammar — it's social contract!</p>
+</blockquote>
 <hr /></div>
     </div>
   
@@ -532,9 +579,9 @@ footer {
 </tr>
 </tbody>
 </table>
-<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
-  <p>Making a promise? Use perfective! <em>Я зроблю це!</em> (I'll do it!) sounds like a commitment. <em>Я буду робити</em> sounds more like "I'll be working on it…"</p>
+  <p>⚡ <strong>Pro Tip: The Commitment Test</strong></p>
+  <p>Making a promise? Use perfective! <em>Я зроблю це!</em> (I'll do it!) sounds like a commitment. <em>Я буду робити</em> sounds more like "I'll be working on it…" When you want to be believed, choose perfective.</p>
 </blockquote>
 <hr /></div>
     </div>
@@ -594,7 +641,14 @@ footer {
 <ul>
 <li>Ongoing future action: <em>Я буду читати увечері.</em> (I'll be reading in the evening.)</li>
 <li>Duration: <em>Він буде працювати весь день.</em> (He'll be working all day.)</li>
+<li>Uncertain/vague plans: <em>Ну, я буду думати про це…</em> (Well, I'll think about it…)</li>
 </ul>
+<p><strong>🎭 Невизначені плани (Vague Plans)</strong></p>
+<p>— Що ти <strong>будеш робити</strong> у вихідні?<br />
+— Не знаю… Мабуть, <strong>буду відпочивати</strong> вдома.<br />
+— А може в кіно підемо?<br />
+— Ну, <strong>подивимось</strong>. Я <strong>подумаю</strong> і скажу завтра.</p>
+<p><em>Notice: imperfective "буду робити/відпочивати" for uncertain plans, but perfective "подивимось/подумаю/скажу" when committing to specific actions.</em></p>
 <hr /></div>
     </div>
   
@@ -655,9 +709,20 @@ footer {
 <li>Promises: <em>Я зроблю це!</em> (I'll do it!)</li>
 <li>Single events: <em>Він напише їй листа.</em> (He'll write her a letter.)</li>
 </ul>
-<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>In Ukrainian films, promises sound dramatic with perfective: <em>Я знайду тебе!</em> (I will find you!)</p>
+  <p>🎬 <strong>Pop Culture Moment: "Taken" in Ukrainian</strong></p>
+  <p>In Ukrainian films, promises sound dramatic with perfective: <em>Я знайду тебе!</em> (I will find you!) — Liam Neeson's famous line in Ukrainian is pure perfective: not "I'll be looking for you" but "I WILL find you!" Maximum commitment, zero doubt.</p>
+</blockquote>
+<p><strong>🎭 Робочі обіцянки (Work Promises)</strong></p>
+<p>— Коли <strong>зробиш</strong> звіт?<br />
+— <strong>Закінчу</strong> до п'ятниці, обіцяю!<br />
+— А презентацію?<br />
+— <strong>Підготую</strong> на вихідних. В понеділок <strong>покажу</strong>.<br />
+— Добре. Я тобі <strong>відправлю</strong> дані сьогодні.</p>
+<p><em>Every verb here is perfective — it's a contract of deliverables!</em></p>
+<blockquote>
+  <p>🌍 <strong>Real World: Ukrainian Business Culture</strong></p>
+  <p>In Ukrainian business settings, using perfective future (<em>Зроблю, надішлю, підготую</em>) signals professionalism and reliability. Imperfective (<em>Буду робити, буду готувати</em>) can sound evasive or non-committal. Choose your aspect wisely in important emails!</p>
 </blockquote>
 <hr /></div>
     </div>
@@ -781,9 +846,9 @@ footer {
 </tr>
 </tbody>
 </table>
-<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
 <blockquote>
-  <p>Making appointments: <em>Я прийду о третій</em> (I'll come at 3) — perfective for definite arrival!</p>
+  <p>🎮 <strong>Gamer's Corner: Quest Objectives</strong></p>
+  <p>Video game quest objectives are almost always perfective: <em>Знайдеш артефакт</em> (You will find the artifact), <em>Переможеш боса</em> (You will defeat the boss), <em>Врятуєш принцесу</em> (You will save the princess). Games love perfective because they're about completing goals!</p>
 </blockquote>
 <hr /></div>
     </div>
@@ -864,6 +929,101 @@ footer {
 </tr>
 </tbody>
 </table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Choosing the Right Future: Decision Guide</h3>
+      <div class="md-content"><h2 id="question1isitapromiseorcommitment">Question 1: Is it a promise or commitment?</h2>
+<table>
+<thead>
+<tr>
+<th>If…</th>
+<th>Use</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Making a firm promise</td>
+<td>Perfective</td>
+<td><strong>Зроблю!</strong> (I'll do it!)</td>
+</tr>
+<tr>
+<td>Just mentioning activity</td>
+<td>Imperfective</td>
+<td><strong>Буду робити</strong> (I'll be working on it)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="question2areyouspecifyingcompletion">Question 2: Are you specifying completion?</h2>
+<table>
+<thead>
+<tr>
+<th>If…</th>
+<th>Use</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Will finish/complete</td>
+<td>Perfective</td>
+<td><strong>Прочитаю</strong> книгу</td>
+</tr>
+<tr>
+<td>Will be engaged in</td>
+<td>Imperfective</td>
+<td><strong>Буду читати</strong> увечері</td>
+</tr>
+</tbody>
+</table>
+<h2 id="question3checkthetimeexpression">Question 3: Check the time expression</h2>
+<table>
+<thead>
+<tr>
+<th>Time word suggests…</th>
+<th>Aspect</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specific time (о третій)</td>
+<td>Perfective</td>
+<td><strong>Прийду</strong> о третій</td>
+</tr>
+<tr>
+<td>Duration (весь день)</td>
+<td>Imperfective</td>
+<td><strong>Буду працювати</strong> весь день</td>
+</tr>
+<tr>
+<td>Deadline (до п'ятниці)</td>
+<td>Perfective</td>
+<td><strong>Закінчу</strong> до п'ятниці</td>
+</tr>
+<tr>
+<td>General period (цілий рік)</td>
+<td>Imperfective</td>
+<td><strong>Буду вчити</strong> цілий рік</td>
+</tr>
+</tbody>
+</table>
+<h2 id="commonmistakestoavoid">Common Mistakes to Avoid</h2>
+<p><strong>❌ Wrong:</strong> Я буду прочитати книгу завтра.<br />
+<strong>✓ Right:</strong> Я прочитаю книгу завтра.<br />
+<em>Perfective doesn't use "буду" — it conjugates directly</em></p>
+<p><strong>❌ Wrong:</strong> Він зробить роботу весь день.<br />
+<strong>✓ Right:</strong> Він буде робити роботу весь день.<br />
+<em>Duration = imperfective</em></p>
+<p><strong>❌ Wrong:</strong> Вона прийде о третій годині кожного дня.<br />
+<strong>✓ Right:</strong> Вона буде приходити о третій годині кожного дня.<br />
+<em>Repeated future = imperfective</em></p>
+<blockquote>
+  <p>📜 <strong>History Bite: Synthetic vs Analytic Future</strong></p>
+  <p>Ukrainian perfective future (<em>зроблю</em>) is "synthetic" — one word does the job. Imperfective future (<em>буду робити</em>) is "analytic" — needs an auxiliary. Many world languages lost their synthetic future (English did!), but Ukrainian kept both systems, giving speakers more precision.</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -949,23 +1109,30 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Planning Tomorrow</h3>
-      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/6</span></div>
-      <div id="activity-8-container" class="order-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+    <section id="activity-8" class="section"><div class="card"><h3>Correct the Future Aspect Error</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/24</span></div>
+      <div id="activity-8-container" class="error-correction-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>All Corrected!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
     </div></section>
 
-    <section id="activity-9" class="section"><div class="card"><h3>Future Tense Mastery</h3>
+    <section id="activity-9" class="section"><div class="card"><h3>Planning Tomorrow</h3>
       <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
-      <div id="activity-9-container"></div>
-      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-9-container" class="order-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-10')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-10" class="section"><div class="card"><h3>Future Tense Mastery</h3>
+      <div class="score-display"><span class="score"><span id="activity-10-score">0</span>/12</span></div>
+      <div id="activity-10-container"></div>
+      <div class="completion-message" id="activity-10-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-10')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (33)</h3>
+        <h3>Словник (47)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -975,7 +1142,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">зроблю</td><td class="vocab-ipa">/zrobˈlʲu/</td><td class="vocab-en">I will do (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">напишу</td><td class="vocab-ipa">/napɪˈʃu/</td><td class="vocab-en">I will write (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прочитаю</td><td class="vocab-ipa">/protʃɪˈtaju/</td><td class="vocab-en">I will read (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">скажу</td><td class="vocab-ipa">/skaˈʒu/</td><td class="vocab-en">I will say (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">побачу</td><td class="vocab-ipa">/poˈbatʃu/</td><td class="vocab-en">I will see (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">візьму</td><td class="vocab-ipa">/ˈwizʲmu/</td><td class="vocab-en">I will take (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">дам</td><td class="vocab-ipa">/dam/</td><td class="vocab-en">I will give (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">піду</td><td class="vocab-ipa">/piˈdu/</td><td class="vocab-en">I will go (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прийду</td><td class="vocab-ipa">/prɪjˈdu/</td><td class="vocab-en">I will come (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">знайду</td><td class="vocab-ipa">/znajˈdu/</td><td class="vocab-en">I will find (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">завтра</td><td class="vocab-ipa">/ˈzawtra/</td><td class="vocab-en">tomorrow</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">скоро</td><td class="vocab-ipa">/ˈskoro/</td><td class="vocab-en">soon</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">через</td><td class="vocab-ipa">/ˈtʃɛrɛz/</td><td class="vocab-en">in (time), through</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">потім</td><td class="vocab-ipa">/poˈtim/</td><td class="vocab-en">then, later</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обіцянка</td><td class="vocab-ipa">/obiˈt͡sʲanka/</td><td class="vocab-en">promise</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">план</td><td class="vocab-ipa">/plan/</td><td class="vocab-en">plan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обіцяти</td><td class="vocab-ipa">/obiˈt͡sʲatɪ/</td><td class="vocab-en">to promise</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вирішити</td><td class="vocab-ipa">/wɪˈriʃɪtɪ/</td><td class="vocab-en">to decide (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закінчити</td><td class="vocab-ipa">/zaˈkintʃɪtɪ/</td><td class="vocab-en">to finish (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">почати</td><td class="vocab-ipa">/poˈtʃatɪ/</td><td class="vocab-en">to begin (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зустріну</td><td class="vocab-ipa">/zuˈstrinu/</td><td class="vocab-en">I will meet (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">здасть</td><td class="vocab-ipa">/zdastʲ/</td><td class="vocab-en">he/she will pass (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прийме</td><td class="vocab-ipa">/ˈprɪjmɛ/</td><td class="vocab-en">he/she will accept (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">подивимося</td><td class="vocab-ipa">/podɪˈwɪmosʲa/</td><td class="vocab-en">we will watch (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">зможу</td><td class="vocab-ipa">/ˈzmɔʒu/</td><td class="vocab-en">I will be able (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">зателефоную</td><td class="vocab-ipa">/zatɛlɛfoˈnuju/</td><td class="vocab-en">I will call (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">закінчу</td><td class="vocab-ipa">/zaˈkintʃu/</td><td class="vocab-en">I will finish (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">почну</td><td class="vocab-ipa">/poˈtʃnu/</td><td class="vocab-en">I will begin (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">буду</td><td class="vocab-ipa">/ˈbudu/</td><td class="vocab-en">I will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будеш</td><td class="vocab-ipa">/ˈbudɛʃ/</td><td class="vocab-en">you will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">буде</td><td class="vocab-ipa">/ˈbudɛ/</td><td class="vocab-en">he/she will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будемо</td><td class="vocab-ipa">/ˈbudɛmo/</td><td class="vocab-en">we will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будуть</td><td class="vocab-ipa">/ˈbudutʲ/</td><td class="vocab-en">they will be</td><td class="vocab-note">future auxiliary</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">зроблю</td><td class="vocab-ipa">/zrobˈlʲu/</td><td class="vocab-en">I will do (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">напишу</td><td class="vocab-ipa">/napɪˈʃu/</td><td class="vocab-en">I will write (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прочитаю</td><td class="vocab-ipa">/protʃɪˈtaju/</td><td class="vocab-en">I will read (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">скажу</td><td class="vocab-ipa">/skaˈʒu/</td><td class="vocab-en">I will say (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">побачу</td><td class="vocab-ipa">/poˈbatʃu/</td><td class="vocab-en">I will see (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">візьму</td><td class="vocab-ipa">/ˈwizʲmu/</td><td class="vocab-en">I will take (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">дам</td><td class="vocab-ipa">/dam/</td><td class="vocab-en">I will give (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">піду</td><td class="vocab-ipa">/piˈdu/</td><td class="vocab-en">I will go (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прийду</td><td class="vocab-ipa">/prɪjˈdu/</td><td class="vocab-en">I will come (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">знайду</td><td class="vocab-ipa">/znajˈdu/</td><td class="vocab-en">I will find (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">завтра</td><td class="vocab-ipa">/ˈzawtra/</td><td class="vocab-en">tomorrow</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">скоро</td><td class="vocab-ipa">/ˈskoro/</td><td class="vocab-en">soon</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">через</td><td class="vocab-ipa">/ˈtʃɛrɛz/</td><td class="vocab-en">in (time), through</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">потім</td><td class="vocab-ipa">/poˈtim/</td><td class="vocab-en">then, later</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обіцянка</td><td class="vocab-ipa">/obiˈt͡sʲanka/</td><td class="vocab-en">promise</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">план</td><td class="vocab-ipa">/plan/</td><td class="vocab-en">plan</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">обіцяти</td><td class="vocab-ipa">/obiˈt͡sʲatɪ/</td><td class="vocab-en">to promise</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вирішити</td><td class="vocab-ipa">/wɪˈriʃɪtɪ/</td><td class="vocab-en">to decide (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закінчити</td><td class="vocab-ipa">/zaˈkintʃɪtɪ/</td><td class="vocab-en">to finish (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">почати</td><td class="vocab-ipa">/poˈtʃatɪ/</td><td class="vocab-en">to begin (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">зустріну</td><td class="vocab-ipa">/zuˈstrinu/</td><td class="vocab-en">I will meet (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">здасть</td><td class="vocab-ipa">/zdastʲ/</td><td class="vocab-en">he/she will pass (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">прийме</td><td class="vocab-ipa">/ˈprɪjmɛ/</td><td class="vocab-en">he/she will accept (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">подивимося</td><td class="vocab-ipa">/podɪˈwɪmosʲa/</td><td class="vocab-en">we will watch (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">зможу</td><td class="vocab-ipa">/ˈzmɔʒu/</td><td class="vocab-en">I will be able (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">зателефоную</td><td class="vocab-ipa">/zatɛlɛfoˈnuju/</td><td class="vocab-en">I will call (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">закінчу</td><td class="vocab-ipa">/zaˈkintʃu/</td><td class="vocab-en">I will finish (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">почну</td><td class="vocab-ipa">/poˈtʃnu/</td><td class="vocab-en">I will begin (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">буду</td><td class="vocab-ipa">/ˈbudu/</td><td class="vocab-en">I will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будеш</td><td class="vocab-ipa">/ˈbudɛʃ/</td><td class="vocab-en">you will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">буде</td><td class="vocab-ipa">/ˈbudɛ/</td><td class="vocab-en">he/she will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будемо</td><td class="vocab-ipa">/ˈbudɛmo/</td><td class="vocab-en">we will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">будуть</td><td class="vocab-ipa">/ˈbudutʲ/</td><td class="vocab-en">they will be</td><td class="vocab-note">future auxiliary</td></tr><tr><td class="vocab-uk">відпочивати</td><td class="vocab-ipa">/widpotʃɪˈwatɪ/</td><td class="vocab-en">to rest (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">подивимось</td><td class="vocab-ipa">/podɪˈwɪmosʲ/</td><td class="vocab-en">we&#039;ll see (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">подумаю</td><td class="vocab-ipa">/poduˈmaju/</td><td class="vocab-en">I will think (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">підготую</td><td class="vocab-ipa">/pidɦoˈtuju/</td><td class="vocab-en">I will prepare (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">покажу</td><td class="vocab-ipa">/pokaˈʒu/</td><td class="vocab-en">I will show (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">відправлю</td><td class="vocab-ipa">/widˈprawlʲu/</td><td class="vocab-en">I will send (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">надішлю</td><td class="vocab-ipa">/naˈdiʃlʲu/</td><td class="vocab-en">I will send (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">знайдеш</td><td class="vocab-ipa">/znajˈdɛʃ/</td><td class="vocab-en">you will find (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">переможеш</td><td class="vocab-ipa">/pɛrɛˈmɔʒɛʃ/</td><td class="vocab-en">you will defeat (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">врятуєш</td><td class="vocab-ipa">/wrʲaˈtujɛʃ/</td><td class="vocab-en">you will save (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">встану</td><td class="vocab-ipa">/wstaˈnu/</td><td class="vocab-en">I will get up (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">поснідаю</td><td class="vocab-ipa">/posniˈdaju/</td><td class="vocab-en">I will have breakfast (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">поїду</td><td class="vocab-ipa">/poˈjidu/</td><td class="vocab-en">I will go (by transport) (pf)</td><td class="vocab-note">pf future</td></tr><tr><td class="vocab-uk">приготую</td><td class="vocab-ipa">/prɪɦoˈtuju/</td><td class="vocab-en">I will prepare (pf)</td><td class="vocab-note">pf future</td></tr></tbody>
           </table>
         </div>
       </div>
@@ -987,8 +1154,8 @@ footer {
   </main><footer>Module 13 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Future Form","data":{"type":"fill-blank","items":[{"prompt":"Я ___ цю книгу завтра. (will finish reading)","answer":"прочитаю"},{"prompt":"Вона ___ весь день. (will be reading)","answer":"буде читати"},{"prompt":"Ми ___ це! (will do — promise)","answer":"зробимо"},{"prompt":"Він ___ їй листа. (will write)","answer":"напише"},{"prompt":"Я ___ тебе завтра. (will see)","answer":"побачу"},{"prompt":"Вони ___ працювати цілий тиждень. (will be working)","answer":"будуть"},{"prompt":"Він ___ о п'ятій годині. (will come)","answer":"прийде"},{"prompt":"Я тобі все ___. (will tell)","answer":"скажу"},{"prompt":"Вона ___ рішення скоро. (will make a decision)","answer":"прийме"},{"prompt":"Ми ___ цей проєкт до п'ятниці. (will finish)","answer":"закінчимо"},{"prompt":"Він ___ тобі допомогти. (will be able/will want)","answer":"зможе"},{"prompt":"Я ___ це зараз! (will take)","answer":"візьму"}]}},{"id":"activity-1","type":"match-up","title":"Infinitive to Future Form","data":{"type":"match-up","pairs":[{"left":"зробити","right":"зроблю"},{"left":"написати","right":"напишу"},{"left":"прочитати","right":"прочитаю"},{"left":"сказати","right":"скажу"},{"left":"побачити","right":"побачу"},{"left":"взяти","right":"візьму"},{"left":"дати","right":"дам"},{"left":"піти","right":"піду"},{"left":"прийти","right":"прийду"},{"left":"знайти","right":"знайду"},{"left":"закінчити","right":"закінчу"},{"left":"почати","right":"почну"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цікаву","книгу","прочитаю","Я","цю","завтра","увечері","обов'язково"],"answer":"Я обов'язково прочитаю цю цікаву книгу завтра увечері.","translation":"I will definitely read this interesting book tomorrow evening."},{"words":["важливу","роботу","зробимо","Ми","це","разом","наступного","тижня"],"answer":"Ми разом зробимо цю важливу роботу наступного тижня.","translation":"We will do this important work together next week."},{"words":["напише","довгого","листа","Він","їй","завтра","після","роботи"],"answer":"Він напише їй довгого листа завтра після роботи.","translation":"He will write her a long letter tomorrow after work."},{"words":["побачу","тебе","Я","завтра","о","десятій","годині","вранці"],"answer":"Я побачу тебе завтра о десятій годині вранці.","translation":"I will see you tomorrow at ten o'clock in the morning."},{"words":["скажу","всю","правду","тобі","Я","завтра","при","зустрічі"],"answer":"Я скажу тобі всю правду завтра при зустрічі.","translation":"I will tell you the whole truth tomorrow when we meet."},{"words":["прийде","пізно","додому","о","Вона","п'ятій","годині","увечері"],"answer":"Вона прийде додому пізно о п'ятій годині увечері.","translation":"She will come home late at five o'clock in the evening."},{"words":["візьму","цю","нову","книгу","Я","з","бібліотеки","завтра"],"answer":"Я завтра візьму цю нову книгу з бібліотеки.","translation":"I will take this new book from the library tomorrow."},{"words":["дам","тобі","свої","гроші","Я","на","новий","телефон"],"answer":"Я дам тобі свої гроші на новий телефон.","translation":"I will give you my money for a new phone."},{"words":["піду","рано","вранці","на","важливу","Я","роботу","завтра"],"answer":"Я завтра піду рано вранці на важливу роботу.","translation":"I will go to important work early tomorrow morning."},{"words":["знайдемо","правильний","вихід","Ми","із","цієї","складної","ситуації"],"answer":"Ми знайдемо правильний вихід із цієї складної ситуації.","translation":"We will find the right way out of this difficult situation."},{"words":["закінчу","цей","важливий","проєкт","Я","скоро","до","п'ятниці"],"answer":"Я скоро закінчу цей важливий проєкт до п'ятниці.","translation":"I will finish this important project soon by Friday."},{"words":["почну","нову","роботу","Я","завтра","о","дев'ятій","годині"],"answer":"Я почну нову роботу завтра о дев'ятій годині.","translation":"I will start a new job tomorrow at nine o'clock."}]}},{"id":"activity-3","type":"quiz","title":"Future Aspect Choice","data":{"type":"quiz","questions":[{"question":"For a promise \"I'll do it!\", use:","options":["Perfective (зроблю)","Imperfective (буду робити)","Either works","Neither"],"correctIndex":0,"explanation":""},{"question":"For \"I'll be reading all day\", use:","options":["Perfective (прочитаю)","Imperfective (буду читати)","Either works","Neither"],"correctIndex":1,"explanation":""},{"question":"\"Я прочитаю книгу\" means:","options":["I will finish the book","I will be reading the book","I read the book","I was reading"],"correctIndex":0,"explanation":""},{"question":"\"Я буду читати увечері\" means:","options":["I will finish reading","I will be reading in the evening","I read in the evening","I finished reading"],"correctIndex":1,"explanation":""},{"question":"Perfective future is formed by:","options":["Conjugating the perfective verb","буду + perfective infinitive","буду + imperfective infinitive","Both work"],"correctIndex":0,"explanation":""},{"question":"Imperfective future is formed by:","options":["Conjugating the imperfective verb","буду + perfective infinitive","буду + imperfective infinitive","Both work"],"correctIndex":2,"explanation":""},{"question":"\"Він скаже\" is:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Вона буде писати\" is:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":1,"explanation":""},{"question":"For appointments with specific time, use:","options":["Perfective (прийду о третій)","Imperfective (буду приходити)","Either works equally","Neither"],"correctIndex":0,"explanation":""},{"question":"\"Завтра\" usually pairs with:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Цілий день\" usually pairs with:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":1,"explanation":""},{"question":"\"Я візьму\" comes from:","options":["взяти (perfective)","брати (imperfective)","both verbs","neither verb"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Future Tense Facts","data":{"type":"true-false","statements":[{"statement":"Perfective future uses conjugated forms without \"буду\".","isTrue":true,"explanation":""},{"statement":"Imperfective future always uses \"буду + infinitive\".","isTrue":true,"explanation":""},{"statement":"\"Я зроблю\" means I will be doing.","isTrue":false,"explanation":""},{"statement":"For promises, use perfective future.","isTrue":true,"explanation":""},{"statement":"\"Дам\" is the future of \"дати\" (to give).","isTrue":true,"explanation":""},{"statement":"\"Буду читати\" shows completed reading.","isTrue":false,"explanation":""},{"statement":"Perfective future expresses result/completion.","isTrue":true,"explanation":""},{"statement":"\"Піду\" and \"буду йти\" mean the same thing.","isTrue":false,"explanation":""},{"statement":"Time expressions like \"скоро\" suggest perfective.","isTrue":true,"explanation":""},{"statement":"\"Візьму\" is an irregular perfective form.","isTrue":true,"explanation":""},{"statement":"Both future types use the same endings.","isTrue":false,"explanation":""},{"statement":"Imperfective future can show duration.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Future Type","data":{"type":"group-sort","groups":[{"id":"perfective-future","name":"Perfective Future","items":["Я прочитаю книгу","Він напише листа","Ми зробимо це!","Я побачу тебе завтра","Вона прийде о п'ятій","Я скажу правду"]},{"id":"imperfective-future","name":"Imperfective Future","items":["Я буду читати увечері","Вона буде писати весь день","Вони будуть працювати","Він буде дивитися фільм","Ми будемо чекати","Вони будуть говорити довго"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Future Tense in Context","data":{"type":"fill-blank","items":[{"prompt":"Завтра я ___ нову книгу в бібліотеці. (will take)","answer":"візьму"},{"prompt":"Він ___ працювати над проєктом цілий тиждень. (will be working)","answer":"буде"},{"prompt":"Вона ___ мені, коли прийде додому. (will call)","answer":"зателефонує"},{"prompt":"Ми ___ готувати вечерю разом увечері. (will be cooking)","answer":"будемо"},{"prompt":"Я обіцяю, що ___ це до п'ятниці. (will finish)","answer":"закінчу"},{"prompt":"Вони ___ працювати цілий тиждень. (will be)","answer":"будуть"},{"prompt":"Він ___ правду, коли прийде час. (will tell)","answer":"скаже"},{"prompt":"Я ___ тебе на вокзалі о третій. (will meet)","answer":"зустріну"},{"prompt":"Вона ___ читати цей роман довго. (will be reading)","answer":"буде"},{"prompt":"Ми ___ це разом! (will do — promise)","answer":"зробимо"},{"prompt":"Я ___ тобі допомогти завтра після роботи. (will be able)","answer":"зможу"},{"prompt":"Вони ___ обговорювати це питання цілий день. (will be discussing)","answer":"будуть"}]}},{"id":"activity-7","type":"select","title":"Perfective or Imperfective Future","data":{"type":"select","items":[{"question":"Я ... цю книгу до кінця тижня.","options":[{"text":"прочитаю","correct":true},{"text":"буду читати","correct":false}]},{"question":"Він ... над проєктом цілий місяць.","options":[{"text":"зробить","correct":false},{"text":"буде працювати","correct":true}]},{"question":"Я обіцяю, що ... тобі завтра!","options":[{"text":"зателефоную","correct":true},{"text":"буду телефонувати","correct":false}]},{"question":"Вона ... на роботу о дев'ятій ранку.","options":[{"text":"прийде","correct":true},{"text":"буде приходити","correct":false}]},{"question":"Ми ... цей фільм увечері.","options":[{"text":"подивимося","correct":true},{"text":"будемо дивитися","correct":false}]},{"question":"Він ... вчити англійську весь рік.","options":[{"text":"вивчить","correct":false},{"text":"буде","correct":true}]},{"question":"Я ... тобі все, що знаю.","options":[{"text":"розкажу","correct":true},{"text":"буду розказувати","correct":false}]},{"question":"Вона ... готувати обід цілий ранок.","options":[{"text":"приготує","correct":false},{"text":"буде","correct":true}]},{"question":"Він ... цей екзамен з першого разу.","options":[{"text":"здасть","correct":true},{"text":"буде здавати","correct":false}]},{"question":"Ми ... тебе на вечірці!","options":[{"text":"побачимо","correct":true},{"text":"будемо бачити","correct":false}]},{"question":"Я ... писати цей звіт до ночі.","options":[{"text":"напишу","correct":false},{"text":"буду","correct":true}]},{"question":"Вони ... рішення завтра вранці.","options":[{"text":"приймуть","correct":true},{"text":"будуть приймати","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Planning Tomorrow","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Завтра","я","встану","о","сьомій","годині","ранку."],"answer":"Завтра я встану о сьомій годині ранку."},{"words":["Я","поснідаю","і","випʼю","каву","з","молоком."],"answer":"Я поснідаю і випʼю каву з молоком."},{"words":["Потім","я","поїду","на","роботу","автобусом."],"answer":"Потім я поїду на роботу автобусом."},{"words":["Я","буду","працювати","в","офісі","до","п'ятої."],"answer":"Я буду працювати в офісі до п'ятої."},{"words":["Після","роботи","я","зайду","в","магазин."],"answer":"Після роботи я зайду в магазин."},{"words":["Увечері","я","приготую","вечерю","і","відпочину."],"answer":"Увечері я приготую вечерю і відпочину."}]}},{"id":"activity-9","type":"quiz","title":"Future Tense Mastery","data":{"type":"quiz","questions":[{"question":"Для обіцянки \"I'll do it!\" використовуємо:","options":["Доконаний вид (зроблю)","Недоконаний вид (буду робити)","Обидва варіанти","Жоден"],"correctIndex":0,"explanation":""},{"question":"\"Буду читати\" виражає:","options":["Завершення читання","Процес читання в майбутньому","Одноразову дію","Минулу дію"],"correctIndex":1,"explanation":""},{"question":"\"Прочитаю\" без \"буду\" — це:","options":["Майбутній час доконаного виду","Теперішній час","Минулий час","Наказовий спосіб"],"correctIndex":0,"explanation":""},{"question":"Для призначення зустрічі використовуємо:","options":["Доконаний вид (прийду о третій)","Недоконаний вид (буду приходити)","Теперішній час","Обидва варіанти"],"correctIndex":0,"explanation":""},{"question":"\"Завтра\" зазвичай вживається з:","options":["Доконаним видом","Недоконаним видом","Минулим часом","Обома видами однаково"],"correctIndex":0,"explanation":""},{"question":"\"Цілий день\" у майбутньому вказує на:","options":["Доконаний вид","Недоконаний вид","Минулий час","Теперішній час"],"correctIndex":1,"explanation":""},{"question":"\"Візьму\" — це форма від:","options":["взяти (доконаний)","брати (недоконаний)","обох дієслів","жодного"],"correctIndex":0,"explanation":""},{"question":"\"Він буде писати\" vs \"Він напише\" — різниця:","options":["Процес vs завершення","Теперішній vs майбутній","Однина vs множина","Немає різниці"],"correctIndex":0,"explanation":""},{"question":"\"Дам\" (я дам) — неправильна форма від:","options":["дати","давати","обох","жодного"],"correctIndex":0,"explanation":""},{"question":"Яке речення виражає план?","options":["Завтра я піду на роботу","Я буду йти на роботу довго","Я ходжу на роботу","Я ходив на роботу"],"correctIndex":0,"explanation":""},{"question":"\"Скоро\" вживається з:","options":["Доконаним видом","Недоконаним видом","Минулим часом","Обома видами"],"correctIndex":0,"explanation":""},{"question":"\"Ми зробимо це!\" — емоційний відтінок:","options":["Рішучість, обіцянка","Невпевненість","Питання","Заперечення"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
-    const vocabData = [{"uk":"зроблю","translit":"","en":"I will do (pf)","note":"pf future"},{"uk":"напишу","translit":"","en":"I will write (pf)","note":"pf future"},{"uk":"прочитаю","translit":"","en":"I will read (pf)","note":"pf future"},{"uk":"скажу","translit":"","en":"I will say (pf)","note":"pf future"},{"uk":"побачу","translit":"","en":"I will see (pf)","note":"pf future"},{"uk":"візьму","translit":"","en":"I will take (pf)","note":"pf future"},{"uk":"дам","translit":"","en":"I will give (pf)","note":"pf future"},{"uk":"піду","translit":"","en":"I will go (pf)","note":"pf future"},{"uk":"прийду","translit":"","en":"I will come (pf)","note":"pf future"},{"uk":"знайду","translit":"","en":"I will find (pf)","note":"pf future"},{"uk":"завтра","translit":"","en":"tomorrow","note":""},{"uk":"скоро","translit":"","en":"soon","note":""},{"uk":"через","translit":"","en":"in (time), through","note":"+ acc"},{"uk":"потім","translit":"","en":"then, later","note":""},{"uk":"обіцянка","translit":"","en":"promise","note":""},{"uk":"план","translit":"","en":"plan","note":""},{"uk":"обіцяти","translit":"","en":"to promise","note":""},{"uk":"вирішити","translit":"","en":"to decide (pf)","note":""},{"uk":"закінчити","translit":"","en":"to finish (pf)","note":""},{"uk":"почати","translit":"","en":"to begin (pf)","note":""},{"uk":"зустріну","translit":"","en":"I will meet (pf)","note":"pf future"},{"uk":"здасть","translit":"","en":"he/she will pass (pf)","note":"pf future"},{"uk":"прийме","translit":"","en":"he/she will accept (pf)","note":"pf future"},{"uk":"подивимося","translit":"","en":"we will watch (pf)","note":"pf future"},{"uk":"зможу","translit":"","en":"I will be able (pf)","note":"pf future"},{"uk":"зателефоную","translit":"","en":"I will call (pf)","note":"pf future"},{"uk":"закінчу","translit":"","en":"I will finish (pf)","note":"pf future"},{"uk":"почну","translit":"","en":"I will begin (pf)","note":"pf future"},{"uk":"буду","translit":"","en":"I will be","note":"future auxiliary"},{"uk":"будеш","translit":"","en":"you will be","note":"future auxiliary"},{"uk":"буде","translit":"","en":"he/she will be","note":"future auxiliary"},{"uk":"будемо","translit":"","en":"we will be","note":"future auxiliary"},{"uk":"будуть","translit":"","en":"they will be","note":"future auxiliary"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Future Form","data":{"type":"fill-blank","items":[{"prompt":"Я ___ цю книгу завтра. (will finish reading)","answer":"прочитаю"},{"prompt":"Вона ___ весь день. (will be reading)","answer":"буде читати"},{"prompt":"Ми ___ це! (will do — promise)","answer":"зробимо"},{"prompt":"Він ___ їй листа. (will write)","answer":"напише"},{"prompt":"Я ___ тебе завтра. (will see)","answer":"побачу"},{"prompt":"Вони ___ працювати цілий тиждень. (will be working)","answer":"будуть"},{"prompt":"Він ___ о п'ятій годині. (will come)","answer":"прийде"},{"prompt":"Я тобі все ___. (will tell)","answer":"скажу"},{"prompt":"Вона ___ рішення скоро. (will make a decision)","answer":"прийме"},{"prompt":"Ми ___ цей проєкт до п'ятниці. (will finish)","answer":"закінчимо"},{"prompt":"Він ___ тобі допомогти. (will be able/will want)","answer":"зможе"},{"prompt":"Я ___ це зараз! (will take)","answer":"візьму"}]}},{"id":"activity-1","type":"match-up","title":"Infinitive to Future Form","data":{"type":"match-up","pairs":[{"left":"зробити","right":"зроблю"},{"left":"написати","right":"напишу"},{"left":"прочитати","right":"прочитаю"},{"left":"сказати","right":"скажу"},{"left":"побачити","right":"побачу"},{"left":"взяти","right":"візьму"},{"left":"дати","right":"дам"},{"left":"піти","right":"піду"},{"left":"прийти","right":"прийду"},{"left":"знайти","right":"знайду"},{"left":"закінчити","right":"закінчу"},{"left":"почати","right":"почну"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цікаву","книгу","прочитаю","Я","цю","завтра","увечері","обов'язково"],"answer":"Я обов'язково прочитаю цю цікаву книгу завтра увечері.","translation":"I will definitely read this interesting book tomorrow evening."},{"words":["важливу","роботу","зробимо","Ми","це","разом","наступного","тижня"],"answer":"Ми разом зробимо цю важливу роботу наступного тижня.","translation":"We will do this important work together next week."},{"words":["напише","довгого","листа","Він","їй","завтра","після","роботи"],"answer":"Він напише їй довгого листа завтра після роботи.","translation":"He will write her a long letter tomorrow after work."},{"words":["побачу","тебе","Я","завтра","о","десятій","годині","вранці"],"answer":"Я побачу тебе завтра о десятій годині вранці.","translation":"I will see you tomorrow at ten o'clock in the morning."},{"words":["скажу","всю","правду","тобі","Я","завтра","при","зустрічі"],"answer":"Я скажу тобі всю правду завтра при зустрічі.","translation":"I will tell you the whole truth tomorrow when we meet."},{"words":["прийде","пізно","додому","о","Вона","п'ятій","годині","увечері"],"answer":"Вона прийде додому пізно о п'ятій годині увечері.","translation":"She will come home late at five o'clock in the evening."},{"words":["візьму","цю","нову","книгу","Я","з","бібліотеки","завтра"],"answer":"Я завтра візьму цю нову книгу з бібліотеки.","translation":"I will take this new book from the library tomorrow."},{"words":["дам","тобі","свої","гроші","Я","на","новий","телефон"],"answer":"Я дам тобі свої гроші на новий телефон.","translation":"I will give you my money for a new phone."},{"words":["піду","рано","вранці","на","важливу","Я","роботу","завтра"],"answer":"Я завтра піду рано вранці на важливу роботу.","translation":"I will go to important work early tomorrow morning."},{"words":["знайдемо","правильний","вихід","Ми","із","цієї","складної","ситуації"],"answer":"Ми знайдемо правильний вихід із цієї складної ситуації.","translation":"We will find the right way out of this difficult situation."},{"words":["закінчу","цей","важливий","проєкт","Я","скоро","до","п'ятниці"],"answer":"Я скоро закінчу цей важливий проєкт до п'ятниці.","translation":"I will finish this important project soon by Friday."},{"words":["почну","нову","роботу","Я","завтра","о","дев'ятій","годині"],"answer":"Я почну нову роботу завтра о дев'ятій годині.","translation":"I will start a new job tomorrow at nine o'clock."}]}},{"id":"activity-3","type":"quiz","title":"Future Aspect Choice","data":{"type":"quiz","questions":[{"question":"For a promise \"I'll do it!\", use:","options":["Perfective (зроблю)","Imperfective (буду робити)","Either works","Neither"],"correctIndex":0,"explanation":""},{"question":"For \"I'll be reading all day\", use:","options":["Perfective (прочитаю)","Imperfective (буду читати)","Either works","Neither"],"correctIndex":1,"explanation":""},{"question":"\"Я прочитаю книгу\" means:","options":["I will finish the book","I will be reading the book","I read the book","I was reading"],"correctIndex":0,"explanation":""},{"question":"\"Я буду читати увечері\" means:","options":["I will finish reading","I will be reading in the evening","I read in the evening","I finished reading"],"correctIndex":1,"explanation":""},{"question":"Perfective future is formed by:","options":["Conjugating the perfective verb","буду + perfective infinitive","буду + imperfective infinitive","Both work"],"correctIndex":0,"explanation":""},{"question":"Imperfective future is formed by:","options":["Conjugating the imperfective verb","буду + perfective infinitive","буду + imperfective infinitive","Both work"],"correctIndex":2,"explanation":""},{"question":"\"Він скаже\" is:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Вона буде писати\" is:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":1,"explanation":""},{"question":"For appointments with specific time, use:","options":["Perfective (прийду о третій)","Imperfective (буду приходити)","Either works equally","Neither"],"correctIndex":0,"explanation":""},{"question":"\"Завтра\" usually pairs with:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":0,"explanation":""},{"question":"\"Цілий день\" usually pairs with:","options":["Perfective future","Imperfective future","Past tense","Present tense"],"correctIndex":1,"explanation":""},{"question":"\"Я візьму\" comes from:","options":["взяти (perfective)","брати (imperfective)","both verbs","neither verb"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Future Tense Facts","data":{"type":"true-false","statements":[{"statement":"Perfective future uses conjugated forms without \"буду\".","isTrue":true,"explanation":""},{"statement":"Imperfective future always uses \"буду + infinitive\".","isTrue":true,"explanation":""},{"statement":"\"Я зроблю\" means I will be doing.","isTrue":false,"explanation":""},{"statement":"For promises, use perfective future.","isTrue":true,"explanation":""},{"statement":"\"Дам\" is the future of \"дати\" (to give).","isTrue":true,"explanation":""},{"statement":"\"Буду читати\" shows completed reading.","isTrue":false,"explanation":""},{"statement":"Perfective future expresses result/completion.","isTrue":true,"explanation":""},{"statement":"\"Піду\" and \"буду йти\" mean the same thing.","isTrue":false,"explanation":""},{"statement":"Time expressions like \"скоро\" suggest perfective.","isTrue":true,"explanation":""},{"statement":"\"Візьму\" is an irregular perfective form.","isTrue":true,"explanation":""},{"statement":"Both future types use the same endings.","isTrue":false,"explanation":""},{"statement":"Imperfective future can show duration.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Future Type","data":{"type":"group-sort","groups":[{"id":"perfective-future","name":"Perfective Future","items":["Я прочитаю книгу","Він напише листа","Ми зробимо це!","Я побачу тебе завтра","Вона прийде о п'ятій","Я скажу правду"]},{"id":"imperfective-future","name":"Imperfective Future","items":["Я буду читати увечері","Вона буде писати весь день","Вони будуть працювати","Він буде дивитися фільм","Ми будемо чекати","Вони будуть говорити довго"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Future Tense in Context","data":{"type":"fill-blank","items":[{"prompt":"Завтра я ___ нову книгу в бібліотеці. (will take)","answer":"візьму"},{"prompt":"Він ___ працювати над проєктом цілий тиждень. (will be working)","answer":"буде"},{"prompt":"Вона ___ мені, коли прийде додому. (will call)","answer":"зателефонує"},{"prompt":"Ми ___ готувати вечерю разом увечері. (will be cooking)","answer":"будемо"},{"prompt":"Я обіцяю, що ___ це до п'ятниці. (will finish)","answer":"закінчу"},{"prompt":"Вони ___ працювати цілий тиждень. (will be)","answer":"будуть"},{"prompt":"Він ___ правду, коли прийде час. (will tell)","answer":"скаже"},{"prompt":"Я ___ тебе на вокзалі о третій. (will meet)","answer":"зустріну"},{"prompt":"Вона ___ читати цей роман довго. (will be reading)","answer":"буде"},{"prompt":"Ми ___ це разом! (will do — promise)","answer":"зробимо"},{"prompt":"Я ___ тобі допомогти завтра після роботи. (will be able)","answer":"зможу"},{"prompt":"Вони ___ обговорювати це питання цілий день. (will be discussing)","answer":"будуть"}]}},{"id":"activity-7","type":"select","title":"Perfective or Imperfective Future","data":{"type":"select","items":[{"question":"Я ... цю книгу до кінця тижня.","options":[{"text":"прочитаю","correct":true},{"text":"буду читати","correct":false}]},{"question":"Він ... над проєктом цілий місяць.","options":[{"text":"зробить","correct":false},{"text":"буде працювати","correct":true}]},{"question":"Я обіцяю, що ... тобі завтра!","options":[{"text":"зателефоную","correct":true},{"text":"буду телефонувати","correct":false}]},{"question":"Вона ... на роботу о дев'ятій ранку.","options":[{"text":"прийде","correct":true},{"text":"буде приходити","correct":false}]},{"question":"Ми ... цей фільм увечері.","options":[{"text":"подивимося","correct":true},{"text":"будемо дивитися","correct":false}]},{"question":"Він ... вчити англійську весь рік.","options":[{"text":"вивчить","correct":false},{"text":"буде","correct":true}]},{"question":"Я ... тобі все, що знаю.","options":[{"text":"розкажу","correct":true},{"text":"буду розказувати","correct":false}]},{"question":"Вона ... готувати обід цілий ранок.","options":[{"text":"приготує","correct":false},{"text":"буде","correct":true}]},{"question":"Він ... цей екзамен з першого разу.","options":[{"text":"здасть","correct":true},{"text":"буде здавати","correct":false}]},{"question":"Ми ... тебе на вечірці!","options":[{"text":"побачимо","correct":true},{"text":"будемо бачити","correct":false}]},{"question":"Я ... писати цей звіт до ночі.","options":[{"text":"напишу","correct":false},{"text":"буду","correct":true}]},{"question":"Вони ... рішення завтра вранці.","options":[{"text":"приймуть","correct":true},{"text":"будуть приймати","correct":false}]}]}},{"id":"activity-8","type":"error-correction","title":"Correct the Future Aspect Error","data":{"type":"error-correction","items":[{"sentence":"Я буду прочитати цю книгу завтра.","errorWord":"прочитати","correctForm":"прочитаю","options":["буду прочитати","прочитаю","буду читати","читатиму"],"explanation":"Perfective future conjugates directly, no \"буду\""},{"sentence":"Він зробить домашнє завдання цілий вечір.","errorWord":"зробить","correctForm":"буде робити","options":["зробить","буде робити","робитиме","зроблятиме"],"explanation":"Imperfective for duration with \"цілий вечір\""},{"sentence":"Вона прийде о третій годині кожного дня.","errorWord":"прийде","correctForm":"буде приходити","options":["прийде","буде приходити","приходитиме","прийдуть"],"explanation":"Imperfective for repeated future actions"},{"sentence":"Я буду написати тобі листа завтра.","errorWord":"написати","correctForm":"напишу","options":["буду написати","напишу","буду писати","писатиму"],"explanation":"Perfective doesn't use \"буду\""},{"sentence":"Він буде подивитися цей фільм увечері.","errorWord":"подивитися","correctForm":"подивиться","options":["буде подивитися","подивиться","буде дивитися","дивитиметься"],"explanation":"Perfective future = conjugated form, no \"буду\""},{"sentence":"Ми закінчимо працювати над проєктом весь місяць.","errorWord":"закінчимо","correctForm":"будемо","options":["закінчимо","будемо","працюватимемо","закінчатимемо"],"explanation":"Imperfective for \"весь місяць\" duration"},{"sentence":"Вона буду готувати вечерю сьогодні.","errorWord":"буду","correctForm":"буде","options":["буду","буде","будуть","будемо"],"explanation":"Wrong auxiliary form: вона = буде, not буду"},{"sentence":"Я зроблю цю роботу довго.","errorWord":"зроблю","correctForm":"буду робити","options":["зроблю","буду робити","робитиму","зроблятиму"],"explanation":"Imperfective for duration with \"довго\""},{"sentence":"Вони будуть прийти о п'ятій годині.","errorWord":"прийти","correctForm":"прийдуть","options":["будуть прийти","прийдуть","будуть приходити","приходитимуть"],"explanation":"Perfective doesn't use \"будуть\""},{"sentence":"Я буде телефонувати тобі завтра.","errorWord":"буде","correctForm":"буду","options":["буде","буду","будуть","будемо"],"explanation":"Wrong auxiliary form: я = буду, not буде"},{"sentence":"Він візьме цей підручник на весь семестр.","errorWord":"візьме","correctForm":"буде брати","options":["візьме","буде брати","братиме","візьматиме"],"explanation":"Imperfective for \"весь семестр\" duration"},{"sentence":"Студенти будуть здати цей екзамен завтра.","errorWord":"здати","correctForm":"здадуть","options":["будуть здати","здадуть","будуть здавати","здаватимуть"],"explanation":"Perfective doesn't use \"будуть\""}]}},{"id":"activity-9","type":"unjumble","title":"Planning Tomorrow","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Завтра","я","о","сьомій","годині","встану","рано","ранку"],"answer":"Завтра я рано встану о сьомій годині ранку.","translation":"Tomorrow I'll get up early at seven in the morning."},{"words":["Я","поснідаю","і","вип'ю","каву","гарячу","з","молоком"],"answer":"Я поснідаю і вип'ю гарячу каву з молоком.","translation":"I'll have breakfast and drink hot coffee with milk."},{"words":["Потім","я","на","роботу","поїду","новим","швидким","автобусом"],"answer":"Потім я поїду на роботу новим швидким автобусом.","translation":"Then I'll go to work by new fast bus."},{"words":["Я","буду","працювати","в","офісі","нашому","до","п'ятої"],"answer":"Я буду працювати в нашому офісі до п'ятої.","translation":"I'll be working in our office until five."},{"words":["Після","роботи","я","в","зайду","новий","великий","магазин"],"answer":"Після роботи я зайду в новий великий магазин.","translation":"After work I'll stop by the new big store."},{"words":["Увечері","я","приготую","смачну","вечерю","і","добре","відпочину"],"answer":"Увечері я приготую смачну вечерю і добре відпочину.","translation":"In the evening I'll prepare a tasty dinner and rest well."},{"words":["книгу","Перед","сном","я","читатиму","цікаву","нову","українську"],"answer":"Перед сном я читатиму нову цікаву українську книгу.","translation":"Before bed I'll be reading a new interesting Ukrainian book."},{"words":["рано","Наступного","дня","я","знову","прокинуся","о","сьомій"],"answer":"Наступного дня я знову прокинуся рано о сьомій.","translation":"The next day I'll wake up early again at seven."},{"words":["буде","Цей","день","дуже","робочий","звичайний","типовий","мій"],"answer":"Цей робочий день буде мій дуже типовий звичайний.","translation":"This work day will be my very typical ordinary."},{"words":["люблю","Я","такі","дні","спокійні","звичайні","завжди","дуже"],"answer":"Я завжди дуже люблю такі спокійні звичайні дні.","translation":"I always really love such calm ordinary days."},{"words":["вечір","Кожен","я","буду","так","проводити","чудово","свій"],"answer":"Кожен вечір я буду так чудово проводити свій.","translation":"Every evening I'll spend mine so wonderfully."},{"words":["план","Це","мій","на","завтра","чудовий","типовий","день"],"answer":"Це мій чудовий типовий план на завтра день.","translation":"This is my wonderful typical plan for tomorrow day."}]}},{"id":"activity-10","type":"quiz","title":"Future Tense Mastery","data":{"type":"quiz","questions":[{"question":"Для обіцянки \"I'll do it!\" використовуємо:","options":["Доконаний вид (зроблю)","Недоконаний вид (буду робити)","Обидва варіанти","Жоден"],"correctIndex":0,"explanation":""},{"question":"\"Буду читати\" виражає:","options":["Завершення читання","Процес читання в майбутньому","Одноразову дію","Минулу дію"],"correctIndex":1,"explanation":""},{"question":"\"Прочитаю\" без \"буду\" — це:","options":["Майбутній час доконаного виду","Теперішній час","Минулий час","Наказовий спосіб"],"correctIndex":0,"explanation":""},{"question":"Для призначення зустрічі використовуємо:","options":["Доконаний вид (прийду о третій)","Недоконаний вид (буду приходити)","Теперішній час","Обидва варіанти"],"correctIndex":0,"explanation":""},{"question":"\"Завтра\" зазвичай вживається з:","options":["Доконаним видом","Недоконаним видом","Минулим часом","Обома видами однаково"],"correctIndex":0,"explanation":""},{"question":"\"Цілий день\" у майбутньому вказує на:","options":["Доконаний вид","Недоконаний вид","Минулий час","Теперішній час"],"correctIndex":1,"explanation":""},{"question":"\"Візьму\" — це форма від:","options":["взяти (доконаний)","брати (недоконаний)","обох дієслів","жодного"],"correctIndex":0,"explanation":""},{"question":"\"Він буде писати\" vs \"Він напише\" — різниця:","options":["Процес vs завершення","Теперішній vs майбутній","Однина vs множина","Немає різниці"],"correctIndex":0,"explanation":""},{"question":"\"Дам\" (я дам) — неправильна форма від:","options":["дати","давати","обох","жодного"],"correctIndex":0,"explanation":""},{"question":"Яке речення виражає план?","options":["Завтра я піду на роботу","Я буду йти на роботу довго","Я ходжу на роботу","Я ходив на роботу"],"correctIndex":0,"explanation":""},{"question":"\"Скоро\" вживається з:","options":["Доконаним видом","Недоконаним видом","Минулим часом","Обома видами"],"correctIndex":0,"explanation":""},{"question":"\"Ми зробимо це!\" — емоційний відтінок:","options":["Рішучість, обіцянка","Невпевненість","Питання","Заперечення"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"зроблю","translit":"","en":"I will do (pf)","note":"pf future"},{"uk":"напишу","translit":"","en":"I will write (pf)","note":"pf future"},{"uk":"прочитаю","translit":"","en":"I will read (pf)","note":"pf future"},{"uk":"скажу","translit":"","en":"I will say (pf)","note":"pf future"},{"uk":"побачу","translit":"","en":"I will see (pf)","note":"pf future"},{"uk":"візьму","translit":"","en":"I will take (pf)","note":"pf future"},{"uk":"дам","translit":"","en":"I will give (pf)","note":"pf future"},{"uk":"піду","translit":"","en":"I will go (pf)","note":"pf future"},{"uk":"прийду","translit":"","en":"I will come (pf)","note":"pf future"},{"uk":"знайду","translit":"","en":"I will find (pf)","note":"pf future"},{"uk":"завтра","translit":"","en":"tomorrow","note":""},{"uk":"скоро","translit":"","en":"soon","note":""},{"uk":"через","translit":"","en":"in (time), through","note":"+ acc"},{"uk":"потім","translit":"","en":"then, later","note":""},{"uk":"обіцянка","translit":"","en":"promise","note":""},{"uk":"план","translit":"","en":"plan","note":""},{"uk":"обіцяти","translit":"","en":"to promise","note":""},{"uk":"вирішити","translit":"","en":"to decide (pf)","note":""},{"uk":"закінчити","translit":"","en":"to finish (pf)","note":""},{"uk":"почати","translit":"","en":"to begin (pf)","note":""},{"uk":"зустріну","translit":"","en":"I will meet (pf)","note":"pf future"},{"uk":"здасть","translit":"","en":"he/she will pass (pf)","note":"pf future"},{"uk":"прийме","translit":"","en":"he/she will accept (pf)","note":"pf future"},{"uk":"подивимося","translit":"","en":"we will watch (pf)","note":"pf future"},{"uk":"зможу","translit":"","en":"I will be able (pf)","note":"pf future"},{"uk":"зателефоную","translit":"","en":"I will call (pf)","note":"pf future"},{"uk":"закінчу","translit":"","en":"I will finish (pf)","note":"pf future"},{"uk":"почну","translit":"","en":"I will begin (pf)","note":"pf future"},{"uk":"буду","translit":"","en":"I will be","note":"future auxiliary"},{"uk":"будеш","translit":"","en":"you will be","note":"future auxiliary"},{"uk":"буде","translit":"","en":"he/she will be","note":"future auxiliary"},{"uk":"будемо","translit":"","en":"we will be","note":"future auxiliary"},{"uk":"будуть","translit":"","en":"they will be","note":"future auxiliary"},{"uk":"відпочивати","translit":"","en":"to rest (impf)","note":""},{"uk":"подивимось","translit":"","en":"we'll see (pf)","note":"pf future"},{"uk":"подумаю","translit":"","en":"I will think (pf)","note":"pf future"},{"uk":"підготую","translit":"","en":"I will prepare (pf)","note":"pf future"},{"uk":"покажу","translit":"","en":"I will show (pf)","note":"pf future"},{"uk":"відправлю","translit":"","en":"I will send (pf)","note":"pf future"},{"uk":"надішлю","translit":"","en":"I will send (pf)","note":"pf future"},{"uk":"знайдеш","translit":"","en":"you will find (pf)","note":"pf future"},{"uk":"переможеш","translit":"","en":"you will defeat (pf)","note":"pf future"},{"uk":"врятуєш","translit":"","en":"you will save (pf)","note":"pf future"},{"uk":"встану","translit":"","en":"I will get up (pf)","note":"pf future"},{"uk":"поснідаю","translit":"","en":"I will have breakfast (pf)","note":"pf future"},{"uk":"поїду","translit":"","en":"I will go (by transport) (pf)","note":"pf future"},{"uk":"приготую","translit":"","en":"I will prepare (pf)","note":"pf future"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -2312,6 +2479,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

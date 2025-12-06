@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,9 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Fix</button>
+      <button class="nav-tab" data-section="activity-9">10. Order</button>
+      <button class="nav-tab" data-section="activity-10">11. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -506,6 +548,7 @@ footer {
       <h3>📖 Introduction</h3>
       <div class="md-content"><p>Welcome to your first A2 checkpoint! You've completed Phase A2.1: Completing the Cases. This is a major milestone — you now know all seven Ukrainian cases, the foundation of the entire language.</p>
 <p>Think about how far you've come: In A1, you learned nominative (subject), genitive (possession), accusative (direct object), locative (location), and vocative (address). In A2.1, you added dative (recipient) and instrumental (tools, companions, professions). You can now express almost any relationship between words!</p>
+<p>Why does this matter? Because cases are how Ukrainian shows <em>who does what to whom</em>. In English, word order is rigid: "The dog bit the man" means something completely different from "The man bit the dog." But in Ukrainian, thanks to cases, you can rearrange words for emphasis while keeping the meaning clear. <em>Собака вкусив чоловіка</em> and <em>Чоловіка вкусив собака</em> both mean the same thing — the dog did the biting — because the accusative ending on <em>чоловіка</em> marks him as the victim regardless of position.</p>
 <p>Now let's review everything and make sure it's solid before moving on.</p>
 <hr /></div>
     </div>
@@ -574,7 +617,8 @@ footer {
   
     <div class="card section-content">
       <h3>Quick Reference: Dative</h3>
-      <div class="md-content"><h2 id="pronouns">Pronouns</h2>
+      <div class="md-content"><p>The dative case answers the question <strong>Кому? Чому?</strong> (To whom? To what?) — it marks the <em>recipient</em> of an action. When you give something, tell something, or show something TO someone, that someone goes into dative. Think of dative as the "receiving end" of generosity, communication, or attention.</p>
+<h2 id="pronouns">Pronouns</h2>
 <table>
 <thead>
 <tr>
@@ -613,6 +657,7 @@ footer {
 </tr>
 </tbody>
 </table>
+<p>Notice the pattern: most dative pronouns end in <strong>-і</strong> or have a distinctive form. <em>Мені</em> and <em>тобі</em> are easy to remember — they rhyme! The third person forms (<em>йому, їй, їм</em>) are completely different from nominative, so you'll need to memorize them, but they appear so often in speech that they'll become automatic.</p>
 <h2 id="nounendings">Noun Endings</h2>
 <table>
 <thead>
@@ -645,6 +690,7 @@ footer {
 </tr>
 </tbody>
 </table>
+<p>Feminine nouns are the easiest — just change <strong>-а</strong> to <strong>-і</strong>: <em>мама → мамі</em>, <em>сестра → сестрі</em>, <em>подруга → подрузі</em>. Masculine nouns have two options: <strong>-ові</strong> (usually for people) or <strong>-у</strong> (usually for things), though both are grammatically correct.</p>
 <div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
 <blockquote>
   <p>The dative case is used in the famous greeting <em>Слава Україні!</em> — Glory TO Ukraine! The response <em>Героям слава!</em> (Glory to the heroes!) also uses dative.</p>
@@ -658,7 +704,8 @@ footer {
   
     <div class="card section-content">
       <h3>Quick Reference: Instrumental</h3>
-      <div class="md-content"><h2 id="pronouns">Pronouns</h2>
+      <div class="md-content"><p>The instrumental case answers the question <strong>Ким? Чим?</strong> (By whom? With what?) — it marks <em>tools, means, and companions</em>. When you do something WITH a tool, travel BY a vehicle, or go somewhere WITH a person, you use instrumental. It's also the case of identity: what you ARE or BECOME (<em>бути лікарем</em> — to be a doctor).</p>
+<h2 id="pronouns">Pronouns</h2>
 <table>
 <thead>
 <tr>
@@ -697,6 +744,7 @@ footer {
 </tr>
 </tbody>
 </table>
+<p>The instrumental pronouns have distinctive endings: <strong>-ою</strong> for <em>тобою</em>, <strong>-ами</strong> for <em>нами/вами</em>, and short forms for third person (<em>ним, нею, ними</em>). After prepositions like <em>з</em>, the third person forms add an <em>н-</em>: <em>з ним, з нею, з ними</em>.</p>
 <h2 id="nounendings">Noun Endings</h2>
 <table>
 <thead>
@@ -729,12 +777,14 @@ footer {
 </tr>
 </tbody>
 </table>
+<p>The endings are remarkably consistent: masculine and neuter share <strong>-ом/-ем</strong>, feminine uses <strong>-ою/-ею</strong>, and plural always ends in <strong>-ами/-ями</strong>. If the stem ends in a soft consonant or <em>й</em>, use the softer variant (<em>-ем, -ею, -ями</em>).</p>
 <hr /></div>
     </div>
   
     <div class="card section-content">
       <h3>Two Uses of Instrumental</h3>
-      <div class="md-content"><table>
+      <div class="md-content"><p>The instrumental case has two main functions, and the key difference is whether you use a preposition:</p>
+<table>
 <thead>
 <tr>
 <th>Use</th>
@@ -755,6 +805,8 @@ footer {
 </tr>
 </tbody>
 </table>
+<p><strong>Accompaniment</strong> (<em>з + instrumental</em>): Use this when someone or something accompanies you. <em>Я йду з другом</em> (I'm going with a friend). <em>Кава з молоком</em> (Coffee with milk). The preposition <em>з</em> is essential here.</p>
+<p><strong>Tool/Means</strong> (bare instrumental): Use this when describing HOW you do something — the tool or method. <em>Пишу ручкою</em> (I write with a pen). <em>Їду поїздом</em> (I travel by train). No preposition needed!</p>
 <div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
   <p>Ukrainian songs often feature <em>з тобою</em> (with you) in love songs — instrumental of accompaniment! The hit song "Обійми" by Okean Elzy includes <em>Обійми мене</em> followed by instrumental expressions.</p>
@@ -775,7 +827,8 @@ footer {
   
     <div class="card section-content">
       <h3>Being &amp; Becoming Recap</h3>
-      <div class="md-content"><table>
+      <div class="md-content"><p>When talking about professions, states, or transformations, Ukrainian uses the instrumental case. This is one of the most elegant uses of instrumental — it expresses what someone IS or BECOMES:</p>
+<table>
 <thead>
 <tr>
 <th>Verb</th>
@@ -806,6 +859,34 @@ footer {
 </tr>
 </tbody>
 </table>
+<p>Note: In the present tense, <em>бути</em> is usually omitted, and the predicate stays in nominative: <em>Він лікар</em> (He is a doctor). But in past and future, the instrumental appears: <em>Він був лікарем</em> (He was a doctor), <em>Він буде лікарем</em> (He will be a doctor).</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Dative &amp; Instrumental in Real Life</h3>
+      <div class="md-content"><p>Here are some everyday situations where you'll use the cases you've learned:</p>
+<h2 id="atabirthdayparty">At a Birthday Party</h2>
+<p>— Що ти подаруєш <strong>Олені</strong>?<br />
+— Я куплю <strong>їй</strong> книгу. Вона любить читати.<br />
+— Класна ідея! А я йду <strong>з Марком</strong> купувати торт.<br />
+— Чудово! Він може допомогти <strong>тобі</strong> нести його.</p>
+<p><em>Notice: Олені (dative — recipient), їй (dative pronoun), з Марком (instrumental — accompaniment), тобі (dative — recipient of help)</em></p>
+<h2 id="atthepostoffice">At the Post Office</h2>
+<p>— Добрий день! Я хочу відправити <strong>листа</strong> за кордон.<br />
+— Звичайною чи авіа <strong>поштою</strong>?<br />
+— <strong>Авіапоштою</strong>, будь ласка. Скільки <strong>марок</strong> потрібно?<br />
+— Дві. Можете заплатити <strong>карткою</strong> або <strong>готівкою</strong>.<br />
+— Заплачу <strong>карткою</strong>, дякую <strong>вам</strong>!</p>
+<p><em>Notice: поштою/авіапоштою (instrumental — means), карткою/готівкою (instrumental — means of payment), вам (dative — recipient of thanks)</em></p>
+<h2 id="talkingaboutcareers">Talking About Careers</h2>
+<p>— Ким ти працюєш?<br />
+— Я працюю <strong>програмістом</strong> у великій компанії.<br />
+— Цікаво! А твоя сестра?<br />
+— Вона хотіла стати <strong>актрисою</strong>, але стала <strong>журналісткою</strong>.<br />
+— Їй подобається ця робота?<br />
+— Так, вона каже, що це найкраще рішення в <strong>її</strong> житті.</p>
+<p><em>Notice: програмістом, актрисою, журналісткою (all instrumental — professions), їй (dative — with подобатися)</em></p>
 <hr /></div>
     </div>
   
@@ -865,6 +946,139 @@ footer {
 <blockquote>
   <p>Ukrainian's seven-case system is inherited from Proto-Slavic. Some Slavic languages lost cases over time (Bulgarian has only traces), while others gained forms (some dialects distinguish additional cases). Ukrainian's seven is the "classic" Slavic set.</p>
 </blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>When to Use Dative vs Instrumental</h3>
+      <div class="md-content"><p>This is the question learners ask most often: "How do I know which case to use?" Here's a decision guide:</p>
+<h2 id="usedativewhen">Use DATIVE when…</h2>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Example</th>
+<th>Why Dative?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Someone receives something</td>
+<td>Даю книгу <strong>братові</strong></td>
+<td>Recipient of giving</td>
+</tr>
+<tr>
+<td>Verbs require it</td>
+<td>Допомагаю <strong>мамі</strong></td>
+<td>Verb governs dative</td>
+</tr>
+<tr>
+<td>Impersonal expressions</td>
+<td><strong>Мені</strong> холодно</td>
+<td>Experiencer of state</td>
+</tr>
+<tr>
+<td>Thanking someone</td>
+<td>Дякую <strong>вам</strong></td>
+<td>Recipient of thanks</td>
+</tr>
+<tr>
+<td>Something belongs</td>
+<td>Це належить <strong>їй</strong></td>
+<td>Owner/possessor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key dative verbs to memorize:</strong> допомагати, дякувати, вірити, довіряти, заважати, належати, шкодити, личити</p>
+<h2 id="useinstrumentalwhen">Use INSTRUMENTAL when…</h2>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Example</th>
+<th>Why Instrumental?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WITH someone (accompaniment)</td>
+<td>Йду <strong>з другом</strong></td>
+<td>Companion (needs з)</td>
+</tr>
+<tr>
+<td>WITH something (tool)</td>
+<td>Пишу <strong>ручкою</strong></td>
+<td>Tool/means (no prep)</td>
+</tr>
+<tr>
+<td>BY vehicle</td>
+<td>Їду <strong>поїздом</strong></td>
+<td>Means of transport</td>
+</tr>
+<tr>
+<td>AS profession</td>
+<td>Працює <strong>лікарем</strong></td>
+<td>Professional identity</td>
+</tr>
+<tr>
+<td>BECOMING something</td>
+<td>Стала <strong>вчителькою</strong></td>
+<td>Transformation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key distinction:</strong> If you can say "using" or "by means of" → bare instrumental. If you mean "accompanied by" → з + instrumental.</p>
+<h2 id="commonmistakestoavoid">Common Mistakes to Avoid</h2>
+<table>
+<thead>
+<tr>
+<th>Wrong</th>
+<th>Right</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*Допомагаю братом</td>
+<td>Допомагаю <strong>братові</strong></td>
+<td>допомагати needs dative</td>
+</tr>
+<tr>
+<td>*Йду з брат</td>
+<td>Йду <strong>з братом</strong></td>
+<td>з needs instrumental</td>
+</tr>
+<tr>
+<td>*Пишу з ручкою</td>
+<td>Пишу <strong>ручкою</strong></td>
+<td>Tool = bare instrumental</td>
+</tr>
+<tr>
+<td>*Він лікарем</td>
+<td>Він <strong>лікар</strong> (present)</td>
+<td>Present tense = nominative</td>
+</tr>
+<tr>
+<td>*Він був лікар</td>
+<td>Він був <strong>лікарем</strong></td>
+<td>Past tense = instrumental</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Review: Key Words from Phase A2.1</h3>
+      <div class="md-content"><h2 id="dativeverbsmodule3">Dative Verbs (Module 3)</h2>
+<p>допомагати, заважати, дякувати, вірити, довіряти, вибачати, належати, шкодити, личити, давати, показувати, пояснювати</p>
+<h2 id="instrumentalmodules45">Instrumental (Modules 4-5)</h2>
+<p>ручка, олівець, ніж, виделка, ложка, машина, автобус, поїзд, літак, велосипед</p>
+<h2 id="professionsmodule6">Professions (Module 6)</h2>
+<p>лікар/лікарка, вчитель/вчителька, інженер, програміст/програмістка, актор/актриса, журналіст/журналістка</p>
+<h2 id="postofficebankmodule9">Post Office &amp; Bank (Module 9)</h2>
+<p>пошта, лист, марка, конверт, посилка, банк, рахунок, картка, гроші, готівка, валюта, курс</p>
+<hr />
 <hr />
 <hr /></div>
     </div>
@@ -952,26 +1166,40 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>A2.1 Comprehensive Review</h3>
-      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+    <section id="activity-8" class="section"><div class="card"><h3>Fix the Case Errors</h3>
+      <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/24</span></div>
+      <div id="activity-8-container" class="error-correction-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>All Corrected!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Case Mastery Sentences</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container" class="order-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-10')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-10" class="section"><div class="card"><h3>A2.1 Comprehensive Review</h3>
+      <div class="score-display"><span class="score"><span id="activity-10-score">0</span>/12</span></div>
+      <div id="activity-10-container"></div>
+      <div class="completion-message" id="activity-10-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-10')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (0)</h3>
+        <h3>Словник (20)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
     <th>Слово</th>
     
-    
+    <th>IPA</th>
     <th>Переклад</th>
-    
+    <th>Примітка</th>
   </tr></thead>
-            <tbody></tbody>
+            <tbody><tr><td class="vocab-uk">відмінок</td><td class="vocab-ipa">/widˈminok/</td><td class="vocab-en">grammatical case</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">давальний</td><td class="vocab-ipa">/daˈwalʲnɪj/</td><td class="vocab-en">dative</td><td class="vocab-note">case name</td></tr><tr><td class="vocab-uk">орудний</td><td class="vocab-ipa">/oˈrudnɪj/</td><td class="vocab-en">instrumental</td><td class="vocab-note">case name</td></tr><tr><td class="vocab-uk">закінчення</td><td class="vocab-ipa">/zaˈkintʃɛnʲːa/</td><td class="vocab-en">ending</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">допомагати</td><td class="vocab-ipa">/dopomaˈɦatɪ/</td><td class="vocab-en">to help</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">дякувати</td><td class="vocab-ipa">/dʲaˈkuwatɪ/</td><td class="vocab-en">to thank</td><td class="vocab-note">+ dat</td></tr><tr><td class="vocab-uk">стати</td><td class="vocab-ipa">/ˈstatɪ/</td><td class="vocab-en">to become</td><td class="vocab-note">+ inst</td></tr><tr><td class="vocab-uk">залишатися</td><td class="vocab-ipa">/zalɪˈʃatɪsʲa/</td><td class="vocab-en">to remain</td><td class="vocab-note">+ inst</td></tr><tr><td class="vocab-uk">з</td><td class="vocab-ipa">/z/</td><td class="vocab-en">with</td><td class="vocab-note">+ inst</td></tr><tr><td class="vocab-uk">зі</td><td class="vocab-ipa">/zi/</td><td class="vocab-en">with</td><td class="vocab-note">before мною</td></tr><tr><td class="vocab-uk">лікар</td><td class="vocab-ipa">/ˈlikar/</td><td class="vocab-en">doctor</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вчитель</td><td class="vocab-ipa">/wˈtʃɪtelʲ/</td><td class="vocab-en">teacher</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">рахунок</td><td class="vocab-ipa">/raˈxunok/</td><td class="vocab-en">account</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">картка</td><td class="vocab-ipa">/ˈkartka/</td><td class="vocab-en">card</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">гроші</td><td class="vocab-ipa">/ˈɦroʃi/</td><td class="vocab-en">money</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посилка</td><td class="vocab-ipa">/poˈsɪlka/</td><td class="vocab-en">package</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">марка</td><td class="vocab-ipa">/ˈmarka/</td><td class="vocab-en">stamp</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">переказ</td><td class="vocab-ipa">/pɛrɛˈkaz/</td><td class="vocab-en">transfer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">валюта</td><td class="vocab-ipa">/waˈlʲuta/</td><td class="vocab-en">currency</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">курс</td><td class="vocab-ipa">/kurs/</td><td class="vocab-en">rate</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -983,8 +1211,8 @@ footer {
   </main><footer>Module 10 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Mixed Case Practice","data":{"type":"fill-blank","items":[{"prompt":"Я даю книгу ___ (брат).","answer":"братові","hints":["брат"]},{"prompt":"Вона йде з ___ (подруга).","answer":"подругою","hints":["подруга"]},{"prompt":"Він пише ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Допоможи ___ (мама)!","answer":"мамі","hints":["мама"]},{"prompt":"Вона стала ___ (лікарка).","answer":"лікаркою","hints":["лікарка"]},{"prompt":"Дякую ___ (ви) за допомогу.","answer":"вам","hints":["ви"]},{"prompt":"Ми їдемо ___ (поїзд).","answer":"поїздом","hints":["поїзд"]},{"prompt":"Я хочу відправити ___ (лист).","answer":"листа","hints":["лист"]},{"prompt":"Він працює ___ (інженер).","answer":"інженером","hints":["інженер"]},{"prompt":"Це належить ___ (вона).","answer":"їй","hints":["вона"]},{"prompt":"Я живу з ___ (батьки).","answer":"батьками","hints":["батьки"]},{"prompt":"Він залишається моїм ___ (друг).","answer":"другом","hints":["друг"]}]}},{"id":"activity-1","type":"match-up","title":"Case to Function","data":{"type":"match-up","pairs":[{"left":"Dative","right":"recipient"},{"left":"Instrumental with з","right":"accompaniment"},{"left":"Instrumental without prep","right":"tool"},{"left":"Instrumental with бути","right":"profession"},{"left":"Dative with дякувати","right":"thanking"},{"left":"Dative with допомагати","right":"helping"},{"left":"Instrumental with їхати","right":"transportation"},{"left":"Dative impersonal","right":"мені холодно"},{"left":"Instrumental with стати","right":"becoming"},{"left":"Dative with давати","right":"giving to"},{"left":"Instrumental with з","right":"з братом"},{"left":"Dative with належати","right":"belonging to"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["братові","даю","Я","книгу","нову","цікаву","молодшому","своєму"],"answer":"Я даю своєму молодшому братові нову цікаву книгу.","translation":"I give my younger brother a new interesting book."},{"words":["подругою","з","йде","Вона","найкращою","своєю","в","кіно"],"answer":"Вона йде з своєю найкращою подругою в кіно.","translation":"She's going with her best friend to the cinema."},{"words":["ручкою","синьою","пише","Він","новою","листа","своєю","довгого"],"answer":"Він пише довгого листа своєю новою синьою ручкою.","translation":"He writes a long letter with his new blue pen."},{"words":["мамі","старенькій","Допоможи","будь","ласка","нашій","дорогій","любій"],"answer":"Допоможи, будь ласка, нашій дорогій любій старенькій мамі.","translation":"Please help our dear beloved elderly mom."},{"words":["лікаркою","чудовою","стала","Вона","відомою","у","нашому","місті"],"answer":"Вона стала відомою чудовою лікаркою у нашому місті.","translation":"She became a famous wonderful doctor in our city."},{"words":["вам","щиру","допомогу","за","Дякую","дуже","вашу","велику"],"answer":"Дякую вам дуже за вашу велику щиру допомогу.","translation":"Thank you very much for your great sincere help."},{"words":["поїздом","швидким","їдемо","Ми","нічним","до","Львова","сьогодні"],"answer":"Ми сьогодні їдемо до Львова швидким нічним поїздом.","translation":"We're going to Lviv today by fast night train."},{"words":["листа","хочу","відправити","Я","важливого","сьогодні","до","Німеччини"],"answer":"Я хочу відправити важливого листа до Німеччини сьогодні.","translation":"I want to send an important letter to Germany today."},{"words":["інженером","досвідченим","працює","Він","у","великій","компанії","провідним"],"answer":"Він працює провідним досвідченим інженером у великій компанії.","translation":"He works as a leading experienced engineer at a big company."},{"words":["їй","належить","Це","все","тут","тільки","одній","давно"],"answer":"Це все тут давно належить тільки їй одній.","translation":"All this here has long belonged only to her."},{"words":["батьками","з","живу","Я","своїми","у","квартирі","великій"],"answer":"Я живу з своїми батьками у великій квартирі.","translation":"I live with my parents in a big apartment."},{"words":["другом","моїм","залишається","Він","найкращим","протягом","багатьох","років"],"answer":"Він залишається моїм найкращим другом протягом багатьох років.","translation":"He remains my best friend for many years."}]}},{"id":"activity-3","type":"quiz","title":"Comprehensive Case Review","data":{"type":"quiz","questions":[{"question":"Which case does \"допомагати\" require?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"З братом\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Він пише ручкою\" — why instrumental?","options":["Accompaniment","Tool/means","Profession","Location"],"correctIndex":1,"explanation":""},{"question":"\"Він став лікарем\" — why instrumental?","options":["Tool","Accompaniment","Becoming/profession","Location"],"correctIndex":2,"explanation":""},{"question":"\"Мені холодно\" — why dative?","options":["Impersonal expression","Direct object","Tool","Location"],"correctIndex":0,"explanation":""},{"question":"Which verb takes dative + accusative?","options":["допомагати","давати","належати","вірити"],"correctIndex":1,"explanation":""},{"question":"\"Їхати поїздом\" — no preposition because:","options":["Accompaniment","Means of transportation","It's an exception","Location"],"correctIndex":1,"explanation":""},{"question":"\"Завдяки тобі\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"work as a doctor\"?","options":["працювати лікар","працювати з лікарем","працювати лікарем","працювати лікарю"],"correctIndex":2,"explanation":""},{"question":"\"Вона залишається подругою\" — why instrumental?","options":["Tool","Accompaniment","State/remaining as","Location"],"correctIndex":2,"explanation":""},{"question":"What case does \"шкодити\" require?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"З України\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Phase A2.1 Review","data":{"type":"true-false","statements":[{"statement":"Dative pronouns end in -ові for masculine.","isTrue":false,"explanation":""},{"statement":"\"Дякувати\" requires dative case.","isTrue":true,"explanation":""},{"statement":"Instrumental with \"з\" expresses accompaniment.","isTrue":true,"explanation":""},{"statement":"Instrumental without preposition expresses tools.","isTrue":true,"explanation":""},{"statement":"\"Бути\" takes instrumental only in present tense.","isTrue":false,"explanation":""},{"statement":"\"Стати\" means \"to stay.\"","isTrue":false,"explanation":""},{"statement":"Transportation uses bare instrumental.","isTrue":true,"explanation":""},{"statement":"\"Належати\" requires dative case.","isTrue":true,"explanation":""},{"statement":"Feminine instrumental ending is -ою/-ею.","isTrue":true,"explanation":""},{"statement":"\"Завдяки\" takes genitive case.","isTrue":false,"explanation":""},{"statement":"\"Рахунок\" means bank account.","isTrue":true,"explanation":""},{"statement":"\"Посилка\" is something you send at the bank.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Dative vs Instrumental","data":{"type":"group-sort","groups":[{"id":"dative","name":"Dative","items":["допомагати + ___","дякувати + ___","давати + ___ + книгу","мені холодно","належати + ___","вірити + ___"]},{"id":"instrumental","name":"Instrumental","items":["з братом","писати ручкою","їхати поїздом","стати лікарем","працювати інженером","з друзями"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Phase A2.1 Vocabulary Review","data":{"type":"fill-blank","items":[{"prompt":"Я ___ мамі готувати вечерю. (help)","answer":"допомагаю"},{"prompt":"Дякую ___ за допомогу. (you - formal)","answer":"вам"},{"prompt":"Вона працює ___ у лікарні. (doctor)","answer":"лікаркою"},{"prompt":"Ми їдемо до Львова ___. (train)","answer":"поїздом"},{"prompt":"Я хочу ___ листа за кордон. (send)","answer":"відправити"},{"prompt":"Який ___ долара сьогодні? (rate)","answer":"курс"},{"prompt":"Кава ___ цукру, будь ласка. (without)","answer":"без"},{"prompt":"Він ___ вчителем після університету. (became)","answer":"став"},{"prompt":"Вона живе ___ батьками. (with)","answer":"з"},{"prompt":"Це ___ моїй сестрі. (belongs)","answer":"належить"},{"prompt":"Мені ___ зняти гроші. (need)","answer":"потрібно"},{"prompt":"Він ___ моїм найкращим другом. (remains)","answer":"залишається"}]}},{"id":"activity-7","type":"select","title":"Case Identification Challenge","data":{"type":"select","items":[{"question":"**Брат** читає книгу.","options":[{"text":"Nominative","correct":true},{"text":"Genitive","correct":false},{"text":"Accusative","correct":false},{"text":"Dative","correct":false}]},{"question":"Це машина **тата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Дай книгу **сестрі**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false}]},{"question":"Я бачу **брата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":true}]},{"question":"Вона пише **ручкою**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Він у **магазині**.","options":[{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false},{"text":"Locative","correct":true},{"text":"Genitive","correct":false}]},{"question":"**Мамо**, йди сюди!","options":[{"text":"Nominative","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Vocative","correct":true}]},{"question":"Кава без **цукру**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Допоможи **мені**.","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Йду з **другом**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Слава **Україні**!","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Locative","correct":false}]},{"question":"Він став **лікарем**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"A2.1 Comprehensive Review","data":{"type":"quiz","questions":[{"question":"Dative pronouns are used with:","options":["Tools and means","Verbs like допомагати, дякувати","Location","Direct address"],"correctIndex":1,"explanation":""},{"question":"\"Він працює лікарем\" — why instrumental?","options":["Tool","Accompaniment","Profession","Location"],"correctIndex":2,"explanation":""},{"question":"\"З\" meaning \"with\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Мені холодно\" uses dative because:","options":["Direct object","Impersonal expression","Tool","Location"],"correctIndex":1,"explanation":""},{"question":"The instrumental plural ending is:","options":["-ів/-їв","-ам/-ям","-ами/-ями","-ах/-ях"],"correctIndex":2,"explanation":""},{"question":"\"Стати\" + instrumental expresses:","options":["Becoming","Remaining","Working with","Being located"],"correctIndex":0,"explanation":""},{"question":"\"Без\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"Direction vs. location: direction uses:","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"\"Рахунок\" at the bank means:","options":["Account","Bill","Rate","Transfer"],"correctIndex":0,"explanation":""},{"question":"\"Готівка\" means:","options":["Cash","Card","Account","Transfer"],"correctIndex":0,"explanation":""},{"question":"\"Залишатися\" + instrumental means:","options":["To become","To remain","To work","To seem"],"correctIndex":1,"explanation":""},{"question":"Which case is for tools without preposition?","options":["Dative","Accusative","Instrumental","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
-    const vocabData = [];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Mixed Case Practice","data":{"type":"fill-blank","items":[{"prompt":"Я даю книгу ___ (брат).","answer":"братові","hints":["брат"]},{"prompt":"Вона йде з ___ (подруга).","answer":"подругою","hints":["подруга"]},{"prompt":"Він пише ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Допоможи ___ (мама)!","answer":"мамі","hints":["мама"]},{"prompt":"Вона стала ___ (лікарка).","answer":"лікаркою","hints":["лікарка"]},{"prompt":"Дякую ___ (ви) за допомогу.","answer":"вам","hints":["ви"]},{"prompt":"Ми їдемо ___ (поїзд).","answer":"поїздом","hints":["поїзд"]},{"prompt":"Я хочу відправити ___ (лист).","answer":"листа","hints":["лист"]},{"prompt":"Він працює ___ (інженер).","answer":"інженером","hints":["інженер"]},{"prompt":"Це належить ___ (вона).","answer":"їй","hints":["вона"]},{"prompt":"Я живу з ___ (батьки).","answer":"батьками","hints":["батьки"]},{"prompt":"Він залишається моїм ___ (друг).","answer":"другом","hints":["друг"]}]}},{"id":"activity-1","type":"match-up","title":"Case to Function","data":{"type":"match-up","pairs":[{"left":"Dative","right":"recipient"},{"left":"Instrumental with з","right":"accompaniment"},{"left":"Instrumental without prep","right":"tool"},{"left":"Instrumental with бути","right":"profession"},{"left":"Dative with дякувати","right":"thanking"},{"left":"Dative with допомагати","right":"helping"},{"left":"Instrumental with їхати","right":"transportation"},{"left":"Dative impersonal","right":"мені холодно"},{"left":"Instrumental with стати","right":"becoming"},{"left":"Dative with давати","right":"giving to"},{"left":"Instrumental with з","right":"з братом"},{"left":"Dative with належати","right":"belonging to"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["братові","даю","Я","книгу","нову","цікаву","молодшому","своєму"],"answer":"Я даю своєму молодшому братові нову цікаву книгу.","translation":"I give my younger brother a new interesting book."},{"words":["подругою","з","йде","Вона","найкращою","своєю","в","кіно"],"answer":"Вона йде з своєю найкращою подругою в кіно.","translation":"She's going with her best friend to the cinema."},{"words":["ручкою","синьою","пише","Він","новою","листа","своєю","довгого"],"answer":"Він пише довгого листа своєю новою синьою ручкою.","translation":"He writes a long letter with his new blue pen."},{"words":["мамі","старенькій","Допоможи","будь","ласка","нашій","дорогій","любій"],"answer":"Допоможи, будь ласка, нашій дорогій любій старенькій мамі.","translation":"Please help our dear beloved elderly mom."},{"words":["лікаркою","чудовою","стала","Вона","відомою","у","нашому","місті"],"answer":"Вона стала відомою чудовою лікаркою у нашому місті.","translation":"She became a famous wonderful doctor in our city."},{"words":["вам","щиру","допомогу","за","Дякую","дуже","вашу","велику"],"answer":"Дякую вам дуже за вашу велику щиру допомогу.","translation":"Thank you very much for your great sincere help."},{"words":["поїздом","швидким","їдемо","Ми","нічним","до","Львова","сьогодні"],"answer":"Ми сьогодні їдемо до Львова швидким нічним поїздом.","translation":"We're going to Lviv today by fast night train."},{"words":["листа","хочу","відправити","Я","важливого","сьогодні","до","Німеччини"],"answer":"Я хочу відправити важливого листа до Німеччини сьогодні.","translation":"I want to send an important letter to Germany today."},{"words":["інженером","досвідченим","працює","Він","у","великій","компанії","провідним"],"answer":"Він працює провідним досвідченим інженером у великій компанії.","translation":"He works as a leading experienced engineer at a big company."},{"words":["їй","належить","Це","все","тут","тільки","одній","давно"],"answer":"Це все тут давно належить тільки їй одній.","translation":"All this here has long belonged only to her."},{"words":["батьками","з","живу","Я","своїми","у","квартирі","великій"],"answer":"Я живу з своїми батьками у великій квартирі.","translation":"I live with my parents in a big apartment."},{"words":["другом","моїм","залишається","Він","найкращим","протягом","багатьох","років"],"answer":"Він залишається моїм найкращим другом протягом багатьох років.","translation":"He remains my best friend for many years."}]}},{"id":"activity-3","type":"quiz","title":"Comprehensive Case Review","data":{"type":"quiz","questions":[{"question":"Which case does \"допомагати\" require?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"З братом\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Він пише ручкою\" — why instrumental?","options":["Accompaniment","Tool/means","Profession","Location"],"correctIndex":1,"explanation":""},{"question":"\"Він став лікарем\" — why instrumental?","options":["Tool","Accompaniment","Becoming/profession","Location"],"correctIndex":2,"explanation":""},{"question":"\"Мені холодно\" — why dative?","options":["Impersonal expression","Direct object","Tool","Location"],"correctIndex":0,"explanation":""},{"question":"Which verb takes dative + accusative?","options":["допомагати","давати","належати","вірити"],"correctIndex":1,"explanation":""},{"question":"\"Їхати поїздом\" — no preposition because:","options":["Accompaniment","Means of transportation","It's an exception","Location"],"correctIndex":1,"explanation":""},{"question":"\"Завдяки тобі\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"work as a doctor\"?","options":["працювати лікар","працювати з лікарем","працювати лікарем","працювати лікарю"],"correctIndex":2,"explanation":""},{"question":"\"Вона залишається подругою\" — why instrumental?","options":["Tool","Accompaniment","State/remaining as","Location"],"correctIndex":2,"explanation":""},{"question":"What case does \"шкодити\" require?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"З України\" uses which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Phase A2.1 Review","data":{"type":"true-false","statements":[{"statement":"Dative pronouns end in -ові for masculine.","isTrue":false,"explanation":""},{"statement":"\"Дякувати\" requires dative case.","isTrue":true,"explanation":""},{"statement":"Instrumental with \"з\" expresses accompaniment.","isTrue":true,"explanation":""},{"statement":"Instrumental without preposition expresses tools.","isTrue":true,"explanation":""},{"statement":"\"Бути\" takes instrumental only in present tense.","isTrue":false,"explanation":""},{"statement":"\"Стати\" means \"to stay.\"","isTrue":false,"explanation":""},{"statement":"Transportation uses bare instrumental.","isTrue":true,"explanation":""},{"statement":"\"Належати\" requires dative case.","isTrue":true,"explanation":""},{"statement":"Feminine instrumental ending is -ою/-ею.","isTrue":true,"explanation":""},{"statement":"\"Завдяки\" takes genitive case.","isTrue":false,"explanation":""},{"statement":"\"Рахунок\" means bank account.","isTrue":true,"explanation":""},{"statement":"\"Посилка\" is something you send at the bank.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Dative vs Instrumental","data":{"type":"group-sort","groups":[{"id":"dative","name":"Dative","items":["допомагати + ___","дякувати + ___","давати + ___ + книгу","мені холодно","належати + ___","вірити + ___"]},{"id":"instrumental","name":"Instrumental","items":["з братом","писати ручкою","їхати поїздом","стати лікарем","працювати інженером","з друзями"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Phase A2.1 Vocabulary Review","data":{"type":"fill-blank","items":[{"prompt":"Я ___ мамі готувати вечерю. (help)","answer":"допомагаю"},{"prompt":"Дякую ___ за допомогу. (you - formal)","answer":"вам"},{"prompt":"Вона працює ___ у лікарні. (doctor)","answer":"лікаркою"},{"prompt":"Ми їдемо до Львова ___. (train)","answer":"поїздом"},{"prompt":"Я хочу ___ листа за кордон. (send)","answer":"відправити"},{"prompt":"Який ___ долара сьогодні? (rate)","answer":"курс"},{"prompt":"Кава ___ цукру, будь ласка. (without)","answer":"без"},{"prompt":"Він ___ вчителем після університету. (became)","answer":"став"},{"prompt":"Вона живе ___ батьками. (with)","answer":"з"},{"prompt":"Це ___ моїй сестрі. (belongs)","answer":"належить"},{"prompt":"Мені ___ зняти гроші. (need)","answer":"потрібно"},{"prompt":"Він ___ моїм найкращим другом. (remains)","answer":"залишається"}]}},{"id":"activity-7","type":"select","title":"Case Identification Challenge","data":{"type":"select","items":[{"question":"**Брат** читає книгу.","options":[{"text":"Nominative","correct":true},{"text":"Genitive","correct":false},{"text":"Accusative","correct":false},{"text":"Dative","correct":false}]},{"question":"Це машина **тата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Дай книгу **сестрі**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false}]},{"question":"Я бачу **брата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":true}]},{"question":"Вона пише **ручкою**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Він у **магазині**.","options":[{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false},{"text":"Locative","correct":true},{"text":"Genitive","correct":false}]},{"question":"**Мамо**, йди сюди!","options":[{"text":"Nominative","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Vocative","correct":true}]},{"question":"Кава без **цукру**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Допоможи **мені**.","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Йду з **другом**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Слава **Україні**!","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Locative","correct":false}]},{"question":"Він став **лікарем**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]}]}},{"id":"activity-8","type":"error-correction","title":"Fix the Case Errors","data":{"type":"error-correction","items":[{"sentence":"Я допомагаю братом готувати вечерю.","errorWord":"братом","correctForm":"братові","options":["братом","братові","брат","брата"],"explanation":"допомагати requires dative: братові"},{"sentence":"Вона йде з подруга до магазину.","errorWord":"подруга","correctForm":"подругою","options":["подруга","подругою","подрузі","подругу"],"explanation":"з requires instrumental: з подругою"},{"sentence":"Він пише з ручкою листа мамі.","errorWord":"ручкою","correctForm":"ручкою","options":["з ручкою","ручкою","ручку","ручка"],"explanation":"Tool = bare instrumental, no preposition (remove \"з\")"},{"sentence":"Дякую тобою за допомогу!","errorWord":"тобою","correctForm":"тобі","options":["тобою","тобі","тебе","ти"],"explanation":"дякувати requires dative: тобі"},{"sentence":"Вона стала вчителька після університету.","errorWord":"вчителька","correctForm":"вчителькою","options":["вчителька","вчителькою","вчительці","вчительку"],"explanation":"стати requires instrumental"},{"sentence":"Ми їдемо до Києва з поїздом.","errorWord":"поїздом","correctForm":"поїздом","options":["з поїздом","поїздом","поїзд","поїзда"],"explanation":"Means of transport = bare instrumental (remove \"з\")"},{"sentence":"Це належить моя сестра.","errorWord":"сестра","correctForm":"моїй сестрі","options":["моя сестра","моїй сестрі","мою сестру","моєї сестри"],"explanation":"належати requires dative"},{"sentence":"Він був лікар у цій лікарні.","errorWord":"лікар","correctForm":"лікарем","options":["лікар","лікарем","лікаря","лікарю"],"explanation":"бути in past tense requires instrumental"},{"sentence":"Я вірю його.","errorWord":"його","correctForm":"йому","options":["його","йому","ним","він"],"explanation":"вірити requires dative for people"},{"sentence":"Вона пішла з друг на концерт.","errorWord":"друг","correctForm":"другом","options":["друг","другом","другу","друга"],"explanation":"з requires instrumental"},{"sentence":"Мені подобається працювати вчитель.","errorWord":"вчитель","correctForm":"вчителем","options":["вчитель","вчителем","вчителя","вчителю"],"explanation":"працювати + profession requires instrumental"},{"sentence":"Покажи братом нову книгу.","errorWord":"братом","correctForm":"братові","options":["братом","братові","брат","брата"],"explanation":"показувати requires dative for recipient"}]}},{"id":"activity-9","type":"unjumble","title":"Case Mastery Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["допомагаю","Я","мамі","готувати","сьогодні","вечерю","смачну","вдома"],"answer":"Я допомагаю мамі готувати смачну вечерю сьогодні вдома.","translation":"I help mom cook a tasty dinner at home today."},{"words":["з","Вона","подругою","йде","найкращою","в","своєю","кіно"],"answer":"Вона йде в кіно з своєю найкращою подругою.","translation":"She goes to the cinema with her best friend."},{"words":["ручкою","Він","синьою","пише","новою","лист","своєю","довгий"],"answer":"Він пише довгий лист своєю новою синьою ручкою.","translation":"He writes a long letter with his new blue pen."},{"words":["лікаркою","стала","Вона","відомою","після","університету","чудовою","нашого"],"answer":"Вона стала відомою чудовою лікаркою після нашого університету.","translation":"She became a famous wonderful doctor after our university."},{"words":["поїздом","Ми","до","їдемо","швидким","Львова","нічним","сьогодні"],"answer":"Ми сьогодні їдемо до Львова швидким нічним поїздом.","translation":"We're going to Lviv today by fast night train."},{"words":["належить","Ця","моїй","квартира","старшій","тепер","сестрі","велика"],"answer":"Ця велика квартира тепер належить моїй старшій сестрі.","translation":"This big apartment now belongs to my older sister."},{"words":["вчителем","Він","став","після","досвідченим","років","багатьох","роботи"],"answer":"Він став досвідченим вчителем після багатьох років роботи.","translation":"He became an experienced teacher after many years of work."},{"words":["дякую","Я","за","тобі","твою","дуже","велику","допомогу"],"answer":"Я дуже дякую тобі за твою велику допомогу.","translation":"I thank you very much for your great help."},{"words":["живе","Вона","батьками","з","у","своїми","великій","квартирі"],"answer":"Вона живе з своїми батьками у великій квартирі.","translation":"She lives with her parents in a big apartment."},{"words":["залишається","Він","моїм","другом","найкращим","протягом","років","багатьох"],"answer":"Він залишається моїм найкращим другом протягом багатьох років.","translation":"He remains my best friend for many years."},{"words":["працює","Вона","у","лікаркою","нашій","головною","великій","лікарні"],"answer":"Вона працює головною лікаркою у нашій великій лікарні.","translation":"She works as the head doctor at our big hospital."},{"words":["відправив","Я","листа","важливого","своєму","до","партнеру","Німеччини"],"answer":"Я відправив важливого листа своєму партнеру до Німеччини.","translation":"I sent an important letter to my partner to Germany."}]}},{"id":"activity-10","type":"quiz","title":"A2.1 Comprehensive Review","data":{"type":"quiz","questions":[{"question":"Dative pronouns are used with:","options":["Tools and means","Verbs like допомагати, дякувати","Location","Direct address"],"correctIndex":1,"explanation":""},{"question":"\"Він працює лікарем\" — why instrumental?","options":["Tool","Accompaniment","Profession","Location"],"correctIndex":2,"explanation":""},{"question":"\"З\" meaning \"with\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"\"Мені холодно\" uses dative because:","options":["Direct object","Impersonal expression","Tool","Location"],"correctIndex":1,"explanation":""},{"question":"The instrumental plural ending is:","options":["-ів/-їв","-ам/-ям","-ами/-ями","-ах/-ях"],"correctIndex":2,"explanation":""},{"question":"\"Стати\" + instrumental expresses:","options":["Becoming","Remaining","Working with","Being located"],"correctIndex":0,"explanation":""},{"question":"\"Без\" takes:","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":0,"explanation":""},{"question":"Direction vs. location: direction uses:","options":["Genitive","Dative","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"\"Рахунок\" at the bank means:","options":["Account","Bill","Rate","Transfer"],"correctIndex":0,"explanation":""},{"question":"\"Готівка\" means:","options":["Cash","Card","Account","Transfer"],"correctIndex":0,"explanation":""},{"question":"\"Залишатися\" + instrumental means:","options":["To become","To remain","To work","To seem"],"correctIndex":1,"explanation":""},{"question":"Which case is for tools without preposition?","options":["Dative","Accusative","Instrumental","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"відмінок","translit":"","en":"grammatical case","note":""},{"uk":"давальний","translit":"","en":"dative","note":"case name"},{"uk":"орудний","translit":"","en":"instrumental","note":"case name"},{"uk":"закінчення","translit":"","en":"ending","note":""},{"uk":"допомагати","translit":"","en":"to help","note":"+ dat"},{"uk":"дякувати","translit":"","en":"to thank","note":"+ dat"},{"uk":"стати","translit":"","en":"to become","note":"+ inst"},{"uk":"залишатися","translit":"","en":"to remain","note":"+ inst"},{"uk":"з","translit":"","en":"with","note":"+ inst"},{"uk":"зі","translit":"","en":"with","note":"before мною"},{"uk":"лікар","translit":"","en":"doctor","note":""},{"uk":"вчитель","translit":"","en":"teacher","note":""},{"uk":"рахунок","translit":"","en":"account","note":""},{"uk":"картка","translit":"","en":"card","note":""},{"uk":"гроші","translit":"","en":"money","note":""},{"uk":"посилка","translit":"","en":"package","note":""},{"uk":"марка","translit":"","en":"stamp","note":""},{"uk":"переказ","translit":"","en":"transfer","note":""},{"uk":"валюта","translit":"","en":"currency","note":""},{"uk":"курс","translit":"","en":"rate","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -2308,6 +2536,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

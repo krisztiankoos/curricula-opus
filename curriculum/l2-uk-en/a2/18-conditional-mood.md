@@ -533,33 +533,57 @@ The conditional makes requests softer and more polite:
     > [!answer] приїхали
     > (They would come.)
 
-## order: Conditional Conversations
+## unjumble: Conditional Sentences
 
-> Arrange these phrases in logical conversation order.
+> Rearrange the words to form correct conditional sentences.
 
-1. Я б вибрав море → Куди б ти поїхав? → Чому? → Бо люблю плавати
-   > [!answer] Куди б ти поїхав? → Я б вибрав море → Чому? → Бо люблю плавати
-   > (Where would you go? → I would choose the sea → Why? → Because I love swimming)
+1. би | поїхав | я | на | море | якби | мав | час
+   > [!answer] Якби я мав час, я би поїхав на море.
+   > (If I had time, I would go to the sea.)
 
-2. Якби я мав гроші → Що б ти купив? → Купив би машину → Яку?
-   > [!answer] Якби я мав гроші → Що б ти купив? → Купив би машину → Яку?
-   > (If I had money → What would you buy? → Would buy a car → Which one?)
+2. купив | би | він | машину | нову | якби | мав | гроші
+   > [!answer] Якби він мав гроші, він би купив нову машину.
+   > (If he had money, he would buy a new car.)
 
-3. Було б чудово! → Хочеш піти в кіно? → Так, я б хотів → О котрій?
-   > [!answer] Хочеш піти в кіно? → Так, я б хотів → О котрій? → Було б чудово!
-   > (Want to go to cinema? → Yes, I would like → At what time? → It would be wonderful!)
+3. б | хотіла | вона | жити | у | Києві
+   > [!answer] Вона б хотіла жити у Києві.
+   > (She would like to live in Kyiv.)
 
-4. Якби знала, сказала б → Ти знаєш де він? → Ні, не знаю → Шкода
-   > [!answer] Ти знаєш де він? → Ні, не знаю → Якби знала, сказала б → Шкода
-   > (Do you know where he is? → No, I don't → If I knew, I would tell → Too bad)
+4. міг | ти | би | допомогти | мені
+   > [!answer] Ти би міг допомогти мені?
+   > (Could you help me?)
 
-5. Міг би ти допомогти? → Звичайно! → Дякую! → Що потрібно зробити?
-   > [!answer] Міг би ти допомогти? → Звичайно! → Що потрібно зробити? → Дякую!
-   > (Could you help? → Of course! → What needs to be done? → Thank you!)
+5. було | б | чудово | побачити | тебе
+   > [!answer] Було б чудово побачити тебе.
+   > (It would be wonderful to see you.)
 
-6. Я б радив почекати → Що ти радиш? → Чому? → Бо завтра буде краще
-   > [!answer] Що ти радиш? → Я б радив почекати → Чому? → Бо завтра буде краще
-   > (What do you advise? → I would advise to wait → Why? → Because tomorrow will be better)
+6. якби | знав | я | сказав | би | тобі
+   > [!answer] Якби я знав, я би сказав тобі.
+   > (If I knew, I would tell you.)
+
+7. ми | б | поїхали | разом | якби | могли
+   > [!answer] Ми б поїхали разом, якби могли.
+   > (We would go together if we could.)
+
+8. радив | би | я | почекати | трохи
+   > [!answer] Я би радив почекати трохи.
+   > (I would advise to wait a bit.)
+
+9. вони | б | прийшли | якби | знали | адресу
+   > [!answer] Вони б прийшли, якби знали адресу.
+   > (They would come if they knew the address.)
+
+10. краще | було | б | зробити | це | завтра
+    > [!answer] Було б краще зробити це завтра.
+    > (It would be better to do this tomorrow.)
+
+11. я | б | вибрав | інший | варіант
+    > [!answer] Я б вибрав інший варіант.
+    > (I would choose another option.)
+
+12. ти | б | хотів | піти | з | нами
+    > [!answer] Ти б хотів піти з нами?
+    > (Would you like to go with us?)
 
 ## quiz: Advanced Conditional Understanding
 

@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1069,11 +1110,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Emotional Intelligence</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Expressing Emotions</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Emotional Intelligence</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1100,7 +1148,7 @@ footer {
   </main><footer>Module 41 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Emotion Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Яка ___ бачити тебе! (joy)","answer":"радість"},{"prompt":"Відчуваю ___ перед іспитом. (anxiety)","answer":"тривогу"},{"prompt":"Вона дуже ___ людина. (kind)","answer":"добра"},{"prompt":"Не будь ___! (lazy)","answer":"лінивим"},{"prompt":"Мені ___. (sad)","answer":"сумно"},{"prompt":"___ за домом. (I miss)","answer":"Сумую"},{"prompt":"Він завжди ___. (honest)","answer":"чесний"},{"prompt":"___ — природна реакція. (Fear)","answer":"Страх"},{"prompt":"Я ___ результатом. (satisfied)","answer":"задоволений"},{"prompt":"Будь ___! (patient)","answer":"терплячим"},{"prompt":"___ робить нас сильнішими. (Love)","answer":"Любов"},{"prompt":"Не ___, все буде добре. (worry)","answer":"хвилюйся"}]}},{"id":"activity-1","type":"match-up","title":"Emotions and Traits","data":{"type":"match-up","pairs":[{"left":"радість","right":"joy"},{"left":"сум","right":"sadness"},{"left":"страх","right":"fear"},{"left":"гнів","right":"anger"},{"left":"добрий","right":"kind"},{"left":"чесний","right":"honest"},{"left":"сміливий","right":"brave"},{"left":"лінивий","right":"lazy"},{"left":"щастя","right":"happiness"},{"left":"любов","right":"love"},{"left":"тривога","right":"anxiety"},{"left":"терплячий","right":"patient"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Emotion Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Яка","велика","радість","бачити","тебе","знову","після","розлуки"],"answer":"Яка велика радість бачити тебе знову після розлуки!","translation":"What great joy to see you again after separation!"},{"words":["Мені","дуже","сумно","коли","я","думаю","про","це"],"answer":"Мені дуже сумно, коли я думаю про це.","translation":"I feel very sad when I think about this."},{"words":["Не","хвилюйся","все","буде","добре","я","обіцяю","тобі"],"answer":"Не хвилюйся, все буде добре, я обіцяю тобі.","translation":"Don't worry, everything will be fine, I promise you."},{"words":["Вона","дуже","добра","та","щира","людина","з","серцем"],"answer":"Вона дуже добра та щира людина з серцем.","translation":"She's a very kind and sincere person with heart."},{"words":["Будь","терплячим","та","все","вийде","як","треба","обов'язково"],"answer":"Будь терплячим, та все вийде як треба обов'язково.","translation":"Be patient and everything will work out as needed."},{"words":["Я","дуже","задоволений","цим","чудовим","результатом","своєї","роботи"],"answer":"Я дуже задоволений цим чудовим результатом своєї роботи.","translation":"I'm very satisfied with this wonderful result of my work."},{"words":["Я","боюся","темряви","тому","завжди","вмикаю","світло","вночі"],"answer":"Я боюся темряви, тому завжди вмикаю світло вночі.","translation":"I'm afraid of the dark, so I always turn on light at night."},{"words":["Я","дуже","сумую","за","рідним","домом","та","сім'єю"],"answer":"Я дуже сумую за рідним домом та сім'єю.","translation":"I really miss my native home and family."},{"words":["Він","завжди","чесний","з","друзями","та","рідними","людьми"],"answer":"Він завжди чесний з друзями та рідними людьми.","translation":"He's always honest with friends and close people."},{"words":["Не","будь","злим","це","нічого","не","вирішує","просто"],"answer":"Не будь злим, це нічого не вирішує, просто.","translation":"Don't be mean, it doesn't solve anything, simply."},{"words":["Яке","величезне","полегшення","нарешті","все","закінчилося","добре","сьогодні"],"answer":"Яке величезне полегшення, нарешті все закінчилося добре сьогодні!","translation":"What huge relief, finally everything ended well today!"},{"words":["Чому","ти","так","сильно","злишся","на","мене","сьогодні"],"answer":"Чому ти так сильно злишся на мене сьогодні?","translation":"Why are you so angry at me today?"}]}},{"id":"activity-3","type":"quiz","title":"Emotion Knowledge","data":{"type":"quiz","questions":[{"question":"«Радість» is:","options":["Joy","Sadness","Anger","Fear"],"correctIndex":0,"explanation":""},{"question":"«Добрий» means:","options":["Kind","Bad","Brave","Lazy"],"correctIndex":0,"explanation":""},{"question":"«Мені сумно» means:","options":["I feel sad","I feel happy","I feel angry","I feel tired"],"correctIndex":0,"explanation":""},{"question":"«Боятися» means:","options":["To fear","To love","To hate","To hope"],"correctIndex":0,"explanation":""},{"question":"«Лінивий» is:","options":["Lazy","Hardworking","Kind","Brave"],"correctIndex":0,"explanation":""},{"question":"«Тривога» is:","options":["Anxiety","Joy","Love","Anger"],"correctIndex":0,"explanation":""},{"question":"«Чесний» means:","options":["Honest","Dishonest","Lazy","Brave"],"correctIndex":0,"explanation":""},{"question":"«Хвилюватися» means:","options":["To worry","To rejoice","To sleep","To eat"],"correctIndex":0,"explanation":""},{"question":"«Щастя» is:","options":["Happiness","Sadness","Luck","Money"],"correctIndex":0,"explanation":""},{"question":"«Терплячий» is:","options":["Patient","Impatient","Lazy","Angry"],"correctIndex":0,"explanation":""},{"question":"«Задоволений» means:","options":["Satisfied","Dissatisfied","Hungry","Tired"],"correctIndex":0,"explanation":""},{"question":"«Сумувати» means:","options":["To be sad, miss","To be happy","To be angry","To be scared"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Emotion Facts","data":{"type":"true-false","statements":[{"statement":"«Радість» means joy.","isTrue":true,"explanation":"Correct! Positive emotion."},{"statement":"«Сум» is a positive emotion.","isTrue":false,"explanation":"Incorrect! Сум means sadness."},{"statement":"«Добрий» is a positive trait.","isTrue":true,"explanation":"Correct! It means kind."},{"statement":"«Лінивий» means hardworking.","isTrue":false,"explanation":"Incorrect! Лінивий means lazy."},{"statement":"«Мені сумно» uses dative case.","isTrue":true,"explanation":"Correct! Мені = to me."},{"statement":"«Боятися» means to love.","isTrue":false,"explanation":"Incorrect! It means to fear."},{"statement":"«Чесний» means honest.","isTrue":true,"explanation":"Correct! Positive trait."},{"statement":"«Тривога» is a positive feeling.","isTrue":false,"explanation":"Incorrect! It means anxiety."},{"statement":"«Терплячий» is a positive trait.","isTrue":true,"explanation":"Correct! It means patient."},{"statement":"«Злитися» means to be happy.","isTrue":false,"explanation":"Incorrect! It means to be angry."},{"statement":"«Надія» means hope.","isTrue":true,"explanation":"Correct! Positive emotion."},{"statement":"«Впертий» is always negative.","isTrue":false,"explanation":"Incorrect! Stubborn can sometimes be positive."}]}},{"id":"activity-5","type":"group-sort","title":"Trait Categories","data":{"type":"group-sort","groups":[{"id":"positive-traits","name":"Positive Traits","items":["добрий","чесний","сміливий"]},{"id":"negative-traits","name":"Negative Traits","items":["лінивий","егоїстичний","злий"]},{"id":"positive-emotions","name":"Positive Emotions","items":["радість","щастя","надія"]},{"id":"negative-emotions","name":"Negative Emotions","items":["страх","тривога","сум"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Personality Descriptions","data":{"type":"fill-blank","items":[{"prompt":"Моя бабуся дуже ___ людина, вона завжди допомагає іншим. (kind)","answer":"добра"},{"prompt":"Він занадто ___, ніколи не хоче працювати вдома. (lazy)","answer":"лінивий"},{"prompt":"Будь ___, результати будуть завтра вранці. (patient)","answer":"терплячим"},{"prompt":"Вона завжди ___ і ніколи не бреше людям. (honest)","answer":"чесна"},{"prompt":"Мій друг дуже ___, він не боїться нічого. (brave)","answer":"сміливий"},{"prompt":"Я ___ твоєму успіху, це чудова новина! (rejoice)","answer":"радію"},{"prompt":"Він дуже ___ до друзів і завжди ділиться. (generous)","answer":"щедрий"},{"prompt":"Вона ___ ситуацією і не знає що робити. (concerned)","answer":"стурбована"},{"prompt":"Не ___ через дрібниці, все буде добре! (worry)","answer":"хвилюйся"},{"prompt":"Він дуже ___ у собі і своїх здібностях. (confident)","answer":"впевнений"},{"prompt":"Мені ___ бачити твої успіхи в навчанні. (joyful)","answer":"радісно"},{"prompt":"Вона ___ новинами про скасування концерту вчора. (disappointed)","answer":"розчарована"}]}},{"id":"activity-7","type":"select","title":"Emotion or Trait?","data":{"type":"select","items":[{"question":"радість","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"добрий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"страх","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"чесний","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"тривога","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"лінивий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"щастя","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"сміливий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"гнів","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"терплячий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"надія","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"впертий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Emotional Intelligence","data":{"type":"quiz","questions":[{"question":"How do you say \"I feel sad\" using dative construction?","options":["Мені сумно.","Я сумний.","Мене сумно.","Сумно я."],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to worry\"?","options":["хвилюватися","радіти","сумувати","злитися"],"correctIndex":0,"explanation":""},{"question":"«Вона добра» means:","options":["She is kind.","She is bad.","She is brave.","She is lazy."],"correctIndex":0,"explanation":""},{"question":"Which is NOT a positive trait?","options":["егоїстичний","щедрий","чесний","терплячий"],"correctIndex":0,"explanation":""},{"question":"«Боятися темряви» means:","options":["To be afraid of darkness","To love darkness","To see darkness","To create darkness"],"correctIndex":0,"explanation":""},{"question":"How do you say \"Don't worry!\" as a command?","options":["Не хвилюйся!","Не хвилюватися!","Хвилюйся не!","Не хвилювати!"],"correctIndex":0,"explanation":""},{"question":"«Задоволений результатом» means:","options":["Satisfied with the result","Disappointed by the result","Surprised by the result","Confused by the result"],"correctIndex":0,"explanation":""},{"question":"Which emotion is «розчарування»?","options":["Disappointment","Joy","Love","Hope"],"correctIndex":0,"explanation":""},{"question":"«Сумувати за домом» means:","options":["To miss home","To hate home","To find home","To build home"],"correctIndex":0,"explanation":""},{"question":"Which word means \"reliable\"?","options":["надійний","лінивий","злий","боязкий"],"correctIndex":0,"explanation":""},{"question":"«Мені страшно» uses which case for «мені»?","options":["Dative","Accusative","Genitive","Instrumental"],"correctIndex":0,"explanation":""},{"question":"What does «оптимістичний» mean?","options":["Optimistic","Pessimistic","Realistic","Fantastic"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Emotion Vocabulary","data":{"type":"fill-blank","items":[{"prompt":"Яка ___ бачити тебе! (joy)","answer":"радість"},{"prompt":"Відчуваю ___ перед іспитом. (anxiety)","answer":"тривогу"},{"prompt":"Вона дуже ___ людина. (kind)","answer":"добра"},{"prompt":"Не будь ___! (lazy)","answer":"лінивим"},{"prompt":"Мені ___. (sad)","answer":"сумно"},{"prompt":"___ за домом. (I miss)","answer":"Сумую"},{"prompt":"Він завжди ___. (honest)","answer":"чесний"},{"prompt":"___ — природна реакція. (Fear)","answer":"Страх"},{"prompt":"Я ___ результатом. (satisfied)","answer":"задоволений"},{"prompt":"Будь ___! (patient)","answer":"терплячим"},{"prompt":"___ робить нас сильнішими. (Love)","answer":"Любов"},{"prompt":"Не ___, все буде добре. (worry)","answer":"хвилюйся"}]}},{"id":"activity-1","type":"match-up","title":"Emotions and Traits","data":{"type":"match-up","pairs":[{"left":"радість","right":"joy"},{"left":"сум","right":"sadness"},{"left":"страх","right":"fear"},{"left":"гнів","right":"anger"},{"left":"добрий","right":"kind"},{"left":"чесний","right":"honest"},{"left":"сміливий","right":"brave"},{"left":"лінивий","right":"lazy"},{"left":"щастя","right":"happiness"},{"left":"любов","right":"love"},{"left":"тривога","right":"anxiety"},{"left":"терплячий","right":"patient"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Emotion Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Яка","велика","радість","бачити","тебе","знову","після","розлуки"],"answer":"Яка велика радість бачити тебе знову після розлуки!","translation":"What great joy to see you again after separation!"},{"words":["Мені","дуже","сумно","коли","я","думаю","про","це"],"answer":"Мені дуже сумно, коли я думаю про це.","translation":"I feel very sad when I think about this."},{"words":["Не","хвилюйся","все","буде","добре","я","обіцяю","тобі"],"answer":"Не хвилюйся, все буде добре, я обіцяю тобі.","translation":"Don't worry, everything will be fine, I promise you."},{"words":["Вона","дуже","добра","та","щира","людина","з","серцем"],"answer":"Вона дуже добра та щира людина з серцем.","translation":"She's a very kind and sincere person with heart."},{"words":["Будь","терплячим","та","все","вийде","як","треба","обов'язково"],"answer":"Будь терплячим, та все вийде як треба обов'язково.","translation":"Be patient and everything will work out as needed."},{"words":["Я","дуже","задоволений","цим","чудовим","результатом","своєї","роботи"],"answer":"Я дуже задоволений цим чудовим результатом своєї роботи.","translation":"I'm very satisfied with this wonderful result of my work."},{"words":["Я","боюся","темряви","тому","завжди","вмикаю","світло","вночі"],"answer":"Я боюся темряви, тому завжди вмикаю світло вночі.","translation":"I'm afraid of the dark, so I always turn on light at night."},{"words":["Я","дуже","сумую","за","рідним","домом","та","сім'єю"],"answer":"Я дуже сумую за рідним домом та сім'єю.","translation":"I really miss my native home and family."},{"words":["Він","завжди","чесний","з","друзями","та","рідними","людьми"],"answer":"Він завжди чесний з друзями та рідними людьми.","translation":"He's always honest with friends and close people."},{"words":["Не","будь","злим","це","нічого","не","вирішує","просто"],"answer":"Не будь злим, це нічого не вирішує, просто.","translation":"Don't be mean, it doesn't solve anything, simply."},{"words":["Яке","величезне","полегшення","нарешті","все","закінчилося","добре","сьогодні"],"answer":"Яке величезне полегшення, нарешті все закінчилося добре сьогодні!","translation":"What huge relief, finally everything ended well today!"},{"words":["Чому","ти","так","сильно","злишся","на","мене","сьогодні"],"answer":"Чому ти так сильно злишся на мене сьогодні?","translation":"Why are you so angry at me today?"}]}},{"id":"activity-3","type":"quiz","title":"Emotion Knowledge","data":{"type":"quiz","questions":[{"question":"«Радість» is:","options":["Joy","Sadness","Anger","Fear"],"correctIndex":0,"explanation":""},{"question":"«Добрий» means:","options":["Kind","Bad","Brave","Lazy"],"correctIndex":0,"explanation":""},{"question":"«Мені сумно» means:","options":["I feel sad","I feel happy","I feel angry","I feel tired"],"correctIndex":0,"explanation":""},{"question":"«Боятися» means:","options":["To fear","To love","To hate","To hope"],"correctIndex":0,"explanation":""},{"question":"«Лінивий» is:","options":["Lazy","Hardworking","Kind","Brave"],"correctIndex":0,"explanation":""},{"question":"«Тривога» is:","options":["Anxiety","Joy","Love","Anger"],"correctIndex":0,"explanation":""},{"question":"«Чесний» means:","options":["Honest","Dishonest","Lazy","Brave"],"correctIndex":0,"explanation":""},{"question":"«Хвилюватися» means:","options":["To worry","To rejoice","To sleep","To eat"],"correctIndex":0,"explanation":""},{"question":"«Щастя» is:","options":["Happiness","Sadness","Luck","Money"],"correctIndex":0,"explanation":""},{"question":"«Терплячий» is:","options":["Patient","Impatient","Lazy","Angry"],"correctIndex":0,"explanation":""},{"question":"«Задоволений» means:","options":["Satisfied","Dissatisfied","Hungry","Tired"],"correctIndex":0,"explanation":""},{"question":"«Сумувати» means:","options":["To be sad, miss","To be happy","To be angry","To be scared"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Emotion Facts","data":{"type":"true-false","statements":[{"statement":"«Радість» means joy.","isTrue":true,"explanation":"Correct! Positive emotion."},{"statement":"«Сум» is a positive emotion.","isTrue":false,"explanation":"Incorrect! Сум means sadness."},{"statement":"«Добрий» is a positive trait.","isTrue":true,"explanation":"Correct! It means kind."},{"statement":"«Лінивий» means hardworking.","isTrue":false,"explanation":"Incorrect! Лінивий means lazy."},{"statement":"«Мені сумно» uses dative case.","isTrue":true,"explanation":"Correct! Мені = to me."},{"statement":"«Боятися» means to love.","isTrue":false,"explanation":"Incorrect! It means to fear."},{"statement":"«Чесний» means honest.","isTrue":true,"explanation":"Correct! Positive trait."},{"statement":"«Тривога» is a positive feeling.","isTrue":false,"explanation":"Incorrect! It means anxiety."},{"statement":"«Терплячий» is a positive trait.","isTrue":true,"explanation":"Correct! It means patient."},{"statement":"«Злитися» means to be happy.","isTrue":false,"explanation":"Incorrect! It means to be angry."},{"statement":"«Надія» means hope.","isTrue":true,"explanation":"Correct! Positive emotion."},{"statement":"«Впертий» is always negative.","isTrue":false,"explanation":"Incorrect! Stubborn can sometimes be positive."}]}},{"id":"activity-5","type":"group-sort","title":"Trait Categories","data":{"type":"group-sort","groups":[{"id":"positive-traits","name":"Positive Traits","items":["добрий","чесний","сміливий"]},{"id":"negative-traits","name":"Negative Traits","items":["лінивий","егоїстичний","злий"]},{"id":"positive-emotions","name":"Positive Emotions","items":["радість","щастя","надія"]},{"id":"negative-emotions","name":"Negative Emotions","items":["страх","тривога","сум"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Personality Descriptions","data":{"type":"fill-blank","items":[{"prompt":"Моя бабуся дуже ___ людина, вона завжди допомагає іншим. (kind)","answer":"добра"},{"prompt":"Він занадто ___, ніколи не хоче працювати вдома. (lazy)","answer":"лінивий"},{"prompt":"Будь ___, результати будуть завтра вранці. (patient)","answer":"терплячим"},{"prompt":"Вона завжди ___ і ніколи не бреше людям. (honest)","answer":"чесна"},{"prompt":"Мій друг дуже ___, він не боїться нічого. (brave)","answer":"сміливий"},{"prompt":"Я ___ твоєму успіху, це чудова новина! (rejoice)","answer":"радію"},{"prompt":"Він дуже ___ до друзів і завжди ділиться. (generous)","answer":"щедрий"},{"prompt":"Вона ___ ситуацією і не знає що робити. (concerned)","answer":"стурбована"},{"prompt":"Не ___ через дрібниці, все буде добре! (worry)","answer":"хвилюйся"},{"prompt":"Він дуже ___ у собі і своїх здібностях. (confident)","answer":"впевнений"},{"prompt":"Мені ___ бачити твої успіхи в навчанні. (joyful)","answer":"радісно"},{"prompt":"Вона ___ новинами про скасування концерту вчора. (disappointed)","answer":"розчарована"}]}},{"id":"activity-7","type":"select","title":"Emotion or Trait?","data":{"type":"select","items":[{"question":"радість","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"добрий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"страх","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"чесний","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"тривога","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"лінивий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"щастя","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"сміливий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"гнів","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"терплячий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]},{"question":"надія","options":[{"text":"Emotion","correct":true},{"text":"Personality trait","correct":false}]},{"question":"впертий","options":[{"text":"Emotion","correct":false},{"text":"Personality trait","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Expressing Emotions","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Мені","|","дуже","|","сумно","|","коли","|","друзі","|","далеко","|","від","|","мене"],"answer":"Мені дуже сумно, коли друзі далеко від мене.","translation":"I feel very sad when friends are far from me."},{"words":["Він","|","завжди","|","чесний","|","з","|","друзями","|","та","|","родиною"],"answer":"Він завжди чесний з друзями та родиною.","translation":"He is always honest with friends and family."},{"words":["Не","|","хвилюйся","|","все","|","буде","|","добре","|","я","|","обіцяю"],"answer":"Не хвилюйся, все буде добре, я обіцяю.","translation":"Don't worry, everything will be fine, I promise."},{"words":["Вона","|","дуже","|","добра","|","людина","|","і","|","допомагає","|","всім"],"answer":"Вона дуже добра людина і допомагає всім.","translation":"She is a very kind person and helps everyone."},{"words":["Я","|","боюся","|","темряви","|","тому","|","завжди","|","вмикаю","|","світло"],"answer":"Я боюся темряви, тому завжди вмикаю світло.","translation":"I'm afraid of the dark, so I always turn on the light."},{"words":["Будь","|","терплячим","|","та","|","все","|","вийде","|","як","|","треба"],"answer":"Будь терплячим, та все вийде як треба.","translation":"Be patient, and everything will work out as needed."},{"words":["Мій","|","брат","|","дуже","|","сміливий","|","він","|","нічого","|","не","|","боїться"],"answer":"Мій брат дуже сміливий, він нічого не боїться.","translation":"My brother is very brave, he's not afraid of anything."},{"words":["Я","|","радію","|","твоєму","|","успіху","|","це","|","чудові","|","новини"],"answer":"Я радію твоєму успіху, це чудові новини!","translation":"I rejoice at your success, this is wonderful news!"},{"words":["Вона","|","стурбована","|","ситуацією","|","і","|","не","|","знає","|","що","|","робити"],"answer":"Вона стурбована ситуацією і не знає, що робити.","translation":"She is concerned about the situation and doesn't know what to do."},{"words":["Він","|","занадто","|","лінивий","|","щоб","|","робити","|","домашнє","|","завдання"],"answer":"Він занадто лінивий, щоб робити домашнє завдання.","translation":"He is too lazy to do homework."},{"words":["Моя","|","бабуся","|","дуже","|","щедра","|","і","|","завжди","|","дарує","|","подарунки"],"answer":"Моя бабуся дуже щедра і завжди дарує подарунки.","translation":"My grandmother is very generous and always gives gifts."},{"words":["Чому","|","ти","|","так","|","злишся","|","на","|","мене","|","сьогодні"],"answer":"Чому ти так злишся на мене сьогодні?","translation":"Why are you so angry at me today?"}]}},{"id":"activity-9","type":"quiz","title":"Emotional Intelligence","data":{"type":"quiz","questions":[{"question":"How do you say \"I feel sad\" using dative construction?","options":["Мені сумно.","Я сумний.","Мене сумно.","Сумно я."],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to worry\"?","options":["хвилюватися","радіти","сумувати","злитися"],"correctIndex":0,"explanation":""},{"question":"«Вона добра» means:","options":["She is kind.","She is bad.","She is brave.","She is lazy."],"correctIndex":0,"explanation":""},{"question":"Which is NOT a positive trait?","options":["егоїстичний","щедрий","чесний","терплячий"],"correctIndex":0,"explanation":""},{"question":"«Боятися темряви» means:","options":["To be afraid of darkness","To love darkness","To see darkness","To create darkness"],"correctIndex":0,"explanation":""},{"question":"How do you say \"Don't worry!\" as a command?","options":["Не хвилюйся!","Не хвилюватися!","Хвилюйся не!","Не хвилювати!"],"correctIndex":0,"explanation":""},{"question":"«Задоволений результатом» means:","options":["Satisfied with the result","Disappointed by the result","Surprised by the result","Confused by the result"],"correctIndex":0,"explanation":""},{"question":"Which emotion is «розчарування»?","options":["Disappointment","Joy","Love","Hope"],"correctIndex":0,"explanation":""},{"question":"«Сумувати за домом» means:","options":["To miss home","To hate home","To find home","To build home"],"correctIndex":0,"explanation":""},{"question":"Which word means \"reliable\"?","options":["надійний","лінивий","злий","боязкий"],"correctIndex":0,"explanation":""},{"question":"«Мені страшно» uses which case for «мені»?","options":["Dative","Accusative","Genitive","Instrumental"],"correctIndex":0,"explanation":""},{"question":"What does «оптимістичний» mean?","options":["Optimistic","Pessimistic","Realistic","Fantastic"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"радість","translit":"","en":"joy","note":""},{"uk":"сум","translit":"","en":"sadness","note":""},{"uk":"гнів","translit":"","en":"anger","note":""},{"uk":"страх","translit":"","en":"fear","note":""},{"uk":"щастя","translit":"","en":"happiness","note":""},{"uk":"надія","translit":"","en":"hope","note":""},{"uk":"любов","translit":"","en":"love","note":""},{"uk":"тривога","translit":"","en":"anxiety","note":""},{"uk":"розчарування","translit":"","en":"disappointment","note":""},{"uk":"добрий","translit":"","en":"kind","note":""},{"uk":"чесний","translit":"","en":"honest","note":""},{"uk":"сміливий","translit":"","en":"brave","note":""},{"uk":"терплячий","translit":"","en":"patient","note":""},{"uk":"щедрий","translit":"","en":"generous","note":""},{"uk":"розумний","translit":"","en":"smart","note":""},{"uk":"лінивий","translit":"","en":"lazy","note":""},{"uk":"впертий","translit":"","en":"stubborn","note":""},{"uk":"радіти","translit":"","en":"to rejoice","note":""},{"uk":"сумувати","translit":"","en":"to be sad","note":""},{"uk":"боятися","translit":"","en":"to fear","note":""},{"uk":"хвилюватися","translit":"","en":"to worry","note":""},{"uk":"злитися","translit":"","en":"to be angry","note":""},{"uk":"задоволений","translit":"","en":"satisfied","note":""},{"uk":"розчарований","translit":"","en":"disappointed","note":""},{"uk":"стурбований","translit":"","en":"concerned","note":""},{"uk":"впевнений","translit":"","en":"confident","note":""},{"uk":"вдячний","translit":"","en":"grateful","note":""},{"uk":"самотній","translit":"","en":"lonely","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2425,6 +2473,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

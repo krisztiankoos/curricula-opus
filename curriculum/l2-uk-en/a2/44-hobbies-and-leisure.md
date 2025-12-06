@@ -527,16 +527,57 @@ grammar:
     - [x] Entertainment
     > Exhibition is entertainment.
 
-## order: Planning a Trip
+## unjumble: Hobbies and Leisure Sentences
 
-> Put these steps in the correct order for planning a trip.
+> Rearrange the words to form correct sentences about hobbies and leisure.
 
-1. Виберіть місце для подорожі. (Choose a place for the trip.)
-2. Забронюйте готель або житло. (Book a hotel or accommodation.)
-3. Купіть квитки на транспорт. (Buy transport tickets.)
-4. Спакуйте валізу з речами. (Pack your suitcase.)
-5. Поїдьте на відпочинок. (Go on vacation.)
-6. Оглядайте визначні місця. (Sightsee famous places.)
+1. Моє | улюблене | хобі | — | це | фотографія | природи
+   > [!answer] Моє улюблене хобі — це фотографія природи.
+   > (My favorite hobby is nature photography.)
+
+2. Люблю | ходити | в | кіно | з | друзями | у | вихідні
+   > [!answer] Люблю ходити в кіно з друзями у вихідні.
+   > (I love going to the cinema with friends on weekends.)
+
+3. Вона | гарно | співає | і | танцює | на | сцені
+   > [!answer] Вона гарно співає і танцює на сцені.
+   > (She sings and dances well on stage.)
+
+4. Ми | плануємо | подорож | до | Італії | наступного | літа
+   > [!answer] Ми плануємо подорож до Італії наступного літа.
+   > (We are planning a trip to Italy next summer.)
+
+5. Він | грає | на | гітарі | щовечора | після | роботи
+   > [!answer] Він грає на гітарі щовечора після роботи.
+   > (He plays the guitar every evening after work.)
+
+6. Завтра | концерт | мого | улюбленого | гурту | у | парку
+   > [!answer] Завтра концерт мого улюбленого гурту у парку.
+   > (Tomorrow is my favorite band's concert in the park.)
+
+7. У | вихідні | я | відпочиваю | вдома | з | книгою
+   > [!answer] У вихідні я відпочиваю вдома з книгою.
+   > (On weekends I rest at home with a book.)
+
+8. Мій | дідусь | займається | садівництвом | у | своєму | саду
+   > [!answer] Мій дідусь займається садівництвом у своєму саду.
+   > (My grandfather does gardening in his garden.)
+
+9. Цікава | виставка | сучасного | мистецтва | в | музеї | міста
+   > [!answer] Цікава виставка сучасного мистецтва в музеї міста.
+   > (An interesting exhibition of modern art at the city museum.)
+
+10. Вони | подорожують | по | Європі | кожного | літа | разом
+    > [!answer] Вони подорожують по Європі кожного літа разом.
+    > (They travel around Europe together every summer.)
+
+11. Я | збираю | старі | монети | та | марки | вже | років
+    > [!answer] Я збираю старі монети та марки вже років.
+    > (I have been collecting old coins and stamps for years.)
+
+12. Люблю | гуляти | в | парку | ввечері | з | собакою
+    > [!answer] Люблю гуляти в парку ввечері з собакою.
+    > (I love walking in the park in the evening with the dog.)
 
 ## quiz: Hobby Knowledge
 

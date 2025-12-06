@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -920,11 +961,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Digital Literacy</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Technology and Media Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Digital Literacy</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -951,7 +999,7 @@ footer {
   </main><footer>Module 43 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я працюю за ___ у офісі.","answer":"комп'ютером","options":["комп'ютером","смартфоном","навушниками","планшетом"]},{"prompt":"Мій ___ завжди зі мною.","answer":"смартфон","options":["комп'ютер","смартфон","принтер","екран"]},{"prompt":"___ зручний для подорожей.","answer":"Ноутбук","options":["Комп'ютер","Ноутбук","Принтер","Екран"]},{"prompt":"Дитина грає на ___.","answer":"планшеті","options":["планшеті","комп'ютері","принтері","зарядці"]},{"prompt":"Я слухаю музику в ___.","answer":"навушниках","options":["навушниках","екрані","клавіатурі","мишці"]},{"prompt":"___ потрібен для роботи.","answer":"Комп'ютер","options":["Навушники","Комп'ютер","Зарядка","Посилання"]},{"prompt":"___ — це телефон і комп'ютер.","answer":"Смартфон","options":["Смартфон","Принтер","Екран","Канал"]},{"prompt":"Візьми ___ на зустріч.","answer":"ноутбук","options":["принтер","ноутбук","зарядку","екран"]},{"prompt":"___ більший за смартфон.","answer":"Планшет","options":["Планшет","Навушники","Пароль","Профіль"]},{"prompt":"Нові ___ дуже якісні.","answer":"навушники","options":["навушники","паролі","сторінки","акаунти"]},{"prompt":"Мій ___ працює швидко.","answer":"комп'ютер","options":["комп'ютер","пароль","коментар","канал"]},{"prompt":"Я забув ___ вдома.","answer":"смартфон","options":["смартфон","інтернет","новини","стаття"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"комп'ютер","right":"computer"},{"left":"смартфон","right":"smartphone"},{"left":"інтернет","right":"internet"},{"left":"пароль","right":"password"},{"left":"новини","right":"news"},{"left":"стаття","right":"article"},{"left":"завантажувати","right":"to download"},{"left":"публікувати","right":"to publish"},{"left":"підписник","right":"follower"},{"left":"коментар","right":"comment"},{"left":"екран","right":"screen"},{"left":"вебсайт","right":"website"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","працюю","за","комп'ютером","кожен","день"],"answer":"Я працюю за комп'ютером кожен день.","translation":"I work at the computer every day."},{"words":["Мій","смартфон","завжди","зі","мною"],"answer":"Мій смартфон завжди зі мною.","translation":"My smartphone is always with me."},{"words":["Вона","публікує","фото","в","соціальних","мережах"],"answer":"Вона публікує фото в соціальних мережах.","translation":"She publishes photos on social media."},{"words":["Завантажую","цей","файл","з","інтернету"],"answer":"Завантажую цей файл з інтернету.","translation":"I'm downloading this file from the internet."},{"words":["У","неї","багато","підписників","на","каналі"],"answer":"У неї багато підписників на каналі.","translation":"She has many followers on the channel."},{"words":["Я","читаю","новини","щоранку","на","телефоні"],"answer":"Я читаю новини щоранку на телефоні.","translation":"I read the news every morning on my phone."},{"words":["Напиши","коментар","під","цією","публікацією"],"answer":"Напиши коментар під цією публікацією.","translation":"Write a comment under this post."},{"words":["Підпишіться","на","наш","канал","у","YouTube"],"answer":"Підпишіться на наш канал у YouTube.","translation":"Subscribe to our channel on YouTube."},{"words":["Збережи","цей","документ","на","комп'ютері"],"answer":"Збережи цей документ на комп'ютері.","translation":"Save this document on the computer."},{"words":["Надішли","мені","посилання","на","пошту"],"answer":"Надішли мені посилання на пошту.","translation":"Send me the link to my email."},{"words":["Я","забув","пароль","від","акаунту"],"answer":"Я забув пароль від акаунту.","translation":"I forgot the password to my account."},{"words":["Цей","вебсайт","дуже","корисний","для","навчання"],"answer":"Цей вебсайт дуже корисний для навчання.","translation":"This website is very useful for studying."}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Що таке \"смартфон\"?","options":["computer","smartphone","tablet","laptop"],"correctIndex":1,"explanation":""},{"question":"Що означає \"завантажувати\"?","options":["to download","to delete","to search","to save"],"correctIndex":0,"explanation":""},{"question":"Що таке \"підписник\"?","options":["comment","follower","post","password"],"correctIndex":1,"explanation":""},{"question":"Де ви читаєте новини?","options":["на клавіатурі","на зарядці","на вебсайті","на принтері"],"correctIndex":2,"explanation":""},{"question":"Що таке \"пароль\"?","options":["email","profile","password","link"],"correctIndex":2,"explanation":""},{"question":"Що означає \"публікувати\"?","options":["to delete","to download","to publish","to search"],"correctIndex":2,"explanation":""},{"question":"Що таке \"коментар\"?","options":["comment","like","share","follower"],"correctIndex":0,"explanation":""},{"question":"Чим друкують документи?","options":["мишою","екраном","принтером","навушниками"],"correctIndex":2,"explanation":""},{"question":"Що таке \"подкаст\"?","options":["video","podcast","blog","article"],"correctIndex":1,"explanation":""},{"question":"Що означає \"видаляти\"?","options":["to save","to delete","to send","to download"],"correctIndex":1,"explanation":""},{"question":"Що таке \"акаунт\"?","options":["password","account","email","link"],"correctIndex":1,"explanation":""},{"question":"Що таке \"реклама\"?","options":["news","article","advertisement","channel"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Смартфон — це мобільний телефон з інтернетом.","isTrue":true,"explanation":"Correct! A smartphone is a mobile phone with internet."},{"statement":"Ноутбук — це стаціонарний комп'ютер.","isTrue":false,"explanation":"Incorrect! A laptop is portable, not stationary."},{"statement":"Пароль потрібен для входу в акаунт.","isTrue":true,"explanation":"Correct! A password is needed to log into an account."},{"statement":"Завантажувати означає видаляти файли.","isTrue":false,"explanation":"Incorrect! Завантажувати means to download, not delete."},{"statement":"Підписник — це людина, яка підписана на канал.","isTrue":true,"explanation":"Correct! A follower is subscribed to a channel."},{"statement":"Принтер використовують для друку документів.","isTrue":true,"explanation":"Correct! A printer is used to print documents."},{"statement":"Блог — це особистий журнал в інтернеті.","isTrue":true,"explanation":"Correct! A blog is a personal journal online."},{"statement":"Навушники потрібні для друку.","isTrue":false,"explanation":"Incorrect! Headphones are for listening, not printing."},{"statement":"Публікувати означає ділитися контентом.","isTrue":true,"explanation":"Correct! To publish means to share content."},{"statement":"Екран — це частина комп'ютера.","isTrue":true,"explanation":"Correct! The screen is part of a computer."},{"statement":"Зарядка потрібна для клавіатури.","isTrue":false,"explanation":"Incorrect! A keyboard doesn't typically need charging."},{"statement":"Новини — це інформація про події.","isTrue":true,"explanation":"Correct! News is information about events."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Пристрої","items":["комп'ютер","смартфон","ноутбук","планшет","принтер","навушники"]},{"id":"","name":"Інтернет","items":["вебсайт","пошта","пароль","акаунт","посилання","сторінка"]},{"id":"-","name":"Соціальні мережі","items":["профіль","підписник","публікація","коментар","лайк","канал"]},{"id":"","name":"Дієслова","items":["завантажувати","публікувати","шукати","надсилати","зберігати","видаляти"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Tech Actions","data":{"type":"fill-blank","items":[{"prompt":"Я ___ нову програму на комп'ютер вчора. (downloaded)","answer":"завантажив"},{"prompt":"Вона ___ фото в соціальних мережах щодня. (publishes)","answer":"публікує"},{"prompt":"___ інформацію про цей ресторан в інтернеті. (Search)","answer":"Шукай"},{"prompt":"Він ___ мені посилання на електронну пошту. (sent)","answer":"надіслав"},{"prompt":"___ цей документ на комп'ютері обов'язково! (Save)","answer":"Збережи"},{"prompt":"Я випадково ___ важливий файл з папки. (deleted)","answer":"видалив"},{"prompt":"Мій ___ розрядився, де моя зарядка? (smartphone)","answer":"смартфон"},{"prompt":"У мене немає ___ до інтернету в цьому місці. (access)","answer":"доступу"},{"prompt":"Я забув ___ від свого акаунту в соцмережі. (password)","answer":"пароль"},{"prompt":"На цьому ___ багато корисної інформації про Україну. (website)","answer":"вебсайті"},{"prompt":"Підпишіться на наш ___ у YouTube! (channel)","answer":"канал"},{"prompt":"Я читаю ___ про технології щоранку в метро. (news)","answer":"новини"}]}},{"id":"activity-7","type":"select","title":"Device or Action?","data":{"type":"select","items":[{"question":"комп'ютер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"завантажувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"смартфон","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"публікувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"принтер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"видаляти","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"ноутбук","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"зберігати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"планшет","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"шукати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"навушники","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"надсилати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Digital Literacy","data":{"type":"quiz","questions":[{"question":"Що потрібно для входу в акаунт?","options":["пароль","принтер","навушники","екран"],"correctIndex":0,"explanation":""},{"question":"Яким пристроєм друкують документи?","options":["принтером","мишею","клавіатурою","екраном"],"correctIndex":0,"explanation":""},{"question":"Що таке «підписник»?","options":["follower","password","email","screen"],"correctIndex":0,"explanation":""},{"question":"Як називається особистий журнал в інтернеті?","options":["блог","пошта","принтер","пароль"],"correctIndex":0,"explanation":""},{"question":"Що означає «видаляти»?","options":["to delete","to download","to save","to send"],"correctIndex":0,"explanation":""},{"question":"Де зберігають документи на комп'ютері?","options":["у папках","у навушниках","на принтері","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що таке «посилання»?","options":["link","password","screen","keyboard"],"correctIndex":0,"explanation":""},{"question":"Яким словом називають відео-журнал?","options":["подкаст","пароль","акаунт","профіль"],"correctIndex":0,"explanation":""},{"question":"Де ви дивитесь відео онлайн?","options":["на YouTube","на принтері","на клавіатурі","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що означає «зберігати»?","options":["to save","to delete","to search","to download"],"correctIndex":0,"explanation":""},{"question":"Що таке «реклама»?","options":["advertisement","news","password","profile"],"correctIndex":0,"explanation":""},{"question":"Як називають повідомлення під постом?","options":["коментар","пароль","профіль","акаунт"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Я працюю за ___ у офісі.","answer":"комп'ютером","options":["комп'ютером","смартфоном","навушниками","планшетом"]},{"prompt":"Мій ___ завжди зі мною.","answer":"смартфон","options":["комп'ютер","смартфон","принтер","екран"]},{"prompt":"___ зручний для подорожей.","answer":"Ноутбук","options":["Комп'ютер","Ноутбук","Принтер","Екран"]},{"prompt":"Дитина грає на ___.","answer":"планшеті","options":["планшеті","комп'ютері","принтері","зарядці"]},{"prompt":"Я слухаю музику в ___.","answer":"навушниках","options":["навушниках","екрані","клавіатурі","мишці"]},{"prompt":"___ потрібен для роботи.","answer":"Комп'ютер","options":["Навушники","Комп'ютер","Зарядка","Посилання"]},{"prompt":"___ — це телефон і комп'ютер.","answer":"Смартфон","options":["Смартфон","Принтер","Екран","Канал"]},{"prompt":"Візьми ___ на зустріч.","answer":"ноутбук","options":["принтер","ноутбук","зарядку","екран"]},{"prompt":"___ більший за смартфон.","answer":"Планшет","options":["Планшет","Навушники","Пароль","Профіль"]},{"prompt":"Нові ___ дуже якісні.","answer":"навушники","options":["навушники","паролі","сторінки","акаунти"]},{"prompt":"Мій ___ працює швидко.","answer":"комп'ютер","options":["комп'ютер","пароль","коментар","канал"]},{"prompt":"Я забув ___ вдома.","answer":"смартфон","options":["смартфон","інтернет","новини","стаття"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"комп'ютер","right":"computer"},{"left":"смартфон","right":"smartphone"},{"left":"інтернет","right":"internet"},{"left":"пароль","right":"password"},{"left":"новини","right":"news"},{"left":"стаття","right":"article"},{"left":"завантажувати","right":"to download"},{"left":"публікувати","right":"to publish"},{"left":"підписник","right":"follower"},{"left":"коментар","right":"comment"},{"left":"екран","right":"screen"},{"left":"вебсайт","right":"website"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","працюю","за","комп'ютером","кожен","день"],"answer":"Я працюю за комп'ютером кожен день.","translation":"I work at the computer every day."},{"words":["Мій","смартфон","завжди","зі","мною"],"answer":"Мій смартфон завжди зі мною.","translation":"My smartphone is always with me."},{"words":["Вона","публікує","фото","в","соціальних","мережах"],"answer":"Вона публікує фото в соціальних мережах.","translation":"She publishes photos on social media."},{"words":["Завантажую","цей","файл","з","інтернету"],"answer":"Завантажую цей файл з інтернету.","translation":"I'm downloading this file from the internet."},{"words":["У","неї","багато","підписників","на","каналі"],"answer":"У неї багато підписників на каналі.","translation":"She has many followers on the channel."},{"words":["Я","читаю","новини","щоранку","на","телефоні"],"answer":"Я читаю новини щоранку на телефоні.","translation":"I read the news every morning on my phone."},{"words":["Напиши","коментар","під","цією","публікацією"],"answer":"Напиши коментар під цією публікацією.","translation":"Write a comment under this post."},{"words":["Підпишіться","на","наш","канал","у","YouTube"],"answer":"Підпишіться на наш канал у YouTube.","translation":"Subscribe to our channel on YouTube."},{"words":["Збережи","цей","документ","на","комп'ютері"],"answer":"Збережи цей документ на комп'ютері.","translation":"Save this document on the computer."},{"words":["Надішли","мені","посилання","на","пошту"],"answer":"Надішли мені посилання на пошту.","translation":"Send me the link to my email."},{"words":["Я","забув","пароль","від","акаунту"],"answer":"Я забув пароль від акаунту.","translation":"I forgot the password to my account."},{"words":["Цей","вебсайт","дуже","корисний","для","навчання"],"answer":"Цей вебсайт дуже корисний для навчання.","translation":"This website is very useful for studying."}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Що таке \"смартфон\"?","options":["computer","smartphone","tablet","laptop"],"correctIndex":1,"explanation":""},{"question":"Що означає \"завантажувати\"?","options":["to download","to delete","to search","to save"],"correctIndex":0,"explanation":""},{"question":"Що таке \"підписник\"?","options":["comment","follower","post","password"],"correctIndex":1,"explanation":""},{"question":"Де ви читаєте новини?","options":["на клавіатурі","на зарядці","на вебсайті","на принтері"],"correctIndex":2,"explanation":""},{"question":"Що таке \"пароль\"?","options":["email","profile","password","link"],"correctIndex":2,"explanation":""},{"question":"Що означає \"публікувати\"?","options":["to delete","to download","to publish","to search"],"correctIndex":2,"explanation":""},{"question":"Що таке \"коментар\"?","options":["comment","like","share","follower"],"correctIndex":0,"explanation":""},{"question":"Чим друкують документи?","options":["мишою","екраном","принтером","навушниками"],"correctIndex":2,"explanation":""},{"question":"Що таке \"подкаст\"?","options":["video","podcast","blog","article"],"correctIndex":1,"explanation":""},{"question":"Що означає \"видаляти\"?","options":["to save","to delete","to send","to download"],"correctIndex":1,"explanation":""},{"question":"Що таке \"акаунт\"?","options":["password","account","email","link"],"correctIndex":1,"explanation":""},{"question":"Що таке \"реклама\"?","options":["news","article","advertisement","channel"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Смартфон — це мобільний телефон з інтернетом.","isTrue":true,"explanation":"Correct! A smartphone is a mobile phone with internet."},{"statement":"Ноутбук — це стаціонарний комп'ютер.","isTrue":false,"explanation":"Incorrect! A laptop is portable, not stationary."},{"statement":"Пароль потрібен для входу в акаунт.","isTrue":true,"explanation":"Correct! A password is needed to log into an account."},{"statement":"Завантажувати означає видаляти файли.","isTrue":false,"explanation":"Incorrect! Завантажувати means to download, not delete."},{"statement":"Підписник — це людина, яка підписана на канал.","isTrue":true,"explanation":"Correct! A follower is subscribed to a channel."},{"statement":"Принтер використовують для друку документів.","isTrue":true,"explanation":"Correct! A printer is used to print documents."},{"statement":"Блог — це особистий журнал в інтернеті.","isTrue":true,"explanation":"Correct! A blog is a personal journal online."},{"statement":"Навушники потрібні для друку.","isTrue":false,"explanation":"Incorrect! Headphones are for listening, not printing."},{"statement":"Публікувати означає ділитися контентом.","isTrue":true,"explanation":"Correct! To publish means to share content."},{"statement":"Екран — це частина комп'ютера.","isTrue":true,"explanation":"Correct! The screen is part of a computer."},{"statement":"Зарядка потрібна для клавіатури.","isTrue":false,"explanation":"Incorrect! A keyboard doesn't typically need charging."},{"statement":"Новини — це інформація про події.","isTrue":true,"explanation":"Correct! News is information about events."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Пристрої","items":["комп'ютер","смартфон","ноутбук","планшет","принтер","навушники"]},{"id":"","name":"Інтернет","items":["вебсайт","пошта","пароль","акаунт","посилання","сторінка"]},{"id":"-","name":"Соціальні мережі","items":["профіль","підписник","публікація","коментар","лайк","канал"]},{"id":"","name":"Дієслова","items":["завантажувати","публікувати","шукати","надсилати","зберігати","видаляти"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Tech Actions","data":{"type":"fill-blank","items":[{"prompt":"Я ___ нову програму на комп'ютер вчора. (downloaded)","answer":"завантажив"},{"prompt":"Вона ___ фото в соціальних мережах щодня. (publishes)","answer":"публікує"},{"prompt":"___ інформацію про цей ресторан в інтернеті. (Search)","answer":"Шукай"},{"prompt":"Він ___ мені посилання на електронну пошту. (sent)","answer":"надіслав"},{"prompt":"___ цей документ на комп'ютері обов'язково! (Save)","answer":"Збережи"},{"prompt":"Я випадково ___ важливий файл з папки. (deleted)","answer":"видалив"},{"prompt":"Мій ___ розрядився, де моя зарядка? (smartphone)","answer":"смартфон"},{"prompt":"У мене немає ___ до інтернету в цьому місці. (access)","answer":"доступу"},{"prompt":"Я забув ___ від свого акаунту в соцмережі. (password)","answer":"пароль"},{"prompt":"На цьому ___ багато корисної інформації про Україну. (website)","answer":"вебсайті"},{"prompt":"Підпишіться на наш ___ у YouTube! (channel)","answer":"канал"},{"prompt":"Я читаю ___ про технології щоранку в метро. (news)","answer":"новини"}]}},{"id":"activity-7","type":"select","title":"Device or Action?","data":{"type":"select","items":[{"question":"комп'ютер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"завантажувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"смартфон","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"публікувати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"принтер","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"видаляти","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"ноутбук","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"зберігати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"планшет","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"шукати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]},{"question":"навушники","options":[{"text":"Device","correct":true},{"text":"Action","correct":false}]},{"question":"надсилати","options":[{"text":"Device","correct":false},{"text":"Action","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Technology and Media Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","|","працюю","|","за","|","комп'ютером","|","кожен","|","день","|","в","|","офісі"],"answer":"Я працюю за комп'ютером кожен день в офісі.","translation":"I work at the computer every day in the office."},{"words":["Мій","|","смартфон","|","завжди","|","зі","|","мною","|","куди","|","б","|","я","|","не","|","йшов"],"answer":"Мій смартфон завжди зі мною, куди б я не йшов.","translation":"My smartphone is always with me wherever I go."},{"words":["Вона","|","публікує","|","фото","|","в","|","соціальних","|","мережах","|","щодня"],"answer":"Вона публікує фото в соціальних мережах щодня.","translation":"She publishes photos on social media every day."},{"words":["Завантажую","|","цей","|","файл","|","з","|","інтернету","|","на","|","комп'ютер"],"answer":"Завантажую цей файл з інтернету на комп'ютер.","translation":"I'm downloading this file from the internet to the computer."},{"words":["У","|","неї","|","багато","|","підписників","|","на","|","каналі","|","в","|","YouTube"],"answer":"У неї багато підписників на каналі в YouTube.","translation":"She has many subscribers on her YouTube channel."},{"words":["Я","|","читаю","|","новини","|","щоранку","|","на","|","смартфоні","|","перед","|","роботою"],"answer":"Я читаю новини щоранку на смартфоні перед роботою.","translation":"I read the news every morning on my smartphone before work."},{"words":["Напиши","|","коментар","|","під","|","цією","|","цікавою","|","публікацією"],"answer":"Напиши коментар під цією цікавою публікацією.","translation":"Write a comment under this interesting post."},{"words":["Підпишіться","|","на","|","наш","|","канал","|","та","|","натисніть","|","дзвоник"],"answer":"Підпишіться на наш канал та натисніть дзвоник.","translation":"Subscribe to our channel and hit the bell."},{"words":["Я","|","забув","|","пароль","|","від","|","свого","|","акаунту","|","в","|","соцмережі"],"answer":"Я забув пароль від свого акаунту в соцмережі.","translation":"I forgot the password to my social media account."},{"words":["Цей","|","вебсайт","|","дуже","|","корисний","|","для","|","вивчення","|","мови"],"answer":"Цей вебсайт дуже корисний для вивчення мови.","translation":"This website is very useful for learning a language."},{"words":["Надішли","|","мені","|","посилання","|","на","|","цю","|","статтю","|","про","|","технології"],"answer":"Надішли мені посилання на цю статтю про технології.","translation":"Send me a link to this article about technology."},{"words":["Збережи","|","цей","|","документ","|","на","|","комп'ютері","|","у","|","важливу","|","папку"],"answer":"Збережи цей документ на комп'ютері у важливу папку.","translation":"Save this document on the computer in an important folder."}]}},{"id":"activity-9","type":"quiz","title":"Digital Literacy","data":{"type":"quiz","questions":[{"question":"Що потрібно для входу в акаунт?","options":["пароль","принтер","навушники","екран"],"correctIndex":0,"explanation":""},{"question":"Яким пристроєм друкують документи?","options":["принтером","мишею","клавіатурою","екраном"],"correctIndex":0,"explanation":""},{"question":"Що таке «підписник»?","options":["follower","password","email","screen"],"correctIndex":0,"explanation":""},{"question":"Як називається особистий журнал в інтернеті?","options":["блог","пошта","принтер","пароль"],"correctIndex":0,"explanation":""},{"question":"Що означає «видаляти»?","options":["to delete","to download","to save","to send"],"correctIndex":0,"explanation":""},{"question":"Де зберігають документи на комп'ютері?","options":["у папках","у навушниках","на принтері","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що таке «посилання»?","options":["link","password","screen","keyboard"],"correctIndex":0,"explanation":""},{"question":"Яким словом називають відео-журнал?","options":["подкаст","пароль","акаунт","профіль"],"correctIndex":0,"explanation":""},{"question":"Де ви дивитесь відео онлайн?","options":["на YouTube","на принтері","на клавіатурі","на зарядці"],"correctIndex":0,"explanation":""},{"question":"Що означає «зберігати»?","options":["to save","to delete","to search","to download"],"correctIndex":0,"explanation":""},{"question":"Що таке «реклама»?","options":["advertisement","news","password","profile"],"correctIndex":0,"explanation":""},{"question":"Як називають повідомлення під постом?","options":["коментар","пароль","профіль","акаунт"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"комп'ютер","translit":"","en":"computer","note":""},{"uk":"ноутбук","translit":"","en":"laptop","note":""},{"uk":"смартфон","translit":"","en":"smartphone","note":""},{"uk":"планшет","translit":"","en":"tablet","note":""},{"uk":"навушники","translit":"","en":"headphones","note":""},{"uk":"клавіатура","translit":"","en":"keyboard","note":""},{"uk":"миша","translit":"","en":"mouse","note":"computer mouse"},{"uk":"екран","translit":"","en":"screen","note":""},{"uk":"принтер","translit":"","en":"printer","note":""},{"uk":"зарядка","translit":"","en":"charger","note":""},{"uk":"інтернет","translit":"","en":"internet","note":""},{"uk":"вебсайт","translit":"","en":"website","note":""},{"uk":"сторінка","translit":"","en":"page","note":""},{"uk":"пошта","translit":"","en":"email","note":"also: post office"},{"uk":"пароль","translit":"","en":"password","note":""},{"uk":"акаунт","translit":"","en":"account","note":""},{"uk":"посилання","translit":"","en":"link","note":""},{"uk":"соціальні мережі","translit":"","en":"social media","note":""},{"uk":"профіль","translit":"","en":"profile","note":""},{"uk":"підписник","translit":"","en":"follower","note":"f: підписниця"},{"uk":"публікація","translit":"","en":"post","note":"publication"},{"uk":"коментар","translit":"","en":"comment","note":""},{"uk":"новини","translit":"","en":"news","note":""},{"uk":"стаття","translit":"","en":"article","note":""},{"uk":"блог","translit":"","en":"blog","note":""},{"uk":"подкаст","translit":"","en":"podcast","note":""},{"uk":"відео","translit":"","en":"video","note":"indecl"},{"uk":"канал","translit":"","en":"channel","note":""},{"uk":"завантажувати","translit":"","en":"to download","note":"pf: завантажити"},{"uk":"публікувати","translit":"","en":"to publish","note":"pf: опублікувати"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2276,6 +2324,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

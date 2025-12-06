@@ -605,16 +605,57 @@ Notice how cases appear naturally:
     - [ ] Post Office
     - [x] Bank
 
-## order: Sending a Package
+## unjumble: Post Office and Bank Sentences
 
-> Put these steps in the correct order for sending a package.
+> Reorder the words to form correct sentences about post office and bank.
 
-1. Прийдіть на пошту.
-2. Візьміть номерок і чекайте.
-3. Покладіть речі в коробку.
-4. Напишіть адресу отримувача.
-5. Заплатіть за посилку.
-6. Отримайте квитанцію.
+1. пошту / Я / на / йду / нову / сьогодні / відправити / щоб / посилку
+   > [!answer] Я сьогодні йду на нову пошту, щоб відправити посилку.
+   > (Today I'm going to the new post office to send a package.) [9 words]
+
+2. адресу / Напишіть / отримувача / повну / точну / на / коробці / великій
+   > [!answer] Напишіть повну точну адресу отримувача на великій коробці.
+   > (Write the full exact address of the recipient on the big box.) [8 words]
+
+3. гроші / Я / хочу / зняти / рахунку / з / свого / нового / банківського
+   > [!answer] Я хочу зняти гроші з свого нового банківського рахунку.
+   > (I want to withdraw money from my new bank account.) [9 words]
+
+4. переказ / Зробіть / грошовий / будь ласка / цей / швидкий / терміновий / сьогодні
+   > [!answer] Зробіть будь ласка цей швидкий терміновий грошовий переказ сьогодні.
+   > (Please make this fast urgent money transfer today.) [8 words]
+
+5. картку / Мені / потрібна / банківська / нова / пластикова / міжнародна
+   > [!answer] Мені потрібна нова пластикова міжнародна банківська картка.
+   > (I need a new plastic international bank card.) [7 words]
+
+6. посилку / Я / хочу / відправити / велику / цю / важку / за кордон
+   > [!answer] Я хочу відправити цю велику важку посилку за кордон.
+   > (I want to send this big heavy package abroad.) [8 words]
+
+7. курс / Який / обміну / сьогодні / валюти / долара / євро / і
+   > [!answer] Який курс обміну валюти сьогодні долара і євро?
+   > (What is the exchange rate today for dollar and euro?) [8 words]
+
+8. рахунок / Я / хочу / відкрити / новий / депозитний / довгостроковий / ощадний
+   > [!answer] Я хочу відкрити новий довгостроковий ощадний депозитний рахунок.
+   > (I want to open a new long-term savings deposit account.) [8 words]
+
+9. марки / Мені / потрібні / поштові / нові / красиві / українські / колекційні
+   > [!answer] Мені потрібні нові красиві українські колекційні поштові марки.
+   > (I need new beautiful Ukrainian collectible postage stamps.) [8 words]
+
+10. готівку / Ви / приймаєте / чи / тільки / карткою / можна / платити
+    > [!answer] Ви приймаєте готівку чи тільки карткою можна платити?
+    > (Do you accept cash or can you only pay by card?) [8 words]
+
+11. квитанцію / Дайте / будь ласка / мені / цю / офіційну / поштову
+    > [!answer] Дайте мені будь ласка цю офіційну поштову квитанцію.
+    > (Please give me this official postal receipt.) [7 words]
+
+12. посилка / Коли / моя / прийде / велика / важлива / до / отримувача
+    > [!answer] Коли моя велика важлива посилка прийде до отримувача?
+    > (When will my big important package arrive to the recipient?) [8 words]
 
 ## quiz: Practical Vocabulary
 

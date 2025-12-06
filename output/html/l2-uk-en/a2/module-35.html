@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1067,11 +1108,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Root Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Root Family Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Root Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1098,7 +1146,7 @@ footer {
   </main><footer>Module 35 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Root Recognition","data":{"type":"fill-blank","items":[{"prompt":"Корінь «ход-» означає ___ . (go/walk)","answer":"ходити"},{"prompt":"«Вхід» — це місце, де ___. (enter)","answer":"входять"},{"prompt":"«Вихід» — це місце, де ___. (exit)","answer":"виходять"},{"prompt":"«Письменник» — це людина, яка ___. (writes)","answer":"пише"},{"prompt":"«Читач» — це людина, яка ___. (reads)","answer":"читає"},{"prompt":"«Підпис» — це коли ___. (you sign)","answer":"підписуєшся"},{"prompt":"«Перехід» — це місце, де ___ дорогу. (cross)","answer":"переходять"},{"prompt":"«Схід» — це там, де сонце ___. (rises)","answer":"сходить"},{"prompt":"«Захід» — це там, де сонце ___. (sets)","answer":"заходить"},{"prompt":"«Прочитати» — це ___ до кінця. (read)","answer":"читати"},{"prompt":"«Список» — це ___ речей. (list/written)","answer":"перелік"},{"prompt":"«Дохід» — це гроші, які ___. (come in)","answer":"приходять"}]}},{"id":"activity-1","type":"match-up","title":"Word and Meaning","data":{"type":"match-up","pairs":[{"left":"ходити","right":"to walk, go"},{"left":"вхід","right":"entrance"},{"left":"вихід","right":"exit"},{"left":"похід","right":"hike"},{"left":"письменник","right":"writer"},{"left":"підпис","right":"signature"},{"left":"читач","right":"reader"},{"left":"читання","right":"reading"},{"left":"схід","right":"east"},{"left":"захід","right":"west"},{"left":"перехід","right":"crossing"},{"left":"дохід","right":"income"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Де","тут","вхід","до","музею","будь ласка","скажіть","мені"],"answer":"Скажіть, будь ласка, де тут вхід до музею?","translation":"Tell me please, where is the entrance to the museum?"},{"words":["праворуч","Вихід","знаходиться","в","кінці","цього","довгого","коридору"],"answer":"Вихід знаходиться праворуч в кінці цього довгого коридору.","translation":"The exit is on the right at the end of this long corridor."},{"words":["великий","Тарас Шевченко","письменник","і","поет","найвідоміший","український","є"],"answer":"Тарас Шевченко є найвідоміший український письменник і великий поет.","translation":"Taras Shevchenko is the most famous Ukrainian writer and great poet."},{"words":["поставте","тут","підпис","Будь ласка","свій","на","цьому","документі"],"answer":"Будь ласка, поставте свій підпис тут на цьому документі.","translation":"Please put your signature here on this document."},{"words":["хобі","Читання","книг","моє","улюблене","у","вільний","час"],"answer":"Читання книг — моє улюблене хобі у вільний час.","translation":"Reading books is my favorite hobby in free time."},{"words":["сходить","Сонце","на","сході","і","заходить","на","заході"],"answer":"Сонце сходить на сході і заходить на заході.","translation":"The sun rises in the east and sets in the west."},{"words":["підземний","Перехід","знаходиться","біля","станції","метро","в","центрі"],"answer":"Підземний перехід знаходиться біля станції метро в центрі.","translation":"The underground crossing is near the metro station in the center."},{"words":["активний","Він","дуже","читач","і","читає","щодня","багато"],"answer":"Він дуже активний читач і читає багато щодня.","translation":"He is a very active reader and reads a lot daily."},{"words":["на","Я","зробив","запис","у","своєму","щоденнику","вчора"],"answer":"Я зробив запис у своєму щоденнику на вчора.","translation":"I made an entry in my diary for yesterday."},{"words":["похід","Ми","йдемо","в","на","вихідних","у","гори"],"answer":"Ми йдемо в похід у гори на вихідних.","translation":"We are going on a hike to the mountains on the weekend."},{"words":["стабільний","Його","дохід","зростає","щомісяця","і","він","задоволений"],"answer":"Його стабільний дохід зростає щомісяця і він задоволений.","translation":"His stable income is growing monthly and he is satisfied."},{"words":["Прочитай","цю","книгу","до","кінця","бо","вона","цікава"],"answer":"Прочитай цю книгу до кінця, бо вона цікава.","translation":"Read this book to the end because it is interesting."}]}},{"id":"activity-3","type":"quiz","title":"Root Family Knowledge","data":{"type":"quiz","questions":[{"question":"The root «ход-» means:","options":["Go, walk","Hand","House","Horse"],"correctIndex":0,"explanation":""},{"question":"«Вхід» uses prefix «в-» meaning:","options":["Into","Out of","Around","Above"],"correctIndex":0,"explanation":""},{"question":"«Письменник» is formed from:","options":["The root «пис-» (write)","The root «мен-» (mind)","The root «ник-» (person)","The word «менше» (less)"],"correctIndex":0,"explanation":""},{"question":"«Читач» is:","options":["Someone who reads","A type of book","A reading place","An action of reading"],"correctIndex":0,"explanation":""},{"question":"«Схід» means east because:","options":["It's where the sun rises (goes up)","It's on the map's right","East sounds like схід","It's where birds come from"],"correctIndex":0,"explanation":""},{"question":"«Перехід» combines:","options":["пере- (across) + хід (go)","пер- (first) + ехід (exit)","пере- (before) + хід (time)","перех- (transfer) + ід (go)"],"correctIndex":0,"explanation":""},{"question":"«Підпис» literally means:","options":["Writing underneath","Important writing","Big writing","First writing"],"correctIndex":0,"explanation":""},{"question":"«Дохід» means income because:","options":["Money comes to you","You go to work","Dogs bring money","It sounds like dollars"],"correctIndex":0,"explanation":""},{"question":"«Прочитати» vs «читати»:","options":["Prochitati is perfective (completed)","They mean the same","Prochitati is imperfective","Prochitati means to listen"],"correctIndex":0,"explanation":""},{"question":"«Похід» is:","options":["A hike, campaign","An exit","A letter","A signature"],"correctIndex":0,"explanation":""},{"question":"«Список» comes from:","options":["с- + пис (write together)","спис (spear)","список (match)","спискати (to squeak)"],"correctIndex":0,"explanation":""},{"question":"«Пішохід» means:","options":["Pedestrian (foot-walker)","Photographer","Path finder","Slow walker"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Root Facts","data":{"type":"true-false","statements":[{"statement":"«Ход-» is related to walking and going.","isTrue":true,"explanation":""},{"statement":"«Вхід» means exit.","isTrue":false,"explanation":""},{"statement":"«Пис-» relates to writing.","isTrue":true,"explanation":""},{"statement":"«Читач» means book.","isTrue":false,"explanation":""},{"statement":"«Схід» and «захід» are opposites.","isTrue":true,"explanation":""},{"statement":"«Підпис» is an inscription.","isTrue":false,"explanation":""},{"statement":"«Перехід» is a crossing.","isTrue":true,"explanation":""},{"statement":"«Письменник» writes books.","isTrue":true,"explanation":""},{"statement":"«Прочитати» means to start reading.","isTrue":false,"explanation":""},{"statement":"«Дохід» means expense.","isTrue":false,"explanation":""},{"statement":"Root recognition helps guess new words.","isTrue":true,"explanation":""},{"statement":"«Пішохід» drives cars.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Root Families","data":{"type":"group-sort","groups":[{"id":"--family","name":"ХОД- Family","items":["вхід","вихід","перехід","похід"]},{"id":"--family","name":"ПИС- Family","items":["підпис","письменник","запис","опис"]},{"id":"--family","name":"ЧИТ- Family","items":["читач","читання","прочитати","перечитати"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Root Words","data":{"type":"fill-blank","items":[{"prompt":"Де тут ___ до музею? (entrance)","answer":"вхід"},{"prompt":"___ знаходиться праворуч. (Exit)","answer":"Вихід"},{"prompt":"Тарас Шевченко — великий ___. (writer)","answer":"письменник"},{"prompt":"Поставте свій ___ тут. (signature)","answer":"підпис"},{"prompt":"Він активний ___ книг. (reader)","answer":"читач"},{"prompt":"___ книг — корисне хобі. (Reading)","answer":"Читання"},{"prompt":"Сонце сходить на ___. (east)","answer":"сході"},{"prompt":"Я зробив ___ у щоденнику. (entry/record)","answer":"запис"},{"prompt":"Ми йдемо в ___ у гори. (hike)","answer":"похід"},{"prompt":"Підземний ___ біля метро. (crossing)","answer":"перехід"},{"prompt":"Мій ___ стабільний. (income)","answer":"дохід"},{"prompt":"Дай ___ цієї ситуації. (description)","answer":"опис"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[{"question":"Де тут ___ до будинку?","options":[{"text":"вхід","correct":true},{"text":"вихід","correct":false},{"text":"перехід","correct":false},{"text":"похід","correct":false}]},{"question":"Аварійний ___ знаходиться там.","options":[{"text":"вхід","correct":false},{"text":"вихід","correct":true},{"text":"прихід","correct":false},{"text":"підхід","correct":false}]},{"question":"Поставте свій ___ внизу.","options":[{"text":"запис","correct":false},{"text":"підпис","correct":true},{"text":"напис","correct":false},{"text":"опис","correct":false}]},{"question":"Він відомий ___ у нашій країні.","options":[{"text":"письменник","correct":true},{"text":"читач","correct":false},{"text":"слухач","correct":false},{"text":"глядач","correct":false}]},{"question":"___ книг — чудове хобі.","options":[{"text":"Писання","correct":false},{"text":"Читання","correct":true},{"text":"Слухання","correct":false},{"text":"Бачення","correct":false}]},{"question":"Сонце заходить на ___.","options":[{"text":"сході","correct":false},{"text":"заході","correct":true},{"text":"півночі","correct":false},{"text":"півдні","correct":false}]},{"question":"Ми йдемо в ___ у гори.","options":[{"text":"похід","correct":true},{"text":"вхід","correct":false},{"text":"вихід","correct":false},{"text":"прихід","correct":false}]},{"question":"Використовуй підземний ___.","options":[{"text":"перехід","correct":true},{"text":"вхід","correct":false},{"text":"похід","correct":false},{"text":"відхід","correct":false}]},{"question":"Зроби ___ у щоденнику.","options":[{"text":"запис","correct":true},{"text":"підпис","correct":false},{"text":"опис","correct":false},{"text":"напис","correct":false}]},{"question":"Я активний ___ цього журналу.","options":[{"text":"читач","correct":true},{"text":"письменник","correct":false},{"text":"писар","correct":false},{"text":"лист","correct":false}]},{"question":"Його ___ зростає щороку.","options":[{"text":"дохід","correct":true},{"text":"вихід","correct":false},{"text":"відхід","correct":false},{"text":"обхід","correct":false}]},{"question":"Це ___ товару в каталозі.","options":[{"text":"підпис","correct":false},{"text":"опис","correct":true},{"text":"запис","correct":false},{"text":"напис","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Root Understanding","data":{"type":"quiz","questions":[{"question":"Which root means \"go/walk\"?","options":["ход-","пис-","чит-","рук-"],"correctIndex":0,"explanation":""},{"question":"\"Вхід\" and \"вихід\" share which root?","options":["ход-","вх-","хід-","від-"],"correctIndex":0,"explanation":""},{"question":"What does the prefix \"пере-\" add to \"хід\"?","options":["Across, crossing","Into","Out of","Under"],"correctIndex":0,"explanation":""},{"question":"\"Письменник\" contains which root?","options":["пис-/письм-","мен-","ник-","письм-"],"correctIndex":0,"explanation":""},{"question":"\"Схід\" means \"east\" because:","options":["The sun rises (goes up) there","It's on the right","It sounds eastern","Maps show east there"],"correctIndex":0,"explanation":""},{"question":"Which word is NOT from the ход- family?","options":["список","вхід","похід","дохід"],"correctIndex":0,"explanation":""},{"question":"\"Читач\" is someone who:","options":["Reads","Writes","Walks","Speaks"],"correctIndex":0,"explanation":""},{"question":"\"Дохід\" means income because:","options":["Money \"comes to\" you","You \"go to\" money","Dogs bring it","It's daily"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"under\" in writing context?","options":["під- (підпис = signature)","за- (запис = record)","о- (опис = description)","на- (напис = inscription)"],"correctIndex":0,"explanation":""},{"question":"\"Перечитати\" means:","options":["To reread","To start reading","To stop reading","To write again"],"correctIndex":0,"explanation":""},{"question":"The root \"пис-\" relates to:","options":["Writing","Reading","Walking","Speaking"],"correctIndex":0,"explanation":""},{"question":"Root recognition helps you:","options":["Understand new words faster","Pronounce words correctly","Write longer sentences","Speak faster"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Root Recognition","data":{"type":"fill-blank","items":[{"prompt":"Корінь «ход-» означає ___ . (go/walk)","answer":"ходити"},{"prompt":"«Вхід» — це місце, де ___. (enter)","answer":"входять"},{"prompt":"«Вихід» — це місце, де ___. (exit)","answer":"виходять"},{"prompt":"«Письменник» — це людина, яка ___. (writes)","answer":"пише"},{"prompt":"«Читач» — це людина, яка ___. (reads)","answer":"читає"},{"prompt":"«Підпис» — це коли ___. (you sign)","answer":"підписуєшся"},{"prompt":"«Перехід» — це місце, де ___ дорогу. (cross)","answer":"переходять"},{"prompt":"«Схід» — це там, де сонце ___. (rises)","answer":"сходить"},{"prompt":"«Захід» — це там, де сонце ___. (sets)","answer":"заходить"},{"prompt":"«Прочитати» — це ___ до кінця. (read)","answer":"читати"},{"prompt":"«Список» — це ___ речей. (list/written)","answer":"перелік"},{"prompt":"«Дохід» — це гроші, які ___. (come in)","answer":"приходять"}]}},{"id":"activity-1","type":"match-up","title":"Word and Meaning","data":{"type":"match-up","pairs":[{"left":"ходити","right":"to walk, go"},{"left":"вхід","right":"entrance"},{"left":"вихід","right":"exit"},{"left":"похід","right":"hike"},{"left":"письменник","right":"writer"},{"left":"підпис","right":"signature"},{"left":"читач","right":"reader"},{"left":"читання","right":"reading"},{"left":"схід","right":"east"},{"left":"захід","right":"west"},{"left":"перехід","right":"crossing"},{"left":"дохід","right":"income"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Де","тут","вхід","до","музею","будь ласка","скажіть","мені"],"answer":"Скажіть, будь ласка, де тут вхід до музею?","translation":"Tell me please, where is the entrance to the museum?"},{"words":["праворуч","Вихід","знаходиться","в","кінці","цього","довгого","коридору"],"answer":"Вихід знаходиться праворуч в кінці цього довгого коридору.","translation":"The exit is on the right at the end of this long corridor."},{"words":["великий","Тарас Шевченко","письменник","і","поет","найвідоміший","український","є"],"answer":"Тарас Шевченко є найвідоміший український письменник і великий поет.","translation":"Taras Shevchenko is the most famous Ukrainian writer and great poet."},{"words":["поставте","тут","підпис","Будь ласка","свій","на","цьому","документі"],"answer":"Будь ласка, поставте свій підпис тут на цьому документі.","translation":"Please put your signature here on this document."},{"words":["хобі","Читання","книг","моє","улюблене","у","вільний","час"],"answer":"Читання книг — моє улюблене хобі у вільний час.","translation":"Reading books is my favorite hobby in free time."},{"words":["сходить","Сонце","на","сході","і","заходить","на","заході"],"answer":"Сонце сходить на сході і заходить на заході.","translation":"The sun rises in the east and sets in the west."},{"words":["підземний","Перехід","знаходиться","біля","станції","метро","в","центрі"],"answer":"Підземний перехід знаходиться біля станції метро в центрі.","translation":"The underground crossing is near the metro station in the center."},{"words":["активний","Він","дуже","читач","і","читає","щодня","багато"],"answer":"Він дуже активний читач і читає багато щодня.","translation":"He is a very active reader and reads a lot daily."},{"words":["на","Я","зробив","запис","у","своєму","щоденнику","вчора"],"answer":"Я зробив запис у своєму щоденнику на вчора.","translation":"I made an entry in my diary for yesterday."},{"words":["похід","Ми","йдемо","в","на","вихідних","у","гори"],"answer":"Ми йдемо в похід у гори на вихідних.","translation":"We are going on a hike to the mountains on the weekend."},{"words":["стабільний","Його","дохід","зростає","щомісяця","і","він","задоволений"],"answer":"Його стабільний дохід зростає щомісяця і він задоволений.","translation":"His stable income is growing monthly and he is satisfied."},{"words":["Прочитай","цю","книгу","до","кінця","бо","вона","цікава"],"answer":"Прочитай цю книгу до кінця, бо вона цікава.","translation":"Read this book to the end because it is interesting."}]}},{"id":"activity-3","type":"quiz","title":"Root Family Knowledge","data":{"type":"quiz","questions":[{"question":"The root «ход-» means:","options":["Go, walk","Hand","House","Horse"],"correctIndex":0,"explanation":""},{"question":"«Вхід» uses prefix «в-» meaning:","options":["Into","Out of","Around","Above"],"correctIndex":0,"explanation":""},{"question":"«Письменник» is formed from:","options":["The root «пис-» (write)","The root «мен-» (mind)","The root «ник-» (person)","The word «менше» (less)"],"correctIndex":0,"explanation":""},{"question":"«Читач» is:","options":["Someone who reads","A type of book","A reading place","An action of reading"],"correctIndex":0,"explanation":""},{"question":"«Схід» means east because:","options":["It's where the sun rises (goes up)","It's on the map's right","East sounds like схід","It's where birds come from"],"correctIndex":0,"explanation":""},{"question":"«Перехід» combines:","options":["пере- (across) + хід (go)","пер- (first) + ехід (exit)","пере- (before) + хід (time)","перех- (transfer) + ід (go)"],"correctIndex":0,"explanation":""},{"question":"«Підпис» literally means:","options":["Writing underneath","Important writing","Big writing","First writing"],"correctIndex":0,"explanation":""},{"question":"«Дохід» means income because:","options":["Money comes to you","You go to work","Dogs bring money","It sounds like dollars"],"correctIndex":0,"explanation":""},{"question":"«Прочитати» vs «читати»:","options":["Prochitati is perfective (completed)","They mean the same","Prochitati is imperfective","Prochitati means to listen"],"correctIndex":0,"explanation":""},{"question":"«Похід» is:","options":["A hike, campaign","An exit","A letter","A signature"],"correctIndex":0,"explanation":""},{"question":"«Список» comes from:","options":["с- + пис (write together)","спис (spear)","список (match)","спискати (to squeak)"],"correctIndex":0,"explanation":""},{"question":"«Пішохід» means:","options":["Pedestrian (foot-walker)","Photographer","Path finder","Slow walker"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Root Facts","data":{"type":"true-false","statements":[{"statement":"«Ход-» is related to walking and going.","isTrue":true,"explanation":""},{"statement":"«Вхід» means exit.","isTrue":false,"explanation":""},{"statement":"«Пис-» relates to writing.","isTrue":true,"explanation":""},{"statement":"«Читач» means book.","isTrue":false,"explanation":""},{"statement":"«Схід» and «захід» are opposites.","isTrue":true,"explanation":""},{"statement":"«Підпис» is an inscription.","isTrue":false,"explanation":""},{"statement":"«Перехід» is a crossing.","isTrue":true,"explanation":""},{"statement":"«Письменник» writes books.","isTrue":true,"explanation":""},{"statement":"«Прочитати» means to start reading.","isTrue":false,"explanation":""},{"statement":"«Дохід» means expense.","isTrue":false,"explanation":""},{"statement":"Root recognition helps guess new words.","isTrue":true,"explanation":""},{"statement":"«Пішохід» drives cars.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Root Families","data":{"type":"group-sort","groups":[{"id":"--family","name":"ХОД- Family","items":["вхід","вихід","перехід","похід"]},{"id":"--family","name":"ПИС- Family","items":["підпис","письменник","запис","опис"]},{"id":"--family","name":"ЧИТ- Family","items":["читач","читання","прочитати","перечитати"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Root Words","data":{"type":"fill-blank","items":[{"prompt":"Де тут ___ до музею? (entrance)","answer":"вхід"},{"prompt":"___ знаходиться праворуч. (Exit)","answer":"Вихід"},{"prompt":"Тарас Шевченко — великий ___. (writer)","answer":"письменник"},{"prompt":"Поставте свій ___ тут. (signature)","answer":"підпис"},{"prompt":"Він активний ___ книг. (reader)","answer":"читач"},{"prompt":"___ книг — корисне хобі. (Reading)","answer":"Читання"},{"prompt":"Сонце сходить на ___. (east)","answer":"сході"},{"prompt":"Я зробив ___ у щоденнику. (entry/record)","answer":"запис"},{"prompt":"Ми йдемо в ___ у гори. (hike)","answer":"похід"},{"prompt":"Підземний ___ біля метро. (crossing)","answer":"перехід"},{"prompt":"Мій ___ стабільний. (income)","answer":"дохід"},{"prompt":"Дай ___ цієї ситуації. (description)","answer":"опис"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[{"question":"Де тут ___ до будинку?","options":[{"text":"вхід","correct":true},{"text":"вихід","correct":false},{"text":"перехід","correct":false},{"text":"похід","correct":false}]},{"question":"Аварійний ___ знаходиться там.","options":[{"text":"вхід","correct":false},{"text":"вихід","correct":true},{"text":"прихід","correct":false},{"text":"підхід","correct":false}]},{"question":"Поставте свій ___ внизу.","options":[{"text":"запис","correct":false},{"text":"підпис","correct":true},{"text":"напис","correct":false},{"text":"опис","correct":false}]},{"question":"Він відомий ___ у нашій країні.","options":[{"text":"письменник","correct":true},{"text":"читач","correct":false},{"text":"слухач","correct":false},{"text":"глядач","correct":false}]},{"question":"___ книг — чудове хобі.","options":[{"text":"Писання","correct":false},{"text":"Читання","correct":true},{"text":"Слухання","correct":false},{"text":"Бачення","correct":false}]},{"question":"Сонце заходить на ___.","options":[{"text":"сході","correct":false},{"text":"заході","correct":true},{"text":"півночі","correct":false},{"text":"півдні","correct":false}]},{"question":"Ми йдемо в ___ у гори.","options":[{"text":"похід","correct":true},{"text":"вхід","correct":false},{"text":"вихід","correct":false},{"text":"прихід","correct":false}]},{"question":"Використовуй підземний ___.","options":[{"text":"перехід","correct":true},{"text":"вхід","correct":false},{"text":"похід","correct":false},{"text":"відхід","correct":false}]},{"question":"Зроби ___ у щоденнику.","options":[{"text":"запис","correct":true},{"text":"підпис","correct":false},{"text":"опис","correct":false},{"text":"напис","correct":false}]},{"question":"Я активний ___ цього журналу.","options":[{"text":"читач","correct":true},{"text":"письменник","correct":false},{"text":"писар","correct":false},{"text":"лист","correct":false}]},{"question":"Його ___ зростає щороку.","options":[{"text":"дохід","correct":true},{"text":"вихід","correct":false},{"text":"відхід","correct":false},{"text":"обхід","correct":false}]},{"question":"Це ___ товару в каталозі.","options":[{"text":"підпис","correct":false},{"text":"опис","correct":true},{"text":"запис","correct":false},{"text":"напис","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Root Family Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["вхід","|","до","|","музею","|","знаходиться","|","тут"],"answer":"Вхід до музею знаходиться тут.","translation":"The entrance to the museum is here."},{"words":["вихід","|","з","|","метро","|","праворуч"],"answer":"Вихід з метро праворуч.","translation":"The metro exit is on the right."},{"words":["письменник","|","написав","|","новий","|","роман"],"answer":"Письменник написав новий роман.","translation":"The writer wrote a new novel."},{"words":["читання","|","книг","|","розвиває","|","мислення"],"answer":"Читання книг розвиває мислення.","translation":"Reading books develops thinking."},{"words":["перехід","|","через","|","вулицю","|","там"],"answer":"Перехід через вулицю там.","translation":"The crosswalk is over there."},{"words":["записка","|","лежить","|","на","|","столі"],"answer":"Записка лежить на столі.","translation":"A note is lying on the table."},{"words":["підпис","|","потрібен","|","на","|","документі"],"answer":"Підпис потрібен на документі.","translation":"A signature is needed on the document."},{"words":["напис","|","на","|","двері","|","каже","|","вхід"],"answer":"Напис на двері каже \"вхід\".","translation":"The sign on the door says \"entrance\"."},{"words":["дохід","|","цієї","|","компанії","|","зростає"],"answer":"Дохід цієї компанії зростає.","translation":"This company's income is growing."},{"words":["опис","|","товару","|","дуже","|","детальний"],"answer":"Опис товару дуже детальний.","translation":"The product description is very detailed."},{"words":["хід","|","часу","|","не","|","зупинити"],"answer":"Хід часу не зупинити.","translation":"The passage of time cannot be stopped."},{"words":["читач","|","бібліотеки","|","повернув","|","книгу"],"answer":"Читач бібліотеки повернув книгу.","translation":"The library reader returned the book."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Root Understanding","data":{"type":"quiz","questions":[{"question":"Which root means \"go/walk\"?","options":["ход-","пис-","чит-","рук-"],"correctIndex":0,"explanation":""},{"question":"\"Вхід\" and \"вихід\" share which root?","options":["ход-","вх-","хід-","від-"],"correctIndex":0,"explanation":""},{"question":"What does the prefix \"пере-\" add to \"хід\"?","options":["Across, crossing","Into","Out of","Under"],"correctIndex":0,"explanation":""},{"question":"\"Письменник\" contains which root?","options":["пис-/письм-","мен-","ник-","письм-"],"correctIndex":0,"explanation":""},{"question":"\"Схід\" means \"east\" because:","options":["The sun rises (goes up) there","It's on the right","It sounds eastern","Maps show east there"],"correctIndex":0,"explanation":""},{"question":"Which word is NOT from the ход- family?","options":["список","вхід","похід","дохід"],"correctIndex":0,"explanation":""},{"question":"\"Читач\" is someone who:","options":["Reads","Writes","Walks","Speaks"],"correctIndex":0,"explanation":""},{"question":"\"Дохід\" means income because:","options":["Money \"comes to\" you","You \"go to\" money","Dogs bring it","It's daily"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"under\" in writing context?","options":["під- (підпис = signature)","за- (запис = record)","о- (опис = description)","на- (напис = inscription)"],"correctIndex":0,"explanation":""},{"question":"\"Перечитати\" means:","options":["To reread","To start reading","To stop reading","To write again"],"correctIndex":0,"explanation":""},{"question":"The root \"пис-\" relates to:","options":["Writing","Reading","Walking","Speaking"],"correctIndex":0,"explanation":""},{"question":"Root recognition helps you:","options":["Understand new words faster","Pronounce words correctly","Write longer sentences","Speak faster"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"ходити","translit":"","en":"to walk, go","note":""},{"uk":"хід","translit":"","en":"move, course","note":""},{"uk":"похід","translit":"","en":"hike, campaign","note":""},{"uk":"вхід","translit":"","en":"entrance","note":""},{"uk":"вихід","translit":"","en":"exit","note":""},{"uk":"прихід","translit":"","en":"arrival","note":""},{"uk":"відхід","translit":"","en":"departure","note":""},{"uk":"перехід","translit":"","en":"crossing","note":""},{"uk":"пішохід","translit":"","en":"pedestrian","note":""},{"uk":"схід","translit":"","en":"east","note":""},{"uk":"захід","translit":"","en":"west","note":""},{"uk":"писати","translit":"","en":"to write","note":""},{"uk":"письмо","translit":"","en":"letter","note":""},{"uk":"письменник","translit":"","en":"writer","note":""},{"uk":"підпис","translit":"","en":"signature","note":""},{"uk":"запис","translit":"","en":"record, entry","note":""},{"uk":"опис","translit":"","en":"description","note":""},{"uk":"напис","translit":"","en":"inscription","note":""},{"uk":"список","translit":"","en":"list","note":""},{"uk":"читати","translit":"","en":"to read","note":""},{"uk":"читач","translit":"","en":"reader","note":""},{"uk":"читання","translit":"","en":"reading","note":""},{"uk":"прочитати","translit":"","en":"to read (pf)","note":""},{"uk":"дочитати","translit":"","en":"to finish reading","note":""},{"uk":"перечитати","translit":"","en":"to reread","note":""},{"uk":"бачити","translit":"","en":"to see","note":""},{"uk":"бачення","translit":"","en":"vision, view","note":""},{"uk":"побачення","translit":"","en":"date, meeting","note":""},{"uk":"погляд","translit":"","en":"look, view","note":""},{"uk":"вигляд","translit":"","en":"appearance","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2423,6 +2471,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

@@ -580,7 +580,7 @@ function generateActivities(data: ModuleData, enrich: boolean = false): Generate
   }
 
   // Type C (Synthesis) - ALWAYS generate when enriching, otherwise only if missing
-  if (enrich || (!existing.includes('unjumble') && !existing.includes('order'))) {
+  if (enrich || !existing.includes('unjumble')) {
     const activity = generateUnjumble(data);
     if (activity) activities.push(activity);
   }
@@ -654,7 +654,7 @@ async function processModule(modulePath: string, dryRun: boolean = false, enrich
 
   // If enriching, remove existing fill-in and unjumble activities first
   if (enrich) {
-    content = removeExistingActivities(content, ['fill-in', 'unjumble', 'order']);
+    content = removeExistingActivities(content, ['fill-in', 'unjumble']);
   }
 
   // Find the end of Activities section (before Vocabulary/Словник)

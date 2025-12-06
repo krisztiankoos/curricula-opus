@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -505,69 +545,170 @@ footer {
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><p>Which is bigger? Who is older? What's better? Comparisons are essential for real conversations. This module teaches you how to form comparative adjectives in Ukrainian and use them to compare anything and everything!</p>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Forming Comparatives</h3>
-      <div class="md-content"><h2 id="regularpatternstem">Regular Pattern: Stem + -ший/-іший</h2>
-<table>
-<thead>
-<tr>
-<th>Positive</th>
-<th>Comparative</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>новий</td>
-<td><strong>новіший</strong></td>
-<td>newer</td>
-</tr>
-<tr>
-<td>старий</td>
-<td><strong>старіший</strong></td>
-<td>older</td>
-</tr>
-<tr>
-<td>молодий</td>
-<td><strong>молодший</strong></td>
-<td>younger</td>
-</tr>
-<tr>
-<td>довгий</td>
-<td><strong>довший</strong></td>
-<td>longer</td>
-</tr>
-<tr>
-<td>короткий</td>
-<td><strong>коротший</strong></td>
-<td>shorter</td>
-</tr>
-<tr>
-<td>широкий</td>
-<td><strong>ширший</strong></td>
-<td>wider</td>
-</tr>
-<tr>
-<td>вузький</td>
-<td><strong>вужчий</strong></td>
-<td>narrower</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+      <div class="md-content"><p>"My phone is faster than yours." "The weather is worse today." "She's taller than her brother." Comparisons are everywhere — and in Ukrainian, they carry interesting cultural baggage.</p>
+<p>Here's something fascinating: when Ukrainians describe aging, they don't say someone got "old<em>er</em>" — they say <em>старший</em> (older/more senior), which also means "senior in rank." Getting older isn't decline; it's moving up the hierarchy! Similarly, <em>молодший</em> (younger) also means "junior" — it's built into the language.</p>
+<p>This module teaches you to compare anything: cities, prices, people, weather. You'll learn the regular patterns (-ший endings), the rebels (irregular forms like <em>кращий</em> and <em>гірший</em>), and the two ways Ukrainians say "than" — because why have one when you can have two?</p>
 <blockquote>
-  <p>Ukrainian comparatives often look shorter than English ones! "Newer" is just one word: <em>новіший</em>.</p>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Ukrainian comparatives are often more compact than English. "More interesting" is just one word: <em>цікавіший</em>. "Significantly more expensive" is two words: <em>значно дорожчий</em>. Economy of expression!</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>Irregular Comparatives</h3>
-      <div class="md-content"><p>Some adjectives have irregular comparative forms:</p>
+      <h3>The Two Formation Patterns</h3>
+      <div class="md-content"><p>Ukrainian forms comparatives in two ways:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Formation</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Synthetic</strong></td>
+<td>Add -ший/-іший</td>
+<td>Most adjectives</td>
+</tr>
+<tr>
+<td><strong>Compound</strong></td>
+<td>більш/менш + adj</td>
+<td>Long adjectives, emphasis</td>
+</tr>
+</tbody>
+</table>
+<p>Most adjectives use the synthetic form — just add an ending. But you can always use <em>більш</em> (more) or <em>менш</em> (less) for emphasis or with complex adjectives.</p>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong></p>
+  <p>The Ukrainian proverb <em>Краще пізно, ніж ніколи</em> (Better late than never) uses the irregular comparative <em>краще</em>. You'll hear this in everyday speech, especially when someone finally shows up!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Regular Comparatives: -ший/-іший</h3>
+      <div class="md-content"><p>For most adjectives, add <strong>-ший</strong> (hard stems) or <strong>-іший</strong> (soft stems):</p>
+<table>
+<thead>
+<tr>
+<th>Positive</th>
+<th>Comparative</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>новий (new)</td>
+<td>нов<strong>іший</strong></td>
+<td>-іший</td>
+</tr>
+<tr>
+<td>старий (old)</td>
+<td>стар<strong>іший</strong></td>
+<td>-іший</td>
+</tr>
+<tr>
+<td>молодий (young)</td>
+<td>молод<strong>ший</strong></td>
+<td>-ший</td>
+</tr>
+<tr>
+<td>довгий (long)</td>
+<td>дов<strong>ший</strong></td>
+<td>-ший</td>
+</tr>
+<tr>
+<td>короткий (short)</td>
+<td>корот<strong>ший</strong></td>
+<td>-ший</td>
+</tr>
+<tr>
+<td>широкий (wide)</td>
+<td>шир<strong>ший</strong></td>
+<td>-ший</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the stem sometimes changes: <em>молодий</em> drops its final vowel to become <em>молодший</em>, not <em>молодіший</em>.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Мій телефон <strong>новіший</strong> за твій. (My phone is newer than yours.)</li>
+<li>Ця вулиця <strong>довша</strong> ніж та. (This street is longer than that one.)</li>
+<li>Він виглядає <strong>молодшим</strong> за свої роки. (He looks younger than his years.)</li>
+</ul>
+<p><strong>🎭 Розмова про час (Conversation About Time)</strong></p>
+<p>— Скільки тобі років?<br />
+— Тридцять п'ять.<br />
+— О, ти <strong>молодший</strong> за мене!<br />
+— Правда? А ти виглядаєш <strong>молодшою</strong>!<br />
+— Ти дуже милий. Я на три роки <strong>старша</strong>.</p>
+<p><em>Age comparisons flow naturally in Ukrainian — and so do the compliments!</em></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Consonant Changes Before -ший</h3>
+      <div class="md-content"><p>Some adjectives undergo consonant changes when forming comparatives:</p>
+<table>
+<thead>
+<tr>
+<th>Positive</th>
+<th>Comparative</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>дорогий (expensive)</td>
+<td>дорож<strong>ч</strong>ий</td>
+<td>г → ж</td>
+</tr>
+<tr>
+<td>вузький (narrow)</td>
+<td>вуж<strong>ч</strong>ий</td>
+<td>зьк → жч</td>
+</tr>
+<tr>
+<td>близький (close)</td>
+<td>ближ<strong>ч</strong>ий</td>
+<td>зьк → жч</td>
+</tr>
+<tr>
+<td>легкий (easy/light)</td>
+<td>лег<strong>ш</strong>ий</td>
+<td>гк → ш</td>
+</tr>
+<tr>
+<td>важкий (hard/heavy)</td>
+<td>важ<strong>ч</strong>ий</td>
+<td>жк → жч</td>
+</tr>
+<tr>
+<td>теплий (warm)</td>
+<td>тепл<strong>іш</strong>ий</td>
+<td>regular</td>
+</tr>
+</tbody>
+</table>
+<p>These changes follow historical patterns where back consonants became front ones before certain suffixes. Don't worry about memorizing rules — you'll recognize them with practice.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Ця сукня <strong>дорожча</strong> за ту. (This dress is more expensive than that one.)</li>
+<li>Твій дім <strong>ближчий</strong> до метро. (Your house is closer to the metro.)</li>
+<li>Сьогодні <strong>теплішe</strong> ніж учора. (Today it's warmer than yesterday.)</li>
+</ul>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>When shopping in Ukraine, you'll hear <em>дорожче/дешевше</em> (more expensive/cheaper) constantly. Knowing these comparatives is essential for market negotiation: <em>Є щось дешевше?</em> (Is there something cheaper?)</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>The Irregular Rebels</h3>
+      <div class="md-content"><p>Some comparatives don't follow rules — they must be memorized:</p>
 <table>
 <thead>
 <tr>
@@ -578,141 +719,87 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>добрий</td>
+<td>добрий (good)</td>
 <td><strong>кращий</strong></td>
 <td>better</td>
 </tr>
 <tr>
-<td>поганий</td>
+<td>поганий (bad)</td>
 <td><strong>гірший</strong></td>
 <td>worse</td>
 </tr>
 <tr>
-<td>великий</td>
+<td>великий (big)</td>
 <td><strong>більший</strong></td>
 <td>bigger</td>
 </tr>
 <tr>
-<td>малий</td>
+<td>малий (small)</td>
 <td><strong>менший</strong></td>
 <td>smaller</td>
 </tr>
 <tr>
-<td>високий</td>
+<td>високий (tall)</td>
 <td><strong>вищий</strong></td>
 <td>taller/higher</td>
 </tr>
 <tr>
-<td>низький</td>
+<td>низький (low/short)</td>
 <td><strong>нижчий</strong></td>
-<td>shorter/lower</td>
-</tr>
-<tr>
-<td>гарний</td>
-<td><strong>кращий</strong> / <strong>гарніший</strong></td>
-<td>prettier/nicer</td>
+<td>lower/shorter</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
+<p>These are the most common adjectives, so you'll encounter them constantly. Good news: they're so frequent that you'll memorize them naturally.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Сьогодні погода <strong>краща</strong> ніж учора. (Today the weather is better than yesterday.)</li>
+<li>Цей результат <strong>гірший</strong> за попередній. (This result is worse than the previous one.)</li>
+<li>Київ <strong>більший</strong> за Львів. (Kyiv is bigger than Lviv.)</li>
+<li>Мій брат <strong>вищий</strong> за мене. (My brother is taller than me.)</li>
+</ul>
+<p><strong>🎭 Розмова про погоду (Weather Chat)</strong></p>
+<p>— Яка сьогодні погода?<br />
+— <strong>Гірша</strong> ніж учора. Дощ і холод.<br />
+— Вчора було <strong>краще</strong>?<br />
+— Так, було сонячно і <strong>теплішe</strong>.<br />
+— Завтра обіцяють <strong>кращу</strong> погоду.<br />
+— Сподіваюся! Мені потрібно <strong>більше</strong> сонця!</p>
+<p><em>Weather talk is universal — and full of comparatives!</em></p>
 <blockquote>
-  <p>Ukrainian proverb: <em>Краще пізно, ніж ніколи</em> — Better late than never!</p>
+  <p>📜 <strong>History Bite</strong></p>
+  <p>The irregular comparatives <em>кращий</em> and <em>гірший</em> come from ancient Slavic roots. <em>Кращий</em> relates to <em>краса</em> (beauty), so "better" originally meant "more beautiful." Language preserves old worldviews!</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>More Common Comparatives</h3>
-      <div class="md-content"><table>
-<thead>
-<tr>
-<th>Positive</th>
-<th>Comparative</th>
-<th>English</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>дорогий</td>
-<td><strong>дорожчий</strong></td>
-<td>more expensive</td>
-</tr>
-<tr>
-<td>дешевий</td>
-<td><strong>дешевший</strong></td>
-<td>cheaper</td>
-</tr>
-<tr>
-<td>швидкий</td>
-<td><strong>швидший</strong></td>
-<td>faster</td>
-</tr>
-<tr>
-<td>повільний</td>
-<td><strong>повільніший</strong></td>
-<td>slower</td>
-</tr>
-<tr>
-<td>сильний</td>
-<td><strong>сильніший</strong></td>
-<td>stronger</td>
-</tr>
-<tr>
-<td>слабкий</td>
-<td><strong>слабший</strong></td>
-<td>weaker</td>
-</tr>
-<tr>
-<td>легкий</td>
-<td><strong>легший</strong></td>
-<td>easier/lighter</td>
-</tr>
-<tr>
-<td>важкий</td>
-<td><strong>важчий</strong></td>
-<td>harder/heavier</td>
-</tr>
-<tr>
-<td>теплий</td>
-<td><strong>тепліший</strong></td>
-<td>warmer</td>
-</tr>
-<tr>
-<td>холодний</td>
-<td><strong>холодніший</strong></td>
-<td>colder</td>
-</tr>
-</tbody>
-</table>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Comparison Structures</h3>
-      <div class="md-content"><h2 id="usingthan">Using ніж (than)</h2>
+      <h3>Two Ways to Say &quot;Than&quot;</h3>
+      <div class="md-content"><p>Ukrainian offers two constructions for comparisons:</p>
+<h2 id="usingthan">Using ніж (than)</h2>
 <p><strong>X + comparative + ніж + Y</strong></p>
 <ul>
 <li>Він <strong>старший ніж</strong> я. (He is older than me.)</li>
 <li>Ця книга <strong>цікавіша ніж</strong> та. (This book is more interesting than that one.)</li>
 <li>Київ <strong>більший ніж</strong> Львів. (Kyiv is bigger than Lviv.)</li>
 </ul>
-<h2 id="usingaccusativethan">Using за + Accusative (than)</h2>
-<p><strong>X + comparative + за + Y (accusative)</strong></p>
+<h2 id="usingaccusative">Using за + Accusative</h2>
+<p><strong>X + comparative + за + Y (in accusative)</strong></p>
 <ul>
 <li>Він <strong>старший за</strong> мене. (He is older than me.)</li>
 <li>Ця книга <strong>цікавіша за</strong> ту. (This book is more interesting than that one.)</li>
 <li>Київ <strong>більший за</strong> Львів. (Kyiv is bigger than Lviv.)</li>
 </ul>
-<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
 <blockquote>
-  <p>Both <em>ніж</em> and <em>за</em> are common. <em>За</em> + accusative sounds slightly more colloquial, <em>ніж</em> is more formal.</p>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>Both forms are correct and interchangeable. <em>Ніж</em> sounds slightly more formal and literary. <em>За</em> + accusative sounds more colloquial and is preferred in casual speech. Mix them freely!</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>Compound Comparatives</h3>
-      <div class="md-content"><p>For longer adjectives, use <strong>більш</strong> (more) or <strong>менш</strong> (less):</p>
+      <h3>Compound Comparatives: більш/менш</h3>
+      <div class="md-content"><p>For emphasis or with longer adjectives, use <strong>більш</strong> (more) or <strong>менш</strong> (less) + adjective:</p>
 <table>
 <thead>
 <tr>
@@ -732,19 +819,34 @@ footer {
 <td>менш цікавий</td>
 <td>less interesting</td>
 </tr>
+<tr>
+<td>більш + adj</td>
+<td>більш ефективний</td>
+<td>more effective</td>
+</tr>
+<tr>
+<td>менш + adj</td>
+<td>менш популярний</td>
+<td>less popular</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p><strong>Examples in context:</strong></p>
 <ul>
 <li>Це <strong>більш важливе</strong> питання. (This is a more important question.)</li>
-<li>Він <strong>менш відомий</strong>. (He is less famous.)</li>
+<li>Він <strong>менш відомий</strong> за свого брата. (He is less famous than his brother.)</li>
+<li>Ця версія <strong>більш практична</strong>. (This version is more practical.)</li>
 </ul>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong></p>
+  <p>Ukrainian dubbing of superhero movies uses these: <em>Він більш могутній ніж раніше</em> (He's more powerful than before). When comparing super-powers, you need super-comparatives!</p>
+</blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>Adverbs of Degree</h3>
-      <div class="md-content"><p>Modify comparatives with:</p>
+      <h3>Degree Modifiers</h3>
+      <div class="md-content"><p>Make your comparisons more precise with these adverbs:</p>
 <table>
 <thead>
 <tr>
@@ -776,21 +878,33 @@ footer {
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p><strong>Examples in context:</strong></p>
 <ul>
 <li>Він <strong>набагато вищий</strong> за мене. (He's much taller than me.)</li>
 <li>Це <strong>трохи дешевше</strong>. (This is a little cheaper.)</li>
+<li>Ситуація <strong>значно краща</strong>. (The situation is significantly better.)</li>
+<li>Наступного року буде <strong>ще важче</strong>. (Next year it'll be even harder.)</li>
 </ul>
-<div class="callout callout-example" data-callout="example">🎮 Gamer's Corner</div>
+<p><strong>🎭 У магазині (At the Store)</strong></p>
+<p>— Скільки коштує цей светр?<br />
+— Дві тисячі гривень.<br />
+— О, це <strong>занадто дорого</strong>! Є щось <strong>дешевше</strong>?<br />
+— Ось цей. Він <strong>значно дешевший</strong> — тисяча.<br />
+— Все ще дорого… А ще <strong>дешевший</strong>?<br />
+— Ось найдешевший варіант — п'ятсот.<br />
+— <strong>Набагато краще</strong>! Беру!</p>
+<p><em>Shopping vocabulary + comparatives = survival Ukrainian!</em></p>
 <blockquote>
-  <p>In games, items might be <em>значно сильніші</em> (significantly stronger) or <em>трохи швидші</em> (a little faster)!</p>
+  <p>🎮 <strong>Gamer's Corner</strong></p>
+  <p>In games like <em>S.T.A.L.K.E.R.</em> or <em>The Witcher 3</em> (with Ukrainian localization), equipment stats use comparatives: <em>Цей меч значно сильніший</em> (This sword is significantly stronger), <em>Нова броня набагато краща</em> (The new armor is much better).</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>Common Phrases</h3>
-      <div class="md-content"><table>
+      <h3>Common Comparative Phrases</h3>
+      <div class="md-content"><p>Master these everyday expressions:</p>
+<table>
 <thead>
 <tr>
 <th>Ukrainian</th>
@@ -822,8 +936,54 @@ footer {
 <td>Немає нічого кращого.</td>
 <td>There's nothing better.</td>
 </tr>
+<tr>
+<td>Чим швидше, тим краще.</td>
+<td>The faster, the better.</td>
+</tr>
+<tr>
+<td>Краще пізно, ніж ніколи.</td>
+<td>Better late than never.</td>
+</tr>
 </tbody>
 </table>
+<p><strong>🎭 Порівняння (Making Comparisons)</strong></p>
+<p>— Яке місто <strong>краще</strong>: Київ чи Львів?<br />
+— Важко сказати. Київ <strong>більший</strong>, але Львів <strong>затишніший</strong>.<br />
+— А яке <strong>дорожче</strong>?<br />
+— Київ <strong>значно дорожчий</strong>. Квартири, їжа — все <strong>дорожче</strong>.<br />
+— Тоді Львів <strong>кращий</strong> для студентів?<br />
+— Мабуть. І кава там <strong>смачніша</strong>!</p>
+<p><em>City comparisons — a favorite Ukrainian topic!</em></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Common Mistakes to Avoid</h3>
+      <div class="md-content"><p><strong>❌ Using the positive instead of comparative:</strong></p>
+<ul>
+<li>Wrong: <em>Він великий за мене</em> (He big than me)</li>
+<li>Right: <em>Він більший за мене</em> (He is bigger than me)</li>
+</ul>
+<p><strong>❌ Mixing up ніж and за constructions:</strong></p>
+<ul>
+<li>Wrong: <em>Він старший ніж мене</em> (ніж + accusative)</li>
+<li>Right: <em>Він старший ніж я</em> (ніж + nominative)</li>
+<li>Right: <em>Він старший за мене</em> (за + accusative)</li>
+</ul>
+<p><strong>❌ Creating non-existent forms:</strong></p>
+<ul>
+<li>Wrong: <em>добріший</em> (from добрий)</li>
+<li>Right: <em>кращий</em> (irregular comparative)</li>
+</ul>
+<p><strong>❌ Forgetting consonant changes:</strong></p>
+<ul>
+<li>Wrong: <em>дорогіший</em></li>
+<li>Right: <em>дорожчий</em> (г → ж)</li>
+</ul>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>Even native speakers sometimes mix <em>ніж</em> and <em>за</em> constructions. If you accidentally say <em>ніж мене</em> instead of <em>ніж я</em>, people will understand you perfectly. Don't let grammar anxiety stop you from speaking!</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -835,9 +995,11 @@ footer {
       <div class="md-content"><p>Excellent work! You've learned:</p>
 <ul>
 <li><strong>Regular comparatives</strong>: stem + -ший/-іший (новіший, старіший)</li>
+<li><strong>Consonant changes</strong>: г → ж (дорогий → дорожчий)</li>
 <li><strong>Irregular comparatives</strong>: кращий, гірший, більший, менший, вищий, нижчий</li>
-<li><strong>Comparison with ніж</strong>: X + comparative + ніж + Y</li>
+<li><strong>Comparison with ніж</strong>: X + comparative + ніж + Y (nominative)</li>
 <li><strong>Comparison with за</strong>: X + comparative + за + Y (accusative)</li>
+<li><strong>Compound form</strong>: більш/менш + adjective</li>
 <li><strong>Degree adverbs</strong>: набагато (much), трохи (a little), значно (significantly)</li>
 </ul>
 <p><strong>Coming up next</strong>: The Best, The Worst — superlative adjectives!</p></div>
@@ -866,7 +1028,7 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Word Order</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Comparison Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
       <div id="activity-2-container" class="order-container"></div>
       <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
@@ -909,7 +1071,7 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Comparing Cities</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Short Comparisons</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/6</span></div>
       <div id="activity-8-container" class="order-container"></div>
       <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
@@ -925,7 +1087,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (22)</h3>
+        <h3>Словник (25)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -935,7 +1097,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">більший</td><td class="vocab-ipa">/ˈbilʲʃɪj/</td><td class="vocab-en">bigger</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">менший</td><td class="vocab-ipa">/ˈmɛnʃɪj/</td><td class="vocab-en">smaller</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">кращий</td><td class="vocab-ipa">/ˈkraʃtʃɪj/</td><td class="vocab-en">better</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">гірший</td><td class="vocab-ipa">/ˈɦirʃɪj/</td><td class="vocab-en">worse</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">вищий</td><td class="vocab-ipa">/ˈwɪʃtʃɪj/</td><td class="vocab-en">taller, higher</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">нижчий</td><td class="vocab-ipa">/ˈnɪʒtʃɪj/</td><td class="vocab-en">shorter, lower</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">довший</td><td class="vocab-ipa">/ˈdowʃɪj/</td><td class="vocab-en">longer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">коротший</td><td class="vocab-ipa">/koˈrotʃɪj/</td><td class="vocab-en">shorter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ширший</td><td class="vocab-ipa">/ˈʃɪrʃɪj/</td><td class="vocab-en">wider</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дорожчий</td><td class="vocab-ipa">/doˈroʒtʃɪj/</td><td class="vocab-en">more expensive</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дешевший</td><td class="vocab-ipa">/deˈʃɛwʃɪj/</td><td class="vocab-en">cheaper</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">швидший</td><td class="vocab-ipa">/ˈʃwɪdʃɪj/</td><td class="vocab-en">faster</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повільніший</td><td class="vocab-ipa">/poˈwilʲniʃɪj/</td><td class="vocab-en">slower</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сильніший</td><td class="vocab-ipa">/sɪlʲˈniʃɪj/</td><td class="vocab-en">stronger</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">легший</td><td class="vocab-ipa">/ˈlɛɦʃɪj/</td><td class="vocab-en">easier, lighter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">важчий</td><td class="vocab-ipa">/ˈwaʒtʃɪj/</td><td class="vocab-en">harder, heavier</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ніж</td><td class="vocab-ipa">/niʒ/</td><td class="vocab-en">than</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">за</td><td class="vocab-ipa">/za/</td><td class="vocab-en">than</td><td class="vocab-note">+ acc</td></tr><tr><td class="vocab-uk">набагато</td><td class="vocab-ipa">/nabaˈɦato/</td><td class="vocab-en">much (more)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">трохи</td><td class="vocab-ipa">/ˈtroxɪ/</td><td class="vocab-en">a little</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">близький</td><td class="vocab-ipa">/ˈblɪzʲkɪj/</td><td class="vocab-en">close, near</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ближчий</td><td class="vocab-ipa">/ˈblɪʒtʃɪj/</td><td class="vocab-en">closer, nearer</td><td class="vocab-note">irregular</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">більший</td><td class="vocab-ipa">/ˈbilʲʃɪj/</td><td class="vocab-en">bigger</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">менший</td><td class="vocab-ipa">/ˈmɛnʃɪj/</td><td class="vocab-en">smaller</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">кращий</td><td class="vocab-ipa">/ˈkraʃtʃɪj/</td><td class="vocab-en">better</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">гірший</td><td class="vocab-ipa">/ˈɦirʃɪj/</td><td class="vocab-en">worse</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">вищий</td><td class="vocab-ipa">/ˈwɪʃtʃɪj/</td><td class="vocab-en">taller, higher</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">нижчий</td><td class="vocab-ipa">/ˈnɪʒtʃɪj/</td><td class="vocab-en">shorter, lower</td><td class="vocab-note">irregular</td></tr><tr><td class="vocab-uk">довший</td><td class="vocab-ipa">/ˈdowʃɪj/</td><td class="vocab-en">longer</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">коротший</td><td class="vocab-ipa">/koˈrotʃɪj/</td><td class="vocab-en">shorter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ширший</td><td class="vocab-ipa">/ˈʃɪrʃɪj/</td><td class="vocab-en">wider</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вужчий</td><td class="vocab-ipa">/ˈwuʒtʃɪj/</td><td class="vocab-en">narrower</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">дорожчий</td><td class="vocab-ipa">/doˈroʒtʃɪj/</td><td class="vocab-en">more expensive</td><td class="vocab-note">г → ж</td></tr><tr><td class="vocab-uk">дешевший</td><td class="vocab-ipa">/deˈʃɛwʃɪj/</td><td class="vocab-en">cheaper</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">старший</td><td class="vocab-ipa">/ˈstarʃɪj/</td><td class="vocab-en">older</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">молодший</td><td class="vocab-ipa">/moˈlodʃɪj/</td><td class="vocab-en">younger</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">швидший</td><td class="vocab-ipa">/ˈʃwɪdʃɪj/</td><td class="vocab-en">faster</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">повільніший</td><td class="vocab-ipa">/poˈwilʲniʃɪj/</td><td class="vocab-en">slower</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сильніший</td><td class="vocab-ipa">/sɪlʲˈniʃɪj/</td><td class="vocab-en">stronger</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">слабший</td><td class="vocab-ipa">/ˈslabʃɪj/</td><td class="vocab-en">weaker</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">легший</td><td class="vocab-ipa">/ˈlɛɦʃɪj/</td><td class="vocab-en">easier, lighter</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">важчий</td><td class="vocab-ipa">/ˈwaʒtʃɪj/</td><td class="vocab-en">harder, heavier</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">ніж</td><td class="vocab-ipa">/niʒ/</td><td class="vocab-en">than</td><td class="vocab-note">+ nominative</td></tr><tr><td class="vocab-uk">за</td><td class="vocab-ipa">/za/</td><td class="vocab-en">than</td><td class="vocab-note">+ accusative</td></tr><tr><td class="vocab-uk">набагато</td><td class="vocab-ipa">/nabaˈɦato/</td><td class="vocab-en">much (more)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">трохи</td><td class="vocab-ipa">/ˈtroxɪ/</td><td class="vocab-en">a little</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">значно</td><td class="vocab-ipa">/ˈznatʃno/</td><td class="vocab-en">significantly</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -947,8 +1109,8 @@ footer {
   </main><footer>Module 15 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Form the Comparative","data":{"type":"fill-blank","items":[{"prompt":"великий → ___","answer":"більший"},{"prompt":"малий → ___","answer":"менший"},{"prompt":"добрий → ___","answer":"кращий"},{"prompt":"поганий → ___","answer":"гірший"},{"prompt":"високий → ___","answer":"вищий"},{"prompt":"низький → ___","answer":"нижчий"},{"prompt":"довгий → ___","answer":"довший"},{"prompt":"дорогий → ___","answer":"дорожчий"},{"prompt":"дешевий → ___","answer":"дешевший"},{"prompt":"швидкий → ___","answer":"швидший"},{"prompt":"старий → ___","answer":"старіший"},{"prompt":"молодий → ___","answer":"молодший"}]}},{"id":"activity-1","type":"match-up","title":"Positive to Comparative","data":{"type":"match-up","pairs":[{"left":"великий","right":"більший"},{"left":"малий","right":"менший"},{"left":"добрий","right":"кращий"},{"left":"поганий","right":"гірший"},{"left":"високий","right":"вищий"},{"left":"низький","right":"нижчий"},{"left":"дорогий","right":"дорожчий"},{"left":"дешевий","right":"дешевший"},{"left":"швидкий","right":"швидший"},{"left":"сильний","right":"сильніший"},{"left":"легкий","right":"легший"},{"left":"важкий","right":"важчий"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["набагато","старший","Він","ніж","я","на","десять","років"],"answer":"Він набагато старший ніж я на десять років.","translation":"He is much older than me by ten years."},{"words":["значно","більший","Київ","за","Львів","і","красивіший","теж"],"answer":"Київ значно більший за Львів і красивіший теж.","translation":"Kyiv is significantly bigger than Lviv and prettier too."},{"words":["набагато","кращий","варіант","Це","для","нашої","нової","квартири"],"answer":"Це набагато кращий варіант для нашої нової квартири.","translation":"This is a much better option for our new apartment."},{"words":["набагато","вищий","Він","за","мене","і","сильніший","теж"],"answer":"Він набагато вищий за мене і сильніший теж.","translation":"He is much taller than me and stronger too."},{"words":["трохи","дешевше","це","Це","ніж","той","новий","телефон"],"answer":"Це трохи дешевше ніж той новий телефон.","translation":"This is a little cheaper than that new phone."},{"words":["цікавіша","нова","книга","за","Ця","ту","стару","значно"],"answer":"Ця нова книга значно цікавіша за ту стару.","translation":"This new book is significantly more interesting than that old one."},{"words":["набагато","швидший","бігун","Він","за","мене","у","спорті"],"answer":"Він набагато швидший бігун за мене у спорті.","translation":"He is a much faster runner than me in sports."},{"words":["Що","краще","для","здоров'я","овочі","чи","фрукти","сьогодні"],"answer":"Що краще для здоров'я сьогодні овочі чи фрукти?","translation":"What's better for health today vegetables or fruit?"},{"words":["набагато","молодша","Вона","за","свою","старшу","сестру","Оксану"],"answer":"Вона набагато молодша за свою старшу сестру Оксану.","translation":"She is much younger than her older sister Oksana."},{"words":["значно","більш","важливе","Це","питання","для","нашої","компанії"],"answer":"Це значно більш важливе питання для нашої компанії.","translation":"This is a significantly more important question for our company."},{"words":["значно","дорожче","Це","авто","ніж","моя","стара","машина"],"answer":"Це авто значно дорожче ніж моя стара машина.","translation":"This car is significantly more expensive than my old car."},{"words":["ще","сильніший","спортсмен","Він","ніж","його","старший","брат"],"answer":"Він ще сильніший спортсмен ніж його старший брат.","translation":"He is an even stronger athlete than his older brother."}]}},{"id":"activity-3","type":"quiz","title":"Comparative Forms","data":{"type":"quiz","questions":[{"question":"The comparative of \"добрий\" (good) is:","options":["добріший","кращий","більш добрий","гарніший"],"correctIndex":1,"explanation":""},{"question":"The comparative of \"великий\" (big) is:","options":["великіший","більший","більш великий","вищий"],"correctIndex":1,"explanation":""},{"question":"\"Ніж\" and \"за\" are used to express:","options":["Equality","Comparison (than)","Superlative","Negation"],"correctIndex":1,"explanation":""},{"question":"\"Він старший за мене\" — \"за\" requires:","options":["Nominative","Genitive","Accusative","Instrumental"],"correctIndex":2,"explanation":""},{"question":"\"Набагато кращий\" means:","options":["Much better","A little better","The best","Better than"],"correctIndex":0,"explanation":""},{"question":"The comparative of \"поганий\" (bad) is:","options":["поганіший","гірший","менш добрий","злий"],"correctIndex":1,"explanation":""},{"question":"\"Трохи дорожчий\" means:","options":["Much more expensive","A little more expensive","The most expensive","Too expensive"],"correctIndex":1,"explanation":""},{"question":"The comparative of \"високий\" (tall) is:","options":["високіший","вищий","більш високий","вершній"],"correctIndex":1,"explanation":""},{"question":"\"Більш важливий\" uses:","options":["Compound formation","Suffix formation","Irregular formation","No formation"],"correctIndex":0,"explanation":""},{"question":"Which is irregular?","options":["великий → більший","новий → новіший","молодий → молодший","теплий → тепліший"],"correctIndex":0,"explanation":""},{"question":"\"Дешевший\" is the comparative of:","options":["дорогий","дешевий","дешево","дешевина"],"correctIndex":1,"explanation":""},{"question":"\"Значно більший\" means:","options":["Significantly bigger","A little bigger","The biggest","Much smaller"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Comparative Facts","data":{"type":"true-false","statements":[{"statement":"\"Кращий\" is the comparative of \"добрий.\"","isTrue":true,"explanation":""},{"statement":"\"За\" + accusative can replace \"ніж\" in comparisons.","isTrue":true,"explanation":""},{"statement":"All comparatives end in -іший.","isTrue":false,"explanation":""},{"statement":"\"Набагато\" intensifies comparatives.","isTrue":true,"explanation":""},{"statement":"\"Більший\" comes from \"більш + великий.\"","isTrue":false,"explanation":""},{"statement":"\"Гірший\" is the comparative of \"поганий.\"","isTrue":true,"explanation":""},{"statement":"\"Вищий\" means \"more visible.\"","isTrue":false,"explanation":""},{"statement":"\"Трохи\" makes comparisons stronger.","isTrue":false,"explanation":""},{"statement":"Both ніж and за are equally correct.","isTrue":true,"explanation":""},{"statement":"\"Менш цікавий\" means \"less interesting.\"","isTrue":true,"explanation":""},{"statement":"Regular comparatives add -ший/-іший.","isTrue":true,"explanation":""},{"statement":"\"Дорожчий\" has a consonant change.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Regular vs Irregular","data":{"type":"group-sort","groups":[{"id":"regular","name":"Regular","items":["новий → новіший","старий → старіший","швидкий → швидший","молодий → молодший","теплий → тепліший","дорогий → дорожчий"]},{"id":"irregular","name":"Irregular","items":["великий → більший","малий → менший","добрий → кращий","високий → вищий","низький → нижчий","поганий → гірший"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Comparisons in Context","data":{"type":"fill-blank","items":[{"prompt":"Мій брат ___ за мене на три роки. (older)","answer":"старший"},{"prompt":"Ця машина ___ ніж моя стара. (faster)","answer":"швидша"},{"prompt":"Київ ___ за Львів. (bigger)","answer":"більший"},{"prompt":"Сьогодні погода ___ ніж учора. (better)","answer":"краща"},{"prompt":"Цей готель ___ за той на вулиці. (cheaper)","answer":"дешевший"},{"prompt":"Ця задача ___ ніж попередня. (harder)","answer":"важча"},{"prompt":"Моя сестра ___ за мене на голову. (shorter)","answer":"нижча"},{"prompt":"Ця книга ___ за ту стару. (more interesting)","answer":"цікавіша"},{"prompt":"Цей фільм ___ ніж той комедія. (worse)","answer":"гірший"},{"prompt":"Він ___ спортсмен у нашій команді. (stronger)","answer":"сильніший"},{"prompt":"Ця кава ___ за ту в кафе. (warmer)","answer":"тепліша"},{"prompt":"Цей шлях ___ до центру міста. (shorter)","answer":"коротший"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Comparative","data":{"type":"select","items":[{"question":"Він ... за мене на п'ять років.","options":[{"text":"старший","correct":true},{"text":"більш старий","correct":false}]},{"question":"Ця сукня ... ніж та синя.","options":[{"text":"гарна","correct":false},{"text":"гарніша","correct":true}]},{"question":"Цей ресторан ... за той на розі.","options":[{"text":"дорожчий","correct":true},{"text":"більш дорогий","correct":false}]},{"question":"Моя квартира ... за твою.","options":[{"text":"великіша","correct":false},{"text":"більша","correct":true}]},{"question":"Ця проблема ... ніж я думав.","options":[{"text":"складна","correct":false},{"text":"складніша","correct":true}]},{"question":"Він біжить ... за всіх у класі.","options":[{"text":"швидше","correct":true},{"text":"більш швидко","correct":false}]},{"question":"Сьогодні ... ніж учора.","options":[{"text":"холодніше","correct":true},{"text":"холодно","correct":false}]},{"question":"Ця книга ... за ту детективну.","options":[{"text":"цікавіша","correct":true},{"text":"більш цікава","correct":false}]},{"question":"Він ... студент у групі.","options":[{"text":"добрий","correct":false},{"text":"кращий","correct":true}]},{"question":"Ця ситуація ... ніж раніше.","options":[{"text":"гірша","correct":true},{"text":"погана","correct":false}]},{"question":"Мій дім ... до станції метро.","options":[{"text":"ближчий","correct":true},{"text":"близько","correct":false}]},{"question":"Цей телефон ... за старий.","options":[{"text":"легший","correct":true},{"text":"легко","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Comparing Cities","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Київ","—","столиця","України","і","найбільше","місто."],"answer":"Київ — столиця України і найбільше місто."},{"words":["Львів","менший","за","Київ,","але","дуже","красивий."],"answer":"Львів менший за Київ, але дуже красивий."},{"words":["Одеса","тепліша","за","Львів","через","море."],"answer":"Одеса тепліша за Львів через море."},{"words":["Харків","більший","за","Одесу","і","Львів."],"answer":"Харків більший за Одесу і Львів."},{"words":["Дніпро","новіше","місто","ніж","Львів."],"answer":"Дніпро новіше місто ніж Львів."},{"words":["Усі","міста","цікаві,","але","кожне","по-своєму."],"answer":"Усі міста цікаві, але кожне по-своєму."}]}},{"id":"activity-9","type":"quiz","title":"Comparative Mastery","data":{"type":"quiz","questions":[{"question":"Неправильний порівняльний ступінь від \"добрий\":","options":["кращий","добріший","більш добрий","найдобріший"],"correctIndex":0,"explanation":""},{"question":"\"За\" у порівняннях вимагає:","options":["Називного відмінка","Родового відмінка","Знахідного відмінка","Орудного відмінка"],"correctIndex":2,"explanation":""},{"question":"\"Набагато кращий\" означає:","options":["Much better","A little better","The best","Better than nothing"],"correctIndex":0,"explanation":""},{"question":"Порівняльний ступінь від \"великий\":","options":["великіший","більший","великуватий","найвеликіший"],"correctIndex":1,"explanation":""},{"question":"\"Ніж\" і \"за\" у порівняннях:","options":["\"Ніж\" офіційніше","\"За\" офіційніше","Обидва правильні, \"за\" розмовніше","Мають різне значення"],"correctIndex":2,"explanation":""},{"question":"\"Трохи дорожчий\" означає:","options":["Much more expensive","A little more expensive","The most expensive","Less expensive"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"поганий\":","options":["поганіший","гірший","більш поганий","злий"],"correctIndex":1,"explanation":""},{"question":"\"Значно більший\" — \"значно\" підсилює:","options":["Трохи","Суттєво","Нейтрально","Зменшує"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"високий\":","options":["високіший","вищий","більш високий","височенний"],"correctIndex":1,"explanation":""},{"question":"\"Дорогий → дорожчий\" — яка зміна?","options":["г → ж перед суфіксом","Додавання префікса","Зміна кореня","Немає змін"],"correctIndex":0,"explanation":""},{"question":"\"Більш важливий\" — це:","options":["Складений порівняльний ступінь","Простий порівняльний ступінь","Найвищий ступінь","Звичайний прикметник"],"correctIndex":0,"explanation":""},{"question":"Який НЕ є неправильним порівняльним?","options":["кращий (від добрий)","гірший (від поганий)","новіший (від новий)","більший (від великий)"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
-    const vocabData = [{"uk":"більший","translit":"","en":"bigger","note":"irregular"},{"uk":"менший","translit":"","en":"smaller","note":"irregular"},{"uk":"кращий","translit":"","en":"better","note":"irregular"},{"uk":"гірший","translit":"","en":"worse","note":"irregular"},{"uk":"вищий","translit":"","en":"taller, higher","note":"irregular"},{"uk":"нижчий","translit":"","en":"shorter, lower","note":"irregular"},{"uk":"довший","translit":"","en":"longer","note":""},{"uk":"коротший","translit":"","en":"shorter","note":""},{"uk":"ширший","translit":"","en":"wider","note":""},{"uk":"дорожчий","translit":"","en":"more expensive","note":""},{"uk":"дешевший","translit":"","en":"cheaper","note":""},{"uk":"швидший","translit":"","en":"faster","note":""},{"uk":"повільніший","translit":"","en":"slower","note":""},{"uk":"сильніший","translit":"","en":"stronger","note":""},{"uk":"легший","translit":"","en":"easier, lighter","note":""},{"uk":"важчий","translit":"","en":"harder, heavier","note":""},{"uk":"ніж","translit":"","en":"than","note":""},{"uk":"за","translit":"","en":"than","note":"+ acc"},{"uk":"набагато","translit":"","en":"much (more)","note":""},{"uk":"трохи","translit":"","en":"a little","note":""},{"uk":"близький","translit":"","en":"close, near","note":""},{"uk":"ближчий","translit":"","en":"closer, nearer","note":"irregular"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Form the Comparative","data":{"type":"fill-blank","items":[{"prompt":"великий → ___","answer":"більший","explanation":"Irregular comparative — must memorize"},{"prompt":"малий → ___","answer":"менший","explanation":"Irregular comparative — must memorize"},{"prompt":"добрий → ___","answer":"кращий","explanation":"Irregular — not \"добріший\""},{"prompt":"поганий → ___","answer":"гірший","explanation":"Irregular — not \"поганіший\""},{"prompt":"високий → ___","answer":"вищий","explanation":"Irregular — не \"високіший\""},{"prompt":"низький → ___","answer":"нижчий","explanation":"Irregular — не \"низькіший\""},{"prompt":"довгий → ___","answer":"довший","explanation":"Regular -ший formation"},{"prompt":"дорогий → ___","answer":"дорожчий","explanation":"Consonant change: г → ж"},{"prompt":"дешевий → ___","answer":"дешевший","explanation":"Regular formation"},{"prompt":"швидкий → ___","answer":"швидший","explanation":"Regular formation"},{"prompt":"старий → ___","answer":"старший","explanation":"Regular formation"},{"prompt":"молодий → ___","answer":"молодший","explanation":"Regular formation"}]}},{"id":"activity-1","type":"match-up","title":"Positive to Comparative","data":{"type":"match-up","pairs":[{"left":"великий","right":"більший"},{"left":"малий","right":"менший"},{"left":"добрий","right":"кращий"},{"left":"поганий","right":"гірший"},{"left":"високий","right":"вищий"},{"left":"низький","right":"нижчий"},{"left":"дорогий","right":"дорожчий"},{"left":"дешевий","right":"дешевший"},{"left":"швидкий","right":"швидший"},{"left":"сильний","right":"сильніший"},{"left":"легкий","right":"легший"},{"left":"важкий","right":"важчий"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Comparison Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["набагато","старший","Він","за","мене","і","досвідченіший","теж"],"answer":"Він набагато старший за мене і досвідченіший теж.","translation":"He is much older than me and more experienced too."},{"words":["значно","більший","Київ","за","Львів","і","дорожчий","теж"],"answer":"Київ значно більший за Львів і дорожчий теж.","translation":"Kyiv is significantly bigger than Lviv and more expensive too."},{"words":["набагато","кращий","варіант","Це","для","нашої","нової","роботи"],"answer":"Це набагато кращий варіант для нашої нової роботи.","translation":"This is a much better option for our new work."},{"words":["набагато","вищий","баскетболіст","Він","за","мене","у","команді"],"answer":"Він набагато вищий баскетболіст за мене у команді.","translation":"He is a much taller basketball player than me in the team."},{"words":["трохи","дешевше","це","ніж","той","новий","гарний","телефон"],"answer":"Це трохи дешевше ніж той новий гарний телефон.","translation":"This is a little cheaper than that new nice phone."},{"words":["цікавіша","книга","за","Ця","ту","стару","значно","детективну"],"answer":"Ця книга значно цікавіша за ту стару детективну.","translation":"This book is significantly more interesting than that old detective one."},{"words":["набагато","швидший","бігун","Він","за","мене","у","спорті"],"answer":"Він набагато швидший бігун за мене у спорті.","translation":"He is a much faster runner than me in sports."},{"words":["Що","краще","для","нашого","здоров'я","овочі","чи","фрукти"],"answer":"Що краще для нашого здоров'я овочі чи фрукти?","translation":"What's better for our health vegetables or fruit?"},{"words":["набагато","молодша","Вона","за","свою","старшу","рідну","сестру"],"answer":"Вона набагато молодша за свою старшу рідну сестру.","translation":"She is much younger than her older biological sister."},{"words":["значно","більш","важливе","Це","питання","для","нашої","компанії"],"answer":"Це значно більш важливе питання для нашої компанії.","translation":"This is a significantly more important question for our company."},{"words":["значно","дорожче","Це","авто","ніж","моя","стара","машина"],"answer":"Це авто значно дорожче ніж моя стара машина.","translation":"This car is significantly more expensive than my old car."},{"words":["ще","сильніший","спортсмен","Він","ніж","його","рідний","брат"],"answer":"Він ще сильніший спортсмен ніж його рідний брат.","translation":"He is an even stronger athlete than his biological brother."}]}},{"id":"activity-3","type":"quiz","title":"Comparative Forms","data":{"type":"quiz","questions":[{"question":"Порівняльний ступінь від \"добрий\":","options":["добріший","кращий","більш добрий","гарніший"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"великий\":","options":["великіший","більший","більш великий","вищий"],"correctIndex":1,"explanation":""},{"question":"\"Ніж\" і \"за\" у порівняннях означають:","options":["Рівність","Порівняння (than)","Найвищий ступінь","Заперечення"],"correctIndex":1,"explanation":""},{"question":"\"Він старший за мене\" — \"за\" вимагає:","options":["Називного відмінка","Родового відмінка","Знахідного відмінка","Орудного відмінка"],"correctIndex":2,"explanation":""},{"question":"\"Набагато кращий\" означає:","options":["Much better","A little better","The best","Better than"],"correctIndex":0,"explanation":""},{"question":"Порівняльний ступінь від \"поганий\":","options":["поганіший","гірший","менш добрий","злий"],"correctIndex":1,"explanation":""},{"question":"\"Трохи дорожчий\" означає:","options":["Much more expensive","A little more expensive","The most expensive","Too expensive"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"високий\":","options":["високіший","вищий","більш високий","вершній"],"correctIndex":1,"explanation":""},{"question":"\"Більш важливий\" — це:","options":["Складений порівняльний ступінь","Простий порівняльний ступінь","Неправильна форма","Найвищий ступінь"],"correctIndex":0,"explanation":""},{"question":"Яка пара є неправильною (irregular)?","options":["великий → більший","новий → новіший","молодий → молодший","теплий → тепліший"],"correctIndex":0,"explanation":""},{"question":"\"Дешевший\" — порівняльний ступінь від:","options":["дорогий","дешевий","дешево","дешевина"],"correctIndex":1,"explanation":""},{"question":"\"Значно більший\" означає:","options":["Significantly bigger","A little bigger","The biggest","Much smaller"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Comparative Facts","data":{"type":"true-false","statements":[{"statement":"\"Кращий\" — порівняльний ступінь від \"добрий\".","isTrue":true,"explanation":""},{"statement":"\"За\" + знахідний відмінок замінює \"ніж\" у порівняннях.","isTrue":true,"explanation":""},{"statement":"Усі порівняльні ступені закінчуються на -іший.","isTrue":false,"explanation":""},{"statement":"\"Набагато\" підсилює порівняльний ступінь.","isTrue":true,"explanation":""},{"statement":"\"Більший\" утворено від \"більш + великий\".","isTrue":false,"explanation":""},{"statement":"\"Гірший\" — порівняльний ступінь від \"поганий\".","isTrue":true,"explanation":""},{"statement":"\"Вищий\" означає \"більш видимий\".","isTrue":false,"explanation":""},{"statement":"\"Трохи\" робить порівняння сильнішим.","isTrue":false,"explanation":""},{"statement":"\"Ніж\" і \"за\" однаково правильні.","isTrue":true,"explanation":""},{"statement":"\"Менш цікавий\" означає \"less interesting\".","isTrue":true,"explanation":""},{"statement":"Регулярні порівняльні ступені додають -ший/-іший.","isTrue":true,"explanation":""},{"statement":"У \"дорожчий\" є зміна приголосного.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Regular vs Irregular","data":{"type":"group-sort","groups":[{"id":"regular","name":"Regular","items":["новий → новіший","старий → старіший","швидкий → швидший","молодий → молодший","теплий → тепліший","дорогий → дорожчий"]},{"id":"irregular","name":"Irregular","items":["великий → більший","малий → менший","добрий → кращий","високий → вищий","низький → нижчий","поганий → гірший"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Comparisons in Context","data":{"type":"fill-blank","items":[{"prompt":"Мій брат ___ за мене на три роки. (older)","answer":"старший","explanation":"Comparative of старий"},{"prompt":"Ця машина ___ ніж моя стара. (faster)","answer":"швидша","explanation":"Feminine comparative of швидкий"},{"prompt":"Київ ___ за Львів у три рази. (bigger)","answer":"більший","explanation":"Irregular comparative of великий"},{"prompt":"Сьогодні погода ___ ніж учора. (better)","answer":"краща","explanation":"Feminine irregular comparative"},{"prompt":"Цей готель ___ за той біля вокзалу. (cheaper)","answer":"дешевший","explanation":"Comparative of дешевий"},{"prompt":"Ця задача ___ ніж попередня. (harder)","answer":"важча","explanation":"Feminine comparative of важкий"},{"prompt":"Моя сестра ___ за мене на голову. (shorter)","answer":"нижча","explanation":"Feminine irregular comparative"},{"prompt":"Ця книга ___ за ту стару. (more interesting)","answer":"цікавіша","explanation":"Comparative of цікавий"},{"prompt":"Цей фільм ___ ніж та комедія. (worse)","answer":"гірший","explanation":"Irregular comparative of поганий"},{"prompt":"Він ___ спортсмен у нашій команді. (stronger)","answer":"сильніший","explanation":"Comparative of сильний"},{"prompt":"Ця кава ___ за ту в кафе. (warmer)","answer":"тепліша","explanation":"Feminine comparative of теплий"},{"prompt":"Цей шлях ___ до центру міста. (shorter)","answer":"коротший","explanation":"Comparative of короткий"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Comparative","data":{"type":"select","items":[{"question":"Він ... за мене на п'ять років.","options":[{"text":"старший","correct":true},{"text":"більш старий","correct":false}]},{"question":"Ця сукня ... ніж та синя.","options":[{"text":"гарна","correct":false},{"text":"гарніша","correct":true}]},{"question":"Цей ресторан ... за той на розі.","options":[{"text":"дорожчий","correct":true},{"text":"більш дорогий","correct":false}]},{"question":"Моя квартира ... за твою.","options":[{"text":"великіша","correct":false},{"text":"більша","correct":true}]},{"question":"Ця проблема ... ніж я думав.","options":[{"text":"складна","correct":false},{"text":"складніша","correct":true}]},{"question":"Він біжить ... за всіх у класі.","options":[{"text":"швидше","correct":true},{"text":"більш швидко","correct":false}]},{"question":"Сьогодні ... ніж учора.","options":[{"text":"холодніше","correct":true},{"text":"холодно","correct":false}]},{"question":"Ця книга ... за ту детективну.","options":[{"text":"цікавіша","correct":true},{"text":"більш цікава","correct":false}]},{"question":"Він ... студент у нашій групі.","options":[{"text":"добрий","correct":false},{"text":"кращий","correct":true}]},{"question":"Ця ситуація ... ніж раніше.","options":[{"text":"гірша","correct":true},{"text":"погана","correct":false}]},{"question":"Мій дім ... до станції метро.","options":[{"text":"ближчий","correct":true},{"text":"близько","correct":false}]},{"question":"Цей телефон ... за старий.","options":[{"text":"легший","correct":true},{"text":"легко","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Short Comparisons","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Київ","більший","за","Львів","набагато","сьогодні","ще","й"],"answer":"Київ сьогодні набагато більший за Львів ще й.","translation":"Kyiv today is much bigger than Lviv even."},{"words":["цікавіший","цей","фільм","ніж","той","старий","новий","значно"],"answer":"Цей новий фільм значно цікавіший ніж той старий.","translation":"This new movie is significantly more interesting than that old one."},{"words":["Одеса","тепліша","за","Львів","набагато","влітку","і","взимку"],"answer":"Одеса набагато тепліша за Львів влітку і взимку.","translation":"Odesa is much warmer than Lviv in summer and winter."},{"words":["сестра","молодша","Моя","за","мене","значно","рідна","старша"],"answer":"Моя рідна сестра значно молодша за мене старша.","translation":"My biological sister is significantly younger than me older."},{"words":["телефон","дорожчий","Цей","за","той","трохи","новий","старий"],"answer":"Цей новий телефон трохи дорожчий за той старий.","translation":"This new phone is a little more expensive than that old one."},{"words":["Поїзд","швидше","їде","ніж","автобус","значно","сьогодні","завжди"],"answer":"Поїзд завжди їде значно швидше ніж автобус сьогодні.","translation":"The train always goes significantly faster than the bus today."}]}},{"id":"activity-9","type":"quiz","title":"Comparative Mastery","data":{"type":"quiz","questions":[{"question":"Неправильний порівняльний ступінь від \"добрий\":","options":["кращий","добріший","більш добрий","найдобріший"],"correctIndex":0,"explanation":""},{"question":"\"За\" у порівняннях вимагає:","options":["Називного відмінка","Родового відмінка","Знахідного відмінка","Орудного відмінка"],"correctIndex":2,"explanation":""},{"question":"\"Набагато кращий\" означає:","options":["Much better","A little better","The best","Better than nothing"],"correctIndex":0,"explanation":""},{"question":"Порівняльний ступінь від \"великий\":","options":["великіший","більший","великуватий","найвеликіший"],"correctIndex":1,"explanation":""},{"question":"\"Ніж\" і \"за\" у порівняннях:","options":["\"Ніж\" офіційніше","\"За\" офіційніше","Обидва правильні, \"за\" розмовніше","Мають різне значення"],"correctIndex":2,"explanation":""},{"question":"\"Трохи дорожчий\" означає:","options":["Much more expensive","A little more expensive","The most expensive","Less expensive"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"поганий\":","options":["поганіший","гірший","більш поганий","злий"],"correctIndex":1,"explanation":""},{"question":"\"Значно більший\" — \"значно\" означає:","options":["Трохи","Суттєво","Нейтрально","Менше"],"correctIndex":1,"explanation":""},{"question":"Порівняльний ступінь від \"високий\":","options":["високіший","вищий","більш високий","височенний"],"correctIndex":1,"explanation":""},{"question":"\"Дорогий → дорожчий\" — яка зміна?","options":["г → ж перед суфіксом","Додавання префікса","Зміна кореня","Немає змін"],"correctIndex":0,"explanation":""},{"question":"\"Більш важливий\" — це:","options":["Складений порівняльний ступінь","Простий порівняльний ступінь","Найвищий ступінь","Звичайний прикметник"],"correctIndex":0,"explanation":""},{"question":"Який НЕ є неправильним порівняльним?","options":["кращий (від добрий)","гірший (від поганий)","новіший (від новий)","більший (від великий)"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"більший","translit":"","en":"bigger","note":"irregular"},{"uk":"менший","translit":"","en":"smaller","note":"irregular"},{"uk":"кращий","translit":"","en":"better","note":"irregular"},{"uk":"гірший","translit":"","en":"worse","note":"irregular"},{"uk":"вищий","translit":"","en":"taller, higher","note":"irregular"},{"uk":"нижчий","translit":"","en":"shorter, lower","note":"irregular"},{"uk":"довший","translit":"","en":"longer","note":""},{"uk":"коротший","translit":"","en":"shorter","note":""},{"uk":"ширший","translit":"","en":"wider","note":""},{"uk":"вужчий","translit":"","en":"narrower","note":""},{"uk":"дорожчий","translit":"","en":"more expensive","note":"г → ж"},{"uk":"дешевший","translit":"","en":"cheaper","note":""},{"uk":"старший","translit":"","en":"older","note":""},{"uk":"молодший","translit":"","en":"younger","note":""},{"uk":"швидший","translit":"","en":"faster","note":""},{"uk":"повільніший","translit":"","en":"slower","note":""},{"uk":"сильніший","translit":"","en":"stronger","note":""},{"uk":"слабший","translit":"","en":"weaker","note":""},{"uk":"легший","translit":"","en":"easier, lighter","note":""},{"uk":"важчий","translit":"","en":"harder, heavier","note":""},{"uk":"ніж","translit":"","en":"than","note":"+ nominative"},{"uk":"за","translit":"","en":"than","note":"+ accusative"},{"uk":"набагато","translit":"","en":"much (more)","note":""},{"uk":"трохи","translit":"","en":"a little","note":""},{"uk":"значно","translit":"","en":"significantly","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -2272,6 +2434,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -925,11 +966,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Practical Vocabulary</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Post Office and Bank Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Practical Vocabulary</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -956,7 +1004,7 @@ footer {
   </main><footer>Module 09 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Sentences","data":{"type":"fill-blank","items":[{"prompt":"Я хочу відправити ___ (лист).","answer":"листа","hints":["лист"]},{"prompt":"Скільки коштує ___ (марка)?","answer":"марка","hints":["марка"]},{"prompt":"Мені потрібен ___ (конверт).","answer":"конверт","hints":["конверт"]},{"prompt":"Я хочу відкрити ___ (рахунок).","answer":"рахунок","hints":["рахунок"]},{"prompt":"Де можна обміняти ___ (валюта)?","answer":"валюту","hints":["валюта"]},{"prompt":"Моя ___ (картка) не працює.","answer":"картка","hints":["картка"]},{"prompt":"Який сьогодні ___ (курс) долара?","answer":"курс","hints":["курс"]},{"prompt":"Ваша ___ (посилка) прибула.","answer":"посилка","hints":["посилка"]},{"prompt":"Напишіть ___ (адреса) тут.","answer":"адресу","hints":["адреса"]},{"prompt":"Введіть ваш ___ (пін-код).","answer":"пін-код","hints":["пін-код"]},{"prompt":"Мені потрібно зняти ___ (гроші).","answer":"гроші","hints":["гроші"]},{"prompt":"Де найближчий ___ (банкомат)?","answer":"банкомат","hints":["банкомат"]}]}},{"id":"activity-1","type":"match-up","title":"Ukrainian to English","data":{"type":"match-up","pairs":[{"left":"пошта","right":"post office"},{"left":"лист","right":"letter"},{"left":"посилка","right":"package"},{"left":"марка","right":"stamp"},{"left":"банк","right":"bank"},{"left":"рахунок","right":"account"},{"left":"картка","right":"card"},{"left":"гроші","right":"money"},{"left":"готівка","right":"cash"},{"left":"переказ","right":"transfer"},{"left":"валюта","right":"currency"},{"left":"банкомат","right":"ATM"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["відправити","хочу","Я","листа","до","Німеччини","сьогодні","важливого"],"answer":"Я хочу відправити важливого листа до Німеччини сьогодні.","translation":"I want to send an important letter to Germany today."},{"words":["марка","коштує","Скільки","одна","для","листа","за","кордон"],"answer":"Скільки коштує одна марка для листа за кордон?","translation":"How much is one stamp for a letter abroad?"},{"words":["конверт","Мені","потрібен","великий","для","важливих","моїх","документів"],"answer":"Мені потрібен великий конверт для моїх важливих документів.","translation":"I need a big envelope for my important documents."},{"words":["рахунок","відкрити","хочу","Я","новий","у","вашому","банку"],"answer":"Я хочу відкрити новий рахунок у вашому банку.","translation":"I want to open a new account at your bank."},{"words":["валюту","можна","обміняти","Де","тут","поблизу","американську","іноземну"],"answer":"Де тут поблизу можна обміняти іноземну американську валюту?","translation":"Where nearby can I exchange foreign American currency?"},{"words":["не","Моя","працює","картка","банківська","чомусь","сьогодні","нова"],"answer":"Моя нова банківська картка чомусь сьогодні не працює.","translation":"My new bank card doesn't work for some reason today."},{"words":["долара","курс","сьогодні","Який","у","вашому","американського","банку"],"answer":"Який сьогодні курс американського долара у вашому банку?","translation":"What is today's American dollar rate at your bank?"},{"words":["прибула","Ваша","посилка","велика","з","Америки","нарешті","очікувана"],"answer":"Ваша очікувана велика посилка з Америки нарешті прибула.","translation":"Your expected big package from America has finally arrived."},{"words":["гроші","зняти","Мені","потрібно","з","мого","рахунку","терміново"],"answer":"Мені терміново потрібно зняти гроші з мого рахунку.","translation":"I urgently need to withdraw money from my account."},{"words":["банкомат","найближчий","Де","тут","працює","який","цілодобово","знаходиться"],"answer":"Де тут знаходиться найближчий банкомат, який працює цілодобово?","translation":"Where is the nearest ATM that works 24/7?"},{"words":["тут","Підпишіть","ласка","будь","внизу","документа","цього","важливого"],"answer":"Підпишіть, будь ласка, тут внизу цього важливого документа.","translation":"Please sign here at the bottom of this important document."},{"words":["пін-код","Введіть","ваш","будь","ласка","секретний","особистий","новий"],"answer":"Введіть, будь ласка, ваш новий особистий секретний пін-код.","translation":"Please enter your new personal secret PIN code."}]}},{"id":"activity-3","type":"quiz","title":"Where Do You Hear This?","data":{"type":"quiz","questions":[{"question":"\"Скільки коштує марка?\"","options":["At the post office","At the bank","At the store","At the restaurant"],"correctIndex":0,"explanation":""},{"question":"\"Який сьогодні курс долара?\"","options":["At the post office","At the bank","At the doctor","At school"],"correctIndex":1,"explanation":""},{"question":"\"Ваша посилка прибула.\"","options":["At the post office","At the bank","At the airport","At the hotel"],"correctIndex":0,"explanation":""},{"question":"\"Введіть ваш пін-код.\"","options":["At the post office","At the bank/ATM","At the pharmacy","At the cinema"],"correctIndex":1,"explanation":""},{"question":"\"Напишіть адресу отримувача.\"","options":["At the post office","At the bank","At the hospital","At the museum"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу відкрити рахунок.\"","options":["At the post office","At the bank","At the restaurant","At the gym"],"correctIndex":1,"explanation":""},{"question":"\"Авіапошта чи звичайна?\"","options":["At the post office","At the bank","At the airport","At the travel agency"],"correctIndex":0,"explanation":""},{"question":"\"Де можна обміняти валюту?\"","options":["At the post office","At the bank","At the supermarket","At the library"],"correctIndex":1,"explanation":""},{"question":"\"Заповніть цю форму.\"","options":["At both","Only at the post office","Only at the bank","Neither"],"correctIndex":0,"explanation":""},{"question":"\"Візьміть чек.\"","options":["At the post office","At the bank/ATM","At the pharmacy","At the hotel"],"correctIndex":1,"explanation":""},{"question":"\"Куди відправляєте?\"","options":["At the post office","At the bank","At the restaurant","At the taxi"],"correctIndex":0,"explanation":""},{"question":"\"Моя картка не працює.\"","options":["At the post office","At the bank/ATM","At the theater","At the school"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Post Office & Bank Facts","data":{"type":"true-false","statements":[{"statement":"\"Пошта\" means post office.","isTrue":true,"explanation":""},{"statement":"\"Банкомат\" means bank teller.","isTrue":false,"explanation":""},{"statement":"\"Готівка\" means cash.","isTrue":true,"explanation":""},{"statement":"\"Листівка\" means a big letter.","isTrue":false,"explanation":""},{"statement":"\"Індекс\" means postal code.","isTrue":true,"explanation":""},{"statement":"\"Переказ\" means translation.","isTrue":false,"explanation":""},{"statement":"\"Марка\" means stamp.","isTrue":true,"explanation":""},{"statement":"\"Валюта\" means currency.","isTrue":true,"explanation":""},{"statement":"\"Рахунок\" means receipt.","isTrue":false,"explanation":""},{"statement":"\"Каса\" means cash desk.","isTrue":true,"explanation":""},{"statement":"Ukrainian postal codes have 6 digits.","isTrue":false,"explanation":""},{"statement":"\"Курс\" means exchange rate.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Post Office vs Bank","data":{"type":"group-sort","groups":[{"id":"post-office","name":"Post Office","items":["лист","марка","посилка","конверт","адреса","листівка"],"nameUk":"Пошта"},{"id":"bank","name":"Bank","items":["рахунок","валюта","картка","переказ","готівка","банкомат"],"nameUk":"Банк"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Post Office Dialogue","data":{"type":"fill-blank","items":[{"prompt":"Доброго дня! Я хочу ___ листа до Польщі. (send)","answer":"відправити"},{"prompt":"___ коштує марка? (how much)","answer":"Скільки"},{"prompt":"Ваша ___ прибула вчора. (package)","answer":"посилка"},{"prompt":"Напишіть ___ отримувача тут. (address)","answer":"адресу"},{"prompt":"Мені потрібен ___ для документів. (envelope)","answer":"конверт"},{"prompt":"Авіа___ чи звичайна? (mail)","answer":"пошта"},{"prompt":"Який ___ вашої адреси? (postal code)","answer":"індекс"},{"prompt":"Хто ___ цього листа? (sender)","answer":"відправник"},{"prompt":"Лист іде приблизно ___ днів. (number 7)","answer":"сім"},{"prompt":"___ можна купити марки? (where)","answer":"Де"},{"prompt":"Заповніть цю ___, будь ласка. (form)","answer":"форму"},{"prompt":"Ваш лист буде доставлений ___. (to the recipient)","answer":"отримувачу"}]}},{"id":"activity-7","type":"select","title":"Bank or Post Office?","data":{"type":"select","items":[{"question":"\"Я хочу відкрити рахунок.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Скільки коштує марка?\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Який курс долара?\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Ваша посилка прибула.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Введіть пін-код.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Напишіть адресу отримувача.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Мені потрібно зняти гроші.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Авіапошта чи звичайна?\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Де найближчий банкомат?\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Мені потрібен конверт.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Я хочу обміняти валюту.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Ваша картка не працює.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Practical Vocabulary","data":{"type":"quiz","questions":[{"question":"\"Готівка\" means:","options":["card","cash","account","transfer"],"correctIndex":1,"explanation":""},{"question":"\"Рахунок\" in banking means:","options":["account","bill","rate","card"],"correctIndex":0,"explanation":""},{"question":"\"Переказ\" means:","options":["translation","transfer","exchange","withdrawal"],"correctIndex":1,"explanation":""},{"question":"\"Індекс\" in postal context means:","options":["index","postal code","address","package"],"correctIndex":1,"explanation":""},{"question":"\"Курс\" in banking means:","options":["course","exchange rate","direction","card"],"correctIndex":1,"explanation":""},{"question":"\"Листівка\" is:","options":["a small letter","a postcard","an envelope","a stamp"],"correctIndex":1,"explanation":""},{"question":"\"Банкомат\" is:","options":["a bank teller","an ATM","a bank building","a cash desk"],"correctIndex":1,"explanation":""},{"question":"\"Відправник\" is:","options":["sender","recipient","package","address"],"correctIndex":0,"explanation":""},{"question":"\"Отримувач\" is:","options":["sender","recipient","package","stamp"],"correctIndex":1,"explanation":""},{"question":"\"Каса\" is:","options":["cash desk","safe","ATM","card"],"correctIndex":0,"explanation":""},{"question":"\"Зняти гроші\" means:","options":["to deposit money","to withdraw money","to transfer money","to exchange money"],"correctIndex":1,"explanation":""},{"question":"\"Обміняти валюту\" means:","options":["to withdraw currency","to deposit currency","to exchange currency","to transfer currency"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete the Sentences","data":{"type":"fill-blank","items":[{"prompt":"Я хочу відправити ___ (лист).","answer":"листа","hints":["лист"]},{"prompt":"Скільки коштує ___ (марка)?","answer":"марка","hints":["марка"]},{"prompt":"Мені потрібен ___ (конверт).","answer":"конверт","hints":["конверт"]},{"prompt":"Я хочу відкрити ___ (рахунок).","answer":"рахунок","hints":["рахунок"]},{"prompt":"Де можна обміняти ___ (валюта)?","answer":"валюту","hints":["валюта"]},{"prompt":"Моя ___ (картка) не працює.","answer":"картка","hints":["картка"]},{"prompt":"Який сьогодні ___ (курс) долара?","answer":"курс","hints":["курс"]},{"prompt":"Ваша ___ (посилка) прибула.","answer":"посилка","hints":["посилка"]},{"prompt":"Напишіть ___ (адреса) тут.","answer":"адресу","hints":["адреса"]},{"prompt":"Введіть ваш ___ (пін-код).","answer":"пін-код","hints":["пін-код"]},{"prompt":"Мені потрібно зняти ___ (гроші).","answer":"гроші","hints":["гроші"]},{"prompt":"Де найближчий ___ (банкомат)?","answer":"банкомат","hints":["банкомат"]}]}},{"id":"activity-1","type":"match-up","title":"Ukrainian to English","data":{"type":"match-up","pairs":[{"left":"пошта","right":"post office"},{"left":"лист","right":"letter"},{"left":"посилка","right":"package"},{"left":"марка","right":"stamp"},{"left":"банк","right":"bank"},{"left":"рахунок","right":"account"},{"left":"картка","right":"card"},{"left":"гроші","right":"money"},{"left":"готівка","right":"cash"},{"left":"переказ","right":"transfer"},{"left":"валюта","right":"currency"},{"left":"банкомат","right":"ATM"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["відправити","хочу","Я","листа","до","Німеччини","сьогодні","важливого"],"answer":"Я хочу відправити важливого листа до Німеччини сьогодні.","translation":"I want to send an important letter to Germany today."},{"words":["марка","коштує","Скільки","одна","для","листа","за","кордон"],"answer":"Скільки коштує одна марка для листа за кордон?","translation":"How much is one stamp for a letter abroad?"},{"words":["конверт","Мені","потрібен","великий","для","важливих","моїх","документів"],"answer":"Мені потрібен великий конверт для моїх важливих документів.","translation":"I need a big envelope for my important documents."},{"words":["рахунок","відкрити","хочу","Я","новий","у","вашому","банку"],"answer":"Я хочу відкрити новий рахунок у вашому банку.","translation":"I want to open a new account at your bank."},{"words":["валюту","можна","обміняти","Де","тут","поблизу","американську","іноземну"],"answer":"Де тут поблизу можна обміняти іноземну американську валюту?","translation":"Where nearby can I exchange foreign American currency?"},{"words":["не","Моя","працює","картка","банківська","чомусь","сьогодні","нова"],"answer":"Моя нова банківська картка чомусь сьогодні не працює.","translation":"My new bank card doesn't work for some reason today."},{"words":["долара","курс","сьогодні","Який","у","вашому","американського","банку"],"answer":"Який сьогодні курс американського долара у вашому банку?","translation":"What is today's American dollar rate at your bank?"},{"words":["прибула","Ваша","посилка","велика","з","Америки","нарешті","очікувана"],"answer":"Ваша очікувана велика посилка з Америки нарешті прибула.","translation":"Your expected big package from America has finally arrived."},{"words":["гроші","зняти","Мені","потрібно","з","мого","рахунку","терміново"],"answer":"Мені терміново потрібно зняти гроші з мого рахунку.","translation":"I urgently need to withdraw money from my account."},{"words":["банкомат","найближчий","Де","тут","працює","який","цілодобово","знаходиться"],"answer":"Де тут знаходиться найближчий банкомат, який працює цілодобово?","translation":"Where is the nearest ATM that works 24/7?"},{"words":["тут","Підпишіть","ласка","будь","внизу","документа","цього","важливого"],"answer":"Підпишіть, будь ласка, тут внизу цього важливого документа.","translation":"Please sign here at the bottom of this important document."},{"words":["пін-код","Введіть","ваш","будь","ласка","секретний","особистий","новий"],"answer":"Введіть, будь ласка, ваш новий особистий секретний пін-код.","translation":"Please enter your new personal secret PIN code."}]}},{"id":"activity-3","type":"quiz","title":"Where Do You Hear This?","data":{"type":"quiz","questions":[{"question":"\"Скільки коштує марка?\"","options":["At the post office","At the bank","At the store","At the restaurant"],"correctIndex":0,"explanation":""},{"question":"\"Який сьогодні курс долара?\"","options":["At the post office","At the bank","At the doctor","At school"],"correctIndex":1,"explanation":""},{"question":"\"Ваша посилка прибула.\"","options":["At the post office","At the bank","At the airport","At the hotel"],"correctIndex":0,"explanation":""},{"question":"\"Введіть ваш пін-код.\"","options":["At the post office","At the bank/ATM","At the pharmacy","At the cinema"],"correctIndex":1,"explanation":""},{"question":"\"Напишіть адресу отримувача.\"","options":["At the post office","At the bank","At the hospital","At the museum"],"correctIndex":0,"explanation":""},{"question":"\"Я хочу відкрити рахунок.\"","options":["At the post office","At the bank","At the restaurant","At the gym"],"correctIndex":1,"explanation":""},{"question":"\"Авіапошта чи звичайна?\"","options":["At the post office","At the bank","At the airport","At the travel agency"],"correctIndex":0,"explanation":""},{"question":"\"Де можна обміняти валюту?\"","options":["At the post office","At the bank","At the supermarket","At the library"],"correctIndex":1,"explanation":""},{"question":"\"Заповніть цю форму.\"","options":["At both","Only at the post office","Only at the bank","Neither"],"correctIndex":0,"explanation":""},{"question":"\"Візьміть чек.\"","options":["At the post office","At the bank/ATM","At the pharmacy","At the hotel"],"correctIndex":1,"explanation":""},{"question":"\"Куди відправляєте?\"","options":["At the post office","At the bank","At the restaurant","At the taxi"],"correctIndex":0,"explanation":""},{"question":"\"Моя картка не працює.\"","options":["At the post office","At the bank/ATM","At the theater","At the school"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Post Office & Bank Facts","data":{"type":"true-false","statements":[{"statement":"\"Пошта\" means post office.","isTrue":true,"explanation":""},{"statement":"\"Банкомат\" means bank teller.","isTrue":false,"explanation":""},{"statement":"\"Готівка\" means cash.","isTrue":true,"explanation":""},{"statement":"\"Листівка\" means a big letter.","isTrue":false,"explanation":""},{"statement":"\"Індекс\" means postal code.","isTrue":true,"explanation":""},{"statement":"\"Переказ\" means translation.","isTrue":false,"explanation":""},{"statement":"\"Марка\" means stamp.","isTrue":true,"explanation":""},{"statement":"\"Валюта\" means currency.","isTrue":true,"explanation":""},{"statement":"\"Рахунок\" means receipt.","isTrue":false,"explanation":""},{"statement":"\"Каса\" means cash desk.","isTrue":true,"explanation":""},{"statement":"Ukrainian postal codes have 6 digits.","isTrue":false,"explanation":""},{"statement":"\"Курс\" means exchange rate.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Post Office vs Bank","data":{"type":"group-sort","groups":[{"id":"post-office","name":"Post Office","items":["лист","марка","посилка","конверт","адреса","листівка"],"nameUk":"Пошта"},{"id":"bank","name":"Bank","items":["рахунок","валюта","картка","переказ","готівка","банкомат"],"nameUk":"Банк"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Post Office Dialogue","data":{"type":"fill-blank","items":[{"prompt":"Доброго дня! Я хочу ___ листа до Польщі. (send)","answer":"відправити"},{"prompt":"___ коштує марка? (how much)","answer":"Скільки"},{"prompt":"Ваша ___ прибула вчора. (package)","answer":"посилка"},{"prompt":"Напишіть ___ отримувача тут. (address)","answer":"адресу"},{"prompt":"Мені потрібен ___ для документів. (envelope)","answer":"конверт"},{"prompt":"Авіа___ чи звичайна? (mail)","answer":"пошта"},{"prompt":"Який ___ вашої адреси? (postal code)","answer":"індекс"},{"prompt":"Хто ___ цього листа? (sender)","answer":"відправник"},{"prompt":"Лист іде приблизно ___ днів. (number 7)","answer":"сім"},{"prompt":"___ можна купити марки? (where)","answer":"Де"},{"prompt":"Заповніть цю ___, будь ласка. (form)","answer":"форму"},{"prompt":"Ваш лист буде доставлений ___. (to the recipient)","answer":"отримувачу"}]}},{"id":"activity-7","type":"select","title":"Bank or Post Office?","data":{"type":"select","items":[{"question":"\"Я хочу відкрити рахунок.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Скільки коштує марка?\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Який курс долара?\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Ваша посилка прибула.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Введіть пін-код.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Напишіть адресу отримувача.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Мені потрібно зняти гроші.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Авіапошта чи звичайна?\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Де найближчий банкомат?\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Мені потрібен конверт.\"","options":[{"text":"Post Office","correct":true},{"text":"Bank","correct":false}]},{"question":"\"Я хочу обміняти валюту.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]},{"question":"\"Ваша картка не працює.\"","options":[{"text":"Post Office","correct":false},{"text":"Bank","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Post Office and Bank Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["пошту","Я","на","йду","нову","сьогодні","відправити","щоб","посилку"],"answer":"Я сьогодні йду на нову пошту, щоб відправити посилку.","translation":"Today I'm going to the new post office to send a package."},{"words":["адресу","Напишіть","отримувача","повну","точну","на","коробці","великій"],"answer":"Напишіть повну точну адресу отримувача на великій коробці.","translation":"Write the full exact address of the recipient on the big box."},{"words":["гроші","Я","хочу","зняти","рахунку","з","свого","нового","банківського"],"answer":"Я хочу зняти гроші з свого нового банківського рахунку.","translation":"I want to withdraw money from my new bank account."},{"words":["переказ","Зробіть","грошовий","будь ласка","цей","швидкий","терміновий","сьогодні"],"answer":"Зробіть будь ласка цей швидкий терміновий грошовий переказ сьогодні.","translation":"Please make this fast urgent money transfer today."},{"words":["картку","Мені","потрібна","банківська","нова","пластикова","міжнародна"],"answer":"Мені потрібна нова пластикова міжнародна банківська картка.","translation":"I need a new plastic international bank card."},{"words":["посилку","Я","хочу","відправити","велику","цю","важку","за кордон"],"answer":"Я хочу відправити цю велику важку посилку за кордон.","translation":"I want to send this big heavy package abroad."},{"words":["курс","Який","обміну","сьогодні","валюти","долара","євро","і"],"answer":"Який курс обміну валюти сьогодні долара і євро?","translation":"What is the exchange rate today for dollar and euro?"},{"words":["рахунок","Я","хочу","відкрити","новий","депозитний","довгостроковий","ощадний"],"answer":"Я хочу відкрити новий довгостроковий ощадний депозитний рахунок.","translation":"I want to open a new long-term savings deposit account."},{"words":["марки","Мені","потрібні","поштові","нові","красиві","українські","колекційні"],"answer":"Мені потрібні нові красиві українські колекційні поштові марки.","translation":"I need new beautiful Ukrainian collectible postage stamps."},{"words":["готівку","Ви","приймаєте","чи","тільки","карткою","можна","платити"],"answer":"Ви приймаєте готівку чи тільки карткою можна платити?","translation":"Do you accept cash or can you only pay by card?"},{"words":["квитанцію","Дайте","будь ласка","мені","цю","офіційну","поштову"],"answer":"Дайте мені будь ласка цю офіційну поштову квитанцію.","translation":"Please give me this official postal receipt."},{"words":["посилка","Коли","моя","прийде","велика","важлива","до","отримувача"],"answer":"Коли моя велика важлива посилка прийде до отримувача?","translation":"When will my big important package arrive to the recipient?"}]}},{"id":"activity-9","type":"quiz","title":"Practical Vocabulary","data":{"type":"quiz","questions":[{"question":"\"Готівка\" means:","options":["card","cash","account","transfer"],"correctIndex":1,"explanation":""},{"question":"\"Рахунок\" in banking means:","options":["account","bill","rate","card"],"correctIndex":0,"explanation":""},{"question":"\"Переказ\" means:","options":["translation","transfer","exchange","withdrawal"],"correctIndex":1,"explanation":""},{"question":"\"Індекс\" in postal context means:","options":["index","postal code","address","package"],"correctIndex":1,"explanation":""},{"question":"\"Курс\" in banking means:","options":["course","exchange rate","direction","card"],"correctIndex":1,"explanation":""},{"question":"\"Листівка\" is:","options":["a small letter","a postcard","an envelope","a stamp"],"correctIndex":1,"explanation":""},{"question":"\"Банкомат\" is:","options":["a bank teller","an ATM","a bank building","a cash desk"],"correctIndex":1,"explanation":""},{"question":"\"Відправник\" is:","options":["sender","recipient","package","address"],"correctIndex":0,"explanation":""},{"question":"\"Отримувач\" is:","options":["sender","recipient","package","stamp"],"correctIndex":1,"explanation":""},{"question":"\"Каса\" is:","options":["cash desk","safe","ATM","card"],"correctIndex":0,"explanation":""},{"question":"\"Зняти гроші\" means:","options":["to deposit money","to withdraw money","to transfer money","to exchange money"],"correctIndex":1,"explanation":""},{"question":"\"Обміняти валюту\" means:","options":["to withdraw currency","to deposit currency","to exchange currency","to transfer currency"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"пошта","translit":"","en":"post office","note":"на пошті"},{"uk":"лист","translit":"","en":"letter","note":"листа (acc)"},{"uk":"листівка","translit":"","en":"postcard","note":""},{"uk":"посилка","translit":"","en":"package","note":""},{"uk":"марка","translit":"","en":"stamp","note":""},{"uk":"конверт","translit":"","en":"envelope","note":""},{"uk":"адреса","translit":"","en":"address","note":""},{"uk":"індекс","translit":"","en":"postal code","note":""},{"uk":"відправник","translit":"","en":"sender","note":""},{"uk":"отримувач","translit":"","en":"recipient","note":""},{"uk":"банк","translit":"","en":"bank","note":"у банку"},{"uk":"рахунок","translit":"","en":"account","note":""},{"uk":"картка","translit":"","en":"card","note":""},{"uk":"гроші","translit":"","en":"money","note":""},{"uk":"готівка","translit":"","en":"cash","note":""},{"uk":"переказ","translit":"","en":"transfer","note":""},{"uk":"валюта","translit":"","en":"currency","note":""},{"uk":"курс","translit":"","en":"rate","note":""},{"uk":"банкомат","translit":"","en":"ATM","note":""},{"uk":"каса","translit":"","en":"cash desk","note":""},{"uk":"відправляти","translit":"","en":"to send","note":"impf"},{"uk":"знімати","translit":"","en":"to withdraw","note":"impf"},{"uk":"обміняти","translit":"","en":"to exchange","note":"pf"},{"uk":"купівля","translit":"","en":"buying, purchase","note":""},{"uk":"продаж","translit":"","en":"selling, sale","note":""},{"uk":"квитанція","translit":"","en":"receipt","note":""},{"uk":"гривня","translit":"","en":"hryvnia (₴)","note":"Ukrainian currency"},{"uk":"вклад","translit":"","en":"deposit","note":"банківський вклад"},{"uk":"кредит","translit":"","en":"loan, credit","note":""},{"uk":"пін-код","translit":"","en":"PIN code","note":""},{"uk":"чек","translit":"","en":"receipt, check","note":""},{"uk":"паспорт","translit":"","en":"passport","note":""},{"uk":"форма","translit":"","en":"form","note":"заповнити форму"},{"uk":"тиждень","translit":"","en":"week","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2281,6 +2329,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

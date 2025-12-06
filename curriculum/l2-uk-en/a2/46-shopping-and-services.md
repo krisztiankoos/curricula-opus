@@ -532,16 +532,57 @@ grammar:
     - [ ] аптека
     > Car repair is at car service.
 
-## order: Making a Purchase
+## unjumble: Shopping and Services Sentences
 
-> Put these steps in the correct order for buying something.
+> Rearrange the words to form correct sentences about shopping and services.
 
-1. Виберіть товар, який вам потрібен. (Choose the item you need.)
-2. Перевірте ціну товару. (Check the price of the item.)
-3. Запитайте про знижку. (Ask about a discount.)
-4. Підійдіть до каси. (Go to the checkout.)
-5. Оплатіть карткою або готівкою. (Pay by card or cash.)
-6. Візьміть чек і товар. (Take the receipt and item.)
+1. Я | купую | продукти | в | супермаркеті | щодня | після | роботи
+   > [!answer] Я купую продукти в супермаркеті щодня після роботи.
+   > (I buy groceries at the supermarket every day after work.)
+
+2. Скільки | коштує | ця | красива | сукня | у | вітрині
+   > [!answer] Скільки коштує ця красива сукня у вітрині?
+   > (How much does this beautiful dress in the window cost?)
+
+3. На | ринку | можна | торгуватися | і | знайти | кращу | ціну
+   > [!answer] На ринку можна торгуватися і знайти кращу ціну.
+   > (At the market you can bargain and find a better price.)
+
+4. Чи | є | знижка | на | цей | товар | сьогодні
+   > [!answer] Чи є знижка на цей товар сьогодні?
+   > (Is there a discount on this item today?)
+
+5. Я | плачу | готівкою | бо | забув | картку | вдома
+   > [!answer] Я плачу готівкою, бо забув картку вдома.
+   > (I'm paying with cash because I forgot my card at home.)
+
+6. Візьміть | ваш | чек | і | здачу | дякую | вам
+   > [!answer] Візьміть ваш чек і здачу, дякую вам.
+   > (Take your receipt and change, thank you.)
+
+7. Ліки | від | застуди | можна | купити | в | аптеці
+   > [!answer] Ліки від застуди можна купити в аптеці.
+   > (Medicine for cold can be bought at the pharmacy.)
+
+8. Я | хочу | повернути | цей | товар | він | не | підходить
+   > [!answer] Я хочу повернути цей товар, він не підходить.
+   > (I want to return this item, it doesn't fit.)
+
+9. Магазин | закривається | о | дев'ятій | годині | вечора
+   > [!answer] Магазин закривається о дев'ятій годині вечора.
+   > (The store closes at nine in the evening.)
+
+10. Вона | замовляє | піцу | по | телефону | на | вечерю
+    > [!answer] Вона замовляє піцу по телефону на вечерю.
+    > (She orders pizza by phone for dinner.)
+
+11. Гроші | знімаю | в | банкоматі | біля | торгового | центру
+    > [!answer] Гроші знімаю в банкоматі біля торгового центру.
+    > (I withdraw money from the ATM near the shopping mall.)
+
+12. На | пошті | можна | надіслати | посилку | друзям | за | кордон
+    > [!answer] На пошті можна надіслати посилку друзям за кордон.
+    > (At the post office you can send a package to friends abroad.)
 
 ## quiz: Shopping Knowledge
 

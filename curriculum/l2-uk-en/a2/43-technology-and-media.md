@@ -528,16 +528,57 @@ grammar:
     - [x] Action
     > To send is an action.
 
-## order: Creating a Social Media Post
+## unjumble: Technology and Media Sentences
 
-> Put these steps in the correct order for publishing a post.
+> Rearrange the words to form correct sentences about technology and media.
 
-1. Відкрий застосунок соціальної мережі. (Open the social media app.)
-2. Натисни на кнопку створення публікації. (Click the create post button.)
-3. Напиши текст або додай фото. (Write text or add a photo.)
-4. Додай хештеги та геолокацію. (Add hashtags and location.)
-5. Натисни кнопку "Опублікувати". (Click the "Publish" button.)
-6. Відповідай на коментарі підписників. (Reply to followers' comments.)
+1. Я | працюю | за | комп'ютером | кожен | день | в | офісі
+   > [!answer] Я працюю за комп'ютером кожен день в офісі.
+   > (I work at the computer every day in the office.)
+
+2. Мій | смартфон | завжди | зі | мною | куди | б | я | не | йшов
+   > [!answer] Мій смартфон завжди зі мною, куди б я не йшов.
+   > (My smartphone is always with me wherever I go.)
+
+3. Вона | публікує | фото | в | соціальних | мережах | щодня
+   > [!answer] Вона публікує фото в соціальних мережах щодня.
+   > (She publishes photos on social media every day.)
+
+4. Завантажую | цей | файл | з | інтернету | на | комп'ютер
+   > [!answer] Завантажую цей файл з інтернету на комп'ютер.
+   > (I'm downloading this file from the internet to the computer.)
+
+5. У | неї | багато | підписників | на | каналі | в | YouTube
+   > [!answer] У неї багато підписників на каналі в YouTube.
+   > (She has many subscribers on her YouTube channel.)
+
+6. Я | читаю | новини | щоранку | на | смартфоні | перед | роботою
+   > [!answer] Я читаю новини щоранку на смартфоні перед роботою.
+   > (I read the news every morning on my smartphone before work.)
+
+7. Напиши | коментар | під | цією | цікавою | публікацією
+   > [!answer] Напиши коментар під цією цікавою публікацією.
+   > (Write a comment under this interesting post.)
+
+8. Підпишіться | на | наш | канал | та | натисніть | дзвоник
+   > [!answer] Підпишіться на наш канал та натисніть дзвоник.
+   > (Subscribe to our channel and hit the bell.)
+
+9. Я | забув | пароль | від | свого | акаунту | в | соцмережі
+   > [!answer] Я забув пароль від свого акаунту в соцмережі.
+   > (I forgot the password to my social media account.)
+
+10. Цей | вебсайт | дуже | корисний | для | вивчення | мови
+    > [!answer] Цей вебсайт дуже корисний для вивчення мови.
+    > (This website is very useful for learning a language.)
+
+11. Надішли | мені | посилання | на | цю | статтю | про | технології
+    > [!answer] Надішли мені посилання на цю статтю про технології.
+    > (Send me a link to this article about technology.)
+
+12. Збережи | цей | документ | на | комп'ютері | у | важливу | папку
+    > [!answer] Збережи цей документ на комп'ютері у важливу папку.
+    > (Save this document on the computer in an important folder.)
 
 ## quiz: Digital Literacy
 

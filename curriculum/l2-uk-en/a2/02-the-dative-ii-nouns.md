@@ -673,22 +673,57 @@ Use the dative form of the word in parentheses:
     - [ ] чашкою
     > К changes to Ц before -і.
 
-## order: Giving Sequence
+## unjumble: Giving Sentences with Dative
 
-> Arrange these giving actions in logical order.
+> Reorder the words to form correct sentences about giving.
 
-1. Я беру книгу з полиці.
-2. Я загортаю книгу в папір.
-3. Я прив'язую стрічку до подарунка.
-4. Я йду до друга додому.
-5. Я стукаю у двері.
-6. Друг відчиняє двері.
-7. Я вітаю друга з днем народження.
-8. Я даю другові подарунок.
-9. Друг дякує мені за книгу.
-10. Друг розгортає подарунок.
-11. Друг радіє новій книжці.
-12. Ми святкуємо разом.
+1. книгу / Я / даю / цікаву / другові / нову / сьогодні
+   > [!answer] Я сьогодні даю другові нову цікаву книгу.
+   > (Today I give my friend a new interesting book.) [7 words]
+
+2. мамі / Він / допомагає / готувати / вечерю / завжди / смачну
+   > [!answer] Він завжди допомагає мамі готувати смачну вечерю.
+   > (He always helps mom cook a tasty dinner.) [7 words]
+
+3. вчителеві / Студенти / дякують / за / урок / цікавий / дуже
+   > [!answer] Студенти дуже дякують вчителеві за цікавий урок.
+   > (Students really thank the teacher for the interesting lesson.) [7 words]
+
+4. подрузі / Вона / показує / нову / сукню / гарну / свою
+   > [!answer] Вона показує подрузі свою нову гарну сукню.
+   > (She shows her friend her new beautiful dress.) [7 words]
+
+5. лікареві / Хворий / розповідає / про / симптоми / свої / всі
+   > [!answer] Хворий розповідає лікареві про всі свої симптоми.
+   > (The patient tells the doctor about all his symptoms.) [7 words]
+
+6. сестрі / Брат / купує / подарунок / гарний / день / на / народження
+   > [!answer] Брат купує сестрі гарний подарунок на день народження.
+   > (Brother buys sister a nice birthday present.) [8 words]
+
+7. бабусі / Внук / телефонує / щодня / своїй / коханій / ввечері
+   > [!answer] Внук щодня ввечері телефонує своїй коханій бабусі.
+   > (Grandson calls his dear grandmother every evening.) [7 words]
+
+8. колезі / Я / пояснюю / нову / задачу / складну / важку
+   > [!answer] Я пояснюю колезі нову складну важку задачу.
+   > (I explain a new difficult task to my colleague.) [7 words]
+
+9. батькові / Дочка / приносить / каву / гарячу / ранку / кожного
+   > [!answer] Дочка кожного ранку приносить батькові гарячу каву.
+   > (Daughter brings father hot coffee every morning.) [7 words]
+
+10. дитині / Мама / читає / казку / цікаву / на / ніч / кожну
+    > [!answer] Мама кожну ніч читає дитині цікаву казку.
+    > (Mom reads the child an interesting fairy tale every night.) [8 words]
+
+11. другові / Я / пишу / листа / довгого / сьогодні / українською
+    > [!answer] Я сьогодні пишу другові довгого листа українською.
+    > (Today I'm writing my friend a long letter in Ukrainian.) [7 words]
+
+12. студентці / Викладач / відповідає / на / питання / важке / терпляче
+    > [!answer] Викладач терпляче відповідає студентці на важке питання.
+    > (The lecturer patiently answers the student's difficult question.) [7 words]
 
 ## quiz: Dative Noun Mastery
 

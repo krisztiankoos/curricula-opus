@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1189,11 +1230,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Means and Methods Mastery</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Tools and Means Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Means and Methods Mastery</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1220,7 +1268,7 @@ footer {
   </main><footer>Module 05 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Я пишу листа ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Вона їсть суп ___ (ложка).","answer":"ложкою","hints":["ложка"]},{"prompt":"Він ріже хліб ___ (ніж).","answer":"ножем","hints":["ніж"]},{"prompt":"Ми їдемо до Києва ___ (поїзд).","answer":"поїздом","hints":["поїзд"]},{"prompt":"Діти малюють ___ (олівці).","answer":"олівцями","hints":["олівці"]},{"prompt":"Я їду на роботу ___ (автобус).","answer":"автобусом","hints":["автобус"]},{"prompt":"Вона їсть салат ___ (виделка).","answer":"виделкою","hints":["виделка"]},{"prompt":"Він махає ___ (рука).","answer":"рукою","hints":["рука"]},{"prompt":"Я бачив це своїми ___ (очі).","answer":"очима","hints":["очі"]},{"prompt":"Вони летять до Парижа ___ (літак).","answer":"літаком","hints":["літак"]},{"prompt":"Він кивнув ___ (голова).","answer":"головою","hints":["голова"]},{"prompt":"Я користуюся ___ (телефон).","answer":"телефоном","hints":["телефон"]}]}},{"id":"activity-1","type":"match-up","title":"Tool to Action","data":{"type":"match-up","pairs":[{"left":"ручка","right":"писати"},{"left":"ніж","right":"різати"},{"left":"ложка","right":"їсти суп"},{"left":"виделка","right":"їсти салат"},{"left":"олівець","right":"малювати"},{"left":"автобус","right":"їхати"},{"left":"телефон","right":"дзвонити"},{"left":"комп'ютер","right":"працювати"},{"left":"велосипед","right":"кататися"},{"left":"очі","right":"дивитися"},{"left":"вуха","right":"слухати"},{"left":"рука","right":"махати"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["ручкою","синьою","Я","листа","пишу","довгого","своєю","новою"],"answer":"Я пишу довгого листа своєю новою синьою ручкою.","translation":"I write a long letter with my new blue pen."},{"words":["ложкою","великою","Вона","гарячий","їсть","суп","смачний","срібною"],"answer":"Вона їсть смачний гарячий суп великою срібною ложкою.","translation":"She eats tasty hot soup with a big silver spoon."},{"words":["поїздом","швидким","до","їдемо","Ми","Львова","сьогодні","нічним"],"answer":"Ми сьогодні їдемо до Львова швидким нічним поїздом.","translation":"We're going to Lviv today by fast night train."},{"words":["ножем","гострим","свіжий","хліб","Він","ріже","великим","кухонним"],"answer":"Він ріже свіжий хліб великим гострим кухонним ножем.","translation":"He cuts fresh bread with a big sharp kitchen knife."},{"words":["олівцями","кольоровими","Діти","красиві","малюють","картини","новими","яскравими"],"answer":"Діти малюють красиві картини новими яскравими кольоровими олівцями.","translation":"Children draw beautiful pictures with new bright colored pencils."},{"words":["автобусом","міським","роботу","щодня","Я","на","їду","великим"],"answer":"Я щодня їду на роботу великим міським автобусом.","translation":"I go to work every day by big city bus."},{"words":["рукою","правою","Він","махає","своєю","коли","бачить","друзів"],"answer":"Він махає своєю правою рукою, коли бачить друзів.","translation":"He waves with his right hand when he sees friends."},{"words":["очима","власними","бачив","Я","це","своїми","все","сам"],"answer":"Я сам бачив все це своїми власними очима.","translation":"I myself saw all this with my own eyes."},{"words":["літаком","великим","Парижа","до","летять","Вони","сьогодні","сучасним"],"answer":"Вони сьогодні летять до Парижа великим сучасним літаком.","translation":"They're flying to Paris today by big modern plane."},{"words":["програмістом","досвідченим","працює","Він","у","компанії","великій","провідним"],"answer":"Він працює провідним досвідченим програмістом у великій компанії.","translation":"He works as a leading experienced programmer at a big company."},{"words":["головою","своєю","Вона","кивнула","погодилась","коли","вона","тихо"],"answer":"Вона тихо кивнула своєю головою, коли погодилась.","translation":"She quietly nodded her head when she agreed."},{"words":["велосипедом","новим","Діти","катаються","своїм","у","парку","червоним"],"answer":"Діти катаються у парку своїм новим червоним велосипедом.","translation":"Children ride their new red bicycle in the park."}]}},{"id":"activity-3","type":"quiz","title":"Transportation Methods","data":{"type":"quiz","questions":[{"question":"\"By train\" in Ukrainian is:","options":["з поїздом","поїздом","на поїзді","до поїзда"],"correctIndex":1,"explanation":""},{"question":"How do you say \"I write with a pen\"?","options":["Я пишу з ручкою.","Я пишу ручкою.","Я пишу ручку.","Я пишу ручці."],"correctIndex":1,"explanation":""},{"question":"\"By plane\" in Ukrainian is:","options":["літаком","з літаком","на літаку","до літака"],"correctIndex":0,"explanation":""},{"question":"Which is correct for \"eat with a fork\"?","options":["їсти з виделкою","їсти виделкою","їсти виделку","їсти виделці"],"correctIndex":1,"explanation":""},{"question":"\"On foot\" in Ukrainian is:","options":["ногою","ногами","пішки","з ногами"],"correctIndex":2,"explanation":""},{"question":"How do you say \"by bus\"?","options":["автобусом","з автобусом","на автобусі","до автобуса"],"correctIndex":0,"explanation":""},{"question":"\"Cut with a knife\" is:","options":["різати ножем","різати з ножем","різати ніж","різати ножу"],"correctIndex":0,"explanation":""},{"question":"\"By car\" in Ukrainian is:","options":["машиною","з машиною","на машині","до машини"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"олівець\" is:","options":["олівцю","олівця","олівцем","олівці"],"correctIndex":2,"explanation":""},{"question":"\"Work as a doctor\" is:","options":["працювати лікарем","працювати з лікарем","працювати лікаря","працювати лікарю"],"correctIndex":0,"explanation":""},{"question":"\"Draw with pencils\" (plural) is:","options":["малювати олівців","малювати олівцями","малювати з олівцями","малювати олівцям"],"correctIndex":1,"explanation":""},{"question":"\"By bicycle\" in Ukrainian is:","options":["велосипедом","з велосипедом","на велосипеді","до велосипеда"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Instrumental Rules","data":{"type":"true-false","statements":[{"statement":"Instrumental for tools uses no preposition.","isTrue":true,"explanation":""},{"statement":"\"Їхати поїздом\" means \"go by train.\"","isTrue":true,"explanation":""},{"statement":"\"Пішки\" is the instrumental of \"нога.\"","isTrue":false,"explanation":""},{"statement":"You say \"працювати з лікарем\" for \"work as a doctor.\"","isTrue":false,"explanation":""},{"statement":"Body parts use instrumental to express \"with.\"","isTrue":true,"explanation":""},{"statement":"\"Метро\" changes in instrumental case.","isTrue":false,"explanation":""},{"statement":"\"Захоплюватися\" takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"З братом\" and \"ножем\" use instrumental differently.","isTrue":true,"explanation":""},{"statement":"The instrumental of \"ніж\" is \"ножем.\"","isTrue":true,"explanation":""},{"statement":"\"Своїми очима\" means \"with one's own eyes.\"","isTrue":true,"explanation":""},{"statement":"Transportation always needs the preposition \"на.\"","isTrue":false,"explanation":""},{"statement":"\"Користуватися\" takes instrumental case.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Preposition Usage","data":{"type":"group-sort","groups":[{"id":"with-","name":"With з","items":["йти з братом","кава з молоком","жити з батьками","працювати з колегою","гуляти з собакою","розмовляти з другом"],"nameUk":"accompaniment"},{"id":"without-preposition","name":"Without preposition","items":["їхати поїздом","писати ручкою","їсти ложкою","різати ножем","летіти літаком","малювати олівцем"],"nameUk":"means"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Professions with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Він працює ___ у лікарні. (лікар)","answer":"лікарем"},{"prompt":"Вона стала ___ після університету. (вчителька)","answer":"вчителькою"},{"prompt":"Мій брат працює ___ у компанії. (програміст)","answer":"програмістом"},{"prompt":"Її мама була ___. (медсестра)","answer":"медсестрою"},{"prompt":"Він хоче стати ___. (інженер)","answer":"інженером"},{"prompt":"Сестра працює ___ в офісі. (бухгалтер)","answer":"бухгалтером"},{"prompt":"Дядько був ___ на заводі. (директор)","answer":"директором"},{"prompt":"Вона мріє стати ___. (актриса)","answer":"актрисою"},{"prompt":"Батько працював ___ багато років. (водій)","answer":"водієм"},{"prompt":"Він став відомим ___. (письменник)","answer":"письменником"},{"prompt":"Мама працює ___ у школі. (вчителька)","answer":"вчителькою"},{"prompt":"Вона хоче бути ___. (журналіст)","answer":"журналістом"}]}},{"id":"activity-7","type":"select","title":"Tool or Transportation?","data":{"type":"select","items":[{"question":"Я їду автобусом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Вона пише ручкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Він ріже ножем.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Ми летимо літаком.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Діти малюють олівцями.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Вони їдуть поїздом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Я їм ложкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Вона їде машиною.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Він копає лопатою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Ми катаємося велосипедом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Вона шиє голкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Він їде метро.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Means and Methods Mastery","data":{"type":"quiz","questions":[{"question":"When expressing means/tool, instrumental uses:","options":["No preposition","Preposition \"з\"","Preposition \"на\"","Preposition \"до\""],"correctIndex":0,"explanation":""},{"question":"\"Їхати поїздом\" means:","options":["to go to the train","to go by train","to go from the train","to go with the train"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"work as a doctor\"?","options":["працювати лікарем","працювати з лікарем","працювати лікаря","працювати лікарю"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"ніж\" is:","options":["ніжа","ножем","ніжу","ніжом"],"correctIndex":1,"explanation":""},{"question":"\"Пішки\" means:","options":["by bicycle","by car","on foot","by metro"],"correctIndex":2,"explanation":""},{"question":"Which verb takes instrumental for profession?","options":["любити","працювати","бачити","знати"],"correctIndex":1,"explanation":""},{"question":"\"Метро\" in instrumental is:","options":["метром","метро (unchanged)","метрою","метрі"],"correctIndex":1,"explanation":""},{"question":"\"Писати ручкою\" vs \"йти з другом\" differ because:","options":["Tool vs. accompaniment","They're the same","Different tenses","Different genders"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"олівець\" is:","options":["олівця","олівцем","олівцю","олівці"],"correctIndex":1,"explanation":""},{"question":"\"Махати рукою\" means:","options":["to wave with hand","to shake hand","to hold hand","to raise hand"],"correctIndex":0,"explanation":""},{"question":"Which uses bare instrumental (no preposition)?","options":["їсти ложкою","жити з батьками","кава з молоком","гуляти з собакою"],"correctIndex":0,"explanation":""},{"question":"\"Користуватися телефоном\" means:","options":["to buy a phone","to use a phone","to call on phone","to fix a phone"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Complete with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Я пишу листа ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Вона їсть суп ___ (ложка).","answer":"ложкою","hints":["ложка"]},{"prompt":"Він ріже хліб ___ (ніж).","answer":"ножем","hints":["ніж"]},{"prompt":"Ми їдемо до Києва ___ (поїзд).","answer":"поїздом","hints":["поїзд"]},{"prompt":"Діти малюють ___ (олівці).","answer":"олівцями","hints":["олівці"]},{"prompt":"Я їду на роботу ___ (автобус).","answer":"автобусом","hints":["автобус"]},{"prompt":"Вона їсть салат ___ (виделка).","answer":"виделкою","hints":["виделка"]},{"prompt":"Він махає ___ (рука).","answer":"рукою","hints":["рука"]},{"prompt":"Я бачив це своїми ___ (очі).","answer":"очима","hints":["очі"]},{"prompt":"Вони летять до Парижа ___ (літак).","answer":"літаком","hints":["літак"]},{"prompt":"Він кивнув ___ (голова).","answer":"головою","hints":["голова"]},{"prompt":"Я користуюся ___ (телефон).","answer":"телефоном","hints":["телефон"]}]}},{"id":"activity-1","type":"match-up","title":"Tool to Action","data":{"type":"match-up","pairs":[{"left":"ручка","right":"писати"},{"left":"ніж","right":"різати"},{"left":"ложка","right":"їсти суп"},{"left":"виделка","right":"їсти салат"},{"left":"олівець","right":"малювати"},{"left":"автобус","right":"їхати"},{"left":"телефон","right":"дзвонити"},{"left":"комп'ютер","right":"працювати"},{"left":"велосипед","right":"кататися"},{"left":"очі","right":"дивитися"},{"left":"вуха","right":"слухати"},{"left":"рука","right":"махати"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["ручкою","синьою","Я","листа","пишу","довгого","своєю","новою"],"answer":"Я пишу довгого листа своєю новою синьою ручкою.","translation":"I write a long letter with my new blue pen."},{"words":["ложкою","великою","Вона","гарячий","їсть","суп","смачний","срібною"],"answer":"Вона їсть смачний гарячий суп великою срібною ложкою.","translation":"She eats tasty hot soup with a big silver spoon."},{"words":["поїздом","швидким","до","їдемо","Ми","Львова","сьогодні","нічним"],"answer":"Ми сьогодні їдемо до Львова швидким нічним поїздом.","translation":"We're going to Lviv today by fast night train."},{"words":["ножем","гострим","свіжий","хліб","Він","ріже","великим","кухонним"],"answer":"Він ріже свіжий хліб великим гострим кухонним ножем.","translation":"He cuts fresh bread with a big sharp kitchen knife."},{"words":["олівцями","кольоровими","Діти","красиві","малюють","картини","новими","яскравими"],"answer":"Діти малюють красиві картини новими яскравими кольоровими олівцями.","translation":"Children draw beautiful pictures with new bright colored pencils."},{"words":["автобусом","міським","роботу","щодня","Я","на","їду","великим"],"answer":"Я щодня їду на роботу великим міським автобусом.","translation":"I go to work every day by big city bus."},{"words":["рукою","правою","Він","махає","своєю","коли","бачить","друзів"],"answer":"Він махає своєю правою рукою, коли бачить друзів.","translation":"He waves with his right hand when he sees friends."},{"words":["очима","власними","бачив","Я","це","своїми","все","сам"],"answer":"Я сам бачив все це своїми власними очима.","translation":"I myself saw all this with my own eyes."},{"words":["літаком","великим","Парижа","до","летять","Вони","сьогодні","сучасним"],"answer":"Вони сьогодні летять до Парижа великим сучасним літаком.","translation":"They're flying to Paris today by big modern plane."},{"words":["програмістом","досвідченим","працює","Він","у","компанії","великій","провідним"],"answer":"Він працює провідним досвідченим програмістом у великій компанії.","translation":"He works as a leading experienced programmer at a big company."},{"words":["головою","своєю","Вона","кивнула","погодилась","коли","вона","тихо"],"answer":"Вона тихо кивнула своєю головою, коли погодилась.","translation":"She quietly nodded her head when she agreed."},{"words":["велосипедом","новим","Діти","катаються","своїм","у","парку","червоним"],"answer":"Діти катаються у парку своїм новим червоним велосипедом.","translation":"Children ride their new red bicycle in the park."}]}},{"id":"activity-3","type":"quiz","title":"Transportation Methods","data":{"type":"quiz","questions":[{"question":"\"By train\" in Ukrainian is:","options":["з поїздом","поїздом","на поїзді","до поїзда"],"correctIndex":1,"explanation":""},{"question":"How do you say \"I write with a pen\"?","options":["Я пишу з ручкою.","Я пишу ручкою.","Я пишу ручку.","Я пишу ручці."],"correctIndex":1,"explanation":""},{"question":"\"By plane\" in Ukrainian is:","options":["літаком","з літаком","на літаку","до літака"],"correctIndex":0,"explanation":""},{"question":"Which is correct for \"eat with a fork\"?","options":["їсти з виделкою","їсти виделкою","їсти виделку","їсти виделці"],"correctIndex":1,"explanation":""},{"question":"\"On foot\" in Ukrainian is:","options":["ногою","ногами","пішки","з ногами"],"correctIndex":2,"explanation":""},{"question":"How do you say \"by bus\"?","options":["автобусом","з автобусом","на автобусі","до автобуса"],"correctIndex":0,"explanation":""},{"question":"\"Cut with a knife\" is:","options":["різати ножем","різати з ножем","різати ніж","різати ножу"],"correctIndex":0,"explanation":""},{"question":"\"By car\" in Ukrainian is:","options":["машиною","з машиною","на машині","до машини"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"олівець\" is:","options":["олівцю","олівця","олівцем","олівці"],"correctIndex":2,"explanation":""},{"question":"\"Work as a doctor\" is:","options":["працювати лікарем","працювати з лікарем","працювати лікаря","працювати лікарю"],"correctIndex":0,"explanation":""},{"question":"\"Draw with pencils\" (plural) is:","options":["малювати олівців","малювати олівцями","малювати з олівцями","малювати олівцям"],"correctIndex":1,"explanation":""},{"question":"\"By bicycle\" in Ukrainian is:","options":["велосипедом","з велосипедом","на велосипеді","до велосипеда"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Instrumental Rules","data":{"type":"true-false","statements":[{"statement":"Instrumental for tools uses no preposition.","isTrue":true,"explanation":""},{"statement":"\"Їхати поїздом\" means \"go by train.\"","isTrue":true,"explanation":""},{"statement":"\"Пішки\" is the instrumental of \"нога.\"","isTrue":false,"explanation":""},{"statement":"You say \"працювати з лікарем\" for \"work as a doctor.\"","isTrue":false,"explanation":""},{"statement":"Body parts use instrumental to express \"with.\"","isTrue":true,"explanation":""},{"statement":"\"Метро\" changes in instrumental case.","isTrue":false,"explanation":""},{"statement":"\"Захоплюватися\" takes instrumental case.","isTrue":true,"explanation":""},{"statement":"\"З братом\" and \"ножем\" use instrumental differently.","isTrue":true,"explanation":""},{"statement":"The instrumental of \"ніж\" is \"ножем.\"","isTrue":true,"explanation":""},{"statement":"\"Своїми очима\" means \"with one's own eyes.\"","isTrue":true,"explanation":""},{"statement":"Transportation always needs the preposition \"на.\"","isTrue":false,"explanation":""},{"statement":"\"Користуватися\" takes instrumental case.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Preposition Usage","data":{"type":"group-sort","groups":[{"id":"with-","name":"With з","items":["йти з братом","кава з молоком","жити з батьками","працювати з колегою","гуляти з собакою","розмовляти з другом"],"nameUk":"accompaniment"},{"id":"without-preposition","name":"Without preposition","items":["їхати поїздом","писати ручкою","їсти ложкою","різати ножем","летіти літаком","малювати олівцем"],"nameUk":"means"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Professions with Instrumental","data":{"type":"fill-blank","items":[{"prompt":"Він працює ___ у лікарні. (лікар)","answer":"лікарем"},{"prompt":"Вона стала ___ після університету. (вчителька)","answer":"вчителькою"},{"prompt":"Мій брат працює ___ у компанії. (програміст)","answer":"програмістом"},{"prompt":"Її мама була ___. (медсестра)","answer":"медсестрою"},{"prompt":"Він хоче стати ___. (інженер)","answer":"інженером"},{"prompt":"Сестра працює ___ в офісі. (бухгалтер)","answer":"бухгалтером"},{"prompt":"Дядько був ___ на заводі. (директор)","answer":"директором"},{"prompt":"Вона мріє стати ___. (актриса)","answer":"актрисою"},{"prompt":"Батько працював ___ багато років. (водій)","answer":"водієм"},{"prompt":"Він став відомим ___. (письменник)","answer":"письменником"},{"prompt":"Мама працює ___ у школі. (вчителька)","answer":"вчителькою"},{"prompt":"Вона хоче бути ___. (журналіст)","answer":"журналістом"}]}},{"id":"activity-7","type":"select","title":"Tool or Transportation?","data":{"type":"select","items":[{"question":"Я їду автобусом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Вона пише ручкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Він ріже ножем.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Ми летимо літаком.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Діти малюють олівцями.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Вони їдуть поїздом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Я їм ложкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Вона їде машиною.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Він копає лопатою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Ми катаємося велосипедом.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]},{"question":"Вона шиє голкою.","options":[{"text":"Tool","correct":true},{"text":"Transportation","correct":false}]},{"question":"Він їде метро.","options":[{"text":"Tool","correct":false},{"text":"Transportation","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Tools and Means Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["зуби","Я","чищу","зубною","новою","щіткою","кожного","ранку"],"answer":"Я кожного ранку чищу зуби новою зубною щіткою.","translation":"Every morning I brush my teeth with a new toothbrush."},{"words":["ножем","Він","ріже","хліб","свіжий","гострим","великим"],"answer":"Він ріже свіжий хліб великим гострим ножем.","translation":"He cuts fresh bread with a big sharp knife."},{"words":["ложкою","Вона","їсть","суп","гарячий","смачний","срібною"],"answer":"Вона їсть смачний гарячий суп срібною ложкою.","translation":"She eats tasty hot soup with a silver spoon."},{"words":["автобусом","Ми","їдемо","на","роботу","великим","новим","щодня"],"answer":"Ми щодня їдемо на роботу новим великим автобусом.","translation":"Every day we go to work by new big bus."},{"words":["рушником","Він","витирається","великим","м'яким","білим","після","душу"],"answer":"Він витирається великим м'яким білим рушником після душу.","translation":"He dries off with a big soft white towel after shower."},{"words":["олівцем","Студент","пише","завдання","простим","домашнє","своє","швидко"],"answer":"Студент швидко пише своє домашнє завдання простим олівцем.","translation":"The student quickly writes his homework with a simple pencil."},{"words":["метро","Вони","їдуть","в","центр","швидким","міським","сьогодні"],"answer":"Вони сьогодні їдуть в центр швидким міським метро.","translation":"Today they go to the center by fast city metro."},{"words":["виделкою","Я","їм","м'ясо","смачне","сріблястою","гостре","великою"],"answer":"Я їм смачне гостре м'ясо великою сріблястою виделкою.","translation":"I eat tasty spicy meat with a big silver fork."},{"words":["лікарем","Він","працює","хорошим","відомим","у","лікарні","нашій"],"answer":"Він працює хорошим відомим лікарем у нашій лікарні.","translation":"He works as a good famous doctor in our hospital."},{"words":["потягом","Ми","їдемо","до","Львова","швидким","нічним","сьогодні"],"answer":"Ми сьогодні їдемо до Львова швидким нічним потягом.","translation":"Today we go to Lviv by fast night train."},{"words":["ручкою","Вона","пише","листа","довгого","синьою","новою","гарною"],"answer":"Вона пише довгого листа гарною новою синьою ручкою.","translation":"She writes a long letter with a nice new blue pen."},{"words":["вчителем","Він","став","відомим","хорошим","після","університету","нашого"],"answer":"Він став хорошим відомим вчителем після нашого університету.","translation":"He became a good famous teacher after our university."}]}},{"id":"activity-9","type":"quiz","title":"Means and Methods Mastery","data":{"type":"quiz","questions":[{"question":"When expressing means/tool, instrumental uses:","options":["No preposition","Preposition \"з\"","Preposition \"на\"","Preposition \"до\""],"correctIndex":0,"explanation":""},{"question":"\"Їхати поїздом\" means:","options":["to go to the train","to go by train","to go from the train","to go with the train"],"correctIndex":1,"explanation":""},{"question":"Which is correct for \"work as a doctor\"?","options":["працювати лікарем","працювати з лікарем","працювати лікаря","працювати лікарю"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"ніж\" is:","options":["ніжа","ножем","ніжу","ніжом"],"correctIndex":1,"explanation":""},{"question":"\"Пішки\" means:","options":["by bicycle","by car","on foot","by metro"],"correctIndex":2,"explanation":""},{"question":"Which verb takes instrumental for profession?","options":["любити","працювати","бачити","знати"],"correctIndex":1,"explanation":""},{"question":"\"Метро\" in instrumental is:","options":["метром","метро (unchanged)","метрою","метрі"],"correctIndex":1,"explanation":""},{"question":"\"Писати ручкою\" vs \"йти з другом\" differ because:","options":["Tool vs. accompaniment","They're the same","Different tenses","Different genders"],"correctIndex":0,"explanation":""},{"question":"The instrumental of \"олівець\" is:","options":["олівця","олівцем","олівцю","олівці"],"correctIndex":1,"explanation":""},{"question":"\"Махати рукою\" means:","options":["to wave with hand","to shake hand","to hold hand","to raise hand"],"correctIndex":0,"explanation":""},{"question":"Which uses bare instrumental (no preposition)?","options":["їсти ложкою","жити з батьками","кава з молоком","гуляти з собакою"],"correctIndex":0,"explanation":""},{"question":"\"Користуватися телефоном\" means:","options":["to buy a phone","to use a phone","to call on phone","to fix a phone"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"ручка","translit":"","en":"pen","note":"ручкою"},{"uk":"олівець","translit":"","en":"pencil","note":"олівцем"},{"uk":"ніж","translit":"","en":"knife","note":"ножем"},{"uk":"виделка","translit":"","en":"fork","note":"виделкою"},{"uk":"ложка","translit":"","en":"spoon","note":"ложкою"},{"uk":"машина","translit":"","en":"car","note":"машиною"},{"uk":"автобус","translit":"","en":"bus","note":"автобусом"},{"uk":"поїзд","translit":"","en":"train","note":"поїздом"},{"uk":"літак","translit":"","en":"airplane","note":"літаком"},{"uk":"велосипед","translit":"","en":"bicycle","note":"велосипедом"},{"uk":"трамвай","translit":"","en":"tram","note":"трамваєм"},{"uk":"метро","translit":"","en":"metro","note":"метро (unchanged)"},{"uk":"таксі","translit":"","en":"taxi","note":"таксі (unchanged)"},{"uk":"пішки","translit":"","en":"on foot","note":""},{"uk":"рука","translit":"","en":"hand, arm","note":"рукою"},{"uk":"нога","translit":"","en":"foot, leg","note":"ногою"},{"uk":"голова","translit":"","en":"head","note":"головою"},{"uk":"очі","translit":"","en":"eyes","note":"очима"},{"uk":"вуха","translit":"","en":"ears","note":"вухами"},{"uk":"плечі","translit":"","en":"shoulders","note":"плечима"},{"uk":"лікар","translit":"","en":"doctor","note":"лікарем"},{"uk":"вчитель","translit":"","en":"teacher (m)","note":"вчителем"},{"uk":"інженер","translit":"","en":"engineer","note":"інженером"},{"uk":"програміст","translit":"","en":"programmer","note":"програмістом"},{"uk":"користуватися","translit":"","en":"to use","note":"+ inst"},{"uk":"захоплюватися","translit":"","en":"to be fascinated","note":"+ inst"},{"uk":"займатися","translit":"","en":"to do, engage in","note":"+ inst"},{"uk":"пишатися","translit":"","en":"to be proud","note":"+ inst"},{"uk":"ставати","translit":"","en":"to become (impf)","note":"+ inst"},{"uk":"стати","translit":"","en":"to become (pf)","note":"+ inst"},{"uk":"працювати","translit":"","en":"to work","note":"+ inst (profession)"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2545,6 +2593,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

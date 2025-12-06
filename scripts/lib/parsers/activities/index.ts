@@ -17,6 +17,7 @@ import { GapFillParser } from './gap-fill';
 import { UnjumbleParser } from './unjumble';
 import { AnagramParser } from './anagram';
 import { SelectParser } from './select';
+import { ErrorCorrectionParser } from './error-correction';
 
 // =============================================================================
 // Parser Registry
@@ -24,6 +25,7 @@ import { SelectParser } from './select';
 
 const parsers: ActivityParser[] = [
   new SelectParser(),    // Must be before FillBlankParser to handle select: headers
+  new ErrorCorrectionParser(),  // Must be before FillBlankParser
   new QuizParser(),
   new MatchUpParser(),
   new GroupSortParser(),
@@ -130,3 +132,4 @@ export { UnjumbleParser } from './unjumble';
 export { AnagramParser } from './anagram';
 export { GapFillParser } from './gap-fill';
 export { SelectParser } from './select';
+export { ErrorCorrectionParser } from './error-correction';

@@ -10,7 +10,7 @@ A1 modules complete. Ready for A2 enrichment or other tasks.
 
 1. **READ `docs/l2-uk-en/module-prompt.md`** - Grammar constraints, format rules, review checklist.
 2. **READ `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`** - Extract the EXACT vocabulary list and grammar scope.
-3. **READ `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md`** - Activity counts, sentence complexity, engagement boxes.
+3. **READ `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`** - Activity counts, sentence complexity, engagement boxes.
 4. **WRITE the module** using ONLY the vocabulary and grammar from those documents.
 5. **VERIFY** before delivering - check vocabulary matches the plan exactly.
 
@@ -90,7 +90,7 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 
 ## Activity & Content Requirements
 
-> **Single source of truth:** See `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` for all richness parameters including:
+> **Single source of truth:** See `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` for all richness parameters including:
 > - Activity counts and items per activity
 > - Content quality (examples, engagement boxes, immersion)
 > - Sentence complexity (fill-in/unjumble word counts)
@@ -135,7 +135,7 @@ curricula-opus/
 ├── output/               # Generated HTML + JSON
 └── docs/                 # Documentation
     └── l2-uk-en/         # Ukrainian-specific docs
-        └── MODULE-RICHNESS-GUIDELINES.md  # Quality standards
+        └── MODULE-RICHNESS-GUIDELINES-v2.md  # Quality standards (consolidated)
 ```
 
 **Note:** Level structure follows the Ukrainian State Standard 2024 which defines 6 official levels: A1, A2, B1, B2, C1, C2 (no "plus" levels).
@@ -221,5 +221,5 @@ npm run claude:deploy
 - `docs/ARCHITECTURE.md` - System architecture
 - `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec
 - `docs/SCRIPTS.md` - Scripts reference
-- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` - Quality standards
+- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` - Quality standards (consolidated)
 - `docs/l2-uk-en/claude-review-prompt.md` - Review prompts

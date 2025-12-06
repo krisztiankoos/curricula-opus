@@ -532,16 +532,57 @@ grammar:
     - [ ] кухар
     > Seller works in store.
 
-## order: Getting a Job
+## unjumble: Work and Career Sentences
 
-> Put these steps in the correct order for getting a new job.
+> Rearrange the words to form correct sentences about work and professions.
 
-1. Напишіть своє резюме. (Write your resume.)
-2. Знайдіть цікаву вакансію. (Find an interesting vacancy.)
-3. Надішліть резюме на електронну пошту. (Send resume to email.)
-4. Отримайте запрошення на співбесіду. (Receive interview invitation.)
-5. Пройдіть співбесіду успішно. (Pass the interview successfully.)
-6. Отримайте пропозицію роботи. (Receive job offer.)
+1. Мій | батько | працює | лікарем | у | міській | лікарні
+   > [!answer] Мій батько працює лікарем у міській лікарні.
+   > (My father works as a doctor at the city hospital.)
+
+2. Вона | керує | великою | командою | програмістів | уже | рік
+   > [!answer] Вона керує великою командою програмістів уже рік.
+   > (She has been managing a large team of programmers for a year.)
+
+3. Компанія | наймає | нових | працівників | на | різні | посади
+   > [!answer] Компанія наймає нових працівників на різні посади.
+   > (The company is hiring new employees for various positions.)
+
+4. Завтра | в | мене | співбесіда | на | посаду | менеджера
+   > [!answer] Завтра в мене співбесіда на посаду менеджера.
+   > (Tomorrow I have an interview for the manager position.)
+
+5. Він | заробляє | хороші | гроші | як | досвідчений | інженер
+   > [!answer] Він заробляє хороші гроші як досвідчений інженер.
+   > (He earns good money as an experienced engineer.)
+
+6. Зарплата | приходить | щомісяця | на | банківську | картку
+   > [!answer] Зарплата приходить щомісяця на банківську картку.
+   > (The salary comes monthly to the bank card.)
+
+7. Мої | колеги | дуже | привітні | і | допомагають | мені
+   > [!answer] Мої колеги дуже привітні і допомагають мені.
+   > (My colleagues are very friendly and help me.)
+
+8. У | серпні | в | мене | відпустка | на | два | тижні
+   > [!answer] У серпні в мене відпустка на два тижні.
+   > (In August I have a two-week vacation.)
+
+9. Надішліть | своє | резюме | на | електронну | пошту | компанії
+   > [!answer] Надішліть своє резюме на електронну пошту компанії.
+   > (Send your resume to the company's email.)
+
+10. Вона | співпрацює | з | іноземними | партнерами | щодня
+    > [!answer] Вона співпрацює з іноземними партнерами щодня.
+    > (She cooperates with foreign partners daily.)
+
+11. Потрібен | досвід | роботи | не | менше | трьох | років
+    > [!answer] Потрібен досвід роботи не менше трьох років.
+    > (At least three years of work experience is required.)
+
+12. Журналісти | пишуть | статті | для | газет | та | журналів
+    > [!answer] Журналісти пишуть статті для газет та журналів.
+    > (Journalists write articles for newspapers and magazines.)
 
 ## quiz: Career Knowledge
 

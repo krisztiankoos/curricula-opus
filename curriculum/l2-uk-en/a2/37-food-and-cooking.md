@@ -649,16 +649,57 @@ Food brings people together! Whether you're following a Ukrainian recipe, orderi
     - [ ] паличками
     - [ ] руками
 
-## order: Steps for Making Tea
+## unjumble: Food and Cooking Sentences
 
-> Put these steps in the correct order to make tea.
+> Rearrange the words to form correct sentences about food and cooking.
 
-1. Візьми чайник.
-2. Налий воду в чайник.
-3. Постав чайник на плиту.
-4. Вари воду до кипіння.
-5. Поклади чай у чашку.
-6. Налий гарячу воду в чашку.
+1. налий | воду | в | чайник | будь | ласка
+   > [!answer] Налий воду в чайник, будь ласка.
+   > (Pour water into the kettle, please.)
+
+2. вона | готує | вечерю | на | кухні
+   > [!answer] Вона готує вечерю на кухні.
+   > (She is cooking dinner in the kitchen.)
+
+3. суп | занадто | солоний | для | мене
+   > [!answer] Суп занадто солоний для мене.
+   > (The soup is too salty for me.)
+
+4. я | люблю | смажену | картоплю | з | м'ясом
+   > [!answer] Я люблю смажену картоплю з м'ясом.
+   > (I like fried potatoes with meat.)
+
+5. поклади | овочі | у | холодильник
+   > [!answer] Поклади овочі у холодильник.
+   > (Put the vegetables in the refrigerator.)
+
+6. торт | дуже | солодкий | і | смачний
+   > [!answer] Торт дуже солодкий і смачний.
+   > (The cake is very sweet and tasty.)
+
+7. вона | їсть | виделкою | і | ножем
+   > [!answer] Вона їсть виделкою і ножем.
+   > (She eats with a fork and knife.)
+
+8. розігрій | їжу | в | мікрохвильовці
+   > [!answer] Розігрій їжу в мікрохвильовці.
+   > (Heat up the food in the microwave.)
+
+9. кава | занадто | гірка | без | цукру
+   > [!answer] Кава занадто гірка без цукру.
+   > (Coffee is too bitter without sugar.)
+
+10. він | смажить | м'ясо | на | сковороді
+    > [!answer] Він смажить м'ясо на сковороді.
+    > (He is frying meat in the pan.)
+
+11. помий | посуд | після | вечері | будь | ласка
+    > [!answer] Помий посуд після вечері, будь ласка.
+    > (Wash the dishes after dinner, please.)
+
+12. цей | лимон | дуже | кислий
+    > [!answer] Цей лимон дуже кислий.
+    > (This lemon is very sour.)
 
 ## quiz: Food and Taste
 

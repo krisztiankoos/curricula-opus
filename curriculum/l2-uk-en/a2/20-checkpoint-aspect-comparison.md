@@ -544,33 +544,57 @@ Time to review everything you've learned in Phase A2.2! This checkpoint covers v
     > [!answer] би
     > (He would read - би after consonant)
 
-## order: Phase A2.2 Concepts
+## unjumble: A2.2 Concept Sentences
 
-> Arrange these concepts from simple to complex.
+> Rearrange the words to form correct sentences using A2.2 concepts.
 
-1. найкращий → кращий → добрий
-   > [!answer] добрий → кращий → найкращий
-   > (good → better → best)
+1. я | прочитав | книгу | вчора | цілу
+   > [!answer] Я прочитав цілу книгу вчора.
+   > (I read the whole book yesterday - perfective)
 
-2. умовний спосіб → минулий час → теперішній час
-   > [!answer] теперішній час → минулий час → умовний спосіб
-   > (present → past → conditional)
+2. він | кращий | студент | за | мене
+   > [!answer] Він кращий студент за мене.
+   > (He is a better student than me - comparative)
 
-3. доконаний вид → недоконаний вид → інфінітив
-   > [!answer] інфінітив → недоконаний вид → доконаний вид
-   > (infinitive → imperfective → perfective)
+3. якби | я | знав | сказав | би | тобі
+   > [!answer] Якби я знав, я би сказав тобі.
+   > (If I knew, I would tell you - conditional)
 
-4. прочитаю → буду читати → читаю
-   > [!answer] читаю → буду читати → прочитаю
-   > (I read → I will be reading → I will read/finish)
+4. вона | буде | читати | книгу | завтра
+   > [!answer] Вона буде читати книгу завтра.
+   > (She will be reading a book tomorrow - imperfective future)
 
-5. якби я мав → я маю → я мав
-   > [!answer] я маю → я мав → якби я мав
-   > (I have → I had → if I had)
+5. це | найкращий | фільм | року
+   > [!answer] Це найкращий фільм року.
+   > (This is the best movie of the year - superlative)
 
-6. найдорожчий → дорожчий → дорогий
-   > [!answer] дорогий → дорожчий → найдорожчий
-   > (expensive → more expensive → most expensive)
+6. я | віддаю | перевагу | каві | чай
+   > [!answer] Я віддаю перевагу каві, не чай.
+   > (I prefer coffee, not tea - preference)
+
+7. вчора | він | написав | три | листи
+   > [!answer] Вчора він написав три листи.
+   > (Yesterday he wrote three letters - perfective)
+
+8. ми | б | поїхали | на | море | якби | могли
+   > [!answer] Ми б поїхали на море, якби могли.
+   > (We would go to the sea if we could - conditional)
+
+9. мені | більше | подобається | літо | ніж | зима
+   > [!answer] Мені більше подобається літо ніж зима.
+   > (I like summer more than winter - comparative)
+
+10. це | був | найгірший | день | у | моєму | житті
+    > [!answer] Це був найгірший день у моєму житті.
+    > (This was the worst day in my life - superlative)
+
+11. вона | хотіла | б | жити | у | великому | місті
+    > [!answer] Вона хотіла б жити у великому місті.
+    > (She would like to live in a big city - conditional)
+
+12. я | довго | писав | цей | лист
+    > [!answer] Я довго писав цей лист.
+    > (I was writing this letter for a long time - imperfective)
 
 ## quiz: Final Mastery Check
 

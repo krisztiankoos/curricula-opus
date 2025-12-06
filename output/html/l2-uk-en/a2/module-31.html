@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -975,11 +1016,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Prefix Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Motion Verb Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Prefix Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1006,7 +1054,7 @@ footer {
   </main><footer>Module 31 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Prefix","data":{"type":"fill-blank","items":[{"prompt":"Він ___йшов додому о п'ятій. (arrived)","answer":"при"},{"prompt":"Вона ___йшла з кімнати. (exited)","answer":"ви"},{"prompt":"___йди до кімнати. (enter)","answer":"Увій"},{"prompt":"___йди до мене завтра. (stop by)","answer":"Зай"},{"prompt":"___йди вулицю обережно. (cross)","answer":"Перей"},{"prompt":"___йди від дверей! (move away)","answer":"Відій"},{"prompt":"___йди ближче. (approach)","answer":"Підій"},{"prompt":"___йди це дерево. (go around)","answer":"Обій"},{"prompt":"Вони ___їхали до Києва. (moved)","answer":"пере"},{"prompt":"Машина ___їхала з гаража. (drove out)","answer":"ви"},{"prompt":"___неси книгу, будь ласка. (bring)","answer":"При"},{"prompt":"Я ___ніс сміття. (carried out)","answer":"ви"}]}},{"id":"activity-1","type":"match-up","title":"Prefix Meanings","data":{"type":"match-up","pairs":[{"left":"при-","right":"arrival"},{"left":"ви-","right":"exit, out"},{"left":"у-/в-","right":"entry, in"},{"left":"за-","right":"drop by"},{"left":"пере-","right":"across"},{"left":"від-","right":"away"},{"left":"під-","right":"approach"},{"left":"об-","right":"around"},{"left":"прийти","right":"to arrive (foot)"},{"left":"вийти","right":"to exit"},{"left":"увійти","right":"to enter"},{"left":"перейти","right":"to cross"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["додому","прийшов","Він","о","п'ятій","після","довгого","дня"],"answer":"Він прийшов додому о п'ятій після довгого дня.","translation":"He arrived home at five after a long day."},{"words":["з","кімнати","Вона","вийшла","швидко","та","закрила","двері"],"answer":"Вона швидко вийшла з кімнати та закрила двері.","translation":"She quickly exited the room and closed the door."},{"words":["до","мене","Зайди","завтра","ввечері","поговорити","про","це"],"answer":"Зайди до мене завтра ввечері поговорити про це.","translation":"Stop by my place tomorrow evening to talk about this."},{"words":["вулицю","Перейди","обережно","та","дивись","на","світлофор","уважно"],"answer":"Перейди вулицю обережно та дивись на світлофор уважно.","translation":"Cross the street carefully and watch the traffic light attentively."},{"words":["від","вікна","Він","відійшов","коли","почув","дивний","шум"],"answer":"Він відійшов від вікна, коли почув дивний шум.","translation":"He walked away from the window when he heard a strange noise."},{"words":["ближче","Підійди","до","мене","щоб","я","тебе","бачив"],"answer":"Підійди ближче до мене, щоб я тебе бачив.","translation":"Come closer to me so that I can see you."},{"words":["до","Львова","переїхали","Вони","минулого","року","на","постійно"],"answer":"Вони переїхали до Львова минулого року на постійно.","translation":"They moved to Lviv last year permanently."},{"words":["Машина","в","гараж","в'їхала","повільно","та","зупинилася","там"],"answer":"Машина повільно в'їхала в гараж та там зупинилася.","translation":"The car slowly drove into the garage and stopped there."},{"words":["будь ласка","Принеси","книгу","з","полиці","що","біля","вікна"],"answer":"Принеси, будь ласка, книгу з полиці, що біля вікна.","translation":"Please bring the book from the shelf by the window."},{"words":["сміття","виніс","Я","на","вулицю","як","мама","просила"],"answer":"Я виніс сміття на вулицю, як мама просила.","translation":"I carried out the trash as mom asked."},{"words":["Поїзд","вже","відїхав","коли","ми","прибігли","на","станцію"],"answer":"Поїзд вже відїхав, коли ми прибігли на станцію.","translation":"The train already left when we ran to the station."},{"words":["о","шостій","заїду","Я","за","тобою","будь","готова"],"answer":"Я заїду за тобою о шостій, будь готова.","translation":"I'll pick you up at six, be ready."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Knowledge","data":{"type":"quiz","questions":[{"question":"\"При-\" means:","options":["Arrival","Exit","Around","Away"],"correctIndex":0,"explanation":""},{"question":"\"Вийти\" means:","options":["To exit, go out","To enter","To arrive","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Зайти\" means:","options":["To stop by","To exit","To cross","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Перейти\" means:","options":["To cross","To stop by","To exit","To enter"],"correctIndex":0,"explanation":""},{"question":"\"Під-\" expresses:","options":["Approach","Departure","Around","Entry"],"correctIndex":0,"explanation":""},{"question":"\"Переїхати\" can mean:","options":["To move (relocate)","To arrive","To exit","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"Принести\" means:","options":["To bring (carrying)","To take away","To exit","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Відійти\" means:","options":["To walk away","To approach","To enter","To arrive"],"correctIndex":0,"explanation":""},{"question":"\"Об'їхати\" means:","options":["To drive around","To drive in","To drive out","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"В'їхати\" means:","options":["To drive in","To drive out","To drive around","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Винести\" means:","options":["To carry out","To carry in","To bring","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Увійти\" means:","options":["To enter","To exit","To arrive","To cross"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Prefix Facts","data":{"type":"true-false","statements":[{"statement":"\"При-\" indicates arrival.","isTrue":true,"explanation":""},{"statement":"\"Ви-\" means \"into.\"","isTrue":false,"explanation":""},{"statement":"\"Зайти\" means \"to stop by briefly.\"","isTrue":true,"explanation":""},{"statement":"\"Перейти\" means \"to exit.\"","isTrue":false,"explanation":""},{"statement":"\"Під-\" means \"away.\"","isTrue":false,"explanation":""},{"statement":"\"Переїхати\" can mean \"to relocate.\"","isTrue":true,"explanation":""},{"statement":"Prefixes change verb meaning significantly.","isTrue":true,"explanation":""},{"statement":"\"Обійти\" means \"to enter.\"","isTrue":false,"explanation":""},{"statement":"\"В'їхати\" uses an apostrophe.","isTrue":true,"explanation":""},{"statement":"\"Від-\" indicates departure.","isTrue":true,"explanation":""},{"statement":"\"Увійти\" and \"в'їхати\" have same prefix.","isTrue":true,"explanation":""},{"statement":"Motion verb prefixes only work with \"йти.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Prefix Categories","data":{"type":"group-sort","groups":[{"id":"arrivalentry","name":"Arrival/Entry","items":["при-","у-/в-","під-","прийти","увійти"]},{"id":"exitaway","name":"Exit/Away","items":["ви-","від-","вийти"]},{"id":"movement-type","name":"Movement Type","items":["пере-","об-","перейти"]},{"id":"other-direction","name":"Other Direction","items":["за-"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"Він ___ до кімнати і закрив двері. (entered)","answer":"увійшов"},{"prompt":"Вона ___ з дому о восьмій ранку. (exited)","answer":"вийшла"},{"prompt":"Ми ___ до Львова минулого літа. (moved)","answer":"переїхали"},{"prompt":"___ до мене завтра ввечері. (stop by)","answer":"Зайди"},{"prompt":"Поїзд уже ___ зі станції. (departed)","answer":"відїхав"},{"prompt":"Таксі ___ до готелю о п'ятій. (drove up)","answer":"під'їхало"},{"prompt":"Я ___ книгу з бібліотеки. (brought)","answer":"приніс"},{"prompt":"Вони ___ пробку на дорозі. (drove around)","answer":"об'їхали"},{"prompt":"___ вулицю на зеленому світлі. (cross)","answer":"Перейди"},{"prompt":"Він ___ від вікна, коли почув шум. (walked away)","answer":"відійшов"},{"prompt":"Ми ___ сміття на вулицю. (carried out)","answer":"винесли"},{"prompt":"Автобус ___ до зупинки. (approached)","answer":"під'їхав"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Verb","data":{"type":"select","items":[{"question":"Він ___ додому о шостій вечора.","options":[{"text":"вийшов","correct":false},{"text":"прийшов","correct":true},{"text":"відійшов","correct":false},{"text":"перейшов","correct":false}]},{"question":"Вона ___ з кімнати швидко.","options":[{"text":"вийшла","correct":true},{"text":"прийшла","correct":false},{"text":"увійшла","correct":false},{"text":"зайшла","correct":false}]},{"question":"Ми ___ до нової квартири.","options":[{"text":"вийшли","correct":false},{"text":"зайшли","correct":false},{"text":"переїхали","correct":true},{"text":"відійшли","correct":false}]},{"question":"___ до магазину по хліб.","options":[{"text":"Вийди","correct":false},{"text":"Зайди","correct":true},{"text":"Перейди","correct":false},{"text":"Відійди","correct":false}]},{"question":"Машина ___ в гараж повільно.","options":[{"text":"виїхала","correct":false},{"text":"в'їхала","correct":true},{"text":"об'їхала","correct":false},{"text":"переїхала","correct":false}]},{"question":"Він ___ від дверей і сів на стілець.","options":[{"text":"відійшов","correct":true},{"text":"підійшов","correct":false},{"text":"увійшов","correct":false},{"text":"обійшов","correct":false}]},{"question":"___ ближче, я тебе не чую.","options":[{"text":"Відійди","correct":false},{"text":"Підійди","correct":true},{"text":"Перейди","correct":false},{"text":"Обійди","correct":false}]},{"question":"Ми ___ це дерево і пішли далі.","options":[{"text":"перейшли","correct":false},{"text":"зайшли","correct":false},{"text":"обійшли","correct":true},{"text":"відійшли","correct":false}]},{"question":"Поїзд ___ о десятій ранку.","options":[{"text":"приїхав","correct":false},{"text":"виїхав","correct":true},{"text":"під'їхав","correct":false},{"text":"заїхав","correct":false}]},{"question":"Вона ___ воду з кухні.","options":[{"text":"принесла","correct":true},{"text":"винесла","correct":false},{"text":"занесла","correct":false},{"text":"перенесла","correct":false}]},{"question":"Я ___ за тобою о п'ятій.","options":[{"text":"приїду","correct":false},{"text":"виїду","correct":false},{"text":"заїду","correct":true},{"text":"переїду","correct":false}]},{"question":"___ вулицю обережно.","options":[{"text":"Перейди","correct":true},{"text":"Обійди","correct":false},{"text":"Відійди","correct":false},{"text":"Підійди","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Prefix Understanding","data":{"type":"quiz","questions":[{"question":"Which prefix means \"arrival\"?","options":["при-","ви-","від-","об-"],"correctIndex":0,"explanation":""},{"question":"\"Він переїхав до Києва\" means:","options":["He moved to Kyiv","He exited Kyiv","He stopped by Kyiv","He drove around Kyiv"],"correctIndex":0,"explanation":""},{"question":"What is the difference between \"прийти\" and \"приїхати\"?","options":["Прийти is on foot, приїхати is by vehicle","Прийти is formal, приїхати is informal","Прийти is perfective, приїхати is imperfective","There is no difference"],"correctIndex":0,"explanation":""},{"question":"\"Зайди до магазину\" means:","options":["Stop by the store","Exit the store","Cross the store","Enter the store and stay"],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to carry out\"?","options":["винести","принести","занести","перенести"],"correctIndex":0,"explanation":""},{"question":"\"Під'їхати\" means:","options":["To drive up, approach","To drive away","To drive around","To drive out"],"correctIndex":0,"explanation":""},{"question":"\"Обійти\" is used when you:","options":["Go around something","Enter something","Exit something","Cross something"],"correctIndex":0,"explanation":""},{"question":"What happens to \"їхати\" with prefix \"в-\"?","options":["It becomes \"в'їхати\" with apostrophe","It becomes \"віхати\"","It stays \"їхати\"","It becomes \"уїхати\""],"correctIndex":0,"explanation":""},{"question":"\"Відійди від вогню\" means:","options":["Walk away from the fire","Walk toward the fire","Walk around the fire","Walk into the fire"],"correctIndex":0,"explanation":""},{"question":"\"Перенести зустріч\" means:","options":["To reschedule/move a meeting","To cancel a meeting","To attend a meeting","To exit a meeting"],"correctIndex":0,"explanation":""},{"question":"Which prefix pair indicates entry?","options":["у-/в-","ви-/від-","при-/під-","за-/пере-"],"correctIndex":0,"explanation":""},{"question":"\"Ми об'їхали пробку\" means:","options":["We drove around the traffic jam","We drove into the traffic jam","We drove out of the traffic jam","We drove through the traffic jam"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Prefix","data":{"type":"fill-blank","items":[{"prompt":"Він ___йшов додому о п'ятій. (arrived)","answer":"при"},{"prompt":"Вона ___йшла з кімнати. (exited)","answer":"ви"},{"prompt":"___йди до кімнати. (enter)","answer":"Увій"},{"prompt":"___йди до мене завтра. (stop by)","answer":"Зай"},{"prompt":"___йди вулицю обережно. (cross)","answer":"Перей"},{"prompt":"___йди від дверей! (move away)","answer":"Відій"},{"prompt":"___йди ближче. (approach)","answer":"Підій"},{"prompt":"___йди це дерево. (go around)","answer":"Обій"},{"prompt":"Вони ___їхали до Києва. (moved)","answer":"пере"},{"prompt":"Машина ___їхала з гаража. (drove out)","answer":"ви"},{"prompt":"___неси книгу, будь ласка. (bring)","answer":"При"},{"prompt":"Я ___ніс сміття. (carried out)","answer":"ви"}]}},{"id":"activity-1","type":"match-up","title":"Prefix Meanings","data":{"type":"match-up","pairs":[{"left":"при-","right":"arrival"},{"left":"ви-","right":"exit, out"},{"left":"у-/в-","right":"entry, in"},{"left":"за-","right":"drop by"},{"left":"пере-","right":"across"},{"left":"від-","right":"away"},{"left":"під-","right":"approach"},{"left":"об-","right":"around"},{"left":"прийти","right":"to arrive (foot)"},{"left":"вийти","right":"to exit"},{"left":"увійти","right":"to enter"},{"left":"перейти","right":"to cross"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["додому","прийшов","Він","о","п'ятій","після","довгого","дня"],"answer":"Він прийшов додому о п'ятій після довгого дня.","translation":"He arrived home at five after a long day."},{"words":["з","кімнати","Вона","вийшла","швидко","та","закрила","двері"],"answer":"Вона швидко вийшла з кімнати та закрила двері.","translation":"She quickly exited the room and closed the door."},{"words":["до","мене","Зайди","завтра","ввечері","поговорити","про","це"],"answer":"Зайди до мене завтра ввечері поговорити про це.","translation":"Stop by my place tomorrow evening to talk about this."},{"words":["вулицю","Перейди","обережно","та","дивись","на","світлофор","уважно"],"answer":"Перейди вулицю обережно та дивись на світлофор уважно.","translation":"Cross the street carefully and watch the traffic light attentively."},{"words":["від","вікна","Він","відійшов","коли","почув","дивний","шум"],"answer":"Він відійшов від вікна, коли почув дивний шум.","translation":"He walked away from the window when he heard a strange noise."},{"words":["ближче","Підійди","до","мене","щоб","я","тебе","бачив"],"answer":"Підійди ближче до мене, щоб я тебе бачив.","translation":"Come closer to me so that I can see you."},{"words":["до","Львова","переїхали","Вони","минулого","року","на","постійно"],"answer":"Вони переїхали до Львова минулого року на постійно.","translation":"They moved to Lviv last year permanently."},{"words":["Машина","в","гараж","в'їхала","повільно","та","зупинилася","там"],"answer":"Машина повільно в'їхала в гараж та там зупинилася.","translation":"The car slowly drove into the garage and stopped there."},{"words":["будь ласка","Принеси","книгу","з","полиці","що","біля","вікна"],"answer":"Принеси, будь ласка, книгу з полиці, що біля вікна.","translation":"Please bring the book from the shelf by the window."},{"words":["сміття","виніс","Я","на","вулицю","як","мама","просила"],"answer":"Я виніс сміття на вулицю, як мама просила.","translation":"I carried out the trash as mom asked."},{"words":["Поїзд","вже","відїхав","коли","ми","прибігли","на","станцію"],"answer":"Поїзд вже відїхав, коли ми прибігли на станцію.","translation":"The train already left when we ran to the station."},{"words":["о","шостій","заїду","Я","за","тобою","будь","готова"],"answer":"Я заїду за тобою о шостій, будь готова.","translation":"I'll pick you up at six, be ready."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Knowledge","data":{"type":"quiz","questions":[{"question":"\"При-\" means:","options":["Arrival","Exit","Around","Away"],"correctIndex":0,"explanation":""},{"question":"\"Вийти\" means:","options":["To exit, go out","To enter","To arrive","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Зайти\" means:","options":["To stop by","To exit","To cross","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Перейти\" means:","options":["To cross","To stop by","To exit","To enter"],"correctIndex":0,"explanation":""},{"question":"\"Під-\" expresses:","options":["Approach","Departure","Around","Entry"],"correctIndex":0,"explanation":""},{"question":"\"Переїхати\" can mean:","options":["To move (relocate)","To arrive","To exit","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"Принести\" means:","options":["To bring (carrying)","To take away","To exit","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Відійти\" means:","options":["To walk away","To approach","To enter","To arrive"],"correctIndex":0,"explanation":""},{"question":"\"Об'їхати\" means:","options":["To drive around","To drive in","To drive out","To stop by"],"correctIndex":0,"explanation":""},{"question":"\"В'їхати\" means:","options":["To drive in","To drive out","To drive around","To cross"],"correctIndex":0,"explanation":""},{"question":"\"Винести\" means:","options":["To carry out","To carry in","To bring","To approach"],"correctIndex":0,"explanation":""},{"question":"\"Увійти\" means:","options":["To enter","To exit","To arrive","To cross"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Prefix Facts","data":{"type":"true-false","statements":[{"statement":"\"При-\" indicates arrival.","isTrue":true,"explanation":""},{"statement":"\"Ви-\" means \"into.\"","isTrue":false,"explanation":""},{"statement":"\"Зайти\" means \"to stop by briefly.\"","isTrue":true,"explanation":""},{"statement":"\"Перейти\" means \"to exit.\"","isTrue":false,"explanation":""},{"statement":"\"Під-\" means \"away.\"","isTrue":false,"explanation":""},{"statement":"\"Переїхати\" can mean \"to relocate.\"","isTrue":true,"explanation":""},{"statement":"Prefixes change verb meaning significantly.","isTrue":true,"explanation":""},{"statement":"\"Обійти\" means \"to enter.\"","isTrue":false,"explanation":""},{"statement":"\"В'їхати\" uses an apostrophe.","isTrue":true,"explanation":""},{"statement":"\"Від-\" indicates departure.","isTrue":true,"explanation":""},{"statement":"\"Увійти\" and \"в'їхати\" have same prefix.","isTrue":true,"explanation":""},{"statement":"Motion verb prefixes only work with \"йти.\"","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Prefix Categories","data":{"type":"group-sort","groups":[{"id":"arrivalentry","name":"Arrival/Entry","items":["при-","у-/в-","під-","прийти","увійти"]},{"id":"exitaway","name":"Exit/Away","items":["ви-","від-","вийти"]},{"id":"movement-type","name":"Movement Type","items":["пере-","об-","перейти"]},{"id":"other-direction","name":"Other Direction","items":["за-"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete the Sentence","data":{"type":"fill-blank","items":[{"prompt":"Він ___ до кімнати і закрив двері. (entered)","answer":"увійшов"},{"prompt":"Вона ___ з дому о восьмій ранку. (exited)","answer":"вийшла"},{"prompt":"Ми ___ до Львова минулого літа. (moved)","answer":"переїхали"},{"prompt":"___ до мене завтра ввечері. (stop by)","answer":"Зайди"},{"prompt":"Поїзд уже ___ зі станції. (departed)","answer":"відїхав"},{"prompt":"Таксі ___ до готелю о п'ятій. (drove up)","answer":"під'їхало"},{"prompt":"Я ___ книгу з бібліотеки. (brought)","answer":"приніс"},{"prompt":"Вони ___ пробку на дорозі. (drove around)","answer":"об'їхали"},{"prompt":"___ вулицю на зеленому світлі. (cross)","answer":"Перейди"},{"prompt":"Він ___ від вікна, коли почув шум. (walked away)","answer":"відійшов"},{"prompt":"Ми ___ сміття на вулицю. (carried out)","answer":"винесли"},{"prompt":"Автобус ___ до зупинки. (approached)","answer":"під'їхав"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Verb","data":{"type":"select","items":[{"question":"Він ___ додому о шостій вечора.","options":[{"text":"вийшов","correct":false},{"text":"прийшов","correct":true},{"text":"відійшов","correct":false},{"text":"перейшов","correct":false}]},{"question":"Вона ___ з кімнати швидко.","options":[{"text":"вийшла","correct":true},{"text":"прийшла","correct":false},{"text":"увійшла","correct":false},{"text":"зайшла","correct":false}]},{"question":"Ми ___ до нової квартири.","options":[{"text":"вийшли","correct":false},{"text":"зайшли","correct":false},{"text":"переїхали","correct":true},{"text":"відійшли","correct":false}]},{"question":"___ до магазину по хліб.","options":[{"text":"Вийди","correct":false},{"text":"Зайди","correct":true},{"text":"Перейди","correct":false},{"text":"Відійди","correct":false}]},{"question":"Машина ___ в гараж повільно.","options":[{"text":"виїхала","correct":false},{"text":"в'їхала","correct":true},{"text":"об'їхала","correct":false},{"text":"переїхала","correct":false}]},{"question":"Він ___ від дверей і сів на стілець.","options":[{"text":"відійшов","correct":true},{"text":"підійшов","correct":false},{"text":"увійшов","correct":false},{"text":"обійшов","correct":false}]},{"question":"___ ближче, я тебе не чую.","options":[{"text":"Відійди","correct":false},{"text":"Підійди","correct":true},{"text":"Перейди","correct":false},{"text":"Обійди","correct":false}]},{"question":"Ми ___ це дерево і пішли далі.","options":[{"text":"перейшли","correct":false},{"text":"зайшли","correct":false},{"text":"обійшли","correct":true},{"text":"відійшли","correct":false}]},{"question":"Поїзд ___ о десятій ранку.","options":[{"text":"приїхав","correct":false},{"text":"виїхав","correct":true},{"text":"під'їхав","correct":false},{"text":"заїхав","correct":false}]},{"question":"Вона ___ воду з кухні.","options":[{"text":"принесла","correct":true},{"text":"винесла","correct":false},{"text":"занесла","correct":false},{"text":"перенесла","correct":false}]},{"question":"Я ___ за тобою о п'ятій.","options":[{"text":"приїду","correct":false},{"text":"виїду","correct":false},{"text":"заїду","correct":true},{"text":"переїду","correct":false}]},{"question":"___ вулицю обережно.","options":[{"text":"Перейди","correct":true},{"text":"Обійди","correct":false},{"text":"Відійди","correct":false},{"text":"Підійди","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Motion Verb Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["він","|","вийшов","|","з","|","дому","|","о","|","сьомій"],"answer":"Він вийшов з дому о сьомій.","translation":"He went out of the house at seven."},{"words":["вона","|","увійшла","|","до","|","кімнати","|","тихо"],"answer":"Вона увійшла до кімнати тихо.","translation":"She entered the room quietly."},{"words":["ми","|","переїхали","|","до","|","нового","|","міста"],"answer":"Ми переїхали до нового міста.","translation":"We moved to a new city."},{"words":["він","|","виїхав","|","з","|","гаража","|","на","|","машині"],"answer":"Він виїхав з гаража на машині.","translation":"He drove out of the garage by car."},{"words":["я","|","заїду","|","за","|","тобою","|","о","|","п'ятій"],"answer":"Я заїду за тобою о п'ятій.","translation":"I'll pick you up at five."},{"words":["вона","|","обійшла","|","весь","|","будинок"],"answer":"Вона обійшла весь будинок.","translation":"She walked around the whole building."},{"words":["підійди","|","до","|","мене","|","будь","|","ласка"],"answer":"Підійди до мене, будь ласка.","translation":"Come up to me, please."},{"words":["він","|","перейшов","|","вулицю","|","на","|","зеленому","|","світлі"],"answer":"Він перейшов вулицю на зеленому світлі.","translation":"He crossed the street on the green light."},{"words":["діти","|","вибігли","|","з","|","школи","|","швидко"],"answer":"Діти вибігли з школи швидко.","translation":"The children ran out of school quickly."},{"words":["вона","|","принесла","|","квіти","|","додому"],"answer":"Вона принесла квіти додому.","translation":"She brought flowers home."},{"words":["відійдіть","|","від","|","вікна","|","будь","|","ласка"],"answer":"Відійдіть від вікна, будь ласка.","translation":"Move away from the window, please."},{"words":["він","|","довіз","|","нас","|","до","|","вокзалу"],"answer":"Він довіз нас до вокзалу.","translation":"He drove us to the station."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Prefix Understanding","data":{"type":"quiz","questions":[{"question":"Which prefix means \"arrival\"?","options":["при-","ви-","від-","об-"],"correctIndex":0,"explanation":""},{"question":"\"Він переїхав до Києва\" means:","options":["He moved to Kyiv","He exited Kyiv","He stopped by Kyiv","He drove around Kyiv"],"correctIndex":0,"explanation":""},{"question":"What is the difference between \"прийти\" and \"приїхати\"?","options":["Прийти is on foot, приїхати is by vehicle","Прийти is formal, приїхати is informal","Прийти is perfective, приїхати is imperfective","There is no difference"],"correctIndex":0,"explanation":""},{"question":"\"Зайди до магазину\" means:","options":["Stop by the store","Exit the store","Cross the store","Enter the store and stay"],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to carry out\"?","options":["винести","принести","занести","перенести"],"correctIndex":0,"explanation":""},{"question":"\"Під'їхати\" means:","options":["To drive up, approach","To drive away","To drive around","To drive out"],"correctIndex":0,"explanation":""},{"question":"\"Обійти\" is used when you:","options":["Go around something","Enter something","Exit something","Cross something"],"correctIndex":0,"explanation":""},{"question":"What happens to \"їхати\" with prefix \"в-\"?","options":["It becomes \"в'їхати\" with apostrophe","It becomes \"віхати\"","It stays \"їхати\"","It becomes \"уїхати\""],"correctIndex":0,"explanation":""},{"question":"\"Відійди від вогню\" means:","options":["Walk away from the fire","Walk toward the fire","Walk around the fire","Walk into the fire"],"correctIndex":0,"explanation":""},{"question":"\"Перенести зустріч\" means:","options":["To reschedule/move a meeting","To cancel a meeting","To attend a meeting","To exit a meeting"],"correctIndex":0,"explanation":""},{"question":"Which prefix pair indicates entry?","options":["у-/в-","ви-/від-","при-/під-","за-/пере-"],"correctIndex":0,"explanation":""},{"question":"\"Ми об'їхали пробку\" means:","options":["We drove around the traffic jam","We drove into the traffic jam","We drove out of the traffic jam","We drove through the traffic jam"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"прийти","translit":"","en":"to come, arrive","note":"pf"},{"uk":"вийти","translit":"","en":"to exit, go out","note":"pf"},{"uk":"увійти","translit":"","en":"to enter","note":"pf"},{"uk":"зайти","translit":"","en":"to stop by","note":"pf"},{"uk":"перейти","translit":"","en":"to cross","note":"pf"},{"uk":"відійти","translit":"","en":"to walk away","note":"pf"},{"uk":"підійти","translit":"","en":"to approach","note":"pf"},{"uk":"обійти","translit":"","en":"to go around","note":"pf"},{"uk":"приїхати","translit":"","en":"to arrive (vehicle)","note":"pf"},{"uk":"виїхати","translit":"","en":"to depart","note":"pf"},{"uk":"в'їхати","translit":"","en":"to drive in","note":"pf"},{"uk":"заїхати","translit":"","en":"to stop by (vehicle)","note":"pf"},{"uk":"переїхати","translit":"","en":"to move, relocate","note":"pf"},{"uk":"принести","translit":"","en":"to bring","note":"pf"},{"uk":"винести","translit":"","en":"to carry out","note":"pf"},{"uk":"занести","translit":"","en":"to drop off","note":"pf"},{"uk":"перенести","translit":"","en":"to carry across, postpone","note":"pf"},{"uk":"привезти","translit":"","en":"to bring (by vehicle)","note":"pf"},{"uk":"вивезти","translit":"","en":"to take out","note":"pf"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2331,6 +2379,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

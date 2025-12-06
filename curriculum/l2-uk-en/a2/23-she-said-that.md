@@ -567,27 +567,57 @@ Unlike English, Ukrainian often keeps the same tense:
     - [ ] як
     - [ ] коли
 
-## order: Direct to Indirect
+## unjumble: Reported Speech Sentences
 
-> Arrange the process of converting speech.
+> Rearrange the words to form correct reported speech sentences.
 
-1. пряма мова → що/чи → непряма мова
-   > [!answer] Direct speech → that/if → indirect speech
+1. він | сказав | що | буде | вдома | о | шостій
+   > [!answer] Він сказав, що буде вдома о шостій.
+   > (He said that he would be home at six.)
 
-2. він сказав → що → він іде
-   > [!answer] He said → that → he's going
+2. вона | запитала | чи | я | голодний
+   > [!answer] Вона запитала, чи я голодний.
+   > (She asked if I was hungry.)
 
-3. вона запитала → чи → я готовий
-   > [!answer] She asked → if → I'm ready
+3. мама | сказала | що | вечеря | готова
+   > [!answer] Мама сказала, що вечеря готова.
+   > (Mom said that dinner is ready.)
 
-4. питання → чи/де/коли → відповідь
-   > [!answer] Question → if/where/when → answer
+4. він | запитав | де | знаходиться | вокзал
+   > [!answer] Він запитав, де знаходиться вокзал.
+   > (He asked where the station is located.)
 
-5. займенник я → він/вона → зміна особи
-   > [!answer] Pronoun I → he/she → person change
+5. вона | відповіла | що | не | знає | цього
+   > [!answer] Вона відповіла, що не знає цього.
+   > (She answered that she doesn't know this.)
 
-6. лапки «» → що/чи → без лапок
-   > [!answer] Quotation marks → that/if → no quotes
+6. друг | повідомив | що | приїде | завтра
+   > [!answer] Друг повідомив, що приїде завтра.
+   > (A friend informed that he will arrive tomorrow.)
+
+7. вчитель | запитав | коли | ми | закінчимо | завдання
+   > [!answer] Вчитель запитав, коли ми закінчимо завдання.
+   > (The teacher asked when we will finish the task.)
+
+8. вона | сказала | що | їй | подобається | цей | фільм
+   > [!answer] Вона сказала, що їй подобається цей фільм.
+   > (She said that she likes this movie.)
+
+9. він | запитав | чому | я | не | прийшов | вчора
+   > [!answer] Він запитав, чому я не прийшов вчора.
+   > (He asked why I didn't come yesterday.)
+
+10. вони | сказали | що | хочуть | поїхати | на | море
+    > [!answer] Вони сказали, що хочуть поїхати на море.
+    > (They said that they want to go to the sea.)
+
+11. вона | запитала | як | я | себе | почуваю
+    > [!answer] Вона запитала, як я себе почуваю.
+    > (She asked how I feel.)
+
+12. він | відповів | що | все | гаразд
+    > [!answer] Він відповів, що все гаразд.
+    > (He answered that everything is fine.)
 
 ## quiz: Advanced Reported Speech
 

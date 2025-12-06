@@ -46,10 +46,9 @@ Based on level and number/range, find the file(s):
 **CRITICAL: Read ALL of these before any task:**
 
 1. `docs/l2-uk-en/module-architect-prompt.md` - Workflow, grammar constraints, fix strategies
-2. `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES.md` - Activity counts, complexity, engagement boxes
+2. `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` - Activity counts, complexity, templates, engagement boxes
 3. `docs/MARKDOWN-FORMAT.md` - Activity syntax, vocabulary format
-4. `docs/l2-uk-en/ACTIVITY-GUIDELINES.md` - Templates, examples, common mistakes
-5. `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md` - Vocabulary lists, grammar scope
+4. `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md` - Vocabulary lists, grammar scope
 
 ### Step 3: Execute Task
 

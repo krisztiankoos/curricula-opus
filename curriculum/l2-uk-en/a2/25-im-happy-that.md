@@ -596,27 +596,57 @@ Impersonal constructions with dative:
     - [x] щасливий
     - [ ] здивований
 
-## order: Emotion Intensity
+## unjumble: Emotion Sentences
 
-> Arrange from mildest to strongest emotion.
+> Rearrange the words to form correct sentences about emotions.
 
-1. задоволений → радий → щасливий → в захваті
-   > [!answer] Satisfied → glad → happy → delighted
+1. я | радий | що | ти | прийшов
+   > [!answer] Я радий, що ти прийшов.
+   > (I'm glad that you came.)
 
-2. трохи сумний → сумний → дуже сумний → у відчаї
-   > [!answer] A bit sad → sad → very sad → in despair
+2. мені | сумно | що | він | поїхав
+   > [!answer] Мені сумно, що він поїхав.
+   > (I'm sad that he left.)
 
-3. здивований → дуже здивований → шокований → вражений
-   > [!answer] Surprised → very surprised → shocked → astonished
+3. вона | здивована | що | він | забув
+   > [!answer] Вона здивована, що він забув.
+   > (She's surprised that he forgot.)
 
-4. трохи хвилююся → хвилююся → дуже хвилююся → боюся
-   > [!answer] A bit worried → worried → very worried → afraid
+4. я | щасливий | що | маю | таких | друзів
+   > [!answer] Я щасливий, що маю таких друзів.
+   > (I'm happy that I have such friends.)
 
-5. приємно → радісно → щасливо → в захваті
-   > [!answer] Pleasant → joyful → happy → delighted
+5. нам | шкода | що | ви | не | можете | прийти
+   > [!answer] Нам шкода, що ви не можете прийти.
+   > (We're sorry that you can't come.)
 
-6. вдячний → дуже вдячний → безмежно вдячний
-   > [!answer] Grateful → very grateful → infinitely grateful
+6. він | вдячний | що | вони | допомогли
+   > [!answer] Він вдячний, що вони допомогли.
+   > (He's grateful that they helped.)
+
+7. я | боюся | що | запізнюся | на | поїзд
+   > [!answer] Я боюся, що запізнюся на поїзд.
+   > (I'm afraid that I'll miss the train.)
+
+8. вона | в | захваті | від | цього | подарунка
+   > [!answer] Вона в захваті від цього подарунка.
+   > (She's delighted with this gift.)
+
+9. мені | приємно | що | ви | це | сказали
+   > [!answer] Мені приємно, що ви це сказали.
+   > (I'm pleased that you said this.)
+
+10. він | хвилюється | що | не | встигне
+    > [!answer] Він хвилюється, що не встигне.
+    > (He's worried that he won't make it.)
+
+11. на | жаль | вона | не | зможе | бути
+    > [!answer] На жаль, вона не зможе бути.
+    > (Unfortunately, she won't be able to come.)
+
+12. на | щастя | все | закінчилося | добре
+    > [!answer] На щастя, все закінчилося добре.
+    > (Fortunately, everything ended well.)
 
 ## quiz: Advanced Emotion Structures
 

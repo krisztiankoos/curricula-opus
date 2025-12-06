@@ -540,33 +540,57 @@ grammar:
     > [!answer] Замість
     > (Instead of coffee I drink tea.)
 
-## order: Making a Decision
+## unjumble: Preference Sentences
 
-> Arrange these phrases in logical order of making a choice.
+> Rearrange the words to form correct sentences about preferences.
 
-1. Я вибираю перший варіант → Без різниці для мене → Що ти пропонуєш? → Мені все одно
-   > [!answer] Що ти пропонуєш? → Мені все одно → Без різниці для мене → Я вибираю перший варіант
-   > (What do you suggest? → I don't mind → No difference for me → I choose the first option)
+1. каву | я | перевагу | віддаю | чаю
+   > [!answer] Я віддаю перевагу каву чаю.
+   > (I prefer coffee to tea.)
 
-2. Я б вибрав каву → Що тобі більше подобається? → Кава чи чай? → Мені більше подобається кава
-   > [!answer] Кава чи чай? → Що тобі більше подобається? → Мені більше подобається кава → Я б вибрав каву
-   > (Coffee or tea? → What do you like more? → I like coffee more → I would choose coffee)
+2. подобається | мені | більше | музика | класична
+   > [!answer] Мені більше подобається класична музика.
+   > (I like classical music more.)
 
-3. Тому що він дешевший → Який варіант кращий? → Цей варіант краще → Чому?
-   > [!answer] Який варіант кращий? → Цей варіант краще → Чому? → Тому що він дешевший
-   > (Which option is better? → This option is better → Why? → Because it's cheaper)
+3. вибрав | синій | він | би | колір
+   > [!answer] Він би вибрав синій колір.
+   > (He would choose the blue color.)
 
-4. Я за! → Тобі подобається ця ідея? → Так, дуже! → Давай зробимо це!
-   > [!answer] Тобі подобається ця ідея? → Так, дуже! → Я за! → Давай зробимо це!
-   > (Do you like this idea? → Yes, very much! → I'm for it! → Let's do it!)
+4. все | мені | одно | який | фільм | дивитися
+   > [!answer] Мені все одно який фільм дивитися.
+   > (I don't care which movie to watch.)
 
-5. Мені підходить ранок → Коли тобі зручніше? → О котрій годині? → О дев'ятій
-   > [!answer] Коли тобі зручніше? → Мені підходить ранок → О котрій годині? → О дев'ятій
-   > (When is more convenient for you? → Morning suits me → At what time? → At nine)
+5. краще | цей | варіант | за | той
+   > [!answer] Цей варіант краще за той.
+   > (This option is better than that one.)
 
-6. Я віддаю перевагу синьому → Який колір вибрати? → Синій чи зелений? → Гаразд, беремо синій
-   > [!answer] Який колір вибрати? → Синій чи зелений? → Я віддаю перевагу синьому → Гаразд, беремо синій
-   > (Which color to choose? → Blue or green? → I prefer blue → Okay, we take blue)
+6. тобі | що | більше | подобається | каву | чи | чай
+   > [!answer] Що тобі більше подобається каву чи чай?
+   > (What do you like more coffee or tea?)
+
+7. без | для | різниці | мене | це
+   > [!answer] Це без різниці для мене.
+   > (It makes no difference for me.)
+
+8. я | вибираю | варіант | перший
+   > [!answer] Я вибираю перший варіант.
+   > (I choose the first option.)
+
+9. любить | він | більше | читати | ніж | дивитися | телевізор
+   > [!answer] Він любить більше читати ніж дивитися телевізор.
+   > (He likes reading more than watching TV.)
+
+10. подобається | їй | жити | у | місті | великому
+    > [!answer] Їй подобається жити у великому місті.
+    > (She likes living in a big city.)
+
+11. хотів | би | я | поїхати | на | море
+    > [!answer] Я би хотів поїхати на море.
+    > (I would like to go to the sea.)
+
+12. вибрала | б | вона | червону | сукню
+    > [!answer] Вона б вибрала червону сукню.
+    > (She would choose the red dress.)
 
 ## quiz: Advanced Preference Structures
 

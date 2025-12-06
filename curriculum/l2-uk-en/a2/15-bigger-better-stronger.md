@@ -17,66 +17,134 @@ grammar:
 
 # Вступ
 
-Which is bigger? Who is older? What's better? Comparisons are essential for real conversations. This module teaches you how to form comparative adjectives in Ukrainian and use them to compare anything and everything!
+"My phone is faster than yours." "The weather is worse today." "She's taller than her brother." Comparisons are everywhere — and in Ukrainian, they carry interesting cultural baggage.
+
+Here's something fascinating: when Ukrainians describe aging, they don't say someone got "old*er*" — they say *старший* (older/more senior), which also means "senior in rank." Getting older isn't decline; it's moving up the hierarchy! Similarly, *молодший* (younger) also means "junior" — it's built into the language.
+
+This module teaches you to compare anything: cities, prices, people, weather. You'll learn the regular patterns (-ший endings), the rebels (irregular forms like *кращий* and *гірший*), and the two ways Ukrainians say "than" — because why have one when you can have two?
+
+> 💡 **Did You Know?**
+>
+> Ukrainian comparatives are often more compact than English. "More interesting" is just one word: *цікавіший*. "Significantly more expensive" is two words: *значно дорожчий*. Economy of expression!
 
 ---
 
-# Forming Comparatives
+# The Two Formation Patterns
 
-## Regular Pattern: Stem + -ший/-іший
+Ukrainian forms comparatives in two ways:
+
+| Type | Formation | When to Use |
+|------|-----------|-------------|
+| **Synthetic** | Add -ший/-іший | Most adjectives |
+| **Compound** | більш/менш + adj | Long adjectives, emphasis |
+
+Most adjectives use the synthetic form — just add an ending. But you can always use *більш* (more) or *менш* (less) for emphasis or with complex adjectives.
+
+> 🎬 **Pop Culture Moment**
+>
+> The Ukrainian proverb *Краще пізно, ніж ніколи* (Better late than never) uses the irregular comparative *краще*. You'll hear this in everyday speech, especially when someone finally shows up!
+
+---
+
+# Regular Comparatives: -ший/-іший
+
+For most adjectives, add **-ший** (hard stems) or **-іший** (soft stems):
+
+| Positive | Comparative | Pattern |
+|----------|-------------|---------|
+| новий (new) | нов**іший** | -іший |
+| старий (old) | стар**іший** | -іший |
+| молодий (young) | молод**ший** | -ший |
+| довгий (long) | дов**ший** | -ший |
+| короткий (short) | корот**ший** | -ший |
+| широкий (wide) | шир**ший** | -ший |
+
+Notice that the stem sometimes changes: *молодий* drops its final vowel to become *молодший*, not *молодіший*.
+
+**Examples in context:**
+- Мій телефон **новіший** за твій. (My phone is newer than yours.)
+- Ця вулиця **довша** ніж та. (This street is longer than that one.)
+- Він виглядає **молодшим** за свої роки. (He looks younger than his years.)
+
+**🎭 Розмова про час (Conversation About Time)**
+
+— Скільки тобі років?
+— Тридцять п'ять.
+— О, ти **молодший** за мене!
+— Правда? А ти виглядаєш **молодшою**!
+— Ти дуже милий. Я на три роки **старша**.
+
+*Age comparisons flow naturally in Ukrainian — and so do the compliments!*
+
+---
+
+# Consonant Changes Before -ший
+
+Some adjectives undergo consonant changes when forming comparatives:
+
+| Positive | Comparative | Change |
+|----------|-------------|--------|
+| дорогий (expensive) | дорож**ч**ий | г → ж |
+| вузький (narrow) | вуж**ч**ий | зьк → жч |
+| близький (close) | ближ**ч**ий | зьк → жч |
+| легкий (easy/light) | лег**ш**ий | гк → ш |
+| важкий (hard/heavy) | важ**ч**ий | жк → жч |
+| теплий (warm) | тепл**іш**ий | regular |
+
+These changes follow historical patterns where back consonants became front ones before certain suffixes. Don't worry about memorizing rules — you'll recognize them with practice.
+
+**Examples in context:**
+- Ця сукня **дорожча** за ту. (This dress is more expensive than that one.)
+- Твій дім **ближчий** до метро. (Your house is closer to the metro.)
+- Сьогодні **теплішe** ніж учора. (Today it's warmer than yesterday.)
+
+> 🌍 **Real World**
+>
+> When shopping in Ukraine, you'll hear *дорожче/дешевше* (more expensive/cheaper) constantly. Knowing these comparatives is essential for market negotiation: *Є щось дешевше?* (Is there something cheaper?)
+
+---
+
+# The Irregular Rebels
+
+Some comparatives don't follow rules — they must be memorized:
 
 | Positive | Comparative | English |
 |----------|-------------|---------|
-| новий | **новіший** | newer |
-| старий | **старіший** | older |
-| молодий | **молодший** | younger |
-| довгий | **довший** | longer |
-| короткий | **коротший** | shorter |
-| широкий | **ширший** | wider |
-| вузький | **вужчий** | narrower |
+| добрий (good) | **кращий** | better |
+| поганий (bad) | **гірший** | worse |
+| великий (big) | **більший** | bigger |
+| малий (small) | **менший** | smaller |
+| високий (tall) | **вищий** | taller/higher |
+| низький (low/short) | **нижчий** | lower/shorter |
 
-> [!tip] 💡 Did You Know?
-> Ukrainian comparatives often look shorter than English ones! "Newer" is just one word: *новіший*.
+These are the most common adjectives, so you'll encounter them constantly. Good news: they're so frequent that you'll memorize them naturally.
 
----
+**Examples in context:**
+- Сьогодні погода **краща** ніж учора. (Today the weather is better than yesterday.)
+- Цей результат **гірший** за попередній. (This result is worse than the previous one.)
+- Київ **більший** за Львів. (Kyiv is bigger than Lviv.)
+- Мій брат **вищий** за мене. (My brother is taller than me.)
 
-# Irregular Comparatives
+**🎭 Розмова про погоду (Weather Chat)**
 
-Some adjectives have irregular comparative forms:
+— Яка сьогодні погода?
+— **Гірша** ніж учора. Дощ і холод.
+— Вчора було **краще**?
+— Так, було сонячно і **теплішe**.
+— Завтра обіцяють **кращу** погоду.
+— Сподіваюся! Мені потрібно **більше** сонця!
 
-| Positive | Comparative | English |
-|----------|-------------|---------|
-| добрий | **кращий** | better |
-| поганий | **гірший** | worse |
-| великий | **більший** | bigger |
-| малий | **менший** | smaller |
-| високий | **вищий** | taller/higher |
-| низький | **нижчий** | shorter/lower |
-| гарний | **кращий** / **гарніший** | prettier/nicer |
+*Weather talk is universal — and full of comparatives!*
 
-> [!example] 🎬 Pop Culture Moment
-> Ukrainian proverb: *Краще пізно, ніж ніколи* — Better late than never!
-
----
-
-# More Common Comparatives
-
-| Positive | Comparative | English |
-|----------|-------------|---------|
-| дорогий | **дорожчий** | more expensive |
-| дешевий | **дешевший** | cheaper |
-| швидкий | **швидший** | faster |
-| повільний | **повільніший** | slower |
-| сильний | **сильніший** | stronger |
-| слабкий | **слабший** | weaker |
-| легкий | **легший** | easier/lighter |
-| важкий | **важчий** | harder/heavier |
-| теплий | **тепліший** | warmer |
-| холодний | **холодніший** | colder |
+> 📜 **History Bite**
+>
+> The irregular comparatives *кращий* and *гірший* come from ancient Slavic roots. *Кращий* relates to *краса* (beauty), so "better" originally meant "more beautiful." Language preserves old worldviews!
 
 ---
 
-# Comparison Structures
+# Two Ways to Say "Than"
+
+Ukrainian offers two constructions for comparisons:
 
 ## Using ніж (than)
 
@@ -86,37 +154,45 @@ Some adjectives have irregular comparative forms:
 - Ця книга **цікавіша ніж** та. (This book is more interesting than that one.)
 - Київ **більший ніж** Львів. (Kyiv is bigger than Lviv.)
 
-## Using за + Accusative (than)
+## Using за + Accusative
 
-**X + comparative + за + Y (accusative)**
+**X + comparative + за + Y (in accusative)**
 
 - Він **старший за** мене. (He is older than me.)
 - Ця книга **цікавіша за** ту. (This book is more interesting than that one.)
 - Київ **більший за** Львів. (Kyiv is bigger than Lviv.)
 
-> [!tip] 🌍 Real World
-> Both *ніж* and *за* are common. *За* + accusative sounds slightly more colloquial, *ніж* is more formal.
+> 💡 **Did You Know?**
+>
+> Both forms are correct and interchangeable. *Ніж* sounds slightly more formal and literary. *За* + accusative sounds more colloquial and is preferred in casual speech. Mix them freely!
 
 ---
 
-# Compound Comparatives
+# Compound Comparatives: більш/менш
 
-For longer adjectives, use **більш** (more) or **менш** (less):
+For emphasis or with longer adjectives, use **більш** (more) or **менш** (less) + adjective:
 
 | Structure | Example | English |
 |-----------|---------|---------|
 | більш + adj | більш важливий | more important |
 | менш + adj | менш цікавий | less interesting |
+| більш + adj | більш ефективний | more effective |
+| менш + adj | менш популярний | less popular |
 
-**Examples:**
+**Examples in context:**
 - Це **більш важливе** питання. (This is a more important question.)
-- Він **менш відомий**. (He is less famous.)
+- Він **менш відомий** за свого брата. (He is less famous than his brother.)
+- Ця версія **більш практична**. (This version is more practical.)
+
+> 🎬 **Pop Culture Moment**
+>
+> Ukrainian dubbing of superhero movies uses these: *Він більш могутній ніж раніше* (He's more powerful than before). When comparing super-powers, you need super-comparatives!
 
 ---
 
-# Adverbs of Degree
+# Degree Modifiers
 
-Modify comparatives with:
+Make your comparisons more precise with these adverbs:
 
 | Adverb | Meaning | Example |
 |--------|---------|---------|
@@ -125,16 +201,33 @@ Modify comparatives with:
 | **значно** | significantly | значно дорожчий (significantly more expensive) |
 | **ще** | even | ще більший (even bigger) |
 
-**Examples:**
+**Examples in context:**
 - Він **набагато вищий** за мене. (He's much taller than me.)
 - Це **трохи дешевше**. (This is a little cheaper.)
+- Ситуація **значно краща**. (The situation is significantly better.)
+- Наступного року буде **ще важче**. (Next year it'll be even harder.)
 
-> [!example] 🎮 Gamer's Corner
-> In games, items might be *значно сильніші* (significantly stronger) or *трохи швидші* (a little faster)!
+**🎭 У магазині (At the Store)**
+
+— Скільки коштує цей светр?
+— Дві тисячі гривень.
+— О, це **занадто дорого**! Є щось **дешевше**?
+— Ось цей. Він **значно дешевший** — тисяча.
+— Все ще дорого... А ще **дешевший**?
+— Ось найдешевший варіант — п'ятсот.
+— **Набагато краще**! Беру!
+
+*Shopping vocabulary + comparatives = survival Ukrainian!*
+
+> 🎮 **Gamer's Corner**
+>
+> In games like *S.T.A.L.K.E.R.* or *The Witcher 3* (with Ukrainian localization), equipment stats use comparatives: *Цей меч значно сильніший* (This sword is significantly stronger), *Нова броня набагато краща* (The new armor is much better).
 
 ---
 
-# Common Phrases
+# Common Comparative Phrases
+
+Master these everyday expressions:
 
 | Ukrainian | English |
 |-----------|---------|
@@ -144,6 +237,44 @@ Modify comparatives with:
 | Це дешевше. | This is cheaper. |
 | Це занадто дороге. | This is too expensive. |
 | Немає нічого кращого. | There's nothing better. |
+| Чим швидше, тим краще. | The faster, the better. |
+| Краще пізно, ніж ніколи. | Better late than never. |
+
+**🎭 Порівняння (Making Comparisons)**
+
+— Яке місто **краще**: Київ чи Львів?
+— Важко сказати. Київ **більший**, але Львів **затишніший**.
+— А яке **дорожче**?
+— Київ **значно дорожчий**. Квартири, їжа — все **дорожче**.
+— Тоді Львів **кращий** для студентів?
+— Мабуть. І кава там **смачніша**!
+
+*City comparisons — a favorite Ukrainian topic!*
+
+---
+
+# Common Mistakes to Avoid
+
+**❌ Using the positive instead of comparative:**
+- Wrong: *Він великий за мене* (He big than me)
+- Right: *Він більший за мене* (He is bigger than me)
+
+**❌ Mixing up ніж and за constructions:**
+- Wrong: *Він старший ніж мене* (ніж + accusative)
+- Right: *Він старший ніж я* (ніж + nominative)
+- Right: *Він старший за мене* (за + accusative)
+
+**❌ Creating non-existent forms:**
+- Wrong: *добріший* (from добрий)
+- Right: *кращий* (irregular comparative)
+
+**❌ Forgetting consonant changes:**
+- Wrong: *дорогіший*
+- Right: *дорожчий* (г → ж)
+
+> 🌍 **Real World**
+>
+> Even native speakers sometimes mix *ніж* and *за* constructions. If you accidentally say *ніж мене* instead of *ніж я*, people will understand you perfectly. Don't let grammar anxiety stop you from speaking!
 
 ---
 
@@ -160,19 +291,22 @@ Modify comparatives with:
 | довший | /ˈdowʃɪj/ | longer | adj | m | |
 | коротший | /koˈrotʃɪj/ | shorter | adj | m | |
 | ширший | /ˈʃɪrʃɪj/ | wider | adj | m | |
-| дорожчий | /doˈroʒtʃɪj/ | more expensive | adj | m | |
+| вужчий | /ˈwuʒtʃɪj/ | narrower | adj | m | |
+| дорожчий | /doˈroʒtʃɪj/ | more expensive | adj | m | г → ж |
 | дешевший | /deˈʃɛwʃɪj/ | cheaper | adj | m | |
+| старший | /ˈstarʃɪj/ | older | adj | m | |
+| молодший | /moˈlodʃɪj/ | younger | adj | m | |
 | швидший | /ˈʃwɪdʃɪj/ | faster | adj | m | |
 | повільніший | /poˈwilʲniʃɪj/ | slower | adj | m | |
 | сильніший | /sɪlʲˈniʃɪj/ | stronger | adj | m | |
+| слабший | /ˈslabʃɪj/ | weaker | adj | m | |
 | легший | /ˈlɛɦʃɪj/ | easier, lighter | adj | m | |
 | важчий | /ˈwaʒtʃɪj/ | harder, heavier | adj | m | |
-| ніж | /niʒ/ | than | conj | — | |
-| за | /za/ | than | prep | — | + acc |
+| ніж | /niʒ/ | than | conj | — | + nominative |
+| за | /za/ | than | prep | — | + accusative |
 | набагато | /nabaˈɦato/ | much (more) | adv | — | |
 | трохи | /ˈtroxɪ/ | a little | adv | — | |
-| близький | /ˈblɪzʲkɪj/ | close, near | adj | m | |
-| ближчий | /ˈblɪʒtʃɪj/ | closer, nearer | adj | m | irregular |
+| значно | /ˈznatʃno/ | significantly | adv | — | |
 
 ---
 
@@ -182,51 +316,51 @@ Modify comparatives with:
 
 1. великий → ___
    > [!answer] більший
-   > (bigger — irregular)
+   > [!explanation] Irregular comparative — must memorize
 
 2. малий → ___
    > [!answer] менший
-   > (smaller — irregular)
+   > [!explanation] Irregular comparative — must memorize
 
 3. добрий → ___
    > [!answer] кращий
-   > (better — irregular)
+   > [!explanation] Irregular — not "добріший"
 
 4. поганий → ___
    > [!answer] гірший
-   > (worse — irregular)
+   > [!explanation] Irregular — not "поганіший"
 
 5. високий → ___
    > [!answer] вищий
-   > (taller/higher — irregular)
+   > [!explanation] Irregular — не "високіший"
 
 6. низький → ___
    > [!answer] нижчий
-   > (shorter/lower — irregular)
+   > [!explanation] Irregular — не "низькіший"
 
 7. довгий → ___
    > [!answer] довший
-   > (longer)
+   > [!explanation] Regular -ший formation
 
 8. дорогий → ___
    > [!answer] дорожчий
-   > (more expensive)
+   > [!explanation] Consonant change: г → ж
 
 9. дешевий → ___
    > [!answer] дешевший
-   > (cheaper)
+   > [!explanation] Regular formation
 
 10. швидкий → ___
     > [!answer] швидший
-    > (faster)
+    > [!explanation] Regular formation
 
 11. старий → ___
-    > [!answer] старіший
-    > (older)
+    > [!answer] старший
+    > [!explanation] Regular formation
 
 12. молодий → ___
     > [!answer] молодший
-    > (younger)
+    > [!explanation] Regular formation
 
 ## match-up: Positive to Comparative
 
@@ -243,43 +377,43 @@ Modify comparatives with:
 - легкий :: легший
 - важкий :: важчий
 
-## unjumble: Word Order
+## unjumble: Comparison Sentences
 
-1. набагато / старший / Він / ніж / я / на / десять / років
-   > [!answer] Він набагато старший ніж я на десять років.
-   > (He is much older than me by ten years.) [8 words]
+1. набагато / старший / Він / за / мене / і / досвідченіший / теж
+   > [!answer] Він набагато старший за мене і досвідченіший теж.
+   > (He is much older than me and more experienced too.) [8 words]
 
-2. значно / більший / Київ / за / Львів / і / красивіший / теж
-   > [!answer] Київ значно більший за Львів і красивіший теж.
-   > (Kyiv is significantly bigger than Lviv and prettier too.) [8 words]
+2. значно / більший / Київ / за / Львів / і / дорожчий / теж
+   > [!answer] Київ значно більший за Львів і дорожчий теж.
+   > (Kyiv is significantly bigger than Lviv and more expensive too.) [8 words]
 
-3. набагато / кращий / варіант / Це / для / нашої / нової / квартири
-   > [!answer] Це набагато кращий варіант для нашої нової квартири.
-   > (This is a much better option for our new apartment.) [8 words]
+3. набагато / кращий / варіант / Це / для / нашої / нової / роботи
+   > [!answer] Це набагато кращий варіант для нашої нової роботи.
+   > (This is a much better option for our new work.) [8 words]
 
-4. набагато / вищий / Він / за / мене / і / сильніший / теж
-   > [!answer] Він набагато вищий за мене і сильніший теж.
-   > (He is much taller than me and stronger too.) [8 words]
+4. набагато / вищий / баскетболіст / Він / за / мене / у / команді
+   > [!answer] Він набагато вищий баскетболіст за мене у команді.
+   > (He is a much taller basketball player than me in the team.) [8 words]
 
-5. трохи / дешевше / це / Це / ніж / той / новий / телефон
-   > [!answer] Це трохи дешевше ніж той новий телефон.
-   > (This is a little cheaper than that new phone.) [8 words]
+5. трохи / дешевше / це / ніж / той / новий / гарний / телефон
+   > [!answer] Це трохи дешевше ніж той новий гарний телефон.
+   > (This is a little cheaper than that new nice phone.) [8 words]
 
-6. цікавіша / нова / книга / за / Ця / ту / стару / значно
-   > [!answer] Ця нова книга значно цікавіша за ту стару.
-   > (This new book is significantly more interesting than that old one.) [8 words]
+6. цікавіша / книга / за / Ця / ту / стару / значно / детективну
+   > [!answer] Ця книга значно цікавіша за ту стару детективну.
+   > (This book is significantly more interesting than that old detective one.) [8 words]
 
 7. набагато / швидший / бігун / Він / за / мене / у / спорті
    > [!answer] Він набагато швидший бігун за мене у спорті.
    > (He is a much faster runner than me in sports.) [8 words]
 
-8. Що / краще / для / здоров'я / овочі / чи / фрукти / сьогодні
-   > [!answer] Що краще для здоров'я сьогодні овочі чи фрукти?
-   > (What's better for health today vegetables or fruit?) [8 words]
+8. Що / краще / для / нашого / здоров'я / овочі / чи / фрукти
+   > [!answer] Що краще для нашого здоров'я овочі чи фрукти?
+   > (What's better for our health vegetables or fruit?) [8 words]
 
-9. набагато / молодша / Вона / за / свою / старшу / сестру / Оксану
-   > [!answer] Вона набагато молодша за свою старшу сестру Оксану.
-   > (She is much younger than her older sister Oksana.) [8 words]
+9. набагато / молодша / Вона / за / свою / старшу / рідну / сестру
+   > [!answer] Вона набагато молодша за свою старшу рідну сестру.
+   > (She is much younger than her older biological sister.) [8 words]
 
 10. значно / більш / важливе / Це / питання / для / нашої / компанії
     > [!answer] Це значно більш важливе питання для нашої компанії.
@@ -289,79 +423,79 @@ Modify comparatives with:
     > [!answer] Це авто значно дорожче ніж моя стара машина.
     > (This car is significantly more expensive than my old car.) [8 words]
 
-12. ще / сильніший / спортсмен / Він / ніж / його / старший / брат
-    > [!answer] Він ще сильніший спортсмен ніж його старший брат.
-    > (He is an even stronger athlete than his older brother.) [8 words]
+12. ще / сильніший / спортсмен / Він / ніж / його / рідний / брат
+    > [!answer] Він ще сильніший спортсмен ніж його рідний брат.
+    > (He is an even stronger athlete than his biological brother.) [8 words]
 
 ## quiz: Comparative Forms
 
-1. The comparative of "добрий" (good) is:
+1. Порівняльний ступінь від "добрий":
    - [ ] добріший
    - [x] кращий
    - [ ] більш добрий
    - [ ] гарніший
 
-2. The comparative of "великий" (big) is:
+2. Порівняльний ступінь від "великий":
    - [ ] великіший
    - [x] більший
    - [ ] більш великий
    - [ ] вищий
 
-3. "Ніж" and "за" are used to express:
-   - [ ] Equality
-   - [x] Comparison (than)
-   - [ ] Superlative
-   - [ ] Negation
+3. "Ніж" і "за" у порівняннях означають:
+   - [ ] Рівність
+   - [x] Порівняння (than)
+   - [ ] Найвищий ступінь
+   - [ ] Заперечення
 
-4. "Він старший за мене" — "за" requires:
-   - [ ] Nominative
-   - [ ] Genitive
-   - [x] Accusative
-   - [ ] Instrumental
+4. "Він старший за мене" — "за" вимагає:
+   - [ ] Називного відмінка
+   - [ ] Родового відмінка
+   - [x] Знахідного відмінка
+   - [ ] Орудного відмінка
 
-5. "Набагато кращий" means:
+5. "Набагато кращий" означає:
    - [x] Much better
    - [ ] A little better
    - [ ] The best
    - [ ] Better than
 
-6. The comparative of "поганий" (bad) is:
+6. Порівняльний ступінь від "поганий":
    - [ ] поганіший
    - [x] гірший
    - [ ] менш добрий
    - [ ] злий
 
-7. "Трохи дорожчий" means:
+7. "Трохи дорожчий" означає:
    - [ ] Much more expensive
    - [x] A little more expensive
    - [ ] The most expensive
    - [ ] Too expensive
 
-8. The comparative of "високий" (tall) is:
+8. Порівняльний ступінь від "високий":
    - [ ] високіший
    - [x] вищий
    - [ ] більш високий
    - [ ] вершній
 
-9. "Більш важливий" uses:
-   - [x] Compound formation
-   - [ ] Suffix formation
-   - [ ] Irregular formation
-   - [ ] No formation
+9. "Більш важливий" — це:
+   - [x] Складений порівняльний ступінь
+   - [ ] Простий порівняльний ступінь
+   - [ ] Неправильна форма
+   - [ ] Найвищий ступінь
 
-10. Which is irregular?
+10. Яка пара є неправильною (irregular)?
     - [x] великий → більший
     - [ ] новий → новіший
     - [ ] молодий → молодший
     - [ ] теплий → тепліший
 
-11. "Дешевший" is the comparative of:
+11. "Дешевший" — порівняльний ступінь від:
     - [ ] дорогий
     - [x] дешевий
     - [ ] дешево
     - [ ] дешевина
 
-12. "Значно більший" means:
+12. "Значно більший" означає:
     - [x] Significantly bigger
     - [ ] A little bigger
     - [ ] The biggest
@@ -369,53 +503,53 @@ Modify comparatives with:
 
 ## true-false: Comparative Facts
 
-1. "Кращий" is the comparative of "добрий."
+1. "Кращий" — порівняльний ступінь від "добрий".
    > [!answer] true
    > (добрий → кращий — irregular)
 
-2. "За" + accusative can replace "ніж" in comparisons.
+2. "За" + знахідний відмінок замінює "ніж" у порівняннях.
    > [!answer] true
    > (старший ніж я = старший за мене)
 
-3. All comparatives end in -іший.
+3. Усі порівняльні ступені закінчуються на -іший.
    > [!answer] false
-   > (Some are irregular: кращий, більший, вищий)
+   > (Деякі неправильні: кращий, більший, вищий)
 
-4. "Набагато" intensifies comparatives.
+4. "Набагато" підсилює порівняльний ступінь.
    > [!answer] true
    > (набагато кращий = much better)
 
-5. "Більший" comes from "більш + великий."
+5. "Більший" утворено від "більш + великий".
    > [!answer] false
-   > (It's an irregular form, not compound)
+   > (Це неправильна форма, не складена)
 
-6. "Гірший" is the comparative of "поганий."
+6. "Гірший" — порівняльний ступінь від "поганий".
    > [!answer] true
    > (поганий → гірший — irregular)
 
-7. "Вищий" means "more visible."
+7. "Вищий" означає "більш видимий".
    > [!answer] false
-   > (Вищий means taller/higher)
+   > (Вищий означає taller/higher)
 
-8. "Трохи" makes comparisons stronger.
+8. "Трохи" робить порівняння сильнішим.
    > [!answer] false
-   > (Трохи = a little; weakens comparison)
+   > (Трохи = a little; послаблює порівняння)
 
-9. Both ніж and за are equally correct.
+9. "Ніж" і "за" однаково правильні.
    > [!answer] true
-   > (Both work; за slightly more colloquial)
+   > (Обидва працюють; "за" трохи розмовніше)
 
-10. "Менш цікавий" means "less interesting."
+10. "Менш цікавий" означає "less interesting".
     > [!answer] true
     > (менш + adjective = less...)
 
-11. Regular comparatives add -ший/-іший.
+11. Регулярні порівняльні ступені додають -ший/-іший.
     > [!answer] true
     > (новий → новіший, старий → старіший)
 
-12. "Дорожчий" has a consonant change.
+12. У "дорожчий" є зміна приголосного.
     > [!answer] true
-    > (г → ж before comparative suffix)
+    > (г → ж перед суфіксом)
 
 ## group-sort: Regular vs Irregular
 
@@ -441,124 +575,139 @@ Modify comparatives with:
 
 1. Мій брат ___ за мене на три роки. (older)
    > [!answer] старший
-   > (comparative of старий)
+   > [!explanation] Comparative of старий
 
 2. Ця машина ___ ніж моя стара. (faster)
    > [!answer] швидша
-   > (comparative of швидкий)
+   > [!explanation] Feminine comparative of швидкий
 
-3. Київ ___ за Львів. (bigger)
+3. Київ ___ за Львів у три рази. (bigger)
    > [!answer] більший
-   > (irregular comparative of великий)
+   > [!explanation] Irregular comparative of великий
 
 4. Сьогодні погода ___ ніж учора. (better)
    > [!answer] краща
-   > (irregular comparative of добрий)
+   > [!explanation] Feminine irregular comparative
 
-5. Цей готель ___ за той на вулиці. (cheaper)
+5. Цей готель ___ за той біля вокзалу. (cheaper)
    > [!answer] дешевший
-   > (comparative of дешевий)
+   > [!explanation] Comparative of дешевий
 
 6. Ця задача ___ ніж попередня. (harder)
    > [!answer] важча
-   > (comparative of важкий)
+   > [!explanation] Feminine comparative of важкий
 
 7. Моя сестра ___ за мене на голову. (shorter)
    > [!answer] нижча
-   > (irregular comparative of низький)
+   > [!explanation] Feminine irregular comparative
 
 8. Ця книга ___ за ту стару. (more interesting)
    > [!answer] цікавіша
-   > (comparative of цікавий)
+   > [!explanation] Comparative of цікавий
 
-9. Цей фільм ___ ніж той комедія. (worse)
+9. Цей фільм ___ ніж та комедія. (worse)
    > [!answer] гірший
-   > (irregular comparative of поганий)
+   > [!explanation] Irregular comparative of поганий
 
 10. Він ___ спортсмен у нашій команді. (stronger)
     > [!answer] сильніший
-    > (comparative of сильний)
+    > [!explanation] Comparative of сильний
 
 11. Ця кава ___ за ту в кафе. (warmer)
     > [!answer] тепліша
-    > (comparative of теплий)
+    > [!explanation] Feminine comparative of теплий
 
 12. Цей шлях ___ до центру міста. (shorter)
     > [!answer] коротший
-    > (comparative of короткий)
+    > [!explanation] Comparative of короткий
 
 ## select: Choose the Correct Comparative
 
 1. Він ... за мене на п'ять років.
    - [x] старший
    - [ ] більш старий
-   > [!answer] старший (regular formation)
+   > [!explanation] Regular formation: старший
 
 2. Ця сукня ... ніж та синя.
    - [ ] гарна
    - [x] гарніша
-   > [!answer] гарніша (comparative)
+   > [!explanation] Comparative form needed
 
 3. Цей ресторан ... за той на розі.
    - [x] дорожчий
    - [ ] більш дорогий
-   > [!answer] дорожчий (г → ж before suffix)
+   > [!explanation] Consonant change: г → ж
 
 4. Моя квартира ... за твою.
    - [ ] великіша
    - [x] більша
-   > [!answer] більша (irregular)
+   > [!explanation] Irregular: великий → більший
 
 5. Ця проблема ... ніж я думав.
    - [ ] складна
    - [x] складніша
-   > [!answer] складніша (comparative)
+   > [!explanation] Comparative form needed
 
 6. Він біжить ... за всіх у класі.
    - [x] швидше
    - [ ] більш швидко
-   > [!answer] швидше (adverb comparative)
+   > [!explanation] Adverb comparative
 
 7. Сьогодні ... ніж учора.
    - [x] холодніше
    - [ ] холодно
-   > [!answer] холодніше (comparative)
+   > [!explanation] Comparative form needed
 
 8. Ця книга ... за ту детективну.
    - [x] цікавіша
    - [ ] більш цікава
-   > [!answer] цікавіша (standard formation)
+   > [!explanation] Standard formation preferred
 
-9. Він ... студент у групі.
+9. Він ... студент у нашій групі.
    - [ ] добрий
    - [x] кращий
-   > [!answer] кращий (irregular from добрий)
+   > [!explanation] Irregular: добрий → кращий
 
 10. Ця ситуація ... ніж раніше.
     - [x] гірша
     - [ ] погана
-    > [!answer] гірша (irregular from поганий)
+    > [!explanation] Irregular: поганий → гірший
 
 11. Мій дім ... до станції метро.
     - [x] ближчий
     - [ ] близько
-    > [!answer] ближчий (comparative)
+    > [!explanation] Comparative with consonant change
 
 12. Цей телефон ... за старий.
     - [x] легший
     - [ ] легко
-    > [!answer] легший (comparative)
+    > [!explanation] Comparative of легкий
 
-## order: Comparing Cities
+## unjumble: Short Comparisons
 
-> Put these comparative sentences in logical order to describe cities.
+1. Київ / більший / за / Львів / набагато / сьогодні / ще / й
+   > [!answer] Київ сьогодні набагато більший за Львів ще й.
+   > (Kyiv today is much bigger than Lviv even.) [8 words]
 
-1. Київ — столиця України і найбільше місто.
-2. Львів менший за Київ, але дуже красивий.
-3. Одеса тепліша за Львів через море.
-4. Харків більший за Одесу і Львів.
-5. Дніпро новіше місто ніж Львів.
-6. Усі міста цікаві, але кожне по-своєму.
+2. цікавіший / цей / фільм / ніж / той / старий / новий / значно
+   > [!answer] Цей новий фільм значно цікавіший ніж той старий.
+   > (This new movie is significantly more interesting than that old one.) [8 words]
+
+3. Одеса / тепліша / за / Львів / набагато / влітку / і / взимку
+   > [!answer] Одеса набагато тепліша за Львів влітку і взимку.
+   > (Odesa is much warmer than Lviv in summer and winter.) [8 words]
+
+4. сестра / молодша / Моя / за / мене / значно / рідна / старша
+   > [!answer] Моя рідна сестра значно молодша за мене старша.
+   > (My biological sister is significantly younger than me older.) [8 words]
+
+5. телефон / дорожчий / Цей / за / той / трохи / новий / старий
+   > [!answer] Цей новий телефон трохи дорожчий за той старий.
+   > (This new phone is a little more expensive than that old one.) [8 words]
+
+6. Поїзд / швидше / їде / ніж / автобус / значно / сьогодні / завжди
+   > [!answer] Поїзд завжди їде значно швидше ніж автобус сьогодні.
+   > (The train always goes significantly faster than the bus today.) [8 words]
 
 ## quiz: Comparative Mastery
 
@@ -604,11 +753,11 @@ Modify comparatives with:
    - [ ] більш поганий
    - [ ] злий
 
-8. "Значно більший" — "значно" підсилює:
+8. "Значно більший" — "значно" означає:
    - [ ] Трохи
    - [x] Суттєво
    - [ ] Нейтрально
-   - [ ] Зменшує
+   - [ ] Менше
 
 9. Порівняльний ступінь від "високий":
    - [ ] високіший
@@ -641,9 +790,11 @@ Modify comparatives with:
 Excellent work! You've learned:
 
 - **Regular comparatives**: stem + -ший/-іший (новіший, старіший)
+- **Consonant changes**: г → ж (дорогий → дорожчий)
 - **Irregular comparatives**: кращий, гірший, більший, менший, вищий, нижчий
-- **Comparison with ніж**: X + comparative + ніж + Y
+- **Comparison with ніж**: X + comparative + ніж + Y (nominative)
 - **Comparison with за**: X + comparative + за + Y (accusative)
+- **Compound form**: більш/менш + adjective
 - **Degree adverbs**: набагато (much), трохи (a little), значно (significantly)
 
 **Coming up next**: The Best, The Worst — superlative adjectives!

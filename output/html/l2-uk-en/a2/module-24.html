@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -919,11 +960,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Opinion Structures</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Opinion Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Opinion Structures</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -950,7 +998,7 @@ footer {
   </main><footer>Module 24 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Express Your Opinion","data":{"type":"fill-blank","items":[{"prompt":"Я ___, що це добре. (think)","answer":"думаю"},{"prompt":"Я ___, що він правий. (believe)","answer":"вважаю"},{"prompt":"На мою ___, це неправильно. (opinion)","answer":"думку"},{"prompt":"Мені ___, що він сумний. (seems)","answer":"здається"},{"prompt":"Я ___. Ви маєте рацію. (agree - m)","answer":"згоден"},{"prompt":"Я так не ___. (think)","answer":"думаю"},{"prompt":"Це ___! (exactly)","answer":"точно"},{"prompt":"___, я помиляюся. (maybe)","answer":"Можливо"},{"prompt":"Ви ___. Це неправда. (are mistaken)","answer":"помиляєтесь"},{"prompt":"Я ___. Це можливо? (doubt)","answer":"сумніваюся"},{"prompt":"Це не ___ так. (quite)","answer":"зовсім"},{"prompt":"___, він прийде. (probably)","answer":"Напевно"}]}},{"id":"activity-1","type":"match-up","title":"Opinion Expressions","data":{"type":"match-up","pairs":[{"left":"Я думаю","right":"I think"},{"left":"Я вважаю","right":"I believe"},{"left":"Я гадаю","right":"I suppose"},{"left":"На мою думку","right":"In my opinion"},{"left":"Мені здається","right":"It seems to me"},{"left":"Я згоден","right":"I agree (m)"},{"left":"Я не згодна","right":"I disagree (f)"},{"left":"Це правда","right":"That's true"},{"left":"Це не так","right":"That's not so"},{"left":"Можливо","right":"Maybe"},{"left":"Напевно","right":"Probably"},{"left":"Безумовно","right":"Definitely"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["думаю","що","добре","Я","це","для","нашого","проекту"],"answer":"Я думаю, що це добре для нашого проекту.","translation":"I think that this is good for our project."},{"words":["думку","На","мою","це","неправильно","робити","так","зараз"],"answer":"На мою думку, неправильно робити це так зараз.","translation":"In my opinion, it's wrong to do it this way now."},{"words":["здається","що","він","сумний","Мені","через","цю","ситуацію"],"answer":"Мені здається, що він сумний через цю ситуацію.","translation":"It seems to me that he's sad because of this situation."},{"words":["згоден","Я","повністю","маєте","рацію","Ви","у","цьому"],"answer":"Я повністю згоден. Ви маєте рацію у цьому.","translation":"I fully agree. You're right about this."},{"words":["не","так","Я","думаю","про","цю","важливу","справу"],"answer":"Я так не думаю про цю важливу справу.","translation":"I don't think so about this important matter."},{"words":["вважаю","що","важливо","Я","це","дуже","для","нас"],"answer":"Я вважаю, що це дуже важливо для нас.","translation":"I believe that this is very important for us."},{"words":["зовсім","Не","так","як","ви","думаєте","про","це"],"answer":"Не зовсім так, як ви думаєте про це.","translation":"Not quite as you think about it."},{"words":["помиляюся","Можливо","я","але","це","здається","мені","дивним"],"answer":"Можливо, я помиляюся, але це здається мені дивним.","translation":"Maybe I'm wrong, but this seems strange to me."},{"words":["сумніваюся","Я","що","це","буде","працювати","добре","тут"],"answer":"Я сумніваюся, що це буде добре працювати тут.","translation":"I doubt that this will work well here."},{"words":["Безумовно","правда","Це","я","повністю","з","вами","погоджуюся"],"answer":"Безумовно! Це правда. Я повністю з вами погоджуюся.","translation":"Definitely! That's true. I fully agree with you."},{"words":["не","Я","згодна","з","вашою","точкою","зору","на"],"answer":"Я не згодна з вашою точкою зору на це.","translation":"I disagree with your point of view on this."},{"words":["гадаю","що","він","прийде","Я","на","зустріч","сьогодні"],"answer":"Я гадаю, що він прийде на зустріч сьогодні.","translation":"I suppose he'll come to the meeting today."}]}},{"id":"activity-3","type":"quiz","title":"Opinion Knowledge","data":{"type":"quiz","questions":[{"question":"\"Я думаю, що...\" means:","options":["I think that...","I know that...","I see that...","I want that..."],"correctIndex":0,"explanation":""},{"question":"\"Я вважаю\" expresses:","options":["Stronger belief than думаю","Weaker belief","Question","Command"],"correctIndex":0,"explanation":""},{"question":"\"На мою думку\" means:","options":["In my opinion","I think","You think","They think"],"correctIndex":0,"explanation":""},{"question":"\"Мені здається\" expresses:","options":["Uncertainty, seems to me","Certainty","Agreement","Disagreement"],"correctIndex":0,"explanation":""},{"question":"\"Я згоден\" is:","options":["Masculine agreement","Feminine agreement","Disagreement","Question"],"correctIndex":0,"explanation":""},{"question":"\"Можливо\" means:","options":["Maybe, possibly","Definitely","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Ви помиляєтесь\" means:","options":["You're mistaken","You're right","You're clever","You're stupid"],"correctIndex":0,"explanation":""},{"question":"\"Безумовно\" expresses:","options":["Definite agreement","Doubt","Question","Disagreement"],"correctIndex":0,"explanation":""},{"question":"\"Мабуть\" means:","options":["Probably, perhaps","Definitely not","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Мати рацію\" means:","options":["To be right","To be wrong","To have a reason","To have money"],"correctIndex":0,"explanation":""},{"question":"\"Я сумніваюся\" expresses:","options":["Doubt","Agreement","Happiness","Anger"],"correctIndex":0,"explanation":""},{"question":"\"Частково згоден\" means:","options":["Partly agree","Fully agree","Disagree","Don't know"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Opinion Facts","data":{"type":"true-false","statements":[{"statement":"\"Думати\" means \"to think.\"","isTrue":true,"explanation":""},{"statement":"\"Вважати\" is weaker than \"думати.\"","isTrue":false,"explanation":""},{"statement":"\"На мою думку\" is used at the start.","isTrue":true,"explanation":""},{"statement":"\"Згоден\" is for women.","isTrue":false,"explanation":""},{"statement":"\"Можливо\" expresses certainty.","isTrue":false,"explanation":""},{"statement":"\"Безумовно\" means \"definitely.\"","isTrue":true,"explanation":""},{"statement":"\"Мені здається\" is very certain.","isTrue":false,"explanation":""},{"statement":"\"Ви помиляєтесь\" is polite disagreement.","isTrue":true,"explanation":""},{"statement":"\"Мабуть\" = \"probably.\"","isTrue":true,"explanation":""},{"statement":"\"Точно!\" expresses disagreement.","isTrue":false,"explanation":""},{"statement":"\"Гадати\" is stronger than \"вважати.\"","isTrue":false,"explanation":""},{"statement":"\"Не зовсім так\" means \"not quite.\"","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Opinion Types","data":{"type":"group-sort","groups":[{"id":"agreement","name":"Agreement","items":["Я згоден","Точно!","Безумовно","Ви маєте рацію"]},{"id":"disagreement","name":"Disagreement","items":["Я не згодна","Я сумніваюся","Це не так","Ви помиляєтесь"]},{"id":"uncertainty","name":"Uncertainty","items":["Можливо","Мабуть","Здається","Напевно"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Opinion Dialogues","data":{"type":"fill-blank","items":[{"prompt":"На мій ___, це найкращий варіант для нас. (view)","answer":"погляд"},{"prompt":"З моєї точки ___, проблема дуже серйозна. (view)","answer":"зору"},{"prompt":"Ви абсолютно ___! Я повністю погоджуюся. (right)","answer":"праві"},{"prompt":"В цьому є ___. Давайте спробуємо це. (sense)","answer":"сенс"},{"prompt":"Я ___ не впевнений, але думаю, що так. (quite)","answer":"зовсім"},{"prompt":"___, ви праві, але є інша думка. (perhaps)","answer":"Мабуть"},{"prompt":"Це ___, я перевіряв інформацію. (truth)","answer":"правда"},{"prompt":"Я категорично не ___! Це погана ідея. (agree)","answer":"згоден"},{"prompt":"___ я не помиляюся, це трапилося вчора. (if)","answer":"Якщо"},{"prompt":"Не знаю ___, але мені здається, що ні. (for sure)","answer":"напевно"},{"prompt":"Це ___! Я ніколи з цим не погоджуся. (mistake)","answer":"помилка"},{"prompt":"___ ні! Я зовсім так не думаю. (not at all)","answer":"Зовсім"}]}},{"id":"activity-7","type":"select","title":"Choose the Best Response","data":{"type":"select","items":[{"question":"А: Я думаю, що цей фільм чудовий. Б: ___","options":[{"text":"Я повністю згоден!","correct":true},{"text":"Я не розумію.","correct":false},{"text":"Де це?","correct":false},{"text":"Коли?","correct":false}]},{"question":"А: На мою думку, треба почекати. Б: ___","options":[{"text":"Дякую!","correct":false},{"text":"Можливо, ви праві.","correct":true},{"text":"До побачення!","correct":false},{"text":"Привіт!","correct":false}]},{"question":"А: Він каже, що це легко. Б: ___","options":[{"text":"Я так не думаю. Це важко.","correct":true},{"text":"Скільки коштує?","correct":false},{"text":"Де ви живете?","correct":false},{"text":"Як вас звати?","correct":false}]},{"question":"А: Це найкращий ресторан у місті. Б: ___","options":[{"text":"Я голодний.","correct":false},{"text":"Де він знаходиться?","correct":false},{"text":"Безумовно! Їжа тут смачна.","correct":true},{"text":"Скільки годин?","correct":false}]},{"question":"А: Мені здається, що він сумний. Б: ___","options":[{"text":"Я теж так вважаю.","correct":true},{"text":"Скільки йому років?","correct":false},{"text":"Де він живе?","correct":false},{"text":"Як його звати?","correct":false}]},{"question":"А: Ви помиляєтесь! Це не так. Б: ___","options":[{"text":"Дякую за комплімент!","correct":false},{"text":"Можливо. Давайте перевіримо.","correct":true},{"text":"Де це?","correct":false},{"text":"Коли?","correct":false}]},{"question":"А: Гадаю, що вони запізняться. Б: ___","options":[{"text":"Напевно. Вони завжди запізнюються.","correct":true},{"text":"Скільки їх?","correct":false},{"text":"Де вони живуть?","correct":false},{"text":"Як їх звати?","correct":false}]},{"question":"А: Це правда, що він звільнився? Б: ___","options":[{"text":"Він високий.","correct":false},{"text":"Я сумніваюся. Він любить свою роботу.","correct":true},{"text":"Де він працює?","correct":false},{"text":"Скільки він заробляє?","correct":false}]},{"question":"А: На мій погляд, проект невдалий. Б: ___","options":[{"text":"Не зовсім так. Є позитивні результати.","correct":true},{"text":"Коли він почався?","correct":false},{"text":"Де він знаходиться?","correct":false},{"text":"Хто його робив?","correct":false}]},{"question":"А: Я вважаю, що він правий. Б: ___","options":[{"text":"Скільки йому років?","correct":false},{"text":"Точно! Він завжди знає, що робить.","correct":true},{"text":"Де він?","correct":false},{"text":"Коли він прийде?","correct":false}]},{"question":"А: Треба купити новий комп'ютер. Б: ___","options":[{"text":"В цьому є сенс. Старий вже не працює добре.","correct":true},{"text":"Скільки він коштує?","correct":false},{"text":"Де його купити?","correct":false},{"text":"Який колір?","correct":false}]},{"question":"А: Мабуть, завтра буде дощ. Б: ___","options":[{"text":"Здається, що так. Небо хмарне.","correct":true},{"text":"Яка температура?","correct":false},{"text":"Де дощ?","correct":false},{"text":"Коли він почнеться?","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Opinion Structures","data":{"type":"quiz","questions":[{"question":"Which is the strongest way to express belief?","options":["Я гадаю","Мені здається","Я вважаю","Можливо"],"correctIndex":2,"explanation":""},{"question":"\"Точка зору\" means:","options":["Point of view","Exact point","Vision","Goal"],"correctIndex":0,"explanation":""},{"question":"Which expresses doubt?","options":["Безумовно","Я сумніваюся","Точно","Абсолютно"],"correctIndex":1,"explanation":""},{"question":"\"Частково згоден\" means:","options":["Partly agree","Completely agree","Completely disagree","Don't know"],"correctIndex":0,"explanation":""},{"question":"Which is more formal?","options":["Я думаю","На мою думку","Я гадаю","Мабуть"],"correctIndex":1,"explanation":""},{"question":"\"Погоджуватися\" means:","options":["To agree","To disagree","To think","To doubt"],"correctIndex":0,"explanation":""},{"question":"Which shows polite disagreement?","options":["Не зовсім так","Зовсім ні!","Це дурниця!","Ви не праві!"],"correctIndex":0,"explanation":""},{"question":"\"Рація\" in \"мати рацію\" means:","options":["Being right","Radio","Ration","Reason"],"correctIndex":0,"explanation":""},{"question":"Which verb is reflexive?","options":["думати","сумніватися","вважати","гадати"],"correctIndex":1,"explanation":""},{"question":"\"Категорично\" intensifies:","options":["Agreement or disagreement","Only agreement","Only disagreement","Questions"],"correctIndex":0,"explanation":""},{"question":"\"На мій погляд\" is:","options":["Similar to \"на мою думку\"","Opposite of \"на мою думку\"","A question phrase","A command"],"correctIndex":0,"explanation":""},{"question":"Which is most tentative?","options":["Мені здається","Я впевнений","Я знаю","Безумовно"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Express Your Opinion","data":{"type":"fill-blank","items":[{"prompt":"Я ___, що це добре. (think)","answer":"думаю"},{"prompt":"Я ___, що він правий. (believe)","answer":"вважаю"},{"prompt":"На мою ___, це неправильно. (opinion)","answer":"думку"},{"prompt":"Мені ___, що він сумний. (seems)","answer":"здається"},{"prompt":"Я ___. Ви маєте рацію. (agree - m)","answer":"згоден"},{"prompt":"Я так не ___. (think)","answer":"думаю"},{"prompt":"Це ___! (exactly)","answer":"точно"},{"prompt":"___, я помиляюся. (maybe)","answer":"Можливо"},{"prompt":"Ви ___. Це неправда. (are mistaken)","answer":"помиляєтесь"},{"prompt":"Я ___. Це можливо? (doubt)","answer":"сумніваюся"},{"prompt":"Це не ___ так. (quite)","answer":"зовсім"},{"prompt":"___, він прийде. (probably)","answer":"Напевно"}]}},{"id":"activity-1","type":"match-up","title":"Opinion Expressions","data":{"type":"match-up","pairs":[{"left":"Я думаю","right":"I think"},{"left":"Я вважаю","right":"I believe"},{"left":"Я гадаю","right":"I suppose"},{"left":"На мою думку","right":"In my opinion"},{"left":"Мені здається","right":"It seems to me"},{"left":"Я згоден","right":"I agree (m)"},{"left":"Я не згодна","right":"I disagree (f)"},{"left":"Це правда","right":"That's true"},{"left":"Це не так","right":"That's not so"},{"left":"Можливо","right":"Maybe"},{"left":"Напевно","right":"Probably"},{"left":"Безумовно","right":"Definitely"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["думаю","що","добре","Я","це","для","нашого","проекту"],"answer":"Я думаю, що це добре для нашого проекту.","translation":"I think that this is good for our project."},{"words":["думку","На","мою","це","неправильно","робити","так","зараз"],"answer":"На мою думку, неправильно робити це так зараз.","translation":"In my opinion, it's wrong to do it this way now."},{"words":["здається","що","він","сумний","Мені","через","цю","ситуацію"],"answer":"Мені здається, що він сумний через цю ситуацію.","translation":"It seems to me that he's sad because of this situation."},{"words":["згоден","Я","повністю","маєте","рацію","Ви","у","цьому"],"answer":"Я повністю згоден. Ви маєте рацію у цьому.","translation":"I fully agree. You're right about this."},{"words":["не","так","Я","думаю","про","цю","важливу","справу"],"answer":"Я так не думаю про цю важливу справу.","translation":"I don't think so about this important matter."},{"words":["вважаю","що","важливо","Я","це","дуже","для","нас"],"answer":"Я вважаю, що це дуже важливо для нас.","translation":"I believe that this is very important for us."},{"words":["зовсім","Не","так","як","ви","думаєте","про","це"],"answer":"Не зовсім так, як ви думаєте про це.","translation":"Not quite as you think about it."},{"words":["помиляюся","Можливо","я","але","це","здається","мені","дивним"],"answer":"Можливо, я помиляюся, але це здається мені дивним.","translation":"Maybe I'm wrong, but this seems strange to me."},{"words":["сумніваюся","Я","що","це","буде","працювати","добре","тут"],"answer":"Я сумніваюся, що це буде добре працювати тут.","translation":"I doubt that this will work well here."},{"words":["Безумовно","правда","Це","я","повністю","з","вами","погоджуюся"],"answer":"Безумовно! Це правда. Я повністю з вами погоджуюся.","translation":"Definitely! That's true. I fully agree with you."},{"words":["не","Я","згодна","з","вашою","точкою","зору","на"],"answer":"Я не згодна з вашою точкою зору на це.","translation":"I disagree with your point of view on this."},{"words":["гадаю","що","він","прийде","Я","на","зустріч","сьогодні"],"answer":"Я гадаю, що він прийде на зустріч сьогодні.","translation":"I suppose he'll come to the meeting today."}]}},{"id":"activity-3","type":"quiz","title":"Opinion Knowledge","data":{"type":"quiz","questions":[{"question":"\"Я думаю, що...\" means:","options":["I think that...","I know that...","I see that...","I want that..."],"correctIndex":0,"explanation":""},{"question":"\"Я вважаю\" expresses:","options":["Stronger belief than думаю","Weaker belief","Question","Command"],"correctIndex":0,"explanation":""},{"question":"\"На мою думку\" means:","options":["In my opinion","I think","You think","They think"],"correctIndex":0,"explanation":""},{"question":"\"Мені здається\" expresses:","options":["Uncertainty, seems to me","Certainty","Agreement","Disagreement"],"correctIndex":0,"explanation":""},{"question":"\"Я згоден\" is:","options":["Masculine agreement","Feminine agreement","Disagreement","Question"],"correctIndex":0,"explanation":""},{"question":"\"Можливо\" means:","options":["Maybe, possibly","Definitely","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Ви помиляєтесь\" means:","options":["You're mistaken","You're right","You're clever","You're stupid"],"correctIndex":0,"explanation":""},{"question":"\"Безумовно\" expresses:","options":["Definite agreement","Doubt","Question","Disagreement"],"correctIndex":0,"explanation":""},{"question":"\"Мабуть\" means:","options":["Probably, perhaps","Definitely not","Never","Always"],"correctIndex":0,"explanation":""},{"question":"\"Мати рацію\" means:","options":["To be right","To be wrong","To have a reason","To have money"],"correctIndex":0,"explanation":""},{"question":"\"Я сумніваюся\" expresses:","options":["Doubt","Agreement","Happiness","Anger"],"correctIndex":0,"explanation":""},{"question":"\"Частково згоден\" means:","options":["Partly agree","Fully agree","Disagree","Don't know"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Opinion Facts","data":{"type":"true-false","statements":[{"statement":"\"Думати\" means \"to think.\"","isTrue":true,"explanation":""},{"statement":"\"Вважати\" is weaker than \"думати.\"","isTrue":false,"explanation":""},{"statement":"\"На мою думку\" is used at the start.","isTrue":true,"explanation":""},{"statement":"\"Згоден\" is for women.","isTrue":false,"explanation":""},{"statement":"\"Можливо\" expresses certainty.","isTrue":false,"explanation":""},{"statement":"\"Безумовно\" means \"definitely.\"","isTrue":true,"explanation":""},{"statement":"\"Мені здається\" is very certain.","isTrue":false,"explanation":""},{"statement":"\"Ви помиляєтесь\" is polite disagreement.","isTrue":true,"explanation":""},{"statement":"\"Мабуть\" = \"probably.\"","isTrue":true,"explanation":""},{"statement":"\"Точно!\" expresses disagreement.","isTrue":false,"explanation":""},{"statement":"\"Гадати\" is stronger than \"вважати.\"","isTrue":false,"explanation":""},{"statement":"\"Не зовсім так\" means \"not quite.\"","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Opinion Types","data":{"type":"group-sort","groups":[{"id":"agreement","name":"Agreement","items":["Я згоден","Точно!","Безумовно","Ви маєте рацію"]},{"id":"disagreement","name":"Disagreement","items":["Я не згодна","Я сумніваюся","Це не так","Ви помиляєтесь"]},{"id":"uncertainty","name":"Uncertainty","items":["Можливо","Мабуть","Здається","Напевно"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Opinion Dialogues","data":{"type":"fill-blank","items":[{"prompt":"На мій ___, це найкращий варіант для нас. (view)","answer":"погляд"},{"prompt":"З моєї точки ___, проблема дуже серйозна. (view)","answer":"зору"},{"prompt":"Ви абсолютно ___! Я повністю погоджуюся. (right)","answer":"праві"},{"prompt":"В цьому є ___. Давайте спробуємо це. (sense)","answer":"сенс"},{"prompt":"Я ___ не впевнений, але думаю, що так. (quite)","answer":"зовсім"},{"prompt":"___, ви праві, але є інша думка. (perhaps)","answer":"Мабуть"},{"prompt":"Це ___, я перевіряв інформацію. (truth)","answer":"правда"},{"prompt":"Я категорично не ___! Це погана ідея. (agree)","answer":"згоден"},{"prompt":"___ я не помиляюся, це трапилося вчора. (if)","answer":"Якщо"},{"prompt":"Не знаю ___, але мені здається, що ні. (for sure)","answer":"напевно"},{"prompt":"Це ___! Я ніколи з цим не погоджуся. (mistake)","answer":"помилка"},{"prompt":"___ ні! Я зовсім так не думаю. (not at all)","answer":"Зовсім"}]}},{"id":"activity-7","type":"select","title":"Choose the Best Response","data":{"type":"select","items":[{"question":"А: Я думаю, що цей фільм чудовий. Б: ___","options":[{"text":"Я повністю згоден!","correct":true},{"text":"Я не розумію.","correct":false},{"text":"Де це?","correct":false},{"text":"Коли?","correct":false}]},{"question":"А: На мою думку, треба почекати. Б: ___","options":[{"text":"Дякую!","correct":false},{"text":"Можливо, ви праві.","correct":true},{"text":"До побачення!","correct":false},{"text":"Привіт!","correct":false}]},{"question":"А: Він каже, що це легко. Б: ___","options":[{"text":"Я так не думаю. Це важко.","correct":true},{"text":"Скільки коштує?","correct":false},{"text":"Де ви живете?","correct":false},{"text":"Як вас звати?","correct":false}]},{"question":"А: Це найкращий ресторан у місті. Б: ___","options":[{"text":"Я голодний.","correct":false},{"text":"Де він знаходиться?","correct":false},{"text":"Безумовно! Їжа тут смачна.","correct":true},{"text":"Скільки годин?","correct":false}]},{"question":"А: Мені здається, що він сумний. Б: ___","options":[{"text":"Я теж так вважаю.","correct":true},{"text":"Скільки йому років?","correct":false},{"text":"Де він живе?","correct":false},{"text":"Як його звати?","correct":false}]},{"question":"А: Ви помиляєтесь! Це не так. Б: ___","options":[{"text":"Дякую за комплімент!","correct":false},{"text":"Можливо. Давайте перевіримо.","correct":true},{"text":"Де це?","correct":false},{"text":"Коли?","correct":false}]},{"question":"А: Гадаю, що вони запізняться. Б: ___","options":[{"text":"Напевно. Вони завжди запізнюються.","correct":true},{"text":"Скільки їх?","correct":false},{"text":"Де вони живуть?","correct":false},{"text":"Як їх звати?","correct":false}]},{"question":"А: Це правда, що він звільнився? Б: ___","options":[{"text":"Він високий.","correct":false},{"text":"Я сумніваюся. Він любить свою роботу.","correct":true},{"text":"Де він працює?","correct":false},{"text":"Скільки він заробляє?","correct":false}]},{"question":"А: На мій погляд, проект невдалий. Б: ___","options":[{"text":"Не зовсім так. Є позитивні результати.","correct":true},{"text":"Коли він почався?","correct":false},{"text":"Де він знаходиться?","correct":false},{"text":"Хто його робив?","correct":false}]},{"question":"А: Я вважаю, що він правий. Б: ___","options":[{"text":"Скільки йому років?","correct":false},{"text":"Точно! Він завжди знає, що робить.","correct":true},{"text":"Де він?","correct":false},{"text":"Коли він прийде?","correct":false}]},{"question":"А: Треба купити новий комп'ютер. Б: ___","options":[{"text":"В цьому є сенс. Старий вже не працює добре.","correct":true},{"text":"Скільки він коштує?","correct":false},{"text":"Де його купити?","correct":false},{"text":"Який колір?","correct":false}]},{"question":"А: Мабуть, завтра буде дощ. Б: ___","options":[{"text":"Здається, що так. Небо хмарне.","correct":true},{"text":"Яка температура?","correct":false},{"text":"Де дощ?","correct":false},{"text":"Коли він почнеться?","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Opinion Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["я","|","думаю","|","що","|","це","|","гарна","|","ідея"],"answer":"Я думаю, що це гарна ідея.","translation":"I think that this is a good idea."},{"words":["мені","|","здається","|","що","|","він","|","правий"],"answer":"Мені здається, що він правий.","translation":"It seems to me that he is right."},{"words":["я","|","вважаю","|","що","|","треба","|","почекати"],"answer":"Я вважаю, що треба почекати.","translation":"I believe that we need to wait."},{"words":["на","|","мою","|","думку","|","це","|","занадто","|","дорого"],"answer":"На мою думку, це занадто дорого.","translation":"In my opinion, this is too expensive."},{"words":["я","|","впевнений","|","що","|","він","|","прийде"],"answer":"Я впевнений, що він прийде.","translation":"I am sure that he will come."},{"words":["мабуть","|","завтра","|","буде","|","гарна","|","погода"],"answer":"Мабуть завтра буде гарна погода.","translation":"Perhaps tomorrow will be good weather."},{"words":["я","|","згоден","|","з","|","твоєю","|","точкою","|","зору"],"answer":"Я згоден з твоєю точкою зору.","translation":"I agree with your point of view."},{"words":["напевно","|","він","|","вже","|","поїхав","|","додому"],"answer":"Напевно він вже поїхав додому.","translation":"Probably he has already gone home."},{"words":["я","|","не","|","впевнений","|","що","|","це","|","правда"],"answer":"Я не впевнений, що це правда.","translation":"I am not sure that this is true."},{"words":["можливо","|","вона","|","знає","|","відповідь"],"answer":"Можливо вона знає відповідь.","translation":"Maybe she knows the answer."},{"words":["я","|","гадаю","|","що","|","ми","|","встигнемо"],"answer":"Я гадаю, що ми встигнемо.","translation":"I suppose that we will make it."},{"words":["безумовно","|","це","|","найкращий","|","варіант"],"answer":"Безумовно це найкращий варіант.","translation":"Definitely this is the best option."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Opinion Structures","data":{"type":"quiz","questions":[{"question":"Which is the strongest way to express belief?","options":["Я гадаю","Мені здається","Я вважаю","Можливо"],"correctIndex":2,"explanation":""},{"question":"\"Точка зору\" means:","options":["Point of view","Exact point","Vision","Goal"],"correctIndex":0,"explanation":""},{"question":"Which expresses doubt?","options":["Безумовно","Я сумніваюся","Точно","Абсолютно"],"correctIndex":1,"explanation":""},{"question":"\"Частково згоден\" means:","options":["Partly agree","Completely agree","Completely disagree","Don't know"],"correctIndex":0,"explanation":""},{"question":"Which is more formal?","options":["Я думаю","На мою думку","Я гадаю","Мабуть"],"correctIndex":1,"explanation":""},{"question":"\"Погоджуватися\" means:","options":["To agree","To disagree","To think","To doubt"],"correctIndex":0,"explanation":""},{"question":"Which shows polite disagreement?","options":["Не зовсім так","Зовсім ні!","Це дурниця!","Ви не праві!"],"correctIndex":0,"explanation":""},{"question":"\"Рація\" in \"мати рацію\" means:","options":["Being right","Radio","Ration","Reason"],"correctIndex":0,"explanation":""},{"question":"Which verb is reflexive?","options":["думати","сумніватися","вважати","гадати"],"correctIndex":1,"explanation":""},{"question":"\"Категорично\" intensifies:","options":["Agreement or disagreement","Only agreement","Only disagreement","Questions"],"correctIndex":0,"explanation":""},{"question":"\"На мій погляд\" is:","options":["Similar to \"на мою думку\"","Opposite of \"на мою думку\"","A question phrase","A command"],"correctIndex":0,"explanation":""},{"question":"Which is most tentative?","options":["Мені здається","Я впевнений","Я знаю","Безумовно"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"вважати","translit":"","en":"to believe, consider","note":""},{"uk":"гадати","translit":"","en":"to suppose, guess","note":""},{"uk":"здаватися","translit":"","en":"to seem","note":""},{"uk":"погоджуватися","translit":"","en":"to agree","note":""},{"uk":"згоден","translit":"","en":"agree (m)","note":"short form"},{"uk":"згодна","translit":"","en":"agree (f)","note":"short form"},{"uk":"думка","translit":"","en":"opinion, thought","note":""},{"uk":"погляд","translit":"","en":"view, perspective","note":""},{"uk":"точка зору","translit":"","en":"point of view","note":""},{"uk":"правда","translit":"","en":"truth","note":""},{"uk":"неправда","translit":"","en":"untruth, false","note":""},{"uk":"помилка","translit":"","en":"mistake","note":""},{"uk":"помилятися","translit":"","en":"to be mistaken","note":""},{"uk":"сумніватися","translit":"","en":"to doubt","note":""},{"uk":"можливо","translit":"","en":"maybe, possibly","note":""},{"uk":"напевно","translit":"","en":"probably","note":""},{"uk":"безумовно","translit":"","en":"definitely","note":""},{"uk":"рація","translit":"","en":"right (being right)","note":"мати рацію"},{"uk":"мабуть","translit":"","en":"probably, perhaps","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2275,6 +2323,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

@@ -21,6 +21,8 @@ Welcome to your first A2 checkpoint! You've completed Phase A2.1: Completing the
 
 Think about how far you've come: In A1, you learned nominative (subject), genitive (possession), accusative (direct object), locative (location), and vocative (address). In A2.1, you added dative (recipient) and instrumental (tools, companions, professions). You can now express almost any relationship between words!
 
+Why does this matter? Because cases are how Ukrainian shows *who does what to whom*. In English, word order is rigid: "The dog bit the man" means something completely different from "The man bit the dog." But in Ukrainian, thanks to cases, you can rearrange words for emphasis while keeping the meaning clear. *Собака вкусив чоловіка* and *Чоловіка вкусив собака* both mean the same thing — the dog did the biting — because the accusative ending on *чоловіка* marks him as the victim regardless of position.
+
 Now let's review everything and make sure it's solid before moving on.
 
 ---
@@ -45,6 +47,8 @@ Now let's review everything and make sure it's solid before moving on.
 
 # Quick Reference: Dative
 
+The dative case answers the question **Кому? Чому?** (To whom? To what?) — it marks the *recipient* of an action. When you give something, tell something, or show something TO someone, that someone goes into dative. Think of dative as the "receiving end" of generosity, communication, or attention.
+
 ## Pronouns
 
 | Nominative | Dative |
@@ -57,6 +61,8 @@ Now let's review everything and make sure it's solid before moving on.
 | ви | вам |
 | вони | їм |
 
+Notice the pattern: most dative pronouns end in **-і** or have a distinctive form. *Мені* and *тобі* are easy to remember — they rhyme! The third person forms (*йому, їй, їм*) are completely different from nominative, so you'll need to memorize them, but they appear so often in speech that they'll become automatic.
+
 ## Noun Endings
 
 | Gender | Ending | Example |
@@ -65,6 +71,8 @@ Now let's review everything and make sure it's solid before moving on.
 | Feminine | -і | мамі, сестрі |
 | Neuter | -у/-ю | морю |
 | Plural | -ам/-ям | братам, друзям |
+
+Feminine nouns are the easiest — just change **-а** to **-і**: *мама → мамі*, *сестра → сестрі*, *подруга → подрузі*. Masculine nouns have two options: **-ові** (usually for people) or **-у** (usually for things), though both are grammatically correct.
 
 > [!tip] 💡 Did You Know?
 > The dative case is used in the famous greeting *Слава Україні!* — Glory TO Ukraine! The response *Героям слава!* (Glory to the heroes!) also uses dative.
@@ -75,6 +83,8 @@ Now let's review everything and make sure it's solid before moving on.
 ---
 
 # Quick Reference: Instrumental
+
+The instrumental case answers the question **Ким? Чим?** (By whom? With what?) — it marks *tools, means, and companions*. When you do something WITH a tool, travel BY a vehicle, or go somewhere WITH a person, you use instrumental. It's also the case of identity: what you ARE or BECOME (*бути лікарем* — to be a doctor).
 
 ## Pronouns
 
@@ -88,6 +98,8 @@ Now let's review everything and make sure it's solid before moving on.
 | ви | вами |
 | вони | ними |
 
+The instrumental pronouns have distinctive endings: **-ою** for *тобою*, **-ами** for *нами/вами*, and short forms for third person (*ним, нею, ними*). After prepositions like *з*, the third person forms add an *н-*: *з ним, з нею, з ними*.
+
 ## Noun Endings
 
 | Gender | Ending | Example |
@@ -97,14 +109,22 @@ Now let's review everything and make sure it's solid before moving on.
 | Neuter | -ом/-ем | молоком, морем |
 | Plural | -ами/-ями | братами, друзями |
 
+The endings are remarkably consistent: masculine and neuter share **-ом/-ем**, feminine uses **-ою/-ею**, and plural always ends in **-ами/-ями**. If the stem ends in a soft consonant or *й*, use the softer variant (*-ем, -ею, -ями*).
+
 ---
 
 # Two Uses of Instrumental
+
+The instrumental case has two main functions, and the key difference is whether you use a preposition:
 
 | Use | Preposition | Example |
 |-----|-------------|---------|
 | Accompaniment | **з** | з братом (with brother) |
 | Tool/Means | none | ручкою (with a pen) |
+
+**Accompaniment** (*з + instrumental*): Use this when someone or something accompanies you. *Я йду з другом* (I'm going with a friend). *Кава з молоком* (Coffee with milk). The preposition *з* is essential here.
+
+**Tool/Means** (bare instrumental): Use this when describing HOW you do something — the tool or method. *Пишу ручкою* (I write with a pen). *Їду поїздом* (I travel by train). No preposition needed!
 
 > [!example] 🎬 Pop Culture Moment
 > Ukrainian songs often feature *з тобою* (with you) in love songs — instrumental of accompaniment! The hit song "Обійми" by Okean Elzy includes *Обійми мене* followed by instrumental expressions.
@@ -124,12 +144,52 @@ Now let's review everything and make sure it's solid before moving on.
 
 # Being & Becoming Recap
 
+When talking about professions, states, or transformations, Ukrainian uses the instrumental case. This is one of the most elegant uses of instrumental — it expresses what someone IS or BECOMES:
+
 | Verb | Pattern | Example |
 |------|---------|---------|
 | бути (past/future) | + inst. | Він був лікарем. |
 | стати | + inst. | Вона стала вчителькою. |
 | працювати | + inst. | Він працює інженером. |
 | залишатися | + inst. | Він залишається другом. |
+
+Note: In the present tense, *бути* is usually omitted, and the predicate stays in nominative: *Він лікар* (He is a doctor). But in past and future, the instrumental appears: *Він був лікарем* (He was a doctor), *Він буде лікарем* (He will be a doctor).
+
+---
+
+# Dative & Instrumental in Real Life
+
+Here are some everyday situations where you'll use the cases you've learned:
+
+## At a Birthday Party
+
+— Що ти подаруєш **Олені**?
+— Я куплю **їй** книгу. Вона любить читати.
+— Класна ідея! А я йду **з Марком** купувати торт.
+— Чудово! Він може допомогти **тобі** нести його.
+
+*Notice: Олені (dative — recipient), їй (dative pronoun), з Марком (instrumental — accompaniment), тобі (dative — recipient of help)*
+
+## At the Post Office
+
+— Добрий день! Я хочу відправити **листа** за кордон.
+— Звичайною чи авіа **поштою**?
+— **Авіапоштою**, будь ласка. Скільки **марок** потрібно?
+— Дві. Можете заплатити **карткою** або **готівкою**.
+— Заплачу **карткою**, дякую **вам**!
+
+*Notice: поштою/авіапоштою (instrumental — means), карткою/готівкою (instrumental — means of payment), вам (dative — recipient of thanks)*
+
+## Talking About Careers
+
+— Ким ти працюєш?
+— Я працюю **програмістом** у великій компанії.
+— Цікаво! А твоя сестра?
+— Вона хотіла стати **актрисою**, але стала **журналісткою**.
+— Їй подобається ця робота?
+— Так, вона каже, що це найкраще рішення в **її** житті.
+
+*Notice: програмістом, актрисою, журналісткою (all instrumental — professions), їй (dative — with подобатися)*
 
 ---
 
@@ -153,7 +213,47 @@ Now let's review everything and make sure it's solid before moving on.
 
 ---
 
-# Vocabulary Review
+# When to Use Dative vs Instrumental
+
+This is the question learners ask most often: "How do I know which case to use?" Here's a decision guide:
+
+## Use DATIVE when...
+
+| Situation | Example | Why Dative? |
+|-----------|---------|-------------|
+| Someone receives something | Даю книгу **братові** | Recipient of giving |
+| Verbs require it | Допомагаю **мамі** | Verb governs dative |
+| Impersonal expressions | **Мені** холодно | Experiencer of state |
+| Thanking someone | Дякую **вам** | Recipient of thanks |
+| Something belongs | Це належить **їй** | Owner/possessor |
+
+**Key dative verbs to memorize:** допомагати, дякувати, вірити, довіряти, заважати, належати, шкодити, личити
+
+## Use INSTRUMENTAL when...
+
+| Situation | Example | Why Instrumental? |
+|-----------|---------|-------------------|
+| WITH someone (accompaniment) | Йду **з другом** | Companion (needs з) |
+| WITH something (tool) | Пишу **ручкою** | Tool/means (no prep) |
+| BY vehicle | Їду **поїздом** | Means of transport |
+| AS profession | Працює **лікарем** | Professional identity |
+| BECOMING something | Стала **вчителькою** | Transformation |
+
+**Key distinction:** If you can say "using" or "by means of" → bare instrumental. If you mean "accompanied by" → з + instrumental.
+
+## Common Mistakes to Avoid
+
+| Wrong | Right | Why |
+|-------|-------|-----|
+| *Допомагаю братом | Допомагаю **братові** | допомагати needs dative |
+| *Йду з брат | Йду **з братом** | з needs instrumental |
+| *Пишу з ручкою | Пишу **ручкою** | Tool = bare instrumental |
+| *Він лікарем | Він **лікар** (present) | Present tense = nominative |
+| *Він був лікар | Він був **лікарем** | Past tense = instrumental |
+
+---
+
+# Review: Key Words from Phase A2.1
 
 ## Dative Verbs (Module 3)
 
@@ -587,16 +687,131 @@ Now let's review everything and make sure it's solid before moving on.
     - [x] Instrumental
     - [ ] Locative
 
-## order: Learning Journey A2.1
+## error-correction: Fix the Case Errors
 
-> Put these learning milestones from Phase A2.1 in order.
+> Find the wrong word in each sentence, then choose the correct form.
 
-1. Dative pronouns (мені, тобі, йому...)
-2. Dative nouns (-ові/-у, -і)
-3. Dative verbs (допомагати, дякувати)
-4. Instrumental for accompaniment (з братом)
-5. Instrumental for tools (ручкою)
-6. Being and becoming (стати лікарем)
+1. Я допомагаю братом готувати вечерю.
+   > [!error] братом
+   > [!answer] братові
+   > [!options] братом | братові | брат | брата
+   > [!explanation] допомагати requires dative: братові
+
+2. Вона йде з подруга до магазину.
+   > [!error] подруга
+   > [!answer] подругою
+   > [!options] подруга | подругою | подрузі | подругу
+   > [!explanation] з requires instrumental: з подругою
+
+3. Він пише з ручкою листа мамі.
+   > [!error] ручкою
+   > [!answer] ручкою
+   > [!options] з ручкою | ручкою | ручку | ручка
+   > [!explanation] Tool = bare instrumental, no preposition (remove "з")
+
+4. Дякую тобою за допомогу!
+   > [!error] тобою
+   > [!answer] тобі
+   > [!options] тобою | тобі | тебе | ти
+   > [!explanation] дякувати requires dative: тобі
+
+5. Вона стала вчителька після університету.
+   > [!error] вчителька
+   > [!answer] вчителькою
+   > [!options] вчителька | вчителькою | вчительці | вчительку
+   > [!explanation] стати requires instrumental
+
+6. Ми їдемо до Києва з поїздом.
+   > [!error] поїздом
+   > [!answer] поїздом
+   > [!options] з поїздом | поїздом | поїзд | поїзда
+   > [!explanation] Means of transport = bare instrumental (remove "з")
+
+7. Це належить моя сестра.
+   > [!error] сестра
+   > [!answer] моїй сестрі
+   > [!options] моя сестра | моїй сестрі | мою сестру | моєї сестри
+   > [!explanation] належати requires dative
+
+8. Він був лікар у цій лікарні.
+   > [!error] лікар
+   > [!answer] лікарем
+   > [!options] лікар | лікарем | лікаря | лікарю
+   > [!explanation] бути in past tense requires instrumental
+
+9. Я вірю його.
+   > [!error] його
+   > [!answer] йому
+   > [!options] його | йому | ним | він
+   > [!explanation] вірити requires dative for people
+
+10. Вона пішла з друг на концерт.
+    > [!error] друг
+    > [!answer] другом
+    > [!options] друг | другом | другу | друга
+    > [!explanation] з requires instrumental
+
+11. Мені подобається працювати вчитель.
+    > [!error] вчитель
+    > [!answer] вчителем
+    > [!options] вчитель | вчителем | вчителя | вчителю
+    > [!explanation] працювати + profession requires instrumental
+
+12. Покажи братом нову книгу.
+    > [!error] братом
+    > [!answer] братові
+    > [!options] братом | братові | брат | брата
+    > [!explanation] показувати requires dative for recipient
+
+## unjumble: Case Mastery Sentences
+
+1. допомагаю / Я / мамі / готувати / сьогодні / вечерю / смачну / вдома
+   > [!answer] Я допомагаю мамі готувати смачну вечерю сьогодні вдома.
+   > (I help mom cook a tasty dinner at home today.) [8 words]
+
+2. з / Вона / подругою / йде / найкращою / в / своєю / кіно
+   > [!answer] Вона йде в кіно з своєю найкращою подругою.
+   > (She goes to the cinema with her best friend.) [8 words]
+
+3. ручкою / Він / синьою / пише / новою / лист / своєю / довгий
+   > [!answer] Він пише довгий лист своєю новою синьою ручкою.
+   > (He writes a long letter with his new blue pen.) [8 words]
+
+4. лікаркою / стала / Вона / відомою / після / університету / чудовою / нашого
+   > [!answer] Вона стала відомою чудовою лікаркою після нашого університету.
+   > (She became a famous wonderful doctor after our university.) [8 words]
+
+5. поїздом / Ми / до / їдемо / швидким / Львова / нічним / сьогодні
+   > [!answer] Ми сьогодні їдемо до Львова швидким нічним поїздом.
+   > (We're going to Lviv today by fast night train.) [8 words]
+
+6. належить / Ця / моїй / квартира / старшій / тепер / сестрі / велика
+   > [!answer] Ця велика квартира тепер належить моїй старшій сестрі.
+   > (This big apartment now belongs to my older sister.) [8 words]
+
+7. вчителем / Він / став / після / досвідченим / років / багатьох / роботи
+   > [!answer] Він став досвідченим вчителем після багатьох років роботи.
+   > (He became an experienced teacher after many years of work.) [8 words]
+
+8. дякую / Я / за / тобі / твою / дуже / велику / допомогу
+   > [!answer] Я дуже дякую тобі за твою велику допомогу.
+   > (I thank you very much for your great help.) [8 words]
+
+9. живе / Вона / батьками / з / у / своїми / великій / квартирі
+   > [!answer] Вона живе з своїми батьками у великій квартирі.
+   > (She lives with her parents in a big apartment.) [8 words]
+
+10. залишається / Він / моїм / другом / найкращим / протягом / років / багатьох
+    > [!answer] Він залишається моїм найкращим другом протягом багатьох років.
+    > (He remains my best friend for many years.) [8 words]
+
+11. працює / Вона / у / лікаркою / нашій / головною / великій / лікарні
+    > [!answer] Вона працює головною лікаркою у нашій великій лікарні.
+    > (She works as the head doctor at our big hospital.) [8 words]
+
+12. відправив / Я / листа / важливого / своєму / до / партнеру / Німеччини
+    > [!answer] Я відправив важливого листа своєму партнеру до Німеччини.
+    > (I sent an important letter to my partner to Germany.) [8 words]
 
 ## quiz: A2.1 Comprehensive Review
 

@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -982,11 +1023,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Seven Cases Mastery</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Complex Case Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Seven Cases Mastery</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1013,7 +1061,7 @@ footer {
   </main><footer>Module 08 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Case Form","data":{"type":"fill-blank","items":[{"prompt":"Я бачу ___ (брат).","answer":"брата","hints":["брат"]},{"prompt":"Це книга ___ (сестра).","answer":"сестри","hints":["сестра"]},{"prompt":"Дай це ___ (мама).","answer":"мамі","hints":["мама"]},{"prompt":"Я йду з ___ (друг).","answer":"другом","hints":["друг"]},{"prompt":"Він у ___ (магазин).","answer":"магазині","hints":["магазин"]},{"prompt":"___ (Тарас), йди сюди!","answer":"Тарасе","hints":["Тарас"]},{"prompt":"У мене немає ___ (час).","answer":"часу","hints":["час"]},{"prompt":"Вона пише ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Ми йдемо в ___ (кіно).","answer":"кіно","hints":["кіно"]},{"prompt":"Допоможи ___ (бабуся)!","answer":"бабусі","hints":["бабуся"]},{"prompt":"Книга на ___ (стіл).","answer":"столі","hints":["стіл"]},{"prompt":"Це машина ___ (тато).","answer":"тата","hints":["тато"]}]}},{"id":"activity-1","type":"match-up","title":"Case and Function","data":{"type":"match-up","pairs":[{"left":"Nominative","right":"subject"},{"left":"Genitive","right":"possession"},{"left":"Dative","right":"recipient"},{"left":"Accusative","right":"direct object"},{"left":"Instrumental","right":"tool/companion"},{"left":"Locative","right":"location"},{"left":"Vocative","right":"direct address"},{"left":"Genitive","right":"absence (немає)"},{"left":"Accusative","right":"direction (куди?)"},{"left":"Instrumental","right":"profession (бути)"},{"left":"Dative","right":"impersonal (холодно)"},{"left":"Genitive","right":"quantity (багато)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["бачу","Я","брата","старшого","свого","вулиці","на","часто"],"answer":"Я часто бачу свого старшого брата на вулиці.","translation":"I often see my older brother on the street."},{"words":["книга","сестри","Це","нова","улюблена","моєї","молодшої","цікава"],"answer":"Це нова цікава улюблена книга моєї молодшої сестри.","translation":"This is a new interesting favorite book of my younger sister."},{"words":["це","мамі","Дай","будь","ласка","сьогодні","ввечері","моїй"],"answer":"Дай це, будь ласка, моїй мамі сьогодні ввечері.","translation":"Give this to my mom this evening, please."},{"words":["другом","Я","з","найкращим","йду","своїм","в","парк"],"answer":"Я йду з своїм найкращим другом в парк.","translation":"I'm going with my best friend to the park."},{"words":["магазині","Він","у","новому","великому","зараз","працює","продуктовому"],"answer":"Він зараз працює у новому великому продуктовому магазині.","translation":"He now works at a new big grocery store."},{"words":["сюди","Тарасе","йди","будь","ласка","зараз","швидко","мені"],"answer":"Тарасе, йди, будь ласка, швидко сюди до мене.","translation":"Taras, please come quickly here to me."},{"words":["немає","У","мене","часу","сьогодні","на","це","зовсім"],"answer":"У мене сьогодні зовсім немає часу на це.","translation":"I don't have any time for this today."},{"words":["ручкою","синьою","пише","Вона","новою","своєю","листа","довгого"],"answer":"Вона пише довгого листа своєю новою синьою ручкою.","translation":"She writes a long letter with her new blue pen."},{"words":["кіно","в","йдемо","Ми","нове","сьогодні","ввечері","разом"],"answer":"Ми сьогодні ввечері разом йдемо в нове кіно.","translation":"We're going together to the new cinema this evening."},{"words":["бабусі","нашій","Допоможи","будь","ласка","любій","старенькій","дорогій"],"answer":"Допоможи, будь ласка, нашій любій старенькій дорогій бабусі.","translation":"Please help our dear sweet elderly beloved grandma."},{"words":["столі","на","кухонному","Книга","лежить","великому","нашому","новому"],"answer":"Книга лежить на нашому новому великому кухонному столі.","translation":"The book lies on our new big kitchen table."},{"words":["сестрі","книгу","Брат","молодшій","дає","цікаву","нову","своїй"],"answer":"Брат дає своїй молодшій сестрі нову цікаву книгу.","translation":"Brother gives his younger sister a new interesting book."}]}},{"id":"activity-3","type":"quiz","title":"Identify the Case","data":{"type":"quiz","questions":[{"question":"In \"Я бачу брата,\" what case is \"брата\"?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":3,"explanation":""},{"question":"In \"Це книга сестри,\" what case is \"сестри\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":1,"explanation":""},{"question":"In \"Дай це мамі,\" what case is \"мамі\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Я йду з другом,\" what case is \"другом\"?","options":["Accusative","Dative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Він у магазині,\" what case is \"магазині\"?","options":["Accusative","Genitive","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"In \"Тарасе, йди сюди,\" what case is \"Тарасе\"?","options":["Nominative","Dative","Accusative","Vocative"],"correctIndex":3,"explanation":""},{"question":"In \"Брат читає книгу,\" what case is \"Брат\"?","options":["Nominative","Genitive","Accusative","Vocative"],"correctIndex":0,"explanation":""},{"question":"In \"У мене немає часу,\" what case is \"часу\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":1,"explanation":""},{"question":"In \"Вона пише ручкою,\" what case is \"ручкою\"?","options":["Accusative","Dative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Допоможи бабусі,\" what case is \"бабусі\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Я йду в магазин,\" what case is \"магазин\"?","options":["Nominative","Genitive","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Слава Україні,\" what case is \"Україні\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Case Facts","data":{"type":"true-false","statements":[{"statement":"Nominative is used for the subject of a sentence.","isTrue":true,"explanation":""},{"statement":"Genitive is used for direct objects.","isTrue":false,"explanation":""},{"statement":"Dative is used for recipients (to whom).","isTrue":true,"explanation":""},{"statement":"Accusative is used for direction (куди?).","isTrue":true,"explanation":""},{"statement":"Instrumental expresses location.","isTrue":false,"explanation":""},{"statement":"Locative always needs a preposition.","isTrue":true,"explanation":""},{"statement":"Vocative is used for possessions.","isTrue":false,"explanation":""},{"statement":"\"Немає\" requires genitive case.","isTrue":true,"explanation":""},{"statement":"Instrumental can express profession.","isTrue":true,"explanation":""},{"statement":"All seven cases can appear in one sentence.","isTrue":true,"explanation":""},{"statement":"Dative is used in impersonal expressions.","isTrue":true,"explanation":""},{"statement":"Genitive is used for quantities.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Case Usage","data":{"type":"group-sort","groups":[{"id":"nominativeaccusative","name":"Nominative/Accusative","items":["subject","direct object","direction"]},{"id":"genitivedative","name":"Genitive/Dative","items":["possession","recipient","absence (немає)","quantity (багато)","verb dopomahaty"]},{"id":"instrumentallocative","name":"Instrumental/Locative","items":["tool","location","companion (з)","profession (бути)"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Mixed Case Challenge","data":{"type":"fill-blank","items":[{"prompt":"Я читаю ___ (книга). (accusative)","answer":"книгу","hints":["книга"]},{"prompt":"Це машина ___ (тато). (genitive)","answer":"тата","hints":["тато"]},{"prompt":"Допоможи ___ (сестра). (dative)","answer":"сестрі","hints":["сестра"]},{"prompt":"Він пише ___ (олівець). (instrumental)","answer":"олівцем","hints":["олівець"]},{"prompt":"Вона живе ___ (місто). (locative)","answer":"в місті","hints":["місто"]},{"prompt":"___ (Марія), йди сюди! (vocative)","answer":"Маріє","hints":["Марія"]},{"prompt":"У мене немає ___ (гроші). (genitive)","answer":"грошей","hints":["гроші"]},{"prompt":"Я йду з ___ (мама). (instrumental)","answer":"мамою","hints":["мама"]},{"prompt":"Ми їдемо в ___ (село). (accusative)","answer":"село","hints":["село"]},{"prompt":"Дай цю книгу ___ (вчитель). (dative)","answer":"вчителю/вчителеві","hints":["вчитель"]},{"prompt":"Багато ___ (студент). (genitive plural)","answer":"студентів","hints":["студент"]},{"prompt":"Кіт спить на ___ (диван). (locative)","answer":"дивані","hints":["диван"]}]}},{"id":"activity-7","type":"select","title":"Identify the Case","data":{"type":"select","items":[{"question":"Я бачу **сестру**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":true}]},{"question":"Це книга **брата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Дай **мамі** квіти.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false}]},{"question":"Він пише **ручкою**.","options":[{"text":"Accusative","correct":false},{"text":"Dative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Вона в **магазині**.","options":[{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false},{"text":"Locative","correct":true},{"text":"Genitive","correct":false}]},{"question":"**Тарасе**, йди сюди!","options":[{"text":"Nominative","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Vocative","correct":true}]},{"question":"**Брат** читає.","options":[{"text":"Nominative","correct":true},{"text":"Genitive","correct":false},{"text":"Accusative","correct":false},{"text":"Dative","correct":false}]},{"question":"Немає **часу**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Йду з **другом**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Дякую **вам**.","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Йду в **магазин**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Accusative","correct":true},{"text":"Locative","correct":false}]},{"question":"Слава **Україні**!","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Locative","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Seven Cases Mastery","data":{"type":"quiz","questions":[{"question":"How many cases does Ukrainian have?","options":["Five","Six","Seven","Eight"],"correctIndex":2,"explanation":""},{"question":"Which case is used for the subject?","options":["Nominative","Genitive","Accusative","Dative"],"correctIndex":0,"explanation":""},{"question":"Which case expresses \"of\" or possession?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":1,"explanation":""},{"question":"Which case is used for indirect objects?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":2,"explanation":""},{"question":"Which case is used for direct objects?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":3,"explanation":""},{"question":"Which case expresses tools and companions?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which case always requires a preposition?","options":["Genitive","Dative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"Which case is used for direct address?","options":["Nominative","Dative","Accusative","Vocative"],"correctIndex":3,"explanation":""},{"question":"\"Немає\" requires which case?","options":["Nominative","Genitive","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Допомагати\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"Direction uses which case?","options":["Nominative","Genitive","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"Location uses which case?","options":["Nominative","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Choose the Correct Case Form","data":{"type":"fill-blank","items":[{"prompt":"Я бачу ___ (брат).","answer":"брата","hints":["брат"]},{"prompt":"Це книга ___ (сестра).","answer":"сестри","hints":["сестра"]},{"prompt":"Дай це ___ (мама).","answer":"мамі","hints":["мама"]},{"prompt":"Я йду з ___ (друг).","answer":"другом","hints":["друг"]},{"prompt":"Він у ___ (магазин).","answer":"магазині","hints":["магазин"]},{"prompt":"___ (Тарас), йди сюди!","answer":"Тарасе","hints":["Тарас"]},{"prompt":"У мене немає ___ (час).","answer":"часу","hints":["час"]},{"prompt":"Вона пише ___ (ручка).","answer":"ручкою","hints":["ручка"]},{"prompt":"Ми йдемо в ___ (кіно).","answer":"кіно","hints":["кіно"]},{"prompt":"Допоможи ___ (бабуся)!","answer":"бабусі","hints":["бабуся"]},{"prompt":"Книга на ___ (стіл).","answer":"столі","hints":["стіл"]},{"prompt":"Це машина ___ (тато).","answer":"тата","hints":["тато"]}]}},{"id":"activity-1","type":"match-up","title":"Case and Function","data":{"type":"match-up","pairs":[{"left":"Nominative","right":"subject"},{"left":"Genitive","right":"possession"},{"left":"Dative","right":"recipient"},{"left":"Accusative","right":"direct object"},{"left":"Instrumental","right":"tool/companion"},{"left":"Locative","right":"location"},{"left":"Vocative","right":"direct address"},{"left":"Genitive","right":"absence (немає)"},{"left":"Accusative","right":"direction (куди?)"},{"left":"Instrumental","right":"profession (бути)"},{"left":"Dative","right":"impersonal (холодно)"},{"left":"Genitive","right":"quantity (багато)"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["бачу","Я","брата","старшого","свого","вулиці","на","часто"],"answer":"Я часто бачу свого старшого брата на вулиці.","translation":"I often see my older brother on the street."},{"words":["книга","сестри","Це","нова","улюблена","моєї","молодшої","цікава"],"answer":"Це нова цікава улюблена книга моєї молодшої сестри.","translation":"This is a new interesting favorite book of my younger sister."},{"words":["це","мамі","Дай","будь","ласка","сьогодні","ввечері","моїй"],"answer":"Дай це, будь ласка, моїй мамі сьогодні ввечері.","translation":"Give this to my mom this evening, please."},{"words":["другом","Я","з","найкращим","йду","своїм","в","парк"],"answer":"Я йду з своїм найкращим другом в парк.","translation":"I'm going with my best friend to the park."},{"words":["магазині","Він","у","новому","великому","зараз","працює","продуктовому"],"answer":"Він зараз працює у новому великому продуктовому магазині.","translation":"He now works at a new big grocery store."},{"words":["сюди","Тарасе","йди","будь","ласка","зараз","швидко","мені"],"answer":"Тарасе, йди, будь ласка, швидко сюди до мене.","translation":"Taras, please come quickly here to me."},{"words":["немає","У","мене","часу","сьогодні","на","це","зовсім"],"answer":"У мене сьогодні зовсім немає часу на це.","translation":"I don't have any time for this today."},{"words":["ручкою","синьою","пише","Вона","новою","своєю","листа","довгого"],"answer":"Вона пише довгого листа своєю новою синьою ручкою.","translation":"She writes a long letter with her new blue pen."},{"words":["кіно","в","йдемо","Ми","нове","сьогодні","ввечері","разом"],"answer":"Ми сьогодні ввечері разом йдемо в нове кіно.","translation":"We're going together to the new cinema this evening."},{"words":["бабусі","нашій","Допоможи","будь","ласка","любій","старенькій","дорогій"],"answer":"Допоможи, будь ласка, нашій любій старенькій дорогій бабусі.","translation":"Please help our dear sweet elderly beloved grandma."},{"words":["столі","на","кухонному","Книга","лежить","великому","нашому","новому"],"answer":"Книга лежить на нашому новому великому кухонному столі.","translation":"The book lies on our new big kitchen table."},{"words":["сестрі","книгу","Брат","молодшій","дає","цікаву","нову","своїй"],"answer":"Брат дає своїй молодшій сестрі нову цікаву книгу.","translation":"Brother gives his younger sister a new interesting book."}]}},{"id":"activity-3","type":"quiz","title":"Identify the Case","data":{"type":"quiz","questions":[{"question":"In \"Я бачу брата,\" what case is \"брата\"?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":3,"explanation":""},{"question":"In \"Це книга сестри,\" what case is \"сестри\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":1,"explanation":""},{"question":"In \"Дай це мамі,\" what case is \"мамі\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Я йду з другом,\" what case is \"другом\"?","options":["Accusative","Dative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Він у магазині,\" what case is \"магазині\"?","options":["Accusative","Genitive","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"In \"Тарасе, йди сюди,\" what case is \"Тарасе\"?","options":["Nominative","Dative","Accusative","Vocative"],"correctIndex":3,"explanation":""},{"question":"In \"Брат читає книгу,\" what case is \"Брат\"?","options":["Nominative","Genitive","Accusative","Vocative"],"correctIndex":0,"explanation":""},{"question":"In \"У мене немає часу,\" what case is \"часу\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":1,"explanation":""},{"question":"In \"Вона пише ручкою,\" what case is \"ручкою\"?","options":["Accusative","Dative","Instrumental","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Допоможи бабусі,\" what case is \"бабусі\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Я йду в магазин,\" what case is \"магазин\"?","options":["Nominative","Genitive","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"In \"Слава Україні,\" what case is \"Україні\"?","options":["Nominative","Genitive","Dative","Locative"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Case Facts","data":{"type":"true-false","statements":[{"statement":"Nominative is used for the subject of a sentence.","isTrue":true,"explanation":""},{"statement":"Genitive is used for direct objects.","isTrue":false,"explanation":""},{"statement":"Dative is used for recipients (to whom).","isTrue":true,"explanation":""},{"statement":"Accusative is used for direction (куди?).","isTrue":true,"explanation":""},{"statement":"Instrumental expresses location.","isTrue":false,"explanation":""},{"statement":"Locative always needs a preposition.","isTrue":true,"explanation":""},{"statement":"Vocative is used for possessions.","isTrue":false,"explanation":""},{"statement":"\"Немає\" requires genitive case.","isTrue":true,"explanation":""},{"statement":"Instrumental can express profession.","isTrue":true,"explanation":""},{"statement":"All seven cases can appear in one sentence.","isTrue":true,"explanation":""},{"statement":"Dative is used in impersonal expressions.","isTrue":true,"explanation":""},{"statement":"Genitive is used for quantities.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Case Usage","data":{"type":"group-sort","groups":[{"id":"nominativeaccusative","name":"Nominative/Accusative","items":["subject","direct object","direction"]},{"id":"genitivedative","name":"Genitive/Dative","items":["possession","recipient","absence (немає)","quantity (багато)","verb dopomahaty"]},{"id":"instrumentallocative","name":"Instrumental/Locative","items":["tool","location","companion (з)","profession (бути)"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Mixed Case Challenge","data":{"type":"fill-blank","items":[{"prompt":"Я читаю ___ (книга). (accusative)","answer":"книгу","hints":["книга"]},{"prompt":"Це машина ___ (тато). (genitive)","answer":"тата","hints":["тато"]},{"prompt":"Допоможи ___ (сестра). (dative)","answer":"сестрі","hints":["сестра"]},{"prompt":"Він пише ___ (олівець). (instrumental)","answer":"олівцем","hints":["олівець"]},{"prompt":"Вона живе ___ (місто). (locative)","answer":"в місті","hints":["місто"]},{"prompt":"___ (Марія), йди сюди! (vocative)","answer":"Маріє","hints":["Марія"]},{"prompt":"У мене немає ___ (гроші). (genitive)","answer":"грошей","hints":["гроші"]},{"prompt":"Я йду з ___ (мама). (instrumental)","answer":"мамою","hints":["мама"]},{"prompt":"Ми їдемо в ___ (село). (accusative)","answer":"село","hints":["село"]},{"prompt":"Дай цю книгу ___ (вчитель). (dative)","answer":"вчителю/вчителеві","hints":["вчитель"]},{"prompt":"Багато ___ (студент). (genitive plural)","answer":"студентів","hints":["студент"]},{"prompt":"Кіт спить на ___ (диван). (locative)","answer":"дивані","hints":["диван"]}]}},{"id":"activity-7","type":"select","title":"Identify the Case","data":{"type":"select","items":[{"question":"Я бачу **сестру**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":true}]},{"question":"Це книга **брата**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Дай **мамі** квіти.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false}]},{"question":"Він пише **ручкою**.","options":[{"text":"Accusative","correct":false},{"text":"Dative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Вона в **магазині**.","options":[{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false},{"text":"Locative","correct":true},{"text":"Genitive","correct":false}]},{"question":"**Тарасе**, йди сюди!","options":[{"text":"Nominative","correct":false},{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Vocative","correct":true}]},{"question":"**Брат** читає.","options":[{"text":"Nominative","correct":true},{"text":"Genitive","correct":false},{"text":"Accusative","correct":false},{"text":"Dative","correct":false}]},{"question":"Немає **часу**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":true},{"text":"Dative","correct":false},{"text":"Accusative","correct":false}]},{"question":"Йду з **другом**.","options":[{"text":"Dative","correct":false},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":true},{"text":"Locative","correct":false}]},{"question":"Дякую **вам**.","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Instrumental","correct":false}]},{"question":"Йду в **магазин**.","options":[{"text":"Nominative","correct":false},{"text":"Genitive","correct":false},{"text":"Accusative","correct":true},{"text":"Locative","correct":false}]},{"question":"Слава **Україні**!","options":[{"text":"Genitive","correct":false},{"text":"Dative","correct":true},{"text":"Accusative","correct":false},{"text":"Locative","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Complex Case Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","Брат","дає","сестрі","цікаву","з","картинками","нову"],"answer":"Брат дає сестрі нову цікаву книгу з картинками.","translation":"Brother gives sister a new interesting book with pictures."},{"words":["другові","Я","допомагаю","робити","завдання","домашнє","складне","кожного","дня"],"answer":"Я кожного дня допомагаю другові робити складне домашнє завдання.","translation":"I help my friend do difficult homework every day."},{"words":["мамі","Дочка","готує","вечерю","смачну","на","кухні","великій"],"answer":"Дочка готує мамі смачну вечерю на великій кухні.","translation":"Daughter prepares mom a tasty dinner in the big kitchen."},{"words":["батькові","Син","показує","машину","нову","свою","гарну","червону"],"answer":"Син показує батькові свою нову гарну червону машину.","translation":"Son shows father his new beautiful red car."},{"words":["вчителеві","Студенти","дякують","за","урок","цікавий","дуже","кожен"],"answer":"Студенти дякують вчителеві за кожен дуже цікавий урок.","translation":"Students thank teacher for every very interesting lesson."},{"words":["подрузі","Вона","розповідає","про","поїздку","свою","цікаву","довгу"],"answer":"Вона розповідає подрузі про свою довгу цікаву поїздку.","translation":"She tells her friend about her long interesting trip."},{"words":["лікареві","Хворий","пояснює","про","симптоми","свої","всі","важкі"],"answer":"Хворий пояснює лікареві про всі свої важкі симптоми.","translation":"Patient explains to doctor about all his serious symptoms."},{"words":["бабусі","Внук","телефонує","щодня","своїй","коханій","ввечері","старій"],"answer":"Внук щодня ввечері телефонує своїй коханій старій бабусі.","translation":"Grandson calls his dear old grandmother every evening."},{"words":["колезі","Він","пише","листа","довгого","електронного","важливого","сьогодні"],"answer":"Він сьогодні пише колезі довгого важливого електронного листа.","translation":"Today he writes colleague a long important email."},{"words":["дитині","Мама","читає","казку","цікаву","українську","народну","на","ніч"],"answer":"Мама читає дитині цікаву українську народну казку на ніч.","translation":"Mom reads child an interesting Ukrainian folk tale at night."},{"words":["братові","Сестра","купує","подарунок","гарний","великий","на","день","народження"],"answer":"Сестра купує братові гарний великий подарунок на день народження.","translation":"Sister buys brother a nice big present for birthday."},{"words":["директорові","Секретарка","несе","документи","важливі","нові","на","підпис","термінові"],"answer":"Секретарка несе директорові нові важливі термінові документи на підпис.","translation":"Secretary brings director new important urgent documents to sign."}]}},{"id":"activity-9","type":"quiz","title":"Seven Cases Mastery","data":{"type":"quiz","questions":[{"question":"How many cases does Ukrainian have?","options":["Five","Six","Seven","Eight"],"correctIndex":2,"explanation":""},{"question":"Which case is used for the subject?","options":["Nominative","Genitive","Accusative","Dative"],"correctIndex":0,"explanation":""},{"question":"Which case expresses \"of\" or possession?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":1,"explanation":""},{"question":"Which case is used for indirect objects?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":2,"explanation":""},{"question":"Which case is used for direct objects?","options":["Nominative","Genitive","Dative","Accusative"],"correctIndex":3,"explanation":""},{"question":"Which case expresses tools and companions?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":3,"explanation":""},{"question":"Which case always requires a preposition?","options":["Genitive","Dative","Instrumental","Locative"],"correctIndex":3,"explanation":""},{"question":"Which case is used for direct address?","options":["Nominative","Dative","Accusative","Vocative"],"correctIndex":3,"explanation":""},{"question":"\"Немає\" requires which case?","options":["Nominative","Genitive","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"\"Допомагати\" requires which case?","options":["Genitive","Dative","Accusative","Instrumental"],"correctIndex":1,"explanation":""},{"question":"Direction uses which case?","options":["Nominative","Genitive","Accusative","Locative"],"correctIndex":2,"explanation":""},{"question":"Location uses which case?","options":["Nominative","Accusative","Instrumental","Locative"],"correctIndex":3,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"називний","translit":"","en":"nominative","note":"case name"},{"uk":"родовий","translit":"","en":"genitive","note":"case name"},{"uk":"давальний","translit":"","en":"dative","note":"case name"},{"uk":"знахідний","translit":"","en":"accusative","note":"case name"},{"uk":"орудний","translit":"","en":"instrumental","note":"case name"},{"uk":"місцевий","translit":"","en":"locative","note":"case name"},{"uk":"кличний","translit":"","en":"vocative","note":"case name"},{"uk":"відмінок","translit":"","en":"case (grammar)","note":""},{"uk":"речення","translit":"","en":"sentence","note":""},{"uk":"підмет","translit":"","en":"subject","note":""},{"uk":"присудок","translit":"","en":"predicate","note":""},{"uk":"додаток","translit":"","en":"object","note":""},{"uk":"склянка","translit":"","en":"glass","note":""},{"uk":"лист","translit":"","en":"letter","note":""},{"uk":"бібліотека","translit":"","en":"library","note":""},{"uk":"магазин","translit":"","en":"store","note":""},{"uk":"вечеря","translit":"","en":"dinner","note":""},{"uk":"час","translit":"","en":"time","note":""},{"uk":"кіно","translit":"","en":"cinema","note":"indecl."},{"uk":"слава","translit":"","en":"glory","note":""},{"uk":"офіціант","translit":"","en":"waiter","note":""},{"uk":"рахунок","translit":"","en":"bill, account","note":""},{"uk":"вокзал","translit":"","en":"train station","note":""},{"uk":"фонтан","translit":"","en":"fountain","note":""},{"uk":"сусід","translit":"","en":"neighbor","note":""},{"uk":"подвір'я","translit":"","en":"yard, courtyard","note":""},{"uk":"кілограм","translit":"","en":"kilogram","note":""},{"uk":"цукор","translit":"","en":"sugar","note":""},{"uk":"ложка","translit":"","en":"spoon","note":""},{"uk":"стіна","translit":"","en":"wall","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2338,6 +2386,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

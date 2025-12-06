@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1147,11 +1188,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Root Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Root Family Sentences II</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Root Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1178,7 +1226,7 @@ footer {
   </main><footer>Module 36 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Root Recognition","data":{"type":"fill-blank","items":[{"prompt":"Корінь «бач-» означає ___. (to see)","answer":"бачити"},{"prompt":"«Побачення» — це коли люди ___. (meet/see each other)","answer":"зустрічаються/бачаться"},{"prompt":"Корінь «слух-» означає ___. (to hear/listen)","answer":"слухати"},{"prompt":"«Почуття» — це те, що ми ___. (feel)","answer":"відчуваємо"},{"prompt":"«Мова» — це те, чим ми ___. (speak)","answer":"говоримо"},{"prompt":"«Мовчання» — це коли не ___. (speak)","answer":"говорять"},{"prompt":"«Думка» — це те, що ми ___. (think)","answer":"думаємо"},{"prompt":"«Передбачення» — це коли ___ наперед. (see)","answer":"бачать"},{"prompt":"«Глядач» — це людина, яка ___. (watches)","answer":"дивиться"},{"prompt":"«Розмова» — це коли люди ___. (talk)","answer":"говорять/розмовляють"},{"prompt":"«Співчуття» — це коли ___ разом. (feel)","answer":"відчуваєш"},{"prompt":"«Придумати» — це ___ щось нове. (think up)","answer":"вигадати"}]}},{"id":"activity-1","type":"match-up","title":"Roots and Meanings","data":{"type":"match-up","pairs":[{"left":"бач-","right":"to see"},{"left":"гляд-","right":"to look"},{"left":"слух-","right":"to hear/listen"},{"left":"чу-","right":"to hear/feel"},{"left":"говор-","right":"to speak"},{"left":"мов-","right":"language/speech"},{"left":"дум-","right":"to think"},{"left":"вид-","right":"visible"},{"left":"мовч-","right":"silent"},{"left":"роз-","right":"apart/conversation"},{"left":"по-","right":"completion/result"},{"left":"перед-","right":"before/ahead"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["тебе","Рада","побачити","знову","після","такого","довгого","часу"],"answer":"Рада побачити тебе знову після такого довгого часу.","translation":"Nice to see you again after such a long time."},{"words":["побачення","У","нас","завтра","о","восьмій","годині","ввечері"],"answer":"У нас побачення завтра о восьмій годині ввечері.","translation":"We have a date tomorrow at eight o'clock in the evening."},{"words":["уважно","Слухай","бо","це","дуже","важлива","інформація","для"],"answer":"Слухай уважно, бо це дуже важлива інформація для тебе.","translation":"Listen carefully because this is very important information for you."},{"words":["почуття","Яке","прекрасне","коли","ти","поруч","зі","мною"],"answer":"Яке прекрасне почуття, коли ти поруч зі мною.","translation":"What a wonderful feeling when you are next to me."},{"words":["говорить","Він","українською","мовою","дуже","добре","і","вільно"],"answer":"Він говорить українською мовою дуже добре і вільно.","translation":"He speaks Ukrainian language very well and fluently."},{"words":["Мовчання","золото","а","слово","срібло","каже","народна","мудрість"],"answer":"Мовчання — золото, а слово — срібло, каже народна мудрість.","translation":"Silence is gold and word is silver, says folk wisdom."},{"words":["думаю","Я","що","це","правильне","рішення","для","всіх"],"answer":"Я думаю, що це правильне рішення для всіх.","translation":"I think that this is the right decision for everyone."},{"words":["Подумай","добре","перед","тим","як","давати","свою","відповідь"],"answer":"Подумай добре перед тим, як давати свою відповідь.","translation":"Think well before giving your answer."},{"words":["глядачі","Усі","аплодували","коли","співак","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співак закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["вигляд","У","тебе","чудовий","сьогодні","ти","виглядаєш","прекрасно"],"answer":"У тебе чудовий вигляд сьогодні, ти виглядаєш прекрасно.","translation":"You look wonderful today, you look beautiful."},{"words":["розмова","Цікава","була","з","тобою","дякую","за","час"],"answer":"Цікава розмова була з тобою, дякую за час.","translation":"It was an interesting conversation with you, thanks for the time."},{"words":["передумав","Я","і","вирішив","залишитися","тут","на","довше"],"answer":"Я передумав і вирішив залишитися тут на довше.","translation":"I changed my mind and decided to stay here longer."}]}},{"id":"activity-3","type":"quiz","title":"Root Family Knowledge","data":{"type":"quiz","questions":[{"question":"«Бач-» root means:","options":["To see","To be","To buy","To beat"],"correctIndex":0,"explanation":""},{"question":"«Побачення» is:","options":["A date/meeting","A viewpoint","A prediction","A vision"],"correctIndex":0,"explanation":""},{"question":"«Слухач» is:","options":["A listener","A speaker","A writer","A reader"],"correctIndex":0,"explanation":""},{"question":"«Почуття» comes from:","options":["чу- (hear/feel)","пач- (pack)","поч- (start)","пуч- (bunch)"],"correctIndex":0,"explanation":""},{"question":"«Мовчання» is the opposite of:","options":["Розмова","Мова","Мовлення","Словник"],"correctIndex":0,"explanation":""},{"question":"«Думка» means:","options":["Thought, opinion","Drum","House","Tree"],"correctIndex":0,"explanation":""},{"question":"«Передумати» means:","options":["To change one's mind","To think ahead","To think first","To stop thinking"],"correctIndex":0,"explanation":""},{"question":"«Глядач» is formed from:","options":["гляд- (look) root","гля- (clay) root","глад- (smooth) root","глас- (voice) root"],"correctIndex":0,"explanation":""},{"question":"«Очевидний» literally means:","options":["Eye-visible (obvious)","Eyes-only","Eye-catching","Eye-opening"],"correctIndex":0,"explanation":""},{"question":"«Розмова» uses prefix:","options":["роз- (apart/together)","роз- (grow)","рос- (Russian)","рох- (move)"],"correctIndex":0,"explanation":""},{"question":"«Співчуття» is:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"«Вигляд» is:","options":["Appearance","Exit","Entrance","Overview"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Root Facts","data":{"type":"true-false","statements":[{"statement":"«Бач-» and «вид-» both relate to seeing.","isTrue":true,"explanation":""},{"statement":"«Побачення» only means \"vision.\"","isTrue":false,"explanation":""},{"statement":"«Слух» can mean both hearing and rumor.","isTrue":true,"explanation":""},{"statement":"«Почуття» is an action verb.","isTrue":false,"explanation":""},{"statement":"«Мова» and «мовчання» use the same root.","isTrue":true,"explanation":""},{"statement":"«Мовчати» means to speak loudly.","isTrue":false,"explanation":""},{"statement":"«Думка» is related to «думати».","isTrue":true,"explanation":""},{"statement":"«Передумати» means to think first.","isTrue":false,"explanation":""},{"statement":"«Глядач» watches something.","isTrue":true,"explanation":""},{"statement":"«Співчуття» means feeling alone.","isTrue":false,"explanation":""},{"statement":"«Огляд» is a review or overview.","isTrue":true,"explanation":""},{"statement":"«Придумати» means to invent/imagine.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Root Families","data":{"type":"group-sort","groups":[{"id":"--","name":"БАЧ-/ГЛЯД-","items":["побачення","погляд","глядач"],"nameUk":"See"},{"id":"--","name":"СЛУХ-/ЧУ-","items":["слухач","почуття","відчуття"],"nameUk":"Hear"},{"id":"--","name":"ГОВОР-/МОВ-","items":["розмова","мовчання","мова"],"nameUk":"Speak"},{"id":"-","name":"ДУМ-","items":["думка","роздуми","придумати"],"nameUk":"Think"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Root Words","data":{"type":"fill-blank","items":[{"prompt":"Рада тебе ___! (to see - pf)","answer":"побачити"},{"prompt":"У нас ___ завтра ввечері. (date/meeting)","answer":"побачення"},{"prompt":"___ уважно, це важливо! (Listen)","answer":"Слухай"},{"prompt":"Яке прекрасне ___! (feeling)","answer":"почуття"},{"prompt":"Він добре ___ українською. (speaks)","answer":"говорить"},{"prompt":"Чому ти ___? Скажи щось! (are silent)","answer":"мовчиш"},{"prompt":"Я ___, що це правда. (think)","answer":"думаю"},{"prompt":"Твій ___ на це питання цікавий. (view/opinion)","answer":"погляд"},{"prompt":"Це було моє ___. (prediction)","answer":"передбачення"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Цікава ___ з тобою! (conversation)","answer":"розмова"},{"prompt":"Вона ___ цікаву гру. (invented)","answer":"придумала"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[{"question":"Рада тебе ___ знову!","options":[{"text":"побачити","correct":true},{"text":"побачення","correct":false},{"text":"бачення","correct":false},{"text":"видіння","correct":false}]},{"question":"___ уважно, це важливо.","options":[{"text":"Слухай","correct":true},{"text":"Слухач","correct":false},{"text":"Слух","correct":false},{"text":"Слухання","correct":false}]},{"question":"Яке прекрасне ___ любові!","options":[{"text":"почуття","correct":true},{"text":"чути","correct":false},{"text":"відчуття","correct":false},{"text":"співчуття","correct":false}]},{"question":"Він добре ___ кількома мовами.","options":[{"text":"говорить","correct":true},{"text":"мовчить","correct":false},{"text":"мовить","correct":false},{"text":"розмовляння","correct":false}]},{"question":"___ — золото.","options":[{"text":"Мовчання","correct":true},{"text":"Мова","correct":false},{"text":"Мовлення","correct":false},{"text":"Розмова","correct":false}]},{"question":"Я ___, що ти правий.","options":[{"text":"думаю","correct":true},{"text":"думка","correct":false},{"text":"роздуми","correct":false},{"text":"задумав","correct":false}]},{"question":"У неї гарний ___.","options":[{"text":"вигляд","correct":true},{"text":"погляд","correct":false},{"text":"огляд","correct":false},{"text":"догляд","correct":false}]},{"question":"___ фільму були задоволені.","options":[{"text":"Глядачі","correct":true},{"text":"Слухачі","correct":false},{"text":"Читачі","correct":false},{"text":"Письменники","correct":false}]},{"question":"Це цікава ___ з тобою.","options":[{"text":"розмова","correct":true},{"text":"мовчання","correct":false},{"text":"мова","correct":false},{"text":"мовець","correct":false}]},{"question":"Я ___! Тепер хочу поїхати.","options":[{"text":"передумав","correct":true},{"text":"подумав","correct":false},{"text":"задумав","correct":false},{"text":"надумав","correct":false}]},{"question":"Моє ___ тим, хто втратив близьких.","options":[{"text":"співчуття","correct":true},{"text":"почуття","correct":false},{"text":"відчуття","correct":false},{"text":"чуття","correct":false}]},{"question":"Це ___! Не треба пояснювати.","options":[{"text":"очевидно","correct":true},{"text":"видно","correct":false},{"text":"бачите","correct":false},{"text":"глядіть","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Root Understanding","data":{"type":"quiz","questions":[{"question":"Which root means \"to see\"?","options":["бач-","слух-","говор-","дум-"],"correctIndex":0,"explanation":""},{"question":"\"Побачення\" combines:","options":["по- + бач- + -ення","по- + бачи- + -ня","поба- + чення","побач- + ення"],"correctIndex":0,"explanation":""},{"question":"\"Почуття\" comes from which root?","options":["чу- (hear/feel)","поч- (start)","чут- (sensitive)","тя- (pull)"],"correctIndex":0,"explanation":""},{"question":"\"Мовчання\" is related to:","options":["Not speaking (silence)","Speaking loudly","Language learning","Writing"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"re-/again\" in \"передумати\"?","options":["пере-","пре-","при-","про-"],"correctIndex":0,"explanation":""},{"question":"\"Глядач\" is someone who:","options":["Watches/views","Listens","Reads","Thinks"],"correctIndex":0,"explanation":""},{"question":"\"Співчуття\" means:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"\"Вигляд\" comes from:","options":["ви- + гляд (appearance)","виг- + ляд (look out)","в- + игляд (into look)","вигля- + д (view)"],"correctIndex":0,"explanation":""},{"question":"Which root relates to thinking?","options":["дум-","бач-","слух-","мов-"],"correctIndex":0,"explanation":""},{"question":"\"Очевидний\" literally means:","options":["Eye-visible (obvious)","Eyes closed","Eye-catching","Eye color"],"correctIndex":0,"explanation":""},{"question":"\"Розмова\" uses which root?","options":["мов- (language/speech)","роз- (distribute)","мо- (my)","ва- (you)"],"correctIndex":0,"explanation":""},{"question":"The opposite of \"говорити\" is:","options":["мовчати","слухати","бачити","думати"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Root Recognition","data":{"type":"fill-blank","items":[{"prompt":"Корінь «бач-» означає ___. (to see)","answer":"бачити"},{"prompt":"«Побачення» — це коли люди ___. (meet/see each other)","answer":"зустрічаються/бачаться"},{"prompt":"Корінь «слух-» означає ___. (to hear/listen)","answer":"слухати"},{"prompt":"«Почуття» — це те, що ми ___. (feel)","answer":"відчуваємо"},{"prompt":"«Мова» — це те, чим ми ___. (speak)","answer":"говоримо"},{"prompt":"«Мовчання» — це коли не ___. (speak)","answer":"говорять"},{"prompt":"«Думка» — це те, що ми ___. (think)","answer":"думаємо"},{"prompt":"«Передбачення» — це коли ___ наперед. (see)","answer":"бачать"},{"prompt":"«Глядач» — це людина, яка ___. (watches)","answer":"дивиться"},{"prompt":"«Розмова» — це коли люди ___. (talk)","answer":"говорять/розмовляють"},{"prompt":"«Співчуття» — це коли ___ разом. (feel)","answer":"відчуваєш"},{"prompt":"«Придумати» — це ___ щось нове. (think up)","answer":"вигадати"}]}},{"id":"activity-1","type":"match-up","title":"Roots and Meanings","data":{"type":"match-up","pairs":[{"left":"бач-","right":"to see"},{"left":"гляд-","right":"to look"},{"left":"слух-","right":"to hear/listen"},{"left":"чу-","right":"to hear/feel"},{"left":"говор-","right":"to speak"},{"left":"мов-","right":"language/speech"},{"left":"дум-","right":"to think"},{"left":"вид-","right":"visible"},{"left":"мовч-","right":"silent"},{"left":"роз-","right":"apart/conversation"},{"left":"по-","right":"completion/result"},{"left":"перед-","right":"before/ahead"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["тебе","Рада","побачити","знову","після","такого","довгого","часу"],"answer":"Рада побачити тебе знову після такого довгого часу.","translation":"Nice to see you again after such a long time."},{"words":["побачення","У","нас","завтра","о","восьмій","годині","ввечері"],"answer":"У нас побачення завтра о восьмій годині ввечері.","translation":"We have a date tomorrow at eight o'clock in the evening."},{"words":["уважно","Слухай","бо","це","дуже","важлива","інформація","для"],"answer":"Слухай уважно, бо це дуже важлива інформація для тебе.","translation":"Listen carefully because this is very important information for you."},{"words":["почуття","Яке","прекрасне","коли","ти","поруч","зі","мною"],"answer":"Яке прекрасне почуття, коли ти поруч зі мною.","translation":"What a wonderful feeling when you are next to me."},{"words":["говорить","Він","українською","мовою","дуже","добре","і","вільно"],"answer":"Він говорить українською мовою дуже добре і вільно.","translation":"He speaks Ukrainian language very well and fluently."},{"words":["Мовчання","золото","а","слово","срібло","каже","народна","мудрість"],"answer":"Мовчання — золото, а слово — срібло, каже народна мудрість.","translation":"Silence is gold and word is silver, says folk wisdom."},{"words":["думаю","Я","що","це","правильне","рішення","для","всіх"],"answer":"Я думаю, що це правильне рішення для всіх.","translation":"I think that this is the right decision for everyone."},{"words":["Подумай","добре","перед","тим","як","давати","свою","відповідь"],"answer":"Подумай добре перед тим, як давати свою відповідь.","translation":"Think well before giving your answer."},{"words":["глядачі","Усі","аплодували","коли","співак","закінчив","свою","пісню"],"answer":"Усі глядачі аплодували, коли співак закінчив свою пісню.","translation":"All viewers applauded when the singer finished his song."},{"words":["вигляд","У","тебе","чудовий","сьогодні","ти","виглядаєш","прекрасно"],"answer":"У тебе чудовий вигляд сьогодні, ти виглядаєш прекрасно.","translation":"You look wonderful today, you look beautiful."},{"words":["розмова","Цікава","була","з","тобою","дякую","за","час"],"answer":"Цікава розмова була з тобою, дякую за час.","translation":"It was an interesting conversation with you, thanks for the time."},{"words":["передумав","Я","і","вирішив","залишитися","тут","на","довше"],"answer":"Я передумав і вирішив залишитися тут на довше.","translation":"I changed my mind and decided to stay here longer."}]}},{"id":"activity-3","type":"quiz","title":"Root Family Knowledge","data":{"type":"quiz","questions":[{"question":"«Бач-» root means:","options":["To see","To be","To buy","To beat"],"correctIndex":0,"explanation":""},{"question":"«Побачення» is:","options":["A date/meeting","A viewpoint","A prediction","A vision"],"correctIndex":0,"explanation":""},{"question":"«Слухач» is:","options":["A listener","A speaker","A writer","A reader"],"correctIndex":0,"explanation":""},{"question":"«Почуття» comes from:","options":["чу- (hear/feel)","пач- (pack)","поч- (start)","пуч- (bunch)"],"correctIndex":0,"explanation":""},{"question":"«Мовчання» is the opposite of:","options":["Розмова","Мова","Мовлення","Словник"],"correctIndex":0,"explanation":""},{"question":"«Думка» means:","options":["Thought, opinion","Drum","House","Tree"],"correctIndex":0,"explanation":""},{"question":"«Передумати» means:","options":["To change one's mind","To think ahead","To think first","To stop thinking"],"correctIndex":0,"explanation":""},{"question":"«Глядач» is formed from:","options":["гляд- (look) root","гля- (clay) root","глад- (smooth) root","глас- (voice) root"],"correctIndex":0,"explanation":""},{"question":"«Очевидний» literally means:","options":["Eye-visible (obvious)","Eyes-only","Eye-catching","Eye-opening"],"correctIndex":0,"explanation":""},{"question":"«Розмова» uses prefix:","options":["роз- (apart/together)","роз- (grow)","рос- (Russian)","рох- (move)"],"correctIndex":0,"explanation":""},{"question":"«Співчуття» is:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"«Вигляд» is:","options":["Appearance","Exit","Entrance","Overview"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Root Facts","data":{"type":"true-false","statements":[{"statement":"«Бач-» and «вид-» both relate to seeing.","isTrue":true,"explanation":""},{"statement":"«Побачення» only means \"vision.\"","isTrue":false,"explanation":""},{"statement":"«Слух» can mean both hearing and rumor.","isTrue":true,"explanation":""},{"statement":"«Почуття» is an action verb.","isTrue":false,"explanation":""},{"statement":"«Мова» and «мовчання» use the same root.","isTrue":true,"explanation":""},{"statement":"«Мовчати» means to speak loudly.","isTrue":false,"explanation":""},{"statement":"«Думка» is related to «думати».","isTrue":true,"explanation":""},{"statement":"«Передумати» means to think first.","isTrue":false,"explanation":""},{"statement":"«Глядач» watches something.","isTrue":true,"explanation":""},{"statement":"«Співчуття» means feeling alone.","isTrue":false,"explanation":""},{"statement":"«Огляд» is a review or overview.","isTrue":true,"explanation":""},{"statement":"«Придумати» means to invent/imagine.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Root Families","data":{"type":"group-sort","groups":[{"id":"--","name":"БАЧ-/ГЛЯД-","items":["побачення","погляд","глядач"],"nameUk":"See"},{"id":"--","name":"СЛУХ-/ЧУ-","items":["слухач","почуття","відчуття"],"nameUk":"Hear"},{"id":"--","name":"ГОВОР-/МОВ-","items":["розмова","мовчання","мова"],"nameUk":"Speak"},{"id":"-","name":"ДУМ-","items":["думка","роздуми","придумати"],"nameUk":"Think"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Root Words","data":{"type":"fill-blank","items":[{"prompt":"Рада тебе ___! (to see - pf)","answer":"побачити"},{"prompt":"У нас ___ завтра ввечері. (date/meeting)","answer":"побачення"},{"prompt":"___ уважно, це важливо! (Listen)","answer":"Слухай"},{"prompt":"Яке прекрасне ___! (feeling)","answer":"почуття"},{"prompt":"Він добре ___ українською. (speaks)","answer":"говорить"},{"prompt":"Чому ти ___? Скажи щось! (are silent)","answer":"мовчиш"},{"prompt":"Я ___, що це правда. (think)","answer":"думаю"},{"prompt":"Твій ___ на це питання цікавий. (view/opinion)","answer":"погляд"},{"prompt":"Це було моє ___. (prediction)","answer":"передбачення"},{"prompt":"___ аплодували після концерту. (Viewers)","answer":"Глядачі"},{"prompt":"Цікава ___ з тобою! (conversation)","answer":"розмова"},{"prompt":"Вона ___ цікаву гру. (invented)","answer":"придумала"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Word","data":{"type":"select","items":[{"question":"Рада тебе ___ знову!","options":[{"text":"побачити","correct":true},{"text":"побачення","correct":false},{"text":"бачення","correct":false},{"text":"видіння","correct":false}]},{"question":"___ уважно, це важливо.","options":[{"text":"Слухай","correct":true},{"text":"Слухач","correct":false},{"text":"Слух","correct":false},{"text":"Слухання","correct":false}]},{"question":"Яке прекрасне ___ любові!","options":[{"text":"почуття","correct":true},{"text":"чути","correct":false},{"text":"відчуття","correct":false},{"text":"співчуття","correct":false}]},{"question":"Він добре ___ кількома мовами.","options":[{"text":"говорить","correct":true},{"text":"мовчить","correct":false},{"text":"мовить","correct":false},{"text":"розмовляння","correct":false}]},{"question":"___ — золото.","options":[{"text":"Мовчання","correct":true},{"text":"Мова","correct":false},{"text":"Мовлення","correct":false},{"text":"Розмова","correct":false}]},{"question":"Я ___, що ти правий.","options":[{"text":"думаю","correct":true},{"text":"думка","correct":false},{"text":"роздуми","correct":false},{"text":"задумав","correct":false}]},{"question":"У неї гарний ___.","options":[{"text":"вигляд","correct":true},{"text":"погляд","correct":false},{"text":"огляд","correct":false},{"text":"догляд","correct":false}]},{"question":"___ фільму були задоволені.","options":[{"text":"Глядачі","correct":true},{"text":"Слухачі","correct":false},{"text":"Читачі","correct":false},{"text":"Письменники","correct":false}]},{"question":"Це цікава ___ з тобою.","options":[{"text":"розмова","correct":true},{"text":"мовчання","correct":false},{"text":"мова","correct":false},{"text":"мовець","correct":false}]},{"question":"Я ___! Тепер хочу поїхати.","options":[{"text":"передумав","correct":true},{"text":"подумав","correct":false},{"text":"задумав","correct":false},{"text":"надумав","correct":false}]},{"question":"Моє ___ тим, хто втратив близьких.","options":[{"text":"співчуття","correct":true},{"text":"почуття","correct":false},{"text":"відчуття","correct":false},{"text":"чуття","correct":false}]},{"question":"Це ___! Не треба пояснювати.","options":[{"text":"очевидно","correct":true},{"text":"видно","correct":false},{"text":"бачите","correct":false},{"text":"глядіть","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Root Family Sentences II","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["у","|","них","|","було","|","романтичне","|","побачення"],"answer":"У них було романтичне побачення.","translation":"They had a romantic date."},{"words":["мої","|","почуття","|","до","|","тебе","|","сильні"],"answer":"Мої почуття до тебе сильні.","translation":"My feelings for you are strong."},{"words":["розмова","|","з","|","другом","|","була","|","цікавою"],"answer":"Розмова з другом була цікавою.","translation":"The conversation with a friend was interesting."},{"words":["я","|","передумав","|","іти","|","на","|","вечірку"],"answer":"Я передумав іти на вечірку.","translation":"I changed my mind about going to the party."},{"words":["співчуття","|","родині","|","у","|","важкий","|","час"],"answer":"Співчуття родині у важкий час.","translation":"Sympathy to the family in difficult times."},{"words":["вона","|","відчула","|","радість","|","від","|","новини"],"answer":"Вона відчула радість від новини.","translation":"She felt joy from the news."},{"words":["очевидно","|","що","|","він","|","правий"],"answer":"Очевидно, що він правий.","translation":"It's obvious that he is right."},{"words":["їхня","|","думка","|","важлива","|","для","|","мене"],"answer":"Їхня думка важлива для мене.","translation":"Their opinion is important to me."},{"words":["він","|","побачив","|","красивий","|","захід","|","сонця"],"answer":"Він побачив красивий захід сонця.","translation":"He saw a beautiful sunset."},{"words":["мовчання","|","було","|","відповіддю"],"answer":"Мовчання було відповіддю.","translation":"Silence was the answer."},{"words":["вона","|","передумала","|","і","|","залишилась"],"answer":"Вона передумала і залишилась.","translation":"She changed her mind and stayed."},{"words":["це","|","очевидне","|","рішення","|","проблеми"],"answer":"Це очевидне рішення проблеми.","translation":"This is an obvious solution to the problem."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Root Understanding","data":{"type":"quiz","questions":[{"question":"Which root means \"to see\"?","options":["бач-","слух-","говор-","дум-"],"correctIndex":0,"explanation":""},{"question":"\"Побачення\" combines:","options":["по- + бач- + -ення","по- + бачи- + -ня","поба- + чення","побач- + ення"],"correctIndex":0,"explanation":""},{"question":"\"Почуття\" comes from which root?","options":["чу- (hear/feel)","поч- (start)","чут- (sensitive)","тя- (pull)"],"correctIndex":0,"explanation":""},{"question":"\"Мовчання\" is related to:","options":["Not speaking (silence)","Speaking loudly","Language learning","Writing"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"re-/again\" in \"передумати\"?","options":["пере-","пре-","при-","про-"],"correctIndex":0,"explanation":""},{"question":"\"Глядач\" is someone who:","options":["Watches/views","Listens","Reads","Thinks"],"correctIndex":0,"explanation":""},{"question":"\"Співчуття\" means:","options":["Sympathy (feeling together)","Singing together","Living together","Working together"],"correctIndex":0,"explanation":""},{"question":"\"Вигляд\" comes from:","options":["ви- + гляд (appearance)","виг- + ляд (look out)","в- + игляд (into look)","вигля- + д (view)"],"correctIndex":0,"explanation":""},{"question":"Which root relates to thinking?","options":["дум-","бач-","слух-","мов-"],"correctIndex":0,"explanation":""},{"question":"\"Очевидний\" literally means:","options":["Eye-visible (obvious)","Eyes closed","Eye-catching","Eye color"],"correctIndex":0,"explanation":""},{"question":"\"Розмова\" uses which root?","options":["мов- (language/speech)","роз- (distribute)","мо- (my)","ва- (you)"],"correctIndex":0,"explanation":""},{"question":"The opposite of \"говорити\" is:","options":["мовчати","слухати","бачити","думати"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"бачити","translit":"","en":"to see","note":""},{"uk":"бачення","translit":"","en":"vision","note":""},{"uk":"побачення","translit":"","en":"date, meeting","note":""},{"uk":"передбачення","translit":"","en":"prediction","note":""},{"uk":"погляд","translit":"","en":"look, view","note":""},{"uk":"вигляд","translit":"","en":"appearance","note":""},{"uk":"огляд","translit":"","en":"review","note":""},{"uk":"глядач","translit":"","en":"viewer","note":""},{"uk":"слухати","translit":"","en":"to listen","note":""},{"uk":"слух","translit":"","en":"hearing, rumor","note":""},{"uk":"слухач","translit":"","en":"listener","note":""},{"uk":"чути","translit":"","en":"to hear","note":""},{"uk":"почуття","translit":"","en":"feeling","note":""},{"uk":"відчуття","translit":"","en":"sensation","note":""},{"uk":"співчуття","translit":"","en":"sympathy","note":""},{"uk":"говорити","translit":"","en":"to speak","note":""},{"uk":"розмова","translit":"","en":"conversation","note":""},{"uk":"мова","translit":"","en":"language","note":""},{"uk":"мовлення","translit":"","en":"speech","note":""},{"uk":"мовчати","translit":"","en":"to be silent","note":""},{"uk":"мовчання","translit":"","en":"silence","note":""},{"uk":"думати","translit":"","en":"to think","note":""},{"uk":"думка","translit":"","en":"thought, opinion","note":""},{"uk":"подумати","translit":"","en":"to think (pf)","note":""},{"uk":"обдумати","translit":"","en":"to consider","note":""},{"uk":"роздуми","translit":"","en":"reflections","note":""},{"uk":"придумати","translit":"","en":"to invent","note":""},{"uk":"передумати","translit":"","en":"to change mind","note":""},{"uk":"очевидний","translit":"","en":"obvious","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2503,6 +2551,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

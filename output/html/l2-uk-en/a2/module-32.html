@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1105,11 +1146,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Advanced Understanding</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Prefixed Action Verb Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Advanced Understanding</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1136,7 +1184,7 @@ footer {
   </main><footer>Module 32 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Add the Prefix","data":{"type":"fill-blank","items":[{"prompt":"Він ___писав листа. (wrote - completed)","answer":"на"},{"prompt":"___пиши це чистіше. (rewrite)","answer":"Пере"},{"prompt":"Я ___читав до кінця. (finished reading)","answer":"до"},{"prompt":"___крий вікно! (open)","answer":"Від"},{"prompt":"___крий двері! (close)","answer":"За"},{"prompt":"Він ___дав книги всім. (distributed)","answer":"роз"},{"prompt":"Я ___писав адресу. (wrote down)","answer":"за"},{"prompt":"___пишіть тут. (sign)","answer":"Під"},{"prompt":"Вона ___вчила українську. (learned)","answer":"ви"},{"prompt":"___робіть роботу. (redo)","answer":"Пере"},{"prompt":"___дай йому привіт! (pass)","answer":"Пере"},{"prompt":"___їж суп! (finish eating)","answer":"До"}]}},{"id":"activity-1","type":"match-up","title":"Prefix Meanings","data":{"type":"match-up","pairs":[{"left":"на-","right":"result, completion"},{"left":"по-","right":"begin, brief action"},{"left":"роз-","right":"distribute, apart"},{"left":"від-","right":"separation, opening"},{"left":"за-","right":"closure, writing down"},{"left":"пере-","right":"redo, across"},{"left":"до-","right":"completion"},{"left":"ви-","right":"out, extraction"},{"left":"під-","right":"support, addition"},{"left":"написати","right":"to write (complete)"},{"left":"відкрити","right":"to open"},{"left":"закрити","right":"to close"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["листа","написав","Він","довгого","другу","до","Канади","сьогодні"],"answer":"Він написав довгого листа другу до Канади сьогодні.","translation":"He wrote a long letter to his friend in Canada today."},{"words":["це","Перепиши","чистіше","та","без","жодних","помилок","тут"],"answer":"Перепиши це чистіше та без жодних помилок тут.","translation":"Rewrite this more neatly and without any mistakes here."},{"words":["вікно","Відкрий","будь ласка","бо","дуже","спекотно","в","кімнаті"],"answer":"Відкрий вікно, будь ласка, бо дуже спекотно в кімнаті.","translation":"Open the window please because it's very hot in the room."},{"words":["двері","Закрий","коли","виходиш","з","дому","щодня","ранком"],"answer":"Закрий двері, коли виходиш з дому щодня ранком.","translation":"Close the door when you leave the house every morning."},{"words":["адресу","записав","Я","яку","вона","мені","дала","вчора"],"answer":"Я записав адресу, яку вона мені дала вчора.","translation":"I wrote down the address that she gave me yesterday."},{"words":["тут","Підпишіть","документ","щоб","ми","могли","продовжити","далі"],"answer":"Підпишіть документ тут, щоб ми могли продовжити далі.","translation":"Sign the document here so that we can continue further."},{"words":["українську","вивчила","Вона","за","два","роки","дуже","добре"],"answer":"Вона вивчила українську за два роки дуже добре.","translation":"She learned Ukrainian in two years very well."},{"words":["роботу","Переробіть","цю","бо","вона","має","багато","помилок"],"answer":"Переробіть цю роботу, бо вона має багато помилок.","translation":"Redo this work because it has many mistakes."},{"words":["привіт","Передай","йому","від","мене","коли","його","побачиш"],"answer":"Передай йому привіт від мене, коли його побачиш.","translation":"Pass him my greetings when you see him."},{"words":["суп","Доїж","будь ласка","бо","він","смачний","і","корисний"],"answer":"Доїж суп, будь ласка, бо він смачний і корисний.","translation":"Finish your soup please because it's tasty and healthy."},{"words":["книги","роздав","всім","Він","студентам","на","першому","занятті"],"answer":"Він роздав книги всім студентам на першому занятті.","translation":"He distributed books to all students at the first class."},{"words":["до","кінця","дочитав","Я","цю","книгу","минулого","тижня"],"answer":"Я дочитав цю книгу до кінця минулого тижня.","translation":"I finished reading this book last week."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Knowledge","data":{"type":"quiz","questions":[{"question":"\"На-\" typically creates:","options":["Perfective aspect","Imperfective aspect","Negation","Questions"],"correctIndex":0,"explanation":""},{"question":"\"Переписати\" means:","options":["To rewrite","To sign","To write","To read"],"correctIndex":0,"explanation":""},{"question":"\"До-\" expresses:","options":["Completion","Beginning","Negation","Distribution"],"correctIndex":0,"explanation":""},{"question":"\"Відкрити\" means:","options":["To open","To close","To write","To read"],"correctIndex":0,"explanation":""},{"question":"\"За-\" can mean:","options":["Closure or writing down","Opening","Destruction","Completion"],"correctIndex":0,"explanation":""},{"question":"\"Роздати\" means:","options":["To distribute","To collect","To close","To open"],"correctIndex":0,"explanation":""},{"question":"\"Підписати\" means:","options":["To sign","To write","To read","To close"],"correctIndex":0,"explanation":""},{"question":"\"По-\" often suggests:","options":["Brief action","Completion","Destruction","Opening"],"correctIndex":0,"explanation":""},{"question":"\"Вивчити\" means:","options":["To learn (thoroughly)","To forget","To teach","To open"],"correctIndex":0,"explanation":""},{"question":"\"Пере-\" can mean:","options":["Redo or across","Never","Always","Under"],"correctIndex":0,"explanation":""},{"question":"Prefixes usually make verbs:","options":["Perfective","Imperfective","Neither","Both"],"correctIndex":0,"explanation":""},{"question":"\"Дописати\" means:","options":["To finish writing","To start writing","To rewrite","To sign"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Prefix Facts","data":{"type":"true-false","statements":[{"statement":"\"На-\" often creates perfective verbs.","isTrue":true,"explanation":""},{"statement":"\"По-\" suggests long, extensive action.","isTrue":false,"explanation":""},{"statement":"\"Від-\" means \"close.\"","isTrue":false,"explanation":""},{"statement":"\"За-\" can mean \"close.\"","isTrue":true,"explanation":""},{"statement":"\"Пере-\" means \"do again.\"","isTrue":true,"explanation":""},{"statement":"\"До-\" indicates incomplete action.","isTrue":false,"explanation":""},{"statement":"\"Роз-\" means \"gather.\"","isTrue":false,"explanation":""},{"statement":"Adding prefix changes verb meaning.","isTrue":true,"explanation":""},{"statement":"\"Підписати\" = to sign.","isTrue":true,"explanation":""},{"statement":"\"Вивчити\" = to forget.","isTrue":false,"explanation":""},{"statement":"Prefixes work only with писати.","isTrue":false,"explanation":""},{"statement":"\"Передати\" = to pass/transmit.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Prefix Functions","data":{"type":"group-sort","groups":[{"id":"completionresult","name":"Completion/Result","items":["на-","до-","написати","вивчити"]},{"id":"redochange","name":"Redo/Change","items":["пере-","переписати","переробити"]},{"id":"openclose","name":"Open/Close","items":["від-","відкрити","закрити"]},{"id":"distribution","name":"Distribution","items":["роз-","роздати"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Correct Verb","data":{"type":"fill-blank","items":[{"prompt":"Я ___ книгу вчора ввечері. (finished reading)","answer":"дочитав"},{"prompt":"Вона ___ двері, коли пішла. (closed)","answer":"закрила"},{"prompt":"Він ___ документи на столі. (signed)","answer":"підписав"},{"prompt":"Ми ___ українську мову за рік. (learned)","answer":"вивчили"},{"prompt":"___ вікно, тут спекотно. (open)","answer":"Відкрий"},{"prompt":"Вчитель ___ зошити всім учням. (distributed)","answer":"роздав"},{"prompt":"Я ___ номер телефону в блокнот. (wrote down)","answer":"записав"},{"prompt":"Треба ___ це завдання. (redo)","answer":"переробити"},{"prompt":"Він ___ історію про своє життя. (told)","answer":"розказав"},{"prompt":"___ йому цей подарунок від мене. (pass)","answer":"Передай"},{"prompt":"Лікар ___ ліки пацієнту. (prescribed)","answer":"виписав"},{"prompt":"Вона ___ сніданок о восьмій. (finished eating)","answer":"доїла"}]}},{"id":"activity-7","type":"select","title":"Choose the Right Prefix","data":{"type":"select","items":[{"question":"Він ___писав листа другу.","options":[{"text":"на","correct":true},{"text":"пере","correct":false},{"text":"роз","correct":false},{"text":"під","correct":false}]},{"question":"___крий двері, будь ласка.","options":[{"text":"Від","correct":false},{"text":"За","correct":true},{"text":"Роз","correct":false},{"text":"На","correct":false}]},{"question":"Я ___читав книгу до кінця.","options":[{"text":"до","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"від","correct":false}]},{"question":"___пишіть документ тут.","options":[{"text":"На","correct":false},{"text":"Під","correct":true},{"text":"Пере","correct":false},{"text":"До","correct":false}]},{"question":"Треба ___робити цю роботу.","options":[{"text":"пере","correct":true},{"text":"на","correct":false},{"text":"до","correct":false},{"text":"під","correct":false}]},{"question":"Він ___дав книги всім.","options":[{"text":"роз","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"до","correct":false}]},{"question":"Вона ___вчила українську мову.","options":[{"text":"ви","correct":true},{"text":"на","correct":false},{"text":"до","correct":false},{"text":"роз","correct":false}]},{"question":"___крий вікно, спекотно!","options":[{"text":"Від","correct":true},{"text":"За","correct":false},{"text":"На","correct":false},{"text":"Пере","correct":false}]},{"question":"Я ___писав адресу в блокнот.","options":[{"text":"за","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"під","correct":false}]},{"question":"___дай йому привіт від мене.","options":[{"text":"Пере","correct":true},{"text":"Роз","correct":false},{"text":"На","correct":false},{"text":"До","correct":false}]},{"question":"___їж суп, він смачний.","options":[{"text":"До","correct":true},{"text":"На","correct":false},{"text":"Пере","correct":false},{"text":"Ви","correct":false}]},{"question":"Вона ___малювала гарну картину.","options":[{"text":"на","correct":true},{"text":"пере","correct":false},{"text":"до","correct":false},{"text":"роз","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which prefix makes \"писати\" perfective?","options":["на-","без-","не-","анти-"],"correctIndex":0,"explanation":""},{"question":"\"Переписати\" means:","options":["To rewrite","To sign","To finish writing","To open"],"correctIndex":0,"explanation":""},{"question":"What is the opposite of \"відкрити\"?","options":["закрити","переписати","роздати","дочитати"],"correctIndex":0,"explanation":""},{"question":"\"Дочитати книгу\" means:","options":["To finish reading the book","To start reading the book","To reread the book","To write the book"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"to distribute\"?","options":["роз-","на-","до-","під-"],"correctIndex":0,"explanation":""},{"question":"\"Підписати документ\" means:","options":["To sign a document","To read a document","To close a document","To distribute a document"],"correctIndex":0,"explanation":""},{"question":"What does \"по-\" suggest in \"почитати\"?","options":["Brief action","Complete action","Repeated action","Negative action"],"correctIndex":0,"explanation":""},{"question":"\"Виписати ліки\" means:","options":["To prescribe medicine","To buy medicine","To take medicine","To return medicine"],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to tell a story\"?","options":["розказати","записати","підписати","дописати"],"correctIndex":0,"explanation":""},{"question":"\"Передати привіт\" means:","options":["To pass on greetings","To write greetings","To sign greetings","To distribute greetings"],"correctIndex":0,"explanation":""},{"question":"Adding prefixes usually makes verbs:","options":["Perfective","Imperfective","Past tense","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Доробити завдання\" means:","options":["To finish doing the task","To start doing the task","To redo the task","To cancel the task"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Add the Prefix","data":{"type":"fill-blank","items":[{"prompt":"Він ___писав листа. (wrote - completed)","answer":"на"},{"prompt":"___пиши це чистіше. (rewrite)","answer":"Пере"},{"prompt":"Я ___читав до кінця. (finished reading)","answer":"до"},{"prompt":"___крий вікно! (open)","answer":"Від"},{"prompt":"___крий двері! (close)","answer":"За"},{"prompt":"Він ___дав книги всім. (distributed)","answer":"роз"},{"prompt":"Я ___писав адресу. (wrote down)","answer":"за"},{"prompt":"___пишіть тут. (sign)","answer":"Під"},{"prompt":"Вона ___вчила українську. (learned)","answer":"ви"},{"prompt":"___робіть роботу. (redo)","answer":"Пере"},{"prompt":"___дай йому привіт! (pass)","answer":"Пере"},{"prompt":"___їж суп! (finish eating)","answer":"До"}]}},{"id":"activity-1","type":"match-up","title":"Prefix Meanings","data":{"type":"match-up","pairs":[{"left":"на-","right":"result, completion"},{"left":"по-","right":"begin, brief action"},{"left":"роз-","right":"distribute, apart"},{"left":"від-","right":"separation, opening"},{"left":"за-","right":"closure, writing down"},{"left":"пере-","right":"redo, across"},{"left":"до-","right":"completion"},{"left":"ви-","right":"out, extraction"},{"left":"під-","right":"support, addition"},{"left":"написати","right":"to write (complete)"},{"left":"відкрити","right":"to open"},{"left":"закрити","right":"to close"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Sentence Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["листа","написав","Він","довгого","другу","до","Канади","сьогодні"],"answer":"Він написав довгого листа другу до Канади сьогодні.","translation":"He wrote a long letter to his friend in Canada today."},{"words":["це","Перепиши","чистіше","та","без","жодних","помилок","тут"],"answer":"Перепиши це чистіше та без жодних помилок тут.","translation":"Rewrite this more neatly and without any mistakes here."},{"words":["вікно","Відкрий","будь ласка","бо","дуже","спекотно","в","кімнаті"],"answer":"Відкрий вікно, будь ласка, бо дуже спекотно в кімнаті.","translation":"Open the window please because it's very hot in the room."},{"words":["двері","Закрий","коли","виходиш","з","дому","щодня","ранком"],"answer":"Закрий двері, коли виходиш з дому щодня ранком.","translation":"Close the door when you leave the house every morning."},{"words":["адресу","записав","Я","яку","вона","мені","дала","вчора"],"answer":"Я записав адресу, яку вона мені дала вчора.","translation":"I wrote down the address that she gave me yesterday."},{"words":["тут","Підпишіть","документ","щоб","ми","могли","продовжити","далі"],"answer":"Підпишіть документ тут, щоб ми могли продовжити далі.","translation":"Sign the document here so that we can continue further."},{"words":["українську","вивчила","Вона","за","два","роки","дуже","добре"],"answer":"Вона вивчила українську за два роки дуже добре.","translation":"She learned Ukrainian in two years very well."},{"words":["роботу","Переробіть","цю","бо","вона","має","багато","помилок"],"answer":"Переробіть цю роботу, бо вона має багато помилок.","translation":"Redo this work because it has many mistakes."},{"words":["привіт","Передай","йому","від","мене","коли","його","побачиш"],"answer":"Передай йому привіт від мене, коли його побачиш.","translation":"Pass him my greetings when you see him."},{"words":["суп","Доїж","будь ласка","бо","він","смачний","і","корисний"],"answer":"Доїж суп, будь ласка, бо він смачний і корисний.","translation":"Finish your soup please because it's tasty and healthy."},{"words":["книги","роздав","всім","Він","студентам","на","першому","занятті"],"answer":"Він роздав книги всім студентам на першому занятті.","translation":"He distributed books to all students at the first class."},{"words":["до","кінця","дочитав","Я","цю","книгу","минулого","тижня"],"answer":"Я дочитав цю книгу до кінця минулого тижня.","translation":"I finished reading this book last week."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Knowledge","data":{"type":"quiz","questions":[{"question":"\"На-\" typically creates:","options":["Perfective aspect","Imperfective aspect","Negation","Questions"],"correctIndex":0,"explanation":""},{"question":"\"Переписати\" means:","options":["To rewrite","To sign","To write","To read"],"correctIndex":0,"explanation":""},{"question":"\"До-\" expresses:","options":["Completion","Beginning","Negation","Distribution"],"correctIndex":0,"explanation":""},{"question":"\"Відкрити\" means:","options":["To open","To close","To write","To read"],"correctIndex":0,"explanation":""},{"question":"\"За-\" can mean:","options":["Closure or writing down","Opening","Destruction","Completion"],"correctIndex":0,"explanation":""},{"question":"\"Роздати\" means:","options":["To distribute","To collect","To close","To open"],"correctIndex":0,"explanation":""},{"question":"\"Підписати\" means:","options":["To sign","To write","To read","To close"],"correctIndex":0,"explanation":""},{"question":"\"По-\" often suggests:","options":["Brief action","Completion","Destruction","Opening"],"correctIndex":0,"explanation":""},{"question":"\"Вивчити\" means:","options":["To learn (thoroughly)","To forget","To teach","To open"],"correctIndex":0,"explanation":""},{"question":"\"Пере-\" can mean:","options":["Redo or across","Never","Always","Under"],"correctIndex":0,"explanation":""},{"question":"Prefixes usually make verbs:","options":["Perfective","Imperfective","Neither","Both"],"correctIndex":0,"explanation":""},{"question":"\"Дописати\" means:","options":["To finish writing","To start writing","To rewrite","To sign"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Prefix Facts","data":{"type":"true-false","statements":[{"statement":"\"На-\" often creates perfective verbs.","isTrue":true,"explanation":""},{"statement":"\"По-\" suggests long, extensive action.","isTrue":false,"explanation":""},{"statement":"\"Від-\" means \"close.\"","isTrue":false,"explanation":""},{"statement":"\"За-\" can mean \"close.\"","isTrue":true,"explanation":""},{"statement":"\"Пере-\" means \"do again.\"","isTrue":true,"explanation":""},{"statement":"\"До-\" indicates incomplete action.","isTrue":false,"explanation":""},{"statement":"\"Роз-\" means \"gather.\"","isTrue":false,"explanation":""},{"statement":"Adding prefix changes verb meaning.","isTrue":true,"explanation":""},{"statement":"\"Підписати\" = to sign.","isTrue":true,"explanation":""},{"statement":"\"Вивчити\" = to forget.","isTrue":false,"explanation":""},{"statement":"Prefixes work only with писати.","isTrue":false,"explanation":""},{"statement":"\"Передати\" = to pass/transmit.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Prefix Functions","data":{"type":"group-sort","groups":[{"id":"completionresult","name":"Completion/Result","items":["на-","до-","написати","вивчити"]},{"id":"redochange","name":"Redo/Change","items":["пере-","переписати","переробити"]},{"id":"openclose","name":"Open/Close","items":["від-","відкрити","закрити"]},{"id":"distribution","name":"Distribution","items":["роз-","роздати"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Complete with Correct Verb","data":{"type":"fill-blank","items":[{"prompt":"Я ___ книгу вчора ввечері. (finished reading)","answer":"дочитав"},{"prompt":"Вона ___ двері, коли пішла. (closed)","answer":"закрила"},{"prompt":"Він ___ документи на столі. (signed)","answer":"підписав"},{"prompt":"Ми ___ українську мову за рік. (learned)","answer":"вивчили"},{"prompt":"___ вікно, тут спекотно. (open)","answer":"Відкрий"},{"prompt":"Вчитель ___ зошити всім учням. (distributed)","answer":"роздав"},{"prompt":"Я ___ номер телефону в блокнот. (wrote down)","answer":"записав"},{"prompt":"Треба ___ це завдання. (redo)","answer":"переробити"},{"prompt":"Він ___ історію про своє життя. (told)","answer":"розказав"},{"prompt":"___ йому цей подарунок від мене. (pass)","answer":"Передай"},{"prompt":"Лікар ___ ліки пацієнту. (prescribed)","answer":"виписав"},{"prompt":"Вона ___ сніданок о восьмій. (finished eating)","answer":"доїла"}]}},{"id":"activity-7","type":"select","title":"Choose the Right Prefix","data":{"type":"select","items":[{"question":"Він ___писав листа другу.","options":[{"text":"на","correct":true},{"text":"пере","correct":false},{"text":"роз","correct":false},{"text":"під","correct":false}]},{"question":"___крий двері, будь ласка.","options":[{"text":"Від","correct":false},{"text":"За","correct":true},{"text":"Роз","correct":false},{"text":"На","correct":false}]},{"question":"Я ___читав книгу до кінця.","options":[{"text":"до","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"від","correct":false}]},{"question":"___пишіть документ тут.","options":[{"text":"На","correct":false},{"text":"Під","correct":true},{"text":"Пере","correct":false},{"text":"До","correct":false}]},{"question":"Треба ___робити цю роботу.","options":[{"text":"пере","correct":true},{"text":"на","correct":false},{"text":"до","correct":false},{"text":"під","correct":false}]},{"question":"Він ___дав книги всім.","options":[{"text":"роз","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"до","correct":false}]},{"question":"Вона ___вчила українську мову.","options":[{"text":"ви","correct":true},{"text":"на","correct":false},{"text":"до","correct":false},{"text":"роз","correct":false}]},{"question":"___крий вікно, спекотно!","options":[{"text":"Від","correct":true},{"text":"За","correct":false},{"text":"На","correct":false},{"text":"Пере","correct":false}]},{"question":"Я ___писав адресу в блокнот.","options":[{"text":"за","correct":true},{"text":"на","correct":false},{"text":"пере","correct":false},{"text":"під","correct":false}]},{"question":"___дай йому привіт від мене.","options":[{"text":"Пере","correct":true},{"text":"Роз","correct":false},{"text":"На","correct":false},{"text":"До","correct":false}]},{"question":"___їж суп, він смачний.","options":[{"text":"До","correct":true},{"text":"На","correct":false},{"text":"Пере","correct":false},{"text":"Ви","correct":false}]},{"question":"Вона ___малювала гарну картину.","options":[{"text":"на","correct":true},{"text":"пере","correct":false},{"text":"до","correct":false},{"text":"роз","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Prefixed Action Verb Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["він","|","написав","|","листа","|","другу","|","вчора"],"answer":"Він написав листа другу вчора.","translation":"He wrote a letter to a friend yesterday."},{"words":["вона","|","дочитала","|","книгу","|","до","|","кінця"],"answer":"Вона дочитала книгу до кінця.","translation":"She finished reading the book."},{"words":["я","|","переписав","|","статтю","|","три","|","рази"],"answer":"Я переписав статтю три рази.","translation":"I rewrote the article three times."},{"words":["вони","|","розказали","|","цікаву","|","історію"],"answer":"Вони розказали цікаву історію.","translation":"They told an interesting story."},{"words":["вчитель","|","роздав","|","зошити","|","учням"],"answer":"Вчитель роздав зошити учням.","translation":"The teacher handed out notebooks to students."},{"words":["мама","|","приготувала","|","смачну","|","вечерю"],"answer":"Мама приготувала смачну вечерю.","translation":"Mom prepared a delicious dinner."},{"words":["він","|","підписав","|","документ","|","ручкою"],"answer":"Він підписав документ ручкою.","translation":"He signed the document with a pen."},{"words":["вона","|","відкрила","|","вікно","|","для","|","повітря"],"answer":"Вона відкрила вікно для повітря.","translation":"She opened the window for air."},{"words":["ми","|","зібрали","|","всі","|","речі","|","швидко"],"answer":"Ми зібрали всі речі швидко.","translation":"We gathered all the things quickly."},{"words":["він","|","перечитав","|","текст","|","ще","|","раз"],"answer":"Він перечитав текст ще раз.","translation":"He reread the text once more."},{"words":["вона","|","доїла","|","суп","|","до","|","кінця"],"answer":"Вона доїла суп до кінця.","translation":"She finished eating the soup."},{"words":["я","|","намалював","|","картину","|","за","|","день"],"answer":"Я намалював картину за день.","translation":"I painted a picture in a day."}]}},{"id":"activity-9","type":"quiz","title":"Advanced Understanding","data":{"type":"quiz","questions":[{"question":"Which prefix makes \"писати\" perfective?","options":["на-","без-","не-","анти-"],"correctIndex":0,"explanation":""},{"question":"\"Переписати\" means:","options":["To rewrite","To sign","To finish writing","To open"],"correctIndex":0,"explanation":""},{"question":"What is the opposite of \"відкрити\"?","options":["закрити","переписати","роздати","дочитати"],"correctIndex":0,"explanation":""},{"question":"\"Дочитати книгу\" means:","options":["To finish reading the book","To start reading the book","To reread the book","To write the book"],"correctIndex":0,"explanation":""},{"question":"Which prefix means \"to distribute\"?","options":["роз-","на-","до-","під-"],"correctIndex":0,"explanation":""},{"question":"\"Підписати документ\" means:","options":["To sign a document","To read a document","To close a document","To distribute a document"],"correctIndex":0,"explanation":""},{"question":"What does \"по-\" suggest in \"почитати\"?","options":["Brief action","Complete action","Repeated action","Negative action"],"correctIndex":0,"explanation":""},{"question":"\"Виписати ліки\" means:","options":["To prescribe medicine","To buy medicine","To take medicine","To return medicine"],"correctIndex":0,"explanation":""},{"question":"Which verb means \"to tell a story\"?","options":["розказати","записати","підписати","дописати"],"correctIndex":0,"explanation":""},{"question":"\"Передати привіт\" means:","options":["To pass on greetings","To write greetings","To sign greetings","To distribute greetings"],"correctIndex":0,"explanation":""},{"question":"Adding prefixes usually makes verbs:","options":["Perfective","Imperfective","Past tense","Future tense"],"correctIndex":0,"explanation":""},{"question":"\"Доробити завдання\" means:","options":["To finish doing the task","To start doing the task","To redo the task","To cancel the task"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"написати","translit":"","en":"to write","note":"pf"},{"uk":"переписати","translit":"","en":"to rewrite","note":"pf"},{"uk":"дописати","translit":"","en":"to finish writing","note":"pf"},{"uk":"підписати","translit":"","en":"to sign","note":"pf"},{"uk":"записати","translit":"","en":"to write down","note":"pf"},{"uk":"виписати","translit":"","en":"to write out","note":"pf"},{"uk":"відкрити","translit":"","en":"to open","note":"pf"},{"uk":"закрити","translit":"","en":"to close","note":"pf"},{"uk":"роздати","translit":"","en":"to distribute","note":"pf"},{"uk":"віддати","translit":"","en":"to give back","note":"pf"},{"uk":"передати","translit":"","en":"to pass, transmit","note":"pf"},{"uk":"здати","translit":"","en":"to hand in, pass","note":"pf"},{"uk":"зробити","translit":"","en":"to do, make","note":"pf"},{"uk":"переробити","translit":"","en":"to redo","note":"pf"},{"uk":"доробити","translit":"","en":"to finish doing","note":"pf"},{"uk":"вивчити","translit":"","en":"to learn","note":"pf"},{"uk":"почитати","translit":"","en":"to read (a bit)","note":"pf"},{"uk":"подивитися","translit":"","en":"to look, watch","note":"pf"},{"uk":"розказати","translit":"","en":"to tell","note":"pf"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2461,6 +2509,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

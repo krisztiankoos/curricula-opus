@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -908,11 +949,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Culture Knowledge</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Arts and Culture Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Culture Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -939,7 +987,7 @@ footer {
   </main><footer>Module 48 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Красива ___ у галереї.","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ми йдемо в ___ сьогодні.","answer":"музей","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ класичної музики починається о восьмій.","answer":"Концерт","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Вистава у ___і була чудовою.","answer":"театр","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Різдво — важливе ___ для українців.","answer":"свято","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ця ___ — шедевр!","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"У ___і багато цікавих експонатів.","answer":"музей","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ рок-гурту у суботу.","answer":"Концерт","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Національний ___ опери у Києві.","answer":"театр","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ весни — Великдень.","answer":"Свято","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Художник малює нову ___у.","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ходили в ___ мистецтва.","answer":"музей","options":["картина","музей","концерт","театр","свято"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"картина","right":"painting"},{"left":"музей","right":"museum"},{"left":"пісня","right":"song"},{"left":"концерт","right":"concert"},{"left":"театр","right":"theater"},{"left":"вистава","right":"performance"},{"left":"актор","right":"actor"},{"left":"свято","right":"holiday"},{"left":"традиція","right":"tradition"},{"left":"художник","right":"artist"},{"left":"співак","right":"singer"},{"left":"гурт","right":"band"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Ми","йдемо","на","концерт","класичної","музики"],"answer":"Ми йдемо на концерт класичної музики.","translation":"We are going to a classical music concert"},{"words":["Вистава","у","театрі","була","чудовою"],"answer":"Вистава у театрі була чудовою.","translation":"The performance at the theater was wonderful"},{"words":["Він","малює","красиві","картини"],"answer":"Він малює красиві картини.","translation":"He paints beautiful paintings"},{"words":["Українські","традиції","дуже","цікаві"],"answer":"Українські традиції дуже цікаві.","translation":"Ukrainian traditions are very interesting"},{"words":["На","Різдво","співаємо","колядки"],"answer":"На Різдво співаємо колядки.","translation":"We sing carols at Christmas"},{"words":["Виставка","сучасного","мистецтва","в","галереї"],"answer":"Виставка сучасного мистецтва в галереї.","translation":"Exhibition of modern art in the gallery"},{"words":["Актори","виступають","на","сцені"],"answer":"Актори виступають на сцені.","translation":"Actors perform on stage"},{"words":["Вона","одягає","вишиванку","на","свято"],"answer":"Вона одягає вишиванку на свято.","translation":"She wears an embroidered shirt for the holiday"},{"words":["Мелодія","цієї","пісні","дуже","красива"],"answer":"Мелодія цієї пісні дуже красива.","translation":"The melody of this song is very beautiful"},{"words":["Ми","святкуємо","Великдень","з","родиною"],"answer":"Ми святкуємо Великдень з родиною.","translation":"We celebrate Easter with family"},{"words":["Гурт","з","Києва","грає","рок-музику"],"answer":"Гурт з Києва грає рок-музику.","translation":"The band from Kyiv plays rock music"},{"words":["Художник","написав","портрет","поета"],"answer":"Художник написав портрет поета.","translation":"The artist painted a portrait of the poet"}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Де виставлені картини?","options":["у театрі","у музеї","на стадіоні","в офісі"],"correctIndex":1,"explanation":""},{"question":"Що таке \"вистава\"?","options":["painting","song","performance","holiday"],"correctIndex":2,"explanation":""},{"question":"Хто такий \"художник\"?","options":["singer","artist","actor","musician"],"correctIndex":1,"explanation":""},{"question":"Що таке \"пісня\"?","options":["song","melody","concert","band"],"correctIndex":0,"explanation":""},{"question":"Де виступають актори?","options":["у музеї","в галереї","у театрі","на виставці"],"correctIndex":2,"explanation":""},{"question":"Що таке \"свято\"?","options":["tradition","holiday","custom","ritual"],"correctIndex":1,"explanation":""},{"question":"Хто такий \"співак\"?","options":["singer","actor","artist","dancer"],"correctIndex":0,"explanation":""},{"question":"Що таке \"вишиванка\"?","options":["painting","embroidered shirt","Easter egg","song"],"correctIndex":1,"explanation":""},{"question":"Що означає \"святкувати\"?","options":["to sing","to dance","to celebrate","to paint"],"correctIndex":2,"explanation":""},{"question":"Що таке \"гурт\"?","options":["orchestra","band","choir","singer"],"correctIndex":1,"explanation":""},{"question":"Де грає оркестр?","options":["на концерті","у музеї","в галереї","на виставці"],"correctIndex":0,"explanation":""},{"question":"Що таке \"писанка\"?","options":["song","embroidered shirt","Easter egg","painting"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Картини виставлені в музеї.","isTrue":true,"explanation":"Правда: Музеї та галереї — це місця, де виставляють картини."},{"statement":"Актори працюють у музеї.","isTrue":false,"explanation":"Неправда: Актори працюють у театрі, а не в музеї."},{"statement":"Вистава — це театральна подія.","isTrue":true,"explanation":"Правда: Вистава — це театральне представлення."},{"statement":"Художник малює картини.","isTrue":true,"explanation":"Правда: Це основна робота художника."},{"statement":"Концерт — це виставка картин.","isTrue":false,"explanation":"Неправда: Концерт — це музична подія, а не виставка картин."},{"statement":"Вишиванка — це традиційний український одяг.","isTrue":true,"explanation":"Правда: Вишиванка — символ української культури."},{"statement":"Писанки роблять на Різдво.","isTrue":false,"explanation":"Неправда: Писанки — це традиція Великодня, а не Різдва."},{"statement":"Оркестр грає класичну музику.","isTrue":true,"explanation":"Правда: Оркестри часто виконують класичну музику."},{"statement":"Галерея — це місце для спорту.","isTrue":false,"explanation":"Неправда: Галерея — це місце для мистецтва, а не спорту."},{"statement":"Колядки співають на Різдво.","isTrue":true,"explanation":"Правда: Колядки — це різдвяні пісні."},{"statement":"Співак пише картини.","isTrue":false,"explanation":"Неправда: Співак співає пісні, а художник малює картини."},{"statement":"Традиції передаються з покоління в покоління.","isTrue":true,"explanation":"Правда: Традиції зберігаються і передаються в сім'ях."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"-","name":"Візуальне мистецтво","items":["картина","скульптура","виставка","музей","галерея","художник"]},{"id":"","name":"Музика","items":["пісня","мелодія","концерт","оркестр","співак","гурт"]},{"id":"","name":"Театр","items":["вистава","п'єса","актор","актриса","сцена","режисер"]},{"id":"","name":"Традиції","items":["свято","традиція","звичай","вишиванка","писанка","коляда"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Cultural Actions","data":{"type":"fill-blank","items":[{"prompt":"Художник ___ красиву картину про українське село. (painted)","answer":"намалював"},{"prompt":"Хор ___ українські народні пісні на концерті. (sang)","answer":"співав"},{"prompt":"Ми ___ Великдень з усією родиною вдома. (celebrated)","answer":"святкували"},{"prompt":"Актори ___ на сцені театру дуже професійно. (performed)","answer":"виступали"},{"prompt":"Бабуся ___ красиву вишиванку для онука. (embroidered)","answer":"вишила"},{"prompt":"Діти ___ народні танці на святі школи. (danced)","answer":"танцювали"},{"prompt":"Оркестр ___ класичну музику Моцарта на концерті. (played)","answer":"грав"},{"prompt":"Вона ___ у хорі з дитинства до сьогодні. (sings)","answer":"співає"},{"prompt":"Режисер ___ новий фільм про історію України. (directed)","answer":"знімав"},{"prompt":"На Різдво ми ___ колядки всією родиною. (sing)","answer":"співаємо"},{"prompt":"Художниця ___ портрети на замовлення для клієнтів. (paints)","answer":"малює"},{"prompt":"Українці ___ традиції з покоління в покоління. (preserve)","answer":"зберігають"}]}},{"id":"activity-7","type":"select","title":"Art Type?","data":{"type":"select","items":[{"question":"картина","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"концерт","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"скульптура","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"пісня","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"портрет","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"оркестр","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"пейзаж","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"мелодія","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"галерея","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"гурт","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"виставка","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"співак","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]}]}},{"id":"activity-8","type":"quiz","title":"Culture Knowledge","data":{"type":"quiz","questions":[{"question":"Де виставляють картини?","options":["у театрі","у музеї","на стадіоні","у басейні"],"correctIndex":1,"explanation":""},{"question":"Хто малює картини?","options":["актор","співак","художник","музикант"],"correctIndex":2,"explanation":""},{"question":"Що таке вишиванка?","options":["пісня","танець","традиційний одяг","свято"],"correctIndex":2,"explanation":""},{"question":"Коли роблять писанки?","options":["на Різдво","на Великдень","на Новий рік","на День незалежності"],"correctIndex":1,"explanation":""},{"question":"Де виступають актори?","options":["у музеї","в галереї","у театрі","на виставці"],"correctIndex":2,"explanation":""},{"question":"Що таке коляда?","options":["різдвяна пісня","великодня страва","народний танець","традиційний одяг"],"correctIndex":0,"explanation":""},{"question":"Хто керує театральною виставою?","options":["актор","режисер","глядач","художник"],"correctIndex":1,"explanation":""},{"question":"Що означає \"святкувати\"?","options":["to paint","to sing","to celebrate","to dance"],"correctIndex":2,"explanation":""},{"question":"Де грає оркестр?","options":["на концерті","у музеї","в галереї","у кінотеатрі"],"correctIndex":0,"explanation":""},{"question":"Що таке гурт?","options":["orchestra","band","choir","solo artist"],"correctIndex":1,"explanation":""},{"question":"Коли українці одягають вишиванки?","options":["тільки вдома","тільки на роботі","на свята","ніколи"],"correctIndex":2,"explanation":""},{"question":"Хто такий глядач?","options":["performer","director","spectator","singer"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Красива ___ у галереї.","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ми йдемо в ___ сьогодні.","answer":"музей","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ класичної музики починається о восьмій.","answer":"Концерт","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Вистава у ___і була чудовою.","answer":"театр","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Різдво — важливе ___ для українців.","answer":"свято","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ця ___ — шедевр!","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"У ___і багато цікавих експонатів.","answer":"музей","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ рок-гурту у суботу.","answer":"Концерт","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Національний ___ опери у Києві.","answer":"театр","options":["картина","музей","концерт","театр","свято"]},{"prompt":"___ весни — Великдень.","answer":"Свято","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Художник малює нову ___у.","answer":"картина","options":["картина","музей","концерт","театр","свято"]},{"prompt":"Ходили в ___ мистецтва.","answer":"музей","options":["картина","музей","концерт","театр","свято"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте слово з перекладом","data":{"type":"match-up","pairs":[{"left":"картина","right":"painting"},{"left":"музей","right":"museum"},{"left":"пісня","right":"song"},{"left":"концерт","right":"concert"},{"left":"театр","right":"theater"},{"left":"вистава","right":"performance"},{"left":"актор","right":"actor"},{"left":"свято","right":"holiday"},{"left":"традиція","right":"tradition"},{"left":"художник","right":"artist"},{"left":"співак","right":"singer"},{"left":"гурт","right":"band"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Ми","йдемо","на","концерт","класичної","музики"],"answer":"Ми йдемо на концерт класичної музики.","translation":"We are going to a classical music concert"},{"words":["Вистава","у","театрі","була","чудовою"],"answer":"Вистава у театрі була чудовою.","translation":"The performance at the theater was wonderful"},{"words":["Він","малює","красиві","картини"],"answer":"Він малює красиві картини.","translation":"He paints beautiful paintings"},{"words":["Українські","традиції","дуже","цікаві"],"answer":"Українські традиції дуже цікаві.","translation":"Ukrainian traditions are very interesting"},{"words":["На","Різдво","співаємо","колядки"],"answer":"На Різдво співаємо колядки.","translation":"We sing carols at Christmas"},{"words":["Виставка","сучасного","мистецтва","в","галереї"],"answer":"Виставка сучасного мистецтва в галереї.","translation":"Exhibition of modern art in the gallery"},{"words":["Актори","виступають","на","сцені"],"answer":"Актори виступають на сцені.","translation":"Actors perform on stage"},{"words":["Вона","одягає","вишиванку","на","свято"],"answer":"Вона одягає вишиванку на свято.","translation":"She wears an embroidered shirt for the holiday"},{"words":["Мелодія","цієї","пісні","дуже","красива"],"answer":"Мелодія цієї пісні дуже красива.","translation":"The melody of this song is very beautiful"},{"words":["Ми","святкуємо","Великдень","з","родиною"],"answer":"Ми святкуємо Великдень з родиною.","translation":"We celebrate Easter with family"},{"words":["Гурт","з","Києва","грає","рок-музику"],"answer":"Гурт з Києва грає рок-музику.","translation":"The band from Kyiv plays rock music"},{"words":["Художник","написав","портрет","поета"],"answer":"Художник написав портрет поета.","translation":"The artist painted a portrait of the poet"}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Де виставлені картини?","options":["у театрі","у музеї","на стадіоні","в офісі"],"correctIndex":1,"explanation":""},{"question":"Що таке \"вистава\"?","options":["painting","song","performance","holiday"],"correctIndex":2,"explanation":""},{"question":"Хто такий \"художник\"?","options":["singer","artist","actor","musician"],"correctIndex":1,"explanation":""},{"question":"Що таке \"пісня\"?","options":["song","melody","concert","band"],"correctIndex":0,"explanation":""},{"question":"Де виступають актори?","options":["у музеї","в галереї","у театрі","на виставці"],"correctIndex":2,"explanation":""},{"question":"Що таке \"свято\"?","options":["tradition","holiday","custom","ritual"],"correctIndex":1,"explanation":""},{"question":"Хто такий \"співак\"?","options":["singer","actor","artist","dancer"],"correctIndex":0,"explanation":""},{"question":"Що таке \"вишиванка\"?","options":["painting","embroidered shirt","Easter egg","song"],"correctIndex":1,"explanation":""},{"question":"Що означає \"святкувати\"?","options":["to sing","to dance","to celebrate","to paint"],"correctIndex":2,"explanation":""},{"question":"Що таке \"гурт\"?","options":["orchestra","band","choir","singer"],"correctIndex":1,"explanation":""},{"question":"Де грає оркестр?","options":["на концерті","у музеї","в галереї","на виставці"],"correctIndex":0,"explanation":""},{"question":"Що таке \"писанка\"?","options":["song","embroidered shirt","Easter egg","painting"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Картини виставлені в музеї.","isTrue":true,"explanation":"Правда: Музеї та галереї — це місця, де виставляють картини."},{"statement":"Актори працюють у музеї.","isTrue":false,"explanation":"Неправда: Актори працюють у театрі, а не в музеї."},{"statement":"Вистава — це театральна подія.","isTrue":true,"explanation":"Правда: Вистава — це театральне представлення."},{"statement":"Художник малює картини.","isTrue":true,"explanation":"Правда: Це основна робота художника."},{"statement":"Концерт — це виставка картин.","isTrue":false,"explanation":"Неправда: Концерт — це музична подія, а не виставка картин."},{"statement":"Вишиванка — це традиційний український одяг.","isTrue":true,"explanation":"Правда: Вишиванка — символ української культури."},{"statement":"Писанки роблять на Різдво.","isTrue":false,"explanation":"Неправда: Писанки — це традиція Великодня, а не Різдва."},{"statement":"Оркестр грає класичну музику.","isTrue":true,"explanation":"Правда: Оркестри часто виконують класичну музику."},{"statement":"Галерея — це місце для спорту.","isTrue":false,"explanation":"Неправда: Галерея — це місце для мистецтва, а не спорту."},{"statement":"Колядки співають на Різдво.","isTrue":true,"explanation":"Правда: Колядки — це різдвяні пісні."},{"statement":"Співак пише картини.","isTrue":false,"explanation":"Неправда: Співак співає пісні, а художник малює картини."},{"statement":"Традиції передаються з покоління в покоління.","isTrue":true,"explanation":"Правда: Традиції зберігаються і передаються в сім'ях."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"-","name":"Візуальне мистецтво","items":["картина","скульптура","виставка","музей","галерея","художник"]},{"id":"","name":"Музика","items":["пісня","мелодія","концерт","оркестр","співак","гурт"]},{"id":"","name":"Театр","items":["вистава","п'єса","актор","актриса","сцена","режисер"]},{"id":"","name":"Традиції","items":["свято","традиція","звичай","вишиванка","писанка","коляда"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Cultural Actions","data":{"type":"fill-blank","items":[{"prompt":"Художник ___ красиву картину про українське село. (painted)","answer":"намалював"},{"prompt":"Хор ___ українські народні пісні на концерті. (sang)","answer":"співав"},{"prompt":"Ми ___ Великдень з усією родиною вдома. (celebrated)","answer":"святкували"},{"prompt":"Актори ___ на сцені театру дуже професійно. (performed)","answer":"виступали"},{"prompt":"Бабуся ___ красиву вишиванку для онука. (embroidered)","answer":"вишила"},{"prompt":"Діти ___ народні танці на святі школи. (danced)","answer":"танцювали"},{"prompt":"Оркестр ___ класичну музику Моцарта на концерті. (played)","answer":"грав"},{"prompt":"Вона ___ у хорі з дитинства до сьогодні. (sings)","answer":"співає"},{"prompt":"Режисер ___ новий фільм про історію України. (directed)","answer":"знімав"},{"prompt":"На Різдво ми ___ колядки всією родиною. (sing)","answer":"співаємо"},{"prompt":"Художниця ___ портрети на замовлення для клієнтів. (paints)","answer":"малює"},{"prompt":"Українці ___ традиції з покоління в покоління. (preserve)","answer":"зберігають"}]}},{"id":"activity-7","type":"select","title":"Art Type?","data":{"type":"select","items":[{"question":"картина","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"концерт","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"скульптура","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"пісня","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"портрет","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"оркестр","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"пейзаж","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"мелодія","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"галерея","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"гурт","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]},{"question":"виставка","options":[{"text":"візуальне мистецтво","correct":true},{"text":"музика","correct":false}]},{"question":"співак","options":[{"text":"візуальне мистецтво","correct":false},{"text":"музика","correct":true}]}]}},{"id":"activity-8","type":"unjumble","title":"Arts and Culture Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Ми","|","йдемо","|","на","|","концерт","|","класичної","|","музики","|","сьогодні"],"answer":"Ми йдемо на концерт класичної музики сьогодні.","translation":"We are going to a classical music concert today."},{"words":["Вистава","|","у","|","театрі","|","була","|","дуже","|","цікавою","|","і","|","захоплюючою"],"answer":"Вистава у театрі була дуже цікавою і захоплюючою.","translation":"The performance at the theater was very interesting and exciting."},{"words":["Відомий","|","художник","|","малює","|","красиві","|","картини","|","про","|","Україну"],"answer":"Відомий художник малює красиві картини про Україну.","translation":"A famous artist paints beautiful paintings about Ukraine."},{"words":["Українські","|","традиції","|","дуже","|","цікаві","|","та","|","різноманітні"],"answer":"Українські традиції дуже цікаві та різноманітні.","translation":"Ukrainian traditions are very interesting and diverse."},{"words":["На","|","Різдво","|","ми","|","співаємо","|","колядки","|","всією","|","родиною"],"answer":"На Різдво ми співаємо колядки всією родиною.","translation":"At Christmas we sing carols with the whole family."},{"words":["Виставка","|","сучасного","|","мистецтва","|","в","|","галереї","|","відкрита","|","щодня"],"answer":"Виставка сучасного мистецтва в галереї відкрита щодня.","translation":"The exhibition of modern art in the gallery is open daily."},{"words":["Актори","|","виступають","|","на","|","сцені","|","театру","|","дуже","|","професійно"],"answer":"Актори виступають на сцені театру дуже професійно.","translation":"Actors perform on the theater stage very professionally."},{"words":["Вона","|","одягає","|","вишиванку","|","на","|","кожне","|","українське","|","свято"],"answer":"Вона одягає вишиванку на кожне українське свято.","translation":"She wears an embroidered shirt for every Ukrainian holiday."},{"words":["Мелодія","|","цієї","|","народної","|","пісні","|","дуже","|","красива","|","та","|","сумна"],"answer":"Мелодія цієї народної пісні дуже красива та сумна.","translation":"The melody of this folk song is very beautiful and sad."},{"words":["Ми","|","святкуємо","|","Великдень","|","з","|","усією","|","родиною","|","вдома"],"answer":"Ми святкуємо Великдень з усією родиною вдома.","translation":"We celebrate Easter with the whole family at home."},{"words":["Цей","|","рок-гурт","|","з","|","Києва","|","грає","|","чудову","|","музику"],"answer":"Цей рок-гурт з Києва грає чудову музику.","translation":"This rock band from Kyiv plays wonderful music."},{"words":["Художник","|","написав","|","портрет","|","відомого","|","українського","|","поета"],"answer":"Художник написав портрет відомого українського поета.","translation":"The artist painted a portrait of a famous Ukrainian poet."}]}},{"id":"activity-9","type":"quiz","title":"Culture Knowledge","data":{"type":"quiz","questions":[{"question":"Де виставляють картини?","options":["у театрі","у музеї","на стадіоні","у басейні"],"correctIndex":1,"explanation":""},{"question":"Хто малює картини?","options":["актор","співак","художник","музикант"],"correctIndex":2,"explanation":""},{"question":"Що таке вишиванка?","options":["пісня","танець","традиційний одяг","свято"],"correctIndex":2,"explanation":""},{"question":"Коли роблять писанки?","options":["на Різдво","на Великдень","на Новий рік","на День незалежності"],"correctIndex":1,"explanation":""},{"question":"Де виступають актори?","options":["у музеї","в галереї","у театрі","на виставці"],"correctIndex":2,"explanation":""},{"question":"Що таке коляда?","options":["різдвяна пісня","великодня страва","народний танець","традиційний одяг"],"correctIndex":0,"explanation":""},{"question":"Хто керує театральною виставою?","options":["актор","режисер","глядач","художник"],"correctIndex":1,"explanation":""},{"question":"Що означає \"святкувати\"?","options":["to paint","to sing","to celebrate","to dance"],"correctIndex":2,"explanation":""},{"question":"Де грає оркестр?","options":["на концерті","у музеї","в галереї","у кінотеатрі"],"correctIndex":0,"explanation":""},{"question":"Що таке гурт?","options":["orchestra","band","choir","solo artist"],"correctIndex":1,"explanation":""},{"question":"Коли українці одягають вишиванки?","options":["тільки вдома","тільки на роботі","на свята","ніколи"],"correctIndex":2,"explanation":""},{"question":"Хто такий глядач?","options":["performer","director","spectator","singer"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"картина","translit":"","en":"painting","note":""},{"uk":"скульптура","translit":"","en":"sculpture","note":""},{"uk":"виставка","translit":"","en":"exhibition","note":""},{"uk":"музей","translit":"","en":"museum","note":""},{"uk":"галерея","translit":"","en":"gallery","note":""},{"uk":"художник","translit":"","en":"artist","note":"f: художниця"},{"uk":"портрет","translit":"","en":"portrait","note":""},{"uk":"пейзаж","translit":"","en":"landscape","note":""},{"uk":"пісня","translit":"","en":"song","note":""},{"uk":"мелодія","translit":"","en":"melody","note":""},{"uk":"концерт","translit":"","en":"concert","note":""},{"uk":"оркестр","translit":"","en":"orchestra","note":""},{"uk":"співак","translit":"","en":"singer","note":"f: співачка"},{"uk":"музикант","translit":"","en":"musician","note":"f: музикантка"},{"uk":"гурт","translit":"","en":"band","note":""},{"uk":"театр","translit":"","en":"theater","note":""},{"uk":"вистава","translit":"","en":"performance","note":""},{"uk":"п'єса","translit":"","en":"play","note":""},{"uk":"актор","translit":"","en":"actor","note":"f: акторка"},{"uk":"сцена","translit":"","en":"stage","note":""},{"uk":"свято","translit":"","en":"holiday","note":""},{"uk":"традиція","translit":"","en":"tradition","note":""},{"uk":"звичай","translit":"","en":"custom","note":""},{"uk":"вишиванка","translit":"","en":"embroidered shirt","note":""},{"uk":"писанка","translit":"","en":"Easter egg","note":""},{"uk":"малювати","translit":"","en":"to paint","note":"pf: намалювати"},{"uk":"співати","translit":"","en":"to sing","note":"pf: заспівати"},{"uk":"виступати","translit":"","en":"to perform","note":"pf: виступити"},{"uk":"святкувати","translit":"","en":"to celebrate","note":"pf: відсвяткувати"},{"uk":"вишивати","translit":"","en":"to embroider","note":"pf: вишити"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2264,6 +2312,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

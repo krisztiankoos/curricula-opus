@@ -580,33 +580,57 @@ Time to put your comparison skills to work! Shopping is the perfect context for 
     > [!answer] здача
     > (Here's your change.)
 
-## order: Shopping Dialogue Sequence
+## unjumble: Shopping Sentences
 
-> Arrange these shopping dialogue lines in logical order.
+> Rearrange the words to form correct shopping sentences.
 
-1. Я візьму цю → Добрий день! → Скільки коштує? → Три тисячі гривень
-   > [!answer] Добрий день! → Скільки коштує? → Три тисячі гривень → Я візьму цю
-   > (Good day! → How much? → 3000 hryvnias → I'll take this one)
+1. скільки | коштує | ця | сукня
+   > [!answer] Скільки коштує ця сукня?
+   > (How much does this dress cost?)
 
-2. Ось здача → Карткою → Скільки з мене? → П'ятсот гривень
-   > [!answer] Скільки з мене? → П'ятсот гривень → Карткою → Ось здача
-   > (How much do I owe? → 500 hryvnias → By card → Here's change)
+2. я | шукаю | взуття | чорне | розмір | сорок | два
+   > [!answer] Я шукаю чорне взуття, розмір сорок два.
+   > (I'm looking for black shoes, size forty-two.)
 
-3. Так, є → Яка найнижча ціна? → Є знижка? → Дві тисячі
-   > [!answer] Є знижка? → Так, є → Яка найнижча ціна? → Дві тисячі
-   > (Is there a discount? → Yes, there is → What's the lowest price? → Two thousand)
+3. є | знижка | на | цей | товар
+   > [!answer] Є знижка на цей товар?
+   > (Is there a discount on this product?)
 
-4. Який вам потрібен? → Я шукаю взуття → Сорок другий → Ось, будь ласка
-   > [!answer] Я шукаю взуття → Який вам потрібен? → Сорок другий → Ось, будь ласка
-   > (I'm looking for shoes → What size? → Forty-two → Here you go)
+4. можу | я | заплатити | карткою
+   > [!answer] Можу я заплатити карткою?
+   > (Can I pay by card?)
 
-5. Ні, дякую → Чек потрібен? → Це все? → Так, це все
-   > [!answer] Це все? → Так, це все → Чек потрібен? → Ні, дякую
-   > (Is that all? → Yes, that's all → Need a receipt? → No, thanks)
+5. це | занадто | дороге | для | мене
+   > [!answer] Це занадто дороге для мене.
+   > (This is too expensive for me.)
 
-6. Є дешевше? → Це занадто дороге → Так, ось ця → Скільки?
-   > [!answer] Це занадто дороге → Є дешевше? → Так, ось ця → Скільки?
-   > (This is too expensive → Is there cheaper? → Yes, here's this one → How much?)
+6. є | у | вас | інший | розмір
+   > [!answer] У вас є інший розмір?
+   > (Do you have another size?)
+
+7. можна | поміряти | цю | куртку
+   > [!answer] Можна поміряти цю куртку?
+   > (Can I try on this jacket?)
+
+8. де | знаходиться | каса | будь | ласка
+   > [!answer] Де знаходиться каса, будь ласка?
+   > (Where is the checkout, please?)
+
+9. ось | ваша | здача | і | чек
+   > [!answer] Ось ваша здача і чек.
+   > (Here's your change and receipt.)
+
+10. мені | потрібна | допомога | у | виборі
+    > [!answer] Мені потрібна допомога у виборі.
+    > (I need help choosing.)
+
+11. можна | обміняти | цей | товар
+    > [!answer] Можна обміняти цей товар?
+    > (Can I exchange this product?)
+
+12. скільки | з | мене | всього
+    > [!answer] Скільки з мене всього?
+    > (How much do I owe in total?)
 
 ## quiz: Advanced Shopping Knowledge
 

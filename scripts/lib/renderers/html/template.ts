@@ -41,6 +41,7 @@ export class HtmlTemplate {
       'fill.js',
       'order.js',
       'select.js',
+      'error-correction.js',
       'vocab.js',
     ]);
 
@@ -181,6 +182,7 @@ function getActivityLabel(type: string, num: number): string {
     'unjumble': 'Order',
     'anagram': 'Spell',
     'select': 'Select',
+    'error-correction': 'Fix',
   };
   const base = labels[type] || type;
   return `${num}. ${base}`;

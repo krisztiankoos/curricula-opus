@@ -17,7 +17,15 @@ grammar:
 
 # Вступ
 
-Every Ukrainian verb has a secret identity: it's either **imperfective** (process-focused) or **perfective** (result-focused). This distinction is called **aspect** (вид), and it's one of the most important features of Slavic languages. Let's unlock this key to natural Ukrainian!
+Why does Ukrainian have two different verbs for "to read" — *читати* and *прочитати*? It's not a quirk of vocabulary — it's the soul of Slavic grammar.
+
+Imagine you're telling a friend about your weekend. In English, you'd say "I read a book" — but was it a relaxing afternoon spent reading, or did you finish the whole thing? English leaves this ambiguous. Ukrainian doesn't. It makes you choose: **процес** (process) or **результат** (result)?
+
+This distinction is called **aspect** (вид), and once you understand it, Ukrainian verbs will click into place. You'll sound more natural, be understood more precisely, and unlock a whole dimension of expression that English simply doesn't have.
+
+> 💡 **Did You Know?**
+>
+> Aspect is so fundamental to Slavic languages that linguists call it "the soul of the verb." It's older than grammatical tense! Proto-Slavic speakers were distinguishing process from result 1,500 years before modern Russian, Ukrainian, or Polish existed as separate languages.
 
 ---
 
@@ -30,8 +38,11 @@ Aspect answers the question: **Are we focusing on the PROCESS or the RESULT?**
 | **Imperfective** | Process, duration, repetition | недоконаний вид |
 | **Perfective** | Result, completion, single event | доконаний вид |
 
-> [!tip] 💡 Did You Know?
-> English doesn't have grammatical aspect like Ukrainian. That's why "I read" can mean both "I was reading" (process) and "I read/finished" (result). Ukrainian always distinguishes!
+> 📜 **History Bite: Why English Lost Aspect**
+>
+> Old English actually HAD aspect! Verbs like "lufian" (to love) had perfective forms with prefixes, just like Ukrainian. Over centuries, English simplified, dropping most prefixes and losing the aspect distinction. Modern English speakers use words like "finished," "kept on," or "used to" to express what Ukrainian does with a single verb form.
+
+Think of it like photography: **imperfective** is a video — capturing the ongoing action. **Perfective** is a snapshot — capturing the completed moment.
 
 ---
 
@@ -51,8 +62,22 @@ Use imperfective when:
 - Я **вчив** українську мову. (I was learning Ukrainian.)
 - Вони **готували** вечерю. (They were preparing dinner.)
 
-> [!example] 🎬 Pop Culture Moment
-> In Ukrainian movies, characters often say *Що ти робиш?* (What are you doing?) — imperfective for ongoing action!
+> 🎬 **Pop Culture Moment: S.T.A.L.K.E.R. Loading Screens**
+>
+> The Ukrainian game S.T.A.L.K.E.R. shows imperfective verbs on loading screens: *Завантаження...* (Loading...) — the process is ongoing. When it says *Завантажено* (Loaded) — that's perfective participle, showing completion! Games teach grammar without trying.
+
+The imperfective verb is your "default" form — it's what you find in dictionaries, and it's what you use when the focus is on the action itself, not its completion.
+
+**🎭 Телефонна розмова (Phone Call)**
+
+— Привіт! Що ти **робиш**?
+— Я **читаю** книгу. Дуже цікава!
+— О, що ти **читаєш**?
+— Новий роман про Київ. Вже три дні **читаю**!
+— Класно. Я **дивлюся** фільм, але нудний...
+— Ха, тоді **приходь** до мене!
+
+*Notice: all verbs here are imperfective — we're discussing ongoing activities.*
 
 ---
 
@@ -72,8 +97,26 @@ Use perfective when:
 - Я **вивчив** цей урок. (I learned/mastered this lesson.)
 - Вони **приготували** вечерю. (They prepared/finished dinner.)
 
-> [!tip] 🌍 Real World
-> When ordering food, you'd say *Я вибрав* (perfective) — "I've chosen/decided" — showing a completed decision!
+> 🌍 **Real World: Restaurant Ordering**
+>
+> When ordering food, you'd say *Я вибрав* (perfective) — "I've chosen/decided" — showing a completed decision. But if the waiter asks *Ви вже вибираєте?* (Are you choosing yet?) — that's imperfective, asking about an ongoing process!
+
+Perfective verbs are "goal-oriented" — they focus on reaching a destination, completing a task, or achieving a result. When you use perfective, you're saying "it's done!"
+
+**🎭 Після роботи (After Work)**
+
+— Як пройшов день?
+— Добре! Я **написав** звіт, **відправив** листи, і **зробив** презентацію.
+— Ого! Продуктивний день!
+— Так! А ще **прочитав** ту статтю, яку ти рекомендував.
+— І як?
+— Цікаво! **Зрозумів** нарешті, як це працює.
+
+*Notice: all verbs here are perfective — we're listing completed achievements.*
+
+> ⚡ **Pro Tip: The "Checklist Effect"**
+>
+> When talking about accomplishments, use perfective — it's like checking items off a list. *Зробив!* ✓ *Написав!* ✓ *Закінчив!* ✓ Each perfective verb is a completed checkbox.
 
 ---
 
@@ -94,6 +137,12 @@ Most verbs come in pairs: imperfective + perfective with the same meaning:
 | пити | випити | to drink |
 | вчити | вивчити | to learn/study |
 | купувати | купити | to buy |
+
+Learning aspect pairs is like learning vocabulary — each verb comes with its "partner." Think of them as twins: one focused on the journey (*читати*), one focused on the destination (*прочитати*).
+
+> 🎮 **Gamer's Corner: Save/Load Aspect**
+>
+> In video games, *Зберігати* (imperfective) means "saving" — the process is ongoing. *Зберегти* (perfective) means "saved" — done! Similarly, *Завантажувати* (loading...) vs *Завантажити* (load complete). Ukrainian gaming terminology teaches aspect naturally!
 
 ---
 
@@ -130,6 +179,48 @@ Compare these sentences:
 
 ---
 
+# When to Use Each Aspect
+
+This is where learners often struggle. Here's your decision guide:
+
+## Use IMPERFECTIVE (недоконаний вид) when:
+
+| Situation | Example | Why |
+|-----------|---------|-----|
+| **Ongoing action** | Що ти *робиш*? | Right now, in progress |
+| **Duration mentioned** | Я *читав* три години. | Focus on how long |
+| **Repeated/habitual** | Вона *телефонує* щодня. | Happens regularly |
+| **General statement** | Він добре *готує*. | Ability, not specific event |
+| **Interrupted action** | Коли я *читав*, він прийшов. | Action was ongoing when interrupted |
+
+## Use PERFECTIVE (доконаний вид) when:
+
+| Situation | Example | Why |
+|-----------|---------|-----|
+| **Completed action** | Я *прочитав* книгу. | Done, finished |
+| **Single event** | Він *купив* машину. | One specific purchase |
+| **Result matters** | Я *вивчив* цей урок. | Focus on achievement |
+| **Sequence of actions** | Він *встав*, *поснідав*, *пішов*. | Done-done-done |
+| **Sudden action** | Раптом він *побачив* її. | Happened suddenly |
+
+## Common Mistakes to Avoid
+
+**❌ Wrong:** Я прочитав книгу три години.
+**✓ Right:** Я читав книгу три години.
+*Why: Duration = imperfective*
+
+**❌ Wrong:** Вона щодня написала листа.
+**✓ Right:** Вона щодня писала листа.
+*Why: Repeated = imperfective*
+
+**❌ Wrong:** Він уже читав цю книгу до кінця.
+**✓ Right:** Він уже прочитав цю книгу.
+*Why: Completed = perfective*
+
+> 🎯 **Quick Test:** Ask yourself: "Am I talking about the ACTION itself, or the RESULT?" Action = imperfective. Result = perfective.
+
+---
+
 # Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
@@ -161,6 +252,16 @@ Compare these sentences:
 | з'їсти | /ˈzjistɪ/ | to eat (pf) | verb | — | completion |
 | пити | /ˈpɪtɪ/ | to drink (impf) | verb | — | process |
 | випити | /ˈwɪpɪtɪ/ | to drink (pf) | verb | — | completion |
+| готувати | /ɦotuˈwatɪ/ | to prepare (impf) | verb | — | process |
+| приготувати | /prɪɦotuˈwatɪ/ | to prepare (pf) | verb | — | completion |
+| відправляти | /widprawˈlʲatɪ/ | to send (impf) | verb | — | process |
+| відправити | /widˈprawɪtɪ/ | to send (pf) | verb | — | completion |
+| телефонувати | /tɛlɛfonuˈwatɪ/ | to call (impf) | verb | — | process |
+| зателефонувати | /zatɛlɛfonuˈwatɪ/ | to call (pf) | verb | — | completion |
+| дивитися | /dɪwɪˈtɪsʲa/ | to watch (impf) | verb | — | process |
+| подивитися | /podɪwɪˈtɪsʲa/ | to watch (pf) | verb | — | completion |
+| приходити | /prɪˈxodɪtɪ/ | to come (impf) | verb | — | process |
+| прийти | /prɪjˈtɪ/ | to come (pf) | verb | — | completion |
 
 ---
 
@@ -537,16 +638,133 @@ Compare these sentences:
     - [x] говорили
     > [!answer] говорили (duration, process)
 
-## order: Learning Ukrainian — A Story
+## error-correction: Correct the Aspect Error
 
-> Put these sentences in logical order to tell a story about learning Ukrainian.
+> Find the wrong word in each sentence, then choose the correct aspect.
 
-1. Спочатку я почав вчити український алфавіт.
-2. Потім я вивчив основні слова та фрази.
-3. Я читав прості тексти кожного дня.
-4. Нарешті я прочитав першу книгу українською.
-5. Тепер я говорю українською з друзями.
-6. Скоро я вивчу всі граматичні правила.
+1. Вона прочитала книгу кожного вечора.
+   > [!error] прочитала
+   > [!answer] читала
+   > [!options] прочитала | читала | прочитає | читатиме
+   > [!explanation] Imperfective for repeated/habitual actions (every evening)
+
+2. Я писав листа і відправив його.
+   > [!error] писав
+   > [!answer] написав
+   > [!options] писав | написав | пишу | напишу
+   > [!explanation] Perfective for completed action in a sequence
+
+3. Він вивчав цей урок нарешті.
+   > [!error] вивчав
+   > [!answer] вивчив
+   > [!options] вивчав | вивчив | вчить | вивчатиме
+   > [!explanation] Perfective with "нарешті" = completed achievement
+
+4. Коли ми зробили обід, зателефонував друг.
+   > [!error] зробили
+   > [!answer] робили
+   > [!options] зробили | робили | робимо | зробимо
+   > [!explanation] Imperfective for action interrupted by another event
+
+5. Вона щодня випила каву о восьмій.
+   > [!error] випила
+   > [!answer] п'є
+   > [!options] випила | п'є | пила | вип'є
+   > [!explanation] Present imperfective for regular/habitual actions
+
+6. Раптом він бачив щось дивне.
+   > [!error] бачив
+   > [!answer] побачив
+   > [!options] бачив | побачив | бачить | побачить
+   > [!explanation] Perfective with "раптом" = sudden single event
+
+7. Учора я читав цю статтю до кінця.
+   > [!error] читав
+   > [!answer] прочитав
+   > [!options] читав | прочитав | читаю | прочитаю
+   > [!explanation] Perfective when completion is emphasized (до кінця)
+
+8. Студенти вивчили нові слова кожного тижня.
+   > [!error] вивчили
+   > [!answer] вчили
+   > [!options] вивчили | вчили | вчать | вивчать
+   > [!explanation] Imperfective for repeated weekly actions
+
+9. Мама готувала вечерю і покликала нас до столу.
+   > [!error] готувала
+   > [!answer] приготувала
+   > [!options] готувала | приготувала | готує | приготує
+   > [!explanation] Perfective for completed action before the next
+
+10. Він прочитав три години, але не закінчив книгу.
+    > [!error] прочитав
+    > [!answer] читав
+    > [!options] прочитав | читав | читає | прочитає
+    > [!explanation] Imperfective when duration is mentioned
+
+11. Коли я прийшов, вона зробила каву.
+    > [!error] зробила
+    > [!answer] робила
+    > [!options] зробила | робила | робить | зробить
+    > [!explanation] Imperfective for ongoing background action
+
+12. Я кожного ранку написав у щоденнику.
+    > [!error] написав
+    > [!answer] писав
+    > [!options] написав | писав | пишу | напишу
+    > [!explanation] Imperfective for daily routine
+
+## unjumble: Aspect in Context Sentences
+
+> Reorder the words to form correct sentences about aspect.
+
+1. книгу / Вона / читала / увечері / цікаву / кожного / вечора
+   > [!answer] Вона читала цікаву книгу кожного вечора увечері.
+   > (She read an interesting book every evening.) [7 words]
+
+2. листа / Я / написав / і / його / довгого / відправив / швидко
+   > [!answer] Я написав довгого листа і швидко відправив його.
+   > (I wrote a long letter and quickly sent it.) [8 words]
+
+3. урок / Він / цей / нарешті / вивчив / важкий / добре
+   > [!answer] Він нарешті добре вивчив цей важкий урок.
+   > (He finally learned this difficult lesson well.) [7 words]
+
+4. обід / Коли / робили / ми / зателефонував / смачний / друг
+   > [!answer] Коли ми робили смачний обід, зателефонував друг.
+   > (When we were making a tasty lunch, a friend called.) [7 words]
+
+5. каву / Вона / п'є / щодня / гарячу / о / ранку / восьмій
+   > [!answer] Вона щодня п'є гарячу каву о восьмій ранку.
+   > (She drinks hot coffee every day at 8 a.m.) [8 words]
+
+6. щось / Раптом / він / дивне / побачив / на / вулиці / темній
+   > [!answer] Раптом він побачив щось дивне на темній вулиці.
+   > (Suddenly he saw something strange on the dark street.) [8 words]
+
+7. статтю / Учора / я / цю / прочитав / цікаву / до / кінця
+   > [!answer] Учора я прочитав цю цікаву статтю до кінця.
+   > (Yesterday I read this interesting article to the end.) [8 words]
+
+8. слова / Студенти / нові / вчили / українські / кожного / важкі / тижня
+   > [!answer] Студенти вчили нові важкі українські слова кожного тижня.
+   > (Students studied new difficult Ukrainian words every week.) [8 words]
+
+9. вечерю / Мама / приготувала / смачну / і / покликала / нас / столу / до
+   > [!answer] Мама приготувала смачну вечерю і покликала нас до столу.
+   > (Mom prepared a tasty dinner and called us to the table.) [9 words]
+
+10. три / Він / години / читав / цілих / але / не / закінчив / книгу
+    > [!answer] Він читав цілих три години, але не закінчив книгу.
+    > (He was reading for three whole hours but didn't finish the book.) [9 words]
+
+11. прийшов / Коли / я / вона / робила / каву / ще / свіжу
+    > [!answer] Коли я прийшов, вона ще робила свіжу каву.
+    > (When I arrived, she was still making fresh coffee.) [8 words]
+
+12. щоденнику / Я / у / кожного / ранку / писав / про / життя / своє
+    > [!answer] Я кожного ранку писав у щоденнику про своє життя.
+    > (Every morning I wrote in my diary about my life.) [9 words]
 
 ## quiz: Advanced Aspect Understanding
 

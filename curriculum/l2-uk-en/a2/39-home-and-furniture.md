@@ -646,16 +646,57 @@ Home is where life happens! Whether you're looking for an apartment, describing 
     - [ ] У підвалі
     - [ ] На горищі
 
-## order: Steps for Cleaning a Room
+## unjumble: Home and Furniture Sentences
 
-> Put these cleaning steps in the correct order.
+> Rearrange the words to form correct sentences about home and furniture.
 
-1. Збери речі з підлоги.
-2. Витри пил з меблів.
-3. Пропилососи килим.
-4. Помий підлогу.
-5. Відкрий вікно для свіжого повітря.
-6. Поклади речі на місце.
+1. диван | стоїть | у | вітальні | біля | вікна
+   > [!answer] Диван стоїть у вітальні біля вікна.
+   > (The sofa is in the living room by the window.)
+
+2. вона | прибирає | кімнату | щосуботи
+   > [!answer] Вона прибирає кімнату щосуботи.
+   > (She cleans the room every Saturday.)
+
+3. холодильник | стоїть | на | кухні
+   > [!answer] Холодильник стоїть на кухні.
+   > (The refrigerator is in the kitchen.)
+
+4. він | миє | посуд | після | обіду
+   > [!answer] Він миє посуд після обіду.
+   > (He washes dishes after lunch.)
+
+5. книжкова | шафа | повна | цікавих | книг
+   > [!answer] Книжкова шафа повна цікавих книг.
+   > (The bookcase is full of interesting books.)
+
+6. витри | пил | з | меблів | будь | ласка
+   > [!answer] Витри пил з меблів, будь ласка.
+   > (Wipe the dust off the furniture, please.)
+
+7. ліжко | стоїть | у | спальні
+   > [!answer] Ліжко стоїть у спальні.
+   > (The bed is in the bedroom.)
+
+8. пилосос | дуже | голосний | але | потужний
+   > [!answer] Пилосос дуже голосний, але потужний.
+   > (The vacuum cleaner is very loud but powerful.)
+
+9. ми | переїжджаємо | у | нову | квартиру
+   > [!answer] Ми переїжджаємо у нову квартиру.
+   > (We are moving to a new apartment.)
+
+10. дзеркало | висить | у | ванній | кімнаті
+    > [!answer] Дзеркало висить у ванній кімнаті.
+    > (The mirror hangs in the bathroom.)
+
+11. він | орендує | однокімнатну | квартиру
+    > [!answer] Він орендує однокімнатну квартиру.
+    > (He rents a one-room apartment.)
+
+12. поклади | речі | в | комод
+    > [!answer] Поклади речі в комод.
+    > (Put the things in the dresser.)
 
 ## quiz: Home Situations
 

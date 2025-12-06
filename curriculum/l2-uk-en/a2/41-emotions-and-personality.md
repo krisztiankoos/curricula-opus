@@ -627,16 +627,57 @@ Understanding emotions and personality makes conversations deeper. "He's kind," 
     - [x] Personality trait
     > Stubborn describes character.
 
-## order: Expressing Emotions
+## unjumble: Expressing Emotions
 
-> Put these steps in order: How to comfort someone who is sad.
+> Rearrange the words to form correct sentences about emotions and personality.
 
-1. Запитай: «Що трапилось?» (Ask: "What happened?")
-2. Вислухай уважно людину. (Listen carefully to the person.)
-3. Скажи: «Мені шкода це чути.» (Say: "I'm sorry to hear this.")
-4. Обійми або візьми за руку. (Hug or take their hand.)
-5. Скажи: «Все буде добре.» (Say: "Everything will be fine.")
-6. Запропонуй допомогу. (Offer help.)
+1. Мені | дуже | сумно | коли | друзі | далеко | від | мене
+   > [!answer] Мені дуже сумно, коли друзі далеко від мене.
+   > (I feel very sad when friends are far from me.)
+
+2. Він | завжди | чесний | з | друзями | та | родиною
+   > [!answer] Він завжди чесний з друзями та родиною.
+   > (He is always honest with friends and family.)
+
+3. Не | хвилюйся | все | буде | добре | я | обіцяю
+   > [!answer] Не хвилюйся, все буде добре, я обіцяю.
+   > (Don't worry, everything will be fine, I promise.)
+
+4. Вона | дуже | добра | людина | і | допомагає | всім
+   > [!answer] Вона дуже добра людина і допомагає всім.
+   > (She is a very kind person and helps everyone.)
+
+5. Я | боюся | темряви | тому | завжди | вмикаю | світло
+   > [!answer] Я боюся темряви, тому завжди вмикаю світло.
+   > (I'm afraid of the dark, so I always turn on the light.)
+
+6. Будь | терплячим | та | все | вийде | як | треба
+   > [!answer] Будь терплячим, та все вийде як треба.
+   > (Be patient, and everything will work out as needed.)
+
+7. Мій | брат | дуже | сміливий | він | нічого | не | боїться
+   > [!answer] Мій брат дуже сміливий, він нічого не боїться.
+   > (My brother is very brave, he's not afraid of anything.)
+
+8. Я | радію | твоєму | успіху | це | чудові | новини
+   > [!answer] Я радію твоєму успіху, це чудові новини!
+   > (I rejoice at your success, this is wonderful news!)
+
+9. Вона | стурбована | ситуацією | і | не | знає | що | робити
+   > [!answer] Вона стурбована ситуацією і не знає, що робити.
+   > (She is concerned about the situation and doesn't know what to do.)
+
+10. Він | занадто | лінивий | щоб | робити | домашнє | завдання
+    > [!answer] Він занадто лінивий, щоб робити домашнє завдання.
+    > (He is too lazy to do homework.)
+
+11. Моя | бабуся | дуже | щедра | і | завжди | дарує | подарунки
+    > [!answer] Моя бабуся дуже щедра і завжди дарує подарунки.
+    > (My grandmother is very generous and always gives gifts.)
+
+12. Чому | ти | так | злишся | на | мене | сьогодні
+    > [!answer] Чому ти так злишся на мене сьогодні?
+    > (Why are you so angry at me today?)
 
 ## quiz: Emotional Intelligence
 

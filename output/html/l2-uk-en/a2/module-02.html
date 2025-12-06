@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -954,11 +995,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Dative Noun Mastery</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Giving Sentences with Dative</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Dative Noun Mastery</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -985,7 +1033,7 @@ footer {
   </main><footer>Module 02 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Noun Endings","data":{"type":"fill-blank","items":[{"prompt":"Я даю книгу ___. (друг)","answer":"другові","options":["другові","друга","друг","другом"]},{"prompt":"Вона телефонує ___. (сестра)","answer":"сестрі","options":["сестрі","сестра","сестру","сестрою"]},{"prompt":"Ми пишемо ___. (батьки)","answer":"батькам","options":["батькам","батьків","батьки","батьками"]},{"prompt":"Він показує фото ___. (мама)","answer":"мамі","options":["мамі","мама","маму","мамою"]},{"prompt":"Вчитель пояснює урок ___. (студенти)","answer":"студентам","options":["студентам","студентів","студенти","студентами"]},{"prompt":"Я допомагаю ___. (брат)","answer":"братові","options":["братові","брата","брат","братом"]},{"prompt":"Вона розповідає казку ___. (діти)","answer":"дітям","options":["дітям","дітей","діти","дітьми"]},{"prompt":"Ми дякуємо ___. (вчитель)","answer":"вчителеві","options":["вчителеві","вчителя","вчитель","вчителем"]},{"prompt":"Він дарує квіти ___. (дівчина)","answer":"дівчині","options":["дівчині","дівчина","дівчину","дівчиною"]},{"prompt":"Я посилаю листа ___. (друзі)","answer":"друзям","options":["друзям","друзів","друзі","друзями"]},{"prompt":"Вона пояснює правила ___. (учень)","answer":"учневі","options":["учневі","учня","учень","учнем"]},{"prompt":"Ми даємо їжу ___. (собака)","answer":"собаці","options":["собаці","собака","собаку","собакою"]}]}},{"id":"activity-1","type":"unjumble","title":"Dative Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","цікаву","даю","другові","своєму","Я","на","день","народження"],"answer":"Я даю своєму другові цікаву книгу на день народження.","translation":"I give my friend an interesting book for his birthday."},{"words":["сестрі","старшій","Вона","телефонує","щодня","ввечері","після","роботи"],"answer":"Вона телефонує старшій сестрі щодня ввечері після роботи.","translation":"She calls her older sister every evening after work."},{"words":["батькам","своїм","пишемо","довгого","листа","Ми","кожного","місяця"],"answer":"Ми пишемо своїм батькам довгого листа кожного місяця.","translation":"We write our parents a long letter every month."},{"words":["маленьким","дітям","розповідає","цікаву","казку","Мама","перед","сном"],"answer":"Мама розповідає маленьким дітям цікаву казку перед сном.","translation":"Mom tells the little children an interesting story before bed."},{"words":["новим","студентам","Вчитель","пояснює","складну","граматику","дуже","терпляче"],"answer":"Вчитель дуже терпляче пояснює новим студентам складну граматику.","translation":"The teacher patiently explains complex grammar to new students."},{"words":["мамі","рідній","допомагаю","Я","вдома","кожного","вихідного","дня"],"answer":"Я допомагаю рідній мамі вдома кожного вихідного дня.","translation":"I help my dear mom at home every weekend."},{"words":["гарні","квіти","дарує","молодій","дівчині","Він","на","свято"],"answer":"Він дарує молодій дівчині гарні квіти на свято.","translation":"He gives the young girl beautiful flowers for the holiday."},{"words":["найкращим","друзям","посилаю","нові","фото","Я","з","подорожі"],"answer":"Я посилаю найкращим друзям нові фото з подорожі.","translation":"I send my best friends new photos from the trip."},{"words":["молодшому","братові","показує","нову","машину","Вона","з","гордістю"],"answer":"Вона з гордістю показує молодшому братові нову машину.","translation":"She proudly shows her younger brother the new car."},{"words":["голодній","собаці","даємо","смачну","їжу","Ми","кожного","ранку"],"answer":"Ми даємо голодній собаці смачну їжу кожного ранку.","translation":"We give the hungry dog tasty food every morning."},{"words":["новим","учням","пояснюю","важливі","правила","Я","на","першому","уроці"],"answer":"Я пояснюю новим учням важливі правила на першому уроці.","translation":"I explain important rules to new students in the first lesson."},{"words":["улюбленому","вчителеві","дякуємо","за","чудовий","урок","Ми","щиро"],"answer":"Ми щиро дякуємо улюбленому вчителеві за чудовий урок.","translation":"We sincerely thank our favorite teacher for a wonderful lesson."}]}},{"id":"activity-2","type":"match-up","title":"Nominative to Dative","data":{"type":"match-up","pairs":[{"left":"друг","right":"другові"},{"left":"сестра","right":"сестрі"},{"left":"вчитель","right":"вчителеві"},{"left":"мама","right":"мамі"},{"left":"батьки","right":"батькам"},{"left":"діти","right":"дітям"},{"left":"брат","right":"братові"},{"left":"подруга","right":"подрузі"},{"left":"студент","right":"студентові"},{"left":"дівчина","right":"дівчині"},{"left":"місто","right":"місту"},{"left":"село","right":"селу"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Dative Nouns","data":{"type":"quiz","questions":[{"question":"What is the dative of \"друг\"?","options":["друга","другові","другом","друг"],"correctIndex":1,"explanation":"Masculine nouns take -ові/-у in dative."},{"question":"What is the dative of \"сестра\"?","options":["сестру","сестрою","сестрі","сестра"],"correctIndex":2,"explanation":"Feminine -а nouns change to -і in dative."},{"question":"\"Я телефоную ___\" (брат) — which form is correct?","options":["брата","братові","братом","брат"],"correctIndex":1,"explanation":"Телефонувати requires dative."},{"question":"What is the dative plural ending?","options":["-ів/-ей","-ами/-ями","-ам/-ям","-ах/-ях"],"correctIndex":2,"explanation":"All genders use -ам/-ям in dative plural."},{"question":"\"подруга\" becomes ___ in dative.","options":["подругу","подругою","подрузі","подруга"],"correctIndex":2,"explanation":"The г changes to з before -і."},{"question":"Which verb requires dative?","options":["читати","бачити","допомагати","любити"],"correctIndex":2,"explanation":"Допомагати + dative (to help someone)."},{"question":"What is the dative of \"діти\"?","options":["дітей","дітьми","дітям","діти"],"correctIndex":2,"explanation":"Plural dative: -ям."},{"question":"\"Я даю книгу ___\" — the friend receives, so use:","options":["accusative","dative","genitive","locative"],"correctIndex":1,"explanation":"The recipient is always in dative."},{"question":"What is the dative of \"місто\"?","options":["міста","містом","місту","місті"],"correctIndex":2,"explanation":"Neuter -о nouns take -у in dative."},{"question":"Which sentence is correct?","options":["Я показую сестра фото.","Я показую сестрі фото.","Я показую сестру фото.","Я показую сестрою фото."],"correctIndex":1,"explanation":"Показувати + dative (recipient) + accusative (thing)."},{"question":"\"вчитель\" becomes ___ in dative.","options":["вчителя","вчителем","вчителеві","вчитель"],"correctIndex":2,"explanation":"Soft masculine nouns take -еві."},{"question":"The dative of \"батьки\" is:","options":["батьків","батьками","батькам","батьках"],"correctIndex":2,"explanation":"Plural dative ending is -ам."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Dative Facts","data":{"type":"true-false","statements":[{"statement":"Masculine nouns can take either -ові or -у in dative singular.","isTrue":true,"explanation":"Correct! Both forms are acceptable: другові/другу."},{"statement":"Feminine -а nouns take -у in dative.","isTrue":false,"explanation":"Incorrect. They take -і: сестра → сестрі."},{"statement":"The dative plural ending is -ам/-ям for all genders.","isTrue":true,"explanation":"Correct! Батькам, друзям, студентам."},{"statement":"\"Допомагати\" requires the dative case.","isTrue":true,"explanation":"Correct! Я допомагаю мамі."},{"statement":"\"Подруга\" becomes \"подрузу\" in dative.","isTrue":false,"explanation":"Incorrect. It's \"подрузі\" — г changes to з before -і."},{"statement":"\"Давати\" takes both dative (recipient) and accusative (thing).","isTrue":true,"explanation":"Correct! Я даю братові (dat) книгу (acc)."},{"statement":"Neuter nouns take -і in dative.","isTrue":false,"explanation":"Incorrect. They take -у/-ю: місто → місту."},{"statement":"\"Телефонувати\" requires the dative case.","isTrue":true,"explanation":"Correct! Я телефоную другові."},{"statement":"\"Дітям\" is the dative plural of \"діти.\"","isTrue":true,"explanation":"Correct! Діти → дітям."},{"statement":"\"К\" changes to \"с\" before the dative -і ending.","isTrue":false,"explanation":"Incorrect. К changes to Ц: дівчинка → дівчинці."},{"statement":"\"Розповідати\" takes dative + accusative.","isTrue":true,"explanation":"Correct! Я розповідаю дітям (dat) казку (acc)."},{"statement":"Word order is flexible with dative constructions.","isTrue":true,"explanation":"Correct! \"Даю братові книгу\" and \"Даю книгу братові\" are both fine."}]}},{"id":"activity-5","type":"group-sort","title":"Dative Endings","data":{"type":"group-sort","groups":[{"id":"--","name":"-ові/-еві","items":["другові","братові","вчителеві","студентові"],"nameUk":"Masculine"},{"id":"-","name":"-і","items":["сестрі","мамі","подрузі","дівчині"],"nameUk":"Feminine"},{"id":"--","name":"-у/-ю","items":["місту","селу","морю","питанню"],"nameUk":"Neuter"},{"id":"--","name":"-ам/-ям","items":["батькам","друзям","дітям","студентам"],"nameUk":"Plural"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Dative with Adjectives","data":{"type":"fill-blank","items":[{"prompt":"Я допомагаю ___ ___. (old grandmother)","answer":"старій бабусі","options":["старій бабусі","стара бабуся","старої бабусі","старою бабусею"]},{"prompt":"Вона пише листа ___ ___. (best friend - female)","answer":"найкращій подрузі","options":["найкращій подрузі","найкраща подруга","найкращої подруги","найкращою подругою"]},{"prompt":"Ми даємо подарунки ___ ___. (little children)","answer":"маленьким дітям","options":["маленьким дітям","маленькі діти","маленьких дітей","маленькими дітьми"]},{"prompt":"Він показує фото ___ ___. (new colleague)","answer":"новому колезі","options":["новому колезі","новий колега","нового колеги","новим колегою"]},{"prompt":"Вчитель пояснює правила ___ ___. (foreign student - male)","answer":"іноземному студенту","options":["іноземному студенту","іноземний студент","іноземного студента","іноземним студентом"]},{"prompt":"Батько читає казку ___ ___. (young daughter)","answer":"молодій доньці","options":["молодій доньці","молода донька","молодої доньки","молодою донькою"]},{"prompt":"Я телефоную ___ ___. (older brother)","answer":"старшому братові","options":["старшому братові","старший брат","старшого брата","старшим братом"]},{"prompt":"Вона дарує квіти ___ ___. (dear mother)","answer":"дорогій мамі","options":["дорогій мамі","дорога мама","дорогої мами","дорогою мамою"]},{"prompt":"Ми допомагаємо ___ ___. (tired parents)","answer":"втомленим батькам","options":["втомленим батькам","втомлені батьки","втомлених батьків","втомленими батьками"]},{"prompt":"Він розповідає історію ___ ___. (interested listeners)","answer":"зацікавленим слухачам","options":["зацікавленим слухачам","зацікавлені слухачі","зацікавлених слухачів","зацікавленими слухачами"]},{"prompt":"Вона посилає листівку ___ ___. (beloved grandmother)","answer":"коханій бабусі","options":["коханій бабусі","кохана бабуся","коханої бабусі","коханою бабусею"]},{"prompt":"Я пояснюю граматику ___ ___. (new students - plural)","answer":"новим студентам","options":["новим студентам","нові студенти","нових студентів","новими студентами"]}]}},{"id":"activity-7","type":"select","title":"Consonant Changes","data":{"type":"select","items":[{"question":"подруга → ___","options":[{"text":"подрузі","correct":true},{"text":"подругі","correct":false},{"text":"подругові","correct":false},{"text":"подругою","correct":false}]},{"question":"рука → ___","options":[{"text":"руці","correct":true},{"text":"рукі","correct":false},{"text":"рукові","correct":false},{"text":"рукою","correct":false}]},{"question":"нога → ___","options":[{"text":"нозі","correct":true},{"text":"ногі","correct":false},{"text":"ногові","correct":false},{"text":"ногою","correct":false}]},{"question":"дівчинка → ___","options":[{"text":"дівчинці","correct":true},{"text":"дівчинкі","correct":false},{"text":"дівчинкові","correct":false},{"text":"дівчинкою","correct":false}]},{"question":"книжка → ___","options":[{"text":"книжці","correct":true},{"text":"книжкі","correct":false},{"text":"книжкові","correct":false},{"text":"книжкою","correct":false}]},{"question":"бабуся → ___","options":[{"text":"бабусі","correct":true},{"text":"бабусьі","correct":false},{"text":"бабусьові","correct":false},{"text":"бабусею","correct":false}]},{"question":"дочка → ___","options":[{"text":"дочці","correct":true},{"text":"дочкі","correct":false},{"text":"дочкові","correct":false},{"text":"дочкою","correct":false}]},{"question":"внучка → ___","options":[{"text":"внучці","correct":true},{"text":"внучкі","correct":false},{"text":"внучкові","correct":false},{"text":"внучкою","correct":false}]},{"question":"річка → ___","options":[{"text":"річці","correct":true},{"text":"річкі","correct":false},{"text":"річкові","correct":false},{"text":"річкою","correct":false}]},{"question":"мишка → ___","options":[{"text":"мишці","correct":true},{"text":"мишкі","correct":false},{"text":"мишкові","correct":false},{"text":"мишкою","correct":false}]},{"question":"кішка → ___","options":[{"text":"кішці","correct":true},{"text":"кішкі","correct":false},{"text":"кішкові","correct":false},{"text":"кішкою","correct":false}]},{"question":"чашка → ___","options":[{"text":"чашці","correct":true},{"text":"чашкі","correct":false},{"text":"чашкові","correct":false},{"text":"чашкою","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Dative Noun Mastery","data":{"type":"quiz","questions":[{"question":"What happens to \"г\" before the dative ending -і?","options":["It stays the same","It changes to \"з\"","It changes to \"ж\"","It disappears"],"correctIndex":1,"explanation":"Г → З: подруга → подрузі."},{"question":"What is the dative plural ending for all genders?","options":["-ів/-їв","-ам/-ям","-ами/-ями","-ах/-ях"],"correctIndex":1,"explanation":"Dative plural is -ам/-ям for all."},{"question":"\"Вчитель\" → dative is:","options":["вчителя","вчителеві","вчителем","вчителю"],"correctIndex":1,"explanation":"Soft masculine: -еві."},{"question":"Which verb takes ONLY dative (no accusative)?","options":["давати","допомагати","показувати","пояснювати"],"correctIndex":1,"explanation":"Допомагати takes only dative object."},{"question":"\"Місто\" → dative is:","options":["міста","місту","містом","місті"],"correctIndex":1,"explanation":"Neuter -о → -у in dative."},{"question":"What happens to \"к\" before dative -і?","options":["It stays the same","It changes to \"з\"","It changes to \"ц\"","It disappears"],"correctIndex":2,"explanation":"К → Ц: книжка → книжці."},{"question":"The dative of \"діти\" is:","options":["дітей","дітям","дітьми","дітях"],"correctIndex":1,"explanation":"Plural dative: -ям."},{"question":"Which is correct: \"Даю братові книгу\" or \"Даю брату книгу\"?","options":["Only \"братові\"","Only \"брату\"","Both are correct","Neither is correct"],"correctIndex":2,"explanation":"Masculine can take -ові or -у."},{"question":"\"Земля\" → dative is:","options":["землю","землі","землею","земля"],"correctIndex":1,"explanation":"Feminine -я → -і."},{"question":"What is the dative of \"море\"?","options":["моря","морю","морем","морі"],"correctIndex":1,"explanation":"Neuter -е → -ю."},{"question":"\"Показувати\" takes:","options":["Only dative","Only accusative","Dative + accusative","Neither"],"correctIndex":2,"explanation":"Показувати + dat (recipient) + acc (thing)."},{"question":"\"Дівчина\" → dative is:","options":["дівчину","дівчині","дівчиною","дівчина"],"correctIndex":1,"explanation":"Feminine -а → -і (but no consonant change)."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Dative Noun Endings","data":{"type":"fill-blank","items":[{"prompt":"Я даю книгу ___. (друг)","answer":"другові","options":["другові","друга","друг","другом"]},{"prompt":"Вона телефонує ___. (сестра)","answer":"сестрі","options":["сестрі","сестра","сестру","сестрою"]},{"prompt":"Ми пишемо ___. (батьки)","answer":"батькам","options":["батькам","батьків","батьки","батьками"]},{"prompt":"Він показує фото ___. (мама)","answer":"мамі","options":["мамі","мама","маму","мамою"]},{"prompt":"Вчитель пояснює урок ___. (студенти)","answer":"студентам","options":["студентам","студентів","студенти","студентами"]},{"prompt":"Я допомагаю ___. (брат)","answer":"братові","options":["братові","брата","брат","братом"]},{"prompt":"Вона розповідає казку ___. (діти)","answer":"дітям","options":["дітям","дітей","діти","дітьми"]},{"prompt":"Ми дякуємо ___. (вчитель)","answer":"вчителеві","options":["вчителеві","вчителя","вчитель","вчителем"]},{"prompt":"Він дарує квіти ___. (дівчина)","answer":"дівчині","options":["дівчині","дівчина","дівчину","дівчиною"]},{"prompt":"Я посилаю листа ___. (друзі)","answer":"друзям","options":["друзям","друзів","друзі","друзями"]},{"prompt":"Вона пояснює правила ___. (учень)","answer":"учневі","options":["учневі","учня","учень","учнем"]},{"prompt":"Ми даємо їжу ___. (собака)","answer":"собаці","options":["собаці","собака","собаку","собакою"]}]}},{"id":"activity-1","type":"unjumble","title":"Dative Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","цікаву","даю","другові","своєму","Я","на","день","народження"],"answer":"Я даю своєму другові цікаву книгу на день народження.","translation":"I give my friend an interesting book for his birthday."},{"words":["сестрі","старшій","Вона","телефонує","щодня","ввечері","після","роботи"],"answer":"Вона телефонує старшій сестрі щодня ввечері після роботи.","translation":"She calls her older sister every evening after work."},{"words":["батькам","своїм","пишемо","довгого","листа","Ми","кожного","місяця"],"answer":"Ми пишемо своїм батькам довгого листа кожного місяця.","translation":"We write our parents a long letter every month."},{"words":["маленьким","дітям","розповідає","цікаву","казку","Мама","перед","сном"],"answer":"Мама розповідає маленьким дітям цікаву казку перед сном.","translation":"Mom tells the little children an interesting story before bed."},{"words":["новим","студентам","Вчитель","пояснює","складну","граматику","дуже","терпляче"],"answer":"Вчитель дуже терпляче пояснює новим студентам складну граматику.","translation":"The teacher patiently explains complex grammar to new students."},{"words":["мамі","рідній","допомагаю","Я","вдома","кожного","вихідного","дня"],"answer":"Я допомагаю рідній мамі вдома кожного вихідного дня.","translation":"I help my dear mom at home every weekend."},{"words":["гарні","квіти","дарує","молодій","дівчині","Він","на","свято"],"answer":"Він дарує молодій дівчині гарні квіти на свято.","translation":"He gives the young girl beautiful flowers for the holiday."},{"words":["найкращим","друзям","посилаю","нові","фото","Я","з","подорожі"],"answer":"Я посилаю найкращим друзям нові фото з подорожі.","translation":"I send my best friends new photos from the trip."},{"words":["молодшому","братові","показує","нову","машину","Вона","з","гордістю"],"answer":"Вона з гордістю показує молодшому братові нову машину.","translation":"She proudly shows her younger brother the new car."},{"words":["голодній","собаці","даємо","смачну","їжу","Ми","кожного","ранку"],"answer":"Ми даємо голодній собаці смачну їжу кожного ранку.","translation":"We give the hungry dog tasty food every morning."},{"words":["новим","учням","пояснюю","важливі","правила","Я","на","першому","уроці"],"answer":"Я пояснюю новим учням важливі правила на першому уроці.","translation":"I explain important rules to new students in the first lesson."},{"words":["улюбленому","вчителеві","дякуємо","за","чудовий","урок","Ми","щиро"],"answer":"Ми щиро дякуємо улюбленому вчителеві за чудовий урок.","translation":"We sincerely thank our favorite teacher for a wonderful lesson."}]}},{"id":"activity-2","type":"match-up","title":"Nominative to Dative","data":{"type":"match-up","pairs":[{"left":"друг","right":"другові"},{"left":"сестра","right":"сестрі"},{"left":"вчитель","right":"вчителеві"},{"left":"мама","right":"мамі"},{"left":"батьки","right":"батькам"},{"left":"діти","right":"дітям"},{"left":"брат","right":"братові"},{"left":"подруга","right":"подрузі"},{"left":"студент","right":"студентові"},{"left":"дівчина","right":"дівчині"},{"left":"місто","right":"місту"},{"left":"село","right":"селу"}],"shuffleRight":true}},{"id":"activity-3","type":"quiz","title":"Dative Nouns","data":{"type":"quiz","questions":[{"question":"What is the dative of \"друг\"?","options":["друга","другові","другом","друг"],"correctIndex":1,"explanation":"Masculine nouns take -ові/-у in dative."},{"question":"What is the dative of \"сестра\"?","options":["сестру","сестрою","сестрі","сестра"],"correctIndex":2,"explanation":"Feminine -а nouns change to -і in dative."},{"question":"\"Я телефоную ___\" (брат) — which form is correct?","options":["брата","братові","братом","брат"],"correctIndex":1,"explanation":"Телефонувати requires dative."},{"question":"What is the dative plural ending?","options":["-ів/-ей","-ами/-ями","-ам/-ям","-ах/-ях"],"correctIndex":2,"explanation":"All genders use -ам/-ям in dative plural."},{"question":"\"подруга\" becomes ___ in dative.","options":["подругу","подругою","подрузі","подруга"],"correctIndex":2,"explanation":"The г changes to з before -і."},{"question":"Which verb requires dative?","options":["читати","бачити","допомагати","любити"],"correctIndex":2,"explanation":"Допомагати + dative (to help someone)."},{"question":"What is the dative of \"діти\"?","options":["дітей","дітьми","дітям","діти"],"correctIndex":2,"explanation":"Plural dative: -ям."},{"question":"\"Я даю книгу ___\" — the friend receives, so use:","options":["accusative","dative","genitive","locative"],"correctIndex":1,"explanation":"The recipient is always in dative."},{"question":"What is the dative of \"місто\"?","options":["міста","містом","місту","місті"],"correctIndex":2,"explanation":"Neuter -о nouns take -у in dative."},{"question":"Which sentence is correct?","options":["Я показую сестра фото.","Я показую сестрі фото.","Я показую сестру фото.","Я показую сестрою фото."],"correctIndex":1,"explanation":"Показувати + dative (recipient) + accusative (thing)."},{"question":"\"вчитель\" becomes ___ in dative.","options":["вчителя","вчителем","вчителеві","вчитель"],"correctIndex":2,"explanation":"Soft masculine nouns take -еві."},{"question":"The dative of \"батьки\" is:","options":["батьків","батьками","батькам","батьках"],"correctIndex":2,"explanation":"Plural dative ending is -ам."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Dative Facts","data":{"type":"true-false","statements":[{"statement":"Masculine nouns can take either -ові or -у in dative singular.","isTrue":true,"explanation":"Correct! Both forms are acceptable: другові/другу."},{"statement":"Feminine -а nouns take -у in dative.","isTrue":false,"explanation":"Incorrect. They take -і: сестра → сестрі."},{"statement":"The dative plural ending is -ам/-ям for all genders.","isTrue":true,"explanation":"Correct! Батькам, друзям, студентам."},{"statement":"\"Допомагати\" requires the dative case.","isTrue":true,"explanation":"Correct! Я допомагаю мамі."},{"statement":"\"Подруга\" becomes \"подрузу\" in dative.","isTrue":false,"explanation":"Incorrect. It's \"подрузі\" — г changes to з before -і."},{"statement":"\"Давати\" takes both dative (recipient) and accusative (thing).","isTrue":true,"explanation":"Correct! Я даю братові (dat) книгу (acc)."},{"statement":"Neuter nouns take -і in dative.","isTrue":false,"explanation":"Incorrect. They take -у/-ю: місто → місту."},{"statement":"\"Телефонувати\" requires the dative case.","isTrue":true,"explanation":"Correct! Я телефоную другові."},{"statement":"\"Дітям\" is the dative plural of \"діти.\"","isTrue":true,"explanation":"Correct! Діти → дітям."},{"statement":"\"К\" changes to \"с\" before the dative -і ending.","isTrue":false,"explanation":"Incorrect. К changes to Ц: дівчинка → дівчинці."},{"statement":"\"Розповідати\" takes dative + accusative.","isTrue":true,"explanation":"Correct! Я розповідаю дітям (dat) казку (acc)."},{"statement":"Word order is flexible with dative constructions.","isTrue":true,"explanation":"Correct! \"Даю братові книгу\" and \"Даю книгу братові\" are both fine."}]}},{"id":"activity-5","type":"group-sort","title":"Dative Endings","data":{"type":"group-sort","groups":[{"id":"--","name":"-ові/-еві","items":["другові","братові","вчителеві","студентові"],"nameUk":"Masculine"},{"id":"-","name":"-і","items":["сестрі","мамі","подрузі","дівчині"],"nameUk":"Feminine"},{"id":"--","name":"-у/-ю","items":["місту","селу","морю","питанню"],"nameUk":"Neuter"},{"id":"--","name":"-ам/-ям","items":["батькам","друзям","дітям","студентам"],"nameUk":"Plural"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Dative with Adjectives","data":{"type":"fill-blank","items":[{"prompt":"Я допомагаю ___ ___. (old grandmother)","answer":"старій бабусі","options":["старій бабусі","стара бабуся","старої бабусі","старою бабусею"]},{"prompt":"Вона пише листа ___ ___. (best friend - female)","answer":"найкращій подрузі","options":["найкращій подрузі","найкраща подруга","найкращої подруги","найкращою подругою"]},{"prompt":"Ми даємо подарунки ___ ___. (little children)","answer":"маленьким дітям","options":["маленьким дітям","маленькі діти","маленьких дітей","маленькими дітьми"]},{"prompt":"Він показує фото ___ ___. (new colleague)","answer":"новому колезі","options":["новому колезі","новий колега","нового колеги","новим колегою"]},{"prompt":"Вчитель пояснює правила ___ ___. (foreign student - male)","answer":"іноземному студенту","options":["іноземному студенту","іноземний студент","іноземного студента","іноземним студентом"]},{"prompt":"Батько читає казку ___ ___. (young daughter)","answer":"молодій доньці","options":["молодій доньці","молода донька","молодої доньки","молодою донькою"]},{"prompt":"Я телефоную ___ ___. (older brother)","answer":"старшому братові","options":["старшому братові","старший брат","старшого брата","старшим братом"]},{"prompt":"Вона дарує квіти ___ ___. (dear mother)","answer":"дорогій мамі","options":["дорогій мамі","дорога мама","дорогої мами","дорогою мамою"]},{"prompt":"Ми допомагаємо ___ ___. (tired parents)","answer":"втомленим батькам","options":["втомленим батькам","втомлені батьки","втомлених батьків","втомленими батьками"]},{"prompt":"Він розповідає історію ___ ___. (interested listeners)","answer":"зацікавленим слухачам","options":["зацікавленим слухачам","зацікавлені слухачі","зацікавлених слухачів","зацікавленими слухачами"]},{"prompt":"Вона посилає листівку ___ ___. (beloved grandmother)","answer":"коханій бабусі","options":["коханій бабусі","кохана бабуся","коханої бабусі","коханою бабусею"]},{"prompt":"Я пояснюю граматику ___ ___. (new students - plural)","answer":"новим студентам","options":["новим студентам","нові студенти","нових студентів","новими студентами"]}]}},{"id":"activity-7","type":"select","title":"Consonant Changes","data":{"type":"select","items":[{"question":"подруга → ___","options":[{"text":"подрузі","correct":true},{"text":"подругі","correct":false},{"text":"подругові","correct":false},{"text":"подругою","correct":false}]},{"question":"рука → ___","options":[{"text":"руці","correct":true},{"text":"рукі","correct":false},{"text":"рукові","correct":false},{"text":"рукою","correct":false}]},{"question":"нога → ___","options":[{"text":"нозі","correct":true},{"text":"ногі","correct":false},{"text":"ногові","correct":false},{"text":"ногою","correct":false}]},{"question":"дівчинка → ___","options":[{"text":"дівчинці","correct":true},{"text":"дівчинкі","correct":false},{"text":"дівчинкові","correct":false},{"text":"дівчинкою","correct":false}]},{"question":"книжка → ___","options":[{"text":"книжці","correct":true},{"text":"книжкі","correct":false},{"text":"книжкові","correct":false},{"text":"книжкою","correct":false}]},{"question":"бабуся → ___","options":[{"text":"бабусі","correct":true},{"text":"бабусьі","correct":false},{"text":"бабусьові","correct":false},{"text":"бабусею","correct":false}]},{"question":"дочка → ___","options":[{"text":"дочці","correct":true},{"text":"дочкі","correct":false},{"text":"дочкові","correct":false},{"text":"дочкою","correct":false}]},{"question":"внучка → ___","options":[{"text":"внучці","correct":true},{"text":"внучкі","correct":false},{"text":"внучкові","correct":false},{"text":"внучкою","correct":false}]},{"question":"річка → ___","options":[{"text":"річці","correct":true},{"text":"річкі","correct":false},{"text":"річкові","correct":false},{"text":"річкою","correct":false}]},{"question":"мишка → ___","options":[{"text":"мишці","correct":true},{"text":"мишкі","correct":false},{"text":"мишкові","correct":false},{"text":"мишкою","correct":false}]},{"question":"кішка → ___","options":[{"text":"кішці","correct":true},{"text":"кішкі","correct":false},{"text":"кішкові","correct":false},{"text":"кішкою","correct":false}]},{"question":"чашка → ___","options":[{"text":"чашці","correct":true},{"text":"чашкі","correct":false},{"text":"чашкові","correct":false},{"text":"чашкою","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Giving Sentences with Dative","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","Я","даю","цікаву","другові","нову","сьогодні"],"answer":"Я сьогодні даю другові нову цікаву книгу.","translation":"Today I give my friend a new interesting book."},{"words":["мамі","Він","допомагає","готувати","вечерю","завжди","смачну"],"answer":"Він завжди допомагає мамі готувати смачну вечерю.","translation":"He always helps mom cook a tasty dinner."},{"words":["вчителеві","Студенти","дякують","за","урок","цікавий","дуже"],"answer":"Студенти дуже дякують вчителеві за цікавий урок.","translation":"Students really thank the teacher for the interesting lesson."},{"words":["подрузі","Вона","показує","нову","сукню","гарну","свою"],"answer":"Вона показує подрузі свою нову гарну сукню.","translation":"She shows her friend her new beautiful dress."},{"words":["лікареві","Хворий","розповідає","про","симптоми","свої","всі"],"answer":"Хворий розповідає лікареві про всі свої симптоми.","translation":"The patient tells the doctor about all his symptoms."},{"words":["сестрі","Брат","купує","подарунок","гарний","день","на","народження"],"answer":"Брат купує сестрі гарний подарунок на день народження.","translation":"Brother buys sister a nice birthday present."},{"words":["бабусі","Внук","телефонує","щодня","своїй","коханій","ввечері"],"answer":"Внук щодня ввечері телефонує своїй коханій бабусі.","translation":"Grandson calls his dear grandmother every evening."},{"words":["колезі","Я","пояснюю","нову","задачу","складну","важку"],"answer":"Я пояснюю колезі нову складну важку задачу.","translation":"I explain a new difficult task to my colleague."},{"words":["батькові","Дочка","приносить","каву","гарячу","ранку","кожного"],"answer":"Дочка кожного ранку приносить батькові гарячу каву.","translation":"Daughter brings father hot coffee every morning."},{"words":["дитині","Мама","читає","казку","цікаву","на","ніч","кожну"],"answer":"Мама кожну ніч читає дитині цікаву казку.","translation":"Mom reads the child an interesting fairy tale every night."},{"words":["другові","Я","пишу","листа","довгого","сьогодні","українською"],"answer":"Я сьогодні пишу другові довгого листа українською.","translation":"Today I'm writing my friend a long letter in Ukrainian."},{"words":["студентці","Викладач","відповідає","на","питання","важке","терпляче"],"answer":"Викладач терпляче відповідає студентці на важке питання.","translation":"The lecturer patiently answers the student's difficult question."}]}},{"id":"activity-9","type":"quiz","title":"Dative Noun Mastery","data":{"type":"quiz","questions":[{"question":"What happens to \"г\" before the dative ending -і?","options":["It stays the same","It changes to \"з\"","It changes to \"ж\"","It disappears"],"correctIndex":1,"explanation":"Г → З: подруга → подрузі."},{"question":"What is the dative plural ending for all genders?","options":["-ів/-їв","-ам/-ям","-ами/-ями","-ах/-ях"],"correctIndex":1,"explanation":"Dative plural is -ам/-ям for all."},{"question":"\"Вчитель\" → dative is:","options":["вчителя","вчителеві","вчителем","вчителю"],"correctIndex":1,"explanation":"Soft masculine: -еві."},{"question":"Which verb takes ONLY dative (no accusative)?","options":["давати","допомагати","показувати","пояснювати"],"correctIndex":1,"explanation":"Допомагати takes only dative object."},{"question":"\"Місто\" → dative is:","options":["міста","місту","містом","місті"],"correctIndex":1,"explanation":"Neuter -о → -у in dative."},{"question":"What happens to \"к\" before dative -і?","options":["It stays the same","It changes to \"з\"","It changes to \"ц\"","It disappears"],"correctIndex":2,"explanation":"К → Ц: книжка → книжці."},{"question":"The dative of \"діти\" is:","options":["дітей","дітям","дітьми","дітях"],"correctIndex":1,"explanation":"Plural dative: -ям."},{"question":"Which is correct: \"Даю братові книгу\" or \"Даю брату книгу\"?","options":["Only \"братові\"","Only \"брату\"","Both are correct","Neither is correct"],"correctIndex":2,"explanation":"Masculine can take -ові or -у."},{"question":"\"Земля\" → dative is:","options":["землю","землі","землею","земля"],"correctIndex":1,"explanation":"Feminine -я → -і."},{"question":"What is the dative of \"море\"?","options":["моря","морю","морем","морі"],"correctIndex":1,"explanation":"Neuter -е → -ю."},{"question":"\"Показувати\" takes:","options":["Only dative","Only accusative","Dative + accusative","Neither"],"correctIndex":2,"explanation":"Показувати + dat (recipient) + acc (thing)."},{"question":"\"Дівчина\" → dative is:","options":["дівчину","дівчині","дівчиною","дівчина"],"correctIndex":1,"explanation":"Feminine -а → -і (but no consonant change)."}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"давати","translit":"","en":"to give","note":"+ dat + acc"},{"uk":"дарувати","translit":"","en":"to gift, present","note":"+ dat + acc"},{"uk":"посилати","translit":"","en":"to send","note":"+ dat + acc"},{"uk":"надсилати","translit":"","en":"to send","note":"+ dat + acc (formal)"},{"uk":"показувати","translit":"","en":"to show","note":"+ dat + acc"},{"uk":"пояснювати","translit":"","en":"to explain","note":"+ dat + acc"},{"uk":"розповідати","translit":"","en":"to tell, narrate","note":"+ dat + acc"},{"uk":"допомагати","translit":"","en":"to help","note":"+ dat only"},{"uk":"заважати","translit":"","en":"to bother, disturb","note":"+ dat only"},{"uk":"подобатися","translit":"","en":"to please","note":"+ dat"},{"uk":"личити","translit":"","en":"to suit, become","note":"+ dat"},{"uk":"підходити","translit":"","en":"to suit, fit","note":"+ dat"},{"uk":"пасувати","translit":"","en":"to match, suit","note":"+ dat"},{"uk":"вистачати","translit":"","en":"to suffice, be enough","note":"+ dat"},{"uk":"бракувати","translit":"","en":"to lack","note":"+ dat"},{"uk":"шкодити","translit":"","en":"to harm","note":"+ dat"},{"uk":"вірити","translit":"","en":"to believe","note":"+ dat"},{"uk":"довіряти","translit":"","en":"to trust","note":"+ dat"},{"uk":"радити","translit":"","en":"to advise","note":"+ dat + inf"},{"uk":"дозволяти","translit":"","en":"to allow","note":"+ dat + inf"},{"uk":"забороняти","translit":"","en":"to forbid","note":"+ dat + inf"},{"uk":"відповідати","translit":"","en":"to answer, reply","note":"+ dat"},{"uk":"телефонувати","translit":"","en":"to call (phone)","note":"+ dat"},{"uk":"писати","translit":"","en":"to write","note":"+ dat + acc"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2310,6 +2358,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

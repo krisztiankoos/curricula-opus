@@ -722,16 +722,57 @@ Read these sentences aloud, paying attention to preposition + case combinations:
     - [x] столом
     - [ ] столі
 
-## order: Daily Routine with Prepositions
+## unjumble: Preposition Sentences
 
-> Put these actions in the order they typically happen during a day.
+> Reorder the words to form correct sentences with prepositions.
 
-1. Я прокидаюся о сьомій ранку.
-2. Після сніданку я йду на роботу.
-3. Я працюю в офісі до п'ятої.
-4. Після роботи я йду в магазин.
-5. Увечері я сиджу перед телевізором.
-6. Я лягаю спати о одинадцятій.
+1. о / Я / прокидаюся / сьомій / ранку / кожного / дня / завжди
+   > [!answer] Я завжди прокидаюся о сьомій ранку кожного дня.
+   > (I always wake up at seven in the morning every day.) [8 words]
+
+2. сніданку / Після / я / йду / на / роботу / швидко / нову
+   > [!answer] Після сніданку я швидко йду на нову роботу.
+   > (After breakfast I quickly go to my new job.) [8 words]
+
+3. офісі / Я / в / працюю / великому / до / п'ятої / нашому
+   > [!answer] Я працюю в нашому великому офісі до п'ятої.
+   > (I work in our big office until five.) [8 words]
+
+4. роботи / Після / я / в / йду / магазин / новий / великий
+   > [!answer] Після роботи я йду в новий великий магазин.
+   > (After work I go to the new big store.) [8 words]
+
+5. телевізором / Увечері / я / перед / сиджу / великим / своїм / новим
+   > [!answer] Увечері я сиджу перед своїм новим великим телевізором.
+   > (In the evening I sit in front of my new big TV.) [8 words]
+
+6. спати / Я / о / лягаю / одинадцятій / годині / кожну / ніч
+   > [!answer] Я лягаю спати о одинадцятій годині кожну ніч.
+   > (I go to bed at eleven o'clock every night.) [8 words]
+
+7. столом / Він / за / сидить / великим / кожного / ранку / письмовим
+   > [!answer] Він кожного ранку сидить за великим письмовим столом.
+   > (Every morning he sits at the big writing desk.) [8 words]
+
+8. деревом / Кіт / під / сидить / великим / нашим / зеленим / старим
+   > [!answer] Кіт сидить під нашим великим старим зеленим деревом.
+   > (The cat sits under our big old green tree.) [8 words]
+
+9. магазину / Вона / з / вийшла / нового / великого / продуктового / щойно
+   > [!answer] Вона щойно вийшла з нового великого продуктового магазину.
+   > (She just came out of the new big grocery store.) [8 words]
+
+10. вікна / Ми / біля / стоїмо / великого / нашого / красивого / нового
+    > [!answer] Ми стоїмо біля нашого великого красивого нового вікна.
+    > (We stand near our big beautiful new window.) [8 words]
+
+11. кімнаті / Діти / в / граються / великій / своїй / кожного / дня
+    > [!answer] Діти граються в своїй великій кімнаті кожного дня.
+    > (Children play in their big room every day.) [8 words]
+
+12. будинку / Вони / без / вийшли / нашого / з / парасольки / великого
+    > [!answer] Вони вийшли з нашого великого будинку без парасольки.
+    > (They left our big building without an umbrella.) [8 words]
 
 ## quiz: Preposition Mastery
 

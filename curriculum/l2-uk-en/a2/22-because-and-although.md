@@ -574,27 +574,57 @@ Simple contrast:
     - [ ] Бо
     - [ ] Тому
 
-## order: From Cause to Effect
+## unjumble: Causal and Contrast Sentences
 
-> Arrange the logical flow from reason to result.
+> Rearrange the words to form correct sentences with conjunctions.
 
-1. причина → тому що → наслідок → тому
-   > [!answer] Cause → because → consequence → therefore
+1. я | не | прийшов | тому | що | був | хворий
+   > [!answer] Я не прийшов, тому що був хворий.
+   > (I didn't come because I was sick.)
 
-2. оскільки → умова → то → результат
-   > [!answer] Since → condition → then → result
+2. він | пішов | на | роботу | хоча | погано | почувався
+   > [!answer] Він пішов на роботу, хоча погано почувався.
+   > (He went to work although he felt bad.)
 
-3. погано → але → все-таки → добре
-   > [!answer] Bad → but → nevertheless → good
+3. оскільки | було | пізно | ми | поспішали
+   > [!answer] Оскільки було пізно, ми поспішали.
+   > (Since it was late, we hurried.)
 
-4. холодно → хоча → вийшов → прогулянка
-   > [!answer] Cold → although → went out → walk
+4. вона | втомилася | однак | продовжувала | працювати
+   > [!answer] Вона втомилася, однак продовжувала працювати.
+   > (She got tired, however she continued to work.)
 
-5. хворий → тому що → лікарня → одужав
-   > [!answer] Sick → because → hospital → recovered
+5. дощ | йшов | але | ми | все | одно | вийшли
+   > [!answer] Дощ йшов, але ми все одно вийшли.
+   > (It was raining but we went out anyway.)
 
-6. пізно → оскільки → поспішати → встигнути
-   > [!answer] Late → since → hurry → make it
+6. я | запізнився | бо | автобус | не | прийшов
+   > [!answer] Я запізнився, бо автобус не прийшов.
+   > (I was late because the bus didn't come.)
+
+7. незважаючи | на | дощ | він | пішов | гуляти
+   > [!answer] Незважаючи на дощ, він пішов гуляти.
+   > (Despite the rain, he went for a walk.)
+
+8. тому | він | вивчає | українську | що | живе | в | Україні
+   > [!answer] Він вивчає українську, тому що живе в Україні.
+   > (He studies Ukrainian because he lives in Ukraine.)
+
+9. хоча | холодно | вона | не | одягла | куртку
+   > [!answer] Хоча холодно, вона не одягла куртку.
+   > (Although it's cold, she didn't put on a jacket.)
+
+10. він | працює | добре | тому | йому | підвищили | зарплату
+    > [!answer] Він працює добре, тому йому підвищили зарплату.
+    > (He works well, so they raised his salary.)
+
+11. проте | це | складно | я | спробую
+    > [!answer] Проте це складно, я спробую.
+    > (However it's difficult, I will try.)
+
+12. вона | не | їсть | м'яса | оскільки | вона | вегетаріанка
+    > [!answer] Вона не їсть м'яса, оскільки вона вегетаріанка.
+    > (She doesn't eat meat because she's a vegetarian.)
 
 ## quiz: Advanced Conjunction Usage
 

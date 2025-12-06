@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -1029,11 +1070,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Medical Situations</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Medical Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Medical Situations</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -1060,7 +1108,7 @@ footer {
   </main><footer>Module 29 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Medical Expressions","data":{"type":"fill-blank","items":[{"prompt":"У мене ___ голова. (hurts - singular)","answer":"болить"},{"prompt":"У мене ___ зуби. (hurt - plural)","answer":"болять"},{"prompt":"У мене ___. (fever)","answer":"температура"},{"prompt":"У мене сильний ___. (cough)","answer":"кашель"},{"prompt":"Візьміть ці ___. (medicine)","answer":"ліки"},{"prompt":"___ багато води. (drink - imperative)","answer":"Пийте"},{"prompt":"Що вас ___? (bothering)","answer":"турбує"},{"prompt":"У мене болить ___. (stomach)","answer":"живіт"},{"prompt":"Вам потрібен ___. (prescription)","answer":"рецепт"},{"prompt":"Де знаходиться ___? (pharmacy)","answer":"аптека"},{"prompt":"___ глибоко. (breathe - imperative)","answer":"Дихайте"},{"prompt":"Прийдіть через ___. (week)","answer":"тиждень"}]}},{"id":"activity-1","type":"match-up","title":"Body Parts","data":{"type":"match-up","pairs":[{"left":"голова","right":"head"},{"left":"горло","right":"throat"},{"left":"живіт","right":"stomach"},{"left":"спина","right":"back"},{"left":"серце","right":"heart"},{"left":"рука","right":"arm/hand"},{"left":"нога","right":"leg/foot"},{"left":"очі","right":"eyes"},{"left":"вуха","right":"ears"},{"left":"ніс","right":"nose"},{"left":"рот","right":"mouth"},{"left":"зуби","right":"teeth"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мене","болить","У","голова","дуже","вже","два","дні"],"answer":"У мене дуже болить голова вже два дні.","translation":"I've had a very bad headache for two days."},{"words":["турбує","вас","Що","сьогодні","скажіть","мені","будь ласка"],"answer":"Скажіть мені, будь ласка, що вас сьогодні турбує?","translation":"Please tell me, what's bothering you today?"},{"words":["болить","Де","саме","покажіть","мені","рукою","своєю","точно"],"answer":"Де саме болить? Покажіть мені точно своєю рукою.","translation":"Where exactly does it hurt? Show me precisely with your hand."},{"words":["ліки","ці","Візьміть","після","їжі","двічі","на","день"],"answer":"Візьміть ці ліки двічі на день після їжі.","translation":"Take this medicine twice a day after meals."},{"words":["мене","У","температура","висока","вже","третій","день","тримається"],"answer":"У мене висока температура тримається вже третій день.","translation":"I've had a high fever for three days now."},{"words":["води","багато","Пийте","та","відпочивайте","в","ліжку","обов'язково"],"answer":"Пийте багато води та обов'язково відпочивайте в ліжку.","translation":"Drink lots of water and definitely rest in bed."},{"words":["глибоко","Дихайте","та","затримайте","повітря","на","кілька","секунд"],"answer":"Дихайте глибоко та затримайте повітря на кілька секунд.","translation":"Breathe deeply and hold your breath for a few seconds."},{"words":["тиждень","через","Прийдіть","на","повторний","до","мене","огляд"],"answer":"Прийдіть до мене на повторний огляд через тиждень.","translation":"Come to me for a follow-up examination in a week."},{"words":["болять","У","мене","зуби","коли","п'ю","щось","холодне"],"answer":"У мене болять зуби, коли п'ю щось холодне.","translation":"My teeth hurt when I drink something cold."},{"words":["рецепт","Вам","потрібен","для","цих","ліків","йдіть","в","аптеку"],"answer":"Вам потрібен рецепт для цих ліків, йдіть в аптеку.","translation":"You need a prescription for this medicine, go to the pharmacy."},{"words":["рот","Відкрийте","широко","та","скажіть","покажіть","горло","мені"],"answer":"Відкрийте рот широко та покажіть мені горло.","translation":"Open your mouth wide and show me your throat."},{"words":["болить","тут","У","мене","з","правого","боку","сильно"],"answer":"У мене сильно болить тут, з правого боку.","translation":"It hurts me badly here, on the right side."}]}},{"id":"activity-3","type":"quiz","title":"Medical Knowledge","data":{"type":"quiz","questions":[{"question":"\"У мене болить голова\" means:","options":["I have a headache","My head is fine","I'm thinking","My head is big"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" is used with:","options":["Singular body parts","Plural body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Болять\" is used with:","options":["Plural body parts","Singular body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Ліки\" means:","options":["Medicine","Doctor","Hospital","Pain"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" is:","options":["Pharmacy","Hospital","Clinic","Doctor's office"],"correctIndex":0,"explanation":""},{"question":"\"Температура\" means:","options":["Fever/temperature","Cold","Pain","Cough"],"correctIndex":0,"explanation":""},{"question":"\"Лікар\" means:","options":["Doctor","Nurse","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["Cold (illness)","Flu","Allergy","Injury"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" means:","options":["Prescription","Receipt","Medicine","Hospital"],"correctIndex":0,"explanation":""},{"question":"\"Рука\" means:","options":["Arm and hand","Only arm","Only hand","Leg"],"correctIndex":0,"explanation":""},{"question":"\"Відпочивайте\" means:","options":["Rest (imperative)","Work","Eat","Drink"],"correctIndex":0,"explanation":""},{"question":"\"Біль\" means:","options":["Pain","Body","Doctor","Medicine"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Medical Facts","data":{"type":"true-false","statements":[{"statement":"\"Болить\" is for singular, \"болять\" for plural.","isTrue":true,"explanation":""},{"statement":"\"Рука\" means only \"hand.\"","isTrue":false,"explanation":""},{"statement":"\"Аптека\" is where you buy medicine.","isTrue":true,"explanation":""},{"statement":"\"Лікарня\" is a pharmacy.","isTrue":false,"explanation":""},{"statement":"\"Температура\" can mean fever.","isTrue":true,"explanation":""},{"statement":"\"Візьміть ліки\" is a command.","isTrue":true,"explanation":""},{"statement":"\"Грип\" is a cold.","isTrue":false,"explanation":""},{"statement":"\"Нога\" means arm.","isTrue":false,"explanation":""},{"statement":"\"Кашель\" is a symptom.","isTrue":true,"explanation":""},{"statement":"\"Рецепт\" is needed for some medicines.","isTrue":true,"explanation":""},{"statement":"\"Серце\" means stomach.","isTrue":false,"explanation":""},{"statement":"\"Що вас турбує?\" is a doctor's question.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Medical Categories","data":{"type":"group-sort","groups":[{"id":"body-parts","name":"Body Parts","items":["голова","живіт","рука"]},{"id":"symptoms","name":"Symptoms","items":["температура","кашель","біль"]},{"id":"medical-places","name":"Medical Places","items":["аптека","лікарня","поліклініка"]},{"id":"instructions","name":"Instructions","items":["пийте воду","відпочивайте","візьміть ліки"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Doctor-Patient Dialogue","data":{"type":"fill-blank","items":[{"prompt":"Лікар: Як довго це ___? (has been going on)","answer":"триває"},{"prompt":"Пацієнт: Це ___ вчора ввечері. (started)","answer":"почалося"},{"prompt":"Лікар: Покажіть, де саме ___. (hurts)","answer":"болить"},{"prompt":"Пацієнт: У мене сильний ___ у животі. (pain)","answer":"біль"},{"prompt":"Лікар: Вам потрібно здати ___. (tests)","answer":"аналізи"},{"prompt":"Пацієнт: У мене ще й ___ і нежить. (cough)","answer":"кашель"},{"prompt":"Лікар: У вас ___. Потрібен відпочинок. (cold illness)","answer":"застуда"},{"prompt":"Пацієнт: Яка у мене ___? (temperature)","answer":"температура"},{"prompt":"Лікар: Тридцять вісім і п'ять. Це ___. (fever/high)","answer":"висока"},{"prompt":"Пацієнт: Чи потрібен мені ___? (prescription)","answer":"рецепт"},{"prompt":"Лікар: Так, ці ___ тільки за рецептом. (medicines)","answer":"ліки"},{"prompt":"Пацієнт: Де найближча ___? (pharmacy)","answer":"аптека"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Medical Term","data":{"type":"select","items":[{"question":"У мене ___ голова.","options":[{"text":"болить","correct":true},{"text":"болять","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"У мене ___ зуби.","options":[{"text":"болять","correct":true},{"text":"болить","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"Ви маєте високу ___.","options":[{"text":"температуру","correct":true},{"text":"кашель","correct":false},{"text":"біль","correct":false},{"text":"застуду","correct":false}]},{"question":"Вам потрібен ___ для цих ліків.","options":[{"text":"рецепт","correct":true},{"text":"аптека","correct":false},{"text":"лікар","correct":false},{"text":"лікарня","correct":false}]},{"question":"___ глибоко і затримайте подих.","options":[{"text":"Дихайте","correct":true},{"text":"Пийте","correct":false},{"text":"Візьміть","correct":false},{"text":"Покажіть","correct":false}]},{"question":"У неї сильний ___ — вона не може говорити.","options":[{"text":"кашель","correct":true},{"text":"нежить","correct":false},{"text":"біль","correct":false},{"text":"температура","correct":false}]},{"question":"Його забрали до ___ на швидкій допомозі.","options":[{"text":"лікарні","correct":true},{"text":"аптеки","correct":false},{"text":"поліклініки","correct":false},{"text":"лікаря","correct":false}]},{"question":"___ оглянув пацієнта уважно.","options":[{"text":"Лікар","correct":true},{"text":"Ліки","correct":false},{"text":"Лікарня","correct":false},{"text":"Рецепт","correct":false}]},{"question":"Це ___ біль чи постійний?","options":[{"text":"гострий","correct":true},{"text":"голова","correct":false},{"text":"живіт","correct":false},{"text":"рука","correct":false}]},{"question":"У мене ___ — ніс закладений.","options":[{"text":"нежить","correct":true},{"text":"кашель","correct":false},{"text":"температура","correct":false},{"text":"біль","correct":false}]},{"question":"Медсестра зробила мені ___.","options":[{"text":"укол","correct":true},{"text":"ліки","correct":false},{"text":"рецепт","correct":false},{"text":"аптеку","correct":false}]},{"question":"У нього ___ — він кілька днів в ліжку.","options":[{"text":"грип","correct":true},{"text":"біль","correct":false},{"text":"рука","correct":false},{"text":"нога","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Medical Situations","data":{"type":"quiz","questions":[{"question":"What do you say first when visiting a doctor?","options":["Describe what's bothering you (Що мене турбує...)","Ask for medicine immediately","Demand a prescription","Complain about waiting"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" vs \"болять\" depends on:","options":["Whether the body part is singular or plural","Time of day","How strong the pain is","Doctor's preference"],"correctIndex":0,"explanation":""},{"question":"To say \"I have a fever,\" use:","options":["У мене температура","Я температура","Мені температура","Мене температура"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" is required for:","options":["Certain prescription medicines","All medicines","No medicines","Only vitamins"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" vs \"лікарня\":","options":["Аптека sells medicine; лікарня is hospital","They are the same","Аптека is larger","Лікарня sells medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["A cold (common illness)","A broken bone","Surgery","A pharmacy"],"correctIndex":0,"explanation":""},{"question":"When the doctor says \"Дихайте глибоко\":","options":["Take deep breaths","Stop breathing","Drink water","Open your mouth"],"correctIndex":0,"explanation":""},{"question":"\"Медсестра\" is:","options":["Nurse","Doctor","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Поліклініка\" is:","options":["Outpatient clinic","Hospital with beds","Pharmacy","Emergency room only"],"correctIndex":0,"explanation":""},{"question":"To describe pain intensity, use:","options":["сильний/слабкий біль","великий/малий біль","довгий/короткий біль","високий/низький біль"],"correctIndex":0,"explanation":""},{"question":"\"Прийдіть через тиждень\" means:","options":["Come back in a week","Wait for a week","Leave in a week","Stay for a week"],"correctIndex":0,"explanation":""},{"question":"\"У мене болить живіт\" — \"живіт\" is:","options":["Stomach/belly","Leg","Arm","Head"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Medical Expressions","data":{"type":"fill-blank","items":[{"prompt":"У мене ___ голова. (hurts - singular)","answer":"болить"},{"prompt":"У мене ___ зуби. (hurt - plural)","answer":"болять"},{"prompt":"У мене ___. (fever)","answer":"температура"},{"prompt":"У мене сильний ___. (cough)","answer":"кашель"},{"prompt":"Візьміть ці ___. (medicine)","answer":"ліки"},{"prompt":"___ багато води. (drink - imperative)","answer":"Пийте"},{"prompt":"Що вас ___? (bothering)","answer":"турбує"},{"prompt":"У мене болить ___. (stomach)","answer":"живіт"},{"prompt":"Вам потрібен ___. (prescription)","answer":"рецепт"},{"prompt":"Де знаходиться ___? (pharmacy)","answer":"аптека"},{"prompt":"___ глибоко. (breathe - imperative)","answer":"Дихайте"},{"prompt":"Прийдіть через ___. (week)","answer":"тиждень"}]}},{"id":"activity-1","type":"match-up","title":"Body Parts","data":{"type":"match-up","pairs":[{"left":"голова","right":"head"},{"left":"горло","right":"throat"},{"left":"живіт","right":"stomach"},{"left":"спина","right":"back"},{"left":"серце","right":"heart"},{"left":"рука","right":"arm/hand"},{"left":"нога","right":"leg/foot"},{"left":"очі","right":"eyes"},{"left":"вуха","right":"ears"},{"left":"ніс","right":"nose"},{"left":"рот","right":"mouth"},{"left":"зуби","right":"teeth"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["мене","болить","У","голова","дуже","вже","два","дні"],"answer":"У мене дуже болить голова вже два дні.","translation":"I've had a very bad headache for two days."},{"words":["турбує","вас","Що","сьогодні","скажіть","мені","будь ласка"],"answer":"Скажіть мені, будь ласка, що вас сьогодні турбує?","translation":"Please tell me, what's bothering you today?"},{"words":["болить","Де","саме","покажіть","мені","рукою","своєю","точно"],"answer":"Де саме болить? Покажіть мені точно своєю рукою.","translation":"Where exactly does it hurt? Show me precisely with your hand."},{"words":["ліки","ці","Візьміть","після","їжі","двічі","на","день"],"answer":"Візьміть ці ліки двічі на день після їжі.","translation":"Take this medicine twice a day after meals."},{"words":["мене","У","температура","висока","вже","третій","день","тримається"],"answer":"У мене висока температура тримається вже третій день.","translation":"I've had a high fever for three days now."},{"words":["води","багато","Пийте","та","відпочивайте","в","ліжку","обов'язково"],"answer":"Пийте багато води та обов'язково відпочивайте в ліжку.","translation":"Drink lots of water and definitely rest in bed."},{"words":["глибоко","Дихайте","та","затримайте","повітря","на","кілька","секунд"],"answer":"Дихайте глибоко та затримайте повітря на кілька секунд.","translation":"Breathe deeply and hold your breath for a few seconds."},{"words":["тиждень","через","Прийдіть","на","повторний","до","мене","огляд"],"answer":"Прийдіть до мене на повторний огляд через тиждень.","translation":"Come to me for a follow-up examination in a week."},{"words":["болять","У","мене","зуби","коли","п'ю","щось","холодне"],"answer":"У мене болять зуби, коли п'ю щось холодне.","translation":"My teeth hurt when I drink something cold."},{"words":["рецепт","Вам","потрібен","для","цих","ліків","йдіть","в","аптеку"],"answer":"Вам потрібен рецепт для цих ліків, йдіть в аптеку.","translation":"You need a prescription for this medicine, go to the pharmacy."},{"words":["рот","Відкрийте","широко","та","скажіть","покажіть","горло","мені"],"answer":"Відкрийте рот широко та покажіть мені горло.","translation":"Open your mouth wide and show me your throat."},{"words":["болить","тут","У","мене","з","правого","боку","сильно"],"answer":"У мене сильно болить тут, з правого боку.","translation":"It hurts me badly here, on the right side."}]}},{"id":"activity-3","type":"quiz","title":"Medical Knowledge","data":{"type":"quiz","questions":[{"question":"\"У мене болить голова\" means:","options":["I have a headache","My head is fine","I'm thinking","My head is big"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" is used with:","options":["Singular body parts","Plural body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Болять\" is used with:","options":["Plural body parts","Singular body parts","All body parts","No body parts"],"correctIndex":0,"explanation":""},{"question":"\"Ліки\" means:","options":["Medicine","Doctor","Hospital","Pain"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" is:","options":["Pharmacy","Hospital","Clinic","Doctor's office"],"correctIndex":0,"explanation":""},{"question":"\"Температура\" means:","options":["Fever/temperature","Cold","Pain","Cough"],"correctIndex":0,"explanation":""},{"question":"\"Лікар\" means:","options":["Doctor","Nurse","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["Cold (illness)","Flu","Allergy","Injury"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" means:","options":["Prescription","Receipt","Medicine","Hospital"],"correctIndex":0,"explanation":""},{"question":"\"Рука\" means:","options":["Arm and hand","Only arm","Only hand","Leg"],"correctIndex":0,"explanation":""},{"question":"\"Відпочивайте\" means:","options":["Rest (imperative)","Work","Eat","Drink"],"correctIndex":0,"explanation":""},{"question":"\"Біль\" means:","options":["Pain","Body","Doctor","Medicine"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Medical Facts","data":{"type":"true-false","statements":[{"statement":"\"Болить\" is for singular, \"болять\" for plural.","isTrue":true,"explanation":""},{"statement":"\"Рука\" means only \"hand.\"","isTrue":false,"explanation":""},{"statement":"\"Аптека\" is where you buy medicine.","isTrue":true,"explanation":""},{"statement":"\"Лікарня\" is a pharmacy.","isTrue":false,"explanation":""},{"statement":"\"Температура\" can mean fever.","isTrue":true,"explanation":""},{"statement":"\"Візьміть ліки\" is a command.","isTrue":true,"explanation":""},{"statement":"\"Грип\" is a cold.","isTrue":false,"explanation":""},{"statement":"\"Нога\" means arm.","isTrue":false,"explanation":""},{"statement":"\"Кашель\" is a symptom.","isTrue":true,"explanation":""},{"statement":"\"Рецепт\" is needed for some medicines.","isTrue":true,"explanation":""},{"statement":"\"Серце\" means stomach.","isTrue":false,"explanation":""},{"statement":"\"Що вас турбує?\" is a doctor's question.","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Medical Categories","data":{"type":"group-sort","groups":[{"id":"body-parts","name":"Body Parts","items":["голова","живіт","рука"]},{"id":"symptoms","name":"Symptoms","items":["температура","кашель","біль"]},{"id":"medical-places","name":"Medical Places","items":["аптека","лікарня","поліклініка"]},{"id":"instructions","name":"Instructions","items":["пийте воду","відпочивайте","візьміть ліки"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Doctor-Patient Dialogue","data":{"type":"fill-blank","items":[{"prompt":"Лікар: Як довго це ___? (has been going on)","answer":"триває"},{"prompt":"Пацієнт: Це ___ вчора ввечері. (started)","answer":"почалося"},{"prompt":"Лікар: Покажіть, де саме ___. (hurts)","answer":"болить"},{"prompt":"Пацієнт: У мене сильний ___ у животі. (pain)","answer":"біль"},{"prompt":"Лікар: Вам потрібно здати ___. (tests)","answer":"аналізи"},{"prompt":"Пацієнт: У мене ще й ___ і нежить. (cough)","answer":"кашель"},{"prompt":"Лікар: У вас ___. Потрібен відпочинок. (cold illness)","answer":"застуда"},{"prompt":"Пацієнт: Яка у мене ___? (temperature)","answer":"температура"},{"prompt":"Лікар: Тридцять вісім і п'ять. Це ___. (fever/high)","answer":"висока"},{"prompt":"Пацієнт: Чи потрібен мені ___? (prescription)","answer":"рецепт"},{"prompt":"Лікар: Так, ці ___ тільки за рецептом. (medicines)","answer":"ліки"},{"prompt":"Пацієнт: Де найближча ___? (pharmacy)","answer":"аптека"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Medical Term","data":{"type":"select","items":[{"question":"У мене ___ голова.","options":[{"text":"болить","correct":true},{"text":"болять","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"У мене ___ зуби.","options":[{"text":"болять","correct":true},{"text":"болить","correct":false},{"text":"боліти","correct":false},{"text":"біль","correct":false}]},{"question":"Ви маєте високу ___.","options":[{"text":"температуру","correct":true},{"text":"кашель","correct":false},{"text":"біль","correct":false},{"text":"застуду","correct":false}]},{"question":"Вам потрібен ___ для цих ліків.","options":[{"text":"рецепт","correct":true},{"text":"аптека","correct":false},{"text":"лікар","correct":false},{"text":"лікарня","correct":false}]},{"question":"___ глибоко і затримайте подих.","options":[{"text":"Дихайте","correct":true},{"text":"Пийте","correct":false},{"text":"Візьміть","correct":false},{"text":"Покажіть","correct":false}]},{"question":"У неї сильний ___ — вона не може говорити.","options":[{"text":"кашель","correct":true},{"text":"нежить","correct":false},{"text":"біль","correct":false},{"text":"температура","correct":false}]},{"question":"Його забрали до ___ на швидкій допомозі.","options":[{"text":"лікарні","correct":true},{"text":"аптеки","correct":false},{"text":"поліклініки","correct":false},{"text":"лікаря","correct":false}]},{"question":"___ оглянув пацієнта уважно.","options":[{"text":"Лікар","correct":true},{"text":"Ліки","correct":false},{"text":"Лікарня","correct":false},{"text":"Рецепт","correct":false}]},{"question":"Це ___ біль чи постійний?","options":[{"text":"гострий","correct":true},{"text":"голова","correct":false},{"text":"живіт","correct":false},{"text":"рука","correct":false}]},{"question":"У мене ___ — ніс закладений.","options":[{"text":"нежить","correct":true},{"text":"кашель","correct":false},{"text":"температура","correct":false},{"text":"біль","correct":false}]},{"question":"Медсестра зробила мені ___.","options":[{"text":"укол","correct":true},{"text":"ліки","correct":false},{"text":"рецепт","correct":false},{"text":"аптеку","correct":false}]},{"question":"У нього ___ — він кілька днів в ліжку.","options":[{"text":"грип","correct":true},{"text":"біль","correct":false},{"text":"рука","correct":false},{"text":"нога","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Medical Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["у","|","мене","|","болить","|","голова","|","і","|","горло"],"answer":"У мене болить голова і горло.","translation":"I have a headache and sore throat."},{"words":["мені","|","потрібно","|","записатися","|","до","|","лікаря"],"answer":"Мені потрібно записатися до лікаря.","translation":"I need to make an appointment with the doctor."},{"words":["лікар","|","виписав","|","мені","|","рецепт","|","на","|","ліки"],"answer":"Лікар виписав мені рецепт на ліки.","translation":"The doctor wrote me a prescription for medicine."},{"words":["я","|","погано","|","почуваюся","|","з","|","учора"],"answer":"Я погано почуваюся з учора.","translation":"I've been feeling bad since yesterday."},{"words":["медсестра","|","зробила","|","мені","|","укол"],"answer":"Медсестра зробила мені укол.","translation":"The nurse gave me an injection."},{"words":["вам","|","треба","|","лежати","|","в","|","ліжку","|","три","|","дні"],"answer":"Вам треба лежати в ліжку три дні.","translation":"You need to stay in bed for three days."},{"words":["у","|","нього","|","висока","|","температура","|","і","|","кашель"],"answer":"У нього висока температура і кашель.","translation":"He has a high temperature and a cough."},{"words":["приймайте","|","ці","|","ліки","|","тричі","|","на","|","день"],"answer":"Приймайте ці ліки тричі на день.","translation":"Take this medicine three times a day."},{"words":["я","|","застудився","|","і","|","не","|","можу","|","працювати"],"answer":"Я застудився і не можу працювати.","translation":"I caught a cold and can't work."},{"words":["де","|","знаходиться","|","найближча","|","аптека"],"answer":"Де знаходиться найближча аптека?","translation":"Where is the nearest pharmacy?"},{"words":["що","|","вас","|","турбує","|","скажіть","|","будь","|","ласка"],"answer":"Що вас турбує, скажіть, будь ласка?","translation":"What's bothering you, please tell me?"},{"words":["вона","|","викликала","|","швидку","|","допомогу"],"answer":"Вона викликала швидку допомогу.","translation":"She called an ambulance."}]}},{"id":"activity-9","type":"quiz","title":"Medical Situations","data":{"type":"quiz","questions":[{"question":"What do you say first when visiting a doctor?","options":["Describe what's bothering you (Що мене турбує...)","Ask for medicine immediately","Demand a prescription","Complain about waiting"],"correctIndex":0,"explanation":""},{"question":"\"Болить\" vs \"болять\" depends on:","options":["Whether the body part is singular or plural","Time of day","How strong the pain is","Doctor's preference"],"correctIndex":0,"explanation":""},{"question":"To say \"I have a fever,\" use:","options":["У мене температура","Я температура","Мені температура","Мене температура"],"correctIndex":0,"explanation":""},{"question":"\"Рецепт\" is required for:","options":["Certain prescription medicines","All medicines","No medicines","Only vitamins"],"correctIndex":0,"explanation":""},{"question":"\"Аптека\" vs \"лікарня\":","options":["Аптека sells medicine; лікарня is hospital","They are the same","Аптека is larger","Лікарня sells medicine"],"correctIndex":0,"explanation":""},{"question":"\"Застуда\" is:","options":["A cold (common illness)","A broken bone","Surgery","A pharmacy"],"correctIndex":0,"explanation":""},{"question":"When the doctor says \"Дихайте глибоко\":","options":["Take deep breaths","Stop breathing","Drink water","Open your mouth"],"correctIndex":0,"explanation":""},{"question":"\"Медсестра\" is:","options":["Nurse","Doctor","Patient","Medicine"],"correctIndex":0,"explanation":""},{"question":"\"Поліклініка\" is:","options":["Outpatient clinic","Hospital with beds","Pharmacy","Emergency room only"],"correctIndex":0,"explanation":""},{"question":"To describe pain intensity, use:","options":["сильний/слабкий біль","великий/малий біль","довгий/короткий біль","високий/низький біль"],"correctIndex":0,"explanation":""},{"question":"\"Прийдіть через тиждень\" means:","options":["Come back in a week","Wait for a week","Leave in a week","Stay for a week"],"correctIndex":0,"explanation":""},{"question":"\"У мене болить живіт\" — \"живіт\" is:","options":["Stomach/belly","Leg","Arm","Head"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"голова","translit":"","en":"head","note":""},{"uk":"горло","translit":"","en":"throat","note":""},{"uk":"живіт","translit":"","en":"stomach","note":""},{"uk":"спина","translit":"","en":"back","note":""},{"uk":"серце","translit":"","en":"heart","note":""},{"uk":"рука","translit":"","en":"arm, hand","note":""},{"uk":"нога","translit":"","en":"leg, foot","note":""},{"uk":"болить","translit":"","en":"hurts (sg)","note":""},{"uk":"болять","translit":"","en":"hurt (pl)","note":""},{"uk":"температура","translit":"","en":"fever, temperature","note":""},{"uk":"кашель","translit":"","en":"cough","note":""},{"uk":"нежить","translit":"","en":"runny nose","note":""},{"uk":"біль","translit":"","en":"pain","note":""},{"uk":"ліки","translit":"","en":"medicine","note":""},{"uk":"рецепт","translit":"","en":"prescription, recipe","note":""},{"uk":"лікар","translit":"","en":"doctor","note":""},{"uk":"лікарня","translit":"","en":"hospital","note":""},{"uk":"аптека","translit":"","en":"pharmacy","note":""},{"uk":"застуда","translit":"","en":"cold (illness)","note":""},{"uk":"грип","translit":"","en":"flu","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2385,6 +2433,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

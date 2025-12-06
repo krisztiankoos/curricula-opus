@@ -579,27 +579,57 @@ Time structures our stories: "When I arrived...", "While she was working...", "A
     - [ ] До того як
     - [ ] Перш ніж
 
-## order: Sequence of Events
+## unjumble: Time Clause Sentences
 
-> Order these events in the sequence they happened.
+> Rearrange the words to form correct sentences with time clauses.
 
-1. Перш ніж піти на роботу, я поснідав.
-   > First: breakfast
+1. коли | я | прийшов | додому | вона | вже | спала
+   > [!answer] Коли я прийшов додому, вона вже спала.
+   > (When I came home, she was already sleeping.)
 
-2. Коли я вийшов з дому, було сонячно.
-   > Second: leaving house
+2. поки | він | працював | дружина | готувала | вечерю
+   > [!answer] Поки він працював, дружина готувала вечерю.
+   > (While he was working, his wife was making dinner.)
 
-3. Поки я їхав на роботу, слухав музику.
-   > Third: commuting (during)
+3. після | того | як | ми | поїли | пішли | гуляти
+   > [!answer] Після того як ми поїли, пішли гуляти.
+   > (After we ate, we went for a walk.)
 
-4. Щойно я прийшов, почалася нарада.
-   > Fourth: arriving at work
+4. перш | ніж | вийти | візьми | парасольку
+   > [!answer] Перш ніж вийти, візьми парасольку.
+   > (Before going out, take an umbrella.)
 
-5. Після того як нарада закінчилася, я пішов обідати.
-   > Fifth: lunch after meeting
+5. щойно | почався | дощ | ми | сховалися
+   > [!answer] Щойно почався дощ, ми сховалися.
+   > (As soon as the rain started, we hid.)
 
-6. Коли робочий день закінчився, я поїхав додому.
-   > Sixth: going home
+6. до | того | як | він | прийшов | все | було | готово
+   > [!answer] До того як він прийшов, все було готово.
+   > (Before he came, everything was ready.)
+
+7. поки | не | закінчиться | дощ | ми | не | підемо
+   > [!answer] Поки не закінчиться дощ, ми не підемо.
+   > (Until the rain stops, we won't go.)
+
+8. коли | вона | зателефонувала | я | обідав
+   > [!answer] Коли вона зателефонувала, я обідав.
+   > (When she called, I was having lunch.)
+
+9. після | роботи | він | завжди | ходить | у | спортзал
+   > [!answer] Після роботи він завжди ходить у спортзал.
+   > (After work he always goes to the gym.)
+
+10. перед | тим | як | спати | вона | читає | книгу
+    > [!answer] Перед тим як спати, вона читає книгу.
+    > (Before sleeping, she reads a book.)
+
+11. як | тільки | він | прийшов | почалася | нарада
+    > [!answer] Як тільки він прийшов, почалася нарада.
+    > (As soon as he came, the meeting started.)
+
+12. поки | я | чекав | на | автобус | читав | новини
+    > [!answer] Поки я чекав на автобус, читав новини.
+    > (While I was waiting for the bus, I read the news.)
 
 ## quiz: Time Clause Nuances
 

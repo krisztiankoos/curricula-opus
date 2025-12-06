@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -505,287 +545,164 @@ footer {
       
     <div class="card section-intro">
       <h3>📖 Introduction</h3>
-      <div class="md-content"><p>How do you create a perfective verb from an imperfective one? There are patterns! This module reveals the secrets of aspect pair formation: prefixes that signal completion, suffixes that stretch actions, and those quirky pairs with completely different roots. Let's decode the system!</p>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Prefixation: The Most Common Pattern</h3>
-      <div class="md-content"><p>Adding a prefix to an imperfective verb often creates the perfective:</p>
-<table>
-<thead>
-<tr>
-<th>Prefix</th>
-<th>Imperfective → Perfective</th>
-<th>Typical Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>про-</strong></td>
-<td>читати → прочитати</td>
-<td>through, completion</td>
-</tr>
-<tr>
-<td><strong>на-</strong></td>
-<td>писати → написати</td>
-<td>completion, accumulation</td>
-</tr>
-<tr>
-<td><strong>з-</strong></td>
-<td>робити → зробити</td>
-<td>completion</td>
-</tr>
-<tr>
-<td><strong>по-</strong></td>
-<td>бачити → побачити</td>
-<td>brief action, completion</td>
-</tr>
-<tr>
-<td><strong>ви-</strong></td>
-<td>вчити → вивчити</td>
-<td>thoroughness, mastery</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+      <div class="md-content"><p>Why do some Ukrainian verb pairs look like twins (<em>читати → прочитати</em>), while others look completely unrelated (<em>говорити → сказати</em>)? Behind the chaos, there's a beautiful system of patterns.</p>
+<p>Think of it like English: "walk" becomes "walked" (regular), but "go" becomes "went" (irregular). Ukrainian aspect pairs work the same way — most follow predictable patterns, but a few rebels march to their own drum.</p>
+<p>Master these patterns, and you'll unlock thousands of verbs. Instead of memorizing each pair separately, you'll see <em>написати</em> and instantly know it's the perfective of <em>писати</em> because of that <em>на-</em> prefix. This module is your decoder ring for the aspect system!</p>
 <blockquote>
-  <p>The prefix <strong>про-</strong> literally means "through" — <em>прочитати</em> is to read ALL THE WAY through!</p>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>About 80% of Ukrainian aspect pairs use prefixation — adding a prefix to the imperfective to create the perfective. That means once you learn the prefix patterns, you've cracked most of the code!</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
+      <h3>The Three Formation Types</h3>
+      <div class="md-content"><p>Before diving into patterns, let's map the terrain. Ukrainian forms aspect pairs in three ways:</p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>How It Works</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prefixation</strong></td>
+<td>Add prefix to imperfective</td>
+<td>читати → <strong>про</strong>читати</td>
+</tr>
+<tr>
+<td><strong>Suffixation</strong></td>
+<td>Remove or change suffix</td>
+<td>давати → дати (-ва- drops)</td>
+</tr>
+<tr>
+<td><strong>Suppletion</strong></td>
+<td>Different roots entirely</td>
+<td>говорити → сказати</td>
+</tr>
+</tbody>
+</table>
+<p>Each type has its own logic. Let's explore them one by one.</p>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong></p>
+  <p>In Ukrainian dubbing of action movies, heroes love perfective commands: <em>Зроби це!</em> (Do it!), <em>Відкрий двері!</em> (Open the door!). The prefix <em>від-</em> signals completion — the door should be OPEN, not "being opened."</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Prefixation: The Most Common Pattern</h3>
+      <div class="md-content"><p>The most productive way to form perfective verbs is adding a prefix. Different prefixes contribute slightly different meanings, but all signal "completion."</p>
+<p><strong>🎭 Дружня розмова (Friendly Chat)</strong></p>
+<p>— Що ти робив учора?<br />
+— Багато чого! <strong>Прочитав</strong> книгу, <strong>написав</strong> листа, <strong>зробив</strong> домашнє завдання.<br />
+— Все за один вечір?<br />
+— Так! Коли треба — я все <strong>зроблю</strong>.</p>
+<p><em>Notice how each perfective verb (прочитав, написав, зробив) uses a different prefix, but they all express completed actions.</em></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
       <h3>Prefix про- (Through/Completion)</h3>
-      <div class="md-content"><table>
+      <div class="md-content"><p>The prefix <em>про-</em> often suggests going "through" something to completion — reading through a book, listening through a lecture, living through a period.</p>
+<table>
 <thead>
 <tr>
 <th>Imperfective</th>
 <th>Perfective</th>
-<th>Meaning</th>
+<th>Literal Feel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>читати</td>
-<td>прочитати</td>
-<td>to read (through)</td>
+<td><strong>про</strong>читати</td>
+<td>read through</td>
 </tr>
 <tr>
 <td>слухати</td>
-<td>прослухати</td>
-<td>to listen (through)</td>
+<td><strong>про</strong>слухати</td>
+<td>listen through</td>
 </tr>
 <tr>
 <td>дивитися</td>
-<td>продивитися</td>
-<td>to watch (through)</td>
+<td><strong>про</strong>дивитися</td>
+<td>watch through</td>
 </tr>
 <tr>
 <td>жити</td>
-<td>прожити</td>
-<td>to live (through)</td>
-</tr>
-<tr>
-<td>їхати</td>
-<td>проїхати</td>
-<td>to drive (through)</td>
+<td><strong>про</strong>жити</td>
+<td>live through</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p>When you <em>прочитати</em> a book, you don't just read some pages — you read it ALL THE WAY through. There's a sense of thoroughness built into this prefix.</p>
+<p><strong>Examples in context:</strong></p>
 <ul>
-<li>Я <strong>прочитав</strong> цю книгу. (I read through this book.)</li>
-<li>Вона <strong>прослухала</strong> всю лекцію. (She listened to the entire lecture.)</li>
+<li>Вона <strong>прочитала</strong> всю книгу за ніч. (She read through the whole book overnight.)</li>
+<li>Я <strong>прослухав</strong> лекцію уважно. (I listened to the entire lecture carefully.)</li>
+<li>Ми <strong>прожили</strong> важкий рік. (We lived through a difficult year.)</li>
 </ul>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>When Ukrainians ask <em>Ти вже прочитав?</em> (Have you read it yet?), they mean "Have you finished it?" Using the imperfective <em>читав</em> would mean "Were you reading it?" — very different question!</p>
+</blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
       <h3>Prefix на- (Completion/Accumulation)</h3>
-      <div class="md-content"><table>
+      <div class="md-content"><p>The prefix <em>на-</em> signals completion, often with a sense of creating or accumulating something:</p>
+<table>
 <thead>
 <tr>
 <th>Imperfective</th>
 <th>Perfective</th>
-<th>Meaning</th>
+<th>Focus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>писати</td>
-<td>написати</td>
-<td>to write</td>
+<td><strong>на</strong>писати</td>
+<td>create writing</td>
 </tr>
 <tr>
 <td>малювати</td>
-<td>намалювати</td>
-<td>to draw/paint</td>
+<td><strong>на</strong>малювати</td>
+<td>create a drawing</td>
 </tr>
 <tr>
 <td>друкувати</td>
-<td>надрукувати</td>
-<td>to print</td>
+<td><strong>на</strong>друкувати</td>
+<td>create print</td>
 </tr>
 <tr>
 <td>вчити</td>
-<td>навчити</td>
-<td>to teach</td>
+<td><strong>на</strong>вчити</td>
+<td>teach (successfully)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p>When you <em>написати</em>, you don't just engage in writing — you produce a finished piece. The result matters.</p>
+<p><strong>Examples in context:</strong></p>
 <ul>
-<li>Він <strong>написав</strong> листа. (He wrote the letter.)</li>
-<li>Вона <strong>намалювала</strong> картину. (She painted a picture.)</li>
+<li>Тарас Шевченко <strong>написав</strong> багато віршів. (Shevchenko wrote many poems.)</li>
+<li>Художник <strong>намалював</strong> портрет королеви. (The artist painted the queen's portrait.)</li>
+<li>Учитель <strong>навчив</strong> мене читати. (The teacher taught me to read — successfully!)</li>
 </ul>
-<div class="callout callout-example" data-callout="example">🎬 Pop Culture Moment</div>
 <blockquote>
-  <p>Famous Ukrainian author Taras Shevchenko <em>написав</em> many poems — perfective, because each poem was completed!</p>
+  <p>📜 <strong>History Bite</strong></p>
+  <p>Taras Shevchenko's <em>Кобзар</em> remains the most beloved Ukrainian poetry collection. Every poem was <em>написаний</em> (written — perfective passive participle) — each one a complete, polished work that changed a nation.</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
       <h3>Prefix з-/с- (Completion)</h3>
-      <div class="md-content"><table>
-<thead>
-<tr>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>робити</td>
-<td>зробити</td>
-<td>to do/make</td>
-</tr>
-<tr>
-<td>їсти</td>
-<td>з'їсти</td>
-<td>to eat (up)</td>
-</tr>
-<tr>
-<td>варити</td>
-<td>зварити</td>
-<td>to cook/boil</td>
-</tr>
-<tr>
-<td>фотографувати</td>
-<td>сфотографувати</td>
-<td>to photograph</td>
-</tr>
-<tr>
-<td>готувати</td>
-<td>приготувати</td>
-<td>to prepare</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Ми <strong>зробили</strong> домашнє завдання. (We did our homework.)</li>
-<li>Він <strong>з'їв</strong> усе. (He ate everything.)</li>
-</ul>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Prefix по- (Brief/Completion)</h3>
-      <div class="md-content"><table>
-<thead>
-<tr>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>бачити</td>
-<td>побачити</td>
-<td>to see</td>
-</tr>
-<tr>
-<td>чути</td>
-<td>почути</td>
-<td>to hear</td>
-</tr>
-<tr>
-<td>любити</td>
-<td>полюбити</td>
-<td>to fall in love</td>
-</tr>
-<tr>
-<td>будувати</td>
-<td>побудувати</td>
-<td>to build</td>
-</tr>
-<tr>
-<td>знайомитися</td>
-<td>познайомитися</td>
-<td>to meet/get acquainted</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Я <strong>побачив</strong> її вчора. (I saw her yesterday.)</li>
-<li>Вони <strong>познайомилися</strong> на вечірці. (They met at a party.)</li>
-</ul>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Prefix ви- (Thoroughness/Mastery)</h3>
-      <div class="md-content"><table>
-<thead>
-<tr>
-<th>Imperfective</th>
-<th>Perfective</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>вчити</td>
-<td>вивчити</td>
-<td>to learn (master)</td>
-</tr>
-<tr>
-<td>пити</td>
-<td>випити</td>
-<td>to drink (up)</td>
-</tr>
-<tr>
-<td>рішувати</td>
-<td>вирішити</td>
-<td>to decide/solve</td>
-</tr>
-<tr>
-<td>ходити</td>
-<td>вийти</td>
-<td>to exit/go out</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Examples:</strong></p>
-<ul>
-<li>Я <strong>вивчив</strong> цей урок. (I learned/mastered this lesson.)</li>
-<li>Вона <strong>випила</strong> каву. (She drank her coffee.)</li>
-</ul>
-<div class="callout callout-tip" data-callout="tip">🌍 Real World</div>
-<blockquote>
-  <p>When ordering coffee and finishing it: <em>Я вже випив каву</em> — I already drank (finished) my coffee.</p>
-</blockquote>
-<hr /></div>
-    </div>
-  
-    <div class="card section-content">
-      <h3>Suffixation: -ва- Pattern</h3>
-      <div class="md-content"><p>Some perfective verbs LOSE the suffix -ва- compared to imperfective:</p>
+      <div class="md-content"><p>The prefix <em>з-</em> (or <em>с-</em> before voiceless consonants) often signals simple completion:</p>
 <table>
 <thead>
 <tr>
@@ -796,43 +713,285 @@ footer {
 </thead>
 <tbody>
 <tr>
-<td>давати</td>
-<td>дати</td>
-<td>-ва- drops</td>
+<td>робити</td>
+<td><strong>з</strong>робити</td>
+<td>complete doing</td>
 </tr>
 <tr>
-<td>вставати</td>
-<td>встати</td>
-<td>-ва- drops</td>
+<td>їсти</td>
+<td><strong>з'</strong>їсти</td>
+<td>eat up</td>
 </tr>
 <tr>
-<td>відпочивати</td>
-<td>відпочити</td>
-<td>-ва- drops</td>
+<td>варити</td>
+<td><strong>з</strong>варити</td>
+<td>finish cooking</td>
 </tr>
 <tr>
-<td>забувати</td>
-<td>забути</td>
-<td>-ва- drops</td>
-</tr>
-<tr>
-<td>одягатися</td>
-<td>одягнутися</td>
-<td>different suffix</td>
+<td>фотографувати</td>
+<td><strong>с</strong>фотографувати</td>
+<td>take (complete) a photo</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
+<p>Notice <em>з'їсти</em> — the apostrophe appears because Ukrainian avoids the cluster <em>зї</em>.</p>
+<p><strong>Examples in context:</strong></p>
 <ul>
-<li>Він <strong>дав</strong> мені книгу. (He gave me the book.)</li>
-<li>Я <strong>встав</strong> о сьомій. (I got up at seven.)</li>
+<li>Ми <strong>зробили</strong> все завдання. (We completed all the tasks.)</li>
+<li>Він <strong>з'їв</strong> весь торт! (He ate up the whole cake!)</li>
+<li>Бабуся <strong>зварила</strong> борщ. (Grandma finished cooking the borscht.)</li>
 </ul>
+<p><strong>🎭 Сімейний обід (Family Dinner)</strong></p>
+<p>— Ти вже <strong>з'їв</strong> усе?<br />
+— Так, було дуже смачно! Хто <strong>зварив</strong> цей борщ?<br />
+— Бабуся <strong>приготувала</strong> для нас.<br />
+— Дякую, бабусю! Я все <strong>з'їв</strong> до останньої краплі!</p>
+<p><em>All verbs are perfective — the food was consumed, the meal completed, gratitude expressed.</em></p>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>Suppletive Pairs (Different Roots)</h3>
-      <div class="md-content"><p>Some aspect pairs use completely different words:</p>
+      <h3>Prefix по- (Brief Action/Completion)</h3>
+      <div class="md-content"><p>The prefix <em>по-</em> often indicates either a brief action or simple completion:</p>
+<table>
+<thead>
+<tr>
+<th>Imperfective</th>
+<th>Perfective</th>
+<th>Nuance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>бачити</td>
+<td><strong>по</strong>бачити</td>
+<td>catch sight of</td>
+</tr>
+<tr>
+<td>чути</td>
+<td><strong>по</strong>чути</td>
+<td>hear/catch a sound</td>
+</tr>
+<tr>
+<td>любити</td>
+<td><strong>по</strong>любити</td>
+<td>fall in love</td>
+</tr>
+<tr>
+<td>будувати</td>
+<td><strong>по</strong>будувати</td>
+<td>build (complete)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Побачити</em> is "to see" in a completed sense — not ongoing seeing, but a moment of catching sight.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Я <strong>побачив</strong> її на вулиці. (I spotted her on the street.)</li>
+<li>Він <strong>почув</strong> дивний звук. (He heard a strange sound.)</li>
+<li>Вони <strong>полюбили</strong> одне одного. (They fell in love with each other.)</li>
+<li>Ми <strong>побудували</strong> новий дім. (We built a new house.)</li>
+</ul>
+<blockquote>
+  <p>🎮 <strong>Gamer's Corner</strong></p>
+  <p>In <em>S.T.A.L.K.E.R.</em>, players often need to <em>побачити</em> danger before it sees them. Quest logs use perfective: <em>Побачив аномалію</em> (Spotted the anomaly). Imperfective would mean you're still staring at it!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Prefix ви- (Thoroughness/Mastery)</h3>
+      <div class="md-content"><p>The prefix <em>ви-</em> often suggests thoroughness, mastery, or extraction:</p>
+<table>
+<thead>
+<tr>
+<th>Imperfective</th>
+<th>Perfective</th>
+<th>Feel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>вчити</td>
+<td><strong>ви</strong>вчити</td>
+<td>master, learn thoroughly</td>
+</tr>
+<tr>
+<td>пити</td>
+<td><strong>ви</strong>пити</td>
+<td>drink up completely</td>
+</tr>
+<tr>
+<td>рішати</td>
+<td><strong>ви</strong>рішити</td>
+<td>solve, decide definitively</td>
+</tr>
+</tbody>
+</table>
+<p><em>Вивчити</em> isn't just learning — it's MASTERING something. You studied it until you know it completely.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Студент <strong>вивчив</strong> усі слова. (The student mastered all the words.)</li>
+<li>Вона <strong>випила</strong> каву за п'ять хвилин. (She drank her coffee in five minutes.)</li>
+<li>Ми <strong>вирішили</strong> складну проблему. (We solved the difficult problem.)</li>
+</ul>
+<blockquote>
+  <p>💡 <strong>Did You Know?</strong></p>
+  <p>The difference between <em>вчити</em> (to study) and <em>вивчити</em> (to master) is crucial in education. Teachers ask <em>Ти вивчив урок?</em> (Have you mastered the lesson?) not <em>Ти вчив урок?</em> (Were you studying?) — the result matters!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Prefixes від- and за- (Opening/Closing)</h3>
+      <div class="md-content"><p>These two prefixes often form opposite pairs:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Imperfective</th>
+<th>Perfective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open</td>
+<td>відкривати</td>
+<td><strong>від</strong>крити</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>закривати</td>
+<td><strong>за</strong>крити</td>
+</tr>
+<tr>
+<td>Turn on</td>
+<td>вмикати</td>
+<td><strong>у</strong>вімкнути</td>
+</tr>
+<tr>
+<td>Turn off</td>
+<td>вимикати</td>
+<td><strong>ви</strong>мкнути</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the satisfying symmetry: <em>від-</em> opens things, <em>за-</em> closes them.</p>
+<p><strong>🎭 У кафе (At the Café)</strong></p>
+<p>— Тут холодно. Можеш <strong>закрити</strong> вікно?<br />
+— Звичайно. Вже <strong>закрив</strong>.<br />
+— Дякую! А можеш <strong>увімкнути</strong> опалення?<br />
+— <strong>Увімкнув</strong>. Тепер буде тепліше.</p>
+<p><em>Each request uses infinitive, each response uses past perfective — action requested, action completed.</em></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Suffixation: The -ва- Pattern</h3>
+      <div class="md-content"><p>Not all aspect pairs use prefixes. Some remove a suffix — especially <em>-ва-</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Imperfective</th>
+<th>Perfective</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>дава<strong>ти</strong></td>
+<td>да<strong>ти</strong></td>
+<td>-ва- drops</td>
+</tr>
+<tr>
+<td>встава<strong>ти</strong></td>
+<td>вста<strong>ти</strong></td>
+<td>-ва- drops</td>
+</tr>
+<tr>
+<td>відпочива<strong>ти</strong></td>
+<td>відпочи<strong>ти</strong></td>
+<td>-ва- drops</td>
+</tr>
+<tr>
+<td>забува<strong>ти</strong></td>
+<td>забу<strong>ти</strong></td>
+<td>-ва- drops</td>
+</tr>
+<tr>
+<td>сіда<strong>ти</strong></td>
+<td>сіс<strong>ти</strong></td>
+<td>consonant changes</td>
+</tr>
+<tr>
+<td>ляга<strong>ти</strong></td>
+<td>ляг<strong>ти</strong></td>
+<td>consonant changes</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>-ва-</em> suffix stretches the action, making it imperfective. Remove it, and you get the sharp, completed perfective.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Він <strong>дав</strong> мені книгу. (He gave me the book.)</li>
+<li>Я <strong>встав</strong> о сьомій ранку. (I got up at seven in the morning.)</li>
+<li>Ми добре <strong>відпочили</strong> на морі. (We rested well at the seaside.)</li>
+<li>Не забудь! → Я не <strong>забуду</strong>! (Don't forget! → I won't forget!)</li>
+</ul>
+<blockquote>
+  <p>🌍 <strong>Real World</strong></p>
+  <p>The phrase <em>Не забудь!</em> (Don't forget!) uses perfective because you want the action of "not forgetting" to be complete and definitive. <em>Не забувай</em> (imperfective) would mean "don't be in the habit of forgetting" — less urgent!</p>
+</blockquote>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>More Suffix Patterns</h3>
+      <div class="md-content"><p>Beyond <em>-ва-</em>, some verbs show other suffix changes:</p>
+<table>
+<thead>
+<tr>
+<th>Imperfective</th>
+<th>Perfective</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>одягати(ся)</td>
+<td>одягну(ти)ся</td>
+<td>-а- → -ну-</td>
+</tr>
+<tr>
+<td>сідати</td>
+<td>сісти</td>
+<td>vowel change</td>
+</tr>
+<tr>
+<td>лягати</td>
+<td>лягти</td>
+<td>consonant cluster</td>
+</tr>
+<tr>
+<td>починати</td>
+<td>почати</td>
+<td>-ина- → -а-</td>
+</tr>
+</tbody>
+</table>
+<p>These verbs require memorization, but they follow smaller patterns within the group.</p>
+<p><strong>🎭 Ранкова рутина (Morning Routine)</strong></p>
+<p>— Коли ти <strong>встав</strong> сьогодні?<br />
+— О шостій. <strong>Одягнувся</strong>, <strong>поснідав</strong> і <strong>пішов</strong> на роботу.<br />
+— Так рано! Я ще <strong>лягла</strong> о другій ночі…<br />
+— Тоді тобі треба <strong>лягти</strong> раніше сьогодні!</p>
+<p><em>Mix of suffix and prefix perfectives showing completed morning actions.</em></p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Suppletive Pairs: The Rebels</h3>
+      <div class="md-content"><p>Some aspect pairs use completely different roots — like English "go/went." You must memorize these:</p>
 <table>
 <thead>
 <tr>
@@ -845,70 +1004,118 @@ footer {
 <tr>
 <td>говорити</td>
 <td>сказати</td>
-<td>to speak/say</td>
+<td>speak/say</td>
 </tr>
 <tr>
 <td>брати</td>
 <td>взяти</td>
-<td>to take</td>
+<td>take</td>
 </tr>
 <tr>
 <td>класти</td>
 <td>покласти</td>
-<td>to put/place</td>
-</tr>
-<tr>
-<td>шукати</td>
-<td>знайти</td>
-<td>to look for/find</td>
+<td>put/place</td>
 </tr>
 <tr>
 <td>ловити</td>
-<td>зловити/піймати</td>
-<td>to catch</td>
+<td>піймати</td>
+<td>catch</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-tip" data-callout="tip">💡 Did You Know?</div>
+<p>No pattern helps here — these are survivors from ancient Slavic times when different verbs merged their meanings.</p>
+<p><strong>Examples in context:</strong></p>
+<ul>
+<li>Вона <strong>сказала</strong> правду. (She told the truth.) — not <em>говорила</em> for completed telling</li>
+<li>Він <strong>взяв</strong> мою книгу. (He took my book.) — not <em>брав</em> for completed taking</li>
+<li>Я <strong>поклав</strong> ключі на стіл. (I put the keys on the table.)</li>
+</ul>
 <blockquote>
-  <p><em>Говорити/сказати</em> is like English "speak/say" — related meanings, different words!</p>
+  <p>📜 <strong>History Bite</strong></p>
+  <p>The <em>говорити/сказати</em> pair mirrors English "speak/say" — related meanings, different words. Slavic linguists call these "suppletive pairs," from Latin <em>supplēre</em> (to fill in). Ancient speakers "filled in" gaps with whatever verbs worked!</p>
 </blockquote>
 <hr /></div>
     </div>
   
     <div class="card section-content">
-      <h3>More Prefix Patterns</h3>
+      <h3>Common Mistakes to Avoid</h3>
+      <div class="md-content"><p><strong>❌ Using the wrong formation pattern:</strong></p>
+<ul>
+<li>Wrong: <em>прочити</em> (adding про- to бачити)</li>
+<li>Right: <em>побачити</em> (по- is the correct prefix for бачити)</li>
+</ul>
+<p><strong>❌ Forgetting -ва- removal:</strong></p>
+<ul>
+<li>Wrong: <em>Він давав мені книгу вчора</em> (for completed action)</li>
+<li>Right: <em>Він дав мені книгу вчора</em> (perfective for single completed action)</li>
+</ul>
+<p><strong>❌ Creating non-existent forms:</strong></p>
+<ul>
+<li>Wrong: <em>забрати</em> meaning "to forget" (it means "to take away")</li>
+<li>Right: <em>забути</em> (from забувати)</li>
+</ul>
+<p><strong>❌ Confusing prefix meanings:</strong></p>
+<ul>
+<li><em>писати → написати</em> (to write/complete writing)</li>
+<li><em>писати → переписати</em> (to rewrite — different meaning!)</li>
+</ul>
+<p>The same root with different prefixes creates different perfectives with different meanings!</p>
+<hr /></div>
+    </div>
+  
+    <div class="card section-content">
+      <h3>Pattern Recognition: Your Decoder Ring</h3>
       <div class="md-content"><table>
 <thead>
 <tr>
-<th>Prefix</th>
-<th>Effect</th>
+<th>You see…</th>
+<th>You know…</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>від-</strong></td>
-<td>away, completion</td>
-<td>відкрити (open), відповісти (answer)</td>
+<td><strong>про-</strong> + impf</td>
+<td>= perfective (through)</td>
+<td>прочитати</td>
 </tr>
 <tr>
-<td><strong>за-</strong></td>
-<td>begin, completion</td>
-<td>закрити (close), запитати (ask)</td>
+<td><strong>на-</strong> + impf</td>
+<td>= perfective (create)</td>
+<td>написати</td>
 </tr>
 <tr>
-<td><strong>при-</strong></td>
-<td>arrival</td>
-<td>прийти (come), приїхати (arrive)</td>
+<td><strong>з-/с-</strong> + impf</td>
+<td>= perfective (complete)</td>
+<td>зробити</td>
 </tr>
 <tr>
-<td><strong>пере-</strong></td>
-<td>re-do, across</td>
-<td>переписати (rewrite), перечитати (reread)</td>
+<td><strong>по-</strong> + impf</td>
+<td>= perfective (brief/done)</td>
+<td>побачити</td>
+</tr>
+<tr>
+<td><strong>ви-</strong> + impf</td>
+<td>= perfective (master)</td>
+<td>вивчити</td>
+</tr>
+<tr>
+<td><strong>-ва-</strong> in impf</td>
+<td>= remove for perfective</td>
+<td>давати → дати</td>
+</tr>
+<tr>
+<td>Different root</td>
+<td>= suppletive pair (memorize!)</td>
+<td>говорити/сказати</td>
 </tr>
 </tbody>
 </table>
+<p>Use this table as your quick reference when you encounter new verbs!</p>
+<blockquote>
+  <p>🎬 <strong>Pop Culture Moment</strong></p>
+  <p>Ukrainian translators working on <em>Game of Thrones</em> chose <em>Написано</em> (It is written) for prophecies — the perfective passive showing fate sealed and complete. For ongoing "writing" of history, they'd use imperfective.</p>
+</blockquote>
 <hr />
 <hr />
 <hr /></div>
@@ -917,12 +1124,20 @@ footer {
       
     <div class="card section-summary">
       <h3>📋 Summary</h3>
-      <div class="md-content"><p>Excellent work! You've learned:</p>
+      <div class="md-content"><p>Excellent work! You've learned the three patterns for forming aspect pairs:</p>
 <ul>
-<li><strong>Prefix patterns</strong>: про- (through), на- (completion), з- (completion), по- (brief), ви- (mastery)</li>
-<li><strong>Suffix patterns</strong>: -ва- removal (давати → дати, вставати → встати)</li>
-<li><strong>Suppletive pairs</strong>: Different roots (говорити/сказати, брати/взяти)</li>
-<li><strong>Prefix meanings</strong>: від- (away), за- (begin/close), при- (arrival), пере- (re-do)</li>
+<li><strong>Prefixation</strong> (most common ~80%): про-, на-, з-, по-, ви-</li>
+<li>читати → прочитати, писати → написати</li>
+<li><strong>Suffixation</strong> (-ва- removal): давати → дати, вставати → встати</li>
+<li><strong>Suppletive pairs</strong> (memorize!): говорити/сказати, брати/взяти</li>
+</ul>
+<p>Key prefixes and their meanings:</p>
+<ul>
+<li><strong>про-</strong>: through, completion (прочитати — read through)</li>
+<li><strong>на-</strong>: creation, completion (написати — write/create)</li>
+<li><strong>з-</strong>: completion (зробити — complete doing)</li>
+<li><strong>по-</strong>: brief, completed (побачити — spot, see)</li>
+<li><strong>ви-</strong>: mastery, thoroughness (вивчити — master)</li>
 </ul>
 <p><strong>Coming up next</strong>: Bigger, Better, Stronger — comparative adjectives!</p></div>
     </div>
@@ -933,14 +1148,14 @@ footer {
     </section>
   
     
-    <section id="activity-0" class="section"><div class="card"><h3>Identify the Prefix Pattern</h3>
+    <section id="activity-0" class="section"><div class="card"><h3>Identify the Formation Pattern</h3>
       <div class="score-display"><span class="score"><span id="activity-0-score">0</span>/12</span></div>
       <div id="activity-0-container" class="fill-container"></div>
       <div class="completion-message" id="activity-0-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-0')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-1')">Next →</button></div>
     </div></section>
 
-    <section id="activity-1" class="section"><div class="card"><h3>Imperfective to Perfective</h3>
+    <section id="activity-1" class="section"><div class="card"><h3>Imperfective to Perfective Pairs</h3>
       <div class="score-display"><span class="score"><span id="activity-1-score">0</span>/12</span></div>
       <div class="match-container" id="activity-1-container"><svg class="match-lines" id="activity-1-lines"></svg>
         <div class="match-column" id="activity-1-left"></div>
@@ -950,36 +1165,36 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-1')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-2')">Next →</button></div>
     </div></section>
 
-    <section id="activity-2" class="section"><div class="card"><h3>Word Order</h3>
+    <section id="activity-2" class="section"><div class="card"><h3>Aspect Pairs in Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-2-score">0</span>/12</span></div>
       <div id="activity-2-container" class="order-container"></div>
       <div class="completion-message" id="activity-2-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-2')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-3')">Next →</button></div>
     </div></section>
 
-    <section id="activity-3" class="section"><div class="card"><h3>Prefix Patterns</h3>
+    <section id="activity-3" class="section"><div class="card"><h3>Formation Pattern Recognition</h3>
       <div class="score-display"><span class="score"><span id="activity-3-score">0</span>/12</span></div>
       <div id="activity-3-container"></div>
       <div class="completion-message" id="activity-3-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-3')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-4')">Next →</button></div>
     </div></section>
 
-    <section id="activity-4" class="section"><div class="card"><h3>Aspect Pair Facts</h3>
+    <section id="activity-4" class="section"><div class="card"><h3>Aspect Formation Facts</h3>
       <div class="score-display"><span class="score"><span id="activity-4-score">0</span>/12</span></div>
       <div id="activity-4-container"></div>
       <div class="completion-message" id="activity-4-complete"><h3>Complete!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-4')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-5')">Next →</button></div>
     </div></section>
 
-    <section id="activity-5" class="section"><div class="card"><h3>Formation Pattern</h3>
-      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/12</span></div>
+    <section id="activity-5" class="section"><div class="card"><h3>Formation Pattern Type</h3>
+      <div class="score-display"><span class="score"><span id="activity-5-score">0</span>/14</span></div>
       <div class="sort-pool" id="activity-5-pool"><div class="sort-items" id="activity-5-items"></div></div>
       <div class="sort-groups" id="activity-5-groups"></div>
       <div class="completion-message" id="activity-5-complete"><h3>All Sorted!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-5')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-6')">Next →</button></div>
     </div></section>
 
-    <section id="activity-6" class="section"><div class="card"><h3>Prefix Meanings in Context</h3>
+    <section id="activity-6" class="section"><div class="card"><h3>Aspect Pairs in Context</h3>
       <div class="score-display"><span class="score"><span id="activity-6-score">0</span>/12</span></div>
       <div id="activity-6-container" class="fill-container"></div>
       <div class="completion-message" id="activity-6-complete"><h3>Complete!</h3></div>
@@ -993,14 +1208,14 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Building a Story with Aspect Pairs</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Daily Routine with Aspect Pairs</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/6</span></div>
       <div id="activity-8-container" class="order-container"></div>
       <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
     </div></section>
 
-    <section id="activity-9" class="section"><div class="card"><h3>Aspect Pair Mastery</h3>
+    <section id="activity-9" class="section"><div class="card"><h3>Aspect Pairs Mastery</h3>
       <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
       <div id="activity-9-container"></div>
       <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
@@ -1009,7 +1224,7 @@ footer {
     
     <section id="vocab" class="section">
       <div class="card">
-        <h3>Словник (27)</h3>
+        <h3>Словник (30)</h3>
         <div class="vocab-table-container">
           <table class="vocab-table">
             <thead><tr>
@@ -1019,7 +1234,7 @@ footer {
     <th>Переклад</th>
     <th>Примітка</th>
   </tr></thead>
-            <tbody><tr><td class="vocab-uk">прочитати</td><td class="vocab-ipa">/protʃɪˈtatɪ/</td><td class="vocab-en">to read (pf)</td><td class="vocab-note">про- + читати</td></tr><tr><td class="vocab-uk">написати</td><td class="vocab-ipa">/napɪˈsatɪ/</td><td class="vocab-en">to write (pf)</td><td class="vocab-note">на- + писати</td></tr><tr><td class="vocab-uk">зробити</td><td class="vocab-ipa">/zroˈbɪtɪ/</td><td class="vocab-en">to do (pf)</td><td class="vocab-note">з- + робити</td></tr><tr><td class="vocab-uk">побачити</td><td class="vocab-ipa">/poˈbatʃɪtɪ/</td><td class="vocab-en">to see (pf)</td><td class="vocab-note">по- + бачити</td></tr><tr><td class="vocab-uk">вивчити</td><td class="vocab-ipa">/ˈwɪwtʃɪtɪ/</td><td class="vocab-en">to learn (pf)</td><td class="vocab-note">ви- + вчити</td></tr><tr><td class="vocab-uk">відкрити</td><td class="vocab-ipa">/widˈkrɪtɪ/</td><td class="vocab-en">to open (pf)</td><td class="vocab-note">від- + крити</td></tr><tr><td class="vocab-uk">закрити</td><td class="vocab-ipa">/zaˈkrɪtɪ/</td><td class="vocab-en">to close (pf)</td><td class="vocab-note">за- + крити</td></tr><tr><td class="vocab-uk">давати</td><td class="vocab-ipa">/daˈwatɪ/</td><td class="vocab-en">to give (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">дати</td><td class="vocab-ipa">/ˈdatɪ/</td><td class="vocab-en">to give (pf)</td><td class="vocab-note">no -ва-</td></tr><tr><td class="vocab-uk">вставати</td><td class="vocab-ipa">/wstaˈwatɪ/</td><td class="vocab-en">to get up (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">встати</td><td class="vocab-ipa">/ˈwstatɪ/</td><td class="vocab-en">to get up (pf)</td><td class="vocab-note">no -ва-</td></tr><tr><td class="vocab-uk">відпочивати</td><td class="vocab-ipa">/widpotʃɪˈwatɪ/</td><td class="vocab-en">to rest (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">відпочити</td><td class="vocab-ipa">/widpoˈtʃɪtɪ/</td><td class="vocab-en">to rest (pf)</td><td class="vocab-note">no -ва-</td></tr><tr><td class="vocab-uk">сідати</td><td class="vocab-ipa">/siˈdatɪ/</td><td class="vocab-en">to sit down (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сісти</td><td class="vocab-ipa">/ˈsistɪ/</td><td class="vocab-en">to sit down (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лягати</td><td class="vocab-ipa">/lʲaˈɦatɪ/</td><td class="vocab-en">to lie down (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лягти</td><td class="vocab-ipa">/ˈlʲaɦtɪ/</td><td class="vocab-en">to lie down (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">одягатися</td><td class="vocab-ipa">/odʲaˈɦatɪsʲa/</td><td class="vocab-en">to dress (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">одягнутися</td><td class="vocab-ipa">/odʲaɦˈnutɪsʲa/</td><td class="vocab-en">to dress (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">починати</td><td class="vocab-ipa">/potʃɪˈnatɪ/</td><td class="vocab-en">to begin (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відкривати</td><td class="vocab-ipa">/widkrɪˈwatɪ/</td><td class="vocab-en">to open (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">класти</td><td class="vocab-ipa">/ˈklastɪ/</td><td class="vocab-en">to put (impf)</td><td class="vocab-note">suppletive pair</td></tr><tr><td class="vocab-uk">покласти</td><td class="vocab-ipa">/poˈklastɪ/</td><td class="vocab-en">to put (pf)</td><td class="vocab-note">по- + класти</td></tr><tr><td class="vocab-uk">забувати</td><td class="vocab-ipa">/zabuˈwatɪ/</td><td class="vocab-en">to forget (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">забути</td><td class="vocab-ipa">/zaˈbutɪ/</td><td class="vocab-en">to forget (pf)</td><td class="vocab-note">no -ва-</td></tr><tr><td class="vocab-uk">знайомитися</td><td class="vocab-ipa">/znajoˈmɪtɪsʲa/</td><td class="vocab-en">to get acquainted (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">познайомитися</td><td class="vocab-ipa">/poznajoˈmɪtɪsʲa/</td><td class="vocab-en">to get acquainted (pf)</td><td class="vocab-note">по- + знайомитися</td></tr></tbody>
+            <tbody><tr><td class="vocab-uk">відпочивати</td><td class="vocab-ipa">/widpotʃɪˈwatɪ/</td><td class="vocab-en">to rest (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">відпочити</td><td class="vocab-ipa">/widpoˈtʃɪtɪ/</td><td class="vocab-en">to rest (pf)</td><td class="vocab-note">-ва- drops</td></tr><tr><td class="vocab-uk">вставати</td><td class="vocab-ipa">/wstaˈwatɪ/</td><td class="vocab-en">to get up (impf)</td><td class="vocab-note">-ва- suffix</td></tr><tr><td class="vocab-uk">встати</td><td class="vocab-ipa">/ˈwstatɪ/</td><td class="vocab-en">to get up (pf)</td><td class="vocab-note">-ва- drops</td></tr><tr><td class="vocab-uk">одягатися</td><td class="vocab-ipa">/odʲaˈɦatɪsʲa/</td><td class="vocab-en">to dress (impf)</td><td class="vocab-note">reflexive</td></tr><tr><td class="vocab-uk">одягнутися</td><td class="vocab-ipa">/odʲaɦˈnutɪsʲa/</td><td class="vocab-en">to dress (pf)</td><td class="vocab-note">reflexive</td></tr><tr><td class="vocab-uk">сідати</td><td class="vocab-ipa">/siˈdatɪ/</td><td class="vocab-en">to sit down (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">сісти</td><td class="vocab-ipa">/ˈsistɪ/</td><td class="vocab-en">to sit down (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лягати</td><td class="vocab-ipa">/lʲaˈɦatɪ/</td><td class="vocab-en">to lie down (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">лягти</td><td class="vocab-ipa">/ˈlʲaɦtɪ/</td><td class="vocab-en">to lie down (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відкривати</td><td class="vocab-ipa">/widkrɪˈwatɪ/</td><td class="vocab-en">to open (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">відкрити</td><td class="vocab-ipa">/widˈkrɪtɪ/</td><td class="vocab-en">to open (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закривати</td><td class="vocab-ipa">/zakrɪˈwatɪ/</td><td class="vocab-en">to close (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закрити</td><td class="vocab-ipa">/zaˈkrɪtɪ/</td><td class="vocab-en">to close (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вмикати</td><td class="vocab-ipa">/wmɪˈkatɪ/</td><td class="vocab-en">to turn on (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">увімкнути</td><td class="vocab-ipa">/uwimˈknutɪ/</td><td class="vocab-en">to turn on (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вимикати</td><td class="vocab-ipa">/wɪmɪˈkatɪ/</td><td class="vocab-en">to turn off (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вимкнути</td><td class="vocab-ipa">/ˈwɪmknutɪ/</td><td class="vocab-en">to turn off (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">починати</td><td class="vocab-ipa">/potʃɪˈnatɪ/</td><td class="vocab-en">to begin (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">почати</td><td class="vocab-ipa">/poˈtʃatɪ/</td><td class="vocab-en">to begin (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закінчувати</td><td class="vocab-ipa">/zakintʃuˈwatɪ/</td><td class="vocab-en">to finish (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">закінчити</td><td class="vocab-ipa">/zaˈkintʃɪtɪ/</td><td class="vocab-en">to finish (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">отримувати</td><td class="vocab-ipa">/otrɪˈmuwatɪ/</td><td class="vocab-en">to receive (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">отримати</td><td class="vocab-ipa">/otrɪˈmatɪ/</td><td class="vocab-en">to receive (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">посилати</td><td class="vocab-ipa">/posɪˈlatɪ/</td><td class="vocab-en">to send (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">послати</td><td class="vocab-ipa">/posˈlatɪ/</td><td class="vocab-en">to send (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибирати</td><td class="vocab-ipa">/wɪbɪˈratɪ/</td><td class="vocab-en">to choose (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вибрати</td><td class="vocab-ipa">/ˈwɪbratɪ/</td><td class="vocab-en">to choose (pf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вирішувати</td><td class="vocab-ipa">/wɪriˈʃuwatɪ/</td><td class="vocab-en">to decide (impf)</td><td class="vocab-note"></td></tr><tr><td class="vocab-uk">вирішити</td><td class="vocab-ipa">/wɪˈriʃɪtɪ/</td><td class="vocab-en">to decide (pf)</td><td class="vocab-note"></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1031,8 +1246,8 @@ footer {
   </main><footer>Module 14 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Identify the Prefix Pattern","data":{"type":"fill-blank","items":[{"prompt":"читати → ___ (through/completion)","answer":"прочитати","hints":["through/completion"]},{"prompt":"писати → ___ (completion)","answer":"написати","hints":["completion"]},{"prompt":"робити → ___ (completion)","answer":"зробити","hints":["completion"]},{"prompt":"бачити → ___ (brief/completion)","answer":"побачити","hints":["brief/completion"]},{"prompt":"вчити → ___ (mastery)","answer":"вивчити","hints":["mastery"]},{"prompt":"пити → ___ (drink up)","answer":"випити","hints":["drink up"]},{"prompt":"їсти → ___ (eat up)","answer":"з'їсти","hints":["eat up"]},{"prompt":"крити → ___ (open)","answer":"відкрити","hints":["open"]},{"prompt":"крити → ___ (close)","answer":"закрити","hints":["close"]},{"prompt":"давати → ___ (give - remove suffix)","answer":"дати","hints":["give - remove suffix"]},{"prompt":"вставати → ___ (get up)","answer":"встати","hints":["get up"]},{"prompt":"говорити → ___ (say - different root)","answer":"сказати","hints":["say - different root"]}]}},{"id":"activity-1","type":"match-up","title":"Imperfective to Perfective","data":{"type":"match-up","pairs":[{"left":"читати","right":"прочитати"},{"left":"писати","right":"написати"},{"left":"робити","right":"зробити"},{"left":"бачити","right":"побачити"},{"left":"вчити","right":"вивчити"},{"left":"пити","right":"випити"},{"left":"їсти","right":"з'їсти"},{"left":"давати","right":"дати"},{"left":"вставати","right":"встати"},{"left":"говорити","right":"сказати"},{"left":"брати","right":"взяти"},{"left":"відкривати","right":"відкрити"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Word Order","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["цікаву","книгу","прочитав","Він","усю","за","один","день"],"answer":"Він прочитав усю цікаву книгу за один день.","translation":"He read through the whole interesting book in one day."},{"words":["написала","довгого","листа","Вона","своїй","подрузі","вчора","увечері"],"answer":"Вона вчора увечері написала довгого листа своїй подрузі.","translation":"She wrote a long letter to her friend yesterday evening."},{"words":["вивчив","важливий","Я","урок","цей","добре","минулого","тижня"],"answer":"Я добре вивчив цей важливий урок минулого тижня.","translation":"I learned this important lesson well last week."},{"words":["гарячу","каву","випив","Він","усю","швидко","за","хвилину"],"answer":"Він швидко випив усю гарячу каву за хвилину.","translation":"He quickly drank all the hot coffee in a minute."},{"words":["дала","нову","книгу","мені","Вона","на","день","народження"],"answer":"Вона дала мені нову книгу на день народження.","translation":"She gave me a new book for my birthday."},{"words":["встав","дуже","рано","Він","о","сьомій","годині","вранці"],"answer":"Він встав дуже рано о сьомій годині вранці.","translation":"He got up very early at seven o'clock in the morning."},{"words":["важкі","двері","відкрив","Він","у","великому","старому","будинку"],"answer":"Він відкрив важкі двері у великому старому будинку.","translation":"He opened the heavy door in the big old building."},{"words":["закрила","велике","вікно","Вона","у","своїй","кімнаті","тихо"],"answer":"Вона тихо закрила велике вікно у своїй кімнаті.","translation":"She quietly closed the big window in her room."},{"words":["побачив","несподівано","Я","її","вчора","біля","нашого","будинку"],"answer":"Я вчора несподівано побачив її біля нашого будинку.","translation":"I unexpectedly saw her yesterday near our building."},{"words":["сказав","усю","правду","Він","мені","нарешті","про","ситуацію"],"answer":"Він нарешті сказав мені усю правду про ситуацію.","translation":"He finally told me the whole truth about the situation."},{"words":["взяв","цікаву","книгу","Він","зі","столу","у","бібліотеці"],"answer":"Він взяв цікаву книгу зі столу у бібліотеці.","translation":"He took an interesting book from the table in the library."},{"words":["важливу","роботу","зробили","Ми","цю","вже","сьогодні","вранці"],"answer":"Ми вже сьогодні вранці зробили цю важливу роботу.","translation":"We already did this important work this morning."}]}},{"id":"activity-3","type":"quiz","title":"Prefix Patterns","data":{"type":"quiz","questions":[{"question":"Which prefix means \"through/completion\"?","options":["про-","на-","по-","ви-"],"correctIndex":0,"explanation":""},{"question":"Which prefix typically means \"mastery\"?","options":["про-","на-","по-","ви-"],"correctIndex":3,"explanation":""},{"question":"\"Написати\" uses which prefix?","options":["про-","на-","по-","з-"],"correctIndex":1,"explanation":""},{"question":"\"Зробити\" uses which prefix?","options":["про-","на-","по-","з-"],"correctIndex":3,"explanation":""},{"question":"\"Давати → дати\" shows which pattern?","options":["Prefixation","-ва- suffix removal","Suppletive (different roots)","No change"],"correctIndex":1,"explanation":""},{"question":"\"Говорити → сказати\" is:","options":["Prefixation pattern","Suffix pattern","Suppletive pair (different roots)","Regular pair"],"correctIndex":2,"explanation":""},{"question":"\"Брати → взяти\" is:","options":["Prefixation pattern","Suffix pattern","Suppletive pair (different roots)","Regular pair"],"correctIndex":2,"explanation":""},{"question":"Which prefix means \"away/from\"?","options":["про-","по-","від-","на-"],"correctIndex":2,"explanation":""},{"question":"\"Закрити\" (to close) uses prefix:","options":["від-","за-","по-","про-"],"correctIndex":1,"explanation":""},{"question":"\"Вставати → встати\" pattern:","options":["Add prefix","Remove -ва-","Different roots","Change prefix"],"correctIndex":1,"explanation":""},{"question":"Most common way to form perfective is:","options":["Add prefix","Remove suffix","Change root","No pattern"],"correctIndex":0,"explanation":""},{"question":"\"Пере-\" prefix usually means:","options":["Through","Away","Re-do, across","Begin"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Aspect Pair Facts","data":{"type":"true-false","statements":[{"statement":"Adding про- to a verb makes it perfective.","isTrue":true,"explanation":""},{"statement":"All aspect pairs use the same root.","isTrue":false,"explanation":""},{"statement":"-ва- suffix often appears in imperfective verbs.","isTrue":true,"explanation":""},{"statement":"Prefix на- often means \"completion.\"","isTrue":true,"explanation":""},{"statement":"\"Брати/взяти\" are a suppletive pair.","isTrue":true,"explanation":""},{"statement":"Prefix ви- means \"exit\" in all verbs.","isTrue":false,"explanation":""},{"statement":"\"Відкрити\" and \"закрити\" are opposites.","isTrue":true,"explanation":""},{"statement":"The -ва- suffix always indicates imperfective.","isTrue":true,"explanation":""},{"statement":"All prefixed verbs are perfective.","isTrue":false,"explanation":""},{"statement":"\"Побачити\" comes from по- + бачити.","isTrue":true,"explanation":""},{"statement":"\"Сісти\" is the perfective of \"сидіти.\"","isTrue":false,"explanation":""},{"statement":"Prefix за- can mean \"begin.\"","isTrue":true,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Formation Pattern","data":{"type":"group-sort","groups":[{"id":"prefix-addition","name":"Prefix Addition","items":["читати → прочитати","писати → написати","робити → зробити","бачити → побачити","їсти → з'їсти","класти → покласти"]},{"id":"suffix-change","name":"Suffix Change","items":["давати → дати","вставати → встати","відпочивати → відпочити","забувати → забути"]},{"id":"different-roots","name":"Different Roots","items":["говорити → сказати","брати → взяти"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Prefix Meanings in Context","data":{"type":"fill-blank","items":[{"prompt":"Вона ___ всю книгу за один вечір. (read through)","answer":"прочитала"},{"prompt":"Художник ___ прекрасний портрет королеви. (painted/created)","answer":"намалював"},{"prompt":"Діти ___ весь торт на вечірці. (ate up)","answer":"з'їли"},{"prompt":"Він ___ її випадково на вулиці. (saw)","answer":"побачив"},{"prompt":"Студент нарешті ___ складну тему. (mastered)","answer":"вивчив"},{"prompt":"Вона ___ двері гостям. (opened)","answer":"відчинила"},{"prompt":"Він ___ вікно через холод. (closed)","answer":"закрив"},{"prompt":"Мама ___ смачний обід для родини. (prepared)","answer":"приготувала"},{"prompt":"Вони ___ весь сік за п'ять хвилин. (drank up)","answer":"випили"},{"prompt":"Вона ___ мені книгу на день народження. (gave)","answer":"дала"},{"prompt":"Він ___ о шостій ранку на роботу. (got up)","answer":"встав"},{"prompt":"Вона ___ правду про ситуацію. (told)","answer":"сказала"}]}},{"id":"activity-7","type":"select","title":"Identify the Formation Pattern","data":{"type":"select","items":[{"question":"читати → прочитати","options":[{"text":"Префіксальне утворення","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"давати → дати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"говорити → сказати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара (різні корені)","correct":true}]},{"question":"брати → взяти","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара (різні корені)","correct":true}]},{"question":"робити → зробити","options":[{"text":"Префіксальне утворення (з-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"вставати → встати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"пити → випити","options":[{"text":"Префіксальне утворення (ви-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"бачити → побачити","options":[{"text":"Префіксальне утворення (по-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"відпочивати → відпочити","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"їсти → з'їсти","options":[{"text":"Префіксальне утворення (з-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"класти → покласти","options":[{"text":"Префіксальне утворення (по-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"забувати → забути","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Building a Story with Aspect Pairs","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Учора","я","вирішив","прочитати","нову","книгу."],"answer":"Учора я вирішив прочитати нову книгу."},{"words":["Я","взяв","книгу","з","полиці","у","вітальні."],"answer":"Я взяв книгу з полиці у вітальні."},{"words":["Я","відкрив","першу","сторінку","і","почав","читати."],"answer":"Я відкрив першу сторінку і почав читати."},{"words":["Я","читав","цілий","вечір","без","перерви."],"answer":"Я читав цілий вечір без перерви."},{"words":["Нарешті","я","прочитав","останню","сторінку","о","півночі."],"answer":"Нарешті я прочитав останню сторінку о півночі."},{"words":["Я","закрив","книгу","і","пішов","спати."],"answer":"Я закрив книгу і пішов спати."}]}},{"id":"activity-9","type":"quiz","title":"Aspect Pair Mastery","data":{"type":"quiz","questions":[{"question":"Який префікс означає \"наскрізь, до кінця\"?","options":["про-","на-","по-","за-"],"correctIndex":0,"explanation":""},{"question":"Який префікс означає \"майстерність, повнота\"?","options":["про-","на-","по-","ви-"],"correctIndex":3,"explanation":""},{"question":"\"Давати → дати\" — який тип утворення?","options":["Префіксальне","Суфіксальне (-ва- зникає)","Суплетивне","Змішане"],"correctIndex":1,"explanation":""},{"question":"Яка пара має різні корені?","options":["читати/прочитати","писати/написати","брати/взяти","робити/зробити"],"correctIndex":2,"explanation":""},{"question":"Префікс \"від-\" часто означає:","options":["Відкривання, віддалення","Закривання","Початок","Повторення"],"correctIndex":0,"explanation":""},{"question":"Префікс \"за-\" може означати:","options":["Відкривання","Закривання, початок","Повне завершення","Повторення"],"correctIndex":1,"explanation":""},{"question":"\"Пере-\" у \"переписати\" означає:","options":["Завершення","Початок","Повторення, заново","Часткове виконання"],"correctIndex":2,"explanation":""},{"question":"Який найпоширеніший спосіб утворення доконаного виду?","options":["Додавання префікса","Видалення суфікса","Зміна кореня","Зміна закінчення"],"correctIndex":0,"explanation":""},{"question":"\"Вставати → встати\" — що відбувається?","options":["Додається префікс","Зникає -ва-","Змінюється корінь","Нічого не змінюється"],"correctIndex":1,"explanation":""},{"question":"Яка пара є \"суплетивною\"?","options":["пити/випити","їсти/з'їсти","говорити/сказати","бачити/побачити"],"correctIndex":2,"explanation":""},{"question":"\"При-\" у \"приготувати\" означає:","options":["Початок","Завершення, досягнення результату","Повторення","Відміну"],"correctIndex":1,"explanation":""},{"question":"Суфікс \"-ва-\" є ознакою:","options":["Доконаного виду","Недоконаного виду","Минулого часу","Майбутнього часу"],"correctIndex":1,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
-    const vocabData = [{"uk":"прочитати","translit":"","en":"to read (pf)","note":"про- + читати"},{"uk":"написати","translit":"","en":"to write (pf)","note":"на- + писати"},{"uk":"зробити","translit":"","en":"to do (pf)","note":"з- + робити"},{"uk":"побачити","translit":"","en":"to see (pf)","note":"по- + бачити"},{"uk":"вивчити","translit":"","en":"to learn (pf)","note":"ви- + вчити"},{"uk":"відкрити","translit":"","en":"to open (pf)","note":"від- + крити"},{"uk":"закрити","translit":"","en":"to close (pf)","note":"за- + крити"},{"uk":"давати","translit":"","en":"to give (impf)","note":"-ва- suffix"},{"uk":"дати","translit":"","en":"to give (pf)","note":"no -ва-"},{"uk":"вставати","translit":"","en":"to get up (impf)","note":"-ва- suffix"},{"uk":"встати","translit":"","en":"to get up (pf)","note":"no -ва-"},{"uk":"відпочивати","translit":"","en":"to rest (impf)","note":"-ва- suffix"},{"uk":"відпочити","translit":"","en":"to rest (pf)","note":"no -ва-"},{"uk":"сідати","translit":"","en":"to sit down (impf)","note":""},{"uk":"сісти","translit":"","en":"to sit down (pf)","note":""},{"uk":"лягати","translit":"","en":"to lie down (impf)","note":""},{"uk":"лягти","translit":"","en":"to lie down (pf)","note":""},{"uk":"одягатися","translit":"","en":"to dress (impf)","note":""},{"uk":"одягнутися","translit":"","en":"to dress (pf)","note":""},{"uk":"починати","translit":"","en":"to begin (impf)","note":""},{"uk":"відкривати","translit":"","en":"to open (impf)","note":"-ва- suffix"},{"uk":"класти","translit":"","en":"to put (impf)","note":"suppletive pair"},{"uk":"покласти","translit":"","en":"to put (pf)","note":"по- + класти"},{"uk":"забувати","translit":"","en":"to forget (impf)","note":"-ва- suffix"},{"uk":"забути","translit":"","en":"to forget (pf)","note":"no -ва-"},{"uk":"знайомитися","translit":"","en":"to get acquainted (impf)","note":""},{"uk":"познайомитися","translit":"","en":"to get acquainted (pf)","note":"по- + знайомитися"}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Identify the Formation Pattern","data":{"type":"fill-blank","items":[{"prompt":"читати → ___. (read through)","answer":"прочитати","explanation":"про- prefix for completion/through"},{"prompt":"писати → ___. (write/complete)","answer":"написати","explanation":"на- prefix for creation/completion"},{"prompt":"робити → ___. (do/complete)","answer":"зробити","explanation":"з- prefix for completion"},{"prompt":"бачити → ___. (see/spot)","answer":"побачити","explanation":"по- prefix for brief/completed action"},{"prompt":"вчити → ___. (learn/master)","answer":"вивчити","explanation":"ви- prefix for mastery/thoroughness"},{"prompt":"давати → ___. (give — completed)","answer":"дати","explanation":"-ва- suffix drops for perfective"},{"prompt":"вставати → ___. (get up — completed)","answer":"встати","explanation":"-ва- suffix drops for perfective"},{"prompt":"говорити → ___. (say — completed)","answer":"сказати","explanation":"Suppletive pair — different roots"},{"prompt":"брати → ___. (take — completed)","answer":"взяти","explanation":"Suppletive pair — different roots"},{"prompt":"відкривати → ___. (open — completed)","answer":"відкрити","explanation":"-ва- drops, від- prefix remains"},{"prompt":"закривати → ___. (close — completed)","answer":"закрити","explanation":"-ва- drops, за- prefix remains"},{"prompt":"починати → ___. (begin — completed)","answer":"почати","explanation":"-ина- shortens to -а-"}]}},{"id":"activity-1","type":"match-up","title":"Imperfective to Perfective Pairs","data":{"type":"match-up","pairs":[{"left":"читати","right":"прочитати"},{"left":"писати","right":"написати"},{"left":"робити","right":"зробити"},{"left":"бачити","right":"побачити"},{"left":"давати","right":"дати"},{"left":"вставати","right":"встати"},{"left":"говорити","right":"сказати"},{"left":"брати","right":"взяти"},{"left":"відкривати","right":"відкрити"},{"left":"закривати","right":"закрити"},{"left":"вибирати","right":"вибрати"},{"left":"починати","right":"почати"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Aspect Pairs in Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["книгу","важливу","вчора","прочитав","Він","цю","цікаву","нарешті"],"answer":"Він нарешті вчора прочитав цю цікаву важливу книгу.","translation":"He finally read this interesting important book yesterday."},{"words":["написала","нового","листа","подрузі","Вона","своїй","довгого","учора"],"answer":"Вона вчора написала своїй подрузі нового довгого листа.","translation":"She wrote her friend a new long letter yesterday."},{"words":["зробив","усе","домашнє","завдання","Студент","важке","вже","сьогодні"],"answer":"Студент вже сьогодні зробив усе важке домашнє завдання.","translation":"The student already did all the hard homework today."},{"words":["побачив","красиву","дівчину","Він","на","вулиці","вчора","випадково"],"answer":"Він вчора випадково побачив красиву дівчину на вулиці.","translation":"He accidentally saw a beautiful girl on the street yesterday."},{"words":["дала","мені","свою","нову","книгу","Вона","цікаву","вчора"],"answer":"Вона вчора дала мені свою нову цікаву книгу.","translation":"She gave me her new interesting book yesterday."},{"words":["встав","дуже","рано","сьогодні","Він","о","шостій","годині"],"answer":"Він сьогодні встав дуже рано о шостій годині.","translation":"He got up very early today at six o'clock."},{"words":["сказала","правду","всю","Вона","нарешті","мені","про","ситуацію"],"answer":"Вона нарешті сказала мені всю правду про ситуацію.","translation":"She finally told me the whole truth about the situation."},{"words":["взяв","зі","столу","Він","мою","нову","книгу","українську"],"answer":"Він взяв мою нову українську книгу зі столу.","translation":"He took my new Ukrainian book from the table."},{"words":["відкрила","велике","вікно","Вона","у","своїй","новій","кімнаті"],"answer":"Вона відкрила велике вікно у своїй новій кімнаті.","translation":"She opened the big window in her new room."},{"words":["закрив","двері","старі","важкі","Він","тихо","у","будинку"],"answer":"Він тихо закрив старі важкі двері у будинку.","translation":"He quietly closed the old heavy door in the building."},{"words":["вибрала","собі","нове","красиве","плаття","Вона","на","свято"],"answer":"Вона вибрала собі нове красиве плаття на свято.","translation":"She chose herself a new beautiful dress for the holiday."},{"words":["почали","нову","цікаву","роботу","Ми","разом","у","понеділок"],"answer":"Ми разом почали нову цікаву роботу у понеділок.","translation":"We together started new interesting work on Monday."}]}},{"id":"activity-3","type":"quiz","title":"Formation Pattern Recognition","data":{"type":"quiz","questions":[{"question":"Який префікс означає \"наскрізь, до кінця\"?","options":["про-","на-","по-","за-"],"correctIndex":0,"explanation":""},{"question":"Який префікс означає \"майстерність, повнота\"?","options":["про-","на-","по-","ви-"],"correctIndex":3,"explanation":""},{"question":"\"Давати → дати\" — який тип утворення?","options":["Префіксальне","Суфіксальне (-ва- зникає)","Суплетивне","Змішане"],"correctIndex":1,"explanation":""},{"question":"Яка пара має різні корені?","options":["читати/прочитати","писати/написати","брати/взяти","робити/зробити"],"correctIndex":2,"explanation":""},{"question":"Префікс \"від-\" часто означає:","options":["Відкривання, віддалення","Закривання","Початок","Повторення"],"correctIndex":0,"explanation":""},{"question":"Префікс \"за-\" часто означає:","options":["Відкривання","Закривання, початок","Повне завершення","Повторення"],"correctIndex":1,"explanation":""},{"question":"Який найпоширеніший спосіб утворення доконаного виду?","options":["Додавання префікса","Видалення суфікса","Зміна кореня","Зміна закінчення"],"correctIndex":0,"explanation":""},{"question":"\"Вставати → встати\" — що відбувається?","options":["Додається префікс","Зникає -ва-","Змінюється корінь","Нічого не змінюється"],"correctIndex":1,"explanation":""},{"question":"Яка пара є \"суплетивною\"?","options":["пити/випити","їсти/з'їсти","говорити/сказати","бачити/побачити"],"correctIndex":2,"explanation":""},{"question":"\"На-\" у \"написати\" означає:","options":["Початок","Завершення, створення результату","Повторення","Відміну"],"correctIndex":1,"explanation":""},{"question":"Суфікс \"-ва-\" є ознакою:","options":["Доконаного виду","Недоконаного виду","Минулого часу","Майбутнього часу"],"correctIndex":1,"explanation":""},{"question":"\"Про-\" у \"прочитати\" передає:","options":["Прочитати до кінця, наскрізь","Почати читати","Перечитати заново","Читати голосно"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Aspect Formation Facts","data":{"type":"true-false","statements":[{"statement":"Більшість видових пар утворюється за допомогою префіксів.","isTrue":true,"explanation":""},{"statement":"Усі видові пари мають однаковий корінь.","isTrue":false,"explanation":""},{"statement":"Суфікс -ва- зазвичай вказує на недоконаний вид.","isTrue":true,"explanation":""},{"statement":"Префікс ви- означає \"вихід\" у всіх дієсловах.","isTrue":false,"explanation":""},{"statement":"\"Відкрити\" і \"закрити\" — протилежні дієслова.","isTrue":true,"explanation":""},{"statement":"\"Брати/взяти\" — це регулярна пара з префіксом.","isTrue":false,"explanation":""},{"statement":"Префікс по- часто означає коротку або завершену дію.","isTrue":true,"explanation":""},{"statement":"Усі дієслова з -ва- є недоконаного виду.","isTrue":true,"explanation":""},{"statement":"\"Починати → почати\" — приклад суфіксального утворення.","isTrue":true,"explanation":""},{"statement":"Префікс з- завжди означає \"з'єднання\".","isTrue":false,"explanation":""},{"statement":"\"Сказати\" — це доконаний вид від \"говорити\".","isTrue":true,"explanation":""},{"statement":"Можна додати будь-який префікс до будь-якого дієслова.","isTrue":false,"explanation":""}]}},{"id":"activity-5","type":"group-sort","title":"Formation Pattern Type","data":{"type":"group-sort","groups":[{"id":"prefix-addition","name":"Prefix Addition","items":["читати → прочитати","писати → написати","робити → зробити","бачити → побачити","вчити → вивчити","їсти → з'їсти"]},{"id":"suffix-change","name":"Suffix Change","items":["давати → дати","вставати → встати","відпочивати → відпочити","забувати → забути","відкривати → відкрити","закривати → закрити"],"nameUk":"-ва- removal"},{"id":"suppletive","name":"Suppletive","items":["говорити → сказати","брати → взяти"],"nameUk":"Different Roots"}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Aspect Pairs in Context","data":{"type":"fill-blank","items":[{"prompt":"Вона ___ всю книгу за одну ніч. (read through)","answer":"прочитала","explanation":"про- = through/completion"},{"prompt":"Художник ___ прекрасний портрет королеви. (painted/created)","answer":"намалював","explanation":"на- = creation/completion"},{"prompt":"Діти ___ весь торт на вечірці. (ate up)","answer":"з'їли","explanation":"з- = completion"},{"prompt":"Він ___ її випадково на вулиці вчора. (saw/spotted)","answer":"побачив","explanation":"по- = brief/completed"},{"prompt":"Студент нарешті ___ складну тему добре. (mastered)","answer":"вивчив","explanation":"ви- = thoroughness/mastery"},{"prompt":"Вона ___ двері і впустила гостей. (opened)","answer":"відкрила","explanation":"від- = opening"},{"prompt":"Він ___ вікно, бо було холодно. (closed)","answer":"закрив","explanation":"за- = closing"},{"prompt":"Мама ___ мені нову книгу на свято. (gave)","answer":"дала","explanation":"дати — perfective without -ва-"},{"prompt":"Він ___ о шостій ранку на роботу. (got up)","answer":"встав","explanation":"встати — without -ва-"},{"prompt":"Вона ___ правду про всю ситуацію. (told)","answer":"сказала","explanation":"сказати — suppletive pair"},{"prompt":"Він ___ мою книгу зі столу. (took)","answer":"взяв","explanation":"взяти — suppletive pair"},{"prompt":"Ми ___ добре на морі влітку. (rested)","answer":"відпочили","explanation":"відпочити — without -ва-"}]}},{"id":"activity-7","type":"select","title":"Identify the Formation Pattern","data":{"type":"select","items":[{"question":"читати → прочитати","options":[{"text":"Префіксальне утворення (про-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"давати → дати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"говорити → сказати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара (різні корені)","correct":true}]},{"question":"брати → взяти","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара (різні корені)","correct":true}]},{"question":"робити → зробити","options":[{"text":"Префіксальне утворення (з-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"вставати → встати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"пити → випити","options":[{"text":"Префіксальне утворення (ви-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"бачити → побачити","options":[{"text":"Префіксальне утворення (по-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"відпочивати → відпочити","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"їсти → з'їсти","options":[{"text":"Префіксальне утворення (з-)","correct":true},{"text":"Суфіксальне утворення","correct":false},{"text":"Суплетивна пара","correct":false}]},{"question":"вибирати → вибрати","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ира- → -ра-)","correct":true},{"text":"Суплетивна пара","correct":false}]},{"question":"забувати → забути","options":[{"text":"Префіксальне утворення","correct":false},{"text":"Суфіксальне утворення (-ва- зникає)","correct":true},{"text":"Суплетивна пара","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Daily Routine with Aspect Pairs","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["рано","встав","сьогодні","Він","о","годині","сьомій","ранку"],"answer":"Він сьогодні рано встав о сьомій годині ранку.","translation":"He got up early today at seven in the morning."},{"words":["одягнувся","швидко","і","пішов","на","роботу","Він","пішки"],"answer":"Він швидко одягнувся і пішов на роботу пішки.","translation":"He quickly got dressed and went to work on foot."},{"words":["почав","роботу","о","дев'ятій","годині","Він","важливу","нову"],"answer":"Він почав важливу нову роботу о дев'ятій годині.","translation":"He started important new work at nine o'clock."},{"words":["закінчив","усі","справи","до","п'ятої","години","Він","важливі"],"answer":"Він закінчив усі важливі справи до п'ятої години.","translation":"He finished all important tasks by five o'clock."},{"words":["відпочив","добре","ввечері","вдома","після","роботи","Він","трохи"],"answer":"Він добре відпочив трохи вдома ввечері після роботи.","translation":"He rested well a bit at home in the evening after work."},{"words":["ліг","спати","о","одинадцятій","годині","Він","ввечері","рано"],"answer":"Він рано ліг спати о одинадцятій годині ввечері.","translation":"He went to bed early at eleven in the evening."}]}},{"id":"activity-9","type":"quiz","title":"Aspect Pairs Mastery","data":{"type":"quiz","questions":[{"question":"Який відсоток видових пар утворюється префіксами?","options":["Близько 80%","Близько 50%","Близько 20%","Близько 10%"],"correctIndex":0,"explanation":""},{"question":"\"Суплетивна пара\" означає:","options":["Пара з однаковими префіксами","Пара з однаковими суфіксами","Пара з різними коренями","Пара з однаковими коренями"],"correctIndex":2,"explanation":""},{"question":"Яка пара НЕ є суплетивною?","options":["говорити/сказати","брати/взяти","читати/прочитати","класти/покласти"],"correctIndex":2,"explanation":""},{"question":"У парі \"давати → дати\" відбувається:","options":["Додавання префікса","Видалення суфікса -ва-","Зміна кореня","Нічого не змінюється"],"correctIndex":1,"explanation":""},{"question":"Префікс \"про-\" найчастіше означає:","options":["Дію до кінця, наскрізь","Початок дії","Повторення дії","Скасування дії"],"correctIndex":0,"explanation":""},{"question":"Яке дієслово є недоконаного виду?","options":["прочитати","написати","відпочивати","зробити"],"correctIndex":2,"explanation":""},{"question":"\"Відкрити\" і \"закрити\" відрізняються:","options":["Префіксами (від- vs за-)","Суфіксами","Коренями","Закінченнями"],"correctIndex":0,"explanation":""},{"question":"Яка пара показує префіксальне утворення?","options":["їсти → з'їсти","давати → дати","говорити → сказати","вставати → встати"],"correctIndex":0,"explanation":""},{"question":"\"Вивчити\" означає:","options":["Почати вчити","Вивчити до кінця, опанувати","Перестати вчити","Вчити знову"],"correctIndex":1,"explanation":""},{"question":"Суфікс \"-ва-\" вказує на:","options":["Тривалість, недоконаність","Завершеність","Майбутній час","Минулий час"],"correctIndex":0,"explanation":""},{"question":"\"Побачити\" утворено від \"бачити\" за допомогою:","options":["Префікса по-","Суфікса -ва-","Зміни кореня","Суфікса -ну-"],"correctIndex":0,"explanation":""},{"question":"Яке твердження правильне?","options":["Усі доконані дієслова мають префікс","Усі недоконані дієслова мають суфікс -ва-","Існують три типи утворення видових пар","Суплетивні пари найпоширеніші"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const vocabData = [{"uk":"відпочивати","translit":"","en":"to rest (impf)","note":"-ва- suffix"},{"uk":"відпочити","translit":"","en":"to rest (pf)","note":"-ва- drops"},{"uk":"вставати","translit":"","en":"to get up (impf)","note":"-ва- suffix"},{"uk":"встати","translit":"","en":"to get up (pf)","note":"-ва- drops"},{"uk":"одягатися","translit":"","en":"to dress (impf)","note":"reflexive"},{"uk":"одягнутися","translit":"","en":"to dress (pf)","note":"reflexive"},{"uk":"сідати","translit":"","en":"to sit down (impf)","note":""},{"uk":"сісти","translit":"","en":"to sit down (pf)","note":""},{"uk":"лягати","translit":"","en":"to lie down (impf)","note":""},{"uk":"лягти","translit":"","en":"to lie down (pf)","note":""},{"uk":"відкривати","translit":"","en":"to open (impf)","note":""},{"uk":"відкрити","translit":"","en":"to open (pf)","note":""},{"uk":"закривати","translit":"","en":"to close (impf)","note":""},{"uk":"закрити","translit":"","en":"to close (pf)","note":""},{"uk":"вмикати","translit":"","en":"to turn on (impf)","note":""},{"uk":"увімкнути","translit":"","en":"to turn on (pf)","note":""},{"uk":"вимикати","translit":"","en":"to turn off (impf)","note":""},{"uk":"вимкнути","translit":"","en":"to turn off (pf)","note":""},{"uk":"починати","translit":"","en":"to begin (impf)","note":""},{"uk":"почати","translit":"","en":"to begin (pf)","note":""},{"uk":"закінчувати","translit":"","en":"to finish (impf)","note":""},{"uk":"закінчити","translit":"","en":"to finish (pf)","note":""},{"uk":"отримувати","translit":"","en":"to receive (impf)","note":""},{"uk":"отримати","translit":"","en":"to receive (pf)","note":""},{"uk":"посилати","translit":"","en":"to send (impf)","note":""},{"uk":"послати","translit":"","en":"to send (pf)","note":""},{"uk":"вибирати","translit":"","en":"to choose (impf)","note":""},{"uk":"вибрати","translit":"","en":"to choose (pf)","note":""},{"uk":"вирішувати","translit":"","en":"to decide (impf)","note":""},{"uk":"вирішити","translit":"","en":"to decide (pf)","note":""}];
   
 // Answer callout toggle (for new > [!answer] syntax)
 function toggleAnswer(id, btn) {
@@ -2356,6 +2571,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

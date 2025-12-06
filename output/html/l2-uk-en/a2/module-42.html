@@ -465,6 +465,46 @@ footer {
 .anagram-feedback .wrong-text { color: var(--danger); }
 .anagram-feedback .translation { color: var(--text-muted); font-style: italic; margin-left: 0.5rem; }
 
+/* Error-Correction Activity - Identify and fix errors */
+.error-correction-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.error-item { border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.5rem; }
+.error-item.completed { opacity: 0.85; }
+.error-item.step2 .error-words { background: #f0f9ff; }
+
+.error-sentence { display: flex; align-items: baseline; gap: 0.5rem; font-size: 1.15rem; line-height: 1.8; flex-wrap: wrap; }
+.error-number { font-weight: 600; color: var(--text-muted); min-width: 2rem; }
+.error-words { display: inline; }
+
+.error-word { cursor: pointer; padding: 0.15rem 0.25rem; border-radius: 4px; transition: background 0.15s, color 0.15s; }
+.error-word:hover { background: #e8f4fd; }
+.error-word.selected { background: var(--primary); color: white; }
+.error-word.found { background: var(--success); color: white; cursor: default; }
+.error-word.wrong-selection { background: var(--danger); color: white; animation: shake 0.3s; }
+.error-item.completed .error-word { cursor: default; }
+.error-item.completed .error-word:hover { background: transparent; }
+.error-item.completed .error-word.found { background: var(--success); color: white; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.error-no-error-btn { margin-top: 0.75rem; }
+.error-options { margin-top: 0.75rem; }
+.error-prompt { font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+.error-option-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.error-option { background: #f5f5f5; border: 2px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem; }
+.error-option:hover { border-color: var(--primary); background: #e8f4fd; }
+.error-option:disabled { cursor: default; }
+.error-option.correct { border-color: var(--success); background: #d4edda; color: var(--success); }
+.error-option.wrong { border-color: var(--danger); background: #f8d7da; color: var(--danger); }
+
+.error-feedback { margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: #f8f9fa; }
+.error-feedback .correct-text { color: var(--success); font-weight: 600; }
+.error-feedback .wrong-text { color: var(--danger); }
+.error-explanation { margin-top: 0.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem; }
+
   </style>
 </head>
 <body>
@@ -489,7 +529,8 @@ footer {
       <button class="nav-tab" data-section="activity-5">6. Sort</button>
       <button class="nav-tab" data-section="activity-6">7. Fill</button>
       <button class="nav-tab" data-section="activity-7">8. Select</button>
-      <button class="nav-tab" data-section="activity-8">9. Quiz</button>
+      <button class="nav-tab" data-section="activity-8">9. Order</button>
+      <button class="nav-tab" data-section="activity-9">10. Quiz</button>
       <button class="nav-tab" data-section="vocab">Vocab</button>
     </div>
   </nav>
@@ -885,11 +926,18 @@ footer {
       <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-7')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-8')">Next →</button></div>
     </div></section>
 
-    <section id="activity-8" class="section"><div class="card"><h3>Career Knowledge</h3>
+    <section id="activity-8" class="section"><div class="card"><h3>Work and Career Sentences</h3>
       <div class="score-display"><span class="score"><span id="activity-8-score">0</span>/12</span></div>
-      <div id="activity-8-container"></div>
-      <div class="completion-message" id="activity-8-complete"><h3>Complete!</h3></div>
-      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
+      <div id="activity-8-container" class="order-container"></div>
+      <div class="completion-message" id="activity-8-complete"><h3>Perfect Order!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-8')">Reset</button><button class="btn btn-primary" onclick="showSection('activity-9')">Next →</button></div>
+    </div></section>
+
+    <section id="activity-9" class="section"><div class="card"><h3>Career Knowledge</h3>
+      <div class="score-display"><span class="score"><span id="activity-9-score">0</span>/12</span></div>
+      <div id="activity-9-container"></div>
+      <div class="completion-message" id="activity-9-complete"><h3>Complete!</h3></div>
+      <div class="btn-group"><button class="btn btn-outline" onclick="resetActivity('activity-9')">Reset</button><button class="btn btn-primary" onclick="showSection('vocab')">Next →</button></div>
     </div></section>
     
     <section id="vocab" class="section">
@@ -916,7 +964,7 @@ footer {
   </main><footer>Module 42 · curricula-opus</footer>
   <script>
 
-    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Він лікує людей. Він — ___.","answer":"лікар","options":["лікар","вчитель","інженер","юрист"]},{"prompt":"Вона навчає дітей у школі. Вона — ___.","answer":"вчитель","options":["лікар","вчитель","програміст","журналіст"]},{"prompt":"Він пише комп'ютерні програми. Він — ___.","answer":"програміст","options":["інженер","юрист","програміст","бухгалтер"]},{"prompt":"Вона допомагає з юридичними питаннями. Вона — ___.","answer":"юрист","options":["лікар","юрист","інженер","менеджер"]},{"prompt":"Він проектує машини та механізми. Він — ___.","answer":"інженер","options":["програміст","інженер","архітектор","перекладач"]},{"prompt":"Мій батько працює ___ у лікарні.","answer":"лікарем","options":["лікарем","вчителем","інженером","юристом"]},{"prompt":"Вона хоче стати ___ української мови.","answer":"вчителем","options":["лікарем","вчителем","юристом","бухгалтером"]},{"prompt":"___ працює на заводі.","answer":"Інженер","options":["Вчитель","Лікар","Інженер","Журналіст"]},{"prompt":"___ знає закони дуже добре.","answer":"Юрист","options":["Юрист","Програміст","Архітектор","Менеджер"]},{"prompt":"___и заробляють хороші гроші в Україні.","answer":"Програміст","options":["Вчитель","Програміст","Журналіст","Перекладач"]},{"prompt":"Він хороший ___, всі його поважають.","answer":"лікар","options":["лікар","вчитель","інженер","бухгалтер"]},{"prompt":"Моя сестра — ___ математики.","answer":"вчитель","options":["лікар","вчитель","юрист","менеджер"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте професію з місцем роботи","data":{"type":"match-up","pairs":[{"left":"лікар","right":"лікарня"},{"left":"вчитель","right":"школа"},{"left":"програміст","right":"офіс"},{"left":"кухар","right":"ресторан"},{"left":"робітник","right":"фабрика"},{"left":"механік","right":"майстерня"},{"left":"продавець","right":"магазин"},{"left":"інженер","right":"завод"},{"left":"журналіст","right":"редакція"},{"left":"бухгалтер","right":"бухгалтерія"},{"left":"менеджер","right":"компанія"},{"left":"архітектор","right":"бюро"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","працюю","в","офісі","з","понеділка","по","п'ятницю"],"answer":"Я працюю в офісі з понеділка по п'ятницю.","translation":"I work in the office from Monday to Friday."},{"words":["Моя","сестра","працює","лікарем","у","лікарні"],"answer":"Моя сестра працює лікарем у лікарні.","translation":"My sister works as a doctor at the hospital."},{"words":["Він","керує","великою","командою","працівників"],"answer":"Він керує великою командою працівників.","translation":"He manages a large team of workers."},{"words":["Компанія","наймає","нових","програмістів"],"answer":"Компанія наймає нових програмістів.","translation":"The company is hiring new programmers."},{"words":["Мені","подобається","моя","робота","і","колеги"],"answer":"Мені подобається моя робота і колеги.","translation":"I like my job and colleagues."},{"words":["Зарплата","приходить","щомісяця","на","картку"],"answer":"Зарплата приходить щомісяця на картку.","translation":"The salary comes monthly to the card."},{"words":["У","мене","відпустка","влітку","на","два","тижні"],"answer":"У мене відпустка влітку на два тижні.","translation":"I have vacation in summer for two weeks."},{"words":["Завтра","в","мене","співбесіда","на","нову","посаду"],"answer":"Завтра в мене співбесіда на нову посаду.","translation":"Tomorrow I have an interview for a new position."},{"words":["Він","заробляє","хороші","гроші","як","інженер"],"answer":"Він заробляє хороші гроші як інженер.","translation":"He earns good money as an engineer."},{"words":["Вона","співпрацює","з","іноземними","компаніями"],"answer":"Вона співпрацює з іноземними компаніями.","translation":"She cooperates with foreign companies."},{"words":["Мій","колега","дуже","привітний","і","допомагає","мені"],"answer":"Мій колега дуже привітний і допомагає мені.","translation":"My colleague is very friendly and helps me."},{"words":["Потрібен","досвід","роботи","три","роки"],"answer":"Потрібен досвід роботи три роки.","translation":"Three years of work experience is required."}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Хто працює в лікарні?","options":["вчитель","лікар","програміст","журналіст"],"correctIndex":1,"explanation":""},{"question":"Де працює вчитель?","options":["в офісі","на фабриці","у школі","у ресторані"],"correctIndex":2,"explanation":""},{"question":"Що означає \"керувати\"?","options":["to work","to manage","to hire","to earn"],"correctIndex":1,"explanation":""},{"question":"Що таке \"зарплата\"?","options":["vacation","position","salary","experience"],"correctIndex":2,"explanation":""},{"question":"Хто пише статті для газет?","options":["бухгалтер","юрист","журналіст","архітектор"],"correctIndex":2,"explanation":""},{"question":"Що означає \"наймати\"?","options":["to fire","to hire","to earn","to promote"],"correctIndex":1,"explanation":""},{"question":"Що таке \"співбесіда\"?","options":["resume","colleague","salary","interview"],"correctIndex":3,"explanation":""},{"question":"Де виробляють автомобілі?","options":["в офісі","на фабриці","у школі","в магазині"],"correctIndex":1,"explanation":""},{"question":"Хто проектує будинки?","options":["інженер","юрист","архітектор","бухгалтер"],"correctIndex":2,"explanation":""},{"question":"Що означає \"звільняти\"?","options":["to hire","to promote","to fire","to cooperate"],"correctIndex":2,"explanation":""},{"question":"Що таке \"відпустка\"?","options":["vacation","salary","position","career"],"correctIndex":0,"explanation":""},{"question":"Хто перекладає тексти?","options":["журналіст","бухгалтер","перекладач","менеджер"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Лікар працює в лікарні.","isTrue":true,"explanation":"Correct! A doctor works at a hospital."},{"statement":"Програміст працює з комп'ютерами.","isTrue":true,"explanation":"Correct! A programmer works with computers."},{"statement":"Зарплата — це відпочинок від роботи.","isTrue":false,"explanation":"Incorrect! Зарплата means salary, not rest from work."},{"statement":"Фабрика — це місце, де виробляють товари.","isTrue":true,"explanation":"Correct! A factory is a place where goods are produced."},{"statement":"Звільняти означає наймати на роботу.","isTrue":false,"explanation":"Incorrect! Звільняти means to fire, not to hire."},{"statement":"Колега — це людина, з якою ви працюєте.","isTrue":true,"explanation":"Correct! A colleague is a person you work with."},{"statement":"Резюме — це документ про ваш досвід роботи.","isTrue":true,"explanation":"Correct! A resume is a document about your work experience."},{"statement":"Вчитель працює на заводі.","isTrue":false,"explanation":"Incorrect! A teacher works at a school, not a factory."},{"statement":"Керувати означає управляти командою.","isTrue":true,"explanation":"Correct! Керувати means to manage a team."},{"statement":"Співбесіда — це розмова перед роботою.","isTrue":true,"explanation":"Correct! An interview is a conversation before getting a job."},{"statement":"Юрист лікує людей.","isTrue":false,"explanation":"Incorrect! A lawyer handles legal matters, not medical care."},{"statement":"Відпустка — це час відпочинку від роботи.","isTrue":true,"explanation":"Correct! Vacation is time off from work."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Професії","items":["лікар","вчитель","інженер","програміст","журналіст","бухгалтер"]},{"id":"-","name":"Місця роботи","items":["офіс","фабрика","завод","лікарня","школа","майстерня"]},{"id":"","name":"Дієслова","items":["працювати","керувати","наймати","звільняти","заробляти","співпрацювати"]},{"id":"","name":"Кар'єра","items":["зарплата","відпустка","посада","досвід","резюме","співбесіда"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Workplace Actions","data":{"type":"fill-blank","items":[{"prompt":"Директор ___ нових працівників на роботу щомісяця. (hires)","answer":"наймає"},{"prompt":"Вона ___ відділом продажів уже п'ять років. (manages)","answer":"керує"},{"prompt":"Він добре ___ у цій компанії, хороша зарплата. (earns)","answer":"заробляє"},{"prompt":"Ми ___ з міжнародними партнерами над проектом. (cooperate)","answer":"співпрацюємо"},{"prompt":"Її ___ на посаду директора минулого місяця. (promoted)","answer":"просували"},{"prompt":"Компанія ___ працівників через кризу в економіці. (fires)","answer":"звільняє"},{"prompt":"Мій брат ___ лікарем у міській лікарні. (works)","answer":"працює"},{"prompt":"Завтра в мене ___ на нову посаду маркетолога. (interview)","answer":"співбесіда"},{"prompt":"Надішліть своє ___ на електронну пошту компанії. (resume)","answer":"резюме"},{"prompt":"Потрібен ___ роботи не менше трьох років. (experience)","answer":"досвід"},{"prompt":"У серпні в мене ___ на два тижні. (vacation)","answer":"відпустка"},{"prompt":"Мої ___ дуже привітні та допомагають мені завжди. (colleagues)","answer":"колеги"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Profession","data":{"type":"select","items":[{"question":"Ця людина лікує хворих людей.","options":[{"text":"лікар","correct":true},{"text":"вчитель","correct":false}]},{"question":"Ця людина навчає дітей математики.","options":[{"text":"програміст","correct":false},{"text":"вчитель","correct":true}]},{"question":"Ця людина пише комп'ютерні програми.","options":[{"text":"програміст","correct":true},{"text":"бухгалтер","correct":false}]},{"question":"Ця людина проектує нові будинки.","options":[{"text":"інженер","correct":false},{"text":"архітектор","correct":true}]},{"question":"Ця людина знає багато іноземних мов.","options":[{"text":"перекладач","correct":true},{"text":"юрист","correct":false}]},{"question":"Ця людина рахує гроші компанії.","options":[{"text":"менеджер","correct":false},{"text":"бухгалтер","correct":true}]},{"question":"Ця людина пише статті для газет.","options":[{"text":"журналіст","correct":true},{"text":"юрист","correct":false}]},{"question":"Ця людина допомагає з юридичними проблемами.","options":[{"text":"лікар","correct":false},{"text":"юрист","correct":true}]},{"question":"Ця людина керує командою працівників.","options":[{"text":"менеджер","correct":true},{"text":"програміст","correct":false}]},{"question":"Ця людина проектує машини та механізми.","options":[{"text":"інженер","correct":true},{"text":"архітектор","correct":false}]},{"question":"Ця людина готує їжу в ресторані.","options":[{"text":"продавець","correct":false},{"text":"кухар","correct":true}]},{"question":"Ця людина продає товари в магазині.","options":[{"text":"продавець","correct":true},{"text":"кухар","correct":false}]}]}},{"id":"activity-8","type":"quiz","title":"Career Knowledge","data":{"type":"quiz","questions":[{"question":"Що означає «наймати на роботу»?","options":["to hire for work","to fire from work","to promote at work","to manage at work"],"correctIndex":0,"explanation":""},{"question":"Де працює лікар?","options":["у лікарні","у школі","на фабриці","в магазині"],"correctIndex":0,"explanation":""},{"question":"Що потрібно для співбесіди?","options":["резюме","відпустка","зарплата","фабрика"],"correctIndex":0,"explanation":""},{"question":"Хто керує командою працівників?","options":["менеджер","перекладач","бухгалтер","журналіст"],"correctIndex":0,"explanation":""},{"question":"Що таке «зарплата»?","options":["гроші за роботу","час відпочинку","місце роботи","документ для роботи"],"correctIndex":0,"explanation":""},{"question":"Де виробляють автомобілі?","options":["на заводі","в офісі","у школі","в лікарні"],"correctIndex":0,"explanation":""},{"question":"Що означає «звільняти»?","options":["to fire","to hire","to promote","to earn"],"correctIndex":0,"explanation":""},{"question":"Хто перекладає книжки з однієї мови на іншу?","options":["перекладач","журналіст","бухгалтер","юрист"],"correctIndex":0,"explanation":""},{"question":"Що таке «відпустка»?","options":["vacation from work","salary for work","interview for work","position at work"],"correctIndex":0,"explanation":""},{"question":"Де працює програміст?","options":["в офісі","у лікарні","на фабриці","в ресторані"],"correctIndex":0,"explanation":""},{"question":"Хто рахує гроші компанії?","options":["бухгалтер","журналіст","архітектор","перекладач"],"correctIndex":0,"explanation":""},{"question":"Що означає «просувати по службі»?","options":["to promote","to fire","to hire","to cooperate"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
+    const activitiesData = [{"id":"activity-0","type":"fill-blank","title":"Оберіть правильне слово","data":{"type":"fill-blank","items":[{"prompt":"Він лікує людей. Він — ___.","answer":"лікар","options":["лікар","вчитель","інженер","юрист"]},{"prompt":"Вона навчає дітей у школі. Вона — ___.","answer":"вчитель","options":["лікар","вчитель","програміст","журналіст"]},{"prompt":"Він пише комп'ютерні програми. Він — ___.","answer":"програміст","options":["інженер","юрист","програміст","бухгалтер"]},{"prompt":"Вона допомагає з юридичними питаннями. Вона — ___.","answer":"юрист","options":["лікар","юрист","інженер","менеджер"]},{"prompt":"Він проектує машини та механізми. Він — ___.","answer":"інженер","options":["програміст","інженер","архітектор","перекладач"]},{"prompt":"Мій батько працює ___ у лікарні.","answer":"лікарем","options":["лікарем","вчителем","інженером","юристом"]},{"prompt":"Вона хоче стати ___ української мови.","answer":"вчителем","options":["лікарем","вчителем","юристом","бухгалтером"]},{"prompt":"___ працює на заводі.","answer":"Інженер","options":["Вчитель","Лікар","Інженер","Журналіст"]},{"prompt":"___ знає закони дуже добре.","answer":"Юрист","options":["Юрист","Програміст","Архітектор","Менеджер"]},{"prompt":"___и заробляють хороші гроші в Україні.","answer":"Програміст","options":["Вчитель","Програміст","Журналіст","Перекладач"]},{"prompt":"Він хороший ___, всі його поважають.","answer":"лікар","options":["лікар","вчитель","інженер","бухгалтер"]},{"prompt":"Моя сестра — ___ математики.","answer":"вчитель","options":["лікар","вчитель","юрист","менеджер"]}]}},{"id":"activity-1","type":"match-up","title":"З'єднайте професію з місцем роботи","data":{"type":"match-up","pairs":[{"left":"лікар","right":"лікарня"},{"left":"вчитель","right":"школа"},{"left":"програміст","right":"офіс"},{"left":"кухар","right":"ресторан"},{"left":"робітник","right":"фабрика"},{"left":"механік","right":"майстерня"},{"left":"продавець","right":"магазин"},{"left":"інженер","right":"завод"},{"left":"журналіст","right":"редакція"},{"left":"бухгалтер","right":"бухгалтерія"},{"left":"менеджер","right":"компанія"},{"left":"архітектор","right":"бюро"}],"shuffleRight":true}},{"id":"activity-2","type":"unjumble","title":"Складіть речення","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Я","працюю","в","офісі","з","понеділка","по","п'ятницю"],"answer":"Я працюю в офісі з понеділка по п'ятницю.","translation":"I work in the office from Monday to Friday."},{"words":["Моя","сестра","працює","лікарем","у","лікарні"],"answer":"Моя сестра працює лікарем у лікарні.","translation":"My sister works as a doctor at the hospital."},{"words":["Він","керує","великою","командою","працівників"],"answer":"Він керує великою командою працівників.","translation":"He manages a large team of workers."},{"words":["Компанія","наймає","нових","програмістів"],"answer":"Компанія наймає нових програмістів.","translation":"The company is hiring new programmers."},{"words":["Мені","подобається","моя","робота","і","колеги"],"answer":"Мені подобається моя робота і колеги.","translation":"I like my job and colleagues."},{"words":["Зарплата","приходить","щомісяця","на","картку"],"answer":"Зарплата приходить щомісяця на картку.","translation":"The salary comes monthly to the card."},{"words":["У","мене","відпустка","влітку","на","два","тижні"],"answer":"У мене відпустка влітку на два тижні.","translation":"I have vacation in summer for two weeks."},{"words":["Завтра","в","мене","співбесіда","на","нову","посаду"],"answer":"Завтра в мене співбесіда на нову посаду.","translation":"Tomorrow I have an interview for a new position."},{"words":["Він","заробляє","хороші","гроші","як","інженер"],"answer":"Він заробляє хороші гроші як інженер.","translation":"He earns good money as an engineer."},{"words":["Вона","співпрацює","з","іноземними","компаніями"],"answer":"Вона співпрацює з іноземними компаніями.","translation":"She cooperates with foreign companies."},{"words":["Мій","колега","дуже","привітний","і","допомагає","мені"],"answer":"Мій колега дуже привітний і допомагає мені.","translation":"My colleague is very friendly and helps me."},{"words":["Потрібен","досвід","роботи","три","роки"],"answer":"Потрібен досвід роботи три роки.","translation":"Three years of work experience is required."}]}},{"id":"activity-3","type":"quiz","title":"Виберіть правильну відповідь","data":{"type":"quiz","questions":[{"question":"Хто працює в лікарні?","options":["вчитель","лікар","програміст","журналіст"],"correctIndex":1,"explanation":""},{"question":"Де працює вчитель?","options":["в офісі","на фабриці","у школі","у ресторані"],"correctIndex":2,"explanation":""},{"question":"Що означає \"керувати\"?","options":["to work","to manage","to hire","to earn"],"correctIndex":1,"explanation":""},{"question":"Що таке \"зарплата\"?","options":["vacation","position","salary","experience"],"correctIndex":2,"explanation":""},{"question":"Хто пише статті для газет?","options":["бухгалтер","юрист","журналіст","архітектор"],"correctIndex":2,"explanation":""},{"question":"Що означає \"наймати\"?","options":["to fire","to hire","to earn","to promote"],"correctIndex":1,"explanation":""},{"question":"Що таке \"співбесіда\"?","options":["resume","colleague","salary","interview"],"correctIndex":3,"explanation":""},{"question":"Де виробляють автомобілі?","options":["в офісі","на фабриці","у школі","в магазині"],"correctIndex":1,"explanation":""},{"question":"Хто проектує будинки?","options":["інженер","юрист","архітектор","бухгалтер"],"correctIndex":2,"explanation":""},{"question":"Що означає \"звільняти\"?","options":["to hire","to promote","to fire","to cooperate"],"correctIndex":2,"explanation":""},{"question":"Що таке \"відпустка\"?","options":["vacation","salary","position","career"],"correctIndex":0,"explanation":""},{"question":"Хто перекладає тексти?","options":["журналіст","бухгалтер","перекладач","менеджер"],"correctIndex":2,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}},{"id":"activity-4","type":"true-false","title":"Правда чи неправда?","data":{"type":"true-false","statements":[{"statement":"Лікар працює в лікарні.","isTrue":true,"explanation":"Correct! A doctor works at a hospital."},{"statement":"Програміст працює з комп'ютерами.","isTrue":true,"explanation":"Correct! A programmer works with computers."},{"statement":"Зарплата — це відпочинок від роботи.","isTrue":false,"explanation":"Incorrect! Зарплата means salary, not rest from work."},{"statement":"Фабрика — це місце, де виробляють товари.","isTrue":true,"explanation":"Correct! A factory is a place where goods are produced."},{"statement":"Звільняти означає наймати на роботу.","isTrue":false,"explanation":"Incorrect! Звільняти means to fire, not to hire."},{"statement":"Колега — це людина, з якою ви працюєте.","isTrue":true,"explanation":"Correct! A colleague is a person you work with."},{"statement":"Резюме — це документ про ваш досвід роботи.","isTrue":true,"explanation":"Correct! A resume is a document about your work experience."},{"statement":"Вчитель працює на заводі.","isTrue":false,"explanation":"Incorrect! A teacher works at a school, not a factory."},{"statement":"Керувати означає управляти командою.","isTrue":true,"explanation":"Correct! Керувати means to manage a team."},{"statement":"Співбесіда — це розмова перед роботою.","isTrue":true,"explanation":"Correct! An interview is a conversation before getting a job."},{"statement":"Юрист лікує людей.","isTrue":false,"explanation":"Incorrect! A lawyer handles legal matters, not medical care."},{"statement":"Відпустка — це час відпочинку від роботи.","isTrue":true,"explanation":"Correct! Vacation is time off from work."}]}},{"id":"activity-5","type":"group-sort","title":"Розподіліть слова за категоріями","data":{"type":"group-sort","groups":[{"id":"","name":"Професії","items":["лікар","вчитель","інженер","програміст","журналіст","бухгалтер"]},{"id":"-","name":"Місця роботи","items":["офіс","фабрика","завод","лікарня","школа","майстерня"]},{"id":"","name":"Дієслова","items":["працювати","керувати","наймати","звільняти","заробляти","співпрацювати"]},{"id":"","name":"Кар'єра","items":["зарплата","відпустка","посада","досвід","резюме","співбесіда"]}],"shuffleItems":true}},{"id":"activity-6","type":"fill-blank","title":"Workplace Actions","data":{"type":"fill-blank","items":[{"prompt":"Директор ___ нових працівників на роботу щомісяця. (hires)","answer":"наймає"},{"prompt":"Вона ___ відділом продажів уже п'ять років. (manages)","answer":"керує"},{"prompt":"Він добре ___ у цій компанії, хороша зарплата. (earns)","answer":"заробляє"},{"prompt":"Ми ___ з міжнародними партнерами над проектом. (cooperate)","answer":"співпрацюємо"},{"prompt":"Її ___ на посаду директора минулого місяця. (promoted)","answer":"просували"},{"prompt":"Компанія ___ працівників через кризу в економіці. (fires)","answer":"звільняє"},{"prompt":"Мій брат ___ лікарем у міській лікарні. (works)","answer":"працює"},{"prompt":"Завтра в мене ___ на нову посаду маркетолога. (interview)","answer":"співбесіда"},{"prompt":"Надішліть своє ___ на електронну пошту компанії. (resume)","answer":"резюме"},{"prompt":"Потрібен ___ роботи не менше трьох років. (experience)","answer":"досвід"},{"prompt":"У серпні в мене ___ на два тижні. (vacation)","answer":"відпустка"},{"prompt":"Мої ___ дуже привітні та допомагають мені завжди. (colleagues)","answer":"колеги"}]}},{"id":"activity-7","type":"select","title":"Choose the Correct Profession","data":{"type":"select","items":[{"question":"Ця людина лікує хворих людей.","options":[{"text":"лікар","correct":true},{"text":"вчитель","correct":false}]},{"question":"Ця людина навчає дітей математики.","options":[{"text":"програміст","correct":false},{"text":"вчитель","correct":true}]},{"question":"Ця людина пише комп'ютерні програми.","options":[{"text":"програміст","correct":true},{"text":"бухгалтер","correct":false}]},{"question":"Ця людина проектує нові будинки.","options":[{"text":"інженер","correct":false},{"text":"архітектор","correct":true}]},{"question":"Ця людина знає багато іноземних мов.","options":[{"text":"перекладач","correct":true},{"text":"юрист","correct":false}]},{"question":"Ця людина рахує гроші компанії.","options":[{"text":"менеджер","correct":false},{"text":"бухгалтер","correct":true}]},{"question":"Ця людина пише статті для газет.","options":[{"text":"журналіст","correct":true},{"text":"юрист","correct":false}]},{"question":"Ця людина допомагає з юридичними проблемами.","options":[{"text":"лікар","correct":false},{"text":"юрист","correct":true}]},{"question":"Ця людина керує командою працівників.","options":[{"text":"менеджер","correct":true},{"text":"програміст","correct":false}]},{"question":"Ця людина проектує машини та механізми.","options":[{"text":"інженер","correct":true},{"text":"архітектор","correct":false}]},{"question":"Ця людина готує їжу в ресторані.","options":[{"text":"продавець","correct":false},{"text":"кухар","correct":true}]},{"question":"Ця людина продає товари в магазині.","options":[{"text":"продавець","correct":true},{"text":"кухар","correct":false}]}]}},{"id":"activity-8","type":"unjumble","title":"Work and Career Sentences","data":{"type":"unjumble","isUnjumble":true,"items":[{"words":["Мій","|","батько","|","працює","|","лікарем","|","у","|","міській","|","лікарні"],"answer":"Мій батько працює лікарем у міській лікарні.","translation":"My father works as a doctor at the city hospital."},{"words":["Вона","|","керує","|","великою","|","командою","|","програмістів","|","уже","|","рік"],"answer":"Вона керує великою командою програмістів уже рік.","translation":"She has been managing a large team of programmers for a year."},{"words":["Компанія","|","наймає","|","нових","|","працівників","|","на","|","різні","|","посади"],"answer":"Компанія наймає нових працівників на різні посади.","translation":"The company is hiring new employees for various positions."},{"words":["Завтра","|","в","|","мене","|","співбесіда","|","на","|","посаду","|","менеджера"],"answer":"Завтра в мене співбесіда на посаду менеджера.","translation":"Tomorrow I have an interview for the manager position."},{"words":["Він","|","заробляє","|","хороші","|","гроші","|","як","|","досвідчений","|","інженер"],"answer":"Він заробляє хороші гроші як досвідчений інженер.","translation":"He earns good money as an experienced engineer."},{"words":["Зарплата","|","приходить","|","щомісяця","|","на","|","банківську","|","картку"],"answer":"Зарплата приходить щомісяця на банківську картку.","translation":"The salary comes monthly to the bank card."},{"words":["Мої","|","колеги","|","дуже","|","привітні","|","і","|","допомагають","|","мені"],"answer":"Мої колеги дуже привітні і допомагають мені.","translation":"My colleagues are very friendly and help me."},{"words":["У","|","серпні","|","в","|","мене","|","відпустка","|","на","|","два","|","тижні"],"answer":"У серпні в мене відпустка на два тижні.","translation":"In August I have a two-week vacation."},{"words":["Надішліть","|","своє","|","резюме","|","на","|","електронну","|","пошту","|","компанії"],"answer":"Надішліть своє резюме на електронну пошту компанії.","translation":"Send your resume to the company's email."},{"words":["Вона","|","співпрацює","|","з","|","іноземними","|","партнерами","|","щодня"],"answer":"Вона співпрацює з іноземними партнерами щодня.","translation":"She cooperates with foreign partners daily."},{"words":["Потрібен","|","досвід","|","роботи","|","не","|","менше","|","трьох","|","років"],"answer":"Потрібен досвід роботи не менше трьох років.","translation":"At least three years of work experience is required."},{"words":["Журналісти","|","пишуть","|","статті","|","для","|","газет","|","та","|","журналів"],"answer":"Журналісти пишуть статті для газет та журналів.","translation":"Journalists write articles for newspapers and magazines."}]}},{"id":"activity-9","type":"quiz","title":"Career Knowledge","data":{"type":"quiz","questions":[{"question":"Що означає «наймати на роботу»?","options":["to hire for work","to fire from work","to promote at work","to manage at work"],"correctIndex":0,"explanation":""},{"question":"Де працює лікар?","options":["у лікарні","у школі","на фабриці","в магазині"],"correctIndex":0,"explanation":""},{"question":"Що потрібно для співбесіди?","options":["резюме","відпустка","зарплата","фабрика"],"correctIndex":0,"explanation":""},{"question":"Хто керує командою працівників?","options":["менеджер","перекладач","бухгалтер","журналіст"],"correctIndex":0,"explanation":""},{"question":"Що таке «зарплата»?","options":["гроші за роботу","час відпочинку","місце роботи","документ для роботи"],"correctIndex":0,"explanation":""},{"question":"Де виробляють автомобілі?","options":["на заводі","в офісі","у школі","в лікарні"],"correctIndex":0,"explanation":""},{"question":"Що означає «звільняти»?","options":["to fire","to hire","to promote","to earn"],"correctIndex":0,"explanation":""},{"question":"Хто перекладає книжки з однієї мови на іншу?","options":["перекладач","журналіст","бухгалтер","юрист"],"correctIndex":0,"explanation":""},{"question":"Що таке «відпустка»?","options":["vacation from work","salary for work","interview for work","position at work"],"correctIndex":0,"explanation":""},{"question":"Де працює програміст?","options":["в офісі","у лікарні","на фабриці","в ресторані"],"correctIndex":0,"explanation":""},{"question":"Хто рахує гроші компанії?","options":["бухгалтер","журналіст","архітектор","перекладач"],"correctIndex":0,"explanation":""},{"question":"Що означає «просувати по службі»?","options":["to promote","to fire","to hire","to cooperate"],"correctIndex":0,"explanation":""}],"shuffleQuestions":true,"shuffleOptions":true,"showCorrectAnswers":true}}];
     const vocabData = [{"uk":"лікар","translit":"","en":"doctor","note":""},{"uk":"вчитель","translit":"","en":"teacher","note":"f: вчителька"},{"uk":"інженер","translit":"","en":"engineer","note":""},{"uk":"програміст","translit":"","en":"programmer","note":"f: програмістка"},{"uk":"юрист","translit":"","en":"lawyer","note":"f: юристка"},{"uk":"бухгалтер","translit":"","en":"accountant","note":"f: бухгалтерка"},{"uk":"менеджер","translit":"","en":"manager","note":"f: менеджерка"},{"uk":"журналіст","translit":"","en":"journalist","note":"f: журналістка"},{"uk":"архітектор","translit":"","en":"architect","note":"f: архітекторка"},{"uk":"перекладач","translit":"","en":"translator","note":"f: перекладачка"},{"uk":"офіс","translit":"","en":"office","note":""},{"uk":"фабрика","translit":"","en":"factory","note":""},{"uk":"завод","translit":"","en":"plant","note":"industrial"},{"uk":"майстерня","translit":"","en":"workshop","note":""},{"uk":"лікарня","translit":"","en":"hospital","note":""},{"uk":"працювати","translit":"","en":"to work","note":"pf: попрацювати"},{"uk":"керувати","translit":"","en":"to manage","note":"+ Inst"},{"uk":"співпрацювати","translit":"","en":"to cooperate","note":"+ з + Inst"},{"uk":"наймати","translit":"","en":"to hire","note":"pf: найняти"},{"uk":"звільняти","translit":"","en":"to fire","note":"pf: звільнити"},{"uk":"заробляти","translit":"","en":"to earn","note":"pf: заробити"},{"uk":"просувати","translit":"","en":"to promote","note":"pf: просунути"},{"uk":"кар'єра","translit":"","en":"career","note":""},{"uk":"зарплата","translit":"","en":"salary","note":""},{"uk":"відпустка","translit":"","en":"vacation","note":"work leave"},{"uk":"посада","translit":"","en":"position","note":"job position"},{"uk":"досвід","translit":"","en":"experience","note":""},{"uk":"резюме","translit":"","en":"resume","note":"indecl"},{"uk":"співбесіда","translit":"","en":"interview","note":"job interview"},{"uk":"колега","translit":"","en":"colleague","note":"common gender"}];
   
 // Answer callout toggle (for new > [!answer] syntax)
@@ -2241,6 +2289,192 @@ function resetSelect(sectionId) {
   document.getElementById(sectionId + '-score').textContent = '0';
   document.getElementById(sectionId + '-complete')?.classList.remove('show');
   initSelect(sectionId, state.data);
+}
+
+
+// Error-Correction Activity
+// Two-step interaction: 1) Click wrong word, 2) Select correct form
+const errorState = {};
+
+function initErrorCorrection(sectionId, data) {
+  const c = document.getElementById(sectionId + '-container');
+  if (!c || !data.items || !data.items.length) return;
+
+  errorState[sectionId] = {
+    score: 0,
+    completed: 0,
+    total: data.items.length,
+    data: data
+  };
+  c.innerHTML = '';
+
+  data.items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'error-item';
+    div.dataset.section = sectionId;
+    div.dataset.idx = i;
+
+    // Parse sentence into clickable words
+    const words = item.sentence.split(/(\s+)/);
+    const wordsHtml = words.map((word, wi) => {
+      if (/^\s+$/.test(word)) return word; // preserve whitespace
+      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
+      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+    }).join('');
+
+    const hasNoError = item.errorWord === null;
+
+    div.innerHTML = `
+      <div class="error-sentence" id="${sectionId}-sentence-${i}">
+        <span class="error-number">${i + 1}.</span>
+        <span class="error-words">${wordsHtml}</span>
+        ${hasNoError ? '' : ''}
+      </div>
+      <div class="error-no-error-btn" id="${sectionId}-noerror-${i}">
+        <button class="btn btn-outline btn-sm" onclick="handleNoError('${sectionId}', ${i})">No error</button>
+      </div>
+      <div class="error-options" id="${sectionId}-options-${i}" style="display:none;">
+        <span class="error-prompt">Choose the correct form:</span>
+        <div class="error-option-btns">
+          ${(item.options || []).map(opt =>
+            `<button class="btn btn-outline btn-sm error-option"
+                     data-option="${opt}"
+                     data-correct="${opt === item.correctForm}"
+                     onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>
+    `;
+
+    c.appendChild(div);
+  });
+
+  // Event delegation for word clicks
+  c.addEventListener('click', (e) => {
+    const wordEl = e.target.closest('.error-word');
+    if (wordEl && !wordEl.closest('.error-item').classList.contains('completed')) {
+      const item = wordEl.closest('.error-item');
+      handleWordClick(item.dataset.section, parseInt(item.dataset.idx), wordEl);
+    }
+  });
+}
+
+function handleWordClick(sectionId, idx, wordEl) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+
+  if (itemEl.classList.contains('step2') || itemEl.classList.contains('completed')) return;
+
+  // Clear previous selection in this item
+  itemEl.querySelectorAll('.error-word.selected').forEach(w => w.classList.remove('selected'));
+
+  const clickedWord = wordEl.dataset.word;
+  const isError = wordEl.dataset.isError === 'true';
+
+  if (isError) {
+    // Correct identification! Move to step 2
+    wordEl.classList.add('selected', 'found');
+    itemEl.classList.add('step2');
+    state.score++;
+    document.getElementById(sectionId + '-score').textContent = state.score;
+
+    // Hide no-error button, show options
+    document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+    document.getElementById(`${sectionId}-options-${idx}`).style.display = 'block';
+  } else {
+    // Wrong word selected
+    wordEl.classList.add('selected', 'wrong-selection');
+    setTimeout(() => wordEl.classList.remove('selected', 'wrong-selection'), 500);
+  }
+}
+
+function handleNoError(sectionId, idx) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+  document.getElementById(`${sectionId}-noerror-${idx}`).style.display = 'none';
+
+  if (item.errorWord === null) {
+    // Correct! No error in this sentence
+    state.score += 2; // Full points for no-error items
+    fb.innerHTML = `<span class="correct-text">Correct! No error in this sentence.</span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  } else {
+    // Wrong - there was an error
+    fb.innerHTML = `<span class="wrong-text">There was an error: <strong>${item.errorWord}</strong> → <strong>${item.correctForm}</strong></span>`;
+    if (item.explanation) {
+      fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+    }
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function handleErrorOption(sectionId, idx, option, isCorrect) {
+  const state = errorState[sectionId];
+  const item = state.data.items[idx];
+  const itemEl = document.querySelector(`.error-item[data-section="${sectionId}"][data-idx="${idx}"]`);
+  const fb = document.getElementById(`${sectionId}-fb-${idx}`);
+  const optionsEl = document.getElementById(`${sectionId}-options-${idx}`);
+
+  if (itemEl.classList.contains('completed')) return;
+
+  itemEl.classList.add('completed');
+
+  // Highlight correct/wrong options
+  optionsEl.querySelectorAll('.error-option').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.correct === 'true') {
+      btn.classList.add('correct');
+    } else if (btn.dataset.option === option && !isCorrect) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (isCorrect) {
+    state.score++;
+    fb.innerHTML = `<span class="correct-text">Correct!</span>`;
+  } else {
+    fb.innerHTML = `<span class="wrong-text">The correct form is: <strong>${item.correctForm}</strong></span>`;
+  }
+
+  if (item.explanation) {
+    fb.innerHTML += `<div class="error-explanation">${item.explanation}</div>`;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById(sectionId + '-score').textContent = state.score;
+
+  state.completed++;
+  checkComplete(sectionId);
+}
+
+function checkComplete(sectionId) {
+  const state = errorState[sectionId];
+  if (state.completed === state.total) {
+    document.getElementById(sectionId + '-complete').classList.add('show');
+  }
+}
+
+function resetErrorCorrection(sectionId) {
+  const state = errorState[sectionId];
+  if (!state) return;
+  document.getElementById(sectionId + '-score').textContent = '0';
+  document.getElementById(sectionId + '-complete')?.classList.remove('show');
+  initErrorCorrection(sectionId, state.data);
 }
 
 

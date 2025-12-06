@@ -726,16 +726,57 @@ Ukrainian increasingly uses distinct feminine forms for professions. This shows 
     - [x] працював
     - [ ] залишався
 
-## order: Career Path Sequence
+## unjumble: Career and Profession Sentences
 
-> Put these career milestones in logical order.
+> Reorder the words to form correct sentences about professions.
 
-1. Він вступив до університету.
-2. Він вивчав медицину п'ять років.
-3. Він закінчив університет.
-4. Він став молодим лікарем.
-5. Він працював лікарем десять років.
-6. Він став головним лікарем лікарні.
+1. вчителькою / Вона / стала / хорошою / після / університету / відомою
+   > [!answer] Вона стала хорошою відомою вчителькою після університету.
+   > (She became a good famous teacher after university.) [7 words]
+
+2. лікарем / Він / працює / досвідченим / в / лікарні / нашій / великій
+   > [!answer] Він працює досвідченим лікарем в нашій великій лікарні.
+   > (He works as an experienced doctor in our big hospital.) [8 words]
+
+3. інженером / Мій / батько / став / успішним / молодим / дуже
+   > [!answer] Мій батько став дуже успішним молодим інженером.
+   > (My father became a very successful young engineer.) [7 words]
+
+4. актрисою / Вона / була / відомою / в / молодості / своїй / дуже
+   > [!answer] Вона була дуже відомою актрисою в своїй молодості.
+   > (She was a very famous actress in her youth.) [8 words]
+
+5. студентом / Він / був / найкращим / на / курсі / своєму / завжди
+   > [!answer] Він завжди був найкращим студентом на своєму курсі.
+   > (He was always the best student in his year.) [8 words]
+
+6. директоркою / Вона / стала / успішною / компанії / великої / нашої
+   > [!answer] Вона стала успішною директоркою нашої великої компанії.
+   > (She became a successful director of our big company.) [7 words]
+
+7. музикантом / Мій / брат / працює / професійним / в / оркестрі / симфонічному
+   > [!answer] Мій брат працює професійним музикантом в симфонічному оркестрі.
+   > (My brother works as a professional musician in symphony orchestra.) [8 words]
+
+8. письменником / Він / став / відомим / після / книги / першої / своєї
+   > [!answer] Він став відомим письменником після своєї першої книги.
+   > (He became a famous writer after his first book.) [8 words]
+
+9. лікаркою / Моя / сестра / хоче / стати / хорошою / дуже / дитячою
+   > [!answer] Моя сестра хоче стати дуже хорошою дитячою лікаркою.
+   > (My sister wants to become a very good children's doctor.) [8 words]
+
+10. вчителем / Він / працював / протягом / років / двадцяти / школі / в / нашій
+    > [!answer] Він працював вчителем в нашій школі протягом двадцяти років.
+    > (He worked as a teacher in our school for twenty years.) [9 words]
+
+11. юристкою / Вона / була / успішною / молодою / в / фірмі / великій
+    > [!answer] Вона була успішною молодою юристкою в великій фірмі.
+    > (She was a successful young lawyer in a big firm.) [8 words]
+
+12. програмістом / Мій / друг / став / хорошим / після / курсів / інтенсивних
+    > [!answer] Мій друг став хорошим програмістом після інтенсивних курсів.
+    > (My friend became a good programmer after intensive courses.) [8 words]
 
 ## quiz: Profession Mastery
 

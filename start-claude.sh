@@ -60,19 +60,8 @@ echo "CURRICULA OPUS - Ukrainian Language Learning"
 # Show level status from CLAUDE.md enrichment status table
 if [ -f "CLAUDE.md" ]; then
     echo "   Enrichment Status:"
-    grep -E "^\| A[12] \| " CLAUDE.md 2>/dev/null | while read line; do
-        LEVEL=$(echo "$line" | cut -d'|' -f2 | xargs)
-        MODULES=$(echo "$line" | cut -d'|' -f3 | xargs)
-        STATUS=$(echo "$line" | cut -d'|' -f4 | xargs)
-        echo "       $LEVEL ($MODULES): $STATUS"
-    done
-    grep -E "^\| B[12] \| " CLAUDE.md 2>/dev/null | while read line; do
-        LEVEL=$(echo "$line" | cut -d'|' -f2 | xargs)
-        MODULES=$(echo "$line" | cut -d'|' -f3 | xargs)
-        STATUS=$(echo "$line" | cut -d'|' -f4 | xargs)
-        echo "       $LEVEL ($MODULES): $STATUS"
-    done
-    grep -E "^\| C[12] \| " CLAUDE.md 2>/dev/null | while read line; do
+    # Extract only the enrichment status table (matches pattern: | Level | XX-YY | Status |)
+    grep -E "^\| [ABC][12] \| [0-9]+-[0-9]+ \| " CLAUDE.md 2>/dev/null | while read line; do
         LEVEL=$(echo "$line" | cut -d'|' -f2 | xargs)
         MODULES=$(echo "$line" | cut -d'|' -f3 | xargs)
         STATUS=$(echo "$line" | cut -d'|' -f4 | xargs)

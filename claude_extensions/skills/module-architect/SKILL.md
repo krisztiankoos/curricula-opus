@@ -1,5 +1,5 @@
 ---
-name: module-architect
+name: module-architect-v7
 description: Use this skill when reviewing, fixing, or creating language curriculum modules. Applies grammar constraints per CEFR level (A1-C2), validates activities, and ensures standard compliance. Triggers when editing files in curriculum/ directories or discussing module content.
 allowed-tools: Read, Glob, Grep, Edit, Write
 ---
@@ -35,116 +35,202 @@ You are the Lead Curriculum Architect for language learning modules. Apply rigor
    ```
    docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md
    ```
-   **CRITICAL:** This file contains **Каталог В** (Grammar Requirements) - the authoritative grammar standard from Ukrainian State Standard 2024. Look for the "### Grammar Requirements (Каталог В)" section which lists:
-   - Allowed/forbidden cases
-   - Allowed/forbidden verb forms
-   - Allowed/forbidden syntax structures
-   - Module-by-module grammar introduction schedule
+   **CRITICAL:** This file contains **Каталог В** (Grammar Requirements) - the authoritative grammar standard from Ukrainian State Standard 2024.
 
 **DO NOT rely on memory. READ these files every time.**
 
 ## Core Quality Standards
 
 ### 1. The "Soul" Standard (Texture & Engagement)
-- **No Generic Settings:** Anchor stories in specific Ukrainian locations (Lviv, Kyiv, Carpathians).
+- **No Generic Settings:** Anchor stories in specific Ukrainian locations (Lviv, Kyiv, Carpathians). Never use "a shop"; use "The ATB on Khreshchatyk."
 - **The Beauty of Language:** Point out aesthetic qualities (melody, logic) in English for A1-B1, in Ukrainian for B2+.
-- **Emotional Stakes:** Dialogues must have humor, irony, or warmth.
+- **Emotional Stakes:** Dialogues must have humor, irony, or warmth. No robotic exchanges.
 
 ### 2. Pedagogical Approach by Level
 - **A1 - A2 (Direct Instruction / PPP):** Present -> Practice -> Produce. Focus on clarity.
-- **B1 (Transitional):** Mix of direct instruction and context-based deduction.
-- **B2 - C2 (Guided Discovery / TTT):** Test -> Teach -> Test. Focus on analysis.
+- **B1 (Transitional):** Mix of direct instruction and context-based deduction (TTT).
+- **B2 - C2 (Content-Based / TTT):**
+  - **Grammar:** Test -> Teach -> Test (Context first, rule second).
+  - **Vocabulary/History:** **Narrative Arcs** (Story-driven context).
+- **CLIL/Narrative (B1-C2):** Content and Language Integrated Learning. Structure: **Pre-Engagement -> Immersive Narrative -> Post-Narrative Deep Dive.**
 
-### 3. Immersion Strategy: The "Gradual Bridge"
-- **A1 (Modules 01-05):** **English Driver.** Explanations in English. Ukrainian used only for target examples.
-- **A1 (Modules 06-30):** **Bilingual.** Target sentence -> Immediate English translation.
-  - *Example:* "Я студент. (I am a student.)"
-- **A2:** **Fading English.** Explanations in English. Complex examples translated. Common phrases left in Ukrainian.
-- **B1:** **Transitional (60%).** Explanations in simple Ukrainian + English for complex concepts.
-- **B2:** **Mostly Ukrainian (85%).** Explanations in Ukrainian.
-- **C1-C2:** **Full Immersion (95%+).**
+### 3. Immersion Strategy: The "Theory-First" Balance
+*Give space for English explanations at lower levels to ensure deep theoretical understanding.*
+
+| Level | Ukrainian % | Strategy |
+|-------|------------|----------|
+| **A1** | **25%** | **English Driver.** Deep explanations in English. Ukr for examples only. |
+| **A2** | **40%** | **Guided.** Aspect/Case theory in English. Simple instructions in Ukr. |
+| **B1** | **60%** | **Transitional.** Simple grammar in Ukr. Complex theory in English. |
+| **B2** | **80%** | **Immersion.** Mostly Ukr. English for subtle nuances only. |
+| **C1** | **95%** | **Full Immersion.** English only for "Language Link" boxes. |
+| **C2** | **100%** | **Native.** No English support. |
 
 ### 4. Detailed Grammar Explanations (Theory-First)
 - **Depth:** Explain *why* a rule exists (e.g., "Gender is about sound, not biology").
 - **Structure:** Break down complex rules using analogies.
 
 ### 5. Extensive Contextual Examples
-- **Quantity:** Minimum **15+** unique example sentences per module.
+- **Quantity:** Minimum **12-32+** unique example sentences per module (scales by level).
 - **Context:** Full sentences, not isolated words.
 
 ### 6. Measurable Learning Objectives
-- **Standard Format:** Phrase objectives as "Learner can [action]" (e.g., "Learner can use Dative case to express age").
+- **Standard Format:** Phrase objectives as "Learner can [action]".
 
 ### 7. Content Richness (Instructional Core Only)
-**CRITICAL:** When calculating word count, **ONLY** count the first two narrative sections. Do **NOT** count Practice, Production, Consolidation, Application, or Activities.
+**CRITICAL:** When calculating word count, **ONLY** count the primary instructional sections based on pedagogy. Do **NOT** count Practice, Production, Consolidation, Application, or Activities.
 
-**Countable Sections:**
-- **PPP:** `Warm-up` + `Presentation`
-- **TTT:** `Diagnostic` + `Analysis`
+**Countable Sections by Pedagogy:**
+- **PPP:** `Warm-up` + `Presentation` + `Cultural Insight`
+- **TTT:** `Diagnostic` + `Analysis` + `Deep Dive`
+- **CLIL/Narrative:** `Pre-Engagement` + `Immersive Narrative` + `Analysis`
 
 **High-Volume Targets (Instructional Core Words):**
-- **A1:** 750+ (Short, simple chunks, bilingual support)
-- **A2:** 1000+ (Short chunks, bilingual support)
-- **B1:** 1250+
-- **B2:** 1500+
-- **C1:** 1750+
-- **C2:** 2000+
 
-*Note: Engagement boxes and mini-dialogues inside these sections COUNT towards the total.*
+| Metric | A1 | A2 | B1 | B2 | C1 | C2 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Core Word Count** | **750+** | **1000+** | **1250+** | **1500+** | **1750+** | **2000+** |
+| **Example Sentences** | 12+ | 18+ | 24+ | 28+ | 30+ | 32+ |
+| **Engagement Boxes** | 3+ | 4+ | 5+ | 6+ | 7+ | 8+ |
+| **Mini-Dialogues** | 2+ | 3+ | 4+ | 4+ | 5+ | 5+ |
 
-- **Engagement:** 3-4+ engagement boxes.
-- **Dialogues:** 2-3+ mini-dialogues.
+**Structure Requirements:**
+- **Engagement:** Must include specific box types (Did You Know, Myth Buster, etc.).
+- **Textual Depth (B2-C2):** Focus on **Long-Form Narrative/Expository Text**.
+- **Scaffolding:** All writing tasks must include a **Model Answer**.
+
+### 8. Special Standard: History & Culture (The "Truth" Standard)
+- **The "Prosecutor's" Voice:** Do not just recount events. Frame the narrative to actively dismantle Russian imperial myths.
+- **Global Anchors:** Always compare Ukrainian achievements to contemporary Western Europe to combat the "provincial" bias.
+- **"Myth vs. Fact" Component:** Every history module MUST include at least one "Myth vs. Fact" box.
+- **Cinematic Detail:** Avoid "textbook" summaries. Zoom in on one specific scene.
+
+## Standardized Word Counting Protocol
+
+**CRITICAL:** You must NEVER estimate word counts. You must ALWAYS calculate them using the shell command below.
+
+### 1. Definition of "Instructional Core" by Pedagogy
+Only text in these specific sections counts towards the richness target:
+
+| Pedagogy | Included Sections | Excluded Sections |
+|----------|-------------------|-------------------|
+| **PPP** | `Warm-up`, `Presentation` | `Practice`, `Production`, `Summary` |
+| **TTT** | `Diagnostic`, `Analysis`, `Deep Dive` | `Practice`, `Activities`, `Summary` |
+| **CLIL / Narrative** | `Introduction`, `Immersive Narrative`, `Analysis`, `Grammar in Context` | `Activities`, `Summary` (Repetition) |
+
+### 2. Content Filtering Rules
+Within the included sections, you must **EXCLUDE**:
+- ❌ YAML Frontmatter
+- ❌ Tables (`| ... |`)
+- ❌ Activity Metadata (`> [!answer]`, `> [!options]`, etc.)
+- ❌ Images / Media Links
+- ❌ Section Headers (`#`)
+
+You must **INCLUDE**:
+- ✅ Narrative paragraphs
+- ✅ Explanations
+- ✅ Engagement Boxes (`> 💡`, `> ⚡`)
+- ✅ Dialogue lines
+
+### 3. The Verification Command
+To verify the count, you must use this specific command pattern:
+
+1. **Identify Line Ranges:** First, `cat -n filename.md` to find the start/end lines of the allowed sections (e.g., Intro is 20-50, Narrative is 60-150).
+2. **Execute Count:**
+   ```bash
+   sed -n '20,50p;60,150p' filename.md | grep -vE '^\||^> \[!|^#|^---' | wc -w
+   ```
+   *(Translation: Extract ranges -> Exclude tables/answers/headers/yaml -> Count words)*
+
+---
+
+## Quality Gate Audits
+
+This section contains the "Richness & Soul" audit tables. Use the table that matches the module's pedagogy.
+
+### **CRITICAL: Reviewer Persona**
+**When reviewing, you are a STRICT AUDITOR. Your goal is to REJECT, not to approve.**
+- You are **FORBIDDEN** from "rounding up" or accepting "close enough".
+- You must calculate the exact word count.
+- If the math does not meet the target, you **MUST FAIL** the module. No exceptions.
+
+---
+#### **Audit for PPP & TTT Modules**
+| Metric | Target (Core Only) | Actual (Core) | Status |
+|--------|-------------------|---------------|--------|
+| **Word Count Proof** | **[Level Target: 750-2000+]** | **[MUST LIST RANGES]** | ✅/❌ |
+| Example Sentences | [Level Target: 12-32+] | [Counted] | ✅/❌ |
+| Engagement Boxes | [Level Target: 3-8+] | [Counted] | ✅/❌ |
+| Mini-Dialogues | [Level Target: 2-5+] | [Counted] | ✅/❌ |
+| Model Answers | **YES** (Required) | [Check Production] | ✅/❌ |
+| Immersion Strategy | [Level Target %] | [Actual] | ✅/❌ |
+| **Cultural Specificity** | **High** | **[Describe specific setting]** | ✅/❌ |
+| **Soul / Emotional Stakes** | **Present** | **[Describe emotion]** | ✅/❌ |
+| Objectives Format | "Learner can..." | Yes/No | ✅/❌ |
+
+**Richness & Soul Gate:** PASS / FAIL
+
+---
+#### **Audit for CLIL/Narrative Modules (B1-C2)**
+| Metric | Target (Core Only) | Actual (Core) | Status |
+| :--- | :--- | :--- | :--- |
+| **Word Count Proof** | **[Level Target: 1250-2000+]** | **[MUST LIST RANGES]** | ✅/❌ (FAIL if < Target) |
+| **Narrative Segments** | `3+` | Number of distinct, chunked parts in the narrative | ✅/❌ |
+| **Example Sentences** | [Level Target] | Drawn from Post-Narrative grammar analysis section | ✅/❌ |
+| **Engagement Boxes** | [Level Target] | Cultural notes, historical context, language spotlights | ✅/❌ |
+| **Model Answers** | **YES** (Required) | [Check Production] | ✅/❌ |
+| **Creative Production Task**| `1+` | A defined task in the "Post-Narrative" section | ✅/❌ |
+| **Grammar in Context** | `Yes` | A "Grammar" subsection in "Post-Narrative" linking to text | ✅/❌ |
+| **Immersion Strategy** | [Level Target %] | Matches B1/B2/C1 guidelines (CRITICAL) | ✅/❌ |
+| **Cultural Specificity** | `Yes` | Anchored in specific Ukrainian context | ✅/❌ |
+| **Decolonization Lens** | `Yes` | Prosecutor's tone, myth-busting, active defense of truth | ✅/❌ |
+| **Global Anchors** | `Yes` | Specific comparisons to Western Europe (dates, sizes) | ✅/❌ |
+| **Aesthetic Note** | `Yes` | A note on the beauty/logic of the language | ✅/❌ |
+
+**Richness & Soul Gate:** PASS / FAIL
+---
 
 ## Workflow
 
 ### For Review:
-1. **Identify level** from file path (e.g., `curriculum/l2-uk-en/a1/` = A1).
+1. **Identify level & pedagogy** from file path and module content.
 2. **Read reference documents** (in this order):
-   - `module-architect-prompt.md` (grammar constraints for this level)
-   - `MODULE-RICHNESS-GUIDELINES-v2.md` (activity/content requirements)
-   - `{LEVEL}-CURRICULUM-PLAN.md` (vocabulary & scope for this level)
-   - `MARKDOWN-FORMAT.md` (syntax reference)
+   - `module-architect-prompt.md`
+   - `MODULE-RICHNESS-GUIDELINES-v2.md`
+   - `{LEVEL}-CURRICULUM-PLAN.md`
+   - `MARKDOWN-FORMAT.md`
 3. **Read the module** to be reviewed.
-4. **RICHNESS & SOUL GATE** — Output table with actual counts:
-   - **Instructional Word Count** (Warm-up/Diag + Pres/Analysis ONLY - excludes Practice, Production, Activities)
-   - Immersion Strategy (Correct for level?)
-   - **Cultural Specificity (Yes/No)**
-   - **Aesthetic Note (Yes/No)**
-   - Pedagogy (PPP/TTT)
-   - **Example Sentences** (15+ required)
-   - **Engagement Boxes** (3-4+ required)
-   - **Mini-Dialogues** (2-3+ required)
-
-   **⚠️ STOP CONDITION:** If ANY metric is FAIL, STOP review immediately. Do NOT check grammar, activities, or format. Module must be enriched first.
-
-5. **Only if Richness & Soul Gate = PASS**, continue with:
-   - **GRAMMAR STANDARD CHECK:** Compare against **Каталог В** (Grammar Requirements section in `{LEVEL}-CURRICULUM-PLAN.md`) - this is the official Ukrainian State Standard 2024
-   - **VOCABULARY CHECK:** All words in activities must be in module vocabulary or prior modules
-   - **ACTIVITY CHECK:** Counts, complexity, types per MODULE-RICHNESS-GUIDELINES-v2.md
-   - **FORMAT CHECK:** Syntax per MARKDOWN-FORMAT.md
-6. **OBJECTIVE PHRASING CHECK:** "Learner can..."
-7. **Report violations** using format below.
-8. **Recommend** Approved / Fix / Rewrite with remediation path.
+4. **Perform Richness & Soul Gate Audit:** Use the appropriate audit table above.
+   ⚠️ **STOP CONDITION:** If ANY metric in the relevant gate is FAIL, STOP review immediately. Module must be enriched first.
+5. **Only if Gate = PASS**, continue with:
+   - **GRAMMAR CHECK:** Compare against **Каталог В**.
+   - **VOCABULARY CHECK:** All activity words in vocabulary/prior modules.
+   - **ACTIVITY CHECK:** See table below.
+   - **FORMAT CHECK:** Syntax per MARKDOWN-FORMAT.md.
+6. **Report violations.**
+7. **Recommend** Approved / Fix / Rewrite.
 
 ### For Create:
-1. **Read reference documents** (in this order):
-   - `module-architect-prompt.md` (grammar constraints for this level)
-   - `MODULE-RICHNESS-GUIDELINES-v2.md` (activity/content requirements)
-   - `{LEVEL}-CURRICULUM-PLAN.md` (extract EXACT vocabulary list for this module)
-   - `MARKDOWN-FORMAT.md` (syntax reference)
-2. **Establish Pedagogy:** Choose PPP (A1-A2) or TTT (B2+).
-3. **Establish Immersion:** Apply "Gradual Bridge" ratios for this level.
-4. **Establish Setting:** Choose a specific Ukrainian location/context (Lviv, Kyiv, Carpathians, etc.).
-5. **Copy EXACT vocabulary** from curriculum plan for this module number.
-6. **Write CONTENT ONLY** (Warm-up + Presentation for PPP, or Diagnostic + Analysis for TTT):
-   - **A1/A2:** English explanations, clear Ukrainian examples with translations.
-   - **B1:** Mix Ukrainian + English for complex concepts.
-   - **B2+:** Mostly/fully Ukrainian.
+1. **Read reference documents.**
+2. **Establish Pedagogy, Immersion, Setting.**
+3. **Copy EXACT vocabulary** from curriculum plan.
+4. **Write CONTENT ONLY** (Instructional Core).
    - **Focus:** Put 80% of effort into instructional core sections.
-   - Include: 15+ example sentences, 3-4+ engagement boxes, 2-3+ mini-dialogues.
-7. **RICHNESS GATE** — Count words in instructional core only. If FAIL, add more content. Do NOT write activities until PASS.
-8. **Only after RICHNESS GATE = PASS**, write Activities using vocabulary from step 5.
-9. **Final Check:** Verify activity counts, complexity, format per MODULE-RICHNESS-GUIDELINES-v2.md.
+   - **Narrative:** Must have "Soul" (specific settings, no generic "Student A").
+5. **Perform Richness & Soul Gate Audit:** Verify Core Word Count meets target (750+ to 2000+ depending on level). If FAIL, enrich content.
+6. **Only after Gate = PASS**, write Activities.
+7. **Final Check:** Verify activity counts.
+
+## Activity Check Reference
+
+| Level | Count | Items | Types | Mandatory / Priority Activities |
+|-------|-------|-------|-------|---------------------------------|
+| **A1** | 8+ | 12+ | 4+ | fill-in, match-up, anagram, unjumble, quiz |
+| **A2** | 10+ | 12+ | 4+ | + error-correction (1+), unjumble (1+) |
+| **B1** | 12+ | 14+ | 4+ | fill-in (x2), unjumble (x2), error-correction (x2) |
+| **B2** | 14+ | 16+ | 4+ | fill-in (x3), unjumble (x2), error-correction (x2) |
+| **C1** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
+| **C2** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
 
 ## Output Format (Review)
 
@@ -153,84 +239,11 @@ You are the Lead Curriculum Architect for language learning modules. Apply rigor
 ### Level: [Level]
 
 ### 1. Richness & Soul Audit (CHECK FIRST)
-| Metric | Target (Core Only) | Actual (Core) | Status |
-|--------|-------------------|---------------|--------|
-| Instructional Words | [Target from guidelines] | [Counted] | ✅/❌ |
-| Example Sentences | 15+ | [Counted] | ✅/❌ |
-| Engagement Boxes | 3-4+ | [Counted] | ✅/❌ |
-| Mini-Dialogues | 2-3+ | [Counted] | ✅/❌ |
-| Immersion Strategy | [Expected for level] | [Actual] | ✅/❌ |
-| Cultural Specificity | Yes | Yes/No | ✅/❌ |
-| Aesthetic Note | Yes | Yes/No | ✅/❌ |
-| Pedagogy | [PPP/TTT] | [Actual] | ✅/❌ |
-| Objectives Format | "Learner can..." | Yes/No | ✅/❌ |
+(Insert the content of the relevant audit table here)
 
 **Richness & Soul Gate:** PASS / FAIL
 
-⚠️ **If FAIL:** Module requires enrichment. STOP review here. See remediation below.
-
----
-
-### 2. Grammar Check (Only if Gate = PASS)
-
-**Reference:** Каталог В (Grammar Requirements) in `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`
-
-- [ ] Cases within scope for level (check allowed cases in Каталог В)
-- [ ] Verb forms appropriate for level (check allowed tenses/aspects in Каталог В)
-- [ ] Syntax complexity matches level (check allowed structures in Каталог В)
-- [ ] No forbidden structures used (check prohibited items in Каталог В)
-
-**Violations:** [List any violations with line references]
-
----
-
-### 3. Vocabulary Check (Only if Gate = PASS)
-- [ ] All activity words in module vocabulary or prior modules
-- [ ] Word count matches curriculum plan (±10%)
-- [ ] IPA present for all words (A1-B1 only)
-
-**Violations:** [List any violations]
-
----
-
-### 4. Activity Check (Only if Gate = PASS)
-- [ ] Activity count meets minimum for level
-- [ ] Items per activity meets minimum for level
-- [ ] Sentence complexity appropriate (word counts per guidelines)
-- [ ] Activity type variety (4+ different types)
-- [ ] Required activity types present (error-correction for A2+)
-
-**Violations:** [List any violations]
-
----
-
-### 5. Format Check (Only if Gate = PASS)
-- [ ] Frontmatter valid (all required fields present)
-- [ ] Activity markdown syntax correct
-- [ ] Vocabulary table format correct for level
-
-**Violations:** [List any violations]
-
----
-
-### Summary
-- **Richness & Soul Gate:** PASS/FAIL
-- **Grammar Violations:** X
-- **Vocabulary Violations:** X
-- **Activity Violations:** X
-- **Format Issues:** X
-
-### Recommendation
-[Approved / Fix Required / Enrichment Required / Rewrite Required]
-
-### Remediation Path (if not Approved)
-**If Richness Gate FAIL:**
-- Word count too low → Follow enrichment patterns in MODULE-RICHNESS-GUIDELINES-v2.md
-- Missing soul metrics → Add cultural specificity, aesthetic notes, emotional stakes to dialogues
-- Missing examples/boxes/dialogues → Add to instructional core sections only
-
-**If Grammar/Vocab/Activity violations:**
-- [Specific fix strategies from module-architect-prompt.md]
+⚠️ **If FAIL:** Module requires enrichment. STOP review here.
 ```
 
 ## Common Pitfalls (Avoid These!)

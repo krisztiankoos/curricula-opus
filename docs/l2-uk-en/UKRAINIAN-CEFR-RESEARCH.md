@@ -1,424 +1,92 @@
-# Ukrainian Language CEFR Standards Research
+# Ukrainian Language CEFR Standards Research & Immersion Strategy
 
-**Date:** 2025-12-04
-**Purpose:** Research official Ukrainian language proficiency requirements for curriculum alignment
+**Date:** 2025-12-07
+**Purpose:** Research official Ukrainian language proficiency requirements and define a pedagogically sound immersion strategy.
 
 ---
 
-## Official Source: Ukrainian State Language Standard
+## 1. Official Source Analysis: Ukrainian State Language Standard
 
 **Document:** "Українська мова як іноземна. Рівні загального володіння А1 – С2"
-**Authority:** Національна комісія зі стандартів державної мови (National Commission for State Language Standards)
-**Approval:** Decision No. 279, August 29, 2024
-**Effective:** September 6, 2024
-**URL:** https://mova.gov.ua/diyalnist-i-proyekti/termini/standart-derzhavnoi-movy-ukrainska-mova-iak-inozemna-rivni-zahalnoho-volodinnia-a1-s2
+**Authority:** National Commission for State Language Standards (2024)
 
-### PDF Document (could not parse automatically)
-https://mova.gov.ua/storage/app/sites/19/standarty/06.09.2024%20ВИДАННЯ_УМІ_new.pdf
-
-**TODO:** Manually download and review this PDF to extract detailed grammar requirements.
+### Findings on Language of Instruction
+*   **No Explicit Ratio:** The Standard defines **outcomes** (competencies), not **methodology**. It does not prescribe a specific percentage of L1 (native language) vs L2 (target language) instruction.
+*   **Implied Complexity:** The Standard requires A1/A2 learners to master complex morphological concepts (7 cases, gender agreement, aspect introduction) that are alien to English speakers.
+*   **Pedagogical Inference:** Explaining abstract grammatical concepts like "perfective aspect" or "case government" *in Ukrainian* to an A1/A2 learner would create a cognitive overload, violating the "Theory-First" principle which prioritizes deep understanding.
 
 ---
 
-## CEFR Level Names (Ukrainian Official)
+## 2. The "Theory-First" Immersion Strategy (Revised)
 
-| CEFR | Ukrainian Name | English |
-|------|---------------|---------|
-| A1 | Початковий рівень першого ступеня | Beginner |
-| A2 | Початковий рівень другого ступеня | Elementary |
-| B1 | Середній рівень першого ступеня | Intermediate |
-| B2 | Середній рівень другого ступеня | Upper-Intermediate |
-| C1 | Рівень вільного володіння першого ступеня | Advanced |
-| C2 | Рівень вільного володіння другого ступеня | Proficiency |
+**Objective:** Balance the goal of immersion with the necessity of deep theoretical understanding.
+**Principle:** "English for the *Why*, Ukrainian for the *What*."
 
----
+### Proposed Immersion Curve
 
-## Ukrainian Grammar Topics by Level (Compiled from Multiple Sources)
+| Level | Target Language (Ukrainian) | Instructional Language (English) | Role of English |
+| :--- | :---: | :---: | :--- |
+| **A1** | **25%** | **75%** | **The Driver.** Used for all explanations, context setting, and cultural notes. Ukrainian is used *only* for target examples, vocabulary, and simple reading passages. |
+| **A2** | **40%** | **60%** | **The Guide.** Used for explaining complex grammar (Aspect, Cases). Simple instructions ("Read text") switch to Ukrainian. |
+| **B1** | **60%** | **40%** | **The Bridge.** Simple grammar explanations switch to Ukrainian. English reserved for complex syntax, nuance, and ensuring 100% comprehension of new concepts. |
+| **B2** | **80%** | **20%** | **The Clarifier.** Most instruction is in Ukrainian. English is used *only* for very subtle distinctions, translation exercises, or comparative linguistics. |
+| **C1** | **95%** | **5%** | **The Trace.** Full immersion. English exists only in "Language Link" boxes or specific translation tasks. |
+| **C2** | **100%** | **0%** | **Native.** No English support. |
 
-### Key Ukrainian-Specific Grammar (differs from English CEFR)
-
-Ukrainian has features that don't exist in English and must be distributed across levels:
-
-1. **Cases (Відмінки)** - 7 cases
-   - Називний (Nominative)
-   - Родовий (Genitive)
-   - Давальний (Dative)
-   - Знахідний (Accusative)
-   - Орудний (Instrumental)
-   - Місцевий (Locative)
-   - Кличний (Vocative)
-
-2. **Verbal Aspect (Вид дієслова)** - perfective/imperfective
-   - Much more complex than English tense system
-   - Must be drilled extensively
-
-3. **Verb Conjugations (Дієвідміни)** - 2 conjugation types
-   - First conjugation: -у/-ю, -еш/-єш, -е/-є, etc.
-   - Second conjugation: -у/-ю, -иш/-їш, -ить/-їть, etc.
-
-4. **Participles (Дієприкметники)** - Less productive in modern Ukrainian
-   - Past passive participles (-ний/-тий) - PRODUCTIVE
-   - Active participles (-учий/-ючий) - NOT productive (use relative clauses)
-   - Adverbial participles (дієприслівники) - Limited use
-
-5. **Motion Verbs** - Directional pairs
-   - йти/ходити, їхати/їздити, бігти/бігати, etc.
-   - Prefixed forms with many meanings
+### Rationale for Adjustment
+*   **A1 (Was 30% -> New 25%):** A1 modules focus heavily on *explaining* the Cyrillic alphabet, phonetics, and the concept of gender/cases. These require precise English analogies.
+*   **A2 (Was 50% -> New 40%):** A2 introduces **Verbal Aspect**, the hardest concept for Slavic learners. 50% Ukrainian would force us to simplify these explanations too much. 40% allows for deep theory while increasing exposure.
+*   **B1 (Was 75% -> New 60%):** B1 is the "Threshold". Moving to 75% too fast risks learners glossing over details. 60% is a safer "transitional" zone.
 
 ---
 
-## Tentative Grammar Distribution by Level
+## 3. CEFR Thresholds for Transition
 
-### A1 (Modules 1-30)
-- Cyrillic alphabet
-- Noun gender recognition
-- Nominative case
-- Accusative case (basic)
-- Present tense of common verbs
-- Past tense (basic, gender agreement)
-- Future tense (analytic: буду + infinitive)
-- Personal pronouns
-- Possessive pronouns (basic)
-- Basic adjective agreement
-- Numbers 0-100
+### The "Instructional Shift" Points
 
-### A2 (Modules 31-60)
-- Genitive case (basic uses)
-- Dative case
-- Locative case
-- Accusative (animate/inanimate distinction)
-- Aspect introduction (perfective/imperfective awareness)
-- Future tense (synthetic forms)
-- Imperative mood
-- Reflexive verbs (-ся)
-- Comparative adjectives
-- Time expressions
-- Numbers to 1000+
+1.  **A1 → A2 (The Grammar Shift):**
+    *   *Trigger:* Introduction of Cases (beyond Nom/Acc).
+    *   *Action:* English remains dominant to explain *why* endings change.
+    *   *Ukr Only:* Examples, simple commands ("Слухайте", "Читайте").
 
-### A2+ (Modules 61-80)
-- Instrumental case
-- Vocative case
-- All cases review and integration
-- Aspect in context (when to use each)
-- Verbs of motion (unidirectional/multidirectional)
-- Relative clauses (який, що, де)
-- Basic conditional (якщо)
-- Diminutives introduction
-- Superlative adjectives
+2.  **A2 → B1 (The Narrative Shift):**
+    *   *Trigger:* Past/Future Tenses mastery + Aspect.
+    *   *Action:* Narrative texts become 50/50. Theory remains English.
+    *   *Ukr Only:* Cultural boxes, simple grammar definitions.
 
-### B1 (Modules 81-140)
-- Aspect mastery (all contexts)
-- Motion verbs with prefixes
-- Complex sentences (subordinate clauses)
-- Purpose clauses (щоб)
-- Conditional (real and unreal)
-- Reported speech
-- Past passive participles (-ний/-тий)
-- Impersonal constructions (-но/-то)
-- Adverbial participles (basic)
-- Numerals (collective, ordinal, fractions)
-- Discourse markers
-
-### B2 (Modules 141-310)
-- All passive voice forms
-- Active participles (recognition only)
-- Multi-clause complex sentences
-- Register awareness (formal/informal)
-- Stylistic choices
-- Phraseology (proverbs, idioms)
-- Synonymy and nuance
-- Word formation patterns
-- Inversion and emphasis
-- Academic/professional language
-
-### C1 (Modules 311-400)
-- Archaic and literary forms
-- Full stylistic range
-- Rhetorical devices
-- Sociolinguistic awareness (dialects, Surzhyk)
-- Advanced academic writing
-- Literary analysis vocabulary
-- Humor and wordplay comprehension
+3.  **B1 → B2 (The Immersion Shift):**
+    *   *Trigger:* Abstract vocabulary + Stylistics.
+    *   *Action:* English is removed from instruction.
+    *   *Ukr Only:* Everything except specific "Translation Challenges".
 
 ---
 
-## Learning Hours (from CEFR/EF SET research)
+## 4. Transition Strategy: "Fading Scaffolding"
 
-| Level | Cumulative Hours | Notes |
-|-------|------------------|-------|
-| A1 | ~100 | Basic |
-| A2 | ~200 | Elementary |
-| B1 | ~400 | Intermediate threshold |
-| B2 | ~600 | Academic/professional threshold |
-| C1 | ~800+ | Advanced autonomous use |
-| C2 | ~1000+ | Near-native mastery |
+**Phase 1: Bilingual Mirroring (A1-A2)**
+*   Every Ukrainian example is immediately followed by an English translation.
+*   *Example:* "Я читаю книгу. (I am reading a book.)"
 
----
+**Phase 2: Selective Glossing (B1)**
+*   Ukrainian sentences are presented without immediate translation.
+*   Only difficult words/phrases are glossed in brackets or footnotes.
+*   *Example:* "Я читаю *захопливу* (exciting) книгу."
 
-## Sources
-
-1. **Official Ukrainian State Standard:**
-   - https://mova.gov.ua/diyalnist-i-proyekti/termini/standart-derzhavnoi-movy-ukrainska-mova-iak-inozemna-rivni-zahalnoho-volodinnia-a1-s2
-   - https://mova.gov.ua/news/standart-zatverdzheno
-
-2. **Ukrainian Institute Level Descriptions:**
-   - https://ukrainianinstitute.org/wp-content/uploads/2021/08/Ukrainian-Language-Level-Description-1.pdf
-
-3. **UCU School of Ukrainian Language:**
-   - https://studyukrainian.org.ua/university-credits/
-
-4. **Ministry of Education (historical):**
-   - https://mon.gov.ua/storage/app/media/zagalna%20serednya/shkolam-za-kordonom/1standartizovani-vimogiumi.doc
-
-5. **Council of Europe Language Profile for Ukraine:**
-   - https://rm.coe.int/language-education-policy-profile-ukraine-country-report/16807b3b4b
+**Phase 3: Monolingual Definitions (B2+)**
+*   New vocabulary is defined using simpler Ukrainian words.
+*   *Example:* "Бібліотека — це місце, де зберігаються книги."
 
 ---
 
-## Action Items
+## 5. Summary of Changes to Guidelines
 
-1. [x] Download and manually review the official PDF standard from mova.gov.ua
-2. [x] Extract detailed grammar requirements per level
-3. [x] Compare with our current curriculum
-4. [ ] Identify gaps
-5. [ ] Plan additional modules to fill gaps
-6. [ ] Reorganize B1/B1+/B2/B2+ structure
+We will update `SKILL.md` and `MODULE-RICHNESS-GUIDELINES-v2.md` to reflect these **more realistic** percentages, ensuring the "Theory-First" approach is not compromised by artificial immersion targets.
 
----
+| Metric | Old Target | **New Target** |
+| :--- | :--- | :--- |
+| A1 Immersion | 30% | **25%** |
+| A2 Immersion | 50% | **40%** |
+| B1 Immersion | 75% | **60%** |
+| B2 Immersion | 85% | **80%** |
 
-## Official Standard Grammar Requirements (Каталог В)
-
-### A1 Grammar (Official Standard)
-
-**Morphology:**
-- Noun declension (basic): masculine/feminine/neuter in all 7 cases (single patterns)
-- Adjective agreement with nouns (hard/soft stems)
-- Personal pronouns (я, ти, він, вона, воно, ми, ви, вони)
-- Possessive pronouns (мій, твій, його, її, наш, ваш, їхній)
-- Demonstrative pronouns (цей, ця, це, ці; той, та, те, ті)
-- Cardinal numbers 0-1000
-- Ordinal numbers 1-31 (for dates)
-
-**Verbs:**
-- Present tense (I and II conjugation)
-- Past tense (gender/number agreement)
-- Future tense (analytic: буду + infinitive)
-- Imperative mood (basic: читай, читайте)
-
-**Syntax:**
-- Simple declarative sentences
-- Simple questions (чи, що, хто, де, куди, коли)
-- Negation (не, ні)
-
----
-
-### A2 Grammar (Official Standard)
-
-**Morphology:**
-- All noun declensions expanded (more patterns, exceptions)
-- Adjective declension in all cases
-- Comparative adjectives (вищий ступінь)
-- Reflexive pronoun (себе)
-- Indefinite pronouns (хтось, щось)
-- Numbers to any value
-
-**Verbs:**
-- **Aspect introduction** (perfective/imperfective pairs)
-- Future synthetic (робитиму, зробиш)
-- Imperative expanded (нехай, хай)
-- Reflexive verbs (-ся)
-
-**Syntax:**
-- Compound sentences (і, а, але, тому що)
-- Basic relative clauses (який, яка, яке)
-- Purpose clauses introduction (щоб + infinitive)
-
-**Stylistics:**
-- Basic register awareness (ти/ви distinction)
-- Euphony rules (у/в, і/й, з/із/зі)
-
----
-
-### B1 Grammar (Official Standard)
-
-**Morphology:**
-- Complete noun declension system (all exceptions)
-- Complete adjective system
-- All pronoun types (interrogative, negative, indefinite, relative)
-- Numeral declension (collective, fractional)
-
-**Verbs:**
-- **Aspect mastery** (all contexts: past, future, imperative, negation)
-- **Conditional mood** (якби + past)
-- **Verbs of motion** (prefixed: при-, ви-, за-, пере-, об-, до-, від-, роз-)
-- Impersonal constructions
-
-**Participles:**
-- **Past passive participles** (-ний/-тий)
-- **Impersonal passive** (-но/-то forms)
-- Adverbial participles (читаючи, прочитавши)
-
-**Syntax:**
-- Complex sentences with multiple clause types
-- Reported speech (що, чи, щоб)
-- Concessive clauses (хоча, незважаючи на)
-- Temporal clauses (коли, після того як, перед тим як)
-
----
-
-### B2 Grammar (Official Standard)
-
-**Morphology:**
-- Extended noun patterns (abbreviations, compound nouns)
-- Complex numeral declension (compound numerals with dates, times)
-- All pronoun categories with full declension
-
-**Verbs:**
-- Complete aspect system with figurative uses
-- All motion verb prefixes with meaning nuances
-- Passive voice (all 4 Ukrainian forms):
-  1. Past passive participle (-ний/-тий)
-  2. Impersonal -но/-то
-  3. Reflexive passive (-ся)
-  4. 3rd person plural passive
-
-**Participles:**
-- Active participles (-учий/-ючий) - recognition
-- Past active participles (-лий)
-- Adverbial participles (advanced)
-
-**Syntax:**
-- Multi-clause complex sentences
-- Parenthetical expressions (до речі, між іншим)
-- Emphasis and inversion (rheme/theme)
-
-**Stylistics:**
-- All functional styles:
-  - Розмовний (colloquial)
-  - Офіційний (official)
-  - Науковий (academic)
-  - Публіцистичний (journalistic)
-  - Художній (literary)
-- Antonyms, synonyms, omonyms
-- Metaphors, epithets, metonymy
-
----
-
-### C1 Grammar (Official Standard)
-
-**Full mastery of all B2 content plus:**
-
-**Morphology:**
-- Archaic and literary forms
-- Regional variants recognition
-- Complete pronoun system (including archaic сей, ся, се)
-
-**Verbs:**
-- Complete conjugation of all irregular verbs
-- Stylistic verb choices
-
-**Syntax:**
-- Sophisticated multi-clause structures
-- All subordinate clause types mastered
-- Advanced punctuation
-
-**Stylistics:**
-- Full register control
-- Ability to switch registers appropriately
-- Recognition of dialectal and historical forms
-
----
-
-### C2 Grammar (Official Standard)
-
-**Near-native mastery:**
-- All grammatical structures from A1-C1
-- Individual style development
-- Error-free production in all registers
-- Full stylistic awareness including:
-  - Archaic forms
-  - Dialectisms (limited)
-  - Professional terminology
-  - Literary devices (periphrasis, synecdoche)
-
----
-
-## Comparison: Official Standard vs. Our Curriculum
-
-### ✅ Well Aligned
-
-| Topic | Official Level | Our Level | Status |
-|-------|---------------|-----------|--------|
-| Cyrillic alphabet | A1 | A1 (1-2) | ✅ |
-| Noun gender | A1 | A1 (3) | ✅ |
-| 7 cases | A1-A2 | A1-A2+ (complete by 80) | ✅ |
-| Present/Past/Future tense | A1 | A1 | ✅ |
-| Aspect introduction | A2 | A2 | ✅ |
-| Aspect mastery | B1 | B1 (81-100) | ✅ |
-| Motion verbs with prefixes | B1 | B1 (89-94) | ✅ |
-| Passive participles | B1 | B1 (119-120) | ✅ |
-| Conditional mood | B1 | B1 (105-107) | ✅ |
-| Reported speech | B1 | B1 (116-118) | ✅ |
-| All passive forms | B2 | B2 (161-166) | ✅ |
-| Register/styles | B2 | B2 (175-185) | ✅ |
-| Phraseology | B2 | B2 (191-220) | ✅ |
-
-### ⚠️ Gaps Identified
-
-| Topic | Official Level | Our Current | Gap |
-|-------|---------------|-------------|-----|
-| Numeral declension (complex) | B2 | B1 basic only | Need B2 expansion |
-| Active participles (-учий/-ючий) | B2 | B2 (167-168) | Adequate but brief |
-| Euphony rules (у/в, і/й) | A2 | Not explicit | **MISSING from A2** |
-| Word formation patterns | B2 | Limited | **NEEDS MORE** |
-| Complete pronoun declension | C1 | B2 partial | May need C1 expansion |
-
-### 🔄 Reorganization Needed
-
-The official standard does NOT define "plus" levels (A2+, B1+, B2+), but CEFR officially supports them. Our current structure:
-
-| Level | Current Modules | Proposed |
-|-------|-----------------|----------|
-| A1 | 1-30 | 1-30 (keep) |
-| A2 | 31-60 | 31-60 (keep) |
-| A2+ | 61-80 | 61-80 (keep) |
-| B1 | 81-160 | 81-120 (B1) |
-| **B1+** | (new) | 121-160 (NEW) |
-| B2 | 161-310 | 161-235 (B2) |
-| **B2+** | (new) | 236-310 (NEW) |
-| C1 | 311-400 | 311-400 (keep) |
-
-**Rationale:**
-- B1 is currently 80 modules (81-160) - too large
-- B2 is currently 150 modules (161-310) - way too large
-- Split each into two sub-levels for better progression tracking
-
----
-
-## Key Findings
-
-1. **Our curriculum is comprehensive** - We cover more than the official standard requires in most areas, especially cultural content (history, biographies, folk culture).
-
-2. **Official standard focuses on grammar/syntax** - Our phraseology, history, and culture modules go beyond what the standard tests.
-
-3. **Missing explicit content:**
-   - Euphony rules (у/в, і/й, з/із/зі) should be taught explicitly in A2
-   - Word formation (словотвір) needs dedicated modules in B2
-   - Complex numeral declension needs expansion
-
-4. **B1/B2 split needed:**
-   - Current B1 (80 modules) and B2 (150 modules) are too large
-   - Introducing B1+ and B2+ will improve:
-     - Progress tracking
-     - Assessment points
-     - Certification alignment
-
----
-
-## Notes
-
-The official Ukrainian State Standard was only approved in **September 2024** - this is very recent! Our curriculum may actually be ahead of official standardization in some areas.
-
-Key difference from English CEFR: Ukrainian grammar is far more complex (7 cases, aspect system, motion verbs) and requires more modules to cover properly.
-
-**Local copy of official standard:** `docs/UKRAINIAN-STATE-STANDARD-2024.txt`
+This adjustment aligns with the user's request to "give space for English explanations."

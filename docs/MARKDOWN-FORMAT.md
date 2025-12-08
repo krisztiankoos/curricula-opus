@@ -85,6 +85,25 @@ Use `> [!note]` or `> [!tip]` for highlighted information.
 > [!tip] Practice this pattern daily for best results.
 ```
 
+### 7. Model Answers (for Writing Tasks)
+
+Use `> [!model-answer]` callout for longer blocks of model text, such as sample essays, paragraphs, or creative writing prompts where a full exemplar answer is provided. This callout is essential for supporting self-learners in production tasks at B2, C1, and C2 levels.
+
+```markdown
+## Вправа: Write a short essay
+
+> [!model-answer]
+> [Here would be a full, multi-paragraph model essay.]
+>
+> Перш за все, варто зазначити, що питання глобального потепління є одним з
+> найнагальніших викликів сучасності. Наукові дослідження беззаперечно
+> свідчать про зростання середньої температури на планеті, що призводить до
+> незворотних змін у кліматичній системі.
+>
+> По-друге, наслідки цього явища вже відчуваються по всьому світу. Ми
+> спостерігаємо екстремальні погодні умови...
+```
+
 ---
 
 ## Migration Rules
@@ -193,7 +212,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 **Key points:**
 - Use `- [x]` for correct answer, `- [ ]` for wrong answers
 - Use `>` for explanation (optional)
-- Minimum 12 questions per quiz
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
 ### Match-up Format
 
@@ -212,7 +231,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 
 **Key points:**
 - Use markdown table with `| Left | Right |` headers exactly
-- Minimum 12 pairs
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
 ### Fill-in Format
 
@@ -234,7 +253,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - Use `___` for blank
 - Use `> [!answer]` for correct answer
 - Use `> [!options]` with pipe-separated options
-- Minimum 12 items
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
 ### True-False Format
 
@@ -256,7 +275,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 **Key points:**
 - Use `- [x]` for true statements, `- [ ]` for false statements
 - Use `>` for explanation
-- Minimum 12 statements
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
 ### Group-sort Format
 
@@ -312,7 +331,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - Spaced letters for scrambled word
 - `> [!answer]` for correct word
 - `> (translation)` for meaning
-- Minimum 12 items
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 - **Use `unjumble` instead for A1.3+ and all higher levels**
 
 ### Unjumble Format
@@ -335,7 +354,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - Jumbled words on first line
 - `> [!answer]` for correct sentence
 - `> (translation) [X words]` for meaning and word count
-- Minimum 12 items
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
 ### Error-Correction Format (A2+)
 
@@ -372,7 +391,7 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - `> [!answer]` for the correct form (or `✓` for no-error items)
 - `> [!options]` with pipe-separated options (must include both wrong and correct)
 - `> [!explanation]` **REQUIRED** - explains why it's wrong and the rule
-- Minimum 12 items
+- See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 - Use `none` errors sparingly (1-2 per activity max)
 
 **UI Flow:**
@@ -420,7 +439,11 @@ questions:
 
 ## Section Structure
 
-Standard module sections:
+The example below shows the **PPP (Presentation-Practice-Production)** structure.
+Note that **TTT (Test-Teach-Test)** and **CLIL/Narrative** structures are also valid and supported.
+Refer to `claude_extensions/skills/module-architect/SKILL.md` for specific pedagogical section headers.
+
+Standard module sections (PPP Example):
 
 ```markdown
 ---
@@ -557,6 +580,7 @@ Same 6-column format as Tier 1:
 - Minimal 3-column format
 - Only essential info for maximum immersion
 - Extended notes for context, collocations, register
+- **CBI Note:** For vocabulary modules following a Narrative Arc, words may also be introduced and contextualized directly within the narrative text, with the table serving as a summary or quick reference.
 
 ### Review Vocabulary Section (B1+ only)
 
@@ -581,14 +605,12 @@ For modules 81+, include cross-references to recurring words:
 | B1 | Ukrainian abbrev | ім, дієсл, прикм, присл, прийм, сполучн, займ, фраза |
 | B2+ | (optional) | іменник, дієслово, прикметник, or omit |
 
-### Word Count Targets by Module Type
+### Word Count Targets
 
-| Module Type | New Words | Description |
-|-------------|-----------|-------------|
-| G-Module (Grammar) | 15-20 | Grammar-focused |
-| V-Module (Vocabulary) | 35-45 | Vocabulary-focused |
-| F-Module (Function) | 20-30 | Real-world practice |
-| R-Module (Review) | 0-10 | Assessment/checkpoint |
+**CRITICAL:** For official word count targets (Total Content Words and New Vocabulary Words per module), refer to the authoritative source:
+`docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+Do not use the deprecated targets previously listed here.
 
 ---
 

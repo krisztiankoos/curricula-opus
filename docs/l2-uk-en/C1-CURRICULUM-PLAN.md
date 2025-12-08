@@ -10,6 +10,21 @@
 
 ---
 
+## Quality Standards & Pedagogical Strategy
+
+**Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+### Philosophy: Immersion & Analysis
+At C1, the learner is no longer "studying" Ukrainian but "studying IN" Ukrainian.
+
+1.  **Academic Rigor:** Modules must feature university-level texts.
+2.  **Comparative Analysis:** A core pedagogical tool. Learners must compare multiple texts (e.g., a poem vs. a critique, or two opposing political articles) to develop critical thinking.
+3.  **Writing Support:** All writing tasks (Essays, Critiques, Reports) **MUST include a Model Answer** to demonstrate the expected C1 register and structure.
+
+> **Note on Activities:** The "Signature Activity Concepts" listed below are **mandatory pedagogical anchors**. The Module Architect must generate additional activities to meet the **minimum target of 16+ activities per module** (C1 standard).
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
@@ -276,7 +291,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (20 words):**
 повторення, узагальнення, систематизація, консолідація, перехід, просунутий, академічний, фаховий, досконалість, майстерність, опанування, вдосконалення, поглиблення, розширення, закріплення, застосування, інтеграція, синтез, аналіз, оцінювання
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Register selection for 4 passive types
 2. Transform: Convert between passive forms
 3. Error correction: Fix register mismatches
@@ -296,7 +311,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 вважається, зазначається, стверджується, наголошується, підкреслюється, констатується, аргументується, обґрунтовується, припускається, передбачається, досліджується, аналізується, розглядається, висвітлюється, характеризується, визначається, описується, пояснюється, інтерпретується, узагальнюється, систематизується, класифікується, порівнюється, зіставляється, оцінюється, критикується, спростовується, підтверджується, доводиться, виводиться
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Colloquial → Academic register
 2. Match-up: Personal → Impersonal construction
 3. Gap-fill: Academic style markers in context
@@ -323,7 +338,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 досліджувати, вивчати, аналізувати, з'ясовувати, перевіряти, випробовувати, тестувати, експериментувати, спостерігати, фіксувати, реєструвати, документувати, стверджувати, доводити, обґрунтовувати, аргументувати, спростовувати, заперечувати, підтверджувати, підкріплювати, представляти, викладати, описувати, характеризувати, ілюструвати, демонструвати, підсумовувати, узагальнювати, констатувати, резюмувати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Group-sort: Verbs by function (investigate/argue/present/conclude)
 2. Gap-fill: Select appropriate research verb
 3. Transform: Use different verbs for same meaning
@@ -342,7 +357,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 аналіз, синтез, оцінка, інтерпретація, критика, порівняння, зіставлення, класифікація, систематизація, узагальнення, детальний, ґрунтовний, всебічний, критичний, порівняльний, системний, комплексний, об'єктивний, суб'єктивний, обґрунтований, чинник, фактор, аспект, компонент, елемент, складова, показник, параметр, критерій, ознака
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Analysis noun → definition
 2. Quiz: Choose appropriate adjective
 3. Gap-fill: Complete analysis sentences
@@ -367,7 +382,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 оскільки, позаяк, адже, бо, тому що, через те що, у зв'язку з тим що, завдяки тому що, отже, таким чином, тому, внаслідок цього, у результаті, відтак, хоча, незважаючи на те що, попри те що, проте, однак, втім, тим не менш, натомість, навпаки, на противагу, з іншого боку, водночас, крім того, більше того, до того ж, зрештою
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Group-sort: Connectors by function
 2. Gap-fill: Choose appropriate connector
 3. Transform: Rewrite using different connectors
@@ -391,7 +406,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 можливо, ймовірно, очевидно, напевно, безперечно, безсумнівно, вочевидь, мабуть, либонь, певне, певною мірою, деякою мірою, значною мірою, великою мірою, здається, видається, вважається, припускається, передбачається, є підстави вважати, можна припустити, не виключено що, слід зазначити, варто підкреслити, доречно згадати, необхідно наголосити, важливо зауважити, цікаво відзначити, показово що, характерно що
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Certainty scale (0-100%)
 2. Transform: Add hedging to statements
 3. Gap-fill: Choose appropriate hedging device
@@ -413,7 +428,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 цитувати, цитата, посилання, джерело, бібліографія, література, автор, дослідник, науковець, праця, робота, стаття, монографія, дисертація, посилатися, згадувати, наводити, покликатися, за словами, як зазначає, на думку, згідно з, відповідно до, у праці, у дослідженні
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Direct → indirect citation
 2. Gap-fill: Citation structures
 3. Match-up: Citation verb → context
@@ -436,7 +451,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 вступ, основна частина, висновки, теза, аргумент, доказ, приклад, ілюстрація, обґрунтування, пояснення, мета, завдання, актуальність, новизна, значення, структура, розділ, підрозділ, абзац, перехід, зв'язок, логіка, послідовність, цілісність, завершеність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Essay part → function
 2. Order: Arrange essay sections
 3. Gap-fill: Structural phrases
@@ -457,7 +472,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 теза, гіпотеза, припущення, твердження, положення, концепція, теорія, підхід, метод, методологія, доводити, підкріплювати, ілюструвати, демонструвати, підтверджувати, верифікувати, валідувати, обґрунтовувати, аргументувати, мотивувати, пояснювати, інтерпретувати, тлумачити, розкривати, з'ясовувати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify thesis type
 2. Transform: Weak thesis → strong thesis
 3. Gap-fill: Support a thesis with evidence
@@ -480,7 +495,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 контраргумент, заперечення, спростування, критика, альтернатива, опозиція, протилежний, супротивний, суперечливий, дискусійний, справді, безперечно, звісно, дійсно, очевидно, проте, однак, втім, натомість, водночас, попри це, незважаючи на це, тим не менш, з іншого боку, у той же час
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Acknowledge phrase → refute phrase
 2. Transform: Add counterargument to thesis
 3. Gap-fill: Complete argument-counterargument pairs
@@ -504,7 +519,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 резюме, анотація, конспект, виклад, переказ, скорочення, стислість, лаконічність, синонім, перифраз, парафраз, переформулювання, перефразування, узагальнення, іншими словами, тобто, інакше кажучи, простіше кажучи, коротко кажучи, підсумовуючи, загалом, у цілому, по суті, головне, основне
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Summarize a paragraph
 2. Paraphrase: Rewrite without changing meaning
 3. Quiz: Identify plagiarism vs. proper paraphrase
@@ -528,7 +543,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 назва, заголовок, анотація, ключові слова, вступ, актуальність, мета, завдання, методи, методологія, результати, дані, обговорення, дискусія, висновки, рекомендації, література, бібліографія, посилання, джерело, рецензія, редакція, публікація, видання, журнал
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Order: Arrange article sections
 2. Match-up: Section → content type
 3. Gap-fill: Article section phrases
@@ -547,7 +562,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 реферат, анотація, резюме, стислий, лаконічний, компактний, інформативний, структурований, повний, вичерпний, мета, завдання, об'єкт, предмет, методи, підходи, результати, висновки, значення, актуальність, новизна, практичне значення, теоретичне значення, наукова цінність, практична цінність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Full article → abstract
 2. Gap-fill: Abstract template phrases
 3. Quiz: Identify abstract components
@@ -571,7 +586,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 огляд, аналіз, синтез, систематизація, узагальнення, джерело, праця, дослідження, публікація, стаття, монографія, численні, різноманітні, суперечливі, протилежні, схожі, подібні, аналогічні, розходяться, збігаються, погоджуються, заперечують, підтверджують, доповнюють, розвивають
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Group-sort: Sources by position (agree/disagree/neutral)
 2. Transform: Separate summaries → synthesis
 3. Gap-fill: Literature review phrases
@@ -591,7 +606,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 доповідь, презентація, виступ, промова, слайд, слухачі, аудиторія, структура, план, огляд, вступ, основна частина, висновки, перехід, підсумок, запитання, відповідь, дискусія, обговорення, захист, дозвольте, представити, перейти, підсумувати, завершити
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Order: Presentation phases
 2. Match-up: Phrase → presentation phase
 3. Gap-fill: Transition phrases
@@ -611,7 +626,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (20 words):**
 кома, крапка, двокрапка, крапка з комою, тире, дефіс, лапки, дужки, знак оклику, знак питання, три крапки, апостроф, наголос, пунктуація, розділовий знак, правопис, орфографія, граматика, синтаксис, правило
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Insert correct punctuation
 2. Error correction: Fix punctuation mistakes
 3. Quiz: Punctuation rules
@@ -630,7 +645,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 дати, їсти, бути, хотіти, могти, йти, їхати, брати, слати, писати, возити, носити, водити, ходити, бігти, бігати, нести, вести, везти, класти, красти, рости, пасти, гнати, стояти, спати, боятися, сміятися, стати, взяти
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Conjugate irregular verbs
 2. Gap-fill: Choose correct form
 3. Transform: Infinitive → conjugated forms
@@ -652,7 +667,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (15 words - review):**
 есе, есей, твір, стаття, робота, аргумент, теза, доказ, висновок, структура, вступ, основна частина, логіка, зв'язність, переконливість
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Essay writing practice
 2. Peer review exercise
 3. Self-assessment checklist
@@ -672,7 +687,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (15 words - review):**
 критика, рецензія, оцінка, аналіз, сильні сторони, слабкі сторони, переваги, недоліки, методологія, доказова база, переконливість, обґрунтованість, актуальність, новизна, внесок
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Read and critique an article
 2. Structured critique writing
 3. Discussion of critique points
@@ -692,7 +707,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (10 words - assessment terms):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Written exam: Essay on academic topic
 2. Vocabulary test
 3. Oral presentation (5 minutes)
@@ -746,7 +761,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 резюме, автобіографія, анкета, заява, мотиваційний лист, супровідний лист, освіта, кваліфікація, ступінь, диплом, сертифікат, досвід, стаж, посада, обов'язки, досягнення, навички, компетенції, володіння, вільне володіння, рекомендація, характеристика, контакти, громадянство, сімейний стан, дата народження, місце народження, адреса, телефон, електронна пошта
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Template: Fill CV template
 2. Transform: Informal → formal descriptions
 3. Gap-fill: CV section phrases
@@ -765,7 +780,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 співбесіда, інтерв'ю, кандидат, претендент, роботодавець, рекрутер, вакансія, посада, умови, зарплата, оклад, бонуси, пільги, графік, повний робочий день, часткова зайнятість, віддалена робота, офіс, команда, колектив, корпоративна культура, випробувальний термін, контракт, договір, оформлення, сильні сторони, слабкі сторони, досвід, мотивація, очікування
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Role-play: Job interview simulation
 2. Match-up: Question → appropriate answer
 3. Gap-fill: Interview phrases
@@ -785,7 +800,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 етикет, протокол, норми, правила, звертання, пан, пані, панове, шановний, вельмишановний, вітання, рукостискання, візитівка, подарунок, запрошення, пунктуальність, dress code, діловий стиль, формальний, неформальний, зустріч, переговори, ділова вечеря, прийом, конференція
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Etiquette dos and don'ts
 2. Match-up: Situation → appropriate behavior
 3. Role-play: Business meeting scenario
@@ -811,7 +826,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 електронна пошта, лист, повідомлення, вкладення, файл, посилання, тема, звертання, підпис, шаблон, чернетка, відправити, переслати, відповісти, копія, прихована копія, терміново, важливо, підтвердження, отримання, прохання, запит, подяка, вибачення, нагадування
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Formal email on given topic
 2. Transform: Informal message → formal email
 3. Error correction: Fix email mistakes
@@ -830,7 +845,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (35 words):**
 президент, парламент, Верховна Рада, депутат, народний депутат, прем'єр-міністр, міністр, уряд, Кабінет Міністрів, Конституційний Суд, суддя, закон, законопроект, ухвалити, прийняти, ветувати, вибори, голосування, референдум, партія, фракція, коаліція, опозиція, більшість, меншість, демократія, свобода, права, громадянин, громадянство, Конституція, децентралізація, реформа, євроінтеграція, НАТО
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Institution → function
 2. Quiz: Political system structure
 3. Gap-fill: Political news sentences
@@ -856,7 +871,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 медіа, засоби масової інформації, ЗМІ, телебачення, канал, радіо, преса, газета, журнал, інтернет-видання, соцмережі, журналіст, кореспондент, редактор, новини, репортаж, інтерв'ю, стаття, огляд, аналітика, джерело, достовірність, упередженість, об'єктивність, фейк, дезінформація, маніпуляція, пропаганда, цензура, свобода слова
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Group-sort: Media types by reliability
 2. Quiz: Identify bias indicators
 3. Analysis: Evaluate news article
@@ -881,7 +896,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 Європейський Союз, ЄС, НАТО, Північноатлантичний альянс, ООН, МВФ, Світовий банк, Рада Європи, інтеграція, євроінтеграція, кандидат, членство, вступ, переговори, умови, критерії, реформи, демократія, верховенство права, боротьба з корупцією, зона вільної торгівлі, безпека, оборона, партнерство, співпраця, допомога, санкції, підтримка, солідарність, цінності
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Organization → function
 2. Quiz: EU/NATO integration process
 3. Discussion: Ukraine's European path
@@ -904,7 +919,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 наріччя, діалект, говірка, говір, літературна мова, стандартна мова, розмовна мова, регіон, область, фонетика, лексика, морфологія, синтаксис, варіант, особливість, відмінність, ознака, ікання, укання, тверде р, м'яке ц, лексема, архаїзм, діалектизм, регіоналізм
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify dialect by features
 2. Match-up: Dialectal word → standard equivalent
 3. Listening: Recognize dialect samples
@@ -928,7 +943,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 суржик, змішування, переключення коду, двомовність, білінгвізм, домінантна мова, мовна норма, мовний стандарт, русифікація, українізація, мовна політика, мовна свідомість, мовна лояльність, мовна ідентичність, мовна поведінка, мовний вибір, стигматизація, престиж, статус, ставлення, сприйняття, оцінка, корекція, нормативність, правильність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify surzhyk vs. standard
 2. Transform: Surzhyk → standard Ukrainian
 3. Discussion: Sociolinguistic attitudes
@@ -949,7 +964,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 державна мова, офіційна мова, рідна мова, мова спілкування, мова меншин, мовні права, мовний закон, мовна політика, мовне планування, статус, функція, сфера вживання, освіта, ЗМІ, державні послуги, реклама, культура, наука, діловодство, судочинство, законодавство, норма, вимога, порушення, штраф, омбудсмен, уповноважений, захист, розвиток, підтримка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Language law requirements
 2. Discussion: Language policy debates
 3. Analysis: Policy document excerpts
@@ -974,7 +989,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 діаспора, еміграція, імміграція, переселення, біженці, громада, спільнота, хвиля, покоління, перше покоління, друге покоління, heritage speaker, носій, збереження, втрата, асиміляція, інтеграція, ідентичність, культура, традиція, церква, організація, школа, газета, медіа
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Diaspora communities
 2. Match-up: Region → language features
 3. Discussion: Heritage language maintenance
@@ -993,7 +1008,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (15 words - review):**
 професійний, діловий, офіційний, формальний, етикет, комунікація, співбесіда, переговори, зустріч, презентація, звіт, лист, повідомлення, запит, відповідь
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Role-play: Full job application process
 2. Write: Business correspondence
 3. Presentation: Professional topic
@@ -1012,7 +1027,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (15 words - review):**
 аналіз, дослідження, випадок, ситуація, контекст, чинник, причина, наслідок, рішення, висновок, рекомендація, оцінка, критика, порівняння, узагальнення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Case study analysis
 2. Group discussion
 3. Written report
@@ -1032,7 +1047,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (10 words - review):**
 повторення, узагальнення, консолідація, закріплення, систематизація, огляд, підсумок, результат, прогрес, досягнення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive review quiz
 2. Vocabulary test
 3. Oral discussion
@@ -1051,7 +1066,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Written exam: Professional document
 2. Oral exam: Sociolinguistic discussion
 3. Listening: Dialect recognition
@@ -1110,7 +1125,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 метафора, порівняння, образ, символ, алегорія, персоніфікація, уособлення, одухотворення, перенесення, асоціація, подібність, аналогія, як, немов, наче, ніби, мов, подібно до, схожий на, нагадує, образний, переносний, буквальний, прямий, художній, поетичний, виразний, яскравий, влучний, оригінальний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Metaphor → meaning
 2. Transform: Literal → metaphorical
 3. Create: Original metaphors
@@ -1134,7 +1149,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 іронія, сарказм, насмішка, глузування, знущання, жарт, гумор, тон, інтонація, контекст, підтекст, натяк, алюзія, протилежність, суперечність, невідповідність, перебільшення, применшення, вдавання, удаваний, іронічний, саркастичний, їдкий, гострий, влучний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify ironic statements
 2. Transform: Sincere → ironic
 3. Discussion: Irony in context
@@ -1155,7 +1170,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 гіпербола, перебільшення, літота, применшення, мейозис, евфемізм, посилення, послаблення, акцент, наголос, ефект, враження, емоція, інтенсивність, ступінь, надмірний, крайній, абсолютний, повний, цілковитий, небагатий, недурний, неабиякий, непоганий, нелегкий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Hyperbole → literal meaning
 2. Transform: Neutral → hyperbolic
 3. Quiz: Identify litotes
@@ -1179,7 +1194,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 евфемізм, табу, заборона, пом'якшення, заміна, обхідний вираз, делікатний, тактовний, ввічливий, коректний, нейтральний, прямий, грубий, вульгарний, нецензурний, лайка, мат, образа, приниження, дискримінація, стигма, чутливість, толерантність, політкоректність, інклюзивність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Taboo → euphemism
 2. Quiz: Register appropriateness
 3. Discussion: Cultural differences
@@ -1201,7 +1216,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (20 words):**
 риторичний, запитання, питання, відповідь, наголос, акцент, переконання, аргумент, емоція, почуття, ефект, вплив, аудиторія, слухач, читач, хіба, невже, чи ж, як можна, чому б не
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify rhetorical questions
 2. Transform: Statement → rhetorical question
 3. Analysis: Rhetorical questions in speeches
@@ -1221,7 +1236,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 безперечно, безсумнівно, напевно, безумовно, однозначно, ймовірно, скоріш за все, очевидно, вочевидь, можливо, може бути, мабуть, либонь, певне, здається, навряд чи, сумнівно, малоймовірно, навряд, ледве чи, неможливо, виключено, ні в якому разі, жодним чином, аж ніяк
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Order: Certainty expressions by probability
 2. Gap-fill: Choose appropriate certainty marker
 3. Transform: Change certainty level
@@ -1244,7 +1259,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 ввічливість, тактовність, делікатність, коректність, пошана, повага, звертання, прохання, вибачення, подяка, комплімент, похвала, згода, відмова, критика, зауваження, пом'якшення, обхідність, непрямість, формальність, неформальність, дистанція, близькість, симпатія, антипатія
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Direct → polite request
 2. Match-up: Situation → politeness strategy
 3. Role-play: Polite refusal
@@ -1263,7 +1278,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 натяк, алюзія, імплікатура, підтекст, прихований зміст, непрямий, опосередкований, імпліцитний, експліцитний, прямий, відкритий, завуальований, замаскований, закодований, контекст, ситуація, інтерпретація, розуміння, здогадка, припущення, висновок, вивід, декодування, розшифрування, прочитання
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Decode indirect messages
 2. Transform: Direct → indirect
 3. Discussion: Cultural indirectness patterns
@@ -1287,7 +1302,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 гумор, жарт, сміх, комедія, сатира, пародія, іронія, самоіронія, абсурд, гротеск, карикатура, анекдот, каламбур, гра слів, дотепність, гострослів'я, усмішка, регіт, веселощі, розвага, комік, гуморист, сатирик, смішний, кумедний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Humor type identification
 2. Analysis: Ukrainian jokes structure
 3. Discussion: Humor across cultures
@@ -1306,7 +1321,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 каламбур, гра слів, двозначність, багатозначність, омонім, омофон, омограф, паронім, співзвучність, асоціація, натяк, підтекст, дотеп, жарт, гострота, влучність, оригінальність, несподіванка, контраст, парадокс, абсурд, нісенітниця, безглуздя, словесний, мовний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Explain the pun
 2. Create: Original wordplay
 3. Analysis: Puns in literature/media
@@ -1330,7 +1345,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (20 words):**
 анекдот, жарт, байка, оповідка, історія, зав'язка, кульмінація, розв'язка, пуант, несподіванка, ефект, реакція, сміх, аудиторія, оповідач, персонаж, герой, ситуація, діалог, репліка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Listening: Understand joke recordings
 2. Retell: Tell a joke in Ukrainian
 3. Analysis: Why jokes are funny
@@ -1349,7 +1364,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 архаїзм, застаріле слово, історизм, давня форма, старослов'янський, церковнослов'янський, аорист, імперфект, двоїна, давноминулий, особа, число, час, вид, спосіб, дієвідміна, відмінювання, закінчення, суфікс, префікс, корінь, основа, інфінітив, дієприкметник, дієприслівник
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify archaic forms
 2. Transform: Modern → archaic (recognition)
 3. Reading: Old texts with archaic verbs
@@ -1368,7 +1383,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 інверсія, порядок слів, паралелізм, анафора, епіфора, рефрен, повтор, риторична фігура, художній засіб, виразність, експресія, ритм, мелодика, інтонація, пауза, акцент, наголос, емфаза, градація, антитеза, оксиморон, хіазм, еліпсис, асиндетон, полісиндетон
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Identify: Literary devices in poems
 2. Transform: Prose → poetic syntax
 3. Analysis: Shevchenko's syntax
@@ -1392,7 +1407,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 церковнослов'янський, старослов'янський, богослужбовий, літургійний, священний, благо, благословення, воістину, істинно, вірую, єсмь, аз, глас, глава, древо, злато, сребро, врата, чело, очі, уста, перст, десниця, молитва, псалом, євангеліє, апостол, пророк, святий, грішний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Church Slavonic → modern equivalent
 2. Reading: Religious text excerpt
 3. Quiz: Register identification
@@ -1416,7 +1431,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (20 words):**
 сей, ся, се, сії, оний, оная, оноє, кой, кая, коє, онде, отут, нині, днесь, вчора, позавчора, завтра, позавтра, намисто, старовина
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Archaic → modern pronouns
 2. Reading: Historical documents
 3. Quiz: Recognize archaic forms
@@ -1441,7 +1456,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (30 words):**
 закон, указ, постанова, наказ, розпорядження, угода, договір, акт, протокол, рішення, ухвала, резолюція, декрет, статут, положення, інструкція, регламент, порядок, процедура, термін, строк, дія, чинність, підстава, згідно, відповідно, згідно з, на підставі, у зв'язку з, з метою
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Official document excerpts
 2. Transform: Informal → official register
 3. Gap-fill: Official phrase templates
@@ -1460,7 +1475,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 коханий, кохана, любий, люба, дорогий, дорога, милий, мила, сонечко, зірочка, серденько, рибка, зайчик, котик, лапочка, пестливий, ніжний, теплий, близький, інтимний, довірливий, щирий, відвертий, неформальний, розкутий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Formal → intimate register
 2. Create: Pet names (пестливі імена)
 3. Discussion: Register switching with family
@@ -1481,7 +1496,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (25 words):**
 сленг, жаргон, арго, молодіжна мова, неформальна мова, розмовна мова, знижена лексика, вульгаризм, запозичення, англіцизм, новотвір, оказіоналізм, круто, класно, прикольно, тупо, кринж, рофл, лол, чел, чувак, движ, тусовка, хайп, вайб
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Slang → standard meaning
 2. Discussion: Attitudes to slang
 3. Listening: Youth speech samples
@@ -1501,7 +1516,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (10 words - review):**
 повторення, узагальнення, консолідація, систематизація, стилістика, риторика, регістр, тон, нюанс, виразність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive stylistics quiz
 2. Register transformation exercise
 3. Literary analysis practice
@@ -1521,7 +1536,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Written: Stylistic analysis essay
 2. Oral: Register flexibility test
 3. Listening: Irony/humor comprehension
@@ -1688,38 +1703,85 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 
 ## Cross-Module Dependencies
 
-```
-C1.1 Academic Foundation
-├── M01-07 Writing fundamentals
-│     └── Foundation for all academic work
-├── M08-14 Genres
-│     └── Research paper capability
-└── M15-20 Advanced grammar + practice
-      └── Full academic competence
+## Cross-Module Dependencies
 
-C1.2 Professional & Social
-├── M21-24 Professional skills
-│     └── Career readiness
-└── M25-31 Social/political context
-      └── Cultural fluency
+```mermaid
+graph TD
+    %% B2 Foundation
+    B2[B2 Foundation] --> C1_1
 
-C1.3 Stylistics & Rhetoric
-├── M36-46 Rhetorical devices
-│     └── Nuanced communication
-└── M47-53 Register range
-      └── Full style control
+    %% Phase C1.1: Academic
+    subgraph C1_1 [Phase C1.1: Academic]
+        M01[M01 B2 Review] --> M02[M02 Academic Style]
+        M02 --> M03[M03 Research Verbs]
+        M02 --> M04[M04 Analysis Vocab]
+        M04 --> M05[M05 Connectors]
+        M05 --> M06[M06 Hedging]
+        M06 --> M07[M07 Citations]
+        M01 --> M08[M08 Essay Struct]
+        M08 --> M09[M09 Thesis]
+        M09 --> M10[M10 Counterarg]
+        M10 --> M11[M11 Summary]
+        M11 --> M12[M12 Article Genre]
+        M12 --> M13[M13 Abstract Genre]
+        M13 --> M14[M14 Lit Review]
+        M14 --> M15[M15 Presentation]
+    end
 
-C1.4 Folk Culture & Arts
-├── M56-67 Music, dance, crafts, beliefs
-│     └── Deep cultural knowledge
-└── M68-80 Rituals, regions, arts
-      └── Regional identity awareness
+    %% Phase C1.2: Professional
+    subgraph C1_2 [Phase C1.2: Professional]
+        M21[M21 CV] --> M22[M22 Interview]
+        M22 --> M23[M23 Etiquette]
+        M23 --> M24[M24 Digital Comm]
+        M25[M25 Politics] --> M26[M26 Media]
+        M26 --> M27[M27 Global]
+        M28[M28 Dialects] --> M29[M29 Surzhyk]
+        M29 --> M30[M30 Policy]
+        M30 --> M31[M31 Diaspora]
+    end
 
-C1.5-C1.6 Literature
-├── M81-95 Classics (19th century)
-│     └── Literary foundation
-└── M96-115 Modern + Capstone
-      └── Full C1 competence
+    %% Phase C1.3: Stylistics
+    subgraph C1_3 [Phase C1.3: Stylistics]
+        M36[M36 Metaphor] --> M37[M37 Irony]
+        M37 --> M38[M38 Hyperbole]
+        M38 --> M39[M39 Euphemism]
+        M39 --> M40[M40 Rhetoric Qs]
+        M41[M41 Certainty] --> M42[M42 Politeness]
+        M42 --> M43[M43 Indirectness]
+        M44[M44 Humor] --> M45[M45 Puns]
+        M47[M47 Archaic Verb] --> M48[M48 Lit Syntax]
+        M48 --> M49[M49 Church Slav]
+        M49 --> M50[M50 Arch Pro]
+        M51[M51 High Formal] --> M52[M52 Intimate]
+        M52 --> M53[M53 Slang]
+    end
+
+    %% Phase C1.4: Folk Culture
+    subgraph C1_4 [Phase C1.4: Folk Culture]
+        M56[M56 Music] --> M59[M59 Dance]
+        M61[M61 Crafts] --> M64[M64 Beliefs]
+        M64 --> M68[M68 Rituals]
+        M68 --> M72[M72 Regions]
+    end
+
+    %% Phase C1.5-6: Literature
+    subgraph C1_Lit [Phase C1.5-6: Literature]
+        M81[M81 Lit Hist] --> M82[M82 Kotlyarevsky]
+        M82 --> M83[M83 Shevchenko]
+        M83 --> M86[M86 Franko]
+        M86 --> M88[M88 Ukrainka]
+        M88 --> M96[M96 Modernism]
+        M96 --> M97[M97 Executed Ren]
+        M97 --> M100[M100 Kostenko]
+        M100 --> M103[M103 Indep Lit]
+        M103 --> M107[M107 War Lit]
+    end
+
+    %% Connections
+    M15 --> M21
+    M31 --> M36
+    M53 --> M56
+    M72 --> M81
 ```
 
 ---
@@ -1727,39 +1789,39 @@ C1.5-C1.6 Literature
 ## Activity Types by Phase
 
 ### C1.1 Academic
-1. Essay writing
-2. Article critique
-3. Literature review
-4. Oral presentation
-5. Citation practice
+1. Production: Essay writing (Model Answer required)
+2. Quiz: Article critique analysis
+3. Match-up: Literature review synthesis
+4. Dialogue: Oral presentation simulation
+5. Fill-in: Citation practice
 
 ### C1.2 Professional/Social
-1. CV/resume writing
-2. Interview role-play
-3. Political/media analysis
-4. Sociolinguistic discussion
-5. Case studies
+1. Production: CV/resume writing
+2. Dialogue: Interview role-play
+3. Quiz: Political/media analysis
+4. Dialogue: Sociolinguistic discussion
+5. Production: Case studies
 
 ### C1.3 Stylistics
-1. Rhetorical analysis
-2. Register transformation
-3. Humor decoding
-4. Creative writing
-5. Archaic text reading
+1. Quiz: Rhetorical analysis
+2. Transform: Register transformation
+3. Quiz: Humor decoding
+4. Production: Creative writing
+5. Match-up: Archaic text reading
 
 ### C1.4 Folk Culture & Arts
-1. Cultural exploration
-2. Regional comparisons
-3. Folk music/dance analysis
-4. Craft symbolism decoding
-5. Ritual documentation
+1. Production: Cultural exploration report
+2. Group-sort: Regional comparisons
+3. Quiz: Folk music/dance analysis
+4. Match-up: Craft symbolism decoding
+5. Production: Ritual documentation
 
 ### C1.5-C1.6 Literature
-1. Close reading
-2. Literary analysis essays
-3. Author presentations
-4. Comparative analysis
-5. Capstone research
+1. Quiz: Close reading comprehension
+2. Production: Literary analysis essays
+3. Dialogue: Author presentations
+4. Match-up: Comparative analysis
+5. Production: Capstone research
 
 ---
 

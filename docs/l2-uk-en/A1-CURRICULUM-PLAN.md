@@ -6,6 +6,15 @@
 
 ---
 
+## Quality Standards Reference
+
+For detailed quality metrics on instructional core word counts, immersion percentages, example sentences, engagement boxes, mini-dialogues, and activity requirements by level, please refer to:
+`docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+> **Note on Activities:** The "Signature Activity Concepts" listed in the module specifications below are **mandatory pedagogical anchors** that must be included. However, they are NOT exhaustive. The Module Architect is required to generate additional activities (standard drills, quizzes, etc.) to meet the **minimum target of 8+ activities per module** as defined in the guidelines.
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
@@ -248,13 +257,15 @@ By module 30, learners can:
 
 ### Module Content Specifications
 
+**Note on Activities:** Anagram activities are permitted in Modules 01-10 for Cyrillic scaffolding, as per MODULE-RICHNESS-GUIDELINES-v2.md.
+
 #### Module 01: The Cyrillic Code I
 **Letters covered:** А, Е, І, О, К, М, Т (True Friends) + В, Н, Р, С, У, Х (False Friends) + Б, Д, З, Л, П, Ф (New)
 
 **Vocabulary (20 words):**
 мама, тато, банк, парк, кафе, метро, таксі, радіо, піца, суп, салат, лимон, банан, хокей, футбол, студент, турист, музика, фото, відео
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: False Friends letter → sound
 2. Quiz: Read international words
 3. Group-sort: True Friends vs False Friends vs New
@@ -269,11 +280,11 @@ By module 30, learners can:
 **Vocabulary (20 words):**
 буква, слово, алфавіт, мова, українська, англійська, так, ні, добре, дякую, будь ласка, привіт, до побачення, вибачте, прошу, ласкаво просимо, що, як, де, хто
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Remaining letters → sounds
 2. Quiz: Read mixed words with all letters
 3. Match-up: Print form → Italic form
-4. Flash cards: Full alphabet review
+4. Match-up: Full alphabet review
 
 ---
 
@@ -294,7 +305,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 стіл, книга, вікно, двері, кімната, дім, місто, село, річка, море, хліб, вода, молоко, чай, сік, м'ясо, риба, овочі, фрукти, яблуко, апельсин, картопля, помідор, огірок, цибуля
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Group-sort: Words by gender (m/f/n)
 2. Quiz: Predict gender from ending
 3. Match-up: Word → declension family
@@ -312,7 +323,7 @@ By module 30, learners can:
 **Vocabulary (20 words):**
 я, ти, він, вона, воно, ми, ви, вони, це, то, ось, людина, чоловік, жінка, хлопець, дівчина, українець, українка, англієць, англійка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Complete sentences with pronouns
 2. Quiz: Translate "I am X" sentences
 3. Match-up: Masculine nationality → feminine
@@ -325,10 +336,10 @@ By module 30, learners can:
 **Vocabulary (40 words):**
 цей, ця, це, ці, той, та, те, ті, чашка, ложка, виделка, ніж, тарілка, склянка, пляшка, сумка, рюкзак, гаманець, телефон, комп'ютер, ключ, двері, вікно, стіна, підлога, стеля, лампа, годинник, дзеркало, картина, стілець, крісло, диван, ліжко, шафа, холодильник, плита, мікрохвильовка, праска, пилосос
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Object → цей/ця/це
 2. Gap-fill: Ця ___ (select correct object)
-3. Flash cards: Object vocabulary
+3. Match-up: Object vocabulary
 
 ---
 
@@ -341,7 +352,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 читати, писати, знати, розуміти, слухати, чекати, питати, відповідати, працювати, відпочивати, снідати, обідати, вечеряти, гуляти, грати, співати, танцювати, малювати, думати, мріяти, починати, закінчувати, шукати, знаходити, називати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Conjugate verb for pronoun
 2. Quiz: Match conjugated form → infinitive
 3. Unjumble: Build sentences with verbs
@@ -359,7 +370,7 @@ By module 30, learners can:
 **Vocabulary (20 words):**
 що, хто, де, куди, звідки, коли, чому, як, скільки, який/яка/яке, чи, так, ні, не, ніколи, завжди, часто, іноді, рідко, звичайно
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Statement → Чи-question
 2. Match-up: Question word → context
 3. Gap-fill: Add negation
@@ -377,7 +388,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 говорити, робити, бачити, дивитися, ходити, їздити, летіти, бігти, сидіти, стояти, лежати, спати, любити, хотіти, вчити, вчитися, пам'ятати, забувати, їсти, пити, просити, дякувати, вітати, телефонувати, купувати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Conjugate Class II verbs
 2. Quiz: Class I vs Class II identification
 3. Match-up: Verb → typical object
@@ -395,7 +406,7 @@ By module 30, learners can:
 **Vocabulary (30 words):**
 їжа, сніданок, обід, вечеря, борщ, суп, вареники, хліб, м'ясо, курка, риба, овочі, фрукти, яблуко, банан, картопля, помідор, огірок, цибуля, сир, яйце, чай, кава, вода, сік, молоко, смачний, смачно, Смачного!, їсти, пити
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Food → category (fruit, vegetable, meat, drink)
 2. Quiz: What do Ukrainians eat for breakfast/lunch/dinner?
 3. Gap-fill: Complete sentences with food vocabulary
@@ -485,7 +496,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 бачити, чути, брати, давати, мати, нести, класти, відкривати, закривати, вмикати, вимикати, показувати, ховати, газета, журнал, лист, конверт, посилка, подарунок, квиток, паспорт, документ, сумка, валіза, коробка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Change nominative to accusative
 2. Quiz: Choose correct accusative form
 3. Match-up: Verb → typical object in accusative
@@ -508,7 +519,7 @@ By module 30, learners can:
 **Vocabulary (20 words):**
 друг, подруга, колега, сусід, сусідка, лікар, лікарка, вчитель, вчителька, студент, студентка, офіціант, офіціантка, продавець, продавчиня, водій, пасажир, гість, директор, менеджер
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: "This is X" → "I see X"
 2. Quiz: Animate vs inanimate accusative
 3. Gap-fill: Complete sentences with people
@@ -535,7 +546,7 @@ By module 30, learners can:
 **Vocabulary (30 words):**
 у/в, на, кімната, кухня, ванна, спальня, вітальня, коридор, балкон, поверх, будинок, квартира, офіс, робота, школа, університет, лікарня, магазин, аптека, ринок, центр, ресторан, готель, парк, пляж, музей, театр, кінотеатр, стадіон, церква
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Place → в or на
 2. Gap-fill: Add locative endings
 3. Quiz: "Where is X?" questions
@@ -564,7 +575,7 @@ By module 30, learners can:
 **Vocabulary (20 words):**
 мій, твій, його, її, наш, ваш, їхній (+ all forms), річ, власний, чужий, разом, окремо, спільний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Choose correct possessive form
 2. Match-up: Noun → matching possessive
 3. Transform: "The X of Y" → "Y's X"
@@ -588,7 +599,7 @@ By module 30, learners can:
 **Vocabulary (40 words):**
 вулиця, провулок, площа, проспект, бульвар, набережна, міст, перехрестя, світлофор, зупинка, станція, вхід, вихід, прямо, наліво, направо, назад, далеко, близько, поруч, навпроти, за, перед, між, біля, через, до, від, вздовж, туди, сюди, звідти, куди, пішки, автобусом, трамваєм, метро, таксі, машиною, велосипедом
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Follow directions on a map
 2. Gap-fill: Complete dialogue asking directions
 3. Match-up: Place → how to get there
@@ -611,7 +622,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 немає, нема, без, крім, для, у/в (possession), час, гроші, ідея, проблема, можливість, причина, сенс, користь, значення, різниця, вибір, досвід, знання, інформація, допомога, підтримка, увага, терпіння, сила
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: "There is X" → "There is no X"
 2. Gap-fill: Genitive endings for absence
 3. Quiz: "Do you have...?" — "No, I don't have..."
@@ -634,10 +645,10 @@ By module 30, learners can:
 **Vocabulary (35 words):**
 нуль, один-двадцять (20), тридцять, сорок, п'ятдесят, шістдесят, сімдесят, вісімдесят, дев'яносто, сто, гривня, копійка, долар, євро, ціна, скільки коштує, дорого, дешево, знижка, решта, платити, рахунок, готівка, картка
 
-**Activities:**
-1. Listen & type: Number dictation
+**Signature Activity Concepts:**
+1. Fill-in: Number dictation (conceptual)
 2. Quiz: Math problems in Ukrainian
-3. Role-play: Buying scenarios with genitive plural
+3. Dialogue: Buying scenarios
 
 ---
 
@@ -652,8 +663,8 @@ By module 30, learners can:
 **Vocabulary (45 words):**
 страва, закуска, салат, суп, борщ, головна страва, десерт, напій, кава, чай, сік, вода, вино, пиво, м'ясо, курка, риба, овочі, картопля, рис, хліб, масло, сир, яйце, ковбаса, шинка, смажений, варений, печений, гарячий, холодний, солодкий, солоний, гострий, смачний, меню, порція, тарілка, склянка, пляшка, офіціант, замовлення, рахунок, чайові, готівка
 
-**Activities:**
-1. Role-play: Order from a menu
+**Signature Activity Concepts:**
+1. Dialogue: Order from a menu
 2. Quiz: Match dish descriptions
 3. Gap-fill: Complete restaurant dialogue
 
@@ -673,10 +684,10 @@ By module 30, learners can:
 **Vocabulary (10 words):**
 столик, порекомендувати, спробувати, візьму, принесіть, ще, достатньо, все, разом, окремо
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Dialogue completion: Full café scenario
-2. Listening: Understand waiter's questions
-3. Role-play: Order and pay
+2. Quiz: Listening Comprehension (waiter's questions)
+3. Dialogue: Order and pay
 
 ---
 
@@ -751,7 +762,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 вчора, позавчора, минулого тижня, минулого місяця, минулого року, давно, недавно, раніше, колись, був, була, було, були, зробив, сказав, пішов, прийшов, поїхав, приїхав, почав, закінчив, побачив, почув, зустрів, забув
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Present → Past tense
 2. Gap-fill: Choose correct gender ending
 3. Quiz: When did it happen?
@@ -772,7 +783,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 завтра, післязавтра, наступного тижня, наступного місяця, наступного року, скоро, пізніше, потім, згодом, буду, збираюся, планую, хочу, маю намір, сподіваюся, обіцяю, спробую, постараюся, мрію, думаю, вирішив, вже, ще, ніколи, обов'язково
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Present → Future tense
 2. Gap-fill: Complete future sentences
 3. Match-up: Time expression → future form
@@ -795,7 +806,7 @@ By module 30, learners can:
 **Vocabulary (40 words):**
 година, хвилина, секунда, пів, чверть, рано, пізно, вчасно, понеділок, вівторок, середа, четвер, п'ятниця, субота, неділя, тиждень, вихідні, робочий день, січень-грудень (12), сьогодні, зараз, коли, о котрій, о/об, до, після, перед, з...до, протягом
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Tell the time from clock images
 2. Gap-fill: Schedule expressions
 3. Match-up: Days and months
@@ -821,7 +832,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 могти, вміти, повинен, мусити, треба, потрібно, необхідно, можна, не можна, дозволено, заборонено, слід, варто, здатний, готовий, згодний, впевнений, певний, намагатися, старатися, пробувати, вдаватися, встигати, мати змогу, бути в змозі
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Choose correct modal
 2. Transform: "I X" → "I can/must/want X"
 3. Quiz: Permission vs ability vs obligation
@@ -845,8 +856,8 @@ By module 30, learners can:
 **Vocabulary (30 words):**
 прокидатися, вставати, вмиватися, чистити зуби, голитися, одягатися, снідати, виходити, їхати, приходити, працювати, обідати, повертатися, вечеряти, відпочивати, дивитися телевізор, читати, гуляти, лягати спати, засинати, розпорядок, звичка, щодня, зазвичай, спочатку, потім, після того, нарешті, завжди, ніколи
 
-**Activities:**
-1. Sequence: Put routine actions in order
+**Signature Activity Concepts:**
+1. Unjumble: Routine actions in order
 2. Gap-fill: Complete "My day" paragraph
 3. Quiz: Match time to activity
 
@@ -870,7 +881,7 @@ By module 30, learners can:
 **Vocabulary (35 words):**
 великий, малий, високий, низький, довгий, короткий, широкий, вузький, новий, старий, молодий, гарний, красивий, поганий, добрий, злий, розумний, дурний, сильний, слабкий, швидкий, повільний, легкий, важкий, дорогий, дешевий, цікавий, нудний, простий, складний, важливий, головний, різний, однаковий, особливий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Adjective → correct noun form
 2. Gap-fill: Add adjective with correct ending
 3. Quiz: Describe pictures
@@ -894,7 +905,7 @@ By module 30, learners can:
 **Vocabulary (30 words):**
 білий, чорний, сірий, червоний, помаранчевий, жовтий, зелений, синій, блакитний, фіолетовий, рожевий, коричневий, світлий, темний, яскравий, сорочка, футболка, светр, куртка, пальто, штани, джинси, шорти, спідниця, сукня, взуття, черевики, кросівки, капелюх, шарф
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Color → object (correct agreement)
 2. Quiz: "What is s/he wearing?"
 3. Gap-fill: Describe outfits
@@ -916,7 +927,7 @@ By module 30, learners can:
 **Vocabulary (25 words):**
 погода, клімат, температура, градус, тепло, холодно, спекотно, прохолодно, сонячно, хмарно, вітряно, сонце, хмара, вітер, дощ, сніг, туман, грім, блискавка, йде дощ, йде сніг, світить сонце, дме вітер, прогноз, сезон
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Weather icon → description
 2. Gap-fill: Weather forecast
 3. Quiz: Dress for the weather
@@ -940,8 +951,8 @@ By module 30, learners can:
 **Vocabulary (35 words):**
 сім'я, родина, батьки, батько, тато, мати, мама, брат, сестра, дідусь, бабуся, онук, онучка, дядько, тітка, двоюрідний брат, двоюрідна сестра, син, дочка, чоловік, дружина, хлопець, дівчина, наречений, наречена, старший, молодший, середній, єдиний, одружений, неодружений, розлучений, вдівець, вдова, дитина
 
-**Activities:**
-1. Family tree: Label relationships
+**Signature Activity Concepts:**
+1. Group-sort: Family Relationships
 2. Gap-fill: Describe family members
 3. Quiz: "Who is X to Y?"
 
@@ -998,69 +1009,69 @@ By module 30, learners can:
 ## Activity Types by Module Type
 
 ### G-Modules (Grammar Focus)
-1. Explanation slides (theory)
-2. Pattern recognition quiz
-3. Gap-fill exercises
-4. Transformation drills
-5. Error correction
+1. Quiz: Pattern recognition (MCQ)
+2. Fill-in: Gap-fill exercises
+3. Transform: Transformation drills
+4. Match-up: Grammar concepts
+5. Error-correction: (A2+ only, simple recognition here)
 
 ### V-Modules (Vocabulary Focus)
-1. Flash cards with audio
-2. Image matching
-3. Category sorting
-4. Context sentences
-5. Spaced repetition
+1. Match-up: Flash cards (conceptual)
+2. Match-up: Image matching
+3. Group-sort: Category sorting
+4. Fill-in: Context sentences
+5. Quiz: Spaced repetition checks
 
 ### F-Modules (Functional)
-1. Dialogue completion
-2. Role-play scenarios
-3. Listening comprehension
-4. Real-world tasks
+1. Dialogue: Completion tasks
+2. Dialogue: Role-play scenarios
+3. Quiz: Listening comprehension
+4. Fill-in: Real-world forms/tasks
 
 ### R-Modules (Review)
-1. Mixed grammar quiz
-2. Vocabulary recall test
-3. Integrated skills tasks
-4. Self-assessment checklist
+1. Quiz: Mixed grammar check
+2. Fill-in: Vocabulary recall
+3. Match-up: Integrated skills
+4. Production: Self-assessment tasks
 
 ---
 
 ## Cross-Module Dependencies
 
-```
-M01 Alphabet I
-  └── M02 Alphabet II
-        └── M03 Gender
-              ├── M05 Demonstratives
-              ├── M11 Accusative I
-              │     └── M12 Accusative II
-              ├── M13 Locative
-              │     └── M15 City
-              └── M16 Genitive I
-                    └── M17 Genitive II
-                          └── M18 Food
+## Cross-Module Dependencies
 
-M04 Pronouns
-  ├── M06 Verbs I
-  │     ├── M07 Questions
-  │     ├── M08 Verbs II
-  │     │     ├── M21 Past
-  │     │     └── M22 Future
-  │     └── M24 Modals
-  └── M14 Possessives
-        └── M29 Family
+```mermaid
+graph TD
+    %% Phase A1.1
+    M01[M01 Alphabet I] --> M02[M02 Alphabet II]
+    M02 --> M03[M03 Gender]
+    M03 --> M05[M05 Demonstratives]
+    M03 --> M11[M11 Accusative I]
+    M03 --> M13[M13 Locative]
+    M03 --> M16[M16 Genitive I]
 
-M08 Verbs II
-  └── M09 Food
-        └── M18 Food (advanced)
+    M04[M04 Pronouns] --> M06[M06 Verbs I]
+    M04 --> M14[M14 Possessives]
+    
+    M06 --> M07[M07 Questions]
+    M06 --> M08[M08 Verbs II]
+    M06 --> M24[M24 Modals]
 
-M16 Genitive I
-  └── M17 Numbers (uses genitive plural)
-        └── M23 Calendar
+    M08 --> M09[M09 Food]
+    M08 --> M21[M21 Past]
+    M08 --> M22[M22 Future]
 
-M26 Adjectives
-  ├── M27 Colors/Clothes
-  └── M28 Weather
+    %% Phase A1.2
+    M09 --> M18[M18 Food Adv]
+    M11 --> M12[M12 Accusative II]
+    M13 --> M15[M15 City]
+    M16 --> M17[M17 Numbers]
+    M17 --> M23[M23 Calendar]
+
+    %% Phase A1.3
+    M14 --> M29[M29 Family]
+    M26[M26 Adjectives] --> M27[M27 Colors]
+    M26 --> M28[M28 Weather]
 ```
 
 ---
@@ -1083,7 +1094,7 @@ Before generating any module:
 
 **A1 Level Complete:** All 30 modules built (1-30)
 **Actual vocabulary:** 456 words (stored in vocabulary.csv)
-**Next level:** A2 (modules 31-60) - COMPLETE
+**Next level:** A2 (modules 31-80) - COMPLETE
 
 ---
 

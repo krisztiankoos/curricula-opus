@@ -1,6 +1,9 @@
 # Vibe Import Instructions
 
-## JSON Structure v2 - December 2024
+> ⚠️ **STALE / NEEDS REWORK**
+> This import specification is currently outdated and requires significant rework to align with the new "Theory-First" approach and data structure. Do not rely on these instructions until updated.
+
+## JSON Structure v2 - December 2025
 
 The JSON output format has been updated to align with CO-VIBE-INTEGRATION.md spec.
 

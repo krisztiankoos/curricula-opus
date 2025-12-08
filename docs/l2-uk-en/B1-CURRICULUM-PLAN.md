@@ -6,6 +6,24 @@
 
 ---
 
+## Quality Standards & Pedagogical Strategy
+
+**Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+### Overcoming the Intermediate Plateau
+To help learners bridge the gap from "basic competence" to "independent fluency", this level shifts pedagogical focus:
+
+1.  **Transition to TTT (Test-Teach-Test):** Move away from simple instruction (PPP).
+    *   **Test:** Present learners with a rich narrative or complex text containing the target grammar/vocabulary *first*.
+    *   **Teach:** Guide them to deduce the rules or meanings from context, then provide explicit theory.
+    *   **Test:** Practice in a new, freer context.
+2.  **Narrative-Driven Vocabulary:** Lists are forbidden. Vocabulary MUST be introduced within compelling story arcs (e.g., "A Startup's Journey" for business terms) to build retention and context.
+3.  **Collocation Focus:** Prioritize teaching chunks ("take a risk", "make a decision") over isolated words.
+
+> **Note on Activities:** The "Signature Activity Concepts" listed below are **mandatory pedagogical anchors**. The Module Architect must generate additional activities (standard drills, quizzes, etc.) to meet the **minimum target of 12+ activities per module** (B1 standard).
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
@@ -269,7 +287,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 вид, доконаний, недоконаний, процес, результат, тривалість, повторюваність, завершеність, одноразовий, багаторазовий, звичка, дія, завдання, мета, початок, кінець, спроба, виконання, намір, рішення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Identify aspect pairs
 2. Match-up: Context → aspect choice
 3. Gap-fill: Choose correct aspect
@@ -288,7 +306,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 одного разу, того разу, якось, нарешті, раптом, вперше, востаннє, нещодавно, давно, колись, завжди, часто, рідко, іноді, постійно, регулярно, періодично, щодня, щотижня, щомісяця
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Time marker → aspect
 2. Transform: Single event → habitual (and vice versa)
 3. Quiz: Which aspect for which context?
@@ -307,7 +325,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 весь день, цілий тиждень, протягом, годину, хвилину, довго, недовго, весь час, поступово, швидко, повільно, нарешті, вже, ще, тільки що, щойно, досі, поки, під час, у цей час
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Result or process aspect?
 2. Gap-fill: Duration markers with imperfective
 3. Transform: Add result marker → change to perfective
@@ -330,7 +348,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 завтра, післязавтра, найближчим часом, скоро, згодом, потім, пізніше, у майбутньому, наступного разу, колись, обов'язково, напевно, мабуть, можливо, ймовірно, сподіваюся, планую, збираюся, маю намір, вирішив
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Compound → synthetic future
 2. Quiz: Which future form for planned vs completed action?
 3. Gap-fill: Future aspect selection
@@ -349,7 +367,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 не, ніколи, ніде, ніяк, ніхто, ніщо, жодний, зовсім, взагалі, абсолютно, ще не, вже не, більше не, поки не, майже не, навряд чи, заборонено, неможливо, недоцільно, марно
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Which aspect in negation?
 2. Gap-fill: ще не + perfective
 3. Transform: Affirmative → negative with correct aspect
@@ -368,7 +386,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 прошу, будь ласка, будьте ласкаві, будьте люб'язні, обов'язково, негайно, швидше, швидко, повільно, уважно, обережно, старанно, ретельно, точно, правильно, чітко, голосно, тихо, спокійно, терпляче
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Which aspect for which command type?
 2. Match-up: Request type → aspect
 3. Role-play: Give polite vs direct commands
@@ -400,7 +418,7 @@ By module 80, learners can:
 **Vocabulary (30 words):**
 (The 30 aspect pairs above = 30 items, counting pairs as single vocabulary entries)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Flash cards: Aspect pair drilling
 2. Gap-fill: Context → correct aspect
 3. Quiz: Match imperfective to perfective
@@ -432,7 +450,7 @@ By module 80, learners can:
 **Vocabulary (30 words):**
 (The 30 aspect pairs above)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Sentence building: Use pairs in past/future
 2. Gap-fill: Select correct aspect
 3. Quiz: Aspect identification
@@ -452,7 +470,7 @@ By module 80, learners can:
 **Vocabulary (15 words):**
 спочатку, тоді, після того, наступного дня, перед тим, під час того, у той час, нарешті, врешті-решт, як тільки, поки, доки, тим часом, водночас, зрештою
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Extended writing: "My last vacation" (past aspect)
 2. Dialogue completion: Commands and requests
 3. Quiz: Mixed aspect selection
@@ -471,7 +489,7 @@ By module 80, learners can:
 
 **Vocabulary (10 words):** Review of key aspect vocabulary
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive quiz: All aspect contexts
 2. Writing: Paragraph with mixed aspects
 3. Self-assessment: Aspect confidence checklist
@@ -529,7 +547,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 іти, ходити, їхати, їздити, бігти, бігати, летіти, літати, плисти, плавати, нести, носити, везти, возити, вести, водити, лізти, лазити, повзти, повзати, котити, качати, тягти, тягати, гнати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Unidirectional ↔ multidirectional
 2. Quiz: Which motion verb for which situation?
 3. Gap-fill: Choose correct motion type
@@ -552,7 +570,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 прийти, приїхати, прибути, прилетіти, приплисти, принести, привезти, привести, вийти, виїхати, вилетіти, винести, вивезти, вивести, увійти, в'їхати, влетіти, внести, ввезти, ввести, прибуття, вихід, вхід, двері, ворота
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: при-/ви-/в- with motion verbs
 2. Transform: "go" → "arrive" / "exit" / "enter"
 3. Dialogue: Arrivals and departures
@@ -575,7 +593,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 перейти, переїхати, перелетіти, перенести, перевезти, перевести, пройти, проїхати, пролетіти, пронести, провести, обійти, об'їхати, облетіти, обнести, обвести, через, повз, навколо, довкола, міст, перехід, обхід, переїзд, шлях
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: пере-/про-/об- selection
 2. Map reading: Describe routes using motion prefixes
 3. Quiz: Which prefix for which movement?
@@ -598,7 +616,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 піти, поїхати, полетіти, понести, повезти, повести, зайти, заїхати, залетіти, занести, завезти, завести, розійтися, роз'їхатися, розлетітися, рознести, розвезти, розвести, початок, від'їзд, заїзд, візит, зупинка, розпуск, розсіювання
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: по-/за-/роз- with motion verbs
 2. Scenario: Planning visits (зайти/заїхати)
 3. Quiz: Departure vs arrival vs dispersal
@@ -621,7 +639,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 підійти, під'їхати, підлетіти, піднести, підвезти, підвести, відійти, від'їхати, відлетіти, віднести, відвезти, відвести, дійти, доїхати, долетіти, донести, довезти, довести, підхід, відхід, наближення, віддалення, досягнення, відстань, мета
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: під-/від-/до- selection
 2. Dialogue: Giving directions with approach/departure
 3. Quiz: Motion relative to reference point
@@ -644,7 +662,7 @@ By module 80, learners can:
 **Vocabulary (25 words):**
 виходить, входити в звичку, дійти висновку, зайти далеко, пройти випробування, відійти в минуле, підійти до справи, обійтися без, перейти межу, вийти з себе, прийти до ладу, зайти в глухий кут, пройти перевірку, вийти з моди, увійти в історію, підійти з розумом, дійти до суті, обійти увагою, перейти в наступ, вийти на контакт, прийти в себе, зайти за край, дійти рук, вийти з ситуації, підійти відповідально
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Expression → meaning
 2. Gap-fill: Use figurative expressions in context
 3. Quiz: Literal vs figurative motion
@@ -675,7 +693,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 зійти, з'їхати, злетіти, зійтися, з'їхатися, злетітися, надійти, надіслати, надходження, вступити, виступити, наступити, відступити, заступити, поступитися, переступити, обступити, підступити, доступитися, приступити
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Matrix practice: Combine prefixes with motion verbs
 2. Story writing: Use 10+ prefixed motion verbs
 3. Quiz: Prefix meaning identification
@@ -695,7 +713,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 приготувати, прибрати, приєднатися, пристосуватися, привітати, виробляти, викладати, випускати, вимагати, виконувати, переробляти, перекладати, перетворювати, пересувати, переконувати, заговорити, засміятися, заплакати, замовкнути, затихнути
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Prefix meaning in motion vs non-motion verbs
 2. Gap-fill: Use prefixed non-motion verbs
 3. Word formation: Add prefix to change meaning
@@ -714,7 +732,7 @@ By module 80, learners can:
 **Vocabulary (15 words):**
 маршрут, напрямок, траєкторія, шлях, стежка, дорога, траса, автострада, провулок, поворот, розвилка, перехрестя, пункт призначення, вихідний пункт, проміжна зупинка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Extended writing: "A journey I took"
 2. Map-based: Give complex directions
 3. Dialogue: Travel planning with motion verbs
@@ -732,7 +750,7 @@ By module 80, learners can:
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive quiz: All motion concepts
 2. Writing: Description using varied motion verbs
 3. Self-assessment: Motion verb confidence
@@ -786,7 +804,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 який, яка, яке, які, якого, якої, яких, якому, якій, яким, якими, якою, про якого, з яким, до якої, через яких, для якого, від якої, біля якого, перед яким
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Choose correct який form
 2. Combine: Two sentences → relative clause
 3. Quiz: який case selection
@@ -804,7 +822,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 де, куди, звідки, звідси, туди, сюди, там, тут, всюди, ніде, скрізь, деінде, кудись, нікуди, звідкись, десь, будь-де, де-небудь, куди-небудь, звідки-небудь
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: де vs куди vs звідки
 2. Gap-fill: Complete place relative clauses
 3. Transform: Where → relative clause
@@ -823,7 +841,7 @@ By module 80, learners can:
 **Vocabulary (20 words):**
 коли, тоді коли, у той час коли, щоразу коли, кожного разу коли, те що, все що, щось що, нічого що, багато чого що, мало що, те що треба, все що потрібно, щось нове що, факт що, правда що, думка що, ідея що, питання що, проблема що
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: коли vs що (relative)
 2. Combine: Time/fact sentences
 3. Quiz: Relative pronoun selection
@@ -841,7 +859,7 @@ When the subject of both clauses is the same, use щоб + infinitive:
 **Vocabulary (20 words):**
 щоб, для того щоб, задля того щоб, з метою, з ціллю, заради, на те щоб, мета, ціль, намір, призначення, задум, план, бажання, прагнення, устремління, завдання, причина, підстава, мотивація
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Combine: Main clause + purpose (same subject)
 2. Gap-fill: щоб + infinitive
 3. Transform: "I want to X" → "I came to X"
@@ -860,7 +878,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 хотіти щоб, просити щоб, наказати щоб, вимагати щоб, дозволити щоб, заборонити щоб, порадити щоб, запропонувати щоб, домогтися щоб, добитися щоб, переконати щоб, наполягати щоб, рекомендувати щоб, попросити щоб, побажати щоб, очікувати щоб, сподіватися щоб, мріяти щоб, планувати щоб, намагатися щоб
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: щоб + past form with different subjects
 2. Transform: "I want. He comes." → complex sentence
 3. Quiz: Same subject vs different subject
@@ -878,7 +896,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 якщо, коли, у випадку якщо, за умови що, при умові що, у разі якщо, за умов, тоді, в такому разі, отже, тому, через це, значить, виходить, можливо, ймовірно, певно, напевно, можливість, умова
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Complete real conditionals
 2. Match-up: Condition → result
 3. Transform: Separate sentences → conditional
@@ -896,7 +914,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 якби, якби не, було б, був би, була б, було б, були б, на жаль, шкода що, на щастя, мрія, бажання, уява, фантазія, припущення, гіпотеза, теоретично, ідеально, в ідеалі, в принципі
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Complete unreal conditionals
 2. Transform: Real → unreal conditional
 3. Writing: "If I could..."
@@ -918,7 +936,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 у такому разі, інакше, в іншому випадку, проте, однак, але, хоча, незважаючи на, попри, при цьому, до того ж, крім того, більше того, навіть якщо, тим більше, тим менше, все одно, в будь-якому разі, так чи інакше, як би там не було
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Mixed conditional types
 2. Combine: Multiple conditions
 3. Quiz: Conditional type identification
@@ -936,7 +954,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 хоча, хоч, хоча б, дарма що, попри, попри те що, незважаючи на, незважаючи на те що, всупереч, всупереч тому що, проте, однак, але все ж, тим не менш, все ж таки, все одно, навіть попри, навіть хоча, при всьому тому, при цьому
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Combine: Contrasting sentences
 2. Gap-fill: Choose concessive connector
 3. Transform: Two sentences → concessive clause
@@ -955,7 +973,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 тому що, через те що, бо, оскільки, позаяк, адже, завдяки тому що, внаслідок того що, з огляду на те що, у зв'язку з тим що, тому, через це, отже, таким чином, відтак, внаслідок, як наслідок, у результаті, ось чому, саме тому
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Cause → result
 2. Gap-fill: Causal connectors
 3. Transform: Because → therefore
@@ -975,7 +993,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 коли, після того як, перед тим як, до того як, поки, поки не, доки, доки не, як тільки, щойно, ледве, мало не, у той час як, в міру того як, у той момент коли, відтоді як, з тих пір як, до тих пір поки, весь час поки, кожного разу коли
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Temporal connectors
 2. Sequence: Order events with connectors
 3. Combine: Create complex temporal sentences
@@ -994,7 +1012,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (15 words):**
 при цьому, водночас, одночасно, паралельно, поряд з тим, разом з тим, крім усього, до всього, на додаток, плюс до цього, не кажучи вже про, тим паче, тим більше, особливо, зокрема
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Combine: Multi-clause sentences
 2. Analyze: Break down complex sentences
 3. Writing: Extended complex sentences
@@ -1012,7 +1030,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 сказати, говорити, стверджувати, заявляти, повідомляти, пояснювати, доповідати, розповідати, зазначати, підкреслювати, наголошувати, відзначати, вважати, думати, гадати, припускати, вірити, сподіватися, обіцяти, погрожувати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Direct → indirect speech
 2. Gap-fill: Reporting verbs
 3. Practice: Convert statements
@@ -1031,7 +1049,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 запитати, питати, цікавитися, дізнаватися, уточнювати, перепитувати, попросити, просити, вимагати, наказувати, забороняти, дозволяти, радити, рекомендувати, пропонувати, переконувати, умовляти, благати, наполягати, закликати
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Direct questions → reported
 2. Transform: Commands → reported
 3. Mixed practice: All reported speech types
@@ -1051,7 +1069,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive quiz: All complex sentence types
 2. Writing: Paragraph with varied sentence structures
 3. Analysis: Identify clause types in text
@@ -1100,7 +1118,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 читаючи, пишучи, говорячи, слухаючи, дивлячись, думаючи, працюючи, йдучи, біжачи, стоячи, сидячи, лежачи, їдучи, летячи, несучи, ведучи, повертаючись, одягаючись, вмиваючись, готуючись
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Form: Infinitive → imperfective participle
 2. Combine: Two actions into one sentence
 3. Gap-fill: Choose correct participle
@@ -1122,7 +1140,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 прочитавши, написавши, сказавши, зробивши, взявши, давши, відкривши, закривши, почавши, закінчивши, прийшовши, пішовши, приїхавши, поїхавши, побачивши, почувши, дізнавшись, повернувшись, одягнувшись, приготувавши
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Form: Infinitive → perfective participle
 2. Transform: "After X, Y" → participle construction
 3. Gap-fill: Imperfective vs perfective participle
@@ -1140,7 +1158,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (15 words):**
 при цьому, водночас, тим часом, паралельно, раніше, попередньо, до цього, після цього, згодом, пізніше, одразу, миттєво, негайно, раптом, несподівано
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Extended writing: Use both participle types
 2. Transform: Convert relative clauses to participles
 3. Quiz: Participle type and form
@@ -1164,7 +1182,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 написаний, зроблений, прочитаний, сказаний, відкритий, закритий, взятий, даний, куплений, проданий, отриманий, посланий, виконаний, закінчений, побудований, знищений, створений, відомий, улюблений, забутий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Form: Verb → passive participle
 2. Gap-fill: Correct participle agreement
 3. Transform: Active → passive with participle
@@ -1187,7 +1205,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 написано, зроблено, сказано, вирішено, доведено, погоджено, встановлено, визначено, забезпечено, організовано, виконано, завершено, заплановано, передбачено, дозволено, заборонено, рекомендовано, необхідно, потрібно, важливо
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Form: Full form → short form
 2. Transform: "Someone did X" → "X was done"
 3. Practice: Impersonal passive sentences
@@ -1210,7 +1228,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 автор, виконавець, творець, засновник, ініціатор, організатор, відповідальний, причетний, залучений, задіяний, уражений, вражений, зворушений, здивований, розчарований, задоволений, стурбований, переконаний, змушений, зобов'язаний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Active → passive (all types)
 2. Choose: Which passive construction?
 3. Gap-fill: Mixed passive forms
@@ -1233,7 +1251,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (25 words):**
 хлопчик, дівчинка, котик, песик, столик, стілець, будиночок, місточок, листочок, квіточка, зірочка, сонечко, матінка, татусь, бабуся, дідусь, донечка, синочок, братик, сестричка, друзяк, ніжка, ручка, вушко, оченько
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Form: Base noun → diminutive
 2. Match-up: Diminutive → base form
 3. Gap-fill: Use diminutives in context
@@ -1253,7 +1271,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (20 words):**
 милий, ніжний, ласкавий, любий, рідний, дорогий, крихітний, маленький, мініатюрний, невеличкий, трошки, трішки, зовсім, ледь-ледь, чуть-чуть, ніби, немов, наче, буквально, практично
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Context analysis: Why diminutive here?
 2. Register practice: Formal → informal with diminutives
 3. Writing: Affectionate letter with diminutives
@@ -1275,7 +1293,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (25 words):**
 двоє, троє, четверо, п'ятеро, шестеро, семеро, восьмеро, дев'ятеро, десятеро, обидва, обидві, обоє, половина, третина, чверть, одна п'ята, дві третіх, три четвертих, відсоток, процент, частка, частина, долька, дріб, пропорція
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Cardinal vs collective numeral
 2. Express: Fractions in Ukrainian
 3. Math problems: Fractions and percentages
@@ -1294,7 +1312,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive quiz: All advanced grammar
 2. Transform: Various grammar structures
 3. Writing: Use all advanced features
@@ -1308,6 +1326,8 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Master opinion and discussion expressions
 - Learn discourse markers and connectors
 - Develop professional vocabulary
+
+**PEDAGOGICAL REQUIREMENT:** All Vocabulary (V) modules in this phase must use **Narrative-Driven Vocabulary**. Do not present isolated lists. Embed words in a cohesive story arc or thematic dialogue.
 
 ### Grammar Progression
 
@@ -1340,7 +1360,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Це серйозна проблема. (This is a serious problem.)
 - Яке рішення? (What's the solution?)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Problem → solution vocabulary
 2. Gap-fill: Abstract nouns in context
 3. Discussion: Express ideas using vocabulary
@@ -1358,7 +1378,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Ситуація покращилася. (The situation improved.)
 - Економіка зростає. (The economy is growing.)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Verb ↔ noun (процес pairs)
 2. Gap-fill: Describe trends
 3. Writing: Describe a change process
@@ -1377,7 +1397,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Мені здається, що... (It seems to me that...)
 - Я переконаний, що... (I'm convinced that...)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Express: Form opinion statements
 2. Ranking: Strong to weak opinions
 3. Dialogue: Opinion exchange
@@ -1397,7 +1417,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Тут я не згоден. (I disagree here.)
 - Це правда, але... (That's true, but...)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Agreement/disagreement levels
 2. Role-play: Polite disagreement
 3. Debate: Express opposing views
@@ -1416,7 +1436,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Тобто ви кажете, що... (So you're saying that...)
 - Наприклад, можна зробити так. (For example, we could do this.)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Gap-fill: Choose appropriate connector
 2. Combine: Join sentences with connectors
 3. Writing: Paragraph with varied connectors
@@ -1434,7 +1454,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Крім того, є ще одна проблема. (Additionally, there's another problem.)
 - Підсумовуючи, можна сказати... (To summarize, we can say...)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Organize: Order paragraphs with markers
 2. Transform: Add discourse structure
 3. Essay: Write with full marker set
@@ -1452,7 +1472,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Ситуація поступово покращується. (The situation is gradually improving.)
 - Рівень безробіття знизився. (The unemployment level decreased.)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Graph description: Describe trends
 2. Gap-fill: Change verbs + adverbs
 3. Report: Describe statistical changes
@@ -1470,7 +1490,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - За словами журналіста... (According to the journalist...)
 - Джерело повідомляє, що... (The source reports that...)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. News article: Identify components
 2. Vocabulary: Media types and roles
 3. Summary: Summarize news in Ukrainian
@@ -1488,7 +1508,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Вибори відбудуться... (Elections will take place...)
 - Громадяни мають право... (Citizens have the right to...)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Political terms and definitions
 2. Reading: Political news article
 3. Discussion: Current affairs vocabulary
@@ -1507,7 +1527,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary quiz: All domains
 2. Writing: Opinion essay with discourse markers
 3. Discussion: Current affairs topic
@@ -1522,6 +1542,8 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Master travel and geography expressions
 - Build emotional and relational vocabulary
 
+**PEDAGOGICAL REQUIREMENT:** All Vocabulary (V) modules in this phase must use **Narrative-Driven Vocabulary**. Embed words in cohesive stories or realistic scenarios.
+
 ### Module Content Specifications B1.6
 
 ---
@@ -1532,7 +1554,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (30 words):**
 довкілля, навколишнє середовище, природа, екологія, забруднення, викиди, відходи, сміття, переробка, утилізація, клімат, потепління, зміни клімату, захист, охорона, збереження, ресурси, енергія, відновлювальні джерела, екосистема, біорізноманіття, вимирання, деградація, стійкий розвиток, парникові гази, озоновий шар, ліс, вода, повітря, ґрунт
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Environmental terms
 2. Reading: Environmental article
 3. Discussion: Environmental issues
@@ -1545,7 +1567,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (30 words):**
 здоров'я, самопочуття, стан, хвороба, симптом, лікування, одужання, профілактика, імунітет, організм, стрес, тривога, депресія, психолог, терапія, дієта, харчування, вправи, режим, сон, відпочинок, фізична активність, ментальне здоров'я, звичка, залежність, шкідливий, корисний, здоровий, нездоровий, відновлення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary: Health problems and solutions
 2. Dialogue: Doctor-patient conversation
 3. Advice: Health recommendations
@@ -1558,7 +1580,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (30 words):**
 емоція, почуття, настрій, радість, щастя, задоволення, сум, горе, смуток, гнів, роздратування, страх, тривога, хвилювання, здивування, подив, відраза, огида, сором, провина, заздрість, ревнощі, гордість, надія, розчарування, полегшення, захоплення, ентузіазм, байдужість, розгубленість
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Emotion → situation
 2. Expression: Describe emotional states
 3. Writing: Emotional narrative
@@ -1571,7 +1593,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (25 words):**
 стосунки, відносини, зв'язок, дружба, кохання, романтика, сім'я, партнер, пара, шлюб, розлучення, конфлікт, суперечка, примирення, довіра, відданість, вірність, зрада, підтримка, турбота, повага, розуміння, спілкування, близькість, відстань
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary: Relationship stages
 2. Dialogue: Relationship discussions
 3. Writing: Describe relationships
@@ -1584,7 +1606,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (30 words):**
 бізнес, компанія, фірма, підприємство, корпорація, організація, установа, клієнт, партнер, постачальник, конкурент, ринок, продукт, послуга, продаж, купівля, контракт, угода, переговори, презентація, проєкт, бюджет, прибуток, збиток, інвестиції, капітал, стратегія, маркетинг, менеджмент, підприємництво
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Business terms
 2. Role-play: Business meeting
 3. Writing: Business email
@@ -1597,7 +1619,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (30 words):**
 подорож, мандрівка, поїздка, турист, турагентство, бронювання, резервація, готель, хостел, віза, паспорт, митниця, кордон, авіаквиток, посадковий талон, багаж, валіза, рюкзак, пам'ятка, екскурсія, гід, маршрут, карта, напрямок, північ, південь, схід, захід, континент, острів
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary: Travel planning
 2. Dialogue: At the airport/hotel
 3. Writing: Travel experience
@@ -1616,7 +1638,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - вважати (consider, hold opinion)
 - міркувати (ponder, reason)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Which thinking verb?
 2. Context analysis: Verb meanings
 3. Gap-fill: Correct synonym
@@ -1635,7 +1657,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - розповідати (tell, narrate)
 - повідомляти (report, inform)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Choose: Which speaking verb?
 2. Reported speech: Vary reporting verbs
 3. Writing: Use diverse speaking verbs
@@ -1648,7 +1670,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 **Vocabulary (25 words):**
 приймати рішення, брати участь, мати значення, надавати перевагу, звертати увагу, робити висновки, ставити питання, грати роль, вести переговори, нести відповідальність, здобувати освіту, набувати досвіду, висувати вимоги, порушувати проблему, досягати успіху, зазнавати невдачі, вдаватися до заходів, відігравати роль, справляти враження, мати вплив, чинити опір, виконувати обов'язки, порушувати закон, дотримуватися правил, нехтувати обов'язками
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Verb + noun collocations
 2. Gap-fill: Complete collocations
 3. Writing: Use collocations naturally
@@ -1666,7 +1688,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary quiz: All B1.6 domains
 2. Writing: Extended text with varied vocabulary
 3. Speaking: Topic discussion
@@ -1696,7 +1718,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Закарпаття: multicultural, Hungarian/Slovak influence
 - Галичина: Ukrainian identity, Greek Catholic tradition
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: About Western Ukraine
 2. Map: Regional geography
 3. Culture: Regional traditions
@@ -1714,7 +1736,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Слобожанщина: Cossack heritage, border region
 - Cultural diversity and identity
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: About Eastern Ukraine
 2. History: Eastern Ukraine's development
 3. Discussion: Regional identity
@@ -1732,7 +1754,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Миколаїв, Херсон: Black Sea coast
 - Agricultural heartland
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Southern Ukraine
 2. Culture: Odesa traditions
 3. Geography: Black Sea region
@@ -1750,7 +1772,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Полтава: Cossack history, Kotlyarevsky
 - Черкаси: Shevchenko country, Chyhyryn
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Central Ukraine history
 2. Culture: Cossack heritage
 3. Literature: Shevchenko connection
@@ -1769,7 +1791,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Folk revival movement
 - Music festivals (Країна Мрій, Atlas)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Listening: Ukrainian songs
 2. Discussion: Music preferences
 3. Culture: Music scene
@@ -1788,7 +1810,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Popular series and shows
 - Film festivals (Одеса, Молодість)
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: About Ukrainian films
 2. Vocabulary: Film industry terms
 3. Review: Write a film review
@@ -1807,7 +1829,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Startup ecosystem
 - Digital transformation
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Tech news
 2. Vocabulary: Tech terms
 3. Discussion: Digital Ukraine
@@ -1826,7 +1848,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Olympic achievements
 - Sports infrastructure
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Sports news
 2. Vocabulary: Sports terms
 3. Discussion: Favorite sports
@@ -1845,7 +1867,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Modern Ukrainian cuisine
 - Restaurant scene
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Recipe in Ukrainian
 2. Vocabulary: Cooking terms
 3. Culture: Food traditions
@@ -1863,7 +1885,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (10 words):** Review selection
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Cultural knowledge
 2. Reading: Authentic text
 3. Writing: About Ukrainian culture
@@ -1894,7 +1916,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Recognizing opinion vs fact
 - Evaluating sources
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Analyze news articles
 2. Skills: Fact vs opinion identification
 3. Summary: News summarization
@@ -1913,7 +1935,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Note-taking techniques
 - Authentic spoken Ukrainian
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Listening: Interview comprehension
 2. Note-taking: Main points
 3. Summary: Oral summary
@@ -1932,7 +1954,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (15 words):** Grammar metalanguage
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive quiz: All grammar
 2. Error correction: Mixed errors
 3. Writing: Complex text production
@@ -1951,7 +1973,7 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 **Vocabulary (15 words):** Cross-domain review
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Vocabulary quiz: All domains
 2. Collocation practice
 3. Writing: Extended vocabulary use
@@ -2002,91 +2024,95 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ## Cross-Module Dependencies
 
 ```
-A2 Foundation (50 modules, ~1,800 words)
-  │
-  ├── B1.1 Aspect Mastery (01-10)
-  │     ├── M01: Aspect system review
-  │     ├── M02-03: Past aspect
-  │     ├── M04: Future aspect
-  │     ├── M05-06: Negation & imperatives
-  │     └── M07-10: Expansion & practice
-  │
-  ├── B1.2 Motion Verbs (11-20)
-  │     ├── M11: 14 motion pairs
-  │     ├── M12-15: Prefix groups
-  │     ├── M16: Figurative uses
-  │     └── M17-20: Integration & practice
-  │
-  ├── B1.3 Complex Sentences (21-35)
-  │     ├── M21-23: Relative clauses
-  │     ├── M24-25: Purpose clauses
-  │     ├── M26-28: Conditionals
-  │     ├── M29-31: Concessive, causal, temporal
-  │     └── M32-35: Reported speech & review
-  │
-  ├── B1.4 Advanced Grammar (36-45)
-  │     ├── M36-38: Adverbial participles
-  │     ├── M39-41: Passive participles
-  │     └── M42-45: Diminutives, numerals
-  │
-  ├── B1.5 Vocabulary I (46-55)
-  │     ├── M46-47: Abstract concepts
-  │     ├── M48-49: Opinions
-  │     ├── M50-51: Discourse markers
-  │     └── M52-55: Media, society
-  │
-  ├── B1.6 Vocabulary II (56-65)
-  │     ├── M56-57: Environment, health
-  │     ├── M58-59: Emotions, relationships
-  │     ├── M60-61: Business, travel
-  │     └── M62-65: Synonymy, collocations
-  │
-  ├── B1.7 Contemporary Ukraine (66-75)
-  │     ├── M66-69: Regions (W, E, S, C)
-  │     ├── M70-72: Culture (music, film, tech)
-  │     └── M73-75: Sports, cuisine, review
-  │
-  └── B1.8 Skills & Integration (76-80)
-        ├── M76-77: News, podcasts
-        └── M78-80: Grammar, vocab, capstone
+## Cross-Module Dependencies
+
+```mermaid
+graph TD
+    %% A2 Foundation
+    A2[A2 Foundation] --> B1_1
+
+    %% Phase B1.1: Aspect
+    subgraph B1_1 [Phase B1.1: Aspect]
+        M01[M01 Aspect System] --> M02[M02 Past Single/Rep]
+        M02 --> M03[M03 Past Result/Proc]
+        M03 --> M04[M04 Future]
+        M04 --> M05[M05 Negation]
+        M05 --> M06[M06 Imperative]
+        M06 --> M09[M09 Integration]
+    end
+
+    %% Phase B1.2: Motion
+    subgraph B1_2 [Phase B1.2: Motion]
+        M11[M11 Motion System] --> M12[M12 Come/Go]
+        M12 --> M13[M13 Pass/Cross]
+        M13 --> M14[M14 Start/Ret]
+        M14 --> M15[M15 Appr/Dep]
+        M15 --> M16[M16 Figurative]
+        M16 --> M17[M17 Full Prefix]
+        M17 --> M18[M18 Non-motion]
+        M18 --> M19[M19 Integration]
+    end
+
+    %% Phase B1.3: Complex Sentences
+    subgraph B1_3 [Phase B1.3: Complex]
+        M21[M21 Rel який] --> M22[M22 Rel place]
+        M22 --> M23[M23 Rel time]
+        M23 --> M24[M24 Purp Inf]
+        M24 --> M25[M25 Purp Past]
+        M26[M26 Cond Real] --> M27[M27 Cond Unreal]
+        M27 --> M28[M28 Cond Mixed]
+        M29[M29 Concessive] --> M30[M30 Causal]
+        M30 --> M31[M31 Temporal]
+        M31 --> M32[M32 Integration]
+        M33[M33 Rep Stmt] --> M34[M34 Rep Qs]
+    end
+
+    %% Phase B1.4: Advanced Grammar
+    subgraph B1_4 [Phase B1.4: Advanced]
+        M36[M36 AdvPart Impf] --> M37[M37 AdvPart Perf]
+        M37 --> M38[M38 Practice]
+        M39[M39 PassPart I] --> M40[M40 PassPart II]
+        M40 --> M41[M41 Pass Const]
+        M42[M42 Diminutives] --> M43[M43 Nuance]
+    end
+
+    %% Connections
+    M09 --> M11
+    M19 --> M21
+    M32 --> M36
+    M41 --> M46[M46+ Vocab Expansion]
+```
 ```
 
 ---
 
 ## Activity Types by Module Type
 
-### Grammar Modules (G)
-1. Explanation with examples
-2. Pattern recognition quiz
-3. Gap-fill exercises
-4. Transformation drills
-5. Error correction
+### G-Modules (Grammar Focus: M01-06, M11-18, M21-34, M36-44)
+1. Quiz: Contextual pattern recognition
+2. Fill-in: Complex gap-fills
+3. Transform: Rewrite sentences (register/grammar)
+4. Match-up: Grammar concept to usage
+5. Error-correction: Find and fix subtle errors
 
-### Vocabulary Modules (V)
-1. Flash cards with context
-2. Semantic grouping
-3. Collocation practice
-4. Context sentences
-5. Synonym/antonym work
+### V-Modules (Vocabulary Focus: M07-08, M46-56, M59-64)
+1. Match-up: Collocations and definitions
+2. Fill-in: Narrative-based context gaps
+3. Group-sort: Semantic nuances
+4. Production: Rewrite story with new words
+5. Quiz: Synonym selection
 
-### Culture Modules (C)
-1. Authentic reading
-2. Comprehension questions
-3. Cultural discussion
-4. Comparison activities
-5. Project work
+### F-Modules (Functional: M29, M76-77)
+1. Dialogue: Complex role-play scenarios
+2. Quiz: Authentic listening comprehension
+3. Fill-in: Real-world task simulation
+4. Production: Functional writing
 
-### Skills Modules (S)
-1. Authentic material practice
-2. Strategy instruction
-3. Integrated skills tasks
-4. Self-assessment
-
-### Review Modules (R)
-1. Comprehensive quizzes
-2. Mixed practice
-3. Writing tasks
-4. Self-assessment checklists
+### R-Modules (Review: M10, M20, M35, M45, M55, M65, M75, M78-80)
+1. Quiz: Mixed grammar/vocab check
+2. Fill-in: Integrated skills test
+3. Production: Extended writing task
+4. Match-up: Cross-module concepts
 
 ---
 

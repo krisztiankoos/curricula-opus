@@ -10,6 +10,21 @@
 
 ---
 
+## Quality Standards & Pedagogical Strategy
+
+**Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+### Philosophy: Stylistic Perfection & Creative Production
+At C2, the learner acts as a creator and expert user of the language.
+
+1.  **Creative Production:** Learners must produce original literary and professional texts. **Model Answers** are mandatory for all such tasks to provide a "gold standard" for comparison.
+2.  **Domain-Agnostic Professionalism:** For Phase C2.3, modules must provide **Universal Templates** (e.g., "Structure of an Annual Report") that apply to *any* field (Law, Medicine, IT), rather than teaching specific jargon only.
+3.  **Stylistic Precision:** Activities must focus on the *nuance* between synonyms and register shifts (e.g., rewriting a text from "Neutral" to "Ironic").
+
+> **Note on Activities:** The "Signature Activity Concepts" listed below are **mandatory pedagogical anchors**. The Module Architect must generate additional activities to meet the **minimum target of 16+ activities per module** (C2 standard).
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
@@ -293,7 +308,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 досконалість, майстерність, володіння, опанування, вершина, зріст, прогрес, рівень, оцінювання, діагностика, прогалина, слабкість, підсилення, вдосконалення, поглиблення, розширення, уточнення, шліфування, полірування, відточування, витонченість, вишуканість, елегантність, бездоганність, незрівнянність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Diagnostic writing assessment (all styles)
 2. Oral fluency evaluation
 3. Gap identification and learning plan
@@ -318,7 +333,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (30 words):**
 милозвучність, благозвуччя, евфонія, чергування, варіант, позиція, контекст, приголосний, голосний, початок, кінець, збіг, уникнення, полегшення, вимова, плавність, ритм, мелодійність, гармонія, дисонанс, какофонія, різкість, м'якість, природність, штучність, вимушеність, автоматизм, інтуїція, чуття, слух
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Error correction: Fix euphonic violations
 2. Transform: Apply all euphonic rules
 3. Quiz: Identify correct variants
@@ -343,7 +358,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (30 words):**
 дисертація, автореферат, захист, опонент, рецензент, наукове керівництво, апробація, новизна, актуальність, практичне значення, теоретичне значення, наукова гіпотеза, експериментальна база, методологічний апарат, понятійний апарат, термінологічний апарат, наукова школа, наукова традиція, наукова етика, плагіат, самоплагіат, цитування, посилання, бібліографія, індекс цитування, імпакт-фактор, наукометрія, рейтинг, публікаційна активність, відкритий доступ
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Abstract for research paper
 2. Transform: Thesis → article
 3. Review: Peer review exercise
@@ -370,7 +385,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (30 words):**
 договір, угода, контракт, акт, протокол, доручення, скарга, позов, позовна заява, відповідач, позивач, сторона, умови, зобов'язання, права, відповідальність, санкція, штраф, неустойка, розірвання, припинення, продовження, пролонгація, підпис, печатка, нотаріус, засвідчення, завірення, юридична сила, набуття чинності
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Draft: Simple contract
 2. Transform: Informal agreement → legal document
 3. Review: Identify legal language features
@@ -397,7 +412,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (30 words):**
 журналістика, медіа, репортаж, кореспондент, редактор, редакція, випуск, номер, стаття, колонка, рубрика, лід, заголовок, підзаголовок, цитата, джерело, факт-чекінг, верифікація, об'єктивність, збалансованість, упередженість, маніпуляція, інформаційний привід, новинна цінність, ексклюзив, сенсація, резонанс, віральність, охоплення, авдиторія
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: News report on current event
 2. Transform: Press release → news article
 3. Analysis: Compare coverage of same event
@@ -422,7 +437,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (30 words):**
 оповідач, персонаж, герой, антагоніст, протагоніст, сюжет, фабула, зав'язка, кульмінація, розв'язка, конфлікт, внутрішній конфлікт, діалог, монолог, внутрішній монолог, потік свідомості, хронотоп, час, простір, атмосфера, настрій, тон, ритм, темп, напруга, саспенс, інтрига, твіст, фінал, відкритий фінал
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Flash fiction (500 words)
 2. Analyze: Narrative techniques in excerpt
 3. Transform: Third person → first person
@@ -447,7 +462,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 розмова, балачка, базікання, тріпання, перепитування, уточнення, згода, незгода, здивування, обурення, захоплення, розчарування, іронія, жарт, дотеп, гострослів'я, підколка, комплімент, лестощі, критика, зауваження, нарікання, скарга, вибачення, подяка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Dialogue: Natural conversation simulation
 2. Transform: Formal → colloquial
 3. Listening: Identify regional/social variants
@@ -471,7 +486,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 молитва, богослужіння, літургія, проповідь, акафіст, псалом, євангеліє, апостол, пророк, святий, грішник, благословення, хрещення, причастя, сповідь, піст, святкування, храм, церква, ікона, хрест, свічка, кадило, дзвін, паломництво
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reading: Biblical excerpt with analysis
 2. Vocabulary: Church Slavonic → modern equivalents
 3. Discussion: Religion in Ukrainian culture
@@ -497,7 +512,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 листування, кореспонденція, адресат, адресант, звертання, підпис, вітання, прощання, подяка, прохання, вибачення, запрошення, відмова, згода, підтвердження, нагадування, скарга, рекомендація, характеристика, резюме, мотиваційний лист, супровідний лист, вкладення, копія, відповідь
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Formal complaint letter
 2. Transform: Email chain → formal letter
 3. Compare: Same message in different formats
@@ -522,7 +537,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 популяризація, спрощення, адаптація, переклад, переказ, аналогія, приклад, ілюстрація, метафора, порівняння, доступність, зрозумілість, цікавість, захоплення, залучення, авдиторія, читач, рівень, складність, термін, жаргон, пояснення, визначення, контекст, застосування
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Research abstract → blog post
 2. Analyze: Compare scientific and popular versions
 3. Write: Explain complex concept simply
@@ -547,7 +562,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 трансформація, переробка, переписування, адаптація, інтерпретація, кут зору, акцент, фокус, людський інтерес, емоція, історія, наратив, драма, конфлікт, герой, жертва, винуватець, наслідок, рішення, реакція, коментар, експерт, очевидець, свідок, учасник
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Press release → news story
 2. Transform: Statistical report → feature article
 3. Analyze: How officials vs. journalists frame issues
@@ -572,7 +587,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 вибір, точність, нюанс, відтінок, конотація, денотація, стилістичне забарвлення, нейтральність, книжність, розмовність, піднесеність, зниженість, вульгарність, грубість, ніжність, пестливість, офіційність, формальність, неформальність, жвавість, сухість, образність, абстрактність, конкретність, експресивність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Exercise: Choose most appropriate synonym
 2. Transform: Replace neutral with marked vocabulary
 3. Analysis: Effect of word choice in text
@@ -597,7 +612,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 речення, конструкція, структура, порядок слів, інверсія, еліпсис, повтор, анафора, епіфора, паралелізм, градація, антитеза, риторичне запитання, оклик, звертання, вставлення, уточнення, пояснення, парцеляція, приєднання, перерахування, узагальнення, деталізація, згортання, розгортання
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Simple sentences → complex
 2. Create: Paragraph with syntactic variety
 3. Analyze: Sentence patterns in literary text
@@ -621,7 +636,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 голос, стиль, індивідуальність, особистість, авторство, своєрідність, оригінальність, унікальність, впізнаваність, характерність, манера, почерк, підхід, погляд, світогляд, позиція, ставлення, тон, настрій, темперамент, характер, смак, уподобання, схильність, тенденція
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Analysis: Identify your voice in previous writing
 2. Experiment: Write same topic in different voices
 3. Compare: Your voice vs. favorite author
@@ -646,7 +661,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 удосконалення, шліфування, відточування, полірування, вдосконалення, рафінування, витонченість, вишуканість, елегантність, граціозність, природність, органічність, цілісність, послідовність, гармонія, баланс, пропорція, міра, смак, стриманість, надмірність, перевантаженість, простота, лаконічність, багатослівність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Edit: Refine previous writing for voice
 2. Create: Piece showcasing individual style
 3. Peer review: Voice consistency check
@@ -671,7 +686,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (25 words):**
 зв'язність, цілісність, логічність, послідовність, плавність, перехід, містки, зв'язки, тема, рема, дане, нове, референція, анафора, катафора, еліпсис, субституція, конектор, маркер, сигнал, підказка, орієнтир, структура, організація, композиція
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Analyze: Coherence devices in professional text
 2. Edit: Improve flow in weak text
 3. Write: Seamlessly flowing essay
@@ -698,7 +713,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (15 words - review):**
 портфоліо, збірка, колекція, зразок, приклад, демонстрація, презентація, різноманітність, діапазон, майстерність, компетентність, здатність, вміння, досвід, досягнення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Compile: Personal style portfolio
 2. Self-assessment: Evaluate each piece
 3. Revision: Improve weakest sample
@@ -721,7 +736,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (15 words - review):**
 трансформація, перетворення, адаптація, версія, варіант, формат, канал, платформа, авдиторія, мета, контекст, регістр, тон, стиль, ефект
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Single content → 3+ formats
 2. Compare: Transformations with peer
 3. Evaluate: Information preservation
@@ -741,7 +756,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (10 words - review):**
 повторення, узагальнення, консолідація, закріплення, систематизація, оцінювання, рефлексія, прогрес, досягнення, перспектива
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Comprehensive style quiz
 2. Self-assessment reflection
 3. Goal setting for C2.2
@@ -760,7 +775,7 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, екзамен, контроль, перевірка, бал, результат, критерій, стандарт, рівень
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Written exam: Style analysis and transformation
 2. Creative writing: Assigned style
 3. Oral exam: Register shifting
@@ -1015,36 +1030,73 @@ These tracks will be separate documents (e.g., `C2-TRACK-LEGAL.md`) with ~20-30 
 
 ## Cross-Module Dependencies
 
-```
-C2.1 Stylistic Perfection
-├── M01-09 Seven styles mastery
-│     └── Complete register control
-├── M10-13 Transformation & precision
-│     └── Flexible style use
-└── M14-20 Individual voice & coherence
-      └── Distinctive writing ability
+## Cross-Module Dependencies
 
-C2.2 Literary Mastery
-├── M21-27 Theory & criticism
-│     └── Scholar-level analysis
-├── M28-30 Translation theory
-│     └── Translation competence
-└── M31-40 Creative writing & context
-      └── Literary production
+```mermaid
+graph TD
+    %% C1 Foundation
+    C1[C1 Foundation] --> C2_1
 
-C2.3 Preparation for Specialization
-├── M41-50 Meta-skills & document types
-│     └── Cross-domain competence
-└── M51-60 Portfolio & professional identity
-      └── Foundation for any specialization
+    %% Phase C2.1: Stylistic
+    subgraph C2_1 [Phase C2.1: Stylistic]
+        M01[M01 C1 Review] --> M02[M02 Euphony]
+        M02 --> M03[M03 Academic Style]
+        M03 --> M04[M04 Official Style]
+        M04 --> M05[M05 Journalistic]
+        M05 --> M06[M06 Literary]
+        M06 --> M07[M07 Colloquial]
+        M07 --> M08[M08 Religious]
+        M08 --> M09[M09 Epistolary]
+        M09 --> M10[M10 Transform I]
+        M10 --> M11[M11 Transform II]
+        M11 --> M12[M12 Lexical Style]
+        M12 --> M13[M13 Syntactic Style]
+        M13 --> M14[M14 Voice I]
+        M14 --> M15[M15 Voice II]
+        M15 --> M16[M16 Coherence]
+    end
 
-C2.4 Mastery & Capstone
-├── M61-66 Complete review
-│     └── Native-like fluency
-├── M67-72 Capstone project
-│     └── Major achievement
-└── M73-80 Final exams
-      └── Certification
+    %% Phase C2.2: Literary
+    subgraph C2_2 [Phase C2.2: Literary]
+        M21[M21 Theory] --> M22[M22 Narratology]
+        M22 --> M23[M23 Poetics Verse]
+        M23 --> M24[M24 Poetics Prose]
+        M24 --> M25[M25 Intertext]
+        M25 --> M26[M26 Criticism]
+        M26 --> M27[M27 Essay Writing]
+        M28[M28 Translation Theory] --> M29[M29 Trans Poetry]
+        M29 --> M30[M30 Trans Prose]
+        M30 --> M31[M31 Creative Poetry]
+        M31 --> M32[M32 Creative Prose]
+    end
+
+    %% Phase C2.3: Professional
+    subgraph C2_3 [Phase C2.3: Professional]
+        M41[M41 Overview] --> M42[M42 Terminology I]
+        M42 --> M43[M43 Terminology II]
+        M43 --> M44[M44 Reading I]
+        M44 --> M45[M45 Reading II]
+        M45 --> M46[M46 Doc Types]
+        M46 --> M47[M47 Writing I]
+        M47 --> M48[M48 Writing II]
+        M48 --> M49[M49 Oral Comm]
+    end
+
+    %% Phase C2.4: Capstone
+    subgraph C2_4 [Phase C2.4: Capstone]
+        M61[M61 Review] --> M66[M66 Fluency]
+        M67[M67 Topic] --> M68[M68 Research]
+        M68 --> M69[M69 Draft]
+        M69 --> M70[M70 Revision]
+        M70 --> M71[M71 Polish]
+        M71 --> M72[M72 Defense]
+        M72 --> M80[M80 Certification]
+    end
+
+    %% Connections
+    M16 --> M21
+    M32 --> M41
+    M60 --> M61
 ```
 
 ---
@@ -1052,32 +1104,32 @@ C2.4 Mastery & Capstone
 ## Activity Types by Phase
 
 ### C2.1 Stylistic
-1. Style transformation exercises
-2. Register shifting practice
-3. Original writing in each style
-4. Euphonic correction
-5. Voice development exercises
+1. Transform: Style transformation exercises
+2. Transform: Register shifting practice
+3. Production: Original writing (Model Answer required)
+4. Error-correction: Euphonic correction
+5. Production: Voice development exercises
 
 ### C2.2 Literary
-1. Literary analysis essays
-2. Creative writing workshops
-3. Translation exercises
-4. Poetry/prose creation
-5. Critical review writing
+1. Production: Literary analysis essays
+2. Production: Creative writing workshops
+3. Transform: Translation exercises
+4. Production: Poetry/prose creation
+5. Quiz: Critical review analysis
 
 ### C2.3 Professional Preparation
-1. Terminology acquisition strategies
-2. Professional document patterns
-3. Cross-domain communication
-4. Professional text comprehension
-5. Portfolio development
+1. Match-up: Terminology acquisition strategies
+2. Fill-in: Professional document patterns
+3. Dialogue: Cross-domain communication
+4. Quiz: Professional text comprehension
+5. Production: Portfolio development
 
 ### C2.4 Capstone
-1. Research methodology
-2. Long-form writing
-3. Revision and editing
-4. Oral presentation
-5. Final examinations
+1. Production: Research methodology application
+2. Production: Long-form writing
+3. Error-correction: Revision and editing
+4. Dialogue: Oral presentation defense
+5. Quiz: Final examinations
 
 ---
 

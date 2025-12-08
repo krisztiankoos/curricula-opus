@@ -8,27 +8,28 @@
 
 <critical>
 
+### Content Requirements by Level (Instructional Core Only*)
+
+| Metric | A1 | A2 | B1 | B2 | C1 | C2 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Core Word Count** | **750+** | **1000+** | **1250+** | **1500+** | **1750+** | **2000+** |
+| **Immersion (% Ukr)** | 25% | **40%** | **60%** | 80% | 95% | 100% |
+| **Example Sentences** | 12+ | 18+ | 24+ | 28+ | 30+ | 32+ |
+| **Engagement Boxes** | 3+ | 4+ | 5+ | 6+ | 7+ | 8+ |
+| **Mini-Dialogues** | 2+ | 3+ | 4+ | 4+ | 5+ | 5+ |
+
+*\*Instructional Core Definition: Counts ONLY Warm-up/Presentation (PPP); Diagnostic/Analysis/Deep Dive (TTT); or Introduction/Narrative/Analysis/Grammar in Context (CLIL). Excludes tables, practice drills, and activity instructions.*
+
 ### Activity Requirements by Level
 
 | Level | Activities | Items/Activity | Types | Priority Activities |
 |-------|------------|----------------|-------|---------------------|
-| A1 | 8+ | 12+ | 4+ | fill-in, match-up, unjumble, quiz |
-| A2 | 10+ | 12+ | 4+ | + error-correction (1+ per module) |
-| B1 | 12+ | 14+ | 4+ | fill-in ×2, unjumble ×2, error-correction ×2 |
-| B2 | 14+ | 16+ | 4+ | fill-in ×3, error-correction ×2 |
-| C1 | 16+ | 18+ | 4+ | fill-in ×3, error-correction ×3 |
-| C2 | 16+ | 18+ | 4+ | fill-in ×3, error-correction ×3 |
-
-### Content Requirements by Level
-
-| Level | Content Words | Mini-Dialogues | Engagement Boxes | Examples | Immersion |
-|-------|---------------|----------------|------------------|----------|-----------|
-| A1 | 600+ | 2+ | 3+ | 12+ | 30% Ukrainian |
-| A2 | 750+ | 2-3 | 4+ | 18+ | 40% Ukrainian |
-| B1 | 900+ | 3-4 | 5+ | 24+ | 60% Ukrainian |
-| B2 | 1000+ | 4+ | 6+ | 28+ | 85% Ukrainian |
-| C1 | 1100+ | 5+ | 7+ | 30+ | 95% Ukrainian |
-| C2 | 1200+ | 5+ | 8+ | 32+ | 98% Ukrainian |
+| A1 | 8+ | 12+ | 4+ | fill-in, match-up, anagram, unjumble, quiz |
+| A2 | 10+ | 12+ | 4+ | + error-correction, unjumble (1+ per module) |
+| B1 | 12+ | 14+ | 4+ | fill-in ×2, unjumble 2x, error-correction ×2 |
+| B2 | 14+ | 16+ | 4+ | fill-in ×3, unjumble 2x, error-correction ×2 |
+| C1 | 16+ | 18+ | 4+ | fill-in ×3, unjumble 3x, error-correction ×3 |
+| C2 | 16+ | 18+ | 4+ | fill-in ×3, unjumble 3x, error-correction ×3 |
 
 ### Sentence Complexity by Level
 
@@ -101,7 +102,7 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 | Activity | B1 Min | B2 Min | C1 Min | C2 Min | Why Priority |
 |----------|--------|--------|--------|--------|--------------|
 | fill-in | 2 | 3 | 3 | 3 | Core production skill |
-| unjumble | 2 | 2 | 2 | 2 | Sentence construction |
+| unjumble | 2 | 2 | 3 | 3 | Sentence construction |
 | error-correction | 2 | 2 | 3 | 3 | Critical for accuracy |
 | quiz | 1 | 1 | 1 | 1 | Concept reinforcement |
 | match-up | 1 | 1 | 1 | 1 | Vocabulary/collocations |
@@ -288,7 +289,7 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 - [ ] **Engagement boxes** (varied types)
 - [ ] **Cultural context** where relevant
 - [ ] **Authentic materials** (real texts, media)
-- [ ] **Production tasks** (speaking/writing)
+- [ ] **Production tasks** (speaking/writing) with **Model Answers** for self-correction
 - [ ] **Self-assessment** checklist
 - [ ] **Pronunciation guidance** (B2+ grammar modules)
 
@@ -302,7 +303,9 @@ Modules should be **rich, engaging, and comprehensive**. One curriculum module m
 
 ---
 
-## Grammar-Focused Module Structure
+## Grammar-Focused Module Structure (TTT Approach)
+
+**Pedagogy:** Test-Teach-Test (TTT) / Guided Discovery
 
 Instead of: **Rule → Table → Exercises**
 
@@ -338,16 +341,18 @@ Use: **Context → Pattern Discovery → Practice → Real Application**
 
 ---
 
-## Vocabulary-Focused Module Structure
+## Vocabulary-Focused Module Structure (Narrative Arc)
+
+**Pedagogy:** Content-Based Instruction (CBI) / Narrative-Driven
 
 Instead of: **Table → Table → Table → Activities**
 
-Use: **Context → Vocabulary-in-use → Context → Practice**
+Use: **Story → Vocabulary-in-Context → Analysis → Retelling**
 
 ### Required Sections
 
-1. **Thematic Introduction (100+ words)** — Set the scene with a narrative
-2. **Vocabulary Groups with Context (80+ words per group)** — Words in use, not just translated
+1.  **Narrative Arc (Story-Driven) (150+ words)** — Vocabulary MUST be embedded in a compelling story or scenario.
+2.  **Vocabulary Groups with Context (80+ words per group)** — Words in use, extracted from the story.
 3. **Usage Patterns Section (150+ words)** — Collocations, what verbs go with what nouns
 4. **Cultural/Real-World Connection (100+ words)** — How Ukrainians actually use these words
 5. **Mini-Scenarios (150+ words)** — 2-3 short dialogues
@@ -1042,6 +1047,9 @@ When adapting authentic materials:
 
 ## Module-to-Vibe Mapping
 
+> ⚠️ **STALE / NEEDS REWORK**
+> This section is currently outdated and requires significant rework to align with the new "Theory-First" approach and data structure. Do not rely on these mapping rules until updated.
+
 ### One Module → Multiple Vibe Lessons
 
 A single curriculum module can generate:
@@ -1332,16 +1340,7 @@ your hobbies:
 Notice how we use "грати в" (play) with ball sports...
 ```
 
----
 
-## Grammar Module Content Targets
-
-| Level | Narrative Words | Engagement Boxes | Mini-Dialogues | Examples in Context |
-|-------|-----------------|------------------|----------------|---------------------|
-| A2 | 600+ | 4+ | 2-3 | 12+ |
-| B1 | 800+ | 5+ | 3-4 | 18+ |
-| B2 | 1000+ | 6+ | 4+ | 24+ |
-| C1+ | 1200+ | 7+ | 5+ | 30+ |
 
 ---
 
@@ -1401,5 +1400,6 @@ changelog:
 
 ## Revision History
 
+- v3.0 (2025-12): Maximum Richness alignment with SKILL.md strict standards.
 - v2.0 (2025-12): Consolidated from MODULE-RICHNESS-GUIDELINES.md + ACTIVITY-GUIDELINES.md
 - v1.0 (2024-12): Initial comprehensive plan with CEFR alignment

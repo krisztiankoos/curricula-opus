@@ -10,6 +10,23 @@
 
 ---
 
+## Quality Standards & Pedagogical Strategy
+
+**Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+
+### Content-Based Instruction (CBI): "Content is King"
+At B2, the focus shifts from "learning to read" to **"reading to learn"**. The primary driver of learning is **long, rich, detailed text**.
+
+1.  **Pedagogical Split:**
+    *   **Grammar Modules (G):** Use **TTT (Test-Teach-Test)**. Challenge students with complex texts containing the target grammar *before* explaining the rule.
+    *   **Vocabulary & History Modules (V/H):** Use **Narrative Arcs**. Vocabulary must be embedded in compelling, extended stories or historical accounts, not lists.
+2.  **Text Density:** Modules must feature substantial reading passages (300-500+ words) that mimic authentic Ukrainian media/literature.
+3.  **Writing Support:** All writing practices **MUST include a Model Answer** (e.g., a sample essay or letter) to support self-learners.
+
+> **Note on Activities:** The "Signature Activity Concepts" listed below are **mandatory pedagogical anchors**. The Module Architect must generate additional activities (standard drills, quizzes, etc.) to meet the **minimum target of 14+ activities per module** (B2 standard).
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)
@@ -277,7 +294,7 @@ The B2 curriculum bridges "competence" and "fluency". It shifts focus from *lear
 **Vocabulary (25 words):**
 пасивний стан, активний стан, дійсний, пасивний, дієприкметник, форма, конструкція, агент, виконавець, дія, об'єкт, суб'єкт, трансформація, еквівалент, функція, стиль, реєстр, офіційний, розмовний, науковий, художній, книжний, усний, письмовий, нейтральний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match-up: Sentence → passive type
 2. Quiz: Which passive for which register?
 3. Group-sort: Classify sentences by passive form
@@ -306,7 +323,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 написаний, прочитаний, зроблений, закритий, відкритий, побудований, створений, виконаний, завершений, розв'язаний, перекладений, опублікований, надрукований, виданий, підготовлений, організований, призначений, запланований, затверджений, прийнятий, підписаний, отриманий, відправлений, доставлений, встановлений
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Active → Past passive participle
 2. Gap-fill: Agree participle with noun
 3. Quiz: Form participles from verbs
@@ -336,7 +353,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 оголошено, вирішено, прийнято, затверджено, підписано, опубліковано, встановлено, визначено, забезпечено, виконано, завершено, розпочато, продовжено, припинено, скасовано, змінено, доповнено, виправлено, схвалено, відхилено, направлено, передано, отримано, зареєстровано, зафіксовано
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Participle → -но/-то form
 2. Rewrite: Active sentences → official passive
 3. Quiz: Identify -но/-то in documents
@@ -364,7 +381,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 будуватися, створюватися, виконуватися, проводитися, вивчатися, досліджуватися, розглядатися, обговорюватися, вирішуватися, застосовуватися, використовуватися, виробляться, продаватися, купуватися, публікуватися, видаватися, друкуватися, транслюватися, передаватися, зберігатися, змінюватися, розвиватися, покращуватися, погіршуватися, підтримуватися
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Active → -ся passive
 2. Gap-fill: Process descriptions
 3. Compare: -ся vs -но/-то usage
@@ -392,7 +409,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 сказали, запитали, відповіли, повідомили, пояснили, показали, дали, принесли, подзвонили, написали, порадили, запропонували, попросили, наказали, заборонили, дозволили, пообіцяли, надіслали, вручили, призначили, обрали, запросили, прийняли, відпустили, звільнили
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Formal passive → colloquial
 2. Role-play: Retell events colloquially
 3. Quiz: Register identification
@@ -419,7 +436,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 контекст, ситуація, доречність, відповідність, вибір, рішення, стиль, тон, адресат, мета, ефект, враження, формальність, неформальність, нейтральність, офіційність, книжність, розмовність, усність, письменність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Rewrite: Same content in 4 passive forms
 2. Match-up: Context → appropriate passive
 3. Quiz: "Which passive would you use?"
@@ -447,7 +464,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 читаючий, пишучий, працюючий, говорячий, слухаючий, дивлячийся, йдучий, їдучий, сидячий, стоячий, лежачий, біжучий, летючий, пливучий, рухомий, діючий, існуючий, живучий, зростаючий, падаючий, зникаючий, з'являючийся, змінюючийся, наростаючий, спадаючий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Participle → relative clause
 2. Quiz: Identify participles in literary text
 3. Match-up: Participle → equivalent clause
@@ -475,7 +492,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 колишній, минулий, майбутній, теперішній, давній, недавній, попередній, наступний, останній, перший, новоприбулий, новопризначений, новообраний, новостворений, вищезгаданий, нижчепідписаний, так званий, добре відомий, широко вживаний, мало досліджений
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Identify: Spot participles in academic text
 2. Transform: Participle → relative clause
 3. Quiz: Legitimate vs russism participles
@@ -504,7 +521,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 еквівалент, заміна, трансформація, стилістичний, нейтральний, книжний, розмовний, вибір, перевага, частотність, природність, штучність, архаїчність, сучасність, норма, відхилення, русизм, українізм, автентичність, правильність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Rewrite: Participles → relative clauses (and vice versa)
 2. Quiz: Which style is more appropriate?
 3. Edit: Remove unnecessary participles from text
@@ -531,7 +548,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 читаючи, пишучи, говорячи, слухаючи, думаючи, знаючи, розуміючи, бачачи, чуючи, йдучи, прочитавши, написавши, сказавши, зробивши, дізнавшись, побачивши, почувши, зрозумівши, вирішивши, закінчивши, почавши, отримавши, прийшовши, повернувшись, виявившись
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Combine: Two sentences → one with adverbial participle
 2. Quiz: Imperfective vs perfective participle
 3. Transform: Adverbial clause → participle construction
@@ -558,7 +575,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 речення, головне, підрядне, сурядне, зв'язок, сполучник, сполучне слово, кома, крапка з комою, двокрапка, розділовий знак, пунктуація, вставне, вставлене, означальне, з'ясувальне, обставинне, причинове, умовне, часове, допустове, наслідкове, цільове, порівняльне, місця
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Diagram: Parse complex sentence structure
 2. Punctuate: Add commas to complex sentences
 3. Combine: Simple sentences → complex
@@ -603,7 +620,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 безумовно, безперечно, звичайно, справді, очевидно, зрозуміло, можливо, мабуть, здається, напевно, імовірно, на жаль, на щастя, на диво, як відомо, як кажуть, як правило, за даними, на думку, по-перше, по-друге, нарешті, отже, таким чином, до речі, між іншим, власне кажучи, іншими словами, одним словом, у будь-якому разі
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Insert: Add parentheticals to neutral text
 2. Match-up: Parenthetical → function
 3. Quiz: Certainty vs uncertainty expressions
@@ -631,7 +648,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 порядок слів, інверсія, емфаза, наголос, акцент, тема, рема, відоме, нове, виділення, підкреслення, контраст, протиставлення, логічний, стилістичний, нейтральний, маркований, експресивний, емоційний, риторичний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Reorder: Neutral → emphatic word order
 2. Identify: What is emphasized in each sentence?
 3. Create: Write emphatic versions
@@ -668,7 +685,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 проте, втім, зате, однак, натомість, навпаки, причому, до того ж, крім того, тим більше, тим паче, тому, отже, відтак, таким чином, внаслідок, унаслідок, хоча, хоч, незважаючи, попри, дарма що, якщо, якби, щоб, аби, оскільки, позаяк, через те що, завдяки тому що
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Fill gaps: Insert appropriate connector
 2. Transform: Simple sentences → connected paragraph
 3. Quiz: Connector function identification
@@ -703,7 +720,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 стиль, функціональний, офіційно-діловий, науковий, публіцистичний, художній, розмовний, формальний, неформальний, нейтральний, книжний, усний, письмовий, термін, кліше, штамп, експресія, образність, точність, лаконічність, емоційність, об'єктивність, суб'єктивність, стандартність, індивідуальність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Text excerpt → functional style
 2. Analyze: Identify style markers
 3. Quiz: "Which style is this?"
@@ -731,7 +748,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 звертання, ти, ви, пан, пані, шановний, вельмишановний, ввічливий, неввічливий, офіційний, неофіційний, дружній, формальний, етикет, норма, тон, регістр, субординація, рівність, повага, фамільярність, дистанція, близькість, ввічливість, чемність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Informal dialogue → formal
 2. Role-play: Same request in formal/informal
 3. Quiz: Appropriate address forms
@@ -756,7 +773,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 компанія, підприємство, фірма, корпорація, директор, менеджер, керівник, колега, партнер, клієнт, замовник, контракт, угода, договір, переговори, нарада, презентація, звіт, пропозиція, умови, терміни, вимоги, зобов'язання, відповідальність, співпраця, прибуток, збиток, інвестиція, бюджет, стратегія
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Business email with proper register
 2. Transform: Casual request → business proposal
 3. Role-play: Business negotiation
@@ -787,7 +804,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 дослідження, стаття, монографія, дисертація, теза, гіпотеза, теорія, концепція, методологія, аналіз, синтез, порівняння, класифікація, висновок, аргумент, доказ, приклад, посилання, цитата, джерело, бібліографія, анотація, резюме, ключові слова, актуальність, мета, завдання, об'єкт, предмет, результат
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Academic paragraph with hedging
 2. Cite: Practice citation formats
 3. Transform: Casual explanation → academic
@@ -818,7 +835,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 закон, постанова, указ, розпорядження, наказ, заява, скарга, клопотання, звернення, протокол, акт, довідка, виписка, доручення, довіреність, ліцензія, дозвіл, сертифікат, свідоцтво, посвідчення, підпис, печатка, штамп, реєстрація, затвердження, погодження, виконання, контроль, відповідальність, порушення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Fill in: Official document templates
 2. Transform: Request → formal application
 3. Analyze: Law excerpt identification
@@ -849,7 +866,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 лікар, пацієнт, медсестра, поліклініка, лікарня, діагноз, симптом, скарга, огляд, аналіз, рецепт, ліки, таблетка, укол, процедура, операція, лікування, одужання, біль, температура, тиск, кашель, нежить, алергія, інфекція, запалення, хронічний, гострий, профілактика, імунітет
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Role-play: Doctor-patient dialogue
 2. Read: Medical instructions
 3. Write: Describe symptoms formally
@@ -874,7 +891,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 технологія, система, пристрій, механізм, прилад, обладнання, програма, алгоритм, функція, параметр, характеристика, специфікація, інструкція, керівництво, налаштування, встановлення, експлуатація, технічне обслуговування, ремонт, несправність, помилка, збій, відмова, безпека, захист, контроль, вимірювання, калібрування, тестування, сертифікація
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Read: Technical manual excerpt
 2. Write: Step-by-step instructions
 3. Transform: Casual → technical description
@@ -898,7 +915,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 автор, письменник, поет, твір, роман, повість, оповідання, вірш, поема, драма, сюжет, герой, персонаж, образ, тема, ідея, стиль, метафора, порівняння, епітет, символ, алегорія, гіпербола, іронія, сатира, ліризм, драматизм, конфлікт, кульмінація, розв'язка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Analyze: Literary devices in excerpt
 2. Transform: Neutral → literary style
 3. Write: Short literary description
@@ -927,7 +944,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 новина, подія, репортаж, інтерв'ю, коментар, редакція, кореспондент, журналіст, оглядач, експерт, джерело, факт, думка, позиція, заява, спростування, резонанс, скандал, сенсація, ексклюзив, прес-реліз, конференція, брифінг, трансляція, ефір, аудиторія, рейтинг, об'єктивність, упередженість, маніпуляція
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: News headline and lead
 2. Analyze: Bias in news article
 3. Transform: Press release → news story
@@ -951,7 +968,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 привіт, бувай, як справи, нормально, класно, круто, фігня, прикольно, кльово, жесть, капець, офігенно, зашибісь, чувак, тіпа, короче, типу, ну, от, та, ж, бо, таки, ой, ого
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Formal → colloquial
 2. Identify: Colloquial markers in dialogue
 3. Role-play: Casual conversation
@@ -976,7 +993,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (15 words):**
 адаптація, переформулювання, парафраз, варіант, версія, трансформація, переклад, стиль, регістр, контекст, аудиторія, мета, ефект, доречність, гнучкість
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Transform: Same information in 3 registers
 2. Compare: Multiple register versions
 3. Create: Register-appropriate responses
@@ -1000,7 +1017,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (35 words):**
 держава, уряд, парламент, Верховна Рада, президент, прем'єр-міністр, міністр, депутат, посол, дипломат, вибори, голосування, референдум, кандидат, партія, коаліція, опозиція, фракція, закон, конституція, указ, постанова, реформа, політика, демократія, права людини, свобода слова, корупція, санкції, дипломатія, переговори, угода, криза, конфлікт, війна
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Read: Political news article
 2. Discuss: Ukrainian political system
 3. Vocabulary: Political term quiz
@@ -1023,7 +1040,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (35 words):**
 суд, суддя, адвокат, прокурор, підсудний, обвинувачений, потерпілий, свідок, присяжні, закон, право, обов'язок, злочин, правопорушення, покарання, вирок, вердикт, позов, скарга, апеляція, касація, слухання, засідання, доказ, алібі, презумпція невинуватості, конституційний, цивільний, кримінальний, адміністративний, штраф, ув'язнення, умовний термін, амністія, помилування
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Read: Court report
 2. Vocabulary: Legal terms matching
 3. Discuss: Rights and responsibilities
@@ -1046,7 +1063,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (35 words):**
 економіка, ринок, капітал, ВВП, інфляція, дефляція, безробіття, зайнятість, інвестиція, кредит, процент, борг, бюджет, дефіцит, профіцит, експорт, імпорт, торгівля, податок, мито, субсидія, дотація, банк, біржа, акція, облігація, валюта, курс, девальвація, приватизація, націоналізація, конкуренція, монополія, санкції, ембарго
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Read: Economic news
 2. Analyze: Economic indicators
 3. Discuss: Ukrainian economy
@@ -1071,7 +1088,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (15 words):**
 інтеграція, застосування, практика, контекст, ситуація, вибір, рішення, стратегія, гнучкість, адаптація, компетентність, володіння, рівень, прогрес, оцінка
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Academic paragraph with all B2.1 features
 2. Transform: Text across registers
 3. Analyze: Complex text for grammar features
@@ -1144,7 +1161,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 труд, плід, рано, Бог, камінь, вода, очі, руки, терпіння, робота, вовк, ліс, кінець, діло, вінець, працювати, їсти, мудрість, народна, традиційна
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Proverb → meaning
 2. Context: When to use each proverb
 3. Complete: Finish the proverb
@@ -1167,7 +1184,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 яблуко, яблуня, тихо, далеко, скупий, двічі, говорити, робити, золото, блищати, мовчання, око, порошина, колода, правда, колоти, характер, мудрість, істина, справедливість
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Explain: Proverb meaning in own words
 2. Compare: Ukrainian vs English equivalents
 3. Use: Create sentences with proverbs
@@ -1190,7 +1207,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 сани, літо, віз, зима, сіяти, жати, час, гроші, пізно, ніколи, ранок, вечір, мудрий, вода, камінь, точити, весна, орати, ластівка, природа
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Proverb → season/time concept
 2. Illustrate: Draw proverb meaning
 3. Discuss: Planning and preparation proverbs
@@ -1213,7 +1230,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 гоп, скочити, сім, раз, відміряти, відрізати, обіцянка, цяцянка, дурень, довіряти, перевіряти, берегти, синиця, рука, журавель, небо, плювати, криниця, попереджений, озброєний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Complete the proverb
 2. Situation: Which proverb applies?
 3. Write: Essay using 3 proverbs
@@ -1236,7 +1253,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 рука, чесатися, око, розбігатися, вухо, в'янути, язик, повертатися, ніс, дорости, волосся, дибки, серце, місце, душа, лежати, тіло, частина, вираз, значення, переносний, буквальний, образний, фразеологізм, сталий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Expression → meaning
 2. Use: Create dialogues using expressions
 3. Illustrate: Literal vs figurative meaning
@@ -1259,7 +1276,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 вовк, натура, кіт, плакати, собака, хвіст, купити, мішок, показати, рак, зимувати, свистіти, дивитися, ворона, білий, тварина, характер, поведінка, властивість, символ, метафора, асоціація, культура, традиція, народний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Explain: Why these animals in expressions?
 2. Match: Animal expression → meaning
 3. Compare: Animal symbolism in cultures
@@ -1282,7 +1299,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 ложка, дьоготь, бочка, мед, камінь, спотикання, кістка, горло, яблуко, розбрат, двері, відчинений, дах, поїхати, лід, скреслити, крапля, море, предмет, речовина, перешкода, проблема, можливість, незначний, важливий
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Object expression → meaning
 2. Context: When to use each expression
 3. Create: Sentences with object expressions
@@ -1305,7 +1322,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (20 words):**
 крапля, море, пух, перо, гуска, вода, тин, ворота, поворот, час, рано, пізно, так, інакше, абстрактний, конкретний, вираз, значення, вживання, контекст
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quiz: Expression meaning
 2. Use: Appropriate context for expressions
 3. Transform: Paraphrase without using expression
@@ -1328,7 +1345,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 голова, оберт, язик, зуби, тримати, гудзик, набивати, ніс, клювати, довгий, гострий, ламати, втратити, обличчя, рот, губи, вуха, очі, брови, чоло, щоки, підборіддя, ідіома, значення, переносний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Head/face idiom → meaning
 2. Act out: Literal vs figurative meaning
 3. Dialogue: Use 3 idioms in conversation
@@ -1351,7 +1368,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 рука, нога, майстер, плутатися, доходити, зв'язати, сісти, калюжа, стати, легкий, підставити, палець, долоня, лікоть, коліно, п'ята, крок, хода, дія, результат, здатність, перешкода, допомога, шкода
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Hand/leg idiom → meaning
 2. Use: Create situations for each idiom
 3. Compare: Similar idioms in other languages
@@ -1374,7 +1391,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 камінь, душа, серце, крається, п'ята, брати, щирий, нараспашку, споріднений, весь, внутрішній, емоція, почуття, любов, страх, радість, біль, страждання, щирість, відкритість, глибина, інтимність, духовний, емоційний
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Heart/soul idiom → emotion
 2. Write: Short story using 3 idioms
 3. Discuss: Emotional expression in Ukrainian
@@ -1397,7 +1414,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 вовк, вити, промовка, собака, смерть, з'їсти, кінь, валятися, троянський, темний, конячка, працювати, тварина, символ, метафора, характер, поведінка, праця, небезпека, експерт, невідомий, приховуваний, сила, витривалість
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Animal idiom → meaning
 2. Discuss: Why these animals in idioms
 3. Create: Story using animal idioms
@@ -1420,7 +1437,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 заєць, вбити, ворона, ловити, рахувати, риба, вода, м'ясо, мутний, муха, сідати, слон, робити, птах, комаха, літати, плавати, повзати, здобич, жертва, хижак, перебільшення, зменшення, порівняння
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Bird/fish/insect idiom → meaning
 2. Compare: Animal idioms across cultures
 3. Use: Idioms in appropriate contexts
@@ -1443,7 +1460,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 вода, чистий, вивести, лити, дивитися, вогонь, гратися, сухий, вийти, крізь, ґрунт, нога, вітер, голова, природа, стихія, елемент, символ, значення, небезпека, порятунок, випробування, легковажність, серйозність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Nature idiom → meaning
 2. Categorize: Idioms by element
 3. Write: Paragraph using nature idioms
@@ -1472,7 +1489,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 радість, щастя, задоволення, втіха, насолода, захоплення, ейфорія, екстаз, сум, журба, смуток, горе, туга, біль, страждання, депресія, меланхолія, розпач, гнів, лють, дратівливість, роздратування, злість, агресія, страх, жах, тривога, паніка, хвилювання, неспокій
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Nuance: Explain difference between synonyms
 2. Context: Which synonym fits which situation
 3. Write: Express same emotion with different synonyms
@@ -1501,7 +1518,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 великий, здоровенний, велетенський, величезний, грандіозний, колосальний, гігантський, масивний, об'ємний, широкий, малий, маленький, крихітний, мізерний, мініатюрний, дрібний, невеликий, незначний, мікроскопічний, короткий, довгий, високий, низький, товстий, тонкий, широкий, вузький, глибокий, мілкий, порівняння
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Order: Rank synonyms by intensity
 2. Match: Synonym → appropriate context
 3. Replace: Find best synonym for context
@@ -1530,7 +1547,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 йти, ходити, крокувати, брести, тупати, шкутильгати, повзти, плисти, бігти, бігати, мчати, нестися, чимчикувати, летіти, стрибати, скакати, лізти, підніматися, спускатися, рухатися, пересуватися, швидко, повільно, обережно, впевнено, непевно, легко, важко, граціозно, незграбно
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Movement verb → manner
 2. Describe: Different ways of moving
 3. Use: Precise movement verbs in narration
@@ -1559,7 +1576,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 добрий, хороший, гарний, чудовий, прекрасний, відмінний, чудесний, розкішний, бездоганний, ідеальний, поганий, злий, кепський, огидний, жахливий, страшний, гіркий, негативний, шкідливий, небезпечний, якість, властивість, характеристика, оцінка, судження, критерій, стандарт, норма, виняток, ідеал
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Scale: Rank quality synonyms
 2. Context: Formal vs informal quality words
 3. Describe: Same object with different synonyms
@@ -1588,7 +1605,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 казати, говорити, розповідати, повідомляти, заявляти, оголошувати, сповіщати, стверджувати, питати, запитувати, цікавитися, розпитувати, допитувати, випитувати, відповідати, реагувати, заперечувати, погоджуватися, сперечатися, обговорювати, пояснювати, уточнювати, комунікація, діалог, монолог, дискусія, дебати, переговори, бесіда, розмова
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Communication verb → context
 2. Rewrite: Same dialogue with different verbs
 3. Analyze: Register of communication verbs
@@ -1617,7 +1634,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 розумний, мудрий, кмітливий, тямущий, геніальний, інтелектуальний, освічений, ерудований, добрий, щедрий, милосердний, чуйний, лагідний, ніжний, турботливий, уважний, злий, жорстокий, безсердечний, байдужий, егоїстичний, характер, особистість, риса, якість, чеснота, вада, темперамент, вдача, натура
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Profile: Describe person with character synonyms
 2. Contrast: Positive vs negative traits
 3. Analyze: Character in literature
@@ -1646,7 +1663,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 зараз, тепер, нині, сьогодні, наразі, нинішній, теперішній, сучасний, раніше, колись, давно, недавно, щойно, вчора, позавчора, завтра, післязавтра, потім, пізніше, згодом, час, період, епоха, ера, момент, мить, хвилина, година, доба, вічність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Timeline: Place time synonyms on timeline
 2. Nuance: Difference between now synonyms
 3. Rewrite: Same sentence with different time words
@@ -1673,7 +1690,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 тут, тутечки, там, он там, туди, звідти, сюди, звідси, далеко, близько, поруч, поблизу, навколо, всюди, ніде, десь, кудись, звідкись, місце, простір, територія, район, зона, точка, локація
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Map: Use place synonyms to give directions
 2. Distinguish: Static vs directional place words
 3. Describe: Location with various synonyms
@@ -1702,7 +1719,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 багато, чимало, безліч, купа, маса, сила-силенна, мало, небагато, трохи, кілька, декілька, жодний, ніякий, достатньо, недостатньо, занадто, надто, більше, менше, стільки, скільки, кількість, обсяг, міра, число
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Quantify: Express amounts with synonyms
 2. Register: Formal vs informal quantity words
 3. Compare: Quantity expressions in context
@@ -1731,7 +1748,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 робити, чинити, діяти, виконувати, здійснювати, реалізовувати, втілювати, творити, брати, взяти, хапати, вихоплювати, отримувати, приймати, давати, віддавати, передавати, вручати, дія, вчинок, акція, активність, процес, результат, наслідок, ефект, вплив, зміна, перетворення, удосконалення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Match: Action verb → context
 2. Aspect: Imperfective/perfective action pairs
 3. Register: Formal vs colloquial action verbs
@@ -1760,7 +1777,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 бути, існувати, перебувати, знаходитися, становити, являти собою, здаватися, виглядати, видаватися, виявлятися, справляти враження, стан, становище, ситуація, умови, обставини, контекст, середовище, оточення, буття, існування, присутність, наявність, відсутність, реальність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Distinguish: State verbs nuances
 2. Describe: Current state with synonyms
 3. Analyze: State expressions in formal text
@@ -1789,7 +1806,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (30 words):**
 думка, ідея, погляд, точка зору, переконання, віра, позиція, ставлення, поняття, уявлення, концепція, теорія, гіпотеза, припущення, здогад, висновок, аргумент, доказ, підстава, причина, мотив, мета, ціль, намір, план, стратегія, тактика, підхід, метод, спосіб
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Distinguish: Abstract concept synonyms
 2. Academic: Use abstract vocabulary
 3. Argue: Express ideas with varied vocabulary
@@ -1817,7 +1834,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 тому що, оскільки, бо, через те що, у зв'язку з тим що, завдяки тому що, внаслідок того що, з огляду на те що, хоча, хоч, незважаючи на, попри, дарма що, хай, нехай, причина, наслідок, зв'язок, відношення, залежність, умова, обставина, факт, аргумент, пояснення
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Connect: Join sentences with conjunctions
 2. Register: Formal vs informal conjunctions
 3. Argue: Build causal chains
@@ -1847,7 +1864,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (25 words):**
 коли, щойно, після того як, перед тим як, поки, доки, відколи, відтоді як, в той час як, тим часом, якщо, якби, коли б, у випадку, за умови, при умові, раз, оскільки, аби, щоб, щоби, час, умова, можливість, ймовірність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Combine: Sentences with temporal conjunctions
 2. Conditionals: Real vs unreal conditions
 3. Complex: Multi-conjunction sentences
@@ -1866,7 +1883,7 @@ Participles agree with noun in gender, number, case:
 **Vocabulary (15 words):**
 інтеграція, практика, застосування, комплексний, комбінований, різноманітний, багатий, виразний, природний, автентичний, рівень, прогрес, майстерність, вільне володіння, компетентність
 
-**Activities:**
+**Signature Activity Concepts:**
 1. Write: Essay using phraseology
 2. Speak: Presentation with varied vocabulary
 3. Analyze: Text for phraseological richness
@@ -2070,70 +2087,98 @@ These modules explicitly address Russian historical narratives:
 
 ## Activity Types by Module Type
 
-### Grammar Modules (B2.1)
-1. Transformation drills
-2. Register identification
-3. Text rewriting
-4. Error correction
-5. Complex sentence building
+### G-Modules (Grammar Focus: M01-14, M57-58)
+1. Quiz: Register identification
+2. Transform: Passive voice / Register rewriting
+3. Match-up: Grammar concept to style
+4. Fill-in: Complex text reconstruction
+5. Error-correction: Stylistic errors
 
-### Phraseology Modules (B2.2)
-1. Proverb/idiom matching
-2. Context-appropriate selection
-3. Story creation with expressions
-4. Cultural comparison
-5. Register-appropriate use
+### V-Modules (Vocabulary Focus: M45-56)
+1. Match-up: Synonyms and nuance
+2. Fill-in: Narrative context
+3. Group-sort: Register sorting
+4. Production: Rewrite in different register
+5. Quiz: Phraseology meaning
 
-### History Modules (B2.3)
-1. Reading comprehension
-2. Timeline activities
-3. Vocabulary building
-4. Discussion questions
-5. Source analysis
+### H-Modules (History/Biography: M61-109)
+1. Quiz: Fact checking (reading comprehension)
+2. Match-up: Event to date/person
+3. Production: Summarize historical event
+4. Discussion: Analyze cause and effect
 
-### Biography Modules (B2.4)
-1. Reading comprehension
-2. Chronology exercises
-3. Achievement matching
-4. Comparative analysis
-5. Presentation creation
-
-### Skills Modules (B2.5)
-1. Academic writing practice
-2. Research skills
-3. Presentation development
-4. Peer review
-5. Self-assessment
+### R-Modules (Review: M30, M60, M110)
+1. Quiz: Comprehensive check
+2. Production: Essay writing with Model Answer
+3. Match-up: Cross-module concepts
+4. Fill-in: Integrated skills test
 
 ---
 
 ## Cross-Module Dependencies
 
 ```
-B2.1 Grammar & Register
-├── M01-06 Passive Voice
-│     └── Foundation for formal writing
-├── M07-10 Participles
-│     └── Literary text comprehension
-├── M11-14 Complex Sentences
-│     └── Academic writing
-└── M15-25 Register System
-      └── All subsequent communication
+## Cross-Module Dependencies
 
-B2.2 Phraseology
-├── M31-44 Proverbs/Idioms/Expressions
-│     └── Cultural fluency
-└── M45-58 Synonyms/Conjunctions
-      └── Nuanced expression
+```mermaid
+graph TD
+    %% B1 Foundation
+    B1[B1 Foundation] --> B2_1
 
-B2.3 History (builds on B2.1 register for historical texts)
-└── M61-85 Full historical knowledge
+    %% Phase B2.1: Grammar & Register
+    subgraph B2_1 [Phase B2.1: Grammar/Register]
+        M01[M01 Passive Intro] --> M02[M02 Past Pass Part]
+        M02 --> M03[M03 Impersonal -но/-то]
+        M02 --> M04[M04 Reflexive -ся]
+        M02 --> M05[M05 3rd Plural]
+        M01 --> M06[M06 Context Selection]
+        M07[M07 Act Part Pres] --> M09[M09 Style Choice]
+        M08[M08 Act Part Past] --> M09
+        M10[M10 Adv Participles] --> M11[M11 Multi-clause]
+        M11 --> M12[M12 Parentheticals]
+        M11 --> M13[M13 Emphasis]
+        M13 --> M14[M14 Connectors]
+        M15[M15 Register Intro] --> M16[M16 Formal/Informal]
+        M16 --> M17[M17 Business]
+        M17 --> M18[M18 Academic]
+        M18 --> M19[M19 Official]
+        M15 --> M22[M22 Literary]
+        M15 --> M24[M24 Colloquial]
+        M25[M25 Practice] --> M26[M26 Domain Vocab]
+    end
 
-B2.4 Biographies (builds on B2.3 historical context)
-└── M86-110 Cultural heroes knowledge
+    %% Phase B2.2: Phraseology
+    subgraph B2_2 [Phase B2.2: Phraseology]
+        M31[M31 Proverbs] --> M35[M35 Set Expr]
+        M35 --> M39[M39 Idioms]
+        M39 --> M45[M45 Synonyms]
+        M45 --> M57[M57 Adv Conj]
+    end
 
-B2.5 Capstone (integrates all)
-└── M111-125 Full B2 competence
+    %% Phase B2.3: History
+    subgraph B2_3 [Phase B2.3: History]
+        M61[M61 Kyivan Rus] --> M66[M66 Cossacks]
+        M66 --> M71[M71 Imperial Rule]
+        M71 --> M74[M74 Revolution]
+        M74 --> M78[M78 WWII]
+        M78 --> M82[M82 Independence]
+        M82 --> M85[M85 Modern War]
+    end
+
+    %% Phase B2.4: Biographies
+    subgraph B2_4 [Phase B2.4: Biographies]
+        M86[M86 Women] --> M99[M99 Men]
+        M66 --> M103[M103 Khmelnytsky]
+        M73 --> M100[M100 Shevchenko]
+        M85 --> M109[M109 Zaluzhnyi]
+    end
+
+    %% Connections
+    M30 --> M31
+    M60 --> M61
+    M14 --> M57
+    M25 --> M61
+```
 ```
 
 ---

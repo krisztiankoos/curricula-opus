@@ -1,0 +1,66 @@
+# GEMINI.md - Gemini Agent Context & Memory
+
+## Project Overview
+**Curricula Opus** (CO) is a language content factory generating Ukrainian language learning curricula.
+- **Target**: Ukrainian for English speakers (l2-uk-en).
+- **Philosophy**: "Theory-First, Content-Driven".
+- **Structure**: 6 Levels (A1, A2, B1, B2, C1, C2) aligned with Ukrainian State Standard 2024.
+
+## Gemini Memory Context
+
+### Strategic Decisions
+- **Pedagogy**:
+    - **A1-A2**: PPP (Present-Practice-Produce). Focus on clarity and building blocks.
+    - **B1+ Grammar**: TTT (Test-Teach-Test). Guided discovery from context.
+    - **B1+ Vocabulary/History**: **Narrative Arcs**. Vocabulary embedded in compelling stories (Content-Based Instruction).
+- **Richness**:
+    - "Content is King". Long, authentic texts are the primary driver of learning from B2+.
+    - **Audio**: Mandatory for all new vocabulary and key examples.
+    - **Phonetics**: IPA for all new vocabulary.
+    - **Culture**: Integration of folklore, history, and decolonization lens.
+    - **Phraseology**: Proverbs and idioms integrated from B1+.
+- **Production Support**:
+    - **Model Answers**: Mandatory for all writing/speaking production tasks (B2+) using `> [!model-answer]`.
+    - **Activity Density**: 8+ activities per module, 12+ items per activity.
+
+### Vocabulary Targets (Updated Dec 2025)
+| Level | Module Target | Cumulative Target | Note |
+|-------|---------------|-------------------|------|
+| **A1** | ~30 words | ~900 | Enriched for activity density |
+| **A2** | ~25-30 words | ~2,150 | Enriched |
+| **B1** | ~30-40 words | ~4,550 | Narrative-driven expansion |
+| **B2** | ~25 words | ~7,650 | Specialized domains |
+| **C1** | ~25 words | ~10,550 | Academic/Literary |
+| **C2** | ~25 words | ~12,550 | Native mastery |
+
+### User Preferences
+- **User**: Krisztian (Hungarian native).
+- **Grammar Preference**: "Declension Group" (structural) approach over simple ending rules.
+- **Goal**: Theory-first curriculum; Vibe app is a secondary practice tool.
+
+## Work Status
+- **A1 (01-30)**:
+    - Curriculum Plan: ✅ Updated & Aligned.
+    - Content: Modules 01-05 regenerated in `curriculum/l2-uk-en/a1/gemini/` with full richness.
+- **A2 (01-50)**:
+    - Curriculum Plan: ✅ Updated & Aligned.
+- **B1 (01-80)**:
+    - Curriculum Plan: ✅ Updated & Aligned (TTT/Narrative strategy).
+- **B2 (01-125)**:
+    - Curriculum Plan: ✅ Updated & Aligned (CBI strategy).
+- **C1 (01-115)**:
+    - Curriculum Plan: ✅ Updated & Aligned (Immersion & Analysis).
+- **C2 (01-80)**:
+    - Curriculum Plan: ✅ Updated & Aligned (Stylistic Perfection).
+
+## Critical Workflow Rules (Gemini)
+1. **Read Specs First**: Always read `{LEVEL}-CURRICULUM-PLAN.md` and `MODULE-RICHNESS-GUIDELINES-v2.md` before generating.
+2. **Audit Immediately**: After generating content, use `wc -w` (or equivalent logic) to verify Instructional Core word counts.
+3. **Narrative Vocabulary**: Use "Passive Vocabulary" freely in narratives for richness; restrict "Active Vocabulary" (drills) to the target list.
+4. **Standardized Activities**: Use Markdown types (`quiz`, `match-up`, `fill-in`) mapped from pedagogical concepts (`Production`, `Dialogue`).
+
+## File Structure Reference
+- **Curriculum Plans**: `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`
+- **Guidelines**: `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+- **Module Content**: `curriculum/l2-uk-en/{level}/`
+- **Skills**: `claude_extensions/skills/module-architect/SKILL.md`

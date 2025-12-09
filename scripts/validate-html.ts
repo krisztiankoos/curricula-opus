@@ -32,7 +32,8 @@ export async function validateFile(browser: Browser, filePath: string): Promise<
 
     const page = await browser.newPage();
 
-    // Capture console errors
+    // Capture console errors (Critical JS failures)
+    // We only care about explicit errors, not warnings.
     page.on('console', msg => {
         if (msg.type() === 'error') {
             errors.push(`Console Error: ${msg.text()}`);
@@ -143,7 +144,10 @@ export async function validateFile(browser: Browser, filePath: string): Promise<
                         errors.push(`Activity #${activity.id} (${activity.type}): Count Mismatch. Expected ${expectedCount} items, found ${actualCount}.`);
                     }
 
+                    // ---------------------------------------------------------
                     // Check for Ambiguous Gaps (Multiple gaps for single answer)
+                    // Rule: One gap (__) per question prompt.
+                    // ---------------------------------------------------------
                     activity.data.items?.forEach((item: any, i: number) => {
                         const prompt = item.prompt || item.sentence || '';
                         const gapMatches = prompt.match(/_{2,}/g);

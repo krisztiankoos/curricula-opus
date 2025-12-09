@@ -97,7 +97,13 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 ### 5. Grammatical Elegance (The Logic of Ukraine)
 - **Highlight "Why":** For complex grammar points (cases, aspect, motion verbs), actively explain the elegance and logical beauty of the Ukrainian system, using relatable analogies where possible.
 - **Case System:** Describe cases not just as endings, but as tools for expressing nuance and relationships.
-- **Verbal Aspect:** Explain aspect as the "soul" of verbs, showing how it sculpts meaning.
+### 6. Decolonization & Patriotism (The Truth of Ukraine)
+- **Bust Russian Myths:** Actively identify and dismantle common propaganda points.
+    - *Example:* "Russian and Ukrainian are brotherly languages" -> **Truth:** Ukrainian is closer to Polish/Belarusian; Russian has significant Finno-Ugric/Turkic substrata.
+    - *Example:* "Kyiv is the mother of Russian cities" -> **Truth:** Kyiv existed as a metropolis when Moscow was a swamp; Russia hijacked Kyivan Rus' history.
+    - *Example:* "Lenin created Ukraine" -> **Truth:** Ukraine has a distinct statehood tradition dating back to Rus', the Cossack Hetmanate, and the UPR (1917).
+- **Highlight Resistance:** When discussing language history, ALWAYS mention the Ems Ukaz (1876), Valuev Circular (1863), and the Executed Renaissance. Show that speaking Ukrainian was a revolutionary act.
+- **Unapologetic Tone:** Celebrate Ukrainian heroes, inventors, and artists without looking for Russian validation. Use the "Prosecutor's Voice" — present facts that indict the imperial narrative.
 
 ---
 

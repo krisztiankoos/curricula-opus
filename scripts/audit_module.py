@@ -166,14 +166,14 @@ def audit_module(file_path):
         print(f"❌ AUDIT FAILED: Tone Error. Found 'Kiev'. Use 'Kyiv' (Ukrainian transliteration).")
         sys.exit(1)
 
-    # Activity Structure: Fill-in Options
-    if level_code in ['A1', 'A2']:
-        for title, text in section_map.items():
-            if title.lower().startswith('fill-in'):
-                if '> [!options]' not in text:
-                    print(f"❌ AUDIT FAILED: Activity '{title}' missing mandatory > [!options] block.")
-                    print("  -> A1/A2 learners need explicit choices.")
-                    sys.exit(1)
+    # Activity Structure: Fill-in Options (Global Rule)
+    # Open-ended fill-ins are too ambiguous for digital app. Explicit options are required.
+    for title, text in section_map.items():
+        if title.lower().startswith('fill-in'):
+            if '> [!options]' not in text:
+                print(f"❌ AUDIT FAILED: Activity '{title}' missing mandatory > [!options] block.")
+                print("  -> ALL fill-in activities require explicit options/choices.")
+                sys.exit(1)
     
     # ------------------------------------------------------------
     # 3. Calculation & Logic

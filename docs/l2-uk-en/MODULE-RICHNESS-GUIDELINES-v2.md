@@ -1464,7 +1464,7 @@ Notice how we use "грати в" (play) with ball sports...
 ### 6. Fill-in Activity Standards (Strict)
 - **Placeholders:** ALWAYS use `___` (three underscores) for the blank. Never use `......` or `(____)`.
 - **No Hints:** NEVER put the hint in the sentence line (e.g., `(Bag)`). Hints belong in the `[!options]` block or as a `> [!hint]` callout if absolutely necessary.
-- **Mandatory Options:** For A1/A2 levels, ALL `fill-in` activities MUST be accompanied by a `> [!options]` block listing the choices. This prevents "guessing games" and improves the digital experience.
+- **Mandatory Options:** For ALL levels (A1-C2), ALL `fill-in` activities MUST be accompanied by a `> [!options]` block listing the choices. This prevents "guessing games" and improves the digital experience.
   ```markdown
   1. Це ___ (bag). -> WRONG (Hint in line)
   1. Це ___. -> CORRECT

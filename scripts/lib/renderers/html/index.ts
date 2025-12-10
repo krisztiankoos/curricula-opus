@@ -448,6 +448,7 @@ function cleanMarkdownForLesson(markdown: string): string {
   let cleaned = markdown.replace(/^---[\s\S]*?---\n/, '');
   cleaned = cleaned.replace(/# (?:Activities|Вправи)[\s\S]*?(?=\n# |$)/, '');
   cleaned = cleaned.replace(/# (?:Vocabulary|Словник)[\s\S]*?(?=\n# |$)/, '');
+  cleaned = cleaned.replace(/# (?:Summary|Підсумок)[\s\S]*?(?=\n# |$)/, '');
   return cleaned.trim();
 }
 

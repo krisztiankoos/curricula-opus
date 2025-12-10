@@ -113,14 +113,14 @@ You are the Lead Curriculum Architect for language learning modules. Apply rigor
 - **Fill-in Activities:**
   - **Placeholder:** MUST be `___` (three underscores).
   - **No Hints:** NEVER put `(Hint)` in the sentence line.
-  - **Mandatory Options:** ALL fill-ins (A1-C2) MUST have a `> [!options]` block.
 - **Anagram Activities:**
   - **Separator:** MUST use **SPACES** (e.g., `А Б В`). Never use slashes (`/`).
 - **Unjumble Activities:**
   - **Separator:** MUST use **SLASHES** (`/`) (e.g., `я / йду / додому`).
 - **Activity Hygiene:**
-  - **Checkboxes:** `- [ ]` (Must include space).
-  - **Audio:** `**Word** [🔊](...)` (Text first, then icon).
+  - **Checkboxes:** Use `- [ ]` format. For `quiz`, standard checkboxes are preferred, but `> [!options]` block is allowed for simple lists.
+- **Match-up:** Use `::` or `->` separator consistently.
+- **Fill-in:** Options block `> [!options]` AND Answer block `> [!answer]` are MANDATORY for all levels.
 - **Tone Check:**
   - **Sovereignty:** "Ukraine" (NEVER "The Ukraine"). "Kyiv" (NEVER "Kiev").
   - **Distinctness:** Do not treat Ukrainian as a variant of Russian. It is a distinct, older linguistic tradition.
@@ -286,10 +286,13 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
 4. **Vocabulary Strategy:**
    - Copy EXACT vocabulary from `{LEVEL}-CURRICULUM-PLAN.md`.
    - Minimize duplicates: Check if words already exist in `vocabulary.db` (conceptually).
-5. **Write CONTENT ONLY** (Instructional Core).
-   - **Focus:** Put 80% of effort into instructional core sections.
-   - **Narrative:** Must have "Soul" (specific settings, no generic "Student A").
-   - **Compliance:** Ensure Standard Competencies are explicitly taught.
+5. **Fill Module Skeleton (MANDATORY):**
+   - **Prerequisite:** Open `docs/l2-uk-en/MODULE-SKELETON.md`.
+   - **Action:** Copy the ENTIRE content of the skeleton into your new module file.
+   - **Requirement:** You MUST fill every section of the skeleton (`## Warm-up`, `## Presentation`, `## Story Time`, etc.).
+   - **Richness:** The skeleton forces you to write 750+ words. Do NOT delete sections.
+   - **Narrative:** "Story Time" must be 200+ words and have specific characters/settings.
+   - **Compliance:** Ensure Standard Competencies are explicitly taught in the "Presentation" section.
 6. **GRAMMAR VALIDATION:** Check your definitions of Families/Groups against `MODULE-RICHNESS-GUIDELINES-v2.md`.
 7. **Perform Richness & Soul Gate Audit:** Verify Core Word Count meets target (750+ to 2000+ depending on level). If FAIL, enrich content.
 8.  **Activity Density**
@@ -323,8 +326,8 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
     *   **Check:** Are options provided with `> [!options]`?
     *   **Check:** Is there absolutely NO YAML in the activities section?
     *   **Check:** NO parenthetical hints in prompt line (e.g. `(hint)`). Use clean underscores `___` only.
-13. **Final Check:** Verify activity counts and Standard Compliance.
-14. **Generate Output:**
+14. **Final Check:** Verify activity counts and Standard Compliance.
+15. **Generate Output:**
     *   Once the module passes all checks, generate the final artifacts:
     ```bash
     npm run generate l2-uk-en {level} {module_num}

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 789/750
+- **Words:** ✅ 792/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,7 +16,7 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **cultural insight: Eye Contact** | ✅ | 67 | Included in Core |
+| **cultural insight: Eye Contact** | ✅ | 70 | Included in Core |
 | **narrative: The Manager (Part 2)** | ✅ | 65 | Included in Core |
 | **match-up: Common Phrases** | 🎮 | 12 | Activity (12 items) |
 | **warm-up** | ✅ | 44 | Included in Core |

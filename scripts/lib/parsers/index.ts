@@ -33,6 +33,7 @@ export function parseModule(markdown: string, options: ParseOptions = {}): Parse
     moduleNum: frontmatter.module,
     languagePair: options.languagePair || 'l2-uk-en',
     imageMap: options.imageMap || new Map(),
+    activityCounters: new Map(),
   };
 
   // Parse vocabulary (do this early to populate imageMap if needed)
@@ -75,6 +76,7 @@ export function parseModuleWithContext(
     moduleNum: parsed.frontmatter.module,
     languagePair,
     imageMap: imageMap || new Map(),
+    activityCounters: new Map(),
   };
 
   return { parsed, ctx };

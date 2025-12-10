@@ -133,7 +133,7 @@ function parseInlineArray(str: string): string[] {
 function parseValue(value: string): string | number | boolean {
   // Remove quotes
   if ((value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))) {
+    (value.startsWith("'") && value.endsWith("'"))) {
     return value.slice(1, -1);
   }
 
@@ -160,7 +160,7 @@ function parseValue(value: string): string | number | boolean {
  */
 function validateFrontmatter(fm: Record<string, unknown>): void {
   // module and level are now derived from path, not required in frontmatter
-  const required = ['title', 'phase', 'duration', 'transliteration', 'tags', 'objectives'];
+  const required = ['title', 'phase', 'duration', 'transliteration', 'tags', 'objectives', 'pedagogy'];
 
   for (const field of required) {
     if (!(field in fm)) {

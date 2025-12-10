@@ -58,6 +58,7 @@
 2. **Audit Immediately**: After generating content, use `wc -w` (or equivalent logic) to verify Instructional Core word counts.
 3. **Narrative Vocabulary**: Use "Passive Vocabulary" freely in narratives for richness; restrict "Active Vocabulary" (drills) to the target list.
 4. **Standardized Activities**: Use Markdown types (`quiz`, `match-up`, `fill-in`) mapped from pedagogical concepts (`Production`, `Dialogue`).
+5. **Regenerate HTML**: Always regenerate HTML output immediately after fixing module markdown content to ensure fixes are live.
 
 ## File Structure Reference
 - **Curriculum Plans**: `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`

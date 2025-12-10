@@ -1,0 +1,30 @@
+# Audit Report: module-11.md
+**Phase:** A1.1 | **Level:** A1 | **Pedagogy:** PPP | **Target:** 750
+**Overall Status:** ✅ PASS
+
+## Gates
+- **Words:** ✅ 757/750
+- **Activities:** ✅ 8/8
+- **Density:** ✅ All > 12
+- **Unique_types:** ✅ 6/4 types
+- **Priority:** ✅ Priority types used
+- **Engagement:** ✅ 3/3
+- **Audio:** ✅ 45 links
+- **Structure:** ✅ Valid Structure
+- **Lint:** ✅ Clean Format
+
+## Section Audit
+| Section | Status | Count | Notes |
+|---|---|---|---|
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **warm-up** | ✅ | 187 | Included in Core |
+| **narrative: The Souvenir Hunt** | ✅ | 396 | Included in Core |
+| **presentation** | ✅ | 174 | Included in Core |
+| **match-up: Verb to Action** | 🎮 | 12 | Activity (12 items) |
+| **quiz: Gender Detective** | 🎮 | 12 | Activity (12 items) |
+| **fill-in: The Change** | 🎮 | 12 | Activity (12 items) |
+| **match-up: Phrase Building** | 🎮 | 12 | Activity (12 items) |
+| **true-false: Grammar Logic** | 🎮 | 12 | Activity (12 items) |
+| **anagram: Scramble** | 🎮 | 12 | Activity (12 items) |
+| **fill-in: At the Airport** | 🎮 | 12 | Activity (12 items) |
+| **unjumble: Sentence Builder** | 🎮 | 15 | Activity (15 items) |

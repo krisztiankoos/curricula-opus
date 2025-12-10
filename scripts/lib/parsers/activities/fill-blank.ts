@@ -48,7 +48,7 @@ export class FillBlankParser extends ActivityParser<FillBlankContent> {
         }
       }
 
-      const prompt = promptLines.join('\n').trim();
+      let prompt = promptLines.join('\n').trim();
       const answerBlock = answerLines.join('\n');
 
       // Parse answer from callouts
@@ -60,9 +60,10 @@ export class FillBlankParser extends ActivityParser<FillBlankContent> {
         ? optionsMatch[1].split('|').map(o => o.trim()).filter(Boolean)
         : undefined;
 
-      // Extract hints from blank pattern: ___ (hint)
-      const hintMatch = prompt.match(/___\s*\(([^)]+)\)/);
-      const hints = hintMatch ? [hintMatch[1]] : undefined;
+      // Strip hints from blank pattern: ___ (hint) -> ___
+      // We do NOT want to show hints in the final UI as per user request
+      prompt = prompt.replace(/___\s*\(([^)]+)\)/g, '___');
+      const hints = undefined; // Force hints to be undefined
 
       const item: FillBlankItem = {
         prompt,

@@ -48,13 +48,24 @@ export class QuizParser extends ActivityParser<QuizContent> {
         idx++;
       }
 
-      // Parse explanation from callout or legacy format
+      // If no checkbox options found, try to parse from > [!options] block
+      let structuredOptionsFound = false;
+      if (options.length === 0) {
+        const { options: calloutOptions } = this.parseAnswerBlock(optionsBlock);
+        if (calloutOptions && calloutOptions.length > 0) {
+          options.push(...calloutOptions);
+          structuredOptionsFound = true;
+        }
+      }
+
+      // Parse explanation from callout
       let explanation = '';
       const { explanation: calloutExp } = this.parseAnswerBlock(optionsBlock);
       if (calloutExp) {
         explanation = calloutExp;
-      } else {
+      } else if (!structuredOptionsFound) {
         // Legacy format: > explanation
+        // Only attempt if we didn't find structured options, to avoid matching the option values themselves
         const expMatch = optionsBlock.match(/>\s+([^[\n].+)$/m);
         if (expMatch) explanation = expMatch[1].trim();
       }

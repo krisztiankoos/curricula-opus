@@ -13,7 +13,7 @@ import * as showdown from 'showdown';
 // Callout Block Types
 // =============================================================================
 
-export type CalloutType = 'answer' | 'explanation' | 'alt' | 'note' | 'tip' | 'warning';
+export type CalloutType = 'answer' | 'explanation' | 'alt' | 'note' | 'tip' | 'warning' | 'options' | 'option';
 
 export interface CalloutBlock {
   type: CalloutType;
@@ -220,34 +220,98 @@ export function markdownToHtml(markdown: string, options?: MarkdownConverterOpti
  */
 export function parseCallouts(markdown: string): CalloutBlock[] {
   const callouts: CalloutBlock[] = [];
-  // Allow > or - or * prefix (blockquote or list item)
-  const regex = /^\s*(?:>|-|\*)\s*\[!(\w+)\]\s*(.+)$/gm;
+  const lines = markdown.split('\n');
 
-  let match;
-  while ((match = regex.exec(markdown)) !== null) {
+  let currentBlock: { type: CalloutType; content: string[] } | null = null;
+
+  // Regex to detect start of a callout: > [!type] content?
+  // We need to match the type and optional initial content
+  const startRegex = /^\s*(?:>|-|\*)\s*\[!(\w+)\](?:\s+(.+))?$/;
+  // Regex to detect continuation lines: > content
+  const continuationRegex = /^\s*(?:>|-|\*)\s*(.*?)$/;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const startMatch = line.match(startRegex);
+
+    if (startMatch) {
+      // If we were parsing a block, save it
+      if (currentBlock) {
+        callouts.push({
+          type: currentBlock.type,
+          content: currentBlock.content.join('\n').trim()
+        });
+      }
+
+      // Start new block
+      const type = startMatch[1].toLowerCase() as CalloutType;
+      const initialContent = startMatch[2] ? [startMatch[2]] : [];
+      currentBlock = { type, content: initialContent };
+      continue;
+    }
+
+    // Check for continuation if we are in a block
+    if (currentBlock) {
+      const contMatch = line.match(continuationRegex);
+      if (contMatch) {
+        // It's a quoted line. Is it a new callout? No, we checked startRegex first.
+        // Check if it's just an empty quote line or content
+        const content = contMatch[1];
+        // If it looks like a new list item or something that breaks headers, maybe stop?
+        // But for now, assume all contiguous > lines belong to the block.
+        currentBlock.content.push(content);
+      } else {
+        // Non-quoted line breaks the block
+        callouts.push({
+          type: currentBlock.type,
+          content: currentBlock.content.join('\n').trim()
+        });
+        currentBlock = null;
+      }
+    }
+  }
+
+  // Push final block
+  if (currentBlock) {
     callouts.push({
-      type: match[1].toLowerCase() as CalloutType,
-      content: match[2].trim(),
+      type: currentBlock.type,
+      content: currentBlock.content.join('\n').trim()
     });
   }
 
   return callouts;
 }
 
+
+
+
 /**
  * Extract answer and explanation from a block of text
  */
-export function extractAnswer(text: string): { answer: string; explanation?: string; alternatives?: string[] } {
+export function extractAnswer(text: string): {
+  answer: string;
+  explanation?: string;
+  alternatives?: string[];
+  options?: string[];
+} {
   const callouts = parseCallouts(text);
 
   const answerCallout = callouts.find(c => c.type === 'answer');
   const explanationCallout = callouts.find(c => c.type === 'explanation');
   const altCallouts = callouts.filter(c => c.type === 'alt');
+  const optionsCallout = callouts.find(c => c.type === 'options' || (c as any).type === 'option'); // Handle both singular and plural
+
+  let options: string[] | undefined;
+  if (optionsCallout) {
+    // Split by commas, pipe, or newlines
+    options = optionsCallout.content.split(/[,|\n]/).map(o => o.trim()).filter(o => o.length > 0);
+  }
 
   return {
     answer: answerCallout?.content || '',
     explanation: explanationCallout?.content,
     alternatives: altCallouts.length > 0 ? altCallouts.map(c => c.content) : undefined,
+    options,
   };
 }
 

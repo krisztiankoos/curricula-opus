@@ -39,7 +39,7 @@ export function parseVocabulary(body: string, moduleNum: number): {
 
   // Find main vocabulary section (new words)
   const vocabMatch = body.match(
-    /# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок|Summary|Review Vocabulary)|$)/
+    /# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|\n# (?:Letter Groups|Підсумок|Summary|Review Vocabulary|Activities|Вправи)|$)/
   );
 
   if (vocabMatch) {

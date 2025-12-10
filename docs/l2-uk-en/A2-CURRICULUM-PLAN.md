@@ -15,6 +15,20 @@ For detailed quality metrics on instructional core word counts, immersion percen
 
 ---
 
+## 🎯 A2 Strategy & Progression Gradient
+
+A2 is the "Bridge" level where learners are no longer beginners but not yet independent. To manage difficulty, we use a graduating methodology mix:
+
+| Phase | Modules | Style Mix | Focus | Safety |
+| :--- | :--- | :--- | :--- | :--- |
+| **A2.1** | 01-20 | **100% PPP** | Core Case Endings | Maximized scaffolding. No surprises. |
+| **A2.2** | 21-40 | **80% PPP / 20% Simple Narrative** | Aspect Drills + Short Readings | Controlled comparison. |
+| **A2.3** | 41-50 | **Hybrid (Pre-B1 Runway)** | Complex Sentences / Longer Texts | Narrative density increases to prepare for B1. |
+
+**Key Constraint:** A2 modules strictly target **~25 new words per module** (1,250 total for level) to prevent cognitive overload while grappling with the 7-case system.
+
+---
+
 ## Ukrainian State Standard 2024 Alignment
 
 > **Source:** Українська мова як іноземна: рівні загального володіння та діагностика (2024)

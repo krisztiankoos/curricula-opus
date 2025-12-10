@@ -26,11 +26,11 @@ export class MatchUpParser extends ActivityParser<MatchUpContent> {
   protected parseContent(content: string, ctx: ParseContext): MatchUpContent {
     const pairs: MatchPair[] = [];
 
-    // Try bullet list format first: "- left :: right"
-    const bulletMatches = [...content.matchAll(/^-\s+(.+?)\s*::\s*(.+)$/gm)];
+    // Try bullet list format: "- left :: right" or "1. left -> right"
+    const listMatches = [...content.matchAll(/^(?:-|(?:\d+\.))\s+(.+?)\s*(?:::|->)\s*(.+)$/gm)];
 
-    if (bulletMatches.length > 0) {
-      for (const match of bulletMatches) {
+    if (listMatches.length > 0) {
+      for (const match of listMatches) {
         const left = match[1].trim();
         const right = match[2].trim();
 

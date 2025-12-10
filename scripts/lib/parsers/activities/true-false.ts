@@ -67,7 +67,10 @@ export class TrueFalseParser extends ActivityParser<TrueFalseContent> {
         }
       }
 
-      const statement = statementLines.join(' ').trim();
+      let statement = statementLines.join(' ').trim();
+
+      // Clean up markdown checkbox artifacts (e.g., "- [ ] True") that might be in the statement line
+      statement = statement.replace(/\s*-\s*\[\s*[xX ]?\s*\].*$/g, '').trim();
       const answerBlock = answerLines.join('\n');
 
       // Parse answer from callouts

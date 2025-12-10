@@ -1464,12 +1464,13 @@ Notice how we use "грати в" (play) with ball sports...
 ### 6. Fill-in Activity Standards (Strict)
 - **Placeholders:** ALWAYS use `___` (three underscores) for the blank. Never use `......` or `(____)`.
 - **No Hints:** NEVER put the hint in the sentence line (e.g., `(Bag)`). Hints belong in the `[!options]` block or as a `> [!hint]` callout if absolutely necessary.
-- **Mandatory Options:** For ALL levels (A1-C2), ALL `fill-in` activities MUST be accompanied by a `> [!options]` block listing the choices. This prevents "guessing games" and improves the digital experience.
+- **Mandatory Answer Key:** ALL `fill-in` items MUST have a `> [!answer]` block. This is the source of truth for validation.
+- **Mandatory Options:** For ALL levels (A1-C2), ALL `fill-in` activities MUST be accompanied by a `> [!options]` block listing the choices.
   ```markdown
-  1. Це ___ (bag). -> WRONG (Hint in line)
-  1. Це ___. -> CORRECT
-  > [!options]
-  > сумку, сумки, сумці
+  1. Це ___ (bag).
+     > [!answer] сумку
+     > [!options]
+     > сумку, сумки, сумці
   ```
 
 ### 7. Anagram Activity Standards (Strict)
@@ -1477,8 +1478,51 @@ Notice how we use "грати в" (play) with ball sports...
 - **Forbidden:** Do NOT use slashes (`/`), commas, or hyphens.
 - **Format:** `L E T T E R S`
   ```markdown
-  1. К І Т
-     > [!answer] КІТ
+  1. К О Р О Б К А
+     > [!answer] КОРОБКА
+  ```
+
+### 8. Quiz Activity Standards
+- **Format:** Use standard Markdown checkbox list.
+- **Alternative:** For simple options (e.g. A/B/C), use `> [!options]` block.
+- **Example:**
+  ```markdown
+  1. Question?
+     - [ ] Option A
+     - [x] Correct Option B
+     - [ ] Option C
+     > [!explanation] Why B is correct.
+  ```
+
+### 2. Match-up (`match-up`)
+- **Purpose**: Mapping synonyms, antonyms, translations, or logical pairs.
+- **Rule**: STRICT 1-to-1 mapping. For Many-to-One (e.g. 5 numbers -> 1 Case), use `group-sort` instead.
+- **Format**: `1. Left Item -> Right Item`
+- **Example**:
+  ```markdown
+  ## match-up: Antonyms
+  > Find the opposites.
+
+  1. Big -> Small
+  2. Hot -> Cold
+  ```
+
+### 3. Group Sort (`group-sort`)
+- **Purpose**: Categorizing items into buckets. Best for Genders, Cases, conjugation groups.
+- **Rule**: Use this for Many-to-One mappings.
+- **Format**: `### Group Name` followed by bullet list.
+- **Example**:
+  ```markdown
+  ## group-sort: Genders
+  > Sort words by gender.
+
+  ### Masculine
+  - House
+  - Dog
+
+  ### Feminine
+  - Cat
+  - Mouse
   ```
 
 ### 8. Unjumble Activity Standards (Strict)

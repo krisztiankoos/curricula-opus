@@ -85,7 +85,7 @@ export function parseActivities(body: string, ctx: ParseContext): {
 
   // Find activities section
   const activitiesMatch = body.match(
-    /# (?:Activities|Вправи)\n([\s\S]*?)(?=\n---|\n# (?:Vocabulary|Словник)|$)/
+    /# (?:Activities|Вправи)[ \t]*\n([\s\S]*?)(?=\n---|\n# (?:Vocabulary|Словник|Summary|Підсумок)|$)/
   );
 
   if (!activitiesMatch) {

@@ -108,7 +108,18 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
    */
   protected generateId(ctx: ParseContext): string {
     const typeSlug = this.type.replace(/-/g, '');
-    return `act-${ctx.level.toLowerCase()}-${ctx.moduleNum}-${typeSlug}`;
+
+    // Initialize map if missing (for safety)
+    if (!ctx.activityCounters) ctx.activityCounters = new Map();
+
+    // Get current count for this type
+    const count = ctx.activityCounters.get(typeSlug) || 0;
+
+    // Increment for next time
+    ctx.activityCounters.set(typeSlug, count + 1);
+
+    // Return unique ID: act-a1-23-quiz-0
+    return `act-${ctx.level.toLowerCase()}-${ctx.moduleNum}-${typeSlug}-${count}`;
   }
 
   /**
@@ -121,6 +132,7 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
     answer: string;
     explanation?: string;
     alternatives?: string[];
+    options?: string[];
   } {
     return extractAnswer(text);
   }

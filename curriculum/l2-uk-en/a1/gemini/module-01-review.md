@@ -1,5 +1,5 @@
 # Audit Report: module-01.md
-**Phase:** A1.1 | **Level:** A1 | **Target:** 750
+**Phase:** A1.1 | **Level:** A1 | **Pedagogy:** PPP | **Target:** 750
 **Overall Status:** ✅ PASS
 
 ## Gates

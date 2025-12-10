@@ -595,7 +595,7 @@ async function main() {
         const curriculumIndex = generateCurriculumIndex(allLevelCounts, langPair);
         await writeHTML(join(OUTPUT_DIR, 'html', langPair, 'index.html'), curriculumIndex);
 
-        const langName = langPair === 'l2-uk-en' ? 'Ukrainian' : langPair;
+        const langName = langPair === 'l2-uk-en' ? 'Ukrainian (for English Speakers)' : langPair;
         allCurricula.push({
           langPair,
           name: langName,

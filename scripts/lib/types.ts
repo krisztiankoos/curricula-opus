@@ -37,7 +37,7 @@ export interface Frontmatter {
   objectives: string[];
   objectivesUk?: string[];
   grammar?: string[];
-  pedagogy?: 'PPP' | 'TTT' | 'Narrative' | 'CLIL';
+  pedagogy: 'PPP' | 'TTT' | 'Narrative' | 'CLIL';
 }
 
 // =============================================================================
@@ -269,6 +269,7 @@ export interface ParseContext {
   moduleNum: number;
   imageMap: Map<string, string>;
   languagePair: string;
+  activityCounters: Map<string, number>;
 }
 
 // =============================================================================

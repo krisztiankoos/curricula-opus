@@ -52,9 +52,10 @@ def audit_module(file_path):
     required_metadata = [
         ('duration', r'duration:'),
         ('transliteration', r'transliteration:'),
-        ('tags', r'tags:\s*\['),
+        ('tags', r'tags:'),
         ('objectives', r'objectives:'),
-        ('grammar', r'grammar:')
+        ('grammar', r'grammar:'),
+        ('pedagogy', r'pedagogy:')
     ]
     
     missing_meta = []
@@ -82,6 +83,7 @@ def audit_module(file_path):
             'min_activities': 8,
             'min_items_per_activity': 12,
             'min_types_unique': 4,
+            'min_vocab': 30,
             'priority_types': {'fill-in', 'match-up', 'anagram', 'unjumble', 'quiz'}
         },
         'A2': {
@@ -89,6 +91,7 @@ def audit_module(file_path):
             'min_activities': 10,
             'min_items_per_activity': 12,
             'min_types_unique': 4,
+            'min_vocab': 25,
             'priority_types': {'error-correction', 'unjumble'}
         },
         'B1': {
@@ -96,6 +99,7 @@ def audit_module(file_path):
             'min_activities': 12,
             'min_items_per_activity': 14,
             'min_types_unique': 4,
+            'min_vocab': 30,
             'priority_types': {'fill-in', 'unjumble', 'error-correction'}
         },
         'B2': {
@@ -103,6 +107,7 @@ def audit_module(file_path):
             'min_activities': 14,
             'min_items_per_activity': 16,
             'min_types_unique': 4,
+            'min_vocab': 25,
             'priority_types': {'fill-in', 'unjumble', 'error-correction'}
         },
         'C1': {
@@ -110,6 +115,7 @@ def audit_module(file_path):
             'min_activities': 16,
             'min_items_per_activity': 18,
             'min_types_unique': 4,
+            'min_vocab': 25,
             'priority_types': {'fill-in', 'unjumble', 'error-correction'}
         },
         'C2': {
@@ -117,6 +123,7 @@ def audit_module(file_path):
             'min_activities': 16,
             'min_items_per_activity': 18,
             'min_types_unique': 4,
+            'min_vocab': 25,
             'priority_types': {'fill-in', 'unjumble', 'error-correction'}
         }
     }
@@ -128,6 +135,7 @@ def audit_module(file_path):
     
     config = LEVEL_CONFIG.get(level_code, LEVEL_CONFIG['A1'])
     target = config['target_words']
+    vocab_target = config.get('min_vocab', 25)
 
     # Extract Pedagogy (Regex fallback since PyYAML is missing)
     pedagogy = "Not Specified"
@@ -182,7 +190,7 @@ def audit_module(file_path):
     # --- 3. Filtering and Analysis ---
     
     # Keywords
-    core_keywords = ["warm-up", "presentation", "introduction", "narrative", "context", "diagnostic", "cultural", "culture", "story", "dialogue"]
+    core_keywords = ["warm-up", "presentation", "introduction", "narrative", "context", "diagnostic", "cultural", "culture", "story", "dialogue", "reading", "deep dive", "riddle", "insight"]
     activity_keywords_list = ["match-up", "gap-fill", "quiz", "true-false", "group-sort", "unjumble", "transform", "fill-in", "error-correction", "anagram"]
     exclude_keywords = ["activities", "activity", "practice", "production", "summary", "vocabulary", "check"]
     
@@ -195,10 +203,10 @@ def audit_module(file_path):
     
     # Regex metrics
     # Engagement: Count inclusive of both Legacy Emojis AND Standard Callouts
-    engagement_pattern = re.compile(r'(>\s*[💡⚡🎬🎭🔗🌍🎁🗣️🏠🧭🚌🚇🎟️📱🕵️🌤️🌦️🎱🔮🇺🇦🕰️❓🛠️💂🥪🍺🛍️🏫🏥💊👵🔬🎨🔄📅🍃❄️🚂⏳📚🍲🥣🥗🥙🥚🥛🧩⚠️🛑])|(>\s*\[!(note|tip|warning|caution|important)\])')
+    engagement_pattern = re.compile(r'(>\s*[💡⚡🎬🎭🔗🌍🎁🗣️🏠🧭🚌🚇🎟️📱🕵️🌤️🌦️🎱🔮🇺🇦🕰️❓🛠️💂🥪🍺🛍️🏫🏥💊👵🔬🎨🔄📅🍃❄️🚂⏳📚🍲🥣🥗🥙🥚🥛🧩⚠️🛑])|(>\s*\[!(note|tip|warning|caution|important|cultural)\])')
     engagement_count = len(engagement_pattern.findall(content))
     
-    audio_pattern = re.compile(r'\[🔊\]\(audio_.*?\)')
+    audio_pattern = re.compile(r'\[🔊\]\(.*?\)')
     audio_count = len(audio_pattern.findall(content))
     
     ipa_pattern = re.compile(r'\|.*/.*?/.*\|') 
@@ -337,6 +345,8 @@ def audit_module(file_path):
     # --- 4. Result Gates ---
     results = {}
     has_critical_failure = False
+    print("DEBUG: Starting Gates Check...")
+
 
     # Word Count
     if total_words >= target:
@@ -344,6 +354,7 @@ def audit_module(file_path):
     else:
         results['words'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{total_words}/{target}"}
         has_critical_failure = True
+        print("DEBUG: Failed at Word Count")
 
     # Activity Count
     act_target = config['min_activities']
@@ -352,6 +363,7 @@ def audit_module(file_path):
     else:
         results['activities'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{activity_count}/{act_target}"}
         has_critical_failure = True
+        print("DEBUG: Failed at Activity Count")
 
     # Density
     failed_density = total_activities - valid_density_count
@@ -361,6 +373,7 @@ def audit_module(file_path):
     else:
         results['density'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{failed_density} < {dens_threshold}"}
         has_critical_failure = True
+        print("DEBUG: Failed at Density")
 
     # Unique Types
     unique_types = set(found_activity_types)
@@ -370,6 +383,7 @@ def audit_module(file_path):
     else:
         results['unique_types'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{len(unique_types)}/{type_target} types"}
         has_critical_failure = True
+        print("DEBUG: Failed at Unique Types")
         
     # Priority Check
     priority_intersection = unique_types.intersection(config['priority_types'])
@@ -378,6 +392,7 @@ def audit_module(file_path):
     else:
         results['priority'] = {'status': 'FAIL', 'icon': '❌', 'msg': "No priority types"}
         has_critical_failure = True
+        print("DEBUG: Failed at Priority")
 
     # Engagement
     eng_target = 3
@@ -386,6 +401,7 @@ def audit_module(file_path):
     else:
         results['engagement'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{engagement_count}/{eng_target}"}
         has_critical_failure = True
+        print("DEBUG: Failed at Engagement")
 
     # Audio
     if audio_count > 0:
@@ -393,6 +409,7 @@ def audit_module(file_path):
     else:
         results['audio'] = {'status': 'FAIL', 'icon': '❌', 'msg': "No audio"}
         has_critical_failure = True
+        print("DEBUG: Failed at Audio")
 
     # Immersion
     immersion_score = calculate_immersion(core_text_for_immersion)
@@ -406,13 +423,51 @@ def audit_module(file_path):
     else:
          results['structure'] = {'status': 'FAIL', 'icon': '❌', 'msg': "Missing Sections"}
          has_critical_failure = True
+         print("DEBUG: Failed at Structure (Sections)")
+
+    # Define lines_raw early for Linting and Vocab check
+    lines_raw = content.split('\n')
+
+    # Vocabulary Count Check
+    vocab_count = 0
+    in_vocab = False
+    for line in lines_raw:
+        if re.match(r'^#+\s+(Vocabulary|Словник)', line.strip(), re.IGNORECASE):
+            in_vocab = True
+            continue
+        if in_vocab and re.match(r'^#+', line.strip()):
+            in_vocab = False
+        
+        if in_vocab and line.strip().startswith('|') and '---' not in line:
+            # Check if it's a data row (not header)
+            cols = line.count('|')
+            if cols >= 2:
+                # Naive heuristic: If it has pipes, it's a row.
+                # We assume 1st row is header checking above or by default.
+                pass
+    
+    # Better Regex approach for Vocab Count to avoid state machine complexity issues
+    vocab_section_match = re.search(r'(#+\s+(Vocabulary|Словник).*?)(?=\n#+|$)', content, re.DOTALL | re.IGNORECASE)
+    if vocab_section_match:
+        vocab_text = vocab_section_match.group(1)
+        # Count rows that start with | and don't contain ---
+        v_rows = len([l for l in vocab_text.split('\n') if l.strip().startswith('|') and '---' not in l])
+        # Subtract header
+        vocab_count = max(0, v_rows - 1)
+    
+    if vocab_count >= vocab_target:
+        results['vocab'] = {'status': 'PASS', 'icon': '✅', 'msg': f"{vocab_count}/{vocab_target}"}
+    else:
+        results['vocab'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{vocab_count} < {vocab_target}"}
+        has_critical_failure = True
+        print("DEBUG: Failed at Vocab Count")
 
     # --- Markdown Linting (Integrated) ---
     lint_errors = []
     in_activities = False
     current_activity_type = None
+    fill_in_needs_answer = False
 
-    lines_raw = content.split('\n')
     for i, line in enumerate(lines_raw):
         line_num = i + 1
         stripped = line.strip()
@@ -423,6 +478,11 @@ def audit_module(file_path):
             
         # Track Activity Type
         if in_activities and stripped.startswith('## '):
+            # Check if previous fill-in was dangling
+            if fill_in_needs_answer:
+                 lint_errors.append(f"Line {line_num}: Previous Fill-in item missing '> [!answer]'.")
+                 fill_in_needs_answer = False
+
             parts = stripped.split(':')
             if len(parts) > 1:
                 # ## match-up: Title -> match-up
@@ -445,16 +505,35 @@ def audit_module(file_path):
         if "**Answer:**" in stripped or "**Option:**" in stripped:
              lint_errors.append(f"Line {line_num}: Old format detected. Use '> [!answer]'.")
 
-        # 4. Audio Link Check
-        if re.search(r'\[🔊\]\(audio_[^)]+\)\s*\*\*', stripped):
-             lint_errors.append(f"Line {line_num}: Invalid Audio Link. Must be '**Word** [🔊](link)', not '[🔊](link) **Word**'.")
+        # 4. Audio Link Check (Strict Vocab Table)
+        if '|' in stripped and '[🔊]' in stripped:
+            parts = stripped.strip().split('|')
+            # Expecting format: | uk | ipa | en | audio | (length 6 with empty start/end)
+            if len(parts) >= 5:
+                audio_cell = parts[-2].strip()  # Last meaningful column
+                # Regex: Must be exactly [🔊](link) with optional spaces, nothing else.
+                if '[🔊]' in audio_cell:
+                     if not re.match(r'^\[🔊\]\(audio_[a-zA-Z0-9_\-]+\)$', audio_cell):
+                          lint_errors.append(f"Line {line_num}: Vocab Audio Error. Cell '{audio_cell}' must contain ONLY '[🔊](audio_...)'. No text, no bolding.")
+
+        # 4b. Supported Activity Check
+        VALID_ACTIVITY_TYPES = ["match-up", "gap-fill", "quiz", "true-false", "group-sort", "unjumble", "fill-in", "error-correction", "anagram"]
+        if current_activity_type and current_activity_type not in VALID_ACTIVITY_TYPES:
+             lint_errors.append(f"Line {line_num}: Invalid Activity Type '{current_activity_type}'. Supported: {', '.join(VALID_ACTIVITY_TYPES)}.")
 
         # 5. Strict Fill-In Check
         # Rule: Every numbered item in a fill-in activity MUST contain '___'
         if current_activity_type == 'fill-in':
             if re.match(r'^\d+\.', stripped):
+                if fill_in_needs_answer:
+                     lint_errors.append(f"Line {line_num}: Previous Fill-in item missing '> [!answer]'.")
+                fill_in_needs_answer = True
+
                 if '___' not in stripped:
                     lint_errors.append(f"Line {line_num}: Fill-in item missing '___' placeholder. Input field will not render.")
+            
+            if '> [!answer]' in stripped:
+                fill_in_needs_answer = False
 
         # 6. Strict True-False/Explanation Check
         # Rule: Explanations should not contain [!answer] callout artifacts
@@ -466,30 +545,69 @@ def audit_module(file_path):
             if not re.match(r'- \[[ xX]\]', stripped):
                  lint_errors.append(f"Line {line_num}: Invalid Checkbox format. Use '- [ ]' or '- [x]'.")
 
+        # 8. AI Monologue / Slop Check
+        # Keywords that suggest the AI is talking to itself or the user in the content body
+        monologue_patterns = [
+            r"Let's say",
+            r"context suggests",
+            r"Usually '.*' here",
+            r'\bAI:',
+            r'printed your printing'
+        ]
+        for pat in monologue_patterns:
+            if re.search(pat, stripped, re.IGNORECASE):
+                lint_errors.append(f"Line {line_num}: Potential AI Monologue detected ('{pat}'). Please remove.")
+
+        # 9. Audio Artifact Check (Global)
+        # We only allow 'audio_' if it is inside (audio_...) inside a Markdown link or [🔊]
+        # But 'audio_' appearing in plain text usually means a regex failure.
+        # We strip out valid audio links first, then check if 'audio_' remains.
+        temp_line = re.sub(r'\(audio_[a-zA-Z0-9_\-]+\)', '', stripped)
+        if 'audio_' in temp_line:
+             lint_errors.append(f"Line {line_num}: 'audio_' detected in text body. Likely a regex replace error.")
+
+        # 10. Empty Header Check (Lonely #)
+        if re.match(r'^#+\s*$', stripped):
+            lint_errors.append(f"Line {line_num}: Empty Header detected (Lonely '#'). Remove or add title.")
+
+        # 11. Strict True/False Check (No Hints/Explanations)
+        if current_activity_type == 'true-false':
+            # Ban explicit explanation callouts
+            if '> [!explanation]' in stripped:
+                lint_errors.append(f"Line {line_num}: T/F Activity contains '[!explanation]'. Remove all hints/solutions.")
+            # Ban plain blockquote hints (heuristically)
+            # We allow the main instruction which usually asks "Is this...?"
+            elif stripped.startswith('> ') and not any(x in stripped for x in ['Is this', 'True', 'False', 'Correct', 'logic', 'agreement']):
+                 lint_errors.append(f"Line {line_num}: T/F Activity contains blockquote hint '{stripped}'. Remove hints.")
+
     # 5. Structural Section Check (Summary & Vocabulary)
     lines = content.split('\n')
-    if not any(re.match(r'^#\s+(Summary|Підсумок)', l, re.IGNORECASE) for l in lines):
+    if not any(re.match(r'^#+\s+(Summary|Підсумок)', l, re.IGNORECASE) for l in lines):
         results['structure'] = {'status': 'FAIL', 'icon': '❌', 'msg': "Missing '# Summary'"}
         has_critical_failure = True
-    elif not any(re.match(r'^#\s+(Vocabulary|Словник)', l, re.IGNORECASE) for l in lines):
+        print("DEBUG: Failed at Structure (Missing Summary)")
+    elif not any(re.match(r'^#+\s+(Vocabulary|Словник)', l, re.IGNORECASE) for l in lines):
         results['structure'] = {'status': 'FAIL', 'icon': '❌', 'msg': "Missing '# Vocabulary'"}
         has_critical_failure = True
+        print("DEBUG: Failed at Structure (Missing Vocabulary)")
     # Check for Vocab Table if Vocabulary exists
-    elif not any('| Word |' in l or '| Слово |' in l for l in lines):
+    elif not any('| Word |' in l or '| Слово |' in l or '| Ukrainian |' in l for l in lines):
         results['structure'] = {'status': 'FAIL', 'icon': '❌', 'msg': "Missing Vocab Table"}
         has_critical_failure = True
+        print("DEBUG: Failed at Structure (Missing Table)")
     else:
         results['structure'] = {'status': 'PASS', 'icon': '✅', 'msg': "Valid Structure"}
 
     if lint_errors:
         results['lint'] = {'status': 'FAIL', 'icon': '❌', 'msg': f"{len(lint_errors)} Format Errors"}
         has_critical_failure = True
+        print("DEBUG: Failed at Lint Errors")
     else:
         results['lint'] = {'status': 'PASS', 'icon': '✅', 'msg': "Clean Format"}
 
     # Output
     print(f"\n--- STRICT GATES (Level {level_code}) ---")
-    keys_order = ['words', 'activities', 'density', 'unique_types', 'priority', 'engagement', 'audio', 'structure', 'lint']
+    keys_order = ['words', 'activities', 'density', 'unique_types', 'priority', 'engagement', 'audio', 'vocab', 'structure', 'lint']
     for k in keys_order:
         r = results.get(k)
         if r:

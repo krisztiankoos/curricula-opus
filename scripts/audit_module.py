@@ -149,6 +149,36 @@ def audit_module(file_path):
         text = sections[i+1]
         section_map[title] = text
 
+    # --- 2b. Strict Content & Tone Validation (New Phase) ---
+    
+    # Tone: Sovereignty Check
+    if re.search(r'\bThe\s+Ukraine\b', content, re.IGNORECASE):
+        # Allow if it's being corrected (e.g. "not The Ukraine", "The Ukraine is incorrect")
+        is_correction = re.search(r'(not|incorrect|offensive|never|avoid)\s+.*?\bThe\s+Ukraine\b', content, re.IGNORECASE) or \
+                        re.search(r'\bThe\s+Ukraine\b.*?\s+(is\s+incorrect|is\s+offensive)', content, re.IGNORECASE)
+        
+        if not is_correction:
+            print(f"❌ AUDIT FAILED: Tone Error. Found 'The Ukraine'. Use 'Ukraine' (sovereign nation).")
+            sys.exit(1)
+        
+    if re.search(r'\bKiev\b', content) and not re.search(r'not\s+Kiev', content, re.IGNORECASE) and not re.search(r'Russian', content, re.IGNORECASE):
+        # We allow 'Kiev' if it's in a 'not Kiev' or 'Russian' context (e.g. "Russian uses Kiev")
+        print(f"❌ AUDIT FAILED: Tone Error. Found 'Kiev'. Use 'Kyiv' (Ukrainian transliteration).")
+        sys.exit(1)
+
+    # Activity Structure: Fill-in Options
+    if level_code in ['A1', 'A2']:
+        for title, text in section_map.items():
+            if title.lower().startswith('fill-in'):
+                if '> [!options]' not in text:
+                    print(f"❌ AUDIT FAILED: Activity '{title}' missing mandatory > [!options] block.")
+                    print("  -> A1/A2 learners need explicit choices.")
+                    sys.exit(1)
+    
+    # ------------------------------------------------------------
+    # 3. Calculation & Logic
+    # ------------------------------------------------------------
+
     # --- 3. Filtering and Analysis ---
     
     # Keywords

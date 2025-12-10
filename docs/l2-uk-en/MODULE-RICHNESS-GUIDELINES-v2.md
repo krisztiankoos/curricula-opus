@@ -1461,6 +1461,24 @@ Notice how we use "грати в" (play) with ball sports...
 | C1 | 115 | Academic discourse, specialized topics |
 | C2 | 80 | Native-level complexity, professional specialization |
 
+### 6. Fill-in Activity Standards (Strict)
+- **Placeholders:** ALWAYS use `___` (three underscores) for the blank. Never use `......` or `(____)`.
+- **No Hints:** NEVER put the hint in the sentence line (e.g., `(Bag)`). Hints belong in the `[!options]` block or as a `> [!hint]` callout if absolutely necessary.
+- **Mandatory Options:** For A1/A2 levels, ALL `fill-in` activities MUST be accompanied by a `> [!options]` block listing the choices. This prevents "guessing games" and improves the digital experience.
+  ```markdown
+  1. Це ___ (bag). -> WRONG (Hint in line)
+  1. Це ___. -> CORRECT
+  > [!options]
+  > сумку, сумки, сумці
+  ```
+
+### 7. Cultural & Political Tone (The "Vibe" Check)
+- **Sovereignty First:** Ukraine is a distinct, sovereign European nation. Avoid any framing that implies it is a "borderland" or "region".
+  - **YES:** "Ukraine", "Kyiv", "In Ukraine".
+  - **NO:** "The Ukraine", "Kiev", "In the Ukraine".
+- **Myth Busting:** Actively dismantle misconceptions (e.g., "Ukrainian is a dialect of Russian"). Frame Ukrainian as the primary, ancient, and rich language it is.
+- **De-Russification:** Avoid using Russian reference points unless explicitly contrasting False Friends. Do not assume the student knows Russian.
+
 ### Quality Standards
 
 1. **Grammar Accuracy**: All Ukrainian must be grammatically correct

@@ -82,6 +82,7 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 
 ### 2. Audio Integration (The Voice of Ukraine)
 - **Mandatory Audio:** All new vocabulary, example sentences, key phrases, and dialogues MUST be accompanied by native speaker audio. Placeholder links can be used if actual audio generation is not yet integrated.
+- **Strict Syntax:** Audio links must follow the bolded word: `**Word** [🔊](audio_id)`. The generator uses the bolded word as the search term. Do NOT place the link before the word.
 - **Intonation & Rhythm:** Audio should model natural Ukrainian intonation and rhythm, particularly in dialogues and longer texts.
 
 ### 3. Richness & Phraseology (The Wisdom of Ukraine)
@@ -111,7 +112,7 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 
 > **Single Source of Truth** for strict grammatical definitions.
 > **Scope vs. Method:**
-> *   **The Scope (WHAT):** Defined by [`UKRAINIAN-STATE-STANDARD-2024`](file:///Users/krisztiankoos/projects/curricula-opus/docs/l2-uk-en/UKRAINIAN-STATE-STANDARD-2024.txt). Modules must teach *at least* these competencies.
+> *   **The Scope (WHAT):** Defined by [`UKRAINIAN-STATE-STANDARD-2024`](UKRAINIAN-STATE-STANDARD-2024.txt). Modules must teach *at least* these competencies.
 > *   **The Method (HOW):** Defined by *this document*. We use specific pedagogical models (e.g., "4 Families") to teach the Standard's requirements effectively.
 > *   *Example:* Standard says "Know noun gender". Guidelines say "Teach Gender via 4-Family Model". Both are true.
 
@@ -654,11 +655,11 @@ Use: **Story → Vocabulary-in-Context → Analysis → Retelling**
 
 > Choose the correct possessive pronoun.
 
-1. Це ___ книга. (my - feminine)
+1. Це ___ книга.
    > [!answer] моя
    > [!options] мій | моя | моє | мої
 
-2. ___ брат студент. (her)
+2. ___ брат студент.
    > [!answer] Її
    > [!options] Його | Її | Їхній | Наш
 ```
@@ -725,11 +726,11 @@ Use: **Story → Vocabulary-in-Context → Analysis → Retelling**
 ```markdown
 ## fill-in: Case Practice
 
-1. Я дав книгу ___. (друг - dative)
+1. Я дав книгу ___.
    > [!answer] другові
    > [!options] друг | друга | другові | другом
 
-2. Ми говорили про ___. (робота - accusative)
+2. Ми говорили про ___.
    > [!answer] роботу
    > [!options] робота | роботу | роботи | роботою
 ```
@@ -738,11 +739,11 @@ Use: **Story → Vocabulary-in-Context → Analysis → Retelling**
 ```markdown
 ## fill-in: Aspect Choices
 
-1. Вчора я ___ цю книгу цілий день. (читати/прочитати - process)
+1. Вчора я ___ цю книгу цілий день.
    > [!answer] читав
    > [!options] читав | прочитав | читаю | прочитаю
 
-2. Нарешті він ___ роботу! (робити/зробити - completion)
+2. Нарешті він ___ роботу!
    > [!answer] зробив
    > [!options] робив | зробив | робить | зробить
 ```

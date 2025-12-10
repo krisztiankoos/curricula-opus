@@ -137,14 +137,16 @@ You must **INCLUDE**:
 - ✅ Dialogue lines
 
 ### 3. The Verification Command
-To verify the count, you must use this specific command pattern:
+To verify the count, you must use the standardized Python script:
 
-1. **Identify Line Ranges:** First, `cat -n filename.md` to find the start/end lines of the allowed sections (e.g., Intro is 20-50, Narrative is 60-150).
-2. **Execute Count:**
-   ```bash
-   sed -n '20,50p;60,150p' filename.md | grep -vE '^\||^> \[!|^#|^---' | wc -w
-   ```
-   *(Translation: Extract ranges -> Exclude tables/answers/headers/yaml -> Count words)*
+```bash
+python3 scripts/audit_module.py {file_path}
+```
+
+This script automatically:
+- **Includes:** Narrative paragraphs, Explanations, Engagement Boxes, Dialogues.
+- **Excludes:** Tables, YAML, Images, Activity Metadata.
+- **Excludes:** List items (bullets/numbers) to focus strictly on **Narrative Prose**.
 
 ---
 
@@ -243,7 +245,16 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
      - **Constraint:** **ACTIVITIES** must ONLY use words from the Vocabulary table or prior modules.
      - Verify IPA and Audio placeholders `[🔊](audio_id)` for ALL new words.
    - **ACTIVITY CHECK:** See table below.
-   - **FORMAT CHECK:** Syntax per MARKDOWN-FORMAT.md.
+   - **STRICT FORMAT LINT (Guardrail):** 
+     - **Constraint:** ALL output must strictly follow `docs/MARKDOWN-FORMAT.md`.
+     - **Run Linter:**
+       ```bash
+       python3 scripts/audit_module.py {file_path}
+       ```
+     - **Verify:** Use of `> [!answer]` callouts (no bold `**Answer:**`).
+     - **Verify:** NO YAML blocks in activities (Pure Markdown only).
+     - **Verify:** Correct activity headers (`## type: Title`).
+     - **Verify:** Audit report generated in `gemini/`.
    - **POLISH CHECK:**
      - **Audio:** Are audio buttons `[🔊](audio_id)` working and present for vocab/dialogues?
      - **Layout:** Clean (no bolding in prompts, proper table formatting).
@@ -265,7 +276,7 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
    - **Compliance:** Ensure Standard Competencies are explicitly taught.
 6. **GRAMMAR VALIDATION:** Check your definitions of Families/Groups against `MODULE-RICHNESS-GUIDELINES-v2.md`.
 7. **Perform Richness & Soul Gate Audit:** Verify Core Word Count meets target (750+ to 2000+ depending on level). If FAIL, enrich content.
-84.  **Activity Density**
+8.  **Activity Density**
     *   **Minimum Activities:** 8+ per module (Target: 10).
     *   **Minimum Items:** 12+ items per activity (non-negotiable).
     *   **Standard Flow:**
@@ -275,7 +286,7 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
         *   **Constraint:** `fill-in`, `anagram` (A1), and `unjumble` (A2+) MUST be at the end of the activity list.
         *   *Avoid putting complex activities (Unjumble/Anagram/Fill-in) as the very first activity.*
 
-5.  **Grammar Table Requirement**
+9.  **Grammar Table Requirement**
     *   **Mandatory:** ALL grammar modules (Verb, Case, Gender) MUST include reference tables.
     *   **Format:** Must contain explicit headers like `Case` / `Gender` / `Ending` / `Form`.
     *   *Example:*
@@ -285,12 +296,25 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
         | Masc   | Парк       | У парку  | -у     |
         ```
 
-6.  **Unjumble Complexity**
+10. **Unjumble Complexity**
     *   **Minimum Length:** Sentences MUST be **5-8 words** long.
     *   **No Short Sentences:** "Це стіл" (2 words) is INVALID. "Це мій великий стіл" (4 words) is BORDERLINE. "Це мій великий і гарний стіл" (6 words) is PERFECT.
     *   **Logic:** Unjumble is a logic puzzle. 3 words is not a puzzle; it's a trivium.
-8. **Only after Gate = PASS**, write Activities.
-9. **Final Check:** Verify activity counts and Standard Compliance.
+11. **Only after Gate = PASS**, write Activities.
+12. **STRICT FORMAT LINT:**
+    *   **Review against `docs/MARKDOWN-FORMAT.md`.**
+    *   **Check:** Are answers hidden with `> [!answer]`?
+    *   **Check:** Are options provided with `> [!options]`?
+    *   **Check:** Is there absolutely NO YAML in the activities section?
+    *   **Check:** NO parenthetical hints in prompt line (e.g. `(hint)`). Use clean underscores `___` only.
+13. **Final Check:** Verify activity counts and Standard Compliance.
+14. **Generate Output:**
+    *   Once the module passes all checks, generate the final artifacts:
+    ```bash
+    npm run generate l2-uk-en {level} {module_num}
+    # Example: npm run generate l2-uk-en a1 1
+    ```
+    *   Verify the output HTML in `output/html/l2-uk-en/{level}/`.
 
 ## Activity Check Reference
 
@@ -303,53 +327,11 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
 | **C1** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
 | **C2** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
 
-## Strict Activity format Templates (MUST FOLLOW)
+## Strict Activity Format
+**CRITICAL:** For exact syntax (Anagrams, Fill-ins, etc.), you MUST refer to the Single Source of Truth:
+`docs/MARKDOWN-FORMAT.md`
 
-### 1. Match-up (Table Format)
-**Constraint:** Must be a Markdown Table with exact headers `| Left | Right |`.
-```markdown
-## match-up: Title
-> Instruction.
-| Left | Right |
-|------|-------|
-| word | meaning |
-```
-
-### 2. Fill-in (Options Format)
-**Constraint:** Must use `> [!options]` with pipe separator.
-*Note: Prompts can be "Sentence with ___ gap" (context-based) or "Translation -> Target" (translation-based).*
-```markdown
-## fill-in: Title
-1. Sentence with ___ gap.
-   > [!answer] answer
-   > [!options] answer | wrong | wrong
-```
-
-### 3. Anagram (Word Building) - [A1 ONLY]
-**Constraint:** Scrambled letters to form a WORD.
-```markdown
-## anagram: Title
-1. l / e / h / o / l
-   > [!answer] hello
-```
-
-### 4. Unjumble (Sentence Building) - [A2+ ONLY]
-**Constraint:** Scrambled words to form a SENTENCE.
-```markdown
-## unjumble: Title
-1. word / word / word
-   > [!answer] Full sentence.
-```
-
-### 4. Group-sort (Category Lists)
-**Constraint:** Use `### Category` headers.
-```markdown
-## group-sort: Title
-### Masculine
-- word
-### Feminine
-- word
-```
+Do NOT rely on memory or examples previously listed here. The parser is strict.
 
 ## Output Format (Review)
 

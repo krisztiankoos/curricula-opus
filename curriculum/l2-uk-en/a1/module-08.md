@@ -320,50 +320,62 @@ Oleh runs (**біжить**).
 1.  **Я ___ піцу. (love)**
     > [!answer] люблю
     > [!explanation] L-insertion!
+    > [!options] люблю | любиш | любить
 
 2.  **Ти ___ телевізор? (watch)**
     > [!answer] дивишся
     > [!explanation] диву- + -иш + -ся? No. дивишся.
+    > [!options] дивишся | дивлюся | дивиться
 
 3.  **Він ___ правду. (speaks)**
     > [!answer] говорить
     > [!explanation] Class II.
+    > [!options] говорить | говориш | говорять
 
 4.  **Ми ___ тут. (stand)**
     > [!answer] стоїмо
     > [!explanation] стояти -> стоїмо.
+    > [!options] стоїмо | стоїте | стоять
 
 5.  **Ви ___ каву? (want)**
     > [!answer] хочете
     > [!explanation] хотіти is mixed/irregular.
+    > [!options] хочете | хочемо | хочуть
 
 6.  **Вони ___ додому. (go/walk)**
     > [!answer] ходять
     > [!explanation] ходити -> ходять.
+    > [!options] ходять | ходимо | ходить
 
 7.  **Я ___ це. (see)**
     > [!answer] бачу
     > [!explanation] бачити -> бачу.
+    > [!options] бачу | бачиш | бачить
 
 8.  **Що ти ___? (do)**
     > [!answer] робиш
     > [!explanation] робити -> робиш.
+    > [!options] робиш | роблю | роблять
 
 9.  **Я ___ слова. (learn)**
     > [!answer] вчу
     > [!explanation] вчити -> вчу.
+    > [!options] вчу | вчиш | вчить
 
 10. **Ми ___ в парку. (run)**
     > [!answer] біжимо
     > [!explanation] бігти -> біжимо.
+    > [!options] біжимо | біжите | біжать
 
 11. **Ти ___? (sleep)**
     > [!answer] спиш
     > [!explanation] спати -> спиш.
+    > [!options] спиш | сплю | спить
 
 12. **Я ___ маму. (hear)**
     > [!answer] чую
     > [!explanation] чути -> чую.
+    > [!options] чую | чуєш | чує
 
 ## anagram: Verb Scramble
 > Find the verb.
@@ -516,50 +528,62 @@ Oleh runs (**біжить**).
 1.  **I speak Ukrainian.** ___
     > [!answer] Я говорю українською
     > [!explanation] Or just "Я говорю по-українськи" (colloquial).
+    > [!options] Я говорю українською | Я говориш українською | Я говорити українською
 
 2.  **Make coffee.** ___
     > [!answer] Зроби каву
     > [!explanation] Imperative of робити.
+    > [!options] Зроби каву | Зробити каву | Робиш каву
 
 3.  **Do you want to sleep?** ___
     > [!answer] Ти хочеш спати?
     > [!explanation] хотіти + infinitive.
+    > [!options] Ти хочеш спати? | Ви хочете спати? | Ти хочеш спиш?
 
 4.  **I don't see.** ___
     > [!answer] Я не бачу
     > [!explanation] Negative.
+    > [!options] Я не бачу | Я не дивишся | Я не бачити
 
 5.  **She is standing.** ___
     > [!answer] Вона стоїть
     > [!explanation] standing now.
+    > [!options] Вона стоїть | Вона стояти | Вона стоїмо
 
 6.  **We are sitting.** ___
     > [!answer] Ми сидимо
     > [!explanation] sitting implies state.
+    > [!options] Ми сидимо | Ми сидять | Ми сидиш
 
 7.  **Do you love me?** ___
     > [!answer] Ти мене любиш?
     > [!explanation] Object before verb usually.
+    > [!options] Ти мене любиш? | Ти мене люблю? | Ти мене любити?
 
 8.  **They are doing work.** ___
     > [!answer] Вони роблять роботу
     > [!explanation] literal translation.
+    > [!options] Вони роблять роботу | Вони робити роботу | Вони робимо роботу
 
 9.  **I am learning words.** ___
     > [!answer] Я вчу слова
     > [!explanation] learning = вчу.
+    > [!options] Я вчу слова | Я вчити слова | Я вчиш слова
 
 10. **He hears music.** ___
     > [!answer] Він чує музику
     > [!explanation] Accusative for music.
+    > [!options] Він чує музику | Він чути музику | Він чуєш музику
 
 11. **Do you remember?** ___
     > [!answer] Ти пам'ятаєш?
     > [!explanation] пам'ятати is Class I! (remember the -єш).
+    > [!options] Ти пам'ятаєш? | Ти пам'ятати? | Ти пам'ятаю?
 
 12. **We are buying bread.** ___
     > [!answer] Ми купуємо хліб
     > [!explanation] купувати is Class I! (купуємо).
+    > [!options] Ми купуємо хліб | Ми купувати хліб | Ми купують хліб
 
 # Summary
 You now command the Grid:

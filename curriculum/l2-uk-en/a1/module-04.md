@@ -258,39 +258,51 @@ Only the Present is invisible.
 
 1. **I am Tom.** ___
    > [!answer] Я Том
+   > [!options] Я Том | Я є Том | Я буду Том
 
 2. **She is a student.** ___
    > [!answer] Вона студентка
+   > [!options] Вона студентка | Вона є студентка | Вона студент
 
 3. **We are tourists.** ___
    > [!answer] Ми туристи
+   > [!options] Ми туристи | Ми є туристи | Ми турист
 
 4. **This is a book.** ___
    > [!answer] Це книга
+   > [!options] Це книга | Це є книга | Ця книга
 
 5. **He is an American.** ___
    > [!answer] Він американець
+   > [!options] Він американець | Він є американець | Він американка
 
 6. **You (formal) are a doctor.** ___
    > [!answer] Ви лікар
+   > [!options] Ви лікар | Ви є лікар | Ти лікар
 
 7. **They are friends.** ___
    > [!answer] Вони друзі
+   > [!options] Вони друзі | Вони є друзі | Вони друг
 
 8. **Who is this?** ___
    > [!answer] Хто це
+   > [!options] Хто це | Хто є це | Що це
 
 9. **What is this?** ___
    > [!answer] Що це
+   > [!options] Що це | Що є це | Хто це
 
 10. **I am Ukrainian (female).** ___
     > [!answer] Я українка
+    > [!options] Я українка | Я є українка | Я українець
 
 11. **It is a window.** ___
     > [!answer] Це вікно
+    > [!options] Це вікно | Це є вікно | Ця вікно
 
 12. **He is a musician.** ___
     > [!answer] Він музикант
+    > [!options] Він музикант | Він є музикант | Він музика
 
 ## group-sort: Nationality Gender
 > Sort the nationality words into Masculine and Feminine.

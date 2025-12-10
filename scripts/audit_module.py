@@ -432,8 +432,9 @@ def audit_module(file_path):
                 current_activity_type = None
 
         # 1. Anagram Check
-        if re.search(r'\w\s+/\s+\w\s+/', stripped):
-             lint_errors.append(f"Line {line_num}: Invalid Anagram format. Use spaces (a b c), not slashes.")
+        if current_activity_type == 'anagram':
+             if re.search(r'\w\s+/\s+\w\s+/', stripped):
+                  lint_errors.append(f"Line {line_num}: Invalid Anagram format. Use spaces (a b c), not slashes.")
 
         # 2. Activity YAML Check
         if in_activities:

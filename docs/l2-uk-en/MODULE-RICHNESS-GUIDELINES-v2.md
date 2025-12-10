@@ -1472,7 +1472,30 @@ Notice how we use "грати в" (play) with ball sports...
   > сумку, сумки, сумці
   ```
 
-### 7. Cultural & Political Tone (The "Vibe" Check)
+### 7. Anagram Activity Standards (Strict)
+- **Separator:** MUST use **SPACES** to separate letters.
+- **Forbidden:** Do NOT use slashes (`/`), commas, or hyphens.
+- **Format:** `L E T T E R S`
+  ```markdown
+  1. К І Т
+     > [!answer] КІТ
+  ```
+
+### 8. Unjumble Activity Standards (Strict)
+- **Separator:** MUST use **SLASHES** (`/`) to separate words/phrases.
+- **Format:** `Word / Word / Word`
+  ```markdown
+  1. я / люблю / каву
+     > [!answer] Я люблю каву.
+  ```
+
+### 9. Checkbox & Audio Standards (Strict)
+- **Checkboxes:** MUST have a space inside the bracket: `- [ ]`. NEVER use `- []` (empty) or `- [v]` (check mark character).
+- **Audio Links:** MUST follow the order: **Word** then **Icon**.
+  - **Correct:** `**Стіл** [🔊](link)`
+  - **Incorrect:** `[🔊](link) **Стіл**`
+
+### 10. Cultural & Political Tone (The "Vibe" Check)
 - **Sovereignty First:** Ukraine is a distinct, sovereign European nation. Avoid any framing that implies it is a "borderland" or "region".
   - **YES:** "Ukraine", "Kyiv", "In Ukraine".
   - **NO:** "The Ukraine", "Kiev", "In the Ukraine".

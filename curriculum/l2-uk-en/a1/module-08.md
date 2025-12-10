@@ -151,13 +151,13 @@ Boss Petro moves fast. He acts.
 | пам'ятати | /pɑmjɑˈtɑtɪ/ | to remember | v | [🔊](audio_pamyataty) |
 | їсти | /ˈjistɪ/ | to eat | v | [🔊](audio_yisty) |
 | пити | /ˈpɪtɪ/ | to drink | v | [🔊](audio_pyty) |
-| просити | /prɔˈsɪtɪ/ | to ask (request) | v | [🔊](audio_prosyty) |
+| просити | /prɔˈsɪtɪ/ | to ask | v | [🔊](audio_prosyty) |
 | дякувати | /ˈdʲɑkuvɑtɪ/ | to thank | v | [🔊](audio_dyakuvaty) |
-| телефонувати | /tɛlɛfɔnuˈvɑtɪ/ | to phone | v | Class I! [🔊](audio_telefonuvaty) |
-| купувати | /kupuˈvɑtɪ/ | to buy | v | Class I! [🔊](audio_kupuvaty) |
-| лежати | /lɛˈʒɑtɪ/ | to lie (down) | v | [🔊](audio_lezhaty) |
-| вітати | /viˈtɑtɪ/ | to greet/congratulate | v | Class I! [🔊](audio_vitaty) |
-| забувати | /zɑbuˈvɑtɪ/ | to forget | v | Class I! [🔊](audio_zabuvaty) |
+| телефонувати | /tɛlɛfɔnuˈvɑtɪ/ | to call (phone) | v | [🔊](audio_telefonuvaty) |
+| купувати | /kupuˈvɑtɪ/ | to buy | v | [🔊](audio_kupuvaty) |
+| дарувати | /dɑruˈvɑtɪ/ | to give (gift) | v | [🔊](audio_daruvaty) |
+| вітати | /viˈtɑtɪ/ | to greet/congratulate | v | [🔊](audio_vitaty) |
+| забувати | /zɑbuˈvɑtɪ/ | to forget | v | [🔊](audio_zabuvaty) |
 
 > [!note] Watch Out!
 > Some verbs in the list are Class I (end in **-ати**).
@@ -339,7 +339,7 @@ Oleh runs (**біжить**).
 
 5.  **Ви ___ каву? (want)**
     > [!answer] хочете
-    > [!explanation] хотіти is mixed/irregular.
+    > [!!explanation] хотіти is mixed/irregular.
     > [!options] хочете | хочемо | хочуть
 
 6.  **Вони ___ додому. (go/walk)**
@@ -467,40 +467,18 @@ Oleh runs (**біжить**).
 > True or False?
 
 - [x] Class II verbs usually use **-и-** or **-ї-**.
-  > [!explanation] Like говориш, стоїш.
-
-- [ ] **Читати** is Class II.
-  > [!explanation] It is Class I (читаєш).
-
-- [x] **Робити** means "To do".
-  > [!explanation] Or "to make".
-
-- [ ] "They speak" is **Вони говорюють**.
-  > [!explanation] **Вони говорять**.
-
-- [x] **Любити** has an 'L' in "I love" (Я люблю).
-  > [!explanation] Special L-insertion for B, P, V, M.
-
-- [ ] **Ти хочеш** uses **-иш**.
-  > [!explanation] **Хотіти** is irregular (Class I style in singular: хочеш).
-
-- [x] **Хто** takes "He/She" verb form.
-  > [!explanation] Хто говорить? (Who speaks?).
-
-- [ ] **Я бачу** means "I hear".
-  > [!explanation] It means "I see".
-
-- [x] **Спати** means "To sleep".
-  > [!explanation] Zzz.
-
-- [ ] Class II verbs have **-ють** for "They".
-  > [!explanation] They have **-ять** (Action!) or **-ать**.
-
-- [x] **Ми говоримо** is correct.
-  > [!explanation] We speak.
-
-- [ ] **Ви бачете** is correct.
-  > [!explanation] **Ви бачите** (Class II uses 'Y', not 'E').
+- [x] **-уть / -ють** is for "They" (Class I).
+- [ ] **-ат / -ят** is for "They" (Class I).
+- [x] **Я** always ends in **-ю** or **-у**.
+- [ ] **Ти** always ends in **-те**.
+- [x] **Ми** always ends in **-мо**.
+- [ ] **Ви** always ends in **-ш**.
+- [x] **Він / Вона** ends in **-е / -є** (Class I).
+- [ ] **Він / Вона** ends in **-имо** (Class I).
+- [x] **-увати** verbs become **-ують** (Вони).
+- [ ] **-увати** verbs keep **-ва-**.
+- [x] **Знати** is Class I.
+- [ ] **Робити** is Class I.
 
 ## match-up: Who does what?
 > Logical pairs.

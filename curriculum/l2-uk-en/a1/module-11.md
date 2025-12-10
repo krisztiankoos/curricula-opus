@@ -21,7 +21,7 @@ grammar:
 ## warm-up
 
 You know **Хто** (Who) and **Що** (What).
-"**Це стіл**" [🔊](audio_ce_stil) (This is a table). The table is just sitting there. It is the subject. It is passive. It is lazy.
+"**Це стіл**" (This is a table). The table is just sitting there. It is the subject. It is passive. It is lazy.
 
 But what happens when you **do** something to the table?
 When you **see** the table? Or **want** the table? Or **break** the table?
@@ -33,12 +33,12 @@ In English, the word stays the same:
 
 In Ukrainian, like in Latin or German, words change to show they are being "hit" by an action. This change is called the **Accusative Case** (**Знахідний відмінок** - "Finding Case").
 *   **Стіл** тут. (Subject) -- No change.
-*   Я бачу **стіл** [🔊](audio_ya_bachu_stil). (Object) -- No change? Wait.
+*   Я бачу **стіл**. (Object) -- No change? Wait.
 
 Okay, masculine inanimate things are lazy. They don't change.
 But look at feminine words. They are dramatic.
-*   **Кава** [🔊](audio_kava) (Coffee - Subject).
-*   Я хочу **каву** [🔊](audio_ya_khochu_kavu) (I want coffee - Object).
+*   **Кава** (Coffee - Subject).
+*   Я хочу **каву** (I want coffee - Object).
 
 The **-А** changed to **-У**. This change is the bruised eye of the word. It tells you: "I am being wanted!"
 
@@ -47,27 +47,27 @@ The **-А** changed to **-У**. This change is the bruised eye of the word. It t
 Tom is in **Lviv** (**Львів**), the majestic city of lions, coffee, chocolate, and rain. The streets are cobbled, and the aroma of coffee is everywhere. He enters a famous shop called "**Львівські Цяцьки**" (Lviv Toys/Knick-knacks). It is chaos. Tourists are everywhere.
 
 **Tom:** Добрий день!
-**Seller:** Добрий день, пане! Заходьте. Що ви шукаєте? [🔊](audio_shcho_vy_shukayete) (What are you looking for?)
-**Tom:** Я шукаю **сувенір** [🔊](audio_suvenir). Це для родини.
+**Seller:** Добрий день, пане! Заходьте. Що ви шукаєте? (What are you looking for?)
+**Tom:** Я шукаю **сувенір**. Це для родини.
 **Seller:** Розумію. Для кого? (For whom?)
 **Tom:** Для мами. Вона любить **кавУ**.
 **Seller:** О, у нас є чудова львівська **кавА**. Ось смачна **кавА**. (Subject)
-**Tom:** Добре. Я беру цю **кавУ** [🔊](audio_ya_beru_tsiu_kavu). (Object - changed!)
+**Tom:** Добре. Я беру цю **кавУ**. (Object - changed!)
 **Seller:** Чудовий вибір. А ще?
-**Tom:** Я бачу гарну **чашкУ** [🔊](audio_chashku). (Cup - changed!)
+**Tom:** Я бачу гарну **чашкУ**. (Cup - changed!)
 **Seller:** Це **чашкА** з левом. Леви - це символ Львова.
 **Tom:** Я беру **чашкУ** теж. Мама любить левів.
 **Seller:** А для тата?
-**Tom:** Тато любить спорт. Я шукаю **футболкУ** [🔊](audio_futbolku). (T-shirt - changed!)
+**Tom:** Тато любить спорт. Я шукаю **футболкУ**. (T-shirt - changed!)
 **Seller:** Ось **футболкА** "Динамо Київ" або "Карпати Львів".
 **Tom:** Карпати. Я беру цю зелену **футболкУ**.
 **Seller:** А для сестри?
 **Tom:** Сестра любить грати в карти.
-**Seller:** Ось українська **картА** [🔊](audio_karta). (Map/Card).
+**Seller:** Ось українська **картА**. (Map/Card).
 **Tom:** Ні, я хочу гральні **карти** (Playing cards - Plural).
 **Seller:** А, зрозуміло. Ось карти.
 **Tom:** Ваш **паспорт**, будь ласка. (For tax free).
-**Tom:** Ось мій **паспорт** [🔊](audio_pasport). (Inanimate Masculine - No change).
+**Tom:** Ось мій **паспорт**. (Inanimate Masculine - No change).
 
 Tom leaves the shop. He carries a heavy **bag** (**сумкУ**). He is poor, but he is a good son.
 
@@ -84,7 +84,7 @@ Tom leaves the shop. He carries a heavy **bag** (**сумкУ**). He is poor, bu
 > *   **ПляшкУ** (bottle - feminine, changed).
 > *   **КвіткУ** (flower - feminine, changed).
 >
-> **Warning on Flowers:** Always bring an **ODD** number of flowers (1, 3, 5, 101). Even numbers (2, 4) are strictly for funerals. Giving a girl 2 flowers is considered a very bad omen.
+> **Warning on Flowers:** Always bring an **ODD** number of flowers (1, 3, 5, 101). Even numbers (2, 4) are strictly for funerals. Giving a girl 2 flowers is considered a very bad omen. If you make this mistake, she will be very active in correcting you! So count your roses carefully before you knock on the door.
 
 ## presentation
 
@@ -119,14 +119,14 @@ It is very simple for things that correspond to "It" or "She".
 
 These verbs trigger the Accusative case because they do something TO something.
 
-1.  **Бачити** [🔊](audio_bachyty) (To see) -> Бачу **проблему**.
-2.  **Брати** [🔊](audio_braty) (To take) -> Беру **каву**.
-3.  **Давати** [🔊](audio_davaty) (To give) -> Даю **книгу**.
-4.  **Мати** [🔊](audio_maty) (To have) -> Маю **ідею**.
-5.  **Любити** [🔊](audio_lyubyty) (To love/like) -> Люблю **музику**.
-6.  **Ховати** [🔊](audio_khovaty) (To hide) -> Ховаю **гроші**.
-7.  **Шукати** [🔊](audio_shukaty) (To look for) -> Шукаю **вихід** (exit).
-8.  **Купувати** [🔊](audio_kupuvaty) (To buy) -> Купую **машину**.
+1.  **Бачити** (To see) -> Бачу **проблему**.
+2.  **Брати** (To take) -> Беру **каву**.
+3.  **Давати** (To give) -> Даю **книгу**.
+4.  **Мати** (To have) -> Маю **ідею**.
+5.  **Любити** (To love/like) -> Люблю **музику**.
+6.  **Ховати** (To hide) -> Ховаю **гроші**.
+7.  **Шукати** (To look for) -> Шукаю **вихід** (exit).
+8.  **Купувати** (To buy) -> Купую **машину**.
 
 # Activities
 
@@ -255,24 +255,24 @@ These verbs trigger the Accusative case because they do something TO something.
 12. Я бачу -> Місто
 
 ## true-false: Grammar Logic
-> Is the sentence grammatically correct?
+
 
 1. Я бачу машина.
    > [!answer] False
-   > [!explanation] **Машина** is feminine. Must be **Я бачу машину**.
+
 2. Я бачу автобус.
    > [!answer] True
-   > [!explanation] **Автобус** is masculine inanimate. No change.
+
 3. Я люблю Україна.
    > [!answer] False
-   > [!explanation] **Україна** -> **Я люблю УкраїнУ**.
+
 4. Я маю візу.
    > [!answer] True
 5. Він має паспорт.
    > [!answer] True
 6. Я шукаю вода.
    > [!answer] False
-   > [!explanation] **Вода** -> **Я шукаю водУ**.
+
 7. Ми хочемо піцу.
    > [!answer] True
 8. Я читаю журнал.
@@ -281,7 +281,6 @@ These verbs trigger the Accusative case because they do something TO something.
    > [!answer] True
 10. Ти маєш проблема.
     > [!answer] False
-    > [!explanation] **Проблема** -> **Ти маєш проблемУ**.
 11. Я відкриваю вікно.
     > [!answer] True
 12. Я закриваю сумку.
@@ -401,20 +400,20 @@ The essential toolkit for interacting with the physical world.
 
 | Word | IPA | English | POS | Note |
 |---|---|---|---|---|
-| бачити | /ˈbɑtʃɪtɪ/ | to see | v | Class II ([🔊](audio_bachyty)) |
-| брати | /ˈbrɑtɪ/ | to take | v | я беру, ти береш ([🔊](audio_braty)) |
-| давати | /dɑˈwɑtɪ/ | to give | v | я даю, ти даєш ([🔊](audio_davaty)) |
-| мати | /ˈmɑtɪ/ | to have | v | я маю, ти маєш ([🔊](audio_maty)) |
-| нести | /nɛsˈtɪ/ | to carry | v | я несу, ти несеш ([🔊](audio_nesty)) |
-| класти | /ˈklɑstɪ/ | to put/lay | v | я кладу, ти кладеш ([🔊](audio_klasty)) |
-| відкривати | /vʲidkrɪˈwɑtɪ/ | to open | v | Class I ([🔊](audio_vidkryvaty)) |
-| закривати | /zɑkrɪˈwɑtɪ/ | to close | v | Class I ([🔊](audio_zakryvaty)) |
-| ховати | /xɔˈwɑtɪ/ | to hide | v | я ховаю ([🔊](audio_khovaty)) |
-| шукати | /ʃʊˈkɑtɪ/ | to look for | v | я шукаю ([🔊](audio_shukaty)) |
-| купувати | /kʊpʊˈwɑtɪ/ | to buy | v | я купую ([🔊](audio_kupuvaty)) |
+| бачити | /ˈbɑtʃɪtɪ/ | to see | v | [🔊](audio_bachyty) |
+| брати | /ˈbrɑtɪ/ | to take | v | [🔊](audio_braty) |
+| давати | /dɑˈwɑtɪ/ | to give | v | [🔊](audio_davaty) |
+| мати | /ˈmɑtɪ/ | to have | v | [🔊](audio_maty) |
+| нести | /nɛsˈtɪ/ | to carry | v | [🔊](audio_nesty) |
+| класти | /ˈklɑstɪ/ | to put/lay | v | [🔊](audio_klasty) |
+| відкривати | /vʲidkrɪˈwɑtɪ/ | to open | v | [🔊](audio_vidkryvaty) |
+| закривати | /zɑkrɪˈwɑtɪ/ | to close | v | [🔊](audio_zakryvaty) |
+| ховати | /xɔˈwɑtɪ/ | to hide | v | [🔊](audio_khovaty) |
+| шукати | /ʃʊˈkɑtɪ/ | to look for | v | [🔊](audio_shukaty) |
+| купувати | /kʊpʊˈwɑtɪ/ | to buy | v | [🔊](audio_kupuvaty) |
 | газета | /ɦɑˈzɛtɑ/ | newspaper | n (f) | [🔊](audio_gazeta) |
 | журнал | /ʒʊrˈnɑl/ | magazine | n (m) | [🔊](audio_zhurnal) |
-| лист | /lɪst/ | letter | n (m) | paper letter ([🔊](audio_lyst)) |
+| лист | /lɪst/ | letter | n (m) | [🔊](audio_lyst) |
 | конверт | /kɔnˈwɛrt/ | envelope | n (m) | [🔊](audio_konvert) |
 | посилка | /pɔˈsɪlkɑ/ | parcel | n (f) | [🔊](audio_posylka) |
 | подарунок | /pɔdɑˈrunɔk/ | gift/present | n (m) | [🔊](audio_podarunok) |
@@ -426,7 +425,7 @@ The essential toolkit for interacting with the physical world.
 | коробка | /kɔˈrɔbkɑ/ | box | n (f) | [🔊](audio_korobka) |
 | віза | /ˈwʲizɑ/ | visa | n (f) | [🔊](audio_viza) |
 | карта | /ˈkɑrtɑ/ | map/card | n (f) | [🔊](audio_karta) |
-| гроші | /ˈɦrɔʃi/ | money | n (pl) | Always plural ([🔊](audio_groshi)) |
+| гроші | /ˈɦrɔʃi/ | money | n (pl) | [🔊](audio_groshi) |
 
 > [!important]
 > **Гроші** (Money) is PLURAL in Ukrainian. It is arguably the most important word to know.

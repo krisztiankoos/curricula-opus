@@ -10,7 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 35 links
-- **Vocab:** ✅ 35/30
+- **Vocab:** ✅ 35/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -33,4 +33,4 @@
 | **true-false: Weather Facts** | 🎮 | 12 | Activity (12 items) |
 | **unjumble: Weather Report** | 🎮 | 12 | Activity (12 items) |
 | **match-up: Seasons and Activities** | 🎮 | 12 | Activity (12 items) |
-| **fill-in: My Favorite Season** | 🎮 | 35 | Activity (35 items) |
+| **fill-in: My Favorite Season** | 🎮 | 12 | Activity (12 items) |

@@ -3,13 +3,14 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 952/750
+- **Words:** ✅ 962/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
-- **Unique_types:** ✅ 6/4 types
+- **Unique_types:** ✅ 5/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 25 links
+- **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -28,7 +29,7 @@
 | **group-sort: Past vs Future** | 🎮 | 12 | Activity (12 items) |
 | **fill-in: My Plans** | 🎮 | 12 | Activity (12 items) |
 | **match-up: Questions and Answers** | 🎮 | 12 | Activity (12 items) |
-| **transform: Present to Future** | 🎮 | 12 | Activity (12 items) |
+| **fill-in: Present to Future** | 🎮 | 12 | Activity (12 items) |
 | **Story Time: Plans for Summer** | ✅ | 477 | Included in Core |
 | **Scenario: The Business Meeting** | ⚪️ | 155 | Skipped |
-| **Deep Dive: "Буду" acts like "Will"** | ✅ | 90 | Included in Core |
+| **Deep Dive: "Буду" acts like "Will"** | ✅ | 100 | Included in Core |

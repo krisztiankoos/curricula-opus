@@ -3,13 +3,14 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 772/750
+- **Words:** ✅ 776/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 45 links
+- **Vocab:** ✅ 22/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -18,7 +19,7 @@
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **warm-up** | ✅ | 77 | Included in Core |
-| **presentation** | ✅ | 129 | Included in Core |
+| **presentation** | ✅ | 133 | Included in Core |
 | **narrative: The Café Intellectuals** | ✅ | 94 | Included in Core |
 | **narrative: First Date** | ✅ | 112 | Included in Core |
 | **deep-dive: The Hidden "I" (Pro-Drop)** | ⚪️ | 75 | Skipped |

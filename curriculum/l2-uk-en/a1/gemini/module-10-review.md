@@ -3,13 +3,14 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 957/750
+- **Words:** ✅ 954/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
-- **Audio:** ✅ 10 links
+- **Audio:** ✅ 20 links
+- **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -28,6 +29,7 @@
 | **cultural insight: Kyiv Metro** | ✅ | 98 | Included in Core |
 | **narrative: The Train Journey (Kyiv to Lviv)** | ✅ | 115 | Included in Core |
 | **cultural insight: Ukrzaliznytsia** | ✅ | 77 | Included in Core |
+| **cultural insight: Diploma** | ✅ | 50 | Included in Core |
 | **match-up: Alphabet Attack** | 🎮 | 14 | Activity (14 items) |
 | **group-sort: Gender Defender** | 🎮 | 18 | Activity (18 items) |
 | **fill-in: Verb Master** | 🎮 | 12 | Activity (12 items) |
@@ -36,4 +38,3 @@
 | **match-up: Dialogue Fixer** | 🎮 | 12 | Activity (12 items) |
 | **true-false: Ukraine Facts** | 🎮 | 12 | Activity (12 items) |
 | **fill-in: The Final boss** | 🎮 | 12 | Activity (12 items) |
-| **cultural insight: Diploma** | ✅ | 53 | Included in Core |

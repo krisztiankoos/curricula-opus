@@ -147,38 +147,42 @@ And bread. Ukrainians eat everything with **хліб**. Even pasta with bread. E
 # Activities
 
 ## true-false: Cafe EtiquetteLogic
-> Is the sentence logical?
 
 1. Я п'ю суп.
-   > [!answer] false
-   > [!explanation] We EAT (їм) soup, not drink.
+   > [!answer] False
+
 2. Я їм чай.
-   > [!answer] false
-   > [!explanation] We DRINK (п'ю) tea.
+   > [!answer] False
+
 3. Я купую хліб у аптеці.
-   > [!answer] false
-   > [!explanation] Bread is in the supermarket/bakery.
+   > [!answer] False
+
 4. Борщ — це суп.
-   > [!answer] true
+   > [!answer] True
+
 5. Капучино — це десерт.
-   > [!answer] false
-   > [!explanation] It is a drink.
+   > [!answer] False
+
 6. Вегетаріанець їсть м'ясо.
-   > [!answer] false
+   > [!answer] False
+
 7. Вода холодна.
-   > [!answer] true
+   > [!answer] True
+
 8. Лимон солодкий (sweet).
-   > [!answer] false
-   > [!explanation] Lemon is sour (кислий).
+   > [!answer] False
+
 9. Я снідаю вранці.
-   > [!answer] true
+   > [!answer] True
+
 10. Я вечеряю вранці.
-    > [!answer] false
+    > [!answer] False
+
 11. Сіль біла.
-    > [!answer] true
+    > [!answer] True
+
 12. Помідор синій.
-    > [!answer] false
-    > [!explanation] Tomato is red.
+    > [!answer] False
 
 ## match-up: Quantities
 > Match the container to the product.

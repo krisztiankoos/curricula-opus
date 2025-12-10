@@ -140,37 +140,42 @@ Checklist for Level A1.3:
 # Activities
 
 ## true-false: Grammar Check
-> Is the grammar correct?
 
 1. У мене немає вода.
-   > [!answer] false
-   > [!explanation] Genitive: води.
+   > [!answer] False
+
 2. Я хочу каву.
-   > [!answer] true (Accusative).
+   > [!answer] True
+
 3. П'ять гривні.
-   > [!answer] false
-   > [!explanation] 5+ -> гривень.
+   > [!answer] False
+
 4. Три гривні.
-   > [!answer] true
+   > [!answer] True
+
 5. Двадцять один гривень.
-   > [!answer] false
-   > [!explanation] 21 ends in 1 -> гривня.
+   > [!answer] False
+
 6. Я хотів би меню.
-   > [!answer] true
+   > [!answer] True
+
 7. Можна рахунок?
-   > [!answer] true
+   > [!answer] True
+
 8. Дайте пляшку води.
-   > [!answer] true (Genitive).
+   > [!answer] True
+
 9. Я їм супу.
-   > [!answer] false
-   > [!explanation] Accusative: суп (Whole object). Or Genitive Partitive, but unlikely context. Let's say False for A1.
+   > [!answer] False
+
 10. У мене немає часу.
-    > [!answer] true
+    > [!answer] True
+
 11. Я п'ю чаю.
-    > [!answer] true (Partitive - Some tea). Or Accusative "Чай". Both okay, but sentence implies "some". Let's mark True.
+    > [!answer] True
+
 12. Кава з цукру.
-    > [!answer] false
-    > [!explanation] З цукром (Instr).
+    > [!answer] False
 
 ## match-up: Number Rules
 > Match number to ending rule.
@@ -424,3 +429,6 @@ Checklist for Level A1.3:
 | будьмо | /budʲmɔ/ | cheers | [🔊](audio_m20_budmo) |
 | здоров'я | /zdɔˈrɔʋjɑ/ | health | [🔊](audio_m20_zdorovya) |
 | свято | /sʲʋjɑtɔ/ | holiday/party | [🔊](audio_m20_svyato) |
+| навчання | /nɑʋˈt͡ʃɑnʲːɑ/ | studies/learning | [🔊](audio_m20_navchannya) |
+| запитання | /zɑpɪˈtɑnʲːɑ/ | question | [🔊](audio_m20_zapytannya) |
+| відповідь | /ʋidˈpɔʋidʲ/ | answer | [🔊](audio_m20_vidpovid) |

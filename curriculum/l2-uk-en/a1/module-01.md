@@ -375,43 +375,20 @@ Now, imagine you are a **ТУРИСТ** in Kyiv. You have your **ПАСПОРТ*
 
 
 ## true-false: Alphabet Facts
-> Read and decide if true or false.
+Read and decide if true or false.
 
 - [x] The letter **В** sounds like English **V**.
-  > Correct! It vibrates like **V** in Victory.
-
 - [ ] The letter **Р** sounds like English **P**.
-  > Incorrect! **Р** sounds like a rolled **R**. **П** sounds like **P**.
-
 - [x] The letter **Х** makes a sound like in "Lo**ch**".
-  > Correct! It is a velar fricative.
-
 - [ ] Ukrainian vowels are often silent.
-  > Incorrect! Ukrainian vowels are full and pure.
-
 - [x] The word **МЕТРО** is neuter.
-  > Correct! It ends in **-О**.
-
 - [ ] **РЕСТОРАН** sounds like "Pectopah".
-  > Incorrect! It sounds like "Restoran". P is R, C is S, H is N.
-
 - [x] **КІТ** means Cat.
-  > Correct! It uses the unique letter **І**.
-
 - [ ] The letter **Н** sounds like English **H**.
-  > Incorrect! **Н** sounds like **N**.
-
 - [x] **Ф** sounds like **F**.
-  > Correct!
-
 - [ ] **У** sounds like **Y**.
-  > Incorrect! **У** sounds like **U** (moon).
-
 - [x] **Л** looks like an upside-down V.
-  > Correct! It is Lambda.
-
 - [ ] **С** sounds like **K**.
-  > Incorrect! **С** is always **S**.
 
 ## match-up: Capital to Small
 > Match the UPPERCASE letter to its lowercase partner.
@@ -511,41 +488,41 @@ In the next module, we will learn the slightly weirder letters—the ones that l
 
 # Vocabulary
 
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| мама | /ˈmɑmɑ/ | mom | noun | f | [🔊](audio_mama) |
-| тато | /ˈtɑtɔ/ | dad | noun | m | [🔊](audio_tato) |
-| банк | /bɑnk/ | bank | noun | m | [🔊](audio_bank) |
-| парк | /pɑrk/ | park | noun | m | [🔊](audio_park) |
-| кафе | /kɑˈfɛ/ | cafe | noun | n | indeclinable [🔊](audio_cafe) |
-| метро | /mɛˈtrɔ/ | metro | noun | n | indeclinable [🔊](audio_metro) |
-| таксі | /tɑkˈs⁽ʲ⁾i/ | taxi | noun | n | indeclinable [🔊](audio_taksi) |
-| радіо | /ˈrɑd⁽ʲ⁾io/ | radio | noun | n | indeclinable [🔊](audio_radio) |
-| піца | /ˈp⁽ʲ⁾itsɑ/ | pizza | noun | f | [🔊](audio_pitsa) |
-| суп | /sup/ | soup | noun | m | [🔊](audio_sup) |
-| салат | /sɑˈlɑt/ | salad | noun | m | [🔊](audio_salat) |
-| лимон | /lɪˈmɔn/ | lemon | noun | m | [🔊](audio_limon) |
-| банан | /bɑˈnɑn/ | banana | noun | m | [🔊](audio_banan) |
-| хокей | /xɔˈkɛj/ | hockey | noun | m | [🔊](audio_khokey) |
-| футбол | /futˈbɔl/ | football | noun | m | [🔊](audio_football) |
-| студент | /stuˈdɛnt/ | student | noun | m | [🔊](audio_student) |
-| турист | /tuˈrɪst/ | tourist | noun | m | [🔊](audio_turist) |
-| музика | /ˈmuzɪkɑ/ | music | noun | f | [🔊](audio_muzyka) |
-| фото | /ˈfɔtɔ/ | photo | noun | n | indeclinable [🔊](audio_foto) |
-| відео | /ˈvidɛɔ/ | video | noun | n | indeclinable [🔊](audio_video) |
-| бар | /bɑr/ | bar | noun | m | [🔊](audio_bar) |
-| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | [🔊](audio_restoran) |
-| доктор | /ˈdɔktɔr/ | doctor | noun | m | colloquial [🔊](audio_doktor) |
-| лікар | /ˈl⁽ʲ⁾ikɑr/ | doctor | noun | m | formal/standard [🔊](audio_likar) |
-| актор | /ɑkˈtɔr/ | actor | noun | m | [🔊](audio_aktor) |
-| опера | /ˈɔpɛrɑ/ | opera | noun | f | [🔊](audio_opera) |
-| балет | /bɑˈlɛt/ | ballet | noun | m | [🔊](audio_balet) |
-| паспорт | /ˈpɑspɔrt/ | passport | noun | m | [🔊](audio_pasport) |
-| віза | /ˈv⁽ʲ⁾izɑ/ | visa | noun | f | [🔊](audio_viza) |
-| карта | /ˈkɑrtɑ/ | map, card | noun | f | [🔊](audio_karta) |
-| комета | /kɔˈmɛtɑ/ | comet | noun | f | [🔊](audio_kometa) |
-| ракета | /rɑˈkɛtɑ/ | rocket | noun | f | [🔊](audio_raketa) |
-| телефон | /tɛlɛˈfɔn/ | phone | noun | m | [🔊](audio_telefon) |
-| інтернет | /intɛrˈnɛt/ | internet | noun | m | [🔊](audio_internet) |
-| какао | /kɑˈkɑo/ | cocoa | noun | n | indeclinable [🔊](audio_kakao) |
-| кава | /ˈkɑvɑ/ | coffee | noun | f | [🔊](audio_kava) |
+| Word | IPA | English | POS | Gender | Note | Audio |
+|------|-----|---------|-----|--------|------|-------|
+| мама | /ˈmɑmɑ/ | mom | noun | f | - | [🔊](audio_mama) |
+| тато | /ˈtɑtɔ/ | dad | noun | m | - | [🔊](audio_tato) |
+| банк | /bɑnk/ | bank | noun | m | - | [🔊](audio_bank) |
+| парк | /pɑrk/ | park | noun | m | - | [🔊](audio_park) |
+| кафе | /kɑˈfɛ/ | cafe | noun | n | indeclinable | [🔊](audio_cafe) |
+| метро | /mɛˈtrɔ/ | metro | noun | n | indeclinable | [🔊](audio_metro) |
+| таксі | /tɑkˈs⁽ʲ⁾i/ | taxi | noun | n | indeclinable | [🔊](audio_taksi) |
+| радіо | /ˈrɑd⁽ʲ⁾io/ | radio | noun | n | indeclinable | [🔊](audio_radio) |
+| піца | /ˈp⁽ʲ⁾itsɑ/ | pizza | noun | f | - | [🔊](audio_pitsa) |
+| суп | /sup/ | soup | noun | m | - | [🔊](audio_sup) |
+| салат | /sɑˈlɑt/ | salad | noun | m | - | [🔊](audio_salat) |
+| лимон | /lɪˈmɔn/ | lemon | noun | m | - | [🔊](audio_limon) |
+| банан | /bɑˈnɑn/ | banana | noun | m | - | [🔊](audio_banan) |
+| хокей | /xɔˈkɛj/ | hockey | noun | m | - | [🔊](audio_khokey) |
+| футбол | /futˈbɔl/ | football | noun | m | - | [🔊](audio_football) |
+| студент | /stuˈdɛnt/ | student | noun | m | - | [🔊](audio_student) |
+| турист | /tuˈrɪst/ | tourist | noun | m | - | [🔊](audio_turist) |
+| музика | /ˈmuzɪkɑ/ | music | noun | f | - | [🔊](audio_muzyka) |
+| фото | /ˈfɔtɔ/ | photo | noun | n | indeclinable | [🔊](audio_foto) |
+| відео | /ˈvidɛɔ/ | video | noun | n | indeclinable | [🔊](audio_video) |
+| бар | /bɑr/ | bar | noun | m | - | [🔊](audio_bar) |
+| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | - | [🔊](audio_restoran) |
+| доктор | /ˈdɔktɔr/ | doctor | noun | m | colloquial | [🔊](audio_doktor) |
+| лікар | /ˈl⁽ʲ⁾ikɑr/ | doctor | noun | m | formal/standard | [🔊](audio_likar) |
+| актор | /ɑkˈtɔr/ | actor | noun | m | - | [🔊](audio_aktor) |
+| опера | /ˈɔpɛrɑ/ | opera | noun | f | - | [🔊](audio_opera) |
+| балет | /bɑˈlɛt/ | ballet | noun | m | - | [🔊](audio_balet) |
+| паспорт | /ˈpɑspɔrt/ | passport | noun | m | - | [🔊](audio_pasport) |
+| віза | /ˈv⁽ʲ⁾izɑ/ | visa | noun | f | - | [🔊](audio_viza) |
+| карта | /ˈkɑrtɑ/ | map, card | noun | f | - | [🔊](audio_karta) |
+| комета | /kɔˈmɛtɑ/ | comet | noun | f | - | [🔊](audio_kometa) |
+| ракета | /rɑˈkɛtɑ/ | rocket | noun | f | - | [🔊](audio_raketa) |
+| телефон | /tɛlɛˈfɔn/ | phone | noun | m | - | [🔊](audio_telefon) |
+| інтернет | /intɛrˈnɛt/ | internet | noun | m | - | [🔊](audio_internet) |
+| какао | /kɑˈkɑo/ | cocoa | noun | n | indeclinable | [🔊](audio_kakao) |
+| кава | /ˈkɑvɑ/ | coffee | noun | f | - | [🔊](audio_kava) |

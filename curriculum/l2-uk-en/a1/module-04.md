@@ -195,7 +195,7 @@ However, in the **Past** or **Future**, the bridge appears.
 *   **Я буду студент.** (I WILL BE a student).
 Only the Present is invisible.
 
-## vocabulary: Identity
+## deep-dive: Identity Vocabulary
 
 **Nationalities:**
 *   **Україна** (Country) -> **Українець** (M) / **Українка** (F).
@@ -532,7 +532,7 @@ You also learned clearly when to use **Ти** (Informal) and **Ви** (Formal). 
 Now you can introduce yourself, say your nationality, and describe your job.
 **Я [Name]. Я [Nationality]. Я [Job].**
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -1,15 +1,16 @@
 # Audit Report: module-12.md
-**Phase:** A1.1 | **Level:** A1 | **Pedagogy:** PPPfy animate masculine nouns | **Target:** 750
+**Phase:** A1.2 | **Level:** A1 | **Pedagogy:** PPPfy animate masculine nouns | **Target:** 750
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 901/750
+- **Words:** ✅ 895/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 5/3
-- **Audio:** ✅ 31 links
+- **Audio:** ✅ 20 links
+- **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -17,7 +18,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 22 | Included in Core |
-| **Presentation: The Accusative Animate** | ✅ | 164 | Included in Core |
+| **Presentation: The Accusative Animate** | ✅ | 158 | Included in Core |
 | **Warm-up: The Dinner Party 🍷** | ✅ | 38 | Included in Core |
 | **1. Meeting the Guests** | ⚪️ | 101 | Skipped |
 | **2. Who knows whom?** | ⚪️ | 55 | Skipped |

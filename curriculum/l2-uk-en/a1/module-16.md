@@ -157,37 +157,43 @@ You typically use Genitive when you see:
 # Activities
 
 ## true-false: Grammar Check
-> Is the genitive form correct?
+
 
 1. Тут немає стіл.
-   > [!answer] false
-   > [!explanation] Genitive required! -> Немає стол**а**.
+   > [!answer] False
+
 2. Тут немає стола.
-   > [!answer] true
+   > [!answer] True
+
 3. Я п'ю каву без цукру.
-   > [!answer] true
+   > [!answer] True
+
 4. Я п'ю каву без цукор.
-   > [!answer] false
-   > [!explanation] Without (без) + Genitive! -> без цукр**у**.
+   > [!answer] False
+
 5. У мене немає часу.
-   > [!answer] true
+   > [!answer] True
+
 6. У мене немає час.
-   > [!answer] false
-   > [!explanation] Abstract masculine takes -у. -> час**у**.
+   > [!answer] False
+
 7. Немає води.
-   > [!answer] true
+   > [!answer] True
+
 8. Немає вода.
-   > [!answer] false
-   > [!explanation] Feminine -а changes to -и.
+   > [!answer] False
+
 9. Тут немає університет.
-   > [!answer] false
-   > [!explanation] Немає університет**у**.
+   > [!answer] False
+
 10. Тут немає університету.
-    > [!answer] true
+    > [!answer] True
+
 11. Я хочу чай без лимона.
-    > [!answer] true
+    > [!answer] True
+
 12. Я хочу чай без лимон.
-    > [!answer] false
+    > [!answer] False
 
 ## match-up: Opposites
 > Match the "With" (Nominative/Instrumental concept) to "Without" (Genitive).

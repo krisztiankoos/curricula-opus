@@ -488,40 +488,17 @@ Don't say "**Ні, я погано говорю**" (No, I speak badly). Correct 
 > True or False?
 
 - [x] **Де** is for moving direction.
-  > [!explanation] **Де** is static. **Куди** is moving.
-
 - [x] **Чи** turns a sentence into a question.
-  > [!explanation] It is the question particle.
-
 - [ ] "I never not read" is wrong in Ukrainian.
-  > [!explanation] Double negation is correct.
-
 - [x] **Не** goes before the verb.
-  > [!explanation] Always before the verb.
-
 - [ ] **Хто** asks about things.
-  > [!explanation] **Хто** is for people. **Що** is for things.
-
 - [x] **Як справи?** means "How are things?".
-  > [!explanation] Standard greeting.
-
 - [ ] **Чому** means "Where".
-  > [!explanation] **Чому** means Why.
-
 - [x] **Звідки** means "Where from".
-  > [!explanation] Origin.
-
 - [ ] **Часто** means "Never".
-  > [!explanation] It means Often.
-
 - [x] **Завжди** means "Always".
-  > [!explanation] Forever.
-
 - [ ] **Іноді** means "Always".
-  > [!explanation] It means Sometimes.
-
 - [x] You can ask a question just by intonation.
-  > [!explanation] Often used in spoken language.
 
 ## match-up: Opposites
 > Match the opposite words.

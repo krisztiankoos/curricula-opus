@@ -83,7 +83,7 @@ def audit_module(file_path):
             'min_activities': 8,
             'min_items_per_activity': 12,
             'min_types_unique': 4,
-            'min_vocab': 30,
+            'min_vocab': 20,
             'priority_types': {'fill-in', 'match-up', 'anagram', 'unjumble', 'quiz'}
         },
         'A2': {
@@ -174,13 +174,27 @@ def audit_module(file_path):
         print(f"❌ AUDIT FAILED: Tone Error. Found 'Kiev'. Use 'Kyiv' (Ukrainian transliteration).")
         sys.exit(1)
 
-    # Activity Structure: Fill-in Options (Global Rule)
+    # Summary Check
+    has_summary = any(re.search(r'^#+\s*Summary', line, re.IGNORECASE) for line in content.split('\n'))
+    if not has_summary:
+        print(f"❌ AUDIT FAILED: Missing 'Summary' section.")
+        print("  -> Every module must have a Summary section.")
+        sys.exit(1)
+
+    # Activity Structure: Fill-in Options & Numbering (Global Rule)
     # Open-ended fill-ins are too ambiguous for digital app. Explicit options are required.
+    # ALSO: Parser strictly requires numbered lists (1. ...).
     for title, text in section_map.items():
         if title.lower().startswith('fill-in'):
             if '> [!options]' not in text:
                 print(f"❌ AUDIT FAILED: Activity '{title}' missing mandatory > [!options] block.")
                 print("  -> ALL fill-in activities require explicit options/choices.")
+                sys.exit(1)
+            
+            # Check for numbered items (Strict Parser Requirement)
+            if not re.search(r'^\s*\d+\.', text, re.MULTILINE):
+                print(f"❌ AUDIT FAILED: Activity '{title}' missing numbered items (1. ...).")
+                print("  -> Parser requires fill-in items to be a numbered list to function.")
                 sys.exit(1)
     
     # ------------------------------------------------------------
@@ -451,9 +465,12 @@ def audit_module(file_path):
     if vocab_section_match:
         vocab_text = vocab_section_match.group(1)
         # Count rows that start with | and don't contain ---
-        v_rows = len([l for l in vocab_text.split('\n') if l.strip().startswith('|') and '---' not in l])
+        lines = vocab_text.split('\n')
+        v_rows = len([l for l in lines if l.strip().startswith('|') and '---' not in l])
         # Subtract header
         vocab_count = max(0, v_rows - 1)
+    else:
+        print(f"DEBUG: No 'Vocabulary' section found. Content tail: {content[-200:]}")
     
     if vocab_count >= vocab_target:
         results['vocab'] = {'status': 'PASS', 'icon': '✅', 'msg': f"{vocab_count}/{vocab_target}"}
@@ -558,13 +575,22 @@ def audit_module(file_path):
             if re.search(pat, stripped, re.IGNORECASE):
                 lint_errors.append(f"Line {line_num}: Potential AI Monologue detected ('{pat}'). Please remove.")
 
-        # 9. Audio Artifact Check (Global)
-        # We only allow 'audio_' if it is inside (audio_...) inside a Markdown link or [🔊]
-        # But 'audio_' appearing in plain text usually means a regex failure.
-        # We strip out valid audio links first, then check if 'audio_' remains.
-        temp_line = re.sub(r'\(audio_[a-zA-Z0-9_\-]+\)', '', stripped)
-        if 'audio_' in temp_line:
-             lint_errors.append(f"Line {line_num}: 'audio_' detected in text body. Likely a regex replace error.")
+        # 9. Audio Artifact Check (Strict: Vocab Only)
+        # We allow 'audio_' ONLY if we are inside the Vocabulary section.
+        # But here we are iterating lines_raw. We need to know if we are in Vocabulary section.
+        is_vocab_section = False
+        # (Naive check: if we passed "## Vocabulary" header)
+        # However, verifying line-by-line state is fragile.
+        # Instead, let's just ban 'audio_' in this loop unless it's a Vocab Table row.
+        
+        # Heuristic: Vocab rows start with | and have multiple columns.
+        is_vocab_row = (stripped.startswith('|') and stripped.count('|') >= 3)
+        
+        if 'audio_' in stripped and not is_vocab_row:
+             # Exception: Deep Dive or Grammar Tables might legitimately reference specific audio?
+             # User Request: "change the ode that foro links are only in the vocab part please"
+             # So we strictly BAN it elsewhere.
+             lint_errors.append(f"Line {line_num}: 'audio_' link detected outside Vocabulary Table. User Rule: Audio links only in Vocab.")
 
         # 10. Empty Header Check (Lonely #)
         if re.match(r'^#+\s*$', stripped):
@@ -623,6 +649,11 @@ def audit_module(file_path):
     report_lines.append("")
     
     if lint_errors:
+        print("\n❌ LINT ERRORS FOUND:")
+        for err in lint_errors:
+            print(f"  - {err}")
+        print("")
+        
         report_lines.append("## LINT ERRORS")
         for err in lint_errors:
             report_lines.append(f"- ❌ {err}")

@@ -1,6 +1,17 @@
 # Audit Report: module-05.md
 **Phase:** A1.1 | **Level:** A1 | **Pedagogy:** PPP | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## LINT ERRORS
+- ❌ Line 611: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 612: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 613: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 614: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 615: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 616: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 617: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 618: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
+- ❌ Line 619: Invalid Activity Type 'narrative'. Supported: match-up, gap-fill, quiz, true-false, group-sort, unjumble, fill-in, error-correction, anagram.
 
 ## Gates
 - **Words:** ✅ 785/750
@@ -10,8 +21,9 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/3
 - **Audio:** ✅ 30 links
+- **Vocab:** ✅ 30/20
 - **Structure:** ✅ Valid Structure
-- **Lint:** ✅ Clean Format
+- **Lint:** ❌ 9 Format Errors
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -20,7 +32,7 @@
 | **warm-up** | ✅ | 78 | Included in Core |
 | **presentation** | ✅ | 107 | Included in Core |
 | **narrative: The Lost and Found** | ✅ | 150 | Included in Core |
-| **vocabulary: My Stuff** | ➖ | 105 | Excluded Type |
+| **deep-dive: My Stuff Vocabulary** | ➖ | 105 | Excluded Type |
 | **cultural insight: The "Packet" Culture** | ✅ | 77 | Included in Core |
 | **deep-dive: Demonstrative Distance** | ⚪️ | 120 | Skipped |
 | **narrative: The Souvenir Shop** | ✅ | 96 | Included in Core |
@@ -38,3 +50,4 @@
 | **fill-in: Real World** | 🎮 | 12 | Activity (12 items) |
 | **group-sort: Kitchen vs Bedroom** | 🎮 | 12 | Activity (12 items) |
 | **narrative: Tom's Victory** | ✅ | 49 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

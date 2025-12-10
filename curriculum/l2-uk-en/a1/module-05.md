@@ -91,7 +91,7 @@ Tom left his bag on the metro. He runs to the **Бюро знахідок** (Los
 > Use **Це** (invariant) to identify ("It is a...").
 > Use **Цей/Ця/Це** (agreeing) to point at a specific one.
 
-## vocabulary: My Stuff
+## deep-dive: My Stuff Vocabulary
 
 **Kitchen:**
 *   **Чашка** (Cup - F). -> **Ця** чашка.
@@ -617,7 +617,7 @@ He sees a street musician.
 **Musician:** Ні, це фолк.
 Tom smiles. This city (**Це місто**) is alive. And he is part of it.
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

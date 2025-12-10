@@ -153,37 +153,42 @@ We learned how to be polite and navigate a Ukrainian café.
 # Activities
 
 ## true-false: Cafe Etiquette
-> Is this polite or logical?
 
 1. Я кажу "Дай каву!" (Give coffee!).
-   > [!answer] false
-   > [!explanation] Too rude. Use "Дайте" (Plural/Formal) and "please".
+   > [!answer] False
+
 2. Я кажу "Можна меню, будь ласка?".
-   > [!answer] true
+   > [!answer] True
+
 3. Бариста — це людина, яка готує піцу.
-   > [!answer] false
-   > [!explanation] Barista makes coffee.
+   > [!answer] False
+
 4. Еспресо — це велика кава з молоком.
-   > [!answer] false
-   > [!explanation] Espresso is small and strong.
+   > [!answer] False
+
 5. Лате — це кава з молоком.
-   > [!answer] true
+   > [!answer] True
+
 6. Я п'ю каву з сіллю.
-   > [!answer] false
-   > [!explanation] Unusual, but technically possible. Generally false contextually.
+   > [!answer] False
+
 7. Я їм ложкою суп.
-   > [!answer] true
+   > [!answer] True
+
 8. Я п'ю чай виделкою.
-   > [!answer] false
+   > [!answer] False
+
 9. Капучино має пінку (foam).
-   > [!answer] true
+   > [!answer] True
+
 10. У Львові не люблять каву.
-    > [!answer] false
+    > [!answer] False
+
 11. Я плачу карткою.
-    > [!answer] true
+    > [!answer] True
+
 12. Я плачу усмішкою.
-    > [!answer] false
-    > [!explanation] Nice try, but you need money.
+    > [!answer] False
 
 ## match-up: Drinks vs Food
 > Categorize items.

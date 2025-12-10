@@ -10,6 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 5/3
 - **Audio:** ✅ 83 links
+- **Vocab:** ✅ 36/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 

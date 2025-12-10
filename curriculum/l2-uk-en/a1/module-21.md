@@ -138,14 +138,14 @@ For most verbs, remove the **-ти** from the infinitive and add:
    > - були
    > [!answer] були
 
-5. Я (audio_male) ___ каву. (I drank coffee.)
+5. Я (male) ___ каву. (I drank coffee.)
    > [!options]
    > - пив
    > - пила
    > - пило
    > [!answer] пив
 
-6. Я (audio_female) ___ музику. (I listened to music.)
+6. Я (female) ___ музику. (I listened to music.)
    > [!options]
    > - слухав
    > - слухала
@@ -159,14 +159,14 @@ For most verbs, remove the **-ти** from the infinitive and add:
    > - дивилися
    > [!answer] дивилися
 
-8. Сонце (audio_neuter) ___ яскраво. (The sun shone brightly.)
+8. Сонце (neuter) ___ яскраво. (The sun shone brightly.)
    > [!options]
    > - світив
    > - світила
    > - світило
    > [!answer] світило
 
-9. Ти (audio_male) ___ це? (Did you see this?)
+9. Ти (male) ___ це? (Did you see this?)
    > [!options]
    > - бачив
    > - бачила
@@ -288,17 +288,17 @@ For most verbs, remove the **-ти** from the infinitive and add:
 ## match-up: Who did what?
 > Match sentences to their translations.
 
-1. Я читала книгу -> I (audio_female) read a book
-2. Я читав книгу -> I (audio_male) read a book
+1. Я читала книгу -> I (female) read a book
+2. Я читав книгу -> I (male) read a book
 3. Вона працювала -> She worked
 4. Він працював -> He worked
 5. Ми ходили -> We walked
 6. Вони говорили -> They spoke
-7. Ти (audio_m) бачив? -> Did you see?
-8. Ти (audio_f) знала? -> Did you know?
+7. Ти (m) бачив? -> Did you see?
+8. Ти (f) знала? -> Did you know?
 9. Сонце світило -> The sun shone
 10. Вікно було тут -> The window was here
-11. Я (audio_f) їла -> I ate
+11. Я (f) їла -> I ate
 12. Ми пили чай -> We drank tea
 
 ## unjumble: Past Sentences
@@ -430,7 +430,7 @@ For most verbs, remove the **-ти** from the infinitive and add:
 ## fill-in: My Story
 > Complete the sentences from the story with correct verbs.
 
-1. Я (audio_male) вчора ___ вдома.
+1. Я (male) вчора ___ вдома.
    > [!options]
    > - був
    > - була
@@ -526,7 +526,7 @@ For most verbs, remove the **-ти** from the infinitive and add:
 
 Жінка **була** дуже щаслива. Антон теж **був** радий. Він **віддав** гаманець і **пішов** додому. Ввечері він **розповів** цю історію мамі. Він **зробив** добру справу.
 
-*(Yesterday was a very interesting and slightly strange day. Anton went to the park near home. The weather was wonderful. The sun shone brightly, the sky was blue, and birds were singing. Anton sat on a bench under an old tree and read a new magazine about cars. / Suddenly he saw a small black object. It was a wallet! The wallet lay on the grass near the road. Anton stood up, approached and took the wallet. He opened it. There was money (audio_hryvnias and dollars), old photos, but there were no documents. / "Whose wallet is this? Who lost it?" thought Anton. He stood and waited. / Ten minutes later he saw a woman. She was running and looking for something. She was looking under benches, under trees and on the grass. She was very sad and almost crying. / "Excuse me, did you lose something?" asked Anton loudly. / The woman stopped. / "Yes, I lost a wallet! There was money for medicine," said the woman. / "What is it like?" Anton wanted to verify. / "It is black, leather, old." / "Is this yours?" Anton showed the find. / "Yes! Yes, it is mine! Thank you! You saved me!" / The woman was very happy. Anton was also glad. He gave back the wallet and went home. In the evening he told this story to mom. He did a good deed.)*
+*(Yesterday was a very interesting and slightly strange day. Anton went to the park near home. The weather was wonderful. The sun shone brightly, the sky was blue, and birds were singing. Anton sat on a bench under an old tree and read a new magazine about cars. / Suddenly he saw a small black object. It was a wallet! The wallet lay on the grass near the road. Anton stood up, approached and took the wallet. He opened it. There was money (hryvnias and dollars), old photos, but there were no documents. / "Whose wallet is this? Who lost it?" thought Anton. He stood and waited. / Ten minutes later he saw a woman. She was running and looking for something. She was looking under benches, under trees and on the grass. She was very sad and almost crying. / "Excuse me, did you lose something?" asked Anton loudly. / The woman stopped. / "Yes, I lost a wallet! There was money for medicine," said the woman. / "What is it like?" Anton wanted to verify. / "It is black, leather, old." / "Is this yours?" Anton showed the find. / "Yes! Yes, it is mine! Thank you! You saved me!" / The woman was very happy. Anton was also glad. He gave back the wallet and went home. In the evening he told this story to mom. He did a good deed.)*
 
 ---
 
@@ -543,7 +543,7 @@ In Ukrainian verbs have "Aspect" (View of the action).
    - Я **прочитав** книгу. (I finished reading the book.)
    - Він **побачив** гаманець. (He saw - moment).
 
-At A1 level, we mostly use the basic forms (Imperfective) to describe facts and processes relative to the past: **був** (audio_was), **ходив** (audio_went/walked), **жив** (audio_lived). Don't worry about memorizing pairs yet, just focus on the **-в/-ла** endings context!
+At A1 level, we mostly use the basic forms (Imperfective) to describe facts and processes relative to the past: **був**, **ходив**, **жив**. Don't worry about memorizing pairs yet, just focus on the **-в/-ла** endings context!
 
 ---
 
@@ -573,10 +573,10 @@ Next, we will talk about the **Future**!
 | минулого місяця | [m ɪ n u l ɔ ɦ ɔ m i sʲ ɑ t͡sʲ ɑ] | last month | [🔊](audio_mynuloho_misiatsia) |
 | раніше | [r ɑ n i ʃ e] | earlier / before | [🔊](audio_ranishe) |
 | колись | [k ɔ l ɪ sʲ] | once / someday | [🔊](audio_kolys) |
-| був | [b u w] | was (audio_m) | [🔊](audio_buv) |
-| була | [b u l ɑ] | was (audio_f) | [🔊](audio_bula) |
-| було | [b u l ɔ] | was (audio_n) | [🔊](audio_bulo) |
-| були | [b u l ɪ] | were (audio_pl) | [🔊](audio_buly) |
+| був | [b u w] | was (m) | [🔊](audio_buv) |
+| була | [b u l ɑ] | was (f) | [🔊](audio_bula) |
+| було | [b u l ɔ] | was (n) | [🔊](audio_bulo) |
+| були | [b u l ɪ] | were (pl) | [🔊](audio_buly) |
 | робив | [r ɔ b ɪ w] | did / made | [🔊](audio_robyv) |
 | читав | [t͡ʃ ɪ t ɑ w] | read | [🔊](audio_chytav) |
 | писав | [p ɪ s ɑ w] | wrote | [🔊](audio_pysav) |

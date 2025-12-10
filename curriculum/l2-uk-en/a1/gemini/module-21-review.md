@@ -3,13 +3,14 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 847/750
+- **Words:** ✅ 844/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 25 links
+- **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -30,6 +31,6 @@
 | **fill-in: Missing Letters** | 🎮 | 12 | Activity (12 items) |
 | **fill-in: My Story** | 🎮 | 12 | Activity (12 items) |
 | **Story Time: The Lost Wallet** | ✅ | 430 | Included in Core |
-| **Deep Dive: "Did" vs "Was Doing"** | ✅ | 117 | Included in Core |
+| **Deep Dive: "Did" vs "Was Doing"** | ✅ | 114 | Included in Core |
 | **Summary** | ➖ | 36 | Excluded Type |
 | **Vocabulary** | ➖ | 25 | Excluded Type |

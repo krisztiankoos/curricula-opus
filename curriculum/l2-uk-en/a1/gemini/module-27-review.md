@@ -10,7 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 30 links
-- **Vocab:** ✅ 30/30
+- **Vocab:** ✅ 30/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -26,10 +26,10 @@
 | **Story Time: The Fashion Show 📖** | ✅ | 262 | Included in Core |
 | **Summary** | ➖ | 69 | Excluded Type |
 | **match-up: Color Mixer** | 🎮 | 12 | Activity (12 items) |
-| **group-sort: The Wardrobe** | 🎮 | 16 | Activity (16 items) |
-| **fill-in: Dress the Models** | 🎮 | 12 | Activity (12 items) |
+| **group-sort: The Wardrobe** | 🎮 | 17 | Activity (17 items) |
+| **fill-in: Color Agreement** | 🎮 | 12 | Activity (12 items) |
 | **quiz: What is strange?** | 🎮 | 12 | Activity (12 items) |
 | **true-false: Fashion Police** | 🎮 | 12 | Activity (12 items) |
-| **unjumble: Describe the Look** | 🎮 | 12 | Activity (12 items) |
+| **unjumble: Describe the Look** | 🎮 | 16 | Activity (16 items) |
 | **match-up: Who wears what?** | 🎮 | 12 | Activity (12 items) |
-| **fill-in: My Style** | 🎮 | 30 | Activity (30 items) |
+| **fill-in: My Style** | 🎮 | 12 | Activity (12 items) |

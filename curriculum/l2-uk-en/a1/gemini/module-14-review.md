@@ -1,15 +1,16 @@
 # Audit Report: module-14.md
-**Phase:** A1.1 | **Level:** A1 | **Pedagogy:** PPP | **Target:** 750
+**Phase:** A1.2 | **Level:** A1 | **Pedagogy:** PPP | **Target:** 750
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 986/750
+- **Words:** ✅ 925/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/3
 - **Audio:** ✅ 30 links
+- **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -19,7 +20,7 @@
 | **Intro/Narrative** | ✅ | 26 | Included in Core |
 | **Warm-up: Whose Phone? 📱** | ✅ | 90 | Included in Core |
 | **Presentation: The Chameleon Pronouns 🦎** | ✅ | 128 | Included in Core |
-| **Reading: My Family Album 📸** | ✅ | 151 | Included in Core |
+| **Reading: My Family Album 📸** | ✅ | 90 | Included in Core |
 | **Cultural Insight: "One's Own" (Свій) 🏠** | ✅ | 84 | Included in Core |
 | **Dialogue: The Mix-up 🎒** | ✅ | 58 | Included in Core |
 | **Story Time: The Evil Twin 😈** | ✅ | 98 | Included in Core |

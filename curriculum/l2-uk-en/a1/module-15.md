@@ -38,13 +38,13 @@ To give directions, we use the **Imperative Mood** (Наказовий спос�
 In A1, we focus on the Polite/Plural form because you talk to strangers.
 Usually, you just add **-іть**!
 
-| Infinitve | Command (You-Formal) | English | Example |
-|---|---|---|---|
-| Йти (To go/walk) | **Йдіть** | Go! | Йдіть прямо. [🔊](audio_m15_go) |
-| Повертати (To turn) | **Поверніть** | Turn! | Поверніть направо. [🔊](audio_m15_turn) |
-| Дивитися (To look) | **Дивіться** | Look! | Дивіться туди. [🔊](audio_m15_look) |
-| Чекати (To wait) | **Чекайте** | Wait! | Чекайте тут. [🔊](audio_m15_wait) |
-| Зупинятися (To stop)| **Зупиніться** | Stop! | Зупиніться, будь ласка! [🔊](audio_m15_stop) |
+| Infinitve | Command (You-Formal) | English | Example | Audio |
+|---|---|---|---|---|
+| Йти (To go/walk) | **Йдіть** | Go! | Йдіть прямо. | [🔊](audio_m15_go) |
+| Повертати (To turn) | **Поверніть** | Turn! | Поверніть направо. | [🔊](audio_m15_turn) |
+| Дивитися (To look) | **Дивіться** | Look! | Дивіться туди. | [🔊](audio_m15_look) |
+| Чекати (To wait) | **Чекайте** | Wait! | Чекайте тут. | [🔊](audio_m15_wait) |
+| Зупинятися (To stop)| **Зупиніться** | Stop! | Зупиніться, будь ласка! | [🔊](audio_m15_stop) |
 
 > [!tip] 💡 **Politeness:** Always add **Будь ласка** (Please). "Йдіть прямо" is okay. "Йдіть прямо, будь ласка" is excellent.
 
@@ -165,28 +165,28 @@ When you take a taxi (Bolt, Uber, Uklon):
 
 # Vocabulary
 
-| Word | IPA | English | Note |
-|---|---|---|---|
-| місто | /ˈm⁽ʲ⁾istɔ/ | city | Neut ([🔊](audio_m15_city)) |
-| вулиця | /ˈwulit͡sʲɑ/ | street | Fem ([🔊](audio_m15_street)) |
-| площа | /ˈplɔʃt͡ʃɑ/ | square | Fem ([🔊](audio_m15_square)) |
-| прямо | /ˈprjɑmɔ/ | straight | Adv ([🔊](audio_m15_straight)) |
-| направо | /nɑˈprɑwɔ/ | to the right | Adv ([🔊](audio_m15_right)) |
-| наліво | /nɑˈlʲiwɔ/ | to the left | Adv ([🔊](audio_m15_left)) |
-| стоп | /stɔp/ | stop | Int ([🔊](audio_m15_stopword)) |
-| далеко | /dɑˈlɛkɔ/ | far | Adv ([🔊](audio_m15_far)) |
-| близько | /ˈblɪzʲkɔ/ | near/close | Adv ([🔊](audio_m15_close)) |
-| тут | /tut/ | here | Adv ([🔊](audio_m15_here)) |
-| там | /tɑm/ | there | Adv ([🔊](audio_m15_there)) |
-| біля | /ˈb⁽ʲ⁾ilʲɑ/ | near (+Gen) | Prep ([🔊](audio_m15_near)) |
-| напроти | /nɑˈprɔtɪ/ | opposite (+Gen) | Prep ([🔊](audio_m15_opposite)) |
-| аптека | /ɑpˈtɛkɑ/ | pharmacy | Fem ([🔊](audio_m15_pharmacy)) |
-| вокзал | /wɔkˈzɑl/ | train station | Masc ([🔊](audio_m15_station)) |
-| аеропорт | /ɑɛrɔˈpɔrt/ | airport | Masc ([🔊](audio_m15_airport)) |
-| зупинка | /zʊˈpɪnkɑ/ | bus stop | Fem ([🔊](audio_m15_busstop)) |
-| метро | /mɛˈtrɔ/ | metro | Neut ([🔊](audio_m15_metro)) |
-| перехрестя | /pɛrɛˈxrɛsʲtʲɑ/ | crossroads | Neut ([🔊](audio_m15_crossroads)) |
-| світлофор | /s⁽ʲ⁾w⁽ʲ⁾itlɔˈfɔr/ | traffic light | Masc ([🔊](audio_m15_trafficlight)) |
+| Word | IPA | English | POS | Gender | Audio |
+|---|---|---|---|---|---|
+| місто | /ˈm⁽ʲ⁾istɔ/ | city | noun | n | [🔊](audio_m15_city) |
+| вулиця | /ˈwulit͡sʲɑ/ | street | noun | f | [🔊](audio_m15_street) |
+| площа | /ˈplɔʃt͡ʃɑ/ | square | noun | f | [🔊](audio_m15_square) |
+| прямо | /ˈprjɑmɔ/ | straight | adv | - | [🔊](audio_m15_straight) |
+| направо | /nɑˈprɑwɔ/ | to the right | adv | - | [🔊](audio_m15_right) |
+| наліво | /nɑˈlʲiwɔ/ | to the left | adv | - | [🔊](audio_m15_left) |
+| стоп | /stɔp/ | stop | int | - | [🔊](audio_m15_stopword) |
+| далеко | /dɑˈlɛkɔ/ | far | adv | - | [🔊](audio_m15_far) |
+| близько | /ˈblɪzʲkɔ/ | near/close | adv | - | [🔊](audio_m15_close) |
+| тут | /tut/ | here | adv | - | [🔊](audio_m15_here) |
+| там | /tɑm/ | there | adv | - | [🔊](audio_m15_there) |
+| біля | /ˈb⁽ʲ⁾ilʲɑ/ | near (+Gen) | prep | - | [🔊](audio_m15_near) |
+| напроти | /nɑˈprɔtɪ/ | opposite (+Gen) | prep | - | [🔊](audio_m15_opposite) |
+| аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f | [🔊](audio_m15_pharmacy) |
+| вокзал | /wɔkˈzɑl/ | train station | noun | m | [🔊](audio_m15_station) |
+| аеропорт | /ɑɛrɔˈpɔrt/ | airport | noun | m | [🔊](audio_m15_airport) |
+| зупинка | /zʊˈpɪnkɑ/ | bus stop | noun | f | [🔊](audio_m15_busstop) |
+| метро | /mɛˈtrɔ/ | metro | noun | n | [🔊](audio_m15_metro) |
+| перехрестя | /pɛrɛˈxrɛsʲtʲɑ/ | crossroads | noun | n | [🔊](audio_m15_crossroads) |
+| світлофор | /s⁽ʲ⁾w⁽ʲ⁾itlɔˈfɔr/ | traffic light | noun | m | [🔊](audio_m15_trafficlight) |
 
 # Activities
 
@@ -339,37 +339,44 @@ When you take a taxi (Bolt, Uber, Uklon):
     > [!answer] ЦЕНТР
 
 ## true-false: Map Reader
-> Look at the text in "Reading". True or False?
+Look at the text in "Reading". True or False?
 
 1. Ратуша на площі.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 2. Музей зліва від Ратуші.
-   > [!answer] false
-   > [!explanation] Text says "Справа" (Right).
+   - [ ] True
+   - [x] False
 3. Ресторан зліва від Ратуші.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 4. Фонтан біля театру.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 5. Готель напроти фонтану.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 6. Метро у центрі.
-   > [!answer] true
-   > [!explanation] Implied "Everything is strictly compact".
+   - [x] True
+   - [ ] False
 7. Аптека біля банку.
-   > [!answer] false
-   > [!explanation] Not mentioned in text.
+   - [ ] True
+   - [x] False
 8. Це опис (description) Києва.
-   > [!answer] false
-   > [!explanation] Mentions Opera/Rathaus - likely Lviv, but generic.
+   - [ ] True
+   - [x] False
 9. Центр великий.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 10. Ресторан дешевий (cheap).
-    > [!answer] false
-    > [!explanation] Text says "дорогий" (expensive).
+    - [ ] True
+    - [x] False
 11. Оперний театр прямо.
-    > [!answer] true
+    - [x] True
+    - [ ] False
 12. У центрі немає фонтану.
-    > [!answer] false
+    - [ ] True
+    - [x] False
 
 ## unjumble: Giving Orders
 > Make polite commands.

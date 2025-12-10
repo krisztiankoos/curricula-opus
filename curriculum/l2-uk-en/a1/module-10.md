@@ -194,6 +194,14 @@ Usually, people share food sharing (**Ділитися їжею**) on the train.
 > Don't fall.
 > And help the bottom bunk person with the table.
 
+## cultural insight: Diploma
+In Ukraine, graduation is a huge holiday.
+We say: **Вітаю!** (Congratulations!).
+And we give flowers. Lots of flowers.
+Usually odd numbers (3, 5, 7). Even numbers (2, 4, 6) are for funerals.
+**Rule:** Give 3 roses to a living person. Give 2 to a dead one.
+Don't mix this up.
+
 # Activities
 
 ## match-up: Alphabet Attack
@@ -427,43 +435,18 @@ Usually, people share food sharing (**Ділитися їжею**) on the train.
 | Що ви п'єте? | Сік. |
 
 ## true-false: Ukraine Facts
-> What do you know about Ukraine?
-
 - [x] **Київ** is the capital.
-  > [!explanation] Yes, Kyiv is the capital.
-
 - [ ] **Сало** is a vegetable.
-  > [!explanation] Salo is pork fat.
-
 - [x] **Борщ** is a soup.
-  > [!explanation] A famous beet soup.
-
 - [ ] "Hello" in Ukrainian is "Gracias".
-  > [!explanation] It is **Привіт**.
-
 - [x] **Так** means "Yes".
-  > [!explanation] True.
-
 - [ ] **Ні** means "Yes".
-  > [!explanation] **Ні** means "No".
-
 - [x] **Дякую** means "Thank you".
-  > [!explanation] True.
-
 - [ ] Coffee is "Чай".
-  > [!explanation] Coffee is **Кава**.
-
 - [x] **Я** means "I".
-  > [!explanation] True.
-
 - [ ] **Ми** means "You".
-  > [!explanation] **Ми** means "We".
-
 - [x] **Вареники** are dumplings.
-  > [!explanation] Filled with potato or cherries.
-
 - [ ] **Студент** means Professor.
-  > [!explanation] It means Student.
 
 ## fill-in: The Final boss
 > Complete the text.
@@ -523,13 +506,6 @@ You are no longer a beginner. You are a **Survivor**.
 Next Phase: **A1.2 Navigation**.
 Get ready for Cases. Get ready for Life.
 
-## cultural insight: Diploma
-In Ukraine, graduation is a huge holiday.
-We say: **Вітаю!** (Congratulations!).
-And we give flowers. Lots of flowers.
-Usually odd numbers (3, 5, 7). Even numbers (2, 4, 6) are for funerals.
-**Rule:** Give 3 roses to a living person. Give 2 to a dead one.
-Don't mix this up.
 
 # Vocabulary
 > Review words.
@@ -546,3 +522,13 @@ Don't mix this up.
 | робити | /rɔˈbɪtɪ/ | to do | v | [🔊](audio_robyty) |
 | їсти | /ˈjistɪ/ | to eat | v | [🔊](audio_yisty) |
 | смачний | /smɑtʃˈnɪj/ | tasty | adj | [🔊](audio_smachnyy) |
+| Україна | /ukrɑˈjinɑ/ | Ukraine | n | [🔊](audio_ukrayina) |
+| місто | /ˈmistɔ/ | city | n | [🔊](audio_misto) |
+| друг | /druh/ | friend | n | [🔊](audio_druh) |
+| говорити | /hɔvɔˈrɪtɪ/ | to speak | v | [🔊](audio_hovoryty) |
+| хотіти | /xɔˈtitɪ/ | to want | v | [🔊](audio_khotyty) |
+| вода | /vɔˈdɑ/ | water | n | [🔊](audio_voda) |
+| кава | /ˈkɑvɑ/ | coffee | n | [🔊](audio_kava) |
+| борщ | /bɔrʃtʃ/ | borscht | n | [🔊](audio_borshch) |
+| гарний | /ˈhɑrnɪj/ | good/beautiful | adj | [🔊](audio_harnyy) |
+| нормально | /nɔrˈmɑlʲnɔ/ | normal/fine | adv | [🔊](audio_normalno) |

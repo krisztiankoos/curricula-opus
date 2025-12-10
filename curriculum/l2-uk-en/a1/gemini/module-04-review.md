@@ -10,6 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 3/3
 - **Audio:** ✅ 32 links
+- **Vocab:** ✅ 32/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -26,7 +27,7 @@
 | **narrative: At the Border** | ✅ | 70 | Included in Core |
 | **cultural insight: The Bruderschaft** | ✅ | 72 | Included in Core |
 | **deep-dive: The Philosophy of Zero** | ⚪️ | 60 | Skipped |
-| **vocabulary: Identity** | ➖ | 42 | Excluded Type |
+| **deep-dive: Identity Vocabulary** | ➖ | 42 | Excluded Type |
 | **practice** | ➖ | 39 | Excluded Type |
 | **match-up: Countries and Humans** | 🎮 | 12 | Activity (12 items) |
 | **match-up: Pronoun Power** | 🎮 | 12 | Activity (12 items) |
@@ -36,4 +37,5 @@
 | **match-up: Pairs** | 🎮 | 12 | Activity (12 items) |
 | **true-false: Grammar Check** | 🎮 | 12 | Activity (12 items) |
 | **anagram: Profession Chaos** | 🎮 | 12 | Activity (12 items) |
-| **group-sort: Pronoun Categories** | 🎮 | 46 | Activity (46 items) |
+| **group-sort: Pronoun Categories** | 🎮 | 13 | Activity (13 items) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

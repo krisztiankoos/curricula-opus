@@ -45,7 +45,7 @@ objectives:
 
 ## Presentation: Future Tense
 
-In Ukrainian, it is very easy to talk about the future! You just need the helper verb **бути** (audio_to be) + **Infinitive**.
+In Ukrainian, it is very easy to talk about the future! You just need the helper verb **бути** (to be) + **Infinitive**.
 
 ### 1. Conjugation of "Бути" (Will)
 
@@ -403,21 +403,56 @@ In Ukrainian, it is very easy to talk about the future! You just need the helper
 11. Ви будете платити? -> Так, я буду платити.
 12. Хто це буде? -> Це буде сюрприз.
 
-## transform: Present to Future
+## fill-in: Present to Future
 > Change the sentence to Future Tense.
 
-1. Я читаю. (I read) -> Я буду читати.
-2. Ми працюємо. (We work) -> Ми будемо працювати.
-3. Ти знаєш? (Do you know?) -> Ти будеш знати?
-4. Вони грають. (They play) -> Вони будуть грати.
-5. Вона спить. (She sleeps) -> Вона буде спати.
-6. Я не розумію. (I don't understand) -> Я не буду розуміти.
-7. Ви слухаєте? (Are you listening?) -> Ви будете слухати?
-8. Він готує. (He cooks) -> Він буде готувати.
-9. Сонце світить. (Sun follows) -> Сонце буде світити.
-10. Ми йдемо. (We go) -> Ми будемо йти.
-11. Я чекаю (I wait) -> Я буду чекати.
-12. Ти віриш? (Do you believe?) -> Ти будеш вірити?
+1. Я читаю. -> Я ___ читати.
+   > [!answer] буду
+   > [!options] буду | будеш | буде | будемо
+
+2. Ми працюємо. -> Ми ___ працювати.
+   > [!answer] будемо
+   > [!options] будемо | будуть | будете | буду
+
+3. Ти знаєш? -> Ти ___ знати?
+   > [!answer] будеш
+   > [!options] будеш | будете | будуть | буде
+
+4. Вони грають. -> Вони ___ грати.
+   > [!answer] будуть
+   > [!options] будуть | будемо | буду | будете
+
+5. Вона спить. -> Вона ___ спати.
+   > [!answer] буде
+   > [!options] буде | буду | будуть | будеш
+
+6. Я не розумію. -> Я не ___ розуміти.
+   > [!answer] буду
+   > [!options] буду | будеш | буде | будемо
+
+7. Ви слухаєте? -> Ви ___ слухати?
+   > [!answer] будете
+   > [!options] будете | будуть | будемо | буду
+
+8. Він готує. -> Він ___ готувати.
+   > [!answer] буде
+   > [!options] буде | буду | будуть | будемо
+
+9. Сонце світить. -> Сонце ___ світити.
+   > [!answer] буде
+   > [!options] буде | будуть | будеш | буду
+
+10. Ми йдемо. -> Ми ___ йти.
+    > [!answer] будемо
+    > [!options] будемо | будуть | будете | буду
+
+11. Я чекаю. -> Я ___ чекати.
+    > [!answer] буду
+    > [!options] буду | будеш | буде | будемо
+
+12. Ти віриш? -> Ти ___ вірити?
+    > [!answer] будеш
+    > [!options] будеш | будете | будуть | буде
 
 ---
 
@@ -460,8 +495,8 @@ In Ukrainian, it is very easy to talk about the future! You just need the helper
 ## Deep Dive: "Буду" acts like "Will"
 
 > [!important] Future is Simple!
-> In English, you say "I **will** read". In Ukrainian, "Я **буду** читати".
-> While there is another way to form future (audio_complex form: читатиму), it is rare in spoken language. Stick to **буду + infinitive** and you will sound perfectly natural!
+> In Ukrainian, it is very easy to talk about the future! You just need the helper verb **бути** (to be) + **Infinitive**.
+> While there is another way to form future (synthetic form: читатиму), it is rare in spoken language. Stick to **буду + infinitive** and you will sound perfectly natural!
 
 ---
 
@@ -476,7 +511,7 @@ To make the future tense: **Conjugate БУТИ + Infinitive**.
 - **Ви будете** + читати
 - **Вони будуть** + читати
 
-Use time markers like **завтра** (audio_tomorrow) and **скоро** (audio_soon).
+Use time markers like **завтра** (tomorrow) and **скоро** (soon).
 
 ---
 

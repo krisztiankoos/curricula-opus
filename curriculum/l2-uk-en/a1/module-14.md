@@ -43,12 +43,12 @@ But if it was a bag (*сумка* - feminine):
 Possessive pronouns must match the **Gender of the Object** they own.
 
 ### 1. My (Я -> Мій)
-| Gender | Word | Pronoun | Example |
-|---|---|---|---|
-| Masc | Брат | **Мій** | Це мій брат. [🔊](audio_m14_my_brother) |
-| Fem | Мама | **Моя** | Це моя мама. [🔊](audio_m14_my_mom) |
-| Neut | Яблуко | **Моє** | Це моє яблуко. [🔊](audio_m14_my_apple) |
-| Plural | Гроші | **Мої** | Це мої гроші. [🔊](audio_m14_my_money) |
+| Gender | Word | Pronoun | Example | Audio |
+|---|---|---|---|---|
+| Masc | Брат | **Мій** | Це мій брат. | [🔊](audio_m14_my_brother) |
+| Fem | Мама | **Моя** | Це моя мама. | [🔊](audio_m14_my_mom) |
+| Neut | Яблуко | **Моє** | Це моє яблуко. | [🔊](audio_m14_my_apple) |
+| Plural | Гроші | **Мої** | Це мої гроші. | [🔊](audio_m14_my_money) |
 
 > [!tip] 💡 **Rhyme Time:**
 > Fem: Ma-ma -> Mo-ya (A->A).
@@ -56,12 +56,12 @@ Possessive pronouns must match the **Gender of the Object** they own.
 > Plural: i -> i.
 
 ### 2. Your (Ти -> Твій) (Informal)
-| Gender | Word | Pronoun | Example |
-|---|---|---|---|
-| Masc | Тато | **Твій** | Це твій тато. [🔊](audio_m14_your_dad) |
-| Fem | Сестра | **Твоя** | Це твоя сестра. [🔊](audio_m14_your_sister) |
-| Neut | Авто | **Твоє** | Це твоє авто. [🔊](audio_m14_your_car) |
-| Plural | Ключі | **Твої** | Це твої ключі. [🔊](audio_m14_your_keys) |
+| Gender | Word | Pronoun | Example | Audio |
+|---|---|---|---|---|
+| Masc | Тато | **Твій** | Це твій тато. | [🔊](audio_m14_your_dad) |
+| Fem | Сестра | **Твоя** | Це твоя сестра. | [🔊](audio_m14_your_sister) |
+| Neut | Авто | **Твоє** | Це твоє авто. | [🔊](audio_m14_your_car) |
+| Plural | Ключі | **Твої** | Це твої ключі. | [🔊](audio_m14_your_keys) |
 
 ### 3. Our (Ми -> Наш) & Your (Ви -> Ваш)
 These are slightly different. They end in consonants.
@@ -96,7 +96,7 @@ Look at this photo.
 *   **Мій тато** (My dad - Masc).
 *   **Його звати** (His name is...).
 *   **Наш дім** (Our house - Masc).
-*   **Наша собака** (Our dog - Fem or Masc? Grammatically *собака* is often treated as Masc, but ends in -a... Actually *собака* is masculine in standard Ukrainian! "Мій собака". But colloquially many say "Моя собака". Let's stick to standard: **Мій собака** is correct. Wait, text says "наша собака". Let's correct it to colloquial usage or change to *кішка* for clarity. Let's use **Наш собака** to be prescriptively correct).
+*   **Наш собака** (Our dog - Masc).
 
 ## Cultural Insight: "One's Own" (Свій) 🏠
 
@@ -137,7 +137,6 @@ The twin runs away.
 > *   Твій дім (Nom) -> Твій дім (Acc Inanimate).
 > *   Possessives are Adjectives in disguise! They follow adjective rules.
 
-#
 ## Story Time: The Family Reunion 👨‍👩‍👧‍👦
 
 It is Christmas in Lviv. The whole family is here.
@@ -206,28 +205,28 @@ Read the clues and guess the owner.
 # Vocabulary
 
 
-| Word | IPA | English | Note |
-|---|---|---|---|
-| сім'я | /s⁽ʲ⁾imˈjɑ/ | family | Fem ([🔊](audio_m14_family)) |
-| тато | /ˈtɑtɔ/ | dad | Masc ([🔊](audio_m14_dad)) |
-| мама | /ˈmɑmɑ/ | mom | Fem ([🔊](audio_m14_mom)) |
-| брат | /brɑt/ | brother | Masc ([🔊](audio_m14_brother)) |
-| сестра | /sɛsˈtrɑ/ | sister | Fem ([🔊](audio_m14_sister)) |
-| дім | /d⁽ʲ⁾im/ | house/home | Masc ([🔊](audio_m14_house)) |
-| квартира | /kwɑrˈtɪrɑ/ | apartment | Fem ([🔊](audio_m14_apartment)) |
-| авто | /ɑu̯ˈtɔ/ | car | Neut ([🔊](audio_m14_car)) |
-| телефон | /tɛlɛˈfɔn/ | phone | Masc ([🔊](audio_m14_phone)) |
-| ключі | /klʲuˈt͡ʃi/ | keys | Plural ([🔊](audio_m14_keys)) |
-| чоловік | /t͡ʃɔlɔˈw⁽ʲ⁾ik/ | husband | Masc ([🔊](audio_m14_husband)) |
-| дружина | /druˈʒɪnɑ/ | wife | Fem ([🔊](audio_m14_wife)) |
-| син | /sɪn/ | son | Masc ([🔊](audio_m14_son)) |
-| донька | /ˈdɔnʲkɑ/ | daughter | Fem ([🔊](audio_m14_daughter)) |
-| друг | /druh/ | friend | Masc ([🔊](audio_m14_friend)) |
-| собака | /sɔˈbɑkɑ/ | dog | Masc! ([🔊](audio_m14_dog)) |
-| кіт | /k⁽ʲ⁾it/ | cat | Masc ([🔊](audio_m14_cat)) |
-| гроші | /ˈɦrɔʃi/ | money | Plural ([🔊](audio_m14_money)) |
-| проблема | /prɔˈblɛmɑ/ | problem | Fem ([🔊](audio_m14_problem)) |
-| ідея | /iˈdɛjɑ/ | idea | Fem ([🔊](audio_m14_idea)) |
+| Word | IPA | English | POS | Gender | Audio |
+|---|---|---|---|---|---|
+| сім'я | /s⁽ʲ⁾imˈjɑ/ | family | noun | f | [🔊](audio_m14_family) |
+| тато | /ˈtɑtɔ/ | dad | noun | m | [🔊](audio_m14_dad) |
+| мама | /ˈmɑmɑ/ | mom | noun | f | [🔊](audio_m14_mom) |
+| брат | /brɑt/ | brother | noun | m | [🔊](audio_m14_brother) |
+| сестра | /sɛsˈtrɑ/ | sister | noun | f | [🔊](audio_m14_sister) |
+| дім | /d⁽ʲ⁾im/ | house/home | noun | m | [🔊](audio_m14_house) |
+| квартира | /kwɑrˈtɪrɑ/ | apartment | noun | f | [🔊](audio_m14_apartment) |
+| авто | /ɑu̯ˈtɔ/ | car | noun | n | [🔊](audio_m14_car) |
+| телефон | /tɛlɛˈfɔn/ | phone | noun | m | [🔊](audio_m14_phone) |
+| ключі | /klʲuˈt͡ʃi/ | keys | noun | pl | [🔊](audio_m14_keys) |
+| чоловік | /t͡ʃɔlɔˈw⁽ʲ⁾ik/ | husband | noun | m | [🔊](audio_m14_husband) |
+| дружина | /druˈʒɪnɑ/ | wife | noun | f | [🔊](audio_m14_wife) |
+| син | /sɪn/ | son | noun | m | [🔊](audio_m14_son) |
+| донька | /ˈdɔnʲkɑ/ | daughter | noun | f | [🔊](audio_m14_daughter) |
+| друг | /druh/ | friend | noun | m | [🔊](audio_m14_friend) |
+| собака | /sɔˈbɑkɑ/ | dog | noun | m | [🔊](audio_m14_dog) |
+| кіт | /k⁽ʲ⁾it/ | cat | noun | m | [🔊](audio_m14_cat) |
+| гроші | /ˈɦrɔʃi/ | money | noun | pl | [🔊](audio_m14_money) |
+| проблема | /prɔˈblɛmɑ/ | problem | noun | f | [🔊](audio_m14_problem) |
+| ідея | /iˈdɛjɑ/ | idea | noun | f | [🔊](audio_m14_idea) |
 
 # Activities
 
@@ -382,39 +381,44 @@ Read the clues and guess the owner.
     > [!answer] АВТО
 
 ## true-false: Agreement Check
-> Is the pronoun correct?
+Is the pronoun correct?
 
 1. Це мій мама.
-   > [!answer] false
-   > [!explanation] Mama is Fem. -> Моя мама.
+   - [ ] True
+   - [x] False
 2. Це моя мама.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 3. Це твій авто.
-   > [!answer] false
-   > [!explanation] Auto is Neut. -> Твоє авто.
+   - [ ] True
+   - [x] False
 4. Це твоє авто.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 5. Це наші гроші.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 6. Це наш гроші.
-   > [!answer] false
-   > [!explanation] Money is Plural. -> Наші.
+   - [ ] True
+   - [x] False
 7. Це його сестра.
-   > [!answer] true
-   > [!explanation] His (Його) works with anything.
+   - [x] True
+   - [ ] False
 8. Це її брат.
-   > [!answer] true
-   > [!explanation] Her (Її) works with anything.
+   - [x] True
+   - [ ] False
 9. Це їхній дім.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 10. Це їхній мама.
-    > [!answer] false
-    > [!explanation] Mama is Fem. -> Їхня мама.
+    - [ ] True
+    - [x] False
 11. Це ваш паспорт.
-    > [!answer] true
+    - [x] True
+    - [ ] False
 12. Це ваша паспорт.
-    > [!answer] false
-    > [!explanation] Passport is Masc. -> Ваш.
+    - [ ] True
+    - [x] False
 
 ## unjumble: Build Chains
 > Order the words carefully.

@@ -106,7 +106,7 @@ His host, Oksana, comes in. She sees the labels.
 >
 > Ukrainians rarely use "It" for objects. They call the car "She" (**Машина**), the bus "He" (**Автобус**), and the coffee "He" (**Кава** - wait, actually **Кава** is She, but many people incorrectly treat coffee as masculine in other Slavic languages. In Ukrainian: **Кава** is She. **Чай** is He.)
 
-## vocabulary: Exploration
+## deep-dive: Vocabulary Exploration
 
 Let's explore the house using the Gender Code.
 
@@ -489,7 +489,7 @@ You have cracked the **Gender Code**. You now see the world not as "things", but
 You also labeled your entire house. You know that a **Стілець** is a "he" and a **Шафа** is a "she".
 In the next module, we will learn how to point at these things and say: "**Це** моя книга" (This is my book).
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -175,31 +175,31 @@ Agent: "Так, документи в сейфі (in safe), а ключі вже
 6.  **У стіні** (In wall).
 7.  **На даху** (On roof - *дах* -> *даху* velar!).
 
+
 # Vocabulary (House & Location)
 
-
-| Word | IPA | English | Note |
-|---|---|---|---|
-| стіл | /s⁽ʲ⁾t⁽ʲ⁾il/ | table | Masc ([🔊](audio_m13_table)) |
-| стілець | /s⁽ʲ⁾t⁽ʲ⁾iˈlɛt͡sʲ/ | chair | Masc ([🔊](audio_m13_chair)) |
-| ліжко | /ˈl⁽ʲ⁾iʒkɔ/ | bed | Neut ([🔊](audio_m13_bed)) |
-| диван | /dɪˈwɑn/ | sofa | Masc ([🔊](audio_m13_sofa)) |
-| крісло | /ˈkr⁽ʲ⁾islɔ/ | armchair | Neut ([🔊](audio_m13_armchair)) |
-| шафа | /ˈʃɑfɑ/ | wardrobe | Fem ([🔊](audio_m13_wardrobe)) |
-| кімната | /k⁽ʲ⁾imˈnɑtɑ/ | room | Fem ([🔊](audio_m13_room)) |
-| кухня | /ˈkuxnʲɑ/ | kitchen | Fem ([🔊](audio_m13_kitchen)) |
-| ванна | /ˈwɑnnɑ/ | bathroom/tub | Fem ([🔊](audio_m13_bathroom)) |
-| спальня | /ˈspɑlʲnʲɑ/ | bedroom | Fem ([🔊](audio_m13_bedroom)) |
-| вікно | /w⁽ʲ⁾ikˈnɔ/ | window | Neut ([🔊](audio_m13_window)) |
-| двері | /ˈdwɛr⁽ʲ⁾i/ | door | Plural! ([🔊](audio_m13_door)) |
-| будинок | /bʊˈdɪnɔk/ | building/house | Masc ([🔊](audio_m13_building)) |
-| парк | /pɑrk/ | park | Masc ([🔊](audio_m13_park)) |
-| банк | /bɑnk/ | bank | Masc ([🔊](audio_m13_bank)) |
-| центр | /t͡sɛntr/ | center | Masc ([🔊](audio_m13_center)) |
-| магазин | /mɑɦɑˈzɪn/ | shop | Masc ([🔊](audio_m13_shop)) |
-| сумка | /ˈsumkɑ/ | bag | Fem ([🔊](audio_m13_bag)) |
-| кишеня | /kɪˈʃɛnʲɑ/ | pocket | Fem ([🔊](audio_m13_pocket)) |
-| рука | /ruˈkɑ/ | hand | Fem ([🔊](audio_m13_hand)) |
+| Word | IPA | English | POS | Gender | Audio |
+|---|---|---|---|---|---|
+| стіл | /s⁽ʲ⁾t⁽ʲ⁾il/ | table | noun | m | [🔊](audio_m13_table) |
+| стілець | /s⁽ʲ⁾t⁽ʲ⁾iˈlɛt͡sʲ/ | chair | noun | m | [🔊](audio_m13_chair) |
+| ліжко | /ˈl⁽ʲ⁾iʒkɔ/ | bed | noun | n | [🔊](audio_m13_bed) |
+| диван | /dɪˈwɑn/ | sofa | noun | m | [🔊](audio_m13_sofa) |
+| крісло | /ˈkr⁽ʲ⁾islɔ/ | armchair | noun | n | [🔊](audio_m13_armchair) |
+| шафа | /ˈʃɑfɑ/ | wardrobe | noun | f | [🔊](audio_m13_wardrobe) |
+| кімната | /k⁽ʲ⁾imˈnɑtɑ/ | room | noun | f | [🔊](audio_m13_room) |
+| кухня | /ˈkuxnʲɑ/ | kitchen | noun | f | [🔊](audio_m13_kitchen) |
+| ванна | /ˈwɑnnɑ/ | bathroom/tub | noun | f | [🔊](audio_m13_bathroom) |
+| спальня | /ˈspɑlʲnʲɑ/ | bedroom | noun | f | [🔊](audio_m13_bedroom) |
+| вікно | /w⁽ʲ⁾ikˈnɔ/ | window | noun | n | [🔊](audio_m13_window) |
+| двері | /ˈdwɛr⁽ʲ⁾i/ | door | noun | pl | [🔊](audio_m13_door) |
+| будинок | /bʊˈdɪnɔk/ | building/house | noun | m | [🔊](audio_m13_building) |
+| парк | /pɑrk/ | park | noun | m | [🔊](audio_m13_park) |
+| банк | /bɑnk/ | bank | noun | m | [🔊](audio_m13_bank) |
+| центр | /t͡sɛntr/ | center | noun | m | [🔊](audio_m13_center) |
+| магазин | /mɑɦɑˈzɪn/ | shop | noun | m | [🔊](audio_m13_shop) |
+| сумка | /ˈsumkɑ/ | bag | noun | f | [🔊](audio_m13_bag) |
+| кишеня | /kɪˈʃɛnʲɑ/ | pocket | noun | f | [🔊](audio_m13_pocket) |
+| рука | /ruˈkɑ/ | hand | noun | f | [🔊](audio_m13_hand) |
 
 # Activities
 
@@ -356,38 +356,44 @@ Agent: "Так, документи в сейфі (in safe), а ключі вже
     > [!answer] ДЗЕРКАЛО
 
 ## true-false: Grammar Check
-> Is the ending correct?
+Is the ending correct?
 
 1. Я живу в Львів.
-   > [!answer] false
-   > [!explanation] Львів must change! -> У Львові.
+   - [ ] True
+   - [x] False
 2. Я живу у Львові.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 3. Книга на столі.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 4. Книга на стіл.
-   > [!answer] false
-   > [!explanation] Accusative/Nominative is wrong here. Need Locative (-i).
+   - [ ] True
+   - [x] False
 5. Ми в паркі.
-   > [!answer] false
-   > [!explanation] Velar rule! K -> U. -> У парку.
+   - [ ] True
+   - [x] False
 6. Ми в парку.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 7. Вона в кімнаті.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 8. Вона в кімнату.
-   > [!answer] false
-   > [!explanation] Accusative (motion into). Static location needs -i.
+   - [ ] True
+   - [x] False
 9. Паспорт у сумці.
-   > [!answer] true
+   - [x] True
+   - [ ] False
 10. Паспорт у сумки.
-    > [!answer] false
-    > [!explanation] Genitive ending. Need Locative (-i + change).
+    - [ ] True
+    - [x] False
 11. Гроші в банку.
-    > [!answer] true
+    - [x] True
+    - [ ] False
 12. Гроші в банці.
-    > [!answer] false
-    > [!explanation] Банка (Jar) -> У банці. Банк (Bank) -> У банку. Be careful! Money in the jar vs Money in the bank.
+    - [ ] True
+    - [x] False
 
 ## fill-in: Complete the Sentence
 > Put the word in brackets into Locative Case.

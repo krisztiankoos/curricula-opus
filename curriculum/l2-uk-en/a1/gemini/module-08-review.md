@@ -10,6 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/3
 - **Audio:** ✅ 51 links
+- **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -35,6 +36,6 @@
 | **fill-in: Conjugation Drill** | 🎮 | 12 | Activity (12 items) |
 | **anagram: Verb Scramble** | 🎮 | 12 | Activity (12 items) |
 | **group-sort: Endings** | 🎮 | 24 | Activity (24 items) |
-| **true-false: Verb Rules** | 🎮 | 12 | Activity (12 items) |
+| **true-false: Verb Rules** | 🎮 | 13 | Activity (13 items) |
 | **match-up: Who does what?** | 🎮 | 14 | Activity (14 items) |
 | **fill-in: Translation Pro** | 🎮 | 12 | Activity (12 items) |

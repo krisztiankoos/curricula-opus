@@ -10,7 +10,7 @@
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/3
 - **Audio:** ✅ 30 links
-- **Vocab:** ✅ 30/30
+- **Vocab:** ✅ 30/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 
@@ -33,4 +33,4 @@
 | **true-false: Adjective or Adverb?** | 🎮 | 12 | Activity (12 items) |
 | **unjumble: Build the Sentence** | 🎮 | 12 | Activity (12 items) |
 | **match-up: Opposites (Adverbs)** | 🎮 | 12 | Activity (12 items) |
-| **fill-in: My Life** | 🎮 | 30 | Activity (30 items) |
+| **fill-in: My Life** | 🎮 | 12 | Activity (12 items) |

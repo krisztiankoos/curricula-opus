@@ -30,9 +30,9 @@ When the object is a **Person** (or animal), we call it **Animate**. This distin
 
 ### 1. Feminine: The Standard Rule 👩
 Same as Inanimate (-а -> **-у**, -я -> **-ю**).
-*   Я бачу **жінку** [🔊](audio_m12_woman_acc). (I see a woman).
-*   Я люблю **бабусю** [🔊](audio_m12_grandma_acc). (I love grandma).
-*   Ми знаємо **подругу** [🔊](audio_m12_girlfriend_acc). (We know the girlfriend).
+*   Я бачу **жінку**. (I see a woman).
+*   Я люблю **бабусю**. (I love grandma).
+*   Ми знаємо **подругу**. (We know the girlfriend).
 
 ### 2. Masculine: The "Genitive Disguise" 👨
 This is NEW! For men (and male animals), the Accusative looks exactly like the Genitive case.
@@ -41,9 +41,9 @@ This is NEW! For men (and male animals), the Accusative looks exactly like the G
 *   -а -> **-у** (rare "feminine-like" men, like *тато*)
 
 **Examples:**
-*   Я бачу **студента** [🔊](audio_m12_student_acc). (I see a student).
-*   Я знаю **Андрія** [🔊](audio_m12_andriy_acc). (I know Andriy).
-*   Я чекаю **тата** [🔊](audio_m12_dad_acc). (I wait for dad).
+*   Я бачу **студента**. (I see a student).
+*   Я знаю **Андрія**. (I know Andriy).
+*   Я чекаю **тата**. (I wait for dad).
 
 > [!warning] ⚠️ **Common Mistake:** Beginners often say "Я бачу студент". This sounds like "I see student" (caveman style). You must say "Я бачу студент**а**".
 
@@ -52,11 +52,11 @@ Does not change (mostly). Children (*дитя*) and puppies (*цуценя*) are
 
 | Gender | Nominative (Dictionary) | Accusative (Object) | Rule |
 |---|---|---|---|
-| Masc | студент [🔊](audio_m12_student) | студент**а** | Add -а |
-| Masc | брат [🔊](audio_m12_brother) | брат**а** | Add -а |
-| Masc | тато [🔊](audio_m12_dad) | тат**а** | -о -> -а (special) |
-| Fem | мама [🔊](audio_m12_mom) | мам**у** | -а -> -у |
-| Fem | подруга [🔊](audio_m12_friend_f) | подруг**у** | -а -> -у |
+| Masc | студент | студент**а** | Add -а |
+| Masc | брат | брат**а** | Add -а |
+| Masc | тато | тат**а** | -о -> -а (special) |
+| Fem | мама | мам**у** | -а -> -у |
+| Fem | подруга | подруг**у** | -а -> -у |
 
 
 ## Warm-up: The Dinner Party 🍷
@@ -373,40 +373,43 @@ Let's meet the people in our neighborhood.
 12. Я обіймаю (hug) -> Маму (Mom)
 
 ## true-false: Grammar Check
-> Is the ending correct?
+
 
 1. Я бачу студент.
-   > [!answer] false
-   > [!explanation] Animate masculine must change! -> Я бачу студент**а**.
+   > [!answer] False
+
 2. Я бачу студента.
-   > [!answer] true
+   > [!answer] True
+
 3. Я знаю Іван.
-   > [!answer] false
-   > [!explanation] -> Я знаю Іван**а**.
+   > [!answer] False
+
 4. Я знаю Івана.
-   > [!answer] true
+   > [!answer] True
+
 5. Я чекаю таксі.
-   > [!answer] true
-   > [!explanation] Таксі is inanimate and neuter (indeclinable). Correct.
+   > [!answer] True
+
 6. Я чекаю маму.
-   > [!answer] true
+   > [!answer] True
+
 7. Я люблю тато.
-   > [!answer] false
-   > [!explanation] Тато acts like feminine (-а) in grammar! -> Я люблю тат**а**.
+   > [!answer] False
+
 8. Я люблю тата.
-   > [!answer] true
+   > [!answer] True
+
 9. Це мій брат.
-   > [!answer] true
-   > [!explanation] Nominative ("This is...") does not change.
+   > [!answer] True
+
 10. Я маю брат.
-    > [!answer] false
-    > [!explanation] Have + who -> Я маю брат**а**.
+    > [!answer] False
+
 11. Я бачу стіл.
-    > [!answer] true
-    > [!explanation] Inanimate masculine does not change.
+    > [!answer] True
+
 12. Я бачу водій.
-    > [!answer] false
-    > [!explanation] Animate! -> Я бачу воді**я**.
+    > [!answer] False
 
 ## anagram: Scramble
 > Unscramble the professions.

@@ -480,40 +480,28 @@ Remember: Look in the eyes when clinking glasses ("Чокатися")!
 > True or False?
 
 - [x] **Смачного** means "Bon Appetit".
-  > [!explanation] Said before eating.
 
 - [ ] Bread is not important in Ukraine.
-  > [!explanation] Bread (**Хліб**) is sacred.
 
 - [x] **Я їм** uses an apostrophe?
-  > [!explanation] No. **Я п'ю** uses apostrophe.
 
 - [ ] **Обід** is a small snack.
-  > [!explanation] Lunch is the main meal.
 
 - [x] **З газом** means "Sparkling water".
-  > [!explanation] With gas.
 
 - [ ] **Курка** is a vegetable.
-  > [!explanation] Chicken is meat.
 
 - [x] You should say "I am not hungry" to Grandma.
-  > [!explanation] You can try, but you will fail. She will feed you.
 
 - [ ] **Ти п'єш** rhymes with "Yes".
-  > [!explanation] Close. "P-yesh".
 
 - [x] **Вареники** are dumplings.
-  > [!explanation] With potato, cheese, or cherries.
 
 - [ ] **Борщ** is always green.
-  > [!explanation] It is red (beets), though Green Borscht exists (sorrel).
 
 - [x] **Сало** is fat.
-  > [!explanation] Cured pork fat. Delicacy.
 
 - [ ] You toast with water.
-  > [!explanation] Bad luck. Use alcohol or juice.
 
 ## unjumble: Build the Order
 > Order food.

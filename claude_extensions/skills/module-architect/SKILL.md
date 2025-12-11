@@ -1,14 +1,33 @@
 ---
-name: module-architect-v7
+name: module-architect-v8
 description: Use this skill when reviewing, fixing, or creating language curriculum modules. Applies grammar constraints per CEFR level (A1-C2), validates activities, and ensures standard compliance. Triggers when editing files in curriculum/ directories or discussing module content.
 allowed-tools: Read, Glob, Grep, Edit, Write
+---
+
+## 🚀 Quick Start Checklist (READ THIS FIRST)
+
+Before ANY module work, verify these **10 Critical Rules**:
+
+| # | Rule | Example |
+|---|------|---------|
+| 1 | ☐ Read `docs/l2-uk-en/READING-MANIFEST.md` FIRST | Contains absolute rules |
+| 2 | ☐ Check grammar allowed at this module | See Каталог В in `{LEVEL}-CURRICULUM-PLAN.md` |
+| 3 | ☐ Know your word count target | **A1:** M01-M05 (300+), M06-M10 (500+), M11+ (750+) |
+| 4 | ☐ Vocabulary table at END of file | NOT in YAML frontmatter |
+| 5 | ☐ Section headers lowercase | `## warm-up` NOT `## Warm-Up` |
+| 6 | ☐ Activity headers: `## type: Title` | `## fill-in: Case Practice` |
+| 7 | ☐ Fill-in placeholder: `___` | Three underscores only |
+| 8 | ☐ 8+ activities, 12+ items each | Non-negotiable |
+| 9 | ☐ Answers use `> [!answer]` callout | NEVER `**Answer:**` |
+| 10 | ☐ Run audit after changes | `python3 scripts/audit_module.py {file}` |
+
 ---
 
 ## Model Selection by Level
 
 | Level | Recommended Model | Reason |
 |-------|------------------|--------|
-| A1, A2, B1 | Sonnet | Straightforward constraints, pattern-based fixes |
+| A1, A2, B1 | Sonnet/Gemini | Straightforward constraints, pattern-based fixes |
 | B2, C1, C2 | Opus | Complex grammar, nuanced judgment, specialized content |
 
 # Module Architect Skill
@@ -84,16 +103,18 @@ After reading the manifest, read the documents it specifies for your level:
 **Countable Sections by Pedagogy:**
 - **PPP:** `Warm-up` + `Presentation` + `Cultural Insight`
 - **TTT:** `Diagnostic` + `Analysis` + `Deep Dive`
-- **CLIL/Narrative:** `Pre-Engagement` + `Immersive Narrative` + `Analysis`
+- **CLIL/Narrative:** `Introduction`, `Immersive Narrative`, `Analysis`, `Grammar in Context`
 
 **High-Volume Targets (Instructional Core Words):**
 
 | Metric | A1 | A2 | B1 | B2 | C1 | C2 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Core Word Count** | **750+** | **1000+** | **1250+** | **1500+** | **1750+** | **2000+** |
+| **Core Word Count** | **Graduated*** | **1000+** | **1250+** | **1500+** | **1750+** | **2000+** |
 | **Example Sentences** | 12+ | 18+ | 24+ | 28+ | 30+ | 32+ |
 | **Engagement Boxes** | 3+ | 4+ | 5+ | 6+ | 7+ | 8+ |
 | **Mini-Dialogues** | 2+ | 3+ | 4+ | 4+ | 5+ | 5+ |
+
+***A1 Graduation:** M01-M05 (300+), M06-M10 (500+), M11+ (750+).
 
 **Structure Requirements:**
 - **Engagement:** Must include specific box types (Did You Know, Myth Buster, etc.).
@@ -106,6 +127,7 @@ After reading the manifest, read the documents it specifies for your level:
 - **Global Anchors:** Always compare Ukrainian achievements to contemporary Western Europe to combat the "provincial" bias.
 - **"Myth vs. Fact" Component:** Every history/culture module MUST include at least one "Myth vs. Fact" box specifically targeting Russian lies (e.g., "Lenin created Ukraine" -> False).
 - **Cinematic Detail:** Avoid "textbook" summaries. Zoom in on specific scenes of resistance or cultural triumph.
+- **Anti-Russian Propaganda:** Actively counter common lies about Ukrainian language, culture, and history in every module.
 
 ### 9. Digital & Political Hygiene (The Strict Gates)
 - **Fill-in Activities:**
@@ -178,7 +200,7 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
 #### **Audit for PPP & TTT Modules**
 | Metric | Target (Core Only) | Actual (Core) | Status |
 |--------|-------------------|---------------|--------|
-| **Word Count Proof** | **[Level Target: 750-2000+]** | **[MUST LIST RANGES]** | ✅/❌ |
+| **Word Count Proof** | **[Level Target: Graduated / 1000+]** | **[MUST LIST RANGES]** | ✅/❌ |
 | Example Sentences | [Level Target: 12-32+] | [Counted] | ✅/❌ |
 | Engagement Boxes | [Level Target: 3-8+] | [Counted] | ✅/❌ |
 | Mini-Dialogues | [Level Target: 2-5+] | [Counted] | ✅/❌ |
@@ -278,61 +300,80 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
 8. **Recommend** Approved / Fix / Rewrite.
 
 ### For Create:
-1. **Read reference documents.**
-2. **Establish Pedagogy, Immersion, Setting.**
-3. **STANDARD CHECK:** Consult `UKRAINIAN-STANDARD-INDEX.md` and `UKRAINIAN-STATE-STANDARD-2024.txt` to identify MANDATORY competencies.
-4. **Vocabulary Strategy:**
-   - Copy EXACT vocabulary from `{LEVEL}-CURRICULUM-PLAN.md`.
-   - Minimize duplicates: Check if words already exist in `vocabulary.db` (conceptually).
-5. **Fill Module Skeleton (MANDATORY):**
-   - **Prerequisite:** Open `docs/l2-uk-en/MODULE-SKELETON.md`.
-   - **Action:** Copy the ENTIRE content of the skeleton into your new module file.
-   - **Requirement:** You MUST fill every section of the skeleton (`## Warm-up`, `## Presentation`, `## Story Time`, etc.).
-   - **Richness:** The skeleton forces you to write 750+ words. Do NOT delete sections.
-   - **Narrative:** "Story Time" must be 200+ words and have specific characters/settings.
-   - **Compliance:** Ensure Standard Competencies are explicitly taught in the "Presentation" section.
-6. **GRAMMAR VALIDATION:** Check your definitions of Families/Groups against `MODULE-RICHNESS-GUIDELINES-v2.md`.
-7. **Perform Richness & Soul Gate Audit:** Verify Core Word Count meets target (750+ to 2000+ depending on level). If FAIL, enrich content.
-8.  **Activity Density**
-    *   **Minimum Activities:** 8+ per module (Target: 10).
-    *   **Minimum Items:** 12+ items per activity (non-negotiable).
-    *   **Standard Flow:**
-        *   **Warm-up (Start):** Low cognitive load (Match-up, Group-sort).
-        *   **Core (Middle):** Medium cognitive load (Quiz, True-False).
-        *   **Production (End):** High cognitive load (Fill-in, Anagram, Unjumble, Translate).
-        *   **Constraint:** `fill-in`, `anagram` (A1), and `unjumble` (A2+) MUST be at the end of the activity list.
-        *   *Avoid putting complex activities (Unjumble/Anagram/Fill-in) as the very first activity.*
 
-9.  **Grammar Table Requirement**
-    *   **Mandatory:** ALL grammar modules (Verb, Case, Gender) MUST include reference tables.
-    *   **Format:** Must contain explicit headers like `Case` / `Gender` / `Ending` / `Form`.
-    *   *Example:*
-        ```markdown
-        | Gender | Nominative | Locative | Ending |
-        |--------|------------|----------|--------|
-        | Masc   | Парк       | У парку  | -у     |
-        ```
+1. **Read Reference Documents** (See Quick Start Checklist)
+   - `READING-MANIFEST.md` → `{LEVEL}-CURRICULUM-PLAN.md` → `MODULE-RICHNESS-GUIDELINES-v2.md`
 
-10. **Unjumble Complexity**
-    *   **Minimum Length:** Sentences MUST be **5-8 words** long.
-    *   **No Short Sentences:** "Це стіл" (2 words) is INVALID. "Це мій великий стіл" (4 words) is BORDERLINE. "Це мій великий і гарний стіл" (6 words) is PERFECT.
-    *   **Logic:** Unjumble is a logic puzzle. 3 words is not a puzzle; it's a trivium.
-11. **Only after Gate = PASS**, write Activities.
-12. **STRICT FORMAT LINT:**
-    *   **Review against `docs/MARKDOWN-FORMAT.md`.**
-    *   **Check:** Are answers hidden with `> [!answer]`?
-    *   **Check:** Are options provided with `> [!options]`?
-    *   **Check:** Is there absolutely NO YAML in the activities section?
-    *   **Check:** NO parenthetical hints in prompt line (e.g. `(hint)`). Use clean underscores `___` only.
-14. **Final Check:** Verify activity counts and Standard Compliance.
-15. **Generate Output:**
-    *   Once the module passes all checks, generate the final artifacts:
+2. **Establish Module Parameters:**
+   - **Pedagogy:** PPP (A1-A2), TTT (B1+), or CLIL/Narrative (B1+ vocabulary/cultural)
+   - **Immersion Target:** See table in Core Quality Standards
+   - **Setting:** Choose a specific Ukrainian location (Lviv, Kyiv, Carpathians)
+
+3. **Vocabulary Strategy:**
+   - Copy EXACT vocabulary from `{LEVEL}-CURRICULUM-PLAN.md`
+   - Do NOT invent new core vocabulary without updating the plan
+   - All vocabulary must have IPA pronunciation
+
+4. **STANDARD CHECK:**
+   - Consult `UKRAINIAN-STANDARD-INDEX.md` for required competencies
+   - Ensure module covers at least the Standard's requirements
+
+5. **Fill Module Skeleton:**
+   - Open `docs/l2-uk-en/MODULE-SKELETON.md`
+   - Copy ENTIRE skeleton into new module file
+   - Fill EVERY section - do NOT delete sections
+
+6. **Enrichment Strategy (A1 Specific):**
+   - **Grammar Modules:** Focus on Theory + Practice (drills, rules, mnemonics)
+   - **Vocabulary Modules:** Focus on Stories + Conversations
+   - **Strict Scope:** NEVER use untaught letters, grammar, or vocabulary
+   - **A1 M01-M03:** Use `## Reading Practice` (no Story Time - lacks verbs)
+   - **A1 M04+:** Use `## Story Time` (200+ words)
+   - **Graduated Immersion:**
+     - M01-M03: High English OK (focus on phonetics/cognates)
+     - M04-M10: 50/50 mix
+     - M11+: Ukrainian dominant
+
+7. **Word Count Targets (Instructional Core Only):**
+   - **A1 M01-M05:** 300+ words
+   - **A1 M06-M10:** 500+ words
+   - **A1 M11+:** 750+ words
+   - **A2+:** See table in Content Richness section
+
+8. **Perform Richness & Soul Audit:**
+   - Verify Core Word Count meets target
+   - If FAIL, enrich content BEFORE writing activities
+
+9. **Activity Density:**
+   - **Minimum:** 8+ activities per module (target: 10)
+   - **Items:** 12+ items per activity (non-negotiable)
+   - **Flow:** Easy → Medium → Hard
+     - Start: Match-up, Group-sort
+     - Middle: Quiz, True-False
+     - End: Fill-in, Anagram, Unjumble
+
+10. **Grammar Table Requirement:**
+    - All grammar modules MUST include reference tables
+    - Format: `| Gender | Nominative | Ending |`
+
+11. **Unjumble Complexity:**
+    - Minimum: 5-8 words per sentence
+    - "Це стіл" (2 words) = INVALID
+    - "Це мій великий і гарний стіл" (6 words) = PERFECT
+
+12. **Format Lint Check:**
+    - Answers use `> [!answer]` callout (NEVER `**Answer:**`)
+    - Options use `> [!options]` callout
+    - No YAML blocks in activities section
+    - No parenthetical hints in prompts - use clean `___` only
+
+13. **Generate Output:**
+    Once module passes all checks:
     ```bash
-npm run generate l2-uk-en {level} {module_num}
-# Example: npm run generate l2-uk-en a1 1
-# This generates both HTML and JSON artifacts for the module.
-```
-* Verify the output HTML in `output/html/l2-uk-en/{level}/` and JSON in `output/json/l2-uk-en/{level}/`.
+    npm run generate l2-uk-en {level} {module_num}
+    # Example: npm run generate l2-uk-en a1 1
+    ```
+    Verify output in `docusaurus/docs/{level}/module-XX.mdx`
 
 ## Activity Check Reference
 

@@ -373,40 +373,40 @@ Common polite phrases:
 ## anagram: Question Word Scramble
 > Unscramble the question words.
 
-1. щ о
+1. о щ
    > [!answer] що
 
-2. х т о
+2. о т х
    > [!answer] хто
 
-3. д е
+3. е д
    > [!answer] де
 
-4. к и д у
+4. д у к и
    > [!answer] куди
 
-5. к о л и
+5. и л о к
    > [!answer] коли
 
-6. ч о м у
+6. м у о ч
    > [!answer] чому
 
-7. я к
+7. к я
    > [!answer] як
 
-8. с к і л ь к и
+8. к і л и ь с к
    > [!answer] скільки
 
-9. з в і д к и
+9. к д і в и з
    > [!answer] звідки
 
-10. я к и й
+10. й и к я
     > [!answer] який
 
-11. ч и
+11. и ч
     > [!answer] чи
 
-12. я к а
+12. а к я
     > [!answer] яка
 
 ## true-false: Question & Negation Rules

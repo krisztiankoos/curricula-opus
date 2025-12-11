@@ -378,40 +378,40 @@ The proper way to eat борщ:
 ## anagram: Food Word Scramble
 > Unscramble these food words.
 
-1. б о р щ
+1. щ р о б
    > [!answer] борщ
 
-2. х л і б
+2. б і х л
    > [!answer] хліб
 
-3. м я с о
+3. о с я м
    > [!answer] м'ясо
 
-4. к а в а
+4. а в к а
    > [!answer] кава
 
-5. в о д а
+5. д о а в
    > [!answer] вода
 
-6. с а л а т
+6. т л а а с
    > [!answer] салат
 
-7. ч а й
+7. й а ч
    > [!answer] чай
 
-8. с м е т а н а
+8. а н а м е т с
    > [!answer] сметана
 
-9. м о л о к о
+9. к о о л о м
    > [!answer] молоко
 
-10. я б л у к о
+10. л у к о б я
     > [!answer] яблуко
 
-11. к а р т о п л я
+11. л о т р а п я к
     > [!answer] картопля
 
-12. в а р е н и к и
+12. к и н р е в а и
     > [!answer] вареники
 
 ## true-false: Ukrainian Food Culture

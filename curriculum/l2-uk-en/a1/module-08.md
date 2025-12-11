@@ -356,40 +356,40 @@ Ukrainian hosts will often say **"Ви мало їсте!"** (You're eating too 
 ## anagram: Class II Verb Scramble
 > Unscramble the Class II verbs.
 
-1. г о р о в и т и
+1. р и о в о г и т
    > [!answer] говорити
 
-2. б и т ю л и
+2. т ю б и л и
    > [!answer] любити
 
-3. б а ч и т и
+3. т и и б а ч
    > [!answer] бачити
 
-4. р о б и т и
+4. т и б о р и
    > [!answer] робити
 
-5. х о д и т и
+5. т и и х о д
    > [!answer] ходити
 
-6. с и д і т и
+6. т і д и с і
    > [!answer] сидіти
 
-7. с т о я т и
+7. т и т я о с
    > [!answer] стояти
 
-8. с п а т и
+8. а т и с п
    > [!answer] спати
 
-9. л е ж а т и
+9. т и ж а л е
    > [!answer] лежати
 
-10. п р о с и т и
+10. т и с и р о п
     > [!answer] просити
 
-11. в ч и т и
+11. и т и ч в
     > [!answer] вчити
 
-12. х о т і т и
+12. т і т о х і
     > [!answer] хотіти
 
 ## true-false: Class II Rules

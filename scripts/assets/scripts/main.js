@@ -55,6 +55,9 @@ function resetActivity(sectionId) {
     case 'select':
       resetSelect(sectionId);
       break;
+    case 'error-correction':
+      resetErrorCorrection(sectionId);
+      break;
   }
 }
 
@@ -112,6 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
       case 'select':
         initSelect(activity.id, activity.data);
+        break;
+      case 'error-correction':
+        initErrorCorrection(activity.id, activity.data);
         break;
     }
   });

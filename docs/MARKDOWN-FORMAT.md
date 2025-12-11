@@ -277,6 +277,30 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 - Use `>` for explanation
 - See MODULE-RICHNESS-GUIDELINES-v2.md for item counts
 
+### Error Correction Format
+
+```markdown
+## error-correction: Title
+
+> Find the mistake in each sentence and correct it.
+
+1. Я **бачу** студент.
+   > [!error] студент
+   > [!answer] студента
+   > [!options] студент | студента | студенту
+
+2. Це моя книга.
+   > [!error] none
+   > [!answer] ✓
+```
+
+**Key points:**
+- The sentence usually contains the error (bolding optional but discouraged if it reveals the answer too easily).
+- Use `> [!error]` to identify the incorrect word (or `none`).
+- Use `> [!answer]` for the correct form.
+- Use `> [!options]` for multiple choice correction (optional but recommended).
+
+
 ### Group-sort Format
 
 ```markdown

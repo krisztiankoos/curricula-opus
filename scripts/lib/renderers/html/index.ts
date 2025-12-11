@@ -197,6 +197,7 @@ function renderMatchSection(activity: Activity, sectionId: string, nextSection: 
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${pairs.length}</span></div>
       <div class="match-container" id="${sectionId}-container"><svg class="match-lines" id="${sectionId}-lines"></svg>
         <div class="match-column" id="${sectionId}-left"></div>
@@ -212,6 +213,7 @@ function renderQuizSection(activity: Activity, sectionId: string, nextSection: s
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${questions.length}</span></div>
       <div id="${sectionId}-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Complete!</h3></div>
@@ -224,6 +226,7 @@ function renderTfSection(activity: Activity, sectionId: string, nextSection: str
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${statements.length}</span></div>
       <div id="${sectionId}-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Complete!</h3></div>
@@ -237,6 +240,7 @@ function renderSortSection(activity: Activity, sectionId: string, nextSection: s
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${totalItems}</span></div>
       <div class="sort-pool" id="${sectionId}-pool"><div class="sort-items" id="${sectionId}-items"></div></div>
       <div class="sort-groups" id="${sectionId}-groups"></div>
@@ -250,6 +254,7 @@ function renderFillSection(activity: Activity, sectionId: string, nextSection: s
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length}</span></div>
       <div id="${sectionId}-container" class="fill-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Complete!</h3></div>
@@ -262,6 +267,7 @@ function renderOrderSection(activity: Activity, sectionId: string, nextSection: 
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length}</span></div>
       <div id="${sectionId}-container" class="order-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Perfect Order!</h3></div>
@@ -274,6 +280,7 @@ function renderSelectSection(activity: Activity, sectionId: string, nextSection:
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length}</span></div>
       <div id="${sectionId}-container" class="select-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>Complete!</h3></div>
@@ -281,11 +288,29 @@ function renderSelectSection(activity: Activity, sectionId: string, nextSection:
     </div></section>`;
 }
 
+/**
+ * Helper to render instructions block
+ */
+function renderInstructions(activity: Activity): string {
+  if (!activity.instructions && !activity.instructionsUk) return '';
+
+  const en = activity.instructions
+    ? `<div class="activity-instructions">${markdownToHtml(activity.instructions)}</div>`
+    : '';
+
+  const uk = activity.instructionsUk
+    ? `<div class="activity-instructions activity-instructions-uk" style="display:none" data-lang="uk">${markdownToHtml(activity.instructionsUk)}</div>`
+    : '';
+
+  return en + uk;
+}
+
 function renderErrorCorrectionSection(activity: Activity, sectionId: string, nextSection: string): string {
   const items = (activity.content as any).items || [];
 
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <div class="score-display"><span class="score"><span id="${sectionId}-score">0</span>/${items.length * 2}</span></div>
       <div id="${sectionId}-container" class="error-correction-container"></div>
       <div class="completion-message" id="${sectionId}-complete"><h3>All Corrected!</h3></div>
@@ -296,6 +321,7 @@ function renderErrorCorrectionSection(activity: Activity, sectionId: string, nex
 function renderGenericSection(activity: Activity, sectionId: string, nextSection: string): string {
   return `
     <section id="${sectionId}" class="section"><div class="card"><h3>${escapeHtml(activity.title)}</h3>
+      ${renderInstructions(activity)}
       <p>Activity type: ${activity.type}</p>
       <div class="btn-group"><button class="btn btn-primary" onclick="showSection('${nextSection}')">Next →</button></div>
     </div></section>`;

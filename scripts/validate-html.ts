@@ -25,248 +25,210 @@ export interface ValidationResult {
     warnings: string[];
 }
 
+/**
+ * Checks basic HTML structure (Title, Main, Layout Sections).
+ */
+async function checkBasicStructure(page: Page, errors: string[]) {
+    const title = await page.title();
+    if (!title || title.trim() === '') errors.push('Missing or empty <title>');
+
+    if (!await page.$('main')) errors.push('Missing <main> element');
+
+    const requiredIds = ['lesson', 'vocab'];
+    for (const id of requiredIds) {
+        if (!await page.$(`#${id}`)) errors.push(`Missing Layout Section: #${id}`);
+    }
+}
+
+/**
+ * Checks for broken resources and links.
+ */
+async function checkResources(page: Page, filePath: string, errors: string[]) {
+    // Check Anchor Links
+    const anchors = await page.$$eval('a[href^="#"]', els => els.map(e => e.getAttribute('href')));
+    for (const anchor of anchors) {
+        if (anchor && anchor.length > 1) {
+            const id = anchor.substring(1);
+            if (!await page.$(`#${id}, [name="${id}"]`)) {
+                errors.push(`Broken Anchor: ${anchor} (Target ID not found)`);
+            }
+        }
+    }
+
+    // Check Navigation Links
+    const navLinks = await page.$$eval('a[href]:not([href^="#"]):not([href^="http"])', els => els.map(e => e.getAttribute('href')));
+    for (const link of navLinks) {
+        if (link) {
+            const targetPath = resolve(filePath, '..', link);
+            if (!existsSync(targetPath)) errors.push(`Broken Link: ${link} (File not found)`);
+        }
+    }
+
+    // Check Images (0-width)
+    const brokenImages = await page.$$eval('img', els => els.filter(e => (e as HTMLImageElement).naturalWidth === 0).length);
+    if (brokenImages > 0) errors.push(`${brokenImages} broken images detected (naturalWidth=0)`);
+}
+
+/**
+ * Checks activity sections and deep DOM integrity.
+ */
+async function checkActivityIntegrity(page: Page, errors: string[], warnings: string[]) {
+    // Check Activity Section Count
+    const activitySections = await page.$$('section[id^="activity-"]');
+    if (activitySections.length < 8) {
+        warnings.push(`Low Activity Count: Found ${activitySections.length} (Expected 8+)`);
+    }
+
+    // Deep Content Integrity Check: Data vs DOM
+    const dataErrors = await page.evaluate(() => {
+        const errs: string[] = [];
+        const data = (window as any).activitiesData;
+
+        if (!data || !Array.isArray(data)) {
+            return [`CRITICAL: activitiesData missing or invalid on page. Check generate script.`];
+        }
+
+        const getCounts = (activity: any, container: Element | null) => {
+            if (activity.type === 'fill-blank' || activity.type === 'gap-fill') {
+                return {
+                    expected: activity.data.items?.length || 0,
+                    actual: container?.querySelectorAll('.fill-question').length || 0
+                };
+            }
+            if (activity.type === 'anagram') {
+                return {
+                    expected: activity.data.items?.length || 0,
+                    actual: container?.querySelectorAll('.anagram-question').length || 0
+                };
+            }
+            return null;
+        };
+
+        // Validate Data vs DOM Count
+        for (const activity of data) {
+            const section = document.getElementById(activity.id);
+            if (!section) {
+                errs.push(`Activity #${activity.id}: Section missing in DOM.`);
+                continue;
+            }
+
+            const container = section.querySelector('[id$="-container"]');
+            const counts = getCounts(activity, container);
+
+            if (counts && counts.actual !== counts.expected) {
+                errs.push(`Activity #${activity.id} (${activity.type}): Count Mismatch. Expected ${counts.expected}, found ${counts.actual}.`);
+            }
+        }
+        return errs;
+    });
+
+    // Deep Content Integrity Check: Specific DOM Logic
+    const domErrors = await page.evaluate(() => {
+        const errs: string[] = [];
+
+        // Fill-in
+        document.querySelectorAll('.fill-container').forEach((c) => {
+            const id = c.closest('section')?.id || 'unknown';
+            const qs = c.querySelectorAll('.fill-question');
+            if (qs.length === 0) errs.push(`Activity #${id} (Fill-in): No questions rendered.`);
+
+            qs.forEach((q, idx) => {
+                if (!q.querySelector('input, select')) errs.push(`Activity #${id} Q${idx + 1}: Missing inputs.`);
+                const sel = q.querySelector('select');
+                if (sel && sel.options.length <= 1) errs.push(`Activity #${id} Q${idx + 1}: Dropdown has no options.`);
+            });
+        });
+
+        // Match-up
+        document.querySelectorAll('.match-container').forEach((c) => {
+            const id = c.closest('section')?.id || 'unknown';
+            const left = c.querySelectorAll('.match-item[data-side="left"]').length;
+            const right = c.querySelectorAll('.match-item[data-side="right"]').length;
+            if (left === 0 || right === 0) errs.push(`Activity #${id}: Empty items.`);
+            else if (left !== right) errs.push(`Activity #${id}: Unbalanced (L:${left}, R:${right}).`);
+        });
+
+        // Anagrams
+        document.querySelectorAll('.anagram-question').forEach((q, idx) => {
+            const id = q.closest('section')?.id || 'unknown';
+            if (q.querySelectorAll('.anagram-letter').length <= 1) errs.push(`Activity #${id} Q${idx + 1}: Invalid letter count.`);
+        });
+
+        // General Interactive Check
+        document.querySelectorAll('section[id^="activity-"]').forEach((s) => {
+            if (!s.querySelector('button, input, select, [draggable="true"], .match-item')) {
+                errs.push(`Activity #${s.id}: Non-interactive.`);
+            }
+        });
+
+        return errs;
+    });
+
+    // Deep Content Integrity Check: Ambiguous Gaps
+    const gapErrors = await page.evaluate(() => {
+        const errs: string[] = [];
+        const data = (window as any).activitiesData;
+
+        if (!data || !Array.isArray(data)) return [];
+
+        data.forEach((activity: any) => {
+            if (activity.type === 'fill-blank' || activity.type === 'gap-fill') {
+                activity.data.items?.forEach((item: any, i: number) => {
+                    const gaps = (item.prompt || item.sentence || '').match(/_{2,}/g);
+                    if (gaps && gaps.length > 1) {
+                        errs.push(`Activity #${activity.id} (Fill-in) Q${i + 1}: Ambiguous Gaps (${gaps.length} gaps, 1 answer).`);
+                    }
+                });
+            }
+        });
+        return errs;
+    });
+
+    errors.push(...dataErrors, ...domErrors, ...gapErrors);
+}
+
+/**
+ Checks section ordering.
+ */
+async function checkSectionOrder(page: Page, errors: string[]) {
+    const sections = await page.$$eval('section[id]', els => els.map(e => e.id));
+    const lessonIdx = sections.indexOf('lesson');
+    const vocabIdx = sections.indexOf('vocab');
+
+    if (lessonIdx === -1 || vocabIdx === -1) return; // Already caught in basic structure
+
+    if (lessonIdx > vocabIdx) errors.push('Section Order: #lesson appears after #vocab');
+
+    const firstActivityIdx = sections.findIndex(id => id.startsWith('activity-'));
+    if (firstActivityIdx !== -1 && firstActivityIdx < lessonIdx) {
+        errors.push('Section Order: Activities appear before Lesson content');
+    }
+}
+
 export async function validateFile(browser: Browser, filePath: string): Promise<ValidationResult> {
     const errors: string[] = [];
     const warnings: string[] = [];
     const fileName = filePath.split('/').pop() || 'unknown';
-
     const page = await browser.newPage();
 
-    // Capture console errors (Critical JS failures)
-    // We only care about explicit errors, not warnings.
     page.on('console', msg => {
-        if (msg.type() === 'error') {
-            errors.push(`Console Error: ${msg.text()}`);
-        }
+        if (msg.type() === 'error') errors.push(`Console Error: ${msg.text()}`);
     });
 
-    // Capture failed requests (images, CSS, scriptS)
     page.on('requestfailed', req => {
-        // Ignore data URLs or analytics if any
-        if (req.url().startsWith('file://')) {
-            errors.push(`Resource Failed: ${req.url()} (${req.failure()?.errorText})`);
-        }
+        if (req.url().startsWith('file://')) errors.push(`Resource Failed: ${req.url()}`);
     });
 
     try {
-        // Load file via file:// protocol
-        const fileUrl = `file://${resolve(filePath)}`;
-        const response = await page.goto(fileUrl, { waitUntil: 'networkidle0' });
-
+        const response = await page.goto(`file://${resolve(filePath)}`, { waitUntil: 'networkidle0' });
         if (!response) {
-            errors.push('Failed to load page (no response)');
-            return { file: fileName, passed: false, errors, warnings };
+            return { file: fileName, passed: false, errors: ['Failed to load page'], warnings };
         }
 
-        // 1. Check Title
-        const title = await page.title();
-        if (!title || title.trim() === '') {
-            errors.push('Missing or empty <title>');
-        }
-
-        // 2. Check Critical Elements
-        const hasMain = await page.$('main');
-        if (!hasMain) errors.push('Missing <main> element');
-
-        // 3. Check Anchor Links (Internal IDs)
-        const anchors = await page.$$eval('a[href^="#"]', els => els.map(e => e.getAttribute('href')));
-        for (const anchor of anchors) {
-            if (anchor && anchor.length > 1) { // Skip just "#"
-                const id = anchor.substring(1);
-                const target = await page.$(`#${id}, [name="${id}"]`);
-                if (!target) {
-                    errors.push(`Broken Anchor: ${anchor} (Target ID not found)`);
-                }
-            }
-        }
-
-        // 4. Check Navigation Links (File existence)
-        // Note: This is harder with file://, but we can check if they point to .html files
-        const navLinks = await page.$$eval('a[href]:not([href^="#"]):not([href^="http"])', els => els.map(e => e.getAttribute('href')));
-        for (const link of navLinks) {
-            if (link) {
-                // Resolve relative path
-                const targetPath = resolve(filePath, '..', link);
-                if (!existsSync(targetPath)) {
-                    errors.push(`Broken Link: ${link} (File not found)`);
-                }
-            }
-        }
-
-        // 5. Check Audio/Image existence (in case they didn't trigger requestfailed)
-        const images = await page.$$eval('img', els => els.map(e => (e as any).naturalWidth));
-        const brokenImages = images.filter(w => w === 0);
-        if (brokenImages.length > 0) {
-            errors.push(`${brokenImages.length} broken images detected (naturalWidth=0)`);
-        }
-
-        // 6. Check Planned Layout Sections
-        // Note: Activities are separate sections, so we check for 'lesson' and 'vocab' key sections.
-        const requiredIds = ['lesson', 'vocab'];
-        for (const id of requiredIds) {
-            const el = await page.$(`#${id}`);
-            if (!el) errors.push(`Missing Layout Section: #${id}`);
-        }
-
-        // 7. Check Activity Validity
-        // Activities are in sections with id="activity-N"
-        const activitySections = await page.$$('section[id^="activity-"]');
-        if (activitySections.length < 8) {
-            warnings.push(`Low Activity Count: Found ${activitySections.length} (Expected 8+)`);
-        }
-
-        // Deep Content Integrity Check
-        // We evaluate inside the page to check specific DOM states
-        const integrityErrors = await page.evaluate(() => {
-            const errors: string[] = [];
-            const data = (window as any).activitiesData;
-            if (!data || !Array.isArray(data)) {
-                return [`CRITICAL: activitiesData missing or invalid on page. Check generate script.`];
-            }
-
-            // 1. Validate Data vs DOM Count
-            data.forEach((activity: any) => {
-                const section = document.getElementById(activity.id);
-                if (!section) {
-                    errors.push(`Activity #${activity.id}: Section missing in DOM.`);
-                    return;
-                }
-
-                const container = section.querySelector('[id$="-container"]');
-
-                let expectedCount = 0;
-                let actualCount = 0;
-
-                if (activity.type === 'fill-blank' || activity.type === 'gap-fill') {
-                    expectedCount = activity.data.items?.length || 0;
-                    actualCount = container?.querySelectorAll('.fill-question').length || 0;
-                    if (actualCount !== expectedCount) {
-                        errors.push(`Activity #${activity.id} (${activity.type}): Count Mismatch. Expected ${expectedCount} items, found ${actualCount}.`);
-                    }
-
-                    // ---------------------------------------------------------
-                    // Check for Ambiguous Gaps (Multiple gaps for single answer)
-                    // Rule: One gap (__) per question prompt.
-                    // ---------------------------------------------------------
-                    activity.data.items?.forEach((item: any, i: number) => {
-                        const prompt = item.prompt || item.sentence || '';
-                        const gapMatches = prompt.match(/_{2,}/g);
-                        if (gapMatches && gapMatches.length > 1) {
-                            errors.push(`Activity #${activity.id} (Fill-in) Question ${i + 1}: Ambiguous Gaps. Found ${gapMatches.length} gaps but only 1 answer/option set. Remove redundant gaps from prompt.`);
-                        }
-                    });
-                } else if (activity.type === 'anagram') {
-                    expectedCount = activity.data.items?.length || 0;
-                    actualCount = container?.querySelectorAll('.anagram-question').length || 0;
-                    if (actualCount !== expectedCount) {
-                        errors.push(`Activity #${activity.id} (${activity.type}): Count Mismatch. Expected ${expectedCount} items, found ${actualCount}.`);
-                    }
-                }
-            });
-
-            // 2. Specific DOM Integrity Checks (Existing logic)
-            // Check Fill-in Activities
-            document.querySelectorAll('.fill-container').forEach((container: any) => {
-                const id = container.closest('section')?.id || 'unknown';
-                const questions = container.querySelectorAll('.fill-question');
-                if (questions.length === 0 && !errors.some(e => e.includes(id) && e.includes('Count Mismatch'))) {
-                    errors.push(`Activity #${id} (Fill-in): No questions rendered. Init failed?`);
-                    return;
-                }
-
-                // For each question, ensure it has either inputs or selects
-                questions.forEach((q: any, idx: number) => {
-                    const inputs = q.querySelectorAll('input, select');
-                    if (inputs.length === 0) {
-                        errors.push(`Activity #${id} (Fill-in) Question ${idx + 1}: Missing interactive gap inputs (Gap likely stripped).`);
-                    } else {
-                        // Check if select has options
-                        const select = q.querySelector('select');
-                        if (select && select.options.length <= 1) {
-                            errors.push(`Activity #${id} (Fill-in) Question ${idx + 1}: Dropdown has no options (Logic failure).`);
-                        }
-                    }
-                });
-            });
-
-            // Check Anagram Activities
-            document.querySelectorAll('.anagram-question').forEach((q: any, idx: number) => {
-                const id = q.closest('section')?.id || 'unknown';
-                const letters = q.querySelectorAll('.anagram-letter');
-                if (letters.length <= 1) {
-                    errors.push(`Activity #${id} (Anagram) Question ${idx + 1}: Invalid letter count (${letters.length}). Parsing failure?`);
-                }
-            });
-
-            // Check Unjumble/Order Activities
-            document.querySelectorAll('.order-container').forEach((container: any) => {
-                const id = container.closest('section')?.id || 'unknown';
-
-                // SKIP if this is actually an Anagram activity (which also uses .order-container)
-                if (container.querySelector('.anagram-question')) return;
-
-                // Check if we have items (support both new Unjumble and old Order)
-                const items = container.querySelectorAll('.unjumble-word, .order-sentence-card, .order-sentence-item, .order-item');
-                if (items.length === 0) {
-                    errors.push(`Activity #${id} (Order/Unjumble): No draggable items found.`);
-                }
-            });
-
-            // Check Match-up
-            document.querySelectorAll('.match-container').forEach((container: any) => {
-                const id = container.closest('section')?.id || 'unknown';
-
-                const section = container.closest('section');
-                if (!section) return;
-
-                const left = section.querySelectorAll('.match-item[data-side="left"]').length;
-                const right = section.querySelectorAll('.match-item[data-side="right"]').length;
-
-                if (left === 0 || right === 0) {
-                    errors.push(`Activity #${id} (Match-up): Empty or missing items.`);
-                } else if (left !== right) {
-                    errors.push(`Activity #${id} (Match-up): Unbalanced items (Left: ${left}, Right: ${right}).`);
-                }
-            });
-
-            // General Interactive Check (Fallback)
-            document.querySelectorAll('section[id^="activity-"]').forEach((section: any) => {
-                const interactive = section.querySelector('button, input, select, [draggable="true"], .match-item');
-                if (!interactive) {
-                    errors.push(`Activity #${section.id}: Completely non-interactive (renderer broken).`);
-                }
-            });
-
-            return errors;
-        });
-
-        if (integrityErrors.length > 0) {
-            errors.push(...integrityErrors);
-        }
-
-        // 8. Check Content Order (High level check)
-        // We expect sections order: #lesson -> #activity-0...N -> #vocab
-        const sections = await page.$$eval('section[id]', els => els.map(e => e.id));
-
-        const lessonIdx = sections.indexOf('lesson');
-        const vocabIdx = sections.indexOf('vocab');
-
-        // Check if activities are between lesson and vocab
-        // Actually, in the HTML seen, vocab is after activity-7.
-        // Order: lesson, activity-0...7, vocab.
-
-        if (lessonIdx === -1) errors.push('Section Order: #lesson missing');
-        if (vocabIdx === -1) errors.push('Section Order: #vocab missing');
-
-        if (lessonIdx > vocabIdx) {
-            errors.push('Section Order: #lesson appears after #vocab');
-        }
-
-        // Check if any activity appears before lesson or after vocab (strictly speaking vocab is last)
-        const firstActivityIdx = sections.findIndex(id => id.startsWith('activity-'));
-        if (firstActivityIdx !== -1 && firstActivityIdx < lessonIdx) {
-            errors.push('Section Order: Activities appear before Lesson content');
-        }
+        await checkBasicStructure(page, errors);
+        await checkResources(page, filePath, errors);
+        await checkActivityIntegrity(page, errors, warnings);
+        await checkSectionOrder(page, errors);
 
     } catch (err: any) {
         errors.push(`Crash: ${err.message}`);

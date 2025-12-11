@@ -248,269 +248,158 @@ function isInVocabSection(lines: string[], lineIdx: number): boolean {
   return false;
 }
 
-function validateModule(modulePath: string, moduleNum: number): ValidationResult {
-  const content = fs.readFileSync(modulePath, 'utf-8');
+/**
+ * Validates transliteration usage.
+ */
+function checkTransliteration(lines: string[], moduleNum: number): ScopeViolation[] {
+  if (moduleNum <= 10) return [];
   const violations: ScopeViolation[] = [];
 
-  // Extract title from frontmatter
-  const titleMatch = content.match(/^title:\s*(.+)$/m);
-  const title = titleMatch ? titleMatch[1].trim() : `Module ${moduleNum}`;
-  const level = getLevelFromModule(moduleNum);
+  lines.forEach((line, idx) => {
+    if (shouldSkipLine(line, 'transliteration')) return;
+    if (line.includes('/') && /\/[^/]+\//.test(line)) return;
+    if (isInVocabSection(lines, idx)) return;
 
-  const lines = content.split('\n');
-
-  // ==========================================================================
-  // 1. Transliteration Check (after Module 10)
-  // ==========================================================================
-  if (moduleNum > 10) {
-    lines.forEach((line, idx) => {
-      if (shouldSkipLine(line, 'transliteration')) return;
-      // Skip IPA columns (contain /.../)
-      if (line.includes('/') && /\/[^/]+\//.test(line)) return;
-      // Skip vocab section for transliteration (IPA is fine there)
-      if (isInVocabSection(lines, idx)) return;
-
-      // Find Ukrainian word + (latin) pattern
-      let match;
-      const pattern = /([а-яіїєґ']+)\s*\(([a-z']+)\)/gi;
-      while ((match = pattern.exec(line)) !== null) {
-        const latinPart = match[2];
-        if (isTransliteration(latinPart)) {
-          violations.push({
-            type: 'error',
-            category: 'transliteration',
-            message: `Transliteration: "${match[0]}" (remove after Module 10)`,
-            line: idx + 1,
-            context: line.trim().substring(0, 80),
-          });
-        }
+    let match;
+    const pattern = /([а-яіїєґ']+)\s*\(([a-z']+)\)/gi;
+    while ((match = pattern.exec(line)) !== null) {
+      if (isTransliteration(match[2])) {
+        violations.push({
+          type: 'error',
+          category: 'transliteration',
+          message: `Transliteration: "${match[0]}" (remove after Module 10)`,
+          line: idx + 1,
+          context: line.trim().substring(0, 80),
+        });
       }
-    });
-  }
+    }
+  });
+  return violations;
+}
 
-  // ==========================================================================
-  // 2. Class II Verbs Check
-  // Module 06 = Class I only, Module 08 = Class II
-  // So Modules 1-7 should not have Class II verbs in practice/drills
-  // ==========================================================================
+/**
+ * Validates verb usage (Class II, Irregular, Reflexive).
+ */
+function checkVerbs(lines: string[], moduleNum: number): ScopeViolation[] {
+  const violations: ScopeViolation[] = [];
+
+  // Class II
   if (moduleNum < 8) {
-    const classIIFound = new Set<string>();
-    for (const verb of CLASS_II_VERBS) {
-      // Note: \b doesn't work with Cyrillic, use lookaround with Cyrillic chars
-      const pattern = new RegExp(`(?<![а-яіїєґ'])${verb}(?![а-яіїєґ'])`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'verb-class')) return;
-        if (pattern.test(line)) {
-          classIIFound.add(verb);
-        }
-      });
-    }
-    // Report each verb once
-    for (const verb of classIIFound) {
-      violations.push({
-        type: 'warning',
-        category: 'verb-class',
-        message: `Class II verb "${verb}" used before Module 08`,
-      });
-    }
+    checkWordList(lines, CLASS_II_VERBS, 'verb-class', moduleNum, 8, violations, 'Class II verb', 'warning');
+    checkWordList(lines, IRREGULAR_VERBS, 'verb-class', moduleNum, 8, violations, 'Irregular verb', 'warning');
   }
 
-  // ==========================================================================
-  // 3. Irregular Verbs Check (before Module 08)
-  // ==========================================================================
-  if (moduleNum < 8) {
-    const irregularFound = new Set<string>();
-    for (const verb of IRREGULAR_VERBS) {
-      // Note: \b doesn't work with Cyrillic, use lookaround with Cyrillic chars
-      const pattern = new RegExp(`(?<![а-яіїєґ'])${verb}(?![а-яіїєґ'])`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'verb-class')) return;
-        if (pattern.test(line)) {
-          irregularFound.add(verb);
-        }
-      });
-    }
-    for (const verb of irregularFound) {
-      violations.push({
-        type: 'warning',
-        category: 'verb-class',
-        message: `Irregular verb "${verb}" used before Module 08`,
-      });
-    }
-  }
-
-  // ==========================================================================
-  // 4. Reflexive Verbs Check (before Module 25)
-  // ==========================================================================
+  // Reflexive
   if (moduleNum < 25) {
     const reflexiveFound = new Set<string>();
-    lines.forEach((line, idx) => {
+    lines.forEach((line) => {
       if (shouldSkipLine(line, 'grammar')) return;
-      // Skip if explaining reflexives conceptually
       if (/reflexive|рефлексив|-ся ending/i.test(line)) return;
       const matches = line.match(REFLEXIVE_PATTERN);
-      if (matches) {
-        for (const match of matches) {
-          reflexiveFound.add(match.toLowerCase());
-        }
-      }
+      if (matches) matches.forEach(m => reflexiveFound.add(m.toLowerCase()));
     });
-    for (const verb of reflexiveFound) {
-      violations.push({
-        type: 'warning',
-        category: 'grammar',
-        message: `Reflexive verb "${verb}" used before Module 25`,
-      });
-    }
+    reflexiveFound.forEach(verb => violations.push({
+      type: 'warning',
+      category: 'grammar',
+      message: `Reflexive verb "${verb}" used before Module 25`
+    }));
   }
 
-  // ==========================================================================
-  // 5. Past Tense Check (before Module 21)
-  // ==========================================================================
+  return violations;
+}
+
+/**
+ * Validates grammar (Past, Future, Tenses).
+ */
+function checkGrammar(lines: string[], moduleNum: number): ScopeViolation[] {
+  const violations: ScopeViolation[] = [];
+
+  // Past Tense
   if (moduleNum < 21) {
-    const pastTenseFound = new Set<string>();
+    const pastFound = new Set<string>();
     lines.forEach((line, idx) => {
       if (shouldSkipLine(line, 'grammar')) return;
-      // Skip lines explaining future content
-      if (/past tense|минулий час/i.test(line)) return;
-      // Skip vocab section
+      if (/past tense|минулий час|will|later|module \d+/i.test(line)) return;
       if (isInVocabSection(lines, idx)) return;
 
       for (const pattern of PAST_TENSE_PATTERNS) {
         const matches = line.match(pattern);
         if (matches) {
-          for (const match of matches) {
-            // Skip known exceptions
-            if (PAST_TENSE_EXCEPTIONS.has(match.toLowerCase())) continue;
-            // Skip if it's in a "will learn" context
-            if (/will|later|module \d+/i.test(line)) continue;
-            pastTenseFound.add(match.toLowerCase());
-          }
+          matches.forEach(m => !PAST_TENSE_EXCEPTIONS.has(m.toLowerCase()) && pastFound.add(m.toLowerCase()));
         }
       }
     });
-    for (const form of pastTenseFound) {
-      violations.push({
-        type: 'warning',
-        category: 'grammar',
-        message: `Past tense form "${form}" used before Module 21`,
-      });
-    }
+    pastFound.forEach(form => violations.push({ type: 'warning', category: 'grammar', message: `Past tense form "${form}" used before Module 21` }));
   }
 
-  // ==========================================================================
-  // 6. Future Tense Check (before Module 22)
-  // ==========================================================================
+  // Future Tense
   if (moduleNum < 22) {
-    const futureFound = new Set<string>();
-    for (const word of FUTURE_TENSE_WORDS) {
-      const pattern = new RegExp(`\\b${word}\\b`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'grammar')) return;
-        if (isInVocabSection(lines, idx)) return;
-        if (pattern.test(line)) {
-          futureFound.add(word);
-        }
-      });
-    }
-    for (const word of futureFound) {
-      violations.push({
-        type: 'warning',
-        category: 'grammar',
-        message: `Future tense "${word}" used before Module 22`,
-      });
-    }
+    checkWordList(lines, FUTURE_TENSE_WORDS, 'grammar', moduleNum, 22, violations, 'Future tense', 'warning');
   }
 
-  // ==========================================================================
-  // 7. Time Words Check (before Module 23)
-  // ==========================================================================
+  return violations;
+}
+
+/**
+ * Helper to check a list of words against content.
+ */
+function checkWordList(
+  lines: string[],
+  words: string[],
+  category: 'grammar' | 'vocabulary' | 'verb-class',
+  _currentMod: number,
+  _targetMod: number,
+  violations: ScopeViolation[],
+  label: string,
+  type: 'error' | 'warning' | 'info'
+) {
+  const found = new Set<string>();
+  for (const word of words) {
+    // Basic check for time words exceptions
+    if (word === 'сьогодні' || word === 'зараз' || word === 'добре') continue;
+
+    const pattern = new RegExp(`(?<![а-яіїєґ'])${word}(?![а-яіїєґ'])`, 'gi');
+    lines.forEach((line, idx) => {
+      if (shouldSkipLine(line, category)) return;
+      if (category !== 'verb-class' && isInVocabSection(lines, idx)) return;
+      if (pattern.test(line)) found.add(word);
+    });
+  }
+  found.forEach(w => violations.push({ type, category, message: `${label} "${w}" used prematurely` }));
+}
+
+/**
+ * Validates vocabulary usage.
+ */
+function checkOkVocabulary(lines: string[], moduleNum: number): ScopeViolation[] {
+  const violations: ScopeViolation[] = [];
+
   if (moduleNum < 23) {
-    const timeWordsFound = new Set<string>();
-    for (const word of TIME_WORDS) {
-      // Allow сьогодні and зараз as basic time references
-      if (['сьогодні', 'зараз'].includes(word.toLowerCase())) continue;
-      const pattern = new RegExp(`\\b${word}\\b`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'vocabulary')) return;
-        if (isInVocabSection(lines, idx)) return;
-        if (pattern.test(line)) {
-          timeWordsFound.add(word);
-        }
-      });
-    }
-    for (const word of timeWordsFound) {
-      violations.push({
-        type: 'info',
-        category: 'vocabulary',
-        message: `Time word "${word}" used before Module 23`,
-      });
-    }
+    checkWordList(lines, TIME_WORDS, 'vocabulary', moduleNum, 23, violations, 'Time word', 'info');
   }
-
-  // ==========================================================================
-  // 8. Adjectives Check (before Module 26)
-  // ==========================================================================
   if (moduleNum < 26) {
-    const adjectivesFound = new Set<string>();
-    for (const adj of ADJECTIVES) {
-      // Allow "добре" as adverb (good/well/okay)
-      if (adj === 'добре') continue;
-      const pattern = new RegExp(`\\b${adj}\\b`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'grammar')) return;
-        if (isInVocabSection(lines, idx)) return;
-        if (pattern.test(line)) {
-          adjectivesFound.add(adj);
-        }
-      });
-    }
-    for (const adj of adjectivesFound) {
-      violations.push({
-        type: 'warning',
-        category: 'grammar',
-        message: `Adjective "${adj}" used before Module 26`,
-      });
-    }
+    checkWordList(lines, ADJECTIVES, 'grammar', moduleNum, 26, violations, 'Adjective', 'warning');
   }
-
-  // ==========================================================================
-  // 9. Advanced Possessives Check (before Module 14)
-  // ==========================================================================
   if (moduleNum < 14) {
-    const possessivesFound = new Set<string>();
-    for (const poss of POSSESSIVES_MODULE_14) {
-      const pattern = new RegExp(`\\b${poss}\\b`, 'gi');
-      lines.forEach((line, idx) => {
-        if (shouldSkipLine(line, 'grammar')) return;
-        if (isInVocabSection(lines, idx)) return;
-        if (pattern.test(line)) {
-          possessivesFound.add(poss);
-        }
-      });
-    }
-    for (const poss of possessivesFound) {
-      violations.push({
-        type: 'warning',
-        category: 'grammar',
-        message: `Possessive "${poss}" used before Module 14`,
-      });
-    }
+    checkWordList(lines, POSSESSIVES_MODULE_14, 'grammar', moduleNum, 14, violations, 'Possessive', 'warning');
   }
 
-  // ==========================================================================
-  // 10. Vocabulary Count Check
-  // ==========================================================================
-  const vocabMatch = content.match(
-    /# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|$)/i
-  );
+  return violations;
+}
+
+/**
+ * Validates vocabulary count targets.
+ */
+function checkVocabCount(content: string, moduleNum: number): ScopeViolation[] {
+  const violations: ScopeViolation[] = [];
+  const vocabMatch = content.match(/# (?:Vocabulary|Словник)[^\n]*\n([\s\S]*?)(?=\n---|$)/i);
+
   if (vocabMatch) {
     const tableMatch = vocabMatch[1].match(/\|[^\n]+\|\n\|[-|\s]+\|\n([\s\S]*?)(?=\n\n|$)/);
     if (tableMatch) {
       const rows = tableMatch[1].trim().split('\n').filter(r => r.includes('|'));
       const vocabCount = rows.length;
 
-      // Module-specific targets from curriculum plan
       const moduleTargets: Record<number, number> = {
         1: 20, 2: 20, 3: 25, 4: 20, 5: 40, 6: 25, 7: 20, 8: 25, 9: 35, 10: 10,
         11: 25, 12: 20, 13: 30, 14: 20, 15: 40, 16: 25, 17: 25, 18: 45, 19: 10, 20: 10,
@@ -518,120 +407,82 @@ function validateModule(modulePath: string, moduleNum: number): ValidationResult
       };
 
       const target = moduleTargets[moduleNum];
-      if (target && vocabCount > target * 1.2) {  // Allow 20% over
+      if (target && vocabCount > target * 1.2) {
         violations.push({
           type: 'warning',
           category: 'vocabulary',
-          message: `Vocabulary count ${vocabCount} exceeds plan target ${target} (+${Math.round((vocabCount/target - 1) * 100)}%)`,
+          message: `Vocabulary count ${vocabCount} exceeds plan target ${target} (+${Math.round((vocabCount / target - 1) * 100)}%)`,
         });
       }
     }
   }
+  return violations;
+}
 
-  return {
-    moduleNum,
-    title,
-    level,
-    violations,
-  };
+/**
+ * Validates a single module file.
+ */
+function validateModule(modulePath: string, moduleNum: number): ValidationResult {
+  const content = fs.readFileSync(modulePath, 'utf-8');
+  const titleMatch = content.match(/^title:\s*(.+)$/m);
+  const title = titleMatch ? titleMatch[1].trim() : `Module ${moduleNum}`;
+  const level = getLevelFromModule(moduleNum);
+  const lines = content.split('\n');
+
+  const violations: ScopeViolation[] = [
+    ...checkTransliteration(lines, moduleNum),
+    ...checkVerbs(lines, moduleNum),
+    ...checkGrammar(lines, moduleNum),
+    ...checkOkVocabulary(lines, moduleNum),
+    ...checkVocabCount(content, moduleNum)
+  ];
+
+  return { moduleNum, title, level, violations };
 }
 
 // =============================================================================
 // Main
 // =============================================================================
 
-function main(): void {
-  const args = process.argv.slice(2);
-  const lang = args[0] || 'l2-uk-en';
-  const rangeArg = args[1];
-
-  const curriculumPath = path.join(__dirname, '..', 'curriculum', lang);
-  const modulesDir = path.join(curriculumPath, 'modules');
-
-  if (!fs.existsSync(modulesDir)) {
-    console.error(`Modules directory not found: ${modulesDir}`);
-    process.exit(1);
-  }
-
-  // Parse module range
-  let startModule = 1;
-  let endModule = 200;
-
-  if (rangeArg) {
-    if (rangeArg.includes('-')) {
-      const [start, end] = rangeArg.split('-').map(Number);
-      startModule = start;
-      endModule = end;
-    } else {
-      startModule = endModule = parseInt(rangeArg);
-    }
-  }
-
-  console.log(`\n🔍 Scope Validator: ${lang} (modules ${startModule}-${endModule})\n`);
-  console.log('======================================================================\n');
-
-  // Get all module files in range
-  const files = fs.readdirSync(modulesDir)
-    .filter(f => f.match(/^module-\d+\.md$/))
-    .map(f => ({
-      file: f,
-      num: parseInt(f.match(/\d+/)?.[0] || '0'),
-    }))
-    .filter(f => f.num >= startModule && f.num <= endModule)
-    .sort((a, b) => a.num - b.num);
-
+function printSummary(files: { file: string; num: number }[], results: ValidationResult[]) {
   let totalViolations = 0;
   let modulesWithIssues = 0;
-  const results: ValidationResult[] = [];
 
-  for (const { file, num } of files) {
-    const modulePath = path.join(modulesDir, file);
-    const result = validateModule(modulePath, num);
-    results.push(result);
-
-    if (result.violations.length > 0) {
+  for (const r of results) {
+    if (r.violations.length > 0) {
       modulesWithIssues++;
-      totalViolations += result.violations.length;
+      totalViolations += r.violations.length;
 
-      console.log(`📋 Module ${num}: ${result.title} (${result.level})`);
-
-      // Group violations by category for cleaner output
+      console.log(`📋 Module ${r.moduleNum}: ${r.title} (${r.level})`);
       const byCategory: Record<string, ScopeViolation[]> = {};
-      for (const v of result.violations) {
+      for (const v of r.violations) {
         if (!byCategory[v.category]) byCategory[v.category] = [];
         byCategory[v.category].push(v);
       }
-
       for (const [category, violations] of Object.entries(byCategory)) {
         console.log(`  [${category}]`);
-        // Dedupe similar messages
         const seen = new Set<string>();
         for (const v of violations) {
           const key = v.message;
           if (seen.has(key)) continue;
           seen.add(key);
-
           const icon = v.type === 'error' ? '❌' : v.type === 'warning' ? '⚠️' : 'ℹ️';
           const count = violations.filter(x => x.message === key).length;
-          const countStr = count > 1 ? ` (×${count})` : '';
-          console.log(`    ${icon} ${v.message}${countStr}`);
+          console.log(`    ${icon} ${v.message}${count > 1 ? ` (×${count})` : ''}`);
         }
       }
       console.log();
     }
   }
 
-  // Summary
   console.log('======================================================================\n');
   console.log('📊 SUMMARY\n');
   console.log(`  Modules scanned: ${files.length}`);
   console.log(`  Modules with issues: ${modulesWithIssues}`);
   console.log(`  Total violations: ${totalViolations}`);
 
-  // Count by type
   const byType = { error: 0, warning: 0, info: 0 };
   const byCategory: Record<string, number> = {};
-
   for (const r of results) {
     for (const v of r.violations) {
       byType[v.type]++;
@@ -648,8 +499,50 @@ function main(): void {
   for (const [cat, count] of Object.entries(byCategory).sort((a, b) => b[1] - a[1])) {
     console.log(`    ${cat}: ${count}`);
   }
-
   console.log();
+}
+
+function main(): void {
+  const args = process.argv.slice(2);
+  const lang = args[0] || 'l2-uk-en';
+  const rangeArg = args[1];
+
+  const curriculumPath = path.join(__dirname, '..', 'curriculum', lang);
+  const modulesDir = path.join(curriculumPath, 'modules');
+
+  if (!fs.existsSync(modulesDir)) {
+    console.error(`Modules directory not found: ${modulesDir}`);
+    process.exit(1);
+  }
+
+  let startModule = 1;
+  let endModule = 200;
+
+  if (rangeArg) {
+    if (rangeArg.includes('-')) {
+      const [start, end] = rangeArg.split('-').map(Number);
+      startModule = start;
+      endModule = end;
+    } else {
+      startModule = endModule = parseInt(rangeArg);
+    }
+  }
+
+  console.log(`\n🔍 Scope Validator: ${lang} (modules ${startModule}-${endModule})\n`);
+  console.log('======================================================================\n');
+
+  const files = fs.readdirSync(modulesDir)
+    .filter(f => f.match(/^module-\d+\.md$/))
+    .map(f => ({ file: f, num: parseInt(f.match(/\d+/)?.[0] || '0') }))
+    .filter(f => f.num >= startModule && f.num <= endModule)
+    .sort((a, b) => a.num - b.num);
+
+  const results: ValidationResult[] = [];
+  for (const { file, num } of files) {
+    results.push(validateModule(path.join(modulesDir, file), num));
+  }
+
+  printSummary(files, results);
 }
 
 main();

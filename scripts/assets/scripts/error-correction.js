@@ -24,8 +24,13 @@ function initErrorCorrection(sectionId, data) {
     const words = item.sentence.split(/(\s+)/);
     const wordsHtml = words.map((word, wi) => {
       if (/^\s+$/.test(word)) return word; // preserve whitespace
-      const isError = item.errorWord && word.replace(/[.,!?;:]/g, '') === item.errorWord;
-      return `<span class="error-word" data-word="${word.replace(/[.,!?;:]/g, '')}" data-is-error="${isError}">${word}</span>`;
+
+      const cleanWord = word.replace(/[.,!?;:]/g, '').trim();
+      const cleanError = (item.errorWord || '').trim();
+
+      const isError = cleanError && cleanWord.toLowerCase() === cleanError.toLowerCase();
+
+      return `<span class="error-word" data-word="${cleanWord}" data-is-error="${isError}">${word}</span>`;
     }).join('');
 
     const hasNoError = item.errorWord === null;
@@ -43,11 +48,11 @@ function initErrorCorrection(sectionId, data) {
         <span class="error-prompt">Choose the correct form:</span>
         <div class="error-option-btns">
           ${(item.options || []).map(opt =>
-            `<button class="btn btn-outline btn-sm error-option"
+      `<button class="btn btn-outline btn-sm error-option"
                      data-option="${opt}"
                      data-correct="${opt === item.correctForm}"
                      onclick="handleErrorOption('${sectionId}', ${i}, '${opt}', ${opt === item.correctForm})">${opt}</button>`
-          ).join('')}
+    ).join('')}
         </div>
       </div>
       <div class="error-feedback" id="${sectionId}-fb-${i}" style="display:none;"></div>

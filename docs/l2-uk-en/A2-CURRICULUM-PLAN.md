@@ -2,7 +2,7 @@
 
 **Status:** ✅ COMPLETE (Aligned with Ukrainian State Standard 2024)
 **Modules:** 01-50 (50 modules)
-**Vocabulary Target:** ~1,250 words (level), ~2,150 cumulative
+**Vocabulary Target:** ~1,500 words (level), ~2,400 cumulative
 
 ---
 
@@ -25,7 +25,7 @@ A2 is the "Bridge" level where learners are no longer beginners but not yet inde
 | **A2.2** | 21-40 | **80% PPP / 20% Simple Narrative** | Aspect Drills + Short Readings | Controlled comparison. |
 | **A2.3** | 41-50 | **Hybrid (Pre-B1 Runway)** | Complex Sentences / Longer Texts | Narrative density increases to prepare for B1. |
 
-**Key Constraint:** A2 modules strictly target **~25 new words per module** (1,250 total for level) to prevent cognitive overload while grappling with the 7-case system.
+**Key Constraint:** A2 modules strictly target **~30 new words per module** (1,500 total for level) to prevent cognitive overload while grappling with the 7-case system.
 
 ---
 

@@ -117,42 +117,28 @@ function buildVibeLesson(parsed: ParsedModule, ctx: RenderContext): VibeLesson {
 // Module Type Inference
 // =============================================================================
 
+const MODULE_TYPE_MAPPINGS: { type: ModuleType; tags: string[] }[] = [
+  { type: 'checkpoint', tags: ['checkpoint', 'review', 'assessment'] },
+  { type: 'history', tags: ['history'] },
+  { type: 'biography', tags: ['biography'] },
+  { type: 'idioms', tags: ['idioms', 'phraseology'] },
+  { type: 'literature', tags: ['literature', 'poetry', 'prose'] },
+  { type: 'culture', tags: ['culture', 'regions', 'music'] },
+  { type: 'skills', tags: ['skills', 'academic', 'writing'] },
+  { type: 'functional', tags: ['functional', 'dialogue', 'role-play'] },
+  { type: 'vocabulary', tags: ['vocabulary', 'vocab'] },
+  { type: 'grammar', tags: ['grammar', 'cases', 'verbs', 'aspect'] },
+];
+
 function inferModuleType(tags: string[]): ModuleType {
   const tagSet = new Set(tags.map(t => t.toLowerCase()));
 
-  // Check for specific module types (order matters - more specific first)
-  if (tagSet.has('checkpoint') || tagSet.has('review') || tagSet.has('assessment')) {
-    return 'checkpoint';
-  }
-  if (tagSet.has('history')) {
-    return 'history';
-  }
-  if (tagSet.has('biography')) {
-    return 'biography';
-  }
-  if (tagSet.has('idioms') || tagSet.has('phraseology')) {
-    return 'idioms';
-  }
-  if (tagSet.has('literature') || tagSet.has('poetry') || tagSet.has('prose')) {
-    return 'literature';
-  }
-  if (tagSet.has('culture') || tagSet.has('regions') || tagSet.has('music')) {
-    return 'culture';
-  }
-  if (tagSet.has('skills') || tagSet.has('academic') || tagSet.has('writing')) {
-    return 'skills';
-  }
-  if (tagSet.has('functional') || tagSet.has('dialogue') || tagSet.has('role-play')) {
-    return 'functional';
-  }
-  if (tagSet.has('vocabulary') || tagSet.has('vocab')) {
-    return 'vocabulary';
-  }
-  if (tagSet.has('grammar') || tagSet.has('cases') || tagSet.has('verbs') || tagSet.has('aspect')) {
-    return 'grammar';
+  for (const mapping of MODULE_TYPE_MAPPINGS) {
+    if (mapping.tags.some(tag => tagSet.has(tag))) {
+      return mapping.type;
+    }
   }
 
-  // Default based on tag patterns
   return 'grammar';
 }
 

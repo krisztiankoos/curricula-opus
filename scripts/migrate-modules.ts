@@ -120,6 +120,20 @@ async function parseModuleFile(filePath: string, globalNum: number): Promise<Mod
   };
 }
 
+function printMigrationSummary(byLevel: Map<string, ModuleMeta[]>) {
+  console.log('📊 Migration Summary:\n');
+  for (const [level, mods] of [...byLevel.entries()].sort()) {
+    console.log(`  ${level.toUpperCase()}: ${mods.length} modules`);
+    for (const m of mods.slice(0, 3)) {
+      console.log(`    ${padNum(m.globalNum)} → ${level}/${padNum(m.localNum)}-${m.slug}.md`);
+    }
+    if (mods.length > 3) {
+      console.log(`    ... and ${mods.length - 3} more`);
+    }
+    console.log();
+  }
+}
+
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
 
@@ -160,18 +174,7 @@ async function main() {
     byLevel.set(m.level, arr);
   }
 
-  // Print summary
-  console.log('📊 Migration Summary:\n');
-  for (const [level, mods] of [...byLevel.entries()].sort()) {
-    console.log(`  ${level.toUpperCase()}: ${mods.length} modules`);
-    for (const m of mods.slice(0, 3)) {
-      console.log(`    ${padNum(m.globalNum)} → ${level}/${padNum(m.localNum)}-${m.slug}.md`);
-    }
-    if (mods.length > 3) {
-      console.log(`    ... and ${mods.length - 3} more`);
-    }
-    console.log();
-  }
+  printMigrationSummary(byLevel);
 
   if (dryRun) {
     console.log('✅ Dry run complete. Run without --dry-run to execute.\n');

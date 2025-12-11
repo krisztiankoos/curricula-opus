@@ -322,6 +322,14 @@ export class VocabDatabase {
     const id = generateExpressionId(uk);
     const level = expr.level || getLevelFromModule(expr.first_module);
 
+    // Prepare fields to avoid inline || null complexity
+    const ipa = expr.ipa || null;
+    const en = expr.en || null;
+    const type = expr.type || 'phrase';
+    const literal_en = expr.literal_en || null;
+    const register = expr.register || 'neutral';
+    const notes = expr.notes || null;
+
     // Check if expression already exists (by uk or by id)
     let existing = this.getExpression(uk);
     if (!existing) {
@@ -340,40 +348,19 @@ export class VocabDatabase {
           first_module = MIN(first_module, ?),
           notes = COALESCE(?, notes)
         WHERE id = ?
-      `).run(
-        expr.ipa || null,
-        expr.en || null,
-        expr.type || null,
-        expr.literal_en || null,
-        expr.register || null,
-        expr.first_module,
-        expr.notes || null,
-        existing.id
-      );
+      `).run(ipa, en, type, literal_en, register, expr.first_module, notes, existing.id);
     } else {
       // Insert new
       this.db.prepare(`
         INSERT INTO expressions (id, uk, ipa, en, type, literal_en, register, first_module, level, notes)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `).run(
-        id,
-        uk,
-        expr.ipa || null,
-        expr.en,
-        expr.type || 'phrase',
-        expr.literal_en || null,
-        expr.register || 'neutral',
-        expr.first_module,
-        level,
-        expr.notes || null
-      );
+      `).run(id, uk, ipa, en, type, literal_en, register, expr.first_module, level, notes);
     }
 
     // Add/update components
     const exprId = existing?.id || id;
     this.setExpressionComponents(exprId, componentWords);
 
-    // Return by id to ensure we get the right entry
     return this.getExpressionById(exprId)!;
   }
 

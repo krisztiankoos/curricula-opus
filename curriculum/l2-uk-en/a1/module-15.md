@@ -470,6 +470,20 @@ When navigating, Ukrainians often use landmarks rather than street names: "бі�
     > [!answer] ласка
     > [!options] ласка | ласкаво | ласки | ласку
 
+**English Translation:**
+1. Tourist: Where is the metro?
+2. Kyivite: Go straight.
+3. Kyivite: Turn left.
+4. Tourist: Is it far?
+5. Kyivite: No, it is close.
+6. Kyivite: The station is near the stop.
+7. Tourist: How many minutes on foot?
+8. Kyivite: Approximately five minutes.
+9. Tourist: And where is the stop?
+10. Kyivite: On the corner.
+11. Tourist: Thank you for the help!
+12. Kyivite: You are welcome, have a nice day!
+
 ## unjumble: Build Navigation Sentences
 > Arrange the words into correct sentences.
 

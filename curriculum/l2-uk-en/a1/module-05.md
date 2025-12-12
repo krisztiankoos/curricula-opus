@@ -465,6 +465,20 @@ The phrase "Сідайте, я зараз чай поставлю!" (Sit down, I
     > [!answer] Ці
     > [!options] Ці | Цей | Ця | Це
 
+**English Translation:**
+1. How much is this phone?
+2. And that black one there?
+3. This bag is beautiful.
+4. I want these glasses.
+5. That price is good.
+6. Show me this watch, please.
+7. Those goods are expensive.
+8. That cup is broken.
+9. I like this color.
+10. This model is new.
+11. Give me that bottle.
+12. These keys are not mine.
+
 ---
 
 # Vocabulary

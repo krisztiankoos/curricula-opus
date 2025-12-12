@@ -175,6 +175,17 @@ I really love my apartment!
 **Олексій:** Ти права. Головне — вона надійна!
 **Катерина:** Так, це важливо. Нова машина — не завжди краща.
 
+**English Translation:**
+**Kateryna:** Look! A new car!
+**Oleksiy:** Oh, how beautiful! A big car!
+**Kateryna:** Yes, and expensive, probably.
+**Oleksiy:** And what color?
+**Kateryna:** Blue. A beautiful blue color.
+**Oleksiy:** Better than my old car!
+**Kateryna:** Yours is also not bad. Small, but convenient.
+**Oleksiy:** You are right. The main thing — it is reliable!
+**Kateryna:** Yes, that is important. A new car is not always better.
+
 Зверни увагу: нова, красива, великий, дорогий, синій, стара — всі прикметники!
 
 # Summary

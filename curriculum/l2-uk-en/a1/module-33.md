@@ -180,6 +180,18 @@ Christmas holidays last until Epiphany — January 19. It's a time of joy, famil
 **Ольга:** Гарно! Бажаю щасливого року!
 **Михайло:** Дякую, тобі також! Щастя, здоров'я, миру!
 
+**English Translation:**
+**Olha:** Happy New Year! 🎉
+**Mykhailo:** Happy New Year! How did you celebrate?
+**Olha:** Wonderful! We were with family. And you?
+**Mykhailo:** We were also at home. Prepared Olivier salad, watched TV.
+**Olha:** And at midnight?
+**Mykhailo:** Oh, the fireworks were beautiful!
+**Olha:** Yes, ours too! And gifts?
+**Mykhailo:** Yes, we exchanged. I received a new book.
+**Olha:** Nice! I wish you a happy year!
+**Mykhailo:** Thank you, you too! Happiness, health, peace!
+
 Зверни увагу: З Новим роком, святкував, подарунки, бажаю — святкова лексика!
 
 # Summary

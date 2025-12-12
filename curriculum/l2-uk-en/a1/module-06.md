@@ -500,6 +500,20 @@ On the weekend they do not work. They eat breakfast late, read books, listen to 
     > [!answer] снідаємо
     > [!options] снідаємо | снідаю | снідаєш | снідають
 
+**English Translation:**
+1. — What are you doing?
+2. — I am reading a book.
+3. — Do you understand Ukrainian?
+4. — Yes, I understand.
+5. — And where does Marko work?
+6. — He works in an office.
+7. — Do they listen to music?
+8. — No, they don't listen.
+9. — We are having lunch together today.
+10. — Great! I have time.
+11. — Do you know this restaurant?
+12. — Yes, we often have breakfast there.
+
 ---
 
 # Vocabulary

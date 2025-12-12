@@ -190,6 +190,18 @@ Take care and have a nice day!
 **Ігор:** Чудово! Тоді поїдемо за місто.
 **Марія:** Я теж хочу! Там красива природа!
 
+**English Translation:**
+**Ihor:** Hi! What's the weather like today?
+**Maria:** Hi! Warm, but cloudy.
+**Ihor:** Will it rain?
+**Maria:** Possibly in the evening. Why?
+**Ihor:** I want to go for a walk in the park.
+**Maria:** Take an umbrella just in case!
+**Ihor:** Good idea. And tomorrow?
+**Maria:** Tomorrow will be sunny and warmer.
+**Ihor:** Great! Then we will go out of town.
+**Maria:** I want to too! The nature is beautiful there!
+
 Зверни увагу: тепло, хмарно, сонячно — всі безособові конструкції!
 
 # Summary

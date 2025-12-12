@@ -459,6 +459,20 @@ Today I go to the store. I need to buy groceries. I take a bag and money. In the
     > [!answer] подарунок
     > [!options] подарунок | подарунка | подарунку | подарунком
 
+**English Translation:**
+1. I want bread.
+2. Give me a newspaper.
+3. I need water.
+4. I am taking milk.
+5. Show me the bag.
+6. I am buying a magazine.
+7. I want coffee.
+8. I need a ticket.
+9. Give me the letter.
+10. Show the document.
+11. I am taking the suitcase.
+12. I want a gift.
+
 ## unjumble: Build Accusative Sentences
 > Arrange the words into correct sentences.
 

@@ -175,6 +175,19 @@ I love my family. We often gather together for holidays.
 **Марія:** На жаль, тільки одна бабуся ще жива. Їй вісімдесят років!
 **Іван:** Нехай буде здорова!
 
+**English Translation:**
+**Ivan:** Do you have a big family?
+**Maria:** Quite big. I have three brothers and one sister.
+**Ivan:** Wow! And parents?
+**Maria:** Yes, parents are alive and healthy, thank God.
+**Ivan:** And are you married?
+**Maria:** Yes, I have a husband and two children.
+**Ivan:** How old are they?
+**Maria:** The son is seven, and the daughter is five.
+**Ivan:** Wonderful! And grandmothers and grandfathers?
+**Maria:** Unfortunately, only one grandmother is still alive. She is eighty years old!
+**Ivan:** May she be healthy!
+
 Зверни увагу: брат, сестра, батьки, чоловік, діти, син, дочка, бабуся, дідусь!
 
 # Summary

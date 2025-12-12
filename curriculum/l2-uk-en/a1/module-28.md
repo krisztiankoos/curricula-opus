@@ -186,6 +186,18 @@ I hope to speak freely soon!
 **Оля:** Правда. Головне — регулярно.
 **Петро:** Так! Ніколи не забувай практикуватися!
 
+**English Translation:**
+**Olya:** You speak English well!
+**Petro:** Thank you! I practice a lot.
+**Olya:** How often?
+**Petro:** Almost every day. Usually in the evening.
+**Olya:** And how do you learn?
+**Petro:** I listen to podcasts, read books.
+**Olya:** Do you read quickly?
+**Petro:** No, still slowly. But that's normal!
+**Olya:** True. The main thing is — regularly.
+**Petro:** Yes! Never forget to practice!
+
 Зверни увагу: добре, часто, майже, зазвичай, швидко, повільно, регулярно, ніколи — всі прислівники!
 
 # Summary

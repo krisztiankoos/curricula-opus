@@ -424,6 +424,20 @@ Hi! My name is Olena. I want to tell you about my family. I have a dad, mom, bro
     > [!answer] їхнього собаку
     > [!options] їхнього собаку | їхній собака | їхньому собаці | їхнім собакою
 
+**English Translation:**
+1. Do you see that man?
+2. I know this student.
+3. She loves her brother.
+4. We are waiting for the new doctor.
+5. He sees that girl.
+6. I know your neighbor.
+7. Do you like my friend?
+8. She sees her dad.
+9. We know this teacher.
+10. He is waiting for his friend.
+11. I see our director.
+12. She loves their dog.
+
 ## unjumble: Build Sentences with People
 > Arrange the words into correct sentences.
 

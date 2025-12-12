@@ -170,6 +170,18 @@ At nine, I came back home. I watched the news and read a book. Then I went to sl
 **Оксана:** Так, рекомендую! До зустрічі!
 **Дмитро:** Бувай!
 
+**English Translation:**
+**Oksana:** Hi, Dmytro! How are you?
+**Dmytro:** Hi! Good, thanks. Yesterday was an interesting day.
+**Oksana:** Oh? What did you do?
+**Dmytro:** In the morning I worked. Then I had lunch in a new restaurant.
+**Oksana:** Was it tasty?
+**Dmytro:** Very! I ate borscht and varenyky. And what did you do?
+**Oksana:** I was in a museum. I saw a new exhibition.
+**Dmytro:** Interesting! I need to go too.
+**Oksana:** Yes, I recommend it! See you!
+**Dmytro:** Bye!
+
 Зверни увагу: робив/робила, їв/бачила — минулий час завжди показує рід!
 
 # Summary

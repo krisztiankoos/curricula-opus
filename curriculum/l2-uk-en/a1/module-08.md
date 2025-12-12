@@ -506,6 +506,20 @@ Oleh **loves** his morning. He **knows**: good morning — good day!
     > [!answer] любимо
     > [!options] любимо | люблю | любиш | люблять
 
+**English Translation:**
+1. We want borscht and varenyky.
+2. What do you want to drink?
+3. I am drinking water.
+4. She is drinking coffee.
+5. Do you like spicy dishes?
+6. Yes, we like!
+7. What are you eating?
+8. I am eating a salad.
+9. They are waiting for the order.
+10. I see the waiter.
+11. Do you speak Ukrainian?
+12. We love this place.
+
 ---
 
 # Vocabulary

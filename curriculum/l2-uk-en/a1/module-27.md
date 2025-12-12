@@ -185,6 +185,18 @@ Now I have new clothes: blue jacket, white shirt, gray pants, black boots. I'm s
 **Юлія:** В новому магазині на Хрещатику.
 **Софія:** Треба теж сходити!
 
+**English Translation:**
+**Yulia:** Beautiful dress! What color?
+**Sofia:** Thank you! It is dark green.
+**Yulia:** Suits [you] very well! And shoes?
+**Sofia:** Black shoes. They go with everything!
+**Yulia:** True. Have you seen my new jacket?
+**Sofia:** No! Show [me]!
+**Yulia:** Here. Blue with yellow — colors of Ukraine!
+**Sofia:** Beautiful! Where did you buy [it]?
+**Yulia:** In a new store on Khreshchatyk.
+**Sofia:** I need to go too!
+
 Зверни увагу: темно-зелений, чорні, синя, жовтим — всі кольори з правильним родом!
 
 # Summary

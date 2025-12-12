@@ -203,6 +203,16 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 **Покупець:** Згода! Ось п'ятсот.
 **Продавець:** Ваша решта — вісімдесят гривень. Дякую!
 
+**English Translation:**
+**Buyer:** How much does this bag cost?
+**Seller:** Five hundred hryvnias.
+**Buyer:** Oh, too expensive! Is there a discount?
+**Seller:** For you — four hundred fifty.
+**Buyer:** Hmm... Four hundred?
+**Seller:** Okay, four hundred twenty — last word!
+**Buyer:** Agreed! Here is five hundred.
+**Seller:** Your change is eighty hryvnias. Thank you!
+
 Зверни увагу: всі числа в діалозі — практикуй їх!
 
 # Summary

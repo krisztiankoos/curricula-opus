@@ -201,6 +201,15 @@ Ukrainians take hospitality seriously. If you visit a Ukrainian home, expect to 
 **Продавець:** Овочі та фрукти — в кінці залу.
 **Покупець:** Супер, дякую за допомогу!
 
+**English Translation:**
+**Shopper:** Excuse me, where are dairy products?
+**Shop Assistant:** Straight, then left. Second aisle.
+**Shopper:** Thank you! And bread?
+**Shop Assistant:** Bread is near the checkout, on the right.
+**Shopper:** And where can I find vegetables?
+**Shop Assistant:** Vegetables and fruits are at the end of the hall.
+**Shopper:** Super, thank you for help!
+
 Зверни увагу: молочні продукти, хліб, овочі, фрукти — все це їжа!
 
 # Summary

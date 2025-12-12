@@ -182,6 +182,18 @@ That's my daily schedule!
 **Ігор:** О восьмій. А ти?
 **Марина:** Я о пів на дев'яту. Не люблю поспішати!
 
+**English Translation:**
+**Ihor:** When do you usually wake up?
+**Maryna:** At seven. And you?
+**Ihor:** I get up at half past six.
+**Maryna:** So early! What do you do in the morning?
+**Ihor:** First I exercise. Then I wash and have breakfast.
+**Maryna:** And what do you eat for breakfast?
+**Ihor:** Usually porridge and coffee. I dress quickly and run to work.
+**Maryna:** When do you leave?
+**Ihor:** At eight. And you?
+**Maryna:** I [leave] at half past eight. I don't like to rush!
+
 Зверни увагу: прокидаєшся, встаю, вмиваюсь, одягаюсь — всі дієслова розпорядку!
 
 # Summary

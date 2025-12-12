@@ -190,6 +190,20 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 **Офіціант:** Зараз принесу. Щось ще?
 **Клієнт:** Ні, це все. Дякую!
 
+**English Translation:**
+**Waiter:** Good day! Are you ready to order?
+**Client:** Yes. Espresso for me, please.
+**Waiter:** Regular or double?
+**Client:** Double. And water, please.
+**Waiter:** Sparkling or still (lit. with gas or without)?
+**Client:** Still.
+**Waiter:** Anything else?
+**Client:** Yes, a cake. What do you recommend?
+**Waiter:** Our cheesecake is very popular!
+**Client:** Good, I will take cheesecake.
+**Waiter:** I will bring it right away. Anything else?
+**Client:** No, that's all. Thank you!
+
 Зверни увагу: еспресо, воду, тістечко, чізкейк — все це знахідний відмінок (accusative)!
 
 # Summary

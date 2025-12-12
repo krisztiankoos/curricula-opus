@@ -182,6 +182,17 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 **Андрій:** Чудово! Тоді гарно провести час!
 **Ольга:** Дякую! Тобі також!
 
+**English Translation:**
+**Olha:** Hi! What will you be doing on the weekend?
+**Andriy:** Hi! On Saturday I will rest.
+**Olha:** And on Sunday?
+**Andriy:** On Sunday I'm going to go out of town. And you?
+**Olha:** I will work on Saturday. But on Sunday I plan to meet with friends.
+**Andriy:** Super! Where will you meet?
+**Olha:** We will be in the park, if the weather is good.
+**Andriy:** Wonderful! Have a good time then!
+**Olha:** Thank you! You too!
+
 Зверни увагу: буду/будеш/будемо + інфінітив — майбутній час!
 
 # Summary

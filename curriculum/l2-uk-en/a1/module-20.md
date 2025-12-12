@@ -187,6 +187,32 @@ Then I went to the café. I ordered coffee without sugar. The waiter asks: "Anyt
 **Офіціант:** Дякуємо! До побачення!
 **Турист:** До побачення!
 
+**English Translation:**
+**Tourist:** Good day! Where is the nearest café?
+**Kyivan:** Good day! Go straight, then left.
+**Tourist:** Is it far?
+**Kyivan:** No, five minutes on foot.
+**Tourist:** Thank you!
+
+(In the café)
+
+**Waiter:** Good day! A table for one?
+**Tourist:** Yes, please.
+**Waiter:** What will you order?
+**Tourist:** Coffee, please. Without sugar.
+**Waiter:** With milk?
+**Tourist:** Yes, with milk. And a pastry.
+**Waiter:** Anything else?
+**Tourist:** No, that's all.
+
+(Later)
+
+**Tourist:** The bill, please.
+**Waiter:** 85 hryvnias. Card or cash?
+**Tourist:** Card.
+**Waiter:** Thank you! Goodbye!
+**Tourist:** Goodbye!
+
 Зверни увагу: весь словниковий запас A1.2 тут — напрямки, їжа, кафе, числа, відмінки!
 
 # Summary

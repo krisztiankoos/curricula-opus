@@ -150,6 +150,17 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 **Петро:** Це їхні — батьківські.
 **Марія:** Скільки речей! Треба прибрати!
 
+**English Translation:**
+**Maria:** Whose phone is this on the table?
+**Petro:** Oh, it's mine! Thank you, I was looking for it.
+**Maria:** And whose bag is this?
+**Petro:** Hmm, I don't know. Maybe it's hers — Oksana's.
+**Maria:** And this key?
+**Petro:** This is our apartment key.
+**Maria:** And whose glasses are these?
+**Petro:** They are theirs — parents'.
+**Maria:** So many things! Need to clean up!
+
 Зверни увагу: мій, її, наш, їхні — всі присвійні займенники!
 
 # Summary

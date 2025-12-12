@@ -196,6 +196,17 @@ On Sunday I rest. In the morning I sleep long — until ten!
 **Олена:** Домовилися! До середи!
 **Марія:** Бувай!
 
+**English Translation:**
+**Maria:** Hi! When are you free?
+**Olena:** Hi! It depends. Which day?
+**Maria:** Maybe on Wednesday?
+**Olena:** On Wednesday I work until five. And then I'm free.
+**Maria:** Great! Does six o'clock work?
+**Olena:** Yes, six o'clock is good. Where will we meet?
+**Maria:** Near "Khreshchatyk" metro?
+**Olena:** Agreed! Until Wednesday!
+**Maria:** Bye!
+
 Зверни увагу: у середу, о шостій, до п'ятої — часові вирази!
 
 # Summary

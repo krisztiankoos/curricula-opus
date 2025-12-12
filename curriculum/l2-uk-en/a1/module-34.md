@@ -225,6 +225,19 @@ Glory to Ukraine! 🇺🇦
 **Студент:** Так! Хочу вчити більше!
 **Учитель:** Чудово! Удачі! До зустрічі на A2!
 
+**English Translation:**
+**Teacher:** Congratulations! You finished A1!
+**Student:** Thank you! I am very glad!
+**Teacher:** How do you feel?
+**Student:** A little tired, but happy!
+**Teacher:** What was the hardest?
+**Student:** Cases! But now I understand.
+**Teacher:** And what was the most interesting?
+**Student:** Culture! And the history of the language.
+**Teacher:** Ready for A2?
+**Student:** Yes! I want to learn more!
+**Teacher:** Wonderful! Good luck! See you at A2!
+
 Зверни увагу: весь діалог використовує структури з A1!
 
 # Summary

@@ -140,6 +140,16 @@ At 9:00 I go to work. I work in an office. At 13:00 I have lunch at a café near
 **Турист:** Дуже дякую за допомогу!
 **Киянин:** Будь ласка! Гарного дня!
 
+**English Translation:**
+**Tourist:** Excuse me, where is the bus stop?
+**Kyivan:** Straight ahead. The stop is on the corner, near the bank.
+**Tourist:** Thank you! And where is the nearest metro?
+**Kyivan:** The metro station is not far. Go straight, then left. It is in that big building.
+**Tourist:** Is it far to the center?
+**Kyivan:** No, by metro — five minutes. At the central station exit to Khreshchatyk.
+**Tourist:** Thank you very much for help!
+**Kyivan:** You're welcome! Have a nice day!
+
 Зверни увагу: на розі, у будинку, на метро, на станції — всі у місцевому відмінку!
 
 # Summary

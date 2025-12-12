@@ -13,7 +13,7 @@ import * as showdown from 'showdown';
 // Callout Block Types
 // =============================================================================
 
-export type CalloutType = 'answer' | 'explanation' | 'alt' | 'note' | 'tip' | 'warning' | 'options' | 'option';
+export type CalloutType = 'answer' | 'explanation' | 'alt' | 'note' | 'tip' | 'warning' | 'options' | 'option' | 'observe';
 
 export interface CalloutBlock {
   type: CalloutType;
@@ -351,6 +351,18 @@ export const calloutStyles = `
   background: #f5f5f5;
   border-left: 3px solid var(--border, #e0e0e0);
   color: var(--text-muted, #5e5e5e);
+}
+
+.callout-observe {
+  background: #fff8e6;
+  border-left: 3px solid #f5a623;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.callout-observe::before {
+  content: '🔎 ';
+  font-size: 1.1em;
 }
 
 /* Answer hiding */

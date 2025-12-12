@@ -18,7 +18,10 @@ export type ActivityType =
   | 'gap-fill'
   | 'select'
   | 'error-correction'
-  | 'fill-in';
+  | 'fill-in'
+  | 'cloze'
+  | 'dialogue-reorder'
+  | 'mark-the-words';
 
 // =============================================================================
 // Frontmatter
@@ -102,6 +105,8 @@ export interface LetterGroup {
 // Activities - Base
 // =============================================================================
 
+export type ExerciseStage = 'recognition' | 'discrimination' | 'controlled-production' | 'free-production';
+
 export interface Activity<T extends ActivityContent = ActivityContent> {
   id: string;
   type: ActivityType;
@@ -112,6 +117,7 @@ export interface Activity<T extends ActivityContent = ActivityContent> {
   instructionsUk?: string;
   content: T;
   tags?: string[];
+  stage?: ExerciseStage;  // Pedagogical stage (recognition → production)
 }
 
 export interface ActivityContent {

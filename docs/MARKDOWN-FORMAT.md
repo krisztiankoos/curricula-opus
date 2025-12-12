@@ -460,6 +460,113 @@ All activities appear under `# Activities` using pure markdown syntax (NOT YAML)
 
 **Scoring:** 2 points per item (1 for identifying error, 1 for correct fix)
 
+### Cloze Format (A2+)
+
+Passage with multiple dropdown blanks. Use `[___:N]` markers in the text.
+
+```markdown
+## cloze: Complete the Passage
+
+> Fill in the blanks with the correct words.
+
+Мене [___:1] Олена. Я [___:2] з України. Я [___:3] українською.
+
+1. звати | є | маю
+   > [!answer] звати
+
+2. є | живу | звати
+   > [!answer] є
+
+3. говорю | говорить | говорять
+   > [!answer] говорю
+```
+
+**Key points:**
+- Use `[___:N]` markers in text (N = 1-based option index)
+- Numbered items provide options (pipe-separated)
+- `> [!answer]` identifies the correct option
+
+### Dialogue Reorder Format (A2+)
+
+Learners put shuffled dialogue lines in correct order.
+
+```markdown
+## dialogue-reorder: At the Café
+
+> Put the dialogue in the correct order.
+
+- А: Привіт! Як справи?
+- B: Добре, дякую! А у тебе?
+- А: Теж добре. Що будеш замовляти?
+- B: Каву, будь ласка.
+```
+
+**Key points:**
+- Use `- Speaker: Line` format
+- Lines are presented in correct order (will be shuffled on display)
+- Speaker labels (A:, B:, etc.) help identify participants
+
+### Mark the Words Format (A2+)
+
+Learners click/tap words matching a criterion (e.g., all nouns, all verbs).
+
+```markdown
+## mark-the-words: Find the Nouns
+
+> Click all the nouns in this sentence.
+
+[Хлопець] читає [книгу] в [парку] біля [річки].
+```
+
+**Key points:**
+- Wrap correct words in `[brackets]`
+- Instruction should clarify what to look for
+- Works well for grammar recognition exercises
+
+### Exercise Stage Labels (A2+)
+
+Activities can include optional stage metadata for pedagogical sequencing:
+
+```markdown
+## mark-the-words: Identify Accusative Forms [stage: recognition]
+
+## fill-in: Complete with Accusative [stage: controlled-production]
+```
+
+**Valid stages:**
+- `recognition` - Identify/mark target forms (🔍)
+- `discrimination` - Distinguish between forms (👂)
+- `controlled-production` - Fill-in with options (✏️)
+- `free-production` - Open response (✍️)
+
+Alternative format using metadata line:
+
+```markdown
+## fill-in: Accusative Practice
+stage: controlled-production
+
+> Complete each sentence...
+```
+
+### Observe First Sections (A2+)
+
+Inductive pattern discovery before explicit rules:
+
+```markdown
+> [!observe]
+> Я **читаю** книгу.
+> Ти **читаєш** книгу.
+> Він **читає** книгу.
+>
+> 🔎 What do you notice about the verb endings?
+```
+
+**Key points:**
+- Use `> [!observe]` callout
+- Show 3-4 example sentences highlighting the pattern
+- End with a discovery prompt
+- Follow with explicit grammar explanation
+
 ---
 
 ## IMPORTANT: DO NOT USE YAML FORMAT

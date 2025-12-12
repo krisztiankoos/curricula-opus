@@ -7,7 +7,7 @@
  * - parseContent: Parse activity-specific content
  */
 
-import { Activity, ActivityContent, ActivityType, ParseContext } from '../../types';
+import { Activity, ActivityContent, ActivityType, ExerciseStage, ParseContext } from '../../types';
 import { parseCallouts, extractAnswer, CalloutBlock } from '../../utils/markdown';
 
 // =============================================================================
@@ -34,10 +34,11 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
    */
   parse(header: string, content: string, ctx: ParseContext): Activity<T> {
     const title = this.extractTitle(header);
+    const stage = this.extractStage(header, content);
     const instructions = this.extractInstructions(content);
     const activityContent = this.parseContent(content, ctx);
 
-    return {
+    const activity: Activity<T> = {
       id: this.generateId(ctx),
       type: this.type,
       title,
@@ -45,6 +46,12 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
       instructions,
       content: activityContent,
     };
+
+    if (stage) {
+      activity.stage = stage;
+    }
+
+    return activity;
   }
 
   /**
@@ -83,10 +90,39 @@ export abstract class ActivityParser<T extends ActivityContent = ActivityContent
   /**
    * Extract title from header line
    * "quiz: My Quiz Title" → "My Quiz Title"
+   * Also strips [stage: xxx] suffix if present
    */
   protected extractTitle(header: string): string {
     const match = header.match(/^[\w-]+:\s*(.+)$/);
-    return match ? match[1].trim() : header;
+    if (!match) return header;
+    // Remove [stage: xxx] suffix if present
+    return match[1].replace(/\s*\[stage:\s*[\w-]+\]\s*$/, '').trim();
+  }
+
+  /**
+   * Extract exercise stage from header or content
+   * Supports:
+   * - Header suffix: "quiz: Title [stage: recognition]"
+   * - Content metadata: "stage: controlled-production"
+   */
+  protected extractStage(header: string, content: string): ExerciseStage | undefined {
+    const validStages: ExerciseStage[] = ['recognition', 'discrimination', 'controlled-production', 'free-production'];
+
+    // Check header for [stage: xxx]
+    const headerMatch = header.match(/\[stage:\s*([\w-]+)\]/i);
+    if (headerMatch) {
+      const stage = headerMatch[1].toLowerCase() as ExerciseStage;
+      if (validStages.includes(stage)) return stage;
+    }
+
+    // Check content for "stage: xxx" metadata line (at start)
+    const contentMatch = content.match(/^stage:\s*([\w-]+)/im);
+    if (contentMatch) {
+      const stage = contentMatch[1].toLowerCase() as ExerciseStage;
+      if (validStages.includes(stage)) return stage;
+    }
+
+    return undefined;
   }
 
   /**

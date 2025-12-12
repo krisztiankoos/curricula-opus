@@ -37,14 +37,66 @@
 
 ### Activity Requirements by Level
 
-| Level | Activities | Items/Activity | Types | Priority Activities |
-|-------|------------|----------------|-------|---------------------|
-| A1 | 8+ | 12+ | 4+ | fill-in, match-up, anagram, unjumble, quiz |
-| A2 | 10+ | 12+ | 4+ | + error-correction, unjumble (1+ per module) |
-| B1 | 12+ | 14+ | 4+ | fill-in ×2, unjumble 2x, error-correction ×2 |
-| B2 | 14+ | 16+ | 4+ | fill-in ×3, unjumble 2x, error-correction ×2 |
-| C1 | 16+ | 18+ | 4+ | fill-in ×3, unjumble 3x, error-correction ×3 |
-| C2 | 16+ | 18+ | 4+ | fill-in ×3, unjumble 3x, error-correction ×3 |
+| Level | Activities | Items/Activity | Types | Stage Sequencing |
+|-------|------------|----------------|-------|------------------|
+| A1 | 8+ | 12+ | 4+ | Recognition → Production (no stages needed) |
+| A2 | 10+ | 12+ | 5+ | Recognition → Discrimination → Controlled → Production |
+| B1 | 12+ | 14+ | 5+ | Full stage sequence with observe-first sections |
+| B2 | 14+ | 16+ | 5+ | Full stage sequence, heavier on production |
+| C1 | 16+ | 18+ | 5+ | Production-heavy, subtle discrimination |
+| C2 | 16+ | 18+ | 5+ | Production-heavy, native-level complexity |
+
+### Mandatory Activity Mix by Level
+
+| Activity Type | A1 | A2 | B1 | B2 | C1 | C2 |
+|---------------|----|----|----|----|----|----|
+| **fill-in** | 2+ | 2+ | 2+ | 3+ | 2+ | 2+ |
+| **match-up** | 2+ | 1+ | 1+ | 1+ | 1+ | 1+ |
+| **quiz** | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ |
+| **true-false** | 1+ | 1+ | 1+ | 1+ | — | — |
+| **group-sort** | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ |
+| **anagram** | 2+ (M01-10) | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **unjumble** | 1+ | 2+ | 2+ | 2+ | 2+ | 2+ |
+| **error-correction** | ❌ | 1+ | 2+ | 2+ | 3+ | 3+ |
+| **cloze** | ❌ | 1+ | 1+ | 1+ | 3+ | 3+ |
+| **mark-the-words** | ❌ | 1+ | 1+ | 1+ | — | — |
+| **dialogue-reorder** | ❌ | 1+ | 1+ | 1+ | 1+ | — |
+| **select** | ❌ | opt | 1+ | 1+ | 1+ | 1+ |
+| **translate** | ❌ | opt | 1+ | 1+ | 2+ | 2+ |
+| **observe-first** | ❌ | opt | 1+ | 1+ | — | — |
+
+**Legend:** `2+` = minimum count, `opt` = optional, `❌` = not allowed, `—` = rarely used
+
+**C1-C2 Rationale:** At advanced levels, learners need more production practice (cloze ×3, translate ×2) and less basic recognition (mark-the-words removed). Error-correction remains high (×3) for metalinguistic awareness.
+
+### Activity Types Reference
+
+| Activity | Level | Description |
+|----------|-------|-------------|
+| `quiz` | A1+ | Multiple choice questions |
+| `match-up` | A1+ | Match pairs (left/right columns) |
+| `fill-in` | A1+ | Gap fill with options |
+| `true-false` | A1+ | True/false statements |
+| `anagram` | A1 only | Letter unscrambling (phase out by A1.3) |
+| `unjumble` | A1+ | Word reordering into sentences |
+| `group-sort` | A1+ | Sort items into categories |
+| `error-correction` | A2+ | Find and fix errors |
+| `cloze` | A2+ | Passage with multiple dropdown blanks |
+| `dialogue-reorder` | A2+ | Put dialogue lines in order |
+| `mark-the-words` | A2+ | Click/tap words matching criteria |
+| `translate` | A2+ | Select correct translation |
+| `select` | A2+ | Multi-checkbox selection |
+
+### Exercise Stage Sequencing (A2+)
+
+For A2+ modules, sequence activities by pedagogical stage:
+
+1. **🔍 Recognition** — mark-the-words, observe-first sections
+2. **👂 Discrimination** — select, true-false with subtle distinctions
+3. **✏️ Controlled Production** — fill-in, cloze, error-correction
+4. **✍️ Free Production** — translate, dialogue-reorder
+
+Add `[stage: xxx]` to activity headers for visual indicators.
 
 ### Sentence Complexity by Level
 
@@ -186,42 +238,53 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 
 ---
 
-## Activity Types
+## Activity Types (Full Reference)
 
-| Type | A1 | A2 | B1+ | Description |
-|------|----|----|-----|-------------|
-| `quiz` | ✓ | ✓ | ✓ | Multiple choice questions |
-| `match-up` | ✓ | ✓ | ✓ | Match pairs (Ukrainian ↔ English) |
-| `group-sort` | ✓ | ✓ | ✓ | Sort items into categories |
-| `true-false` | ✓ | ✓ | ✓ | Statement validation |
-| `select` | ✓ | ✓ | ✓ | Word selection from options |
-| `fill-in` | ✓ | ✓ | ✓ | Gap completion with options |
-| `unjumble` | ✓ | ✓ | ✓ | Reorder words into sentence |
-| `anagram` | M01-10 | ✗ | ✗ | Letter unscrambling (Cyrillic scaffolding only) |
-| `error-correction` | ✗ | ✓ | ✓ | Find and fix errors |
-| `transform` | ✗ | ✗ | ✓ | Register shifts, paraphrase |
+> **Note:** See "Mandatory Activity Mix by Level" table in Quick Reference for exact counts.
+
+| Type | A1 | A2 | B1 | B2 | C1 | C2 | Description |
+|------|----|----|----|----|----|----|-------------|
+| `quiz` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Multiple choice questions |
+| `match-up` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Match pairs (Ukrainian ↔ English) |
+| `group-sort` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Sort items into categories |
+| `true-false` | ✓ | ✓ | ✓ | ✓ | opt | opt | Statement validation |
+| `fill-in` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Gap completion with options |
+| `unjumble` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Reorder words into sentence |
+| `anagram` | M01-10 | ✗ | ✗ | ✗ | ✗ | ✗ | Letter unscrambling (Cyrillic scaffolding only) |
+| `error-correction` | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | Find and fix errors |
+| `cloze` | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | Passage with multiple dropdown blanks |
+| `mark-the-words` | ✗ | ✓ | ✓ | ✓ | ✓ | ✓ | Click/tap words matching criteria |
+| `dialogue-reorder` | ✗ | ✓ | ✓ | ✓ | ✓ | opt | Put dialogue lines in correct order |
+| `select` | ✗ | opt | ✓ | ✓ | ✓ | ✓ | Multi-checkbox selection |
+| `translate` | ✗ | opt | ✓ | ✓ | ✓ | ✓ | Select correct translation |
+| `observe-first` | ✗ | opt | ✓ | ✓ | opt | opt | Pattern discovery section |
+
+**Legend:** `✓` = required, `opt` = optional, `✗` = not allowed
 
 ### Activity Priority by Level
 
 **A1 (Beginner):** Recognition → Production
-- Primary: quiz, match-up, group-sort, true-false
-- Secondary: select, fill-in, unjumble
+- Primary: match-up, group-sort, quiz, true-false
+- Secondary: fill-in, unjumble
 - Special: anagram (M01-10 only for Cyrillic scaffolding)
 
-**A2 (Elementary):** Introduce error-finding
-- All A1 types + **error-correction** (minimum 1 per module)
+**A2 (Elementary):** Introduce new activity types
+- All A1 types + error-correction, cloze, mark-the-words, dialogue-reorder
+- Optional: select, translate, observe-first
 - Error-correction: 1 obvious error per sentence
 
-**B1+ (Intermediate+):** Prioritize production & analysis
+**B1 (Intermediate):** Full activity palette + observe-first
+- All types available, observe-first mandatory for grammar modules
+- Production activities increase (unjumble ×2, error-correction ×2)
 
-| Activity | B1 Min | B2 Min | C1 Min | C2 Min | Why Priority |
-|----------|--------|--------|--------|--------|--------------|
-| fill-in | 2 | 3 | 3 | 3 | Core production skill |
-| unjumble | 2 | 2 | 3 | 3 | Sentence construction |
-| error-correction | 2 | 2 | 3 | 3 | Critical for accuracy |
-| quiz | 1 | 1 | 1 | 1 | Concept reinforcement |
-| match-up | 1 | 1 | 1 | 1 | Vocabulary/collocations |
-| other | as needed | as needed | as needed | as needed | Variety |
+**B2 (Upper-Intermediate):** Production increases
+- Fill-in ×3, unjumble ×2, error-correction ×2, cloze ×1
+- Full activity palette available
+
+**C1-C2 (Advanced/Mastery):** Production-heavy, context-focused
+- Cloze ×3 (contextual grammar), error-correction ×3 (metalinguistic awareness)
+- Translate ×2 (production with alternatives), fill-in ×2, unjumble ×2
+- Mark-the-words removed (too basic), observe-first optional
 
 **Rationale:** At B1+, learners need to *produce* correct Ukrainian, not just recognize it. Error-correction builds metalinguistic awareness essential for self-correction.
 
@@ -311,6 +374,74 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 | A1 M11-20 | 5-10 letters | Reduce usage |
 | A1 M21-30 | — | Avoid, use unjumble instead |
 | A2+ | — | NOT ALLOWED |
+
+### cloze (A2+) - Passage with Dropdown Blanks
+
+| Level | Passage Length | Blanks | Blank Spacing | Distractor Quality |
+|-------|----------------|--------|---------------|-------------------|
+| A2 | 3-5 sentences | 3-4 | Every 8-12 words | Obviously wrong options |
+| B1 | 5-8 sentences | 4-6 | Every 6-10 words | Plausible but wrong |
+| B2 | 8-12 sentences | 6-8 | Every 5-8 words | Near-synonyms |
+| C1 | 10-15 sentences | 8-10 | Every 4-7 words | Register/style based |
+| C2 | 12-18 sentences | 10-12 | Every 4-6 words | Native-level nuance |
+
+**Usage:** Best for testing grammar in context (case endings, verb forms, aspect), coherence, and collocations.
+
+### dialogue-reorder (A2+)
+
+| Level | Lines | Speakers | Complexity |
+|-------|-------|----------|------------|
+| A2 | 4-6 | 2 | Simple greetings, basic exchanges |
+| B1 | 6-8 | 2-3 | Topic negotiation, opinions |
+| B2 | 8-10 | 2-3 | Argumentation, persuasion |
+| C1 | 10-12 | 2-4 | Complex negotiation, formal registers |
+
+**Usage:** Develops pragmatic competence, turn-taking, and conversation flow understanding.
+
+### mark-the-words (A2+)
+
+| Level | Sentence Length | Words to Mark | Criteria Type |
+|-------|-----------------|---------------|---------------|
+| A2 | 8-12 words | 2-4 | Single category (nouns, verbs, cases) |
+| B1 | 12-18 words | 3-5 | Grammar class + case |
+| B2 | 16-22 words | 4-6 | Subtle distinctions (aspect, register) |
+| C1 | 18-25 words | 5-8 | Multiple criteria, stylistic features |
+| C2 | 20-30 words | 6-10 | Expert-level categorization |
+
+**Usage:** Recognition stage activity. Best for case identification, word class awareness, finding specific grammatical structures.
+
+### select (Multi-Checkbox) (A2+)
+
+| Level | Options | Correct Answers | Question Complexity |
+|-------|---------|-----------------|---------------------|
+| A2 | 4-5 | 2-3 | "Which are feminine nouns?" |
+| B1 | 5-6 | 2-4 | "Which sentences are grammatically correct?" |
+| B2 | 5-6 | 2-4 | "Which options express obligation?" |
+| C1 | 5-7 | 2-4 | "Which are acceptable in formal register?" |
+| C2 | 6-8 | 3-5 | "Which preserve the author's intent?" |
+
+**Usage:** Tests ability to identify multiple valid answers. Good for cases, verb forms, stylistic variants.
+
+### translate (A2+)
+
+| Level | Source Length | Options | Alternative Count |
+|-------|---------------|---------|-------------------|
+| A2 | 4-8 words | 4 | 0-1 alternatives |
+| B1 | 8-14 words | 4 | 1-2 alternatives |
+| B2 | 12-18 words | 4 | 2-3 alternatives |
+| C1 | 16-22 words | 4-5 | 2-4 alternatives |
+| C2 | 18-28 words | 4-5 | 3-5 alternatives |
+
+**Usage:** Production practice. Tests both accuracy and understanding of valid alternatives.
+
+### observe-first (B1-B2 Pattern Discovery)
+
+| Level | Examples | Pattern Type | Follow-up Activity |
+|-------|----------|--------------|-------------------|
+| B1 | 4-6 examples | Single pattern (endings, stress) | fill-in applying the pattern |
+| B2 | 6-8 examples | Complex pattern (aspect pairs, motion) | cloze or translate |
+
+**Usage:** Inductive learning before explicit rules. Place at section start, before grammar explanation.
 
 ---
 

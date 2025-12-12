@@ -139,20 +139,45 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 > - Sentence complexity (fill-in/unjumble word counts)
 > - Time and vocabulary targets
 
-### Activity Types
-- `fill-in` - Gap fill with options
-- `unjumble` - Reorder words into sentence
-- `quiz` - Multiple choice questions
-- `match-up` - Match pairs
-- `group-sort` - Sort items into categories
-- `true-false` - True/false statements
+### Activity Types (14 Total)
 
-### Anagram Activity Rules
-- `anagram` - Letter unscrambling (A1 ONLY, phased out)
-  - **A1 Modules 01-10**: Allowed (scaffolding for Cyrillic learners)
-  - **A1 Modules 11-20**: Reduce usage (transition period)
-  - **A1 Modules 21-30**: Avoid (use unjumble instead)
-  - **A2+**: NOT ALLOWED - use `unjumble` for word ordering practice
+**Core Activities (All Levels):**
+- `quiz` - Multiple choice (single answer)
+- `match-up` - Match pairs (Ukrainian ↔ English)
+- `fill-in` - Gap fill with dropdown options
+- `true-false` - Statement validation
+- `group-sort` - Sort items into categories
+- `unjumble` - Reorder words into sentence
+
+**A1-Only Activity:**
+- `anagram` - Letter unscrambling (M01-10 only, Cyrillic scaffolding)
+
+**A2+ Activities:**
+- `error-correction` - Find and fix grammatical errors
+- `cloze` - Passage completion with multiple blanks
+- `mark-the-words` - Click words matching criteria (nouns, verbs, etc.)
+- `dialogue-reorder` - Put conversation lines in order
+- `select` - Multi-checkbox (multiple correct answers)
+- `translate` - Translation multiple choice
+- `observe-first` - Pattern discovery before explicit rules
+
+### Activity Matrix
+
+> **Full matrix:** See `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` for the complete activity requirements by level.
+
+| Activity | A1 | A2 | B1+ |
+|----------|----|----|-----|
+| quiz, match-up, fill-in, group-sort, unjumble | ✓ | ✓ | ✓ |
+| true-false | ✓ | ✓ | ✓ (opt C1+) |
+| anagram | M01-10 | ❌ | ❌ |
+| error-correction, cloze, mark-the-words, dialogue-reorder | ❌ | ✓ | ✓ |
+| select, translate, observe-first | ❌ | opt | ✓ |
+
+### Anagram Phaseout (A1 Only)
+- **A1 Modules 01-10**: Allowed (scaffolding for Cyrillic learners)
+- **A1 Modules 11-20**: Reduce usage (transition period)
+- **A1 Modules 21-30**: Avoid (use unjumble instead)
+- **A2+**: NOT ALLOWED
 
 ### Engagement Box Types
 - 💡 **Did You Know** - Interesting facts
@@ -262,7 +287,8 @@ npm run claude:deploy
 ## Documentation Links
 
 - `docs/ARCHITECTURE.md` - System architecture
-- `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec
+- `docs/MARKDOWN-FORMAT.md` - Markdown syntax spec (all activity formats)
 - `docs/SCRIPTS.md` - Scripts reference
-- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` - Quality standards (consolidated)
+- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` - Quality standards + activity matrix
 - `docs/l2-uk-en/claude-review-prompt.md` - Review prompts
+- `docusaurus/docs/activity-test.md` - Activity markdown format patterns (for AI agents)

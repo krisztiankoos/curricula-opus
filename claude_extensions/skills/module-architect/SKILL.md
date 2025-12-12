@@ -383,14 +383,122 @@ This section contains the "Richness & Soul" audit tables. Use the table that mat
 
 ## Activity Check Reference
 
-| Level | Count | Items | Types | Mandatory / Priority Activities |
-|-------|-------|-------|-------|---------------------------------|
-| **A1** | 8+ | 12+ | 3+ | anagram (x2), match-up (x2), fill-in (x2), group-sort (x2) |
-| **A2** | 10+ | 12+ | 4+ | + error-correction (1+), unjumble (1+) |
-| **B1** | 12+ | 14+ | 4+ | fill-in (x2), unjumble (x2), error-correction (x2) |
-| **B2** | 14+ | 16+ | 4+ | fill-in (x3), unjumble (x2), error-correction (x2) |
-| **C1** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
-| **C2** | 16+ | 18+ | 4+ | fill-in (x3), unjumble (x3), error-correction (x3) |
+| Level | Count | Items | Types | Mandatory Activities |
+|-------|-------|-------|-------|----------------------|
+| **A1** | 8+ | 12+ | 4+ | fill-in ×2, match-up ×2, anagram ×2 (M01-10), unjumble ×1, quiz ×1 |
+| **A2** | 10+ | 12+ | 5+ | fill-in ×2, unjumble ×2, error-correction ×1, cloze ×1, mark-the-words ×1, dialogue-reorder ×1 |
+| **B1** | 12+ | 14+ | 5+ | fill-in ×2, unjumble ×2, error-correction ×2, cloze ×1, mark-the-words ×1, observe-first ×1 |
+| **B2** | 14+ | 16+ | 5+ | fill-in ×3, unjumble ×2, error-correction ×2, cloze ×1, translate ×1, select ×1 |
+| **C1** | 16+ | 18+ | 5+ | cloze ×3, error-correction ×3, translate ×2, fill-in ×2, unjumble ×2, select ×1 |
+| **C2** | 16+ | 18+ | 5+ | cloze ×3, error-correction ×3, translate ×2, fill-in ×2, unjumble ×2, select ×1 |
+
+### Full Activity Matrix by Level
+
+| Activity | A1 | A2 | B1 | B2 | C1 | C2 | Stage |
+|----------|----|----|----|----|----|----|-------|
+| fill-in | 2+ | 2+ | 2+ | 3+ | 2+ | 2+ | controlled |
+| match-up | 2+ | 1+ | 1+ | 1+ | 1+ | 1+ | recognition |
+| quiz | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ | discrimination |
+| true-false | 1+ | 1+ | 1+ | 1+ | — | — | discrimination |
+| group-sort | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ | recognition |
+| anagram | 2+ (M01-10) | ❌ | ❌ | ❌ | ❌ | ❌ | recognition |
+| unjumble | 1+ | 2+ | 2+ | 2+ | 2+ | 2+ | production |
+| error-correction | ❌ | 1+ | 2+ | 2+ | 3+ | 3+ | controlled |
+| cloze | ❌ | 1+ | 1+ | 1+ | 3+ | 3+ | controlled |
+| mark-the-words | ❌ | 1+ | 1+ | 1+ | — | — | recognition |
+| dialogue-reorder | ❌ | 1+ | 1+ | 1+ | 1+ | — | production |
+| select | ❌ | opt | 1+ | 1+ | 1+ | 1+ | discrimination |
+| translate | ❌ | opt | 1+ | 1+ | 2+ | 2+ | production |
+| observe-first | ❌ | opt | 1+ | 1+ | — | — | recognition |
+
+**Legend:** `2+` = minimum, `opt` = optional, `❌` = not allowed, `—` = rarely used
+
+**C1-C2 Rationale:** Production-heavy distribution. More cloze (×3) for contextual mastery, more translate (×2) for production. Less fill-in drilling, no mark-the-words (too basic).
+
+### New Activity Types (A2+)
+
+| Activity | When to Introduce | Description | Best For |
+|----------|-------------------|-------------|----------|
+| `cloze` | A2 | Passage with multiple dropdown blanks | Grammar in context, coherence, aspect/case practice |
+| `dialogue-reorder` | A2 | Put dialogue lines in order | Pragmatics, turn-taking, conversation flow |
+| `mark-the-words` | A2 | Click words matching criteria | Case recognition, word class awareness |
+| `select` | A2 (optional) | Multi-checkbox selection | Multiple valid answers, register variants |
+| `translate` | A2 (optional) | Select correct translation | Production practice, alternative awareness |
+| `observe-first` | B1 | Pattern discovery section | Inductive grammar teaching |
+
+### Activity Sequencing by Level
+
+**A1:** Simple progression (no stage labels needed)
+```
+match-up → group-sort → quiz → true-false → fill-in → anagram → unjumble
+```
+
+**A2:** Introduce stage labels, add new types
+```
+[recognition] mark-the-words → [discrimination] select/true-false →
+[controlled] fill-in/cloze/error-correction → [production] translate/dialogue-reorder
+```
+
+**B1-B2:** Full stage sequence with observe-first
+```
+[observe-first section] → [recognition] mark-the-words →
+[discrimination] select → [controlled] fill-in/cloze/error-correction ×2 →
+[production] translate/unjumble/dialogue-reorder
+```
+
+**C1-C2:** Production-heavy, subtle discrimination
+```
+[discrimination] select (nuanced) → [controlled] fill-in/cloze/error-correction ×3 →
+[production] translate/unjumble ×3
+```
+
+### Exercise Stage Labels (A2+)
+
+Sequence activities receptive → productive:
+
+| Stage | Icon | Activities | Purpose |
+|-------|------|------------|---------|
+| **Recognition** | 🔍 | mark-the-words, observe-first | Can learner identify the pattern? |
+| **Discrimination** | 👂 | select, true-false (subtle) | Can learner distinguish correct from incorrect? |
+| **Controlled** | ✏️ | fill-in, cloze, error-correction | Can learner produce with scaffolding? |
+| **Production** | ✍️ | translate, dialogue-reorder, unjumble | Can learner produce independently? |
+
+Add `[stage: xxx]` to activity headers:
+```markdown
+## mark-the-words: Identify Accusative [stage: recognition]
+## cloze: Aspect in Context [stage: controlled-production]
+## translate: Express the Meaning [stage: free-production]
+```
+
+### When to Use Each Activity Type
+
+| Activity | Use When... | Avoid When... |
+|----------|-------------|---------------|
+| **cloze** | Testing grammar in connected text, aspect/case in context | Isolated vocabulary testing |
+| **dialogue-reorder** | Teaching pragmatics, conversation structure, register | Simple vocabulary modules |
+| **mark-the-words** | Recognition stage, case identification, word classes | Production practice needed |
+| **select** | Multiple valid answers exist (cases, synonyms, register) | Single correct answer |
+| **translate** | Testing production accuracy with alternatives | Very early A2 |
+| **observe-first** | Introducing new grammar pattern inductively | Simple vocabulary modules |
+
+### Observe-First Section Guidelines
+
+Use `> [!observe]` callout before grammar explanations (B1-B2):
+
+```markdown
+> [!observe]
+> **Look at these sentences. What pattern do you notice?**
+>
+> - Я **читаю** книгу. (I am reading / I read)
+> - Я **прочитав** книгу. (I read / I have read - completed)
+> - Він **писав** лист. (He was writing / He wrote)
+> - Він **написав** лист. (He wrote / He has written - completed)
+
+[Then explain the pattern explicitly]
+```
+
+**When to use:** Grammar modules introducing aspect, case patterns, verb conjugation patterns.
+**When NOT to use:** Simple vocabulary modules, C1-C2 (learners should handle explicit rules).
 
 ## Strict Activity Format
 **CRITICAL:** For exact syntax (Anagrams, Fill-ins, etc.), you MUST refer to the Single Source of Truth:

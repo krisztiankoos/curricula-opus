@@ -523,6 +523,88 @@ Learners click/tap words matching a criterion (e.g., all nouns, all verbs).
 - Instruction should clarify what to look for
 - Works well for grammar recognition exercises
 
+### Select Format (A2+)
+
+Multi-checkbox selection where multiple answers can be correct.
+
+```markdown
+## select: Multiple Correct Answers
+
+> Select ALL correct options.
+
+1. Which are valid accusative forms for "книга"?
+   - [x] книгу
+   - [ ] книги
+   - [ ] книзі
+   - [ ] книгою
+   > Only книгу is the accusative singular.
+
+2. Which verbs are Class I conjugation?
+   - [x] читати
+   - [x] писати
+   - [ ] говорити
+   - [ ] любити
+   > читати and писати end in -ати (Class I)
+```
+
+**Key points:**
+- Use `- [x]` for ALL correct answers (multiple allowed)
+- Use `- [ ]` for incorrect options
+- Use `>` for explanation
+- Different from quiz: multiple correct answers expected
+
+### Translate Format (A2+)
+
+Translation multiple choice - select the correct translation.
+
+```markdown
+## translate: Translation Choice
+
+> Choose the correct translation.
+
+1. I love Ukraine.
+   - [ ] Я люблю Українa.
+   - [x] Я люблю Україну.
+   - [ ] Я люблю України.
+   - [ ] Я люблю Україні.
+   > Accusative case needed: Україну
+
+2. She reads a book.
+   - [ ] Вона читає книга.
+   - [x] Вона читає книгу.
+   - [ ] Вона читаю книгу.
+   - [ ] Вона читаєш книгу.
+   > Third person singular: читає
+```
+
+**Key points:**
+- Same format as quiz (single correct answer)
+- Use `- [x]` for correct translation
+- Focuses on Ukrainian output from English prompts
+
+### Observe Format (A2+)
+
+Pattern discovery activity using the `> [!observe]` callout.
+
+```markdown
+## observe: Verb Endings Pattern
+
+> [!observe]
+> Я **читаю** книгу.
+> Ти **читаєш** книгу.
+> Він **читає** книгу.
+> Ми **читаємо** книгу.
+>
+> 🔎 What pattern do you notice in the verb endings?
+```
+
+**Key points:**
+- Use `> [!observe]` callout block
+- Show 3-6 example sentences highlighting the pattern
+- Use **bold** for the target forms
+- End with a discovery prompt (question)
+- Follow with explicit grammar explanation in lesson content
+
 ### Exercise Stage Labels (A2+)
 
 Activities can include optional stage metadata for pedagogical sequencing:
@@ -547,25 +629,6 @@ stage: controlled-production
 
 > Complete each sentence...
 ```
-
-### Observe First Sections (A2+)
-
-Inductive pattern discovery before explicit rules:
-
-```markdown
-> [!observe]
-> Я **читаю** книгу.
-> Ти **читаєш** книгу.
-> Він **читає** книгу.
->
-> 🔎 What do you notice about the verb endings?
-```
-
-**Key points:**
-- Use `> [!observe]` callout
-- Show 3-4 example sentences highlighting the pattern
-- End with a discovery prompt
-- Follow with explicit grammar explanation
 
 ---
 

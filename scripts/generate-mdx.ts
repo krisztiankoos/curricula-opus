@@ -292,6 +292,49 @@ interface ParsedTrueFalseItem {
     explanation: string;
 }
 
+interface ParsedErrorCorrectionItem {
+    sentence: string;
+    error: string;
+    answer: string;
+    options: string[];
+    explanation: string;
+}
+
+interface ParsedSelectQuestion {
+    question: string;
+    options: string[];
+    correctAnswers: string[];
+    explanation: string;
+}
+
+interface ParsedTranslateQuestion {
+    prompt: string;
+    options: string[];
+    correctIndex: number;
+    explanation: string;
+}
+
+interface ParsedClozeData {
+    passage: string;
+    blanks: { options: string[]; answer: string }[];
+}
+
+interface ParsedDialogueLine {
+    speaker: string;
+    text: string;
+}
+
+interface ParsedMarkTheWordsData {
+    instruction: string;
+    text: string;
+    correctWords: string[];
+}
+
+interface ParsedObserveData {
+    examples: string[];
+    prompt: string;
+}
+
 function parseTrueFalseActivity(activityContent: string): ParsedTrueFalseItem[] {
     const items: ParsedTrueFalseItem[] = [];
 
@@ -337,6 +380,230 @@ function parseTrueFalseActivity(activityContent: string): ParsedTrueFalseItem[] 
     }
 
     return items;
+}
+
+function parseErrorCorrectionActivity(activityContent: string): ParsedErrorCorrectionItem[] {
+    const items: ParsedErrorCorrectionItem[] = [];
+    const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+
+    for (const block of itemBlocks) {
+        const lines = block.trim().split('\n');
+        if (lines.length < 2) continue;
+
+        const sentence = lines[0].trim();
+        let error = '';
+        let answer = '';
+        let options: string[] = [];
+        let explanation = '';
+
+        for (const line of lines.slice(1)) {
+            const trimmed = line.trim();
+            if (trimmed.startsWith('> [!error]')) {
+                error = trimmed.replace('> [!error]', '').trim();
+            } else if (trimmed.startsWith('> [!answer]')) {
+                answer = trimmed.replace('> [!answer]', '').trim();
+            } else if (trimmed.startsWith('> [!options]')) {
+                options = trimmed.replace('> [!options]', '').split('|').map(o => o.trim());
+            } else if (trimmed.startsWith('> [!explanation]')) {
+                explanation = trimmed.replace('> [!explanation]', '').trim();
+            }
+        }
+
+        if (sentence && answer) {
+            items.push({ sentence, error, answer, options, explanation });
+        }
+    }
+
+    return items;
+}
+
+function parseSelectActivity(activityContent: string): ParsedSelectQuestion[] {
+    const questions: ParsedSelectQuestion[] = [];
+    const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+
+    for (const block of questionBlocks) {
+        const lines = block.trim().split('\n');
+        if (lines.length < 2) continue;
+
+        const question = lines[0].replace(/\*\*/g, '').trim();
+        const options: string[] = [];
+        const correctAnswers: string[] = [];
+        let explanation = '';
+
+        for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+
+            if (line.startsWith('- [x]')) {
+                const option = line.replace('- [x]', '').trim();
+                options.push(option);
+                correctAnswers.push(option);
+            } else if (line.startsWith('- [ ]')) {
+                options.push(line.replace('- [ ]', '').trim());
+            } else if (line.startsWith('>')) {
+                explanation = line.replace(/^>\s*/, '').trim();
+            }
+        }
+
+        if (question && options.length > 0) {
+            questions.push({ question, options, correctAnswers, explanation });
+        }
+    }
+
+    return questions;
+}
+
+function parseTranslateActivity(activityContent: string): ParsedTranslateQuestion[] {
+    const questions: ParsedTranslateQuestion[] = [];
+    const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+
+    for (const block of questionBlocks) {
+        const lines = block.trim().split('\n');
+        if (lines.length < 2) continue;
+
+        const prompt = lines[0].replace(/\*\*/g, '').trim();
+        const options: string[] = [];
+        let correctIndex = 0;
+        let explanation = '';
+
+        for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+
+            if (line.startsWith('- [x]')) {
+                correctIndex = options.length;
+                options.push(line.replace('- [x]', '').trim());
+            } else if (line.startsWith('- [ ]')) {
+                options.push(line.replace('- [ ]', '').trim());
+            } else if (line.startsWith('>')) {
+                explanation = line.replace(/^>\s*/, '').trim();
+            }
+        }
+
+        if (prompt && options.length > 0) {
+            questions.push({ prompt, options, correctIndex, explanation });
+        }
+    }
+
+    return questions;
+}
+
+function parseClozeActivity(activityContent: string): ParsedClozeData {
+    const lines = activityContent.trim().split('\n');
+    let passage = '';
+    const blanks: { options: string[]; answer: string }[] = [];
+
+    // Find the passage (lines before numbered items)
+    let i = 0;
+    while (i < lines.length && !lines[i].match(/^\d+\.\s+/)) {
+        if (lines[i].trim() && !lines[i].startsWith('>')) {
+            passage += (passage ? '\n' : '') + lines[i].trim();
+        }
+        i++;
+    }
+
+    // Parse numbered items for options and answers
+    const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+    for (const block of itemBlocks) {
+        const blockLines = block.trim().split('\n');
+        if (blockLines.length === 0) continue;
+
+        // First line is options (pipe-separated)
+        const optionsLine = blockLines[0].trim();
+        if (!optionsLine.includes('|')) continue;
+
+        const options = optionsLine.split('|').map(o => o.trim());
+        let answer = '';
+
+        for (const line of blockLines.slice(1)) {
+            const trimmed = line.trim();
+            if (trimmed.startsWith('> [!answer]')) {
+                answer = trimmed.replace('> [!answer]', '').trim();
+            }
+        }
+
+        if (options.length > 0 && answer) {
+            blanks.push({ options, answer });
+        }
+    }
+
+    return { passage, blanks };
+}
+
+function parseDialogueReorderActivity(activityContent: string): ParsedDialogueLine[] {
+    const lines: ParsedDialogueLine[] = [];
+
+    for (const line of activityContent.split('\n')) {
+        const trimmed = line.trim();
+        // Match format: - А: Text or - A: Text
+        const match = trimmed.match(/^-\s*([^:]+):\s*(.+)$/);
+        if (match) {
+            lines.push({
+                speaker: match[1].trim(),
+                text: match[2].trim()
+            });
+        }
+    }
+
+    return lines;
+}
+
+function parseMarkTheWordsActivity(activityContent: string): ParsedMarkTheWordsData {
+    const lines = activityContent.trim().split('\n');
+    let instruction = '';
+    let text = '';
+    const correctWords: string[] = [];
+
+    for (const line of lines) {
+        const trimmed = line.trim();
+        if (trimmed.startsWith('>') && !instruction) {
+            instruction = trimmed.replace(/^>\s*/, '').trim();
+        } else if (trimmed && !trimmed.startsWith('>')) {
+            // This is the text with [bracketed] words
+            text = trimmed;
+            // Extract bracketed words
+            const matches = trimmed.match(/\[([^\]]+)\]/g);
+            if (matches) {
+                for (const match of matches) {
+                    correctWords.push(match.slice(1, -1)); // Remove brackets
+                }
+            }
+        }
+    }
+
+    // Remove brackets from text for display
+    text = text.replace(/\[([^\]]+)\]/g, '$1');
+
+    return { instruction, text, correctWords };
+}
+
+function parseObserveActivity(activityContent: string): ParsedObserveData {
+    const examples: string[] = [];
+    let prompt = '';
+    let inObserveBlock = false;
+
+    for (const line of activityContent.split('\n')) {
+        const trimmed = line.trim();
+
+        if (trimmed.startsWith('> [!observe]')) {
+            inObserveBlock = true;
+            continue;
+        }
+
+        if (inObserveBlock && trimmed.startsWith('>')) {
+            const content = trimmed.replace(/^>\s*/, '').trim();
+            if (content) {
+                // Check if it's a prompt (ends with ?)
+                if (content.endsWith('?')) {
+                    prompt = content;
+                } else {
+                    examples.push(content);
+                }
+            }
+        } else if (inObserveBlock && !trimmed.startsWith('>')) {
+            inObserveBlock = false;
+        }
+    }
+
+    return { examples, prompt };
 }
 
 // ============================================================================
@@ -452,6 +719,120 @@ ${itemsJsx}
 </TrueFalse>`;
 }
 
+function errorCorrectionToJsx(items: ParsedErrorCorrectionItem[], title: string): string {
+    if (items.length === 0) return '';
+
+    const itemsJsx = items.map(item => {
+        const optionsStr = item.options.map(o => '`' + escapeJsxString(o) + '`').join(', ');
+        return `  <ErrorCorrectionQuestion
+    sentence=${wrapForJsx(item.sentence)}
+    error=${wrapForJsx(item.error)}
+    answer=${wrapForJsx(item.answer)}
+    options={[${optionsStr}]}
+    explanation=${wrapForJsx(item.explanation)}
+  />`;
+    }).join('\n');
+
+    return `### ${title}
+
+<ErrorCorrection>
+${itemsJsx}
+</ErrorCorrection>`;
+}
+
+function selectToJsx(questions: ParsedSelectQuestion[], title: string): string {
+    if (questions.length === 0) return '';
+
+    const questionsJsx = questions.map(q => {
+        const optionsStr = q.options.map(o => '`' + escapeJsxString(o) + '`').join(', ');
+        const correctStr = q.correctAnswers.map(a => '`' + escapeJsxString(a) + '`').join(', ');
+        return `  <SelectQuestion
+    question=${wrapForJsx(q.question)}
+    options={[${optionsStr}]}
+    correctAnswers={[${correctStr}]}
+    explanation=${wrapForJsx(q.explanation)}
+  />`;
+    }).join('\n');
+
+    return `### ${title}
+
+<Select>
+${questionsJsx}
+</Select>`;
+}
+
+function translateToJsx(questions: ParsedTranslateQuestion[], title: string): string {
+    if (questions.length === 0) return '';
+
+    const questionsJsx = questions.map(q => {
+        const optionsStr = q.options.map(o => '`' + escapeJsxString(o) + '`').join(', ');
+        return `  <TranslateQuestion
+    prompt=${wrapForJsx(q.prompt)}
+    options={[${optionsStr}]}
+    correctIndex={${q.correctIndex}}
+    explanation=${wrapForJsx(q.explanation)}
+  />`;
+    }).join('\n');
+
+    return `### ${title}
+
+<Translate>
+${questionsJsx}
+</Translate>`;
+}
+
+function clozeToJsx(data: ParsedClozeData, title: string): string {
+    if (!data.passage || data.blanks.length === 0) return '';
+
+    const blanksJson = JSON.stringify(data.blanks, null, 2);
+
+    return `### ${title}
+
+<Cloze
+  passage=${wrapForJsx(data.passage)}
+  blanks={${blanksJson}}
+/>`;
+}
+
+function dialogueReorderToJsx(lines: ParsedDialogueLine[], title: string): string {
+    if (lines.length === 0) return '';
+
+    const linesJson = JSON.stringify(lines, null, 2);
+
+    return `### ${title}
+
+<DialogueReorder lines={${linesJson}} />`;
+}
+
+function markTheWordsToJsx(data: ParsedMarkTheWordsData, title: string): string {
+    if (!data.text) return '';
+
+    const wordsStr = data.correctWords.map(w => '`' + escapeJsxString(w) + '`').join(', ');
+
+    return `### ${title}
+
+<MarkTheWords
+  instruction=${wrapForJsx(data.instruction)}
+  text=${wrapForJsx(data.text)}
+  correctWords={[${wordsStr}]}
+/>`;
+}
+
+function observeToJsx(data: ParsedObserveData, title: string): string {
+    if (data.examples.length === 0) return '';
+
+    const examplesStr = data.examples.map(e => '`' + escapeJsxString(e) + '`').join(', ');
+
+    return `### ${title}
+
+<Observe>
+  <ObserveActivity
+    examples={[${examplesStr}]}
+    prompt=${wrapForJsx(data.prompt)}
+  />
+</Observe>`;
+}
+
 // ============================================================================
 // MAIN ACTIVITY PROCESSOR
 // ============================================================================
@@ -512,6 +893,34 @@ function processActivities(body: string): { mainContent: string; activitiesJsx: 
             case 'true-false':
                 const trueFalseItems = parseTrueFalseActivity(content);
                 jsx = trueFalseToJsx(trueFalseItems, title);
+                break;
+            case 'error-correction':
+                const errorItems = parseErrorCorrectionActivity(content);
+                jsx = errorCorrectionToJsx(errorItems, title);
+                break;
+            case 'select':
+                const selectQuestions = parseSelectActivity(content);
+                jsx = selectToJsx(selectQuestions, title);
+                break;
+            case 'translate':
+                const translateQuestions = parseTranslateActivity(content);
+                jsx = translateToJsx(translateQuestions, title);
+                break;
+            case 'cloze':
+                const clozeData = parseClozeActivity(content);
+                jsx = clozeToJsx(clozeData, title);
+                break;
+            case 'dialogue-reorder':
+                const dialogueLines = parseDialogueReorderActivity(content);
+                jsx = dialogueReorderToJsx(dialogueLines, title);
+                break;
+            case 'mark-the-words':
+                const markData = parseMarkTheWordsActivity(content);
+                jsx = markTheWordsToJsx(markData, title);
+                break;
+            case 'observe':
+                const observeData = parseObserveActivity(content);
+                jsx = observeToJsx(observeData, title);
                 break;
             default:
                 // Keep as markdown for unsupported types
@@ -587,6 +996,13 @@ import TrueFalse, { TrueFalseQuestion } from '@site/src/components/TrueFalse';
 import Anagram, { AnagramQuestion } from '@site/src/components/Anagram';
 import Unjumble, { UnjumbleQuestion } from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
+import ErrorCorrection, { ErrorCorrectionQuestion } from '@site/src/components/ErrorCorrection';
+import Select, { SelectQuestion } from '@site/src/components/Select';
+import Translate, { TranslateQuestion } from '@site/src/components/Translate';
+import Cloze from '@site/src/components/Cloze';
+import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords from '@site/src/components/MarkTheWords';
+import Observe, { ObserveActivity } from '@site/src/components/Observe';
 `;
 
     // Build frontmatter

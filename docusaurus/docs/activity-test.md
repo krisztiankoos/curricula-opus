@@ -3,7 +3,7 @@
 This file demonstrates the markdown syntax for all 14 activity types used in curriculum modules.
 Use this as a pattern when writing new modules. The `generate-mdx.ts` script converts this format to MDX.
 
-> **Note:** Currently only 7 types have MDX parsers. See issue #103 for adding the remaining 7.
+All 14 activity types are fully supported by the MDX generator.
 
 ---
 
@@ -269,6 +269,4 @@ This reference file shows all 14 activity types:
 13. **mark-the-words** - Word identification (A2+)
 14. **observe** - Pattern discovery (A2+)
 
-**Currently supported by generate-mdx.ts:** quiz, match-up, fill-in, true-false, anagram, unjumble, group-sort
-
-**Needs MDX parser (see issue #103):** error-correction, select, translate, cloze, dialogue-reorder, mark-the-words, observe
+**All 14 types supported by generate-mdx.ts:** quiz, match-up, fill-in, true-false, anagram, unjumble, group-sort, error-correction, select, translate, cloze, dialogue-reorder, mark-the-words, observe

@@ -1267,6 +1267,7 @@
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--ifm-color-primary);
+  -webkit-text-fill-color: var(--ifm-color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -1274,6 +1275,7 @@
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--ifm-font-color-base);
+  -webkit-text-fill-color: var(--ifm-font-color-base);
 }
 
 [data-theme='dark'] .helpTooltip {

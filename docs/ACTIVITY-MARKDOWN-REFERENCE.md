@@ -1,9 +1,9 @@
 # Activity Markdown Format Reference
 
-This file demonstrates the markdown syntax for all 14 activity types used in curriculum modules.
-Use this as a pattern when writing new modules. The `generate-mdx.ts` script converts this format to MDX.
+> **For AI Agents:** This file shows the exact markdown syntax for all 13 activity types.
+> Use this as a pattern when writing new modules. The `generate-mdx.ts` script converts this format to MDX.
 
-All 14 activity types are fully supported by the MDX generator.
+All 13 activity types are fully supported by the MDX generator.
 
 ---
 

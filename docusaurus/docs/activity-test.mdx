@@ -1,12 +1,12 @@
 ---
 sidebar_position: 99
-title: Activity Types Test
-description: Test page for all interactive activity components
+title: Activity Format Reference
+description: Interactive demo of all 13 activity types
 ---
 
 import Quiz, { QuizQuestion } from '@site/src/components/Quiz';
-import FillIn, { FillInQuestion } from '@site/src/components/FillIn';
 import MatchUp from '@site/src/components/MatchUp';
+import FillIn, { FillInQuestion } from '@site/src/components/FillIn';
 import TrueFalse, { TrueFalseQuestion } from '@site/src/components/TrueFalse';
 import Anagram, { AnagramQuestion } from '@site/src/components/Anagram';
 import Unjumble, { UnjumbleQuestion } from '@site/src/components/Unjumble';
@@ -17,248 +17,297 @@ import Translate, { TranslateItem } from '@site/src/components/Translate';
 import Cloze, { ClozePassage } from '@site/src/components/Cloze';
 import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
-import Observe, { ObserveActivity } from '@site/src/components/Observe';
 
-# Activity Types Test Page
+# Activity Format Reference
 
-This page demonstrates all available interactive activity components.
+This page demonstrates all **13 interactive activity types** used in curriculum modules.
 
 ---
 
-## Quiz (Multiple Choice)
+## 1. Quiz (Multiple Choice)
 
 <Quiz>
   <QuizQuestion
-    question="What is the capital of Ukraine?"
-    options={['Львів', 'Київ', 'Одеса', 'Харків']}
-    correctIndex={1}
-    explanation="Київ (Kyiv) is the capital and largest city of Ukraine."
+    question="What does 'привіт' mean?"
+    options={[`hello`, `goodbye`, `thank you`, `please`]}
+    correctIndex={0}
+    explanation="привіт (pryvit) = hello"
   />
   <QuizQuestion
-    question="How many grammatical cases does Ukrainian have?"
-    options={['5', '6', '7', '8']}
-    correctIndex={2}
-    explanation="Ukrainian has 7 cases: nominative, genitive, dative, accusative, instrumental, locative, and vocative."
+    question="Which is the feminine form of 'this'?"
+    options={[`цей`, `ця`, `це`, `ці`]}
+    correctIndex={1}
+    explanation="Feminine → ця"
+  />
+  <QuizQuestion
+    question="How do you say 'thank you'?"
+    options={[`будь ласка`, `дякую`, `привіт`, `вибачте`]}
+    correctIndex={1}
+    explanation="дякую (dyakuyu) = thank you"
   />
 </Quiz>
 
 ---
 
-## Fill-In (Gap Fill with Options)
-
-<FillIn>
-  <FillInQuestion
-    sentence="Я ___ книгу."
-    options={['читаю', 'читаєш', 'читає', 'читають']}
-    answer="читаю"
-  />
-  <FillInQuestion
-    sentence="Вона ___ українською."
-    options={['говорить', 'говорю', 'говоримо', 'говорять']}
-    answer="говорить"
-  />
-</FillIn>
-
----
-
-## Match-Up
+## 2. Match-Up (Pair Matching)
 
 <MatchUp
   pairs={[
-    { left: 'привіт', right: 'hello' },
-    { left: 'дякую', right: 'thank you' },
-    { left: 'так', right: 'yes' },
-    { left: 'ні', right: 'no' },
-    { left: 'будь ласка', right: 'please' }
+    { left: "книга", right: "book" },
+    { left: "стіл", right: "table" },
+    { left: "вікно", right: "window" },
+    { left: "двері", right: "door" },
+    { left: "кімната", right: "room" },
+    { left: "будинок", right: "building" }
   ]}
 />
 
 ---
 
-## True/False
+## 3. Fill-In (Gap Fill)
+
+<FillIn>
+  <FillInQuestion
+    sentence="Я ___ книгу."
+    answer="читаю"
+    options={[`читаю`, `читаєш`, `читає`, `читають`]}
+    hint="read"
+  />
+  <FillInQuestion
+    sentence="Вона ___ українською."
+    answer="говорить"
+    options={[`говорить`, `говорю`, `говоримо`, `говорять`]}
+    hint="speak"
+  />
+  <FillInQuestion
+    sentence="Ми ___ в офісі."
+    answer="працюємо"
+    options={[`працюємо`, `працюю`, `працюєш`, `працюють`]}
+    hint="work"
+  />
+  <FillInQuestion
+    sentence="Ти ___ каву?"
+    answer="п'єш"
+    options={[`п'єш`, `п'ю`, `п'є`, `п'ють`]}
+    hint="drink"
+  />
+</FillIn>
+
+---
+
+## 4. True-False
 
 <TrueFalse>
   <TrueFalseQuestion
     statement="Ukrainian has 7 grammatical cases."
     isTrue={true}
-    explanation="Correct! Ukrainian has nominative, genitive, dative, accusative, instrumental, locative, and vocative."
+    explanation="Correct! Nominative, Genitive, Dative, Accusative, Instrumental, Locative, Vocative."
   />
   <TrueFalseQuestion
     statement="All Ukrainian nouns are masculine."
     isTrue={false}
-    explanation="Ukrainian has three genders: masculine, feminine, and neuter."
+    explanation="Incorrect! Ukrainian has three genders: masculine, feminine, and neuter."
+  />
+  <TrueFalseQuestion
+    statement="Verb endings show who is doing the action."
+    isTrue={true}
+    explanation="Correct! That's why pronouns are often optional."
+  />
+  <TrueFalseQuestion
+    statement="Ukrainian uses the Latin alphabet."
+    isTrue={false}
+    explanation="Incorrect! Ukrainian uses the Cyrillic alphabet with 33 letters."
   />
 </TrueFalse>
 
 ---
 
-## Anagram (Letter Scramble)
+## 5. Anagram (Letter Unscramble) - A1 Only
 
 <Anagram>
   <AnagramQuestion
-    scrambled="т а ч и т и"
-    answer="читати"
-    hint="to read"
+    scrambled="к н и г а"
+    answer="книга"
+    hint="book"
   />
   <AnagramQuestion
-    scrambled="о с в л о"
-    answer="слово"
-    hint="word"
+    scrambled="с т і л"
+    answer="стіл"
+    hint="table"
+  />
+  <AnagramQuestion
+    scrambled="в і к н о"
+    answer="вікно"
+    hint="window"
+  />
+  <AnagramQuestion
+    scrambled="д в е р і"
+    answer="двері"
+    hint="door"
   />
 </Anagram>
 
 ---
 
-## Unjumble (Word Order)
+## 6. Unjumble (Word Order)
 
 <Unjumble>
   <UnjumbleQuestion
-    words="книгу / Я / читаю"
+    words="книгу / читаю / Я"
     answer="Я читаю книгу."
     hint="I read a book."
   />
   <UnjumbleQuestion
-    words="говорить / Вона / українською"
+    words="українською / Вона / говорить"
     answer="Вона говорить українською."
     hint="She speaks Ukrainian."
+  />
+  <UnjumbleQuestion
+    words="в / Ми / офісі / працюємо"
+    answer="Ми працюємо в офісі."
+    hint="We work in the office."
+  />
+  <UnjumbleQuestion
+    words="каву / Ти / п'єш / ранку / з"
+    answer="Ти п'єш каву з ранку."
+    hint="You drink coffee in the morning."
   />
 </Unjumble>
 
 ---
 
-## Group Sort
+## 7. Group-Sort (Category Sorting)
 
 <GroupSort
   groups={{
-    'Masculine': ['стіл', 'брат', 'день'],
-    'Feminine': ['книга', 'сестра', 'ніч'],
-    'Neuter': ['вікно', 'море', 'місто']
+    "Masculine Nouns": ["стіл", "будинок", "хлопець", "телефон"],
+    "Feminine Nouns": ["книга", "кімната", "дівчина", "машина"],
+    "Neuter Nouns": ["вікно", "місто", "слово", "море"]
   }}
 />
 
 ---
 
-## Error Correction
+## 8. Error-Correction (Find and Fix) - A2+
 
 <ErrorCorrection>
   <ErrorCorrectionItem
     sentence="Я бачу студент у бібліотеці."
     errorWord="студент"
     correctForm="студента"
-    options={['студент', 'студента', 'студенту', 'студентом']}
+    options={[`студент`, `студента`, `студенту`, `студентом`]}
     explanation="Animate masculine accusative = genitive form"
   />
   <ErrorCorrectionItem
     sentence="Вона читав книгу вчора."
     errorWord="читав"
     correctForm="читала"
-    options={['читав', 'читала', 'читало', 'читали']}
+    options={[`читав`, `читала`, `читало`, `читали`]}
     explanation="Past tense agrees with subject gender (feminine = -ла)"
-  />
-  <ErrorCorrectionItem
-    sentence="Це моя книга."
-    errorWord={null}
-    correctForm="✓"
-    options={[]}
-    explanation="No error - this sentence is correct!"
   />
 </ErrorCorrection>
 
 ---
 
-## Select (Multi-Checkbox)
+## 9. Select (Multiple Correct Answers) - A2+
 
 <Select>
   <SelectQuestion
-    question="Which of these are Ukrainian cases? (Select all that apply)"
-    options={['Nominative', 'Genitive', 'Subjunctive', 'Accusative', 'Gerundive']}
-    correctAnswers={['Nominative', 'Genitive', 'Accusative']}
-    explanation="Ukrainian has 7 cases: Nominative, Genitive, Dative, Accusative, Instrumental, Locative, Vocative."
+    question="Which are valid accusative forms for 'книга'?"
+    options={[`книгу`, `книги`, `книзі`, `книгою`]}
+    correctAnswers={[`книгу`]}
+    explanation="Only книгу is the accusative singular."
+  />
+  <SelectQuestion
+    question="Which verbs are Class I conjugation?"
+    options={[`читати`, `писати`, `говорити`, `любити`]}
+    correctAnswers={[`читати`, `писати`]}
+    explanation="читати and писати end in -ати (Class I), говорити/любити are Class II (-ити)"
   />
 </Select>
 
 ---
 
-## Translate
+## 10. Translate (Translation Choice) - A2+
 
 <Translate>
   <TranslateItem
     source="I love Ukraine."
-    options={['Я люблю Україну.', 'Я любить Україна.', 'Мене люблю Україна.', 'Я люблять Україну.']}
+    options={[`Я люблю Українa.`, `Я люблю Україну.`, `Я люблю України.`, `Я люблю Україні.`]}
     answer="Я люблю Україну."
-    alternatives={['Люблю Україну.']}
+    explanation="Accusative case needed: Україну"
   />
   <TranslateItem
     source="She reads a book."
-    options={['Вона читає книгу.', 'Вона читати книга.', 'Він читає книгу.', 'Вони читають книги.']}
+    options={[`Вона читає книга.`, `Вона читаю книгу.`, `Вона читає книгу.`, `Вона читаєш книгу.`]}
     answer="Вона читає книгу."
+    explanation="Third person singular: читає"
   />
 </Translate>
 
 ---
 
-## Cloze (Passage with Dropdowns)
+## 11. Cloze (Passage Completion) - A2+
 
 <Cloze>
   <ClozePassage
     text="Мене [___:1] Олена. Я [___:2] з України. Я [___:3] українською і англійською."
     blanks={[
-      { index: 0, options: ['звати', 'є', 'маю'], answer: 'звати' },
-      { index: 1, options: ['є', 'живу', 'звати'], answer: 'є' },
-      { index: 2, options: ['говорю', 'говорить', 'говорять'], answer: 'говорю' }
+      { index: 0, options: [`звати`, `є`, `маю`], answer: `звати` },
+      { index: 1, options: [`є`, `живу`, `приїхала`], answer: `є` },
+      { index: 2, options: [`говорю`, `говорить`, `говорять`], answer: `говорю` }
     ]}
   />
 </Cloze>
 
 ---
 
-## Dialogue Reorder
+## 12. Dialogue-Reorder (Conversation Order) - A2+
 
 <DialogueReorder>
   <DialogueReorderActivity
     lines={[
-      { speaker: 'A', line: 'Привіт! Як справи?' },
-      { speaker: 'B', line: 'Добре, дякую! А у тебе?' },
-      { speaker: 'A', line: 'Теж добре. Що робиш сьогодні?' },
-      { speaker: 'B', line: 'Вчу українську мову!' }
+      { speaker: "А", line: "Привіт! Як справи?" },
+      { speaker: "B", line: "Добре, дякую! А у тебе?" },
+      { speaker: "А", line: "Теж добре. Що будеш замовляти?" },
+      { speaker: "B", line: "Каву, будь ласка." },
+      { speaker: "А", line: "Американо чи латте?" },
+      { speaker: "B", line: "Американо з молоком." }
     ]}
   />
 </DialogueReorder>
 
 ---
 
-## Mark the Words
+## 13. Mark-the-Words (Word Identification) - A2+
 
 <MarkTheWords>
   <MarkTheWordsActivity
-    text="У цьому реченні знайдіть усі іменники: Хлопець читає книгу в парку біля річки."
-    correctWords={['Хлопець', 'книгу', 'парку', 'річки']}
+    text="Хлопець читає книгу в парку біля річки."
+    correctWords={[`Хлопець`, `книгу`, `парку`, `річки`]}
   />
 </MarkTheWords>
 
 ---
 
-## Observe First (Pattern Discovery)
-
-<Observe>
-  <ObserveActivity
-    examples={[
-      'Я <strong>читаю</strong> книгу.',
-      'Ти <strong>читаєш</strong> книгу.',
-      'Він/Вона <strong>читає</strong> книгу.',
-      'Ми <strong>читаємо</strong> книгу.'
-    ]}
-    prompt="What pattern do you notice in the verb endings?"
-  />
-</Observe>
-
----
-
 ## Summary
 
-All activity types are working correctly when they:
-- Display the initial state properly
-- Accept user input
-- Validate answers correctly
-- Show appropriate feedback
-- Allow reset/retry
+All **13 activity types** are now interactive:
+
+| # | Activity | Level | Description |
+|---|----------|-------|-------------|
+| 1 | quiz | A1+ | Multiple choice (single answer) |
+| 2 | match-up | A1+ | Pair matching |
+| 3 | fill-in | A1+ | Gap fill with dropdown options |
+| 4 | true-false | A1+ | True/false statements |
+| 5 | anagram | A1 only | Letter unscrambling |
+| 6 | unjumble | A1+ | Word reordering |
+| 7 | group-sort | A1+ | Category sorting |
+| 8 | error-correction | A2+ | Find and fix mistakes |
+| 9 | select | A2+ | Multiple correct answers |
+| 10 | translate | A2+ | Translation choice |
+| 11 | cloze | A2+ | Passage with multiple blanks |
+| 12 | dialogue-reorder | A2+ | Conversation ordering |
+| 13 | mark-the-words | A2+ | Word identification |
+
+**Note:** `observe` is a content callout, not an activity. Use it inline in lesson content for pattern discovery before grammar explanations.

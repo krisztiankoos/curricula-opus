@@ -63,13 +63,14 @@
 | **dialogue-reorder** | ❌ | 1+ | 1+ | 1+ | 1+ | — |
 | **select** | ❌ | opt | 1+ | 1+ | 1+ | 1+ |
 | **translate** | ❌ | opt | 1+ | 1+ | 2+ | 2+ |
-| **observe-first** | ❌ | opt | 1+ | 1+ | — | — |
 
 **Legend:** `2+` = minimum count, `opt` = optional, `❌` = not allowed, `—` = rarely used
 
+**Note:** `observe-first` is a **pedagogical content pattern** (using `> [!observe]` callout inline), not an activity type. Use it before grammar explanations for inductive pattern discovery (recommended B1-B2).
+
 **C1-C2 Rationale:** At advanced levels, learners need more production practice (cloze ×3, translate ×2) and less basic recognition (mark-the-words removed). Error-correction remains high (×3) for metalinguistic awareness.
 
-### Activity Types Reference
+### Activity Types Reference (13 Types)
 
 | Activity | Level | Description |
 |----------|-------|-------------|
@@ -87,11 +88,14 @@
 | `translate` | A2+ | Select correct translation |
 | `select` | A2+ | Multi-checkbox selection |
 
+**Content Patterns (not activities):**
+- `> [!observe]` - Observe-first pattern discovery callout (use inline before grammar explanations)
+
 ### Exercise Stage Sequencing (A2+)
 
 For A2+ modules, sequence activities by pedagogical stage:
 
-1. **🔍 Recognition** — mark-the-words, observe-first sections
+1. **🔍 Recognition** — mark-the-words (use `> [!observe]` callouts inline before grammar for pattern discovery)
 2. **👂 Discrimination** — select, true-false with subtle distinctions
 3. **✏️ Controlled Production** — fill-in, cloze, error-correction
 4. **✍️ Free Production** — translate, dialogue-reorder
@@ -257,9 +261,10 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 | `dialogue-reorder` | ✗ | ✓ | ✓ | ✓ | ✓ | opt | Put dialogue lines in correct order |
 | `select` | ✗ | opt | ✓ | ✓ | ✓ | ✓ | Multi-checkbox selection |
 | `translate` | ✗ | opt | ✓ | ✓ | ✓ | ✓ | Select correct translation |
-| `observe-first` | ✗ | opt | ✓ | ✓ | opt | opt | Pattern discovery section |
 
 **Legend:** `✓` = required, `opt` = optional, `✗` = not allowed
+
+**Note:** `observe-first` is a content pattern (`> [!observe]` callout), not an activity. Use inline before grammar explanations for inductive pattern discovery (recommended B1-B2).
 
 ### Activity Priority by Level
 
@@ -270,11 +275,12 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 
 **A2 (Elementary):** Introduce new activity types
 - All A1 types + error-correction, cloze, mark-the-words, dialogue-reorder
-- Optional: select, translate, observe-first
+- Optional: select, translate
 - Error-correction: 1 obvious error per sentence
 
-**B1 (Intermediate):** Full activity palette + observe-first
-- All types available, observe-first mandatory for grammar modules
+**B1 (Intermediate):** Full activity palette
+- All 13 activity types available
+- Use `> [!observe]` callouts inline before grammar explanations
 - Production activities increase (unjumble ×2, error-correction ×2)
 
 **B2 (Upper-Intermediate):** Production increases
@@ -284,7 +290,7 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 **C1-C2 (Advanced/Mastery):** Production-heavy, context-focused
 - Cloze ×3 (contextual grammar), error-correction ×3 (metalinguistic awareness)
 - Translate ×2 (production with alternatives), fill-in ×2, unjumble ×2
-- Mark-the-words removed (too basic), observe-first optional
+- Mark-the-words rarely used (too basic at this level)
 
 **Rationale:** At B1+, learners need to *produce* correct Ukrainian, not just recognize it. Error-correction builds metalinguistic awareness essential for self-correction.
 
@@ -434,14 +440,24 @@ To surprise and impress students, highlighting the beautiful, melodic, and rich 
 
 **Usage:** Production practice. Tests both accuracy and understanding of valid alternatives.
 
-### observe-first (B1-B2 Pattern Discovery)
+### Observe-First Content Pattern (B1-B2)
+
+**Note:** This is a content callout (`> [!observe]`), not an activity type. Use inline before grammar explanations.
 
 | Level | Examples | Pattern Type | Follow-up Activity |
 |-------|----------|--------------|-------------------|
 | B1 | 4-6 examples | Single pattern (endings, stress) | fill-in applying the pattern |
 | B2 | 6-8 examples | Complex pattern (aspect pairs, motion) | cloze or translate |
 
-**Usage:** Inductive learning before explicit rules. Place at section start, before grammar explanation.
+**Usage:** Inductive learning before explicit rules. Place inline within lesson content, before grammar explanation.
+
+**Format:**
+```markdown
+> [!observe] Look at these examples...
+> - Я читаю книгу. (I read a book.)
+> - Він бачить студента. (He sees the student.)
+> What do you notice about the endings?
+```
 
 ---
 

@@ -138,6 +138,27 @@ Use `> [!model-answer]` callout for longer blocks of model text, such as sample 
 > спостерігаємо екстремальні погодні умови...
 ```
 
+### 8. Observe First (Pattern Discovery)
+
+Use `> [!observe]` callout for inductive pattern discovery BEFORE explaining grammar rules. Place inline in lesson content, not in Activities section.
+
+```markdown
+> [!observe]
+> Я **читаю** книгу.
+> Ти **читаєш** книгу.
+> Він **читає** книгу.
+>
+> 🔎 What do you notice about the verb endings?
+```
+
+**Key points:**
+- Use inline in lesson content (before grammar explanation)
+- NOT an activity type - do not use `## observe:` header
+- Show 3-4 example sentences highlighting the pattern with **bold**
+- End with a discovery prompt (question with 🔎)
+- Follow immediately with explicit grammar explanation
+- Required for B1-B2 modules, optional for A2 and C1-C2
+
 ---
 
 ## Migration Rules
@@ -581,29 +602,6 @@ Translation multiple choice - select the correct translation.
 - Same format as quiz (single correct answer)
 - Use `- [x]` for correct translation
 - Focuses on Ukrainian output from English prompts
-
-### Observe Format (A2+)
-
-Pattern discovery activity using the `> [!observe]` callout.
-
-```markdown
-## observe: Verb Endings Pattern
-
-> [!observe]
-> Я **читаю** книгу.
-> Ти **читаєш** книгу.
-> Він **читає** книгу.
-> Ми **читаємо** книгу.
->
-> 🔎 What pattern do you notice in the verb endings?
-```
-
-**Key points:**
-- Use `> [!observe]` callout block
-- Show 3-6 example sentences highlighting the pattern
-- Use **bold** for the target forms
-- End with a discovery prompt (question)
-- Follow with explicit grammar explanation in lesson content
 
 ### Exercise Stage Labels (A2+)
 

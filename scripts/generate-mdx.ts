@@ -330,11 +330,6 @@ interface ParsedMarkTheWordsData {
     correctWords: string[];
 }
 
-interface ParsedObserveData {
-    examples: string[];
-    prompt: string;
-}
-
 function parseTrueFalseActivity(activityContent: string): ParsedTrueFalseItem[] {
     const items: ParsedTrueFalseItem[] = [];
 
@@ -575,37 +570,6 @@ function parseMarkTheWordsActivity(activityContent: string): ParsedMarkTheWordsD
     return { instruction, text, correctWords };
 }
 
-function parseObserveActivity(activityContent: string): ParsedObserveData {
-    const examples: string[] = [];
-    let prompt = '';
-    let inObserveBlock = false;
-
-    for (const line of activityContent.split('\n')) {
-        const trimmed = line.trim();
-
-        if (trimmed.startsWith('> [!observe]')) {
-            inObserveBlock = true;
-            continue;
-        }
-
-        if (inObserveBlock && trimmed.startsWith('>')) {
-            const content = trimmed.replace(/^>\s*/, '').trim();
-            if (content) {
-                // Check if it's a prompt (ends with ?)
-                if (content.endsWith('?')) {
-                    prompt = content;
-                } else {
-                    examples.push(content);
-                }
-            }
-        } else if (inObserveBlock && !trimmed.startsWith('>')) {
-            inObserveBlock = false;
-        }
-    }
-
-    return { examples, prompt };
-}
-
 // ============================================================================
 // ACTIVITY TO JSX CONVERTERS
 // ============================================================================
@@ -818,21 +782,6 @@ function markTheWordsToJsx(data: ParsedMarkTheWordsData, title: string): string 
 />`;
 }
 
-function observeToJsx(data: ParsedObserveData, title: string): string {
-    if (data.examples.length === 0) return '';
-
-    const examplesStr = data.examples.map(e => '`' + escapeJsxString(e) + '`').join(', ');
-
-    return `### ${title}
-
-<Observe>
-  <ObserveActivity
-    examples={[${examplesStr}]}
-    prompt=${wrapForJsx(data.prompt)}
-  />
-</Observe>`;
-}
-
 // ============================================================================
 // MAIN ACTIVITY PROCESSOR
 // ============================================================================
@@ -918,10 +867,6 @@ function processActivities(body: string): { mainContent: string; activitiesJsx: 
                 const markData = parseMarkTheWordsActivity(content);
                 jsx = markTheWordsToJsx(markData, title);
                 break;
-            case 'observe':
-                const observeData = parseObserveActivity(content);
-                jsx = observeToJsx(observeData, title);
-                break;
             default:
                 // Keep as markdown for unsupported types
                 jsx = `### ${title}\n\n${content}`;
@@ -1002,7 +947,6 @@ import Translate, { TranslateQuestion } from '@site/src/components/Translate';
 import Cloze from '@site/src/components/Cloze';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 import MarkTheWords from '@site/src/components/MarkTheWords';
-import Observe, { ObserveActivity } from '@site/src/components/Observe';
 `;
 
     // Build frontmatter

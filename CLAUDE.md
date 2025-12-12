@@ -139,7 +139,7 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 > - Sentence complexity (fill-in/unjumble word counts)
 > - Time and vocabulary targets
 
-### Activity Types (14 Total)
+### Activity Types (13 Total)
 
 **Core Activities (All Levels):**
 - `quiz` - Multiple choice (single answer)
@@ -159,7 +159,8 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 - `dialogue-reorder` - Put conversation lines in order
 - `select` - Multi-checkbox (multiple correct answers)
 - `translate` - Translation multiple choice
-- `observe-first` - Pattern discovery before explicit rules
+
+**Note:** `observe-first` is a pedagogical content pattern (inline `> [!observe]` callout), not an activity type. Use it before grammar explanations for inductive pattern discovery.
 
 ### Activity Matrix
 
@@ -171,7 +172,7 @@ npx ts-node scripts/generate.ts l2-uk-en [moduleNum]
 | true-false | ✓ | ✓ | ✓ (opt C1+) |
 | anagram | M01-10 | ❌ | ❌ |
 | error-correction, cloze, mark-the-words, dialogue-reorder | ❌ | ✓ | ✓ |
-| select, translate, observe-first | ❌ | opt | ✓ |
+| select, translate | ❌ | opt | ✓ |
 
 ### Anagram Phaseout (A1 Only)
 - **A1 Modules 01-10**: Allowed (scaffolding for Cyrillic learners)

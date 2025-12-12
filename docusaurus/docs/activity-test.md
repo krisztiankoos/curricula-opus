@@ -223,19 +223,6 @@ All 14 activity types are fully supported by the MDX generator.
 
 > 4 nouns: хлопець (boy), книгу (book), парку (park), річки (river)
 
-## observe: Pattern Discovery (A2+)
-> Study these examples and find the pattern.
-
-> [!observe]
-> Я **читаю** книгу.
-> Ти **читаєш** книгу.
-> Він **читає** книгу.
-> Ми **читаємо** книгу.
-> Ви **читаєте** книгу.
-> Вони **читають** книгу.
->
-> What pattern do you notice in the verb endings?
-
 ---
 
 # Vocabulary
@@ -252,7 +239,7 @@ All 14 activity types are fully supported by the MDX generator.
 
 # Summary
 
-This reference file shows all 14 activity types:
+This reference file shows all 13 activity types:
 
 1. **quiz** - Multiple choice (single answer)
 2. **match-up** - Pair matching with table
@@ -267,6 +254,7 @@ This reference file shows all 14 activity types:
 11. **cloze** - Passage with multiple blanks (A2+)
 12. **dialogue-reorder** - Conversation ordering (A2+)
 13. **mark-the-words** - Word identification (A2+)
-14. **observe** - Pattern discovery (A2+)
 
-**All 14 types supported by generate-mdx.ts:** quiz, match-up, fill-in, true-false, anagram, unjumble, group-sort, error-correction, select, translate, cloze, dialogue-reorder, mark-the-words, observe
+**All 13 types supported by generate-mdx.ts:** quiz, match-up, fill-in, true-false, anagram, unjumble, group-sort, error-correction, select, translate, cloze, dialogue-reorder, mark-the-words
+
+**Note:** `observe` is a content callout (`> [!observe]`), not an activity. Use it inline in lesson content for pattern discovery before grammar explanations.

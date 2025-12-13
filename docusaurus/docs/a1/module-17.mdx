@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -273,9 +273,12 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Write the Number
 
+*Write the number in Ukrainian.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`5 = ___`}
+    sentence={`1. 5 = ___`}
     answer={`п'ять`}
     options={[`п'ять`, `пять`, `пяти`, `п'яти`]}
   />
@@ -338,6 +341,9 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Number to Word
 
+*Match the numeral with the Ukrainian word.*
+
+
 <MatchUp pairs={[
   { left: `3`, right: `три` },
   { left: `7`, right: `сім` },
@@ -355,9 +361,12 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Number-Noun Agreement
 
+*Choose the correct noun form.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Одна ___ (гривня)`}
+    question={`1. Одна ___ (гривня)`}
     options={[`гривня`, `гривні`, `гривень`, `гривнею`]}
     correctIndex={0}
     explanation={``}
@@ -432,20 +441,45 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Number Patterns
 
+*Sort numbers by their pattern.*
+
+
 <GroupSort groups={{
-  "> Sort numbers by their pattern.": [
-    "Teens (11-19): одинадцять",
-    "Teens (11-19): дванадцять",
-    "Teens (11-19): тринадцять",
-    "Tens (20-90): двадцять",
-    "Tens (20-90): тридцять",
-    "Tens (20-90): сорок",
-    "Tens (50-80): п'ятдесят",
-    "Tens (50-80): шістдесят",
-    "Tens (50-80): сімдесят",
-    "Tens (50-80): вісімдесят",
-    "Special: дев'яносто",
-    "Special: сто"
+  "одинадцять": [
+    "Teens (11-19)"
+  ],
+  "дванадцять": [
+    "Teens (11-19)"
+  ],
+  "тринадцять": [
+    "Teens (11-19)"
+  ],
+  "двадцять": [
+    "Tens (20-90)"
+  ],
+  "тридцять": [
+    "Tens (20-90)"
+  ],
+  "сорок": [
+    "Tens (20-90)"
+  ],
+  "п'ятдесят": [
+    "Tens (50-80)"
+  ],
+  "шістдесят": [
+    "Tens (50-80)"
+  ],
+  "сімдесят": [
+    "Tens (50-80)"
+  ],
+  "вісімдесят": [
+    "Tens (50-80)"
+  ],
+  "дев'яносто": [
+    "Special"
+  ],
+  "сто": [
+    "Special"
   ]
 }} />
 
@@ -516,9 +550,12 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Number Vocabulary
 
+*Unscramble these number-related words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`ь т я ' п`}
+    scrambled={`1. ь т я ' п`}
     answer={`п'ять`}
     hint={``}
   />
@@ -581,9 +618,12 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Prices
 
+*Write the price in words.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`15₴ = ___ гривень`}
+    sentence={`1. 15₴ = ___ гривень`}
     answer={`п'ятнадцять`}
     options={[`п'ятнадцять`, `п'ятнадцати`, `п'ятьнадцять`, `пятнадцять`]}
   />
@@ -646,9 +686,12 @@ The Ukrainian currency is the **гривня** (hryvnia), abbreviated UAH or ₴
 
 ### Build Price Sentences
 
+*Arrange the words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`коштує / скільки / це`}
+    words={`1. коштує / скільки / це`}
     answer={`Скільки це коштує?`}
     hint={``}
   />

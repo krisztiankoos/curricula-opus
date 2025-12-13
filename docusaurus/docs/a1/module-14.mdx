@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -217,9 +217,12 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Choose the Right Form
 
+*Select the correct possessive for each noun.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`___ книга (my, f).`}
+    sentence={`1. ___ книга (my, f).`}
     answer={`моя`}
     options={[`моя`, `мій`, `моє`, `мої`]}
   />
@@ -282,6 +285,9 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Noun to Possessive Form
 
+*Match the noun with the correct form of "мій".*
+
+
 <MatchUp pairs={[
   { left: `телефон`, right: `мій` },
   { left: `книга`, right: `моя` },
@@ -299,9 +305,12 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Variable or Invariable?
 
+*Identify whether the possessive changes form or not.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Його (his)`}
+    question={`1. Його (his)`}
     options={[`Invariable — never changes`, `Variable — has 4 forms`, `Only changes in accusative`, `Only for feminine nouns`]}
     correctIndex={0}
     explanation={``}
@@ -376,20 +385,45 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### By Gender Form
 
+*Sort nouns by which form of "наш" they take.*
+
+
 <GroupSort groups={{
-  "> Sort nouns by which form of \"наш\" they take.": [
-    "наш (m): дім",
-    "наша (f): машина",
-    "наше (n): місто",
-    "наші (pl): батьки",
-    "наш (m): телефон",
-    "наша (f): книга",
-    "наше (n): вікно",
-    "наші (pl): друзі",
-    "наш (m): друг",
-    "наша (f): сестра",
-    "наше (n): ім'я",
-    "наші (pl): діти"
+  "дім": [
+    "наш (m)"
+  ],
+  "машина": [
+    "наша (f)"
+  ],
+  "місто": [
+    "наше (n)"
+  ],
+  "батьки": [
+    "наші (pl)"
+  ],
+  "телефон": [
+    "наш (m)"
+  ],
+  "книга": [
+    "наша (f)"
+  ],
+  "вікно": [
+    "наше (n)"
+  ],
+  "друзі": [
+    "наші (pl)"
+  ],
+  "друг": [
+    "наш (m)"
+  ],
+  "сестра": [
+    "наша (f)"
+  ],
+  "ім'я": [
+    "наше (n)"
+  ],
+  "діти": [
+    "наші (pl)"
   ]
 }} />
 
@@ -460,9 +494,12 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Possessive Vocabulary
 
+*Unscramble these possessive-related words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`й і м`}
+    scrambled={`1. й і м`}
     answer={`мій`}
     hint={``}
   />
@@ -525,9 +562,12 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Complete Family Sentences
 
+*Fill in the correct possessive form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Це ___ (my) тато.`}
+    sentence={`1. Це ___ (my) тато.`}
     answer={`мій`}
     options={[`мій`, `моя`, `моє`, `мої`]}
   />
@@ -590,9 +630,12 @@ Hello! I want to tell you about our family. My dad is a doctor. He works at a ho
 
 ### Build Possessive Sentences
 
+*Arrange the words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`мій / це / телефон`}
+    words={`1. мій / це / телефон`}
     answer={`Це мій телефон.`}
     hint={``}
   />

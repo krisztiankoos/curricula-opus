@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -267,9 +267,12 @@ You have mastered:
 
 ### Case Practice
 
+*Choose the correct case form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Я бачу ___ (книга).`}
+    sentence={`1. Я бачу ___ (книга).`}
     answer={`книгу`}
     options={[`книгу`, `книга`, `книги`, `книзі`]}
   />
@@ -332,6 +335,9 @@ You have mastered:
 
 ### Vocabulary Review
 
+*Match Ukrainian with English.*
+
+
 <MatchUp pairs={[
   { left: `напрямо`, right: `straight` },
   { left: `наліво`, right: `left` },
@@ -349,9 +355,12 @@ You have mastered:
 
 ### Scenario Challenge
 
+*Choose the best response.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`You want to ask where the metro is. You say:`}
+    question={`1. You want to ask where the metro is. You say:`}
     options={[`Де метро?`, `Що метро?`, `Як метро?`, `Коли метро?`]}
     correctIndex={0}
     explanation={``}
@@ -426,20 +435,45 @@ You have mastered:
 
 ### Case Categories
 
+*Sort words by the case they require.*
+
+
 <GroupSort groups={{
-  "> Sort words by the case they require.": [
-    "Accusative (object): книгу",
-    "Accusative (object): каву",
-    "Accusative (object): воду",
-    "Locative (location): в місті",
-    "Locative (location): на столі",
-    "Locative (location): у парку",
-    "Genitive (absence): немає кави",
-    "Genitive (absence): без цукру",
-    "Genitive (absence): біля станції",
-    "Numbers (5+): п'ять книг",
-    "Numbers (5+): сто гривень",
-    "Numbers (5+): двадцять хвилин"
+  "книгу": [
+    "Accusative (object)"
+  ],
+  "каву": [
+    "Accusative (object)"
+  ],
+  "воду": [
+    "Accusative (object)"
+  ],
+  "в місті": [
+    "Locative (location)"
+  ],
+  "на столі": [
+    "Locative (location)"
+  ],
+  "у парку": [
+    "Locative (location)"
+  ],
+  "немає кави": [
+    "Genitive (absence)"
+  ],
+  "без цукру": [
+    "Genitive (absence)"
+  ],
+  "біля станції": [
+    "Genitive (absence)"
+  ],
+  "п'ять книг": [
+    "Numbers (5+)"
+  ],
+  "сто гривень": [
+    "Numbers (5+)"
+  ],
+  "двадцять хвилин": [
+    "Numbers (5+)"
   ]
 }} />
 
@@ -510,9 +544,12 @@ You have mastered:
 
 ### Key Vocabulary
 
+*Unscramble these A1.2 words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`о м р я п`}
+    scrambled={`1. о м р я п`}
     answer={`прямо`}
     hint={``}
   />
@@ -575,9 +612,12 @@ You have mastered:
 
 ### Dialogue Integration
 
+*Complete this comprehensive dialogue.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`— Де найближча ___? (café)`}
+    sentence={`1. — Де найближча ___? (café)`}
     answer={`кав'ярня`}
     options={[`кав'ярня`, `кава`, `кафе`, `кавова`]}
   />
@@ -640,9 +680,12 @@ You have mastered:
 
 ### Build Complete Sentences
 
+*Arrange words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`метро / де / знаходиться`}
+    words={`1. метро / де / знаходиться`}
     answer={`Де знаходиться метро?`}
     hint={``}
   />

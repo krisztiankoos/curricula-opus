@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -175,6 +175,9 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### False Friends
 
+*Pair the "Trickster" letters with their actual English sound.*
+
+
 <MatchUp pairs={[
   { left: `**В**`, right: `V` },
   { left: `**Н**`, right: `N` },
@@ -194,9 +197,12 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### International Words
 
+*Read the Ukrainian word and choose the clear English meaning.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Таксі`}
+    question={`1. Таксі`}
     options={[`Taxi`, `Tax`, `Toxic`, `Task`]}
     correctIndex={0}
     explanation={`Sounds like "Tak-see".`}
@@ -271,9 +277,12 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### Scrambled Cognates
 
+*Unscramble these letters to make international words. (Spaces between letters!)*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`а к п р`}
+    scrambled={`1. а к п р`}
     answer={`парк`}
     hint={`Park`}
   />
@@ -336,9 +345,12 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### Letter Identification
 
+*What sound does this CYRILLIC letter make? (Not the Latin lookalike!)*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Cyrillic Н (looks like Latin H) makes what sound?`}
+    question={`1. Cyrillic Н (looks like Latin H) makes what sound?`}
     options={[`/n/ as in "No"`, `/h/ as in "Hello"`, `/p/ as in "Pot"`, `/i/ as in "Machine"`]}
     correctIndex={0}
     explanation={`Cyrillic Н looks like H but sounds like N!`}
@@ -413,6 +425,9 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### Uppercase to Lowercase
 
+*Match the big letter to its small partner.*
+
+
 <MatchUp pairs={[
   { left: `**Б**`, right: `**б**` },
   { left: `**Д**`, right: `**д**` },
@@ -430,9 +445,12 @@ These are completely new shapes. You have no baggage with them, so they are actu
 
 ### Vowel Hunt
 
+*Fill in the missing vowel to complete the word.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Б___нк (Bank)`}
+    sentence={`1. Б___нк (Bank)`}
     answer={`а`}
     options={[`а`, `о`, `у`, `і`]}
   />
@@ -494,6 +512,9 @@ These are completely new shapes. You have no baggage with them, so they are actu
 </FillIn>
 
 ### Alphabet Facts
+
+*Decide if the statement is True or False.*
+
 
 <TrueFalse>
   <TrueFalseQuestion

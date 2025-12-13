@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -252,9 +252,12 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Form the Future
 
+*Complete with the correct form of буду.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Завтра я ___ працювати.`}
+    sentence={`1. Завтра я ___ працювати.`}
     answer={`буду`}
     options={[`буду`, `будеш`, `буде`, `будемо`]}
   />
@@ -317,6 +320,9 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Future Time Expressions
 
+*Match Ukrainian with English.*
+
+
 <MatchUp pairs={[
   { left: `завтра`, right: `tomorrow` },
   { left: `післязавтра`, right: `day after tomorrow` },
@@ -334,9 +340,12 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Future Tense Rules
 
+*Choose the correct answer.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`"Буду читати" means:`}
+    question={`1. "Буду читати" means:`}
     options={[`I will read / I will be reading`, `I was reading`, `I am reading`, `I read`]}
     correctIndex={0}
     explanation={``}
@@ -411,20 +420,45 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Past vs Future Time
 
+*Sort time expressions by tense.*
+
+
 <GroupSort groups={{
-  "> Sort time expressions by tense.": [
-    "Past: вчора",
-    "Past: минулого тижня",
-    "Past: раніше",
-    "Past: давно",
-    "Past: колись",
-    "Past: позавчора",
-    "Future: завтра",
-    "Future: наступного тижня",
-    "Future: скоро",
-    "Future: пізніше",
-    "Future: післязавтра",
-    "Future: незабаром"
+  "вчора": [
+    "Past"
+  ],
+  "минулого тижня": [
+    "Past"
+  ],
+  "раніше": [
+    "Past"
+  ],
+  "давно": [
+    "Past"
+  ],
+  "колись": [
+    "Past"
+  ],
+  "позавчора": [
+    "Past"
+  ],
+  "завтра": [
+    "Future"
+  ],
+  "наступного тижня": [
+    "Future"
+  ],
+  "скоро": [
+    "Future"
+  ],
+  "пізніше": [
+    "Future"
+  ],
+  "післязавтра": [
+    "Future"
+  ],
+  "незабаром": [
+    "Future"
   ]
 }} />
 
@@ -495,9 +529,12 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Future Vocabulary
 
+*Unscramble these future-related words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`т а р в з а`}
+    scrambled={`1. т а р в з а`}
     answer={`завтра`}
     hint={``}
   />
@@ -560,9 +597,12 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### My Plans
 
+*Complete with the correct future form or intention verb.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Завтра я ___ вивчати українську. (буду)`}
+    sentence={`1. Завтра я ___ вивчати українську. (буду)`}
     answer={`буду`}
     options={[`буду`, `будеш`, `буде`, `будемо`]}
   />
@@ -625,9 +665,12 @@ At ten, I will already be sleeping. Tomorrow will be a long day!
 
 ### Build Future Sentences
 
+*Arrange words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`завтра / буду / я / працювати`}
+    words={`1. завтра / буду / я / працювати`}
     answer={`Завтра я буду працювати.`}
     hint={``}
   />

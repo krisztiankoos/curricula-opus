@@ -39,6 +39,39 @@ function wrapForJsx(text: string): string {
     return '{`' + escapeJsxString(text) + '`}';
 }
 
+/**
+ * Extract instruction blockquote from activity content.
+ * Instructions are lines starting with `> ` at the beginning of the content.
+ * Returns { instruction, contentWithoutInstruction }
+ */
+function extractInstruction(content: string): { instruction: string; content: string } {
+    const lines = content.split('\n');
+    const instructionLines: string[] = [];
+    let contentStartIndex = 0;
+
+    // Find instruction lines at the start (blockquotes starting with >)
+    for (let i = 0; i < lines.length; i++) {
+        const trimmed = lines[i].trim();
+        if (trimmed.startsWith('>') && !trimmed.startsWith('> [!')) {
+            // It's an instruction blockquote (not a callout like > [!answer])
+            // Remove the > prefix and trim
+            instructionLines.push(trimmed.replace(/^>\s*/, '').trim());
+            contentStartIndex = i + 1;
+        } else if (trimmed === '') {
+            // Skip empty lines at the start
+            contentStartIndex = i + 1;
+        } else {
+            // Found non-instruction content
+            break;
+        }
+    }
+
+    const instruction = instructionLines.join(' ').trim();
+    const remainingContent = lines.slice(contentStartIndex).join('\n');
+
+    return { instruction, content: remainingContent };
+}
+
 // ============================================================================
 // FRONTMATTER PARSER
 // ============================================================================
@@ -1235,7 +1268,11 @@ function processActivities(body: string): { mainContent: string; activitiesJsx: 
 
         const activityType = typeMatch[1].toLowerCase();
         const title = typeMatch[2].trim();
-        const content = block.substring(typeMatch[0].length);
+        const rawContent = block.substring(typeMatch[0].length);
+
+        // Extract instruction from content (blockquote at the start)
+        const { instruction, content } = extractInstruction(rawContent);
+        const instructionLine = instruction ? `\n\n*${instruction}*\n` : '';
 
         let jsx = '';
 
@@ -1295,6 +1332,14 @@ function processActivities(body: string): { mainContent: string; activitiesJsx: 
             default:
                 // Keep as markdown for unsupported types
                 jsx = `### ${title}\n\n${content}`;
+        }
+
+        // Insert instruction after the title line (### Title)
+        if (instructionLine && jsx.startsWith('###')) {
+            const titleEndIndex = jsx.indexOf('\n');
+            if (titleEndIndex !== -1) {
+                jsx = jsx.slice(0, titleEndIndex) + instructionLine + jsx.slice(titleEndIndex);
+            }
         }
 
         activitiesJsx += jsx + '\n\n';

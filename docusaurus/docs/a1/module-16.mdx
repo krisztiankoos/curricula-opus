@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -233,9 +233,12 @@ And the polite responses involve the genitive:
 
 ### Genitive Formation
 
+*Change the nominative to genitive.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Немає ___ (кава).`}
+    sentence={`1. Немає ___ (кава).`}
     answer={`кави`}
     options={[`кави`, `каву`, `кава`, `каві`]}
   />
@@ -298,6 +301,9 @@ And the polite responses involve the genitive:
 
 ### Nominative to Genitive
 
+*Match the nominative with its genitive form.*
+
+
 <MatchUp pairs={[
   { left: `кава`, right: `кави` },
   { left: `час`, right: `часу` },
@@ -315,9 +321,12 @@ And the polite responses involve the genitive:
 
 ### Choosing the Right Case
 
+*Select the correct form for each sentence.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`У мене немає ___. (time)`}
+    question={`1. У мене немає ___. (time)`}
     options={[`часу`, `час`, `часі`, `часом`]}
     correctIndex={0}
     explanation={``}
@@ -392,20 +401,45 @@ And the polite responses involve the genitive:
 
 ### Genitive Endings by Gender
 
+*Sort these genitive forms by their gender.*
+
+
 <GroupSort groups={{
-  "> Sort these genitive forms by their gender.": [
-    "Masculine: часу",
-    "Masculine: хліба",
-    "Masculine: цукру",
-    "Masculine: сиру",
-    "Feminine: кави",
-    "Feminine: води",
-    "Feminine: машини",
-    "Feminine: ідеї",
-    "Neuter: молока",
-    "Neuter: вікна",
-    "Neuter: моря",
-    "Plural: грошей"
+  "часу": [
+    "Masculine"
+  ],
+  "хліба": [
+    "Masculine"
+  ],
+  "цукру": [
+    "Masculine"
+  ],
+  "сиру": [
+    "Masculine"
+  ],
+  "кави": [
+    "Feminine"
+  ],
+  "води": [
+    "Feminine"
+  ],
+  "машини": [
+    "Feminine"
+  ],
+  "ідеї": [
+    "Feminine"
+  ],
+  "молока": [
+    "Neuter"
+  ],
+  "вікна": [
+    "Neuter"
+  ],
+  "моря": [
+    "Neuter"
+  ],
+  "грошей": [
+    "Plural"
   ]
 }} />
 
@@ -476,9 +510,12 @@ And the polite responses involve the genitive:
 
 ### Genitive Vocabulary
 
+*Unscramble words commonly used with genitive.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`є а м е н`}
+    scrambled={`1. є а м е н`}
     answer={`немає`}
     hint={``}
   />
@@ -541,9 +578,12 @@ And the polite responses involve the genitive:
 
 ### Complete Negative Sentences
 
+*Complete the sentences with the correct genitive form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`У кафе немає ___. (milk)`}
+    sentence={`1. У кафе немає ___. (milk)`}
     answer={`молока`}
     options={[`молока`, `молоку`, `молоко`, `молоці`]}
   />
@@ -606,9 +646,12 @@ And the polite responses involve the genitive:
 
 ### Build Negative Sentences
 
+*Arrange the words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`немає / кави / сьогодні`}
+    words={`1. немає / кави / сьогодні`}
     answer={`Сьогодні кави немає.`}
     hint={``}
   />

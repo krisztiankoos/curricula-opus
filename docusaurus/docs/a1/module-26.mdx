@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -249,9 +249,12 @@ I really love my apartment!
 
 ### Adjective Agreement
 
+*Choose the correct adjective form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Це ___ книга. (new - f.)`}
+    sentence={`1. Це ___ книга. (new - f.)`}
     answer={`нова`}
     options={[`новий`, `нова`, `нове`, `нові`]}
   />
@@ -314,6 +317,9 @@ I really love my apartment!
 
 ### Adjective Pairs
 
+*Match adjectives with their opposites.*
+
+
 <MatchUp pairs={[
   { left: `великий`, right: `малий` },
   { left: `новий`, right: `старий` },
@@ -331,9 +337,12 @@ I really love my apartment!
 
 ### Adjective Rules
 
+*Choose the correct answer.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Feminine hard adjectives end in:`}
+    question={`1. Feminine hard adjectives end in:`}
     options={[`-а`, `-ий`, `-е`, `-і`]}
     correctIndex={0}
     explanation={``}
@@ -408,20 +417,45 @@ I really love my apartment!
 
 ### Hard vs Soft Stem
 
+*Sort adjectives by stem type.*
+
+
 <GroupSort groups={{
-  "> Sort adjectives by stem type.": [
-    "Hard Stem: великий",
-    "Hard Stem: новий",
-    "Hard Stem: гарний",
-    "Hard Stem: добрий",
-    "Hard Stem: старий",
-    "Hard Stem: молодий",
-    "Soft Stem: синій",
-    "Soft Stem: останній",
-    "Soft Stem: домашній",
-    "Soft Stem: ранній",
-    "Soft Stem: пізній",
-    "Soft Stem: середній"
+  "великий": [
+    "Hard Stem"
+  ],
+  "новий": [
+    "Hard Stem"
+  ],
+  "гарний": [
+    "Hard Stem"
+  ],
+  "добрий": [
+    "Hard Stem"
+  ],
+  "старий": [
+    "Hard Stem"
+  ],
+  "молодий": [
+    "Hard Stem"
+  ],
+  "синій": [
+    "Soft Stem"
+  ],
+  "останній": [
+    "Soft Stem"
+  ],
+  "домашній": [
+    "Soft Stem"
+  ],
+  "ранній": [
+    "Soft Stem"
+  ],
+  "пізній": [
+    "Soft Stem"
+  ],
+  "середній": [
+    "Soft Stem"
   ]
 }} />
 
@@ -492,9 +526,12 @@ I really love my apartment!
 
 ### Adjective Vocabulary
 
+*Unscramble these adjectives.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`й и к и л е в`}
+    scrambled={`1. й и к и л е в`}
     answer={`великий`}
     hint={``}
   />
@@ -557,9 +594,12 @@ I really love my apartment!
 
 ### Describe It
 
+*Complete with the correct adjective form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Це ___ квартира. (beautiful - f.)`}
+    sentence={`1. Це ___ квартира. (beautiful - f.)`}
     answer={`гарна`}
     options={[`гарний`, `гарна`, `гарне`, `гарні`]}
   />
@@ -622,9 +662,12 @@ I really love my apartment!
 
 ### Build Descriptive Sentences
 
+*Arrange words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`книга / цікава / це`}
+    words={`1. книга / цікава / це`}
     answer={`Це цікава книга.`}
     hint={``}
   />

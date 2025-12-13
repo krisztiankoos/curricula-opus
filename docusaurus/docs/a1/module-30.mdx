@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -229,9 +229,12 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Location or Direction
 
+*Choose the correct form.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Я в ___. (park - location)`}
+    sentence={`1. Я в ___. (park - location)`}
     answer={`парку`}
     options={[`парк`, `парку`, `парка`, `парком`]}
   />
@@ -294,6 +297,9 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Questions & Cases
 
+*Match questions with their cases.*
+
+
 <MatchUp pairs={[
   { left: `Де?`, right: `Locative (location)` },
   { left: `Куди?`, right: `Accusative (direction)` },
@@ -311,9 +317,12 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Preposition Rules
 
+*Choose the correct answer.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`"Де ти?" requires which case?`}
+    question={`1. "Де ти?" requires which case?`}
     options={[`Locative`, `Accusative`, `Genitive`, `Nominative`]}
     correctIndex={0}
     explanation={``}
@@ -388,20 +397,45 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Location vs Direction
 
+*Sort phrases by meaning.*
+
+
 <GroupSort groups={{
-  "> Sort phrases by meaning.": [
-    "Location (Де?): в парку",
-    "Location (Де?): на роботі",
-    "Location (Де?): в Україні",
-    "Location (Де?): біля станції",
-    "Direction (Куди?): в парк",
-    "Direction (Куди?): на роботу",
-    "Direction (Куди?): в Україну",
-    "Direction (Куди?): до друга",
-    "Origin (Звідки?): з України",
-    "Origin (Звідки?): від мами",
-    "Origin (Звідки?): з Києва",
-    "Origin (Звідки?): з роботи"
+  "в парку": [
+    "Location (Де?)"
+  ],
+  "на роботі": [
+    "Location (Де?)"
+  ],
+  "в Україні": [
+    "Location (Де?)"
+  ],
+  "біля станції": [
+    "Location (Де?)"
+  ],
+  "в парк": [
+    "Direction (Куди?)"
+  ],
+  "на роботу": [
+    "Direction (Куди?)"
+  ],
+  "в Україну": [
+    "Direction (Куди?)"
+  ],
+  "до друга": [
+    "Direction (Куди?)"
+  ],
+  "з України": [
+    "Origin (Звідки?)"
+  ],
+  "від мами": [
+    "Origin (Звідки?)"
+  ],
+  "з Києва": [
+    "Origin (Звідки?)"
+  ],
+  "з роботи": [
+    "Origin (Звідки?)"
   ]
 }} />
 
@@ -472,9 +506,12 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Preposition Vocabulary
 
+*Unscramble these preposition words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`и к у д`}
+    scrambled={`1. и к у д`}
     answer={`куди`}
     hint={``}
   />
@@ -537,9 +574,12 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Complete the Journey
 
+*Complete with correct prepositions and forms.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Я їду ___ Києва до Львова. (from)`}
+    sentence={`1. Я їду ___ Києва до Львова. (from)`}
     answer={`з`}
     options={[`з`, `в`, `на`, `до`]}
   />
@@ -602,9 +642,12 @@ Finally I returned from the Carpathians to Kyiv. I came home tired, but happy!
 
 ### Build Motion Sentences
 
+*Arrange words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`куди / ти / йдеш`}
+    words={`1. куди / ти / йдеш`}
     answer={`Куди ти йдеш?`}
     hint={``}
   />

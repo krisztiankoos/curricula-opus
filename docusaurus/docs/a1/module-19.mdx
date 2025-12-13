@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -259,9 +259,12 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Café Phrases
 
+*Complete with the correct word.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Столик на ___, будь ласка. (two)`}
+    sentence={`1. Столик на ___, будь ласка. (two)`}
     answer={`двох`}
     options={[`двох`, `два`, `дві`, `двоє`]}
   />
@@ -324,6 +327,9 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Café Vocabulary
 
+*Match the Ukrainian with the English.*
+
+
 <MatchUp pairs={[
   { left: `кава`, right: `coffee` },
   { left: `меню`, right: `menu` },
@@ -341,9 +347,12 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Café Scenarios
 
+*Choose the correct response.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`The waiter asks "Що замовите?" You want coffee. You say:`}
+    question={`1. The waiter asks "Що замовите?" You want coffee. You say:`}
     options={[`Каву, будь ласка.`, `Кава, будь ласка.`, `Кави, будь ласка.`, `Кавою, будь ласка.`]}
     correctIndex={0}
     explanation={``}
@@ -418,20 +427,45 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Café Actions
 
+*Sort phrases by dialogue stage.*
+
+
 <GroupSort groups={{
-  "> Sort phrases by dialogue stage.": [
-    "Arriving: Столик на двох",
-    "Arriving: Вільний столик?",
-    "Arriving: Можна меню?",
-    "Ordering: Я візьму каву",
-    "Ordering: Мені латте",
-    "Ordering: Без цукру",
-    "Ordering: З молоком",
-    "Paying: Рахунок будь ласка",
-    "Paying: Карткою",
-    "Paying: Готівкою",
-    "Paying: Окремо",
-    "Leaving: Дякую смачно"
+  "Столик на двох": [
+    "Arriving"
+  ],
+  "Вільний столик?": [
+    "Arriving"
+  ],
+  "Можна меню?": [
+    "Arriving"
+  ],
+  "Я візьму каву": [
+    "Ordering"
+  ],
+  "Мені латте": [
+    "Ordering"
+  ],
+  "Без цукру": [
+    "Ordering"
+  ],
+  "З молоком": [
+    "Ordering"
+  ],
+  "Рахунок будь ласка": [
+    "Paying"
+  ],
+  "Карткою": [
+    "Paying"
+  ],
+  "Готівкою": [
+    "Paying"
+  ],
+  "Окремо": [
+    "Paying"
+  ],
+  "Дякую смачно": [
+    "Leaving"
   ]
 }} />
 
@@ -502,9 +536,12 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Café Words
 
+*Unscramble these café words.*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`а в а к`}
+    scrambled={`1. а в а к`}
     answer={`кава`}
     hint={``}
   />
@@ -567,9 +604,12 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Complete the Order
 
+*Complete the café dialogue.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`— Добрий день! Столик на ___? (one)`}
+    sentence={`1. — Добрий день! Столик на ___? (one)`}
     answer={`одного`}
     options={[`одного`, `один`, `одне`, `одну`]}
   />
@@ -632,9 +672,12 @@ Ukrainian café culture blends Central European traditions with local flavors. T
 
 ### Build Café Sentences
 
+*Arrange the words into correct sentences.*
+
+
 <Unjumble>
   <UnjumbleQuestion
-    words={`Столик / двох / на / будь / ласка`}
+    words={`1. Столик / двох / на / будь / ласка`}
     answer={`Столик на двох, будь ласка.`}
     hint={``}
   />

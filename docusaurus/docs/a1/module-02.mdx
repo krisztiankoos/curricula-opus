@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -161,6 +161,9 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Insect Sounds
 
+*Match the letter to the creature sound.*
+
+
 <MatchUp pairs={[
   { left: `**Щ**`, right: `Frying Bacon (Shch)` },
   { left: `**Ж**`, right: `Buzzing Beetle (Zh)` },
@@ -177,6 +180,9 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 ]} />
 
 ### Vowel Types
+
+*Is it a simple vowel or an "Iotated" (Y+) vowel?*
+
 
 <GroupSort groups={{
   "Iotated (Y + Sound)": [
@@ -202,9 +208,12 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Reading Challenge
 
+*Choose the correct English equivalent.*
+
+
 <Quiz>
   <QuizQuestion
-    question={`Борщ`}
+    question={`1. Борщ`}
     options={[`Borsch`, `Borsh`, `Borch`, `Boss`]}
     correctIndex={0}
     explanation={`The last letter is Щ (Shch).`}
@@ -279,9 +288,12 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Hidden Y Words
 
+*Unscramble to find the word. (Remember: Letter Ї is special!)*
+
+
 <Anagram>
   <AnagramQuestion
-    scrambled={`У к р а ї н а`}
+    scrambled={`1. У к р а ї н а`}
     answer={`Україна`}
     hint={`Ukraine`}
   />
@@ -344,6 +356,9 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Upper to Lower (Unique)
 
+*Match the tricky pairs.*
+
+
 <MatchUp pairs={[
   { left: `**Ж**`, right: `**ж**` },
   { left: `**Б**`, right: `**б**` },
@@ -361,9 +376,12 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Missing Letters
 
+*Complete the words.*
+
+
 <FillIn>
   <FillInQuestion
-    sentence={`Б___рщ (Soup)`}
+    sentence={`1. Б___рщ (Soup)`}
     answer={`о`}
     options={[`о`, `а`, `і`, `у`]}
   />
@@ -426,6 +444,9 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 
 ### Soft Sign
 
+*Which word needs the soft sign (ь)?*
+
+
 <MatchUp pairs={[
   { left: `**Сіль** (Salt)`, right: `**Стіл** (Table)` },
   { left: `**День** (Day)`, right: `**Дон** (River)` },
@@ -442,6 +463,9 @@ This letter has **NO SOUND**. It is a modifier. It tells you to pronounce the pr
 ]} />
 
 ### Alphabet Mastery
+
+*Decide if the statement is True or False.*
+
 
 <TrueFalse>
   <TrueFalseQuestion

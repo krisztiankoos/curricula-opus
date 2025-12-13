@@ -3,16 +3,18 @@ module: 08
 title: "Активні дієприкметники II: -лий та синтетичне майбутнє"
 level: B2
 phase: B2.1a
-estimated_time: 55
-prerequisites:
-  - b2/07-active-participles-present
-theme: "Literary reading"
+duration: 55
+transliteration: none
+tags: participles, past-tense, russisms, synthetic-future
+objectives:
+  - Recognize past active participle forms in literary texts
+  - Distinguish legitimate Ukrainian forms from russisms
+  - Use synthetic future tense in formal writing
+grammar:
+  - Past active participles (-лий forms)
+  - Synthetic future tense
+  - Russism detection and replacement
 pedagogy: TTT
-cefr_can_do:
-  - "Can recognize past active participle forms in literary texts"
-  - "Can distinguish legitimate Ukrainian forms from russisms"
-  - "Can use synthetic future tense in formal writing"
-decolonization_note: "Most past active participles in Ukrainian are considered russisms. This module teaches recognition and highlights legitimate alternatives, supporting authentic Ukrainian expression."
 ---
 
 # Діагностика

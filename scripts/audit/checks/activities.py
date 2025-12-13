@@ -1,0 +1,328 @@
+"""
+Activity-related validation checks.
+
+Validates activity sequencing, structure, variety, and level restrictions.
+"""
+
+import re
+from collections import Counter
+from ..config import STAGE_ORDER, ACTIVITY_RESTRICTIONS
+
+
+def check_activity_sequencing(content: str, pedagogy: str) -> list[dict]:
+    """Check activity sequencing based on PPP or TTT methodology."""
+    violations = []
+
+    # Extract activity stages from headers
+    activity_stages = []
+    for match in re.finditer(
+        r'##\s+\w+[^:]*:\s*[^\[]*\[stage:\s*([^\]]+)\]',
+        content, re.IGNORECASE
+    ):
+        stage = match.group(1).strip().lower()
+        activity_stages.append(stage)
+
+    if not activity_stages:
+        return violations
+
+    # Determine expected order based on pedagogy field
+    method = 'PPP'
+    if pedagogy:
+        pedagogy_upper = pedagogy.upper()
+        if 'TTT' in pedagogy_upper:
+            method = 'TTT'
+        elif 'CLIL' in pedagogy_upper or 'NARRATIVE' in pedagogy_upper:
+            method = 'CLIL'
+    expected_order = STAGE_ORDER.get(method, STAGE_ORDER['PPP'])
+
+    # Check if stages appear in valid order
+    last_valid_idx = -1
+    for stage in activity_stages:
+        if stage in expected_order:
+            current_idx = expected_order.index(stage)
+            if current_idx < last_valid_idx:
+                violations.append({
+                    'type': 'SEQUENCING',
+                    'issue': f"Activity stage '{stage}' appears after later stage (expected {method} order)",
+                    'fix': f"Reorder activities: {' → '.join(expected_order)}"
+                })
+                break
+            last_valid_idx = current_idx
+
+    # Check for production before presentation
+    stages_set = set(activity_stages)
+    if 'free-production' in stages_set and 'presentation' not in content.lower():
+        if method == 'PPP':
+            violations.append({
+                'type': 'SEQUENCING',
+                'issue': "Free-production activity found but no Presentation section",
+                'fix': "Add Presentation section before Practice activities (PPP methodology)"
+            })
+
+    return violations
+
+
+def check_answer_position_bias(content: str) -> list[dict]:
+    """Check if correct answers are always in same position (bias)."""
+    violations = []
+
+    activities = re.findall(
+        r'##\s+(quiz|select|translate)[^#]*?(?=\n##|\n#\s|\Z)',
+        content, re.DOTALL | re.IGNORECASE
+    )
+
+    for activity in activities:
+        if isinstance(activity, tuple):
+            activity = activity[0]
+
+        questions = re.split(r'\n\d+\.', activity)
+        positions = []
+
+        for q in questions:
+            options = re.findall(r'-\s*\[([ xX])\]', q)
+            for i, opt in enumerate(options):
+                if opt.lower() == 'x':
+                    positions.append(i + 1)
+                    break
+
+        if len(positions) >= 4:
+            counts = Counter(positions)
+            most_common_pos, most_common_count = counts.most_common(1)[0]
+            bias_ratio = most_common_count / len(positions)
+
+            if bias_ratio > 0.7:
+                violations.append({
+                    'type': 'ANSWER_BIAS',
+                    'issue': f"Answer position bias detected: {most_common_count}/{len(positions)} ({bias_ratio:.0%}) answers in position {most_common_pos}",
+                    'fix': "Randomize correct answer positions to prevent pattern guessing."
+                })
+
+    return violations
+
+
+def check_activity_variety(content: str) -> list[dict]:
+    """Check if same activity type is used too many times."""
+    violations = []
+
+    activity_types = re.findall(
+        r'##\s*(quiz|match-up|fill-in|true-false|group-sort|unjumble|error-correction|anagram|cloze|select|translate|dialogue-reorder|mark-the-words):',
+        content, re.IGNORECASE
+    )
+
+    if not activity_types:
+        return violations
+
+    type_counts = Counter(t.lower() for t in activity_types)
+    total = len(activity_types)
+
+    for act_type, count in type_counts.items():
+        if count >= 4 and count / total > 0.4:
+            violations.append({
+                'type': 'VARIETY',
+                'issue': f"Activity type '{act_type}' overused: {count}/{total} activities ({count/total:.0%})",
+                'fix': "Use more diverse activity types for better engagement."
+            })
+
+    return violations
+
+
+def check_matchup_misuse(content: str) -> list[dict]:
+    """Detect match-up activities that should be group-sort."""
+    violations = []
+
+    matchup_pattern = r'##\s*match-up:\s*([^\n]+)\n(.*?)(?=\n##|\n#\s|\Z)'
+    matchups = re.findall(matchup_pattern, content, re.DOTALL | re.IGNORECASE)
+
+    sorting_prompts = [
+        r'which\s+(word|one|item)s?\s+(needs?|has|have|is|are|contains?)',
+        r'sort\s+(by|into|the)',
+        r'categoriz|classif|group\s+(the|these)',
+        r'(with|without)\s+(soft sign|ь|apostrophe)',
+        r'які\s+(слова|з них)',
+        r'розсортуй|класифікуй|розділ',
+    ]
+
+    for title, body in matchups:
+        full_text = title + ' ' + body[:200]
+
+        for pattern in sorting_prompts:
+            if re.search(pattern, full_text, re.IGNORECASE):
+                violations.append({
+                    'type': 'ACTIVITY_MISUSE',
+                    'issue': f"match-up '{title.strip()}' appears to be a sorting task",
+                    'fix': "Use group-sort instead. Match-up requires semantic pairs (Ukrainian↔English, Synonym↔Antonym). Sorting by category should be group-sort."
+                })
+                break
+
+        # Check for symmetric pairs
+        rows = re.findall(r'\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|', body)
+        if len(rows) >= 4:
+            symmetric_pairs = 0
+            for left, right in rows:
+                left_clean = re.sub(r'[^а-яіїєґА-ЯІЇЄҐ]', '', left)
+                right_clean = re.sub(r'[^а-яіїєґА-ЯІЇЄҐ]', '', right)
+                if len(left_clean) >= 3 and len(right_clean) >= 3:
+                    if left_clean[:3].lower() == right_clean[:3].lower():
+                        symmetric_pairs += 1
+
+            if symmetric_pairs >= len(rows) * 0.5:
+                already_flagged = any(
+                    v['type'] == 'ACTIVITY_MISUSE' and title.strip() in v.get('issue', '')
+                    for v in violations
+                )
+                if not already_flagged:
+                    violations.append({
+                        'type': 'ACTIVITY_MISUSE',
+                        'issue': f"match-up '{title.strip()}' has symmetric pairs (X vs variant-of-X)",
+                        'fix': "This pattern (same word with/without feature) should be group-sort. Match-up expects different concepts that pair logically."
+                    })
+
+    return violations
+
+
+def check_activity_level_restrictions(content: str, level_code: str, module_num: int) -> list[dict]:
+    """Check if activities are appropriate for the level."""
+    violations = []
+
+    activity_types = re.findall(
+        r'##\s*(quiz|match-up|fill-in|true-false|group-sort|unjumble|error-correction|anagram|cloze|select|translate|dialogue-reorder|mark-the-words):',
+        content, re.IGNORECASE
+    )
+    activity_types = [t.lower() for t in activity_types]
+
+    if not activity_types:
+        return violations
+
+    rules = ACTIVITY_RESTRICTIONS.get(level_code, {})
+
+    # Check forbidden activities
+    for forbidden in rules.get('forbidden', []):
+        if forbidden in activity_types:
+            violations.append({
+                'type': 'LEVEL_RESTRICTION',
+                'issue': f"Activity '{forbidden}' not allowed at {level_code}",
+                'fix': f"Use level-appropriate activities. '{forbidden}' is introduced at A2+."
+            })
+
+    # Check anagram restrictions
+    if 'anagram' in activity_types:
+        if rules.get('anagram_forbidden'):
+            violations.append({
+                'type': 'LEVEL_RESTRICTION',
+                'issue': f"Activity 'anagram' not allowed at {level_code}",
+                'fix': "Anagram is only for A1 M01-M10 (Cyrillic scaffolding). Use unjumble instead."
+            })
+        elif level_code == 'A1' and module_num > rules.get('anagram_limit', 10):
+            violations.append({
+                'type': 'LEVEL_RESTRICTION',
+                'issue': f"Activity 'anagram' should be phased out after A1 M10 (current: M{module_num:02d})",
+                'fix': "Anagram is for Cyrillic scaffolding only. Use unjumble for word-ordering practice."
+            })
+
+    return violations
+
+
+def check_activity_focus_alignment(content: str, level_code: str, module_num: int, frontmatter_str: str) -> list[dict]:
+    """Check if activities align with grammar vs vocabulary focus (B1/B2)."""
+    violations = []
+
+    if level_code not in ['B1', 'B2']:
+        return violations
+
+    # Determine focus
+    is_grammar = False
+    is_vocab = False
+
+    if level_code == 'B1':
+        is_grammar = module_num <= 45
+        is_vocab = module_num > 45
+    elif level_code == 'B2':
+        is_grammar = module_num <= 40
+        is_vocab = module_num > 40
+
+    if 'grammar' in frontmatter_str.lower():
+        is_grammar = True
+        is_vocab = False
+    elif 'vocab' in frontmatter_str.lower() or 'vocabulary' in frontmatter_str.lower():
+        is_vocab = True
+        is_grammar = False
+
+    # Extract activity types
+    activity_types = re.findall(
+        r'##\s*(quiz|match-up|fill-in|true-false|group-sort|unjumble|error-correction|anagram|cloze|select|translate|dialogue-reorder|mark-the-words):',
+        content, re.IGNORECASE
+    )
+    activity_types = [t.lower() for t in activity_types]
+
+    if not activity_types:
+        return violations
+
+    type_counts = Counter(activity_types)
+
+    grammar_priority = ['error-correction', 'fill-in', 'unjumble', 'cloze']
+    vocab_priority = ['match-up', 'mark-the-words', 'translate', 'quiz']
+    vocab_avoid = ['group-sort']
+
+    if is_grammar:
+        priority_count = sum(type_counts.get(t, 0) for t in grammar_priority)
+        total = len(activity_types)
+
+        if priority_count < total * 0.3:
+            violations.append({
+                'type': 'FOCUS_MISMATCH',
+                'issue': f"{level_code} M{module_num:02d} is grammar-focused but lacks grammar-priority activities",
+                'fix': f"Grammar modules should emphasize: {', '.join(grammar_priority)}. Currently only {priority_count}/{total} activities are grammar-focused."
+            })
+
+    elif is_vocab:
+        avoid_count = sum(type_counts.get(t, 0) for t in vocab_avoid)
+        if avoid_count >= 2:
+            violations.append({
+                'type': 'FOCUS_MISMATCH',
+                'issue': f"{level_code} M{module_num:02d} is vocab-focused but uses group-sort ({avoid_count}x)",
+                'fix': "Vocabulary modules should avoid group-sort (cognitive overload when learning new words). Use match-up, mark-the-words, or translate instead."
+            })
+
+    return violations
+
+
+def count_items(text: str) -> int:
+    """Count items in an activity section."""
+    # 1. Numbered Lists
+    numbered = len(re.findall(r'^\s*\d+\.', text, re.MULTILINE))
+
+    # 2. Table Rows (excluding headers and separators)
+    table_lines = [
+        line for line in text.split('\n')
+        if line.strip().startswith('|') and '---' not in line
+    ]
+    table_count = max(0, len(table_lines) - 1) if table_lines else 0
+
+    # 3. Checkboxes
+    checkboxes = len(re.findall(r'^\s*-\s*\[[ xX]?\]', text, re.MULTILINE))
+
+    # 4. Bullets (excluding checkboxes)
+    bullets = len(re.findall(r'^\s*-\s+[^\[]', text, re.MULTILINE))
+
+    # 5. Cloze Placeholders
+    cloze_placeholders = len(re.findall(r'\{\d+\}', text))
+
+    # 6. Mark-the-words Brackets
+    mark_words = len([
+        m for m in re.findall(r'\[([^\]]+)\]', text)
+        if not m.startswith('!') and not re.match(r'[^\]]+\]\(', m)
+    ])
+
+    # Priority Logic
+    if numbered > 0:
+        return numbered
+    elif table_count > 0:
+        return table_count
+    elif cloze_placeholders > 0:
+        return cloze_placeholders
+    elif mark_words > 0:
+        return mark_words
+    elif checkboxes > 0:
+        return checkboxes
+    else:
+        return bullets

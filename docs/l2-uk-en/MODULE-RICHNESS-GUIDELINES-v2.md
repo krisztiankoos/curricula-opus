@@ -13,9 +13,9 @@
 
 | Metric | A1 | A2 | B1-grammar | B1-vocab | B2-grammar | B2-vocab | C1 | C2 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Module Range** | M01-34 | M01-50 | **M01-45** | **M46-80** | **M01-40** | **M41-125** | M01-115 | M01-80 |
+| **Module Range** | M01-30 | M01-50 | **M01-45** | **M46-80** | **M01-40** | **M41-125** | M01-115 | M01-80 |
 | **Core Word Count** | **Graduated*** | **1000+** | **1250+** | **1250+** | **1500+** | **1500+** | **1750+** | **2000+** |
-| **Immersion (% Ukr)** | **Graduated** | **40%** | **50%** | **70%** | **70%** | **85%** | 95% | 100% |
+| **Immersion (% Ukr)** | **10-40%*** | **40-50%** | **50-55%** | **65-70%** | **65-70%** | **80-85%** | 95% | 100% |
 | **Min Vocab Words** | 20+ | 25+ | **20+** | **30+** | **20+** | **30+** | 25+ | 25+ |
 | **Example Sentences** | 12+ | 18+ | 24+ | 24+ | 28+ | 28+ | 30+ | 32+ |
 | **Engagement Boxes** | 3+ | 4+ | 5+ | 5+ | 6+ | 6+ | 7+ | 8+ |
@@ -33,41 +33,39 @@
 > *   **Rationale:** No gamified activities. Focus is on deep reading (Long-form articles, Literary Criticism, Biography).
 > *   **Structure:** Essentially a university seminar reader.
 
-> **Graduated Immersion & Language Policy (A1 Detail):**
-> *   **M01-M10 (First Contact):** **Theory-First Approach.**
->     *   **Ukrainian:** 100% Purity in examples/practice (NO mixed sentences).
->     *   **English:** MANDATORY for detailed Grammar Theory, Phonetic Deep Dives, and Historical Context.
->     *   *Goal:* We cannot have deep Ukrainian narratives with <50 words. We MUST have deep English theory to compensate and set the "Premium" tone.
-> *   **M11-M34 (Navigation):** **Standard Immersion.**
->     *   Transition to 100% Ukrainian Narratives as vocabulary allows.
->     *   English remains for complex grammar explanations and cultural nuances.
+> **Graduated Immersion (A1 Detail) — Tied to Learner Capability:**
+> *   **M01-M05 (Cyrillic):** **10-15%** — Learner cannot read yet. Ukrainian = letters/words being taught. Heavy English for phonetics, alphabet explanation, historical context.
+> *   **M06-M10 (First Words):** **15-25%** — Learner reads but lacks verbs. Ukrainian vocabulary examples, English explanations. No full sentences yet.
+> *   **M11-M20 (First Sentences):** **25-35%** — SVO unlocked. Simple Ukrainian sentences and basic dialogues emerge. English for grammar theory.
+> *   **M21-M30 (Consolidation):** **35-40%** — Short exchanges, mini-scenarios. **MAX 40% for A1.** English for complex explanations only.
 
-> **Immersion Implementation Guide (B1-C2):**
+> **Immersion Implementation Guide (A2-C2):**
 >
 > | Level | Target | Write IN UKRAINIAN | Write IN ENGLISH |
 > |-------|--------|-------------------|------------------|
-> | **B1-grammar** (M01-45) | **50%** | Narratives, dialogues, examples, cultural notes | More English for grammar theory (aspect, motion verbs, complex sentences) |
-> | **B1-vocab** (M46-80) | **70%** | Narratives, dialogues, examples, cultural notes, simple explanations | Limited English for abstract concept definitions |
-> | **B2-grammar** (M01-40) | **70%** | Narratives, dialogues, examples, simple grammar rules | Complex grammar theory (passive voice, participles, register rules) |
-> | **B2-vocab** (M41-125) | **85%** | Narratives, dialogues, all explanations in Ukrainian | Only historical/cultural context requiring English clarification |
-> | **C1** | **95%** | Everything except Language Link boxes | Only `🔗 Language Link` boxes for English-Ukrainian comparison |
-> | **C2** | **100%** | EVERYTHING including all explanations | Nothing — full native immersion |
+> | **A2** (M01-50) | **40-50%** | Dialogues, examples, simple instructions | Grammar theory (all 7 cases, aspect basics), complex explanations |
+> | **B1-grammar** (M01-45) | **50-55%** | Narratives, dialogues, examples, cultural notes | More English for grammar theory (aspect, motion verbs, complex sentences) |
+> | **B1-vocab** (M46-80) | **65-70%** | Narratives, dialogues, examples, cultural notes, simple explanations | Limited English for abstract concept definitions |
+> | **B2-grammar** (M01-40) | **65-70%** | Narratives, dialogues, examples, simple grammar rules | Complex grammar theory (passive voice, participles, register rules) |
+> | **B2-vocab** (M41-125) | **80-85%** | Narratives, dialogues, all explanations in Ukrainian | Only historical/cultural context requiring English clarification |
+> | **C1** (M01-115) | **95%** | Everything except Language Link boxes | Only `🔗 Language Link` boxes for English-Ukrainian comparison |
+> | **C2** (M01-80) | **100%** | EVERYTHING including all explanations | Nothing — full native immersion |
 >
-> **B1-grammar (50%) Concrete Examples:**
+> **B1-grammar (50-55%) Concrete Examples:**
 > *   ✅ UKRAINIAN: "Читав (impf) — тривала дія. Прочитав (pf) — завершена дія." (Examples)
 > *   ✅ UKRAINIAN: All narratives, dialogues, cultural boxes
 > *   ✅ ENGLISH: "The perfective aspect in Ukrainian encodes 'result reached'..." (Complex grammar theory)
 > *   ✅ ENGLISH: Decision frameworks, metalinguistic analysis
 >
-> **B1-vocab (70%) — Higher immersion for vocabulary:**
+> **B1-vocab (65-70%) — Higher immersion for vocabulary:**
 > *   ✅ UKRAINIAN: Narratives, dialogues, examples, simple explanations, cultural boxes
 > *   ✅ ENGLISH: Only abstract concept definitions where needed
 >
-> **B2-grammar (70%) — Ukrainian grammar rules, English for complex theory:**
+> **B2-grammar (65-70%) — Ukrainian grammar rules, English for complex theory:**
 > *   ✅ UKRAINIAN: "Пасивний стан утворюється за допомогою..." (Grammar rules in Ukrainian)
 > *   ✅ ENGLISH: Complex grammar theory (passive voice logic, register distinctions)
 >
-> **B2-vocab (85%) — Near-immersion, transition to C1:**
+> **B2-vocab (80-85%) — Near-immersion, transition to C1:**
 > *   ✅ UKRAINIAN: All narratives, dialogues, explanations, cultural content
 > *   ✅ ENGLISH: Only historical/cultural context requiring English clarification
 >
@@ -1862,8 +1860,113 @@ changelog:
 
 ---
 
+## Automated Pedagogical Checks
+
+The audit script (`python3 scripts/audit_module.py`) runs 11 automated checks that detect pedagogical violations. Violations cause the module to FAIL.
+
+### Grammar Constraint Checks
+
+| Level | Cases Allowed | Cases Forbidden | Aspect | Participles | Subordinate Clauses | Max Sentence Words |
+|-------|---------------|-----------------|--------|-------------|---------------------|--------------------|
+| **A1** | Nom, Acc, Loc, Gen, Voc | Dative, Instrumental | Imperfective only | ❌ | ❌ | 10 |
+| **A2** | All 7 cases | — | Both (introduced) | ❌ | Simple (що, який) | 15 |
+| **B1** | All | — | Full mastery | ❌ | Yes | 25 |
+| **B2** | All | — | Full | ✅ | Yes | 35 |
+| **C1** | All | — | Full | ✅ | Yes | 50 |
+| **C2** | All | — | Full | ✅ | Yes | No limit |
+
+### Quality Assurance Checks
+
+| Check | What It Detects | Threshold | Severity |
+|-------|-----------------|-----------|----------|
+| **Answer Position Bias** | Correct answers always in same position | >70% same position | WARNING |
+| **Duplicate Content** | Copy-pasted sentences | 3+ identical sentences | WARNING |
+| **Activity Variety** | Overuse of single activity type | >40% of activities | WARNING |
+| **IPA Validation** | Invalid IPA symbols in vocabulary table | Any invalid symbol | WARNING |
+| **Gender Agreement** | Adjective-noun gender mismatch | Any mismatch | WARNING |
+| **Case Government** | Preposition + wrong case | Any error | WARNING |
+| **Topic Consistency** | Content doesn't match title/objectives | <30% topic coverage | WARNING |
+| **Vocabulary Violations** | Activity uses undefined words | Any undefined word | **FAIL** |
+| **Activity Misuse** | match-up used for sorting/categorization | Sorting prompt or symmetric pairs | WARNING |
+| **Level Restrictions** | Activity not allowed at level | e.g., anagram after A1 M10 | WARNING |
+| **Focus Mismatch** | B1/B2 activities don't match grammar/vocab focus | <30% priority activities | WARNING |
+
+### Activity Misuse Detection
+
+The audit detects **match-up** activities that should be **group-sort**:
+
+**Red flags for match-up misuse:**
+- Prompt says "Which word needs/has/contains..." → Should be group-sort
+- Prompt says "Sort by..." → Should be group-sort
+- Pairs are "X vs variant-of-X" (e.g., word with feature vs without) → Should be group-sort
+- No semantic relationship between pairs → Wrong activity type
+
+**Example of BAD match-up (should be group-sort):**
+```markdown
+## match-up: Soft Sign
+> Which word needs the soft sign?
+| **Сіль** | **Стіл** |  ← No logical pairing relationship
+| **День** | **Дон** |   ← Same word with/without feature = SORTING
+```
+
+**Correct approach - use group-sort:**
+```markdown
+## group-sort: Soft Sign Recognition
+> Sort words by whether they contain the soft sign (ь).
+
+### Has Soft Sign (ь)
+- Сіль
+- День
+- Осінь
+
+### No Soft Sign
+- Стіл
+- Сон
+- Дон
+```
+
+### Activity Sequencing by Pedagogy
+
+The audit validates that activity stages follow the correct pedagogical sequence:
+
+**PPP (A1-A2):**
+```
+presentation → recognition → discrimination → controlled-production → free-production
+```
+
+**TTT (B1+):**
+```
+diagnostic → recognition → presentation → controlled-production → free-production
+```
+
+**CLIL/Narrative (B1-C2):**
+```
+pre-engagement → immersion → narrative → deep-dive → recognition → controlled-production → free-production
+```
+
+**How to fix:** Add `[stage: xxx]` to activity headers:
+```markdown
+## fill-in: Case Practice [stage: controlled-production]
+## mark-the-words: Find Accusative [stage: recognition]
+## translate: Express the Meaning [stage: free-production]
+```
+
+### Running the Audit
+
+```bash
+python3 scripts/audit_module.py curriculum/l2-uk-en/{level}/module-XX.md
+```
+
+The audit will output:
+- Gate pass/fail status (Words, Activities, Density, etc.)
+- Pedagogical violations with specific FIX suggestions
+- Immersion percentage vs target
+
+---
+
 ## Revision History
 
+- v3.1 (2025-12): Added Automated Pedagogical Checks documentation.
 - v3.0 (2025-12): Maximum Richness alignment with SKILL.md strict standards.
 - v2.0 (2025-12): Consolidated from MODULE-RICHNESS-GUIDELINES.md + ACTIVITY-GUIDELINES.md
 - v1.0 (2024-12): Initial comprehensive plan with CEFR alignment

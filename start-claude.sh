@@ -80,7 +80,10 @@ for level in a1 a2 b1 b2 c1 c2; do
 done
 
 echo "   Skills: grammar-check, module-architect, vocab-enrichment"
-echo "   Commands: npm run generate, npm run vocab:enrich"
+echo "   Commands:"
+echo "       /module-create [level] [num]   - Full pipeline (4 stages)"
+echo "       /module-stage-1..4 [level] [num] - Individual stages"
+echo "       npm run generate, npm run vocab:enrich"
 
 echo ""
 

@@ -16,8 +16,18 @@ claude_extensions/
 │   │   └── SKILL.md
 │   └── vocab-enrichment/      # Vocabulary enrichment skill
 │       └── SKILL.md
+├── stages/                    # Stage instruction files
+│   ├── stage-1-skeleton.md    # Frontmatter + headers + vocabulary
+│   ├── stage-2-content.md     # Rich instructional content
+│   ├── stage-3-activities.md  # Activities generation
+│   └── stage-4-review-fix.md  # Review/fix loop
 └── commands/                  # User-invoked slash commands
-    └── module.md              # Module review/fix/create command
+    ├── module.md              # Module review/fix/create (single-pass)
+    ├── module-create.md       # Full 4-stage pipeline
+    ├── module-stage-1.md      # Stage 1: Skeleton
+    ├── module-stage-2.md      # Stage 2: Content
+    ├── module-stage-3.md      # Stage 3: Activities
+    └── module-stage-4.md      # Stage 4: Review & fix
 ```
 
 ## Deployment
@@ -82,24 +92,50 @@ Enrich vocabulary sections with pronunciation, POS, and usage notes.
 
 ## Available Commands
 
-### /module
-Review, fix, or create Ukrainian curriculum modules.
+### /module-create (Recommended)
+Create a complete module through the 4-stage pipeline.
 
 **Usage:**
 ```
-/module review [MODULE_NUMBER] [LEVEL]
-/module fix [MODULE_NUMBER] [LEVEL]
-/module create [MODULE_NUMBER] [LEVEL] [TITLE]
+/module-create [LEVEL] [MODULE_NUM]
 ```
 
 **Examples:**
 ```
-/module review 11 A1
-/module fix 15 A1
-/module create 31 A2 "The Dative I"
+/module-create a1 15      # Create A1 module 15
+/module-create b2 45      # Create B2 module 45
 ```
 
-Uses the comprehensive prompt at `docs/l2-uk-en/module-prompt.md` which contains all grammar constraints A1-C2 inline.
+### /module-stage-1..4
+Individual stages for manual control.
+
+**Usage:**
+```
+/module-stage-1 [LEVEL] [MODULE]   # Create skeleton
+/module-stage-2 [LEVEL] [MODULE]   # Fill content
+/module-stage-3 [LEVEL] [MODULE]   # Add activities
+/module-stage-4 [LEVEL] [MODULE]   # Review & fix loop
+```
+
+**Examples:**
+```
+/module-stage-1 a1 15     # Create skeleton with vocabulary
+/module-stage-2 a1 15     # Add rich content
+/module-stage-3 a1 15     # Generate activities
+/module-stage-4 a1 15     # Review and fix until PASS
+```
+
+### /module (Legacy)
+Single-pass module review/fix/create.
+
+**Usage:**
+```
+/module review [LEVEL] [MODULE]
+/module fix [LEVEL] [MODULE]
+/module create [LEVEL] [MODULE] [TITLE]
+```
+
+See `docs/STAGED-MODULE-CREATION.md` for detailed documentation on the 4-stage pipeline.
 
 ---
 
@@ -126,6 +162,34 @@ Uses the comprehensive prompt at `docs/l2-uk-en/module-prompt.md` which contains
 4. Deploy with `npm run claude:deploy`
 5. Use: `/your-command [args]`
 
+## Using with Different Clients
+
+### Terminal (Claude CLI)
+```bash
+# Start with auto-deploy
+./start-claude.sh
+
+# Or manual
+npm run claude:deploy
+claude
+```
+
+Then use slash commands: `/module-create a1 15`
+
+### VSCode (Claude Code Extension)
+1. Open this project in VSCode
+2. Run `npm run claude:deploy` in terminal
+3. Open Claude Code panel (Cmd+Shift+P → "Claude Code")
+4. Use slash commands in the chat
+
+### Antigravity
+1. Open Antigravity and navigate to this project directory
+2. The `.claude/` folder should be detected automatically
+3. If not, run `npm run claude:deploy` first
+4. Use slash commands in the Antigravity chat
+
+**Tip:** The `start-claude.sh` script auto-deploys on startup. Run it once to ensure `.claude/` is populated.
+
 ## Notes
 
 - `.claude/` is gitignored (local only)
@@ -133,3 +197,4 @@ Uses the comprehensive prompt at `docs/l2-uk-en/module-prompt.md` which contains
 - Skills are auto-invoked by Claude when relevant
 - Commands are invoked by user with `/command-name`
 - Restart Claude Code after deploying new extensions
+- Run `npm run claude:deploy` after pulling changes

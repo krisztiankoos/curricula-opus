@@ -16,7 +16,10 @@ from .grammar import (
 )
 from .vocabulary import (
     extract_vocab_from_section,
+    extract_vocab_items,
     check_vocab_violations,
+    get_cumulative_vocab,
+    sync_vocab_to_db,
 )
 from .activities import (
     check_activity_sequencing,
@@ -138,10 +141,18 @@ def run_pedagogical_checks(
     if level_code not in ('B2', 'C1', 'C2', 'LIT'):
         all_violations.extend(check_sentence_complexity(core_content, level_code))
 
-    # 3. Vocabulary violations (skip for C1/C2/LIT - advanced levels, vocab database not yet populated)
+    # 3. Vocabulary sync and validation
+    # Always sync vocabulary to database (keeps DB in sync with modules)
+    vocab_items = extract_vocab_items(content)
+    if vocab_items and level_code not in ('LIT',):
+        sync_vocab_to_db(level_code, module_num, vocab_items)
+
+    # Check vocabulary violations (skip for C1/C2/LIT - advanced levels)
     if level_code not in ('C1', 'C2', 'LIT'):
         vocab_words = extract_vocab_from_section(content)
-        all_violations.extend(check_vocab_violations(content, core_content, vocab_words))
+        # Get cumulative vocabulary from database (words from previous modules)
+        cumulative_vocab = get_cumulative_vocab(level_code, module_num)
+        all_violations.extend(check_vocab_violations(content, core_content, vocab_words, cumulative_vocab))
 
     # 4. Activity sequencing
     all_violations.extend(check_activity_sequencing(content, pedagogy))

@@ -16,7 +16,10 @@ from .grammar import (
 )
 from .vocabulary import (
     extract_vocab_from_section,
+    extract_vocab_items,
     check_vocab_violations,
+    get_cumulative_vocab,
+    sync_vocab_to_db,
 )
 from .activities import (
     check_activity_sequencing,
@@ -42,7 +45,10 @@ __all__ = [
     'check_case_government',
     # Vocabulary
     'extract_vocab_from_section',
+    'extract_vocab_items',
     'check_vocab_violations',
+    'get_cumulative_vocab',
+    'sync_vocab_to_db',
     # Activities
     'check_activity_sequencing',
     'check_answer_position_bias',

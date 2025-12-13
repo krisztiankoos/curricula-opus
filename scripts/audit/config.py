@@ -348,6 +348,12 @@ COMMON_WORDS = {
     # Ukrainian-specific high-frequency
     'українська', 'український', 'українське', 'українські', 'україна', 'україні', 'україни',
     'мова', 'мови', 'мову', 'мовою', 'мовна', 'мовний', 'мовне',
+    # Common foods and household items (often used as examples)
+    'сіль', 'солі', 'сіллю', 'цукор', 'цукру',
+    # Common names
+    'анна', 'ганна', 'іван', 'марія', 'петро', 'оксана', 'тарас',
+    # Parsing artifact fragments (from Cyrillic letter splitting)
+    'вропа', 'мать',  # artifacts from "Європа", "(mother)"
 }
 
 # Required frontmatter fields

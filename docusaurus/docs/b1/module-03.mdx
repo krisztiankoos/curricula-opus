@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -384,28 +384,372 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 <Quiz>
   <QuizQuestion
-    question={`Визначте, що описує кожне речення — результат чи процес.`}
-    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`, `процес`, `результат`, `і те, і те`, `неможливо визначити`]}
-    correctIndex={52}
+    question={`Він прочитав книгу вчора.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона готувала обід три години.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я нарешті знайшов ключі!`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ми чекали на тебе весь вечір.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вони щойно повернулися.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Діти бігали по парку годину.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Він написав звіт за дві години.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона читала журнал у кафе.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ми вже поснідали.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Він думав про це цілий тиждень.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона тільки що подзвонила.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я вивчав українську протягом року.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Нарешті він купив квартиру.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вони співали пісні весь вечір.`}
+    options={[`процес`, `результат`, `і те, і те`, `неможливо визначити`]}
+    correctIndex={0}
     explanation={``}
   />
 </Quiz>
 
+### Маркер і вид
 
+<MatchUp pairs={[
+  { left: `весь день`, right: `недоконаний` },
+  { left: `нарешті`, right: `доконаний` },
+  { left: `протягом`, right: `недоконаний` },
+  { left: `щойно`, right: `доконаний` },
+  { left: `годину`, right: `недоконаний` },
+  { left: `вже`, right: `доконаний` },
+  { left: `цілий тиждень`, right: `недоконаний` },
+  { left: `тільки що`, right: `доконаний` },
+  { left: `довго`, right: `недоконаний` },
+  { left: `за годину`, right: `доконаний` },
+  { left: `поступово`, right: `недоконаний` },
+  { left: `до вечора`, right: `доконаний` },
+  { left: `весь час`, right: `недоконаний` },
+  { left: `під час`, right: `недоконаний` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`Вона ___ обід весь день. (готувала / приготувала)`}
+    answer={`готувала`}
+    options={[`готувала`, `приготувала`]}
+  />
+  <FillInQuestion
+    sentence={`Він нарешті ___ цю книгу. (читав / прочитав)`}
+    answer={`прочитав`}
+    options={[`читав`, `прочитав`]}
+  />
+  <FillInQuestion
+    sentence={`Я ___ листа годину. (писав / написав)`}
+    answer={`писав`}
+    options={[`писав`, `написав`]}
+  />
+  <FillInQuestion
+    sentence={`Вони вже ___ до Києва. (їхали / приїхали)`}
+    answer={`приїхали`}
+    options={[`їхали`, `приїхали`]}
+  />
+  <FillInQuestion
+    sentence={`Ми ___ на тебе весь вечір. (чекали / дочекалися)`}
+    answer={`чекали`}
+    options={[`чекали`, `дочекалися`]}
+  />
+  <FillInQuestion
+    sentence={`Вона тільки що ___ з роботи. (поверталася / повернулася)`}
+    answer={`повернулася`}
+    options={[`поверталася`, `повернулася`]}
+  />
+  <FillInQuestion
+    sentence={`Діти ___ у парку цілий день. (грали / пограли)`}
+    answer={`грали`}
+    options={[`грали`, `пограли`]}
+  />
+  <FillInQuestion
+    sentence={`Я ___ цей фільм за один вечір. (дивився / подивився)`}
+    answer={`подивився`}
+    options={[`дивився`, `подивився`]}
+  />
+  <FillInQuestion
+    sentence={`Він ___ про це довго. (думав / подумав)`}
+    answer={`думав`}
+    options={[`думав`, `подумав`]}
+  />
+  <FillInQuestion
+    sentence={`Вона щойно ___ вечерю. (готувала / приготувала)`}
+    answer={`приготувала`}
+    options={[`готувала`, `приготувала`]}
+  />
+  <FillInQuestion
+    sentence={`Ми ___ українську протягом року. (вивчали / вивчили)`}
+    answer={`вивчали`}
+    options={[`вивчали`, `вивчили`]}
+  />
+  <FillInQuestion
+    sentence={`Він ___ звіт за два дні. (писав / написав)`}
+    answer={`написав`}
+    options={[`писав`, `написав`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ___ книги весь вечір. (читала / прочитала)`}
+    answer={`читала`}
+    options={[`читала`, `прочитала`]}
+  />
+  <FillInQuestion
+    sentence={`Я вже ___ цю вправу. (робив / зробив)`}
+    answer={`зробив`}
+    options={[`робив`, `зробив`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`книгу | прочитав | він | нарешті`}
+    answer={`Він нарешті прочитав книгу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`весь | працювала | день | вона`}
+    answer={`Вона працювала весь день.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вже | обід | ми | поснідали | до`}
+    answer={`Ми вже поснідали до обіду.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`годину | чекав | я | на | тебе`}
+    answer={`Я чекав на тебе годину.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`тільки | подзвонив | він | що`}
+    answer={`Він тільки що подзвонив.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`протягом | вивчала | вона | року | мову`}
+    answer={`Вона вивчала мову протягом року.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`тиждень | готувався | він | цілий`}
+    answer={`Він готувався цілий тиждень.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`щойно | закінчили | вони | роботу`}
+    answer={`Вони щойно закінчили роботу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`довго | про | думав | це | я`}
+    answer={`Я довго думав про це.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`за | написала | вона | статтю | день`}
+    answer={`Вона написала статтю за день.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`поступово | ситуація | змінювалася`}
+    answer={`Ситуація змінювалася поступово.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`весь | співали | вони | вечір`}
+    answer={`Вони співали весь вечір.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`нарешті | мету | досягла | вона`}
+    answer={`Вона нарешті досягла мету.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`під | читав | він | час | уроку`}
+    answer={`Він читав під час уроку.`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Вона приготувала обід три години.`}
+    error={``}
+    answer={`Вона готувала обід три години.`}
+    options={[]}
+    explanation={`Тривалість (три години) вимагає недоконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він прочитав книгу весь вечір.`}
+    error={``}
+    answer={`Він читав книгу весь вечір.`}
+    options={[]}
+    explanation={`"Весь вечір" — маркер процесу, потрібен недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я писав звіт за дві години.`}
+    error={``}
+    answer={`Я написав звіт за дві години.`}
+    options={[]}
+    explanation={`"За + час" вказує на результат, потрібен доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона вивчила українську протягом року.`}
+    error={``}
+    answer={`Вона вивчала українську протягом року.`}
+    options={[]}
+    explanation={`"Протягом" — маркер тривалості процесу.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він думав і нарешті подумав.`}
+    error={``}
+    answer={`Він думав і нарешті вирішив.`}
+    options={[]}
+    explanation={`"Подумав" не є результативною формою для "думав"; краще "вирішив".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми чекали і дочекалися за годину.`}
+    error={``}
+    answer={`Ми чекали годину і дочекалися.`}
+    options={[]}
+    explanation={`Тривалість стосується "чекали", а не "дочекалися".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона готувала борщ і вже приготувала.`}
+    error={``}
+    answer={`Вона готувала борщ і вже приготувала його.`}
+    options={[]}
+    explanation={`Потрібен додаток "його" для завершеності.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він написав статтю цілий тиждень.`}
+    error={``}
+    answer={`Він писав статтю цілий тиждень.`}
+    options={[]}
+    explanation={`"Цілий тиждень" — тривалість, недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вони їхали до Львова і приїхали довго.`}
+    error={``}
+    answer={`Вони довго їхали до Львова і приїхали.`}
+    options={[]}
+    explanation={`"Довго" стосується процесу "їхали", а не "приїхали".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я вивчав і вивчив за місяць.`}
+    error={``}
+    answer={`Я вивчав місяць і вивчив.`}
+    options={[]}
+    explanation={`Тривалість стосується "вивчав".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона працювала і нарешті працювала.`}
+    error={``}
+    answer={`Вона працювала і нарешті закінчила.`}
+    options={[]}
+    explanation={`Потрібен доконаний вид після "нарешті".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він дивився фільм і подивився за годину.`}
+    error={``}
+    answer={`Він дивився фільм і подивився його за годину.`}
+    options={[]}
+    explanation={`"За годину" показує результат, додаток "його" уточнює.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми грали годину і пограли.`}
+    error={``}
+    answer={`Ми грали годину, а потім пограли ще трохи.`}
+    options={[]}
+    explanation={`Потрібен контекст для другої дії.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона читала і прочитала книгу під час.`}
+    error={``}
+    answer={`Вона читала книгу під час обіду.`}
+    options={[]}
+    explanation={`Потрібен іменник після "під час".`}
+  />
+</ErrorCorrection>
 
 ### Робочий ранок Олега
 
-<Cloze
-  passage={`Вставте правильну форму дієслова.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму дієслова.
 Олег весь ранок [___:1] над проєктом. Він [___:2] за комп'ютером годину, потім [___:3] перерву. Під час перерви він [___:4] каву і [___:5] про план. Нарешті він [___:6] головну проблему. Він [___:7] код за дві години. Увечері він [___:8] на результат і [___:9], що [___:10] мети. Весь день він [___:11] наполегливо, але це [___:12]. Тепер він [___:13] і [___:14] до завтрашнього дня.`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "працював",
       "попрацював"
@@ -413,6 +757,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "працював"
   },
   {
+    "index": 1,
     "options": [
       "сидів",
       "посидів"
@@ -420,6 +765,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "сидів"
   },
   {
+    "index": 2,
     "options": [
       "робив",
       "зробив"
@@ -427,6 +773,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "зробив"
   },
   {
+    "index": 3,
     "options": [
       "пив",
       "випив"
@@ -434,6 +781,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "пив"
   },
   {
+    "index": 4,
     "options": [
       "думав",
       "подумав"
@@ -441,6 +789,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "думав"
   },
   {
+    "index": 5,
     "options": [
       "вирішував",
       "вирішив"
@@ -448,6 +797,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "вирішив"
   },
   {
+    "index": 6,
     "options": [
       "писав",
       "написав"
@@ -455,6 +805,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "написав"
   },
   {
+    "index": 7,
     "options": [
       "дивився",
       "подивився"
@@ -462,6 +813,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "подивився"
   },
   {
+    "index": 8,
     "options": [
       "розумів",
       "зрозумів"
@@ -469,6 +821,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "зрозумів"
   },
   {
+    "index": 9,
     "options": [
       "досягав",
       "досяг"
@@ -476,6 +829,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "досяг"
   },
   {
+    "index": 10,
     "options": [
       "працював",
       "попрацював"
@@ -483,6 +837,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "працював"
   },
   {
+    "index": 11,
     "options": [
       "було варто",
       "варто"
@@ -490,6 +845,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "було варто"
   },
   {
+    "index": 12,
     "options": [
       "відпочиває",
       "відпочив"
@@ -497,6 +853,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "відпочиває"
   },
   {
+    "index": 13,
     "options": [
       "готується",
       "підготувався"
@@ -504,7 +861,8 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "готується"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть маркери результату
 
@@ -533,215 +891,225 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Я прочитав книгу весь вечір.`, `Я читав книгу весь вечір.`, `Я читав книгу за вечір.`, `Я прочитав книгу за вечір.`, `Вона нарешті писала статтю.`, `Вона нарешті написала статтю.`, `Вона писала статтю нарешті.`, `Вона написала статтю довго.`, `Він попрацював над проєктом місяць.`, `Він працював над проєктом місяць.`, `Він попрацював над проєктом за місяць.`, `Він працював над проєктом за місяць.`, `Вони приїжджали щойно.`, `Вони щойно приїхали.`, `Вони їхали щойно.`, `Вони їздили щойно.`, `Я написав звіт за дві години.`, `Я писав звіт дві години.`, `Я писав звіт за дві години.`, `Я написав звіт дві години.`, `Вона приготувала вечерю три години.`, `Вона готувала вечерю три години.`, `Вона приготувала вечерю за три години.`, `Вона готувала вечерю за три години.`, `Він снідав вже.`, `Він вже поснідав.`, `Він снідав.`, `Він поснідав довго.`, `Ми чекали на тебе весь день.`, `Ми дочекалися тебе весь день.`, `Ми почекали на тебе весь день.`, `Ми чекали на тебе за день.`, `Я подумав про це довго.`, `Я думав про це довго.`, `Я подумав про це за довгий час.`, `Я думав про це за довгий час.`, `Вона дзвонила тільки що.`, `Вона тільки що подзвонила.`, `Вона дзвонила.`, `Вона подзвонила довго.`, `Вони вивчили українську рік.`, `Вони вивчали українську рік.`, `Вони вивчили українську за рік.`, `Вони вивчали українську за рік.`, `Він прочитав книгу за один вечір.`, `Він читав книгу один вечір.`, `Він читав книгу за один вечір.`, `Він прочитав книгу один вечір.`, `Ситуація змінилася поступово.`, `Ситуація змінювалася поступово.`, `Ситуація змінилася за поступово.`, `Ситуація змінювалася за поступово.`, `Я досягав мети нарешті.`, `Я нарешті досяг мети.`, `Я досягав мети довго.`, `Я досяг мети довго.`]}
-    correctIndex={53}
+    source={`I was reading the book all evening.`}
+    answer={`Я читав книгу весь вечір.`}
+    options={[`Я прочитав книгу весь вечір.`, `Я читав книгу весь вечір.`, `Я читав книгу за вечір.`, `Я прочитав книгу за вечір.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She finally finished the article.`}
+    answer={`Вона нарешті написала статтю.`}
+    options={[`Вона нарешті писала статтю.`, `Вона нарешті написала статтю.`, `Вона писала статтю нарешті.`, `Вона написала статтю довго.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He worked on the project for a month.`}
+    answer={`Він працював над проєктом місяць.`}
+    options={[`Він попрацював над проєктом місяць.`, `Він працював над проєктом місяць.`, `Він попрацював над проєктом за місяць.`, `Він працював над проєктом за місяць.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They have just arrived.`}
+    answer={`Вони щойно приїхали.`}
+    options={[`Вони приїжджали щойно.`, `Вони щойно приїхали.`, `Вони їхали щойно.`, `Вони їздили щойно.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I wrote the report in two hours.`}
+    answer={`Я написав звіт за дві години.`}
+    options={[`Я написав звіт за дві години.`, `Я писав звіт дві години.`, `Я писав звіт за дві години.`, `Я написав звіт дві години.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She was cooking dinner for three hours.`}
+    answer={`Вона готувала вечерю три години.`}
+    options={[`Вона приготувала вечерю три години.`, `Вона готувала вечерю три години.`, `Вона приготувала вечерю за три години.`, `Вона готувала вечерю за три години.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He has already eaten breakfast.`}
+    answer={`Він вже поснідав.`}
+    options={[`Він снідав вже.`, `Він вже поснідав.`, `Він снідав.`, `Він поснідав довго.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`We waited for you all day.`}
+    answer={`Ми чекали на тебе весь день.`}
+    options={[`Ми чекали на тебе весь день.`, `Ми дочекалися тебе весь день.`, `Ми почекали на тебе весь день.`, `Ми чекали на тебе за день.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I thought about it for a long time.`}
+    answer={`Я думав про це довго.`}
+    options={[`Я подумав про це довго.`, `Я думав про це довго.`, `Я подумав про це за довгий час.`, `Я думав про це за довгий час.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She just called.`}
+    answer={`Вона тільки що подзвонила.`}
+    options={[`Вона дзвонила тільки що.`, `Вона тільки що подзвонила.`, `Вона дзвонила.`, `Вона подзвонила довго.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They studied Ukrainian for a year.`}
+    answer={`Вони вивчали українську рік.`}
+    options={[`Вони вивчили українську рік.`, `Вони вивчали українську рік.`, `Вони вивчили українську за рік.`, `Вони вивчали українську за рік.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He finished the book in one evening.`}
+    answer={`Він прочитав книгу за один вечір.`}
+    options={[`Він прочитав книгу за один вечір.`, `Він читав книгу один вечір.`, `Він читав книгу за один вечір.`, `Він прочитав книгу один вечір.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`The situation was changing gradually.`}
+    answer={`Ситуація змінювалася поступово.`}
+    options={[`Ситуація змінилася поступово.`, `Ситуація змінювалася поступово.`, `Ситуація змінилася за поступово.`, `Ситуація змінювалася за поступово.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I finally achieved my goal.`}
+    answer={`Я нарешті досяг мети.`}
+    options={[`Я досягав мети нарешті.`, `Я нарешті досяг мети.`, `Я досягав мети довго.`, `Я досяг мети довго.`]}
     explanation={``}
   />
 </Translate>
 
 ### Розмова про роботу
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Привіт! Як справи на роботі?"
+    "line": "Привіт! Як справи на роботі?"
   },
   {
     "speaker": "B",
-    "text": "Добре, але я працював над звітом весь тиждень."
+    "line": "Добре, але я працював над звітом весь тиждень."
   },
   {
     "speaker": "A",
-    "text": "І як? Закінчив?"
+    "line": "І як? Закінчив?"
   },
   {
     "speaker": "B",
-    "text": "Так, нарешті написав його вчора!"
+    "line": "Так, нарешті написав його вчора!"
   },
   {
     "speaker": "A",
-    "text": "Молодець! Скільки часу ти на нього витратив?"
+    "line": "Молодець! Скільки часу ти на нього витратив?"
   },
   {
     "speaker": "B",
-    "text": "Загалом писав його два тижні."
+    "line": "Загалом писав його два тижні."
   },
   {
     "speaker": "A",
-    "text": "Але написав за останній день?"
+    "line": "Але написав за останній день?"
   },
   {
     "speaker": "B",
-    "text": "Ні, писав кожен день, а вчора нарешті закінчив."
+    "line": "Ні, писав кожен день, а вчора нарешті закінчив."
   },
   {
     "speaker": "A",
-    "text": "Зрозуміло. Процес тривав довго, а результат — учора."
+    "line": "Зрозуміло. Процес тривав довго, а результат — учора."
   },
   {
     "speaker": "B",
-    "text": "Саме так! Тепер відпочиваю."
+    "line": "Саме так! Тепер відпочиваю."
   },
   {
     "speaker": "A",
-    "text": "Заслужено! Ти довго працював."
+    "line": "Заслужено! Ти довго працював."
   },
   {
     "speaker": "B",
-    "text": "Дякую! Але завтра вже починаю новий проєкт."
+    "line": "Дякую! Але завтра вже починаю новий проєкт."
   },
   {
     "speaker": "A",
-    "text": "Успіхів! Сподіваюся, напишеш його швидше."
+    "line": "Успіхів! Сподіваюся, напишеш його швидше."
   },
   {
     "speaker": "B",
-    "text": "Я теж сподіваюся!"
+    "line": "Я теж сподіваюся!"
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Маркер "весь день" завжди вимагає недоконаного виду.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Після "нарешті" можна використовувати тільки доконаний вид.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"За годину" означає те саме, що "годину".`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Недоконаний вид показує процес у часі.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Доконаний вид можна використовувати з "протягом".`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Вже" сигналізує про завершений результат.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Поступово" вимагає доконаного виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Вибір виду залежить тільки від граматики, не від контексту.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Тільки що" і "щойно" означають нещодавній результат.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Прийменник "до" (deadline) зазвичай вимагає доконаного виду.`}
+    isTrue={true}
+    explanation={``}
+  />
+  <TrueFalseQuestion
+    statement={`"Під час" вимагає доконаного виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Недоконаний вид може описувати фон оповіді.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Доконаний вид прискорює темп оповіді.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Довго" завжди поєднується з недоконаним видом.`}
     isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
     explanation={``}
   />
 </TrueFalse>
@@ -749,22 +1117,23 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 ### Розсортуйте маркери
 
 <GroupSort groups={{
-  "Розподіліть маркери за видом дієслова.": [
-    "весь день: Недоконаний (процес)",
-    "нарешті: Доконаний (результат)",
-    "протягом: Недоконаний (процес)",
-    "щойно: Доконаний (результат)",
-    "годину: Недоконаний (процес)",
-    "вже: Доконаний (результат)",
-    "цілий тиждень: Недоконаний (процес)",
-    "тільки що: Доконаний (результат)",
-    "довго: Недоконаний (процес)",
-    "за годину: Доконаний (результат)",
-    "поступово: Недоконаний (процес)",
-    "до вечора: Доконаний (результат)",
-    "весь час: Недоконаний (процес)",
-    "під час: Недоконаний (процес)",
-    "--"
+  "Недоконаний (процес)": [
+    "весь день",
+    "протягом",
+    "годину",
+    "цілий тиждень",
+    "довго",
+    "поступово",
+    "весь час",
+    "під час"
+  ],
+  "Доконаний (результат)": [
+    "нарешті",
+    "щойно",
+    "вже",
+    "тільки що",
+    "за годину",
+    "до вечора"
   ]
 }} />
 

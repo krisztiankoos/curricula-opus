@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands **work and profession vocabulary** — jobs, workplaces, car
 
 # Warm-up
 
-> 💡 **Ukrainian Professions:** From лікар (doctor) to програміст (programmer), from офіс (office) to фабрика (factory) — describe the entire world of work in Ukrainian!
+> 💡 **Ukrainian Professions:** From лікар to програміст, from офіс to фабрика — describe the entire world of work in Ukrainian!
 
 ---
 
@@ -106,7 +106,7 @@ This module expands **work and profession vocabulary** — jobs, workplaces, car
 | наймати | to hire |
 | заробляти | to earn |
 
-> 🌍 **Real World:** In Ukraine, the word **колега** (colleague) is often used with warmth. People spend a lot of time at work, so colleagues often become friends. "Мої колеги — як родина!" (My colleagues are like family!)
+> 🌍 **Real World:** In Ukraine, the word **колега** is often used with warmth. People spend a lot of time at work, so colleagues often become friends. "Мої колеги — як родина!" (My colleagues are like family!)
 
 ---
 
@@ -194,7 +194,7 @@ I plan to develop further. Maybe someday I'll start my own business. But for now
 
 ---
 
-> 🎯 **Fun Fact:** The word **робота** (work) comes from the old Slavic word "rab" meaning servant/slave. Interestingly, the English word "robot" was invented by Czech writer Karel Čapek — and it comes from the same Slavic root!
+> 🎯 **Fun Fact:** The word **робота** comes from the old Slavic word "rab" meaning servant/slave. Interestingly, the English word "robot" was invented by Czech writer Karel Čapek — and it comes from the same Slavic root!
 
 ---
 
@@ -401,28 +401,30 @@ I plan to develop further. Maybe someday I'll start my own business. But for now
 
 ### Put the Conversation in Order [stage:controlled]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Чудово. Ми зателефонуємо вам наступного тижня."
+    "line": "Чудово. Ми зателефонуємо вам наступного тижня."
   },
   {
     "speaker": "B",
-    "text": "Розкажіть про свій досвід роботи."
+    "line": "Розкажіть про свій досвід роботи."
   },
   {
     "speaker": "C",
-    "text": "Дякую за можливість. Чекатиму!"
+    "line": "Дякую за можливість. Чекатиму!"
   },
   {
     "speaker": "D",
-    "text": "Доброго дня! Сідайте, будь ласка."
+    "line": "Доброго дня! Сідайте, будь ласка."
   },
   {
     "speaker": "E",
-    "text": "Я працював менеджером три роки. Керував командою з п'яти людей."
+    "line": "Я працював менеджером три роки. Керував командою з п'яти людей."
   }
 ]} />
+</DialogueReorder>
 
 ### Profession → Workplace [stage:discrimination]
 

@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands **technology and media vocabulary** — devices, internet, s
 
 # Warm-up
 
-> 💡 **Digital Ukraine:** Ukraine has a thriving IT industry! Many Ukrainians work as програмісти (programmers) and the country is known for innovative tech startups. Learning tech vocabulary opens doors to this dynamic world!
+> 💡 **Digital Ukraine:** Ukraine has a thriving IT industry! Many Ukrainians work as програмісти and the country is known for innovative tech startups. Learning tech vocabulary opens doors to this dynamic world!
 
 ---
 
@@ -51,7 +51,7 @@ This module expands **technology and media vocabulary** — devices, internet, s
 | зарядка | charger |
 
 > [!observe]
-> Many tech words are borrowed from English: **комп'ютер** (computer), **ноутбук** (notebook/laptop), **смартфон** (smartphone). They're easy to recognize but may have Ukrainian endings!
+> Many tech words are borrowed from English: **комп'ютер**, **ноутбук** (notebook/laptop), **смартфон**. They're easy to recognize but may have Ukrainian endings!
 
 ---
 
@@ -395,28 +395,30 @@ Technology helps work, study, and relax. But I try to take breaks and spend time
 
 ### Put the Conversation in Order [stage:controlled]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Дякую! Зараз спробую."
+    "line": "Дякую! Зараз спробую."
   },
   {
     "speaker": "B",
-    "text": "Здрасте! У мене проблема з ноутбуком."
+    "line": "Здрасте! У мене проблема з ноутбуком."
   },
   {
     "speaker": "C",
-    "text": "Що саме не працює?"
+    "line": "Що саме не працює?"
   },
   {
     "speaker": "D",
-    "text": "Спробуйте перезавантажити. Якщо не допоможе, зателефонуйте знову."
+    "line": "Спробуйте перезавантажити. Якщо не допоможе, зателефонуйте знову."
   },
   {
     "speaker": "E",
-    "text": "Не можу підключитися до інтернету. Пароль правильний."
+    "line": "Не можу підключитися до інтернету. Пароль правильний."
   }
 ]} />
+</DialogueReorder>
 
 ### Action → Device [stage:discrimination]
 

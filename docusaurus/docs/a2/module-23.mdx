@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -95,7 +95,7 @@ But in past reporting, tense MAY shift:
 
 ## 🎯 Reporting Questions
 
-For yes/no questions, use **чи** (whether):
+For yes/no questions, use **чи**:
 | Direct | Indirect |
 |--------|----------|
 | "Ти прийдеш?" | Він питає, **чи** я прийду. |
@@ -676,56 +676,58 @@ She said that she'll come at two. I promised that I'll be on time. She warned th
 
 ### Office Relay
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "А",
-    "text": "Що сказав директор?"
+    "line": "Що сказав директор?"
   },
   {
     "speaker": "Б",
-    "text": "Він сказав, що зустріч буде о третій."
+    "line": "Він сказав, що зустріч буде о третій."
   },
   {
     "speaker": "А",
-    "text": "Де?"
+    "line": "Де?"
   },
   {
     "speaker": "Б",
-    "text": "Він сказав, що в конференц-залі."
+    "line": "Він сказав, що в конференц-залі."
   },
   {
     "speaker": "А",
-    "text": "Про що?"
+    "line": "Про що?"
   },
   {
     "speaker": "Б",
-    "text": "Він пояснив, що хоче обговорити проєкт."
+    "line": "Він пояснив, що хоче обговорити проєкт."
   },
   {
     "speaker": "А",
-    "text": "Усі мають бути?"
+    "line": "Усі мають бути?"
   },
   {
     "speaker": "Б",
-    "text": "Він сказав, що обов'язково."
+    "line": "Він сказав, що обов'язково."
   },
   {
     "speaker": "А",
-    "text": "А Петро?"
+    "line": "А Петро?"
   },
   {
     "speaker": "Б",
-    "text": "Директор сказав, що Петро може онлайн."
+    "line": "Директор сказав, що Петро може онлайн."
   },
   {
     "speaker": "А",
-    "text": "Добре. Ти передаси Петру?"
+    "line": "Добре. Ти передаси Петру?"
   },
   {
     "speaker": "Б",
-    "text": "Уже передав. Він сказав, що буде."
+    "line": "Уже передав. Він сказав, що буде."
   }
 ]} />
+</DialogueReorder>
 
 ### Find Reported Speech
 

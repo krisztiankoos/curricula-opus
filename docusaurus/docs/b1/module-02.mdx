@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -962,11 +962,13 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 ### Історія одного дня [stage: controlled-production]
 
-<Cloze
-  passage={`Того дня все [___:1] по-іншому. Звичайно він [___:2] о сьомій, але того ранку він [___:3] раніше. Зазвичай він [___:4] каву, але того дня він [___:5] чай. Він завжди [___:6] на роботу автобусом, але того разу він [___:7] пішки.
+<Cloze>
+  <ClozePassage
+    text={`Того дня все [___:1] по-іншому. Звичайно він [___:2] о сьомій, але того ранку він [___:3] раніше. Зазвичай він [___:4] каву, але того дня він [___:5] чай. Він завжди [___:6] на роботу автобусом, але того разу він [___:7] пішки.
 На роботі зазвичай все [___:8] спокійно. Але того дня шеф [___:9] його до кабінету і [___:10] важливу новину. Він часто [___:11] про підвищення, але не [___:12], що це станеться так швидко. Нарешті він [___:13] те, про що довго [___:14].`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "було",
       "є",
@@ -975,6 +977,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "було"
   },
   {
+    "index": 1,
     "options": [
       "прокидався",
       "прокинувся",
@@ -983,6 +986,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "прокидався"
   },
   {
+    "index": 2,
     "options": [
       "прокинувся",
       "прокидався",
@@ -991,6 +995,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "прокинувся"
   },
   {
+    "index": 3,
     "options": [
       "пив",
       "випив",
@@ -999,6 +1004,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "пив"
   },
   {
+    "index": 4,
     "options": [
       "випив",
       "пив",
@@ -1007,6 +1013,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "випив"
   },
   {
+    "index": 5,
     "options": [
       "їздив",
       "поїхав",
@@ -1015,6 +1022,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "їздив"
   },
   {
+    "index": 6,
     "options": [
       "пішов",
       "ходив",
@@ -1023,6 +1031,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "пішов"
   },
   {
+    "index": 7,
     "options": [
       "проходило",
       "пройшло",
@@ -1031,6 +1040,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "проходило"
   },
   {
+    "index": 8,
     "options": [
       "покликав",
       "кликав",
@@ -1039,6 +1049,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "покликав"
   },
   {
+    "index": 9,
     "options": [
       "повідомив",
       "повідомляв",
@@ -1047,6 +1058,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "повідомив"
   },
   {
+    "index": 10,
     "options": [
       "мріяв",
       "помріяв",
@@ -1055,6 +1067,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "мріяв"
   },
   {
+    "index": 11,
     "options": [
       "думав",
       "подумав",
@@ -1063,6 +1076,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "думав"
   },
   {
+    "index": 12,
     "options": [
       "отримав",
       "отримував",
@@ -1071,6 +1085,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "отримав"
   },
   {
+    "index": 13,
     "options": [
       "мріяв",
       "помріяв",
@@ -1079,7 +1094,8 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "мріяв"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть одиничні дії [stage: recognition]
 
@@ -1186,151 +1202,153 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 <Translate>
   <TranslateItem
-    prompt={`He wrote letters every day.`}
+    source={`He wrote letters every day.`}
+    answer={`Він щодня писав листи.`}
     options={[`Він щодня писав листи.`, `Він щодня написав листи.`, `Він писав листи одного разу.`, `Він написав листи завжди.`]}
-    correctIndex={0}
     explanation={`"Every day" = регулярність = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`Once he found a lot of money.`}
+    source={`Once he found a lot of money.`}
+    answer={`Одного разу він знайшов багато грошей.`}
     options={[`Одного разу він знаходив багато грошей.`, `Одного разу він знайшов багато грошей.`, `Він завжди знаходив багато грошей.`, `Він часто знайшов багато грошей.`]}
-    correctIndex={1}
     explanation={`"Once" = одна подія = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`She always helped her friends.`}
+    source={`She always helped her friends.`}
+    answer={`Вона завжди допомагала друзям.`}
     options={[`Вона завжди допомагала друзям.`, `Вона завжди допомогла друзям.`, `Вона одного разу допомагала друзям.`, `Вона раптом допомогла друзям.`]}
-    correctIndex={0}
     explanation={`"Always" = регулярність = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`Suddenly he understood everything.`}
+    source={`Suddenly he understood everything.`}
+    answer={`Раптом він зрозумів все.`}
     options={[`Раптом він розумів все.`, `Раптом він зрозумів все.`, `Він завжди розумів все.`, `Він часто зрозумів все.`]}
-    correctIndex={1}
     explanation={`"Suddenly" = раптова зміна = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`They rarely went to the theater.`}
+    source={`They rarely went to the theater.`}
+    answer={`Вони рідко ходили до театру.`}
     options={[`Вони рідко ходили до театру.`, `Вони рідко пішли до театру.`, `Вони одного разу ходили до театру.`, `Вони раптом пішли до театру.`]}
-    correctIndex={0}
     explanation={`"Rarely" = маркер частоти = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`Finally he finished the project.`}
+    source={`Finally he finished the project.`}
+    answer={`Нарешті він закінчив проєкт.`}
     options={[`Нарешті він закінчував проєкт.`, `Нарешті він закінчив проєкт.`, `Він завжди закінчував проєкт.`, `Він часто закінчив проєкт.`]}
-    correctIndex={1}
     explanation={`"Finally" = досягнення результату = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`Sometimes she wrote poems.`}
+    source={`Sometimes she wrote poems.`}
+    answer={`Іноді вона писала вірші.`}
     options={[`Іноді вона писала вірші.`, `Іноді вона написала вірші.`, `Одного разу вона писала вірші.`, `Нарешті вона написала вірші.`]}
-    correctIndex={0}
     explanation={`"Sometimes" = час від часу = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`For the first time I saw the ocean.`}
+    source={`For the first time I saw the ocean.`}
+    answer={`Вперше я побачив океан.`}
     options={[`Вперше я бачив океан.`, `Вперше я побачив океан.`, `Я завжди бачив океан.`, `Я часто побачив океан.`]}
-    correctIndex={1}
     explanation={`"For the first time" = унікальна подія = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`He constantly thought about it.`}
+    source={`He constantly thought about it.`}
+    answer={`Він постійно думав про це.`}
     options={[`Він постійно думав про це.`, `Він постійно подумав про це.`, `Він одного разу думав про це.`, `Він раптом подумав про це.`]}
-    correctIndex={0}
     explanation={`"Constantly" = безперервно = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`That evening she cooked a delicious dinner.`}
+    source={`That evening she cooked a delicious dinner.`}
+    answer={`Того вечора вона приготувала смачну вечерю.`}
     options={[`Того вечора вона готувала смачну вечерю.`, `Того вечора вона приготувала смачну вечерю.`, `Вона завжди готувала смачну вечерю.`, `Вона часто приготувала смачну вечерю.`]}
-    correctIndex={1}
     explanation={`"That evening" = конкретний момент = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`She regularly visited her grandmother.`}
+    source={`She regularly visited her grandmother.`}
+    answer={`Вона регулярно відвідувала бабусю.`}
     options={[`Вона регулярно відвідувала бабусю.`, `Вона регулярно відвідала бабусю.`, `Вона одного разу відвідувала бабусю.`, `Вона нарешті відвідала бабусю.`]}
-    correctIndex={0}
     explanation={`"Regularly" = повторювано = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`For the last time they met in 2020.`}
+    source={`For the last time they met in 2020.`}
+    answer={`Востаннє вони зустрілися у 2020.`}
     options={[`Востаннє вони зустрічалися у 2020.`, `Востаннє вони зустрілися у 2020.`, `Вони завжди зустрічалися у 2020.`, `Вони часто зустрілися у 2020.`]}
-    correctIndex={1}
     explanation={`"For the last time" = остання подія = доконаний вид.`}
   />
   <TranslateItem
-    prompt={`He often called his parents.`}
+    source={`He often called his parents.`}
+    answer={`Він часто дзвонив батькам.`}
     options={[`Він часто дзвонив батькам.`, `Він часто подзвонив батькам.`, `Він одного разу дзвонив батькам.`, `Він раптом подзвонив батькам.`]}
-    correctIndex={0}
     explanation={`"Often" = регулярно = недоконаний вид.`}
   />
   <TranslateItem
-    prompt={`At some point he found a new job.`}
+    source={`At some point he found a new job.`}
+    answer={`Якось він знайшов нову роботу.`}
     options={[`Якось він знаходив нову роботу.`, `Якось він знайшов нову роботу.`, `Він завжди знаходив нову роботу.`, `Він часто знайшов нову роботу.`]}
-    correctIndex={1}
     explanation={`"At some point" = одна подія = доконаний вид.`}
   />
 </Translate>
 
 ### Спогади про дитинство [stage: free-production]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "А",
-    "text": "Ти пам'ятаєш наше дитинство?"
+    "line": "Ти пам'ятаєш наше дитинство?"
   },
   {
     "speaker": "Б",
-    "text": "Звичайно! Ми часто гралися разом."
+    "line": "Звичайно! Ми часто гралися разом."
   },
   {
     "speaker": "А",
-    "text": "Так, ми щодня бігали на вулиці."
+    "line": "Так, ми щодня бігали на вулиці."
   },
   {
     "speaker": "Б",
-    "text": "А пам'ятаєш того разу, коли ми загубилися в лісі?"
+    "line": "А пам'ятаєш того разу, коли ми загубилися в лісі?"
   },
   {
     "speaker": "А",
-    "text": "О, так! Ми тоді дуже злякалися."
+    "line": "О, так! Ми тоді дуже злякалися."
   },
   {
     "speaker": "Б",
-    "text": "Але нарешті нас знайшли батьки."
+    "line": "Але нарешті нас знайшли батьки."
   },
   {
     "speaker": "А",
-    "text": "Вони завжди хвилювалися за нас."
+    "line": "Вони завжди хвилювалися за нас."
   },
   {
     "speaker": "Б",
-    "text": "Так, вони рідко відпускали нас далеко."
+    "line": "Так, вони рідко відпускали нас далеко."
   },
   {
     "speaker": "А",
-    "text": "Одного разу ми вирішили піти на річку самі."
+    "line": "Одного разу ми вирішили піти на річку самі."
   },
   {
     "speaker": "Б",
-    "text": "І тоді почався дощ, і ми промокли!"
+    "line": "І тоді почався дощ, і ми промокли!"
   },
   {
     "speaker": "А",
-    "text": "Мама тоді дуже сердилася."
+    "line": "Мама тоді дуже сердилася."
   },
   {
     "speaker": "Б",
-    "text": "Але потім вона завжди згадувала цю історію з посмішкою."
+    "line": "Але потім вона завжди згадувала цю історію з посмішкою."
   },
   {
     "speaker": "А",
-    "text": "Добрі часи були!"
+    "line": "Добрі часи були!"
   },
   {
     "speaker": "Б",
-    "text": "Так, я часто згадую ті дні."
+    "line": "Так, я часто згадую ті дні."
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф про маркери
 

@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -705,56 +705,58 @@ Mastering Ukrainian grammar opens doors to authentic connection with millions of
 
 ### Help in the Office
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Привіт! Можеш допомогти мені?"
+    "line": "Привіт! Можеш допомогти мені?"
   },
   {
     "speaker": "B",
-    "text": "Звичайно! Що тобі потрібно?"
+    "line": "Звичайно! Що тобі потрібно?"
   },
   {
     "speaker": "A",
-    "text": "Поясни мені цей звіт, будь ласка."
+    "line": "Поясни мені цей звіт, будь ласка."
   },
   {
     "speaker": "B",
-    "text": "Добре. Дивись, я покажу тобі."
+    "line": "Добре. Дивись, я покажу тобі."
   },
   {
     "speaker": "A",
-    "text": "Дякую тобі! Ти завжди допомагаєш мені."
+    "line": "Дякую тобі! Ти завжди допомагаєш мені."
   },
   {
     "speaker": "B",
-    "text": "Нема за що. Радий допомогти колезі."
+    "line": "Нема за що. Радий допомогти колезі."
   },
   {
     "speaker": "A",
-    "text": "Можна показати це шефові?"
+    "line": "Можна показати це шефові?"
   },
   {
     "speaker": "B",
-    "text": "Так, я раджу тобі показати завтра."
+    "line": "Так, я раджу тобі показати завтра."
   },
   {
     "speaker": "A",
-    "text": "Ти віриш мені, що вийде?"
+    "line": "Ти віриш мені, що вийде?"
   },
   {
     "speaker": "B",
-    "text": "Звичайно! Я довіряю тобі повністю."
+    "line": "Звичайно! Я довіряю тобі повністю."
   },
   {
     "speaker": "A",
-    "text": "Це мені дуже приємно!"
+    "line": "Це мені дуже приємно!"
   },
   {
     "speaker": "B",
-    "text": "Удачі!"
+    "line": "Удачі!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Dative Objects
 

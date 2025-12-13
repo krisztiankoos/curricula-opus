@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -45,7 +45,7 @@ This module teaches **time clauses** — how to express when things happen using
 
 # Presentation: Time Clauses
 
-## 🎯 Коли (When) — Point in Time
+## 🎯 Коли — Point in Time
 
 Used for a specific moment or when something happens:
 
@@ -56,7 +56,7 @@ Used for a specific moment or when something happens:
 | **Коли** я був молодий, я грав футбол. | When I was young, I played football. |
 | Подзвони мені, **коли** приїдеш. | Call me when you arrive. |
 
-## 🎯 Поки (While) — Duration
+## 🎯 Поки — Duration
 
 Used for simultaneous ongoing actions:
 
@@ -72,7 +72,7 @@ Note: "Поки не" = until:
 | Чекай, **поки не** прийду. | Wait until I come. |
 | Не йди, **поки не** скажу. | Don't go until I say. |
 
-## 🎯 Після того як (After)
+## 🎯 Після того як — Sequence
 
 Used for actions that follow another:
 
@@ -82,7 +82,7 @@ Used for actions that follow another:
 | Ми зустрілися **після того як** закінчили роботу. | We met after we finished work. |
 | **Після того як** вона зателефонувала, я зрозумів. | After she called, I understood. |
 
-## 🎯 Перш ніж / Перед тим як (Before)
+## 🎯 Перш ніж / Перед тим як — Precedence
 
 Used for actions that precede another:
 
@@ -605,7 +605,7 @@ We met after I finished my tasks. While we were walking, it started to rain. We 
     error={`Коли`}
     answer={`Поки`}
     options={[`Поки`, `Коли`, `Після того як`]}
-    explanation={`Both ongoing = поки (while).`}
+    explanation={`Both ongoing = поки.`}
   />
   <ErrorCorrectionItem
     sentence={`Перш ніж поїв, я пішов. (sequence after)`}
@@ -683,44 +683,46 @@ We met after I finished my tasks. While we were walking, it started to rain. We 
 
 ### Phone Scheduling
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "А",
-    "text": "Коли ти вільний сьогодні?"
+    "line": "Коли ти вільний сьогодні?"
   },
   {
     "speaker": "Б",
-    "text": "Після того як закінчу роботу."
+    "line": "Після того як закінчу роботу."
   },
   {
     "speaker": "А",
-    "text": "Подзвони, як тільки закінчиш."
+    "line": "Подзвони, як тільки закінчиш."
   },
   {
     "speaker": "Б",
-    "text": "Добре. А що поки я працюю?"
+    "line": "Добре. А що поки я працюю?"
   },
   {
     "speaker": "А",
-    "text": "Поки ти працюєш, я зроблю покупки."
+    "line": "Поки ти працюєш, я зроблю покупки."
   },
   {
     "speaker": "Б",
-    "text": "Де зустрінемося?"
+    "line": "Де зустрінемося?"
   },
   {
     "speaker": "А",
-    "text": "Перед тим як вийти, напиши."
+    "line": "Перед тим як вийти, напиши."
   },
   {
     "speaker": "Б",
-    "text": "До того як стемніє, встигнемо?"
+    "line": "До того як стемніє, встигнемо?"
   },
   {
     "speaker": "А",
-    "text": "Коли зустрінемося, вирішимо!"
+    "line": "Коли зустрінемося, вирішимо!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Time Connectors
 

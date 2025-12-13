@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands **nature and weather vocabulary** — landscapes, weather pa
 
 # Warm-up
 
-> 💡 **Ukrainian Nature:** From the majestic Карпати (Carpathians) to the endless степ (steppe), from dramatic грози (thunderstorms) to magical сніг (snow) — Ukraine's landscapes and weather are incredibly diverse!
+> 💡 **Ukrainian Nature:** From the majestic Карпати to the endless степ, from dramatic грози to magical сніг — Ukraine's landscapes and weather are incredibly diverse!
 
 What's the weather like today? Яка сьогодні погода? Which season is your favorite? Яка твоя улюблена пора року?
 
@@ -142,7 +142,7 @@ Ukrainian nature is rich with plants and animals:
 — Тут багато грибів! Будемо збирати?
 — Звичайно! Тільки обережно, не всі гриби їстівні.
 
-> 🎯 **Fun Fact:** The соняшник (sunflower) is an unofficial symbol of Ukraine. In summer, entire fields are covered with golden sunflowers — a spectacular sight!
+> 🎯 **Fun Fact:** The соняшник is an unofficial symbol of Ukraine. In summer, entire fields are covered with golden sunflowers — a spectacular sight!
 
 ---
 
@@ -476,56 +476,58 @@ In winter lots of snow falls, especially in the Carpathians. You can ski and sno
 
 ### Planning a Trip [stage: Production]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Чудова ідея! А яка там погода влітку?"
+    "line": "Чудова ідея! А яка там погода влітку?"
   },
   {
     "speaker": "B",
-    "text": "Куди поїдемо у відпустку цього року?"
+    "line": "Куди поїдемо у відпустку цього року?"
   },
   {
     "speaker": "C",
-    "text": "Добре! А що будемо там робити?"
+    "line": "Добре! А що будемо там робити?"
   },
   {
     "speaker": "D",
-    "text": "Давай у Карпати! Там красиві гори і озера."
+    "line": "Давай у Карпати! Там красиві гори і озера."
   },
   {
     "speaker": "E",
-    "text": "Зазвичай тепло, але іноді бувають грози."
+    "line": "Зазвичай тепло, але іноді бувають грози."
   },
   {
     "speaker": "F",
-    "text": "Тоді візьмемо парасольки і теплі куртки."
+    "line": "Тоді візьмемо парасольки і теплі куртки."
   },
   {
     "speaker": "G",
-    "text": "Звучить чудово! Коли поїдемо?"
+    "line": "Звучить чудово! Коли поїдемо?"
   },
   {
     "speaker": "H",
-    "text": "Ходити в походи, купатися в озерах, збирати гриби."
+    "line": "Ходити в походи, купатися в озерах, збирати гриби."
   },
   {
     "speaker": "I",
-    "text": "Давай на початку серпня — ще буде тепло."
+    "line": "Давай на початку серпня — ще буде тепло."
   },
   {
     "speaker": "J",
-    "text": "Ідеально! Я вже не можу дочекатися!"
+    "line": "Ідеально! Я вже не можу дочекатися!"
   },
   {
     "speaker": "K",
-    "text": "Правильно! У горах погода швидко змінюється."
+    "line": "Правильно! У горах погода швидко змінюється."
   },
   {
     "speaker": "L",
-    "text": "Я теж! Це буде найкраща відпустка!"
+    "line": "Я теж! Це буде найкраща відпустка!"
   }
 ]} />
+</DialogueReorder>
 
 ### Season → Weather & Activities [stage: Recognition]
 

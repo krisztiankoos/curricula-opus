@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -350,30 +350,374 @@ English relies on context and time words to distinguish "I write" (habitual) fro
 
 <Quiz>
   <QuizQuestion
-    question={`Оберіть правильну доконану форму.`}
-    options={[`робнути`, `зробити`, `поробити`, `виробити`, `написати`, `пописати`, `виписати`, `переписати`, `вичитати`, `прочитати`, `почитати`, `дочитати`, `сказати`, `поговорити`, `виговорити`, `договорити`, `забрати`, `прибрати`, `взяти`, `вибрати`, `дати`, `подати`, `видати`, `передати`, `повідкривати`, `завідкривати`, `відкрити`, `розкривати`, `позакривати`, `закрити`, `прикривати`, `накривати`, `почати`, `започати`, `розпочати`, `починути`, `закінчити`, `покінчити`, `докінчити`, `скінчити`, `пошукати`, `вишукати`, `знайти`, `розшукати`, `допомогти`, `подопомагати`, `помагати`, `допомочити`, `запитати`, `попитати`, `випитати`, `допитати`, `показати`, `покажити`, `попоказувати`, `випоказати`]}
-    correctIndex={52}
+    question={`Недоконаний "робити" → доконаний?`}
+    options={[`робнути`, `зробити`, `поробити`, `виробити`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "писати" → доконаний?`}
+    options={[`написати`, `пописати`, `виписати`, `переписати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "читати" → доконаний?`}
+    options={[`вичитати`, `прочитати`, `почитати`, `дочитати`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "говорити" → доконаний?`}
+    options={[`сказати`, `поговорити`, `виговорити`, `договорити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "брати" → доконаний?`}
+    options={[`забрати`, `прибрати`, `взяти`, `вибрати`]}
+    correctIndex={2}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "давати" → доконаний?`}
+    options={[`дати`, `подати`, `видати`, `передати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "відкривати" → доконаний?`}
+    options={[`повідкривати`, `завідкривати`, `відкрити`, `розкривати`]}
+    correctIndex={2}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "закривати" → доконаний?`}
+    options={[`позакривати`, `закрити`, `прикривати`, `накривати`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "починати" → доконаний?`}
+    options={[`почати`, `започати`, `розпочати`, `починути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "закінчувати" → доконаний?`}
+    options={[`закінчити`, `покінчити`, `докінчити`, `скінчити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "шукати" → доконаний?`}
+    options={[`пошукати`, `вишукати`, `знайти`, `розшукати`]}
+    correctIndex={2}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "допомагати" → доконаний?`}
+    options={[`допомогти`, `подопомагати`, `помагати`, `допомочити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "питати" → доконаний?`}
+    options={[`запитати`, `попитати`, `випитати`, `допитати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "показувати" → доконаний?`}
+    options={[`показати`, `покажити`, `попоказувати`, `випоказати`]}
+    correctIndex={0}
     explanation={``}
   />
 </Quiz>
 
+### Видові пари
 
+<MatchUp pairs={[
+  { left: `робити`, right: `зробити` },
+  { left: `писати`, right: `написати` },
+  { left: `читати`, right: `прочитати` },
+  { left: `говорити`, right: `сказати` },
+  { left: `брати`, right: `взяти` },
+  { left: `давати`, right: `дати` },
+  { left: `відкривати`, right: `відкрити` },
+  { left: `закривати`, right: `закрити` },
+  { left: `починати`, right: `почати` },
+  { left: `закінчувати`, right: `закінчити` },
+  { left: `питати`, right: `запитати` },
+  { left: `шукати`, right: `знайти` },
+  { left: `допомагати`, right: `допомогти` },
+  { left: `показувати`, right: `показати` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`Вчора я ___ книгу. (читав цілий день)`}
+    answer={`читав`}
+    options={[`читав`, `прочитав`]}
+  />
+  <FillInQuestion
+    sentence={`Вчора я ___ книгу. (дочитав до кінця)`}
+    answer={`прочитав`}
+    options={[`читав`, `прочитав`]}
+  />
+  <FillInQuestion
+    sentence={`Він довго ___ і нарешті знайшов. (процес)`}
+    answer={`шукав`}
+    options={[`шукав`, `знайшов`]}
+  />
+  <FillInQuestion
+    sentence={`___ мені, будь ласка! (одноразове прохання)`}
+    answer={`Допоможи`}
+    options={[`Допомагай`, `Допоможи`]}
+  />
+  <FillInQuestion
+    sentence={`Я ___ писати о восьмій. (результат)`}
+    answer={`почав`}
+    options={[`починав`, `почав`]}
+  />
+  <FillInQuestion
+    sentence={`Коли ти ___ роботу? (завершення)`}
+    answer={`закінчиш`}
+    options={[`закінчуватимеш`, `закінчиш`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ___ двері і зайшла. (результат)`}
+    answer={`відкрила`}
+    options={[`відкривала`, `відкрила`]}
+  />
+  <FillInQuestion
+    sentence={`___ вікно, холодно! (результат)`}
+    answer={`Закрий`}
+    options={[`Закривай`, `Закрий`]}
+  />
+  <FillInQuestion
+    sentence={`Що він ___? Я не почув. (результат)`}
+    answer={`сказав`}
+    options={[`говорив`, `сказав`]}
+  />
+  <FillInQuestion
+    sentence={`Я ___ йому листа вчора. (завершена дія)`}
+    answer={`написав`}
+    options={[`писав`, `написав`]}
+  />
+  <FillInQuestion
+    sentence={`___ книгу на полицю. (результат)`}
+    answer={`Поклади`}
+    options={[`Клади`, `Поклади`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ___ і пішла. (результат)`}
+    answer={`встала`}
+    options={[`вставала`, `встала`]}
+  />
+  <FillInQuestion
+    sentence={`Ми ___ багато цікавого. (результат)`}
+    answer={`побачили`}
+    options={[`бачили`, `побачили`]}
+  />
+  <FillInQuestion
+    sentence={`Ти ___ новину? (одноразово)`}
+    answer={`почув`}
+    options={[`чув`, `почув`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`я | вчора | листа | написав`}
+    answer={`Я вчора написав листа.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вона | двері | відкрила | і | зайшла`}
+    answer={`Вона відкрила двері і зайшла.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`він | запитав | і | відповів | я`}
+    answer={`Він запитав, і я відповів.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`ключі | я | знайшов | нарешті`}
+    answer={`Я нарешті знайшов ключі.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`роботу | ми | закінчили | рано`}
+    answer={`Ми закінчили роботу рано.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`книгу | вона | прочитала | цю`}
+    answer={`Вона прочитала цю книгу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`мені | допоможи | ласка | будь`}
+    answer={`Допоможи мені, будь ласка.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`сказав | що | він | прийде | він`}
+    answer={`Він сказав, що він прийде.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`поклади | сюди | книгу`}
+    answer={`Поклади книгу сюди.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`побачив | я | її | вчора`}
+    answer={`Я побачив її вчора.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`закрий | вікно | холодно`}
+    answer={`Закрий вікно, холодно.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`почали | ми | працювати | рано`}
+    answer={`Ми почали працювати рано.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`показав | він | нам | фото`}
+    answer={`Він показав нам фото.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`взяв | я | парасольку | і | пішов`}
+    answer={`Я взяв парасольку і пішов.`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я шукав і шукнув ключі. (результат)`}
+    error={``}
+    answer={`Я шукав і знайшов ключі.`}
+    options={[]}
+    explanation={`"Знайти" — доконана форма від "шукати" (супплетивна пара).`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вчора я робив домашнє завдання і закінчив. (незавершена форма)`}
+    error={``}
+    answer={`Вчора я зробив домашнє завдання і закінчив.`}
+    options={[]}
+    explanation={`Якщо закінчив — дія завершена, потрібен доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він говорнув правду. (неіснуюча форма)`}
+    error={``}
+    answer={`Він сказав правду.`}
+    options={[]}
+    explanation={`"Сказати" — доконана форма від "говорити".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я берів книгу зі столу. (неправильна форма)`}
+    error={``}
+    answer={`Я взяв книгу зі столу.`}
+    options={[]}
+    explanation={`"Взяти" — доконана форма, "брав" — недоконана.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Напиши мені часто! (регулярна дія)`}
+    error={``}
+    answer={`Пиши мені часто!`}
+    options={[]}
+    explanation={`Для регулярної дії потрібен недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона починала працювати о восьмій. (однораз. дія)`}
+    error={``}
+    answer={`Вона почала працювати о восьмій.`}
+    options={[]}
+    explanation={`Для одноразової дії з результатом — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Закривай двері, холодно! (негайна дія)`}
+    error={``}
+    answer={`Закрий двері, холодно!`}
+    options={[]}
+    explanation={`Для негайної дії з результатом — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я давнув йому книгу. (неіснуюча форма)`}
+    error={``}
+    answer={`Я дав йому книгу.`}
+    options={[]}
+    explanation={`"Дати" — доконана форма від "давати".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вони показували мені фото вчора. (однораз. дія)`}
+    error={``}
+    answer={`Вони показали мені фото вчора.`}
+    options={[]}
+    explanation={`Для завершеної одноразової дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Допомагай мені зараз! (негайна допомога)`}
+    error={``}
+    answer={`Допоможи мені зараз!`}
+    options={[]}
+    explanation={`Для негайної дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він відповідав на всі питання. (завершив)`}
+    error={``}
+    answer={`Він відповів на всі питання.`}
+    options={[]}
+    explanation={`Якщо завершив — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я чув цю новину вчора. (однораз.)`}
+    error={``}
+    answer={`Я почув цю новину вчора.`}
+    options={[]}
+    explanation={`Для одноразової події — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Подивляйся на це! (негайно)`}
+    error={``}
+    answer={`Подивися на це!`}
+    options={[]}
+    explanation={`Для негайної дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Питай у вчителя! (одноразово)`}
+    error={``}
+    answer={`Запитай у вчителя!`}
+    options={[]}
+    explanation={`Для одноразового запитання — доконаний вид.`}
+  />
+</ErrorCorrection>
 
 ### Важкий день
 
-<Cloze
-  passage={`Вставте правильну форму дієслова.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму дієслова.
 Учора був важкий день. Я [___:1] о шостій ранку і відразу [___:2] працювати. Спочатку я [___:3] електронну пошту — було багато листів. Потім я [___:4] звіт для керівника.
 О десятій колега [___:5] до кабінету і [___:6]: "Можеш допомогти?" Я [___:7]: "Звичайно!" Ми разом [___:8] документи і [___:9] проєкт.
 Увечері я [___:10] комп'ютер, [___:11] пальто і [___:12] додому. Вдома я [___:13] вечерю і [___:14] телевізор.`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "вставав",
       "встав"
@@ -381,6 +725,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "встав"
   },
   {
+    "index": 1,
     "options": [
       "починав",
       "почав"
@@ -388,6 +733,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "почав"
   },
   {
+    "index": 2,
     "options": [
       "перевіряв",
       "перевірив"
@@ -395,6 +741,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "перевірив"
   },
   {
+    "index": 3,
     "options": [
       "писав",
       "написав"
@@ -402,6 +749,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "написав"
   },
   {
+    "index": 4,
     "options": [
       "заходив",
       "зайшов"
@@ -409,6 +757,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "зайшов"
   },
   {
+    "index": 5,
     "options": [
       "говорив",
       "сказав"
@@ -416,6 +765,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "сказав"
   },
   {
+    "index": 6,
     "options": [
       "відповідав",
       "відповів"
@@ -423,6 +773,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "відповів"
   },
   {
+    "index": 7,
     "options": [
       "шукали",
       "знайшли"
@@ -430,6 +781,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "знайшли"
   },
   {
+    "index": 8,
     "options": [
       "закінчували",
       "закінчили"
@@ -437,6 +789,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "закінчили"
   },
   {
+    "index": 9,
     "options": [
       "закривав",
       "закрив"
@@ -444,6 +797,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "закрив"
   },
   {
+    "index": 10,
     "options": [
       "брав",
       "взяв"
@@ -451,6 +805,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "взяв"
   },
   {
+    "index": 11,
     "options": [
       "йшов",
       "пішов"
@@ -458,6 +813,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "пішов"
   },
   {
+    "index": 12,
     "options": [
       "готував",
       "приготував"
@@ -465,6 +821,7 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "приготував"
   },
   {
+    "index": 13,
     "options": [
       "вмикав",
       "увімкнув"
@@ -472,7 +829,8 @@ English relies on context and time words to distinguish "I write" (habitual) fro
     "answer": "увімкнув"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть доконаний вид
 
@@ -501,215 +859,225 @@ English relies on context and time words to distinguish "I write" (habitual) fro
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Я написав листа вчора.`, `Я писав листа вчора.`, `Я пишу листа вчора.`, `Я буду писати листа.`, `Вона відкрила двері.`, `Вона відкривала двері.`, `Вона відкриває двері.`, `Вона буде відкривати.`, `Він сказав правду.`, `Він говорив правду.`, `Він говорить правду.`, `Він скаже правду.`, `Я взяв ключі.`, `Я брав ключі.`, `Я беру ключі.`, `Я візьму ключі.`, `Вони знайшли відповідь.`, `Вони шукали відповідь.`, `Вони шукають відповідь.`, `Вони знаходять відповідь.`, `Допоможи мені!`, `Допомагай мені!`, `Допомагати мені!`, `Допомогти мені!`, `Вона почала працювати о восьмій.`, `Вона починала працювати о восьмій.`, `Вона починає працювати о восьмій.`, `Вона почне працювати.`, `Закрий вікно!`, `Закривай вікно!`, `Закривати вікно!`, `Закриваючи вікно!`, `Він запитав питання.`, `Він питав питання.`, `Він питає питання.`, `Він запитує питання.`, `Я почув новину.`, `Я чув новину.`, `Я чую новину.`, `Я буду чути.`, `Вона показала нам фото.`, `Вона показувала нам фото.`, `Вона показує нам фото.`, `Вона покаже нам фото.`, `Вони закінчили проєкт.`, `Вони закінчували проєкт.`, `Вони закінчують проєкт.`, `Вони будуть закінчувати.`, `Я дав йому книгу.`, `Я давав йому книгу.`, `Я даю йому книгу.`, `Я дам йому книгу.`, `Поклади книгу сюди!`, `Клади книгу сюди!`, `Кладучи книгу сюди!`, `Класти книгу сюди!`]}
-    correctIndex={52}
+    source={`I wrote a letter yesterday.`}
+    answer={`Я написав листа вчора.`}
+    options={[`Я написав листа вчора.`, `Я писав листа вчора.`, `Я пишу листа вчора.`, `Я буду писати листа.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She opened the door.`}
+    answer={`Вона відкрила двері.`}
+    options={[`Вона відкрила двері.`, `Вона відкривала двері.`, `Вона відкриває двері.`, `Вона буде відкривати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He said the truth.`}
+    answer={`Він сказав правду.`}
+    options={[`Він сказав правду.`, `Він говорив правду.`, `Він говорить правду.`, `Він скаже правду.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I took the keys.`}
+    answer={`Я взяв ключі.`}
+    options={[`Я взяв ключі.`, `Я брав ключі.`, `Я беру ключі.`, `Я візьму ключі.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They found the answer.`}
+    answer={`Вони знайшли відповідь.`}
+    options={[`Вони знайшли відповідь.`, `Вони шукали відповідь.`, `Вони шукають відповідь.`, `Вони знаходять відповідь.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Help me, please!`}
+    answer={`Допоможи мені!`}
+    options={[`Допоможи мені!`, `Допомагай мені!`, `Допомагати мені!`, `Допомогти мені!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She began working at 8.`}
+    answer={`Вона почала працювати о восьмій.`}
+    options={[`Вона почала працювати о восьмій.`, `Вона починала працювати о восьмій.`, `Вона починає працювати о восьмій.`, `Вона почне працювати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Close the window!`}
+    answer={`Закрий вікно!`}
+    options={[`Закрий вікно!`, `Закривай вікно!`, `Закривати вікно!`, `Закриваючи вікно!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He asked a question.`}
+    answer={`Він запитав питання.`}
+    options={[`Він запитав питання.`, `Він питав питання.`, `Він питає питання.`, `Він запитує питання.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I heard the news.`}
+    answer={`Я почув новину.`}
+    options={[`Я почув новину.`, `Я чув новину.`, `Я чую новину.`, `Я буду чути.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She showed us the photo.`}
+    answer={`Вона показала нам фото.`}
+    options={[`Вона показала нам фото.`, `Вона показувала нам фото.`, `Вона показує нам фото.`, `Вона покаже нам фото.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They finished the project.`}
+    answer={`Вони закінчили проєкт.`}
+    options={[`Вони закінчили проєкт.`, `Вони закінчували проєкт.`, `Вони закінчують проєкт.`, `Вони будуть закінчувати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I gave him the book.`}
+    answer={`Я дав йому книгу.`}
+    options={[`Я дав йому книгу.`, `Я давав йому книгу.`, `Я даю йому книгу.`, `Я дам йому книгу.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Put the book here!`}
+    answer={`Поклади книгу сюди!`}
+    options={[`Поклади книгу сюди!`, `Клади книгу сюди!`, `Кладучи книгу сюди!`, `Класти книгу сюди!`]}
     explanation={``}
   />
 </Translate>
 
 ### Розмова про вчорашній день
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Привіт! Що ти робив учора?"
+    "line": "Привіт! Що ти робив учора?"
   },
   {
     "speaker": "B",
-    "text": "Привіт! Я працював весь день."
+    "line": "Привіт! Я працював весь день."
   },
   {
     "speaker": "A",
-    "text": "Ти закінчив проєкт?"
+    "line": "Ти закінчив проєкт?"
   },
   {
     "speaker": "B",
-    "text": "Так, закінчив о п'ятій."
+    "line": "Так, закінчив о п'ятій."
   },
   {
     "speaker": "A",
-    "text": "Молодець! А потім?"
+    "line": "Молодець! А потім?"
   },
   {
     "speaker": "B",
-    "text": "Потім пішов додому і відпочивав."
+    "line": "Потім пішов додому і відпочивав."
   },
   {
     "speaker": "A",
-    "text": "Ти щось читав?"
+    "line": "Ти щось читав?"
   },
   {
     "speaker": "B",
-    "text": "Так, прочитав цікаву статтю."
+    "line": "Так, прочитав цікаву статтю."
   },
   {
     "speaker": "A",
-    "text": "Про що?"
+    "line": "Про що?"
   },
   {
     "speaker": "B",
-    "text": "Про нові технології."
+    "line": "Про нові технології."
   },
   {
     "speaker": "A",
-    "text": "Цікаво! Покажеш?"
+    "line": "Цікаво! Покажеш?"
   },
   {
     "speaker": "B",
-    "text": "Звичайно, зараз знайду посилання."
+    "line": "Звичайно, зараз знайду посилання."
   },
   {
     "speaker": "A",
-    "text": "Дякую!"
+    "line": "Дякую!"
   },
   {
     "speaker": "B",
-    "text": "Немає за що!"
+    "line": "Немає за що!"
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Зробити" — доконана форма від "робити".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Говорити" і "сказати" мають однаковий корінь.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Суфікс -ува-/-юва- вказує на доконаний вид.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Взяти" — доконана форма від "брати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Префікс завжди змінює значення дієслова.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Знайти" — доконана форма від "шукати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Відкрити" — недоконана форма.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Супплетивні пари мають різні корені.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Починати" і "почати" — одне й те саме.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Давати" і "дати" — супплетивна пара.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Доконаний вид вказує на результат.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Писав" — доконаний вид.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Закінчувати" має суфікс -ува-.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Видові пари потрібно вивчати окремо.`}
     isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
     explanation={``}
   />
 </TrueFalse>
@@ -717,22 +1085,25 @@ English relies on context and time words to distinguish "I write" (habitual) fro
 ### Розсортуйте за типом творення
 
 <GroupSort groups={{
-  "Розподіліть пари за типом.": [
-    "робити/зробити: Префіксальні",
-    "писати/написати: Префіксальні",
-    "читати/прочитати: Префіксальні",
-    "бачити/побачити: Префіксальні",
-    "чути/почути: Префіксальні",
-    "говорити/сказати: Супплетивні",
-    "брати/взяти: Супплетивні",
-    "шукати/знайти: Супплетивні",
-    "сідати/сісти: Супплетивні",
-    "відкривати/відкрити: Суфіксальні",
-    "закривати/закрити: Суфіксальні",
-    "починати/почати: Суфіксальні",
-    "закінчувати/закінчити: Суфіксальні",
-    "показувати/показати: Суфіксальні",
-    "--"
+  "Префіксальні": [
+    "робити/зробити",
+    "писати/написати",
+    "читати/прочитати",
+    "бачити/побачити",
+    "чути/почути"
+  ],
+  "Супплетивні": [
+    "говорити/сказати",
+    "брати/взяти",
+    "шукати/знайти",
+    "сідати/сісти"
+  ],
+  "Суфіксальні": [
+    "відкривати/відкрити",
+    "закривати/закрити",
+    "починати/почати",
+    "закінчувати/закінчити",
+    "показувати/показати"
   ]
 }} />
 

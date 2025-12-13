@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -360,33 +360,377 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
 
 <Quiz>
   <QuizQuestion
-    question={`Визначте вид дієслова.`}
-    options={[`недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`, `недоконаний`, `доконаний`]}
-    correctIndex={27}
+    question={`Заходьте, будь ласка!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Зроби домашнє завдання!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Читайте уважно!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Напиши звіт до п'ятниці!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Сідайте, я вас слухаю.`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Подзвони мамі сьогодні!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Працюйте старанно!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Закінчи це до вечора!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Беріть, частуйтеся!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Прийди о п'ятій!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Слухай мене уважно!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Купи хліба по дорозі!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Їжте, не соромтеся!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Здай роботу вчасно!`}
+    options={[`недоконаний`, `доконаний`]}
+    correctIndex={1}
     explanation={``}
   />
 </Quiz>
 
+### Запрошення і завдання
 
+<MatchUp pairs={[
+  { left: `Заходьте!`, right: `ввічливе запрошення` },
+  { left: `Зробіть це!`, right: `конкретне завдання` },
+  { left: `Сідайте!`, right: `запрошення сісти` },
+  { left: `Напишіть звіт!`, right: `завдання з результатом` },
+  { left: `Їжте!`, right: `запрошення до їжі` },
+  { left: `Прочитайте статтю!`, right: `завдання дочитати` },
+  { left: `Говоріть!`, right: `запрошення говорити` },
+  { left: `Подзвоніть!`, right: `одноразова дія` },
+  { left: `Слухайте!`, right: `процес уваги` },
+  { left: `Закінчіть!`, right: `завершити справу` },
+  { left: `Беріть!`, right: `запрошення брати` },
+  { left: `Повідомте!`, right: `конкретний результат` },
+  { left: `Чекайте!`, right: `процес очікування` },
+  { left: `Передайте!`, right: `одноразова дія` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`___, будь ласка! (Входити/Увійти — запрошення)`}
+    answer={`Входьте`}
+    options={[`Входьте`, `Увійдіть`]}
+  />
+  <FillInQuestion
+    sentence={`___ звіт до понеділка! (Писати/Написати)`}
+    answer={`Напишіть`}
+    options={[`Пишіть`, `Напишіть`]}
+  />
+  <FillInQuestion
+    sentence={`___ уважно на дошку! (Дивитися/Подивитися)`}
+    answer={`Дивіться`}
+    options={[`Дивіться`, `Подивіться`]}
+  />
+  <FillInQuestion
+    sentence={`___ мамі сьогодні! (Телефонувати/Зателефонувати)`}
+    answer={`Зателефонуй`}
+    options={[`Телефонуй`, `Зателефонуй`]}
+  />
+  <FillInQuestion
+    sentence={`___, частуйтеся! (Брати/Взяти)`}
+    answer={`Беріть`}
+    options={[`Беріть`, `Візьміть`]}
+  />
+  <FillInQuestion
+    sentence={`___ домашнє завдання! (Робити/Зробити)`}
+    answer={`Зробіть`}
+    options={[`Робіть`, `Зробіть`]}
+  />
+  <FillInQuestion
+    sentence={`___, я вас слухаю! (Говорити/Сказати)`}
+    answer={`Говоріть`}
+    options={[`Говоріть`, `Скажіть`]}
+  />
+  <FillInQuestion
+    sentence={`___ акуратно! (Писати/Написати)`}
+    answer={`Пишіть`}
+    options={[`Пишіть`, `Напишіть`]}
+  />
+  <FillInQuestion
+    sentence={`___ книгу до п'ятниці! (Читати/Прочитати)`}
+    answer={`Прочитайте`}
+    options={[`Читайте`, `Прочитайте`]}
+  />
+  <FillInQuestion
+    sentence={`___, не поспішайте! (Чекати/Почекати)`}
+    answer={`Чекайте`}
+    options={[`Чекайте`, `Почекайте`]}
+  />
+  <FillInQuestion
+    sentence={`___ хліба по дорозі! (Купувати/Купити)`}
+    answer={`Купи`}
+    options={[`Купуй`, `Купи`]}
+  />
+  <FillInQuestion
+    sentence={`___ старанно! (Працювати/Попрацювати)`}
+    answer={`Працюйте`}
+    options={[`Працюйте`, `Попрацюйте`]}
+  />
+  <FillInQuestion
+    sentence={`___ на стілець! (Сідати/Сісти — запрошення)`}
+    answer={`Сідайте`}
+    options={[`Сідайте`, `Сядьте`]}
+  />
+  <FillInQuestion
+    sentence={`___ це до вечора! (Робити/Зробити)`}
+    answer={`Зробіть`}
+    options={[`Робіть`, `Зробіть`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`будь | сідайте | ласка`}
+    answer={`Сідайте, будь ласка!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`до | напишіть | п'ятниці | звіт`}
+    answer={`Напишіть звіт до п'ятниці!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`беріть | соромтеся | не`}
+    answer={`Беріть, не соромтеся!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`працюйте | старанно`}
+    answer={`Працюйте старанно!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`подзвони | сьогодні | мамі`}
+    answer={`Подзвони мамі сьогодні!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`уважно | читайте | завдання`}
+    answer={`Читайте завдання уважно!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`закінчіть | до | вечора | це`}
+    answer={`Закінчіть це до вечора!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`заходьте | ласкаві | будьте`}
+    answer={`Заходьте, будьте ласкаві!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`слухайте | мене | уважно`}
+    answer={`Слухайте мене уважно!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`зробіть | обов'язково | це`}
+    answer={`Зробіть це обов'язково!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`кажіть | голосно | не`}
+    answer={`Не кажіть голосно!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`прочитайте | статтю | цю`}
+    answer={`Прочитайте цю статтю!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`повільно | йдіть | обережно | і`}
+    answer={`Йдіть повільно і обережно!`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`роботу | здайте | вчасно`}
+    answer={`Здайте роботу вчасно!`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Увійдіть, будь ласка! (запрошення)`}
+    error={``}
+    answer={`Входьте, будь ласка!`}
+    options={[]}
+    explanation={`Запрошення вимагає недоконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Телефонуй клієнту сьогодні! (одноразовий дзвінок)`}
+    error={``}
+    answer={`Зателефонуй клієнту сьогодні!`}
+    options={[]}
+    explanation={`Конкретна одноразова дія — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Сядьте, я вас слухаю! (ввічливе запрошення)`}
+    error={``}
+    answer={`Сідайте, я вас слухаю!`}
+    options={[]}
+    explanation={`Ввічливе запрошення — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Пишіть звіт до понеділка! (конкретне завдання)`}
+    error={``}
+    answer={`Напишіть звіт до понеділка!`}
+    options={[]}
+    explanation={`Завдання з дедлайном — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`З'їжте, частуйтесь! (запрошення до їжі)`}
+    error={``}
+    answer={`Їжте, частуйтесь!`}
+    options={[]}
+    explanation={`Запрошення — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Читай книгу до вечора! (закінчити читання)`}
+    error={``}
+    answer={`Прочитай книгу до вечора!`}
+    options={[]}
+    explanation={`"До вечора" вказує на результат — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Візьміть, не соромтеся! (запрошення)`}
+    error={``}
+    answer={`Беріть, не соромтеся!`}
+    options={[]}
+    explanation={`Запрошення — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Скажіть, я вас слухаю! (запрошення говорити)`}
+    error={``}
+    answer={`Говоріть, я вас слухаю!`}
+    options={[]}
+    explanation={`Запрошення до розмови — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Робіть домашнє завдання! (виконати повністю)`}
+    error={``}
+    answer={`Зробіть домашнє завдання!`}
+    options={[]}
+    explanation={`Повне виконання — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Подзвони мені частіше! (звичка)`}
+    error={``}
+    answer={`Дзвони мені частіше!`}
+    options={[]}
+    explanation={`Звичка, регулярність — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Зачекайте, не поспішайте! (процес очікування)`}
+    error={``}
+    answer={`Чекайте, не поспішайте!`}
+    options={[]}
+    explanation={`Процес — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Слухай цю пісню до кінця! (одноразово)`}
+    error={``}
+    answer={`Послухай цю пісню до кінця!`}
+    options={[]}
+    explanation={`"До кінця" — результат, доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Приходь завтра о п'ятій! (конкретний час)`}
+    error={``}
+    answer={`Прийди завтра о п'ятій!`}
+    options={[]}
+    explanation={`Конкретний час — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Здавай роботу вчасно! (одноразова здача)`}
+    error={``}
+    answer={`Здай роботу вчасно!`}
+    options={[]}
+    explanation={`Одноразова дія — доконаний вид.`}
+  />
+</ErrorCorrection>
 
 ### У гостях у бабусі
 
-<Cloze
-  passage={`Вставте правильну форму наказового способу.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму наказового способу.
 У гості до бабусі. Бабуся відчиняє двері: "[___:1], онуку! Як я рада тебе бачити! [___:2], [___:3] тут, у кріслі. [___:4], я принесу чай."
 Через хвилину: "Ось чай і пиріжки. [___:5], [___:6]! Я сама пекла. [___:7] ще! [___:8] варення, скільки хочеш."
 Онук: "Дякую, бабусю! Дуже смачно!"
 Бабуся: "А тепер [___:9], як твої справи? Як навчання? [___:10] мені все! І [___:11] частіше, я завжди рада."
 Онук: "Добре, бабусю. Мені потрібно йти. [___:12] на мене, я ще [___:13] завтра."
 Бабуся: "[___:14] ключі!"`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "Входь",
       "Увійди"
@@ -394,6 +738,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Входь"
   },
   {
+    "index": 1,
     "options": [
       "Роздягайся",
       "Роздягнися"
@@ -401,6 +746,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Роздягайся"
   },
   {
+    "index": 2,
     "options": [
       "сідай",
       "сядь"
@@ -408,6 +754,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "сідай"
   },
   {
+    "index": 3,
     "options": [
       "Чекай",
       "Почекай"
@@ -415,6 +762,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Почекай"
   },
   {
+    "index": 4,
     "options": [
       "Бери",
       "Візьми"
@@ -422,6 +770,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Бери"
   },
   {
+    "index": 5,
     "options": [
       "їж",
       "з'їж"
@@ -429,6 +778,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "їж"
   },
   {
+    "index": 6,
     "options": [
       "Їж",
       "З'їж"
@@ -436,6 +786,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Їж"
   },
   {
+    "index": 7,
     "options": [
       "Клади",
       "Поклади"
@@ -443,6 +794,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Клади"
   },
   {
+    "index": 8,
     "options": [
       "розкажи",
       "розповідай"
@@ -450,6 +802,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "розкажи"
   },
   {
+    "index": 9,
     "options": [
       "Розповідай",
       "Розкажи"
@@ -457,6 +810,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Розповідай"
   },
   {
+    "index": 10,
     "options": [
       "приходь",
       "прийди"
@@ -464,6 +818,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "приходь"
   },
   {
+    "index": 11,
     "options": [
       "Чекай",
       "Почекай"
@@ -471,6 +826,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Чекай"
   },
   {
+    "index": 12,
     "options": [
       "приїду",
       "приїжджатиму"
@@ -478,6 +834,7 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "приїду"
   },
   {
+    "index": 13,
     "options": [
       "Не забудь",
       "Не забувай"
@@ -485,7 +842,8 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
     "answer": "Не забудь"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть наказовий спосіб
 
@@ -514,215 +872,225 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Заходьте, будь ласка!`, `Зайдіть, будь ласка!`, `Увійдіть, будь ласка!`, `Входь, будь ласка!`, `Пишіть звіт до п'ятниці!`, `Напишіть звіт до п'ятниці!`, `Писати звіт до п'ятниці!`, `Написати звіт до п'ятниці!`, `Сідайте, я слухаю.`, `Сядьте, я слухаю.`, `Сісти, я слухаю.`, `Сидіть, я слухаю.`, `Телефонуй мамі сьогодні!`, `Зателефонуй мамі сьогодні!`, `Дзвони мамі сьогодні!`, `Задзвони мамі сьогодні!`, `Їжте, частуйтеся!`, `З'їжте, частуйтеся!`, `Поїжте, частуйтеся!`, `Їсти, частуйтеся!`, `Працюйте старанно!`, `Попрацюйте старанно!`, `Працювати старанно!`, `Опрацюйте старанно!`, `Читайте уважно!`, `Прочитайте уважно!`, `Дочитайте уважно!`, `Почитайте уважно!`, `Закінчуйте це до вечора!`, `Закінчіть це до вечора!`, `Закінчувати це до вечора!`, `Закінчити це до вечора!`, `Беріть, не соромтеся!`, `Візьміть, не соромтеся!`, `Брати, не соромтеся!`, `Взяти, не соромтеся!`, `Приходь о п'ятій!`, `Прийди о п'ятій!`, `Приходити о п'ятій!`, `Прийти о п'ятій!`, `Говоріть голосніше!`, `Скажіть голосніше!`, `Казати голосніше!`, `Сказати голосніше!`, `Не забувай ключі!`, `Не забудь ключі!`, `Не забувати ключі!`, `Не забути ключі!`, `Чекайте терпляче!`, `Почекайте терпляче!`, `Зачекайте терпляче!`, `Чекати терпляче!`, `Здавайте роботу вчасно!`, `Здайте роботу вчасно!`, `Здавати роботу вчасно!`, `Здати роботу вчасно!`]}
-    correctIndex={53}
+    source={`Come in, please! (invitation)`}
+    answer={`Заходьте, будь ласка!`}
+    options={[`Заходьте, будь ласка!`, `Зайдіть, будь ласка!`, `Увійдіть, будь ласка!`, `Входь, будь ласка!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Write the report by Friday!`}
+    answer={`Напишіть звіт до п'ятниці!`}
+    options={[`Пишіть звіт до п'ятниці!`, `Напишіть звіт до п'ятниці!`, `Писати звіт до п'ятниці!`, `Написати звіт до п'ятниці!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Sit down, I'm listening.`}
+    answer={`Сідайте, я слухаю.`}
+    options={[`Сідайте, я слухаю.`, `Сядьте, я слухаю.`, `Сісти, я слухаю.`, `Сидіть, я слухаю.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Call mom today!`}
+    answer={`Зателефонуй мамі сьогодні!`}
+    options={[`Телефонуй мамі сьогодні!`, `Зателефонуй мамі сьогодні!`, `Дзвони мамі сьогодні!`, `Задзвони мамі сьогодні!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Eat, help yourself!`}
+    answer={`Їжте, частуйтеся!`}
+    options={[`Їжте, частуйтеся!`, `З'їжте, частуйтеся!`, `Поїжте, частуйтеся!`, `Їсти, частуйтеся!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Work diligently!`}
+    answer={`Працюйте старанно!`}
+    options={[`Працюйте старанно!`, `Попрацюйте старанно!`, `Працювати старанно!`, `Опрацюйте старанно!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Read carefully!`}
+    answer={`Читайте уважно!`}
+    options={[`Читайте уважно!`, `Прочитайте уважно!`, `Дочитайте уважно!`, `Почитайте уважно!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Finish this by evening!`}
+    answer={`Закінчіть це до вечора!`}
+    options={[`Закінчуйте це до вечора!`, `Закінчіть це до вечора!`, `Закінчувати це до вечора!`, `Закінчити це до вечора!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Take it, don't be shy!`}
+    answer={`Беріть, не соромтеся!`}
+    options={[`Беріть, не соромтеся!`, `Візьміть, не соромтеся!`, `Брати, не соромтеся!`, `Взяти, не соромтеся!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Come at five o'clock!`}
+    answer={`Прийди о п'ятій!`}
+    options={[`Приходь о п'ятій!`, `Прийди о п'ятій!`, `Приходити о п'ятій!`, `Прийти о п'ятій!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Speak louder!`}
+    answer={`Говоріть голосніше!`}
+    options={[`Говоріть голосніше!`, `Скажіть голосніше!`, `Казати голосніше!`, `Сказати голосніше!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Don't forget the keys!`}
+    answer={`Не забудь ключі!`}
+    options={[`Не забувай ключі!`, `Не забудь ключі!`, `Не забувати ключі!`, `Не забути ключі!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Wait patiently!`}
+    answer={`Чекайте терпляче!`}
+    options={[`Чекайте терпляче!`, `Почекайте терпляче!`, `Зачекайте терпляче!`, `Чекати терпляче!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Submit the work on time!`}
+    answer={`Здайте роботу вчасно!`}
+    options={[`Здавайте роботу вчасно!`, `Здайте роботу вчасно!`, `Здавати роботу вчасно!`, `Здати роботу вчасно!`]}
     explanation={``}
   />
 </Translate>
 
 ### У гостях
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "О, ви прийшли! Заходьте!"
+    "line": "О, ви прийшли! Заходьте!"
   },
   {
     "speaker": "B",
-    "text": "Добрий день! Дякую за запрошення."
+    "line": "Добрий день! Дякую за запрошення."
   },
   {
     "speaker": "A",
-    "text": "Роздягайтеся, будь ласка."
+    "line": "Роздягайтеся, будь ласка."
   },
   {
     "speaker": "B",
-    "text": "Ось тут повісити пальто?"
+    "line": "Ось тут повісити пальто?"
   },
   {
     "speaker": "A",
-    "text": "Так, саме тут. Сідайте на диван."
+    "line": "Так, саме тут. Сідайте на диван."
   },
   {
     "speaker": "B",
-    "text": "Дякую. У вас дуже затишно."
+    "line": "Дякую. У вас дуже затишно."
   },
   {
     "speaker": "A",
-    "text": "Почекайте, я принесу чай."
+    "line": "Почекайте, я принесу чай."
   },
   {
     "speaker": "B",
-    "text": "Не турбуйтеся, я не голодний."
+    "line": "Не турбуйтеся, я не голодний."
   },
   {
     "speaker": "A",
-    "text": "Ні-ні, обов'язково частуйтеся!"
+    "line": "Ні-ні, обов'язково частуйтеся!"
   },
   {
     "speaker": "B",
-    "text": "Ну добре, дякую."
+    "line": "Ну добре, дякую."
   },
   {
     "speaker": "A",
-    "text": "Ось пиріжки. Беріть, їжте!"
+    "line": "Ось пиріжки. Беріть, їжте!"
   },
   {
     "speaker": "B",
-    "text": "Ммм, дуже смачно!"
+    "line": "Ммм, дуже смачно!"
   },
   {
     "speaker": "A",
-    "text": "Їжте ще! Я сама пекла."
+    "line": "Їжте ще! Я сама пекла."
   },
   {
     "speaker": "B",
-    "text": "Дякую за гостинність!"
+    "line": "Дякую за гостинність!"
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Для ввічливих запрошень вживається недоконаний вид.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Сядьте!" звучить ввічливіше, ніж "Сідайте!"`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Конкретні завдання з дедлайном вимагають доконаного виду.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Їжте!" — це наказ з'їсти все.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Будь ласка" робить команду ввічливішою.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Прислівники "старанно", "уважно" вживаються з доконаним видом.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Прочитай книгу!" — це запрошення читати.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`У західній Україні частіше кажуть "прошу" замість "будь ласка".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Для попереджень ("Не забудь!") вживається доконаний вид.`}
+    isTrue={true}
+    explanation={``}
+  />
+  <TrueFalseQuestion
+    statement={`"Говоріть, я слухаю" — це конкретне завдання.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Пишіть акуратно!" описує манеру, а не результат.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`В українській гостинності використовують доконаний вид.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Дзвони частіше!" — це регулярна дія (недоконаний вид).`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Зателефонуй мамі!" — це одноразова дія (доконаний вид).`}
     isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
     explanation={``}
   />
 </TrueFalse>
@@ -730,22 +1098,23 @@ English uses the same imperative form "Read!" for both meanings. Ukrainian disti
 ### Розсортуйте команди
 
 <GroupSort groups={{
-  "Розподіліть команди за типом.": [
-    "Заходьте!: Запрошення/Процес",
-    "Напишіть звіт!: Конкретне завдання",
-    "Сідайте!: Запрошення/Процес",
-    "Зробіть це!: Конкретне завдання",
-    "Їжте!: Запрошення/Процес",
-    "Прочитайте статтю!: Конкретне завдання",
-    "Беріть!: Запрошення/Процес",
-    "Подзвоніть!: Конкретне завдання",
-    "Чекайте!: Запрошення/Процес",
-    "Закінчіть!: Конкретне завдання",
-    "Слухайте!: Запрошення/Процес",
-    "Здайте роботу!: Конкретне завдання",
-    "Працюйте старанно!: Запрошення/Процес",
-    "Купіть хліба!: Конкретне завдання",
-    "--"
+  "Запрошення/Процес": [
+    "Заходьте!",
+    "Сідайте!",
+    "Їжте!",
+    "Беріть!",
+    "Чекайте!",
+    "Слухайте!",
+    "Працюйте старанно!"
+  ],
+  "Конкретне завдання": [
+    "Напишіть звіт!",
+    "Зробіть це!",
+    "Прочитайте статтю!",
+    "Подзвоніть!",
+    "Закінчіть!",
+    "Здайте роботу!",
+    "Купіть хліба!"
   ]
 }} />
 

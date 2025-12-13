@@ -220,13 +220,41 @@ function parseFillInActivity(activityContent: string): ParsedFillInItem[] {
         const prompt = lines[0].trim();
         let answer = '';
         let options: string[] = [];
+        let nextIsAnswer = false;
+        let nextIsOptions = false;
 
         for (const line of lines.slice(1)) {
             const trimmed = line.trim();
+
+            // Check for inline format: > [!answer] value or multi-line format: > [!answer]\n> value
             if (trimmed.startsWith('> [!answer]')) {
-                answer = trimmed.replace('> [!answer]', '').trim();
+                const inlineValue = trimmed.replace('> [!answer]', '').trim();
+                if (inlineValue) {
+                    answer = inlineValue;
+                } else {
+                    nextIsAnswer = true;
+                }
             } else if (trimmed.startsWith('> [!options]')) {
-                options = trimmed.replace('> [!options]', '').split('|').map(o => o.trim());
+                const inlineValue = trimmed.replace('> [!options]', '').trim();
+                if (inlineValue) {
+                    // Handle pipe-separated or comma-separated
+                    options = inlineValue.includes('|')
+                        ? inlineValue.split('|').map(o => o.trim())
+                        : inlineValue.split(',').map(o => o.trim());
+                } else {
+                    nextIsOptions = true;
+                }
+            } else if (trimmed.startsWith('>') && (nextIsAnswer || nextIsOptions)) {
+                const value = trimmed.replace(/^>\s*/, '').trim();
+                if (nextIsAnswer && value) {
+                    answer = value;
+                    nextIsAnswer = false;
+                } else if (nextIsOptions && value) {
+                    options = value.includes('|')
+                        ? value.split('|').map(o => o.trim())
+                        : value.split(',').map(o => o.trim());
+                    nextIsOptions = false;
+                }
             }
         }
 
@@ -370,28 +398,81 @@ interface ParsedUnjumbleItem {
 
 function parseUnjumbleActivity(activityContent: string): ParsedUnjumbleItem[] {
     const items: ParsedUnjumbleItem[] = [];
+    const lines = activityContent.trim().split('\n');
 
-    const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+    // Detect format: numbered (1. words) vs list (- words)
+    const hasNumberedFormat = lines.some(l => /^\d+\.\s+/.test(l.trim()));
 
-    for (const block of itemBlocks) {
-        const lines = block.trim().split('\n');
-        if (lines.length < 2) continue;
+    if (hasNumberedFormat) {
+        // Numbered format
+        const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+        for (const block of itemBlocks) {
+            const blockLines = block.trim().split('\n');
+            if (blockLines.length < 2) continue;
 
-        const words = lines[0].trim();
-        let answer = '';
-        let hint = '';
+            const words = blockLines[0].trim();
+            let answer = '';
+            let hint = '';
+            let nextIsAnswer = false;
 
-        for (const line of lines.slice(1)) {
+            for (const line of blockLines.slice(1)) {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('> [!answer]')) {
+                    const inlineValue = trimmed.replace('> [!answer]', '').trim();
+                    if (inlineValue) {
+                        answer = inlineValue;
+                    } else {
+                        nextIsAnswer = true;
+                    }
+                } else if (trimmed.startsWith('>') && nextIsAnswer) {
+                    answer = trimmed.replace(/^>\s*/, '').trim();
+                    nextIsAnswer = false;
+                } else if (trimmed.startsWith('> (')) {
+                    hint = trimmed.replace('> (', '').replace(')', '').trim();
+                }
+            }
+
+            if (words && answer) {
+                items.push({ words, answer, hint });
+            }
+        }
+    } else {
+        // List format: - words | to | reorder
+        let currentWords = '';
+        let currentAnswer = '';
+        let currentHint = '';
+        let nextIsAnswer = false;
+
+        for (const line of lines) {
             const trimmed = line.trim();
-            if (trimmed.startsWith('> [!answer]')) {
-                answer = trimmed.replace('> [!answer]', '').trim();
+
+            if (trimmed.startsWith('-') && !trimmed.startsWith('> [!')) {
+                // Save previous item if exists
+                if (currentWords && currentAnswer) {
+                    items.push({ words: currentWords, answer: currentAnswer, hint: currentHint });
+                }
+                currentWords = trimmed.replace(/^-\s*/, '').trim();
+                currentAnswer = '';
+                currentHint = '';
+                nextIsAnswer = false;
+            } else if (trimmed.startsWith('> [!answer]')) {
+                const inlineValue = trimmed.replace('> [!answer]', '').trim();
+                if (inlineValue) {
+                    currentAnswer = inlineValue;
+                } else {
+                    nextIsAnswer = true;
+                }
+            } else if (trimmed.startsWith('>') && nextIsAnswer) {
+                currentAnswer = trimmed.replace(/^>\s*/, '').trim();
+                nextIsAnswer = false;
             } else if (trimmed.startsWith('> (')) {
-                hint = trimmed.replace('> (', '').replace(')', '').trim();
+                currentHint = trimmed.replace('> (', '').replace(')', '').trim();
             }
         }
 
-        if (words && answer) {
-            items.push({ words, answer, hint });
+        // Don't forget the last item
+        if (currentWords && currentAnswer) {
+            items.push({ words: currentWords, answer: currentAnswer, hint: currentHint });
         }
     }
 
@@ -528,33 +609,121 @@ function parseTrueFalseActivity(activityContent: string): ParsedTrueFalseItem[] 
 
 function parseErrorCorrectionActivity(activityContent: string): ParsedErrorCorrectionItem[] {
     const items: ParsedErrorCorrectionItem[] = [];
-    const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+    const lines = activityContent.trim().split('\n');
 
-    for (const block of itemBlocks) {
-        const lines = block.trim().split('\n');
-        if (lines.length < 2) continue;
+    // Detect format: numbered (1. sentence) vs list format (- sentence)
+    const hasNumberedFormat = lines.some(l => /^\d+\.\s+/.test(l.trim()));
 
-        const sentence = lines[0].trim();
+    if (hasNumberedFormat) {
+        // Numbered format
+        const itemBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+
+        for (const block of itemBlocks) {
+            const blockLines = block.trim().split('\n');
+            if (blockLines.length < 2) continue;
+
+            const sentence = blockLines[0].trim();
+            let error = '';
+            let answer = '';
+            let options: string[] = [];
+            let explanation = '';
+
+            for (const line of blockLines.slice(1)) {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('> [!error]')) {
+                    error = trimmed.replace('> [!error]', '').trim();
+                } else if (trimmed.startsWith('> [!answer]')) {
+                    answer = trimmed.replace('> [!answer]', '').trim();
+                } else if (trimmed.startsWith('> [!options]')) {
+                    options = trimmed.replace('> [!options]', '').split('|').map(o => o.trim());
+                } else if (trimmed.startsWith('> [!explanation]')) {
+                    explanation = trimmed.replace('> [!explanation]', '').trim();
+                }
+            }
+
+            if (sentence && answer) {
+                items.push({ sentence, error, answer, options, explanation });
+            }
+        }
+    } else {
+        // List format: - sentence followed by multi-line callouts
+        let currentSentence = '';
         let error = '';
         let answer = '';
         let options: string[] = [];
         let explanation = '';
+        let nextIsAnswer = false;
+        let nextIsExplanation = false;
+        let nextIsError = false;
+        let nextIsOptions = false;
 
-        for (const line of lines.slice(1)) {
+        for (const line of lines) {
             const trimmed = line.trim();
-            if (trimmed.startsWith('> [!error]')) {
-                error = trimmed.replace('> [!error]', '').trim();
+
+            // New list item (sentence) - starts with - but not > [!
+            if (trimmed.startsWith('-') && !trimmed.startsWith('> [!')) {
+                // Save previous item if exists
+                if (currentSentence && answer) {
+                    items.push({ sentence: currentSentence, error, answer, options, explanation });
+                }
+                currentSentence = trimmed.replace(/^-\s*/, '').trim();
+                error = '';
+                answer = '';
+                options = [];
+                explanation = '';
+                nextIsAnswer = false;
+                nextIsExplanation = false;
+                nextIsError = false;
+                nextIsOptions = false;
+            } else if (trimmed.startsWith('> [!error]')) {
+                const inlineValue = trimmed.replace('> [!error]', '').trim();
+                if (inlineValue) {
+                    error = inlineValue;
+                } else {
+                    nextIsError = true;
+                }
             } else if (trimmed.startsWith('> [!answer]')) {
-                answer = trimmed.replace('> [!answer]', '').trim();
+                const inlineValue = trimmed.replace('> [!answer]', '').trim();
+                if (inlineValue) {
+                    answer = inlineValue;
+                } else {
+                    nextIsAnswer = true;
+                }
             } else if (trimmed.startsWith('> [!options]')) {
-                options = trimmed.replace('> [!options]', '').split('|').map(o => o.trim());
+                const inlineValue = trimmed.replace('> [!options]', '').trim();
+                if (inlineValue) {
+                    options = inlineValue.split('|').map(o => o.trim());
+                } else {
+                    nextIsOptions = true;
+                }
             } else if (trimmed.startsWith('> [!explanation]')) {
-                explanation = trimmed.replace('> [!explanation]', '').trim();
+                const inlineValue = trimmed.replace('> [!explanation]', '').trim();
+                if (inlineValue) {
+                    explanation = inlineValue;
+                } else {
+                    nextIsExplanation = true;
+                }
+            } else if (trimmed.startsWith('>')) {
+                const value = trimmed.replace(/^>\s*/, '').trim();
+                if (nextIsAnswer) {
+                    answer = value;
+                    nextIsAnswer = false;
+                } else if (nextIsExplanation) {
+                    explanation = value;
+                    nextIsExplanation = false;
+                } else if (nextIsError) {
+                    error = value;
+                    nextIsError = false;
+                } else if (nextIsOptions) {
+                    options = value.split('|').map(o => o.trim());
+                    nextIsOptions = false;
+                }
             }
         }
 
-        if (sentence && answer) {
-            items.push({ sentence, error, answer, options, explanation });
+        // Don't forget last item
+        if (currentSentence && answer) {
+            items.push({ sentence: currentSentence, error, answer, options, explanation });
         }
     }
 
@@ -563,28 +732,63 @@ function parseErrorCorrectionActivity(activityContent: string): ParsedErrorCorre
 
 function parseSelectActivity(activityContent: string): ParsedSelectQuestion[] {
     const questions: ParsedSelectQuestion[] = [];
-    const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+    const lines = activityContent.trim().split('\n');
 
-    for (const block of questionBlocks) {
-        const lines = block.trim().split('\n');
-        if (lines.length < 2) continue;
+    // Detect format: numbered (1. Question) vs simple flat list
+    const hasNumberedFormat = lines.some(l => /^\d+\.\s+/.test(l.trim()));
 
-        const question = lines[0].replace(/\*\*/g, '').trim();
+    if (hasNumberedFormat) {
+        // Numbered format
+        const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+        for (const block of questionBlocks) {
+            const blockLines = block.trim().split('\n');
+            if (blockLines.length < 2) continue;
+
+            const question = blockLines[0].replace(/\*\*/g, '').trim();
+            const options: string[] = [];
+            const correctAnswers: string[] = [];
+            let explanation = '';
+
+            for (let i = 1; i < blockLines.length; i++) {
+                const line = blockLines[i].trim();
+                if (line.startsWith('- [x]')) {
+                    const option = line.replace('- [x]', '').trim();
+                    options.push(option);
+                    correctAnswers.push(option);
+                } else if (line.startsWith('- [ ]')) {
+                    options.push(line.replace('- [ ]', '').trim());
+                } else if (line.startsWith('>')) {
+                    explanation = line.replace(/^>\s*/, '').trim();
+                }
+            }
+
+            if (question && options.length > 0) {
+                questions.push({ question, options, correctAnswers, explanation });
+            }
+        }
+    } else {
+        // Simple flat format: Question text followed by - [x]/- [ ] options
+        let question = '';
         const options: string[] = [];
         const correctAnswers: string[] = [];
         let explanation = '';
 
-        for (let i = 1; i < lines.length; i++) {
-            const line = lines[i].trim();
+        for (const line of lines) {
+            const trimmed = line.trim();
 
-            if (line.startsWith('- [x]')) {
-                const option = line.replace('- [x]', '').trim();
+            if (trimmed.startsWith('- [x]')) {
+                const option = trimmed.replace('- [x]', '').trim();
                 options.push(option);
                 correctAnswers.push(option);
-            } else if (line.startsWith('- [ ]')) {
-                options.push(line.replace('- [ ]', '').trim());
-            } else if (line.startsWith('>')) {
-                explanation = line.replace(/^>\s*/, '').trim();
+            } else if (trimmed.startsWith('- [ ]')) {
+                options.push(trimmed.replace('- [ ]', '').trim());
+            } else if (trimmed.startsWith('>')) {
+                explanation = trimmed.replace(/^>\s*/, '').trim();
+            } else if (trimmed && !trimmed.startsWith('-')) {
+                // First non-empty, non-checkbox line is the question
+                if (!question) {
+                    question = trimmed;
+                }
             }
         }
 
@@ -598,32 +802,73 @@ function parseSelectActivity(activityContent: string): ParsedSelectQuestion[] {
 
 function parseTranslateActivity(activityContent: string): ParsedTranslateQuestion[] {
     const questions: ParsedTranslateQuestion[] = [];
-    const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+    const lines = activityContent.trim().split('\n');
 
-    for (const block of questionBlocks) {
-        const lines = block.trim().split('\n');
-        if (lines.length < 2) continue;
+    // Detect format: numbered (1. Question) vs nested list (- Question with indented options)
+    const hasNumberedFormat = lines.some(l => /^\d+\.\s+/.test(l.trim()));
 
-        const prompt = lines[0].replace(/\*\*/g, '').trim();
-        const options: string[] = [];
-        let correctIndex = 0;
-        let explanation = '';
+    if (hasNumberedFormat) {
+        // Numbered format
+        const questionBlocks = activityContent.split(/\n\d+\.\s+/).filter(Boolean);
+        for (const block of questionBlocks) {
+            const blockLines = block.trim().split('\n');
+            if (blockLines.length < 2) continue;
 
-        for (let i = 1; i < lines.length; i++) {
-            const line = lines[i].trim();
+            const prompt = blockLines[0].replace(/\*\*/g, '').trim();
+            const options: string[] = [];
+            let correctIndex = 0;
+            let explanation = '';
 
-            if (line.startsWith('- [x]')) {
-                correctIndex = options.length;
-                options.push(line.replace('- [x]', '').trim());
-            } else if (line.startsWith('- [ ]')) {
-                options.push(line.replace('- [ ]', '').trim());
-            } else if (line.startsWith('>')) {
-                explanation = line.replace(/^>\s*/, '').trim();
+            for (let i = 1; i < blockLines.length; i++) {
+                const line = blockLines[i].trim();
+                if (line.startsWith('- [x]')) {
+                    correctIndex = options.length;
+                    options.push(line.replace('- [x]', '').trim());
+                } else if (line.startsWith('- [ ]')) {
+                    options.push(line.replace('- [ ]', '').trim());
+                } else if (line.startsWith('>')) {
+                    explanation = line.replace(/^>\s*/, '').trim();
+                }
+            }
+
+            if (prompt && options.length > 0) {
+                questions.push({ prompt, options, correctIndex, explanation });
+            }
+        }
+    } else {
+        // Nested list format: - Prompt followed by indented - [x]/- [ ] options
+        let currentQuestion: Partial<ParsedTranslateQuestion> | null = null;
+
+        for (const line of lines) {
+            const trimmed = line.trim();
+
+            // Check for parent list item (prompt) - starts with - but NOT - [ ] or - [x]
+            if (/^-\s+(?!\[[ x]\])/.test(trimmed)) {
+                // Save previous question if exists
+                if (currentQuestion && currentQuestion.prompt && currentQuestion.options && currentQuestion.options.length > 0) {
+                    questions.push(currentQuestion as ParsedTranslateQuestion);
+                }
+                currentQuestion = {
+                    prompt: trimmed.replace(/^-\s+/, '').trim(),
+                    options: [],
+                    correctIndex: 0,
+                    explanation: ''
+                };
+            } else if (/^\s*-\s*\[x\]/.test(line) && currentQuestion) {
+                // Correct option (indented)
+                currentQuestion.correctIndex = currentQuestion.options!.length;
+                currentQuestion.options!.push(line.replace(/^\s*-\s*\[x\]\s*/, '').trim());
+            } else if (/^\s*-\s*\[ \]/.test(line) && currentQuestion) {
+                // Wrong option (indented)
+                currentQuestion.options!.push(line.replace(/^\s*-\s*\[ \]\s*/, '').trim());
+            } else if (trimmed.startsWith('>') && currentQuestion) {
+                currentQuestion.explanation = trimmed.replace(/^>\s*/, '').trim();
             }
         }
 
-        if (prompt && options.length > 0) {
-            questions.push({ prompt, options, correctIndex, explanation });
+        // Don't forget the last question
+        if (currentQuestion && currentQuestion.prompt && currentQuestion.options && currentQuestion.options.length > 0) {
+            questions.push(currentQuestion as ParsedTranslateQuestion);
         }
     }
 
@@ -888,11 +1133,13 @@ function translateToJsx(questions: ParsedTranslateQuestion[], title: string): st
     if (questions.length === 0) return '';
 
     const questionsJsx = questions.map(q => {
+        // Extract correct answer from options
+        const answer = q.options[q.correctIndex] || q.options[0];
         const optionsStr = q.options.map(o => '`' + escapeJsxString(o) + '`').join(', ');
         return `  <TranslateItem
-    prompt=${wrapForJsx(q.prompt)}
+    source=${wrapForJsx(q.prompt)}
+    answer=${wrapForJsx(answer)}
     options={[${optionsStr}]}
-    correctIndex={${q.correctIndex}}
     explanation=${wrapForJsx(q.explanation)}
   />`;
     }).join('\n');
@@ -907,24 +1154,39 @@ ${questionsJsx}
 function clozeToJsx(data: ParsedClozeData, title: string): string {
     if (!data.passage || data.blanks.length === 0) return '';
 
-    const blanksJson = JSON.stringify(data.blanks, null, 2);
+    // Add index property to each blank (0-based, corresponds to [___:N] where N is 1-based)
+    const blanksWithIndex = data.blanks.map((blank, idx) => ({
+        index: idx,
+        options: blank.options,
+        answer: blank.answer
+    }));
+    const blanksJson = JSON.stringify(blanksWithIndex, null, 2);
 
     return `### ${title}
 
-<Cloze
-  passage=${wrapForJsx(data.passage)}
-  blanks={${blanksJson}}
-/>`;
+<Cloze>
+  <ClozePassage
+    text=${wrapForJsx(data.passage)}
+    blanks={${blanksJson}}
+  />
+</Cloze>`;
 }
 
 function dialogueReorderToJsx(lines: ParsedDialogueLine[], title: string): string {
     if (lines.length === 0) return '';
 
-    const linesJson = JSON.stringify(lines, null, 2);
+    // Rename 'text' to 'line' to match component's expected interface
+    const linesForComponent = lines.map(l => ({
+        speaker: l.speaker,
+        line: l.text
+    }));
+    const linesJson = JSON.stringify(linesForComponent, null, 2);
 
     return `### ${title}
 
-<DialogueReorder lines={${linesJson}} />`;
+<DialogueReorder>
+  <DialogueReorderActivity lines={${linesJson}} />
+</DialogueReorder>`;
 }
 
 function markTheWordsToJsx(data: ParsedMarkTheWordsData, title: string): string {
@@ -1152,8 +1414,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 `;
 
@@ -1207,7 +1469,7 @@ async function main() {
     console.log(`Output: docusaurus/docs/\n`);
 
     const curriculumPath = path.join(CURRICULUM_DIR, langPair);
-    const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+    const levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2', 'lit'];
 
     for (const level of levels) {
         if (targetLevel && level !== targetLevel) continue;
@@ -1221,7 +1483,16 @@ async function main() {
         }
 
         const files = await fs.readdir(levelPath);
-        const moduleFiles = files.filter(f => f.startsWith('module-') && f.endsWith('.md'));
+        // Support multiple naming patterns:
+        // - module-NN.md (A1, A2, B1)
+        // - NN-slug.md (B2)
+        // - module-LIT-NNN.md (LIT)
+        const moduleFiles = files.filter(f => {
+            if (!f.endsWith('.md')) return false;
+            if (f.startsWith('module-')) return true;
+            if (/^\d{2}-/.test(f)) return true; // NN-slug.md pattern
+            return false;
+        });
 
         if (moduleFiles.length === 0) continue;
 
@@ -1233,7 +1504,18 @@ async function main() {
         // NOTE: Not creating index.md - sidebar uses generated-index for landing pages
 
         for (const file of moduleFiles) {
-            const moduleNum = parseInt(file.replace('module-', '').replace('.md', ''));
+            // Extract module number from different patterns
+            let moduleNum: number;
+            if (file.startsWith('module-LIT-')) {
+                // module-LIT-001.md -> 1
+                moduleNum = parseInt(file.replace('module-LIT-', '').replace('.md', ''));
+            } else if (file.startsWith('module-')) {
+                // module-01.md -> 1
+                moduleNum = parseInt(file.replace('module-', '').replace('.md', ''));
+            } else {
+                // 01-slug.md -> 1
+                moduleNum = parseInt(file.split('-')[0]);
+            }
 
             if (targetModule !== undefined && moduleNum !== targetModule) continue;
 
@@ -1261,6 +1543,7 @@ function getLevelName(level: string): string {
         'b2': 'Upper-Intermediate Ukrainian',
         'c1': 'Advanced Ukrainian',
         'c2': 'Mastery Ukrainian',
+        'lit': 'Ukrainian Literature & Classics',
     };
     return names[level] || level.toUpperCase();
 }

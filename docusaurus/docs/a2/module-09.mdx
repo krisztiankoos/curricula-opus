@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -191,7 +191,7 @@ Oksana pays in cash. "Can I get a receipt?" she asks. "Of course! Here's your re
 ## Cultural Insight: Ukrainian Services 🇺🇦
 
 :::important
-**Modern Ukraine:** Ukraine has rapidly modernized its banking and postal systems. **Нова Пошта** (Nova Poshta) is a major private courier that's faster than state mail. **ПриватБанк** (PrivatBank) leads in digital banking — their Privat24 app is used by millions. Learning these service phrases connects you to real modern Ukraine.
+**Modern Ukraine:** Ukraine has rapidly modernized its banking and postal systems. **Нова Пошта** (Nova Poshta) is a major private courier that's faster than state mail. **ПриватБанк** leads in digital banking — their Privat24 app is used by millions. Learning these service phrases connects you to real modern Ukraine.
 :::
 
 
@@ -742,56 +742,58 @@ Consider how every verb ending, every noun declension, every case form carries m
 
 ### At the Bank
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Доброго дня! Чим можу допомогти?"
+    "line": "Доброго дня! Чим можу допомогти?"
   },
   {
     "speaker": "B",
-    "text": "Мені потрібно обміняти долари."
+    "line": "Мені потрібно обміняти долари."
   },
   {
     "speaker": "A",
-    "text": "Скільки доларів?"
+    "line": "Скільки доларів?"
   },
   {
     "speaker": "B",
-    "text": "Двісті. Який курс?"
+    "line": "Двісті. Який курс?"
   },
   {
     "speaker": "A",
-    "text": "Сорок гривень за долар."
+    "line": "Сорок гривень за долар."
   },
   {
     "speaker": "B",
-    "text": "Добре. І зняти п'ять тисяч з рахунку."
+    "line": "Добре. І зняти п'ять тисяч з рахунку."
   },
   {
     "speaker": "A",
-    "text": "Ваша картка, будь ласка."
+    "line": "Ваша картка, будь ласка."
   },
   {
     "speaker": "B",
-    "text": "Ось картка."
+    "line": "Ось картка."
   },
   {
     "speaker": "A",
-    "text": "Введіть PIN-код."
+    "line": "Введіть PIN-код."
   },
   {
     "speaker": "B",
-    "text": "Готово."
+    "line": "Готово."
   },
   {
     "speaker": "A",
-    "text": "Ось ваші гроші і квитанція."
+    "line": "Ось ваші гроші і квитанція."
   },
   {
     "speaker": "B",
-    "text": "Дякую!"
+    "line": "Дякую!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Service Vocabulary
 

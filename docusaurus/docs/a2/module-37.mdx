@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands your **food and cooking vocabulary** — kitchen equipment, 
 
 # Warm-up
 
-> 💡 **Kitchen Ukrainian:** From каструля (pot) to сковорода (pan), from варити (to boil) to смажити (to fry) — Ukrainian has rich culinary vocabulary. Food is culture!
+> 💡 **Kitchen Ukrainian:** From каструля to сковорода, from варити to смажити — Ukrainian has rich culinary vocabulary. Food is culture!
 
 ## Key Categories
 
@@ -338,7 +338,7 @@ Finally add the cabbage. Cook 10 more minutes. Salt and pepper. Serve with sour 
 <Quiz>
   <QuizQuestion
     question={`Борщ is made with:`}
-    options={[`буряк (beet)`, `тільки картопля`, `тільки м'ясо`, `тільки капуста`]}
+    options={[`буряк`, `тільки картопля`, `тільки м'ясо`, `тільки капуста`]}
     correctIndex={0}
     explanation={``}
   />
@@ -392,7 +392,7 @@ Finally add the cabbage. Cook 10 more minutes. Salt and pepper. Serve with sour 
   />
   <QuizQuestion
     question={`Borsch is served with:`}
-    options={[`сметана (sour cream)`, `кетчуп`, `майонез`, `гірчиця`]}
+    options={[`сметана`, `кетчуп`, `майонез`, `гірчиця`]}
     correctIndex={0}
     explanation={``}
   />

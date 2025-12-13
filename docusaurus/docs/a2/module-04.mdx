@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -111,11 +111,11 @@ Feminine nouns take **-ою** or **-ею**:
 | Soft (-я) | земля | із земл**ею** | Ми зв'язані з землею. |
 | Soft (-ь) | ніч | з ніч**чю** | Ми зустрілися з ніччю. |
 
-> ⚡ **Note:** The -ь ending feminine nouns take **-ю** (sometimes doubled consonant): ніч → ніччю, подорож → подорожжю.
+> ⚡ **Note:** The -ь ending feminine nouns take **-ю**: ніч → ніччю, подорож → подорожжю.
 
 ## Neuter Noun Endings
 
-Neuter nouns take **-ом** or **-ем** (same as masculine):
+Neuter nouns take **-ом** or **-ем**:
 
 | Stem Type | Nominative | Instrumental | Example |
 |-----------|------------|--------------|---------|
@@ -742,56 +742,58 @@ This is truly rewarding.
 
 ### Meeting Friends
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Привіт! Ти сама сьогодні?"
+    "line": "Привіт! Ти сама сьогодні?"
   },
   {
     "speaker": "B",
-    "text": "Ні, я з подругою. Ось вона йде!"
+    "line": "Ні, я з подругою. Ось вона йде!"
   },
   {
     "speaker": "C",
-    "text": "Привіт! Ідемо в кафе з нами?"
+    "line": "Привіт! Ідемо в кафе з нами?"
   },
   {
     "speaker": "A",
-    "text": "З радістю! Я тут з братом."
+    "line": "З радістю! Я тут з братом."
   },
   {
     "speaker": "B",
-    "text": "Познайом нас з ним!"
+    "line": "Познайом нас з ним!"
   },
   {
     "speaker": "A",
-    "text": "Це Тарас. Він працює зі мною."
+    "line": "Це Тарас. Він працює зі мною."
   },
   {
     "speaker": "C",
-    "text": "Приємно познайомитися!"
+    "line": "Приємно познайомитися!"
   },
   {
     "speaker": "D",
-    "text": "Взаємно! Підемо всі разом?"
+    "line": "Взаємно! Підемо всі разом?"
   },
   {
     "speaker": "B",
-    "text": "Так! Ходімо!"
+    "line": "Так! Ходімо!"
   },
   {
     "speaker": "A",
-    "text": "Візьму каву з молоком."
+    "line": "Візьму каву з молоком."
   },
   {
     "speaker": "C",
-    "text": "А я чай з лимоном."
+    "line": "А я чай з лимоном."
   },
   {
     "speaker": "D",
-    "text": "Я борщ зі сметаною!"
+    "line": "Я борщ зі сметаною!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Instrumental Forms
 

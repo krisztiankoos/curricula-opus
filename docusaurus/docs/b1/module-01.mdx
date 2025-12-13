@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -973,11 +973,13 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 ### Робочий день [stage: controlled-production]
 
-<Cloze
-  passage={`Вчора Марія [___:1] о сьомій ранку. Вона [___:2] душ і [___:3] сніданок. Поки вона [___:4], вона [___:5] новини по телевізору. О восьмій вона [___:6] з дому і [___:7] до роботи.
+<Cloze>
+  <ClozePassage
+    text={`Вчора Марія [___:1] о сьомій ранку. Вона [___:2] душ і [___:3] сніданок. Поки вона [___:4], вона [___:5] новини по телевізору. О восьмій вона [___:6] з дому і [___:7] до роботи.
 На роботі вона цілий день [___:8] над важливим проєктом. О першій годині вона [___:9] на обід до кафе. Там вона [___:10] каву і салат. Після обіду вона [___:11] ще кілька годин і нарешті [___:12] все о шостій. Увечері вона [___:13] вечерю і [___:14] книгу перед сном.`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "прокидалася",
       "прокинулася",
@@ -986,6 +988,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "прокинулася"
   },
   {
+    "index": 1,
     "options": [
       "прийняла",
       "приймала",
@@ -994,6 +997,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "прийняла"
   },
   {
+    "index": 2,
     "options": [
       "приготувала",
       "готувала",
@@ -1002,6 +1006,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "приготувала"
   },
   {
+    "index": 3,
     "options": [
       "снідала",
       "поснідала",
@@ -1010,6 +1015,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "снідала"
   },
   {
+    "index": 4,
     "options": [
       "дивилася",
       "подивилася",
@@ -1018,6 +1024,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "дивилася"
   },
   {
+    "index": 5,
     "options": [
       "вийшла",
       "виходила",
@@ -1026,6 +1033,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "вийшла"
   },
   {
+    "index": 6,
     "options": [
       "поїхала",
       "їздила",
@@ -1034,6 +1042,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "поїхала"
   },
   {
+    "index": 7,
     "options": [
       "працювала",
       "попрацювала",
@@ -1042,6 +1051,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "працювала"
   },
   {
+    "index": 8,
     "options": [
       "пішла",
       "ходила",
@@ -1050,6 +1060,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "пішла"
   },
   {
+    "index": 9,
     "options": [
       "замовила",
       "замовляла",
@@ -1058,6 +1069,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "замовила"
   },
   {
+    "index": 10,
     "options": [
       "попрацювала",
       "працювала",
@@ -1066,6 +1078,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "працювала"
   },
   {
+    "index": 11,
     "options": [
       "закінчила",
       "закінчувала",
@@ -1074,6 +1087,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "закінчила"
   },
   {
+    "index": 12,
     "options": [
       "приготувала",
       "готувала",
@@ -1082,6 +1096,7 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "приготувала"
   },
   {
+    "index": 13,
     "options": [
       "читала",
       "прочитала",
@@ -1090,7 +1105,8 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
     "answer": "читала"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть недоконані дієслова [stage: recognition]
 
@@ -1197,151 +1213,153 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 <Translate>
   <TranslateItem
-    prompt={`I was reading when he called.`}
+    source={`I was reading when he called.`}
+    answer={`Я читав, коли він зателефонував.`}
     options={[`Я прочитав, коли він зателефонував.`, `Я читав, коли він зателефонував.`, `Я читаю, коли він телефонує.`, `Я прочитаю, коли він зателефонує.`]}
-    correctIndex={1}
     explanation={`"Was reading" — тривала фонова дія = недоконаний "читав".`}
   />
   <TranslateItem
-    prompt={`She finally finished the report.`}
+    source={`She finally finished the report.`}
+    answer={`Вона нарешті закінчила звіт.`}
     options={[`Вона нарешті закінчувала звіт.`, `Вона нарешті закінчила звіт.`, `Вона нарешті закінчує звіт.`, `Вона нарешті буде закінчувати звіт.`]}
-    correctIndex={1}
     explanation={`"Finally finished" — результат = доконаний "закінчила".`}
   />
   <TranslateItem
-    prompt={`He always helped me.`}
+    source={`He always helped me.`}
+    answer={`Він завжди допомагав мені.`}
     options={[`Він завжди допомагав мені.`, `Він завжди допоміг мені.`, `Він завжди допомагає мені.`, `Він завжди допоможе мені.`]}
-    correctIndex={0}
     explanation={`"Always helped" — регулярна дія = недоконаний "допомагав".`}
   />
   <TranslateItem
-    prompt={`While she was cooking, I read the news.`}
+    source={`While she was cooking, I read the news.`}
+    answer={`Поки вона готувала, я читав новини.`}
     options={[`Поки вона приготувала, я прочитав новини.`, `Поки вона готувала, я читав новини.`, `Поки вона готує, я читаю новини.`, `Поки вона приготує, я прочитаю новини.`]}
-    correctIndex={1}
     explanation={`Дві паралельні тривалі дії = обидва недоконані.`}
   />
   <TranslateItem
-    prompt={`He wrote the letter and sent it.`}
+    source={`He wrote the letter and sent it.`}
+    answer={`Він написав листа і надіслав його.`}
     options={[`Він писав листа і надсилав його.`, `Він написав листа і надіслав його.`, `Він писав листа і надіслав його.`, `Він написав листа і надсилав його.`]}
-    correctIndex={1}
     explanation={`Послідовність завершених дій = обидва доконані.`}
   />
   <TranslateItem
-    prompt={`I worked on this project all day.`}
+    source={`I worked on this project all day.`}
+    answer={`Я працював над цим проєктом цілий день.`}
     options={[`Я працював над цим проєктом цілий день.`, `Я попрацював над цим проєктом цілий день.`, `Я працюю над цим проєктом цілий день.`, `Я попрацюю над цим проєктом цілий день.`]}
-    correctIndex={0}
     explanation={`"All day" — тривалість = недоконаний "працював".`}
   />
   <TranslateItem
-    prompt={`Suddenly she understood everything.`}
+    source={`Suddenly she understood everything.`}
+    answer={`Раптом вона зрозуміла все.`}
     options={[`Раптом вона розуміла все.`, `Раптом вона зрозуміла все.`, `Раптом вона розуміє все.`, `Раптом вона зрозуміє все.`]}
-    correctIndex={1}
     explanation={`"Suddenly" — одноразова зміна = доконаний "зрозуміла".`}
   />
   <TranslateItem
-    prompt={`She used to call me every week.`}
+    source={`She used to call me every week.`}
+    answer={`Вона дзвонила мені щотижня.`}
     options={[`Вона дзвонила мені щотижня.`, `Вона подзвонила мені щотижня.`, `Вона дзвонить мені щотижня.`, `Вона подзвонить мені щотижня.`]}
-    correctIndex={0}
     explanation={`"Used to" — регулярна дія = недоконаний "дзвонила".`}
   />
   <TranslateItem
-    prompt={`I have already read this book.`}
+    source={`I have already read this book.`}
+    answer={`Я вже прочитав цю книгу.`}
     options={[`Я вже читав цю книгу.`, `Я вже прочитав цю книгу.`, `Я вже читаю цю книгу.`, `Я вже прочитаю цю книгу.`]}
-    correctIndex={1}
     explanation={`"Have already read" — результат = доконаний "прочитав".`}
   />
   <TranslateItem
-    prompt={`He was explaining the rules for an hour.`}
+    source={`He was explaining the rules for an hour.`}
+    answer={`Він пояснював правила годину.`}
     options={[`Він пояснював правила годину.`, `Він пояснив правила годину.`, `Він пояснює правила годину.`, `Він пояснить правила годину.`]}
-    correctIndex={0}
     explanation={`"Was explaining" + тривалість = недоконаний "пояснював".`}
   />
   <TranslateItem
-    prompt={`When I entered, everyone was silent.`}
+    source={`When I entered, everyone was silent.`}
+    answer={`Коли я увійшов, всі мовчали.`}
     options={[`Коли я входив, всі мовчали.`, `Коли я увійшов, всі мовчали.`, `Коли я входжу, всі мовчать.`, `Коли я увійду, всі мовчатимуть.`]}
-    correctIndex={1}
     explanation={`"Entered" — точка відліку = доконаний "увійшов".`}
   />
   <TranslateItem
-    prompt={`She often visited her grandmother.`}
+    source={`She often visited her grandmother.`}
+    answer={`Вона часто відвідувала бабусю.`}
     options={[`Вона часто відвідувала бабусю.`, `Вона часто відвідала бабусю.`, `Вона часто відвідує бабусю.`, `Вона часто відвідає бабусю.`]}
-    correctIndex={0}
     explanation={`"Often visited" — регулярність = недоконаний "відвідувала".`}
   />
   <TranslateItem
-    prompt={`He opened the door and entered.`}
+    source={`He opened the door and entered.`}
+    answer={`Він відчинив двері і увійшов.`}
     options={[`Він відчиняв двері і входив.`, `Він відчинив двері і увійшов.`, `Він відчиняє двері і входить.`, `Він відчинить двері і увійде.`]}
-    correctIndex={1}
     explanation={`Послідовність дій = обидва доконані.`}
   />
   <TranslateItem
-    prompt={`I will be working tomorrow.`}
+    source={`I will be working tomorrow.`}
+    answer={`Я працюватиму завтра.`}
     options={[`Я працюватиму завтра.`, `Я попрацюю завтра.`, `Я працював завтра.`, `Я попрацював завтра.`]}
-    correctIndex={0}
     explanation={`"Will be working" — тривала майбутня дія = недоконаний "працюватиму".`}
   />
 </Translate>
 
 ### У кафе [stage: free-production]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "А",
-    "text": "Привіт! Ти вже замовив щось?"
+    "line": "Привіт! Ти вже замовив щось?"
   },
   {
     "speaker": "Б",
-    "text": "Ні, я щойно прийшов. Офіціант ще не підходив."
+    "line": "Ні, я щойно прийшов. Офіціант ще не підходив."
   },
   {
     "speaker": "А",
-    "text": "Добре. Що ти зазвичай замовляєш тут?"
+    "line": "Добре. Що ти зазвичай замовляєш тут?"
   },
   {
     "speaker": "Б",
-    "text": "Я завжди брав каву і круасан. А ти?"
+    "line": "Я завжди брав каву і круасан. А ти?"
   },
   {
     "speaker": "А",
-    "text": "Я вчора спробував їхній чізкейк — дуже смачний!"
+    "line": "Я вчора спробував їхній чізкейк — дуже смачний!"
   },
   {
     "speaker": "Б",
-    "text": "О, цікаво! Тоді я теж візьму."
+    "line": "О, цікаво! Тоді я теж візьму."
   },
   {
     "speaker": "А",
-    "text": "До речі, ти вже закінчив той проєкт?"
+    "line": "До речі, ти вже закінчив той проєкт?"
   },
   {
     "speaker": "Б",
-    "text": "Так, нарешті закінчив учора ввечері."
+    "line": "Так, нарешті закінчив учора ввечері."
   },
   {
     "speaker": "А",
-    "text": "Чудово! А я ще працюю над своїм."
+    "line": "Чудово! А я ще працюю над своїм."
   },
   {
     "speaker": "Б",
-    "text": "Не хвилюйся, в тебе ще є час."
+    "line": "Не хвилюйся, в тебе ще є час."
   },
   {
     "speaker": "А",
-    "text": "Скільки часу ти працював над цим проєктом?"
+    "line": "Скільки часу ти працював над цим проєктом?"
   },
   {
     "speaker": "Б",
-    "text": "Я працював над ним майже два місяці."
+    "line": "Я працював над ним майже два місяці."
   },
   {
     "speaker": "А",
-    "text": "Це довго! Я сподіваюся, що мій закінчу швидше."
+    "line": "Це довго! Я сподіваюся, що мій закінчу швидше."
   },
   {
     "speaker": "Б",
-    "text": "Головне — не поспішай і зроби все якісно."
+    "line": "Головне — не поспішай і зроби все якісно."
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф про вид?
 

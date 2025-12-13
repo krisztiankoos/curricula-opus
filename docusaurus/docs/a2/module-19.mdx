@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -151,7 +151,7 @@ I think. I like iPhone, but it's expensive. Xiaomi is cheaper, but the camera is
 
 
 :::tip
-**Where to Shop:** **Сільпо, АТБ, Новус** are major supermarket chains. **Rozetka** is the biggest online retailer. **Епіцентр** is for home goods. Traditional **базари** (markets) are still popular for fresh produce.
+**Where to Shop:** **Сільпо, АТБ, Новус** are major supermarket chains. **Rozetka** is the biggest online retailer. **Епіцентр** is for home goods. Traditional **базари** are still popular for fresh produce.
 :::
 
 
@@ -664,56 +664,58 @@ I think. I like iPhone, but it's expensive. Xiaomi is cheaper, but the camera is
 
 ### Electronics Shopping
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Я хочу купити новий телефон."
+    "line": "Я хочу купити новий телефон."
   },
   {
     "speaker": "B",
-    "text": "Ось три варіанти: Samsung, iPhone, Xiaomi."
+    "line": "Ось три варіанти: Samsung, iPhone, Xiaomi."
   },
   {
     "speaker": "A",
-    "text": "Який найдорожчий?"
+    "line": "Який найдорожчий?"
   },
   {
     "speaker": "B",
-    "text": "Samsung — двадцять тисяч."
+    "line": "Samsung — двадцять тисяч."
   },
   {
     "speaker": "A",
-    "text": "А найдешевший?"
+    "line": "А найдешевший?"
   },
   {
     "speaker": "B",
-    "text": "Xiaomi — вісім тисяч."
+    "line": "Xiaomi — вісім тисяч."
   },
   {
     "speaker": "A",
-    "text": "Який найкращий?"
+    "line": "Який найкращий?"
   },
   {
     "speaker": "B",
-    "text": "Усі хороші. iPhone — найкраща камера. Samsung — найбільший екран."
+    "line": "Усі хороші. iPhone — найкраща камера. Samsung — найбільший екран."
   },
   {
     "speaker": "A",
-    "text": "Мені подобаються великі екрани."
+    "line": "Мені подобаються великі екрани."
   },
   {
     "speaker": "B",
-    "text": "Тоді рекомендую Samsung."
+    "line": "Тоді рекомендую Samsung."
   },
   {
     "speaker": "A",
-    "text": "Чи є знижка?"
+    "line": "Чи є знижка?"
   },
   {
     "speaker": "B",
-    "text": "Десять відсотків. Вісімнадцять тисяч."
+    "line": "Десять відсотків. Вісімнадцять тисяч."
   }
 ]} />
+</DialogueReorder>
 
 ### Find Comparatives/Superlatives
 

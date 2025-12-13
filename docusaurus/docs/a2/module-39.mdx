@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands **home vocabulary** — rooms, furniture, appliances, and ho
 
 # Warm-up
 
-> 💡 **Ukrainian Homes:** Ukrainian apartments often feature вітальня (living room), кухня (kitchen), and балкон (balcony) — all essential spaces for family life and hospitality!
+> 💡 **Ukrainian Homes:** Ukrainian apartments often feature вітальня, кухня, and балкон — all essential spaces for family life and hospitality!
 
 What's your favorite room at home? Яка твоя улюблена кімната вдома? Think about why you like it — чому вона тобі подобається?
 
@@ -170,7 +170,7 @@ Moving to a new home is a significant life event:
 — Яка сонячна вітальня! І кухня велика!
 — Так, нам дуже пощастило. Сідай, пий чай.
 
-> 🌍 **Real World:** At a Ukrainian новосілля, guests traditionally bring хліб-сіль (bread and salt) as symbols of prosperity, and sometimes a кішка (cat) enters the new home first for good luck!
+> 🌍 **Real World:** At a Ukrainian новосілля, guests traditionally bring хліб-сіль as symbols of prosperity, and sometimes a кішка enters the new home first for good luck!
 
 ---
 
@@ -209,7 +209,7 @@ Last week we invited friends for a housewarming. It was fun!
 :::
 
 
-> 💡 **Did You Know?** In traditional Ukrainian homes, the **покуть** (red corner) was the most honored place, usually diagonal from the entrance, where icons and precious items were kept. Guests of honor sat nearest to it!
+> 💡 **Did You Know?** In traditional Ukrainian homes, the **покуть** was the most honored place, usually diagonal from the entrance, where icons and precious items were kept. Guests of honor sat nearest to it!
 
 ---
 
@@ -485,56 +485,58 @@ Last week we invited friends for a housewarming. It was fun!
 
 ### Moving Day [stage: Production]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Ми теж раді! Заходь, покажемо квартиру."
+    "line": "Ми теж раді! Заходь, покажемо квартиру."
   },
   {
     "speaker": "B",
-    "text": "Привіт! Вітаю з переїздом!"
+    "line": "Привіт! Вітаю з переїздом!"
   },
   {
     "speaker": "C",
-    "text": "Так, вже облаштувалися. Диван у вітальні, ліжко в спальні."
+    "line": "Так, вже облаштувалися. Диван у вітальні, ліжко в спальні."
   },
   {
     "speaker": "D",
-    "text": "Яка сонячна вітальня! Вам пощастило!"
+    "line": "Яка сонячна вітальня! Вам пощастило!"
   },
   {
     "speaker": "E",
-    "text": "Дякую! Радий, що ви прийшли на новосілля."
+    "line": "Дякую! Радий, що ви прийшли на новосілля."
   },
   {
     "speaker": "F",
-    "text": "Дякуємо! Хочеш чаю? Кухня вже готова!"
+    "line": "Дякуємо! Хочеш чаю? Кухня вже готова!"
   },
   {
     "speaker": "G",
-    "text": "Вау, ви так швидко все розставили!"
+    "line": "Вау, ви так швидко все розставили!"
   },
   {
     "speaker": "H",
-    "text": "З радістю! Покажеш, де кухня?"
+    "line": "З радістю! Покажеш, де кухня?"
   },
   {
     "speaker": "I",
-    "text": "Звичайно! Йди за мною, тут коридор, а тут кухня."
+    "line": "Звичайно! Йди за мною, тут коридор, а тут кухня."
   },
   {
     "speaker": "J",
-    "text": "Чудово! Дуже затишно! Щастя вам у новому домі!"
+    "line": "Чудово! Дуже затишно! Щастя вам у новому домі!"
   },
   {
     "speaker": "K",
-    "text": "Подобається? Ми самі фарбували стіни!"
+    "line": "Подобається? Ми самі фарбували стіни!"
   },
   {
     "speaker": "L",
-    "text": "Дякуємо! Сідай, будемо пити чай і розмовляти."
+    "line": "Дякуємо! Сідай, будемо пити чай і розмовляти."
   }
 ]} />
+</DialogueReorder>
 
 ### Room → Purpose [stage: Recognition]
 

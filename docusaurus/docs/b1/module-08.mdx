@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -349,30 +349,374 @@ English speakers often struggle with aspect pairs because English uses different
 
 <Quiz>
   <QuizQuestion
-    question={`Оберіть правильну доконану форму.`}
-    options={[`вибрати`, `вибирнути`, `повибирати`, `вибрався`, `вирішити`, `вирішувать`, `розвирішити`, `вирішнути`, `приготувати`, `підготувати`, `заготувати`, `виготувати`, `забути`, `позабувати`, `забувнути`, `забутися`, `змінити`, `позмінювати`, `перезмінювати`, `змінюнути`, `купити`, `покупувати`, `накупувати`, `купнути`, `отримати`, `поотримувати`, `одержувати`, `отримнути`, `зустріти`, `зустрічнути`, `позустрічати`, `зустрічився`, `перевірити`, `поперевіряти`, `перевірнути`, `перевірятися`, `створити`, `постворювати`, `створнути`, `створюватися`, `зібрати`, `позбирати`, `збирнути`, `назбирати`, `заплатити`, `поплатити`, `виплатити`, `платнути`, `побудувати`, `забудувати`, `надбудувати`, `будувнути`, `організувати`, `поорганізовувати`, `заорганізувати`, `організнути`]}
-    correctIndex={52}
+    question={`Недоконаний "вибирати" → доконаний?`}
+    options={[`вибрати`, `вибирнути`, `повибирати`, `вибрався`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "вирішувати" → доконаний?`}
+    options={[`вирішити`, `вирішувать`, `розвирішити`, `вирішнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "готувати" (їжу) → доконаний?`}
+    options={[`приготувати`, `підготувати`, `заготувати`, `виготувати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "забувати" → доконаний?`}
+    options={[`забути`, `позабувати`, `забувнути`, `забутися`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "змінювати" → доконаний?`}
+    options={[`змінити`, `позмінювати`, `перезмінювати`, `змінюнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "купувати" → доконаний?`}
+    options={[`купити`, `покупувати`, `накупувати`, `купнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "отримувати" → доконаний?`}
+    options={[`отримати`, `поотримувати`, `одержувати`, `отримнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "зустрічати" → доконаний?`}
+    options={[`зустріти`, `зустрічнути`, `позустрічати`, `зустрічився`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "перевіряти" → доконаний?`}
+    options={[`перевірити`, `поперевіряти`, `перевірнути`, `перевірятися`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "створювати" → доконаний?`}
+    options={[`створити`, `постворювати`, `створнути`, `створюватися`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "збирати" → доконаний?`}
+    options={[`зібрати`, `позбирати`, `збирнути`, `назбирати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "платити" → доконаний?`}
+    options={[`заплатити`, `поплатити`, `виплатити`, `платнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "будувати" → доконаний?`}
+    options={[`побудувати`, `забудувати`, `надбудувати`, `будувнути`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Недоконаний "організовувати" → доконаний?`}
+    options={[`організувати`, `поорганізовувати`, `заорганізувати`, `організнути`]}
+    correctIndex={0}
     explanation={``}
   />
 </Quiz>
 
+### Видові пари
 
+<MatchUp pairs={[
+  { left: `вибирати`, right: `вибрати` },
+  { left: `вирішувати`, right: `вирішити` },
+  { left: `забувати`, right: `забути` },
+  { left: `згадувати`, right: `згадати` },
+  { left: `готувати`, right: `приготувати` },
+  { left: `купувати`, right: `купити` },
+  { left: `продавати`, right: `продати` },
+  { left: `змінювати`, right: `змінити` },
+  { left: `отримувати`, right: `отримати` },
+  { left: `зустрічати`, right: `зустріти` },
+  { left: `перевіряти`, right: `перевірити` },
+  { left: `створювати`, right: `створити` },
+  { left: `будувати`, right: `побудувати` },
+  { left: `платити`, right: `заплатити` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`Вона ___ вечерю годину. (процес)`}
+    answer={`готувала`}
+    options={[`готувала`, `приготувала`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ___ смачну вечерю. (результат)`}
+    answer={`приготувала`}
+    options={[`готувала`, `приготувала`]}
+  />
+  <FillInQuestion
+    sentence={`Він ___ подарунок для мами. (процес вибору)`}
+    answer={`вибирав`}
+    options={[`вибирав`, `вибрав`]}
+  />
+  <FillInQuestion
+    sentence={`Він ___ найкращий варіант. (результат)`}
+    answer={`вибрав`}
+    options={[`вибирав`, `вибрав`]}
+  />
+  <FillInQuestion
+    sentence={`Ми ___ проблему весь тиждень. (процес)`}
+    answer={`вирішували`}
+    options={[`вирішували`, `вирішили`]}
+  />
+  <FillInQuestion
+    sentence={`Нарешті ми ___ проблему! (результат)`}
+    answer={`вирішили`}
+    options={[`вирішували`, `вирішили`]}
+  />
+  <FillInQuestion
+    sentence={`___ йому привіт! (одноразово)`}
+    answer={`Передай`}
+    options={[`Передавай`, `Передай`]}
+  />
+  <FillInQuestion
+    sentence={`Ти ___ мою книгу? (одноразово)`}
+    answer={`повернув`}
+    options={[`повертав`, `повернув`]}
+  />
+  <FillInQuestion
+    sentence={`Скільки ви ___ за це? (результат)`}
+    answer={`заплатили`}
+    options={[`платили`, `заплатили`]}
+  />
+  <FillInQuestion
+    sentence={`Вони ___ новий дім. (результат)`}
+    answer={`побудували`}
+    options={[`будували`, `побудували`]}
+  />
+  <FillInQuestion
+    sentence={`Я ___ друга в метро. (результат)`}
+    answer={`зустрів`}
+    options={[`зустрічав`, `зустрів`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ___ цікаву програму. (результат)`}
+    answer={`створила`}
+    options={[`створювала`, `створила`]}
+  />
+  <FillInQuestion
+    sentence={`___ квитки онлайн! (результат)`}
+    answer={`Замов`}
+    options={[`Замовляй`, `Замов`]}
+  />
+  <FillInQuestion
+    sentence={`Він ___ всі помилки. (результат)`}
+    answer={`виправив`}
+    options={[`виправляв`, `виправив`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`вона | вечерю | приготувала | смачну`}
+    answer={`Вона приготувала смачну вечерю.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`ми | проблему | нарешті | вирішили`}
+    answer={`Ми нарешті вирішили проблему.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`він | квитки | купив | літак | на`}
+    answer={`Він купив квитки на літак.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`я | друга | в | метро | зустрів`}
+    answer={`Я зустрів друга в метро.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вони | новий | побудували | будинок`}
+    answer={`Вони побудували новий будинок.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`передай | від | привіт | йому | мене`}
+    answer={`Передай йому привіт від мене.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`ми | нараду | організували | вчора`}
+    answer={`Ми вчора організували нараду.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вона | листа | отримала | важливого`}
+    answer={`Вона отримала важливого листа.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`скільки | ви | за | це | заплатили`}
+    answer={`Скільки ви заплатили за це?`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`він | машину | продав | стару`}
+    answer={`Він продав стару машину.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`я | кімнату | прибрав | свою`}
+    answer={`Я прибрав свою кімнату.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вони | інформацію | всю | зібрали`}
+    answer={`Вони зібрали всю інформацію.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`майстер | машину | відремонтував`}
+    answer={`Майстер відремонтував машину.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вона | пропозицію | прийняла | його`}
+    answer={`Вона прийняла його пропозицію.`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я підготував вечерю. (їжа)`}
+    error={``}
+    answer={`Я приготував вечерю.`}
+    options={[]}
+    explanation={`Для їжі використовуємо "приготувати", не "підготувати".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він зустрічив друга вчора. (неправильна форма)`}
+    error={``}
+    answer={`Він зустрів друга вчора.`}
+    options={[]}
+    explanation={`Правильна доконана форма — "зустрів" (чергування ч→т).`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вони купували новий телефон вчора. (одноразова дія)`}
+    error={``}
+    answer={`Вони купили новий телефон вчора.`}
+    options={[]}
+    explanation={`Для завершеної одноразової дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я позабував ключі. (неіснуюча форма)`}
+    error={``}
+    answer={`Я забув ключі.`}
+    options={[]}
+    explanation={`Правильна доконана форма — "забув".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона вирішувала піти. (рішення прийнято)`}
+    error={``}
+    answer={`Вона вирішила піти.`}
+    options={[]}
+    explanation={`Якщо рішення прийнято — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він змінював плани вчора. (одноразово)`}
+    error={``}
+    answer={`Він змінив плани вчора.`}
+    options={[]}
+    explanation={`Для одноразової зміни — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми збирали гриби і назбирали. (подвійна форма)`}
+    error={``}
+    answer={`Ми збирали гриби і зібрали багато.`}
+    options={[]}
+    explanation={`Правильна доконана форма — "зібрали".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона отримувала лист вчора. (результат)`}
+    error={``}
+    answer={`Вона отримала лист вчора.`}
+    options={[]}
+    explanation={`Для результату — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він перевірював і перевірнув роботу. (неіснуюча форма)`}
+    error={``}
+    answer={`Він перевіряв і перевірив роботу.`}
+    options={[]}
+    explanation={`Правильна доконана форма — "перевірив".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Майстер ремонтував і заремонтував машину. (неправильний префікс)`}
+    error={``}
+    answer={`Майстер ремонтував і відремонтував машину.`}
+    options={[]}
+    explanation={`Правильна доконана форма — "відремонтував".`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Передавай йому привіт! (одноразово)`}
+    error={``}
+    answer={`Передай йому привіт!`}
+    options={[]}
+    explanation={`Для одноразової дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вони створювали програму вчора. (результат)`}
+    error={``}
+    answer={`Вони створили програму вчора.`}
+    options={[]}
+    explanation={`Якщо є результат — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми організовували зустріч вчора. (завершено)`}
+    error={``}
+    answer={`Ми організували зустріч вчора.`}
+    options={[]}
+    explanation={`Для завершеної дії — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він представлював проєкт вчора. (одноразово)`}
+    error={``}
+    answer={`Він представив проєкт вчора.`}
+    options={[]}
+    explanation={`Для одноразової презентації — доконаний вид.`}
+  />
+</ErrorCorrection>
 
 ### Поїздка до Одеси
 
-<Cloze
-  passage={`Вставте правильну форму дієслова.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму дієслова.
 Минулого тижня ми [___:1] відпустку. Спочатку ми [___:2] напрямок — Одеса. Потім [___:3] готель онлайн і [___:4] квитки на поїзд.
 Перед поїздкою я [___:5] всі справи на роботі. Дружина [___:6] валізи і [___:7] список речей. Ми [___:8] прогноз погоди — буде тепло!
 У день від'їзду ми [___:9] рано і [___:10] на вокзал. Поїзд [___:11] вчасно. Через п'ять годин ми [___:12] в Одесу і [___:13] в готель. Море [___:14] нас!`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "планували",
       "спланували"
@@ -380,6 +724,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "спланували"
   },
   {
+    "index": 1,
     "options": [
       "вибирали",
       "вибрали"
@@ -387,6 +732,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "вибрали"
   },
   {
+    "index": 2,
     "options": [
       "бронювали",
       "забронювали"
@@ -394,6 +740,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "забронювали"
   },
   {
+    "index": 3,
     "options": [
       "купували",
       "купили"
@@ -401,6 +748,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "купили"
   },
   {
+    "index": 4,
     "options": [
       "закінчував",
       "закінчив"
@@ -408,6 +756,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "закінчив"
   },
   {
+    "index": 5,
     "options": [
       "пакувала",
       "запакувала"
@@ -415,6 +764,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "запакувала"
   },
   {
+    "index": 6,
     "options": [
       "перевіряла",
       "перевірила"
@@ -422,6 +772,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "перевірила"
   },
   {
+    "index": 7,
     "options": [
       "перевіряли",
       "перевірили"
@@ -429,6 +780,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "перевірили"
   },
   {
+    "index": 8,
     "options": [
       "вставали",
       "встали"
@@ -436,6 +788,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "встали"
   },
   {
+    "index": 9,
     "options": [
       "їхали",
       "поїхали"
@@ -443,6 +796,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "поїхали"
   },
   {
+    "index": 10,
     "options": [
       "відправлявся",
       "відправився"
@@ -450,6 +804,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "відправився"
   },
   {
+    "index": 11,
     "options": [
       "приїжджали",
       "приїхали"
@@ -457,6 +812,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "приїхали"
   },
   {
+    "index": 12,
     "options": [
       "заселялися",
       "заселилися"
@@ -464,6 +820,7 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "заселилися"
   },
   {
+    "index": 13,
     "options": [
       "чекало",
       "почекало"
@@ -471,7 +828,8 @@ English speakers often struggle with aspect pairs because English uses different
     "answer": "чекало"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть доконаний вид
 
@@ -500,215 +858,225 @@ English speakers often struggle with aspect pairs because English uses different
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Вона вибрала найкращий варіант.`, `Вона вибирала найкращий варіант.`, `Вона вибере найкращий варіант.`, `Вона вибирає найкращий варіант.`, `Ми вирішили проблему.`, `Ми вирішували проблему.`, `Ми вирішуємо проблему.`, `Ми будемо вирішувати.`, `Я забув ключі.`, `Я забував ключі.`, `Я забуваю ключі.`, `Я забуватиму ключі.`, `Вона приготувала вечерю.`, `Вона готувала вечерю.`, `Вона готує вечерю.`, `Вона буде готувати.`, `Вони купили нову машину.`, `Вони купували нову машину.`, `Вони купують нову машину.`, `Вони будуть купувати.`, `Він продав свою квартиру.`, `Він продавав свою квартиру.`, `Він продає свою квартиру.`, `Він буде продавати.`, `Я отримав листа.`, `Я отримував листа.`, `Я отримую листа.`, `Я буду отримувати.`, `Вона зустріла подругу.`, `Вона зустрічала подругу.`, `Вона зустрічає подругу.`, `Вона буде зустрічати.`, `Вони побудували будинок.`, `Вони будували будинок.`, `Вони будують будинок.`, `Вони будуватимуть.`, `Я заплатив за квиток.`, `Я платив за квиток.`, `Я плачу за квиток.`, `Я платитиму.`, `Вона створила програму.`, `Вона створювала програму.`, `Вона створює програму.`, `Вона буде створювати.`, `Він перевірив роботу.`, `Він перевіряв роботу.`, `Він перевіряє роботу.`, `Він буде перевіряти.`, `Передай привіт!`, `Передавай привіт!`, `Передаю привіт!`, `Передаватиму привіт!`, `Він виправив помилки.`, `Він виправляв помилки.`, `Він виправляє помилки.`, `Він виправлятиме.`]}
-    correctIndex={52}
+    source={`She chose the best option.`}
+    answer={`Вона вибрала найкращий варіант.`}
+    options={[`Вона вибрала найкращий варіант.`, `Вона вибирала найкращий варіант.`, `Вона вибере найкращий варіант.`, `Вона вибирає найкращий варіант.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`We solved the problem.`}
+    answer={`Ми вирішили проблему.`}
+    options={[`Ми вирішили проблему.`, `Ми вирішували проблему.`, `Ми вирішуємо проблему.`, `Ми будемо вирішувати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I forgot the keys.`}
+    answer={`Я забув ключі.`}
+    options={[`Я забув ключі.`, `Я забував ключі.`, `Я забуваю ключі.`, `Я забуватиму ключі.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She prepared dinner.`}
+    answer={`Вона приготувала вечерю.`}
+    options={[`Вона приготувала вечерю.`, `Вона готувала вечерю.`, `Вона готує вечерю.`, `Вона буде готувати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They bought a new car.`}
+    answer={`Вони купили нову машину.`}
+    options={[`Вони купили нову машину.`, `Вони купували нову машину.`, `Вони купують нову машину.`, `Вони будуть купувати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He sold his apartment.`}
+    answer={`Він продав свою квартиру.`}
+    options={[`Він продав свою квартиру.`, `Він продавав свою квартиру.`, `Він продає свою квартиру.`, `Він буде продавати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I received a letter.`}
+    answer={`Я отримав листа.`}
+    options={[`Я отримав листа.`, `Я отримував листа.`, `Я отримую листа.`, `Я буду отримувати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She met her friend.`}
+    answer={`Вона зустріла подругу.`}
+    options={[`Вона зустріла подругу.`, `Вона зустрічала подругу.`, `Вона зустрічає подругу.`, `Вона буде зустрічати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`They built a house.`}
+    answer={`Вони побудували будинок.`}
+    options={[`Вони побудували будинок.`, `Вони будували будинок.`, `Вони будують будинок.`, `Вони будуватимуть.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I paid for the ticket.`}
+    answer={`Я заплатив за квиток.`}
+    options={[`Я заплатив за квиток.`, `Я платив за квиток.`, `Я плачу за квиток.`, `Я платитиму.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She created a program.`}
+    answer={`Вона створила програму.`}
+    options={[`Вона створила програму.`, `Вона створювала програму.`, `Вона створює програму.`, `Вона буде створювати.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He checked the work.`}
+    answer={`Він перевірив роботу.`}
+    options={[`Він перевірив роботу.`, `Він перевіряв роботу.`, `Він перевіряє роботу.`, `Він буде перевіряти.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Pass my regards!`}
+    answer={`Передай привіт!`}
+    options={[`Передай привіт!`, `Передавай привіт!`, `Передаю привіт!`, `Передаватиму привіт!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`He corrected the mistakes.`}
+    answer={`Він виправив помилки.`}
+    options={[`Він виправив помилки.`, `Він виправляв помилки.`, `Він виправляє помилки.`, `Він виправлятиме.`]}
     explanation={``}
   />
 </Translate>
 
 ### У магазині
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Добрий день! Чим можу допомогти?"
+    "line": "Добрий день! Чим можу допомогти?"
   },
   {
     "speaker": "B",
-    "text": "Добрий день! Я шукаю подарунок."
+    "line": "Добрий день! Я шукаю подарунок."
   },
   {
     "speaker": "A",
-    "text": "Для кого? Чоловіка чи жінки?"
+    "line": "Для кого? Чоловіка чи жінки?"
   },
   {
     "speaker": "B",
-    "text": "Для подруги. Вона любить книги."
+    "line": "Для подруги. Вона любить книги."
   },
   {
     "speaker": "A",
-    "text": "Чудово! Ось наші бестселери."
+    "line": "Чудово! Ось наші бестселери."
   },
   {
     "speaker": "B",
-    "text": "Скільки коштує ця книга?"
+    "line": "Скільки коштує ця книга?"
   },
   {
     "speaker": "A",
-    "text": "Двісті гривень."
+    "line": "Двісті гривень."
   },
   {
     "speaker": "B",
-    "text": "Гаразд, візьму цю."
+    "line": "Гаразд, візьму цю."
   },
   {
     "speaker": "A",
-    "text": "Чудовий вибір! Загорнути?"
+    "line": "Чудовий вибір! Загорнути?"
   },
   {
     "speaker": "B",
-    "text": "Так, будь ласка, як подарунок."
+    "line": "Так, будь ласка, як подарунок."
   },
   {
     "speaker": "A",
-    "text": "Ось, готово. Заплатіть на касі."
+    "line": "Ось, готово. Заплатіть на касі."
   },
   {
     "speaker": "B",
-    "text": "Дякую! До побачення!"
+    "line": "Дякую! До побачення!"
   },
   {
     "speaker": "A",
-    "text": "До побачення! Гарного дня!"
+    "line": "До побачення! Гарного дня!"
   },
   {
     "speaker": "B",
-    "text": "І вам!"
+    "line": "І вам!"
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Приготувати" використовується для їжі.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Підготувати" використовується для документів.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Зустрічити" — правильна доконана форма від "зустрічати".`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Забути" — доконана форма від "забувати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Одне недоконане дієслово завжди має тільки одну доконану форму.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Купити" — доконана форма від "купувати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Передайте привіт" — типова українська формула.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Продавати/продати" — протилежність "купувати/купити".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Чергування приголосних не існує в українських видових парах.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Створити" — доконана форма від "створювати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Побудувати" — доконана форма від "будувати".`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Заплатити" — недоконана форма.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Контекст не впливає на вибір доконаної форми.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Відремонтувати" — доконана форма від "ремонтувати".`}
     isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
     explanation={``}
   />
 </TrueFalse>
@@ -716,22 +1084,25 @@ English speakers often struggle with aspect pairs because English uses different
 ### Розсортуйте за категорією
 
 <GroupSort groups={{
-  "Розподіліть пари за типом дії.": [
-    "вибирати/вибрати: Розумові дії",
-    "вирішувати/вирішити: Розумові дії",
-    "забувати/забути: Розумові дії",
-    "згадувати/згадати: Розумові дії",
-    "готувати/приготувати: Повсякденні дії",
-    "купувати/купити: Повсякденні дії",
-    "продавати/продати: Повсякденні дії",
-    "прибирати/прибрати: Повсякденні дії",
-    "зустрічати/зустріти: Соціальні дії",
-    "передавати/передати: Соціальні дії",
-    "організовувати/організувати: Соціальні дії",
-    "представляти/представити: Соціальні дії",
-    "будувати/побудувати: Повсякденні дії",
-    "створювати/створити: Розумові дії",
-    "--"
+  "Розумові дії": [
+    "вибирати/вибрати",
+    "вирішувати/вирішити",
+    "забувати/забути",
+    "згадувати/згадати",
+    "створювати/створити"
+  ],
+  "Повсякденні дії": [
+    "готувати/приготувати",
+    "купувати/купити",
+    "продавати/продати",
+    "прибирати/прибрати",
+    "будувати/побудувати"
+  ],
+  "Соціальні дії": [
+    "зустрічати/зустріти",
+    "передавати/передати",
+    "організовувати/організувати",
+    "представляти/представити"
   ]
 }} />
 

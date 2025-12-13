@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module expands **emotions and personality vocabulary** — feelings, charac
 
 # Warm-up
 
-> 💡 **Ukrainian Emotions:** Ukrainians have rich emotional vocabulary! From радість (joy) to сум (sadness), сміливий (brave) to терплячий (patient) — express the full range of human experience in Ukrainian!
+> 💡 **Ukrainian Emotions:** Ukrainians have rich emotional vocabulary! From радість to сум, сміливий to терплячий — express the full range of human experience in Ukrainian!
 
 ---
 
@@ -405,28 +405,30 @@ I love such people. They give hope and joy. I'm returning home calm and satisfie
 
 ### Put the Conversation in Order [stage:controlled]
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Я теж рада. Ти завжди такий терплячий!"
+    "line": "Я теж рада. Ти завжди такий терплячий!"
   },
   {
     "speaker": "B",
-    "text": "Не хвилюйся! Все буде добре."
+    "line": "Не хвилюйся! Все буде добре."
   },
   {
     "speaker": "C",
-    "text": "Дякую за підтримку. Мені вже краще."
+    "line": "Дякую за підтримку. Мені вже краще."
   },
   {
     "speaker": "D",
-    "text": "Привіт! Ти виглядаєш стурбованим. Що сталося?"
+    "line": "Привіт! Ти виглядаєш стурбованим. Що сталося?"
   },
   {
     "speaker": "E",
-    "text": "У мене сьогодні важлива співбесіда. Я дуже нервую."
+    "line": "У мене сьогодні важлива співбесіда. Я дуже нервую."
   }
 ]} />
+</DialogueReorder>
 
 ### Emotion → Opposite [stage:discrimination]
 

@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -666,56 +666,58 @@ Ukrainian is one of the most beautiful Slavic languages!
 
 ### Restaurant Discussion
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Куди підемо вечеряти?"
+    "line": "Куди підемо вечеряти?"
   },
   {
     "speaker": "B",
-    "text": "Я знаю найкращий ресторан!"
+    "line": "Я знаю найкращий ресторан!"
   },
   {
     "speaker": "A",
-    "text": "Який?"
+    "line": "Який?"
   },
   {
     "speaker": "B",
-    "text": "\"Канапа\"! Там найсмачніший борщ."
+    "line": "\"Канапа\"! Там найсмачніший борщ."
   },
   {
     "speaker": "A",
-    "text": "Але це найдорожчий ресторан!"
+    "line": "Але це найдорожчий ресторан!"
   },
   {
     "speaker": "B",
-    "text": "Якість найвища."
+    "line": "Якість найвища."
   },
   {
     "speaker": "A",
-    "text": "А дешевшого немає?"
+    "line": "А дешевшого немає?"
   },
   {
     "speaker": "B",
-    "text": "Є \"Пузата Хата\" — найдешевша їжа."
+    "line": "Є \"Пузата Хата\" — найдешевша їжа."
   },
   {
     "speaker": "A",
-    "text": "І як тобі?"
+    "line": "І як тобі?"
   },
   {
     "speaker": "B",
-    "text": "Смачно, але не найкраще."
+    "line": "Смачно, але не найкраще."
   },
   {
     "speaker": "A",
-    "text": "Давай \"Канапу\"!"
+    "line": "Давай \"Канапу\"!"
   },
   {
     "speaker": "B",
-    "text": "Чудово!"
+    "line": "Чудово!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Superlatives
 

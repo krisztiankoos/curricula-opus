@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -312,30 +312,374 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
 
 <Quiz>
   <QuizQuestion
-    question={`Оберіть правильну форму.`}
-    options={[`готувала (процес)`, `приготувала (результат)`, `готує (теперішній)`, `приготує (майбутній)`, `прийшов`, `приходив`, `приходить`, `прийде`, `перевірив`, `перевіряв`, `перевіряю`, `буду перевіряти`, `грали`, `пограли`, `грають`, `пограють`, `прочитав`, `читав`, `читаю`, `буду читати`, `знайшли`, `знаходили`, `знаходимо`, `будемо знаходити`, `Сідай`, `Сядь`, `Сідати`, `Сісти`, `відкривай`, `відкрий`, `відкриваєш`, `відкриєш`, `погодився`, `погоджувався`, `погоджується`, `буде погоджуватися`, `працював`, `попрацював`, `працюю`, `попрацюю`, `встану`, `буду вставати`, `встаю`, `вставав`, `говорила`, `сказала`, `говорить`, `скаже`, `закінчилося`, `закінчувалося`, `закінчується`, `буде закінчуватися`, `Відправ`, `Відправляй`, `Відправляєш`, `Відправиш`]}
-    correctIndex={52}
+    question={`**Поки** вона ___ вечерю, він дивився телевізор.`}
+    options={[`готувала (процес)`, `приготувала (результат)`, `готує (теперішній)`, `приготує (майбутній)`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Як тільки** він ___, ми почали.`}
+    options={[`прийшов`, `приходив`, `приходить`, `прийде`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Спочатку** я ___ пошту, тоді написав звіт.`}
+    options={[`перевірив`, `перевіряв`, `перевіряю`, `буду перевіряти`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Тим часом** діти ___ в кімнаті.`}
+    options={[`грали`, `пограли`, `грають`, `пограють`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я ще не ___ цю книгу.`}
+    options={[`прочитав`, `читав`, `читаю`, `буду читати`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Нарешті** ми ___ рішення!`}
+    options={[`знайшли`, `знаходили`, `знаходимо`, `будемо знаходити`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`___, будь ласка!`}
+    options={[`Сідай`, `Сядь`, `Сідати`, `Сісти`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Не ___ двері незнайомцям!`}
+    options={[`відкривай`, `відкрий`, `відкриваєш`, `відкриєш`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Врешті-решт** він ___.`}
+    options={[`погодився`, `погоджувався`, `погоджується`, `буде погоджуватися`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Під час того як** я ___, зателефонував друг.`}
+    options={[`працював`, `попрацював`, `працюю`, `попрацюю`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Завтра я ___ о шостій.`}
+    options={[`встану`, `буду вставати`, `встаю`, `вставав`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона не ___ йому про це. (ніколи)`}
+    options={[`говорила`, `сказала`, `говорить`, `скаже`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`**Зрештою** все ___ добре.`}
+    options={[`закінчилося`, `закінчувалося`, `закінчується`, `буде закінчуватися`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`___ документи до п'ятниці!`}
+    options={[`Відправ`, `Відправляй`, `Відправляєш`, `Відправиш`]}
+    correctIndex={0}
     explanation={``}
   />
 </Quiz>
 
+### Маркер + вид
 
+<MatchUp pairs={[
+  { left: `поки`, right: `недоконаний (процес)` },
+  { left: `як тільки`, right: `доконаний (результат)` },
+  { left: `спочатку`, right: `доконаний (послідовність)` },
+  { left: `тим часом`, right: `недоконаний (паралельно)` },
+  { left: `нарешті`, right: `доконаний (результат)` },
+  { left: `під час того як`, right: `недоконаний (процес)` },
+  { left: `врешті-решт`, right: `доконаний (результат)` },
+  { left: `у той час як`, right: `недоконаний (паралельно)` },
+  { left: `тоді`, right: `доконаний (послідовність)` },
+  { left: `водночас`, right: `недоконаний (одночасно)` },
+  { left: `після того`, right: `доконаний (послідовність)` },
+  { left: `доки`, right: `недоконаний (тривалість)` },
+  { left: `наступного дня`, right: `доконаний (послідовність)` },
+  { left: `зрештою`, right: `доконаний (результат)` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`**Поки** я ___ до роботи, я слухав музику.`}
+    answer={`їхав`}
+    options={[`їхав`, `поїхав`]}
+  />
+  <FillInQuestion
+    sentence={`**Як тільки** вона ___, ми почали святкувати.`}
+    answer={`прийшла`}
+    options={[`приходила`, `прийшла`]}
+  />
+  <FillInQuestion
+    sentence={`**Спочатку** він ___ документи, **тоді** подзвонив клієнту.`}
+    answer={`перевірив`}
+    options={[`перевіряв`, `перевірив`]}
+  />
+  <FillInQuestion
+    sentence={`___, будь ласка, що сталося!`}
+    answer={`Розповідай`}
+    options={[`Розповідай`, `Розкажи`]}
+  />
+  <FillInQuestion
+    sentence={`Я ще не ___ цей фільм.`}
+    answer={`подивився`}
+    options={[`дивився`, `подивився`]}
+  />
+  <FillInQuestion
+    sentence={`Не ___ на зустрічі!`}
+    answer={`запізнюйся`}
+    options={[`запізнюйся`, `запізнися`]}
+  />
+  <FillInQuestion
+    sentence={`**Тим часом** мама ___ вечерю.`}
+    answer={`готувала`}
+    options={[`готувала`, `приготувала`]}
+  />
+  <FillInQuestion
+    sentence={`**Нарешті** ми ___ цю проблему!`}
+    answer={`вирішили`}
+    options={[`вирішували`, `вирішили`]}
+  />
+  <FillInQuestion
+    sentence={`Він не ___ цю книгу. (ніколи)`}
+    answer={`читав`}
+    options={[`читав`, `прочитав`]}
+  />
+  <FillInQuestion
+    sentence={`**Врешті-решт** вона ___ на пропозицію.`}
+    answer={`погодилася`}
+    options={[`погоджувалася`, `погодилася`]}
+  />
+  <FillInQuestion
+    sentence={`___ квитки заздалегідь!`}
+    answer={`Купи`}
+    options={[`Купуй`, `Купи`]}
+  />
+  <FillInQuestion
+    sentence={`**Під час того як** вони ___, я готував каву.`}
+    answer={`розмовляли`}
+    options={[`розмовляли`, `поговорили`]}
+  />
+  <FillInQuestion
+    sentence={`Завтра я **спочатку** ___ на пошту.`}
+    answer={`зайду`}
+    options={[`буду заходити`, `зайду`]}
+  />
+  <FillInQuestion
+    sentence={`**Зрештою** все ___ добре.`}
+    answer={`закінчилося`}
+    options={[`закінчувалося`, `закінчилося`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`поки | я | читав | зателефонував | друг`}
+    answer={`Поки я читав, зателефонував друг.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`як тільки | він | прийшов | ми | почали | роботу`}
+    answer={`Як тільки він прийшов, ми почали роботу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`спочатку | я | перевірив | пошту | тоді | написав | звіт`}
+    answer={`Спочатку я перевірив пошту, тоді написав звіт.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`нарешті | вони | знайшли | рішення | проблеми`}
+    answer={`Нарешті вони знайшли рішення проблеми.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`тим часом | діти | грали | у | дворі`}
+    answer={`Тим часом діти грали у дворі.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`врешті-решт | він | погодився | на | пропозицію`}
+    answer={`Врешті-решт він погодився на пропозицію.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`під час | того | як | я | працював | зателефонувала | мама`}
+    answer={`Під час того як я працював, зателефонувала мама.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`після | того | ми | пішли | в | кафе`}
+    answer={`Після того ми пішли в кафе.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`вона | ще | не | прочитала | цю | книгу`}
+    answer={`Вона ще не прочитала цю книгу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | забувай | ключі | коли | виходиш`}
+    answer={`Не забувай ключі, коли виходиш.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`зрештою | все | закінчилося | добре`}
+    answer={`Зрештою все закінчилося добре.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`сідай | будь | ласка | і | розповідай`}
+    answer={`Сідай, будь ласка, і розповідай.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`наступного | дня | він | поїхав | до | Києва`}
+    answer={`Наступного дня він поїхав до Києва.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`доки | він | не | повернувся | я | чекала`}
+    answer={`Доки він не повернувся, я чекала.`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Поки я прочитав книгу, він дивився фільм.`}
+    error={``}
+    answer={`Поки я читав книгу, він дивився фільм.`}
+    options={[]}
+    explanation={`"Поки" вимагає недоконаного виду (процес).`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Як тільки він приходив, ми починали.`}
+    error={``}
+    answer={`Як тільки він прийшов, ми почали.`}
+    options={[]}
+    explanation={`"Як тільки" вимагає доконаного виду (результат).`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Спочатку я вставав, тоді снідав.`}
+    error={``}
+    answer={`Спочатку я встав, тоді поснідав.`}
+    options={[]}
+    explanation={`Послідовність дій вимагає доконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Сядь, будь ласка! (запрошення гостя)`}
+    error={``}
+    answer={`Сідай, будь ласка!`}
+    options={[]}
+    explanation={`Для запрошення використовуємо недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я ще не читав цю книгу. (планую прочитати)`}
+    error={``}
+    answer={`Я ще не прочитав цю книгу.`}
+    options={[]}
+    explanation={`"Ще не" з планом на результат — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Тим часом мама приготувала вечерю. (паралельний процес)`}
+    error={``}
+    answer={`Тим часом мама готувала вечерю.`}
+    options={[]}
+    explanation={`"Тим часом" вказує на паралельний процес — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Нарешті вони знаходили рішення.`}
+    error={``}
+    answer={`Нарешті вони знайшли рішення.`}
+    options={[]}
+    explanation={`"Нарешті" вказує на результат — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Під час того як я попрацював, зателефонував друг.`}
+    error={``}
+    answer={`Під час того як я працював, зателефонував друг.`}
+    options={[]}
+    explanation={`"Під час того як" — процес, недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не забудь ключі! (регулярне попередження)`}
+    error={``}
+    answer={`Не забувай ключі!`}
+    options={[]}
+    explanation={`Регулярне попередження — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Врешті-решт він погоджувався.`}
+    error={``}
+    answer={`Врешті-решт він погодився.`}
+    options={[]}
+    explanation={`"Врешті-решт" — результат, доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`У той час як вона приготувала обід, він прибрав.`}
+    error={``}
+    answer={`У той час як вона готувала обід, він прибирав.`}
+    options={[]}
+    explanation={`"У той час як" — паралельні процеси, недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Зрештою все закінчувалося добре.`}
+    error={``}
+    answer={`Зрештою все закінчилося добре.`}
+    options={[]}
+    explanation={`"Зрештою" — підсумковий результат, доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Напиши листа! (запрошення писати)`}
+    error={``}
+    answer={`Пиши листа!`}
+    options={[]}
+    explanation={`Запрошення до процесу — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Доки він не повертався, я чекав.`}
+    error={``}
+    answer={`Доки він не повернувся, я чекав.`}
+    options={[]}
+    explanation={`Результат очікування — доконаний вид.`}
+  />
+</ErrorCorrection>
 
 ### У відрядженні
 
-<Cloze
-  passage={`Вставте правильну форму дієслова.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму дієслова.
 Минулого тижня я [___:1] у відрядження. [___:2] я [___:3] три години потягом. [___:4] я їхав, я [___:5] книгу і [___:6] музику.
 [___:7] я приїхав на місце, одразу [___:8] колезі. Ми [___:9] про зустріч наступного дня. [___:10] мама [___:11], щоб дізнатися, як я доїхав.
 [___:12] відрядження закінчилося, і я [___:13] додому. Я [___:14] нові контакти і цінний досвід!`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "їхав",
       "поїхав"
@@ -343,6 +687,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "поїхав"
   },
   {
+    "index": 1,
     "options": [
       "спочатку",
       "Спочатку"
@@ -350,6 +695,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "Спочатку"
   },
   {
+    "index": 2,
     "options": [
       "їхав",
       "поїхав"
@@ -357,6 +703,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "їхав"
   },
   {
+    "index": 3,
     "options": [
       "Поки",
       "Як тільки"
@@ -364,6 +711,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "Поки"
   },
   {
+    "index": 4,
     "options": [
       "читав",
       "прочитав"
@@ -371,6 +719,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "читав"
   },
   {
+    "index": 5,
     "options": [
       "слухав",
       "послухав"
@@ -378,6 +727,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "слухав"
   },
   {
+    "index": 6,
     "options": [
       "Як тільки",
       "Поки"
@@ -385,6 +735,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "Як тільки"
   },
   {
+    "index": 7,
     "options": [
       "подзвонив",
       "дзвонив"
@@ -392,6 +743,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "подзвонив"
   },
   {
+    "index": 8,
     "options": [
       "домовлялися",
       "домовилися"
@@ -399,6 +751,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "домовилися"
   },
   {
+    "index": 9,
     "options": [
       "Тим часом",
       "Як тільки"
@@ -406,6 +759,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "Тим часом"
   },
   {
+    "index": 10,
     "options": [
       "дзвонила",
       "подзвонила"
@@ -413,6 +767,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "подзвонила"
   },
   {
+    "index": 11,
     "options": [
       "Врешті-решт",
       "Тим часом"
@@ -420,6 +775,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "Врешті-решт"
   },
   {
+    "index": 12,
     "options": [
       "повернувся",
       "повертався"
@@ -427,6 +783,7 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "повернувся"
   },
   {
+    "index": 13,
     "options": [
       "здобув",
       "здобував"
@@ -434,7 +791,8 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
     "answer": "здобув"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть доконаний вид
 
@@ -463,215 +821,225 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Поки я читав, він подзвонив.`, `Поки я прочитав, він дзвонив.`, `Як тільки я читав, він подзвонив.`, `Як тільки я прочитав, він дзвонив.`, `Як тільки вона прийшла, ми почали.`, `Поки вона приходила, ми починали.`, `Як тільки вона приходила, ми починали.`, `Поки вона прийшла, ми почали.`, `Спочатку я перевірив пошту, тоді написав звіт.`, `Спочатку я перевіряв пошту, тоді писав звіт.`, `Перед тим я перевіряв пошту, потім писав звіт.`, `Після того я перевірив пошту, тоді написав звіт.`, `Тим часом діти грали.`, `Тим часом діти пограли.`, `Як тільки діти грали.`, `Нарешті діти пограли.`, `Я ще не прочитав цю книгу.`, `Я ще не читав цю книгу.`, `Я не читав цю книгу.`, `Я не прочитав цю книгу.`, `Нарешті ми знайшли рішення!`, `Нарешті ми знаходили рішення!`, `Поки ми знайшли рішення!`, `Тим часом ми знаходили рішення!`, `Сідай, будь ласка!`, `Сядь, будь ласка!`, `Сідати, будь ласка!`, `Сісти, будь ласка!`, `Не забувай ключі!`, `Не забудь ключі!`, `Не забуваєш ключі!`, `Не забудеш ключі!`, `Врешті-решт він погодився.`, `Врешті-решт він погоджувався.`, `Поки він погодився.`, `Тим часом він погоджувався.`, `У той час мама готувала вечерю.`, `У той час мама приготувала вечерю.`, `Як тільки мама готувала вечерю.`, `Нарешті мама приготувала вечерю.`, `Після того ми пішли в кафе.`, `Після того ми ходили в кафе.`, `Поки ми пішли в кафе.`, `Тим часом ми ходили в кафе.`, `Наступного дня він приїхав.`, `Наступного дня він приїжджав.`, `Тим часом він приїхав.`, `Поки він приїжджав.`, `Зрештою все закінчилося добре.`, `Зрештою все закінчувалося добре.`, `Тим часом все закінчилося добре.`, `Поки все закінчувалося добре.`, `Напиши звіт до п'ятниці!`, `Пиши звіт до п'ятниці!`, `Напишеш звіт до п'ятниці!`, `Пишеш звіт до п'ятниці!`]}
-    correctIndex={52}
+    source={`While I was reading, he called.`}
+    answer={`Поки я читав, він подзвонив.`}
+    options={[`Поки я читав, він подзвонив.`, `Поки я прочитав, він дзвонив.`, `Як тільки я читав, він подзвонив.`, `Як тільки я прочитав, він дзвонив.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`As soon as she arrived, we started.`}
+    answer={`Як тільки вона прийшла, ми почали.`}
+    options={[`Як тільки вона прийшла, ми почали.`, `Поки вона приходила, ми починали.`, `Як тільки вона приходила, ми починали.`, `Поки вона прийшла, ми почали.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`First I checked email, then I wrote a report.`}
+    answer={`Спочатку я перевірив пошту, тоді написав звіт.`}
+    options={[`Спочатку я перевірив пошту, тоді написав звіт.`, `Спочатку я перевіряв пошту, тоді писав звіт.`, `Перед тим я перевіряв пошту, потім писав звіт.`, `Після того я перевірив пошту, тоді написав звіт.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Meanwhile, the children were playing.`}
+    answer={`Тим часом діти грали.`}
+    options={[`Тим часом діти грали.`, `Тим часом діти пограли.`, `Як тільки діти грали.`, `Нарешті діти пограли.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I haven't read this book yet.`}
+    answer={`Я ще не прочитав цю книгу.`}
+    options={[`Я ще не прочитав цю книгу.`, `Я ще не читав цю книгу.`, `Я не читав цю книгу.`, `Я не прочитав цю книгу.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Finally, we found the solution!`}
+    answer={`Нарешті ми знайшли рішення!`}
+    options={[`Нарешті ми знайшли рішення!`, `Нарешті ми знаходили рішення!`, `Поки ми знайшли рішення!`, `Тим часом ми знаходили рішення!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Sit down, please! (invitation)`}
+    answer={`Сідай, будь ласка!`}
+    options={[`Сідай, будь ласка!`, `Сядь, будь ласка!`, `Сідати, будь ласка!`, `Сісти, будь ласка!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Don't forget the keys! (regular reminder)`}
+    answer={`Не забувай ключі!`}
+    options={[`Не забувай ключі!`, `Не забудь ключі!`, `Не забуваєш ключі!`, `Не забудеш ключі!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Eventually, he agreed.`}
+    answer={`Врешті-решт він погодився.`}
+    options={[`Врешті-решт він погодився.`, `Врешті-решт він погоджувався.`, `Поки він погодився.`, `Тим часом він погоджувався.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`During that time, mother was cooking dinner.`}
+    answer={`У той час мама готувала вечерю.`}
+    options={[`У той час мама готувала вечерю.`, `У той час мама приготувала вечерю.`, `Як тільки мама готувала вечерю.`, `Нарешті мама приготувала вечерю.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`After that, we went to the cafe.`}
+    answer={`Після того ми пішли в кафе.`}
+    options={[`Після того ми пішли в кафе.`, `Після того ми ходили в кафе.`, `Поки ми пішли в кафе.`, `Тим часом ми ходили в кафе.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`The next day, he arrived.`}
+    answer={`Наступного дня він приїхав.`}
+    options={[`Наступного дня він приїхав.`, `Наступного дня він приїжджав.`, `Тим часом він приїхав.`, `Поки він приїжджав.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`In the end, everything turned out well.`}
+    answer={`Зрештою все закінчилося добре.`}
+    options={[`Зрештою все закінчилося добре.`, `Зрештою все закінчувалося добре.`, `Тим часом все закінчилося добре.`, `Поки все закінчувалося добре.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Write the report by Friday! (specific task)`}
+    answer={`Напиши звіт до п'ятниці!`}
+    options={[`Напиши звіт до п'ятниці!`, `Пиши звіт до п'ятниці!`, `Напишеш звіт до п'ятниці!`, `Пишеш звіт до п'ятниці!`]}
     explanation={``}
   />
 </Translate>
 
 ### Робочий день
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Привіт! Як минув твій день?"
+    "line": "Привіт! Як минув твій день?"
   },
   {
     "speaker": "B",
-    "text": "Привіт! Був насичений день."
+    "line": "Привіт! Був насичений день."
   },
   {
     "speaker": "A",
-    "text": "Що ти робив?"
+    "line": "Що ти робив?"
   },
   {
     "speaker": "B",
-    "text": "Спочатку провів нараду з командою."
+    "line": "Спочатку провів нараду з командою."
   },
   {
     "speaker": "A",
-    "text": "Довго обговорювали?"
+    "line": "Довго обговорювали?"
   },
   {
     "speaker": "B",
-    "text": "Дві години. Поки ми говорили, секретар готував документи."
+    "line": "Дві години. Поки ми говорили, секретар готував документи."
   },
   {
     "speaker": "A",
-    "text": "І що вирішили?"
+    "line": "І що вирішили?"
   },
   {
     "speaker": "B",
-    "text": "Затвердили план роботи."
+    "line": "Затвердили план роботи."
   },
   {
     "speaker": "A",
-    "text": "А що було після того?"
+    "line": "А що було після того?"
   },
   {
     "speaker": "B",
-    "text": "Після того зустрівся з клієнтом."
+    "line": "Після того зустрівся з клієнтом."
   },
   {
     "speaker": "A",
-    "text": "Як пройшла зустріч?"
+    "line": "Як пройшла зустріч?"
   },
   {
     "speaker": "B",
-    "text": "Чудово! Нарешті підписали контракт."
+    "line": "Чудово! Нарешті підписали контракт."
   },
   {
     "speaker": "A",
-    "text": "Вітаю! Врешті-решт все вийшло."
+    "line": "Вітаю! Врешті-решт все вийшло."
   },
   {
     "speaker": "B",
-    "text": "Так, зрештою день закінчився добре!"
+    "line": "Так, зрештою день закінчився добре!"
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Поки" зазвичай вимагає недоконаного виду.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Як тільки" вимагає недоконаного виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Спочатку" вказує на послідовність завершених дій.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Тим часом" вказує на паралельний процес.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Сідай!" — це більш формальна форма, ніж "Сядь!".`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Я ще не прочитав" означає, що планую прочитати.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Нарешті" вказує на процес.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Для заборон зазвичай використовують недоконаний вид.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Врешті-решт" вимагає недоконаного виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`У наративах недоконаний вид описує фон.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Під час того як" вимагає доконаного виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Зрештою" вказує на підсумковий результат.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`Часові маркери завжди визначають вибір виду.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Доки" вказує на тривалість очікування.`}
     isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
     explanation={``}
   />
 </TrueFalse>
@@ -679,22 +1047,23 @@ Ukrainian aspect selection is context-dependent. Temporal markers like "споч
 ### Розсортуйте маркери
 
 <GroupSort groups={{
-  "Розподіліть маркери за типовим видом.": [
-    "поки: Недоконаний вид",
-    "як тільки: Доконаний вид",
-    "спочатку: Доконаний вид",
-    "тим часом: Недоконаний вид",
-    "нарешті: Доконаний вид",
-    "під час того як: Недоконаний вид",
-    "врешті-решт: Доконаний вид",
-    "у той час як: Недоконаний вид",
-    "тоді: Доконаний вид",
-    "водночас: Недоконаний вид",
-    "після того: Доконаний вид",
-    "доки: Недоконаний вид",
-    "наступного дня: Доконаний вид",
-    "зрештою: Доконаний вид",
-    "--"
+  "Недоконаний вид": [
+    "поки",
+    "тим часом",
+    "під час того як",
+    "у той час як",
+    "водночас",
+    "доки"
+  ],
+  "Доконаний вид": [
+    "як тільки",
+    "спочатку",
+    "нарешті",
+    "врешті-решт",
+    "тоді",
+    "після того",
+    "наступного дня",
+    "зрештою"
   ]
 }} />
 

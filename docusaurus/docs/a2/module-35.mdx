@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,7 +29,7 @@ This module teaches **root families** — groups of words sharing a common root.
 
 # Warm-up
 
-> 💡 **Root Power:** The root **ход-** (go/walk) appears in: ходити, вхід, вихід, похід, перехід, прихід. The root **пис-** (write) appears in: писати, письмо, письменник, підпис, запис. Learn roots = multiply vocabulary!
+> 💡 **Root Power:** The root **ход-** (go/walk) appears in: ходити, вхід, вихід, похід, перехід, прихід. The root **пис-** appears in: писати, письмо, письменник, підпис, запис. Learn roots = multiply vocabulary!
 
 ## Core Roots
 
@@ -348,7 +348,7 @@ In the evening I signed an important document and made an entry in my diary. The
   />
   <QuizQuestion
     question={`"Письменник" contains root:`}
-    options={[`пис- (write)`, `ход- (go)`, `чит- (read)`, `бач- (see)`]}
+    options={[`пис-`, `ход-`, `чит-`, `бач-`]}
     correctIndex={0}
     explanation={``}
   />
@@ -360,7 +360,7 @@ In the evening I signed an important document and made an entry in my diary. The
   />
   <QuizQuestion
     question={`"Побачення" contains root:`}
-    options={[`бач- (see)`, `пис- (write)`, `чит- (read)`, `ход- (go)`]}
+    options={[`бач-`, `пис-`, `чит-`, `ход-`]}
     correctIndex={0}
     explanation={``}
   />
@@ -422,7 +422,7 @@ In the evening I signed an important document and made an entry in my diary. The
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`"Побачення" is from бач- (see).`}
+    statement={`"Побачення" is from бач-.`}
     isTrue={true}
     explanation={``}
   />
@@ -485,7 +485,7 @@ In the evening I signed an important document and made an entry in my diary. The
     "прихід",
     "відхід"
   ],
-  "ПИС- (write)": [
+  "ПИС-": [
     "письмо",
     "письменник",
     "підпис",
@@ -493,14 +493,14 @@ In the evening I signed an important document and made an entry in my diary. The
     "опис",
     "напис"
   ],
-  "ЧИТ- (read)": [
+  "ЧИТ-": [
     "читач",
     "читання",
     "читальня",
     "прочитати",
     "перечитати"
   ],
-  "БАЧ-/ГЛЯД- (see)": [
+  "БАЧ-/ГЛЯД-": [
     "бачення",
     "побачення",
     "огляд",

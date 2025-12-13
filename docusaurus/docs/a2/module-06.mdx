@@ -15,15 +15,15 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 
 # Summary
 
-This module teaches a special use of the **instrumental case** — with **linking verbs** like **бути** (to be), **стати** (to become), and **працювати** (to work as). This is how Ukrainians express professions, states, and transformations.
+This module teaches a special use of the **instrumental case** — with **linking verbs** like **бути**, **стати**, and **працювати**. This is how Ukrainians express professions, states, and transformations.
 
 This grammatical concept is essential for everyday Ukrainian communication. Mastering it will significantly expand your ability to express complex ideas naturally. The patterns you learn here build on your previous knowledge while introducing new structures that native speakers use constantly.
 
@@ -66,7 +66,7 @@ When you learn these structures, you're not just memorizing endings — you're i
 
 
 
-## Verb 1: бути (to be) — Past & Future
+## Verb 1: бути — Past & Future
 
 In the **present tense**, Ukrainian often omits "бути" entirely, and the profession stays in nominative. But in **past** and **future**, you use instrumental:
 
@@ -81,9 +81,9 @@ In the **present tense**, Ukrainian often omits "бути" entirely, and the pro
 - Він **буде** інженер**ом**. (He will be an engineer.)
 - Ми **були** друз**ями**. (We were friends.)
 
-## Verb 2: стати/ставати (to become)
+## Verb 2: стати/ставати
 
-**Стати** (perfective) and **ставати** (imperfective) always take instrumental:
+**Стати** and **ставати** always take instrumental:
 
 | Verb | Structure | Example |
 |------|-----------|---------|
@@ -95,7 +95,7 @@ In the **present tense**, Ukrainian often omits "бути" entirely, and the pro
 - Вона **хоче стати** юрист**ом**. (She wants to become a lawyer.)
 - Ми **станемо** друз**ями**. (We will become friends.)
 
-## Verb 3: працювати (to work as)
+## Verb 3: працювати
 
 When expressing a profession with **працювати**, use instrumental:
 
@@ -471,13 +471,13 @@ The beauty of Ukrainian grammar lies in its precision. Every ending carries mean
     "Він буде інженером.",
     "Вона буде лікаркою."
   ],
-  "стати (become)": [
+  "стати": [
     "Він став директором.",
     "Вона стала журналісткою.",
     "Я хочу стати програмістом.",
     "Вони стали друзями."
   ],
-  "працювати (work as)": [
+  "працювати": [
     "Він працює лікарем.",
     "Вона працює вчителькою.",
     "Я працюю програмістом.",
@@ -709,56 +709,58 @@ The beauty of Ukrainian grammar lies in its precision. Every ending carries mean
 
 ### Job Interview
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Доброго дня! Розкажіть про себе."
+    "line": "Доброго дня! Розкажіть про себе."
   },
   {
     "speaker": "B",
-    "text": "Я Олексій. Я був студентом КПІ."
+    "line": "Я Олексій. Я був студентом КПІ."
   },
   {
     "speaker": "A",
-    "text": "Де ви працювали раніше?"
+    "line": "Де ви працювали раніше?"
   },
   {
     "speaker": "B",
-    "text": "Я працював розробником у стартапі."
+    "line": "Я працював розробником у стартапі."
   },
   {
     "speaker": "A",
-    "text": "Чому хочете працювати у нас?"
+    "line": "Чому хочете працювати у нас?"
   },
   {
     "speaker": "B",
-    "text": "Я хочу стати частиною великої команди."
+    "line": "Я хочу стати частиною великої команди."
   },
   {
     "speaker": "A",
-    "text": "Як ви бачите себе через п'ять років?"
+    "line": "Як ви бачите себе через п'ять років?"
   },
   {
     "speaker": "B",
-    "text": "Я хочу стати тімлідом або архітектором."
+    "line": "Я хочу стати тімлідом або архітектором."
   },
   {
     "speaker": "A",
-    "text": "Чудово! Ви здаєтеся амбіційним кандидатом."
+    "line": "Чудово! Ви здаєтеся амбіційним кандидатом."
   },
   {
     "speaker": "B",
-    "text": "Дякую! Я готовий працювати важко."
+    "line": "Дякую! Я готовий працювати важко."
   },
   {
     "speaker": "A",
-    "text": "Ми зв'яжемося з вами."
+    "line": "Ми зв'яжемося з вами."
   },
   {
     "speaker": "B",
-    "text": "Дякую за можливість!"
+    "line": "Дякую за можливість!"
   }
 ]} />
+</DialogueReorder>
 
 ### Find Instrumental Professions
 

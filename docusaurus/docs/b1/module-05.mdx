@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -314,31 +314,375 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
 
 <Quiz>
   <QuizQuestion
-    question={`Визначте, який вид потрібен.`}
-    options={[`не прочитав`, `не читав`, `не прочитаю`, `не читаю`, `не закінчила`, `не закінчувала`, `не закінчує`, `не закінчить`, `не допоміг`, `не допомагав`, `не допоможе`, `не допомагає`, `не прочитав`, `не читав`, `не читає`, `не прочитає`, `не подумав`, `не думав`, `не думаю`, `не подумаю`, `не прийняли`, `не приймали`, `не приймаємо`, `не приймемо`, `не побачив`, `не бачив`, `не бачу`, `не побачу`, `не зробила`, `не робила`, `не робить`, `не зробить`, `не поїхав`, `не їздив`, `не їжджу`, `не поїду`, `не відповів`, `не відповідав`, `не відповідає`, `не відповість`, `не сказав`, `не казав`, `не каже`, `не скаже`, `не купив`, `не купував`, `не купую`, `не куплю`, `не заспівав`, `не співав`, `не співає`, `не заспіває`, `не прийшла`, `не приходила`, `не приходить`, `не прийде`]}
-    correctIndex={52}
+    question={`Я ніколи ___ цієї книги.`}
+    options={[`не прочитав`, `не читав`, `не прочитаю`, `не читаю`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона ще ___ роботу.`}
+    options={[`не закінчила`, `не закінчувала`, `не закінчує`, `не закінчить`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ніхто ___ мене.`}
+    options={[`не допоміг`, `не допомагав`, `не допоможе`, `не допомагає`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Він ще ___ книгу, яку я дав.`}
+    options={[`не прочитав`, `не читав`, `не читає`, `не прочитає`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я взагалі ___ про це.`}
+    options={[`не подумав`, `не думав`, `не думаю`, `не подумаю`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ми ще ___ рішення.`}
+    options={[`не прийняли`, `не приймали`, `не приймаємо`, `не приймемо`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ніде ___ такого.`}
+    options={[`не побачив`, `не бачив`, `не бачу`, `не побачу`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона поки ___ домашнє завдання.`}
+    options={[`не зробила`, `не робила`, `не робить`, `не зробить`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я ніколи ___ до Львова.`}
+    options={[`не поїхав`, `не їздив`, `не їжджу`, `не поїду`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Він ще ___ на листа.`}
+    options={[`не відповів`, `не відповідав`, `не відповідає`, `не відповість`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Ніхто нічого ___.`}
+    options={[`не сказав`, `не казав`, `не каже`, `не скаже`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Я поки ___ квитки.`}
+    options={[`не купив`, `не купував`, `не купую`, `не куплю`]}
+    correctIndex={0}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Він ніколи ___ цю пісню.`}
+    options={[`не заспівав`, `не співав`, `не співає`, `не заспіває`]}
+    correctIndex={1}
+    explanation={``}
+  />
+  <QuizQuestion
+    question={`Вона ще ___ на роботу.`}
+    options={[`не прийшла`, `не приходила`, `не приходить`, `не прийде`]}
+    correctIndex={0}
     explanation={``}
   />
 </Quiz>
 
+### Заперечення і значення
 
+<MatchUp pairs={[
+  { left: `Я не читав книги.`, right: `Ніколи в житті` },
+  { left: `Я ще не прочитав книгу.`, right: `Планую, але не встиг` },
+  { left: `Ніхто не знає.`, right: `Жодна людина` },
+  { left: `Ніколи не забуду.`, right: `Ніколи в майбутньому` },
+  { left: `Ніде не бачив.`, right: `У жодному місці` },
+  { left: `Нічого не розумію.`, right: `Жодної речі` },
+  { left: `Вже не встиг.`, right: `Запізно` },
+  { left: `Більше не буду.`, right: `Припиняю` },
+  { left: `Поки не закінчиш — не йди.`, right: `Умова` },
+  { left: `Зовсім не важко.`, right: `Взагалі` },
+  { left: `Абсолютно не згоден.`, right: `Повністю` },
+  { left: `Навряд чи прийде.`, right: `Малоймовірно` },
+  { left: `Взагалі не розумію.`, right: `Цілком` },
+  { left: `Жодний варіант не підходить.`, right: `Ні один` }
+]} />
 
+### Оберіть правильний вид
 
+<FillIn>
+  <FillInQuestion
+    sentence={`Я ніколи ___ цього фільму.`}
+    answer={`не дивився`}
+    options={[`не дивився`, `не подивився`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ще ___ домашнє завдання.`}
+    answer={`не зробила`}
+    options={[`не робила`, `не зробила`]}
+  />
+  <FillInQuestion
+    sentence={`Ніхто ___ мені про це.`}
+    answer={`не казав`}
+    options={[`не казав`, `не сказав`]}
+  />
+  <FillInQuestion
+    sentence={`Він поки ___ рішення.`}
+    answer={`не прийняв`}
+    options={[`не приймав`, `не прийняв`]}
+  />
+  <FillInQuestion
+    sentence={`Я взагалі ___ української літератури.`}
+    answer={`не читав`}
+    options={[`не читав`, `не прочитав`]}
+  />
+  <FillInQuestion
+    sentence={`Ми ще ___ всі питання.`}
+    answer={`не обговорили`}
+    options={[`не обговорювали`, `не обговорили`]}
+  />
+  <FillInQuestion
+    sentence={`Ніде ___ такого сервісу.`}
+    answer={`не бачив`}
+    options={[`не бачив`, `не побачив`]}
+  />
+  <FillInQuestion
+    sentence={`Вона ще ___ листа.`}
+    answer={`не написала`}
+    options={[`не писала`, `не написала`]}
+  />
+  <FillInQuestion
+    sentence={`Я ніколи ___ до цього ресторану.`}
+    answer={`не ходив`}
+    options={[`не ходив`, `не пішов`]}
+  />
+  <FillInQuestion
+    sentence={`Він поки ___ роботу.`}
+    answer={`не знайшов`}
+    options={[`не шукав`, `не знайшов`]}
+  />
+  <FillInQuestion
+    sentence={`Ніхто нічого ___ про зміни.`}
+    answer={`не знав`}
+    options={[`не знав`, `не дізнався`]}
+  />
+  <FillInQuestion
+    sentence={`Я ще ___ статтю до кінця.`}
+    answer={`не дочитав`}
+    options={[`не читав`, `не дочитав`]}
+  />
+  <FillInQuestion
+    sentence={`Він ніколи ___ на гітарі.`}
+    answer={`не грав`}
+    options={[`не грав`, `не зіграв`]}
+  />
+  <FillInQuestion
+    sentence={`Ми поки ___ квитки.`}
+    answer={`не замовили`}
+    options={[`не замовляли`, `не замовили`]}
+  />
+</FillIn>
 
+### Складіть речення
 
+<Unjumble>
+  <UnjumbleQuestion
+    words={`ніколи | не | я | книги | цієї | читав`}
+    answer={`Я ніколи не читав цієї книги.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`ще | прочитав | не | він | статтю`}
+    answer={`Він ще не прочитав статтю.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | ніхто | знає | нічого`}
+    answer={`Ніхто нічого не знає.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | взагалі | розумію | я | це`}
+    answer={`Я взагалі не розумію це.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | бачив | ніде | такого`}
+    answer={`Ніде не бачив такого.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`поки | зробила | не | вона | роботу`}
+    answer={`Вона поки не зробила роботу.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | ніколи | забуду | я | цього`}
+    answer={`Я ніколи не забуду цього.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | абсолютно | він | згоден`}
+    answer={`Він абсолютно не згоден.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | ще | ми | вирішили | це`}
+    answer={`Ми ще не вирішили це.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | жодний | варіант | підходить`}
+    answer={`Жодний варіант не підходить.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | більше | буду | я | цього | робити`}
+    answer={`Я більше не буду робити цього.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | ніяк | можу | я | зрозуміти`}
+    answer={`Я ніяк не можу зрозуміти.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`не | мабуть | прийде | він`}
+    answer={`Він мабуть не прийде.`}
+    hint={``}
+  />
+  <UnjumbleQuestion
+    words={`закінчиш | поки | не | йди | не`}
+    answer={`Поки не закінчиш — не йди.`}
+    hint={``}
+  />
+</Unjumble>
 
+### Виправте помилки
 
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я ніколи не прочитав цієї книги.`}
+    error={``}
+    answer={`Я ніколи не читав цієї книги.`}
+    options={[]}
+    explanation={`Загальне заперечення вимагає недоконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він ще не читав цю статтю (планує прочитати).`}
+    error={``}
+    answer={`Він ще не прочитав цю статтю.`}
+    options={[]}
+    explanation={`"Ще не" з очікуваним результатом — доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ніхто знає про це.`}
+    error={``}
+    answer={`Ніхто не знає про це.`}
+    options={[]}
+    explanation={`В українській потрібне подвійне заперечення.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я не читав цю книгу (ніколи).`}
+    error={``}
+    answer={`Я не читав цієї книги.`}
+    options={[]}
+    explanation={`У заперечних реченнях — родовий відмінок.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона ніде не побачила такого.`}
+    error={``}
+    answer={`Вона ніде не бачила такого.`}
+    options={[]}
+    explanation={`"Ніде" вимагає недоконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Нічого не зрозумів (загалом).`}
+    error={``}
+    answer={`Нічого не розумів.`}
+    options={[]}
+    explanation={`Загальне нерозуміння — недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ніхто не допоміг мені з цим (ніколи).`}
+    error={``}
+    answer={`Ніхто не допомагав мені з цим.`}
+    options={[]}
+    explanation={`"Ніхто" + загальне заперечення = недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він поки не читав книгу до кінця.`}
+    error={``}
+    answer={`Він поки не дочитав книгу до кінця.`}
+    options={[]}
+    explanation={`"Поки не" + результат = доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я взагалі не подумав про це (ніколи).`}
+    error={``}
+    answer={`Я взагалі не думав про це.`}
+    options={[]}
+    explanation={`"Взагалі" + заперечення = недоконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ніхто нічого сказав.`}
+    error={``}
+    answer={`Ніхто нічого не сказав.`}
+    options={[]}
+    explanation={`Потрібне "не" після заперечних слів.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Жодний варіант підходить.`}
+    error={``}
+    answer={`Жодний варіант не підходить.`}
+    options={[]}
+    explanation={`"Жодний" вимагає "не" перед дієсловом.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я ще не дивився цей фільм (маю намір).`}
+    error={``}
+    answer={`Я ще не подивився цей фільм.`}
+    options={[]}
+    explanation={`"Ще не" + намір = доконаний вид.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона ніколи не зробила такої помилки.`}
+    error={``}
+    answer={`Вона ніколи не робила такої помилки.`}
+    options={[]}
+    explanation={`"Ніколи" вимагає недоконаного виду.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми поки не обговорювали це питання (результат очікується).`}
+    error={``}
+    answer={`Ми поки не обговорили це питання.`}
+    options={[]}
+    explanation={`"Поки не" + очікуваний результат = доконаний вид.`}
+  />
+</ErrorCorrection>
 
 ### Відпустка Олени
 
-<Cloze
-  passage={`Вставте правильну форму.
+<Cloze>
+  <ClozePassage
+    text={`Вставте правильну форму.
 Олена хотіла поїхати у відпустку, але виникли проблеми. Вона ще [___:1] квитки, бо [___:2] часу їх шукати. Її колега ніколи [___:3] до цієї країни, тому [___:4] порадити готель. Олена взагалі [___:5] нічого про це місце.
 Вона подзвонила до турагентства, але там [___:6]. Вона чекала годину, але ніхто [___:7]. Тоді вона вирішила шукати сама в інтернеті. На жаль, вона ще [___:8] гарного варіанту.
 Її друг сказав: "Ти поки [___:9] на всіх сайтах. Спробуй ще!" Олена [___:10], що знайде щось хороше. Врешті вона [___:11] ідеальний готель, хоча спочатку [___:12] на нього уваги.
 Тепер Олена [___:13] більш досвідчена. Вона вже [___:14] як шукати найкращі пропозиції в інтернеті.`}
-  blanks={[
+    blanks={[
   {
+    "index": 0,
     "options": [
       "не купила",
       "не купувала"
@@ -346,6 +690,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не купила"
   },
   {
+    "index": 1,
     "options": [
       "не мала",
       "не знайшла"
@@ -353,6 +698,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не мала"
   },
   {
+    "index": 2,
     "options": [
       "не їздив",
       "не поїхав"
@@ -360,6 +706,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не їздив"
   },
   {
+    "index": 3,
     "options": [
       "не міг",
       "не зміг"
@@ -367,6 +714,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не міг"
   },
   {
+    "index": 4,
     "options": [
       "не знала",
       "не дізналася"
@@ -374,6 +722,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не знала"
   },
   {
+    "index": 5,
     "options": [
       "не відповідали",
       "не відповіли"
@@ -381,6 +730,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не відповідали"
   },
   {
+    "index": 6,
     "options": [
       "не передзвонював",
       "не передзвонив"
@@ -388,6 +738,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не передзвонив"
   },
   {
+    "index": 7,
     "options": [
       "не знаходила",
       "не знайшла"
@@ -395,6 +746,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не знайшла"
   },
   {
+    "index": 8,
     "options": [
       "не шукала",
       "не пошукала"
@@ -402,6 +754,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не шукала"
   },
   {
+    "index": 9,
     "options": [
       "не сумнівалася",
       "не посумнівалася"
@@ -409,6 +762,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не сумнівалася"
   },
   {
+    "index": 10,
     "options": [
       "знайшла",
       "знаходила"
@@ -416,6 +770,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "знайшла"
   },
   {
+    "index": 11,
     "options": [
       "не звертала",
       "не звернула"
@@ -423,6 +778,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "не звертала"
   },
   {
+    "index": 12,
     "options": [
       "стала",
       "ставала"
@@ -430,6 +786,7 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "стала"
   },
   {
+    "index": 13,
     "options": [
       "зрозуміла",
       "розуміла"
@@ -437,7 +794,8 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
     "answer": "зрозуміла"
   }
 ]}
-/>
+  />
+</Cloze>
 
 ### Знайдіть заперечні конструкції
 
@@ -466,215 +824,225 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
 
 <Translate>
   <TranslateItem
-    prompt={`Оберіть правильний переклад.`}
-    options={[`Я ніколи не читав цієї книги.`, `Я ніколи не прочитав цю книгу.`, `Я не читав цієї книги.`, `Я не прочитав книгу.`, `Я не закінчував проєкт.`, `Я ще не закінчив проєкт.`, `Я ніколи не закінчував проєкт.`, `Я не закінчу проєкт.`, `Ніхто нічого не знає.`, `Ніхто знає нічого.`, `Ніхто не знає.`, `Ніщо не знає ніхто.`, `Я не зрозумів це зовсім.`, `Я взагалі не розумію це.`, `Я зовсім зрозумів це.`, `Я не зрозумію це.`, `Вона ніколи не поїхала до Києва.`, `Вона ніколи не була в Києві.`, `Вона не поїхала до Києва.`, `Вона ще не поїхала до Києва.`, `Я не телефонував йому.`, `Я ще не зателефонував йому.`, `Я ніколи не телефонував йому.`, `Я не зателефоную йому.`, `Ніхто допомагав мені.`, `Ніхто не допомагав мені.`, `Ніхто не допоміг мені.`, `Не допомагав ніхто мені.`, `Не кури тут!`, `Не покури тут!`, `Не закури тут!`, `Не куріть тут!`, `Не забувай ключі!`, `Не забудь ключі!`, `Не забувати ключі!`, `Не забувши ключі!`, `Я не згоден абсолютно.`, `Я абсолютно не згоден.`, `Абсолютно не згоден я.`, `Я згоден абсолютно не.`, `Вона не писала листа.`, `Вона ще не написала листа.`, `Вона ніколи не писала листа.`, `Вона не написала листа ніколи.`, `Я ніколи не працював тут.`, `Я ніколи не попрацював тут.`, `Я не працював тут.`, `Я ще не працював тут.`, `Ніщо не допоможе.`, `Нічого допоможе.`, `Ніщо допоможе не.`, `Допоможе ніщо.`, `Не біжи!`, `Не побіжи!`, `Не втечи!`, `Не бігти!`]}
-    correctIndex={52}
+    source={`I have never read this book.`}
+    answer={`Я ніколи не читав цієї книги.`}
+    options={[`Я ніколи не читав цієї книги.`, `Я ніколи не прочитав цю книгу.`, `Я не читав цієї книги.`, `Я не прочитав книгу.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I haven't finished the project yet.`}
+    answer={`Я ще не закінчив проєкт.`}
+    options={[`Я не закінчував проєкт.`, `Я ще не закінчив проєкт.`, `Я ніколи не закінчував проєкт.`, `Я не закінчу проєкт.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Nobody knows anything.`}
+    answer={`Ніхто нічого не знає.`}
+    options={[`Ніхто нічого не знає.`, `Ніхто знає нічого.`, `Ніхто не знає.`, `Ніщо не знає ніхто.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I don't understand this at all.`}
+    answer={`Я взагалі не розумію це.`}
+    options={[`Я не зрозумів це зовсім.`, `Я взагалі не розумію це.`, `Я зовсім зрозумів це.`, `Я не зрозумію це.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She has never been to Kyiv.`}
+    answer={`Вона ніколи не була в Києві.`}
+    options={[`Вона ніколи не поїхала до Києва.`, `Вона ніколи не була в Києві.`, `Вона не поїхала до Києва.`, `Вона ще не поїхала до Києва.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I haven't called him yet.`}
+    answer={`Я ще не зателефонував йому.`}
+    options={[`Я не телефонував йому.`, `Я ще не зателефонував йому.`, `Я ніколи не телефонував йому.`, `Я не зателефоную йому.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Nobody helped me.`}
+    answer={`Ніхто не допомагав мені.`}
+    options={[`Ніхто допомагав мені.`, `Ніхто не допомагав мені.`, `Ніхто не допоміг мені.`, `Не допомагав ніхто мені.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Don't smoke here! (general rule)`}
+    answer={`Не кури тут!`}
+    options={[`Не кури тут!`, `Не покури тут!`, `Не закури тут!`, `Не куріть тут!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Don't forget the keys! (warning)`}
+    answer={`Не забудь ключі!`}
+    options={[`Не забувай ключі!`, `Не забудь ключі!`, `Не забувати ключі!`, `Не забувши ключі!`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I absolutely disagree.`}
+    answer={`Я абсолютно не згоден.`}
+    options={[`Я не згоден абсолютно.`, `Я абсолютно не згоден.`, `Абсолютно не згоден я.`, `Я згоден абсолютно не.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`She hasn't written the letter yet.`}
+    answer={`Вона ще не написала листа.`}
+    options={[`Вона не писала листа.`, `Вона ще не написала листа.`, `Вона ніколи не писала листа.`, `Вона не написала листа ніколи.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`I have never worked here.`}
+    answer={`Я ніколи не працював тут.`}
+    options={[`Я ніколи не працював тут.`, `Я ніколи не попрацював тут.`, `Я не працював тут.`, `Я ще не працював тут.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Nothing will help.`}
+    answer={`Ніщо не допоможе.`}
+    options={[`Ніщо не допоможе.`, `Нічого допоможе.`, `Ніщо допоможе не.`, `Допоможе ніщо.`]}
+    explanation={``}
+  />
+  <TranslateItem
+    source={`Don't run! (process)`}
+    answer={`Не біжи!`}
+    options={[`Не біжи!`, `Не побіжи!`, `Не втечи!`, `Не бігти!`]}
     explanation={``}
   />
 </Translate>
 
 ### Розмова про досвід
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Ти вже прочитав ту книгу?"
+    "line": "Ти вже прочитав ту книгу?"
   },
   {
     "speaker": "B",
-    "text": "Ні, ще не прочитав. Не мав часу."
+    "line": "Ні, ще не прочитав. Не мав часу."
   },
   {
     "speaker": "A",
-    "text": "А ти взагалі читав книги цього автора?"
+    "line": "А ти взагалі читав книги цього автора?"
   },
   {
     "speaker": "B",
-    "text": "Ні, ніколи не читав. Це перша."
+    "line": "Ні, ніколи не читав. Це перша."
   },
   {
     "speaker": "A",
-    "text": "Серйозно? Він дуже відомий!"
+    "line": "Серйозно? Він дуже відомий!"
   },
   {
     "speaker": "B",
-    "text": "Знаю, але якось не було нагоди."
+    "line": "Знаю, але якось не було нагоди."
   },
   {
     "speaker": "A",
-    "text": "Тоді обов'язково прочитай!"
+    "line": "Тоді обов'язково прочитай!"
   },
   {
     "speaker": "B",
-    "text": "Добре, як тільки знайду час."
+    "line": "Добре, як тільки знайду час."
   },
   {
     "speaker": "A",
-    "text": "Не відкладай! Книга чудова."
+    "line": "Не відкладай! Книга чудова."
   },
   {
     "speaker": "B",
-    "text": "Обіцяю, що почну сьогодні."
+    "line": "Обіцяю, що почну сьогодні."
   },
   {
     "speaker": "A",
-    "text": "От і добре!"
+    "line": "От і добре!"
   },
   {
     "speaker": "B",
-    "text": "А ти сам давно її прочитав?"
+    "line": "А ти сам давно її прочитав?"
   },
   {
     "speaker": "A",
-    "text": "Так, ще минулого року."
+    "line": "Так, ще минулого року."
   },
   {
     "speaker": "B",
-    "text": "Завидую! Я ніколи не встигаю читати."
+    "line": "Завидую! Я ніколи не встигаю читати."
   }
 ]} />
+</DialogueReorder>
 
 ### Правда чи міф?
 
 <TrueFalse>
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`У загальному запереченні вживається недоконаний вид.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Ще не" вживається з недоконаним видом.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Подвійне заперечення в українській — це помилка.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Ніхто не знає" — правильна конструкція.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`У заперечних реченнях завжди вживається знахідний відмінок.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Не кури!" — загальна заборона (недоконаний вид).`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Не забудь!" — попередження (доконаний вид).`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Я ніколи не прочитав" — правильно.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Нічого не знаю" — подвійне заперечення.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`"Поки не закінчиш" вимагає доконаного виду.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`В англійській також є подвійне заперечення.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
+    statement={`Родовий відмінок часто вживається в заперечних реченнях.`}
     isTrue={true}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Жодний" не вимагає "не" перед дієсловом.`}
     isTrue={false}
     explanation={``}
   />
   <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
+    statement={`"Взагалі не" підсилює заперечення.`}
     isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={false}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Правда`}
-    isTrue={true}
-    explanation={``}
-  />
-  <TrueFalseQuestion
-    statement={`Міф`}
-    isTrue={false}
     explanation={``}
   />
 </TrueFalse>
@@ -682,22 +1050,23 @@ English uses the same form for both: "Don't smoke!" and "Don't fall!" In Ukraini
 ### Розсортуйте за видом
 
 <GroupSort groups={{
-  "Розподіліть конструкції.": [
-    "Я ніколи не читав.: Недоконаний вид",
-    "Я ще не прочитав.: Доконаний вид",
-    "Ніхто не допомагав.: Недоконаний вид",
-    "Вона поки не закінчила.: Доконаний вид",
-    "Він ніде не бачив.: Недоконаний вид",
-    "Ми ще не вирішили.: Доконаний вид",
-    "Нічого не знав.: Недоконаний вид",
-    "Вона вже не встигла.: Доконаний вид",
-    "Ніколи не говорив.: Недоконаний вид",
-    "Поки не зробив.: Доконаний вид",
-    "Взагалі не думав.: Недоконаний вид",
-    "Ще не відповів.: Доконаний вид",
-    "Ніхто не допомагав.: Недоконаний вид",
-    "Більше не повернувся.: Доконаний вид",
-    "--"
+  "Недоконаний вид": [
+    "Я ніколи не читав.",
+    "Ніхто не допомагав.",
+    "Він ніде не бачив.",
+    "Нічого не знав.",
+    "Ніколи не говорив.",
+    "Взагалі не думав.",
+    "Ніхто не допомагав."
+  ],
+  "Доконаний вид": [
+    "Я ще не прочитав.",
+    "Вона поки не закінчила.",
+    "Ми ще не вирішили.",
+    "Вона вже не встигла.",
+    "Поки не зробив.",
+    "Ще не відповів.",
+    "Більше не повернувся."
   ]
 }} />
 

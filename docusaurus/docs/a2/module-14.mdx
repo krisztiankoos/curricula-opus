@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -649,7 +649,7 @@ In the evening she met with friends. They discussed plans and decided to go on v
     error={`сказував`}
     answer={`говорив`}
     options={[`говорив`, `сказував`, `казав`]}
-    explanation={`Imperfective is говорити (suppletive).`}
+    explanation={`Imperfective is говорити.`}
   />
   <ErrorCorrectionItem
     sentence={`Вона знайдила ключі. (past of знайти)`}
@@ -663,7 +663,7 @@ In the evening she met with friends. They discussed plans and decided to go on v
     error={`взявав`}
     answer={`брав`}
     options={[`брав`, `взявав`, `забирав`]}
-    explanation={`Imperfective is брати (suppletive).`}
+    explanation={`Imperfective is брати.`}
   />
   <ErrorCorrectionItem
     sentence={`Вона відкриватиме вікно. (completed future)`}
@@ -699,56 +699,58 @@ In the evening she met with friends. They discussed plans and decided to go on v
 
 ### Morning Routine
 
-<DialogueReorder lines={[
+<DialogueReorder>
+  <DialogueReorderActivity lines={[
   {
     "speaker": "A",
-    "text": "Що ти робиш зранку?"
+    "line": "Що ти робиш зранку?"
   },
   {
     "speaker": "B",
-    "text": "Встаю о сьомій."
+    "line": "Встаю о сьомій."
   },
   {
     "speaker": "A",
-    "text": "А потім?"
+    "line": "А потім?"
   },
   {
     "speaker": "B",
-    "text": "Спочатку відкриваю вікно."
+    "line": "Спочатку відкриваю вікно."
   },
   {
     "speaker": "A",
-    "text": "Потім одягаєшся?"
+    "line": "Потім одягаєшся?"
   },
   {
     "speaker": "B",
-    "text": "Так, одягаюся і снідаю."
+    "line": "Так, одягаюся і снідаю."
   },
   {
     "speaker": "A",
-    "text": "Коли виходиш з дому?"
+    "line": "Коли виходиш з дому?"
   },
   {
     "speaker": "B",
-    "text": "О восьмій."
+    "line": "О восьмій."
   },
   {
     "speaker": "A",
-    "text": "Що робиш перед виходом?"
+    "line": "Що робиш перед виходом?"
   },
   {
     "speaker": "B",
-    "text": "Закриваю вікно і вимикаю світло."
+    "line": "Закриваю вікно і вимикаю світло."
   },
   {
     "speaker": "A",
-    "text": "А ввечері?"
+    "line": "А ввечері?"
   },
   {
     "speaker": "B",
-    "text": "Вмикаю телевізор і читаю книгу."
+    "line": "Вмикаю телевізор і читаю книгу."
   }
 ]} />
+</DialogueReorder>
 
 ### Find Perfective Forms
 

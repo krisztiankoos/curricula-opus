@@ -15,8 +15,8 @@ import GroupSort from '@site/src/components/GroupSort';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Select, { SelectQuestion } from '@site/src/components/Select';
 import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze from '@site/src/components/Cloze';
-import DialogueReorder from '@site/src/components/DialogueReorder';
+import Cloze, { ClozePassage } from '@site/src/components/Cloze';
+import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
@@ -29,20 +29,20 @@ This module teaches **action verb prefixes** — how prefixes modify non-motion 
 
 # Warm-up
 
-> 💡 **Action Prefixes:** From "писати" (to write): написати (write out), переписати (rewrite), дописати (finish writing), підписати (sign), виписати (write out/discharge). ONE root + prefixes = different actions!
+> 💡 **Action Prefixes:** From "писати" (to write): написати, переписати, дописати, підписати, виписати (write out/discharge). ONE root + prefixes = different actions!
 
 ## Core Action Prefixes
 
 | Prefix | Meaning | Example |
 |--------|---------|---------|
-| **на-** | accumulation, onto | написати (write out) |
-| **по-** | beginning, briefly | почитати (read a bit) |
-| **роз-** | dispersion, apart | роздати (distribute) |
-| **від-** | separation, open | відкрити (open) |
-| **за-** | closure, beginning | закрити (close) |
-| **пере-** | re-do, across | переписати (rewrite) |
-| **до-** | completion, addition | дочитати (finish reading) |
-| **ви-** | extraction, completion | виписати (write out) |
+| **на-** | accumulation, onto | написати |
+| **по-** | beginning, briefly | почитати |
+| **роз-** | dispersion, apart | роздати |
+| **від-** | separation, open | відкрити |
+| **за-** | closure, beginning | закрити |
+| **пере-** | re-do, across | переписати |
+| **до-** | completion, addition | дочитати |
+| **ви-** | extraction, completion | виписати |
 
 ---
 
@@ -50,7 +50,7 @@ This module teaches **action verb prefixes** — how prefixes modify non-motion 
 
 ## 🎯 The Писати Family (Write)
 
-Base verb: **писати** (to write)
+Base verb: **писати**
 
 | Prefixed Verb | Meaning | Example |
 |---------------|---------|---------|
@@ -78,7 +78,7 @@ Base verb: **робити** (to do/make)
 
 ## 🎯 The Давати Family (Give)
 
-Base verb: **давати** (to give)
+Base verb: **давати**
 
 | Prefixed Verb | Meaning | Example |
 |---------------|---------|---------|
@@ -95,9 +95,9 @@ Base verb: **давати** (to give)
 
 | Open | Close |
 |------|-------|
-| **відкрити** (to open) | **закрити** (to close) |
+| **відкрити** | **закрити** |
 | **відчинити** (to open - door) | **зачинити** (to close - door) |
-| **роз'єднати** (to disconnect) | **з'єднати** (to connect) |
+| **роз'єднати** | **з'єднати** |
 
 ## Prefix Meaning Summary
 
@@ -320,7 +320,7 @@ In the evening I collected all documents and handed them in for storage. Closed 
   />
   <QuizQuestion
     question={`"Роздати" contains prefix:`}
-    options={[`роз- (dispersion)`, `від- (separation)`, `за- (closure)`, `до- (completion)`]}
+    options={[`роз-`, `від-`, `за-`, `до-`]}
     correctIndex={0}
     explanation={``}
   />

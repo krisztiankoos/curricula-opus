@@ -23,7 +23,6 @@ objectives:
   - "Learner can express wishes"
 vocabulary_count: 30
 ---
-
 # Holidays & Traditions
 
 ## Warm-up
@@ -44,43 +43,6 @@ vocabulary_count: 30
 > **Christmas:** [When is Ukrainian Christmas](https://www.ukrainianlessons.com/ukrainian-christmas/) — Christmas traditions explained
 >
 > **Easter:** [Easter Greetings](https://www.ukrainianlessons.com/easter-greetings/) — Authentic Easter phrases
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| свято | /ˈswjɑtɔ/ | holiday | n | n | |
-| традиція | /trɑˈdɪtsʲijɑ/ | tradition | n | f | |
-| Новий рік | /nɔˈwɪj rʲik/ | New Year | n | m | |
-| Різдво | /rʲizˈdwɔ/ | Christmas | n | n | January 7 |
-| Великдень | /wɛˈlɪkdɛnʲ/ | Easter | n | m | |
-| день народження | /dɛnʲ nɑˈrɔdʒɛnʲːɑ/ | birthday | n | m | |
-| весілля | /wɛˈsʲilʲːɑ/ | wedding | n | n | |
-| подарунок | /pɔdɑˈrunɔk/ | gift/present | n | m | |
-| вітати | /wʲiˈtɑtɪ/ | to congratulate | v | — | |
-| бажати | /bɑˈʒɑtɪ/ | to wish | v | — | |
-| щастя | /ˈʃtʃɑstʲɑ/ | happiness | n | n | |
-| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
-| успіху | /usˈpʲixu/ | success (Gen) | n | m | "бажаю успіху" |
-| любові | /lʲuˈbɔwʲi/ | love (Gen) | n | f | "бажаю любові" |
-| святкувати | /swʲɑtˈkuwɑtɪ/ | to celebrate | v | — | |
-| дарувати | /dɑruˈwɑtɪ/ | to give (as gift) | v | — | |
-| отримувати | /ɔˈtrɪmuwɑtɪ/ | to receive | v | — | |
-| гості | /ˈhɔstʲi/ | guests | n | pl | |
-| торт | /tɔrt/ | cake | n | m | |
-| свічка | /ˈswʲitʃkɑ/ | candle | n | f | |
-| квіти | /ˈkwʲitɪ/ | flowers | n | pl | |
-| листівка | /lɪsˈtʲiwkɑ/ | card (greeting) | n | f | |
-| запрошення | /zɑprɔˈʃɛnʲːɑ/ | invitation | n | n | |
-| вечірка | /wɛˈtʃʲirkɑ/ | party | n | f | |
-| музика | /ˈmuzɪkɑ/ | music | n | f | |
-| танці | /ˈtɑntsʲi/ | dancing | n | pl | |
-| радість | /ˈrɑdʲistʲ/ | joy | n | f | |
-| веселий | /wɛˈsɛlɪj/ | cheerful | adj | m | |
-| святковий | /swʲɑtˈkɔwɪj/ | festive | adj | m | |
-| вітання | /wʲiˈtɑnʲːɑ/ | greeting | n | n | |
 
 ---
 
@@ -236,6 +198,24 @@ vocabulary_count: 30
 > On Christmas Eve (Святвечір), families prepare 12 meatless dishes (дванадцять страв). The meal starts when the first star appears in the sky. Traditional dishes include kutia (кутя — wheat with honey), borscht (борщ), and varenyky (вареники)!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про свята та традиції! (You've learned about holidays and traditions!)
+
+**Що ви вивчили (What you learned):**
+
+- **Свята (Holidays):** Новий рік, Різдво, Великдень, день народження, весілля
+- **Привітання (Greetings):** З Новим роком! З Днем народження! Христос воскрес!
+- **Побажання (Wishes):** Бажаю щастя/здоров'я/успіху/любові! Хай щастить! Многая літа!
+- **Дієслова (Verbs):** святкувати, дарувати, отримувати
+- **Вечірка (Party):** гості, торт, свічка, квіти, музика, танці, подарунок
+- **Дата (Date):** Коли твій день народження? + родовий відмінок
+- **Різдво в Україні:** 7 січня (Юліанський календар)
+
+---
+
+**Наступний урок:** Підсумковий модуль A1!
 
 # Вправи (Activities)
 
@@ -551,20 +531,39 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про свята та традиції! (You've learned about holidays and traditions!)
-
-**Що ви вивчили (What you learned):**
-
-- **Свята (Holidays):** Новий рік, Різдво, Великдень, день народження, весілля
-- **Привітання (Greetings):** З Новим роком! З Днем народження! Христос воскрес!
-- **Побажання (Wishes):** Бажаю щастя/здоров'я/успіху/любові! Хай щастить! Многая літа!
-- **Дієслова (Verbs):** святкувати, дарувати, отримувати
-- **Вечірка (Party):** гості, торт, свічка, квіти, музика, танці, подарунок
-- **Дата (Date):** Коли твій день народження? + родовий відмінок
-- **Різдво в Україні:** 7 січня (Юліанський календар)
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| свято | /ˈswjɑtɔ/ | holiday | n | n | |
+| традиція | /trɑˈdɪtsʲijɑ/ | tradition | n | f | |
+| Новий рік | /nɔˈwɪj rʲik/ | New Year | n | m | |
+| Різдво | /rʲizˈdwɔ/ | Christmas | n | n | January 7 |
+| Великдень | /wɛˈlɪkdɛnʲ/ | Easter | n | m | |
+| день народження | /dɛnʲ nɑˈrɔdʒɛnʲːɑ/ | birthday | n | m | |
+| весілля | /wɛˈsʲilʲːɑ/ | wedding | n | n | |
+| подарунок | /pɔdɑˈrunɔk/ | gift/present | n | m | |
+| вітати | /wʲiˈtɑtɪ/ | to congratulate | v | — | |
+| бажати | /bɑˈʒɑtɪ/ | to wish | v | — | |
+| щастя | /ˈʃtʃɑstʲɑ/ | happiness | n | n | |
+| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
+| успіху | /usˈpʲixu/ | success (Gen) | n | m | "бажаю успіху" |
+| любові | /lʲuˈbɔwʲi/ | love (Gen) | n | f | "бажаю любові" |
+| святкувати | /swʲɑtˈkuwɑtɪ/ | to celebrate | v | — | |
+| дарувати | /dɑruˈwɑtɪ/ | to give (as gift) | v | — | |
+| отримувати | /ɔˈtrɪmuwɑtɪ/ | to receive | v | — | |
+| гості | /ˈhɔstʲi/ | guests | n | pl | |
+| торт | /tɔrt/ | cake | n | m | |
+| свічка | /ˈswʲitʃkɑ/ | candle | n | f | |
+| квіти | /ˈkwʲitɪ/ | flowers | n | pl | |
+| листівка | /lɪsˈtʲiwkɑ/ | card (greeting) | n | f | |
+| запрошення | /zɑprɔˈʃɛnʲːɑ/ | invitation | n | n | |
+| вечірка | /wɛˈtʃʲirkɑ/ | party | n | f | |
+| музика | /ˈmuzɪkɑ/ | music | n | f | |
+| танці | /ˈtɑntsʲi/ | dancing | n | pl | |
+| радість | /ˈrɑdʲistʲ/ | joy | n | f | |
+| веселий | /wɛˈsɛlɪj/ | cheerful | adj | m | |
+| святковий | /swʲɑtˈkɔwɪj/ | festive | adj | m | |
+| вітання | /wʲiˈtɑnʲːɑ/ | greeting | n | n | |
 
 ---
-
-**Наступний урок:** Підсумковий модуль A1!

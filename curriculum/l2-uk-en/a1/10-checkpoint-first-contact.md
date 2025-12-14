@@ -33,7 +33,6 @@ objectives:
   - "Apply basic zero copula patterns"
 vocabulary_count: 25
 ---
-
 # Checkpoint - First Contact
 
 **Вітаємо! Congratulations!** You've made it through the first nine modules of Ukrainian! You've unlocked the Cyrillic code, mastered noun genders, conjugated your first verbs, asked questions, and explored Ukrainian food. Now it's time to **consolidate** everything you've learned and check your progress.
@@ -417,79 +416,6 @@ After 10 modules, you have achieved:
 > In the game **S.T.A.L.K.E.R.**, when you complete the first few missions, you're no longer a rookie - you're a **Stalker** who can survive the Zone. Same here! After 10 modules, you're no longer a complete beginner. You're an **А1.1 Survivor** who can read Cyrillic, conjugate verbs, and order вареники.
 >
 > **Вітаємо, Stalker! Welcome to the Zone of Ukrainian Language!**
-
----
-
-# Self-Assessment Rubric
-
-Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
-
-### Reading & Recognition
-- [ ] I can recognize all 33 Cyrillic letters
-- [ ] I can read simple Ukrainian words without transliteration
-- [ ] I can identify noun gender by word ending (-а/-я = f, -о/-е = n, consonant = m)
-
-### Grammar
-- [ ] I can conjugate Class I verbs (читати → читаю, читаєш, читає...)
-- [ ] I can conjugate Class II verbs (говорити → говорю, говориш, говорить...)
-- [ ] I can form questions with хто, що, де, куди, звідки
-- [ ] I can negate sentences with не + verb
-
-### Speaking & Interaction
-- [ ] I can introduce myself (name, nationality, profession)
-- [ ] I can greet people (Привіт! Добрий день!)
-- [ ] I can ask and answer simple questions about myself
-- [ ] I can order basic food and drinks
-
-### Scoring
-- **25-30 points**: Ready for A1.2! Proceed to Module 11.
-- **18-24 points**: Review weak areas, then continue.
-- **Under 18 points**: Revisit Modules 1-9 before continuing.
-
----
-
-# Vocabulary
-
-**Review Vocabulary (25 key words from Modules 1-9):**
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| мова | /ˈmɔvɑ/ | language | noun | f | українська мова (Ukrainian language) |
-| вчити | /ˈvt͡ʃɪtɪ/ | to study, learn | verb | - | вчу, вчиш, вчить |
-| вчитися | /ˈvt͡ʃɪtɪsʲɑ/ | to study (reflexive) | verb | - | вчуся, вчишся |
-| вивчаю | /vɪvˈt͡ʃɑju/ | I study | verb | - | from вивчати (to study) |
-| щодня | /ˈʃt͡ʃodɲɑ/ | every day | adverb | - | Я вчуся щодня. |
-| особливо | /ɔˈsɔblɪvɔ/ | especially | adverb | - | Я особливо люблю борщ. |
-| швидко | /ˈʃʋɪdkɔ/ | quickly, fast | adverb | - | Він говорить швидко. |
-| повільно | /pɔˈʋilʲnɔ/ | slowly | adverb | - | Я говорю українською повільно. |
-| багато | /ˈbɑɦɑtɔ/ | a lot, many | adverb | - | Я читаю багато книг. |
-| тут | /tut/ | here | adverb | - | Я тут. (I am here.) |
-| теж | /tɛʒ/ | also, too | adverb | - | Я теж студент. |
-| дуже | /ˈduʒɛ/ | very | adverb | - | Дуже гарно! |
-| цікавий | /t͡siˈkɑvɪj/ | interesting | adj | m | цікава (f), цікаве (n) |
-| новий | /ˈnɔvɪj/ | new | adj | m | нова (f), нове (n) |
-| великий | /vɛˈlɪkɪj/ | big, large | adj | m | велика (f), велике (n) |
-| гарний | /ˈɦɑrnɪj/ | beautiful, good | adj | m | гарна (f), гарне (n) |
-| гарячий | /ɦɑˈrʲɑt͡ʃɪj/ | hot | adj | m | гаряча (f), гаряче (n) |
-| холодний | /xɔˈlɔdnɪj/ | cold | adj | m | холодна (f), холодне (n) |
-| старий | /ˈstɑrɪj/ | old | adj | m | стара (f), старе (n) |
-| вітати | /viˈtɑtɪ/ | to greet, congratulate | verb | - | вітаю, вітаєш |
-| справи | /ˈsprɑvɪ/ | affairs, things | noun | f (pl) | Як справи? (How are things?) |
-| американо | /ɑmɛrɪˈkɑnɔ/ | americano (coffee) | noun | n | Borrowed word |
-| латте | /ˈlɑttɛ/ | latte (coffee) | noun | n | Borrowed word |
-| правильно | /ˈprɑvɪlʲnɔ/ | correctly | adverb | - | Ти говориш правильно. |
-| голосно | /ɦɔˈlɔsnɔ/ | loudly | adverb | - | Він говорить голосно. |
-| тихо | /ˈtɪxɔ/ | quietly | adverb | - | Вона говорить тихо. |
-
----
-
-> [!resources] 🎧 External Resources
->
-> **Alphabet Review:** [Ukrainian Alphabet](https://www.ukrainianlessons.com/ukrainian-alphabet/) — All 33 letters with pronunciation guide
->
-> **Beginner Episodes:** [Top 10 Podcast Episodes for Beginners](https://www.ukrainianlessons.com/episodes-for-ukrainian-language-beginners/) — Perfect for A1.1 review
->
-> **Getting Started:** [How to Begin Learning Ukrainian](https://www.ukrainianlessons.com/begin-learning-ukrainian/) — 5 steps with free resources
 
 ---
 
@@ -1039,3 +965,76 @@ Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidentl
 12. Ти ___ любиш борщ?
     > [!answer] не
     > [!options] не | ні | ніколи | немає
+
+# Self-Assessment Rubric
+
+Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
+
+### Reading & Recognition
+- [ ] I can recognize all 33 Cyrillic letters
+- [ ] I can read simple Ukrainian words without transliteration
+- [ ] I can identify noun gender by word ending (-а/-я = f, -о/-е = n, consonant = m)
+
+### Grammar
+- [ ] I can conjugate Class I verbs (читати → читаю, читаєш, читає...)
+- [ ] I can conjugate Class II verbs (говорити → говорю, говориш, говорить...)
+- [ ] I can form questions with хто, що, де, куди, звідки
+- [ ] I can negate sentences with не + verb
+
+### Speaking & Interaction
+- [ ] I can introduce myself (name, nationality, profession)
+- [ ] I can greet people (Привіт! Добрий день!)
+- [ ] I can ask and answer simple questions about myself
+- [ ] I can order basic food and drinks
+
+### Scoring
+- **25-30 points**: Ready for A1.2! Proceed to Module 11.
+- **18-24 points**: Review weak areas, then continue.
+- **Under 18 points**: Revisit Modules 1-9 before continuing.
+
+---
+
+# Vocabulary
+
+**Review Vocabulary (25 key words from Modules 1-9):**
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| мова | /ˈmɔvɑ/ | language | noun | f | українська мова (Ukrainian language) |
+| вчити | /ˈvt͡ʃɪtɪ/ | to study, learn | verb | - | вчу, вчиш, вчить |
+| вчитися | /ˈvt͡ʃɪtɪsʲɑ/ | to study (reflexive) | verb | - | вчуся, вчишся |
+| вивчаю | /vɪvˈt͡ʃɑju/ | I study | verb | - | from вивчати (to study) |
+| щодня | /ˈʃt͡ʃodɲɑ/ | every day | adverb | - | Я вчуся щодня. |
+| особливо | /ɔˈsɔblɪvɔ/ | especially | adverb | - | Я особливо люблю борщ. |
+| швидко | /ˈʃʋɪdkɔ/ | quickly, fast | adverb | - | Він говорить швидко. |
+| повільно | /pɔˈʋilʲnɔ/ | slowly | adverb | - | Я говорю українською повільно. |
+| багато | /ˈbɑɦɑtɔ/ | a lot, many | adverb | - | Я читаю багато книг. |
+| тут | /tut/ | here | adverb | - | Я тут. (I am here.) |
+| теж | /tɛʒ/ | also, too | adverb | - | Я теж студент. |
+| дуже | /ˈduʒɛ/ | very | adverb | - | Дуже гарно! |
+| цікавий | /t͡siˈkɑvɪj/ | interesting | adj | m | цікава (f), цікаве (n) |
+| новий | /ˈnɔvɪj/ | new | adj | m | нова (f), нове (n) |
+| великий | /vɛˈlɪkɪj/ | big, large | adj | m | велика (f), велике (n) |
+| гарний | /ˈɦɑrnɪj/ | beautiful, good | adj | m | гарна (f), гарне (n) |
+| гарячий | /ɦɑˈrʲɑt͡ʃɪj/ | hot | adj | m | гаряча (f), гаряче (n) |
+| холодний | /xɔˈlɔdnɪj/ | cold | adj | m | холодна (f), холодне (n) |
+| старий | /ˈstɑrɪj/ | old | adj | m | стара (f), старе (n) |
+| вітати | /viˈtɑtɪ/ | to greet, congratulate | verb | - | вітаю, вітаєш |
+| справи | /ˈsprɑvɪ/ | affairs, things | noun | f (pl) | Як справи? (How are things?) |
+| американо | /ɑmɛrɪˈkɑnɔ/ | americano (coffee) | noun | n | Borrowed word |
+| латте | /ˈlɑttɛ/ | latte (coffee) | noun | n | Borrowed word |
+| правильно | /ˈprɑvɪlʲnɔ/ | correctly | adverb | - | Ти говориш правильно. |
+| голосно | /ɦɔˈlɔsnɔ/ | loudly | adverb | - | Він говорить голосно. |
+| тихо | /ˈtɪxɔ/ | quietly | adverb | - | Вона говорить тихо. |
+
+---
+
+> [!resources] 🎧 External Resources
+>
+> **Alphabet Review:** [Ukrainian Alphabet](https://www.ukrainianlessons.com/ukrainian-alphabet/) — All 33 letters with pronunciation guide
+>
+> **Beginner Episodes:** [Top 10 Podcast Episodes for Beginners](https://www.ukrainianlessons.com/episodes-for-ukrainian-language-beginners/) — Perfect for A1.1 review
+>
+> **Getting Started:** [How to Begin Learning Ukrainian](https://www.ukrainianlessons.com/begin-learning-ukrainian/) — 5 steps with free resources
+
+---

@@ -22,7 +22,6 @@ objectives:
   - "Learner can use possessives with family terms"
 vocabulary_count: 35
 ---
-
 # My Family
 
 ## Warm-up
@@ -43,48 +42,6 @@ vocabulary_count: 35
 > **Podcast:** [FMU 1-33 | Family Members](https://www.ukrainianlessons.com/fmu33/) — Extended family vocabulary
 >
 > **Podcast:** [ULP 1-06 | Talking About Family](https://www.ukrainianlessons.com/episode6/) — Family + "I have" construction
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| сім'я | /sʲimˈjɑ/ | family | n | f | |
-| родина | /rɔˈdɪnɑ/ | family/kin | n | f | |
-| батьки | /ˈbɑtʲkɪ/ | parents | n | pl | |
-| батько | /ˈbɑtʲkɔ/ | father | n | m | formal |
-| тато | /ˈtɑtɔ/ | dad | n | m | informal |
-| мати | /ˈmɑtɪ/ | mother | n | f | formal |
-| мама | /ˈmɑmɑ/ | mom | n | f | informal |
-| брат | /brɑt/ | brother | n | m | |
-| сестра | /sɛsˈtrɑ/ | sister | n | f | |
-| дідусь | /dʲiˈdusʲ/ | grandfather | n | m | |
-| бабуся | /bɑˈbusʲɑ/ | grandmother | n | f | |
-| онук | /ɔˈnuk/ | grandson | n | m | |
-| онучка | /ɔˈnutʃkɑ/ | granddaughter | n | f | |
-| дядько | /ˈdʲɑdʲkɔ/ | uncle | n | m | |
-| тітка | /ˈtʲitkɑ/ | aunt | n | f | |
-| двоюрідний брат | /dwɔˈjurʲidnɪj brɑt/ | cousin (m) | n | m | lit. "second-born brother" |
-| двоюрідна сестра | /dwɔˈjurʲidnɑ sɛsˈtrɑ/ | cousin (f) | n | f | lit. "second-born sister" |
-| син | /sɪn/ | son | n | m | |
-| дочка | /ˈdɔtʃkɑ/ | daughter | n | f | |
-| чоловік | /tʃɔlɔˈwʲik/ | husband | n | m | also "man" |
-| дружина | /druˈʒɪnɑ/ | wife | n | f | |
-| хлопець | /ˈxlɔpɛtsʲ/ | boyfriend | n | m | also "boy/guy" |
-| дівчина | /dʲiwˈtʃɪnɑ/ | girlfriend | n | f | also "girl" |
-| наречений | /nɑˈrɛtʃɛnɪj/ | fiancé | n | m | |
-| наречена | /nɑˈrɛtʃɛnɑ/ | fiancée | n | f | |
-| старший | /ˈstɑrʃɪj/ | older | adj | m | |
-| молодший | /mɔˈlɔdʃɪj/ | younger | adj | m | |
-| середній | /sɛˈrɛdnʲij/ | middle | adj | m | |
-| єдиний | /jɛˈdɪnɪj/ | only | adj | m | only child |
-| одружений | /ɔˈdruʒɛnɪj/ | married (m) | adj | m | |
-| одружена | /ɔˈdruʒɛnɑ/ | married (f) | adj | f | |
-| неодружений | /nɛɔˈdruʒɛnɪj/ | unmarried (m) | adj | m | |
-| неодружена | /nɛɔˈdruʒɛnɑ/ | unmarried (f) | adj | f | |
-| дитина | /dɪˈtɪnɑ/ | child | n | f | |
-| діти | /ˈdʲitɪ/ | children | n | pl | |
 
 ---
 
@@ -280,6 +237,24 @@ When calling someone directly, Ukrainian changes the word ending. This is the **
 > At Christmas (Різдво), Ukrainian families gather for a 12-dish dinner (Свята вечеря). On Easter (Великдень), families take food baskets to church to be blessed. Family meals often include several generations together!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про свою родину! (You've learned to talk about family!)
+
+**Що ви вивчили (What you learned):**
+
+- **Батьки (Parents):** батько/тато, мати/мама, батьки
+- **Брати і сестри (Siblings):** брат, сестра
+- **Бабусі й дідусі (Grandparents):** дідусь, бабуся, онук/онучка
+- **Розширена родина (Extended):** дядько, тітка, двоюрідний брат/сестра
+- **Шлюб (Marriage):** чоловік/дружина, хлопець/дівчина, наречений/наречена
+- **Модифікатори (Modifiers):** старший/молодший, одружений/неодружений
+- **Діти (Children):** дитина/діти, син/дочка
+
+---
+
+**Наступний урок:** Свята та традиції!
 
 # Вправи (Activities)
 
@@ -655,20 +630,44 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про свою родину! (You've learned to talk about family!)
-
-**Що ви вивчили (What you learned):**
-
-- **Батьки (Parents):** батько/тато, мати/мама, батьки
-- **Брати і сестри (Siblings):** брат, сестра
-- **Бабусі й дідусі (Grandparents):** дідусь, бабуся, онук/онучка
-- **Розширена родина (Extended):** дядько, тітка, двоюрідний брат/сестра
-- **Шлюб (Marriage):** чоловік/дружина, хлопець/дівчина, наречений/наречена
-- **Модифікатори (Modifiers):** старший/молодший, одружений/неодружений
-- **Діти (Children):** дитина/діти, син/дочка
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| сім'я | /sʲimˈjɑ/ | family | n | f | |
+| родина | /rɔˈdɪnɑ/ | family/kin | n | f | |
+| батьки | /ˈbɑtʲkɪ/ | parents | n | pl | |
+| батько | /ˈbɑtʲkɔ/ | father | n | m | formal |
+| тато | /ˈtɑtɔ/ | dad | n | m | informal |
+| мати | /ˈmɑtɪ/ | mother | n | f | formal |
+| мама | /ˈmɑmɑ/ | mom | n | f | informal |
+| брат | /brɑt/ | brother | n | m | |
+| сестра | /sɛsˈtrɑ/ | sister | n | f | |
+| дідусь | /dʲiˈdusʲ/ | grandfather | n | m | |
+| бабуся | /bɑˈbusʲɑ/ | grandmother | n | f | |
+| онук | /ɔˈnuk/ | grandson | n | m | |
+| онучка | /ɔˈnutʃkɑ/ | granddaughter | n | f | |
+| дядько | /ˈdʲɑdʲkɔ/ | uncle | n | m | |
+| тітка | /ˈtʲitkɑ/ | aunt | n | f | |
+| двоюрідний брат | /dwɔˈjurʲidnɪj brɑt/ | cousin (m) | n | m | lit. "second-born brother" |
+| двоюрідна сестра | /dwɔˈjurʲidnɑ sɛsˈtrɑ/ | cousin (f) | n | f | lit. "second-born sister" |
+| син | /sɪn/ | son | n | m | |
+| дочка | /ˈdɔtʃkɑ/ | daughter | n | f | |
+| чоловік | /tʃɔlɔˈwʲik/ | husband | n | m | also "man" |
+| дружина | /druˈʒɪnɑ/ | wife | n | f | |
+| хлопець | /ˈxlɔpɛtsʲ/ | boyfriend | n | m | also "boy/guy" |
+| дівчина | /dʲiwˈtʃɪnɑ/ | girlfriend | n | f | also "girl" |
+| наречений | /nɑˈrɛtʃɛnɪj/ | fiancé | n | m | |
+| наречена | /nɑˈrɛtʃɛnɑ/ | fiancée | n | f | |
+| старший | /ˈstɑrʃɪj/ | older | adj | m | |
+| молодший | /mɔˈlɔdʃɪj/ | younger | adj | m | |
+| середній | /sɛˈrɛdnʲij/ | middle | adj | m | |
+| єдиний | /jɛˈdɪnɪj/ | only | adj | m | only child |
+| одружений | /ɔˈdruʒɛnɪj/ | married (m) | adj | m | |
+| одружена | /ɔˈdruʒɛnɑ/ | married (f) | adj | f | |
+| неодружений | /nɛɔˈdruʒɛnɪj/ | unmarried (m) | adj | m | |
+| неодружена | /nɛɔˈdruʒɛnɑ/ | unmarried (f) | adj | f | |
+| дитина | /dɪˈtɪnɑ/ | child | n | f | |
+| діти | /ˈdʲitɪ/ | children | n | pl | |
 
 ---
-
-**Наступний урок:** Свята та традиції!

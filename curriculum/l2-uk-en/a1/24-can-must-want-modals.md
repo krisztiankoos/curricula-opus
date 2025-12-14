@@ -23,7 +23,6 @@ objectives:
   - "Learner can distinguish between different modal meanings"
 vocabulary_count: 25
 ---
-
 # Can, Must, Want - Modals
 
 ## Warm-up
@@ -39,38 +38,6 @@ vocabulary_count: 25
 > **Podcasts:** [Ukrainian Verbs in Context](https://www.ukrainianlessons.com/ukrainian-verbs-podcasts/) — Learn verbs through real conversations
 >
 > **Grammar:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Conjugation patterns for all tenses
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| могти | /mɔɦˈtɪ/ | can, be able to | verb | - | irregular |
-| вміти | /ˈwmitɪ/ | know how to | verb | - | Class II |
-| повинен | /pɔˈwɪnen/ | must, should (m) | adj | m | повинна (f) |
-| мусити | /muˈsɪtɪ/ | must, have to | verb | - | Class II |
-| треба | /ˈtrebɑ/ | need to, must | adv | - | impersonal |
-| потрібно | /pɔˈtribnɔ/ | need to, necessary | adv | - | impersonal |
-| необхідно | /neɔbˈxidnɔ/ | necessary, essential | adv | - | formal |
-| можна | /ˈmɔʒnɑ/ | may, allowed | adv | - | permission |
-| не можна | /ne ˈmɔʒnɑ/ | not allowed, forbidden | phrase | - | prohibition |
-| дозволено | /dɔzˈwɔlenɔ/ | permitted | adv | - | formal |
-| заборонено | /zɑbɔˈrɔnenɔ/ | forbidden | adv | - | formal |
-| слід | /slʲid/ | should, ought to | adv | - | recommendation |
-| варто | /ˈwɑrtɔ/ | worth, should | adv | - | advice |
-| здатний | /ˈzdɑtnɪj/ | capable (m) | adj | m | здатна (f) |
-| готовий | /ɦɔˈtɔwɪj/ | ready (m) | adj | m | готова (f) |
-| згодний | /ˈzɦɔdnɪj/ | agree, willing (m) | adj | m | згодна (f) |
-| впевнений | /wpeˈwnenɪj/ | sure, confident (m) | adj | m | впевнена (f) |
-| певний | /ˈpewnɪj/ | certain (m) | adj | m | певна (f) |
-| намагатися | /nɑmɑˈɦɑtɪsʲɑ/ | to try, attempt | verb | - | reflexive |
-| старатися | /stɑˈrɑtɪsʲɑ/ | to try hard | verb | - | reflexive |
-| пробувати | /prɔbuˈwɑtɪ/ | to try, taste | verb | - | Class I |
-| вдаватися | /wdɑˈwɑtɪsʲɑ/ | to succeed | verb | - | reflexive |
-| встигати | /wstɪˈɦɑtɪ/ | to manage (in time) | verb | - | Class I |
-| мати змогу | /ˈmɑtɪ ˈzmɔɦu/ | to have ability | phrase | - | - |
-| бути в змозі | /ˈbutɪ w ˈzmɔzʲi/ | to be able to | phrase | - | formal |
 
 ---
 
@@ -302,6 +269,21 @@ These are impersonal — the "subject" is optional:
 > **мусити** is more common in Western Ukraine and formal contexts. In everyday speech, **повинен** or **треба** are more typical in central Ukraine.
 
 ---
+
+# Summary
+
+In this module, you learned:
+
+- **Ability**: могти (can) vs вміти (know how to)
+- **Obligation**: повинен (must), мусити (have to), треба/потрібно (need to)
+- **Permission**: можна (may), не можна (not allowed), дозволено/заборонено (permitted/forbidden)
+- **Advice**: слід (should), варто (worth)
+- **Trying**: намагатися, старатися, пробувати
+- **Modal adjectives**: готовий (ready), здатний (capable), згодний (willing)
+
+---
+
+**Coming up:** Module 25 will teach you reflexive verbs for daily routines!
 
 # Activities
 
@@ -583,17 +565,34 @@ Decide if each statement is true or false.
 
 ---
 
-# Summary
+# Vocabulary
 
-In this module, you learned:
-
-- **Ability**: могти (can) vs вміти (know how to)
-- **Obligation**: повинен (must), мусити (have to), треба/потрібно (need to)
-- **Permission**: можна (may), не можна (not allowed), дозволено/заборонено (permitted/forbidden)
-- **Advice**: слід (should), варто (worth)
-- **Trying**: намагатися, старатися, пробувати
-- **Modal adjectives**: готовий (ready), здатний (capable), згодний (willing)
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| могти | /mɔɦˈtɪ/ | can, be able to | verb | - | irregular |
+| вміти | /ˈwmitɪ/ | know how to | verb | - | Class II |
+| повинен | /pɔˈwɪnen/ | must, should (m) | adj | m | повинна (f) |
+| мусити | /muˈsɪtɪ/ | must, have to | verb | - | Class II |
+| треба | /ˈtrebɑ/ | need to, must | adv | - | impersonal |
+| потрібно | /pɔˈtribnɔ/ | need to, necessary | adv | - | impersonal |
+| необхідно | /neɔbˈxidnɔ/ | necessary, essential | adv | - | formal |
+| можна | /ˈmɔʒnɑ/ | may, allowed | adv | - | permission |
+| не можна | /ne ˈmɔʒnɑ/ | not allowed, forbidden | phrase | - | prohibition |
+| дозволено | /dɔzˈwɔlenɔ/ | permitted | adv | - | formal |
+| заборонено | /zɑbɔˈrɔnenɔ/ | forbidden | adv | - | formal |
+| слід | /slʲid/ | should, ought to | adv | - | recommendation |
+| варто | /ˈwɑrtɔ/ | worth, should | adv | - | advice |
+| здатний | /ˈzdɑtnɪj/ | capable (m) | adj | m | здатна (f) |
+| готовий | /ɦɔˈtɔwɪj/ | ready (m) | adj | m | готова (f) |
+| згодний | /ˈzɦɔdnɪj/ | agree, willing (m) | adj | m | згодна (f) |
+| впевнений | /wpeˈwnenɪj/ | sure, confident (m) | adj | m | впевнена (f) |
+| певний | /ˈpewnɪj/ | certain (m) | adj | m | певна (f) |
+| намагатися | /nɑmɑˈɦɑtɪsʲɑ/ | to try, attempt | verb | - | reflexive |
+| старатися | /stɑˈrɑtɪsʲɑ/ | to try hard | verb | - | reflexive |
+| пробувати | /prɔbuˈwɑtɪ/ | to try, taste | verb | - | Class I |
+| вдаватися | /wdɑˈwɑtɪsʲɑ/ | to succeed | verb | - | reflexive |
+| встигати | /wstɪˈɦɑtɪ/ | to manage (in time) | verb | - | Class I |
+| мати змогу | /ˈmɑtɪ ˈzmɔɦu/ | to have ability | phrase | - | - |
+| бути в змозі | /ˈbutɪ w ˈzmɔzʲi/ | to be able to | phrase | - | formal |
 
 ---
-
-**Coming up:** Module 25 will teach you reflexive verbs for daily routines!

@@ -22,7 +22,6 @@ grammar:
   - locative-case
   - prepositions-v-u-na
 ---
-
 # The Locative - Where Things Are
 
 ## Warm-up
@@ -283,44 +282,6 @@ You've mastered the locative case! Here's what you learned:
 - Де твоя робота? — Моя робота **в центрі**.
 
 Next up: You'll learn possessive pronouns (мій, твій, його...) so you can say "MY book is on the table" and "HIS work is in the center"!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| у | /u/ | in, inside | prep | - | before clusters |
-| в | /v/ | in, inside | prep | - | before single consonants |
-| на | /nɑ/ | on, at | prep | - | |
-| кімната | /ˈkimnɑtɑ/ | room | noun | f | |
-| кухня | /ˈkuxnʲɑ/ | kitchen | noun | f | |
-| ванна | /ˈvɑnːɑ/ | bathroom | noun | f | |
-| спальня | /ˈspɑlʲnʲɑ/ | bedroom | noun | f | |
-| вітальня | /viˈtɑlʲnʲɑ/ | living room | noun | f | |
-| коридор | /kɔrɪˈdɔr/ | corridor, hallway | noun | m | |
-| балкон | /bɑlˈkɔn/ | balcony | noun | m | |
-| поверх | /ˈpɔwɛrx/ | floor (level) | noun | m | |
-| будинок | /ˈbudɪnɔk/ | building, house | noun | m | |
-| квартира | /kwɑrˈtɪrɑ/ | apartment | noun | f | |
-| офіс | /ˈɔfis/ | office | noun | m | |
-| робота | /rɔˈbɔtɑ/ | work, job | noun | f | |
-| школа | /ˈʃkɔlɑ/ | school | noun | f | |
-| університет | /unʲivɛrsɪˈtɛt/ | university | noun | m | |
-| лікарня | /liˈkɑrnʲɑ/ | hospital | noun | f | |
-| магазин | /mɑɦɑˈzɪn/ | shop, store | noun | m | |
-| аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f | |
-| ринок | /ˈrɪnɔk/ | market | noun | m | |
-| центр | /t͡sɛntr/ | center | noun | m | |
-| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | |
-| готель | /ɦɔˈtɛlʲ/ | hotel | noun | m | |
-| парк | /pɑrk/ | park | noun | m | |
-| пляж | /plʲɑʒ/ | beach | noun | m | |
-| музей | /muˈzɛj/ | museum | noun | m | |
-| театр | /tɛˈɑtr/ | theater | noun | m | |
-| кінотеатр | /kinɔtɛˈɑtr/ | cinema | noun | m | |
-| стадіон | /stɑdiˈɔn/ | stadium | noun | m | |
-| церква | /ˈt͡sɛrkwɑ/ | church | noun | f | |
 
 ---
 
@@ -760,3 +721,41 @@ Next up: You'll learn possessive pronouns (мій, твій, його...) so you
     - [ ] Моя квартира третій поверх.
     > Floor levels use на.
 
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| у | /u/ | in, inside | prep | - | before clusters |
+| в | /v/ | in, inside | prep | - | before single consonants |
+| на | /nɑ/ | on, at | prep | - | |
+| кімната | /ˈkimnɑtɑ/ | room | noun | f | |
+| кухня | /ˈkuxnʲɑ/ | kitchen | noun | f | |
+| ванна | /ˈvɑnːɑ/ | bathroom | noun | f | |
+| спальня | /ˈspɑlʲnʲɑ/ | bedroom | noun | f | |
+| вітальня | /viˈtɑlʲnʲɑ/ | living room | noun | f | |
+| коридор | /kɔrɪˈdɔr/ | corridor, hallway | noun | m | |
+| балкон | /bɑlˈkɔn/ | balcony | noun | m | |
+| поверх | /ˈpɔwɛrx/ | floor (level) | noun | m | |
+| будинок | /ˈbudɪnɔk/ | building, house | noun | m | |
+| квартира | /kwɑrˈtɪrɑ/ | apartment | noun | f | |
+| офіс | /ˈɔfis/ | office | noun | m | |
+| робота | /rɔˈbɔtɑ/ | work, job | noun | f | |
+| школа | /ˈʃkɔlɑ/ | school | noun | f | |
+| університет | /unʲivɛrsɪˈtɛt/ | university | noun | m | |
+| лікарня | /liˈkɑrnʲɑ/ | hospital | noun | f | |
+| магазин | /mɑɦɑˈzɪn/ | shop, store | noun | m | |
+| аптека | /ɑpˈtɛkɑ/ | pharmacy | noun | f | |
+| ринок | /ˈrɪnɔk/ | market | noun | m | |
+| центр | /t͡sɛntr/ | center | noun | m | |
+| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | |
+| готель | /ɦɔˈtɛlʲ/ | hotel | noun | m | |
+| парк | /pɑrk/ | park | noun | m | |
+| пляж | /plʲɑʒ/ | beach | noun | m | |
+| музей | /muˈzɛj/ | museum | noun | m | |
+| театр | /tɛˈɑtr/ | theater | noun | m | |
+| кінотеатр | /kinɔtɛˈɑtr/ | cinema | noun | m | |
+| стадіон | /stɑdiˈɔn/ | stadium | noun | m | |
+| церква | /ˈt͡sɛrkwɑ/ | church | noun | f | |
+
+---

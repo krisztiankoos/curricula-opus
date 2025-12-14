@@ -27,7 +27,6 @@ objectives:
   - "Learner can recognize common italic letter variants"
 vocabulary_count: 35
 ---
-
 # The Cyrillic Code II
 
 ## Warm-up
@@ -260,48 +259,6 @@ You can now read any Ukrainian word in Cyrillic. You learned essential phrases l
 Most importantly, you learned that the Ukrainian alphabet is more than letters. It's a symbol of cultural identity that survived centuries of suppression. When you read Ukrainian, you're participating in an act of cultural preservation.
 
 Next module, we'll start learning about noun gender and why it matters!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| буква | /ˈbukwɑ/ | letter | noun | f | - |
-| слово | /ˈslovɔ/ | word | noun | n | - |
-| алфавіт | /ɑlfaˈvit/ | alphabet | noun | m | - |
-| мова | /ˈmɔwɑ/ | language | noun | f | - |
-| українська | /ukrɑˈjinʲsʲkɑ/ | Ukrainian (language) | adj | f | - |
-| англійська | /ɑnˈɦlijsʲkɑ/ | English (language) | adj | f | - |
-| так | /tɑk/ | yes | particle | - | - |
-| ні | /ni/ | no | particle | - | - |
-| добре | /ˈdɔbrɛ/ | well, good | adv | - | - |
-| дякую | /ˈdʲɑkuju/ | thank you | verb | - | - |
-| будь ласка | /budʲ ˈlɑskɑ/ | please | phrase | - | - |
-| привіт | /prɪˈwit/ | hello, hi | noun | m | informal |
-| до побачення | /dɔ pɔˈbɑt͡ʃɛnʲːɑ/ | goodbye | phrase | - | - |
-| вибачте | /ˈwɪbɑt͡ʃtɛ/ | excuse me, sorry | verb | - | formal |
-| прошу | /ˈprɔʃu/ | please (formal) | verb | - | - |
-| ласкаво просимо | /ˈlɑskɑwɔ ˈprɔsɪmɔ/ | welcome | phrase | - | - |
-| що | /ʃt͡ʃɔ/ | what | pron | - | - |
-| як | /jɑk/ | how | adv | - | - |
-| де | /dɛ/ | where | adv | - | - |
-| хто | /xtɔ/ | who | pron | - | - |
-| це | /t͡sɛ/ | this | pron | - | - |
-| борщ | /bɔrʃt͡ʃ/ | borscht | noun | m | - |
-| йогурт | /ˈjɔɦurt/ | yogurt | noun | m | - |
-| желе | /ʒɛˈlɛ/ | jelly | noun | n | - |
-| майонез | /mɑjɔˈnɛz/ | mayonnaise | noun | m | - |
-| шоколад | /ʃɔkɔˈlɑd/ | chocolate | noun | m | - |
-| чемпіон | /t͡ʃɛmpiˈɔn/ | champion | noun | m | - |
-| центр | /t͡sɛntr/ | center | noun | m | - |
-| цукор | /ˈt͡sukɔr/ | sugar | noun | m | - |
-| джинси | /ˈd͡ʒɪnsɪ/ | jeans | noun | pl | - |
-| джаз | /d͡ʒɑz/ | jazz | noun | m | - |
-| Європа | /jɛwˈrɔpɑ/ | Europe | noun | f | proper |
-| Україна | /ukrɑˈjinɑ/ | Ukraine | noun | f | proper |
-| Лондон | /ˈlɔndɔn/ | London | noun | m | proper |
-| Київ | /ˈkɪjiw/ | Kyiv | noun | m | proper |
 
 ---
 
@@ -617,3 +574,45 @@ Next module, we'll start learning about noun gender and why it matters!
 - с
 - ф
 - х
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| буква | /ˈbukwɑ/ | letter | noun | f | - |
+| слово | /ˈslovɔ/ | word | noun | n | - |
+| алфавіт | /ɑlfaˈvit/ | alphabet | noun | m | - |
+| мова | /ˈmɔwɑ/ | language | noun | f | - |
+| українська | /ukrɑˈjinʲsʲkɑ/ | Ukrainian (language) | adj | f | - |
+| англійська | /ɑnˈɦlijsʲkɑ/ | English (language) | adj | f | - |
+| так | /tɑk/ | yes | particle | - | - |
+| ні | /ni/ | no | particle | - | - |
+| добре | /ˈdɔbrɛ/ | well, good | adv | - | - |
+| дякую | /ˈdʲɑkuju/ | thank you | verb | - | - |
+| будь ласка | /budʲ ˈlɑskɑ/ | please | phrase | - | - |
+| привіт | /prɪˈwit/ | hello, hi | noun | m | informal |
+| до побачення | /dɔ pɔˈbɑt͡ʃɛnʲːɑ/ | goodbye | phrase | - | - |
+| вибачте | /ˈwɪbɑt͡ʃtɛ/ | excuse me, sorry | verb | - | formal |
+| прошу | /ˈprɔʃu/ | please (formal) | verb | - | - |
+| ласкаво просимо | /ˈlɑskɑwɔ ˈprɔsɪmɔ/ | welcome | phrase | - | - |
+| що | /ʃt͡ʃɔ/ | what | pron | - | - |
+| як | /jɑk/ | how | adv | - | - |
+| де | /dɛ/ | where | adv | - | - |
+| хто | /xtɔ/ | who | pron | - | - |
+| це | /t͡sɛ/ | this | pron | - | - |
+| борщ | /bɔrʃt͡ʃ/ | borscht | noun | m | - |
+| йогурт | /ˈjɔɦurt/ | yogurt | noun | m | - |
+| желе | /ʒɛˈlɛ/ | jelly | noun | n | - |
+| майонез | /mɑjɔˈnɛz/ | mayonnaise | noun | m | - |
+| шоколад | /ʃɔkɔˈlɑd/ | chocolate | noun | m | - |
+| чемпіон | /t͡ʃɛmpiˈɔn/ | champion | noun | m | - |
+| центр | /t͡sɛntr/ | center | noun | m | - |
+| цукор | /ˈt͡sukɔr/ | sugar | noun | m | - |
+| джинси | /ˈd͡ʒɪnsɪ/ | jeans | noun | pl | - |
+| джаз | /d͡ʒɑz/ | jazz | noun | m | - |
+| Європа | /jɛwˈrɔpɑ/ | Europe | noun | f | proper |
+| Україна | /ukrɑˈjinɑ/ | Ukraine | noun | f | proper |
+| Лондон | /ˈlɔndɔn/ | London | noun | m | proper |
+| Київ | /ˈkɪjiw/ | Kyiv | noun | m | proper |
+
+---

@@ -23,7 +23,6 @@ objectives:
   - "Learner can use past and future tense"
 vocabulary_count: 10
 ---
-
 # Checkpoint: Final Review
 
 ## A1 Mastery Assessment
@@ -37,43 +36,6 @@ vocabulary_count: 10
 > - Navigate daily life: shopping, cafés, doctors
 > - Talk about time, weather, and holidays
 > - Use past and future tense
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| вітаємо | /wʲiˈtɑjemɔ/ | congratulations | v | — | 1st pl |
-| досягнення | /dɔsʲɑhˈnɛnʲːɑ/ | achievement | n | n | |
-| майстерність | /mɑjˈstɛrnʲistʲ/ | mastery | n | f | |
-| повторення | /pɔwtɔˈrɛnʲːɑ/ | review | n | n | |
-| оцінка | /ɔˈt͡sʲinkɑ/ | assessment | n | f | |
-| рівень | /ˈrʲiwɛnʲ/ | level | n | m | |
-| прогрес | /prɔˈhrɛs/ | progress | n | m | |
-| знання | /ˈznɑnʲːɑ/ | knowledge | n | n | |
-| вміння | /ˈwmʲinʲːɑ/ | skill | n | n | |
-| розуміння | /rɔzuˈmʲinʲːɑ/ | understanding | n | n | |
-| успіх | /usˈpʲix/ | success | n | m | |
-| мова | /ˈmɔwɑ/ | language | n | f | |
-| практика | /ˈprɑktɪkɑ/ | practice | n | f | |
-| граматика | /hrɑˈmɑtɪkɑ/ | grammar | n | f | |
-| слово | /ˈslɔwɔ/ | word | n | n | |
-| речення | /rɛˈtʃɛnʲːɑ/ | sentence | n | n | |
-| читання | /tʃɪˈtɑnʲːɑ/ | reading | n | n | |
-| письмо | /ˈpɪsʲmɔ/ | writing | n | n | |
-| говоріння | /hɔwɔˈrʲinʲːɑ/ | speaking | n | n | |
-| слухання | /ˈsluxɑnʲːɑ/ | listening | n | n | |
-
----
-
-> [!resources] 🎧 Continue Learning
->
-> **Podcast for Beginners:** [Ukrainian Lessons Podcast Season 1](https://www.ukrainianlessons.com/season1/) — 40 episodes for A1 learners with cultural facts
->
-> **Quick Practice:** [5 Minute Ukrainian](https://www.ukrainianlessons.com/fmu/) — Short real-life dialogues for everyday situations
->
-> **Resource Hub:** [100 Links for Learning Ukrainian](https://www.ukrainianlessons.com/ukrainian-language-resources/) — Best courses, books, podcasts, and apps
 
 ---
 
@@ -251,6 +213,35 @@ vocabulary_count: 10
 > Як вивчати українську краще? Слухайте українську музику. Дивіться українські фільми. Читайте українські книги. Говоріть українською кожен день. Не бійтеся помилок! Помилки — це нормально. Практика — це ключ до успіху.
 >
 > How to learn Ukrainian better? Listen to Ukrainian music. Watch Ukrainian films. Read Ukrainian books. Speak Ukrainian every day. Don't be afraid of mistakes! Mistakes are normal. Practice is the key to success.
+
+---
+
+# Підсумок (Summary)
+
+## Що ви вивчили на рівні A1 (What You've Accomplished)
+
+### Кирилиця (Cyrillic Mastery)
+Тепер ви можете читати і писати українською без транслітерації!
+*(Now you can read and write Ukrainian without transliteration!)*
+
+### Граматика (Grammar Foundation)
+- **Відмінки (Cases)**: Називний, Знахідний, Родовий, Місцевий
+- **Дієслова (Verbs)**: Теперішній, минулий, майбутній час
+- **Узгодження (Agreement)**: Рід і число з прикметниками
+- **Присвійні займенники**: мій/твій/його/її
+
+### Лексика (Vocabulary Domains)
+- Особиста інформація та родина
+- Числа, час, дати
+- Їжа, покупки, місто
+- Погода, природа, здоров'я
+- Свята та традиції
+
+### Комунікація (Communication Skills)
+- Представитися (Introduce yourself)
+- Запитувати і відповідати (Ask and answer)
+- Орієнтуватися в місті (Navigate daily situations)
+- Висловлювати потреби (Express basic needs)
 
 ---
 
@@ -640,35 +631,6 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
-
-## Що ви вивчили на рівні A1 (What You've Accomplished)
-
-### Кирилиця (Cyrillic Mastery)
-Тепер ви можете читати і писати українською без транслітерації!
-*(Now you can read and write Ukrainian without transliteration!)*
-
-### Граматика (Grammar Foundation)
-- **Відмінки (Cases)**: Називний, Знахідний, Родовий, Місцевий
-- **Дієслова (Verbs)**: Теперішній, минулий, майбутній час
-- **Узгодження (Agreement)**: Рід і число з прикметниками
-- **Присвійні займенники**: мій/твій/його/її
-
-### Лексика (Vocabulary Domains)
-- Особиста інформація та родина
-- Числа, час, дати
-- Їжа, покупки, місто
-- Погода, природа, здоров'я
-- Свята та традиції
-
-### Комунікація (Communication Skills)
-- Представитися (Introduce yourself)
-- Запитувати і відповідати (Ask and answer)
-- Орієнтуватися в місті (Navigate daily situations)
-- Висловлювати потреби (Express basic needs)
-
----
-
 # Самооцінка A1 (Final Self-Assessment)
 
 Оцініть себе від 1 до 5 (1 = не можу, 5 = впевнено можу):
@@ -727,3 +689,40 @@ Is this true or false?
 ---
 
 **Congratulations! You are now ready for A2!**
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| вітаємо | /wʲiˈtɑjemɔ/ | congratulations | v | — | 1st pl |
+| досягнення | /dɔsʲɑhˈnɛnʲːɑ/ | achievement | n | n | |
+| майстерність | /mɑjˈstɛrnʲistʲ/ | mastery | n | f | |
+| повторення | /pɔwtɔˈrɛnʲːɑ/ | review | n | n | |
+| оцінка | /ɔˈt͡sʲinkɑ/ | assessment | n | f | |
+| рівень | /ˈrʲiwɛnʲ/ | level | n | m | |
+| прогрес | /prɔˈhrɛs/ | progress | n | m | |
+| знання | /ˈznɑnʲːɑ/ | knowledge | n | n | |
+| вміння | /ˈwmʲinʲːɑ/ | skill | n | n | |
+| розуміння | /rɔzuˈmʲinʲːɑ/ | understanding | n | n | |
+| успіх | /usˈpʲix/ | success | n | m | |
+| мова | /ˈmɔwɑ/ | language | n | f | |
+| практика | /ˈprɑktɪkɑ/ | practice | n | f | |
+| граматика | /hrɑˈmɑtɪkɑ/ | grammar | n | f | |
+| слово | /ˈslɔwɔ/ | word | n | n | |
+| речення | /rɛˈtʃɛnʲːɑ/ | sentence | n | n | |
+| читання | /tʃɪˈtɑnʲːɑ/ | reading | n | n | |
+| письмо | /ˈpɪsʲmɔ/ | writing | n | n | |
+| говоріння | /hɔwɔˈrʲinʲːɑ/ | speaking | n | n | |
+| слухання | /ˈsluxɑnʲːɑ/ | listening | n | n | |
+
+---
+
+> [!resources] 🎧 Continue Learning
+>
+> **Podcast for Beginners:** [Ukrainian Lessons Podcast Season 1](https://www.ukrainianlessons.com/season1/) — 40 episodes for A1 learners with cultural facts
+>
+> **Quick Practice:** [5 Minute Ukrainian](https://www.ukrainianlessons.com/fmu/) — Short real-life dialogues for everyday situations
+>
+> **Resource Hub:** [100 Links for Learning Ukrainian](https://www.ukrainianlessons.com/ukrainian-language-resources/) — Best courses, books, podcasts, and apps
+
+---

@@ -25,7 +25,6 @@ objectives:
   - "Learner can use time prepositions correctly"
 vocabulary_count: 40
 ---
-
 # What Time Is It?
 
 ## Warm-up
@@ -41,53 +40,6 @@ vocabulary_count: 40
 > **Days of the Week:** [Дні тижня](https://www.ukrainianlessons.com/vocabulary-days/) — Days with audio
 >
 > **Months:** [Ukrainian Months and Their Origin](https://www.ukrainianlessons.com/months/) — Learn months through their nature-based meanings
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| година | /ɦɔˈdɪnɑ/ | hour | noun | f | - |
-| хвилина | /xwɪˈlɪnɑ/ | minute | noun | f | - |
-| секунда | /seˈkundɑ/ | second | noun | f | - |
-| пів | /piw/ | half | noun | - | indeclinable |
-| чверть | /tʃwertʲ/ | quarter | noun | f | - |
-| рано | /ˈrɑnɔ/ | early | adv | - | - |
-| пізно | /ˈpiznɔ/ | late | adv | - | - |
-| вчасно | /ˈwtʃɑsnɔ/ | on time | adv | - | - |
-| понеділок | /pɔneˈdʲilɔk/ | Monday | noun | m | - |
-| вівторок | /ˈwiwtɔrɔk/ | Tuesday | noun | m | - |
-| середа | /sereˈdɑ/ | Wednesday | noun | f | - |
-| четвер | /tʃetˈwer/ | Thursday | noun | m | - |
-| п'ятниця | /pjɑtˈnɪtsʲɑ/ | Friday | noun | f | - |
-| субота | /suˈbɔtɑ/ | Saturday | noun | f | - |
-| неділя | /neˈdʲilʲɑ/ | Sunday | noun | f | - |
-| тиждень | /ˈtɪʒdenʲ/ | week | noun | m | - |
-| вихідні | /wɪˈxidnʲi/ | weekend | noun | pl | - |
-| робочий день | /rɔˈbɔtʃɪj denʲ/ | workday | phrase | m | - |
-| січень | /ˈsitʃenʲ/ | January | noun | m | - |
-| лютий | /ˈlʲutɪj/ | February | noun | m | - |
-| березень | /ˈbeˈrezenʲ/ | March | noun | m | - |
-| квітень | /ˈkwitenʲ/ | April | noun | m | - |
-| травень | /ˈtrɑwenʲ/ | May | noun | m | - |
-| червень | /ˈtʃerwenʲ/ | June | noun | m | - |
-| липень | /ˈlɪpenʲ/ | July | noun | m | - |
-| серпень | /ˈserpenʲ/ | August | noun | m | - |
-| вересень | /ˈweresenʲ/ | September | noun | m | - |
-| жовтень | /ˈʒɔwtenʲ/ | October | noun | m | - |
-| листопад | /lɪstɔˈpɑd/ | November | noun | m | lit. "leaf fall" |
-| грудень | /ˈɦrudenʲ/ | December | noun | m | - |
-| сьогодні | /sʲɔˈɦɔdnʲi/ | today | adv | - | - |
-| зараз | /ˈzɑrɑz/ | now | adv | - | - |
-| коли | /kɔˈlɪ/ | when | adv | - | - |
-| о котрій | /ɔ kɔtˈrij/ | at what time | phrase | - | - |
-| о | /ɔ/ | at (time) | prep | - | об before vowels |
-| об | /ɔb/ | at (before vowel) | prep | - | variant of о |
-| до | /dɔ/ | until, to | prep | - | + genitive |
-| після | /ˈpislʲɑ/ | after | prep | - | + genitive |
-| з...до | /z...dɔ/ | from...to | phrase | - | + genitive |
-| протягом | /prɔˈtʲɑɦɔm/ | during, for | prep | - | + genitive |
 
 ---
 
@@ -323,6 +275,23 @@ Or in conversation:
 > "Неділя" (Sunday) literally means "no work" — the day of rest. The week is named "тиждень" (from "той же день" — "the same day"), meaning the weekly cycle.
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про час українською! (You've learned to tell time in Ukrainian!)
+
+**Що ви вивчили (What you learned):**
+
+- **Час (Time):** Котра година? — Друга година / Пів на третю
+- **Одиниці часу (Time units):** година, хвилина, секунда
+- **Вирази (Expressions):** рано (early), пізно (late), вчасно (on time)
+- **Дні тижня (Days):** понеділок, вівторок, середа, четвер, п'ятниця, субота, неділя
+- **Місяці (Months):** січень...грудень (з природними назвами!)
+- **Прийменники (Prepositions):** о/об, до, після, перед, з...до
+
+---
+
+**Наступний урок:** Модальні дієслова — можна, треба, хочу!
 
 # Вправи (Activities)
 
@@ -635,19 +604,49 @@ Decide if each statement is true or false.
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про час українською! (You've learned to tell time in Ukrainian!)
-
-**Що ви вивчили (What you learned):**
-
-- **Час (Time):** Котра година? — Друга година / Пів на третю
-- **Одиниці часу (Time units):** година, хвилина, секунда
-- **Вирази (Expressions):** рано (early), пізно (late), вчасно (on time)
-- **Дні тижня (Days):** понеділок, вівторок, середа, четвер, п'ятниця, субота, неділя
-- **Місяці (Months):** січень...грудень (з природними назвами!)
-- **Прийменники (Prepositions):** о/об, до, після, перед, з...до
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| година | /ɦɔˈdɪnɑ/ | hour | noun | f | - |
+| хвилина | /xwɪˈlɪnɑ/ | minute | noun | f | - |
+| секунда | /seˈkundɑ/ | second | noun | f | - |
+| пів | /piw/ | half | noun | - | indeclinable |
+| чверть | /tʃwertʲ/ | quarter | noun | f | - |
+| рано | /ˈrɑnɔ/ | early | adv | - | - |
+| пізно | /ˈpiznɔ/ | late | adv | - | - |
+| вчасно | /ˈwtʃɑsnɔ/ | on time | adv | - | - |
+| понеділок | /pɔneˈdʲilɔk/ | Monday | noun | m | - |
+| вівторок | /ˈwiwtɔrɔk/ | Tuesday | noun | m | - |
+| середа | /sereˈdɑ/ | Wednesday | noun | f | - |
+| четвер | /tʃetˈwer/ | Thursday | noun | m | - |
+| п'ятниця | /pjɑtˈnɪtsʲɑ/ | Friday | noun | f | - |
+| субота | /suˈbɔtɑ/ | Saturday | noun | f | - |
+| неділя | /neˈdʲilʲɑ/ | Sunday | noun | f | - |
+| тиждень | /ˈtɪʒdenʲ/ | week | noun | m | - |
+| вихідні | /wɪˈxidnʲi/ | weekend | noun | pl | - |
+| робочий день | /rɔˈbɔtʃɪj denʲ/ | workday | phrase | m | - |
+| січень | /ˈsitʃenʲ/ | January | noun | m | - |
+| лютий | /ˈlʲutɪj/ | February | noun | m | - |
+| березень | /ˈbeˈrezenʲ/ | March | noun | m | - |
+| квітень | /ˈkwitenʲ/ | April | noun | m | - |
+| травень | /ˈtrɑwenʲ/ | May | noun | m | - |
+| червень | /ˈtʃerwenʲ/ | June | noun | m | - |
+| липень | /ˈlɪpenʲ/ | July | noun | m | - |
+| серпень | /ˈserpenʲ/ | August | noun | m | - |
+| вересень | /ˈweresenʲ/ | September | noun | m | - |
+| жовтень | /ˈʒɔwtenʲ/ | October | noun | m | - |
+| листопад | /lɪstɔˈpɑd/ | November | noun | m | lit. "leaf fall" |
+| грудень | /ˈɦrudenʲ/ | December | noun | m | - |
+| сьогодні | /sʲɔˈɦɔdnʲi/ | today | adv | - | - |
+| зараз | /ˈzɑrɑz/ | now | adv | - | - |
+| коли | /kɔˈlɪ/ | when | adv | - | - |
+| о котрій | /ɔ kɔtˈrij/ | at what time | phrase | - | - |
+| о | /ɔ/ | at (time) | prep | - | об before vowels |
+| об | /ɔb/ | at (before vowel) | prep | - | variant of о |
+| до | /dɔ/ | until, to | prep | - | + genitive |
+| після | /ˈpislʲɑ/ | after | prep | - | + genitive |
+| з...до | /z...dɔ/ | from...to | phrase | - | + genitive |
+| протягом | /prɔˈtʲɑɦɔm/ | during, for | prep | - | + genitive |
 
 ---
-
-**Наступний урок:** Модальні дієслова — можна, треба, хочу!

@@ -23,7 +23,6 @@ objectives:
   - "Learner can talk about what they did yesterday"
 vocabulary_count: 25
 ---
-
 # Yesterday - Past Tense
 
 ## Warm-up
@@ -258,38 +257,6 @@ Translation:
 - прийти → прийшов/прийшла
 
 Наступний урок: майбутній час! Завтра ми будемо вивчати, як говорити про плани!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| вчора | /ˈu̯t͡ʃɔrɑ/ | yesterday | adverb | - | time expression |
-| позавчора | /pɔzɑu̯ˈt͡ʃɔrɑ/ | day before yesterday | adverb | - | time expression |
-| минулого тижня | /mɪˈnulɔɦɔ ˈtɪʒnʲɑ/ | last week | phrase | - | genitive construction |
-| минулого місяця | /mɪˈnulɔɦɔ ˈmisʲɑt͡sʲɑ/ | last month | phrase | - | genitive construction |
-| минулого року | /mɪˈnulɔɦɔ ˈrɔku/ | last year | phrase | - | genitive construction |
-| давно | /dɑu̯ˈnɔ/ | long ago | adverb | - | time expression |
-| недавно | /nʲeˈdɑu̯nɔ/ | recently | adverb | - | time expression |
-| раніше | /ˈrɑnʲiʃe/ | earlier, before | adverb | - | time expression |
-| колись | /ˈkɔlɪsʲ/ | once, sometime | adverb | - | time expression |
-| був | /buu̯/ | was (m) | verb | m | past of бути |
-| була | /buˈlɑ/ | was (f) | verb | f | past of бути |
-| було | /ˈbulɔ/ | was (n) | verb | n | past of бути |
-| були | /buˈlɪ/ | were (pl) | verb | pl | past of бути |
-| робив | /rɔˈbɪu̯/ | was doing (m) | verb | m | past of робити |
-| говорив | /ɦɔwɔˈrɪu̯/ | was speaking (m) | verb | m | past of говорити |
-| писав | /pɪˈsɑu̯/ | was writing (m) | verb | m | past of писати |
-| читав | /t͡ʃɪˈtɑu̯/ | was reading (m) | verb | m | past of читати |
-| слухав | /sluˈxɑu̯/ | was listening (m) | verb | m | past of слухати |
-| дивився | /dɪˈwɪu̯sʲɑ/ | was watching (m) | verb | m | past of дивитися |
-| жив | /ʒɪu̯/ | was living (m) | verb | m | past of жити |
-| працював | /prɑˈt͡sʲuu̯ɑu̯/ | was working (m) | verb | m | past of працювати |
-| їв | /jiu̯/ | was eating (m) | verb | m | past of їсти |
-| пив | /pɪu̯/ | was drinking (m) | verb | m | past of пити |
-| чекав | /t͡ʃeˈkɑu̯/ | was waiting (m) | verb | m | past of чекати |
-| гуляв | /ɦuˈlʲɑu̯/ | was walking (m) | verb | m | past of гуляти |
 
 ---
 
@@ -616,3 +583,35 @@ Translation:
    - [x] Last week
    - [ ] Every week
    > Минулого тижня = last week (genitive)
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| вчора | /ˈu̯t͡ʃɔrɑ/ | yesterday | adverb | - | time expression |
+| позавчора | /pɔzɑu̯ˈt͡ʃɔrɑ/ | day before yesterday | adverb | - | time expression |
+| минулого тижня | /mɪˈnulɔɦɔ ˈtɪʒnʲɑ/ | last week | phrase | - | genitive construction |
+| минулого місяця | /mɪˈnulɔɦɔ ˈmisʲɑt͡sʲɑ/ | last month | phrase | - | genitive construction |
+| минулого року | /mɪˈnulɔɦɔ ˈrɔku/ | last year | phrase | - | genitive construction |
+| давно | /dɑu̯ˈnɔ/ | long ago | adverb | - | time expression |
+| недавно | /nʲeˈdɑu̯nɔ/ | recently | adverb | - | time expression |
+| раніше | /ˈrɑnʲiʃe/ | earlier, before | adverb | - | time expression |
+| колись | /ˈkɔlɪsʲ/ | once, sometime | adverb | - | time expression |
+| був | /buu̯/ | was (m) | verb | m | past of бути |
+| була | /buˈlɑ/ | was (f) | verb | f | past of бути |
+| було | /ˈbulɔ/ | was (n) | verb | n | past of бути |
+| були | /buˈlɪ/ | were (pl) | verb | pl | past of бути |
+| робив | /rɔˈbɪu̯/ | was doing (m) | verb | m | past of робити |
+| говорив | /ɦɔwɔˈrɪu̯/ | was speaking (m) | verb | m | past of говорити |
+| писав | /pɪˈsɑu̯/ | was writing (m) | verb | m | past of писати |
+| читав | /t͡ʃɪˈtɑu̯/ | was reading (m) | verb | m | past of читати |
+| слухав | /sluˈxɑu̯/ | was listening (m) | verb | m | past of слухати |
+| дивився | /dɪˈwɪu̯sʲɑ/ | was watching (m) | verb | m | past of дивитися |
+| жив | /ʒɪu̯/ | was living (m) | verb | m | past of жити |
+| працював | /prɑˈt͡sʲuu̯ɑu̯/ | was working (m) | verb | m | past of працювати |
+| їв | /jiu̯/ | was eating (m) | verb | m | past of їсти |
+| пив | /pɪu̯/ | was drinking (m) | verb | m | past of пити |
+| чекав | /t͡ʃeˈkɑu̯/ | was waiting (m) | verb | m | past of чекати |
+| гуляв | /ɦuˈlʲɑu̯/ | was walking (m) | verb | m | past of гуляти |
+
+---

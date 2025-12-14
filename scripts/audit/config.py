@@ -162,6 +162,7 @@ NOMINATIVE_PLURAL_EXCLUSIONS = {
     'цікаві', 'важливі', 'корисні', 'смачні', 'гарячі', 'холодні',
     # Adjectives in nominative plural (-ові endings from -овий stems)
     'часові', 'кольорові', 'святкові', 'вікові', 'рольові',
+    'безособові',  # impersonal (from безособовий) - common grammar term
     # Common nouns in nominative plural
     'люди', 'діти', 'студенти', 'друзі', 'учні', 'вчителі',
     'хлопці', 'дівчата', 'речі', 'слова', 'книжки', 'столи',

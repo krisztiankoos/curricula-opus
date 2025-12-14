@@ -26,7 +26,6 @@ objectives:
   - "Learner can use functional phrases with Accusative, Genitive, and Locative cases"
 vocabulary_count: 24
 ---
-
 # At the Café
 
 ## Warm-up
@@ -258,37 +257,6 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
 - **"Будь ласка"** — ваш найкращий друг (Please is your best friend)
 - **"Рахунок окремо"** = separate checks
 - Проводьте час у кафе — це частина української культури!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| столик | /ˈstɔlɪk/ | table (small) | noun | m | diminutive of стіл |
-| порекомендувати | /porɛkomɛnduˈvɑtɪ/ | to recommend | verb | - | perfective |
-| спробувати | /sprobuˈvɑtɪ/ | to try | verb | - | perfective |
-| візьму | /ˈvʲizʲmu/ | I'll take | verb | - | future of взяти |
-| принесіть | /prɪnɛˈsʲitʲ/ | bring (imperative) | verb | - | perfective |
-| ще | /ʃt͡ʃɛ/ | still, more, another | adverb | - | |
-| достатньо | /dosˈtɑtʲnʲo/ | enough | adverb | - | |
-| все | /fsɛ/ | everything, all | pronoun | - | |
-| разом | /ˈrɑzom/ | together | adverb | - | |
-| окремо | /ˈokrɛmo/ | separately | adverb | - | |
-| рахунок | /rɑˈxunok/ | check, bill | noun | m | |
-| меню | /mɛˈnju/ | menu | noun | n | |
-| замовляти | /zɑmovˈlʲɑtɪ/ | to order | verb | - | imperfective |
-| замовити | /zɑˈmovɪtɪ/ | to order | verb | - | perfective |
-| офіціант | /ofʲit͡sʲiˈɑnt/ | waiter | noun | m | |
-| офіціантка | /ofʲit͡sʲiˈɑntkɑ/ | waitress | noun | f | |
-| чай | /t͡ʃɑj/ | tea | noun | m | |
-| кава | /ˈkɑvɑ/ | coffee | noun | f | |
-| круасан | /kruɑˈsɑn/ | croissant | noun | m | |
-| смачно | /ˈsmɑt͡ʃno/ | delicious (adverb) | adverb | - | |
-| чорний | /ˈt͡ʃornɪj/ | black | adjective | m | |
-| трав'яний | /trɑvʲˈjɑnɪj/ | herbal | adjective | m | |
-| цукор | /ˈt͡sukɔr/ | sugar | noun | m | |
-| молоко | /moloˈko/ | milk | noun | n | |
 
 ---
 
@@ -678,3 +646,34 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
     - [x] Київський торт
     - [ ] Тірамісу
     > Київський торт (Kyiv cake) is the specialty!
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| столик | /ˈstɔlɪk/ | table (small) | noun | m | diminutive of стіл |
+| порекомендувати | /porɛkomɛnduˈvɑtɪ/ | to recommend | verb | - | perfective |
+| спробувати | /sprobuˈvɑtɪ/ | to try | verb | - | perfective |
+| візьму | /ˈvʲizʲmu/ | I'll take | verb | - | future of взяти |
+| принесіть | /prɪnɛˈsʲitʲ/ | bring (imperative) | verb | - | perfective |
+| ще | /ʃt͡ʃɛ/ | still, more, another | adverb | - | |
+| достатньо | /dosˈtɑtʲnʲo/ | enough | adverb | - | |
+| все | /fsɛ/ | everything, all | pronoun | - | |
+| разом | /ˈrɑzom/ | together | adverb | - | |
+| окремо | /ˈokrɛmo/ | separately | adverb | - | |
+| рахунок | /rɑˈxunok/ | check, bill | noun | m | |
+| меню | /mɛˈnju/ | menu | noun | n | |
+| замовляти | /zɑmovˈlʲɑtɪ/ | to order | verb | - | imperfective |
+| замовити | /zɑˈmovɪtɪ/ | to order | verb | - | perfective |
+| офіціант | /ofʲit͡sʲiˈɑnt/ | waiter | noun | m | |
+| офіціантка | /ofʲit͡sʲiˈɑntkɑ/ | waitress | noun | f | |
+| чай | /t͡ʃɑj/ | tea | noun | m | |
+| кава | /ˈkɑvɑ/ | coffee | noun | f | |
+| круасан | /kruɑˈsɑn/ | croissant | noun | m | |
+| смачно | /ˈsmɑt͡ʃno/ | delicious (adverb) | adverb | - | |
+| чорний | /ˈt͡ʃornɪj/ | black | adjective | m | |
+| трав'яний | /trɑvʲˈjɑnɪj/ | herbal | adjective | m | |
+| цукор | /ˈt͡sukɔr/ | sugar | noun | m | |
+| молоко | /moloˈko/ | milk | noun | n | |
+
+---

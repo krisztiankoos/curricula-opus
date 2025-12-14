@@ -23,7 +23,6 @@ objectives:
   - "Learner can describe what someone is wearing"
 vocabulary_count: 30
 ---
-
 # Colors & Clothing
 
 ## Warm-up
@@ -39,43 +38,6 @@ vocabulary_count: 30
 > **Video:** [Learn Ukrainian Colors](https://www.ukrainianlessons.com/video-colors/) — Interactive color practice
 >
 > **Clothes:** [Clothes Vocabulary](https://www.ukrainianlessons.com/vocabulary-clothes/) — Clothing items with illustrations
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| білий | /ˈbilɪj/ | white | adj | m | color |
-| чорний | /ˈtʃɔrnɪj/ | black | adj | m | color |
-| сірий | /ˈsirɪj/ | gray | adj | m | color |
-| червоний | /tʃerˈwɔnɪj/ | red | adj | m | color |
-| помаранчевий | /pɔmɑˈrɑntʃewɪj/ | orange | adj | m | color |
-| жовтий | /ˈʒɔwtɪj/ | yellow | adj | m | color |
-| зелений | /zeˈlenɪj/ | green | adj | m | color |
-| синій | /ˈsɪnʲij/ | blue (dark) | adj | m | soft stem |
-| блакитний | /blɑˈkɪtnɪj/ | light blue | adj | m | color |
-| фіолетовий | /fʲioˈletɔwɪj/ | purple | adj | m | color |
-| рожевий | /rɔˈʒewɪj/ | pink | adj | m | color |
-| коричневий | /kɔˈrɪtʃnewɪj/ | brown | adj | m | color |
-| світлий | /ˈswʲitlɪj/ | light | adj | m | modifier |
-| темний | /ˈtemnɪj/ | dark | adj | m | modifier |
-| яскравий | /jɑsˈkrɑwɪj/ | bright | adj | m | modifier |
-| сорочка | /sɔˈrɔtʃkɑ/ | shirt | n | f | clothing |
-| футболка | /futˈbɔlkɑ/ | t-shirt | n | f | clothing |
-| светр | /swetr/ | sweater | n | m | clothing |
-| куртка | /ˈkurtkɑ/ | jacket | n | f | clothing |
-| пальто | /pɑlʲˈtɔ/ | coat | n | n | indeclinable |
-| штани | /ʃtɑˈnɪ/ | pants | n | pl | always plural |
-| джинси | /ˈdʒɪnsɪ/ | jeans | n | pl | always plural |
-| шорти | /ˈʃɔrtɪ/ | shorts | n | pl | always plural |
-| спідниця | /spʲidˈnɪtsʲɑ/ | skirt | n | f | clothing |
-| сукня | /ˈsuknʲɑ/ | dress | n | f | clothing |
-| взуття | /wzutʲˈtʲɑ/ | footwear | n | n | collective |
-| черевики | /tʃereˈwɪkɪ/ | boots | n | pl | always plural |
-| кросівки | /krɔˈsʲiwkɪ/ | sneakers | n | pl | always plural |
-| капелюх | /kɑpeˈlʲux/ | hat | n | m | clothing |
-| шарф | /ʃɑrf/ | scarf | n | m | clothing |
 
 ---
 
@@ -244,6 +206,22 @@ These words take **plural adjectives**:
 > In the classic Ukrainian film "Тіні забутих предків" (Shadows of Forgotten Ancestors, 1965), vivid colors — червоний, білий, чорний — play a crucial role in the visual storytelling. Яскраві кольори!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися називати кольори та одяг! (You've learned colors and clothing!)
+
+**Що ви вивчили (What you learned):**
+
+- **12 кольорів (Colors):** білий, чорний, сірий, червоний, помаранчевий, жовтий, зелений, синій, блакитний, фіолетовий, рожевий, коричневий
+- **Модифікатори (Modifiers):** світлий, темний, яскравий
+- **15 предметів одягу (Clothing):** сорочка, футболка, светр, куртка, пальто, штани, джинси, шорти, спідниця, сукня...
+- **Узгодження (Agreement):** білий/біла/біле/білі
+- **Два відтінки синього (Two blues):** синій (темний) vs блакитний (світлий)
+
+---
+
+**Наступний урок:** Прислівники — як описувати ДІЇ!
 
 # Вправи (Activities)
 
@@ -534,18 +512,39 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися називати кольори та одяг! (You've learned colors and clothing!)
-
-**Що ви вивчили (What you learned):**
-
-- **12 кольорів (Colors):** білий, чорний, сірий, червоний, помаранчевий, жовтий, зелений, синій, блакитний, фіолетовий, рожевий, коричневий
-- **Модифікатори (Modifiers):** світлий, темний, яскравий
-- **15 предметів одягу (Clothing):** сорочка, футболка, светр, куртка, пальто, штани, джинси, шорти, спідниця, сукня...
-- **Узгодження (Agreement):** білий/біла/біле/білі
-- **Два відтінки синього (Two blues):** синій (темний) vs блакитний (світлий)
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| білий | /ˈbilɪj/ | white | adj | m | color |
+| чорний | /ˈtʃɔrnɪj/ | black | adj | m | color |
+| сірий | /ˈsirɪj/ | gray | adj | m | color |
+| червоний | /tʃerˈwɔnɪj/ | red | adj | m | color |
+| помаранчевий | /pɔmɑˈrɑntʃewɪj/ | orange | adj | m | color |
+| жовтий | /ˈʒɔwtɪj/ | yellow | adj | m | color |
+| зелений | /zeˈlenɪj/ | green | adj | m | color |
+| синій | /ˈsɪnʲij/ | blue (dark) | adj | m | soft stem |
+| блакитний | /blɑˈkɪtnɪj/ | light blue | adj | m | color |
+| фіолетовий | /fʲioˈletɔwɪj/ | purple | adj | m | color |
+| рожевий | /rɔˈʒewɪj/ | pink | adj | m | color |
+| коричневий | /kɔˈrɪtʃnewɪj/ | brown | adj | m | color |
+| світлий | /ˈswʲitlɪj/ | light | adj | m | modifier |
+| темний | /ˈtemnɪj/ | dark | adj | m | modifier |
+| яскравий | /jɑsˈkrɑwɪj/ | bright | adj | m | modifier |
+| сорочка | /sɔˈrɔtʃkɑ/ | shirt | n | f | clothing |
+| футболка | /futˈbɔlkɑ/ | t-shirt | n | f | clothing |
+| светр | /swetr/ | sweater | n | m | clothing |
+| куртка | /ˈkurtkɑ/ | jacket | n | f | clothing |
+| пальто | /pɑlʲˈtɔ/ | coat | n | n | indeclinable |
+| штани | /ʃtɑˈnɪ/ | pants | n | pl | always plural |
+| джинси | /ˈdʒɪnsɪ/ | jeans | n | pl | always plural |
+| шорти | /ˈʃɔrtɪ/ | shorts | n | pl | always plural |
+| спідниця | /spʲidˈnɪtsʲɑ/ | skirt | n | f | clothing |
+| сукня | /ˈsuknʲɑ/ | dress | n | f | clothing |
+| взуття | /wzutʲˈtʲɑ/ | footwear | n | n | collective |
+| черевики | /tʃereˈwɪkɪ/ | boots | n | pl | always plural |
+| кросівки | /krɔˈsʲiwkɪ/ | sneakers | n | pl | always plural |
+| капелюх | /kɑpeˈlʲux/ | hat | n | m | clothing |
+| шарф | /ʃɑrf/ | scarf | n | m | clothing |
 
 ---
-
-**Наступний урок:** Прислівники — як описувати ДІЇ!

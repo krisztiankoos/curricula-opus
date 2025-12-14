@@ -24,7 +24,6 @@ objectives:
   - "Learner can use impersonal expressions (cold, warm, hot)"
 vocabulary_count: 35
 ---
-
 # Weather & Nature
 
 ## Warm-up
@@ -45,48 +44,6 @@ vocabulary_count: 35
 > **Months & Nature:** [Ukrainian Month Names](https://www.ukrainianlessons.com/months/) — Nature-based month origins
 >
 > **Winter:** [Winter Vocabulary](https://www.ukrainianlessons.com/winter-vocabulary/) — Seasonal vocabulary
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| погода | /pɔˈhɔdɑ/ | weather | n | f | |
-| температура | /tempɛrɑˈturɑ/ | temperature | n | f | |
-| тепло | /ˈteplɔ/ | warm | adv | — | impersonal |
-| холодно | /ˈxɔlɔdnɔ/ | cold | adv | — | impersonal |
-| жарко | /ˈʒɑrkɔ/ | hot | adv | — | impersonal |
-| сонячно | /ˈsɔnʲɑtʃnɔ/ | sunny | adv | — | impersonal |
-| хмарно | /ˈxmɑrnɔ/ | cloudy | adv | — | impersonal |
-| вітряно | /ˈwʲitrʲɑnɔ/ | windy | adv | — | impersonal |
-| сонце | /ˈsɔntsɛ/ | sun | n | n | |
-| хмара | /ˈxmɑrɑ/ | cloud | n | f | |
-| вітер | /ˈwʲitɛr/ | wind | n | m | |
-| дощ | /dɔʃtʃ/ | rain | n | m | |
-| сніг | /snʲih/ | snow | n | m | |
-| йде дощ | /jdɛ dɔʃtʃ/ | it's raining | expr | — | literally "rain goes" |
-| йде сніг | /jdɛ snʲih/ | it's snowing | expr | — | literally "snow goes" |
-| природа | /prɪˈrɔdɑ/ | nature | n | f | |
-| дерево | /ˈdɛrɛwɔ/ | tree | n | n | |
-| квітка | /ˈkwʲitkɑ/ | flower | n | f | |
-| ліс | /lʲis/ | forest | n | m | |
-| парк | /pɑrk/ | park | n | m | |
-| річка | /ˈrʲitʃkɑ/ | river | n | f | |
-| море | /ˈmɔrɛ/ | sea | n | n | |
-| гора | /hɔˈrɑ/ | mountain | n | f | |
-| озеро | /ˈɔzɛrɔ/ | lake | n | n | |
-| тварина | /twɑˈrɪnɑ/ | animal | n | f | |
-| пес | /pɛs/ | dog (male) | n | m | |
-| собака | /sɔˈbɑkɑ/ | dog | n | f | general term |
-| кіт | /kʲit/ | cat (male) | n | m | |
-| кішка | /ˈkʲiʃkɑ/ | cat (female) | n | f | |
-| птах | /ptɑx/ | bird | n | m | |
-| риба | /ˈrɪbɑ/ | fish | n | f | |
-| весна | /wɛsˈnɑ/ | spring | n | f | season |
-| літо | /ˈlʲitɔ/ | summer | n | n | season |
-| осінь | /ˈɔsʲinʲ/ | autumn | n | f | season |
-| зима | /zɪˈmɑ/ | winter | n | f | season |
 
 ---
 
@@ -257,6 +214,23 @@ For rain and snow, Ukrainian uses "йде" (goes):
 > Ukrainian folk songs often mention nature: "Ой у лузі червона калина" (Oh, the red viburnum in the meadow), "Місяць на небі" (The moon in the sky). Nature is central to Ukrainian culture and poetry!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про погоду та природу! (You've learned about weather and nature!)
+
+**Що ви вивчили (What you learned):**
+
+- **Погода (Weather):** тепло, холодно, жарко, сонячно, хмарно, вітряно, йде дощ, йде сніг
+- **Іменники погоди (Weather nouns):** погода, температура, сонце, хмара, вітер
+- **Природа (Nature):** дерево, квітка, ліс, парк, річка, море, гора, озеро
+- **Тварини (Animals):** пес, кіт, птах, риба
+- **Пори року (Seasons):** весна, літо, осінь, зима
+- **Безособові речення (Impersonal):** Тепло. Холодно. Йде дощ.
+
+---
+
+**Наступний урок:** Прийменники напрямку та місця!
 
 # Вправи (Activities)
 
@@ -618,19 +592,44 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про погоду та природу! (You've learned about weather and nature!)
-
-**Що ви вивчили (What you learned):**
-
-- **Погода (Weather):** тепло, холодно, жарко, сонячно, хмарно, вітряно, йде дощ, йде сніг
-- **Іменники погоди (Weather nouns):** погода, температура, сонце, хмара, вітер
-- **Природа (Nature):** дерево, квітка, ліс, парк, річка, море, гора, озеро
-- **Тварини (Animals):** пес, кіт, птах, риба
-- **Пори року (Seasons):** весна, літо, осінь, зима
-- **Безособові речення (Impersonal):** Тепло. Холодно. Йде дощ.
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| погода | /pɔˈhɔdɑ/ | weather | n | f | |
+| температура | /tempɛrɑˈturɑ/ | temperature | n | f | |
+| тепло | /ˈteplɔ/ | warm | adv | — | impersonal |
+| холодно | /ˈxɔlɔdnɔ/ | cold | adv | — | impersonal |
+| жарко | /ˈʒɑrkɔ/ | hot | adv | — | impersonal |
+| сонячно | /ˈsɔnʲɑtʃnɔ/ | sunny | adv | — | impersonal |
+| хмарно | /ˈxmɑrnɔ/ | cloudy | adv | — | impersonal |
+| вітряно | /ˈwʲitrʲɑnɔ/ | windy | adv | — | impersonal |
+| сонце | /ˈsɔntsɛ/ | sun | n | n | |
+| хмара | /ˈxmɑrɑ/ | cloud | n | f | |
+| вітер | /ˈwʲitɛr/ | wind | n | m | |
+| дощ | /dɔʃtʃ/ | rain | n | m | |
+| сніг | /snʲih/ | snow | n | m | |
+| йде дощ | /jdɛ dɔʃtʃ/ | it's raining | expr | — | literally "rain goes" |
+| йде сніг | /jdɛ snʲih/ | it's snowing | expr | — | literally "snow goes" |
+| природа | /prɪˈrɔdɑ/ | nature | n | f | |
+| дерево | /ˈdɛrɛwɔ/ | tree | n | n | |
+| квітка | /ˈkwʲitkɑ/ | flower | n | f | |
+| ліс | /lʲis/ | forest | n | m | |
+| парк | /pɑrk/ | park | n | m | |
+| річка | /ˈrʲitʃkɑ/ | river | n | f | |
+| море | /ˈmɔrɛ/ | sea | n | n | |
+| гора | /hɔˈrɑ/ | mountain | n | f | |
+| озеро | /ˈɔzɛrɔ/ | lake | n | n | |
+| тварина | /twɑˈrɪnɑ/ | animal | n | f | |
+| пес | /pɛs/ | dog (male) | n | m | |
+| собака | /sɔˈbɑkɑ/ | dog | n | f | general term |
+| кіт | /kʲit/ | cat (male) | n | m | |
+| кішка | /ˈkʲiʃkɑ/ | cat (female) | n | f | |
+| птах | /ptɑx/ | bird | n | m | |
+| риба | /ˈrɪbɑ/ | fish | n | f | |
+| весна | /wɛsˈnɑ/ | spring | n | f | season |
+| літо | /ˈlʲitɔ/ | summer | n | n | season |
+| осінь | /ˈɔsʲinʲ/ | autumn | n | f | season |
+| зима | /zɪˈmɑ/ | winter | n | f | season |
 
 ---
-
-**Наступний урок:** Прийменники напрямку та місця!

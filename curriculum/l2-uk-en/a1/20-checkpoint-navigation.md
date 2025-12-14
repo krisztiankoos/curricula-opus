@@ -30,7 +30,6 @@ objectives:
   - "Learner can order food and pay in a restaurant"
 vocabulary_count: 20
 ---
-
 # Checkpoint - Navigation
 
 ## Warm-up
@@ -438,34 +437,6 @@ You practiced these through integrated dialogues at markets, metro stations, and
 - Matching possessive pronouns to noun gender
 
 Module 21 introduces the past tense - your first journey into talking about what already happened!
-
----
-
-# Self-Assessment Rubric
-
-Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
-
-### Cases
-- [ ] I can use Accusative for direct objects (Я бачу книгу)
-- [ ] I can use animate Accusative = Genitive rule (Я бачу студента)
-- [ ] I can use Locative with у/в and на for location (Я живу в Києві)
-- [ ] I can use Genitive for absence and negation (У мене немає часу)
-
-### Possessives & Pronouns
-- [ ] I can match possessives to noun gender (мій/моя/моє/мої)
-- [ ] I understand invariant possessives (його, її never change)
-- [ ] I can use свій for reflexive possession
-
-### Practical Skills
-- [ ] I can ask for and give directions (Де метро? Ідіть прямо.)
-- [ ] I can use numbers with nouns correctly (2 книги, 5 книг)
-- [ ] I can order food and ask for prices (Скільки коштує?)
-- [ ] I can navigate a café/restaurant conversation
-
-### Scoring
-- **25-35 points**: Ready for A1.3! Proceed to Module 21.
-- **18-24 points**: Review case endings, then continue.
-- **Under 18 points**: Revisit Modules 11-19 before continuing.
 
 ---
 
@@ -906,6 +877,34 @@ Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidentl
 | У центрі міста | In the city center |
 | На площі | At the square |
 | Де можна купити квиток? | Where can I buy a ticket? |
+
+---
+
+# Self-Assessment Rubric
+
+Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
+
+### Cases
+- [ ] I can use Accusative for direct objects (Я бачу книгу)
+- [ ] I can use animate Accusative = Genitive rule (Я бачу студента)
+- [ ] I can use Locative with у/в and на for location (Я живу в Києві)
+- [ ] I can use Genitive for absence and negation (У мене немає часу)
+
+### Possessives & Pronouns
+- [ ] I can match possessives to noun gender (мій/моя/моє/мої)
+- [ ] I understand invariant possessives (його, її never change)
+- [ ] I can use свій for reflexive possession
+
+### Practical Skills
+- [ ] I can ask for and give directions (Де метро? Ідіть прямо.)
+- [ ] I can use numbers with nouns correctly (2 книги, 5 книг)
+- [ ] I can order food and ask for prices (Скільки коштує?)
+- [ ] I can navigate a café/restaurant conversation
+
+### Scoring
+- **25-35 points**: Ready for A1.3! Proceed to Module 21.
+- **18-24 points**: Review case endings, then continue.
+- **Under 18 points**: Revisit Modules 11-19 before continuing.
 
 ---
 

@@ -22,7 +22,6 @@ objectives:
   - "Learner can use з/від for origin"
 vocabulary_count: 20
 ---
-
 # Prepositions III
 
 ## Warm-up
@@ -35,43 +34,6 @@ vocabulary_count: 20
 > — **Звідки ти?** (Where are you from?) → Я **з України**. (I'm from Ukraine.)
 >
 > Same preposition "в" — but different CASE depending on the question!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| де | /dɛ/ | where | adv | — | location question |
-| куди | /kuˈdɪ/ | where to | adv | — | direction question |
-| звідки | /ˈzwʲidkɪ/ | where from | adv | — | origin question |
-| тут | /tut/ | here | adv | — | location |
-| там | /tɑm/ | there | adv | — | location |
-| сюди | /sʲuˈdɪ/ | to here | adv | — | direction |
-| туди | /tuˈdɪ/ | to there | adv | — | direction |
-| вдома | /wdɔˈmɑ/ | at home | adv | — | location |
-| додому | /dɔˈdɔmu/ | to home | adv | — | direction |
-| з | /z/ | from (place) | prep | — | + Genitive |
-| від | /wʲid/ | from (person) | prep | — | + Genitive |
-| до | /dɔ/ | to (person/place) | prep | — | + Genitive |
-| через | /ˈtʃɛrɛz/ | through, across | prep | — | + Accusative |
-| прямо | /ˈprʲɑmɔ/ | straight | adv | — | direction |
-| назад | /nɑˈzɑd/ | back | adv | — | direction |
-| близько | /ˈblɪzʲkɔ/ | near | adv | — | location |
-| далеко | /dɑˈlɛkɔ/ | far | adv | — | location |
-| ліворуч | /lʲiwɔˈrutʃ/ | on the left | adv | — | direction |
-| праворуч | /prɑwɔˈrutʃ/ | on the right | adv | — | direction |
-| навпроти | /nɑwˈprɔtɪ/ | opposite | adv | — | location |
-
----
-
-> [!resources] 🎧 External Resources
->
-> **Location vs Destination:** [В Україні vs В Україну](https://www.ukrainianlessons.com/location-destination-prepositions/) — How to express "where" vs "where to"
->
-> **Prepositions Guide:** [Difference between У (В) and На](https://www.ukrainianlessons.com/prepositions-u-na/) — When to use which preposition
->
-> **Directions:** [Напрямки — Directions in Ukrainian](https://www.ukrainianlessons.com/vocabulary-directions/) — Audio vocabulary for navigation
 
 ---
 
@@ -265,6 +227,23 @@ For **origin** (where something is FROM), use **Genitive** with **з** or **ві
 > Use **до** for PEOPLE, **в/на** for PLACES!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про напрямок і місце! (You've learned direction and location!)
+
+**Що ви вивчили (What you learned):**
+
+- **Три питання (Three questions):** Де? Куди? Звідки?
+- **Прислівники місця (Location):** тут, там, вдома, близько, далеко, навпроти
+- **Прислівники напрямку (Direction):** сюди, туди, додому, прямо, назад
+- **Прийменники (Prepositions):** з/із (from place), від (from person), до (to person)
+- **Пари (Pairs):** вдома/додому, тут/сюди, там/туди
+- **Правило (Rule):** Питання визначає відмінок!
+
+---
+
+**Наступний урок:** Частини тіла та здоров'я!
 
 # Вправи (Activities)
 
@@ -619,19 +598,39 @@ Is this true or false?
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про напрямок і місце! (You've learned direction and location!)
-
-**Що ви вивчили (What you learned):**
-
-- **Три питання (Three questions):** Де? Куди? Звідки?
-- **Прислівники місця (Location):** тут, там, вдома, близько, далеко, навпроти
-- **Прислівники напрямку (Direction):** сюди, туди, додому, прямо, назад
-- **Прийменники (Prepositions):** з/із (from place), від (from person), до (to person)
-- **Пари (Pairs):** вдома/додому, тут/сюди, там/туди
-- **Правило (Rule):** Питання визначає відмінок!
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| де | /dɛ/ | where | adv | — | location question |
+| куди | /kuˈdɪ/ | where to | adv | — | direction question |
+| звідки | /ˈzwʲidkɪ/ | where from | adv | — | origin question |
+| тут | /tut/ | here | adv | — | location |
+| там | /tɑm/ | there | adv | — | location |
+| сюди | /sʲuˈdɪ/ | to here | adv | — | direction |
+| туди | /tuˈdɪ/ | to there | adv | — | direction |
+| вдома | /wdɔˈmɑ/ | at home | adv | — | location |
+| додому | /dɔˈdɔmu/ | to home | adv | — | direction |
+| з | /z/ | from (place) | prep | — | + Genitive |
+| від | /wʲid/ | from (person) | prep | — | + Genitive |
+| до | /dɔ/ | to (person/place) | prep | — | + Genitive |
+| через | /ˈtʃɛrɛz/ | through, across | prep | — | + Accusative |
+| прямо | /ˈprʲɑmɔ/ | straight | adv | — | direction |
+| назад | /nɑˈzɑd/ | back | adv | — | direction |
+| близько | /ˈblɪzʲkɔ/ | near | adv | — | location |
+| далеко | /dɑˈlɛkɔ/ | far | adv | — | location |
+| ліворуч | /lʲiwɔˈrutʃ/ | on the left | adv | — | direction |
+| праворуч | /prɑwɔˈrutʃ/ | on the right | adv | — | direction |
+| навпроти | /nɑwˈprɔtɪ/ | opposite | adv | — | location |
 
 ---
 
-**Наступний урок:** Частини тіла та здоров'я!
+> [!resources] 🎧 External Resources
+>
+> **Location vs Destination:** [В Україні vs В Україну](https://www.ukrainianlessons.com/location-destination-prepositions/) — How to express "where" vs "where to"
+>
+> **Prepositions Guide:** [Difference between У (В) and На](https://www.ukrainianlessons.com/prepositions-u-na/) — When to use which preposition
+>
+> **Directions:** [Напрямки — Directions in Ukrainian](https://www.ukrainianlessons.com/vocabulary-directions/) — Audio vocabulary for navigation
+
+---

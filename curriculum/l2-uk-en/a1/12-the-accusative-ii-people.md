@@ -15,7 +15,6 @@ objectives:
   - "Learner can identify when accusative = genitive"
 vocabulary_count: 20
 ---
-
 # The Accusative II: People
 
 ## Warm-up
@@ -245,33 +244,6 @@ In this module, you learned the **animate accusative** — how Ukrainian marks p
 - Say "I see the doctor" — Я бачу **лікаря**.
 - Say "She knows my friend" — Вона знає **мою подругу**.
 - Distinguish between people and things in the accusative case.
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| друг | /druh/ | friend (male) | noun | m | animate |
-| подруга | /poˈdruɦɑ/ | friend (female) | noun | f | animate |
-| колега | /koˈlɛɦɑ/ | colleague | noun | m/f | animate |
-| сусід | /suˈsid/ | neighbor (male) | noun | m | animate |
-| сусідка | /suˈsidkɑ/ | neighbor (female) | noun | f | animate |
-| лікар | /liˈkɑr/ | doctor | noun | m | animate |
-| лікарка | /liˈkɑrkɑ/ | doctor (female) | noun | f | animate |
-| вчитель | /wtʃɪˈtɛlʲ/ | teacher (male) | noun | m | animate |
-| вчителька | /wtʃɪˈtɛlʲkɑ/ | teacher (female) | noun | f | animate |
-| студент | /stuˈdɛnt/ | student (male) | noun | m | animate |
-| студентка | /stuˈdɛntkɑ/ | student (female) | noun | f | animate |
-| офіціант | /ofit͡sɪˈɑnt/ | waiter | noun | m | animate |
-| офіціантка | /ofit͡sɪˈɑntkɑ/ | waitress | noun | f | animate |
-| продавець | /prodɑˈvɛt͡sʲ/ | salesperson (male) | noun | m | animate |
-| продавчиня | /prodɑvˈt͡ʃɪnʲɑ/ | salesperson (female) | noun | f | animate |
-| водій | /voˈdij/ | driver | noun | m | animate |
-| пасажир | /pɑsɑˈʒɪr/ | passenger | noun | m | animate |
-| гість | /histʲ/ | guest | noun | m | animate |
-| директор | /dɪˈrɛktor/ | director | noun | m | animate |
-| менеджер | /mɛˈnɛd͡ʒɛr/ | manager | noun | m | animate |
 
 ---
 
@@ -637,3 +609,30 @@ In this module, you learned the **animate accusative** — how Ukrainian marks p
 8. бачить / Вона / офіціанта / та / офіціантку
    > [!answer] Вона бачить офіціанта та офіціантку.
    > (She sees the waiter and waitress.) [5 words]
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| друг | /druh/ | friend (male) | noun | m | animate |
+| подруга | /poˈdruɦɑ/ | friend (female) | noun | f | animate |
+| колега | /koˈlɛɦɑ/ | colleague | noun | m/f | animate |
+| сусід | /suˈsid/ | neighbor (male) | noun | m | animate |
+| сусідка | /suˈsidkɑ/ | neighbor (female) | noun | f | animate |
+| лікар | /liˈkɑr/ | doctor | noun | m | animate |
+| лікарка | /liˈkɑrkɑ/ | doctor (female) | noun | f | animate |
+| вчитель | /wtʃɪˈtɛlʲ/ | teacher (male) | noun | m | animate |
+| вчителька | /wtʃɪˈtɛlʲkɑ/ | teacher (female) | noun | f | animate |
+| студент | /stuˈdɛnt/ | student (male) | noun | m | animate |
+| студентка | /stuˈdɛntkɑ/ | student (female) | noun | f | animate |
+| офіціант | /ofit͡sɪˈɑnt/ | waiter | noun | m | animate |
+| офіціантка | /ofit͡sɪˈɑntkɑ/ | waitress | noun | f | animate |
+| продавець | /prodɑˈvɛt͡sʲ/ | salesperson (male) | noun | m | animate |
+| продавчиня | /prodɑvˈt͡ʃɪnʲɑ/ | salesperson (female) | noun | f | animate |
+| водій | /voˈdij/ | driver | noun | m | animate |
+| пасажир | /pɑsɑˈʒɪr/ | passenger | noun | m | animate |
+| гість | /histʲ/ | guest | noun | m | animate |
+| директор | /dɪˈrɛktor/ | director | noun | m | animate |
+| менеджер | /mɛˈnɛd͡ʒɛr/ | manager | noun | m | animate |
+
+---

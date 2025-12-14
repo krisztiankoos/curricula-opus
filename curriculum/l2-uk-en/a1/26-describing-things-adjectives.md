@@ -23,7 +23,6 @@ objectives:
   - "Learner can form plural adjective forms"
 vocabulary_count: 36
 ---
-
 # Describing Things - Adjectives
 
 ## Warm-up
@@ -41,49 +40,6 @@ vocabulary_count: 36
 > **Video:** [Introduction to Ukrainian Adjectives](https://www.ukrainianlessons.com/video-adjectives/) — Grammar video on adjective forms
 >
 > **Comparison:** [Adjectives and Adverbs Chart](https://www.ukrainianlessons.com/adjectives-adverbs-chart/) — Compare adjectives and adverbs
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| великий | /weˈlɪkɪj/ | big, large | adj | m | великий будинок |
-| малий | /mɑˈlɪj/ | small | adj | m | маленький (dim.) |
-| високий | /wɪˈsɔkɪj/ | tall, high | adj | m | - |
-| низький | /ˈnɪzʲkɪj/ | short, low | adj | m | - |
-| довгий | /ˈdɔwɦɪj/ | long | adj | m | - |
-| короткий | /kɔˈrɔtkɪj/ | short | adj | m | - |
-| широкий | /ʃɪˈrɔkɪj/ | wide | adj | m | - |
-| вузький | /ˈwuzʲkɪj/ | narrow | adj | m | - |
-| новий | /nɔˈwɪj/ | new | adj | m | - |
-| старий | /stɑˈrɪj/ | old | adj | m | for things/people |
-| молодий | /mɔlɔˈdɪj/ | young | adj | m | - |
-| гарний | /ˈɦɑrnɪj/ | beautiful, nice | adj | m | general positive |
-| красивий | /krɑˈsɪwɪj/ | beautiful | adj | m | for appearance |
-| поганий | /pɔˈɦɑnɪj/ | bad | adj | m | - |
-| добрий | /ˈdɔbrɪj/ | good, kind | adj | m | - |
-| злий | /zlɪj/ | angry, evil | adj | m | - |
-| розумний | /rɔˈzumnɪj/ | smart | adj | m | - |
-| дурний | /ˈdurnɪj/ | stupid | adj | m | - |
-| сильний | /ˈsɪlʲnɪj/ | strong | adj | m | - |
-| слабкий | /ˈslɑbkɪj/ | weak | adj | m | - |
-| швидкий | /ˈʃwɪdkɪj/ | fast | adj | m | - |
-| повільний | /pɔˈwilʲnɪj/ | slow | adj | m | - |
-| легкий | /ˈleɦkɪj/ | light, easy | adj | m | - |
-| важкий | /wɑʒˈkɪj/ | heavy, hard | adj | m | - |
-| дорогий | /dɔrɔˈɦɪj/ | expensive, dear | adj | m | - |
-| дешевий | /deˈʃewɪj/ | cheap | adj | m | - |
-| цікавий | /tsʲiˈkɑwɪj/ | interesting | adj | m | - |
-| нудний | /ˈnudnɪj/ | boring | adj | m | - |
-| простий | /prɔˈstɪj/ | simple | adj | m | - |
-| складний | /ˈsklɑdnɪj/ | complex | adj | m | - |
-| важливий | /wɑʒˈlɪwɪj/ | important | adj | m | - |
-| головний | /ɦɔlɔˈwnɪj/ | main | adj | m | - |
-| різний | /ˈriznɪj/ | different, various | adj | m | - |
-| однаковий | /ɔdnɑˈkɔwɪj/ | same, identical | adj | m | - |
-| особливий | /ɔsɔˈblɪwɪj/ | special | adj | m | - |
-| прикметник | /prɪkˈmetnɪk/ | adjective | n | m | grammar term |
 
 ---
 
@@ -284,6 +240,22 @@ Learning adjectives in pairs helps you remember them better:
 > Agreement isn't just extra work — it's helpful! When you hear "велика," you immediately know a feminine noun is coming. It's like a grammar preview that helps your brain prepare.
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися описувати речі прикметниками! (You've learned to describe things with adjectives!)
+
+**Що ви вивчили (What you learned):**
+
+- **Узгодження (Agreement):** Прикметники мають різні форми для роду і числа
+- **Тверда основа (Hard stem):** -ий (ч), -а (ж), -е (с), -і (мн)
+- **М'яка основа (Soft stem):** -ій (ч), -я (ж), -є (с), -і (мн)
+- **Розмір (Size):** великий, малий, високий, низький, довгий, короткий
+- **Якість (Quality):** добрий, поганий, гарний, розумний, цікавий
+
+---
+
+**Наступний урок:** Кольори та одяг!
 
 # Вправи (Activities)
 
@@ -567,18 +539,45 @@ Learning adjectives in pairs helps you remember them better:
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися описувати речі прикметниками! (You've learned to describe things with adjectives!)
-
-**Що ви вивчили (What you learned):**
-
-- **Узгодження (Agreement):** Прикметники змінюються за родом і числом
-- **Тверда основа (Hard stem):** -ий (ч), -а (ж), -е (с), -і (мн)
-- **М'яка основа (Soft stem):** -ій (ч), -я (ж), -є (с), -і (мн)
-- **Розмір (Size):** великий, малий, високий, низький, довгий, короткий
-- **Якість (Quality):** добрий, поганий, гарний, розумний, цікавий
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| великий | /weˈlɪkɪj/ | big, large | adj | m | великий будинок |
+| малий | /mɑˈlɪj/ | small | adj | m | маленький (dim.) |
+| високий | /wɪˈsɔkɪj/ | tall, high | adj | m | - |
+| низький | /ˈnɪzʲkɪj/ | short, low | adj | m | - |
+| довгий | /ˈdɔwɦɪj/ | long | adj | m | - |
+| короткий | /kɔˈrɔtkɪj/ | short | adj | m | - |
+| широкий | /ʃɪˈrɔkɪj/ | wide | adj | m | - |
+| вузький | /ˈwuzʲkɪj/ | narrow | adj | m | - |
+| новий | /nɔˈwɪj/ | new | adj | m | - |
+| старий | /stɑˈrɪj/ | old | adj | m | for things/people |
+| молодий | /mɔlɔˈdɪj/ | young | adj | m | - |
+| гарний | /ˈɦɑrnɪj/ | beautiful, nice | adj | m | general positive |
+| красивий | /krɑˈsɪwɪj/ | beautiful | adj | m | for appearance |
+| поганий | /pɔˈɦɑnɪj/ | bad | adj | m | - |
+| добрий | /ˈdɔbrɪj/ | good, kind | adj | m | - |
+| злий | /zlɪj/ | angry, evil | adj | m | - |
+| розумний | /rɔˈzumnɪj/ | smart | adj | m | - |
+| дурний | /ˈdurnɪj/ | stupid | adj | m | - |
+| сильний | /ˈsɪlʲnɪj/ | strong | adj | m | - |
+| слабкий | /ˈslɑbkɪj/ | weak | adj | m | - |
+| швидкий | /ˈʃwɪdkɪj/ | fast | adj | m | - |
+| повільний | /pɔˈwilʲnɪj/ | slow | adj | m | - |
+| легкий | /ˈleɦkɪj/ | light, easy | adj | m | - |
+| важкий | /wɑʒˈkɪj/ | heavy, hard | adj | m | - |
+| дорогий | /dɔrɔˈɦɪj/ | expensive, dear | adj | m | - |
+| дешевий | /deˈʃewɪj/ | cheap | adj | m | - |
+| цікавий | /tsʲiˈkɑwɪj/ | interesting | adj | m | - |
+| нудний | /ˈnudnɪj/ | boring | adj | m | - |
+| простий | /prɔˈstɪj/ | simple | adj | m | - |
+| складний | /ˈsklɑdnɪj/ | complex | adj | m | - |
+| важливий | /wɑʒˈlɪwɪj/ | important | adj | m | - |
+| головний | /ɦɔlɔˈwnɪj/ | main | adj | m | - |
+| різний | /ˈriznɪj/ | different, various | adj | m | - |
+| однаковий | /ɔdnɑˈkɔwɪj/ | same, identical | adj | m | - |
+| особливий | /ɔsɔˈblɪwɪj/ | special | adj | m | - |
+| прикметник | /prɪkˈmetnɪk/ | adjective | n | m | grammar term |
 
 ---
-
-**Наступний урок:** Кольори та одяг!

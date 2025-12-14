@@ -23,7 +23,6 @@ objectives:
   - "Learner can distinguish adverbs from adjectives"
 vocabulary_count: 30
 ---
-
 # Description: Adverbs
 
 ## Warm-up
@@ -43,43 +42,6 @@ vocabulary_count: 30
 > **Chart:** [Adjectives and Adverbs Chart](https://www.ukrainianlessons.com/adjectives-adverbs-chart/) — Full comparison table
 >
 > **Location Adverbs:** [Adverbs of Location](https://www.ukrainianlessons.com/adverbs-location/) — Тут, сюди, звідси patterns
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| гарно | /ˈhɑrnɔ/ | beautifully | adv | — | from гарний |
-| погано | /pɔˈhɑnɔ/ | badly | adv | — | from поганий |
-| добре | /ˈdɔbre/ | well | adv | — | from добрий |
-| швидко | /ˈʃwɪdkɔ/ | fast, quickly | adv | — | from швидкий |
-| повільно | /pɔˈwilʲnɔ/ | slowly | adv | — | from повільний |
-| цікаво | /t͡sʲiˈkawɔ/ | interestingly | adv | — | from цікавий |
-| нудно | /ˈnudnɔ/ | boringly | adv | — | from нудний |
-| важко | /ˈwɑʒkɔ/ | with difficulty | adv | — | from важкий |
-| легко | /ˈlehkɔ/ | easily | adv | — | from легкий |
-| смачно | /ˈsmɑtʃnɔ/ | deliciously | adv | — | from смачний |
-| дорого | /ˈdɔrɔhɔ/ | expensively | adv | — | from дорогий |
-| дешево | /ˈdeʃewɔ/ | cheaply | adv | — | from дешевий |
-| голосно | /hɔˈlɔsnɔ/ | loudly | adv | — | from голосний |
-| тихо | /ˈtɪxɔ/ | quietly | adv | — | from тихий |
-| весело | /ˈweselɔ/ | merrily | adv | — | from веселий |
-| сумно | /ˈsumnɔ/ | sadly | adv | — | from сумний |
-| серйозно | /serˈjɔznɔ/ | seriously | adv | — | from серйозний |
-| жартома | /ʒɑrˈtɔmɑ/ | jokingly | adv | — | irregular |
-| ввічливо | /ˈwːitʃlɪwɔ/ | politely | adv | — | from ввічливий |
-| чесно | /ˈtʃesnɔ/ | honestly | adv | — | from чесний |
-| завжди | /ˈzɑwʒdɪ/ | always | adv | — | frequency |
-| часто | /ˈtʃɑstɔ/ | often | adv | — | frequency |
-| зазвичай | /zɑzwɪˈtʃɑj/ | usually | adv | — | frequency |
-| іноді | /iˈnɔdʲi/ | sometimes | adv | — | frequency |
-| рідко | /ˈrʲidkɔ/ | rarely | adv | — | frequency |
-| ніколи | /nʲiˈkɔlɪ/ | never | adv | — | needs не |
-| трохи | /ˈtrɔxɪ/ | a little | adv | — | degree |
-| дуже | /ˈduʒe/ | very | adv | — | degree |
-| занадто | /zɑˈnɑdtɔ/ | too (much) | adv | — | degree |
-| зовсім | /zɔwˈsʲim/ | completely | adv | — | degree |
 
 ---
 
@@ -248,6 +210,23 @@ Some adverbs are special:
 > Listen for adverbs in popular Ukrainian songs! "Пісня козака" has "вранці рано" (early in the morning). Folk songs often use "тихо" (quietly), "високо" (high up), and "далеко" (far away). These words paint vivid pictures of the Ukrainian landscape and soul!
 
 ---
+
+# Summary
+
+In this module, you learned:
+
+- **Adverbs of manner (10 words)**: гарно, погано, добре, швидко, повільно, голосно, тихо, весело, сумно, легко, важко
+- **Adverbs of frequency (6 words)**: завжди, часто, зазвичай, іноді, рідко, ніколи
+- **Degree adverbs (4 words)**: дуже, занадто, трохи, зовсім
+- **Other manner adverbs (10 words)**: цікаво, нудно, смачно, дорого, дешево, серйозно, жартома, ввічливо, чесно
+- **Formation pattern**: Adjective stem + -о = Adverb (гарний → гарно)
+- **Irregular**: хороший → добре, поганий → погано
+- **Double negative rule**: ніколи + не (Я ніколи не курю)
+- **Frequency scale**: завжди > часто > зазвичай > іноді > рідко > ніколи
+
+---
+
+**Coming up:** Module 29 will teach you about weather and nature!
 
 # Activities
 
@@ -606,19 +585,39 @@ Is this true or false?
 
 ---
 
-# Summary
+# Vocabulary
 
-In this module, you learned:
-
-- **Adverbs of manner (10 words)**: гарно, погано, добре, швидко, повільно, голосно, тихо, весело, сумно, легко, важко
-- **Adverbs of frequency (6 words)**: завжди, часто, зазвичай, іноді, рідко, ніколи
-- **Degree adverbs (4 words)**: дуже, занадто, трохи, зовсім
-- **Other manner adverbs (10 words)**: цікаво, нудно, смачно, дорого, дешево, серйозно, жартома, ввічливо, чесно
-- **Formation pattern**: Adjective stem + -о = Adverb (гарний → гарно)
-- **Irregular**: хороший → добре, поганий → погано
-- **Double negative rule**: ніколи + не (Я ніколи не курю)
-- **Frequency scale**: завжди > часто > зазвичай > іноді > рідко > ніколи
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| гарно | /ˈhɑrnɔ/ | beautifully | adv | — | from гарний |
+| погано | /pɔˈhɑnɔ/ | badly | adv | — | from поганий |
+| добре | /ˈdɔbre/ | well | adv | — | from добрий |
+| швидко | /ˈʃwɪdkɔ/ | fast, quickly | adv | — | from швидкий |
+| повільно | /pɔˈwilʲnɔ/ | slowly | adv | — | from повільний |
+| цікаво | /t͡sʲiˈkawɔ/ | interestingly | adv | — | from цікавий |
+| нудно | /ˈnudnɔ/ | boringly | adv | — | from нудний |
+| важко | /ˈwɑʒkɔ/ | with difficulty | adv | — | from важкий |
+| легко | /ˈlehkɔ/ | easily | adv | — | from легкий |
+| смачно | /ˈsmɑtʃnɔ/ | deliciously | adv | — | from смачний |
+| дорого | /ˈdɔrɔhɔ/ | expensively | adv | — | from дорогий |
+| дешево | /ˈdeʃewɔ/ | cheaply | adv | — | from дешевий |
+| голосно | /hɔˈlɔsnɔ/ | loudly | adv | — | from голосний |
+| тихо | /ˈtɪxɔ/ | quietly | adv | — | from тихий |
+| весело | /ˈweselɔ/ | merrily | adv | — | from веселий |
+| сумно | /ˈsumnɔ/ | sadly | adv | — | from сумний |
+| серйозно | /serˈjɔznɔ/ | seriously | adv | — | from серйозний |
+| жартома | /ʒɑrˈtɔmɑ/ | jokingly | adv | — | irregular |
+| ввічливо | /ˈwːitʃlɪwɔ/ | politely | adv | — | from ввічливий |
+| чесно | /ˈtʃesnɔ/ | honestly | adv | — | from чесний |
+| завжди | /ˈzɑwʒdɪ/ | always | adv | — | frequency |
+| часто | /ˈtʃɑstɔ/ | often | adv | — | frequency |
+| зазвичай | /zɑzwɪˈtʃɑj/ | usually | adv | — | frequency |
+| іноді | /iˈnɔdʲi/ | sometimes | adv | — | frequency |
+| рідко | /ˈrʲidkɔ/ | rarely | adv | — | frequency |
+| ніколи | /nʲiˈkɔlɪ/ | never | adv | — | needs не |
+| трохи | /ˈtrɔxɪ/ | a little | adv | — | degree |
+| дуже | /ˈduʒe/ | very | adv | — | degree |
+| занадто | /zɑˈnɑdtɔ/ | too (much) | adv | — | degree |
+| зовсім | /zɔwˈsʲim/ | completely | adv | — | degree |
 
 ---
-
-**Coming up:** Module 29 will teach you about weather and nature!

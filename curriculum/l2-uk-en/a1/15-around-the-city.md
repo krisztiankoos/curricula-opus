@@ -25,7 +25,6 @@ objectives:
   - "Name common urban infrastructure and transport methods"
 vocabulary_count: 40
 ---
-
 # Around the City
 
 ## Warm-up
@@ -339,53 +338,6 @@ You now have the vocabulary to:
 - **Біля світлофора.** — Near the traffic light.
 
 Next module: **Genitive Case I — Absence and Negation** (немає, without). You'll learn to say "I don't have" and "There is no..." — essential for shopping, restaurants, and everyday problem-solving!
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| вулиця | /ˈwulɪtsʲɑ/ | street | noun | f | main roads |
-| провулок | /ˈprɔwulɔk/ | lane, alley | noun | m | smaller streets |
-| площа | /ˈplɔʃt͡ʃɑ/ | square | noun | f | public space |
-| проспект | /prɔsˈpɛkt/ | avenue | noun | m | wide road |
-| бульвар | /bulʲˈwɑr/ | boulevard | noun | m | tree-lined road |
-| набережна | /nɑbɛˈrɛʒnɑ/ | embankment | noun | f | riverside promenade |
-| міст | /mist/ | bridge | noun | m | - |
-| перехрестя | /pɛrɛˈxrɛstʲɑ/ | intersection | noun | n | crossroads |
-| світлофор | /sʲwʲitlɔˈfɔr/ | traffic light | noun | m | - |
-| зупинка | /zuˈpɪnkɑ/ | stop | noun | f | bus/tram stop |
-| станція | /ˈstɑntsʲijɑ/ | station | noun | f | metro/train |
-| вхід | /wxid/ | entrance | noun | m | - |
-| вихід | /ˈwɪxid/ | exit | noun | m | - |
-| прямо | /ˈprʲɑmɔ/ | straight | adverb | - | forward |
-| наліво | /nɑˈliʋɔ/ | to the left | adverb | - | - |
-| направо | /nɑˈprɑʋɔ/ | to the right | adverb | - | - |
-| назад | /nɑˈzɑd/ | back | adverb | - | return |
-| далеко | /dɑlɛˈkɔ/ | far | adverb | - | - |
-| близько | /ˈblɪzʲkɔ/ | close, near | adverb | - | - |
-| поруч | /ˈpɔrut͡ʃ/ | nearby | adverb | - | next to |
-| навпроти | /nɑwˈprɔtɪ/ | opposite | adverb/prep | - | across from |
-| за | /zɑ/ | behind | preposition | - | - |
-| перед | /ˈpɛrɛd/ | in front of | preposition | - | - |
-| між | /miʒ/ | between | preposition | - | - |
-| біля | /ˈbilʲɑ/ | near, by | preposition | - | - |
-| через | /ˈt͡ʃɛrɛz/ | through, across | preposition | - | - |
-| до | /dɔ/ | to (toward) | preposition | - | direction |
-| від | /wid/ | from | preposition | - | origin |
-| вздовж | /ˈvzdɔwʒ/ | along | preposition | - | - |
-| туди | /tuˈdɪ/ | there (direction) | adverb | - | motion |
-| сюди | /sʲuˈdɪ/ | here (direction) | adverb | - | motion toward speaker |
-| звідти | /ˈzʲwidtɪ/ | from there | adverb | - | origin |
-| куди | /kuˈdɪ/ | where (to) | adverb | - | question word for direction |
-| пішки | /piʃˈkɪ/ | on foot | adverb | - | walking |
-| автобус | /ɑwˈtɔbus/ | bus | noun | m | на автобусі = by bus |
-| трамвай | /trɑmˈwɑj/ | tram | noun | m | на трамваї = by tram |
-| метро | /mɛˈtrɔ/ | metro | noun (indecl.) | n | subway |
-| таксі | /tɑkˈsi/ | taxi | noun (indecl.) | n | на таксі = by taxi |
-| машина | /mɑˈʃɪnɑ/ | car | noun | f | на машині = by car |
-| велосипед | /wɛlɔsɪˈpɛd/ | bicycle | noun | m | на велосипеді = by bicycle |
 
 ---
 
@@ -810,3 +762,50 @@ Next module: **Genitive Case I — Absence and Negation** (немає, without).
 12. перехресті / На / наліво / ідіть
     > [!answer] На перехресті ідіть наліво.
     > (At the intersection go left.) [4 words]
+
+# Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| вулиця | /ˈwulɪtsʲɑ/ | street | noun | f | main roads |
+| провулок | /ˈprɔwulɔk/ | lane, alley | noun | m | smaller streets |
+| площа | /ˈplɔʃt͡ʃɑ/ | square | noun | f | public space |
+| проспект | /prɔsˈpɛkt/ | avenue | noun | m | wide road |
+| бульвар | /bulʲˈwɑr/ | boulevard | noun | m | tree-lined road |
+| набережна | /nɑbɛˈrɛʒnɑ/ | embankment | noun | f | riverside promenade |
+| міст | /mist/ | bridge | noun | m | - |
+| перехрестя | /pɛrɛˈxrɛstʲɑ/ | intersection | noun | n | crossroads |
+| світлофор | /sʲwʲitlɔˈfɔr/ | traffic light | noun | m | - |
+| зупинка | /zuˈpɪnkɑ/ | stop | noun | f | bus/tram stop |
+| станція | /ˈstɑntsʲijɑ/ | station | noun | f | metro/train |
+| вхід | /wxid/ | entrance | noun | m | - |
+| вихід | /ˈwɪxid/ | exit | noun | m | - |
+| прямо | /ˈprʲɑmɔ/ | straight | adverb | - | forward |
+| наліво | /nɑˈliʋɔ/ | to the left | adverb | - | - |
+| направо | /nɑˈprɑʋɔ/ | to the right | adverb | - | - |
+| назад | /nɑˈzɑd/ | back | adverb | - | return |
+| далеко | /dɑlɛˈkɔ/ | far | adverb | - | - |
+| близько | /ˈblɪzʲkɔ/ | close, near | adverb | - | - |
+| поруч | /ˈpɔrut͡ʃ/ | nearby | adverb | - | next to |
+| навпроти | /nɑwˈprɔtɪ/ | opposite | adverb/prep | - | across from |
+| за | /zɑ/ | behind | preposition | - | - |
+| перед | /ˈpɛrɛd/ | in front of | preposition | - | - |
+| між | /miʒ/ | between | preposition | - | - |
+| біля | /ˈbilʲɑ/ | near, by | preposition | - | - |
+| через | /ˈt͡ʃɛrɛz/ | through, across | preposition | - | - |
+| до | /dɔ/ | to (toward) | preposition | - | direction |
+| від | /wid/ | from | preposition | - | origin |
+| вздовж | /ˈvzdɔwʒ/ | along | preposition | - | - |
+| туди | /tuˈdɪ/ | there (direction) | adverb | - | motion |
+| сюди | /sʲuˈdɪ/ | here (direction) | adverb | - | motion toward speaker |
+| звідти | /ˈzʲwidtɪ/ | from there | adverb | - | origin |
+| куди | /kuˈdɪ/ | where (to) | adverb | - | question word for direction |
+| пішки | /piʃˈkɪ/ | on foot | adverb | - | walking |
+| автобус | /ɑwˈtɔbus/ | bus | noun | m | на автобусі = by bus |
+| трамвай | /trɑmˈwɑj/ | tram | noun | m | на трамваї = by tram |
+| метро | /mɛˈtrɔ/ | metro | noun (indecl.) | n | subway |
+| таксі | /tɑkˈsi/ | taxi | noun (indecl.) | n | на таксі = by taxi |
+| машина | /mɑˈʃɪnɑ/ | car | noun | f | на машині = by car |
+| велосипед | /wɛlɔsɪˈpɛd/ | bicycle | noun | m | на велосипеді = by bicycle |
+
+---

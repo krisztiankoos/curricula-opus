@@ -22,7 +22,6 @@ objectives:
   - "Learner can ask for medicine at a pharmacy"
 vocabulary_count: 30
 ---
-
 # Body & Health
 
 ## Warm-up
@@ -43,43 +42,6 @@ vocabulary_count: 30
 > **Podcast:** [FMU 1-52 | Body Parts](https://www.ukrainianlessons.com/fmu52/) — Vocabulary booster for body parts
 >
 > **Health Phrases:** [Ukrainian Phrasebook](https://www.ukrainianlessons.com/phrasebook/) — Essential health phrases
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| голова | /hɔlɔˈwɑ/ | head | n | f | |
-| рука | /ruˈkɑ/ | hand/arm | n | f | |
-| нога | /nɔˈhɑ/ | leg/foot | n | f | |
-| живіт | /ʒɪˈwʲit/ | stomach | n | m | |
-| спина | /spɪˈnɑ/ | back | n | f | |
-| горло | /ˈhɔrlɔ/ | throat | n | n | |
-| око | /ˈɔkɔ/ | eye | n | n | pl: очі |
-| вухо | /ˈwuxɔ/ | ear | n | n | pl: вуха |
-| ніс | /nʲis/ | nose | n | m | |
-| рот | /rɔt/ | mouth | n | m | |
-| зуб | /zub/ | tooth | n | m | pl: зуби |
-| тіло | /ˈtʲilɔ/ | body | n | n | |
-| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
-| лікар | /ˈlʲikɑr/ | doctor | n | m | |
-| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | n | f | |
-| аптека | /ɑpˈtɛkɑ/ | pharmacy | n | f | |
-| ліки | /ˈlʲikɪ/ | medicine | n | pl | always plural |
-| таблетка | /tɑbˈlɛtkɑ/ | pill/tablet | n | f | |
-| температура | /tempɛrɑˈturɑ/ | fever/temperature | n | f | |
-| болить | /bɔˈlɪtʲ/ | hurts | v | — | 3rd person |
-| хворий | /xwɔˈrɪj/ | sick (m) | adj | m | |
-| хвора | /xwɔˈrɑ/ | sick (f) | adj | f | |
-| здоровий | /zdɔˈrɔwɪj/ | healthy (m) | adj | m | |
-| здорова | /zdɔˈrɔwɑ/ | healthy (f) | adj | f | |
-| погано | /pɔˈhɑnɔ/ | bad | adv | — | "Мені погано" |
-| допомога | /dɔpɔˈmɔhɑ/ | help | n | f | |
-| швидка допомога | /ˈʃwɪdkɑ dɔpɔˈmɔhɑ/ | ambulance | n | f | "fast help" |
-| кашель | /ˈkɑʃɛlʲ/ | cough | n | m | |
-| нежить | /ˈnɛʒɪtʲ/ | runny nose | n | m | |
-| застуда | /zɑsˈtudɑ/ | cold (illness) | n | f | |
 
 ---
 
@@ -245,6 +207,22 @@ vocabulary_count: 30
 > Ukrainians have traditional remedies! For a cold: чай, мед і лимон (tea, honey and lemon). For sore throat: тепле молоко (warm milk). Grandma (бабуся) always knows the best cure!
 
 ---
+
+# Summary
+
+In this module, you learned:
+
+- **Head parts (5)**: голова, око/очі, вухо/вуха, ніс, рот, зуб/зуби
+- **Body parts (5)**: тіло, горло, живіт, спина, рука, нога
+- **Health vocabulary (10)**: здоров'я, лікар, лікарня, аптека, ліки, таблетка, температура, кашель, нежить, застуда
+- **Health states**: хворий/хвора (sick), здоровий/здорова (healthy)
+- **Pain structure**: У мене болить + singular / болять + plural
+- **Feeling expressions**: Я хворий/хвора (I'm sick), Я здоровий/здорова (I'm healthy)
+- **Emergency**: швидка допомога (ambulance), call 103
+
+---
+
+**Coming up:** Module 32 will teach you about family members!
 
 # Activities
 
@@ -614,18 +592,39 @@ Match the Ukrainian word with its English meaning.
 
 ---
 
-# Summary
+# Vocabulary
 
-In this module, you learned:
-
-- **Head parts (5)**: голова, око/очі, вухо/вуха, ніс, рот, зуб/зуби
-- **Body parts (5)**: тіло, горло, живіт, спина, рука, нога
-- **Health vocabulary (10)**: здоров'я, лікар, лікарня, аптека, ліки, таблетка, температура, кашель, нежить, застуда
-- **Health states**: хворий/хвора (sick), здоровий/здорова (healthy)
-- **Pain structure**: У мене болить + singular / болять + plural
-- **Feeling expressions**: Я хворий/хвора (I'm sick), Я здоровий/здорова (I'm healthy)
-- **Emergency**: швидка допомога (ambulance), call 103
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| голова | /hɔlɔˈwɑ/ | head | n | f | |
+| рука | /ruˈkɑ/ | hand/arm | n | f | |
+| нога | /nɔˈhɑ/ | leg/foot | n | f | |
+| живіт | /ʒɪˈwʲit/ | stomach | n | m | |
+| спина | /spɪˈnɑ/ | back | n | f | |
+| горло | /ˈhɔrlɔ/ | throat | n | n | |
+| око | /ˈɔkɔ/ | eye | n | n | pl: очі |
+| вухо | /ˈwuxɔ/ | ear | n | n | pl: вуха |
+| ніс | /nʲis/ | nose | n | m | |
+| рот | /rɔt/ | mouth | n | m | |
+| зуб | /zub/ | tooth | n | m | pl: зуби |
+| тіло | /ˈtʲilɔ/ | body | n | n | |
+| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
+| лікар | /ˈlʲikɑr/ | doctor | n | m | |
+| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | n | f | |
+| аптека | /ɑpˈtɛkɑ/ | pharmacy | n | f | |
+| ліки | /ˈlʲikɪ/ | medicine | n | pl | always plural |
+| таблетка | /tɑbˈlɛtkɑ/ | pill/tablet | n | f | |
+| температура | /tempɛrɑˈturɑ/ | fever/temperature | n | f | |
+| болить | /bɔˈlɪtʲ/ | hurts | v | — | 3rd person |
+| хворий | /xwɔˈrɪj/ | sick (m) | adj | m | |
+| хвора | /xwɔˈrɑ/ | sick (f) | adj | f | |
+| здоровий | /zdɔˈrɔwɪj/ | healthy (m) | adj | m | |
+| здорова | /zdɔˈrɔwɑ/ | healthy (f) | adj | f | |
+| погано | /pɔˈhɑnɔ/ | bad | adv | — | "Мені погано" |
+| допомога | /dɔpɔˈmɔhɑ/ | help | n | f | |
+| швидка допомога | /ˈʃwɪdkɑ dɔpɔˈmɔhɑ/ | ambulance | n | f | "fast help" |
+| кашель | /ˈkɑʃɛlʲ/ | cough | n | m | |
+| нежить | /ˈnɛʒɪtʲ/ | runny nose | n | m | |
+| застуда | /zɑsˈtudɑ/ | cold (illness) | n | f | |
 
 ---
-
-**Coming up:** Module 32 will teach you about family members!

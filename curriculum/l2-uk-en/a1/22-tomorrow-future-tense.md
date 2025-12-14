@@ -23,7 +23,6 @@ objectives:
   - "Learner can use future time expressions correctly"
 vocabulary_count: 25
 ---
-
 # Tomorrow - Future Tense
 
 > [!summary] Learning Goals
@@ -38,38 +37,6 @@ vocabulary_count: 25
 > **Podcast:** [ULP 1-28 | Making Plans](https://www.ukrainianlessons.com/episode28/) — Learn future tense through planning conversations
 >
 > **All Tenses:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable conjugation chart
-
----
-
-# Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| завтра | /ˈzɑwtrɑ/ | tomorrow | adv | - | - |
-| післязавтра | /pisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | adv | - | - |
-| наступного тижня | /nɑˈstupnoɦo ˈtɪʒnʲɑ/ | next week | phrase | - | genitive |
-| наступного місяця | /nɑˈstupnoɦo ˈmisʲɑtsʲɑ/ | next month | phrase | - | genitive |
-| наступного року | /nɑˈstupnoɦo ˈroku/ | next year | phrase | - | genitive |
-| скоро | /ˈskɔrɔ/ | soon | adv | - | - |
-| пізніше | /ˈpiznʲiʃe/ | later | adv | - | comparative |
-| потім | /ˈpɔtim/ | then, afterwards | adv | - | - |
-| згодом | /ˈzɦɔdɔm/ | eventually, later | adv | - | - |
-| буду | /ˈbudu/ | I will be | verb | - | future of бути |
-| збираюся | /zbɪˈrɑjusʲɑ/ | I am going to | verb | - | reflexive |
-| планую | /plɑˈnuju/ | I plan | verb | - | Class I |
-| хочу | /ˈxɔtʃu/ | I want | verb | - | irregular |
-| маю намір | /ˈmɑju ˈnɑmir/ | I intend | phrase | - | - |
-| сподіваюся | /spɔdʲiˈvɑjusʲɑ/ | I hope | verb | - | reflexive |
-| обіцяю | /ɔˈbitsʲɑju/ | I promise | verb | - | Class I |
-| спробую | /ˈsprɔbuju/ | I will try | verb | - | perfective |
-| постараюся | /pɔstɑˈrɑjusʲɑ/ | I will try (my best) | verb | - | perfective, reflexive |
-| мрію | /ˈmriju/ | I dream | verb | - | Class I |
-| думаю | /ˈdumɑju/ | I think | verb | - | Class I |
-| вирішив | /wɪˈriʃɪw/ | I decided (m) | verb | - | past, perfective |
-| вже | /wʒe/ | already | adv | - | - |
-| ще | /ʃtʃe/ | still, yet | adv | - | - |
-| ніколи | /nʲiˈkɔlɪ/ | never | adv | - | - |
-| обов'язково | /ɔbɔwjɑzˈkɔwɔ/ | definitely, must | adv | - | - |
 
 ---
 
@@ -264,6 +231,38 @@ Ukrainian uses **буду** (future of "to be") + infinitive to form the compoun
 > Ukrainian actually has two ways to express future! The compound future (буду + infinitive) we learned today is for ongoing/repeated actions. For single completed actions, Ukrainian uses the perfective future (which looks like present tense of perfective verbs). You'll master both as you progress!
 
 ---
+
+# Підсумок (Summary)
+
+Ви навчилися говорити про майбутнє! (You've learned to talk about the future!)
+
+**Що ви вивчили (What you learned):**
+
+- **Майбутній час з "буду" (Future with "буду"):** буду/будеш/буде/будемо/будете/будуть + інфінітив
+- **Часові вирази (Time expressions):** завтра, післязавтра, скоро, пізніше
+- **Планування (Planning):** планую, збираюся, маю намір
+- **Надії та мрії (Hopes and dreams):** сподіваюся, мрію, хочу
+- **Рівні впевненості (Certainty):** обов'язково, обіцяю, спробую
+- **Прислівники (Adverbs):** вже (already), ще (still/yet), ніколи (never)
+
+### Швидка довідка (Quick Reference)
+
+| Особа | Дієслово "бути" | Приклад |
+|-------|-----------------|---------|
+| я | буду | Я буду читати книгу. |
+| ти | будеш | Ти будеш працювати завтра? |
+| він/вона | буде | Вона буде вивчати українську. |
+| ми | будемо | Ми будемо готувати вечерю. |
+| ви | будете | Що ви будете робити? |
+| вони | будуть | Вони будуть грати у футбол. |
+
+**Приклади (Examples):**
+
+Завтра буде гарний день. Ми будемо гуляти в парку. Вони будуть готувати українські страви. Я буду вчити нові слова. Ти будеш відпочивати? Вона буде працювати вдома. Він буде читати книгу. Ми будемо слухати музику разом.
+
+---
+
+**Наступний урок:** Котра година? Дні тижня та місяці!
 
 # Вправи (Activities)
 
@@ -559,34 +558,34 @@ Decide if each statement is true or false.
 
 ---
 
-# Підсумок (Summary)
+# Vocabulary
 
-Ви навчилися говорити про майбутнє! (You've learned to talk about the future!)
-
-**Що ви вивчили (What you learned):**
-
-- **Складений майбутній час (Compound future):** буду/будеш/буде/будемо/будете/будуть + інфінітив
-- **Часові вирази (Time expressions):** завтра, післязавтра, скоро, пізніше
-- **Планування (Planning):** планую, збираюся, маю намір
-- **Надії та мрії (Hopes and dreams):** сподіваюся, мрію, хочу
-- **Рівні впевненості (Certainty):** обов'язково, обіцяю, спробую
-- **Прислівники (Adverbs):** вже (already), ще (still/yet), ніколи (never)
-
-### Швидка довідка (Quick Reference)
-
-| Особа | Дієслово "бути" | Приклад |
-|-------|-----------------|---------|
-| я | буду | Я буду читати книгу. |
-| ти | будеш | Ти будеш працювати завтра? |
-| він/вона | буде | Вона буде вивчати українську. |
-| ми | будемо | Ми будемо готувати вечерю. |
-| ви | будете | Що ви будете робити? |
-| вони | будуть | Вони будуть грати у футбол. |
-
-**Приклади (Examples):**
-
-Завтра буде гарний день. Ми будемо гуляти в парку. Вони будуть готувати українські страви. Я буду вчити нові слова. Ти будеш відпочивати? Вона буде працювати вдома. Він буде читати книгу. Ми будемо слухати музику разом.
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| завтра | /ˈzɑwtrɑ/ | tomorrow | adv | - | - |
+| післязавтра | /pisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | adv | - | - |
+| наступного тижня | /nɑˈstupnoɦo ˈtɪʒnʲɑ/ | next week | phrase | - | genitive |
+| наступного місяця | /nɑˈstupnoɦo ˈmisʲɑtsʲɑ/ | next month | phrase | - | genitive |
+| наступного року | /nɑˈstupnoɦo ˈroku/ | next year | phrase | - | genitive |
+| скоро | /ˈskɔrɔ/ | soon | adv | - | - |
+| пізніше | /ˈpiznʲiʃe/ | later | adv | - | comparative |
+| потім | /ˈpɔtim/ | then, afterwards | adv | - | - |
+| згодом | /ˈzɦɔdɔm/ | eventually, later | adv | - | - |
+| буду | /ˈbudu/ | I will be | verb | - | future of бути |
+| збираюся | /zbɪˈrɑjusʲɑ/ | I am going to | verb | - | reflexive |
+| планую | /plɑˈnuju/ | I plan | verb | - | Class I |
+| хочу | /ˈxɔtʃu/ | I want | verb | - | irregular |
+| маю намір | /ˈmɑju ˈnɑmir/ | I intend | phrase | - | - |
+| сподіваюся | /spɔdʲiˈvɑjusʲɑ/ | I hope | verb | - | reflexive |
+| обіцяю | /ɔˈbitsʲɑju/ | I promise | verb | - | Class I |
+| спробую | /ˈsprɔbuju/ | I will try | verb | - | perfective |
+| постараюся | /pɔstɑˈrɑjusʲɑ/ | I will try (my best) | verb | - | perfective, reflexive |
+| мрію | /ˈmriju/ | I dream | verb | - | Class I |
+| думаю | /ˈdumɑju/ | I think | verb | - | Class I |
+| вирішив | /wɪˈriʃɪw/ | I decided (m) | verb | - | past, perfective |
+| вже | /wʒe/ | already | adv | - | - |
+| ще | /ʃtʃe/ | still, yet | adv | - | - |
+| ніколи | /nʲiˈkɔlɪ/ | never | adv | - | - |
+| обов'язково | /ɔbɔwjɑzˈkɔwɔ/ | definitely, must | adv | - | - |
 
 ---
-
-**Наступний урок:** Котра година? Дні тижня та місяці!

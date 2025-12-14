@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Вид у запереченні — Особливості
 
 ## Diagnostic
 
@@ -408,37 +406,6 @@ Convert each positive command to a negative one with appropriate aspect:
 
 ---
 
-## 📚 Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| не | /nɛ/ | not | част. | - |
-| ніколи | /nʲiˈkɔlɪ/ | never | присл. | impf trigger |
-| ніде | /nʲiˈdɛ/ | nowhere | присл. | - |
-| ніяк | /nʲiˈjɑk/ | no way | присл. | - |
-| ніхто | /nʲixˈtɔ/ | nobody | займ. | - |
-| ніщо | /nʲiˈʃt͡ʃɔ/ | nothing | займ. | - |
-| жодний | /ˈʒɔdnɪj/ | not any, none | займ. | - |
-| зовсім | /zɔwˈsʲim/ | at all | присл. | - |
-| взагалі | /wzɑˈɦɑlʲi/ | in general, at all | присл. | - |
-| абсолютно | /ɑbsɔˈlʲutnɔ/ | absolutely | присл. | - |
-| ще не | /ʃt͡ʃɛ nɛ/ | not yet | присл. | + pf |
-| вже не | /wʒɛ nɛ/ | no longer | присл. | - |
-| більше не | /ˈbʲilʲʃɛ nɛ/ | no more | присл. | - |
-| поки не | /ˈpɔkɪ nɛ/ | until not yet | сполучн. | - |
-| майже не | /ˈmɑjʒɛ nɛ/ | almost not | присл. | - |
-| навряд чи | /nɑwˈrʲɑd t͡ʃɪ/ | hardly, unlikely | присл. | - |
-| заборонено | /zɑbɔˈrɔnɛnɔ/ | forbidden | присл. | - |
-| неможливо | /nɛmɔʒˈlɪwɔ/ | impossible | присл. | - |
-| недоцільно | /nɛdɔˈt͡sʲilʲnɔ/ | inadvisable | присл. | - |
-| марно | /ˈmɑrnɔ/ | in vain | присл. | - |
-
----
-
-
-
----
-
 ## 🎯 Activities
 
 ### Aspect in Negation
@@ -810,6 +777,212 @@ Convert each positive command to a negative one with appropriate aspect:
   { jumbled: `не / підписали / Ми / договір / ще`, answer: `Ми ще не підписали договір.` },
   { jumbled: `дізнався / Він / не / про / ще / це`, answer: `Він ще не дізнався про це.` }
 ]} />
+
+### Aspect Errors in Negation
+
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я ніколи не прочитав цю книгу.`}
+    errorWord={`прочитав`}
+    correctForm={`читав`}
+    options={[`прочитав`, `читав`, `прочитаю`, `читаю`]}
+    explanation={`\"Ніколи\" triggers imperfective: ніколи не читав.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він ще не дзвонив мені.`}
+    errorWord={`дзвонив`}
+    correctForm={`подзвонив`}
+    options={[`дзвонив`, `подзвонив`, `дзвонить`, `подзвонить`]}
+    explanation={`\"Ще не\" requires perfective: ще не подзвонив.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ніхто не побачив цього.`}
+    errorWord={`побачив`}
+    correctForm={`бачив`}
+    options={[`побачив`, `бачив`, `побачить`, `бачить`]}
+    explanation={`\"Ніхто\" triggers imperfective: ніхто не бачив.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми ще не зустрічалися вчора.`}
+    errorWord={`зустрічалися`}
+    correctForm={`зустрілися`}
+    options={[`зустрічалися`, `зустрілися`, `зустрічаємося`, `зустрінемося`]}
+    explanation={`\"Ще не\" requires perfective: ще не зустрілися.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона ніде не побувала раніше.`}
+    errorWord={`побувала`}
+    correctForm={`була`}
+    options={[`побувала`, `була`, `побуває`, `буває`]}
+    explanation={`\"Ніде\" triggers imperfective: ніде не була.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вони ще не їхали з Києва.`}
+    errorWord={`їхали`}
+    correctForm={`виїхали`}
+    options={[`їхали`, `виїхали`, `їдуть`, `виїдуть`]}
+    explanation={`\"Ще не\" requires perfective: ще не виїхали.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я ніколи не написав листа бабусі.`}
+    errorWord={`написав`}
+    correctForm={`писав`}
+    options={[`написав`, `писав`, `напишу`, `пишу`]}
+    explanation={`\"Ніколи\" triggers imperfective: ніколи не писав.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він ще не говорив з начальником.`}
+    errorWord={`говорив`}
+    correctForm={`поговорив`}
+    options={[`говорив`, `поговорив`, `говорить`, `поговорить`]}
+    explanation={`\"Ще не\" requires perfective: ще не поговорив.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не забувай подзвонити! (warning)`}
+    errorWord={`забувай`}
+    correctForm={`забудь`}
+    options={[`забувай`, `забудь`, `забуваєш`, `забудеш`]}
+    explanation={`Warning = perfective imperative: Не забудь!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не скажи йому правду! (general prohibition)`}
+    errorWord={`скажи`}
+    correctForm={`говори`}
+    options={[`скажи`, `говори`, `скажеш`, `говориш`]}
+    explanation={`General prohibition = imperfective: Не говори!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ніхто ніколи не сказав мені правду.`}
+    errorWord={`сказав`}
+    correctForm={`говорив`}
+    options={[`сказав`, `говорив`, `скаже`, `говорить`]}
+    explanation={`\"Ніхто ніколи\" = imperfective: не говорив.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона ще не читала статтю.`}
+    errorWord={`читала`}
+    correctForm={`прочитала`}
+    options={[`читала`, `прочитала`, `читає`, `прочитає`]}
+    explanation={`\"Ще не\" requires perfective: ще не прочитала.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не загублюй ключі! (warning)`}
+    errorWord={`загублюй`}
+    correctForm={`загуби`}
+    options={[`загублюй`, `загуби`, `загублюєш`, `загубиш`]}
+    explanation={`Warning = perfective imperative: Не загуби!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я ще не їв сьогодні нічого.`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — \"ще не їв\" is correct for \"haven't eaten yet.\"`}
+  />
+</ErrorCorrection>
+
+### Imperative Aspect Errors
+
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Не відкрий двері! (general prohibition)`}
+    errorWord={`відкрий`}
+    correctForm={`відкривай`}
+    options={[`відкрий`, `відкривай`, `відкриєш`, `відкриваєш`]}
+    explanation={`General prohibition = imperfective: Не відкривай!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не чекай на мене, йди далі! (warning)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective for ongoing action is correct.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не курити! (general rule, warning sign)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective infinitive is correct for signs.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не говори нікому про це! (keep secret)`}
+    errorWord={`говори`}
+    correctForm={`скажи`}
+    options={[`говори`, `скажи`, `говориш`, `скажеш`]}
+    explanation={`\"Don't tell anyone\" = warning: Не скажи!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не запізнюйся на зустріч! (general advice)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective for general advice is correct.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не впускай склянку! (careful with glass)`}
+    errorWord={`впускай`}
+    correctForm={`впусти`}
+    options={[`впускай`, `впусти`, `впускаєш`, `впустиш`]}
+    explanation={`Warning about specific action = perfective: Не впусти!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не торкатися! (sign in museum)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective infinitive for prohibition signs.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не входи без дозволу! (rule)`}
+    errorWord={`входи`}
+    correctForm={`входь`}
+    options={[`входи`, `входь`, `увійди`, `увійдь`]}
+    explanation={`General prohibition = imperfective: Не входь!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не зламати іграшку! (warning to child)`}
+    errorWord={`зламати`}
+    correctForm={`зламай`}
+    options={[`зламати`, `зламай`, `ламай`, `ламати`]}
+    explanation={`Warning = perfective imperative: Не зламай!`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не бігай по коридору! (rule)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective for general prohibition.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не писати на стінах! (sign)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective infinitive for signs.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не прочитай листа раніше часу! (warning)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — perfective for warning is correct.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не їж з відкритим ротом! (manner)`}
+    errorWord={`none`}
+    correctForm={`✓`}
+    options={[]}
+    explanation={`No error — imperfective for manner prohibition.`}
+  />
+  <ErrorCorrectionItem
+    sentence={`Не губи документи! (ongoing care)`}
+    errorWord={`губи`}
+    correctForm={`загуби`}
+    options={[`губи`, `загуби`, `загублюй`, `губитимеш`]}
+    explanation={`Warning about documents = perfective: Не загуби!`}
+  />
+</ErrorCorrection>
 
 ### Library Dialogue Passage
 
@@ -1184,3 +1357,29 @@ Convert each positive command to a negative one with appropriate aspect:
     options: [`поверталися`, `повернулися`, `повертаються`, `повернуться`]
   }
 ]} />
+## 📚 Словник
+
+| Слово | Вимова | Переклад | ЧМ | Примітка |
+|-------|--------|----------|-----|----------|
+| не | /nɛ/ | not | част. | - |
+| ніколи | /nʲiˈkɔlɪ/ | never | присл. | impf trigger |
+| ніде | /nʲiˈdɛ/ | nowhere | присл. | - |
+| ніяк | /nʲiˈjɑk/ | no way | присл. | - |
+| ніхто | /nʲixˈtɔ/ | nobody | займ. | - |
+| ніщо | /nʲiˈʃt͡ʃɔ/ | nothing | займ. | - |
+| жодний | /ˈʒɔdnɪj/ | not any, none | займ. | - |
+| зовсім | /zɔwˈsʲim/ | at all | присл. | - |
+| взагалі | /wzɑˈɦɑlʲi/ | in general, at all | присл. | - |
+| абсолютно | /ɑbsɔˈlʲutnɔ/ | absolutely | присл. | - |
+| ще не | /ʃt͡ʃɛ nɛ/ | not yet | присл. | + pf |
+| вже не | /wʒɛ nɛ/ | no longer | присл. | - |
+| більше не | /ˈbʲilʲʃɛ nɛ/ | no more | присл. | - |
+| поки не | /ˈpɔkɪ nɛ/ | until not yet | сполучн. | - |
+| майже не | /ˈmɑjʒɛ nɛ/ | almost not | присл. | - |
+| навряд чи | /nɑwˈrʲɑd t͡ʃɪ/ | hardly, unlikely | присл. | - |
+| заборонено | /zɑbɔˈrɔnɛnɔ/ | forbidden | присл. | - |
+| неможливо | /nɛmɔʒˈlɪwɔ/ | impossible | присл. | - |
+| недоцільно | /nɛdɔˈt͡sʲilʲnɔ/ | inadvisable | присл. | - |
+| марно | /ˈmɑrnɔ/ | in vain | присл. | - |
+
+---

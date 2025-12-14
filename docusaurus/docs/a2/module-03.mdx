@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Warm-up
 
 Ви вже знаєте, як утворювати давальний відмінок займенників і іменників. Тепер час дізнатися, які дієслова "люблять" давальний відмінок!
 
@@ -266,39 +264,6 @@ Classify these verbs:
 
 ---
 
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| допомагати | /dopoˈmɑɦɑtɪ/ | to help | verb | — | + Dat |
-| заважати | /zɑʋɑˈʒɑtɪ/ | to disturb, bother | verb | — | + Dat |
-| подобатися | /podoˈbɑtɪsʲɑ/ | to please, be liked | verb | — | + Dat |
-| вірити | /ˈʋirɪtɪ/ | to believe | verb | — | + Dat |
-| довіряти | /doʋiˈrʲɑtɪ/ | to trust | verb | — | + Dat |
-| дякувати | /dʲɑˈkuʋɑtɪ/ | to thank | verb | — | + Dat |
-| вибачати | /ʋɪbɑˈtʃɑtɪ/ | to excuse, forgive | verb | — | + Dat |
-| пробачати | /probɑˈtʃɑtɪ/ | to forgive (serious) | verb | — | + Dat |
-| заздрити | /ˈzɑzdrɪtɪ/ | to envy | verb | — | + Dat |
-| симпатизувати | /sɪmpɑtɪˈzuʋɑtɪ/ | to sympathize | verb | — | + Dat |
-| співчувати | /spiʋtʃuˈʋɑtɪ/ | to feel for, empathize | verb | — | + Dat |
-| личити | /lɪˈtʃɪtɪ/ | to suit, become | verb | — | + Dat |
-| підходити | /pidxoˈdɪtɪ/ | to suit, fit | verb | — | + Dat |
-| вистачати | /ʋɪstɑˈtʃɑtɪ/ | to be enough | verb | — | + Dat |
-| бракувати | /brɑˈkuʋɑtɪ/ | to lack, be short of | verb | — | + Dat |
-| шкодити | /ʃkoˈdɪtɪ/ | to harm | verb | — | + Dat |
-| служити | /sluˈʒɪtɪ/ | to serve | verb | — | + Dat |
-| належати | /nɑleˈʒɑtɪ/ | to belong | verb | — | + Dat |
-| сподобатися | /spodoˈbɑtɪsʲɑ/ | to come to like | verb | — | perfective of подобатися |
-| захотітися | /zɑxoˈtitɪsʲɑ/ | to feel like, want | verb | — | + Dat; impersonal |
-| дозволяти | /dozʋoˈlʲɑtɪ/ | to allow, permit | verb | — | + Dat + Inf |
-| забороняти | /zɑboroˈnʲɑtɪ/ | to forbid | verb | — | + Dat + Inf |
-| радити | /ˈrɑdɪtɪ/ | to advise | verb | — | + Dat + Acc |
-| відповідати | /ʋidpoʋiˈdɑtɪ/ | to answer, reply | verb | — | + Dat |
-| телефонувати | /telefoˈnuʋɑtɪ/ | to phone, call | verb | — | + Dat |
-
----
-
 ## 📋 Summary
 
 У цьому модулі ви навчилися:
@@ -316,8 +281,6 @@ Classify these verbs:
 - **Asking forgiveness**: Вибачте мені! Пробачаєш мені?
 
 Тепер ви можете допомагати, дякувати, довіряти і вибачати — все з правильним давальним відмінком!
-
----
 
 ## 🎯 Activities
 
@@ -392,6 +355,96 @@ Classify these verbs:
   }
 ]} />
 
+### Dative Verb Patterns
+
+<Quiz questions={[
+  {
+    question: `Який відмінок потрібен після \"допомагати\"?`,
+    options: [
+      { text: `Accusative`, correct: false },
+      { text: `Dative`, correct: true },
+      { text: `Genitive`, correct: false }
+    ]
+  },  {
+    question: `\"Подобатися\" — яка конструкція правильна?`,
+    options: [
+      { text: `Мені подобається кава.`, correct: true },
+      { text: `Я подобаюся кава.`, correct: false },
+      { text: `Я подобаю каву.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Я вірю цей людина.`, correct: false },
+      { text: `Я вірю цю людину.`, correct: false },
+      { text: `Я вірю цій людині.`, correct: true }
+    ]
+  },  {
+    question: `\"Давати\" потребує...`,
+    options: [
+      { text: `тільки давального відмінка`, correct: false },
+      { text: `тільки знахідного відмінка`, correct: false },
+      { text: `давального + знахідного відмінка`, correct: true }
+    ]
+  },  {
+    question: `Як сказати \"I thank the teacher\"?`,
+    options: [
+      { text: `Я дякую вчитель.`, correct: false },
+      { text: `Я дякую вчителеві.`, correct: true },
+      { text: `Я дякую вчителя.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Мама забороняє дітям їсти цукерки.`, correct: true },
+      { text: `Мама забороняє дітей їсти цукерки.`, correct: false },
+      { text: `Мама забороняє діти їсти цукерки.`, correct: false }
+    ]
+  },  {
+    question: `\"Заздрити\" потребує...`,
+    options: [
+      { text: `давального відмінка`, correct: true },
+      { text: `знахідного відмінка`, correct: false },
+      { text: `родового відмінка`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"The noise bothers me\"?`,
+    options: [
+      { text: `Шум заважає мені.`, correct: true },
+      { text: `Шум заважає мене.`, correct: false },
+      { text: `Шум заважає я.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Я пояснюю учні правило.`, correct: false },
+      { text: `Я пояснюю учнів правило.`, correct: false },
+      { text: `Я пояснюю учням правило.`, correct: true }
+    ]
+  },  {
+    question: `\"Співчувати\" потребує...`,
+    options: [
+      { text: `давального відмінка`, correct: true },
+      { text: `знахідного відмінка`, correct: false },
+      { text: `орудного відмінка`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"I forgive you\"?`,
+    options: [
+      { text: `Я пробачаю ти.`, correct: false },
+      { text: `Я пробачаю тобі.`, correct: true },
+      { text: `Я пробачаю тебе.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Він радить мені відпочити.`, correct: true },
+      { text: `Він радить мене відпочити.`, correct: false },
+      { text: `Він радить я відпочити.`, correct: false }
+    ]
+  }
+]} />
+
 ### Dative Verb Rules
 
 <TrueFalse items={[
@@ -463,6 +516,53 @@ Classify these verbs:
   { jumbled: `я / дякую / тобі / за / допомогу`, answer: `Я дякую тобі за допомогу.` },
   { jumbled: `ця / музика / заважає / мені / спати`, answer: `Ця музика заважає мені спати.` }
 ]} />
+
+### Fix the Dative Errors
+
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я допомагаю маму.`}
+    errorWord={`маму`}
+    correctForm={`мамі`}
+    options={[`маму`, `мамі`, `мамою`, `мама`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Мене подобається ця книга.`}
+    errorWord={`Мене`}
+    correctForm={`Мені`}
+    options={[`Мене`, `Мені`, `Мій`, `Моя`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він показує друг свою машину.`}
+    errorWord={`друг`}
+    correctForm={`другові`}
+    options={[`друг`, `другові`, `друга`, `другом`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вчитель пояснює учнів правило.`}
+    errorWord={`учнів`}
+    correctForm={`учням`}
+    options={[`учнів`, `учням`, `учні`, `учнями`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Я дякую тебе за допомогу.`}
+    errorWord={`тебе`}
+    correctForm={`тобі`}
+    options={[`тебе`, `тобі`, `тобою`, `ти`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Музика заважає мене спати.`}
+    errorWord={`мене`}
+    correctForm={`мені`}
+    options={[`мене`, `мені`, `мною`, `я`]}
+    explanation={``}
+  />
+</ErrorCorrection>
 
 ### Complete the Story
 
@@ -561,3 +661,34 @@ Classify these verbs:
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| допомагати | /dopoˈmɑɦɑtɪ/ | to help | verb | — | + Dat |
+| заважати | /zɑʋɑˈʒɑtɪ/ | to disturb, bother | verb | — | + Dat |
+| подобатися | /podoˈbɑtɪsʲɑ/ | to please, be liked | verb | — | + Dat |
+| вірити | /ˈʋirɪtɪ/ | to believe | verb | — | + Dat |
+| довіряти | /doʋiˈrʲɑtɪ/ | to trust | verb | — | + Dat |
+| дякувати | /dʲɑˈkuʋɑtɪ/ | to thank | verb | — | + Dat |
+| вибачати | /ʋɪbɑˈtʃɑtɪ/ | to excuse, forgive | verb | — | + Dat |
+| пробачати | /probɑˈtʃɑtɪ/ | to forgive (serious) | verb | — | + Dat |
+| заздрити | /ˈzɑzdrɪtɪ/ | to envy | verb | — | + Dat |
+| симпатизувати | /sɪmpɑtɪˈzuʋɑtɪ/ | to sympathize | verb | — | + Dat |
+| співчувати | /spiʋtʃuˈʋɑtɪ/ | to feel for, empathize | verb | — | + Dat |
+| личити | /lɪˈtʃɪtɪ/ | to suit, become | verb | — | + Dat |
+| підходити | /pidxoˈdɪtɪ/ | to suit, fit | verb | — | + Dat |
+| вистачати | /ʋɪstɑˈtʃɑtɪ/ | to be enough | verb | — | + Dat |
+| бракувати | /brɑˈkuʋɑtɪ/ | to lack, be short of | verb | — | + Dat |
+| шкодити | /ʃkoˈdɪtɪ/ | to harm | verb | — | + Dat |
+| служити | /sluˈʒɪtɪ/ | to serve | verb | — | + Dat |
+| належати | /nɑleˈʒɑtɪ/ | to belong | verb | — | + Dat |
+| сподобатися | /spodoˈbɑtɪsʲɑ/ | to come to like | verb | — | perfective of подобатися |
+| захотітися | /zɑxoˈtitɪsʲɑ/ | to feel like, want | verb | — | + Dat; impersonal |
+| дозволяти | /dozʋoˈlʲɑtɪ/ | to allow, permit | verb | — | + Dat + Inf |
+| забороняти | /zɑboroˈnʲɑtɪ/ | to forbid | verb | — | + Dat + Inf |
+| радити | /ˈrɑdɪtɪ/ | to advise | verb | — | + Dat + Acc |
+| відповідати | /ʋidpoʋiˈdɑtɪ/ | to answer, reply | verb | — | + Dat |
+| телефонувати | /telefoˈnuʋɑtɪ/ | to phone, call | verb | — | + Dat |
+
+---

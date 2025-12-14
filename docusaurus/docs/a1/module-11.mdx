@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -216,39 +216,6 @@ In this module, you learned:
 - ✅ Real-life usage at the post office, airport, and in everyday conversation
 
 **Next step:** Module 12 will introduce accusative for **people** (animate nouns), where the pattern is different!
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| бачити | /ˈbɑt͡ʃɪtɪ/ | to see | verb | - | бачу, бачиш |
-| чути | /ˈt͡ʃutɪ/ | to hear | verb | - | чую, чуєш |
-| брати | /ˈbrɑtɪ/ | to take | verb | - | беру, береш |
-| давати | /dɑˈvɑtɪ/ | to give | verb | - | даю, даєш |
-| мати | /ˈmɑtɪ/ | to have | verb | - | маю, маєш |
-| нести | /nɛsˈtɪ/ | to carry | verb | - | несу, несеш |
-| класти | /ˈklɑstɪ/ | to put | verb | - | кладу, кладеш |
-| відкривати | /widkrɪˈvɑtɪ/ | to open | verb | - | відкриваю, відкриваєш |
-| закривати | /zɑkrɪˈvɑtɪ/ | to close | verb | - | закриваю, закриваєш |
-| вмикати | /vmɪˈkɑtɪ/ | to turn on | verb | - | вмикаю, вмикаєш |
-| вимикати | /vɪmɪˈkɑtɪ/ | to turn off | verb | - | вимикаю, вимикаєш |
-| показувати | /pokɑˈzuvɑtɪ/ | to show | verb | - | показую, показуєш |
-| ховати | /xoˈvɑtɪ/ | to hide | verb | - | ховаю, ховаєш |
-| газета | /ɦɑˈzɛtɑ/ | newspaper | noun | f | - |
-| журнал | /ʒurˈnɑl/ | magazine | noun | m | - |
-| лист | /lɪst/ | letter | noun | m | - |
-| конверт | /konˈvɛrt/ | envelope | noun | m | - |
-| посилка | /poˈsɪlkɑ/ | parcel | noun | f | - |
-| подарунок | /podɑˈrunok/ | gift | noun | m | - |
-| квиток | /kvɪˈtok/ | ticket | noun | m | - |
-| паспорт | /ˈpɑsport/ | passport | noun | m | - |
-| документ | /dokuˈmɛnt/ | document | noun | m | - |
-| сумка | /ˈsumkɑ/ | bag | noun | f | - |
-| валіза | /vɑˈlizɑ/ | suitcase | noun | f | - |
-| коробка | /koˈrobkɑ/ | box | noun | f | - |
 
 ---
 
@@ -590,3 +557,32 @@ In this module, you learned:
   { jumbled: `Я / маю / квиток / новий / український`, answer: `Я маю новий український квиток.` },
   { jumbled: `коробку / відкриває / велику / Він / обережно`, answer: `Він обережно відкриває велику коробку.` }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| бачити | /ˈbɑt͡ʃɪtɪ/ | to see | verb | - | бачу, бачиш |
+| чути | /ˈt͡ʃutɪ/ | to hear | verb | - | чую, чуєш |
+| брати | /ˈbrɑtɪ/ | to take | verb | - | беру, береш |
+| давати | /dɑˈvɑtɪ/ | to give | verb | - | даю, даєш |
+| мати | /ˈmɑtɪ/ | to have | verb | - | маю, маєш |
+| нести | /nɛsˈtɪ/ | to carry | verb | - | несу, несеш |
+| класти | /ˈklɑstɪ/ | to put | verb | - | кладу, кладеш |
+| відкривати | /widkrɪˈvɑtɪ/ | to open | verb | - | відкриваю, відкриваєш |
+| закривати | /zɑkrɪˈvɑtɪ/ | to close | verb | - | закриваю, закриваєш |
+| вмикати | /vmɪˈkɑtɪ/ | to turn on | verb | - | вмикаю, вмикаєш |
+| вимикати | /vɪmɪˈkɑtɪ/ | to turn off | verb | - | вимикаю, вимикаєш |
+| показувати | /pokɑˈzuvɑtɪ/ | to show | verb | - | показую, показуєш |
+| ховати | /xoˈvɑtɪ/ | to hide | verb | - | ховаю, ховаєш |
+| газета | /ɦɑˈzɛtɑ/ | newspaper | noun | f | - |
+| журнал | /ʒurˈnɑl/ | magazine | noun | m | - |
+| лист | /lɪst/ | letter | noun | m | - |
+| конверт | /konˈvɛrt/ | envelope | noun | m | - |
+| посилка | /poˈsɪlkɑ/ | parcel | noun | f | - |
+| подарунок | /podɑˈrunok/ | gift | noun | m | - |
+| квиток | /kvɪˈtok/ | ticket | noun | m | - |
+| паспорт | /ˈpɑsport/ | passport | noun | m | - |
+| документ | /dokuˈmɛnt/ | document | noun | m | - |
+| сумка | /ˈsumkɑ/ | bag | noun | f | - |
+| валіза | /vɑˈlizɑ/ | suitcase | noun | f | - |
+| коробка | /koˈrobkɑ/ | box | noun | f | - |

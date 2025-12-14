@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -306,50 +306,6 @@ You now know:
 - Common cultural contexts where possessives matter
 
 **Next up:** We'll explore the city and learn directional vocabulary (Module 15)!
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| мій | /mij/ | my (m) | poss pron | m | змінний (changes) |
-| моя | /mɔˈja/ | my (f) | poss pron | f | змінний |
-| моє | /mɔˈje/ | my (n) | poss pron | n | змінний |
-| мої | /mɔˈji/ | my (pl) | poss pron | pl | змінний |
-| твій | /twij/ | your sg (m) | poss pron | m | змінний, informal |
-| твоя | /twɔˈja/ | your sg (f) | poss pron | f | змінний, informal |
-| твоє | /twɔˈje/ | your sg (n) | poss pron | n | змінний, informal |
-| твої | /twɔˈji/ | your sg (pl) | poss pron | pl | змінний, informal |
-| його | /joˈɦɔ/ | his | poss pron | - | інваріантний (never changes) |
-| її | /jiˈji/ | her | poss pron | - | інваріантний (never changes) |
-| наш | /nɑʃ/ | our (m) | poss pron | m | змінний |
-| наша | /ˈnɑʃɑ/ | our (f) | poss pron | f | змінний |
-| наше | /ˈnɑʃe/ | our (n) | poss pron | n | змінний |
-| наші | /ˈnɑʃi/ | our (pl) | poss pron | pl | змінний |
-| ваш | /wɑʃ/ | your pl/formal (m) | poss pron | m | змінний |
-| ваша | /ˈwɑʃɑ/ | your pl/formal (f) | poss pron | f | змінний |
-| ваше | /ˈwɑʃe/ | your pl/formal (n) | poss pron | n | змінний |
-| ваші | /ˈwɑʃi/ | your pl/formal (pl) | poss pron | pl | змінний |
-| їхній | /jixˈnij/ | their (m) | poss pron | m | змінний |
-| їхня | /jixˈnʲa/ | their (f) | poss pron | f | змінний |
-| їхнє | /jixˈnʲe/ | their (n) | poss pron | n | змінний |
-| їхні | /jixˈnʲi/ | their (pl) | poss pron | pl | змінний |
-| свій | /swij/ | one's own (m) | poss pron | m | reflexive, refers to subject |
-| своя | /swɔˈja/ | one's own (f) | poss pron | f | reflexive |
-| своє | /swɔˈje/ | one's own (n) | poss pron | n | reflexive |
-| свої | /swɔˈji/ | one's own (pl) | poss pron | pl | reflexive |
-| річ | /ritʃ/ | thing | noun | f | - |
-| власний | /ˈwlɑsnɪj/ | own | adj | m | власна (f), власне (n) |
-| чужий | /tʃuˈʒɪj/ | someone else's | adj | m | чужа (f), чуже (n) |
-| разом | /ˈrɑzɔm/ | together | adv | - | - |
-| окремо | /ɔˈkremɔ/ | separately | adv | - | - |
-| спільний | /ˈspilnɪj/ | shared, common | adj | m | спільна (f), спільне (n) |
-| чий | /tʃɪj/ | whose (m) | interrog pron | m | чия (f), чиє (n), чиї (pl) |
-| чия | /tʃɪˈja/ | whose (f) | interrog pron | f | - |
-| чиє | /tʃɪˈje/ | whose (n) | interrog pron | n | - |
-| чиї | /tʃɪˈji/ | whose (pl) | interrog pron | pl | - |
 
 ---
 
@@ -732,3 +688,43 @@ You now know:
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| мій | /mij/ | my (m) | poss pron | m | змінний (changes) |
+| моя | /mɔˈja/ | my (f) | poss pron | f | змінний |
+| моє | /mɔˈje/ | my (n) | poss pron | n | змінний |
+| мої | /mɔˈji/ | my (pl) | poss pron | pl | змінний |
+| твій | /twij/ | your sg (m) | poss pron | m | змінний, informal |
+| твоя | /twɔˈja/ | your sg (f) | poss pron | f | змінний, informal |
+| твоє | /twɔˈje/ | your sg (n) | poss pron | n | змінний, informal |
+| твої | /twɔˈji/ | your sg (pl) | poss pron | pl | змінний, informal |
+| його | /joˈɦɔ/ | his | poss pron | - | інваріантний (never changes) |
+| її | /jiˈji/ | her | poss pron | - | інваріантний (never changes) |
+| наш | /nɑʃ/ | our (m) | poss pron | m | змінний |
+| наша | /ˈnɑʃɑ/ | our (f) | poss pron | f | змінний |
+| наше | /ˈnɑʃe/ | our (n) | poss pron | n | змінний |
+| наші | /ˈnɑʃi/ | our (pl) | poss pron | pl | змінний |
+| ваш | /wɑʃ/ | your pl/formal (m) | poss pron | m | змінний |
+| ваша | /ˈwɑʃɑ/ | your pl/formal (f) | poss pron | f | змінний |
+| ваше | /ˈwɑʃe/ | your pl/formal (n) | poss pron | n | змінний |
+| ваші | /ˈwɑʃi/ | your pl/formal (pl) | poss pron | pl | змінний |
+| їхній | /jixˈnij/ | their (m) | poss pron | m | змінний |
+| їхня | /jixˈnʲa/ | their (f) | poss pron | f | змінний |
+| їхнє | /jixˈnʲe/ | their (n) | poss pron | n | змінний |
+| їхні | /jixˈnʲi/ | their (pl) | poss pron | pl | змінний |
+| свій | /swij/ | one's own (m) | poss pron | m | reflexive, refers to subject |
+| своя | /swɔˈja/ | one's own (f) | poss pron | f | reflexive |
+| своє | /swɔˈje/ | one's own (n) | poss pron | n | reflexive |
+| свої | /swɔˈji/ | one's own (pl) | poss pron | pl | reflexive |
+| річ | /ritʃ/ | thing | noun | f | - |
+| власний | /ˈwlɑsnɪj/ | own | adj | m | власна (f), власне (n) |
+| чужий | /tʃuˈʒɪj/ | someone else's | adj | m | чужа (f), чуже (n) |
+| разом | /ˈrɑzɔm/ | together | adv | - | - |
+| окремо | /ɔˈkremɔ/ | separately | adv | - | - |
+| спільний | /ˈspilnɪj/ | shared, common | adj | m | спільна (f), спільне (n) |
+| чий | /tʃɪj/ | whose (m) | interrog pron | m | чия (f), чиє (n), чиї (pl) |
+| чия | /tʃɪˈja/ | whose (f) | interrog pron | f | - |
+| чиє | /tʃɪˈje/ | whose (n) | interrog pron | n | - |
+| чиї | /tʃɪˈji/ | whose (pl) | interrog pron | pl | - |

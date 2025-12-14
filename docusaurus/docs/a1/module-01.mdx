@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -178,49 +178,6 @@ In this module, you learned:
 You can now read **35 international words** in Ukrainian. The key insight: many "Ukrainian" words are actually international words you already know, just written in Cyrillic.
 
 **Remember:** В is V, not B. Н is N, not H. Р is R, not P. С is S, not C. У is U, not Y. Х is like Scottish "loch."
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| мама | /ˈmɑmɑ/ | mom | noun | f | - |
-| тато | /ˈtɑtɔ/ | dad | noun | m | - |
-| банк | /bɑnk/ | bank | noun | m | - |
-| парк | /pɑrk/ | park | noun | m | - |
-| кафе | /kɑˈfɛ/ | café | noun | n | indecl. |
-| метро | /mɛˈtrɔ/ | metro | noun | n | indecl. |
-| таксі | /tɑkˈsi/ | taxi | noun | n | indecl. |
-| радіо | /ˈrɑdiɔ/ | radio | noun | n | indecl. |
-| піца | /ˈpitsɑ/ | pizza | noun | f | - |
-| суп | /sup/ | soup | noun | m | - |
-| салат | /sɑˈlɑt/ | salad | noun | m | - |
-| лимон | /lɪˈmɔn/ | lemon | noun | m | - |
-| банан | /bɑˈnɑn/ | banana | noun | m | - |
-| хокей | /xɔˈkɛj/ | hockey | noun | m | - |
-| футбол | /futˈbɔl/ | football | noun | m | - |
-| студент | /stuˈdɛnt/ | student | noun | m | - |
-| турист | /tuˈrɪst/ | tourist | noun | m | - |
-| музика | /ˈmuzɪkɑ/ | music | noun | f | - |
-| фото | /ˈfɔtɔ/ | photo | noun | n | indecl. |
-| відео | /ˈvidɛɔ/ | video | noun | n | indecl. |
-| бар | /bɑr/ | bar | noun | m | - |
-| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | - |
-| доктор | /ˈdɔktɔr/ | doctor | noun | m | - |
-| актор | /ˈɑktɔr/ | actor | noun | m | - |
-| опера | /ˈɔpɛrɑ/ | opera | noun | f | - |
-| балет | /bɑˈlɛt/ | ballet | noun | m | - |
-| паспорт | /ˈpɑspɔrt/ | passport | noun | m | - |
-| віза | /ˈvizɑ/ | visa | noun | f | - |
-| карта | /ˈkɑrtɑ/ | card/map | noun | f | - |
-| комета | /kɔˈmɛtɑ/ | comet | noun | f | - |
-| ракета | /rɑˈkɛtɑ/ | rocket | noun | f | - |
-| телефон | /tɛlɛˈfɔn/ | telephone | noun | m | - |
-| інтернет | /intɛrˈnɛt/ | internet | noun | m | - |
-| какао | /kɑˈkɑɔ/ | cocoa | noun | n | indecl. |
-| кава | /ˈkɑvɑ/ | coffee | noun | f | - |
 
 ---
 
@@ -513,3 +470,42 @@ You can now read **35 international words** in Ukrainian. The key insight: many 
   { scrambled: `с т у д е н т`, answer: `студент`, hint: `` },
   { scrambled: `т у р и с т`, answer: `турист`, hint: `` }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| мама | /ˈmɑmɑ/ | mom | noun | f | - |
+| тато | /ˈtɑtɔ/ | dad | noun | m | - |
+| банк | /bɑnk/ | bank | noun | m | - |
+| парк | /pɑrk/ | park | noun | m | - |
+| кафе | /kɑˈfɛ/ | café | noun | n | indecl. |
+| метро | /mɛˈtrɔ/ | metro | noun | n | indecl. |
+| таксі | /tɑkˈsi/ | taxi | noun | n | indecl. |
+| радіо | /ˈrɑdiɔ/ | radio | noun | n | indecl. |
+| піца | /ˈpitsɑ/ | pizza | noun | f | - |
+| суп | /sup/ | soup | noun | m | - |
+| салат | /sɑˈlɑt/ | salad | noun | m | - |
+| лимон | /lɪˈmɔn/ | lemon | noun | m | - |
+| банан | /bɑˈnɑn/ | banana | noun | m | - |
+| хокей | /xɔˈkɛj/ | hockey | noun | m | - |
+| футбол | /futˈbɔl/ | football | noun | m | - |
+| студент | /stuˈdɛnt/ | student | noun | m | - |
+| турист | /tuˈrɪst/ | tourist | noun | m | - |
+| музика | /ˈmuzɪkɑ/ | music | noun | f | - |
+| фото | /ˈfɔtɔ/ | photo | noun | n | indecl. |
+| відео | /ˈvidɛɔ/ | video | noun | n | indecl. |
+| бар | /bɑr/ | bar | noun | m | - |
+| ресторан | /rɛstɔˈrɑn/ | restaurant | noun | m | - |
+| доктор | /ˈdɔktɔr/ | doctor | noun | m | - |
+| актор | /ˈɑktɔr/ | actor | noun | m | - |
+| опера | /ˈɔpɛrɑ/ | opera | noun | f | - |
+| балет | /bɑˈlɛt/ | ballet | noun | m | - |
+| паспорт | /ˈpɑspɔrt/ | passport | noun | m | - |
+| віза | /ˈvizɑ/ | visa | noun | f | - |
+| карта | /ˈkɑrtɑ/ | card/map | noun | f | - |
+| комета | /kɔˈmɛtɑ/ | comet | noun | f | - |
+| ракета | /rɑˈkɛtɑ/ | rocket | noun | f | - |
+| телефон | /tɛlɛˈfɔn/ | telephone | noun | m | - |
+| інтернет | /intɛrˈnɛt/ | internet | noun | m | - |
+| какао | /kɑˈkɑɔ/ | cocoa | noun | n | indecl. |
+| кава | /ˈkɑvɑ/ | coffee | noun | f | - |

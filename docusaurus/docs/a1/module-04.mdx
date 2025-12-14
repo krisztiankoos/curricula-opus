@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -308,46 +308,6 @@ Saying "Я українець" or "Я українка" isn't just a statement o
 **Next Steps:**
 
 In Module 05, you'll learn demonstratives (цей, ця, це, ці) to be even more specific about pointing out objects. But first, solidify this module—practice introducing yourself and imaginary friends until it feels natural!
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| я | /jɑ/ | I | pron | - | always lowercase (except sentence start) |
-| ти | /tɪ/ | you (sg informal) | pron | - | use with friends, family |
-| він | /win/ | he | pron | - | masculine pronouns, people |
-| вона | /wɔˈnɑ/ | she | pron | - | feminine pronouns, people |
-| воно | /wɔˈnɔ/ | it | pron | - | neuter nouns |
-| ми | /mɪ/ | we | pron | - | first person plural |
-| ви | /vɪ/ | you (pl/formal) | pron | - | plural OR formal singular |
-| вони | /wɔˈnɪ/ | they | pron | - | third person plural |
-| це | /t͡sɛ/ | this, these | pron | - | doesn't change for plural |
-| то | /tɔ/ | that | pron | - | less common than це |
-| ось | /ɔsʲ/ | here is | part | - | "Ось книга" = Here is a book |
-| людина | /lʲuˈdɪnɑ/ | person, human | noun | f | grammatically f, but any person |
-| чоловік | /t͡ʃɔlɔˈwik/ | man | noun | m | adult male |
-| жінка | /ˈʒinkɑ/ | woman | noun | f | adult female |
-| хлопець | /ˈxlɔpet͡sʲ/ | boy, guy | noun | m | young male |
-| дівчина | /diwˈt͡ʃɪnɑ/ | girl | noun | f | young female |
-| українець | /ukrɑˈjinɛt͡sʲ/ | Ukrainian (male) | noun | m | nationality |
-| українка | /ukrɑˈjinkɑ/ | Ukrainian (female) | noun | f | nationality |
-| англієць | /ˈɑnhlʲiet͡sʲ/ | English person (male) | noun | m | nationality |
-| англійка | /ˈɑnhlʲijkɑ/ | English person (female) | noun | f | nationality |
-| американець | /ɑmɛrɪˈkɑnɛt͡sʲ/ | American (male) | noun | m | nationality |
-| американка | /ɑmɛrɪˈkɑnkɑ/ | American (female) | noun | f | nationality |
-| канадець | /kɑnɑˈdɛt͡sʲ/ | Canadian (male) | noun | m | nationality |
-| канадка | /kɑnɑdˈkɑ/ | Canadian (female) | noun | f | nationality |
-| студент | /stuˈdɛnt/ | student (male) | noun | m | university student |
-| студентка | /stuˈdɛntkɑ/ | student (female) | noun | f | university student |
-| професор | /prɔˈfɛsɔr/ | professor (m/f) | noun | m | can be used for all |
-| професорка | /prɔfɛˈsɔrkɑ/ | professor (female) | noun | f | modern feminine form |
-| лікар | /ˈlikɑr/ | doctor (m/f) | noun | m | can be used for all |
-| лікарка | /ˈlikɑrkɑ/ | doctor (female) | noun | f | modern feminine form |
-| друг | /druh/ | friend (male) | noun | m | also can mean boyfriend |
-| подруга | /pɔˈdruhɑ/ | friend (female) | noun | f | also can mean girlfriend |
 
 ---
 
@@ -756,3 +716,39 @@ In Module 05, you'll learn demonstratives (цей, ця, це, ці) to be even 
     options: [`канадець`, `канадка`, `американець`, `англієць`]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| я | /jɑ/ | I | pron | - | always lowercase (except sentence start) |
+| ти | /tɪ/ | you (sg informal) | pron | - | use with friends, family |
+| він | /win/ | he | pron | - | masculine pronouns, people |
+| вона | /wɔˈnɑ/ | she | pron | - | feminine pronouns, people |
+| воно | /wɔˈnɔ/ | it | pron | - | neuter nouns |
+| ми | /mɪ/ | we | pron | - | first person plural |
+| ви | /vɪ/ | you (pl/formal) | pron | - | plural OR formal singular |
+| вони | /wɔˈnɪ/ | they | pron | - | third person plural |
+| це | /t͡sɛ/ | this, these | pron | - | doesn't change for plural |
+| то | /tɔ/ | that | pron | - | less common than це |
+| ось | /ɔsʲ/ | here is | part | - | "Ось книга" = Here is a book |
+| людина | /lʲuˈdɪnɑ/ | person, human | noun | f | grammatically f, but any person |
+| чоловік | /t͡ʃɔlɔˈwik/ | man | noun | m | adult male |
+| жінка | /ˈʒinkɑ/ | woman | noun | f | adult female |
+| хлопець | /ˈxlɔpet͡sʲ/ | boy, guy | noun | m | young male |
+| дівчина | /diwˈt͡ʃɪnɑ/ | girl | noun | f | young female |
+| українець | /ukrɑˈjinɛt͡sʲ/ | Ukrainian (male) | noun | m | nationality |
+| українка | /ukrɑˈjinkɑ/ | Ukrainian (female) | noun | f | nationality |
+| англієць | /ˈɑnhlʲiet͡sʲ/ | English person (male) | noun | m | nationality |
+| англійка | /ˈɑnhlʲijkɑ/ | English person (female) | noun | f | nationality |
+| американець | /ɑmɛrɪˈkɑnɛt͡sʲ/ | American (male) | noun | m | nationality |
+| американка | /ɑmɛrɪˈkɑnkɑ/ | American (female) | noun | f | nationality |
+| канадець | /kɑnɑˈdɛt͡sʲ/ | Canadian (male) | noun | m | nationality |
+| канадка | /kɑnɑdˈkɑ/ | Canadian (female) | noun | f | nationality |
+| студент | /stuˈdɛnt/ | student (male) | noun | m | university student |
+| студентка | /stuˈdɛntkɑ/ | student (female) | noun | f | university student |
+| професор | /prɔˈfɛsɔr/ | professor (m/f) | noun | m | can be used for all |
+| професорка | /prɔfɛˈsɔrkɑ/ | professor (female) | noun | f | modern feminine form |
+| лікар | /ˈlikɑr/ | doctor (m/f) | noun | m | can be used for all |
+| лікарка | /ˈlikɑrkɑ/ | doctor (female) | noun | f | modern feminine form |
+| друг | /druh/ | friend (male) | noun | m | also can mean boyfriend |
+| подруга | /pɔˈdruhɑ/ | friend (female) | noun | f | also can mean girlfriend |

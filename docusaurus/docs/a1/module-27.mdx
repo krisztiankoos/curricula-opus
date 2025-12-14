@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Colors & Clothing
 
 ## Warm-up
 
@@ -36,43 +34,6 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 **Clothes:** [Clothes Vocabulary](https://www.ukrainianlessons.com/vocabulary-clothes/) — Clothing items with illustrations
 :::
 
-
----
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| білий | /ˈbilɪj/ | white | adj | m | color |
-| чорний | /ˈtʃɔrnɪj/ | black | adj | m | color |
-| сірий | /ˈsirɪj/ | gray | adj | m | color |
-| червоний | /tʃerˈwɔnɪj/ | red | adj | m | color |
-| помаранчевий | /pɔmɑˈrɑntʃewɪj/ | orange | adj | m | color |
-| жовтий | /ˈʒɔwtɪj/ | yellow | adj | m | color |
-| зелений | /zeˈlenɪj/ | green | adj | m | color |
-| синій | /ˈsɪnʲij/ | blue (dark) | adj | m | soft stem |
-| блакитний | /blɑˈkɪtnɪj/ | light blue | adj | m | color |
-| фіолетовий | /fʲioˈletɔwɪj/ | purple | adj | m | color |
-| рожевий | /rɔˈʒewɪj/ | pink | adj | m | color |
-| коричневий | /kɔˈrɪtʃnewɪj/ | brown | adj | m | color |
-| світлий | /ˈswʲitlɪj/ | light | adj | m | modifier |
-| темний | /ˈtemnɪj/ | dark | adj | m | modifier |
-| яскравий | /jɑsˈkrɑwɪj/ | bright | adj | m | modifier |
-| сорочка | /sɔˈrɔtʃkɑ/ | shirt | n | f | clothing |
-| футболка | /futˈbɔlkɑ/ | t-shirt | n | f | clothing |
-| светр | /swetr/ | sweater | n | m | clothing |
-| куртка | /ˈkurtkɑ/ | jacket | n | f | clothing |
-| пальто | /pɑlʲˈtɔ/ | coat | n | n | indeclinable |
-| штани | /ʃtɑˈnɪ/ | pants | n | pl | always plural |
-| джинси | /ˈdʒɪnsɪ/ | jeans | n | pl | always plural |
-| шорти | /ˈʃɔrtɪ/ | shorts | n | pl | always plural |
-| спідниця | /spʲidˈnɪtsʲɑ/ | skirt | n | f | clothing |
-| сукня | /ˈsuknʲɑ/ | dress | n | f | clothing |
-| взуття | /wzutʲˈtʲɑ/ | footwear | n | n | collective |
-| черевики | /tʃereˈwɪkɪ/ | boots | n | pl | always plural |
-| кросівки | /krɔˈsʲiwkɪ/ | sneakers | n | pl | always plural |
-| капелюх | /kɑpeˈlʲux/ | hat | n | m | clothing |
-| шарф | /ʃɑrf/ | scarf | n | m | clothing |
 
 ---
 
@@ -256,7 +217,6 @@ These words take **plural adjectives**:
 
 ---
 
-
 ## 📋 Підсумок (Summary)
 
 Ви навчилися називати кольори та одяг! (You've learned colors and clothing!)
@@ -272,8 +232,6 @@ These words take **plural adjectives**:
 ---
 
 **Наступний урок:** Прислівники — як описувати ДІЇ!
-
----
 
 ## 🎯 Activities
 
@@ -583,3 +541,39 @@ These words take **plural adjectives**:
     explanation: `Incorrect! it's feminine`
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| білий | /ˈbilɪj/ | white | adj | m | color |
+| чорний | /ˈtʃɔrnɪj/ | black | adj | m | color |
+| сірий | /ˈsirɪj/ | gray | adj | m | color |
+| червоний | /tʃerˈwɔnɪj/ | red | adj | m | color |
+| помаранчевий | /pɔmɑˈrɑntʃewɪj/ | orange | adj | m | color |
+| жовтий | /ˈʒɔwtɪj/ | yellow | adj | m | color |
+| зелений | /zeˈlenɪj/ | green | adj | m | color |
+| синій | /ˈsɪnʲij/ | blue (dark) | adj | m | soft stem |
+| блакитний | /blɑˈkɪtnɪj/ | light blue | adj | m | color |
+| фіолетовий | /fʲioˈletɔwɪj/ | purple | adj | m | color |
+| рожевий | /rɔˈʒewɪj/ | pink | adj | m | color |
+| коричневий | /kɔˈrɪtʃnewɪj/ | brown | adj | m | color |
+| світлий | /ˈswʲitlɪj/ | light | adj | m | modifier |
+| темний | /ˈtemnɪj/ | dark | adj | m | modifier |
+| яскравий | /jɑsˈkrɑwɪj/ | bright | adj | m | modifier |
+| сорочка | /sɔˈrɔtʃkɑ/ | shirt | n | f | clothing |
+| футболка | /futˈbɔlkɑ/ | t-shirt | n | f | clothing |
+| светр | /swetr/ | sweater | n | m | clothing |
+| куртка | /ˈkurtkɑ/ | jacket | n | f | clothing |
+| пальто | /pɑlʲˈtɔ/ | coat | n | n | indeclinable |
+| штани | /ʃtɑˈnɪ/ | pants | n | pl | always plural |
+| джинси | /ˈdʒɪnsɪ/ | jeans | n | pl | always plural |
+| шорти | /ˈʃɔrtɪ/ | shorts | n | pl | always plural |
+| спідниця | /spʲidˈnɪtsʲɑ/ | skirt | n | f | clothing |
+| сукня | /ˈsuknʲɑ/ | dress | n | f | clothing |
+| взуття | /wzutʲˈtʲɑ/ | footwear | n | n | collective |
+| черевики | /tʃereˈwɪkɪ/ | boots | n | pl | always plural |
+| кросівки | /krɔˈsʲiwkɪ/ | sneakers | n | pl | always plural |
+| капелюх | /kɑpeˈlʲux/ | hat | n | m | clothing |
+| шарф | /ʃɑrf/ | scarf | n | m | clothing |
+
+---

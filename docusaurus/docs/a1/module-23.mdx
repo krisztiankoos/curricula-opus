@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# What Time Is It?
 
 ## Warm-up
 
@@ -36,53 +34,6 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 **Months:** [Ukrainian Months and Their Origin](https://www.ukrainianlessons.com/months/) — Learn months through their nature-based meanings
 :::
 
-
----
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| година | /ɦɔˈdɪnɑ/ | hour | noun | f | - |
-| хвилина | /xwɪˈlɪnɑ/ | minute | noun | f | - |
-| секунда | /seˈkundɑ/ | second | noun | f | - |
-| пів | /piw/ | half | noun | - | indeclinable |
-| чверть | /tʃwertʲ/ | quarter | noun | f | - |
-| рано | /ˈrɑnɔ/ | early | adv | - | - |
-| пізно | /ˈpiznɔ/ | late | adv | - | - |
-| вчасно | /ˈwtʃɑsnɔ/ | on time | adv | - | - |
-| понеділок | /pɔneˈdʲilɔk/ | Monday | noun | m | - |
-| вівторок | /ˈwiwtɔrɔk/ | Tuesday | noun | m | - |
-| середа | /sereˈdɑ/ | Wednesday | noun | f | - |
-| четвер | /tʃetˈwer/ | Thursday | noun | m | - |
-| п'ятниця | /pjɑtˈnɪtsʲɑ/ | Friday | noun | f | - |
-| субота | /suˈbɔtɑ/ | Saturday | noun | f | - |
-| неділя | /neˈdʲilʲɑ/ | Sunday | noun | f | - |
-| тиждень | /ˈtɪʒdenʲ/ | week | noun | m | - |
-| вихідні | /wɪˈxidnʲi/ | weekend | noun | pl | - |
-| робочий день | /rɔˈbɔtʃɪj denʲ/ | workday | phrase | m | - |
-| січень | /ˈsitʃenʲ/ | January | noun | m | - |
-| лютий | /ˈlʲutɪj/ | February | noun | m | - |
-| березень | /ˈbeˈrezenʲ/ | March | noun | m | - |
-| квітень | /ˈkwitenʲ/ | April | noun | m | - |
-| травень | /ˈtrɑwenʲ/ | May | noun | m | - |
-| червень | /ˈtʃerwenʲ/ | June | noun | m | - |
-| липень | /ˈlɪpenʲ/ | July | noun | m | - |
-| серпень | /ˈserpenʲ/ | August | noun | m | - |
-| вересень | /ˈweresenʲ/ | September | noun | m | - |
-| жовтень | /ˈʒɔwtenʲ/ | October | noun | m | - |
-| листопад | /lɪstɔˈpɑd/ | November | noun | m | lit. "leaf fall" |
-| грудень | /ˈɦrudenʲ/ | December | noun | m | - |
-| сьогодні | /sʲɔˈɦɔdnʲi/ | today | adv | - | - |
-| зараз | /ˈzɑrɑz/ | now | adv | - | - |
-| коли | /kɔˈlɪ/ | when | adv | - | - |
-| о котрій | /ɔ kɔtˈrij/ | at what time | phrase | - | - |
-| о | /ɔ/ | at (time) | prep | - | об before vowels |
-| об | /ɔb/ | at (before vowel) | prep | - | variant of о |
-| до | /dɔ/ | until, to | prep | - | + genitive |
-| після | /ˈpislʲɑ/ | after | prep | - | + genitive |
-| з...до | /z...dɔ/ | from...to | phrase | - | + genitive |
-| протягом | /prɔˈtʲɑɦɔm/ | during, for | prep | - | + genitive |
 
 ---
 
@@ -341,7 +292,6 @@ Or in conversation:
 
 ---
 
-
 ## 📋 Підсумок (Summary)
 
 Ви навчилися говорити про час українською! (You've learned to tell time in Ukrainian!)
@@ -358,8 +308,6 @@ Or in conversation:
 ---
 
 **Наступний урок:** Модальні дієслова — можна, треба, хочу!
-
----
 
 ## 🎯 Activities
 
@@ -685,3 +633,49 @@ Or in conversation:
     explanation: `Incorrect! Weekend is Saturday and Sunday.`
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| година | /ɦɔˈdɪnɑ/ | hour | noun | f | - |
+| хвилина | /xwɪˈlɪnɑ/ | minute | noun | f | - |
+| секунда | /seˈkundɑ/ | second | noun | f | - |
+| пів | /piw/ | half | noun | - | indeclinable |
+| чверть | /tʃwertʲ/ | quarter | noun | f | - |
+| рано | /ˈrɑnɔ/ | early | adv | - | - |
+| пізно | /ˈpiznɔ/ | late | adv | - | - |
+| вчасно | /ˈwtʃɑsnɔ/ | on time | adv | - | - |
+| понеділок | /pɔneˈdʲilɔk/ | Monday | noun | m | - |
+| вівторок | /ˈwiwtɔrɔk/ | Tuesday | noun | m | - |
+| середа | /sereˈdɑ/ | Wednesday | noun | f | - |
+| четвер | /tʃetˈwer/ | Thursday | noun | m | - |
+| п'ятниця | /pjɑtˈnɪtsʲɑ/ | Friday | noun | f | - |
+| субота | /suˈbɔtɑ/ | Saturday | noun | f | - |
+| неділя | /neˈdʲilʲɑ/ | Sunday | noun | f | - |
+| тиждень | /ˈtɪʒdenʲ/ | week | noun | m | - |
+| вихідні | /wɪˈxidnʲi/ | weekend | noun | pl | - |
+| робочий день | /rɔˈbɔtʃɪj denʲ/ | workday | phrase | m | - |
+| січень | /ˈsitʃenʲ/ | January | noun | m | - |
+| лютий | /ˈlʲutɪj/ | February | noun | m | - |
+| березень | /ˈbeˈrezenʲ/ | March | noun | m | - |
+| квітень | /ˈkwitenʲ/ | April | noun | m | - |
+| травень | /ˈtrɑwenʲ/ | May | noun | m | - |
+| червень | /ˈtʃerwenʲ/ | June | noun | m | - |
+| липень | /ˈlɪpenʲ/ | July | noun | m | - |
+| серпень | /ˈserpenʲ/ | August | noun | m | - |
+| вересень | /ˈweresenʲ/ | September | noun | m | - |
+| жовтень | /ˈʒɔwtenʲ/ | October | noun | m | - |
+| листопад | /lɪstɔˈpɑd/ | November | noun | m | lit. "leaf fall" |
+| грудень | /ˈɦrudenʲ/ | December | noun | m | - |
+| сьогодні | /sʲɔˈɦɔdnʲi/ | today | adv | - | - |
+| зараз | /ˈzɑrɑz/ | now | adv | - | - |
+| коли | /kɔˈlɪ/ | when | adv | - | - |
+| о котрій | /ɔ kɔtˈrij/ | at what time | phrase | - | - |
+| о | /ɔ/ | at (time) | prep | - | об before vowels |
+| об | /ɔb/ | at (before vowel) | prep | - | variant of о |
+| до | /dɔ/ | until, to | prep | - | + genitive |
+| після | /ˈpislʲɑ/ | after | prep | - | + genitive |
+| з...до | /z...dɔ/ | from...to | phrase | - | + genitive |
+| протягом | /prɔˈtʲɑɦɔm/ | during, for | prep | - | + genitive |
+
+---

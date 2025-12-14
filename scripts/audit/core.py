@@ -32,6 +32,7 @@ from .checks import (
     run_pedagogical_checks,
     count_items,
     check_markdown_format,
+    check_section_order,
 )
 from .checks.vocabulary import (
     count_vocab_rows,
@@ -575,6 +576,17 @@ def audit_module(file_path: str) -> bool:
     # Run markdown format checks
     markdown_violations = check_markdown_format(content)
     pedagogical_violations.extend(markdown_violations)
+
+    # Run section order checks
+    section_order_violations = check_section_order(content)
+    for v in section_order_violations:
+        pedagogical_violations.append({
+            'type': v['type'].upper(),
+            'severity': v['severity'],
+            'issue': v['message'],
+            'fix': f"Reorder sections to: Summary → Activities → Self-Assessment → External → Vocabulary",
+            'line': v.get('line', 0)
+        })
 
     results['pedagogy'] = evaluate_pedagogy(len(pedagogical_violations))
     if results['pedagogy'].status == 'FAIL':

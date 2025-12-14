@@ -5,12 +5,13 @@ MDX Generator for Docusaurus
 Converts curriculum markdown modules to MDX format with React components.
 
 Usage:
-    python scripts/generate_mdx.py [lang_pair] [level] [module_num]
+    python scripts/generate_mdx.py [lang_pair] [level] [module_num] [--validate]
 
 Examples:
-    python scripts/generate_mdx.py l2-uk-en           # All levels
-    python scripts/generate_mdx.py l2-uk-en a1        # All A1 modules
-    python scripts/generate_mdx.py l2-uk-en a1 5      # Module 5 only
+    python scripts/generate_mdx.py l2-uk-en              # All levels
+    python scripts/generate_mdx.py l2-uk-en a1           # All A1 modules
+    python scripts/generate_mdx.py l2-uk-en a1 5         # Module 5 only
+    python scripts/generate_mdx.py l2-uk-en --validate   # Generate + validate
 """
 
 import re
@@ -69,8 +70,10 @@ class AnagramItem:
 
 @dataclass
 class ErrorCorrectionItem:
-    incorrect: str
-    correct: str
+    sentence: str
+    errorWord: str
+    correctForm: str
+    options: list[str]
     explanation: str
 
 @dataclass
@@ -158,21 +161,31 @@ def extract_instruction(content: str) -> tuple[str, str]:
 # =============================================================================
 
 def parse_quiz(content: str) -> list[QuizQuestion]:
-    """Parse quiz activity with numbered questions."""
+    """Parse quiz activity with numbered questions or --- separated questions."""
     questions = []
 
-    # Split by numbered items, capturing everything until next number or end
-    blocks = re.split(r'(?=^\d+\.\s)', content, flags=re.MULTILINE)
+    # Check if content has numbered format (1. question)
+    has_numbered = bool(re.search(r'^\d+\.\s', content, flags=re.MULTILINE))
 
-    for block in blocks:
-        block = block.strip()
-        if not block or not re.match(r'^\d+\.', block):
-            continue
-
-        # Remove the number prefix
-        block = re.sub(r'^\d+\.\s*', '', block)
-        q = _parse_quiz_block(block)
-        questions.extend(q)
+    if has_numbered:
+        # Split by numbered items
+        blocks = re.split(r'(?=^\d+\.\s)', content, flags=re.MULTILINE)
+        for block in blocks:
+            block = block.strip()
+            if not block or not re.match(r'^\d+\.', block):
+                continue
+            block = re.sub(r'^\d+\.\s*', '', block)
+            q = _parse_quiz_block(block)
+            questions.extend(q)
+    else:
+        # Split by --- separators (horizontal rules)
+        blocks = re.split(r'\n---+\n', content)
+        for block in blocks:
+            block = block.strip()
+            if not block:
+                continue
+            q = _parse_quiz_block(block)
+            questions.extend(q)
 
     return questions
 
@@ -357,19 +370,35 @@ def parse_error_correction(content: str) -> list[ErrorCorrectionItem]:
             continue
 
         lines = block.split('\n')
-        incorrect = lines[0].strip() if lines else ''
-        correct = ''
+        sentence = lines[0].strip() if lines else ''
+        error_word = ''
+        correct_form = ''
+        options = []
         explanation = ''
 
         for line in lines[1:]:
             stripped = line.strip()
-            if stripped.startswith('> [!correct]'):
-                correct = stripped.replace('> [!correct]', '').strip()
+            if stripped.startswith('> [!error]'):
+                error_word = stripped.replace('> [!error]', '').strip()
+            elif stripped.startswith('> [!answer]') or stripped.startswith('> [!correct]'):
+                correct_form = re.sub(r'^> \[!(answer|correct)\]\s*', '', stripped).strip()
+            elif stripped.startswith('> [!options]'):
+                opts_str = stripped.replace('> [!options]', '').strip()
+                options = [o.strip() for o in opts_str.split('|') if o.strip()]
             elif stripped.startswith('> [!explanation]'):
                 explanation = stripped.replace('> [!explanation]', '').strip()
 
-        if incorrect and correct:
-            items.append(ErrorCorrectionItem(incorrect=incorrect, correct=correct, explanation=explanation))
+        if sentence and error_word and correct_form:
+            # Ensure correct_form is in options
+            if options and correct_form not in options:
+                options.append(correct_form)
+            items.append(ErrorCorrectionItem(
+                sentence=sentence,
+                errorWord=error_word,
+                correctForm=correct_form,
+                options=options,
+                explanation=explanation
+            ))
 
     return items
 
@@ -422,7 +451,7 @@ def parse_select(content: str) -> list[SelectQuestion]:
     return questions
 
 def parse_translate(content: str) -> list[TranslateQuestion]:
-    """Parse translate activity."""
+    """Parse translate activity with checkbox or callout format."""
     questions = []
     blocks = re.split(r'^\d+\.\s+', content, flags=re.MULTILINE)
 
@@ -433,15 +462,28 @@ def parse_translate(content: str) -> list[TranslateQuestion]:
         lines = block.split('\n')
         source = ''
         options = []
+        answer = ''
+        option_texts = []
 
         for line in lines:
             stripped = line.strip()
+            # Checkbox format
             if stripped.startswith('- [x]'):
                 options.append({"text": stripped[5:].strip(), "correct": True})
             elif stripped.startswith('- [ ]'):
                 options.append({"text": stripped[5:].strip(), "correct": False})
-            elif not options and not stripped.startswith('-'):
+            # Callout format
+            elif stripped.startswith('> [!answer]'):
+                answer = stripped.replace('> [!answer]', '').strip()
+            elif stripped.startswith('> [!options]'):
+                option_texts = [o.strip() for o in stripped.replace('> [!options]', '').split('|')]
+            elif not options and not option_texts and not stripped.startswith('-') and not stripped.startswith('>'):
                 source = (source + ' ' + stripped).strip()
+
+        # Convert callout format to options
+        if answer and option_texts:
+            for opt in option_texts:
+                options.append({"text": opt, "correct": opt == answer})
 
         if options:
             questions.append(TranslateQuestion(source=source, options=options))
@@ -601,17 +643,20 @@ def error_correction_to_jsx(items: list[ErrorCorrectionItem], title: str) -> str
 
     jsx_items = []
     for item in items:
-        jsx_items.append(f'''  {{
-    incorrect: `{escape_jsx(item.incorrect)}`,
-    correct: `{escape_jsx(item.correct)}`,
-    explanation: `{escape_jsx(item.explanation)}`
-  }}''')
+        options_jsx = ', '.join([f'`{escape_jsx(o)}`' for o in item.options])
+        jsx_items.append(f'''  <ErrorCorrectionItem
+    sentence={{`{escape_jsx(item.sentence)}`}}
+    errorWord={{`{escape_jsx(item.errorWord)}`}}
+    correctForm={{`{escape_jsx(item.correctForm)}`}}
+    options={{[{options_jsx}]}}
+    explanation={{`{escape_jsx(item.explanation)}`}}
+  />''')
 
     return f'''### {title}
 
-<ErrorCorrection items={{[
-{",".join(jsx_items)}
-]}} />'''
+<ErrorCorrection>
+{chr(10).join(jsx_items)}
+</ErrorCorrection>'''
 
 def cloze_to_jsx(data: ClozeData, title: str) -> str:
     """Convert cloze data to JSX Cloze component."""
@@ -698,24 +743,19 @@ def dialogue_reorder_to_jsx(lines: list[DialogueLine], title: str) -> str:
 # CONTENT PROCESSING
 # =============================================================================
 
-def process_activities(body: str) -> tuple[str, str]:
-    """Extract activities section and convert to JSX."""
+def process_activities(body: str) -> str:
+    """Convert activities section to JSX in-place, preserving document order."""
     # Find Activities section - matches # Activities, # Вправи, # Вправи (Activities)
     match = re.search(
-        r'# (?:Activities|Вправи(?:\s*\(Activities\))?)\n([\s\S]*?)(?=\n# (?:Vocabulary|Словник|Summary|Підсумок)|\n---\n# |$)',
+        r'(# (?:Activities|Вправи(?:\s*\(Activities\))?))\n([\s\S]*?)(?=\n# (?:Vocabulary|Словник|Summary|Підсумок|Self-Assessment|Самооцінка|External|Зовнішні)|\Z)',
         body
     )
 
     if not match:
-        return body, ''
+        return body
 
-    activities_section = match.group(1)
-    # Remove the entire activities section including header
-    main_content = re.sub(
-        r'# (?:Activities|Вправи(?:\s*\(Activities\))?)\n[\s\S]*?(?=\n# (?:Vocabulary|Словник|Summary|Підсумок)|\n---\n# |$)',
-        '',
-        body
-    )
+    activities_header = match.group(1)
+    activities_section = match.group(2)
 
     # Parse individual activities
     activity_blocks = re.split(r'\n## ', activities_section)
@@ -778,7 +818,15 @@ def process_activities(body: str) -> tuple[str, str]:
         if jsx:
             activities_jsx_parts.append(jsx)
 
-    return main_content, '\n\n'.join(activities_jsx_parts)
+    # Build activities replacement with header
+    if activities_jsx_parts:
+        activities_jsx = '## 🎯 Activities\n\n' + '\n\n'.join(activities_jsx_parts)
+    else:
+        activities_jsx = ''
+
+    # Replace activities section in-place (preserving document order)
+    result = body[:match.start()] + activities_jsx + body[match.end():]
+    return result
 
 # Callout mapping
 CALLOUT_MAP = {
@@ -871,7 +919,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -886,11 +934,11 @@ description: "{escape_jsx(fm.get('subtitle', ''))}"
 ---
 '''
 
-    # Process activities
-    main_content, activities_jsx = process_activities(body)
+    # Process activities (in-place, preserving document order)
+    processed = process_activities(body)
 
     # Convert callouts
-    processed = convert_callouts(main_content)
+    processed = convert_callouts(processed)
 
     # Process dialogues
     processed = process_dialogues(processed)
@@ -901,12 +949,11 @@ description: "{escape_jsx(fm.get('subtitle', ''))}"
     # Convert Summary and Vocabulary to H2 for TOC
     processed = re.sub(r'^# (Summary|Підсумок)', r'## 📋 \1', processed, flags=re.MULTILINE)
     processed = re.sub(r'^# (Vocabulary|Словник)', r'## 📚 \1', processed, flags=re.MULTILINE)
+    processed = re.sub(r'^# (Self-Assessment|Самооцінка)', r'## ✅ \1', processed, flags=re.MULTILINE)
+    processed = re.sub(r'^# (External Resources?|Зовнішні ресурси)', r'## 🔗 \1', processed, flags=re.MULTILINE)
 
     # Build MDX
     parts = [frontmatter, imports, '', processed]
-
-    if activities_jsx.strip():
-        parts.extend(['---', '', '## 🎯 Activities', '', activities_jsx])
 
     return '\n'.join(parts)
 
@@ -916,13 +963,18 @@ description: "{escape_jsx(fm.get('subtitle', ''))}"
 
 def main():
     args = sys.argv[1:]
+
+    # Parse --validate flag
+    validate_after = '--validate' in args
+    args = [a for a in args if a != '--validate']
+
     lang_pair = args[0] if args else 'l2-uk-en'
     target_level = args[1].lower() if len(args) > 1 else None
     target_module = int(args[2]) if len(args) > 2 else None
 
-    print('\n🚀 MDX Generator (Python)\n')
-    print(f'Source: curriculum/{lang_pair}/')
-    print(f'Output: docusaurus/docs/\n')
+    print('\n🚀 MDX Generator (Python)\n', flush=True)
+    print(f'Source: curriculum/{lang_pair}/', flush=True)
+    print(f'Output: docusaurus/docs/\n', flush=True)
 
     curriculum_path = CURRICULUM_DIR / lang_pair
     levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
@@ -968,6 +1020,19 @@ def main():
             print(f'  ✓ Module {str(module_num).zfill(2)}')
 
     print('\n✅ MDX generation complete!')
+
+    # Run validation if --validate flag was set
+    if validate_after:
+        print('\n' + '=' * 50)
+        print('Running MDX validation...\n')
+        import subprocess
+        validate_args = [sys.executable, str(SCRIPT_DIR / 'validate_mdx.py'), lang_pair]
+        if target_level:
+            validate_args.append(target_level)
+        if target_module:
+            validate_args.append(str(target_module))
+        result = subprocess.run(validate_args)
+        sys.exit(result.returncode)
 
 if __name__ == '__main__':
     main()

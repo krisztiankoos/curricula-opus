@@ -47,6 +47,12 @@ from .markdown_format import (
     check_error_correction_format,
     check_cloze_format,
 )
+from .section_order import (
+    check_section_order,
+    fix_section_order,
+    get_section_order_summary,
+    parse_sections,
+)
 
 __all__ = [
     # Grammar
@@ -83,4 +89,9 @@ __all__ = [
     'check_fill_in_format',
     'check_error_correction_format',
     'check_cloze_format',
+    # Section Order
+    'check_section_order',
+    'fix_section_order',
+    'get_section_order_summary',
+    'parse_sections',
 ]

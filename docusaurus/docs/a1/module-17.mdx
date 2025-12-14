@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -287,49 +287,6 @@ In this module, you learned:
 - How to handle basic transactions in Ukrainian shops
 
 You can now count, ask prices, and shop confidently in Ukraine!
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| нуль | /nulʲ/ | zero | numeral | - | - |
-| один | /ɔˈdɪn/ | one (m) | numeral | m | одна (f), одне (n) |
-| два | /dʋa/ | two (m/n) | numeral | m/n | дві (f) |
-| три | /trɪ/ | three | numeral | - | - |
-| чотири | /t͡ʃɔˈtɪrɪ/ | four | numeral | - | - |
-| п'ять | /pjatʲ/ | five | numeral | - | - |
-| шість | /ʃistʲ/ | six | numeral | - | - |
-| сім | /sim/ | seven | numeral | - | - |
-| вісім | /ʋiˈsim/ | eight | numeral | - | - |
-| дев'ять | /ˈdɛvjatʲ/ | nine | numeral | - | - |
-| десять | /ˈdɛsʲatʲ/ | ten | numeral | - | - |
-| двадцять | /ˈdʋad͡zʲatʲ/ | twenty | numeral | - | - |
-| тридцять | /ˈtrɪd͡zʲatʲ/ | thirty | numeral | - | - |
-| сорок | /ˈsɔrɔk/ | forty | numeral | - | unique form |
-| п'ятдесят | /pjatdɛˈsʲat/ | fifty | numeral | - | - |
-| шістдесят | /ʃisdɛˈsʲat/ | sixty | numeral | - | - |
-| сімдесят | /simdɛˈsʲat/ | seventy | numeral | - | - |
-| вісімдесят | /ʋisimdɛˈsʲat/ | eighty | numeral | - | - |
-| дев'яносто | /dɛvjɑˈnɔstɔ/ | ninety | numeral | - | - |
-| сто | /stɔ/ | one hundred | numeral | - | - |
-| гривня | /ˈɦrɪvnʲɑ/ | hryvnia | noun | f | Ukrainian currency |
-| копійка | /kɔˈpijkɑ/ | kopeck | noun | f | 1/100 of hryvnia |
-| долар | /ˈdɔlɑr/ | dollar | noun | m | - |
-| євро | /ˈɛvrɔ/ | euro | noun | n | indeclinable |
-| ціна | /t͡siˈnɑ/ | price | noun | f | - |
-| скільки | /ˈskʲilʲkɪ/ | how much/many | adverb | - | - |
-| коштувати | /kɔʃtuˈvɑtɪ/ | to cost | verb | - | коштує (3sg) |
-| дорого | /ˈdɔrɔɦɔ/ | expensive | adverb | - | also: expensively |
-| дешево | /ˈdɛʃɛvɔ/ | cheap | adverb | - | also: cheaply |
-| знижка | /ˈznɪʒkɑ/ | discount | noun | f | - |
-| решта | /ˈrɛʃtɑ/ | change (money) | noun | f | money returned |
-| платити | /plɑˈtɪtɪ/ | to pay | verb | - | плачу, платиш |
-| рахунок | /rɑˈxunɔk/ | bill, check | noun | m | - |
-| готівка | /ɦɔˈtivkɑ/ | cash | noun | f | - |
-| картка | /ˈkɑrtkɑ/ | card | noun | f | credit/debit card |
 
 ---
 
@@ -745,3 +702,42 @@ You can now count, ask prices, and shop confidently in Ukraine!
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| нуль | /nulʲ/ | zero | numeral | - | - |
+| один | /ɔˈdɪn/ | one (m) | numeral | m | одна (f), одне (n) |
+| два | /dʋa/ | two (m/n) | numeral | m/n | дві (f) |
+| три | /trɪ/ | three | numeral | - | - |
+| чотири | /t͡ʃɔˈtɪrɪ/ | four | numeral | - | - |
+| п'ять | /pjatʲ/ | five | numeral | - | - |
+| шість | /ʃistʲ/ | six | numeral | - | - |
+| сім | /sim/ | seven | numeral | - | - |
+| вісім | /ʋiˈsim/ | eight | numeral | - | - |
+| дев'ять | /ˈdɛvjatʲ/ | nine | numeral | - | - |
+| десять | /ˈdɛsʲatʲ/ | ten | numeral | - | - |
+| двадцять | /ˈdʋad͡zʲatʲ/ | twenty | numeral | - | - |
+| тридцять | /ˈtrɪd͡zʲatʲ/ | thirty | numeral | - | - |
+| сорок | /ˈsɔrɔk/ | forty | numeral | - | unique form |
+| п'ятдесят | /pjatdɛˈsʲat/ | fifty | numeral | - | - |
+| шістдесят | /ʃisdɛˈsʲat/ | sixty | numeral | - | - |
+| сімдесят | /simdɛˈsʲat/ | seventy | numeral | - | - |
+| вісімдесят | /ʋisimdɛˈsʲat/ | eighty | numeral | - | - |
+| дев'яносто | /dɛvjɑˈnɔstɔ/ | ninety | numeral | - | - |
+| сто | /stɔ/ | one hundred | numeral | - | - |
+| гривня | /ˈɦrɪvnʲɑ/ | hryvnia | noun | f | Ukrainian currency |
+| копійка | /kɔˈpijkɑ/ | kopeck | noun | f | 1/100 of hryvnia |
+| долар | /ˈdɔlɑr/ | dollar | noun | m | - |
+| євро | /ˈɛvrɔ/ | euro | noun | n | indeclinable |
+| ціна | /t͡siˈnɑ/ | price | noun | f | - |
+| скільки | /ˈskʲilʲkɪ/ | how much/many | adverb | - | - |
+| коштувати | /kɔʃtuˈvɑtɪ/ | to cost | verb | - | коштує (3sg) |
+| дорого | /ˈdɔrɔɦɔ/ | expensive | adverb | - | also: expensively |
+| дешево | /ˈdɛʃɛvɔ/ | cheap | adverb | - | also: cheaply |
+| знижка | /ˈznɪʒkɑ/ | discount | noun | f | - |
+| решта | /ˈrɛʃtɑ/ | change (money) | noun | f | money returned |
+| платити | /plɑˈtɪtɪ/ | to pay | verb | - | плачу, платиш |
+| рахунок | /rɑˈxunɔk/ | bill, check | noun | m | - |
+| готівка | /ɦɔˈtivkɑ/ | cash | noun | f | - |
+| картка | /ˈkɑrtkɑ/ | card | noun | f | credit/debit card |

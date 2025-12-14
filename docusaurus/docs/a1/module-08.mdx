@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# The Living Verb II
 
 ## Warm-up
 
@@ -248,42 +246,6 @@ You've now mastered **Class II verbs (-ити)**! Here's what you can do:
 - **Class II:** Drop -ити → add -ю/-иш/-ить/-имо/-ите/-ять
 
 With Class I and Class II verbs combined, you can now express hundreds of actions in Ukrainian. Вітаю! (Congratulations!)
-
----
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| говорити | /ɦɔvɔˈrɪtɪ/ | to speak | verb | - | Class II: говорю, говориш, говорить |
-| робити | /ˈrɔbɪtɪ/ | to do, to make | verb | - | Class II: роблю, робиш, робить |
-| бачити | /ˈbɑt͡ʃɪtɪ/ | to see | verb | - | Class II: бачу, бачиш, бачить |
-| дивитися | /dɪˈvɪtɪsʲɑ/ | to watch, to look | verb | - | Reflexive: дивлюся, дивишся |
-| ходити | /xɔˈdɪtɪ/ | to walk, to go (on foot) | verb | - | Class II: ходжу, ходиш, ходить |
-| їздити | /ˈjizdɪtɪ/ | to ride, to go (by vehicle) | verb | - | Class II: їжджу, їздиш, їздить |
-| летіти | /lɛˈtitɪ/ | to fly | verb | - | Class II: лечу, летиш, летить |
-| бігти | /ˈbiɦtɪ/ | to run | verb | - | Irregular: біжу, біжиш, біжить |
-| сидіти | /sɪˈditɪ/ | to sit | verb | - | Class II: сиджу, сидиш, сидить |
-| стояти | /stɔˈjɑtɪ/ | to stand | verb | - | Class II: стою, стоїш, стоїть |
-| лежати | /lɛˈʒɑtɪ/ | to lie | verb | - | Class II: лежу, лежиш, лежить |
-| спати | /ˈspɑtɪ/ | to sleep | verb | - | Class II: сплю, спиш, спить |
-| любити | /lʲuˈbɪtɪ/ | to love | verb | - | Class II: люблю, любиш, любить |
-| хотіти | /xɔˈtitɪ/ | to want | verb | - | Irregular: хочу, хочеш, хоче |
-| вчити | /ˈvt͡ʃɪtɪ/ | to study, to learn | verb | - | Class II: вчу, вчиш, вчить |
-| вчитися | /ˈvt͡ʃɪtɪsʲɑ/ | to study (oneself) | verb | - | Reflexive: вчуся, вчишся |
-| пам'ятати | /pɑˈmʲjɑtɑtɪ/ | to remember | verb | - | Class I: пам'ятаю, пам'ятаєш |
-| забувати | /zɑbuˈvɑtɪ/ | to forget | verb | - | Class I: забуваю, забуваєш |
-| їсти | /ˈjistɪ/ | to eat | verb | - | Irregular: їм, їси, їсть |
-| пити | /ˈpɪtɪ/ | to drink | verb | - | Irregular: п'ю, п'єш, п'є |
-| просити | /ˈprɔsɪtɪ/ | to ask, to request | verb | - | Class II: прошу, просиш, просить |
-| дякувати | /dʲɑkuˈvɑtɪ/ | to thank | verb | - | Class I: дякую, дякуєш |
-| вітати | /viˈtɑtɪ/ | to greet | verb | - | Class I: вітаю, вітаєш |
-| телефонувати | /tɛlɛfɔnuˈvɑtɪ/ | to call (by phone) | verb | - | Class I: телефоную, телефонуєш |
-| купувати | /kupuˈvɑtɪ/ | to buy | verb | - | Class I: купую, купуєш |
-
----
-
-
 
 ---
 
@@ -677,3 +639,34 @@ With Class I and Class II verbs combined, you can now express hundreds of action
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| говорити | /ɦɔvɔˈrɪtɪ/ | to speak | verb | - | Class II: говорю, говориш, говорить |
+| робити | /ˈrɔbɪtɪ/ | to do, to make | verb | - | Class II: роблю, робиш, робить |
+| бачити | /ˈbɑt͡ʃɪtɪ/ | to see | verb | - | Class II: бачу, бачиш, бачить |
+| дивитися | /dɪˈvɪtɪsʲɑ/ | to watch, to look | verb | - | Reflexive: дивлюся, дивишся |
+| ходити | /xɔˈdɪtɪ/ | to walk, to go (on foot) | verb | - | Class II: ходжу, ходиш, ходить |
+| їздити | /ˈjizdɪtɪ/ | to ride, to go (by vehicle) | verb | - | Class II: їжджу, їздиш, їздить |
+| летіти | /lɛˈtitɪ/ | to fly | verb | - | Class II: лечу, летиш, летить |
+| бігти | /ˈbiɦtɪ/ | to run | verb | - | Irregular: біжу, біжиш, біжить |
+| сидіти | /sɪˈditɪ/ | to sit | verb | - | Class II: сиджу, сидиш, сидить |
+| стояти | /stɔˈjɑtɪ/ | to stand | verb | - | Class II: стою, стоїш, стоїть |
+| лежати | /lɛˈʒɑtɪ/ | to lie | verb | - | Class II: лежу, лежиш, лежить |
+| спати | /ˈspɑtɪ/ | to sleep | verb | - | Class II: сплю, спиш, спить |
+| любити | /lʲuˈbɪtɪ/ | to love | verb | - | Class II: люблю, любиш, любить |
+| хотіти | /xɔˈtitɪ/ | to want | verb | - | Irregular: хочу, хочеш, хоче |
+| вчити | /ˈvt͡ʃɪtɪ/ | to study, to learn | verb | - | Class II: вчу, вчиш, вчить |
+| вчитися | /ˈvt͡ʃɪtɪsʲɑ/ | to study (oneself) | verb | - | Reflexive: вчуся, вчишся |
+| пам'ятати | /pɑˈmʲjɑtɑtɪ/ | to remember | verb | - | Class I: пам'ятаю, пам'ятаєш |
+| забувати | /zɑbuˈvɑtɪ/ | to forget | verb | - | Class I: забуваю, забуваєш |
+| їсти | /ˈjistɪ/ | to eat | verb | - | Irregular: їм, їси, їсть |
+| пити | /ˈpɪtɪ/ | to drink | verb | - | Irregular: п'ю, п'єш, п'є |
+| просити | /ˈprɔsɪtɪ/ | to ask, to request | verb | - | Class II: прошу, просиш, просить |
+| дякувати | /dʲɑkuˈvɑtɪ/ | to thank | verb | - | Class I: дякую, дякуєш |
+| вітати | /viˈtɑtɪ/ | to greet | verb | - | Class I: вітаю, вітаєш |
+| телефонувати | /tɛlɛfɔnuˈvɑtɪ/ | to call (by phone) | verb | - | Class I: телефоную, телефонуєш |
+| купувати | /kupuˈvɑtɪ/ | to buy | verb | - | Class I: купую, купуєш |
+
+---

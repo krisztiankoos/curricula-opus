@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -345,49 +345,6 @@ In Module 10, you'll review everything you've learned in Modules 1-9. You're com
 
 ---
 
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| їжа | /jiˈʒɑ/ | food | noun | f | - |
-| сніданок | /sniˈdɑnɔk/ | breakfast | noun | m | - |
-| обід | /ɔˈbid/ | lunch | noun | m | - |
-| вечеря | /weˈt͡ʃerʲɑ/ | dinner | noun | f | - |
-| борщ | /bɔrʃt͡ʃ/ | borshch (beet soup) | noun | m | UNESCO heritage! |
-| суп | /sup/ | soup | noun | m | - |
-| вареники | /wɑˈrenɪkɪ/ | varenyky (dumplings) | noun | m pl | always plural |
-| хліб | /xlib/ | bread | noun | m | sacred in culture |
-| м'ясо | /mʲɑˈsɔ/ | meat | noun | n | note the soft sign |
-| курка | /ˈkurkɑ/ | chicken | noun | f | - |
-| риба | /ˈrɪbɑ/ | fish | noun | f | - |
-| овочі | /ˈɔvɔt͡ʃi/ | vegetables | noun | m pl | collective noun |
-| фрукти | /ˈfruktɪ/ | fruits | noun | m pl | collective noun |
-| яблуко | /ˈjɑblukɔ/ | apple | noun | n | - |
-| банан | /bɑˈnɑn/ | banana | noun | m | - |
-| картопля | /kɑrˈtɔplʲɑ/ | potato | noun | f | - |
-| помідор | /pɔmiˈdɔr/ | tomato | noun | m | - |
-| огірок | /ɔˈɦirɔk/ | cucumber | noun | m | - |
-| цибуля | /t͡sɪˈbulʲɑ/ | onion | noun | f | - |
-| сир | /sɪr/ | cheese, cottage cheese | noun | m | breakfast staple |
-| яйце | /ˈjɑjt͡se/ | egg | noun | n | plural: яйця |
-| чай | /t͡ʃɑj/ | tea | noun | m | - |
-| кава | /ˈkɑvɑ/ | coffee | noun | f | - |
-| вода | /vɔˈdɑ/ | water | noun | f | - |
-| сік | /sik/ | juice | noun | m | - |
-| молоко | /mɔlɔˈkɔ/ | milk | noun | n | - |
-| смачний | /ˈsmɑt͡ʃnɪj/ | tasty | adjective | - | m: -ий, f: -а, n: -е |
-| смачно | /ˈsmɑt͡ʃnɔ/ | delicious(ly) | adverb | - | used to describe how food tastes |
-| Смачного! | /smɑt͡ʃˈnɔɦɔ/ | Enjoy your meal! | expression | - | like "Bon appétit!" |
-| їсти | /ˈjistɪ/ | to eat | verb | - | irregular: їм, їси, їсть |
-| пити | /ˈpɪtɪ/ | to drink | verb | - | irregular: п'ю, п'єш, п'є |
-| снідати | /sniˈdɑtɪ/ | to have breakfast | verb | - | я снідаю, ти снідаєш |
-| обідати | /ɔbiˈdɑtɪ/ | to have lunch | verb | - | я обідаю, ти обідаєш |
-| вечеряти | /wetʃeˈrʲɑtɪ/ | to have dinner | verb | - | я вечеряю, ти вечеряєш |
-| любити | /lʲuˈbɪtɪ/ | to love | verb | - | я люблю, ти любиш |
-
----
-
 ## 🎯 Activities
 
 ### Ukrainian Cuisine Knowledge
@@ -677,3 +634,42 @@ In Module 10, you'll review everything you've learned in Modules 1-9. You're com
   { jumbled: `любить / Вона / овочі`, answer: `Вона любить овочі.` },
   { jumbled: `п'ють / Вони / молоко`, answer: `Вони п'ють молоко.` }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| їжа | /jiˈʒɑ/ | food | noun | f | - |
+| сніданок | /sniˈdɑnɔk/ | breakfast | noun | m | - |
+| обід | /ɔˈbid/ | lunch | noun | m | - |
+| вечеря | /weˈt͡ʃerʲɑ/ | dinner | noun | f | - |
+| борщ | /bɔrʃt͡ʃ/ | borshch (beet soup) | noun | m | UNESCO heritage! |
+| суп | /sup/ | soup | noun | m | - |
+| вареники | /wɑˈrenɪkɪ/ | varenyky (dumplings) | noun | m pl | always plural |
+| хліб | /xlib/ | bread | noun | m | sacred in culture |
+| м'ясо | /mʲɑˈsɔ/ | meat | noun | n | note the soft sign |
+| курка | /ˈkurkɑ/ | chicken | noun | f | - |
+| риба | /ˈrɪbɑ/ | fish | noun | f | - |
+| овочі | /ˈɔvɔt͡ʃi/ | vegetables | noun | m pl | collective noun |
+| фрукти | /ˈfruktɪ/ | fruits | noun | m pl | collective noun |
+| яблуко | /ˈjɑblukɔ/ | apple | noun | n | - |
+| банан | /bɑˈnɑn/ | banana | noun | m | - |
+| картопля | /kɑrˈtɔplʲɑ/ | potato | noun | f | - |
+| помідор | /pɔmiˈdɔr/ | tomato | noun | m | - |
+| огірок | /ɔˈɦirɔk/ | cucumber | noun | m | - |
+| цибуля | /t͡sɪˈbulʲɑ/ | onion | noun | f | - |
+| сир | /sɪr/ | cheese, cottage cheese | noun | m | breakfast staple |
+| яйце | /ˈjɑjt͡se/ | egg | noun | n | plural: яйця |
+| чай | /t͡ʃɑj/ | tea | noun | m | - |
+| кава | /ˈkɑvɑ/ | coffee | noun | f | - |
+| вода | /vɔˈdɑ/ | water | noun | f | - |
+| сік | /sik/ | juice | noun | m | - |
+| молоко | /mɔlɔˈkɔ/ | milk | noun | n | - |
+| смачний | /ˈsmɑt͡ʃnɪj/ | tasty | adjective | - | m: -ий, f: -а, n: -е |
+| смачно | /ˈsmɑt͡ʃnɔ/ | delicious(ly) | adverb | - | used to describe how food tastes |
+| Смачного! | /smɑt͡ʃˈnɔɦɔ/ | Enjoy your meal! | expression | - | like "Bon appétit!" |
+| їсти | /ˈjistɪ/ | to eat | verb | - | irregular: їм, їси, їсть |
+| пити | /ˈpɪtɪ/ | to drink | verb | - | irregular: п'ю, п'єш, п'є |
+| снідати | /sniˈdɑtɪ/ | to have breakfast | verb | - | я снідаю, ти снідаєш |
+| обідати | /ɔbiˈdɑtɪ/ | to have lunch | verb | - | я обідаю, ти обідаєш |
+| вечеряти | /wetʃeˈrʲɑtɪ/ | to have dinner | verb | - | я вечеряю, ти вечеряєш |
+| любити | /lʲuˈbɪtɪ/ | to love | verb | - | я люблю, ти любиш |

@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Body & Health
 
 ## Warm-up
 
@@ -41,43 +39,6 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 **Health Phrases:** [Ukrainian Phrasebook](https://www.ukrainianlessons.com/phrasebook/) — Essential health phrases
 :::
 
-
----
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| голова | /hɔlɔˈwɑ/ | head | n | f | |
-| рука | /ruˈkɑ/ | hand/arm | n | f | |
-| нога | /nɔˈhɑ/ | leg/foot | n | f | |
-| живіт | /ʒɪˈwʲit/ | stomach | n | m | |
-| спина | /spɪˈnɑ/ | back | n | f | |
-| горло | /ˈhɔrlɔ/ | throat | n | n | |
-| око | /ˈɔkɔ/ | eye | n | n | pl: очі |
-| вухо | /ˈwuxɔ/ | ear | n | n | pl: вуха |
-| ніс | /nʲis/ | nose | n | m | |
-| рот | /rɔt/ | mouth | n | m | |
-| зуб | /zub/ | tooth | n | m | pl: зуби |
-| тіло | /ˈtʲilɔ/ | body | n | n | |
-| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
-| лікар | /ˈlʲikɑr/ | doctor | n | m | |
-| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | n | f | |
-| аптека | /ɑpˈtɛkɑ/ | pharmacy | n | f | |
-| ліки | /ˈlʲikɪ/ | medicine | n | pl | always plural |
-| таблетка | /tɑbˈlɛtkɑ/ | pill/tablet | n | f | |
-| температура | /tempɛrɑˈturɑ/ | fever/temperature | n | f | |
-| болить | /bɔˈlɪtʲ/ | hurts | v | — | 3rd person |
-| хворий | /xwɔˈrɪj/ | sick (m) | adj | m | |
-| хвора | /xwɔˈrɑ/ | sick (f) | adj | f | |
-| здоровий | /zdɔˈrɔwɪj/ | healthy (m) | adj | m | |
-| здорова | /zdɔˈrɔwɑ/ | healthy (f) | adj | f | |
-| погано | /pɔˈhɑnɔ/ | bad | adv | — | "Мені погано" |
-| допомога | /dɔpɔˈmɔhɑ/ | help | n | f | |
-| швидка допомога | /ˈʃwɪdkɑ dɔpɔˈmɔhɑ/ | ambulance | n | f | "fast help" |
-| кашель | /ˈkɑʃɛlʲ/ | cough | n | m | |
-| нежить | /ˈnɛʒɪtʲ/ | runny nose | n | m | |
-| застуда | /zɑsˈtudɑ/ | cold (illness) | n | f | |
 
 ---
 
@@ -258,7 +219,6 @@ The body part is the SUBJECT (nominative), not the object!
 
 ---
 
-
 ## 📋 Summary
 
 In this module, you learned:
@@ -274,8 +234,6 @@ In this module, you learned:
 ---
 
 **Coming up:** Module 32 will teach you about family members!
-
----
 
 ## 🎯 Activities
 
@@ -629,3 +587,39 @@ In this module, you learned:
     explanation: `Correct!`
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| голова | /hɔlɔˈwɑ/ | head | n | f | |
+| рука | /ruˈkɑ/ | hand/arm | n | f | |
+| нога | /nɔˈhɑ/ | leg/foot | n | f | |
+| живіт | /ʒɪˈwʲit/ | stomach | n | m | |
+| спина | /spɪˈnɑ/ | back | n | f | |
+| горло | /ˈhɔrlɔ/ | throat | n | n | |
+| око | /ˈɔkɔ/ | eye | n | n | pl: очі |
+| вухо | /ˈwuxɔ/ | ear | n | n | pl: вуха |
+| ніс | /nʲis/ | nose | n | m | |
+| рот | /rɔt/ | mouth | n | m | |
+| зуб | /zub/ | tooth | n | m | pl: зуби |
+| тіло | /ˈtʲilɔ/ | body | n | n | |
+| здоров'я | /zdɔˈrɔwjɑ/ | health | n | n | |
+| лікар | /ˈlʲikɑr/ | doctor | n | m | |
+| лікарня | /lʲiˈkɑrnʲɑ/ | hospital | n | f | |
+| аптека | /ɑpˈtɛkɑ/ | pharmacy | n | f | |
+| ліки | /ˈlʲikɪ/ | medicine | n | pl | always plural |
+| таблетка | /tɑbˈlɛtkɑ/ | pill/tablet | n | f | |
+| температура | /tempɛrɑˈturɑ/ | fever/temperature | n | f | |
+| болить | /bɔˈlɪtʲ/ | hurts | v | — | 3rd person |
+| хворий | /xwɔˈrɪj/ | sick (m) | adj | m | |
+| хвора | /xwɔˈrɑ/ | sick (f) | adj | f | |
+| здоровий | /zdɔˈrɔwɪj/ | healthy (m) | adj | m | |
+| здорова | /zdɔˈrɔwɑ/ | healthy (f) | adj | f | |
+| погано | /pɔˈhɑnɔ/ | bad | adv | — | "Мені погано" |
+| допомога | /dɔpɔˈmɔhɑ/ | help | n | f | |
+| швидка допомога | /ˈʃwɪdkɑ dɔpɔˈmɔhɑ/ | ambulance | n | f | "fast help" |
+| кашель | /ˈkɑʃɛlʲ/ | cough | n | m | |
+| нежить | /ˈnɛʒɪtʲ/ | runny nose | n | m | |
+| застуда | /zɑsˈtudɑ/ | cold (illness) | n | f | |
+
+---

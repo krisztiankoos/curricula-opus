@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -222,52 +222,6 @@ You've unlocked **Class I verbs** (-ати/-яти)! You can now:
 **Key Insight:** The verb ending tells you WHO is acting, so you can often drop the pronoun. "Читаю" = "I read." Elegant, efficient, Ukrainian.
 
 **Next up:** Module 07 — Questions & Negation. You learn questions and negation!
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| читати | /t͡ʃɪˈtɑtɪ/ | to read | verb | - | Class I: читаю, читаєш |
-| писати | /pɪˈsɑtɪ/ | to write | verb | - | Class I: пишу, пишеш |
-| працювати | /prɑt͡sʲuˈvɑtɪ/ | to work | verb | - | Class I: працюю, працюєш |
-| говорити | /ɦɔvɔˈrɪtɪ/ | to speak | verb | - | Class II: говорю, говориш |
-| грати | /ˈɦrɑtɪ/ | to play | verb | - | Class I: граю, граєш |
-| співати | /spiˈvɑtɪ/ | to sing | verb | - | Class I: співаю, співаєш |
-| думати | /ˈdumɑtɪ/ | to think | verb | - | Class I: думаю, думаєш |
-| гуляти | /ɦuˈlʲɑtɪ/ | to walk | verb | - | Class I: гуляю, гуляєш |
-| знати | /ˈznɑtɪ/ | to know | verb | - | Class I: знаю, знаєш |
-| розуміти | /rɔzuˈmitɪ/ | to understand | verb | - | Class II: розумію, розумієш |
-| слухати | /ˈsluxɑtɪ/ | to listen | verb | - | Class I: слухаю, слухаєш |
-| чекати | /t͡ʃeˈkɑtɪ/ | to wait | verb | - | Class I: чекаю, чекаєш |
-| снідати | /sniˈdɑtɪ/ | to have breakfast | verb | - | Class I: снідаю, снідаєш |
-| я | /jɑ/ | I | pronoun | - | 1st person singular |
-| ти | /tɪ/ | you | pronoun | - | 2nd person singular |
-| він | /vin/ | he | pronoun | m | 3rd person singular |
-| вона | /vɔˈnɑ/ | she | pronoun | f | 3rd person singular |
-| воно | /vɔˈnɔ/ | it | pronoun | n | 3rd person singular |
-| ми | /mɪ/ | we | pronoun | - | 1st person plural |
-| ви | /vɪ/ | you | pronoun | - | 2nd person plural/formal |
-| вони | /vɔˈnɪ/ | they | pronoun | - | 3rd person plural |
-| книга | /ˈknɪɦɑ/ | book | noun | f | common object |
-| музика | /ˈmuzɪkɑ/ | music | noun | f | common topic |
-| футбол | /fudˈbɔl/ | football | noun | m | sport |
-| вечеряти | /vet͡ʃeˈrʲɑtɪ/ | to have dinner | verb | - | Class I: вечеряю, вечеряєш |
-| відповідати | /vidpɔviˈdɑtɪ/ | to answer | verb | - | Class I: відповідаю, відповідаєш |
-| відпочивати | /vidpɔt͡ʃɪˈvɑtɪ/ | to rest | verb | - | Class I: відпочиваю, відпочиваєш |
-| закінчувати | /zɑkint͡ʃuˈvɑtɪ/ | to finish | verb | - | Class I: закінчую, закінчуєш |
-| знаходити | /znɑˈxɔdɪtɪ/ | to find | verb | - | Class II: знаходжу, знаходиш |
-| малювати | /mɑlʲuˈvɑtɪ/ | to draw | verb | - | Class I: малюю, малюєш |
-| мріяти | /mriˈjɑtɪ/ | to dream | verb | - | Class I: мрію, мрієш |
-| називати | /nɑzɪˈvɑtɪ/ | to call/name | verb | - | Class I: називаю, називаєш |
-| обідати | /ɔˈbidɑtɪ/ | to have lunch | verb | - | Class I: обідаю, обідаєш |
-| питати | /pɪˈtɑtɪ/ | to ask | verb | - | Class I: питаю, питаєш |
-| починати | /pɔt͡ʃɪˈnɑtɪ/ | to begin | verb | - | Class I: починаю, починаєш |
-| танцювати | /tɑnt͡sʲuˈvɑtɪ/ | to dance | verb | - | Class I: танцюю, танцюєш |
-| шукати | /ʃuˈkɑtɪ/ | to search | verb | - | Class I: шукаю, шукаєш |
-
 
 ---
 
@@ -558,3 +512,45 @@ You've unlocked **Class I verbs** (-ати/-яти)! You can now:
   { jumbled: `пишеш / Ти / листа`, answer: `Ти пишеш листа.` },
   { jumbled: `співає / Вона / пісню`, answer: `Вона співає пісню.` }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| читати | /t͡ʃɪˈtɑtɪ/ | to read | verb | - | Class I: читаю, читаєш |
+| писати | /pɪˈsɑtɪ/ | to write | verb | - | Class I: пишу, пишеш |
+| працювати | /prɑt͡sʲuˈvɑtɪ/ | to work | verb | - | Class I: працюю, працюєш |
+| говорити | /ɦɔvɔˈrɪtɪ/ | to speak | verb | - | Class II: говорю, говориш |
+| грати | /ˈɦrɑtɪ/ | to play | verb | - | Class I: граю, граєш |
+| співати | /spiˈvɑtɪ/ | to sing | verb | - | Class I: співаю, співаєш |
+| думати | /ˈdumɑtɪ/ | to think | verb | - | Class I: думаю, думаєш |
+| гуляти | /ɦuˈlʲɑtɪ/ | to walk | verb | - | Class I: гуляю, гуляєш |
+| знати | /ˈznɑtɪ/ | to know | verb | - | Class I: знаю, знаєш |
+| розуміти | /rɔzuˈmitɪ/ | to understand | verb | - | Class II: розумію, розумієш |
+| слухати | /ˈsluxɑtɪ/ | to listen | verb | - | Class I: слухаю, слухаєш |
+| чекати | /t͡ʃeˈkɑtɪ/ | to wait | verb | - | Class I: чекаю, чекаєш |
+| снідати | /sniˈdɑtɪ/ | to have breakfast | verb | - | Class I: снідаю, снідаєш |
+| я | /jɑ/ | I | pronoun | - | 1st person singular |
+| ти | /tɪ/ | you | pronoun | - | 2nd person singular |
+| він | /vin/ | he | pronoun | m | 3rd person singular |
+| вона | /vɔˈnɑ/ | she | pronoun | f | 3rd person singular |
+| воно | /vɔˈnɔ/ | it | pronoun | n | 3rd person singular |
+| ми | /mɪ/ | we | pronoun | - | 1st person plural |
+| ви | /vɪ/ | you | pronoun | - | 2nd person plural/formal |
+| вони | /vɔˈnɪ/ | they | pronoun | - | 3rd person plural |
+| книга | /ˈknɪɦɑ/ | book | noun | f | common object |
+| музика | /ˈmuzɪkɑ/ | music | noun | f | common topic |
+| футбол | /fudˈbɔl/ | football | noun | m | sport |
+| вечеряти | /vet͡ʃeˈrʲɑtɪ/ | to have dinner | verb | - | Class I: вечеряю, вечеряєш |
+| відповідати | /vidpɔviˈdɑtɪ/ | to answer | verb | - | Class I: відповідаю, відповідаєш |
+| відпочивати | /vidpɔt͡ʃɪˈvɑtɪ/ | to rest | verb | - | Class I: відпочиваю, відпочиваєш |
+| закінчувати | /zɑkint͡ʃuˈvɑtɪ/ | to finish | verb | - | Class I: закінчую, закінчуєш |
+| знаходити | /znɑˈxɔdɪtɪ/ | to find | verb | - | Class II: знаходжу, знаходиш |
+| малювати | /mɑlʲuˈvɑtɪ/ | to draw | verb | - | Class I: малюю, малюєш |
+| мріяти | /mriˈjɑtɪ/ | to dream | verb | - | Class I: мрію, мрієш |
+| називати | /nɑzɪˈvɑtɪ/ | to call/name | verb | - | Class I: називаю, називаєш |
+| обідати | /ɔˈbidɑtɪ/ | to have lunch | verb | - | Class I: обідаю, обідаєш |
+| питати | /pɪˈtɑtɪ/ | to ask | verb | - | Class I: питаю, питаєш |
+| починати | /pɔt͡ʃɪˈnɑtɪ/ | to begin | verb | - | Class I: починаю, починаєш |
+| танцювати | /tɑnt͡sʲuˈvɑtɪ/ | to dance | verb | - | Class I: танцюю, танцюєш |
+| шукати | /ʃuˈkɑtɪ/ | to search | verb | - | Class I: шукаю, шукаєш |
+

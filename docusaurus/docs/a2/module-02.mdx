@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Warm-up
 
 У попередньому модулі ви вивчили давальний відмінок займенників: мені, тобі, йому, їй, нам, вам, їм. Тепер час навчитися давального відмінка іменників!
 
@@ -255,39 +253,6 @@ Every answer is in the dative case because all these people are *recipients* of 
 
 ---
 
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| давати | /dɑˈʋɑtɪ/ | to give | verb | — | imperfective; + Dat + Acc |
-| дарувати | /dɑruˈʋɑtɪ/ | to gift, give as present | verb | — | imperfective; + Dat + Acc |
-| посилати | /posɪˈlɑtɪ/ | to send | verb | — | imperfective; + Dat + Acc |
-| надсилати | /nɑdsɪˈlɑtɪ/ | to send (formal) | verb | — | imperfective; + Dat + Acc |
-| показувати | /pokɑˈzuʋɑtɪ/ | to show | verb | — | imperfective; + Dat + Acc |
-| пояснювати | /pojɑˈsnjuʋɑtɪ/ | to explain | verb | — | imperfective; + Dat + Acc |
-| розповідати | /rɔzpoʋiˈdɑtɪ/ | to tell, narrate | verb | — | imperfective; + Dat + Acc |
-| допомагати | /dopoˈmɑɦɑtɪ/ | to help | verb | — | imperfective; + Dat |
-| заважати | /zɑʋɑˈʒɑtɪ/ | to disturb, bother | verb | — | imperfective; + Dat |
-| подобатися | /podoˈbɑtɪsʲɑ/ | to please, be liked | verb | — | imperfective; + Dat |
-| личити | /lɪˈtʃɪtɪ/ | to suit, become | verb | — | imperfective; + Dat |
-| підходити | /pidxoˈdɪtɪ/ | to suit, fit | verb | — | imperfective; + Dat |
-| пасувати | /pɑsuˈʋɑtɪ/ | to match, go well | verb | — | imperfective; + Dat |
-| вистачати | /ʋɪstɑˈtʃɑtɪ/ | to be enough | verb | — | imperfective; + Dat |
-| бракувати | /brɑˈkuʋɑtɪ/ | to lack, be short of | verb | — | imperfective; + Dat |
-| шкодити | /ʃkoˈdɪtɪ/ | to harm | verb | — | imperfective; + Dat |
-| вірити | /ˈʋirɪtɪ/ | to believe | verb | — | imperfective; + Dat |
-| довіряти | /doʋiˈrʲɑtɪ/ | to trust | verb | — | imperfective; + Dat |
-| радити | /ˈrɑdɪtɪ/ | to advise | verb | — | imperfective; + Dat + Acc |
-| дозволяти | /dozʋoˈlʲɑtɪ/ | to allow, permit | verb | — | imperfective; + Dat + Inf |
-| забороняти | /zɑboroˈnʲɑtɪ/ | to forbid | verb | — | imperfective; + Dat + Inf |
-| відповідати | /ʋidpoʋiˈdɑtɪ/ | to answer, reply | verb | — | imperfective; + Dat |
-| телефонувати | /telefoˈnuʋɑtɪ/ | to phone, call | verb | — | imperfective; + Dat |
-| писати | /pɪˈsɑtɪ/ | to write | verb | — | imperfective; + Dat + Acc |
-| лист | /lɪst/ | letter | noun | m | plural: листи |
-
----
-
 ## 📋 Summary
 
 У цьому модулі ви навчилися:
@@ -313,8 +278,6 @@ Every answer is in the dative case because all these people are *recipients* of 
 - **Dative verbs**: допомагати, заважати, подобатися, вірити, довіряти, телефонувати, писати, давати, показувати, пояснювати, радити
 
 Тепер ви можете казати, кому ви допомагаєте, пишете, телефонуєте, і даруєте подарунки! 🎁
-
----
 
 ## 🎯 Activities
 
@@ -386,6 +349,96 @@ Every answer is in the dative case because all these people are *recipients* of 
     sentence: `Я раджу це ___.`,
     answer: `подрузі`,
     options: [`подрузі`, `подруга`, `подругу`]
+  }
+]} />
+
+### Dative or Not?
+
+<Quiz questions={[
+  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Я даю книгу друг.`, correct: false },
+      { text: `Я даю книгу другові.`, correct: true },
+      { text: `Я даю книгу друга.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Вона телефонує мама.`, correct: false },
+      { text: `Вона телефонує маму.`, correct: false },
+      { text: `Вона телефонує мамі.`, correct: true }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Ми пишемо батькам.`, correct: true },
+      { text: `Ми пишемо батьки.`, correct: false },
+      { text: `Ми пишемо батьків.`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"She helps her sister\"?`,
+    options: [
+      { text: `Вона допомагає сестра.`, correct: false },
+      { text: `Вона допомагає сестру.`, correct: false },
+      { text: `Вона допомагає сестрі.`, correct: true }
+    ]
+  },  {
+    question: `Яка форма правильна для \"to the city\"?`,
+    options: [
+      { text: `місто`, correct: false },
+      { text: `місту`, correct: true },
+      { text: `міста`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"I believe my friend\"?`,
+    options: [
+      { text: `Я вірю друг.`, correct: false },
+      { text: `Я вірю другові.`, correct: true },
+      { text: `Я вірю друга.`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Він показує фото вчителеві.`, correct: true },
+      { text: `Він показує фото вчитель.`, correct: false },
+      { text: `Він показує фото вчителя.`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"They write to their parents\"?`,
+    options: [
+      { text: `Вони пишуть батьки.`, correct: false },
+      { text: `Вони пишуть батьків.`, correct: false },
+      { text: `Вони пишуть батькам.`, correct: true }
+    ]
+  },  {
+    question: `Яка форма \"подруга\" в давальному відмінку?`,
+    options: [
+      { text: `подругі`, correct: false },
+      { text: `подрузі`, correct: true },
+      { text: `подругу`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"The doctor explains to the patient\"?`,
+    options: [
+      { text: `Лікар пояснює пацієнт.`, correct: false },
+      { text: `Лікар пояснює пацієнта.`, correct: false },
+      { text: `Лікар пояснює пацієнтові.`, correct: true }
+    ]
+  },  {
+    question: `Яка форма \"донька\" в давальному відмінку?`,
+    options: [
+      { text: `доньки`, correct: false },
+      { text: `доньку`, correct: false },
+      { text: `доньці`, correct: true }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Це личить твоєму імені.`, correct: true },
+      { text: `Це личить твоє ім'я.`, correct: false },
+      { text: `Це личить твоєго імені.`, correct: false }
+    ]
   }
 ]} />
 
@@ -461,6 +514,53 @@ Every answer is in the dative case because all these people are *recipients* of 
   { jumbled: `батько / дарує / квіти / мамі`, answer: `Батько дарує квіти мамі.` },
   { jumbled: `лікар / пояснює / діагноз / пацієнтові`, answer: `Лікар пояснює діагноз пацієнтові.` }
 ]} />
+
+### Fix the Dative
+
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я допомагаю мама з обідом.`}
+    errorWord={`мама`}
+    correctForm={`мамі`}
+    options={[`мама`, `мамі`, `маму`, `мамою`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він телефонує друг кожного дня.`}
+    errorWord={`друг`}
+    correctForm={`другові`}
+    options={[`друг`, `другові`, `друга`, `другом`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми пишемо лист бабуся.`}
+    errorWord={`бабуся`}
+    correctForm={`бабусі`}
+    options={[`бабуся`, `бабусі`, `бабусю`, `бабусею`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона показує фото сестра.`}
+    errorWord={`сестра`}
+    correctForm={`сестрі`}
+    options={[`сестра`, `сестрі`, `сестру`, `сестрою`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Батько дарує подарунок дочка.`}
+    errorWord={`дочка`}
+    correctForm={`доньці`}
+    options={[`дочка`, `доньці`, `дочку`, `дочкою`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Лікар пояснює все пацієнт.`}
+    errorWord={`пацієнт`}
+    correctForm={`пацієнтові`}
+    options={[`пацієнт`, `пацієнтові`, `пацієнта`, `пацієнтом`]}
+    explanation={``}
+  />
+</ErrorCorrection>
 
 ### Complete the Dialogue
 
@@ -563,3 +663,34 @@ Every answer is in the dative case because all these people are *recipients* of 
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| давати | /dɑˈʋɑtɪ/ | to give | verb | — | imperfective; + Dat + Acc |
+| дарувати | /dɑruˈʋɑtɪ/ | to gift, give as present | verb | — | imperfective; + Dat + Acc |
+| посилати | /posɪˈlɑtɪ/ | to send | verb | — | imperfective; + Dat + Acc |
+| надсилати | /nɑdsɪˈlɑtɪ/ | to send (formal) | verb | — | imperfective; + Dat + Acc |
+| показувати | /pokɑˈzuʋɑtɪ/ | to show | verb | — | imperfective; + Dat + Acc |
+| пояснювати | /pojɑˈsnjuʋɑtɪ/ | to explain | verb | — | imperfective; + Dat + Acc |
+| розповідати | /rɔzpoʋiˈdɑtɪ/ | to tell, narrate | verb | — | imperfective; + Dat + Acc |
+| допомагати | /dopoˈmɑɦɑtɪ/ | to help | verb | — | imperfective; + Dat |
+| заважати | /zɑʋɑˈʒɑtɪ/ | to disturb, bother | verb | — | imperfective; + Dat |
+| подобатися | /podoˈbɑtɪsʲɑ/ | to please, be liked | verb | — | imperfective; + Dat |
+| личити | /lɪˈtʃɪtɪ/ | to suit, become | verb | — | imperfective; + Dat |
+| підходити | /pidxoˈdɪtɪ/ | to suit, fit | verb | — | imperfective; + Dat |
+| пасувати | /pɑsuˈʋɑtɪ/ | to match, go well | verb | — | imperfective; + Dat |
+| вистачати | /ʋɪstɑˈtʃɑtɪ/ | to be enough | verb | — | imperfective; + Dat |
+| бракувати | /brɑˈkuʋɑtɪ/ | to lack, be short of | verb | — | imperfective; + Dat |
+| шкодити | /ʃkoˈdɪtɪ/ | to harm | verb | — | imperfective; + Dat |
+| вірити | /ˈʋirɪtɪ/ | to believe | verb | — | imperfective; + Dat |
+| довіряти | /doʋiˈrʲɑtɪ/ | to trust | verb | — | imperfective; + Dat |
+| радити | /ˈrɑdɪtɪ/ | to advise | verb | — | imperfective; + Dat + Acc |
+| дозволяти | /dozʋoˈlʲɑtɪ/ | to allow, permit | verb | — | imperfective; + Dat + Inf |
+| забороняти | /zɑboroˈnʲɑtɪ/ | to forbid | verb | — | imperfective; + Dat + Inf |
+| відповідати | /ʋidpoʋiˈdɑtɪ/ | to answer, reply | verb | — | imperfective; + Dat |
+| телефонувати | /telefoˈnuʋɑtɪ/ | to phone, call | verb | — | imperfective; + Dat |
+| писати | /pɪˈsɑtɪ/ | to write | verb | — | imperfective; + Dat + Acc |
+| лист | /lɪst/ | letter | noun | m | plural: листи |
+
+---

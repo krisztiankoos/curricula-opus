@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Warm-up
 
 У попередньому модулі ви вивчили орудний відмінок з прийменником **з** для супроводу: з другом, з сестрою. Тепер час дізнатися про орудний відмінок **без прийменника**!
 
@@ -281,39 +279,6 @@ The маршрутка is a minibus — a uniquely post-Soviet phenomenon. It's 
 
 ---
 
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| автобусом | /ɑʋˈtobusɔm/ | by bus | adv | — | instrumental of автобус |
-| трамваєм | /trɑmˈʋɑjɛm/ | by tram | adv | — | instrumental of трамвай |
-| тролейбусом | /trɔˈlejbusɔm/ | by trolleybus | adv | — | instrumental of тролейбус |
-| метро | /mɛˈtrɔ/ | metro, by metro | noun | n | indeclinable |
-| машиною | /mɑˈʃɪnɔju/ | by car | adv | — | instrumental of машина |
-| таксі | /tɑˈksi/ | taxi, by taxi | noun | n | indeclinable |
-| поїздом | /ˈpɔjizdɔm/ | by train | adv | — | instrumental of поїзд |
-| літаком | /liˈtɑkɔm/ | by plane | adv | — | instrumental of літак |
-| ручкою | /ˈrutʃkɔju/ | with a pen | adv | — | instrumental of ручка |
-| олівцем | /ɔˈliʋt͡sɛm/ | with a pencil | adv | — | instrumental of олівець |
-| ножем | /ˈnɔʒɛm/ | with a knife | adv | — | instrumental of ніж |
-| виделкою | /ˈʋɪdɛlkɔju/ | with a fork | adv | — | instrumental of виделка |
-| ложкою | /ˈlɔʒkɔju/ | with a spoon | adv | — | instrumental of ложка |
-| ножицями | /nɔˈʒɪt͡sʲɑmɪ/ | with scissors | adv | — | instrumental of ножиці |
-| голкою | /ˈɦɔlkɔju/ | with a needle | adv | — | instrumental of голка |
-| молотком | /mɔlɔtˈkɔm/ | with a hammer | adv | — | instrumental of молоток |
-| пензлем | /ˈpɛnzlɛm/ | with a brush | adv | — | instrumental of пензель |
-| комп'ютером | /kɔmpjuˈtɛrɔm/ | with a computer | adv | — | instrumental of комп'ютер |
-| телефоном | /tɛlɛˈfɔnɔm/ | by phone | adv | — | instrumental of телефон |
-| очима | /ɔˈtʃɪmɑ/ | with eyes | adv | — | irregular instr. of очі |
-| руками | /ruˈkɑmɪ/ | with hands | adv | — | instrumental pl. of рука |
-| ногами | /noˈɦɑmɪ/ | with feet/legs | adv | — | instrumental pl. of нога |
-| головою | /ɦɔlɔˈʋɔju/ | with head | adv | — | instrumental of голова |
-| голосом | /ˈɦɔlɔsɔm/ | with voice, in voice | adv | — | instrumental of голос |
-| пошепки | /pɔˈʃɛpkɪ/ | in a whisper | adv | — | manner adverb |
-
----
-
 ## 📋 Summary
 
 У цьому модулі ви навчилися:
@@ -336,8 +301,6 @@ The маршрутка is a minibus — a uniquely post-Soviet phenomenon. It's 
   - **Bare Instrumental** = means, tools, manner (автобусом, ножем, голосом)
 
 Тепер ви можете розповісти, чим ви їдете на роботу, чим пишете, і як говорите! 🚌✏️🗣️
-
----
 
 ## 🎯 Activities
 
@@ -412,6 +375,96 @@ The маршрутка is a minibus — a uniquely post-Soviet phenomenon. It's 
   }
 ]} />
 
+### Instrumental Uses
+
+<Quiz questions={[
+  {
+    question: `Як сказати \"by bus\"?`,
+    options: [
+      { text: `з автобусом`, correct: false },
+      { text: `автобусом`, correct: true },
+      { text: `на автобус`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Я пишу ручкою.`, correct: true },
+      { text: `Я пишу з ручкою.`, correct: false },
+      { text: `Я пишу ручка.`, correct: false }
+    ]
+  },  {
+    question: `Коли використовуємо орудний БЕЗ прийменника?`,
+    options: [
+      { text: `Для засобу пересування та інструментів`, correct: true },
+      { text: `Для супроводу (з ким?)`, correct: false },
+      { text: `Для місця (де?)`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"with a knife\"?`,
+    options: [
+      { text: `ножем`, correct: true },
+      { text: `з ножем`, correct: false },
+      { text: `ножа`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Він говорить тихим голосом.`, correct: true },
+      { text: `Він говорить з тихим голосом.`, correct: false },
+      { text: `Він говорить тихий голос.`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"by train\"?`,
+    options: [
+      { text: `поїздом`, correct: true },
+      { text: `з поїздом`, correct: false },
+      { text: `на поїзд`, correct: false }
+    ]
+  },  {
+    question: `\"Метро\" в орудному відмінку...`,
+    options: [
+      { text: `не змінюється`, correct: true },
+      { text: `стає \"метром\"`, correct: false },
+      { text: `стає \"метрою\"`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"with eyes\"?`,
+    options: [
+      { text: `очима`, correct: true },
+      { text: `очами`, correct: false },
+      { text: `з очами`, correct: false }
+    ]
+  },  {
+    question: `Яке речення правильне?`,
+    options: [
+      { text: `Вона ріже хліб ножем.`, correct: true },
+      { text: `Вона ріже хліб з ножем.`, correct: false },
+      { text: `Вона ріже хліб ніж.`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"by email\"?`,
+    options: [
+      { text: `електронною поштою`, correct: true },
+      { text: `з електронною поштою`, correct: false },
+      { text: `електронна пошта`, correct: false }
+    ]
+  },  {
+    question: `\"Ножиці\" в орудному відмінку...`,
+    options: [
+      { text: `ножицями`, correct: true },
+      { text: `ножицею`, correct: false },
+      { text: `ножицям`, correct: false }
+    ]
+  },  {
+    question: `Як сказати \"in a whisper\"?`,
+    options: [
+      { text: `пошепки`, correct: true },
+      { text: `з пошепки`, correct: false },
+      { text: `пошепкою`, correct: false }
+    ]
+  }
+]} />
+
 ### Instrumental Rules
 
 <TrueFalse items={[
@@ -483,6 +536,53 @@ The маршрутка is a minibus — a uniquely post-Soviet phenomenon. It's 
   { jumbled: `вона / летить / до / Парижа / літаком`, answer: `Вона летить до Парижа літаком.` },
   { jumbled: `він / говорить / тихим / голосом`, answer: `Він говорить тихим голосом.` }
 ]} />
+
+### Fix the Instrumental
+
+<ErrorCorrection>
+  <ErrorCorrectionItem
+    sentence={`Я їду на роботу з автобусом.`}
+    errorWord={`з автобусом`}
+    correctForm={`автобусом`}
+    options={[`з автобусом`, `автобусом`, `автобус`, `на автобус`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона пише листа з ручкою.`}
+    errorWord={`з ручкою`}
+    correctForm={`ручкою`}
+    options={[`з ручкою`, `ручкою`, `ручка`, `ручку`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він ріже хліб з ніж.`}
+    errorWord={`з ніж`}
+    correctForm={`ножем`}
+    options={[`з ніж`, `ножем`, `ніж`, `ножа`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Ми їмо суп ложка.`}
+    errorWord={`ложка`}
+    correctForm={`ложкою`}
+    options={[`ложка`, `ложкою`, `ложки`, `ложку`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Вона летить до Парижа з літаком.`}
+    errorWord={`з літаком`}
+    correctForm={`літаком`}
+    options={[`з літаком`, `літаком`, `літак`, `літака`]}
+    explanation={``}
+  />
+  <ErrorCorrectionItem
+    sentence={`Він говорить тихим з голосом.`}
+    errorWord={`з голосом`}
+    correctForm={`голосом`}
+    options={[`з голосом`, `голосом`, `голос`, `голосу`]}
+    explanation={``}
+  />
+</ErrorCorrection>
 
 ### Complete the Story
 
@@ -587,3 +687,34 @@ The маршрутка is a minibus — a uniquely post-Soviet phenomenon. It's 
     ]
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| автобусом | /ɑʋˈtobusɔm/ | by bus | adv | — | instrumental of автобус |
+| трамваєм | /trɑmˈʋɑjɛm/ | by tram | adv | — | instrumental of трамвай |
+| тролейбусом | /trɔˈlejbusɔm/ | by trolleybus | adv | — | instrumental of тролейбус |
+| метро | /mɛˈtrɔ/ | metro, by metro | noun | n | indeclinable |
+| машиною | /mɑˈʃɪnɔju/ | by car | adv | — | instrumental of машина |
+| таксі | /tɑˈksi/ | taxi, by taxi | noun | n | indeclinable |
+| поїздом | /ˈpɔjizdɔm/ | by train | adv | — | instrumental of поїзд |
+| літаком | /liˈtɑkɔm/ | by plane | adv | — | instrumental of літак |
+| ручкою | /ˈrutʃkɔju/ | with a pen | adv | — | instrumental of ручка |
+| олівцем | /ɔˈliʋt͡sɛm/ | with a pencil | adv | — | instrumental of олівець |
+| ножем | /ˈnɔʒɛm/ | with a knife | adv | — | instrumental of ніж |
+| виделкою | /ˈʋɪdɛlkɔju/ | with a fork | adv | — | instrumental of виделка |
+| ложкою | /ˈlɔʒkɔju/ | with a spoon | adv | — | instrumental of ложка |
+| ножицями | /nɔˈʒɪt͡sʲɑmɪ/ | with scissors | adv | — | instrumental of ножиці |
+| голкою | /ˈɦɔlkɔju/ | with a needle | adv | — | instrumental of голка |
+| молотком | /mɔlɔtˈkɔm/ | with a hammer | adv | — | instrumental of молоток |
+| пензлем | /ˈpɛnzlɛm/ | with a brush | adv | — | instrumental of пензель |
+| комп'ютером | /kɔmpjuˈtɛrɔm/ | with a computer | adv | — | instrumental of комп'ютер |
+| телефоном | /tɛlɛˈfɔnɔm/ | by phone | adv | — | instrumental of телефон |
+| очима | /ɔˈtʃɪmɑ/ | with eyes | adv | — | irregular instr. of очі |
+| руками | /ruˈkɑmɪ/ | with hands | adv | — | instrumental pl. of рука |
+| ногами | /noˈɦɑmɪ/ | with feet/legs | adv | — | instrumental pl. of нога |
+| головою | /ɦɔlɔˈʋɔju/ | with head | adv | — | instrumental of голова |
+| голосом | /ˈɦɔlɔsɔm/ | with voice, in voice | adv | — | instrumental of голос |
+| пошепки | /pɔˈʃɛpkɪ/ | in a whisper | adv | — | manner adverb |
+
+---

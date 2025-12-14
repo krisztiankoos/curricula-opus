@@ -12,14 +12,12 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
 
-
-# Tomorrow - Future Tense
 
 :::note[Learning Goals]
 - Express future actions using буду + infinitive
@@ -37,38 +35,6 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 **All Tenses:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable conjugation chart
 :::
 
-
----
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| завтра | /ˈzɑwtrɑ/ | tomorrow | adv | - | - |
-| післязавтра | /pisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | adv | - | - |
-| наступного тижня | /nɑˈstupnoɦo ˈtɪʒnʲɑ/ | next week | phrase | - | genitive |
-| наступного місяця | /nɑˈstupnoɦo ˈmisʲɑtsʲɑ/ | next month | phrase | - | genitive |
-| наступного року | /nɑˈstupnoɦo ˈroku/ | next year | phrase | - | genitive |
-| скоро | /ˈskɔrɔ/ | soon | adv | - | - |
-| пізніше | /ˈpiznʲiʃe/ | later | adv | - | comparative |
-| потім | /ˈpɔtim/ | then, afterwards | adv | - | - |
-| згодом | /ˈzɦɔdɔm/ | eventually, later | adv | - | - |
-| буду | /ˈbudu/ | I will be | verb | - | future of бути |
-| збираюся | /zbɪˈrɑjusʲɑ/ | I am going to | verb | - | reflexive |
-| планую | /plɑˈnuju/ | I plan | verb | - | Class I |
-| хочу | /ˈxɔtʃu/ | I want | verb | - | irregular |
-| маю намір | /ˈmɑju ˈnɑmir/ | I intend | phrase | - | - |
-| сподіваюся | /spɔdʲiˈvɑjusʲɑ/ | I hope | verb | - | reflexive |
-| обіцяю | /ɔˈbitsʲɑju/ | I promise | verb | - | Class I |
-| спробую | /ˈsprɔbuju/ | I will try | verb | - | perfective |
-| постараюся | /pɔstɑˈrɑjusʲɑ/ | I will try (my best) | verb | - | perfective, reflexive |
-| мрію | /ˈmriju/ | I dream | verb | - | Class I |
-| думаю | /ˈdumɑju/ | I think | verb | - | Class I |
-| вирішив | /wɪˈriʃɪw/ | I decided (m) | verb | - | past, perfective |
-| вже | /wʒe/ | already | adv | - | - |
-| ще | /ʃtʃe/ | still, yet | adv | - | - |
-| ніколи | /nʲiˈkɔlɪ/ | never | adv | - | - |
-| обов'язково | /ɔbɔwjɑzˈkɔwɔ/ | definitely, must | adv | - | - |
 
 ---
 
@@ -280,7 +246,6 @@ All use genitive case with **наступного**!
 
 ---
 
-
 ## 📋 Підсумок (Summary)
 
 Ви навчилися говорити про майбутнє! (You've learned to talk about the future!)
@@ -312,8 +277,6 @@ All use genitive case with **наступного**!
 ---
 
 **Наступний урок:** Котра година? Дні тижня та місяці!
-
----
 
 ## 🎯 Activities
 
@@ -623,3 +586,34 @@ All use genitive case with **наступного**!
     explanation: `Incorrect! It means \"never.\"`
   }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| завтра | /ˈzɑwtrɑ/ | tomorrow | adv | - | - |
+| післязавтра | /pisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | adv | - | - |
+| наступного тижня | /nɑˈstupnoɦo ˈtɪʒnʲɑ/ | next week | phrase | - | genitive |
+| наступного місяця | /nɑˈstupnoɦo ˈmisʲɑtsʲɑ/ | next month | phrase | - | genitive |
+| наступного року | /nɑˈstupnoɦo ˈroku/ | next year | phrase | - | genitive |
+| скоро | /ˈskɔrɔ/ | soon | adv | - | - |
+| пізніше | /ˈpiznʲiʃe/ | later | adv | - | comparative |
+| потім | /ˈpɔtim/ | then, afterwards | adv | - | - |
+| згодом | /ˈzɦɔdɔm/ | eventually, later | adv | - | - |
+| буду | /ˈbudu/ | I will be | verb | - | future of бути |
+| збираюся | /zbɪˈrɑjusʲɑ/ | I am going to | verb | - | reflexive |
+| планую | /plɑˈnuju/ | I plan | verb | - | Class I |
+| хочу | /ˈxɔtʃu/ | I want | verb | - | irregular |
+| маю намір | /ˈmɑju ˈnɑmir/ | I intend | phrase | - | - |
+| сподіваюся | /spɔdʲiˈvɑjusʲɑ/ | I hope | verb | - | reflexive |
+| обіцяю | /ɔˈbitsʲɑju/ | I promise | verb | - | Class I |
+| спробую | /ˈsprɔbuju/ | I will try | verb | - | perfective |
+| постараюся | /pɔstɑˈrɑjusʲɑ/ | I will try (my best) | verb | - | perfective, reflexive |
+| мрію | /ˈmriju/ | I dream | verb | - | Class I |
+| думаю | /ˈdumɑju/ | I think | verb | - | Class I |
+| вирішив | /wɪˈriʃɪw/ | I decided (m) | verb | - | past, perfective |
+| вже | /wʒe/ | already | adv | - | - |
+| ще | /ʃtʃe/ | still, yet | adv | - | - |
+| ніколи | /nʲiˈkɔlɪ/ | never | adv | - | - |
+| обов'язково | /ɔbɔwjɑzˈkɔwɔ/ | definitely, must | adv | - | - |
+
+---

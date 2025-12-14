@@ -12,7 +12,7 @@ import TrueFalse from '@site/src/components/TrueFalse';
 import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
 import Anagram from '@site/src/components/Anagram';
-import ErrorCorrection from '@site/src/components/ErrorCorrection';
+import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
@@ -233,42 +233,6 @@ This isn't rude - it's genuine interest! Ukrainians value honesty and directness
 **Frequency:**
 - завжди (always), часто (often), звичайно (usually)
 - іноді (sometimes), рідко (rarely), ніколи (never)
-
----
-
-
-## 📚 Vocabulary
-
-| Word | IPA | English | POS | Gender | Note |
-|------|-----|---------|-----|--------|------|
-| що | /ʃt͡ʃɔ/ | what | pronoun | - | question word |
-| хто | /xtɔ/ | who | pronoun | - | question word |
-| де | /dɛ/ | where | adverb | - | location |
-| куди | /ˈkudɪ/ | where (to) | adverb | - | direction |
-| звідки | /ˈzʲʋidkɪ/ | where from | adverb | - | origin |
-| коли | /kɔˈlɪ/ | when | adverb | - | time |
-| чому | /t͡ʃɔˈmu/ | why | adverb | - | reason |
-| як | /jɑk/ | how | adverb | - | manner/state |
-| скільки | /ˈskilʲkɪ/ | how much/many | adverb | - | quantity |
-| який | /jɑˈkɪj/ | which, what kind | pronoun | m | яка (f), яке (n) |
-| чи | /t͡ʃɪ/ | whether, if | particle | - | yes/no question |
-| так | /tɑk/ | yes | particle | - | affirmative |
-| ні | /ni/ | no | particle | - | negative |
-| не | /nɛ/ | not | particle | - | negation |
-| ніколи | /nʲiˈkɔlɪ/ | never | adverb | - | requires "не" |
-| завжди | /ˈzɑʋʒdɪ/ | always | adverb | - | frequency |
-| часто | /ˈt͡ʃɑstɔ/ | often | adverb | - | frequency |
-| іноді | /iˈnɔdi/ | sometimes | adverb | - | frequency |
-| рідко | /ˈridkɔ/ | rarely | adverb | - | frequency |
-| звичайно | /zvɪˈt͡ʃɑjnɔ/ | usually | adverb | - | frequency |
-| йти | /jˈtɪ/ | to go (on foot) | verb | - | йду, йдеш, йде (M06) |
-| звати | /ˈzvɑtɪ/ | to call, name | verb | - | звуть = they call |
-| нічого | /nʲit͡ʃɔˈhɔ/ | nothing, it's okay | pronoun | - | reassuring phrase |
-| робити | /rɔˈbɪtɪ/ | to do, make | verb | - | роблю, робиш |
-| вивчати | /vɪvˈt͡ʃɑtɪ/ | to study, learn | verb | - | вивчаю, вивчаєш |
-| працювати | /prɑt͡sʲuˈvɑtɪ/ | to work | verb | - | працює, працюєш (M06) |
-| розуміти | /rɔzuˈmitɪ/ | to understand | verb | - | розумію, розумієш (M06) |
-| Київ | /ˈkɪjiu̯/ | Kyiv (capital) | noun | m | gen: Києва |
 
 ---
 
@@ -608,3 +572,35 @@ This isn't rude - it's genuine interest! Ukrainians value honesty and directness
   { jumbled: `працюю / не / Я / сьогодні`, answer: `Я не працюю сьогодні.` },
   { jumbled: `не / хочу / Я / чаю`, answer: `Я не хочу чаю.` }
 ]} />
+## 📚 Vocabulary
+
+| Word | IPA | English | POS | Gender | Note |
+|------|-----|---------|-----|--------|------|
+| що | /ʃt͡ʃɔ/ | what | pronoun | - | question word |
+| хто | /xtɔ/ | who | pronoun | - | question word |
+| де | /dɛ/ | where | adverb | - | location |
+| куди | /ˈkudɪ/ | where (to) | adverb | - | direction |
+| звідки | /ˈzʲʋidkɪ/ | where from | adverb | - | origin |
+| коли | /kɔˈlɪ/ | when | adverb | - | time |
+| чому | /t͡ʃɔˈmu/ | why | adverb | - | reason |
+| як | /jɑk/ | how | adverb | - | manner/state |
+| скільки | /ˈskilʲkɪ/ | how much/many | adverb | - | quantity |
+| який | /jɑˈkɪj/ | which, what kind | pronoun | m | яка (f), яке (n) |
+| чи | /t͡ʃɪ/ | whether, if | particle | - | yes/no question |
+| так | /tɑk/ | yes | particle | - | affirmative |
+| ні | /ni/ | no | particle | - | negative |
+| не | /nɛ/ | not | particle | - | negation |
+| ніколи | /nʲiˈkɔlɪ/ | never | adverb | - | requires "не" |
+| завжди | /ˈzɑʋʒdɪ/ | always | adverb | - | frequency |
+| часто | /ˈt͡ʃɑstɔ/ | often | adverb | - | frequency |
+| іноді | /iˈnɔdi/ | sometimes | adverb | - | frequency |
+| рідко | /ˈridkɔ/ | rarely | adverb | - | frequency |
+| звичайно | /zvɪˈt͡ʃɑjnɔ/ | usually | adverb | - | frequency |
+| йти | /jˈtɪ/ | to go (on foot) | verb | - | йду, йдеш, йде (M06) |
+| звати | /ˈzvɑtɪ/ | to call, name | verb | - | звуть = they call |
+| нічого | /nʲit͡ʃɔˈhɔ/ | nothing, it's okay | pronoun | - | reassuring phrase |
+| робити | /rɔˈbɪtɪ/ | to do, make | verb | - | роблю, робиш |
+| вивчати | /vɪvˈt͡ʃɑtɪ/ | to study, learn | verb | - | вивчаю, вивчаєш |
+| працювати | /prɑt͡sʲuˈvɑtɪ/ | to work | verb | - | працює, працюєш (M06) |
+| розуміти | /rɔzuˈmitɪ/ | to understand | verb | - | розумію, розумієш (M06) |
+| Київ | /ˈkɪjiu̯/ | Kyiv (capital) | noun | m | gen: Києва |

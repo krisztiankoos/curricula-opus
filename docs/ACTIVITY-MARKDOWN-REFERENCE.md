@@ -7,6 +7,54 @@ All 13 activity types are fully supported by the MDX generator.
 
 ---
 
+## REQUIRED Formatting Rules
+
+**These are enforced by the audit and WILL cause failures if missing:**
+
+### Quiz Activities
+- **Questions MUST be numbered** (1., 2., 3., etc.)
+- Each question needs 4 options with `- [x]` for correct, `- [ ]` for incorrect
+- Include explanation after options with `> explanation text`
+
+### Error-Correction Activities (A2+)
+- **MUST include `> [!explanation]`** after each item explaining the grammar rule
+- Format: error word → correct word → options → explanation
+```
+1. Sentence with error.
+   > [!error] wrong_word
+   > [!answer] correct_word
+   > [!options] wrong | correct | distractor1 | distractor2
+   > [!explanation] Grammar rule explanation here.
+```
+
+### Vocabulary Section
+- **Grammar terms used in explanations MUST be in vocabulary**
+- If you explain "Dative case" (давальний відмінок), add відмінок and давальний to vocab
+- Common grammar terms needed: відмінок, називний, родовий, давальний, знахідний, орудний, місцевий, кличний
+
+### Transliteration Rules by Level
+| Level | Body Text | Vocabulary | Examples |
+|-------|-----------|------------|----------|
+| A1.1 (M01-10) | Full: слово (slovo) | Full | Full |
+| A1.2 (M11-20) | Cyrillic only | First occurrence | Cyrillic only |
+| A1.3 (M21-34) | Cyrillic only | First occurrence | Cyrillic only |
+| A2+ | **NO transliteration** | None | None |
+
+**A2+ violation patterns to avoid:**
+- `слово (English)` - NO parenthetical translations in body text
+- `(hard)` / `(soft)` - Use "for hard stems" instead
+- Tables with English column headers in Ukrainian sections
+
+### Sentence Length Limits
+| Level | Max Words |
+|-------|-----------|
+| A1 | 12 words |
+| A2 | 15 words |
+| B1 | 20 words |
+| B2+ | No limit |
+
+---
+
 # Activities
 
 ## quiz: Multiple Choice Example

@@ -22,7 +22,6 @@ objectives:
   - "Learner can identify duration markers that trigger imperfective aspect"
 vocabulary_count: 20
 ---
-
 # Вид у минулому часі — Результат чи процес
 
 ## Diagnostic
@@ -383,33 +382,6 @@ Change each sentence from process-focused to result-focused (or vice versa):
 **Ключова ідея:** Коли вас цікавить **як довго** тривала дія — недоконаний. Коли вас цікавить **чи готово** — доконаний.
 
 **Порада для розповідей:** Imperfective = широкий план, фон. Perfective = крупний план, події.
-
----
-
-# Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| весь день | /wɛsʲ dɛnʲ/ | all day | присл. | impf trigger |
-| цілий тиждень | /ˈt͡sʲilɪj ˈtɪʒdɛnʲ/ | whole week | присл. | impf trigger |
-| протягом | /prɔˈtʲɑɦɔm/ | during, throughout | прийм. | + gen. |
-| годину | /ɦɔˈdɪnu/ | for an hour | ім. | acc. of duration |
-| хвилину | /xwɪˈlɪnu/ | for a minute | ім. | acc. of duration |
-| довго | /ˈdɔwɦɔ/ | for a long time | присл. | impf trigger |
-| недовго | /nɛˈdɔwɦɔ/ | for a short time | присл. | impf trigger |
-| весь час | /wɛsʲ t͡ʃɑs/ | all the time | присл. | impf trigger |
-| поступово | /pɔstuˈpɔwɔ/ | gradually | присл. | impf trigger |
-| швидко | /ˈʃwɪdkɔ/ | quickly | присл. | - |
-| повільно | /pɔˈwʲilʲnɔ/ | slowly | присл. | - |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | присл. | pf trigger |
-| вже | /wʒɛ/ | already | присл. | - |
-| ще | /ʃt͡ʃɛ/ | still, yet | присл. | - |
-| тільки що | /ˈtʲilʲkɪ ʃt͡ʃɔ/ | just now | присл. | pf trigger |
-| щойно | /ˈʃt͡ʃɔjnɔ/ | just | присл. | pf trigger |
-| досі | /dɔˈsʲi/ | until now, still | присл. | - |
-| поки | /ˈpɔkɪ/ | while | сполучн. | - |
-| під час | /pʲid t͡ʃɑs/ | during | прийм. | + gen. |
-| у цей час | /u t͡sɛj t͡ʃɑs/ | at this time | присл. | - |
 
 ---
 
@@ -1268,3 +1240,30 @@ Change each sentence from process-focused to result-focused (or vice versa):
 14. Вона швидко ___ їжу. (приготувати — результат)
     > [!answer] приготувала
     > [!options] приготувала | готувала | готує | приготує
+
+# Словник
+
+| Слово | Вимова | Переклад | ЧМ | Примітка |
+|-------|--------|----------|-----|----------|
+| весь день | /wɛsʲ dɛnʲ/ | all day | присл. | impf trigger |
+| цілий тиждень | /ˈt͡sʲilɪj ˈtɪʒdɛnʲ/ | whole week | присл. | impf trigger |
+| протягом | /prɔˈtʲɑɦɔm/ | during, throughout | прийм. | + gen. |
+| годину | /ɦɔˈdɪnu/ | for an hour | ім. | acc. of duration |
+| хвилину | /xwɪˈlɪnu/ | for a minute | ім. | acc. of duration |
+| довго | /ˈdɔwɦɔ/ | for a long time | присл. | impf trigger |
+| недовго | /nɛˈdɔwɦɔ/ | for a short time | присл. | impf trigger |
+| весь час | /wɛsʲ t͡ʃɑs/ | all the time | присл. | impf trigger |
+| поступово | /pɔstuˈpɔwɔ/ | gradually | присл. | impf trigger |
+| швидко | /ˈʃwɪdkɔ/ | quickly | присл. | - |
+| повільно | /pɔˈwʲilʲnɔ/ | slowly | присл. | - |
+| нарешті | /nɑˈrɛʃtʲi/ | finally | присл. | pf trigger |
+| вже | /wʒɛ/ | already | присл. | - |
+| ще | /ʃt͡ʃɛ/ | still, yet | присл. | - |
+| тільки що | /ˈtʲilʲkɪ ʃt͡ʃɔ/ | just now | присл. | pf trigger |
+| щойно | /ˈʃt͡ʃɔjnɔ/ | just | присл. | pf trigger |
+| досі | /dɔˈsʲi/ | until now, still | присл. | - |
+| поки | /ˈpɔkɪ/ | while | сполучн. | - |
+| під час | /pʲid t͡ʃɑs/ | during | прийм. | + gen. |
+| у цей час | /u t͡sɛj t͡ʃɑs/ | at this time | присл. | - |
+
+---

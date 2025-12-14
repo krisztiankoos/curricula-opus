@@ -3,12 +3,13 @@
 **Overall Status:** ❌ FAIL
 
 ## Recommendation
-**📝 UPDATE** (severity 15/100)
+**📝 UPDATE** (severity 30/100)
 
-- Immersion 18% off target
+- Borderline case (severity 30/100)
+- Immersion 22% off target (major rebalancing needed)
 
 ## Gates
-- **Words:** ✅ 1827/1250
+- **Words:** ✅ 1851/1250
 - **Activities:** ✅ 15/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -19,18 +20,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** ❌ 73.3% HIGH (target 50-55% (grammar))
+- **Immersion:** ❌ 71.9% HIGH (target 45-50% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид дієслова — Повна система** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Diagnostic** | ✅ | 215 | Included in Core |
-| **Analysis** | ⚪️ | 635 | Skipped |
-| **Deep Dive** | ✅ | 631 | Included in Core |
+| **Analysis** | ⚪️ | 647 | Skipped |
+| **Deep Dive** | ✅ | 643 | Included in Core |
 | **Practice** | ⚪️ | 256 | Skipped |
 | **Summary** | ✅ | 90 | Included in Core |
-| **Словник** | ⚪️ | 0 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Визначення виду** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Аспектні пари** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -47,3 +47,4 @@
 | **mark-the-words: Знайдіть доконані дієслова** | 🎮 | 9 | Activity (9 items, min 6) |
 | **dialogue-reorder: Розмова в офісі** | 🎮 | 8 | Activity (8 items, min 5) |
 | **fill-in: Контекстний вибір виду — продовження** | 🎮 | 14 | Activity (14 items, min 8) |
+| **Словник** | ⚪️ | 0 | Skipped |

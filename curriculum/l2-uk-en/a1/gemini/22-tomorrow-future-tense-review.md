@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 998/750
+- **Words:** ✅ 1114/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,8 +19,7 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Tomorrow - Future Tense** | ⚪️ | 74 | Skipped |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
+| **Intro/Narrative** | ✅ | 74 | Included in Core |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **The Compound Future Tense** | ⚪️ | 65 | Skipped |
 | **Expressing Plans and Intentions** | ⚪️ | 162 | Skipped |
@@ -28,6 +27,7 @@
 | **Useful Adverbs** | ⚪️ | 82 | Skipped |
 | **Examples in Context** | ✅ | 240 | Included in Core |
 | **Dialogues** | ✅ | 338 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 116 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Time Expressions** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Levels of Certainty** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -37,4 +37,4 @@
 | **quiz: Time Expressions** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Future Plans** | 🎮 | 6 | Activity (6 items, min 6) |
 | **true-false: Understanding Future Expressions** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 114 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

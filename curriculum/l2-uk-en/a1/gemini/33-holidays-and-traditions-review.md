@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 794/750
+- **Words:** ✅ 882/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,15 +19,15 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Holidays & Traditions** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 93 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Holiday Greetings** | ⚪️ | 53 | Skipped |
 | **Making Wishes** | ⚪️ | 7 | Skipped |
 | **When Is Your Birthday?** | ⚪️ | 12 | Skipped |
 | **Examples in Context** | ✅ | 186 | Included in Core |
 | **Dialogues** | ✅ | 443 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 88 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Holidays and Greetings** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Celebration Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -38,4 +38,4 @@
 | **quiz: Holiday Knowledge** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Holiday Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Holiday Facts** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 88 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

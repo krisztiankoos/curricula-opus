@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 888/750
+- **Words:** ✅ 970/750
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,15 +19,15 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Weather & Nature** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 102 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Impersonal Weather Expressions** | ⚪️ | 51 | Skipped |
 | **Asking About Weather** | ⚪️ | 0 | Skipped |
 | **Seasons** | ⚪️ | 0 | Skipped |
 | **Examples in Context** | ✅ | 239 | Included in Core |
 | **Dialogues** | ✅ | 496 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 82 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Weather Expressions** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Nature Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -39,4 +39,4 @@
 | **quiz: Animal or Plant?** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Weather Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Weather and Nature Facts** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 82 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

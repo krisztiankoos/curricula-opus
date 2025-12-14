@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Around the City** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 187 | Included in Core |
 | **Presentation** | ✅ | 695 | Included in Core |
 | **Practice** | ⚪️ | 393 | Skipped |
 | **Production** | ➖ | 239 | Excluded Type |
 | **Cultural Insight** | ✅ | 207 | Included in Core |
 | **Summary** | ✅ | 128 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Navigation Basics** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: City Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -39,3 +38,4 @@
 | **match-up: Question and Answer Pairs** | 🎮 | 8 | Activity (8 items, min 8) |
 | **true-false: Transportation Facts** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Transportation Phrases** | 🎮 | 12 | Activity (12 items, min 6) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

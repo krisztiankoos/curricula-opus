@@ -1,6 +1,11 @@
 # Audit Report: 03-aspect-past-result-process.md
 **Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1250
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## Recommendation
+**📝 UPDATE** (severity 15/100)
+
+- Immersion 16% off target
 
 ## Gates
 - **Words:** ✅ 1786/1250
@@ -14,18 +19,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 52.0% (target 50-55% (grammar))
+- **Immersion:** ❌ 70.5% HIGH (target 50-55% (grammar))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид у минулому часі — Результат чи процес** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Diagnostic** | ✅ | 210 | Included in Core |
 | **Analysis** | ⚪️ | 528 | Skipped |
 | **Deep Dive** | ✅ | 692 | Included in Core |
 | **Practice** | ⚪️ | 252 | Skipped |
 | **Summary** | ✅ | 104 | Included in Core |
-| **Словник** | ⚪️ | 0 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Процес чи результат** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Маркери та види** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -42,3 +46,4 @@
 | **mark-the-words: Знайдіть маркери тривалості** | 🎮 | 6 | Activity (6 items, min 6) |
 | **dialogue-reorder: Розмова в офісі** | 🎮 | 8 | Activity (8 items, min 5) |
 | **fill-in: Трансформація процес → результат** | 🎮 | 14 | Activity (14 items, min 8) |
+| **Словник** | ⚪️ | 0 | Skipped |

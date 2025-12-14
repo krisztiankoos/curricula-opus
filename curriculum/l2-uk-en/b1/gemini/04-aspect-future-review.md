@@ -14,18 +14,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.1% (target 50-55% (grammar))
+- **Immersion:** 🇺🇦 51.2% (target 50-55% (grammar))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид у майбутньому часі — Три способи** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Diagnostic** | ✅ | 164 | Included in Core |
 | **Analysis** | ⚪️ | 484 | Skipped |
 | **Deep Dive** | ✅ | 667 | Included in Core |
 | **Practice** | ⚪️ | 268 | Skipped |
 | **Summary** | ✅ | 105 | Included in Core |
-| **Словник** | ⚪️ | 0 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Three Future Forms** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Future Time Markers** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -43,3 +42,4 @@
 | **mark-the-words: Identify Future Forms** | 🎮 | 10 | Activity (10 items, min 6) |
 | **dialogue-reorder: Project Planning Discussion** | 🎮 | 10 | Activity (10 items, min 5) |
 | **fill-in: Choose the Correct Form** | 🎮 | 14 | Activity (14 items, min 8) |
+| **Словник** | ⚪️ | 0 | Skipped |

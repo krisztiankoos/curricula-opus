@@ -19,13 +19,12 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **The Locative - Where Things Are** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 210 | Included in Core |
 | **Presentation** | ✅ | 557 | Included in Core |
 | **Practice** | ⚪️ | 282 | Skipped |
 | **Production** | ➖ | 245 | Excluded Type |
 | **Summary** | ✅ | 128 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Where Is It?** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Places and Locations** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -36,3 +35,4 @@
 | **fill-in: Preposition Choice** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Nominative to Locative** | 🎮 | 12 | Activity (12 items, min 8) |
 | **quiz: Translation Practice** | 🎮 | 12 | Activity (12 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

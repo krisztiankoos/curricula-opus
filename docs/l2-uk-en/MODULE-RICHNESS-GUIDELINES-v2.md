@@ -11,15 +11,15 @@
 
 ### Content Requirements by Level (Instructional Core Only*)
 
-| Metric | A1 | A2 | B1-grammar | B1-vocab | B2-grammar | B2-vocab | C1 | C2 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Module Range** | M01-34 | M01-50 | **M01-45** | **M46-80** | **M01-40** | **M41-125** | M01-115 | M01-80 |
-| **Core Word Count** | **Graduated*** | **1000+** | **1250+** | **1250+** | **1500+** | **1500+** | **1750+** | **2000+** |
-| **Immersion (% Ukr)** | **10-40%*** | **40-50%** | **50-55%** | **65-70%** | **65-70%** | **80-85%** | 95% | 100% |
-| **Min Vocab Words** | 20+ | 25+ | **20+** | **30+** | **20+** | **30+** | 25+ | 25+ |
-| **Example Sentences** | 12+ | 18+ | 24+ | 24+ | 28+ | 28+ | 30+ | 32+ |
-| **Engagement Boxes** | 3+ | 4+ | 5+ | 5+ | 6+ | 6+ | 7+ | 8+ |
-| **Mini-Dialogues** | 2+ | 3+ | 4+ | 4+ | 4+ | 4+ | 5+ | 5+ |
+| Metric | A1 | A2 | B1 | B2 | C1 | C2 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Module Range** | M01-34 | M01-50 | **M01-80** | **M01-135** | M01-115 | M01-80 |
+| **Core Word Count** | **Graduated*** | **1000+** | **1250+** | **1500+** | **1750+** | **2000+** |
+| **Immersion (% Ukr)** | **10-40%*** | **40-55%*** | **45-70%*** | **65-90%*** | 95% | 100% |
+| **Min Vocab Words** | 20+ | 25+ | 20+/30+ | 20+/30+ | 25+ | 25+ |
+| **Example Sentences** | 12+ | 18+ | 24+ | 24+ | 30+ | 32+ |
+| **Engagement Boxes** | 3+ | 4+ | 5+ | 6+ | 7+ | 8+ |
+| **Mini-Dialogues** | 2+ | 3+ | 4+ | 4+ | 5+ | 5+ |
 
 *\*Instructional Core Definition: Counts ONLY Warm-up/Presentation (PPP); Diagnostic/Analysis/Deep Dive (TTT); or Introduction/Narrative/Analysis/Grammar in Context (CLIL). Excludes tables, practice drills, and activity instructions.*
 
@@ -39,13 +39,29 @@
 > *   **M11-M20 (First Sentences):** **25-35%** — SVO unlocked. Simple Ukrainian sentences and basic dialogues emerge. English for grammar theory.
 > *   **M21-M30 (Consolidation):** **35-40%** — Short exchanges, mini-scenarios. **MAX 40% for A1.** English for complex explanations only.
 
+> **Graduated Immersion (A2 Detail) — Phase-Based Progression:**
+> *   **A2.1 (M01-20):** **40-45%** — Core case endings (dative, instrumental). Maximized scaffolding for complex grammar.
+> *   **A2.2 (M21-40):** **45-50%** — Aspect basics, locative, more cases. Controlled comparison with increased Ukrainian.
+> *   **A2.3 (M41-50):** **50-55%** — Pre-B1 runway. Narrative density increases, complex sentences introduced.
+
+> **Graduated Immersion (B1 Detail) — Phase-Based Progression:**
+> *   **B1.1 (M01-10 Aspect):** **45-50%** — Aspect mastery phase. Transition from A2, heavy grammar theory in English.
+> *   **B1.2 (M11-20 Motion):** **50-55%** — Motion verbs with prefixes. Grammar theory still in English.
+> *   **B1.3-4 (M21-45 Complex/Advanced):** **55-60%** — Complex sentences, participles, advanced grammar. More Ukrainian in explanations.
+> *   **B1.5-6 (M46-65 Vocab I/II):** **60-65%** — Vocabulary expansion. Thematic content mostly in Ukrainian.
+> *   **B1.7-8 (M66-80 Ukraine/Skills):** **65-70%** — Cultural content, skills integration. Pre-B2 runway.
+
 > **Immersion Implementation Guide (A2-C2):**
 >
 > | Level | Target | Write IN UKRAINIAN | Write IN ENGLISH |
 > |-------|--------|-------------------|------------------|
-> | **A2** (M01-50) | **40-50%** | Dialogues, examples, simple instructions | Grammar theory (all 7 cases, aspect basics), complex explanations |
-> | **B1-grammar** (M01-45) | **50-55%** | Narratives, dialogues, examples, cultural notes | More English for grammar theory (aspect, motion verbs, complex sentences) |
-> | **B1-vocab** (M46-80) | **65-70%** | Narratives, dialogues, examples, cultural notes, simple explanations | Limited English for abstract concept definitions |
+> | **A2.1** (M01-20) | **40-45%** | Dialogues, examples, simple instructions | Grammar theory (cases), complex explanations |
+> | **A2.2** (M21-40) | **45-50%** | Dialogues, examples, short narratives | Grammar theory (aspect), complex explanations |
+> | **A2.3** (M41-50) | **50-55%** | Dialogues, narratives, simple explanations | Complex grammar only |
+> | **B1.1-2** (M01-20) | **45-55%** | Narratives, dialogues, examples, cultural notes | Grammar theory (aspect, motion verbs) |
+> | **B1.3-4** (M21-45) | **55-60%** | Narratives, dialogues, examples, simple grammar rules | Complex grammar theory only |
+> | **B1.5-6** (M46-65) | **60-65%** | Narratives, dialogues, all content | Abstract concept definitions only |
+> | **B1.7-8** (M66-80) | **65-70%** | Everything except complex theory | Limited English, pre-B2 transition |
 > | **B2-grammar** (M01-40) | **65-70%** | Narratives, dialogues, examples, simple grammar rules | Complex grammar theory (passive voice, participles, register rules) |
 > | **B2-vocab** (M41-125) | **80-85%** | Narratives, dialogues, all explanations in Ukrainian | Only historical/cultural context requiring English clarification |
 > | **C1** (M01-115) | **95%** | Everything except Language Link boxes | Only `🔗 Language Link` boxes for English-Ukrainian comparison |
@@ -237,6 +253,57 @@ Add `[stage: xxx]` to activity headers for visual indicators.
 | C2 | 45 min | 90 min | 2h+ | 30-35 |
 
 </critical>
+
+---
+
+## Module Types by Level
+
+> **Module types determine audit thresholds.** Use the appropriate type in frontmatter `focus:` field.
+
+### B1 Module Types
+
+| Type | Modules | Words | Vocab | Immersion | Focus |
+|------|---------|-------|-------|-----------|-------|
+| `B1-grammar` | 01-45 (excl. checkpoints) | 1250+ | 20+ | 50-55% | Grammar acquisition: aspect, motion verbs, complex sentences |
+| `B1-vocab` | 46-75 (excl. checkpoints) | 1250+ | 25-30 | 60-65% | Thematic vocabulary: regions, professions, media |
+| `B1-skills` | 76-79 | 1000+ | 15-20 | 55-60% | Receptive skills, reading/listening integration |
+| `B1-checkpoint` | 10, 20, 35, 45, 55, 65, 75 | 800+ | 10-15 | 60%+ | Review & self-assessment with CEFR rubrics |
+| `B1-capstone` | 80 | 1000+ | 10 | 50%+ | Final assessment with comprehensive rubric |
+
+### B2 Module Types
+
+| Type | Modules | Words | Vocab | Immersion | Focus |
+|------|---------|-------|-------|-----------|-------|
+| `B2-grammar` | 01-40 | 1500+ | 20+ | 65-70% | Passive voice, participles, register, word formation |
+| `B2-vocab` | 41-70 | 1500+ | 25-30 | 75-80% | Phraseology: proverbs, idioms, synonyms |
+| `B2-history` | 71-95 | 1400+ | 20+ | 80-85% | Ukrainian history narratives |
+| `B2-biography` | 96-120 | 1400+ | 20+ | 80-85% | Biographical narratives (24 notable Ukrainians) |
+| `B2-checkpoint` | 30, 40, 70, 95, 120 | 1000+ | 10-15 | 70-85% | Phase review & assessment |
+| `B2-capstone` | 121-135 | 1200+ | 10 | 85-90% | Research project & oral defense |
+
+### C1 Module Types
+
+| Type | Modules | Words | Vocab | Immersion | Focus |
+|------|---------|-------|-------|-----------|-------|
+| `C1-academic` | 01-20 | 1750+ | 24+ | 85-90% | Academic Ukrainian, morphology, syntax |
+| `C1-professional` | 21-35 | 1600+ | 24+ | 90-95% | Professional & social register |
+| `C1-stylistics` | 36-55 | 1600+ | 24+ | 90-95% | 5 functional styles, rhetoric, argumentation |
+| `C1-folk` | 56-80 | 1500+ | 24+ | 95%+ | Folk culture, arts, dialects, Surzhyk |
+| `C1-literature` | 81-115 | 1500+ | 24+ | 95%+ | Literary analysis: classics to contemporary |
+| `C1-checkpoint` | 20, 35, 55, 80, 95, 115 | 1200+ | 15 | 90-95% | Phase review & CEFR self-assessment |
+| `C1-capstone` | 111-112 | 1500+ | 15 | 95%+ | Research paper (2000+ words) & oral defense |
+
+### C2 Module Types
+
+| Type | Modules | Words | Vocab | Immersion | Focus |
+|------|---------|-------|-------|-----------|-------|
+| `C2-stylistic` | 01-20 | 1800+ | 25+ | 98%+ | 7 functional styles (incl. religious, epistolary) |
+| `C2-literary` | 21-40 | 1600+ | 25+ | 98%+ | Literary mastery, creative writing, criticism |
+| `C2-professional` | 41-60 | 1600+ | 25+ | 98%+ | Professional meta-skills (domain-agnostic) |
+| `C2-checkpoint` | 20, 40, 60, 66 | 1400+ | 15 | 98%+ | Phase review & assessment |
+| `C2-capstone` | 67-80 | 1400+ | 15-25 | 98%+ | Capstone project: 10,000-word paper OR literary work |
+
+**Strategic 2% English at C2:** Only for comparative linguistics ("Unlike English...") or untranslatable scholarly terms.
 
 ---
 

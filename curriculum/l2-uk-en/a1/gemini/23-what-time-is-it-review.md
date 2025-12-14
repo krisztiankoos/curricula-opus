@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1019/750
+- **Words:** ✅ 1102/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,9 +19,8 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **What Time Is It?** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 80 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Telling Time** | ⚪️ | 149 | Skipped |
 | **Days of the Week** | ⚪️ | 45 | Skipped |
@@ -29,6 +28,7 @@
 | **Time Prepositions** | ⚪️ | 68 | Skipped |
 | **Examples in Context** | ✅ | 345 | Included in Core |
 | **Dialogues** | ✅ | 308 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 83 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Days of the Week** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Months of the Year** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -39,4 +39,4 @@
 | **quiz: Months and Seasons** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Time Sentences** | 🎮 | 6 | Activity (6 items, min 6) |
 | **true-false: Calendar Knowledge** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 83 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

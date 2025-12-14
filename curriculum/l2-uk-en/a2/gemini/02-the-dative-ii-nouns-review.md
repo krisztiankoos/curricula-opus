@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1000/1000
+- **Words:** ✅ 1745/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,30 +14,32 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 42.5% (target 40-50%)
+- **Immersion:** 🇺🇦 44.5% (target 40-45% (A2.1))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 82 | Included in Core |
+| **Intro/Narrative** | ✅ | 165 | Included in Core |
+| **Warm-up** | ✅ | 106 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **The Dative Question: Кому? Чому?** | ⚪️ | 85 | Skipped |
-| **Masculine Noun Endings** | ⚪️ | 112 | Skipped |
-| **Feminine Noun Endings** | ⚪️ | 100 | Skipped |
+| **Masculine Noun Endings** | ⚪️ | 178 | Skipped |
+| **Feminine Noun Endings** | ⚪️ | 148 | Skipped |
 | **Neuter Noun Endings** | ⚪️ | 59 | Skipped |
 | **Plural Dative Endings** | ⚪️ | 122 | Skipped |
 | **Cultural Insight** | ✅ | 0 | Included in Core |
-| **Давати і Дарувати: The Culture of Giving** | ✅ | 100 | Included in Core |
+| **Давати і Дарувати: The Culture of Giving** | ✅ | 187 | Included in Core |
 | **Verbs That Love the Dative** | ⚪️ | 74 | Skipped |
-| **Practice** | ⚪️ | 0 | Skipped |
-| **Pattern Drill: Forming the Dative** | ✅ | 6 | Included in Core |
+| **Practice** | ⚪️ | 47 | Skipped |
+| **Pattern Drill: Forming the Dative** | ✅ | 18 | Included in Core |
 | **Complete the Sentence** | ⚪️ | 42 | Skipped |
-| **Mini-Dialogues** | ✅ | 80 | Included in Core |
-| **Reading Practice: Лист із Канади** | ✅ | 138 | Included in Core |
-| **Activities** | ➖ | 0 | Excluded Type |
+| **Mini-Dialogues** | ✅ | 183 | Included in Core |
+| **Reading Practice: Лист із Канади** | ✅ | 226 | Included in Core |
+| **Підсумок** | ✅ | 105 | Included in Core |
+| **Activities** | ➖ | 65 | Excluded Type |
 | **match-up: Nominative to Dative** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Dative Noun Forms** | 🎮 | 12 | Activity (12 items, min 8) |
-| **quiz: Dative or Not?** | 🎮 | 36 | Activity (36 items, min 8) |
+| **quiz: Dative or Not?** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Dative Rules** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Noun Genders in Dative** | 🎮 | 12 | Activity (12 items, min 8) |
 | **unjumble: Dative Sentences** | 🎮 | 6 | Activity (6 items, min 6) |
@@ -47,4 +49,3 @@
 | **mark-the-words: Find Dative Nouns** | 🎮 | 30 | Activity (30 items, min 6) |
 | **translate: English to Ukrainian** | 🎮 | 36 | Activity (36 items, min 6) |
 | **Vocabulary** | ➖ | 0 | Excluded Type |
-| **Summary** | ✅ | 105 | Included in Core |

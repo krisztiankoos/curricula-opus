@@ -3,39 +3,41 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1024/1000
+- **Words:** ✅ 1958/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/4
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 25/25
+- **Vocab:** ✅ 28/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.1% (target 40-50%)
+- **Immersion:** 🇺🇦 44.8% (target 40-45% (A2.1))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Intro/Narrative** | ✅ | 145 | Included in Core |
 | **Warm-up** | ✅ | 83 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
-| **Dative-Only Verbs** | ⚪️ | 236 | Skipped |
-| **Verbs with Dative + Accusative** | ⚪️ | 153 | Skipped |
-| **Verbs of Permission and Prohibition** | ⚪️ | 83 | Skipped |
-| **Cultural Insight** | ✅ | 0 | Included in Core |
-| **Дякувати — The Art of Thanking** | ⚪️ | 63 | Skipped |
-| **Вибачати і Пробачати** | ⚪️ | 133 | Skipped |
-| **Practice** | ⚪️ | 0 | Skipped |
+| **Dative-Only Verbs** | ⚪️ | 308 | Skipped |
+| **Verbs with Dative + Accusative** | ⚪️ | 223 | Skipped |
+| **Verbs of Permission and Prohibition** | ⚪️ | 150 | Skipped |
+| **Cultural Insight** | ✅ | 44 | Included in Core |
+| **Дякувати — The Art of Thanking** | ⚪️ | 156 | Skipped |
+| **Вибачати і Пробачати — Two Levels of Forgiveness** | ⚪️ | 271 | Skipped |
+| **Practice** | ⚪️ | 64 | Skipped |
 | **Dative-Only or Dative + Accusative?** | ⚪️ | 3 | Skipped |
 | **Complete the Pattern** | ✅ | 40 | Included in Core |
-| **Mini-Dialogues** | ✅ | 78 | Included in Core |
-| **Reading Practice: Щоденник вчительки** | ✅ | 152 | Included in Core |
-| **Activities** | ➖ | 0 | Excluded Type |
+| **Mini-Dialogues** | ✅ | 172 | Included in Core |
+| **Reading Practice: Щоденник вчительки** | ✅ | 217 | Included in Core |
+| **Підсумок** | ✅ | 82 | Included in Core |
+| **Activities** | ➖ | 55 | Excluded Type |
 | **match-up: Verb + Dative Pattern** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Choose the Correct Form** | 🎮 | 12 | Activity (12 items, min 8) |
-| **quiz: Dative Verb Patterns** | 🎮 | 36 | Activity (36 items, min 8) |
+| **quiz: Dative Verb Patterns** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Dative Verb Rules** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Verb Categories** | 🎮 | 12 | Activity (12 items, min 8) |
 | **unjumble: Dative Verb Sentences** | 🎮 | 6 | Activity (6 items, min 6) |
@@ -45,4 +47,3 @@
 | **mark-the-words: Find Dative Objects** | 🎮 | 19 | Activity (19 items, min 6) |
 | **translate: English to Ukrainian** | 🎮 | 36 | Activity (36 items, min 6) |
 | **Vocabulary** | ➖ | 0 | Excluded Type |
-| **Summary** | ✅ | 82 | Included in Core |

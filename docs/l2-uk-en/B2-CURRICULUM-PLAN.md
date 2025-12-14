@@ -2,8 +2,8 @@
 
 **Status:** 📝 PLANNED (Updated per State Standard 2024)
 **Modules:** 01-135 (135 modules)
-**Vocabulary Target:** ~3,375 new words (~25/module)
-**Cumulative Target:** ~7,900+ words after B2
+**Vocabulary Target:** ~2,900 new words (~22/module)
+**Cumulative Target:** ~6,200 words after B2
 **Immersion:** 20% English / 80% Ukrainian
 
 > **Note:** Folk Culture & Arts (25 modules) moved to C1 for better vocabulary balance.

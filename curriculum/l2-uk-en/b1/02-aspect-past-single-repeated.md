@@ -22,7 +22,6 @@ objectives:
   - "Learner can identify time markers that trigger each aspect"
 vocabulary_count: 20
 ---
-
 # Вид у минулому часі — Одноразові та повторювані дії
 
 ## Diagnostic
@@ -360,33 +359,6 @@ Transform each sentence from single event to habitual (or vice versa):
 **Ключова ідея:** Time markers are your best friends in aspect selection. When you see a frequency word (щодня, часто, завжди), reach for imperfective. When you see a singularity marker (одного разу, раптом, нарешті), use perfective.
 
 **Порада:** In stories, imperfective sets the background (what was happening), while perfective advances the action (what happened next).
-
----
-
-# Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| одного разу | /ɔdˈnɔɦɔ ˈrɑzu/ | once, one time | присл. | pf trigger |
-| того разу | /tɔˈɦɔ ˈrɑzu/ | that time | присл. | pf trigger |
-| якось | /ˈjɑkɔsʲ/ | somehow, once | присл. | pf trigger |
-| нарешті | /nɑˈrɛʃtʲi/ | finally | присл. | pf trigger |
-| раптом | /ˈrɑptɔm/ | suddenly | присл. | pf trigger |
-| вперше | /wˈpɛrʃɛ/ | for the first time | присл. | pf trigger |
-| востаннє | /wɔˈstɑnʲːɛ/ | for the last time | присл. | pf trigger |
-| нещодавно | /nɛʃt͡ʃɔˈdɑwnɔ/ | recently | присл. | - |
-| давно | /dɑwˈnɔ/ | long ago | присл. | - |
-| колись | /ˈkɔlɪsʲ/ | once, sometime | присл. | ambiguous |
-| завжди | /ˈzɑwʒdɪ/ | always | присл. | impf trigger |
-| часто | /ˈt͡ʃɑstɔ/ | often | присл. | impf trigger |
-| рідко | /ˈrʲidkɔ/ | rarely | присл. | impf trigger |
-| іноді | /iˈnɔdʲi/ | sometimes | присл. | impf trigger |
-| постійно | /pɔˈstʲijnɔ/ | constantly | присл. | impf trigger |
-| регулярно | /rɛɦuˈlʲarnɔ/ | regularly | присл. | impf trigger |
-| періодично | /pɛrʲiɔˈdɪt͡ʃnɔ/ | periodically | присл. | impf trigger |
-| щодня | /ʃt͡ʃɔˈdnʲɑ/ | daily | присл. | impf trigger |
-| щотижня | /ʃt͡ʃɔˈtɪʒnʲɑ/ | weekly | присл. | impf trigger |
-| щомісяця | /ʃt͡ʃɔˈmʲisʲɑt͡sʲɑ/ | monthly | присл. | impf trigger |
 
 ---
 
@@ -1250,3 +1222,30 @@ Transform each sentence from single event to habitual (or vice versa):
 14. Вона регулярно ___ на концерти. (ходити/піти)
     > [!answer] ходила
     > [!options] ходила | пішла | ходить | піде
+
+# Словник
+
+| Слово | Вимова | Переклад | ЧМ | Примітка |
+|-------|--------|----------|-----|----------|
+| одного разу | /ɔdˈnɔɦɔ ˈrɑzu/ | once, one time | присл. | pf trigger |
+| того разу | /tɔˈɦɔ ˈrɑzu/ | that time | присл. | pf trigger |
+| якось | /ˈjɑkɔsʲ/ | somehow, once | присл. | pf trigger |
+| нарешті | /nɑˈrɛʃtʲi/ | finally | присл. | pf trigger |
+| раптом | /ˈrɑptɔm/ | suddenly | присл. | pf trigger |
+| вперше | /wˈpɛrʃɛ/ | for the first time | присл. | pf trigger |
+| востаннє | /wɔˈstɑnʲːɛ/ | for the last time | присл. | pf trigger |
+| нещодавно | /nɛʃt͡ʃɔˈdɑwnɔ/ | recently | присл. | - |
+| давно | /dɑwˈnɔ/ | long ago | присл. | - |
+| колись | /ˈkɔlɪsʲ/ | once, sometime | присл. | ambiguous |
+| завжди | /ˈzɑwʒdɪ/ | always | присл. | impf trigger |
+| часто | /ˈt͡ʃɑstɔ/ | often | присл. | impf trigger |
+| рідко | /ˈrʲidkɔ/ | rarely | присл. | impf trigger |
+| іноді | /iˈnɔdʲi/ | sometimes | присл. | impf trigger |
+| постійно | /pɔˈstʲijnɔ/ | constantly | присл. | impf trigger |
+| регулярно | /rɛɦuˈlʲarnɔ/ | regularly | присл. | impf trigger |
+| періодично | /pɛrʲiɔˈdɪt͡ʃnɔ/ | periodically | присл. | impf trigger |
+| щодня | /ʃt͡ʃɔˈdnʲɑ/ | daily | присл. | impf trigger |
+| щотижня | /ʃt͡ʃɔˈtɪʒnʲɑ/ | weekly | присл. | impf trigger |
+| щомісяця | /ʃt͡ʃɔˈmʲisʲɑt͡sʲɑ/ | monthly | присл. | impf trigger |
+
+---

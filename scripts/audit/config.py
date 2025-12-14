@@ -270,8 +270,7 @@ LEVEL_CONFIG = {
         'min_types_unique': 4,
         'min_vocab': 25,
         'min_engagement': 4,
-        'min_immersion': 40,
-        'max_immersion': 50,
+        'immersion_graduated': True,  # Phase-based: A2.1 40-45%, A2.2 45-50%, A2.3 50-55%
         'transliteration_allowed': False,
         'priority_types': {'error-correction', 'unjumble', 'fill-in'}
     },
@@ -306,10 +305,45 @@ LEVEL_CONFIG = {
         'min_types_unique': 4,
         'min_vocab': 25,
         'min_engagement': 5,
+        'immersion_graduated': True,  # Phase-based: B1.1 45-50%, B1.2 50-55%, etc.
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'unjumble', 'error-correction'}
+    },
+    'B1-skills': {
+        'target_words': 1000,
+        'min_activities': 10,
+        'min_items_per_activity': 12,
+        'min_types_unique': 4,
+        'min_vocab': 15,
+        'min_engagement': 4,
+        'min_immersion': 55,
+        'max_immersion': 60,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'mark-the-words'}
+    },
+    'B1-checkpoint': {
+        'target_words': 800,
+        'min_activities': 10,
+        'min_items_per_activity': 12,
+        'min_types_unique': 4,
+        'min_vocab': 10,
+        'min_engagement': 3,
+        'min_immersion': 60,
+        'max_immersion': 70,
+        'transliteration_allowed': False,
+        'priority_types': {'quiz', 'fill-in', 'error-correction'}
+    },
+    'B1-capstone': {
+        'target_words': 1000,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 10,
+        'min_engagement': 3,
         'min_immersion': 50,
         'max_immersion': 70,
         'transliteration_allowed': False,
-        'priority_types': {'fill-in', 'unjumble', 'error-correction'}
+        'priority_types': {'quiz', 'fill-in', 'cloze', 'error-correction'}
     },
     'B2-grammar': {
         'target_words': 1500,
@@ -347,6 +381,54 @@ LEVEL_CONFIG = {
         'transliteration_allowed': False,
         'priority_types': {'fill-in', 'unjumble', 'error-correction'}
     },
+    'B2-history': {
+        'target_words': 1400,
+        'min_activities': 10,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 20,
+        'min_engagement': 5,
+        'min_immersion': 80,
+        'max_immersion': 85,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in', 'true-false', 'quiz'}
+    },
+    'B2-biography': {
+        'target_words': 1400,
+        'min_activities': 10,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 20,
+        'min_engagement': 5,
+        'min_immersion': 80,
+        'max_immersion': 85,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in', 'true-false', 'quiz'}
+    },
+    'B2-checkpoint': {
+        'target_words': 1000,
+        'min_activities': 15,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 10,
+        'min_engagement': 4,
+        'min_immersion': 70,
+        'max_immersion': 85,
+        'transliteration_allowed': False,
+        'priority_types': {'quiz', 'fill-in', 'error-correction', 'cloze'}
+    },
+    'B2-capstone': {
+        'target_words': 1200,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 10,
+        'min_engagement': 4,
+        'min_immersion': 85,
+        'max_immersion': 90,
+        'transliteration_allowed': False,
+        'priority_types': {'quiz', 'fill-in', 'cloze', 'error-correction'}
+    },
     'C1': {
         'target_words': 1750,
         'min_activities': 16,
@@ -354,22 +436,166 @@ LEVEL_CONFIG = {
         'min_types_unique': 4,
         'min_vocab': 25,
         'min_engagement': 7,
-        'min_immersion': 95,
-        'max_immersion': 100,
+        'min_immersion': 85,
+        'max_immersion': 95,
         'transliteration_allowed': False,
         'priority_types': {'fill-in', 'unjumble', 'error-correction'}
     },
-    'C2': {
-        'target_words': 2000,
+    'C1-academic': {
+        'target_words': 1750,
         'min_activities': 16,
         'min_items_per_activity': 18,
         'min_types_unique': 4,
-        'min_vocab': 25,
-        'min_engagement': 8,
-        'min_immersion': 95,  # Allow 5% for Latin/Greek scholarly terms
+        'min_vocab': 24,
+        'min_engagement': 6,
+        'min_immersion': 85,
+        'max_immersion': 90,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'error-correction'}
+    },
+    'C1-professional': {
+        'target_words': 1600,
+        'min_activities': 14,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 24,
+        'min_engagement': 6,
+        'min_immersion': 90,
+        'max_immersion': 95,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'translate'}
+    },
+    'C1-stylistics': {
+        'target_words': 1600,
+        'min_activities': 14,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 24,
+        'min_engagement': 6,
+        'min_immersion': 90,
+        'max_immersion': 95,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'error-correction', 'cloze'}
+    },
+    'C1-folk': {
+        'target_words': 1500,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 24,
+        'min_engagement': 5,
+        'min_immersion': 95,
         'max_immersion': 100,
         'transliteration_allowed': False,
-        'priority_types': {'fill-in', 'unjumble', 'error-correction'}
+        'priority_types': {'cloze', 'fill-in', 'mark-the-words'}
+    },
+    'C1-literature': {
+        'target_words': 1500,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 24,
+        'min_engagement': 5,
+        'min_immersion': 95,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in', 'quiz'}
+    },
+    'C1-checkpoint': {
+        'target_words': 1200,
+        'min_activities': 18,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 15,
+        'min_engagement': 4,
+        'min_immersion': 90,
+        'max_immersion': 95,
+        'transliteration_allowed': False,
+        'priority_types': {'quiz', 'fill-in', 'error-correction', 'cloze'}
+    },
+    'C1-capstone': {
+        'target_words': 1500,
+        'min_activities': 14,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 15,
+        'min_engagement': 4,
+        'min_immersion': 95,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in', 'error-correction'}
+    },
+    'C2': {
+        'target_words': 2000,
+        'min_activities': 14,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 25,
+        'min_engagement': 6,
+        'min_immersion': 95,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'error-correction'}
+    },
+    'C2-stylistic': {
+        'target_words': 1800,
+        'min_activities': 14,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 25,
+        'min_engagement': 6,
+        'min_immersion': 98,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'error-correction'}
+    },
+    'C2-literary': {
+        'target_words': 1600,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 25,
+        'min_engagement': 5,
+        'min_immersion': 98,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in', 'quiz'}
+    },
+    'C2-professional': {
+        'target_words': 1600,
+        'min_activities': 12,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 25,
+        'min_engagement': 5,
+        'min_immersion': 98,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'fill-in', 'cloze', 'translate'}
+    },
+    'C2-checkpoint': {
+        'target_words': 1400,
+        'min_activities': 16,
+        'min_items_per_activity': 16,
+        'min_types_unique': 4,
+        'min_vocab': 15,
+        'min_engagement': 4,
+        'min_immersion': 98,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'quiz', 'fill-in', 'error-correction', 'cloze'}
+    },
+    'C2-capstone': {
+        'target_words': 1400,
+        'min_activities': 10,
+        'min_items_per_activity': 14,
+        'min_types_unique': 4,
+        'min_vocab': 15,
+        'min_engagement': 4,
+        'min_immersion': 98,
+        'max_immersion': 100,
+        'transliteration_allowed': False,
+        'priority_types': {'cloze', 'fill-in'}
     },
     'LIT': {
         'target_words': 2000,
@@ -528,10 +754,48 @@ def get_a1_immersion_range(module_num: int) -> tuple[int, int]:
         return (35, 55)  # Consolidation - high Ukrainian content
 
 
+def get_a2_immersion_range(module_num: int) -> tuple[int, int]:
+    """Returns (min%, max%) for A2 based on module number.
+
+    Phase-based immersion progression per A2-CURRICULUM-PLAN.md:
+    - A2.1 (01-20): 40-45%
+    - A2.2 (21-40): 45-50%
+    - A2.3 (41-50): 50%+ (Pre-B1 runway)
+    """
+    if module_num <= 20:
+        return (40, 45)  # A2.1: Core case endings, maximized scaffolding
+    elif module_num <= 40:
+        return (45, 50)  # A2.2: Aspect drills, controlled comparison
+    else:
+        return (50, 55)  # A2.3: Pre-B1 runway, narrative density increases
+
+
+def get_b1_immersion_range(module_num: int) -> tuple[int, int]:
+    """Returns (min%, max%) for B1 based on module number.
+
+    Phase-based immersion progression per B1-CURRICULUM-PLAN.md:
+    - B1.1 (01-10 Aspect): 45-50%
+    - B1.2 (11-20 Motion): 50-55%
+    - B1.3-4 (21-45 Complex/Advanced): 55-60%
+    - B1.5-6 (46-65 Vocab): 60-65%
+    - B1.7-8 (66-80 Ukraine/Skills): 65-70%
+    """
+    if module_num <= 10:
+        return (45, 50)  # B1.1: Aspect mastery, transition from A2
+    elif module_num <= 20:
+        return (50, 55)  # B1.2: Motion verbs with prefixes
+    elif module_num <= 45:
+        return (55, 60)  # B1.3-4: Complex sentences, participles
+    elif module_num <= 65:
+        return (60, 65)  # B1.5-6: Vocabulary expansion
+    else:
+        return (65, 70)  # B1.7-8: Cultural content, pre-B2 runway
+
+
 def get_level_config(level_code: str, module_focus: str = None) -> dict:
     """Get configuration for a specific level, optionally with focus."""
     config_key = level_code
-    if module_focus and level_code in ('B1', 'B2'):
+    if module_focus and level_code in ('B1', 'B2', 'C1', 'C2'):
         specific_key = f"{level_code}-{module_focus}"
         if specific_key in LEVEL_CONFIG:
             config_key = specific_key

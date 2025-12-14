@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **At the Café** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 91 | Included in Core |
 | **Presentation** | ✅ | 455 | Included in Core |
 | **Practice** | ⚪️ | 272 | Skipped |
 | **Production** | ➖ | 103 | Excluded Type |
 | **Cultural Insight** | ✅ | 165 | Included in Core |
 | **Підсумок (Summary)** | ✅ | 79 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Café Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
 | **quiz: Waiter Questions** | 🎮 | 8 | Activity (8 items, min 8) |
@@ -36,3 +35,4 @@
 | **unjumble: Order the Café Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **fill-in: Polite vs Direct** | 🎮 | 12 | Activity (12 items, min 8) |
 | **quiz: Café Situations** | 🎮 | 12 | Activity (12 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

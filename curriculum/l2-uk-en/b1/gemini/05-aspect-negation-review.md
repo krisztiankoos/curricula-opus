@@ -1,6 +1,6 @@
 # Audit Report: 05-aspect-negation.md
 **Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1250
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
 
 ## Gates
 - **Words:** ✅ 2123/1250
@@ -14,18 +14,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.3% (target 50-55% (grammar))
+- **Immersion:** ❌ 48.7% LOW (target 50-55% (grammar))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид у запереченні — Особливості** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Diagnostic** | ✅ | 235 | Included in Core |
 | **Analysis** | ⚪️ | 497 | Skipped |
 | **Deep Dive** | ✅ | 847 | Included in Core |
 | **Practice** | ⚪️ | 413 | Skipped |
 | **Summary** | ✅ | 131 | Included in Core |
-| **Словник** | ⚪️ | 0 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Aspect in Negation** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Negation Vocabulary** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -43,3 +42,4 @@
 | **mark-the-words: Identify Imperfective Negations** | 🎮 | 6 | Activity (6 items, min 6) |
 | **dialogue-reorder: Phone Conversation** | 🎮 | 10 | Activity (10 items, min 5) |
 | **fill-in: Choose Correct Aspect** | 🎮 | 14 | Activity (14 items, min 8) |
+| **Словник** | ⚪️ | 0 | Skipped |

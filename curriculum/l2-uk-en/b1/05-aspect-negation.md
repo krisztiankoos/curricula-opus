@@ -23,7 +23,6 @@ objectives:
   - "Learner can apply correct aspect in negative imperatives"
 vocabulary_count: 20
 ---
-
 # Вид у запереченні — Особливості
 
 ## Diagnostic
@@ -408,33 +407,6 @@ Convert each positive command to a negative one with appropriate aspect:
 - вже не / більше не → залежить від контексту
 
 **Ключова ідея:** В запереченні українська мова "за замовчуванням" використовує недоконаний вид. Доконаний з'являється лише в особливих випадках — насамперед із "ще не".
-
----
-
-# Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| не | /nɛ/ | not | част. | - |
-| ніколи | /nʲiˈkɔlɪ/ | never | присл. | impf trigger |
-| ніде | /nʲiˈdɛ/ | nowhere | присл. | - |
-| ніяк | /nʲiˈjɑk/ | no way | присл. | - |
-| ніхто | /nʲixˈtɔ/ | nobody | займ. | - |
-| ніщо | /nʲiˈʃt͡ʃɔ/ | nothing | займ. | - |
-| жодний | /ˈʒɔdnɪj/ | not any, none | займ. | - |
-| зовсім | /zɔwˈsʲim/ | at all | присл. | - |
-| взагалі | /wzɑˈɦɑlʲi/ | in general, at all | присл. | - |
-| абсолютно | /ɑbsɔˈlʲutnɔ/ | absolutely | присл. | - |
-| ще не | /ʃt͡ʃɛ nɛ/ | not yet | присл. | + pf |
-| вже не | /wʒɛ nɛ/ | no longer | присл. | - |
-| більше не | /ˈbʲilʲʃɛ nɛ/ | no more | присл. | - |
-| поки не | /ˈpɔkɪ nɛ/ | until not yet | сполучн. | - |
-| майже не | /ˈmɑjʒɛ nɛ/ | almost not | присл. | - |
-| навряд чи | /nɑwˈrʲɑd t͡ʃɪ/ | hardly, unlikely | присл. | - |
-| заборонено | /zɑbɔˈrɔnɛnɔ/ | forbidden | присл. | - |
-| неможливо | /nɛmɔʒˈlɪwɔ/ | impossible | присл. | - |
-| недоцільно | /nɛdɔˈt͡sʲilʲnɔ/ | inadvisable | присл. | - |
-| марно | /ˈmɑrnɔ/ | in vain | присл. | - |
 
 ---
 
@@ -1371,3 +1343,30 @@ Convert each positive command to a negative one with appropriate aspect:
 14. Вони ще не ___ з відпустки. (return)
     > [!answer] повернулися
     > [!options] поверталися | повернулися | повертаються | повернуться
+
+# Словник
+
+| Слово | Вимова | Переклад | ЧМ | Примітка |
+|-------|--------|----------|-----|----------|
+| не | /nɛ/ | not | част. | - |
+| ніколи | /nʲiˈkɔlɪ/ | never | присл. | impf trigger |
+| ніде | /nʲiˈdɛ/ | nowhere | присл. | - |
+| ніяк | /nʲiˈjɑk/ | no way | присл. | - |
+| ніхто | /nʲixˈtɔ/ | nobody | займ. | - |
+| ніщо | /nʲiˈʃt͡ʃɔ/ | nothing | займ. | - |
+| жодний | /ˈʒɔdnɪj/ | not any, none | займ. | - |
+| зовсім | /zɔwˈsʲim/ | at all | присл. | - |
+| взагалі | /wzɑˈɦɑlʲi/ | in general, at all | присл. | - |
+| абсолютно | /ɑbsɔˈlʲutnɔ/ | absolutely | присл. | - |
+| ще не | /ʃt͡ʃɛ nɛ/ | not yet | присл. | + pf |
+| вже не | /wʒɛ nɛ/ | no longer | присл. | - |
+| більше не | /ˈbʲilʲʃɛ nɛ/ | no more | присл. | - |
+| поки не | /ˈpɔkɪ nɛ/ | until not yet | сполучн. | - |
+| майже не | /ˈmɑjʒɛ nɛ/ | almost not | присл. | - |
+| навряд чи | /nɑwˈrʲɑd t͡ʃɪ/ | hardly, unlikely | присл. | - |
+| заборонено | /zɑbɔˈrɔnɛnɔ/ | forbidden | присл. | - |
+| неможливо | /nɛmɔʒˈlɪwɔ/ | impossible | присл. | - |
+| недоцільно | /nɛdɔˈt͡sʲilʲnɔ/ | inadvisable | присл. | - |
+| марно | /ˈmɑrnɔ/ | in vain | присл. | - |
+
+---

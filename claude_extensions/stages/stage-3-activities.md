@@ -130,26 +130,45 @@ ___ я завжди читаю книгу.
 > 2: купує
 ```
 
-### Quiz
+### Quiz (MUST be numbered)
 ```markdown
 ## quiz: Title
 
-Яке слово означає "book"?
+1. Яке слово означає "book"?
+   - [ ] стіл
+   - [x] книга
+   - [ ] вікно
+   > книга = book
 
-- [ ] стіл
-- [x] книга
-- [ ] вікно
+2. Яке слово означає "table"?
+   - [x] стіл
+   - [ ] книга
+   - [ ] вікно
+   > стіл = table
 ```
 
-### Error-correction
+- **Questions MUST be numbered** (1., 2., 3., etc.)
+- Each question needs explanation after options
+
+### Error-correction (A2+ REQUIRED FORMAT)
 ```markdown
 ## error-correction: Title
 
-Я читаю книгу на стіл.
+1. Я читаю книгу на стіл.
+   > [!error] стіл
+   > [!answer] столі
+   > [!options] стіл | столі | столу | столом
+   > [!explanation] Locative case required after "на" for location. стіл → столі.
 
-> [!answer]
-> Я читаю книгу на столі.
+2. Вона читав книгу вчора.
+   > [!error] читав
+   > [!answer] читала
+   > [!options] читав | читала | читало | читали
+   > [!explanation] Past tense agrees with subject gender. Feminine subject → -ла ending.
 ```
+
+- **MUST include all 4 callouts**: `[!error]`, `[!answer]`, `[!options]`, `[!explanation]`
+- `[!explanation]` tells learners WHY - without it, audit fails
 
 ### Group-sort
 ```markdown
@@ -181,6 +200,8 @@ NEVER use words not taught yet.
 - [ ] Anagram uses spaces (A1 M01-10 only)
 - [ ] All answers are correct
 - [ ] Uses ONLY vocabulary from table + prior modules
+- [ ] **Quiz questions are numbered** (1., 2., 3., etc.)
+- [ ] **Error-correction has all 4 callouts** (A2+): `[!error]`, `[!answer]`, `[!options]`, `[!explanation]`
 
 ## DO NOT
 

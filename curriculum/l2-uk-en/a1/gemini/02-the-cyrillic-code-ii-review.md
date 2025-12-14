@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **The Cyrillic Code II** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 163 | Included in Core |
 | **Presentation** | ✅ | 561 | Included in Core |
 | **Practice** | ⚪️ | 194 | Skipped |
 | **Production** | ➖ | 70 | Excluded Type |
 | **Cultural Insight** | ✅ | 291 | Included in Core |
 | **Summary** | ✅ | 144 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Letter Sounds** | 🎮 | 12 | Activity (12 items, min 8) |
 | **quiz: Alphabet Knowledge** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -37,3 +36,4 @@
 | **match-up: Ukrainian Cities** | 🎮 | 8 | Activity (8 items, min 8) |
 | **match-up: Food Vocabulary** | 🎮 | 8 | Activity (8 items, min 8) |
 | **group-sort: Print vs Italic Confusion** | 🎮 | 17 | Activity (17 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

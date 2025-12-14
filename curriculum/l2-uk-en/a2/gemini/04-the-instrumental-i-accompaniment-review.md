@@ -3,42 +3,44 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1020/1000
+- **Words:** ✅ 1819/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 4/4
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 26/25
+- **Vocab:** ✅ 35/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 47.6% (target 40-50%)
+- **Immersion:** 🇺🇦 44.9% (target 40-45% (A2.1))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Intro/Narrative** | ✅ | 155 | Included in Core |
 | **Warm-up** | ✅ | 90 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **The Instrumental Question: Ким? Чим?** | ⚪️ | 106 | Skipped |
-| **Masculine Instrumental Endings** | ⚪️ | 119 | Skipped |
-| **Feminine Instrumental Endings** | ⚪️ | 74 | Skipped |
+| **Masculine Instrumental Endings** | ⚪️ | 188 | Skipped |
+| **Feminine Instrumental Endings** | ⚪️ | 120 | Skipped |
 | **Neuter Instrumental Endings** | ⚪️ | 60 | Skipped |
-| **Plural Instrumental Endings** | ⚪️ | 108 | Skipped |
-| **Cultural Insight** | ✅ | 0 | Included in Core |
-| **З/Із/Зі — The Preposition Variants** | ⚪️ | 65 | Skipped |
-| **Social Life with Instrumental** | ⚪️ | 58 | Skipped |
+| **Plural Instrumental Endings** | ⚪️ | 164 | Skipped |
+| **Cultural Insight** | ✅ | 35 | Included in Core |
+| **З/Із/Зі — The Preposition Variants** | ⚪️ | 134 | Skipped |
+| **Social Life with Instrumental** | ⚪️ | 75 | Skipped |
 | **Relationships and Instrumental** | ⚪️ | 91 | Skipped |
-| **Practice** | ⚪️ | 0 | Skipped |
+| **Practice** | ⚪️ | 61 | Skipped |
 | **Form the Instrumental** | ⚪️ | 3 | Skipped |
 | **Add the Preposition** | ⚪️ | 35 | Skipped |
-| **Mini-Dialogues** | ✅ | 80 | Included in Core |
-| **Reading Practice: Вечірка-сюрприз** | ✅ | 131 | Included in Core |
-| **Activities** | ➖ | 0 | Excluded Type |
+| **Mini-Dialogues** | ✅ | 161 | Included in Core |
+| **Reading Practice: Вечірка-сюрприз** | ✅ | 208 | Included in Core |
+| **Підсумок** | ✅ | 133 | Included in Core |
+| **Activities** | ➖ | 64 | Excluded Type |
 | **match-up: Nominative to Instrumental** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Instrumental Endings** | 🎮 | 12 | Activity (12 items, min 8) |
-| **quiz: Instrumental Forms** | 🎮 | 36 | Activity (36 items, min 8) |
+| **quiz: Instrumental Forms** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Instrumental Rules** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Gender by Instrumental Ending** | 🎮 | 15 | Activity (15 items, min 8) |
 | **unjumble: Instrumental Sentences** | 🎮 | 6 | Activity (6 items, min 6) |
@@ -48,4 +50,3 @@
 | **mark-the-words: Find Instrumental Forms** | 🎮 | 19 | Activity (19 items, min 6) |
 | **translate: English to Ukrainian** | 🎮 | 36 | Activity (36 items, min 6) |
 | **Vocabulary** | ➖ | 0 | Excluded Type |
-| **Summary** | ✅ | 133 | Included in Core |

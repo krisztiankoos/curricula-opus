@@ -19,6 +19,8 @@ from .config import (
     REQUIRED_METADATA,
     ACTIVITY_MIN_ITEMS,
     get_a1_immersion_range,
+    get_a2_immersion_range,
+    get_b1_immersion_range,
     get_level_config,
     get_word_target,
 )
@@ -596,11 +598,34 @@ def audit_module(file_path: str) -> bool:
     full_immersion_text = clean_for_immersion(body)
     immersion_score = calculate_immersion(full_immersion_text)
 
-    # Immersion targets
-    if config.get('immersion_graduated') and level_code == 'A1':
+    # Immersion targets (phase-based for A1, A2, and B1 - check level directly)
+    if level_code == 'A1':
         min_imm, max_imm = get_a1_immersion_range(module_num)
         phase_label = f" (M{module_num:02d})"
+    elif level_code == 'A2':
+        min_imm, max_imm = get_a2_immersion_range(module_num)
+        # Label the phase for clarity
+        if module_num <= 20:
+            phase_label = " (A2.1)"
+        elif module_num <= 40:
+            phase_label = " (A2.2)"
+        else:
+            phase_label = " (A2.3)"
+    elif level_code == 'B1':
+        min_imm, max_imm = get_b1_immersion_range(module_num)
+        # Label the phase for clarity
+        if module_num <= 10:
+            phase_label = " (B1.1 Aspect)"
+        elif module_num <= 20:
+            phase_label = " (B1.2 Motion)"
+        elif module_num <= 45:
+            phase_label = " (B1.3-4 Complex)"
+        elif module_num <= 65:
+            phase_label = " (B1.5-6 Vocab)"
+        else:
+            phase_label = " (B1.7-8 Ukraine)"
     else:
+        # B2, C1, C2 use type-based immersion from config
         min_imm = config.get('min_immersion', 0)
         max_imm = config.get('max_immersion', 100)
         phase_label = f" ({module_focus})" if module_focus else ""

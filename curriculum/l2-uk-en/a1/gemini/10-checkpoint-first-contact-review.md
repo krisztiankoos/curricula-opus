@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 2260/500 (>1500 may be too long)
+- **Words:** ⚠️ 2026/500 (>1500 may be too long)
 - **Activities:** ✅ 11/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,15 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Checkpoint - First Contact** | ➖ | 128 | Excluded Type |
+| **Intro/Narrative** | ✅ | 128 | Included in Core |
 | **Warm-up: Your А1.1 Journey** | ✅ | 230 | Included in Core |
 | **Presentation: What You've Mastered** | ✅ | 736 | Included in Core |
 | **Practice: Integrated Skills** | ⚪️ | 199 | Skipped |
 | **Cultural Insight: The Warmth of Ukrainian Greetings** | ✅ | 302 | Included in Core |
 | **Production: Your А1.1 Portfolio** | ➖ | 209 | Excluded Type |
 | **Summary: Checkpoint Status** | ➖ | 222 | Excluded Type |
-| **Self-Assessment Rubric** | ⚪️ | 178 | Skipped |
-| **Vocabulary** | ➖ | 56 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Reading Comprehension** | 🎮 | 8 | Activity (8 items, min 8) |
 | **match-up: Gender Recognition** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -40,3 +38,5 @@
 | **anagram: Cyrillic Practice** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Food & Drinks** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Negation Practice** | 🎮 | 12 | Activity (12 items, min 8) |
+| **Self-Assessment Rubric** | ⚪️ | 178 | Skipped |
+| **Vocabulary** | ➖ | 56 | Excluded Type |

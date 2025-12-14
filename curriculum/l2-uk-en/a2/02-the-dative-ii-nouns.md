@@ -25,14 +25,42 @@ objectives:
   - "Learner can use dative nouns with common verbs"
 vocabulary_count: 25
 ---
+# Introduction
+
+Module 01 introduced the seven Dative pronouns: мені, тобі, йому, їй, нам, вам, їм. Now it's time to learn how to form Dative endings for nouns — and there are different patterns for masculine, feminine, neuter, and plural nouns.
+
+**What you'll learn in this module:**
+- Masculine Dative endings (-ові/-еві or -у/-ю) and when to use each
+- Feminine Dative ending (-і) with consonant changes (г→з, к→ц, х→с)
+- Neuter Dative endings (-у/-ю)
+- Plural Dative endings (-ам/-ям) — the same for all genders!
+- Verbs that require Dative objects: допомагати, телефонувати, писати, давати
+
+**Why noun endings matter:**
+When you say "I give the book to my friend" in Ukrainian, the word "friend" must change from **друг** to **другові**. This ending change tells listeners that the friend is the recipient. Without the correct ending, your sentence would be grammatically incorrect or confusing.
+
+**The Dative question words:**
+- **Кому?** — To whom? (for people and animals)
+- **Чому?** — To what? (for things and abstract concepts)
 
 # Warm-up
 
-У попередньому модулі ви вивчили давальний відмінок займенників: мені, тобі, йому, їй, нам, вам, їм. Тепер час навчитися давального відмінка іменників!
+You already know the seven Dative pronouns: мені, тобі, йому, їй, нам, вам, їм. Now you'll learn how nouns change their endings in the Dative case.
 
 When you want to say "I give the book **to my friend**" or "She writes **to her mother**," you need dative noun forms. Every noun in Ukrainian changes its ending to show it's the recipient of an action.
 
-Think about it: Кому ви пишете листа? (To whom do you write a letter?) The answer will always be in the dative case.
+**Quick review of Dative pronouns:**
+| English | Ukrainian |
+|---------|-----------|
+| to me | мені |
+| to you (informal) | тобі |
+| to him | йому |
+| to her | їй |
+| to us | нам |
+| to you (formal/plural) | вам |
+| to them | їм |
+
+Now let's see how nouns work: Кому ви пишете листа? (To whom do you write a letter?) The answer will always be in the dative case — and the noun's ending will change based on its gender.
 
 ---
 
@@ -64,8 +92,20 @@ Masculine nouns have two possible endings: **-ові/-еві** for formal and li
 | Soft -ь | хлопець | хлопцеві | Дівчина дарує квіти хлопцеві. |
 | -й | герой | героєві | Люди дякують героєві. |
 
-> [!tip] Формальний чи розмовний?
+> [!tip] Formal vs. Colloquial: Which ending to use?
 > The ending **-ові/-еві** sounds more formal and is preferred in writing and official contexts. The ending **-у/-ю** is common in everyday speech and casual conversation. Use другові when writing a formal letter to a colleague. Use другу when chatting with friends. Both forms are grammatically correct, so choose based on the register you need.
+>
+> **When to use -ові/-еві — the more formal option:**
+> - Official documents and letters
+> - Academic writing
+> - Formal presentations
+> - Literature and published texts
+>
+> **When to use -у/-ю — the more casual option:**
+> - Text messages and emails to friends
+> - Casual conversation
+> - Everyday speech
+> - Informal contexts
 
 ### Animate vs. Inanimate
 
@@ -91,11 +131,13 @@ Feminine nouns are simpler than masculine ones — they only have one dative end
 | -я | Марія | Марії | Ми пишемо листа Марії. |
 | -я | земля | землі | Дощ потрібен землі. |
 
-> [!warning] Consonant Changes!
-> Some consonants change before **-і**:
+> [!warning] Consonant Changes — Very Important!
+> Some consonants change before **-і**. This is called palatalization — the consonant shifts to a softer variant. These changes are mandatory and predictable:
 > - г → з: подруга → подрузі
 > - к → ц: рука → руці, донька → доньці
-> - х → с: свекруха → свекрусі
+> - х → с: свекруха → свекрусі (mother-in-law)
+>
+> **Why does this happen?** Ukrainian phonology doesn't allow certain consonant combinations. The "softening" creates smoother pronunciation. You'll see similar patterns in other Slavic languages.
 
 Він дарує квіти подрузі. (He gives flowers to his girlfriend.)
 Лікар допомагає доньці. (The doctor helps the daughter.)
@@ -142,6 +184,12 @@ Good news: the plural is uniform across all genders! All nouns — masculine, fe
 
 ## Давати і Дарувати: The Culture of Giving
 
+Understanding the difference between давати and дарувати reveals something important about Ukrainian culture and its emphasis on meaningful gift-giving.
+
+**Давати (to give)** is a neutral, everyday verb. You can давати книгу (give a book), давати пораду (give advice), давати дозвіл (give permission). There's no emotional weight — it's simply transferring something to someone.
+
+**Дарувати (to give as a gift)** implies a heartfelt present, often with ceremony and emotional significance. When you дарувати something, you're not just handing it over — you're presenting it as a meaningful gift.
+
 In Ukrainian culture, the verbs давати (to give) and дарувати (to give as a gift) carry different weights. Давати is neutral — you can давати книгу, давати пораду, давати дозвіл. But дарувати implies a heartfelt gift, often with ceremony.
 
 Я даю тобі ручку. (Here's a pen — neutral transaction.)
@@ -177,9 +225,15 @@ Some verbs are "dative-hungry" — they always need a dative object:
 
 # Practice
 
+Now let's practice forming Dative noun endings. The key is to identify the noun's gender first, then apply the correct ending pattern. Remember:
+- Masculine: -ові/-еві for formal contexts OR -у/-ю for casual speech
+- Feminine: -і (with possible consonant changes)
+- Neuter: -у/-ю
+- Plural: -ам/-ям
+
 ## Pattern Drill: Forming the Dative
 
-Transform these nominative nouns to dative:
+Practice transforming these nominative nouns to their dative forms. Say each transformation out loud to build muscle memory:
 
 | Nominative | → | Dative |
 |------------|---|--------|
@@ -202,19 +256,29 @@ Fill in the dative form:
 
 ## Mini-Dialogues
 
-**У магазині подарунків:**
+The following dialogues demonstrate Dative nouns in everyday conversations. Notice how each dialogue naturally uses recipients (кому?) in the Dative case. Pay attention to the noun endings — can you identify which are masculine, feminine, or plural?
+
+**Dialogue 1: У магазині подарунків (At the Gift Shop)**
+
+This dialogue shows how to discuss gift recipients using Dative nouns like братові (to brother).
 — Кому ви шукаєте подарунок?
 — Братові. У нього день народження.
 — А що подобається вашому братові?
 — Йому подобаються книги про історію.
 
-**На пошті:**
+**Dialogue 2: На пошті (At the Post Office)**
+
+Sending packages requires telling the postal worker the recipient — always in Dative (бабусі = to grandma).
+
 — Кому ви надсилаєте посилку?
 — Бабусі. Вона живе в Одесі.
 — Що в посилці?
 — Теплий светр. Я завжди дарую бабусі щось тепле.
 
-**У кафе:**
+**Dialogue 3: У кафе (At the Café)**
+
+Friends texting at the café — notice подрузі (to a friend, feminine) with the consonant change г→з.
+
 — Чому ти не відповідаєш телефону?
 — Я пишу повідомлення подрузі.
 — Ти завжди пишеш подрузі так довго?
@@ -223,6 +287,17 @@ Fill in the dative form:
 ---
 
 # Reading Practice: Лист із Канади
+
+This letter from Canada demonstrates Dative nouns in a natural context. Before reading, note that every person who receives an action (writing, helping, explaining, calling, sending) will be in the Dative case.
+
+**Reading strategy:** As you read, underline or highlight every Dative noun. Then answer the comprehension questions — notice that every answer is a Dative form!
+
+**Vocabulary preview:**
+- лист — letter
+- онука — granddaughter
+- пацієнт — patient
+- учень — student (plural: учні → учням in Dative)
+- сумувати за — to miss (someone)
 
 > Дорога бабусю!
 >
@@ -248,7 +323,41 @@ Fill in the dative form:
 
 ---
 
+# Підсумок
+
+У цьому модулі ви навчилися:
+
+- **Masculine dative endings**: -ові/-еві for writing, -у/-ю for speech
+  - друг → другові/другу
+  - вчитель → вчителеві
+
+- **Feminine dative ending**: -і (with consonant changes г→з, к→ц, х→с)
+  - сестра → сестрі
+  - подруга → подрузі
+  - донька → доньці
+
+- **Neuter dative ending**: -у/-ю
+  - місто → місту
+  - море → морю
+
+- **Plural dative ending**: -ам/-ям (all genders)
+  - друзі → друзям
+  - сестри → сестрам
+  - міста → містам
+
+- **Dative verbs**: допомагати, заважати, подобатися, вірити, довіряти, телефонувати, писати, давати, показувати, пояснювати, радити
+
+Тепер ви можете казати, кому ви допомагаєте, пишете, телефонуєте, і даруєте подарунки! 🎁
+
 # Activities
+
+The following activities will help you master Dative noun endings through various exercise types. Progress from matching (recognition) through translation (production) to build your skills systematically.
+
+**Success tip:** Before choosing an answer, identify the noun's gender and apply the appropriate ending rule:
+- Masculine → -ові or -у
+- Feminine → -і (watch for г→з, к→ц, х→с)
+- Neuter → -у/-ю
+- Plural → -ам/-ям
 
 ## match-up: Nominative to Dative
 
@@ -319,7 +428,7 @@ Fill in the dative form:
 
 ## quiz: Dative or Not?
 
-Яке речення правильне?
+1. Яке речення правильне?
 
 - [ ] Я даю книгу друг.
 - [x] Я даю книгу другові.
@@ -327,7 +436,7 @@ Fill in the dative form:
 
 ---
 
-Яке речення правильне?
+2. Яке речення правильне?
 
 - [ ] Вона телефонує мама.
 - [ ] Вона телефонує маму.
@@ -335,7 +444,7 @@ Fill in the dative form:
 
 ---
 
-Яке речення правильне?
+3. Яке речення правильне?
 
 - [x] Ми пишемо батькам.
 - [ ] Ми пишемо батьки.
@@ -343,7 +452,7 @@ Fill in the dative form:
 
 ---
 
-Як сказати "She helps her sister"?
+4. Як сказати "She helps her sister"?
 
 - [ ] Вона допомагає сестра.
 - [ ] Вона допомагає сестру.
@@ -351,7 +460,7 @@ Fill in the dative form:
 
 ---
 
-Яка форма правильна для "to the city"?
+5. Яка форма правильна для "to the city"?
 
 - [ ] місто
 - [x] місту
@@ -359,7 +468,7 @@ Fill in the dative form:
 
 ---
 
-Як сказати "I believe my friend"?
+6. Як сказати "I believe my friend"?
 
 - [ ] Я вірю друг.
 - [x] Я вірю другові.
@@ -367,7 +476,7 @@ Fill in the dative form:
 
 ---
 
-Яке речення правильне?
+7. Яке речення правильне?
 
 - [x] Він показує фото вчителеві.
 - [ ] Він показує фото вчитель.
@@ -375,7 +484,7 @@ Fill in the dative form:
 
 ---
 
-Як сказати "They write to their parents"?
+8. Як сказати "They write to their parents"?
 
 - [ ] Вони пишуть батьки.
 - [ ] Вони пишуть батьків.
@@ -383,7 +492,7 @@ Fill in the dative form:
 
 ---
 
-Яка форма "подруга" в давальному відмінку?
+9. Яка форма "подруга" в давальному відмінку?
 
 - [ ] подругі
 - [x] подрузі
@@ -391,7 +500,7 @@ Fill in the dative form:
 
 ---
 
-Як сказати "The doctor explains to the patient"?
+10. Як сказати "The doctor explains to the patient"?
 
 - [ ] Лікар пояснює пацієнт.
 - [ ] Лікар пояснює пацієнта.
@@ -399,7 +508,7 @@ Fill in the dative form:
 
 ---
 
-Яка форма "донька" в давальному відмінку?
+11. Яка форма "донька" в давальному відмінку?
 
 - [ ] доньки
 - [ ] доньку
@@ -407,7 +516,7 @@ Fill in the dative form:
 
 ---
 
-Яке речення правильне?
+12. Яке речення правильне?
 
 - [x] Це личить твоєму імені.
 - [ ] Це личить твоє ім'я.
@@ -507,31 +616,37 @@ Fill in the dative form:
    > [!error] мама
    > [!answer] мамі
    > [!options] мама | мамі | маму | мамою
+   > [!explanation] The verb «допомагати» requires Dative. Feminine nouns ending in -а take -і: мама → мамі.
 
 2. Він телефонує друг кожного дня.
    > [!error] друг
    > [!answer] другові
    > [!options] друг | другові | друга | другом
+   > [!explanation] The verb «телефонувати» requires Dative. Masculine nouns take -ові/-еві: друг → другові.
 
 3. Ми пишемо лист бабуся.
    > [!error] бабуся
    > [!answer] бабусі
    > [!options] бабуся | бабусі | бабусю | бабусею
+   > [!explanation] The verb «писати» requires Dative for recipients. Feminine -я nouns take -і: бабуся → бабусі.
 
 4. Вона показує фото сестра.
    > [!error] сестра
    > [!answer] сестрі
    > [!options] сестра | сестрі | сестру | сестрою
+   > [!explanation] The verb «показувати» requires Dative for recipients. Feminine -а nouns take -і: сестра → сестрі.
 
 5. Батько дарує подарунок дочка.
    > [!error] дочка
    > [!answer] доньці
    > [!options] дочка | доньці | дочку | дочкою
+   > [!explanation] The verb «дарувати» requires Dative. Дочка has stem change: дочка → доньці (к→ц before -і).
 
 6. Лікар пояснює все пацієнт.
    > [!error] пацієнт
    > [!answer] пацієнтові
    > [!options] пацієнт | пацієнтові | пацієнта | пацієнтом
+   > [!explanation] The verb «пояснювати» requires Dative. Masculine nouns take -ові: пацієнт → пацієнтові.
 
 ## cloze: Complete the Dialogue
 > Fill in the blanks with the correct words.
@@ -721,7 +836,7 @@ He writes to the teacher.
 | давати | /dɑˈʋɑtɪ/ | to give | verb | — | imperfective; + Dat + Acc |
 | дарувати | /dɑruˈʋɑtɪ/ | to gift, give as present | verb | — | imperfective; + Dat + Acc |
 | посилати | /posɪˈlɑtɪ/ | to send | verb | — | imperfective; + Dat + Acc |
-| надсилати | /nɑdsɪˈlɑtɪ/ | to send (formal) | verb | — | imperfective; + Dat + Acc |
+| надсилати | /nɑdsɪˈlɑtɪ/ | to send | verb | — | formal; impf; + Dat + Acc |
 | показувати | /pokɑˈzuʋɑtɪ/ | to show | verb | — | imperfective; + Dat + Acc |
 | пояснювати | /pojɑˈsnjuʋɑtɪ/ | to explain | verb | — | imperfective; + Dat + Acc |
 | розповідати | /rɔzpoʋiˈdɑtɪ/ | to tell, narrate | verb | — | imperfective; + Dat + Acc |
@@ -745,29 +860,3 @@ He writes to the teacher.
 | лист | /lɪst/ | letter | noun | m | plural: листи |
 
 ---
-
-# Summary
-
-У цьому модулі ви навчилися:
-
-- **Masculine dative endings**: -ові/-еві for writing, -у/-ю for speech
-  - друг → другові/другу
-  - вчитель → вчителеві
-
-- **Feminine dative ending**: -і (with consonant changes г→з, к→ц, х→с)
-  - сестра → сестрі
-  - подруга → подрузі
-  - донька → доньці
-
-- **Neuter dative ending**: -у/-ю
-  - місто → місту
-  - море → морю
-
-- **Plural dative ending**: -ам/-ям (all genders)
-  - друзі → друзям
-  - сестри → сестрам
-  - міста → містам
-
-- **Dative verbs**: допомагати, заважати, подобатися, вірити, довіряти, телефонувати, писати, давати, показувати, пояснювати, радити
-
-Тепер ви можете казати, кому ви допомагаєте, пишете, телефонуєте, і даруєте подарунки! 🎁

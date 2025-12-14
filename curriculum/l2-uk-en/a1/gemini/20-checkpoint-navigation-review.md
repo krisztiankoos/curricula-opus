@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 2501/750 (>1750 may be too long)
+- **Words:** ⚠️ 2317/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Checkpoint - Navigation** | ➖ | 0 | Excluded Type |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 223 | Included in Core |
 | **Presentation** | ✅ | 1136 | Included in Core |
 | **Practice** | ⚪️ | 207 | Skipped |
 | **Production** | ➖ | 205 | Excluded Type |
 | **Cultural Insight** | ✅ | 349 | Included in Core |
 | **Summary** | ✅ | 197 | Included in Core |
-| **Self-Assessment Rubric** | ⚪️ | 184 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **fill-in: Case Mastery - Accusative** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Case Mastery - Locative** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -38,4 +37,5 @@
 | **unjumble: Building Sentences - Cases in Context** | 🎮 | 12 | Activity (12 items, min 6) |
 | **unjumble: Real Dialogues - Navigation & Restaurant** | 🎮 | 12 | Activity (12 items, min 6) |
 | **match-up: City Vocabulary - Navigation** | 🎮 | 12 | Activity (12 items, min 8) |
+| **Self-Assessment Rubric** | ⚪️ | 184 | Skipped |
 | **Vocabulary** | ➖ | 0 | Excluded Type |

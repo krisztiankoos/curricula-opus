@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1041/750
+- **Words:** ✅ 1064/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,9 +19,8 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Prepositions III** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 84 | Included in Core |
-| **Vocabulary** | ➖ | 52 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **The Three Key Questions** | ⚪️ | 72 | Skipped |
 | **Location: Де? (Where?)** | ⚪️ | 53 | Skipped |
@@ -30,6 +29,7 @@
 | **Location vs Direction Pairs** | ⚪️ | 0 | Skipped |
 | **Examples in Context** | ✅ | 192 | Included in Core |
 | **Dialogues** | ✅ | 472 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 75 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Question Words** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Location vs Direction** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -40,4 +40,4 @@
 | **quiz: Which Preposition?** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Preposition Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Preposition Rules** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 75 | Included in Core |
+| **Vocabulary** | ➖ | 52 | Excluded Type |

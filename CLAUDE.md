@@ -44,6 +44,16 @@ If Claude cannot reliably follow a documented process, it should:
 3. NOT improvise and pretend it followed the process
 
 The user switched to Gemini 2.5 Pro because it follows orders. Capability without reliability is worthless.
+
+### A2 Modules 01-05 Issues (December 2024)
+Every single A2 module had the same issues that required manual fixing:
+1. **Quiz questions not numbered** - 5/5 modules
+2. **Error-correction missing `[!explanation]`** - 5/5 modules
+3. **Grammar terms not in vocabulary** - 4/5 modules
+4. **Transliteration in A2 body text** - 3/5 modules
+5. **Sentences exceeding 15-word limit** - 2/5 modules
+
+These were all documented requirements that were ignored during creation.
 </critical>
 
 ---
@@ -53,7 +63,7 @@ The user switched to Gemini 2.5 Pro because it follows orders. Capability withou
 <critical>
 **EVERY time you write or rewrite a module:**
 
-1. **READ `docs/l2-uk-en/module-prompt.md`** - Grammar constraints, format rules, review checklist.
+1. **READ `claude_extensions/quick-ref/{LEVEL}.md`** - Level-specific targets, activity mix, critical requirements.
 2. **READ `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md`** - Extract the EXACT vocabulary list and grammar scope.
 3. **READ `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`** - Activity counts, sentence complexity, engagement boxes.
 4. **WRITE the module** using ONLY the vocabulary and grammar from those documents.

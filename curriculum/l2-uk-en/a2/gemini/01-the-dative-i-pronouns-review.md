@@ -1,43 +1,34 @@
 # Audit Report: 01-the-dative-i-pronouns.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ❌ FAIL
-
-## PEDAGOGICAL VIOLATIONS
-- **[METALANGUAGE]** Metalanguage terms used but not in vocabulary: кличний, родовий, відмінок, іменник, дієслово
-  - FIX: Add these grammar terms to vocabulary with translations, or use English equivalents.
-
-## Recommendation
-**📝 UPDATE** (severity 25/100)
-
-- 1 pedagogical violations (minor)
-- Immersion 11% off target
+**Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1022/1000
+- **Words:** ✅ 1776/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
 - **Priority:** ✅ Priority types used
 - **Engagement:** ✅ 5/4
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 26/25
+- **Vocab:** ✅ 35/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ❌ 1 violations
-- **Immersion:** ❌ 61.2% HIGH (target 40-50%)
+- **Pedagogy:** ✅ Level-appropriate
+- **Immersion:** 🇺🇦 44.1% (target 40-45% (A2.1))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Давальний відмінок I — Займенники** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Introduction** | ✅ | 160 | Included in Core |
 | **Вступ** | ⚪️ | 99 | Skipped |
-| **Presentation** | ✅ | 330 | Included in Core |
-| **Cultural Insight** | ✅ | 279 | Included in Core |
-| **Reading Practice: Листівка з Одеси** | ✅ | 143 | Included in Core |
-| **Practice** | ⚪️ | 55 | Skipped |
-| **Production** | ➖ | 46 | Excluded Type |
+| **Presentation** | ✅ | 462 | Included in Core |
+| **Cultural Insight** | ✅ | 452 | Included in Core |
+| **Reading Practice: Листівка з Одеси** | ✅ | 244 | Included in Core |
+| **Practice** | ⚪️ | 137 | Skipped |
+| **Production** | ➖ | 152 | Excluded Type |
 | **Підсумок** | ✅ | 70 | Included in Core |
-| **Activities** | ➖ | 0 | Excluded Type |
+| **Activities** | ➖ | 84 | Excluded Type |
 | **match-up: Nominative to Dative** | 🎮 | 8 | Activity (8 items, min 8) |
 | **group-sort: Pronoun Cases [stage: recognition]** | 🎮 | 21 | Activity (21 items, min 8) |
 | **true-false: Dative Rules [stage: discrimination]** | 🎮 | 12 | Activity (12 items, min 8) |

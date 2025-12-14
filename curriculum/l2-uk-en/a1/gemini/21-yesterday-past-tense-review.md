@@ -19,11 +19,10 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Yesterday - Past Tense** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 164 | Included in Core |
 | **Presentation** | ✅ | 708 | Included in Core |
 | **Підсумок (Summary)** | ✅ | 92 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Past Tense Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Gender Endings** | 🎮 | 21 | Activity (21 items, min 8) |
@@ -33,3 +32,4 @@
 | **true-false: Past Tense Facts** | 🎮 | 8 | Activity (8 items, min 8) |
 | **fill-in: Transform to Past Tense** | 🎮 | 8 | Activity (8 items, min 8) |
 | **quiz: Time Expressions** | 🎮 | 8 | Activity (8 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

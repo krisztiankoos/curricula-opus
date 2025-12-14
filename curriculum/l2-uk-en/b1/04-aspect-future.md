@@ -23,7 +23,6 @@ objectives:
   - "Learner can select the appropriate future form based on aspect and register"
 vocabulary_count: 20
 ---
-
 # Вид у майбутньому часі — Три способи
 
 ## Diagnostic
@@ -405,33 +404,6 @@ Choose the most appropriate form based on context:
 3. Якщо результат: використайте просту форму
 
 **Ключова ідея:** Вибір залежить від (1) того, що ви описуєте — процес чи результат, і (2) від стилю — розмовного чи формального.
-
----
-
-# Словник
-
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| завтра | /ˈzɑwtrɑ/ | tomorrow | присл. | - |
-| післязавтра | /pʲisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | присл. | - |
-| найближчим часом | /nɑjˈblɪʒt͡ʃɪm ˈt͡ʃɑsɔm/ | in the near future | присл. | - |
-| скоро | /ˈskɔrɔ/ | soon | присл. | - |
-| згодом | /ˈzɦɔdɔm/ | later, eventually | присл. | - |
-| потім | /pɔˈtʲim/ | then, afterwards | присл. | - |
-| пізніше | /ˈpʲiznʲiʃɛ/ | later | присл. | - |
-| у майбутньому | /u mɑjˈbutnʲɔmu/ | in the future | присл. | - |
-| наступного разу | /nɑˈstupnɔɦɔ ˈrɑzu/ | next time | присл. | - |
-| колись | /ˈkɔlɪsʲ/ | someday | присл. | - |
-| обов'язково | /ɔbɔwˈjɑzkɔwɔ/ | definitely, necessarily | присл. | - |
-| напевно | /nɑˈpɛwnɔ/ | probably | присл. | - |
-| мабуть | /mɑˈbutʲ/ | perhaps | присл. | - |
-| можливо | /mɔʒˈlɪwɔ/ | possibly | присл. | - |
-| ймовірно | /jmɔˈwʲirnɔ/ | likely | присл. | - |
-| сподіваюся | /spɔdʲiˈwɑjusʲɑ/ | I hope | дієсл. | 1st sg. pres. |
-| планую | /plɑˈnuju/ | I plan | дієсл. | 1st sg. pres. |
-| збираюся | /zbɪˈrɑjusʲɑ/ | I'm going to | дієсл. | 1st sg. pres. |
-| маю намір | /ˈmɑju ˈnɑmʲir/ | I intend | дієсл. | phrase |
-| вирішив | /wɪˈrʲiʃɪw/ | I decided | дієсл. | past m. pf. |
 
 ---
 
@@ -1364,3 +1336,30 @@ Choose the most appropriate form based on context:
 14. Обіцянка: Я обов'язково ___ це! (do)
     > [!answer] зроблю
     > [!options] буду робити | робитиму | зроблю | роблю
+
+# Словник
+
+| Слово | Вимова | Переклад | ЧМ | Примітка |
+|-------|--------|----------|-----|----------|
+| завтра | /ˈzɑwtrɑ/ | tomorrow | присл. | - |
+| післязавтра | /pʲisʲlʲɑˈzɑwtrɑ/ | day after tomorrow | присл. | - |
+| найближчим часом | /nɑjˈblɪʒt͡ʃɪm ˈt͡ʃɑsɔm/ | in the near future | присл. | - |
+| скоро | /ˈskɔrɔ/ | soon | присл. | - |
+| згодом | /ˈzɦɔdɔm/ | later, eventually | присл. | - |
+| потім | /pɔˈtʲim/ | then, afterwards | присл. | - |
+| пізніше | /ˈpʲiznʲiʃɛ/ | later | присл. | - |
+| у майбутньому | /u mɑjˈbutnʲɔmu/ | in the future | присл. | - |
+| наступного разу | /nɑˈstupnɔɦɔ ˈrɑzu/ | next time | присл. | - |
+| колись | /ˈkɔlɪsʲ/ | someday | присл. | - |
+| обов'язково | /ɔbɔwˈjɑzkɔwɔ/ | definitely, necessarily | присл. | - |
+| напевно | /nɑˈpɛwnɔ/ | probably | присл. | - |
+| мабуть | /mɑˈbutʲ/ | perhaps | присл. | - |
+| можливо | /mɔʒˈlɪwɔ/ | possibly | присл. | - |
+| ймовірно | /jmɔˈwʲirnɔ/ | likely | присл. | - |
+| сподіваюся | /spɔdʲiˈwɑjusʲɑ/ | I hope | дієсл. | 1st sg. pres. |
+| планую | /plɑˈnuju/ | I plan | дієсл. | 1st sg. pres. |
+| збираюся | /zbɪˈrɑjusʲɑ/ | I'm going to | дієсл. | 1st sg. pres. |
+| маю намір | /ˈmɑju ˈnɑmʲir/ | I intend | дієсл. | phrase |
+| вирішив | /wɪˈrʲiʃɪw/ | I decided | дієсл. | past m. pf. |
+
+---

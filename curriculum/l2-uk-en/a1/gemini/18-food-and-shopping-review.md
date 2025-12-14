@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Food & Shopping** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 181 | Included in Core |
 | **Presentation** | ✅ | 422 | Included in Core |
 | **Practice** | ⚪️ | 369 | Skipped |
 | **Production** | ➖ | 326 | Excluded Type |
 | **Cultural Insight** | ✅ | 310 | Included in Core |
 | **Підсумок (Summary)** | ✅ | 122 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Food & Drinks Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Shopping Phrases** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -37,3 +36,4 @@
 | **match-up: Non-Food Items** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Café Dialogue** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Beverages vs Food vs Items** | 🎮 | 22 | Activity (22 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 987/750
+- **Words:** ✅ 1055/750
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,14 +19,14 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **My Family** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 112 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Talking About Family** | ⚪️ | 56 | Skipped |
 | **Describing Family Members** | ⚪️ | 152 | Skipped |
 | **Examples in Context** | ✅ | 215 | Included in Core |
 | **Dialogues** | ✅ | 452 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 68 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Family Members** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: More Family** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -38,4 +38,4 @@
 | **quiz: Marital Status** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Family Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Family Facts** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 68 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

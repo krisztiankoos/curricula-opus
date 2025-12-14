@@ -2,7 +2,7 @@
 
 **Status:** ✅ COMPLETE (Aligned with Ukrainian State Standard 2024)
 **Modules:** 01-80 (80 modules)
-**Vocabulary Target:** ~2,400 words (level), ~4,550 cumulative
+**Vocabulary Target:** ~1,500 words (level), ~3,300 cumulative
 
 ---
 
@@ -12,7 +12,19 @@
 
 ### Bilingual Content Strategy (B1 Specific)
 
-**Target Immersion:** 60% Ukrainian / 40% English
+**Graduated Immersion:** B1 uses phase-based immersion that increases as learners progress:
+
+| Phase | Modules | Immersion | Content Focus |
+|-------|---------|-----------|---------------|
+| **B1.1** | M01-10 | **45-50%** | Aspect mastery — heavy grammar theory in English |
+| **B1.2** | M11-20 | **50-55%** | Motion verbs with prefixes — grammar theory in English |
+| **B1.3-4** | M21-45 | **55-60%** | Complex sentences, participles — more Ukrainian in explanations |
+| **B1.5-6** | M46-65 | **60-65%** | Vocabulary expansion — thematic content mostly in Ukrainian |
+| **B1.7-8** | M66-80 | **65-70%** | Cultural content, skills — pre-B2 runway |
+
+**Transition continuity:**
+- A2.3 ends at 50-55% → B1.1 starts at 45-50% (overlap allows adjustment)
+- B1.7-8 ends at 65-70% → B2-grammar starts at 65-70% (smooth handoff)
 
 B1 modules use a **bilingual approach** for complex grammar concepts:
 - **Ukrainian:** All examples, dialogues, narratives, cultural boxes, activity content
@@ -24,8 +36,6 @@ This approach is pedagogically sound because:
 1. **Cognitive load:** Aspect, motion verbs, participles don't exist in English. L1 explanations free cognitive resources for Ukrainian practice.
 2. **CEFR B1 definition:** Learners "understand main points of clear standard input" — complex metalinguistic explanations in L2 exceed this threshold.
 3. **Research evidence:** Explicit L1 grammar explanations + L2 examples outperforms immersion-only for complex rules.
-
-**Note:** The audit script measures immersion from lesson content only (before `# Activities`). Adding English explanations will lower immersion from ~85% to ~65-70%, which still passes the 60% threshold.
 
 ### Overcoming the Intermediate Plateau
 To help learners bridge the gap from "basic competence" to "independent fluency", this level shifts pedagogical focus:
@@ -496,20 +506,48 @@ By module 80, learners can:
 
 #### Module 10: Checkpoint - Aspect Mastery
 **Review of:** Modules 01-09
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can distinguish perfective/imperfective in past tense contexts
+- [ ] Can select correct aspect for future actions (planned vs completed)
+- [ ] Can use aspect correctly in negation (general vs "not yet")
+- [ ] Can form appropriate imperatives (invitations vs specific commands)
 
 **Assessment Areas:**
-1. Aspect selection in past (single/repeated, result/process)
-2. Future tense aspect choice
-3. Negation with correct aspect
-4. Imperative aspect
-5. Aspect pair recognition
+1. Aspect selection in past (single/repeated, result/process) - 5 items
+2. Future tense aspect choice - 5 items
+3. Negation with correct aspect - 5 items
+4. Imperative aspect - 5 items
+5. Aspect pair recognition - 5 items
 
-**Vocabulary (10 words):** Review of key aspect vocabulary
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Comprehensive quiz: All aspect contexts
-2. Writing: Paragraph with mixed aspects
-3. Self-assessment: Aspect confidence checklist
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Past aspect | Often confuse result/process | Usually correct with time markers | Choose correctly without markers |
+| Future aspect | Unsure which form to use | Correct with context clues | Confident in all contexts |
+| Negation aspect | Default to perfective | Know rule but make errors | Apply rules consistently |
+| Imperative aspect | Don't know difference | Understand but hesitate | Use naturally |
+
+**Vocabulary (15 words):** High-frequency aspect markers requiring review
+
+**Required Activities (minimum 10):**
+1. **Diagnostic quiz** - 25 items covering all aspect contexts
+2. **Error correction** - 10 common aspect mistakes from M01-09
+3. **Cloze passage** - Extended text requiring aspect decisions
+4. **Writing task** - 100+ words using both aspects meaningfully
+5. **Self-reflection** - What I can do / What I need to review
+6. **Aspect pair drill** - 20 pairs rapid recognition
+7. **Context matching** - Match aspect to situation type
+8. **Transform exercise** - Change aspect and explain meaning change
+9. **Dialogue completion** - Natural aspect usage in conversation
+10. **Mixed review** - Random aspect challenges from all modules
+
+**Remediation Guidance:**
+- Score <60%: Review M01-06 (core aspect rules), redo all signature activities
+- Score 60-79%: Focus on M03 (result/process) and M05 (negation)
+- Score 80%+: Ready for Phase B1.2 (Motion Verbs)
 
 ---
 
@@ -758,19 +796,48 @@ By module 80, learners can:
 
 #### Module 20: Checkpoint - Motion Verbs
 **Review of:** Modules 11-19
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can use all 14 motion verb pairs correctly (uni/multi)
+- [ ] Can apply prefixes to motion verbs to express direction/manner
+- [ ] Can use figurative expressions with motion verbs naturally
+- [ ] Can describe complex journeys and movements
 
 **Assessment Areas:**
-1. Motion verb pair identification
-2. Prefix meaning recognition
-3. Figurative expression usage
-4. Motion in complex sentences
+1. Motion verb pair identification - 5 items
+2. Prefix meaning recognition - 5 items
+3. Figurative expression usage - 5 items
+4. Motion in complex sentences - 5 items
+5. Prefix combination with different verbs - 5 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Comprehensive quiz: All motion concepts
-2. Writing: Description using varied motion verbs
-3. Self-assessment: Motion verb confidence
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Verb pairs | Confuse uni/multi | Know common pairs | All 14 pairs fluent |
+| Prefixes | Know 2-3 prefixes | Know most, some errors | Use all confidently |
+| Figurative | Don't recognize | Understand but don't use | Use in own speech |
+| Complex motion | Struggle with long descriptions | Can describe with support | Describe fluently |
+
+**Vocabulary (15 words):** High-frequency motion verbs and prefixes requiring review
+
+**Required Activities (minimum 10):**
+1. **Diagnostic quiz** - 25 items covering all motion concepts
+2. **Prefix sorting** - Group verbs by prefix meaning
+3. **Direction description** - Describe routes using motion verbs
+4. **Error correction** - 10 common motion verb mistakes
+5. **Cloze passage** - Travel narrative with motion verb gaps
+6. **Figurative matching** - Match idioms to meanings
+7. **Writing task** - 100+ words describing a journey
+8. **Self-reflection** - What I can do / What I need to review
+9. **Verb transformation** - Add/change prefixes to change meaning
+10. **Mixed review** - Random motion challenges from all modules
+
+**Remediation Guidance:**
+- Score <60%: Review M11-12 (basic motion system), focus on verb pairs
+- Score 60-79%: Focus on M14-15 (prefix meanings) and M16 (figurative)
+- Score 80%+: Ready for Phase B1.3 (Complex Sentences)
 
 ---
 
@@ -1017,8 +1084,8 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 ---
 
-#### Module 32: Complex Sentence Integration
-**Grammar:** Multiple clause types together
+#### Module 32: Complex Sentence Integration & One-Member Sentences
+**Grammar:** Multiple clause types together + односкладні речення
 
 **Practice combining:**
 - Relative + purpose
@@ -1026,13 +1093,29 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 - Temporal + concessive
 - Multiple relative clauses
 
-**Vocabulary (15 words):**
-при цьому, водночас, одночасно, паралельно, поряд з тим, разом з тим, крім усього, до всього, на додаток, плюс до цього, не кажучи вже про, тим паче, тим більше, особливо, зокрема
+**One-Member Sentences (Односкладні речення):**
+
+| Type | Ukrainian | Example | Usage |
+|------|-----------|---------|-------|
+| Означено-особові | definite-personal | Читаю книгу. Йдемо! | Subject clear from verb ending |
+| Неозначено-особові | indefinite-personal | Кажуть, що... Тут не палять. | Impersonal "they", general rules |
+| Безособові | impersonal | Холодно. Можна. Треба. | States, permissions, necessities |
+
+**Impersonal constructions:**
+- Мені холодно/тепло/гаряче. (I'm cold/warm/hot.)
+- Йому сумно/весело/нудно. (He's sad/happy/bored.)
+- Тут можна/не можна курити. (Smoking is/isn't allowed here.)
+- Треба/потрібно/необхідно зробити. (It's necessary to do.)
+
+**Vocabulary (20 words):**
+при цьому, водночас, одночасно, паралельно, разом з тим, до всього, на додаток, тим паче, особливо, зокрема, можна, не можна, треба, потрібно, необхідно, варто, слід, годиться, доречно, доцільно
 
 **Signature Activity Concepts:**
 1. Combine: Multi-clause sentences
 2. Analyze: Break down complex sentences
-3. Writing: Extended complex sentences
+3. Identify: One-member sentence types
+4. Transform: Two-member → one-member (where appropriate)
+5. Writing: Extended complex sentences with impersonal constructions
 
 ---
 
@@ -1075,21 +1158,51 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 #### Module 35: Checkpoint - Complex Sentences
 **Review of:** Modules 21-34
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can construct relative clauses with який, де, коли, що appropriately
+- [ ] Can express purpose using щоб + infinitive and щоб + past forms
+- [ ] Can form real and unreal conditionals correctly
+- [ ] Can use concessive, causal, and temporal clauses naturally
+- [ ] Can convert direct to indirect speech
 
 **Assessment Areas:**
-1. Relative clauses (який, де, коли, що)
-2. Purpose clauses (щоб constructions)
-3. Conditional types
-4. Concessive and causal clauses
-5. Temporal clauses
-6. Reported speech
+1. Relative clauses (який, де, коли, що) - 5 items
+2. Purpose clauses (щоб constructions) - 4 items
+3. Conditional types (real/unreal) - 4 items
+4. Concessive and causal clauses - 4 items
+5. Temporal clauses - 4 items
+6. Reported speech - 4 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Comprehensive quiz: All complex sentence types
-2. Writing: Paragraph with varied sentence structures
-3. Analysis: Identify clause types in text
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Relative clauses | Only use який | Use 2-3 connectors | All connectors fluent |
+| Purpose clauses | Confused by щоб forms | Usually correct | Apply rules consistently |
+| Conditionals | Mix real/unreal | Know difference, some errors | Use both naturally |
+| Other clauses | Simple sentences only | Attempt with errors | Complex sentences fluent |
+| Reported speech | Can't convert | Convert with mistakes | Convert accurately |
+
+**Vocabulary (15 words):** Key conjunctions and connectors requiring review
+
+**Required Activities (minimum 10):**
+1. **Diagnostic quiz** - 25 items covering all clause types
+2. **Clause identification** - Label clause types in authentic text
+3. **Sentence combining** - Join simple sentences with appropriate connectors
+4. **Error correction** - 10 common complex sentence mistakes
+5. **Reported speech conversion** - Direct → indirect
+6. **Conditional matching** - Match situations to conditional types
+7. **Writing task** - 150+ words using at least 4 clause types
+8. **Self-reflection** - What I can do / What I need to review
+9. **Gap-fill passage** - Connectors and conjunctions
+10. **Mixed review** - Random complex sentence challenges
+
+**Remediation Guidance:**
+- Score <60%: Review M21-23 (relative clauses) and M25-27 (conditionals)
+- Score 60-79%: Focus on M30-31 (causal/temporal) and M33-34 (reported speech)
+- Score 80%+: Ready for Phase B1.4 (Advanced Grammar)
 
 ---
 
@@ -1319,20 +1432,48 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 #### Module 45: Checkpoint - Advanced Grammar
 **Review of:** Modules 36-44
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can form and use adverbial participles (reading → while reading)
+- [ ] Can construct passive sentences with participles and -но/-то forms
+- [ ] Can use diminutives appropriately for affection/size/dismissiveness
+- [ ] Can handle collective numerals and fractions in context
 
 **Assessment Areas:**
-1. Adverbial participles (imperfective and perfective)
-2. Passive participles (full and short forms)
-3. Passive constructions
-4. Diminutives
-5. Collective numerals and fractions
+1. Adverbial participles (imperfective and perfective) - 5 items
+2. Passive participles (full and short forms) - 5 items
+3. Passive constructions - 5 items
+4. Diminutives - 5 items
+5. Collective numerals and fractions - 5 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Comprehensive quiz: All advanced grammar
-2. Transform: Various grammar structures
-3. Writing: Use all advanced features
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Adverbial participles | Can't form | Form but with errors | Use naturally |
+| Passive participles | Confuse forms | Know -ний vs -но | Both forms fluent |
+| Diminutives | Don't use | Recognize common ones | Form and use actively |
+| Numerals | Only basic | Know collectives | Use all forms |
+
+**Vocabulary (15 words):** Key advanced grammar vocabulary requiring review
+
+**Required Activities (minimum 10):**
+1. **Diagnostic quiz** - 25 items covering all advanced grammar
+2. **Participle formation** - Transform verbs to participles
+3. **Active to passive** - Convert sentences with correct participle forms
+4. **Diminutive matching** - Base word → diminutive + nuance
+5. **Error correction** - 10 advanced grammar mistakes
+6. **Numeral usage** - Fill gaps with correct numeral forms
+7. **Writing task** - 100+ words using participles and diminutives
+8. **Self-reflection** - What I can do / What I need to review
+9. **Gap-fill passage** - Mixed advanced grammar
+10. **Mixed review** - Random advanced grammar challenges
+
+**Remediation Guidance:**
+- Score <60%: Review M36-38 (adverbial participles) and M39-40 (passive participles)
+- Score 60-79%: Focus on M41 (passive constructions) and M42-43 (diminutives)
+- Score 80%+: Ready for Phase B1.5 (Vocabulary Expansion)
 
 ---
 
@@ -1534,20 +1675,48 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 #### Module 55: Checkpoint - Vocabulary Expansion I
 **Review of:** Modules 46-54
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can discuss abstract concepts (justice, freedom, progress)
+- [ ] Can express and support opinions with discourse markers
+- [ ] Can agree/disagree politely with varying degrees
+- [ ] Can discuss media, society, and current events
 
 **Assessment Areas:**
-1. Abstract concepts vocabulary
-2. Opinion expression
-3. Agreement/disagreement
-4. Discourse markers
-5. Media and society vocabulary
+1. Abstract concepts vocabulary - 5 items
+2. Opinion expression - 5 items
+3. Agreement/disagreement markers - 5 items
+4. Discourse markers and connectors - 5 items
+5. Media and society vocabulary - 5 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Vocabulary quiz: All domains
-2. Writing: Opinion essay with discourse markers
-3. Discussion: Current affairs topic
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Abstract concepts | Only concrete vocabulary | Know some abstracts | Use abstracts naturally |
+| Opinion expression | "I think" only | Several phrases | Full range of markers |
+| Agreement/disagreement | Yes/no only | Polite forms | Degrees of agreement |
+| Discourse markers | Don't use | Basic connectors | Sophisticated linking |
+
+**Vocabulary (15 words):** High-frequency vocabulary requiring review
+
+**Required Activities (minimum 10):**
+1. **Vocabulary quiz** - 25 items covering all domains
+2. **Opinion matching** - Match expressions to formality level
+3. **Discourse marker gap-fill** - Complete paragraphs
+4. **Reading comprehension** - Media text with vocabulary focus
+5. **Writing task** - Opinion essay (150+ words) with discourse markers
+6. **Self-reflection** - What I can do / What I need to review
+7. **Collocation matching** - Abstract noun + verb combinations
+8. **Discussion simulation** - Agree/disagree with statements
+9. **Error correction** - 10 vocabulary/expression mistakes
+10. **Mixed review** - Random vocabulary challenges
+
+**Remediation Guidance:**
+- Score <60%: Review M46-48 (abstract concepts, opinions)
+- Score 60-79%: Focus on M51-53 (discourse markers, media)
+- Score 80%+: Ready for Phase B1.6 (Vocabulary Expansion II)
 
 ---
 
@@ -1696,19 +1865,48 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 #### Module 65: Checkpoint - Vocabulary Expansion II
 **Review of:** Modules 56-64
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can discuss environmental issues and health topics
+- [ ] Can handle business and professional vocabulary
+- [ ] Can express emotions and describe relationships
+- [ ] Can use synonyms and collocations appropriately
 
 **Assessment Areas:**
-1. Environment and health vocabulary
-2. Business and travel terms
-3. Emotional and relationship vocabulary
-4. Synonyms and collocations
+1. Environment and health vocabulary - 5 items
+2. Business and travel terms - 5 items
+3. Emotional and relationship vocabulary - 5 items
+4. Synonyms and nuanced vocabulary - 5 items
+5. Collocations and expressions - 5 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Vocabulary quiz: All B1.6 domains
-2. Writing: Extended text with varied vocabulary
-3. Speaking: Topic discussion
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Environment/health | Basic words only | Know topic vocabulary | Discuss fluently |
+| Business/travel | Limited terms | Handle common situations | Professional level |
+| Emotions/relationships | Simple feelings | Express nuances | Full emotional range |
+| Collocations | Don't use | Know common ones | Use naturally |
+
+**Vocabulary (15 words):** High-frequency vocabulary requiring review
+
+**Required Activities (minimum 10):**
+1. **Vocabulary quiz** - 25 items covering all B1.6 domains
+2. **Topic matching** - Sort vocabulary by domain
+3. **Synonym selection** - Choose appropriate synonym for context
+4. **Collocation completion** - Fill in missing parts
+5. **Reading comprehension** - Business or health text
+6. **Writing task** - Email or report (150+ words)
+7. **Self-reflection** - What I can do / What I need to review
+8. **Error correction** - 10 vocabulary mistakes
+9. **Speaking simulation** - Role-play business or health scenario
+10. **Mixed review** - Random vocabulary challenges
+
+**Remediation Guidance:**
+- Score <60%: Review M56-58 (environment/health) and M59-60 (business/travel)
+- Score 60-79%: Focus on M61-62 (emotions) and M63-64 (synonyms/collocations)
+- Score 80%+: Ready for Phase B1.7 (Contemporary Ukraine)
 
 ---
 
@@ -1893,19 +2091,48 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 
 #### Module 75: Checkpoint - Contemporary Ukraine
 **Review of:** Modules 66-74
+**Type:** B1-checkpoint
+
+**CEFR Can-Do Targets (from this phase):**
+- [ ] Can discuss Ukrainian regions and their characteristics
+- [ ] Can engage with topics in contemporary Ukrainian culture
+- [ ] Can comprehend authentic Ukrainian texts on familiar topics
+- [ ] Can describe Ukrainian traditions, cuisine, and customs
 
 **Assessment Areas:**
-1. Regional vocabulary
-2. Cultural knowledge
-3. Contemporary topics
-4. Reading comprehension
+1. Regional vocabulary and geography - 5 items
+2. Cultural knowledge (traditions, customs) - 5 items
+3. Contemporary topics (media, arts) - 5 items
+4. Reading comprehension - 5 items
+5. Cuisine and lifestyle vocabulary - 5 items
 
-**Vocabulary (10 words):** Review selection
+**Self-Assessment Rubric:**
 
-**Signature Activity Concepts:**
-1. Quiz: Cultural knowledge
-2. Reading: Authentic text
-3. Writing: About Ukrainian culture
+| Skill | Not Yet (1) | Developing (2) | Achieved (3) |
+|-------|-------------|----------------|--------------|
+| Regions | Know 1-2 regions | Know major regions | All regions familiar |
+| Culture | Basic facts only | Understand traditions | Discuss in depth |
+| Contemporary | Struggle with topics | Follow main points | Engage confidently |
+| Authentic texts | Need much support | Understand main ideas | Comprehend well |
+
+**Vocabulary (15 words):** High-frequency cultural vocabulary requiring review
+
+**Required Activities (minimum 10):**
+1. **Cultural quiz** - 25 items covering all B1.7 topics
+2. **Map activity** - Match regions to characteristics
+3. **Reading comprehension** - Authentic Ukrainian text
+4. **Tradition matching** - Holidays to customs
+5. **Writing task** - Describe Ukrainian region or tradition (150+ words)
+6. **Self-reflection** - What I can do / What I need to review
+7. **Cuisine vocabulary** - Match dishes to regions
+8. **Contemporary culture** - Identify modern Ukrainian artists/writers
+9. **Error correction** - 10 cultural/vocabulary mistakes
+10. **Mixed review** - Random contemporary Ukraine challenges
+
+**Remediation Guidance:**
+- Score <60%: Review M66-69 (regions, history) and M72-74 (traditions, cuisine)
+- Score 60-79%: Focus on M70-71 (contemporary culture)
+- Score 80%+: Ready for Phase B1.8 (Skills & Integration)
 
 ---
 
@@ -2035,6 +2262,84 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 | **Total** | **80** | **~1,630** | |
 
 **Cumulative after B1:** ~3,430 words
+
+---
+
+## B1 Exit Assessment Framework
+
+### CEFR B1 Proficiency Descriptors
+
+| Skill | B1 Descriptor | Assessment Evidence |
+|-------|---------------|---------------------|
+| Reading | Understands main points of clear standard texts on familiar matters | 70%+ on comprehension tasks |
+| Writing | Can write simple connected text on familiar topics | 150+ words, logical structure, <5 major errors |
+| Speaking | Can deal with most travel situations; can describe experiences | 2-min presentation, comprehensible delivery |
+| Listening | Can understand main points of clear standard speech on familiar matters | 70%+ on listening comprehension |
+
+### Ukrainian State Standard 2024 Exit Checklist
+
+**Grammar (Каталог В) - Learner can:**
+- [ ] Select correct aspect in all contexts (past, future, negation, imperative)
+- [ ] Use motion verbs with appropriate prefixes
+- [ ] Form and use adverbial participles (-ючи, -вши)
+- [ ] Form and use passive constructions (-ний, -но)
+- [ ] Construct all complex sentence types
+- [ ] Use real (якщо) and unreal (якби) conditionals
+- [ ] Use all three future forms appropriately
+
+**Themes (Каталог Б) - Learner can discuss:**
+- [ ] Society, politics, and institutions
+- [ ] Media and communication
+- [ ] Professional and work contexts
+- [ ] Ukrainian regions and their characteristics
+- [ ] Contemporary Ukrainian culture
+
+### M80 Scoring Rubrics
+
+#### Reading Comprehension (25 points)
+
+| Score | Descriptor |
+|-------|------------|
+| 22-25 | Excellent: Understands main ideas and most supporting details accurately |
+| 18-21 | Good: Understands main ideas, captures most details with minor gaps |
+| 14-17 | Adequate: Understands main ideas, misses significant details |
+| 10-13 | Developing: Partial understanding, frequent miscomprehension |
+| 0-9 | Below B1: Does not demonstrate B1-level reading comprehension |
+
+#### Writing Production (25 points)
+
+| Criterion | 5 pts | 3 pts | 1 pt | 0 pts |
+|-----------|-------|-------|------|-------|
+| Task completion | Fully addresses all parts of prompt | Addresses most of prompt | Partially addresses prompt | Off-topic |
+| Coherence | Clear logical flow with appropriate connectors | Generally organized with some gaps | Weak organization | No discernible structure |
+| Grammar accuracy | 0-2 major errors | 3-5 major errors | 6-8 major errors | >8 major errors |
+| Vocabulary range | Uses B1 vocabulary appropriately and varied | Adequate range with some repetition | Limited to high-frequency words | Basic A2 vocabulary only |
+| Complexity | Regular use of complex sentences | Some complex sentences | Mostly simple sentences | Simple sentences only |
+
+#### Grammar Test (25 points)
+
+| Component | Points | Description |
+|-----------|--------|-------------|
+| Aspect selection | 8 | All contexts: past, future, negation, imperative |
+| Motion verbs | 5 | Prefix meanings, uni/multi distinction |
+| Participles | 4 | Adverbial and passive formation/usage |
+| Complex sentences | 5 | Clause types, conjunctions, word order |
+| Conditional | 3 | Real vs unreal, correct forms |
+
+#### Vocabulary Test (25 points)
+
+| Component | Points | Description |
+|-----------|--------|-------------|
+| Recognition | 10 | Match Ukrainian to English/definition |
+| Production | 10 | Fill gaps with appropriate vocabulary |
+| Collocation | 5 | Choose correct word combinations |
+
+### Passing Threshold
+
+**B1 Certificate:** 70+ points total (70%)
+**B1 with Distinction:** 85+ points total (85%)
+
+Learners scoring 60-69 receive "B1 Developing" designation with specific remediation recommendations.
 
 ---
 

@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **The Accusative II: People** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 148 | Included in Core |
 | **Presentation** | ✅ | 195 | Included in Core |
 | **Practice** | ⚪️ | 284 | Skipped |
 | **Production** | ➖ | 448 | Excluded Type |
 | **Cultural Insight** | ✅ | 173 | Included in Core |
 | **Summary** | ✅ | 123 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: People in Your Life** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Animate vs Inanimate** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -36,3 +35,4 @@
 | **fill-in: Sentences in Context** | 🎮 | 12 | Activity (12 items, min 8) |
 | **unjumble: Sentences with Animate Objects** | 🎮 | 12 | Activity (12 items, min 6) |
 | **unjumble: More Complex Sentences** | 🎮 | 8 | Activity (8 items, min 6) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 855/750
+- **Words:** ✅ 921/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,9 +19,8 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Can, Must, Want - Modals** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 77 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Expressing Ability: могти vs вміти** | ⚪️ | 49 | Skipped |
 | **Expressing Obligation: повинен, треба, мусити** | ⚪️ | 80 | Skipped |
@@ -31,6 +30,7 @@
 | **Modal Adjectives** | ⚪️ | 0 | Skipped |
 | **Examples in Context** | ✅ | 233 | Included in Core |
 | **Dialogues** | ✅ | 380 | Included in Core |
+| **Summary** | ✅ | 66 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Modal Meanings** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Modal Categories** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -40,4 +40,4 @@
 | **quiz: Modal Meanings** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Modal Sentences** | 🎮 | 6 | Activity (6 items, min 6) |
 | **true-false: Modal Understanding** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Summary** | ✅ | 66 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

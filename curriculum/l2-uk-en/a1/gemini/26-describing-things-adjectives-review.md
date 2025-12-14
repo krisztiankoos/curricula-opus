@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 959/750
+- **Words:** ✅ 1036/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,9 +19,8 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Describing Things - Adjectives** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 96 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **Why Adjective Agreement Matters** | ✅ | 63 | Included in Core |
 | **Hard Stem Adjective Endings** | ⚪️ | 61 | Skipped |
@@ -30,6 +29,7 @@
 | **Common Antonym Pairs** | ⚪️ | 9 | Skipped |
 | **Examples in Context** | ✅ | 255 | Included in Core |
 | **Dialogues** | ✅ | 362 | Included in Core |
+| **Підсумок (Summary)** | ✅ | 77 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |
 | **match-up: Антоніми (Antonym Pairs)** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Категорії прикметників** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -39,4 +39,4 @@
 | **quiz: Значення прикметників** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Складіть речення** | 🎮 | 6 | Activity (6 items, min 6) |
 | **true-false: Правила прикметників** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Підсумок (Summary)** | ✅ | 75 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

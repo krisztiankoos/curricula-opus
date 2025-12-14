@@ -1,6 +1,11 @@
 # Audit Report: 02-aspect-past-single-repeated.md
 **Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1250
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## Recommendation
+**📝 UPDATE** (severity 15/100)
+
+- Immersion 16% off target
 
 ## Gates
 - **Words:** ✅ 2026/1250
@@ -14,18 +19,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 52.3% (target 50-55% (grammar))
+- **Immersion:** ❌ 70.6% HIGH (target 50-55% (grammar))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид у минулому часі — Одноразові та повторювані дії** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Diagnostic** | ✅ | 174 | Included in Core |
 | **Analysis** | ⚪️ | 600 | Skipped |
 | **Deep Dive** | ✅ | 797 | Included in Core |
 | **Practice** | ⚪️ | 341 | Skipped |
 | **Summary** | ✅ | 114 | Included in Core |
-| **Словник** | ⚪️ | 0 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Маркери часу та вид** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Маркери та види** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -42,3 +46,4 @@
 | **mark-the-words: Знайдіть маркери часу** | 🎮 | 8 | Activity (8 items, min 6) |
 | **dialogue-reorder: Розмова про минуле** | 🎮 | 10 | Activity (10 items, min 5) |
 | **fill-in: Трансформація речень** | 🎮 | 14 | Activity (14 items, min 8) |
+| **Словник** | ⚪️ | 0 | Skipped |

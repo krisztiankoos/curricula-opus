@@ -2,8 +2,8 @@
 
 **Status:** 📝 PLANNED (Upgraded to A1 Quality)
 **Modules:** 01-115 (115 modules)
-**Vocabulary Target:** ~2,900 new words (~25/module)
-**Cumulative Target:** ~10,550+ words after C1
+**Vocabulary Target:** ~2,800 new words (~24/module)
+**Cumulative Target:** ~9,000 words after C1
 **Immersion:** 5% English / 95% Ukrainian
 
 > **Note:** Folk Culture & Arts (25 modules) moved from B2 for better vocabulary balance.
@@ -1554,7 +1554,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 - Build rich cultural vocabulary
 - Connect folk culture to modern Ukrainian identity
 
-### Module Specifications
+### Module Specifications Overview
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
@@ -1584,13 +1584,509 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 | 79 | Спортивні герої | Culture | Champions, national pride |
 | 80 | C1.4 Checkpoint | Review | Folk culture assessment |
 
-### Vocabulary Plan C1.4 (~600 words)
-- Folk music: кобзар, бандура, колядка, щедрівка, веснянка, думка, лірник
-- Folk dance: гопак, козачок, аркан, коломийка, гуцулка
-- Folk crafts: писанка, крашанка, вишиванка, гончар, різьбяр, ткаля
-- Folk beliefs: домовик, мавка, лісовик, водяник, чугайстер, упир
-- Rituals: коляда, маланка, купала, весілля, хрестини, похорон, провід
-- Regions: Галичина, Слобожанщина, Полісся, Поділля, Волинь, Буковина
+### Module Content Specifications C1.4
+
+---
+
+#### Module 56: Кобзарі та бандура
+**Focus:** Ukrainian epic musical tradition and blind bards
+
+**Content Areas:**
+- History of kobzari tradition from 15th century
+- Bандура instrument: construction, tuning, playing techniques
+- Social role of kobzari as carriers of oral history
+- Soviet persecution and revival after independence
+- Modern bandura schools and performers
+
+**Vocabulary (24 words):**
+кобзар, бандура, бандурист, лірник, ліра, струна, гриф, резонатор, перебір, акорд, дума, історична пісня, сліпець, мандрівник, традиція, спадщина, репертуар, виконавець, майстер, школа, відродження, переслідування, знищення, пам'ять
+
+**Signature Activity Concepts:**
+1. Quiz: Identify bandura parts and playing techniques
+2. Match-up: Kobzar names → their historical periods
+3. Cloze: Text about Soviet persecution of kobzari
+
+---
+
+#### Module 57: Обрядові пісні
+**Focus:** Ritual songs through the calendar year
+
+**Content Areas:**
+- Колядки (Christmas carols): structure, themes, performers
+- Щедрівки (New Year songs): wishes, symbolic meanings
+- Веснянки (spring songs): calling spring, circle dances
+- Купальські пісні: midsummer night traditions
+- Regional variations in ritual song traditions
+
+**Vocabulary (24 words):**
+колядка, щедрівка, веснянка, гаївка, купальська пісня, обряд, ритуал, календар, свято, побажання, символ, коло, хоровод, виконання, традиція, регіон, варіант, мелодія, текст, рефрен, приспів, куплет, заклик, оберег
+
+**Signature Activity Concepts:**
+1. Group-sort: Songs by season/ritual type
+2. Fill-in: Complete ritual song lyrics
+3. Match-up: Song type → ritual occasion
+
+---
+
+#### Module 58: Колискові та думи
+**Focus:** Lullabies and epic historical ballads
+
+**Content Areas:**
+- Колискові пісні: structure, imagery, maternal voice
+- Думи: historical epics about Cossack heroes
+- Narrative techniques in Ukrainian epic poetry
+- Famous dumy: Козак Голота, Маруся Богуславка
+- Performance traditions: recitative style
+
+**Vocabulary (24 words):**
+колискова, дума, епос, балада, герой, козак, полонений, туга, воля, подвиг, оповідь, речитатив, мелодика, образ, символіка, мати, дитина, сон, благословення, захист, трагедія, тріумф, пам'ять, легенда
+
+**Signature Activity Concepts:**
+1. Quiz: Identify duma heroes and their stories
+2. Cloze: Famous duma excerpts
+3. Match-up: Narrative elements → their functions
+
+---
+
+#### Module 59: Гопак і козачок
+**Focus:** Traditional Cossack dances
+
+**Content Areas:**
+- Гопак: history, movements, acrobatic elements
+- Козачок: origins, regional variants
+- Dance vocabulary: присядка, розніжка, повороти
+- Role in Cossack culture and military training
+- Modern stage adaptations (Вірський ensemble)
+
+**Vocabulary (24 words):**
+гопак, козачок, танець, рух, крок, стрибок, присядка, розніжка, поворот, оберт, вихід, фінал, темп, ритм, музика, костюм, шаровари, чоботи, ансамбль, виконавець, хореограф, традиція, сцена, майстерність
+
+**Signature Activity Concepts:**
+1. Match-up: Dance movements → Ukrainian terms
+2. Quiz: Identify dance elements from descriptions
+3. Fill-in: Text about Virsky ensemble history
+
+---
+
+#### Module 60: Регіональні танці
+**Focus:** Regional dance traditions across Ukraine
+
+**Content Areas:**
+- Гуцульський аркан: Carpathian circle dance
+- Коломийка: Western Ukrainian couple dance
+- Полісські танці: forest region traditions
+- Буковинські танці: border influences
+- Dance as regional identity marker
+
+**Vocabulary (24 words):**
+аркан, коломийка, гуцулка, полька, кадриль, регіон, область, Гуцульщина, Полісся, Буковина, Поділля, традиція, особливість, костюм, музика, інструмент, трембіта, сопілка, скрипка, цимбали, ідентичність, спільнота, свято, забава
+
+**Signature Activity Concepts:**
+1. Group-sort: Dances by region
+2. Match-up: Regional instrument → region
+3. Quiz: Identify regional dance characteristics
+
+---
+
+#### Module 61: Писанки
+**Focus:** Easter egg art and symbolism
+
+**Content Areas:**
+- History of pysanky from pre-Christian times
+- Technique: wax-resist dyeing method
+- Symbolism: colors, geometric patterns, nature motifs
+- Regional styles: Hutsul, Lemko, Poltava
+- Contemporary pysanka artists and UNESCO recognition
+
+**Vocabulary (24 words):**
+писанка, крашанка, дряпанка, яйце, віск, барвник, орнамент, символ, сонце, зірка, хрест, безкінечник, рослина, тварина, геометрія, колір, червоний, чорний, жовтий, регіон, традиція, майстриня, оберег, благословення
+
+**Signature Activity Concepts:**
+1. Match-up: Pysanka symbols → meanings
+2. Quiz: Identify regional pysanka styles
+3. Fill-in: Text about pysanka symbolism
+
+---
+
+#### Module 62: Вишиванка
+**Focus:** Traditional embroidered shirts and regional patterns
+
+**Content Areas:**
+- Вишивка техніки: хрестик, гладь, мережка
+- Regional patterns: Полтава, Київ, Поділля, Гуцульщина
+- Color symbolism in embroidery
+- Social meaning: status, occasion, protection
+- Modern вишиванка revival and fashion
+
+**Vocabulary (24 words):**
+вишиванка, вишивка, сорочка, орнамент, візерунок, хрестик, гладь, мережка, нитка, тканина, полотно, колір, червоний, чорний, білий, символ, оберег, регіон, традиція, майстриня, мода, відродження, ідентичність, свято
+
+**Signature Activity Concepts:**
+1. Group-sort: Embroidery patterns by region
+2. Match-up: Technique name → description
+3. Quiz: Color symbolism in вишивка
+
+---
+
+#### Module 63: Гончарство та різьбярство
+**Focus:** Pottery and woodcarving traditions
+
+**Content Areas:**
+- Опішнянська кераміка: history, techniques, colors
+- Косівська кераміка: Hutsul decorative style
+- Гуцульське різьбярство: інкрустація, трійця technique
+- Regional woodcarving schools
+- UNESCO Intangible Heritage recognition
+
+**Vocabulary (24 words):**
+гончарство, кераміка, глина, глечик, миска, тарілка, розпис, глазур, різьба, дерево, інкрустація, орнамент, майстер, ремесло, традиція, Опішне, Косів, Гуцульщина, школа, техніка, інструмент, виріб, спадщина, ЮНЕСКО
+
+**Signature Activity Concepts:**
+1. Match-up: Craft center → product type
+2. Fill-in: Text about Opishne pottery tradition
+3. Quiz: Identify Hutsul woodcarving techniques
+
+---
+
+#### Module 64: Народна міфологія
+**Focus:** Ukrainian folk mythology and supernatural beings
+
+**Content Areas:**
+- Домовик: house spirit, protection, offerings
+- Лісовик: forest spirit, hunters' patron
+- Водяник: water spirit, dangers, appeasement
+- Мавка/русалка: forest maidens, tragic origins
+- Чугайстер: mountain spirit of Carpathians
+- Modern interpretations (Лісова пісня, S.T.A.L.K.E.R.)
+
+**Vocabulary (24 words):**
+домовик, лісовик, водяник, мавка, русалка, чугайстер, упир, відьма, чаклун, знахар, дух, істота, світ, потойбічний, оберег, жертва, ритуал, повір'я, забобон, легенда, казка, образ, символ, страх
+
+**Signature Activity Concepts:**
+1. Match-up: Supernatural being → domain/function
+2. Quiz: Identify beings from folk descriptions
+3. Cloze: Legend about mавка origins
+
+---
+
+#### Module 65: Народна медицина
+**Focus:** Traditional Ukrainian healing practices
+
+**Content Areas:**
+- Знахарство: healers and their social role
+- Лікарські рослини: herbs and their uses
+- Замовляння: healing incantations
+- Народні засоби: remedies for common ailments
+- Integration with modern medicine
+
+**Vocabulary (24 words):**
+знахар, знахарка, лікування, здоров'я, хвороба, рослина, трава, звіробій, ромашка, м'ята, полин, відвар, настій, компрес, замовляння, ритуал, віра, традиція, мудрість, досвід, природа, енергія, зцілення, профілактика
+
+**Signature Activity Concepts:**
+1. Match-up: Medicinal plant → traditional use
+2. Fill-in: Text about знахар practices
+3. Group-sort: Remedies by ailment type
+
+---
+
+#### Module 66: Козацькі легенди
+**Focus:** Cossack hero tales and historical myths
+
+**Content Areas:**
+- Legendary otamans: Сірко, Сагайдачний, Мазепа
+- Запорозька Січ: legends of the island fortress
+- Характерники: Cossack warrior-shamans
+- Historical ballads as sources
+- Cossack mythology in national identity
+
+**Vocabulary (24 words):**
+козак, отаман, гетьман, Січ, Запоріжжя, воля, слава, подвиг, битва, перемога, характерник, магія, сила, зброя, шабля, мушкет, кінь, побратим, братство, честь, легенда, переказ, пам'ять, герой
+
+**Signature Activity Concepts:**
+1. Quiz: Identify Cossack leaders and their deeds
+2. Match-up: Legend → historical basis
+3. Cloze: Text about характерники traditions
+
+---
+
+#### Module 67: Казки та притчі
+**Focus:** Ukrainian folk tales and moral stories
+
+**Content Areas:**
+- Чарівні казки: magic helpers, transformations
+- Тваринні казки: animal characters, moral lessons
+- Побутові казки: everyday life, social satire
+- Famous collectors: Драгоманов, Грінченко
+- Tale structures and formulas
+
+**Vocabulary (24 words):**
+казка, притча, оповідь, герой, злодій, чарівник, тварина, лисиця, вовк, заєць, ведмідь, магія, перетворення, випробування, перемога, мораль, урок, мудрість, дурень, розумник, цар, царівна, формула, зачин
+
+**Signature Activity Concepts:**
+1. Group-sort: Tales by type (magic/animal/social)
+2. Match-up: Tale formula → function
+3. Fill-in: Complete tale with proper structure
+
+---
+
+#### Module 68: Зимові обряди
+**Focus:** Winter calendar rituals
+
+**Content Areas:**
+- Святвечір: Christmas Eve traditions, 12 dishes
+- Коляда: caroling groups, star, costumes
+- Маланка: New Year's Eve, masquerades
+- Водохреща: Epiphany, water blessing, ice swimming
+- Modern adaptations of winter traditions
+
+**Vocabulary (24 words):**
+Святвечір, Різдво, коляда, колядники, зірка, вертеп, Маланка, ряджені, маска, костюм, Водохреща, хрещення, вода, освячення, ополонка, кутя, узвар, страва, традиція, обряд, ритуал, побажання, благословення, дарунок
+
+**Signature Activity Concepts:**
+1. Match-up: Winter ritual → date/occasion
+2. Quiz: Identify Святвечір traditions
+3. Fill-in: Text about коляда customs
+
+---
+
+#### Module 69: Весна та літо
+**Focus:** Spring and summer calendar rituals
+
+**Content Areas:**
+- Великдень: Easter traditions, games, foods
+- Зелені свята (Трійця): green branches, ancestral spirits
+- Івана Купала: midsummer night, fire and water
+- Обжинки: harvest celebration
+- Seasonal nature symbolism
+
+**Vocabulary (24 words):**
+Великдень, паска, писанка, гаївка, Зелені свята, Трійця, зелень, поминання, Купала, вогонь, вода, вінок, папороть, стрибок, обжинки, урожай, сніп, вінець, сезон, природа, родючість, очищення, магія, кохання
+
+**Signature Activity Concepts:**
+1. Group-sort: Rituals by season
+2. Match-up: Ritual element → symbolic meaning
+3. Cloze: Text about Kupala traditions
+
+---
+
+#### Module 70: Хрестини та весілля
+**Focus:** Birth and marriage life cycle rituals
+
+**Content Areas:**
+- Хрестини: baptism, godparents' role, gifts
+- Сватання: matchmaking, formal proposal
+- Заручини: engagement rituals
+- Весілля: multi-day celebration, rituals
+- Посаг: dowry traditions
+
+**Vocabulary (24 words):**
+хрестини, хрещення, кум, кума, хрещеник, благословення, сватання, сват, сваха, заручини, обручка, весілля, наречений, наречена, молодий, молода, рушник, вінок, коровай, посаг, приданe, танець, пісня, обряд
+
+**Signature Activity Concepts:**
+1. Match-up: Wedding ritual → stage of celebration
+2. Fill-in: Text about сватання customs
+3. Quiz: Roles in traditional wedding
+
+---
+
+#### Module 71: Поминальні обряди
+**Focus:** Death and memorial traditions
+
+**Content Areas:**
+- Похорон: funeral customs, preparation, burial
+- Поминки: memorial meals, 9 and 40 days
+- Провід (Гробки): cemetery visit traditions
+- Ancestral spirits: вшанування предків
+- Modern adaptations of memorial traditions
+
+**Vocabulary (24 words):**
+похорон, смерть, покійник, труна, могила, цвинтар, поминки, кутя, молитва, свічка, квіти, рушник, траур, пам'ять, душа, предок, провід, гробки, вшанування, традиція, обряд, ритуал, віра, вічність
+
+**Signature Activity Concepts:**
+1. Match-up: Memorial ritual → occasion/timing
+2. Quiz: Traditional funeral customs
+3. Fill-in: Text about провід traditions
+
+---
+
+#### Module 72: Галичина
+**Focus:** Western Ukrainian (Galician) folk traditions
+
+**Content Areas:**
+- Historical context: Austrian influence, Greek Catholic
+- Distinct vocabulary and phonetics
+- Clothing traditions: кептар, сердак
+- Folk architecture: wooden churches
+- Musical traditions: trembita, фіяка
+
+**Vocabulary (24 words):**
+Галичина, галичанин, Львів, Карпати, греко-католик, традиція, особливість, говірка, костюм, кептар, сердак, вишивка, церква, дерево, архітектура, музика, трембіта, коломийка, їжа, обряд, весілля, свято, ідентичність, спадщина
+
+**Signature Activity Concepts:**
+1. Quiz: Identify Galician cultural markers
+2. Match-up: Regional item → function/description
+3. Fill-in: Text about Galician traditions
+
+---
+
+#### Module 73: Слобожанщина
+**Focus:** Eastern Ukrainian (Sloboda) folk traditions
+
+**Content Areas:**
+- Historical context: Cossack resettlement, Russian influence
+- Харків as cultural center
+- Clothing traditions: свита, кобеняк
+- Musical traditions: bandura school
+- Blend of Ukrainian and steppe influences
+
+**Vocabulary (24 words):**
+Слобожанщина, слобожанин, Харків, степ, козак, переселення, традиція, особливість, говірка, костюм, свита, вишивка, орнамент, музика, бандура, пісня, танець, їжа, борщ, вареники, обряд, свято, ідентичність, спадщина
+
+**Signature Activity Concepts:**
+1. Quiz: Identify Slobozhan cultural markers
+2. Match-up: Eastern vs Western Ukrainian traditions
+3. Fill-in: Text about Kharkiv bandura school
+
+---
+
+#### Module 74: Полісся
+**Focus:** Northern (Polissia) forest region traditions
+
+**Content Areas:**
+- Geographic isolation and archaic preservation
+- Древляни heritage: pre-Christian traces
+- Unique ritual traditions: купальські вогні
+- Folk architecture: хата на курячих ніжках
+- Musical traditions: archaic songs
+
+**Vocabulary (24 words):**
+Полісся, поліщук, ліс, болото, древляни, архаїка, традиція, особливість, говірка, укання, костюм, полотно, вишивка, хата, архітектура, обряд, ритуал, купала, вогонь, пісня, замовляння, природа, ізоляція, збереження
+
+**Signature Activity Concepts:**
+1. Quiz: Identify Polissia's archaic features
+2. Match-up: Polissia traditions → origins
+3. Cloze: Text about forest region beliefs
+
+---
+
+#### Module 75: Поділля та Волинь
+**Focus:** Central-Western Ukrainian regional traditions
+
+**Content Areas:**
+- Поділля: rich agricultural traditions
+- Волинь: historical crossroads
+- Distinctive embroidery: чорна вишивка
+- Folk architecture: білі хати
+- Wedding traditions as regional markers
+
+**Vocabulary (24 words):**
+Поділля, подолянин, Волинь, волинянин, хлібороб, традиція, особливість, говірка, костюм, вишивка, чорна, біла, орнамент, хата, архітектура, весілля, обряд, пісня, танець, їжа, ремесло, ярмарок, свято, спадщина
+
+**Signature Activity Concepts:**
+1. Group-sort: Traditions by Podillia vs Volyn
+2. Match-up: Regional embroidery → region
+3. Quiz: Central-Western Ukrainian customs
+
+---
+
+#### Module 76: Класичні композитори
+**Focus:** Ukrainian classical music composers
+
+**Content Areas:**
+- Микола Лисенко: founder of national school
+- Борис Лятошинський: 20th century master
+- Мирослав Скорик: Melody, film scores
+- Валентин Сильвестров: contemporary classical
+- National opera and orchestral traditions
+
+**Vocabulary (24 words):**
+композитор, музика, опера, симфонія, концерт, мелодія, гармонія, оркестр, диригент, співак, хор, романс, пісня, фортепіано, скрипка, національний, класичний, сучасний, творчість, спадщина, школа, традиція, виконання, запис
+
+**Signature Activity Concepts:**
+1. Match-up: Composer → famous work
+2. Quiz: Identify Ukrainian classical music styles
+3. Fill-in: Text about Lysenko's legacy
+
+---
+
+#### Module 77: Сучасна музика
+**Focus:** Contemporary Ukrainian popular music
+
+**Content Areas:**
+- Український рок: ВВ, Океан Ельзи, Бумбокс
+- Поп-музика: Eurovision winners, Руслана, Jamala
+- Фолк-рок: ДахаБраха, ONUKA fusion
+- War-era music: patriotic revival
+- Music as identity and resistance
+
+**Vocabulary (24 words):**
+рок, поп, фольк, електроніка, гурт, виконавець, співак, співачка, альбом, пісня, хіт, концерт, фестиваль, Євробачення, кліп, відео, текст, мелодія, саунд, стиль, тренд, ідентичність, спротив, перемога
+
+**Signature Activity Concepts:**
+1. Match-up: Band/artist → genre/style
+2. Quiz: Ukrainian music milestones
+3. Fill-in: Text about Ukrainian Eurovision history
+
+---
+
+#### Module 78: Українське кіно
+**Focus:** Ukrainian cinema history and contemporary
+
+**Content Areas:**
+- Олександр Довженко: поетичне кіно, Земля
+- Радянський період: Київська кіностудія
+- Незалежність: новий український фільм
+- Сучасні режисери: Сенцов, Лозниця
+- War documentaries and international recognition
+
+**Vocabulary (24 words):**
+кіно, фільм, режисер, актор, акторка, сценарій, зйомка, кадр, монтаж, саундтрек, прем'єра, фестиваль, нагорода, Оскар, документальний, художній, короткометражний, студія, продюсер, глядач, критик, рецензія, касовий, культовий
+
+**Signature Activity Concepts:**
+1. Match-up: Director → famous film
+2. Quiz: Ukrainian cinema milestones
+3. Cloze: Text about Dovzhenko's artistic style
+
+---
+
+#### Module 79: Спортивні герої
+**Focus:** Ukrainian sports champions and national pride
+
+**Content Areas:**
+- Футбол: Шевченко, Динамо Київ, збірна
+- Бокс: брати Клички, Усик, Ломаченко
+- Олімпійські чемпіони: gymnastics, wrestling
+- Шахи: grandmasters tradition
+- Sports as national identity
+
+**Vocabulary (24 words):**
+спорт, спортсмен, чемпіон, медаль, золото, срібло, бронза, перемога, рекорд, турнір, олімпіада, чемпіонат, збірна, клуб, тренер, фанат, вболівальник, футбол, бокс, гімнастика, шахи, легенда, слава, гордість
+
+**Signature Activity Concepts:**
+1. Match-up: Athlete → sport/achievement
+2. Quiz: Ukrainian sports milestones
+3. Fill-in: Text about Klitschko brothers
+
+---
+
+#### Module 80: C1.4 Checkpoint
+**Focus:** Folk culture comprehensive assessment
+
+**Assessment Areas:**
+- Folk music and dance terminology
+- Craft traditions and symbolism
+- Ritual calendar knowledge
+- Regional identity markers
+- Contemporary cultural expressions
+
+**Vocabulary (15 words - review):**
+традиція, спадщина, обряд, символ, регіон, музика, танець, ремесло, віра, легенда, пісня, свято, ідентичність, збереження, відродження
+
+**Checkpoint Components:**
+1. Comprehensive quiz: Folk culture knowledge
+2. Essay: Regional identity analysis (with model answer)
+3. Oral: Describe a Ukrainian tradition
+4. Self-assessment: CEFR C1 folk culture checklist
 
 ---
 
@@ -1603,7 +2099,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 - Build literary vocabulary
 - Appreciate national literature
 
-### Module Specifications
+### Module Specifications Overview
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
@@ -1623,11 +2119,310 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 | 94 | C1.5 Review | Review | 19th century literature |
 | 95 | C1.5 Checkpoint | Review | Assessment |
 
-### Vocabulary Plan C1.5 (~400 words)
-- Literary terms: сюжет, фабула, тема, мотив, образ, символ, алегорія
-- Analysis vocabulary: аналіз, інтерпретація, критика, рецензія
-- Period-specific vocabulary from each author
-- Poetic vocabulary: вірш, строфа, рима, ритм, розмір, ямб, хорей
+### Module Content Specifications C1.5
+
+---
+
+#### Module 81: Історія української літератури
+**Focus:** Overview of Ukrainian literary periods and movements
+
+**Content Areas:**
+- Давня література: chronicles, religious texts, polemics
+- Бароко: Сковорода, Кониський
+- Романтизм: national awakening
+- Реалізм: social consciousness
+- Модернізм: early 20th century experimentation
+- Timeline: 11th century to present
+
+**Vocabulary (24 words):**
+література, період, епоха, напрям, течія, рух, давній, середньовічний, бароко, романтизм, реалізм, модернізм, класицизм, автор, письменник, поет, драматург, твір, жанр, стиль, традиція, вплив, розвиток, спадщина
+
+**Signature Activity Concepts:**
+1. Match-up: Literary period → key characteristics
+2. Quiz: Identify periods from text excerpts
+3. Fill-in: Timeline of Ukrainian literature
+
+---
+
+#### Module 82: Котляревський: Енеїда
+**Focus:** Ivan Kotlyarevsky and the birth of modern Ukrainian literature
+
+**Content Areas:**
+- Біографія: life in Poltava, military service
+- Енеїда: burlesque adaptation of Virgil
+- Language innovation: vernacular Ukrainian
+- Cossack characters as national symbols
+- Historical significance: 1798 publication date
+
+**Vocabulary (24 words):**
+Котляревський, Енеїда, бурлеск, травестія, пародія, народна мова, Вергілій, козак, Еней, пригоди, гумор, сатира, побут, звичаї, мова, стиль, новаторство, традиція, відродження, національний, класик, основоположник, спадщина, вплив
+
+**Signature Activity Concepts:**
+1. Quiz: Identify burlesque techniques in excerpts
+2. Cloze: Famous passages from Eneida
+3. Match-up: Character → their role in the narrative
+
+---
+
+#### Module 83: Шевченко: Життя
+**Focus:** Taras Shevchenko's biography and historical context
+
+**Content Areas:**
+- Кріпацтво: birth into serfdom, early hardship
+- Визволення: redemption through art
+- Петербург: artistic training, Кирило-Мефодіївське братство
+- Заслання: 10-year exile to Kazakhstan
+- Повернення та смерть: final years, legacy
+
+**Vocabulary (24 words):**
+Шевченко, кріпак, кріпацтво, панщина, визволення, викуп, художник, поет, братство, арешт, заслання, солдат, каторга, повернення, смерть, могила, Канів, пам'ятник, національний, пророк, геній, мученик, символ, свобода
+
+**Signature Activity Concepts:**
+1. Fill-in: Biography timeline with key dates
+2. Quiz: Life events and their significance
+3. Match-up: Period of life → artistic works
+
+---
+
+#### Module 84: Шевченко: Поезія
+**Focus:** Analysis of Shevchenko's major poetic works
+
+**Content Areas:**
+- Кобзар: structure and themes
+- Катерина: social criticism, women's fate
+- Гайдамаки: historical epic
+- Заповіт: national testament
+- Poetic techniques: imagery, rhythm, folk elements
+
+**Vocabulary (24 words):**
+Кобзар, Катерина, Гайдамаки, Заповіт, поема, балада, елегія, ліричний, епічний, тема, мотив, образ, символ, метафора, алегорія, рима, ритм, строфа, рефрен, народний, патріотичний, соціальний, критика, ідеал
+
+**Signature Activity Concepts:**
+1. Cloze: Famous poem excerpts
+2. Quiz: Identify poems by theme/imagery
+3. Match-up: Poetic device → example from Shevchenko
+
+---
+
+#### Module 85: Шевченко: Спадщина
+**Focus:** Shevchenko's influence and cultural legacy
+
+**Content Areas:**
+- Вплив на літературу: generations of writers
+- Шевченкіана: art, music, monuments
+- Тарас у діаспорі: global Ukrainian identity
+- Радянська інтерпретація vs. national reading
+- Сучасне значення: war, resistance, identity
+
+**Vocabulary (24 words):**
+спадщина, вплив, традиція, школа, послідовник, наслідувач, пам'ятник, музей, вшанування, свято, читання, інтерпретація, канон, культ, ідеологія, національний, радянський, сучасний, актуальний, вічний, безсмертний, символ, ідентичність, опір
+
+**Signature Activity Concepts:**
+1. Quiz: Shevchenko's influence on later writers
+2. Fill-in: Text about Shevchenko commemorations
+3. Essay: Contemporary relevance of Shevchenko
+
+---
+
+#### Module 86: Франко: Життя і поезія
+**Focus:** Ivan Franko's life and lyric poetry
+
+**Content Areas:**
+- Біографія: Галичина, education, political activism
+- Каменярі: labor and struggle imagery
+- Ліричні поезії: love, nature, philosophy
+- Мойсей: national prophet theme
+- Multilingual legacy: Ukrainian, Polish, German
+
+**Vocabulary (24 words):**
+Франко, Галичина, політика, соціалізм, активіст, в'язниця, університет, професор, каменяр, праця, боротьба, поступ, ліричний, любов, природа, філософія, Мойсей, пророк, народ, нація, воля, свобода, каторга, ідеал
+
+**Signature Activity Concepts:**
+1. Cloze: Famous Franko poems
+2. Match-up: Theme → poem title
+3. Quiz: Franko's political and literary activities
+
+---
+
+#### Module 87: Франко: Проза
+**Focus:** Ivan Franko's prose works
+
+**Content Areas:**
+- Захар Беркут: historical novel, Carpathian setting
+- Борислав сміється: social realism, oil workers
+- Оповідання: short stories, rural Galician life
+- Prose techniques: realism, psychological depth
+- Franko as literary critic and scholar
+
+**Vocabulary (24 words):**
+проза, роман, повість, оповідання, новела, Захар Беркут, Борислав, нафта, робітник, село, Карпати, історичний, соціальний, реалізм, психологізм, характер, конфлікт, сюжет, композиція, критика, дослідження, переклад, редактор, журнал
+
+**Signature Activity Concepts:**
+1. Quiz: Identify Franko prose works by description
+2. Fill-in: Excerpts from Zakhar Berkut
+3. Match-up: Work → theme/setting
+
+---
+
+#### Module 88: Леся Українка: Поезія
+**Focus:** Lesya Ukrainka's lyric and philosophical poetry
+
+**Content Areas:**
+- Біографія: illness, determination, European travels
+- Contra Spem Spero: hope against despair
+- Лісова пісня: nature imagery, Ukrainian mythology
+- Philosophical themes: will, freedom, struggle
+- Feminist perspective in 19th century context
+
+**Vocabulary (24 words):**
+Леся Українка, Лариса Косач, хвороба, воля, надія, відчай, боротьба, мрія, ідеал, природа, ліс, вода, казка, міф, символ, метафора, філософія, свобода, жінка, сила, краса, трагедія, любов, вічність
+
+**Signature Activity Concepts:**
+1. Cloze: Contra Spem Spero and other famous poems
+2. Quiz: Identify Lesya Ukrainka's themes
+3. Match-up: Symbol → meaning in her poetry
+
+---
+
+#### Module 89: Леся Українка: Драма
+**Focus:** Lesya Ukrainka's dramatic works
+
+**Content Areas:**
+- Лісова пісня: forest spirits, love, sacrifice
+- Кассандра: Greek mythology, prophecy
+- Камінний господар: Don Juan retelling
+- Dramatic techniques: verse drama, symbolism
+- Mythological and historical settings
+
+**Vocabulary (24 words):**
+драма, п'єса, дія, акт, сцена, діалог, монолог, персонаж, герой, героїня, Мавка, Лукаш, конфлікт, трагедія, символ, міф, легенда, античність, вірш, ритм, постановка, театр, режисер, інтерпретація
+
+**Signature Activity Concepts:**
+1. Quiz: Identify characters and their symbolic roles
+2. Cloze: Famous dialogues from Лісова пісня
+3. Match-up: Drama → mythological/historical source
+
+---
+
+#### Module 90: Вовчок та Мирний
+**Focus:** Marko Vovchok and Panas Myrny - social realism
+
+**Content Areas:**
+- Марко Вовчок: women's perspective, serfdom critique
+- Інститутка, Народні оповідання: short prose
+- Панас Мирний: Хіба ревуть воли, як ясла повні?
+- Social realism techniques: типовість, народність
+- Village life and social injustice
+
+**Vocabulary (24 words):**
+Вовчок, Мирний, реалізм, соціальний, критика, кріпацтво, село, селянин, селянка, пан, панщина, страждання, несправедливість, бідність, праця, жінка, доля, типовий, народний, оповідання, роман, повість, правда, совість
+
+**Signature Activity Concepts:**
+1. Match-up: Author → work → theme
+2. Quiz: Social issues in realist literature
+3. Cloze: Excerpts showing social criticism
+
+---
+
+#### Module 91: Коцюбинський
+**Focus:** Mykhailo Kotsiubynsky and impressionist prose
+
+**Content Areas:**
+- Біографія: Вінниця, travel, European influences
+- Тіні забутих предків: Hutsul life, love, death
+- Fata Morgana: peasant revolution
+- Impressionist techniques: sensory detail, mood
+- Influence on Ukrainian cinema (Параджанов)
+
+**Vocabulary (24 words):**
+Коцюбинський, імпресіонізм, новела, оповідання, Тіні забутих предків, Гуцульщина, Карпати, кохання, смерть, природа, настрій, колір, звук, образ, символ, Fata Morgana, революція, село, трагедія, краса, містика, фольклор, кіно, екранізація
+
+**Signature Activity Concepts:**
+1. Cloze: Sensory passages from Shadows of Forgotten Ancestors
+2. Quiz: Identify impressionist techniques
+3. Match-up: Work → setting/theme
+
+---
+
+#### Module 92: Літературознавча термінологія
+**Focus:** Literary analysis vocabulary and concepts
+
+**Content Areas:**
+- Наративні терміни: сюжет, фабула, оповідач, фокалізація
+- Образність: метафора, метонімія, символ, алегорія
+- Жанрові поняття: роман, повість, новела, драма
+- Аналітичні категорії: тема, мотив, ідея, конфлікт
+- Стилістичні прийоми: іронія, гротеск, парадокс
+
+**Vocabulary (30 words):**
+сюжет, фабула, композиція, зав'язка, кульмінація, розв'язка, оповідач, персонаж, герой, антигерой, конфлікт, тема, мотив, ідея, образ, символ, алегорія, метафора, метонімія, епітет, порівняння, іронія, сатира, гротеск, парадокс, жанр, стиль, форма, зміст, інтерпретація
+
+**Signature Activity Concepts:**
+1. Match-up: Literary term → definition
+2. Quiz: Identify devices in text excerpts
+3. Fill-in: Literary analysis using proper terminology
+
+---
+
+#### Module 93: Аналіз поезії
+**Focus:** Poetry analysis skills and terminology
+
+**Content Areas:**
+- Версифікація: розмір, ритм, стопа
+- Рими: парна, перехресна, кільцева
+- Строфіка: катрен, терцина, сонет
+- Звукопис: алітерація, асонанс
+- Практичний аналіз: step-by-step method
+
+**Vocabulary (28 words):**
+вірш, поезія, строфа, рядок, розмір, ритм, стопа, ямб, хорей, дактиль, анапест, амфібрахій, рима, римування, парний, перехресний, кільцевий, алітерація, асонанс, звукопис, образ, тропи, ліричний герой, настрій, тон, інтонація, цезура, верлібр
+
+**Signature Activity Concepts:**
+1. Quiz: Identify poetic meters in examples
+2. Match-up: Rhyme scheme → type name
+3. Fill-in: Complete poetry analysis template
+
+---
+
+#### Module 94: C1.5 Review
+**Focus:** 19th century Ukrainian literature comprehensive review
+
+**Review Areas:**
+- Major authors: Kotlyarevsky, Shevchenko, Franko, Lesya Ukrainka
+- Literary movements: Romanticism, Realism
+- Key works and their themes
+- Literary analysis skills application
+- Cross-author comparisons
+
+**Vocabulary (20 words - review):**
+романтизм, реалізм, класик, спадщина, вплив, традиція, новаторство, тема, мотив, образ, символ, метафора, національний, соціальний, ліричний, епічний, драматичний, аналіз, інтерпретація, критика
+
+**Review Components:**
+1. Comprehensive quiz: Authors, works, movements
+2. Comparative essay: Two authors (with model answer)
+3. Poetry analysis: Unseen poem exercise
+4. Discussion: Literature and national identity
+
+---
+
+#### Module 95: C1.5 Checkpoint
+**Focus:** Classical literature comprehensive assessment
+
+**Assessment Areas:**
+- Literary history knowledge
+- Author biographies and contexts
+- Major works identification
+- Literary analysis terminology
+- Poetry analysis skills
+
+**Vocabulary (15 words - assessment focus):**
+література, період, автор, твір, жанр, стиль, тема, образ, символ, аналіз, критика, інтерпретація, вплив, спадщина, традиція
+
+**Checkpoint Components:**
+1. Written exam: Literary knowledge (60 min)
+2. Essay: Literary analysis (with rubric)
+3. Oral: Present analysis of chosen work
+4. Self-assessment: CEFR C1 literature checklist
 
 ---
 
@@ -1640,7 +2435,7 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 - Achieve C1 certification
 - Prepare for C2
 
-### Module Specifications
+### Module Specifications Overview
 
 | # | Title | Type | Focus |
 |---|-------|------|-------|
@@ -1665,11 +2460,473 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 | 114 | C1 Фінал: Письмо | Exam | Timed essay |
 | 115 | C1 РІВЕНЬ ЗАВЕРШЕНО | Milestone | Certification |
 
-### Vocabulary Plan C1.6 (~350 words)
-- 20th century literary vocabulary
-- Contemporary terms: постмодернізм, інтертекстуальність, метанаратив
-- War literature vocabulary: окупація, спротив, травма, деколонізація
-- Academic/capstone vocabulary: дисертація, захист, рецензент
+### Module Content Specifications C1.6
+
+---
+
+#### Module 96: Модернізм
+**Focus:** Ukrainian literary modernism (early 20th century)
+
+**Content Areas:**
+- Молода Муза: Львів symbolist group
+- Українська хата: Kyiv modernists
+- Symbolism, impressionism, expressionism influences
+- Key figures: Ольга Кобилянська, Василь Стефаник
+- European context and Ukrainian specificity
+
+**Vocabulary (24 words):**
+модернізм, символізм, імпресіонізм, експресіонізм, декаданс, авангард, естетика, краса, форма, експеримент, новаторство, напрям, течія, група, маніфест, стиль, образ, символ, настрій, суб'єктивізм, індивідуалізм, мистецтво, література, Європа
+
+**Signature Activity Concepts:**
+1. Match-up: Modernist movement → key characteristics
+2. Quiz: Identify modernist writers and works
+3. Cloze: Modernist manifesto excerpts
+
+---
+
+#### Module 97: Розстріляне відродження
+**Focus:** The Executed Renaissance - 1920s-30s literary tragedy
+
+**Content Areas:**
+- Культурне відродження 1920-х: explosion of creativity
+- Сталінські репресії: destruction of a generation
+- Микола Хвильовий: Я (Романтика), psychological prose
+- Микола Зеров: neoclassicist poetry, translations
+- Валер'ян Підмогильний: Місто, urban novel
+- Memory and rehabilitation
+
+**Vocabulary (24 words):**
+розстріляне відродження, репресії, терор, арешт, розстріл, табір, заслання, жертва, трагедія, втрата, покоління, творчість, талант, геній, українізація, культура, знищення, пам'ять, реабілітація, спадщина, відновлення, Хвильовий, Зеров, Підмогильний
+
+**Signature Activity Concepts:**
+1. Quiz: Authors and their fates
+2. Cloze: Excerpts from Khvylovy and Pidmohylny
+3. Essay: Impact of repressions on Ukrainian literature
+
+---
+
+#### Module 98: Тичина та Рильський
+**Focus:** Major Soviet-era Ukrainian poets
+
+**Content Areas:**
+- Павло Тичина: early genius, Сонячні кларнети
+- Compromise with Soviet power: tragic trajectory
+- Максим Рильський: neoclassicism, translations
+- Socialist realism pressures
+- Literary survival strategies under totalitarianism
+
+**Vocabulary (24 words):**
+Тичина, Рильський, поезія, кларнети, сонце, музика, ритм, образ, символ, неокласицизм, соцреалізм, компроміс, тиск, цензура, виживання, творчість, талант, трагедія, еволюція, раннє, пізнє, переклад, спадщина, оцінка
+
+**Signature Activity Concepts:**
+1. Cloze: Famous Tychyna poems (early period)
+2. Match-up: Poet → work → period
+3. Quiz: Contrast early and late works
+
+---
+
+#### Module 99: Радянський період
+**Focus:** Ukrainian literature under Soviet rule (1960s-80s)
+
+**Content Areas:**
+- Шістдесятники: Симоненко, Драч, Вінграновський
+- Дисидентський рух: underground literature
+- Самвидав: self-published resistance texts
+- Censorship and self-censorship
+- Hidden meanings and Aesopian language
+
+**Vocabulary (24 words):**
+шістдесятники, дисидент, самвидав, підпілля, цензура, заборона, арешт, переслідування, спротив, свобода, правда, совість, покоління, відлига, застій, Симоненко, Драч, Вінграновський, поезія, метафора, езопова мова, символ, протест, надія
+
+**Signature Activity Concepts:**
+1. Quiz: Identify шістдесятники and their works
+2. Match-up: Historical period → literary characteristics
+3. Cloze: Symonenko's famous poems
+
+---
+
+#### Module 100: Ліна Костенко
+**Focus:** Lina Kostenko - living classic of Ukrainian poetry
+
+**Content Areas:**
+- Біографія: silence years, principled stance
+- Маруся Чурай: historical novel in verse
+- Ліричні збірки: Над берегами вічної ріки
+- Poetic philosophy: history, memory, identity
+- Contemporary relevance and public role
+
+**Vocabulary (24 words):**
+Костенко, Маруся Чурай, роман у віршах, історія, пам'ять, ідентичність, нація, доля, любов, трагедія, краса, мудрість, совість, голос, мовчання, принципи, мужність, класик, сучасність, актуальність, вплив, покоління, учитель, легенда
+
+**Signature Activity Concepts:**
+1. Cloze: Famous Kostenko poems
+2. Quiz: Marusya Churay plot and themes
+3. Essay: Kostenko's role in Ukrainian culture
+
+---
+
+#### Module 101: Василь Стус
+**Focus:** Vasyl Stus - poet-martyr of Ukrainian literature
+
+**Content Areas:**
+- Біографія: persecution, imprisonment, death in Gulag
+- Палімпсести: poems written in prison
+- Philosophical depth: existentialism, spirituality
+- Translation work: Goethe, Rilke
+- Symbol of resistance and national conscience
+
+**Vocabulary (24 words):**
+Стус, Палімпсести, в'язниця, табір, смерть, мученик, жертва, спротив, совість, свобода, дух, душа, екзистенція, філософія, глибина, краса, трагедія, величність, переклад, Гете, Рільке, пам'ять, символ, вічність
+
+**Signature Activity Concepts:**
+1. Cloze: Poems from Palimpsests
+2. Quiz: Stus biography and significance
+3. Match-up: Philosophical themes → poetic images
+
+---
+
+#### Module 102: Діаспорна література
+**Focus:** Ukrainian diaspora literature (20th century)
+
+**Content Areas:**
+- Еміграція хвилі: 1920s, post-WWII, Cold War
+- Іван Багряний: Тигролови, adventure novel
+- Нью-Йоркська група: avant-garde poetry
+- Еммі Андрієвська, Юрій Тарнавський: experimental prose
+- Diaspora role in preserving Ukrainian culture
+
+**Vocabulary (24 words):**
+діаспора, еміграція, вигнання, біженець, хвиля, покоління, Нью-Йорк, Мюнхен, Париж, збереження, культура, мова, традиція, Багряний, Тигролови, пригоди, авангард, експеримент, група, поет, прозаїк, спадщина, зв'язок, повернення
+
+**Signature Activity Concepts:**
+1. Match-up: Diaspora author → work → location
+2. Quiz: Diaspora literary movements
+3. Cloze: Excerpts from Bahryanyi
+
+---
+
+#### Module 103: Незалежність
+**Focus:** Ukrainian literature after 1991
+
+**Content Areas:**
+- 1990s explosion: freedom of expression
+- Бу-Ба-Бу: Andrukhovych, Irvanets, Neborak
+- Станіславський феномен: Ivano-Frankivsk school
+- New publishers, journals, literary prizes
+- Search for new identity and themes
+
+**Vocabulary (24 words):**
+незалежність, свобода, вибух, творчість, експеримент, постмодернізм, карнавал, гра, іронія, пародія, Бу-Ба-Бу, Станіслав, феномен, видавництво, журнал, премія, критика, дискусія, ідентичність, нова хвиля, покоління, пошук, оновлення, традиція
+
+**Signature Activity Concepts:**
+1. Quiz: Post-independence literary movements
+2. Match-up: Author → literary group → style
+3. Fill-in: Text about 1990s literary explosion
+
+---
+
+#### Module 104: Андрухович
+**Focus:** Yuri Andrukhovych - postmodern prose master
+
+**Content Areas:**
+- Біографія: Бу-Ба-Бу founding, international recognition
+- Рекреації: carnival, performance, Ukrainian identity
+- Московіада: satirical journey
+- Perverzion: European and Ukrainian themes
+- Essays and public intellectual role
+
+**Vocabulary (24 words):**
+Андрухович, Рекреації, Московіада, Perverzion, постмодернізм, карнавал, свято, гра, іронія, сатира, пародія, ідентичність, Україна, Європа, есей, публіцистика, інтелектуал, голос, роман, стиль, мова, гумор, провокація, експеримент
+
+**Signature Activity Concepts:**
+1. Quiz: Andrukhovych's novels and themes
+2. Cloze: Excerpts showing postmodern techniques
+3. Essay: Andrukhovych's view of Ukrainian identity
+
+---
+
+#### Module 105: Забужко
+**Focus:** Oksana Zabuzhko - feminist voice in Ukrainian literature
+
+**Content Areas:**
+- Біографія: academic and literary career
+- Польові дослідження з українського сексу: breakthrough novel
+- Музей покинутих секретів: historical saga
+- Feminist perspective and national trauma
+- Public intellectual and cultural critic
+
+**Vocabulary (24 words):**
+Забужко, Польові дослідження, Музей покинутих секретів, фемінізм, жінка, тіло, сексуальність, травма, історія, пам'ять, ідентичність, нація, колоніалізм, деколонізація, інтелектуал, критика, аналіз, есей, роман, публіцистика, голос, провокація, дискусія, вплив
+
+**Signature Activity Concepts:**
+1. Quiz: Zabuzhko's major works and themes
+2. Cloze: Excerpts from Field Research
+3. Essay: Feminist themes in Ukrainian literature
+
+---
+
+#### Module 106: Жадан
+**Focus:** Serhiy Zhadan - voice of Eastern Ukraine
+
+**Content Areas:**
+- Біографія: Харків, rock music, activism
+- Ворошиловград: post-Soviet Donbas
+- Інтернат: war novel
+- Poetry: urban landscapes, social issues
+- War-era activism and humanitarian work
+
+**Vocabulary (24 words):**
+Жадан, Ворошиловград, Інтернат, Харків, Донбас, схід, місто, індустріальний, постсовок, війна, окупація, біженець, волонтер, активізм, рок, музика, поезія, проза, реалізм, соціальний, людина, біль, надія, солідарність
+
+**Signature Activity Concepts:**
+1. Quiz: Zhadan's works and Eastern Ukraine themes
+2. Cloze: Excerpts from Internat
+3. Match-up: Work → setting → theme
+
+---
+
+#### Module 107: Воєнна література
+**Focus:** Ukrainian war literature (2014-present)
+
+**Content Areas:**
+- 2014 as watershed: new literary generation
+- Фронтова поезія: soldier-poets
+- Документальна проза: memoirs, reportage
+- Trauma and resilience narratives
+- International recognition and translation
+
+**Vocabulary (24 words):**
+війна, фронт, солдат, доброволець, оборона, окупація, агресія, травма, біль, втрата, смерть, пам'ять, спротив, мужність, героїзм, жертва, виживання, надія, відновлення, свідчення, документ, правда, голос, покоління
+
+**Signature Activity Concepts:**
+1. Quiz: War literature authors and works
+2. Cloze: Poetry from the front
+3. Essay: Literature as witness to war
+
+---
+
+#### Module 108: Літературна критика
+**Focus:** Literary criticism and review writing skills
+
+**Content Areas:**
+- Критична стаття: structure and conventions
+- Рецензія: book review format
+- Аналітичний есей: argument development
+- Критичний словник: evaluation vocabulary
+- Ukrainian literary journals and platforms
+
+**Vocabulary (24 words):**
+критика, рецензія, огляд, аналіз, оцінка, аргумент, теза, доказ, приклад, цитата, інтерпретація, висновок, стиль, форма, зміст, достоїнства, недоліки, рекомендація, видання, журнал, платформа, дискусія, полеміка, традиція
+
+**Signature Activity Concepts:**
+1. Fill-in: Review structure template
+2. Quiz: Critical vocabulary usage
+3. Production: Write a book review (with model answer)
+
+---
+
+#### Module 109: C1.6 Review
+**Focus:** 20th-21st century Ukrainian literature review
+
+**Review Areas:**
+- Modernism to postmodernism trajectory
+- Soviet period and resistance
+- Independence and new voices
+- War literature emergence
+- Critical analysis skills
+
+**Vocabulary (20 words - review):**
+модернізм, постмодернізм, репресії, дисидент, незалежність, війна, травма, ідентичність, деколонізація, спадщина, традиція, новаторство, голос, покоління, критика, аналіз, інтерпретація, значення, актуальність, майбутнє
+
+**Review Components:**
+1. Comprehensive quiz: 20th-21st century literature
+2. Comparative essay: Two contemporary authors
+3. Critical review: Analyze a modern work
+4. Discussion: Ukrainian literature today
+
+---
+
+#### Module 110: C1.6 Integration
+**Focus:** Literary essay integration practice
+
+**Essay Practice Areas:**
+- Тематичний есей: cross-period theme analysis
+- Порівняльний есей: author/work comparison
+- Критичний есей: evaluation with evidence
+- Дослідницький есей: research integration
+- Capstone preparation
+
+**Vocabulary (15 words - essay focus):**
+есей, теза, аргумент, доказ, приклад, цитата, структура, вступ, висновок, порівняння, аналіз, оцінка, дослідження, джерело, бібліографія
+
+**Integration Components:**
+1. Timed essay: Literary topic (with rubric)
+2. Peer review: Exchange and critique
+3. Revision: Improve based on feedback
+4. Model answers: Study exemplary essays
+
+---
+
+#### Module 111: Капстон: Проєкт
+**Focus:** C1 Capstone Research Paper
+
+**Project Requirements:**
+- **Length:** 2,000-3,000 words in Ukrainian
+- **Register:** Academic throughout
+- **Sources:** Minimum 5 Ukrainian-language sources
+- **Citation:** ДСТУ format
+
+**Topic Options:**
+1. Literary analysis (author, period, or theme)
+2. Cultural study (tradition, region, or practice)
+3. Sociolinguistic research (dialects, Surzhyk, language policy)
+4. Current affairs analysis (post-2014 Ukraine)
+
+**Structure:**
+- Вступ (Introduction with thesis): 200-300 words
+- Огляд літератури (Literature review): 400-500 words
+- Основна частина (Analysis/argument): 1,000-1,500 words
+- Висновки (Conclusions): 200-300 words
+- Література (References): ДСТУ format
+
+**Vocabulary (25 words):**
+дослідження, тема, теза, гіпотеза, метод, аналіз, джерело, література, цитата, посилання, аргумент, доказ, приклад, структура, вступ, огляд, частина, висновок, бібліографія, формат, академічний, науковий, оригінальний, внесок, значення
+
+**Model Answer:** Full 2,500-word example paper provided with annotations
+
+**Assessment Rubric:**
+| Criterion | Points | Description |
+|-----------|--------|-------------|
+| Thesis clarity | 20 | Clear, arguable, specific thesis |
+| Evidence quality | 25 | Relevant sources, proper citations |
+| Argument logic | 20 | Coherent structure, valid reasoning |
+| Academic register | 20 | Consistent Ukrainian academic style |
+| Language accuracy | 15 | Grammar, vocabulary, spelling |
+
+---
+
+#### Module 112: Капстон: Захист
+**Focus:** C1 Capstone Oral Defense
+
+**Defense Format:**
+- **Presentation:** 10-15 minutes in Ukrainian
+- **Visual aids:** Optional slides (in Ukrainian)
+- **Q&A:** 5-10 minutes (simulated)
+
+**Presentation Structure:**
+1. Вступ: Topic, thesis, significance (2 min)
+2. Методологія: Approach, sources (2 min)
+3. Основні результати: Key findings (6-8 min)
+4. Висновки: Conclusions, implications (2-3 min)
+
+**Vocabulary (20 words):**
+захист, презентація, доповідь, слайд, аудиторія, питання, відповідь, аргумент, результат, висновок, значення, внесок, обмеження, перспектива, дискусія, уточнення, пояснення, обґрунтування, переконливість, впевненість
+
+**Q&A Simulation Topics:**
+- Why did you choose this topic?
+- What are the limitations of your research?
+- How does this contribute to the field?
+- What further research would you suggest?
+
+**Assessment Rubric:**
+| Criterion | Points |
+|-----------|--------|
+| Content accuracy & depth | 25 |
+| Academic register mastery | 25 |
+| Argument structure & logic | 20 |
+| Pronunciation & fluency | 15 |
+| Response to questions | 15 |
+
+**Model Defense:** Transcript and audio example provided
+
+---
+
+#### Module 113: C1 Фінал: Читання
+**Focus:** C1 Final Reading Comprehension Exam
+
+**Exam Format:**
+- **Duration:** 90 minutes
+- **Texts:** 3-4 authentic Ukrainian texts
+- **Length:** 2,500-3,500 total words
+- **Question types:** Multiple choice, short answer, summary
+
+**Text Types:**
+- Academic article excerpt
+- Literary criticism
+- News analysis
+- Cultural essay
+
+**Skills Assessed:**
+- Main idea identification
+- Detail comprehension
+- Inference and implication
+- Author's purpose and tone
+- Vocabulary in context
+
+**Vocabulary (15 words - exam focus):**
+текст, розуміння, аналіз, питання, відповідь, деталь, головна думка, висновок, тон, мета, контекст, значення, синонім, парафраз, резюме
+
+**Sample Exam:** Full practice exam with answer key provided
+
+---
+
+#### Module 114: C1 Фінал: Письмо
+**Focus:** C1 Final Timed Essay Exam
+
+**Exam Format:**
+- **Duration:** 90 minutes
+- **Length:** 500-700 words
+- **Essay type:** Argumentative or analytical
+
+**Prompt Types:**
+- Literary analysis question
+- Cultural commentary topic
+- Sociolinguistic issue
+- Current affairs argument
+
+**Assessment Criteria:**
+| Criterion | Points |
+|-----------|--------|
+| Task response | 25 |
+| Coherence & cohesion | 25 |
+| Lexical resource | 25 |
+| Grammatical range & accuracy | 25 |
+
+**Vocabulary (15 words - essay exam focus):**
+есей, аргумент, теза, структура, вступ, основна частина, висновок, зв'язок, перехід, лексика, граматика, точність, стиль, регістр, час
+
+**Sample Prompts and Model Answers:** 3 complete examples provided
+
+---
+
+#### Module 115: C1 РІВЕНЬ ЗАВЕРШЕНО
+**Focus:** C1 Level Completion and Certification
+
+**Completion Requirements:**
+- [ ] All 114 modules completed
+- [ ] C1.1-C1.6 checkpoints passed
+- [ ] Capstone research paper submitted (2,000+ words)
+- [ ] Capstone oral defense completed
+- [ ] Final reading exam passed (70%+)
+- [ ] Final writing exam passed (70%+)
+
+**CEFR C1 Can-Do Statements:**
+- Розуміти широкий спектр вимогливих, довгих текстів і розпізнавати приховане значення
+- Висловлюватися швидко і спонтанно без помітних труднощів у доборі слів
+- Гнучко й ефективно використовувати мову в соціальних, академічних і професійних цілях
+- Створювати чіткі, добре структуровані, детальні тексти на складні теми
+
+**Certificate Content:**
+- Level: C1 (Рівень вільного володіння)
+- Skills verified: Reading, Writing, Listening, Speaking
+- Capstone topic completed
+- Date of completion
+
+**Transition to C2:**
+- C2 focuses on native-like proficiency
+- 7 functional styles mastery
+- Literary creativity
+- Professional specialization tracks
 
 ---
 
@@ -1844,12 +3101,12 @@ Before generating any C1 module:
 
 | Phase | Modules | Status |
 |-------|---------|--------|
-| C1.1 | 01-20 | 📝 Detailed specs |
-| C1.2 | 21-35 | 📝 Detailed specs |
-| C1.3 | 36-55 | 📝 Detailed specs |
-| C1.4 | 56-80 | 📝 Summary specs (moved from B2) |
-| C1.5 | 81-95 | 📝 Summary specs |
-| C1.6 | 96-115 | 📝 Summary specs |
+| C1.1 | 01-20 | ✅ Detailed specs complete |
+| C1.2 | 21-35 | ✅ Detailed specs complete |
+| C1.3 | 36-55 | ✅ Detailed specs complete |
+| C1.4 | 56-80 | ✅ Detailed specs complete |
+| C1.5 | 81-95 | ✅ Detailed specs complete |
+| C1.6 | 96-115 | ✅ Detailed specs complete (incl. capstone rubrics)
 
 ---
 

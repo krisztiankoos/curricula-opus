@@ -19,14 +19,13 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **The Living Verb II** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 101 | Included in Core |
 | **Presentation** | ✅ | 328 | Included in Core |
 | **Practice** | ⚪️ | 226 | Skipped |
 | **Production** | ➖ | 54 | Excluded Type |
 | **Cultural Insight** | ✅ | 191 | Included in Core |
 | **Summary** | ✅ | 75 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Class II or Class I?** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Verbs and Actions** | 🎮 | 12 | Activity (12 items, min 8) |
@@ -36,3 +35,4 @@
 | **group-sort: Verb Types** | 🎮 | 15 | Activity (15 items, min 8) |
 | **fill-in: Complete the Dialogue** | 🎮 | 13 | Activity (13 items, min 8) |
 | **quiz: Choose the Right Verb** | 🎮 | 12 | Activity (12 items, min 8) |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

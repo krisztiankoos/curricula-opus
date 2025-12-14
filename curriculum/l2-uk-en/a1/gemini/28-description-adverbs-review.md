@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 832/750
+- **Words:** ✅ 946/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -19,15 +19,15 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Description: Adverbs** | ⚪️ | 0 | Skipped |
+| **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 98 | Included in Core |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **How to Form Adverbs** | ⚪️ | 76 | Skipped |
 | **Frequency Adverbs: How Often?** | ⚪️ | 120 | Skipped |
 | **Degree Adverbs: How Much?** | ⚪️ | 0 | Skipped |
 | **Examples in Context** | ✅ | 175 | Included in Core |
 | **Dialogues** | ✅ | 363 | Included in Core |
+| **Summary** | ✅ | 114 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Adjective → Adverb** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Frequency Scale** | 🎮 | 8 | Activity (8 items, min 8) |
@@ -38,4 +38,4 @@
 | **quiz: Frequency Meaning** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Describing Actions** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Adverb Rules** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Summary** | ✅ | 114 | Included in Core |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

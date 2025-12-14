@@ -114,12 +114,12 @@ The Ukrainian State Standard 2024 (Каталог В) requires these grammar str
 ```
 
 **Action:**
-- [ ] Add participle phrase module to B1.2 (Motion Verbs & Participles phase)
-- [ ] Add gerund phrase module (дієприслівниковий зворот)
-- [ ] Add one-member sentences coverage to Complex Sentences phase (B1.3)
-- [ ] Expand impersonal constructions beyond "болить" pattern
-- [ ] Add synthetic future explicit teaching to appropriate module
-- [ ] Add passive -но/-то forms to Passive Voice section
+- [x] Add participle phrase module to B1.2 → M36-38 Adverbial Participles
+- [x] Add gerund phrase module (дієприслівниковий зворот) → M36-38 (same as above)
+- [x] Add one-member sentences coverage to Complex Sentences phase → M32 updated
+- [x] Expand impersonal constructions beyond "болить" pattern → M32 updated
+- [x] Add synthetic future explicit teaching → M04 Aspect in Future
+- [x] Add passive -но/-то forms to Passive Voice section → M40 Past Passive Participles II
 
 ---
 
@@ -127,45 +127,26 @@ The Ukrainian State Standard 2024 (Каталог В) requires these grammar str
 
 **Priority:** P0 (Critical)
 **GitHub Issue:** [#114](https://github.com/krisztiankoos/curricula-opus/issues/114)
+**Status:** ✅ DONE
 
 **Problem:** Header claims ~2,400 words, actual plan delivers ~1,630 words.
 
 **File:** `docs/l2-uk-en/B1-CURRICULUM-PLAN.md`
 
-**Action:** Update line 5 from:
-```markdown
-**Vocabulary Target:** ~2,400 words (level), ~4,550 cumulative
-```
-To:
-```markdown
-**Vocabulary Target:** ~1,630 words (level), ~3,430 cumulative
-```
-
-**Rationale:** The detailed vocabulary summary is accurate. 1,630 new words at B1 is appropriate for CEFR expectations.
+**Resolution:** Header updated to show ~1,500 words (level), ~3,300 cumulative.
 
 ---
 
 ### 2. Add B1-skills Module Type
 
+**Priority:** P0 (Critical)
+**Status:** ✅ DONE
+
 **Problem:** M76-80 are skills modules but classified as vocabulary modules, causing incorrect audit targets.
 
-**File:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
-
-**Action:** Add new module type classification:
-
-```markdown
-### B1 Module Types
-
-| Type | Modules | Min Words | Vocab | Immersion | Focus |
-|------|---------|-----------|-------|-----------|-------|
-| B1-grammar | 01-45 (excl. checkpoints) | 1250 | 20+ | 50-55% | Grammar acquisition |
-| B1-vocab | 46-75 (excl. checkpoints) | 1250 | 25-30 | 60-65% | Thematic vocabulary |
-| B1-skills | 76-79 | 1000 | 15-20 | 55-60% | Receptive skills, integration |
-| B1-checkpoint | 10,20,35,45,55,65,75 | 800 | 10-15 | 60%+ | Review & assessment |
-| B1-capstone | 80 | 1000 | 10 | 50%+ | Final assessment |
-```
-
-**Also update:** `scripts/audit/config.py` to recognize these module types.
+**Resolution:**
+- MODULE-RICHNESS-GUIDELINES-v2.md updated with B1-grammar, B1-vocab, B1-skills, B1-checkpoint, B1-capstone types
+- scripts/audit/config.py updated to recognize all B1 module types
 
 ---
 
@@ -173,11 +154,14 @@ To:
 
 ### 3. Add Assessment Rubrics
 
+**Priority:** P1 (High)
+**Status:** ✅ DONE
+
 **Problem:** M80 (Capstone) has no rubrics or CEFR alignment.
 
-**File:** `docs/l2-uk-en/B1-CURRICULUM-PLAN.md`
+**Resolution:** Added "B1 Exit Assessment Framework" section to B1-CURRICULUM-PLAN.md with CEFR descriptors, State Standard checklist, and M80 scoring rubrics.
 
-**Action:** Add new section after Vocabulary Summary:
+**Original action (reference):** Add new section after Vocabulary Summary:
 
 ```markdown
 ---
@@ -263,11 +247,18 @@ Learners scoring 60-69 receive "B1 Developing" designation with specific remedia
 
 ### 4. Enhance Checkpoint Template
 
+**Priority:** P1 (High)
+**Status:** ✅ DONE
+
 **Problem:** Checkpoint modules are sparse (10-15 vocab, basic activities, no self-assessment).
 
-**File:** `docs/l2-uk-en/B1-CURRICULUM-PLAN.md`
+**Resolution:** Updated all 7 checkpoint modules (M10, M20, M35, M45, M55, M65, M75) with:
+- CEFR Can-Do Targets
+- Self-Assessment Rubrics
+- 10 Required Activities
+- Remediation Guidance
 
-**Action:** Update all checkpoint module specifications to follow this template:
+**Original template (reference):**
 
 ```markdown
 #### Module XX: Checkpoint - [Phase Name]

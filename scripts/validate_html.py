@@ -9,6 +9,7 @@ Usage:
     python scripts/validate_html.py [lang_pair] [level] [module_num]
 
 Requires Docusaurus dev server running on port 3000.
+If server is not available, skips gracefully with info message.
 """
 
 import asyncio
@@ -21,9 +22,15 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from playwright.async_api import async_playwright, Page, ConsoleMessage
 
+# Add scripts directory to path for audit imports
 SCRIPT_DIR = Path(__file__).parent
+sys.path.insert(0, str(SCRIPT_DIR))
+
+from audit.report import append_html_errors_to_report
+
 PROJECT_ROOT = SCRIPT_DIR.parent
 DOCUSAURUS_DIR = PROJECT_ROOT / "docusaurus"
+CURRICULUM_DIR = PROJECT_ROOT / "curriculum"
 
 BASE_URL = "http://localhost:3000/curricula-opus"
 
@@ -33,6 +40,38 @@ ACTIVITY_COMPONENTS = [
     'group-sort', 'anagram', 'error-correction', 'cloze',
     'select', 'translate', 'dialogue-reorder', 'mark-the-words'
 ]
+
+
+def find_source_md(lang_pair: str, level: str, module_num: int) -> Path | None:
+    """Find the source markdown file for a module."""
+    level_dir = CURRICULUM_DIR / lang_pair / level
+    if not level_dir.exists():
+        return None
+
+    # Look for files matching pattern: NN-slug.md
+    pattern = f"{module_num:02d}-*.md"
+    matches = list(level_dir.glob(pattern))
+    if matches:
+        return matches[0]
+
+    # Also try single digit for modules < 10
+    if module_num < 10:
+        pattern = f"{module_num}-*.md"
+        matches = list(level_dir.glob(pattern))
+        if matches:
+            return matches[0]
+
+    return None
+
+
+def is_server_running() -> bool:
+    """Check if dev server is available."""
+    import urllib.request
+    try:
+        urllib.request.urlopen(BASE_URL, timeout=5)
+        return True
+    except:
+        return False
 
 @dataclass
 class ValidationResult:
@@ -217,7 +256,7 @@ async def validate_module(page: Page, level: str, module_num: int) -> Validation
 
     return result
 
-async def validate_level(level: str, target_module: int | None = None) -> list[ValidationResult]:
+async def validate_level(level: str, lang_pair: str, target_module: int | None = None) -> list[ValidationResult]:
     """Validate all modules in a level."""
     results = []
 
@@ -250,6 +289,16 @@ async def validate_level(level: str, target_module: int | None = None) -> list[V
             result = await validate_module(page, level, module_num)
             results.append(result)
 
+            # Write results to review file
+            source_md = find_source_md(lang_pair, level, module_num)
+            if source_md:
+                append_html_errors_to_report(
+                    str(source_md),
+                    result.errors,
+                    result.warnings,
+                    result.activities_found
+                )
+
             # Print result
             if result.passed:
                 status = "✅"
@@ -276,16 +325,15 @@ async def main_async():
 
     print("\n🌐 HTML Validator\n")
 
-    # Check dev server
+    # Check dev server - skip gracefully if not available
     import urllib.request
     try:
         urllib.request.urlopen(BASE_URL, timeout=5)
         print(f"  Server running at {BASE_URL}\n")
     except Exception as e:
-        print("❌ Docusaurus dev server not running or not accessible!")
-        print("   Start it with: cd docusaurus && npm start")
-        print(f"   Error: {e}")
-        sys.exit(1)
+        print("ℹ️  Docusaurus dev server not running - skipping HTML validation")
+        print("   To enable: cd docusaurus && npm start")
+        sys.exit(0)  # Exit cleanly to not block pipeline
 
     levels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
     all_results = []
@@ -300,7 +348,7 @@ async def main_async():
 
         print(f"📁 Level {level.upper()}")
 
-        results = await validate_level(level, target_module)
+        results = await validate_level(level, lang_pair, target_module)
         all_results.extend(results)
 
     # Summary

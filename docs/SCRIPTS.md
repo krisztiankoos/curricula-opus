@@ -178,15 +178,30 @@ npm run generate:json l2-uk-en a1 5 # Generate single module
 **Purpose:** Validates MDX content integrity after generation.
 
 **Checks:**
-- Activity count matches source markdown
-- Vocabulary table preserved
-- Section headers intact
+- Activity types present in MDX match source markdown
+- Vocabulary words from first column preserved
+- Ukrainian text content maintained
 - No content loss during conversion
 
 **Usage:**
 ```bash
 npm run validate:mdx l2-uk-en a1    # Validate entire level
 npm run validate:mdx l2-uk-en a1 5  # Validate single module
+```
+
+**Review File Integration:**
+Results are automatically written to review files in `gemini/` folders:
+```markdown
+## MDX VALIDATION
+✅ No issues found
+```
+Or with issues:
+```markdown
+## MDX VALIDATION
+### Errors
+- ❌ Activity types missing in MDX: dialogue-reorder
+### Warnings
+- ⚠️ Some Ukrainian content may be missing (15/50 words)
 ```
 
 ---
@@ -196,16 +211,38 @@ npm run validate:mdx l2-uk-en a1 5  # Validate single module
 **Purpose:** Browser rendering validation using Playwright headless browser.
 
 **Checks:**
-- Page loads without errors
-- React components render correctly
-- No JavaScript errors in console
-- Ukrainian text present
-- Interactive elements functional
+- Page loads without HTTP errors
+- React components render (no error boundary)
+- No serious JavaScript errors in console
+- Ukrainian text present (sanity check)
+- Interactive activity elements render with content
 
 **Usage:**
 ```bash
 npm run validate:html l2-uk-en a1   # Validate entire level
 npm run validate:html l2-uk-en a1 5 # Validate single module
+```
+
+**Graceful Skip:**
+When the dev server is not running, validation skips gracefully with exit code 0:
+```
+ℹ️  Docusaurus dev server not running - skipping HTML validation
+   To enable: cd docusaurus && npm start
+```
+This allows the pipeline to continue without failing.
+
+**Review File Integration:**
+Results are automatically written to review files in `gemini/` folders:
+```markdown
+## HTML VALIDATION
+✅ Renders correctly (10 interactive elements)
+```
+Or with issues:
+```markdown
+## HTML VALIDATION
+### Errors
+- ❌ Activity not rendering: Match Vocabulary (MatchUp)
+- ❌ 2 JS errors
 ```
 
 **Requires:**
@@ -441,6 +478,54 @@ npm run pipeline l2-uk-en a1 5  # In terminal 2
 
 ---
 
+## Review Files
+
+Review files are generated in `gemini/` subdirectories alongside source modules. They consolidate all validation results in one place.
+
+**Location:** `curriculum/{lang}/{level}/gemini/{module-slug}-review.md`
+
+**Structure:**
+```markdown
+# Audit Report: 05-my-world-objects.md
+**Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 600
+**Overall Status:** ✅ PASS
+
+## Gates
+- **Words:** ✅ 650/600
+- **Activities:** ✅ 8/6
+- **Vocab:** ✅ 20/15
+- ...
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (8 interactive elements)
+
+## Section Audit
+| Section | Status | Count | Notes |
+|---------|--------|-------|-------|
+| **Intro** | ✅ | 85 | Included in Core |
+| **quiz: Test** | 🎮 | 10 | Activity (10 items) |
+...
+```
+
+**Section Order:**
+1. **Header** - Module info and overall status
+2. **Gates** - Audit gate results (word count, activities, etc.)
+3. **MDX VALIDATION** - Content integrity check results
+4. **HTML VALIDATION** - Browser rendering check results
+5. **Section Audit** - Per-section breakdown
+
+**Generation:**
+- `audit_module.py` creates/updates Gates and Section Audit
+- `validate_mdx.py` adds/updates MDX VALIDATION section
+- `validate_html.py` adds/updates HTML VALIDATION section
+
+Each validator updates only its section, preserving other content.
+
+---
+
 ## Library Structure
 
 ```
@@ -458,6 +543,7 @@ scripts/
 │   ├── core.py           # Main audit logic
 │   ├── config.py         # Level-specific constraints
 │   ├── cleaners.py       # Text cleaning utilities
+│   ├── report.py         # Review file generation and updates
 │   └── checks/           # Individual check modules
 │       ├── activities.py
 │       ├── grammar.py

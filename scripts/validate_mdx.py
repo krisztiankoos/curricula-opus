@@ -14,7 +14,12 @@ import sys
 from pathlib import Path
 from dataclasses import dataclass
 
+# Add scripts directory to path for audit imports
 SCRIPT_DIR = Path(__file__).parent
+sys.path.insert(0, str(SCRIPT_DIR))
+
+from audit.report import append_mdx_errors_to_report
+
 PROJECT_ROOT = SCRIPT_DIR.parent
 CURRICULUM_DIR = PROJECT_ROOT / "curriculum"
 DOCUSAURUS_DIR = PROJECT_ROOT / "docusaurus" / "docs"
@@ -64,21 +69,38 @@ def extract_text_content(content: str, include_jsx: bool = False) -> set[str]:
     return words
 
 def extract_vocabulary(content: str) -> set[str]:
-    """Extract vocabulary words from Vocabulary section."""
+    """Extract Ukrainian vocabulary words from Vocabulary section.
+
+    Only extracts the first column (the actual vocabulary word) to avoid
+    false positives from IPA, translations, and grammar notes.
+    """
     vocab = set()
 
-    # Find vocabulary section
-    match = re.search(r'#+ (?:Vocabulary|Словник)[\s\S]*?(?=^#|\Z)', content, re.MULTILINE)
+    # Find vocabulary section (may have emoji prefix like "📚 Vocabulary")
+    match = re.search(r'#+ .*?(?:Vocabulary|Словник)[\s\S]*?(?=^#|\Z)', content, re.MULTILINE)
     if not match:
         return vocab
 
     vocab_section = match.group(0)
 
-    # Extract from table rows
-    for row in re.findall(r'\|([^|]+)\|', vocab_section):
-        word = row.strip()
-        if word and not word.startswith('-') and len(word) > 1:
-            vocab.add(word.lower())
+    # Process each table row - extract only the FIRST column (the vocabulary word)
+    for line in vocab_section.split('\n'):
+        line = line.strip()
+        if not line.startswith('|'):
+            continue
+        # Split by | and get the first data cell (index 1 after split)
+        cells = line.split('|')
+        if len(cells) < 2:
+            continue
+        first_cell = cells[1].strip()
+        # Skip header row and separator
+        if not first_cell or first_cell.startswith('-') or first_cell.lower() in ('word', 'слово', 'ukrainian', 'термін'):
+            continue
+        # Extract Cyrillic words from first column only
+        cyrillic_words = re.findall(r'[\u0400-\u04FF]+', first_cell)
+        for word in cyrillic_words:
+            if len(word) > 2:
+                vocab.add(word.lower())
 
     return vocab
 
@@ -212,6 +234,13 @@ def main():
 
             result = validate_module(md_file, mdx_file)
             all_results.append(result)
+
+            # Write MDX validation results to review file (even if clean, to clear old warnings)
+            append_mdx_errors_to_report(
+                str(md_file),
+                result.errors,
+                result.warnings
+            )
 
             if result.passed:
                 total_passed += 1

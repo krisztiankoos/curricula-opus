@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Everyone has opinions! In any conversation, you need to express what you think, believe, and feel about topics — and to do it politely. This is especially important in Ukrainian culture, where showing respect for others' views matters greatly. This module teaches you the essential phrases for sharing opinions and for agreeing or disagreeing without causing offense. You will learn how to soften your statements when you are not completely certain, and how to acknowledge other people's points of view even when you do not share them.
@@ -568,18 +569,20 @@ Remember: adding certainty markers like "можливо" or "мабуть" makes
 
 ### Find Opinion Expressions
 
-Click on OPINION expressions only.
-
-[Я думаю, що](correct) це правда. [Мені здається](correct), що він правий. [На мою думку](correct), це добре.
-
----
-
-[Я згоден](correct)! [Це правда](correct). [Ви маєте рацію](correct).
-
----
-
-[Можливо](correct), я помиляюся. [Напевно](correct), він прийде. [Безумовно](correct), це так.
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Я думаю, що це правда. Мені здається, що він правий. На мою думку, це добре.`}
+  correctWords={[`Я думаю, що`, `Мені здається`, `На мою думку`]}
+/>
+<MarkTheWordsActivity
+  text={`Я згоден! Це правда. Ви маєте рацію.`}
+  correctWords={[`Я згоден`, `Це правда`, `Ви маєте рацію`]}
+/>
+<MarkTheWordsActivity
+  text={`Можливо, я помиляюся. Напевно, він прийде. Безумовно, це так.`}
+  correctWords={[`Можливо`, `Напевно`, `Безумовно`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

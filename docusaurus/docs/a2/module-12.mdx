@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 **Ласкаво просимо!** Сьогодні ви дізнаєтесь про аспект — одну з найважливіших тем української граматики.
@@ -522,20 +523,22 @@ Verbal aspect is about HOW you conceptualize an action, not WHEN it happened. Th
 
 ### Identify Aspect
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on PERFECTIVE verbs only.
 
-
-Click on PERFECTIVE verbs only.
-
-Я [прочитав](correct) книгу. Потім я [написав](correct) рецензію. Я довго писав, але нарешті [закінчив](correct).
-
----
-
-Вона [сказала](correct) правду. Ми [почули](correct) шум. Він [взяв](correct) книгу і [пішов](correct).
-
----
-
-Що ти робив? Я читав і писав. Потім я [зробив](correct) домашнє завдання і [пообідав](correct).
-
+Я прочитав книгу. Потім я написав рецензію. Я довго писав, але нарешті закінчив.`}
+  correctWords={[`прочитав`, `написав`, `закінчив`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона сказала правду. Ми почули шум. Він взяв книгу і пішов.`}
+  correctWords={[`сказала`, `почули`, `взяв`, `пішов`]}
+/>
+<MarkTheWordsActivity
+  text={`Що ти робив? Я читав і писав. Потім я зробив домашнє завдання і пообідав.`}
+  correctWords={[`зробив`, `пообідав`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

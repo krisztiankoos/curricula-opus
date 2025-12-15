@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 **Тепер, коли ви розумієте аспект, давайте навчимося використовувати доконаний вид у минулому часі!**
@@ -522,20 +523,22 @@ In the following modules, you'll learn how perfective verbs work in future tense
 
 ### Find Perfective Past
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on PERFECTIVE PAST forms only.
 
-
-Click on PERFECTIVE PAST forms only.
-
-Учора я [прочитав](correct) книгу. Потім я [написав](correct) листа. Я довго писав, але нарешті [закінчив](correct).
-
----
-
-Вона [сказала](correct) правду. Ми [почули](correct) шум. Він [взяв](correct) книгу і [пішов](correct).
-
----
-
-Він працював цілий день. Потім він [закінчив](correct) і [пішов](correct) додому. Вдома він [відпочив](correct).
-
+Учора я прочитав книгу. Потім я написав листа. Я довго писав, але нарешті закінчив.`}
+  correctWords={[`прочитав`, `написав`, `закінчив`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона сказала правду. Ми почули шум. Він взяв книгу і пішов.`}
+  correctWords={[`сказала`, `почули`, `взяв`, `пішов`]}
+/>
+<MarkTheWordsActivity
+  text={`Він працював цілий день. Потім він закінчив і пішов додому. Вдома він відпочив.`}
+  correctWords={[`закінчив`, `пішов`, `відпочив`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

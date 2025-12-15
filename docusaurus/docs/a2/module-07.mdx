@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Prepositions are small but mighty words that connect nouns to the rest of the sentence. In English, prepositions like "in," "on," "to," and "from" are straightforward. But in Ukrainian, prepositions work hand-in-hand with grammatical cases — and some prepositions even change meaning depending on which case follows them!
@@ -636,20 +637,22 @@ Practice forming sentences with the correct preposition + case combinations. Sta
 
 ### Find Preposition + Case
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on preposition + noun combinations.
 
-
-Click on preposition + noun combinations.
-
-Він іде [до школи](correct). Потім він буде [в класі](correct). Книги лежать [на столі](correct). Олівець [під зошитом](correct).
-
----
-
-Вона живе [біля парку](correct). Гуляє [з собакою](correct). Сидить [перед телевізором](correct). Після роботи йде [до магазину](correct).
-
----
-
-Лист [від друга](correct). Подарунок [для сестри](correct). Кава [без цукру](correct). Розмова [про майбутнє](correct).
-
+Він іде до школи. Потім він буде в класі. Книги лежать на столі. Олівець під зошитом.`}
+  correctWords={[`до школи`, `в класі`, `на столі`, `під зошитом`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона живе біля парку. Гуляє з собакою. Сидить перед телевізором. Після роботи йде до магазину.`}
+  correctWords={[`біля парку`, `з собакою`, `перед телевізором`, `до магазину`]}
+/>
+<MarkTheWordsActivity
+  text={`Лист від друга. Подарунок для сестри. Кава без цукру. Розмова про майбутнє.`}
+  correctWords={[`від друга`, `для сестри`, `без цукру`, `про майбутнє`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

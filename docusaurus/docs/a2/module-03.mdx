@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 In this module, you'll discover which Ukrainian verbs require the Dative case — these are verbs of helping, thanking, believing, and trusting. Understanding verb "case government" (which case a verb requires) is essential for speaking Ukrainian correctly.
@@ -85,10 +86,17 @@ This verb deserves special attention because it flips the typical English senten
 Нам подобається Україна! (We like Ukraine!)
 
 :::info[У кінотеатрі в Одесі (At the Cinema in Odesa)]
+<div className="conversation">
+
 — Тобі сподобався фільм? (Did you like the film?)
+
 — Так! Мені дуже сподобалася головна героїня. (Yes! I really liked the main heroine.)
+
 — А мені сподобалась музика. (And I liked the music.)
+
 — Нам обом сподобався цей вечір! (We both liked this evening!)
+
+</div>
 :::
 
 
@@ -215,10 +223,17 @@ Learning to choose the right word for the situation is part of developing cultur
 
 
 :::info[Родинна сцена в Харкові (Family Scene in Kharkiv)]
+<div className="conversation">
+
 — Мамо, вибач мені. Я розбив твою вазу. (Mom, excuse me. I broke your vase.)
+
 — Ти знаєш, як я люблю цю вазу! (You know how I love that vase!)
+
 — Я дуже шкодую. Ти пробачаєш мені? (I'm very sorry. Do you forgive me?)
+
 — Звичайно пробачаю. Ти мій син. (Of course I forgive you. You're my son.)
+
+</div>
 :::
 
 
@@ -262,31 +277,53 @@ The following dialogues show Dative verbs in natural conversation. Notice how д
 This dialogue demonstrates допомагати (to help) with Dative — notice the librarian says "Я покажу вам" (I'll show to you).
 
 **У бібліотеці:**
+<div className="conversation">
+
 — Вибачте, ви можете допомогти мені?
+
 — Звичайно! Що вам потрібно?
+
 — Я шукаю книгу про історію України.
+
 — Я покажу вам, де вона стоїть.
+
 — Дякую вам!
+
+</div>
 
 **Dialogue 2: На вечірці (At the Party)**
 
 Here заважати (to bother) and подобатися (to please) both need Dative: тобі, мені.
 
 **На вечірці:**
+<div className="conversation">
+
 — Ця музика заважає тобі?
+
 — Ні, мені подобається ця музика!
+
 — Справді? Мені вона не подобається.
+
 — Кожному своє!
+
+</div>
 
 **Dialogue 3: У лікарні (At the Hospital)**
 
 Here радити (to advise) takes Dat + Acc (recommending something TO someone), and забороняти (to forbid) takes Dat + Inf.
 
 **У лікарні:**
+<div className="conversation">
+
 — Лікарю, що ви радите мені?
+
 — Я раджу вам відпочивати.
+
 — Ви забороняєте мені працювати?
+
 — Так, я забороняю вам працювати цього тижня.
+
+</div>
 
 ---
 
@@ -652,20 +689,22 @@ This reading presents a teacher's diary entries over one week. Each entry uses m
 
 ### Find Dative Objects
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on the dative objects in these sentences.
 
-
-Click on the dative objects in these sentences.
-
-Я допомагаю [мамі](correct) готувати обід. Вона дякує [мені](correct). [Музика](wrong) заважає [сусідам](correct). Вчитель пояснює [учням](correct) [правило](wrong).
-
----
-
-[Мені](correct) подобається [ця книга](wrong). Він показує [другові](correct) [фото](wrong). Ми довіряємо [лікареві](correct). Батьки забороняють [дітям](correct) [гратися](wrong) надворі.
-
----
-
-Бабуся розповідає [онукам](correct) [казку](wrong). Я вірю [тобі](correct). [Лікар](wrong) радить [пацієнтові](correct) відпочивати. Вона заздрить [подрузі](correct).
-
+Я допомагаю мамі готувати обід. Вона дякує мені. Музика заважає сусідам. Вчитель пояснює учням правило.`}
+  correctWords={[`мамі`, `мені`, `Музика`, `сусідам`, `учням`, `правило`]}
+/>
+<MarkTheWordsActivity
+  text={`Мені подобається ця книга. Він показує другові фото. Ми довіряємо лікареві. Батьки забороняють дітям гратися надворі.`}
+  correctWords={[`Мені`, `ця книга`, `другові`, `фото`, `лікареві`, `дітям`, `гратися`]}
+/>
+<MarkTheWordsActivity
+  text={`Бабуся розповідає онукам казку. Я вірю тобі. Лікар радить пацієнтові відпочивати. Вона заздрить подрузі.`}
+  correctWords={[`онукам`, `казку`, `тобі`, `Лікар`, `пацієнтові`, `подрузі`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

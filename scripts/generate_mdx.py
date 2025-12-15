@@ -96,6 +96,11 @@ class DialogueLine:
     text: str
     order: int
 
+@dataclass
+class MarkTheWordsItem:
+    text: str  # Plain text with marks removed
+    correctWords: list[str]  # List of correct words to mark
+
 # =============================================================================
 # UTILITIES
 # =============================================================================
@@ -790,6 +795,55 @@ def dialogue_reorder_to_jsx(lines: list[DialogueLine], title: str) -> str:
   {jsx_lines}
 ]}} />'''
 
+def parse_mark_the_words(content: str) -> list[MarkTheWordsItem]:
+    """Parse mark-the-words content into items.
+
+    Format: [word](correct) or [word](category) marks correct words
+    Each paragraph (separated by ---) is a separate item
+    """
+    items = []
+    # Split by horizontal rule to get separate exercises
+    paragraphs = re.split(r'\n---+\n', content.strip())
+
+    for para in paragraphs:
+        para = para.strip()
+        if not para:
+            continue
+
+        # Find all marked words: [word](category)
+        correct_words = []
+        pattern = r'\[([^\]]+)\]\([^)]+\)'
+        for match in re.finditer(pattern, para):
+            word = match.group(1).strip()
+            correct_words.append(word)
+
+        # Remove the markdown-style marks to get plain text
+        plain_text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', para)
+
+        if correct_words:
+            items.append(MarkTheWordsItem(text=plain_text, correctWords=correct_words))
+
+    return items
+
+def mark_the_words_to_jsx(items: list[MarkTheWordsItem], title: str) -> str:
+    """Convert mark-the-words items to JSX MarkTheWordsActivity components."""
+    if not items:
+        return ''
+
+    jsx_parts = []
+    for item in items:
+        words_jsx = ', '.join([f'`{escape_jsx(w)}`' for w in item.correctWords])
+        jsx_parts.append(f'''<MarkTheWordsActivity
+  text={{`{escape_jsx(item.text)}`}}
+  correctWords={{[{words_jsx}]}}
+/>''')
+
+    return f'''### {title}
+
+<MarkTheWords>
+{chr(10).join(jsx_parts)}
+</MarkTheWords>'''
+
 # =============================================================================
 # CONTENT PROCESSING
 # =============================================================================
@@ -866,8 +920,8 @@ def process_activities(body: str) -> str:
             lines = parse_dialogue_reorder(content)
             jsx = dialogue_reorder_to_jsx(lines, title)
         elif activity_type == 'mark-the-words':
-            # Simple pass-through for now as generic markdown
-            jsx = f"### {title}\n\n{instruction}\n\n{content}"
+            items = parse_mark_the_words(content)
+            jsx = mark_the_words_to_jsx(items, title)
 
         if jsx:
             activities_jsx_parts.append(jsx)
@@ -1019,7 +1073,8 @@ import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/Error
 import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
-import DialogueReorder from '@site/src/components/DialogueReorder';"""
+import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';"""
 
     # Frontmatter
     frontmatter = f'''---

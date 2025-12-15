@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Now that you can make comparisons (bigger, better), let's go to the extreme! This module covers superlatives — how to say "the biggest," "the best," "the most interesting." You'll also learn intensifiers to emphasize adjectives.
@@ -570,20 +571,22 @@ Use these to add emotion without comparison:
 
 ### Find Superlatives
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on SUPERLATIVE forms only.
 
-
-Click on SUPERLATIVE forms only.
-
-Це [найкраща](correct) книга! Він [найстаріший](correct) студент. Україна — [найбільша](correct) країна.
-
----
-
-Дніпро — [найдовша](correct) річка. Говерла — [найвища](correct) гора. Це [найгірший](correct) день.
-
----
-
-Вона дуже талановита. Він [найрозумніший](correct). Це [найдорожчий](correct) телефон.
-
+Це найкраща книга! Він найстаріший студент. Україна — найбільша країна.`}
+  correctWords={[`найкраща`, `найстаріший`, `найбільша`]}
+/>
+<MarkTheWordsActivity
+  text={`Дніпро — найдовша річка. Говерла — найвища гора. Це найгірший день.`}
+  correctWords={[`найдовша`, `найвища`, `найгірший`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона дуже талановита. Він найрозумніший. Це найдорожчий телефон.`}
+  correctWords={[`найрозумніший`, `найдорожчий`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

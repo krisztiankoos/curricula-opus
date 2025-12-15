@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 In this module, you'll learn the Instrumental case — the seventh and final case in Ukrainian. While the Instrumental has several functions, this module focuses on its most common use at A2 level: expressing **accompaniment** (with whom or with what you do something).
@@ -220,11 +221,19 @@ The instrumental with **з** is essential for describing social activities in Uk
 | Working | працювати з партнерами |
 
 :::info[Вихідні у Львові]
+<div className="conversation">
+
 — Що ти робитимеш на вихідних?
+
 — У суботу я зустрічаюся з друзями. Ми йдемо в ресторан.
+
 — А в неділю?
+
 — У неділю гулятиму з дівчиною в парку.
+
 — Звучить чудово! А я проводитиму час з родиною.
+
+</div>
 :::
 
 
@@ -246,12 +255,21 @@ Many relationship verbs use **з + Instrumental**:
 Вони посварилися, але потім помирилися. (They quarrelled but then made peace.)
 
 :::info[Історія кохання]
+<div className="conversation">
+
 — Як ви познайомилися з чоловіком?
+
 — Ми познайомилися на вечірці. Друг познайомив мене з ним.
+
 — І ви відразу закохалися?
+
 — Ні! Спочатку ми посварилися! Але потім помирилися і подружилися.
+
 — А коли ви одружилися?
+
 — Через рік. І живемо разом уже десять років!
+
+</div>
 :::
 
 
@@ -297,30 +315,51 @@ The following dialogues demonstrate Instrumental case in natural conversation. N
 This dialogue shows introductions using the Instrumental — "познайомлю тебе з" (I'll introduce you to).
 
 **У кафе:**
+<div className="conversation">
+
 — З ким ти прийшла?
+
 — Я прийшла з подругою. Ось вона!
+
 — Привіт! Давай познайомлю тебе з моїм братом.
+
 — Приємно познайомитися!
+
+</div>
 
 **Dialogue 2: На роботі (At Work)**
 
 Here we see working "with" colleagues and talking "with" the boss — all Instrumental.
 
 **На роботі:**
+<div className="conversation">
+
 — З ким ти працюєш над проєктом?
+
 — Я працюю з Олексієм і Мариною.
+
 — А з начальником уже говорив?
+
 — Так, я розмовляв з ним учора.
+
+</div>
 
 **Dialogue 3: На кухні (In the Kitchen)**
 
 Food and drink combinations use Instrumental too — coffee WITH milk, tea WITH lemon.
 
 **На кухні:**
+<div className="conversation">
+
 — Ти хочеш каву з молоком?
+
 — Ні, я п'ю каву з цукром.
+
 — А чай?
+
 — Чай — з лимоном і з медом!
+
+</div>
 
 ---
 
@@ -693,20 +732,22 @@ This story about a surprise party is full of Instrumental examples. Every time s
 
 ### Find Instrumental Forms
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on all instrumental case forms.
 
-
-Click on all instrumental case forms.
-
-Я йду в кіно [з другом](correct). Вона розмовляє [з сестрою](correct). Ми живемо [з батьками](correct). [Діти](wrong) грають [з котом](correct).
-
----
-
-Він [познайомився](wrong) [з дівчиною](correct) на [вечірці](wrong). Вона п'є [каву](wrong) [з молоком](correct). Ми [зустрічаємося](wrong) [з друзями](correct) [щотижня](wrong).
-
----
-
-Петро одружився [з Марією](correct). Вони живуть [з дітьми](correct). [Бабуся](wrong) гуляє [з онуками](correct). Він розмовляє [з колегою](correct) [про роботу](wrong).
-
+Я йду в кіно з другом. Вона розмовляє з сестрою. Ми живемо з батьками. Діти грають з котом.`}
+  correctWords={[`з другом`, `з сестрою`, `з батьками`, `Діти`, `з котом`]}
+/>
+<MarkTheWordsActivity
+  text={`Він познайомився з дівчиною на вечірці. Вона п'є каву з молоком. Ми зустрічаємося з друзями щотижня.`}
+  correctWords={[`познайомився`, `з дівчиною`, `вечірці`, `каву`, `з молоком`, `зустрічаємося`, `з друзями`, `щотижня`]}
+/>
+<MarkTheWordsActivity
+  text={`Петро одружився з Марією. Вони живуть з дітьми. Бабуся гуляє з онуками. Він розмовляє з колегою про роботу.`}
+  correctWords={[`з Марією`, `з дітьми`, `Бабуся`, `з онуками`, `з колегою`, `про роботу`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

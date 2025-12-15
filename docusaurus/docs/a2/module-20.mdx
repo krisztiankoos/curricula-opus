@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Now that you can form comparatives and superlatives, let's use them to express preferences! This module teaches you how to say what you like better, make choices, and explain why you prefer one thing over another.
@@ -548,20 +549,22 @@ This module covered expressing preferences and making choices.
 
 ### Find Preference Words
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on PREFERENCE expressions.
 
-
-Click on PREFERENCE expressions.
-
-[Мені більше подобається](correct) кава. [Я віддаю перевагу](correct) книгам. [Краще](correct) читати, ніж дивитися.
-
----
-
-[Легше](correct) говорити. [Важче](correct) робити. [Я б вибрала](correct) каву.
-
----
-
-Він [більше](correct) любить музику. Вона [віддає перевагу](correct) театру. Це [цікавіше](correct)!
-
+Мені більше подобається кава. Я віддаю перевагу книгам. Краще читати, ніж дивитися.`}
+  correctWords={[`Мені більше подобається`, `Я віддаю перевагу`, `Краще`]}
+/>
+<MarkTheWordsActivity
+  text={`Легше говорити. Важче робити. Я б вибрала каву.`}
+  correctWords={[`Легше`, `Важче`, `Я б вибрала`]}
+/>
+<MarkTheWordsActivity
+  text={`Він більше любить музику. Вона віддає перевагу театру. Це цікавіше!`}
+  correctWords={[`більше`, `віддає перевагу`, `цікавіше`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

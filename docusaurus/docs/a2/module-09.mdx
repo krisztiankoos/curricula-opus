@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Congratulations — you've now learned all seven Ukrainian cases! This is a major milestone in your Ukrainian journey. In this module, we'll bring everything together in one comprehensive practice session.
@@ -607,20 +608,22 @@ First identify the function of the word in the sentence, then choose the case. N
 
 ### Find Case Usage
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on words that show case usage.
 
-
-Click on words that show case usage.
-
-[Мама](correct) готує [обід](correct). Вона дає [тарілку](correct) [синові](correct). [Хлопчик](correct) їсть [ложкою](correct).
-
----
-
-Я читаю [книгу](correct) про [Україну](correct). [Книга](correct) дуже цікава. Після [читання](correct) я пишу [листа](correct) [подрузі](correct).
-
----
-
-[Друже](correct)! Давай підемо в [кіно](correct)! Я маю [квитки](correct). Після [фільму](correct) можемо поїсти [піци](correct).
-
+Мама готує обід. Вона дає тарілку синові. Хлопчик їсть ложкою.`}
+  correctWords={[`Мама`, `обід`, `тарілку`, `синові`, `Хлопчик`, `ложкою`]}
+/>
+<MarkTheWordsActivity
+  text={`Я читаю книгу про Україну. Книга дуже цікава. Після читання я пишу листа подрузі.`}
+  correctWords={[`книгу`, `Україну`, `Книга`, `читання`, `листа`, `подрузі`]}
+/>
+<MarkTheWordsActivity
+  text={`Друже! Давай підемо в кіно! Я маю квитки. Після фільму можемо поїсти піци.`}
+  correctWords={[`Друже`, `кіно`, `квитки`, `фільму`, `піци`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

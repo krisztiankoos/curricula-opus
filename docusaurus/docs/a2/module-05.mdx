@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Module 4 introduced the Instrumental case with the preposition **з** for accompaniment: з другом (with a friend), з сестрою (with sister). Now it's time to learn the Instrumental case **without a preposition** — the true "instrumental" use of this case!
@@ -105,10 +106,17 @@ Sometimes you'll hear "на автобусі" (on the bus) — this is locative 
 :::info[У Києві — Commute Conversation]
 This dialogue shows Ukrainians discussing their daily commute. Notice how metro and taxi don't change form (indeclinable), while автобусом is regular instrumental.
 
+<div className="conversation">
+
 — Як ти добираєшся до роботи? (How do you get to work?)
+
 — Зазвичай їду метро. А коли метро закрите, їду таксі. (Usually by metro. When metro is closed, by taxi.)
+
 — А я їду автобусом. Автобус зупиняється біля мого будинку. (I go by bus. The bus stops near my building.)
+
 — Це зручно! Мені треба йти до станції метро пішки. (That's convenient! I have to walk to the metro station.)
+
+</div>
 :::
 
 
@@ -222,10 +230,17 @@ The instrumental case also expresses manner — how an action is performed. This
 :::info[У бібліотеці в Одесі — Library Etiquette]
 This dialogue demonstrates manner expressions with instrumental. "Тихим голосом" (in a quiet voice) combines an adjective with instrumental noun.
 
+<div className="conversation">
+
 — Пробачте, тут треба говорити тихим голосом. (Excuse me, you need to speak in a quiet voice here.)
+
 — Вибачте! Я не помітив. (Sorry! I didn't notice.)
+
 — Будь ласка, розмовляйте пошепки. (Please speak in a whisper.)
+
 — Звичайно. Дякую за нагадування. (Of course. Thanks for the reminder.)
+
+</div>
 :::
 
 
@@ -264,11 +279,19 @@ The **маршрутка** (marshrutka) is a uniquely post-Soviet phenomenon —
 :::info[Подорож до Карпат — Travel Story]
 This dialogue shows multiple transport modes in one trip. Notice the pattern: always bare instrumental for the transport (поїздом, автобусом), never with preposition "з".
 
+<div className="conversation">
+
 — Як ви добиралися до Карпат? (How did you get to the Carpathians?)
+
 — Спочатку ми їхали поїздом до Івано-Франківська. (First we went by train to Ivano-Frankivsk.)
+
 — А далі? (And then?)
+
 — Потім їхали автобусом до Яремче. А в гори ми йшли пішки! (Then by bus to Yaremche. And into the mountains we walked!)
+
 — Звучить як пригода! (Sounds like an adventure!)
+
+</div>
 :::
 
 
@@ -314,30 +337,51 @@ The following dialogues show bare Instrumental in natural conversations about tr
 Getting directions — notice both автобусом and трамваєм are bare Instrumental (no preposition).
 
 **На зупинці:**
+<div className="conversation">
+
 — Вибачте, як дістатися до центру?
+
 — Можна їхати автобусом або трамваєм.
+
 — А що швидше?
+
 — Трамваєм швидше, але автобусом зручніше.
+
+</div>
 
 **Dialogue 2: На кухні (In the Kitchen)**
 
 Discussing tools — чим (with what) asks about Instrumental; ножем and ножицями are the answers.
 
 **На кухні:**
+<div className="conversation">
+
 — Чим ти ріжеш помідори?
+
 — Ножем, звичайно!
+
 — А я волію різати ножицями.
+
 — Ножицями? Це дивно!
+
+</div>
 
 **Dialogue 3: В офісі (At the Office)**
 
 Modern communication — електронною поштою (by email) and голосом (by voice) are both bare Instrumental.
 
 **В офісі:**
+<div className="conversation">
+
 — Як ви надсилаєте документи?
+
 — Зазвичай електронною поштою.
+
 — А якщо терміново?
+
 — Тоді телефоную і пояснюю голосом.
+
+</div>
 
 ---
 
@@ -703,20 +747,22 @@ This text describes a typical day in Kyiv, filled with bare Instrumental example
 
 ### Find Bare Instrumental
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on instrumental forms used WITHOUT a preposition (means/tools).
 
-
-Click on instrumental forms used WITHOUT a preposition (means/tools).
-
-Я їду на роботу [автобусом](correct). Вона пише листа [ручкою](correct). Ми живемо [з батьками](wrong). Він ріже хліб [ножем](correct). Кава [з молоком](wrong) смачна.
-
----
-
-Вона летить [літаком](correct) до Парижа. Він розмовляє [з другом](wrong). Я працюю [комп'ютером](correct). Діти грають [з котом](wrong). Вона махає [рукою](correct).
-
----
-
-Ми їмо суп [ложкою](correct). Він гуляє [з собакою](wrong). Вона говорить тихим [голосом](correct). Я їду [поїздом](correct). Він живе [з братом](wrong).
-
+Я їду на роботу автобусом. Вона пише листа ручкою. Ми живемо з батьками. Він ріже хліб ножем. Кава з молоком смачна.`}
+  correctWords={[`автобусом`, `ручкою`, `з батьками`, `ножем`, `з молоком`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона летить літаком до Парижа. Він розмовляє з другом. Я працюю комп'ютером. Діти грають з котом. Вона махає рукою.`}
+  correctWords={[`літаком`, `з другом`, `комп'ютером`, `з котом`, `рукою`]}
+/>
+<MarkTheWordsActivity
+  text={`Ми їмо суп ложкою. Він гуляє з собакою. Вона говорить тихим голосом. Я їду поїздом. Він живе з братом.`}
+  correctWords={[`ложкою`, `з собакою`, `голосом`, `поїздом`, `з братом`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

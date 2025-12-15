@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -452,10 +453,12 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
 
 ### Find the Motion
 
-
-
-Турист [вийшов](motion) з готелю. Він [побачив](perception) карту. Він [перейшов](motion) площу. Потім він [зайшов](motion) у музей. Там він [слухав](perception) гіда. Ввечері він [повернувся](motion) назад. Він [їв](action) вечерю і [спав](state).
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Турист вийшов з готелю. Він побачив карту. Він перейшов площу. Потім він зайшов у музей. Там він слухав гіда. Ввечері він повернувся назад. Він їв вечерю і спав.`}
+  correctWords={[`вийшов`, `побачив`, `перейшов`, `зайшов`, `слухав`, `повернувся`, `їв`, `спав`]}
+/>
+</MarkTheWords>
 
 ### The Journey Home
 

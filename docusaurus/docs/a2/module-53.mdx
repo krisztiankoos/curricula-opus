@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Sports & Fitness
@@ -132,8 +133,13 @@ Remember words ending in consonant add **-ом**, words in **-а** change to **-
 Вода знімає стрес.
 
 У роздягальні вона говорить з подругою.
+<div className="conversation">
+
 — Ти виглядаєш супер! — каже подруга.
+
 — Дякую, — усміхається Олена. — Спорт змінює життя.
+
+</div>
 
 ### Hiking in Carpathians
 
@@ -571,17 +577,6 @@ A healthy mind in a healthy body!
   { text: `Дякую за мотивацію!`, order: 11 },
   { text: `Будь ласка. Відпочивай хвилину.`, order: 12 }
 ]} />
-
-### Sports List
-
-
-
-:::note[Mark all sports.]
-:::
-
-
-У школі ми грали в [футбол] і [баскетбол]. Мій брат любить [теніс]. Взимку ми дивимося [біатлон]. Влітку я люблю [плавання]. Мій тато дивиться [бокс]. Його друг займається [карате]. [Гімнастика] — це дуже красиво.
-
 
 ### Choose Correct Verb
 

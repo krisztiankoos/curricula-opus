@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Welcome to the practical world of Ukrainian services! In this module, you'll learn vocabulary and phrases for two essential destinations: the post office (пошта) and the bank (банк). These real-world situations will help you practice the cases you've learned in authentic contexts.
@@ -559,20 +560,22 @@ In this module you learned essential vocabulary for two key service locations in
 
 ### Find Case Forms
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on words in a specific case.
 
-
-Click on words in a specific case.
-
-Я хочу відправити [листа](correct) до [Канади](correct). Дайте [мені](correct) [квитанцію](correct). Посилка з [України](correct).
-
----
-
-Мені потрібно зняти [гроші](correct). Я хочу обміняти [долари](correct) на [гривні](correct). Платити [карткою](correct).
-
----
-
-Напишіть [адресу](correct) на [конверті](correct). Покажіть [паспорт](correct). Скільки коштує [марка](correct)?
-
+Я хочу відправити листа до Канади. Дайте мені квитанцію. Посилка з України.`}
+  correctWords={[`листа`, `Канади`, `мені`, `квитанцію`, `України`]}
+/>
+<MarkTheWordsActivity
+  text={`Мені потрібно зняти гроші. Я хочу обміняти долари на гривні. Платити карткою.`}
+  correctWords={[`гроші`, `долари`, `гривні`, `карткою`]}
+/>
+<MarkTheWordsActivity
+  text={`Напишіть адресу на конверті. Покажіть паспорт. Скільки коштує марка?`}
+  correctWords={[`адресу`, `конверті`, `паспорт`, `марка`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -476,14 +477,16 @@ Don't forget the comma!
 
 ### Find the Logic
 
-
-
-[Хоча](correct) на вулиці дощ, ми йдемо гуляти. Ми взяли парасольки, [тому що](correct) не хочемо змокнути. [Оскільки](correct) парк близько, ми підемо пішки. Це важко, [проте](correct) корисно. [Все-таки](correct) свіже повітря потрібне.
-
----
-
-[Завдяки](correct) тренуванням я став сильнішим. [Але](correct) я все ще втомлююся, [через те що](correct) мало сплю.
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Хоча на вулиці дощ, ми йдемо гуляти. Ми взяли парасольки, тому що не хочемо змокнути. Оскільки парк близько, ми підемо пішки. Це важко, проте корисно. Все-таки свіже повітря потрібне.`}
+  correctWords={[`Хоча`, `тому що`, `Оскільки`, `проте`, `Все-таки`]}
+/>
+<MarkTheWordsActivity
+  text={`Завдяки тренуванням я став сильнішим. Але я все ще втомлююся, через те що мало сплю.`}
+  correctWords={[`Завдяки`, `Але`, `через те що`]}
+/>
+</MarkTheWords>
 
 ### Fix the Connector
 

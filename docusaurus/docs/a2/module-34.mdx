@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -483,14 +484,16 @@ You have mastered **Logic**.
 
 ### Connector Spotting
 
-
-
-Я не знаю, [де](correct) він живе. Він сказав, [що](correct) прийде, [хоча](correct) він не обіцяв. Я роблю це, [тому що](correct) люблю. Це дім, [у якому](correct) я ріс. [Коли](correct) я сплю, я бачу сни.
-
----
-
-[Стіл](incorrect) стоїть. [Книга](incorrect) лежить. [Сонце](incorrect) світить.
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Я не знаю, де він живе. Він сказав, що прийде, хоча він не обіцяв. Я роблю це, тому що люблю. Це дім, у якому я ріс. Коли я сплю, я бачу сни.`}
+  correctWords={[`де`, `що`, `хоча`, `тому що`, `у якому`, `Коли`]}
+/>
+<MarkTheWordsActivity
+  text={`Стіл стоїть. Книга лежить. Сонце світить.`}
+  correctWords={[`Стіл`, `Книга`, `Сонце`]}
+/>
+</MarkTheWords>
 
 ### Fix the Mistakes
 

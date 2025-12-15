@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -446,14 +447,16 @@ It's logical: I stay in the state of "waiting" during the time that "finishing" 
 
 ### Time Markers
 
-
-
-Ми пішли гуляти, [коли](correct) закінчився дощ. Я читав книгу, [поки](correct) їхав у метро. [Як тільки](correct) я побачив тебе, я зрадів. [Перш ніж](correct) купити це, подумай. Ми їли торт [після того як](correct) задули свічки.
-
----
-
-Він [мій брат](incorrect). Це [гарний дім](incorrect). Я [люблю каву](incorrect).
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Ми пішли гуляти, коли закінчився дощ. Я читав книгу, поки їхав у метро. Як тільки я побачив тебе, я зрадів. Перш ніж купити це, подумай. Ми їли торт після того як задули свічки.`}
+  correctWords={[`коли`, `поки`, `Як тільки`, `Перш ніж`, `після того як`]}
+/>
+<MarkTheWordsActivity
+  text={`Він мій брат. Це гарний дім. Я люблю каву.`}
+  correctWords={[`мій брат`, `гарний дім`, `люблю каву`]}
+/>
+</MarkTheWords>
 
 ### Fix the Logic
 

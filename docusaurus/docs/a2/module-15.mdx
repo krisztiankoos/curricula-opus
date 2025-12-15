@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 **Ласкаво просимо до глибшого вивчення аспектних пар!**
@@ -561,20 +562,22 @@ Adding different prefixes to the same root creates different perfective verbs wi
 
 ### Identify Perfective Verbs
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on PERFECTIVE verbs only.
 
-
-Click on PERFECTIVE verbs only.
-
-Я [прочитав](correct) книгу. Потім я [написав](correct) рецензію. Він [сказав](correct) правду. Вона довго говорила.
-
----
-
-Ми [вивчили](correct) урок. Вона [встала](correct) рано. Він давав книгу, а потім [дав](correct).
-
----
-
-Вони [побачили](correct) море! Він [почув](correct) шум. Я [взяв](correct) книгу і [пішов](correct).
-
+Я прочитав книгу. Потім я написав рецензію. Він сказав правду. Вона довго говорила.`}
+  correctWords={[`прочитав`, `написав`, `сказав`]}
+/>
+<MarkTheWordsActivity
+  text={`Ми вивчили урок. Вона встала рано. Він давав книгу, а потім дав.`}
+  correctWords={[`вивчили`, `встала`, `дав`]}
+/>
+<MarkTheWordsActivity
+  text={`Вони побачили море! Він почув шум. Я взяв книгу і пішов.`}
+  correctWords={[`побачили`, `почув`, `взяв`, `пішов`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

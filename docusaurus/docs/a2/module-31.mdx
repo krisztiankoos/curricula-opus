@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -452,15 +453,17 @@ A detective interviews a witness about a robbery.
 
 ### Find Relative Clauses
 
-
-
-Це [фільм, який я люблю](correct). Я знаю [дівчину, яка тут живе](correct). Це [місце, де ми зустрілися](correct).
-Він [людина, яку поважають](correct). Це [книга, про яку всі говорять](correct).
-
----
-
-Я хочу [спати](incorrect). Він [пішов додому](incorrect). Це [мій друг](incorrect).
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Це фільм, який я люблю. Я знаю дівчину, яка тут живе. Це місце, де ми зустрілися.
+Він людина, яку поважають. Це книга, про яку всі говорять.`}
+  correctWords={[`фільм, який я люблю`, `дівчину, яка тут живе`, `місце, де ми зустрілися`, `людина, яку поважають`, `книга, про яку всі говорять`]}
+/>
+<MarkTheWordsActivity
+  text={`Я хочу спати. Він пішов додому. Це мій друг.`}
+  correctWords={[`спати`, `пішов додому`, `мій друг`]}
+/>
+</MarkTheWords>
 
 ### Fix the Link
 

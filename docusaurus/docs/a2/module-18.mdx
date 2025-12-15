@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Time to make comparisons! In this module, you'll learn to say things like "bigger," "better," "more interesting," and "faster" in Ukrainian. Comparing things is essential for everyday conversation — choosing products, describing people, expressing preferences, and giving opinions.
@@ -558,20 +559,22 @@ There are two ways to say "than" in Ukrainian:
 
 ### Find Comparatives
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on COMPARATIVE adjective forms only.
 
-
-Click on COMPARATIVE adjective forms only.
-
-Цей телефон [кращий](correct) і [швидший](correct). Він [новіший](correct) за мій старий телефон. Але він [дорожчий](correct).
-
----
-
-Вона [вища](correct) за мене. Він [старіший](correct) за брата. Ця ідея [цікавіша](correct)!
-
----
-
-Машина [більша](correct), але [дешевша](correct). Він набагато [розумніший](correct).
-
+Цей телефон кращий і швидший. Він новіший за мій старий телефон. Але він дорожчий.`}
+  correctWords={[`кращий`, `швидший`, `новіший`, `дорожчий`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона вища за мене. Він старіший за брата. Ця ідея цікавіша!`}
+  correctWords={[`вища`, `старіший`, `цікавіша`]}
+/>
+<MarkTheWordsActivity
+  text={`Машина більша, але дешевша. Він набагато розумніший.`}
+  correctWords={[`більша`, `дешевша`, `розумніший`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

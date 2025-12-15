@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -454,14 +455,16 @@ Anna and Borys are planning a surprise for Olena.
 
 ### Find the Connectors
 
-
-
-[Щоб](correct) знати мову, треба говорити. Я роблю це [для того, щоб](correct) ти зрозумів. Він прийшов, [аби](correct) побачити тебе. Вона хоче, [щоб](correct) ми пішли.
-
----
-
-Я знаю, [що](incorrect) ти тут. Це людина, [яка](incorrect) співає. Це тому, [що](incorrect) дощ.
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Щоб знати мову, треба говорити. Я роблю це для того, щоб ти зрозумів. Він прийшов, аби побачити тебе. Вона хоче, щоб ми пішли.`}
+  correctWords={[`Щоб`, `для того, щоб`, `аби`, `щоб`]}
+/>
+<MarkTheWordsActivity
+  text={`Я знаю, що ти тут. Це людина, яка співає. Це тому, що дощ.`}
+  correctWords={[`що`, `яка`, `що`]}
+/>
+</MarkTheWords>
 
 ### Fix the Purpose
 

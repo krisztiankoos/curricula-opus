@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Congratulations on completing Phase A2.2! This checkpoint reviews everything from Modules 11-19, covering verbal aspect, comparison (comparative and superlative adjectives), conditional mood, and shopping vocabulary.
@@ -109,11 +110,19 @@ Read this story. It combines aspect, comparison, and conditional mood.
 Він **порадив** (perf.) мені спробувати узвар. Це було **чудове** рішення.
 
 Потім я **пішов** (perf.) на Андріївський узвіз. Там продавали сувеніри.
+<div className="conversation">
+
 — Скільки **коштує** ця картина? — запитав я.
+
 — Дві тисячі гривень, — сказав продавець.
+
 — Це **занадто** дорого! Чи можна **дешевше**?
+
 — Для вас — тисяча п'ятсот.
+
 — **Беру**! (perf. future implied decision)
+
+</div>
 
 Ввечері я **писав** (imperf.) у щоденнику:
 "Якби я **жив** (cond.) у Києві, я **б гуляв** (cond.) тут щодня. Це місто **гарніше** (comp.) за будь-яке інше".
@@ -512,20 +521,22 @@ Go to the activities section and try to get 100%! If you make a mistake, read th
 
 ### Find Key Grammar
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on PERFECTIVE verbs and SUPERLATIVES.
 
-
-Click on PERFECTIVE verbs and SUPERLATIVES.
-
-Він [прочитав](correct) [найкращу](correct) книгу. Потім [написав](correct) рецензію. Це [найцікавіша](correct) історія!
-
----
-
-Я [купив](correct) [найдешевший](correct) телефон. Він [сказав](correct), що це хороший вибір.
-
----
-
-Вона [зробила](correct) домашнє завдання. Це [найважливіша](correct) справа!
-
+Він прочитав найкращу книгу. Потім написав рецензію. Це найцікавіша історія!`}
+  correctWords={[`прочитав`, `найкращу`, `написав`, `найцікавіша`]}
+/>
+<MarkTheWordsActivity
+  text={`Я купив найдешевший телефон. Він сказав, що це хороший вибір.`}
+  correctWords={[`купив`, `найдешевший`, `сказав`]}
+/>
+<MarkTheWordsActivity
+  text={`Вона зробила домашнє завдання. Це найважливіша справа!`}
+  correctWords={[`зробила`, `найважливіша`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

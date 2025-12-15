@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -519,14 +520,16 @@ To ask about *feelings*, use:
 
 ### ImpersonalExpressions
 
-
-
-[Мені сумно](correct), коли йде дощ. Але [тобі весело](correct), бо ти любиш воду. [Нам холодно](correct) взимку. [Їм страшно](correct) у темряві. [Вам зручно](correct) сидіти? [Мені прикро](correct), що ти йдеш. [Їй радісно](correct) сьогодні.
-
----
-
-[Я веселий](incorrect) хлопець. [Вона сумна](incorrect) дівчина. [Ми щасливі](incorrect).
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Мені сумно, коли йде дощ. Але тобі весело, бо ти любиш воду. Нам холодно взимку. Їм страшно у темряві. Вам зручно сидіти? Мені прикро, що ти йдеш. Їй радісно сьогодні.`}
+  correctWords={[`Мені сумно`, `тобі весело`, `Нам холодно`, `Їм страшно`, `Вам зручно`, `Мені прикро`, `Їй радісно`]}
+/>
+<MarkTheWordsActivity
+  text={`Я веселий хлопець. Вона сумна дівчина. Ми щасливі.`}
+  correctWords={[`Я веселий`, `Вона сумна`, `Ми щасливі`]}
+/>
+</MarkTheWords>
 
 ### Fix the Feelings
 

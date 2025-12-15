@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -494,14 +495,16 @@ In Ukraine, normal temperature is 36.6°C.
 
 ### Medical Terms
 
-
-
-У мене [температура](correct) і [кашель](correct). Я йду до [лікаря](correct). Мені треба купити [ліки](correct). Моє [здоров'я](correct) важливе. [Аптека](correct) за рогом.
-
----
-
-Я люблю [спорт](incorrect). Це [мій кіт](incorrect). Сонце [світить](incorrect).
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`У мене температура і кашель. Я йду до лікаря. Мені треба купити ліки. Моє здоров'я важливе. Аптека за рогом.`}
+  correctWords={[`температура`, `кашель`, `лікаря`, `ліки`, `здоров'я`, `Аптека`]}
+/>
+<MarkTheWordsActivity
+  text={`Я люблю спорт. Це мій кіт. Сонце світить.`}
+  correctWords={[`спорт`, `мій кіт`, `світить`]}
+/>
+</MarkTheWords>
 
 ### Fix the Complaint
 

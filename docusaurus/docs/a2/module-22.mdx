@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 What would you do if you won the lottery? How would life be different if you spoke Ukrainian fluently? This module teaches you to express hypothetical situations — things that could happen, might happen, or aren't real.
@@ -557,20 +558,22 @@ This module covered conditional mood in Ukrainian.
 
 ### Find Conditional
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on CONDITIONAL forms.
 
-
-Click on CONDITIONAL forms.
-
-[Якби](correct) я [мав](correct) час, я [б](correct) [прочитав](correct). Це [було б](correct) чудово!
-
----
-
-[Я б хотів](correct) відвідати Україну. [Якби](correct) [я знав](correct) мову краще! Чи [могли б](correct) ви сказати?
-
----
-
-Якщо буде сонячно, підемо. [Якби](correct) [я був](correct) на твоєму місці, [я б сказав](correct) правду.
-
+Якби я мав час, я б прочитав. Це було б чудово!`}
+  correctWords={[`Якби`, `мав`, `б`, `прочитав`, `було б`]}
+/>
+<MarkTheWordsActivity
+  text={`Я б хотів відвідати Україну. Якби я знав мову краще! Чи могли б ви сказати?`}
+  correctWords={[`Я б хотів`, `Якби`, `я знав`, `могли б`]}
+/>
+<MarkTheWordsActivity
+  text={`Якщо буде сонячно, підемо. Якби я був на твоєму місці, я б сказав правду.`}
+  correctWords={[`Якби`, `я був`, `я б сказав`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

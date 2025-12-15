@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 **Вітаємо!** Ви завершили Фазу A2.1! Цей контрольний модуль перевіряє все, що ви вивчили в Модулях 01-09.
@@ -541,20 +542,22 @@ If you can correctly identify and use all seven cases, you have completed the fo
 
 ### Identify Cases
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on nouns and pronouns showing case usage.
 
-
-Click on nouns and pronouns showing case usage.
-
-[Мама](correct) дає [книгу](correct) [сестрі](correct). [Вона](correct) працює [вчителькою](correct) в [школі](correct).
-
----
-
-Я йду з [другом](correct) до [магазину](correct). Ми купуємо [подарунок](correct) для [мами](correct).
-
----
-
-[Друже](correct)! Допоможи [мені](correct)! Мені потрібно написати [листа](correct) [бабусі](correct).
-
+Мама дає книгу сестрі. Вона працює вчителькою в школі.`}
+  correctWords={[`Мама`, `книгу`, `сестрі`, `Вона`, `вчителькою`, `школі`]}
+/>
+<MarkTheWordsActivity
+  text={`Я йду з другом до магазину. Ми купуємо подарунок для мами.`}
+  correctWords={[`другом`, `магазину`, `подарунок`, `мами`]}
+/>
+<MarkTheWordsActivity
+  text={`Друже! Допоможи мені! Мені потрібно написати листа бабусі.`}
+  correctWords={[`Друже`, `мені`, `листа`, `бабусі`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

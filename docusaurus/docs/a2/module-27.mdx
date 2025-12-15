@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 # Warm-up
@@ -507,14 +508,16 @@ Now you can spread the news (or the gossip)!
 
 ### Find Reporting Verbs
 
-
-
-Він [сказав](correct), що прийде. Вона [запитала](correct), коли це буде. Ми [повідомили](correct), що вже готові. Директор [наказав](correct) працювати. Клієнт [поскаржився](correct) на сервіс. Ти [пообіцяв](correct) допомогти!
-
----
-
-Я [заперечую](correct) все. Він [стверджує](correct) протилежне. Хто [пояснить](correct) це правило?
-
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Він сказав, що прийде. Вона запитала, коли це буде. Ми повідомили, що вже готові. Директор наказав працювати. Клієнт поскаржився на сервіс. Ти пообіцяв допомогти!`}
+  correctWords={[`сказав`, `запитала`, `повідомили`, `наказав`, `поскаржився`, `пообіцяв`]}
+/>
+<MarkTheWordsActivity
+  text={`Я заперечую все. Він стверджує протилежне. Хто пояснить це правило?`}
+  correctWords={[`заперечую`, `стверджує`, `пояснить`]}
+/>
+</MarkTheWords>
 
 ### Fix the Report
 

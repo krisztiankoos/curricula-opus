@@ -17,6 +17,7 @@ import Cloze from '@site/src/components/Cloze';
 import Select from '@site/src/components/Select';
 import Translate from '@site/src/components/Translate';
 import DialogueReorder from '@site/src/components/DialogueReorder';
+import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
 Module 01 introduced the seven Dative pronouns: мені, тобі, йому, їй, нам, вам, їм. Now it's time to learn how to form Dative endings for nouns — and there are different patterns for masculine, feminine, neuter, and plural nouns.
@@ -170,11 +171,19 @@ Good news: the plural is uniform across all genders! All nouns — masculine, fe
 Уряд дає гроші містам. (The government gives money to cities.)
 
 :::info[У львівській кав'ярні]
+<div className="conversation">
+
 — Пані, кому ви телефонуєте?
+
 — Я телефоную сестрі. Вона запізнюється!
+
 — А я пишу листа батькам. Вони живуть у Канаді.
+
 — Як мило! Ви часто пишете батькам?
+
 — Так, щотижня. І завжди надсилаю їм фотографії Львова.
+
+</div>
 :::
 
 
@@ -217,11 +226,19 @@ Some verbs are "dative-hungry" — they always need a dative object:
 Музика заважає сусідам. (The music disturbs the neighbors.)
 
 :::info[Студентське життя в Києві]
+<div className="conversation">
+
 — Оленко, кому ти пишеш?
+
 — Професорові. Пояснюю, чому я пропустила лекцію.
+
 — А я надсилаю домашнє завдання викладачеві.
+
 — Наш викладач суворий! Він не вибачає студентам.
+
 — Так, але він добре пояснює матеріал студентам.
+
+</div>
 :::
 
 
@@ -265,28 +282,49 @@ The following dialogues demonstrate Dative nouns in everyday conversations. Noti
 **Dialogue 1: У магазині подарунків (At the Gift Shop)**
 
 This dialogue shows how to discuss gift recipients using Dative nouns like братові (to brother).
+<div className="conversation">
+
 — Кому ви шукаєте подарунок?
+
 — Братові. У нього день народження.
+
 — А що подобається вашому братові?
+
 — Йому подобаються книги про історію.
+
+</div>
 
 **Dialogue 2: На пошті (At the Post Office)**
 
 Sending packages requires telling the postal worker the recipient — always in Dative (бабусі = to grandma).
 
+<div className="conversation">
+
 — Кому ви надсилаєте посилку?
+
 — Бабусі. Вона живе в Одесі.
+
 — Що в посилці?
+
 — Теплий светр. Я завжди дарую бабусі щось тепле.
+
+</div>
 
 **Dialogue 3: У кафе (At the Café)**
 
 Friends texting at the café — notice подрузі (to a friend, feminine) with the consonant change г→з.
 
+<div className="conversation">
+
 — Чому ти не відповідаєш телефону?
+
 — Я пишу повідомлення подрузі.
+
 — Ти завжди пишеш подрузі так довго?
+
 — Це важливо! Я пояснюю їй домашнє завдання.
+
+</div>
 
 ---
 
@@ -662,20 +700,22 @@ Every answer is in the dative case because all these people are *recipients* of 
 
 ### Find Dative Nouns
 
+<MarkTheWords>
+<MarkTheWordsActivity
+  text={`Click on all the nouns in the dative case.
 
-
-Click on all the nouns in the dative case.
-
-Я даю [книгу](wrong) [другові](correct). Він показує [фото](wrong) [сестрі](correct). Ми пишемо [листи](wrong) [батькам](correct). [Лікар](wrong) допомагає [пацієнтові](correct). Вона телефонує [мамі](correct) щодня.
-
----
-
-[Вчитель](wrong) пояснює [урок](wrong) [учням](correct). Я надсилаю [посилку](wrong) [бабусі](correct). Він дарує [квіти](wrong) [дівчині](correct). [Брат](wrong) допомагає [сестрі](correct). Ми довіряємо [цьому](wrong) [лікареві](correct).
-
----
-
-Я пишу [листа](wrong) [другові](correct). Вона показує [картину](wrong) [гостям](correct). [Батько](wrong) читає [казку](wrong) [дітям](correct). Ми телефонуємо [друзям](correct) щотижня. Він дарує [подарунок](wrong) [мамі](correct).
-
+Я даю книгу другові. Він показує фото сестрі. Ми пишемо листи батькам. Лікар допомагає пацієнтові. Вона телефонує мамі щодня.`}
+  correctWords={[`книгу`, `другові`, `фото`, `сестрі`, `листи`, `батькам`, `Лікар`, `пацієнтові`, `мамі`]}
+/>
+<MarkTheWordsActivity
+  text={`Вчитель пояснює урок учням. Я надсилаю посилку бабусі. Він дарує квіти дівчині. Брат допомагає сестрі. Ми довіряємо цьому лікареві.`}
+  correctWords={[`Вчитель`, `урок`, `учням`, `посилку`, `бабусі`, `квіти`, `дівчині`, `Брат`, `сестрі`, `цьому`, `лікареві`]}
+/>
+<MarkTheWordsActivity
+  text={`Я пишу листа другові. Вона показує картину гостям. Батько читає казку дітям. Ми телефонуємо друзям щотижня. Він дарує подарунок мамі.`}
+  correctWords={[`листа`, `другові`, `картину`, `гостям`, `Батько`, `казку`, `дітям`, `друзям`, `подарунок`, `мамі`]}
+/>
+</MarkTheWords>
 
 ### English to Ukrainian
 

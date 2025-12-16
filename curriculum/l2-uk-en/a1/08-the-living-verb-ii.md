@@ -29,7 +29,13 @@ vocabulary_count: 25
 
 You've already learned Class I verbs that end in **-ати** (читати, писати, працювати). But what about verbs like **говорити** (hovorýty) "to speak" and **робити** (róbyty) "to do"? These belong to **Class II** — the **-ити** family. They're everywhere in Ukrainian, powering actions from speaking and seeing to loving and wanting. Let's unlock this essential verb group!
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Practice : the verbs 'to go'  # 97](https://www.youtube.com/watch?v=mSw2i5NXOH4) — Ukrainian Language
+>
 >
 > **Podcast:** [ULP 1-24 | Second Conjugation](https://www.ukrainianlessons.com/episode24/) — Learn Class II verbs in context
 >

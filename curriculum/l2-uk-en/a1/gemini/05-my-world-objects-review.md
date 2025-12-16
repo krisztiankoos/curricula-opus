@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 1958/300 (>1300 may be too long)
+- **Words:** ⚠️ 1978/300 (>1300 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 18.7% (target 10-25% (M05))
+- **Immersion:** 🇺🇦 18.6% (target 10-25% (M05))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +26,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **My World: Objects** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 333 | Included in Core |
+| **Warm-up** | ✅ | 353 | Included in Core |
 | **Presentation** | ✅ | 527 | Included in Core |
 | **Practice** | ⚪️ | 415 | Skipped |
 | **Cultural Insight** | ✅ | 458 | Included in Core |

@@ -35,17 +35,23 @@ vocabulary_count: 30
 >
 > Notice: We use "болить" (3rd person singular) even though YOU are the one hurting!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [UKRAINIAN VOCABULARY: body parts and organs](https://www.youtube.com/watch?v=JZGl3Qo25Yc) — Red Purple Ukrainian 
+>
 >
 > **Body Parts:** [Body Vocabulary](https://www.ukrainianlessons.com/vocabulary-body/) — Body parts with illustrations and audio
 >
 > **Podcast:** [FMU 1-52 | Body Parts](https://www.ukrainianlessons.com/fmu52/) — Vocabulary booster for body parts
 >
 > **Health Phrases:** [Ukrainian Phrasebook](https://www.ukrainianlessons.com/phrasebook/) — Essential health phrases
-
----
-
-# Grammar
 
 ## Expressing Pain: Болить...
 

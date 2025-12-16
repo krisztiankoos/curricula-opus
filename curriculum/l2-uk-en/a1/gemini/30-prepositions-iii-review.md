@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1064/750
+- **Words:** ✅ 1134/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 39.7% (target 35-55% (M30))
+- **Immersion:** 🇺🇦 39.3% (target 35-55% (M30))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (9 interactive elements)
@@ -24,7 +27,7 @@
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 84 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Grammar** | ⚪️ | 70 | Skipped |
 | **The Three Key Questions** | ⚪️ | 72 | Skipped |
 | **Location: Де? (Where?)** | ⚪️ | 53 | Skipped |
 | **Direction: Куди? (Where to?)** | ⚪️ | 66 | Skipped |
@@ -43,4 +46,4 @@
 | **quiz: Which Preposition?** | 🎮 | 8 | Activity (8 items, min 8) |
 | **unjumble: Preposition Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: Preposition Rules** | 🎮 | 12 | Activity (12 items, min 8) |
-| **Vocabulary** | ➖ | 52 | Excluded Type |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

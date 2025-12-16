@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 2317/750 (>1750 may be too long)
+- **Words:** ⚠️ 2339/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,11 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 32.4% (target 25-40% (M20))
+- **Immersion:** 🇺🇦 32.2% (target 25-40% (M20))
+
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: можна, далеко, дістатися, поверніть, вокзалу
 
 ## HTML VALIDATION
 ✅ Renders correctly (10 interactive elements)
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 223 | Included in Core |
+| **Warm-up** | ✅ | 245 | Included in Core |
 | **Presentation** | ✅ | 1136 | Included in Core |
 | **Practice** | ⚪️ | 207 | Skipped |
 | **Production** | ➖ | 205 | Excluded Type |

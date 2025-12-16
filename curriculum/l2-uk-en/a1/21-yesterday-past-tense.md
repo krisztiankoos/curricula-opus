@@ -35,7 +35,13 @@ Unlike English, where "I worked" and "she worked" look the same, Ukrainian past 
 >
 > Минулий час (past tense) завжди має букву **л**! Я читав. Вона працювала. Ми говорили. The Ukrainian past tense ending -в/-ла/-ло/-ли always contains the letter **л**.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [The Past Tense in Ukrainian](https://www.youtube.com/watch?v=SUx5xUfABIc) — Speak Ukrainian
+>
 >
 > **Grammar Guide:** [Past Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-past-tense/) — Complete guide with audio and illustrations
 >

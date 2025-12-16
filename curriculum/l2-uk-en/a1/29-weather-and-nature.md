@@ -37,17 +37,23 @@ vocabulary_count: 35
 >
 > These are called **impersonal expressions** — they describe conditions, not actions of a person.
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Nature & Weather in Ukrainian](https://www.youtube.com/watch?v=x9qlDTX3fVg) — Pinhok Languages
+>
 >
 > **Weather Vocabulary:** [Яка погода?](https://www.ukrainianlessons.com/weather-vocabulary/) — Complete weather vocabulary with audio
 >
 > **Months & Nature:** [Ukrainian Month Names](https://www.ukrainianlessons.com/months/) — Nature-based month origins
 >
 > **Winter:** [Winter Vocabulary](https://www.ukrainianlessons.com/winter-vocabulary/) — Seasonal vocabulary
-
----
-
-# Grammar
 
 ## Impersonal Weather Expressions
 

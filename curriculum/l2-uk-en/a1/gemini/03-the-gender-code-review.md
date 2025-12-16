@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1135/300
+- **Words:** ✅ 1095/300
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 16.5% (target 10-25% (M03))
+- **Immersion:** 🇺🇦 16.6% (target 10-25% (M03))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +26,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **The Gender Code** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 213 | Included in Core |
+| **Warm-up** | ✅ | 173 | Included in Core |
 | **Presentation** | ✅ | 295 | Included in Core |
 | **Practice** | ⚪️ | 280 | Skipped |
 | **Production** | ➖ | 102 | Excluded Type |

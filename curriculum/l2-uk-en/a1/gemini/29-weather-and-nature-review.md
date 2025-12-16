@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 970/750
+- **Words:** ✅ 982/750
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 47.9% (target 35-55% (M29))
+- **Immersion:** 🇺🇦 47.5% (target 35-55% (M29))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (10 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 102 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 65 | Included in Core |
+| **Grammar** | ⚪️ | 49 | Skipped |
 | **Impersonal Weather Expressions** | ⚪️ | 51 | Skipped |
 | **Asking About Weather** | ⚪️ | 0 | Skipped |
 | **Seasons** | ⚪️ | 0 | Skipped |

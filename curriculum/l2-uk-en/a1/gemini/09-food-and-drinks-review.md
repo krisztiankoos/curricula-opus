@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 1932/500 (>1500 may be too long)
+- **Words:** ⚠️ 1916/500 (>1500 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -16,6 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 17.4% (target 15-35% (M09))
 
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: смачний, яйце, вечеря, фрукти, сніданок
+
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
 
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Food & Drinks** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 184 | Included in Core |
+| **Warm-up** | ✅ | 168 | Included in Core |
 | **Presentation** | ✅ | 1014 | Included in Core |
 | **Practice** | ⚪️ | 288 | Skipped |
 | **Production** | ➖ | 188 | Excluded Type |

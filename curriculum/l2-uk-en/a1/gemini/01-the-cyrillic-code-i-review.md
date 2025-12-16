@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 996/300
+- **Words:** ✅ 983/300
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 9.7% (target 5-15% (M01))
+- **Immersion:** 🇺🇦 9.9% (target 5-15% (M01))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +26,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **The Cyrillic Code I** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 175 | Included in Core |
+| **Warm-up** | ✅ | 162 | Included in Core |
 | **Presentation** | ✅ | 351 | Included in Core |
 | **Practice** | ⚪️ | 134 | Skipped |
 | **Cultural Insight** | ✅ | 156 | Included in Core |

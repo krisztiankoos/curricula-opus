@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1055/750
+- **Words:** ✅ 1066/750
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 48.4% (target 35-55% (M32))
+- **Immersion:** 🇺🇦 48.0% (target 35-55% (M32))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (10 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 112 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 68 | Included in Core |
+| **Grammar** | ⚪️ | 55 | Skipped |
 | **Talking About Family** | ⚪️ | 56 | Skipped |
 | **Describing Family Members** | ⚪️ | 152 | Skipped |
 | **Examples in Context** | ✅ | 215 | Included in Core |

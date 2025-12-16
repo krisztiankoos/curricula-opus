@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1123/750
+- **Words:** ✅ 1136/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,11 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 31.9% (target 25-40% (M16))
+- **Immersion:** 🇺🇦 31.6% (target 25-40% (M16))
+
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: немає, проблема, можливість, причина, сенс
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **The Genitive I - Absence** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 166 | Included in Core |
+| **Warm-up** | ✅ | 179 | Included in Core |
 | **Presentation** | ✅ | 321 | Included in Core |
 | **Practice** | ⚪️ | 102 | Skipped |
 | **Cultural Insight** | ✅ | 411 | Included in Core |

@@ -43,6 +43,18 @@ vocabulary_count: 25
 
 Think back to Module 01, when letters like **Щ, Ї, Ґ** looked like mysterious symbols. Now you can read them! You've gone from **"Що це?"** (What is this?) to **"Я читаю українською!"** (I read in Ukrainian!). That's huge progress in just 10 modules.
 
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Learning UKRAINIAN as fast as humanly possible](https://www.youtube.com/watch?v=XVrvAej51G0) — jccbm
+>
+>
+> **Alphabet Review:** [Ukrainian Alphabet](https://www.ukrainianlessons.com/ukrainian-alphabet/) — All 33 letters with pronunciation guide
+>
+> **Beginner Episodes:** [Top 10 Podcast Episodes for Beginners](https://www.ukrainianlessons.com/episodes-for-ukrainian-language-beginners/) — Perfect for A1.1 review
+>
+> **Getting Started:** [How to Begin Learning Ukrainian](https://www.ukrainianlessons.com/begin-learning-ukrainian/) — 5 steps with free resources
+
 ## Warm-up: Your А1.1 Journey
 
 Let's retrace your path through the first contact phase:
@@ -1029,12 +1041,6 @@ Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidentl
 
 ---
 
-> [!resources] 🎧 External Resources
->
-> **Alphabet Review:** [Ukrainian Alphabet](https://www.ukrainianlessons.com/ukrainian-alphabet/) — All 33 letters with pronunciation guide
->
-> **Beginner Episodes:** [Top 10 Podcast Episodes for Beginners](https://www.ukrainianlessons.com/episodes-for-ukrainian-language-beginners/) — Perfect for A1.1 review
->
-> **Getting Started:** [How to Begin Learning Ukrainian](https://www.ukrainianlessons.com/begin-learning-ukrainian/) — 5 steps with free resources
+
 
 ---

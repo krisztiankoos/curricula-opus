@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 882/750
+- **Words:** ✅ 895/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 46.0% (target 35-55% (M33))
+- **Immersion:** 🇺🇦 46.1% (target 35-55% (M33))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (9 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 93 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 55 | Included in Core |
+| **Grammar** | ⚪️ | 51 | Skipped |
 | **Holiday Greetings** | ⚪️ | 53 | Skipped |
 | **Making Wishes** | ⚪️ | 7 | Skipped |
 | **When Is Your Birthday?** | ⚪️ | 12 | Skipped |

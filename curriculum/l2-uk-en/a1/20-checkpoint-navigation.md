@@ -51,7 +51,13 @@ Let's review these powerful tools through real scenarios you might encounter in 
 >
 > Language learning is cyclical. You learn, use, forget parts, and need to revisit. Think of this as your "progress save point"!
 
-> [!resources] 🎧 Review Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [How I learnt my first 500 words in Ukrainian ](https://www.youtube.com/watch?v=SdgPUOHXNts) —  Vocabooster Review|Conor Clyne - New Europe Experience
+>
 >
 > **All Cases:** [Ukrainian Cases Chart](https://www.ukrainianlessons.com/ukrainian-cases-chart/) — Complete table of all 7 cases
 >

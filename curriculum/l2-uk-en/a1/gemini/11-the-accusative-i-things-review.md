@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1033/750
+- **Words:** ✅ 1047/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,11 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 32.5% (target 25-40% (M11))
+- **Immersion:** 🇺🇦 32.3% (target 25-40% (M11))
+
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: чути, вмикати, бачити, закривати, нести
 
 ## HTML VALIDATION
 ✅ Renders correctly (9 interactive elements)
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **The Accusative I - Things** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 106 | Included in Core |
+| **Warm-up** | ✅ | 120 | Included in Core |
 | **Presentation** | ✅ | 552 | Included in Core |
 | **Practice** | ⚪️ | 145 | Skipped |
 | **Production** | ➖ | 75 | Excluded Type |

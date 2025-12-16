@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1244/500
+- **Words:** ✅ 1258/500
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 26.5% (target 15-35% (M06))
+- **Immersion:** 🇺🇦 26.3% (target 15-35% (M06))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -22,8 +25,8 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **The Living Verb I** | ⚪️ | 230 | Skipped |
-| **Warm-up** | ✅ | 45 | Included in Core |
+| **The Living Verb I** | ⚪️ | 187 | Skipped |
+| **Warm-up** | ✅ | 102 | Included in Core |
 | **Presentation** | ✅ | 449 | Included in Core |
 | **Practice** | ⚪️ | 215 | Skipped |
 | **Cultural Insight** | ✅ | 155 | Included in Core |

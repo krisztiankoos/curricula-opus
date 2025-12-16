@@ -39,6 +39,18 @@ vocabulary_count: 20
 
 # Grammar
 
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian prepositions У, В and НА and the difference between them](https://www.youtube.com/watch?v=Jov8xPqq7cM) — Speak Ukrainian
+>
+>
+> **Location vs Destination:** [В Україні vs В Україну](https://www.ukrainianlessons.com/location-destination-prepositions/) — How to express "where" vs "where to"
+>
+> **Prepositions Guide:** [Difference between У (В) and На](https://www.ukrainianlessons.com/prepositions-u-na/) — When to use which preposition
+>
+> **Directions:** [Напрямки — Directions in Ukrainian](https://www.ukrainianlessons.com/vocabulary-directions/) — Audio vocabulary for navigation
+
 ## The Three Key Questions
 
 > [!observe] Спостереження (Pattern Discovery)
@@ -625,12 +637,6 @@ Is this true or false?
 
 ---
 
-> [!resources] 🎧 External Resources
->
-> **Location vs Destination:** [В Україні vs В Україну](https://www.ukrainianlessons.com/location-destination-prepositions/) — How to express "where" vs "where to"
->
-> **Prepositions Guide:** [Difference between У (В) and На](https://www.ukrainianlessons.com/prepositions-u-na/) — When to use which preposition
->
-> **Directions:** [Напрямки — Directions in Ukrainian](https://www.ukrainianlessons.com/vocabulary-directions/) — Audio vocabulary for navigation
+
 
 ---

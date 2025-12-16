@@ -38,7 +38,13 @@ In English, asking "Do you read?" requires changing word order or adding "do/doe
 >
 > Ukrainian is very flexible with questions. You can ask "Чи ти читаєш?" (formal) or just "Ти читаєш?" (casual, with rising intonation). Both work! Context and tone tell you it's a question.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Negative sentences/Double negative in Ukrainian language](https://www.youtube.com/watch?v=93NJlqXegFw) — Speak Ukrainian
+>
 >
 > **Question Words:** [Питальні слова](https://www.ukrainianlessons.com/question-words/) — All question words with examples
 >

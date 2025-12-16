@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 2026/500 (>1500 may be too long)
+- **Words:** ⚠️ 2087/500 (>1500 may be too long)
 - **Activities:** ✅ 11/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 29.4% (target 15-35% (M10))
+- **Immersion:** 🇺🇦 29.3% (target 15-35% (M10))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (11 interactive elements)
@@ -22,7 +25,7 @@
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 128 | Included in Core |
+| **Intro/Narrative** | ✅ | 189 | Included in Core |
 | **Warm-up: Your А1.1 Journey** | ✅ | 230 | Included in Core |
 | **Presentation: What You've Mastered** | ✅ | 736 | Included in Core |
 | **Practice: Integrated Skills** | ⚪️ | 199 | Skipped |
@@ -42,4 +45,4 @@
 | **match-up: Food & Drinks** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Negation Practice** | 🎮 | 12 | Activity (12 items, min 8) |
 | **Self-Assessment Rubric** | ⚪️ | 178 | Skipped |
-| **Vocabulary** | ➖ | 56 | Excluded Type |
+| **Vocabulary** | ➖ | 8 | Excluded Type |

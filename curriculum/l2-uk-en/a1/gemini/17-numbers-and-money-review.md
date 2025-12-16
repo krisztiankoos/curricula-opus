@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1180/750
+- **Words:** ✅ 1195/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 31.0% (target 25-40% (M17))
+- **Immersion:** 🇺🇦 30.9% (target 25-40% (M17))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (9 interactive elements)
@@ -23,7 +26,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Numbers & Money** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 136 | Included in Core |
+| **Warm-up** | ✅ | 151 | Included in Core |
 | **Presentation** | ✅ | 499 | Included in Core |
 | **Practice** | ⚪️ | 240 | Skipped |
 | **Cultural Insight** | ✅ | 231 | Included in Core |

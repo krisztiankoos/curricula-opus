@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1036/750
+- **Words:** ✅ 1051/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 37.8% (target 35-55% (M26))
+- **Immersion:** 🇺🇦 37.4% (target 35-55% (M26))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 96 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 54 | Included in Core |
+| **Grammar** | ⚪️ | 57 | Skipped |
 | **Why Adjective Agreement Matters** | ✅ | 63 | Included in Core |
 | **Hard Stem Adjective Endings** | ⚪️ | 61 | Skipped |
 | **Soft Stem Adjective Endings** | ⚪️ | 68 | Skipped |

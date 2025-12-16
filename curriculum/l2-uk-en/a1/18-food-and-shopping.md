@@ -36,7 +36,13 @@ Today, you'll learn how to navigate Ukrainian stores and cafés with confidence.
 >
 > Ukrainians love their **ринки** (markets)! Fresh produce, homemade cheeses, and seasonal fruits are sold by vendors who've been selling at the same spot for decades. It's not just shopping—it's a social experience. You greet the vendors, they remember your preferences, and you bargain a little. Try saying "Скільки коштує?" (How much is it?) at Besarabsky Market in Kyiv!
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Basic shopping words #  89](https://www.youtube.com/watch?v=xdepcyiaKd4) — Ukrainian Language
+>
 >
 > **Shopping Vocabulary:** [FMU 1-18 | Shopping Vocabulary](https://www.ukrainianlessons.com/fmu18/) — Essential store vocabulary
 >

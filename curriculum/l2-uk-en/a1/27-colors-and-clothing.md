@@ -31,17 +31,23 @@ vocabulary_count: 30
 >
 > Colors are adjectives, so they must agree with nouns! Сорочка біла (feminine), светр білий (masculine), пальто біле (neuter). Once you know the pattern from Module 26, colors work the same way!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Colours and Clothes in Ukrainian ](https://www.youtube.com/watch?v=tNgpkde4pnc) —  Speak Ukrainian Language|Learn Ukrainian with Vakulenko
+>
 >
 > **Colors:** [Colors in Ukrainian](https://www.ukrainianlessons.com/vocabulary-colors/) — All colors with audio
 >
 > **Video:** [Learn Ukrainian Colors](https://www.ukrainianlessons.com/video-colors/) — Interactive color practice
 >
 > **Clothes:** [Clothes Vocabulary](https://www.ukrainianlessons.com/vocabulary-clothes/) — Clothing items with illustrations
-
----
-
-# Grammar
 
 ## Color Adjectives Must Agree
 

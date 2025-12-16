@@ -31,17 +31,23 @@ vocabulary_count: 25
 >
 > In every language, we need to express what we CAN do, what we MUST do, and what we WANT to do. Ukrainian has many ways to express these ideas!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian verbs: What to consider?](https://www.youtube.com/watch?v=UprIjfMZgzA) — Taste Ukrainian
+>
 >
 > **Verbs:** [500+ Ukrainian Verbs](https://www.ukrainianlessons.com/verbs/) — Reference guide for verb conjugation
 >
 > **Podcasts:** [Ukrainian Verbs in Context](https://www.ukrainianlessons.com/ukrainian-verbs-podcasts/) — Learn verbs through real conversations
 >
 > **Grammar:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Conjugation patterns for all tenses
-
----
-
-# Grammar
 
 ## Expressing Ability: могти vs вміти
 

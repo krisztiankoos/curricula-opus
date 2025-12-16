@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1165/750
+- **Words:** ✅ 1181/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,11 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 28.8% (target 25-40% (M19))
+- **Immersion:** 🇺🇦 28.6% (target 25-40% (M19))
+
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: окремо, порекомендуєте, разом, принесіть, столик
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 91 | Included in Core |
+| **Warm-up** | ✅ | 107 | Included in Core |
 | **Presentation** | ✅ | 455 | Included in Core |
 | **Practice** | ⚪️ | 272 | Skipped |
 | **Production** | ➖ | 103 | Excluded Type |

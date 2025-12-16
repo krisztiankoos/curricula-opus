@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 946/750
+- **Words:** ✅ 961/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 46.1% (target 35-55% (M28))
+- **Immersion:** 🇺🇦 45.6% (target 35-55% (M28))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (9 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 98 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 58 | Included in Core |
+| **Grammar** | ⚪️ | 55 | Skipped |
 | **How to Form Adverbs** | ⚪️ | 76 | Skipped |
 | **Frequency Adverbs: How Often?** | ⚪️ | 120 | Skipped |
 | **Degree Adverbs: How Much?** | ⚪️ | 0 | Skipped |

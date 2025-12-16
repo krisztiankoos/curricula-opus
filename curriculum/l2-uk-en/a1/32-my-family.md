@@ -35,17 +35,23 @@ vocabulary_count: 35
 >
 > Notice: For "my mom's name," we use Genitive: Мо**ю** маму (Accusative) звати...
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian Vocabulary: Family](https://www.youtube.com/watch?v=4W8ahBUh1Ho) — Let's Learn Ukrainian
+>
 >
 > **Family Vocabulary:** [Сім'я — Family](https://www.ukrainianlessons.com/vocabulary-family/) — Family tree with audio
 >
 > **Podcast:** [FMU 1-33 | Family Members](https://www.ukrainianlessons.com/fmu33/) — Extended family vocabulary
 >
 > **Podcast:** [ULP 1-06 | Talking About Family](https://www.ukrainianlessons.com/episode6/) — Family + "I have" construction
-
----
-
-# Grammar
 
 ## Talking About Family
 

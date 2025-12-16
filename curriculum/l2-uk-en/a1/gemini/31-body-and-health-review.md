@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 902/750
+- **Words:** ✅ 916/750
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 43.1% (target 35-55% (M31))
+- **Immersion:** 🇺🇦 42.7% (target 35-55% (M31))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (10 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 112 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 70 | Included in Core |
+| **Grammar** | ⚪️ | 56 | Skipped |
 | **Expressing Pain: Болить...** | ⚪️ | 60 | Skipped |
 | **Common Health Expressions** | ⚪️ | 0 | Skipped |
 | **At the Pharmacy** | ⚪️ | 0 | Skipped |

@@ -35,17 +35,23 @@ vocabulary_count: 30
 >
 > These are **adverbs** — they describe HOW someone does something!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian Adverbs. Adverbs of Frequency ](https://www.youtube.com/watch?v=NQh1XsP59z0) —  Ukrainian lesson 11|VERBA SCHOOL
+>
 >
 > **Grammar:** [Adjectives and Adverbs](https://www.ukrainianlessons.com/adjectives-and-adverbs/) — Comparison with illustrations and audio
 >
 > **Chart:** [Adjectives and Adverbs Chart](https://www.ukrainianlessons.com/adjectives-adverbs-chart/) — Full comparison table
 >
 > **Location Adverbs:** [Adverbs of Location](https://www.ukrainianlessons.com/adverbs-location/) — Тут, сюди, звідси patterns
-
----
-
-# Grammar
 
 ## How to Form Adverbs
 

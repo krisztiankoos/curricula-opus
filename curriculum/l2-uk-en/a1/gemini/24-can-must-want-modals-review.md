@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 921/750
+- **Words:** ✅ 933/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 35.8% (target 35-55% (M24))
+- **Immersion:** 🇺🇦 35.5% (target 35-55% (M24))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 77 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 35 | Included in Core |
+| **Grammar** | ⚪️ | 54 | Skipped |
 | **Expressing Ability: могти vs вміти** | ⚪️ | 49 | Skipped |
 | **Expressing Obligation: повинен, треба, мусити** | ⚪️ | 80 | Skipped |
 | **Expressing Permission: можна / не можна** | ⚪️ | 36 | Skipped |

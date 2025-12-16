@@ -37,7 +37,13 @@ vocabulary_count: 20
 >
 > Ukrainian has TWO types of possessive pronouns: those that change form (мій, твій, наш, ваш, їхній) and those that NEVER change (його, її). English has only the second type! This makes Ukrainian possessives easier for ownership, but trickier for gender agreement.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian Possessive Pronouns + Family Vocabulary ](https://www.youtube.com/watch?v=LARvKb7D38M) —  Ukrainian lesson 12|VERBA SCHOOL
+>
 >
 > **Grammar Guide:** [Possessive Pronouns](https://www.ukrainianlessons.com/grammar-possessive-pronouns/) — Illustrations and audio
 >

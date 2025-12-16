@@ -28,26 +28,21 @@ Think of it like a secret code: the last letter reveals the gender. And once you
 >
 > Ukrainian noun gender is more predictable than German or French! In Ukrainian, **95% of the time**, you can guess the gender just by looking at the ending. No memorization needed — just pattern recognition.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Gender of Ukrainian Nouns ](https://www.youtube.com/watch?v=Vl5MAW3AYoU) —  Basic Ukrainian Grammar|Learn Ukrainian with Vakulenko
+>
 >
 > **Grammar Guide:** [Noun Genders in Ukrainian](https://www.ukrainianlessons.com/noun-genders-in-ukrainian/) — Infographic with rules and exceptions
 >
 > **Video:** [How to Know Noun Gender](https://www.ukrainianlessons.com/video-noun-gender/) — 8-minute grammar guide
 >
 > **Plurals:** [Plural of Nouns](https://www.ukrainianlessons.com/grammar-plural-nouns/) — How gender affects plural forms
-
-Let's start with a game. Look at these three words:
-
-- **Стіл** (stil) — table
-- **Книга** (knyha) — book
-- **Вікно** (vikno) — window
-
-One ends in a consonant. One ends in **-а**. One ends in **-о**. Can you guess which is masculine, feminine, and neuter?
-
 > [!answer]
 > Стіл (consonant) = masculine. Книга (-а) = feminine. Вікно (-о) = neuter.
-
-Congratulations — you've just learned the **Ukrainian Gender Code**!
 
 ## Presentation
 

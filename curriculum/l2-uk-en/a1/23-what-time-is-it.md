@@ -33,17 +33,23 @@ vocabulary_count: 40
 >
 > Ukrainians often greet with "Котра година?" — literally "Which hour?" Time is central to daily life, from scheduling meetings to catching trains. Let's learn to tell time in Ukrainian!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Telling the time in Ukrainian](https://www.youtube.com/watch?v=0Dkug4_mrDA) — Speak Ukrainian
+>
 >
 > **Time Vocabulary:** [Котра година?](https://www.ukrainianlessons.com/grammar-time/) — Infographic on telling time
 >
 > **Days of the Week:** [Дні тижня](https://www.ukrainianlessons.com/vocabulary-days/) — Days with audio
 >
 > **Months:** [Ukrainian Months and Their Origin](https://www.ukrainianlessons.com/months/) — Learn months through their nature-based meanings
-
----
-
-# Grammar
 
 ## Telling Time
 

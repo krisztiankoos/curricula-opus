@@ -32,7 +32,13 @@ vocabulary_count: 24
 
 You've learned cases, possessives, and numbers. Now it's time to combine everything in a real Ukrainian scenario: **at the café**! Ukrainian café culture is vibrant—from traditional cafés serving борщ and вареники to modern coffee shops in Lviv and Kyiv. Let's learn how to order like a local.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Menu in the coffee shop in the Ukrainian language](https://www.youtube.com/watch?v=wUH7sf5ccP8) — Speak Ukrainian
+>
 >
 > **Podcast:** [FMU 1-11 | Order Coffee](https://www.ukrainianlessons.com/fmu11/) — Essential café phrases
 >

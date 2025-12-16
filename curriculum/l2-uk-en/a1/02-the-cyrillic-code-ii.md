@@ -35,9 +35,14 @@ Welcome back, code-breaker! In Module 1, you cracked 19 letters. That's already 
 
 By the end of this module, you'll be able to read **любов** (love), **дякую** (thank you), **Київ** (Kyiv), and **борщ** (borscht). You'll understand why Ukrainian is one of the most melodic Slavic languages. And you'll know how to avoid the dreaded italic trap that trips up every beginner.
 
-> [!resources] 🎧 Pronunciation Resources
+
+
+
+> [!resources] 🔗 External Resources
 >
-> **YouTube:** [Ukrainian Lessons Channel](https://www.youtube.com/@ukrainianlessons) — Beginner videos for alphabet and pronunciation
+> **YouTube:** [UKRAINIAN: handwritten cyrillic alphabet](https://www.youtube.com/watch?v=2tEPOopp7-I) — Red Purple Ukrainian 
+>
+>
 >
 > **Podcast:** [Ukrainian Lessons Podcast](https://www.ukrainianlessons.com/thepodcast/) — Season 1 for beginners, with native speaker audio
 >

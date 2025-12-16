@@ -40,7 +40,13 @@ This might sound complicated at first, but it actually makes Ukrainian more prec
 
 **The connection to Module 03:** You already learned about noun gender in Module 03: The Gender Code. You know that nouns ending in consonants are usually masculine (стіл, телефон), nouns ending in -а/-я are usually feminine (книга, сумка), and nouns ending in -о/-е are usually neuter (вікно, крісло). Now you're going to use that gender knowledge every time you point to something!
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Demonstrative pronouns in Ukrainian - ЦЕ VS ЦЕЙ VS ТОЙ IN THE UKRAINIAN](https://www.youtube.com/watch?v=2IlH4OxyFJ8) — Ukrainian grammar 
+>
 >
 > **Grammar:** [ЦЕЙ and ТОЙ Declension](https://www.ukrainianlessons.com/pronouns-this-that/) — Full table with examples
 >

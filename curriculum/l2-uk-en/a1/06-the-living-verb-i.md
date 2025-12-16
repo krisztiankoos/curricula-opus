@@ -30,13 +30,7 @@ Mastering this pattern means you can suddenly talk about what you're doing **rig
 >
 > Ukrainian verb conjugations are incredibly logical. Once you learn the Class I pattern (this module), you've unlocked hundreds of verbs! They all follow the same rules, so if you know **читати → читаю**, you automatically know **працювати → працюю** and **гуляти → гуляю**. It's like getting a master key to Ukrainian action.
 
-> [!resources] 🎧 External Resources
->
-> **Grammar Chart:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable conjugation chart
->
-> **Podcast:** [ULP 1-22 | First Verb Conjugation](https://www.ukrainianlessons.com/episode22/) — Learn conjugation in context
->
-> **Quick Lesson:** [FMU 1-57 | Verb Conjugations](https://www.ukrainianlessons.com/fmu57/) — 5-minute grammar review
+
 
 ---
 
@@ -47,6 +41,18 @@ Think about your typical day. You wake up. You eat breakfast. You read. You work
 **Питання:** You read. You work. You walk. Ready to say it in Ukrainian?
 
 ---
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian Present Tense. The First Conjugation Group.](https://www.youtube.com/watch?v=gSmbSuSs-Ps) — Speak Ukrainian
+>
+>
+> **Grammar Chart:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable conjugation chart
+>
+> **Podcast:** [ULP 1-22 | First Verb Conjugation](https://www.ukrainianlessons.com/episode22/) — Learn conjugation in context
+>
+> **Quick Lesson:** [FMU 1-57 | Verb Conjugations](https://www.ukrainianlessons.com/fmu57/) — 5-minute grammar review
 
 ## Presentation
 

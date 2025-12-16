@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 869/750
+- **Words:** ✅ 886/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 47.6% (target 35-55% (M27))
+- **Immersion:** 🇺🇦 46.8% (target 35-55% (M27))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,8 +26,8 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 77 | Included in Core |
-| **Grammar** | ⚪️ | 0 | Skipped |
+| **Warm-up** | ✅ | 41 | Included in Core |
+| **Grammar** | ⚪️ | 53 | Skipped |
 | **Color Adjectives Must Agree** | ⚪️ | 55 | Skipped |
 | **Describing What You Wear** | ⚪️ | 119 | Skipped |
 | **Pluralia Tantum (Always Plural)** | ⚪️ | 28 | Skipped |

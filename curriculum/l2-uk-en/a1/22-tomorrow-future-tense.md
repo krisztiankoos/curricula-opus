@@ -30,13 +30,7 @@ vocabulary_count: 25
 > - Use time expressions for future events
 > - Talk about plans, intentions, and hopes
 
-> [!resources] 🎧 External Resources
->
-> **Grammar Guide:** [Future Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-future/) — Tables for both future forms
->
-> **Podcast:** [ULP 1-28 | Making Plans](https://www.ukrainianlessons.com/episode28/) — Learn future tense through planning conversations
->
-> **All Tenses:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable conjugation chart
+
 
 ---
 

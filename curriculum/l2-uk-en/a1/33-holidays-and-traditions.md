@@ -36,17 +36,23 @@ vocabulary_count: 30
 >
 > Learn these greetings as fixed phrases — you'll analyze the grammar at A2!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Ukrainian customs and traditions. Репетитор Англійської](https://www.youtube.com/watch?v=jOnBruhc15M) — Репетитор Англійської
+>
 >
 > **Greetings:** [Greetings for Every Occasion](https://www.ukrainianlessons.com/greetings/) — All Ukrainian greetings with audio
 >
 > **Christmas:** [When is Ukrainian Christmas](https://www.ukrainianlessons.com/ukrainian-christmas/) — Christmas traditions explained
 >
 > **Easter:** [Easter Greetings](https://www.ukrainianlessons.com/easter-greetings/) — Authentic Easter phrases
-
----
-
-# Grammar
 
 ## Holiday Greetings
 

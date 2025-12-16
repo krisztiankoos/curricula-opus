@@ -717,12 +717,6 @@ Is this true or false?
 
 ---
 
-> [!resources] 🎧 Continue Learning
->
-> **Podcast for Beginners:** [Ukrainian Lessons Podcast Season 1](https://www.ukrainianlessons.com/season1/) — 40 episodes for A1 learners with cultural facts
->
-> **Quick Practice:** [5 Minute Ukrainian](https://www.ukrainianlessons.com/fmu/) — Short real-life dialogues for everyday situations
->
-> **Resource Hub:** [100 Links for Learning Ukrainian](https://www.ukrainianlessons.com/ukrainian-language-resources/) — Best courses, books, podcasts, and apps
+
 
 ---

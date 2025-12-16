@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 964/750
+- **Words:** ✅ 976/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -14,7 +14,11 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 36.5% (target 35-55% (M21))
+- **Immersion:** 🇺🇦 36.3% (target 35-55% (M21))
+
+## MDX VALIDATION
+### Warnings
+- ⚠️ Vocabulary words possibly missing: минулого, року, колись, читав, тижня
 
 ## HTML VALIDATION
 ✅ Renders correctly (8 interactive elements)
@@ -23,7 +27,7 @@
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 164 | Included in Core |
+| **Warm-up** | ✅ | 176 | Included in Core |
 | **Presentation** | ✅ | 708 | Included in Core |
 | **Підсумок (Summary)** | ✅ | 92 | Included in Core |
 | **Вправи (Activities)** | ➖ | 0 | Excluded Type |

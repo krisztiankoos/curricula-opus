@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.3% (target 35-55% (M34))
+- **Immersion:** 🇺🇦 51.9% (target 35-55% (M34))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## HTML VALIDATION
 ✅ Renders correctly (10 interactive elements)
@@ -28,7 +31,7 @@
 | **Reading & Writing** | ✅ | 41 | Included in Core |
 | **Speaking & Listening** | ⚪️ | 44 | Skipped |
 | **Граматика (Grammar)** | ⚪️ | 50 | Skipped |
-| **Vocabulary** | ➖ | 54 | Excluded Type |
+| **Vocabulary** | ➖ | 0 | Excluded Type |
 | **Review Sections** | ✅ | 0 | Included in Core |
 | **Section 1: Self-Introduction** | ✅ | 58 | Included in Core |
 | **Section 2: My Family** | ⚪️ | 61 | Skipped |

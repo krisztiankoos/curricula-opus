@@ -33,17 +33,23 @@ vocabulary_count: 36
 >
 > Приклади: великий будинок, велика машина, велике місто, великі люди — усі форми слова "великий"!
 
-> [!resources] 🎧 External Resources
+
+
+---
+
+# Grammar
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [20 COMMON UKRAINIAN ADJECTIVES Every Beginner Must Know](https://www.youtube.com/watch?v=OixU7XdhNq4) — Speak Ukrainian
+>
 >
 > **Grammar Guide:** [Common Ukrainian Adjectives](https://www.ukrainianlessons.com/vocabulary-adjectives/) — Useful table with opposites
 >
 > **Video:** [Introduction to Ukrainian Adjectives](https://www.ukrainianlessons.com/video-adjectives/) — Grammar video on adjective forms
 >
 > **Comparison:** [Adjectives and Adverbs Chart](https://www.ukrainianlessons.com/adjectives-adverbs-chart/) — Compare adjectives and adverbs
-
----
-
-# Grammar
 
 ## Why Adjective Agreement Matters
 

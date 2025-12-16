@@ -27,7 +27,13 @@ Compare these two sentences:
 
 Why? Because Ukrainian wants to clearly mark **who** you're seeing, not just **what**. This is the animate-inanimate distinction, and it's your key to sounding natural.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [Practice #Ukrainian Accusative Case with me! (with nouns, pronouns and adjectives)](https://www.youtube.com/watch?v=BYBWx6ds8Fk) — Let's Learn Ukrainian
+>
 >
 > **Grammar Guide:** [Accusative Case](https://www.ukrainianlessons.com/accusativecase/) — Animate vs inanimate distinction explained
 >

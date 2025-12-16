@@ -35,7 +35,13 @@ You're at a market in Kyiv. The vendor says "Двадцять гривень." D
 >
 > The Ukrainian currency is called **гривня** (hryvnia). It's one of the oldest currency names in Europe, dating back to Kyivan Rus' in the 11th century! The word originally meant "neck ring" - a silver ornament worn by wealthy citizens.
 
-> [!resources] 🎧 External Resources
+
+
+
+> [!resources] 🔗 External Resources
+>
+> **YouTube:** [COUNTING UKRAINIAN CARDINAL NUMBERS - 0 - 100](https://www.youtube.com/watch?v=7XrQddM5llE) — Speak Ukrainian
+>
 >
 > **Numbers:** [Numbers in Ukrainian](https://www.ukrainianlessons.com/numbers/) — Full list with audio and illustrations
 >

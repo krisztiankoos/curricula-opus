@@ -197,7 +197,7 @@ Understanding technical texts is a key skill for B1.
 
 > [!resources] 🔗 External Resources
 >
-> **YouTube:** [Can Russians understand Ukrainian? 🇺🇦...](https://www.youtube.com/watch?v=BbGiUilnBOs) — NFKRZ
+> **YouTube:** [Essential Ukrainian Phrases for Beginners](https://www.youtube.com/watch?v=aJ2Ldu2TaKA) — Speak Ukrainian
 >
 > **Grammar Guide:** [Ukrainian Grammar](https://www.ukrainianlessons.com/ukrainian-tenses/) — Grammar overview
 >

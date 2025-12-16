@@ -241,7 +241,7 @@ Here are errors that students often make:
 
 > [!resources] 🔗 External Resources
 >
-> **YouTube:** [HOW TO REVIEW ALL RUSSIAN CASES QUICKLY AND EFFECTIVELY?...](https://www.youtube.com/watch?v=PAzw0yZydPw) — Ukrainian grammar
+> **YouTube:** [Ukrainian Cases Explained](https://www.youtube.com/watch?v=xVD1GRxnvNw) — Ukrainian Lessons
 >
 > **Grammar Guide:** [Ukrainian Grammar](https://www.ukrainianlessons.com/ukrainian-tenses/) — Grammar overview
 >

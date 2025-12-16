@@ -197,9 +197,20 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 
 ### External Resources (B1.2)
 
+#### YouTube Videos
+
+| Title | URL | Channel | Status |
+|-------|-----|---------|--------|
+| Verbs of Motion: Unidirectional, Multidirectional \| Perfective, Imperfective \|Conjugation #Ukrainian | https://www.youtube.com/watch?v=Bs7EJFMsAJY | Let's Learn Ukrainian | ✅ Found |
+| Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ ЇЗДИТИ | https://www.youtube.com/watch?v=BHURRyliZHo | Ukrainian grammar | ✅ Found |
+| Їздити VS Їхати/ Йти VS Ходити in Ukrainian | https://www.youtube.com/watch?v=T6YwFExsRVc | Ukrainian grammar | ✅ Found |
+| Let's practise the verbs of motion with me | https://www.youtube.com/watch?v=yS3MwBod5nM | Ukrainian grammar | ✅ Found |
+| Practise with me the main verbs of motion in Ukrainian | https://www.youtube.com/watch?v=iFvvfEayiLE | Ukrainian grammar | ✅ Found |
+
+#### Grammar Guides
+
 | Module | Resource | URL | Status |
-|--------|----------|-----|--------|
-| M11 | Ukrainian Lessons: Motion Verbs | ukrainianlessons.com/motion-verbs/ | ✅ Linked |
+|--------|----------|-----|--------|\n| M11 | Ukrainian Lessons: Motion Verbs | ukrainianlessons.com/motion-verbs/ | ✅ Linked |
 | M12-15 | Ukrainian Lessons: Prefixes | ukrainianlessons.com/prefixes/ | ✅ Linked |
 | M19 | Kyiv Metro Map | kyivmetro.ua | 🌐 Reference |
 

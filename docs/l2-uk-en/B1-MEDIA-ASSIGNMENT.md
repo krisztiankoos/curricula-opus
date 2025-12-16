@@ -258,6 +258,16 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 |-------|-----|---------|--------|
 | Якби я мала крила орлині, якби я вміла літати - Українська народна пісня | https://www.youtube.com/watch?v=4HOw1znM7Sc | Tatiana Pluhatar | ✅ Found (якби examples in folk song) |
 
+#### Module-Specific Video Assignments
+
+**When creating these modules, add this video to the `> [!resources]` section:**
+
+| Module | Recommended Videos | Rationale |
+|--------|-------------------|-----------|
+| **M26-27: Conditionals (якщо/якби)** | • [Якби я мала крила орлині - Українська народна пісня](https://www.youtube.com/watch?v=4HOw1znM7Sc) | Folk song with multiple якби (if I had) examples for authentic conditional usage |
+
+*Note: For M21-25 and M28-35, rely on Ukrainian Lessons grammar guides below, as no Ukrainian-language instructional videos were found.*
+
 #### Grammar Guides
 
 | Module | Resource | URL | Status |

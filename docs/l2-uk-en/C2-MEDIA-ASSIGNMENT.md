@@ -1,10 +1,87 @@
 # C2 Media Content Assignment
 
-**Status:** Draft
-**Created:** 2024-12-14
+**Status:** Needs External Resources Added
+**Created:** 2025-12-14
+**Updated:** 2025-12-16
 **GitHub Issue:** TBD
 
 This document assigns media content requirements to all 80 C2 modules before creation begins.
+
+---
+
+## 🚨 MANDATORY: NO RUSSIAN CONTENT
+
+> [!CAUTION]
+> **ZERO TOLERANCE FOR RUSSIAN CONTENT**
+>
+> Russia is committing genocide against Ukraine. Every day Russian forces bomb Ukrainian cities, murder civilians, kidnap children, and commit war crimes. In this context, mixing Russian content with Ukrainian language learning is **completely unacceptable**.
+>
+> **STRICTLY FORBIDDEN:**
+> - ❌ NO videos comparing Ukrainian to Russian
+> - ❌ NO "Can Russians understand Ukrainian?" content
+> - ❌ NO Russian-language learning resources
+> - ❌ NO videos from Russian channels/creators
+> - ❌ NO content that frames Ukrainian as a "dialect" or "variant" of Russian
+> - ❌ NO content normalizing Russia or Russian culture
+>
+> **REQUIRED:**
+> - ✅ ONLY pure Ukrainian content from Ukrainian creators
+> - ✅ Ukrainian channels: Ukrainian Lessons, Speak Ukrainian, Let's Learn Ukrainian
+> - ✅ Content that celebrates Ukrainian identity and independence
+> - ✅ Myth-buster boxes that debunk Russian propaganda (with "Prosecutor's Voice")
+>
+> **Before adding ANY YouTube video:**
+> 1. Check the channel - is it Ukrainian-owned?
+> 2. Check the title - any Russian references or comparisons?
+> 3. Check the content - does it treat Ukrainian as its own language?
+>
+> **If in doubt, DO NOT USE THE VIDEO.**
+
+---
+
+## ⚠️ IMPORTANT: External Resources Not Yet Added
+
+**Current state:** 0/80 C2 modules have `> [!resources]` sections.
+
+### Verified Resource Sites
+
+| Site | Best For | Example URLs |
+|------|----------|--------------|
+| **ukrainianlessons.com** | Advanced topics, stylistics | `/stylistics/`, `/advanced/` |
+| **ukrainiancourse.com** | Grammar reference tables | `/grammar-tables/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/advanced/` |
+| **speakua.com** | Blog articles | `/blog/` |
+
+### YouTube Channels for Learning Ukrainian
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Structured grammar, podcasts |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Advanced grammar deep dives |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Grammar lessons |
+| **Speak Ukrainian** | `@speakukrainian` | Comprehensive grammar |
+| **Olga Reznikova** | `@OlgaReznikova` | Wide variety (233K subs) |
+
+### Finding YouTube Videos with yt-dlp
+
+```bash
+# C2 topic searches
+yt-dlp "ytsearch5:Ukrainian stylistics seven styles functional" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian euphony милозвучність" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian literary analysis poetry" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian translation theory practice" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian professional language terminology" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian dialect regional varieties" --print "%(webpage_url)s" --skip-download
+```
+
+### Module Topics → Search Terms
+
+| Phase | Modules | Topics | Search Terms |
+|-------|---------|--------|--------------|
+| C2.1 | M01-20 | Stylistic Perfection | `Ukrainian stylistics seven styles милозвучність register transformation` |
+| C2.2 | M21-40 | Literary Mastery | `Ukrainian literary analysis narratology поетика translation` |
+| C2.3 | M41-60 | Professional Specialization | `Ukrainian professional terminology academic writing presentation` |
+| C2.4 | M61-80 | Mastery & Capstone | `Ukrainian dialect regional grammar mastery native fluency` |
 
 ---
 
@@ -91,23 +168,23 @@ This document assigns media content requirements to all 80 C2 modules before cre
 | # | Title | Required Media | Source |
 |---|-------|----------------|--------|
 | 01 | C1 Bridge & Assessment | C1 summary diagrams, assessment rubrics | Self-created |
-| 02 | Милозвучність Complete | Euphony audio samples, alternation charts | Native recordings |
-| 03 | Науковий стиль Mastery | Dissertation excerpts, ДСТУ examples | University archives |
-| 04 | Офіційний стиль Mastery | Legal document samples, contract templates | Zakon.rada.gov.ua |
-| 05 | Публіцистичний стиль | News broadcast clips, editorial samples | Hromadske, Радіо Свобода |
-| 06 | Художній стиль | Literary excerpts, author readings | Audio archives |
-| 07 | Розмовний стиль | Natural conversation recordings | Native recordings |
-| 08 | Релігійний стиль | Liturgical text samples, church audio | Religious archives |
-| 09 | Епістолярний стиль | Letter samples across formality levels | Historical archives |
-| 10 | Style Transformation I | Before/after transformation examples | Self-created |
-| 11 | Style Transformation II | Multi-stage transformation samples | Self-created |
+| 02 | Милозвучність — Complete Euphonic System | Euphony audio samples, alternation charts | Native recordings |
+| 03 | Науковий стиль — Publication-Ready | Dissertation excerpts, ДСТУ examples | University archives |
+| 04 | Офіційний стиль — Legal Documents | Legal document samples, contract templates | Zakon.rada.gov.ua |
+| 05 | Публіцистичний стиль — Journalism | News broadcast clips, editorial samples | Hromadske, Радіо Свобода |
+| 06 | Художній стиль — Creative Writing | Literary excerpts, author readings | Audio archives |
+| 07 | Розмовний стиль — Native Fluency | Natural conversation recordings | Native recordings |
+| 08 | Релігійний стиль — Liturgical Language | Liturgical text samples, church audio | Religious archives |
+| 09 | Епістолярний стиль — Complete Correspondence | Letter samples across formality levels | Historical archives |
+| 10 | Style Transformation I — Academic to Popular | Before/after transformation examples | Self-created |
+| 11 | Style Transformation II — Official to Journalistic | Multi-stage transformation samples | Self-created |
 | 12 | Lexical Stylistics | Synonym comparison charts, connotation examples | Self-created |
 | 13 | Syntactic Stylistics | Sentence pattern diagrams | Self-created |
-| 14 | Individual Voice I | Author voice comparison samples | Literary archives |
-| 15 | Individual Voice II | Student writing evolution examples | Self-created |
-| 16 | Text Coherence | Coherence analysis diagrams | Self-created |
-| 17 | C2.1 Practice I | Style portfolio examples | Self-created |
-| 18 | C2.1 Practice II | Multi-format transformation models | Self-created |
+| 14 | Individual Voice I — Developing Personal Style | Author voice comparison samples | Literary archives |
+| 15 | Individual Voice II — Refining Distinctive Style | Student writing evolution examples | Self-created |
+| 16 | Text Coherence — Seamless Flow | Coherence analysis diagrams | Self-created |
+| 17 | C2.1 Practice I — Style Portfolio | Style portfolio examples | Self-created |
+| 18 | C2.1 Practice II — Transformation Exercises | Multi-format transformation models | Self-created |
 | 19 | C2.1 Review | Summary materials | Self-created |
 | 20 | C2.1 Checkpoint | Assessment materials | Self-created |
 

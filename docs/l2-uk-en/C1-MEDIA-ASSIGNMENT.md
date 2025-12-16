@@ -1,10 +1,59 @@
 # C1 Media Content Assignment
 
-**Status:** Draft
+**Status:** Needs External Resources Added
 **Created:** 2024-12-14
+**Updated:** 2025-12-16
 **GitHub Issue:** TBD
 
 This document assigns media content requirements to all 115 C1 modules before creation begins.
+
+---
+
+## ⚠️ IMPORTANT: External Resources Not Yet Added
+
+**Current state:** 0/115 C1 modules have `> [!resources]` sections.
+
+### Verified Resource Sites
+
+| Site | Best For | Example URLs |
+|------|----------|--------------|
+| **ukrainianlessons.com** | Academic style, advanced grammar | `/academic-writing/`, `/advanced-grammar/` |
+| **ukrainiancourse.com** | Grammar reference tables | `/grammar-tables/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/advanced/` |
+| **speakua.com** | Blog articles | `/blog/` |
+
+### YouTube Channels for Learning Ukrainian
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Structured grammar, podcasts |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Advanced grammar deep dives |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Grammar lessons |
+| **Speak Ukrainian** | `@speakukrainian` | Comprehensive grammar |
+| **Olga Reznikova** | `@OlgaReznikova` | Wide variety (233K subs) |
+
+### Finding YouTube Videos with yt-dlp
+
+```bash
+# C1 topic searches
+yt-dlp "ytsearch5:Ukrainian academic writing science" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian dialects dialectology" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian stylistics register formal" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian literature Шевченко analysis" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian folk music kobzar bandura" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian irony sarcasm humor Вишня" --print "%(webpage_url)s" --skip-download
+```
+
+### Module Topics → Search Terms
+
+| Phase | Modules | Topics | Search Terms |
+|-------|---------|--------|--------------|
+| C1.1 | M01-20 | Academic Foundation | `Ukrainian academic writing thesis citation research` |
+| C1.2 | M21-35 | Professional Context | `Ukrainian CV resume business dialects Surzhyk` |
+| C1.3 | M36-55 | Stylistics & Rhetoric | `Ukrainian metaphor irony euphemism archaic verb forms` |
+| C1.4 | M56-80 | Folk Culture & Arts | `Ukrainian kobzar bandura pysanka вишиванка folk` |
+| C1.5 | M81-95 | Literature I - Classics | `Ukrainian literature Шевченко Франко Леся Українка` |
+| C1.6 | M96-115 | Literature II - Modern | `Ukrainian literature Костенко Стус Андрухович Жадан` |
 
 ---
 
@@ -86,7 +135,7 @@ This document assigns media content requirements to all 115 C1 modules before cr
 
 | # | Title | Required Media | Source |
 |---|-------|----------------|--------|
-| 01 | B2 Review & Bridge | B2 grammar summary diagrams | Self-created |
+| 01 | B2 Review & Bridge to C1 | B2 grammar summary diagrams | Self-created |
 | 02 | Academic Style Markers | ДСТУ samples, academic paper excerpts | Wikipedia UA |
 | 03 | Research Verbs | Academic article excerpts | Наукова періодика |
 | 04 | Analysis Vocabulary | Analysis framework diagrams | Self-created |
@@ -97,14 +146,14 @@ This document assigns media content requirements to all 115 C1 modules before cr
 | 09 | Thesis Development | Thesis examples from dissertations | University archives |
 | 10 | Counterarguments | Debate video excerpts | Rada TV (PD) |
 | 11 | Summary & Paraphrase | Paraphrase comparison examples | Self-created |
-| 12 | Research Article Genre | Journal article samples | Наукова періодика |
-| 13 | Abstract Genre | Abstract samples, conference materials | University archives |
-| 14 | Literature Review | Literature review excerpts | University archives |
-| 15 | Oral Presentations | TEDxKyiv clips, presentation examples | TEDx (with permission) |
+| 12 | Genre - Research Article (Наукова стаття) | Journal article samples | Наукова періодика |
+| 13 | Genre - Abstract (Реферат) | Abstract samples, conference materials | University archives |
+| 14 | Genre - Literature Review (Огляд літератури) | Literature review excerpts | University archives |
+| 15 | Oral Presentations (Доповідь) | TEDxKyiv clips, presentation examples | TEDx (with permission) |
 | 16 | Advanced Punctuation | Правопис 2019 examples | Official standards |
 | 17 | Irregular Verbs Complete | Verb conjugation charts | Self-created |
-| 18 | C1.1 Practice I | Model essay with annotations | Self-created |
-| 19 | C1.1 Practice II | Article critique example | Self-created |
+| 18 | C1.1 Practice I - Essay Writing | Model essay with annotations | Self-created |
+| 19 | C1.1 Practice II - Article Critique | Article critique example | Self-created |
 | 20 | C1.1 Checkpoint | Assessment materials | Self-created |
 
 ### Audio Needs (C1.1)
@@ -132,8 +181,8 @@ This document assigns media content requirements to all 115 C1 modules before cr
 | 29 | Surzhyk | Surzhyk examples, linguistic analysis | Academic sources |
 | 30 | Language Policy | Law 2019 excerpts, infographic | Official documents |
 | 31 | Diaspora Ukrainian | Diaspora map, heritage speaker audio | Diaspora organizations |
-| 32 | C1.2 Practice I | Professional scenario materials | Self-created |
-| 33 | C1.2 Practice II | Case study documents | Self-created |
+| 32 | C1.2 Practice I - Professional Scenarios | Professional scenario materials | Self-created |
+| 33 | C1.2 Practice II - Case Studies | Case study documents | Self-created |
 | 34 | C1.2 Review | Review materials | Self-created |
 | 35 | C1.2 Checkpoint | Assessment materials | Self-created |
 
@@ -168,7 +217,7 @@ This document assigns media content requirements to all 115 C1 modules before cr
 | 41 | Degrees of Certainty | Certainty scale diagram | Self-created |
 | 42 | Politeness Strategies | Dialogue examples by register | Self-created |
 | 43 | Indirectness | Film dialogue excerpts | Ukrainian cinema |
-| 44 | Ukrainian Humor | Ostap Vyshnia excerpts | Vyshnia (PD) |
+| 44 | Ukrainian Humor Traditions | Ostap Vyshnia excerpts | Vyshnia (PD) |
 | 45 | Wordplay & Puns | Literary pun examples | Various (PD) |
 | 46 | Anecdotes & Jokes | Folk humor collections | Folklore archives |
 | 47 | Archaic Verb Forms | Old Ukrainian text samples | Historical archives |

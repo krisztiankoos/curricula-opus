@@ -1,10 +1,87 @@
 # B1 Media Content Assignment
 
-**Status:** In Progress
+**Status:** Needs External Resources Added
 **Created:** 2024-12-14
-**Modules:** 80
+**Updated:** 2025-12-16
+**Modules:** 80 (5 created, 75 planned)
 
-This document tracks media content assignments for B1 Ukrainian curriculum modules. B1 focuses on aspect mastery, motion verbs, complex sentences, participles, vocabulary expansion, and contemporary Ukrainian culture.
+---
+
+## 🚨 MANDATORY: NO RUSSIAN CONTENT
+
+> [!CAUTION]
+> **ZERO TOLERANCE FOR RUSSIAN CONTENT**
+>
+> Russia is committing genocide against Ukraine. Every day Russian forces bomb Ukrainian cities, murder civilians, kidnap children, and commit war crimes. In this context, mixing Russian content with Ukrainian language learning is **completely unacceptable**.
+>
+> **STRICTLY FORBIDDEN:**
+> - ❌ NO videos comparing Ukrainian to Russian
+> - ❌ NO "Can Russians understand Ukrainian?" content
+> - ❌ NO Russian-language learning resources
+> - ❌ NO videos from Russian channels/creators
+> - ❌ NO content that frames Ukrainian as a "dialect" or "variant" of Russian
+> - ❌ NO content normalizing Russia or Russian culture
+>
+> **REQUIRED:**
+> - ✅ ONLY pure Ukrainian content from Ukrainian creators
+> - ✅ Ukrainian channels: Ukrainian Lessons, Speak Ukrainian, Let's Learn Ukrainian
+> - ✅ Content that celebrates Ukrainian identity and independence
+> - ✅ Myth-buster boxes that debunk Russian propaganda (with "Prosecutor's Voice")
+>
+> **Before adding ANY YouTube video:**
+> 1. Check the channel - is it Ukrainian-owned?
+> 2. Check the title - any Russian references or comparisons?
+> 3. Check the content - does it treat Ukrainian as its own language?
+>
+> **If in doubt, DO NOT USE THE VIDEO.**
+
+---
+
+## ⚠️ IMPORTANT: External Resources Not Yet Added
+
+**Current state:** 0/80 B1 modules have `> [!resources]` sections.
+
+### Verified Resource Sites
+
+| Site | Best For | Example URLs |
+|------|----------|--------------|
+| **ukrainianlessons.com** | Aspect, motion verbs | `/verb-aspect-in-ukrainian-differences/`, `/perfective-verbs/`, `/ukrainian-verb-prefixes/` |
+| **ukrainiancourse.com** | Grammar tables | `/grammar-tables/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/unit08/` (aspect), `/read/unit11/` (motion) |
+| **speakua.com** | Blog articles | `/blog/perfective-and-imperfective-verbs` |
+| **aspect.in.ua** | Verb aspect pairs | Homepage lookup tool |
+
+### YouTube Channels
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Structured grammar, podcasts |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Aspect, motion verbs deep dives |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Grammar lessons |
+| **Speak Ukrainian** | `@speakukrainian` | Comprehensive grammar |
+| **Olga Reznikova** | `@OlgaReznikova` | Wide variety (233K subs) |
+
+### Finding YouTube Videos with yt-dlp
+
+```bash
+# B1 topic searches
+yt-dlp "ytsearch5:Ukrainian verb aspect perfective imperfective" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian motion verbs prefixes йти їхати" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian participles дієприслівник" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian passive voice пасивний стан" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --print "%(webpage_url)s" --skip-download
+```
+
+### Module Topics → Search Terms (B1.1-B1.2)
+
+| Phase | Modules | Topics | Search Terms |
+|-------|---------|--------|--------------|
+| B1.1 | M01-10 | Aspect Mastery | `Ukrainian verb aspect perfective imperfective system` |
+| B1.2 | M11-20 | Motion Verbs | `Ukrainian motion verbs prefixes йти ходити` |
+| B1.3 | M21-35 | Complex Sentences | `Ukrainian relative clauses щоб якщо якби` |
+| B1.4 | M36-45 | Participles/Passive | `Ukrainian дієприслівник passive -но -то` |
+| B1.5-6 | M46-65 | Vocabulary | `Ukrainian abstract vocabulary discourse markers` |
+| B1.7-8 | M66-80 | Culture/Review | `Ukrainian contemporary culture B1 review` |
 
 ---
 
@@ -128,7 +205,7 @@ This document tracks media content assignments for B1 Ukrainian curriculum modul
 | 29 | Concessive Clauses | хоча/незважаючи examples | 🎨 Self-created | Planned |
 | 30 | Causal & Result Clauses | Cause/effect diagram | 🎨 Self-created | Planned |
 | 31 | Temporal Clauses Deep Dive | Temporal connector chart | 🎨 Self-created | Planned |
-| 32 | Complex Sentence Integration | Sentence analysis examples | 🎨 Self-created | Planned |
+| 32 | Complex Sentence Integration & One-Member Sentences | Sentence analysis examples | 🎨 Self-created | Planned |
 | 33 | Reported Statements | Direct → indirect diagram | 🎨 Self-created | Planned |
 | 34 | Reported Questions & Commands | Reporting structure chart | 🎨 Self-created | Planned |
 | 35 | Checkpoint: Complex Sentences | Complex sentence assessment | 🎨 Self-created | Planned |
@@ -151,13 +228,13 @@ This document tracks media content assignments for B1 Ukrainian curriculum modul
 |---|-------|----------------|--------|--------|
 | 36 | Adverbial Participles: Imperfective | -ючи/-ачи formation chart | 🎨 Self-created | Planned |
 | 37 | Adverbial Participles: Perfective | -вши/-ши formation chart | 🎨 Self-created | Planned |
-| 38 | Adverbial Participles: Practice | Literary excerpt with participles | 🌐 PD Literature | Planned |
+| 38 | Active Participles & Phrases | Literary excerpt with participles | 🌐 PD Literature | Planned |
 | 39 | Past Passive Participles I | -ний/-тий formation table | 🎨 Self-created | Planned |
 | 40 | Past Passive Participles II | -но/-то usage examples | 🎨 Self-created | Planned |
 | 41 | Passive Constructions | Passive voice comparison | 🎨 Self-created | Planned |
-| 42 | Diminutives: Nouns | Diminutive suffix chart | 🎨 Self-created | Planned |
-| 43 | Diminutives: Usage & Nuance | Register usage examples | 🎨 Self-created | Planned |
-| 44 | Numerals: Collectives & Fractions | Numeral forms table | 🎨 Self-created | Planned |
+| 42 | Diminutives: Master Class | Diminutive suffix chart | 🎨 Self-created | Planned |
+| 43 | Numerals: Collectives & Fractions | Numeral forms table | 🎨 Self-created | Planned |
+| 44 | Integrated Grammar Lab | Grammar integration practice | 🎨 Self-created | Planned |
 | 45 | Checkpoint: Advanced Grammar | Advanced grammar assessment | 🎨 Self-created | Planned |
 
 ### Literary Excerpts (B1.4)

@@ -1,10 +1,90 @@
 # B2 Media Content Assignment
 
-**Status:** Draft
-**Created:** 2024-12-14
+**Status:** Needs External Resources Added
+**Created:** 2025-12-14
+**Updated:** 2025-12-16
 **GitHub Issue:** #136
 
 This document assigns media content requirements to all 135 B2 modules before creation begins.
+
+---
+
+## 🚨 MANDATORY: NO RUSSIAN CONTENT
+
+> [!CAUTION]
+> **ZERO TOLERANCE FOR RUSSIAN CONTENT**
+>
+> Russia is committing genocide against Ukraine. Every day Russian forces bomb Ukrainian cities, murder civilians, kidnap children, and commit war crimes. In this context, mixing Russian content with Ukrainian language learning is **completely unacceptable**.
+>
+> **STRICTLY FORBIDDEN:**
+> - ❌ NO videos comparing Ukrainian to Russian
+> - ❌ NO "Can Russians understand Ukrainian?" content
+> - ❌ NO Russian-language learning resources
+> - ❌ NO videos from Russian channels/creators
+> - ❌ NO content that frames Ukrainian as a "dialect" or "variant" of Russian
+> - ❌ NO content normalizing Russia or Russian culture
+>
+> **REQUIRED:**
+> - ✅ ONLY pure Ukrainian content from Ukrainian creators
+> - ✅ Ukrainian channels: Ukrainian Lessons, Speak Ukrainian, Let's Learn Ukrainian
+> - ✅ Content that celebrates Ukrainian identity and independence
+> - ✅ Myth-buster boxes that debunk Russian propaganda (with "Prosecutor's Voice")
+>
+> **Before adding ANY YouTube video:**
+> 1. Check the channel - is it Ukrainian-owned?
+> 2. Check the title - any Russian references or comparisons?
+> 3. Check the content - does it treat Ukrainian as its own language?
+>
+> **If in doubt, DO NOT USE THE VIDEO.**
+
+---
+
+## ⚠️ IMPORTANT: External Resources Not Yet Added
+
+**Current state:** 0/135 B2 modules have `> [!resources]` sections.
+
+### Verified Resource Sites
+
+| Site | Best For | Example URLs |
+|------|----------|--------------|
+| **ukrainianlessons.com** | Passive voice, register | `/passive-voice/`, `/register-formal/`, `/idioms/` |
+| **ukrainiancourse.com** | Grammar tables | `/grammar-tables/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/unit15/` (passive), `/read/unit20/` (participles) |
+| **speakua.com** | Blog articles | `/blog/` |
+| **aspect.in.ua** | Verb aspect pairs | Homepage lookup tool |
+
+### YouTube Channels for Learning Ukrainian
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Structured grammar, podcasts |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Passive voice, complex grammar |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Grammar lessons |
+| **Speak Ukrainian** | `@speakukrainian` | Comprehensive grammar |
+| **Olga Reznikova** | `@OlgaReznikova` | Wide variety (233K subs) |
+
+### Finding YouTube Videos with yt-dlp
+
+```bash
+# B2 topic searches
+yt-dlp "ytsearch5:Ukrainian passive voice пасивний стан" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian participles дієприкметник" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian register formal official" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian idioms proverbs приказки" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian history Козаки Хмельницький" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian literature Шевченко Франко" --print "%(webpage_url)s" --skip-download
+```
+
+### Module Topics → Search Terms
+
+| Phase | Modules | Topics | Search Terms |
+|-------|---------|--------|--------------|
+| B2.1 | M01-30 | Passive Voice, Participles, Register | `Ukrainian passive voice -но -то register formal official academic` |
+| B2.1b | M31-40 | Numerals, Word Formation, Syntax | `Ukrainian numeral declension word formation suffixes` |
+| B2.2 | M41-70 | Grammar Completion, Proverbs, Idioms, Synonyms | `Ukrainian aspect secondary imperfectivization idioms proverbs фразеологізми synonyms` |
+| B2.3 | M71-95 | Ukrainian History | `Ukrainian history Kyivan Rus Козаки Хмельницький Голодомор` |
+| B2.4 | M96-120 | Biographies | `Ukrainian Шевченко Франко Леся Українка biography` |
+| B2.5 | M121-135 | Advanced Skills | `Ukrainian academic writing B2 advanced` |
 
 ---
 
@@ -41,7 +121,7 @@ This document assigns media content requirements to all 135 B2 modules before cr
 |-------|--------------|-----------|-----------|
 | B2.1 (M01-30) | Grammar diagrams, register examples | Audio dialogues | 65-70% |
 | B2.1b (M31-40) | Tables, charts | Audio examples | 70-75% |
-| B2.2 (M41-70) | Cultural images, idiom illustrations | Folk song clips | 75-80% |
+| B2.2 (M41-70) | Grammar charts, cultural images, idiom illustrations | Folk song clips | 75-80% |
 | B2.3 (M71-95) | Historical maps, photos, portraits | Documentary clips | 80-85% |
 | B2.4 (M96-120) | Biographical photos, artwork | Interview clips | 80-85% |
 | B2.5 (M121-135) | Mixed per skill focus | Presentation examples | 85-90% |
@@ -125,8 +205,8 @@ This document assigns media content requirements to all 135 B2 modules before cr
 
 | Song/Artist | Album/Source | Modules | Status | License |
 |-------------|--------------|---------|--------|---------|
-| Traditional folk songs | Folk archives | M41-44 proverbs | 🌐 PD | Traditional |
-| Bandura recordings | Kobzar archives | M44 Skovoroda | ❓ TBD | Traditional |
+| Traditional folk songs | Folk archives | M45-46 proverbs | 🌐 PD | Traditional |
+| Bandura recordings | Kobzar archives | M109 Skovoroda | ❓ TBD | Traditional |
 | Kvitka Tsisyk | "Два кольори" | M108 | ❓ TBD | Commercial |
 | Okean Elzy (excerpts) | Various | B2.5 culture | ❓ TBD | Commercial |
 
@@ -300,29 +380,39 @@ This document assigns media content requirements to all 135 B2 modules before cr
 
 ## Phase B2.2: Phraseology & Synonymy (M41-70)
 
-### Proverbs (M41-44)
+### Advanced Grammar Completion (M41-44)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 41 | Proverbs - Work & Life | Folk art illustrations | Prymachenko style | ❓ TBD |
-| 42 | Proverbs - Character | Character illustrations | 🎨 Self-created | Planned |
-| 43 | Proverbs - Nature | Nature photography | Unsplash/Pexels | 🔓 CC0 |
-| 44 | Proverbs - Wisdom | Skovoroda portrait | Wikimedia | 🌐 PD |
+| 41 | Aspect Nuances I - Secondary Imperfectivization | Aspect transformation chart | 🎨 Self-created | Planned |
+| 42 | Aspect Nuances II - Imperative & Infinitive | Imperative aspect diagram | 🎨 Self-created | Planned |
+| 43 | Correlative Constructions (Співвідносні) | Correlative structure chart | 🎨 Self-created | Planned |
+| 44 | Complex Syntax - Ellipsis & Parcelling | Sentence structure diagrams | 🎨 Self-created | Planned |
 
-### Set Expressions & Idioms (M45-54)
+### Proverbs (M45-46)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 45 | Set Expressions - Body | Body diagram with idioms | 🎨 Self-created | Planned |
-| 46 | Set Expressions - Animals | Animal photos (wolf, horse, dog) | Unsplash | 🔓 CC0 |
-| 47 | Set Expressions - Objects | Object illustrations | Pexels | 🔓 CC0 |
-| 48 | Set Expressions - Abstract | Conceptual diagrams | 🎨 Self-created | Planned |
-| 49 | Idioms - Head/Face | Face diagram with labels | 🎨 Self-created | Planned |
-| 50 | Idioms - Hands/Legs | Body part diagram | 🎨 Self-created | Planned |
-| 51 | Idioms - Heart/Soul | Conceptual art | 🎨 Self-created | Planned |
-| 52 | Idioms - Wolf, Dog, Horse | Animal photos | Unsplash | 🔓 CC0 |
-| 53 | Idioms - Birds, Fish, Insects | Animal photos | Unsplash | 🔓 CC0 |
-| 54 | Idioms - Nature Elements | Nature photography | Pexels | 🔓 CC0 |
+| 45 | Proverbs I - Work, Wisdom & Character | Folk art illustrations | Prymachenko style | ❓ TBD |
+| 46 | Proverbs II - Nature, Time & Caution | Nature photography | Unsplash/Pexels | 🔓 CC0 |
+
+### Set Expressions (M47-48)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 47 | Set Expressions I - Body & Animals | Body diagram, animal photos | 🎨 Self-created + Unsplash | Mixed |
+| 48 | Set Expressions II - Objects & Abstract | Conceptual diagrams | 🎨 Self-created | Planned |
+
+### Idioms (M49-54)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 49 | Idioms - Body (Head/Face) | Face diagram with labels | 🎨 Self-created | Planned |
+| 50 | Idioms - Body (Hands/Legs) | Body part diagram | 🎨 Self-created | Planned |
+| 51 | Idioms - Body (Heart/Soul) | Conceptual art | 🎨 Self-created | Planned |
+| 52 | Idioms - Animals I (Wolf, Dog, Horse) | Animal photos | Unsplash | 🔓 CC0 |
+| 53 | Idioms - Animals II (Birds, Fish, Insects) | Animal photos | Unsplash | 🔓 CC0 |
+| 54 | Idioms - Nature (Water, Fire, Earth, Wind) | Nature photography | Pexels | 🔓 CC0 |
 
 ### Synonyms (M55-66)
 
@@ -340,9 +430,14 @@ This document assigns media content requirements to all 135 B2 modules before cr
 | 64 | Synonyms - Action | Action verb network | 🎨 Self-created | Planned |
 | 65 | Synonyms - State | State vocabulary chart | 🎨 Self-created | Planned |
 | 66 | Synonyms - Abstract | Concept map | 🎨 Self-created | Planned |
-| 67 | Advanced Conjunctions I | Sentence connector diagram | 🎨 Self-created | Planned |
-| 68 | Advanced Conjunctions II | Clause relationship diagram | 🎨 Self-created | Planned |
-| 69 | B2.2 Integration | Mixed phraseology review | Various | Mixed |
+
+### Advanced Conjunctions & Integration (M67-70)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 67 | Advanced Conjunctions I - Causal & Concessive | Sentence connector diagram | 🎨 Self-created | Planned |
+| 68 | Advanced Conjunctions II - Temporal & Conditional | Clause relationship diagram | 🎨 Self-created | Planned |
+| 69 | B2.2 Integration Practice | Mixed phraseology review | Various | Mixed |
 | 70 | B2.2 Checkpoint | Assessment materials | 🎨 Self-created | Planned |
 
 ### Folk Culture Media (B2.2)
@@ -579,7 +674,7 @@ Used with permission / CC BY-SA 4.0 / Public Domain
 | Module | Media Item | Attribution Required | Status |
 |--------|------------|---------------------|--------|
 | M07 | Kobzar excerpt | Taras Shevchenko, Public Domain | 🌐 |
-| M44 | Skovoroda portrait | Wikimedia Commons, Public Domain | 🌐 |
+| M109 | Skovoroda portrait | Wikimedia Commons, Public Domain | 🌐 |
 | M72 | St. Sophia mosaics | Wikimedia Commons, CC BY-SA | 🔓 |
 | ... | ... | ... | ... |
 

@@ -1,10 +1,85 @@
 # A1 Media Content Assignment
 
-**Status:** Reconstructed (from existing modules)
-**Created:** 2024-12-14
+**Status:** Needs External Resources Added
+**Created:** 2025-12-14
+**Updated:** 2025-12-16
 **Modules:** 34
 
-This document reconstructs the media content assignments from the completed A1 modules, serving as a reference template for future levels.
+This document assigns media content to A1 modules.
+
+---
+
+## 🚨 MANDATORY: NO RUSSIAN CONTENT
+
+> [!CAUTION]
+> **ZERO TOLERANCE FOR RUSSIAN CONTENT**
+>
+> Russia is committing genocide against Ukraine. Every day Russian forces bomb Ukrainian cities, murder civilians, kidnap children, and commit war crimes. In this context, mixing Russian content with Ukrainian language learning is **completely unacceptable**.
+>
+> **STRICTLY FORBIDDEN:**
+> - ❌ NO videos comparing Ukrainian to Russian
+> - ❌ NO "Can Russians understand Ukrainian?" content
+> - ❌ NO Russian-language learning resources
+> - ❌ NO videos from Russian channels/creators
+> - ❌ NO content that frames Ukrainian as a "dialect" or "variant" of Russian
+> - ❌ NO content normalizing Russia or Russian culture
+>
+> **REQUIRED:**
+> - ✅ ONLY pure Ukrainian content from Ukrainian creators
+> - ✅ Ukrainian channels: Ukrainian Lessons, Speak Ukrainian, Let's Learn Ukrainian
+> - ✅ Content that celebrates Ukrainian identity and independence
+> - ✅ Myth-buster boxes that debunk Russian propaganda (with "Prosecutor's Voice")
+>
+> **Before adding ANY YouTube video:**
+> 1. Check the channel - is it Ukrainian-owned?
+> 2. Check the title - any Russian references or comparisons?
+> 3. Check the content - does it treat Ukrainian as its own language?
+>
+> **If in doubt, DO NOT USE THE VIDEO.**
+
+---
+
+## ⚠️ IMPORTANT: External Resources Not Yet Added
+
+**Current state:** 0/34 A1 modules have `> [!resources]` sections.
+
+Pop culture references are documented below, but actual external URLs need to be found and embedded.
+
+See **Issue #159** for the task to add external resources.
+
+### Verified Resource Sites
+
+| Site | Best For | Example URLs |
+|------|----------|--------------|
+| **ukrainianlessons.com** | Grammar, alphabet | `/ukrainian-alphabet/`, `/intro-cases/`, `/prepositions-cases/` |
+| **ukrainiancourse.com** | Grammar tables | `/grammar-tables/`, `/free-ukrainian-courses/` |
+| **talkukrainian.com** | Cases, vocabulary | `/grammatical-cases/`, `/ukrainian-alphabet/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/unit01/` through `/read/unit10/` |
+
+### YouTube Channels
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Structured grammar, podcast companion |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Grammar deep dives, case explanations |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Beginner lessons |
+| **Speak Ukrainian** | `@speakukrainian` | Cases, comprehensive lessons |
+| **Olga Reznikova** | `@OlgaReznikova` | Wide variety (233K subs) |
+
+### Finding YouTube Videos with yt-dlp
+
+```bash
+# Install
+brew install yt-dlp
+
+# Search for A1 topics
+yt-dlp "ytsearch5:Ukrainian alphabet Cyrillic lesson" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian nominative case" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian accusative case" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian genitive case" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian locative case" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian verb conjugation beginners" --print "%(webpage_url)s" --skip-download
+```
 
 ---
 

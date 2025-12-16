@@ -1,10 +1,110 @@
 # A2 Media Content Assignment
 
-**Status:** Draft
-**Created:** 2024-12-14
-**Modules:** 50
+**Status:** Updated
+**Created:** 2025-12-14
+**Updated:** 2025-12-16
+**Modules:** 57
 
-This document assigns media content requirements to all 50 A2 modules before creation begins.
+This document assigns media content requirements to all 57 A2 modules.
+
+---
+
+## 🚨 MANDATORY: NO RUSSIAN CONTENT
+
+> [!CAUTION]
+> **ZERO TOLERANCE FOR RUSSIAN CONTENT**
+>
+> Russia is committing genocide against Ukraine. Every day Russian forces bomb Ukrainian cities, murder civilians, kidnap children, and commit war crimes. In this context, mixing Russian content with Ukrainian language learning is **completely unacceptable**.
+>
+> **STRICTLY FORBIDDEN:**
+> - ❌ NO videos comparing Ukrainian to Russian
+> - ❌ NO "Can Russians understand Ukrainian?" content
+> - ❌ NO Russian-language learning resources
+> - ❌ NO videos from Russian channels/creators
+> - ❌ NO content that frames Ukrainian as a "dialect" or "variant" of Russian
+> - ❌ NO content normalizing Russia or Russian culture
+>
+> **REQUIRED:**
+> - ✅ ONLY pure Ukrainian content from Ukrainian creators
+> - ✅ Ukrainian channels: Ukrainian Lessons, Speak Ukrainian, Let's Learn Ukrainian
+> - ✅ Content that celebrates Ukrainian identity and independence
+> - ✅ Myth-buster boxes that debunk Russian propaganda (with "Prosecutor's Voice")
+>
+> **Before adding ANY YouTube video:**
+> 1. Check the channel - is it Ukrainian-owned?
+> 2. Check the title - any Russian references or comparisons?
+> 3. Check the content - does it treat Ukrainian as its own language?
+>
+> **If in doubt, DO NOT USE THE VIDEO.**
+
+---
+
+## ⚠️ IMPORTANT: URL Verification Required
+
+**The URLs in the "External Resources by Module" section are PATTERNS, not verified links.**
+
+Before embedding resources into modules, you MUST:
+1. Search for actual content on the topic
+2. Verify the URL exists and is relevant
+3. Use the verified resource sites below
+
+### Verified Resource Sites
+
+| Site | Best For | Example Verified URLs |
+|------|----------|----------------------|
+| **ukrainianlessons.com** | Podcasts, grammar | `/intro-cases/`, `/perfective-verbs/`, `/episode51/`, `/prepositions-cases/` |
+| **ukrainiancourse.com** | Grammar tables | `/grammar-tables/nouns-in-the-dative-case/`, `/grammar-tables/adjectives-in-the-dative-case/` |
+| **talkukrainian.com** | Cases, adjectives | `/grammatical-cases/`, `/adjectives-degrees-comparison/` |
+| **ukrainianlanguage.org.uk** | Academic lessons | `/read/unit08/page8-4.htm` (aspect), `/read/unit09/page9-5.htm` (comparison) |
+| **speakua.com** | Blog articles | `/blog/perfective-and-imperfective-verbs` |
+| **opentext.ku.edu/dobraforma** | University textbook | `/chapter/26-1-introduction-to-verbal-aspect-prefixed-perfective-verbs/` |
+| **aspect.in.ua** | Verb aspect | Homepage has aspect pair lookup |
+
+### YouTube Channels
+
+| Channel | Handle | Best For |
+|---------|--------|----------|
+| **Ukrainian Lessons** | `@UkrainianLessons` | Podcast companion, structured grammar |
+| **Let's Learn Ukrainian** | `@LetsLearnUkrainian` | Grammar deep dives, case explanations |
+| **Ukrainian Language** | `@LearnUkrainianLanguage` | Beginner lessons, verb tenses |
+| **Speak Ukrainian** | `@speakukrainian` | Cases, comprehensive lessons |
+| **Olga Reznikova** | `@OlgaReznikova` | 233K subs, wide variety |
+| **Ukrainian Learner** | — | Worksheets, case practice |
+| **Easy Ukrainian** | `@EasyUkrainian` | Street interviews with subtitles |
+
+### Finding YouTube Videos with yt-dlp
+
+Use `yt-dlp` CLI to search YouTube and get real URLs:
+
+```bash
+# Search for 5 videos on a topic
+yt-dlp "ytsearch5:Ukrainian dative case lesson" --print "%(title)s | %(channel)s | %(webpage_url)s" --skip-download
+
+# Examples:
+yt-dlp "ytsearch5:Ukrainian instrumental case" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian verb aspect perfective" --print "%(webpage_url)s" --skip-download
+yt-dlp "ytsearch5:Ukrainian comparatives adjectives" --print "%(webpage_url)s" --skip-download
+```
+
+**Verified videos found:**
+
+| Topic | Video | Channel | URL |
+|-------|-------|---------|-----|
+| Dative | All about Dative Case | Let's Learn Ukrainian | youtube.com/watch?v=Cm0Ay7NEOlw |
+| Dative | Dative case in Ukrainian | Speak Ukrainian | youtube.com/watch?v=ATeU7iwuyLU |
+| Instrumental | All About Instrumental Case | Let's Learn Ukrainian | youtube.com/watch?v=7q87c9T2QeA |
+| Instrumental | Instrumental case | Speak Ukrainian | youtube.com/watch?v=lmPHpt2DGos |
+| Aspect | Perfective and Imperfective | Let's Learn Ukrainian | youtube.com/watch?v=YnWlncQJg8o |
+| Aspect | 50 Verb Pairs | Let's Learn Ukrainian | youtube.com/watch?v=iK4uNlozmFE |
+
+### How to Search (Web)
+
+```bash
+# Google site search examples:
+site:ukrainianlessons.com dative case
+site:talkukrainian.com instrumental
+site:ukrainiancourse.com grammar tables
+```
 
 ---
 
@@ -14,12 +114,11 @@ This document assigns media content requirements to all 50 A2 modules before cre
 |--------|--------|---------|
 | Pending | ⏳ | Permission request sent, awaiting response |
 | Approved | ✅ | Permission granted |
-| Denied | ❌ | Permission denied, find alternative |
+| Linked | ✅ | External resource linked |
 | Public Domain | 🌐 | No permission needed |
 | Creative Commons | 🔓 | Free to use with attribution |
-| Licensed | 💰 | Paid license obtained |
 | Self-Created | 🎨 | Created by curriculum team |
-| TBD | ❓ | Not yet contacted |
+| TBD | ❓ | Not yet assigned |
 
 ---
 
@@ -32,15 +131,19 @@ This document assigns media content requirements to all 50 A2 modules before cre
 3. **Reduced Pop Culture**: Shift toward real-world practical scenarios
 4. **Food & Culture Focus**: Klopotenko for cuisine vocabulary
 5. **Transliteration**: First-occurrence only in vocabulary tables
-6. **Children's Content**: Слухай і читай for listening practice
+6. **Practical Scenarios**: Post office, doctor, shopping, restaurant
 
 ### Content Types by Phase
 
-| Phase | Primary Media | Secondary | Immersion |
-|-------|--------------|-----------|-----------|
-| A2.1 (M01-10) | Case grammar diagrams, Ukrainian Lessons | Pop culture hooks | 40-45% |
-| A2.2 (M21-40) | Aspect diagrams, short readings | Klopotenko cuisine | 45-50% |
-| A2.3 (M41-50) | Longer texts, audio dialogues | Pre-B1 transition | 50%+ |
+| Phase | Modules | Primary Media | Immersion |
+|-------|---------|--------------|-----------|
+| A2.1 Cases | M01-11 | Case charts, Ukrainian Lessons | 40-45% |
+| A2.2 Aspect | M12-16 | Aspect diagrams, verb pair tables | 45-50% |
+| A2.3 Comparison | M17-24 | Shopping scenarios, comparison charts | 45-50% |
+| A2.4 Complex Sentences | M25-34 | Story texts, conjunctions charts | 50% |
+| A2.5 Word Formation | M35-43 | Prefix/suffix diagrams, root trees | 50-55% |
+| A2.6 Vocabulary | M44-55 | Thematic photos, real-world scenarios | 55% |
+| A2.7 Review | M56-57 | Comprehensive review materials | 55% |
 
 ---
 
@@ -56,78 +159,83 @@ This document assigns media content requirements to all 50 A2 modules before cre
 
 | Channel | URL | Modules | Content Type | Status |
 |---------|-----|---------|--------------|--------|
-| Євген Клопотенко | youtube.com/@klopotenko | M29-31 Food | Ukrainian cuisine | ❓ TBD |
-| Слухай і читай | youtube.com/@listen-read | M41-50 | Listening practice | ❓ TBD |
-| Ukraїner | youtube.com/@ukrainernet | M39-40 Travel | Regional culture | ❓ TBD |
+| Євген Клопотенко | youtube.com/@klopotenko | M44 Food | Ukrainian cuisine | ❓ TBD |
+| Ukraїner | youtube.com/@ukrainernet | M46 Nature | Regional culture | ❓ TBD |
 
 ---
 
-## External Resources by Module
+## External Resources by Module (⚠️ PATTERNS - VERIFY BEFORE USE)
 
-### Ukrainian Lessons (ukrainianlessons.com)
+### Topic → Resource Mapping
 
-| Module | Resource Type | Topic | URL Pattern |
-|--------|--------------|-------|-------------|
-| M01 | Grammar Guide | Dative Case | ukrainianlessons.com/dative-case/ |
-| M01 | Podcast | ULP 2-52 Dative | ukrainianlessons.com/episode52/ |
-| M02 | Grammar Chart | Dative Endings | ukrainianlessons.com/dative-endings/ |
-| M03 | Verbs Guide | Dative Verbs | ukrainianlessons.com/dative-verbs/ |
-| M04 | Grammar Guide | Instrumental Case | ukrainianlessons.com/instrumental-case/ |
-| M04 | Podcast | ULP 2-58 Instrumental | ukrainianlessons.com/episode58/ |
-| M05 | Vocabulary | Transport | ukrainianlessons.com/vocabulary-transport/ |
-| M06 | Grammar | Professions | ukrainianlessons.com/professions-instrumental/ |
-| M07 | Grammar | Prepositions | ukrainianlessons.com/prepositions-cases/ |
-| M08 | All Cases | 7 Cases Chart | ukrainianlessons.com/ukrainian-cases-chart/ |
-| M09 | Podcast | FMU Post Office | ukrainianlessons.com/fmu-post-office/ |
-| M10 | Review | Cases Review | ukrainianlessons.com/cases-review/ |
-| M11 | Reflexive | свій/своя/своє | ukrainianlessons.com/reflexive-possessive/ |
-| M12 | Pronouns | Declined Possessives | ukrainianlessons.com/possessive-declension/ |
-| M13 | Grammar | Adjective Declension | ukrainianlessons.com/adjective-cases/ |
-| M14 | Grammar | Soft Adjectives | ukrainianlessons.com/soft-adjectives/ |
-| M15 | Grammar | Comparison | ukrainianlessons.com/comparison-adjectives/ |
-| M16 | Vocabulary | Common Adjectives | ukrainianlessons.com/vocabulary-adjectives/ |
-| M17 | Grammar | Irregular Plurals | ukrainianlessons.com/irregular-plurals/ |
-| M18 | Grammar | Plural Declension | ukrainianlessons.com/plural-cases/ |
-| M19 | Review | Adjectives Review | ukrainianlessons.com/adjectives-review/ |
-| M20 | Checkpoint | A2.1 Assessment | ukrainianlessons.com/a2-checkpoint/ |
-| M21 | Grammar | Aspect Introduction | ukrainianlessons.com/aspect-basics/ |
-| M22 | Grammar | Aspect Pairs | ukrainianlessons.com/aspect-pairs/ |
-| M23 | Grammar | Past Aspect | ukrainianlessons.com/past-tense-aspect/ |
-| M24 | Grammar | Future Aspect | ukrainianlessons.com/future-aspect/ |
-| M25 | Grammar | Motion Verbs | ukrainianlessons.com/motion-verbs/ |
-| M26 | Grammar | іти/ходити | ukrainianlessons.com/iti-khoditi/ |
-| M27 | Grammar | їхати/їздити | ukrainianlessons.com/yikhati-yizditi/ |
-| M28 | Grammar | Motion Prefixes | ukrainianlessons.com/motion-prefixes/ |
-| M29 | Vocabulary | Food Advanced | ukrainianlessons.com/ukrainian-food/ |
-| M30 | Podcast | FMU Restaurant | ukrainianlessons.com/fmu-restaurant/ |
-| M31 | Vocabulary | Cooking Verbs | ukrainianlessons.com/cooking-vocabulary/ |
-| M32 | Vocabulary | Health | ukrainianlessons.com/health-vocabulary/ |
-| M33 | Podcast | FMU Doctor | ukrainianlessons.com/fmu-doctor/ |
-| M34 | Vocabulary | Symptoms | ukrainianlessons.com/symptoms-vocabulary/ |
-| M35 | Grammar | Conditional | ukrainianlessons.com/conditional-mood/ |
-| M36 | Grammar | якщо/якби | ukrainianlessons.com/yakshcho-yakbi/ |
-| M37 | Grammar | Complex Sentences | ukrainianlessons.com/complex-sentences/ |
-| M38 | Grammar | Reported Speech | ukrainianlessons.com/reported-speech/ |
-| M39 | Vocabulary | Travel | ukrainianlessons.com/travel-vocabulary/ |
-| M40 | Checkpoint | A2.2 Assessment | ukrainianlessons.com/a2-checkpoint-2/ |
-| M41 | Grammar | тому що/бо | ukrainianlessons.com/causal-conjunctions/ |
-| M42 | Grammar | хоча/проте | ukrainianlessons.com/concessive-conjunctions/ |
-| M43 | Grammar | щоб | ukrainianlessons.com/shchob-purpose/ |
-| M44 | Grammar | який/яка/яке | ukrainianlessons.com/relative-pronouns/ |
-| M45 | Grammar | коли/поки | ukrainianlessons.com/temporal-conjunctions/ |
-| M46 | Review | Conjunctions | ukrainianlessons.com/conjunctions-review/ |
-| M47 | Vocabulary | Work | ukrainianlessons.com/work-vocabulary/ |
-| M48 | Vocabulary | Education | ukrainianlessons.com/education-vocabulary/ |
-| M49 | A2 Review | Full Review | ukrainianlessons.com/a2-final-review/ |
-| M50 | A2 Checkpoint | Final Assessment | ukrainianlessons.com/a2-exam/ |
+Use this table to identify WHAT to search for, then find the actual URL.
+
+| Module | Topic | Resource Type | Search Terms |
+|--------|-------|--------------|-------------|
+| M01 | Dative Pronouns | Grammar Guide | `Ukrainian dative case pronouns` |
+| M02 | Dative Nouns | Grammar Chart | `Ukrainian dative nouns endings` |
+| M03 | Dative Verbs | Verbs Guide | `Ukrainian verbs dative case` |
+| M04 | Instrumental | Grammar Guide | `Ukrainian instrumental case` |
+| M05 | Tools/Transport | Vocabulary | `Ukrainian transport vocabulary` |
+| M06 | Professions | Grammar | `Ukrainian professions instrumental` |
+| M07 | Prepositions | Grammar | `Ukrainian prepositions cases` ✅ ukrainianlessons.com/prepositions-cases/ |
+| M08 | Logical Prep | Grammar | `Ukrainian prepositions meaning` |
+| M09 | All Cases | 7 Cases Chart | `Ukrainian cases overview` ✅ ukrainianlessons.com/intro-cases/ |
+| M10 | Post Office | Podcast FMU | `Ukrainian post office vocabulary` |
+| M11 | Cases Review | Review | `Ukrainian 7 cases review` |
+| M12 | Aspect Intro | Grammar | `Ukrainian verb aspect` ✅ ukrainianlessons.com/verb-aspect-in-ukrainian-differences/ |
+| M13 | Past Aspect | Grammar | `Ukrainian past tense aspect` |
+| M14 | Future Aspect | Grammar | `Ukrainian future tense` ✅ ukrainianlessons.com/ukrainian-tenses/ |
+| M15 | Aspect Pairs | Grammar | `Ukrainian perfective imperfective pairs` ✅ ukrainianlessons.com/perfective-verbs/ |
+| M16 | Aspect Mastery | Grammar | `Ukrainian aspect practice` |
+| M17 | свій Possessive | Grammar | `Ukrainian свій possessive` |
+| M18 | Comparison | Grammar | `Ukrainian comparative adjectives` ✅ talkukrainian.com/adjectives-degrees-comparison/ |
+| M19 | Superlatives | Grammar | `Ukrainian superlatives най-` |
+| M20 | Preferences | Vocabulary | `Ukrainian preferences vocabulary` |
+| M21 | Numerals | Grammar | `Ukrainian numbers nouns` ✅ ukrainianlessons.com/nouns-after-numbers/ |
+| M22 | Conditional | Grammar | `Ukrainian conditional mood якби` |
+| M23 | Shopping | Podcast FMU | `Ukrainian shopping dialogue` |
+| M24 | A2.3 Checkpoint | Review | `Ukrainian A2 grammar review` |
+| M25 | Past Narration | Grammar | `Ukrainian storytelling past tense` |
+| M26 | Causal | Grammar | `Ukrainian conjunctions бо тому що` ✅ ukrainianlessons.com/ukrainian-conjunctions-guide/ |
+| M27 | Reported Speech | Grammar | `Ukrainian reported speech` |
+| M28 | Opinion Clauses | Grammar | `Ukrainian що clauses думати` |
+| M29 | Emotion Clauses | Grammar | `Ukrainian emotion expressions` |
+| M30 | Purpose Clauses | Grammar | `Ukrainian щоб purpose` |
+| M31 | Relative Clauses | Grammar | `Ukrainian який relative pronouns` |
+| M32 | Time Clauses | Grammar | `Ukrainian коли поки temporal` |
+| M33 | Doctor Visit | Podcast FMU | `Ukrainian doctor vocabulary` ✅ ukrainianlessons.com/something-hurts/ |
+| M34 | A2.4 Checkpoint | Review | `Ukrainian complex sentences review` |
+| M35 | Motion Prefixes | Grammar | `Ukrainian verb prefixes motion` ✅ ukrainianlessons.com/ukrainian-verb-prefixes/ |
+| M36 | Advanced Motion | Grammar | `Ukrainian motion verbs йти їхати` |
+| M37 | Action Prefixes | Grammar | `Ukrainian verb prefixes meaning` |
+| M38 | Noun Suffixes | Word Formation | `Ukrainian noun suffixes -ість -ння` |
+| M39 | Adj Suffixes | Word Formation | `Ukrainian adjective suffixes` |
+| M40 | Root Families | Word Formation | `Ukrainian word families roots` |
+| M41 | Root Families II | Word Formation | `Ukrainian word formation patterns` |
+| M42 | WF Mastery | Word Formation | `Ukrainian word formation` |
+| M43 | WF Checkpoint | Review | `Ukrainian word formation review` |
+| M44 | Food Vocabulary | Vocabulary | `Ukrainian food vocabulary` |
+| M45 | Home Vocabulary | Vocabulary | `Ukrainian home furniture vocabulary` |
+| M46 | Nature | Vocabulary | `Ukrainian nature weather vocabulary` |
+| M47 | Emotions | Vocabulary | `Ukrainian emotions personality` |
+| M48 | Work | Vocabulary | `Ukrainian professions work vocabulary` |
+| M49 | Technology | Vocabulary | `Ukrainian technology vocabulary` |
+| M50 | Hobbies | Vocabulary | `Ukrainian hobbies leisure vocabulary` |
+| M51 | Education | Vocabulary | `Ukrainian education school vocabulary` |
+| M52 | Shopping | Vocabulary | `Ukrainian shopping services vocabulary` |
+| M53 | Sports | Vocabulary | `Ukrainian sports fitness vocabulary` |
+| M54 | Health | Vocabulary | `Ukrainian health body vocabulary` |
+| M55 | Vocab Checkpoint | Review | `Ukrainian A2 vocabulary review` |
+| M56 | Grammar Review | Review | `Ukrainian A2 grammar comprehensive` |
+| M57 | Final Review | Review | `Ukrainian A2 skills review` |
 
 ### Other External Resources
 
 | Module | Source | Resource | Status |
 |--------|--------|----------|--------|
-| M01-10 | Forvo | Pronunciation | ✅ Linked |
-| M29-31 | Klopotenko | Cooking videos | ❓ TBD |
-| M41-50 | Слухай і читай | Listening practice | ❓ TBD |
+| All | Forvo | Pronunciation | ✅ Linked |
+| M44 | Klopotenko | Cooking videos | ❓ TBD |
 
 ---
 
@@ -139,120 +247,131 @@ This document assigns media content requirements to all 50 A2 modules before cre
 |--------|---------|-------------------|--------|
 | M05 | Transport in the Zone | Instrumental (їхати автобусом) | 🌐 Reference |
 | M07 | Zone navigation | Preposition + case practice | 🌐 Reference |
-| M28 | "Я виходжу зі Зони" | Motion prefixes (ви-, в-) | 🌐 Reference |
+| M35 | "Я виходжу зі Зони" | Motion prefixes (ви-, в-) | 🌐 Reference |
 
 ### The Witcher (Continuation)
 
 | Module | Context | Grammar Connection | Status |
 |--------|---------|-------------------|--------|
 | M06 | "Він став відьмаком" | Instrumental with стати | 🌐 Reference |
-| M14 | "Сильніший монстр" | Comparison forms | 🌐 Reference |
+| M18 | "Сильніший монстр" | Comparison forms | 🌐 Reference |
 
 ### Metro Series (New for A2)
 
 | Module | Context | Grammar Connection | Status |
 |--------|---------|-------------------|--------|
 | M05 | "Я їду метро" | Instrumental transport | 🌐 Reference |
-| M21 | "Він виживав" vs "Він вижив" | Aspect introduction | 🌐 Reference |
+| M12 | "Він виживав" vs "Він вижив" | Aspect introduction | 🌐 Reference |
 
 ---
 
 ## Thematic Media Assignments
 
-### Phase A2.1: Cases (M01-10)
+### Phase A2.1: Cases (M01-11)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 01 | Dative I - Pronouns | Pronoun chart, audio | 🎨 Self-created | Planned |
-| 02 | Dative II - Nouns | Ending chart | 🎨 Self-created | Planned |
-| 03 | Dative Verbs | Verb list diagram | 🎨 Self-created | Planned |
-| 04 | Instrumental I | з + Instrumental chart | 🎨 Self-created | Planned |
+| 01 | Dative I — Pronouns | Pronoun chart | 🎨 Self-created | ❓ TBD |
+| 02 | Dative II — Nouns | Ending chart | 🎨 Self-created | ❓ TBD |
+| 03 | Dative Verbs | Verb list diagram | 🎨 Self-created | ❓ TBD |
+| 04 | Instrumental I | з + Instrumental chart | 🎨 Self-created | ❓ TBD |
 | 05 | Instrumental II | Transport/tool illustrations | Pexels | 🔓 CC |
 | 06 | Being and Becoming | Profession photos | Unsplash | 🔓 CC |
-| 07 | Preposition Master | Full preposition table | 🎨 Self-created | Planned |
-| 08 | All Cases Practice | 7-case summary chart | 🎨 Self-created | Planned |
-| 09 | Post Office & Bank | Service vocabulary | 🎨 Self-created | Planned |
-| 10 | Checkpoint: Cases | Assessment materials | 🎨 Self-created | Planned |
+| 07 | Preposition Master | Full preposition table | 🎨 Self-created | ❓ TBD |
+| 08 | Logical Prepositions | Abstract concept diagram | 🎨 Self-created | ❓ TBD |
+| 09 | All Cases Practice | 7-case summary chart | 🎨 Self-created | ❓ TBD |
+| 10 | Post Office & Bank | Service vocabulary | 🎨 Self-created | ❓ TBD |
+| 11 | Checkpoint: Cases | Assessment materials | 🎨 Self-created | ❓ TBD |
 
-### Phase A2.1b: Adjectives & Pronouns (M11-20)
-
-| # | Title | Required Media | Source | Status |
-|---|-------|----------------|--------|--------|
-| 11 | Reflexive свій | свій vs його/її diagram | 🎨 Self-created | Planned |
-| 12 | Declined Possessives | Possessive chart | 🎨 Self-created | Planned |
-| 13 | Adjective Cases | Full adjective declension | 🎨 Self-created | Planned |
-| 14 | Soft Adjectives | Soft vs hard comparison | 🎨 Self-created | Planned |
-| 15 | Comparison | Comparative forms chart | 🎨 Self-created | Planned |
-| 16 | Adjective Vocabulary | Photos for description | Pexels | 🔓 CC |
-| 17 | Irregular Plurals | діти, люди, очі chart | 🎨 Self-created | Planned |
-| 18 | Plural Declension | Plural endings table | 🎨 Self-created | Planned |
-| 19 | Adjectives Review | Review materials | 🎨 Self-created | Planned |
-| 20 | A2.1 Checkpoint | Assessment materials | 🎨 Self-created | Planned |
-
-### Phase A2.2: Aspect & Motion (M21-30)
+### Phase A2.2: Aspect (M12-16)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 21 | Aspect Introduction | Aspect timeline diagram | 🎨 Self-created | Planned |
-| 22 | Aspect Pairs | Pair vocabulary table | 🎨 Self-created | Planned |
-| 23 | Past Aspect | Process vs result diagram | 🎨 Self-created | Planned |
-| 24 | Future Aspect | Future forms comparison | 🎨 Self-created | Planned |
-| 25 | Motion Verbs Intro | 4 motion pairs chart | 🎨 Self-created | Planned |
-| 26 | іти/ходити | Walking illustrations | Pexels | 🔓 CC |
-| 27 | їхати/їздити | Transport photos | Pexels | 🔓 CC |
-| 28 | Motion Prefixes | Prefix meaning chart | 🎨 Self-created | Planned |
-| 29 | Food Advanced | Klopotenko recipes | Klopotenko | ❓ TBD |
-| 30 | Restaurant | Menu examples | 🎨 Self-created | Planned |
+| 12 | Aspect Introduction | Aspect timeline diagram | 🎨 Self-created | ❓ TBD |
+| 13 | The Completed Past | Process vs result diagram | 🎨 Self-created | ❓ TBD |
+| 14 | Future Plans | Future forms comparison | 🎨 Self-created | ❓ TBD |
+| 15 | Aspect Pairs Deep Dive | Pair vocabulary table | 🎨 Self-created | ❓ TBD |
+| 16 | Aspect Mastery | Comprehensive aspect chart | 🎨 Self-created | ❓ TBD |
 
-### Phase A2.2b: Health & Conditions (M31-40)
+### Phase A2.3: Comparison & Conditional (M17-24)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 31 | Cooking Verbs | Cooking action videos | Klopotenko | ❓ TBD |
-| 32 | Health Vocabulary | Body diagram | 🎨 Self-created | Planned |
-| 33 | At the Doctor | Medical dialogue audio | 🎨 Recording needed | Planned |
-| 34 | Symptoms | Symptom illustrations | 🎨 Self-created | Planned |
-| 35 | Conditional Intro | якщо/якби comparison | 🎨 Self-created | Planned |
-| 36 | Real vs Unreal | Conditional diagram | 🎨 Self-created | Planned |
-| 37 | Complex Sentences | Sentence structure diagram | 🎨 Self-created | Planned |
-| 38 | Reported Speech | Direct → indirect chart | 🎨 Self-created | Planned |
-| 39 | Travel Vocabulary | Ukraine travel photos | Ukrainer | ❓ TBD |
-| 40 | A2.2 Checkpoint | Assessment materials | 🎨 Self-created | Planned |
+| 17 | Possessive свій | свій vs його/її diagram | 🎨 Self-created | ❓ TBD |
+| 18 | Bigger, Better, Stronger | Comparative forms chart | 🎨 Self-created | ❓ TBD |
+| 19 | The Best, The Worst | Superlative forms chart | 🎨 Self-created | ❓ TBD |
+| 20 | Preferences & Choices | Preference expressions | 🎨 Self-created | ❓ TBD |
+| 21 | Numerals & Nouns | Number + case chart | 🎨 Self-created | ❓ TBD |
+| 22 | If I Were... | Conditional diagram | 🎨 Self-created | ❓ TBD |
+| 23 | Smart Shopping | Shopping scenario photos | Pexels | 🔓 CC |
+| 24 | Checkpoint | Assessment materials | 🎨 Self-created | ❓ TBD |
 
-### Phase A2.3: Complex Sentences (M41-50)
+### Phase A2.4: Complex Sentences (M25-34)
 
 | # | Title | Required Media | Source | Status |
 |---|-------|----------------|--------|--------|
-| 41 | тому що/бо | Causal conjunction examples | 🎨 Self-created | Planned |
-| 42 | хоча/проте | Concessive examples | 🎨 Self-created | Planned |
-| 43 | щоб | Purpose clause diagram | 🎨 Self-created | Planned |
-| 44 | який/яка/яке | Relative pronoun chart | 🎨 Self-created | Planned |
-| 45 | коли/поки | Temporal conjunction diagram | 🎨 Self-created | Planned |
-| 46 | Conjunctions Review | Full conjunction table | 🎨 Self-created | Planned |
-| 47 | Work Vocabulary | Workplace photos | Unsplash | 🔓 CC |
-| 48 | Education | University photos | Pexels | 🔓 CC |
-| 49 | A2 Review | Review materials | 🎨 Self-created | Planned |
-| 50 | A2 Final Checkpoint | Assessment materials | 🎨 Self-created | Planned |
+| 25 | Telling Stories | Narrative structure diagram | 🎨 Self-created | ❓ TBD |
+| 26 | Because and Although | Causal conjunction chart | 🎨 Self-created | ❓ TBD |
+| 27 | She Said That... | Reported speech diagram | 🎨 Self-created | ❓ TBD |
+| 28 | I Think That... | Opinion clause examples | 🎨 Self-created | ❓ TBD |
+| 29 | I Feel Like... | Emotion expressions chart | 🎨 Self-created | ❓ TBD |
+| 30 | In Order To... | Purpose clause diagram | 🎨 Self-created | ❓ TBD |
+| 31 | Which One? | Relative pronoun chart | 🎨 Self-created | ❓ TBD |
+| 32 | When & While | Temporal conjunction diagram | 🎨 Self-created | ❓ TBD |
+| 33 | At the Doctor's | Medical dialogue audio | 🎨 Recording needed | ❓ TBD |
+| 34 | Checkpoint 3 | Assessment materials | 🎨 Self-created | ❓ TBD |
+
+### Phase A2.5: Word Formation (M35-43)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 35 | Motion Verb Prefixes | Prefix meaning chart (в-, ви-, за-) | 🎨 Self-created | ❓ TBD |
+| 36 | Advanced Motion Prefixes | Extended prefix chart | 🎨 Self-created | ❓ TBD |
+| 37 | Action Verb Prefixes | Non-motion prefix chart | 🎨 Self-created | ❓ TBD |
+| 38 | Noun Suffixes | Suffix tree diagram | 🎨 Self-created | ❓ TBD |
+| 39 | Adjective Suffixes | Adj suffix patterns | 🎨 Self-created | ❓ TBD |
+| 40 | Root Families I | Root tree visualization | 🎨 Self-created | ❓ TBD |
+| 41 | Root Families II | Extended root trees | 🎨 Self-created | ❓ TBD |
+| 42 | Word Formation Mastery | Comprehensive WF chart | 🎨 Self-created | ❓ TBD |
+| 43 | Checkpoint: Word Formation | Assessment materials | 🎨 Self-created | ❓ TBD |
+
+### Phase A2.6: Vocabulary Expansion (M44-55)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 44 | Food & Cooking | Klopotenko recipes | Klopotenko | ❓ TBD |
+| 45 | Home & Furniture | Home illustrations | Pexels | 🔓 CC |
+| 46 | Nature & Weather | Nature photos | Unsplash | 🔓 CC |
+| 47 | Emotions & Personality | Emotion illustrations | 🎨 Self-created | ❓ TBD |
+| 48 | Work & Professions | Workplace photos | Pexels | 🔓 CC |
+| 49 | Technology & Media | Tech illustrations | Pexels | 🔓 CC |
+| 50 | Hobbies & Leisure | Activity photos | Pexels | 🔓 CC |
+| 51 | Education & Learning | University photos | Pexels | 🔓 CC |
+| 52 | Shopping & Services | Store photos | Pexels | 🔓 CC |
+| 53 | Sports & Fitness | Sports photos | Unsplash | 🔓 CC |
+| 54 | Health & Body | Body diagram | 🎨 Self-created | ❓ TBD |
+| 55 | Checkpoint: Vocabulary | Assessment materials | 🎨 Self-created | ❓ TBD |
+
+### Phase A2.7: Review & Mastery (M56-57)
+
+| # | Title | Required Media | Source | Status |
+|---|-------|----------------|--------|--------|
+| 56 | A2 Grammar Review | Comprehensive grammar charts | 🎨 Self-created | ❓ TBD |
+| 57 | A2 Final Review | All skills review materials | 🎨 Self-created | ❓ TBD |
 
 ---
 
 ## Audio Content Needs
 
-### Dialogue Recordings
+### Dialogue Recordings (Priority)
 
 | Type | Modules | Duration | Priority |
 |------|---------|----------|----------|
-| Post office scenario | M09 | 2-3 min | HIGH |
+| Post office scenario | M10 | 2-3 min | HIGH |
 | Doctor visit | M33 | 3-4 min | HIGH |
-| Restaurant ordering | M30 | 2-3 min | HIGH |
-| Travel planning | M39 | 2-3 min | MEDIUM |
-| Job interview | M47 | 3-4 min | MEDIUM |
-
-### Listening Practice (Слухай і читай)
-
-| Module | Content | Status |
-|--------|---------|--------|
-| M41-50 | Short stories with complex sentences | ❓ TBD |
+| Shopping dialogue | M23, M52 | 2-3 min | HIGH |
+| Restaurant ordering | M44 | 2-3 min | MEDIUM |
+| Job interview | M48 | 3-4 min | MEDIUM |
 
 ---
 
@@ -263,7 +382,7 @@ This document assigns media content requirements to all 50 A2 modules before cre
 | Song | Module | Grammar Connection | Status |
 |------|--------|-------------------|--------|
 | Ой, у гаю при Дунаю | M04 | Instrumental (з друзями) | 🌐 PD |
-| Їхав козак за Дунай | M27 | Motion verb їхати | 🌐 PD |
+| Їхав козак за Дунай | M35 | Motion verb prefixes | 🌐 PD |
 
 ---
 
@@ -273,23 +392,14 @@ This document assigns media content requirements to all 50 A2 modules before cre
 
 | Diagram | Modules | Priority |
 |---------|---------|----------|
-| 7-Case Summary | M08, M10 | HIGH |
+| 7-Case Summary | M09, M11 | HIGH |
 | Dative Endings | M01-03 | HIGH |
 | Instrumental Endings | M04-06 | HIGH |
-| Preposition + Case Table | M07 | HIGH |
-| Aspect Timeline | M21-24 | HIGH |
-| Motion Verb Chart | M25-28 | HIGH |
-| Conjunction Overview | M41-46 | HIGH |
-
-### Cultural Content
-
-| Type | Modules | Description |
-|------|---------|-------------|
-| Service scenarios | M09 | Post office, bank vocabulary |
-| Food culture | M29-31 | Ukrainian cuisine (with Klopotenko) |
-| Health system | M32-34 | Doctor visits, pharmacy |
-| Travel | M39 | Ukraine destinations |
-| Work culture | M47 | Ukrainian workplace |
+| Preposition + Case Table | M07-08 | HIGH |
+| Aspect Timeline | M12-16 | HIGH |
+| Motion Prefix Chart | M35-36 | HIGH |
+| Word Formation Trees | M38-42 | HIGH |
+| Conjunction Overview | M26-32 | MEDIUM |
 
 ---
 
@@ -314,57 +424,54 @@ This document assigns media content requirements to all 50 A2 modules before cre
 
 ---
 
-## Permission Request Tracker
-
-### High Priority Requests
-
-| Organization | Content | Contact | Status |
-|--------------|---------|---------|--------|
-| Klopotenko | Cooking video clips | youtube.com/@klopotenko | ❓ TBD |
-| Слухай і читай | Children's stories | youtube.com/@listen-read | ❓ TBD |
-| Ukrainer | Travel content | youtube.com/@ukrainernet | ❓ TBD |
-
----
-
 ## Phase Summary
 
-### A2.1 (M01-20): Cases & Adjectives
+### A2.1 (M01-11): Cases
+- **Pop Culture**: S.T.A.L.K.E.R. (2 refs), Witcher (1 ref)
+- **External Resources**: Ukrainian Lessons (11 links)
+- **Self-Created**: Case charts, ending tables
+- **Audio**: Post office dialogue
 
-| Media Type | Usage |
-|------------|-------|
-| Pop Culture | S.T.A.L.K.E.R. (2 refs), Witcher (1 ref), Metro (1 ref) |
-| External Resources | Ukrainian Lessons (20 links) |
-| Self-Created | Grammar charts, case tables |
-| Audio | Pronunciation, basic dialogues |
+### A2.2 (M12-16): Aspect
+- **Pop Culture**: Metro (1 ref)
+- **External Resources**: Ukrainian Lessons (5 links)
+- **Self-Created**: Aspect diagrams, verb pair tables
 
-### A2.2 (M21-40): Aspect & Health
+### A2.3 (M17-24): Comparison & Conditional
+- **Pop Culture**: Witcher (1 ref)
+- **External Resources**: Ukrainian Lessons (8 links)
+- **Real-World**: Shopping scenarios
+- **Audio**: Shopping dialogue
 
-| Media Type | Usage |
-|------------|-------|
-| Pop Culture | Metro (1 ref), minimal |
-| External Resources | Ukrainian Lessons (20 links), Klopotenko (3 modules) |
-| Real-World | Restaurant, doctor, travel scenarios |
-| Audio | Service dialogues |
+### A2.4 (M25-34): Complex Sentences
+- **External Resources**: Ukrainian Lessons (10 links)
+- **Self-Created**: Conjunction charts, clause diagrams
+- **Audio**: Doctor visit dialogue
 
-### A2.3 (M41-50): Complex Sentences
+### A2.5 (M35-43): Word Formation
+- **Pop Culture**: S.T.A.L.K.E.R. (1 ref)
+- **External Resources**: Ukrainian Lessons (9 links)
+- **Self-Created**: Prefix/suffix charts, root trees
 
-| Media Type | Usage |
-|------------|-------|
-| Pop Culture | Minimal (transition to B1) |
-| External Resources | Ukrainian Lessons (10 links), Слухай і читай |
-| Listening | Children's stories for complex sentence exposure |
-| Pre-B1 Prep | Longer texts, more immersion |
+### A2.6 (M44-55): Vocabulary Expansion
+- **External Resources**: Ukrainian Lessons (12 links), Klopotenko (1 module)
+- **Photos**: Pexels, Unsplash (CC licensed)
+- **Real-World**: Thematic scenarios
+
+### A2.7 (M56-57): Review
+- **External Resources**: Ukrainian Lessons (2 links)
+- **Self-Created**: Comprehensive review charts
 
 ---
 
 ## Notes
 
 1. **Reduced Pop Culture**: A2 shifts focus from games to practical scenarios
-2. **Klopotenko Integration**: Food vocabulary modules use his content
-3. **Audio Priority**: Service dialogues (post office, doctor, restaurant) are critical
-4. **Pre-B1 Runway**: M41-50 increase listening complexity
+2. **Klopotenko Integration**: Food vocabulary module uses his content
+3. **Audio Priority**: Service dialogues (post office, doctor, shopping) are critical
+4. **Word Formation**: New phase with extensive diagram needs
 5. **Transliteration**: First-occurrence only in vocabulary tables
-6. **External Resources**: Ukrainian Lessons remains primary, add Klopotenko and Слухай і читай
+6. **External Resources**: Ukrainian Lessons remains primary, verify all URLs before embedding
 
 ---
 

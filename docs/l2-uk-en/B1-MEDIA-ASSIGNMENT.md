@@ -207,6 +207,16 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 | Let's practise the verbs of motion with me | https://www.youtube.com/watch?v=yS3MwBod5nM | Ukrainian grammar | ✅ Found |
 | Practise with me the main verbs of motion in Ukrainian | https://www.youtube.com/watch?v=iFvvfEayiLE | Ukrainian grammar | ✅ Found |
 
+#### Module-Specific Video Assignments
+
+**When creating these modules, add these videos to the `> [!resources]` section:**
+
+| Module | Recommended Videos | Rationale |
+|--------|-------------------|-----------|
+| **M11: Motion Verbs - The Full System** | • [Verbs of Motion: Unidirectional, Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY)<br>• [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) | Comprehensive overview of the motion verb system |
+| **M12-15: Motion with Prefixes** | • [Їздити VS Їхати/ Йти VS Ходити](https://www.youtube.com/watch?v=T6YwFExsRVc) | Reinforces base pairs before adding prefixes |
+| **M16-18: Practice & Integration** | • [Let's practise the verbs of motion with me](https://www.youtube.com/watch?v=yS3MwBod5nM)<br>• [Practise with me the main verbs of motion](https://www.youtube.com/watch?v=iFvvfEayiLE) | Practice-focused videos for integration modules |
+
 #### Grammar Guides
 
 | Module | Resource | URL | Status |
@@ -286,6 +296,15 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 | How to form and use passive voice in Ukrainian | https://www.youtube.com/watch?v=txDI2JzODFo | Ukrainian grammar | ✅ Found |
 | Practice with me the passive voice | https://www.youtube.com/watch?v=zsSqBE-iaNM | Ukrainian grammar | ✅ Found |
 | 🤯 Мене попросили, запитали, запросили!?Vocabulary + Passive Voice practice 🗣️ A2-B1 | https://www.youtube.com/watch?v=khJ6GLWoYZ4 | bazikschool | ✅ Found |
+
+#### Module-Specific Video Assignments
+
+**When creating these modules, add these videos to the `> [!resources]` section:**
+
+| Module | Recommended Videos | Rationale |
+|--------|-------------------|-----------|
+| **M36-37: Adverbial Participles** | • [ULP 3-107 У барі + Дієприслівник](https://www.youtube.com/watch?v=S3GgY9Fa8uk)<br>• [Learning Ukrainian with Odarka. Lesson 57. Adverbial Participle](https://www.youtube.com/watch?v=SRKqRpPzXnE) | Comprehensive coverage of дієприслівник formation and usage |
+| **M39-41: Passive Participles & Constructions** | • [How to form and use passive voice in Ukrainian](https://www.youtube.com/watch?v=txDI2JzODFo)<br>• [Practice with me the passive voice](https://www.youtube.com/watch?v=zsSqBE-iaNM)<br>• [Мене попросили, запитали, запросили - Passive Voice practice](https://www.youtube.com/watch?v=khJ6GLWoYZ4) | Theory + practice for passive constructions with -но/-то |
 
 ### Literary Excerpts (B1.4)
 
@@ -401,6 +420,19 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 | Чим для вас є Україна? • Ukraïner | https://www.youtube.com/watch?v=x75Me7dLRj4 | Ukraїner | ✅ Found |
 | Сіверськодонецьк — це Україна. Хоробрі міста • Ukraїner | https://www.youtube.com/watch?v=exyLdpF8JZA | Ukraїner | ✅ Found |
 | Віталій Портников: «Розвивати українське, а не боротися з російським» • Ukraїner Q | https://www.youtube.com/watch?v=cslHRvAe3oA | Ukraїner Q | ✅ Found |
+
+#### Module-Specific Video Assignments
+
+**When creating these modules, add these videos to the `> [!resources]` section:**
+
+| Module | Recommended Videos | Rationale |
+|--------|-------------------|-----------|
+| **M66: Українські регіони - Захід** | • [Волинь. Україна з неба](https://www.youtube.com/watch?v=yE61lOcmuHs)<br>• [Німці України. Хто вони?](https://www.youtube.com/watch?v=OarTBeBi1DI) | Western Ukraine regional content, multicultural heritage |
+| **M67: Українські регіони - Схід** | • [Сіверськодонецьк — це Україна. Хоробрі міста](https://www.youtube.com/watch?v=exyLdpF8JZA) | Eastern Ukraine, resilience during war |
+| **M68: Українські регіони - Південь** | • [Болгари України. Хто вони?](https://www.youtube.com/watch?v=Oi-t55SYdq8) | Southern Ukraine, ethnic diversity |
+| **M69: Українські регіони - Центр** | • [Полтавщина. Україна з неба](https://www.youtube.com/watch?v=sX1xttuglKE) | Central Ukraine, Cossack heritage |
+| **M70-71: Сучасна Україна** | • [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg)<br>• [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4)<br>• [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) | Contemporary Ukrainian identity, language, culture |
+| **M72-74: Культура і суспільство** | • [Україна з неба](https://www.youtube.com/watch?v=vb0ZWc70gOk) | Overview of Ukraine's diversity and beauty |
 
 ---
 

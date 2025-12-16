@@ -300,6 +300,18 @@ When eating with Ukrainian friends or family, these phrases will help you partic
    > [!answer] сковороді
    > [!options] каструлі | сковороді | духовці | чайнику
 
+
+7. Я ___ суп. (cooking process)
+   > [!error] cooking process
+   > [!answer] варю
+   > [!explanation] Ongoing cooking → imperfective.
+   > [!options] варю | зварю
+
+8. Вона ___ обід. (finished cooking)
+   > [!error] finished cooking
+   > [!answer] приготувала
+   > [!explanation] Completed cooking → perfective.
+   > [!options] готувала | приготувала
 7. Пиріг у [___]. (oven)
    > [!answer] духовці
    > [!options] каструлі | сковороді | духовці | холодильнику

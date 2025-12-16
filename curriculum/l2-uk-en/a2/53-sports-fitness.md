@@ -306,6 +306,42 @@ A healthy mind in a healthy body!
    > [!options] спортом | спорт | спорта | спорту
    > Instrumental case.
 
+
+7. Він ___ кожного дня. (trains daily)
+   > [!error] daily
+   > [!answer] тренується
+   > [!explanation] Habitual → imperfective.
+   > [!options] тренується | потренується
+
+8. Вона ___ дві години. (trained 2 hours)
+   > [!error] 2 hours
+   > [!answer] тренувалася
+   > [!explanation] Duration → imperfective.
+   > [!options] тренувалася | потренувалася
+
+9. Я ___ і готовий! (finished training)
+   > [!error] finished
+   > [!answer] потренувався
+   > [!explanation] Completed → perfective.
+   > [!options] тренувався | потренувався
+
+10. Ми ___ завтра. (will train tomorrow)
+    > [!error] will train
+    > [!answer] тренуватимемося
+    > [!explanation] Future habitual → imperfective future.
+    > [!options] тренуватимемося | потренуємося
+
+11. Треба ___ більше. (need to train)
+    > [!error] need to
+    > [!answer] тренуватися
+    > [!explanation] General need → imperfective infinitive.
+    > [!options] тренуватися | потренуватися
+
+12. Він ___ і виграв. (trained and won)
+    > [!error] trained and won
+    > [!answer] потренувався
+    > [!explanation] Completed preparation → perfective.
+    > [!options] тренувався | потренувався
 2. Він займається ____.
    > [!answer] футболом
    > [!options] футболом | футбол | футболу | футболі

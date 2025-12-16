@@ -288,6 +288,18 @@ Mastering prefixes is the biggest "hack" in the Ukrainian language.
    > [!answer] принесу
    > [!options] принесу | винесу | занесу
 
+
+7. Він ___ до школи. (motion to a place)
+   > [!error] motion to
+   > [!answer] пішов
+   > [!explanation] Motion with prefix по- indicates start of motion.
+   > [!options] ішов | пішов | прийшов
+
+8. Ми ___ додому. (arrived home)
+   > [!error] arrived
+   > [!answer] прийшли
+   > [!explanation] Prefix при- indicates arrival.
+   > [!options] йшли | пішли | прийшли
 7. Він ___ від мене, тому що образився. (Walked away - past)
    > [!answer] відійшов
    > [!options] відійшов | підійшов | увійшов

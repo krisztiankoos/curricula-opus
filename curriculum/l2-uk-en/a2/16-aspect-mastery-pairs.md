@@ -350,6 +350,18 @@ Today you drilled the 30 most common aspect pairs.
    > [!answer] вивчити
    > [!options] вивчити | вчити | повчити
 
+
+7. говорити / ___ (suppletive pair)
+   > [!error] suppletive pair
+   > [!answer] сказати
+   > [!explanation] Говорити/сказати use different roots.
+   > [!options] сказати | поговорити | заговорити
+
+8. брати / ___ (suppletive pair)
+   > [!error] suppletive pair
+   > [!answer] взяти
+   > [!explanation] Брати/взяти use different roots.
+   > [!options] взяти | побрати | забрати
 7. розуміти → [___] [Hint: з-]
    > [!answer] зрозуміти
    > [!options] зрозуміти | розуміти | прозуміти

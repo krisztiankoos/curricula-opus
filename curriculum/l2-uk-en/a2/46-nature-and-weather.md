@@ -305,6 +305,18 @@ When discussing weather in Ukrainian, these expressions will help you communicat
    > [!answer] Зима
    > [!options] Весна | Літо | Осінь | Зима
 
+
+7. Дощ ___ цілий день. (rained all day)
+   > [!error] all day
+   > [!answer] йшов
+   > [!explanation] Duration → imperfective.
+   > [!options] йшов | пішов
+
+8. Раптом ___ дощ. (suddenly started)
+   > [!error] suddenly started
+   > [!answer] пішов
+   > [!explanation] Sudden start → perfective.
+   > [!options] йшов | пішов
 7. Птахи співають у [___]. (forest)
    > [!answer] лісі
    > [!options] горі | лісі | морі | полі

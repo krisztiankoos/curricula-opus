@@ -522,6 +522,18 @@ Verbal aspect is about HOW you conceptualize an action, not WHEN it happened. Th
    > [!explanation] Duration → imperfective.
    > [!options] говорила | сказала
 
+7. Ти вже ___ домашнє завдання? (asking about completion)
+   > [!error] asking about completion
+   > [!answer] зробив
+   > [!explanation] Question about completed result → perfective.
+   > [!options] робив | зробив
+
+8. Я ___ цілий вечір. (whole evening = duration)
+   > [!error] whole evening
+   > [!answer] працював
+   > [!explanation] Duration marker (цілий вечір) → imperfective.
+   > [!options] працював | попрацював
+
 ## cloze: Complete the Story
 
 > Fill in the correct aspect form.

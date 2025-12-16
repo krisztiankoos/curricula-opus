@@ -338,6 +338,18 @@ Today you learned numeral-noun agreement:
    > [!answer] книг
    > [!options] книг | книги | книга
 
+
+7. Два ___ (2 + nominative singular)
+   > [!error] nominative singular
+   > [!answer] столи
+   > [!explanation] After 2-4, use nominative plural (not singular).
+   > [!options] столи | стола | столів
+
+8. П'ять ___ (5 + genitive plural)
+   > [!error] genitive plural
+   > [!answer] столів
+   > [!explanation] After 5+, use genitive plural.
+   > [!options] столів | столи | стола
 7. дві [___] [Hint: window, n]
    > [!answer] вікна
    > [!options] вікна | вікно | вікон

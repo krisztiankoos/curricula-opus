@@ -316,6 +316,18 @@ These words look similar but mean different things. Бачення is vision or 
    > [!answer] побачення
    > [!options] побачення | бачення | розмова | слухання
 
+
+7. вод- (root for water) → ___
+   > [!error] water root
+   > [!answer] вода
+   > [!explanation] Root вод- means water.
+   > [!options] вода | водити | провід
+
+8. люб- (root for love) → ___
+   > [!error] love root
+   > [!answer] любити
+   > [!explanation] Root люб- means love.
+   > [!options] любити | любов | улюблений
 7. [___] були уважними. (listeners)
    > [!answer] Слухачі
    > [!options] Слухачі | Мовці | Читачі | Глядачі

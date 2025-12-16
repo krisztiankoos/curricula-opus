@@ -277,6 +277,18 @@ In Ukrainian culture, using perfective future often carries more weight. When yo
    > [!answer] будуть їсти
    > [!options] будуть їсти | з'їдять
 
+
+7. Я ___ завтра. (future completion)
+   > [!error] future completion
+   > [!answer] зроблю
+   > [!explanation] Future completed action → perfective future.
+   > [!options] робитиму | зроблю
+
+8. Вона ___ кожного дня. (habitual future)
+   > [!error] habitual future
+   > [!answer] читатиме
+   > [!explanation] Habitual action in future → imperfective future.
+   > [!options] читатиме | прочитає
 7. Ти ___ правду? (will you tell — ask for result)
    > [!answer] скажеш
    > [!options] будеш говорити | скажеш

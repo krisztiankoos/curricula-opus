@@ -301,6 +301,42 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
    > [!options] купити | продати | міряти | спати
    > To buy bread.
 
+
+7. Я ___ хліб щодня. (buy daily)
+   > [!error] daily
+   > [!answer] купую
+   > [!explanation] Habitual → imperfective.
+   > [!options] купую | куплю
+
+8. Вона ___ нову сукню. (bought dress)
+   > [!error] bought
+   > [!answer] купила
+   > [!explanation] Completed purchase → perfective.
+   > [!options] купувала | купила
+
+9. Де можна ___ молоко? (where to buy)
+   > [!error] where to buy
+   > [!answer] купити
+   > [!explanation] Infinitive after modal → usually perfective.
+   > [!options] купувати | купити
+
+10. Я завжди ___ тут. (always shop here)
+    > [!error] always
+    > [!answer] купую
+    > [!explanation] Habitual → imperfective.
+    > [!options] купую | куплю
+
+11. Треба ___ продукти. (need to buy)
+    > [!error] need to
+    > [!answer] купити
+    > [!explanation] After треба → perfective for result.
+    > [!options] купувати | купити
+
+12. Вони ___ багато речей. (bought many things)
+    > [!error] bought many
+    > [!answer] купили
+    > [!explanation] Completed action → perfective.
+    > [!options] купували | купили
 2. Скільки це ____?
    > [!answer] коштує
    > [!options] коштує | коштують | платить | купує

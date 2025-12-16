@@ -297,6 +297,18 @@ When visiting Ukrainian homes or discussing living situations, these phrases wil
    > [!answer] кабінеті
    > [!options] спальні | кабінеті | кухні | ванній
 
+
+7. Меблі ___ в кімнаті. (furniture is located)
+   > [!error] located
+   > [!answer] стоять
+   > [!explanation] Location state → imperfective.
+   > [!options] стоять | постоять
+
+8. Я ___ стіл біля вікна. (placed table)
+   > [!error] placed
+   > [!answer] поставив
+   > [!explanation] Completed placement → perfective.
+   > [!options] ставив | поставив
 7. Білизна в [___]. (washing machine)
    > [!answer] пральній машині
    > [!options] пральній машині | посудомийці | пилососі | духовці

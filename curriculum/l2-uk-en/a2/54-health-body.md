@@ -298,6 +298,42 @@ Take care and stay healthy!
    > [!options] голова | голову | головою | голові
    > Nominative subject.
 
+
+7. У мене ___ голова. (head hurts)
+   > [!error] hurts
+   > [!answer] болить
+   > [!explanation] Ongoing state → imperfective.
+   > [!options] болить | заболить
+
+8. Голова раптом ___. (suddenly started hurting)
+   > [!error] suddenly started
+   > [!answer] заболіла
+   > [!explanation] Sudden start → perfective.
+   > [!options] боліла | заболіла
+
+9. Я ___ ліки. (took medicine)
+   > [!error] took
+   > [!answer] прийняв
+   > [!explanation] Completed action → perfective.
+   > [!options] приймав | прийняв
+
+10. Лікар ___ пацієнта. (examined patient)
+    > [!error] examined
+    > [!answer] оглянув
+    > [!explanation] Completed examination → perfective.
+    > [!options] оглядав | оглянув
+
+11. Він ___ довго. (was sick long time)
+    > [!error] long time
+    > [!answer] хворів
+    > [!explanation] Duration → imperfective.
+    > [!options] хворів | захворів
+
+12. Вона нарешті ___. (finally recovered)
+    > [!error] finally recovered
+    > [!answer] одужала
+    > [!explanation] Completed recovery → perfective.
+    > [!options] одужувала | одужала
 2. У нього висока ____. (temperature)
    > [!answer] температура
    > [!options] температура | температуру | температурою | температури

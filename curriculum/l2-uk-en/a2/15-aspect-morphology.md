@@ -282,6 +282,18 @@ Adding different prefixes to the same root creates different perfective verbs wi
    > [!answer] про- prefix
    > [!options] про- prefix | на- prefix | -ва- removal | suppletive
 
+
+7. читати → ___ (add prefix for perfective)
+   > [!error] add prefix
+   > [!answer] прочитати
+   > [!explanation] Prefix про- makes читати perfective.
+   > [!options] прочитати | почитати | зачитати
+
+8. писати → ___ (add prefix for perfective)
+   > [!error] add prefix
+   > [!answer] написати
+   > [!explanation] Prefix на- makes писати perfective.
+   > [!options] написати | пописати | виписати
 2. писати → написати: ___
    > [!answer] на- prefix
    > [!options] про- prefix | на- prefix | -ва- removal | suppletive

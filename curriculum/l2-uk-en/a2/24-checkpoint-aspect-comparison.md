@@ -259,6 +259,18 @@ Go to the activities section and try to get 100%! If you make a mistake, read th
    > [!answer] порекомендуєте
    > [!options] рекомендую | порекомендуєте | рекомендував | порекомендував
 
+
+7. Я ___ книгу вчора. (completed yesterday)
+   > [!error] completed yesterday
+   > [!answer] прочитав
+   > [!explanation] Single completed event → perfective.
+   > [!options] читав | прочитав
+
+8. Вона ___ щодня. (every day = habit)
+   > [!error] every day
+   > [!answer] читає
+   > [!explanation] Habitual action → imperfective.
+   > [!options] читає | прочитає
 7. Він ___ три години. (was writing — duration)
    > [!answer] писав
    > [!options] писав | написав | пише | напише

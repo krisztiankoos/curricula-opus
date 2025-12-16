@@ -446,6 +446,18 @@ Get ready to speak!
    > [!answer] переклад
    > [!options] переклад | перехід | перерва
 
+
+7. пере- + писати = ___ (rewrite)
+   > [!error] rewrite
+   > [!answer] переписати
+   > [!explanation] Prefix пере- means "re-" or "over".
+   > [!options] переписати | написати | виписати
+
+8. роз- + казати = ___ (tell in detail)
+   > [!error] tell detail
+   > [!answer] розказати
+   > [!explanation] Prefix роз- indicates spreading or detail.
+   > [!options] розказати | сказати | показати
 7. Коли ти не говориш. Це [___]. [Hint: Silence]
    > [!answer] мовчання
    > [!options] мовчання | розмова | крик

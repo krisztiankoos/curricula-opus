@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1103/1000
+- **Words:** ✅ 1146/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 42.9% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 41.9% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 68 | Included in Core |
+| **Warm-up** | ✅ | 111 | Included in Core |
 | **Part 1: Benefit & Absence** | ⚪️ | 0 | Skipped |
 | **Understanding Logical Prepositions** | ⚪️ | 61 | Skipped |
 | **Для + Genitive (For)** | ⚪️ | 91 | Skipped |

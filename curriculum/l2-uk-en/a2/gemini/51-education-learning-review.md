@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1004/1000
+- **Words:** ✅ 1040/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,13 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 54.8% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 53.8% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -28,7 +25,7 @@
 | **Education & Learning** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 112 | Included in Core |
 | **Presentation** | ✅ | 212 | Included in Core |
-| **Practice** | ⚪️ | 630 | Skipped |
+| **Practice** | ⚪️ | 666 | Skipped |
 | **Summary** | ✅ | 50 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Education Facts** | 🎮 | 12 | Activity (12 items, min 8) |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1245/1000
+- **Words:** ✅ 1282/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,13 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 51.2% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 50.3% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -28,7 +25,7 @@
 | **A2 Grammar Review** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 51 | Included in Core |
 | **Presentation** | ✅ | 94 | Included in Core |
-| **Practice** | ⚪️ | 1058 | Skipped |
+| **Practice** | ⚪️ | 1095 | Skipped |
 | **Summary** | ✅ | 42 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Grammar Master** | 🎮 | 12 | Activity (12 items, min 8) |

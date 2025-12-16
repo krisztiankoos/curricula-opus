@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1059/1000
+- **Words:** ✅ 1097/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 45.2% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 44.5% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 63 | Included in Core |
+| **Intro/Narrative** | ✅ | 101 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Real vs. Unreal Conditions** | ⚪️ | 62 | Skipped |
 | **The Conditional Particle б/би** | ⚪️ | 60 | Skipped |

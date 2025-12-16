@@ -996,6 +996,74 @@ def convert_callouts(content: str) -> str:
 
     return '\n'.join(result)
 
+def process_story_sections(content: str) -> str:
+    """Add blank lines between narrative lines in story sections.
+
+    Story sections (### Story Time, ### Dialogue, etc.) contain narrative
+    paragraphs that need blank lines between them for proper Markdown rendering.
+    This function detects story headers and adds blank lines between non-blank
+    lines until the next header.
+
+    Note: Dialog lines (starting with —) are left consecutive so that
+    process_dialogues can wrap them in conversation containers.
+    """
+    lines = content.split('\n')
+    result = []
+    i = 0
+
+    # Pattern to detect story section headers
+    story_header_pattern = re.compile(r'^###\s+(Story|Dialogue|Reading|Conversation|Text|Passage)', re.IGNORECASE)
+    # Pattern to detect any header (to know when story section ends)
+    any_header_pattern = re.compile(r'^#{1,4}\s+')
+
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        # Check if this is a story section header
+        if story_header_pattern.match(stripped):
+            result.append(line)
+            result.append('')
+            i += 1
+
+            # Process lines until next header or end of content
+            while i < len(lines):
+                current_line = lines[i]
+                current_stripped = current_line.strip()
+
+                # Stop at next header
+                if any_header_pattern.match(current_stripped):
+                    break
+
+                # Skip already-blank lines
+                if not current_stripped:
+                    result.append(current_line)
+                    i += 1
+                    continue
+
+                # Add the line
+                result.append(current_line)
+
+                # Look ahead - if next line is non-blank content (not a header, not blank),
+                # add a blank line after current line UNLESS both lines are dialog lines (—)
+                if i + 1 < len(lines):
+                    next_stripped = lines[i + 1].strip()
+                    current_is_dialog = current_stripped.startswith('—')
+                    next_is_dialog = next_stripped.startswith('—')
+
+                    # Add blank line only if NOT both dialog lines
+                    if next_stripped and not any_header_pattern.match(next_stripped):
+                        if not (current_is_dialog and next_is_dialog):
+                            result.append('')
+
+                i += 1
+        else:
+            result.append(line)
+            i += 1
+
+    return '\n'.join(result)
+
+
 def process_dialogues(content: str) -> str:
     """Group consecutive dialog lines into conversation blocks.
 
@@ -1094,7 +1162,10 @@ description: "{escape_jsx(fm.get('subtitle', ''))}"
     # Fix HTML for JSX compatibility (self-closing tags)
     processed = fix_html_for_jsx(processed)
 
-    # Process dialogues
+    # Process story sections (add blank lines between narrative lines)
+    processed = process_story_sections(processed)
+
+    # Process dialogues (wrap em-dash lines in conversation divs)
     processed = process_dialogues(processed)
 
     # Remove duplicate H1 title

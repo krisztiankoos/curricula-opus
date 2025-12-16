@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1010/1000
+- **Words:** ✅ 1044/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,13 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 51.8% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 51.0% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -28,7 +25,7 @@
 | **Emotions & Personality** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 113 | Included in Core |
 | **Presentation** | ✅ | 289 | Included in Core |
-| **Practice** | ⚪️ | 519 | Skipped |
+| **Practice** | ⚪️ | 553 | Skipped |
 | **Summary** | ✅ | 89 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Emotion Recognition** | 🎮 | 12 | Activity (12 items, min 8) |

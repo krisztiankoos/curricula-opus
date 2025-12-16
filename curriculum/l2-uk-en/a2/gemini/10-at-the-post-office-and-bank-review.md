@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1071/1000
+- **Words:** ✅ 1098/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 48.2% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 47.7% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 238 | Included in Core |
+| **Intro/Narrative** | ✅ | 265 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **На пошті — At the Post Office** | ⚪️ | 167 | Skipped |
 | **У банку — At the Bank** | ⚪️ | 200 | Skipped |

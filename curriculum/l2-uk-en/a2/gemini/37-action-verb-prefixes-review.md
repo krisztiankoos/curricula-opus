@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1134/1000
+- **Words:** ✅ 1171/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 8/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 41.0% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 40.3% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 125 | Included in Core |
+| **Warm-up** | ✅ | 162 | Included in Core |
 | **The Meaning Map** | ⚪️ | 7 | Skipped |
 | **Story Time: The Writer's Deadline** | ✅ | 185 | Included in Core |
 | **Deep Dive: Open and Close (Відкрити / Закрити)** | ✅ | 87 | Included in Core |

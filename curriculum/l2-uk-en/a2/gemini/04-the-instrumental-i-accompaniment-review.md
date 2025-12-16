@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1819/1000
+- **Words:** ✅ 1859/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,19 +14,16 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.9% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 44.3% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 155 | Included in Core |
-| **Warm-up** | ✅ | 90 | Included in Core |
+| **Warm-up** | ✅ | 130 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **The Instrumental Question: Ким? Чим?** | ⚪️ | 106 | Skipped |
 | **Masculine Instrumental Endings** | ⚪️ | 188 | Skipped |

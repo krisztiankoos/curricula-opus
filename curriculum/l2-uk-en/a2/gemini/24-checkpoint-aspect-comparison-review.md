@@ -3,29 +3,26 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1040/1000
+- **Words:** ✅ 1153/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 6/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 40.3% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 41.2% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 73 | Included in Core |
+| **Intro/Narrative** | ✅ | 109 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Comprehensive Grammar Guide** | ⚪️ | 166 | Skipped |
 | **Integrated Review Story** | ✅ | 0 | Included in Core |
@@ -35,10 +32,10 @@
 | **The Road to B1: What's Next?** | ⚪️ | 124 | Skipped |
 | **How to solidify your knowledge** | ⚪️ | 146 | Skipped |
 | **Check Your Progress** | ➖ | 116 | Excluded Type |
-| **Final Words of Wisdom** | ⚪️ | 76 | Skipped |
+| **Final Words of Wisdom** | ⚪️ | 153 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Aspect Pairs Review** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Comprehensive Review** | 🎮 | 12 | Activity (12 items, min 8) |
+| **fill-in: Comprehensive Review** | 🎮 | 14 | Activity (14 items, min 8) |
 | **quiz: Phase A2.2 Review** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Mixed Review** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Aspect Sorting** | 🎮 | 12 | Activity (12 items, min 8) |

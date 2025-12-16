@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1008/1000
+- **Words:** ✅ 1044/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 8/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 41.0% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 40.1% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 69 | Included in Core |
+| **Warm-up** | ✅ | 105 | Included in Core |
 | **The Problem: Ambiguity** | ⚪️ | 92 | Skipped |
 | **The Rule: Свій = Subject's Own** | ⚪️ | 0 | Skipped |
 | **When to Use Свій** | ⚪️ | 11 | Skipped |

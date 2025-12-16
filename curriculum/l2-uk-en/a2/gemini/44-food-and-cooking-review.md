@@ -3,29 +3,26 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1061/1000
+- **Words:** ✅ 1182/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 6/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 35/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 51.0% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 50.8% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 155 | Included in Core |
+| **Warm-up** | ✅ | 195 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Kitchen Equipment** | ⚪️ | 85 | Skipped |
 | **Cooking Methods** | ⚪️ | 86 | Skipped |
@@ -36,10 +33,10 @@
 | **Common Expressions** | ⚪️ | 0 | Skipped |
 | **Recipe Imperatives** | ⚪️ | 67 | Skipped |
 | **Useful Phrases** | ⚪️ | 114 | Skipped |
-| **Summary** | ✅ | 60 | Included in Core |
+| **Summary** | ✅ | 141 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Kitchen Words** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Cooking Methods** | 🎮 | 8 | Activity (8 items, min 8) |
+| **fill-in: Cooking Methods** | 🎮 | 10 | Activity (10 items, min 8) |
 | **quiz: Food & Cooking** | 🎮 | 8 | Activity (8 items, min 8) |
 | **cloze: Recipe Story** | 🎮 | 6 | Activity (6 items, min 6) |
 | **unjumble: Cooking Sentences** | 🎮 | 8 | Activity (8 items, min 6) |

@@ -3,29 +3,26 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1025/1000
+- **Words:** ✅ 1146/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/4
+- **Engagement:** ✅ 8/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 40.6% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 41.5% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 120 | Included in Core |
+| **Warm-up** | ✅ | 158 | Included in Core |
 | **The Three Zones** | ⚪️ | 42 | Skipped |
 | **Zone 1: One (Один, Одна, Одне)** | ⚪️ | 82 | Skipped |
 | **Zone 2: Two Through Four (2-4)** | ⚪️ | 18 | Skipped |
@@ -44,10 +41,10 @@
 | **Mistake 3: Wrong Form After 5+** | ⚪️ | 8 | Skipped |
 | **Mistake 4: Ignoring the Last Digit Rule** | ⚪️ | 14 | Skipped |
 | **Language Learning Tip** | ✅ | 98 | Included in Core |
-| **Summary** | ✅ | 32 | Included in Core |
+| **Summary** | ✅ | 115 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Zone Identification** | 🎮 | 8 | Activity (8 items, min 8) |
-| **fill-in: Complete the Phrase** | 🎮 | 8 | Activity (8 items, min 8) |
+| **fill-in: Complete the Phrase** | 🎮 | 10 | Activity (10 items, min 8) |
 | **quiz: Agreement Rules** | 🎮 | 8 | Activity (8 items, min 8) |
 | **cloze: Shopping** | 🎮 | 6 | Activity (6 items, min 6) |
 | **unjumble: Counting Sentences** | 🎮 | 8 | Activity (8 items, min 6) |

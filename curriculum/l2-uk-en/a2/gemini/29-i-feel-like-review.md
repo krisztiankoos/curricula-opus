@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1116/1000
+- **Words:** ✅ 1152/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 42.2% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 41.3% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 113 | Included in Core |
+| **Warm-up** | ✅ | 149 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **1. The Dative Construction (Impersonal)** | ⚪️ | 39 | Skipped |
 | **2. Nominative Adjectives (Personality)** | ⚪️ | 74 | Skipped |

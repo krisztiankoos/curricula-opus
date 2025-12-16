@@ -3,12 +3,12 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1003/1000
+- **Words:** ✅ 1099/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 5/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 34/25
 - **Structure:** ✅ Valid Structure
@@ -19,13 +19,10 @@
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 271 | Included in Core |
+| **Intro/Narrative** | ✅ | 304 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Two Types of Future** | ⚪️ | 181 | Skipped |
 | **Comparing the Two Futures** | ⚪️ | 29 | Skipped |
@@ -35,10 +32,10 @@
 | **Practice** | ⚪️ | 0 | Skipped |
 | **Practice Examples** | ⚪️ | 60 | Skipped |
 | **Summary** | ✅ | 0 | Included in Core |
-| **What You Learned** | ⚪️ | 218 | Skipped |
+| **What You Learned** | ⚪️ | 281 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Future Forms** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Choose the Correct Future** | 🎮 | 12 | Activity (12 items, min 8) |
+| **fill-in: Choose the Correct Future** | 🎮 | 14 | Activity (14 items, min 8) |
 | **quiz: Future Tense** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Future Rules** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Future Formation** | 🎮 | 12 | Activity (12 items, min 8) |

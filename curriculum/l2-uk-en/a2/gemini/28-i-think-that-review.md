@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1046/1000
+- **Words:** ✅ 1085/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 41.3% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 40.5% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 125 | Included in Core |
+| **Intro/Narrative** | ✅ | 164 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Expressing Opinions** | ⚪️ | 212 | Skipped |
 | **Agreeing and Disagreeing** | ⚪️ | 92 | Skipped |

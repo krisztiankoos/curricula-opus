@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1216/1000
+- **Words:** ✅ 1255/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 53.9% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 52.6% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 64 | Included in Core |
+| **Warm-up** | ✅ | 103 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **1. Expressing Pain: Болить** | ⚪️ | 101 | Skipped |
 | **2. Other Symptoms** | ⚪️ | 47 | Skipped |

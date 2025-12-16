@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1155/1000
+- **Words:** ✅ 1195/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.1% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 43.2% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 121 | Included in Core |
+| **Warm-up** | ✅ | 161 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **1. The Golden Rule: No Backshift** | ⚪️ | 124 | Skipped |
 | **2. Reporting Verbs** | ⚪️ | 132 | Skipped |

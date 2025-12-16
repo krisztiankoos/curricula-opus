@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1195/1000
+- **Words:** ✅ 1232/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 54.1% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 53.0% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 106 | Included in Core |
+| **Warm-up** | ✅ | 143 | Included in Core |
 | **Review: The Connector Map** | ✅ | 77 | Included in Core |
 | **Review: Storytelling & Time** | ✅ | 101 | Included in Core |
 | **Review: Reported Speech & Opinions** | ✅ | 132 | Included in Core |

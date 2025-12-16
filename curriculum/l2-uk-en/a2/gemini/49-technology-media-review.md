@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1011/1000
+- **Words:** ✅ 1050/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,13 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 57.0% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 56.0% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -28,7 +25,7 @@
 | **Technology & Media** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 127 | Included in Core |
 | **Presentation** | ✅ | 294 | Included in Core |
-| **Practice** | ⚪️ | 547 | Skipped |
+| **Practice** | ⚪️ | 586 | Skipped |
 | **Summary** | ✅ | 43 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Tech Quiz** | 🎮 | 12 | Activity (12 items, min 8) |

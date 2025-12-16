@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1776/1000
+- **Words:** ✅ 1820/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
@@ -14,20 +14,17 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.1% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 43.6% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Intro/Narrative** | ✅ | 0 | Included in Core |
 | **Introduction** | ✅ | 160 | Included in Core |
-| **Вступ** | ⚪️ | 99 | Skipped |
+| **Вступ** | ⚪️ | 143 | Skipped |
 | **Presentation** | ✅ | 462 | Included in Core |
 | **Cultural Insight** | ✅ | 452 | Included in Core |
 | **Reading Practice: Листівка з Одеси** | ✅ | 244 | Included in Core |

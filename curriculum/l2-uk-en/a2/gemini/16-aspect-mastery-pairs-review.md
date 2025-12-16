@@ -3,29 +3,26 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1000/1000
+- **Words:** ✅ 1135/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 6/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 56/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 35.3% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 37.0% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 49 | Included in Core |
+| **Warm-up** | ✅ | 89 | Included in Core |
 | **The Core 30 Pairs** | ✅ | 0 | Included in Core |
 | **Tier 1: Essential Everyday Pairs** | ⚪️ | 54 | Skipped |
 | **Tier 2: Learning & Communication** | ⚪️ | 48 | Skipped |
@@ -45,12 +42,12 @@
 | **Mistake 2: Using Perfective for Ongoing Actions** | ⚪️ | 26 | Skipped |
 | **Mistake 3: Using Perfective for Habits** | ⚪️ | 18 | Skipped |
 | **Language Learning Tip** | ✅ | 121 | Included in Core |
-| **Summary** | ✅ | 67 | Included in Core |
+| **Summary** | ✅ | 162 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Tier 1 Pairs** | 🎮 | 8 | Activity (8 items, min 8) |
 | **match-up: Tier 2 Pairs** | 🎮 | 8 | Activity (8 items, min 8) |
 | **match-up: Tier 3 Pairs** | 🎮 | 8 | Activity (8 items, min 8) |
-| **fill-in: Transform to Perfective** | 🎮 | 8 | Activity (8 items, min 8) |
+| **fill-in: Transform to Perfective** | 🎮 | 10 | Activity (10 items, min 8) |
 | **fill-in: Transform to Imperfective** | 🎮 | 8 | Activity (8 items, min 8) |
 | **quiz: Aspect Selection** | 🎮 | 8 | Activity (8 items, min 6) |
 | **cloze: Context Selection** | 🎮 | 6 | Activity (6 items, min 6) |

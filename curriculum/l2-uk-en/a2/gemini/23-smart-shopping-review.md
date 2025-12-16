@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1006/1000
+- **Words:** ✅ 1044/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.4% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 43.4% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 55 | Included in Core |
+| **Intro/Narrative** | ✅ | 93 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Comparing Products** | ⚪️ | 114 | Skipped |
 | **Negotiation Phrases** | ⚪️ | 88 | Skipped |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1013/1000
+- **Words:** ✅ 1048/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 53.8% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 53.3% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 82 | Included in Core |
+| **Warm-up** | ✅ | 117 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **1. Simultaneous Actions: Поки** | ⚪️ | 73 | Skipped |
 | **2. Sequential Actions: Коли & Після того як** | ⚪️ | 68 | Skipped |

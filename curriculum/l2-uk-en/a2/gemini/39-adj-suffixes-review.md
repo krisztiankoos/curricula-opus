@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1220/1000
+- **Words:** ✅ 1256/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 45.8% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 44.8% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 162 | Included in Core |
+| **Warm-up** | ✅ | 198 | Included in Core |
 | **Grammar Breakdown: 4 Rules to Remember** | ⚪️ | 188 | Skipped |
 | **The Big Three: -Н, -ОВ, -СЬК** | ⚪️ | 8 | Skipped |
 | **Machine 1: The Generalist (-н-ий)** | ⚪️ | 10 | Skipped |

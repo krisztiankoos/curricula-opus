@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1044/1000
+- **Words:** ✅ 1078/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 45.2% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 44.4% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (9 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 130 | Included in Core |
+| **Warm-up** | ✅ | 164 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **1. The Timeline of a Story** | ✅ | 136 | Included in Core |
 | **2. Sequencing in Action** | ⚪️ | 62 | Skipped |

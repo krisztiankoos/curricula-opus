@@ -5,20 +5,19 @@ title: "The Cyrillic Code I"
 description: "Cracking the Ukrainian Alphabet"
 ---
 
-import Quiz, { QuizQuestion } from '@site/src/components/Quiz';
-import FillIn, { FillInQuestion } from '@site/src/components/FillIn';
+import Quiz from '@site/src/components/Quiz';
 import MatchUp from '@site/src/components/MatchUp';
-import TrueFalse, { TrueFalseQuestion } from '@site/src/components/TrueFalse';
-import Anagram, { AnagramQuestion } from '@site/src/components/Anagram';
-import Unjumble, { UnjumbleQuestion } from '@site/src/components/Unjumble';
+import FillIn from '@site/src/components/FillIn';
+import TrueFalse from '@site/src/components/TrueFalse';
+import Unjumble from '@site/src/components/Unjumble';
 import GroupSort from '@site/src/components/GroupSort';
+import Anagram from '@site/src/components/Anagram';
 import ErrorCorrection, { ErrorCorrectionItem } from '@site/src/components/ErrorCorrection';
-import Select, { SelectQuestion } from '@site/src/components/Select';
-import Translate, { TranslateItem } from '@site/src/components/Translate';
-import Cloze, { ClozePassage } from '@site/src/components/Cloze';
-import DialogueReorder, { DialogueReorderActivity } from '@site/src/components/DialogueReorder';
+import Cloze from '@site/src/components/Cloze';
+import Select from '@site/src/components/Select';
+import Translate from '@site/src/components/Translate';
+import DialogueReorder from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
-
 
 
 # The Cyrillic Code I
@@ -32,8 +31,7 @@ Think of learning Cyrillic like learning to read again. But this time, it only t
 
 
 
-:::info
-🔗 External Resources
+:::info[🔗 External Resources]
 
 **YouTube:** [How to read the Ukrainian Alphabet. Cyrillic Letters. Part I](https://www.youtube.com/watch?v=Gt7O4FLGxjI) — Speak Ukrainian
 
@@ -112,28 +110,42 @@ The word **футбол** (football) uses several new letters: **Ф** (f), **У*
 
 ### Reading International Words
 
+
 Many words in Ukrainian are international. They're borrowed from Latin, Greek, or English. Once you know the letters, you can read these immediately.
 
 **Places:**
+
 Банк (bank). Парк (park). Кафе (café). Бар (bar). Ресторан (restaurant).
 
 **Food:**
+
 Кава (coffee). Суп (soup). Салат (salad). Піца (pizza). Банан (banana). Лимон (lemon).
 
 **Technology:**
+
 Метро (metro). Радіо (radio). Телефон (telephone). Інтернет (internet). Фото (photo). Відео (video).
 
 ### Mini-Dialogue 1: At the Metro Station
 
+<div className="conversation">
+
 — Це метро? *(Tse metro?)* — Is this the metro?
+
 — Так, метро. *(Tak, metro.)* — Yes, the metro.
+
+</div>
 
 Notice how **метро** looks almost English? That's because it IS almost English. Just written in Cyrillic!
 
 ### Mini-Dialogue 2: At a Café
 
+<div className="conversation">
+
 — Кава? *(Kava?)* — Coffee?
+
 — Так, кава. *(Tak, kava.)* — Yes, coffee.
+
+</div>
 
 The word **кава** comes from the same root as English "coffee" but took a different path through Turkish and Arabic. In Ukrainian, it sounds like "kava."
 
@@ -187,7 +199,394 @@ You can now read **35 international words** in Ukrainian. The key insight: many 
 
 ---
 
+## 🎯 Activities
 
+### True Friends
+
+<MatchUp pairs={[
+  { left: `Ukrainian`, right: `English` },
+  { left: `А`, right: `A` },
+  { left: `Е`, right: `E` },
+  { left: `І`, right: `I` },
+  { left: `О`, right: `O` },
+  { left: `К`, right: `K` },
+  { left: `М`, right: `M` },
+  { left: `Т`, right: `T` },
+  { left: `а`, right: `a` },
+  { left: `е`, right: `e` },
+  { left: `і`, right: `i` },
+  { left: `о`, right: `o` },
+  { left: `к`, right: `k` }
+]} />
+
+### False Friends Sound
+
+<MatchUp pairs={[
+  { left: `Ukrainian Letter`, right: `Sound` },
+  { left: `В`, right: `/v/ as in van` },
+  { left: `Н`, right: `/n/ as in no` },
+  { left: `Р`, right: `/r/ as in red` },
+  { left: `С`, right: `/s/ as in sun` },
+  { left: `У`, right: `/u/ as in moon` },
+  { left: `Х`, right: `/x/ as in loch` },
+  { left: `в`, right: `/v/` },
+  { left: `н`, right: `/n/` },
+  { left: `р`, right: `/r/` },
+  { left: `с`, right: `/s/` },
+  { left: `у`, right: `/u/` },
+  { left: `х`, right: `/x/` }
+]} />
+
+### Letter Types
+
+<GroupSort groups={{
+  "True Friends": ["А", "О", "Е", "І", "К", "М"],
+  "False Friends": ["В", "Н", "Р", "С", "У", "Х"],
+  "New Letters": ["Б", "Д", "З", "Л", "П", "Ф"]
+}} />
+
+### Reading Words
+
+
+<Quiz questions={[
+
+  {
+
+    question: `How do you pronounce **банк**?`,
+
+    options: [
+
+      { text: `bank`, correct: true },
+
+      { text: `bahk`, correct: false },
+
+      { text: `vank`, correct: false },
+
+      { text: `bahnk`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **радіо**?`,
+
+    options: [
+
+      { text: `radio`, correct: true },
+
+      { text: `padio`, correct: false },
+
+      { text: `radyo`, correct: false },
+
+      { text: `paдio`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **кава**?`,
+
+    options: [
+
+      { text: `kava (coffee)`, correct: true },
+
+      { text: `kaba`, correct: false },
+
+      { text: `cava`, correct: false },
+
+      { text: `kaha`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **парк**?`,
+
+    options: [
+
+      { text: `park`, correct: true },
+
+      { text: `papk`, correct: false },
+
+      { text: `pack`, correct: false },
+
+      { text: `pank`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **суп**?`,
+
+    options: [
+
+      { text: `soup`, correct: true },
+
+      { text: `syp`, correct: false },
+
+      { text: `sup (rhymes with cup)`, correct: false },
+
+      { text: `soop`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **футбол**?`,
+
+    options: [
+
+      { text: `futbol (football)`, correct: true },
+
+      { text: `футбол`, correct: false },
+
+      { text: `footbol`, correct: false },
+
+      { text: `futbol (rhymes with doll)`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `What letter is **Р** equivalent to in English sound?`,
+
+    options: [
+
+      { text: `R`, correct: true },
+
+      { text: `P`, correct: false },
+
+      { text: `N`, correct: false },
+
+      { text: `B`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `What letter is **Н** equivalent to in English sound?`,
+
+    options: [
+
+      { text: `N`, correct: true },
+
+      { text: `H`, correct: false },
+
+      { text: `M`, correct: false },
+
+      { text: `X`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `What sound does **В** make?`,
+
+    options: [
+
+      { text: `V as in \"van\"`, correct: true },
+
+      { text: `B as in \"ban\"`, correct: false },
+
+      { text: `W as in \"wan\"`, correct: false },
+
+      { text: `F as in \"fan\"`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `How do you pronounce **метро**?`,
+
+    options: [
+
+      { text: `metro`, correct: true },
+
+      { text: `metpo`, correct: false },
+
+      { text: `мetpo`, correct: false },
+
+      { text: `meyтро`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `Which word means \"tourist\"?`,
+
+    options: [
+
+      { text: `турист`, correct: true },
+
+      { text: `тупист`, correct: false },
+
+      { text: `тунист`, correct: false },
+
+      { text: `турісе`, correct: false }
+
+    ]
+
+  },  {
+
+    question: `Which word means \"telephone\"?`,
+
+    options: [
+
+      { text: `телефон`, correct: true },
+
+      { text: `телефоn`, correct: false },
+
+      { text: `телефоп`, correct: false },
+
+      { text: `тєлєфон`, correct: false }
+
+    ]
+
+  }
+
+]} />
+
+### Letter Recognition
+
+<TrueFalse items={[
+  {
+    statement: `The letter А sounds like \"a\" in \"father\".`,
+    isTrue: true,
+    explanation: `Correct! А is a True Friend.`
+  },  {
+    statement: `The letter В sounds like \"b\" in \"ball\".`,
+    isTrue: false,
+    explanation: `Incorrect! В is a False Friend. It sounds like \"v\" in \"van\".`
+  },  {
+    statement: `The letter Н sounds like \"n\" in \"no\".`,
+    isTrue: true,
+    explanation: `Correct! Despite looking like H, Н sounds like N.`
+  },  {
+    statement: `The letter Р sounds like \"p\" in \"pet\".`,
+    isTrue: false,
+    explanation: `Incorrect! Р is a False Friend. It sounds like \"r\" in \"red\".`
+  },  {
+    statement: `The letter С sounds like \"s\" in \"sun\".`,
+    isTrue: true,
+    explanation: `Correct! Despite looking like C, С sounds like S.`
+  },  {
+    statement: `The letter У sounds like \"y\" in \"yes\".`,
+    isTrue: false,
+    explanation: `Incorrect! У sounds like \"oo\" in \"moon\".`
+  },  {
+    statement: `Cyrillic was created in Bulgaria, not Russia.`,
+    isTrue: true,
+    explanation: `Correct! It was created in the 9th century in Bulgaria.`
+  },  {
+    statement: `Ukrainian has unique letters that Russian doesn't have.`,
+    isTrue: true,
+    explanation: `Correct! Like Ї, Є, and Ґ.`
+  },  {
+    statement: `The word \"метро\" uses only False Friends.`,
+    isTrue: false,
+    explanation: `Incorrect! It uses True Friends (М, Е, Т, О) and one False Friend (Р).`
+  },  {
+    statement: `The letter К sounds like \"k\" in \"kite\".`,
+    isTrue: true,
+    explanation: `Correct! К is a True Friend.`
+  },  {
+    statement: `The letter Х sounds like \"x\" in \"box\".`,
+    isTrue: false,
+    explanation: `Incorrect! Х sounds like \"ch\" in Scottish \"loch\".`
+  },  {
+    statement: `The letter Л sounds like \"l\" in \"love\".`,
+    isTrue: true,
+    explanation: `Correct! Л is a New Letter that makes the L sound.`
+  }
+]} />
+
+### Complete the Word
+
+<FillIn items={[
+  {
+    sentence: `___анк (bank)`,
+    answer: `Б`,
+    options: [`Б`, `В`, `П`, `Ф`]
+  },  {
+    sentence: `ка___а (coffee)`,
+    answer: `в`,
+    options: [`в`, `б`, `ф`, `п`]
+  },  {
+    sentence: `___адіо (radio)`,
+    answer: `Р`,
+    options: [`Р`, `П`, `Н`, `В`]
+  },  {
+    sentence: `мет___о (metro)`,
+    answer: `р`,
+    options: [`р`, `п`, `н`, `в`]
+  },  {
+    sentence: `___уп (soup)`,
+    answer: `С`,
+    options: [`С`, `З`, `Ц`, `Х`]
+  },  {
+    sentence: `___арк (park)`,
+    answer: `П`,
+    options: [`П`, `Р`, `Б`, `Ф`]
+  },  {
+    sentence: `___утбол (football)`,
+    answer: `Ф`,
+    options: [`Ф`, `П`, `В`, `Б`]
+  },  {
+    sentence: `бана___ (banana)`,
+    answer: `н`,
+    options: [`н`, `м`, `р`, `л`]
+  },  {
+    sentence: `___імон (lemon)`,
+    answer: `Л`,
+    options: [`Л`, `П`, `Р`, `Н`]
+  },  {
+    sentence: `___октор (doctor)`,
+    answer: `Д`,
+    options: [`Д`, `Т`, `Б`, `П`]
+  },  {
+    sentence: `телефо___ (telephone)`,
+    answer: `н`,
+    options: [`н`, `м`, `р`, `л`]
+  },  {
+    sentence: `ка___та (map/card)`,
+    answer: `р`,
+    options: [`р`, `п`, `н`, `в`]
+  }
+]} />
+
+### Build the Word
+
+<Anagram items={[
+  { scrambled: `к а в а`, answer: `кава`, hint: `` },
+  { scrambled: `б а н к`, answer: `банк`, hint: `` },
+  { scrambled: `п а р к`, answer: `парк`, hint: `` },
+  { scrambled: `с у п`, answer: `суп`, hint: `` },
+  { scrambled: `б а р`, answer: `бар`, hint: `` },
+  { scrambled: `м е т р о`, answer: `метро`, hint: `` },
+  { scrambled: `р а д і о`, answer: `радіо`, hint: `` },
+  { scrambled: `ф о т о`, answer: `фото`, hint: `` },
+  { scrambled: `п і ц а`, answer: `піца`, hint: `` },
+  { scrambled: `с а л а т`, answer: `салат`, hint: `` },
+  { scrambled: `т а к с і`, answer: `таксі`, hint: `` },
+  { scrambled: `м у з и к а`, answer: `музика`, hint: `` }
+]} />
+
+### International Words
+
+<Anagram items={[
+  { scrambled: `о п е р а`, answer: `опера`, hint: `` },
+  { scrambled: `б а л е т`, answer: `балет`, hint: `` },
+  { scrambled: `а к т о р`, answer: `актор`, hint: `` },
+  { scrambled: `п а с п о р т`, answer: `паспорт`, hint: `` },
+  { scrambled: `в і з а`, answer: `віза`, hint: `` },
+  { scrambled: `к а р т а`, answer: `карта`, hint: `` },
+  { scrambled: `к о м е т а`, answer: `комета`, hint: `` },
+  { scrambled: `р а к е т а`, answer: `ракета`, hint: `` },
+  { scrambled: `к а к а о`, answer: `какао`, hint: `` },
+  { scrambled: `і н т е р н е т`, answer: `інтернет`, hint: `` },
+  { scrambled: `с т у д е н т`, answer: `студент`, hint: `` },
+  { scrambled: `т у р и с т`, answer: `турист`, hint: `` }
+]} />
 ## 📚 Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
@@ -227,408 +626,3 @@ You can now read **35 international words** in Ukrainian. The key insight: many 
 | інтернет | /intɛrˈnɛt/ | internet | noun | m | - |
 | какао | /kɑˈkɑɔ/ | cocoa | noun | n | indecl. |
 | кава | /ˈkɑvɑ/ | coffee | noun | f | - |
-
----
-
-## 🎯 Activities
-
-### True Friends
-
-*Match the Ukrainian letter with its English equivalent.*
-
-
-<MatchUp pairs={[
-  { left: `А`, right: `A` },
-  { left: `Е`, right: `E` },
-  { left: `І`, right: `I` },
-  { left: `О`, right: `O` },
-  { left: `К`, right: `K` },
-  { left: `М`, right: `M` },
-  { left: `Т`, right: `T` },
-  { left: `а`, right: `a` },
-  { left: `е`, right: `e` },
-  { left: `і`, right: `i` },
-  { left: `о`, right: `o` },
-  { left: `к`, right: `k` }
-]} />
-
-### False Friends Sound
-
-*Match the Ukrainian letter with the sound it makes.*
-
-
-<MatchUp pairs={[
-  { left: `В`, right: `/v/ as in van` },
-  { left: `Н`, right: `/n/ as in no` },
-  { left: `Р`, right: `/r/ as in red` },
-  { left: `С`, right: `/s/ as in sun` },
-  { left: `У`, right: `/u/ as in moon` },
-  { left: `Х`, right: `/x/ as in loch` },
-  { left: `в`, right: `/v/` },
-  { left: `н`, right: `/n/` },
-  { left: `р`, right: `/r/` },
-  { left: `с`, right: `/s/` },
-  { left: `у`, right: `/u/` },
-  { left: `х`, right: `/x/` }
-]} />
-
-### Letter Types
-
-*Sort these letters into True Friends, False Friends, or New Letters.*
-
-
-<GroupSort groups={{
-  "### True Friends": [
-    "А",
-    "О",
-    "Е",
-    "І",
-    "К",
-    "М"
-  ],
-  "False Friends": [
-    "В",
-    "Н",
-    "Р",
-    "С",
-    "У",
-    "Х"
-  ],
-  "New Letters": [
-    "Б",
-    "Д",
-    "З",
-    "Л",
-    "П",
-    "Ф"
-  ]
-}} />
-
-### Reading Words
-
-*Select the correct pronunciation.*
-
-
-<Quiz>
-  <QuizQuestion
-    question={`1. How do you pronounce банк?`}
-    options={[`bank`, `bahk`, `vank`, `bahnk`]}
-    correctIndex={0}
-    explanation={`The Н sounds like N, so банк = bank`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce радіо?`}
-    options={[`radio`, `padio`, `radyo`, `paдio`]}
-    correctIndex={0}
-    explanation={`The Р sounds like R, so радіо = radio`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce кава?`}
-    options={[`kava (coffee)`, `kaba`, `cava`, `kaha`]}
-    correctIndex={0}
-    explanation={`В sounds like V, not B`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce парк?`}
-    options={[`park`, `papk`, `pack`, `pank`]}
-    correctIndex={0}
-    explanation={`П = P, А = A, Р = R, К = K`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce суп?`}
-    options={[`soup`, `syp`, `sup (rhymes with cup)`, `soop`]}
-    correctIndex={0}
-    explanation={`У sounds like OO in "moon"`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce футбол?`}
-    options={[`futbol (football)`, `футбол`, `footbol`, `futbol (rhymes with doll)`]}
-    correctIndex={0}
-    explanation={`Ф = F, У = U, Т = T, Б = B, О = O, Л = L`}
-  />
-  <QuizQuestion
-    question={`What letter is Р equivalent to in English sound?`}
-    options={[`R`, `P`, `N`, `B`]}
-    correctIndex={0}
-    explanation={`Р is a False Friend, looks like P, sounds like R`}
-  />
-  <QuizQuestion
-    question={`What letter is Н equivalent to in English sound?`}
-    options={[`N`, `H`, `M`, `X`]}
-    correctIndex={0}
-    explanation={`Н is a False Friend, looks like H, sounds like N`}
-  />
-  <QuizQuestion
-    question={`What sound does В make?`}
-    options={[`V as in "van"`, `B as in "ban"`, `W as in "wan"`, `F as in "fan"`]}
-    correctIndex={0}
-    explanation={`В is a False Friend, looks like B, sounds like V`}
-  />
-  <QuizQuestion
-    question={`How do you pronounce метро?`}
-    options={[`metro`, `metpo`, `мetpo`, `meyтро`]}
-    correctIndex={0}
-    explanation={`All True Friends except Р (which is R)`}
-  />
-  <QuizQuestion
-    question={`Which word means "tourist"?`}
-    options={[`турист`, `тупист`, `тунист`, `турісе`]}
-    correctIndex={0}
-    explanation={`турист = tourist (Р is R sound)`}
-  />
-  <QuizQuestion
-    question={`Which word means "telephone"?`}
-    options={[`телефон`, `телефоn`, `телефоп`, `тєлєфон`]}
-    correctIndex={0}
-    explanation={`телефон = telephone`}
-  />
-</Quiz>
-
-### Letter Recognition
-
-*Decide if each statement is true or false.*
-
-
-<TrueFalse>
-  <TrueFalseQuestion
-    statement={`The letter А sounds like "a" in "father".`}
-    isTrue={true}
-    explanation={`Correct! А is a True Friend.`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter В sounds like "b" in "ball".`}
-    isTrue={false}
-    explanation={`Incorrect! В is a False Friend. It sounds like "v" in "van".`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter Н sounds like "n" in "no".`}
-    isTrue={true}
-    explanation={`Correct! Despite looking like H, Н sounds like N.`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter Р sounds like "p" in "pet".`}
-    isTrue={false}
-    explanation={`Incorrect! Р is a False Friend. It sounds like "r" in "red".`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter С sounds like "s" in "sun".`}
-    isTrue={true}
-    explanation={`Correct! Despite looking like C, С sounds like S.`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter У sounds like "y" in "yes".`}
-    isTrue={false}
-    explanation={`Incorrect! У sounds like "oo" in "moon".`}
-  />
-  <TrueFalseQuestion
-    statement={`Cyrillic was created in Bulgaria, not Russia.`}
-    isTrue={true}
-    explanation={`Correct! It was created in the 9th century in Bulgaria.`}
-  />
-  <TrueFalseQuestion
-    statement={`Ukrainian has unique letters that Russian doesn't have.`}
-    isTrue={true}
-    explanation={`Correct! Like Ї, Є, and Ґ.`}
-  />
-  <TrueFalseQuestion
-    statement={`The word "метро" uses only False Friends.`}
-    isTrue={false}
-    explanation={`Incorrect! It uses True Friends (М, Е, Т, О) and one False Friend (Р).`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter К sounds like "k" in "kite".`}
-    isTrue={true}
-    explanation={`Correct! К is a True Friend.`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter Х sounds like "x" in "box".`}
-    isTrue={false}
-    explanation={`Incorrect! Х sounds like "ch" in Scottish "loch".`}
-  />
-  <TrueFalseQuestion
-    statement={`The letter Л sounds like "l" in "love".`}
-    isTrue={true}
-    explanation={`Correct! Л is a New Letter that makes the L sound.`}
-  />
-</TrueFalse>
-
-### Complete the Word
-
-*Fill in the missing Ukrainian letter.*
-
-
-<FillIn>
-  <FillInQuestion
-    sentence={`1. ___анк (bank)`}
-    answer={`Б`}
-    options={[`Б`, `В`, `П`, `Ф`]}
-  />
-  <FillInQuestion
-    sentence={`ка___а (coffee)`}
-    answer={`в`}
-    options={[`в`, `б`, `ф`, `п`]}
-  />
-  <FillInQuestion
-    sentence={`___адіо (radio)`}
-    answer={`Р`}
-    options={[`Р`, `П`, `Н`, `В`]}
-  />
-  <FillInQuestion
-    sentence={`мет___о (metro)`}
-    answer={`р`}
-    options={[`р`, `п`, `н`, `в`]}
-  />
-  <FillInQuestion
-    sentence={`___уп (soup)`}
-    answer={`С`}
-    options={[`С`, `З`, `Ц`, `Х`]}
-  />
-  <FillInQuestion
-    sentence={`___арк (park)`}
-    answer={`П`}
-    options={[`П`, `Р`, `Б`, `Ф`]}
-  />
-  <FillInQuestion
-    sentence={`___утбол (football)`}
-    answer={`Ф`}
-    options={[`Ф`, `П`, `В`, `Б`]}
-  />
-  <FillInQuestion
-    sentence={`бана___ (banana)`}
-    answer={`н`}
-    options={[`н`, `м`, `р`, `л`]}
-  />
-  <FillInQuestion
-    sentence={`___імон (lemon)`}
-    answer={`Л`}
-    options={[`Л`, `П`, `Р`, `Н`]}
-  />
-  <FillInQuestion
-    sentence={`___октор (doctor)`}
-    answer={`Д`}
-    options={[`Д`, `Т`, `Б`, `П`]}
-  />
-  <FillInQuestion
-    sentence={`телефо___ (telephone)`}
-    answer={`н`}
-    options={[`н`, `м`, `р`, `л`]}
-  />
-  <FillInQuestion
-    sentence={`ка___та (map/card)`}
-    answer={`р`}
-    options={[`р`, `п`, `н`, `в`]}
-  />
-</FillIn>
-
-### Build the Word
-
-*Arrange the letters to form the correct Ukrainian word.*
-
-
-<Anagram>
-  <AnagramQuestion
-    scrambled={`к а в а`}
-    answer={`кава`}
-  />
-  <AnagramQuestion
-    scrambled={`б а н к`}
-    answer={`банк`}
-  />
-  <AnagramQuestion
-    scrambled={`п а р к`}
-    answer={`парк`}
-  />
-  <AnagramQuestion
-    scrambled={`с у п`}
-    answer={`суп`}
-  />
-  <AnagramQuestion
-    scrambled={`б а р`}
-    answer={`бар`}
-  />
-  <AnagramQuestion
-    scrambled={`м е т р о`}
-    answer={`метро`}
-  />
-  <AnagramQuestion
-    scrambled={`р а д і о`}
-    answer={`радіо`}
-  />
-  <AnagramQuestion
-    scrambled={`ф о т о`}
-    answer={`фото`}
-  />
-  <AnagramQuestion
-    scrambled={`п і ц а`}
-    answer={`піца`}
-  />
-  <AnagramQuestion
-    scrambled={`с а л а т`}
-    answer={`салат`}
-  />
-  <AnagramQuestion
-    scrambled={`т а к с і`}
-    answer={`таксі`}
-  />
-  <AnagramQuestion
-    scrambled={`м у з и к а`}
-    answer={`музика`}
-  />
-</Anagram>
-
-### International Words
-
-*Unscramble these international words.*
-
-
-<Anagram>
-  <AnagramQuestion
-    scrambled={`о п е р а`}
-    answer={`опера`}
-  />
-  <AnagramQuestion
-    scrambled={`б а л е т`}
-    answer={`балет`}
-  />
-  <AnagramQuestion
-    scrambled={`а к т о р`}
-    answer={`актор`}
-  />
-  <AnagramQuestion
-    scrambled={`п а с п о р т`}
-    answer={`паспорт`}
-  />
-  <AnagramQuestion
-    scrambled={`в і з а`}
-    answer={`віза`}
-  />
-  <AnagramQuestion
-    scrambled={`к а р т а`}
-    answer={`карта`}
-  />
-  <AnagramQuestion
-    scrambled={`к о м е т а`}
-    answer={`комета`}
-  />
-  <AnagramQuestion
-    scrambled={`р а к е т а`}
-    answer={`ракета`}
-  />
-  <AnagramQuestion
-    scrambled={`к а к а о`}
-    answer={`какао`}
-  />
-  <AnagramQuestion
-    scrambled={`і н т е р н е т`}
-    answer={`інтернет`}
-  />
-  <AnagramQuestion
-    scrambled={`с т у д е н т`}
-    answer={`студент`}
-  />
-  <AnagramQuestion
-    scrambled={`т у р и с т`}
-    answer={`турист`}
-  />
-</Anagram>
-

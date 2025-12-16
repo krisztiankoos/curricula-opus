@@ -3,30 +3,27 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1019/1000
+- **Words:** ✅ 1131/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 6/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.5% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 50.7% (target 50-60% (A2.3))
 
 ## MDX VALIDATION
 ✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Nature & Weather** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 96 | Included in Core |
+| **Warm-up** | ✅ | 129 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Landscape** | ⚪️ | 149 | Skipped |
 | **Weather** | ⚪️ | 128 | Skipped |
@@ -36,10 +33,10 @@
 | **Common Expressions** | ⚪️ | 0 | Skipped |
 | **Weather Questions and Answers** | ⚪️ | 0 | Skipped |
 | **Useful Phrases** | ⚪️ | 110 | Skipped |
-| **Summary** | ✅ | 76 | Included in Core |
+| **Summary** | ✅ | 155 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Nature Words** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Nature & Weather** | 🎮 | 8 | Activity (8 items, min 8) |
+| **fill-in: Nature & Weather** | 🎮 | 10 | Activity (10 items, min 8) |
 | **quiz: Nature & Weather** | 🎮 | 8 | Activity (8 items, min 8) |
 | **cloze: Story Comprehension** | 🎮 | 6 | Activity (6 items, min 6) |
 | **unjumble: Weather Sentences** | 🎮 | 8 | Activity (8 items, min 6) |

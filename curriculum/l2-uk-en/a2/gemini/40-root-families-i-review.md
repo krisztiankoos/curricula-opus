@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1028/1000
+- **Words:** ✅ 1062/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 45.2% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 44.1% (target 40-55% (A2.2))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 94 | Included in Core |
+| **Warm-up** | ✅ | 128 | Included in Core |
 | **Family 1: The Walkers (-ХІД-)** | ⚪️ | 28 | Skipped |
 | **Family 2: The Writers (-ПИС-)** | ⚪️ | 33 | Skipped |
 | **Family 3: Input (-ЧИТ- / -БАЧ-)** | ⚪️ | 8 | Skipped |

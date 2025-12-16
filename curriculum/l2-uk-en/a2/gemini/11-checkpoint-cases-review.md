@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1151/1000
+- **Words:** ✅ 1194/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -14,18 +14,15 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 36.7% (target 35-50% (A2.1))
+- **Immersion:** 🇺🇦 36.1% (target 35-50% (A2.1))
 
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 172 | Included in Core |
+| **Intro/Narrative** | ✅ | 215 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Quick Review: The 7 Cases** | ✅ | 170 | Included in Core |
 | **Quick Review: Prepositions + Cases** | ✅ | 255 | Included in Core |

@@ -57,9 +57,9 @@ Mastering aspect is mastering Ukrainian time. Remember this golden rule: **Proce
 
 | Tense | Imperfective (ND) | Perfective (D) |
 |-------|-------------------|----------------|
-| **Past** | **Process/Repetition** <br> Я читав книгу. (I was reading) <br> Я читав щодня. (I read every day) | **Result/One-time** <br> Я прочитав книгу. (I finished reading) <br> Я прочитав цей лист. (I read this letter) |
-| **Present**| **Action now / General fact** <br> Я читаю. (I am reading) <br> Я читаю книги. (I read books) | **No Present Tense!** <br> Perfective verbs strictly describe future completion or past result. |
-| **Future** | **Process will happen** <br> Я буду читати. (I will be reading) <br> Я читатиму. (I will be reading) | **Result will occur** <br> Я прочитаю. (I will finish reading) |
+| **Past** | **Process/Repetition** <br /> Я читав книгу. (I was reading) <br /> Я читав щодня. (I read every day) | **Result/One-time** <br /> Я прочитав книгу. (I finished reading) <br /> Я прочитав цей лист. (I read this letter) |
+| **Present**| **Action now / General fact** <br /> Я читаю. (I am reading) <br /> Я читаю книги. (I read books) | **No Present Tense!** <br /> Perfective verbs strictly describe future completion or past result. |
+| **Future** | **Process will happen** <br /> Я буду читати. (I will be reading) <br /> Я читатиму. (I will be reading) | **Result will occur** <br /> Я прочитаю. (I will finish reading) |
 
 > 🧠 **Memory Hack: Prefixes**
 >

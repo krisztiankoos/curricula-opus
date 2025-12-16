@@ -315,6 +315,12 @@ yt-dlp "ytsearch5:Ukrainian complex sentences складні речення" --p
 
 ### External Resources (B1.5)
 
+#### YouTube Videos
+
+*Note: No Ukrainian-language instructional videos found for abstract vocabulary or discourse markers. Search results returned only English grammar lessons and unrelated content. This phase will rely on authentic content (news, podcasts, reading materials) rather than instructional videos.*
+
+#### News & Media Sources
+
 | Module | Resource | URL | Status |
 |--------|----------|-----|--------|
 | M53 | Hromadske News | youtube.com/@hromadske_ua | ❓ TBD |

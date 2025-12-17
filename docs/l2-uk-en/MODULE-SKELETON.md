@@ -107,7 +107,16 @@ audio: true
      COMMON SECTIONS (ALL VARIANTS)
      ========================================================================================= -->
 
-# Summary
+<!--
+    ⚠️ HEADING HIERARCHY WARNING:
+    - H1 (#) = Page title ONLY (should appear once at top)
+    - H2 (##) = All section headings (Warm-up, Presentation, Summary, Activities, Vocabulary)
+    - H3 (###) = Subsections within sections
+    
+    Using H1 for sections breaks Docusaurus right sidebar (TOC)!
+-->
+
+## Summary
 [Bulleted list of key takeaways. 3-5 points]
 
 1.  **Grammar:** ...
@@ -118,12 +127,12 @@ audio: true
 
 > [!tip] 🌟 **Pro Tip:** [Final actionable advice]
 
-# Activities
+## Activities
 
 ## [Activity Type]: [Title]
 ...
 
 ---
 
-# Vocabulary
+## Vocabulary
 [Generate Vocabulary Table matching the Level Format (Tier 1-4)]

@@ -56,12 +56,12 @@ vocabulary_count: {count}
 
 ---
 
-# Summary
+## Summary
 [placeholder]
 
 ---
 
-# Vocabulary
+## Vocabulary
 {copy table from plan}
 ```
 
@@ -83,12 +83,12 @@ vocabulary_count: {count}
 
 ---
 
-# Summary
+## Summary
 [placeholder]
 
 ---
 
-# Словник
+## Словник
 {copy table from plan}
 ```
 
@@ -110,12 +110,12 @@ vocabulary_count: {count}
 
 ---
 
-# Summary
+## Summary
 [placeholder]
 
 ---
 
-# Словник
+## Словник
 {copy table from plan}
 ```
 

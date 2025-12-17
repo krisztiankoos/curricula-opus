@@ -7,6 +7,7 @@ Validates activity format compliance with docs/MARKDOWN-FORMAT.md specification:
 - Unjumble format: uses > [!answer] callouts
 - Match-up format: table format or :: separator
 - Fill-in format: has both > [!answer] and > [!options]
+- Heading levels: section headings use H2 (##), not H1 (#)
 """
 
 import re
@@ -338,6 +339,47 @@ def check_cloze_format(content: str) -> list[dict]:
     return violations
 
 
+def check_heading_levels(content: str) -> list[dict]:
+    """
+    Check that section headings use H2 (##) not H1 (#).
+    
+    Docusaurus TOC shows H2-H3 by default. H1 should only be used for
+    the page title. Section headings like Warm-up, Presentation, etc.
+    must use H2 (##) to appear correctly in the right sidebar.
+    """
+    violations = []
+    
+    # Reserved section words that should NOT be H1
+    # These are standard module section names that must be H2
+    reserved_sections = [
+        'warm-up', 'presentation', 'practice', 'cultural',
+        'summary', 'activities', 'production', 'vocabulary',
+        'reading', 'grammar', 'dialogue', 'підсумок'
+    ]
+    
+    lines = content.split('\n')
+    for line_num, line in enumerate(lines, 1):
+        # Check for H1 headings (^# but not ^##)
+        if line.startswith('# ') and not line.startswith('## '):
+            heading = line[2:].strip()
+            heading_lower = heading.lower()
+            
+            # Check if this H1 contains a reserved section word
+            for reserved in reserved_sections:
+                if reserved in heading_lower:
+                    # Clean heading text for display (remove emoji)
+                    clean_heading = heading[:50] + ('...' if len(heading) > 50 else '')
+                    violations.append({
+                        'type': 'HEADING_LEVEL',
+                        'line': line_num,
+                        'issue': f"Section heading '{clean_heading}' uses H1 (#), should use H2 (##)",
+                        'fix': f"Change '# {heading}' to '## {heading}' - H1 is reserved for page titles only"
+                    })
+                    break  # One violation per heading is enough
+    
+    return violations
+
+
 def check_markdown_format(content: str) -> list[dict]:
     """
     Run all markdown format validation checks.
@@ -357,5 +399,6 @@ def check_markdown_format(content: str) -> list[dict]:
     violations.extend(check_fill_in_format(content))
     violations.extend(check_error_correction_format(content))
     violations.extend(check_cloze_format(content))
+    violations.extend(check_heading_levels(content))
 
     return violations

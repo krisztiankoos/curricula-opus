@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 933/750
+- **Words:** ✅ 1750/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 35.5% (target 35-55% (M24))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Can, Must, Want - Modals** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 35 | Included in Core |
 | **Grammar** | ⚪️ | 54 | Skipped |
 | **Expressing Ability: могти vs вміти** | ⚪️ | 49 | Skipped |

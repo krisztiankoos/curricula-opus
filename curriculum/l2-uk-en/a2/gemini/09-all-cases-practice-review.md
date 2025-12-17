@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1104/1000
+- **Words:** ⚠️ 2489/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 39.4% (target 35-50% (A2.1))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 317 | Included in Core |
+| **Warm-up** | ✅ | 317 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Understanding the Case System** | ⚪️ | 181 | Skipped |
 | **Огляд відмінків** | ⚪️ | 306 | Skipped |

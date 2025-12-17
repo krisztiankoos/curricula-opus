@@ -665,51 +665,51 @@ The activities below progress from recognition (matching, sorting) to production
 > Put the words in the correct order.
 
 1. подобається / Мені / музика / українська
-   > [!answer] Мені подобається українська музика.
+   > [!answer] Мені подобається українська музика
    > (I like Ukrainian music.) [4 words]
 
 2. потрібно / Тобі / відпочити
-   > [!answer] Тобі потрібно відпочити.
+   > [!answer] Тобі потрібно відпочити
    > (You need to rest.) [3 words]
 
 3. холодно / Йому / тут
-   > [!answer] Йому тут холодно.
+   > [!answer] Йому тут холодно
    > (He's cold here.) [3 words]
 
 4. подобається / їй / Київ / Чи
-   > [!answer] Чи їй подобається Київ?
+   > [!answer] Чи їй подобається Київ
    > (Does she like Kyiv?) [4 words]
 
 5. потрібна / Нам / допомога
-   > [!answer] Нам потрібна допомога.
+   > [!answer] Нам потрібна допомога
    > (We need help.) [3 words]
 
 6. цікаво / Вам / тут
-   > [!answer] Вам тут цікаво?
+   > [!answer] Вам тут цікаво
    > (Is it interesting for you here?) [3 words]
 
 7. футбол / Їм / подобається
-   > [!answer] Їм подобається футбол.
+   > [!answer] Їм подобається футбол
    > (They like football.) [3 words]
 
 8. здається / Мені / це / що / правда
-   > [!answer] Мені здається, що це правда.
+   > [!answer] Мені здається, що це правда
    > (It seems to me that this is true.) [5 words]
 
 9. тепло / Тобі / зараз
-   > [!answer] Тобі зараз тепло?
+   > [!answer] Тобі зараз тепло
    > (Are you warm now?) [3 words]
 
 10. весело / Нам / дуже / тут
-    > [!answer] Нам тут дуже весело.
+    > [!answer] Нам тут дуже весело
     > (We're having a lot of fun here.) [4 words]
 
 11. потрібно / Йому / працювати / більше
-    > [!answer] Йому потрібно більше працювати.
+    > [!answer] Йому потрібно більше працювати
     > (He needs to work more.) [4 words]
 
 12. подобаються / Їй / квіти
-    > [!answer] Їй подобаються квіти.
+    > [!answer] Їй подобаються квіти
     > (She likes flowers.) [3 words]
 
 ## dialogue-reorder: At the Restaurant [stage: free-production]

@@ -3,12 +3,12 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1085/1000
+- **Words:** ⚠️ 2440/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 5/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 40.5% (target 40-55% (A2.2))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 164 | Included in Core |
+| **Warm-up** | ✅ | 164 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Expressing Opinions** | ⚪️ | 212 | Skipped |
 | **Agreeing and Disagreeing** | ⚪️ | 92 | Skipped |

@@ -1,9 +1,20 @@
 # Audit Report: 45-home-and-furniture.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time Part 2: Прибирання' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time Part 2: Прибирання' to '## Story Time Part 2: Прибирання'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Common Expressions' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Common Expressions' to '## Common Expressions'
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 2 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1219/1000
+- **Words:** ✅ 1922/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
@@ -13,11 +24,8 @@
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 2 violations
 - **Immersion:** 🇺🇦 51.4% (target 50-60% (A2.3))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

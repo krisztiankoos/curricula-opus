@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 779/750
+- **Words:** ✅ 1650/750
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 42.3% (target 35-55% (M25))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 88 | Included in Core |
+| **My Day — A Typical Routine** | ⚪️ | 88 | Skipped |
 | **Examples in Context** | ✅ | 251 | Included in Core |
 | **Dialogues** | ✅ | 373 | Included in Core |
 | **Summary** | ✅ | 67 | Included in Core |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1044/1000
+- **Words:** ⚠️ 2243/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 43.4% (target 40-55% (A2.2))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 93 | Included in Core |
+| **Warm-up** | ✅ | 93 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Comparing Products** | ⚪️ | 114 | Skipped |
 | **Negotiation Phrases** | ⚪️ | 88 | Skipped |

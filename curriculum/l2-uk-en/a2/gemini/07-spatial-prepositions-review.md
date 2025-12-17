@@ -1,9 +1,18 @@
 # Audit Report: 07-spatial-prepositions.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** 'Dialogue: Де що знаходиться?' is a section heading but uses H1 (#)
+  - FIX: Change '# Dialogue: Де що знаходиться?' to '## Dialogue: Де що знаходиться?' - reserved for page title only
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1265/1000
+- **Words:** ⚠️ 2787/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -13,16 +22,13 @@
 - **Vocab:** ✅ 36/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 39.7% (target 35-50% (A2.1))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 139 | Included in Core |
+| **Warm-up** | ✅ | 139 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **The Preposition-Case Connection** | ⚪️ | 87 | Skipped |
 | **Motion vs. Location: The Core Distinction** | ✅ | 77 | Included in Core |

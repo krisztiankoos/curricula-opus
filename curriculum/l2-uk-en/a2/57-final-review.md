@@ -495,7 +495,7 @@ Success! (*Успіхів!*)
     > We have big plans.
 
 11. Життя / — / це / найцікавіша / подорож
-    > [!answer] Життя — це найцікавіша подорож
+    > [!answer] Життя це найцікавіша подорож
     > Life is the most interesting journey.
 
 12. Все / буде / добре

@@ -1,9 +1,31 @@
 # Audit Report: 08-logical-prepositions.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Part 2: Cause & Topic' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Part 2: Cause & Topic' to '## Part 2: Cause & Topic'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Part 3: Source & Accompaniment' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Part 3: Source & Accompaniment' to '## Part 3: Source & Accompaniment'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Part 4: Time & Exception' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Part 4: Time & Exception' to '## Part 4: Time & Exception'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Case Summary' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Case Summary' to '## Deep Dive: Case Summary'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time: The Letter' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time: The Letter' to '## Story Time: The Letter'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time Part 2: The Café' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time Part 2: The Café' to '## Story Time Part 2: The Café'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Language in Action' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Language in Action' to '## Language in Action'
+
+## Recommendation
+**📝 UPDATE** (severity 45/100)
+
+- Borderline case (severity 45/100)
+- 7 pedagogical violations (significant)
 
 ## Gates
-- **Words:** ✅ 1146/1000
+- **Words:** ✅ 1802/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -13,11 +35,8 @@
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 7 violations
 - **Immersion:** 🇺🇦 41.9% (target 35-50% (A2.1))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

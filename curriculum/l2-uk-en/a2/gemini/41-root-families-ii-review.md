@@ -1,9 +1,22 @@
 # Audit Report: 41-root-families-ii.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time Part 2: На лекції' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time Part 2: На лекції' to '## Story Time Part 2: На лекції'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Related Roots' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Related Roots' to '## Deep Dive: Related Roots'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Common Mistakes' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Common Mistakes' to '## Common Mistakes'
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 3 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1145/1000
+- **Words:** ✅ 1869/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
@@ -13,11 +26,8 @@
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 3 violations
 - **Immersion:** 🇺🇦 50.3% (target 50-60% (A2.3))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

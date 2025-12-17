@@ -1,31 +1,34 @@
 # Audit Report: 15-around-the-city.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Instrumental case used at A1: 'За мостом'
+  - FIX: Instrumental case not allowed until A2 (M36+). Restructure sentence.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ⚠️ 1866/750 (>1750 may be too long)
+- **Words:** ⚠️ 3389/750 (>1750 may be too long)
 - **Activities:** ✅ 11/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/3
+- **Engagement:** ✅ 6/3
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 40/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 30.2% (target 25-40% (M15))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Around the City** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 204 | Included in Core |
 | **Presentation** | ✅ | 695 | Included in Core |
 | **Practice** | ⚪️ | 393 | Skipped |

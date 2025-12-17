@@ -1,4 +1,5 @@
 ---
+
 module: a1-15
 title: "Around the City"
 subtitle: "Navigating urban spaces with confidence"
@@ -25,6 +26,7 @@ objectives:
   - "Name common urban infrastructure and transport methods"
 vocabulary_count: 40
 ---
+
 # Around the City
 
 ## Warm-up
@@ -327,7 +329,7 @@ Beyond official public transport, every Ukrainian city runs **маршрутки
 
 ---
 
-# Summary
+## Summary
 
 You now have the vocabulary to:
 - **Give and follow directions** using прямо, наліво, направо, назад
@@ -347,7 +349,7 @@ Next module: **Genitive Case I — Absence and Negation** (немає, without).
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Navigation Basics
 > Test your understanding of directional vocabulary.
@@ -630,51 +632,51 @@ Next module: **Genitive Case I — Absence and Negation** (немає, without).
 > Put the words in the correct order to form natural Ukrainian sentences.
 
 1. прямо / Іди / наліво / потім / поверни
-   > [!answer] Іди прямо, потім поверни наліво.
+   > [!answer] Іди прямо, потім поверни наліво
    > (Go straight, then turn left.) [5 words]
 
 2. Де / станція / метро
-   > [!answer] Де станція метро?
+   > [!answer] Де станція метро
    > (Where is the metro station?) [3 words]
 
 3. навпроти / Аптека / банку
-   > [!answer] Аптека навпроти банку.
+   > [!answer] Аптека навпроти банку
    > (The pharmacy is opposite the bank.) [3 words]
 
 4. дістатися / Як / центру / до
-   > [!answer] Як дістатися до центру?
+   > [!answer] Як дістатися до центру
    > (How to get to the center?) [4 words]
 
 5. автобусі / Я / на / їду / роботу / на
-   > [!answer] Я їду на роботу на автобусі.
+   > [!answer] Я їду на роботу на автобусі
    > (I go to work by bus.) [6 words]
 
 6. біля / Зупинка / світлофора
-   > [!answer] Зупинка біля світлофора.
+   > [!answer] Зупинка біля світлофора
    > (The stop is near the traffic light.) [3 words]
 
 7. вулиці / вздовж / Іди / Шевченка
-   > [!answer] Іди вздовж вулиці Шевченка.
+   > [!answer] Іди вздовж вулиці Шевченка
    > (Go along Shevchenko Street.) [4 words]
 
 8. Це / далеко / дуже
-   > [!answer] Це дуже далеко.
+   > [!answer] Це дуже далеко
    > (It's very far.) [3 words]
 
 9. перехресті / направо / На / поверніть
-   > [!answer] На перехресті поверніть направо.
+   > [!answer] На перехресті поверніть направо
    > (Turn right at the intersection.) [4 words]
 
 10. пішки / Я / університет / до / ходжу
-    > [!answer] Я ходжу до університету пішки.
+    > [!answer] Я ходжу до університету пішки
     > (I walk to the university.) [5 words]
 
 11. між / Музей / театром / парком / і
-    > [!answer] Музей між театром і парком.
+    > [!answer] Музей між театром і парком
     > (The museum is between the theatre and the park.) [5 words]
 
 12. близько / Ні / це
-    > [!answer] Ні, це близько.
+    > [!answer] Ні, це близько
     > (No, it's close.) [3 words]
 
 ## match-up: Question and Answer Pairs
@@ -722,54 +724,54 @@ Next module: **Genitive Case I — Absence and Negation** (немає, without).
 > Put the words in order to form correct sentences about transportation.
 
 1. їду / Я / автобусі / на / щодня
-   > [!answer] Я їду на автобусі щодня.
+   > [!answer] Я їду на автобусі щодня
    > (I go by bus every day.) [5 words]
 
 2. трамваї / вона / на / дістається / роботу / На
-   > [!answer] Вона дістається на роботу на трамваї.
+   > [!answer] Вона дістається на роботу на трамваї
    > (She gets to work by tram.) [6 words]
 
 3. метро / Ми / їдемо / центру / до
-   > [!answer] Ми їдемо метро до центру.
+   > [!answer] Ми їдемо метро до центру
    > (We go by metro to the center.) [5 words]
 
 4. велосипеді / він / на / щодня / Їздить
-   > [!answer] Він їздить на велосипеді щодня.
+   > [!answer] Він їздить на велосипеді щодня
    > (He rides a bicycle every day.) [5 words]
 
 5. машині / Вони / на / приїхали
-   > [!answer] Вони приїхали на машині.
+   > [!answer] Вони приїхали на машині
    > (They arrived by car.) [4 words]
 
 6. університету / до / пішки / Я / ходжу
-   > [!answer] Я ходжу до університету пішки.
+   > [!answer] Я ходжу до університету пішки
    > (I walk to the university.) [5 words]
 
 7. таксі / на / додому / Він / їде
-   > [!answer] Він їде додому на таксі.
+   > [!answer] Він їде додому на таксі
    > (He's going home by taxi.) [5 words]
 
 8. зупинка / Де / автобуса
-   > [!answer] Де зупинка автобуса?
+   > [!answer] Де зупинка автобуса
    > (Where is the bus stop?) [3 words]
 
 9. станція / там / Метро / прямо
-   > [!answer] Метро станція там, прямо.
+   > [!answer] Метро станція там, прямо
    > (The metro station is there, straight ahead.) [4 words]
 
 10. трамваї / їду / Зазвичай / на / я
-    > [!answer] Зазвичай я їду на трамваї.
+    > [!answer] Зазвичай я їду на трамваї
     > (Usually I go by tram.) [5 words]
 
 11. світлофора / Поверніть / направо / біля
-    > [!answer] Поверніть направо біля світлофора.
+    > [!answer] Поверніть направо біля світлофора
     > (Turn right at the traffic light.) [4 words]
 
 12. перехресті / На / наліво / ідіть
-    > [!answer] На перехресті ідіть наліво.
+    > [!answer] На перехресті ідіть наліво
     > (At the intersection go left.) [4 words]
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

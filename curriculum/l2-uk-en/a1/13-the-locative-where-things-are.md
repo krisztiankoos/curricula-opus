@@ -1,4 +1,5 @@
 ---
+
 module: a1-13
 title: "The Locative - Where Things Are"
 subtitle: "Finding Your Way Around Ukrainian Spaces"
@@ -22,6 +23,7 @@ grammar:
   - locative-case
   - prepositions-v-u-na
 ---
+
 # The Locative - Where Things Are
 
 ## Warm-up
@@ -269,7 +271,7 @@ Example: **У нашому місті є старий парк. Парк у це
 
 ---
 
-# Summary
+## Summary
 
 You've mastered the locative case! Here's what you learned:
 
@@ -291,7 +293,7 @@ Next up: You'll learn possessive pronouns (мій, твій, його...) so you
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Where Is It?
 > Choose the correct locative form.
@@ -524,51 +526,51 @@ Next up: You'll learn possessive pronouns (мій, твій, його...) so you
 > Put the words in the correct order.
 
 1. ти / Де / ?
-   > [!answer] Де ти?
+   > [!answer] Де ти
    > (Where are you?) [2 words]
 
 2. кафе / Я / в
-   > [!answer] Я в кафе.
+   > [!answer] Я в кафе
    > (I'm in a café.) [3 words]
 
 3. на / Книга / столі
-   > [!answer] Книга на столі.
+   > [!answer] Книга на столі
    > (The book is on the table.) [3 words]
 
 4. у / живу / Я / Києві
-   > [!answer] Я живу у Києві.
+   > [!answer] Я живу у Києві
    > (I live in Kyiv.) [4 words]
 
 5. Діти / школі / в
-   > [!answer] Діти в школі.
+   > [!answer] Діти в школі
    > (The children are at school.) [3 words]
 
 6. роботі / на / Вона
-   > [!answer] Вона на роботі.
+   > [!answer] Вона на роботі
    > (She's at work.) [3 words]
 
 7. у / Ми / центрі / магазині / в
-   > [!answer] Ми в магазині у центрі.
+   > [!answer] Ми в магазині у центрі
    > (We're in a shop in the center.) [5 words]
 
 8. Де / паспорт / твій / ?
-   > [!answer] Де твій паспорт?
+   > [!answer] Де твій паспорт
    > (Where is your passport?) [3 words]
 
 9. У / він / сумці
-   > [!answer] Він у сумці.
+   > [!answer] Він у сумці
    > (It's in the bag.) [3 words]
 
 10. на / Концерт / стадіоні
-    > [!answer] Концерт на стадіоні.
+    > [!answer] Концерт на стадіоні
     > (The concert is at the stadium.) [3 words]
 
 11. пляжі / на / зараз / Вони
-    > [!answer] Вони зараз на пляжі.
+    > [!answer] Вони зараз на пляжі
     > (They're at the beach now.) [4 words]
 
 12. у / Студенти / бібліотеці
-    > [!answer] Студенти у бібліотеці.
+    > [!answer] Студенти у бібліотеці
     > (The students are in the library.) [3 words]
 
 ## fill-in: Preposition Choice
@@ -728,7 +730,7 @@ Next up: You'll learn possessive pronouns (мій, твій, його...) so you
     > Floor levels use на.
 
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

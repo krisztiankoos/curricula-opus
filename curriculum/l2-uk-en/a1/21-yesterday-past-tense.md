@@ -1,4 +1,5 @@
 ---
+
 module: a1-21
 title: "Yesterday - Past Tense"
 subtitle: "Talking About What Happened"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can talk about what they did yesterday"
 vocabulary_count: 25
 ---
+
 # Yesterday - Past Tense
 
 ## Warm-up
@@ -266,7 +268,7 @@ Translation:
 
 ---
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Past Tense Vocabulary
 
@@ -427,27 +429,27 @@ Translation:
 > Put the words in the correct order.
 
 1. вчора / працював / я
-   > [!answer] Я працював вчора.
+   > [!answer] Я працював вчора
    > I worked yesterday.
 
 2. книгу / читала / вона
-   > [!answer] Вона читала книгу.
+   > [!answer] Вона читала книгу
    > She was reading a book.
 
 3. минулого / в / були / ми / Україні / року
-   > [!answer] Ми були в Україні минулого року.
+   > [!answer] Ми були в Україні минулого року
    > We were in Ukraine last year.
 
 4. жив / він / тут / давно
-   > [!answer] Він жив тут давно.
+   > [!answer] Він жив тут давно
    > He lived here long ago.
 
 5. музику / я / слухав / вчора
-   > [!answer] Я слухав музику вчора.
+   > [!answer] Я слухав музику вчора
    > I was listening to music yesterday.
 
 6. телефону / вона / по / говорила
-   > [!answer] Вона говорила по телефону.
+   > [!answer] Вона говорила по телефону
    > She was talking on the phone.
 
 ## true-false: Past Tense Facts
@@ -590,7 +592,7 @@ Translation:
    - [ ] Every week
    > Минулого тижня = last week (genitive)
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -1,9 +1,20 @@
 # Audit Report: 22-tomorrow-future-tense.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Dative case used at A1: 'тобі'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'нам'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 2 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1069/750
+- **Words:** ⚠️ 2048/750 (>1750 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,19 +24,13 @@
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 2 violations
 - **Immersion:** 🇺🇦 39.5% (target 35-55% (M22))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 29 | Included in Core |
+| **Tomorrow - Future Tense** | ⚪️ | 29 | Skipped |
 | **Grammar** | ⚪️ | 0 | Skipped |
 | **The Compound Future Tense** | ⚪️ | 65 | Skipped |
 | **Expressing Plans and Intentions** | ⚪️ | 162 | Skipped |

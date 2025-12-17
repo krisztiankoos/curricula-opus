@@ -1,4 +1,5 @@
 ---
+
 module: a1-07
 title: "Questions & Negation"
 subtitle: "Asking Questions and Saying No"
@@ -227,7 +228,7 @@ This isn't rude - it's genuine interest! Ukrainians value honesty and directness
 
 ---
 
-# Summary
+## Summary
 
 **Questions with Чи:**
 - Чи + subject + verb? = Yes/no question
@@ -247,7 +248,7 @@ This isn't rude - it's genuine interest! Ukrainians value honesty and directness
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Question Word Meanings
 
@@ -597,56 +598,56 @@ This isn't rude - it's genuine interest! Ukrainians value honesty and directness
 > Put the words in order to make negative sentences.
 
 1. не / Я / читаю
-   > [!answer] Я не читаю.
+   > [!answer] Я не читаю
    > (I don't read.)
 
 2. працює / не / Вона
-   > [!answer] Вона не працює.
+   > [!answer] Вона не працює
    > (She doesn't work.)
 
 3. знаємо / Ми / не
-   > [!answer] Ми не знаємо.
+   > [!answer] Ми не знаємо
    > (We don't know.)
 
 4. ніколи / п'ю / каву / Я / не
-   > [!answer] Я ніколи не п'ю каву.
+   > [!answer] Я ніколи не п'ю каву
    > (I never drink coffee.)
 
 5. Він / не / говорить / українською
-   > [!answer] Він не говорить українською.
+   > [!answer] Він не говорить українською
    > (He doesn't speak Ukrainian.)
 
 6. розумію / Я / не
-   > [!answer] Я не розумію.
+   > [!answer] Я не розумію
    > (I don't understand.)
 
 7. не / Це / правда
-   > [!answer] Це не правда.
+   > [!answer] Це не правда
    > (That's not true.)
 
 8. не / Ти / пишеш
-   > [!answer] Ти не пишеш.
+   > [!answer] Ти не пишеш
    > (You don't write.)
 
 9. їмо / ніколи / м'ясо / Ми / не
-   > [!answer] Ми ніколи не їмо м'ясо.
+   > [!answer] Ми ніколи не їмо м'ясо
    > (We never eat meat.)
 
 10. не / Вони / слухають / музику
-    > [!answer] Вони не слухають музику.
+    > [!answer] Вони не слухають музику
     > (They don't listen to music.)
 
 11. працюю / не / Я / сьогодні
-    > [!answer] Я не працюю сьогодні.
+    > [!answer] Я не працюю сьогодні
     > (I don't work today.)
 
 12. не / хочу / Я / чаю
-    > [!answer] Я не хочу чаю.
+    > [!answer] Я не хочу чаю
     > (I don't want tea.)
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

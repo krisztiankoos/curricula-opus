@@ -473,7 +473,7 @@ You are real expert now. Keep going!
    > Students study at the university.
 
 7. Мій / брат — / відомий / футболіст
-   > [!answer] Мій брат — відомий футболіст
+   > [!answer] Мій брат відомий футболіст
    > My brother is a famous footballer.
 
 8. Я / прокидаюся / о / сьомій / годині
@@ -489,7 +489,7 @@ You are real expert now. Keep going!
     > I wish you a good mood.
 
 11. Спорт / — / це / здоров'я
-    > [!answer] Спорт — це здоров'я
+    > [!answer] Спорт це здоров'я
     > Sport is health.
 
 12. Інтернет / працює / дуже / повільно

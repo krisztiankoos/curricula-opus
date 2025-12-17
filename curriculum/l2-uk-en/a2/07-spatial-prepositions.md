@@ -521,51 +521,51 @@ Practice forming sentences with the correct preposition + case combinations. Sta
 > Put the words in the correct order.
 
 1. я / йду / до / школи
-   > [!answer] Я йду до школи.
+   > [!answer] Я йду до школи
    > (I'm going to school.)
 
 2. кава / без / цукру
-   > [!answer] Кава без цукру.
+   > [!answer] Кава без цукру
    > (Coffee without sugar.)
 
 3. лампа / над / столом
-   > [!answer] Лампа над столом.
+   > [!answer] Лампа над столом
    > (A lamp above the table.)
 
 4. він / гуляє / з / друзями
-   > [!answer] Він гуляє з друзями.
+   > [!answer] Він гуляє з друзями
    > (He's walking with friends.)
 
 5. подарунок / для / мами
-   > [!answer] Подарунок для мами.
+   > [!answer] Подарунок для мами
    > (A gift for mom.)
 
 6. ми / йдемо / через / парк
-   > [!answer] Ми йдемо через парк.
+   > [!answer] Ми йдемо через парк
    > (We're going through the park.)
 
 7. вони / говорять / про / мене
-   > [!answer] Вони говорять про мене.
+   > [!answer] Вони говорять про мене
    > (They're talking about me.)
 
 8. кіт / спить / під / столом
-   > [!answer] Кіт спить під столом.
+   > [!answer] Кіт спить під столом
    > (The cat is sleeping under the table.)
 
 9. стояти / перед / дверима
-   > [!answer] Стояти перед дверима.
+   > [!answer] Стояти перед дверима
    > (To stand in front of the door.)
 
 10. бути / за / будинком
-    > [!answer] Бути за будинком.
+    > [!answer] Бути за будинком
     > (To be behind the house.)
 
 11. лист / від / брата
-    > [!answer] Лист від брата.
+    > [!answer] Лист від брата
     > (A letter from brother.)
 
 12. після / роботи
-    > [!answer] Після роботи.
+    > [!answer] Після роботи
     > (After work.)
 
 ## error-correction: Fix the Case

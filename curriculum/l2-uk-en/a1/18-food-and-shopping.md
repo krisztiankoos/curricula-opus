@@ -1,4 +1,5 @@
 ---
+
 module: a1-18
 title: "Food & Shopping"
 subtitle: "Practical vocabulary for market and store"
@@ -24,6 +25,7 @@ objectives:
   - "Learner can distinguish between food and non-food items"
 vocabulary_count: 46
 ---
+
 # Food & Shopping
 
 ## Warm-up
@@ -298,7 +300,7 @@ When you order Ukrainian food, you're participating in a living tradition that s
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися робити покупки українською! (You've learned to shop in Ukrainian!)
 
@@ -324,7 +326,7 @@ Next module (M19: At the Café), you'll practice full café dialogues using all 
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Food & Drinks Vocabulary
 > Match the Ukrainian words with their English meanings.
@@ -548,51 +550,51 @@ Next module (M19: At the Café), you'll practice full café dialogues using all 
 > Put the words in the correct order to form sentences.
 
 1. хочу / Я / каву
-   > [!answer] Я хочу каву.
+   > [!answer] Я хочу каву
    > (I want coffee.) [3 words]
 
 2. коштує / Скільки / хліб
-   > [!answer] Скільки коштує хліб?
+   > [!answer] Скільки коштує хліб
    > (How much is bread?) [3 words]
 
 3. візьму / Я / будь ласка / сир
-   > [!answer] Я візьму сир, будь ласка.
+   > [!answer] Я візьму сир, будь ласка
    > (I'll take cheese, please.) [5 words]
 
 4. води / Склянку / будь ласка
-   > [!answer] Склянку води, будь ласка.
+   > [!answer] Склянку води, будь ласка
    > (A glass of water, please.) [4 words]
 
 5. купуємо / Ми / овочі / та / м'ясо
-   > [!answer] Ми купуємо овочі та м'ясо.
+   > [!answer] Ми купуємо овочі та м'ясо
    > (We buy vegetables and meat.) [5 words]
 
 6. є / меню / У / десерт
-   > [!answer] У меню є десерт?
+   > [!answer] У меню є десерт
    > (Is there dessert on the menu?) [4 words]
 
 7. Рахунок / будь ласка
-   > [!answer] Рахунок, будь ласка.
+   > [!answer] Рахунок, будь ласка
    > (The bill, please.) [3 words]
 
 8. дуже / Борщ / смачний
-   > [!answer] Борщ дуже смачний.
+   > [!answer] Борщ дуже смачний
    > (Borscht is very tasty.) [3 words]
 
 9. шукаю / Я / зубну / пасту
-   > [!answer] Я шукаю зубну пасту.
+   > [!answer] Я шукаю зубну пасту
    > (I'm looking for toothpaste.) [4 words]
 
 10. магазин / де / Вибачте
-    > [!answer] Вибачте, де магазин?
+    > [!answer] Вибачте, де магазин
     > (Excuse me, where is the store?) [4 words]
 
 11. візьму / Я / суп / та / салат
-    > [!answer] Я візьму суп та салат.
+    > [!answer] Я візьму суп та салат
     > (I'll take soup and salad.) [5 words]
 
 12. відчинено / Магазин / о / восьмій
-    > [!answer] Магазин відчинено о восьмій.
+    > [!answer] Магазин відчинено о восьмій
     > (The store opens at 8.) [4 words]
 
 ## match-up: Non-Food Items
@@ -695,7 +697,7 @@ Next module (M19: At the Café), you'll practice full café dialogues using all 
 - зошит
 - пакет
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

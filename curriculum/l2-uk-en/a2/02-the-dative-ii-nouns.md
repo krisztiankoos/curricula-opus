@@ -595,27 +595,27 @@ The following activities will help you master Dative noun endings through variou
 > Put the words in the correct order.
 
 1. я / даю / книгу / другові
-   > [!answer] Я даю книгу другові.
+   > [!answer] Я даю книгу другові
    > (I give a book to my friend.)
 
 2. вона / телефонує / мамі / щодня
-   > [!answer] Вона телефонує мамі щодня.
+   > [!answer] Вона телефонує мамі щодня
    > (She calls mom every day.)
 
 3. ми / пишемо / листа / бабусі
-   > [!answer] Ми пишемо листа бабусі.
+   > [!answer] Ми пишемо листа бабусі
    > (We write a letter to grandma.)
 
 4. він / допомагає / сестрі / з / уроками
-   > [!answer] Він допомагає сестрі з уроками.
+   > [!answer] Він допомагає сестрі з уроками
    > (He helps his sister with homework.)
 
 5. батько / дарує / квіти / мамі
-   > [!answer] Батько дарує квіти мамі.
+   > [!answer] Батько дарує квіти мамі
    > (Father gives flowers to mom.)
 
 6. лікар / пояснює / діагноз / пацієнтові
-   > [!answer] Лікар пояснює діагноз пацієнтові.
+   > [!answer] Лікар пояснює діагноз пацієнтові
    > (The doctor explains the diagnosis to the patient.)
 
 ## error-correction: Fix the Dative

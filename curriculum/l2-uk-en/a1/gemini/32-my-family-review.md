@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1066/750
+- **Words:** ⚠️ 1980/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 48.0% (target 35-55% (M32))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **My Family** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 68 | Included in Core |
 | **Grammar** | ⚪️ | 55 | Skipped |
 | **Talking About Family** | ⚪️ | 56 | Skipped |

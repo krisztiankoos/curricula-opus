@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1136/750
+- **Words:** ⚠️ 2208/750 (>1750 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -15,13 +15,6 @@
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 31.6% (target 25-40% (M16))
-
-## MDX VALIDATION
-### Warnings
-- ⚠️ Vocabulary words possibly missing: немає, проблема, можливість, причина, сенс
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |

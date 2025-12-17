@@ -1,4 +1,5 @@
 ---
+
 module: a1-34
 title: "Checkpoint: Final Review"
 subtitle: "A1 Mastery"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can use past and future tense"
 vocabulary_count: 10
 ---
+
 # Checkpoint: Final Review
 
 ## A1 Mastery Assessment
@@ -64,7 +66,7 @@ vocabulary_count: 10
 - [ ] Я вживаю присвійні займенники: мій, твій, його, її
 - [ ] Я утворюю прислівники від прикметників
 
-## Vocabulary
+### Vocabulary Mastery
 
 - [ ] I know 400+ words across all topics
 - [ ] I can talk about family, food, city, time, weather, health, holidays
@@ -124,7 +126,7 @@ vocabulary_count: 10
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Познайомимось! (Let's Get Acquainted!)
 >
@@ -216,7 +218,7 @@ vocabulary_count: 10
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 ## Що ви вивчили на рівні A1 (What You've Accomplished)
 
@@ -245,7 +247,7 @@ vocabulary_count: 10
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Core Vocabulary Review
 
@@ -566,40 +568,40 @@ Choose the correct form or answer.
 Put the words in the correct order.
 
 1. мене / Олена / звати
-   > [!answer] Мене звати Олена.
+   > [!answer] Мене звати Олена
 
 2. я / з / України
-   > [!answer] Я з України.
+   > [!answer] Я з України
 
 3. у мене / брат / є / і / сестра
-   > [!answer] У мене є брат і сестра.
+   > [!answer] У мене є брат і сестра
 
 4. о сьомій / я / встаю
-   > [!answer] Я встаю о сьомій.
+   > [!answer] Я встаю о сьомій
 
 5. снідаю / я / вранці / завжди
-   > [!answer] Я завжди снідаю вранці.
+   > [!answer] Я завжди снідаю вранці
 
 6. вчора / читав / я / книгу
-   > [!answer] Вчора я читав книгу.
+   > [!answer] Вчора я читав книгу
 
 7. сьогодні / сонячно / і / тепло
-   > [!answer] Сьогодні сонячно і тепло.
+   > [!answer] Сьогодні сонячно і тепло
 
 8. болить / голова / у мене
-   > [!answer] У мене болить голова.
+   > [!answer] У мене болить голова
 
 9. народження / Днем / З
-   > [!answer] З Днем народження!
+   > [!answer] З Днем народження
 
 10. в магазин / йду / я
-   > [!answer] Я йду в магазин.
+   > [!answer] Я йду в магазин
 
 11. каву / будь ласка / дайте
-   > [!answer] Дайте каву, будь ласка.
+   > [!answer] Дайте каву, будь ласка
 
 12. аптека / де / вибачте
-   > [!answer] Вибачте, де аптека?
+   > [!answer] Вибачте, де аптека
 
 
 ---
@@ -690,7 +692,7 @@ Is this true or false?
 
 **Congratulations! You are now ready for A2!**
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

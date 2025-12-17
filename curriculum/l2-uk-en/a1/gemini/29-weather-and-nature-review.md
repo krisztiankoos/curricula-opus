@@ -1,9 +1,18 @@
 # Audit Report: 29-weather-and-nature.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Dative case used at A1: 'дереві'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 982/750
+- **Words:** ⚠️ 1773/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,19 +22,13 @@
 - **Vocab:** ✅ 35/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 47.5% (target 35-55% (M29))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Weather & Nature** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 65 | Included in Core |
 | **Grammar** | ⚪️ | 49 | Skipped |
 | **Impersonal Weather Expressions** | ⚪️ | 51 | Skipped |

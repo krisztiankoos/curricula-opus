@@ -1,4 +1,5 @@
 ---
+
 module: a1-19
 title: "At the Café"
 subtitle: "Ordering Food and Drinks in Ukrainian"
@@ -26,6 +27,7 @@ objectives:
   - "Learner can use functional phrases with Accusative, Genitive, and Locative cases"
 vocabulary_count: 24
 ---
+
 # At the Café
 
 ## Warm-up
@@ -250,7 +252,7 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 **Тепер ви можете (Now you can):**
 - ✅ Попросити столик і меню (Ask for a table and menu)
@@ -266,7 +268,7 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Café Vocabulary
 
@@ -465,52 +467,52 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
 > Put the words in the correct order to form sentences.
 
 1. будь / столик / ласка / двох / на
-   > [!answer] Столик на двох, будь ласка.
+   > [!answer] Столик на двох, будь ласка
    > (Table for two, please.) [5 words]
 
 2. візьму / я / каву / молоком / з
-   > [!answer] Я візьму каву з молоком.
+   > [!answer] Я візьму каву з молоком
    > (I'll take coffee with milk.) [5 words]
 
 3. що / порекомендуєте / ?
-   > [!answer] Що порекомендуєте?
+   > [!answer] Що порекомендуєте
    > (What do you recommend?) [2 words]
 
 4. будь / ласка / принесіть / хліб / ще
-   > [!answer] Принесіть, будь ласка, ще хліб.
+   > [!answer] Принесіть, будь ласка, ще хліб
    > (Please bring more bread.) [5 words]
 
 5. окремо / будь / рахунок / ласка
-   > [!answer] Рахунок окремо, будь ласка.
+   > [!answer] Рахунок окремо, будь ласка
    > (Check separately, please.) [4 words]
 
 6. все / це
-   > [!answer] Це все.
+   > [!answer] Це все
    > (That's everything.) [2 words]
 
 7. дуже / було / дякую / смачно
-   > [!answer] Дякую, було дуже смачно!
+   > [!answer] Дякую, було дуже смачно
    > (Thank you, it was very delicious!) [4 words]
 
 8. чи / разом / окремо / ?
-   > [!answer] Разом чи окремо?
+   > [!answer] Разом чи окремо
    > [!answer-alt] Окремо чи разом?
    > (Together or separately?) [3 words]
 
 9. достатньо / це
-   > [!answer] Це достатньо.
+   > [!answer] Це достатньо
    > (That's enough.) [2 words]
 
 10. можна / меню / ?
-    > [!answer] Можна меню?
+    > [!answer] Можна меню
     > (Can I have a menu?) [2 words]
 
 11. ще / щось / ?
-    > [!answer] Ще щось?
+    > [!answer] Ще щось
     > (Anything else?) [2 words]
 
 12. ласка / будь / воду / принесіть
-    > [!answer] Принесіть, будь ласка, воду.
+    > [!answer] Принесіть, будь ласка, воду
     > (Please bring water.) [4 words]
 
 ## fill-in: Polite vs Direct
@@ -518,51 +520,51 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
 > Choose the more polite option for each situation.
 
 1. You want coffee. ___ (What should you say?)
-   > [!answer] Я візьму каву, будь ласка.
+   > [!answer] Я візьму каву, будь ласка
    > [!options] Я хочу каву! | Я візьму каву, будь ласка. | Дайте мені каву! | Каву!
 
 2. You need the menu. ___ (What's the polite way?)
-   > [!answer] Можна меню?
+   > [!answer] Можна меню
    > [!options] Дайте меню! | Меню! | Можна меню? | Я хочу меню!
 
 3. You want more bread. ___ (How do you ask?)
-   > [!answer] Принесіть, будь ласка, ще хліб.
+   > [!answer] Принесіть, будь ласка, ще хліб
    > [!options] Хліб! | Дайте хліб! | Я хочу хліб! | Принесіть, будь ласка, ще хліб.
 
 4. You're ready for the check. ___
-   > [!answer] Рахунок, будь ласка.
+   > [!answer] Рахунок, будь ласка
    > [!options] Рахунок! | Дайте рахунок! | Рахунок, будь ласка. | Я хочу рахунок!
 
 5. You want to try something. ___
-   > [!answer] Можна спробувати?
+   > [!answer] Можна спробувати
    > [!options] Я хочу спробувати! | Дайте спробувати! | Можна спробувати? | Спробую!
 
 6. You want to thank the waiter. ___
-   > [!answer] Дякую, було дуже смачно!
+   > [!answer] Дякую, було дуже смачно
    > [!options] Добре. | Нормально. | Дякую, було дуже смачно! | Так.
 
 7. The waiter asks "Ще щось?" You're done. ___
-   > [!answer] Ні, це все. Дякую.
+   > [!answer] Ні, це все. Дякую
    > [!options] Ні! | Все! | Достатньо! | Ні, це все. Дякую.
 
 8. You want to split the check. ___
-   > [!answer] Рахунок окремо, будь ласка.
+   > [!answer] Рахунок окремо, будь ласка
    > [!options] Окремо! | Рахунок окремо, будь ласка. | Платимо окремо! | Я плачу окремо!
 
 9. You want another coffee. ___
-   > [!answer] Ще одну каву, будь ласка.
+   > [!answer] Ще одну каву, будь ласка
    > [!options] Ще каву! | Я хочу ще каву! | Ще одну каву, будь ласка. | Каву ще раз!
 
 10. You want to know the recommendation. ___
-    > [!answer] Що порекомендуєте?
+    > [!answer] Що порекомендуєте
     > [!options] Що тут смачне? | Що мені взяти? | Що порекомендуєте? | Що маєте?
 
 11. You're satisfied with the service. ___
-    > [!answer] Дякую за обслуговування!
+    > [!answer] Дякую за обслуговування
     > [!options] Добре. | Так. | Дякую за обслуговування! | Нормально.
 
 12. You want to thank for good service. ___
-    > [!answer] Дякую за обслуговування!
+    > [!answer] Дякую за обслуговування
     > [!options] Добре! | Дякую за обслуговування! | Нормально! | Гаразд!
 
 ## quiz: Café Situations
@@ -653,7 +655,7 @@ Tipping is becoming more common in Ukraine, especially in cities. 10% is standar
     - [ ] Тірамісу
     > Київський торт (Kyiv cake) is the specialty!
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

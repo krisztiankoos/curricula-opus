@@ -1,4 +1,5 @@
 ---
+
 module: a1-14
 title: "Mine and Yours"
 subtitle: "Possessive Pronouns in Ukrainian"
@@ -300,7 +301,7 @@ Remember from Module 04 that Ukrainian has **ти** (informal you) and **ви** 
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned how to show possession in Ukrainian using two types of possessive pronouns:
 
@@ -317,7 +318,7 @@ You now know:
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Possessive Forms
 > Match each noun with the correct form of "мій" (my).
@@ -565,65 +566,65 @@ You now know:
 > Put the words in the correct order.
 
 1. книга / Це / моя
-   > [!answer] Це моя книга.
+   > [!answer] Це моя книга
    > (This is my book.) [3 words]
 
 2. телефон / твій / Де
-   > [!answer] Де твій телефон?
+   > [!answer] Де твій телефон
    > (Where is your phone?) [3 words]
 
 3. вікно / Наше / велике
-   > [!answer] Наше вікно велике.
+   > [!answer] Наше вікно велике
    > (Our window is big.) [3 words]
 
 4. машина / Це / його
-   > [!answer] Це його машина.
+   > [!answer] Це його машина
    > (This is his car.) [3 words]
 
 5. студентка / сестра / Її
-   > [!answer] Її сестра студентка.
+   > [!answer] Її сестра студентка
    > (Her sister is a student.) [3 words]
 
 6. друзі / Їхні / тут
-   > [!answer] Їхні друзі тут.
+   > [!answer] Їхні друзі тут
    > (Their friends are here.) [3 words]
 
 7. батьки / ваші / Де
-   > [!answer] Де ваші батьки?
+   > [!answer] Де ваші батьки
    > (Where are your parents?) [3 words]
 
 8. дім / наш / Чий / це
-   > [!answer] Чий це наш дім?
+   > [!answer] Чий це наш дім
    > (Wait — this is a trick! Correct: Це наш дім.)
    > Actually: Це наш дім. [3 words]
 
 9. цікава / Моя / робота
-   > [!answer] Моя робота цікава.
+   > [!answer] Моя робота цікава
    > (My work is interesting.) [3 words]
 
 10. життя / його / Це
-    > [!answer] Це його життя.
+    > [!answer] Це його життя
     > (This is his life.) [3 words]
 
 11. гарне / Твоє / місто
-    > [!answer] Твоє місто гарне.
+    > [!answer] Твоє місто гарне
     > (Your city is beautiful.) [3 words]
 
 12. речі / це / Чиї / їхні
-    > [!answer] Чиї це їхні речі?
+    > [!answer] Чиї це їхні речі
     > (Wait — another trick! Correct: Це їхні речі.)
     > Actually: Це їхні речі. [3 words]
 
 13. там / стіл / Мій
-    > [!answer] Мій стіл там.
+    > [!answer] Мій стіл там
     > (My table is there.) [3 words]
 
 14. чиста / Наша / кімната
-    > [!answer] Наша кімната чиста.
+    > [!answer] Наша кімната чиста
     > (Our room is clean.) [3 words]
 
 15. слово / ваше / Це
-    > [!answer] Це ваше слово.
+    > [!answer] Це ваше слово
     > (This is your word.) [3 words]
 
 ## group-sort: Інваріантні vs Змінні
@@ -733,7 +734,7 @@ You now know:
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

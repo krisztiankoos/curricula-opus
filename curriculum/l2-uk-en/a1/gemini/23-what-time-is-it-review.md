@@ -1,9 +1,23 @@
 # Audit Report: 23-what-time-is-it.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Participle used before B1: 'названий'
+  - FIX: Participles not allowed until B1. Use relative clauses or simple sentences.
+- **[GRAMMAR]** Participle used before B1: 'названий'
+  - FIX: Participles not allowed until B1. Use relative clauses or simple sentences.
+- **[GRAMMAR]** Participle used before B1: 'названий'
+  - FIX: Participles not allowed until B1. Use relative clauses or simple sentences.
+
+## Recommendation
+**📝 UPDATE** (severity 25/100)
+
+- 3 pedagogical violations (minor)
+- 3 grammar-level violations (fundamental)
 
 ## Gates
-- **Words:** ✅ 1114/750
+- **Words:** ⚠️ 2072/750 (>1750 may be too long)
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,19 +27,13 @@
 - **Vocab:** ✅ 40/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 3 violations
 - **Immersion:** 🇺🇦 44.8% (target 35-55% (M23))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (9 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **What Time Is It?** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 37 | Included in Core |
 | **Grammar** | ⚪️ | 55 | Skipped |
 | **Telling Time** | ⚪️ | 149 | Skipped |

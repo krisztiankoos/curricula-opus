@@ -1,4 +1,5 @@
 ---
+
 module: a1-09
 title: "Food & Drinks"
 subtitle: "Ukrainian Cuisine and Meal Vocabulary"
@@ -330,7 +331,7 @@ Today, Ukrainian food culture is experiencing a renaissance. Chefs are reviving 
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -352,7 +353,7 @@ In Module 10, you'll review everything you've learned in Modules 1-9. You're com
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Ukrainian Cuisine Knowledge
 
@@ -664,40 +665,40 @@ In Module 10, you'll review everything you've learned in Modules 1-9. You're com
 > Put the words in order to make correct sentences about food.
 
 1. люблю / Я / борщ
-   > [!answer] Я люблю борщ.
+   > [!answer] Я люблю борщ
    > (I love borshch.)
 
 2. смачний / Це / хліб
-   > [!answer] Це смачний хліб.
+   > [!answer] Це смачний хліб
    > (This is tasty bread.)
 
 3. п'є / Вона / каву
-   > [!answer] Вона п'є каву.
+   > [!answer] Вона п'є каву
    > (She drinks coffee.)
 
 4. їмо / Ми / вареники
-   > [!answer] Ми їмо вареники.
+   > [!answer] Ми їмо вареники
    > (We eat varenyky.)
 
 5. снідаю / Я / щоранку
-   > [!answer] Я снідаю щоранку.
+   > [!answer] Я снідаю щоранку
    > (I have breakfast every morning.)
 
 6. їсть / Він / м'ясо
-   > [!answer] Він їсть м'ясо.
+   > [!answer] Він їсть м'ясо
    > (He eats meat.)
 
 7. любить / Вона / овочі
-   > [!answer] Вона любить овочі.
+   > [!answer] Вона любить овочі
    > (She loves vegetables.)
 
 8. п'ють / Вони / молоко
-   > [!answer] Вони п'ють молоко.
+   > [!answer] Вони п'ють молоко
    > (They drink milk.)
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

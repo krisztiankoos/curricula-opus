@@ -27,24 +27,24 @@ SECTION_ALIASES = {
 
     # End sections (fixed order: Summary → Activities → Self-Assessment → External → Vocabulary)
     'summary': [
-        '# Summary', '# Підсумок', '# Підсумок (Summary)',
-        '# Резюме', '# Module Summary'
+        '## Summary', '## Підсумок', '## Підсумок (Summary)',
+        '## Резюме', '## Module Summary'
     ],
     'activities': [
-        '# Activities', '# Вправи', '# Вправи (Activities)',
-        '# Практичні вправи', '# Exercises'
+        '## Activities', '## Вправи', '## Вправи (Activities)',
+        '## Практичні вправи', '## Exercises'
     ],
     'self_assessment': [
-        '# Self-Assessment', '# Self-Assessment Rubric', '# Самооцінка',
-        '# Самооцінка A1 (Final Self-Assessment)', '# Final Self-Assessment'
+        '## Self-Assessment', '## Self-Assessment Rubric', '## Самооцінка',
+        '## Самооцінка A1 (Final Self-Assessment)', '## Final Self-Assessment'
     ],
     'external': [
-        '# External Resources', '# Зовнішні ресурси', '# Resources',
-        '# Further Reading', '# Додаткові матеріали'
+        '## External Resources', '## Зовнішні ресурси', '## Resources',
+        '## Further Reading', '## Додаткові матеріали'
     ],
     'vocabulary': [
-        '# Vocabulary', '# Словник', '# Vocab',
-        '# Лексика', '# Word List'
+        '## Vocabulary', '## Словник', '## Vocab',
+        '## Лексика', '## Word List'
     ],
 }
 

@@ -532,7 +532,7 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
    > There is a big queue at the post office.
 
 10. Ваша / решта — / двадцять / гривень
-    > [!answer] Ваша решта — двадцять гривень
+    > [!answer] Ваша решта двадцять гривень
     > Your change is 20 hryvnias.
 
 11. Я / люблю / купувати / на / ринку

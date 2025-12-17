@@ -1,4 +1,5 @@
 ---
+
 module: a1-06
 title: "The Living Verb I"
 subtitle: "Present Tense Class I (-ати/-яті)"
@@ -211,7 +212,7 @@ I have breakfast. Then I work. I have lunch. I walk to the park. I read a book. 
 
 ---
 
-# Summary
+## Summary
 
 You've unlocked **Class I verbs** (-ати/-яти)! You can now:
 
@@ -226,7 +227,7 @@ You've unlocked **Class I verbs** (-ати/-яти)! You can now:
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Infinitive to English
 > Match the Ukrainian infinitive with its English meaning.
@@ -569,40 +570,40 @@ You've unlocked **Class I verbs** (-ати/-яти)! You can now:
 > Put the words in order to make correct sentences.
 
 1. читаю / Я / книгу
-   > [!answer] Я читаю книгу.
+   > [!answer] Я читаю книгу
    > (I read a book.)
 
 2. працює / Він / добре
-   > [!answer] Він працює добре.
+   > [!answer] Він працює добре
    > (He works well.)
 
 3. говорить / Вона / українською
-   > [!answer] Вона говорить українською.
+   > [!answer] Вона говорить українською
    > (She speaks Ukrainian.)
 
 4. граємо / Ми / футбол
-   > [!answer] Ми граємо футбол.
+   > [!answer] Ми граємо футбол
    > (We play football.)
 
 5. слухаєте / Ви / музику
-   > [!answer] Ви слухаєте музику.
+   > [!answer] Ви слухаєте музику
    > (You listen to music.)
 
 6. думають / Вони / багато
-   > [!answer] Вони думають багато.
+   > [!answer] Вони думають багато
    > (They think a lot.)
 
 7. пишеш / Ти / листа
-   > [!answer] Ти пишеш листа.
+   > [!answer] Ти пишеш листа
    > (You write a letter.)
 
 8. співає / Вона / пісню
-   > [!answer] Вона співає пісню.
+   > [!answer] Вона співає пісню
    > (She sings a song.)
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

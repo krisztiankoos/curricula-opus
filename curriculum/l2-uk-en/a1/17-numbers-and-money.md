@@ -1,4 +1,5 @@
 ---
+
 module: a1-17
 title: "Numbers & Money"
 subtitle: "Counting and Shopping in Ukraine"
@@ -285,7 +286,7 @@ But don't expect it - Ukrainians respect fair pricing!
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -300,7 +301,7 @@ You can now count, ask prices, and shop confidently in Ukraine!
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Numbers and Words
 
@@ -526,51 +527,51 @@ You can now count, ask prices, and shop confidently in Ukraine!
 > Put the words in the correct order to form sentences.
 
 1. коштує / Скільки / хліб / ?
-   > [!answer] Скільки коштує хліб?
+   > [!answer] Скільки коштує хліб
    > (How much does bread cost?)
 
 2. гривень / Це / десять / коштує / .
-   > [!answer] Це коштує десять гривень.
+   > [!answer] Це коштує десять гривень
    > (This costs ten hryvnias.)
 
 3. У / є / гроші / мене / .
-   > [!answer] У мене є гроші.
+   > [!answer] У мене є гроші
    > (I have money.)
 
 4. дорого / Це / !
-   > [!answer] Це дорого!
+   > [!answer] Це дорого
    > (That's expensive!)
 
 5. дешево / дуже / Це / .
-   > [!answer] Це дуже дешево.
+   > [!answer] Це дуже дешево
    > (This is very cheap.)
 
 6. каса / Де / ?
-   > [!answer] Де каса?
+   > [!answer] Де каса
    > (Where is the cashier?)
 
 7. платити / Можна / карткою / ?
-   > [!answer] Можна платити карткою?
+   > [!answer] Можна платити карткою
    > (Can I pay by card?)
 
 8. гривень / двадцять / П'ять / коштує / .
-   > [!answer] П'ять коштує двадцять гривень.
+   > [!answer] П'ять коштує двадцять гривень
    > (Five costs twenty hryvnias.) [Note: implied subject]
 
 9. Одна / будь / кава / ласка / , / .
-   > [!answer] Одна кава, будь ласка.
+   > [!answer] Одна кава, будь ласка
    > (One coffee, please.)
 
 10. студентів / П'ятнадцять / класі / у / .
-    > [!answer] П'ятнадцять студентів у класі.
+    > [!answer] П'ятнадцять студентів у класі
     > (Fifteen students in the class.)
 
 11. гривні / Дві / решта / - / .
-    > [!answer] Дві гривні - решта.
+    > [!answer] Дві гривні - решта
     > (Two hryvnias - change.)
 
 12. сто / Всього / гривень / .
-    > [!answer] Всього сто гривень.
+    > [!answer] Всього сто гривень
     > (Total one hundred hryvnias.)
 
 ## fill-in: Shopping Dialogue
@@ -718,7 +719,7 @@ You can now count, ask prices, and shop confidently in Ukraine!
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

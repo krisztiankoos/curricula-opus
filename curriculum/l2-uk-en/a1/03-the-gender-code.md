@@ -1,4 +1,5 @@
 ---
+
 module: a1-03
 title: "The Gender Code"
 subtitle: "Unlocking Ukrainian Gender Patterns"
@@ -200,7 +201,7 @@ This pattern consistency makes Ukrainian **easier to learn** than languages with
 
 ---
 
-# Summary
+## Summary
 
 **You've unlocked the Ukrainian Gender Code!**
 
@@ -222,7 +223,7 @@ Gender affects adjectives, pronouns, and case endings. Master gender now, and ev
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Gender Recognition
 
@@ -557,40 +558,40 @@ Gender affects adjectives, pronouns, and case endings. Master gender now, and ev
 > Put the words in order to make correct sentences about gender.
 
 1. це / Що / ?
-   > [!answer] Що це?
+   > [!answer] Що це
    > (What is this?)
 
 2. книга / Це
-   > [!answer] Це книга.
+   > [!answer] Це книга
    > (This is a book.)
 
 3. вікно / Це / велике
-   > [!answer] Це велике вікно.
+   > [!answer] Це велике вікно
    > (This is a big window.)
 
 4. стіл / новий / Це
-   > [!answer] Це новий стіл.
+   > [!answer] Це новий стіл
    > (This is a new table.)
 
 5. маленька / Це / кімната
-   > [!answer] Це маленька кімната.
+   > [!answer] Це маленька кімната
    > (This is a small room.)
 
 6. місто / красиве / Це
-   > [!answer] Це красиве місто.
+   > [!answer] Це красиве місто
    > (This is a beautiful city.)
 
 7. хліб / смачний / Це
-   > [!answer] Це смачний хліб.
+   > [!answer] Це смачний хліб
    > (This is tasty bread.)
 
 8. вода / холодна / Це
-   > [!answer] Це холодна вода.
+   > [!answer] Це холодна вода
    > (This is cold water.)
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

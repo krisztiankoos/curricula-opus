@@ -1,4 +1,5 @@
 ---
+
 module: a1-22
 title: "Tomorrow - Future Tense"
 subtitle: "Talking About What Will Happen"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can use future time expressions correctly"
 vocabulary_count: 25
 ---
+
 # Tomorrow - Future Tense
 
 > [!summary] Learning Goals
@@ -34,7 +36,7 @@ vocabulary_count: 25
 
 ---
 
-# Grammar
+## Grammar
 
 ## The Compound Future Tense
 
@@ -147,7 +149,7 @@ Ukrainian uses **буду** (future of "to be") + infinitive to form the compoun
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Making Plans
 >
@@ -177,7 +179,7 @@ Ukrainian uses **буду** (future of "to be") + infinitive to form the compoun
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Planning the Weekend
 >
@@ -226,7 +228,7 @@ Ukrainian uses **буду** (future of "to be") + infinitive to form the compoun
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися говорити про майбутнє! (You've learned to talk about the future!)
 
@@ -258,7 +260,7 @@ Ukrainian uses **буду** (future of "to be") + infinitive to form the compoun
 
 **Наступний урок:** Котра година? Дні тижня та місяці!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Time Expressions
 
@@ -491,22 +493,22 @@ Select the best translation.
 Put the words in the correct order.
 
 1. буду / я / завтра / працювати
-   > [!answer] Я буду працювати завтра.
+   > [!answer] Я буду працювати завтра
 
 2. вивчати / будемо / ми / українську
-   > [!answer] Ми будемо вивчати українську.
+   > [!answer] Ми будемо вивчати українську
 
 3. буде / вона / готувати / вечерю / скоро
-   > [!answer] Вона буде готувати вечерю скоро.
+   > [!answer] Вона буде готувати вечерю скоро
 
 4. будуть / вони / грати / футбол / у
-   > [!answer] Вони будуть грати у футбол.
+   > [!answer] Вони будуть грати у футбол
 
 5. ви / робити / будете / що / завтра / ?
-   > [!answer] Що ви будете робити завтра?
+   > [!answer] Що ви будете робити завтра
 
 6. планую / я / поїхати / Київ / до
-   > [!answer] Я планую поїхати до Києва.
+   > [!answer] Я планую поїхати до Києва
 
 ---
 
@@ -552,7 +554,7 @@ Decide if each statement is true or false.
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1099/1000
+- **Words:** ⚠️ 2422/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 35.5% (target 35-50% (A2.1))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 304 | Included in Core |
+| **Warm-up** | ✅ | 304 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Two Types of Future** | ⚪️ | 181 | Skipped |
 | **Comparing the Two Futures** | ⚪️ | 29 | Skipped |

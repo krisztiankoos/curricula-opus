@@ -1,9 +1,20 @@
 # Audit Report: 20-checkpoint-navigation.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Dative case used at A1: 'Львові'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Instrumental case used at A1: 'з молоком'
+  - FIX: Instrumental case not allowed until A2 (M36+). Restructure sentence.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 2 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ⚠️ 2339/750 (>1750 may be too long)
+- **Words:** ⚠️ 3844/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,20 +24,13 @@
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 2 violations
 - **Immersion:** 🇺🇦 32.2% (target 25-40% (M20))
-
-## MDX VALIDATION
-### Warnings
-- ⚠️ Vocabulary words possibly missing: можна, далеко, дістатися, поверніть, вокзалу
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Checkpoint - Navigation** | ➖ | 0 | Excluded Type |
 | **Warm-up** | ✅ | 245 | Included in Core |
 | **Presentation** | ✅ | 1136 | Included in Core |
 | **Practice** | ⚪️ | 207 | Skipped |

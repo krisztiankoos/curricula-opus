@@ -81,9 +81,9 @@ def evaluate_vocab(count: int, target: int) -> GateResult:
 def evaluate_structure(has_summary: bool, has_vocab: bool, has_vocab_table: bool) -> GateResult:
     """Evaluate structure gate."""
     if not has_summary:
-        return GateResult('FAIL', '❌', "Missing '# Summary'")
+        return GateResult('FAIL', '❌', "Missing '## Summary'")
     if not has_vocab:
-        return GateResult('FAIL', '❌', "Missing '# Vocabulary'")
+        return GateResult('FAIL', '❌', "Missing '## Vocabulary'")
     if not has_vocab_table:
         return GateResult('FAIL', '❌', "Missing Vocab Table")
     return GateResult('PASS', '✅', "Valid Structure")

@@ -1,4 +1,5 @@
 ---
+
 module: a1-02
 title: "The Cyrillic Code II"
 subtitle: "The Final 14 Letters"
@@ -27,6 +28,7 @@ objectives:
   - "Learner can recognize common italic letter variants"
 vocabulary_count: 35
 ---
+
 # The Cyrillic Code II
 
 ## Warm-up
@@ -247,7 +249,7 @@ You know every single one now. Congratulations!
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned the final 14 letters of Ukrainian Cyrillic:
 
@@ -267,7 +269,7 @@ Next module, we'll start learning about noun gender and why it matters!
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Letter Sounds
 > Match each letter to its sound.
@@ -580,7 +582,7 @@ Next module, we'll start learning about noun gender and why it matters!
 - ф
 - х
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

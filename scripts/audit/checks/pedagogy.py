@@ -84,7 +84,7 @@ def check_ipa_validation(content: str) -> list[dict]:
     violations = []
 
     vocab_match = re.search(
-        r'^#\s*(Vocabulary|Словник)\s*\n(.*?)(?=\n#\s|\Z)',
+        r'^##\s*(Vocabulary|Словник)\s*\n(.*?)(?=\n##\s|\Z)',
         content, re.MULTILINE | re.DOTALL
     )
     if not vocab_match:

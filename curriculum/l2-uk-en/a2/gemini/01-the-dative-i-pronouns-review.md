@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1820/1000
+- **Words:** ⚠️ 3643/1000 (>2000 may be too long)
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 43.6% (target 35-50% (A2.1))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Давальний відмінок I — Займенники** | ⚪️ | 0 | Skipped |
 | **Introduction** | ✅ | 160 | Included in Core |
 | **Вступ** | ⚪️ | 143 | Skipped |
 | **Presentation** | ✅ | 462 | Included in Core |

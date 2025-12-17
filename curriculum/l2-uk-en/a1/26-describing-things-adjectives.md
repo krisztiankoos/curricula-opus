@@ -1,4 +1,5 @@
 ---
+
 module: a1-26
 title: "Describing Things - Adjectives"
 subtitle: "Adjective Agreement in Gender and Number"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can form plural adjective forms"
 vocabulary_count: 36
 ---
+
 # Describing Things - Adjectives
 
 ## Warm-up
@@ -37,7 +39,7 @@ vocabulary_count: 36
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -143,7 +145,7 @@ Learning adjectives in pairs helps you remember them better:
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Опис предметів (Describing Objects)
 >
@@ -183,7 +185,7 @@ Learning adjectives in pairs helps you remember them better:
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Shopping
 >
@@ -247,7 +249,7 @@ Learning adjectives in pairs helps you remember them better:
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися описувати речі прикметниками! (You've learned to describe things with adjectives!)
 
@@ -263,7 +265,7 @@ Learning adjectives in pairs helps you remember them better:
 
 **Наступний урок:** Кольори та одяг!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Антоніми (Antonym Pairs)
 
@@ -494,22 +496,22 @@ Learning adjectives in pairs helps you remember them better:
 Розташуйте слова у правильному порядку.
 
 1. будинок / великий / це
-   > [!answer] Це великий будинок.
+   > [!answer] Це великий будинок
 
 2. нова / машина / у мене
-   > [!answer] У мене нова машина.
+   > [!answer] У мене нова машина
 
 3. місто / красиве / Київ
-   > [!answer] Київ — красиве місто.
+   > [!answer] Київ красиве місто
 
 4. дорогий / телефон / новий
-   > [!answer] Новий телефон дорогий.
+   > [!answer] Новий телефон дорогий
 
 5. добрі / вони / люди
-   > [!answer] Вони добрі люди.
+   > [!answer] Вони добрі люди
 
 6. важливе / це / питання
-   > [!answer] Це важливе питання.
+   > [!answer] Це важливе питання
 
 
 ---
@@ -545,7 +547,7 @@ Learning adjectives in pairs helps you remember them better:
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -3,12 +3,12 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1742/750
+- **Words:** ⚠️ 2925/750 (>1750 may be too long)
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/3
+- **Engagement:** ✅ 6/3
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 47/20
 - **Structure:** ✅ Valid Structure
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 28.8% (target 25-40% (M18))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (9 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Food & Shopping** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 193 | Included in Core |
 | **Presentation** | ✅ | 422 | Included in Core |
 | **Practice** | ⚪️ | 369 | Skipped |

@@ -1,4 +1,5 @@
 ---
+
 module: a1-08
 title: "The Living Verb II"
 subtitle: "Class II Conjugation (-ити verbs)"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can form basic sentences with action verbs"
 vocabulary_count: 25
 ---
+
 # The Living Verb II
 
 ## Warm-up
@@ -233,7 +235,7 @@ Ukrainians use these constantly:
 
 ---
 
-# Summary
+## Summary
 
 You've now mastered **Class II verbs (-ити)**! Here's what you can do:
 
@@ -249,7 +251,7 @@ With Class I and Class II verbs combined, you can now express hundreds of action
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Class II or Class I?
 > Identify which conjugation class each verb belongs to.
@@ -639,7 +641,7 @@ With Class I and Class II verbs combined, you can now express hundreds of action
     - [ ] сплю
     > You "do" an exercise (роблю).
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -1,9 +1,30 @@
 # Audit Report: 19-at-the-cafe.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Dative case used at A1: 'мені'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'мені'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'мені'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Instrumental case used at A1: 'з молоком'
+  - FIX: Instrumental case not allowed until A2 (M36+). Restructure sentence.
+- **[GRAMMAR]** Instrumental case used at A1: 'з молоком'
+  - FIX: Instrumental case not allowed until A2 (M36+). Restructure sentence.
+- **[GRAMMAR]** Instrumental case used at A1: 'З цукром'
+  - FIX: Instrumental case not allowed until A2 (M36+). Restructure sentence.
+
+## Recommendation
+**📝 UPDATE** (severity 40/100)
+
+- Borderline case (severity 40/100)
+- 6 pedagogical violations (moderate)
+- 6 grammar-level violations (fundamental)
 
 ## Gates
-- **Words:** ✅ 1181/750
+- **Words:** ⚠️ 2561/750 (>1750 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,20 +34,13 @@
 - **Vocab:** ✅ 24/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 6 violations
 - **Immersion:** 🇺🇦 28.6% (target 25-40% (M19))
-
-## MDX VALIDATION
-### Warnings
-- ⚠️ Vocabulary words possibly missing: окремо, порекомендуєте, разом, принесіть, столик
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **At the Café** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 107 | Included in Core |
 | **Presentation** | ✅ | 455 | Included in Core |
 | **Practice** | ⚪️ | 272 | Skipped |

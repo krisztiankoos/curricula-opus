@@ -1,4 +1,5 @@
 ---
+
 module: a1-32
 title: "My Family"
 subtitle: "Родина"
@@ -22,6 +23,7 @@ objectives:
   - "Learner can use possessives with family terms"
 vocabulary_count: 35
 ---
+
 # My Family
 
 ## Warm-up
@@ -39,7 +41,7 @@ vocabulary_count: 35
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -144,7 +146,7 @@ When calling someone directly, Ukrainian changes the word ending. This is the **
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Моя сім'я (My Family)
 >
@@ -175,7 +177,7 @@ When calling someone directly, Ukrainian changes the word ending. This is the **
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Розкажи про свою сім'ю (Tell Me About Your Family)
 >
@@ -244,7 +246,7 @@ When calling someone directly, Ukrainian changes the word ending. This is the **
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися говорити про свою родину! (You've learned to talk about family!)
 
@@ -262,7 +264,7 @@ When calling someone directly, Ukrainian changes the word ending. This is the **
 
 **Наступний урок:** Свята та традиції!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Family Members
 
@@ -571,40 +573,40 @@ Choose the correct answer.
 Put the words in the correct order.
 
 1. є / у мене / брат
-   > [!answer] У мене є брат.
+   > [!answer] У мене є брат
 
 2. маму / мою / Олена / звати
-   > [!answer] Мою маму звати Олена.
+   > [!answer] Мою маму звати Олена
 
 3. сім'я / у мене / велика
-   > [!answer] У мене велика сім'я.
+   > [!answer] У мене велика сім'я
 
 4. старша / моя / сестра
-   > [!answer] Моя сестра старша.
+   > [!answer] Моя сестра старша
 
 5. в Києві / батьки / живуть / мої
-   > [!answer] Мої батьки живуть в Києві.
+   > [!answer] Мої батьки живуть в Києві
 
 6. одружений / він
-   > [!answer] Він одружений.
+   > [!answer] Він одружений
 
 7. дітей / у них / двоє
-   > [!answer] У них двоє дітей.
+   > [!answer] У них двоє дітей
 
 8. бабуся / добра / моя / дуже
-   > [!answer] Моя бабуся дуже добра.
+   > [!answer] Моя бабуся дуже добра
 
 9. брат / чоловік / це / мій / і
-   > [!answer] Це мій брат і чоловік.
+   > [!answer] Це мій брат і чоловік
 
 10. дочка / у неї / є
-   > [!answer] У неї є дочка.
+   > [!answer] У неї є дочка
 
 11. тато / працює / мій / в банку
-   > [!answer] Мій тато працює в банку.
+   > [!answer] Мій тато працює в банку
 
 12. звати / тата / як / твого
-   > [!answer] Як звати твого тата?
+   > [!answer] Як звати твого тата
 
 
 ---
@@ -636,7 +638,7 @@ Is this true or false?
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

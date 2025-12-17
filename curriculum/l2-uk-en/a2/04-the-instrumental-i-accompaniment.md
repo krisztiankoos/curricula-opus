@@ -624,27 +624,27 @@ The following activities will help you master Instrumental case endings through 
 > Put the words in the correct order.
 
 1. я / йду / в / кіно / з / другом
-   > [!answer] Я йду в кіно з другом.
+   > [!answer] Я йду в кіно з другом
    > (I'm going to the cinema with a friend.)
 
 2. вона / розмовляє / з / сестрою / по / телефону
-   > [!answer] Вона розмовляє з сестрою по телефону.
+   > [!answer] Вона розмовляє з сестрою по телефону
    > (She's talking with her sister on the phone.)
 
 3. ми / живемо / з / батьками / в / Києві
-   > [!answer] Ми живемо з батьками в Києві.
+   > [!answer] Ми живемо з батьками в Києві
    > (We live with our parents in Kyiv.)
 
 4. він / гуляє / з / собакою / в / парку
-   > [!answer] Він гуляє з собакою в парку.
+   > [!answer] Він гуляє з собакою в парку
    > (He's walking with the dog in the park.)
 
 5. я / п'ю / каву / з / молоком
-   > [!answer] Я п'ю каву з молоком.
+   > [!answer] Я п'ю каву з молоком
    > (I drink coffee with milk.)
 
 6. вона / познайомилася / з / хлопцем / на / вечірці
-   > [!answer] Вона познайомилася з хлопцем на вечірці.
+   > [!answer] Вона познайомилася з хлопцем на вечірці
    > (She met a guy at the party.)
 
 ## error-correction: Fix the Instrumental

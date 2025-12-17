@@ -1,4 +1,5 @@
 ---
+
 module: a1-31
 title: "Body & Health"
 subtitle: "At the Doctor's"
@@ -22,6 +23,7 @@ objectives:
   - "Learner can ask for medicine at a pharmacy"
 vocabulary_count: 30
 ---
+
 # Body & Health
 
 ## Warm-up
@@ -39,7 +41,7 @@ vocabulary_count: 30
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -109,7 +111,7 @@ vocabulary_count: 30
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Що болить? (What Hurts?)
 >
@@ -142,7 +144,7 @@ vocabulary_count: 30
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] У лікаря (At the Doctor's)
 >
@@ -214,7 +216,7 @@ vocabulary_count: 30
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -230,7 +232,7 @@ In this module, you learned:
 
 **Coming up:** Module 32 will teach you about family members!
 
-# Activities
+## Activities
 
 ## match-up: Body Parts
 
@@ -522,37 +524,37 @@ Match the Ukrainian word with its English meaning.
 > Put the words in the correct order.
 
 1. болить / у мене / голова
-   > [!answer] У мене болить голова.
+   > [!answer] У мене болить голова
 
 2. хворий / я
-   > [!answer] Я хворий.
+   > [!answer] Я хворий
 
 3. є / у вас / ліки
-   > [!answer] У вас є ліки?
+   > [!answer] У вас є ліки
 
 4. температура / у мене / висока
-   > [!answer] У мене висока температура.
+   > [!answer] У мене висока температура
 
 5. болять / зуби / у мене
-   > [!answer] У мене болять зуби.
+   > [!answer] У мене болять зуби
 
 6. застуда / у мене
-   > [!answer] У мене застуда.
+   > [!answer] У мене застуда
 
 7. допомогу / швидку / викличте
-   > [!answer] Викличте швидку допомогу!
+   > [!answer] Викличте швидку допомогу
 
 8. лікар / потрібен
-   > [!answer] Потрібен лікар.
+   > [!answer] Потрібен лікар
 
 9. аптеку / йду / я / в
-   > [!answer] Я йду в аптеку.
+   > [!answer] Я йду в аптеку
 
 10. болить / горло / у неї
-    > [!answer] У неї болить горло.
+    > [!answer] У неї болить горло
 
 11. таблетки / ось / ваші
-    > [!answer] Ось ваші таблетки.
+    > [!answer] Ось ваші таблетки
 
 ---
 
@@ -598,7 +600,7 @@ Match the Ukrainian word with its English meaning.
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

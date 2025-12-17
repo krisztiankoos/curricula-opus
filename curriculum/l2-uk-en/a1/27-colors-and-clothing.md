@@ -1,4 +1,5 @@
 ---
+
 module: a1-27
 title: "Colors & Clothing"
 subtitle: "Describing What You Wear"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can describe what someone is wearing"
 vocabulary_count: 30
 ---
+
 # Colors & Clothing
 
 ## Warm-up
@@ -35,7 +37,7 @@ vocabulary_count: 30
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -116,7 +118,7 @@ These words take **plural adjectives**:
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Опис одягу (Describing Clothes)
 >
@@ -149,7 +151,7 @@ These words take **plural adjectives**:
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Shopping for Clothes
 >
@@ -213,7 +215,7 @@ These words take **plural adjectives**:
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися називати кольори та одяг! (You've learned colors and clothing!)
 
@@ -229,7 +231,7 @@ These words take **plural adjectives**:
 
 **Наступний урок:** Прислівники — як описувати ДІЇ!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Колір і одяг
 
@@ -467,22 +469,22 @@ These words take **plural adjectives**:
 Розташуйте слова у правильному порядку.
 
 1. сорочка / біла / у мене
-   > [!answer] У мене біла сорочка.
+   > [!answer] У мене біла сорочка
 
 2. чорний / светр / мій
-   > [!answer] Мій светр чорний.
+   > [!answer] Мій светр чорний
 
 3. сині / штани / нові
-   > [!answer] Нові сині штани.
+   > [!answer] Нові сині штани
 
 4. червона / гарна / сукня
-   > [!answer] Гарна червона сукня.
+   > [!answer] Гарна червона сукня
 
 5. білі / кросівки / це
-   > [!answer] Це білі кросівки.
+   > [!answer] Це білі кросівки
 
 6. синя / куртка / його
-   > [!answer] Його куртка синя.
+   > [!answer] Його куртка синя
 
 
 ---
@@ -518,7 +520,7 @@ Is this true or false?
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

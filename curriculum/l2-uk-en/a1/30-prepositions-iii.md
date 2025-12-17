@@ -1,4 +1,5 @@
 ---
+
 module: a1-30
 title: "Prepositions III"
 subtitle: "Direction, Location & Origin"
@@ -22,6 +23,7 @@ objectives:
   - "Learner can use з/від for origin"
 vocabulary_count: 20
 ---
+
 # Prepositions III
 
 ## Warm-up
@@ -37,7 +39,7 @@ vocabulary_count: 20
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -129,7 +131,7 @@ For **origin** (where something is FROM), use **Genitive** with **з** or **ві
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Де vs Куди (Location vs Direction)
 >
@@ -160,7 +162,7 @@ For **origin** (where something is FROM), use **Genitive** with **з** or **ві
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Де ти? (Where Are You?)
 >
@@ -240,7 +242,7 @@ For **origin** (where something is FROM), use **Genitive** with **з** or **ві
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися говорити про напрямок і місце! (You've learned direction and location!)
 
@@ -257,7 +259,7 @@ For **origin** (where something is FROM), use **Genitive** with **з** or **ві
 
 **Наступний урок:** Частини тіла та здоров'я!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Question Words
 
@@ -545,40 +547,40 @@ Choose the correct preposition.
 Put the words in the correct order.
 
 1. ти / де / зараз
-   > [!answer] Де ти зараз?
+   > [!answer] Де ти зараз
 
 2. йду / я / в / магазин
-   > [!answer] Я йду в магазин.
+   > [!answer] Я йду в магазин
 
 3. з / я / України
-   > [!answer] Я з України.
+   > [!answer] Я з України
 
 4. куди / йдеш / ти
-   > [!answer] Куди ти йдеш?
+   > [!answer] Куди ти йдеш
 
 5. додому / йде / він
-   > [!answer] Він йде додому.
+   > [!answer] Він йде додому
 
 6. лікаря / йду / до / я
-   > [!answer] Я йду до лікаря.
+   > [!answer] Я йду до лікаря
 
 7. від / це / мами / подарунок
-   > [!answer] Це подарунок від мами.
+   > [!answer] Це подарунок від мами
 
 8. вдома / вона / зараз
-   > [!answer] Вона зараз вдома.
+   > [!answer] Вона зараз вдома
 
 9. прямо / потім / ідіть / праворуч
-   > [!answer] Ідіть прямо, потім праворуч.
+   > [!answer] Ідіть прямо, потім праворуч
 
 10. аптека / навпроти / банку
-   > [!answer] Аптека навпроти банку.
+   > [!answer] Аптека навпроти банку
 
 11. далеко / аеропорт
-   > [!answer] Аеропорт далеко.
+   > [!answer] Аеропорт далеко
 
 12. ти / звідки / родом
-   > [!answer] Звідки ти родом?
+   > [!answer] Звідки ти родом
 
 
 ---
@@ -610,7 +612,7 @@ Is this true or false?
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

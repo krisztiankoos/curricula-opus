@@ -1,9 +1,20 @@
 # Audit Report: 26-describing-things-adjectives.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Subordinate clause marker at A1: 'в
+
+Що о'
+  - FIX: Complex sentences not allowed at A1. Use simple SVO sentences.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1051/750
+- **Words:** ⚠️ 1848/750 (>1750 may be too long)
 - **Activities:** ✅ 8/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,19 +24,13 @@
 - **Vocab:** ✅ 36/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 37.4% (target 35-55% (M26))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (8 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Describing Things - Adjectives** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 54 | Included in Core |
 | **Grammar** | ⚪️ | 57 | Skipped |
 | **Why Adjective Agreement Matters** | ✅ | 63 | Included in Core |

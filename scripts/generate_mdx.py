@@ -850,9 +850,9 @@ def mark_the_words_to_jsx(items: list[MarkTheWordsItem], title: str) -> str:
 
 def process_activities(body: str) -> str:
     """Convert activities section to JSX in-place, preserving document order."""
-    # Find Activities section - matches # Activities, # Вправи, # Вправи (Activities)
+    # Find Activities section - matches ## Activities, ## Вправи, ## Вправи (Activities)
     match = re.search(
-        r'(# (?:Activities|Вправи(?:\s*\(Activities\))?))\n([\s\S]*?)(?=\n# (?:Vocabulary|Словник|Summary|Підсумок|Self-Assessment|Самооцінка|External|Зовнішні)|\Z)',
+        r'(## (?:Activities|Вправи(?:\s*\(Activities\))?))\n([\s\S]*?)(?=\n## (?:Vocabulary|Словник|Summary|Підсумок|Self-Assessment|Самооцінка|External|Зовнішні)|\Z)',
         body
     )
 
@@ -1171,11 +1171,11 @@ description: "{escape_jsx(fm.get('subtitle', ''))}"
     # Remove duplicate H1 title
     processed = re.sub(r'^#\s+[^\n]+\n', '', processed, count=1)
 
-    # Convert Summary and Vocabulary to H2 for TOC
-    processed = re.sub(r'^# (Summary|Підсумок)', r'## 📋 \1', processed, flags=re.MULTILINE)
-    processed = re.sub(r'^# (Vocabulary|Словник)', r'## 📚 \1', processed, flags=re.MULTILINE)
-    processed = re.sub(r'^# (Self-Assessment|Самооцінка)', r'## ✅ \1', processed, flags=re.MULTILINE)
-    processed = re.sub(r'^# (External Resources?|Зовнішні ресурси)', r'## 🔗 \1', processed, flags=re.MULTILINE)
+    # Add emojis to H2 section headings for TOC
+    processed = re.sub(r'^## (Summary|Підсумок)', r'## 📋 \1', processed, flags=re.MULTILINE)
+    processed = re.sub(r'^## (Vocabulary|Словник)', r'## 📚 \1', processed, flags=re.MULTILINE)
+    processed = re.sub(r'^## (Self-Assessment|Самооцінка)', r'## ✅ \1', processed, flags=re.MULTILINE)
+    processed = re.sub(r'^## (External Resources?|Зовнішні ресурси)', r'## 🔗 \1', processed, flags=re.MULTILINE)
 
     # Build MDX
     parts = [frontmatter, imports, '', processed]

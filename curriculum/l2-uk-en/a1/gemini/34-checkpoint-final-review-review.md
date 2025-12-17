@@ -1,9 +1,35 @@
 # Audit Report: 34-checkpoint-final-review.md
 **Phase:** A1 | **Level:** A1 | **Pedagogy:** "PPP" | **Target:** 750
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Dative case used at A1: 'татові'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'готові'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'лікареві'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'Києві'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Dative case used at A1: 'Києві'
+  - FIX: Dative case not allowed until A2 (M31+). Restructure sentence.
+- **[GRAMMAR]** Subordinate clause marker at A1: 'якщо с'
+  - FIX: Complex sentences not allowed at A1. Use simple SVO sentences.
+- **[HEADING_LEVEL]** Multiple H1 headings: 'A1 Can-Do Checklist' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# A1 Can-Do Checklist' to '## A1 Can-Do Checklist'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Review Sections' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Review Sections' to '## Review Sections'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Самооцінка A1 (Final Self-Assessment)' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Самооцінка A1 (Final Self-Assessment)' to '## Самооцінка A1 (Final Self-Assessment)'
+
+## Recommendation
+**🔄 REWRITE** (severity 60/100)
+
+- 9 pedagogical violations (significant)
+- 6 grammar-level violations (fundamental)
 
 ## Gates
-- **Words:** ✅ 1088/750
+- **Words:** ⚠️ 2395/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -13,25 +39,18 @@
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 9 violations
 - **Immersion:** 🇺🇦 51.9% (target 35-55% (M34))
-
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Checkpoint: Final Review** | ➖ | 0 | Excluded Type |
 | **A1 Mastery Assessment** | ⚪️ | 64 | Skipped |
 | **A1 Can-Do Checklist** | ➖ | 0 | Excluded Type |
 | **Reading & Writing** | ✅ | 41 | Included in Core |
 | **Speaking & Listening** | ⚪️ | 44 | Skipped |
-| **Граматика (Grammar)** | ⚪️ | 50 | Skipped |
-| **Vocabulary** | ➖ | 0 | Excluded Type |
+| **Граматика (Grammar)** | ⚪️ | 74 | Skipped |
 | **Review Sections** | ✅ | 0 | Included in Core |
 | **Section 1: Self-Introduction** | ✅ | 58 | Included in Core |
 | **Section 2: My Family** | ⚪️ | 61 | Skipped |
@@ -52,3 +71,4 @@
 | **unjumble: Comprehensive Sentence Building** | 🎮 | 12 | Activity (12 items, min 6) |
 | **true-false: A1 Knowledge Check** | 🎮 | 12 | Activity (12 items, min 8) |
 | **Самооцінка A1 (Final Self-Assessment)** | ⚪️ | 311 | Skipped |
+| **Vocabulary** | ➖ | 0 | Excluded Type |

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 961/750
+- **Words:** ✅ 1728/750
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 45.6% (target 35-55% (M28))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (9 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Description: Adverbs** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 58 | Included in Core |
 | **Grammar** | ⚪️ | 55 | Skipped |
 | **How to Form Adverbs** | ⚪️ | 76 | Skipped |

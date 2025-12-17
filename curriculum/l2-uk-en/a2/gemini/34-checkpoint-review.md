@@ -1,9 +1,31 @@
 # Audit Report: 34-checkpoint.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Expressive" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Participle used before B1: 'вражений'
+  - FIX: Participles not allowed until B1. Use relative clauses or simple sentences.
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Review: Storytelling & Time' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Review: Storytelling & Time' to '## Review: Storytelling & Time'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Review: Reported Speech & Opinions' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Review: Reported Speech & Opinions' to '## Review: Reported Speech & Opinions'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time: The Great Adventure' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time: The Great Adventure' to '## Story Time: The Great Adventure'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Reviewing "Tricky" Words' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Reviewing "Tricky" Words' to '## Deep Dive: Reviewing "Tricky" Words'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Language in Action' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Language in Action' to '## Language in Action'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Study Tip: How to Review' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Study Tip: How to Review' to '## Study Tip: How to Review'
+
+## Recommendation
+**📝 UPDATE** (severity 45/100)
+
+- Borderline case (severity 45/100)
+- 7 pedagogical violations (significant)
 
 ## Gates
-- **Words:** ✅ 1232/1000
+- **Words:** ⚠️ 2151/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -13,11 +35,8 @@
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 7 violations
 - **Immersion:** 🇺🇦 53.0% (target 40-55% (A2.2))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

@@ -415,21 +415,21 @@ When visiting Ukrainian homes or discussing living situations, these phrases wil
 ## unjumble: Home Sentences
 
 1. сплю / спальні / Я / у
-   > [!answer] Я сплю у спальні.
+   > [!answer] Я сплю у спальні
 2. на / Книга / столі
-   > [!answer] Книга на столі.
+   > [!answer] Книга на столі
 3. диван / на / Сідай
-   > [!answer] Сідай на диван.
+   > [!answer] Сідай на диван
 4. квартиру / прибираю / Я
-   > [!answer] Я прибираю квартиру.
+   > [!answer] Я прибираю квартиру
 5. шафі / Одяг / у
-   > [!answer] Одяг у шафі.
+   > [!answer] Одяг у шафі
 6. полиці / на / Книги
-   > [!answer] Книги на полиці.
+   > [!answer] Книги на полиці
 7. переїжджаю / Я / завтра
-   > [!answer] Я переїжджаю завтра.
+   > [!answer] Я переїжджаю завтра
 8. чудова / Квартира / дуже
-   > [!answer] Квартира дуже чудова.
+   > [!answer] Квартира дуже чудова
 
 ## error-correction: Home Mistakes
 

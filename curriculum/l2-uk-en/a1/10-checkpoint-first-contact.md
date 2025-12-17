@@ -1,4 +1,5 @@
 ---
+
 module: a1-10
 title: "Checkpoint - First Contact"
 subtitle: "Review and consolidation of modules 1-9"
@@ -33,6 +34,7 @@ objectives:
   - "Apply basic zero copula patterns"
 vocabulary_count: 25
 ---
+
 # Checkpoint - First Contact
 
 **Вітаємо! Congratulations!** You've made it through the first nine modules of Ukrainian! You've unlocked the Cyrillic code, mastered noun genders, conjugated your first verbs, asked questions, and explored Ukrainian food. Now it's time to **consolidate** everything you've learned and check your progress.
@@ -431,7 +433,7 @@ After 10 modules, you have achieved:
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Reading Comprehension
 
@@ -978,7 +980,7 @@ After 10 modules, you have achieved:
     > [!answer] не
     > [!options] не | ні | ніколи | немає
 
-# Self-Assessment Rubric
+## Self-Assessment Rubric
 
 Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
 
@@ -1006,7 +1008,7 @@ Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidentl
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 **Review Vocabulary (25 key words from Modules 1-9):**
 

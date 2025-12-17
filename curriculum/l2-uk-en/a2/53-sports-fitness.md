@@ -517,7 +517,7 @@ A healthy mind in a healthy body!
    > What is the match score now?
 
 8. Мій / брат — / олімпійський / чемпіон
-   > [!answer] Мій брат — олімпійський чемпіон
+   > [!answer] Мій брат олімпійський чемпіон
    > My brother is an Olympic champion.
 
 9. Треба / багато / тренуватися
@@ -525,7 +525,7 @@ A healthy mind in a healthy body!
    > One needs to train a lot.
 
 10. Спорт — / це / моє / життя
-    > [!answer] Спорт — це моє життя
+    > [!answer] Спорт це моє життя
     > Sport is my life.
 
 11. Де / твої / нові / кросівки

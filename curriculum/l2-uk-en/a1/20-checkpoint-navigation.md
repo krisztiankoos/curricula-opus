@@ -1,4 +1,5 @@
 ---
+
 module: a1-20
 title: "Checkpoint - Navigation"
 subtitle: "Consolidation of Modules 11-19"
@@ -30,6 +31,7 @@ objectives:
   - "Learner can order food and pay in a restaurant"
 vocabulary_count: 20
 ---
+
 # Checkpoint - Navigation
 
 ## Warm-up
@@ -415,7 +417,7 @@ You've mastered navigation and basic communication. In Phase A1.3 (Modules 21-30
 
 ---
 
-# Summary
+## Summary
 
 In this checkpoint module, you reviewed:
 
@@ -446,7 +448,7 @@ Module 21 introduces the past tense - your first journey into talking about what
 
 ---
 
-# Activities
+## Activities
 
 ## fill-in: Case Mastery - Accusative
 > Choose the correct accusative form.
@@ -768,102 +770,102 @@ Module 21 introduces the past tense - your first journey into talking about what
 > Put the words in the correct order to form sentences.
 
 1. бачу / студента / Я / у / бібліотеці
-   > [!answer] Я бачу студента у бібліотеці.
+   > [!answer] Я бачу студента у бібліотеці
    > (I see a student in the library.)
 
 2. на / столі / Книга / лежить
-   > [!answer] Книга лежить на столі.
+   > [!answer] Книга лежить на столі
    > (The book is lying on the table.)
 
 3. немає / У / мене / часу / сьогодні
-   > [!answer] У мене немає часу сьогодні.
+   > [!answer] У мене немає часу сьогодні
    > (I don't have time today.)
 
 4. моя / Це / сумка / а / це / твоя
-   > [!answer] Це моя сумка, а це твоя.
+   > [!answer] Це моя сумка, а це твоя
    > (This is my bag, and this is yours.)
 
 5. у / Ми / живемо / Львові / центрі
-   > [!answer] Ми живемо у центрі Львова.
+   > [!answer] Ми живемо у центрі Львова
    > (We live in the center of Lviv.)
 
 6. каву / Я / хочу / без / цукру
-   > [!answer] Я хочу каву без цукру.
+   > [!answer] Я хочу каву без цукру
    > (I want coffee without sugar.)
 
 7. на / Вона / працює / роботі / зараз
-   > [!answer] Вона на роботі зараз.
+   > [!answer] Вона на роботі зараз
    > (She's at work now.)
 
 8. П'ять / гривень / коштує / квиток / один
-   > [!answer] Один квиток коштує п'ять гривень.
+   > [!answer] Один квиток коштує п'ять гривень
    > (One ticket costs five hryvnias.)
 
 9. купити / хочу / Я / хліб / і / молоко
-   > [!answer] Я хочу купити хліб і молоко.
+   > [!answer] Я хочу купити хліб і молоко
    > (I want to buy bread and milk.)
 
 10. у / немає / магазині / помідорів / Сьогодні
-    > [!answer] Сьогодні у магазині немає помідорів.
+    > [!answer] Сьогодні у магазині немає помідорів
     > (Today there are no tomatoes in the shop.)
 
 11. читає / книгу / Він / цікаву / дуже
-    > [!answer] Він читає дуже цікаву книгу.
+    > [!answer] Він читає дуже цікаву книгу
     > (He reads a very interesting book.)
 
 12. біля / метро / Станція / вокзалу
-    > [!answer] Станція метро біля вокзалу.
+    > [!answer] Станція метро біля вокзалу
     > (The metro station is near the train station.)
 
 ## unjumble: Real Dialogues - Navigation & Restaurant
 > Put the dialogue lines in the correct order to form natural conversations.
 
 1. до / як / дістатися / станції / метро
-   > [!answer] Як дістатися до станції метро?
+   > [!answer] Як дістатися до станції метро
    > (How do I get to the metro station?)
 
 2. прямо / Ідіть / наліво / потім / і
-   > [!answer] Ідіть прямо і потім наліво.
+   > [!answer] Ідіть прямо і потім наліво
    > (Go straight and then left.)
 
 3. ресторані / У / є / меню / українською
-   > [!answer] У ресторані є меню українською?
+   > [!answer] У ресторані є меню українською
    > (Is there a menu in Ukrainian in the restaurant?)
 
 4. будь ласка / Так / ось / звичайно
-   > [!answer] Так, звичайно. Ось, будь ласка.
+   > [!answer] Так, звичайно. Ось, будь ласка
    > (Yes, of course. Here you go, please.)
 
 5. візьму / борщ / Я / і / вареники
-   > [!answer] Я візьму борщ і вареники.
+   > [!answer] Я візьму борщ і вареники
    > (I'll take borsch and varenyky.)
 
 6. можна / рахунок / Можна / будь ласка
-   > [!answer] Можна рахунок, будь ласка?
+   > [!answer] Можна рахунок, будь ласка
    > (Can I have the check, please?)
 
 7. Скільки / коштує / все / разом
-   > [!answer] Скільки коштує все разом?
+   > [!answer] Скільки коштує все разом
    > (How much does everything cost together?)
 
 8. вісімдесят / Разом / гривень
-   > [!answer] Разом вісімдесят гривень.
+   > [!answer] Разом вісімдесят гривень
    > (Together eighty hryvnias.)
 
 9. картою / платити / Можна
-   > [!answer] Можна платити картою?
+   > [!answer] Можна платити картою
    > (Can I pay by card?)
 
 10. готівкою / Так / або / картою / можна
-    > [!answer] Так, можна готівкою або картою.
+    > [!answer] Так, можна готівкою або картою
     > (Yes, you can pay cash or by card.)
 
 11. Дякую / допомогу / дуже / за
-    > [!answer] Дякую дуже за допомогу!
+    > [!answer] Дякую дуже за допомогу
     > (Thank you very much for the help!)
 
 12. ласка / Будь / дороги / доброї
-    > [!answer] Будь ласка! Доброї дороги!
+    > [!answer] Будь ласка! Доброї дороги
     > (You're welcome! Safe travels!)
 
 ## match-up: City Vocabulary - Navigation
@@ -886,7 +888,7 @@ Module 21 introduces the past tense - your first journey into talking about what
 
 ---
 
-# Self-Assessment Rubric
+## Self-Assessment Rubric
 
 Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidently):
 
@@ -914,7 +916,7 @@ Rate yourself 1-5 on each can-do statement (1 = cannot do, 5 = can do confidentl
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

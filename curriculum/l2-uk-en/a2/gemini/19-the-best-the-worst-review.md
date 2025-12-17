@@ -1,9 +1,18 @@
 # Audit Report: 19-the-best-the-worst.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "PPP" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[GRAMMAR]** Participle used before B1: 'талановитий'
+  - FIX: Participles not allowed until B1. Use relative clauses or simple sentences.
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1080/1000
+- **Words:** ⚠️ 2279/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -13,16 +22,13 @@
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 41.1% (target 35-50% (A2.1))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 91 | Included in Core |
+| **Warm-up** | ✅ | 91 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Forming Superlatives** | ⚪️ | 77 | Skipped |
 | **Using Superlatives** | ⚪️ | 94 | Skipped |

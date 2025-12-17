@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1073/1000
+- **Words:** ⚠️ 2237/1000 (>2000 may be too long)
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
@@ -14,10 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 58.5% (target 50-60% (A2.3))
-
-## MDX VALIDATION
-✅ No issues found
+- **Immersion:** 🇺🇦 58.3% (target 50-60% (A2.3))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -26,7 +23,7 @@
 | **Warm-up** | ✅ | 48 | Included in Core |
 | **Reading Practice** | ✅ | 341 | Included in Core |
 | **Listening Simulation** | ⚪️ | 84 | Skipped |
-| **Writing Practice** | ⚪️ | 561 | Skipped |
+| **Writing Practice** | ⚪️ | 562 | Skipped |
 | **Summary** | ✅ | 39 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Reading Comprehension (Text 1)** | 🎮 | 8 | Activity (8 items, min 8) |

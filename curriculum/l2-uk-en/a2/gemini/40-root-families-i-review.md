@@ -1,9 +1,31 @@
 # Audit Report: 40-root-families-i.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Inquiry" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Family 2: The Writers (-ПИС-)' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Family 2: The Writers (-ПИС-)' to '## Family 2: The Writers (-ПИС-)'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Family 3: Input (-ЧИТ- / -БАЧ-)' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Family 3: Input (-ЧИТ- / -БАЧ-)' to '## Family 3: Input (-ЧИТ- / -БАЧ-)'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Guessing Game' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Guessing Game' to '## Deep Dive: Guessing Game'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: The Power of 'Pere-'' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: The Power of 'Pere-'' to '## Deep Dive: The Power of 'Pere-''
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time: The City Walk' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time: The City Walk' to '## Story Time: The City Walk'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time Part 2: The Writer's House' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time Part 2: The Writer's House' to '## Story Time Part 2: The Writer's House'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Language in Action' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Language in Action' to '## Language in Action'
+
+## Recommendation
+**📝 UPDATE** (severity 45/100)
+
+- Borderline case (severity 45/100)
+- 7 pedagogical violations (significant)
 
 ## Gates
-- **Words:** ✅ 1062/1000
+- **Words:** ✅ 1715/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 7/4 types
@@ -13,11 +35,8 @@
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 7 violations
 - **Immersion:** 🇺🇦 44.1% (target 40-55% (A2.2))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

@@ -1,4 +1,5 @@
 ---
+
 module: a1-28
 title: "Description: Adverbs"
 subtitle: "How We Do Things"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can distinguish adverbs from adjectives"
 vocabulary_count: 30
 ---
+
 # Description: Adverbs
 
 ## Warm-up
@@ -39,7 +41,7 @@ vocabulary_count: 30
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -121,7 +123,7 @@ Some adverbs are special:
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Опис дій (Describing Actions)
 >
@@ -153,7 +155,7 @@ Some adverbs are special:
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Як ти це робиш? (How Do You Do It?)
 >
@@ -217,7 +219,7 @@ Some adverbs are special:
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -234,7 +236,7 @@ In this module, you learned:
 
 **Coming up:** Module 29 will teach you about weather and nature!
 
-# Activities
+## Activities
 
 ## match-up: Adjective → Adverb
 
@@ -524,40 +526,40 @@ What does each adverb mean?
 Put the words in the correct order.
 
 1. швидко / бігає / він
-   > [!answer] Він швидко бігає.
+   > [!answer] Він швидко бігає
 
 2. добре / вона / співає
-   > [!answer] Вона добре співає.
+   > [!answer] Вона добре співає
 
 3. читаю / я / повільно
-   > [!answer] Я читаю повільно.
+   > [!answer] Я читаю повільно
 
 4. часто / ми / гуляємо
-   > [!answer] Ми часто гуляємо.
+   > [!answer] Ми часто гуляємо
 
 5. завжди / снідаю / я / вранці
-   > [!answer] Я завжди снідаю вранці.
+   > [!answer] Я завжди снідаю вранці
 
 6. не / він / курить / ніколи
-   > [!answer] Він ніколи не курить.
+   > [!answer] Він ніколи не курить
 
 7. голосно / діти / грають
-   > [!answer] Діти голосно грають.
+   > [!answer] Діти голосно грають
 
 8. тихо / вона / говорить
-   > [!answer] Вона тихо говорить.
+   > [!answer] Вона тихо говорить
 
 9. добре / справи / як
-   > [!answer] Як справи? Добре.
+   > [!answer] Як справи? Добре
 
 10. іноді / ми / піцу / їмо
-   > [!answer] Ми іноді їмо піцу.
+   > [!answer] Ми іноді їмо піцу
 
 11. рідко / телевізор / дивлюсь / я
-   > [!answer] Я рідко дивлюсь телевізор.
+   > [!answer] Я рідко дивлюсь телевізор
 
 12. весело / вони / танцюють
-   > [!answer] Вони весело танцюють.
+   > [!answer] Вони весело танцюють
 
 
 ---
@@ -591,7 +593,7 @@ Is this true or false?
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

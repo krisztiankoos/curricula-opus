@@ -1,4 +1,5 @@
 ---
+
 module: a1-23
 title: "What Time Is It?"
 subtitle: "Telling Time, Days, and Months"
@@ -25,6 +26,7 @@ objectives:
   - "Learner can use time prepositions correctly"
 vocabulary_count: 40
 ---
+
 # What Time Is It?
 
 ## Warm-up
@@ -37,7 +39,7 @@ vocabulary_count: 40
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -178,7 +180,7 @@ Or in conversation:
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Asking About Time
 >
@@ -224,7 +226,7 @@ Or in conversation:
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Scheduling a Meeting
 >
@@ -282,7 +284,7 @@ Or in conversation:
 
 ---
 
-# Підсумок (Summary)
+## Підсумок (Summary)
 
 Ви навчилися говорити про час українською! (You've learned to tell time in Ukrainian!)
 
@@ -299,7 +301,7 @@ Or in conversation:
 
 **Наступний урок:** Модальні дієслова — можна, треба, хочу!
 
-# Вправи (Activities)
+## Вправи (Activities)
 
 ## match-up: Days of the Week
 
@@ -549,22 +551,22 @@ Select the correct answer.
 Put the words in the correct order.
 
 1. година / котра / зараз / ?
-   > [!answer] Котра зараз година?
+   > [!answer] Котра зараз година
 
 2. о / зустріч / третій / наша
-   > [!answer] Наша зустріч о третій.
+   > [!answer] Наша зустріч о третій
 
 3. понеділок / сьогодні / робочий день / це
-   > [!answer] Сьогодні понеділок, це робочий день.
+   > [!answer] Сьогодні понеділок, це робочий день
 
 4. вихідні / я / у / відпочиваю
-   > [!answer] У вихідні я відпочиваю.
+   > [!answer] У вихідні я відпочиваю
 
 5. працює / магазин / до / дев'ятої / шостої / з
-   > [!answer] Магазин працює з дев'ятої до шостої.
+   > [!answer] Магазин працює з дев'ятої до шостої
 
 6. народження / травні / мій / у / день
-   > [!answer] Мій день народження у травні.
+   > [!answer] Мій день народження у травні
 
 ---
 
@@ -610,7 +612,7 @@ Decide if each statement is true or false.
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

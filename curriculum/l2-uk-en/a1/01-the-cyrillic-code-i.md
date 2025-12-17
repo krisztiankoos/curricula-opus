@@ -1,4 +1,5 @@
 ---
+
 module: a1-01
 title: "The Cyrillic Code I"
 subtitle: "Cracking the Ukrainian Alphabet"
@@ -171,7 +172,7 @@ Every single one of these is an international word that you already know. Just w
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -187,7 +188,7 @@ You can now read **35 international words** in Ukrainian. The key insight: many 
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: True Friends
 > Match the Ukrainian letter with its English equivalent.
@@ -533,7 +534,7 @@ You can now read **35 international words** in Ukrainian. The key insight: many 
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

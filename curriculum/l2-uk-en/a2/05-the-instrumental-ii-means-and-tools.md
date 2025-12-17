@@ -624,27 +624,27 @@ The following activities will help you master the bare Instrumental case. Rememb
 > Put the words in the correct order.
 
 1. вона / їде / до / центру / трамваєм
-   > [!answer] Вона їде до центру трамваєм.
+   > [!answer] Вона їде до центру трамваєм
    > (She goes to the center by tram.)
 
 2. вона / пише / листа / ручкою
-   > [!answer] Вона пише листа ручкою.
+   > [!answer] Вона пише листа ручкою
    > (She writes a letter with a pen.)
 
 3. він / ріже / хліб / ножем
-   > [!answer] Він ріже хліб ножем.
+   > [!answer] Він ріже хліб ножем
    > (He cuts bread with a knife.)
 
 4. ми / їмо / суп / ложкою
-   > [!answer] Ми їмо суп ложкою.
+   > [!answer] Ми їмо суп ложкою
    > (We eat soup with a spoon.)
 
 5. вона / летить / до / Парижа / літаком
-   > [!answer] Вона летить до Парижа літаком.
+   > [!answer] Вона летить до Парижа літаком
    > (She flies to Paris by plane.)
 
 6. він / говорить / тихим / голосом
-   > [!answer] Він говорить тихим голосом.
+   > [!answer] Він говорить тихим голосом
    > (He speaks in a quiet voice.)
 
 ## error-correction: Fix the Instrumental

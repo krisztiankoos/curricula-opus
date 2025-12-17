@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1838/1000
+- **Words:** ⚠️ 3485/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -16,13 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 42.8% (target 35-50% (A2.1))
 
-## MDX VALIDATION
-✅ No issues found
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 180 | Included in Core |
+| **Warm-up** | ✅ | 180 | Included in Core |
 | **Presentation** | ✅ | 0 | Included in Core |
 | **Бути + Instrumental: Being Something** | ⚪️ | 230 | Skipped |
 | **Стати + Instrumental: Becoming Something** | ⚪️ | 159 | Skipped |

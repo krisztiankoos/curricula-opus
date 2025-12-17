@@ -210,13 +210,13 @@ def extract_vocab_items(content: str) -> list[dict]:
     """
     Extract vocabulary items with full metadata from the Vocabulary section.
 
-    Note: Must match only level-1 headings (# Vocabulary) not subsections (### Vocabulary Groups).
+    Note: Must match level-2 headings (## Vocabulary) not subsections (### Vocabulary Groups).
 
     Returns list of dicts with keys: uk, ipa, en, note
     """
     items = []
     vocab_match = re.search(
-        r'^# (?:Vocabulary|Словник).*?(?=\n#\s|\Z)',
+        r'^## (?:Vocabulary|Словник).*?(?=\n##\s|\Z)',
         content, re.DOTALL | re.IGNORECASE | re.MULTILINE
     )
     if vocab_match:
@@ -331,10 +331,10 @@ def check_vocab_violations(
 def count_vocab_rows(content: str) -> int:
     """Count vocabulary table rows.
 
-    Note: Must match only level-1 headings (# Vocabulary) not subsections (### Vocabulary Groups).
+    Note: Must match level-2 headings (## Vocabulary) not subsections (### Vocabulary Groups).
     """
     vocab_section_match = re.search(
-        r'(^# +(Vocabulary|Словник).*?)(?=\n# |\Z)',
+        r'(^## (Vocabulary|Словник).*?)(?=\n## |\Z)',
         content, re.DOTALL | re.IGNORECASE | re.MULTILINE
     )
     if vocab_section_match:

@@ -1,4 +1,5 @@
 ---
+
 module: a1-16
 title: "The Genitive I - Absence"
 subtitle: "Talking About What You Don't Have"
@@ -281,7 +282,7 @@ This case is very useful! Next module: genitive with numbers and quantities!
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Absence Vocabulary
 
@@ -516,51 +517,51 @@ This case is very useful! Next module: genitive with numbers and quantities!
 > Put the words in the correct order.
 
 1. немає / У / часу / мене
-   > [!answer] У мене немає часу.
+   > [!answer] У мене немає часу
    > (I don't have time.) [4 words]
 
 2. кави / Тут / немає
-   > [!answer] Тут немає кави.
+   > [!answer] Тут немає кави
    > (There's no coffee here.) [3 words]
 
 3. немає / У / неї / грошей
-   > [!answer] У неї немає грошей.
+   > [!answer] У неї немає грошей
    > (She doesn't have money.) [4 words]
 
 4. будь ласка / цукру / Без
-   > [!answer] Без цукру, будь ласка.
+   > [!answer] Без цукру, будь ласка
    > (Without sugar, please.) [3 words]
 
 5. проблем / Немає
-   > [!answer] Némає проблем!
+   > [!answer] Némає проблем
    > (No problem!) [2 words]
 
 6. нас / вибору / У / немає
-   > [!answer] У нас немає вибору.
+   > [!answer] У нас немає вибору
    > (We don't have a choice.) [4 words]
 
 7. можливості / немає / У / тебе
-   > [!answer] У тебе немає можливості?
+   > [!answer] У тебе немає можливості
    > (You don't have the opportunity?) [4 words]
 
 8. допомоги / важко / Без / це
-   > [!answer] Без допомоги це важко.
+   > [!answer] Без допомоги це важко
    > (Without help, it's difficult.) [4 words]
 
 9. різниці / Тут / немає
-   > [!answer] Тут немає різниці.
+   > [!answer] Тут немає різниці
    > (There's no difference here.) [3 words]
 
 10. терпіння / немає / вас / У
-    > [!answer] У вас немає терпіння?
+    > [!answer] У вас немає терпіння
     > (You don't have patience?) [4 words]
 
 11. знання / У / них / немає
-    > [!answer] У них немає знання.
+    > [!answer] У них немає знання
     > (They don't have knowledge.) [4 words]
 
 12. немає / мене / У / досвіду
-    > [!answer] У мене немає досвіду.
+    > [!answer] У мене немає досвіду
     > (I don't have experience.) [4 words]
 
 ## match-up: Prepositions and Genitive Nouns
@@ -632,7 +633,7 @@ This case is very useful! Next module: genitive with numbers and quantities!
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

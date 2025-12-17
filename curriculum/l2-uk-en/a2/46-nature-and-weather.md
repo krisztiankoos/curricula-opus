@@ -423,21 +423,21 @@ When discussing weather in Ukrainian, these expressions will help you communicat
 ## unjumble: Weather Sentences
 
 1. сонячно / Сьогодні / тепло / і
-   > [!answer] Сьогодні сонячно і тепло.
+   > [!answer] Сьогодні сонячно і тепло
 2. йде / Надворі / дощ
-   > [!answer] Надворі йде дощ.
+   > [!answer] Надворі йде дощ
 3. холодно / Взимку / дуже
-   > [!answer] Взимку дуже холодно.
+   > [!answer] Взимку дуже холодно
 4. падає / білий / Сніг
-   > [!answer] Падає білий сніг.
+   > [!answer] Падає білий сніг
 5. чудова / погода / Яка
-   > [!answer] Яка чудова погода!
+   > [!answer] Яка чудова погода
 6. весну / Я / люблю
-   > [!answer] Я люблю весну.
+   > [!answer] Я люблю весну
 7. хмарно / буде / Завтра
-   > [!answer] Завтра буде хмарно.
+   > [!answer] Завтра буде хмарно
 8. гарне / озеро / Яке
-   > [!answer] Яке гарне озеро!
+   > [!answer] Яке гарне озеро
 
 ## error-correction: Weather Mistakes
 

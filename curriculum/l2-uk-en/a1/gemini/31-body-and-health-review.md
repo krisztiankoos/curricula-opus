@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 916/750
+- **Words:** ⚠️ 1780/750 (>1750 may be too long)
 - **Activities:** ✅ 10/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 42.7% (target 35-55% (M31))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (10 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Body & Health** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 70 | Included in Core |
 | **Grammar** | ⚪️ | 56 | Skipped |
 | **Expressing Pain: Болить...** | ⚪️ | 60 | Skipped |

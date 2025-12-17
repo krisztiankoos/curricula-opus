@@ -1,4 +1,5 @@
 ---
+
 module: a1-24
 title: "Can, Must, Want - Modals"
 subtitle: "Expressing Ability, Obligation, and Desire"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can distinguish between different modal meanings"
 vocabulary_count: 25
 ---
+
 # Can, Must, Want - Modals
 
 ## Warm-up
@@ -35,7 +37,7 @@ vocabulary_count: 25
 
 ---
 
-# Grammar
+## Grammar
 
 
 > [!resources] 🔗 External Resources
@@ -176,7 +178,7 @@ These are impersonal — the "subject" is optional:
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Ability
 >
@@ -212,7 +214,7 @@ These are impersonal — the "subject" is optional:
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Asking for Permission
 >
@@ -276,7 +278,7 @@ These are impersonal — the "subject" is optional:
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -291,7 +293,7 @@ In this module, you learned:
 
 **Coming up:** Module 25 will teach you reflexive verbs for daily routines!
 
-# Activities
+## Activities
 
 ## match-up: Modal Meanings
 
@@ -522,22 +524,22 @@ Select the correct translation.
 Put the words in the correct order.
 
 1. можу / я / українською / говорити
-   > [!answer] Я можу говорити українською.
+   > [!answer] Я можу говорити українською
 
 2. вмієш / ти / плавати / ?
-   > [!answer] Ти вмієш плавати?
+   > [!answer] Ти вмієш плавати
 
 3. повинен / він / працювати / завтра
-   > [!answer] Він повинен працювати завтра.
+   > [!answer] Він повинен працювати завтра
 
 4. можна / тут / сісти / ?
-   > [!answer] Можна тут сісти?
+   > [!answer] Можна тут сісти
 
 5. заборонено / палити / тут
-   > [!answer] Тут заборонено палити.
+   > [!answer] Тут заборонено палити
 
 6. готова / вона / почати
-   > [!answer] Вона готова почати.
+   > [!answer] Вона готова почати
 
 
 ---
@@ -571,7 +573,7 @@ Decide if each statement is true or false.
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

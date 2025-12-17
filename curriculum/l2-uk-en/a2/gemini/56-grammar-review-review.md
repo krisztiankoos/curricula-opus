@@ -1,9 +1,18 @@
 # Audit Report: 56-grammar-review.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Review" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** 'A2 Grammar Review' is a section heading but uses H1 (#)
+  - FIX: Change '# A2 Grammar Review' to '## A2 Grammar Review' - reserved for page title only
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1282/1000
+- **Words:** ⚠️ 2584/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -13,11 +22,8 @@
 - **Vocab:** ✅ 32/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.3% (target 50-60% (A2.3))
-
-## MDX VALIDATION
-✅ No issues found
+- **Pedagogy:** ❌ 1 violations
+- **Immersion:** 🇺🇦 50.4% (target 50-60% (A2.3))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -25,7 +31,7 @@
 | **A2 Grammar Review** | ✅ | 0 | Included in Core |
 | **Warm-up** | ✅ | 51 | Included in Core |
 | **Presentation** | ✅ | 94 | Included in Core |
-| **Practice** | ⚪️ | 1095 | Skipped |
+| **Practice** | ⚪️ | 1089 | Skipped |
 | **Summary** | ✅ | 42 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Grammar Master** | 🎮 | 12 | Activity (12 items, min 8) |

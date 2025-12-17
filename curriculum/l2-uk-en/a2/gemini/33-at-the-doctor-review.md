@@ -1,9 +1,26 @@
 # Audit Report: 33-at-the-doctor.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Expressive" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Traditional Medicine' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Traditional Medicine' to '## Deep Dive: Traditional Medicine'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time: The Pharmacy Mistake' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time: The Pharmacy Mistake' to '## Story Time: The Pharmacy Mistake'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Deep Dive: Heart Metaphors' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Deep Dive: Heart Metaphors' to '## Deep Dive: Heart Metaphors'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Story Time: The Pharmacy Mistake' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Story Time: The Pharmacy Mistake' to '## Story Time: The Pharmacy Mistake'
+- **[HEADING_LEVEL]** Multiple H1 headings: 'Pro-Tip: "Being Sick" vs "Sicking"' should be H2 (##)
+  - FIX: Only one H1 allowed (page title). Change '# Pro-Tip: "Being Sick" vs "Sicking"' to '## Pro-Tip: "Being Sick" vs "Sicking"'
+
+## Recommendation
+**📝 UPDATE** (severity 25/100)
+
+- 5 pedagogical violations (moderate)
 
 ## Gates
-- **Words:** ✅ 1255/1000
+- **Words:** ⚠️ 2052/1000 (>2000 may be too long)
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
@@ -13,11 +30,8 @@
 - **Vocab:** ✅ 33/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 5 violations
 - **Immersion:** 🇺🇦 52.6% (target 40-55% (A2.2))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

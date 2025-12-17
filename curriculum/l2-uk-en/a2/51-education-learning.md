@@ -458,7 +458,7 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
    > I am taking a history exam.
 
 9. Знання — / це / велика / сила
-   > [!answer] Знання — це велика сила
+   > [!answer] Знання це велика сила
    > Knowledge is great power.
 
 10. Ми / любимо / наш / факультет

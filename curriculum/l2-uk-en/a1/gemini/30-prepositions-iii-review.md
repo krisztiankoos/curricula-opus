@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1134/750
+- **Words:** ⚠️ 2021/750 (>1750 may be too long)
 - **Activities:** ✅ 9/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 39.3% (target 35-55% (M30))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (9 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 0 | Included in Core |
+| **Prepositions III** | ⚪️ | 0 | Skipped |
 | **Warm-up** | ✅ | 84 | Included in Core |
 | **Grammar** | ⚪️ | 70 | Skipped |
 | **The Three Key Questions** | ⚪️ | 72 | Skipped |

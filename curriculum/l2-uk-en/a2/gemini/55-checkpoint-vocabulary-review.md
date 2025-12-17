@@ -1,9 +1,18 @@
 # Audit Report: 55-checkpoint-vocabulary.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Narrative" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[HEADING_LEVEL]** 'Checkpoint - Vocabulary Expansion' is a section heading but uses H1 (#)
+  - FIX: Change '# Checkpoint - Vocabulary Expansion' to '## Checkpoint - Vocabulary Expansion' - reserved for page title only
+
+## Recommendation
+**📝 UPDATE** (severity 10/100)
+
+- 1 pedagogical violations (minor)
 
 ## Gates
-- **Words:** ✅ 1042/1000
+- **Words:** ⚠️ 2143/1000 (>2000 may be too long)
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
@@ -13,11 +22,8 @@
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
+- **Pedagogy:** ❌ 1 violations
 - **Immersion:** 🇺🇦 57.5% (target 50-60% (A2.3))
-
-## MDX VALIDATION
-✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |

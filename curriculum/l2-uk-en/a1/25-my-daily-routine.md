@@ -1,4 +1,5 @@
 ---
+
 module: a1-25
 title: "My Daily Routine"
 subtitle: "Reflexive Verbs and Daily Activities"
@@ -23,6 +24,7 @@ objectives:
   - "Learner can talk about habits and regular activities"
 vocabulary_count: 30
 ---
+
 # My Day — A Typical Routine
 
 > 🕰️ **Мій типовий день**
@@ -41,7 +43,7 @@ vocabulary_count: 30
 
 ---
 
-# Examples in Context
+## Examples in Context
 
 > [!example] Morning Routine
 >
@@ -77,7 +79,7 @@ vocabulary_count: 30
 
 ---
 
-# Dialogues
+## Dialogues
 
 > [!conversation] Morning Conversation
 >
@@ -142,7 +144,7 @@ vocabulary_count: 30
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -156,7 +158,7 @@ In this module, you learned:
 
 **Coming up:** Module 26 will teach you adjective agreement for describing things!
 
-# Activities
+## Activities
 
 ## match-up: Daily Actions
 
@@ -386,22 +388,22 @@ Select the correct answer.
 Put the words in the correct order.
 
 1. прокидаюся / я / о сьомій / ранку
-   > [!answer] Я прокидаюся о сьомій ранку.
+   > [!answer] Я прокидаюся о сьомій ранку
 
 2. вмиваюся / спочатку / я
-   > [!answer] Спочатку я вмиваюся.
+   > [!answer] Спочатку я вмиваюся
 
 3. снідаю / потім / я / і / виходжу
-   > [!answer] Потім я снідаю і виходжу.
+   > [!answer] Потім я снідаю і виходжу
 
 4. повертається / вона / о шостій / додому
-   > [!answer] Вона повертається додому о шостій.
+   > [!answer] Вона повертається додому о шостій
 
 5. ніколи / він / не / запізнюється
-   > [!answer] Він ніколи не запізнюється.
+   > [!answer] Він ніколи не запізнюється
 
 6. зазвичай / ми / телевізор / дивимося
-   > [!answer] Зазвичай ми дивимося телевізор.
+   > [!answer] Зазвичай ми дивимося телевізор
 
 
 ---
@@ -437,7 +439,7 @@ Decide if each statement is true or false.
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

@@ -3,12 +3,12 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 2087/500 (>1500 may be too long)
+- **Words:** ⚠️ 3676/500 (>1500 may be too long)
 - **Activities:** ✅ 11/8
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 6/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 10/3
+- **Engagement:** ✅ 11/3
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 26/20
 - **Structure:** ✅ Valid Structure
@@ -16,16 +16,10 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 29.3% (target 15-35% (M10))
 
-## MDX VALIDATION
-✅ No issues found
-
-## HTML VALIDATION
-✅ Renders correctly (11 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Intro/Narrative** | ✅ | 189 | Included in Core |
+| **Checkpoint - First Contact** | ➖ | 189 | Excluded Type |
 | **Warm-up: Your А1.1 Journey** | ✅ | 230 | Included in Core |
 | **Presentation: What You've Mastered** | ✅ | 736 | Included in Core |
 | **Practice: Integrated Skills** | ⚪️ | 199 | Skipped |

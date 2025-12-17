@@ -1,4 +1,5 @@
 ---
+
 module: a1-05
 title: "My World: Objects"
 subtitle: "Pointing to Things with Demonstratives"
@@ -255,7 +256,7 @@ Try building full sentences: "Це моя чашка. Та чашка не мо�
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 
@@ -283,7 +284,7 @@ In this module, you learned:
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: Demonstratives and Gender
 > Match each demonstrative with the correct gender.
@@ -645,7 +646,7 @@ In this module, you learned:
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

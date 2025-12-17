@@ -1,4 +1,5 @@
 ---
+
 module: a1-12
 title: "The Accusative II: People"
 subtitle: "Animate Nouns and the Genitive Connection"
@@ -15,6 +16,7 @@ objectives:
   - "Learner can identify when accusative = genitive"
 vocabulary_count: 20
 ---
+
 # The Accusative II: People
 
 ## Warm-up
@@ -231,7 +233,7 @@ These verbs typically take **people** as objects (accusative case):
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned the **animate accusative** — how Ukrainian marks people and animals as direct objects.
 
@@ -253,7 +255,7 @@ In this module, you learned the **animate accusative** — how Ukrainian marks p
 
 ---
 
-# Activities
+## Activities
 
 ## match-up: People in Your Life
 > Match the Ukrainian words with their English meanings.
@@ -534,89 +536,89 @@ In this module, you learned the **animate accusative** — how Ukrainian marks p
 > Put the words in the correct order to form sentences.
 
 1. бачу / Я / студента / у / бібліотеці
-   > [!answer] Я бачу студента у бібліотеці.
+   > [!answer] Я бачу студента у бібліотеці
    > (I see the student in the library.) [5 words]
 
 2. знає / Вона / мого / друга / добре
-   > [!answer] Вона добре знає мого друга.
+   > [!answer] Вона добре знає мого друга
    > (She knows my friend well.) [5 words]
 
 3. чекаємо / Ми / лікаря / у / лікарні
-   > [!answer] Ми чекаємо лікаря у лікарні.
+   > [!answer] Ми чекаємо лікаря у лікарні
    > (We're waiting for the doctor at the hospital.) [5 words]
 
 4. бачиш / Ти / офіціанта / там
-   > [!answer] Ти бачиш офіціанта там?
+   > [!answer] Ти бачиш офіціанта там
    > (Do you see the waiter there?) [4 words]
 
 5. любить / Він / свою / вчительку
-   > [!answer] Він любить свою вчительку.
+   > [!answer] Він любить свою вчительку
    > (He loves his teacher.) [4 words]
 
 6. шукаю / Я / водія / нашого
-   > [!answer] Я шукаю нашого водія.
+   > [!answer] Я шукаю нашого водія
    > (I'm looking for our driver.) [4 words]
 
 7. знаємо / Ми / цього / директора
-   > [!answer] Ми знаємо цього директора.
+   > [!answer] Ми знаємо цього директора
    > (We know this director.) [4 words]
 
 8. бачить / Вона / сусіда / кожного / ранку
-   > [!answer] Вона бачить сусіда кожного ранку.
+   > [!answer] Вона бачить сусіда кожного ранку
    > (She sees the neighbor every morning.) [5 words]
 
 9. чекаєш / Ти / подругу / свою
-   > [!answer] Ти чекаєш свою подругу?
+   > [!answer] Ти чекаєш свою подругу
    > (Are you waiting for your friend?) [4 words]
 
 10. люблю / Я / колегу / мого
-    > [!answer] Я люблю мого колегу.
+    > [!answer] Я люблю мого колегу
     > (I love my colleague.) [4 words]
 
 11. бачимо / Ми / пасажира / біля / метро
-    > [!answer] Ми бачимо пасажира біля метро.
+    > [!answer] Ми бачимо пасажира біля метро
     > (We see the passenger near the metro.) [5 words]
 
 12. знає / Він / студентку / цю / з / школи
-    > [!answer] Він знає цю студентку з школи.
+    > [!answer] Він знає цю студентку з школи
     > (He knows this student from school.) [6 words]
 
 ## unjumble: More Complex Sentences
 > Put the words in the correct order.
 
 1. бачу / Я / мого / друга / та / його / подругу
-   > [!answer] Я бачу мого друга та його подругу.
+   > [!answer] Я бачу мого друга та його подругу
    > (I see my friend and his girlfriend.) [7 words]
 
 2. чекаємо / Ми / нашого / вчителя / біля / університету
-   > [!answer] Ми чекаємо нашого вчителя біля університету.
+   > [!answer] Ми чекаємо нашого вчителя біля університету
    > (We're waiting for our teacher near the university.) [6 words]
 
 3. знає / Вона / всіх / студентів / у / групі
-   > [!answer] Вона знає всіх студентів у групі.
+   > [!answer] Вона знає всіх студентів у групі
    > (She knows all the students in the group.) [6 words]
 
 4. бачиш / Ти / того / лікаря / там
-   > [!answer] Ти бачиш того лікаря там?
+   > [!answer] Ти бачиш того лікаря там
    > (Do you see that doctor there?) [5 words]
 
 5. любить / Він / свою / сусідку / дуже
-   > [!answer] Він дуже любить свою сусідку.
+   > [!answer] Він дуже любить свою сусідку
    > (He really loves his neighbor.) [5 words]
 
 6. шукаю / Я / нашого / директора / і / менеджера
-   > [!answer] Я шукаю нашого директора і менеджера.
+   > [!answer] Я шукаю нашого директора і менеджера
    > (I'm looking for our director and manager.) [6 words]
 
 7. знаємо / Ми / цього / водія / добре
-   > [!answer] Ми добре знаємо цього водія.
+   > [!answer] Ми добре знаємо цього водія
    > (We know this driver well.) [5 words]
 
 8. бачить / Вона / офіціанта / та / офіціантку
-   > [!answer] Вона бачить офіціанта та офіціантку.
+   > [!answer] Вона бачить офіціанта та офіціантку
    > (She sees the waiter and waitress.) [5 words]
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

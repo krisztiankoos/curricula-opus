@@ -1,4 +1,5 @@
 ---
+
 module: a1-11
 title: "The Accusative I - Things"
 subtitle: "Making Direct Objects Work"
@@ -206,7 +207,7 @@ It's a birthday party in Odesa. Practice saying:
 
 ---
 
-# Summary
+## Summary
 
 In this module, you learned:
 - ✅ How to form **accusative case** for inanimate objects
@@ -219,7 +220,7 @@ In this module, you learned:
 
 ---
 
-# Activities
+## Activities
 
 ## quiz: Accusative Recognition
 
@@ -499,51 +500,51 @@ In this module, you learned:
 > Put the words in the correct order to form sentences.
 
 1. бачу / Я / автобус
-   > [!answer] Я бачу автобус.
+   > [!answer] Я бачу автобус
    > (I see the bus.) [3 words]
 
 2. газету / читає / Вона
-   > [!answer] Вона читає газету.
+   > [!answer] Вона читає газету
    > (She reads a newspaper.) [3 words]
 
 3. маєш / паспорт / Ти / ?
-   > [!answer] Ти маєш паспорт?
+   > [!answer] Ти маєш паспорт
    > (Do you have a passport?) [3 words]
 
 4. валізу / беремо / Ми
-   > [!answer] Ми беремо валізу.
+   > [!answer] Ми беремо валізу
    > (We take a suitcase.) [3 words]
 
 5. вікно / Він / відкриває
-   > [!answer] Він відкриває вікно.
+   > [!answer] Він відкриває вікно
    > (He opens the window.) [3 words]
 
 6. дають / подарунок / Вони
-   > [!answer] Вони дають подарунок.
+   > [!answer] Вони дають подарунок
    > (They give a gift.) [3 words]
 
 7. показую / квиток / Я
-   > [!answer] Я показую квиток.
+   > [!answer] Я показую квиток
    > (I show the ticket.) [3 words]
 
 8. музику / чуєш / Ти / ?
-   > [!answer] Ти чуєш музику?
+   > [!answer] Ти чуєш музику
    > (Do you hear music?) [3 words]
 
 9. закриває / двері / Вона
-   > [!answer] Вона закриває двері.
+   > [!answer] Вона закриває двері
    > (She closes the door.) [3 words]
 
 10. несемо / сумку / Ми
-    > [!answer] Ми несемо сумку.
+    > [!answer] Ми несемо сумку
     > (We carry a bag.) [3 words]
 
 11. журнал / Я / цікавий / читаю
-    > [!answer] Я читаю цікавий журнал.
+    > [!answer] Я читаю цікавий журнал
     > (I read an interesting magazine.) [4 words]
 
 12. посилку / відправляємо / Ми / сьогодні
-    > [!answer] Ми відправляємо посилку сьогодні.
+    > [!answer] Ми відправляємо посилку сьогодні
     > (We send the parcel today.) [4 words]
 
 ## match-up: Verb + Object Pairs
@@ -568,48 +569,48 @@ In this module, you learned:
 > Put the words in the correct order.
 
 1. читаю / Я / цікаву / газету / щоранку
-   > [!answer] Я читаю цікаву газету щоранку.
+   > [!answer] Я читаю цікаву газету щоранку
    > (I read an interesting newspaper every morning.) [5 words]
 
 2. валізу / Вона / бере / велику / і / сумку
-   > [!answer] Вона бере велику валізу і сумку.
+   > [!answer] Вона бере велику валізу і сумку
    > (She takes a big suitcase and a bag.) [6 words]
 
 3. паспорт / маєш / Ти / український / ?
-   > [!answer] Ти маєш український паспорт?
+   > [!answer] Ти маєш український паспорт
    > (Do you have a Ukrainian passport?) [4 words]
 
 4. сумку / беру / Я / велику / чорну
-   > [!answer] Я беру велику чорну сумку.
+   > [!answer] Я беру велику чорну сумку
    > (I take a big black bag.) [5 words]
 
 5. вікно / Ми / відкриваємо / в / кімнаті
-   > [!answer] Ми відкриваємо вікно в кімнаті.
+   > [!answer] Ми відкриваємо вікно в кімнаті
    > (We open the window in the room.) [5 words]
 
 6. валізу / Ми / несемо / важку / велику
-   > [!answer] Ми несемо велику важку валізу.
+   > [!answer] Ми несемо велику важку валізу
    > (We carry a big heavy suitcase.) [5 words]
 
 7. газету / читає / українську / Вона / щодня
-   > [!answer] Вона щодня читає українську газету.
+   > [!answer] Вона щодня читає українську газету
    > (She reads a Ukrainian newspaper every day.) [5 words]
 
 8. посилку / Вона / відправляє / у / Київ
-   > [!answer] Вона відправляє посилку у Київ.
+   > [!answer] Вона відправляє посилку у Київ
    > (She sends a parcel to Kyiv.) [5 words]
 
 9. Я / маю / квиток / новий / український
-   > [!answer] Я маю новий український квиток.
+   > [!answer] Я маю новий український квиток
    > (I have a new Ukrainian ticket.) [5 words]
 
 10. коробку / відкриває / велику / Він / обережно
-    > [!answer] Він обережно відкриває велику коробку.
+    > [!answer] Він обережно відкриває велику коробку
     > (He carefully opens the big box.) [5 words]
 
 ---
 
-# Vocabulary
+## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|

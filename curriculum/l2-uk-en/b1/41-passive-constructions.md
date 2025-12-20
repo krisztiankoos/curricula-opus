@@ -253,7 +253,7 @@ Choosing between active and passive voice isn't just grammar—it's **diplomacy*
 - **Effect:** Bureaucratic, objective. Who did it? Doesn't matter. "The System" did it.
 
 > 🕴️ **Professional Tip:**
-> In apologies, Ukrainians often use the Short Passive to sound objective without blaming themselves directly:
+> When expressing regret or making excuses, Ukrainians often use the Short Passive to sound objective without blaming themselves directly:
 > * «Рейс **скасовано** через погоду.» (The flight is cancelled due to weather.) -> Not "We cancelled the flight."
 > * «Помилку **виправлено**.» (The error has been corrected.) -> Not "I fixed my mistake."
 

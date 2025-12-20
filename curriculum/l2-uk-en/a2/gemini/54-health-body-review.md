@@ -3,31 +3,34 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1232/1000
+- **Words:** ✅ 1366/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/4
+- **Engagement:** ✅ 8/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.1% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 50.4% (target 50-60% (A2.3))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Health & Body** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 116 | Included in Core |
-| **Presentation** | ✅ | 223 | Included in Core |
-| **Practice** | ⚪️ | 680 | Skipped |
+| **Warm-up** | ✅ | 134 | Included in Core |
+| **Presentation** | ✅ | 318 | Included in Core |
+| **Practice** | ⚪️ | 701 | Skipped |
 | **Summary** | ✅ | 213 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Health Quiz** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Body & Health** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: My Symptoms** | 🎮 | 18 | Activity (18 items, min 8) |
+| **fill-in: My Symptoms** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Medical Beliefs** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Body vs Illness** | 🎮 | 16 | Activity (16 items, min 8) |
 | **unjumble: Health Sentences** | 🎮 | 12 | Activity (12 items, min 6) |

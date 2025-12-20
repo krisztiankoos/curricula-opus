@@ -16,13 +16,16 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 40.3% (target 40-55% (A2.2))
 
+## MDX VALIDATION
+✅ No issues found
+
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Warm-up** | ✅ | 162 | Included in Core |
 | **The Meaning Map** | ⚪️ | 7 | Skipped |
 | **Story Time: The Writer's Deadline** | ✅ | 185 | Included in Core |
-| **Deep Dive: Open and Close (Відкрити / Закрити)** | ✅ | 87 | Included in Core |
+| **Deep Dive: Open and Close (Відкрити | Закрити)** | ✅ | 87 | Included in Core |
 | **Deep Dive: To Give (The "Give" Family)** | ✅ | 109 | Included in Core |
 | **Deep Dive: Connect and Disconnect** | ✅ | 55 | Included in Core |
 | **Language in Action** | ⚪️ | 0 | Skipped |

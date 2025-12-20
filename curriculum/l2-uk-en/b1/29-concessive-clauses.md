@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Допустові речення
 
-
 > 🎯 **Чому це важливо**
 >
 > «Хоча», «незважаючи на те, що», «попри» — визнання перешкоди, яку ви долаєте. «Хоча було холодно, ми пішли гуляти» — без цих сполучників ви не зможете висловити контраст.
@@ -263,6 +262,16 @@ Beyond the main three, Ukrainian offers additional concessive expressions for va
 These alternative constructions add variety and nuance to your Ukrainian. «Всупереч» has a stronger sense of defiance than «попри», while «дарма що» is more conversational. «Тим не менше» and «а все ж таки» connect independent clauses rather than joining them grammatically.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Activities
 
@@ -860,4 +869,3 @@ These alternative constructions add variety and nuance to your Ukrainian. «Вс
 | справлятися | /spraˈvlʲatɪsʲa/ | to cope, manage | дієсл. | |
 | досягати | /dɔsʲaˈɦatɪ/ | to achieve | дієсл. | недок. |
 | результат | /rɛzulʲˈtat/ | result | ім. | |
-

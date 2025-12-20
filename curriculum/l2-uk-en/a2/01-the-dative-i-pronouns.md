@@ -159,7 +159,7 @@ Ukrainian expresses many feelings and physical states using Dative + adverb:
 
 > 🎬 **Pop Culture Moment: The Witcher**
 >
-> In the Ukrainian dub of "The Witcher" (Відьмак), Geralt often says "Мені байдуже" (I don't care / It's indifferent to me). This Dative construction shows emotional detachment — the feeling acts upon Geralt, but he remains passive. Very fitting for the stoic character! This phrase is extremely useful in casual conversation when you want to express indifference about something.
+> In the Ukrainian dub of "The Witcher" (Відьмак), Geralt often says "Мені байдуже" (I don't care | It's indifferent to me). This Dative construction shows emotional detachment — the feeling acts upon Geralt, but he remains passive. Very fitting for the stoic character! This phrase is extremely useful in casual conversation when you want to express indifference about something.
 
 ## Cultural Insight
 
@@ -664,51 +664,51 @@ The activities below progress from recognition (matching, sorting) to production
 
 > Put the words in the correct order.
 
-1. подобається / Мені / музика / українська
+1. подобається | Мені | музика | українська
    > [!answer] Мені подобається українська музика
    > (I like Ukrainian music.) [4 words]
 
-2. потрібно / Тобі / відпочити
+2. потрібно | Тобі | відпочити
    > [!answer] Тобі потрібно відпочити
    > (You need to rest.) [3 words]
 
-3. холодно / Йому / тут
+3. холодно | Йому | тут
    > [!answer] Йому тут холодно
    > (He's cold here.) [3 words]
 
-4. подобається / їй / Київ / Чи
+4. подобається | їй | Київ | Чи
    > [!answer] Чи їй подобається Київ
    > (Does she like Kyiv?) [4 words]
 
-5. потрібна / Нам / допомога
+5. потрібна | Нам | допомога
    > [!answer] Нам потрібна допомога
    > (We need help.) [3 words]
 
-6. цікаво / Вам / тут
+6. цікаво | Вам | тут
    > [!answer] Вам тут цікаво
    > (Is it interesting for you here?) [3 words]
 
-7. футбол / Їм / подобається
+7. футбол | Їм | подобається
    > [!answer] Їм подобається футбол
    > (They like football.) [3 words]
 
-8. здається / Мені / це / що / правда
+8. здається | Мені | це | що | правда
    > [!answer] Мені здається, що це правда
    > (It seems to me that this is true.) [5 words]
 
-9. тепло / Тобі / зараз
+9. тепло | Тобі | зараз
    > [!answer] Тобі зараз тепло
    > (Are you warm now?) [3 words]
 
-10. весело / Нам / дуже / тут
+10. весело | Нам | дуже | тут
     > [!answer] Нам тут дуже весело
     > (We're having a lot of fun here.) [4 words]
 
-11. потрібно / Йому / працювати / більше
+11. потрібно | Йому | працювати | більше
     > [!answer] Йому потрібно більше працювати
     > (He needs to work more.) [4 words]
 
-12. подобаються / Їй / квіти
+12. подобаються | Їй | квіти
     > [!answer] Їй подобаються квіти
     > (She likes flowers.) [3 words]
 

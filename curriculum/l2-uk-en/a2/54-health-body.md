@@ -21,11 +21,14 @@ vocab_count: 30
 
 ## Warm-up
 
-Як ви почуваєтеся тсьогодні? Що ви робите, коли у вас болить голова? Ви часто ходите до лікаря?
+Як ви почуваєтеся сьогодні? Що ви робите, коли у вас болить голова? Ви часто ходите до лікаря?
 
 Здоров'я — це найважливіше. Українці часто кажуть: "Головне — це здоров'я" (*Health is the main thing*). Сьогодні ми вивчимо, як говорити про своє тіло і самопочуття.
 
-In this module, you'll learn to describe symptoms, visit a pharmacy, and understand the doctor's orders.
+In this module, you'll master three key areas:
+1. **Body vocabulary** — голова, руки, серце and more
+2. **Symptom vocabulary** — біль, температура, and common illnesses
+3. **Medical help** — лікар, аптека, and рецепт
 
 > [!important] **Myth Buster** "Free Healthcare?"
 > Constitutionally, healthcare in Ukraine is free. In reality, it's a mix. State clinics (*поліклініки*) are free but crowded. Private clinics (*приватні клініки*) offer modern service but cost money. Also, Ukrainians can sign a declaration with a family doctor using the electronic system **eHealth** (Helsi.me), which has modernized the system significantly.
@@ -79,7 +82,21 @@ From head to toe:
 > [!cultural] **Cultural Insight** Mineral Waters
 > Ukraine is famous for healing mineral waters (*мінеральні води*). Resorts like **Truskavets**, **Morshyn**, and **Myrhorod** attract thousands of people. They drink water like "Naftusya" to treat liver or kidney problems. It smells like oil but it works!
 
+> [!tip] **Common Mistakes to Avoid**
+> ❌ *Я болю голову.* — Wrong! (Subject confusion)
+> ✅ *У мене болить голова.* — Correct! (Head is the subject that hurts)
+>
+> ❌ *У мене болить зуби.* — Wrong! (Verb doesn't match)
+> ✅ *У мене болять зуби.* — Correct! (Plural subject = болять)
+>
+> ❌ *Я треба ліки.* — Wrong! (Wrong case for "need")
+> ✅ *Мені треба ліки.* — Correct! (Dative: мені)
+>
+> **Memory trick:** The body part is the SUBJECT (голова болить), not the object. You are the EXPERIENCER (у мене).
+
 ## Practice
+
+Now let's see these words in action through stories about health situations — from a bad cold to a pharmacy visit.
 
 ### Story Time: A Bad Morning
 
@@ -235,7 +252,7 @@ Take care and stay healthy!
 ## quiz: Health Quiz
 
 1. What do you do if you have a fever?
-   - [x] call a doctor / stay home
+   - [x] call a doctor | stay home
    - [ ] go to a disco
    - [ ] eat ice cream
    > Stay home.
@@ -328,42 +345,6 @@ Take care and stay healthy!
    > [!options] голова | голову | головою | голові
    > Nominative subject.
 
-
-7. У мене ___ голова. (head hurts)
-   > [!error] hurts
-   > [!answer] болить
-   > [!explanation] Ongoing state → imperfective.
-   > [!options] болить | заболить
-
-8. Голова раптом ___. (suddenly started hurting)
-   > [!error] suddenly started
-   > [!answer] заболіла
-   > [!explanation] Sudden start → perfective.
-   > [!options] боліла | заболіла
-
-9. Я ___ ліки. (took medicine)
-   > [!error] took
-   > [!answer] прийняв
-   > [!explanation] Completed action → perfective.
-   > [!options] приймав | прийняв
-
-10. Лікар ___ пацієнта. (examined patient)
-    > [!error] examined
-    > [!answer] оглянув
-    > [!explanation] Completed examination → perfective.
-    > [!options] оглядав | оглянув
-
-11. Він ___ довго. (was sick long time)
-    > [!error] long time
-    > [!answer] хворів
-    > [!explanation] Duration → imperfective.
-    > [!options] хворів | захворів
-
-12. Вона нарешті ___. (finally recovered)
-    > [!error] finally recovered
-    > [!answer] одужала
-    > [!explanation] Completed recovery → perfective.
-    > [!options] одужувала | одужала
 2. У нього висока ____. (temperature)
    > [!answer] температура
    > [!options] температура | температуру | температурою | температури
@@ -493,51 +474,51 @@ Take care and stay healthy!
 
 ## unjumble: Health Sentences
 
-1. У / мене / дуже / болить / голова
+1. У | мене | дуже | болить | голова
    > [!answer] У мене дуже болить голова
    > I have a very bad headache.
 
-2. Будь / ласка / викличіть / лікаря
+2. Будь | ласка | викличіть | лікаря
    > [!answer] Будь ласка викличіть лікаря
    > Please call a doctor.
 
-3. Я / хочу / купити / ліки
+3. Я | хочу | купити | ліки
    > [!answer] Я хочу купити ліки
    > I want to buy medicine.
 
-4. У / вас / є / температура
+4. У | вас | є | температура
    > [!answer] У вас є температура
    > Do you have a fever?
 
-5. Пийте / багато / теплої / води
+5. Пийте | багато | теплої | води
    > [!answer] Пийте багато теплої води
    > Drink a lot of warm water.
 
-6. Де / найближча / цілодобова / аптека
+6. Де | найближча | цілодобова | аптека
    > [!answer] Де найближча цілодобова аптека
    > Where is the nearest 24/7 pharmacy?
 
-7. Мені / треба / піти / до / стоматолога
+7. Мені | треба | піти | до | стоматолога
    > [!answer] Мені треба піти до стоматолога
    > I need to go to the dentist.
 
-8. Як / ви / себе / почуваєте
+8. Як | ви | себе | почуваєте
    > [!answer] Як ви себе почуваєте
    > How do you feel?
 
-9. Спорт / корисний / для / здоров'я
+9. Спорт | корисний | для | здоров'я
    > [!answer] Спорт корисний для здоров'я
    > Sport is useful for health.
 
-10. Бажаю / вам / міцного / здоров'я
+10. Бажаю | вам | міцного | здоров'я
     > [!answer] Бажаю вам міцного здоров'я
     > I wish you strong health.
 
-11. Ця / таблетка / від / голови
+11. Ця | таблетка | від | голови
     > [!answer] Ця таблетка від голови
     > This pill is for the head(ache).
 
-12. Ви / вже / одужали
+12. Ви | вже | одужали
     > [!answer] Ви вже одужали
     > Have you recovered already?
 
@@ -597,31 +578,13 @@ Take care and stay healthy!
    > [!options] кашлю | кашель | кашля | кашлем
    > [!explanation] Genitive negation: немає кашлю.
 
-10. Мої очі блакитні.
-    > [!error] блакитні
-    > [!answer] блакитні
-    > [!options] блакитні | блакитна | блакитний | блакитне
-    > Correct.
-    > Let's make error.
-    > *Мої очі блакитний.* -> блакитні.
-
-    Rephrase 10:
-    Мої очі блакитний.
+10. Мої очі блакитний.
     > [!error] блакитний
     > [!answer] блакитні
     > [!options] блакитні | блакитний | блакитна | блакитне
     > [!explanation] Plural adjective.
 
-11. Вона зламала руку.
-    > [!error] руку
-    > [!answer] руку
-    > [!options] руку | рука | руки | рукою
-    > Correct.
-    > Let's make error.
-    > *Вона зламала рука.* -> руку.
-
-    Rephrase 11:
-    Вона зламала рука.
+11. Вона зламала рука.
     > [!error] рука
     > [!answer] руку
     > [!options] руку | рука | руки | рукою

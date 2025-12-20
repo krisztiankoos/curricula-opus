@@ -1,30 +1,27 @@
 ---
-module: 70
-level: B1
-type: vocabulary
-title: Українська музика сьогодні
-transliterated_title: Ukrayinska muzyka siohodni
-english_title: Ukrainian Music Today
-cefr: B1
-estimated_time: 90
-prerequisites: [69]
+module: b1-70
+title: "Українська музика сьогодні"
+subtitle: "Ukrainian Music Today"
+version: "1.0"
+phase: "B1.6 Contemporary Ukraine"
+pedagogy: "TTT"
+duration: 75
+transliteration: "none"
+tags: ["vocabulary", "music", "culture", "contemporary"]
+grammar: ["compound-nouns", "vocabulary-expansion"]
+objectives:
+  - "Learner can discuss Ukrainian music genres and artists"
+  - "Learner can describe songs, albums, and concerts"
+  - "Learner can express musical preferences in Ukrainian"
+  - "Learner understands Ukraine's Eurovision history and cultural significance of music"
 vocabulary_count: 25
-immersion_target: 0.67
 ---
 
 # Українська музика сьогодні
 
-
 > 🎯 **Чому це важливо**
 >
 > Українська музика переживає ренесанс. Від фолку до електроніки, від Океану Ельзи до Go_A — музика — вікно в сучасну українську душу.
-
-> [!resources]
-> **Recommended Resources**
->
-> 📺 **Video:** [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) - Ukraїner.
-> 📺 **Video:** [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4) - Ukraїner.
-> 📺 **Video:** [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) - Ukraїner Q.
 
 ## Діагностика | Diagnostics
 
@@ -38,7 +35,6 @@ immersion_target: 0.67
 >
 > **Score 1-15?** Focus on core vocabulary below.
 > **Score 16-25?** Ready for advanced music discussions!
-
 
 ### Що ви знаєте про українську музику? | What do you know about Ukrainian music?
 
@@ -338,6 +334,16 @@ explanation: Пісня присвячена депортації кримськ
 > This historic song dates back centuries but gained prominence during Ukraine's independence struggles. The version we know today was arranged in 1914 for the Ukrainian Sich Riflemen (Січові Стрільці). In 2022, it experienced a massive revival as a symbol of Ukrainian resistance. **Андрій Хливнюк** (Boombox) performed it from a Kyiv balcony during the Russian invasion, and the video went viral worldwide.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Contemporary Ukraine:**
+> - 📺 [Чим для вас є Україна? (What is Ukraine to you?)](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner identity documentary
+> - 📺 [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) — Ukraїner cultural analysis
+> - 📺 [Contemporary Ukrainian Cuisine with Klopotenko](https://www.youtube.com/@klopotenko) — Authentic recipes and food culture
+> - 📺 [History of Ukrainian Language & Dialects](https://www.youtube.com/@Istoria-Movy) — Academic documentary by Історія мови
 
 ## Практика | Practice
 

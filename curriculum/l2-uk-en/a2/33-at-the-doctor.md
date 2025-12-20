@@ -75,7 +75,7 @@ We use "У мене..." + Noun.
 - **У мене кашель.** (I have a cough).
 - **У мене нежить.** (I have a runny nose).
 - **У мене грип.** (I have the flu).
-- **Мені погано.** (I feel bad / sick).
+- **Мені погано.** (I feel bad | sick).
 
 ## 3. At the Pharmacy (Аптека)
 
@@ -93,10 +93,10 @@ We use "У мене..." + Noun.
 > You first see a **Сімейний лікар** (Family doctor), who gives you a referral ("направлення").
 
 **Key Phrases for the Visit:**
-1. **Що вас турбує?** (What bothers you? / What's wrong?).
-2. **Дихайте / Не дихайте.** (Breathe / Don't breathe).
+1. **Що вас турбує?** (What bothers you? | What's wrong?).
+2. **Дихайте | Не дихайте.** (Breathe | Don't breathe).
 3. **Відкрийте рот.** (Open mouth).
-4. **Видужуйте!** (Get well soon! / Imperative).
+4. **Видужуйте!** (Get well soon! | Imperative).
 
 ---
 
@@ -218,7 +218,7 @@ The word **серце** (heart) is huge in Ukrainian culture.
 In English "To be sick" is a state.
 In Ukrainian **Хворіти** (to be sick) is an active ongoing process.
 
-- *Я хворію.* (I am sicking / I am ill).
+- *Я хворію.* (I am sicking | I am ill).
 - *Вона часто хворіє.* (She often gets sick).
 
 Don't confuse with **Боліти** (to hurt).
@@ -335,22 +335,22 @@ Don't confuse with **Боліти** (to hurt).
 
 ## unjumble: Doctors Orders
 
-1. що / турбує / вас / сьогодні
+1. що | турбує | вас | сьогодні
    > [!answer] Що вас турбує сьогодні
 
-2. у / болить / мене / дуже / голова
+2. у | болить | мене | дуже | голова
    > [!answer] У мене дуже болить голова
 
-3. таблетку / прийміть / цю / їжі / після
+3. таблетку | прийміть | цю | їжі | після
    > [!answer] Прийміть цю таблетку після їжі
 
-4. лікаря / мені / викликати / треба
+4. лікаря | мені | викликати | треба
    > [!answer] Мені треба викликати лікаря
 
-5. купив / я / в / ліки / аптеці
+5. купив | я | в | ліки | аптеці
    > [!answer] Я купив ліки в аптеці
 
-6. бажаю / вам / здоров'я / міцного
+6. бажаю | вам | здоров'я | міцного
    > [!answer] Бажаю вам міцного здоров'я
 
 ## group-sort: Symptoms vs Remedies
@@ -531,7 +531,7 @@ Don't confuse with **Боліти** (to hurt).
    - [ ] Хворійте!
 
 6. I am sick.
-   - [x] Я хворий / Я хворію.
+   - [x] Я хворий | Я хворію.
    - [ ] У мене хворий.
 
 ---

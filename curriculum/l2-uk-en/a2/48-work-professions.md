@@ -427,51 +427,51 @@ Work is not just about money; it's about passion and contribution. Whether you a
 
 ## unjumble: Unjumble Sentences
 
-1. Я / працюю / в / офісі
+1. Я | працюю | в | офісі
    > [!answer] Я працюю в офісі
    > I work in an office.
 
-2. Він / хоче / бути / лікарем
+2. Він | хоче | бути | лікарем
    > [!answer] Він хоче бути лікарем
    > He wants to be a doctor.
 
-3. Ми / маємо / хорошу / зарплату
+3. Ми | маємо | хорошу | зарплату
    > [!answer] Ми маємо хорошу зарплату
    > We have a good salary.
 
-4. Директор / керує / великою / компанією
+4. Директор | керує | великою | компанією
    > [!answer] Директор керує великою компанією
    > The director manages a large company.
 
-5. Вчитель / любить / свою / роботу
+5. Вчитель | любить | свою | роботу
    > [!answer] Вчитель любить свою роботу
    > The teacher loves his work.
 
-6. Інженер / будує / новий / міст
+6. Інженер | будує | новий | міст
    > [!answer] Інженер будує новий міст
    > The engineer builds a new bridge.
 
-7. Мій / колега / мені / допоміг
+7. Мій | колега | мені | допоміг
    > [!answer] Мій колега мені допоміг
    > My colleague helped me.
 
-8. Вона / пішла / у / відпустку
+8. Вона | пішла | у | відпустку
    > [!answer] Вона пішла у відпустку
    > She went on vacation.
 
-9. Клієнт / завжди / має / рацію
+9. Клієнт | завжди | має | рацію
    > [!answer] Клієнт завжди має рацію
    > The client is always right.
 
-10. Програміст / пише / складний / код
+10. Програміст | пише | складний | код
     > [!answer] Програміст пише складний код
     > The programmer writes complex code.
 
-11. Юрист / знає / всі / закони
+11. Юрист | знає | всі | закони
     > [!answer] Юрист знає всі закони
     > The lawyer knows all laws.
 
-12. Студент / мріє / про / кар'єру
+12. Студент | мріє | про | кар'єру
     > [!answer] Студент мріє про кар'єру
     > The student dreams of a career.
 

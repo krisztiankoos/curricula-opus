@@ -1,20 +1,23 @@
 # Audit Report: 12-motion-coming-and-going.md
 **Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1500
-**Overall Status:** ❌ FAIL
+**Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ❌ 1435/1500
+- **Words:** ✅ 1540/1500
 - **Activities:** ✅ 19/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 53.3% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 53.1% (target 40-68% (B1.2 Motion))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,6 +26,7 @@
 | **Діагностика** | ✅ | 83 | Included in Core |
 | **Аналіз** | ✅ | 58 | Included in Core |
 | **Поглиблення** | ⚪️ | 1020 | Skipped |
+| **Need More Practice?** | ⚪️ | 66 | Skipped |
 | **Практика** | ⚪️ | 189 | Skipped |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **Key Takeaways** | ⚪️ | 85 | Skipped |

@@ -25,7 +25,6 @@ vocabulary_count: 25
 
 # Опис змін — Дієслова та вирази зміни
 
-
 > 🎯 **Чому це важливо**
 >
 > «Покращився», «погіршився», «залишився незмінним» — опис змін необхідний для розмов про прогрес, розвиток, тренди. Це мова звітів і аналізу.
@@ -404,6 +403,16 @@ When discussing future changes, use these patterns:
 > 3. **Don't say:** "Зросло в 10%" → **Say:** "Зросло на 10%" or "Зросло у 10 разів"
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

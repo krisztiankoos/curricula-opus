@@ -4,6 +4,7 @@ title: "Контрольна точка I"
 subtitle: "Vocabulary Checkpoint I - Review"
 version: "1.0"
 phase: "B1.5 Vocabulary Expansion I"
+focus: checkpoint
 pedagogy: "TTT"
 duration: 75
 transliteration: "none"
@@ -26,7 +27,6 @@ vocabulary_count: 30
 ---
 
 # Контрольна точка I
-
 
 > 🎯 **Контрольна точка**
 >
@@ -333,6 +333,16 @@ This dialogue combines vocabulary from all four modules:
 > If any topic is below 4 stars, review that module before continuing.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

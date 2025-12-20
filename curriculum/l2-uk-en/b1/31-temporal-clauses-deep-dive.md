@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Часові речення
 
-
 > 🎯 **Чому це важливо**
 >
 > «Коли», «поки», «після того як», «перш ніж» — часові сполучники визначають послідовність подій. Без них ваші розповіді будуть плоскими. Цей модуль дає глибоке занурення в часові відношення.
@@ -286,6 +285,16 @@ Use **у той час як** (at the time when / while) for formal background s
 Understanding which connector creates which relationship is crucial for clear communication in Ukrainian. The choice of connector determines whether events are presented as simultaneous, sequential, or in an immediate cause-effect relationship. Native speakers select connectors automatically, but learners must consciously track these distinctions until they become intuitive.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 

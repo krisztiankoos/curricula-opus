@@ -19,7 +19,6 @@ vocabulary_count: 25
 
 # Untitled
 
-
 > 🎯 **Чому це важливо**
 >
 > Префікси про-, пере- описують рух крізь і через. «Пройшов повз» = минув біля, «перейшов» = перетнув. Ці нюанси критичні для опису маршрутів, напрямків та орієнтування в місті.
@@ -308,6 +307,16 @@ Ukrainian cities have specific infrastructure for crossing naming that you must 
 > Most Soviet-designed avenues (проспекти) in cities like Kyiv or Kharkiv differ from European streets: they are often too wide to cross at street level. You *must* use a **підземний перехід**. Asking "Де тут перехід?" usually implies looking for the underpass entrance.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Motion Verbs:**
+> - 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+> - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
 
 ## Практика
 

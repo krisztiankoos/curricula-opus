@@ -1,9 +1,10 @@
 ---
 module: b1-20
-title: "Контрольна точка — Дієслова руху"
+title: "Контрольна точка: Дієслова руху"
 subtitle: "Checkpoint - Motion Verbs"
-version: "1.0"
+version: "2.0"
 phase: "B1"
+focus: checkpoint
 pedagogy: "checkpoint"
 duration: 60
 transliteration: none
@@ -16,275 +17,300 @@ objectives:
 vocabulary_count: 20
 ---
 
-# Контрольна точка — Дієслова руху
-
+# Контрольна точка: Дієслова руху
 
 > 🎯 **Контрольна точка**
 >
-> Дієслова руху — найскладніша тема B1. Цей контрольний модуль перевіряє, чи ви справді опанували всі 14 пар та їхні префіксальні похідні. Успішне проходження = впевнене володіння системою.
+> Дієслова руху — найскладніша тема B1. Цей контрольний модуль перевіряє, чи ви справді опанували всі 14 пар та їхні префіксальні похідні.
 
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Motion Verbs](https://ukrainianlessons.com/motion-verbs/) - Final review before test.
->
+## Overview
 
-## Діагностика
+This checkpoint reviews skills from Modules 11-19:
 
-## Motion Verbs: A Complete Review
+- **Skill 1:** Determinate vs Indeterminate (single vs repeated motion)
+- **Skill 2:** Motion Verb Pairs (the 8 core pairs)
+- **Skill 3:** Prefix System (adding direction to motion)
+- **Skill 4:** Giving Directions (imperatives with motion verbs)
+- **Skill 5:** Figurative Motion (prefixes on non-motion verbs)
 
-This checkpoint tests your mastery of the Ukrainian motion verb system covered in Modules 11-19. Before beginning, review the key principles.
+---
 
-**What You Should Know:**
+## Skill 1: Determinate vs Indeterminate
 
-**1. The Determinate/Indeterminate System**
-Every Ukrainian motion verb exists in pairs: one for single, directional movement (determinate) and one for repeated or multi-directional movement (indeterminate). For example: іти (walking toward a destination) vs ходити (walking around, going regularly).
+**Model:**
 
-**2. Common Motion Verb Pairs**
+> Я **йду** до магазину.
+> (I **am going** to the store.) — single, directional
+
+> Я **ходжу** до магазину щодня.
+> (I **go** to the store every day.) — repeated, habitual
+
+**Notice:**
+- **йду** (determinate) — one trip, specific direction
+- **ходжу** (indeterminate) — repeated trips, general activity
+
+**Practice:** Choose determinate (Д) or indeterminate (І):
+
+1. Куди ти зараз ___? — "where are you going now?" = single trip
+2. Він часто ___ до бібліотеки. — "often" = repeated
+3. Дивись, вони ___ сюди! — "look, they're coming!" = in progress
+4. Ми ___ на роботу автобусом. — "we take the bus to work" = habitual
+
+<details>
+<summary>Перевірити</summary>
+
+1. **йдеш** (Д — single, in-progress movement)
+2. **ходить** (І — repeated marker "часто")
+3. **йдуть** (Д — visible, directional movement)
+4. **їздимо** (І — habitual, general means of transport)
+
+</details>
+
+**Self-Check:**
+- ☐ Did you use determinate for single, directional movements?
+- ☐ Did you use indeterminate for repeated/habitual actions?
+
+---
+
+## Skill 2: Motion Verb Pairs
+
+**Model — The 8 Core Pairs:**
 
 | Indeterminate | Determinate | English |
 |---------------|-------------|---------|
-| ходити | іти | to walk, to go |
+| ходити | іти | to walk, go |
 | їздити | їхати | to go by vehicle |
 | бігати | бігти | to run |
 | літати | летіти | to fly |
-| плавати | плисти | to swim, to sail |
+| плавати | плисти | to swim/sail |
 | носити | нести | to carry |
 | водити | вести | to lead |
 | возити | везти | to transport |
 
-**3. The Prefix System**
+**Practice:** Fill in the correct verb:
 
-Prefixes add directional meaning and create perfective verbs:
-- **ви-** (out): вийти, виїхати
-- **в-/у-** (in): увійти, в'їхати
-- **при-** (arrival): прийти, приїхати
-- **від-** (departure): відійти, від'їхати
-- **до-** (reaching): дійти, доїхати
-- **за-** (brief stop): зайти, заїхати
-- **пере-** (across, transfer): перейти, переїхати
-- **про-** (through): пройти, проїхати
-- **під-** (approach): підійти, під'їхати
-- **об-** (around): обійти, об'їхати
-- **з-/с-** (down, together): зійти, з'їхати
-- **роз-** (apart): розійтися, роз'їхатися
+1. Літак ___ (fly-DET) над Карпатами. — in flight now
+2. Він часто ___ (run-IND) вранці. — regularly
+3. Вона ___ (carry-DET) важку сумку. — right now
+4. Батько завжди ___ (drive-IND) нас до школи. — habitual
 
-**4. Figurative Extensions**
+<details>
+<summary>Перевірити</summary>
 
-Motion prefixes extend to non-motion verbs, preserving their directional meaning:
-- виробляти (produce = work out)
-- переробляти (redo = work across again)
-- приготувати (prepare = bring to ready)
-- заговорити (start speaking = step into speech)
+1. **летить** (determinate — in-progress flight)
+2. **бігає** (indeterminate — regular habit)
+3. **несе** (determinate — in-progress carrying)
+4. **возить** (indeterminate — habitual transport)
+
+</details>
+
+**Self-Check:**
+- ☐ Can you recall all 8 pairs from memory?
+- ☐ Do you recognize the phonetic patterns (іти/йти, їхати, бігти...)?
 
 ---
 
-> 💡 **Key Insight: The Unified System**
-> 
-> The motion verb system exemplifies Ukrainian grammar's elegance. A small set of base verbs (14 pairs) combined with a small set of prefixes (10-12) creates hundreds of precise verbs. Once you understand the system, you can predict meanings and form new combinations intuitively. This is the power of systematic language learning.
+## Skill 3: Prefix System
+
+**Model — Direction Through Prefixes:**
+
+> Він **вийшов** з кімнати.
+> (He **went out** of the room.) — ви- = out
+
+> Він **увійшов** до кімнати.
+> (He **entered** the room.) — в-/у- = in
+
+> Він **пройшов** повз мене.
+> (He **walked past** me.) — про- = through/past
+
+**The Complete Prefix Set:**
+
+| Prefix | Meaning | Example |
+|--------|---------|---------|
+| ви- | out | вийти, виїхати |
+| в-/у- | in | увійти, в'їхати |
+| при- | arrival | прийти, приїхати |
+| від- | departure | відійти, від'їхати |
+| до- | reaching | дійти, доїхати |
+| за- | brief stop | зайти, заїхати |
+| пере- | across | перейти, переїхати |
+| про- | through/past | пройти, проїхати |
+| під- | approach | підійти, під'їхати |
+| об- | around | обійти, об'їхати |
+
+**Practice:** Complete with the correct prefixed verb:
+
+1. Поїзд ___ (arrive) о п'ятій. — arriving
+2. Ми ___ (cross) вулицю. — crossing
+3. Він ___ (go out) на хвилину. — going out briefly
+4. Вона ___ (reach) до фінішу. — reached the goal
+
+<details>
+<summary>Перевірити</summary>
+
+1. **прибув/приїде** (при- = arrival)
+2. **перейшли** (пере- = across)
+3. **вийшов** (ви- = out)
+4. **дійшла** (до- = reaching)
+
+</details>
+
+**Self-Check:**
+- ☐ Can you predict prefix meanings from context?
+- ☐ Do you understand both literal and figurative uses?
+
+> 💡 **Систематичність української мови**
+>
+> The motion verb system exemplifies Ukrainian grammar's elegance. A small set of base verbs (8 pairs) combined with a small set of prefixes (10-12) creates hundreds of precise verbs. Once you understand the system, you can predict meanings intuitively.
 
 ---
 
-## Самоперевірка
+## Skill 4: Giving Directions
 
-## Self-Assessment Checklist
+**Model — Ukrainian Navigation:**
 
-Before taking this checkpoint, honestly evaluate your skills. Rate yourself 1-5 on each:
+> **Вийдіть** з метро. **Перейдіть** вулицю. **Пройдіть** прямо. **Підійдіть** до церкви.
+> (Exit the metro. Cross the street. Go straight. Approach the church.)
 
-**Motion Verb Recognition:**
-- [ ] I can identify determinate vs indeterminate verbs
-- [ ] I can recognize all 8 common motion verb pairs
-- [ ] I can name all major prefixes and their meanings
+**Practice:** Complete the directions to Софійський собор:
 
-**Motion Verb Production:**
-- [ ] I can describe a complete journey using chained verbs
-- [ ] I can give directions using appropriate imperatives
-- [ ] I can choose the correct prefix for any direction
+> ___ (Exit) з метро "Золоті ворота".
+> ___ (Cross) вулицю Володимирську.
+> ___ (Go straight) два квартали.
+> ___ (Turn into) провулок праворуч.
+> ___ (Approach) до воріт.
 
-**Figurative Motion:**
-- [ ] I can recognize motion prefixes in abstract verbs
-- [ ] I can predict meanings of unfamiliar prefixed verbs
-- [ ] I can use figurative motion expressions naturally
+<details>
+<summary>Перевірити</summary>
 
-**Areas needing review:** If you scored below 3 on any category, review the corresponding modules before continuing.
+- **Вийдіть** з метро "Золоті ворота"
+- **Перейдіть** вулицю Володимирську
+- **Пройдіть** два квартали
+- **Зверніть** у провулок праворуч
+- **Підійдіть** до воріт
 
----
+</details>
 
-> 🌍 **Real World Application: Navigation Test**
-> 
-> The ultimate test of motion verb mastery is real-world navigation. Try this challenge: describe your daily commute entirely in Ukrainian, using appropriate motion verbs for each segment: leaving home, walking to transport, boarding, traveling, exiting, walking to destination, entering. If you can do this fluently, you've mastered the system.
-
----
-
-## Поглиблення
-
-## Complex Scenario Practice
-
-### Scenario 1: A Day Trip to Kyiv
-
-Read this narrative and identify all motion verbs. Then answer the questions:
-
-Минулої суботи ми **поїхали** до Києва. **Вийшли** з дому о шостій ранку і **пішли** на станцію. Там **сіли** на потяг і **доїхали** за три години. На вокзалі ми **вийшли** і **пересіли** на метро. **Проїхали** п'ять зупинок і **вийшли** на Хрещатику.
-
-Спочатку ми **пройшлися** по центру, **зайшли** до кількох магазинів. Потім **перейшли** вулицю і **підійшли** до Софійського собору. **Увійшли** всередину і **оглянули** фрески. Після цього **спустилися** на Поділ і **пообідали** в ресторані.
-
-Увечері ми **повернулися** на вокзал. **Зайшли** до кав'ярні випити кави, а потім **сіли** на потяг і **поїхали** додому. **Доїхали** пізно, але **добре** провели час.
-
-**Questions:**
-1. How many motion verbs with prefixes appear in this text?
-2. Which prefixes indicate entering, and which indicate exiting?
-3. Find examples of "brief stop" verbs (за-).
-4. What verb chain describes the metro journey?
-
-### Scenario 2: Navigation Challenge
-
-You're at Lviv train station and need to reach the Opera House. Complete the directions:
-
-«Спочатку (1)_____ з вокзалу і (2)_____ вулицю Городоцьку. (3)_____ два квартали прямо, потім (4)_____ праворуч. (5)_____ через сквер і (6)_____ до великої білої будівлі. Це Опера. (7)_____ через головний вхід.»
-
-**Answers:** (1) вийдіть, (2) перейдіть, (3) Пройдіть, (4) поверніть, (5) Пройдіть, (6) підійдіть, (7) Увійдіть
-
----
+**Self-Check:**
+- ☐ Can you give directions using appropriate motion imperatives?
+- ☐ Do you know the case requirements after each prefix?
 
 > 🎭 **Cultural Insight: Ukrainian Hospitality**
-> 
-> When Ukrainians invite you to "завітати" or "заходити в гості" (come visit), they're using motion verbs loaded with cultural meaning. The prefix за- suggests a brief, informal visit — but don't be fooled! Ukrainian hospitality means even a "brief" visit may last hours, with abundant food and heartfelt conversation. Understanding these verb nuances opens doors to authentic Ukrainian social life.
+>
+> When visiting someone's home, you'll hear "Заходьте!" (Come in!). This uses за- with the imperfective form ходити because you're being invited in gently, not commanded.
 
 ---
 
-### Public Transport Survival Guide
+## Skill 5: Figurative Motion
 
-Navigating Ukrainian transport requires specific motion verbs for different vehicle types.
+**Model — Prefixes Beyond Physical Motion:**
 
-**Types of Transport:**
-1. **Маршрутка** (Marshrutka): The yellow minibus. Fast, chaotic, cash-only.
-   - *Verb:* **Зупиніть**, будь ласка! (Stop, please!) - said to the driver.
-   - *Action:* **Передати** за проїзд (Pass the fare) - passing cash through other passengers.
+Motion prefixes extend to non-motion verbs, preserving their directional meaning:
 
-2. **Тролейбус / Трамвай** (Trolleybus / Tram): Slower, spacious, stops everywhere.
-   - *Verb:* **Закомпостувати** квиток (Validate the ticket).
-   - *Action:* **Проходити** всередину салону (Move inside the cabin).
+| Verb | Meaning | Motion Logic |
+|------|---------|--------------|
+| виробляти | to produce | work OUT |
+| переробити | to redo | work ACROSS again |
+| приготувати | to prepare | bring TO ready |
+| заговорити | to start speaking | step INTO speech |
+| дослідити | to research | reach TO knowledge |
 
-3. **Метро** (Metro): Fast, deep underground.
-   - *Verb:* **Прикласти** картку (Tap the card).
-   - *Action:* **Спускатися** ескалатором (Descend by escalator).
+**Practice:** Match the prefixed verb to its meaning:
 
-**Key Phrases:**
-- **Ви виходите на наступній?** (Are you getting off at the next one?)
-  - Used in crowded transport to ask people to move so you can exit.
-- **Можна пройти?** (May I pass?)
-  - Used when pushing through a crowd.
-- **Пропустіть, будь ласка.** (Let me through, please.)
+1. проаналізувати — a) to enter (a field)
+2. доїсти — b) to finish eating
+3. переїхати — c) to analyze (through)
+4. ввійти в проєкт — d) to relocate
 
-> ⚠️ **Safety Note**
-> In a marshrutka, never say "Я хочу вийти" (I want to exit). Shout the stop name: "На зупинці, будь ласка!" (At the stop, please!). The driver will stop, and then you **виходите**.
+<details>
+<summary>Перевірити</summary>
 
----
+1. проаналізувати — c) to analyze (work THROUGH data)
+2. доїсти — b) to finish eating (reach completion)
+3. переїхати — d) to relocate (move ACROSS to new place)
+4. ввійти в проєкт — a) to enter/join (go INTO project)
 
-> ⚡ **Myth vs Fact**
-> 
-> **Myth:** "Motion verbs are the hardest part of Ukrainian grammar."
-> **Fact:** Motion verbs are highly regular and predictable. Unlike irregular English verbs (go-went-gone, come-came-come), Ukrainian motion verbs follow consistent patterns. The determinate/indeterminate distinction and prefix system may seem complex at first, but they're far more logical than English's chaotic motion vocabulary. Master the patterns, and you'll find motion verbs become intuitive tools for precise expression.
+</details>
 
----
-
-> 🔗 **Мовна Зв'язка: Систематичність української мови**
-> 
-> Українська система дієслів руху демонструє унікальну логіку слов'янських мов. Кожен префікс несе конкретне просторове значення: ви- означає «назовні», при- означає «прибуття», пере- означає «через». Ці значення зберігаються при додаванні до будь-якого дієслова руху. Порівняйте: вийти, виїхати, вилетіти — усі містять ідею виходу. Така системність робить українську мову передбачуваною та логічною для вивчення.
+**Self-Check:**
+- ☐ Can you recognize motion prefixes in abstract verbs?
+- ☐ Can you predict meanings of unfamiliar prefixed verbs?
 
 ---
 
-## Сценарій 3: Розповідь про відпустку
+## Integration Challenge
 
-Прочитайте цю розповідь і виконайте завдання:
+**A Day of Movement**
 
-Минулого року ми **поїхали** відпочивати до Карпат. Рано-вранці ми **вийшли** з дому і **сіли** в машину. По дорозі ми **заїжджали** на заправки, **виходили** купити каву і знову **сідали** в авто. Через вісім годин ми нарешті **доїхали** до гір.
+Read this story, then answer the questions:
 
-На місці ми **вийшли** з машини і **пішли** реєструватися до готелю. **Увійшли** до рецепції, **отримали** ключі і **піднялися** в номер. Після відпочинку ми **вийшли** на прогулянку. **Обійшли** весь центр містечка, **зайшли** до кількох крамниць і **купили** сувеніри.
+> Вранці Олег **вийшов** з дому о сьомій. Він **пішов** до метро, **спустився** на станцію і **поїхав** на роботу. На роботі він **входив** і **виходив** з кабінету весь день. Після роботи він **зайшов** до магазину купити хліб, а потім **пішов** додому пішки. Увечері він **виїхав** за місто — хотів **обійти** озеро перед сном.
 
-Наступного дня ми **рушили** в гори. **Пройшли** через ліс, **перейшли** кілька річок по містках. На вершині ми **зупинилися** відпочити і помилуватися краєвидами. **Спустилися** іншим шляхом і **повернулися** до готелю втомлені, але щасливі.
+**Questions:**
 
-В останній день ми **зібрали** речі, **виїхали** з готелю і **поїхали** додому. По дорозі **заїхали** до Львова на обід. **Погуляли** по місту, **відвідали** кілька музеїв і нарешті **вирушили** додому. **Доїхали** пізно ввечері, але подорож була чудовою!
+1. How many different motion prefixes are used in this story?
+2. Find all determinate verbs. Why are they determinate?
+3. Why is "входив і виходив" indeterminate?
+4. What's the difference between "пішов до метро" and "пішов додому пішки"?
 
-**Завдання до тексту:**
-1. Підрахуйте всі дієслова руху з префіксами.
-2. Знайдіть приклади дієслів з префіксами: ви-, при-, пере-, за-, об-.
-3. Які дієслова описують рух пішки, а які — на транспорті?
-4. Знайдіть приклади коротких зупинок (за-) і повних входів (в-/у-).
+<details>
+<summary>Перевірити</summary>
 
+1. **7 prefixes:** ви- (вийшов, виходив, виїхав), по- (пішов, поїхав), с- (спустився), за- (зайшов), об- (обійти)
+2. **Determinate verbs:** вийшов, пішов, спустився, поїхав, зайшов, пішов, виїхав — all single, completed actions in sequence
+3. **"Входив і виходив"** is indeterminate because it describes repeated back-and-forth movement throughout the day
+4. Both are determinate but describe different journeys: "до метро" = to the metro (preposition + genitive), "додому" = homeward (adverb), "пішки" = on foot
 
-## Практика: Планування екскурсії
-
-**Турист:** Добрий день! Скажіть, будь ласка, як **дістатися** до Софійського собору?
-
-**Киянин:** Звідси можете **піти** пішки — це хвилин п'ятнадцять. **Вийдіть** на цю вулицю, **пройдіть** два квартали прямо, потім **перейдіть** на інший бік вулиці. **Підійдіть** до великого золотого купола — це і є собор.
-
-**Турист:** А метро тут є?
-
-**Киянин:** Так, можете **сісти** на метро. **Зайдіть** на станцію «Театральна», **проїдьте** одну зупинку до «Золотих воріт», **вийдіть** і **пройдіть** п'ять хвилин пішки.
-
-**Турист:** Дякую! А після собору що варто **відвідати**?
-
-**Киянин:** **Підійдіть** до Михайлівського монастиря — це поруч. Потім можете **спуститися** на Поділ фунікулером. Там **погуляйте** по старих вуличках і **зайдіть** куди-небудь пообідати. Увечері **поверніться** на Хрещатик і **прогуляйтеся** по бульвару.
-
-**Турист:** Чудово! Дякую за пораду!
+</details>
 
 ---
 
 ## Summary
 
-## Motion Verb Mastery Reference
+| Skill | Key Pattern | Quick Test |
+|-------|-------------|------------|
+| Det/Indet | Single vs repeated motion | "Куди ти йдеш?" vs "Куди ти ходиш?" |
+| 8 Pairs | All end in -ти determinate | іти, їхати, бігти, летіти... |
+| Prefixes | Direction + perfectivization | ви- = out, при- = arrival |
+| Directions | Prefixed imperatives | Вийдіть! Перейдіть! Підійдіть! |
+| Figurative | Same prefix logic | ви-робляти = work OUT = produce |
 
-### The Complete Picture
-
-**Foundation:** 8 motion verb pairs (determinate/indeterminate)
-**Direction:** 12 productive prefixes
-**Result:** Hundreds of precise motion expressions
-
-### Quick Decision Tree
-
-**Choosing the right verb:**
-1. Is the motion directional and single? → Use determinate (іти, їхати)
-2. Is the motion repeated or multi-directional? → Use indeterminate (ходити, їздити)
-3. Is the motion completed with direction? → Add prefix (вийти, приїхати)
-
-**Choosing the right prefix:**
-1. What's the spatial relationship? (in/out, toward/away, through/across, around)
-2. Match the prefix to that relationship
-3. Check: Does the prefix + base create the meaning you need?
-
-### Common Pitfalls
-
-| Error | Correction | Reason |
-|-------|-----------|--------|
-| Пройшли вулицю | Перейшли вулицю | "Cross" = пере-, not про- |
-| Прийшов автобусом | Приїхав автобусом | Vehicles = їхати |
-| Зайшов до кімнати | Увійшов до кімнати | Full entry = в-/у- |
-| Вийшов на зупинку | Вийшов на зупинці | Location = locative case |
+**Ready for Modules 21-30?** If you can do all five skills, you're ready for advanced vocabulary and complex sentences!
 
 ---
 
-> 📜 **Historical Note: Motion and Identity**
-> 
-> Ukrainian motion verbs carry deep cultural significance. The determinate/indeterminate distinction may reflect ancient patterns of nomadic movement versus settled life. Prefixes like при- (arrival) and від- (departure) appear in words fundamental to Ukrainian identity: прибуття (arrival, coming), відхід (departure, leaving). The 20th century saw millions of Ukrainians forced into "від'їзд" (departure, emigration) — a word whose prefix captures the pain of separation from homeland.
+## Need More Practice?
+
+> [!resources] External Resources
+>
+> **Motion Verbs:**
+> - 🎧 [Ukrainian Lessons - Motion Verbs](https://www.youtube.com/results?search_query=ukrainian+motion+verbs) — Visual explanations
+> - 📖 [ukrainianlessons.com](https://www.ukrainianlessons.com/) — Grammar guides
+>
+> **Struggling with a skill?** Go back to:
+> - Determinate/Indeterminate → Module 11
+> - Prefixes → Modules 15-16
+> - Figurative Motion → Module 19
 
 ---
 
 ## Activities
 
-## fill-in: Рух і напрямок
-> Заповніть пропуски правильними формами.
+## fill-in: Motion Verb Selection
 
-1. Щодня я ___ на роботу автобусом. (go regularly)
+> Choose the correct motion verb form.
+
+1. Я щодня ___ на роботу автобусом. (go by vehicle)
    > [!answer] їжджу
-   > [!options] їжджу | їду | іду | ходжу
+   > [!options] їду | їжджу | їхав | поїхав
 
-2. Зараз я ___ до офісу. (going now, on foot)
-   > [!answer] іду
-   > [!options] іду | ходжу | їду | їжджу
+2. Зараз він ___ до нас! (walking toward)
+   > [!answer] іде
+   > [!options] іде | ходить | йшов | пішов
 
-3. Він ___ з кімнати і закрив двері. (exited)
-   > [!answer] вийшов
-   > [!options] вийшов | увійшов | зайшов | пройшов
+3. Птах ___ на південь. (flying, single direction)
+   > [!answer] летить
+   > [!options] летить | літає | летів | полетів
 
 4. Ми ___ до Львова потягом. (arrived)
    > [!answer] приїхали
@@ -296,62 +322,35 @@ Navigating Ukrainian transport requires specific motion verbs for different vehi
 
 6. Він ___ повз наш будинок. (walked past)
    > [!answer] пройшов
-   > [!options] пройшов | перейшов | зайшов | обійшов
+   > [!options] пройшов | перейшов | зайшов | вийшов
 
-7. Ми ___ затор. (drove around)
-   > [!answer] об'їхали
-   > [!options] об'їхали | проїхали | переїхали | заїхали
+7. Вона ___ з кімнати. (went out)
+   > [!answer] вийшла
+   > [!options] вийшла | увійшла | зайшла | пройшла
 
-8. Діти ___ по парку. (run around regularly)
-   > [!answer] бігають
-   > [!options] бігають | біжать | вибігають | перебігають
+8. Ми ___ до кінця маршруту. (reached by walking)
+   > [!answer] дійшли
+   > [!options] дійшли | пішли | пройшли | зайшли
 
-9. Літак ___ о третій. (departed)
-   > [!answer] вилетів
-   > [!options] вилетів | прилетів | злетів | летів
+9. ___ праворуч на розі. (turn in)
+   > [!answer] Зверніть
+   > [!options] Зверніть | Пройдіть | Перейдіть | Вийдіть
 
-10. Усі ___ після концерту. (dispersed)
-    > [!answer] розійшлися
-    > [!options] розійшлися | зійшлися | підійшлися | обійшлися
+10. Літак ___ о 15:00. (departs)
+    > [!answer] вилітає
+    > [!options] вилітає | прилітає | летить | літає
 
-11. Завод ___ автомобілі. (produces)
-    > [!answer] виробляє
-    > [!options] виробляє | переробляє | заробляє | доробляє
+11. Вони ___ навколо парку під час пробіжки. (ran around)
+    > [!answer] обігли
+    > [!options] обігли | пробігли | вибігли | добігли
 
-12. Вона ___ до цього питання творчо. (approached, figurative)
-    > [!answer] підійшла
-    > [!options] підійшла | зайшла | пройшла | дійшла
+12. Він ___ до свого друга по дорозі. (stopped by)
+    > [!answer] зайшов
+    > [!options] зайшов | вийшов | пройшов | підійшов
 
-13. Студент ___ своє есе. (redid)
-    > [!answer] переробив
-    > [!options] переробив | виробив | доробив | заробив
+---
 
-14. Він раптом ___ українською. (started speaking)
-    > [!answer] заговорив
-    > [!options] заговорив | виговорив | переговорив | проговорив
-
-## match-up: Пари дієслів руху
-> З'єднайте неозначені дієслова з означеними.
-
-| Неозначене | Означене |
-|------------|----------|
-| ходити | іти |
-| їздити | їхати |
-| бігати | бігти |
-| літати | летіти |
-| плавати | плисти |
-| носити | нести |
-| водити | вести |
-| возити | везти |
-| повзати | повзти |
-| котити | котитися |
-| лазити | лізти |
-| тягати | тягти |
-| гонити | гнати |
-| брести | бродити |
-
-## quiz: Теорія руху
-> Оберіть правильну відповідь.
+## quiz: Motion Verb Theory
 
 1. Яка різниця між «іти» і «ходити»?
    - [x] Іти = поодинокий рух, ходити = регулярний
@@ -368,504 +367,297 @@ Navigating Ukrainian transport requires specific motion verbs for different vehi
    - [ ] Перетнути
    > Through/past = про-.
 
-4. Яке дієслово для «arrive by vehicle»?
-   - [x] приїхати
-   - [ ] прийти
-   > Vehicle = їхати.
+4. «Приходити» — це:
+   - [x] Недоконаний (regular arrivals)
+   - [ ] Доконаний
+   > Indeterminate = imperfective.
 
-5. «Дійти до суті» — це:
-   - [x] Переносне значення
-   - [ ] Буквальне значення
-   > Figurative motion.
+5. «Об'їхати» означає:
+   - [x] Об'їхати навколо
+   - [ ] Доїхати до
+   > Around = об-.
 
-6. Який префікс для «brief stop»?
-   - [x] за-
-   - [ ] при-
-   > За- = drop by briefly.
+6. Який дієслово для «I'm carrying»?
+   - [x] несу
+   - [ ] ношу
+   > Single action = determinate.
 
-7. «Виробляти» містить:
-   - [x] Ви- = out = production
-   - [ ] При- = arrival
-   > Work out = produce.
+7. «Переїхати» означає:
+   - [x] Переміститися або перетнути
+   - [ ] Виїхати
+   > Across/transfer = пере-.
 
-8. Яка пара: летіти?
-   - [x] літати
-   - [ ] плисти
-   > Fly pair.
+8. «Розійтися» використовує:
+   - [x] Роз- = apart
+   - [ ] З- = together
+   > Disperse.
 
-9. «Переробити» означає:
-   - [x] Зробити знову
-   - [ ] Виробити вперше
-   > Redo = пере-.
+9. Який префікс для «approach»?
+   - [x] під-
+   - [ ] об-
+   > Approach = під-.
 
-10. «Об'їхати» означає:
-    - [x] Оминути на транспорті
-    - [ ] Проїхати через
-    > Around = об-.
+10. «До-» означає:
+    - [x] Дійти до мети
+    - [ ] Від'їхати геть
+    > До- = дістатися до місця.
 
-11. «Розійтися» використовує:
-    - [x] Роз- = apart
-    - [ ] З- = together
-    > Disperse.
+11. Імперитив «Виходьте!» означає:
+    - [x] Виходьте!
+    - [ ] Заходьте!
+    > ви- + недоконаний = ввічлива команда.
 
-12. Який префікс для «approach»?
-    - [x] під-
-    - [ ] об-
-    > Approach = під-.
+12. Яка різниця між «летіти» і «літати»?
+    - [x] Летіти = зараз/напрямок, літати = регулярно
+    - [ ] Те саме
+    > Same det/indet pattern.
 
-13. «Зійти сходами» означає:
-    - [x] Спуститися
-    - [ ] Підійти
-    > Down = з-.
+---
 
-14. Яка пара: везти?
-    - [x] возити
-    - [ ] водити
-    > Transport pair.
+## match-up: Prefix Meanings
 
-## error-correction: Виправте помилку
-> Знайдіть і виправте помилку.
+| Prefix | Meaning |
+|--------|---------|
+| ви- | out |
+| в-/у- | in |
+| при- | arrival |
+| від- | departure |
+| до- | reaching |
+| за- | brief stop |
+| пере- | across |
+| про- | through/past |
+| під- | approach |
+| об- | around |
+| роз- | apart |
+| з-/с- | down/together |
 
-1. Щодня я їду на роботу. (regularly)
-   > [!error] їду
-   > [!answer] їжджу
-   > [!options] їду | їжджу | ходжу | хочу
-   > [!explanation] Регулярний рух = неозначене.
+---
 
-2. Автобус прийшов о третій. (arrived)
-   > [!error] прийшов
-   > [!answer] приїхав
-   > [!options] прийшов | приїхав | пішов | поїхав
-   > [!explanation] Транспорт = їхати.
+## true-false: Motion Verb Rules
 
-3. Ми пройшли вулицю. (crossed)
-   > [!error] пройшли
-   > [!answer] перейшли
-   > [!options] пройшли | перейшли | обійшли | зайшли
-   > [!explanation] Cross = пере-.
+> Decide if each statement is true or false.
 
-4. Він зайшов до кімнати. (entered to stay)
-   > [!error] зайшов
-   > [!answer] увійшов
-   > [!options] зайшов | увійшов | вийшов | пройшов
-   > [!explanation] Full entry = в-/у-.
+- [x] Determinate verbs describe single, directional movement.
+  > Correct! Like іти (going somewhere specific).
 
-5. Завод переробляє машини. (produces)
-   > [!error] переробляє
-   > [!answer] виробляє
-   > [!options] переробляє | виробляє | заробляє | доробляє
-   > [!explanation] Produce = ви-.
+- [ ] Indeterminate verbs can only be imperfective.
+  > Actually, both can be imperfective; the distinction is direction/repetition.
 
-6. Вона виговорила правду. (started speaking)
-   > [!error] виговорила
-   > [!answer] заговорила
-   > [!options] виговорила | заговорила | переговорила | проговорила
-   > [!explanation] Start = за-.
+- [x] Adding a prefix to a determinate verb makes it perfective.
+  > Yes! вийти, приїхати etc. are perfective.
 
-7. Діти біжать по парку кожен день. (regularly)
-   > [!error] біжать
-   > [!answer] бігають
-   > [!options] біжать | бігають | вибігають | перебігають
-   > [!explanation] Regular = indeterminate.
+- [x] «Заходити» means to enter casually/repeatedly.
+  > Correct! Indeterminate with за- prefix.
 
-8. Ми проїхали затор. (around)
-   > [!error] проїхали
-   > [!answer] об'їхали
-   > [!options] проїхали | об'їхали | заїхали | переїхали
-   > [!explanation] Around = об-.
+- [ ] «Пройти» and «перейти» mean the same thing.
+  > No! Пройти = go through/past, перейти = cross.
 
-9. Потяг підійшов о шостій. (departed)
-   > [!error] підійшов
-   > [!answer] відійшов
-   > [!options] підійшов | відійшов | прийшов | зайшов
-   > [!explanation] Depart = від-.
+- [x] Motion prefixes can be used with non-motion verbs.
+  > Yes! Like виробляти, переробити.
 
-10. Він вийшов сходами вниз. (descended)
-    > [!error] вийшов
-    > [!answer] зійшов
-    > [!options] вийшов | зійшов | пройшов | обійшов
-    > [!explanation] Down = з-.
+- [x] «Ходити» is used for round trips.
+  > Correct! "Going and coming back" = indeterminate.
 
-11. Усі зійшлися після концерту. (dispersed)
-    > [!error] зійшлися
-    > [!answer] розійшлися
-    > [!options] зійшлися | розійшлися | підійшлися | обійшлися
-    > [!explanation] Apart = роз-.
+- [ ] «Бігати» is the determinate form.
+  > No! Бігати is indeterminate; бігти is determinate.
 
-12. Вона дійшла сюди автобусом. (by bus)
-    > [!error] дійшла
-    > [!answer] доїхала
-    > [!options] дійшла | доїхала | зайшла | перейшла
-    > [!explanation] Vehicle = їхати.
+---
 
-13. Я ходжу до офісу зараз. (right now)
-    > [!error] ходжу
-    > [!answer] іду
-    > [!options] ходжу | іду | їду | їжджу
-    > [!explanation] Single trip now = determinate.
+## group-sort: Determinate vs Indeterminate
 
-14. Птахи летять на південь щоосені. (regularly)
-    > [!error] летять
-    > [!answer] літають
-    > [!options] летять | літають | вилітають | прилітають
-    > [!explanation] Regularly = indeterminate.
+> Sort these verbs into the correct category.
 
-## group-sort: Дієслова за типом
-> Розподіліть дієслова за типом.
-
-### Означені
+### Determinate
 - іти
 - їхати
 - бігти
 - летіти
-- плисти
 - нести
+- вести
 
-### Неозначені
+### Indeterminate
 - ходити
 - їздити
 - бігати
 - літати
-- плавати
 - носити
-
-### Префіксні (вхід/вихід)
-- увійти
-- вийти
-- в'їхати
-- виїхати
-- влетіти
-- вилетіти
-
-## unjumble: Подорожі
-> Розташуйте слова у правильному порядку.
-
-1. я / щодня / роботу / на / їжджу
-   > [!answer] Я щодня їжджу на роботу
-   > (I go to work daily.) [5 words]
-
-2. з / вийшов / дому / він / рано
-   > [!answer] Він рано вийшов з дому
-   > (He left home early.) [5 words]
-
-3. вулицю / перейдіть / цю / обережно
-   > [!answer] Обережно перейдіть цю вулицю
-   > (Carefully cross this street.) [4 words]
-
-4. до / приїхали / ми / Львова / потягом
-   > [!answer] Ми приїхали до Львова потягом
-   > (We arrived in Lviv by train.) [5 words]
-
-5. повз / він / будинок / пройшов / наш
-   > [!answer] Він пройшов повз наш будинок
-   > (He walked past our house.) [5 words]
-
-6. затор / об'їхали / ми
-   > [!answer] Ми об'їхали затор
-   > (We drove around the traffic jam.) [3 words]
-
-7. автомобілі / завод / виробляє
-   > [!answer] Завод виробляє автомобілі
-   > (The factory produces cars.) [3 words]
-
-8. українською / він / заговорив / раптом
-   > [!answer] Він раптом заговорив українською
-   > (He suddenly started speaking Ukrainian.) [4 words]
-
-9. концерту / розійшлися / після / всі
-   > [!answer] Після концерту всі розійшлися
-   > (After the concert everyone dispersed.) [4 words]
-
-10. третій / о / вилетів / літак
-    > [!answer] Літак вилетів о третій
-    > (The plane departed at three.) [4 words]
-
-11. переробив / есе / студент / своє
-    > [!answer] Студент переробив своє есе
-    > (The student redid his essay.) [4 words]
-
-12. творчо / вона / підійшла / питання / до / цього
-    > [!answer] Вона творчо підійшла до цього питання
-    > (She approached this question creatively.) [6 words]
-
-13. парку / по / бігають / діти
-    > [!answer] Діти бігають по парку
-    > (Children run around the park.) [4 words]
-
-14. ми / через / парк / пройшли
-    > [!answer] Ми пройшли через парк
-    > (We walked through the park.) [4 words]
-
-## true-false: Знання системи
-> Визначте, чи правильне твердження.
-
-- [x] Означені дієслова описують поодинокий рух.
-  > Правильно! Single directional.
-
-- [x] Неозначені дієслова описують регулярний рух.
-  > Правильно! Regular/multi-directional.
-
-- [ ] «Їти» і «ходити» — синоніми.
-  > Неправильно! Їхати = vehicle, ходити = on foot.
-
-- [x] Префікси додають напрямок до дієслів руху.
-  > Правильно! Direction = prefix.
-
-- [x] Ви- означає «назовні».
-  > Правильно! Out.
-
-- [ ] «Пройти» і «перейти» — синоніми.
-  > Неправильно! Through vs across.
-
-- [x] Префікси руху працюють і з абстрактними дієсловами.
-  > Правильно! Figurative extension.
-
-- [x] За- може означати раптовий початок.
-  > Правильно! Sudden start.
-
-- [ ] Усі дієслова руху мають пари.
-  > Неправильно! Not all have perfect pairs.
-
-- [x] «Виробляти» етимологічно пов'язане з рухом.
-  > Правильно! Work out = produce.
-
-- [x] Об- означає рух навколо.
-  > Правильно! Around.
-
-- [ ] «Прийти» і «приїхати» — синоніми.
-  > Неправильно! Walk vs vehicle.
-
-- [x] Роз- означає рух у різні боки.
-  > Правильно! Disperse.
-
-- [x] Під- означає наближення.
-  > Правильно! Approach.
-
-## cloze: Комплексний тест
-> Заповніть пропуски правильними формами.
-
-1. їжджу | їду | ходжу | йду
-   > [!answer] їжджу
-
-2. їду | їжджу | ходжу | йду
-   > [!answer] їду
-
-3. виходжу | заходжу | входжу | підходжу
-   > [!answer] виходжу
-
-4. переходжу | проходжу | обходжу | заходжу
-   > [!answer] переходжу
-
-5. заходжу | входжу | виходжу | проходжу
-   > [!answer] заходжу
-
-6. проходжу | переходжу | обходжу | заходжу
-   > [!answer] проходжу
-
-7. підходжу | обходжу | заходжу | проходжу
-   > [!answer] підходжу
-
-8. входимо | виходимо | заходимо | проходимо
-   > [!answer] входимо
-
-9. виходжу | входжу | заходжу | проходжу
-   > [!answer] виходжу
-
-10. повертаюся | вертаюся | приїжджаю | приходжу
-   > [!answer] повертаюся
-
-11. виробляє | переробляє | заробляє | доробляє
-   > [!answer] виробляє
-
-12. дійти | підійти | зайти | перейти
-   > [!answer] дійти
-
-13. розійшлися | зійшлися | підійшлися | обійшлися
-   > [!answer] розійшлися
-
-14. перейшов | пройшов | зайшов | дійшов
-   > [!answer] перейшов
-
-## select: Визначення типу
-> Оберіть правильний варіант.
-
-1. «Ходити» — це:
-   - [x] Неозначене дієслово
-   - [ ] Означене дієслово
-   > Indeterminate.
-
-2. «Їхати» — це:
-   - [x] Означене дієслово
-   - [ ] Неозначене дієслово
-   > Determinate.
-
-3. Ви- в «вийти» означає:
-   - [x] Вихід назовні
-   - [ ] Вхід всередину
-   > Out.
-
-4. При- в «приїхати» означає:
-   - [x] Прибуття
-   - [ ] Відбуття
-   > Arrival.
-
-5. Пере- в «перейти» означає:
-   - [x] Через/поперек
-   - [ ] Повз
-   > Across.
-
-6. Про- в «пройти» означає:
-   - [x] Через/повз
-   - [ ] Поперек
-   > Through/past.
-
-7. За- в «заговорити» означає:
-   - [x] Початок дії
-   - [ ] Закінчення дії
-   > Start.
-
-8. Ви- в «виробляти» означає:
-   - [x] Виробництво (out = produce)
-   - [ ] Повторення
-   > Production.
-
-9. Пере- в «переробити» означає:
-   - [x] Знову/по-новому
-   - [ ] Вперше
-   > Redo.
-
-10. Роз- в «розійтися» означає:
-    - [x] В різні боки
-    - [ ] Разом
-    > Apart.
-
-11. Під- в «підійти» означає:
-    - [x] Наближення
-    - [ ] Відхід
-    > Approach.
-
-12. Об- в «об'їхати» означає:
-    - [x] Навколо
-    - [ ] Через
-    > Around.
-
-13. До- в «дійти» означає:
-    - [x] Досягнення мети
-    - [ ] Початок руху
-    > Reaching.
-
-14. Від- в «відійти» означає:
-    - [x] Відхід
-    - [ ] Прибуття
-    > Departure.
-
-## translate: Фінальний тест
-> Перекладіть українською.
-
-1. I go to work by bus every day.
-   > [!answer] Я їжджу на роботу автобусом щодня
-
-2. She left the room and closed the door.
-   > [!answer] Вона вийшла з кімнати і закрила двері
-
-3. We arrived in Kyiv by train.
-   > [!answer] Ми приїхали до Києва потягом
-
-4. Cross the street at the traffic light!
-   > [!answer] Перейдіть вулицю на світлофорі
-
-5. He walked past our house.
-   > [!answer] Він пройшов повз наш будинок
-
-6. We drove around the traffic jam.
-   > [!answer] Ми об'їхали затор
-
-7. The factory produces cars.
-   > [!answer] Завод виробляє автомобілі
-
-8. She approached this problem creatively.
-   > [!answer] Вона творчо підійшла до цієї проблеми
-
-9. The student redid his essay.
-   > [!answer] Студент переробив своє есе
-
-10. He suddenly started speaking Ukrainian.
-    > [!answer] Він раптом заговорив українською
-
-11. After the concert, everyone dispersed.
-    > [!answer] Після концерту всі розійшлися
-
-12. The plane departed at three.
-    > [!answer] Літак вилетів о третій
-
-13. Children run around the park regularly.
-    > [!answer] Діти бігають по парку
-
-14. We walked through the forest.
-    > [!answer] Ми пройшли через ліс
-
-## dialogue-reorder: Розмова про дорогу
-> Розташуйте репліки у правильному порядку.
-
-1. — Як ви щодня дістаєтеся на роботу?
-   > [!answer] 1
-
-2. — Зазвичай я їжджу автобусом.
-   > [!answer] 2
-
-3. — А сьогодні?
-   > [!answer] 3
-
-4. — Сьогодні іду пішки, бо гарна погода.
-   > [!answer] 4
-
-5. — Це далеко?
-   > [!answer] 5
-
-6. — Ні, хвилин двадцять, якщо йти швидко.
-   > [!answer] 6
-
-## mark-the-words: Знайдіть усі дієслова руху
-> Позначте всі дієслова руху в тексті.
-
-1. Щодня я *їжджу* на роботу автобусом.
-2. Сьогодні я *вийшов* з дому раніше.
-3. Я *перейшов* вулицю на світлофорі.
-4. По дорозі я *зайшов* до кав'ярні.
-5. Потім я *пройшов* через парк.
-6. Біля офісу я *підійшов* до колеги.
-7. Ми разом *увійшли* до будівлі.
-8. Увечері я *вийшов* о шостій.
-9. Додому я *поїхав* на метро.
-10. На станції я *пересів* на автобус.
-11. Автобус *проїхав* через усе місто.
-12. Нарешті я *дійшов* до дому.
-13. Діти *бігали* по двору весь день.
-14. Птахи *літали* над парком.
+- водити
 
 ---
 
-## Словник
+## error-correction: Fix the Motion Verb
 
-| Слово | Вимова | Переклад | ЧМ | Примітка |
-|-------|--------|----------|-----|----------|
-| переміщення | /pɛrɛˈmiʃtʃɛnʲa/ | displacement, movement | ім. | офіційний термін |
-| траєкторія | /trajɛkˈtɔrʲija/ | trajectory | ім. | |
-| швидкість | /ʃvɪdˈkistʲ/ | speed | ім. | |
-| напрямок | /naprʲaˈmɔk/ | direction | ім. | |
-| маршрут | /marʃˈrut/ | route | ім. | від франц. |
-| мандрівка | /manˈdrivka/ | journey, travel | ім. | |
-| подорож | /pɔdɔˈrɔʒ/ | trip, travel | ім. | |
-| відправлення | /vidpravˈlɛnʲa/ | departure | ім. | |
-| прибуття | /prɪˈbutʲa/ | arrival | ім. | |
-| пересадка | /pɛrɛˈsadka/ | transfer, connection | ім. | |
-| зупинка | /zuˈpɪnka/ | stop | ім. | |
-| кінцева | /kinˈtsɛva/ | terminal, final stop | ім. | |
-| проміжний | /prɔˈmiʒnɪj/ | intermediate | прикм. | |
-| прямий | /prʲaˈmɪj/ | direct | прикм. | |
-| пішохідний | /piʃɔˈxidnɪj/ | pedestrian | прикм. | |
-| транспортний | /transpɔrtˈnɪj/ | transport (adj) | прикм. | |
-| регулярний | /rɛɦuˈlʲarnɪj/ | regular | прикм. | |
-| одноразовий | /ɔdnɔˈrazɔvɪj/ | single, one-time | прикм. | |
-| багаторазовий | /baɦatɔˈrazɔvɪj/ | multiple, repeated | прикм. | |
-| означений | /ɔˈznatʃɛnɪj/ | determinate | прикм. | граматичний термін |
+> Find and correct the error in each sentence.
+
+1. Я ходжу до школи зараз.
+   > [!error] ходжу
+   > [!answer] іду
+   > [!options] ходжу | іду | пійшов | ходив
+   > [!explanation] "Зараз" (now) requires determinate іти.
+
+2. Він летить до Києва кожного тижня.
+   > [!error] летить
+   > [!answer] літає
+   > [!options] летить | літає | полетів | летать
+   > [!explanation] "Кожного тижня" (every week) requires indeterminate.
+
+3. Вона прийшла до мене часто.
+   > [!error] прийшла
+   > [!answer] приходила
+   > [!options] прийшла | приходила | приходить | прийшло
+   > [!explanation] "Часто" requires indeterminate приходити.
+
+4. Ми переїхали вулицю вчора.
+   > [!error] переїхали
+   > [!answer] перейшли
+   > [!options] переїхали | перейшли | перейшов | переходили
+   > [!explanation] Crossing on foot = перейти (not vehicle).
+
+5. Він вийшов з кімнати в кімнату.
+   > [!error] вийшов
+   > [!answer] вийшов з кімнати
+   > [!options] вийшов з кімнати | увійшов до кімнати | пройшов кімнату | перейшов кімнату
+   > [!explanation] "Вийти" means exit, can't enter another room. Need увійшов.
+
+6. Поїзд в'їхав до станції.
+   > [!error] в'їхав до
+   > [!answer] в'їхав на
+   > [!options] в'їхав до | в'їхав на | виїхав з | приїхав до
+   > [!explanation] Trains arrive "на станцію" not "до".
+
+---
+
+## unjumble: Build Direction Sentences
+
+> Put the words in the correct order.
+
+1. метро | з | вийдіть | Золоті | ворота
+   > [!answer] Вийдіть з метро Золоті ворота
+
+2. вулицю | перейдіть | Хрещатик
+   > [!answer] Перейдіть вулицю Хрещатик
+
+3. пройдіть | квартали | два | прямо
+   > [!answer] Пройдіть прямо два квартали
+
+4. праворуч | заверніть | кутку | на
+   > [!answer] Заверніть праворуч на кутку
+
+5. церкви | до | підійдіть
+   > [!answer] Підійдіть до церкви
+
+6. до | магазину | зайшли | ми | по | хліб
+   > [!answer] Ми зайшли до магазину по хліб
+
+7. вони | вже | приїхали | годину | годину | тому
+   > [!answer] Вони вже приїхали годину тому
+
+8. вилетів | літак | вчасно
+   > [!answer] Літак вилетів вчасно
+
+---
+
+## cloze: A Complete Journey
+
+> Fill in the correct motion verbs.
+
+Вранці я [___:1] з дому о сьомій. [___:2] до метро пішки. На метро [___:3] до центру. Там [___:4] з вагону і [___:5] на ескалаторі. На роботі весь день [___:6] з кабінету в кабінет. Увечері [___:7] до магазину і купив хліб. Потім [___:8] додому.
+
+1. вийшов | вийшла | входив
+   > [!answer] вийшов
+
+2. Пішов | Ходив | Йшов
+   > [!answer] Пішов
+
+3. доїхав | їздив | їхав
+   > [!answer] доїхав
+
+4. вийшов | входив | пройшов
+   > [!answer] вийшов
+
+5. піднявся | спустився | ходив
+   > [!answer] піднявся
+
+6. ходив | ішов | пішов
+   > [!answer] ходив
+
+7. зайшов | вийшов | пройшов
+   > [!answer] зайшов
+
+8. пішов | ходив | йшов
+   > [!answer] пішов
+
+---
+
+## translate: Ukrainian to English
+
+> Choose the correct translation.
+
+1. Він вийшов з офісу.
+   - [x] He went out of the office.
+   - [ ] He entered the office.
+   - [ ] He passed the office.
+
+2. Ми перейшли вулицю.
+   - [x] We crossed the street.
+   - [ ] We walked past the street.
+   - [ ] We went along the street.
+
+3. Вона приїхала вчора.
+   - [x] She arrived yesterday.
+   - [ ] She left yesterday.
+   - [ ] She was traveling yesterday.
+
+4. Заходьте, будь ласка!
+   - [x] Come in, please!
+   - [ ] Exit, please!
+   - [ ] Go past, please!
+
+5. Він дійшов до кінця.
+   - [x] He reached the end.
+   - [ ] He left before the end.
+   - [ ] He ran to the end.
+
+6. Поїзд від'їхав о третій.
+   - [x] The train departed at three.
+   - [ ] The train arrived at three.
+   - [ ] The train was delayed until three.
+
+---
+
+## dialogue-reorder: Asking for Directions
+
+- Перепрошую, як дійти до Софійського собору?
+- Це недалеко. Спочатку вийдіть з метро на Майдані.
+- Добре, а далі?
+- Перейдіть вулицю і йдіть прямо.
+- А потім?
+- Пройдіть два квартали і заверніть праворуч. Собор буде перед вами.
+- Дякую за допомогу!
+
+---
+
+## Vocabulary
+
+| Word | IPA | Translation | POS | Gender | Note |
+|------|-----|-------------|-----|--------|------|
+| іти | /iˈtɪ/ | to go (on foot, det.) | verb | — | determinate |
+| ходити | /xoˈdɪtɪ/ | to go (on foot, indet.) | verb | — | indeterminate |
+| їхати | /ˈjiˈxɑtɪ/ | to go (by vehicle, det.) | verb | — | determinate |
+| їздити | /ˈjizdɪtɪ/ | to go (by vehicle, indet.) | verb | — | indeterminate |
+| бігти | /ˈbiɦtɪ/ | to run (det.) | verb | — | determinate |
+| бігати | /biˈɦɑtɪ/ | to run (indet.) | verb | — | indeterminate |
+| летіти | /lɛˈtitɪ/ | to fly (det.) | verb | — | determinate |
+| літати | /liˈtɑtɪ/ | to fly (indet.) | verb | — | indeterminate |
+| вийти | /ˈʋɪjtɪ/ | to exit | verb | — | ви- + іти (pf.) |
+| увійти | /uˈʋijtɪ/ | to enter | verb | — | у- + війти (pf.) |
+| прийти | /ˈprɪjtɪ/ | to arrive (on foot) | verb | — | при- + іти (pf.) |
+| приїхати | /prɪˈjixɑtɪ/ | to arrive (by vehicle) | verb | — | при- + їхати (pf.) |
+| перейти | /pɛrɛjˈtɪ/ | to cross | verb | — | пере- + іти (pf.) |
+| пройти | /proˈjtɪ/ | to pass, go through | verb | — | про- + іти (pf.) |
+| дійти | /dijˈtɪ/ | to reach (on foot) | verb | — | до- + іти (pf.) |
+| зайти | /zɑjˈtɪ/ | to stop by | verb | — | за- + іти (pf.) |
+| підійти | /pidijˈtɪ/ | to approach | verb | — | під- + іти (pf.) |
+| обійти | /obijˈtɪ/ | to go around | verb | — | об- + іти (pf.) |
+| виробляти | /ʋɪrɔbˈlʲɑtɪ/ | to produce | verb | — | ви- + figurative |
+| переробляти | /pɛrɛrɔbˈlʲɑtɪ/ | to redo | verb | — | пере- + figurative |

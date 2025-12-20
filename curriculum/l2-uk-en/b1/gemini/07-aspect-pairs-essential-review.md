@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1539/1500
+- **Words:** ✅ 1645/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/5
+- **Engagement:** ✅ 6/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 80/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 51.2% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 56.2% (target 40-68% (B1.1 Aspect))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Видові пари — Найважливіші 40** | ⚪️ | 39 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Test Your Current Knowledge** | ⚪️ | 154 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -29,6 +36,7 @@
 | **Applying Aspect Pairs in Real Conversations** | ✅ | 52 | Included in Core |
 | **Діалог: На роботі** | ✅ | 102 | Included in Core |
 | **Діалог: У магазині** | ✅ | 249 | Included in Core |
+| **Need More Practice?** | ⚪️ | 67 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **The Practice Strategy** | ⚪️ | 52 | Skipped |
 | **Вправа 1: Доповніть пари** | ⚪️ | 14 | Skipped |
@@ -45,7 +53,7 @@
 | **true-false: Правила видових пар** | 🎮 | 14 | Activity (14 items, min 8) |
 | **cloze: Діалог з видовими парами** | 🎮 | 14 | Activity (14 items, min 6) |
 | **select: Виберіть правильний вид** | 🎮 | 14 | Activity (14 items, min 6) |
-| **translate: Переклад** | 🎮 | 14 | Activity (14 items, min 6) |
+| **translate: Переклад з видовими парами** | 🎮 | 14 | Activity (14 items, min 6) |
 | **mark-the-words: Знайдіть доконаний вид** | 🎮 | 14 | Activity (14 items, min 6) |
-| **dialogue-reorder: Розташуйте діалог** | 🎮 | 6 | Activity (6 items, min 5) |
+| **dialogue-reorder: Розмова в офісі** | 🎮 | 6 | Activity (6 items, min 5) |
 | **Словник** | ⚪️ | 0 | Skipped |

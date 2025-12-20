@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Активні дієприкметники та конструкції
 
-
 > 🎯 **Чому це важливо**
 >
 > «Читаючий студент», «прочитана книга» — дієприкметники перетворюють дії на опис. Це мова науки, журналістики та формального стилю. Без них ваша українська буде звучати надто простою.
@@ -224,7 +223,6 @@ Transform these bureaucratic texts into natural Ukrainian:
 
 ---
 
-
 ## The Stylistic Trap: Why "Active" isn't always good
 
 In English, active voice ("The running man") is often preferred over relative clauses ("The man who is running").
@@ -270,6 +268,16 @@ Use these forms to add emotional depth to your descriptions of nature and people
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
+
 ## Практика
 
 ### Dialogue: At the Office
@@ -313,7 +321,6 @@ Use these forms to add emotional depth to your descriptions of nature and people
 
 ---
 
-
 ## Deeper Look: Imperial vs. Native Thought
 
 Why did the "participle infection" happen? It wasn't just bureaucracy; it was a clash of worldviews.
@@ -332,7 +339,6 @@ High-style Church Slavonic (used in religious texts) was full of participles. Ru
 So when you use *бажаючий* instead of *той, хто бажає*, you aren't sounding "smart" — you are sounding like an 18th-century cleric trying to write a Soviet police report.
 
 ---
-
 
 ### Literary Example: Shevchenko's Legacy
 
@@ -984,7 +990,6 @@ This is the essence of Ukrainian style: **Be active with verbs, not with partici
 - [ ] бажаючий
 
 ---
-
 
 ### Wisdom in Action
 

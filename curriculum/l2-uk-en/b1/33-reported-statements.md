@@ -18,15 +18,9 @@ vocabulary_count: 20
 
 # Непряма мова: твердження
 
-
 > 🎯 **Чому це важливо**
 >
 > «Він сказав, що...», «Вона повідомила, що...» — непряма мова необхідна для переказу чужих слів. Журналісти, письменники, повсякденні розмовники — всі використовують цю конструкцію постійно.
-
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Reported Speech](https://ukrainianlessons.com/reported-speech/) - Converting direct to indirect speech.
->
 
 ## Діагностика
 
@@ -403,6 +397,16 @@ These are standard in news media ("ЗМІ") and official documents.
 | Time expressions | Must shift | Often shift |
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 
@@ -1016,8 +1020,6 @@ These are standard in news media ("ЗМІ") and official documents.
 14. Дослідники *підкреслюють* важливість цього.
 
 ---
-
-
 
 ## Словник
 

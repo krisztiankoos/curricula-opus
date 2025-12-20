@@ -20,6 +20,11 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
+# Видові пари — Найважливіші 40
+
+> 🎯 **Чому це важливо**
+>
+> Видові пари — основа української дієслівної системи. Без знання пар «читати–прочитати», «писати–написати» ви не зможете правильно вибирати форми в реченнях. Цей модуль дає вам 50+ найважливіших пар, які покривають 80% повсякденного мовлення.
 
 ## Діагностика
 
@@ -260,6 +265,18 @@ The best way to internalize aspect pairs is to see them in action. The following
 > English doesn't have grammatical aspect the way Ukrainian does. In English, we use context and additional words: "I was reading" vs "I read it" vs "I finished reading." Ukrainian bakes all this meaning into the verb form itself: «читав» vs «прочитав». This is both more efficient (fewer words needed) and more precise (no ambiguity about whether you finished).
 
 ---
+
+## Need More Practice?
+
+:::info[🎧 External Resources]
+
+**Verb Aspect:**
+- 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+- 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+- 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+- 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
+:::
+
 
 ## Практика
 
@@ -710,6 +727,26 @@ Understanding how aspect pairs are formed helps you predict forms for new verbs 
   }
 ]} />
 
+### Діалог з видовими парами
+
+<Cloze
+  passage={`**У офісі**
+
+— Марино, ти вже [___:1] звіт?
+— Ні, ще [___:2]. [___:3] за годину.
+— А документи ти [___:4]?
+— Так, вже перевірила і [___:5] помилки.
+— Чудово! Коли закінчиш — [___:6] мені на пошту.
+— Добре, [___:7] одразу!
+— А хто [___:8] квитки на зустріч?
+— Він вже [___:9], допомагав [___:10] всю роботу.
+— Вони [___:11] нам безкоштовний переклад.
+— І директор [___:12] нам піти раніше.
+— Добре! Я [___:13] комп'ютер і йду.
+— Вона вже [___:14] ситуацію.`}
+  blanks={[{ index: 0, answer: `написав`, options: [`написав`, `писав`, `написував`, `пишеш`] }, { index: 1, answer: `пишу`, options: [`пишу`, `напишу`, `написав`, `писав`] }, { index: 2, answer: `Закінчу`, options: [`Закінчу`, `Закінчую`, `Закінчував`, `Закінчити`] }, { index: 3, answer: `перевірив`, options: [`перевірив`, `перевіряв`, `перевіряю`, `перевіриш`] }, { index: 4, answer: `виправив`, options: [`виправив`, `виправляв`, `виправляю`, `виправиш`] }, { index: 5, answer: `надішли`, options: [`надішли`, `надсилай`, `надсилаєш`, `надіслав`] }, { index: 6, answer: `надішлю`, options: [`надішлю`, `надсилаю`, `надсилав`, `надіслав`] }, { index: 7, answer: `вибрав`, options: [`вибрав`, `вибирав`, `вибираєш`, `вибереш`] }, { index: 8, answer: `купив`, options: [`купив`, `купував`, `купую`, `куплю`] }, { index: 9, answer: `виконати`, options: [`забула`, `забувала`, `забуває`, `забуде`] }, { index: 10, answer: `запропонували`, options: [`запропонували`, `пропонували`, `пропонують`, `запропонують`] }, { index: 11, answer: `дозволив`, options: [`дозволили`, `дозволяли`, `дозволяють`, `дозволять`] }, { index: 12, answer: `вимкну`, options: [`увімкнув`, `вмикав`, `вмикаю`, `увімкну`] }, { index: 13, answer: `пояснила`, options: [`пояснила`, `пояснювала`, `пояснює`, `пояснить`] }]}
+/>
+
 ### Виберіть правильний вид
 
 <Select questions={[
@@ -798,6 +835,135 @@ Understanding how aspect pairs are formed helps you predict forms for new verbs 
       { text: `заплатив`, correct: true }
     ]
   }
+]} />
+
+### Переклад з видовими парами
+
+<Translate questions={[
+  {
+    source: `I read the book. (completed)`,
+    options: [
+      { text: `Я читав книгу.`, correct: false },
+      { text: `Я прочитав книгу.`, correct: true },
+      { text: `Я читаю книгу.`, correct: false },
+      { text: `Я прочитую книгу.`, correct: false }
+    ]
+  },  {
+    source: `I was reading the book. (process)`,
+    options: [
+      { text: `Я читав книгу.`, correct: true },
+      { text: `Я прочитав книгу.`, correct: false },
+      { text: `Я читаю книгу.`, correct: false },
+      { text: `Я прочитую книгу.`, correct: false }
+    ]
+  },  {
+    source: `She wrote the letter. (completed)`,
+    options: [
+      { text: `Вона писала листа.`, correct: false },
+      { text: `Вона написала листа.`, correct: true },
+      { text: `Вона пише листа.`, correct: false },
+      { text: `Вона напише листа.`, correct: false }
+    ]
+  },  {
+    source: `He was writing all day. (process)`,
+    options: [
+      { text: `Він писав цілий день.`, correct: true },
+      { text: `Він написав цілий день.`, correct: false },
+      { text: `Він пише цілий день.`, correct: false },
+      { text: `Він напише цілий день.`, correct: false }
+    ]
+  },  {
+    source: `They helped me. (once)`,
+    options: [
+      { text: `Вони допомагали мені.`, correct: false },
+      { text: `Вони допомогли мені.`, correct: true },
+      { text: `Вони допомагають мені.`, correct: false },
+      { text: `Вони допоможуть мені.`, correct: false }
+    ]
+  },  {
+    source: `She always helped me. (habitually)`,
+    options: [
+      { text: `Вона завжди допомагала мені.`, correct: true },
+      { text: `Вона завжди допомогла мені.`, correct: false },
+      { text: `Вона завжди допомагає мені.`, correct: false },
+      { text: `Вона завжди допоможе мені.`, correct: false }
+    ]
+  },  {
+    source: `I chose a gift. (completed)`,
+    options: [
+      { text: `Я вибирав подарунок.`, correct: false },
+      { text: `Я вибрав подарунок.`, correct: true },
+      { text: `Я вибираю подарунок.`, correct: false },
+      { text: `Я виберу подарунок.`, correct: false }
+    ]
+  },  {
+    source: `I was choosing for hours. (process)`,
+    options: [
+      { text: `Я вибирав годинами.`, correct: true },
+      { text: `Я вибрав годинами.`, correct: false },
+      { text: `Я вибираю годинами.`, correct: false },
+      { text: `Я виберу годинами.`, correct: false }
+    ]
+  },  {
+    source: `He turned on the computer. (completed)`,
+    options: [
+      { text: `Він вмикав комп'ютер.`, correct: false },
+      { text: `Він увімкнув комп'ютер.`, correct: true },
+      { text: `Він вмикає комп'ютер.`, correct: false },
+      { text: `Він увімкне комп'ютер.`, correct: false }
+    ]
+  },  {
+    source: `Turn off the light! (command)`,
+    options: [
+      { text: `Вимикай світло!`, correct: false },
+      { text: `Вимкни світло!`, correct: true },
+      { text: `Вимикаєш світло!`, correct: false },
+      { text: `Вимкніть світло!`, correct: false }
+    ]
+  },  {
+    source: `She forgot the keys. (completed)`,
+    options: [
+      { text: `Вона забувала ключі.`, correct: false },
+      { text: `Вона забула ключі.`, correct: true },
+      { text: `Вона забуває ключі.`, correct: false },
+      { text: `Вона забуде ключі.`, correct: false }
+    ]
+  },  {
+    source: `He often forgets things. (habitually)`,
+    options: [
+      { text: `Він часто забуває речі.`, correct: true },
+      { text: `Він часто забув речі.`, correct: false },
+      { text: `Він часто забуде речі.`, correct: false },
+      { text: `Він часто забувши речі.`, correct: false }
+    ]
+  },  {
+    source: `I found the answer! (completed)`,
+    options: [
+      { text: `Я шукав відповідь!`, correct: false },
+      { text: `Я знайшов відповідь!`, correct: true },
+      { text: `Я шукаю відповідь!`, correct: false },
+      { text: `Я знайду відповідь!`, correct: false }
+    ]
+  },  {
+    source: `I was looking for hours. (process)`,
+    options: [
+      { text: `Я шукав годинами.`, correct: true },
+      { text: `Я знайшов годинами.`, correct: false },
+      { text: `Я шукаю годинами.`, correct: false },
+      { text: `Я знайду годинами.`, correct: false }
+    ]
+  }
+]} />
+
+### Розмова в офісі
+
+<DialogueReorder lines={[
+  { text: `A: Ти вже написала звіт?`, order: 1 },
+  { text: `B: Ні, ще пишу. Закінчу за годину.`, order: 2 },
+  { text: `A: А документи ти перевірила?`, order: 3 },
+  { text: `B: Так, вже перевірила і виправила помилки.`, order: 4 },
+  { text: `A: Чудово! Коли закінчиш — надішли мені на пошту.`, order: 5 },
+  { text: `B: Добре, надішлю одразу!`, order: 6 }
 ]} />
 ## 📚 Словник
 

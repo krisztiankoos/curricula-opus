@@ -2,10 +2,11 @@
 
 module: a1-34
 title: "Checkpoint: Final Review"
-subtitle: "A1 Mastery"
-version: "1.0"
+subtitle: "Can you do ALL the A1 skills?"
+version: "2.0"
 phase: "A1.3 - Consolidation"
-pedagogy: "PPP"
+focus: checkpoint
+pedagogy: "Review"
 duration: "90 min"
 transliteration: "first-occurrence"
 tags:
@@ -14,473 +15,720 @@ tags:
   - assessment
   - A1
 grammar:
-  - All A1 grammar review
+  - "All A1 grammar review"
 objectives:
-  - "Learner can read Cyrillic fluently"
-  - "Learner can introduce themselves and their family"
-  - "Learner can describe daily routine"
-  - "Learner can navigate the city and order food"
-  - "Learner can talk about weather, health, and holidays"
-  - "Learner can use past and future tense"
-vocabulary_count: 10
+  - "Demonstrate Cyrillic reading fluency"
+  - "Identify noun gender and use agreement correctly"
+  - "Conjugate verbs in present, past, and future tense"
+  - "Apply four cases (Nominative, Accusative, Genitive, Locative)"
+  - "Navigate daily life situations in Ukrainian"
+vocabulary_count: 20
 ---
 
 # Checkpoint: Final Review
 
-## A1 Mastery Assessment
+**Вітаємо!** (vitayemo) You've completed all 33 modules of A1! Now let's check: **can you DO all the skills?**
 
-> 💡 **Вітаємо! (Congratulations!)**
+This checkpoint tests five core abilities from the entire A1 level:
+
+1. **Reading Cyrillic** - Can you read without transliteration?
+2. **Gender & Agreement** - Can you match pronouns and adjectives to nouns?
+3. **Verb System** - Can you use present, past, and future tense?
+4. **Case System** - Can you apply all four A1 cases?
+5. **Daily Life Skills** - Can you handle real-world situations?
+
+> 💡 **Did You Know?**
 >
-> You've completed A1! This checkpoint reviews everything you learned in Modules 1-33.
-> By now you should be able to:
-> - Read Cyrillic without transliteration
-> - Introduce yourself and talk about your family
-> - Navigate daily life: shopping, cafés, doctors
-> - Talk about time, weather, and holidays
-> - Use past and future tense
+> After A1, you know ~450 words, 4 cases, 3 verb tenses, and can navigate basic daily life in Ukraine! That's the foundation for everything that comes next.
 
 ---
 
-## A1 Can-Do Checklist
+## Skill 1: Reading Cyrillic
 
-### Reading & Writing
+**Can you read Ukrainian text without transliteration?**
 
-- [ ] I can read Cyrillic without transliteration
-- [ ] I can write simple sentences about myself
-- [ ] I can fill out basic forms (name, address, phone)
-- [ ] I can understand simple signs and menus
+### Model: Read This Announcement
 
-### Speaking & Listening
+> **УВАГА!**
+> Кав'ярня «Львівська кава» працює щодня з 8:00 до 22:00.
+> Сьогодні — акція: кава з молоком за 35 гривень!
 
-- [ ] I can introduce myself
-- [ ] I can ask and answer simple questions
-- [ ] I can order food and drinks
-- [ ] I can ask for directions
-- [ ] I can describe symptoms to a doctor
+**Notice:**
+- **УВАГА** = Attention (В = V, not B)
+- **Кав'ярня** = Café (apostrophe after В before Я)
+- **щодня** = every day (Щ = shch)
+- **гривень** = hryvnias (genitive plural after numbers 5+)
 
-### Граматика (Grammar)
+### Practice: Read and Answer
 
-- [ ] Я знаю три роди: чоловічий, жіночий, середній
-- [ ] Я вживаю відмінки: Н., Зн., Р., М.
-- [ ] Я відмінюю дієслова в теперішньому, минулому, майбутньому часі
-- [ ] Я вживаю присвійні займенники: мій, твій, його, її
-- [ ] Я утворюю прислівники від прикметників
+Read this short text:
 
-#### Vocabulary Mastery
+> Марія живе в Києві. Вона студентка. Кожен день вона їде на метро до університету. Вчора вона читала книгу українською. Завтра вона буде здавати іспит.
 
-- [ ] I know 400+ words across all topics
-- [ ] I can talk about family, food, city, time, weather, health, holidays
+Answer these questions:
 
----
+1. Where does Марія live?
+2. How does she get to university?
+3. What did she do yesterday?
+4. What will she do tomorrow?
 
-## Review Sections
+> [!solution] Перевірити (Check)
+> 1. В Києві (in Kyiv)
+> 2. На метро (by metro)
+> 3. Читала книгу (read a book)
+> 4. Буде здавати іспит (will take an exam)
 
-### Section 1: Self-Introduction
+### Self-Check
 
-> [!example] Про себе (About Myself)
->
-> Write sentences about yourself using these patterns:
-> - Мене звати... (My name is...)
-> - Я з... (I'm from...)
-> - Мені ... років. (I'm ... years old.)
-> - Я студент/студентка. (I'm a student.)
-> - Я живу в... (I live in...)
-> - Я говорю... (I speak...)
+- Can you read **щ** (shch), **ц** (ts), **ї** (yi) without hesitation?
+- Do you recognize False Friends? (В = V, Н = N, Р = R, С = S)
+- Can you read a menu, sign, or announcement?
 
 ---
 
-### Section 2: My Family
+## Skill 2: Gender & Agreement
 
-> [!example] Моя родина (My Family)
->
-> Describe your family:
-> - У мене є... (I have...)
-> - Мого тата/маму звати... (My dad's/mom's name is...)
-> - У мене _ брат(ів) і _ сестер. (I have _ brother(s) and _ sister(s).)
-> - Моя сім'я живе в... (My family lives in...)
-> - Мої батьки працюють... (My parents work...)
+**Can you identify noun gender and make things agree?**
 
----
+### Model: The Agreement Pattern
 
-### Section 3: Daily Routine
+> **Це новий стіл.** — стіл is masculine → новий, цей
+> **Це нова книга.** — книга is feminine → нова, ця
+> **Це нове вікно.** — вікно is neuter → нове, це
+> **Це нові друзі.** — друзі is plural → нові, ці
 
-> [!example] Мій день (My Day)
->
-> Describe your typical day:
-> - Я встаю о... (I get up at...)
-> - Я снідаю о... (I have breakfast at...)
-> - Я йду на роботу/в школу о... (I go to work/school at...)
-> - Я обідаю о... (I have lunch at...)
-> - Я повертаюсь додому о... (I return home at...)
-> - Я лягаю спати о... (I go to bed at...)
+**Gender Rules:**
+- **Masculine**: consonant ending (стіл, брат, день)
+- **Feminine**: -а, -я ending (книга, земля, ніч*)
+- **Neuter**: -о, -е ending (вікно, море, ім'я)
 
----
+*Note: Some -Ь nouns are feminine (ніч)
 
-### Section 4: Past & Future
+### Practice: Choose the Correct Form
 
-> [!example] Вчора і завтра (Yesterday and Tomorrow)
->
-> What did you do yesterday? What will you do tomorrow?
-> - Вчора я... (Yesterday I...)
-> - Завтра я буду... (Tomorrow I will...)
+What's the correct demonstrative and adjective?
 
----
+1. ___ ___ книга (this, interesting) → ___
+2. ___ ___ місто (this, big) → ___
+3. ___ ___ друг (this, good) → ___
+4. ___ ___ вікно (that, old) → ___
+5. ___ ___ студенти (these, new) → ___
 
-## Dialogues
+> [!solution] Перевірити (Check)
+> 1. Ця цікава книга (feminine)
+> 2. Це велике місто (neuter)
+> 3. Цей добрий друг (masculine)
+> 4. Те старе вікно (neuter)
+> 5. Ці нові студенти (plural)
 
-> [!conversation] Познайомимось! (Let's Get Acquainted!)
->
-> — Привіт! Мене звати Оксана. А як тебе звати?
-> — Привіт! Я Марко. Звідки ти?
-> — Я з Києва. А ти?
-> — Я з Львова. Ти студентка?
-> — Так, я вчуся в університеті. А ти працюєш?
-> — Так, я програміст.
->
-> — Hi! My name is Oksana. And what's your name?
-> — Hi! I'm Marko. Where are you from?
-> — I'm from Kyiv. And you?
-> — I'm from Lviv. Are you a student?
-> — Yes, I study at university. And do you work?
-> — Yes, I'm a programmer.
+### Self-Check
 
-> [!conversation] Мій типовий день (My Typical Day)
->
-> — Коли ти встаєш?
-> — Я встаю о сьомій ранку.
-> — Що ти робиш вранці?
-> — Я снідаю і йду на роботу.
-> — А ввечері?
-> — Ввечері я читаю або дивлюся телевізор.
-> — О котрій ти лягаєш спати?
-> — Я лягаю о одинадцятій.
->
-> — When do you get up?
-> — I get up at seven in the morning.
-> — What do you do in the morning?
-> — I have breakfast and go to work.
-> — And in the evening?
-> — In the evening I read or watch TV.
-> — What time do you go to bed?
-> — I go to bed at eleven.
-
-> [!conversation] У кафе (At the Café)
->
-> — Добрий день! Що бажаєте?
-> — Чорну каву, будь ласка.
-> — Велику чи маленьку?
-> — Велику. І круасан.
-> — Це все?
-> — Так, дякую. Скільки коштує?
-> — Вісімдесят гривень.
-> — Ось, будь ласка.
-> — Дякую! Смачного!
->
-> — Good day! What would you like?
-> — Black coffee, please.
-> — Large or small?
-> — Large. And a croissant.
-> — Is that all?
-> — Yes, thank you. How much is it?
-> — Eighty hryvnias.
-> — Here you go.
-> — Thank you! Enjoy your meal!
-
-> [!conversation] Як пройти? (How Do I Get There?)
->
-> — Вибачте, де найближча аптека?
-> — Ідіть прямо, потім праворуч.
-> — Це далеко?
-> — Ні, п'ять хвилин пішки.
-> — Дякую!
-> — Будь ласка!
->
-> — Excuse me, where's the nearest pharmacy?
-> — Go straight, then turn right.
-> — Is it far?
-> — No, five minutes on foot.
-> — Thank you!
-> — You're welcome!
+- Do you check the **ending** to determine gender?
+- Does **"цей книга"** sound wrong? (It should — книга is feminine!)
+- Can you match possessives too? (мій/моя/моє)
 
 ---
 
-> 🌍 **Ваш прогрес (Your Progress)**
->
-> Ви зробили великий крок! Тепер ви можете говорити українською на базовому рівні. Ви знаєте алфавіт, граматику і багато слів. Практикуйте кожен день!
->
-> You've made a big step! Now you can speak Ukrainian at a basic level. You know the alphabet, grammar, and many words. Practice every day!
+## Skill 3: Verb System
 
-> 💡 **Поради для вивчення (Learning Tips)**
+**Can you conjugate verbs in present, past, and future?**
+
+### Model: Three Tenses
+
+**Present** (теперішній час):
+> Я **читаю**, ти **читаєш**, він **читає**
+> Ми **читаємо**, ви **читаєте**, вони **читають**
+
+**Past** (минулий час) — agrees in gender:
+> Він **читав**, вона **читала**, воно **читало**, вони **читали**
+
+**Future** (майбутній час) — two forms:
+> Я **буду читати** (compound) = Я **прочитаю** (simple, when available)
+
+### Practice: Fill in the Correct Form
+
+1. Зараз я ___ (читати, present) книгу.
+2. Вчора він ___ (писати, past, m) листа.
+3. Завтра вона ___ (готувати, future) вечерю.
+4. Вчора ми ___ (бути, past) в Києві.
+5. Зараз вони ___ (говорити, present) українською.
+
+> [!solution] Перевірити (Check)
+> 1. читаю (я, present)
+> 2. писав (він, past masculine)
+> 3. буде готувати (вона, future compound)
+> 4. були (ми, past plural)
+> 5. говорять (вони, present Class II)
+
+### Self-Check
+
+- Can you conjugate both Class I (-ати) and Class II (-ити) verbs?
+- Do you change past tense by gender? (читав/читала/читало/читали)
+- Can you form future with буду + infinitive?
+
+> 🎬 **Pop Culture Moment**
 >
-> Як вивчати українську краще? Слухайте українську музику. Дивіться українські фільми. Читайте українські книги. Говоріть українською кожен день. Не бійтеся помилок! Помилки — це нормально. Практика — це ключ до успіху.
->
-> How to learn Ukrainian better? Listen to Ukrainian music. Watch Ukrainian films. Read Ukrainian books. Speak Ukrainian every day. Don't be afraid of mistakes! Mistakes are normal. Practice is the key to success.
+> The song "Червона рута" uses past tense: "Я **знайшов** її колись..." (I found her once...). Past tense masculine = -в!
 
 ---
 
-## Підсумок (Summary)
+## Skill 4: Case System
 
-## Що ви вивчили на рівні A1 (What You've Accomplished)
+**Can you apply the four A1 cases?**
 
-### Кирилиця (Cyrillic Mastery)
-Тепер ви можете читати і писати українською без транслітерації!
-*(Now you can read and write Ukrainian without transliteration!)*
+### Model: Four Cases in Action
 
-### Граматика (Grammar Foundation)
-- **Відмінки (Cases)**: Називний, Знахідний, Родовий, Місцевий
-- **Дієслова (Verbs)**: Теперішній, минулий, майбутній час
-- **Узгодження (Agreement)**: Рід і число з прикметниками
-- **Присвійні займенники**: мій/твій/його/її
+> **Nominative** (subject): **Студент** читає книгу.
+> **Accusative** (direct object): Я бачу **студента**. Я читаю **книгу**.
+> **Genitive** (absence/possession): Немає **часу**. Це книга **брата**.
+> **Locative** (location): Я живу **в Києві**. Книга **на столі**.
 
-### Лексика (Vocabulary Domains)
-- Особиста інформація та родина
-- Числа, час, дати
-- Їжа, покупки, місто
-- Погода, природа, здоров'я
-- Свята та традиції
+### Practice: Which Case?
 
-### Комунікація (Communication Skills)
-- Представитися (Introduce yourself)
-- Запитувати і відповідати (Ask and answer)
-- Орієнтуватися в місті (Navigate daily situations)
-- Висловлювати потреби (Express basic needs)
+Identify the case of the underlined word:
+
+1. **Марія** живе в Києві. → _____
+2. Я бачу **Марію**. → _____
+3. У мене немає **часу**. → _____
+4. Книга на **столі**. → _____
+5. **Брат** читає книгу. → _____
+
+> [!solution] Перевірити (Check)
+> 1. Nominative (subject)
+> 2. Accusative (direct object, animate feminine)
+> 3. Genitive (after немає)
+> 4. Locative (after на for location)
+> 5. Nominative (subject)
+
+### Practice: Transform to the Correct Case
+
+1. Я читаю (книга) → Я читаю _____
+2. Немає (вода) → Немає _____
+3. Ми живемо в (Україна) → Ми живемо в _____
+4. Він бачить (друг) → Він бачить _____
+5. Кава без (молоко) → Кава без _____
+
+> [!solution] Перевірити (Check)
+> 1. книгу (accusative feminine: -а → -у)
+> 2. води (genitive feminine: -а → -и)
+> 3. Україні (locative: -і ending)
+> 4. друга (accusative animate masculine = genitive)
+> 5. молока (genitive neuter: -о → -а)
+
+### Self-Check
+
+- Do you know the triggers for each case?
+  - Accusative: бачити, любити, хотіти + direct object
+  - Genitive: немає, без, numbers 5+
+  - Locative: у/в, на for location
+- Does **"Я бачу студент"** sound wrong? (It should!)
+
+---
+
+## Skill 5: Daily Life Skills
+
+**Can you handle real-world situations?**
+
+### Model: At the Doctor
+
+> — Добрий день! Що вас турбує?
+> — У мене болить голова. І горло теж.
+> — Давно?
+> — Два дні.
+> — Зараз я вас огляну. Це застуда. Випийте цей сироп тричі на день.
+> — Дякую, лікарю!
+
+**Key Phrases:**
+- **У мене болить...** = I have ... pain / My ... hurts
+- **Що вас турбує?** = What's troubling you?
+- **Давно?** = For how long? (lit. "Long?")
+
+### Model: Telling Time
+
+> — Котра година?
+> — П'ята година. / П'ять годин.
+> — О котрій ми зустрічаємось?
+> — О сьомій. / Об одинадцятій.
+
+**Time Pattern:**
+- 1 година, 2-4 години, 5+ годин
+- "О котрій?" (at what time?) → О + locative
+
+### Practice: Complete the Dialogue
+
+At a café:
+
+— Добрий день! _____ бажаєте? (What)
+— Каву, будь ласка. _____. (Large)
+— _____ цукру? (With or without)
+— Без цукру.
+— _____ коштує? (How much)
+— Сорок п'ять _____ (hryvnias).
+
+> [!solution] Перевірити (Check)
+> — Добрий день! **Що** бажаєте?
+> — Каву, будь ласка. **Велику**.
+> — **З чи без** цукру?
+> — Без цукру.
+> — **Скільки** коштує?
+> — Сорок п'ять **гривень**.
+
+### Self-Check
+
+- Can you describe symptoms at a doctor's office?
+- Can you tell and ask time?
+- Can you order food and ask prices?
+- Can you describe weather? (Сьогодні холодно. Йде дощ.)
+
+> 🌍 **Real World Tip**
+>
+> Ukrainian holidays: Різдво (Christmas) is now December 25, День Незалежності (Independence Day) is August 24. "З Днем народження!" means "Happy Birthday!"
+
+---
+
+## Integration Challenge
+
+**Read this text, then answer the questions.**
+
+> Мене звати Олег. Я живу у Львові — це красиве місто на заході України. Я студент. Кожен день я їду на трамваї до університету. Вчора я читав цікаву книгу про історію Києва. Завтра буде іспит, тому сьогодні я багато вчуся. У мене немає часу на каву, але мама приготувала смачний обід. О шостій годині я буду вечеряти з родиною.
+
+**Questions:**
+
+1. What gender is **місто**? How do you know?
+2. What case is **на трамваї**? Why?
+3. What tense is **читав**? How do you know the speaker is male?
+4. Find the genitive case usage in the text.
+5. What time will Олег have dinner?
+
+> [!solution] Перевірити (Check)
+> 1. Neuter — ends in -о, and uses **красиве** (neuter adjective)
+> 2. Locative — **на** + noun for "by" transport/location
+> 3. Past tense — the -в ending shows both past and masculine
+> 4. "немає часу" — genitive after немає
+> 5. О шостій годині (at six o'clock)
+
+---
+
+## Summary
+
+| Skill | Key Pattern | Quick Test |
+|-------|-------------|------------|
+| **Cyrillic** | 33 letters, False Friends | Can you read "щоденно"? |
+| **Gender** | -а/-я = f, consonant = m, -о/-е = n | What gender is "книга"? |
+| **Verbs** | Present/Past/Future, gender in past | "Вона читав" or "читала"? |
+| **Cases** | Nom/Acc/Gen/Loc | "Немає часу" or "час"? |
+| **Daily Life** | Time, health, food, directions | Can you order at a café? |
+
+**Ready for A2?** If you can do all five skills confidently, you've completed A1! In A2, you'll learn:
+- All 7 cases (adding Dative, Instrumental, Vocative)
+- Aspect (perfective vs imperfective verbs)
+- More complex sentence structures
+- Expanded vocabulary across many domains
+
+---
+
+## Need More Practice?
+
+> [!resources] External Resources
+>
+> **Comprehensive Review:**
+> - 📖 [100 Links for Learning Ukrainian](https://www.ukrainianlessons.com/ukrainian-language-resources/) — Master resource hub
+> - 📖 [Ukrainian Cases Chart](https://www.ukrainianlessons.com/ukrainian-cases-chart/) — All 7 cases in one table
+> - 🎙️ [Top 10 Podcast Episodes for Beginners](https://www.ukrainianlessons.com/episodes-for-ukrainian-language-beginners/) — Start here!
+>
+> **Specific Topics:**
+> - 🎧 [Ukrainian Alphabet](https://www.ukrainianlessons.com/ukrainian-alphabet/) — All 33 letters with audio
+> - 📖 [Grammar: Past Tense](https://www.ukrainianlessons.com/grammar-past-tense/) — Past tense deep dive
+> - 📖 [Grammar: Future Tense](https://www.ukrainianlessons.com/grammar-future/) — Future tense forms
+> - 📖 [Ukrainian Greetings](https://www.ukrainianlessons.com/greetings/) — Greetings for every occasion
+>
+> **Struggling with a skill?** Go back to:
+> - Cyrillic → Modules 1-2
+> - Gender → Module 3
+> - Verbs → Modules 6, 8, 21-22
+> - Cases → Modules 11-16
+> - Daily Life → Modules 23-33
 
 ---
 
 ## Activities
 
-## match-up: Core Vocabulary Review
+## quiz: Cyrillic Mastery
+> Read each word and choose the correct English meaning.
 
-Match the Ukrainian word with its English meaning.
+1. привіт
+   - [x] hello
+   - [ ] goodbye
+   - [ ] please
+   - [ ] thank you
 
-- привіт :: hello
-- дякую :: thank you
-- будь ласка :: please
-- вибачте :: excuse me
-- так :: yes
-- ні :: no
-- добре :: good/well
-- погано :: bad/badly
-- мама :: mom
-- тато :: dad
-- брат :: brother
-- сестра :: sister
+2. вибачте
+   - [ ] hello
+   - [x] excuse me
+   - [ ] please
+   - [ ] goodbye
 
----
+3. смачного
+   - [ ] thank you
+   - [ ] goodbye
+   - [x] bon appétit
+   - [ ] please
 
-## match-up: Places and People
+4. погода
+   - [ ] food
+   - [x] weather
+   - [ ] work
+   - [ ] city
 
-Match the Ukrainian word with its English meaning.
+5. здоров'я
+   - [x] health
+   - [ ] happiness
+   - [ ] holiday
+   - [ ] family
 
-- місто :: city
-- вулиця :: street
-- магазин :: store
-- аптека :: pharmacy
-- лікарня :: hospital
-- ресторан :: restaurant
-- лікар :: doctor
-- вчитель :: teacher
-- студент :: student
-- друг :: friend
-- чоловік :: man/husband
-- жінка :: woman/wife
+6. завтра
+   - [ ] yesterday
+   - [x] tomorrow
+   - [ ] today
+   - [ ] always
 
----
+7. вчора
+   - [x] yesterday
+   - [ ] tomorrow
+   - [ ] today
+   - [ ] never
+
+8. дякую
+   - [ ] please
+   - [ ] hello
+   - [x] thank you
+   - [ ] goodbye
+
+9. будь ласка
+   - [ ] thank you
+   - [x] please
+   - [ ] hello
+   - [ ] goodbye
+
+10. родина
+    - [ ] work
+    - [ ] food
+    - [x] family
+    - [ ] city
+
+11. свято
+    - [ ] family
+    - [ ] food
+    - [ ] work
+    - [x] holiday
+
+12. лікар
+    - [ ] teacher
+    - [x] doctor
+    - [ ] student
+    - [ ] friend
+
+## match-up: Gender Recognition
+> Match each noun with its correct gender.
+
+| Ukrainian | Gender |
+|-----------|--------|
+| книга | feminine |
+| стіл | masculine |
+| вікно | neuter |
+| місто | neuter |
+| брат | masculine |
+| сестра | feminine |
+| море | neuter |
+| день | masculine |
+| ніч | feminine |
+| ім'я | neuter |
+| друг | masculine |
+| родина | feminine |
+
+## fill-in: Demonstrative Agreement
+> Choose the correct demonstrative (цей/ця/це/ці).
+
+1. ___ книга цікава.
+   > [!answer] Ця
+   > [!options] Цей | Ця | Це | Ці
+
+2. ___ стіл новий.
+   > [!answer] Цей
+   > [!options] Цей | Ця | Це | Ці
+
+3. ___ вікно велике.
+   > [!answer] Це
+   > [!options] Цей | Ця | Це | Ці
+
+4. ___ друзі добрі.
+   > [!answer] Ці
+   > [!options] Цей | Ця | Це | Ці
+
+5. ___ місто красиве.
+   > [!answer] Це
+   > [!options] Цей | Ця | Це | Ці
+
+6. ___ студент розумний.
+   > [!answer] Цей
+   > [!options] Цей | Ця | Це | Ці
+
+7. ___ дівчина гарна.
+   > [!answer] Ця
+   > [!options] Цей | Ця | Це | Ці
+
+8. ___ море синє.
+   > [!answer] Це
+   > [!options] Цей | Ця | Це | Ці
+
+9. ___ книги нові.
+   > [!answer] Ці
+   > [!options] Цей | Ця | Це | Ці
+
+10. ___ день холодний.
+    > [!answer] Цей
+    > [!options] Цей | Ця | Це | Ці
+
+11. ___ ніч темна.
+    > [!answer] Ця
+    > [!options] Цей | Ця | Це | Ці
+
+12. ___ свята важливі.
+    > [!answer] Ці
+    > [!options] Цей | Ця | Це | Ці
+
+## fill-in: Verb Tenses - Present
+> Choose the correct present tense form.
+
+1. Я ___ книгу. (читати)
+   > [!answer] читаю
+   > [!options] читаю | читаєш | читає | читають
+
+2. Вона ___ українською. (говорити)
+   > [!answer] говорить
+   > [!options] говорю | говориш | говорить | говорять
+
+3. Ми ___ в Києві. (жити)
+   > [!answer] живемо
+   > [!options] живу | живеш | живе | живемо
+
+4. Вони ___ каву. (пити)
+   > [!answer] п'ють
+   > [!options] п'ю | п'єш | п'є | п'ють
+
+5. Ти ___ музику? (слухати)
+   > [!answer] слухаєш
+   > [!options] слухаю | слухаєш | слухає | слухають
+
+6. Він ___ на роботу. (їздити)
+   > [!answer] їздить
+   > [!options] їжджу | їздиш | їздить | їздять
+
+7. Я ___ вечерю. (готувати)
+   > [!answer] готую
+   > [!options] готую | готуєш | готує | готують
+
+8. Вона ___ листа. (писати)
+   > [!answer] пише
+   > [!options] пишу | пишеш | пише | пишуть
+
+9. Ми ___ на роботу. (йти)
+   > [!answer] йдемо
+   > [!options] йду | йдеш | йде | йдемо
+
+10. Вони ___ борщ. (їсти)
+    > [!answer] їдять
+    > [!options] їм | їси | їсть | їдять
+
+11. Ти ___ що робити? (знати)
+    > [!answer] знаєш
+    > [!options] знаю | знаєш | знає | знають
+
+12. Він ___ добре. (працювати)
+    > [!answer] працює
+    > [!options] працюю | працюєш | працює | працюють
+
+## fill-in: Verb Tenses - Past
+> Choose the correct past tense form.
+
+1. Вчора він ___ книгу. (читати, m)
+   > [!answer] читав
+   > [!options] читав | читала | читало | читали
+
+2. Вона ___ вечерю. (готувати, f)
+   > [!answer] готувала
+   > [!options] готував | готувала | готувало | готували
+
+3. Ми ___ в Києві. (бути, pl)
+   > [!answer] були
+   > [!options] був | була | було | були
+
+4. Дитина ___ спокійно. (спати, n)
+   > [!answer] спало
+   > [!options] спав | спала | спало | спали
+
+5. Я ___ українською. (говорити, m)
+   > [!answer] говорив
+   > [!options] говорив | говорила | говорило | говорили
+
+6. Вона ___ на роботу. (їздити, f)
+   > [!answer] їздила
+   > [!options] їздив | їздила | їздило | їздили
+
+7. Він ___ музику. (слухати, m)
+   > [!answer] слухав
+   > [!options] слухав | слухала | слухало | слухали
+
+8. Вони ___ борщ. (їсти, pl)
+   > [!answer] їли
+   > [!options] їв | їла | їло | їли
+
+9. Ти ___ листа? (писати, m)
+   > [!answer] писав
+   > [!options] писав | писала | писало | писали
+
+10. Вона ___ каву. (пити, f)
+    > [!answer] пила
+    > [!options] пив | пила | пило | пили
+
+11. Він ___ добре. (працювати, m)
+    > [!answer] працював
+    > [!options] працював | працювала | працювало | працювали
+
+12. Діти ___ у парку. (грати, pl)
+    > [!answer] грали
+    > [!options] грав | грала | грало | грали
+
+## fill-in: Case Usage
+> Choose the correct case form.
+
+1. Я бачу ___ (брат).
+   > [!answer] брата
+   > [!options] брат | брата | брату | братом
+
+2. Книга на ___ (стіл).
+   > [!answer] столі
+   > [!options] стіл | стола | столі | столом
+
+3. У мене немає ___ (час).
+   > [!answer] часу
+   > [!options] час | часу | часі | часом
+
+4. Я живу в ___ (Київ).
+   > [!answer] Києві
+   > [!options] Київ | Києва | Києві | Києвом
+
+5. Вона читає ___ (книга).
+   > [!answer] книгу
+   > [!options] книга | книгу | книги | книзі
+
+6. Кава без ___ (молоко).
+   > [!answer] молока
+   > [!options] молоко | молока | молоку | молоці
+
+7. Ми живемо у ___ (місто).
+   > [!answer] місті
+   > [!options] місто | міста | місті | містом
+
+8. Я люблю ___ (кава).
+   > [!answer] каву
+   > [!options] кава | каву | кави | каві
+
+9. Вона з ___ (Україна).
+   > [!answer] України
+   > [!options] Україна | України | Україну | Україні
+
+10. Я працюю в ___ (офіс).
+    > [!answer] офісі
+    > [!options] офіс | офіса | офісі | офісом
+
+11. П'ять ___ (гривня).
+    > [!answer] гривень
+    > [!options] гривня | гривні | гривень | гривнями
+
+12. Це книга ___ (тато).
+    > [!answer] тата
+    > [!options] тато | тата | татові | татом
 
 ## group-sort: Parts of Speech
-
 > Sort words by their part of speech.
 
 ### Іменники (Nouns)
 - книга
-- хліб
-- вода
-- сім'я
 - місто
+- родина
 - погода
+- здоров'я
+- свято
 
 ### Дієслова (Verbs)
 - читати
 - писати
 - говорити
-- їсти
-- пити
 - працювати
+- жити
+- їсти
 
 ### Прикметники (Adjectives)
 - великий
-- малий
 - гарний
 - новий
 - старий
-- добрий
-
----
+- холодний
+- смачний
 
 ## group-sort: Gender Recognition
-
 > Sort nouns by grammatical gender.
 
 ### Чоловічий рід (Masculine)
 - стіл
 - брат
-- дім
-- хліб
 - лікар
 - день
+- друг
+- студент
 
 ### Жіночий рід (Feminine)
 - книга
 - сестра
-- вода
-- вулиця
 - родина
 - ніч
+- кава
+- мама
 
 ### Середній рід (Neuter)
 - вікно
 - місто
 - море
 - ім'я
-- питання
-- знання
-
----
-
-## fill-in: Grammar Review - Cases
-
-> Choose the correct form.
-
-1. Я бачу ___ (брат).
-   > [!answer] брата
-   > [!options] брата | брат | братом | брату
-
-2. Я живу в ___ (Київ).
-   > [!answer] Києві
-   > [!options] Києві | Київ | Києва | Києвом
-
-3. У мене немає ___ (машина).
-   > [!answer] машини
-   > [!options] машини | машина | машину | машиною
-
-4. Книга на ___ (стіл).
-   > [!answer] столі
-   > [!options] столі | стіл | стола | столом
-
-5. Я йду до ___ (лікар).
-   > [!answer] лікаря
-   > [!options] лікаря | лікар | лікарем | лікареві
-
-6. Це подарунок для ___ (мама).
-   > [!answer] мами
-   > [!options] мами | мама | маму | мамою
-
-7. Ми живемо в ___ (місто).
-   > [!answer] місті
-   > [!options] місті | місто | міста | містом
-
-8. Я люблю ___ (кава).
-   > [!answer] каву
-   > [!options] каву | кава | кави | кавою
-
-9. Вона з ___ (Україна).
-   > [!answer] України
-   > [!options] України | Україна | Україну | Українi
-
-10. Я працюю в ___ (банк).
-    > [!answer] банку
-    > [!options] банку | банк | банка | банком
-
-11. Ми йдемо в ___ (парк).
-    > [!answer] парк
-    > [!options] парк | парку | парка | парком
-
-12. Це книга ___ (тато).
-    > [!answer] тата
-    > [!options] тата | тато | татом | татові
-
----
-
-## fill-in: Verb Tenses
-
-> Choose the correct tense form.
-
-1. Вчора я ___ книгу. (читати - past)
-   > [!answer] читав
-   > [!options] читав | читаю | буду читати | читати
-
-2. Зараз він ___ каву. (пити - present)
-   > [!answer] п'є
-   > [!options] п'є | пив | буде пити | пити
-
-3. Завтра ми ___ в кіно. (йти - future)
-   > [!answer] підемо
-   > [!options] підемо | йдемо | йшли | йти
-
-4. Вона завжди ___ о сьомій. (вставати - present)
-   > [!answer] встає
-   > [!options] встає | встала | встане | вставати
-
-5. Минулого тижня вони ___ в Києві. (бути - past)
-   > [!answer] були
-   > [!options] були | є | будуть | бути
-
-6. Наступного року я ___ українську. (вчити - future)
-   > [!answer] буду вчити
-   > [!options] буду вчити | вчу | вчив | вчити
-
-7. Учора вона ___ смачний обід. (готувати - past, f)
-   > [!answer] готувала
-   > [!options] готувала | готую | буде готувати | готувати
-
-8. Кожен день я ___ на роботу. (їздити - present)
-   > [!answer] їжджу
-   > [!options] їжджу | їздив | буду їздити | їздити
-
-9. Зараз діти ___ у парку. (грати - present)
-   > [!answer] грають
-   > [!options] грають | грали | будуть грати | грати
-
-10. Завтра ___ дощ. (йти - future)
-    > [!answer] буде
-    > [!options] буде | йде | йшов | йти
-
-11. Вона ___ українською добре. (говорити - present)
-    > [!answer] говорить
-    > [!options] говорить | говорила | буде говорити | говорити
-
-12. Минулого року ми ___ в Одесі. (жити - past)
-    > [!answer] жили
-    > [!options] жили | живемо | будемо жити | жити
-
----
+- свято
+- здоров'я
 
 ## quiz: Daily Life Situations
-
-Choose the correct response.
+> Choose the correct response.
 
 1. Someone asks "Як справи?"
    - [x] Добре, дякую!
    - [ ] Мене звати Олена.
-   - [ ] Я з Києва.
    - [ ] До побачення!
+   - [ ] Смачного!
 
-2. You want to order coffee at a café:
+2. You want to order coffee:
    - [x] Каву, будь ласка.
    - [ ] Де кава?
-   - [ ] Кава там.
    - [ ] Кава смачна.
+   - [ ] Я люблю каву.
 
-3. You're asking for directions to the pharmacy:
+3. You're asking for directions:
    - [x] Вибачте, де аптека?
    - [ ] Аптека добра.
    - [ ] Я в аптеці.
    - [ ] Аптека!
 
-4. You have a headache at the doctor's:
+4. You have a headache:
    - [x] У мене болить голова.
    - [ ] Моя голова.
-   - [ ] Голова там.
+   - [ ] Голова тут.
    - [ ] Добра голова.
 
 5. It's someone's birthday:
@@ -493,232 +741,177 @@ Choose the correct response.
    - [x] Котра година?
    - [ ] Яка погода?
    - [ ] Де час?
-   - [ ] Час добрий.
+   - [ ] Який день?
 
-7. You want to introduce yourself:
-   - [x] Мене звати...
-   - [ ] Як справи?
-   - [ ] Добрий день!
-   - [ ] Дякую!
-
-8. You want to ask the price:
+7. You want to ask the price:
    - [x] Скільки коштує?
    - [ ] Де гроші?
    - [ ] Це дорого.
    - [ ] Дякую!
 
----
-
-## quiz: Weather and Nature
-
-Choose the correct form or answer.
-
-1. "It's cold" in Ukrainian:
-   - [x] Холодно.
-   - [ ] Холодний.
-   - [ ] Холоднити.
-   - [ ] Холод.
-
-2. "It's raining" in Ukrainian:
+8. It's raining outside:
    - [x] Йде дощ.
    - [ ] Дощ холодний.
    - [ ] Є дощ.
    - [ ] Буде дощити.
 
-3. The Dnipro is:
-   - [x] Річка
-   - [ ] Море
-   - [ ] Озеро
-   - [ ] Гора
+9. You want to introduce yourself:
+   - [x] Мене звати...
+   - [ ] Як справи?
+   - [ ] Добрий день!
+   - [ ] Дякую!
 
-4. Carpathians are:
-   - [x] Гори
-   - [ ] Річки
-   - [ ] Моря
-   - [ ] Озера
+10. The weather is cold:
+    - [x] Холодно.
+    - [ ] Холодний.
+    - [ ] Холод.
+    - [ ] Холодна.
 
-5. "It's warm" in Ukrainian:
-   - [x] Тепло.
-   - [ ] Теплий.
-   - [ ] Теплити.
-   - [ ] Тепла.
+11. Someone says "Смачного!" — you respond:
+    - [x] Дякую!
+    - [ ] Привіт!
+    - [ ] До побачення!
+    - [ ] Вибачте!
 
-6. "It's sunny" in Ukrainian:
-   - [x] Сонячно.
-   - [ ] Сонячний.
-   - [ ] Сонце.
-   - [ ] Сонячна.
-
-7. "It's snowing" in Ukrainian:
-   - [x] Йде сніг.
-   - [ ] Сніг холодний.
-   - [ ] Є сніг.
-   - [ ] Сніг буде.
-
-8. The Black Sea in Ukrainian:
-   - [x] Чорне море
-   - [ ] Синє море
-   - [ ] Біле море
-   - [ ] Велике море
-
----
-
-## unjumble: Comprehensive Sentence Building
-
-Put the words in the correct order.
-
-1. мене / Олена / звати
-   > [!answer] Мене звати Олена
-
-2. я / з / України
-   > [!answer] Я з України
-
-3. у мене / брат / є / і / сестра
-   > [!answer] У мене є брат і сестра
-
-4. о сьомій / я / встаю
-   > [!answer] Я встаю о сьомій
-
-5. снідаю / я / вранці / завжди
-   > [!answer] Я завжди снідаю вранці
-
-6. вчора / читав / я / книгу
-   > [!answer] Вчора я читав книгу
-
-7. сьогодні / сонячно / і / тепло
-   > [!answer] Сьогодні сонячно і тепло
-
-8. болить / голова / у мене
-   > [!answer] У мене болить голова
-
-9. народження / Днем / З
-   > [!answer] З Днем народження
-
-10. в магазин / йду / я
-   > [!answer] Я йду в магазин
-
-11. каву / будь ласка / дайте
-   > [!answer] Дайте каву, будь ласка
-
-12. аптека / де / вибачте
-   > [!answer] Вибачте, де аптека
-
-
----
+12. You're leaving:
+    - [x] До побачення!
+    - [ ] Привіт!
+    - [ ] Дякую!
+    - [ ] Смачного!
 
 ## true-false: A1 Knowledge Check
+> Is this true or false?
 
-Is this true or false?
+- [x] Ukrainian has three grammatical genders.
+  > True! Masculine, feminine, and neuter.
 
-- [x] Ukrainian has three grammatical genders: masculine, feminine, neuter.
 - [ ] All nouns ending in -а are masculine.
-  > Incorrect! they're usually feminine
+  > False! They're usually feminine (книга, мама).
 
-- [x] "Я читаю" is present tense.
-- [x] "Я читав" is past tense (male speaker).
-- [ ] "Йде дощ" means "It's cold.".
-  > Incorrect! it means "It's raining"
+- [x] "Я читав" indicates a male speaker.
+  > True! Past tense -в ending is masculine.
 
-- [x] "Де?" asks about location.
-- [x] "Куди?" asks about direction.
-- [ ] "Болить" is used for plural body parts.
-  > Incorrect! use "болять"
+- [x] "Немає" requires genitive case.
+  > True! Немає + genitive: немає часу.
 
-- [x] Ukrainian Christmas is now on December 25th (since 2023).
-- [x] "Мій" is masculine possessive.
-- [ ] "Вдома" means "to home.".
-  > Incorrect! it means "at home"
+- [ ] "Йде дощ" means "It's cold."
+  > False! It means "It's raining."
 
-- [x] "З Новим роком!" means "Happy New Year!".
+- [x] Animate masculine accusative = genitive.
+  > True! студент → студента
+
+- [x] "Вдома" means "at home."
+  > True! Compare: додому = "to home"
+
+- [ ] Numbers 2-4 use genitive plural.
+  > False! They use nominative plural. 5+ use genitive plural.
+
+- [x] Ukrainian Christmas is now December 25.
+  > True! Since 2023, Ukraine celebrates on December 25.
+
+- [x] "Болить" is used for single body parts.
+  > True! For plural, use "болять" (Болять очі).
+
+- [ ] "Його" changes form based on noun gender.
+  > False! "Його" NEVER changes.
+
+- [x] "З Новим роком!" means "Happy New Year!"
+  > True! A common holiday greeting.
+
+## unjumble: Sentence Building
+> Put the words in the correct order.
+
+1. мене / Олена / звати
+   > [!answer] Мене звати Олена.
+   > (My name is Olena.)
+
+2. я / з / України
+   > [!answer] Я з України.
+   > (I'm from Ukraine.)
+
+3. вчора / читав / я / книгу
+   > [!answer] Вчора я читав книгу.
+   > (Yesterday I read a book.)
+
+4. сьогодні / холодно / дуже
+   > [!answer] Сьогодні дуже холодно.
+   > (Today is very cold.)
+
+5. болить / голова / у мене
+   > [!answer] У мене болить голова.
+   > (I have a headache.)
+
+6. народження / Днем / З
+   > [!answer] З Днем народження!
+   > (Happy Birthday!)
+
+7. каву / будь ласка / дайте
+   > [!answer] Дайте каву, будь ласка.
+   > (Give me coffee, please.)
+
+8. аптека / де / вибачте
+   > [!answer] Вибачте, де аптека?
+   > (Excuse me, where's the pharmacy?)
+
+9. о сьомій / я / встаю
+   > [!answer] Я встаю о сьомій.
+   > (I get up at seven.)
+
+10. завтра / буде / сонячно
+    > [!answer] Завтра буде сонячно.
+    > (Tomorrow will be sunny.)
+
+11. без / каву / цукру / я хочу
+    > [!answer] Я хочу каву без цукру.
+    > (I want coffee without sugar.)
+
+12. у / живемо / Києві / ми
+    > [!answer] Ми живемо у Києві.
+    > (We live in Kyiv.)
+
+## match-up: Time Expressions
+> Match the Ukrainian phrase with its English meaning.
+
+| Ukrainian | English |
+|-----------|---------|
+| Котра година? | What time is it? |
+| О котрій годині? | At what time? |
+| П'ята година | Five o'clock |
+| О сьомій | At seven |
+| Вранці | In the morning |
+| Ввечері | In the evening |
+| Вчора | Yesterday |
+| Завтра | Tomorrow |
+| Сьогодні | Today |
+| Щодня | Every day |
+| Минулого тижня | Last week |
+| Наступного року | Next year |
 
 ---
-
-## Самооцінка A1 (Final Self-Assessment)
-
-Оцініть себе від 1 до 5 (1 = не можу, 5 = впевнено можу):
-*(Rate yourself 1-5 on each CEFR can-do statement)*
-
-### Слухання і читання (Listening & Reading)
-- [ ] Я розумію знайомі слова і прості фрази про себе, родину і оточення
-- [ ] Я читаю короткі тексти: меню, знаки, повідомлення
-- [ ] Я знаходжу інформацію в оголошеннях і розкладах
-
-### Говоріння та взаємодія (Speaking & Interaction)
-- [ ] Я можу представитися і розповісти про себе
-- [ ] Я можу спілкуватися, якщо співрозмовник говорить повільно
-- [ ] Я можу описати, де я живу, і людей, яких знаю
-- [ ] Я можу замовити їжу і запитати ціну в магазині
-
-### Письмо (Writing)
-- [ ] Я можу написати коротку листівку або заповнити анкету
-- [ ] Я можу написати прості речення про себе і свою родину
-
-### Українська специфіка (Ukrainian-Specific Skills)
-- [ ] Я читаю кирилицю вільно, без транслітерації
-- [ ] Я знаю відмінки: Називний, Знахідний, Родовий, Місцевий
-- [ ] Я відмінюю дієслова в теперішньому, минулому, майбутньому часі
-- [ ] Я використовую присвійні займенники з правильним родом
-- [ ] Я узгоджую прикметники з іменниками за родом і числом
-
-### Результати (Scoring)
-- **50-65 балів**: Рівень A1 завершено! Ви готові до A2.
-- **35-49 балів**: Добрий A1, але повторіть слабкі теми.
-- **Менше 35 балів**: Продовжуйте практикувати A1.
-
----
-
-> 🎉 **Вітаємо з завершенням рівня A1!**
->
-> (Congratulations on completing level A1!)
->
-> Ви тепер знаєте українську на базовому рівні!
-> (You now know Ukrainian at a basic level!)
->
-> **Next step: A2 — Elementary!**
-
----
-
-> ⚡ **Your Journey So Far**
->
-> **A1 Complete!** You've learned ~450 words, 4 cases, 3 verb tenses, and can navigate basic daily life in Ukrainian!
->
-> **Coming in A2:**
-> - All 7 cases (adding Dative, Instrumental, Vocative)
-> - More verb forms (aspect introduction)
-> - Deeper vocabulary across more domains
-> - More complex sentence structures
-
----
-
-**Congratulations! You are now ready for A2!**
 
 ## Vocabulary
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| вітаємо | /wʲiˈtɑjemɔ/ | congratulations | v | — | 1st pl |
-| досягнення | /dɔsʲɑhˈnɛnʲːɑ/ | achievement | n | n | |
-| майстерність | /mɑjˈstɛrnʲistʲ/ | mastery | n | f | |
-| повторення | /pɔwtɔˈrɛnʲːɑ/ | review | n | n | |
-| оцінка | /ɔˈt͡sʲinkɑ/ | assessment | n | f | |
-| рівень | /ˈrʲiwɛnʲ/ | level | n | m | |
-| прогрес | /prɔˈhrɛs/ | progress | n | m | |
-| знання | /ˈznɑnʲːɑ/ | knowledge | n | n | |
-| вміння | /ˈwmʲinʲːɑ/ | skill | n | n | |
-| розуміння | /rɔzuˈmʲinʲːɑ/ | understanding | n | n | |
-| успіх | /usˈpʲix/ | success | n | m | |
-| мова | /ˈmɔwɑ/ | language | n | f | |
-| практика | /ˈprɑktɪkɑ/ | practice | n | f | |
-| граматика | /hrɑˈmɑtɪkɑ/ | grammar | n | f | |
-| слово | /ˈslɔwɔ/ | word | n | n | |
-| речення | /rɛˈtʃɛnʲːɑ/ | sentence | n | n | |
-| читання | /tʃɪˈtɑnʲːɑ/ | reading | n | n | |
-| письмо | /ˈpɪsʲmɔ/ | writing | n | n | |
-| говоріння | /hɔwɔˈrʲinʲːɑ/ | speaking | n | n | |
-| слухання | /ˈsluxɑnʲːɑ/ | listening | n | n | |
-
----
-
-
+| вітаємо | /wʲiˈtɑjemɔ/ | congratulations | verb | — | 1st pl |
+| досягнення | /dɔsʲɑhˈnɛnʲːɑ/ | achievement | noun | n | |
+| рівень | /ˈrʲiwɛnʲ/ | level | noun | m | |
+| прогрес | /prɔˈhrɛs/ | progress | noun | m | |
+| знання | /ˈznɑnʲːɑ/ | knowledge | noun | n | |
+| вміння | /ˈwmʲinʲːɑ/ | skill | noun | n | |
+| успіх | /usˈpʲix/ | success | noun | m | |
+| мова | /ˈmɔwɑ/ | language | noun | f | |
+| практика | /ˈprɑktɪkɑ/ | practice | noun | f | |
+| граматика | /hrɑˈmɑtɪkɑ/ | grammar | noun | f | |
+| слово | /ˈslɔwɔ/ | word | noun | n | |
+| речення | /rɛˈtʃɛnʲːɑ/ | sentence | noun | n | |
+| читання | /tʃɪˈtɑnʲːɑ/ | reading | noun | n | |
+| письмо | /ˈpɪsʲmɔ/ | writing | noun | n | |
+| говоріння | /hɔwɔˈrʲinʲːɑ/ | speaking | noun | n | |
+| слухання | /ˈsluxɑnʲːɑ/ | listening | noun | n | |
+| повторення | /pɔwtɔˈrɛnʲːɑ/ | review | noun | n | |
+| оцінка | /ɔˈt͡sʲinkɑ/ | assessment | noun | f | |
+| розуміння | /rɔzuˈmʲinʲːɑ/ | understanding | noun | n | |
+| майстерність | /mɑjˈstɛrnʲistʲ/ | mastery | noun | f | |
 
 ---

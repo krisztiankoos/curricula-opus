@@ -24,11 +24,14 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 ## Warm-up
 
-Як ви почуваєтеся тсьогодні? Що ви робите, коли у вас болить голова? Ви часто ходите до лікаря?
+Як ви почуваєтеся сьогодні? Що ви робите, коли у вас болить голова? Ви часто ходите до лікаря?
 
 Здоров'я — це найважливіше. Українці часто кажуть: "Головне — це здоров'я" (*Health is the main thing*). Сьогодні ми вивчимо, як говорити про своє тіло і самопочуття.
 
-In this module, you'll learn to describe symptoms, visit a pharmacy, and understand the doctor's orders.
+In this module, you'll master three key areas:
+1. **Body vocabulary** — голова, руки, серце and more
+2. **Symptom vocabulary** — біль, температура, and common illnesses
+3. **Medical help** — лікар, аптека, and рецепт
 
 :::warning[**Myth Buster** "Free Healthcare?"]
 Constitutionally, healthcare in Ukraine is free. In reality, it's a mix. State clinics (*поліклініки*) are free but crowded. Private clinics (*приватні клініки*) offer modern service but cost money. Also, Ukrainians can sign a declaration with a family doctor using the electronic system **eHealth** (Helsi.me), which has modernized the system significantly.
@@ -88,7 +91,23 @@ Ukraine is famous for healing mineral waters (*мінеральні води*). 
 :::
 
 
+:::tip[**Common Mistakes to Avoid**]
+❌ *Я болю голову.* — Wrong! (Subject confusion)
+✅ *У мене болить голова.* — Correct! (Head is the subject that hurts)
+
+❌ *У мене болить зуби.* — Wrong! (Verb doesn't match)
+✅ *У мене болять зуби.* — Correct! (Plural subject = болять)
+
+❌ *Я треба ліки.* — Wrong! (Wrong case for "need")
+✅ *Мені треба ліки.* — Correct! (Dative: мені)
+
+**Memory trick:** The body part is the SUBJECT (голова болить), not the object. You are the EXPERIENCER (у мене).
+:::
+
+
 ## Practice
+
+Now let's see these words in action through stories about health situations — from a bad cold to a pharmacy visit.
 
 ### Story Time: A Bad Morning
 
@@ -317,7 +336,7 @@ Take care and stay healthy!
   {
     question: `What do you do if you have a fever?`,
     options: [
-      { text: `call a doctor / stay home`, correct: true },
+      { text: `call a doctor | stay home`, correct: true },
       { text: `go to a disco`, correct: false },
       { text: `eat ice cream`, correct: false }
     ]
@@ -425,30 +444,6 @@ Take care and stay healthy!
     sentence: `У мене болить ____. (head)`,
     answer: `голова`,
     options: [`голова`, `голову`, `головою`, `голові`]
-  },  {
-    sentence: `У мене ___ голова. (head hurts)`,
-    answer: `болить`,
-    options: [`болить`, `заболить`]
-  },  {
-    sentence: `Голова раптом ___. (suddenly started hurting)`,
-    answer: `заболіла`,
-    options: [`боліла`, `заболіла`]
-  },  {
-    sentence: `Я ___ ліки. (took medicine)`,
-    answer: `прийняв`,
-    options: [`приймав`, `прийняв`]
-  },  {
-    sentence: `Лікар ___ пацієнта. (examined patient)`,
-    answer: `оглянув`,
-    options: [`оглядав`, `оглянув`]
-  },  {
-    sentence: `Він ___ довго. (was sick long time)`,
-    answer: `хворів`,
-    options: [`хворів`, `захворів`]
-  },  {
-    sentence: `Вона нарешті ___. (finally recovered)`,
-    answer: `одужала`,
-    options: [`одужувала`, `одужала`]
   },  {
     sentence: `У нього висока ____. (temperature)`,
     answer: `температура`,
@@ -560,18 +555,18 @@ Take care and stay healthy!
 ### Health Sentences
 
 <Unjumble items={[
-  { jumbled: `У / мене / дуже / болить / голова`, answer: `У мене дуже болить голова` },
-  { jumbled: `Будь / ласка / викличіть / лікаря`, answer: `Будь ласка викличіть лікаря` },
-  { jumbled: `Я / хочу / купити / ліки`, answer: `Я хочу купити ліки` },
-  { jumbled: `У / вас / є / температура`, answer: `У вас є температура` },
-  { jumbled: `Пийте / багато / теплої / води`, answer: `Пийте багато теплої води` },
-  { jumbled: `Де / найближча / цілодобова / аптека`, answer: `Де найближча цілодобова аптека` },
-  { jumbled: `Мені / треба / піти / до / стоматолога`, answer: `Мені треба піти до стоматолога` },
-  { jumbled: `Як / ви / себе / почуваєте`, answer: `Як ви себе почуваєте` },
-  { jumbled: `Спорт / корисний / для / здоров'я`, answer: `Спорт корисний для здоров'я` },
-  { jumbled: `Бажаю / вам / міцного / здоров'я`, answer: `Бажаю вам міцного здоров'я` },
-  { jumbled: `Ця / таблетка / від / голови`, answer: `Ця таблетка від голови` },
-  { jumbled: `Ви / вже / одужали`, answer: `Ви вже одужали` }
+  { jumbled: `У | мене | дуже | болить | голова`, answer: `У мене дуже болить голова` },
+  { jumbled: `Будь | ласка | викличіть | лікаря`, answer: `Будь ласка викличіть лікаря` },
+  { jumbled: `Я | хочу | купити | ліки`, answer: `Я хочу купити ліки` },
+  { jumbled: `У | вас | є | температура`, answer: `У вас є температура` },
+  { jumbled: `Пийте | багато | теплої | води`, answer: `Пийте багато теплої води` },
+  { jumbled: `Де | найближча | цілодобова | аптека`, answer: `Де найближча цілодобова аптека` },
+  { jumbled: `Мені | треба | піти | до | стоматолога`, answer: `Мені треба піти до стоматолога` },
+  { jumbled: `Як | ви | себе | почуваєте`, answer: `Як ви себе почуваєте` },
+  { jumbled: `Спорт | корисний | для | здоров'я`, answer: `Спорт корисний для здоров'я` },
+  { jumbled: `Бажаю | вам | міцного | здоров'я`, answer: `Бажаю вам міцного здоров'я` },
+  { jumbled: `Ця | таблетка | від | голови`, answer: `Ця таблетка від голови` },
+  { jumbled: `Ви | вже | одужали`, answer: `Ви вже одужали` }
 ]} />
 
 ### Grammar Clinic
@@ -641,14 +636,14 @@ Take care and stay healthy!
     explanation={`Genitive negation: немає кашлю.`}
   />
   <ErrorCorrectionItem
-    sentence={`Мої очі блакитні.`}
+    sentence={`Мої очі блакитний.`}
     errorWord={`блакитний`}
     correctForm={`блакитні`}
     options={[`блакитні`, `блакитний`, `блакитна`, `блакитне`]}
     explanation={`Plural adjective.`}
   />
   <ErrorCorrectionItem
-    sentence={`Вона зламала руку.`}
+    sentence={`Вона зламала рука.`}
     errorWord={`рука`}
     correctForm={`руку`}
     options={[`руку`, `рука`, `руки`, `рукою`]}

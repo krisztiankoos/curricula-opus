@@ -3,28 +3,36 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1564/1500
+- **Words:** ✅ 1665/1500
 - **Activities:** ✅ 19/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 9/5
+- **Engagement:** ✅ 10/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 55.6% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 55.3% (target 40-68% (B1.2 Motion))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (17 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Untitled** | ⚪️ | 35 | Skipped |
 | **Рух — Наближення та віддалення** | ⚪️ | 0 | Skipped |
 | **Діагностика** | ✅ | 89 | Included in Core |
 | **Аналіз** | ✅ | 200 | Included in Core |
 | **Поглиблення** | ⚪️ | 661 | Skipped |
 | **Figurative Meanings: Beyond Physical Motion** | ⚪️ | 167 | Skipped |
 | **Cultural Insight: The Art of Leaving** | ✅ | 146 | Included in Core |
+| **Need More Practice?** | ⚪️ | 66 | Skipped |
 | **Практика** | ⚪️ | 191 | Skipped |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **Головне** | ⚪️ | 110 | Skipped |

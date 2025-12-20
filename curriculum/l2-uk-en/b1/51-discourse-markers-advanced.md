@@ -25,7 +25,6 @@ vocabulary_count: 25
 
 # Дискурсивні маркери II — Складна організація тексту
 
-
 > 🎯 **Чому це важливо**
 >
 > «Зважаючи на це», «у підсумку», «таким чином» — просунуті маркери для формального та академічного стилю. Есе, презентації, звіти — все це потребує цих слів.
@@ -222,6 +221,16 @@ Some markers are too formal for casual speech:
 **Професор:** Чудова структура аргументації. **Врешті-решт**, саме так і потрібно будувати академічний текст.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

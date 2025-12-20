@@ -29,14 +29,6 @@ vocabulary_count: 20
 >
 > Різниця між одноразовими та повторюваними діями — це перше, що помічають носії мови у вашому мовленні. Якщо ви скажете "Я вчора прочитав книгу" замість "Я часто прочитав книги", носій одразу зрозуміє помилку. Цей модуль навчить вас автоматично обирати правильний вид.
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [The Past Imperfective tense in Ukrainian # 39](https://www.youtube.com/watch?v=PK-108GsZF4) — Ukrainian Language
-> **YouTube:** [The Past Perfective tense in Ukrainian # 43](https://www.youtube.com/watch?v=WfGlonPphFQ) — Ukrainian Language
-> **Past Tense Foundation:** [Past Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-past-tense/) — Review past tense forms before aspect
-> **Verb Prefixes:** [Ukrainian Verb Prefixes](https://www.ukrainianlessons.com/ukrainian-verb-prefixes/) — How prefixes create perfective verbs
-> **Overview:** [All Verb Tenses](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable reference chart
-
 ## Diagnostic
 
 Ось дві історії про Софію з Дніпра:
@@ -492,6 +484,16 @@ This is simpler than English, where "I read books" and "I read a book" use the s
 > If not, review the Analysis section and try the Practice activities again.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Verb Aspect:**
+> - 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+> - 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+> - 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+> - 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
 
 ## Activities
 

@@ -25,16 +25,9 @@ vocabulary_count: 30
 
 # Медіа та новини
 
-
 > 🎯 **Чому це важливо**
 >
 > Мова ЗМІ — особливий стиль. Заголовки, репортажі, коментарі — все має свої формули. Цей модуль готує вас до читання та розуміння українських новин.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [Hromadske News](https://youtube.com/@hromadske_ua) - Authentic video news.
-> 📺 **Video:** [Liga.net](https://youtube.com/@liga_net) - Political news and analysis.
->
 
 ## Діагностика
 
@@ -415,6 +408,16 @@ Key concepts for evaluating news:
 > 4. **Аналізуйте мову** — чи є емоційні маніпуляції?
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 
@@ -1104,8 +1107,6 @@ Key concepts for evaluating news:
     > [!options] ЗМІ | Факти | Дати | Числа
 
 ---
-
-
 
 ## Словник
 

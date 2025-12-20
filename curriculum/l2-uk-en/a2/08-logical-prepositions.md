@@ -32,7 +32,7 @@ Logical prepositions answer: *Для кого? Чому? Про що?* (For whom
 Today we unlock:
 - **Для** (For - Benefit)
 - **Без** (Without - Absence)
-- **Через** (Because of / Through)
+- **Через** (Because of | Through)
 - **Про** (About)
 - **Від** (From - Source)
 - **З** (With - Accompaniment)
@@ -89,7 +89,7 @@ Use **без** to indicate absence. This is straightforward - it simply means "w
 
 ## Part 2: Cause & Topic
 
-## Через + Accusative (Because of / Through)
+## Через + Accusative (Because of | Through)
 Use **через** to show cause or path.
 
 **Cause:**
@@ -188,7 +188,7 @@ Use **після** to indicate sequence in time.
 | після + **Gen** | Після **роботи**. | After work. |
 | після + **Gen** | Після **обіду**. | After lunch. |
 
-## Крім + Genitive (Except / Besides)
+## Крім + Genitive (Except | Besides)
 Use **крім** to indicate exception.
 
 | Pattern | Example | Meaning |
@@ -333,7 +333,7 @@ Today you learned 10 logical prepositions:
 | **після** | after | Genitive |
 | **крім** | except | Genitive |
 | **замість** | instead of | Genitive |
-| **через** | because of / through | Accusative |
+| **через** | because of | through | Accusative |
 | **про** | about | Accusative |
 | **о/об** | at (time) | Locative |
 | **з** | with | Instrumental |
@@ -499,21 +499,21 @@ Key distinctions:
 
 ## unjumble: Logical Sentences
 
-1. цукру / Кава / без
+1. цукру | Кава | без
    > [!answer] Кава без цукру
-2. тебе / Це / для
+2. тебе | Це | для
    > [!answer] Це для тебе
-3. мами / Лист / від
+3. мами | Лист | від
    > [!answer] Лист від мами
-4. дощ / залишився / Через / я / вдома
+4. дощ | залишився | Через | я | вдома
    > [!answer] Через дощ я залишився вдома
-5. про / говорили / Ми / тебе
+5. про | говорили | Ми | тебе
    > [!answer] Ми говорили про тебе
-6. молоком / Кава / з
+6. молоком | Кава | з
    > [!answer] Кава з молоком
-7. третій / о / Зустрінемось
+7. третій | о | Зустрінемось
    > [!answer] Зустрінемось о третій
-8. кави / Чай / замість
+8. кави | Чай | замість
    > [!answer] Чай замість кави
 
 ## error-correction: Wrong Preposition
@@ -757,7 +757,7 @@ I can't live without you.
 | після | /pˈislʲɑ/ | after | prep | Gen |
 | крім | /krim/ | except | prep | Gen |
 | замість | /zˈɑmistʲ/ | instead of | prep | Gen |
-| через | /t͡ʃˈɛrɛz/ | because of / through | prep | Acc |
+| через | /t͡ʃˈɛrɛz/ | because of | through | prep | Acc |
 | про | /prɔ/ | about | prep | Acc |
 | о | /ɔ/ | at (time) | prep | Loc |
 | об | /ɔb/ | at (before vowel) | prep | Loc |

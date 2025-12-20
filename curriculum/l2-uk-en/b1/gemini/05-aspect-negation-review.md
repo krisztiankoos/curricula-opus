@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 2390/1500
+- **Words:** ✅ 2386/1500
 - **Activities:** ✅ 16/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,20 +14,27 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.1% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 50.4% (target 40-68% (B1.1 Aspect))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (15 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Вид у запереченні — Особливості** | ⚪️ | 141 | Skipped |
+| **Вид у запереченні — Особливості** | ⚪️ | 70 | Skipped |
 | **Diagnostic** | ✅ | 236 | Included in Core |
 | **Analysis** | ⚪️ | 498 | Skipped |
 | **Deep Dive** | ✅ | 847 | Included in Core |
 | **Practice** | ⚪️ | 413 | Skipped |
 | **Summary** | ✅ | 255 | Included in Core |
+| **Need More Practice?** | ⚪️ | 67 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Aspect in Negation** | 🎮 | 14 | Activity (14 items, min 8) |
-| **match-up: Negation Vocabulary** | 🎮 | 14 | Activity (14 items, min 8) |
+| **match-up: Негативні вирази** | 🎮 | 14 | Activity (14 items, min 8) |
 | **fill-in: General Negation — Imperfective** | 🎮 | 14 | Activity (14 items, min 8) |
 | **fill-in: "Ще не" — Perfective** | 🎮 | 14 | Activity (14 items, min 8) |
 | **true-false: Negation Rules** | 🎮 | 14 | Activity (14 items, min 8) |

@@ -30,15 +30,6 @@ vocabulary_count: 20
 >
 > Коли ви плануєте, обіцяєте або передбачаєте — ви говорите про майбутнє. Українська має три способи це робити, і кожен несе своє значення. Вибір правильної форми показує носіям, чи ви обіцяєте результат ("Напишу!"), чи просто описуєте майбутню діяльність ("Буду писати").
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [FUTURE TENSE IN UKRAINIAN LANGUAGE](https://www.youtube.com/watch?v=VJmihxvTLww) — Speak Ukrainian
-> **YouTube:** [Verb Conjugation: Future Tense #Ukrainian](https://www.youtube.com/watch?v=7oBqLYAYnw4) — Let's Learn Ukrainian
-> **YouTube:** [The Future tense # 107](https://www.youtube.com/watch?v=oXM7CrIta2E) — Ukrainian Language
-> **Future Tense Guide:** [Future Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-future-tense/) — Compound vs simple future
-> **Verb Prefixes:** [Ukrainian Verb Prefixes](https://www.ukrainianlessons.com/ukrainian-verb-prefixes/) — How prefixes create perfective verbs
-> **All Tenses:** [Verb Tenses Overview](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable reference chart
-
 ## Diagnostic
 
 Ось три способи сказати "I will read" українською:
@@ -441,6 +432,16 @@ Choose the most appropriate form based on context:
 > If not, review the Analysis section and try the Practice activities again.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Verb Aspect:**
+> - 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+> - 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+> - 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+> - 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
 
 ## Activities
 

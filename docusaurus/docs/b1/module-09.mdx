@@ -20,6 +20,11 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
+# Інтеграція виду
+
+> 🎯 **Чому це важливо**
+>
+> Досі ви вивчали окремі правила виду. Тепер час об'єднати їх в єдину систему. Носії мови обирають вид автоматично — і ви теж навчитеся це робити після цього інтеграційного модуля.
 
 ## Діагностика
 
@@ -275,6 +280,18 @@ The following dialogues demonstrate how aspects combine naturally in everyday Uk
 > **Fact:** While aspect is unfamiliar to English speakers, the rules are systematic and learnable. Russian propaganda often claims Ukrainian is "too difficult for foreigners" to discourage learning. In reality, millions of Ukrainians abroad teach their children aspect naturally. The Kyiv-Mohyla Academy developed aspect teaching methods as early as the 17th century. The difficulty is not inherent — it's just unfamiliar.
 
 ---
+
+## Need More Practice?
+
+:::info[🎧 External Resources]
+
+**Verb Aspect:**
+- 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+- 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+- 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+- 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
+:::
+
 
 ## Практика
 
@@ -698,6 +715,19 @@ From this point on, focus on exposure and production. Read Ukrainian texts, list
   }
 ]} />
 
+### Комплексний наратив
+
+<Cloze
+  passage={`**День Олени**
+
+Вчора Олена [___:1] о сьомій. Увесь ранок вона [___:2] сніданок та [___:3] на роботу. По дорозі вона [___:4] музику. О дев'ятій вона [___:5] з метро.
+
+На роботі вона [___:6] над проєктом. О другій годині вона [___:7] роботу і [___:8] з подругою на обід. Вони [___:9] у кафе дві години і [___:10] про все.
+
+Увечері вона [___:11] спати о десятій. Перед сном вона ще [___:12] над планами на завтра. Нарешті вона [___:13] і згадала: «Який чудовий день [___:14]!»`}
+  blanks={[{ index: 0, answer: `прокинулася`, options: [`прокинулася`, `прокидалася`, `прокидається`, `прокинеться`] }, { index: 1, answer: `готувала`, options: [`готувала`, `приготувала`, `готує`, `приготує`] }, { index: 2, answer: `пішла`, options: [`пішла`, `ходила`, `йде`, `піде`] }, { index: 3, answer: `слухала`, options: [`слухала`, `послухала`, `слухає`, `послухає`] }, { index: 4, answer: `вийшла`, options: [`вийшла`, `виходила`, `виходить`, `вийде`] }, { index: 5, answer: `працювала`, options: [`працювала`, `попрацювала`, `працює`, `попрацює`] }, { index: 6, answer: `закінчила`, options: [`закінчила`, `закінчувала`, `закінчує`, `закінчить`] }, { index: 7, answer: `зустрілася`, options: [`зустрілася`, `зустрічалася`, `зустрічається`, `зустрінеться`] }, { index: 8, answer: `сиділи`, options: [`сиділи`, `посиділи`, `сидять`, `посидять`] }, { index: 9, answer: `розмовляли`, options: [`читала`, `прочитала`, `читає`, `прочитає`] }, { index: 10, answer: `лягла`, options: [`лягла`, `лягала`, `лягає`, `ляже`] }, { index: 11, answer: `думала`, options: [`думала`, `подумала`, `думає`, `подумає`] }, { index: 12, answer: `заснула`, options: [`заснула`, `засипала`, `засипляє`, `засне`] }, { index: 13, answer: `пройшов`, options: [`пройшов`, `проходив`, `проходить`, `пройде`] }]}
+/>
+
 ### Вибір виду
 
 <Select questions={[
@@ -786,6 +816,136 @@ From this point on, focus on exposure and production. Read Ukrainian texts, list
       { text: `прийняв`, correct: true }
     ]
   }
+]} />
+
+### Інтеграційний переклад
+
+<Translate questions={[
+  {
+    source: `I read this book for three hours (process).`,
+    options: [
+      { text: `Я читав цю книгу три години.`, correct: true },
+      { text: `Я прочитав цю книгу три години.`, correct: false },
+      { text: `Я читаю цю книгу три години.`, correct: false },
+      { text: `Я прочитаю цю книгу три години.`, correct: false }
+    ]
+  },  {
+    source: `I finished the book yesterday (result).`,
+    options: [
+      { text: `Я читав книгу вчора.`, correct: false },
+      { text: `Я прочитав книгу вчора.`, correct: true },
+      { text: `Я читаю книгу вчора.`, correct: false },
+      { text: `Я прочитаю книгу.`, correct: false }
+    ]
+  },  {
+    source: `Have you ever been to Ukraine? (experience)`,
+    options: [
+      { text: `Ти бував в Україні?`, correct: true },
+      { text: `Ти побував в Україні?`, correct: false },
+      { text: `Ти буваєш в Україні?`, correct: false },
+      { text: `Ти побудеш в Україні?`, correct: false }
+    ]
+  },  {
+    source: `I haven't read it yet.`,
+    options: [
+      { text: `Я не читав це.`, correct: false },
+      { text: `Я ще не прочитав це.`, correct: true },
+      { text: `Я не читаю це.`, correct: false },
+      { text: `Я не прочитаю це.`, correct: false }
+    ]
+  },  {
+    source: `First he came, then he sat down.`,
+    options: [
+      { text: `Спочатку він приходив, потім сідав.`, correct: false },
+      { text: `Спочатку він прийшов, потім сів.`, correct: true },
+      { text: `Спочатку він приходить, потім сідає.`, correct: false },
+      { text: `Спочатку він прийде, потім сяде.`, correct: false }
+    ]
+  },  {
+    source: `While she was cooking, he was reading.`,
+    options: [
+      { text: `Поки вона готувала, він читав.`, correct: true },
+      { text: `Поки вона приготувала, він прочитав.`, correct: false },
+      { text: `Поки вона готує, він читає.`, correct: false },
+      { text: `Поки вона приготує, він прочитає.`, correct: false }
+    ]
+  },  {
+    source: `Come in! Sit down!`,
+    options: [
+      { text: `Заходь! Сідай!`, correct: true },
+      { text: `Зайди! Сядь!`, correct: false },
+      { text: `Заходиш! Сідаєш!`, correct: false },
+      { text: `Зайдеш! Сядеш!`, correct: false }
+    ]
+  },  {
+    source: `Don't forget the keys!`,
+    options: [
+      { text: `Не забувай ключі!`, correct: false },
+      { text: `Не забудь ключі!`, correct: true },
+      { text: `Не забуваєш ключі!`, correct: false },
+      { text: `Не забудеш ключі!`, correct: false }
+    ]
+  },  {
+    source: `She always helped me.`,
+    options: [
+      { text: `Вона завжди допомагала мені.`, correct: true },
+      { text: `Вона завжди допомогла мені.`, correct: false },
+      { text: `Вона завжди допомагає мені.`, correct: false },
+      { text: `Вона завжди допоможе мені.`, correct: false }
+    ]
+  },  {
+    source: `He suddenly started speaking.`,
+    options: [
+      { text: `Він раптом заговорював.`, correct: false },
+      { text: `Він раптом заговорив.`, correct: true },
+      { text: `Він раптом заговорює.`, correct: false },
+      { text: `Він раптом заговорить.`, correct: false }
+    ]
+  },  {
+    source: `Write the report by Friday!`,
+    options: [
+      { text: `Пиши звіт до п'ятниці!`, correct: false },
+      { text: `Напиши звіт до п'ятниці!`, correct: true },
+      { text: `Пишеш звіт до п'ятниці!`, correct: false },
+      { text: `Напишеш звіт до п'ятниці!`, correct: false }
+    ]
+  },  {
+    source: `Don't touch the stove!`,
+    options: [
+      { text: `Не торкайся плити!`, correct: true },
+      { text: `Не торкнися плити!`, correct: false },
+      { text: `Не торкаєшся плити!`, correct: false },
+      { text: `Не доторкнешся плити!`, correct: false }
+    ]
+  },  {
+    source: `I was waiting for you all day.`,
+    options: [
+      { text: `Я чекав на тебе весь день.`, correct: true },
+      { text: `Я почекав на тебе весь день.`, correct: false },
+      { text: `Я чекаю на тебе весь день.`, correct: false },
+      { text: `Я почекаю на тебе весь день.`, correct: false }
+    ]
+  },  {
+    source: `Finally, she found the solution!`,
+    options: [
+      { text: `Нарешті вона шукала рішення!`, correct: false },
+      { text: `Нарешті вона знайшла рішення!`, correct: true },
+      { text: `Нарешті вона шукає рішення!`, correct: false },
+      { text: `Нарешті вона знайде рішення!`, correct: false }
+    ]
+  }
+]} />
+
+### Розмова про вихідні
+
+<DialogueReorder lines={[
+  { text: `A: А що ти робила у вихідні?`, order: 1 },
+  { text: `B: Я прокинулася о десятій і снідала годину.`, order: 2 },
+  { text: `A: А потім?`, order: 3 },
+  { text: `B: Потім пішла гуляти в парк і зустрілася з подругою.`, order: 4 },
+  { text: `A: Добре провели час?`, order: 5 },
+  { text: `B: Так, ми гуляли три години і поговорили про все!`, order: 6 },
+  { text: `A: Чудово!`, order: 7 }
 ]} />
 ## 📚 Словник
 

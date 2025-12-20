@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1639/1500
+- **Words:** ✅ 1742/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 60.0% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 59.5% (target 40-68% (B1.3-4 Complex))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Відносні речення з де, куди, звідки** | ⚪️ | 34 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Beyond який: Place Words** | ⚪️ | 253 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -30,6 +37,7 @@
 | **Діалог 2: На вокзалі** | ✅ | 328 | Included in Core |
 | **Summary** | ✅ | 0 | Included in Core |
 | **Quick Decision Guide** | ⚪️ | 242 | Skipped |
+| **Need More Practice?** | ⚪️ | 69 | Skipped |
 | **Вправи** | ⚪️ | 0 | Skipped |
 | **fill-in: де, куди, або звідки** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Дієслово і слово** | 🎮 | 14 | Activity (14 items, min 8) |

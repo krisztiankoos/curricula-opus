@@ -65,7 +65,7 @@ This is the "instrumental" in its truest sense — the case of instruments and m
 У попередньому модулі ви вивчили орудний відмінок із прийменником **з** для супроводу. Тепер ми розглянемо орудний відмінок **без прийменника**.
 
 The instrumental case without a preposition answers:
-- **Чим?** — By what? / With what? (means, tool)
+- **Чим?** — By what? | With what? (means, tool)
 - **Як?** — How? (manner)
 
 This is the instrumental in its most literal sense — the case of instruments, tools, and the means by which actions are performed. Think of it as the "by" case: you travel **by bus**, write **with a pen**, and speak **in a voice**.
@@ -200,8 +200,8 @@ Modern technology also uses the instrumental case. You work with a computer, sen
 > - дзвонити **по телефону** = preposition + locative (also common)
 >
 > **Similar alternations:**
-> - надсилати поштою / надсилати по пошті (by mail)
-> - передавати радіо / передавати по радіо (by radio)
+> - надсилати поштою | надсилати по пошті (by mail)
+> - передавати радіо | передавати по радіо (by radio)
 >
 > **Which to use?** Both are correct. The bare instrumental is considered more traditional, while "по + locative" is common in everyday speech.
 
@@ -623,27 +623,27 @@ The following activities will help you master the bare Instrumental case. Rememb
 ## unjumble: Instrumental Sentences
 > Put the words in the correct order.
 
-1. вона / їде / до / центру / трамваєм
+1. вона | їде | до | центру | трамваєм
    > [!answer] Вона їде до центру трамваєм
    > (She goes to the center by tram.)
 
-2. вона / пише / листа / ручкою
+2. вона | пише | листа | ручкою
    > [!answer] Вона пише листа ручкою
    > (She writes a letter with a pen.)
 
-3. він / ріже / хліб / ножем
+3. він | ріже | хліб | ножем
    > [!answer] Він ріже хліб ножем
    > (He cuts bread with a knife.)
 
-4. ми / їмо / суп / ложкою
+4. ми | їмо | суп | ложкою
    > [!answer] Ми їмо суп ложкою
    > (We eat soup with a spoon.)
 
-5. вона / летить / до / Парижа / літаком
+5. вона | летить | до | Парижа | літаком
    > [!answer] Вона летить до Парижа літаком
    > (She flies to Paris by plane.)
 
-6. він / говорить / тихим / голосом
+6. він | говорить | тихим | голосом
    > [!answer] Він говорить тихим голосом
    > (He speaks in a quiet voice.)
 

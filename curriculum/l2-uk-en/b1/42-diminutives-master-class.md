@@ -19,7 +19,6 @@ vocabulary_count: 30
 
 # Здрібнілі форми
 
-
 > 🎯 **Чому це важливо**
 >
 > Зменшувально-пестливі суфікси — серце української емоційності. «Сонечко», «котик», «хлібчик» — це не лише «маленький», а й любов, ніжність, іронія. Без них ваша українська буде холодною.
@@ -241,6 +240,16 @@ Context is rarely neutral with diminutives. They amplify the underlying emotion 
 Ці слова вже не сприймаються як «здрібнілі» — вони стали нейтральними назвами цих речей. Коли українці чують «ручка», вони думають про письмове знаряддя, а не про маленьку руку дитини.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 

@@ -19,7 +19,6 @@ vocabulary_count: 15
 
 # Інтегрована граматична лабораторія
 
-
 > 🎯 **Чому це важливо**
 >
 > Лабораторія інтеграції: всі граматичні теми разом. Тут немає нових правил — лише практика застосування всього, що ви вивчили, у складних контекстах.
@@ -211,6 +210,16 @@ Required style:
 > Bilingual speakers switch languages; monolinguals switch registers. Skilled Ukrainian communicators can shift from «Шановні панове, рішення прийнято» to «Хлопці, все зробили!» in seconds. This module trains you for that fluidity.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 

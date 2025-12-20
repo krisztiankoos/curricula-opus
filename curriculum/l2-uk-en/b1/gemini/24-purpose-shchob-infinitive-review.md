@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1551/1500
+- **Words:** ✅ 1650/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/5
+- **Engagement:** ✅ 7/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 59.3% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 58.8% (target 40-68% (B1.3-4 Complex))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Мета: щоб + інфінітив** | ⚪️ | 30 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Why Do We Do Things?** | ⚪️ | 259 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -32,6 +39,7 @@
 | **Same-Subject Purpose Pattern** | ✅ | 0 | Included in Core |
 | **Key Rule** | ⚪️ | 9 | Skipped |
 | **Extended Forms** | ⚪️ | 249 | Skipped |
+| **Need More Practice?** | ⚪️ | 69 | Skipped |
 | **Вправи** | ⚪️ | 0 | Skipped |
 | **fill-in: Правильний інфінітив** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Головне речення і мета** | 🎮 | 14 | Activity (14 items, min 8) |

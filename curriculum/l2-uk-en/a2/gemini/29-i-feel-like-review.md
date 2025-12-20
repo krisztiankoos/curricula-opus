@@ -19,9 +19,6 @@
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (11 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
@@ -32,7 +29,7 @@
 | **3. Active Emotional Verbs** | ⚪️ | 92 | Skipped |
 | **Deep Dive: Active vs Passive Emotions** | ✅ | 23 | Included in Core |
 | **1. The State (Dative) - "It is happening to me"** | ⚪️ | 59 | Skipped |
-| **2. The Quality (Adjective) - "I am that kind of person / current look"** | ⚪️ | 45 | Skipped |
+| **2. The Quality (Adjective) - "I am that kind of person | current look"** | ⚪️ | 45 | Skipped |
 | **3. The Action (Verb) - "I am doing feeling"** | ⚪️ | 68 | Skipped |
 | **Myth Buster: The "Cold" Slavs?** | ⚪️ | 103 | Skipped |
 | **Language in Action** | ⚪️ | 0 | Skipped |

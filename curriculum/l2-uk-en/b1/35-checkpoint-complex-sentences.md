@@ -4,6 +4,7 @@ title: "Контрольна точка: Складні речення"
 subtitle: "Checkpoint - Complex Sentences"
 version: "1.0"
 phase: "B1"
+focus: checkpoint
 pedagogy: "TTT"
 duration: 75
 transliteration: none
@@ -17,7 +18,6 @@ vocabulary_count: 20
 ---
 
 # Контрольна точка: Складні речення
-
 
 > 🎯 **Контрольна точка**
 >
@@ -241,6 +241,16 @@ By the end of this phase, you should be able to:
 > | Reported speech | Can't convert | Convert with mistakes | Convert accurately |
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Практика
 

@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1511/1500
+- **Words:** ✅ 1616/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/5
+- **Engagement:** ✅ 6/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 37/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 59.6% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 63.7% (target 40-68% (B1.1 Aspect))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Untitled** | ⚪️ | 38 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **A Monday at Work: Aspect in Action** | ⚪️ | 181 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -28,6 +35,7 @@
 | **Workplace Scenarios: When Aspect Really Matters** | ✅ | 79 | Included in Core |
 | **Типові робочі ситуації** | ⚪️ | 155 | Skipped |
 | **Тиждень Олени: Повна історія** | ⚪️ | 170 | Skipped |
+| **Need More Practice?** | ⚪️ | 67 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **Practice Exercise 1: Status Report Simulation** | ⚪️ | 85 | Skipped |
 | **Practice Exercise 2: Aspect Transformation** | ✅ | 45 | Included in Core |
@@ -44,6 +52,6 @@
 | **cloze: Робочий тиждень** | 🎮 | 14 | Activity (14 items, min 6) |
 | **select: Правильний вибір** | 🎮 | 14 | Activity (14 items, min 6) |
 | **translate: Робочі фрази** | 🎮 | 14 | Activity (14 items, min 6) |
-| **dialogue-reorder: Status Meeting** | 🎮 | 6 | Activity (6 items, min 5) |
+| **dialogue-reorder: Статус-мітинг** | 🎮 | 8 | Activity (8 items, min 5) |
 | **mark-the-words: Знайдіть доконаний вид** | 🎮 | 14 | Activity (14 items, min 6) |
 | **Словник** | ⚪️ | 0 | Skipped |

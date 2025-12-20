@@ -18,19 +18,11 @@ vocabulary_count: 30
 
 # Абстрактні поняття II: Процеси
 
-
 > 🎯 **Чому це важливо**
 >
 > «Розвиток», «зростання», «занепад» — слова для опису процесів. Економіка, політика, життя — все це процеси. Цей модуль дає лексику для їх обговорення.
 
-> [!resources] 🎧 External Resources
->
-> **Grammar Guide:** [Ukrainian Lessons: Vocabulary](https://ukrainianlessons.com/vocabulary/) — Building your Ukrainian word bank
->
-> **YouTube:** [10 Common Ukrainian Phrases for Intermediate Learners](https://www.youtube.com/watch?v=yY_m7z7nN2k) — Verba School (abstract vocabulary in context)
-
 ## Діагностика
-
 
 Read this economic news report. Pay attention to the words describing changes and processes.
 
@@ -228,6 +220,16 @@ Process vocabulary describes HOW things change over time. Ukrainian uses many ab
 >   (Industrialization lasted for decades.)
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

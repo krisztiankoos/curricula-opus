@@ -18,15 +18,9 @@ vocabulary_count: 20
 
 # Відносні речення з коли та що
 
-
 > 🎯 **Чому це важливо**
 >
 > «Коли» і «що» розширюють ваші можливості. «Час, коли ми зустрілися», «те, що він сказав» — ці сполучники дозволяють будувати ще більш складні й точні речення.
-
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Relative Clauses](https://ukrainianlessons.com/relative-clauses/) - Comprehensive guide to relative clauses.
->
 
 ## Діагностика
 
@@ -296,6 +290,16 @@ A useful test: if you can replace the antecedent with "the moment" or "the time,
 Note that що in relative clauses differs from що meaning "that" in content clauses after verbs of saying/thinking. Here, що specifically connects to an antecedent noun, creating a subordinate structure that modifies that noun.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 
@@ -929,8 +933,6 @@ Note that що in relative clauses differs from що meaning "that" in content c
 14. Нічого, *що* могло б допомогти, немає.
 
 ---
-
-
 
 ## Словник
 

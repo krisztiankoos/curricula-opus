@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1522/1500
+- **Words:** ✅ 1625/1500
 - **Activities:** ✅ 13/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/5
+- **Engagement:** ✅ 7/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 32/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 52.3% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 57.0% (target 40-68% (B1.1 Aspect))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Інтеграція виду** | ⚪️ | 36 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Comprehensive Aspect Test** | ⚪️ | 205 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -27,6 +34,7 @@
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Advanced Cases: Where Aspect Gets Tricky** | ⚪️ | 167 | Skipped |
 | **Practice Dialogues: Aspect in Real Conversations** | ✅ | 353 | Included in Core |
+| **Need More Practice?** | ⚪️ | 67 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **Вправа: Наратив** | ⚪️ | 70 | Skipped |
 | **Summary** | ✅ | 0 | Included in Core |
@@ -42,6 +50,6 @@
 | **cloze: Комплексний наратив** | 🎮 | 14 | Activity (14 items, min 6) |
 | **select: Вибір виду** | 🎮 | 14 | Activity (14 items, min 6) |
 | **translate: Інтеграційний переклад** | 🎮 | 14 | Activity (14 items, min 6) |
-| **dialogue-reorder: Aspect in Conversation** | 🎮 | 6 | Activity (6 items, min 5) |
+| **dialogue-reorder: Розмова про вихідні** | 🎮 | 7 | Activity (7 items, min 5) |
 | **mark-the-words: Знайдіть доконаний вид** | 🎮 | 14 | Activity (14 items, min 6) |
 | **Словник** | ⚪️ | 0 | Skipped |

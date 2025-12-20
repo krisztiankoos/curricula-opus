@@ -4,6 +4,7 @@ title: Checkpoint - Vocabulary Expansion
 subtitle: "Reviewing what we learned"
 version: "1.0"
 phase: "A2"
+focus: checkpoint
 pedagogy: "Narrative"
 duration: 60
 transliteration: none
@@ -17,12 +18,31 @@ objectives:
 vocab_count: 10
 ---
 
+## Checkpoint - Vocabulary Expansion
+
 ## Warm-up
 
 Вітаю! This is a **Checkpoint Module**. We have covered a lot of topics: from nature to technology, from health to hobbies.
 Do you remember how to say "I have a headache"? Do you remember the word for "mountains"?
 Today we will review everything and check your progress.
 Get ready for a challenge!
+
+In this checkpoint, you'll consolidate:
+1. **Theme vocabulary** — Home, Nature, Work, Health, Shopping
+2. **Key verbs** — вчитися/вивчати, працювати, купувати, їхати
+3. **Case usage** — when to use which ending
+
+> [!tip] **Common Mistakes to Avoid**
+> ❌ *Я живу в Київ.* — Wrong! (Direction case for location)
+> ✅ *Я живу в Києві.* — Correct! (Locative for location)
+>
+> ❌ *У мене болить голову.* — Wrong! (Object confusion)
+> ✅ *У мене болить голова.* — Correct! (голова is the subject)
+>
+> ❌ *Я люблю природа.* — Wrong! (Nominative for object)
+> ✅ *Я люблю природу.* — Correct! (Accusative for direct object)
+>
+> **Memory trick:** Location = Locative (-і/-у). Direction = Accusative. Pain: the body part DOES the hurting.
 
 ## Presentation
 
@@ -446,51 +466,51 @@ You are real expert now. Keep going!
 
 ## unjumble: Review Sentences
 
-1. Я / люблю / свою / цікаву / роботу
+1. Я | люблю | свою | цікаву | роботу
    > [!answer] Я люблю свою цікаву роботу
    > I love my interesting job.
 
-2. Ми / їдемо / відпочивати / в / гори
+2. Ми | їдемо | відпочивати | в | гори
    > [!answer] Ми їдемо відпочивати в гори
    > We are going to relax in the mountains.
 
-3. У / мене / немає / грошей
+3. У | мене | немає | грошей
    > [!answer] У мене немає грошей
    > I have no money.
 
-4. Сьогодні / дуже / гарна / погода
+4. Сьогодні | дуже | гарна | погода
    > [!answer] Сьогодні дуже гарна погода
    > Today is very nice weather.
 
-5. Мені / треба / купити / ліки
+5. Мені | треба | купити | ліки
    > [!answer] Мені треба купити ліки
    > I need to buy medicine.
 
-6. Студенти / навчаються / в / університеті
+6. Студенти | навчаються | в | університеті
    > [!answer] Студенти навчаються в університеті
    > Students study at the university.
 
-7. Мій / брат — / відомий / футболіст
+7. Мій | брат — | відомий | футболіст
    > [!answer] Мій брат відомий футболіст
    > My brother is a famous footballer.
 
-8. Я / прокидаюся / о / сьомій / годині
+8. Я | прокидаюся | о | сьомій | годині
    > [!answer] Я прокидаюся о сьомій годині
    > I wake up at 7 o'clock.
 
-9. Ця / квартира / дуже / світла
+9. Ця | квартира | дуже | світла
    > [!answer] Ця квартира дуже світла
    > This apartment is very bright.
 
-10. Бажаю / вам / гарного / настрою
+10. Бажаю | вам | гарного | настрою
     > [!answer] Бажаю вам гарного настрою
     > I wish you a good mood.
 
-11. Спорт / — / це / здоров'я
+11. Спорт | — | це | здоров'я
     > [!answer] Спорт це здоров'я
     > Sport is health.
 
-12. Інтернет / працює / дуже / повільно
+12. Інтернет | працює | дуже | повільно
     > [!answer] Інтернет працює дуже повільно
     > Internet works very slowly.
 

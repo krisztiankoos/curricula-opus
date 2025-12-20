@@ -55,14 +55,14 @@ Imagine a house. We will use the verb **йти** (to walk) as our base.
 
 | Prefix | Meaning | Logic | Example |
 | :--- | :--- | :--- | :--- |
-| **В- / У-** | **In** | Entering a space | **У**війти в кімнату (Enter the room) |
+| **В- | У-** | **In** | Entering a space | **У**війти в кімнату (Enter the room) |
 | **Ви-** | **Out** | Exiting a space | **Ви**йти з дому (Exit the house) |
 | **При-** | **Arrival** | Reaching a goal | **При**йти на роботу (Arrive at work) |
 | **Пі-** | **Departure** | Leaving for good | **Пі**ти додому (Leave for home) |
 | **Під-** | **Approach** | Getting close | **Під**ійти до вікна (Approach the window) |
 | **Від-** | **Away** | Stepping back | **Від**ійти від дверей (Step away from the door) |
 | **Пере-** | **Cross** | Crossing a line | **Пере**йти вулицю (Cross the street) |
-| **За-** | **Drop by** | Brief visit / Behind | **За**йти в магазин (Pop into the store) |
+| **За-** | **Drop by** | Brief visit | Behind | **За**йти в магазин (Pop into the store) |
 | **Про-** | **Through** | Passing by/through | **Про**йти парк (Pass through the park) |
 | **Об-** | **Around** | Circumnavigating | **Об**ійти дім (Walk around the house) |
 
@@ -135,12 +135,12 @@ Even today, if you rush out, a Ukrainian might stop you: "Sit down! We need luck
 Motion verbs change the case of the destination!
 You are not "at" a place (Locative). You are going "into" a place (Accusative).
 
-- **Location (Locative):** Я (де?) в парку / на роботі.
-- **Direction (Accusative):** Я йду (куди?) **в парк** / **на роботу**.
+- **Location (Locative):** Я (де?) в парку | на роботі.
+- **Direction (Accusative):** Я йду (куди?) **в парк** | **на роботу**.
 
 | Verb | Preposition | Case | Example |
 | :--- | :--- | :--- | :--- |
-| **Прийти** | **В / У** | Accusative | Я прийшов **у магазин**. |
+| **Прийти** | **В | У** | Accusative | Я прийшов **у магазин**. |
 | **Вийти** | **З** | Genitive | Я вийшов **з магазину**. |
 | **Піти** | **На** | Accusative | Я пішов **на концерт**. |
 | **Поїхати** | **До** | Genitive | Я поїхав **до бабусі**. |
@@ -164,12 +164,8 @@ Ukrainian loves to use motion verbs for abstract ideas.
     *   *Ти що, **зійшов** з розуму?*
 3.  **Прийти в голову** (To arrive into head) = To occur to someone.
     *   *Мені **прийшла** в голову ідея.*
-4.  **Вийти** (To work out / succeed).
-    *   *У мене все **вийшло**!* (I succeeded / It worked out).
-
----
-
-## Deep Dive: Go vs. Drive (Йти vs. Їхати)
+4.  **Вийти** (To work out | succeed).
+    *   *У мене все **вийшло**!* (I succeeded | It worked out).
 
 ---
 
@@ -284,7 +280,7 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
   { left: `Ви-`, right: `Exit (Out of somewhere)` },
   { left: `Під-`, right: `Approach (Getting closer)` },
   { left: `Пере-`, right: `Cross (Over a line)` },
-  { left: `За-`, right: `Drop by (Brief visit / Behind)` },
+  { left: `За-`, right: `Drop by (Brief visit | Behind)` },
   { left: `В-`, right: `Enter (Into somewhere)` },
   { left: `Від-`, right: `Away (Distance increases)` },
   { left: `Об-`, right: `Around (Circle)` },
@@ -365,7 +361,7 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
   },  {
     question: `The train is at the platform. It is ready to start the journey. It...`,
     options: [
-      { text: `Відправляється / Від'їжджає`, correct: true },
+      { text: `Відправляється | Від'їжджає`, correct: true },
       { text: `Приїжджає`, correct: false },
       { text: `Під'їжджає`, correct: false }
     ]
@@ -480,12 +476,12 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
 ### Build the Sentence
 
 <Unjumble items={[
-  { jumbled: `магазин / в / зайшов / він`, answer: `Він зайшов в магазин` },
-  { jumbled: `з / вийшла / вона / дому`, answer: `Вона вийшла з дому` },
-  { jumbled: `до / підійти / вікна`, answer: `Підійти до вікна` },
-  { jumbled: `ми / міст / переїхали`, answer: `Ми переїхали міст` },
-  { jumbled: `додому / я / прийшов`, answer: `Я прийшов додому` },
-  { jumbled: `автобус / від / від'їхав / зупинки`, answer: `Автобус від'їхав від зупинки` }
+  { jumbled: `магазин | в | зайшов | він`, answer: `Він зайшов в магазин` },
+  { jumbled: `з | вийшла | вона | дому`, answer: `Вона вийшла з дому` },
+  { jumbled: `до | підійти | вікна`, answer: `Підійти до вікна` },
+  { jumbled: `ми | міст | переїхали`, answer: `Ми переїхали міст` },
+  { jumbled: `додому | я | прийшов`, answer: `Я прийшов додому` },
+  { jumbled: `автобус | від | від'їхав | зупинки`, answer: `Автобус від'їхав від зупинки` }
 ]} />
 
 ### Find the Motion
@@ -509,7 +505,7 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
 Тато [___:6]стрічає мене на пероні.
 Ми [___:7]їжджаємо додому машиною.
 Мама рада, що я [___:8]їхав.`}
-  blanks={[{ index: 0, answer: `ви`, options: [`ви`] }, { index: 1, answer: `при`, options: [`при`] }, { index: 2, answer: `за`, options: [`за`] }, { index: 3, answer: `від`, options: [`від`] }, { index: 4, answer: `при`, options: [`при`] }, { index: 5, answer: `зу`, options: [`зу`] }, { index: 6, answer: `їд`, options: [`їд`] }, { index: 7, answer: `при`, options: [`при`] }]}
+  blanks={[{ index: 0, answer: `ви`, options: [`ви`, `при`, `від`] }, { index: 1, answer: `при`, options: [`при`, `ви`, `за`] }, { index: 2, answer: `за`, options: [`за`, `ви`, `при`] }, { index: 3, answer: `від`, options: [`від`, `при`, `ви`] }, { index: 4, answer: `при`, options: [`при`, `ви`, `від`] }, { index: 5, answer: `зу`, options: [`зу`, `при`, `ви`] }, { index: 6, answer: `їд`, options: [`їд`, `при`, `від`] }, { index: 7, answer: `при`, options: [`при`, `ви`, `від`] }]}
 />
 
 ### Asking Directions
@@ -531,15 +527,15 @@ Yet, the language survived with its complex urban grammar intact. When you ask "
   <ErrorCorrectionItem
     sentence={`Я **вийшов** в кімнату. (Logic: Exit into?)`}
     errorWord={`вийшов`}
-    correctForm={`увійшов / зайшов`}
-    options={[`увійшов`, `вийшов`, `увійшов / зайшов`]}
+    correctForm={`увійшов | зайшов`}
+    options={[`увійшов`, `вийшов`, `увійшов | зайшов`]}
     explanation={`Entering a room uses \"увійти\" or \"зайти\". \"Вийти\" means to exit.`}
   />
   <ErrorCorrectionItem
     sentence={`Машина **прийшла** в гараж. (Verb type)`}
     errorWord={`прийшла`}
-    correctForm={`приїхала / заїхала`}
-    options={[`заїхала`, `прийшла`, `приїхала / заїхала`]}
+    correctForm={`приїхала | заїхала`}
+    options={[`заїхала`, `прийшла`, `приїхала | заїхала`]}
     explanation={`Cars rely on wheels (їхати), not feet (йти).`}
   />
   <ErrorCorrectionItem

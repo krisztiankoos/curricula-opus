@@ -19,7 +19,6 @@ vocabulary_count: 25
 
 # Числівники: збірні та дробові
 
-
 > 🎯 **Чому це важливо**
 >
 > «Двоє друзів», «троє дітей», «півтора кілограма» — збірні числівники та дроби мають особливі правила. Без них ви не зможете правильно рахувати людей чи ділити піцу.
@@ -241,6 +240,16 @@ Ukrainian folklore preserves ancient uses of numerals. These fixed phrases often
 > "Three" (три/троє) is a magic number in Ukrainian tales: **три сини** (three sons), **три спроби** (three attempts), **три дороги** (three roads). Narrative rhythm often relies on this "rule of three."
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 

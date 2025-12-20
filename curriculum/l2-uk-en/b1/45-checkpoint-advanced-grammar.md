@@ -4,6 +4,7 @@ title: "Контрольна точка: просунута граматика"
 subtitle: "Checkpoint - Advanced Grammar"
 version: "1.0"
 phase: "B1"
+focus: checkpoint
 pedagogy: "TTT"
 duration: 75
 transliteration: none
@@ -18,7 +19,6 @@ vocabulary_count: 15
 ---
 
 # Контрольна точка: просунута граматика
-
 
 > 🎯 **Контрольна точка**
 >
@@ -254,6 +254,16 @@ By completing B1.4, you should be able to:
 > B1.4 completion means you can handle most news reports, formal documents, and family communication in Ukrainian. You understand participles when reading, even if you don't use them all actively. You can navigate register shifts.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 

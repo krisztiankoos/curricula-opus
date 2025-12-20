@@ -4,6 +4,7 @@ title: Checkpoint 3
 subtitle: "Complex Ideas Review"
 version: "1.0"
 phase: "A2.3"
+focus: checkpoint
 pedagogy: "Expressive"
 duration: "60 min"
 transliteration: none
@@ -92,7 +93,7 @@ To tell a good story, you need to order events.
 
 - **Direct:** Я думаю: "Це добре".
 - **Indirect:** Я думаю, **що** це добре.
-- **Opinion:** На мою думку... / Мені здається...
+- **Opinion:** На мою думку... | Мені здається...
 - **Report:** Він сказав, **що** він прийде. (He said THAT he will come).
 
 ### The Golden Rule: No Backshift
@@ -143,7 +144,7 @@ Let's review some words that often confuse learners in Phase A2.3.
 
 ### 1. Тому що vs Тому
 - **Тому що** = Because (Cause). *Я їм, тому що голодний.*
-- **Тому** = That's why / So (Result). *Я голодний, тому я їм.*
+- **Тому** = That's why | So (Result). *Я голодний, тому я їм.*
 
 ### 2. Що vs Який
 - **Що** = That/What (Conjunction/Question). *Я знаю, що ти тут.*
@@ -349,22 +350,22 @@ You have mastered **Logic**.
 
 ## unjumble: The Complex Sentence
 
-1. я / що / думаю / ти / правий
+1. я | що | думаю | ти | правий
    > [!answer] Я думаю, що ти правий
 
-2. пішов / хоча / він / був / дощ
+2. пішов | хоча | він | був | дощ
    > [!answer] Він пішов, хоча був дощ
 
-3. ми / вчимося / знати / щоб / більше
+3. ми | вчимося | знати | щоб | більше
    > [!answer] Ми вчимося, щоб знати більше
 
-4. це / місто / в / я / живу / якому
+4. це | місто | в | я | живу | якому
    > [!answer] Це місто, в якому я живу
 
-5. того / після / як / встав / снідав / я
+5. того | після | як | встав | снідав | я
    > [!answer] Після того як встав, я снідав
 
-6. сказав / лікар / що / здоровий / я
+6. сказав | лікар | що | здоровий | я
    > [!answer] Лікар сказав, що я здоровий
 
 ## group-sort: Categories of Logic
@@ -431,25 +432,25 @@ You have mastered **Logic**.
 Він сказав, [___:6] є гарне місце за рогом.
 Я пішов туди, [___:7] насолодитися атмосферою.
 
-1. Коли / Що
+1. Коли | Що
 > [!answer] Коли
 
-2. яке / який
+2. яке | який
 > [!answer] яке
 
-3. тому що / хоча
+3. тому що | хоча
 > [!answer] тому що
 
-4. Але / Щоб
+4. Але | Щоб
 > [!answer] Але
 
-5. де / що
+5. де | що
 > [!answer] де
 
-6. що / щоб
+6. що | щоб
 > [!answer] що
 
-7. щоб / що
+7. щоб | що
 > [!answer] щоб
 
 ## dialogue-reorder: The Incident
@@ -553,21 +554,21 @@ You have mastered **Logic**.
 |------|-----|---------|-----|--------|------|
 | тому що | /tɔˈmu ʃt͡ʃɔ/ | because | conj | — | cause |
 | хоча | /xɔˈt͡ʃɑ/ | although | conj | — | contrast |
-| щоб | /ʃt͡ʃɔb/ | so that / in order to | conj | — | purpose |
-| який | /jɑˈkɪj/ | which / what kind | pron | m | relative |
-| що | /ʃt͡ʃɔ/ | that / what | conj | — | relative |
+| щоб | /ʃt͡ʃɔb/ | so that | in order to | conj | — | purpose |
+| який | /jɑˈkɪj/ | which | what kind | pron | m | relative |
+| що | /ʃt͡ʃɔ/ | that | what | conj | — | relative |
 | але | /ɑˈlɛ/ | but | conj | — | contrast |
 | спочатку | /spɔˈt͡ʃɑtku/ | at first | adv | — | sequence |
-| потім | /ˈpɔtim/ | then / after that | adv | — | sequence |
+| потім | /ˈpɔtim/ | then | after that | adv | — | sequence |
 | нарешті | /nɑˈrɛʃtʲi/ | finally | adv | — | sequence |
-| думка | /ˈdumkɑ/ | thought / opinion | noun | f | mental |
+| думка | /ˈdumkɑ/ | thought | opinion | noun | f | mental |
 | здається | /zdɑˈjɛtʲsʲɑ/ | it seems | verb | — | opinion |
 | на мою думку | /nɑ mɔˈju ˈdumku/ | in my opinion | phrase | — | opinion |
 | головне | /ɦɔlɔʋˈnɛ/ | the main thing | noun | n | focus |
-| історія | /isˈtɔrʲijɑ/ | story / history | noun | f | narrative |
+| історія | /isˈtɔrʲijɑ/ | story | history | noun | f | narrative |
 | життя | /ʒɪtˈtʲɑ/ | life | noun | n | concept |
 | рік | /rik/ | year | noun | m | time |
-| минулий | /mɪˈnulɪj/ | past / last | adj | m | time |
+| минулий | /mɪˈnulɪj/ | past | last | adj | m | time |
 | майбутній | /mɑjˈbutnʲij/ | future | adj | m | time |
 | говорити | /ɦɔʋɔˈrɪtɪ/ | to speak | verb | — | comms |
 | сказати | /skɑˈzɑtɪ/ | to say | verb | — | comms |

@@ -16,6 +16,9 @@
 - **Pedagogy:** ✅ Level-appropriate
 - **Immersion:** 🇺🇦 51.8% (target 50-60% (A2.3))
 
+## MDX VALIDATION
+✅ No issues found
+
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
@@ -27,7 +30,7 @@
 | **Family 4: Kin/Nature - РІД** | ⚪️ | 26 | Skipped |
 | **Deep Dive: The Logic of Obedience** | ✅ | 89 | Included in Core |
 | **Family 5: World & Light - СВІТ** | ⚪️ | 43 | Skipped |
-| **Family 6: Earth & Place - ЗЕМ / МІСТ** | ⚪️ | 80 | Skipped |
+| **Family 6: Earth & Place - ЗЕМ | МІСТ** | ⚪️ | 80 | Skipped |
 | **Deep Dive: Feeling vs Sensation** | ✅ | 84 | Included in Core |
 | **Deep Dive: The Power of Roots** | ✅ | 98 | Included in Core |
 | **Part 2: Review - The Machine** | ✅ | 10 | Included in Core |

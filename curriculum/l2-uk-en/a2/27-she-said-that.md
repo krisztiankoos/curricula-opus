@@ -78,7 +78,7 @@ In Ukrainian Reported Speech, you typically **do not change the tense** of the v
 You need more than just "said".
 
 ### Basic
-- **Казати / Сказати** (To say): The default.
+- **Казати | Сказати** (To say): The default.
   - *Він сказав, що...* (He said that...)
 - **Говорити** (To speak/talk): Focus on the act of speaking.
   - *Він говорив про політику.* (He spoke about politics.)
@@ -317,7 +317,7 @@ Now you can spread the news (or the gossip)!
    - [ ] Якби
 
 3. "Кажуть, що..." introduces:
-   - [x] Rumors / General opinion
+   - [x] Rumors | General opinion
    - [ ] Scientific facts
    - [ ] Direct command
 
@@ -368,22 +368,22 @@ Now you can spread the news (or the gossip)!
 
 ## unjumble: Reconstruct the Report
 
-1. що / він / сказав / прийде / не
+1. що | він | сказав | прийде | не
    > [!answer] Він сказав, що не прийде
 
-2. чи / вона / вдома / запитала / я
+2. чи | вона | вдома | запитала | я
    > [!answer] Вона запитала, чи я вдома
 
-3. це / заперечив / він / правда / що
+3. це | заперечив | він | правда | що
    > [!answer] Він заперечив, що це правда
 
-4. пообіцяла / подзвонити / вона / завтра
+4. пообіцяла | подзвонити | вона | завтра
    > [!answer] Вона пообіцяла подзвонити завтра
 
-5. нагадав / про / бос / зустріч
+5. нагадав | про | бос | зустріч
    > [!answer] Бос нагадав про зустріч
 
-6. лікар / що / здорові / повідомив / ми
+6. лікар | що | здорові | повідомив | ми
    > [!answer] Лікар повідомив, що ми здорові
 
 ## group-sort: Verb Intention
@@ -462,25 +462,25 @@ Now you can spread the news (or the gossip)!
 Він [___:6], що сукня була дуже гарна.
 Хтось тут [___:7]!
 
-1. сказала / поїла
+1. сказала | поїла
 > [!answer] сказала
 
-2. чи / що
+2. чи | що
 > [!answer] чи
 
-3. відповіла / запитала
+3. відповіла | запитала
 > [!answer] відповіла
 
-4. що / де
+4. що | де
 > [!answer] що
 
-5. стверджує / мовчить
+5. стверджує | мовчить
 > [!answer] стверджує
 
-6. похвалив / посварив
+6. похвалив | посварив
 > [!answer] похвалив
 
-7. бреше / спить
+7. бреше | спить
 > [!answer] бреше
 
 ## dialogue-reorder: The Interview Report
@@ -614,15 +614,15 @@ Now you can spread the news (or the gossip)!
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | сказати | /skɑˈzɑtɪ/ | to say | verb | — | perfective |
-| казати | /kɑˈzɑtɪ/ | to say / tell | verb | — | imperfective |
-| говорити | /ɦɔʋɔˈrɪtɪ/ | to speak / talk | verb | — | activity |
-| розповідати | /rɔzpɔʋiˈdɑtɪ/ | to tell / narrate | verb | — | story |
+| казати | /kɑˈzɑtɪ/ | to say | tell | verb | — | imperfective |
+| говорити | /ɦɔʋɔˈrɪtɪ/ | to speak | talk | verb | — | activity |
+| розповідати | /rɔzpɔʋiˈdɑtɪ/ | to tell | narrate | verb | — | story |
 | питати | /pɪˈtɑtɪ/ | to ask | verb | — | imperfective |
 | запитати | /zɑpɪˈtɑtɪ/ | to ask | verb | — | perfective |
 | відповідати | /ʋidpɔʋiˈdɑtɪ/ | to answer | verb | — | general |
-| повідомити | /pɔʋiˈdɔmɪtɪ/ | to inform / notify | verb | — | formal |
+| повідомити | /pɔʋiˈdɔmɪtɪ/ | to inform | notify | verb | — | formal |
 | пояснити | /pɔjɑsˈnɪtɪ/ | to explain | verb | — | logic |
-| стверджувати | /stʋɛrˈdʒuʋɑtɪ/ | to assert / claim | verb | — | argument |
+| стверджувати | /stʋɛrˈdʒuʋɑtɪ/ | to assert | claim | verb | — | argument |
 | заперечувати | /zɑpɛˈrɛt͡ʃuʋɑtɪ/ | to deny | verb | — | argument |
 | обіцяти | /ɔbiˈt͡sʲɑtɪ/ | to promise | verb | — | commitment |
 | попередити | /pɔpɛˈrɛdɪtɪ/ | to warn | verb | — | danger |
@@ -634,7 +634,7 @@ Now you can spread the news (or the gossip)!
 | коментувати | /kɔmɛntuˈʋɑtɪ/ | to comment | verb | — | general |
 | що | /ʃt͡ʃɔ/ | that | conj | — | connector |
 | кричати | /krɪˈt͡ʃɑtɪ/ | to shout | verb | — | emotion |
-| просити | /prɔˈsɪtɪ/ | to ask / beg | verb | — | request |
+| просити | /prɔˈsɪtɪ/ | to ask | beg | verb | — | request |
 | вимагати | /ʋɪmɑˈɦɑtɪ/ | to demand | verb | — | strong request |
 | шепотіти | /ʃɛpɔˈtitɪ/ | to whisper | verb | — | quiet |
 | брехати | /brɛˈxɑtɪ/ | to lie | verb | — | negative |

@@ -58,10 +58,10 @@ Verb: **Ходити** (To walk).
 | :--- | :--- | :--- | :--- |
 | **Вхід** | В-хід | In-move | Entrance |
 | **Вихід** | Ви-хід | Out-move | Exit |
-| **Перехід** | Пере-хід | Across-move | Crossing / Transition |
+| **Перехід** | Пере-хід | Across-move | Crossing | Transition |
 | **Прихід** | При-хід | Arrival-move | Arrival |
 | **Відхід** | Від-хід | Away-move | Departure |
-| **Похід** | По-хід | On-move | Hike / Campaign |
+| **Похід** | По-хід | On-move | Hike | Campaign |
 | **Пішохід** | Піш-о-хід | Foot-o-walker | Pedestrian |
 
 *Де тут вхід?* (Where is the entrance?)
@@ -76,19 +76,19 @@ Verb: **Писати** (To write).
 
 | Word | Structure | Literal Meaning | Real Meaning |
 | :--- | :--- | :--- | :--- |
-| **Письмо** | Пись-мо | Write-thing | Writing / Letter |
+| **Письмо** | Пись-мо | Write-thing | Writing | Letter |
 | **Письменник** | Пись-мен-ник | Write-man | Writer |
 | **Підпис** | Під-пис | Under-write | Signature |
-| **Запис** | За-пис | Behind/For-write | Record / Note |
+| **Запис** | За-пис | Behind/For-write | Record | Note |
 | **Опис** | О-пис | Around-write | Description |
-| **Напис** | На-пис | On-write | Inscription / Sign |
+| **Напис** | На-пис | On-write | Inscription | Sign |
 
 *Ваш підпис, будь ласка.* (Your signature, please).
 *Я зроблю запис у журналі.* (I will make a record in the journal).
 
 ---
 
-## Family 3: Input (-ЧИТ- / -БАЧ-)
+## Family 3: Input (-ЧИТ- | -БАЧ-)
 
 We perceive the world through reading and seeing.
 
@@ -103,15 +103,15 @@ Verb: **Читати** (To read).
 
 *Читання — це корисна звичка.* (Reading is a useful habit).
 
-### The Seers (-БАЧ- / -ГЛЯД-)
+### The Seers (-БАЧ- | -ГЛЯД-)
 Verb: **Бачити** (To see). Root often swaps with **ГЛЯД** (Look).
 
 - **Бачення**: Vision (Concept).
-- **Побачення**: Date / Meeting (Seeing each other).
+- **Побачення**: Date | Meeting (Seeing each other).
 - **Передбачення**: Prediction (Fore-sight).
-- **Погляд**: Glance / View / Opinion.
-- **Вигляд**: Look / Appearance (How something looks out).
-- **Огляд**: Review / Overview (Looking around).
+- **Погляд**: Glance | View | Opinion.
+- **Вигляд**: Look | Appearance (How something looks out).
+- **Огляд**: Review | Overview (Looking around).
 
 *У тебе гарний вигляд!* (You have a good look = You look great).
 *До побачення!* (Until seeing = Goodbye).
@@ -321,7 +321,7 @@ Logic wins!
 - Вихід :: Exit
 - Підпис :: Signature
 - Письменник :: Writer
-- Побачення :: Date / Meeting
+- Побачення :: Date | Meeting
 - Читач :: Reader
 - Опис :: Description
 - Пішохід :: Pedestrian
@@ -364,17 +364,17 @@ Logic wins!
 
 ## unjumble: Document Logic
 
-1. потрібен / Мені / підпис / ваш
+1. потрібен | Мені | підпис | ваш
    > [!answer] Мені потрібен ваш підпис
-2. зробив / Я / опис / товару
+2. зробив | Я | опис | товару
    > [!answer] Я зробив опис товару
-3. читає / Письменник / книгу / свою
+3. читає | Письменник | книгу | свою
    > [!answer] Письменник читає свою книгу
-4. гарний / У / вигляд / нього
+4. гарний | У | вигляд | нього
    > [!answer] У нього гарний вигляд
-5. тут / Де / перехід
+5. тут | Де | перехід
    > [!answer] Де тут перехід
-6. читання / Це / урок
+6. читання | Це | урок
    > [!answer] Це урок читання
 
 ## quiz: Root Logic
@@ -405,7 +405,7 @@ Logic wins!
    - [ ] Walking
 
 6. "Погляд" usually relates to:
-   - [x] Opinion / Glance
+   - [x] Opinion | Glance
    - [ ] Walking style
    - [ ] Handwriting
 
@@ -457,39 +457,39 @@ Logic wins!
 
 ## cloze: The Date
 
-> Fill in the missing words. Roots: БАЧ, ХІД.
+> Fill in the missing words.
 
-Я йду на [___:1] [Hint: date].
-Я чекаю біля [___:2] [Hint: entrance].
-У мене гарний [___:3] [Hint: look/appearance].
-Моя дівчина — це [___:4] [Hint: prediction] мого серця (poetic).
-Ми зробимо [___:5] [Hint: walk/hike] парком.
-Там є гарний [___:6] [Hint: view/glance].
-Потім ми знайдемо [___:7] [Hint: exit].
-Я скажу: "До [___:8] [Hint: see you]!"
+Я йду на [___:1].
+Я чекаю біля [___:2].
+У мене гарний [___:3].
+Моя дівчина — це [___:4] мого серця.
+Ми зробимо [___:5] парком.
+Там є гарний [___:6].
+Потім ми знайдемо [___:7].
+Я скажу: "До [___:8]!"
 
-1. побачення
+1. побачення | побачити | бачення
 > [!answer] побачення
 
-2. входу
+2. входу | виходу | перехода
 > [!answer] входу
 
-3. вигляд
+3. вигляд | виход | перехід
 > [!answer] вигляд
 
-4. передбачення
+4. передбачення | побачення | бачення
 > [!answer] передбачення
 
-5. похід
+5. похід | прихід | вихід
 > [!answer] похід
 
-6. вигляд
+6. вигляд | вхід | вихід
 > [!answer] вигляд
 
-7. вихід
+7. вихід | вхід | похід
 > [!answer] вихід
 
-8. побачення
+8. побачення | бачення | перебачення
 > [!answer] побачення
 
 ## error-correction: Wrong Root

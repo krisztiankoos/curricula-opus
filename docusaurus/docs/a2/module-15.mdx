@@ -152,7 +152,7 @@ Some aspect pairs use completely different words. You must memorize these:
 | говорити | сказати | to say/speak |
 | брати | взяти | to take |
 | класти | покласти | to put |
-| шукати | знайти | to look for / find |
+| шукати | знайти | to look for | find |
 
 **Meaning:** These pairs often have slightly different nuances — говорити (process of speaking) vs. сказати (saying something specific). Similarly, шукати means to look for or search, while знайти means specifically to find — the successful completion of searching.
 
@@ -381,7 +381,7 @@ Adding different prefixes to the same root creates different perfective verbs wi
       { text: `Perfective`, correct: false }
     ]
   },  {
-    question: `\"Говорити / сказати\" are:`,
+    question: `\"Говорити | сказати\" are:`,
     options: [
       { text: `Suppletive pairs (different roots)`, correct: true },
       { text: `Prefixed pairs`, correct: false },
@@ -513,18 +513,18 @@ Adding different prefixes to the same root creates different perfective verbs wi
 ### Aspect Pattern Sentences
 
 <Unjumble items={[
-  { jumbled: `про / читати / = / прочитати`, answer: `Про- + читати = прочитати` },
-  { jumbled: `на / писати / = / написати`, answer: `На- + писати = написати` },
-  { jumbled: `з / робити / = / зробити`, answer: `З- + робити = зробити` },
-  { jumbled: `давати / мінус / -ва- / = / дати`, answer: `Давати мінус -ва- = дати` },
-  { jumbled: `говорити / сказати / різні / корені`, answer: `Говорити і сказати різні корені` },
-  { jumbled: `по / бачити / = / побачити`, answer: `По- + бачити = побачити` },
-  { jumbled: `ви / вчити / = / вивчити`, answer: `Ви- + вчити = вивчити` },
-  { jumbled: `вставати / встати / -ва- / видалення`, answer: `Вставати → встати: -ва- видалення` },
-  { jumbled: `брати / взяти / суплетивна / пара`, answer: `Брати/взяти суплетивна пара` },
-  { jumbled: `з'їсти / їсти / з- / префікс`, answer: `Їсти + з- префікс = з'їсти` },
-  { jumbled: `відпочивати / відпочити / -ва-`, answer: `Відпочивати → відпочити: -ва- removal` },
-  { jumbled: `показувати / показати / -ува-`, answer: `Показувати → показати: -ува- removal` }
+  { jumbled: `про | читати | = | прочитати`, answer: `Про- + читати = прочитати` },
+  { jumbled: `на | писати | = | написати`, answer: `На- + писати = написати` },
+  { jumbled: `з | робити | = | зробити`, answer: `З- + робити = зробити` },
+  { jumbled: `давати | мінус | -ва- | = | дати`, answer: `Давати мінус -ва- = дати` },
+  { jumbled: `говорити | сказати | різні | корені`, answer: `Говорити і сказати різні корені` },
+  { jumbled: `по | бачити | = | побачити`, answer: `По- + бачити = побачити` },
+  { jumbled: `ви | вчити | = | вивчити`, answer: `Ви- + вчити = вивчити` },
+  { jumbled: `вставати | встати | -ва- | видалення`, answer: `Вставати → встати: -ва- видалення` },
+  { jumbled: `брати | взяти | суплетивна | пара`, answer: `Брати/взяти суплетивна пара` },
+  { jumbled: `з'їсти | їсти | з- | префікс`, answer: `Їсти + з- префікс = з'їсти` },
+  { jumbled: `відпочивати | відпочити | -ва-`, answer: `Відпочивати → відпочити: -ва- removal` },
+  { jumbled: `показувати | показати | -ува-`, answer: `Показувати → показати: -ува- removal` }
 ]} />
 
 ### Find the Perfective
@@ -578,7 +578,7 @@ Adding different prefixes to the same root creates different perfective verbs wi
 
 <Cloze
   passage={`Аспектна пара читати/прочитати використовує [___:1]. Пара писати/написати використовує [___:2]. Пара давати/дати використовує [___:3]. Пара говорити/сказати — це [___:4] пара.`}
-  blanks={[{ index: 0, answer: `про-`, options: [`про-`] }, { index: 1, answer: `на-`, options: [`на-`] }, { index: 2, answer: `-ва-`, options: [`-ва-`] }, { index: 3, answer: `suppletive`, options: [`suppletive`] }]}
+  blanks={[{ index: 0, answer: `про-`, options: [`про-`, `на-`, `по-`, `ви-`] }, { index: 1, answer: `на-`, options: [`про-`, `на-`, `по-`, `ви-`] }, { index: 2, answer: `-ва-`, options: [`-ти`, `-ва-`, `-ати`, `-ити`] }, { index: 3, answer: `suppletive`, options: [`prefixed`, `suffixed`, `suppletive`] }]}
 />
 
 ### Learning Aspect

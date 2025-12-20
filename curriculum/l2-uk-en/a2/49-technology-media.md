@@ -60,7 +60,7 @@ Going online is essential:
 - **логін** — login: *Я забув свій логін.*
 - **мережа** — network: *Соціальна мережа.*
 - **зв'язок** — connection: *Тут поганий зв'язок.*
-- **онлайн / офлайн** — online / offline: *Він зараз онлайн.*
+- **онлайн | офлайн** — online | offline: *Він зараз онлайн.*
 
 > [!cultural] **History Bite** The Cybernetic Pioneer
 > Did you know the first computer in continental Europe was built in Kyiv? In 1951, **MESM** was created by Serhiy Lebedev. Later, Victor Glushkov founded the Institute of Cybernetics in Kyiv, pioneering early concepts of the internet and digital economy ("OGAS"). Kyiv has deep cybernetic roots!
@@ -170,7 +170,7 @@ In the evening, he turns off the computer. His eyes are tired from the screen. H
 
 > [!resources] 🔗 External Resources
 >
-> **YouTube:** [100 basic Ukrainian IT terms / Ukrainian vocabulary: IT, Technologies,...](https://www.youtube.com/watch?v=BAuSNnrkCKM) — Red Purple Ukrainian
+> **YouTube:** [100 basic Ukrainian IT terms | Ukrainian vocabulary: IT, Technologies,...](https://www.youtube.com/watch?v=BAuSNnrkCKM) — Red Purple Ukrainian
 >
 > **Grammar Guide:** [Ukrainian Grammar](https://www.ukrainianlessons.com/ukrainian-tenses/) — Grammar overview
 >
@@ -412,51 +412,51 @@ Digital literacy is key in modern Ukrainian society. Use these words to stay con
 
 ## unjumble: Digital Sentences
 
-1. Я / купив / новий / планшет
+1. Я | купив | новий | планшет
    > [!answer] Я купив новий планшет
    > I bought a new tablet.
 
-2. Надішли / мені / посилання / в / Телеграм
+2. Надішли | мені | посилання | в | Телеграм
    > [!answer] Надішли мені посилання в Телеграм
    > Send me the link in Telegram.
 
-3. Вона / читає / новини / онлайн
+3. Вона | читає | новини | онлайн
    > [!answer] Вона читає новини онлайн
    > She reads news online.
 
-4. Мій / комп'ютер / дуже / старий
+4. Мій | комп'ютер | дуже | старий
    > [!answer] Мій комп'ютер дуже старий
    > My computer is very old.
 
-5. Я / не / пам'ятаю / пароль
+5. Я | не | пам'ятаю | пароль
    > [!answer] Я не пам'ятаю пароль
    > I don't remember the password.
 
-6. Ми / дивимося / смішне / відео
+6. Ми | дивимося | смішне | відео
    > [!answer] Ми дивимося смішне відео
    > We are watching a funny video.
 
-7. Він / пише / коментар / під / фото
+7. Він | пише | коментар | під | фото
    > [!answer] Він пише коментар під фото
    > He writes a comment under the photo.
 
-8. Бабуся / має / смартфон
+8. Бабуся | має | смартфон
    > [!answer] Бабуся має смартфон
    > Grandma has a smartphone.
 
-9. Тут / є / хороший / інтернет
+9. Тут | є | хороший | інтернет
    > [!answer] Тут є хороший інтернет
    > Is there good internet here? (Statement: Here is good internet).
 
-10. Я / шукаю / інформацію / про / Київ
+10. Я | шукаю | інформацію | про | Київ
     > [!answer] Я шукаю інформацію про Київ
     > I am searching for information about Kyiv.
 
-11. Блогер / знімає / нове / відео
+11. Блогер | знімає | нове | відео
     > [!answer] Блогер знімає нове відео
     > The blogger is filming a new video.
 
-12. Ввімкни / будь ласка / свій / екран
+12. Ввімкни | будь ласка | свій | екран
     > [!answer] Ввімкни будь ласка свій екран
     > Turn on your screen please.
 

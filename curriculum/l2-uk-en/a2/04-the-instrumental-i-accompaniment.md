@@ -66,8 +66,8 @@ The instrumental case answers the questions: **З ким?** (With whom?) and **�
 The instrumental case is one of the seven grammatical cases in Ukrainian. Its name comes from the Latin word for "instrument" or "tool," reflecting one of its primary functions: indicating the means by which an action is performed. However, its most common use at the A2 level is expressing accompaniment — who or what you do something with.
 
 The instrumental case answers two main questions:
-- **Ким?** — By whom? / As whom? / With whom?
-- **Чим?** — By what? / With what?
+- **Ким?** — By whom? | As whom? | With whom?
+- **Чим?** — By what? | With what?
 
 When combined with the preposition **з/із/зі**, it specifically means "with":
 - **З ким?** — With whom?
@@ -173,7 +173,7 @@ All genders take **-ами** or **-ями** in the plural:
 > Some common nouns have irregular instrumental plurals that you need to memorize. These are among the most frequently used nouns in Ukrainian, so learning them correctly is important:
 > - люди → людьми (people — not *людями)
 > - діти → дітьми (children — not *дітями)
-> - гості → гістьми / гостями (guests — both forms acceptable)
+> - гості → гістьми | гостями (guests — both forms acceptable)
 >
 > The good news: most other nouns follow regular patterns. These irregulars are historical exceptions that have persisted in modern Ukrainian.
 
@@ -285,7 +285,7 @@ Choose з/із/зі:
 
 1. ___ мною → зі мною
 2. ___ братом → з братом
-3. ___ сестрою → з сестрою / із сестрою
+3. ___ сестрою → з сестрою | із сестрою
 4. ___ снігом → зі снігом
 5. ___ друзями → з друзями
 
@@ -623,27 +623,27 @@ The following activities will help you master Instrumental case endings through 
 ## unjumble: Instrumental Sentences
 > Put the words in the correct order.
 
-1. я / йду / в / кіно / з / другом
+1. я | йду | в | кіно | з | другом
    > [!answer] Я йду в кіно з другом
    > (I'm going to the cinema with a friend.)
 
-2. вона / розмовляє / з / сестрою / по / телефону
+2. вона | розмовляє | з | сестрою | по | телефону
    > [!answer] Вона розмовляє з сестрою по телефону
    > (She's talking with her sister on the phone.)
 
-3. ми / живемо / з / батьками / в / Києві
+3. ми | живемо | з | батьками | в | Києві
    > [!answer] Ми живемо з батьками в Києві
    > (We live with our parents in Kyiv.)
 
-4. він / гуляє / з / собакою / в / парку
+4. він | гуляє | з | собакою | в | парку
    > [!answer] Він гуляє з собакою в парку
    > (He's walking with the dog in the park.)
 
-5. я / п'ю / каву / з / молоком
+5. я | п'ю | каву | з | молоком
    > [!answer] Я п'ю каву з молоком
    > (I drink coffee with milk.)
 
-6. вона / познайомилася / з / хлопцем / на / вечірці
+6. вона | познайомилася | з | хлопцем | на | вечірці
    > [!answer] Вона познайомилася з хлопцем на вечірці
    > (She met a guy at the party.)
 

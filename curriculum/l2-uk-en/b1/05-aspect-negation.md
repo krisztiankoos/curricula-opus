@@ -30,14 +30,6 @@ vocabulary_count: 20
 >
 > Заперечення в українській мові — це не просто додавання "не". Вибір виду дієслова в запереченні кардинально змінює значення речення. "Я не читав" і "Я ще не прочитав" — це зовсім різні повідомлення. Носії мови одразу відчувають цю різницю. Оволодіння цими правилами допоможе вам точно висловлювати те, що ви маєте на увазі — чи то заперечуєте факт, чи то говорите "ще ні, але скоро".
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [Рекомендації – Asking for advice + aspect](https://www.youtube.com/watch?v=POUzGxu9OxU) — Ukrainian Lessons
-> **Verb Prefixes:** [Ukrainian Verb Prefixes](https://www.ukrainianlessons.com/ukrainian-verb-prefixes/) — How prefixes create perfective verbs
-> **Past Tense Review:** [Past Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-past-tense/) — Foundation for past negation
-> **All Tenses Overview:** [Ukrainian Verb Tenses](https://www.ukrainianlessons.com/ukrainian-tenses/) — Complete verb system reference
-> **Practical Usage:** [Ukrainian Lessons Podcast](https://www.ukrainianlessons.com/category/podcast/) — Real conversations with negation patterns
-
 ## Diagnostic
 
 Подивіться на ці два речення:
@@ -438,6 +430,16 @@ Convert each positive command to a negative one with appropriate aspect:
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Verb Aspect:**
+> - 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+> - 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+> - 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+> - 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
+
 ## Activities
 
 ## quiz: Aspect in Negation
@@ -541,10 +543,8 @@ Convert each positive command to a negative one with appropriate aspect:
     - [ ] He didn't come
     > Навряд чи = unlikely, hardly.
 
-## match-up: Negation
-
-# Vocabulary
-> Match the Ukrainian words with their English meanings.
+## match-up: Негативні вирази
+> Зіставте українські слова з їхніми англійськими значеннями.
 
 | Ukrainian | English |
 |-----------|---------|

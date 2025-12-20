@@ -80,7 +80,7 @@ You don't need to shift "like" to "liked". The logic is: "She said: [insert her 
 You need more than just "said".
 
 ### Basic
-- **Казати / Сказати** (To say): The default.
+- **Казати | Сказати** (To say): The default.
   - *Він сказав, що...* (He said that...)
 - **Говорити** (To speak/talk): Focus on the act of speaking.
   - *Він говорив про політику.* (He spoke about politics.)
@@ -336,7 +336,7 @@ Now you can spread the news (or the gossip)!
   },  {
     question: `\"Кажуть, що...\" introduces:`,
     options: [
-      { text: `Rumors / General opinion`, correct: true },
+      { text: `Rumors | General opinion`, correct: true },
       { text: `Scientific facts`, correct: false },
       { text: `Direct command`, correct: false }
     ]
@@ -409,12 +409,12 @@ Now you can spread the news (or the gossip)!
 ### Reconstruct the Report
 
 <Unjumble items={[
-  { jumbled: `що / він / сказав / прийде / не`, answer: `Він сказав, що не прийде` },
-  { jumbled: `чи / вона / вдома / запитала / я`, answer: `Вона запитала, чи я вдома` },
-  { jumbled: `це / заперечив / він / правда / що`, answer: `Він заперечив, що це правда` },
-  { jumbled: `пообіцяла / подзвонити / вона / завтра`, answer: `Вона пообіцяла подзвонити завтра` },
-  { jumbled: `нагадав / про / бос / зустріч`, answer: `Бос нагадав про зустріч` },
-  { jumbled: `лікар / що / здорові / повідомив / ми`, answer: `Лікар повідомив, що ми здорові` }
+  { jumbled: `що | він | сказав | прийде | не`, answer: `Він сказав, що не прийде` },
+  { jumbled: `чи | вона | вдома | запитала | я`, answer: `Вона запитала, чи я вдома` },
+  { jumbled: `це | заперечив | він | правда | що`, answer: `Він заперечив, що це правда` },
+  { jumbled: `пообіцяла | подзвонити | вона | завтра`, answer: `Вона пообіцяла подзвонити завтра` },
+  { jumbled: `нагадав | про | бос | зустріч`, answer: `Бос нагадав про зустріч` },
+  { jumbled: `лікар | що | здорові | повідомив | ми`, answer: `Лікар повідомив, що ми здорові` }
 ]} />
 
 ### Verb Intention
@@ -500,7 +500,7 @@ Now you can spread the news (or the gossip)!
 Але Петро [___:5], що бачив її в магазині весільних суконь.
 Він [___:6], що сукня була дуже гарна.
 Хтось тут [___:7]!`}
-  blanks={[{ index: 0, answer: `сказала`, options: [`сказала`] }, { index: 1, answer: `чи`, options: [`чи`] }, { index: 2, answer: `відповіла`, options: [`відповіла`] }, { index: 3, answer: `що`, options: [`що`] }, { index: 4, answer: `стверджує`, options: [`стверджує`] }, { index: 5, answer: `похвалив`, options: [`похвалив`] }, { index: 6, answer: `бреше`, options: [`бреше`] }]}
+  blanks={[{ index: 0, answer: `сказала`, options: [`сказала`, `поїла`] }, { index: 1, answer: `чи`, options: [`чи`, `що`] }, { index: 2, answer: `відповіла`, options: [`відповіла`, `запитала`] }, { index: 3, answer: `що`, options: [`що`, `де`] }, { index: 4, answer: `стверджує`, options: [`стверджує`, `мовчить`] }, { index: 5, answer: `похвалив`, options: [`похвалив`, `посварив`] }, { index: 6, answer: `бреше`, options: [`бреше`, `спить`] }]}
 />
 
 ### The Interview Report
@@ -658,15 +658,15 @@ Now you can spread the news (or the gossip)!
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | сказати | /skɑˈzɑtɪ/ | to say | verb | — | perfective |
-| казати | /kɑˈzɑtɪ/ | to say / tell | verb | — | imperfective |
-| говорити | /ɦɔʋɔˈrɪtɪ/ | to speak / talk | verb | — | activity |
-| розповідати | /rɔzpɔʋiˈdɑtɪ/ | to tell / narrate | verb | — | story |
+| казати | /kɑˈzɑtɪ/ | to say | tell | verb | — | imperfective |
+| говорити | /ɦɔʋɔˈrɪtɪ/ | to speak | talk | verb | — | activity |
+| розповідати | /rɔzpɔʋiˈdɑtɪ/ | to tell | narrate | verb | — | story |
 | питати | /pɪˈtɑtɪ/ | to ask | verb | — | imperfective |
 | запитати | /zɑpɪˈtɑtɪ/ | to ask | verb | — | perfective |
 | відповідати | /ʋidpɔʋiˈdɑtɪ/ | to answer | verb | — | general |
-| повідомити | /pɔʋiˈdɔmɪtɪ/ | to inform / notify | verb | — | formal |
+| повідомити | /pɔʋiˈdɔmɪtɪ/ | to inform | notify | verb | — | formal |
 | пояснити | /pɔjɑsˈnɪtɪ/ | to explain | verb | — | logic |
-| стверджувати | /stʋɛrˈdʒuʋɑtɪ/ | to assert / claim | verb | — | argument |
+| стверджувати | /stʋɛrˈdʒuʋɑtɪ/ | to assert | claim | verb | — | argument |
 | заперечувати | /zɑpɛˈrɛt͡ʃuʋɑtɪ/ | to deny | verb | — | argument |
 | обіцяти | /ɔbiˈt͡sʲɑtɪ/ | to promise | verb | — | commitment |
 | попередити | /pɔpɛˈrɛdɪtɪ/ | to warn | verb | — | danger |
@@ -678,7 +678,7 @@ Now you can spread the news (or the gossip)!
 | коментувати | /kɔmɛntuˈʋɑtɪ/ | to comment | verb | — | general |
 | що | /ʃt͡ʃɔ/ | that | conj | — | connector |
 | кричати | /krɪˈt͡ʃɑtɪ/ | to shout | verb | — | emotion |
-| просити | /prɔˈsɪtɪ/ | to ask / beg | verb | — | request |
+| просити | /prɔˈsɪtɪ/ | to ask | beg | verb | — | request |
 | вимагати | /ʋɪmɑˈɦɑtɪ/ | to demand | verb | — | strong request |
 | шепотіти | /ʃɛpɔˈtitɪ/ | to whisper | verb | — | quiet |
 | брехати | /brɛˈxɑtɪ/ | to lie | verb | — | negative |

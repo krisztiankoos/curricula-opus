@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Умовні речення — Змішані та складні
 
-
 > 🎯 **Чому це важливо**
 >
 > Іноді умова в минулому, а результат — у теперішньому (або навпаки). «Якби я тоді вчився, зараз мав би роботу» — такі змішані умови потребують особливої уваги.
@@ -286,6 +285,16 @@ When practicing mixed conditionals, always include time markers like «рані�
 - В якому б напрямку ви не пішли, будьте обережні. (Whichever direction you go, be careful.)
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Activities
 
@@ -887,4 +896,3 @@ When practicing mixed conditionals, always include time markers like «рані�
 | тепер | /tɛˈpɛr/ | now | присл. | |
 | часова рамка | /t͡ʃaˈsɔva ˈramka/ | timeframe | фраза | |
 | альтернатива | /alʲtɛrnaˈtɪva/ | alternative | ім. | |
-

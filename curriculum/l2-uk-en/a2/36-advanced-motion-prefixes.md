@@ -135,7 +135,7 @@ The prefix **до-** indicates reaching a destination or completing motion.
 
 ## Prefix Group 3: Around & Under
 
-## Об- / Обі- (Around)
+## Об- | Обі- (Around)
 
 The prefix **об-** indicates going around something.
 
@@ -423,21 +423,21 @@ These prefixes combine with motion verbs to create precise navigation instructio
 
 ## unjumble: Motion Sentences
 
-1. вулицю / Перейди / !
+1. вулицю | Перейди | !
    > [!answer] Перейди вулицю
-2. до / парку / дійшли / Ми
+2. до | парку | дійшли | Ми
    > [!answer] Ми дійшли до парку
-3. зупинку / Автобус / проїхав
+3. зупинку | Автобус | проїхав
    > [!answer] Автобус проїхав зупинку
-4. озеро / Обійди / справа
+4. озеро | Обійди | справа
    > [!answer] Обійди озеро справа
-5. до / мене / Зайди / ввечері
+5. до | мене | Зайди | ввечері
    > [!answer] Зайди до мене ввечері
-6. ближче / Підійди / !
+6. ближче | Підійди | !
    > [!answer] Підійди ближче
-7. парк / через / Ми / пройшли
+7. парк | через | Ми | пройшли
    > [!answer] Ми пройшли через парк
-8. хлібом / за / Заїдь
+8. хлібом | за | Заїдь
    > [!answer] Заїдь за хлібом
 
 ## error-correction: Wrong Prefix

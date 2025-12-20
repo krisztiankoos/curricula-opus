@@ -83,9 +83,9 @@ Verb: **Думати** (To think).
 
 | Word | Meaning | Logic |
 | :--- | :--- | :--- |
-| **Думка** | Thought / Opinion | Think-ka |
+| **Думка** | Thought | Opinion | Think-ka |
 | **Роздуми** | Reflections | Out-thoughts (Spreading thoughts) |
-| **Задум** | Plan / Concept | Behind-thought (Deep idea) |
+| **Задум** | Plan | Concept | Behind-thought (Deep idea) |
 | **Обдумати** | To think over | Round-think |
 | **Придумати** | To invent | Pri-think (To think up) |
 
@@ -137,7 +137,7 @@ Verb: **Світити** (To shine).
 
 *Освіта — це світло, а невчення — темрява.* (Education is light, ignorance is darkness).
 
-## Family 6: Earth & Place - ЗЕМ / МІСТ
+## Family 6: Earth & Place - ЗЕМ | МІСТ
 
 Слова "земля" і "місто" дуже важливі.
 **Земля** — це наш дім. **Місто** — це місце, де живуть люди.
@@ -473,17 +473,17 @@ Get ready to speak!
 
 ## unjumble: High Sentences
 
-1. гарна / Це / дуже / думка
+1. гарна | Це | дуже | думка
    > [!answer] Це дуже гарна думка
-2. українську / Ми / мову / вивчаємо
+2. українську | Ми | мову | вивчаємо
    > [!answer] Ми вивчаємо українську мову
-3. уважно / Слухачі / професора / слухають
+3. уважно | Слухачі | професора | слухають
    > [!answer] Слухачі уважно слухають професора
-4. зробив / Я / замовлення / вже
+4. зробив | Я | замовлення | вже
    > [!answer] Я вже зробив замовлення
-5. була / серйозна / Це / розмова
+5. була | серйозна | Це | розмова
    > [!answer] Це була серйозна розмова
-6. має / Він / талант / письменницький
+6. має | Він | талант | письменницький
    > [!answer] Він має письменницький талант
 
 ## quiz: Formation Check

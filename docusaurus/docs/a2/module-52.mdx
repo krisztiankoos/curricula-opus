@@ -28,7 +28,10 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 В Україні шопінг — це і сучасні торгові центри, і традиційні базари. А сервіс, як банк чи пошта, став дуже цифровим і зручним. Давайте навчимося робити покупки українською!
 
-Shopping is a daily necessity. In this module, you'll learn how to navigate shops, use services like banks and post offices, and handle money.
+Shopping is a daily necessity. In this module, you'll master three key areas:
+1. **Shop vocabulary** — supermarkets, markets, and malls
+2. **Service vocabulary** — banks, post offices, and salons
+3. **Money talk** — prices, payments, and bargaining
 
 :::warning[**Myth Buster** "Cash Only?"]
 Think you need a suitcase of cash in Eastern Europe? Wrong! Ukraine is a leader in cashless payments. You can pay with Apple Pay or Google Pay almost everywhere — in the subway, at a tiny coffee kiosk, and often even at the market. **Готівка** (cash) is becoming rare!
@@ -89,7 +92,22 @@ The **ринок** is the heart of Ukrainian food culture. Here you buy the fres
 :::
 
 
+:::tip[**Common Mistakes to Avoid**]
+❌ *Скільки коштує банани?* — Wrong! (Plural subject)
+✅ *Скільки коштують банани?* — Correct! (коштують for plural)
+
+❌ *Я платю готівка.* — Wrong! (Case error)
+✅ *Я плачу готівкою.* — Correct! (Instrumental: with what?)
+
+❌ *Я йду в магазині.* — Wrong! (Location vs. direction)
+✅ *Я йду в магазин.* — Correct! (Accusative for direction)
+✅ *Я в магазині.* — Correct! (Locative for location)
+:::
+
+
 ## Practice
+
+Now let's put these words into action with stories about shopping adventures across Ukraine — from traditional markets to modern malls.
 
 ### Story Time: At the Market
 
@@ -438,30 +456,6 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
     answer: `купити`,
     options: [`купити`, `продати`, `міряти`, `спати`]
   },  {
-    sentence: `Я ___ хліб щодня. (buy daily)`,
-    answer: `купую`,
-    options: [`купую`, `куплю`]
-  },  {
-    sentence: `Вона ___ нову сукню. (bought dress)`,
-    answer: `купила`,
-    options: [`купувала`, `купила`]
-  },  {
-    sentence: `Де можна ___ молоко? (where to buy)`,
-    answer: `купити`,
-    options: [`купувати`, `купити`]
-  },  {
-    sentence: `Я завжди ___ тут. (always shop here)`,
-    answer: `купую`,
-    options: [`купую`, `куплю`]
-  },  {
-    sentence: `Треба ___ продукти. (need to buy)`,
-    answer: `купити`,
-    options: [`купувати`, `купити`]
-  },  {
-    sentence: `Вони ___ багато речей. (bought many things)`,
-    answer: `купили`,
-    options: [`купували`, `купили`]
-  },  {
     sentence: `Скільки це ____?`,
     answer: `коштує`,
     options: [`коштує`, `коштують`, `платить`, `купує`]
@@ -572,25 +566,25 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
 ### Shopping Dialogue
 
 <Unjumble items={[
-  { jumbled: `Скільки / коштує / цей / хліб`, answer: `Скільки коштує цей хліб` },
-  { jumbled: `Я / хочу / заплатити / карткою`, answer: `Я хочу заплатити карткою` },
-  { jumbled: `Де / тут / найближчий / банк`, answer: `Де тут найближчий банк` },
-  { jumbled: `У / нас / сьогодні / знижка`, answer: `У нас сьогодні знижка` },
-  { jumbled: `Я / йду / в / супермаркет`, answer: `Я йду в супермаркет` },
-  { jumbled: `Дайте / мені / чек / будь ласка`, answer: `Дайте мені чек будь ласка` },
-  { jumbled: `Ця / сукня / дуже / дорога`, answer: `Ця сукня дуже дорога` },
-  { jumbled: `Ми / замовляємо / їжу / додому`, answer: `Ми замовляємо їжу додому` },
-  { jumbled: `На / пошті / велика / черга`, answer: `На пошті велика черга` },
-  { jumbled: `Ваша / решта — / двадцять / гривень`, answer: `Ваша решта двадцять гривень` },
-  { jumbled: `Я / люблю / купувати / на / ринку`, answer: `Я люблю купувати на ринку` },
-  { jumbled: `Мені / треба / поміряти / взуття`, answer: `Мені треба поміряти взуття` }
+  { jumbled: `Скільки | коштує | цей | хліб`, answer: `Скільки коштує цей хліб` },
+  { jumbled: `Я | хочу | заплатити | карткою`, answer: `Я хочу заплатити карткою` },
+  { jumbled: `Де | тут | найближчий | банк`, answer: `Де тут найближчий банк` },
+  { jumbled: `У | нас | сьогодні | знижка`, answer: `У нас сьогодні знижка` },
+  { jumbled: `Я | йду | в | супермаркет`, answer: `Я йду в супермаркет` },
+  { jumbled: `Дайте | мені | чек | будь ласка`, answer: `Дайте мені чек будь ласка` },
+  { jumbled: `Ця | сукня | дуже | дорога`, answer: `Ця сукня дуже дорога` },
+  { jumbled: `Ми | замовляємо | їжу | додому`, answer: `Ми замовляємо їжу додому` },
+  { jumbled: `На | пошті | велика | черга`, answer: `На пошті велика черга` },
+  { jumbled: `Ваша | решта — | двадцять | гривень`, answer: `Ваша решта двадцять гривень` },
+  { jumbled: `Я | люблю | купувати | на | ринку`, answer: `Я люблю купувати на ринку` },
+  { jumbled: `Мені | треба | поміряти | взуття`, answer: `Мені треба поміряти взуття` }
 ]} />
 
 ### Shop Grammar
 
 <ErrorCorrection>
   <ErrorCorrectionItem
-    sentence={`Я йду в магазин.`}
+    sentence={`Я йду в магазину.`}
     errorWord={`магазину`}
     correctForm={`магазин`}
     options={[`магазин`, `магазину`, `магазина`, `магазином`]}
@@ -660,7 +654,7 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
     explanation={`Locative: в аптеці.`}
   />
   <ErrorCorrectionItem
-    sentence={`Я хочу поміряти плаття.`}
+    sentence={`Я хочу поміряти сукня.`}
     errorWord={`сукня`}
     correctForm={`сукню`}
     options={[`сукню`, `сукня`, `сукні`, `сукнею`]}

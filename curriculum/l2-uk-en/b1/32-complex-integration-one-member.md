@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Складні речення та односкладні конструкції
 
-
 > 🎯 **Чому це важливо**
 >
 > Складні речення з кількома підрядними та односкладні конструкції («Холодно», «Можна?», «Кажуть, що...») — це реальна українська мова преси, літератури та розмов. Цей модуль інтегрує все.
@@ -338,6 +337,16 @@ One-member sentences often appear within larger complex structures:
 > *Note:* In Ukrainian, proverbs often omit the subject to sound more universal.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 

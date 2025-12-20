@@ -14,15 +14,18 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.1% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 46.0% (target 40-55% (A2.2))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Warm-up** | ✅ | 158 | Included in Core |
 | **The Suffix System** | ⚪️ | 10 | Skipped |
-| **Machine 1: The Person Maker (-ач / -ець / -ник)** | ⚪️ | 6 | Skipped |
-| **Machine 2: The Process Maker (-ння / -ття)** | ⚪️ | 46 | Skipped |
+| **Machine 1: The Person Maker (-ач | -ець | -ник)** | ⚪️ | 6 | Skipped |
+| **Machine 2: The Process Maker (-ння | -ття)** | ⚪️ | 46 | Skipped |
 | **Machine 3: The Concept Maker (-ість)** | ✅ | 13 | Included in Core |
 | **Cultural Insight: Last Names** | ✅ | 100 | Included in Core |
 | **Deep Dive: The Logic of -ISTYH** | ✅ | 75 | Included in Core |

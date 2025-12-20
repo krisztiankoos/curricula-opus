@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 48.5% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 49.8% (target 40-55% (A2.2))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -27,7 +30,7 @@
 | **За- (Behind, Stopping By, Beginning)** | ⚪️ | 44 | Skipped |
 | **До- (Reaching Destination)** | ⚪️ | 19 | Skipped |
 | **Prefix Group 3: Around & Under** | ⚪️ | 0 | Skipped |
-| **Об- / Обі- (Around)** | ⚪️ | 53 | Skipped |
+| **Об- | Обі- (Around)** | ⚪️ | 53 | Skipped |
 | **Під- (Under, Approaching)** | ⚪️ | 31 | Skipped |
 | **Story Time: Екскурсія Містом** | ✅ | 113 | Included in Core |
 | **Story Time Part 2: Дорога на Роботу** | ✅ | 80 | Included in Core |

@@ -19,7 +19,6 @@ vocabulary_count: 30
 
 # Подорожі та географія
 
-
 > 🎯 **Чому це важливо**
 >
 > «Мандрівка», «маршрут», «пам'ятка» — подорожі Україною потребують спеціальної лексики. Цей модуль готує вас до реальних подорожей українськими містами та селами.
@@ -289,6 +288,16 @@ Ukrainian creates many travel terms through compounding. Understanding these pat
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Topics:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
+
 ## Практика
 
 ### Using Vocabulary in Context
@@ -327,7 +336,7 @@ Study these example sentences showing travel vocabulary in natural use:
 
 ---
 
-# Вправи
+## Вправи
 
 ## quiz: Повторення (М60)
 > Quick review from the previous module.
@@ -478,203 +487,147 @@ Study these example sentences showing travel vocabulary in natural use:
 > Choose the correct word to complete each sentence.
 
 1. Для польоту потрібен ___ і посадковий талон.
-   - [ ] валіза
-   - [x] авіаквиток
-   - [ ] рюкзак
-   - [ ] екскурсія
-   > You need a plane ticket (авіаквиток) and boarding pass for a flight.
+   > [!answer] авіаквиток
+   > [!options] валіза | авіаквиток | рюкзак | екскурсія
+   > [!explanation] You need a plane ticket (авіаквиток) and boarding pass for a flight.
 
 2. На ___ перевіряють ваш багаж.
-   - [ ] готелі
-   - [ ] літаку
-   - [x] митниці
-   - [ ] пам'ятці
-   > At customs (митниця) they check your luggage.
+   > [!answer] митниці
+   > [!options] готелі | літаку | митниці | пам'ятці
+   > [!explanation] At customs (митниця) they check your luggage.
 
 3. Щоб поїхати за кордон, потрібен закордонний ___.
-   - [x] паспорт
-   - [ ] талон
-   - [ ] квиток
-   - [ ] рюкзак
-   > You need a passport (паспорт) to travel abroad.
+   > [!answer] паспорт
+   > [!options] паспорт | талон | квиток | рюкзак
+   > [!explanation] You need a passport (паспорт) to travel abroad.
 
 4. Я зробив ___ готелю через інтернет.
-   - [ ] митницю
-   - [ ] паспорт
-   - [x] бронювання
-   - [ ] екскурсію
-   > I made a hotel reservation (бронювання) online.
+   > [!answer] бронювання
+   > [!options] митницю | паспорт | бронювання | екскурсію
+   > [!explanation] I made a hotel reservation (бронювання) online.
 
 5. Для в'їзду до деяких країн потрібна ___.
-   - [ ] карта
-   - [ ] валіза
-   - [ ] пам'ятка
-   - [x] віза
-   > Some countries require a visa (віза) for entry.
+   > [!answer] віза
+   > [!options] карта | валіза | пам'ятка | віза
+   > [!explanation] Some countries require a visa (віза) for entry.
 
 6. Ми перетнули ___ між Україною і Польщею.
-   - [x] кордон
-   - [ ] острів
-   - [ ] континент
-   - [ ] маршрут
-   > We crossed the border (кордон) between Ukraine and Poland.
+   > [!answer] кордон
+   > [!options] кордон | острів | континент | маршрут
+   > [!explanation] We crossed the border (кордон) between Ukraine and Poland.
 
 7. Моя ___ важить 20 кілограмів.
-   - [ ] карта
-   - [x] валіза
-   - [ ] віза
-   - [ ] екскурсія
-   > My suitcase (валіза) weighs 20 kilograms.
+   > [!answer] валіза
+   > [!options] карта | валіза | віза | екскурсія
+   > [!explanation] My suitcase (валіза) weighs 20 kilograms.
 
 8. ___ — це легкий рюкзак для туристів.
-   - [ ] Валіза
-   - [ ] Багаж
-   - [x] Рюкзак
-   - [ ] Паспорт
-   > A backpack (рюкзак) is a light bag for tourists.
+   > [!answer] Рюкзак
+   > [!options] Валіза | Багаж | Рюкзак | Паспорт
+   > [!explanation] A backpack (рюкзак) is a light bag for tourists.
 
 9. Покажіть, будь ласка, ваш посадковий ___.
-   - [ ] паспорт
-   - [ ] квиток
-   - [x] талон
-   - [ ] гід
-   > Show your boarding pass (посадковий талон), please.
+   > [!answer] талон
+   > [!options] паспорт | квиток | талон | гід
+   > [!explanation] Show your boarding pass (посадковий талон), please.
 
 10. Весь мій ___ вже в літаку.
-    - [ ] турист
-    - [ ] гід
-    - [x] багаж
-    - [ ] маршрут
-    > All my luggage (багаж) is already on the plane.
+   > [!answer] багаж
+   > [!options] турист | гід | багаж | маршрут
+   > [!explanation] All my luggage (багаж) is already on the plane.
 
 11. Це надійне ___ допомогло нам організувати відпустку.
-    - [ ] готель
-    - [x] турагентство
-    - [ ] паспорт
-    - [ ] острів
-    > This reliable travel agency (турагентство) helped us organize our vacation.
+   > [!answer] турагентство
+   > [!options] готель | турагентство | паспорт | острів
+   > [!explanation] This reliable travel agency (турагентство) helped us organize our vacation.
 
 12. Я шукаю бюджетний ___ у центрі міста.
-    - [ ] турист
-    - [ ] маршрут
-    - [x] хостел
-    - [ ] рейс
-    > I'm looking for a budget hostel (хостел) in the city center.
+   > [!answer] хостел
+   > [!options] турист | маршрут | хостел | рейс
+   > [!explanation] I'm looking for a budget hostel (хостел) in the city center.
 
 13. ___ зустрів нас біля автобуса.
-    - [ ] Турист
-    - [x] Гід
-    - [ ] Агент
-    - [ ] Кордон
-    > The guide (гід) met us near the bus.
+   > [!answer] Гід
+   > [!options] Турист | Гід | Агент | Кордон
+   > [!explanation] The guide (гід) met us near the bus.
 
 14. Ми забронювали номер у чотиризірковому ___.
-    - [x] готелі
-    - [ ] хостелі
-    - [ ] аеропорті
-    - [ ] туристі
-    > We booked a room in a four-star hotel (готель).
+   > [!answer] готелі
+   > [!options] готелі | хостелі | аеропорті | туристі
+   > [!explanation] We booked a room in a four-star hotel (готель).
 
 ## fill-in: Географічні напрямки
 > Complete the sentences with the correct direction.
 
 1. Львів знаходиться на ___ України.
-   - [ ] півночі
-   - [ ] півдні
-   - [ ] сході
-   - [x] заході
-   > Lviv is located in the west (захід) of Ukraine.
+   > [!answer] заході
+   > [!options] півночі | півдні | сході | заході
+   > [!explanation] Lviv is located in the west (захід) of Ukraine.
 
 2. Харків — це велике місто на ___.
-   - [ ] заході
-   - [ ] півночі
-   - [x] сході
-   - [ ] півдні
-   > Kharkiv is a large city in the east (схід).
+   > [!answer] сході
+   > [!options] заході | півночі | сході | півдні
+   > [!explanation] Kharkiv is a large city in the east (схід).
 
 3. Одеса розташована на ___ країни.
-   - [ ] півночі
-   - [x] півдні
-   - [ ] сході
-   - [ ] заході
-   > Odesa is located in the south (південь) of the country.
+   > [!answer] півдні
+   > [!options] півночі | півдні | сході | заході
+   > [!explanation] Odesa is located in the south (південь) of the country.
 
 4. Чернігів — це історичне місто на ___.
-   - [x] півночі
-   - [ ] півдні
-   - [ ] сході
-   - [ ] заході
-   > Chernihiv is a historic city in the north (північ).
+   > [!answer] півночі
+   > [!options] півночі | півдні | сході | заході
+   > [!explanation] Chernihiv is a historic city in the north (північ).
 
 5. Карпатські гори — на ___ країни.
-   - [x] заході
-   - [ ] сході
-   - [ ] півночі
-   - [ ] півдні
-   > The Carpathian Mountains are in the west (захід).
+   > [!answer] заході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] The Carpathian Mountains are in the west (захід).
 
 6. Крим розташований на крайньому ___.
-   - [ ] заході
-   - [ ] сході
-   - [ ] півночі
-   - [x] півдні
-   > Crimea is located in the far south (південь).
+   > [!answer] півдні
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Crimea is located in the far south (південь).
 
 7. Донбас — промисловий регіон на ___.
-   - [ ] заході
-   - [x] сході
-   - [ ] півночі
-   - [ ] півдні
-   > Donbas is an industrial region in the east (схід).
+   > [!answer] сході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Donbas is an industrial region in the east (схід).
 
 8. Полісся — це лісиста область на ___.
-   - [x] півночі
-   - [ ] півдні
-   - [ ] сході
-   - [ ] заході
-   > Polissia is a forested area in the north (північ).
+   > [!answer] півночі
+   > [!options] півночі | півдні | сході | заході
+   > [!explanation] Polissia is a forested area in the north (північ).
 
 9. Закарпаття знаходиться на крайньому ___.
-   - [x] заході
-   - [ ] сході
-   - [ ] півночі
-   - [ ] півдні
-   > Zakarpattia is in the far west (захід).
+   > [!answer] заході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Zakarpattia is in the far west (захід).
 
 10. Маріуполь — портове місто на ___.
-    - [ ] заході
-    - [x] сході
-    - [ ] півночі
-    - [ ] півдні
-    > Mariupol is a port city in the east (схід).
+   > [!answer] сході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Mariupol is a port city in the east (схід).
 
 11. Чорне море омиває Україну з ___.
-    - [ ] півночі
-    - [x] півдня
-    - [ ] сходу
-    - [ ] заходу
-    > The Black Sea washes Ukraine from the south (південь).
+   > [!answer] півдня
+   > [!options] півночі | півдня | сходу | заходу
+   > [!explanation] The Black Sea washes Ukraine from the south (південь).
 
 12. Київ знаходиться в ___ частині країни.
-    - [ ] західній
-    - [x] центральній
-    - [ ] східній
-    - [ ] південній
-    > Kyiv is in the central part of the country.
+   > [!answer] центральній
+   > [!options] західній | центральній | східній | південній
+   > [!explanation] Kyiv is in the central part of the country.
 
 13. Говерла — найвища гора на ___ України.
-    - [x] заході
-    - [ ] сході
-    - [ ] півночі
-    - [ ] півдні
-    > Hoverla is the highest mountain in the west (захід) of Ukraine.
+   > [!answer] заході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Hoverla is the highest mountain in the west (захід) of Ukraine.
 
 14. Слобожанщина — історичний регіон на ___.
-    - [ ] заході
-    - [x] сході
-    - [ ] півночі
-    - [ ] півдні
-    > Slobozhanshchyna is a historical region in the east (схід).
+   > [!answer] сході
+   > [!options] заході | сході | півночі | півдні
+   > [!explanation] Slobozhanshchyna is a historical region in the east (схід).
 
 ## unjumble: Речення про подорожі
 > Put the words in the correct order.
@@ -1081,7 +1034,7 @@ Study these example sentences showing travel vocabulary in natural use:
 
 ---
 
-# Підсумок
+## Підсумок
 
 ### Key Vocabulary Categories
 
@@ -1112,7 +1065,7 @@ Study these example sentences showing travel vocabulary in natural use:
 
 ---
 
-# Словник
+## Словник
 
 | Слово | Переклад | Примітки |
 |-------|----------|----------|

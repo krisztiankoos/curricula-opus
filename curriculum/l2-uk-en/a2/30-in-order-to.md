@@ -92,7 +92,7 @@ This is weird for English speakers! We use the **Past Tense** form, but the mean
 
 1.  **Для того, щоб** (For that, in order to) - More formal/emphatic.
     - *Він зробив це `для того, щоб` отримати гроші.*
-2.  **Аби** (So that / in order to) - Slightly archaic or colloquial, very "Ukrainian sounding".
+2.  **Аби** (So that | in order to) - Slightly archaic or colloquial, very "Ukrainian sounding".
     - *Я прийшов, `аби` допомогти.*
 3.  **З метою** (With the aim of) - Very official.
     - *З метою покращення...* (With the aim of improvement...).
@@ -320,22 +320,22 @@ Anna and Borys are planning a surprise for Olena.
 
 ## unjumble: Constructing Purpose
 
-1. хочу / я / щоб / прийшов / ти
+1. хочу | я | щоб | прийшов | ти
    > [!answer] Я хочу, щоб ти прийшов
 
-2. ми / щоб / працюємо / відпочивати / потім
+2. ми | щоб | працюємо | відпочивати | потім
    > [!answer] Ми працюємо, щоб потім відпочивати
 
-3. він / купив / щоб / авто / їздити
+3. він | купив | щоб | авто | їздити
    > [!answer] Він купив авто, щоб їздити
 
-4. мама / щоб / хоче / я / вчився
+4. мама | щоб | хоче | я | вчився
    > [!answer] Мама хоче, щоб я вчився
 
-5. зроби / це / аби / я / радів
+5. зроби | це | аби | я | радів
    > [!answer] Зроби це, аби я радів
 
-6. я / щоб / бігаю / схуднути
+6. я | щоб | бігаю | схуднути
    > [!answer] Я бігаю, щоб схуднути
 
 ## group-sort: Same vs Different
@@ -408,26 +408,26 @@ Anna and Borys are planning a surprise for Olena.
 Бос обіцяв, [___:6] він дасть нам вихідний.
 Це все [___:7] клієнт був щасливий.
 
-1. щоб / що
+1. щоб | що
 > [!answer] щоб
 
-2. щоб / як
+2. щоб | як
 > [!answer] щоб
 
-3. щоб / що
+3. щоб | що
 > [!answer] щоб
 
-4. щоб / де
+4. щоб | де
 > [!answer] щоб
 
-5. щоб / коли
+5. щоб | коли
 > [!answer] щоб
 
-6. що / щоб
+6. що | щоб
 > [!answer] що
 > Wait! "Promised THAT he will give". Not purpose. Regular relative "що".
 
-7. для того щоб / тому що
+7. для того щоб | тому що
 > [!answer] для того щоб
 
 ## dialogue-reorder: The Parent Trap
@@ -529,13 +529,13 @@ Anna and Borys are planning a surprise for Olena.
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| щоб | /ʃɔb/ | in order to / so that | conj | — | purpose |
-| аби | /ɑˈbɪ/ | so that / in order to | conj | — | colloquial |
+| щоб | /ʃɔb/ | in order to | so that | conj | — | purpose |
+| аби | /ɑˈbɪ/ | so that | in order to | conj | — | colloquial |
 | для того щоб | /dlʲɑ ˈtɔɦɔ ʃɔb/ | in order to | phrase | — | formal |
 | з метою | /z mɛˈtɔju/ | with the aim of | phrase | — | official |
 | хотіти | /xɔˈtitɪ/ | to want | verb | — | trigger |
 | бажати | /bɑˈʒɑtɪ/ | to wish | verb | — | trigger |
-| мета | /mɛˈtɑ/ | goal / aim | noun | f | concept |
+| мета | /mɛˈtɑ/ | goal | aim | noun | f | concept |
 | мрія | /ˈmrʲijɑ/ | dream | noun | f | concept |
 | мріяти | /ˈmrʲijɑtɪ/ | to dream | verb | — | trigger |
 | просити | /prɔˈsɪtɪ/ | to ask/request | verb | — | trigger |

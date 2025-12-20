@@ -152,7 +152,7 @@ Some aspect pairs use completely different words. You must memorize these:
 | говорити | сказати | to say/speak |
 | брати | взяти | to take |
 | класти | покласти | to put |
-| шукати | знайти | to look for / find |
+| шукати | знайти | to look for | find |
 
 **Meaning:** These pairs often have slightly different nuances — говорити (process of speaking) vs. сказати (saying something specific). Similarly, шукати means to look for or search, while знайти means specifically to find — the successful completion of searching.
 
@@ -382,7 +382,7 @@ Adding different prefixes to the same root creates different perfective verbs wi
 
 ---
 
-4. "Говорити / сказати" are:
+4. "Говорити | сказати" are:
 
 - [x] Suppletive pairs (different roots)
 - [ ] Prefixed pairs
@@ -524,40 +524,40 @@ Adding different prefixes to the same root creates different perfective verbs wi
 
 > Put the words in the correct order.
 
-1. про / читати / = / прочитати
+1. про | читати | = | прочитати
    > [!answer] Про- + читати = прочитати
 
-2. на / писати / = / написати
+2. на | писати | = | написати
    > [!answer] На- + писати = написати
 
-3. з / робити / = / зробити
+3. з | робити | = | зробити
    > [!answer] З- + робити = зробити
 
-4. давати / мінус / -ва- / = / дати
+4. давати | мінус | -ва- | = | дати
    > [!answer] Давати мінус -ва- = дати
 
-5. говорити / сказати / різні / корені
+5. говорити | сказати | різні | корені
    > [!answer] Говорити і сказати різні корені
 
-6. по / бачити / = / побачити
+6. по | бачити | = | побачити
    > [!answer] По- + бачити = побачити
 
-7. ви / вчити / = / вивчити
+7. ви | вчити | = | вивчити
    > [!answer] Ви- + вчити = вивчити
 
-8. вставати / встати / -ва- / видалення
+8. вставати | встати | -ва- | видалення
    > [!answer] Вставати → встати: -ва- видалення
 
-9. брати / взяти / суплетивна / пара
+9. брати | взяти | суплетивна | пара
    > [!answer] Брати/взяти суплетивна пара
 
-10. з'їсти / їсти / з- / префікс
+10. з'їсти | їсти | з- | префікс
     > [!answer] Їсти + з- префікс = з'їсти
 
-11. відпочивати / відпочити / -ва-
+11. відпочивати | відпочити | -ва-
     > [!answer] Відпочивати → відпочити: -ва- removal
 
-12. показувати / показати / -ува-
+12. показувати | показати | -ува-
     > [!answer] Показувати → показати: -ува- removal
 
 ## error-correction: Find the Perfective
@@ -606,32 +606,32 @@ Adding different prefixes to the same root creates different perfective verbs wi
 
 Аспектна пара читати/прочитати використовує [___:1]. Пара писати/написати використовує [___:2]. Пара давати/дати використовує [___:3]. Пара говорити/сказати — це [___:4] пара.
 
-1. про- / на- / -ва- removal / suppletive
+1. про- | на- | -ва- removal | suppletive
 > [!answer] про-
 
-2. про- / на- / -ва- removal / suppletive
+2. про- | на- | -ва- removal | suppletive
 > [!answer] на-
 
-3. про- / на- / -ва- removal / suppletive
+3. про- | на- | -ва- removal | suppletive
 > [!answer] -ва- removal
 
-4. prefixed / suffixed / suppletive
+4. prefixed | suffixed | suppletive
 > [!answer] suppletive
 
 ---
 
 Префікс [___:1] додає значення "завершення" чи "через". Префікс [___:2] часто пов'язаний з писанням. Суфікс [___:3] зазвичай є ознакою недоконаного виду. Дієслова на кшталт брати/взяти — це [___:4] пари.
 
-1. про- / на- / по- / ви-
+1. про- | на- | по- | ви-
 > [!answer] про-
 
-2. про- / на- / по- / ви-
+2. про- | на- | по- | ви-
 > [!answer] на-
 
-3. -ти / -ва- / -ати / -ити
+3. -ти | -ва- | -ати | -ити
 > [!answer] -ва-
 
-4. prefixed / suffixed / suppletive
+4. prefixed | suffixed | suppletive
 > [!answer] suppletive
 
 ## dialogue-reorder: Learning Aspect

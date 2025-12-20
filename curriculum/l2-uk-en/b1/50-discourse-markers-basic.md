@@ -18,21 +18,11 @@ vocabulary_count: 25
 
 # Дискурсивні маркери I
 
-
 > 🎯 **Чому це важливо**
 >
 > «По-перше», «крім того», «однак» — дискурсивні маркери структурують вашу мову. Без них ваші думки звучать як список, а не як логічний текст.
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [FMU 1-10 | 7 helpful Ukrainian words to link sentences](https://www.youtube.com/watch?v=5rY7v7p7qC4) — Ukrainian Lessons (linking words)
->
-> **YouTube:** [Ukrainian conjunctions І, Й, ТА (AND)](https://www.youtube.com/watch?v=XWf0oXtG41s) — Speak Ukrainian
->
-> **YouTube:** [Negative conjunctions in the Ukrainian language](https://www.youtube.com/watch?v=u6B319_-5p0) — Speak Ukrainian
-
 ## Діагностика
-
 
 Read this text. Notice how the underlined words connect ideas.
 
@@ -235,6 +225,16 @@ Discourse markers are words and phrases that:
 - **До слова**, як ваша подорож?
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

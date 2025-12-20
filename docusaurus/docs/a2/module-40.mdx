@@ -61,10 +61,10 @@ Verb: **Ходити** (To walk).
 | :--- | :--- | :--- | :--- |
 | **Вхід** | В-хід | In-move | Entrance |
 | **Вихід** | Ви-хід | Out-move | Exit |
-| **Перехід** | Пере-хід | Across-move | Crossing / Transition |
+| **Перехід** | Пере-хід | Across-move | Crossing | Transition |
 | **Прихід** | При-хід | Arrival-move | Arrival |
 | **Відхід** | Від-хід | Away-move | Departure |
-| **Похід** | По-хід | On-move | Hike / Campaign |
+| **Похід** | По-хід | On-move | Hike | Campaign |
 | **Пішохід** | Піш-о-хід | Foot-o-walker | Pedestrian |
 
 *Де тут вхід?* (Where is the entrance?)
@@ -79,19 +79,19 @@ Verb: **Писати** (To write).
 
 | Word | Structure | Literal Meaning | Real Meaning |
 | :--- | :--- | :--- | :--- |
-| **Письмо** | Пись-мо | Write-thing | Writing / Letter |
+| **Письмо** | Пись-мо | Write-thing | Writing | Letter |
 | **Письменник** | Пись-мен-ник | Write-man | Writer |
 | **Підпис** | Під-пис | Under-write | Signature |
-| **Запис** | За-пис | Behind/For-write | Record / Note |
+| **Запис** | За-пис | Behind/For-write | Record | Note |
 | **Опис** | О-пис | Around-write | Description |
-| **Напис** | На-пис | On-write | Inscription / Sign |
+| **Напис** | На-пис | On-write | Inscription | Sign |
 
 *Ваш підпис, будь ласка.* (Your signature, please).
 *Я зроблю запис у журналі.* (I will make a record in the journal).
 
 ---
 
-## Family 3: Input (-ЧИТ- / -БАЧ-)
+## Family 3: Input (-ЧИТ- | -БАЧ-)
 
 We perceive the world through reading and seeing.
 
@@ -106,15 +106,15 @@ Verb: **Читати** (To read).
 
 *Читання — це корисна звичка.* (Reading is a useful habit).
 
-### The Seers (-БАЧ- / -ГЛЯД-)
+### The Seers (-БАЧ- | -ГЛЯД-)
 Verb: **Бачити** (To see). Root often swaps with **ГЛЯД** (Look).
 
 - **Бачення**: Vision (Concept).
-- **Побачення**: Date / Meeting (Seeing each other).
+- **Побачення**: Date | Meeting (Seeing each other).
 - **Передбачення**: Prediction (Fore-sight).
-- **Погляд**: Glance / View / Opinion.
-- **Вигляд**: Look / Appearance (How something looks out).
-- **Огляд**: Review / Overview (Looking around).
+- **Погляд**: Glance | View | Opinion.
+- **Вигляд**: Look | Appearance (How something looks out).
+- **Огляд**: Review | Overview (Looking around).
 
 *У тебе гарний вигляд!* (You have a good look = You look great).
 *До побачення!* (Until seeing = Goodbye).
@@ -351,7 +351,7 @@ Logic wins!
   { left: `Вихід`, right: `Exit` },
   { left: `Підпис`, right: `Signature` },
   { left: `Письменник`, right: `Writer` },
-  { left: `Побачення`, right: `Date / Meeting` },
+  { left: `Побачення`, right: `Date | Meeting` },
   { left: `Читач`, right: `Reader` },
   { left: `Опис`, right: `Description` },
   { left: `Пішохід`, right: `Pedestrian` }
@@ -398,12 +398,12 @@ Logic wins!
 ### Document Logic
 
 <Unjumble items={[
-  { jumbled: `потрібен / Мені / підпис / ваш`, answer: `Мені потрібен ваш підпис` },
-  { jumbled: `зробив / Я / опис / товару`, answer: `Я зробив опис товару` },
-  { jumbled: `читає / Письменник / книгу / свою`, answer: `Письменник читає свою книгу` },
-  { jumbled: `гарний / У / вигляд / нього`, answer: `У нього гарний вигляд` },
-  { jumbled: `тут / Де / перехід`, answer: `Де тут перехід` },
-  { jumbled: `читання / Це / урок`, answer: `Це урок читання` }
+  { jumbled: `потрібен | Мені | підпис | ваш`, answer: `Мені потрібен ваш підпис` },
+  { jumbled: `зробив | Я | опис | товару`, answer: `Я зробив опис товару` },
+  { jumbled: `читає | Письменник | книгу | свою`, answer: `Письменник читає свою книгу` },
+  { jumbled: `гарний | У | вигляд | нього`, answer: `У нього гарний вигляд` },
+  { jumbled: `тут | Де | перехід`, answer: `Де тут перехід` },
+  { jumbled: `читання | Це | урок`, answer: `Це урок читання` }
 ]} />
 
 ### Root Logic
@@ -447,7 +447,7 @@ Logic wins!
   },  {
     question: `\"Погляд\" usually relates to:`,
     options: [
-      { text: `Opinion / Glance`, correct: true },
+      { text: `Opinion | Glance`, correct: true },
       { text: `Walking style`, correct: false },
       { text: `Handwriting`, correct: false }
     ]
@@ -509,15 +509,15 @@ Logic wins!
 ### The Date
 
 <Cloze
-  passage={`Я йду на [___:1] [Hint: date].
-Я чекаю біля [___:2] [Hint: entrance].
-У мене гарний [___:3] [Hint: look/appearance].
-Моя дівчина — це [___:4] [Hint: prediction] мого серця (poetic).
-Ми зробимо [___:5] [Hint: walk/hike] парком.
-Там є гарний [___:6] [Hint: view/glance].
-Потім ми знайдемо [___:7] [Hint: exit].
-Я скажу: \"До [___:8] [Hint: see you]!\"`}
-  blanks={[{ index: 0, answer: `побачення`, options: [`побачення`] }, { index: 1, answer: `входу`, options: [`входу`] }, { index: 2, answer: `вигляд`, options: [`вигляд`] }, { index: 3, answer: `передбачення`, options: [`передбачення`] }, { index: 4, answer: `похід`, options: [`похід`] }, { index: 5, answer: `вигляд`, options: [`вигляд`] }, { index: 6, answer: `вихід`, options: [`вихід`] }, { index: 7, answer: `побачення`, options: [`побачення`] }]}
+  passage={`Я йду на [___:1].
+Я чекаю біля [___:2].
+У мене гарний [___:3].
+Моя дівчина — це [___:4] мого серця.
+Ми зробимо [___:5] парком.
+Там є гарний [___:6].
+Потім ми знайдемо [___:7].
+Я скажу: \"До [___:8]!\"`}
+  blanks={[{ index: 0, answer: `побачення`, options: [`побачення`, `побачити`, `бачення`] }, { index: 1, answer: `входу`, options: [`входу`, `виходу`, `перехода`] }, { index: 2, answer: `вигляд`, options: [`вигляд`, `виход`, `перехід`] }, { index: 3, answer: `передбачення`, options: [`передбачення`, `побачення`, `бачення`] }, { index: 4, answer: `похід`, options: [`похід`, `прихід`, `вихід`] }, { index: 5, answer: `вигляд`, options: [`вигляд`, `вхід`, `вихід`] }, { index: 6, answer: `вихід`, options: [`вихід`, `вхід`, `похід`] }, { index: 7, answer: `побачення`, options: [`побачення`, `бачення`, `перебачення`] }]}
 />
 
 ### Wrong Root

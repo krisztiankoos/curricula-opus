@@ -3,22 +3,29 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1677/1500
+- **Words:** ✅ 1778/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 59.8% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 59.3% (target 40-68% (B1.3-4 Complex))
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Відносні речення з коли та що** | ⚪️ | 32 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Time and Facts: The Final Relatives** | ⚪️ | 275 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -32,6 +39,7 @@
 | **Summary** | ✅ | 0 | Included in Core |
 | **коли vs що Summary** | ✅ | 0 | Included in Core |
 | **Key Patterns** | ✅ | 263 | Included in Core |
+| **Need More Practice?** | ⚪️ | 69 | Skipped |
 | **Вправи** | ⚪️ | 0 | Skipped |
 | **fill-in: коли або що** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Антецедент і слово** | 🎮 | 14 | Activity (14 items, min 8) |

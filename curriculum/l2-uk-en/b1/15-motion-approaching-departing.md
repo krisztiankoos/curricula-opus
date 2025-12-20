@@ -19,7 +19,6 @@ vocabulary_count: 25
 
 # Untitled
 
-
 > 🎯 **Чому це важливо**
 >
 > Під-, від- — наближення та віддалення. «Підійшов до мене» vs «відійшов від мене» — дві протилежні дії, які постійно використовуються в розмові. Цей модуль завершує вашу систему напрямків.
@@ -269,6 +268,16 @@ The final drink before leaving. historically, the guest was already on the horse
 > When a guest says "Я пішов" (I'm leaving), the host says "Та ще посидьте!" (Sit a while longer!). This loop can repeat 3-4 times. This is called **Українське прощання** (Ukrainian goodbye).
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Motion Verbs:**
+> - 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+> - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
 
 ## Практика
 

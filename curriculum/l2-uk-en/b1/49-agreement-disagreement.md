@@ -18,19 +18,11 @@ vocabulary_count: 25
 
 # Згода та незгода
 
-
 > 🎯 **Чому це важливо**
 >
 > «Абсолютно згоден!», «Не зовсім так», «Категорично не погоджуюсь» — спектр від сильної згоди до повного незгоди. Дискусія неможлива без цих виразів.
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [Phrases: AGREEMENT vs DISAGREEMENT](https://www.youtube.com/watch?v=3n-23J0H5Yw) — Ukrainian grammar (formal and informal contexts)
->
-> **YouTube:** [5 Phrases FOR expressing your OPINION in Ukrainian](https://www.youtube.com/watch?v=d_kS3-_m4hY) — bazikschool
-
 ## Діагностика
-
 
 Read this debate. Notice how speakers agree and disagree.
 
@@ -241,6 +233,16 @@ Ukrainian culture sits between "direct" (like German) and "indirect" (like Briti
 > If a Ukrainian host offers you food (**«З'їж ще вареничок!»**), a simple "No" is rarely accepted immediately. You must refuse ~3 times or use a stronger excuse: *«Я лусну!»* (I'll burst!).
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Причинові та результативні речення
 
-
 > 🎯 **Чому це важливо**
 >
 > «Бо», «тому що», «оскільки» — причина; «тому», «через це» — наслідок. Логічний зв'язок між подіями — основа аргументації. Цей модуль вчить пояснювати «чому» і «і тому».
@@ -282,6 +281,16 @@ Advanced speakers use causal chains to link multiple events into a cohesive stor
 > Avoid repeating «тому що» or «тому». Rotate through synonyms: «бо», «через те що», «оскільки» for causes; «отже», «тож», «відтак» for results. This makes your Ukrainian sound sophisticated and melodic.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Activities
 
@@ -887,5 +896,3 @@ Advanced speakers use causal chains to link multiple events into a cohesive stor
 | внаслідок чого | /vnasˈlidɔk tʃɔˈɦɔ/ | as a result of which | фраза | офіційний |
 | у результаті чого | /u rɛzulʲˈtati tʃɔˈɦɔ/ | as a result of which | фраза | офіційний |
 | з тієї причини | /z tiˈjeji prɪˈtʃɪnɪ/ | for that reason | фраза | |
-
-

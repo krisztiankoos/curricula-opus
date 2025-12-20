@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Мета: щоб + інфінітив
 
-
 > 🎯 **Чому це важливо**
 >
 > «Щоб + інфінітив» — базова конструкція мети. «Прийшов, щоб допомогти» — ви вже використовуєте це інтуїтивно, але тепер зрозумієте правила і уникнете помилок.
@@ -281,6 +280,16 @@ English speakers sometimes try to force this pattern where it doesn't belong. Th
 Negative purpose works identically: "I speak quietly so as not to wake the baby" has one actor (I), so it uses infinitive: «Я говорю тихо, щоб не розбудити дитину.» The "не" simply negates the infinitive that follows щоб.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 

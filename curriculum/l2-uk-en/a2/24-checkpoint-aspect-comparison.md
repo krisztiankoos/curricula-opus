@@ -4,6 +4,7 @@ title: "Checkpoint - Aspect & Comparison"
 subtitle: "Review of Modules 11-19"
 version: "1.0"
 phase: "A2.2"
+focus: checkpoint
 pedagogy: "Review"
 duration: "60 min"
 transliteration: none
@@ -59,7 +60,7 @@ Mastering aspect is mastering Ukrainian time. Remember this golden rule: **Proce
 | Tense | Imperfective (ND) | Perfective (D) |
 |-------|-------------------|----------------|
 | **Past** | **Process/Repetition** <br /> Я читав книгу. (I was reading) <br /> Я читав щодня. (I read every day) | **Result/One-time** <br /> Я прочитав книгу. (I finished reading) <br /> Я прочитав цей лист. (I read this letter) |
-| **Present**| **Action now / General fact** <br /> Я читаю. (I am reading) <br /> Я читаю книги. (I read books) | **No Present Tense!** <br /> Perfective verbs strictly describe future completion or past result. |
+| **Present**| **Action now | General fact** <br /> Я читаю. (I am reading) <br /> Я читаю книги. (I read books) | **No Present Tense!** <br /> Perfective verbs strictly describe future completion or past result. |
 | **Future** | **Process will happen** <br /> Я буду читати. (I will be reading) <br /> Я читатиму. (I will be reading) | **Result will occur** <br /> Я прочитаю. (I will finish reading) |
 
 > 🧠 **Memory Hack: Prefixes**
@@ -520,40 +521,40 @@ Go to the activities section and try to get 100%! If you make a mistake, read th
 
 > Put the words in the correct order.
 
-1. він / прочитав / книгу / вчора
+1. він | прочитав | книгу | вчора
    > [!answer] Він прочитав книгу вчора
 
-2. вона / старіша / за / мене
+2. вона | старіша | за | мене
    > [!answer] Вона старіша за мене
 
-3. це / найкраща / книга
+3. це | найкраща | книга
    > [!answer] Це найкраща книга
 
-4. якби / я / мав / гроші
+4. якби | я | мав | гроші
    > [!answer] Якби я мав гроші
 
-5. я / б / хотів / поїхати
+5. я | б | хотів | поїхати
    > [!answer] Я б хотів поїхати
 
-6. мені / більше / подобається / кава
+6. мені | більше | подобається | кава
    > [!answer] Мені більше подобається кава
 
-7. що / ви / порекомендуєте
+7. що | ви | порекомендуєте
    > [!answer] Що ви порекомендуєте
 
-8. чи / можна / дешевше
+8. чи | можна | дешевше
    > [!answer] Чи можна дешевше
 
-9. якщо / буде / сонячно / підемо
+9. якщо | буде | сонячно | підемо
    > [!answer] Якщо буде сонячно, підемо
 
-10. краще / читати / ніж / дивитися
+10. краще | читати | ніж | дивитися
     > [!answer] Краще читати, ніж дивитися
 
-11. я / візьму / цей / телефон
+11. я | візьму | цей | телефон
     > [!answer] Я візьму цей телефон
 
-12. він / писав / три / години
+12. він | писав | три | години
     > [!answer] Він писав три години
 
 ## error-correction: Fix the Grammar

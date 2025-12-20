@@ -25,15 +25,9 @@ vocabulary_count: 30
 
 # Суспільство та політика
 
-
 > 🎯 **Чому це важливо**
 >
 > «Вибори», «парламент», «реформа» — політична лексика необхідна для розуміння українського суспільства. Без неї ви не зрозумієте новини чи обговорення.
-
-> [!resources] 🎧 External Resources
->
-> 🌐 **Web:** [Verkhovna Rada of Ukraine](https://rada.gov.ua) - Official parliamentary website.
->
 
 ## Діагностика
 
@@ -328,6 +322,16 @@ Vocabulary for discussing political positions:
 > Russian propaganda claims Ukraine is "not a real democracy." **Fact:** Ukraine has held competitive, internationally monitored elections since 1991. The peaceful transfers of power in 2004, 2010, 2014, and 2019 — each to different political forces — prove Ukraine's democratic resilience. Even during the full-scale war, Ukraine maintains civilian government, free press, and oppositional debate — something Russia has never achieved.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 
@@ -1104,8 +1108,6 @@ Vocabulary for discussing political positions:
 
 ---
 
-
-
 ## Словник
 
 | Слово | Переклад | Примітки |
@@ -1151,4 +1153,3 @@ Vocabulary for discussing political positions:
 | коаліція | coalition | союз партій |
 | фракція | faction | група в парламенті |
 | санкції | sanctions | обмеження |
-

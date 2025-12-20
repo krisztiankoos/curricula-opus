@@ -19,19 +19,11 @@ vocabulary_count: 25
 
 # Рух — Прибуття та від'їзд
 
-
 > 🎯 **Чому це важливо**
 >
 > Префікси при-, ви-, в- перетворюють базові дієслова руху на точні вказівки напрямку. «Прийшов» = прибув, «вийшов» = вийшов назовні, «увійшов» = зайшов усередину. Без цих префіксів ви не зможете описати найпростіші переміщення.
 
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [Їздити VS Їхати/ Йти VS Ходити](https://www.youtube.com/watch?v=T6YwFExsRVc) - Focus on basic motion.
-> 📖 **Reading:** [Ukrainian Lessons: Prefixes](https://ukrainianlessons.com/prefixes/) - Prefixes guide.
->
-
 ## Рух — Прибуття та від'їзд
-
 
 ## Діагностика
 
@@ -305,6 +297,16 @@ Leaving a Ukrainian home is a process, not an event. It involves "посидіт
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Motion Verbs:**
+> - 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+> - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
+
 ## Практика
 
 ### Controlled Practice Sentences
@@ -376,8 +378,6 @@ Complete with the correct prefixed verb:
 | вести | привести | вивести | ввести |
 
 ---
-
-
 
 ## Вправи
 

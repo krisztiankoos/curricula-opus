@@ -19,17 +19,9 @@ vocabulary_count: 20
 
 # Пасивні конструкції
 
-
 > 🎯 **Чому це важливо**
 >
 > Пасивні конструкції (-ся, «було зроблено») — альтернатива активним реченням, коли виконавець невідомий або неважливий. «Рішення було прийнято» — офіційний, нейтральний стиль.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [How to form and use passive voice](https://www.youtube.com/watch?v=txDI2JzODFo) - Clear explanation of structure.
-> 📺 **Video:** [Practice with me the passive voice](https://www.youtube.com/watch?v=zsSqBE-iaNM) - Practice exercises.
-> 📺 **Video:** [Passive Voice practice](https://www.youtube.com/watch?v=khJ6GLWoYZ4) - Real-life examples.
->
 
 ## Діагностика
 
@@ -190,6 +182,16 @@ Short forms (-но/-то) NEVER change—they're always the same regardless of s
 - Future: Звіт буде писатися. (The report will be being written.)
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 
@@ -905,8 +907,6 @@ Choosing between active and passive voice isn't just grammar—it's **diplomacy*
     > [!options] призначено | призначене | призначається | призначили
 
 ---
-
-
 
 ## Словник
 

@@ -25,7 +25,6 @@ vocabulary_count: 30
 
 # Природа та екологія
 
-
 > 🎯 **Чому це важливо**
 >
 > «Клімат», «екологія», «забруднення» — екологічна лексика актуальна як ніколи. Без неї ви не зможете обговорювати одну з найважливіших тем сучасності.
@@ -284,6 +283,16 @@ Ukraine spans several distinct natural zones from north to south:
 > Russian propaganda claims the destruction of the Kakhovka dam was "natural" or "self-destruction." **Fact:** International investigations confirm Russia deliberately destroyed the dam, causing one of the worst environmental disasters in European history, flooding 620 km² and killing 40,000+ animals.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Topics:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

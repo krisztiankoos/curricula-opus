@@ -54,26 +54,26 @@ In this module, you will move beyond simple sentences like "I woke up. I ate. I 
 To tell a story, you need road signs. These words tell the listener where they are in time.
 
 ### The Beginning
-- **Спочатку** (At first / First)
-- **Одного разу** (Once / One day) — classic fairytale start ("Once upon a time").
-- **Колись** (Sometime in the past / Once)
-- **Якось** (Once / Somehow) — informal storytelling start ("Once I was walking...").
+- **Спочатку** (At first | First)
+- **Одного разу** (Once | One day) — classic fairytale start ("Once upon a time").
+- **Колись** (Sometime in the past | Once)
+- **Якось** (Once | Somehow) — informal storytelling start ("Once I was walking...").
 
 ### The Middle (Moving Forward)
 - **Потім** (Then)
-- **Тоді** (Then / At that time)
+- **Тоді** (Then | At that time)
 - **Після цього** (After this)
-- **Далі** (Further / Next)
+- **Далі** (Further | Next)
 
 ### The Climax (Drama!)
 - **Раптом** (Suddenly)
 - **Несподівано** (Unexpectedly)
-- **Саме тоді** (Just then / At that exact moment)
+- **Саме тоді** (Just then | At that exact moment)
 
 ### The End
-- **Нарешті** (Finally / At last) — usually implies relief or long wait.
-- **Врешті-решт** (In the end / Eventually) — implies a result after complications.
-- **Згодом** (Later on / Subsequently) — shows passage of time after the event.
+- **Нарешті** (Finally | At last) — usually implies relief or long wait.
+- **Врешті-решт** (In the end | Eventually) — implies a result after complications.
+- **Згодом** (Later on | Subsequently) — shows passage of time after the event.
 
 ## 2. Sequencing in Action
 
@@ -89,11 +89,11 @@ Compare these two versions:
 
 We also need words to locate events relative to "now" or "then".
 
-- **Раніше** (Earlier / Before / Used to)
+- **Раніше** (Earlier | Before | Used to)
   - "Раніше я не знав цього." (Before, I didn't know this.)
 - **Давно** (Long ago)
   - "Це було давно." (It was long ago.)
-- **Недавно / Нещодавно** (Recently / Not long ago)
+- **Недавно | Нещодавно** (Recently | Not long ago)
   - "Ми бачилися недавно." (We saw each other recently.)
 
 ## 4. Dialogue: The Fish That Got Away
@@ -133,7 +133,7 @@ Ukrainians love to tell **анекдоти** (jokes/anecdotes). These aren't jus
 
 A classic structure:
 1.  **Одного разу** (Setup: "One day...")
-2.  **І от** (And so / And then...)
+2.  **І от** (And so | And then...)
 3.  **Раптом** (The twist!)
 4.  **Врешті-решт** (The funny conclusion).
 
@@ -171,8 +171,8 @@ Read this story and notice the bold words.
 
 1.  **Вже** (Already): "Я _вже_ хотів..." — action was about to happen.
 2.  **Відразу** (Immediately): Reaction to the sound.
-3.  **Тільки-но** (Just as / As soon as): Immediate sequence.
-4.  **Ледве** (Barely / Hardly): "Hardly had I approached..."
+3.  **Тільки-но** (Just as | As soon as): Immediate sequence.
+4.  **Ледве** (Barely | Hardly): "Hardly had I approached..."
 
 ## Useful Phrases for Storytellers
 
@@ -182,7 +182,7 @@ Read this story and notice the bold words.
 - **Коротше кажучи...** (Long story short...)
 
 > [!tip] "Sche" vs "Vzhe"
-> - **Ще** (Still / Yet): "Я ще не готовий." (I am not ready yet.)
+> - **Ще** (Still | Yet): "Я ще не готовий." (I am not ready yet.)
 > - **Вже** (Already): "Я вже готовий." (I am already ready.)
 >
 > In stories:
@@ -239,9 +239,9 @@ Now you can turn a boring list of facts into an exciting narrative!
 - Недавно :: Recently
 - Давно :: Long ago
 - Відразу :: Immediately
-- Щойно :: Just now / Just recently
+- Щойно :: Just now | Just recently
 - Ледве :: Barely
-- Раніше :: Before / Earlier
+- Раніше :: Before | Earlier
 
 ## fill-in: Complete the Story
 
@@ -328,12 +328,12 @@ Now you can turn a boring list of facts into an exciting narrative!
    - [ ] A sudden surprise
 
 7. "Одного разу" usually corresponds to:
-   - [x] Once upon a time / One day
+   - [x] Once upon a time | One day
    - [ ] First of all
    - [ ] Immediately
 
 8. "Негайно" means:
-   - [x] Immediately / Urgently
+   - [x] Immediately | Urgently
    - [ ] Slowly
    - [ ] Never
 
@@ -353,7 +353,7 @@ Now you can turn a boring list of facts into an exciting narrative!
     - [ ] Yesterday
 
 12. "Вже" indicates:
-    - [x] Completion / Already
+    - [x] Completion | Already
     - [ ] Continuation
     - [ ] Repetition
 
@@ -457,37 +457,37 @@ Now you can turn a boring list of facts into an exciting narrative!
 Офіціант усміхнувся і віддав мені ключі.
 [___:11], я був удома. Яка пригода!
 
-1. Спочатку / Нарешті
+1. Спочатку | Нарешті
 > [!answer] Спочатку
 
-2. раптом / потім
+2. раптом | потім
 > [!answer] раптом
 
-3. Потім / Спочатку
+3. Потім | Спочатку
 > [!answer] Потім
 
-4. відразу / давно
+4. відразу | давно
 > [!answer] відразу
 
-5. Несподівано / Завжди
+5. Несподівано | Завжди
 > [!answer] Несподівано
 
-6. перед цим / після цього
+6. перед цим | після цього
 > [!answer] перед цим
 
-7. негайно / повільно
+7. негайно | повільно
 > [!answer] негайно
 
-8. Коли / Де
+8. Коли | Де
 > [!answer] Коли
 
-9. вже / ще
+9. вже | ще
 > [!answer] вже
 
-10. ледве / дуже
+10. ледве | дуже
 > [!answer] ледве
 
-11. Нарешті / Раптом
+11. Нарешті | Раптом
 > [!answer] Нарешті
 
 ## dialogue-reorder: Telling a Funny Story
@@ -627,29 +627,29 @@ Now you can turn a boring list of facts into an exciting narrative!
 
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
-| спочатку | /spɔˈt͡ʃɑtku/ | at first / first | adv | — | sequence |
-| потім | /ˈpɔtim/ | then / afterwards | adv | — | sequence |
+| спочатку | /spɔˈt͡ʃɑtku/ | at first | first | adv | — | sequence |
+| потім | /ˈpɔtim/ | then | afterwards | adv | — | sequence |
 | після цього | /ˈpisʲlʲɑ ˈt͡sʲɔɦɔ/ | after this | phrase | — | sequence |
 | перед цим | /ˈpɛrɛd ˈt͡sɪm/ | before this | phrase | — | sequence |
-| нарешті | /nɑˈrɛʃti/ | finally / at last | adv | — | sequence |
-| врешті-решт | /ˈʋrɛʃti ˈrɛʃt/ | in the end / eventually | adv | — | sequence |
-| тоді | /tɔˈdi/ | then / at that time | adv | — | sequence |
-| одного разу | /ɔdˈnɔɦɔ ˈrɑzu/ | one day / once | phrase | — | story start |
-| якось | /ˈjɑkɔsʲ/ | once / somehow | adv | — | story start |
-| колись | /kɔˈlɪsʲ/ | once / sometime (past) | adv | — | time time |
+| нарешті | /nɑˈrɛʃti/ | finally | at last | adv | — | sequence |
+| врешті-решт | /ˈʋrɛʃti ˈrɛʃt/ | in the end | eventually | adv | — | sequence |
+| тоді | /tɔˈdi/ | then | at that time | adv | — | sequence |
+| одного разу | /ɔdˈnɔɦɔ ˈrɑzu/ | one day | once | phrase | — | story start |
+| якось | /ˈjɑkɔsʲ/ | once | somehow | adv | — | story start |
+| колись | /kɔˈlɪsʲ/ | once | sometime (past) | adv | — | time time |
 | раптом | /ˈrɑptɔm/ | suddenly | adv | — | drama |
 | несподівано | /nɛspɔˈdiʋɑnɔ/ | unexpectedly | adv | — | drama |
 | відразу | /ʋidˈrɑzu/ | immediately | adv | — | speed |
-| негайно | /nɛˈɦɑjnɔ/ | immediately / urgently | adv | — | speed |
-| згодом | /ˈzɦɔdɔm/ | subsequently / later | adv | — | time flow |
+| негайно | /nɛˈɦɑjnɔ/ | immediately | urgently | adv | — | speed |
+| згодом | /ˈzɦɔdɔm/ | subsequently | later | adv | — | time flow |
 | пізніше | /pizˈniʃɛ/ | later | adv | — | time flow |
-| раніше | /rɑˈniʃɛ/ | earlier / before | adv | — | time |
+| раніше | /rɑˈniʃɛ/ | earlier | before | adv | — | time |
 | давно | /dɑʋˈnɔ/ | long ago | adv | — | time |
 | недавно | /nɛˈdɑʋnɔ/ | recently | adv | — | time |
 | щойно | /ˈʃt͡ʃɔjnɔ/ | just now | adv | — | time |
-| ледве | /ˈlɛdʋɛ/ | barely / hardly | adv | — | time/degree |
-| ще | /ʃt͡ʃɛ/ | still / yet | adv | — | aspect |
+| ледве | /ˈlɛdʋɛ/ | barely | hardly | adv | — | time/degree |
+| ще | /ʃt͡ʃɛ/ | still | yet | adv | — | aspect |
 | вже | /ʋʒɛ/ | already | adv | — | aspect |
-| тільки-но | /ˈtɪlʲkɪ nɔ/ | just / as soon as | adv | — | time |
-| саме тоді | /ˈsɑmɛ tɔˈdi/ | just then / at that moment | phrase | — | precision |
+| тільки-но | /ˈtɪlʲkɪ nɔ/ | just | as soon as | adv | — | time |
+| саме тоді | /ˈsɑmɛ tɔˈdi/ | just then | at that moment | phrase | — | precision |
 

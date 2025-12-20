@@ -33,9 +33,9 @@ In Ukrainian, feelings are often things that *happen to you*.
 You are the receiver of the emotion.
 
 **We will cover:**
-- **The Dative State:** Мені весело / Мені страшно.
+- **The Dative State:** Мені весело | Мені страшно.
 - **The Reflexive Action:** Я почуваюся...
-- **The Strong Emotion:** Я ненавиджу / Я обожнюю.
+- **The Strong Emotion:** Я ненавиджу | Я обожнюю.
 
 > [!note] Cultural Insight
 > Ukrainians are emotional but private. We might look serious on the street (the "Slavic Face"), but with friends, we pour our hearts out. Sharing sadness is a sign of deep friendship.
@@ -67,8 +67,8 @@ This is the most common way to describe physical and emotional states.
 | I am interesting | **Мені цікаво** | To me [it is] interesting |
 
 **Examples:**
-- *Вам зручно?* (Are you comfortable? / To you comfortable?)
-- *Їй погано.* (She feels bad/sick. / To her bad.)
+- *Вам зручно?* (Are you comfortable? | To you comfortable?)
+- *Їй погано.* (She feels bad/sick. | To her bad.)
 
 ## 2. Nominative Adjectives (Personality)
 
@@ -81,7 +81,7 @@ Be careful! If you use "Я" + Adjective, you describe your **character**, not yo
 
 > [!warning] The "Cold" Trap
 > - *Мені холодно.* (I feel cold.)
-> - *Я холодний.* (I am a cold-hearted person / I am a corpse.)
+> - *Я холодний.* (I am a cold-hearted person | I am a corpse.)
 
 ## 3. Active Emotional Verbs
 
@@ -95,7 +95,7 @@ Some emotions are active verbs.
 
 ### Reflexive States
 - **Хвилюватися** (To worry)
-- **Радіти** (To rejoice / be happy)
+- **Радіти** (To rejoice | be happy)
 - **Дивуватися** (To be surprised)
 - **Сподіватися** (To hope)
 - **Боятися** (To be afraid of + Genitive)
@@ -103,7 +103,7 @@ Some emotions are active verbs.
 ### "To Feel"
 - **Почуватися** (To feel oneself): Describes general well-being.
   - *Як ти почуваєшся?* (How do you feel?)
-  - *Я почуваюся добре / погано.* (Adverb!)
+  - *Я почуваюся добре | погано.* (Adverb!)
 - **Відчувати** (To feel something): Senses.
   - *Я відчуваю біль.* (I feel pain.)
   - *Я відчуваю радість.* (I feel joy.)
@@ -121,7 +121,7 @@ This is your internal atmosphere. It just IS. You are the vessel of this feeling
 - *Мені радісно.* (I feel joyful - To me it is joyful.)
 - *Мені страшно.* (I am scared - To me it is scary.)
 
-## 2. The Quality (Adjective) - "I am that kind of person / current look"
+## 2. The Quality (Adjective) - "I am that kind of person | current look"
 **Я сумний.** (I am sad.)
 Use this when describing appearance or character.
 - *Він сьогодні сумний.* (He looks sad today.)
@@ -129,7 +129,7 @@ Use this when describing appearance or character.
 - *Я щасливий!* (I am happy! - Describing my whole being, not just a fleeting sensation.)
 
 ## 3. The Action (Verb) - "I am doing feeling"
-**Я сумую.** (I am missing someone / being sad.)
+**Я сумую.** (I am missing someone | being sad.)
 This is active. You are engaging with the emotion.
 - *Я боюся.* (I fear.)
 - *Я дивувася.* (I marvel/am surprised.)
@@ -242,12 +242,12 @@ To ask about *feelings*, use:
 - **Чудовий!** (Wonderful!)
 - **Так собі.** (So-so.)
 - **Краще не питај.** (Better not ask.)
-- **Все як завжди.** (Everything as always / Same old.)
+- **Все як завжди.** (Everything as always | Same old.)
 
 > [!dialogue] Small Talk
 > **A:** Привіт! Як настрій?
 > **B:** Та, сірий. Осінь, дощ... Мені сумно.
-> **A:** Розумію. А в мене -- біла смуга! (White stripe / Good streak).
+> **A:** Розумію. А в мене -- біла смуга! (White stripe | Good streak).
 > **B:** Радий за тебе. Сподіваюся, моя чорна смуга скоро закінчиться.
 
 ---
@@ -299,7 +299,7 @@ To ask about *feelings*, use:
    > [!answer] сумно
    > [!options] сумно | сумна | сумний | сумні
 
-8. Вона ___. (sad person / currently looking sad)
+8. Вона ___. (sad person | currently looking sad)
    > [!answer] сумна
    > [!options] сумна | сумно | сумний | сумні
 
@@ -314,7 +314,7 @@ To ask about *feelings*, use:
 ## quiz: Emotional IQ
 
 1. "Мені погано" implies:
-   - [x] I feel sick / unwell
+   - [x] I feel sick | unwell
    - [ ] I am a bad person
    - [ ] I behave badly
 
@@ -324,17 +324,17 @@ To ask about *feelings*, use:
    - [ ] Я гарячий
 
 3. "Переживати" means:
-   - [x] To worry / experience emotional pain
+   - [x] To worry | experience emotional pain
    - [ ] To chew food excessively
    - [ ] To live forever
 
 4. "Мені лінь" means:
-   - [x] I can't be bothered / I'm lazy right now
+   - [x] I can't be bothered | I'm lazy right now
    - [ ] I am a lazy person forever
    - [ ] I am tired
 
 5. To say you are scared:
-   - [x] Мені страшно / Я боюся
+   - [x] Мені страшно | Я боюся
    - [ ] Я страшний
    - [ ] Я страх
 
@@ -358,28 +358,28 @@ To ask about *feelings*, use:
    - [ ] False
 
 10. "Зневажати" means:
-    - [x] To despise / scorn
+    - [x] To despise | scorn
     - [ ] To respect
     - [ ] To ignore
 
 ## unjumble: Express Yourself
 
-1. мені / сьогодні / дуже / сумно
+1. мені | сьогодні | дуже | сумно
    > [!answer] Мені сьогодні дуже сумно
 
-2. я / за / тебе / хвилююся
+2. я | за | тебе | хвилююся
    > [!answer] Я хвилююся за тебе
 
-3. нам / фільм / не / цікаво / дивитися
+3. нам | фільм | не | цікаво | дивитися
    > [!answer] Нам не цікаво дивитися фільм
 
-4. почуваюся / я / чудово / зараз
+4. почуваюся | я | чудово | зараз
    > [!answer] Я почуваюся чудово зараз
 
-5. ти / чого / боїшся
+5. ти | чого | боїшся
    > [!answer] Чого ти боїшся
 
-6. ми / на / сподіваємося / краще
+6. ми | на | сподіваємося | краще
    > [!answer] Ми сподіваємося на краще
 
 ## group-sort: Positive vs Negative
@@ -462,25 +462,25 @@ To ask about *feelings*, use:
 Мені [___:4] йти в парк. Я [___:5] морозиво.
 Я [___:6], що зустріну друга. Це [___:7], що ми друзі.
 
-1. сумно / весело
+1. сумно | весело
 > [!answer] сумно
 
-2. боявся / радів
+2. боявся | радів
 > [!answer] боявся
 
-3. почуваюся / відчуваю
+3. почуваюся | відчуваю
 > [!answer] почуваюся
 
-4. весело / сумно
+4. весело | сумно
 > [!answer] весело
 
-5. обожнюю / ненавиджу
+5. обожнюю | ненавиджу
 > [!answer] обожнюю
 
-6. сподіваюся / боюся
+6. сподіваюся | боюся
 > [!answer] сподіваюся
 
-7. добре / погано
+7. добре | погано
 > [!answer] добре
 
 ## dialogue-reorder: The Date
@@ -613,15 +613,15 @@ To ask about *feelings*, use:
 | подобатися | /pɔˈdɔbɑtɪsʲɑ/ | to like | verb | — | dative subject |
 | боятися | /bɔˈjɑtɪsʲɑ/ | to be afraid | verb | — | + genitive |
 | радіти | /rɑˈditɪ/ | to rejoice | verb | — | happiness |
-| сумувати | /sumuˈʋɑtɪ/ | to be sad / miss | verb | — | sadness |
+| сумувати | /sumuˈʋɑtɪ/ | to be sad | miss | verb | — | sadness |
 | дивуватися | /dɪʋuˈʋɑtɪsʲɑ/ | to be surprised | verb | — | wonder |
 | хвилюватися | /xʋɪlʲuuˈʋɑtɪsʲɑ/ | to worry | verb | — | anxiety |
 | надіятися | /nɑˈdijɑtɪsʲɑ/ | to hope/rely | verb | — | hope |
 | сподіватися | /spɔdiˈʋɑtɪsʲɑ/ | to hope/expect | verb | — | hope |
 | щасливий | /ʃt͡ʃɑsˈlɪʋɪj/ | happy | adj | m | character |
 | сумний | /sumˈnɪj/ | sad | adj | m | character |
-| злий | /zlɪj/ | angry / evil | adj | m | character |
-| страшний | /strɑʃˈnɪj/ | scary / terrible | adj | m | character |
+| злий | /zlɪj/ | angry | evil | adj | m | character |
+| страшний | /strɑʃˈnɪj/ | scary | terrible | adj | m | character |
 | цікавий | /t͡siˈkɑʋɪj/ | interesting | adj | m | quality |
 | нудний | /nudˈnɪj/ | boring | adj | m | quality |
 | приємний | /prɪˈjɛmnɪj/ | pleasant | adj | m | quality |
@@ -630,7 +630,7 @@ To ask about *feelings*, use:
 | настрій | /ˈnɑstrij/ | mood | noun | m | state |
 | емоція | /ɛˈmɔt͡sʲijɑ/ | emotion | noun | f | concept |
 | сміливий | /smiˈlɪʋɪj/ | brave | adj | m | character |
-| жах | /ʒɑx/ | horror / terror | noun | m | strong fear |
+| жах | /ʒɑx/ | horror | terror | noun | m | strong fear |
 | радий | /ˈrɑdɪj/ | glad | adj | m | state |
 | рада | /ˈrɑdɑ/ | glad (f) | adj | f | state |
 | задоволений | /zɑdɔˈʋɔlɛnɪj/ | satisfied | adj | m | state |

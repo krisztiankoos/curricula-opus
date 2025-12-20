@@ -19,9 +19,6 @@
 ## MDX VALIDATION
 ✅ No issues found
 
-## HTML VALIDATION
-✅ Renders correctly (12 interactive elements)
-
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
@@ -31,7 +28,7 @@
 | **Для + Genitive (For)** | ⚪️ | 91 | Skipped |
 | **Без + Genitive (Without)** | ⚪️ | 29 | Skipped |
 | **Part 2: Cause & Topic** | ⚪️ | 0 | Skipped |
-| **Через + Accusative (Because of / Through)** | ⚪️ | 81 | Skipped |
+| **Через + Accusative (Because of | Through)** | ⚪️ | 81 | Skipped |
 | **Про + Accusative (About)** | ⚪️ | 15 | Skipped |
 | **Learning Note: Why Cases Matter** | ⚪️ | 177 | Skipped |
 | **Part 3: Source & Accompaniment** | ⚪️ | 0 | Skipped |
@@ -40,7 +37,7 @@
 | **Part 4: Time & Exception** | ⚪️ | 0 | Skipped |
 | **О/Об + Locative (At - Time)** | ⚪️ | 9 | Skipped |
 | **Після + Genitive (After)** | ⚪️ | 7 | Skipped |
-| **Крім + Genitive (Except / Besides)** | ⚪️ | 5 | Skipped |
+| **Крім + Genitive (Except | Besides)** | ⚪️ | 5 | Skipped |
 | **Замість + Genitive (Instead of)** | ⚪️ | 4 | Skipped |
 | **Deep Dive: Case Summary** | ✅ | 39 | Included in Core |
 | **Story Time: The Letter** | ✅ | 96 | Included in Core |

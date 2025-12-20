@@ -20,6 +20,11 @@ import DialogueReorder from '@site/src/components/DialogueReorder';
 import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkTheWords';
 
 
+# Рух — Практика та інтеграція
+
+> 🎯 **Чому це важливо**
+>
+> Практика, практика, практика. Цей модуль дає інтенсивне тренування всіх дієслів руху в контексті — діалоги, оповідання, інструкції. Після нього рух українською стане автоматичним.
 
 ## Діагностика
 
@@ -63,7 +68,6 @@ In real Ukrainian conversation, motion verbs rarely appear in isolation. Native 
 ## Аналіз
 
 ## Scenario 1: Describing a Journey
-
 
 When describing a trip in Ukrainian, you chain multiple prefixed verbs together. Each verb handles one "segment" of movement.
 
@@ -223,8 +227,19 @@ When describing motion, learners often confuse similar prefixes. Remember these 
 - **увійти** (enter fully) vs **зайти** (drop by): Use увійти for entering a room to stay
 - **дійти** (reach on foot) vs **доїхати** (reach by vehicle): Match the verb stem to your mode of transport
 
-
 ---
+
+## Need More Practice?
+
+:::info[🎧 External Resources]
+
+**Motion Verbs:**
+- 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+- 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+- 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+- 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
+:::
+
 
 ## 🎯 Activities
 
@@ -592,6 +607,21 @@ When describing motion, learners often confuse similar prefixes. Remember these 
   }
 ]} />
 
+### Історія подорожі
+
+<Cloze
+  passage={`**Подорож до Львова**
+
+Андрій [___:1] з дому рано-вранці. На вокзалі він [___:2] на потяг. По дорозі вони [___:3] через кілька міст.
+
+На станції Андрій [___:4] і [___:5] до кав'ярні. Потім він [___:6] вулицю і [___:7] до готелю.
+
+Там друзі [___:8] через парк і [___:9] до центру. Вони [___:10] до музею разом.
+
+Увечері вони [___:11] на таксі. Андрій [___:12] на метро. Потяг [___:13] о дев'ятій. Наступного дня він [___:14] додому.`}
+  blanks={[{ index: 0, answer: `вийшов`, options: [`вийшов`, `увійшов`, `зайшов`, `пройшов`] }, { index: 1, answer: `сів`, options: [`сів`, `став`, `ліг`, `встав`] }, { index: 2, answer: `проїхали`, options: [`проїхали`, `заїхали`, `переїхали`, `під'їхали`] }, { index: 3, answer: `вийшов`, options: [`вийшов`, `увійшов`, `зайшов`, `пройшов`] }, { index: 4, answer: `зайшов`, options: [`зайшов`, `увійшов`, `вийшов`, `пройшов`] }, { index: 5, answer: `перейшов`, options: [`перейшов`, `пройшов`, `обійшов`, `зайшов`] }, { index: 6, answer: `підійшов`, options: [`підійшов`, `зайшов`, `обійшов`, `пройшов`] }, { index: 7, answer: `пройшли`, options: [`пройшли`, `перейшли`, `обійшли`, `зайшли`] }, { index: 8, answer: `дійшли`, options: [`дійшли`, `підійшли`, `зайшли`, `перейшли`] }, { index: 9, answer: `увійшли`, options: [`увійшли`, `вийшли`, `зайшли`, `пройшли`] }, { index: 10, answer: `поїхали`, options: [`поїхали`, `пішли`, `зайшли`, `вийшли`] }, { index: 11, answer: `пересів`, options: [`пересів`, `присів`, `засів`, `підсів`] }, { index: 12, answer: `відійшов`, options: [`відійшов`, `прийшов`, `зайшов`, `підійшов`] }, { index: 13, answer: `доїхав`, options: [`доїхав`, `приїхав`, `заїхав`, `проїхав`] }]}
+/>
+
 ### Правильний напрямок
 
 <Select questions={[
@@ -680,6 +710,135 @@ When describing motion, learners often confuse similar prefixes. Remember these 
       { text: `розійтися`, correct: false }
     ]
   }
+]} />
+
+### Подорожі
+
+<Translate questions={[
+  {
+    source: `I left the house at 8 AM.`,
+    options: [
+      { text: `Я вийшов з дому о восьмій.`, correct: true },
+      { text: `Я увійшов до дому о восьмій.`, correct: false },
+      { text: `Я зайшов до дому о восьмій.`, correct: false },
+      { text: `Я пройшов дім о восьмій.`, correct: false }
+    ]
+  },  {
+    source: `We arrived at Lviv by train.`,
+    options: [
+      { text: `Ми пішли до Львова потягом.`, correct: false },
+      { text: `Ми приїхали до Львова потягом.`, correct: true },
+      { text: `Ми заїхали до Львова потягом.`, correct: false },
+      { text: `Ми проїхали Львів потягом.`, correct: false }
+    ]
+  },  {
+    source: `Cross the street at the traffic light.`,
+    options: [
+      { text: `Пройдіть вулицю на світлофорі.`, correct: false },
+      { text: `Перейдіть вулицю на світлофорі.`, correct: true },
+      { text: `Зайдіть вулицю на світлофорі.`, correct: false },
+      { text: `Обійдіть вулицю на світлофорі.`, correct: false }
+    ]
+  },  {
+    source: `We walked through the park.`,
+    options: [
+      { text: `Ми пройшли через парк.`, correct: true },
+      { text: `Ми перейшли через парк.`, correct: false },
+      { text: `Ми зайшли через парк.`, correct: false },
+      { text: `Ми обійшли парк.`, correct: false }
+    ]
+  },  {
+    source: `She approached the hotel entrance.`,
+    options: [
+      { text: `Вона підійшла до входу готелю.`, correct: true },
+      { text: `Вона зайшла до входу готелю.`, correct: false },
+      { text: `Вона обійшла вхід готелю.`, correct: false },
+      { text: `Вона пройшла вхід готелю.`, correct: false }
+    ]
+  },  {
+    source: `We stopped by a cafe on the way.`,
+    options: [
+      { text: `Ми заїхали до кафе по дорозі.`, correct: true },
+      { text: `Ми проїхали кафе по дорозі.`, correct: false },
+      { text: `Ми під'їхали до кафе по дорозі.`, correct: false },
+      { text: `Ми переїхали кафе по дорозі.`, correct: false }
+    ]
+  },  {
+    source: `They drove around the traffic jam.`,
+    options: [
+      { text: `Вони проїхали затор.`, correct: false },
+      { text: `Вони об'їхали затор.`, correct: true },
+      { text: `Вони переїхали затор.`, correct: false },
+      { text: `Вони заїхали в затор.`, correct: false }
+    ]
+  },  {
+    source: `She entered the room and sat down.`,
+    options: [
+      { text: `Вона увійшла до кімнати і сіла.`, correct: true },
+      { text: `Вона вийшла з кімнати і сіла.`, correct: false },
+      { text: `Вона зайшла до кімнати і сіла.`, correct: false },
+      { text: `Вона пройшла кімнату і сіла.`, correct: false }
+    ]
+  },  {
+    source: `After the tour, everyone dispersed.`,
+    options: [
+      { text: `Після екскурсії всі зійшлися.`, correct: false },
+      { text: `Після екскурсії всі розійшлися.`, correct: true },
+      { text: `Після екскурсії всі підійшлися.`, correct: false },
+      { text: `Після екскурсії всі обійшлися.`, correct: false }
+    ]
+  },  {
+    source: `He descended the stairs.`,
+    options: [
+      { text: `Він підійшов сходами.`, correct: false },
+      { text: `Він зійшов сходами.`, correct: true },
+      { text: `Він обійшов сходи.`, correct: false },
+      { text: `Він пройшов сходи.`, correct: false }
+    ]
+  },  {
+    source: `The bus departed at 6 PM.`,
+    options: [
+      { text: `Автобус прийшов о шостій вечора.`, correct: false },
+      { text: `Автобус відійшов о шостій вечора.`, correct: true },
+      { text: `Автобус підійшов о шостій вечора.`, correct: false },
+      { text: `Автобус зайшов о шостій вечора.`, correct: false }
+    ]
+  },  {
+    source: `We transferred to the metro.`,
+    options: [
+      { text: `Ми пересіли на метро.`, correct: true },
+      { text: `Ми присіли на метро.`, correct: false },
+      { text: `Ми засіли на метро.`, correct: false },
+      { text: `Ми підсіли на метро.`, correct: false }
+    ]
+  },  {
+    source: `They gathered near the monument.`,
+    options: [
+      { text: `Вони зійшлися біля пам'ятника.`, correct: true },
+      { text: `Вони розійшлися біля пам'ятника.`, correct: false },
+      { text: `Вони підійшлися біля пам'ятника.`, correct: false },
+      { text: `Вони обійшлися біля пам'ятника.`, correct: false }
+    ]
+  },  {
+    source: `I finally reached home.`,
+    options: [
+      { text: `Нарешті я дійшов/доїхав додому.`, correct: true },
+      { text: `Нарешті я підійшов додому.`, correct: false },
+      { text: `Нарешті я зайшов додому.`, correct: false },
+      { text: `Нарешті я обійшов дім.`, correct: false }
+    ]
+  }
+]} />
+
+### Як дістатися?
+
+<DialogueReorder lines={[
+  { text: `A: Вибачте, як дістатися до музею?`, order: 1 },
+  { text: `B: Спочатку перейдіть цю вулицю.`, order: 2 },
+  { text: `A: А потім?`, order: 3 },
+  { text: `B: Пройдіть два квартали прямо.`, order: 4 },
+  { text: `A: І що далі?`, order: 5 },
+  { text: `B: Зайдіть за ріг і підійдіть до білого будинку. Це музей.`, order: 6 }
 ]} />
 ## 📚 Словник
 

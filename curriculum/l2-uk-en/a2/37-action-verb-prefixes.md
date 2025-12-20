@@ -59,14 +59,14 @@ Let's look at the most powerful "Transformers".
 
 | Prefix | Meaning | Logic | Example |
 | :--- | :--- | :--- | :--- |
-| **На-** | **On / Accumulation** | Putting something ON | **На**писати: Write (result), **На**клеїти: Stick on |
-| **Пере-** | **Re- / Across** | Doing again or changing | **Пере**писати: Rewrite, **Пере**робити: Redo |
-| **До-** | **Finish / To the end** | Reaching the limit | **До**писати: Finish writing, **До**читати: Finish reading |
-| **За-** | **Close / Fix** | Closing or recording | **За**крити: Close, **За**писати: Record |
-| **Від-** | **Open / Away** | Opening or separating | **Від**крити: Open, **Від**різати: Cut off |
-| **По-** | **A little / Process** | Brief or limited action | **По**читати: Read a bit, **По**говорити: Chat |
-| **Під-** | **Under / Sub-** | Adding from below | **Під**писати: Sign, **Під**тримати: Support |
-| **Роз-** | **Open / Disperse** | Spreading out | **Роз**крити: Uncover, **Роз**дати: Distribute |
+| **На-** | **On | Accumulation** | Putting something ON | **На**писати: Write (result), **На**клеїти: Stick on |
+| **Пере-** | **Re- | Across** | Doing again or changing | **Пере**писати: Rewrite, **Пере**робити: Redo |
+| **До-** | **Finish | To the end** | Reaching the limit | **До**писати: Finish writing, **До**читати: Finish reading |
+| **За-** | **Close | Fix** | Closing or recording | **За**крити: Close, **За**писати: Record |
+| **Від-** | **Open | Away** | Opening or separating | **Від**крити: Open, **Від**різати: Cut off |
+| **По-** | **A little | Process** | Brief or limited action | **По**читати: Read a bit, **По**говорити: Chat |
+| **Під-** | **Under | Sub-** | Adding from below | **Під**писати: Sign, **Під**тримати: Support |
+| **Роз-** | **Open | Disperse** | Spreading out | **Роз**крити: Uncover, **Роз**дати: Distribute |
 
 ---
 
@@ -99,7 +99,7 @@ Let's look at the most powerful "Transformers".
 
 ---
 
-## Deep Dive: Open and Close (Відкрити / Закрити)
+## Deep Dive: Open and Close (Відкрити | Закрити)
 
 These are the most useful practical verbs.
 Unlike English ("turn on/off" vs "open/close"), Ukrainian logic is consistent.
@@ -111,10 +111,10 @@ Unlike English ("turn on/off" vs "open/close"), Ukrainian logic is consistent.
 
 | Object | Action | Verb |
 | :--- | :--- | :--- |
-| Door/Window | Open | **Відкрити** / **Відчинити** |
-| Door/Window | Close | **Закрити** / **Зачинити** |
+| Door/Window | Open | **Відкрити** | **Відчинити** |
+| Door/Window | Close | **Закрити** | **Зачинити** |
 | Book | Open | **Розкрити** (Spread open) |
-| Book | Close | **Закрити** / **Згорнути** |
+| Book | Close | **Закрити** | **Згорнути** |
 | Eyes | Open | **Розплющити** (Specific!) |
 | Eyes | Close | **Заплющити** |
 
@@ -130,16 +130,16 @@ Unlike English ("turn on/off" vs "open/close"), Ukrainian logic is consistent.
 The verb **Дати** (to give) is a prefix magnet.
 
 1.  **Дати** = To give (simple).
-2.  **Віддати** = To give back / return.
+2.  **Віддати** = To give back | return.
     *   *Я **віддав** борг.* (I returned the debt).
 3.  **Передати** = To pass (transmit).
     *   *Будь ласка, **передайте** сіль.* (Please pass the salt).
-4.  **Здати** = To hand in / To betray / To rent out.
+4.  **Здати** = To hand in | To betray | To rent out.
     *   *Студент **здав** іспит.* (Handed in/Passed exam).
     *   *Він **здав** квартиру.* (He rented out the apartment).
-5.  **Подати** = To serve / hand politely.
+5.  **Подати** = To serve | hand politely.
     *   *Офіціант **подав** меню.* (served the menu).
-6.  **Видати** = To issue / publish / betray.
+6.  **Видати** = To issue | publish | betray.
     *   *Банк **видав** картку.* (Issued).
     *   *Він **видав** секрет.* (Betrayed/Leaked).
 
@@ -221,7 +221,7 @@ The prefix **На-** often means "to put on" or "to accumulate/create a lot of".
 - **Малювати** (paint) -> **Намалювати** (create a painting).
 - **Робити** (do) -> **Наробити** (make a massive amount/mess).
     *   *Ми **наробили** помилок.* (We made a ton of mistakes).
-- **Їсти** (eat) -> **Наїстися** (To eat one's fill / accumulate food inside).
+- **Їсти** (eat) -> **Наїстися** (To eat one's fill | accumulate food inside).
 
 ---
 
@@ -229,7 +229,7 @@ The prefix **На-** often means "to put on" or "to accumulate/create a lot of".
 
 The prefix **За-** is the trickiest one. It has three opposite meanings!
 
-1.  **Close / Behind:**
+1.  **Close | Behind:**
     *   **Закрити** (Close).
     *   **Заховати** (Hide behind).
 2.  **Start (Suddenly):**
@@ -237,9 +237,9 @@ The prefix **За-** is the trickiest one. It has three opposite meanings!
     *   **Заплакати** (Burst into tears).
     *   **Захворіти** (Get/Fall sick).
 3.  **Too Much (Excess):**
-    *   **Запрацюватися** (Work too much / lose track of time).
+    *   **Запрацюватися** (Work too much | lose track of time).
     *   **Загулятися** (Party/Walk too long).
-    *   **Засидітися** (Sit too long / stay up late).
+    *   **Засидітися** (Sit too long | stay up late).
 
 > [!warning] Context Matters
 > - *Він **заговорив**.* = He started speaking.
@@ -253,8 +253,8 @@ The prefix **За-** is the trickiest one. It has three opposite meanings!
 > [!myth] Myth: "Ukrainian vocabulary is small."
 > **Fact:** This myth comes from Soviet dictionaries that artificially limited defining Ukrainian words to match Russian ones.
 > In reality, Ukrainian prefixation allows for nuances that English needs sentences to explain.
-> Example: **Заговорити** (to start speaking / to charm someone / to tire someone with talk).
-> **Наговорити** (to say a lot of things / to slander).
+> Example: **Заговорити** (to start speaking | to charm someone | to tire someone with talk).
+> **Наговорити** (to say a lot of things | to slander).
 > **Відговорити** (to dissuade).
 > **Підговорити** (to instigate).
 > One root "говорити" creates dozens of distinct concepts. This is linguistic wealth, not poverty.
@@ -264,12 +264,12 @@ The prefix **За-** is the trickiest one. It has three opposite meanings!
 ## Summary
 
 1.  **Prefixes transform meaning.** They act like modifiers (Re-, Sub-, Out-).
-2.  **Пере-** = Redo / Across.
+2.  **Пере-** = Redo | Across.
 3.  **До-** = Finish.
-4.  **За-** = Close / Record / Start / Excess.
-5.  **Від-** = Open / Away.
-6.  **По-** = A bit / Start.
-7.  **На-** = Accumulate / Create.
+4.  **За-** = Close | Record | Start | Excess.
+5.  **Від-** = Open | Away.
+6.  **По-** = A bit | Start.
+7.  **На-** = Accumulate | Create.
 
 ---
 
@@ -281,12 +281,12 @@ The prefix **За-** is the trickiest one. It has three opposite meanings!
 
 - Пере- :: Redo (Do again)
 - До- :: Finish (To the end)
-- За- :: Close / Excess
-- Від- :: Open / Away
-- Під- :: Under / Sub-
+- За- :: Close | Excess
+- Від- :: Open | Away
+- Під- :: Under | Sub-
 - По- :: A little bit
-- Роз- :: Disperse / Open wide
-- На- :: Create / On
+- Роз- :: Disperse | Open wide
+- На- :: Create | On
 
 ## fill-in: The Editor
 
@@ -490,7 +490,7 @@ When you speak, use these gestures. It helps your brain "feel" the grammar.
 Професор [___:7]вірив і сказав: "Молодець!".
 Студент [___:8]дихнув з полегшенням.
 
-1. увій / зай
+1. увій | зай
 > [!answer] увій
 
 2. ви
@@ -542,7 +542,7 @@ When you speak, use these gestures. It helps your brain "feel" the grammar.
 
 5. Ми **розробили** ремонт. (Context: Massive redo/work)
    > [!error] розробили
-   > [!answer] зробили / переробили
+   > [!answer] зробили | переробили
    > [!explanation] Use "зробили" (simple did) or "переробили" (redid). "Розробили" implies "developed/designed" which is weird for "repair".
    > [!options] зробили | розробили
 
@@ -558,8 +558,8 @@ When you speak, use these gestures. It helps your brain "feel" the grammar.
 
 - Віддати :: Give back (Return)
 - Передати :: Pass (Salt/Message)
-- Здати :: Turn in / Rent out
-- Видати :: Publish / Reveal
+- Здати :: Turn in | Rent out
+- Видати :: Publish | Reveal
 - Подати :: Serve (Food/Hand)
 - Роздати :: Distribute (To many)
 - Надати :: Provide (Official)
@@ -567,17 +567,17 @@ When you speak, use these gestures. It helps your brain "feel" the grammar.
 
 ## unjumble: The Office
 
-1. документ / він / підписав
+1. документ | він | підписав
    > [!answer] Він підписав документ
-2. звіт / ми / переробили
+2. звіт | ми | переробили
    > [!answer] Ми переробили звіт
-3. двері / секретар / відкрив
+3. двері | секретар | відкрив
    > [!answer] Секретар відкрив двері
-4. картку / банк / видав
+4. картку | банк | видав
    > [!answer] Банк видав картку
-5. книгу / я / дочитав
+5. книгу | я | дочитав
    > [!answer] Я дочитав книгу
-6. інтернет / ми / під'єднали
+6. інтернет | ми | під'єднали
    > [!answer] Ми під'єднали інтернет
 
 

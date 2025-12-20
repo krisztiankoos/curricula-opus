@@ -3,22 +3,26 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1586/1500
+- **Words:** ✅ 1689/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/5
+- **Engagement:** ✅ 7/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 53.2% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 58.1% (target 40-68% (B1.2 Motion))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Рух у переносному значенні** | ⚪️ | 37 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **The Hidden Motion in Abstract Thoughts** | ⚪️ | 229 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -27,6 +31,7 @@
 | **Recognizing Figurative vs. Literal Motion** | ⚪️ | 139 | Skipped |
 | **Common Combinations: Verb + Preposition + Abstract Noun** | ⚪️ | 84 | Skipped |
 | **Practice Dialogues: Figurative Motion in Context** | ✅ | 151 | Included in Core |
+| **Need More Practice?** | ⚪️ | 66 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **Exercise 1: Identify the Meaning** | ⚪️ | 55 | Skipped |
 | **Exercise 2: Complete the Expression** | ⚪️ | 10 | Skipped |

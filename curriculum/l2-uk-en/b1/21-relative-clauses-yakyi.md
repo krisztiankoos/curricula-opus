@@ -18,15 +18,9 @@ vocabulary_count: 20
 
 # Відносні речення з який
 
-
 > 🎯 **Чому це важливо**
 >
 > «Який, яка, яке, які» — головні сполучники для опису об'єктів. «Книга, яку я читав» — без цієї конструкції неможливо говорити складними реченнями. Цей модуль — ваш вхід у світ підрядних речень.
-
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Relative Clauses](https://ukrainianlessons.com/relative-clauses/) - Comprehensive guide to relative clauses.
->
 
 ## Діагностика
 
@@ -293,6 +287,16 @@ For example, in "The woman who called" — the woman is performing the action of
 This precision allows Ukrainian to express relationships that English can only hint at. The sentence structure itself tells you exactly how each element relates to every other element. Once you internalize this system, Ukrainian relative clauses become a powerful tool for expressing complex ideas with grammatical clarity.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 
@@ -910,8 +914,6 @@ This precision allows Ukrainian to express relationships that English can only h
 14. Книга, *якої* автор невідомий, стала бестселером.
 
 ---
-
-
 
 ## Словник
 

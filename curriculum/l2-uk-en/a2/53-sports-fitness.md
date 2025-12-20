@@ -25,7 +25,10 @@ vocab_count: 30
 
 Українці — спортивна нація. Ми пишаємося нашими чемпіонами: брати Клички (бокс), Андрій Шевченко (футбол), Еліна Світоліна (теніс). Сьогодні ми поговоримо про активний спосіб життя!
 
-Sports unite people. In this module, you'll learn to talk about playing sports, exercising, and cheering for your favorite team.
+Sports unite people. In this module, you'll master three key areas:
+1. **Sports vocabulary** — games, activities, and competitions
+2. **Fitness vocabulary** — gyms, pools, and training
+3. **Key grammar** — *грати в* + Accusative vs. *займатися* + Instrumental
 
 > [!important] **Myth Buster** "Only Football?"
 > While football is #1, Ukraine is a powerhouse in many sports. Ukraine has world champions in **boxing** (Usyk, Klitschko), **high jump** (Mahuchikh), and **fencing** (Kharlan). We are also very strong in the Paralympics, often finishing in the top 10 medal table globally!
@@ -81,7 +84,21 @@ Popular games and activities:
 > [!cultural] **Cultural Insight** Dynamo Kyiv
 > **FC Dynamo Kyiv** is the most legendary club in Ukrainian history. Founded in 1927, they won countless trophies. Their historic rival is **Shakhtar Donetsk**. When these two play, it's called "The Ukrainian Classico" (*Українське Класичне*). The whole country watches!
 
+> [!tip] **Common Mistakes to Avoid**
+> ❌ *Я граю футбол.* — Wrong! (Missing preposition)
+> ✅ *Я граю в футбол.* — Correct! (грати В + Accusative)
+>
+> ❌ *Він займається футбол.* — Wrong! (Case error)
+> ✅ *Він займається футболом.* — Correct! (займатися + Instrumental)
+>
+> ❌ *Ми виграємо команду.* — Wrong! (Wrong meaning)
+> ✅ *Ми виграємо матч.* — Correct! (You win a game, not a team)
+>
+> **Memory trick:** *грати В* = "playing INTO" a game; *займатися* = "occupied WITH" an activity.
+
 ## Practice
+
+Now let's see these words in action through stories about Ukrainian sports life — from morning runs to championship matches.
 
 ### Story Time: The Morning Run
 
@@ -243,7 +260,7 @@ A healthy mind in a healthy body!
    > Займатися спортОМ.
 
 3. "Вболівальник" means...
-   - [x] fan / supporter
+   - [x] fan | supporter
    - [ ] player
    - [ ] referee
    > Fan.
@@ -324,42 +341,6 @@ A healthy mind in a healthy body!
    > [!options] спортом | спорт | спорта | спорту
    > Instrumental case.
 
-
-7. Він ___ кожного дня. (trains daily)
-   > [!error] daily
-   > [!answer] тренується
-   > [!explanation] Habitual → imperfective.
-   > [!options] тренується | потренується
-
-8. Вона ___ дві години. (trained 2 hours)
-   > [!error] 2 hours
-   > [!answer] тренувалася
-   > [!explanation] Duration → imperfective.
-   > [!options] тренувалася | потренувалася
-
-9. Я ___ і готовий! (finished training)
-   > [!error] finished
-   > [!answer] потренувався
-   > [!explanation] Completed → perfective.
-   > [!options] тренувався | потренувався
-
-10. Ми ___ завтра. (will train tomorrow)
-    > [!error] will train
-    > [!answer] тренуватимемося
-    > [!explanation] Future habitual → imperfective future.
-    > [!options] тренуватимемося | потренуємося
-
-11. Треба ___ більше. (need to train)
-    > [!error] need to
-    > [!answer] тренуватися
-    > [!explanation] General need → imperfective infinitive.
-    > [!options] тренуватися | потренуватися
-
-12. Він ___ і виграв. (trained and won)
-    > [!error] trained and won
-    > [!answer] потренувався
-    > [!explanation] Completed preparation → perfective.
-    > [!options] тренувався | потренувався
 2. Він займається ____.
    > [!answer] футболом
    > [!options] футболом | футбол | футболу | футболі
@@ -488,51 +469,51 @@ A healthy mind in a healthy body!
 
 ## unjumble: Sport Sentences
 
-1. Я / люблю / дивитися / футбол
+1. Я | люблю | дивитися | футбол
    > [!answer] Я люблю дивитися футбол
    > I like watching football.
 
-2. Ми / йдемо / на / стадіон
+2. Ми | йдемо | на | стадіон
    > [!answer] Ми йдемо на стадіон
    > We are going to the stadium.
 
-3. Він / займається / боксом / щодня
+3. Він | займається | боксом | щодня
    > [!answer] Він займається боксом щодня
    > He practices boxing every day.
 
-4. Наша / команда / вчора / виграла
+4. Наша | команда | вчора | виграла
    > [!answer] Наша команда вчора виграла
    > Our team won yesterday.
 
-5. Я / не / вмію / плавати
+5. Я | не | вмію | плавати
    > [!answer] Я не вмію плавати
    > I don't know how to swim.
 
-6. Олена / ходить / у / спортзал
+6. Олена | ходить | у | спортзал
    > [!answer] Олена ходить у спортзал
    > Olena goes to the gym.
 
-7. Який / зараз / рахунок / матчу
+7. Який | зараз | рахунок | матчу
    > [!answer] Який зараз рахунок матчу
    > What is the match score now?
 
-8. Мій / брат — / олімпійський / чемпіон
+8. Мій | брат — | олімпійський | чемпіон
    > [!answer] Мій брат олімпійський чемпіон
    > My brother is an Olympic champion.
 
-9. Треба / багато / тренуватися
+9. Треба | багато | тренуватися
    > [!answer] Треба багато тренуватися
    > One needs to train a lot.
 
-10. Спорт — / це / моє / життя
+10. Спорт — | це | моє | життя
     > [!answer] Спорт це моє життя
     > Sport is my life.
 
-11. Де / твої / нові / кросівки
+11. Де | твої | нові | кросівки
     > [!answer] Де твої нові кросівки
     > Where are your new sneakers?
 
-12. Ми / бігаємо / вранці / в / лісі
+12. Ми | бігаємо | вранці | в | лісі
     > [!answer] Ми бігаємо вранці в лісі
     > We run in the morning in the forest.
 
@@ -574,33 +555,13 @@ A healthy mind in a healthy body!
    > [!options] бігу | біг | біга | бігом
    > [!explanation] From what? Genitive: з бігу.
 
-7. Рахунок один нуль.
-   > [!error] один
-   > [!answer] один
-   > [!options] один | одна | одне | одні
-   > Correct. Let's make error.
-   > *Рахунок одна нуль.*
-   > Error: одна -> один (masc count).
-
-   Rephrase 7:
-   Рахунок одна нуль.
+7. Рахунок одна нуль.
    > [!error] одна
    > [!answer] один
    > [!options] один | одна | одне | одні
    > [!explanation] Masculine count: один.
 
-8. Ми виграли матч.
-   > [!error] матч
-   > [!answer] матч
-   > [!options] матч | матчу | матча | матчем
-   > Correct. Let's fix aspect.
-   > *Ми вигравали вчора.* (We were winning - process).
-   > *Ми виграли.* (Result).
-   > Let's fix case.
-   > *Ми дивимося матчу.* -> матч.
-
-   Rephrase 8:
-   Ми дивимося матчу.
+8. Ми дивимося матчу.
    > [!error] матчу
    > [!answer] матч
    > [!options] матч | матчу | матчем | матчі
@@ -618,31 +579,13 @@ A healthy mind in a healthy body!
     > [!options] спорт | спорту | спорта | спортом
     > [!explanation] Nominative: спорт.
 
-11. Я хочу бути сильним.
-    > [!error] сильним
-    > [!answer] сильним
-    > [!options] сильним | сильний | сильна | сильні
-    > Correct (Instrumental).
-    > Let's make error.
-    > *Я хочу бути сильний.* -> сильним.
-
-    Rephrase 11:
-    Я хочу бути сильний.
+11. Я хочу бути сильний.
     > [!error] сильний
     > [!answer] сильним
     > [!options] сильним | сильний | сильного | сильному
     > [!explanation] 'To be' + Instrumental.
 
-12. Вона займається йогою.
-    > [!error] йогою
-    > [!answer] йогою
-    > [!options] йогою | йога | йогу | йозі
-    > Correct.
-    > Let's make error.
-    > *Вона займається йога.* -> йогою.
-
-    Rephrase 12:
-    Вона займається йога.
+12. Вона займається йога.
     > [!error] йога
     > [!answer] йогою
     > [!options] йогою | йога | йогу | йозі

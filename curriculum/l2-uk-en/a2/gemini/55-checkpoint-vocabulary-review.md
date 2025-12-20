@@ -3,23 +3,27 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1042/1000
+- **Words:** ✅ 1165/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ✅ 5/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 57.5% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 56.2% (checkpoint - no gate)
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 52 | Included in Core |
+| **Checkpoint - Vocabulary Expansion** | ➖ | 0 | Excluded Type |
+| **Warm-up** | ✅ | 175 | Included in Core |
 | **Presentation** | ✅ | 55 | Included in Core |
 | **Practice** | ⚪️ | 891 | Skipped |
 | **Summary** | ✅ | 44 | Included in Core |

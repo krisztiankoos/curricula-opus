@@ -54,14 +54,14 @@ Imagine a house. We will use the verb **йти** (to walk) as our base.
 
 | Prefix | Meaning | Logic | Example |
 | :--- | :--- | :--- | :--- |
-| **В- / У-** | **In** | Entering a space | **У**війти в кімнату (Enter the room) |
+| **В- | У-** | **In** | Entering a space | **У**війти в кімнату (Enter the room) |
 | **Ви-** | **Out** | Exiting a space | **Ви**йти з дому (Exit the house) |
 | **При-** | **Arrival** | Reaching a goal | **При**йти на роботу (Arrive at work) |
 | **Пі-** | **Departure** | Leaving for good | **Пі**ти додому (Leave for home) |
 | **Під-** | **Approach** | Getting close | **Під**ійти до вікна (Approach the window) |
 | **Від-** | **Away** | Stepping back | **Від**ійти від дверей (Step away from the door) |
 | **Пере-** | **Cross** | Crossing a line | **Пере**йти вулицю (Cross the street) |
-| **За-** | **Drop by** | Brief visit / Behind | **За**йти в магазин (Pop into the store) |
+| **За-** | **Drop by** | Brief visit | Behind | **За**йти в магазин (Pop into the store) |
 | **Про-** | **Through** | Passing by/through | **Про**йти парк (Pass through the park) |
 | **Об-** | **Around** | Circumnavigating | **Об**ійти дім (Walk around the house) |
 
@@ -128,12 +128,12 @@ Imagine an arrow going *through* a tube. That is **Про-**.
 Motion verbs change the case of the destination!
 You are not "at" a place (Locative). You are going "into" a place (Accusative).
 
-- **Location (Locative):** Я (де?) в парку / на роботі.
-- **Direction (Accusative):** Я йду (куди?) **в парк** / **на роботу**.
+- **Location (Locative):** Я (де?) в парку | на роботі.
+- **Direction (Accusative):** Я йду (куди?) **в парк** | **на роботу**.
 
 | Verb | Preposition | Case | Example |
 | :--- | :--- | :--- | :--- |
-| **Прийти** | **В / У** | Accusative | Я прийшов **у магазин**. |
+| **Прийти** | **В | У** | Accusative | Я прийшов **у магазин**. |
 | **Вийти** | **З** | Genitive | Я вийшов **з магазину**. |
 | **Піти** | **На** | Accusative | Я пішов **на концерт**. |
 | **Поїхати** | **До** | Genitive | Я поїхав **до бабусі**. |
@@ -155,8 +155,8 @@ Ukrainian loves to use motion verbs for abstract ideas.
     *   *Ти що, **зійшов** з розуму?*
 3.  **Прийти в голову** (To arrive into head) = To occur to someone.
     *   *Мені **прийшла** в голову ідея.*
-4.  **Вийти** (To work out / succeed).
-    *   *У мене все **вийшло**!* (I succeeded / It worked out).
+4.  **Вийти** (To work out | succeed).
+    *   *У мене все **вийшло**!* (I succeeded | It worked out).
 
 ---
 
@@ -268,7 +268,7 @@ Mastering prefixes is the biggest "hack" in the Ukrainian language.
 - Ви- :: Exit (Out of somewhere)
 - Під- :: Approach (Getting closer)
 - Пере- :: Cross (Over a line)
-- За- :: Drop by (Brief visit / Behind)
+- За- :: Drop by (Brief visit | Behind)
 - В- :: Enter (Into somewhere)
 - Від- :: Away (Distance increases)
 - Об- :: Around (Circle)
@@ -358,7 +358,7 @@ Mastering prefixes is the biggest "hack" in the Ukrainian language.
    - [ ] Зайти вулицю
 
 3. The train is at the platform. It is ready to start the journey. It...
-   - [x] Відправляється / Від'їжджає
+   - [x] Відправляється | Від'їжджає
    - [ ] Приїжджає
    - [ ] Під'їжджає
 
@@ -423,17 +423,17 @@ Mastering prefixes is the biggest "hack" in the Ukrainian language.
 
 ## unjumble: Build the Sentence
 
-1. магазин / в / зайшов / він
+1. магазин | в | зайшов | він
    > [!answer] Він зайшов в магазин
-2. з / вийшла / вона / дому
+2. з | вийшла | вона | дому
    > [!answer] Вона вийшла з дому
-3. до / підійти / вікна
+3. до | підійти | вікна
    > [!answer] Підійти до вікна
-4. ми / міст / переїхали
+4. ми | міст | переїхали
    > [!answer] Ми переїхали міст
-5. додому / я / прийшов
+5. додому | я | прийшов
    > [!answer] Я прийшов додому
-6. автобус / від / від'їхав / зупинки
+6. автобус | від | від'їхав | зупинки
    > [!answer] Автобус від'їхав від зупинки
 
 ## mark-the-words: Find the Motion
@@ -503,13 +503,13 @@ Mastering prefixes is the biggest "hack" in the Ukrainian language.
 
 1. Я **вийшов** в кімнату. (Logic: Exit into?)
    > [!error] вийшов
-   > [!answer] увійшов / зайшов
+   > [!answer] увійшов | зайшов
    > [!explanation] Entering a room uses "увійти" or "зайти". "Вийти" means to exit.
    > [!options] увійшов | вийшов
 
 2. Машина **прийшла** в гараж. (Verb type)
    > [!error] прийшла
-   > [!answer] приїхала / заїхала
+   > [!answer] приїхала | заїхала
    > [!explanation] Cars rely on wheels (їхати), not feet (йти).
    > [!options] заїхала | прийшла
 

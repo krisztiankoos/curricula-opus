@@ -18,17 +18,9 @@ vocabulary_count: 25
 
 # Дієслова руху — Повна система
 
-
 > 🎯 **Чому це важливо**
 >
 > Дієслова руху — найскладніша частина української дієслівної системи. «Йти» vs «ходити», «їхати» vs «їздити» — англійською це просто «go», але українською — різні типи руху. Цей модуль дає вам повну картину всіх 14 пар дієслів руху.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [Verbs of Motion: Unidirectional, Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) - Comprehensive system overview.
-> 📺 **Video:** [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) - Basic pairs.
-> 📖 **Reading:** [Ukrainian Lessons: Motion Verbs](https://ukrainianlessons.com/motion-verbs/) - Detailed guide.
->
 
 ## Діагностика
 
@@ -283,6 +275,16 @@ Because you are back now!
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Motion Verbs:**
+> - 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+> - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
+
 ## Практика
 
 ### Вправа: Оберіть правильну форму
@@ -352,8 +354,6 @@ Because you are back now!
 | вести | вести | водити |
 
 ---
-
-
 
 ## Вправи
 

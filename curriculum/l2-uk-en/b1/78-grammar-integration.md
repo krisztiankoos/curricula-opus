@@ -19,7 +19,6 @@ vocabulary_count: 15
 
 # B1 Grammar Integration
 
-
 > 🎯 **Чому це важливо**
 >
 > Фінальна інтеграція граматики B1. Всі теми разом: вид, рух, підрядні, дієприслівники, пасив — в одному модулі. Це ваш останній граматичний тест.
@@ -146,7 +145,17 @@ This module reviewed:
 
 ---
 
-# Вправи
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Skills & Integration:**
+> - 📺 [Чим для вас є Україна? (What is Ukraine to you?)](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner identity documentary
+> - 📺 [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) — Ukraїner cultural analysis
+> - 📺 [History of Ukrainian Language & Dialects](https://www.youtube.com/@Istoria-Movy) — Academic documentary by Історія мови
+> - 🎧 [Ukrainian Lessons Podcast: Seasons 4-6](https://www.ukrainianlessons.com/the-podcast/) — Advanced levels immersion
+
+## Вправи
 
 ## quiz: Діагностика виду
 > Test your aspect knowledge.
@@ -246,130 +255,130 @@ This module reviewed:
 > Choose the correct aspect.
 
 1. Він весь вечір _____ книгу. (процес)
-   - [x] читав
-   - [ ] прочитав
-   > Process = imperfective.
+   > [!answer] читав
+   > [!options] читав | прочитав
+   > [!explanation] Process = imperfective.
 
 2. Він нарешті _____ книгу. (результат)
-   - [ ] читав
-   - [x] прочитав
-   > Result = perfective.
+   > [!answer] прочитав
+   > [!options] читав | прочитав
+   > [!explanation] Result = perfective.
 
 3. Я ще не _____ цю статтю.
-   - [ ] читав
-   - [x] прочитав
-   > «Ще не» + perfective.
+   > [!answer] прочитав
+   > [!options] читав | прочитав
+   > [!explanation] «Ще не» + perfective.
 
 4. _____ , будь ласка! (запрошення)
-   - [x] Сідай
-   - [ ] Сядь
-   > Invitation = imperfective.
+   > [!answer] Сідай
+   > [!options] Сідай | Сядь
+   > [!explanation] Invitation = imperfective.
 
 5. _____ це негайно! (конкретний наказ)
-   - [ ] Роби
-   - [x] Зроби
-   > Specific command = perfective.
+   > [!answer] Зроби
+   > [!options] Роби | Зроби
+   > [!explanation] Specific command = perfective.
 
 6. Вона щодня _____ каву. (повторення)
-   - [x] пила
-   - [ ] випила
-   > Repetition = imperfective.
+   > [!answer] пила
+   > [!options] пила | випила
+   > [!explanation] Repetition = imperfective.
 
 7. Вона вчора _____ каву і пішла. (одноразова дія)
-   - [ ] пила
-   - [x] випила
-   > Single action = perfective.
+   > [!answer] випила
+   > [!options] пила | випила
+   > [!explanation] Single action = perfective.
 
 8. Я не _____ цю книгу. (загальне заперечення)
-   - [x] читав
-   - [ ] прочитав
-   > General negation = imperfective.
+   > [!answer] читав
+   > [!options] читав | прочитав
+   > [!explanation] General negation = imperfective.
 
 ## fill-in: Дієслова руху
 > Choose the correct motion verb.
 
 1. Він _____ до роботи пішки. (unidirectional)
-   - [x] іде
-   - [ ] ходить
-   > Unidirectional = іде.
+   > [!answer] іде
+   > [!options] іде | ходить
+   > [!explanation] Unidirectional = іде.
 
 2. Він часто _____ на роботу пішки. (multidirectional)
-   - [ ] іде
-   - [x] ходить
-   > Multidirectional = ходить.
+   > [!answer] ходить
+   > [!options] іде | ходить
+   > [!explanation] Multidirectional = ходить.
 
 3. Вона _____ до кімнати. (entering)
-   - [x] увійшла
-   - [ ] вийшла
-   > В-/у- = entry.
+   > [!answer] увійшла
+   > [!options] увійшла | вийшла
+   > [!explanation] В-/у- = entry.
 
 4. Він _____ з офісу. (exiting)
-   - [ ] увійшов
-   - [x] вийшов
-   > Ви- = exit.
+   > [!answer] вийшов
+   > [!options] увійшов | вийшов
+   > [!explanation] Ви- = exit.
 
 5. Ми _____ через дорогу. (crossing)
-   - [x] перейшли
-   - [ ] обійшли
-   > Пере- = across.
+   > [!answer] перейшли
+   > [!options] перейшли | обійшли
+   > [!explanation] Пере- = across.
 
 6. Вони _____ місто. (around)
-   - [ ] перейшли
-   - [x] обійшли
-   > Об- = around.
+   > [!answer] обійшли
+   > [!options] перейшли | обійшли
+   > [!explanation] Об- = around.
 
 7. _____ до мене вечором! (drop by)
-   - [x] Зайди
-   - [ ] Вийди
-   > За- = drop by.
+   > [!answer] Зайди
+   > [!options] Зайди | Вийди
+   > [!explanation] За- = drop by.
 
 8. Я _____ до центру за годину. (reached)
-   - [x] дійшов
-   - [ ] відійшов
-   > До- = reach.
+   > [!answer] дійшов
+   > [!options] дійшов | відійшов
+   > [!explanation] До- = reach.
 
 ## fill-in: Складні речення
 > Choose the correct conjunction.
 
 1. Я вдома, _____ хворію.
-   - [x] тому що / бо
-   - [ ] хоча
-   > Because = бо.
+   > [!answer] тому що / бо
+   > [!options] тому що / бо | хоча
+   > [!explanation] Because = бо.
 
 2. _____ холодно, ми підемо.
-   - [ ] Тому що
-   - [x] Хоча
-   > Although = хоча.
+   > [!answer] Хоча
+   > [!options] Тому що | Хоча
+   > [!explanation] Although = хоча.
 
 3. Я прийшов, _____ допомогти.
-   - [x] щоб
-   - [ ] бо
-   > In order to = щоб.
+   > [!answer] щоб
+   > [!options] щоб | бо
+   > [!explanation] In order to = щоб.
 
 4. _____ хочеш, допоможу.
-   - [x] Якщо
-   - [ ] Хоча
-   > If = якщо.
+   > [!answer] Якщо
+   > [!options] Якщо | Хоча
+   > [!explanation] If = якщо.
 
 5. Книга, _____ я читаю, цікава.
-   - [x] яку
-   - [ ] бо
-   > Relative = яку.
+   > [!answer] яку
+   > [!options] яку | бо
+   > [!explanation] Relative = яку.
 
 6. _____ він прийшов, ми почали.
-   - [x] Коли
-   - [ ] Тому що
-   > When = коли.
+   > [!answer] Коли
+   > [!options] Коли | Тому що
+   > [!explanation] When = коли.
 
 7. Було пізно, _____ ми пішли.
-   - [x] тому
-   - [ ] хоча
-   > Therefore = тому.
+   > [!answer] тому
+   > [!options] тому | хоча
+   > [!explanation] Therefore = тому.
 
 8. Чекай, _____ я повернуся.
-   - [x] поки
-   - [ ] тому що
-   > Until/while = поки.
+   > [!answer] поки
+   > [!options] поки | тому що
+   > [!explanation] Until/while = поки.
 
 ## error-correction: Граматичні помилки
 > Find and correct the errors.
@@ -475,7 +484,7 @@ This module reviewed:
 
 ---
 
-# Словник
+## Словник
 
 | Слово | Переклад | Примітки |
 |-------|----------|----------|

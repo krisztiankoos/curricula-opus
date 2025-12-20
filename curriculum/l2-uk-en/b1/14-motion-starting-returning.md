@@ -19,7 +19,6 @@ vocabulary_count: 25
 
 # Рух — Початок і повернення
 
-
 > 🎯 **Чому це важливо**
 >
 > Ви- (виходжу) та по- (повертаюся) — це початок і кінець руху. «Вийти з дому» і «повернутися додому» — базові фрази для опису будь-якого дня. Цей модуль навчить вас описувати відправлення та повернення.
@@ -225,6 +224,16 @@ Prefix **роз-** indicates **dispersal** — scattering in different direction
 > English would express these differently: "left early," "stopped by," "everyone went their separate ways." Ukrainian encodes all this into a single prefix on the motion verb.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Motion Verbs:**
+> - 📖 [Verbs of Motion in Ukrainian](https://www.ukrainianlessons.com/motion-verbs/) — Complete guide to unidirectional vs multidirectional verbs
+> - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
 
 ## Практика
 

@@ -18,16 +18,9 @@ vocabulary_count: 20
 
 # Умовні речення — Реальна умова
 
-
 > 🎯 **Чому це важливо**
 >
 > «Якщо» — умови, які можуть здійснитися. «Якщо матиму час, допоможу» — реальні плани, обіцянки, попередження. Це основа для логічного мислення українською.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [Якби я мала крила орлині - Українська народна пісня](https://www.youtube.com/watch?v=4HOw1znM7Sc) - Folk song with \"якби\" (if I had) examples.
-> 📖 **Reading:** [Ukrainian Lessons: Conditionals](https://ukrainianlessons.com/conditionals/) - Guide to real and unreal conditionals.
->
 
 ## Діагностика
 
@@ -299,6 +292,16 @@ Remember that real conditionals express genuine possibilities, not wishes or hyp
 When practicing real conditionals, focus on selecting the correct tense combinations. Start by identifying whether you're expressing a future possibility, a general truth, or giving instructions. Then choose the appropriate verb forms for both clauses. Pay attention to punctuation — the comma between clauses is mandatory in Ukrainian written text.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Activities
 
@@ -874,8 +877,6 @@ When practicing real conditionals, focus on selecting the correct tense combinat
 
 ---
 
-
-
 ## Словник
 
 | Слово | IPA | Переклад | ЧМ | Примітка |
@@ -900,4 +901,3 @@ When practicing real conditionals, focus on selecting the correct tense combinat
 | головний | /ɦɔlɔvˈnɪj/ | main | прикм. | |
 | результат | /rɛzulʲˈtat/ | result | ім. | |
 | припущення | /prɪˈpuʃtʃɛnʲa/ | assumption | ім. | |
-

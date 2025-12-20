@@ -28,20 +28,6 @@ vocabulary_count: 20
 >
 > Вид дієслова — це найважливіша граматична категорія в українській мові. Носії мови одразу помічають неправильний вибір виду. Оволодіння цією системою — це те, що відрізняє "підручникову українську" від природного мовлення. Ваша здатність спілкуватися як носій починається тут.
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
->
-> **YouTube:** [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
->
-> **Verb System:** [Ukrainian Verb Prefixes](https://www.ukrainianlessons.com/ukrainian-verb-prefixes/) — How prefixes change meaning and create aspect pairs
->
-> **Past Tense Review:** [Past Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-past-tense/) — Foundation for aspect in past
->
-> **Future Tense Review:** [Future Tense in Ukrainian](https://www.ukrainianlessons.com/grammar-future-tense/) — Foundation for aspect in future
->
-> **Verb Overview:** [All Verb Tenses](https://www.ukrainianlessons.com/ukrainian-tenses/) — Downloadable reference chart
-
 ## Diagnostic
 
 Уявіть: ви в кав'ярні у Львові. Офіціант питає вашого друга:
@@ -494,7 +480,7 @@ Then Taras "їв повільно" and "читав" — both imperfective becaus
 
 ---
 
-# Summary
+## Summary
 
 **What You've Learned: A Mental Model for Aspect**
 
@@ -570,7 +556,17 @@ Ukrainian just makes these distinctions obligatory and consistent across all con
 
 ---
 
-# Activities
+## Activities
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Verb Aspect:**
+> - 📖 [Perfective and Imperfective: Verb Aspect](https://www.ukrainianlessons.com/aspect/) — Detailed grammar guide by Ukrainian Lessons
+> - 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
+> - 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
+> - 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
 
 ## quiz: Визначення виду
 > Оберіть правильну відповідь про вид дієслова.
@@ -1428,7 +1424,7 @@ Ukrainian just makes these distinctions obligatory and consistent across all con
     > [!answer] вчив
     > [!options] вчив | вивчив | вчить | вивчить
 
-# Словник
+## Словник
 
 | Слово | Вимова | Переклад | ЧМ | Примітка |
 |-------|--------|----------|-----|----------|

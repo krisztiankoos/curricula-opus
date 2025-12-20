@@ -18,16 +18,9 @@ vocabulary_count: 20
 
 # Дієприслівники доконаного виду
 
-
 > 🎯 **Чому це важливо**
 >
 > «Прочитавши книгу, він заснув» — дієприслівники доконаного виду показують послідовність: спочатку одне, потім інше. Разом з недоконаними вони дають повну картину.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [У барі + Дієприслівник](https://www.youtube.com/watch?v=S3GgY9Fa8uk) - Adverbial participle introduction (ULP).
-> 📺 **Video:** [Adverbial Participle](https://www.youtube.com/watch?v=SRKqRpPzXnE) - Lesson by Odarka.
->
 
 ## Діагностика
 
@@ -349,7 +342,6 @@ This rhythm — action, action, action, RESULT — is embedded in the Ukrainian 
 
 ---
 
-
 ## Etymology: The Origins of -вши
 
 The suffix **-вши** is a fossilized form of the past tense active participle from Old East Slavic.
@@ -361,7 +353,6 @@ The suffix **-вши** is a fossilized form of the past tense active participle 
 So, **прочитавши** literally carries the ghost of "in the condition of having read".
 
 ---
-
 
 ## Semantic Deep Dive: Cause, Condition, or Time?
 
@@ -386,6 +377,16 @@ One of the most powerful features of perfective participles is their ambiguity. 
 > Instead of worrying about WHICH one it is, embrace the efficiency. The Ukrainian speaker packs all three nuances into one word (*втомившись*), letting the listener deduce the logic. This makes the language incredibly dense and expressive.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 
@@ -465,8 +466,6 @@ One of the most powerful features of perfective participles is their ambiguity. 
 | сидячи | сівши |
 | працюючи | попрацювавши |
 | сміючись | засміявшись |
-
-
 
 ---
 
@@ -857,8 +856,6 @@ One of the most powerful features of perfective participles is their ambiguity. 
 
 ---
 
-
-
 ## true-false: Правила
 > Decide if each statement is true or false.
 
@@ -1069,7 +1066,6 @@ One of the most powerful features of perfective participles is their ambiguity. 
 
 ---
 
-
 ## Підсумок
 
 У цьому модулі ви опанували **доконані дієприслівники** — граматичний інструмент для вираження послідовності завершених дій. Ці форми дозволяють описати те, що сталося ДО головної дії, створюючи елегантні, лаконічні речення.
@@ -1087,8 +1083,6 @@ One of the most powerful features of perfective participles is their ambiguity. 
 In the next module, you'll learn about **active participles** — forms like "читаючий" (the reading one) and when to avoid them in natural Ukrainian speech!
 
 ---
-
-
 
 ## Словник
 

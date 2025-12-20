@@ -94,7 +94,7 @@ Use this for instant reaction.
 
 - **Перед тим як** (Before [doing something]).
 - *Перед тим як вийти, вимкни світло.* (Before going out, turn off the light).
-- **Перш ніж** (Before / Prior to). Synonym, slightly more literary.
+- **Перш ніж** (Before | Prior to). Synonym, slightly more literary.
 - *Перш ніж сказати, подумай.* (Before speaking, think).
 
 **Logic Check:**
@@ -312,22 +312,22 @@ It's logical: I stay in the state of "waiting" during the time that "finishing" 
 
 ## unjumble: Time Lines
 
-1. кожного / разу / коли / я / дзвоню / він / зайнятий
+1. кожного | разу | коли | я | дзвоню | він | зайнятий
    > [!answer] Кожного разу, коли я дзвоню, він зайнятий
 
-2. ми / гуляли / тим / часом / як / йшов / дощ
+2. ми | гуляли | тим | часом | як | йшов | дощ
    > [!answer] Ми гуляли, тим часом як йшов дощ
 
-3. я / заснув / після / як / того / прочитав
+3. я | заснув | після | як | того | прочитав
    > [!answer] Я заснув після того, як прочитав
 
-4. подзвони / як / тільки / будеш / вдома
+4. подзвони | як | тільки | будеш | вдома
    > [!answer] Подзвони, як тільки будеш вдома
 
-5. перед / тим / як / сказати / подумай
+5. перед | тим | як | сказати | подумай
    > [!answer] Перед тим як сказати, подумай
 
-6. я / чекав / поки / ти / не / прийшов
+6. я | чекав | поки | ти | не | прийшов
    > [!answer] Я чекав, поки ти не прийшов
 
 ## group-sort: Process vs Point
@@ -396,25 +396,25 @@ It's logical: I stay in the state of "waiting" during the time that "finishing" 
 Я не лягав спати, [___:6] сонце не сідало.
 Це був час, [___:7] я був щасливий.
 
-1. Коли / Де
+1. Коли | Де
 > [!answer] Коли
 
-2. тим часом як / коли
+2. тим часом як | коли
 > [!answer] тим часом як
 
-3. Після того як / Перед тим як
+3. Після того як | Перед тим як
 > [!answer] Після того як
 
-4. перед тим як / поки (Logic: wash hands BEFORE reading)
+4. перед тим як | поки (Logic: wash hands BEFORE reading)
 > [!answer] перед тим як
 
-5. Кожного разу коли / Поки
+5. Кожного разу коли | Поки
 > [!answer] Кожного разу коли
 
-6. поки / коли (Logic: Until the sun set)
+6. поки | коли (Logic: Until the sun set)
 > [!answer] поки
 
-7. коли / де
+7. коли | де
 > [!answer] коли
 
 ## dialogue-reorder: The Meeting
@@ -520,8 +520,8 @@ It's logical: I stay in the state of "waiting" during the time that "finishing" 
 | поки | /ˈpɔkɪ/ | while/until | conj | — | trigger |
 | доки | /ˈdɔkɪ/ | while/until | conj | — | synonym |
 | як тільки | /jɑk ˈtilʲkɪ/ | as soon as | phrase | — | instant |
-| щойно | /ˈʃt͡ʃɔjnɔ/ | just now / as soon as | adv | — | instant |
-| ледве | /ˈlɛdʋɛ/ | barely / hardly | adv | — | nuance |
+| щойно | /ˈʃt͡ʃɔjnɔ/ | just now | as soon as | adv | — | instant |
+| ледве | /ˈlɛdʋɛ/ | barely | hardly | adv | — | nuance |
 | тоді | /tɔˈdi/ | then | adv | — | time |
 | завжди | /zɑʋˈʒdɪ/ | always | adv | — | freq |
 | перед тим як | /pɛrɛd tɪm jɑk/ | before | conj | — | complex |
@@ -534,8 +534,8 @@ It's logical: I stay in the state of "waiting" during the time that "finishing" 
 | того дня | /tɔɦɔ dnʲɑ/ | on that day | phrase | — | specific |
 | тоді коли | /tɔdi kɔlɪ/ | then when | phrase | — | specific |
 | в той час як | /ʋ tɔj t͡ʃɑs jɑk/ | at that time | phrase | — | parallel |
-| ніж | /niʒ/ | than / before | conj | — | comparison |
-| раз | /rɑz/ | time / once | noun | m | count |
+| ніж | /niʒ/ | than | before | conj | — | comparison |
+| раз | /rɑz/ | time | once | noun | m | count |
 | часом | /ˈt͡ʃɑsɔm/ | sometimes | adv | — | freq |
 | ніколи | /niˈkɔlɪ/ | never | adv | — | freq |
 | часто | /ˈt͡ʃɑstɔ/ | often | adv | — | freq |

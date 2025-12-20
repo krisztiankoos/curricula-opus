@@ -18,15 +18,9 @@ vocabulary_count: 20
 
 # Відносні речення з де, куди, звідки
 
-
 > 🎯 **Чому це важливо**
 >
 > «Де», «куди», «звідки» — відносні займенники місця. «Місто, де я народився», «напрямок, куди вони пішли» — ці конструкції необхідні для опису місць і напрямків у складних реченнях.
-
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Relative Clauses](https://ukrainianlessons.com/relative-clauses/) - Comprehensive guide to relative clauses.
->
 
 ## Діагностика
 
@@ -293,6 +287,16 @@ This three-way system connects to Ukrainian's broader directional semantics. Que
 For English speakers, the key insight is that Ukrainian forces you to think about directionality at every step. You cannot remain vague about whether something is happening at a location, moving toward it, or coming from it. This precision actually makes communication clearer once internalized — there's no ambiguity about what "where" means in any given sentence.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 
@@ -928,8 +932,6 @@ For English speakers, the key insight is that Ukrainian forces you to think abou
 14. Кімната, *де* можна відпочити, тиха.
 
 ---
-
-
 
 ## Словник
 

@@ -3,31 +3,34 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1298/1000
+- **Words:** ✅ 1411/1000
 - **Activities:** ✅ 11/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 11/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/4
+- **Engagement:** ✅ 7/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 30/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.9% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 51.2% (target 50-60% (A2.3))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Shopping & Services** | ⚪️ | 0 | Skipped |
-| **Warm-up** | ✅ | 128 | Included in Core |
-| **Presentation** | ✅ | 225 | Included in Core |
-| **Practice** | ⚪️ | 728 | Skipped |
+| **Warm-up** | ✅ | 142 | Included in Core |
+| **Presentation** | ✅ | 303 | Included in Core |
+| **Practice** | ⚪️ | 749 | Skipped |
 | **Summary** | ✅ | 217 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **quiz: Shopping Facts** | 🎮 | 12 | Activity (12 items, min 8) |
 | **match-up: Shop Vocabulary** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Shopping Sentences** | 🎮 | 18 | Activity (18 items, min 8) |
+| **fill-in: Shopping Sentences** | 🎮 | 12 | Activity (12 items, min 8) |
 | **true-false: Ukrainian Services** | 🎮 | 12 | Activity (12 items, min 8) |
 | **group-sort: Places vs Things** | 🎮 | 15 | Activity (15 items, min 8) |
 | **unjumble: Shopping Dialogue** | 🎮 | 12 | Activity (12 items, min 6) |

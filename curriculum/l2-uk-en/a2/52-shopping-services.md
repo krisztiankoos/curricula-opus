@@ -25,7 +25,10 @@ vocab_count: 30
 
 В Україні шопінг — це і сучасні торгові центри, і традиційні базари. А сервіс, як банк чи пошта, став дуже цифровим і зручним. Давайте навчимося робити покупки українською!
 
-Shopping is a daily necessity. In this module, you'll learn how to navigate shops, use services like banks and post offices, and handle money.
+Shopping is a daily necessity. In this module, you'll master three key areas:
+1. **Shop vocabulary** — supermarkets, markets, and malls
+2. **Service vocabulary** — banks, post offices, and salons
+3. **Money talk** — prices, payments, and bargaining
 
 > [!important] **Myth Buster** "Cash Only?"
 > Think you need a suitcase of cash in Eastern Europe? Wrong! Ukraine is a leader in cashless payments. You can pay with Apple Pay or Google Pay almost everywhere — in the subway, at a tiny coffee kiosk, and often even at the market. **Готівка** (cash) is becoming rare!
@@ -80,7 +83,20 @@ Where do we buy things?
 > [!cultural] **Cultural Insight** The Market (Ринок/Базар)
 > The **ринок** is the heart of Ukrainian food culture. Here you buy the freshest vegetables, fruits, meat, and cheese (especially **творог**). It's normal to taste ("попробовать") products before buying. And yes, you can bargain ("торгуватися"), but politely!
 
+> [!tip] **Common Mistakes to Avoid**
+> ❌ *Скільки коштує банани?* — Wrong! (Plural subject)
+> ✅ *Скільки коштують банани?* — Correct! (коштують for plural)
+>
+> ❌ *Я платю готівка.* — Wrong! (Case error)
+> ✅ *Я плачу готівкою.* — Correct! (Instrumental: with what?)
+>
+> ❌ *Я йду в магазині.* — Wrong! (Location vs. direction)
+> ✅ *Я йду в магазин.* — Correct! (Accusative for direction)
+> ✅ *Я в магазині.* — Correct! (Locative for location)
+
 ## Practice
+
+Now let's put these words into action with stories about shopping adventures across Ukraine — from traditional markets to modern malls.
 
 ### Story Time: At the Market
 
@@ -331,42 +347,6 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
    > [!options] купити | продати | міряти | спати
    > To buy bread.
 
-
-7. Я ___ хліб щодня. (buy daily)
-   > [!error] daily
-   > [!answer] купую
-   > [!explanation] Habitual → imperfective.
-   > [!options] купую | куплю
-
-8. Вона ___ нову сукню. (bought dress)
-   > [!error] bought
-   > [!answer] купила
-   > [!explanation] Completed purchase → perfective.
-   > [!options] купувала | купила
-
-9. Де можна ___ молоко? (where to buy)
-   > [!error] where to buy
-   > [!answer] купити
-   > [!explanation] Infinitive after modal → usually perfective.
-   > [!options] купувати | купити
-
-10. Я завжди ___ тут. (always shop here)
-    > [!error] always
-    > [!answer] купую
-    > [!explanation] Habitual → imperfective.
-    > [!options] купую | куплю
-
-11. Треба ___ продукти. (need to buy)
-    > [!error] need to
-    > [!answer] купити
-    > [!explanation] After треба → perfective for result.
-    > [!options] купувати | купити
-
-12. Вони ___ багато речей. (bought many things)
-    > [!error] bought many
-    > [!answer] купили
-    > [!explanation] Completed action → perfective.
-    > [!options] купували | купили
 2. Скільки це ____?
    > [!answer] коштує
    > [!options] коштує | коштують | платить | купує
@@ -495,66 +475,57 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
 
 ## unjumble: Shopping Dialogue
 
-1. Скільки / коштує / цей / хліб
+1. Скільки | коштує | цей | хліб
    > [!answer] Скільки коштує цей хліб
    > How much is this bread?
 
-2. Я / хочу / заплатити / карткою
+2. Я | хочу | заплатити | карткою
    > [!answer] Я хочу заплатити карткою
    > I want to pay by card.
 
-3. Де / тут / найближчий / банк
+3. Де | тут | найближчий | банк
    > [!answer] Де тут найближчий банк
    > Where is the nearest bank here?
 
-4. У / нас / сьогодні / знижка
+4. У | нас | сьогодні | знижка
    > [!answer] У нас сьогодні знижка
    > We have a discount today.
 
-5. Я / йду / в / супермаркет
+5. Я | йду | в | супермаркет
    > [!answer] Я йду в супермаркет
    > I am going to the supermarket.
 
-6. Дайте / мені / чек / будь ласка
+6. Дайте | мені | чек | будь ласка
    > [!answer] Дайте мені чек будь ласка
    > Give me the receipt please.
 
-7. Ця / сукня / дуже / дорога
+7. Ця | сукня | дуже | дорога
    > [!answer] Ця сукня дуже дорога
    > This dress is very expensive.
 
-8. Ми / замовляємо / їжу / додому
+8. Ми | замовляємо | їжу | додому
    > [!answer] Ми замовляємо їжу додому
    > We order food to home.
 
-9. На / пошті / велика / черга
+9. На | пошті | велика | черга
    > [!answer] На пошті велика черга
    > There is a big queue at the post office.
 
-10. Ваша / решта — / двадцять / гривень
+10. Ваша | решта — | двадцять | гривень
     > [!answer] Ваша решта двадцять гривень
     > Your change is 20 hryvnias.
 
-11. Я / люблю / купувати / на / ринку
+11. Я | люблю | купувати | на | ринку
     > [!answer] Я люблю купувати на ринку
     > I like buying at the market.
 
-12. Мені / треба / поміряти / взуття
+12. Мені | треба | поміряти | взуття
     > [!answer] Мені треба поміряти взуття
     > I need to try on shoes.
 
 ## error-correction: Shop Grammar
 
-1. Я йду в магазин.
-   > [!error] магазин
-   > [!answer] магазин
-   > [!options] магазин | магазину | магазина | магазином
-   > Correct. Let's make error.
-   > *Я йду в магазину.*
-   > Error: магазину -> магазин (Acc direction).
-
-   Rephrase 1:
-   Я йду в магазину.
+1. Я йду в магазину.
    > [!error] магазину
    > [!answer] магазин
    > [!options] магазин | магазину | магазина | магазином
@@ -614,17 +585,7 @@ Shopping in Ukraine is easy and modern. Don't be afraid to ask the price!
     > [!options] аптеці | аптека | аптеку | аптекою
     > [!explanation] Locative: в аптеці.
 
-11. Я хочу поміряти плаття.
-    > [!error] плаття
-    > [!answer] сукню
-    > [!options] сукню | плаття | одяг | штани
-    > [!explanation] 'Плаття' is okay but 'сукня' is better Ukrainian. Or fix case? 'Плаття' is neuter indeclinable-like in slang but declinable in lit. Let's fix semantics or grammar?
-    > 'Плаття' (neuter) -> поміряти (що?) плаття (Acc = Nom). Correct.
-    > Let's choose clear error.
-    > *Я хочу поміряти сукня.* -> сукню.
-
-    Rephrase 11:
-    Я хочу поміряти сукня.
+11. Я хочу поміряти сукня.
     > [!error] сукня
     > [!answer] сукню
     > [!options] сукню | сукня | сукні | сукнею

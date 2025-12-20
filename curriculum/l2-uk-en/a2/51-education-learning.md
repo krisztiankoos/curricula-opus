@@ -25,7 +25,10 @@ vocab_count: 30
 
 Освіта — це шлях до успіху. Українці дуже поважають знання. Від першого дзвоника у школі до диплома університету — це велика пригода. Давайте вивчимо слова про навчання!
 
-Education is a lifelong journey. In this module, you'll learn to talk about schools, universities, exams, and the tools of learning.
+Education is a lifelong journey. In this module, you'll master three key areas:
+1. **School vocabulary** — classrooms, teachers, and grades
+2. **University life** — lectures, exams, and diplomas
+3. **The crucial difference** — *вчитися* (where you study) vs. *вивчати* (what you study)
 
 > [!important] **Myth Buster** "Soviet Legacy?"
 > While Soviet education was strong in math/physics, Ukraine has a much older tradition. The **Ostroh Academy** (1576) and **Kyiv-Mohyla Academy** (1615) were among the first universities in Eastern Europe, long before many "imperial" institutions. Ukraine has always been a center of European learning.
@@ -86,7 +89,18 @@ Higher education:
 > - 1-3: Low (Незадовільно)
 > So getting a "12" is perfect!
 
+> [!tip] **Common Mistakes to Avoid**
+> ❌ *Я вивчаю в школі.* — Wrong! (вивчати needs an object)
+> ✅ *Я вчуся в школі.* — Correct! (вчитися for place)
+>
+> ❌ *Я вчуся українську мову.* — Wrong! (вчитися can't take an object)
+> ✅ *Я вивчаю українську мову.* — Correct! (вивчати + Accusative)
+>
+> **Memory trick:** "вчуся" ends in reflexive "-ся" → the action stays "inside" (process). "Вивчаю" has no "-ся" → the action goes "outside" to an object.
+
 ## Practice
+
+Now let's see these words in action through stories about Ukrainian educational life — from a child's first day at school to a university student's exam season.
 
 ### Story Time: First Grade
 
@@ -228,7 +242,7 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
    > Teacher.
 
 5. What happens at the end of a semester?
-   - [x] сесія / іспити
+   - [x] сесія | іспити
    - [ ] канікули
    - [ ] урок
    > Session/Exams.
@@ -425,51 +439,51 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
 
 ## unjumble: Education Syntax
 
-1. Я / вивчаю / українську / мову
+1. Я | вивчаю | українську | мову
    > [!answer] Я вивчаю українську мову
    > I study Ukrainian language.
 
-2. Мій / брат / вчиться / в / школі
+2. Мій | брат | вчиться | в | школі
    > [!answer] Мій брат вчиться в школі
    > My brother studies at school.
 
-3. Завтра / буде / важкий / іспит
+3. Завтра | буде | важкий | іспит
    > [!answer] Завтра буде важкий іспит
    > Tomorrow will be a hard exam.
 
-4. Студенти / слухають / цікаву / лекцію
+4. Студенти | слухають | цікаву | лекцію
    > [!answer] Студенти слухають цікаву лекцію
    > Students listen to an interesting lecture.
 
-5. Вчитель / пише / на / дошці
+5. Вчитель | пише | на | дошці
    > [!answer] Вчитель пише на дошці
    > Teacher writes on the board.
 
-6. Відкрийте / свої / зошити / будь ласка
+6. Відкрийте | свої | зошити | будь ласка
    > [!answer] Відкрийте свої зошити будь ласка
    > Open your notebooks please.
 
-7. У / мене / гарна / оцінка
+7. У | мене | гарна | оцінка
    > [!answer] У мене гарна оцінка
    > I have a good grade.
 
-8. Я / складаю / іспит / з / історії
+8. Я | складаю | іспит | з | історії
    > [!answer] Я складаю іспит з історії
    > I am taking a history exam.
 
-9. Знання — / це / велика / сила
+9. Знання — | це | велика | сила
    > [!answer] Знання це велика сила
    > Knowledge is great power.
 
-10. Ми / любимо / наш / факультет
+10. Ми | любимо | наш | факультет
     > [!answer] Ми любимо наш факультет
     > We love our faculty.
 
-11. Де / твій / синій / олівець
+11. Де | твій | синій | олівець
     > [!answer] Де твій синій олівець
     > Where is your blue pencil?
 
-12. Вона / пише / дипломну / роботу
+12. Вона | пише | дипломну | роботу
     > [!answer] Вона пише дипломну роботу
     > She is writing a thesis/diploma work.
 
@@ -536,29 +550,13 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
     > [!options] іспит | іспиту | іспита | іспитом
     > [!explanation] Accusative: на іспит.
 
-11. Я отримав диплом.
-    > [!error] диплом
-    > [!answer] диплом
-    > [!options] диплом | диплома | диплому | дипломи
-    > Correct. Let's make error.
-    > *Я отримав диплома.*
-    > Error: диплома -> диплом (Inanimate Acc).
-
-    Rephrase 11:
-    Я отримав диплома.
+11. Я отримав диплома.
     > [!error] диплома
     > [!answer] диплом
     > [!options] диплом | диплома | диплому | дипломи
     > [!explanation] Accusative inanimate: диплом.
 
-12. Вона читає зошит.
-    > [!error] зошит
-    > [!answer] зошит
-    > [!options] зошит | зошита | зошиту | зошитом
-
-
-    New 12:
-    У мене є багато підручник.
+12. У мене є багато підручник.
     > [!error] підручник
     > [!answer] підручників
     > [!options] підручників | підручник | підручника | підручники

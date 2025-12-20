@@ -18,17 +18,9 @@ vocabulary_count: 20
 
 # Пасивні дієприкметники минулого часу I
 
-
 > 🎯 **Чому це важливо**
 >
 > «Написаний», «прочитаний», «зроблений» — повні пасивні дієприкметники описують об'єкти через дії над ними. «Книга, написана Шевченком» — це вже література.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [How to form and use passive voice](https://www.youtube.com/watch?v=txDI2JzODFo) - Clear explanation of structure.
-> 📺 **Video:** [Practice with me the passive voice](https://www.youtube.com/watch?v=zsSqBE-iaNM) - Practice exercises.
-> 📺 **Video:** [Passive Voice practice](https://www.youtube.com/watch?v=khJ6GLWoYZ4) - Real-life examples.
->
 
 ## Діагностика
 
@@ -285,7 +277,6 @@ Here, the passive participle **розп'ятий** doesn't hide the agent; it em
 
 ---
 
-
 ### Folklore Wisdom
 
 Ukrainian folklore uses passive participles to describe universal truths.
@@ -297,7 +288,6 @@ Note the form **написано**. This is the **short form** (M40 topic), but 
 Folklore loves these forms because they sound like ancient laws.
 
 ---
-
 
 ### Idioms with Participles
 
@@ -356,7 +346,6 @@ Ukrainian cuisine loves participles because cooking is all about *doing things t
 
 ---
 
-
 ## Deeper Look: The Passive Worldview
 
 Why do we use the passive voice? Is it just to be complicated?
@@ -391,6 +380,16 @@ In casual conversation, overuse of passive participles can sound cold or distant
 Use passive forms when you want to sound **objective, professional, or poetic**. Use active verbs for **warmth and agency**.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 
@@ -1109,8 +1108,6 @@ Use passive forms when you want to sound **objective, professional, or poetic**.
 
 ---
 
-
-
 ## Підсумок
 
 In this module, you mastered **full passive participles** (-ний/-тий) — the essential tool for describing states resulting from completed actions. These forms are everywhere in Ukrainian!
@@ -1123,8 +1120,6 @@ In this module, you mastered **full passive participles** (-ний/-тий) — 
 In the next module, you'll learn the **short forms** (-но/-то) — impersonal passive constructions like "написано" (it was written).
 
 ---
-
-
 
 ## Словник
 

@@ -18,19 +18,11 @@ vocabulary_count: 30
 
 # Абстрактні поняття I: Ідеї
 
-
 > 🎯 **Чому це важливо**
 >
 > «Свобода», «справедливість», «краса» — абстрактна лексика відкриває філософські та інтелектуальні розмови. Без неї ви обмежені побутовими темами.
 
-> [!resources] 🎧 External Resources
->
-> **Grammar Guide:** [Ukrainian Lessons: Vocabulary](https://ukrainianlessons.com/vocabulary/) — Building your Ukrainian word bank
->
-> **YouTube:** [10 Common Ukrainian Phrases for Intermediate Learners](https://www.youtube.com/watch?v=yY_m7z7nN2k) — Verba School (includes discourse markers like ба більше, до речі)
-
 ## Діагностика
-
 
 Read this dialogue between two colleagues discussing a project. Pay attention to the highlighted words.
 
@@ -235,6 +227,16 @@ Abstract nouns refer to things we cannot see, touch, or measure directly — con
 | Найкращий підхід — це... | The best approach is... |
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

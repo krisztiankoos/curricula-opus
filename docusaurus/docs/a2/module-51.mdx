@@ -28,7 +28,10 @@ import MarkTheWords, { MarkTheWordsActivity } from '@site/src/components/MarkThe
 
 Освіта — це шлях до успіху. Українці дуже поважають знання. Від першого дзвоника у школі до диплома університету — це велика пригода. Давайте вивчимо слова про навчання!
 
-Education is a lifelong journey. In this module, you'll learn to talk about schools, universities, exams, and the tools of learning.
+Education is a lifelong journey. In this module, you'll master three key areas:
+1. **School vocabulary** — classrooms, teachers, and grades
+2. **University life** — lectures, exams, and diplomas
+3. **The crucial difference** — *вчитися* (where you study) vs. *вивчати* (what you study)
 
 :::warning[**Myth Buster** "Soviet Legacy?"]
 While Soviet education was strong in math/physics, Ukraine has a much older tradition. The **Ostroh Academy** (1576) and **Kyiv-Mohyla Academy** (1615) were among the first universities in Eastern Europe, long before many "imperial" institutions. Ukraine has always been a center of European learning.
@@ -95,7 +98,20 @@ So getting a "12" is perfect!
 :::
 
 
+:::tip[**Common Mistakes to Avoid**]
+❌ *Я вивчаю в школі.* — Wrong! (вивчати needs an object)
+✅ *Я вчуся в школі.* — Correct! (вчитися for place)
+
+❌ *Я вчуся українську мову.* — Wrong! (вчитися can't take an object)
+✅ *Я вивчаю українську мову.* — Correct! (вивчати + Accusative)
+
+**Memory trick:** "вчуся" ends in reflexive "-ся" → the action stays "inside" (process). "Вивчаю" has no "-ся" → the action goes "outside" to an object.
+:::
+
+
 ## Practice
+
+Now let's see these words in action through stories about Ukrainian educational life — from a child's first day at school to a university student's exam season.
 
 ### Story Time: First Grade
 
@@ -326,7 +342,7 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
   },  {
     question: `What happens at the end of a semester?`,
     options: [
-      { text: `сесія / іспити`, correct: true },
+      { text: `сесія | іспити`, correct: true },
       { text: `канікули`, correct: false },
       { text: `урок`, correct: false }
     ]
@@ -517,18 +533,18 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
 ### Education Syntax
 
 <Unjumble items={[
-  { jumbled: `Я / вивчаю / українську / мову`, answer: `Я вивчаю українську мову` },
-  { jumbled: `Мій / брат / вчиться / в / школі`, answer: `Мій брат вчиться в школі` },
-  { jumbled: `Завтра / буде / важкий / іспит`, answer: `Завтра буде важкий іспит` },
-  { jumbled: `Студенти / слухають / цікаву / лекцію`, answer: `Студенти слухають цікаву лекцію` },
-  { jumbled: `Вчитель / пише / на / дошці`, answer: `Вчитель пише на дошці` },
-  { jumbled: `Відкрийте / свої / зошити / будь ласка`, answer: `Відкрийте свої зошити будь ласка` },
-  { jumbled: `У / мене / гарна / оцінка`, answer: `У мене гарна оцінка` },
-  { jumbled: `Я / складаю / іспит / з / історії`, answer: `Я складаю іспит з історії` },
-  { jumbled: `Знання — / це / велика / сила`, answer: `Знання це велика сила` },
-  { jumbled: `Ми / любимо / наш / факультет`, answer: `Ми любимо наш факультет` },
-  { jumbled: `Де / твій / синій / олівець`, answer: `Де твій синій олівець` },
-  { jumbled: `Вона / пише / дипломну / роботу`, answer: `Вона пише дипломну роботу` }
+  { jumbled: `Я | вивчаю | українську | мову`, answer: `Я вивчаю українську мову` },
+  { jumbled: `Мій | брат | вчиться | в | школі`, answer: `Мій брат вчиться в школі` },
+  { jumbled: `Завтра | буде | важкий | іспит`, answer: `Завтра буде важкий іспит` },
+  { jumbled: `Студенти | слухають | цікаву | лекцію`, answer: `Студенти слухають цікаву лекцію` },
+  { jumbled: `Вчитель | пише | на | дошці`, answer: `Вчитель пише на дошці` },
+  { jumbled: `Відкрийте | свої | зошити | будь ласка`, answer: `Відкрийте свої зошити будь ласка` },
+  { jumbled: `У | мене | гарна | оцінка`, answer: `У мене гарна оцінка` },
+  { jumbled: `Я | складаю | іспит | з | історії`, answer: `Я складаю іспит з історії` },
+  { jumbled: `Знання — | це | велика | сила`, answer: `Знання це велика сила` },
+  { jumbled: `Ми | любимо | наш | факультет`, answer: `Ми любимо наш факультет` },
+  { jumbled: `Де | твій | синій | олівець`, answer: `Де твій синій олівець` },
+  { jumbled: `Вона | пише | дипломну | роботу`, answer: `Вона пише дипломну роботу` }
 ]} />
 
 ### Grammar Fix
@@ -605,14 +621,14 @@ Keep learning! Education is the key to the future. Good luck on your path to flu
     explanation={`Accusative: на іспит.`}
   />
   <ErrorCorrectionItem
-    sentence={`Я отримав диплом.`}
+    sentence={`Я отримав диплома.`}
     errorWord={`диплома`}
     correctForm={`диплом`}
     options={[`диплом`, `диплома`, `диплому`, `дипломи`]}
     explanation={`Accusative inanimate: диплом.`}
   />
   <ErrorCorrectionItem
-    sentence={`Вона читає зошит.`}
+    sentence={`У мене є багато підручник.`}
     errorWord={`підручник`}
     correctForm={`підручників`}
     options={[`підручників`, `підручник`, `підручника`, `підручники`]}

@@ -28,6 +28,11 @@ Can you read a real text? Can you write about yourself?
 Let's find out.
 Поїхали!
 
+In this final review, you'll demonstrate:
+1. **Reading** — Understanding longer texts about Ukraine and daily life
+2. **Listening** — Following dialogues about plans and biographies
+3. **Writing** — Creating your own autobiography in Ukrainian
+
 ## Reading Practice
 
 ### Text 1: My Ukraine
@@ -454,51 +459,51 @@ Success! (*Успіхів!*)
 
 ## unjumble: Final Sentences
 
-1. Я / ніколи / не / забуду / цей / день
+1. Я | ніколи | не | забуду | цей | день
    > [!answer] Я ніколи не забуду цей день
    > I will never forget this day.
 
-2. Ми / хочемо / жити / у / вільній / країні
+2. Ми | хочемо | жити | у | вільній | країні
    > [!answer] Ми хочемо жити у вільній країні
    > We want to live in a free country.
 
-3. Ти / любиш / читати / українські / книги
+3. Ти | любиш | читати | українські | книги
    > [!answer] Ти любиш читати українські книги
    > Do you like reading Ukrainian books?
 
-4. Вчора / я / був / на / концерті
+4. Вчора | я | був | на | концерті
    > [!answer] Вчора я був на концерті
    > Yesterday I was at a concert.
 
-5. Завтра / ми / поїдемо / на / дачу
+5. Завтра | ми | поїдемо | на | дачу
    > [!answer] Завтра ми поїдемо на дачу
    > Tomorrow we will go to the dacha.
 
-6. Ця / дівчина / дуже / гарно / співає
+6. Ця | дівчина | дуже | гарно | співає
    > [!answer] Ця дівчина дуже гарно співає
    > This girl sings very well.
 
-7. Я / шукаю / нову / цікаву / роботу
+7. Я | шукаю | нову | цікаву | роботу
    > [!answer] Я шукаю нову цікаву роботу
    > I am looking for a new interesting job.
 
-8. Де / ти / купив / ці / кросівки
+8. Де | ти | купив | ці | кросівки
    > [!answer] Де ти купив ці кросівки
    > Where did you buy these sneakers?
 
-9. Мені / треба / більше / практикувати / мову
+9. Мені | треба | більше | практикувати | мову
    > [!answer] Мені треба більше практикувати мову
    > I need to practice the language more.
 
-10. У / нас / є / великі / плани
+10. У | нас | є | великі | плани
     > [!answer] У нас є великі плани
     > We have big plans.
 
-11. Життя / — / це / найцікавіша / подорож
+11. Життя | — | це | найцікавіша | подорож
     > [!answer] Життя це найцікавіша подорож
     > Life is the most interesting journey.
 
-12. Все / буде / добре
+12. Все | буде | добре
     > [!answer] Все буде добре
     > Everything will be fine.
 
@@ -506,7 +511,7 @@ Success! (*Успіхів!*)
 
 > [!instruction] Mark all nouns in these sentences.
 
-[Україна] — це [країна]. [Київ] — це [столиця]. [Дніпро] — це [річка]. [Люди] люблять [свободу]. [Студент] читає [книгу]. [Лікар] лікує [хворих] (Wait, хворих acts as noun here but is adj. Let's mark it). [Мама] готує [обід]. [Сонце] світить. [Дощ] іде.
+[Україна] — це [країна]. [Київ] — це [столиця]. [Дніпро] — це [річка]. [Люди] люблять [свободу]. [Студент] читає [книгу]. [Лікар] лікує хворих. [Мама] готує [обід]. [Сонце] світить. [Дощ] іде.
 
 ## dialogue-reorder: Goodbye A2
 

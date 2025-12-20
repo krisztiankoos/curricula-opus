@@ -25,6 +25,11 @@ But do you speak *correctly*?
 Grammar is the skeleton of the language. Today we will check if your skeleton is strong.
 We will review cases, verb aspects, and complex sentences.
 
+In this review, you'll master three key areas:
+1. **The 7 Cases** — Nominative to Vocative with their functions
+2. **Verb Aspect** — Process (Imperfective) vs Result (Perfective)
+3. **Complex Sentences** — Connectors like *тому що*, *якщо*, *щоб*
+
 ## Presentation
 
 ### The 7 Cases: Quick Guide
@@ -283,7 +288,7 @@ You are now ready for the **Capstone Module**. Good luck!
    > Accusative.
 
 5. "Imperfective" verb means...
-   - [x] Process / Habit
+   - [x] Process | Habit
    - [ ] Result
    - [ ] Command
    > Habitual or ongoing.
@@ -480,51 +485,51 @@ You are now ready for the **Capstone Module**. Good luck!
 
 ## unjumble: Sentence Builder
 
-1. Я / не / пішов / у / кіно / тому / що / працював
+1. Я | не | пішов | у | кіно | тому | що | працював
    > [!answer] Я не пішов у кіно тому що працював
    > I didn't go to the cinema because I was working.
 
-2. Коли / ми / прийшли / він / вже / спав
+2. Коли | ми | прийшли | він | вже | спав
    > [!answer] Коли ми прийшли він вже спав
    > When we arrived he was already asleep.
 
-3. Я / хочу / щоб / ти / купив / хліб
+3. Я | хочу | щоб | ти | купив | хліб
    > [!answer] Я хочу щоб ти купив хліб
    > I want you to buy bread.
 
-4. Студент / який / читає / книгу / мій / друг
+4. Студент | який | читає | книгу | мій | друг
    > [!answer] Студент який читає книгу мій друг
    > The student who is reading a book is my friend.
 
-5. Якщо / буде / сонце / ми / підемо / гуляти
+5. Якщо | буде | сонце | ми | підемо | гуляти
    > [!answer] Якщо буде сонце ми підемо гуляти
    > If there is sun we will go for a walk.
 
-6. Він / сказав / що / любить / Україну
+6. Він | сказав | що | любить | Україну
    > [!answer] Він сказав що любить Україну
    > He said that he loves Ukraine.
 
-7. Я / пишу / листа / своєму / другу
+7. Я | пишу | листа | своєму | другу
    > [!answer] Я пишу листа своєму другу
    > I am writing a letter to my friend.
 
-8. Ми / їдемо / автобусом / до / Львова
+8. Ми | їдемо | автобусом | до | Львова
    > [!answer] Ми їдемо автобусом до Львова
    > We are going by bus to Lviv.
 
-9. У / мене / немає / вільного / часу
+9. У | мене | немає | вільного | часу
    > [!answer] У мене немає вільного часу
    > I have no free time.
 
-10. Мені / дуже / подобається / ця / музика
+10. Мені | дуже | подобається | ця | музика
     > [!answer] Мені дуже подобається ця музика
     > I really like this music.
 
-11. Де / ти / був / вчора / ввечері
+11. Де | ти | був | вчора | ввечері
     > [!answer] Де ти був вчора ввечері
     > Where were you yesterday evening?
 
-12. Мамо / де / мої / теплі / шкарпетки
+12. Мамо | де | мої | теплі | шкарпетки
     > [!answer] Мамо де мої теплі шкарпетки
     > Mom, where are my warm socks?
 
@@ -570,8 +575,8 @@ You are now ready for the **Capstone Module**. Good luck!
    > [!answer] грошей
    > [!options] гроші | грошей | грошам | грошима
    > [!explanation] Genitive Negation: не маю грошей.
-   Rephrase 8:
-   Ми йдемо з друг.
+
+8. Ми йдемо з друг.
    > [!error] друг
    > [!answer] другом
    > [!options] другом | друг | друга | другу
@@ -760,10 +765,3 @@ You are now ready for the **Capstone Module**. Good luck!
 | вчити | /ˈʋtʃɪtɪ/ | to learn | verb | - | |
 | мова | /ˈmɔʋa/ | language | noun | f | |
 | задоволення | /zadɔˈʋɔlennʲa/ | pleasure | noun | n | |
-| допомагати | /dɔpɔmaˈhatɪ/ | to help | verb | - | |
-| чекати | /tʃeˈkatɪ/ | to wait | verb | - | |
-| розуміти | /rozumˈitɪ/ | to understand | verb | - | |
-| пам'ятати | /pamjaˈtatɪ/ | to remember | verb | - | |
-| знати | /znatɪ/ | to know | verb | - | |
-| вчити | /ˈʋtʃɪtɪ/ | to learn | verb | - | |
-| мова | /ˈmɔʋa/ | language | noun | f | |

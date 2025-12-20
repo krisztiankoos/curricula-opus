@@ -16,7 +16,7 @@ grammar:
   - noun suffixes (-ння, -ття, -ість, -ач, -ець, -ник)
   - diminutives (-ок, -ик, -ка)
 objectives:
-  - "Learner can turn verbs into nouns (Reading -> Reader / Reading)"
+  - "Learner can turn verbs into nouns (Reading -> Reader | Reading)"
   - "Learner can turn adjectives into nouns (Happy -> Happiness)"
   - "Learner can use diminutives for politeness and affection"
 vocabulary_count: 35
@@ -56,7 +56,7 @@ This is how you multiply your vocabulary instantly.
 
 Let's look at the three main machines in our factory.
 
-## Machine 1: The Person Maker (-ач / -ець / -ник)
+## Machine 1: The Person Maker (-ач | -ець | -ник)
 
 Turns an **Action** into a **Doer**.
 
@@ -67,7 +67,7 @@ Turns an **Action** into a **Doer**.
 | **Писа**ти: Write | -ник | **Письменник**: Writer | Double 'н'! |
 | **Вчи**ти: Teach | -тель | **Вчитель**: Teacher | |
 
-## Machine 2: The Process Maker (-ння / -ття)
+## Machine 2: The Process Maker (-ння | -ття)
 
 Turns an **Action** into a **Thing/Process** (Gerund).
 *Usually requires double consonants.*
@@ -281,10 +281,10 @@ To make things small or cute, we use suffixes:
 ## Summary
 
 1.  **Suffixes change the part of speech.**
-2.  **-ач / -ець / -ник** = Person (Doer).
-3.  **-ння / -ття** = Process (Verbal Noun).
+2.  **-ач | -ець | -ник** = Person (Doer).
+3.  **-ння | -ття** = Process (Verbal Noun).
 4.  **-ість** = Abstract Concept (Quality).
-5.  **-ок / -ик / -ка** = Diminutive (Small/Cute).
+5.  **-ок | -ик | -ка** = Diminutive (Small/Cute).
 
 ---
 
@@ -510,29 +510,29 @@ To make things small or cute, we use suffixes:
 
 ## unjumble: Soft Talk
 
-1. сонечко / світить / яскраве
+1. сонечко | світить | яскраве
    > [!answer] Світить яскраве сонечко
-2. читає / дівчинка / книжечку
+2. читає | дівчинка | книжечку
    > [!answer] Дівчинка читає книжечку
-3. котик / молоко / п'є
+3. котик | молоко | п'є
    > [!answer] Котик п'є молоко
-4. ручечка / моя / де
+4. ручечка | моя | де
    > [!answer] Де моя ручечка
-5. маленький / має / будиночок / він
+5. маленький | має | будиночок | він
    > [!answer] Він має маленький будиночок
-6. красива / це / квіточка
+6. красива | це | квіточка
    > [!answer] Це красива квіточка
-7. у / братик / мене / є
+7. у | братик | мене | є
    > [!answer] У мене є братик
-8. водичку / п'є / пташка
+8. водичку | п'є | пташка
    > [!answer] Пташка п'є водичку
-9. матуся / моя / добра
+9. матуся | моя | добра
    > [!answer] Моя матуся добра
-10. тут / синок / мій
+10. тут | синок | мій
     > [!answer] Тут мій синок
-11. віконце / відкрий / маленьке
+11. віконце | відкрий | маленьке
     > [!answer] Відкрий маленьке віконце
-12. сестричка / грається / мала
+12. сестричка | грається | мала
     > [!answer] Мала сестричка грається
 
 ## quiz: Logic Check
@@ -558,7 +558,7 @@ To make things small or cute, we use suffixes:
    - [ ] Рада: Council
 
 5. Which suffix creates a **Male Doer**?
-   - [x] -ач / -ець
+   - [x] -ач | -ець
    - [ ] -ість
    - [ ] -ння
 
@@ -581,53 +581,53 @@ To make things small or cute, we use suffixes:
 
 > Fill in the missing nouns.
 
-У мене є [___:1] [Hint: question].
-Яке твоє [___:2] [Hint: life]?
-Моя [___:3] [Hint: youth] була цікава.
-Я любив [___:4] [Hint: reading].
-Я хотів бути [___:5] [Hint: writer].
-Але [___:6] [Hint: old age] прийшла швидко.
-Тепер я просто [___:7] [Hint: viewer] в театрі.
-Але це велика [___:8] [Hint: joy].
-Це моя [___:9] [Hint: responsibility].
-Це складне [___:10] [Hint: task].
-Де мій [___:11] [Hint: kitty]?
-Ось твоя [___:12] [Hint: book-diminutive].
+У мене є [___:1].
+Яке твоє [___:2]?
+Моя [___:3] була цікава.
+Я любив [___:4].
+Я хотів бути [___:5].
+Але [___:6] прийшла швидко.
+Тепер я просто [___:7] в театрі.
+Але це велика [___:8].
+Це моя [___:9].
+Це складне [___:10].
+Де мій [___:11]?
+Ось твоя [___:12].
 
-1. питання
+1. питання | питач | питанок
 > [!answer] питання
 
-2. життя
+2. життя | жити | живий
 > [!answer] життя
 
-3. молодість
+3. молодість | молодий | молодь
 > [!answer] молодість
 
-4. читання
+4. читання | читач | читка
 > [!answer] читання
 
-5. письменником
+5. письменником | писання | писар
 > [!answer] письменником
 
-6. старість
+6. старість | старий | старина
 > [!answer] старість
 
-7. глядач
+7. глядач | глядіння | гляд
 > [!answer] глядач
 
-8. радість
+8. радість | радий | радіння
 > [!answer] радість
 
-9. відповідальність
+9. відповідальність | відповідальний | відповідь
 > [!answer] відповідальність
 
-10. завдання
+10. завдання | завдавати | завда
 > [!answer] завдання
 
-11. котик
+11. котик | кіт | котяра
 > [!answer] котик
 
-12. книжечка
+12. книжечка | книга | книжок
 > [!answer] книжечка
 
 ## error-correction: Wrong Suffix

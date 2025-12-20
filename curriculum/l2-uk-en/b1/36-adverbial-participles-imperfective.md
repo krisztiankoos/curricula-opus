@@ -18,16 +18,9 @@ vocabulary_count: 20
 
 # Дієприслівники недоконаного виду
 
-
 > 🎯 **Чому це важливо**
 >
 > «Читаючи книгу, він пив каву» — дієприслівники недоконаного виду описують одночасні дії. Це елегантний спосіб уникнути простих речень і говорити як носій.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [У барі + Дієприслівник](https://www.youtube.com/watch?v=S3GgY9Fa8uk) - Adverbial participle introduction (ULP).
-> 📺 **Video:** [Adverbial Participle](https://www.youtube.com/watch?v=SRKqRpPzXnE) - Lesson by Odarka.
->
 
 ## Діагностика
 
@@ -359,6 +352,16 @@ Study these extended examples showing participles in natural contexts:
 - *Діти бігали двором, сміючись і граючись.* (The children ran around the yard, laughing and playing.)
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
 
 ## Практика
 
@@ -1111,8 +1114,6 @@ In this module, you learned to form and use **imperfective adverbial participles
 In the next module, you'll learn **perfective adverbial participles** — used for actions completed BEFORE the main verb (прочитавши = having read).
 
 ---
-
-
 
 ## Словник
 

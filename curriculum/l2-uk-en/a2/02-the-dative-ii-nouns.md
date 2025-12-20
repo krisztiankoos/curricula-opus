@@ -85,7 +85,7 @@ Ukrainian handles this grammatically through noun endings rather than prepositio
 
 | Nominative | Dative | English |
 |------------|--------|---------|
-| друг | другові / другу | to the friend |
+| друг | другові | другу | to the friend |
 | сестра | сестрі | to the sister |
 | місто | місту | to the city |
 
@@ -95,8 +95,8 @@ Masculine nouns have two possible endings: **-ові/-еві** for formal and li
 
 | Type | Nominative | Dative | Example Sentence |
 |------|------------|--------|------------------|
-| Hard consonant | друг | другові / другу | Я даю книгу другові. |
-| Hard consonant | брат | братові / брату | Вона телефонує брату. |
+| Hard consonant | друг | другові | другу | Я даю книгу другові. |
+| Hard consonant | брат | братові | брату | Вона телефонує брату. |
 | Soft -ь | вчитель | вчителеві | Ми показуємо роботу вчителеві. |
 | Soft -ь | хлопець | хлопцеві | Дівчина дарує квіти хлопцеві. |
 | -й | герой | героєві | Люди дякують героєві. |
@@ -592,27 +592,27 @@ The following activities will help you master Dative noun endings through variou
 ## unjumble: Dative Sentences
 > Put the words in the correct order.
 
-1. я / даю / книгу / другові
+1. я | даю | книгу | другові
    > [!answer] Я даю книгу другові
    > (I give a book to my friend.)
 
-2. вона / телефонує / мамі / щодня
+2. вона | телефонує | мамі | щодня
    > [!answer] Вона телефонує мамі щодня
    > (She calls mom every day.)
 
-3. ми / пишемо / листа / бабусі
+3. ми | пишемо | листа | бабусі
    > [!answer] Ми пишемо листа бабусі
    > (We write a letter to grandma.)
 
-4. він / допомагає / сестрі / з / уроками
+4. він | допомагає | сестрі | з | уроками
    > [!answer] Він допомагає сестрі з уроками
    > (He helps his sister with homework.)
 
-5. батько / дарує / квіти / мамі
+5. батько | дарує | квіти | мамі
    > [!answer] Батько дарує квіти мамі
    > (Father gives flowers to mom.)
 
-6. лікар / пояснює / діагноз / пацієнтові
+6. лікар | пояснює | діагноз | пацієнтові
    > [!answer] Лікар пояснює діагноз пацієнтові
    > (The doctor explains the diagnosis to the patient.)
 

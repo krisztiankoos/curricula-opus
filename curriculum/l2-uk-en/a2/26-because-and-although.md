@@ -59,7 +59,7 @@ This is the most neutral and common way to say "because".
 ### B. The Colloquial: Бо
 Short, snappy, and very Ukrainian. Use it in speech.
 - *Я йду спати, бо втомився.* (I'm going to sleep 'cause I'm tired.)
-- *Чому? — Бо так!* (Why? — Just because! / Cause I said so!)
+- *Чому? — Бо так!* (Why? — Just because! | Cause I said so!)
 
 ### C. The Formal/Logical: Оскільки
 Often starts a sentence. Sets up a logical premise.
@@ -73,7 +73,7 @@ To show contrast or overcoming an obstacle.
 - *Хоча він старий, він сильний.* (Although he is old, he is strong.)
 - *Я купив це, хоча це дорого.* (I bought this, although it is expensive.)
 
-### B. The Strong Contrast: Проте / Однак
+### B. The Strong Contrast: Проте | Однак
 These are formal and strong. **"Але"** implies a simple contrast, while **"Проте"** adds significantly more weight and formality to the statement.
 - *Це непросте завдання. Проте ми впораємося.* (This is not a simple task. However, we will handle it.)
 
@@ -182,7 +182,7 @@ Read this conversation between optimists and pessimists.
 ### Analysis
 1.  **Хоча..., зате...**: The classic balance. "Although cold, (at least) beautiful."
 2.  **Оскільки**: Establishing a logical reason ("Since I don't have boots...").
-3.  **Все-таки**: "Still / Nevertheless" — holding onto an opinion.
+3.  **Все-таки**: "Still | Nevertheless" — holding onto an opinion.
 
 > [!tip] Comma Rule
 > In Ukrainian, you almost ALWAYS put a comma before "тому що", "бо", "але", "хоча", "що", "який".
@@ -307,7 +307,7 @@ Don't forget the comma!
    - [ ] After the verb
 
 7. "Все-таки" means:
-   - [x] Still / After all / Nevertheless
+   - [x] Still | After all | Nevertheless
    - [ ] Because
    - [ ] Or
 
@@ -338,22 +338,22 @@ Don't forget the comma!
 
 ## unjumble: Build the Argument
 
-1. я / тому що / вдома / хворий / сиджу
+1. я | тому що | вдома | хворий | сиджу
    > [!answer] Я сиджу вдома, тому що хворий
 
-2. хоча / пішов / дощ / ми / гуляти
+2. хоча | пішов | дощ | ми | гуляти
    > [!answer] Хоча йшов дощ, ми пішли гуляти
 
-3. він / розумний / лінивий / але
+3. він | розумний | лінивий | але
    > [!answer] Він розумний, але лінивий
 
-4. дорога / зате / довга / красива
+4. дорога | зате | довга | красива
    > [!answer] Дорога довга, зате красива
 
-5. оскільки / ми / тут / почнемо
+5. оскільки | ми | тут | почнемо
    > [!answer] Оскільки ми тут, почнемо
 
-6. все-таки / я / правий / думаю / що
+6. все-таки | я | правий | думаю | що
    > [!answer] Я все-таки думаю, що правий
 
 ## group-sort: Cause vs Contrast
@@ -405,7 +405,7 @@ Don't forget the comma!
 
 7. "Все ж таки" emphasizes persistence of an opinion or fact.
    - [x] True
-   > "Still / Nevertheless".
+   > "Still | Nevertheless".
 
 8. You can end a sentence with "Бо" in casual speech.
    - [x] True
@@ -431,22 +431,22 @@ Don't forget the comma!
 Я отримав роботу [___:5] тому, що мій друг там працює.
 Тепер я працюю багато, [___:6] я щасливий.
 
-1. тому що / хоча
+1. тому що | хоча
 > [!answer] тому що
 
-2. Хоча / Тому що
+2. Хоча | Тому що
 > [!answer] Хоча
 
-3. зате / бо
+3. зате | бо
 > [!answer] зате
 
-4. Незважаючи на те що / Оскільки
+4. Незважаючи на те що | Оскільки
 > [!answer] Незважаючи на те що
 
-5. завдяки / через
+5. завдяки | через
 > [!answer] завдяки
 
-6. проте / оскільки
+6. проте | оскільки
 > [!answer] проте
 
 ## dialogue-reorder: Making Excuses
@@ -538,7 +538,7 @@ Don't forget the comma!
    - [ ] Хоча ми друзі, я допоможу.
 
 5. I did it just because.
-   - [x] Я зробив це просто так / бо так захотів.
+   - [x] Я зробив це просто так | бо так захотів.
    - [ ] Я зробив це проте.
 
 6. Thanks to you, we won.
@@ -576,27 +576,27 @@ Don't forget the comma!
 | Word | IPA | English | POS | Gender | Note |
 |------|-----|---------|-----|--------|------|
 | тому що | /tɔˈmu ʃt͡ʃɔ/ | because | conj | — | standard |
-| бо | /bɔ/ | because / 'cause | conj | — | colloquial |
-| оскільки | /ɔsˈkilʲkɪ/ | since / inasmuch as | conj | — | logical |
-| через те що | /ˈt͡ʃɛrɛz tɛ ʃt͡ʃɔ/ | due to / because | phrase | — | formal |
+| бо | /bɔ/ | because | 'cause | conj | — | colloquial |
+| оскільки | /ɔsˈkilʲkɪ/ | since | inasmuch as | conj | — | logical |
+| через те що | /ˈt͡ʃɛrɛz tɛ ʃt͡ʃɔ/ | due to | because | phrase | — | formal |
 | завдяки тому що | /zɑʋdʲɑˈkɪ tɔˈmu ʃt͡ʃɔ/ | thanks to the fact that | phrase | — | positive |
 | хоча | /xɔˈt͡ʃɑ/ | although | conj | — | contrast |
 | незважаючи на те що | /nɛzʋɑˈʒɑjut͡ʃɪ nɑ tɛ ʃt͡ʃɔ/ | despite the fact that | phrase | — | strong contrast |
 | проте | /prɔˈtɛ/ | however | conj | — | formal contrast |
-| однак | /ɔdˈnɑk/ | however / yet | conj | — | formal contrast |
+| однак | /ɔdˈnɑk/ | however | yet | conj | — | formal contrast |
 | але | /ɑˈlɛ/ | but | conj | — | simple contrast |
 | зате | /zɑˈtɛ/ | but (on the plus side) | conj | — | balance |
-| все-таки | /ˈʋsɛ tɑkɪ/ | still / nevertheless | particle | — | persistence |
-| все ж таки | /ˈʋsɛ ʒ tɑkɪ/ | still / nevertheless | particle | — | persistence |
+| все-таки | /ˈʋsɛ tɑkɪ/ | still | nevertheless | particle | — | persistence |
+| все ж таки | /ˈʋsɛ ʒ tɑkɪ/ | still | nevertheless | particle | — | persistence |
 | попри те що | /ˈpɔprɪ tɛ ʃt͡ʃɔ/ | in spite of the fact that | phrase | — | formal |
 | хоч і | /xɔt͡ʃ i/ | even though | conj | — | emphasis |
-| хай | /xɑj/ | let / may | particle | — | wish/command |
-| нехай | /nɛˈxɑj/ | let / may | particle | — | wish/command |
-| хоч би | /xɔt͡ʃ bɪ/ | if only / at least | particle | — | wish |
+| хай | /xɑj/ | let | may | particle | — | wish/command |
+| нехай | /nɛˈxɑj/ | let | may | particle | — | wish/command |
+| хоч би | /xɔt͡ʃ bɪ/ | if only | at least | particle | — | wish |
 | дарма що | /dɑrˈmɑ ʃt͡ʃɔ/ | even though (rare) | conj | — | literary |
 | якби не | /jɑkˈbɪ nɛ/ | if it weren't for | phrase | — | conditional |
-| причина | /prɪˈt͡ʃɪnɑ/ | reason / cause | noun | f | logic |
+| причина | /prɪˈt͡ʃɪnɑ/ | reason | cause | noun | f | logic |
 | наслідок | /ˈnɑsʲlidɔk/ | consequence | noun | m | logic |
 | вибір | /ˈʋɪbir/ | choice | noun | m | logic |
-| думка | /ˈdumkɑ/ | thought / opinion | noun | f | logic |
-| сперечатися | /spɛrɛˈt͡ʃɑtɪsʲɑ/ | to argue / debate | verb | — | action |
+| думка | /ˈdumkɑ/ | thought | opinion | noun | f | logic |
+| сперечатися | /spɛrɛˈt͡ʃɑtɪsʲɑ/ | to argue | debate | verb | — | action |

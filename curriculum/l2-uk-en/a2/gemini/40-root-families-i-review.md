@@ -14,7 +14,10 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 44.1% (target 40-55% (A2.2))
+- **Immersion:** 🇺🇦 45.6% (target 40-55% (A2.2))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -22,7 +25,7 @@
 | **Warm-up** | ✅ | 128 | Included in Core |
 | **Family 1: The Walkers (-ХІД-)** | ⚪️ | 28 | Skipped |
 | **Family 2: The Writers (-ПИС-)** | ⚪️ | 33 | Skipped |
-| **Family 3: Input (-ЧИТ- / -БАЧ-)** | ⚪️ | 121 | Skipped |
+| **Family 3: Input (-ЧИТ- | -БАЧ-)** | ⚪️ | 121 | Skipped |
 | **Deep Dive: Guessing Game** | ✅ | 86 | Included in Core |
 | **Deep Dive: The Power of 'Pere-'** | ✅ | 77 | Included in Core |
 | **Story Time: The City Walk** | ✅ | 134 | Included in Core |

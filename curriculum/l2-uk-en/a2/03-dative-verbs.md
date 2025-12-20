@@ -578,27 +578,27 @@ The following activities will help you master Dative verb patterns. Progress thr
 ## unjumble: Dative Verb Sentences
 > Put the words in the correct order.
 
-1. я / допомагаю / мамі / готувати / обід
+1. я | допомагаю | мамі | готувати | обід
    > [!answer] Я допомагаю мамі готувати обід
    > (I help mom cook lunch.)
 
-2. мені / подобається / ця / музика
+2. мені | подобається | ця | музика
    > [!answer] Мені подобається ця музика
    > (I like this music.)
 
-3. він / показує / другові / нову / машину
+3. він | показує | другові | нову | машину
    > [!answer] Він показує другові нову машину
    > (He shows his friend the new car.)
 
-4. вчитель / пояснює / учням / складне / правило
+4. вчитель | пояснює | учням | складне | правило
    > [!answer] Вчитель пояснює учням складне правило
    > (The teacher explains a complex rule to students.)
 
-5. я / дякую / тобі / за / допомогу
+5. я | дякую | тобі | за | допомогу
    > [!answer] Я дякую тобі за допомогу
    > (I thank you for the help.)
 
-6. ця / музика / заважає / мені / спати
+6. ця | музика | заважає | мені | спати
    > [!answer] Ця музика заважає мені спати
    > (This music prevents me from sleeping.)
 

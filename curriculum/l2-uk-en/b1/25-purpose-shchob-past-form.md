@@ -18,7 +18,6 @@ vocabulary_count: 20
 
 # Мета: щоб + минула форма
 
-
 > 🎯 **Чому це важливо**
 >
 > «Щоб + минулий час» виражає мету для різних суб'єктів. «Я прийшов, щоб ТИ зрозумів» — дві особи, дві дії. Це критична конструкція для складних побажань і прохань.
@@ -292,6 +291,16 @@ Using **щоб** constructions allows you to soften commands significantly. Comp
 | Different subjects | щоб + past form | Я хочу, щоб він прийшов |
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 

@@ -1,36 +1,40 @@
 # Audit Report: 10-aspect-checkpoint.md
-**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1500
+**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 800
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1620/1500
-- **Activities:** ✅ 12/12
-- **Density:** ✅ All > 14
+- **Words:** ✅ 1222/800
+- **Activities:** ✅ 12/10
+- **Density:** ✅ All > 12
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/5
+- **Engagement:** ✅ 3/3
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 20/20
+- **Vocab:** ✅ 20/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 46.7% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 67.3% (checkpoint - no gate)
+
+## MDX VALIDATION
+✅ No issues found
+
+## HTML VALIDATION
+✅ Renders correctly (11 interactive elements)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Діагностика** | ✅ | 0 | Included in Core |
-| **Pre-Test Self-Assessment** | ⚪️ | 152 | Skipped |
-| **Аналіз** | ✅ | 0 | Included in Core |
-| **Master Summary: The Complete Aspect System** | ✅ | 108 | Included in Core |
-| **Поглиблення** | ⚪️ | 0 | Skipped |
-| **Ваш прогрес / Your Learning Journey: Modules 01-09 Recap** | ⚪️ | 343 | Skipped |
-| **Final Analysis Text** | ⚪️ | 272 | Skipped |
-| **The Logic of Aspect: Viewing Time Differently** | ⚪️ | 351 | Skipped |
-| **Практика** | ⚪️ | 0 | Skipped |
-| **Final Preparation Exercises** | ⚪️ | 130 | Skipped |
+| **Контрольна точка: Вид** | ⚪️ | 23 | Skipped |
+| **Overview** | ⚪️ | 52 | Skipped |
+| **Skill 1: Process vs Result** | ⚪️ | 198 | Skipped |
+| **Skill 2: Past Tense Patterns** | ✅ | 171 | Included in Core |
+| **Skill 3: Negation Patterns** | ✅ | 159 | Included in Core |
+| **Skill 4: Imperative Patterns** | ✅ | 211 | Included in Core |
+| **Skill 5: Aspect in Narratives** | ✅ | 153 | Included in Core |
+| **Integration Challenge** | ⚪️ | 142 | Skipped |
 | **Summary** | ✅ | 0 | Included in Core |
-| **Success Criteria: How to Know You've Mastered Aspect** | ⚪️ | 264 | Skipped |
+| **Need More Practice?** | ⚪️ | 113 | Skipped |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **fill-in: Комплексний тест** | 🎮 | 14 | Activity (14 items, min 8) |
 | **match-up: Видові пари — повний список** | 🎮 | 14 | Activity (14 items, min 8) |
@@ -42,6 +46,6 @@
 | **cloze: Текст для аналізу** | 🎮 | 14 | Activity (14 items, min 6) |
 | **select: Фінальний вибір** | 🎮 | 14 | Activity (14 items, min 6) |
 | **translate: Фінальний переклад** | 🎮 | 14 | Activity (14 items, min 6) |
-| **dialogue-reorder: Aspect Mastery Conversation** | 🎮 | 6 | Activity (6 items, min 5) |
-| **mark-the-words: Checkpoint Review — Find Perfectives** | 🎮 | 14 | Activity (14 items, min 6) |
+| **dialogue-reorder: Курс українського виду** | 🎮 | 8 | Activity (8 items, min 5) |
+| **mark-the-words: Знайдіть доконаний вид** | 🎮 | 14 | Activity (14 items, min 6) |
 | **Словник** | ⚪️ | 0 | Skipped |

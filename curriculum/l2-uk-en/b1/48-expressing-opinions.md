@@ -18,19 +18,11 @@ vocabulary_count: 25
 
 # Висловлення думок
 
-
 > 🎯 **Чому це важливо**
 >
 > «На мою думку», «Я вважаю», «Мені здається» — висловлення думки — це більше, ніж «Я думаю». Різні конструкції передають різну впевненість і ввічливість.
 
-> [!resources] 🎧 External Resources
->
-> **YouTube:** [5 Phrases FOR expressing your OPINION in Ukrainian](https://www.youtube.com/watch?v=d_kS3-_m4hY) — bazikschool (На мою думку, Я вважаю, etc.)
->
-> **Grammar Guide:** [Ukrainian Lessons: Vocabulary](https://ukrainianlessons.com/vocabulary/) — Building your Ukrainian word bank
-
 ## Діагностика
-
 
 Read this discussion. Notice how each speaker expresses their opinion differently.
 
@@ -250,6 +242,16 @@ To sound professional in debates, use a structure. A common method is **PREP**: 
 > - **Отже,...** (Therefore/So...)
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Vocabulary & Culture:**
+> - 📺 [Україна з неба (Ukraine From Above)](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner aerial documentary
+> - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
+> - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
+> - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
 
 ## Практика
 

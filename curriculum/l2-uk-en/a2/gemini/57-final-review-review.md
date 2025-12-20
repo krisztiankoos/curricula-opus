@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1074/1000
+- **Words:** ✅ 1109/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 9/4 types
@@ -14,13 +14,16 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 58.3% (target 50-60% (A2.3))
+- **Immersion:** 🇺🇦 57.3% (target 50-60% (A2.3))
+
+## MDX VALIDATION
+✅ No issues found
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **A2 Final Review (Skills)** | ✅ | 0 | Included in Core |
-| **Warm-up** | ✅ | 48 | Included in Core |
+| **Warm-up** | ✅ | 83 | Included in Core |
 | **Reading Practice** | ✅ | 341 | Included in Core |
 | **Listening Simulation** | ⚪️ | 84 | Skipped |
 | **Writing Practice** | ⚪️ | 562 | Skipped |
@@ -33,7 +36,7 @@
 | **group-sort: Skill Sort** | 🎮 | 16 | Activity (16 items, min 8) |
 | **match-up: Definitions** | 🎮 | 12 | Activity (12 items, min 8) |
 | **unjumble: Final Sentences** | 🎮 | 12 | Activity (12 items, min 6) |
-| **mark-the-words: Final Check** | 🎮 | 16 | Activity (16 items, min 6) |
+| **mark-the-words: Final Check** | 🎮 | 15 | Activity (15 items, min 6) |
 | **dialogue-reorder: Goodbye A2** | 🎮 | 12 | Activity (12 items, min 5) |
 | **select: Fluency Test** | 🎮 | 12 | Activity (12 items, min 6) |
 | **Vocabulary** | ➖ | 0 | Excluded Type |

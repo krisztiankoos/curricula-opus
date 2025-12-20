@@ -18,17 +18,9 @@ vocabulary_count: 20
 
 # Пасивні дієприкметники минулого часу II
 
-
 > 🎯 **Чому це важливо**
 >
 > «Написано», «зроблено», «сказано» — короткі форми використовуються як присудки. «Все сказано» — лаконічно, потужно. Це мова оголошень, висновків і рішучих заяв.
-
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [How to form and use passive voice](https://www.youtube.com/watch?v=txDI2JzODFo) - Clear explanation of structure.
-> 📺 **Video:** [Practice with me the passive voice](https://www.youtube.com/watch?v=zsSqBE-iaNM) - Practice exercises.
-> 📺 **Video:** [Passive Voice practice](https://www.youtube.com/watch?v=khJ6GLWoYZ4) - Real-life examples.
->
 
 ## Діагностика
 
@@ -248,7 +240,6 @@ Many common Ukrainian expressions use short passive forms:
 **In casual speech:** Full forms are more common.
 **In formal/official writing:** Short forms dominate.
 
-
 ## Deeper Look: The Passive Voice of Manipulation
 
 Language is power. In the 20th century, the impersonal passive voice was often used to erase history.
@@ -329,6 +320,16 @@ Note: The *decision* (Ухвалили) triggers the short forms. Once recorded,
 
 ---
 
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Advanced Grammar:**
+> - 📺 [Adverbial Participle (Дієприслівник) Deep Dive](https://www.youtube.com/watch?v=S3GgY9Fa8uk) — Ukrainian Lessons
+> - 📺 [Passive Voice in Ukrainian: How to Use It](https://www.youtube.com/watch?v=txDI2JzODFo) — Ukrainian grammar
+> - 📺 [Passive Voice & Vocabulary Practice (A2-B1)](https://www.youtube.com/watch?v=khJ6GLWoYZ4) — bazikschool
+> - 📺 [Adverbial Participles with Odarka](https://www.youtube.com/watch?v=SRKqRpPzXnE) — Step-by-step formation guide
+
 ## Практика
 
 ### Dialogue: News Report
@@ -406,7 +407,6 @@ This is why bureaucrats love this form. It removes the person from the equation.
 > *(That hasn't been decided yet.)*
 
 ---
-
 
 ### Legal Protocol: The Language of Rules
 
@@ -1139,8 +1139,6 @@ Notice the progression. The discussion is active (*We heard, we spoke*), but the
 
 ---
 
-
-
 ---
 
 ## Підсумок
@@ -1157,8 +1155,6 @@ Notice the progression. The discussion is active (*We heard, we spoke*), but the
 Together with full forms (M39), you now have the complete passive participle system!
 
 ---
-
-
 
 ## Словник
 

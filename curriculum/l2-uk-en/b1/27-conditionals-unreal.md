@@ -22,11 +22,6 @@ vocabulary_count: 20
 >
 > Нереальні умови — це мова мрій, жалю та ввічливості. «Якби я мав гроші...», «Якби я знав раніше...», «Чи не могли б ви допомогти?» — ці конструкції з'являються в кожній розмові. Без них ви не зможете висловити бажання, домовитись про щось ввічливо або поділитися роздумами про минуле. Цей модуль навчить вас думати гіпотетично українською.
 
-> [!resources] 🎧 External Resources
->
-> 📺 **Video:** [Якби я мала крила орлині - Українська народна пісня](https://www.youtube.com/watch?v=4HOw1znM7Sc) - Folk song with \"якби\" (if I had) examples.
-> 📖 **Reading:** [Ukrainian Lessons: Conditionals](https://ukrainianlessons.com/conditionals/) - Guide to real and unreal conditionals.
-
 ## Діагностика
 
 ## What Are Unreal Conditionals?
@@ -277,6 +272,16 @@ When forming unreal conditionals, always remember the three-step pattern: якб
 The conditional mood in Ukrainian is remarkably versatile. Beyond hypothetical conditions, it expresses polite requests, wishes, suggestions, and regret. Mastering these forms significantly elevates your communication style and helps navigate social situations requiring tact and diplomacy.
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Activities
 
@@ -845,8 +850,6 @@ The conditional mood in Ukrainian is remarkably versatile. Beyond hypothetical c
 14. Він *би подорожував* щороку.
 
 ---
-
-
 
 ## Словник
 

@@ -18,15 +18,9 @@ vocabulary_count: 20
 
 # Непряма мова: питання та накази
 
-
 > 🎯 **Чому це важливо**
 >
 > «Він запитав, чи...», «Вона попросила, щоб...» — не лише твердження, а й питання та накази можна передавати непрямо. Цей модуль завершує систему непрямої мови.
-
-> [!resources] 🎧 External Resources
->
-> 📖 **Reading:** [Ukrainian Lessons: Reported Speech](https://ukrainianlessons.com/reported-speech/) - Converting direct to indirect speech.
->
 
 ## Діагностика
 
@@ -360,6 +354,16 @@ In business contexts, reported speech is the standard for meeting minutes (**п�
 4. **Pronouns shift** as in reported statements
 
 ---
+
+## Need More Practice?
+
+> [!resources] 🎧 External Resources
+>
+> **Complex Sentences:**
+> - 📖 [Relative Clauses: Який, Що, Хто](https://www.ukrainianlessons.com/relative-clauses/) — Grammar guide to complex sentence structures
+> - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
+> - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
+> - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
 
 ## Вправи
 
@@ -971,8 +975,6 @@ In business contexts, reported speech is the standard for meeting minutes (**п�
 14. Він цікавився, *звідки* я приїхав.
 
 ---
-
-
 
 ## Словник
 

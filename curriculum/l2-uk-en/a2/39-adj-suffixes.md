@@ -113,7 +113,7 @@ Use this for "made of" or "related to".
 | **Наук**а | Наук**ов**ий | Scientific | |
 | **Колір** | Кольор**ов**ий | Colorful | |
 | **Бізнес** | Бізнес**ов**ий | Business-related | |
-| **Життя** | Житт**єв**ий | Vital / Life-related | -ов becomes -єв after soft consonant |
+| **Життя** | Житт**єв**ий | Vital | Life-related | -ов becomes -єв after soft consonant |
 
 ## Machine 3: The Origin (-ськ-ий)
 
@@ -122,11 +122,11 @@ Use this for places, groups, and people.
 | Noun | Adjective | English | Note |
 | :--- | :--- | :--- | :--- |
 | **Україна** | Україн**ськ**ий | Ukrainian | |
-| **Міст**о | Мі**ськ**ий | Urban / City | ст -> ськ |
-| **Сел**о | Сіль**ськ**ий | Rural / Village | е -> і |
+| **Міст**о | Мі**ськ**ий | Urban | City | ст -> ськ |
+| **Сел**о | Сіль**ськ**ий | Rural | Village | е -> і |
 | **Люд**и | Люд**ськ**ий | Human | |
-| **Чоловік** | Чолові**ч**ий | Male / Men's | Exception: -чий here |
-| **Жінк**а | Жіно**ч**ий | Female / Women's | Exception: -чий here |
+| **Чоловік** | Чолові**ч**ий | Male | Men's | Exception: -чий here |
+| **Жінк**а | Жіно**ч**ий | Female | Women's | Exception: -чий here |
 
 > [!tip] Sound Mutations
 > When attaching suffixes, consonants often change to make pronunciation smoother:
@@ -317,11 +317,11 @@ A "Ukrainian book" is *Українська книга* (Fem), but a "Ukrainian 
 
 > Match the suffix to its typical meaning.
 
-- -ський :: Origin / Group
-- -овий :: Material / Relation
-- -енький :: Diminutive / Cute
+- -ський :: Origin | Group
+- -овий :: Material | Relation
+- -енький :: Diminutive | Cute
 - -ний :: General Quality
-- -ичний :: Academic / Science
+- -ичний :: Academic | Science
 - -яний :: Material (Wood/Glass)
 - -ній :: Soft ending (Time/Space)
 - -анський :: Origin (American/African)
@@ -473,17 +473,17 @@ A "Ukrainian book" is *Українська книга* (Fem), but a "Ukrainian 
 
 ## unjumble: Scientific Talk
 
-1. експеримент / це / хімічний
+1. експеримент | це | хімічний
    > [!answer] Це хімічний експеримент
-2. проблема / це / фізична
+2. проблема | це | фізична
    > [!answer] Це фізична проблема
-3. мапа / де / географічна
+3. мапа | де | географічна
    > [!answer] Де географічна мапа
-4. факт / це / історичний
+4. факт | це | історичний
    > [!answer] Це історичний факт
-5. рівняння / це / математичне
+5. рівняння | це | математичне
    > [!answer] Це математичне рівняння
-6. журнал / це / науковий
+6. журнал | це | науковий
    > [!answer] Це науковий журнал
 
 ## fill-in: City Vibes
@@ -568,53 +568,53 @@ A "Ukrainian book" is *Українська книга* (Fem), but a "Ukrainian 
 
 > Fill in the missing adjectives.
 
-Професор читає [___:1] [Hint: scientific] журнал.
-Він п'є [___:2] [Hint: hot] чай.
-Це [___:3] [Hint: working] день.
-У нього є [___:4] [Hint: mathematical] завдання.
-Він любить [___:5] [Hint: fresh] повітря.
-Він гуляє через [___:6] [Hint: old] парк.
-Це [___:7] [Hint: urban] парк.
-Він бачить [___:8] [Hint: little] пташку.
-Пташка співає [___:9] [Hint: musical] пісню.
-Життя таке [___:10] [Hint: colorful].
-Це [___:11] [Hint: physical] світ.
-Але і [___:12] [Hint: spiritual].
+Професор читає [___:1] журнал.
+Він п'є [___:2] чай.
+Це [___:3] день.
+У нього є [___:4] завдання.
+Він любить [___:5] повітря.
+Він гуляє через [___:6] парк.
+Це [___:7] парк.
+Він бачить [___:8] пташку.
+Пташка співає [___:9] пісню.
+Життя таке [___:10].
+Це [___:11] світ.
+Але і [___:12].
 
-1. науковий
+1. науковий | науцький | науковай
 > [!answer] науковий
 
-2. гарячий
+2. гарячий | гарячай | горячий
 > [!answer] гарячий
 
-3. робочий
+3. робочий | роботний | робучий
 > [!answer] робочий
 
-4. математичне
+4. математичне | математичний | математична
 > [!answer] математичне
 
-5. свіже
+5. свіже | свіжий | свіжа
 > [!answer] свіже
 
-6. старий
+6. старий | старійший | староватий
 > [!answer] старий
 
-7. міський
+7. міський | містовий | містичний
 > [!answer] міський
 
-8. маленьку
+8. маленьку | маленький | маленьке
 > [!answer] маленьку
 
-9. музичну
+9. музичну | музичний | музичне
 > [!answer] музичну
 
-10. кольорове
+10. кольорове | кольоровий | кольорова
 > [!answer] кольорове
 
-11. фізичний
+11. фізичний | фізиковий | фізицький
 > [!answer] фізичний
 
-12. духовний
+12. духовний | духовой | духівний
 > [!answer] духовний
 
 ## error-correction: Wrong Suffix

@@ -1,48 +1,56 @@
 # Audit Report: 43-checkpoint-word-formation.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Review" | **Target:** 1000
-**Overall Status:** ✅ PASS
+**Overall Status:** ❌ FAIL
+
+## PEDAGOGICAL VIOLATIONS
+- **[COMPLEXITY]** Sentence too long for A2: 20 words (max 15)
+  - FIX: Break into shorter sentences. First 5 words: 'перед бач ити важлив ість...'
+
+## Recommendation
+**📝 UPDATE** (severity 35/100)
+
+- Borderline case (severity 35/100)
+- 1 pedagogical violations (minor)
+- Activity count below minimum
+- Activity density below minimum
 
 ## Gates
-- **Words:** ✅ 1074/1000
-- **Activities:** ✅ 10/10
-- **Density:** ✅ All > 12
-- **Unique_types:** ✅ 9/4 types
+- **Words:** ❌ 714/1000
+- **Activities:** ❌ 8/10
+- **Density:** ❌ 1 < 12
+- **Unique_types:** ✅ 8/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 4/4
+- **Engagement:** ❌ 1/4
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 55.4% (checkpoint - no gate)
+- **Pedagogy:** ❌ 1 violations
+- **Immersion:** 🇺🇦 43.7% (checkpoint - no gate)
 
-## MDX VALIDATION
-✅ No issues found
+## Low Density Activities
+| Activity | Type | Items | Required | Fix |
+|----------|------|-------|----------|-----|
+| cloze: Complete the Words | cloze | 5 | 6 | Add 1 more items |
+
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
-| **Warm-up** | ✅ | 189 | Included in Core |
-| **Presentation** | ✅ | 0 | Included in Core |
-| **Prefix Review** | ✅ | 87 | Included in Core |
-| **Suffix Review** | ✅ | 38 | Included in Core |
-| **Root Family Review** | ✅ | 76 | Included in Core |
-| **Story Time: Урок Словотвору** | ✅ | 204 | Included in Core |
-| **Story Time Part 2: Практична Вправа** | ✅ | 146 | Included in Core |
-| **Student Testimonies** | ⚪️ | 115 | Skipped |
-| **Common Expressions** | ⚪️ | 0 | Skipped |
-| **Formation Patterns** | ✅ | 58 | Included in Core |
-| **Word Family Examples** | ⚪️ | 66 | Skipped |
-| **Summary** | ✅ | 95 | Included in Core |
+| **Checkpoint - Word Formation** | ➖ | 79 | Excluded Type |
+| **Skill 1: Verb Prefixes** | ⚪️ | 129 | Skipped |
+| **Skill 2: Noun Suffixes** | ⚪️ | 126 | Skipped |
+| **Skill 3: Adjective Suffixes** | ⚪️ | 111 | Skipped |
+| **Skill 4: Root Families** | ⚪️ | 121 | Skipped |
+| **Integration Challenge** | ⚪️ | 120 | Skipped |
+| **Summary** | ✅ | 28 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
-| **match-up: Comprehensive Review** | 🎮 | 12 | Activity (12 items, min 8) |
-| **fill-in: Mixed Review** | 🎮 | 8 | Activity (8 items, min 8) |
-| **quiz: Word Formation Review** | 🎮 | 8 | Activity (8 items, min 8) |
-| **cloze: Story Comprehension** | 🎮 | 6 | Activity (6 items, min 6) |
-| **unjumble: Word Formation Sentences** | 🎮 | 8 | Activity (8 items, min 6) |
-| **error-correction: Formation Mistakes** | 🎮 | 6 | Activity (6 items, min 6) |
-| **match-up: Root Families** | 🎮 | 8 | Activity (8 items, min 8) |
-| **group-sort: Word Parts** | 🎮 | 16 | Activity (16 items, min 8) |
+| **match-up: Word Formation Pairs** | 🎮 | 12 | Activity (12 items, min 8) |
+| **fill-in: Formation Test** | 🎮 | 12 | Activity (12 items, min 8) |
+| **quiz: Word Formation Quiz** | 🎮 | 12 | Activity (12 items, min 8) |
+| **group-sort: Word Parts** | 🎮 | 17 | Activity (17 items, min 8) |
 | **true-false: Formation Rules** | 🎮 | 12 | Activity (12 items, min 8) |
-| **translate: Mixed Words** | 🎮 | 8 | Activity (8 items, min 6) |
+| **unjumble: Word Formation** | 🎮 | 6 | Activity (6 items, min 6) |
+| **cloze: Complete the Words** | 🎮 | 5 | Activity (5 items, min 6) |
+| **translate: English to Ukrainian** | 🎮 | 12 | Activity (12 items, min 6) |
 | **Vocabulary** | ➖ | 0 | Excluded Type |

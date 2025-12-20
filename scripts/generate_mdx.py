@@ -974,11 +974,12 @@ def convert_callouts(content: str) -> str:
     while i < len(lines):
         line = lines[i]
 
-        # Check for callout start: > [!type]
-        callout_match = re.match(r'^>\s*\[!(\w+)\]\s*(.*)', line)
+        # Check for callout start: > [!type] (may have leading whitespace)
+        callout_match = re.match(r'^(\s*)>\s*\[!(\w+)\]\s*(.*)', line)
         if callout_match:
-            callout_type = callout_match.group(1).lower()
-            title_extra = callout_match.group(2).strip()
+            indent = callout_match.group(1)  # Preserve indentation for output
+            callout_type = callout_match.group(2).lower()
+            title_extra = callout_match.group(3).strip()
 
             config = CALLOUT_MAP.get(callout_type, {'type': 'note'})
             admon_type = config['type']
@@ -992,12 +993,17 @@ def convert_callouts(content: str) -> str:
             else:
                 title = callout_type.title()
 
-            # Collect callout content
+            # Collect callout content - check for continuation lines (indented blockquotes too)
             callout_lines = []
             i += 1
-            while i < len(lines) and lines[i].startswith('>'):
-                callout_lines.append(lines[i][1:].strip() if len(lines[i]) > 1 else '')
-                i += 1
+            while i < len(lines):
+                # Match continuation: optional whitespace + > + content
+                cont_match = re.match(r'^\s*>(.*)', lines[i])
+                if cont_match:
+                    callout_lines.append(cont_match.group(1).strip() if cont_match.group(1) else '')
+                    i += 1
+                else:
+                    break
 
             # Special handling for solution callouts - use HTML details for collapsible
             if callout_type == 'solution':

@@ -261,6 +261,15 @@ Beyond the main three, Ukrainian offers additional concessive expressions for va
 
 These alternative constructions add variety and nuance to your Ukrainian. «Всупереч» has a stronger sense of defiance than «попри», while «дарма що» is more conversational. «Тим не менше» and «а все ж таки» connect independent clauses rather than joining them grammatically.
 
+> 💡 **Memory Tip: The Three-Part System**
+>
+> Remember Ukrainian concessive constructions with this simple system:
+> - **Хоча** = "Although" = needs a VERB (like English "although he sleeps...")
+> - **Попри** = "Despite" = needs a NOUN (like English "despite rain...")
+> - **Незважаючи на** = "Notwithstanding" = formal version of попри, also needs NOUN
+>
+> When in doubt, convert your concessive phrase: "Despite tiredness" → "Although he was tired" and choose the right construction accordingly. This flexibility helps you express the same idea in multiple ways.
+
 ---
 
 ## Need More Practice?

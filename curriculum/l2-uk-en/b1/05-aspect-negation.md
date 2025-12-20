@@ -181,10 +181,10 @@ Negative commands (prohibitions) follow special rules:
 > 🌍 **Real World**
 >
 > Ukrainian parents commonly use both aspects with children:
-> - "Не бігай!" (impf) — Stop running! / Don't run! (general instruction)
-> - "Не впади!" (pf) — Don't fall! (warning about a specific danger)
-> - "Не торкайся!" (impf) — Don't touch! (ongoing prohibition)
-> - "Не зламай!" (pf) — Don't break it! (warning about this object)
+> - "Не бігай!" (недок.) — Stop running! / Don't run! (general instruction)
+> - "Не впади!" (док.) — Don't fall! (warning about a specific danger)
+> - "Не торкайся!" (недок.) — Don't touch! (ongoing prohibition)
+> - "Не зламай!" (док.) — Don't break it! (warning about this object)
 
 ### Заперечення в минулому — Past negation
 
@@ -719,7 +719,7 @@ Convert each positive command to a negative one with appropriate aspect:
   > Correct! "Навряд чи він прийде" = He's unlikely to come.
 
 - [ ] "Не говори!" and "Не скажи!" mean the same thing.
-  > Incorrect! "Не говори!" (impf) = don't talk; "Не скажи!" (pf) = don't accidentally tell.
+  > Incorrect! "Не говори!" (недок.) = don't talk; "Не скажи!" (док.) = don't accidentally tell.
 
 - [x] "Поки не" is followed by perfective.
   > Correct! "Поки не закінчу" = until I finish.

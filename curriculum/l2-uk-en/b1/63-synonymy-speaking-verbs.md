@@ -77,9 +77,9 @@ Ukrainian distinguishes precisely between different types of verbal communicatio
 
 | Дієслово | English | Core Function |
 |----------|---------|---------------|
-| казати (impf) | to say, tell | General speaking |
-| сказати (pf) | to say, tell | Completed utterance |
-| говорити (impf) | to speak, talk | Extended speaking |
+| казати | to say, tell | General speaking (недок.) |
+| сказати | to say, tell | Completed utterance (док.) |
+| говорити | to speak, talk | Extended speaking (недок.) |
 
 **Key Distinction:**
 
@@ -102,8 +102,8 @@ Ukrainian distinguishes precisely between different types of verbal communicatio
 
 > 💡 **Aspectual Pair**
 >
-> - **Казати** (impf) — ongoing/repeated saying
-> - **Сказати** (pf) — single completed saying
+> - **Казати** (недок.) — ongoing/repeated saying
+> - **Сказати** (док.) — single completed saying
 >
 > Compare:
 > - Він завжди **каже** правду. (He always tells the truth — habit)
@@ -317,7 +317,7 @@ Many speaking verbs are formed with prefixes that add meaning:
 | по- | completion | повідомити (inform completely) |
 | о- | around, announce | оголосити (announce around) |
 | за- | noting | зауважити (note, remark) |
-| під- | under, stress | підкреслити (underline) |
+| під- | under, stress | підкреслити — підкреслювати |
 | на- | onto, emphasis | наголосити (stress onto) |
 | пере- | across, convince | переконати (convince across) |
 
@@ -536,8 +536,8 @@ Study these contextual examples:
 
 | Українською | English |
 |-------------|---------|
-| казати | to say (impf) |
-| сказати | to say (pf) |
+| казати | to say (недок.) |
+| сказати | to say (док.) |
 | говорити | to speak |
 | розповідати | to tell, narrate |
 | повідомляти | to inform |
@@ -1148,7 +1148,7 @@ Study these contextual examples:
 
 | Слово | Переклад | Примітки |
 |-------|----------|----------|
-| казати | to say (impf) | General saying |
+| казати | to say (недок.) | General saying |
 | говорити | to speak, talk | Extended speaking |
 | розповідати | to tell, narrate | Stories, news |
 | повідомляти | to inform, report | Official info |

@@ -221,9 +221,9 @@ This checkpoint reviews skills from Modules 01-09:
 <details>
 <summary>Перевірити</summary>
 
-1. **працювала** = background (impf) / **зателефонував** = interruption (pf)
+1. **працювала** = background (недок.) / **зателефонував** = interruption (док.)
 2. **поснідав, поїхав** = sequence of completed actions (pf + pf)
-3. **шукав** = duration (impf) / **знайшов** = result (pf)
+3. **шукав** = duration (недок.) / **знайшов** = result (док.)
 4. **їхали, розмовляли** = two parallel backgrounds (impf + impf)
 
 </details>

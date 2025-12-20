@@ -478,7 +478,7 @@ This is simpler than English, where "I read books" and "I read a book" use the s
 > - [ ] Identify time markers that trigger perfective (раптом, одного разу, нарешті)?
 > - [ ] Identify time markers that trigger imperfective (часто, щодня, завжди)?
 > - [ ] Choose correct aspect based on whether an event was single or repeated?
-> - [ ] Use aspect correctly to set background (impf) vs advance action (pf) in stories?
+> - [ ] Use aspect correctly to set background (недок.) vs advance action (док.) in stories?
 >
 > If you checked all boxes, proceed to the next module.
 > If not, review the Analysis section and try the Practice activities again.

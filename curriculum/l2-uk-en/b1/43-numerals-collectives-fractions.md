@@ -239,6 +239,10 @@ Ukrainian folklore preserves ancient uses of numerals. These fixed phrases often
 > 📜 **Cultural Note: The Magic Number Three**
 > "Three" (три/троє) is a magic number in Ukrainian tales: **три сини** (three sons), **три спроби** (three attempts), **три дороги** (three roads). Narrative rhythm often relies on this "rule of three."
 
+> 💡 **Memory Tip: Quick Rules**
+>
+> When choosing between cardinal and collective numerals, use this simple decision tree: Is the noun a pluralia tantum (ножиці, штани, двері)? If yes, always use collective (троє ножиць). If no, is it a group of people? If yes, prefer collective (четверо друзів). Otherwise, use cardinal (три яблука). This three-step process covers nearly all cases you will encounter.
+
 ---
 
 ## Need More Practice?

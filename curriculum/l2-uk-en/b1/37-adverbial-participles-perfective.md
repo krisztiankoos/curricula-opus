@@ -1077,8 +1077,8 @@ One of the most powerful features of perfective participles is their ambiguity. 
 - Key semantic roles: sequence, cause, condition
 
 **Compare with Module 36:**
-- **-ючи/-ачи** (impf) = WHILE doing (simultaneous)
-- **-вши/-ши** (pf) = HAVING DONE (sequential)
+- **-ючи/-ачи** (недок.) = WHILE doing (simultaneous)
+- **-вши/-ши** (док.) = HAVING DONE (sequential)
 
 In the next module, you'll learn about **active participles** — forms like "читаючий" (the reading one) and when to avoid them in natural Ukrainian speech!
 

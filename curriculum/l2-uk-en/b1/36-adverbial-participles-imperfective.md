@@ -277,8 +277,8 @@ To negate an adverbial participle, add **не** directly before it:
 > 
 > | ❌ Wrong | ✅ Correct |
 > |----------|-----------|
-> | прочитаючи | While reading = **читаючи** (impf) |
-> | написаючи | While writing = **пишучи** (impf) |
+> | прочитаючи | While reading = **читаючи** (недок.) |
+> | написаючи | While writing = **пишучи** (недок.) |
 > 
 > For completed actions BEFORE the main verb, use perfective adverbial participles (next module!).
 

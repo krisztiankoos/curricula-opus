@@ -764,13 +764,15 @@ The C2 curriculum represents **mastery** — operating at native-speaker level w
 ---
 
 #### Module 20: C2.1 Checkpoint
-**Grammar:** Assessment of C2.1 competencies
+**Covers:** M01-19
 
-**Assessment Components:**
-- Style identification test
-- Transformation exercise
-- Original writing in assigned style
-- Oral style flexibility
+**Required Skill Groups:**
+1. Style System (M01-09) - all 7 functional styles including religious & epistolary
+2. Style Transformation (M10-11) - academic→popular, official→journalistic
+3. Stylistic Analysis (M12-13) - lexical & syntactic stylistics
+4. Individual Voice (M14-15) - personal style development
+5. Text Coherence (M16) - seamless flow techniques
+6. Integration Practice (M17-19) - portfolio, transformation exercises
 
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, екзамен, контроль, перевірка, бал, результат, критерій, стандарт, рівень

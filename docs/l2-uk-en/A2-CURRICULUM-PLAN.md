@@ -667,14 +667,15 @@ By module 50, learners can:
 
 #### Module 11: Checkpoint - Cases A2.1
 
-**Review of:** Modules 01-10
+**Covers:** M01-10
 
-**Assessment areas:**
-1. Dative pronouns and nouns
-2. Instrumental endings (with/without preposition)
-3. Preposition + case combinations (Spatial & Logical)
-4. All 7 cases in context
-5. Service interactions (post/bank)
+**Required Skill Groups:**
+1. Dative Case Pronouns (M01) - мені, тобі, йому, їй
+2. Dative Case Nouns (M02-03) - другові, сестрі + dative verbs
+3. Instrumental: Accompaniment (M04) - з другом, з сестрою
+4. Instrumental: Means & Tools (M05-06) - автобусом, ручкою, бути лікарем
+5. Preposition + Case Combinations (M07-08) - spatial & logical prepositions
+6. Service Interactions (M09-10) - post/bank vocabulary with all cases
 
 **Vocabulary (10 words):** Review selection
 
@@ -1061,14 +1062,17 @@ By module 50, learners can:
 
 #### Module 24: Checkpoint - Aspect & Comparison
 
-**Review of:** Modules 12-23
+**Covers:** M12-23
 
-**Assessment areas:**
-1. Aspect pairs and usage (Past/Future)
-2. Comparison (Adjectives/Adverbs)
-3. Possessive 'свій'
-4. Numeral agreement (1, 2-4, 5+)
-5. Conditional constructions
+**Required Skill Groups:**
+1. Aspect Concept & Pairs (M12) - imperfective vs perfective
+2. Perfective in Past (M13) - completed actions, result focus
+3. Perfective in Future (M14) - promises, plans
+4. Aspect Morphology (M15-16) - prefixes, aspect pair drills
+5. Reflexive Possessive 'свій' (M17) - свій vs його/її
+6. Comparative & Superlative (M18-20) - більший, найкращий, structures
+7. Numeral-Noun Agreement (M21) - 1, 2-4, 5+ patterns
+8. Conditional Constructions (M22) - якщо, якби
 
 **Vocabulary (10 words):** Review selection
 
@@ -1347,16 +1351,18 @@ By module 50, learners can:
 
 #### Module 34: Checkpoint - Complex Ideas
 
-**Review of:** Modules 25-33
+**Covers:** M25-33
 
-**Assessment areas:**
-1. Sequence and storytelling
-2. Causal and concessive clauses
-3. Reported speech
-4. Opinion and emotion expressions
-5. Purpose and relative clauses
-6. Time clauses
-7. Medical vocabulary
+**Required Skill Groups:**
+1. Sequence & Storytelling (M25) - потім, тоді, нарешті
+2. Causal Clauses (M26) - тому що, бо, оскільки
+3. Concessive Clauses (M27) - хоча, проте
+4. Purpose Clauses (M28) - щоб + infinitive/past
+5. Relative Clauses (M29) - який, яка, яке, які
+6. Time Clauses (M30) - коли, поки, після того як
+7. Reported Speech (M31) - сказав, що...; запитав, чи...
+8. Opinion & Emotion (M32) - думаю, що...; радий, що...
+9. Medical Vocabulary (M33) - symptoms, remedies
 
 **Vocabulary (10 words):** Review selection
 
@@ -1610,14 +1616,15 @@ By module 50, learners can:
 
 #### Module 43: Checkpoint - Word Formation
 
-**Review of:** Modules 35-42
+**Covers:** M35-42
 
-**Assessment areas:**
-1. Motion verb prefixes (Basic & Advanced)
-2. Action verb prefixes
-3. Noun & Adjective suffixes
-4. Root family recognition
-5. Complex derivation
+**Required Skill Groups:**
+1. Motion Verb Prefixes Basic (M35) - при-, ви-, в-/у-
+2. Motion Verb Prefixes Advanced (M36) - пере-, об-, про-
+3. Action Verb Prefixes (M37-38) - з-, на-, по-, ви-, пере-
+4. Noun-Forming Suffixes (M39) - -ість, -ння, -ач/-ець
+5. Adjective-Forming Suffixes (M40) - -ний, -овий, -ивий
+6. Root Families (M41-42) - рід-, світ-, земл-, міст-
 
 **Vocabulary (10 words):** Review selection
 
@@ -1734,20 +1741,20 @@ By module 50, learners can:
 
 **Module 55: Checkpoint - Vocabulary Expansion**
 
-**Review of:** Modules 44-54
+**Covers:** M44-54
 
-**Assessment areas:**
-1. Food & Cooking vocabulary
-2. Home & Furniture vocabulary
-3. Nature & Weather vocabulary
-4. Emotions & Personality vocabulary
-5. Work & Professions vocabulary
-6. Technology & Media vocabulary
-7. Hobbies & Leisure vocabulary
-8. Education & Learning vocabulary
-9. Shopping & Services vocabulary
-10. Sports & Fitness vocabulary
-11. Health & Body vocabulary
+**Required Skill Groups:**
+1. Food & Cooking (M44) - ingredients, cooking verbs
+2. Home & Furniture (M45) - rooms, items, descriptions
+3. Nature & Weather (M46) - seasons, weather, landscape
+4. Emotions & Personality (M47) - feelings, character traits
+5. Work & Professions (M48) - jobs, workplace vocabulary
+6. Technology & Media (M49) - devices, internet, media
+7. Hobbies & Leisure (M50) - activities, interests
+8. Education & Learning (M51) - school, university, exams
+9. Shopping & Services (M52) - stores, transactions
+10. Sports & Fitness (M53) - activities, equipment
+11. Health & Body (M54) - body systems, symptoms, treatment
 
 **CEFR Can-Do Alignment:**
 - [ ] Can describe daily activities using domain-specific vocabulary

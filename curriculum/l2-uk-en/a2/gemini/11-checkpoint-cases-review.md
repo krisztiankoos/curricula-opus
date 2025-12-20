@@ -1,42 +1,31 @@
 # Audit Report: 11-checkpoint-cases.md
 **Phase:** A2 | **Level:** A2 | **Pedagogy:** "Review" | **Target:** 1000
-**Overall Status:** ❌ FAIL
-
-## PEDAGOGICAL VIOLATIONS
-- **[METALANGUAGE]** Metalanguage terms used but not in vocabulary: час
-  - FIX: Add these grammar terms to vocabulary with translations, or use English equivalents.
-
-## Recommendation
-**📝 UPDATE** (severity 30/100)
-
-- Borderline case (severity 30/100)
-- 1 pedagogical violations (minor)
-- Vocabulary count below minimum
+**Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ❌ 860/1000
+- **Words:** ✅ 1196/1000
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ❌ 1/4
+- **Engagement:** ✅ 4/4
 - **Audio:** ℹ️ No audio
-- **Vocab:** ❌ 20 < 25
+- **Vocab:** ✅ 27/25
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
-- **Pedagogy:** ❌ 1 violations
-- **Immersion:** 🇺🇦 45.8% (checkpoint - no gate)
+- **Pedagogy:** ✅ Level-appropriate
+- **Immersion:** 🇺🇦 44.5% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Checkpoint - Cases** | ➖ | 126 | Excluded Type |
 | **Skill 1: Dative Case** | ⚪️ | 160 | Skipped |
-| **Skill 2: Instrumental Case** | ⚪️ | 149 | Skipped |
+| **Skill 2: Instrumental Case** | ⚪️ | 253 | Skipped |
 | **Skill 3: Prepositions + Cases** | ⚪️ | 109 | Skipped |
-| **Skill 4: Service Vocabulary** | ➖ | 140 | Excluded Type |
+| **Skill 4: Service Vocabulary** | ➖ | 297 | Excluded Type |
 | **Integration Challenge** | ⚪️ | 147 | Skipped |
-| **Summary** | ✅ | 29 | Included in Core |
+| **Summary** | ✅ | 104 | Included in Core |
 | **Activities** | ➖ | 0 | Excluded Type |
 | **match-up: Case Questions** | 🎮 | 12 | Activity (12 items, min 8) |
 | **fill-in: Case Selection** | 🎮 | 12 | Activity (12 items, min 6) |

@@ -1,20 +1,20 @@
 # Audit Report: 45-checkpoint-advanced-grammar.md
-**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1500
+**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 800
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 2251/1500
-- **Activities:** ✅ 12/12
-- **Density:** ✅ All > 14
+- **Words:** ⚠️ 2332/800 (>1800 may be too long)
+- **Activities:** ✅ 12/10
+- **Density:** ✅ All > 12
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/5
+- **Engagement:** ✅ 6/3
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 20/20
+- **Vocab:** ✅ 20/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 58.9% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 58.6% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,6 +23,7 @@
 | **Діагностика** | ✅ | 428 | Included in Core |
 | **Аналіз** | ✅ | 540 | Included in Core |
 | **Поглиблення** | ⚪️ | 576 | Skipped |
+| **Need More Practice?** | ⚪️ | 56 | Skipped |
 | **Практика** | ⚪️ | 454 | Skipped |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **Remediation Guidance** | ⚪️ | 70 | Skipped |

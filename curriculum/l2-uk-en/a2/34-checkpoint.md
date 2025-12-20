@@ -67,11 +67,11 @@ vocabulary_count: 30
 
 ### Practice: Choose the Connector
 
-1. Я не їм, ___ не голодний. (cause)
+1. Я не їм, ___ не голодний. (причина)
 > [!solution] Перевірити
 > тому що — explains the reason
 
-2. Я їм, ___ не голодний. (contrast)
+2. Я їм, ___ не голодний. (контраст)
 > [!solution] Перевірити
 > хоча — eating despite not being hungry
 
@@ -81,9 +81,19 @@ vocabulary_count: 30
 
 ### Self-Check
 
-- Do you know the difference: тому що (cause) vs хоча (contrast)?
+- Do you know the difference: тому що (причина) vs хоча (контраст)?
 - Can you use щоб for purpose ("in order to")?
 - Can you form logical complex sentences?
+
+> [!myth-buster] 🔍 Myth Buster
+>
+> **Myth:** "Ukrainian 'borrowed' connectors from Russian."
+>
+> **Truth:** Connectors like **тому що**, **хоча**, and **щоб** come from Old Ukrainian and Proto-Slavic. The form **щоб** preserved the original Slavic subjunctive particle that Russian changed. When you say "Щоб знати!", you're speaking authentic Ukrainian!
+
+> [!history-bite] 📜 History Bite
+>
+> **Storytelling saved Ukrainian!** During the Valuev Circular (1863), oral storytelling kept complex sentence structures alive. Kobzars used **Спочатку... Потім... Нарешті...** to tell epic tales of Ukrainian heroes, preserving our narrative grammar despite the ban on printed Ukrainian.
 
 ---
 
@@ -117,7 +127,7 @@ vocabulary_count: 30
 > [!solution] Перевірити
 > Спочатку — starting the narrative
 
-2. ___ я снідав, телефон дзвонив. (while)
+2. ___ я снідав, телефон дзвонив. (одночасно)
 > [!solution] Перевірити
 > Поки — simultaneous actions
 
@@ -128,8 +138,15 @@ vocabulary_count: 30
 ### Self-Check
 
 - Can you use Спочатку... Потім... Нарешті to structure a story?
-- Do you know the difference: Поки (while) vs Після того як (after)?
+- Do you know the difference: Поки (одночасно) vs Після того як (послідовність)?
 - Can you tell your morning routine using time markers?
+
+> [!note] 📝 Time Marker Memory Aid
+>
+> Think of your morning routine:
+> - **Спочатку** я встав... (First I got up...)
+> - **Потім** я поснідав... (Then I had breakfast...)
+> - **Нарешті** я пішов... (Finally I left...)
 
 ---
 
@@ -197,8 +214,8 @@ vocabulary_count: 30
 | Plural | які | які/яких | яких |
 
 **Що vs Який:**
-- **Що** = that (conjunction): Я знаю, **що** ти тут.
-- **Який** = which (pronoun): Хлопець, **який** тут.
+- **Що** = сполучник: Я знаю, **що** ти тут.
+- **Який** = займенник: Хлопець, **який** тут.
 
 ### Practice: Choose the Form
 
@@ -217,8 +234,16 @@ vocabulary_count: 30
 ### Self-Check
 
 - Can you choose the right form of який based on gender and case?
-- Do you know the difference: що (conjunction) vs який (pronoun)?
+- Do you know the difference: що (сполучник) vs який (займенник)?
 - Can you describe nouns: людина, яка..., книга, яку..., місто, в якому...?
+
+> [!warning] ⚠️ Common Mistake
+>
+> Don't confuse:
+> - **Що** = that (fact): "Я знаю, **що** ти тут."
+> - **Щоб** = so that (purpose): "Я вчусь, **щоб** знати."
+>
+> One letter makes a big difference!
 
 ---
 
@@ -289,6 +314,15 @@ Read this story and identify the grammar points:
 >
 > «Повторення — мати навчання.»
 > *Translation: "Repetition is the mother of learning."*
+
+> [!tip] 🎯 Pro Tip: Connector Practice
+>
+> Practice connectors in pairs:
+> - **Тому що** ↔ **Хоча** (cause vs contrast)
+> - **Що** ↔ **Щоб** (fact vs purpose)
+> - **Поки** ↔ **Після того як** (during vs after)
+>
+> Create your own sentences with each pair to master the differences!
 
 ---
 
@@ -415,7 +449,7 @@ Read this story and identify the grammar points:
 
 7. "Поки" is used for:
 
-- [x] Simultaneous actions (while)
+- [x] Simultaneous actions (одночасні дії)
 - [ ] Sequence (after)
 - [ ] Purpose (in order to)
 
@@ -544,6 +578,7 @@ Read this story and identify the grammar points:
 [___:3] я снідав, я читав газету.
 [___:4] я поїв, я пішов на роботу.
 [___:5] я прийшов на зустріч.
+Я був радий, [___:6] встиг вчасно.
 
 1. Спочатку | Потім | Нарешті
 > [!answer] Спочатку
@@ -559,6 +594,9 @@ Read this story and identify the grammar points:
 
 5. Нарешті | Спочатку | Потім
 > [!answer] Нарешті
+
+6. п'ятій | п'ять | п'ятою
+> [!answer] п'ятій
 
 ## dialogue-reorder: At the Office
 

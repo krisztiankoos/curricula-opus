@@ -1,27 +1,29 @@
 # Audit Report: 55-checkpoint-i.md
-**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1500
-**Overall Status:** ❌ FAIL
+**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 800
+**Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ❌ 1466/1500
-- **Activities:** ✅ 13/12
-- **Density:** ✅ All > 14
+- **Words:** ✅ 1550/800
+- **Activities:** ✅ 13/10
+- **Density:** ✅ All > 12
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 5/5
+- **Engagement:** ✅ 6/3
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 30/30
+- **Vocab:** ✅ 30/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 64.8% (target 60-65% (B1.5-6 Vocab))
+- **Immersion:** 🇺🇦 64.2% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Контрольна точка I** | ⚪️ | 24 | Skipped |
 | **Діагностика** | ✅ | 159 | Included in Core |
 | **Аналіз** | ✅ | 848 | Included in Core |
 | **Поглиблення** | ⚪️ | 293 | Skipped |
+| **Need More Practice?** | ⚪️ | 60 | Skipped |
 | **Практика** | ⚪️ | 55 | Skipped |
 | **Підсумок** | ✅ | 111 | Included in Core |
 | **Вправи** | ⚪️ | 0 | Skipped |

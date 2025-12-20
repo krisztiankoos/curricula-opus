@@ -24,7 +24,7 @@ objectives:
 vocabulary_count: 25
 ---
 
-# Checkpoint - Vocabulary Expansion
+# Checkpoint - A2 Final Review
 
 **Вітаємо!** Ви закінчили A2! This checkpoint reviews all vocabulary from Modules 44-54.
 
@@ -88,6 +88,16 @@ vocabulary_count: 25
 - Do you know room names: кухня, спальня, вітальня, ванна?
 - Can you talk about hobbies: подорожувати, малювати, грати?
 
+> [!myth-buster] 🔍 Myth Buster
+>
+> **Myth:** "Ukrainian daily vocabulary is just like Russian."
+>
+> **Truth:** While some words overlap due to shared Slavic origins, Ukrainian has unique daily vocabulary. For example, **вітальня** (living room), **снідати** (breakfast), and **вечеряти** (dinner) showcase Ukrainian's distinct lexicon!
+
+> [!history-bite] 📜 History Bite
+>
+> **Home vocabulary survived!** During Russification, Ukrainian families preserved household words orally. Words like **хата** (traditional house), **світлиця** (bright room), and **горище** (attic) remained in use for generations, keeping Ukrainian alive in the home.
+
 ---
 
 ## Skill 2: Work & Education
@@ -135,6 +145,15 @@ vocabulary_count: 25
 - Can you use "працювати + Instrumental" for professions?
 - Do you know the difference: вчитися (be a student) vs вивчати (learn subject)?
 - Can you name 5 professions in Ukrainian?
+
+> [!tip] 🎯 Pro Tip: Profession Formula
+>
+> **Працювати + Instrumental** is the key formula!
+> - Працювати + **лікарем** = work as a doctor
+> - Працювати + **вчителькою** = work as a teacher
+> - Працювати + **програмістом** = work as a programmer
+>
+> Never use Nominative after "працювати"!
 
 ---
 
@@ -184,6 +203,18 @@ vocabulary_count: 25
 - Do you know body parts: голова, горло, рука, нога?
 - Can you describe symptoms and ask for medicine?
 
+> [!note] 📝 Health Expression Patterns
+>
+> **Pattern 1:** У мене болить + NOMINATIVE
+> - У мене болить **голова** (NOT голову!)
+>
+> **Pattern 2:** Мені + ADVERB
+> - Мені **погано** (I feel bad)
+> - Мені **холодно** (I'm cold)
+>
+> **Pattern 3:** Я + VERB
+> - Я **застудився** (I caught a cold)
+
 ---
 
 ## Skill 4: Shopping & Travel
@@ -231,6 +262,13 @@ vocabulary_count: 25
 - Can you ask prices and pay in Ukrainian?
 - Do you know: гроші, картка, чек, знижка?
 - Can you book travel: квиток, поїзд, готель, літак?
+
+> [!warning] ⚠️ Common Shopping Mistake
+>
+> Don't say: "Скільки це коштує" (missing question mark intonation)
+> Say: "Скільки це коштує?" with rising intonation!
+>
+> Also: "Можна заплатити **карткою**?" (Instrumental!) NOT "картку"!
 
 ---
 
@@ -574,6 +612,40 @@ Read the story and answer the questions:
 > 4. Яка у вас температура?
 > 5. 37.5.
 > 6. Це застуда. Вам треба пити чай.
+
+## unjumble: Daily Routines
+
+1. прокидаюся | я | Вранці | о | 7:00
+   > [!answer] Вранці я прокидаюся о 7:00
+
+2. програмістом | Він | працює
+   > [!answer] Він працює програмістом
+
+3. голова | У | болить | мене
+   > [!answer] У мене болить голова
+
+4. карткою | Можна | заплатити
+   > [!answer] Можна заплатити карткою
+
+5. університеті | вчиться | в | Вона
+   > [!answer] Вона вчиться в університеті
+
+6. де | аптека | тут | Де
+   > [!answer] Де тут аптека
+
+## mark-the-words: Find the Vocabulary
+
+Click on the key vocabulary words.
+
+Вранці я [прокидаюся](correct) о 7:00 і йду до [кухні](correct), щоб [снідати](correct).
+
+---
+
+Моя сестра [працює](correct) [лікаркою](correct). Вона [вчилася](correct) в [університеті](correct) 6 років.
+
+---
+
+У мене болить [голова](correct) і [горло](correct). Де тут [аптека](correct)?
 
 ## translate: English to Ukrainian
 

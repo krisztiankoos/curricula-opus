@@ -1147,15 +1147,16 @@ Participles agree with noun in gender, number, case:
 ---
 
 #### Module 30: B2.1 Checkpoint
-**Review of:** Modules 01-29
+**Covers:** M01-29
 
-**Assessment Areas:**
-1. Passive voice forms (all 4 types)
-2. Participle recognition
-3. Complex sentence structure
-4. Register identification and use
-5. Domain vocabulary (politics, law, economics)
-6. Stylistic connectors and parentheticals
+**Required Skill Groups:**
+1. Passive Voice System (M01-06) - all 4 forms, register selection
+2. Active Participles (M07-08) - -учий/-ючий, -лий recognition
+3. Passive Participles (M02-03) - -ний/-тий, -но/-то production
+4. Adverbial Participles (M10) - complex constructions
+5. Multi-clause Sentences (M11-14) - nested, parentheticals, connectors
+6. Register System (M15-24) - all 5 functional styles
+7. Domain Vocabulary (M26-29) - politics, law, economics
 
 **Vocabulary (10 words):** Review consolidation
 
@@ -2330,15 +2331,14 @@ Participles agree with noun in gender, number, case:
 ---
 
 #### Module 70: B2.2 Checkpoint
-**Review of:** Modules 31-59
+**Covers:** M41-69
 
-**Assessment Areas:**
-1. Proverb recognition and use
-2. Set expression application
-3. Idiom comprehension
-4. Synonym selection
-5. Conjunction usage
-6. Overall phraseological competence
+**Required Skill Groups:**
+1. Proverb Categories (M41-50) - wisdom, work, nature, family, animal, body
+2. Set Expressions (M51-55) - idioms, collocations, phrasal units
+3. Synonym & Nuance (M56-60) - semantic fields, register variation
+4. Advanced Conjunctions (M61-65) - causal, concessive, complex
+5. Phraseological Integration (M66-69) - natural use in context
 
 **Assessment Format:**
 1. Quiz: Complete proverbs/idioms

@@ -24,7 +24,7 @@ objectives:
   - "Learner can use instrumental case correctly"
   - "Learner can combine prepositions with correct cases"
   - "Learner can apply cases in service contexts"
-vocabulary_count: 20
+vocabulary_count: 27
 ---
 
 # Checkpoint - Cases
@@ -123,8 +123,18 @@ Complete with the correct instrumental form:
 ### Self-Check
 
 - Can you form instrumental of common nouns?
-- Do you know instrumental endings: -ом/-ем (masc), -ою/-ею (fem)?
+- Do you know instrumental endings: -ом/-ем (ч.р.), -ою/-ею (ж.р.)?
 - Can you use spatial prepositions: над столом, під ліжком?
+
+> [!myth-buster] 🔍 Myth Buster
+>
+> **Myth:** "Ukrainian cases are just like Russian cases."
+>
+> **Truth:** While both languages have 7 cases, Ukrainian preserved the **Vocative case** (кличний відмінок) in full active use: **Мамо! Друже! Україно!** Russian lost vocative centuries ago, using nominative instead. When you say "Друже!", you're speaking authentic Ukrainian — not a "dialect" of anything!
+
+> [!history-bite] 📜 History Bite
+>
+> **The Ems Ukaz (1876)**: Tsar Alexander II banned Ukrainian-language education and publications. The goal? Destroy Ukrainian grammar, including our beautiful case system. They failed. Today, millions learn "Я даю книгу **другові**" — Dative case alive and thriving!
 
 ---
 
@@ -152,15 +162,15 @@ Complete with the correct instrumental form:
 
 1. Я йду ___ магазину (до).
 > [!solution] Перевірити
-> до магазину (Genitive) — motion TO
+> до магазину (Р.в.) — motion TO
 
 2. Книга ___ столі (на).
 > [!solution] Перевірити
-> на столі (Locative) — location ON
+> на столі (М.в.) — location ON
 
 3. Кава без ___ (цукор).
 > [!solution] Перевірити
-> без цукру (Genitive) — without
+> без цукру (Р.в.) — without
 
 ### Self-Check
 
@@ -177,34 +187,57 @@ Complete with the correct instrumental form:
 ### Model: At the Post Office and Bank
 
 > **На пошті:**
-> Я хочу **відправити листа** (Accusative — direct object).
-> Посилка **з України** (Genitive — origin).
-> Дайте, будь ласка, **квитанцію** (Accusative).
+> Я хочу **відправити листа** (Зн.в. — прямий об'єкт).
+> Посилка **з України** (Р.в. — походження).
+> Дайте, будь ласка, **квитанцію** (Зн.в.).
 
 > **У банку:**
-> Я хочу **зняти гроші** (Accusative — direct object).
-> Платити **карткою** (Instrumental — means).
-> Сто **гривень** (Genitive — quantity after a number).
+> Я хочу **зняти гроші** (Зн.в. — прямий об'єкт).
+> Платити **карткою** (Ор.в. — засіб).
+> Сто **гривень** (Р.в. — кількість після числа).
 
 ### Practice: Choose the Correct Form
 
 1. Я хочу відправити ___ (лист).
 > [!solution] Перевірити
-> листа (Accusative animate) — I want to send a letter.
+> листа (Зн.в.) — I want to send a letter.
 
 2. Я плачу ___ (картка).
 > [!solution] Перевірити
-> карткою (Instrumental) — I pay BY card.
+> карткою (Ор.в.) — I pay BY card.
 
 3. Скільки ___ (гривня) це коштує?
 > [!solution] Перевірити
-> гривень (Genitive plural) — How many hryvnias?
+> гривень (Р.в. мн.) — How many hryvnias?
+
+> [!note] 📝 Ukrainian Case Abbreviations
+>
+> When studying grammar, you'll see these abbreviations:
+> - **Н.в.** = Називний відмінок — хто? що?
+> - **Р.в.** = Родовий відмінок — кого? чого?
+> - **Д.в.** = Давальний відмінок — кому? чому?
+> - **Зн.в.** = Знахідний відмінок — кого? що?
+> - **Ор.в.** = Орудний відмінок — ким? чим?
+> - **М.в.** = Місцевий відмінок — на чому? в чому?
+> - **Кл.в.** = Кличний відмінок — Мамо! Друже!
+>
+> These are used in Ukrainian grammar books and dictionaries!"
 
 ### Self-Check
 
 - Can you order services at a post office?
 - Can you perform transactions at a bank?
 - Do you know quantity expressions: п'ять гривень, багато грошей?
+
+> [!tip] 💡 Practice Makes Perfect
+>
+> Visit a Ukrainian online store or banking app and try to read the interface. You'll see cases everywhere:
+> - "Ваш **рахунок**" (Н.в.) — Your account
+> - "Немає **коштів**" (Р.в.) — No funds
+> - "Переказ **другові**" (Д.в.) — Transfer to a friend
+> - "Введіть **суму**" (Зн.в.) — Enter the amount
+>
+> Real practice with real Ukrainian!
 
 ---
 
@@ -254,8 +287,19 @@ Read this dialogue and identify the case of each bolded word:
 | Prepositions | Each has its case | до школ**и** (Gen), в школ**і** (Loc) |
 | Services | Real-world application | Відправити **листа** (Acc) |
 
-> 🌍 **Cultural Connection**
+> [!tip] 💡 Time Expressions
 >
+> The word **час** (time) appears in many case forms:
+> - Nominative: **Час** летить! (Time flies!)
+> - Genitive: Немає **часу** (No time)
+> - Dative: **Часу** — not commonly used
+> - Accusative: Знаю **час** зустрічі (I know the meeting time)
+> - Instrumental: Працюю над **часом** (Working on timing)
+> - Locative: У вільному **часі** (In free time)
+>
+> Master this word to practice all cases!
+
+> 🌍 **Cultural Connection**
 > Україна має багату граматичну традицію. Сім відмінків — це частина давньої слов'янської спадщини. Коли ви вивчаєте відмінки, ви торкаєтесь тисячолітньої історії української мови!
 
 ---
@@ -713,3 +757,10 @@ The lamp is above the table.
 | курс | /kurs/ | exchange rate | noun | m | banking term |
 | квитанція | /kʋɪˈtɑnt͡sʲijɑ/ | receipt | noun | f | Acc: квитанцію |
 | гривня | /ˈɦrɪʋnʲɑ/ | hryvnia | noun | f | Ukrainian currency |
+| час | /t͡ʃɑs/ | time | noun | m | Gen: часу |
+| адреса | /ɑˈdrɛsɑ/ | address | noun | f | Acc: адресу |
+| переказ | /pɛrɛˈkɑz/ | money transfer | noun | m | banking term |
+| послуга | /pɔsˈluɦɑ/ | service | noun | f | Acc: послугу |
+| оплата | /ɔpˈlɑtɑ/ | payment | noun | f | Acc: оплату |
+| валюта | /ʋɑˈlʲutɑ/ | currency | noun | f | banking term |
+| готівка | /ɦɔˈtiʋkɑ/ | cash | noun | f | no plural form |

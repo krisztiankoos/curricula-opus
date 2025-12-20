@@ -695,14 +695,16 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 ---
 
 #### Module 20: C1.1 Checkpoint
-**Grammar:** Assessment of C1.1 competencies
+**Covers:** M01-19
 
-**Assessment Areas:**
-- Academic vocabulary (500+ words)
-- Research writing skills
-- Citation practices
-- Essay structure
-- Oral presentation basics
+**Required Skill Groups:**
+1. Academic Vocabulary Foundation (M01-04) - metalanguage, research verbs, analysis terms
+2. Logical Connectors (M05-06) - causal, concessive, hedging
+3. Academic Writing (M07-11) - citation, essay structure, paraphrase
+4. Academic Genres (M12-14) - research article, abstract, literature review
+5. Oral Academic (M15) - presentation structure
+6. Irregular Verbs Complete (M17) - all remaining conjugations
+7. Practice Integration (M18-19) - essay writing, article critique
 
 **Vocabulary (10 words - assessment terms):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
@@ -1055,13 +1057,13 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 ---
 
 #### Module 35: C1.2 Checkpoint
-**Grammar:** Assessment of C1.2 competencies
+**Covers:** M21-34
 
-**Assessment Areas:**
-- Professional writing (CV, emails)
-- Political/media vocabulary
-- Sociolinguistic knowledge
-- Oral communication
+**Required Skill Groups:**
+1. Professional Writing (M21-24) - CV, interview, etiquette, digital
+2. Political System (M25-27) - Ukraine, media, EU/NATO
+3. Sociolinguistics (M28-31) - dialects, surzhyk, language policy, diaspora
+4. Practice Integration (M32-33) - professional scenarios, case studies
 
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
@@ -1525,14 +1527,14 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 ---
 
 #### Module 55: C1.3 Checkpoint
-**Grammar:** Assessment of C1.3 competencies
+**Covers:** M36-54
 
-**Assessment Areas:**
-- Rhetorical device identification
-- Tone/nuance production
-- Humor comprehension
-- Register flexibility
-- Archaic form recognition
+**Required Skill Groups:**
+1. Rhetorical Devices (M36-40) - metaphor, irony, hyperbole, euphemism, rhetorical questions
+2. Modality & Politeness (M41-43) - certainty, strategies, indirectness
+3. Ukrainian Humor (M44-46) - humor, wordplay, anecdotes
+4. Archaic Forms (M47-50) - verb forms, literary syntax, Church Slavonicisms, pronouns
+5. Register Control (M51-53) - high formal, intimate, slang
 
 **Vocabulary (10 words - assessment):**
 оцінювання, тестування, перевірка, контроль, екзамен, залік, бал, оцінка, критерій, результат
@@ -2071,14 +2073,17 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 ---
 
 #### Module 80: C1.4 Checkpoint
-**Focus:** Folk culture comprehensive assessment
+**Covers:** M56-79
 
-**Assessment Areas:**
-- Folk music and dance terminology
-- Craft traditions and symbolism
-- Ritual calendar knowledge
-- Regional identity markers
-- Contemporary cultural expressions
+**Required Skill Groups:**
+1. Folk Music (M56-58) - kobzar tradition, ritual songs, lullabies
+2. Folk Dance (M59-60) - hopak, regional dances
+3. Folk Crafts (M61-63) - pysanky, vyshyvanka, pottery
+4. Folk Beliefs (M64-65) - mythology, folk medicine
+5. Folk Tales (M66-67) - Cossack legends, kazky
+6. Calendar Rituals (M68-69) - winter, spring/summer
+7. Life Rituals (M70-71) - birth, death customs
+8. Regional Identity (M72-79) - Halychyna, Slobozhanschyna, Polissya, diaspora
 
 **Vocabulary (15 words - review):**
 традиція, спадщина, обряд, символ, регіон, музика, танець, ремесло, віра, легенда, пісня, свято, ідентичність, збереження, відродження
@@ -2407,14 +2412,15 @@ The C1 curriculum represents the path to **mastery**. Focus shifts from "learnin
 ---
 
 #### Module 95: C1.5 Checkpoint
-**Focus:** Classical literature comprehensive assessment
+**Covers:** M81-94
 
-**Assessment Areas:**
-- Literary history knowledge
-- Author biographies and contexts
-- Major works identification
-- Literary analysis terminology
-- Poetry analysis skills
+**Required Skill Groups:**
+1. Literary History (M81) - periods and movements
+2. Shevchenko (M83-85) - life, poetry, legacy
+3. Franko & Lesia Ukrainka (M86-89) - poetry, prose, drama
+4. Other Classics (M82, M90-91) - Kotlyarevsky, Vovchok, Myrny, Kotsyubynsky
+5. Literary Terminology (M92) - plot, theme, motif analysis
+6. Practice Integration (M93-94) - poetry analysis, comparative essays
 
 **Vocabulary (15 words - assessment focus):**
 література, період, автор, твір, жанр, стиль, тема, образ, символ, аналіз, критика, інтерпретація, вплив, спадщина, традиція

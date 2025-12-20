@@ -87,6 +87,16 @@ vocabulary_count: 25
 - Can you use пере- for "across" or "re-do"?
 - Do you know від- (away) vs у- (into)?
 
+> [!myth-buster] 🔍 Myth Buster
+>
+> **Myth:** "Ukrainian prefixes are the same as Russian."
+>
+> **Truth:** While some prefixes look similar, Ukrainian has unique prefix patterns. For example, Ukrainian **від-** (away) is distinct from Russian, and forms like **відійти** show authentic Ukrainian phonology with the soft і. These prefixes trace back to Proto-Slavic, preserved independently in Ukrainian!
+
+> [!history-bite] 📜 History Bite
+>
+> **Prefixes preserved our literature!** When the Ems Ukaz (1876) banned Ukrainian printing, writers used prefixes creatively. Ivan Franko's poetry is rich with **пере-**, **роз-**, **від-** combinations that carry uniquely Ukrainian meaning. Today, learning prefixes connects you to this literary heritage!
+
 ---
 
 ## Skill 2: Noun Suffixes
@@ -128,6 +138,14 @@ vocabulary_count: 25
 - Can you form abstract nouns with -ість? (важливість)
 - Can you form agent nouns with -ач? (читач, слухач)
 
+> [!tip] 🎯 Pro Tip: Suffix Patterns
+>
+> **-ння** = always neuter, always an action
+> **-ість** = always feminine, always abstract quality
+> **-ач** = always masculine, always a person who does something
+>
+> Once you memorize these three, you can predict the gender and meaning of hundreds of words!
+
 ---
 
 ## Skill 3: Adjective Suffixes
@@ -167,6 +185,13 @@ vocabulary_count: 25
 - Can you form nationality adjectives with -ський? (український)
 - Can you use -ний for general relation? (музичний)
 - Do you know the difference: -ний vs -овий vs -ський?
+
+> [!note] 📝 Word Formation Memory Aid
+>
+> **Quick suffix guide:**
+> - **-ський** = place/nation: Київ → київський, Україна → український
+> - **-ний** = general: музика → музичний, важливий
+> - **-овий** = material/type: колір → кольоровий
 
 ---
 
@@ -215,35 +240,67 @@ vocabulary_count: 25
 - Do you know: ход- (walk), пис- (write), бач- (see)?
 - Can you guess new words using familiar roots?
 
+> [!note] 📝 Root Family Practice Strategy
+>
+> **Step 1:** Learn the most common roots first:
+> - **ход-** → вхід, вихід, перехід, пішохід, прихід
+> - **пис-** → писати, написати, переписати, письменник, писанка
+> - **бач-** → бачити, побачення, передбачити, вбачати
+>
+> **Step 2:** When you see a new word, look for the root!
+> - Example: **підручник** = під + руч (рука) + ник
+> - Example: **співробітник** = спів + робіт (робота) + ник
+>
+> **Step 3:** Practice creating new words from roots you know. This is the power of Ukrainian word formation!
+
+**More common roots to learn:**
+
+| Root | Meaning | Family Words |
+|------|---------|--------------|
+| **роб-/робіт-** | work | робота, робітник, співробітник, заробляти |
+| **уч-/вч-** | learn | учень, учитель, навчання, вчитися |
+| **жив-/жи-** | live | життя, живий, жити, проживати |
+| **люб-** | love | любов, любити, полюбити |
+| **зна-** | know | знати, знання, пізнання, незнайомий |
+
 ---
 
 ## Integration Challenge
 
 Analyze these words by breaking them into parts:
 
-1. **передбачити** — break it down
+1. **передбачити**
 > [!solution] Перевірити
-> перед- (before) + бач- (see) + -ити (verb) = to foresee
+> перед + бач + ити
 
-2. **письменник** — break it down
+2. **письменник**
 > [!solution] Перевірити
-> пис- (write) + -м-ен- + -ник (agent) = writer
+> пис + мен + ник
 
-3. **важливість** — break it down
+3. **важливість**
 > [!solution] Перевірити
-> важлив- (important) + -ість (abstract noun) = importance
+> важлив + ість
 
-4. **український** — break it down
+4. **український**
 > [!solution] Перевірити
-> Україн- (Ukraine) + -ський (nationality) = Ukrainian
+> Україн + ський
 
-5. **читання** — break it down
+5. **читання**
 > [!solution] Перевірити
-> чита- (read) + -ння (verbal noun) = reading
+> чита + ння
 
-6. **перехід** — break it down
+6. **перехід**
 > [!solution] Перевірити
-> пере- (across) + хід (from ход- walk) = crossing
+> пере + хід
+
+> [!warning] ⚠️ Common Mistake
+>
+> Don't confuse:
+> - **вхід** = entrance (в- = into)
+> - **вихід** = exit (ви- = out)
+> - **перехід** = crossing (пере- = across)
+>
+> All from root **ход-** (walk), but prefix changes meaning completely!
 
 ---
 
@@ -499,23 +556,23 @@ Analyze these words by breaking them into parts:
 
 ## unjumble: Word Formation
 
-1. вхід = в- (in) + хід (walking)
-   > [!answer] вхід = entrance
+1. вхід = в- (у) + хід (ходити)
+   > [!answer] вхід = вхід
 
-2. вихід = ви- (out) + хід (walking)
-   > [!answer] вихід = exit
+2. вихід = ви- (з) + хід (ходити)
+   > [!answer] вихід = вихід
 
-3. читання = чита- (read) + -ння (action)
-   > [!answer] читання = reading
+3. читання = чита- (читати) + -ння (дія)
+   > [!answer] читання = читання
 
-4. читач = чита- (read) + -ач (person)
-   > [!answer] читач = reader
+4. читач = чита- (читати) + -ач (особа)
+   > [!answer] читач = читач
 
-5. важливість = важлив- (important) + -ість (quality)
-   > [!answer] важливість = importance
+5. важливість = важлив- (важливий) + -ість (якість)
+   > [!answer] важливість = важливість
 
-6. український = Україн- (Ukraine) + -ський (adj)
-   > [!answer] український = Ukrainian
+6. український = Україн- (Україна) + -ський (прикметник)
+   > [!answer] український = український
 
 ## cloze: Complete the Words
 
@@ -526,6 +583,7 @@ Analyze these words by breaking them into parts:
 [___:3] — це людина, яка читає.
 [___:4] — це дія читати.
 [___:5] — це якість бути важливим.
+Місто, де я народився — [___:6].
 
 1. прийшов | вийшов | увійшов
 > [!answer] прийшов
@@ -541,6 +599,40 @@ Analyze these words by breaking them into parts:
 
 5. Важливість | Важливий | Важливо
 > [!answer] Важливість
+
+6. київський | Київ | київському
+> [!answer] київський
+
+## mark-the-words: Find Word Parts
+
+Click on the prefix, suffix, or root in each word.
+
+Він [при](correct)йшов до школи. Потім [ви](correct)йшов з неї.
+
+---
+
+[Читач](correct) любить [читання](correct). Він читає про [важлив](correct)ість освіти.
+
+---
+
+[Україн](correct)ський письменник написав [музич](correct)ну п'єсу про [київ](correct)ське життя.
+
+## dialogue-reorder: Word Formation Discussion
+
+- Яке слово означає "місце, де входять"?
+- Вхід! Корінь "ход" плюс префікс "в".
+- А як сказати "місце, де виходять"?
+- Вихід! Префікс "ви" змінює значення.
+- Цікаво! А людина, яка читає?
+- Читач! Суфікс "-ач" створює назву людини.
+
+> [!answer]
+> 1. Яке слово означає "місце, де входять"?
+> 2. Вхід! Корінь "ход" плюс префікс "в".
+> 3. А як сказати "місце, де виходять"?
+> 4. Вихід! Префікс "ви" змінює значення.
+> 5. Цікаво! А людина, яка читає?
+> 6. Читач! Суфікс "-ач" створює назву людини.
 
 ## translate: English to Ukrainian
 

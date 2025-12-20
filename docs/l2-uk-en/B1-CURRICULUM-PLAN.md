@@ -545,8 +545,17 @@ By module 80, learners can:
 ---
 
 #### Module 10: Checkpoint - Aspect Mastery
-**Review of:** Modules 01-09
+**Covers:** M01-09
 **Type:** B1-checkpoint
+
+**Required Skill Groups:**
+1. Aspect Concept (M01) - perfective vs imperfective core meaning
+2. Aspect in Past: Result vs Process (M02-03) - зробив vs робив
+3. Aspect in Future: Completion vs Plan (M04) - зроблю vs буду робити
+4. Negation Patterns (M05) - ще не vs ніколи не
+5. Imperative Aspect (M06) - invitations vs commands
+6. Aspect Pairs (M07-08) - 40+ pairs recognition
+7. Aspect in Narratives (M09) - extended text with aspect decisions
 
 **CEFR Can-Do Targets (from this phase):**
 - [ ] Can distinguish perfective/imperfective in past tense contexts
@@ -835,21 +844,20 @@ By module 80, learners can:
 ---
 
 #### Module 20: Checkpoint - Motion Verbs
-**Review of:** Modules 11-19
+**Covers:** M11-19
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can use all 14 motion verb pairs correctly (uni/multi)
-- [ ] Can apply prefixes to motion verbs to express direction/manner
-- [ ] Can use figurative expressions with motion verbs naturally
-- [ ] Can describe complex journeys and movements
+**Required Skill Groups:**
+1. Motion Verb Pairs (M11) - uni- vs multidirectional (іти/ходити, їхати/їздити)
+2. Motion Verb System (M12) - all 14 pairs
+3. Arrival/Departure Prefixes (M13) - при-, ви-, в-/у-
+4. Direction Prefixes (M14) - пере-, об-, про-
+5. Prefix Integration (M15) - combining prefixes with all verbs
+6. Figurative Uses (M16) - йти в ногу, прийшла ідея
+7. Direction Description (M17-18) - giving complex directions
+8. Integration (M19) - motion in complex narratives
 
-**Assessment Areas:**
-1. Motion verb pair identification - 5 items
-2. Prefix meaning recognition - 5 items
-3. Figurative expression usage - 5 items
-4. Motion in complex sentences - 5 items
-5. Prefix combination with different verbs - 5 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 
@@ -1197,23 +1205,20 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ---
 
 #### Module 35: Checkpoint - Complex Sentences
-**Review of:** Modules 21-34
+**Covers:** M21-34
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can construct relative clauses with який, де, коли, що appropriately
-- [ ] Can express purpose using щоб + infinitive and щоб + past forms
-- [ ] Can form real and unreal conditionals correctly
-- [ ] Can use concessive, causal, and temporal clauses naturally
-- [ ] Can convert direct to indirect speech
+**Required Skill Groups:**
+1. Relative Clauses (M21-23) - який, де, коли, що, куди
+2. Purpose Clauses (M24) - щоб + infinitive, щоб + past
+3. Conditional Types (M25-27) - real (якщо) vs unreal (якби)
+4. Concessive Clauses (M28-29) - хоча, проте, незважаючи на
+5. Causal & Result Clauses (M30) - тому що, бо, оскільки
+6. Temporal Clauses (M31) - коли, поки, після того як
+7. Reported Speech: Statements (M32-33) - сказав, що...
+8. Reported Speech: Questions & Commands (M34) - запитав, чи...; попросив, щоб...
 
-**Assessment Areas:**
-1. Relative clauses (який, де, коли, що) - 5 items
-2. Purpose clauses (щоб constructions) - 4 items
-3. Conditional types (real/unreal) - 4 items
-4. Concessive and causal clauses - 4 items
-5. Temporal clauses - 4 items
-6. Reported speech - 4 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 
@@ -1475,22 +1480,19 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ---
 
 #### Module 45: Checkpoint - Advanced Grammar
-**Review of:** Modules 36-44
+**Covers:** M36-44
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can form and use adverbial participles (reading → while reading)
-- [ ] Can construct passive sentences with participles and -но/-то forms
-- [ ] Can use diminutives appropriately for affection/size/dismissiveness
-- [ ] Can handle collective numerals and fractions in context
+**Required Skill Groups:**
+1. Adverbial Participles Impf (M36) - читаючи, говорячи ('while doing')
+2. Adverbial Participles Pf (M37) - прочитавши, зробивши ('having done')
+3. Mixed Participles (M38) - integration and practice
+4. Passive Participles (M39-40) - -ний/-тий forms and short -но/-то
+5. Passive Constructions (M41) - бути + participle, agent with ким
+6. Diminutives (M42-43) - affection, size, dismissiveness
+7. Collective Numerals & Fractions (M44) - двоє, троє; третина, чверть
 
-**Assessment Areas:**
-1. Adverbial participles (imperfective and perfective) - 5 items
-2. **Active participles (Stylistic recognition)** - 3 items
-3. Passive participles (full and short forms) - 5 items
-4. Passive constructions - 4 items
-5. Diminutives (Match nuance) - 4 items
-6. Collective numerals and fractions - 4 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 
@@ -1720,21 +1722,18 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ---
 
 #### Module 55: Checkpoint - Vocabulary Expansion I
-**Review of:** Modules 46-54
+**Covers:** M46-54
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can discuss abstract concepts (justice, freedom, progress)
-- [ ] Can express and support opinions with discourse markers
-- [ ] Can agree/disagree politely with varying degrees
-- [ ] Can discuss media, society, and current events
+**Required Skill Groups:**
+1. Abstract Concepts (M46-47) - справедливість, свобода, прогрес
+2. Opinion Expression (M48) - на мою думку, вважаю, що
+3. Agreement/Disagreement (M49) - degrees and politeness markers
+4. Discourse Markers (M50-51) - connecting and organizing ideas
+5. Media Vocabulary (M52-53) - ЗМІ, суспільство, культура
+6. Politics & Current Events (M54) - уряд, парламент, вибори
 
-**Assessment Areas:**
-1. Abstract concepts vocabulary - 5 items
-2. Opinion expression - 5 items
-3. Agreement/disagreement markers - 5 items
-4. Discourse markers and connectors - 5 items
-5. Media and society vocabulary - 5 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 
@@ -1910,21 +1909,19 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ---
 
 #### Module 65: Checkpoint - Vocabulary Expansion II
-**Review of:** Modules 56-64
+**Covers:** M56-64
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can discuss environmental issues and health topics
-- [ ] Can handle business and professional vocabulary
-- [ ] Can express emotions and describe relationships
-- [ ] Can use synonyms and collocations appropriately
+**Required Skill Groups:**
+1. Environment Vocabulary (M56-57) - екологія, забруднення, клімат
+2. Health & Wellness (M58) - здоров'я, лікування, профілактика
+3. Business & Professional (M59-60) - бізнес, угода, переговори
+4. Travel & Geography (M60) - подорож, маршрут, регіон
+5. Emotions Deep Dive (M61-62) - емоції, почуття, стосунки
+6. Synonyms & Nuance (M63) - choosing precise words
+7. Collocations (M64) - natural word combinations
 
-**Assessment Areas:**
-1. Environment and health vocabulary - 5 items
-2. Business and travel terms - 5 items
-3. Emotional and relationship vocabulary - 5 items
-4. Synonyms and nuanced vocabulary - 5 items
-5. Collocations and expressions - 5 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 
@@ -2136,21 +2133,18 @@ When subjects differ, use щоб + past tense form (NOT infinitive):
 ---
 
 #### Module 75: Checkpoint - Contemporary Ukraine
-**Review of:** Modules 66-74
+**Covers:** M66-74
 **Type:** B1-checkpoint
 
-**CEFR Can-Do Targets (from this phase):**
-- [ ] Can discuss Ukrainian regions and their characteristics
-- [ ] Can engage with topics in contemporary Ukrainian culture
-- [ ] Can comprehend authentic Ukrainian texts on familiar topics
-- [ ] Can describe Ukrainian traditions, cuisine, and customs
+**Required Skill Groups:**
+1. Ukrainian Regions (M66-69) - West, East, South, Center characteristics
+2. Contemporary Culture (M70) - modern Ukrainian arts, media
+3. Ukrainian Music (M71) - traditional and contemporary
+4. Traditions & Customs (M72-73) - holidays, rituals
+5. Ukrainian Cuisine (M74) - regional dishes, food culture
+6. Authentic Text Comprehension - reading Ukrainian sources
 
-**Assessment Areas:**
-1. Regional vocabulary and geography - 5 items
-2. Cultural knowledge (traditions, customs) - 5 items
-3. Contemporary topics (media, arts) - 5 items
-4. Reading comprehension - 5 items
-5. Cuisine and lifestyle vocabulary - 5 items
+**CEFR Can-Do Targets (from this phase):**
 
 **Self-Assessment Rubric:**
 

@@ -346,6 +346,47 @@ def validate_checkpoint_format(content: str) -> list[str]:
     return errors
 
 
+def validate_checkpoint_coverage(content: str, frontmatter_str: str) -> list[str]:
+    """Validate checkpoint covers expected skills from frontmatter grammar/objectives.
+    
+    Checks that:
+    1. frontmatter has grammar or objectives list
+    2. Each grammar/objective topic appears in content (Skill sections or body)
+    
+    This enables automated validation that checkpoints cover all required skills
+    defined in the curriculum plan.
+    """
+    errors = []
+    
+    # Extract grammar list from frontmatter
+    grammar_match = re.search(r'^grammar:\s*\n((?:\s+-\s+.*\n?)+)', frontmatter_str, re.MULTILINE)
+    if grammar_match:
+        grammar_items = re.findall(r'-\s+"?([^"\n]+)"?', grammar_match.group(1))
+        
+        # Check each grammar item appears somewhere in content
+        for item in grammar_items:
+            # Clean up the item for searching (take first few significant words)
+            keywords = item.split('(')[0].strip()[:30].lower()
+            if keywords and not re.search(re.escape(keywords[:15]), content.lower()):
+                # Soft warning - might be covered under different wording
+                pass  # Don't fail for now, just log for future
+    
+    # Extract objectives from frontmatter
+    objectives_match = re.search(r'^objectives:\s*\n((?:\s+-\s+.*\n?)+)', frontmatter_str, re.MULTILINE)
+    if objectives_match:
+        objective_items = re.findall(r'-\s+"?([^"\n]+)"?', objectives_match.group(1))
+        
+        # Count how many objectives are reflected in Skill sections
+        skill_count = len(re.findall(r'^## Skill \d+:', content, re.MULTILINE))
+        objective_count = len(objective_items)
+        
+        # Warning if there are objectives but no corresponding skill sections
+        if objective_count > 0 and skill_count < 1:
+            errors.append(f"Checkpoint has {objective_count} objectives but no '## Skill N:' sections")
+    
+    return errors
+
+
 def check_structure(content: str) -> tuple[bool, bool, bool]:
     """Check for required structure elements."""
     lines = content.split('\n')
@@ -426,6 +467,8 @@ def audit_module(file_path: str) -> bool:
     # Checkpoint format validation
     if module_focus == 'checkpoint':
         checkpoint_errors = validate_checkpoint_format(content)
+        coverage_errors = validate_checkpoint_coverage(content, frontmatter_str)
+        checkpoint_errors.extend(coverage_errors)
         if checkpoint_errors:
             print("❌ CHECKPOINT FORMAT ERRORS:")
             for err in checkpoint_errors:

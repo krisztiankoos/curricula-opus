@@ -1,24 +1,25 @@
 # Audit Report: 35-checkpoint-complex-sentences.md
-**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 1500
+**Phase:** B1 | **Level:** B1 | **Pedagogy:** "TTT" | **Target:** 800
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1588/1500
-- **Activities:** ✅ 12/12
-- **Density:** ✅ All > 14
+- **Words:** ✅ 1684/800
+- **Activities:** ✅ 12/10
+- **Density:** ✅ All > 12
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 9/5
+- **Engagement:** ✅ 10/3
 - **Audio:** ℹ️ No audio
-- **Vocab:** ✅ 20/20
+- **Vocab:** ✅ 20/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 56.4% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 56.0% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
+| **Контрольна точка: Складні речення** | ⚪️ | 27 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Pre-Test Self-Assessment** | ⚪️ | 253 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
@@ -26,6 +27,7 @@
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Your Learning Journey: Modules 21-34 Recap** | ⚪️ | 352 | Skipped |
 | **CEFR Can-Do Targets** | ⚪️ | 163 | Skipped |
+| **Need More Practice?** | ⚪️ | 69 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **Diagnostic Reading** | ✅ | 156 | Included in Core |
 | **Final Preparation Exercises** | ⚪️ | 105 | Skipped |

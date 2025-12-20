@@ -12,6 +12,17 @@ Create a complete module through all 4 stages.
 
 - `$ARGUMENTS` - Level and module number (e.g., `a1 15` or `b2 45`)
 
+## 🚀 Fast Path (Gemini / Limited Context)
+**Action:** Run the full pipeline in one sequence.
+1. **Analyze:** Read `docs/l2-uk-en/{LEVEL}-CURRICULUM-PLAN.md` (grep module) & `GEMINI.md`.
+2. **Draft:** Create module file with full content.
+3. **Audit:** `python3 scripts/audit_module.py ...`
+4. **Fix:** Loop until PASS.
+5. **Review:** `/review-content l2-uk-en {LEVEL} {MODULE_NUM}` (Quality Gate: 5/5).
+6. **Finalize:** `npm run pipeline l2-uk-en {LEVEL} {MODULE_NUM}` && `npm run generate:json l2-uk-en {LEVEL} {MODULE_NUM}`
+
+---
+
 ## Instructions
 
 Parse arguments: $ARGUMENTS
@@ -40,11 +51,12 @@ Stage 1 → Stage 2 → Stage 3 → Stage 4 (review/fix loop) → OUTPUT
 3. Verify counts, types, syntax
 
 **Stage 4: Review & Fix**
-1. Run audit
-2. Fix violations (or rebuild sections)
-3. Loop until PASS
-4. Run full pipeline: `npm run pipeline l2-uk-en {level} {module_num}`
-5. Generate JSON: `npm run generate:json l2-uk-en {level} {module_num}`
+1. Run audit: `python3 scripts/audit_module.py curriculum/l2-uk-en/{LEVEL}/module-{MODULE_NUM}.md`
+2. Fix violations until PASS
+3. Run content review: `/review-content l2-uk-en {LEVEL} {MODULE_NUM}`
+4. Fix quality issues until PASS (Score: 5/5)
+5. Run pipeline: `npm run pipeline l2-uk-en {LEVEL} {MODULE_NUM}`
+6. Generate JSON: `npm run generate:json l2-uk-en {LEVEL} {MODULE_NUM}`
 
 ### Quick Reference (Read First)
 
@@ -71,14 +83,16 @@ Before writing, confirm from quick-ref:
 - [ ] Activity count + types match level requirements
 - [ ] Immersion target known
 - [ ] No duplicate explanations planned
+- [ ] External Resources (YouTube/Blogs) planned?
+- [ ] **If checkpoint:** Read `docs/l2-uk-en/CHECKPOINT-DESIGN-GUIDE.md`
 
 ### Stage Instructions (if needed)
 
 Only read stage docs for complex cases:
-- `.claude/stages/stage-1-skeleton.md`
-- `.claude/stages/stage-2-content.md`
-- `.claude/stages/stage-3-activities.md`
-- `.claude/stages/stage-4-review-fix.md`
+- `.agent/stages/stage-1-skeleton.md`
+- `.agent/stages/stage-2-content.md`
+- `.agent/stages/stage-3-activities.md`
+- `.agent/stages/stage-4-review-fix.md`
 
 ### Output
 

@@ -1,5 +1,5 @@
 # Audit Report: 65-checkpoint-vocab-expansion-ii.md
-**Phase:** B1 | **Level:** B1 | **Pedagogy:** "checkpoint" | **Target:** 1500
+**Phase:** B1 | **Level:** B1 | **Pedagogy:** "checkpoint" | **Target:** 800
 **Overall Status:** ❌ FAIL
 
 ## Recommendation
@@ -8,7 +8,7 @@
 - Activity density below minimum
 
 ## Gates
-- **Words:** ❌ 229/1500
+- **Words:** ❌ 289/800
 - **Activities:** ✅ 16/10
 - **Density:** ❌ 8 < 12
 - **Unique_types:** ✅ 10/4 types
@@ -19,7 +19,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 61.1% (checkpoint - no gate)
+- **Immersion:** 🇺🇦 59.4% (checkpoint - no gate)
 
 ## Low Density Activities
 | Activity | Type | Items | Required | Fix |
@@ -42,6 +42,7 @@
 | **CEFR Can-Do Targets** | ⚪️ | 56 | Skipped |
 | **Діагностична вправа** | ⚪️ | 129 | Skipped |
 | **Self-Assessment Rubric** | ⚪️ | 7 | Skipped |
+| **Need More Practice?** | ⚪️ | 60 | Skipped |
 | **Вправи** | ⚪️ | 0 | Skipped |
 | **quiz: Подорожі та географія (М61)** | 🎮 | 5 | Activity (5 items, min 8) |
 | **quiz: Дієслова мислення (М62)** | 🎮 | 5 | Activity (5 items, min 8) |

@@ -84,6 +84,20 @@ vocabulary_count: 25
 - Can you form perfective with prefixes: про-, на-, з-?
 - Do you know exceptions: брати/взяти, купувати/купити?
 
+> [!note] 📝 Aspect Memory Trick
+>
+> **NDK** (Недоконаний) = **N**ever **D**one, **K**eeps going
+> **DK** (Доконаний) = **D**one, **K**omplete
+>
+> When you see a prefix like **про-**, **на-**, **з-** — it usually signals completion!
+
+> [!warning] ⚠️ Common Mistake
+>
+> Don't say: "Я прочитав книгу три години" ❌
+> Say: "Я читав книгу три години" ✅
+>
+> Duration (три години) requires imperfective! Perfective = result, not duration.
+
 ---
 
 ## Skill 2: Comparison
@@ -168,8 +182,14 @@ vocabulary_count: 25
 ### Self-Check
 
 - Can you form "would" with past tense + б/би?
-- Do you know the difference: якщо (real) vs якби (unreal)?
+- Do you know the difference: якщо (реальна умова) vs якби (нереальна умова)?
 - Can you make polite requests: "Я б хотів...", "Чи могли б ви..."?
+
+> [!myth-buster] 🔍 Myth Buster
+>
+> **Myth:** "Ukrainian conditional is just copied from Russian."
+>
+> **Truth:** Both languages use past tense + particle for conditional, but this is a common Slavic feature from Proto-Slavic, NOT borrowing. Ukrainian's **би** particle and the distinction between **якщо/якби** shows independent development. Say "Якби я був птахом..." — pure Ukrainian!
 
 ---
 
@@ -262,7 +282,7 @@ Read this story and identify the grammar points:
 
 | Skill | Key Pattern | Example |
 |-------|-------------|---------|
-| Aspect | Process vs Result | читав (was reading) vs прочитав (finished) |
+| Aspect | Process vs Result | читав (процес) vs прочитав (результат) |
 | Comparison | -ший/-іший, най- | новіший, найновіший |
 | Conditional | Past + б/би | Я б хотів, Якби я мав |
 | Shopping | Apply all skills | Який найкращий? Я б хотів цей. |
@@ -271,6 +291,18 @@ Read this story and identify the grammar points:
 >
 > «Повторення — мати навчання.»
 > *Translation: "Repetition is the mother of learning."*
+
+> [!history-bite] 📜 History Bite
+>
+> **Comparatives saved our identity!** During Russification, bureaucrats tried to claim Ukrainian comparatives were "corrupted Russian." But forms like **кращий** (better) and **гірший** (worse) follow Old Church Slavonic patterns preserved in literary Ukrainian since Kotlyarevsky's *Eneïda* (1798). When you say "Цей кращий!", you speak authentic Ukrainian — not a dialect of anything!
+
+> [!tip] 🎯 Pro Tip: Aspect Pairs
+>
+> Create flashcards with aspect pairs:
+> - Front: Читати — недоконаний → ?
+> - Back: Прочитати
+>
+> Practice daily! The more pairs you memorize, the more natural your Ukrainian becomes. Focus on the 20 most common verbs first.
 
 ---
 
@@ -528,7 +560,7 @@ Read this story and identify the grammar points:
 Цей [___:2], а той дешевший.
 Який [___:3]?
 Samsung. Ви вже [___:4]?
-Так, я [___:5] цей.
+Так, я [___:5] цей. Знижка [___:6] відсотків?"
 
 1. б хотів | хочу | хотів
 > [!answer] б хотів
@@ -544,6 +576,9 @@ Samsung. Ви вже [___:4]?
 
 5. візьму | беру | брав
 > [!answer] візьму
+
+6. п'ять | п'яти | п'ятьох
+> [!answer] п'ять
 
 ## dialogue-reorder: Making a Decision
 
@@ -691,7 +726,7 @@ That would be wonderful!
 | вищий ступінь | /ˈʋɪʃt͡ʃɪj ˈstupinʲ/ | comparative degree | phrase | — | grammar term |
 | умовний спосіб | /uˈmɔʋnɪj ˈspɔsib/ | conditional mood | phrase | — | grammar term |
 | якби | /jɑkˈbɪ/ | if (unreal) | conj | — | conditional |
-| якщо | /jɑkˈʃt͡ʃɔ/ | if (real) | conj | — | conditional |
+| якщо | /jɑkˈʃt͡ʃɔ/ | if (реальна умова) | conj | — | conditional |
 | краще | /ˈkrɑʃt͡ʃɛ/ | better | adv | — | comparison |
 | найкращий | /nɑjˈkrɑʃt͡ʃɪj/ | best | adj | m | superlative |
 | знижка | /ˈznɪʒkɑ/ | discount | noun | f | shopping |

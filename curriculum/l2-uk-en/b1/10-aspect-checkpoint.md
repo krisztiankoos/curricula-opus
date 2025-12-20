@@ -294,6 +294,7 @@ This checkpoint reviews skills from Modules 01-09:
 > - Negation Patterns → Module 05
 > - Imperative Patterns → Module 06
 > - Aspect Pairs → Module 07
+> - 📺 [Learn 50 important Ukrainian Verb Pairs](https://www.youtube.com/watch?v=iK4uNlozmFE) — Let's Learn Ukrainian
 
 ---
 

@@ -26,6 +26,9 @@ vocabulary_count: 30
 > [!resources] 🎧 External Resources
 > **YouTube:** [Ukrainian Lessons - Emotions](https://www.youtube.com/results?search_query=ukrainian+emotions+vocabulary) — Emotional vocabulary in context
 > **Blog:** [Ukrainian Lessons: Feelings](https://www.ukrainianlessons.com/) — How to express emotions
+> - 📺 [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner
+> - 📺 [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner
+> - 📺 [Україна з неба](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner
 
 ---
 

@@ -293,6 +293,7 @@ Ukraine spans several distinct natural zones from north to south:
 > - 📖 [Business Ukrainian Vocabulary & Infographics](https://www.ukrainianlessons.com/business-ukrainian-vocabulary/) — Infographics and audio
 > - 📺 [Що таке українська мова? (What is Ukrainian Language?)](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner documentary
 > - 🎧 [Intermediate/Advanced Slow Ukrainian Podcast](https://www.ukrainianlessons.com/the-podcast/) — Authentic listening practice
+> - 📺 [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner
 
 ## Практика
 

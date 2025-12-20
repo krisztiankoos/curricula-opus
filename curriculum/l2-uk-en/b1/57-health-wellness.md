@@ -26,6 +26,9 @@ vocabulary_count: 30
 > [!resources] 🎧 External Resources
 > **YouTube:** [Ukrainian Lessons - Medical Vocabulary](https://www.youtube.com/results?search_query=ukrainian+medical+vocabulary) — Real doctor visits
 > **Blog:** [Ukrainian Lessons: Health](https://www.ukrainianlessons.com/) — Health vocabulary guide
+> - 📺 [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner
+> - 📺 [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner
+> - 📺 [Україна з неба](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner
 
 ---
 

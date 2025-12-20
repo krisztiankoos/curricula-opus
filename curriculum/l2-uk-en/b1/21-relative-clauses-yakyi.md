@@ -297,6 +297,8 @@ This precision allows Ukrainian to express relationships that English can only h
 > - 📖 [Ukrainian Conditionals: Якщо, Якби](https://www.ukrainianlessons.com/conditionals/) — Real vs unreal conditional mood
 > - 📺 [Conditionals in Folk Songs: Якби я мала крила орлині](https://www.youtube.com/watch?v=4HOw1znM7Sc) — Authentic usage of the unreal conditional
 > - 📖 [Reported Speech in Ukrainian](https://www.ukrainianlessons.com/reported-speech/) — Direct vs indirect speech rules
+> - 📺 [Conditionals - Learning Ukrainian with Odarka](https://www.youtube.com/watch?v=NwgNKVKHBIU) — Learning Ukrainian with Odarka
+> - 📺 [Ukrainian Conditionals: Якби](https://www.youtube.com/watch?v=Co0Y44nLlPA) — Let's Learn Ukrainian
 
 ## Вправи
 

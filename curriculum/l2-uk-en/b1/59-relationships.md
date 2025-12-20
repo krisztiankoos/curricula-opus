@@ -26,6 +26,9 @@ vocabulary_count: 30
 > [!resources] 🎧 External Resources
 > **YouTube:** [Ukrainian Lessons - Family](https://www.youtube.com/results?search_query=ukrainian+family+vocabulary) — Family and relationship terms
 > **Blog:** [Ukrainian Lessons: Love](https://www.ukrainianlessons.com/) — Expressions of love and affection
+> - 📺 [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner
+> - 📺 [Чим для вас є Україна?](https://www.youtube.com/watch?v=x75Me7dLRj4) — Ukraїner
+> - 📺 [Україна з неба](https://www.youtube.com/watch?v=vb0ZWc70gOk) — Ukraїner
 
 ---
 

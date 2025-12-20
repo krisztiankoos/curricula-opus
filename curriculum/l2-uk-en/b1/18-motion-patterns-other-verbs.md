@@ -365,6 +365,7 @@ Native speakers constantly use motion verbs in idioms. Here are the most common 
 > - 📺 [Verbs of Motion: Unidirectional vs Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
 > - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ, ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
 > - 📖 [Ukrainian Verb Prefixes with Motion Verbs](https://www.ukrainianlessons.com/prefixes/) — Deep dive into prefixes
+> - 📺 [Їздити VS Їхати/ Йти VS Ходити](https://www.youtube.com/watch?v=T6YwFExsRVc) — Ukrainian grammar
 
 ## Activities
 

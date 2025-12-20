@@ -286,6 +286,7 @@ The following dialogues demonstrate how aspects combine naturally in everyday Uk
 > - 📺 [Perfective and Imperfective: Verb Aspects in Ukrainian](https://www.youtube.com/watch?v=YnWlncQJg8o) — Let's Learn Ukrainian
 > - 📺 [PERFECTIVE VERBS vs IMPERFECTIVE VERBS - PART 1](https://www.youtube.com/watch?v=v-SuEb_0WYM) — Ukrainian grammar
 > - 🎧 [Season 2, Episode 51: Perfective & Imperfective](https://www.ukrainianlessons.com/the-podcast/) — Audio lesson on aspect
+> - 📺 [Learn 50 important Ukrainian Verb Pairs](https://www.youtube.com/watch?v=iK4uNlozmFE) — Let's Learn Ukrainian
 
 ## Практика
 

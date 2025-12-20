@@ -273,6 +273,7 @@ Southern Ukraine stretches along the **Чорне море** (Black Sea) and **�
 > - 📺 [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) — Ukraїner cultural analysis
 > - 📺 [Contemporary Ukrainian Cuisine with Klopotenko](https://www.youtube.com/@klopotenko) — Authentic recipes and food culture
 > - 📺 [History of Ukrainian Language & Dialects](https://www.youtube.com/@Istoria-Movy) — Academic documentary by Історія мови
+> - 📺 [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner
 
 ## Практика
 

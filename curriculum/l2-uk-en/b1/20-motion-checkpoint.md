@@ -291,6 +291,9 @@ Read this story, then answer the questions:
 > - Determinate/Indeterminate → Module 11
 > - Prefixes → Modules 15-16
 > - Figurative Motion → Module 19
+> - 📺 [Verbs of Motion: Unidirectional, Multidirectional](https://www.youtube.com/watch?v=Bs7EJFMsAJY) — Let's Learn Ukrainian
+> - 📺 [Verbs of motion: ЙТИ, ХОДИТИ vs ЇХАТИ ЇЗДИТИ](https://www.youtube.com/watch?v=BHURRyliZHo) — Ukrainian grammar
+> - 📺 [Їздити VS Їхати/ Йти VS Ходити](https://www.youtube.com/watch?v=T6YwFExsRVc) — Ukrainian grammar
 
 ---
 

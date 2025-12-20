@@ -132,6 +132,7 @@ Before we begin, reflect on your news reading habits:
 > - 📺 [Віталій Портников: «Розвивати українське»](https://www.youtube.com/watch?v=cslHRvAe3oA) — Ukraїner cultural analysis
 > - 📺 [History of Ukrainian Language & Dialects](https://www.youtube.com/@Istoria-Movy) — Academic documentary by Історія мови
 > - 🎧 [Ukrainian Lessons Podcast: Seasons 4-6](https://www.ukrainianlessons.com/the-podcast/) — Advanced levels immersion
+> - 📺 [Що таке українська мова?](https://www.youtube.com/watch?v=nqReOxAjuWg) — Ukraїner
 
 ## Практика: Reading Strategies
 

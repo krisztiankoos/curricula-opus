@@ -308,6 +308,38 @@ def validate_tone(content: str) -> list[str]:
     return errors
 
 
+def validate_checkpoint_format(content: str) -> list[str]:
+    """Validate checkpoint modules follow Model → Practice → Check format.
+    
+    See: docs/l2-uk-en/CHECKPOINT-DESIGN-GUIDE.md
+    """
+    errors = []
+    
+    # Check for Overview section
+    if not re.search(r'^## Overview', content, re.MULTILINE):
+        errors.append("Checkpoint missing '## Overview' section")
+    
+    # Check for at least one Skill section  
+    skill_matches = re.findall(r'^## Skill \d+:', content, re.MULTILINE)
+    if not skill_matches:
+        errors.append("Checkpoint missing '## Skill N:' sections (need at least 1)")
+    
+    # Check each Skill section structure
+    skill_sections = re.split(r'^## Skill \d+:', content, flags=re.MULTILINE)[1:]
+    for i, section in enumerate(skill_sections, 1):
+        section_end = re.search(r'^##\s', section, re.MULTILINE)
+        section_text = section[:section_end.start()] if section_end else section
+        
+        if '**Model' not in section_text:
+            errors.append(f"Skill {i} missing '**Model:**' block")
+        if '**Practice' not in section_text:
+            errors.append(f"Skill {i} missing '**Practice:**' block")
+        if 'Self-Check' not in section_text:
+            errors.append(f"Skill {i} missing 'Self-Check:' block")
+    
+    return errors
+
+
 def check_structure(content: str) -> tuple[bool, bool, bool]:
     """Check for required structure elements."""
     lines = content.split('\n')
@@ -384,6 +416,16 @@ def audit_module(file_path: str) -> bool:
         print(f"❌ AUDIT FAILED: Missing 'Summary' section.")
         print("  -> Every module must have a Summary section.")
         sys.exit(1)
+
+    # Checkpoint format validation
+    if module_focus == 'checkpoint':
+        checkpoint_errors = validate_checkpoint_format(content)
+        if checkpoint_errors:
+            print("❌ CHECKPOINT FORMAT ERRORS:")
+            for err in checkpoint_errors:
+                print(f"  → {err}")
+            print("  See: docs/l2-uk-en/CHECKPOINT-DESIGN-GUIDE.md")
+            has_critical_failure = True
 
     # Fill-in options check
     for title, text in section_map.items():

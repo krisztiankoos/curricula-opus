@@ -309,33 +309,39 @@ def validate_tone(content: str) -> list[str]:
 
 
 def validate_checkpoint_format(content: str) -> list[str]:
-    """Validate checkpoint modules follow Model → Practice → Check format.
+    """Validate checkpoint modules follow A1 checkpoint format.
+    
+    Required structure (per A1 M10 template):
+    - H1: # Checkpoint - [Name]
+    - Skills list in intro
+    - ## Skill N: [Name] sections (at least 1)
+    - Each skill has: ### Model:, ### Practice:, ### Self-Check
     
     See: docs/l2-uk-en/CHECKPOINT-DESIGN-GUIDE.md
     """
     errors = []
     
-    # Check for Overview section
-    if not re.search(r'^## Overview', content, re.MULTILINE):
-        errors.append("Checkpoint missing '## Overview' section")
+    # Check for H1 checkpoint title
+    if not re.search(r'^# Checkpoint', content, re.MULTILINE):
+        errors.append("Checkpoint missing '# Checkpoint - [Name]' H1 header")
     
     # Check for at least one Skill section  
     skill_matches = re.findall(r'^## Skill \d+:', content, re.MULTILINE)
     if not skill_matches:
         errors.append("Checkpoint missing '## Skill N:' sections (need at least 1)")
     
-    # Check each Skill section structure
+    # Check each Skill section structure (H3 headers required)
     skill_sections = re.split(r'^## Skill \d+:', content, flags=re.MULTILINE)[1:]
     for i, section in enumerate(skill_sections, 1):
         section_end = re.search(r'^##\s', section, re.MULTILINE)
         section_text = section[:section_end.start()] if section_end else section
         
-        if '**Model' not in section_text:
-            errors.append(f"Skill {i} missing '**Model:**' block")
-        if '**Practice' not in section_text:
-            errors.append(f"Skill {i} missing '**Practice:**' block")
-        if 'Self-Check' not in section_text:
-            errors.append(f"Skill {i} missing 'Self-Check:' block")
+        if not re.search(r'^### Model', section_text, re.MULTILINE):
+            errors.append(f"Skill {i} missing '### Model:' H3 header")
+        if not re.search(r'^### Practice', section_text, re.MULTILINE):
+            errors.append(f"Skill {i} missing '### Practice:' H3 header")
+        if not re.search(r'^### Self-Check', section_text, re.MULTILINE):
+            errors.append(f"Skill {i} missing '### Self-Check' H3 header")
     
     return errors
 

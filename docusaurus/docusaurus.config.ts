@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Curricula Opus',
-  tagline: 'A Theory-First Ukrainian Language Learning Platform',
+  title: 'Learn Ukrainian',
+  tagline: 'Мова – душа народу • Language is the soul of a nation',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -13,11 +13,11 @@ const config: Config = {
 
   clientModules: [],
 
-  url: 'https://krisztiankoos.github.io',
-  baseUrl: '/curricula-opus/',
+  url: 'https://learn-ukrainian.github.io',
+  baseUrl: '/',
 
-  organizationName: 'krisztiankoos',
-  projectName: 'curricula-opus',
+  organizationName: 'learn-ukrainian',
+  projectName: 'learn-ukrainian.github.io',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -50,9 +50,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Curricula Opus',
+      title: 'Learn Ukrainian',
       logo: {
-        alt: 'Curricula Opus Logo',
+        alt: 'Learn Ukrainian Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -99,7 +99,7 @@ const config: Config = {
           ],
         },
         {
-          href: 'https://github.com/krisztiankoos/curricula-opus',
+          href: 'https://github.com/learn-ukrainian/learn-ukrainian.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -147,12 +147,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/krisztiankoos/curricula-opus',
+              href: 'https://github.com/learn-ukrainian/learn-ukrainian.github.io',
             },
           ],
         },
       ],
-      copyright: `Curricula Opus © ${new Date().getFullYear()} — Слава Україні! 🇺🇦`,
+      copyright: `Learn Ukrainian © ${new Date().getFullYear()} — Слава Україні! 🇺🇦`,
     },
     prism: {
       theme: prismThemes.github,

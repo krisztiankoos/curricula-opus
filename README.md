@@ -1,88 +1,106 @@
-# Curricula Opus
+# Learn Ukrainian
 
-**A Theory-First Language Learning Platform**
+**Мова – душа народу • Language is the soul of a nation**
+
+A free, open-source Ukrainian language course from A1 to C2, based on the **Ukrainian State Standard 2024**.
+
+**[Start Learning →](https://learn-ukrainian.github.io)**
 
 ---
 
-## 🌐 Mission
+## What is this?
 
-Curricula Opus is a comprehensive language learning platform that provides structured, high-quality educational curricula. We believe in a **Theory-First** approach—deep understanding of grammar, culture, and history alongside practical application.
+A complete Ukrainian language curriculum for English speakers:
 
-Currently building a complete **Ukrainian as a Second Language (L2)** curriculum for English speakers.
+- **6 CEFR levels** (A1 → C2) with 500+ interactive lessons
+- **Theory-first approach** — understand grammar deeply, not just memorize phrases
+- **Interactive exercises** — quizzes, drag-and-drop, fill-in-the-blank, error correction
+- **Cultural context** — Ukrainian history, traditions, music, and literature
+- **100% free** — no ads, no subscriptions, no paywalls
 
-## ✨ Features
+## Quick Links
 
-- **📚 Comprehensive Curriculum** — A1 to C2 pathway aligned with CEFR and Ukrainian State Standards
-- **🎓 Theory-First Approach** — Deep grammar explanations, cultural context, and historical insights
-- **🎮 Interactive Activities** — Drag-and-drop exercises, quizzes, match-ups, and more
-- **🌍 Cultural Immersion** — Authentic materials, folklore, literature, and decolonization lens
-- **📖 Static Textbooks** — Human-readable Markdown and HTML for offline study
+| Level | Description | Status |
+|-------|-------------|--------|
+| [**A1 Beginner**](https://learn-ukrainian.github.io/docs/a1/) | Cyrillic alphabet, basic phrases, simple grammar | ✅ Complete (34 lessons) |
+| [**A2 Elementary**](https://learn-ukrainian.github.io/docs/a2/) | All 7 cases, verb aspects, comparisons | ✅ Complete (57 lessons) |
+| [**B1 Intermediate**](https://learn-ukrainian.github.io/docs/b1/) | Complex sentences, motion verbs, participles | 🔍 In QA (80 lessons) |
+| [**B2 Upper-Intermediate**](https://learn-ukrainian.github.io/docs/b2/) | Literature, academic writing, professional topics | 📋 Planned (135 lessons) |
+| [**C1 Advanced**](https://learn-ukrainian.github.io/docs/c1/) | Stylistics, registers, nuanced expression | 📋 Planned (115 lessons) |
+| [**C2 Mastery**](https://learn-ukrainian.github.io/docs/c2/) | Native-level proficiency, literary analysis | 📋 Planned (80 lessons) |
 
-## 🚀 Quick Start
+## Why Learn Ukrainian?
 
+- **45 million speakers** worldwide
+- **Rich literary tradition** — Shevchenko, Franko, Lesya Ukrainka
+- **Unique grammar** — 7 cases, verbal aspect, motion verb system
+- **Growing global interest** — solidarity with Ukraine
+
+## Features
+
+### For Learners
+- Step-by-step progression from zero to fluency
+- IPA pronunciation guides for every word
+- Authentic YouTube videos and podcasts
+- Self-assessment checkpoints every 10 lessons
+
+### For Developers
+- Open-source curriculum in Markdown
+- Automated quality audits
+- JSON export for app integration
+- Docusaurus-powered web platform
+
+## Getting Started
+
+### Online (Recommended)
+Visit **[learn-ukrainian.github.io](https://learn-ukrainian.github.io)** and start with A1 Module 1.
+
+### Local Development
 ```bash
-# Clone and install
-git clone https://github.com/krisztiankoos/curricula-opus.git
-cd curricula-opus
+git clone https://github.com/learn-ukrainian/learn-ukrainian.github.io.git
+cd learn-ukrainian.github.io
 npm install
 
-# Generate MDX content for Docusaurus
-npm run generate l2-uk-en a1
-
-# Start the interactive learning platform
-cd docusaurus
-npm start
-# Opens at http://localhost:3000/curricula-opus/
+# Start the web platform
+cd docusaurus && npm start
+# Opens at http://localhost:3000/
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```
-curricula-opus/
-├── curriculum/l2-uk-en/     # Source curriculum in Markdown
-│   ├── a1/                  # A1 modules (01-30)
-│   ├── a2/                  # A2 modules (01-50)
-│   └── ...                  # B1, B2, C1, C2
-├── docs/l2-uk-en/           # Curriculum plans & guidelines
-├── docusaurus/              # Interactive web platform (Docusaurus)
-│   ├── docs/                # Generated MDX content
-│   └── src/components/      # Interactive activity components
-├── output/                  # Generated static HTML/JSON
-└── scripts/                 # Build & generation tools
+learn-ukrainian/
+├── curriculum/l2-uk-en/     # Source lessons (Markdown)
+│   ├── a1/                  # A1: 34 modules
+│   ├── a2/                  # A2: 57 modules
+│   ├── b1/                  # B1: 80 modules (in progress)
+│   └── ...                  # B2, C1, C2
+├── docusaurus/              # Web platform
+│   ├── docs/                # Generated lesson pages
+│   └── src/components/      # Interactive activities
+├── scripts/                 # Build tools & quality audits
+└── docs/                    # Curriculum plans
 ```
 
-## 🛠️ Commands
+## Standards & Quality
 
-| Command | Description |
-|---------|-------------|
-| `npm run generate l2-uk-en a1` | Generate HTML/JSON for A1 modules |
-| `python3 scripts/audit_module.py <file>` | Audit a module for quality |
-| `npx ts-node scripts/generate-mdx.ts l2-uk-en a1` | Generate MDX for Docusaurus |
+- **CEFR-aligned** — Common European Framework of Reference
+- **Ukrainian State Standard 2024** — Official language proficiency requirements
+- **Automated audits** — Every lesson checked for vocabulary, grammar, activity counts
+- **Looking for native reviewers** — Help us improve linguistic accuracy!
 
-## 📈 Progress
+## Contributing
 
-| Level | Modules | Status |
-|-------|---------|--------|
-| **A1** | 30 | 11 complete, 19 in progress |
-| **A2** | 50 | Planning complete |
-| **B1** | 80 | Planning complete |
-| **B2** | 125 | Planning complete |
-| **C1** | 115 | Planning complete |
-| **C2** | 80 | Planning complete |
+We welcome contributions! See:
+- `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md` — Content quality standards
+- `CLAUDE.md` — AI agent instructions
 
-## 🗺️ Roadmap
+## License
 
-- [x] A1-C2 Curriculum Planning
-- [x] Interactive Web Platform (Docusaurus)
-- [x] Drag-and-Drop Activities
-- [ ] Complete A1 Content (30 modules)
-- [ ] Audio Integration
-- [ ] Mobile App
-
-## 🤝 Contributing
-
-See `docs/` for content guidelines and `CLAUDE.md` / `GEMINI.md` for AI agent instructions.
+Content is provided for educational use. See LICENSE for details.
 
 ---
 
 **Слава Україні! 🇺🇦**
+
+*Learn Ukrainian is an open-source project. Star us on GitHub to support Ukrainian language education.*

@@ -16,7 +16,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-          <span className={styles.heroSubtitle}>Theory-First</span> Ukrainian Language Learning
+          {siteConfig.tagline}
         </p>
         <div className={styles.buttons}>
           <Link
@@ -168,7 +168,7 @@ export default function Home(): ReactNode {
                 level="B2"
                 name="Upper-Intermediate"
                 description="Literature, academic, professional contexts"
-                modules={125}
+                modules={135}
                 color="#C2185B"
               />
               <LevelCard

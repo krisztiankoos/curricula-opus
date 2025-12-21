@@ -270,10 +270,12 @@ The following dialogues demonstrate how aspects combine naturally in everyday Uk
 
 ---
 
-> ⚡ **Myth vs Fact**
+> ⚡ **Myth Buster: The "Impossible" Language**
 >
 > **Myth:** "Ukrainian aspect is impossibly difficult for foreigners."
-> **Fact:** While aspect is unfamiliar to English speakers, the rules are systematic and learnable. Russian propaganda often claims Ukrainian is "too difficult for foreigners" to discourage learning. In reality, millions of Ukrainians abroad teach their children aspect naturally. The Kyiv-Mohyla Academy developed aspect teaching methods as early as the 17th century. The difficulty is not inherent — it's just unfamiliar.
+> **Reality:** False! It's just unfamiliar, not impossible.
+> - Russian propaganda historically claimed Ukrainian was "too difficult" or "artificial" to discourage people from learning it.
+> - In reality, it's highly systematic. Millions of L2 learners have mastered it. The Kyiv-Mohyla Academy has been teaching it since the 17th century. Don't let the "difficulty myth" scare you!
 
 ---
 
@@ -748,7 +750,7 @@ From this point on, focus on exposure and production. Read Ukrainian texts, list
 9. сиділи | посиділи | сидять | посидять
    > [!answer] сиділи
 
-10. читала | прочитала | читає | прочитає
+10. розмовляли | поговорили | розмовляють | поговорять
     > [!answer] розмовляли
 
 11. лягла | лягала | лягає | ляже

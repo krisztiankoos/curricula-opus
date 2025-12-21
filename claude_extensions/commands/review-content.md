@@ -66,7 +66,10 @@ Score each criterion 1-5:
 - Grammatically correct Ukrainian
 - Grammatically correct English explanations
 - Consistent terminology
-- **No Russisms/Surzhik:** Strictly standard Ukrainian (e.g., use 'так' not 'да', 'будь ласка' not 'пожалуйста', 'звичайно' not 'канешно'). Flag any non-standard usage.
+- **No Russisms/Surzhik:** Strictly standard Ukrainian (e.g., use 'так' not 'да', 'будь ласка' not 'пожалуйста'). Reference: Antonenko-Davydovych.
+- **Stylistic Syntax:** Active verbal constructions ("ми вирішили") > Passive ("нами було вирішено").
+- **Source Verification:** Confirm questionable words via Goroh.pp.ua or Grinchenko.
+- **No Latin Transliteration:** Cyrillic only (except A1.1).
 
 **5. Pedagogical Correctness**
 - **Sequence:** Does it teach A before B? (e.g., specific letters before reading words)

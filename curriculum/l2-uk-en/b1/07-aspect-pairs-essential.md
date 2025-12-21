@@ -95,10 +95,12 @@ Some pairs use completely different roots:
 
 ---
 
-> ⚡ **Myth vs Fact**
+> ⚡ **Myth Buster: The "Soulmate" Myth**
 > 
-> **Myth:** "Every imperfective verb has exactly one perfective partner."
-> **Fact:** Some imperfective verbs have multiple perfective partners with different meanings. For example: «писати» → «написати» (complete writing), «підписати» (sign), «переписати» (rewrite).
+> **Myth:** "Every imperfective verb has exactly one 'soulmate' perfective partner."
+> **Reality:** No! It's complicated. Relationships are messy.
+> - One imperfective (**писати**) can have many perfective partners depending on meaning: **написати** (write completely), **підписати** (sign), **переписати** (rewrite).
+> - Don't look for "the" one perfective — look for the one that matches your specific meaning.
 
 ---
 
@@ -769,16 +771,16 @@ Understanding how aspect pairs are formed helps you predict forms for new verbs 
 9. купив | купував | купую | куплю
    > [!answer] купив
 
-10. забула | забувала | забуває | забуде
-    > [!answer] виконати
+770. забула | забувала | забуває | забуде
+    > [!answer] забула
 
 11. запропонували | пропонували | пропонують | запропонують
     > [!answer] запропонували
 
-12. дозволили | дозволяли | дозволяють | дозволять
+12. дозволив | дозволяли | дозволяють | дозволять
     > [!answer] дозволив
 
-13. увімкнув | вмикав | вмикаю | увімкну
+13. вимкнув | вимикав | вимикаю | вимкну
     > [!answer] вимкну
 
 14. пояснила | пояснювала | пояснює | пояснить

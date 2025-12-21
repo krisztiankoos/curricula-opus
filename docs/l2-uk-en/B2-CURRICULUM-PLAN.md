@@ -36,6 +36,7 @@ B2 modules use a **reduced bilingual approach** compared to B1:
 ## Quality Standards & Pedagogical Strategy
 
 **Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+**Philosophy:** `claude_extensions/quick-ref/philosophy.md` (Strict Linguistic Standards)
 
 ### Content-Based Instruction (CBI): "Content is King"
 At B2, the focus shifts from "learning to read" to **"reading to learn"**. The primary driver of learning is **long, rich, detailed text**.

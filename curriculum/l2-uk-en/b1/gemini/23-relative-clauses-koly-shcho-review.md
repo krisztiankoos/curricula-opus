@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1802/1500
+- **Words:** ✅ 1884/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 8/5
+- **Engagement:** ✅ 9/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 58.9% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 57.7% (target 40-68% (B1.3-4 Complex))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -26,7 +26,7 @@
 | **Part 1: коли (Time Relatives)** | ⚪️ | 272 | Skipped |
 | **Part 2: що (Fact/Concept Relatives)** | ✅ | 339 | Included in Core |
 | **Contrasting коли and що** | ⚪️ | 106 | Skipped |
-| **Поглиблення** | ⚪️ | 0 | Skipped |
+| **Поглиблення** | ⚪️ | 82 | Skipped |
 | **Complex Constructions** | ⚪️ | 69 | Skipped |
 | **Діалог: Спогади** | ✅ | 119 | Included in Core |
 | **Діалог 2: Філософська розмова** | ✅ | 234 | Included in Core |

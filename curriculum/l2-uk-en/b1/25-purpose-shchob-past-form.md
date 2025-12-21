@@ -135,6 +135,13 @@ The past form agrees with the PURPOSE clause subject in gender:
 
 ---
 
+> ⚡ **Myth Buster: The "Past Tense" Panic**
+>
+> **Myth:** "Why are we talking about the past? I want him to do it NOW!"
+> **Reality:** When you see «Хочу, щоб він **робив**», don't panic. This isn't about the past. In this specific construction (after **щоб**), the "past" form loses its time meaning and becomes a marker of *unreality* or *desire* (the Subjunctive Mood). It's not "he did" — it's "he **would** do". The form is old, but the function is timeless desire.
+
+---
+
 ## Contrasting Same-Subject vs Different-Subject
 
 | English | Same Subject | Different Subject |

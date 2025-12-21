@@ -248,6 +248,13 @@ These place relatives connect to a larger system:
 
 ---
 
+> ⚡ **Myth Buster: The "Where" Illusion**
+>
+> **Myth:** "Ukrainians understand if I just use **де** for everything."
+> **Reality:** Using **де** for destination sounds confusingly wrong, like saying "Where are you going AT?" instead of "TO". If you say «Я йду, де ти» (I'm walking where you are [located]), a Ukrainian expects to see you walking in circles at that spot. If you mean destination, you MUST say «Я йду, **куди** ти» (I'm walking [to] where you are [going]). The direction is encoded in the word itself.
+
+---
+
 ### Practical Application Guide
 
 Understanding when to use each word requires focusing on the verb's semantic nature rather than the English translation. English speakers often struggle because "where" covers all three concepts. Here's a decision process:

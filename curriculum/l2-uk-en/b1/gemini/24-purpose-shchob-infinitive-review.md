@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1674/1500
+- **Words:** ✅ 1760/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 58.4% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 57.4% (target 40-68% (B1.3-4 Complex))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -24,7 +24,7 @@
 | **Why Do We Do Things?** | ⚪️ | 259 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
 | **The Same-Subject Pattern** | ✅ | 426 | Included in Core |
-| **Negation in Purpose Clauses** | ⚪️ | 224 | Skipped |
+| **Negation in Purpose Clauses** | ⚪️ | 310 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Purpose vs Other Constructions** | ⚪️ | 70 | Skipped |
 | **Діалог: На роботі** | ✅ | 119 | Included in Core |

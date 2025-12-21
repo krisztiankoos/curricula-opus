@@ -13,6 +13,7 @@
 ## Quality Standards & Pedagogical Strategy
 
 **Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+**Philosophy:** `claude_extensions/quick-ref/philosophy.md` (Strict Linguistic Standards)
 
 ### Philosophy: Stylistic Perfection & Creative Production
 At C2, the learner acts as a creator and expert user of the language.

@@ -158,6 +158,13 @@ To express "in order NOT to," use **щоб не + infinitive**:
 
 ---
 
+> ⚡ **Myth Buster: The "To" Trap**
+>
+> **Myth:** "English 'to' always equals Ukrainian infinitive."
+> **Reality:** False! English "I want **to** go" and "I want him **to** go" look identical. But Ukrainian sees two completely different logical structures. "I want **to** go" = same subject = infinitive («хочу піти»). "I want him **to** go" = different subject = **impossible** with infinitive. You can't say «хочу його піти». You must switch to a clause: «хочу, **щоб** він пішов». Don't let the English "to" fool you!
+
+---
+
 ### The Logic Behind Same-Subject Infinitive
 
 The grammatical principle is straightforward: when the person who performs the main verb is the same person who will perform the purpose verb, Ukrainian uses the simple infinitive. This parallels English "to + verb" constructions but with an explicit purpose marker (щоб). Compare: "I came to help" — the subject "I" both came and will help. Ukrainian follows the same logic with its infinitive construction.

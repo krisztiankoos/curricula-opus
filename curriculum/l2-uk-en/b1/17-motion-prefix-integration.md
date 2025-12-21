@@ -185,10 +185,13 @@ The prefix за- with motion verbs typically means "to stop briefly" or "to drop
 
 ---
 
-> ⚡ **Myth vs Fact**
-> 
-> **Myth:** "Motion verb prefixes work the same way in all Slavic languages."
-> **Fact:** While there are similarities, each Slavic language developed its prefix system uniquely. Ukrainian's обійти (go around) corresponds to Russian обойти, but many combinations differ. For example, Ukrainian надійти (be received/arrive) has no direct Russian equivalent with the same meaning. Learning Ukrainian prefixes as a system, not through Russian translation, gives more accurate results.
+> ⚡ **Myth Buster: The "Pan-Slavic" Trap**
+>
+> **Myth:** "I know Russian/Polish, so I can guess the Ukrainian prefixes."
+> **Reality:** Trap! False friends abound.
+> - Russian 'найти' implies finding, while Ukrainian **надійти** can mean 'to arrive/approach'.
+> - Polish 'zapomnieть' (forget) looks like Ukrainian **запам'ятати** (remember).
+> Trust the Ukrainian logic, not your neighbors!
 
 ---
 

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1658/1500
+- **Words:** ✅ 1684/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 56.0% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 55.6% (target 40-68% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,7 +23,7 @@
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **Test Your Current Knowledge** | ⚪️ | 154 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
-| **Як утворюються видові пари** | ⚪️ | 241 | Skipped |
+| **Як утворюються видові пари** | ⚪️ | 267 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **The Complete B1 Aspect Pair Collection** | ⚪️ | 124 | Skipped |
 | **40 найважливіших пар** | ⚪️ | 211 | Skipped |

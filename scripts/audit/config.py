@@ -830,9 +830,11 @@ def get_b1_immersion_range(module_num: int) -> tuple[int, int]:
     to compensate, but 45-50% proved unrealistic for this structure.
     """
     if module_num <= 45:
-        return (40, 68)  # B1.1-4: Grammar-heavy (Aspect, Motion, Complex, Participles) - widened for extensive English explanations
+        return (40, 68)  # B1.1-4: Grammar-heavy (Aspect, Motion, Complex, Participles)
+    elif module_num <= 65:
+        return (60, 80)  # B1.5-6 (46-65): Vocabulary expansion (65-75% target, widened)
     else:
-        return (80, 100)  # B1.5-8 (46-80): "Reading to Learn" - deep immersion, minimize English scaffolding
+        return (65, 85)  # B1.7-8 (66-80): Skills & Culture (70-80% target, widened)
 
 
 def get_level_config(level_code: str, module_focus: str = None) -> dict:

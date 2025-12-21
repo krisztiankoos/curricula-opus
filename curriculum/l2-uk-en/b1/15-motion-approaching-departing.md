@@ -39,6 +39,17 @@ vocabulary_count: 25
 
 ---
 
+> ⚡ **Myth Buster: The "Arrive" Ambiguity**
+>
+> **Myth:** "There is one Ukrainian word for 'arrive'."
+> **Reality:** 'Arrival' is too vague for Ukrainian!
+> - **Під'їхати** = Pull up close (arriving *at* the building, not inside).
+> - **Доїхати** = Reach the final destination (completing the journey).
+> - **Приїхати** = Arrive (general fact).
+> If you tell a taxi driver "Я доїхав" instead of "Ми під'їхали" (We have pulled up), they might look at you confused. Precision is key!
+
+---
+
 ## Аналіз
 
 ### Відкриття закономірності

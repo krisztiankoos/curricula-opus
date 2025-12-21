@@ -209,10 +209,13 @@ The prefix за- creates verbs meaning "starting" an action (often suddenly):
 
 ---
 
-> ⚡ **Myth vs Fact**
-> 
-> **Myth:** «Щоб вивчити українські префікси, потрібно запам'ятати тисячі слів окремо.»
-> **Fact:** Знання 10-15 базових префіксів відкриває значення тисяч слів. Патерн виробляти, викладати, виконувати працює системно — вивчивши один, ви розумієте всі. Це робить українську мову логічною та передбачуваною, незважаючи на багатство словника.
+> ⚡ **Myth Buster: The "Vocabulary Wall" Myth**
+>
+> **Myth:** "Ukrainian vocabulary is impossible because there are so many words to memorize."
+> **Reality:** You don't need to memorize them all individually!
+> - Ukrainian words are modular, like Lego bricks.
+> - If you know **ви-** (out) and **робити** (do), you automatically know **виробляти** (produce).
+> - Don't memorize the castle; memorize the usage of the bricks. The system works for you.
 
 ---
 

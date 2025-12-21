@@ -13,6 +13,7 @@
 ## Quality Standards & Pedagogical Strategy
 
 **Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+**Philosophy:** `claude_extensions/quick-ref/philosophy.md` (Strict Linguistic Standards)
 
 ### Philosophy: Immersion & Analysis
 At C1, the learner is no longer "studying" Ukrainian but "studying IN" Ukrainian.

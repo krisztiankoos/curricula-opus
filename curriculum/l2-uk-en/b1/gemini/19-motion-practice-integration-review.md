@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1540/1500
+- **Words:** ✅ 1542/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 59.3% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 59.4% (target 40-68% (B1.2 Motion))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -27,7 +27,7 @@
 | **Scenario 2: Travel Planning Dialogue** | ✅ | 181 | Included in Core |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Extended Practice: Multiple Contexts** | ✅ | 208 | Included in Core |
-| **Dialogue Practice: Complex Scenarios** | ✅ | 150 | Included in Core |
+| **Dialogue Practice: Complex Scenarios** | ✅ | 152 | Included in Core |
 | **Historical Journey: The Chumaks** | ⚪️ | 132 | Skipped |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **Motion Integration Checklist** | ➖ | 166 | Excluded Type |

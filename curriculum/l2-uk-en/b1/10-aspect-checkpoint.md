@@ -34,7 +34,16 @@ This checkpoint reviews skills from Modules 01-09:
 - **Skill 5:** Aspect in Narratives (background vs plot points)
 
 ---
-
+ 
+> ⚡ **Myth Buster: The "Fluency" Trap**
+> 
+> **Myth:** "True fluency means never making aspect mistakes."
+> **Reality:** Even native speakers sometimes rephrase!
+> - **Mistake:** "Вчора я зробив..." (Wait, I want to emphasize the process) -> "Тобто, я *робив* це весь вечір."
+> - Fluency isn't about being perfect 100% of the time. It's about **self-repair**. If you catch your own aspect error and fix it immediately, you are demonstrating advanced linguistic awareness.
+ 
+---
+ 
 ## Skill 1: Process vs Result
 
 ### Model:

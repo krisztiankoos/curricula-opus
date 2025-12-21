@@ -3,24 +3,24 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1688/1500
+- **Words:** ✅ 1783/1500
 - **Activities:** ✅ 19/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 55.6% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 54.9% (target 40-68% (B1.2 Motion))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Дієслова руху — Повна система** | ⚪️ | 43 | Skipped |
-| **Діагностика** | ✅ | 120 | Included in Core |
+| **Діагностика** | ✅ | 215 | Included in Core |
 | **Аналіз** | ✅ | 158 | Included in Core |
 | **Поглиблення** | ⚪️ | 714 | Skipped |
 | **The Logic of Space: Vectors vs. Fields** | ⚪️ | 317 | Skipped |

@@ -183,6 +183,15 @@ The first highlights WHEN something happened; the second highlights WHAT was sai
 
 ## Поглиблення
 
+---
+
+> ⚡ **Myth Buster: Word Order Straitjacket**
+>
+> **Myth:** "I must keep the relative clause right after the noun, like in English."
+> **Reality:** Ukrainian loves freedom! While placing the clause after the noun is standard, you can split them for emphasis. «**Те** мені не сподобалося, **що** він сказав» (Literally: *That* to me didn't like, *what* he said). In English, this breaks the sentence. In Ukrainian, the grammar connects the words across the distance, allowing you to highlight the emotion first.
+
+---
+
 ## Complex Constructions
 
 Ukrainian allows elegant layering of these relatives:

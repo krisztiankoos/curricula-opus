@@ -35,6 +35,17 @@ This checkpoint reviews skills from Modules 11-19:
 
 ---
 
+> ⚡ **Myth Buster: The "Walking" Trap**
+>
+> **Myth:** "Walking is just walking."
+> **Reality:** Ukrainian distinguishes *how* you walk!
+> - **Іти** = Walking with a purpose (A to B).
+> - **Ходити** = Walking generally, back and forth, or habitually.
+> - **Гуляти** = Walking for pleasure (strolling).
+> Don't say "Я гуляю до офісу" unless you are really, really enjoying your commute!
+
+---
+
 ## Skill 1: Determinate vs Indeterminate
 
 ### Model:

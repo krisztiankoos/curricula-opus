@@ -252,6 +252,13 @@ The second "книгу" becomes "яку" because it's the object of "реком�
 
 ---
 
+> ⚡ **Myth Buster: The "Universal That" Trap**
+>
+> **Myth:** "I can just use **що** for all relative clauses, like English 'that'."
+> **Reality:** No! English "that" is a shapeshifter. In "The man **that** I saw," it replaces *who/whom*. In Ukrainian, you CANNOT use relative **що** here. You must use **який** (declined): «Чоловік, **якого** я бачив.» Using **що** («Чоловік, що я бачив») is either archaic or ungrammatical in standard modern Ukrainian. Reserve relative **що** mainly for facts («те, що я знаю») and abstract concepts.
+
+---
+
 > 📚 **Literary Corner: Shevchenko's Relative Clauses**
 >
 > Taras Shevchenko masterfully used relative clauses to create flowing, emotional poetry. Consider this line: «Земле, *яку* я так люблю, *в якій* лежать мої предки...» (Land, which I love so much, in which my ancestors lie...) The chain of relative clauses builds emotional intensity while maintaining grammatical precision. This technique survives in modern Ukrainian literature — a direct line from our greatest poet to contemporary prose.

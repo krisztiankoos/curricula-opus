@@ -42,6 +42,12 @@ Read this text and pay attention to the highlighted verbs. Why did the speaker c
 > 
 > Think of aspect in narratives like a movie: perfective verbs are the "action shots" (she arrived, she checked, she answered), while imperfective verbs are the "montage scenes" showing duration (she was preparing all morning). This pattern is consistent across all Ukrainian storytelling, from casual conversation to formal reports.
 
+> ⚡ **Myth Buster: The "Busy Bee" Fallacy**
+> 
+> **Myth:** "If I say 'I worked' (**працював**) a lot, my boss will be impressed."
+> **Reality:** Danger! In Ukrainian business culture, Imperfective (**працював**, **писав**) emphasizes *process*, not *result*. It sounds like: "I was busy, but finished nothing."
+> - To impress, use Perfective: "I **wrote** (**написав**) the report." "I **solved** (**вирішив**) the problem."
+
 ---
 
 ## Аналіз

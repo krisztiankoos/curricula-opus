@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1578/1500
+- **Words:** ✅ 1602/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 62.8% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 61.1% (target 40-68% (B1.2 Motion))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,7 +23,7 @@
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **When Motion Means Something Else** | ⚪️ | 303 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
-| **How Motion Prefixes Transfer Meaning** | ⚪️ | 557 | Skipped |
+| **How Motion Prefixes Transfer Meaning** | ⚪️ | 581 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Combining Patterns: Advanced Word Formation** | ✅ | 153 | Included in Core |
 | **Діалог: На роботі** | ✅ | 59 | Included in Core |

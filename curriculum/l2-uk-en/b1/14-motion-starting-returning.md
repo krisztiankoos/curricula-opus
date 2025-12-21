@@ -48,6 +48,17 @@ Questions (find the verbs):
 
 ---
 
+> ⚡ **Myth Buster: The "Just Going" Trap**
+>
+> **Myth:** "I can just say 'I am going' for everything."
+> **Reality:** Ukrainian movement is precise!
+> - **Я йду в магазин** = I am walking there right now.
+> - **Я пішов в магазин** = I have left (and am not here).
+> - **Я зайшов в магазин** = I stopped there briefly on my way somewhere else.
+> Choosing the wrong prefix can make you seem lost or unreliable. Be specific!
+
+---
+
 ## Аналіз
 
 ### Відкриття закономірності

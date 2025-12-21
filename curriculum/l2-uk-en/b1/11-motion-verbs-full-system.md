@@ -44,6 +44,17 @@ vocabulary_count: 25
 
 ---
 
+> ⚡ **Myth Buster: The "Go" Trap**
+>
+> **Myth:** "I can just use one word for 'go' like in English."
+> **Reality:** If you do this, you might accidentally say you are walking to another country!
+> - **Я йду до Парижа** = I am walking to Paris right now (taking steps on the highway).
+> - **Я їду до Парижа** = I am driving/riding to Paris right now.
+> - **Я їжджу до Парижа** = I go to Paris regularly (by vehicle).
+> precision is not optional—it's how the language thinks about space.
+
+---
+
 ## Аналіз
 
 ### Основна відмінність: Один напрямок vs. Багато напрямків

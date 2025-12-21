@@ -346,10 +346,14 @@ The key to mastering figurative motion is context. The same verb can be purely p
 
 ---
 
-> ⚡ **Myth vs Fact**
-> 
-> **Myth:** "Ukrainian is just a dialect of Russian, so figurative expressions are the same."
-> **Fact:** While some expressions overlap, Ukrainian has distinct figurative uses. For example, the critical distinction between "виходить" (neutral outcome) and "випливає" (logical consequence) doesn't exist in Russian. Ukrainian's figurative motion system reflects its unique cognitive patterns, shaped by centuries of distinct cultural and linguistic development.
+> ⚡ **Myth Buster: The "Copy-Paste" Myth**
+>
+> **Myth:** "Figurative meanings are the same in all Slavic languages."
+> **Reality:** False! While roots are shared, metaphors evolve differently.
+> - In Russian, **виходить** often implies just walking out.
+> - In Ukrainian logic, **виходить** (it turns out) implies a result *emerging*.
+> - **Випливає** (flows out) = logical consequence.
+> Don't translate idioms word-for-word between languages!
 
 ---
 

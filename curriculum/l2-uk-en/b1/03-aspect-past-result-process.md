@@ -163,6 +163,14 @@ Think of perfective as answering the question: "Is there something to show for i
 
 ### Ключова різниця — "за + час" vs "час" у знахідному
 
+> ⚡ **Myth Buster: The Preposition Power**
+>
+> **Myth:** "Time phrases work the same in Ukrainian as in English."
+> **Reality:** No! One tiny preposition changes everything.
+> - **Годину** (No preposition) = Duration = **Imperfective** («Я писав годину» - I was writing for an hour).
+> - **ЗА годину** (With preposition) = Result Time = **Perfective** («Я написав за годину» - I finished it in an hour).
+> Don't ignore the *за*! It's the switch that turns "process" into "result".
+
 This is one of the most useful distinctions for English speakers to master. The preposition "за" completely changes the meaning:
 
 | Construction | Aspect | English | Example |

@@ -9,6 +9,19 @@
 <critical>
 
 
+### Content Philosophy & Standards
+
+> [!important] **Linguistic Purity & Source Authority**
+>
+> All content must adhere to strict linguistic standards:
+> *   **No Surzhyk:** Zero tolerance.
+> *   **No Transliteration:** Cyrillic only (except A1.1).
+> *   **Active Syntax:** Avoid passive voice.
+> *   **Source Hierarchy:** Verification via Goroh, Grinchenko, Antonenko-Davydovych.
+>
+> **Full Guidelines:** [`claude_extensions/quick-ref/philosophy.md`](claude_extensions/quick-ref/philosophy.md)
+
+
 ### Resource Section Placement
 
 > [!important]

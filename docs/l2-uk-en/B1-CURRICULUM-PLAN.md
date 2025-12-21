@@ -9,6 +9,7 @@
 ## Quality Standards & Pedagogical Strategy
 
 **Reference:** `docs/l2-uk-en/MODULE-RICHNESS-GUIDELINES-v2.md`
+**Philosophy:** `claude_extensions/quick-ref/philosophy.md` (Strict Linguistic Standards & Source Authority)
 
 ### Bilingual Content Strategy (B1 Specific)
 

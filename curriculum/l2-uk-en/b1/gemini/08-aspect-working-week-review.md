@@ -3,25 +3,25 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1629/1500
+- **Words:** ✅ 1692/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 6/5
+- **Engagement:** ✅ 7/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 37/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 63.5% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 62.8% (target 40-68% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Untitled** | ⚪️ | 38 | Skipped |
 | **Діагностика** | ✅ | 0 | Included in Core |
-| **A Monday at Work: Aspect in Action** | ⚪️ | 181 | Skipped |
+| **A Monday at Work: Aspect in Action** | ⚪️ | 244 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
 | **Aspect in the Workplace: A Complete Guide** | ⚪️ | 204 | Skipped |
 | **Діалоги на роботі** | ✅ | 469 | Included in Core |

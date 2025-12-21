@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ⚠️ 3932/1500 (>2500 may be too long)
+- **Words:** ⚠️ 4020/1500 (>2500 may be too long)
 - **Activities:** ✅ 15/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 9/5
+- **Engagement:** ✅ 10/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 50.3% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 49.8% (target 40-68% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -22,7 +22,7 @@
 | **Вид дієслова — Повна система** | ⚪️ | 44 | Skipped |
 | **Diagnostic** | ✅ | 215 | Included in Core |
 | **Analysis** | ⚪️ | 994 | Skipped |
-| **Deep Dive** | ✅ | 1474 | Included in Core |
+| **Deep Dive** | ✅ | 1562 | Included in Core |
 | **Practice** | ⚪️ | 661 | Skipped |
 | **Підсумок** | ✅ | 464 | Included in Core |
 | **Need More Practice?** | ⚪️ | 80 | Skipped |

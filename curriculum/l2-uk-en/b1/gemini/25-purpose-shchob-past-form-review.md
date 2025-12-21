@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1570/1500
+- **Words:** ✅ 1654/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 7/5
+- **Engagement:** ✅ 8/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 55.6% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 54.6% (target 40-68% (B1.3-4 Complex))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,7 +23,7 @@
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **When Someone Else Does It** | ⚪️ | 295 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
-| **The Different-Subject Pattern** | ✅ | 433 | Included in Core |
+| **The Different-Subject Pattern** | ✅ | 517 | Included in Core |
 | **Contrasting Same-Subject vs Different-Subject** | ⚪️ | 130 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Complex Constructions** | ⚪️ | 93 | Skipped |

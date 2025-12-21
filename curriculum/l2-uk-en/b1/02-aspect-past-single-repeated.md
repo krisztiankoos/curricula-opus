@@ -144,6 +144,14 @@ Other time expressions signal **patterns, habits, or repeated actions**. These a
 
 **How This Differs from English "Used To"**
 
+> ⚡ **Myth Buster: The "Used To" Crutch**
+>
+> **Myth:** "Ukrainian Imperfective is just like English 'used to'."
+> **Reality:** Not quite! "Used to" only works for *past habits that have stopped*. But Ukrainian Imperfective works for ANY repetition.
+> - "I **used to** read" = Я читав — Correct.
+> - "Last week I **swam** every day" = Я плавав щодня — Correct.
+> You can't say "Last week I used to swim". But in Ukrainian, the repetition makes it Imperfective regardless of the timeframe!
+
 English speakers often try to map Ukrainian imperfective to "used to" (e.g., "I used to read"). While there's overlap, Ukrainian imperfective is broader. Consider:
 
 - "I used to read every day" → Я читав щодня (imperfective — correct)

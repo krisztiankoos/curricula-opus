@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1766/1500
+- **Words:** ✅ 1855/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 8/5
+- **Engagement:** ✅ 9/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 59.1% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 58.0% (target 40-68% (B1.3-4 Complex))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -28,7 +28,7 @@
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Related Adverbs** | ⚪️ | 40 | Skipped |
 | **Діалог: Планування подорожі** | ✅ | 127 | Included in Core |
-| **Діалог 2: На вокзалі** | ✅ | 328 | Included in Core |
+| **Діалог 2: На вокзалі** | ✅ | 417 | Included in Core |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **Quick Decision Guide** | ⚪️ | 242 | Skipped |
 | **Need More Practice?** | ⚪️ | 93 | Skipped |

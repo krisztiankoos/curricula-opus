@@ -3,24 +3,24 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1172/800
+- **Words:** ✅ 1247/800
 - **Activities:** ✅ 12/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 3/3
+- **Engagement:** ✅ 4/3
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 69.0% (checkpoint - no gate)
+- **Immersion:** 🇺🇦 67.4% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Контрольна точка: Вид** | ⚪️ | 23 | Skipped |
-| **Overview** | ⚪️ | 52 | Skipped |
+| **Overview** | ⚪️ | 127 | Skipped |
 | **Skill 1: Process vs Result** | ⚪️ | 189 | Skipped |
 | **Skill 2: Past Tense Patterns** | ✅ | 155 | Included in Core |
 | **Skill 3: Negation Patterns** | ✅ | 146 | Included in Core |

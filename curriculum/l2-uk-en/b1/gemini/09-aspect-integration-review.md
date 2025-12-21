@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1638/1500
+- **Words:** ✅ 1637/1500
 - **Activities:** ✅ 13/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 56.8% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 57.0% (target 40-68% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -27,7 +27,7 @@
 | **Combined Contexts: How Aspects Work Together** | ✅ | 424 | Included in Core |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Advanced Cases: Where Aspect Gets Tricky** | ⚪️ | 167 | Skipped |
-| **Practice Dialogues: Aspect in Real Conversations** | ✅ | 353 | Included in Core |
+| **Practice Dialogues: Aspect in Real Conversations** | ✅ | 352 | Included in Core |
 | **Need More Practice?** | ⚪️ | 80 | Skipped |
 | **Практика** | ⚪️ | 0 | Skipped |
 | **Вправа: Наратив** | ⚪️ | 70 | Skipped |

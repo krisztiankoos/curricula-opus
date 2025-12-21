@@ -3,24 +3,24 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1552/1500
+- **Words:** ✅ 1627/1500
 - **Activities:** ✅ 19/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 8/5
+- **Engagement:** ✅ 9/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 25/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 53.1% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 52.5% (target 40-68% (B1.2 Motion))
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Рух — Прибуття та від'їзд** | ⚪️ | 0 | Skipped |
-| **Діагностика** | ✅ | 83 | Included in Core |
+| **Діагностика** | ✅ | 158 | Included in Core |
 | **Аналіз** | ✅ | 58 | Included in Core |
 | **Поглиблення** | ⚪️ | 1020 | Skipped |
 | **Need More Practice?** | ⚪️ | 78 | Skipped |

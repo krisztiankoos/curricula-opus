@@ -139,6 +139,14 @@ Infinitive + **-му/-меш/-ме/-мемо/-мете/-муть**
 
 ### 3. Простий майбутній час — Perfective verbs
 
+> ⚡ **Myth Buster: The "Double Will" Trap**
+>
+> **Myth:** "To make future tense, I always add **буду**."
+> **Reality:** Stop right there! **Буду** works ONLY with imperfective infinitives.
+> - **Wrong:** Я буду прочитати (I will to have read).
+> - **Right:** Я **прочитаю** (I will read).
+> Perfective verbs are futuristic by nature. They don't need help from "to be". Adding "буду" to a perfective verb is the #1 dead giveaway of a foreigner.
+
 Perfective verbs don't need any auxiliary — their conjugated forms already express future meaning. This is because perfective aspect inherently points to completion, which can only happen in the future (from the speaker's perspective).
 
 **Приклади:**

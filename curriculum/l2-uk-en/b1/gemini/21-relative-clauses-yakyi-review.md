@@ -3,18 +3,18 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1681/1500
+- **Words:** ✅ 1766/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 8/5
+- **Engagement:** ✅ 9/5
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/20
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 57.1% (target 40-68% (B1.3-4 Complex))
+- **Immersion:** 🇺🇦 56.1% (target 40-68% (B1.3-4 Complex))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -27,7 +27,7 @@
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Combining Sentences** | ⚪️ | 112 | Skipped |
 | **Діалог: У бібліотеці** | ✅ | 119 | Included in Core |
-| **Діалог 2: Обговорення фільму** | ✅ | 249 | Included in Core |
+| **Діалог 2: Обговорення фільму** | ✅ | 334 | Included in Core |
 | **Підсумок** | ✅ | 0 | Included in Core |
 | **який Declension Reference** | ⚪️ | 0 | Skipped |
 | **The Two-Step Process** | ⚪️ | 235 | Skipped |

@@ -211,6 +211,11 @@ Before we look at specific cases, here are the most common errors English speake
 
 The key insight: **English past tense is about time. Ukrainian aspect is about perspective.** Don't let English past tense trick you into always choosing perfective.
 
+> ⚡ **Myth Buster: The "Past Tense" Trap**
+>
+> **Myth:** "If it happened in the past, I must use Perfective (completed)."
+> **Reality:** False! In English, "I worked" and "I have worked" are different tenses. In Ukrainian, **aspect is not tense**. You can have a completed action in the past (Perfective: *зробив*) OR an ongoing process in the past (Imperfective: *робив*). If you spent all day working, the action is over (past time), but your focus is on the *duration* (process). Therefore: «Я **працював** увесь день» (Imperfective).
+
 #### 1. Запитання про досвід
 
 **The "Have You Ever" Paradox**

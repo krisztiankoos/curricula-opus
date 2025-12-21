@@ -3,24 +3,24 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1015/800
+- **Words:** ✅ 1081/800
 - **Activities:** ✅ 10/10
 - **Density:** ✅ All > 12
 - **Unique_types:** ✅ 10/4 types
 - **Priority:** ✅ Priority types used
-- **Engagement:** ✅ 3/3
+- **Engagement:** ✅ 4/3
 - **Audio:** ℹ️ No audio
 - **Vocab:** ✅ 20/10
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 41.3% (checkpoint - no gate)
+- **Immersion:** 🇺🇦 40.4% (checkpoint - no gate)
 
 ## Section Audit
 | Section | Status | Count | Notes |
 |---|---|---|---|
 | **Контрольна точка: Дієслова руху** | ⚪️ | 27 | Skipped |
-| **Overview** | ⚪️ | 54 | Skipped |
+| **Overview** | ⚪️ | 120 | Skipped |
 | **Skill 1: Determinate vs Indeterminate** | ⚪️ | 151 | Skipped |
 | **Skill 2: Motion Verb Pairs** | ⚪️ | 85 | Skipped |
 | **Skill 3: Prefix System** | ⚪️ | 172 | Skipped |

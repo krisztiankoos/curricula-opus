@@ -169,10 +169,13 @@ Notice how each verb corresponds to a specific direction or mode:
 
 ---
 
-> ⚡ **Myth vs Fact**
-> 
-> **Myth:** "Ukrainian has too many motion verbs to learn — it's overwhelming."
-> **Fact:** Ukrainian motion verbs follow a logical system. Learn 14 base pairs, understand 10-12 prefixes, and you can express virtually any movement. The system is actually more regular than English, where "go," "come," "arrive," "leave," "enter," and "exit" have no visible relationship. Ukrainian's prefix system makes it learnable — and beautiful.
+> ⚡ **Myth Buster: The "Chaos" Myth**
+>
+> **Myth:** "Ukrainians just pick random motion verbs; there are too many!"
+> **Reality:** It's not random; it's **high-resolution**.
+> - English says "go" for everything (go in, go out, go up).
+> - Ukrainian distinguishes "going by foot" vs "by car", "entering" vs "dropping by".
+> - We aren't complicating it; we are painting a more detailed picture of the world. Precision is beautiful!
 
 ---
 

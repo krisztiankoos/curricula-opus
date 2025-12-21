@@ -71,6 +71,14 @@ This module explores how negation interacts with aspect — a crucial distinctio
 
 ### Загальне заперечення — Imperfective default
 
+> ⚡ **Myth Buster: The "Never" Paradox**
+>
+> **Myth:** "I have never *read* this book" sounds like a completed fact, so I should use Perfective (**прочитав**).
+> **Reality:** Logical trap! If you never did it, the action never reached a result. No result = **Imperfective**.
+> - **Wrong:** Я ніколи не прочитав (I never finished).
+> - **Right:** Я ніколи не **читав** (I never engaged in reading).
+> In Ukrainian, "never" always demands Imperfective because the event remains hypothetical and undefined.
+
 In negation, Ukrainian strongly prefers imperfective aspect. This is the default choice when:
 
 - You're denying the action **ever happened**

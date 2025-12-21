@@ -67,11 +67,20 @@ Every history/culture module MUST include at least one myth-busting box:
 
 ---
 
-## Linguistic Purity
+## Linguistic Standards & Purity (Strict)
 
-### Tier 1: Anti-Russification (STRICT)
+### 1. No Latin Transliteration
+- **Rule:** Use Cyrillic ONLY.
+- **Reason:** B1+ learners must read Cyrillic fluently. Transliteration (e.g., "dya-ku-yu") is a crutch that retards progress.
+- **Exception:** Only A1.1 (M01-M05) allows limited transliteration for phonetics.
 
-Zero tolerance for Surzhyk. These cause **instant failure**:
+### 2. Anti-Surzhyk & Anti-Russification
+- **Rule:** Zero tolerance for Surzhyk or Russian loanwords.
+- **Calque Detection:** If a phrase is a direct loan translation from English (calque), identify it and teach the natural Ukrainian equivalent.
+  - *Calque (Bad):* "Я беру автобус" (I take a bus).
+  - *Natural (Good):* "Я їду автобусом" (I go by bus).
+
+**Common Surzhyk Triggers (Prohibited):**
 
 | Surzhyk (WRONG) | Correct Ukrainian |
 |-----------------|-------------------|
@@ -81,11 +90,33 @@ Zero tolerance for Surzhyk. These cause **instant failure**:
 | давай | ходімо / imperative |
 | відкривати (books) | розгортати |
 | відкривати (doors) | відчиняти |
+| задавати питання | ставити питання |
+| робити рішення | приймати рішення |
 
-### Tier 2: Anglicisms (A1-A2 Leeway)
+### 3. Stylistic Syntax (Active Voice)
+- **Rule:** Prioritize **active verbal constructions** over passive or nominal constructions.
+- **Reason:** Ukrainian favors direct action. Passive voice with instrumental agent ("нами було вирішено") is heavy, bureaucratic, and influenced by Russian officialese.
+  - *Bureaucratic (Avoid):* "Нами було вирішено змінити план."
+  - *Natural (Use):* "Ми вирішили змінити план."
 
-Direct English mappings are **tolerated** at A1-A2 if they aid understanding.
-Prioritize clarity over stylistic perfection at low levels.
+---
+
+## Source Authority & Verification
+
+**Honesty First:** If you are unsure of a word, stress, or nuance, **admit it**. Never invent information.
+
+### Reference Hierarchy
+Consult these specific sources for verification:
+
+1.  **Morphology & Stress:** [Goroh.pp.ua](https://goroh.pp.ua) or [Slovnyk.ua](https://slovnyk.ua)
+    - *Use for:* Declensions, conjugations, and accentuation (stress marks).
+2.  **Definitions & Etymology:** Dictionary of Borys Grinchenko (Словарь української мови)
+    - *Use for:* Deep meanings, folk authenticity, and avoiding Soviet-era definitions.
+3.  **Stylistic Correctness:**
+    - Borys Antonenko-Davydovych ("Як ми говоримо")
+    - Agatangel Krymsky
+    - Svyatoslav Karavansky
+    - *Use for:* Resolving synonyms, checking for Surzhyk, and choosing the most "Ukrainian" word option.
 
 ---
 

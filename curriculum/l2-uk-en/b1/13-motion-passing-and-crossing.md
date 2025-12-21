@@ -38,6 +38,17 @@ Questions:
 
 ---
 
+> ⚡ **Myth Buster: The "Walk Through" Myth**
+>
+> **Myth:** "I can just use 'walk through' (йти через) for everything."
+> **Reality:** Precision matters! Using the wrong prefix changes the geometry of your movement.
+> - **Перейти парк** = Cut across/traverse it (Side A → Side B).
+> - **Пройти парк** = Walk the length of it/pass through it.
+> - **Обійти парк** = Walk around the perimeter (avoiding the inside).
+> Don't just "go" — tell us the shape of your path!
+
+---
+
 ## Аналіз
 
 ### Pattern Discovery

@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1663/1500
+- **Words:** ✅ 1699/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 11/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 64.2% (target 40-68% (B1.1 Aspect))
+- **Immersion:** 🇺🇦 62.8% (target 40-68% (B1.1 Aspect))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -24,7 +24,7 @@
 | **Test Yourself First** | ⚪️ | 236 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
 | **Дві душі українського наказу** | ⚪️ | 84 | Skipped |
-| **Парадокс ввічливості** | ⚪️ | 142 | Skipped |
+| **Парадокс ввічливості** | ⚪️ | 178 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Коли вид змінює значення** | ⚪️ | 92 | Skipped |
 | **Негативні імперативи: Особливий випадок** | ⚪️ | 141 | Skipped |

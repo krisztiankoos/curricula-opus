@@ -3,7 +3,7 @@
 **Overall Status:** ✅ PASS
 
 ## Gates
-- **Words:** ✅ 1621/1500
+- **Words:** ✅ 1604/1500
 - **Activities:** ✅ 12/12
 - **Density:** ✅ All > 14
 - **Unique_types:** ✅ 12/4 types
@@ -14,7 +14,7 @@
 - **Structure:** ✅ Valid Structure
 - **Lint:** ✅ Clean Format
 - **Pedagogy:** ✅ Level-appropriate
-- **Immersion:** 🇺🇦 56.0% (target 40-68% (B1.2 Motion))
+- **Immersion:** 🇺🇦 56.5% (target 40-68% (B1.2 Motion))
 
 ## Section Audit
 | Section | Status | Count | Notes |
@@ -23,7 +23,7 @@
 | **Діагностика** | ✅ | 0 | Included in Core |
 | **The Complete Prefix Matrix** | ⚪️ | 200 | Skipped |
 | **Аналіз** | ✅ | 0 | Included in Core |
-| **The Complete Prefix System for Motion Verbs** | ⚪️ | 537 | Skipped |
+| **The Complete Prefix System for Motion Verbs** | ⚪️ | 520 | Skipped |
 | **Поглиблення** | ⚪️ | 0 | Skipped |
 | **Combining Multiple Directions: Complex Movements** | ✅ | 252 | Included in Core |
 | **Practice Dialogues: Prefixes in Context** | ✅ | 194 | Included in Core |

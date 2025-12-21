@@ -63,7 +63,8 @@ Stage 1 → Stage 2 → Stage 3 → Stage 4 (review/fix loop) → OUTPUT
 1. **Quick-ref for level:** `claude_extensions/quick-ref/{level}.md` (~100 lines)
    - Frontmatter template, targets, activity mix, pre-flight checklist
 2. **Philosophy guide:** `claude_extensions/quick-ref/philosophy.md` (~150 lines)
-   - Soul standard, Truth standard, cultural specificity, linguistic purity
+   - Soul standard, Truth standard, cultural specificity.
+   - **Linguistic Standards:** No Transliteration, No Surzhyk, Active Syntax, Source Verification (Goroh/Grinchenko).
 
 ### Curriculum Plan (Extract Only Your Module)
 

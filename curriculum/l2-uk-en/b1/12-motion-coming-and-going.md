@@ -39,6 +39,18 @@ Questions:
 
 ---
 
+> ⚡ **Myth Buster: The "In/Out" Confusion**
+>
+> **Myth:** "To say 'Come in', I just add the word 'in' (в) to the verb 'go'."
+> **Reality:** Ukrainian puts the direction *inside* the verb as a prefix!
+> - English: Go **out**.
+> - Ukrainian: **Ви**йти (Out-go).
+> - English: Come **in**.
+> - Ukrainian: **За**йти (In-come).
+> The preposition (з, до, в) just confirms what the prefix already announced. The prefix is the captain.
+
+---
+
 ## Аналіз
 
 ### Pattern Discovery
